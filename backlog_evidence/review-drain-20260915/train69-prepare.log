@@ -1,0 +1,118 @@
+[detached HEAD e4ed9d55b9] Preserve independently reviewed source unit PR8154
+ Date: Tue Sep 22 18:25:07 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 102 files changed, 3136 insertions(+)
+ create mode 100644 docs/ADMISSIBILITY_RULE_CUBIC_WALK_RETURN_SUM_AND_SPHERE_STATIC_MAGNETIZATION_SUFFICIENT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md
+ create mode 100644 docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_FINITE_TORUS_MAGNETIZATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md
+ create mode 100644 docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_PLANAR_COMPLEX_ROTATION_CORRELATION_UPPER_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md
+ create mode 100644 docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_WEAK_COUPLING_COMPARISON_AND_CORRELATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md
+ create mode 100644 docs/work_history/review_loop/pr8154/8154/8154_ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_NO_LONG_RANGE_ORDER_ON_PLANES_AND_LINES_THIRD_DIMENSION_LOAD_BEARING_FOR_THE_GREEN_FUNCTION_CHANNEL_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8154/8154_APPROACH_REGISTRY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8154/8154_ASSUMPTIONS_AND_IMPORTS.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8154/8154_CHECKER_block20_findings.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8154/8154_CLAIM_STATUS_CERTIFICATE_block20.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8154/8154_GOAL_block20.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8154/8154_HANDOFF.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8154/8154_LITERATURE_BRIDGES.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8154/8154_NO_GO_LEDGER.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8154/8154_OPPORTUNITY_QUEUE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8154/8154_RESULTS_block20.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8154/8154_REVIEW_HISTORY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8154/8154_ROUTE_PORTFOLIO.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8154/8154_STATE.yaml.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8154/8154_TRACE_GATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8154/8154_admissibility_rule_unsoldered_sphere_static_law_no_long_range_order_on_planes_and_lines_2026_09_15.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8154/8154_admissibility_rule_unsoldered_sphere_static_law_no_long_range_order_on_planes_and_lines_2026_09_15.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8154/8154_citation_graph_manifest.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8154/8154_supervisor_control_block20_planes_lines.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8154/8154_supervisor_control_block20_planes_lines.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8154/8154_supervisor_control_block20_refuter.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8154/8154_supervisor_control_block20_refuter.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8155/8155_ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_WEAK_COUPLING_ONE_LAW_EXPONENTIAL_DECAY_NO_MASSLESS_CHANNEL_BELOW_ROOT_THREE_OVER_SIX_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8155/8155_APPROACH_REGISTRY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8155/8155_ASSUMPTIONS_AND_IMPORTS.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8155/8155_CHECKER_block21_findings.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8155/8155_CLAIM_STATUS_CERTIFICATE_block21.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8155/8155_GOAL_block21.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8155/8155_HANDOFF.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8155/8155_LITERATURE_BRIDGES.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8155/8155_NO_GO_LEDGER.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8155/8155_OPPORTUNITY_QUEUE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8155/8155_RESULTS_block21.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8155/8155_REVIEW_HISTORY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8155/8155_ROUTE_PORTFOLIO.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8155/8155_STATE.yaml.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8155/8155_TRACE_GATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8155/8155_admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8155/8155_admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8155/8155_citation_graph_manifest.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8155/8155_supervisor_control_block21_refuter.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8155/8155_supervisor_control_block21_refuter.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8155/8155_supervisor_control_block21_weak_coupling.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8155/8155_supervisor_control_block21_weak_coupling.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8156/8156_ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_STRONG_COUPLING_THRESHOLD_SHARPENED_RETURN_SUM_OF_THE_CUBIC_WALK_THREE_G_ZERO_BELOW_SEVENTY_SIX_HUNDREDTHS_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8156/8156_APPROACH_REGISTRY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8156/8156_ASSUMPTIONS_AND_IMPORTS.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8156/8156_CHECKER_block22_findings.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8156/8156_CLAIM_STATUS_CERTIFICATE_block22.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8156/8156_GOAL_block22.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8156/8156_HANDOFF.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8156/8156_LITERATURE_BRIDGES.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8156/8156_NO_GO_LEDGER.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8156/8156_OPPORTUNITY_QUEUE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8156/8156_RESULTS_block22.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8156/8156_REVIEW_HISTORY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8156/8156_ROUTE_PORTFOLIO.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8156/8156_STATE.yaml.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8156/8156_TRACE_GATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8156/8156_admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_2026_09_15.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8156/8156_admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_2026_09_15.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8156/8156_citation_graph_manifest.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8156/8156_supervisor_control_block22_refuter.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8156/8156_supervisor_control_block22_refuter.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8156/8156_supervisor_control_block22_return_sum.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8156/8156_supervisor_control_block22_return_sum.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8157/8157_ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_PLANE_CORRELATIONS_DECAY_ALGEBRAICALLY_AT_EVERY_COUPLING_COMPLEX_ROTATIONS_EXPLICIT_EXPONENT_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8157/8157_APPROACH_REGISTRY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8157/8157_ASSUMPTIONS_AND_IMPORTS.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8157/8157_CHECKER_block23_findings.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8157/8157_CLAIM_STATUS_CERTIFICATE_block23.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8157/8157_GOAL_block23.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8157/8157_HANDOFF.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8157/8157_LITERATURE_BRIDGES.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8157/8157_NO_GO_LEDGER.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8157/8157_OPPORTUNITY_QUEUE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8157/8157_RESULTS_block23.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8157/8157_REVIEW_HISTORY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8157/8157_ROUTE_PORTFOLIO.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8157/8157_STATE.yaml.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8157/8157_TRACE_GATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8157/8157_admissibility_rule_unsoldered_sphere_static_law_plane_algebraic_decay_complex_rotations_2026_09_15.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8157/8157_admissibility_rule_unsoldered_sphere_static_law_plane_algebraic_decay_complex_rotations_2026_09_15.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8157/8157_citation_graph_manifest.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8157/8157_supervisor_control_block23_complex_rotations.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8157/8157_supervisor_control_block23_complex_rotations.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8157/8157_supervisor_control_block23_refuter.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/8157/8157_supervisor_control_block23_refuter.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8154/README.md
+ create mode 100644 docs/work_history/review_loop/pr8154/original-manifest.json
+ create mode 100644 logs/runner-cache/admissibility_rule_unsoldered_sphere_static_law_no_long_range_order_on_planes_and_lines_2026_09_15.txt
+ create mode 100644 logs/runner-cache/admissibility_rule_unsoldered_sphere_static_law_plane_algebraic_decay_complex_rotations_2026_09_15.txt
+ create mode 100644 logs/runner-cache/admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_2026_09_15.txt
+ create mode 100644 logs/runner-cache/admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.txt
+ create mode 100644 scripts/admissibility_rule_unsoldered_sphere_static_law_no_long_range_order_on_planes_and_lines_2026_09_15.py
+ create mode 100644 scripts/admissibility_rule_unsoldered_sphere_static_law_plane_algebraic_decay_complex_rotations_2026_09_15.py
+ create mode 100644 scripts/admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_2026_09_15.py
+ create mode 100644 scripts/admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.py
+FROZEN e4ed9d55b962b32c20ccc302d302eb47cb7b0e7d sources 102 inputs 115 notes 4

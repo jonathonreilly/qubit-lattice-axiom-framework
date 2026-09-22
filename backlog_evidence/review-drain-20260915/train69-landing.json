@@ -1,0 +1,457 @@
+{
+  "base": "9ff59dc9caf61444b8bf3bd3d0d13ea53ace1dac",
+  "source_head": "e4ed9d55b962b32c20ccc302d302eb47cb7b0e7d",
+  "source_tree": "6ff84ef74a8308b9589548e8963b870c7eaf29c2",
+  "heads": {
+    "8154": "e1281625579c98150e818d56e4d29e260c9ded89",
+    "8155": "c286f2fc6ad4dc94562c1e1e1aa3f85f850f8a9a",
+    "8156": "5296e20cab34eb684c1f00f21b9c60bf1db7b153",
+    "8157": "debbd76649e8a08469114e2dbfa52d1d1fd3e022"
+  },
+  "source_owners": {
+    "docs/ADMISSIBILITY_RULE_CUBIC_WALK_RETURN_SUM_AND_SPHERE_STATIC_MAGNETIZATION_SUFFICIENT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md": "review-8154",
+    "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_FINITE_TORUS_MAGNETIZATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md": "review-8154",
+    "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_PLANAR_COMPLEX_ROTATION_CORRELATION_UPPER_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md": "review-8154",
+    "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_WEAK_COUPLING_COMPARISON_AND_CORRELATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md": "review-8154",
+    "docs/work_history/review_loop/pr8154/8154/8154_ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_NO_LONG_RANGE_ORDER_ON_PLANES_AND_LINES_THIRD_DIMENSION_LOAD_BEARING_FOR_THE_GREEN_FUNCTION_CHANNEL_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8154/8154_APPROACH_REGISTRY.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8154/8154_ASSUMPTIONS_AND_IMPORTS.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8154/8154_CHECKER_block20_findings.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8154/8154_CLAIM_STATUS_CERTIFICATE_block20.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8154/8154_GOAL_block20.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8154/8154_HANDOFF.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8154/8154_LITERATURE_BRIDGES.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8154/8154_NO_GO_LEDGER.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8154/8154_OPPORTUNITY_QUEUE.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8154/8154_RESULTS_block20.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8154/8154_REVIEW_HISTORY.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8154/8154_ROUTE_PORTFOLIO.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8154/8154_STATE.yaml.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8154/8154_TRACE_GATE.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8154/8154_admissibility_rule_unsoldered_sphere_static_law_no_long_range_order_on_planes_and_lines_2026_09_15.py.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8154/8154_admissibility_rule_unsoldered_sphere_static_law_no_long_range_order_on_planes_and_lines_2026_09_15.txt.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8154/8154_citation_graph_manifest.json.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8154/8154_supervisor_control_block20_planes_lines.out.txt.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8154/8154_supervisor_control_block20_planes_lines.py.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8154/8154_supervisor_control_block20_refuter.out.txt.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8154/8154_supervisor_control_block20_refuter.py.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8155/8155_ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_WEAK_COUPLING_ONE_LAW_EXPONENTIAL_DECAY_NO_MASSLESS_CHANNEL_BELOW_ROOT_THREE_OVER_SIX_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8155/8155_APPROACH_REGISTRY.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8155/8155_ASSUMPTIONS_AND_IMPORTS.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8155/8155_CHECKER_block21_findings.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8155/8155_CLAIM_STATUS_CERTIFICATE_block21.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8155/8155_GOAL_block21.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8155/8155_HANDOFF.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8155/8155_LITERATURE_BRIDGES.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8155/8155_NO_GO_LEDGER.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8155/8155_OPPORTUNITY_QUEUE.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8155/8155_RESULTS_block21.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8155/8155_REVIEW_HISTORY.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8155/8155_ROUTE_PORTFOLIO.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8155/8155_STATE.yaml.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8155/8155_TRACE_GATE.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8155/8155_admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.py.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8155/8155_admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.txt.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8155/8155_citation_graph_manifest.json.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8155/8155_supervisor_control_block21_refuter.out.txt.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8155/8155_supervisor_control_block21_refuter.py.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8155/8155_supervisor_control_block21_weak_coupling.out.txt.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8155/8155_supervisor_control_block21_weak_coupling.py.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8156/8156_ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_STRONG_COUPLING_THRESHOLD_SHARPENED_RETURN_SUM_OF_THE_CUBIC_WALK_THREE_G_ZERO_BELOW_SEVENTY_SIX_HUNDREDTHS_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8156/8156_APPROACH_REGISTRY.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8156/8156_ASSUMPTIONS_AND_IMPORTS.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8156/8156_CHECKER_block22_findings.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8156/8156_CLAIM_STATUS_CERTIFICATE_block22.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8156/8156_GOAL_block22.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8156/8156_HANDOFF.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8156/8156_LITERATURE_BRIDGES.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8156/8156_NO_GO_LEDGER.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8156/8156_OPPORTUNITY_QUEUE.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8156/8156_RESULTS_block22.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8156/8156_REVIEW_HISTORY.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8156/8156_ROUTE_PORTFOLIO.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8156/8156_STATE.yaml.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8156/8156_TRACE_GATE.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8156/8156_admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_2026_09_15.py.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8156/8156_admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_2026_09_15.txt.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8156/8156_citation_graph_manifest.json.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8156/8156_supervisor_control_block22_refuter.out.txt.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8156/8156_supervisor_control_block22_refuter.py.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8156/8156_supervisor_control_block22_return_sum.out.txt.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8156/8156_supervisor_control_block22_return_sum.py.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8157/8157_ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_PLANE_CORRELATIONS_DECAY_ALGEBRAICALLY_AT_EVERY_COUPLING_COMPLEX_ROTATIONS_EXPLICIT_EXPONENT_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8157/8157_APPROACH_REGISTRY.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8157/8157_ASSUMPTIONS_AND_IMPORTS.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8157/8157_CHECKER_block23_findings.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8157/8157_CLAIM_STATUS_CERTIFICATE_block23.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8157/8157_GOAL_block23.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8157/8157_HANDOFF.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8157/8157_LITERATURE_BRIDGES.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8157/8157_NO_GO_LEDGER.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8157/8157_OPPORTUNITY_QUEUE.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8157/8157_RESULTS_block23.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8157/8157_REVIEW_HISTORY.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8157/8157_ROUTE_PORTFOLIO.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8157/8157_STATE.yaml.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8157/8157_TRACE_GATE.md.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8157/8157_admissibility_rule_unsoldered_sphere_static_law_plane_algebraic_decay_complex_rotations_2026_09_15.py.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8157/8157_admissibility_rule_unsoldered_sphere_static_law_plane_algebraic_decay_complex_rotations_2026_09_15.txt.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8157/8157_citation_graph_manifest.json.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8157/8157_supervisor_control_block23_complex_rotations.out.txt.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8157/8157_supervisor_control_block23_complex_rotations.py.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8157/8157_supervisor_control_block23_refuter.out.txt.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/8157/8157_supervisor_control_block23_refuter.py.gz": "review-8154",
+    "docs/work_history/review_loop/pr8154/README.md": "review-8154",
+    "docs/work_history/review_loop/pr8154/original-manifest.json": "review-8154",
+    "logs/runner-cache/admissibility_rule_unsoldered_sphere_static_law_no_long_range_order_on_planes_and_lines_2026_09_15.txt": "review-8154",
+    "logs/runner-cache/admissibility_rule_unsoldered_sphere_static_law_plane_algebraic_decay_complex_rotations_2026_09_15.txt": "review-8154",
+    "logs/runner-cache/admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_2026_09_15.txt": "review-8154",
+    "logs/runner-cache/admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.txt": "review-8154",
+    "scripts/admissibility_rule_unsoldered_sphere_static_law_no_long_range_order_on_planes_and_lines_2026_09_15.py": "review-8154",
+    "scripts/admissibility_rule_unsoldered_sphere_static_law_plane_algebraic_decay_complex_rotations_2026_09_15.py": "review-8154",
+    "scripts/admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_2026_09_15.py": "review-8154",
+    "scripts/admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.py": "review-8154"
+  },
+  "inputs": {
+    "docs/ADMISSIBILITY_RULE_CUBIC_WALK_RETURN_SUM_AND_SPHERE_STATIC_MAGNETIZATION_SUFFICIENT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md": "4007d47a15efe7ba10159ea268cbae4ddd1b5420c6b5fcbd6a88e6917aba2ac2",
+    "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_FINITE_TORUS_MAGNETIZATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md": "1ead528308a21cded343d0790dd9de2715eeacdc47d6d1b4922a3358dbcbe179",
+    "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_PLANAR_COMPLEX_ROTATION_CORRELATION_UPPER_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md": "3c24fb46bf2398b5048e7557dd7a275d626c2997eae940436eccd3f4ed85ce5a",
+    "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_WEAK_COUPLING_COMPARISON_AND_CORRELATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md": "2c2429e3f9d382dd54f5fcea7386b498033c4d1b4cc0e071927e6b5e764a36af",
+    "docs/work_history/review_loop/pr8154/8154/8154_ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_NO_LONG_RANGE_ORDER_ON_PLANES_AND_LINES_THIRD_DIMENSION_LOAD_BEARING_FOR_THE_GREEN_FUNCTION_CHANNEL_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz": "b69b6fc95f56ba9107ac3b20b64045f52ceaeb9f1f7b31765e021743804e35c0",
+    "docs/work_history/review_loop/pr8154/8154/8154_APPROACH_REGISTRY.md.gz": "cb92bdfd0acff3e79fcb2effea102a82411b59e5a99d18e24488a1b3c4bdea1e",
+    "docs/work_history/review_loop/pr8154/8154/8154_ASSUMPTIONS_AND_IMPORTS.md.gz": "2d58acb8bcf8adec1adfd607a2ba7bf0543436f7a9b16b502c65611258972a10",
+    "docs/work_history/review_loop/pr8154/8154/8154_CHECKER_block20_findings.md.gz": "8201dedef6fcd907ddd4731f80dade46bc7e680449808c76d6380f85b454f3ff",
+    "docs/work_history/review_loop/pr8154/8154/8154_CLAIM_STATUS_CERTIFICATE_block20.md.gz": "52f42adb3290b860552cd8c8211865270a0fe0d082d003635ddb94210bad3b74",
+    "docs/work_history/review_loop/pr8154/8154/8154_GOAL_block20.md.gz": "c51f7bbcb8e1d8f8e1b5918e2fcf352383dc6b374cc4717727a5cf1a3e314c18",
+    "docs/work_history/review_loop/pr8154/8154/8154_HANDOFF.md.gz": "49341c402defe63c1b73922a13030a0c8663b5278335ac201d6aab57ee5ec2ed",
+    "docs/work_history/review_loop/pr8154/8154/8154_LITERATURE_BRIDGES.md.gz": "7785e2c97e451e19dcb2918b68c9608dc708516b32b57b6edcc0be0e0a562acf",
+    "docs/work_history/review_loop/pr8154/8154/8154_NO_GO_LEDGER.md.gz": "547e629f449eddb19d4996ecf61a6f7e41a3d3cd3b048085b697f7ba816721e0",
+    "docs/work_history/review_loop/pr8154/8154/8154_OPPORTUNITY_QUEUE.md.gz": "c838c248e84d95c0f83af12434c3a6820a273cd0467751586f494b76d1210a57",
+    "docs/work_history/review_loop/pr8154/8154/8154_RESULTS_block20.md.gz": "c1367c1fd8aa265d6028eb2cbf96812899e70f2abadf172d59ba554586acf293",
+    "docs/work_history/review_loop/pr8154/8154/8154_REVIEW_HISTORY.md.gz": "303e058ecf6fe52206e9ffcfbaf27b1910fed74722368b92c421a425e2079b8d",
+    "docs/work_history/review_loop/pr8154/8154/8154_ROUTE_PORTFOLIO.md.gz": "d5c76c7672d9344f262b53bd3eac0134441eb9db7377c75fefe4e17000865456",
+    "docs/work_history/review_loop/pr8154/8154/8154_STATE.yaml.gz": "3ed9ebc5f87b3b22445107d0cdb7c09022ad24d9883e069095ca394368b8a361",
+    "docs/work_history/review_loop/pr8154/8154/8154_TRACE_GATE.md.gz": "e5eda09a411887550ef0ce46efc081d413ee49e89d12ffa0f4990c3d8447ed28",
+    "docs/work_history/review_loop/pr8154/8154/8154_admissibility_rule_unsoldered_sphere_static_law_no_long_range_order_on_planes_and_lines_2026_09_15.py.gz": "09323e47ef24e2fb4acf7ba9e85fa3c1f6ae284e683dfe717fa762fff9eb7c73",
+    "docs/work_history/review_loop/pr8154/8154/8154_admissibility_rule_unsoldered_sphere_static_law_no_long_range_order_on_planes_and_lines_2026_09_15.txt.gz": "1d22afc7a1ccb2107e5518445b691035675d8e5660471600a6ee58e4be58bc33",
+    "docs/work_history/review_loop/pr8154/8154/8154_citation_graph_manifest.json.gz": "89d457467ac28c9f54e78d5a353380b0f564fc6e2b1777cc341e803230647467",
+    "docs/work_history/review_loop/pr8154/8154/8154_supervisor_control_block20_planes_lines.out.txt.gz": "7de2ac7039f56a1c358d1a0d86dca35f682f9c3dad115c8ddf36b419840a7abc",
+    "docs/work_history/review_loop/pr8154/8154/8154_supervisor_control_block20_planes_lines.py.gz": "8d050e88d7b29702f718c0b71a4f4171f56d28544593b60da2f3f3773ae9b819",
+    "docs/work_history/review_loop/pr8154/8154/8154_supervisor_control_block20_refuter.out.txt.gz": "020188aa6df167c1a73141703de171750d0017aa5d2dd3826fe393e1e5aff997",
+    "docs/work_history/review_loop/pr8154/8154/8154_supervisor_control_block20_refuter.py.gz": "69a8317e651eda20cd116bc7fd6cdc0c53d926e3d1c7cf4443692e2ed0fb5d25",
+    "docs/work_history/review_loop/pr8154/8155/8155_ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_WEAK_COUPLING_ONE_LAW_EXPONENTIAL_DECAY_NO_MASSLESS_CHANNEL_BELOW_ROOT_THREE_OVER_SIX_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz": "129ca353bc14e9c594345af3f9a6b4d49261bdf7bcbfd3a850bf2112957e75a1",
+    "docs/work_history/review_loop/pr8154/8155/8155_APPROACH_REGISTRY.md.gz": "f092df5c26ae6b9c21b886e84fdd87c6335945c85222343f3e4dd09eefe801f1",
+    "docs/work_history/review_loop/pr8154/8155/8155_ASSUMPTIONS_AND_IMPORTS.md.gz": "2ed02ffde3894a840cd8e3bd86dae2825150a20ad9440c3ce489745801d44fcb",
+    "docs/work_history/review_loop/pr8154/8155/8155_CHECKER_block21_findings.md.gz": "ba850a4d5b7f5135828bc96cee64f83cc0b5c22265772f10ffda37f075a05821",
+    "docs/work_history/review_loop/pr8154/8155/8155_CLAIM_STATUS_CERTIFICATE_block21.md.gz": "c3068e26ed430abd4a28064be1464e40d6e9a448eab05e13f6607f9a36a572c5",
+    "docs/work_history/review_loop/pr8154/8155/8155_GOAL_block21.md.gz": "ed05994b2050e0b37abec7283642ed3515f962d8c7d9b0f99dfa979a8009f272",
+    "docs/work_history/review_loop/pr8154/8155/8155_HANDOFF.md.gz": "e38c9eaf3b8817e05b29b2084e0ef2374871d64754c5d6d21dcbe2de30052032",
+    "docs/work_history/review_loop/pr8154/8155/8155_LITERATURE_BRIDGES.md.gz": "fd02bbb13aad8c4f077a499feaa1da9ea3dec0fc385f68f8145663452ecedce5",
+    "docs/work_history/review_loop/pr8154/8155/8155_NO_GO_LEDGER.md.gz": "1facdbfe915fcdaeada1673565f8c37854c30befda7cd51d23f8264185b0b082",
+    "docs/work_history/review_loop/pr8154/8155/8155_OPPORTUNITY_QUEUE.md.gz": "0e8c8d1226b96e8021e177ee45fa716c5b4e366bb187b695af0b6cb65bf09d51",
+    "docs/work_history/review_loop/pr8154/8155/8155_RESULTS_block21.md.gz": "3ccdf5aa9f9c62f464c95d2fdd19aff08af4f5c1d56d48bc3214440be580e57d",
+    "docs/work_history/review_loop/pr8154/8155/8155_REVIEW_HISTORY.md.gz": "4eaad862f53f764cea7f5b26faf6d373d9adf079ddeaa8fb3c6bf57d42c81d54",
+    "docs/work_history/review_loop/pr8154/8155/8155_ROUTE_PORTFOLIO.md.gz": "83b96623bed652f438e2b538f75bb27366ec14484f6da735a006b67729f8046f",
+    "docs/work_history/review_loop/pr8154/8155/8155_STATE.yaml.gz": "2871fe1dff7b708a530c324606eb02ceed766bf8c28c789d90b6875ebcdd8689",
+    "docs/work_history/review_loop/pr8154/8155/8155_TRACE_GATE.md.gz": "578b48d93cdf50a1a9146fdcf43e753977932c1a00a1425cfe8ddb5e072b33a3",
+    "docs/work_history/review_loop/pr8154/8155/8155_admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.py.gz": "72fd428f75b16413c0aa41b4af0a93e467898a3cf9b7fca3d9f896b51cd2fd63",
+    "docs/work_history/review_loop/pr8154/8155/8155_admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.txt.gz": "72af86016e5859a945a9cbba27f666a153bff0a9f996928f4e3ef1e49f21724a",
+    "docs/work_history/review_loop/pr8154/8155/8155_citation_graph_manifest.json.gz": "0ac5c519123c2c710d07fa85ac574177375c98b1676802733736bf0793c53e43",
+    "docs/work_history/review_loop/pr8154/8155/8155_supervisor_control_block21_refuter.out.txt.gz": "abff582bf13b2c146585c7c3aabdc088a095f14cc4ffe7a2b6765295ef70ac56",
+    "docs/work_history/review_loop/pr8154/8155/8155_supervisor_control_block21_refuter.py.gz": "da38417a72831d6a1dfd1b1558a0cf14c7753c85448b4839bafe69e8f754b441",
+    "docs/work_history/review_loop/pr8154/8155/8155_supervisor_control_block21_weak_coupling.out.txt.gz": "3ca85129e54a90a264cab3a594f9498d95e5960bbf708dceaa28501c62d4c9b0",
+    "docs/work_history/review_loop/pr8154/8155/8155_supervisor_control_block21_weak_coupling.py.gz": "d00e497f6a2b389b5549f6fe2d758915c6171ac95a6e7b7ba102f745f990f27d",
+    "docs/work_history/review_loop/pr8154/8156/8156_ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_STRONG_COUPLING_THRESHOLD_SHARPENED_RETURN_SUM_OF_THE_CUBIC_WALK_THREE_G_ZERO_BELOW_SEVENTY_SIX_HUNDREDTHS_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz": "8538ea19bba7eeb5bd321ffdae7390f52649da36a40964c255bbcb2196dae1c0",
+    "docs/work_history/review_loop/pr8154/8156/8156_APPROACH_REGISTRY.md.gz": "74f770310866f09e79362d489fe1416f3c33fcc0fdaee2ee658d07d5808eb41f",
+    "docs/work_history/review_loop/pr8154/8156/8156_ASSUMPTIONS_AND_IMPORTS.md.gz": "2058fa19067592fe069312fc12b6933a138c8f4b4ed2d44146870a5666cd5c00",
+    "docs/work_history/review_loop/pr8154/8156/8156_CHECKER_block22_findings.md.gz": "f7ecfdd0427d76878a0b7662ab757a2fce0627cd32672e2dbca1b8da42ea47cd",
+    "docs/work_history/review_loop/pr8154/8156/8156_CLAIM_STATUS_CERTIFICATE_block22.md.gz": "c963c616b62560919efdc124c6c42f02fc6874d5cd1df0c15320592dea71d271",
+    "docs/work_history/review_loop/pr8154/8156/8156_GOAL_block22.md.gz": "dbfbaa7391e6c84c7f6515d4df88eed53717be4e2b5cd59c073b1d9dcb918b1e",
+    "docs/work_history/review_loop/pr8154/8156/8156_HANDOFF.md.gz": "9d6ea76d3af5b41a1fb5f1463e89bafba5abe7669f4f7661e1fa24db62a9f4fb",
+    "docs/work_history/review_loop/pr8154/8156/8156_LITERATURE_BRIDGES.md.gz": "64927d8fcc17506349f0c03b99226b8ed54b5d11f34032c796190f6cda24510b",
+    "docs/work_history/review_loop/pr8154/8156/8156_NO_GO_LEDGER.md.gz": "9ae9e5fcc95164cb6ebf47be09bef91c900c17056ef9aa3f33014b9a2f4a8bfc",
+    "docs/work_history/review_loop/pr8154/8156/8156_OPPORTUNITY_QUEUE.md.gz": "49b02917c55184bb04a445bbc982d3de77f901f37fe3c7d32b373671fb8748e7",
+    "docs/work_history/review_loop/pr8154/8156/8156_RESULTS_block22.md.gz": "b97db21623b1b504a318b9d16ba29e9edbe699d452194403427a424fe1d6c1c2",
+    "docs/work_history/review_loop/pr8154/8156/8156_REVIEW_HISTORY.md.gz": "5355cb7a35b84f169e14ee056169b84af1d4189c526e24de6b429d3e2afb3bb4",
+    "docs/work_history/review_loop/pr8154/8156/8156_ROUTE_PORTFOLIO.md.gz": "3015b13d06bf7bf54b60ab552c13e4a14561385086c9bcafed32805b8d3a8542",
+    "docs/work_history/review_loop/pr8154/8156/8156_STATE.yaml.gz": "f81b0fe5fb251c40c5a890d17646c0dcef624fe7bf4c9b3d1806a41c5f695132",
+    "docs/work_history/review_loop/pr8154/8156/8156_TRACE_GATE.md.gz": "fba0cbf7b3d5862a6c30cb51ebf660364edc4f6d0ca51d3ce9a7085a0b8e7e5b",
+    "docs/work_history/review_loop/pr8154/8156/8156_admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_2026_09_15.py.gz": "00b22def6af3f727e3dbe8699b9f9ca8735ff8eccc2650c41a4ae08aa04f9738",
+    "docs/work_history/review_loop/pr8154/8156/8156_admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_2026_09_15.txt.gz": "781d80889316f8de48a3efba2e9dd97af90176e1a6cea258dda26fbb8f6a838c",
+    "docs/work_history/review_loop/pr8154/8156/8156_citation_graph_manifest.json.gz": "faf87c26d6f5ee15a7c7fe4bb240e9686303228bf99d0828ce5daa50f2a64517",
+    "docs/work_history/review_loop/pr8154/8156/8156_supervisor_control_block22_refuter.out.txt.gz": "1e43ae77c273f634c960c8e7f424e9a918c4ccdb073f4d3d0714d31f0957fee2",
+    "docs/work_history/review_loop/pr8154/8156/8156_supervisor_control_block22_refuter.py.gz": "771735ca2901a456752e1ead92905cbccf1a68e826204e8ed8187ff68efd3ae5",
+    "docs/work_history/review_loop/pr8154/8156/8156_supervisor_control_block22_return_sum.out.txt.gz": "84c0e8ddd41930c4936d697efae682ff1fa79fecc713d64a8b91b0efc9a93ae1",
+    "docs/work_history/review_loop/pr8154/8156/8156_supervisor_control_block22_return_sum.py.gz": "2d8553e468c9da687cb3d9fb2d0260d821d475288b8467960d0b4c654ade43d2",
+    "docs/work_history/review_loop/pr8154/8157/8157_ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_PLANE_CORRELATIONS_DECAY_ALGEBRAICALLY_AT_EVERY_COUPLING_COMPLEX_ROTATIONS_EXPLICIT_EXPONENT_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz": "983c9f4024875969c30259ebce0624d6ad01c70340679753308ea2a0c061aef5",
+    "docs/work_history/review_loop/pr8154/8157/8157_APPROACH_REGISTRY.md.gz": "60d3e3ad0d37a261250a4708b6d18354464da2ffa886a0e66533cbd16de83b50",
+    "docs/work_history/review_loop/pr8154/8157/8157_ASSUMPTIONS_AND_IMPORTS.md.gz": "5e5136af8cf59091522be34e2d18766fd9c278bcf211a767c8fe71b6749f2ede",
+    "docs/work_history/review_loop/pr8154/8157/8157_CHECKER_block23_findings.md.gz": "319adb79ad3d46c4851ac9b5c6f181bdcf546eb66f130de0d837359576b32a48",
+    "docs/work_history/review_loop/pr8154/8157/8157_CLAIM_STATUS_CERTIFICATE_block23.md.gz": "e51a08b5aba49d070706dafaa4a26f67b2ea1830495082d5043126388d4b50e9",
+    "docs/work_history/review_loop/pr8154/8157/8157_GOAL_block23.md.gz": "379f4fc955d6e64fe8ad7daa261703dfe9f5540c88433a3f70e13d4c025518dc",
+    "docs/work_history/review_loop/pr8154/8157/8157_HANDOFF.md.gz": "e611960c2b09b0ab4059dd017583ec7a57a726e7244aa7b9045344960bd85591",
+    "docs/work_history/review_loop/pr8154/8157/8157_LITERATURE_BRIDGES.md.gz": "7071af0412dec8ef442bb443d94d1f44d32473ea9031f5c0617a351ac4a2ec16",
+    "docs/work_history/review_loop/pr8154/8157/8157_NO_GO_LEDGER.md.gz": "147629bbe7039d96fbdf6bea294c076d385feca2a9c28c13be35d47703c0a1a4",
+    "docs/work_history/review_loop/pr8154/8157/8157_OPPORTUNITY_QUEUE.md.gz": "ba1b542666033f01c9606d7700caf1554954b91f91c71bd73638e14774d32ad6",
+    "docs/work_history/review_loop/pr8154/8157/8157_RESULTS_block23.md.gz": "b6333440cf0f0e6b01831619d8b5ef3f41abee47e74badee1cbe3632783d96d0",
+    "docs/work_history/review_loop/pr8154/8157/8157_REVIEW_HISTORY.md.gz": "5da7fd412e8b5ea3c238f80a7fc32600120e4abc1b4f8cac566ed6854bb57759",
+    "docs/work_history/review_loop/pr8154/8157/8157_ROUTE_PORTFOLIO.md.gz": "372545ee750aa9ada18c43728a94abf48cc5b14e12ab6957d46276eb4286a27b",
+    "docs/work_history/review_loop/pr8154/8157/8157_STATE.yaml.gz": "6e5019db1f0e631298e37226a08565166760d80495a7a5f40f8633fa70955e26",
+    "docs/work_history/review_loop/pr8154/8157/8157_TRACE_GATE.md.gz": "b6c9bf90b611e7ca0a3281b22e04f0bce30ddbce81fed5cf745d9d5bf1efab85",
+    "docs/work_history/review_loop/pr8154/8157/8157_admissibility_rule_unsoldered_sphere_static_law_plane_algebraic_decay_complex_rotations_2026_09_15.py.gz": "02d510495a7e0589d22b235617ae37ab6b689b75e02ae6095819a04ac8e3f3c6",
+    "docs/work_history/review_loop/pr8154/8157/8157_admissibility_rule_unsoldered_sphere_static_law_plane_algebraic_decay_complex_rotations_2026_09_15.txt.gz": "1293ee5f7c66dbed2bd73c6bc294f22ce30801efab69b9f190b3ab669d31a7b2",
+    "docs/work_history/review_loop/pr8154/8157/8157_citation_graph_manifest.json.gz": "f01a4041ff2ef05c6f3b44308c93f2be113a1eed28d1d3382c54a2b02b715224",
+    "docs/work_history/review_loop/pr8154/8157/8157_supervisor_control_block23_complex_rotations.out.txt.gz": "276254498ea1ba86b30ace95d0744e7ef8e5ae2a016c9ef144aa65cc45f338e1",
+    "docs/work_history/review_loop/pr8154/8157/8157_supervisor_control_block23_complex_rotations.py.gz": "a70a944cd1afa247405dac58494b23479d4f8e0a4993fb4a58f201957c926eec",
+    "docs/work_history/review_loop/pr8154/8157/8157_supervisor_control_block23_refuter.out.txt.gz": "367f0ee2fa856e238030e2ff86531d707fa8035b5cc08efb8ba5727b0b66b517",
+    "docs/work_history/review_loop/pr8154/8157/8157_supervisor_control_block23_refuter.py.gz": "6f212645562b411fab8ef95ae1686e5112cb8a3354d6644981dc684dbf1a7a72",
+    "docs/work_history/review_loop/pr8154/README.md": "694ca3d26293afb5693dca72de718a57e82b2c1a7643634bcaf6c6c026ced7ea",
+    "docs/work_history/review_loop/pr8154/original-manifest.json": "a44a0e783103f7b38f86c6c4bf9eea94abf1d84f865d5c211d5286fc7ef7cf81",
+    "logs/runner-cache/admissibility_rule_unsoldered_sphere_static_law_no_long_range_order_on_planes_and_lines_2026_09_15.txt": "a6e912e7cf3a2747edb293cefa5f7dc5b1268e073dcdd519a77aeca44a68e97a",
+    "logs/runner-cache/admissibility_rule_unsoldered_sphere_static_law_plane_algebraic_decay_complex_rotations_2026_09_15.txt": "c5c2b54f145fa480af23a7cd769e115b54710a6738dc355f8f4c5cc5297ca0d2",
+    "logs/runner-cache/admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_2026_09_15.txt": "802b1eb801a1e2850adc5b3368f41c5e53f1decd1010a7ce899783e086177b04",
+    "logs/runner-cache/admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.txt": "8e1c5cbd980db40607eb94aa68e142e3369bb521a94dcc94dfb5a05e1bb4fc39",
+    "scripts/admissibility_rule_unsoldered_sphere_static_law_no_long_range_order_on_planes_and_lines_2026_09_15.py": "ef7982e99aa68da61f3b9bfc85b6840455655ab50bddd375f9bc9a5a1bffe097",
+    "scripts/admissibility_rule_unsoldered_sphere_static_law_plane_algebraic_decay_complex_rotations_2026_09_15.py": "c98d038d403b3921701cb64f2b24ae5b69985f9a630ef5df979d57c9416c6684",
+    "scripts/admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_2026_09_15.py": "f9573592903f4ad220aecef1a0c739dbd455679ea7352d3e497938346d4ee4cd",
+    "scripts/admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.py": "8bb578762cfcf2c2312fe2db593294867727f9313c189b390bbe86243239c925",
+    "docs/ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md": "6e0f04265dffbfe87d6fa5a016a00a454f6b387924c839ef71220a7e2670b0ba",
+    "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_ZERO_FIELD_COMPONENT_FOURIER_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md": "dfac044b35160d3c5a1cb1bd5a20707f0ae9695623d0b8641f099060420a421b",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md": "86d269fec1b464c008b8ba0c9f705e6cf9411c041bdf21b4f96c4ec78f0a047a",
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "docs/audit/data/doc_authority_registry.json": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173",
+    "docs/audit/scripts/build_citation_graph.py": "dd51109c7054d2a853b8b4042ab22f5eb6b4476c6842f97379356245cdf85ab5",
+    "docs/audit/scripts/ledger_io.py": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+    "docs/audit/scripts/static_pipeline_checkpoint.py": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+    "scripts/audit_packet_script_deps.py": "a680d61f6e8c9e5035ef7ed99d4d73c93f5abf908978834c22a57e3ad1ae96ce",
+    "scripts/runner_cache.py": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+  },
+  "review_evidence_hashes": {
+    "drain8154-final-review-v2.json": "646226da6bc08e026961a7462c509812d5635d0a91deb1218316a4d3c6dec932",
+    "drain8154-original-review.json": "f6f63831b2bf296ef4ea4b3280dad01acd3899b28d4f43824e5cd21ef34463e2",
+    "drain8154-author-source-handoff-v1.json": "22fd4d4e1d9ee2d1a4443decc3f2875de054c163e91fe89fd53116244493db99",
+    "drain8154-author-cache-api-v1.json": "9cb4b08eec682da149db1bbc2480f4614740d9a0f0f97b84cd9e8cb4650788da",
+    "drain8156-original-review.json": "870eee40d120433395bcae9e847c5035dd6b19113efe840c82199f670f53a702",
+    "check8154/controls.json": "50f86cf5e1d0c6d63a1a2716f2748cb478edbc29e6623a9578a51f7540fdcbcd",
+    "check8156/controls.json": "cbb3bb21ba87e786fa2eb107f214b11773baf6e8782985d8f3afbea327cc31b0",
+    "drain8154-author-unit-draft-v1.json": "c7df489f9aedd8ad9d0a26a52bd7fa1856e4c2cc5b354be2a260ab6d31969b9d",
+    "drain8154-author-final-freeze.json": "fa11871e5ff1d41950c3437df9f03f240840ec3490a50f905c47b4f6637a21bd",
+    "drain8154-capture.py": "c21684a0453ddfb58b399e0555527ad3e565d7266fc2660a0c00ee9c62a559cf",
+    "drain8154-execution-8154.json": "7aac8ab7c3b18108f1b31fcd825ab9279314158226ab9dd62325a18b9c789553",
+    "drain8154-execution-8155.json": "a3f87d49f462881d86d07e56de15f9c9638c9e31cd6b6ff915e0cf46f4a952c1",
+    "drain8154-execution-8156.json": "ca06e728e4fb46222896a7ccd05cb0896fa8c98c5f2b65df03248998d23cec99",
+    "drain8154-execution-8157.json": "0fefe1b5ba0b2286d75097d0c9a2e14181f7e0e082943f89c50c1eda02a68fd7",
+    "drain8154-capture-v2.py": "99ae17524e8ff8fe1f62c4fa3451ffccdaffa956dbbd7a7416a3e9934b991c00",
+    "drain8154-final-review.json": "9be12dc0999e307a4c3ef8c6fb5103875b89db65c46ed5d323f3b88246657307",
+    "drain8154-unit-final.json": "02f0ece89a34e3169d1014084ed2e5b08f2ab3b66fbbfda979c07898b6e3fb48",
+    "drain8154-current-main-draft-v2.json": "fdd6bb13ebe6fac77fe242014a73fa56e6dfb0494acc0e1689739c408d769e18",
+    "drain8154-current-main-advance-v2.json": "da3a198c08bd25b2218cff59359514644c6143b9a64d4881f9062522c3864519",
+    "drain8154-unit-final-v2.json": "cb84ef4bd2aba5aef00d1fdf73a9e08af4b6fe5249e27c15ff044fd81b201ffb",
+    "drain8154-final-preflight-v3.json": "df5634e0f40f556f0027c0084a814a37474ae7f3e28b1ea329287db619a15e20",
+    "drain8154-report.md": "6d5a5742ba14e3b41ca8861262ae1ff585de3081ab9a3d89b4cf40a541811426"
+  },
+  "dependency_expectations": {
+    "docs/ADMISSIBILITY_RULE_CUBIC_WALK_RETURN_SUM_AND_SPHERE_STATIC_MAGNETIZATION_SUFFICIENT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "required_claim_ids": [
+        "admissibility_rule_sphere_static_law_zero_field_component_fourier_bounds_bounded_theorem_note_2026-09-15",
+        "minimal_axioms",
+        "possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14"
+      ],
+      "declared_authority_bindings": [
+        {
+          "declared_id": "admissibility_rule_sphere_static_law_zero_field_component_fourier_bounds_bounded_theorem_note_2026-09-15",
+          "graph_id": "admissibility_rule_sphere_static_law_zero_field_component_fourier_bounds_bounded_theorem_note_2026-09-15",
+          "source_path": "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_ZERO_FIELD_COMPONENT_FOURIER_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+          "sha256": "dfac044b35160d3c5a1cb1bd5a20707f0ae9695623d0b8641f099060420a421b"
+        },
+        {
+          "declared_id": "minimal_axioms",
+          "graph_id": "minimal_axioms",
+          "source_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+        },
+        {
+          "declared_id": "possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14",
+          "graph_id": "possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14",
+          "source_path": "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+          "sha256": "86d269fec1b464c008b8ba0c9f705e6cf9411c041bdf21b4f96c4ec78f0a047a"
+        }
+      ],
+      "allow_empty_repository_deps": true,
+      "independent_review": "drain8154-final-review-v2.json",
+      "reason": "Supplied sphere static law and mathematical imports stated explicitly; linked actual parents supply conditional representation or corrected quantitative implication, not physical selection. Full retained proof is in this note."
+    },
+    "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_FINITE_TORUS_MAGNETIZATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "required_claim_ids": [
+        "minimal_axioms",
+        "possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14"
+      ],
+      "declared_authority_bindings": [
+        {
+          "declared_id": "minimal_axioms",
+          "graph_id": "minimal_axioms",
+          "source_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+        },
+        {
+          "declared_id": "possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14",
+          "graph_id": "possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14",
+          "source_path": "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+          "sha256": "86d269fec1b464c008b8ba0c9f705e6cf9411c041bdf21b4f96c4ec78f0a047a"
+        }
+      ],
+      "allow_empty_repository_deps": true,
+      "independent_review": "drain8154-final-review-v2.json",
+      "reason": "Supplied sphere static law and mathematical imports stated explicitly; linked actual parents supply conditional representation or corrected quantitative implication, not physical selection. Full retained proof is in this note."
+    },
+    "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_PLANAR_COMPLEX_ROTATION_CORRELATION_UPPER_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "required_claim_ids": [
+        "minimal_axioms",
+        "possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14"
+      ],
+      "declared_authority_bindings": [
+        {
+          "declared_id": "minimal_axioms",
+          "graph_id": "minimal_axioms",
+          "source_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+        },
+        {
+          "declared_id": "possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14",
+          "graph_id": "possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14",
+          "source_path": "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+          "sha256": "86d269fec1b464c008b8ba0c9f705e6cf9411c041bdf21b4f96c4ec78f0a047a"
+        }
+      ],
+      "allow_empty_repository_deps": true,
+      "independent_review": "drain8154-final-review-v2.json",
+      "reason": "Supplied sphere static law and mathematical imports stated explicitly; linked actual parents supply conditional representation or corrected quantitative implication, not physical selection. Full retained proof is in this note."
+    },
+    "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_WEAK_COUPLING_COMPARISON_AND_CORRELATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "required_claim_ids": [
+        "admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_bounded_theorem_note_2026-09-06",
+        "minimal_axioms",
+        "possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14"
+      ],
+      "declared_authority_bindings": [
+        {
+          "declared_id": "admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_bounded_theorem_note_2026-09-06",
+          "graph_id": "admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_bounded_theorem_note_2026-09-06",
+          "source_path": "docs/ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+          "sha256": "6e0f04265dffbfe87d6fa5a016a00a454f6b387924c839ef71220a7e2670b0ba"
+        },
+        {
+          "declared_id": "minimal_axioms",
+          "graph_id": "minimal_axioms",
+          "source_path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+        },
+        {
+          "declared_id": "possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14",
+          "graph_id": "possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14",
+          "source_path": "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+          "sha256": "86d269fec1b464c008b8ba0c9f705e6cf9411c041bdf21b4f96c4ec78f0a047a"
+        }
+      ],
+      "allow_empty_repository_deps": true,
+      "independent_review": "drain8154-final-review-v2.json",
+      "reason": "Supplied sphere static law and mathematical imports stated explicitly; linked actual parents supply conditional representation or corrected quantitative implication, not physical selection. Full retained proof is in this note."
+    }
+  },
+  "cheap_preflight": {
+    "docs/ADMISSIBILITY_RULE_CUBIC_WALK_RETURN_SUM_AND_SPHERE_STATIC_MAGNETIZATION_SUFFICIENT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "primary_runner": "scripts/admissibility_rule_unsoldered_sphere_static_law_strong_coupling_threshold_sharpened_return_sum_2026_09_15.py",
+      "helper_runner_paths": [],
+      "type_hint": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "actual_citations": [
+        "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_ZERO_FIELD_COMPONENT_FOURIER_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "docs/work_history/review_loop/pr8154/README.md"
+      ],
+      "required_claim_ids": [
+        "admissibility_rule_sphere_static_law_zero_field_component_fourier_bounds_bounded_theorem_note_2026-09-15",
+        "minimal_axioms",
+        "possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14"
+      ]
+    },
+    "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_FINITE_TORUS_MAGNETIZATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "primary_runner": "scripts/admissibility_rule_unsoldered_sphere_static_law_no_long_range_order_on_planes_and_lines_2026_09_15.py",
+      "helper_runner_paths": [],
+      "type_hint": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "actual_citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "docs/work_history/review_loop/pr8154/README.md"
+      ],
+      "required_claim_ids": [
+        "minimal_axioms",
+        "possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14"
+      ]
+    },
+    "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_PLANAR_COMPLEX_ROTATION_CORRELATION_UPPER_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "primary_runner": "scripts/admissibility_rule_unsoldered_sphere_static_law_plane_algebraic_decay_complex_rotations_2026_09_15.py",
+      "helper_runner_paths": [],
+      "type_hint": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "actual_citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "docs/work_history/review_loop/pr8154/README.md"
+      ],
+      "required_claim_ids": [
+        "minimal_axioms",
+        "possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14"
+      ]
+    },
+    "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_WEAK_COUPLING_COMPARISON_AND_CORRELATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "primary_runner": "scripts/admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.py",
+      "helper_runner_paths": [],
+      "type_hint": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "actual_citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "docs/ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "docs/work_history/review_loop/pr8154/README.md"
+      ],
+      "required_claim_ids": [
+        "admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_bounded_theorem_note_2026-09-06",
+        "minimal_axioms",
+        "possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14"
+      ]
+    }
+  },
+  "units": [
+    "8154"
+  ],
+  "departure": "Four-PR coherent sphere unit fully confirmed on current main; depart immediately without waiting spatial-loop final preflight.",
+  "current_main_preservation": "Exact integrated delta equals accepted source path union; every other base path preserved. All reviewed source/input hashes match.",
+  "owned_supporting_proof_bindings": [],
+  "candidate_commit": "d0e809a52de34a6e1f086dee7b341dc1f96a07c7",
+  "candidate_tree": "084cc79b8398660037297d997aac6d5489aa113c",
+  "combined_gate": "PASS",
+  "full_pipeline_count": 1,
+  "changed_evidence_rows": 4,
+  "validation_logs": {
+    "train69-pipeline.log": "694a7d787cfd8323878245b5bf6e82ddfd1cbcc1c5bb26a00c55b3a5442b2159",
+    "train69-strict.log": "d5525ea400fa085feb5f6b19723e270ca658654e230e9fb06668d205b62571b2",
+    "train69-evidence.txt": "e10943922cd6b7aba81469f2c3b8a2bffc8a06cc0a1179c7db899fe11b0bfead",
+    "train69-validated-rows.json": "e157df412382b8491da2dc576c694ba0932a040435b3edf178baf98e0743f077"
+  },
+  "audit_boundary": "No verdict applied; source rows unaudited in validation. Existing main authority preserved; regenerated audit outputs stripped.",
+  "landing_state": "LANDED"
+}

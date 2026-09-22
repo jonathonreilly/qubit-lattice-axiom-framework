@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8161",
+  "tree": "0f2fbf00b1c24108040992329fa2098c63fb8623",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "rotor_global_gauss_dressing_coulomb_variational_compression_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/rotor_gauss_affine_theta_check_2026_09_16.py",
+      "helpers": [
+        "scripts/rotor_gauss_charged_ring_compression_2026_09_16.py"
+      ],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/work_history/review_loop/pr8161/README.md"
+      ]
+    },
+    {
+      "path": "docs/ROTOR_ORTHOGONAL_TRANSVERSE_REFERENCE_CURRENT_VERTEX_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "rotor_orthogonal_transverse_reference_current_vertex_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/rotor_transverse_reference_vertex_check_2026_09_16.py",
+      "helpers": [
+        "scripts/rotor_gauss_affine_theta_check_2026_09_16.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/rotor_gauss_affine_theta_check_2026_09_16.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/rotor_gauss_affine_theta_check_2026_09_16.py"
+      ],
+      "citations": [
+        "docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/work_history/review_loop/pr8161/README.md"
+      ]
+    },
+    {
+      "path": "docs/ROTOR_REFERENCE_VERTEX_INFRARED_WEIGHTED_NORMS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "rotor_reference_vertex_infrared_weighted_norms_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/rotor_reference_infrared_norm_check_2026_09_16.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/ROTOR_ORTHOGONAL_TRANSVERSE_REFERENCE_CURRENT_VERTEX_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/work_history/review_loop/pr8161/README.md"
+      ]
+    },
+    {
+      "path": "docs/ROTOR_COUPLED_FREE_VACUUM_RESOLVENT_DENSITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "rotor_coupled_free_vacuum_resolvent_densities_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/rotor_coupled_vacuum_resolvent_check_2026_09_16.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/work_history/review_loop/pr8161/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8767,
+      "misses": 4469
+    },
+    "packet_imports": {
+      "hits": 8753,
+      "misses": 4467
+    },
+    "declared_inputs": {
+      "hits": 8797,
+      "misses": 4604
+    }
+  },
+  "record_sha256": "4d7df435727770a8073ba8264bee421224f5cac73f0b79379d0b49ce622a1292",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

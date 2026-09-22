@@ -1,0 +1,24 @@
+{
+  "passed": 16,
+  "checks": [
+    "four_touching_groups",
+    "gentle_projection_1/100",
+    "mass_alone_not_trace_distance_1/100",
+    "gentle_projection_1/9",
+    "mass_alone_not_trace_distance_1/9",
+    "gentle_projection_1/4",
+    "mass_alone_not_trace_distance_1/4",
+    "gentle_projection_1/2",
+    "mass_alone_not_trace_distance_1/2",
+    "gentle_projection_1",
+    "tail_(Fraction(1, 2), Fraction(1, 3), Fraction(1, 6))_2",
+    "tail_(Fraction(1, 2), Fraction(1, 3), Fraction(1, 6))_5",
+    "tail_(Fraction(1, 2), Fraction(1, 3), Fraction(1, 6))_10",
+    "tail_(Fraction(1, 7), Fraction(2, 7), Fraction(4, 7))_2",
+    "tail_(Fraction(1, 7), Fraction(2, 7), Fraction(4, 7))_5",
+    "tail_(Fraction(1, 7), Fraction(2, 7), Fraction(4, 7))_10"
+  ],
+  "elapsed_sec": 0.00012404104927554727,
+  "source_sha256": "55f2f77ddd70f64cb7d34ef0d69256a98d38f1b3e8c10fa57ab83e5a0eac4714",
+  "scope": "Exact local incidence, gentle-compression and energy-tail identities supporting normality reasoning; full imported GNS and resolvent limit read analytically."
+}

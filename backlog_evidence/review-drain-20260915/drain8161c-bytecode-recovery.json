@@ -1,0 +1,8 @@
+{
+  "head": "117b9c29ade66b5e4d057340a08893798a33f650",
+  "paths": {
+    "scripts/__pycache__/runner_cache.cpython-312.pyc": "1c26d69edc194d54e73ec81ac0474d0daa498b451e7c712b4620e709b4e7f1d3"
+  },
+  "archive_sha256": "bee1c6bb2c3c646af7a07c0200e12ff71a10b40d509b0bf39ae3d1e38500b86e",
+  "reason": "Strict release preserved ownership due ignored Python bytecode; no source residue."
+}

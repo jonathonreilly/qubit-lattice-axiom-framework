@@ -1,0 +1,3 @@
+PR #8555: pack: decision record for the moving-records lane (blocks 39-52): what is established, the forks, the cost of the capture picture, a correction (the wind is not isotropic), and the revised recommendation (source yes, carrier no)
+branch physics-loop/admissibility-induced-law-decision-record-moving-records-sources-carriers-20260921 (base main)
+runners in the PR: 0

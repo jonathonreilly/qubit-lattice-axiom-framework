@@ -1,0 +1,3 @@
+PR #8572: ail decision record: the source link in the amplitude layer — state of knowledge after blocks 53–56 (pack-only)
+branch physics-loop/admissibility-induced-law-decision-record-source-link-amplitude-layer-20260921 (base main)
+runners in the PR: 0

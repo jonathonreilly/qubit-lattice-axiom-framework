@@ -1,0 +1,30 @@
+{
+ "task": "P:8555",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-decision-recor",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8555",
+ "pr": 8555,
+ "branch": "physics-loop/admissibility-induced-law-decision-record-moving-records-sources-carriers-20260921",
+ "git_sha": "b0cc0a48",
+ "started_utc": "20260922T200134Z",
+ "elapsed_s": 4.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": []
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "30c1526c75902946ded5b1453f11a253282be9813c136ee9f885b7448b0804cb",
+ "stdout_tail": "PR #8555: pack: decision record for the moving-records lane (blocks 39-52): what is established, the forks, the cost of the capture picture, a correction (the wind is not isotropic), and the revised recommendation (source yes, carrier no)\nbranch physics-loop/admissibility-induced-law-decision-record-moving-records-sources-carriers-20260921 (base main)\nrunners in the PR: 0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260922T200138Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

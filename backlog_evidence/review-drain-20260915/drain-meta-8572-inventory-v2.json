@@ -1,0 +1,24 @@
+{
+  "number": 8572,
+  "head": "95be2edf79e7b3df8619a23701a81e3b7c49b2f1",
+  "delta_base": "c213c15006128ee9a70b7f882a80b49f4ffe94d9",
+  "current_base": "7475249f415a87db92a611e6157fae600d66f3f4",
+  "original_paths": [
+    {
+      "status": "A",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/DECISION_RECORD_source_link_amplitude_layer_20260921.md",
+      "mode": "100644",
+      "blob": "9e72ee3477bc4197f18aa97a1d80edbe9e013bf3",
+      "sha256": "801f03bca4fa160e874e9b7824a849d0156e442e7e03e43912492f6d89dae87a",
+      "bytes": 42611
+    },
+    {
+      "status": "A",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/FORK_PROBE_source_link_20260922.md",
+      "mode": "100644",
+      "blob": "150b12d0fa1a65cab17f60939c89f17b1dc6710d",
+      "sha256": "42e2e9ad09593628cc9619f20695828e9eabbd78c9fb2bf3289d879b32ef12bc",
+      "bytes": 12309
+    }
+  ]
+}

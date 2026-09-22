@@ -1,0 +1,38 @@
+[
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-decision-record-blocks-01-34-20260918",
+    "headRefOid": "72145d08eaf876c14206c8de2a2a8b62ffd8e64d",
+    "isDraft": false,
+    "number": 8179,
+    "state": "OPEN",
+    "title": "ail: decision record for blocks 01\u201334 \u2014 the state of knowledge for the axiom decision, the proved-vs-located map, the integration order (proposals; nothing adopted)",
+    "delta_base": "95d6ba7d3d3eb83976ea8ef88c750ddf90e0a5db",
+    "delta_file": "drain-meta-8179-original.patch",
+    "delta_sha256": "596d6264676e65f5123d831201b360a7d97abdde29a4e885f8f97e2659c71f6d"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-decision-record-moving-records-sources-carriers-20260921",
+    "headRefOid": "b9279835bdbacd6a6028fc1c095a16145352f312",
+    "isDraft": false,
+    "number": 8555,
+    "state": "OPEN",
+    "title": "pack: decision record for the moving-records lane (blocks 39-52): what is established, the forks, the cost of the capture picture, a correction (the wind is not isotropic), and the revised recommendation (source yes, carrier no)",
+    "delta_base": "5d784d8ccda5268f2b7c056fcdf0d81fdb703319",
+    "delta_file": "drain-meta-8555-original.patch",
+    "delta_sha256": "6c5201918469c37e69c0b1dd2dff9cd6706cb436b4d8234c324b30e5a2f05d0d"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-decision-record-source-link-amplitude-layer-20260921",
+    "headRefOid": "0659fefd62ef6613ffeb1a49ad4a24b865810ee8",
+    "isDraft": false,
+    "number": 8572,
+    "state": "OPEN",
+    "title": "ail decision record: the source link in the amplitude layer \u2014 state of knowledge after blocks 53\u201356 (pack-only)",
+    "delta_base": "c213c15006128ee9a70b7f882a80b49f4ffe94d9",
+    "delta_file": "drain-meta-8572-original.patch",
+    "delta_sha256": "7c5d377435048d6ae0f01d17f2c7ca6e869b7bcd9760b29f6bc3433437f400db"
+  }
+]

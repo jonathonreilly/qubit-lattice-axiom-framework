@@ -1,0 +1,342 @@
+{
+  "status": "REJECT_MAIN_LANDING_PRESERVE_HISTORICAL_PROVENANCE",
+  "reviewer_session": "/root/review_8011",
+  "current_base": "7475249f415a87db92a611e6157fae600d66f3f4",
+  "units": [
+    {
+      "baseRefName": "main",
+      "headRefName": "physics-loop/admissibility-induced-law-decision-record-blocks-01-34-20260918",
+      "headRefOid": "72145d08eaf876c14206c8de2a2a8b62ffd8e64d",
+      "isDraft": false,
+      "number": 8179,
+      "state": "OPEN",
+      "title": "ail: decision record for blocks 01\u201334 \u2014 the state of knowledge for the axiom decision, the proved-vs-located map, the integration order (proposals; nothing adopted)",
+      "delta_base": "95d6ba7d3d3eb83976ea8ef88c750ddf90e0a5db",
+      "delta_file": "drain-meta-8179-original.patch",
+      "delta_sha256": "596d6264676e65f5123d831201b360a7d97abdde29a4e885f8f97e2659c71f6d",
+      "original_paths": [
+        {
+          "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/DECISION_RECORD.md",
+          "mode": "100644",
+          "blob": "941648c528f9cd9192d9ca1874264bf7eb8e02a1",
+          "sha256": "6e1ebd6a732d232fcc4e53a3daf2b5bf0e3e9b59bdec3c055a35f3ec25bf7480",
+          "bytes": 7024
+        },
+        {
+          "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+          "mode": "100644",
+          "blob": "ee16bd884c4bf82c9cb39b5be3f2b807d1a55fb7",
+          "sha256": "4b697dcdea47f0f623ea263b2ff5c439f4645a71c53b8b21f32b4c682c8bd7ff",
+          "bytes": 8985
+        }
+      ],
+      "verified_patch_sha256": "596d6264676e65f5123d831201b360a7d97abdde29a4e885f8f97e2659c71f6d"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "physics-loop/admissibility-induced-law-decision-record-moving-records-sources-carriers-20260921",
+      "headRefOid": "b9279835bdbacd6a6028fc1c095a16145352f312",
+      "isDraft": false,
+      "number": 8555,
+      "state": "OPEN",
+      "title": "pack: decision record for the moving-records lane (blocks 39-52): what is established, the forks, the cost of the capture picture, a correction (the wind is not isotropic), and the revised recommendation (source yes, carrier no)",
+      "delta_base": "5d784d8ccda5268f2b7c056fcdf0d81fdb703319",
+      "delta_file": "drain-meta-8555-original.patch",
+      "delta_sha256": "6c5201918469c37e69c0b1dd2dff9cd6706cb436b4d8234c324b30e5a2f05d0d",
+      "original_paths": [
+        {
+          "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/DECISION_RECORD_moving_records_sources_carriers_20260921.md",
+          "mode": "100644",
+          "blob": "f170fb229a56b2065857a541a1777b3934bd2286",
+          "sha256": "4cd7315363a4bcc742888681cccaa5a2b2b4a6f7e65d9db93116c44d6640c746",
+          "bytes": 19308
+        },
+        {
+          "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+          "mode": "100644",
+          "blob": "74e41f5a6026cda6045d6420e41853c51afb118e",
+          "sha256": "172268336c7e01919b27e82ab1c4a3c50e8f753af60ad59ba76a240823b72440",
+          "bytes": 10846
+        },
+        {
+          "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+          "mode": "100644",
+          "blob": "4d2220d8e42f2c566ef6a4f56fa7f182feafb096",
+          "sha256": "e125402926acbf7a9fd6832cbdc134f4e5954a060c2ddbfce23f87a742eb4c26",
+          "bytes": 14823
+        }
+      ],
+      "verified_patch_sha256": "6c5201918469c37e69c0b1dd2dff9cd6706cb436b4d8234c324b30e5a2f05d0d"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "physics-loop/admissibility-induced-law-decision-record-source-link-amplitude-layer-20260921",
+      "headRefOid": "95be2edf79e7b3df8619a23701a81e3b7c49b2f1",
+      "isDraft": false,
+      "number": 8572,
+      "state": "OPEN",
+      "title": "ail decision record: the source link in the amplitude layer \u2014 state of knowledge after blocks 53\u201356 (pack-only)",
+      "delta_base": "c213c15006128ee9a70b7f882a80b49f4ffe94d9",
+      "delta_file": "drain-meta-8572-original.patch",
+      "delta_sha256": "7c5d377435048d6ae0f01d17f2c7ca6e869b7bcd9760b29f6bc3433437f400db",
+      "original_paths": [
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/DECISION_RECORD_source_link_amplitude_layer_20260921.md",
+          "mode": "100644",
+          "blob": "9e72ee3477bc4197f18aa97a1d80edbe9e013bf3",
+          "sha256": "801f03bca4fa160e874e9b7824a849d0156e442e7e03e43912492f6d89dae87a",
+          "bytes": 42611
+        },
+        {
+          "status": "A",
+          "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/FORK_PROBE_source_link_20260922.md",
+          "mode": "100644",
+          "blob": "150b12d0fa1a65cab17f60939c89f17b1dc6710d",
+          "sha256": "42e2e9ad09593628cc9619f20695828e9eabbd78c9fb2bf3289d879b32ef12bc",
+          "bytes": 12309
+        }
+      ],
+      "verified_patch_sha256": "fe9d516e8b854f2254b1d3ed84a13d8055480078d7d915c94bd9c95a39410579"
+    }
+  ],
+  "original_dispositions": [
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/DECISION_RECORD.md",
+      "mode": "100644",
+      "blob": "941648c528f9cd9192d9ca1874264bf7eb8e02a1",
+      "sha256": "6e1ebd6a732d232fcc4e53a3daf2b5bf0e3e9b59bdec3c055a35f3ec25bf7480",
+      "bytes": 7024,
+      "pr": 8179,
+      "original_revision": "72145d08eaf876c14206c8de2a2a8b62ffd8e64d",
+      "delta_base": "95d6ba7d3d3eb83976ea8ef88c750ddf90e0a5db",
+      "disposition": "historical_only_reject_main",
+      "recovery": {
+        "revision": "72145d08eaf876c14206c8de2a2a8b62ffd8e64d",
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/DECISION_RECORD.md",
+        "sha256": "6e1ebd6a732d232fcc4e53a3daf2b5bf0e3e9b59bdec3c055a35f3ec25bf7480",
+        "proposed_execution_path": "backlog_evidence/review-drain-20260915/meta-decision-history/pr8179/.claude/science/physics-loops/admissibility-induced-law-20260906/DECISION_RECORD.md"
+      },
+      "claim_scope": "campaign decision/proposal and author-reported sibling findings; not independent source proof or audit authority"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "mode": "100644",
+      "blob": "ee16bd884c4bf82c9cb39b5be3f2b807d1a55fb7",
+      "sha256": "4b697dcdea47f0f623ea263b2ff5c439f4645a71c53b8b21f32b4c682c8bd7ff",
+      "bytes": 8985,
+      "pr": 8179,
+      "original_revision": "72145d08eaf876c14206c8de2a2a8b62ffd8e64d",
+      "delta_base": "95d6ba7d3d3eb83976ea8ef88c750ddf90e0a5db",
+      "disposition": "historical_only_reject_main",
+      "recovery": {
+        "revision": "72145d08eaf876c14206c8de2a2a8b62ffd8e64d",
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+        "sha256": "4b697dcdea47f0f623ea263b2ff5c439f4645a71c53b8b21f32b4c682c8bd7ff",
+        "proposed_execution_path": "backlog_evidence/review-drain-20260915/meta-decision-history/pr8179/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md"
+      },
+      "claim_scope": "campaign decision/proposal and author-reported sibling findings; not independent source proof or audit authority"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/DECISION_RECORD_moving_records_sources_carriers_20260921.md",
+      "mode": "100644",
+      "blob": "f170fb229a56b2065857a541a1777b3934bd2286",
+      "sha256": "4cd7315363a4bcc742888681cccaa5a2b2b4a6f7e65d9db93116c44d6640c746",
+      "bytes": 19308,
+      "pr": 8555,
+      "original_revision": "b9279835bdbacd6a6028fc1c095a16145352f312",
+      "delta_base": "5d784d8ccda5268f2b7c056fcdf0d81fdb703319",
+      "disposition": "historical_only_reject_main",
+      "recovery": {
+        "revision": "b9279835bdbacd6a6028fc1c095a16145352f312",
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/DECISION_RECORD_moving_records_sources_carriers_20260921.md",
+        "sha256": "4cd7315363a4bcc742888681cccaa5a2b2b4a6f7e65d9db93116c44d6640c746",
+        "proposed_execution_path": "backlog_evidence/review-drain-20260915/meta-decision-history/pr8555/.claude/science/physics-loops/admissibility-induced-law-20260906/DECISION_RECORD_moving_records_sources_carriers_20260921.md"
+      },
+      "claim_scope": "campaign decision/proposal and author-reported sibling findings; not independent source proof or audit authority"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "mode": "100644",
+      "blob": "74e41f5a6026cda6045d6420e41853c51afb118e",
+      "sha256": "172268336c7e01919b27e82ab1c4a3c50e8f753af60ad59ba76a240823b72440",
+      "bytes": 10846,
+      "pr": 8555,
+      "original_revision": "b9279835bdbacd6a6028fc1c095a16145352f312",
+      "delta_base": "5d784d8ccda5268f2b7c056fcdf0d81fdb703319",
+      "disposition": "historical_only_reject_main",
+      "recovery": {
+        "revision": "b9279835bdbacd6a6028fc1c095a16145352f312",
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+        "sha256": "172268336c7e01919b27e82ab1c4a3c50e8f753af60ad59ba76a240823b72440",
+        "proposed_execution_path": "backlog_evidence/review-drain-20260915/meta-decision-history/pr8555/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md"
+      },
+      "claim_scope": "campaign decision/proposal and author-reported sibling findings; not independent source proof or audit authority"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "mode": "100644",
+      "blob": "4d2220d8e42f2c566ef6a4f56fa7f182feafb096",
+      "sha256": "e125402926acbf7a9fd6832cbdc134f4e5954a060c2ddbfce23f87a742eb4c26",
+      "bytes": 14823,
+      "pr": 8555,
+      "original_revision": "b9279835bdbacd6a6028fc1c095a16145352f312",
+      "delta_base": "5d784d8ccda5268f2b7c056fcdf0d81fdb703319",
+      "disposition": "historical_only_reject_main",
+      "recovery": {
+        "revision": "b9279835bdbacd6a6028fc1c095a16145352f312",
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+        "sha256": "e125402926acbf7a9fd6832cbdc134f4e5954a060c2ddbfce23f87a742eb4c26",
+        "proposed_execution_path": "backlog_evidence/review-drain-20260915/meta-decision-history/pr8555/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml"
+      },
+      "claim_scope": "campaign decision/proposal and author-reported sibling findings; not independent source proof or audit authority"
+    },
+    {
+      "status": "A",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/DECISION_RECORD_source_link_amplitude_layer_20260921.md",
+      "mode": "100644",
+      "blob": "9e72ee3477bc4197f18aa97a1d80edbe9e013bf3",
+      "sha256": "801f03bca4fa160e874e9b7824a849d0156e442e7e03e43912492f6d89dae87a",
+      "bytes": 42611,
+      "pr": 8572,
+      "original_revision": "95be2edf79e7b3df8619a23701a81e3b7c49b2f1",
+      "delta_base": "c213c15006128ee9a70b7f882a80b49f4ffe94d9",
+      "disposition": "historical_only_reject_main",
+      "recovery": {
+        "revision": "95be2edf79e7b3df8619a23701a81e3b7c49b2f1",
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/DECISION_RECORD_source_link_amplitude_layer_20260921.md",
+        "sha256": "801f03bca4fa160e874e9b7824a849d0156e442e7e03e43912492f6d89dae87a",
+        "proposed_execution_path": "backlog_evidence/review-drain-20260915/meta-decision-history/pr8572/.claude/science/physics-loops/admissibility-induced-law-20260906/DECISION_RECORD_source_link_amplitude_layer_20260921.md"
+      },
+      "claim_scope": "campaign decision/proposal and author-reported sibling findings; not independent source proof or audit authority"
+    },
+    {
+      "status": "A",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/FORK_PROBE_source_link_20260922.md",
+      "mode": "100644",
+      "blob": "150b12d0fa1a65cab17f60939c89f17b1dc6710d",
+      "sha256": "42e2e9ad09593628cc9619f20695828e9eabbd78c9fb2bf3289d879b32ef12bc",
+      "bytes": 12309,
+      "pr": 8572,
+      "original_revision": "95be2edf79e7b3df8619a23701a81e3b7c49b2f1",
+      "delta_base": "c213c15006128ee9a70b7f882a80b49f4ffe94d9",
+      "disposition": "historical_only_reject_main",
+      "recovery": {
+        "revision": "95be2edf79e7b3df8619a23701a81e3b7c49b2f1",
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/FORK_PROBE_source_link_20260922.md",
+        "sha256": "42e2e9ad09593628cc9619f20695828e9eabbd78c9fb2bf3289d879b32ef12bc",
+        "proposed_execution_path": "backlog_evidence/review-drain-20260915/meta-decision-history/pr8572/.claude/science/physics-loops/admissibility-induced-law-20260906/FORK_PROBE_source_link_20260922.md"
+      },
+      "claim_scope": "campaign decision/proposal and author-reported sibling findings; not independent source proof or audit authority"
+    }
+  ],
+  "inherited_context": [
+    {
+      "pr": 8179,
+      "original_revision": "72145d08eaf876c14206c8de2a2a8b62ffd8e64d",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "mode": "100644",
+      "blob": "e16642020759d3d57935cd6d037d382fc6573bf0",
+      "sha256": "2b955f847d5c0f6e7e6325cbdcc51aeb9bbd0197832d23195b34c5cb969d08a3",
+      "bytes": 14595,
+      "local_recovery": "/private/tmp/review-drain-20260915/drain-meta-8179-inherited-STATE.yaml",
+      "disposition": "inherited_context_not_new_source"
+    },
+    {
+      "pr": 8572,
+      "original_revision": "95be2edf79e7b3df8619a23701a81e3b7c49b2f1",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "mode": "100644",
+      "blob": "6dfc9de13838b8fe1d6d593b83d0d31cd0763b93",
+      "sha256": "e52898452cca1ed4e5065f0f8c2e27a7a9afd018a8e8d5867e991d7adf4ba59f",
+      "bytes": 8140,
+      "local_recovery": "/private/tmp/review-drain-20260915/drain-meta-8572-inherited-HANDOFF.md",
+      "disposition": "inherited_context_not_new_source"
+    },
+    {
+      "pr": 8572,
+      "original_revision": "95be2edf79e7b3df8619a23701a81e3b7c49b2f1",
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "mode": "100644",
+      "blob": "e16642020759d3d57935cd6d037d382fc6573bf0",
+      "sha256": "2b955f847d5c0f6e7e6325cbdcc51aeb9bbd0197832d23195b34c5cb969d08a3",
+      "bytes": 14595,
+      "local_recovery": "/private/tmp/review-drain-20260915/drain-meta-8572-inherited-STATE.yaml",
+      "disposition": "inherited_context_not_new_source"
+    }
+  ],
+  "context_inputs": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "read_scope": "same-session complete authority read reused at exact SHA"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "read_scope": "same-session complete authority read reused at exact SHA"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "read_scope": "same-session complete authority read reused at exact SHA"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "read_scope": "same-session complete authority read reused at exact SHA"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "read_scope": "same-session complete authority read reused at exact SHA"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "read_scope": "same-session complete authority read reused at exact SHA"
+    },
+    {
+      "path": "docs/repo/DEFERRED_DECISIONS.md",
+      "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+      "read_scope": "governance routing/standing defaults; active queue routing and status boundaries"
+    },
+    {
+      "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+      "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+      "read_scope": "governance routing/standing defaults; active queue routing and status boundaries"
+    },
+    {
+      "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+      "sha256": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8",
+      "read_scope": "governance routing/standing defaults; active queue routing and status boundaries"
+    }
+  ],
+  "runtime_scientific_inputs": [],
+  "source_changes": [],
+  "audit_verdict": null,
+  "branches": "Preserve all three original branches. Root must recheck live heads immediately before closure.",
+  "current_main_loss": "No source is proposed for removal or overwrite. Separate source PRs retain independent review obligations; summaries do not import their proofs or grades.",
+  "claim_dispositions": {
+    "8179": [
+      "Blocks01\u201334 interpretation/threshold/memory/gravity summaries: author history only. Sequential formation is a supplied model, not an axiom selected by this record.",
+      "HANDOFF blocks01\u201305 certificates, closures and later corrigenda: retain complete version as history; no grade inheritance."
+    ],
+    "8555": [
+      "Blocks39\u201352 capture/streaming/count/inertia and force numbers: sibling-model claims, not independent proofs here.",
+      "Wind-isotropy/collision correction and variable-magnitude escape: useful exact historical provenance; source PRs own canonical corrections.",
+      "HANDOFF and STATE resume instructions/certificates are historical; neither grants present authority."
+    ],
+    "8572": [
+      "Rows1\u201350 clocks, ledger, amplitude, strains, species and mass claims: conditional supplied-model summaries, no adoption of clauses A/B/C.",
+      "Fork probe and scratch numerics: proposed research and reported checks, no universal exclusion or GR derivation.",
+      "New-head alternating-length/rest-energy correction must be retained at95be2edf; old0659 coverage not substituted."
+    ]
+  },
+  "salvage": {
+    "canonical": "No unique missing implementation, graph repair, or self-contained scientific packet identified in these seven-path deltas. Non-theorem/meta form itself is not rejection reason.",
+    "history": "Preserve full exact decision, handoff, state and fork-probe versions with historical/unreviewed README on ai/execution.",
+    "elementary_algebra": "For odd bipartite hopping H and diagonal parity epsilon, {H,epsilon}=0 gives (H+m epsilon)^2=H^2+m^2. Chessboard positive phi has phi_x phi_y=1 on nearest-neighbor edges, hence phi H phi=H absent onsite terms. These short identities do not establish the broader physical/uniqueness claims and already point to separate source PRs."
+  },
+  "limitations": "No sibling source theorem is accepted or rejected by this meta review; no campaign or primary execution undertaken. External comparisons are not imported as premises. Main landing would require a separately reviewed narrowed source packet, not rebranding historical summaries as proof."
+}

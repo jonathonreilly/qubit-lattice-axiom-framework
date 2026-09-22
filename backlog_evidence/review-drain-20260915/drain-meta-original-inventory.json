@@ -1,0 +1,93 @@
+[
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-decision-record-blocks-01-34-20260918",
+    "headRefOid": "72145d08eaf876c14206c8de2a2a8b62ffd8e64d",
+    "isDraft": false,
+    "number": 8179,
+    "state": "OPEN",
+    "title": "ail: decision record for blocks 01\u201334 \u2014 the state of knowledge for the axiom decision, the proved-vs-located map, the integration order (proposals; nothing adopted)",
+    "delta_base": "95d6ba7d3d3eb83976ea8ef88c750ddf90e0a5db",
+    "delta_file": "drain-meta-8179-original.patch",
+    "delta_sha256": "596d6264676e65f5123d831201b360a7d97abdde29a4e885f8f97e2659c71f6d",
+    "original_paths": [
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/DECISION_RECORD.md",
+        "mode": "100644",
+        "blob": "941648c528f9cd9192d9ca1874264bf7eb8e02a1",
+        "sha256": "6e1ebd6a732d232fcc4e53a3daf2b5bf0e3e9b59bdec3c055a35f3ec25bf7480",
+        "bytes": 7024
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+        "mode": "100644",
+        "blob": "ee16bd884c4bf82c9cb39b5be3f2b807d1a55fb7",
+        "sha256": "4b697dcdea47f0f623ea263b2ff5c439f4645a71c53b8b21f32b4c682c8bd7ff",
+        "bytes": 8985
+      }
+    ]
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-decision-record-moving-records-sources-carriers-20260921",
+    "headRefOid": "b9279835bdbacd6a6028fc1c095a16145352f312",
+    "isDraft": false,
+    "number": 8555,
+    "state": "OPEN",
+    "title": "pack: decision record for the moving-records lane (blocks 39-52): what is established, the forks, the cost of the capture picture, a correction (the wind is not isotropic), and the revised recommendation (source yes, carrier no)",
+    "delta_base": "5d784d8ccda5268f2b7c056fcdf0d81fdb703319",
+    "delta_file": "drain-meta-8555-original.patch",
+    "delta_sha256": "6c5201918469c37e69c0b1dd2dff9cd6706cb436b4d8234c324b30e5a2f05d0d",
+    "original_paths": [
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/DECISION_RECORD_moving_records_sources_carriers_20260921.md",
+        "mode": "100644",
+        "blob": "f170fb229a56b2065857a541a1777b3934bd2286",
+        "sha256": "4cd7315363a4bcc742888681cccaa5a2b2b4a6f7e65d9db93116c44d6640c746",
+        "bytes": 19308
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+        "mode": "100644",
+        "blob": "74e41f5a6026cda6045d6420e41853c51afb118e",
+        "sha256": "172268336c7e01919b27e82ab1c4a3c50e8f753af60ad59ba76a240823b72440",
+        "bytes": 10846
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+        "mode": "100644",
+        "blob": "4d2220d8e42f2c566ef6a4f56fa7f182feafb096",
+        "sha256": "e125402926acbf7a9fd6832cbdc134f4e5954a060c2ddbfce23f87a742eb4c26",
+        "bytes": 14823
+      }
+    ]
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-decision-record-source-link-amplitude-layer-20260921",
+    "headRefOid": "0659fefd62ef6613ffeb1a49ad4a24b865810ee8",
+    "isDraft": false,
+    "number": 8572,
+    "state": "OPEN",
+    "title": "ail decision record: the source link in the amplitude layer \u2014 state of knowledge after blocks 53\u201356 (pack-only)",
+    "delta_base": "c213c15006128ee9a70b7f882a80b49f4ffe94d9",
+    "delta_file": "drain-meta-8572-original.patch",
+    "delta_sha256": "7c5d377435048d6ae0f01d17f2c7ca6e869b7bcd9760b29f6bc3433437f400db",
+    "original_paths": [
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/DECISION_RECORD_source_link_amplitude_layer_20260921.md",
+        "mode": "100644",
+        "blob": "f2b9b90ee99b127a638d8d748dc5871f0a49202b",
+        "sha256": "0acc28cd20648bb9043c4de88ac33c1c6a0520edd505ad3f544d23544dde0dc3",
+        "bytes": 41591
+      },
+      {
+        "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/FORK_PROBE_source_link_20260922.md",
+        "mode": "100644",
+        "blob": "150b12d0fa1a65cab17f60939c89f17b1dc6710d",
+        "sha256": "42e2e9ad09593628cc9619f20695828e9eabbd78c9fb2bf3289d879b32ef12bc",
+        "bytes": 12309
+      }
+    ]
+  }
+]

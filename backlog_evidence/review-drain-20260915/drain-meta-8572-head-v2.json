@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "95be2edf79e7b3df8619a23701a81e3b7c49b2f1",
+  "fetched_ref": "refs/review-loop/fetched/8572-8575868882d74b1abe82970deb95d290",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-decision-record-source-link-amplitude-layer-20260921",
+    "headRefOid": "95be2edf79e7b3df8619a23701a81e3b7c49b2f1",
+    "isDraft": false,
+    "number": 8572,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

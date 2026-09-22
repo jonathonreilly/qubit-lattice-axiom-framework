@@ -22,11 +22,18 @@
  "stdout_tail": "x3)=4120449306433/238517136000000 exactly (< 0.874 x the fixed-order value)\nSUMMARY: PARTIAL exact hull distances at (3,1,2): the full adapted hull on 2x2 and 2x3; the E-count threshold [953,2410] on disjoint plaquettes; exact corner-order certificates on 2xL, 3xL strips and the 2x2xL tube (KL per column, monotone hull, singularity on the half-infinite strip); 2x2x2 monotone hull TV=3205622113713065/81441318629518848; route no-go: the pointwise envelope decays on 2xL.\nHIT: TV(static law, closed convex hull of all adapted formation laws) is exact on the 2x2 = 30457/2431728 (the corner mixture attains the Bellman lower bound; optimal test 1_E, E = one diagonal pair equal and the other not antipodal) and on the 2x3 = 4120449306433/238517136000000 (19 value-dependent strategies vs a test with matching Bellman sup), below 812090431/41067000000 = TV to all 720 fixed orders.\nHIT: m disjoint plaquettes: every nondecreasing G of the m E-indicators has sup over the adapted hull of E_nu G = G^(q,...,q), q=1619/5616 (multi-affine Bellman), so TV >= TV(Bin(m,521/1732),Bin(m,q)) >= 1-beta^m with 1-beta >= 9.43777e-5; TV >= 1/2 at m=2410 and TV < 1/2 for m <= 952.\nHIT: corner-order laws on w x L strips (w=2,3) and the 2x2xL tube: exact Perron certificates BC^2 <= K*r2^(L-1) with 1-r2 >= 6.05795792e-4, 1.245343112e-3, 3.511679839e-3 give KL >= (L-1)(1-r2) - log K, TV >= 1/2 against the whole monotone hull for L >= 4624, 2272, 1019, and mutual singularity on the half-infinite strip and tube.\n",
  "checked": {
   "by": "w-macbookpro90c72-j252c",
-  "at_utc": "20260922T220511Z",
+  "at_utc": "20260922T220612Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 6bafacca differs from the current HEAD 025bfb0d (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Self-triage science: check.py verifies exactly (FAIL empty) the new exact full-hull TVs on the 2x2 (30457/2431728) and the 2x3 (4120449306433/238517136000000, below the fixed-order value 812090431/41067000000), the E-count threshold bracket [953,2410] on disjoint plaquettes, and the corner-order certificates on strips and the tube; needs a referee from another model family.",
+  "by": "w-macbookpro90c72-j252c",
+  "at_utc": "20260922T220612Z"
  }
 }

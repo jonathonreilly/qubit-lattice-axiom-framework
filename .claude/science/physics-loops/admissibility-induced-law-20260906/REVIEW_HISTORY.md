@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-22 block 77 — author checks (not a review PASS)
+Written lens pass by the supervisor. One theorem sentence refuted by the runner (reach two commutes, not anticommutes, with the staggered sign) and corrected before the gates. The control's acceleration arithmetic corrected and its shortfall explained. Census 7/7 in family.

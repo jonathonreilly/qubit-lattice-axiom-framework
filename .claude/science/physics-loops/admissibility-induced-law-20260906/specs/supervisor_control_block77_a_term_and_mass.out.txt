@@ -1,0 +1,16 @@
+[W1] 6x6x6 torus, a0 = 0.3, a = 0.2: the a-term's levels at the zeros and the nearest eigenvalues
+     |n| = 0 (1 species, sense +1): level +1.500; nearest eigenvalues off by 2.2e-16, 4.4e-16 (zeros present: the walk on an even torus has k = pi n exactly)
+     |n| = 1 (3 species, sense -1): level +0.700; nearest eigenvalues off by 1.1e-16, 3.3e-16 (zeros present: the walk on an even torus has k = pi n exactly)
+     |n| = 2 (3 species, sense +1): level -0.100; nearest eigenvalues off by 5.0e-16, 6.8e-16 (zeros present: the walk on an even torus has k = pi n exactly)
+     |n| = 3 (1 species, sense -1): level -0.900; nearest eigenvalues off by 7.8e-16, 1.6e-15 (zeros present: the walk on an even torus has k = pi n exactly)
+
+[W2] staggered term m = 0.7: spectrum of H + m eps against +-sqrt(E_walk^2 + m^2): largest mismatch 7.1e-15; gap 0.7000 = m
+     with the a-term: eigenvalues nearest a0 +- sqrt(m^2 + 36 a^2) = 1.6892 / -1.0892 and a0 +- sqrt(m^2 + 4 a^2) = 1.1062 / -0.5062: 6.7e-16, 2.4e-15, 8.9e-16, 1.1e-16 (offsets)
+
+[W3] the massive sea, L = 8, mode cos(2 pi x/L): clocks' stiffness kappa(m) and reach-three strain stiffnesses (gradient parts per |q|^2)
+     m = 0.0: c0 = -1.1902; kappa = +0.0885; TT (yz) gradient/|q|^2 = +0.00348; isotropic stretch gradient/|q|^2 = +0.00037; ratio clocks/TT = 6.4
+     m = 0.5: c0 = -1.2996; kappa = +0.0902; TT (yz) gradient/|q|^2 = +0.00243; isotropic stretch gradient/|q|^2 = +0.00259; ratio clocks/TT = 9.3
+     m = 1.0: c0 = -1.5686; kappa = +0.0764; TT (yz) gradient/|q|^2 = +0.00122; isotropic stretch gradient/|q|^2 = +0.00461; ratio clocks/TT = 15.7
+
+[W4] a slow body: L = 24 line along x (2D slice 24 x 8), massive walk m = 0.6 at the zero, Gaussian packet width 4, rate gradient g = 0.02 along x
+     energy of the packet at rest 0.6239 (m = 0.6 plus width); mean position at t = 0, 5, 10: 11.999, 11.776, 11.072; acceleration from rest -0.01786 against block 54's -w^2 g = -0.02000 at the centre (the packet's momentum spread ~1/8 against M = 0.6 lowers the mean of d^2E/dp^2 to about 0.94 of 1/M, which accounts for the difference): the massive walker falls as a slow body toward slow clocks

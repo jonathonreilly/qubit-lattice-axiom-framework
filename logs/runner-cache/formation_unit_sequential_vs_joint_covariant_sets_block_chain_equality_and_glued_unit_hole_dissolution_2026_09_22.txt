@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/formation_unit_sequential_vs_joint_covariant_sets_block_chain_equality_and_glued_unit_hole_dissolution_2026_09_22.py
+runner_sha256: 6b7774a037d1a89ebc9b70d8add8447cf33250c48b864479789185626b955af6
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.40
+status: ok
+----- stdout -----
+== 1. Windows, units, and stated joint laws ==
+[PASS] cube: 8 sites, 12 edges; U0 = site 000 plus its three neighbours; U0, U1 partition the window :: U1 is the antipodal site-plus-neighbours unit: the six-neighbour proposal restricted in window
+[PASS] plane: roles V=4, L=4, P=1; |S_Gauss| = 32; 2x3: 6 sites, 7 edges
+[PASS] the unit pair is covariant: the antipodal map swaps U0 and U1; the diagonal C3 preserves each
+
+== 2. Block-chain joints equal the chain rule: the unit is invisible ==
+[PASS] mu on the cube: positive, normalised, invariant under the flip and the diagonal C3 rotation
+[PASS] single-site chain rule: the uniform race and two explicit orders all give exactly mu (256 atoms)
+[PASS] block chain over the covariant units: both unit orders give exactly mu on the cube :: the stated joint law equals the sequential law: the formation unit is invisible for chain content
+[PASS] 2x3 site-plus-neighbours unit: block chain equals mu in both unit orders (64 atoms)
+
+== 3. Product-fill joints against sequential: the unit is visible ==
+[PASS] the three laws are normalised and flip-covariant; the two product-fill unit orders are antipodal images
+[PASS] cube edges split 3 + 6 + 3: inside U0, between the units, inside U1
+[PASS] product fill erases intra-unit correlation: first-formed unit edges agree at exactly 1/2 each :: under U0-first product fill the three U0 edges have iid fair endpoints
+   E[agreeing edges]: sequential 893200967/113400000 = 7.87655; product 69/10 = 6.90000; grouped 1201/150 = 8.00667; static mu 128/15 = 8.53333
+[PASS] the formation unit is visible for the local rule: sequential, product-fill and grouped laws differ :: the agreement statistic separates all three processes and the static measure
+[PASS] sanity: none of the local-rule laws equals mu
+
+== 4. The plane hard-support: the unit is a dial the hole mass reads ==
+[PASS] aligned two-unit partition (checks of the top corners, then the rest): no hole in either unit order
+[PASS] aligned partition: both unit orders give the uniform law on the Gauss set (32 atoms at 1/32)
+[PASS] the whole window as one glued unit: no hole, uniform law on the Gauss set
+[PASS] misaligned partition (the shared link forms last, alone): hole mass exactly 1/2 :: the lone last unit completes two checks with one variable: over-determined half the time
+[PASS] misaligned partition, conditional on completion: still the uniform law on the Gauss set
+[PASS] single-site units under the uniform race: completion mass 5/8, the support-rule and clock-rate value
+[PASS] the formation unit is a dial the hole mass reads: 1 (aligned or whole-window) > 5/8 (sites) > 1/2 (link last) :: while every completed-record law stays uniform on the Gauss set: units change how often, never what
+
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

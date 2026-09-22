@@ -1,6 +1,6 @@
 {
  "edge_count": 13756,
- "node_count": 6274,
+ "node_count": 6275,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -733,6 +733,10 @@
   "admissibility_rule_cubic_walk_return_sum_and_sphere_static_magnetization_sufficient_bound_bounded_theorem_note_2026-09-15": {
    "deps_hash": "0dcde35e339b",
    "out_degree": 4
+  },
+  "admissibility_rule_defects_of_the_alternation_are_separable_walls_carry_sheets_of_lower_mass_lines_lower_still_and_three_crossing_walls_bind_exact_zero_modes_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_directed_gaussian_propagator_overlap_covariance_gain_bounds_bounded_theorem_note_2026-09-15": {
    "deps_hash": "dd8925c4e04e",

@@ -8,3 +8,5 @@
 | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
 | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
 | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
+
+| F86 defects of the alternation | exact operator identity H^2 = sum h_j^2 (x) 1 with walls on the 4^3 torus; exact one-axis nullspaces and ratios on the ring of eight; exact ranks of the 128-dimensional walk for four wall configurations; product zero modes by rank; dense spectra as control | block 86 (block 59's bond rates alternating, walls supplied) |

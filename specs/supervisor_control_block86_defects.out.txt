@@ -1,0 +1,25 @@
+W1: zero modes and least |E| against the separable prediction
+  L=6 deltas=(0.3, 0.3, 0.3) walls on 0 axes: zero modes 0, least |E| = 0.5196 (predicted 0.5196)
+  L=6 deltas=(0.3, 0.3, 0.3) walls on 1 axes: zero modes 0, least |E| = 0.4243 (predicted 0.4243)
+  L=6 deltas=(0.3, 0.3, 0.3) walls on 2 axes: zero modes 0, least |E| = 0.3000 (predicted 0.3000)
+  L=6 deltas=(0.3, 0.3, 0.3) walls on 3 axes: zero modes 16, least |E| = 0.0000 (predicted 0.0000)
+  L=6 deltas=(0.3, 0.2, 0.5) walls on 0 axes: zero modes 0, least |E| = 0.6164 (predicted 0.6164)
+  L=6 deltas=(0.3, 0.2, 0.5) walls on 1 axes: zero modes 0, least |E| = 0.5385 (predicted 0.5385)
+  L=6 deltas=(0.3, 0.2, 0.5) walls on 2 axes: zero modes 0, least |E| = 0.5000 (predicted 0.5000)
+  L=6 deltas=(0.3, 0.2, 0.5) walls on 3 axes: zero modes 16, least |E| = 0.0000 (predicted 0.0000)
+  L=8 deltas=(0.3, 0.3, 0.3) walls on 0 axes: zero modes 0, least |E| = 0.5196 (predicted 0.5196)
+  L=8 deltas=(0.3, 0.3, 0.3) walls on 1 axes: zero modes 0, least |E| = 0.4243 (predicted 0.4243)
+  L=8 deltas=(0.3, 0.3, 0.3) walls on 2 axes: zero modes 0, least |E| = 0.3000 (predicted 0.3000)
+  L=8 deltas=(0.3, 0.3, 0.3) walls on 3 axes: zero modes 16, least |E| = 0.0000 (predicted 0.0000)
+  L=8 deltas=(0.3, 0.2, 0.5) walls on 0 axes: zero modes 0, least |E| = 0.6164 (predicted 0.6164)
+  L=8 deltas=(0.3, 0.2, 0.5) walls on 1 axes: zero modes 0, least |E| = 0.5385 (predicted 0.5385)
+  L=8 deltas=(0.3, 0.2, 0.5) walls on 2 axes: zero modes 0, least |E| = 0.5000 (predicted 0.5000)
+  L=8 deltas=(0.3, 0.2, 0.5) walls on 3 axes: zero modes 16, least |E| = 0.0000 (predicted 0.0000)
+W2: separability of the whole spectrum with walls across x only (8^3, deltas = (0.3, 0.2, 0.5)) and the sheet branch
+  full spectrum equals +-sqrt(e_x^2 + e_y^2 + e_z^2) over all triples: max deviation 1.89e-14; h_x has 2 zero modes (two walls)
+  the sheet branch (e_x = 0): energies sqrt(e_y^2 + e_z^2) from 0.5385 (= sqrt(delta_y^2 + delta_z^2) = 0.5385) to 1.4142; a massive two-dimensional band with the transverse alternations as its mass
+W3: wall-mode decay ratio per two sites on the ring of 16
+  delta=0.1: ratios from the peaks [[0.8182, 0.8182, 0.8182], [0.8182, 0.8182, 0.8182]] against (1 - delta)/(1 + delta) = 0.8182
+  delta=0.3: ratios from the peaks [[1.0, 0.5385, 0.5385], [0.5385, 0.5385, 0.5385]] against (1 - delta)/(1 + delta) = 0.5385
+  delta=0.5: ratios from the peaks [[0.3333, 0.3333, 0.3333], [0.3333, 0.3333, 0.3333]] against (1 - delta)/(1 + delta) = 0.3333
+  delta=0.7: ratios from the peaks [[0.1765, 0.1765, 0.1765], [1.0, 0.1765, 0.1765]] against (1 - delta)/(1 + delta) = 0.1765

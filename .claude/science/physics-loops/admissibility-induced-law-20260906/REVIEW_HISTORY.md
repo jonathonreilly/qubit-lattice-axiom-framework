@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-22 block 86 — author checks (not a review PASS)
+Written lens pass by the supervisor. Separability checked with walls and unequal `δ_j`; one-axis wall modes solved exactly; product zero modes by rank; a control bug (scalar concatenation) caught and the check rewritten. Census 7/7 in family.

@@ -35,12 +35,19 @@
  "stdout_sha256": "9d2fed98aac42291ebc4c9924c199aeda62bd7c0f51e9e4b786ecc7606e4fafc",
  "stdout_tail": "PR #8589: Geometric record formation with uniform slow-birth selection and a controlled clock\nbranch codex/mobile-record-geometric-formation-selection-20260921 (base main)\nrunners in the PR: 1\n== scripts/mobile_records_geometric_formation_selection_and_clock_2026_09_21.py: rc=0 PASS=21 FAIL=0\n   mutation break_record_slide_permutation: expected ? observed ? MISMATCH\n   mutation break_trace_row_sum: expected ? observed ? MISMATCH\n   mutation double_killed_birth_hazard: expected ? observed ? MISMATCH\n   mutation miscount_monomer_normalization: expected ? observed ? MISMATCH\n   mutation omit_clock_schur_correction: expected ? observed ? MISMATCH\n   mutation omit_cycle_return_path: expected ? observed ? MISMATCH\n   mutation omit_general_graph_second_slide: expected ? observed ? MISMATCH\n   mutation reverse_neighbor_birth_response: expected ? observed ? MISMATCH\nHIT: scripts/mobile_records_geometric_formation_selection_and_clock_2026_09_21.py: mutation census mismatch: break_record_slide_permutation break_trace_row_sum double_killed_birth_hazard miscount_monomer_normalization omit_clock_schur_correction omit_cycle_return_path omit_general_graph_second_slide reverse_neighbor_birth_response",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260922T222602Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T223706Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha b647b005 differs from the current HEAD 2395c86e (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "Mobile-record census template (MUTATIONS dict, no mutation_family lines): 'expected ? observed ?' for all. Independent census on the PR branch: 8 of 8 mutations exit 1 with a FAIL line naming the declared target (geometric_partner_formation_check.py x2, geometric_polynomial_relaxation_check.py, geometric_rare_birth_check.py x2, geometric_last_pair_clock_check.py x2, geometric_general_graph_check.py). Same class, reported on #8294.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T223706Z"
  }
 }

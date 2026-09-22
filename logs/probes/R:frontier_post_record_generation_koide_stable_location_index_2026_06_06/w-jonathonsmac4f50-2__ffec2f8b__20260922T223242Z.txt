@@ -1,0 +1,77 @@
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md exists
+PASS docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md contains: stable-location index
+PASS docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md contains: It is not a selected dial.
+PASS docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md contains: Total generation/Koide dial-relevant rows indexed here: `133`.
+PASS docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md contains: Does not select or force a generation/Koide dial location.
+PASS docs/POST_RECORD_GENERATION_KOIDE_STABLE_LOCATION_INDEX_2026-06-06.md contains: outputs/post_record_generation_koide_stable_location_index_slice_2026_06_07.json
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md exists
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: `koide_or_generation_selector` | 129
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: Does not turn stable settings into selected dials.
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: Does not select or force a generation/Koide dial location.
+PASS docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md exists
+PASS docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md contains: `generation_or_koide_stable_feature` | 4
+PASS docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md contains: Stable setting is not selected dial.
+PASS docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md contains: stable location on the dial is
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md exists
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: stable dial setting | supplied score/rule plus map/flow stability certificate
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: selected dial value | selector/invariance/target rule
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: stable settings are not selected dials
+PASS docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md exists
+PASS docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md contains: r=1/2 is the unstable separatrix
+PASS docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md contains: drop charged leptons onto
+PASS docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md contains: requires a **stabilizer**
+PASS docs/GENERATION_DIAL_DYNAMICS_STABILITY_CLASSIFIER_2026-06-05.md exists
+PASS docs/GENERATION_DIAL_DYNAMICS_STABILITY_CLASSIFIER_2026-06-05.md contains: is an exact stable setting
+PASS docs/GENERATION_DIAL_DYNAMICS_STABILITY_CLASSIFIER_2026-06-05.md contains: not forced by Lattice
+PASS docs/GENERATION_DIAL_DYNAMICS_STABILITY_CLASSIFIER_2026-06-05.md contains: selection of the record partition
+PASS docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md exists
+PASS docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md contains: equal-block `(1,1)` weighting
+PASS docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md contains: records/objectivity maximization principle
+PASS docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md contains: not an unconditional
+PASS docs/STABLE_POST_RECORD_DIAL_LOCATION_CERTIFICATE_2026-06-06.md exists
+PASS docs/STABLE_POST_RECORD_DIAL_LOCATION_CERTIFICATE_2026-06-06.md contains: stable post-record equal-letter location
+PASS docs/STABLE_POST_RECORD_DIAL_LOCATION_CERTIFICATE_2026-06-06.md contains: It is not forced by the Record axiom
+PASS docs/STABLE_POST_RECORD_DIAL_LOCATION_CERTIFICATE_2026-06-06.md contains: not a physical dial-value theorem
+
+------------------------------------------------------------------------------
+Stable-location certificate checks
+------------------------------------------------------------------------------
+PASS complete supplied evidence gives stable-location support
+PASS missing supplied rule stays open
+PASS stable location without selector does not select dial
+PASS selector rule is needed for selected-dial readiness
+PASS Q(r) sends r=1/2 to 2/3 exactly :: 2/3
+PASS supplied r -> 2r^2 has r=1/2 fixed :: {'is_fixed_point': True, 'derivative': Fraction(2, 1), 'feature': 'unstable_separatrix'}
+PASS r=1/2 feature is separatrix, not attractor :: {'is_fixed_point': True, 'derivative': Fraction(2, 1), 'feature': 'unstable_separatrix'}
+PASS equal objectivity weights give r=1/2
+PASS rank weights give r=1 instead of r=1/2
+
+------------------------------------------------------------------------------
+Generation/Koide row-index checks
+------------------------------------------------------------------------------
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/frontier_post_record_generation_koide_stable_location_index_2026_06_06.py", line 467, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/frontier_post_record_generation_koide_stable_location_index_2026_06_06.py", line 444, in main
+    selector_rows, stable_rows, counts = row_checks()
+                                         ^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/frontier_post_record_generation_koide_stable_location_index_2026_06_06.py", line 294, in row_checks
+    before = digest(LEDGER)
+             ^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/frontier_post_record_generation_koide_stable_location_index_2026_06_06.py", line 94, in digest
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+                          ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/audit/data/audit_ledger.json'

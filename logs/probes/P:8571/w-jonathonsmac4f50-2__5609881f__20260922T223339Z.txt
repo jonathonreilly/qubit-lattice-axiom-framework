@@ -1,0 +1,14 @@
+PR #8571: ail55: action and reaction — the rate field's source is the amplitudes' energy density; matched pulls and a kept ledger fix the clock law's second order (source-link direction, block 3)
+branch physics-loop/admissibility-induced-law-block55-action-and-reaction-the-rate-fields-source-is-the-amplitudes-energy-density-20260921 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_action_and_reaction_the_rate_fields_source_is_the_amplitudes_energy_density_2026_09_21.py: rc=0 PASS=18 FAIL=0
+   mutation energy_density_without_the_clock: expected B observed B ok
+   mutation energy_does_not_have_weight_one: expected B observed B ok
+   mutation source_is_the_count: expected C observed C ok
+   mutation pulls_matched_for_any_source: expected C observed C ok
+   mutation field_energy_of_weight_two: expected D observed D ok
+   mutation second_order_depends_on_the_field_energy: expected D observed D ok
+   mutation fourth_order_is_universal_too: expected D observed D ok
+   mutation moving_body_sources_its_rest_energy: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

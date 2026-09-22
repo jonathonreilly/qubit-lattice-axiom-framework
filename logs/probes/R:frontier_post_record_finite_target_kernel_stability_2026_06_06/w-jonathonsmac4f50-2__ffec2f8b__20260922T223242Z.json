@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_post_record_finite_target_kernel_stability_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_post_record_finite_target_kernel_stability_2026_06_06.py",
+ "seed": 16362,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ffec2f8b",
+ "started_utc": "20260922T223242Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=38 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b9910282c028e94a1bf62cb37e9c85170f323428627d59f32278ac5e91c6cde5",
+ "stdout_tail": "reset kernel satisfies detailed balance\nPASS one-step vector deviation contracts by 1-alpha :: (Fraction(-3, 10), Fraction(2, 5), Fraction(-1, 10))\nPASS contraction identity holds for second distribution :: (Fraction(-3, 20), Fraction(-1, 20), Fraction(1, 5))\nPASS two-step deviation contracts by (1-alpha)^2 :: (Fraction(8, 25), Fraction(43, 75), Fraction(8, 75))\n\n------------------------------------------------------------------------------\nMultiple target prior checks\n------------------------------------------------------------------------------\nPASS uniform target is stationary for its kernel\nPASS biased target is stationary for its kernel\nPASS different supplied targets produce different kernels\nPASS different supplied targets produce different stable locations\n\n------------------------------------------------------------------------------\nFirewall flags\n------------------------------------------------------------------------------\nPASS Record-derived target-prior flag is false\nPASS Record-derived alpha flag is false\nPASS Record-derived physical-kernel flag is false\nPASS Record-derived clock/rate flag is false\nPASS Record-derived Born/instrument flag is false\nPASS Record-derived Hamiltonian flag is false\nPASS generation/Koide dial selected flag is false\nPASS audit verdict applied flag is false\n\nSUMMARY: PASS=38 FAIL=0\nSUPPLIED_TARGET_KERNEL_STABILITY=TRUE\nEVERY_SUPPLIED_TARGET_CAN_BE_STABILIZED=TRUE\nRECORD_DERIVES_TARGET_PRIOR=FALSE\nGENERATION_OR_KOIDE_DIAL_SELECTED=FALSE\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T223242Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,65 @@
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md exists
+PASS docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md contains: supplied flow, score, or thermal rule
+PASS docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md contains: Stable setting is not selected dial.
+PASS docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md contains: stable location on the dial is
+PASS docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md contains: Does not select or force a generation/Koide dial location
+PASS docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md contains: scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py
+PASS docs/POST_RECORD_FLOW_THERMAL_STABLE_SETTING_CERTIFICATE_2026-06-06.md contains: outputs/post_record_flow_thermal_stable_setting_slice_2026_06_07.json
+PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md exists
+PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: flow_or_thermal_stability
+PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: stable setting is not selected dial
+PASS docs/POST_RECORD_STABILITY_DYNAMICS_SELECTOR_SUBDIVISION_2026-06-06.md contains: These rows may support a stable setting
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md exists
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: stability_or_dynamics_selector` | 169
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: stable settings into selected dials
+PASS docs/POST_RECORD_SELECTOR_DIAL_BUCKET_SUBDIVISION_2026-06-06.md contains: Does not turn stable settings into selected dials.
+PASS scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py exists
+PASS scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py contains: def stability_subbucket
+PASS scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py contains: flow_or_thermal_stability
+PASS scripts/frontier_post_record_stability_dynamics_selector_subdivision_2026_06_06.py contains: EXPECTED_SUBCOUNTS
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md exists
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: stable dial setting | supplied score/rule plus map/flow stability certificate
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: selected dial value | selector/invariance/target rule
+PASS docs/POST_RECORD_CONDITIONAL_AUDIT_EVIDENCE_LADDER_2026-06-06.md contains: stable settings are not selected dials
+
+------------------------------------------------------------------------------
+Stable-setting certificate checks
+------------------------------------------------------------------------------
+PASS complete supplied stability evidence gives stable-setting support
+PASS missing supplied rule id stays open
+PASS stable setting without selector does not select dial
+PASS selector rule is needed for selected dial readiness
+PASS finite supplied score has unique stable setting :: middle
+PASS r=1/2 is exact fixed point for supplied r -> 2r^2 map :: {'is_fixed_point': True, 'derivative': Fraction(2, 1), 'feature': 'unstable_separatrix'}
+PASS r=1/2 is an unstable separatrix, not an attractor :: {'is_fixed_point': True, 'derivative': Fraction(2, 1), 'feature': 'unstable_separatrix'}
+PASS finite supplied thermal table has unique root :: 3/20
+
+------------------------------------------------------------------------------
+Flow/thermal row checks
+------------------------------------------------------------------------------
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.py", line 378, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.py", line 359, in main
+    rows, counts = row_checks()
+                   ^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.py", line 274, in row_checks
+    before = digest(LEDGER)
+             ^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/frontier_post_record_flow_thermal_stable_setting_certificate_2026_06_06.py", line 83, in digest
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+                          ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/audit/data/audit_ledger.json'

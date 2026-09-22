@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_post_record_finite_to_unbounded_family_lift_nogo_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_post_record_finite_to_unbounded_family_lift_nogo_2026_06_06.py",
+ "seed": 16362,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ffec2f8b",
+ "started_utc": "20260922T223242Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=43 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5135b9525572a741fa13a6374f1fa719e3c34a8cffd9aaa5958d18955ec71945",
+ "stdout_tail": "ng marker density = 1\nPASS document contains phrase: pre-record law carries probabilities\nPASS document contains phrase: post-record records carry realized information\nPASS document contains phrase: finite post-record record is not an unbounded probability law\nPASS document contains phrase: actual_current_surface_status: no-go\nPASS document contains phrase: trace_class: negative_route_pruning\nPASS document contains phrase: bare_retained_allowed: false\nPASS document avoids live retained/promotion leaks\n\nSUMMARY: PASS=43 FAIL=0\nPOST_RECORD_FINITE_TO_UNBOUNDED_FAMILY_LIFT_NO_GO=TRUE\nFINITE_PREFIX_LENGTH=4\nPREFIX_MARKER_COUNT=3\nPREFIX_FREQUENCY=3/4\nZERO_TAIL_LIMITING_DENSITY=0\nONE_TAIL_LIMITING_DENSITY=1\nFINITE_CERTIFICATE_ALONE_DERIVES_UNBOUNDED_LAW=FALSE\nFAMILY_LIFT_REQUIRED=TRUE\nAUDIT_VERDICT_APPLIED=FALSE\nper_element: PASS | all four executed prefix elements agree between the zero-tail and one-tail completions\nper_site: PASS | the complete four-site certificate window has the same exact count three and frequency three quarters in both completions\nper_mode: PASS | the two executed unbounded completion modes share the prefix but have distinct limiting densities zero and one\nper_block: PASS | the length-twenty comparison block already separates the completions at exact densities 3/20 and 19/20\nlattice_wide: PASS | checked and not executed \u2014 no infinite lattice was simulated; the exact two-completion witness proves that the finite certificate alone cannot choose a familywide law\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T223242Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,14 @@
+PR #8568: ail53: no master clock — a neighbour-determined, scale-covariant tick rate obeys the lattice averaging equation; records enter as additive sources (first block of the source-link direction)
+branch physics-loop/admissibility-induced-law-block53-no-master-clock-forces-the-lattice-laplace-equation-20260921 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_no_master_clock_neighbour_determined_scale_covariant_tick_rate_lattice_laplace_equation_additive_sources_2026_09_21.py: rc=0 PASS=16 FAIL=0
+   mutation covariance_under_one_axis_only: expected B observed B ok
+   mutation shift_not_required: expected B observed B ok
+   mutation product_law_is_scale_covariant: expected C observed C ok
+   mutation second_order_is_universal: expected C observed C ok
+   mutation torus_law_has_full_rank: expected D observed D ok
+   mutation pinned_rate_is_scale_covariant: expected E observed E ok
+   mutation sources_do_not_add: expected E observed E ok
+   mutation hops_timed_by_the_bond: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

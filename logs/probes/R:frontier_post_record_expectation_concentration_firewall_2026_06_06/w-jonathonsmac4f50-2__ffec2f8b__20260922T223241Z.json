@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_post_record_expectation_concentration_firewall_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_post_record_expectation_concentration_firewall_2026_06_06.py",
+ "seed": 16361,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ffec2f8b",
+ "started_utc": "20260922T223241Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=37 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "17ae75df95a9aed2e3a9720f47d3d2a09498273c08503a2d446e075aebc56229",
+ "stdout_tail": ", which is the sharpest form of this row's negative: agreement at every position still leaves the tails free.\n  per_mode: checked and not executed \u2014 nothing spectral or dynamical is formed in this file; there is no transition operator, no correlation length, no eigenvalue and no Fourier content, and the correlated law is written down by hand as a two-atom law rather than derived from any mode or mixing analysis.\n  per_block: resolved bucket by bucket under the imbalance statistic \u2014 |count_A - count_B| partitions the sixteen words into the blocks 0, 2 and 4, tail_prob sums the exact mass of the block at or above a threshold, and the extreme block carries 1/8 under the iid fair law against 1 under the correlated fair law, which is the whole counterexample; the two laws themselves are the two registrations being compared block for block.\n  lattice_wide: checked and not executed as a lattice statement \u2014 no volume, no spatial extent and no N -> infinity or thermodynamic limit appears; what does exist is an exhaustive finite-horizon sum at N = 4 in which every one of the sixteen words contributes its exact mass, and the note states its result at that horizon and no wider; of the recorded passes, 18 are string-presence checks over four repository documents and 8 are firewall booleans hardcoded False in this file.\n\nSUMMARY: PASS=37 FAIL=0\nEXPECTATION_IMPLIES_CONCENTRATION=FALSE\nSAME_EXPECTATION_DIFFERENT_TAILS=TRUE\nRECORD_DERIVES_P_VALUE=FALSE\nGENERATION_OR_KOIDE_DIAL_SELECTED=FALSE\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T223241Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

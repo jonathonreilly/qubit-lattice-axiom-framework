@@ -1,0 +1,37 @@
+{
+ "task": "P:8571",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block55-action",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8571",
+ "pr": 8571,
+ "branch": "physics-loop/admissibility-induced-law-block55-action-and-reaction-the-rate-fields-source-is-the-amplitudes-energy-density-20260921",
+ "git_sha": "5609881f",
+ "started_utc": "20260922T223339Z",
+ "elapsed_s": 29.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_action_and_reaction_the_rate_fields_source_is_the_amplitudes_energy_density_2026_09_21.py",
+    "returncode": 0,
+    "total": "PASS=18 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "bb4b05c8bddf8bf624235a79341fe19a0bdfdf0e2b55abe60f03c6d4a5bdee5e",
+ "stdout_tail": "PR #8571: ail55: action and reaction \u2014 the rate field's source is the amplitudes' energy density; matched pulls and a kept ledger fix the clock law's second order (source-link direction, block 3)\nbranch physics-loop/admissibility-induced-law-block55-action-and-reaction-the-rate-fields-source-is-the-amplitudes-energy-density-20260921 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_action_and_reaction_the_rate_fields_source_is_the_amplitudes_energy_density_2026_09_21.py: rc=0 PASS=18 FAIL=0\n   mutation energy_density_without_the_clock: expected B observed B ok\n   mutation energy_does_not_have_weight_one: expected B observed B ok\n   mutation source_is_the_count: expected C observed C ok\n   mutation pulls_matched_for_any_source: expected C observed C ok\n   mutation field_energy_of_weight_two: expected D observed D ok\n   mutation second_order_depends_on_the_field_energy: expected D observed D ok\n   mutation fourth_order_is_universal_too: expected D observed D ok\n   mutation moving_body_sources_its_rest_energy: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T223409Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

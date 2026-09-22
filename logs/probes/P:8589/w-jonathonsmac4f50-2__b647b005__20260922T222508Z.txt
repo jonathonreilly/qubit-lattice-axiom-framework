@@ -1,0 +1,13 @@
+PR #8589: Geometric record formation with uniform slow-birth selection and a controlled clock
+branch codex/mobile-record-geometric-formation-selection-20260921 (base main)
+runners in the PR: 1
+== scripts/mobile_records_geometric_formation_selection_and_clock_2026_09_21.py: rc=0 PASS=21 FAIL=0
+   mutation break_record_slide_permutation: expected ? observed ? MISMATCH
+   mutation break_trace_row_sum: expected ? observed ? MISMATCH
+   mutation double_killed_birth_hazard: expected ? observed ? MISMATCH
+   mutation miscount_monomer_normalization: expected ? observed ? MISMATCH
+   mutation omit_clock_schur_correction: expected ? observed ? MISMATCH
+   mutation omit_cycle_return_path: expected ? observed ? MISMATCH
+   mutation omit_general_graph_second_slide: expected ? observed ? MISMATCH
+   mutation reverse_neighbor_birth_response: expected ? observed ? MISMATCH
+HIT: scripts/mobile_records_geometric_formation_selection_and_clock_2026_09_21.py: mutation census mismatch: break_record_slide_permutation break_trace_row_sum double_killed_birth_hazard miscount_monomer_normalization omit_clock_schur_correction omit_cycle_return_path omit_general_graph_second_slide reverse_neighbor_birth_response

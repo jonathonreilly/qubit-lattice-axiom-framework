@@ -1,0 +1,46 @@
+{
+ "task": "P:8589",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-geometric-formation-select",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8589",
+ "pr": 8589,
+ "branch": "codex/mobile-record-geometric-formation-selection-20260921",
+ "git_sha": "b647b005",
+ "started_utc": "20260922T222508Z",
+ "elapsed_s": 53.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/mobile_records_geometric_formation_selection_and_clock_2026_09_21.py",
+    "returncode": 0,
+    "total": "PASS=21 FAIL=0",
+    "census_mismatches": [
+     "break_record_slide_permutation",
+     "break_trace_row_sum",
+     "double_killed_birth_hazard",
+     "miscount_monomer_normalization",
+     "omit_clock_schur_correction",
+     "omit_cycle_return_path",
+     "omit_general_graph_second_slide",
+     "reverse_neighbor_birth_response"
+    ]
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "9d2fed98aac42291ebc4c9924c199aeda62bd7c0f51e9e4b786ecc7606e4fafc",
+ "stdout_tail": "PR #8589: Geometric record formation with uniform slow-birth selection and a controlled clock\nbranch codex/mobile-record-geometric-formation-selection-20260921 (base main)\nrunners in the PR: 1\n== scripts/mobile_records_geometric_formation_selection_and_clock_2026_09_21.py: rc=0 PASS=21 FAIL=0\n   mutation break_record_slide_permutation: expected ? observed ? MISMATCH\n   mutation break_trace_row_sum: expected ? observed ? MISMATCH\n   mutation double_killed_birth_hazard: expected ? observed ? MISMATCH\n   mutation miscount_monomer_normalization: expected ? observed ? MISMATCH\n   mutation omit_clock_schur_correction: expected ? observed ? MISMATCH\n   mutation omit_cycle_return_path: expected ? observed ? MISMATCH\n   mutation omit_general_graph_second_slide: expected ? observed ? MISMATCH\n   mutation reverse_neighbor_birth_response: expected ? observed ? MISMATCH\nHIT: scripts/mobile_records_geometric_formation_selection_and_clock_2026_09_21.py: mutation census mismatch: break_record_slide_permutation break_trace_row_sum double_killed_birth_hazard miscount_monomer_normalization omit_clock_schur_correction omit_cycle_return_path omit_general_graph_second_slide reverse_neighbor_birth_response",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T222602Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

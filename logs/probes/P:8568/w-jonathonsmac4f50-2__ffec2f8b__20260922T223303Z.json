@@ -1,0 +1,37 @@
+{
+ "task": "P:8568",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block53-no-mas",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8568",
+ "pr": 8568,
+ "branch": "physics-loop/admissibility-induced-law-block53-no-master-clock-forces-the-lattice-laplace-equation-20260921",
+ "git_sha": "ffec2f8b",
+ "started_utc": "20260922T223303Z",
+ "elapsed_s": 17.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_no_master_clock_neighbour_determined_scale_covariant_tick_rate_lattice_laplace_equation_additive_sources_2026_09_21.py",
+    "returncode": 0,
+    "total": "PASS=16 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "4d1729f18627cc136fcca067ad9f8a262c7c04b87f355685d37e36fcb41303f4",
+ "stdout_tail": "PR #8568: ail53: no master clock \u2014 a neighbour-determined, scale-covariant tick rate obeys the lattice averaging equation; records enter as additive sources (first block of the source-link direction)\nbranch physics-loop/admissibility-induced-law-block53-no-master-clock-forces-the-lattice-laplace-equation-20260921 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_no_master_clock_neighbour_determined_scale_covariant_tick_rate_lattice_laplace_equation_additive_sources_2026_09_21.py: rc=0 PASS=16 FAIL=0\n   mutation covariance_under_one_axis_only: expected B observed B ok\n   mutation shift_not_required: expected B observed B ok\n   mutation product_law_is_scale_covariant: expected C observed C ok\n   mutation second_order_is_universal: expected C observed C ok\n   mutation torus_law_has_full_rank: expected D observed D ok\n   mutation pinned_rate_is_scale_covariant: expected E observed E ok\n   mutation sources_do_not_add: expected E observed E ok\n   mutation hops_timed_by_the_bond: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T223320Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

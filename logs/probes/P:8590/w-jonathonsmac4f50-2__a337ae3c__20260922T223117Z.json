@@ -1,0 +1,37 @@
+{
+ "task": "P:8590",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block60-the-ge",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8590",
+ "pr": 8590,
+ "branch": "physics-loop/admissibility-induced-law-block60-the-geometric-member-rates-as-multipliers-energy-tied-to-curvature-20260921",
+ "git_sha": "a337ae3c",
+ "started_utc": "20260922T223117Z",
+ "elapsed_s": 74.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_a_ledger_linear_in_the_rates_every_clock_a_multiplier_the_ledger_a_wall_term_2026_09_21.py",
+    "returncode": 0,
+    "total": "PASS=25 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "22e0bb8c766d89d2c78cbc770131cf921c353a8a13510f6c7d690a9568c6e1f5",
+ "stdout_tail": "PR #8590: ail60: a ledger linear in the rates \u2014 every clock a multiplier, the ledger a wall term, and the curvature member doubles the bending (source-link direction, block 8)\nbranch physics-loop/admissibility-induced-law-block60-the-geometric-member-rates-as-multipliers-energy-tied-to-curvature-20260921 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_a_ledger_linear_in_the_rates_every_clock_a_multiplier_the_ledger_a_wall_term_2026_09_21.py: rc=0 PASS=25 FAIL=0\n   mutation ledger_is_not_of_weight_one: expected B observed B ok\n   mutation positive_field_energy_admits_a_free_unit: expected B observed B ok\n   mutation closed_lattice_holds_a_static_body: expected B observed B ok\n   mutation exponent_formula_sign: expected C observed C ok\n   mutation bilinear_member_gives_p: expected C observed C ok\n   mutation curvature_identity_coefficient: expected C observed C ok\n   mutation rate_at_the_body_uses_one_charge: expected D observed D ok\n   mutation far_field_coefficients_equal: expected D observed D ok\n   mutation seen_from_outside_saturates: expected D observed D ok\n   mutation kinetic_term_delays_the_lengths: expected E observed E ok\n   mutation positive_kinetic_term_moves_the_lengths: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T223231Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

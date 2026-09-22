@@ -1,0 +1,37 @@
+{
+ "task": "P:8578",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block57-a-dela",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8578",
+ "pr": 8578,
+ "branch": "physics-loop/admissibility-induced-law-block57-a-delay-for-the-rate-field-nearest-neighbour-kinetic-terms-do-not-propagate-20260921",
+ "git_sha": "19f8acf2",
+ "started_utc": "20260922T212536Z",
+ "elapsed_s": 5.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_a_delay_for_the_rate_field_neighbour_referred_motion_does_not_propagate_a_reference_to_distant_clocks_does_2026_09_21.py",
+    "returncode": 0,
+    "total": "PASS=14 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "5d19b4769d9a12b53c96bd6c5054888c560caae46e6b2bf96e5aab1415af912e",
+ "stdout_tail": "PR #8578: ail57: a delay for the rate field \u2014 referred to its neighbours its motion does not propagate; referred to the distant clocks it does, at a speed set by the local rate (source-link direction, block 5)\nbranch physics-loop/admissibility-induced-law-block57-a-delay-for-the-rate-field-nearest-neighbour-kinetic-terms-do-not-propagate-20260921 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_a_delay_for_the_rate_field_neighbour_referred_motion_does_not_propagate_a_reference_to_distant_clocks_does_2026_09_21.py: rc=0 PASS=14 FAIL=0\n   mutation onsite_term_survives_any_change_of_parameter: expected B observed B ok\n   mutation neighbour_term_does_not_survive: expected B observed B ok\n   mutation neighbour_forms_are_a_two_parameter_family: expected C observed C ok\n   mutation neighbours_only_law_has_a_front: expected C observed C ok\n   mutation reference_law_acts_at_once: expected D observed D ok\n   mutation finite_range_gives_a_branch_through_zero: expected D observed D ok\n   mutation uniform_mode_is_inert_under_the_onsite_term: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T212542Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

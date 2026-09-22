@@ -1,0 +1,13 @@
+PR #8578: ail57: a delay for the rate field — referred to its neighbours its motion does not propagate; referred to the distant clocks it does, at a speed set by the local rate (source-link direction, block 5)
+branch physics-loop/admissibility-induced-law-block57-a-delay-for-the-rate-field-nearest-neighbour-kinetic-terms-do-not-propagate-20260921 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_a_delay_for_the_rate_field_neighbour_referred_motion_does_not_propagate_a_reference_to_distant_clocks_does_2026_09_21.py: rc=0 PASS=14 FAIL=0
+   mutation onsite_term_survives_any_change_of_parameter: expected B observed B ok
+   mutation neighbour_term_does_not_survive: expected B observed B ok
+   mutation neighbour_forms_are_a_two_parameter_family: expected C observed C ok
+   mutation neighbours_only_law_has_a_front: expected C observed C ok
+   mutation reference_law_acts_at_once: expected D observed D ok
+   mutation finite_range_gives_a_branch_through_zero: expected D observed D ok
+   mutation uniform_mode_is_inert_under_the_onsite_term: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

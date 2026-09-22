@@ -1,0 +1,12 @@
+PR #8564: ail52: a streaming clause with an isotropic second-order term — content as a bias on a symmetric walk, unbiased capture, and its price
+branch physics-loop/admissibility-induced-law-block52-isotropic-streaming-clause-content-as-a-bias-20260921 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_a_streaming_clause_with_an_isotropic_second_order_term_content_as_a_bias_on_a_symmetric_walk_2026_09_21.py: rc=0 PASS=13 FAIL=0
+   mutation second_moment_depends_on_content: expected B observed B ok
+   mutation forward_clause_not_minimal: expected B observed B ok
+   mutation operator_keeps_cubic_part: expected C observed C ok
+   mutation capture_weighted_by_content: expected D observed D ok
+   mutation blocked_hop_does_nothing: expected E observed E ok
+   mutation fraction_against_wrong: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

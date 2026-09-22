@@ -1,0 +1,8 @@
+PR #8609: Physics: controlled positive quantum curl limits from finite qubits
+branch codex/mobile-record-positive-quantum-curl-20260921 (base main)
+runners in the PR: 1
+== scripts/mobile_records_positive_quantum_curl_limits_2026_09_21.py: rc=0 PASS=11 FAIL=0
+   mutation halve_dilute_commutator_bound: expected ? observed ? MISMATCH
+   mutation omit_occupation_depletion: expected ? observed ? MISMATCH
+   mutation wrong_incidence_adjoint: expected ? observed ? MISMATCH
+HIT: scripts/mobile_records_positive_quantum_curl_limits_2026_09_21.py: mutation census mismatch: halve_dilute_commutator_bound omit_occupation_depletion wrong_incidence_adjoint

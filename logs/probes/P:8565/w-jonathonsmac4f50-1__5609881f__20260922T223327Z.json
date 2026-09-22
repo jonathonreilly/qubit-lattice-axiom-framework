@@ -1,0 +1,51 @@
+{
+ "task": "P:8565",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-gauss-loops-phase-20260921",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8565",
+ "pr": 8565,
+ "branch": "codex/mobile-record-gauss-loops-phase-20260921",
+ "git_sha": "5609881f",
+ "started_utc": "20260922T223327Z",
+ "elapsed_s": 12.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/mobile_records_gauss_loops_static_phase_and_formation_locality_2026_09_21.py",
+    "returncode": 0,
+    "total": "PASS=35 FAIL=0",
+    "census_mismatches": [
+     "flip_one_loop_record",
+     "half_collective_birth_bracket",
+     "half_fugacity_structure_factor",
+     "allow_both_species_in_one_slot",
+     "wrong_polymer_majorant",
+     "wrong_tensor_off_diagonal"
+    ]
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "ffb328fbc6664777c21109e145fb523e2983036b325a66d4320ffea210e68bb8",
+ "stdout_tail": "PR #8565: Explore mobile Gauss-preserving record loops, dilute equilibrium and birth locality\nbranch codex/mobile-record-gauss-loops-phase-20260921 (base main)\nrunners in the PR: 1\n== scripts/mobile_records_gauss_loops_static_phase_and_formation_locality_2026_09_21.py: rc=0 PASS=35 FAIL=0\n   mutation flip_one_loop_record: expected ? observed ? MISMATCH\n   mutation half_collective_birth_bracket: expected ? observed ? MISMATCH\n   mutation half_fugacity_structure_factor: expected ? observed ? MISMATCH\n   mutation allow_both_species_in_one_slot: expected ? observed ? MISMATCH\n   mutation wrong_polymer_majorant: expected ? observed ? MISMATCH\n   mutation wrong_tensor_off_diagonal: expected ? observed ? MISMATCH\nHIT: scripts/mobile_records_gauss_loops_static_phase_and_formation_locality_2026_09_21.py: mutation census mismatch: flip_one_loop_record half_collective_birth_bracket half_fugacity_structure_factor allow_both_species_in_one_slot wrong_polymer_majorant wrong_tensor_off_diagonal",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T223715Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: log's git sha 5609881f differs from the current HEAD 2395c86e (fine if you pulled since; the run is bound to its sha)",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "Mobile-record census template: MUTATIONS = {name: (check_file, old, new)} with no mutation_family lines, so run_pr_branch.py reads 'expected ? observed ?'. Independent census on the PR branch: 6 of 6 mutations exit 1 with a FAIL line naming the declared target (microscopic_gauss_record_loop_check.py x2, gauss_loop_fugacity_check.py x2, gauss_loop_polymer_check.py x2). Same class as P:8604/8560/8569/8567/8609, reported on #8294. (second run, same census lines)",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T223715Z"
+ }
+}

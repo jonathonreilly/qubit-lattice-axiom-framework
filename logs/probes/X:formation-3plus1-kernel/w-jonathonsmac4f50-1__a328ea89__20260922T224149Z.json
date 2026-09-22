@@ -1,0 +1,32 @@
+{
+ "task": "X:formation-3plus1-kernel",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "cd probes/lib && python3 formation_levelplane.py 3 sphere 3 96 1500 500 2",
+ "seed": 16909,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a328ea89",
+ "started_utc": "20260922T224149Z",
+ "elapsed_s": 280.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=3 menu=sphere beta=3.0 L=96 T=1500 plateau_|m|=0.8370 lowk_ratio=0.9909 seconds=280"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "NEW PHYSICS, 3+1. The equal-level transverse structure factor of the ordered sphere formation law on three-dimensional level planes against the linear kernel sigma^2/(1 - |phi(k)|^2), phi = (1 + e^{ik1} + e^{ik2} + e^{ik3})/4, whose small-k form is a three-dimensional Green function (a 1/r covariance at equal level). The shells give the normalization c(beta, |k|); the covariance column gives the 1/r law at finite L. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py). GRID UNITS: the 24 points of the `grid` field are claimed and run by the work loop; run by hand only points outside it.",
+ "stdout_sha256": "8102f24f5553234b2c691cb955ace19c11a63a7e01156ec11304c50252699f03",
+ "stdout_tail": "6\n        16  0.8518  +0.8518\n        21  0.8494  +0.8494\n        29  0.8470  +0.8470\n        39  0.8452  +0.8452\n        53  0.8439  +0.8439\n        71  0.8423  +0.8422\n        97  0.8408  +0.8408\n       131  0.8405  +0.8405\n       178  0.8398  +0.8398\n       241  0.8383  +0.8382\n       327  0.8383  +0.8383\n       443  0.8374  +0.8373\n       601  0.8382  +0.8382\n       815  0.8367  +0.8366\n      1106  0.8367  +0.8366\n      1500  0.8370  +0.8368\nequal-level transverse structure factor S_0(k) / [sigma^2/(1-|phi|^2)] by |k| shell:\n   |k| in [0,0.3): 0.9909 (n=436)\n   |k| in [0.3,0.6): 1.0157 (n=2802)\n   |k| in [0.6,1.0): 1.0153 (n=11700)\n   |k| in [1.0,1.5): 1.0186 (n=35602)\n   |k| in [1.5,2.2): 1.0206 (n=108366)\n   |k| in [2.2,3.2): 1.0228 (n=329967)\n   |k| in [3.2,6.0): 1.0238 (n=395862)\nsite covariance without the zero mode along e_1: r, measured C(r), linear C(r), ratio, r*linear C(r) (the 1/r law of a three-dimensional plane)\n     1  +0.033375  +0.033943  0.983  +0.03394\n     2  +0.015397  +0.016245  0.948  +0.03249\n     3  +0.009413  +0.010346  0.910  +0.03104\n     4  +0.006489  +0.007451  0.871  +0.02980\n     6  +0.003618  +0.004577  0.790  +0.02746\n     8  +0.002213  +0.003146  0.704  +0.02517\n    12  +0.000930  +0.001721  0.540  +0.02065\n    16  +0.000456  +0.001018  0.448  +0.01628\n    24  +0.000292  +0.000339  0.861  +0.00813\n    32  +0.000251  +0.000035  7.244  +0.00111\nSUMMARY: dim=3 menu=sphere beta=3.0 L=96 T=1500 plateau_|m|=0.8370 lowk_ratio=0.9909 seconds=280\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260922T224629Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,45 @@
+{
+ "task": "P:8566",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-local-curl-quantum-2026092",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8566",
+ "pr": 8566,
+ "branch": "codex/mobile-record-local-curl-quantum-20260921",
+ "git_sha": "5609881f",
+ "started_utc": "20260922T223413Z",
+ "elapsed_s": 178.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/mobile_records_local_curl_quantum_interface_and_born_formation_2026_09_21.py",
+    "returncode": 0,
+    "total": "PASS=52 FAIL=0",
+    "census_mismatches": [
+     "alter_Born_event_probability",
+     "alter_minimax_witness",
+     "alter_original_kernel_normalization",
+     "drop_finite_count_correction",
+     "halve_Born_cross_reaction",
+     "halve_native_vector_gain",
+     "halve_native_wave_speed"
+    ]
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "586967b9035ba89dc5d3f21fee081b88d81c9f423eeeab9d6a3691364705c745",
+ "stdout_tail": "PR #8566: Local curl fields and quantum-compatible record formation interfaces\nbranch codex/mobile-record-local-curl-quantum-20260921 (base codex/mobile-record-transverse-waves-20260921)\nrunners in the PR: 1\n== scripts/mobile_records_local_curl_quantum_interface_and_born_formation_2026_09_21.py: rc=0 PASS=52 FAIL=0\n   mutation alter_Born_event_probability: expected ? observed ? MISMATCH\n   mutation alter_minimax_witness: expected ? observed ? MISMATCH\n   mutation alter_original_kernel_normalization: expected ? observed ? MISMATCH\n   mutation drop_finite_count_correction: expected ? observed ? MISMATCH\n   mutation halve_Born_cross_reaction: expected ? observed ? MISMATCH\n   mutation halve_native_vector_gain: expected ? observed ? MISMATCH\n   mutation halve_native_wave_speed: expected ? observed ? MISMATCH\nHIT: scripts/mobile_records_local_curl_quantum_interface_and_born_formation_2026_09_21.py: mutation census mismatch: alter_Born_event_probability alter_minimax_witness alter_original_kernel_normalization drop_finite_count_correction halve_Born_cross_reaction halve_native_vector_gain halve_native_wave_speed",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260922T223711Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

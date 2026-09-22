@@ -68,9 +68,9 @@ next_trace_action: "the class is one law with an explicit finite-dimensional str
 ```yaml
 trace_class: frontier_discovery
 target_claim_id: null
-target_blocker_text: "block 77: whether a chessboard record background supplies the staggered term; the fork probe's chiral tension and the lattice lens's exit 'a wall'"
+target_blocker_text: "block 77: whether a chessboard record background supplies the staggered term (the background is supplied here; block 17's states are not it); the fork probe's chiral tension and the lattice lens's exit 'a wall'"
 source_of_blocker_text: handoff
 reachability_to_target: advances
 artifact_role: theorem
-next_trace_action: "the record layer gives the walker a mass through one clause; seams between out-of-step chessboard domains bind exact zero modes with a parity rule; next: the wall modes' handedness; block 17's domain walls; a filling under exclusion"
+next_trace_action: "a chessboard of records gives the walker a mass through one clause; seams between out-of-step chessboard domains bind exact zero modes with a parity rule; next: the wall modes' handedness; whether the record gas orders as a chessboard; a filling under exclusion"
 ```

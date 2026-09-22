@@ -1,0 +1,9 @@
+{
+  "note": "docs/ADMISSIBILITY_RULE_STATIC_SIX_AXIS_REFLECTION_IDENTITIES_AND_CONDITIONAL_CONTOUR_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+  "runner": "scripts/admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.py",
+  "fences": [
+    "This note proves reflection identities, all-direction counting and finite controls, and gives explicitly conditional contour and limit implications; unconditional strong-coupling phase conclusions and the original state-orbit bound are deferred, and no coupling is selected as physical.",
+    "No plane, bridge, Born or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
+    "The static model and extra probability hypotheses are declared mathematical conditions; standard mathematical imports are explicitly named."
+  ]
+}

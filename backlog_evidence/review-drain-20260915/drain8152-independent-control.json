@@ -1,0 +1,13 @@
+{
+  "checks": [
+    "original_displayed_frame_not_rotation",
+    "normalized_frame_rotation",
+    "antipodal_measurement_nontrivial",
+    "reference_support_is_extra_data",
+    "antipodal_weights_not_fixed",
+    "circle_support_on_sphere"
+  ],
+  "count": 6,
+  "elapsed": 0.06771720800315961,
+  "scope": "Finding-directed independent exact controls; no original primary or duplicate group census run."
+}

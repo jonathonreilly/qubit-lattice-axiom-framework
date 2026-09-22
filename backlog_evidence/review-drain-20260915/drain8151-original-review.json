@@ -1,0 +1,440 @@
+{
+  "status": "ORIGINAL REVIEW COMPLETE; MATERIAL FINDINGS; AUTHOR SALVAGE PENDING",
+  "reviewer": "/root/review_8011",
+  "unit": 8151,
+  "head": "2772cca288cccf1089db76a979b5c67208d31cf8",
+  "delta_base": "2ed54cb83a4cb6b336e7053e19c8010d5d2930d8",
+  "current_main": "0ee1a0396c2160605397ecf42f3602215a572c67",
+  "original_dispositions": [
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "mode": "100644",
+      "blob": "78b51eed24ece34d5bf1b3854dea43563f6f9999",
+      "sha256": "8f9d3801a2439704e2f42ed098daf04afb46033b0c99f4d69cee67529c8cad9d",
+      "bytes": 2444,
+      "original_revision": "2772cca288cccf1089db76a979b5c67208d31cf8",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8151/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "current_main_blob": "8f9c496033ee3e37e4ad73433151a79224a60814",
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "2772cca288cccf1089db76a979b5c67208d31cf8:.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md",
+      "mode": "100644",
+      "blob": "edba394a8fc14c9c926c9ff4ea4cc0427bb6a051",
+      "sha256": "250ec8a22d638cb7a7346025655b09386b803bdb9ff05f63a20fd7604a88ffc4",
+      "bytes": 4433,
+      "original_revision": "2772cca288cccf1089db76a979b5c67208d31cf8",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8151/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md",
+      "current_main_blob": "e99dd0e244c2753522fc80b26960d1979642339c",
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "2772cca288cccf1089db76a979b5c67208d31cf8:.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block17_findings.md",
+      "mode": "100644",
+      "blob": "c07f9f4cd1dc3b4309d1478dd3ae0dcda76da824",
+      "sha256": "350f78c7299b846a3edd3d2b5250493f12b73e60f6cba10287db420c7cd053ff",
+      "bytes": 3458,
+      "original_revision": "2772cca288cccf1089db76a979b5c67208d31cf8",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8151/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block17_findings.md",
+      "current_main_blob": null,
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "2772cca288cccf1089db76a979b5c67208d31cf8:.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block17_findings.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block17.md",
+      "mode": "100644",
+      "blob": "5b8e1e2121fcfc67185cb049559f279d728822ce",
+      "sha256": "f8faafb544e360ffac1cd47a0bb6d907fd3d79c56ba2a60d892f3e26ec564bed",
+      "bytes": 1718,
+      "original_revision": "2772cca288cccf1089db76a979b5c67208d31cf8",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8151/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block17.md",
+      "current_main_blob": null,
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "2772cca288cccf1089db76a979b5c67208d31cf8:.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block17.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block17.md",
+      "mode": "100644",
+      "blob": "fc8cdf3e839e71d04d80d462cde21279e9d5bc00",
+      "sha256": "bae77958f6a976caa910e3f9bb931964d1498aaca8dae8b1240ec81f414952a9",
+      "bytes": 5159,
+      "original_revision": "2772cca288cccf1089db76a979b5c67208d31cf8",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8151/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block17.md",
+      "current_main_blob": null,
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "2772cca288cccf1089db76a979b5c67208d31cf8:.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block17.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "mode": "100644",
+      "blob": "300727edcfb3a8b3cbe3deaaef163379d30e5dac",
+      "sha256": "ae1b90ab9b5be8d055861955b6f7980f42e57a2ed8c016e6dccf9e0f770ba618",
+      "bytes": 9560,
+      "original_revision": "2772cca288cccf1089db76a979b5c67208d31cf8",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8151/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "current_main_blob": "6dfc9de13838b8fe1d6d593b83d0d31cd0763b93",
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "2772cca288cccf1089db76a979b5c67208d31cf8:.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md",
+      "mode": "100644",
+      "blob": "a2aa59b88f12f68b75910d8202902cc84de7ca8c",
+      "sha256": "1e0a5b9802772c0e81100989a90b5d10079de21235c89ac7944a7528d0f37dfb",
+      "bytes": 2939,
+      "original_revision": "2772cca288cccf1089db76a979b5c67208d31cf8",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8151/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md",
+      "current_main_blob": "9ccaee75bb420ef215668df8c5bf9b8a5f8fca7f",
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "2772cca288cccf1089db76a979b5c67208d31cf8:.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+      "mode": "100644",
+      "blob": "e2987273f0c02d7f2f9c7a2339fb1880fe4b95b5",
+      "sha256": "44659a0fbfab03c2966aafad7b29d7a9ebf9d459491c8c1454383fc0f55fc7c5",
+      "bytes": 2146,
+      "original_revision": "2772cca288cccf1089db76a979b5c67208d31cf8",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8151/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+      "current_main_blob": "2977b7f9903b58f95963491e44cb244ee894ab84",
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "2772cca288cccf1089db76a979b5c67208d31cf8:.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "mode": "100644",
+      "blob": "e73a712021c8ced8dde34fd896fd1977fa588bb2",
+      "sha256": "e49d4f20e905b8bebab335b96dc9df1d648c331aab35b2ee173b057dbf8be9ba",
+      "bytes": 11488,
+      "original_revision": "2772cca288cccf1089db76a979b5c67208d31cf8",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8151/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "current_main_blob": "74d2f60bae1b3e2de1ca2cf7ade91cf9e93da3b7",
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "2772cca288cccf1089db76a979b5c67208d31cf8:.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block17.md",
+      "mode": "100644",
+      "blob": "2f65e01fc7cfcb0669b16f5706fd02d582b11ca8",
+      "sha256": "97d9bafb35d2cc88d23116d4c75aad1e7603cf3760d1dffa36aef390a49b5b6d",
+      "bytes": 4132,
+      "original_revision": "2772cca288cccf1089db76a979b5c67208d31cf8",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8151/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block17.md",
+      "current_main_blob": null,
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "2772cca288cccf1089db76a979b5c67208d31cf8:.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block17.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "mode": "100644",
+      "blob": "1c4476a1a1a48fe1bbeda434c5078465b4278e1b",
+      "sha256": "833bb5ad0d301c2922bb869cdb6fdf7c34b57d638665b50a6fab091834bbb69d",
+      "bytes": 56897,
+      "original_revision": "2772cca288cccf1089db76a979b5c67208d31cf8",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8151/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "current_main_blob": "08d17f0940e3756c94ff724c8ff531adc9e029ce",
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "2772cca288cccf1089db76a979b5c67208d31cf8:.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md",
+      "mode": "100644",
+      "blob": "9ce857208ab2285b1353f05649446cbec7b9c665",
+      "sha256": "528ad4c9aae128773a6acfd374339dd3abe99db5d3f04f43c6466b2dbd5632e7",
+      "bytes": 11726,
+      "original_revision": "2772cca288cccf1089db76a979b5c67208d31cf8",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8151/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md",
+      "current_main_blob": "9b1cd3a27f32295eccf43bf396e38697cba33b16",
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "2772cca288cccf1089db76a979b5c67208d31cf8:.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "mode": "100644",
+      "blob": "0fb5bb4df6f657a049423a131d50afab669391ff",
+      "sha256": "cafbd59896397ccec6e76a0e5ef0a00a9dd2606cc3a17e24e7069c6f34ef5a19",
+      "bytes": 16119,
+      "original_revision": "2772cca288cccf1089db76a979b5c67208d31cf8",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8151/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "current_main_blob": "e16642020759d3d57935cd6d037d382fc6573bf0",
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "2772cca288cccf1089db76a979b5c67208d31cf8:.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "mode": "100644",
+      "blob": "6bd66427130c6626890a94c92cf8e312532bc39c",
+      "sha256": "5ff43fab95a7b02c710b240c3ec1bfa3e2c56687c3619ef9e4f73689ba307a00",
+      "bytes": 5012,
+      "original_revision": "2772cca288cccf1089db76a979b5c67208d31cf8",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8151/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "current_main_blob": "8f432e2cd2631c0cc6a5121f932b305f16d3a023",
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "2772cca288cccf1089db76a979b5c67208d31cf8:.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block17_refuter.out.txt",
+      "mode": "100644",
+      "blob": "e75f1b3307f7f2de4e197606bbcd86f608fec55c",
+      "sha256": "efeaa3b873fc27be7bd52aa3ca70e05ed90f6f7d1807e2e2cc908e2cdf93a1f1",
+      "bytes": 658,
+      "original_revision": "2772cca288cccf1089db76a979b5c67208d31cf8",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8151/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block17_refuter.out.txt",
+      "current_main_blob": null,
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "2772cca288cccf1089db76a979b5c67208d31cf8:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block17_refuter.out.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block17_refuter.py",
+      "mode": "100644",
+      "blob": "b3992b30c4ae065c26e3ffb38f0cbd295c4f7e03",
+      "sha256": "425f9ae0bf478c9acad8df5b2d33cc2ce3be115ce4d18abf7fe10cba458a78ff",
+      "bytes": 6936,
+      "original_revision": "2772cca288cccf1089db76a979b5c67208d31cf8",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8151/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block17_refuter.py",
+      "current_main_blob": null,
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "2772cca288cccf1089db76a979b5c67208d31cf8:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block17_refuter.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block17_static_order.out.txt",
+      "mode": "100644",
+      "blob": "bfb1b01fd7b90031c38758debb7d684b7676a302",
+      "sha256": "e43fca38afc72d29d2bfbfe73708f0f7473d8e4e4a33250d7b7f7001f0ebfe07",
+      "bytes": 655,
+      "original_revision": "2772cca288cccf1089db76a979b5c67208d31cf8",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8151/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block17_static_order.out.txt",
+      "current_main_blob": null,
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "2772cca288cccf1089db76a979b5c67208d31cf8:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block17_static_order.out.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block17_static_order.py",
+      "mode": "100644",
+      "blob": "f4f5e4330e8f6be4829d560f32c1857814eb0505",
+      "sha256": "cafd54ab71e600fdba4fcc89ad873222c6860b45f709d1d0fbbf66132a198b30",
+      "bytes": 5924,
+      "original_revision": "2772cca288cccf1089db76a979b5c67208d31cf8",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8151/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block17_static_order.py",
+      "current_main_blob": null,
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "2772cca288cccf1089db76a979b5c67208d31cf8:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block17_static_order.py"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_STATIC_SIX_AXIS_LAW_STRONG_COUPLING_LONG_RANGE_ORDER_AND_SEVERAL_GIBBS_STATES_REFLECTION_POSITIVITY_CHESSBOARD_PEIERLS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "mode": "100644",
+      "blob": "a3c2b222ebdb95e46a5cfacd58e259d8dcab7e43",
+      "sha256": "7839f5131220491869192da449ff918037bbd3acee8eea923683f04c4b5cc74e",
+      "bytes": 33695,
+      "original_revision": "2772cca288cccf1089db76a979b5c67208d31cf8",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8151/docs/ADMISSIBILITY_RULE_STATIC_SIX_AXIS_LAW_STRONG_COUPLING_LONG_RANGE_ORDER_AND_SEVERAL_GIBBS_STATES_REFLECTION_POSITIVITY_CHESSBOARD_PEIERLS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "current_main_blob": null,
+      "disposition": "original theorem/proof; current claimed phase chain fails source review; preserve whole proof and branch; narrow positive salvage pending",
+      "recovery": "2772cca288cccf1089db76a979b5c67208d31cf8:docs/ADMISSIBILITY_RULE_STATIC_SIX_AXIS_LAW_STRONG_COUPLING_LONG_RANGE_ORDER_AND_SEVERAL_GIBBS_STATES_REFLECTION_POSITIVITY_CHESSBOARD_PEIERLS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "mode": "100644",
+      "blob": "0f187cfd13ebcdf47ff3fc1c1a174bf2bf8d7d9f",
+      "sha256": "e6f7ca525e47c9871005b599578c1a604073196bf6aa5f5a8ed6c8b4324a01a4",
+      "bytes": 807494,
+      "original_revision": "2772cca288cccf1089db76a979b5c67208d31cf8",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8151/docs/audit/data/citation_graph_manifest.json",
+      "current_main_blob": "cdac7aefc26c09b9769c33157ae95ff939619d02",
+      "disposition": "generated citation manifest; exclude as authority, preserve historical bytes, regenerate only from accepted source",
+      "recovery": "2772cca288cccf1089db76a979b5c67208d31cf8:docs/audit/data/citation_graph_manifest.json"
+    },
+    {
+      "path": "logs/runner-cache/admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.txt",
+      "mode": "100644",
+      "blob": "64af3fc8fc283d24accabdfabb92f6a2ec6d0aae",
+      "sha256": "4fd25c8e6d76db860f6cc30102d163e288a799c89ceab04a7aaa893736a92783",
+      "bytes": 3916,
+      "original_revision": "2772cca288cccf1089db76a979b5c67208d31cf8",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8151/logs/runner-cache/admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.txt",
+      "current_main_blob": null,
+      "disposition": "historical20/0 cache; not evidence for missing infinite-volume proof; preserve and supersede only after affected source capture",
+      "recovery": "2772cca288cccf1089db76a979b5c67208d31cf8:logs/runner-cache/admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.txt"
+    },
+    {
+      "path": "scripts/admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.py",
+      "mode": "100644",
+      "blob": "4fe618852570ec25a2586d0c22483a0929d3f809",
+      "sha256": "3196852da08b1b3cb6a1ae52541f420b48a2aec1a0e91dc20343247a524be0e0",
+      "bytes": 22632,
+      "original_revision": "2772cca288cccf1089db76a979b5c67208d31cf8",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8151/scripts/admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.py",
+      "current_main_blob": null,
+      "disposition": "primary exact finite controls; preserve original; narrow labels and add decisive geometry/orbit controls in author copy",
+      "recovery": "2772cca288cccf1089db76a979b5c67208d31cf8:scripts/admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.py"
+    }
+  ],
+  "read_coverage": "Full original canonical note and runner; complete changed history delta; complete two control scripts and outputs. Inherited campaign state/history is provenance, not scientific authority, previously inspected in this same session; complete full files preserved. Current uniqueness-parent premises/objects, target/scope and TheoremI read; no numerical threshold certification from that parent is imported into this unit.",
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "material proof gap",
+      "target": "T3 dissemination/T4 corollary/T5/T7",
+      "finding": "Site reflection preserves each vertex coordinate parity. A canonical direction1 bond only reaches even transverse rows. On side4, orbit8 versus16 edges in2D,16 versus64 in3D. At independent spins the actual2D event probability1225/5184 differs from all-direction1500625/26873856. Full-N all-bond bound cannot be substituted. Phase threshold216 and LRO/coexistence chain not established.",
+      "repair": "Preserve proof; defer unconditional phase conclusion or supply independently reviewed corrected geometry/event normalization and all resulting constants. Positive T1/T2/full-direction counting and finite instances remain useful."
+    },
+    {
+      "id": "F2",
+      "severity": "false group inference",
+      "target": "T6(v)",
+      "finding": "A nonuniform distribution(1,...,6)/21 has48 images under cube group, not <=6. Equal one-site marginal does not imply equal Gibbs states; symmetric one-site marginal does not characterize whole-state symmetry.",
+      "repair": "Remove orbit2..6 and state-identification claims; conditional uniqueness contradiction inT6(i\u2013iv) can remain with explicit LRO hypothesis and standard imports."
+    },
+    {
+      "id": "F3",
+      "severity": "scope",
+      "target": "T2/T4",
+      "finding": "T2 square proof is for real-valued F (complex version needs conjugation). T4 proof uses p>=m; for p<m result is only trivial since6m/p>1.",
+      "repair": "State real-valued F or Hermitian form and split counting/trivial regimes."
+    },
+    {
+      "id": "F4",
+      "severity": "evidence scope",
+      "target": "note B2/history",
+      "finding": "Primary uses20ringF at each of2triples,3torusF onlyat(3,1,2). Old control uses simple vertical pairs while current side2 torus doubles them. Old refuter calls removed plaquette_neighbors; its complete present script cannot reproduce final output against current primary.",
+      "repair": "Correct actual counts/domains; preserve old evidence as historical source-dependent output, not fresh reproducible authority."
+    },
+    {
+      "id": "F5",
+      "severity": "negative certificate/premise",
+      "target": "N1\u2013N8 and trace",
+      "finding": "N1 has proof checks plus an out-of-target undecided band, notfive actual distinct exact-target attacks;N2 merely asserts independence. Currentstatic/Green carrier attribution is not implied by corrected8147 auxiliaryGaussian scope.",
+      "repair": "Explicitly defer negative certification and phase verdict; retain conditional positive identities/witnesses and honest phase-obligation boundary. Do not manufacture attacks or make new axioms."
+    }
+  ],
+  "actual_api": {
+    "type": [
+      "bounded_theorem",
+      "bounded_theorem"
+    ],
+    "timeout": 900,
+    "graph_helpers": [],
+    "packet_helpers": [],
+    "runtime_inputs": [
+      {
+        "path": "docs/ADMISSIBILITY_RULE_STATIC_SIX_AXIS_LAW_STRONG_COUPLING_LONG_RANGE_ORDER_AND_SEVERAL_GIBBS_STATES_REFLECTION_POSITIVITY_CHESSBOARD_PEIERLS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "7839f5131220491869192da449ff918037bbd3acee8eea923683f04c4b5cc74e",
+        "source": "/private/tmp/review-drain-20260915/drain8153-originals/8151/docs/ADMISSIBILITY_RULE_STATIC_SIX_AXIS_LAW_STRONG_COUPLING_LONG_RANGE_ORDER_AND_SEVERAL_GIBBS_STATES_REFLECTION_POSITIVITY_CHESSBOARD_PEIERLS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+        "source": "/private/tmp/review-drain-20260915/review-meta-slot/docs/MINIMAL_AXIOMS_2026-06-29.md"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "sha256": "6e0f04265dffbfe87d6fa5a016a00a454f6b387924c839ef71220a7e2670b0ba",
+        "source": "/private/tmp/review-drain-20260915/review-meta-slot/docs/ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md"
+      }
+    ]
+  },
+  "context": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "read_scope": "current authority, exact source reused from same-session premise review; no statistical or phase grant"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "read_scope": "current authority, exact source reused from same-session premise review; no statistical or phase grant"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "read_scope": "current authority, exact source reused from same-session premise review; no statistical or phase grant"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "read_scope": "current authority, exact source reused from same-session premise review; no statistical or phase grant"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "read_scope": "current authority, exact source reused from same-session premise review; no statistical or phase grant"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "read_scope": "current authority, exact source reused from same-session premise review; no statistical or phase grant"
+    }
+  ],
+  "independent_controls": {
+    "2d_reflected_edge_orbit": {
+      "distinct_edges": 8,
+      "all_direction_edges": 16,
+      "transverse_coordinates": "even only"
+    },
+    "3d_reflected_edge_orbit": {
+      "distinct_edges": 16,
+      "all_direction_edges": 64,
+      "transverse_coordinates": "even only"
+    },
+    "independent_spin_4x4": {
+      "site_reflected_event_probability": "1225/5184",
+      "claimed_all_direction_probability": "1500625/26873856",
+      "equal": false
+    },
+    "nonuniform_one_site_orbit": {
+      "distribution": [
+        "1/21",
+        "2/21",
+        "1/7",
+        "4/21",
+        "5/21",
+        "2/7"
+      ],
+      "orbit_size": 48,
+      "refutes_claimed_upper_bound_six": true
+    },
+    "spectrum_controls": 18,
+    "contour_arithmetic": {
+      "series": "5/8",
+      "sum": "295/768"
+    },
+    "elapsed_seconds": 0.0020419579814188182
+  },
+  "external_methods": {
+    "consulted_primary_source": "https://www.math.ucla.edu/~biskup/PDFs/papers/Prague-School.pdf",
+    "read_scope": "Definition4.7 and Theorem4.8: overlapping site-reflection blocks and reflected block functions; corroborates need to use actual reflected event rather than translation of canonical lower edge. No numerical constant imported.",
+    "original_imports": "Planar cut-cycle/Jordan separation, consistent finite-dimensional extension, reverse martingale. Original extremal decomposition also used but not listed among its three named imports; remove orbit inference rather than conceal this import."
+  },
+  "current_main_loss": "No edits to review checkout. Canonical original note/runner/cache are new relative main; campaign historical files overlap main and must archive, not overwrite. Generated manifest excluded as submitted authority. Current uniqueness-parent silent region supplies no strong-coupling conclusion.",
+  "salvage": "Spectrum and signed-permutation symmetry; real site-reflection sum-of-squares; explicitly normalized finite chessboard instances; full-direction bad-bond counting with domain split; contour arithmetic as conditional bound; torus-limit and uniqueness contradiction conditional on separately supplied proven uniform correlation bound. Unconditional threshold216/Z2/Z3 phase result not accepted. Preserve original branches and full proofs.",
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8153-original-inventory.json",
+      "sha256": "20a2eb9f7a8f989ce37532ff05ec243c1a4df39e63e8b591d00f1cec5b7ecbcb"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8153-pr8151-original.patch",
+      "sha256": "53274afc6b5e7eb6d89774306dd4c147effec4f994319545d76c136dd0de9b37"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8151-review-head-check.json",
+      "sha256": "1373e2721fba8f92d130fd40348b46202c543b3bf2bed1fce57391d2a588f42b"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8151-review-acquire.json",
+      "sha256": "2932f6bc64099f55e80f56cd70c5c0866bf400c72f96ca4a375c3854ba0b0fd7"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8151/controls.py",
+      "sha256": "54430156abe5016d98912382d786dd7f384bc48078437bb83b9a50b8330e2522"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8151/controls.json",
+      "sha256": "a0f186c519607fb044b586a13359dc7c42fde3f36ac690ce5c834b395fa2f22c"
+    }
+  ],
+  "execution": "One independent stdlib geometry/group/algebra control,0.0021s; no primary executions or fullpipeline. Original cap900sec; final resource plan must be bound after corrections.",
+  "final_source_verdict": "NOT YET PASS; affected author correction required"
+}

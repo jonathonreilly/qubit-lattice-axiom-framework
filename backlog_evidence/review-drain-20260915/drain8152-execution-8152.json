@@ -1,0 +1,21 @@
+{
+  "runner": "scripts/admissibility_rule_menus_neighbour_generated_supports_and_cube_orbit_menus_2026_09_15.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "AUDIT_INPUT_PATHS:\n  docs/ADMISSIBILITY_RULE_COVARIANT_FRAME_CONSTRUCTIONS_CUBE_ORBITS_AND_ANTIPODAL_KERNEL_PROPAGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md\n  docs/MINIMAL_AXIOMS_2026-06-29.md\n  docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md\nAUDIT_TIMEOUT_SEC: 60\nscope: supplied covariant frames, five cube-orbit examples, antipodal symbolic patterns, aligned and tilted overlap values; exhaustive classification deferred\nmutation: none\nPASS: A1 the three declared inputs exist (this note, the axiom memo, the possibility-covariance note on main)\nPASS: A2 the five axiom sentences used are present verbatim in the axiom memo\nPASS: A3 the parent's claim id and its empty-neighbourhood sphere-law section are present\nPASS: A4 this note carries its claim id and names this runner\nPASS: B1 M1: a rational rotation about the pole (cosine 3/5) fixes the pole and moves the unit point (3/5, 0, 4/5) through 12 distinct positions in 12 steps; this finite witness is not an infinite-orbit proof\nPASS: B2 M2: the frame F(q_1, q_2) is a rotation matrix and F(g q_1, g q_2) = g F(q_1, q_2) for a rational rotation about y\nPASS: C1 M3: the 24 proper rotations of the cube; orbit sizes and stabilizer orders (6,4), (8,3), (12,2), (24,1), (24,1) for the axis, diagonal, edge, generic and mirror-plane sample directions; size times stabilizer = 24\nPASS: C2 M3: the six axes, the eight diagonals, the twelve edge directions and their unions are invariant; three axes plus one diagonal are not\nPASS: D1 M4: on a path of five with the antipodal support every record is +/- the symbolic seed (32 patterns), i.e. on the seed's axis\nPASS: D2 M5: the supplied overlap gives aligned values 1,0 and tilted values 4/5,1/5; it does not choose record probabilities\nPASS: F1 the note carries the three fence sentences verbatim\nPASS: F2 the note contains no forbidden phrase (0 hits)\nPASS: F3 runner source: no floating-point literal or conversion call (0 hits)\nPASS: F4 the classical names appear only under Prior art, Imports and the Premises' file citation (0 offenders)\nper_element: executed \u2014 a rational rotation's twelve-point orbit; the frame's equivariance; the 24 rotations; the Born values\nper_site: executed \u2014 the five sample directions' orbits and stabilizers\nper_mode: executed \u2014 the invariance of the axis, diagonal and edge sets and of a union; the non-invariance of a mixed set\nper_block: executed \u2014 the path of five with the antipodal support and a symbolic seed\nlattice_wide: checked and not executed \u2014 finite algebra controls and supplied-kernel induction; no whole-lattice process or exhaustive support certification\nPASS: G1 the five N5 resolution lines are printed\nTOTAL: PASS=15 FAIL=0\n",
+  "stderr": "",
+  "elapsed_sec": 0.36742615699768066,
+  "timeout_sec": 60,
+  "live_log": "/private/tmp/review-drain-20260915/author-draft-slot/logs/runner-cache/.in-progress/admissibility_rule_menus_neighbour_generated_supports_and_cube_orbit_menus_2026_09_15.txt",
+  "whole_tree_watchdog": {
+    "limit_bytes": 536870912,
+    "interval_sec": 0.02,
+    "root_pid": 55756,
+    "samples": 8,
+    "peak_tree_rss_bytes": 94437376,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8152-capture.py",
+  "capture_script_sha256": "c202af7f25e515beaff4f6d49ab4b2f9863b19baa5ca74e04395cf36c1a64157"
+}

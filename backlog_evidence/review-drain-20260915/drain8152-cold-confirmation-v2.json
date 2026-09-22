@@ -1,0 +1,123 @@
+{
+  "status": "COLD SOURCE CONFIRMED POSITIVE CONSTRUCTIONS ONLY",
+  "reviewer": "/root/review_8012",
+  "tree": "fab7556c5c6af42344402a26c28391278dc7829c",
+  "base": "0ee1a0396c2160605397ecf42f3602215a572c67",
+  "source_hashes": {
+    "docs/ADMISSIBILITY_RULE_COVARIANT_FRAME_CONSTRUCTIONS_CUBE_ORBITS_AND_ANTIPODAL_KERNEL_PROPAGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md": "ded0a06a2867245c56c39f09b7de793a2734b3a0f406dfb4f422bee85501583c",
+    "docs/work_history/review_loop/pr8152/016ad5c61627d4cc618e7433975a7c7cea3b191d446d1bc544ad81c4d8e0f02b.gz": "1aacec4d7966b3dd8b48c48fff8f19f797599f23ffcf72e89d2d19ee4035b6e9",
+    "docs/work_history/review_loop/pr8152/022ed0d31ad90461e7d45de3567d348d66c732b32053488a640c18d4f8d920ec.gz": "25ffa09565c57b379078efb9108bed85d1937dff1796e8eb393a598a03484c34",
+    "docs/work_history/review_loop/pr8152/10617d0aee30007a86ebfb18e182f19b60d16d1b4c9fd84bdcbfae271f15404c.gz": "fac9b17108fff1fa5c0fb4342b8ffdf49c6f0d0b56f7b8c863686f0b58480094",
+    "docs/work_history/review_loop/pr8152/15fa72366e399185cbe9be8ab66cc5de5284bd22cd854ad1f5b46255e69be5a2.gz": "a6b91ba68cf1bffd333bb6bcf6724f28ae750ef09aa382356b85df8f93db104f",
+    "docs/work_history/review_loop/pr8152/2b862d7c2604df88cac50dace86012e99d9bb0e3a070a5df75291c52afef3282.gz": "cd7ff7c250e2915bb6452e5030540ed2eb856a2d97b46a9c06404162060ce28c",
+    "docs/work_history/review_loop/pr8152/3dbb8b8b997f687745e450d150a713c2e18556631b74579a0170eef9e1af0819.gz": "02097c52cfc9ee1ac50e5641b394105cf70cfeae7d5ccaad276bdbbefcfa3138",
+    "docs/work_history/review_loop/pr8152/49d068c09889ab3e89ccc46a2c2762a77aaf9f636e4510bf0a93bf00253dad07.gz": "04fe4aeca3f8eea02c1d2ec90f1bb4324e5dac388579872279b36d5bba6d7768",
+    "docs/work_history/review_loop/pr8152/549a29a7b877d6d17e443c74dd017afbbfb000d89e56f2d94e7cfb4000015a1c.gz": "9ab2268d0737b12db6e080fe1c43cc0e9d55dd26c39688ada23112d8fe0da980",
+    "docs/work_history/review_loop/pr8152/554c5aaff9068f4f1f327b333bcc99e1ec11bb130f0baba6a1c07921c1836b8c.gz": "27789e41eff06782d884ccff900f9d2889c4c6a7ee67811034540959904d3844",
+    "docs/work_history/review_loop/pr8152/6b702354874f4451bd9b3d2af0144b86e400addac816adbeaade200e7fc38b4d.gz": "fb58fb80f6227f9b3664ce9394eb0f7861f842abf4e275bb6249790397c7bdf3",
+    "docs/work_history/review_loop/pr8152/8945d17974028099d5f104ae0db0501762ef0f1d477d5548bcb5295b2aa17510.gz": "6d0370cd2c503e0fdbffac72619c18861581a8296dbe0b61d9a7509587944744",
+    "docs/work_history/review_loop/pr8152/README.md": "569198681998ef8684b366450e7dcb85935faebc65118f8fc6306db144465a2d",
+    "docs/work_history/review_loop/pr8152/adf8733e64ad16ec4bf9df87f0178a83c4da23ee6cec16cffa8fcfd917d4d604.gz": "071b8dbfa672a7f8b33da88a512af670086a5844cdeef9a7cddc4962ffa681cb",
+    "docs/work_history/review_loop/pr8152/aeec867bbabf5cffbd092fa889c509cd33c0a43c3a887800c5940015774b22a8.gz": "665130c82a158a1e379565200f67730cafbef2cb4821ac2e9cbacfdc1a5a4bee",
+    "docs/work_history/review_loop/pr8152/bf6a4166ebad42c4ec7b3e844c4055e0a568aabc195eeff3afe82ebf24c5d1e7.gz": "67eb11ac61cefd6ca214c4c9ca0c39fa1c75f9c15551e030f2ccde37b96f4cd6",
+    "docs/work_history/review_loop/pr8152/c848fbf5d472e55f01f7ce06714d60199898f85771ea659de18fdbeca10f56f0.gz": "4d9c626a66958efb73784ea1c478bb33a67a27a425e2cbf283ee813091744d0b",
+    "docs/work_history/review_loop/pr8152/c8c8d9e334b61ebe18e689e0cfe1307a749c183d163287236cb772266f40e810.gz": "ade6681bd106243895b2b0eb01e483f64f9cb7604f338277634c6afa1c388dd1",
+    "docs/work_history/review_loop/pr8152/c944386124b827b8da205d5e8681220632f51e48c6d89ad8762e0cdba3dde57d.gz": "4501b36163915f236cf5c4f08f8ecaea7d7594f1bd9ecb5f3700e8537d36fb8f",
+    "docs/work_history/review_loop/pr8152/cb2fb942285b7ddb9191ef20ee28b584a71dead481c45e582d5dc2efcdf3ff24.gz": "b8449edde41b9f51d870cb4368c695169c8ea77c9663d2007514263a3e25af09",
+    "docs/work_history/review_loop/pr8152/cc0c87d3532463e40291d121835d8b8e8455ee620b58163d85b60644eb081daa.gz": "6f4d12ccf8f3c5217dfacae414d62f2570c406de49fbad193ac1b55bdce4f070",
+    "docs/work_history/review_loop/pr8152/cc386384a61999238065d8a89bd5ee46a9f39e31ba7f948280c1b483f64937eb.gz": "e2166e36399e40bef02092ebcb285d9ffe4903c350999240baecbdf15f0eb276",
+    "docs/work_history/review_loop/pr8152/d52e7a2bd4391e0001ac9692fa99b6dc0a5cc48b38efd2a47d58e727f91b8ff9.gz": "0845b01edf897961a571ba4ed0a79bea9281397c165a2cd557e3de54a3284988",
+    "docs/work_history/review_loop/pr8152/d544e15294f1f15016a04920b326c532501e119055a3936d1ccd85549541fcbf.gz": "e0c07249e9944874541c6691bf76623fe89cea2209529987122c59327e8444ea",
+    "docs/work_history/review_loop/pr8152/original-manifest.json": "4a08fe4b3f8a7c62d4aa7e689b4914ff34ee4e40d5ab256531de57653e5fa23b",
+    "scripts/admissibility_rule_menus_neighbour_generated_supports_and_cube_orbit_menus_2026_09_15.py": "9c66d3b8e5304e3a658b95849309abe60641f48c0247653a5805a126d53db1c7"
+  },
+  "inputs": {
+    "runtime": [
+      {
+        "path": "scripts/admissibility_rule_menus_neighbour_generated_supports_and_cube_orbit_menus_2026_09_15.py",
+        "sha256": "9c66d3b8e5304e3a658b95849309abe60641f48c0247653a5805a126d53db1c7"
+      }
+    ],
+    "helpers": [],
+    "parents": [
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "sha256": "86d269fec1b464c008b8ba0c9f705e6cf9411c041bdf21b4f96c4ec78f0a047a"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/ADMISSIBILITY_RULE_COVARIANT_FRAME_CONSTRUCTIONS_CUBE_ORBITS_AND_ANTIPODAL_KERNEL_PROPAGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "ded0a06a2867245c56c39f09b7de793a2734b3a0f406dfb4f422bee85501583c"
+      },
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "sha256": "86d269fec1b464c008b8ba0c9f705e6cf9411c041bdf21b4f96c4ec78f0a047a"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "affected_fix": "Exact sole note phrase replacement verified; runner/calculations unchanged; F8152-9 resolved. Prior complete cold review remains applicable.",
+  "main_interaction": "5418caa10f adds unrelated PR8023 finite compact gauge cutoff/Galerkin source and history; no8152 premise or tooling path changes.",
+  "gate": "No negative packet PASS; exhaustive support/minimality certification deferred with original recovery retained.",
+  "capture": "After root-owned v2 cheap PASS, one15-group primary capture under explicit current60s/512MiB cap; historical900s declaration preserved. No reviewer execution.",
+  "references": {
+    "drain8152-original-review.json": "49be1c8678552428861c47cdc1c0ff0cedc8cc34bc95e5b5322c5e157deb58c1",
+    "drain8152-cold-findings-v1.json": "dcce238b83f495df3d2804defa2823c0e8abeb497b476e8bdb0f2758c14ee73d",
+    "drain8152-author-unit-draft-v2.json": "94af63186434f02a457881daab7650b6d11065108b95e5f3727d64b807296060",
+    "drain8152-phrase-repair-v2.json": "f73fca70ed60f8347f573a31f73fb3396c0309b7092c486960a8e50656b17fc4"
+  }
+}

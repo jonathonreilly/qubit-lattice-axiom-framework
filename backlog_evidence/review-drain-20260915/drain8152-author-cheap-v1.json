@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8152",
+  "tree": "1aebd9db51f2965e01be1183ba1ddfd2706271a2",
+  "cache_checked": false,
+  "notes": [
+    {
+      "path": "docs/ADMISSIBILITY_RULE_COVARIANT_FRAME_CONSTRUCTIONS_CUBE_ORBITS_AND_ANTIPODAL_KERNEL_PROPAGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "admissibility_rule_covariant_frame_constructions_cube_orbits_and_antipodal_kernel_propagation_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/admissibility_rule_menus_neighbour_generated_supports_and_cube_orbit_menus_2026_09_15.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8762,
+      "misses": 4449
+    },
+    "packet_imports": {
+      "hits": 8752,
+      "misses": 4447
+    },
+    "declared_inputs": {
+      "hits": 8787,
+      "misses": 4580
+    }
+  },
+  "record_sha256": "23bd88eb42b590193d10d88949f20fa2b9c76637916bcd33539eb70621ccc3a0",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

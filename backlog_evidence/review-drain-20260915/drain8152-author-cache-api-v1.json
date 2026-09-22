@@ -1,0 +1,13 @@
+{
+  "primary": "scripts/admissibility_rule_menus_neighbour_generated_supports_and_cube_orbit_menus_2026_09_15.py",
+  "primary_sha256": "9c66d3b8e5304e3a658b95849309abe60641f48c0247653a5805a126d53db1c7",
+  "timeout": 60,
+  "declared_inputs": [
+    "docs/ADMISSIBILITY_RULE_COVARIANT_FRAME_CONSTRUCTIONS_CUBE_ORBITS_AND_ANTIPODAL_KERNEL_PROPAGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+  ],
+  "declared_input_fingerprint": "8761915d041dfbc37511b3f938897db7b9cfe9b589578b1c602b3f682d0adccc",
+  "cache_status": "missing",
+  "helpers": []
+}

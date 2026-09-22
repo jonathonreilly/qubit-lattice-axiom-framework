@@ -1,0 +1,12 @@
+{
+  "primary": "scripts/admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.py",
+  "timeout": 180,
+  "declared_inputs": [
+    "docs/ADMISSIBILITY_RULE_STATIC_SIX_AXIS_REFLECTION_IDENTITIES_AND_CONDITIONAL_CONTOUR_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md"
+  ],
+  "declared_input_fingerprint": "6c2a42a70d542dcc256d75f87d34e3ae4136ad79226870dd7d7c3a49255c9156",
+  "cache_status": "missing",
+  "helpers": []
+}

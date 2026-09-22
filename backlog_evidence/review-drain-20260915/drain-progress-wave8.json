@@ -1,0 +1,20 @@
+{
+  "main": "5418caa10f79b07f758d5d5b9120bdcbec4d19e5",
+  "open_count": 106,
+  "draft_count": 26,
+  "closed_since_all_open_scope": 17,
+  "completed_last_train": "train63",
+  "current_train": "train64",
+  "current_prs": [
+    8148,
+    8149,
+    8150
+  ],
+  "active_source_units": [
+    8151,
+    8152
+  ],
+  "next_draft": 8024,
+  "child_preservation": "PR8024 retargeted main with original head and full pre-maintenance75-path delta retained.",
+  "scope": "Continue until every open PR is reviewed and landed or rejected/closed; refreshed new arrivals remain in scope."
+}

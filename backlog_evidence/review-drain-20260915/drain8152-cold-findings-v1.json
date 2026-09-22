@@ -1,0 +1,19 @@
+{
+  "status": "COLD SCIENTIFIC CORRECTIONS CONFIRMED; ONE TEXT-PREDICATE FIX BEFORE EXECUTION",
+  "tree": "1aebd9db51f2965e01be1183ba1ddfd2706271a2",
+  "reviewer": "/root/review_8012",
+  "scope": "Full corrected note and original-to-corrected runner diff read; all22 gzip originals decoded/hash verified. New displayed-frame formula and tilted-overlap check agree with prior independent exact controls. Fixed ordered slots, Borel maps/weights, continuous firstseed and atomic later kernels explicit.",
+  "finding": {
+    "id": "F8152-9",
+    "location": "Theorem M1 + runner family_f FORBIDDEN",
+    "fact": "Note says not certified by twelve iterations; FORBIDDEN certified matches baseline prose. AST-only exact scan returned this sole forbidden hit.",
+    "repair": "Use not established by twelve iterations and refreeze own-note input. No primary run has occurred."
+  },
+  "gate": "Exhaustive support/minimality certification remains deferred. Constructive content does not use those negatives as premises. Original branch remains recovery handle.",
+  "references": {
+    "drain8152-original-review.json": "49be1c8678552428861c47cdc1c0ff0cedc8cc34bc95e5b5322c5e157deb58c1",
+    "drain8152-author-unit-draft-v1.json": "23bd88eb42b590193d10d88949f20fa2b9c76637916bcd33539eb70621ccc3a0",
+    "drain8152-author-source-handoff-v1.json": "683928c7e5e1a683be424028a324259bf9ade7d13a51f95ff9bbf2e0ad4ba42f",
+    "drain8152-author-cache-api-v1.json": "a0cc347a7596677c0ef99deb9bfa5e18ed86fab844c49b650f8ba63a4d98d0df"
+  }
+}

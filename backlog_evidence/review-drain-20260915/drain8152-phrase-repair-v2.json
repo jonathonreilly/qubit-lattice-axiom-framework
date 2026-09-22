@@ -1,0 +1,16 @@
+{
+  "change": "Only not certified by twelve iterations -> not established by twelve iterations; avoid exact forbidden-token collision. No mathematical/source-runner change.",
+  "tree": "fab7556c5c6af42344402a26c28391278dc7829c",
+  "note": "docs/ADMISSIBILITY_RULE_COVARIANT_FRAME_CONSTRUCTIONS_CUBE_ORBITS_AND_ANTIPODAL_KERNEL_PROPAGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+  "note_sha256": "ded0a06a2867245c56c39f09b7de793a2734b3a0f406dfb4f422bee85501583c",
+  "cold_findings": {
+    "path": "/private/tmp/review-drain-20260915/drain8152-cold-findings-v1.json",
+    "sha256": "dcce238b83f495df3d2804defa2823c0e8abeb497b476e8bdb0f2758c14ee73d"
+  },
+  "timeout": 60,
+  "declared_input_fingerprint": "382c83ee2a2f15502e72ee57c83881bc62d128f320694d89c4ee95d78e541a46",
+  "prior_record": {
+    "path": "/private/tmp/review-drain-20260915/drain8152-author-unit-draft-v1.json",
+    "sha256": "23bd88eb42b590193d10d88949f20fa2b9c76637916bcd33539eb70621ccc3a0"
+  }
+}

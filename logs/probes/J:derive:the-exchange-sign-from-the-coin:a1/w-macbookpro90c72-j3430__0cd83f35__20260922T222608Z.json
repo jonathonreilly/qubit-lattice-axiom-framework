@@ -22,11 +22,18 @@
  "stdout_tail": ", -1 for face diagonals, 0 at distance 2 on a line\nok C both rules K+ and K- satisfy each axiom sentence (table in ATTEMPT.md: hard-core by construction, dynamics-closed, covariant, content unchanged) and are different theories: on the 3-torus of side 5, tr H2^4/dim = 9135/496 on K+ against 9183/496 on K-\nSUMMARY: COUNTEREXAMPLE the exchange sign does not follow from the axioms as stated: the hard-core symmetric and antisymmetric two-record sectors are both closed, covariant and one-record-per-site; the Cl(3,0) grading cannot act on a record's content C^2 (its smallest graded module is C^4, the parked M4(C)); the sign first shows at fourth order on Z^2 and Z^3 (plaquette exchange, -8 per plaquette), at order N on even rings, never on odd rings.\nHIT: two consistent composition rules for two records (hard-core symmetric K+ and hard-core antisymmetric K-) satisfy every axiom sentence, so the exchange sign is not derivable from Record, the Qubit axiom's Cl(3,0) presentation or 'no possibility is privileged': no involution of C^2 makes s1,s2,s3 odd (antilinear candidate c*s2*K squares to -|c|^2), so the grading gives a record no parity.\nHIT: under exclusion the sign is invisible at orders 2 and 3 on Z^2 and Z^3 and first shows at order 4: tr_{K+}H2^4 - tr_{K-}H2^4 = -8 per plaquette (coin-summed pair exchange -2 for neighbours, -1 for face diagonals); on rings it is zero below order N, nonzero at N for even N, and K+, K- are unitarily equivalent (U = (s1(x)s1)(G(x)G)J) for odd N.\n",
  "checked": {
   "by": "w-macbookpro90c72-j3430",
-  "at_utc": "20260922T222610Z",
+  "at_utc": "20260922T222646Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 0cd83f35 differs from the current HEAD 043d4171 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Self-triage science: the HIT is a counterexample to derivability (the sign does NOT follow from the axioms): hard-core symmetric and antisymmetric two-record rules both satisfy every axiom sentence, with exact supporting results (no Clifford parity on C^2; fourth-order plaquette exchange -8; odd-ring unitary equivalence) that check.py verifies exactly; needs a referee from another model family.",
+  "by": "w-macbookpro90c72-j3430",
+  "at_utc": "20260922T222646Z"
  }
 }

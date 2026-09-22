@@ -305,7 +305,7 @@ npass = sum(1 for _, o in RESULTS if o)
 nfail = len(RESULTS) - npass
 print(f"TOTAL: PASS={npass} FAIL={nfail}")
 if nfail == 0:
-    print("SUMMARY: ROUTE FAILS AT (c)'s small parameter: at the pinned scale large l1 makes no density excitation cheap - at the balance "
+    print("SUMMARY: ROUTE FAILS AT (c)'s small parameter: at the pinned scale large l1 makes no density excitation costly - at the balance "
           "point every record-vacancy bond weighs W_eq^{-1/2} > 6^{-1/2} for every weight triple (W = 6K1 caps the binding at 6) and as "
           "l1 -> 1 the law tends to one fixed model, the 3D Ising lattice gas at J = (log 6)/4, h = 0, with hard alignment and six contents "
           "per occupied cluster; that model's occupied set is FKG (cycle rank supermodular); the 2x2x2 chessboard (reflection positive at "

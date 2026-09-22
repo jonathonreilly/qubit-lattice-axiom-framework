@@ -1,0 +1,17 @@
+PR #8561: Native record formation: conditional Euler limit and cubic centering response
+branch codex/mobile-record-native-formation-20260921 (base codex/mobile-record-immutable-waves-20260921)
+runners in the PR: 1
+== scripts/mobile_records_native_formation_euler_and_cubic_centering_2026_09_21.py: rc=0 PASS=25 FAIL=0
+   mutation wrong_reaction_power: expected ? observed ? MISMATCH
+   mutation wrong_adjoint_vacancy_sign: expected ? observed ? MISMATCH
+   mutation half_linear_vector_source: expected ? observed ? MISMATCH
+   mutation half_quadrupole_source: expected ? observed ? MISMATCH
+   mutation wrong_cubic_vector_source: expected ? observed ? MISMATCH
+   mutation half_relative_diffusion: expected ? observed ? MISMATCH
+   mutation half_pair_source: expected ? observed ? MISMATCH
+   mutation half_cubic_reward: expected ? observed ? MISMATCH
+   mutation reverse_full_generator_quadratic_birth: expected ? observed ? MISMATCH
+   mutation omit_time_dependent_entropy_weights: expected ? observed ? MISMATCH
+   mutation omit_second_birth_endpoint: expected ? observed ? MISMATCH
+   mutation wrong_Green_time_normalization: expected ? observed ? MISMATCH
+HIT: scripts/mobile_records_native_formation_euler_and_cubic_centering_2026_09_21.py: mutation census mismatch: wrong_reaction_power wrong_adjoint_vacancy_sign half_linear_vector_source half_quadrupole_source wrong_cubic_vector_source half_relative_diffusion half_pair_source half_cubic_reward reverse_full_generator_quadratic_birth omit_time_dependent_entropy_weights omit_second_birth_endpoint wrong_Green_time_normalization

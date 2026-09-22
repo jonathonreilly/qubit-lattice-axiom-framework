@@ -1,0 +1,57 @@
+{
+ "task": "P:8561",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-native-formation-20260921",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8561",
+ "pr": 8561,
+ "branch": "codex/mobile-record-native-formation-20260921",
+ "git_sha": "1e64a33f",
+ "started_utc": "20260922T201305Z",
+ "elapsed_s": 36.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/mobile_records_native_formation_euler_and_cubic_centering_2026_09_21.py",
+    "returncode": 0,
+    "total": "PASS=25 FAIL=0",
+    "census_mismatches": [
+     "wrong_reaction_power",
+     "wrong_adjoint_vacancy_sign",
+     "half_linear_vector_source",
+     "half_quadrupole_source",
+     "wrong_cubic_vector_source",
+     "half_relative_diffusion",
+     "half_pair_source",
+     "half_cubic_reward",
+     "reverse_full_generator_quadratic_birth",
+     "omit_time_dependent_entropy_weights",
+     "omit_second_birth_endpoint",
+     "wrong_Green_time_normalization"
+    ]
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "151e7f8fcdd5c89ffecbad88c30e1d2ab56f7bef851e19206e75e2bbfb97df75",
+ "stdout_tail": "\nbranch codex/mobile-record-native-formation-20260921 (base codex/mobile-record-immutable-waves-20260921)\nrunners in the PR: 1\n== scripts/mobile_records_native_formation_euler_and_cubic_centering_2026_09_21.py: rc=0 PASS=25 FAIL=0\n   mutation wrong_reaction_power: expected ? observed ? MISMATCH\n   mutation wrong_adjoint_vacancy_sign: expected ? observed ? MISMATCH\n   mutation half_linear_vector_source: expected ? observed ? MISMATCH\n   mutation half_quadrupole_source: expected ? observed ? MISMATCH\n   mutation wrong_cubic_vector_source: expected ? observed ? MISMATCH\n   mutation half_relative_diffusion: expected ? observed ? MISMATCH\n   mutation half_pair_source: expected ? observed ? MISMATCH\n   mutation half_cubic_reward: expected ? observed ? MISMATCH\n   mutation reverse_full_generator_quadratic_birth: expected ? observed ? MISMATCH\n   mutation omit_time_dependent_entropy_weights: expected ? observed ? MISMATCH\n   mutation omit_second_birth_endpoint: expected ? observed ? MISMATCH\n   mutation wrong_Green_time_normalization: expected ? observed ? MISMATCH\nHIT: scripts/mobile_records_native_formation_euler_and_cubic_centering_2026_09_21.py: mutation census mismatch: wrong_reaction_power wrong_adjoint_vacancy_sign half_linear_vector_source half_quadrupole_source wrong_cubic_vector_source half_relative_diffusion half_pair_source half_cubic_reward reverse_full_generator_quadratic_birth omit_time_dependent_entropy_weights omit_second_birth_endpoint wrong_Green_time_normalization",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T202053Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: log's git sha 1e64a33f differs from the current HEAD 92a2a936 (fine if you pulled since; the run is bound to its sha)",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "Same class as P:8604/8560/8569/8610 (issue 8294 comment): the census regex (mutation_family_expected/observed) matches nothing because this mobile-record runner signals a killed mutation as 'FAIL: <target check> AssertionError' with rc=1; at PR head 4ae52ade22 (its only head since 2026-09-21T08:09Z) all 12 mutations fail their declared target check from the runner's MUTATIONS table with rc=1 (five in admissibility_formation_euler_check.py, four in native_formation_centering_check.py, three in native_formation_energy_centering_check.py).",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T202053Z"
+ }
+}

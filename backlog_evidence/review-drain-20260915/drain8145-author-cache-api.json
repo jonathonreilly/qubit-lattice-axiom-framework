@@ -1,0 +1,44 @@
+[
+  {
+    "path": "scripts/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.py",
+    "sha256": "ee6f2e3ef6b4d6b5d4a425682a53f8be9a1a76226177180b2a3c0261b93c8620",
+    "cache_status": "fresh",
+    "timeout": 180
+  },
+  {
+    "path": "scripts/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.py",
+    "sha256": "f0944f826251880d8cb50cc0b1a23ba5455504816b7262e3088895f416fb7cd6",
+    "cache_status": "fresh",
+    "timeout": 180
+  },
+  {
+    "path": "scripts/finite_clock_ginibre_free_state_and_static_charge_bound_2026_09_15.py",
+    "sha256": "2ca4c711d706d1b263504b59d2501fc748836fd8fe52b2a7ca7e90060036b3fd",
+    "cache_status": "fresh",
+    "timeout": 300
+  },
+  {
+    "path": "scripts/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.py",
+    "sha256": "5dddde52adfa443d9169deec859423a0e5697897915fff73620caea3d1789f92",
+    "cache_status": "fresh",
+    "timeout": 180
+  },
+  {
+    "path": "scripts/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.py",
+    "sha256": "c059f841d9e5863e3d6990dba4da461270580c91f5109a2282f5228f3cb1a369",
+    "cache_status": "fresh",
+    "timeout": 180
+  },
+  {
+    "path": "scripts/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_2026_09_15.py",
+    "sha256": "6e99936a4f99a308f1a6b4d54ac311f433c8f8f9f1943a60ed98750ffe04c2fb",
+    "cache_status": "fresh",
+    "timeout": 300
+  },
+  {
+    "path": "scripts/finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_2026_09_15.py",
+    "sha256": "32a085b12393438b77e47cd88879614b9937ba5c190110b6aac2ec5600b1cba4",
+    "cache_status": "fresh",
+    "timeout": 300
+  }
+]

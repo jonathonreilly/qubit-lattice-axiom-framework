@@ -30,12 +30,19 @@
  "stdout_sha256": "e9206bc79928418c5b4419495f61b2122ed5cd403971ab99fa87ff7190e3888c",
  "stdout_tail": "PR #8604: Bound empty-start formation and quantitative mobile-record waves\nbranch codex/mobile-record-empty-start-quantitative-waves-20260921 (base codex/mobile-record-moving-geometry-waves-20260921)\nrunners in the PR: 1\n== scripts/mobile_records_empty_start_quantitative_waves_2026_09_21.py: rc=0 PASS=7 FAIL=0\n   mutation omit_birth_killing_scale: expected ? observed ? MISMATCH\n   mutation omit_route_orientation_factor: expected ? observed ? MISMATCH\n   mutation wrong_original_hole_fiber: expected ? observed ? MISMATCH\nHIT: scripts/mobile_records_empty_start_quantitative_waves_2026_09_21.py: mutation census mismatch: omit_birth_killing_scale omit_route_orientation_factor wrong_original_hole_fiber",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260922T065549Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T174651Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 08957b13 differs from the current HEAD 155c163e (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "The census regex (mutation_family_expected/observed) matched nothing because this runner signals a killed mutation as 'FAIL: <target check> AssertionError' with rc=1 and prints no family lines; re-run at PR head af45e32418 (the PR's only commit, before this log), omit_birth_killing_scale and wrong_original_hole_fiber fail geometric_all_stage_polynomial_check.py and omit_route_orientation_factor fails dimer_routed_quantitative_euler_check.py, each with AssertionError and rc=1, as the runner's MUTATIONS table declares.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T174651Z"
  }
 }

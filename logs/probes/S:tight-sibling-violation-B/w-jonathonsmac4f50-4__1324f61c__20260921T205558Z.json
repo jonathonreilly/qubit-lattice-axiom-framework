@@ -21,12 +21,19 @@
  "stdout_sha256": "7f12db15753ac470be24d100aa8cffeb058faa86ba2e2c3be45f64e998a04442",
  "stdout_tail": "seed 44 6x6x9 from Z_B: start (unrooted, rooted) max cost = (0, 0) at ((4, 4, 3), 0, 0, (8, 8, 1, 0))\nseed 44: (unrooted, rooted) max cost = (1, 1) at ((5, 4, 4), 1, 1, (9, 8, 1, 0)); ones? zeta=[(0, 0, 0), (0, 0, 1), (0, 0, 7), (0, 1, 0), (0, 1, 1), (0, 1, 2), (0, 1, 7), (0, 2, 7), (0, 4, 4), (1, 0, 0), (1, 0, 2), (1, 0, 5), (1, 1, 2), (1, 2, 0), (1, 2, 2), (1, 3, 1), (1, 3, 7), (2, 0, 0), (2, 0, 7), (2, 2, 0), (2, 2, 2), (2, 2, 3), (2, 2, 6), (2, 3, 3), (2, 3, 4), (2, 4, 2), (2, 4, 6), (3, 0, 1), (3, 0, 2), (3, 1, 2), (3, 2, 1), (3, 2, 7), (4, 0, 2), (4, 0, 6), (4, 1, 1), (4, 2, 1), (4, 4, 2), (4, 4, 4), (4, 5, 5), (5, 0, 7), (5, 2, 3)]\nseed 44: done best=(1, 1)\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-4",
-  "at_utc": "20260921T212558Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T184134Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 1324f61c differs from the current HEAD 928389c1 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Verified: the climb (violate.py 44 1800 6 6 9 B) ends at max cost (1, 1) at (5,4,4) with (E,A,S,F) = (9,8,1,0), which the task's hit pattern (first component >= 1) calls a HIT. Rebuilt from the logged zeta (41 marks -> 78 one-sites, (5,4,4) processed at level 13): MinTree.solve(1.0) (HiGHS status 0) returns an 18-node single-seed tree that family.verify_tree accepts, with unrooted and rooted cost 1; an independent solver-free level-by-level connectivity DP written from the family's definition (probes/work/tight-sibling-violation-B/levdp.py) also gives (1, 1) there and (1, 1) as the maximum over all 46 processed one-sites at level >= 3, attained only at (5,4,4); the DP agrees with MinTree/rooted on 40 of 40 cross-check configurations (verify_witnesses.py). The site's family constant is 16/15 (Dinkelbach; the DP gives min cost 0 at c = 16/15 and -2/3 at 10/9), below block 37's 10/9: a further witness to issue 8498 on the default 6x6x9 box, not a larger constant.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T184134Z"
  }
 }

@@ -19,14 +19,21 @@
  "stdout_sha256": "8eef0fa69c1074f5629bf6f4acd0fdcb172ce1ed7339e464a6799e141a1a0e03",
  "stdout_tail": "missing C129 parent prevents the anchor\nPASS C06 rejected R_C12 strand role has two exact unexpected targets :: ((5, 1, -4), (6, 1, -3))\nPASS C07 both rejected targets would write A_2_1 from unary R_C12\nPASS C08 selected R_C13 strand role has no inherited unary input row\n\n===============================================================================\nD - Continued rail renewal and proper-cubic covariance\n===============================================================================\nPASS D01 remaining 84 writes through eight slices stay singleton fronts :: []\nPASS D02 late control reaches 101 slices with 1,598 terminal records :: []\nPASS D03 all 220,944 proper-cubic raw-image checks preserve output :: []\nPASS D04 every rotated completed history exposes only rotated next rail :: []\n\n===============================================================================\nE - Exact bounded scope and N1-N8 discipline\n===============================================================================\nFAIL E01 note names exact bounded campaign construction\nFAIL E02 note preserves cage/launch-seed scope\nFAIL E03 note denies word, writer, and recurrence claims\nFAIL E04 note carries refreshed N1-N8 discipline\nFAIL E05 note names rejected R_C12 role without inheriting it\nFAIL E06 note makes no axiom addition\nPASS E07 Cycle 132 writes runner and review note only\n\nCAGE_CANONICAL=4 CAGE_RAW=96 UNION_RAW=9206 OUTPUTS=134\nFACTOR=6/6 FULL=6870416/53451460 REJECTED_UNEXPECTED=2\nPASS=27 FAIL=7\nRESULT=FAIL\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260922T070913Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T180952Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha b440b4ee differs from the current HEAD 155c163e (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "The Cycle-132 review note now lives at archive/notes/docs/work_history/repo/review_feedback/ (same file name) while the runner reads docs/work_history/repo/review_feedback/, so A01 (note exists) and the six note-text checks E01-E06 fail; all six E predicates hold on the archived note, and the other 27 checks (A02-D04 and E07, including the 6,870,416-state full-history census) pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T180952Z"
  }
 }

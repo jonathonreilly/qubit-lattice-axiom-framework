@@ -19,14 +19,21 @@
  "stdout_sha256": "b0c8959d28aac5bd120a9a81ac9e4c3b0085a2eea1de801c77f2b37f2ba941bf",
  "stdout_tail": "arried relative update and candidate-window machinery', 'training_sizes': (3, 4), 'declared_held_sizes': (5, 6), 'fixed_momentum_index': (1, 0, 0), 'target_windows': (0.08, 0.18, 0.28, 0.38, 0.48, 0.58, 0.68, 0.78, 0.88), 'eigenpairs_per_window': 8, 'held_candidate_pool': 'phase, pole, eigen-residual, local-gap, and eigenvalue-deduplication only; no adaptive projection', 'training_pair_score': 'contact-fingerprint overlap times exp(-phase-fraction distance/0.12) times geometric-mean adaptive training overlap', 'contact_fingerprint': 'normalized first 42 relative-block amplitudes (six excited plus 36 contact-pair amplitudes)', 'held_primary_tracker': 'fingerprint overlap times exp(-phase-fraction residual/0.05)', 'alternate_trackers': ('fingerprint only', 'phase trend only'), 'phase_trend': 'two-training-point affine fit in 1/L of eigenphase/first-pole-phase', 'fixed_scalar_orbits': ('same', 'opposite', 'perpendicular'), 'fixed_scalar_coefficients': ((0.3310650373624872+0.8311712291668345j), (-0.09576260231285261-0.11405750363706593j), (-0.14217276271805118-0.3964311343032181j)), 'fixed_green_overlap_minimum': 0.5, 'fixed_contact_maximum': 0.6, 'fixed_projection_weight_minimum': 1e-06, 'branch_pair_phase_width': 0.12, 'held_track_phase_width': 0.05, 'fingerprint_weight_minimum': 0.0001, 'comparator': 'per-eigenpair residual-matched shifted-Green shape; evaluation only on held sizes', 'held_adaptation': False, 'authority': 'none', 'audit': 'unset'}\n\nSUMMARY: 9 passed, 1 failed\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260922T071940Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T180953Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha b440b4ee differs from the current HEAD 155c163e (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "The only failure is 'the Cycle-300 frozen-rule note exists': the note now lives at archive/notes/docs/work_history/repo/review_feedback/ (same file name) and the runner reads docs/work_history/repo/review_feedback/; the other 9 checks pass (SUMMARY: 9 passed, 1 failed).",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T180953Z"
  }
 }

@@ -19,14 +19,21 @@
  "stdout_sha256": "8c6eb91677372a6ad1fa2a507964b343ebab6ffdaa51dd2b5bbf2550c90e4239",
  "stdout_tail": "================\nPASS C01 direct H0 successor has exactly two terminal images :: ((5, -1, -2), (5, 1, 1))\nPASS C02 two-image corpus exposes two additional full-history targets :: ((5, 0, 1), (5, 1, -1))\nPASS C03 terminal-only direct factor is misleadingly clean\nPASS C04 unary alternate successor has eleven terminal images :: ((-1, 5, 1), (2, 7, 2), (3, 7, 1), (3, 7, 2), (5, -1, 1), (6, -1, 0), (6, 0, -2), (6, 0, -1), (6, 2, -1), (6, 2, 1), (6, 3, -2))\nPASS C05 tested guard row has six explicit physical images :: ((1, -5, -3), (1, -2, -6), (2, -5, -2), (2, -1, -6), (5, -2, -2), (5, -1, -3))\nPASS C06 six-record guard makes intended H0 terminal target unique :: ((5, -1, -2),)\nPASS C07 guarded candidate compiler and factor are clean but bounded :: factor=144/496\n\n===============================================================================\nD - Renewal, covariance, and exact scope\n===============================================================================\nPASS D01 eight rail slices remain singleton fronts after first bit :: []\nPASS D02 all 221,520 proper-cubic raw images preserve output\nFAIL D03 note names c132_cage_first_bit_successor_boundary\nFAIL D04 note carries refreshed N1-N8 discipline\nFAIL D05 note denies byte/writer/completion claims\nFAIL D06 note makes no axiom addition\nPASS D07 Cycle 135 writes runner and review note only\n\nBIT_RAW=24 UNION_RAW=9230 FULL=6936208/53907076\nDIRECT_IMAGES=2 UNARY_IMAGES=11 GUARD_IMAGES=6 GUARD_FACTOR=144/496\nPASS=21 FAIL=5\nRESULT=FAIL\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260922T071253Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T180952Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha b440b4ee differs from the current HEAD 155c163e (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "The Cycle-135 note and its Cycle-132 predecessor note now live at archive/notes/docs/work_history/repo/review_feedback/ (same file names) while the runner reads docs/work_history/repo/review_feedback/, so A01 (notes exist) and the note-text checks D03-D06 fail; all four D predicates hold on the archived note, and the other 21 checks pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T180952Z"
  }
 }

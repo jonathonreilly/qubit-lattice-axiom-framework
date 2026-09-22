@@ -1,0 +1,11 @@
+PR #8569: Classify cubic record dynamics and conditional Gauss selection
+branch codex/mobile-record-cubic-selection-20260921 (base codex/mobile-record-transverse-waves-20260921)
+runners in the PR: 1
+== scripts/mobile_records_cubic_symbol_selection_and_gauss_closure_2026_09_21.py: rc=0 PASS=3 FAIL=0
+   mutation double_offdiagonal_Gram_weight: expected ? observed ? MISMATCH
+   mutation halve_microscopic_pair_tensor: expected ? observed ? MISMATCH
+   mutation omit_axial_reflection_sign: expected ? observed ? MISMATCH
+   mutation omit_telescoping_term: expected ? observed ? MISMATCH
+   mutation reverse_second_curl_readout: expected ? observed ? MISMATCH
+   mutation use_proper_group_for_full_count: expected ? observed ? MISMATCH
+HIT: scripts/mobile_records_cubic_symbol_selection_and_gauss_closure_2026_09_21.py: mutation census mismatch: double_offdiagonal_Gram_weight halve_microscopic_pair_tensor omit_axial_reflection_sign omit_telescoping_term reverse_second_curl_readout use_proper_group_for_full_count

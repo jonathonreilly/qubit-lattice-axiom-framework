@@ -1,0 +1,50 @@
+{
+ "task": "P:8569",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-cubic-selection-20260921",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8569",
+ "pr": 8569,
+ "branch": "codex/mobile-record-cubic-selection-20260921",
+ "git_sha": "ba694645",
+ "started_utc": "20260922T174226Z",
+ "elapsed_s": 10.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/mobile_records_cubic_symbol_selection_and_gauss_closure_2026_09_21.py",
+    "returncode": 0,
+    "total": "PASS=3 FAIL=0",
+    "census_mismatches": [
+     "double_offdiagonal_Gram_weight",
+     "halve_microscopic_pair_tensor",
+     "omit_axial_reflection_sign",
+     "omit_telescoping_term",
+     "reverse_second_curl_readout",
+     "use_proper_group_for_full_count"
+    ]
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "c343fcec6b1dcfa54b9a1c741480aae77a08ae9ec3292791e5fcde011bb6330b",
+ "stdout_tail": "PR #8569: Classify cubic record dynamics and conditional Gauss selection\nbranch codex/mobile-record-cubic-selection-20260921 (base codex/mobile-record-transverse-waves-20260921)\nrunners in the PR: 1\n== scripts/mobile_records_cubic_symbol_selection_and_gauss_closure_2026_09_21.py: rc=0 PASS=3 FAIL=0\n   mutation double_offdiagonal_Gram_weight: expected ? observed ? MISMATCH\n   mutation halve_microscopic_pair_tensor: expected ? observed ? MISMATCH\n   mutation omit_axial_reflection_sign: expected ? observed ? MISMATCH\n   mutation omit_telescoping_term: expected ? observed ? MISMATCH\n   mutation reverse_second_curl_readout: expected ? observed ? MISMATCH\n   mutation use_proper_group_for_full_count: expected ? observed ? MISMATCH\nHIT: scripts/mobile_records_cubic_symbol_selection_and_gauss_closure_2026_09_21.py: mutation census mismatch: double_offdiagonal_Gram_weight halve_microscopic_pair_tensor omit_axial_reflection_sign omit_telescoping_term reverse_second_curl_readout use_proper_group_for_full_count",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T181214Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "The census regex (mutation_family_expected/observed) matches nothing because this runner reports a killed mutation as 'FAIL: <target check> AssertionError' with rc=1 and prints no family lines; at PR head 508722df2e (the head since 2026-09-21T11:16Z) all 6 mutations fail their declared target check from the runner's MUTATIONS table with rc=1 (five in cubic_entropy_symbol_check.py, reverse_second_curl_readout in cubic_symbol_selection_check.py).",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T181214Z"
+ }
+}

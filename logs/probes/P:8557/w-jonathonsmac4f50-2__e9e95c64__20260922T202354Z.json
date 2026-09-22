@@ -34,12 +34,19 @@
  "stdout_sha256": "434b297627f0b1802326947128d2afb8fed150a5594c5e47d547de343de04800",
  "stdout_tail": "PR #8557: Immutable records support acoustic Euler and fluctuation limits\nbranch codex/mobile-record-immutable-waves-20260921 (base main)\nrunners in the PR: 1\n== scripts/mobile_records_immutable_context_exchange_acoustic_limits_2026_09_21.py: rc=0 PASS=49 FAIL=0\n   mutation wrong_axis_feature: expected ? observed ? MISMATCH\n   mutation drop_polarized_cross_term: expected ? observed ? MISMATCH\n   mutation omit_current_mean_subtraction: expected ? observed ? MISMATCH\n   mutation wrong_acoustic_dimension: expected ? observed ? MISMATCH\n   mutation discard_zero_modes: expected ? observed ? MISMATCH\n   mutation reverse_fourier_sign: expected ? observed ? MISMATCH\n   mutation fast_birth_scaling: expected ? observed ? MISMATCH\nHIT: scripts/mobile_records_immutable_context_exchange_acoustic_limits_2026_09_21.py: mutation census mismatch: wrong_axis_feature drop_polarized_cross_term omit_current_mean_subtraction wrong_acoustic_dimension discard_zero_modes reverse_fourier_sign fast_birth_scaling",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260922T202417Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T203808Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha e9e95c64 differs from the current HEAD 490b8d40 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "Census parse artefact (issue 8294 comment): this mobile-record runner prints no mutation_family lines; its MUTATIONS is a list of names applied in-code, and a killed mutation raises AssertionError((check, details)) printed as 'FAIL: ...' with rc=1. At PR head 6aaa725a08 (its only head since 2026-09-21T06:11Z) the unmutated runner exits 0 and all 7 mutations exit 1 with a FAIL line (all_density_all_direction_field_matrix x2, product_current_case_3_axis_0_minimal, all_direction_acoustic_polynomial, exact_configuration_fourier_drift_sign, slow_birth_generator_scaling, and an empty-message assertion for drop_polarized_cross_term).",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T203808Z"
  }
 }

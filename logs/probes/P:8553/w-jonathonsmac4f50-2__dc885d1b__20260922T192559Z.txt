@@ -1,0 +1,14 @@
+PR #8553: ail45: the wind law (records are conserved, so a capturing body's inflow is inverse-square; wind confirmed parameter-free; F = K Q1 Q2/r^2 symmetric; the inviscid sign-change prediction refuted and re-scoped)
+branch physics-loop/admissibility-induced-law-block45-the-wind-law-of-capturing-bodies-20260920 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_the_wind_law_flux_theorems_inverse_square_wind_second_order_momentum_flux_force_product_of_capture_rates_2026_09_20.py: rc=0 PASS=14 FAIL=0
+   mutation current_without_blocking: expected B observed B ok
+   mutation momentum_flux_without_exchange: expected B observed B ok
+   mutation cube_surface_count_wrong: expected C observed C ok
+   mutation wind_coefficient_without_blocking_factor: expected C observed C ok
+   mutation fourth_moment_wrong: expected D observed D ok
+   mutation advective_coefficient_without_exclusion: expected D observed D ok
+   mutation bernoulli_adjustment_dropped: expected E observed E ok
+   mutation sign_change_density_wrong: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

@@ -1,0 +1,11 @@
+PR #8607: physics-loop: admissibility induced-law block 74 - three responses, eight species: the frame serves two, reach two one, reach three all eight
+branch physics-loop/admissibility-induced-law-block74-three-responses-eight-species-20260921 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_three_responses_eight_species_site_stress_bond_current_two_step_current_2026_09_21.py: rc=0 PASS=11 FAIL=0
+   mutation site_stress_is_the_same_for_all_species: expected B observed B ok
+   mutation two_step_current_carries_a_reflection_sign: expected B observed B ok
+   mutation frame_serves_all_eight_species: expected C observed C ok
+   mutation shear_remainder_has_no_factor_two: expected C observed C ok
+   mutation site_stress_and_bond_currents_differ_at_leading_order: expected D observed D ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

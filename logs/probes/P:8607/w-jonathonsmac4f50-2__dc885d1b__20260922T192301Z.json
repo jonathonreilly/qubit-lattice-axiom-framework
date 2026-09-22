@@ -1,0 +1,37 @@
+{
+ "task": "P:8607",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block74-three-",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8607",
+ "pr": 8607,
+ "branch": "physics-loop/admissibility-induced-law-block74-three-responses-eight-species-20260921",
+ "git_sha": "dc885d1b",
+ "started_utc": "20260922T192301Z",
+ "elapsed_s": 29.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_three_responses_eight_species_site_stress_bond_current_two_step_current_2026_09_21.py",
+    "returncode": 0,
+    "total": "PASS=11 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "8903a16d0f8c8c97f103804cf752a7beaf196e056bb4a0f9300e07884f4edef4",
+ "stdout_tail": "PR #8607: physics-loop: admissibility induced-law block 74 - three responses, eight species: the frame serves two, reach two one, reach three all eight\nbranch physics-loop/admissibility-induced-law-block74-three-responses-eight-species-20260921 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_three_responses_eight_species_site_stress_bond_current_two_step_current_2026_09_21.py: rc=0 PASS=11 FAIL=0\n   mutation site_stress_is_the_same_for_all_species: expected B observed B ok\n   mutation two_step_current_carries_a_reflection_sign: expected B observed B ok\n   mutation frame_serves_all_eight_species: expected C observed C ok\n   mutation shear_remainder_has_no_factor_two: expected C observed C ok\n   mutation site_stress_and_bond_currents_differ_at_leading_order: expected D observed D ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T192331Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

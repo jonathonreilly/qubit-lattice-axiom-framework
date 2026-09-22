@@ -1,0 +1,52 @@
+{
+  "kind": "same_session_early_affected_fix_confirmation",
+  "manifest": "drain8161-author-prepared-v2.json",
+  "manifest_sha256": "cdb4e1ad2a7d59fef2beb12af58ce6375738bbe07c87ce7bcd7386e46081fb0f",
+  "scope": "Read complete v1-to-v2 patch; verified all59current file hashes against preparedv2; AST definition-before-load and file presence independently checked without executing or importing runner.",
+  "verdict": "Early defects addressed; no formal cold or landing PASS.",
+  "finding_dispositions": {
+    "undefined_affine_input": "fixed including block02 import interaction",
+    "infrared_per_site": "honestly not executed, finite momentum/quadrature only",
+    "coupled_context": "empty upstream dependencies and own-note-only inputs match independently supplied model proof; verify actual citation graph remains empty at final gate",
+    "stale_gauss_prose": "canonical program and historical context wording fixed",
+    "negative_scope": "honest fiveOPENroutes retained; no claim of closed-route no-go certificate"
+  },
+  "pending": "Final current-base staged cold, actual helper/input graph including transitively read supporting diagnostic, current evidence, N5/negative gate outcome and exact preservation checks.",
+  "static_checks": [
+    {
+      "runner": "scripts/rotor_gauss_affine_theta_check_2026_09_16.py",
+      "inputs": [
+        "docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/ROTOR_FIXED_COUPLING_GAUSS_CHARACTERISTIC_IDENTITY_SUPPORTING_PROOF_2026-09-16.md"
+      ]
+    },
+    {
+      "runner": "scripts/rotor_gauss_charged_ring_compression_2026_09_16.py",
+      "inputs": [
+        "docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+      ]
+    },
+    {
+      "runner": "scripts/rotor_transverse_reference_vertex_check_2026_09_16.py",
+      "inputs": [
+        "docs/ROTOR_ORTHOGONAL_TRANSVERSE_REFERENCE_CURRENT_VERTEX_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "scripts/rotor_gauss_affine_theta_check_2026_09_16.py"
+      ]
+    },
+    {
+      "runner": "scripts/rotor_reference_infrared_norm_check_2026_09_16.py",
+      "inputs": [
+        "docs/ROTOR_REFERENCE_VERTEX_INFRARED_WEIGHTED_NORMS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/ROTOR_ORTHOGONAL_TRANSVERSE_REFERENCE_CURRENT_VERTEX_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+      ]
+    },
+    {
+      "runner": "scripts/rotor_coupled_vacuum_resolvent_check_2026_09_16.py",
+      "inputs": [
+        "docs/ROTOR_COUPLED_FREE_VACUUM_RESOLVENT_DENSITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+      ]
+    }
+  ]
+}

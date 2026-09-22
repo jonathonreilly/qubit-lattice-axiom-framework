@@ -1,0 +1,66 @@
+{
+  "reviewer_session": "/root/review_8160",
+  "recommendation": "PASS for affected local adapter correction; no scientific verdict inferred",
+  "authority_main": "0ea56ccd19205c66ccfb664fb391ed4de39fa415",
+  "files": [
+    {
+      "path": "/private/tmp/review-drain-20260915/prepare_drain_candidate_v3.py",
+      "sha256": "f0a33ca8c3ebac4ade400a00a89ca3b34b692dcb908f1b8d1c5e1ed57e7ef59d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/enroll_drain_receipt_v2.py",
+      "sha256": "e1f2490d87ea57520833d4ddd33349f23799b64c0feb8146be509a85c6fac88b"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-integration-phase-v3.sh",
+      "sha256": "2b823b6b592373b0348ead777a2583c7e8faf0cb560b45c5b3ada5509a45a481"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/finish_candidate_proofs_v2.py",
+      "sha256": "731da57e8c5d7c7b4805167af92fc20b1710ef9b86b5629b2405abc4cf705814"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/supporting-proof-adapter-review-v1.json",
+      "sha256": "e924078307fc6fd3cae92d03ac160f6c29d2326f3f0a887a4609b654adea5ccc"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/supporting-proof-adapter-negative-fixture-v2.json",
+      "sha256": "e34aef20dadc580ee132466edc4649ee6afb12d9f8d8111bc29a82bec5680fd4"
+    }
+  ],
+  "finding_dispositions": [
+    {
+      "id": "supporting-classification",
+      "original_report": "supporting-proof-adapter-review-v1.json",
+      "status": "resolved",
+      "reason": "Before any nonempty schema2 supporting-proof skip, prepare-v3 now requires a hash-bound successful cache-checked preflight with exact record SHA, source tree, supporting-proof list and current checker SHA. The actual current review_receipt checker was inspected: it rejects autonomous claim/runner metadata, missing canonical-owner citation, missing declared runtime input and duplicate classification. Enrollment now explicitly saves the bound preflight filename. Existing runtime/source/reviewer binding checks remain."
+    }
+  ],
+  "affected_review": [
+    "Complete v2-to-v3 prepare diff",
+    "Complete enrollment v1-to-v2 diff with full enrollment context",
+    "Phase-v2-to-v3 dispatch-only diff",
+    "Current-main review_receipt supporting-proof validation and emitted preflight schema; output supporting_proofs exactly matches the input record list",
+    "finish-v2 unchanged; prior graph-parent filter conclusion reused"
+  ],
+  "checks": {
+    "python_ast_parse": "passed",
+    "extracted_new_guard_valid_fixture": "accepted",
+    "extracted_new_guard_negative_cases": [
+      "invalid mechanical status rejected",
+      "cache_checked false rejected",
+      "schema1 rejected",
+      "changed record SHA rejected",
+      "changed tree rejected",
+      "changed supporting list rejected",
+      "changed checker SHA rejected"
+    ],
+    "negative_fixture": "supporting-proof-adapter-negative-fixture-v2.json"
+  },
+  "limits": [
+    "Synthetic guard fixture is not an execution of enrollment, integration or the real receipt checker",
+    "No primary runner, cache capture, pipeline, audit, git mutation or GitHub mutation",
+    "Coordinator remains responsible for authentic reviewed preflight provenance and final scientific acceptance; hashes alone are not fabricated review authority"
+  ],
+  "PR8160": "Original science recommendation unchanged; final candidate confirmation still pending"
+}

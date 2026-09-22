@@ -1,0 +1,13 @@
+{
+  "scope": "Extracted exact new guard only; synthetic preflight and source identity fixture, not review checker execution",
+  "valid_case": "accepted",
+  "individually_corrupted_cases": {
+    "mechanical_status": "rejected",
+    "cache_checked": "rejected",
+    "record_schema_version": "rejected",
+    "record_sha256": "rejected",
+    "tree": "rejected",
+    "supporting_proofs": "rejected",
+    "checker_sha256": "rejected"
+  }
+}

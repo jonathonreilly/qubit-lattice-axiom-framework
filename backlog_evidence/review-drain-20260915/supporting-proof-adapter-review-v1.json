@@ -1,0 +1,64 @@
+{
+  "reviewer_session": "/root/review_8160",
+  "scope": "Exact local orchestration adapter diffs and complete surrounding prepare/finish/phase scripts; no science rereview.",
+  "files": [
+    {
+      "path": "/private/tmp/review-drain-20260915/prepare_supporting_proof_adapters.py",
+      "sha256": "6dc6479e0043fdeebfdbc5e130b812a9604ef8b284e2361b324edcc48f9fbb16"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/prepare_drain_candidate.py",
+      "sha256": "0a7b743f40c7718049f0f7ba2b92967e9164278d4c93b3f97c53068cd12e53b4"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/prepare_drain_candidate_v2.py",
+      "sha256": "99168a601db7425ced70394b8e9c518e9301659449f03e42be523c6bbe1f4a1a"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/finish_candidate_proofs.py",
+      "sha256": "5b48ea48bd30fb7e0ce04533c34e3400ad801fbf0008e64cf6b20832fccec384"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/finish_candidate_proofs_v2.py",
+      "sha256": "731da57e8c5d7c7b4805167af92fc20b1710ef9b86b5629b2405abc4cf705814"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-integration-phase.sh",
+      "sha256": "fac462ef04b411a0a6ff8fec1edbc8395dbb60309dd70c43d905b4b02d88d1a5"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-integration-phase-v2.sh",
+      "sha256": "7de147a1326b14e2f86d074ce5d8bae60a97e041b793d419feff35f2d93383b0"
+    }
+  ],
+  "recommendation": "NEEDS NARROW HARDENING before treating prepare-v2 as a standalone proof-classification gate; finish-v2 change acceptable",
+  "findings": [
+    {
+      "id": "supporting-classification",
+      "severity": "P2",
+      "path": "prepare_drain_candidate_v2.py",
+      "lines": "22-37,60-63",
+      "issue": "New supporting-proof skip validates source/runtime/review hashes but does not validate the schema2 ownership contract or require the exact canonical record successful preflight. It can skip an autonomous note with Type, claim_id or primary runner if a malformed record lists it as a supporting proof. It also does not itself check direct owner citation and declared runner input. These are required by UNIT_RECEIPT, and immutable hashes establish identity rather than validity.",
+      "concrete_scenario": "A unit lists docs/OWNER.md and docs/CHILD.md as sources, with CHILD runtime hash matching its source hash and an exact bound reviewer report. Its schema2 supporting_proofs lists CHILD owned by OWNER, but CHILD also declares Type: bounded_theorem and a primary runner. Every added assertion passes and CHILD bypasses the normal Type/primary/helper checks. A proper exact-record preflight rejects this duplicate classification. Later pipeline may reject counts, but the new cheap gate does not establish its claimed classification before expensive work.",
+      "narrow_fix": "Require a successful actual review_receipt preflight whose input_record SHA binds this exact record and whose source tree/base matches the candidate, or perform equivalent actual-API identity, owner-link and declared-input validation before the skip. If the coordinator already enforces and hashes that exact receipt outside these scripts, bind/name that prerequisite explicitly and this concern is discharged."
+    }
+  ],
+  "accepted_changes": [
+    "finish-v2 checks exact unit/reviewer/source/input/owner bindings for all supporting proofs before recording them",
+    "Only supporting proofs also explicitly listed in owner.repository_dependencies enter owned_proofs and the graph-parent exemption set; that acceptance condition is unchanged",
+    "phase-v2 switches only the prepare script; no pipeline, lint, evidence or trap behavior changed",
+    "generator creates new versioned local files rather than overwriting original train scripts; replacement anchors use assertions for core changes"
+  ],
+  "actual_checks": [
+    "Read all four new files and original counterparts; inspected exact diffs",
+    "Parsed every reviewed Python file with ast.parse successfully"
+  ],
+  "not_run": [
+    "No prepare/finish script execution, no cherry-pick, cache capture, pipeline, primary runner, audit or GitHub mutation"
+  ],
+  "limitations": [
+    "Report covers local adapter changes, not a complete security audit of existing orchestration",
+    "Original scripts rely on coordinator-provided immutable review records; this review does not infer scientific PASS from those records",
+    "PR8160 original scientific recommendation remains unchanged; final candidate confirmation pending"
+  ]
+}

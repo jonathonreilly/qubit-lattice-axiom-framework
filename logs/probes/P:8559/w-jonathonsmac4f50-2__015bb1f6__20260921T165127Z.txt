@@ -1,0 +1,12 @@
+PR #8559: ail49: the attraction is tied to growth — a body in balance draws no wind; pull follows net uptake; growth rate fixed by the force coefficient
+branch physics-loop/admissibility-induced-law-block49-the-attraction-is-tied-to-growth-20260921 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_the_attraction_is_tied_to_growth_a_body_in_balance_draws_no_wind_pull_proportional_to_net_uptake_2026_09_21.py: rc=0 PASS=14 FAIL=0
+   mutation flux_counts_gross_capture: expected B observed B ok
+   mutation emission_uniform_over_faces: expected C observed C ok
+   mutation balance_rate_without_capture_weight: expected C observed C ok
+   mutation residual_coefficient_wrong: expected C observed C ok
+   mutation reaction_equals_action: expected D observed D ok
+   mutation growth_relation_without_blocking: expected D observed D ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

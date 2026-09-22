@@ -1,0 +1,66 @@
+[
+  {
+    "original_path": ".claude/science/physics-loops/full-domain-projective-corridor-20260915/CONFORMANCE.md",
+    "original_sha256": "bc3a883bddc938bf8461eb392184bf7b7ed706198ecfe6f01be40fa702558b12",
+    "original_mode": "100644",
+    "original_blob": "61a8b03c9924e666dbaba90e2a0747ad017a5924",
+    "stored": "docs/work_history/review_loop/pr8143/PR8143_CONFORMANCE.md",
+    "head": "6327004eaaecd83fffca5e2362db6a042a0707a5"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/full-domain-projective-corridor-20260915/HANDOFF.md",
+    "original_sha256": "ce6f843aba6aa9b164e468231372a4692be8847c3e86fd113a6a2f22522a10a3",
+    "original_mode": "100644",
+    "original_blob": "864e45767080987c92d4de84895f1f48dacf0538",
+    "stored": "docs/work_history/review_loop/pr8143/PR8143_HANDOFF.md",
+    "head": "6327004eaaecd83fffca5e2362db6a042a0707a5"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/full-domain-projective-corridor-20260915/MUTATION_CHECKS.json",
+    "original_sha256": "e1d55bc72b5fe551b66bac48d4938655c1c9da4f2cfccca9d06c95485f4ff17d",
+    "original_mode": "100644",
+    "original_blob": "31cf481909fc4e93c3e998e48334cbef14ac2be7",
+    "stored": "docs/work_history/review_loop/pr8143/PR8143_MUTATION_CHECKS.json",
+    "head": "6327004eaaecd83fffca5e2362db6a042a0707a5"
+  },
+  {
+    "original_path": ".claude/science/physics-loops/full-domain-projective-corridor-20260915/VALIDATION.json",
+    "original_sha256": "06ba9e10faae08a8105e86d8aaf5eb4fa6c5648942e88f13af715c55f12627ff",
+    "original_mode": "100644",
+    "original_blob": "fda0e4cad190ebeb7e6907d4a9b2280d0dd57758",
+    "stored": "docs/work_history/review_loop/pr8143/PR8143_VALIDATION.json",
+    "head": "6327004eaaecd83fffca5e2362db6a042a0707a5"
+  },
+  {
+    "original_path": "docs/FULL_DOMAIN_MATRIX_KERNEL_AND_AUTONOMOUS_PROJECTIVE_RECORD_CORRIDOR_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "original_sha256": "115b92ad094f26c1cdb3fa51978b66831091729f0a5ac49d88ebbf51093a4afe",
+    "original_mode": "100644",
+    "original_blob": "2a3d4926ec6c346ceda49d6795e5e377c498ee46",
+    "stored": "docs/FULL_DOMAIN_MATRIX_KERNEL_AND_AUTONOMOUS_PROJECTIVE_RECORD_CORRIDOR_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "head": "6327004eaaecd83fffca5e2362db6a042a0707a5"
+  },
+  {
+    "original_path": "docs/audit/data/citation_graph_manifest.json",
+    "original_sha256": "16410de6e063e3f07ff50b3a17576e384481807aec7cf56e20199f1b5d433841",
+    "original_mode": "100644",
+    "original_blob": "ba4cfd96a4961f4f95b9594ceb6973ee2383f000",
+    "stored": null,
+    "head": "6327004eaaecd83fffca5e2362db6a042a0707a5"
+  },
+  {
+    "original_path": "logs/runner-cache/full_domain_matrix_kernel_and_autonomous_projective_record_corridor_2026_09_15.txt",
+    "original_sha256": "442134138a4739d18763527e48f0fdec384d634aae4495215a2c379a586a9377",
+    "original_mode": "100644",
+    "original_blob": "ab7a47e2f8c8a0a13b3dc7a0bc428e92eef2f92a",
+    "stored": "logs/runner-cache/full_domain_matrix_kernel_and_autonomous_projective_record_corridor_2026_09_15.txt",
+    "head": "6327004eaaecd83fffca5e2362db6a042a0707a5"
+  },
+  {
+    "original_path": "scripts/full_domain_matrix_kernel_and_autonomous_projective_record_corridor_2026_09_15.py",
+    "original_sha256": "1d3f2984d6fda561bf02c575c1aa0233d4155213709012341d1a5e7d9d4e6233",
+    "original_mode": "100644",
+    "original_blob": "8f8d99260dbc885fce3fca071fff8551a3c9b5fe",
+    "stored": "scripts/full_domain_matrix_kernel_and_autonomous_projective_record_corridor_2026_09_15.py",
+    "head": "6327004eaaecd83fffca5e2362db6a042a0707a5"
+  }
+]

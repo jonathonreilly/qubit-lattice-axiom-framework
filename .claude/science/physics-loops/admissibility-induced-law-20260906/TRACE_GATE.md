@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+## Block 84 (2026-09-22)
+```yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: "block 83 corrigendum: whether block 59's bond rates alternate spontaneously; decision record row 48"
+source_of_blocker_text: handoff
+reachability_to_target: advances
+artifact_role: theorem
+next_trace_action: "closed-form balance: alternation below kappa = alpha + 2 beta < chi/12; rest energy sqrt3 beta |delta*| for all eight species under the sea reading; next: the crowd's balance; 3D wall sheets; constraints on alpha + 2 beta"
+```

@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_bond_rates_alternate_on_their_own_below_a_threshold_stiffness_sea_against_bond_law_one_rest_energy_2026_09_22.py
+runner_sha256: e6601364d336e9235e6806a16bc054318234fafeaa7bbaa2931f25f83794dc7e
+input_fingerprint_sha256: ad068643d92f4d7bbb64dda1b9c58345e1e6ba90f37b9753da67668133ca0fa6
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 2.08
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_BOND_RATES_ALTERNATE_ON_THEIR_OWN_BELOW_A_THRESHOLD_STIFFNESS_THE_SEA_AGAINST_BLOCK_59S_BOND_LAW_GIVES_EVERY_SPECIES_ONE_REST_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-22.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: with independent alternations delta_1, delta_2, delta_3 of the bond rates along the three axes, the 16-dimensional block obeys H^2 = beta^2 sum_j (sin^2 k_j + delta_j^2 cos^2 k_j) exactly (the three pair operators commute, the coins anticommute): every one of the sixteen energies at a reduced wave vector is +-sqrt of that, so the sea's energy per site is exactly minus the zone average of sqrt(sum sin^2 k_j + sum delta_j^2 cos^2 k_j)
+PASS: B2 T1: at delta = 1 on every axis the energy is sqrt(3) at every wave vector (sin^2 + cos^2 = 1 per axis): the sea's energy per site is exactly -sqrt(3), the lattice having fallen into disconnected 2x2x2 cubes with flat bands
+PASS: C1 T2: at k = pi e_1 block 59's matrix is diag(-4 alpha - 8 beta, [[-8 beta - 4 gamma, 4 beta], [4 beta, -8 beta - 4 gamma]]): the alternation of the bonds along their own axis is an eigenvector with the restoring coefficient 4 alpha + 8 beta, decoupled from the bonds of the other axes and independent of the parallel coupling gamma
+PASS: C2 T2: at long wavelength the same law gives the scalar stiffness alpha + 2 beta + 2 gamma (block 59 T3): the alternation's stiffness 2(alpha + 2 beta) per bond and the long-range stiffness are two different combinations of the three numbers, and gamma separates them
+PASS: C3 T2: the three alternations taken simultaneously are three different wave vectors pi e_j (one per axis) and do not mix at quadratic order; a single chessboard wave vector (pi, pi, pi) for all three bond fields is a different pattern, with coefficient 4 alpha + 8 beta + 8 gamma
+PASS: D1 T3: with the sea's second-order coefficient chi = <sum_j cos^2 k_j / sqrt(sum_j sin^2 k_j)> over the zone and block 59's alternation stiffness, the second-order total per site is (6 kappa - chi/2) delta^2 with kappa = alpha + 2 beta: the uniform bond-rate field is a local minimum iff kappa >= chi/12, and unstable to alternation below it
+PASS: D2 T3: the single-axis coefficient is chi/3 (the cubic rotations permute the axes and preserve the zone average), its cost 2 kappa delta^2: the threshold for one axis alone is the same kappa = chi/12, and at second order the three axes are independent (T2)
+PASS: D3 T3: pointwise in the zone, -sqrt(s^2 + delta^2 c^2) is even in delta with second derivative -s^2 c^2/(s^2 + delta^2 c^2)^(3/2) <= 0: the sea's energy is concave and even (block 83 T3), so below the threshold the minimum lies at a delta* > 0 that the balance fixes, and at kappa = 0 it runs to delta = 1
+PASS: E1 T4: block 82 D2's corner energies +-4a -+ sqrt(4a^2 + 3 beta^2 delta^2) vanish exactly at delta = 2a/beta: with the axioms' scalar hop timed by the same bond rates, the alternation's rest energy at the corners survives only for delta > 2a/beta (the least |E| over the zone is executed in the control)
+PASS: E2 T5: on the ring of 12 with the bond-rate alternation reversed on half the ring (two walls), the walk has exactly 4 zero modes (two per wall, one per coin state), and 0 without walls: a wall between the two alternation phases binds exact zero modes, the lattice form of block 79's wall modes for this background
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - block 59's 3x3 law at three wave vectors, entry by entry; the 16-dimensional block's square with three independent alternations
+per_site: executed - the alternation's cost per bond and per site from the law's eigenvalue; the ring of 12 bond by bond
+per_mode: executed - the zone average at delta = 1 exactly; the single-axis and three-axis integrands; control: chi on grids to 96^3, delta* against kappa, least |E| with the scalar hop
+per_block: executed - the second-order balance and its threshold symbolically; the corner crossing; the exact nullities with and without walls
+lattice_wide: T1 by identity for every wave vector; T2 by block 59's law at every wave vector; T3 at second order for every kappa, chi an executed number; T4 by identity; T5 on the ring of 12 (two walls); the bond rates, the bond law's three numbers, the sea reading and the balance as a minimisation are not derived
+PASS: G1 the five N5 resolution lines are printed
+scope: bond rates that alternate on their own - under block 59's bond rates the sea's energy per site is exactly minus the zone average of sqrt(sum sin^2 + sum delta_j^2 cos^2), concave and even; block 59's law charges 2(alpha + 2 beta) delta^2 per bond for the alternation (gamma-free, axes decoupled); the uniform field is a local minimum iff alpha + 2 beta >= chi/12 (chi about 1.54, executed) and alternates below it, giving all eight species one rest energy sqrt(3) beta |delta*|; the scalar hop through the same bonds crosses zero at delta = 2a/beta; walls between phases bind exact zero modes; nothing adopted
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

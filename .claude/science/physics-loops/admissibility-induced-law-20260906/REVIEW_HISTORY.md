@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-22 block 84 — author checks (not a review PASS)
+Written lens pass by the supervisor. Independent-`δ_j` identity re-derived before use; block 59's matrix evaluated symbolically; threshold derived; `χ`'s convergence shown; the size of the rest energy declared underived; sea and minimisation named as comparator premises. Census 7/7 in family.

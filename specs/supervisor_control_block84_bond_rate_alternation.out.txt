@@ -1,0 +1,26 @@
+W1: chi and chi_1 on midpoint grids; threshold kappa_c = chi/12
+  L=16: chi = 1.52588, chi_1 = 0.50863 (chi/3 = 0.50863); kappa_c = chi/12 = 0.12716
+  L=32: chi = 1.53525, chi_1 = 0.51175 (chi/3 = 0.51175); kappa_c = chi/12 = 0.12794
+  L=64: chi = 1.53751, chi_1 = 0.51250 (chi/3 = 0.51250); kappa_c = chi/12 = 0.12813
+  L=96: chi = 1.53793, chi_1 = 0.51264 (chi/3 = 0.51264); kappa_c = chi/12 = 0.12816
+  L=128: chi = 1.53808, chi_1 = 0.51269 (chi/3 = 0.51269); kappa_c = chi/12 = 0.12817
+W2: E(delta) per site and the balance E(delta) + 6 kappa delta^2 (kappa = alpha + 2 beta)
+  E(delta): 0: -1.19380, 0.1: -1.20138, 0.2: -1.22329, 0.4: -1.30349, 0.7: -1.49128, 1: -1.73205
+  second-difference estimate of -E''(0): 0.7686 (chi = 1.5381); E(1) - E(0) = -0.53825
+  runaway: delta* = 1 whenever 6 kappa < -(E(1) - E(0)), i.e. kappa < 0.08971
+  kappa = 0.200: delta* = 0.0000, rest energy sqrt3 delta* = 0.0000, gain per site 0.00000
+  kappa = 0.130: delta* = 0.0000, rest energy sqrt3 delta* = 0.0000, gain per site 0.00000
+  kappa = 0.128: delta* = 0.0163, rest energy sqrt3 delta* = 0.0281, gain per site -0.00000
+  kappa = 0.125: delta* = 0.0978, rest energy sqrt3 delta* = 0.1693, gain per site -0.00008
+  kappa = 0.120: delta* = 0.1835, rest energy sqrt3 delta* = 0.3178, gain per site -0.00071
+  kappa = 0.110: delta* = 0.3315, rest energy sqrt3 delta* = 0.5742, gain per site -0.00482
+  kappa = 0.100: delta* = 0.4798, rest energy sqrt3 delta* = 0.8310, gain per site -0.01477
+  kappa = 0.095: delta* = 0.5585, rest energy sqrt3 delta* = 0.9674, gain per site -0.02286
+  kappa = 0.090: delta* = 0.6420, rest energy sqrt3 delta* = 1.1120, gain per site -0.03367
+  kappa = 0.085: delta* = 0.7313, rest energy sqrt3 delta* = 1.2666, gain per site -0.04781
+  kappa = 0.060: delta* = 1.0000, rest energy sqrt3 delta* = 1.7321, gain per site -0.17825
+  kappa = 0.000: delta* = 1.0000, rest energy sqrt3 delta* = 1.7321, gain per site -0.53825
+W3: least |E| over the zone (grid 20^3) with the scalar hop timed by the same bond rates; corner crossing at delta = 2a
+  a=0.05 (2a = 0.1): delta=0.05: 0.0082; delta=0.1: 0.0000; delta=0.15: 0.0690; delta=0.2: 0.1537; delta=0.3: 0.3250; delta=0.5: 0.6700; delta=0.7: 1.0158
+  a=0.1 (2a = 0.2): delta=0.05: 0.0044; delta=0.1: 0.0001; delta=0.15: 0.0004; delta=0.2: 0.0000; delta=0.3: 0.1258; delta=0.5: 0.4737; delta=0.7: 0.8217
+  a=0.25 (2a = 0.5): delta=0.05: 0.0004; delta=0.1: 0.0023; delta=0.15: 0.0020; delta=0.2: 0.0011; delta=0.3: 0.0036; delta=0.5: 0.0000; delta=0.7: 0.2772

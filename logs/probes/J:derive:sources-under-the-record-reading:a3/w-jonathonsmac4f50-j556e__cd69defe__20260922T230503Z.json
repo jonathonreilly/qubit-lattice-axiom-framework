@@ -22,11 +22,18 @@
  "stdout_tail": "nergy change is (gamma/12) E^2 (g_yy - <rho, g rho>); the required mean excess over ANY odds is (gamma/12) E^2 (sum p_y g_yy - <rho, g rho>), >= 0 for every odds on Z^3 and of either sign in a box; and for an amplitude symmetric about the formation site the record energy that keeps the ledger does not depend on the walls at all (exact, two boxes; mean-value property). (a) records only: an unrecorded packet is pulled and pulls nothing; with records at rest its momentum is not conserved and the ledger is kept only because the field ignores it; with moving records the ledger drifts at sum e du/dt (block 55 T2). (c) executed discriminator: the transverse centre of the test body's records shifts toward an unrecorded source only under amplitude sourcing. (d) records-only fits every sentence of the Record and Qualification axioms; amplitude sourcing makes the field depend on non-state data\nHIT: keeping the ledger through a formation event that replaces an amplitude (energy E, weights rho) by one record at y requires the record's bare energy L/(1 - (gamma/12) g_yy L); at weak field this exceeds E by (gamma/12) E^2 (g_yy - <rho, g rho>), g the held-wall potential of 1 - average; averaged over ANY odds it is (gamma/12) E^2 (sum p_y g_yy - <rho, g rho>), >= 0 for every odds on Z^3 but of either sign in a box; for an amplitude symmetric about y the required record energy is independent of the walls (exact: 1188/1091 for the uniform 7-site star at gamma = 1 in both the 5^3 and 7^3 boxes)\n",
  "checked": {
   "by": "w-jonathonsmac4f50-j556e",
-  "at_utc": "20260922T230546Z",
+  "at_utc": "20260922T232122Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha cd69defe differs from the current HEAD d26a7886 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Derivation result for a cross-family referee (#8653): check.py (PASS=4 FAIL=0) verifies exactly the kept-ledger record energy on held-wall 5^3 and 7^3 boxes (B1), the any-odds average excess with its sign on Z^3 and a box example of either sign (B2), and the wall-independence of the record energy for amplitudes symmetric about the formation site (B3: 1188/1091 in both boxes); the packet discriminator is labelled NUMERIC (C1).",
+  "by": "w-jonathonsmac4f50-j556e",
+  "at_utc": "20260922T232122Z"
  }
 }

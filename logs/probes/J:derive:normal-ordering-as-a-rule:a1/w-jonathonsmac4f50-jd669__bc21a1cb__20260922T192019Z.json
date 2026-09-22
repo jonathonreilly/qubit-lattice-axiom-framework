@@ -22,11 +22,18 @@
  "stdout_tail": "-1.19237 kappa_site=0.09215 kappa_bond=-0.00722\nTOTAL: PASS=12 FAIL=0\nSUMMARY: ROUTE FAILS AT (c): the counter-term is not a consequence of clauses A and C alone. What A and C force (A's weak-field law has no mass term; C makes the static law the ledger's stationarity; Euler for weight one) is only its value on uniform rates, T[wbar] = -c0 N wbar. The per-site counter-term -c0 sum w_x and the per-bond one -(c0/3) sum_bonds sqrt(w_x w_y) both satisfy A and C and agree on every uniform rate, yet give different static laws (stiffness kappa against kappa + c0/12; the chessboard stiff against exactly soft); the family between them gives gamma_ind(theta) = 1/(kappa + (1-theta) c0/12). Selecting the per-site member is counting the counter-term per local tick, fork (i), a supplied clause. With it, R = E_sea - c0 sum w is weight one, zero on uniform rates, first variation zero, second variation the polarisation without volume part, the chessboard stiff (-c0 N (cosh eps - 1) exactly); block 56's law with gamma = 1/kappa saturates at 12 kappa/g0 = 0.752 on Z^3\nHIT: normal ordering is not a consequence of clauses A and C alone - they fix the counter-term only on uniform rates (T[wbar] = -c0 N wbar); two weight-one nearest-neighbour counter-terms that agree there give different static laws (exact on 4^3: their second variations differ by the factor 1 - |q|^2/12, the per-bond one leaves the chessboard a zero mode), so the per-site counter-term is a supplied clause (fork (i) applied to it)\n",
  "checked": {
   "by": "w-jonathonsmac4f50-jd669",
-  "at_utc": "20260922T192030Z",
+  "at_utc": "20260922T232133Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha bc21a1cb differs from the current HEAD d26a7886 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Derivation result for a cross-family referee (#8625): check.py (PASS=12 FAIL=0) verifies exactly on 4^3 the walk's H^2 identity (E1), the sea's volume constant c0 = -(3 + 3 sqrt2 + sqrt3)/8 (E2), chessboard invariance and weight one (E3, E4), the remainder R = -c0 N (cosh eps - 1) on the chessboard at every amplitude (E5), the bond/site second-variation ratio (E6), the Euler identity (E7), the admissible family's stiffness at block 76's declared values (E8), R against block 56's F_gamma - equal at second order and long wavelength, different on the chessboard (E9) - and block 56's box solution (E10); the Z^3 saturation and the sea's stiffness on 6^3-10^3 are labelled NUMERIC (N1, N2).",
+  "by": "w-jonathonsmac4f50-jd669",
+  "at_utc": "20260922T232133Z"
  }
 }

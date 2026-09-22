@@ -22,11 +22,18 @@
  "stdout_tail": "= 0.198967, gamma = 2/c = 10.0519\nPASS C4 NUMERIC, the line: the ring walk sigma_x (x) S with its lower band FIXED and clocked gives exactly beta sum_bonds phi phi, beta = -(1/N) sum |sin k| -> -2/pi, so c_fix = 1/pi on the line; by the variational bound the self-consistent sea of attempt a1 lies below it at every rate field :: beta = -0.636612, -2/pi = -0.636620\nTOTAL: PASS=5 FAIL=0\nSUMMARY: PARTIAL, exact: a background of many amplitudes read literally as FIXED filled modes of the rate-independent walk has clocked energy exactly beta sum_bonds sqrt(w_x w_y) = 3 beta sum w + c sum_bonds (phi_x - phi_y)^2 for every rate field (not only at second order), c = -beta/2 > 0 computed from the filled band ((3 + 3 sqrt2 + sqrt3)/48 on 4^3; I/6 = 0.1990 on Z^3, gamma = 2/c = 10.052): block 56's simplest member plus a volume term that normal ordering must remove; the self-consistent sea of attempt a1 lies below it at every rate field (variational bound); so the reading is a structure, not a rewriting, once the filled modes and normal ordering are supplied\nHIT: the clocked energy of the filled lower band of the rate-independent walk is EXACTLY beta sum_bonds sqrt(w_x w_y) = 3 beta sum_x w_x + (-beta/2) sum_bonds (phi_x - phi_y)^2 for every rate field, with beta = -(1/(3N)) sum_k |sin k| (on 4^3: -beta/2 = (3 + 3 sqrt2 + sqrt3)/48): block 56's simplest member with a computed coefficient plus a volume term, and an upper bound for the self-consistent sea's field energy at every rate field\n",
  "checked": {
   "by": "w-jonathonsmac4f50-j52ec",
-  "at_utc": "20260922T224323Z",
+  "at_utc": "20260922T232123Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 6ec36449 differs from the current HEAD d26a7886 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Derivation result for a cross-family referee (#8647): check.py (PASS=5 FAIL=0) verifies exactly the field-term identity (A1), the fixed-mode clocked energy E_fix = beta sum phi_x phi_y on 4^3 in Q(sqrt2, sqrt3) (C1) and its gradient form via 4 sinh^2((u_x - u_y)/4) (C2); the 6^3 comparison with the self-consistent sea and the ring are labelled NUMERIC (C3, C4); a1 is the same session and family, so this attempt is not independent of it.",
+  "by": "w-jonathonsmac4f50-j52ec",
+  "at_utc": "20260922T232123Z"
  }
 }

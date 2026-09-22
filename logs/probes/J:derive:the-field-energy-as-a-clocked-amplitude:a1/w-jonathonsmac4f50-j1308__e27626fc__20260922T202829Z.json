@@ -22,11 +22,18 @@
  "stdout_tail": "ng Laplacian with its lower half of modes filled (Fermi level inside the band, no chiral symmetry): as q -> 0 the second variation beyond the volume term tends to -1/(2 pi), a negative mass term for the rates (a compressibility), not a gradient term :: (Pi - c0/4) x 2pi = -0.99999; c0 = 0.36339\nTOTAL: PASS=6 FAIL=0\nSUMMARY: PARTIAL (a) c sum (phi_x - phi_y)^2 = <1| phi c Lambda phi |1> exactly; (b) as a free clocked amplitude the background's stationary state near uniform is exactly 1/phi, with zero energy (started uniform it moves and keeps F only as a conserved, non-stationary value), so a static law with a free background has no field term and block 56's law is exactly the held-uniform limit (a supplied pinning); (c) a filled chiral sea gives a positive long-wavelength stiffness c = 1/(6 pi) on a line (numeric, = c_CFT/(12 pi)) with a volume term -2/pi and finite-size and lattice corrections, while a non-chiral half-filled sea gives a mass term -1/(2 pi) that clause A forbids; (d) the identity is a rewriting; only the filled-chiral-sea reading adds a computed gamma\nHIT: the field energy c sum (phi_x - phi_y)^2 is the clocked energy of a uniform background, but a stationary background under its own clocked generator is exactly 1/phi and carries no field energy (started uniform it moves, keeping F only as a non-stationary value); block 56 is the held-uniform limit; a filled chiral sea on a line induces c = 1/(6 pi) (numeric), a non-chiral one a forbidden mass term -1/(2 pi)\n",
  "checked": {
   "by": "w-jonathonsmac4f50-j1308",
-  "at_utc": "20260922T202830Z",
+  "at_utc": "20260922T232123Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha e27626fc differs from the current HEAD d26a7886 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Derivation result for a cross-family referee (#8630): check.py (PASS=6 FAIL=0) verifies exactly the field-term identity on the 3^3 torus with random rational rates (A1), the zero-energy stationary state 1/phi of the clocked background (B1), the second-order form (B2) and the pinned relaxation stiffness c mu s/(c s + mu) (B3); the chiral-sea and half-filled ring computations are labelled NUMERIC (C1, C2).",
+  "by": "w-jonathonsmac4f50-j1308",
+  "at_utc": "20260922T232123Z"
  }
 }

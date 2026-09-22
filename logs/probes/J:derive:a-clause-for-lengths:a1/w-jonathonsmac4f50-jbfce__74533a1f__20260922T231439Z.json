@@ -22,11 +22,18 @@
  "stdout_tail": "e-derived)\nPASS C1 (c) EXECUTED, NOT CLAIMED (NUMERIC): a walker with no rest energy moving along y across a uniform rate gradient along x (40 x 64 slab): the transverse displacement at t = 40 under l = wbar/w over that under locked lengths, near 2 (the ray value) - the test that separates a = b from b = 1; the slow-body side needs an on-site rest energy, which block 54's walk does not have :: displacements 1.9798 (locked) and 3.8293 (l = wbar/w), ratio 1.934\nTOTAL: PASS=5 FAIL=0\nSUMMARY: PARTIAL, exact: for E^2 = a^2 m^2 + c^2 sum sin^2 k (c = a b) every ray obeys dv_j/dt = -c^2 cos(2k_j)[a^2 m^2 d_j log a + c^2 S d_j log c]/E^2 + 2 v_j (v . grad log c): an energy-weighted mixture of the site rate's gradient (rest share) and the hop rate's (kinetic share); slow bodies fall at -c^2 grad log a, massless rays bend at -c^2 grad log c, ratio 1 + dlog b/dlog a; scale covariance makes any bond rate built from site rates depend on their ratio only, so the factor 2 needs lengths tied to the depth of the rate through a law (block 59 T5(b)) or a reference rate; executed bending ratio near 2\nHIT: on the lattice the two-function family E^2 = a(x)^2 m^2 + c(x)^2 sum sin^2 k_j has the exact ray law dv_j/dt = -c^2 cos(2k_j) [a^2 m^2 d_j log a + c^2 S d_j log c]/E^2 + 2 v_j (v . grad log c), whose limits are the fall -c^2 grad log a and the transverse bending -c^2 grad log c (ratio dlog c/dlog a), and a scale-covariant bond rate built from the site rates cannot make that ratio differ from 1\n",
  "checked": {
   "by": "w-jonathonsmac4f50-jbfce",
-  "at_utc": "20260922T231442Z",
+  "at_utc": "20260922T232121Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 74533a1f differs from the current HEAD d26a7886 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Derivation result for a cross-family referee (#8656): check.py (PASS=5 FAIL=0) verifies symbolically the general lattice ray law for E^2 = a^2 m^2 + c^2 sum sin^2 k (A1), exactly at 36 Pythagorean wave vectors with three rest energies (A2), its two limits with ratios 1 and 2 (A3), and the scale-covariance form of an algebraic bond rate (B1); the slab execution (C1, ratio 1.934) is labelled NUMERIC; block 59 (same family, later, unrefereed) already holds the limits and T5(a).",
+  "by": "w-jonathonsmac4f50-jbfce",
+  "at_utc": "20260922T232121Z"
  }
 }

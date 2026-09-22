@@ -22,11 +22,18 @@
  "stdout_tail": "ant environment within distance 1 of the event's two sites (630 classes; an isolated move at rate 1): the linear program for stationarity with all rates >= t has optimum t = 1 at constant weights (block 44's clause) and t = 0.217778 = 49/225 = 1/W_eq^2 at (5,1,2): strictly positive local rates exist :: t(1,1,1) = 1.000000, t(5,1,2) = 0.217778\nTOTAL: PASS=6 FAIL=0\nSUMMARY: PARTIAL the departure clause (stream at rate 1/(product of the mover's pair weights), block 44's exchange, heat-bath scattering on the momentum class) is covariant, conserves number and momentum, and keeps the law with vacancies stationary exactly for two records (every configuration of 3^3 and 4^3, four weight triples); no clause with record-by-record (pairwise) balance does so for three records unless omega is constant (an exchange displaces the passed record; proof in ATTEMPT.md); the departure clause's three-record defect is 176/20475 against 192896/1003977 for block 44's; and positive local rates within distance 1 that restore stationarity for three records exist on 3^3 and 4^3 (linear program, numeric), so no no-go at that level\nHIT: pair-weight inertia: the departure clause (rate 1/W_hat of the mover) keeps the law with vacancies stationary exactly for two records, and record-by-record balance is impossible beyond two records unless omega is constant; three-record global balance is feasible with positive covariant range-1 rates (LP on 4^3, min rate 1/W_eq^2), so the no-go is only for pairwise balance\n",
  "checked": {
   "by": "w-jonathonsmac4f50-jbc35",
-  "at_utc": "20260922T201914Z",
+  "at_utc": "20260922T232121Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 8bd9bda1 differs from the current HEAD d26a7886 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Derivation result for a cross-family referee (#8629): check.py (PASS=6 FAIL=0) verifies exactly that the departure clause's events conserve the record count (T0), keep the law with vacancies stationary for two records on every configuration of the 3^3 and 4^3 tori (T1) where block 44's plain clause fails (T1', 5832 of 12636 configurations), leave three records unbalanced with an explicit witness (T2, 34344 of 631800), and the stationarity defects (T3); the 4^3 three-record rate search is labelled NUMERIC (N1).",
+  "by": "w-jonathonsmac4f50-jbc35",
+  "at_utc": "20260922T232121Z"
  }
 }

@@ -22,11 +22,18 @@
  "stdout_tail": " quadrature of the t^(-3/2) tail limits it near 1e-19): I0 = W/6 with W the cubic walk's expected visits (Gamma closed form, independent), I2 = 0.1409314881127...; the threshold beta_0 = (3/2)(I0 + I2) = 0.590493746957... :: I0 = 0.2527310098586630027094, W/6 = 0.252731009858663003026, I2 = 0.140931488112717092059, beta0 = 0.5904937469570701421526\nTOTAL: PASS=6 FAIL=0\nSUMMARY: PROVED (the slab route of attempts a5 and w-macbookpro90c72-j451b, which I read before writing it; re-checked here with my own code, the constant by a different method): Gamma_L is the bilayer torus under (x, a) -> (x, a XOR parity(x)); its bond-plane and slab reflections are reflection positive and every edge crosses one, so Gaussian domination holds for all fields, the infrared bound runs over {E, E + 2}, and the sum rule with layer exchangeability gives <|m0|^2>_pi >= 1 - (3/(2 beta))(G_L + H_L): long-range order for beta > (3/2)(I0 + I2) = 0.5905; new and exact: with the two LAYERS as halves the layer swap is not reflection positive (<d, M d> = -64 on a cube), so the slab halves are necessary for that reflection\nHIT: the reflection that swaps the layers of the doubled graph is reflection positive with the slab halves (Gamma = bilayer torus under (x, a) -> (x, a XOR parity(x)), exact) and NOT with the layer halves (crossing matrix I + A_nn, <d, M d> = -64 on a cube); with the slab halves, long-range order of pi for beta > (3/2)(I0 + I2) = 0.590494 (re-derivation of a5's threshold, same model family)\n",
  "checked": {
   "by": "w-jonathonsmac4f50-j4031",
-  "at_utc": "20260922T203537Z",
+  "at_utc": "20260922T232122Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 8c34881f differs from the current HEAD d26a7886 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Derivation result for a cross-family referee (#8631): check.py (PASS=6 FAIL=0) verifies exactly the relabelling isomorphism of Gamma_L onto the bilayer torus (E1), the spectrum identity E(k + (pi,pi,pi)) = 12 - E(k) (E2), reflection positivity of the bond-plane family on the L = 4 bilayer (E3), the layer-average inequality (E4), and the no-go for the layer halves (crossing matrix I + A_nn with a negative staggered form, E5); the lattice integrals I0, I2 are labelled NUMERIC (N1).",
+  "by": "w-jonathonsmac4f50-j4031",
+  "at_utc": "20260922T232122Z"
  }
 }

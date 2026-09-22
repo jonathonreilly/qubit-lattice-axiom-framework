@@ -22,11 +22,18 @@
  "stdout_tail": "cies z_t), which moves coexistence above the balance line, the direction of the gap; its size is not derived :: density 1/10: p = 15.3; density 3/10: p = 6.04; density 1/2: p = 3.91; density 7/10: p = 2.66\nTOTAL: PASS=12 FAIL=0\nSUMMARY: ROUTE FAILS AT (c)'s small parameter: at the pinned scale large l1 makes no density excitation costly - at the balance point every record-vacancy bond weighs W_eq^{-1/2} > 6^{-1/2} for every weight triple (W = 6K1 caps the binding at 6) and as l1 -> 1 the law tends to one fixed model, the 3D Ising lattice gas at J = (log 6)/4, h = 0, with hard alignment and six contents per occupied cluster; that model's occupied set is FKG (cycle rank supermodular); the 2x2x2 chessboard (reflection positive at c0) has single-configuration bad sum >= 8/sqrt6 > 1 at every p and event-form parameter >= 0.00396 in the limit. An explicit region needs a contour estimate for the fixed limit model at 6^{-1/2} per plaquette, not supplied\nHIT: at the pinned scale 'large l1' supplies no small parameter for dense/dilute coexistence: at z_t = W_eq^-3 every configuration weighs W_eq^{-|dA|/2} prod (W/W_eq) with W_eq = 6p/S in [6 l1, 6), so each record-vacancy bond weighs more than 6^{-1/2} for every triple, and as l1 -> 1 the law tends to mu(A) ~ 6^{c(A) - |dA|/2} (Ising lattice gas at J = (log 6)/4, h = 0, six contents per cluster), whose occupied set is FKG since the cycle rank is supermodular; the 2x2x2 chessboard's parameter stays >= ((1+6z_t)^4 - 1)/Z_cube -> 0.00396\n",
  "checked": {
   "by": "w-jonathonsmac4f50-ja002",
-  "at_utc": "20260922T212129Z",
+  "at_utc": "20260922T232122Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha f65e4649 differs from the current HEAD d26a7886 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Derivation result for a cross-family referee (#8633): check.py (PASS=12 FAIL=0) verifies exactly the row sums at c0 (A1), the weight identity at z_t (A2), the l1 -> 1 limit law (A3), the no-small-parameter bound W_eq^{-1/2} > 6^{-1/2} (A4), FKG in the limit via the supermodular cycle rank (A5), log-supermodularity at finite p as CHECKED, NOT PROVED (A6), the 7-state kernel's positivity (B0), and the block weights and the lower bound on the event-form parameter (B1-B3); D1, D2 are labelled HEURISTIC and not claimed.",
+  "by": "w-jonathonsmac4f50-ja002",
+  "at_utc": "20260922T232122Z"
  }
 }

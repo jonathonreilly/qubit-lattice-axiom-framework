@@ -22,11 +22,18 @@
  "stdout_tail": "h e on the site and the centred difference of u on the same site; the relative mismatch is (cos k_j - 1) = -k_j^2/2 + ..., and -2 for a species reflected along j\nTOTAL: PASS=5 FAIL=0\nSUMMARY: PARTIAL, exact on the lattice: (a) d(pi_j)/dt + div J[phi psi] = -f_j for every state (block 66 T3 re-derived), and at first order in the rate gradient f_j = e (centred d_j u) cos k_j exactly for plane waves; (b) a ledger F = sum_x w_x D_x(curls) stays divergence-free for EVERY rate field, so with the strains' equations it demands div J[phi psi] = 0 and has no static solution for a content with f != 0 - on the lattice it forbids the fall; and no ledger that sees the content only through e and J with content-independent coefficients reproduces cos k_j; (c) the fall is owed by the ledger only at leading order in the wave number (continuum, block 66 T2/T4: e on the site, centred du), with relative mismatch cos k_j - 1; at the lattice level it is an independent clause\nHIT: on the lattice, the ledger F = sum_x w_x D_x(plaquette curls) satisfies sum_a back_a dF/dB_a^j = 0 for every rate field, so the static equations force div J[phi psi] = 0 and admit no content with a nonzero force density - it forbids the fall; the clocked walk's force at first order in the rate gradient is exactly e (centred d_j u) cos k_j, which no ledger seeing the content through e and J with content-independent coefficients reproduces; agreement with block 66's requirement holds at leading order in the wave number only\n",
  "checked": {
   "by": "w-jonathonsmac4f50-j5024",
-  "at_utc": "20260922T223510Z",
+  "at_utc": "20260922T232123Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha b3313d5d differs from the current HEAD d26a7886 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Derivation result for a cross-family referee (#8644): check.py (PASS=5 FAIL=0) verifies exactly the content law d(pi_j)/dt + div J = -f_j for every state (A1, block 66 T3 re-derived), the first-order force on all 24 energy-1 plane waves of 4^3 (A2), the lattice identity with rates for curl functionals (B1), that no content-blind ledger owes the lattice fall (B2), and the leading-order agreement in the wave number (C1).",
+  "by": "w-jonathonsmac4f50-j5024",
+  "at_utc": "20260922T232123Z"
  }
 }

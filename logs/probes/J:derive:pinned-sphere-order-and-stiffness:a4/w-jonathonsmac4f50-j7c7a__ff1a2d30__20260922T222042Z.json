@@ -22,11 +22,18 @@
  "stdout_tail": " this normalisation of E) and long-range order would follow for beta' rho > 3 G(0) (G(0) <= sqrt3 pi/8, block 19); by B1 the only strength at c0 is beta' = 0, so this route gives no bound at the pinned scale :: S(k) = ['591367366403/439056344017', '129801931205/439056344017', '77831376023/439056344017', '129801931205/439056344017']\nTOTAL: PASS=6 FAIL=0\nSUMMARY: ROUTE FAILS AT (b): (a) holds exactly on the floor (the kernel [[1,1],[1, c e^{beta s.s'}]] is PSD iff c >= c0), but at c0 no rotation-symmetric embedding of the empty state admits a twist of any strength beta' > 0 (the remainder is PSD iff c >= e^{beta' h^2} c0(beta - beta')), and the full-beta infrared bound that (b)-(c) would deliver is FALSE at c0 for both menus: 4 beta S(pi) > 2.12 on the 4-ring for the two-valued menu (exact) and > 1.977 for the sphere menu at beta = 8, z = 1 (rigorous rational bounds); the literal record-bond twist is not reflection-dominated across shifts and would not bound the structure factor; so (c)-(e) get no constants from this route at the pinned scale\nHIT: at the pinned scale c0 = beta/sinh beta the Gaussian-domination route to long-range order fails for the sphere menu with vacancies: on the 4-ring at beta = 8, z = 1, k = pi, 4 beta <|sigma^(k)|^2> > 1.9779 > 1 (rigorous: exact rational Bessel coefficients, rational bounds on coth 8, explicit tail), and no embedding of the empty state at (0, h) admits a twist of strength beta' > 0 (needs c >= e^(beta' h^2) c0(beta - beta') > c0(beta))\n",
  "checked": {
   "by": "w-jonathonsmac4f50-j7c7a",
-  "at_utc": "20260922T222045Z",
+  "at_utc": "20260922T232122Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha ff1a2d30 differs from the current HEAD d26a7886 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Derivation result for a cross-family referee (#8640): check.py (PASS=6 FAIL=0) verifies exactly the one-site kernel's positivity threshold c0 (A1), the no-go for the rotation-symmetric embedding family (B1) with an exact two-valued 4-ring witness at e^beta = 20 (B2), a rigorous sphere-menu witness at beta = 8 with rational interval bounds (B3), the literal reading's crossing-kernel failure (B4), and the sum rule (C1).",
+  "by": "w-jonathonsmac4f50-j7c7a",
+  "at_utc": "20260922T232122Z"
  }
 }

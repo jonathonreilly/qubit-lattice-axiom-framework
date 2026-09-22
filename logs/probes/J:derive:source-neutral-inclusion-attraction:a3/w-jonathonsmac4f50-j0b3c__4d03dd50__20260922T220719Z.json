@@ -22,11 +22,18 @@
  "stdout_tail": "its interaction matrix consists of second differences of G (r^-3 each, r^-6 in F); a shift-invariant linear term has zero sum (no charge), so its cross term h_x^T G h_y starts at the dipole order r^-3; a one-over-r term needs sum h != 0\nTOTAL: PASS=8 FAIL=0\nSUMMARY: PARTIAL, exact: two inclusions interact by F(x,y) = (1/2) log det(I - eps_x eps_y A_x M_xy A_y M_yx) (6 x 6, second differences of G between the bonds; the four-determinant ratio checked on 4^3); F is negative for like signs and positive for unlike signs at EVERY order (vacancy limit included), with second-order term -(eps_x eps_y/2) sum M_xy^2 (the task's 1/4 is 1/2); on Z^3 F ~ -(3/(16 pi^2)) eps_x eps_y alpha_x alpha_y / r^6, alpha = 2/(1 + eps (G(0) - G(2e_1))) (-3 eps^2/(4 pi^2 r^6) at second order; -0.12171/r^6 for vacancies); two vacancies against two held tilts: 6.0e-5, 1.1e-6, 3.1e-8 at r = 5, 10, 20; no rotation-invariant inclusion of the quadratic model has a charge, so none gives a one-over-r attraction\nHIT: in the quadratic tilt model two stiffness inclusions interact EXACTLY by F = (1/2) log det(I - eps_x eps_y A_x M_xy A_y M_yx) with M_xy the 6 x 6 second differences of G between their bonds and A = (I + eps M_00)^-1; exp(2F) lies in (0,1) for like signs and above 1 for unlike signs at every order (Schur complement), and F r^6 -> -(3/(16 pi^2)) eps_x eps_y alpha_x alpha_y with alpha = 2/(1 + eps (G(0) - G(2e_1))) on Z^3; shift-invariant inclusions carry no charge, so no one-over-r attraction arises\n",
  "checked": {
   "by": "w-jonathonsmac4f50-j0b3c",
-  "at_utc": "20260922T220832Z",
+  "at_utc": "20260922T232122Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 4d03dd50 differs from the current HEAD d26a7886 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Derivation result for a cross-family referee (#8639): check.py (PASS=8 FAIL=0) verifies exactly the torus Green function (E0), the determinant formula and its 6x6 reduction for disjoint bond sets (A1, A2), the eps^2 series on 8^3 (B1), attraction at every order for like signs including the vacancy limit (B2), the r^-6 constant 3/(8 pi^2 r^6) (B3) and the zero row sums of shift-invariant inclusions (D1); the Z^3 comparison with held tilts is labelled NUMERIC (C1).",
+  "by": "w-jonathonsmac4f50-j0b3c",
+  "at_utc": "20260922T232122Z"
  }
 }

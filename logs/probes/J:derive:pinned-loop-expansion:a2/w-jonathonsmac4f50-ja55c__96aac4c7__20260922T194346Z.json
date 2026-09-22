@@ -22,11 +22,18 @@
  "stdout_tail": "a positive semidefinite rule) the proved region lambda rho0^{1/3} <= 0.00291 reaches only densities below 1e-5, far from the executed onsets (densities 0.1-0.7 at p = 6-16) :: p=3: l1=1/6, l2=0, rho0 <= 5.32e-06; p=6: l1=1/3, l2=1/5, rho0 <= 6.65e-07; p=8: l1=7/17, l2=5/17, rho0 <= 3.53e-07; p=12: l1=11/21, l2=3/7, rho0 <= 1.71e-07; p=16: l1=3/5, l2=13/25, rho0 <= 1.14e-07\nTOTAL: PASS=13 FAIL=0\nSUMMARY: PARTIAL (a) exact: at the pinned scale the occupied set's law is (6z)^|A| times Phi(A) = sum over leafless edge sets of prod over components of the transfer weight E[prod over strands (6K_1^L - 1)]; cycles give 3 l1^n + 2 l2^n, theta graphs 6 (l1 l1 l2 terms) + 2 l2^{a+b+c} with fusion weights F_VVE = 6, F_EEE = 2; (b) the grand partition function is (1+6z)^N times a polymer gas of leafless edge sets with activities w rho0^|V|, density rho0 + 12 (1-rho0) (3 l1^4 + 2 l2^4) rho0^4 + ..., and a convergence (no-clumping) region lambda <= 0.00246 for all z or lambda rho0^(1/3) <= 0.00291 (Kotecky-Preiss assumed); (c) not attempted beyond the p -> infinity limit; (d) the proved region is far from the executed onsets\nHIT: at c0 the occupied-set law is exactly Bernoulli(6z/(1+6z)) decorated by a gas of leafless edge sets with weights computed from K_1's eigenvalues: w(cycle) = 3 l1^n + 2 l2^n, w(theta_{abc}) = 6(l1^{a+b} l2^c + l1^{a+c} l2^b + l1^{b+c} l2^a) + 2 l2^{a+b+c}, general components by strand transfer 6K_1^L - 1 contracted at branch vertices; |w| <= 5^{strands} lambda^{|E|}\n",
  "checked": {
   "by": "w-jonathonsmac4f50-ja55c",
-  "at_utc": "20260922T194431Z",
+  "at_utc": "20260922T232122Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 96aac4c7 differs from the current HEAD d26a7886 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Derivation result for a cross-family referee (#8627): check.py (PASS=13 FAIL=0) verifies exactly the spectrum of K (A1), the vanishing of edge sets with a leaf (A2), the eigenfunction and theta-graph weights (A3, A3'), the general leafless-gas rule (A4), the identity in z on the cube window with the density and covariance expansions (B1-B3), the strand and counting bounds (B4, B5), the Kotecky-Preiss arithmetic with the criterion ASSUMED (B6), the p -> infinity limit (C0) and the proved region's reach on (p,1,2) (D1).",
+  "by": "w-jonathonsmac4f50-ja55c",
+  "at_utc": "20260922T232122Z"
  }
 }

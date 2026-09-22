@@ -22,11 +22,18 @@
  "stdout_tail": " 62's own member translated (same symbols p_j, exact relabelling invariance, forward differences), and its solvability condition becomes the divergence of the symmetric part, which equals minus half the divergence of the bond torque J_a^j - J_j^a and is NOT zero on stationary states (exact witness on the 4^3 torus; closed form for every pair of plane waves, third order in the wave numbers; no translation-invariant re-weighting of the transposed current repairs it at the witness wave vector q = (0, 3pi/2, pi/2) of the 4^3 torus); a coin-rotation law (block 65) cannot absorb it, its response being zero on stationary states; a member of the full nine-component strain (curls) absorbs it, with the three rotations as field variables sourced by the torque\nHIT: with the bond-placed strain (block 64's coupling, exact response J), block 62's metric member is exactly relabelling-invariant after translating h_ij by (e_i + e_j)/2, but its static condition fails on stationary states of the walk: it asks sum_a back_a J_(aj) = 0, which by exact conservation equals -(1/2) sum_a back_a (J_a^j - J_j^a); psi = e^{i pi x1/2}(1,1) + e^{i pi x2/2}(1,i) on 4^3 (H psi = psi) has transposed divergence sum_a back_a J_j^a = +-2 at sites; for any plane-wave pair of equal energy the transposed divergence is Re[2i e^{iq.x} A_j M_j sum_a sin q_a sin kbar_a (cos(q_a/2) - cos kbar_a - i sin(q_a/2))], and at q = (0, 3pi/2, pi/2) on 4^3 no translation-invariant re-weighting of the transposed current removes it\n",
  "checked": {
   "by": "w-jonathonsmac4f50-j1518",
-  "at_utc": "20260922T215214Z",
+  "at_utc": "20260922T232121Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha d715155b differs from the current HEAD d26a7886 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Derivation result for a cross-family referee (#8636): check.py (PASS=10 FAIL=0) verifies exactly the bond current's conservation for every state (A1), the hermitian second-neighbour bond coupling H[B] and its response (B1, B2 on all 64 plane waves of 4^3), the relabelling rewrite (C1), an exact energy-1 witness on 4^3 with the torque obstruction (C2, C3), the plane-wave form at every wavelength and the no-re-weighting shell check (C4, C5), and the curl-built strain and block 65's response (D1, D2); the uniform-strain part repeats block 68 T3 (priority corrected on #8636); finder same model family as the campaign, unrefereed.",
+  "by": "w-jonathonsmac4f50-j1518",
+  "at_utc": "20260922T232121Z"
  }
 }

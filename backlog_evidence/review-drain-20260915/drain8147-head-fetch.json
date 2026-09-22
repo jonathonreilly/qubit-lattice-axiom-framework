@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "9c364d1d6f7527e89fc47bffbe672440c5fa50bb",
+  "fetched_ref": "refs/review-loop/fetched/8147-22a6e32d0f5140138633317f9937f19a",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block13-causal-gaussian-two-point-heat-kernel-20260915",
+    "headRefOid": "9c364d1d6f7527e89fc47bffbe672440c5fa50bb",
+    "isDraft": false,
+    "number": 8147,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

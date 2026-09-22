@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checks": 79,
+  "elapsed_sec": 0.03507179202279076,
+  "scope": [
+    "direct3Dreturn-walk recurrence vs multinomial identity through12steps",
+    "exact coincidence/harmonic/geometric bounds through30",
+    "parent conditional sign",
+    "exact aligned Born sphere moments: Ez=3/5,Ex\u00b2=4/15, not formal tangentGaussian2/3"
+  ],
+  "primary_imported_or_executed": false
+}

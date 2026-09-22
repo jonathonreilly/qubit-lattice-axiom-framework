@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8147",
+  "tree": "57666e1bffb1a240597fa6b6e080955f7b3f4064",
+  "cache_checked": false,
+  "notes": [
+    {
+      "path": "docs/ADMISSIBILITY_RULE_DIRECTED_GAUSSIAN_PROPAGATOR_OVERLAP_COVARIANCE_GAIN_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "admissibility_rule_directed_gaussian_propagator_overlap_covariance_gain_bounds_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/admissibility_rule_causal_gaussian_formation_law_record_two_point_function_heat_kernel_2026_09_15.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_INSTANCE_FORMATION_PRECISION_LDL_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8761,
+      "misses": 4439
+    },
+    "packet_imports": {
+      "hits": 8751,
+      "misses": 4437
+    },
+    "declared_inputs": {
+      "hits": 8786,
+      "misses": 4570
+    }
+  },
+  "record_sha256": "deaf1524b132908121c6a5885f6d6fcbe99b19b219a5e97785d6119b70d70f9c",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

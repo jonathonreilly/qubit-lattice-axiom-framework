@@ -1,0 +1,258 @@
+{
+  "schema_version": 2,
+  "unit_id": "PR8147",
+  "constituents": [
+    {
+      "id": "PR8147",
+      "head": "9c364d1d6f7527e89fc47bffbe672440c5fa50bb",
+      "delta_base": "5aca149c42debb7b0adaa2e9d1a374af4c5d4b78",
+      "dispositions": {
+        "path": "/private/tmp/review-drain-20260915/drain8147-author-source-handoff.json",
+        "sha256": "ec545af8ce0be5438ccf1003baeb2989beb47658425236092e379ac45d926c66",
+        "json_pointer": "/original_dispositions"
+      }
+    }
+  ],
+  "source": {
+    "base": "a07e161a1ef35e56edab00a351b541a928c49e1d",
+    "commit": "a07e161a1ef35e56edab00a351b541a928c49e1d",
+    "tree": "57666e1bffb1a240597fa6b6e080955f7b3f4064",
+    "paths": [
+      {
+        "path": "docs/ADMISSIBILITY_RULE_DIRECTED_GAUSSIAN_PROPAGATOR_OVERLAP_COVARIANCE_GAIN_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "c26ce9fdeb4c5fb8e27ec5ce0c20f18b0b8d4cd3a64c04af4caec5f07f2c0e71"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8147/8147_ADMISSIBILITY_RULE_CAUSAL_GAUSSIAN_FORMATION_LAW_RECORD_TWO_POINT_FUNCTION_HEAT_KERNEL_NOT_LATTICE_GREEN_FUNCTION_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz",
+        "sha256": "ad98f9f01a5574045c05d790a196e28b4c7e1f5c9edeefd8ce0bb56a85da923e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8147/8147_APPROACH_REGISTRY.md.gz",
+        "sha256": "da7b86ab0ae9650d31c7a3e14478bc480a85104e441c1afe5da0d6aface7b5b4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8147/8147_ASSUMPTIONS_AND_IMPORTS.md.gz",
+        "sha256": "948780ac7b2df2bbcc5ab2b20684e5b4480c89bd391811c504df6eb9ac3c51b4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8147/8147_CHECKER_block13_findings.md.gz",
+        "sha256": "64f6be5e63200f7322752cafc7c30fd4bda285b899d0c0918e113ec5c96a6f58"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8147/8147_CLAIM_STATUS_CERTIFICATE_block13.md.gz",
+        "sha256": "6bac91d0da7da15205f00c9829b4bf6596b5ee54165916f7b4e7ee6861142a75"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8147/8147_GOAL_block13.md.gz",
+        "sha256": "d7c2306c39a6250a5d2d3b7ddd17f086b6038850ff5dadc9bdee93ca854ae0bc"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8147/8147_HANDOFF.md.gz",
+        "sha256": "6f35a2ca1e14880e8d220bbdf3ad55eb9ed18595d11555ab22ebc3a1094f654f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8147/8147_LITERATURE_BRIDGES.md.gz",
+        "sha256": "c69d79613f1f10d9074901438cefc2a12b4df6b40e27549249d5f041225ea578"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8147/8147_NO_GO_LEDGER.md.gz",
+        "sha256": "10581ccfe6e2d4e2ddb76aa9e7f741c7d990269c1af17b6fa132675de367e02a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8147/8147_OPPORTUNITY_QUEUE.md.gz",
+        "sha256": "212e426fbd8457828c8daed87099594367b47fb7c546addb870223fdf42b855a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8147/8147_RESULTS_block13.md.gz",
+        "sha256": "a70eee8daf462435a4a5cd8ad2688936ec17befcedb43cdb6b54b0493b827ef9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8147/8147_REVIEW_HISTORY.md.gz",
+        "sha256": "144c1aeee989fa19820c294d693d194bbf615ba1e6e0aff93090194f3ee10735"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8147/8147_ROUTE_PORTFOLIO.md.gz",
+        "sha256": "eda60c78c19fe1c685cecb45481d73fb048faa1faab181f957d26c352ed32dc6"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8147/8147_STATE.yaml.gz",
+        "sha256": "67e95e07d7829d1ee2ee878f3a7b230ae71741e440ddf1f9ecb59a8e0554ca8d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8147/8147_TRACE_GATE.md.gz",
+        "sha256": "f3e42faa8d1db7f0547c3fa1f3c73d7ccb7b7667075dbacf1cebe893717eac70"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8147/8147_admissibility_rule_causal_gaussian_formation_law_record_two_point_function_heat_kernel_2026_09_15.py.gz",
+        "sha256": "90dfd6d2ff7bd7e5226ce85e5d13556f6496bc8d9366541a451a26e25b49b043"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8147/8147_admissibility_rule_causal_gaussian_formation_law_record_two_point_function_heat_kernel_2026_09_15.txt.gz",
+        "sha256": "b8061442a02ae6a1ac61d2a9b1dcb6f5bc2ce29c940e5d16aae30661e1d112a7"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8147/8147_citation_graph_manifest.json.gz",
+        "sha256": "d6d1d587bac221f5ab698bfc49c86beb995d39bbf902ad08a4d8129dee3c5e5f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8147/8147_supervisor_control_block13_causal_gaussian.out.txt.gz",
+        "sha256": "2b3a3187fd3e2a6110bb27a5e64952e2008f201c94e7075a5fa3b437f2577efd"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8147/8147_supervisor_control_block13_causal_gaussian.py.gz",
+        "sha256": "682bca2e5396aa282a742d534165bbe88b5104b880cc9ed32192f50453255c87"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8147/8147_supervisor_control_block13_refuter.out.txt.gz",
+        "sha256": "acc687fdec9b6531ea90b22a5ba588b94d836fcd523f57a7da8c0ecbd315b338"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8147/8147_supervisor_control_block13_refuter.py.gz",
+        "sha256": "8e828da9aa34fff73b0f19a419b07c917d4e8d0b2591fdfcca8cf3d309919db4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8147/README.md",
+        "sha256": "ed444085e9590f726fe76f4278afda8d2cfac28e20386b8720fbad640432bc5a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8147/original-manifest.json",
+        "sha256": "9b16f2b2b49906b819fbccc6c64191dee5bf7a89a8254c56e75b9526560e29b8"
+      },
+      {
+        "path": "scripts/admissibility_rule_causal_gaussian_formation_law_record_two_point_function_heat_kernel_2026_09_15.py",
+        "sha256": "c0fdabf91594d3b23e2f297c1495cf5aa122c2b28fb335ea45a93985c609fd20"
+      }
+    ],
+    "deleted_paths": []
+  },
+  "inputs": {
+    "runtime": [
+      {
+        "path": "scripts/admissibility_rule_causal_gaussian_formation_law_record_two_point_function_heat_kernel_2026_09_15.py",
+        "sha256": "c0fdabf91594d3b23e2f297c1495cf5aa122c2b28fb335ea45a93985c609fd20"
+      }
+    ],
+    "helpers": [],
+    "parents": [
+      {
+        "path": "docs/ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_INSTANCE_FORMATION_PRECISION_LDL_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "d12e2a7bc0fad129f46de988e1e8b695fdc58047a8d6a24455796a6335e3880a"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/ADMISSIBILITY_RULE_DIRECTED_GAUSSIAN_PROPAGATOR_OVERLAP_COVARIANCE_GAIN_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "c26ce9fdeb4c5fb8e27ec5ce0c20f18b0b8d4cd3a64c04af4caec5f07f2c0e71"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_INSTANCE_FORMATION_PRECISION_LDL_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "d12e2a7bc0fad129f46de988e1e8b695fdc58047a8d6a24455796a6335e3880a"
+      },
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      },
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "reviewer": {
+    "session": "/root/review_8011 original scientific review; final confirmation pending",
+    "report": {
+      "path": "/private/tmp/review-drain-20260915/drain8147-original-review.json",
+      "sha256": "9a1e671cbd6604fbb8e099adac023979b73988e423178f8784de2af06cc0075c"
+    },
+    "references": [
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8147-author-source-handoff.json",
+        "sha256": "ec545af8ce0be5438ccf1003baeb2989beb47658425236092e379ac45d926c66"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8147-author-cache-api.json",
+        "sha256": "68602a4cbb4909fc31dded10c1d3e14ee910faae85eb3eabd47702db82d3a9e1"
+      }
+    ]
+  },
+  "notes": [
+    {
+      "path": "docs/ADMISSIBILITY_RULE_DIRECTED_GAUSSIAN_PROPAGATOR_OVERLAP_COVARIANCE_GAIN_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "admissibility_rule_directed_gaussian_propagator_overlap_covariance_gain_bounds_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "admissibility_rule_directed_gaussian_propagator_overlap_covariance_gain_bounds_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/admissibility_rule_causal_gaussian_formation_law_record_two_point_function_heat_kernel_2026_09_15.py",
+      "helpers": [],
+      "citations": [
+        "docs/ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_INSTANCE_FORMATION_PRECISION_LDL_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "repository_dependencies": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_INSTANCE_FORMATION_PRECISION_LDL_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+      ],
+      "dependency_rationale": "Axiom context does not supply the real Gaussian fixture or value translations. Actual finite Hermitian parent supplies conditional mean and triangular algebra only; literal +1/2 edge sign, complex carrier and finite 2D scope explicitly distinguished."
+    }
+  ],
+  "supporting_proofs": [],
+  "non_science_notes": [
+    {
+      "path": "docs/work_history/review_loop/pr8147/README.md",
+      "rationale": "Historical recovery instructions, no current scientific authority.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8147-original-review.json",
+        "sha256": "9a1e671cbd6604fbb8e099adac023979b73988e423178f8784de2af06cc0075c"
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "primary": "scripts/admissibility_rule_causal_gaussian_formation_law_record_two_point_function_heat_kernel_2026_09_15.py",
+  "primary_sha256": "68a29bbbb7648056382e0422006c2d2964c78177f8cded26741edbf6d1d04dcb",
+  "timeout": 180,
+  "declared_inputs": [
+    "docs/ADMISSIBILITY_RULE_DIRECTED_GAUSSIAN_PROPAGATOR_OVERLAP_COVARIANCE_GAIN_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_INSTANCE_FORMATION_PRECISION_LDL_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+  ],
+  "declared_input_fingerprint": "c62e7dea7bb8dc9a8a95c4f30845bce2a542012699d3329cd1682a7653ce8165",
+  "cache_status": "missing",
+  "helpers": []
+}

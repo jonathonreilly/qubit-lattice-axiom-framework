@@ -1,0 +1,461 @@
+{
+  "status": "COLD_SOURCE_PASS_POSITIVE_BOUNDED_CLAIMS_EXECUTION_PENDING",
+  "reviewer_session": "/root/review_8011",
+  "source_base": "a07e161a1ef35e56edab00a351b541a928c49e1d",
+  "source_tree": "74db177ad481ee33434c297031963b301bbd4bb9",
+  "source_paths": [
+    {
+      "path": "docs/ADMISSIBILITY_RULE_DIRECTED_GAUSSIAN_PROPAGATOR_OVERLAP_COVARIANCE_GAIN_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "fe867e5b4b5f0c9245ae80d9f5b02bbb16c0823647ee514bb7c22dc3adf96031"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8147/8147_ADMISSIBILITY_RULE_CAUSAL_GAUSSIAN_FORMATION_LAW_RECORD_TWO_POINT_FUNCTION_HEAT_KERNEL_NOT_LATTICE_GREEN_FUNCTION_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz",
+      "sha256": "ad98f9f01a5574045c05d790a196e28b4c7e1f5c9edeefd8ce0bb56a85da923e"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8147/8147_APPROACH_REGISTRY.md.gz",
+      "sha256": "da7b86ab0ae9650d31c7a3e14478bc480a85104e441c1afe5da0d6aface7b5b4"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8147/8147_ASSUMPTIONS_AND_IMPORTS.md.gz",
+      "sha256": "948780ac7b2df2bbcc5ab2b20684e5b4480c89bd391811c504df6eb9ac3c51b4"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8147/8147_CHECKER_block13_findings.md.gz",
+      "sha256": "64f6be5e63200f7322752cafc7c30fd4bda285b899d0c0918e113ec5c96a6f58"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8147/8147_CLAIM_STATUS_CERTIFICATE_block13.md.gz",
+      "sha256": "6bac91d0da7da15205f00c9829b4bf6596b5ee54165916f7b4e7ee6861142a75"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8147/8147_GOAL_block13.md.gz",
+      "sha256": "d7c2306c39a6250a5d2d3b7ddd17f086b6038850ff5dadc9bdee93ca854ae0bc"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8147/8147_HANDOFF.md.gz",
+      "sha256": "6f35a2ca1e14880e8d220bbdf3ad55eb9ed18595d11555ab22ebc3a1094f654f"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8147/8147_LITERATURE_BRIDGES.md.gz",
+      "sha256": "c69d79613f1f10d9074901438cefc2a12b4df6b40e27549249d5f041225ea578"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8147/8147_NO_GO_LEDGER.md.gz",
+      "sha256": "10581ccfe6e2d4e2ddb76aa9e7f741c7d990269c1af17b6fa132675de367e02a"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8147/8147_OPPORTUNITY_QUEUE.md.gz",
+      "sha256": "212e426fbd8457828c8daed87099594367b47fb7c546addb870223fdf42b855a"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8147/8147_RESULTS_block13.md.gz",
+      "sha256": "a70eee8daf462435a4a5cd8ad2688936ec17befcedb43cdb6b54b0493b827ef9"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8147/8147_REVIEW_HISTORY.md.gz",
+      "sha256": "144c1aeee989fa19820c294d693d194bbf615ba1e6e0aff93090194f3ee10735"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8147/8147_ROUTE_PORTFOLIO.md.gz",
+      "sha256": "eda60c78c19fe1c685cecb45481d73fb048faa1faab181f957d26c352ed32dc6"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8147/8147_STATE.yaml.gz",
+      "sha256": "67e95e07d7829d1ee2ee878f3a7b230ae71741e440ddf1f9ecb59a8e0554ca8d"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8147/8147_TRACE_GATE.md.gz",
+      "sha256": "f3e42faa8d1db7f0547c3fa1f3c73d7ccb7b7667075dbacf1cebe893717eac70"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8147/8147_admissibility_rule_causal_gaussian_formation_law_record_two_point_function_heat_kernel_2026_09_15.py.gz",
+      "sha256": "90dfd6d2ff7bd7e5226ce85e5d13556f6496bc8d9366541a451a26e25b49b043"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8147/8147_admissibility_rule_causal_gaussian_formation_law_record_two_point_function_heat_kernel_2026_09_15.txt.gz",
+      "sha256": "b8061442a02ae6a1ac61d2a9b1dcb6f5bc2ce29c940e5d16aae30661e1d112a7"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8147/8147_citation_graph_manifest.json.gz",
+      "sha256": "d6d1d587bac221f5ab698bfc49c86beb995d39bbf902ad08a4d8129dee3c5e5f"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8147/8147_supervisor_control_block13_causal_gaussian.out.txt.gz",
+      "sha256": "2b3a3187fd3e2a6110bb27a5e64952e2008f201c94e7075a5fa3b437f2577efd"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8147/8147_supervisor_control_block13_causal_gaussian.py.gz",
+      "sha256": "682bca2e5396aa282a742d534165bbe88b5104b880cc9ed32192f50453255c87"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8147/8147_supervisor_control_block13_refuter.out.txt.gz",
+      "sha256": "acc687fdec9b6531ea90b22a5ba588b94d836fcd523f57a7da8c0ecbd315b338"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8147/8147_supervisor_control_block13_refuter.py.gz",
+      "sha256": "8e828da9aa34fff73b0f19a419b07c917d4e8d0b2591fdfcca8cf3d309919db4"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8147/README.md",
+      "sha256": "ed444085e9590f726fe76f4278afda8d2cfac28e20386b8720fbad640432bc5a"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8147/original-manifest.json",
+      "sha256": "9b16f2b2b49906b819fbccc6c64191dee5bf7a89a8254c56e75b9526560e29b8"
+    },
+    {
+      "path": "scripts/admissibility_rule_causal_gaussian_formation_law_record_two_point_function_heat_kernel_2026_09_15.py",
+      "sha256": "68a29bbbb7648056382e0422006c2d2964c78177f8cded26741edbf6d1d04dcb"
+    }
+  ],
+  "original_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "original_sha256": "dd76591c2e01da9e73804fe0cc980e2a36cd912f0dbb78c94ec625e580ca337c",
+      "final_path": "docs/work_history/review_loop/pr8147/8147_APPROACH_REGISTRY.md.gz",
+      "final_sha256": "da7b86ab0ae9650d31c7a3e14478bc480a85104e441c1afe5da0d6aface7b5b4",
+      "disposition": "Complete original version preserved byte-exact in deterministic gzip. Live scientific note renamed/narrowed; broad original negative claims deferred, literal-parent and sphere identities corrected; original branch remains recovery handle.",
+      "recovery": "9c364d1d6f7527e89fc47bffbe672440c5fa50bb:.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md",
+      "original_sha256": "90e4c44bc63517db764a796d6386123caa9242a7881f3fbd2348fe18ca7502c3",
+      "final_path": "docs/work_history/review_loop/pr8147/8147_ASSUMPTIONS_AND_IMPORTS.md.gz",
+      "final_sha256": "948780ac7b2df2bbcc5ab2b20684e5b4480c89bd391811c504df6eb9ac3c51b4",
+      "disposition": "Complete original version preserved byte-exact in deterministic gzip. Live scientific note renamed/narrowed; broad original negative claims deferred, literal-parent and sphere identities corrected; original branch remains recovery handle.",
+      "recovery": "9c364d1d6f7527e89fc47bffbe672440c5fa50bb:.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block13_findings.md",
+      "original_sha256": "82806400e0f6f0c0c8e082b92e800108bb6cf52e037bdad67e92ed51c00502f3",
+      "final_path": "docs/work_history/review_loop/pr8147/8147_CHECKER_block13_findings.md.gz",
+      "final_sha256": "64f6be5e63200f7322752cafc7c30fd4bda285b899d0c0918e113ec5c96a6f58",
+      "disposition": "Complete original version preserved byte-exact in deterministic gzip. Live scientific note renamed/narrowed; broad original negative claims deferred, literal-parent and sphere identities corrected; original branch remains recovery handle.",
+      "recovery": "9c364d1d6f7527e89fc47bffbe672440c5fa50bb:.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block13_findings.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block13.md",
+      "original_sha256": "f755ceb56ada23148de6cdedb80136aa58dcf2d285f5356438e388237286951b",
+      "final_path": "docs/work_history/review_loop/pr8147/8147_CLAIM_STATUS_CERTIFICATE_block13.md.gz",
+      "final_sha256": "6bac91d0da7da15205f00c9829b4bf6596b5ee54165916f7b4e7ee6861142a75",
+      "disposition": "Complete original version preserved byte-exact in deterministic gzip. Live scientific note renamed/narrowed; broad original negative claims deferred, literal-parent and sphere identities corrected; original branch remains recovery handle.",
+      "recovery": "9c364d1d6f7527e89fc47bffbe672440c5fa50bb:.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block13.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block13.md",
+      "original_sha256": "c22ad1944b25fea8ee3b4182ca9afd6f4adb7a3c3df6da7f132589c039adc52f",
+      "final_path": "docs/work_history/review_loop/pr8147/8147_GOAL_block13.md.gz",
+      "final_sha256": "d7c2306c39a6250a5d2d3b7ddd17f086b6038850ff5dadc9bdee93ca854ae0bc",
+      "disposition": "Complete original version preserved byte-exact in deterministic gzip. Live scientific note renamed/narrowed; broad original negative claims deferred, literal-parent and sphere identities corrected; original branch remains recovery handle.",
+      "recovery": "9c364d1d6f7527e89fc47bffbe672440c5fa50bb:.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block13.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "original_sha256": "d9481b9fa7c7308199239e8fa7a298c1b07a7110241784c4df2695be5609b64d",
+      "final_path": "docs/work_history/review_loop/pr8147/8147_HANDOFF.md.gz",
+      "final_sha256": "6f35a2ca1e14880e8d220bbdf3ad55eb9ed18595d11555ab22ebc3a1094f654f",
+      "disposition": "Complete original version preserved byte-exact in deterministic gzip. Live scientific note renamed/narrowed; broad original negative claims deferred, literal-parent and sphere identities corrected; original branch remains recovery handle.",
+      "recovery": "9c364d1d6f7527e89fc47bffbe672440c5fa50bb:.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md",
+      "original_sha256": "7b9975d8cdaec6c697d86dc19179f52ae6748215b1ad1794eff56e193904d42f",
+      "final_path": "docs/work_history/review_loop/pr8147/8147_LITERATURE_BRIDGES.md.gz",
+      "final_sha256": "c69d79613f1f10d9074901438cefc2a12b4df6b40e27549249d5f041225ea578",
+      "disposition": "Complete original version preserved byte-exact in deterministic gzip. Live scientific note renamed/narrowed; broad original negative claims deferred, literal-parent and sphere identities corrected; original branch remains recovery handle.",
+      "recovery": "9c364d1d6f7527e89fc47bffbe672440c5fa50bb:.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+      "original_sha256": "ff198e433a248ac0d2505d109fd03bc60969b77536dbffd43b8bb92b40d0e028",
+      "final_path": "docs/work_history/review_loop/pr8147/8147_NO_GO_LEDGER.md.gz",
+      "final_sha256": "10581ccfe6e2d4e2ddb76aa9e7f741c7d990269c1af17b6fa132675de367e02a",
+      "disposition": "Complete original version preserved byte-exact in deterministic gzip. Live scientific note renamed/narrowed; broad original negative claims deferred, literal-parent and sphere identities corrected; original branch remains recovery handle.",
+      "recovery": "9c364d1d6f7527e89fc47bffbe672440c5fa50bb:.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "original_sha256": "635ae2f85fdcc76958ae6682091dfe2cfa29c57e85a564d4c58f2dd241cf7939",
+      "final_path": "docs/work_history/review_loop/pr8147/8147_OPPORTUNITY_QUEUE.md.gz",
+      "final_sha256": "212e426fbd8457828c8daed87099594367b47fb7c546addb870223fdf42b855a",
+      "disposition": "Complete original version preserved byte-exact in deterministic gzip. Live scientific note renamed/narrowed; broad original negative claims deferred, literal-parent and sphere identities corrected; original branch remains recovery handle.",
+      "recovery": "9c364d1d6f7527e89fc47bffbe672440c5fa50bb:.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block13.md",
+      "original_sha256": "13460418346ec5499b4d0de62fdf75eb2f62d92a3934b53867193638072dd646",
+      "final_path": "docs/work_history/review_loop/pr8147/8147_RESULTS_block13.md.gz",
+      "final_sha256": "a70eee8daf462435a4a5cd8ad2688936ec17befcedb43cdb6b54b0493b827ef9",
+      "disposition": "Complete original version preserved byte-exact in deterministic gzip. Live scientific note renamed/narrowed; broad original negative claims deferred, literal-parent and sphere identities corrected; original branch remains recovery handle.",
+      "recovery": "9c364d1d6f7527e89fc47bffbe672440c5fa50bb:.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block13.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "original_sha256": "21db9239a9a2924093e5cad86b1105af585555927acd690007b1b6fdc5becf0b",
+      "final_path": "docs/work_history/review_loop/pr8147/8147_REVIEW_HISTORY.md.gz",
+      "final_sha256": "144c1aeee989fa19820c294d693d194bbf615ba1e6e0aff93090194f3ee10735",
+      "disposition": "Complete original version preserved byte-exact in deterministic gzip. Live scientific note renamed/narrowed; broad original negative claims deferred, literal-parent and sphere identities corrected; original branch remains recovery handle.",
+      "recovery": "9c364d1d6f7527e89fc47bffbe672440c5fa50bb:.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md",
+      "original_sha256": "cd4ecb255972744762fd29a11f7687bc26097731172a037c013502c7bd72a2fe",
+      "final_path": "docs/work_history/review_loop/pr8147/8147_ROUTE_PORTFOLIO.md.gz",
+      "final_sha256": "eda60c78c19fe1c685cecb45481d73fb048faa1faab181f957d26c352ed32dc6",
+      "disposition": "Complete original version preserved byte-exact in deterministic gzip. Live scientific note renamed/narrowed; broad original negative claims deferred, literal-parent and sphere identities corrected; original branch remains recovery handle.",
+      "recovery": "9c364d1d6f7527e89fc47bffbe672440c5fa50bb:.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "original_sha256": "724d084c15f7a7354047257785188350f90a556411a74ad02fd389ee9bf6dea2",
+      "final_path": "docs/work_history/review_loop/pr8147/8147_STATE.yaml.gz",
+      "final_sha256": "67e95e07d7829d1ee2ee878f3a7b230ae71741e440ddf1f9ecb59a8e0554ca8d",
+      "disposition": "Complete original version preserved byte-exact in deterministic gzip. Live scientific note renamed/narrowed; broad original negative claims deferred, literal-parent and sphere identities corrected; original branch remains recovery handle.",
+      "recovery": "9c364d1d6f7527e89fc47bffbe672440c5fa50bb:.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "original_sha256": "92b03932e14bfac72d38c4cc1cbf1a7b5dbfdaf18c791124b79711cbab3d801a",
+      "final_path": "docs/work_history/review_loop/pr8147/8147_TRACE_GATE.md.gz",
+      "final_sha256": "f3e42faa8d1db7f0547c3fa1f3c73d7ccb7b7667075dbacf1cebe893717eac70",
+      "disposition": "Complete original version preserved byte-exact in deterministic gzip. Live scientific note renamed/narrowed; broad original negative claims deferred, literal-parent and sphere identities corrected; original branch remains recovery handle.",
+      "recovery": "9c364d1d6f7527e89fc47bffbe672440c5fa50bb:.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block13_causal_gaussian.out.txt",
+      "original_sha256": "3c40e64b9be7e5044d01bfb9d2df2b46eb26bad01a29da69e01314302c4010e6",
+      "final_path": "docs/work_history/review_loop/pr8147/8147_supervisor_control_block13_causal_gaussian.out.txt.gz",
+      "final_sha256": "2b3a3187fd3e2a6110bb27a5e64952e2008f201c94e7075a5fa3b437f2577efd",
+      "disposition": "Complete original version preserved byte-exact in deterministic gzip. Live scientific note renamed/narrowed; broad original negative claims deferred, literal-parent and sphere identities corrected; original branch remains recovery handle.",
+      "recovery": "9c364d1d6f7527e89fc47bffbe672440c5fa50bb:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block13_causal_gaussian.out.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block13_causal_gaussian.py",
+      "original_sha256": "932333abc710f0663524fe230256dd199c9525b321ac2ad694ef94298cf4efdc",
+      "final_path": "docs/work_history/review_loop/pr8147/8147_supervisor_control_block13_causal_gaussian.py.gz",
+      "final_sha256": "682bca2e5396aa282a742d534165bbe88b5104b880cc9ed32192f50453255c87",
+      "disposition": "Complete original version preserved byte-exact in deterministic gzip. Live scientific note renamed/narrowed; broad original negative claims deferred, literal-parent and sphere identities corrected; original branch remains recovery handle.",
+      "recovery": "9c364d1d6f7527e89fc47bffbe672440c5fa50bb:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block13_causal_gaussian.py"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block13_refuter.out.txt",
+      "original_sha256": "9b161162e5df22e7753f7ce0996424886634293db157034d2eacb1fbfb5c0f77",
+      "final_path": "docs/work_history/review_loop/pr8147/8147_supervisor_control_block13_refuter.out.txt.gz",
+      "final_sha256": "acc687fdec9b6531ea90b22a5ba588b94d836fcd523f57a7da8c0ecbd315b338",
+      "disposition": "Complete original version preserved byte-exact in deterministic gzip. Live scientific note renamed/narrowed; broad original negative claims deferred, literal-parent and sphere identities corrected; original branch remains recovery handle.",
+      "recovery": "9c364d1d6f7527e89fc47bffbe672440c5fa50bb:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block13_refuter.out.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block13_refuter.py",
+      "original_sha256": "85b55c73bc2abf9012e8a7e9464db740a3bb103125c80a37613c5a51163b8408",
+      "final_path": "docs/work_history/review_loop/pr8147/8147_supervisor_control_block13_refuter.py.gz",
+      "final_sha256": "8e828da9aa34fff73b0f19a419b07c917d4e8d0b2591fdfcca8cf3d309919db4",
+      "disposition": "Complete original version preserved byte-exact in deterministic gzip. Live scientific note renamed/narrowed; broad original negative claims deferred, literal-parent and sphere identities corrected; original branch remains recovery handle.",
+      "recovery": "9c364d1d6f7527e89fc47bffbe672440c5fa50bb:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block13_refuter.py"
+    },
+    {
+      "original_path": "docs/ADMISSIBILITY_RULE_CAUSAL_GAUSSIAN_FORMATION_LAW_RECORD_TWO_POINT_FUNCTION_HEAT_KERNEL_NOT_LATTICE_GREEN_FUNCTION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_sha256": "16f82e2244d20af088133a1fe9af21717f01425d4bd43e7f3825a3386670750f",
+      "final_path": "docs/work_history/review_loop/pr8147/8147_ADMISSIBILITY_RULE_CAUSAL_GAUSSIAN_FORMATION_LAW_RECORD_TWO_POINT_FUNCTION_HEAT_KERNEL_NOT_LATTICE_GREEN_FUNCTION_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz",
+      "final_sha256": "ad98f9f01a5574045c05d790a196e28b4c7e1f5c9edeefd8ce0bb56a85da923e",
+      "disposition": "Exact original proof archived; live renamed note retains corrected positive identities/bounds; unsupported broadnegativeclassification deferred, branch preserved.",
+      "recovery": "9c364d1d6f7527e89fc47bffbe672440c5fa50bb:docs/ADMISSIBILITY_RULE_CAUSAL_GAUSSIAN_FORMATION_LAW_RECORD_TWO_POINT_FUNCTION_HEAT_KERNEL_NOT_LATTICE_GREEN_FUNCTION_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "c8bf3ffbcde83009f888fab696c62d4e12c570e0f42c30b845914e5c2863ceac",
+      "final_path": "docs/work_history/review_loop/pr8147/8147_citation_graph_manifest.json.gz",
+      "final_sha256": "d6d1d587bac221f5ab698bfc49c86beb995d39bbf902ad08a4d8129dee3c5e5f",
+      "disposition": "Generated authority excluded from live audit path; exact compressed historical copy only.",
+      "recovery": "9c364d1d6f7527e89fc47bffbe672440c5fa50bb:docs/audit/data/citation_graph_manifest.json"
+    },
+    {
+      "original_path": "logs/runner-cache/admissibility_rule_causal_gaussian_formation_law_record_two_point_function_heat_kernel_2026_09_15.txt",
+      "original_sha256": "010f562627e1b6121ab53f44e246f02b519c0febc7e27e2375dbf8047f9e29be",
+      "final_path": "docs/work_history/review_loop/pr8147/8147_admissibility_rule_causal_gaussian_formation_law_record_two_point_function_heat_kernel_2026_09_15.txt.gz",
+      "final_sha256": "b8061442a02ae6a1ac61d2a9b1dcb6f5bc2ce29c940e5d16aae30661e1d112a7",
+      "disposition": "Old23check cache archivedhistorically; live corrected cache notyetexecuted.",
+      "recovery": "9c364d1d6f7527e89fc47bffbe672440c5fa50bb:logs/runner-cache/admissibility_rule_causal_gaussian_formation_law_record_two_point_function_heat_kernel_2026_09_15.txt"
+    },
+    {
+      "original_path": "scripts/admissibility_rule_causal_gaussian_formation_law_record_two_point_function_heat_kernel_2026_09_15.py",
+      "original_sha256": "3936a16ac56e2127a0df85a45833f4df9ca984a94acfcc1fbb9bf30b342d431d",
+      "final_path": "docs/work_history/review_loop/pr8147/8147_admissibility_rule_causal_gaussian_formation_law_record_two_point_function_heat_kernel_2026_09_15.py.gz",
+      "final_sha256": "90dfd6d2ff7bd7e5226ce85e5d13556f6496bc8d9366541a451a26e25b49b043",
+      "disposition": "Original primary archived; corrected live primary retains finite controls with actualparent sign and sphere integration, truthful scope and180sec bound.",
+      "recovery": "9c364d1d6f7527e89fc47bffbe672440c5fa50bb:scripts/admissibility_rule_causal_gaussian_formation_law_record_two_point_function_heat_kernel_2026_09_15.py"
+    }
+  ],
+  "claim_dispositions": {
+    "T1": "Retain exact propagator and accumulated overlap covariance.",
+    "T2": "Retain finite-level gain bounds and explicit subcritical stationary innovation construction; defer uniqueness/all-stationary nonexistence conclusions.",
+    "T3": "Retain exact precision symbol/cosine-entry distinction, critical directional expansions and directed/undirected walk identity with series bounds; defer all-causal kernel exclusion.",
+    "T4": "Retain binomial identities/bounds, correct n>=1 in square-root lower sum.",
+    "T5": "Additional value symmetry only; critical stable gain not zero-symbol iff; log curvature maximum and auxiliary flat Gaussian, actual Born sphere moments; literal parent sign +1/2 vs separate3Dreal\u22121/2 fixture; candidate precision evaluation only.",
+    "negative_certificate": "Broad exclusions deferred across live titles/claims/proofs/falsifiers; original full proofs and controls archived byte-exact. Original branch must remain."
+  },
+  "inputs": {
+    "runtime": [
+      {
+        "path": "scripts/admissibility_rule_causal_gaussian_formation_law_record_two_point_function_heat_kernel_2026_09_15.py",
+        "sha256": "68a29bbbb7648056382e0422006c2d2964c78177f8cded26741edbf6d1d04dcb"
+      }
+    ],
+    "helpers": [],
+    "parents": [
+      {
+        "path": "docs/ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_INSTANCE_FORMATION_PRECISION_LDL_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "d12e2a7bc0fad129f46de988e1e8b695fdc58047a8d6a24455796a6335e3880a"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/ADMISSIBILITY_RULE_DIRECTED_GAUSSIAN_PROPAGATOR_OVERLAP_COVARIANCE_GAIN_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "fe867e5b4b5f0c9245ae80d9f5b02bbb16c0823647ee514bb7c22dc3adf96031"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_INSTANCE_FORMATION_PRECISION_LDL_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "d12e2a7bc0fad129f46de988e1e8b695fdc58047a8d6a24455796a6335e3880a"
+      },
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      },
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "context_confirmation": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_HERMITIAN_GAUSSIAN_INSTANCE_FORMATION_PRECISION_LDL_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "d12e2a7bc0fad129f46de988e1e8b695fdc58047a8d6a24455796a6335e3880a"
+    }
+  ],
+  "fix_confirmation": [
+    "Fullcorrectednoteandrunnerdiffread; alloriginalmaterialfindings resolved at narrowed scope.",
+    "Literalparent+1/2edges/\u22121/6conditional and finite2Dcomplexscope correctly separated from supplied3Drealnegativeedge fixture.",
+    "SphereTaylor maximum/Hessian and auxiliaryLebesgueGaussian distinguished from actualsphere3/5,4/15moments; independent79controls apply.",
+    "Equallevelstationarycovariance clarified; latticewide stdout explicitlywrittenanalytical/notexecutedinfinite.",
+    "All22original versions decodeexact;26additions do notdeleteoroverwritecurrentmain science."
+  ],
+  "negative_certificate": "WITHHELD; no five-route invention or negativePASS. Universalcausal/static/stationary exclusions remain deferred; preserveoriginalbranch.",
+  "methodology": "Same-session complete mandatoryauthority and consistent installed/current reviewresources reused at exactunchanged hashes.",
+  "external_methods": "ElementaryGaussianintegration, finitewalkFourierinversion and countableconsistentGaussianextension explicitly imported. Noexternalnumericalconstant/physicalprobability law silentlyadopted.",
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8147-original-review.json",
+      "sha256": "9a1e671cbd6604fbb8e099adac023979b73988e423178f8784de2af06cc0075c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8147-independent-controls.py",
+      "sha256": "66572a271c5788c3d3b5e5e0ddb9f3747460bdcdb857adddc13043198791852a"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8147-independent-controls.json",
+      "sha256": "f24b3c8aaa59f86a7c607901475f44b7d422168ba38ef6bbd65db267d7f4dfbb"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8147-inventory.json",
+      "sha256": "61712c6c6ef9b15bc5a42c3c43dd3489fe39a3f6808a487c3816654811e5aaad"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8147-head-fetch.json",
+      "sha256": "d8df86c2f32ef27244b3884be2e4dead479f8b4b844c88178bbc4e5c2e82283d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8147-author-source-handoff-v2.json",
+      "sha256": "1d1dfa89ee4c5d673bd1a526c928e1cea5cacc0db3c0d2b3c3c17e8b3437f367"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8147-author-unit-draft-v2.json",
+      "sha256": "34c2f318c546287f7fd38ea2767ff698de86fc050cef000ddc5e1f19df5ce704"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8147-author-cache-api-v2.json",
+      "sha256": "84e4c3f0c728f649cd31184cedb30bc193be9e1af46b4c7447966286cb97cc0f"
+    }
+  ],
+  "execution": "Pending root sole180sec/3GiBcapture. Reviewerexecutedonly frozen79independentcontrols; no primaryrerun.",
+  "remaining": [
+    "Root actualboundedcapture",
+    "Same-session finalsource/output/cacheconfirmation",
+    "Oneversionedfinalcachepreflight"
+  ]
+}

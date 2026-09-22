@@ -30,12 +30,19 @@
  "stdout_sha256": "854a713b4ef04b9b906776644a724fb45689477a4809780c32cd2925e9ea0a92",
  "stdout_tail": "PR #8609: Physics: controlled positive quantum curl limits from finite qubits\nbranch codex/mobile-record-positive-quantum-curl-20260921 (base main)\nrunners in the PR: 1\n== scripts/mobile_records_positive_quantum_curl_limits_2026_09_21.py: rc=0 PASS=11 FAIL=0\n   mutation halve_dilute_commutator_bound: expected ? observed ? MISMATCH\n   mutation omit_occupation_depletion: expected ? observed ? MISMATCH\n   mutation wrong_incidence_adjoint: expected ? observed ? MISMATCH\nHIT: scripts/mobile_records_positive_quantum_curl_limits_2026_09_21.py: mutation census mismatch: halve_dilute_commutator_bound omit_occupation_depletion wrong_incidence_adjoint",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260922T213043Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T220929Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 41078d48 differs from the current HEAD 38287ce6 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "Second run of the same PR head: identical census lines ('expected ? observed ?' for halve_dilute_commutator_bound, omit_occupation_depletion, wrong_incidence_adjoint). Independent census on the PR branch: 3 of 3 mutations exit 1 with a FAIL line naming the declared target file. Mobile-record census template false positive, reported on #8294.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T220929Z"
  }
 }

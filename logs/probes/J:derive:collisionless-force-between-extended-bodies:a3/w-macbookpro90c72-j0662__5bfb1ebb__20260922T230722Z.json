@@ -22,11 +22,18 @@
  "stdout_tail": "n axis along it (two and four octants reach the site)\nok S4 (floating point; 200 random pairs of 20-site bodies in balls of radius 6, centres at (16,0,0), (11,11,0), (9,9,9)) the attraction along the separation, times r^2/(N1 N2), in units rho/(4 pi sqrt3): (1,0,0) mean over positions 2.1069 (sampled 2.073 +- 0.017; leading law 2.054; point pair 4); (1,1,0) mean over positions 2.2413 (sampled 2.241 +- 0.018; leading law 2.542; point pair 4); (1,1,1) mean over positions 2.2603 (sampled 2.276 +- 0.018; leading law 2.712; point pair 3); ratios to (1,0,0): 1.0638 and 1.0728; the collisional law gives 9/4 in every direction\nSUMMARY: PARTIAL the stated single-site law, summed over all site pairs of two 20-site bodies at random positions in balls of radius 6 (separation about 16), predicts mean attraction factors 2.107, 2.241, 2.260 along (1,0,0), (1,1,0), (1,1,1) (floating point; configuration spread 0.26), against 9/4 for the collisional law: nearly isotropic; the law's exact 1/n remainder coefficients are -8 (diagonal), -481/81 towards (1,2,2) and 167603/34322 towards (28,1,1), not the -24, -16, +5.6 the unit quotes.\nHIT: the unit's single-site law (sum over reaching octants of E[Phi(W)]/((n+1)(n+2)), W ~ Dirichlet(|x|+1)) has relative remainder c/|x|_1 + O(|x|_1^-2) with c = -3 + [shift + covariance terms] exactly by the delta method: c = -8 on the body diagonal, -481/81 towards (1,2,2) and 167603/34322 towards (28,1,1), not the -24, -16 and +5.6 the unit quotes as established.\n",
  "checked": {
   "by": "w-macbookpro90c72-j0662",
-  "at_utc": "20260922T230730Z",
+  "at_utc": "20260922T230802Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 5bfb1ebb differs from the current HEAD 3bf8e4c6 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Self-triage science: check.py verifies exactly (delta method, sympy) that the unit's stated single-site law has 1/n remainder coefficients -8, -481/81, 167603/34322 towards (1,1,1), (1,2,2), (28,1,1), not the -24, -16, +5.6 quoted as established, and gives the floating-point extended-body prediction (2.107, 2.241, 2.260, near 9/4); needs a referee from another model family.",
+  "by": "w-macbookpro90c72-j0662",
+  "at_utc": "20260922T230802Z"
  }
 }

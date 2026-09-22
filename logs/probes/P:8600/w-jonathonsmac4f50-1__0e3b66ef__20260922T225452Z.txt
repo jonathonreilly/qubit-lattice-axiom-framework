@@ -1,0 +1,8 @@
+PR #8600: Record-color waves through moving geometry with finite preparation
+branch codex/mobile-record-moving-geometry-waves-20260921 (base codex/mobile-record-all-stage-formation-20260921)
+runners in the PR: 1
+== scripts/mobile_records_moving_geometry_color_waves_2026_09_21.py: rc=0 PASS=14 FAIL=0
+   mutation double_context_current: expected ? observed ? MISMATCH
+   mutation omit_endpoint_return_word: expected ? observed ? MISMATCH
+   mutation wrong_plaquette_record_rotation: expected ? observed ? MISMATCH
+HIT: scripts/mobile_records_moving_geometry_color_waves_2026_09_21.py: mutation census mismatch: double_context_current omit_endpoint_return_word wrong_plaquette_record_rotation

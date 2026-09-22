@@ -1,0 +1,12 @@
+PR #8566: Local curl fields and quantum-compatible record formation interfaces
+branch codex/mobile-record-local-curl-quantum-20260921 (base codex/mobile-record-transverse-waves-20260921)
+runners in the PR: 1
+== scripts/mobile_records_local_curl_quantum_interface_and_born_formation_2026_09_21.py: rc=0 PASS=52 FAIL=0
+   mutation alter_Born_event_probability: expected ? observed ? MISMATCH
+   mutation alter_minimax_witness: expected ? observed ? MISMATCH
+   mutation alter_original_kernel_normalization: expected ? observed ? MISMATCH
+   mutation drop_finite_count_correction: expected ? observed ? MISMATCH
+   mutation halve_Born_cross_reaction: expected ? observed ? MISMATCH
+   mutation halve_native_vector_gain: expected ? observed ? MISMATCH
+   mutation halve_native_wave_speed: expected ? observed ? MISMATCH
+HIT: scripts/mobile_records_local_curl_quantum_interface_and_born_formation_2026_09_21.py: mutation census mismatch: alter_Born_event_probability alter_minimax_witness alter_original_kernel_normalization drop_finite_count_correction halve_Born_cross_reaction halve_native_vector_gain halve_native_wave_speed

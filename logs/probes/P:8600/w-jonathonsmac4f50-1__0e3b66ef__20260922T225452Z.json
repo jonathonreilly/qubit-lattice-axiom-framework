@@ -1,0 +1,47 @@
+{
+ "task": "P:8600",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-moving-geometry-waves-2026",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8600",
+ "pr": 8600,
+ "branch": "codex/mobile-record-moving-geometry-waves-20260921",
+ "git_sha": "0e3b66ef",
+ "started_utc": "20260922T225452Z",
+ "elapsed_s": 47.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/mobile_records_moving_geometry_color_waves_2026_09_21.py",
+    "returncode": 0,
+    "total": "PASS=14 FAIL=0",
+    "census_mismatches": [
+     "double_context_current",
+     "omit_endpoint_return_word",
+     "wrong_plaquette_record_rotation"
+    ]
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "b7947dda1c6e85be7ee8647351e1302964cc829dfa450a8822d1b2319894f74a",
+ "stdout_tail": "PR #8600: Record-color waves through moving geometry with finite preparation\nbranch codex/mobile-record-moving-geometry-waves-20260921 (base codex/mobile-record-all-stage-formation-20260921)\nrunners in the PR: 1\n== scripts/mobile_records_moving_geometry_color_waves_2026_09_21.py: rc=0 PASS=14 FAIL=0\n   mutation double_context_current: expected ? observed ? MISMATCH\n   mutation omit_endpoint_return_word: expected ? observed ? MISMATCH\n   mutation wrong_plaquette_record_rotation: expected ? observed ? MISMATCH\nHIT: scripts/mobile_records_moving_geometry_color_waves_2026_09_21.py: mutation census mismatch: double_context_current omit_endpoint_return_word wrong_plaquette_record_rotation",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T230757Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "Mobile-record census template: 'expected ? observed ?' for all. Independent census on the PR branch: 3 of 3 mutations exit 1 with a FAIL line naming the declared target (dimer_routed_transport_check.py, dimer_routed_diffusive_gap_check.py, dimer_routed_moving_geometry_check.py). Same class, reported on #8294. (repeat run, same census lines)",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T230757Z"
+ }
+}

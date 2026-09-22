@@ -1,0 +1,87 @@
+===== runner cache v1 =====
+runner: scripts/rotor_gauss_charged_ring_compression_2026_09_16.py
+runner_sha256: d6aa3c56de18e45c4d9cf57e4ae1512006fd054387cd1ed50783aaa4c1207c5f
+input_fingerprint_sha256: ae224afbc75e69e28e7db0aa7719aaf7ca1a52617a3c4f334f9419e0576dbd6e
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.54
+status: ok
+----- stdout -----
+{
+  "source_sha256": "d6aa3c56de18e45c4d9cf57e4ae1512006fd054387cd1ed50783aaa4c1207c5f",
+  "charged_ring": [
+    {
+      "g": 0.3,
+      "cutoff": 37,
+      "dimension": 2700,
+      "isometry_error": 1.3322676295501878e-15,
+      "exact_compression_error": 2.0971299467069714e-15,
+      "compact_remainder_norm": 1.91739616321182e-15,
+      "exponential_scale": 1.709613268059757e-23,
+      "leakage_operator_norm": 0.2236740572383108,
+      "true_ground_energy": -1.9184728447951336,
+      "variational_ground_energy": -1.9064957360887556,
+      "variational_excess": 0.011977108706378026,
+      "max_affine_transverse_mean": 5.37090848341617e-23,
+      "tail_mass_outer_three": 1.025810818722666e-91
+    },
+    {
+      "g": 0.5,
+      "cutoff": 23,
+      "dimension": 1692,
+      "isometry_error": 7.691850745534255e-16,
+      "exact_compression_error": 1.3703785768443547e-15,
+      "compact_remainder_norm": 6.796556959196406e-08,
+      "exponential_scale": 1.0701151964296972e-08,
+      "leakage_operator_norm": 0.38136121577284166,
+      "true_ground_energy": -1.8884915217716909,
+      "variational_ground_energy": -1.8523181355691694,
+      "variational_excess": 0.03617338620252153,
+      "max_affine_transverse_mean": 3.361866039598335e-08,
+      "tail_mass_outer_three": 5.520948339521539e-88
+    },
+    {
+      "g": 0.8,
+      "cutoff": 16,
+      "dimension": 1188,
+      "isometry_error": 1.3322676295501878e-15,
+      "exact_compression_error": 1.3072226910783104e-15,
+      "compact_remainder_norm": 0.0049259995038391695,
+      "exponential_scale": 0.0007000622238041694,
+      "leakage_operator_norm": 0.6342878997243117,
+      "true_ground_energy": -1.8455713376997354,
+      "variational_ground_energy": -1.72377734420951,
+      "variational_excess": 0.12179399349022546,
+      "max_affine_transverse_mean": 0.0021993103393590898,
+      "tail_mass_outer_three": 7.212050099972184e-95
+    },
+    {
+      "g": 1.1,
+      "cutoff": 13,
+      "dimension": 972,
+      "isometry_error": 1.0053497077208614e-15,
+      "exact_compression_error": 8.226995222060102e-16,
+      "compact_remainder_norm": 0.11403554113968466,
+      "exponential_scale": 0.013996201806952607,
+      "leakage_operator_norm": 0.8968242387888329,
+      "true_ground_energy": -1.914965721464449,
+      "variational_ground_energy": -1.5798731806496227,
+      "variational_excess": 0.3350925408148264,
+      "max_affine_transverse_mean": 0.04397037200877992,
+      "tail_mass_outer_three": 6.754633411064712e-106
+    }
+  ],
+  "seconds": 0.23018503189086914
+}
+PASS: four charged-ring compression fixtures with unchanged cutoff rule
+PASS: off-space leakage and finite variational comparisons
+PASS: outer-tail checks at the original threshold
+per_element: executed — four charged-ring compression fixtures with unchanged cutoff rule
+per_site: executed — finite supplied-reference configurations at declared cutoffs
+per_mode: executed — finite matrices or Fourier grids described in the JSON evidence
+per_block: executed — outer-tail checks at the original threshold
+lattice_wide: checked and not executed — written uniform bounds and limit proofs; no actual interacting infinite-volume state executed
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

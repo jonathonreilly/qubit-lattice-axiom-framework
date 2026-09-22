@@ -1,0 +1,39 @@
+{
+ "task": "R:physical_m2_source_response_common_seam_cycle313_2026_07_18",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_m2_source_response_common_seam_cycle313_2026_07_18.py",
+ "seed": 10210,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "46cc6c62",
+ "started_utc": "20260921T170330Z",
+ "elapsed_s": 0.6,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "277fcb8b563a456884d88e2c11930cc98bbbb34b02bbaf3316c4d58ec5e7fb01",
+ "stdout_tail": "me, Record'}\n\nNO-GO DISCIPLINE EXECUTABLE CONTROLS\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/physical_m2_source_response_common_seam_cycle313_2026_07_18.py\", line 775, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/physical_m2_source_response_common_seam_cycle313_2026_07_18.py\", line 763, in main\n    no_go_discipline_executable_controls()\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/physical_m2_source_response_common_seam_cycle313_2026_07_18.py\", line 675, in no_go_discipline_executable_controls\n    lines = NOTE.read_text(encoding=\"utf-8\").lower().splitlines()\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1027, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1013, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-1/docs/work_history/repo/review_feedback/PHYSICAL_M2_SOURCE_RESPONSE_COMMON_SEAM_CYCLE313_NOTE_2026-07-18.md'\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T174001Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: log's git sha 46cc6c62 differs from the current HEAD 83d0ce51 (fine if you pulled since; the run is bound to its sha)",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Fails only '[FAIL] the Cycle-313 note exists' - docs/work_history/repo/review_feedback/PHYSICAL_M2_SOURCE_RESPONSE_COMMON_SEAM_CYCLE313_NOTE... is absent on this checkout - and the check that reads it; the computational checks (the update emits, streams to the six neighbours and reabsorbs; the occupation response distinguishes n=1 from n=2) all PASS. Same failure in the other machine's log on the branch.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T174001Z"
+ }
+}

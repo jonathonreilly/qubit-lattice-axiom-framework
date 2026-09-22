@@ -1,0 +1,39 @@
+{
+ "task": "R:physical_m2_gravity_source_bridge_tournament_synthesis_cycle294_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_m2_gravity_source_bridge_tournament_synthesis_cycle294_2026_07_17.py",
+ "seed": 10174,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "46cc6c62",
+ "started_utc": "20260921T170254Z",
+ "elapsed_s": 35.7,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "31e677e640045393ef4eae0e879bbfb63fff2ca181d7913e430741325b034a40",
+ "stdout_tail": "11, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/physical_m2_gravity_source_bridge_tournament_synthesis_cycle294_2026_07_17.py\", line 204, in main\n    route_independence_controls()\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/physical_m2_gravity_source_bridge_tournament_synthesis_cycle294_2026_07_17.py\", line 142, in route_independence_controls\n    route_a = normalized(\n              ^^^^^^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/physical_m2_gravity_source_bridge_tournament_synthesis_cycle294_2026_07_17.py\", line 64, in normalized\n    text = path.read_text(encoding=\"utf-8\").lower()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1027, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1013, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-1/docs/work_history/repo/review_feedback/DIRECT_GATEWISE_MATTER_MEDIATOR_CURRENT_LEDGER_ROUTE_A_CYCLE293_NOTE_2026-07-17.md'\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T174001Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: log's git sha 46cc6c62 differs from the current HEAD 83d0ce51 (fine if you pulled since; the run is bound to its sha)",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "The only failure is the aggregate 'all three independent route runners pass at the reviewed totals': routes A-C return code 1 with observed None, and the stdout shows a Traceback out of Path.read_text - the sub-runners cannot find a file they read. Nothing computational fails. The branch already carries a log of this task from another machine (/Users/jonreilly/.probe-workers/Physics/...) with the same failure, so it is reproducible repository state, not a flake.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T174001Z"
+ }
+}

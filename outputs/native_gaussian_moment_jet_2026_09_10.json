@@ -1,0 +1,8 @@
+{
+  "algebra_mutants_rejected": 1,
+  "checks": 325,
+  "event_arithmetic_replays": 0,
+  "native_replays": 0,
+  "semantic_mutants_rejected": 5,
+  "status": "PASS_COMPACT_ONLY"
+}

@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/native_stronger_ward_estimators_2026_09_10.py
+runner_sha256: 084046c8d3606a8404b77a3fa242cff3a908efb6ea3ede861161933164946728
+input_fingerprint_sha256: 6f05ce7b332d8b86e656d1e8a8a982973b74d775ef029c204a1ed09542f54cb2
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.30
+status: ok
+----- stdout -----
+TOTAL: PASS=28 FAIL=0
+SUPPORT_ONLY: all tested alpha intervals remain indeterminate; no native replay; full integration and formal audit UNRUN
+per_element: exact finite synthetic identities and saved certificate semantics; original numerical arithmetic not replayed
+per_site: supplied local defect families and original Gaussian reference; no new physical lattice or state evaluation
+per_mode: preserved residual and variational modes, with both sign intervals still inconclusive
+per_block: immutable source/result bindings and semantic rejection controls; historical production budgets remain distinct
+lattice_wide: conditional analytical Ward and moment statements use linked proofs; no full alpha sign or model-selection calculation
+
+----- stderr -----
+

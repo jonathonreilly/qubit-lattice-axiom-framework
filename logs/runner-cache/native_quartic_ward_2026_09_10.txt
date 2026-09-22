@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/native_quartic_ward_2026_09_10.py
+runner_sha256: 5b2d5ac98862099a1f97bc9b451ec7ce6a010f7303ec4dd1cb2d539c24d95503
+input_fingerprint_sha256: af7e8d5405ff30198dfc97eda5f9bb700b683bd6ec75703e1c95873839d8b9ba
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+TOTAL: PASS=444 FAIL=0
+SUPPORT_ONLY: both unchanged-trial intervals contain zero; integration and formal audit UNRUN
+per_element: exact finite synthetic identities and saved certificate semantics; original numerical arithmetic not replayed
+per_site: supplied local defect families and original Gaussian reference; no new physical lattice or state evaluation
+per_mode: preserved residual and variational modes, with both sign intervals still inconclusive
+per_block: immutable source/result bindings and semantic rejection controls; historical production budgets remain distinct
+lattice_wide: conditional analytical Ward and moment statements use linked proofs; no full alpha sign or model-selection calculation
+
+----- stderr -----
+

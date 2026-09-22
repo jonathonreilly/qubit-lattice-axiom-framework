@@ -1,0 +1,1060 @@
+{
+  "boundary": "Historical payload storage only; original paths/modes and every disposition remain distinct. No review or audit verdict.",
+  "entries": [
+    {
+      "encoding": "identity",
+      "git_blob": "f92f7ecacb6f44faca43c150dae443e371df0b67",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/ASSUMPTIONS_AND_IMPORTS.md",
+      "raw_bytes": 285,
+      "raw_sha256": "11ef7592e774789e4ff4411a1c70d1c9e1ed31974f9bafe15354b2d084dd1319",
+      "stored_path": "kept/pr8079-ASSUMPTIONS_AND_IMPORTS-04947ad72d106df1.md",
+      "stored_sha256": "11ef7592e774789e4ff4411a1c70d1c9e1ed31974f9bafe15354b2d084dd1319"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "cc28d1982aa451ccc1f03ee347d1cb0bd3d4c6b5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/CLAIM_STATUS_CERTIFICATE.md",
+      "raw_bytes": 344,
+      "raw_sha256": "b58fedc3bd9c5597138d07890dee79a906ae9c78151cf417bee23f145df0165b",
+      "stored_path": "kept/pr8079-CLAIM_STATUS_CERTIFICATE-4a3d4f79e164376b.md",
+      "stored_sha256": "b58fedc3bd9c5597138d07890dee79a906ae9c78151cf417bee23f145df0165b"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "805faeec59f134067e08a2fa21bc71842bc04cdf",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/HANDOFF.md",
+      "raw_bytes": 1214,
+      "raw_sha256": "ec8059f855185e0136cc46bc2cc9a4502cb9c8bb49b1dd9d8dafecd55f75513f",
+      "stored_path": "kept/pr8079-HANDOFF-9ef67db77ea9ef6f.md",
+      "stored_sha256": "ec8059f855185e0136cc46bc2cc9a4502cb9c8bb49b1dd9d8dafecd55f75513f"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "760d152316322161944ff62db514bb5e2ba9d192",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/IMPORT_PROVENANCE.json",
+      "raw_bytes": 16076,
+      "raw_sha256": "bb524cd6abb3d18848d9e53f163b2d2459a57f2b1a07ecbef1e793c7d1cbf220",
+      "stored_path": "kept/pr8079-IMPORT_PROVENANCE-99dd1c01ed11f753.json",
+      "stored_sha256": "bb524cd6abb3d18848d9e53f163b2d2459a57f2b1a07ecbef1e793c7d1cbf220"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "f3667ae60a29af55e4e31c80c6c947eed2b41a1e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/NO_GO_LEDGER.md",
+      "raw_bytes": 223,
+      "raw_sha256": "ea4a7d8d2dc5691ead550773e36bb4db7bf426e20b05650505648e8ef8c40ae0",
+      "stored_path": "kept/pr8079-NO_GO_LEDGER-47d6880ce44b1ce7.md",
+      "stored_sha256": "ea4a7d8d2dc5691ead550773e36bb4db7bf426e20b05650505648e8ef8c40ae0"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "61ef760d717e488bd39ac24b661729a0ff83ddfd",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/RECOVERY.md",
+      "raw_bytes": 1260,
+      "raw_sha256": "1a41b05873d962973659cf36c8a31afd549a34bf49bec8aec46bf50e681db289",
+      "stored_path": "kept/pr8079-RECOVERY-23a7a88823d021c5.md",
+      "stored_sha256": "1a41b05873d962973659cf36c8a31afd549a34bf49bec8aec46bf50e681db289"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "bd751a13f1aba165f29200100d0ce0ec03fbe5b2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/RECOVERY_MAP.json",
+      "raw_bytes": 53207,
+      "raw_sha256": "2b946fc99f9d15773d63dab2cb88f793270bd006ff56370238157bcb3460b6b2",
+      "stored_path": "kept/pr8079-RECOVERY_MAP-980fa11291d7106f.json",
+      "stored_sha256": "2b946fc99f9d15773d63dab2cb88f793270bd006ff56370238157bcb3460b6b2"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "368cebaac4ae954a743f66a2d376752d471153c2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/REVIEW_HISTORY.md",
+      "raw_bytes": 947,
+      "raw_sha256": "9ff4f1bdd361a365ceb7cdc72f2982b95fb8911cb2084c647e4f047ecac9ea5e",
+      "stored_path": "kept/pr8079-REVIEW_HISTORY-3f4cb79c836849bf.md",
+      "stored_sha256": "9ff4f1bdd361a365ceb7cdc72f2982b95fb8911cb2084c647e4f047ecac9ea5e"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "fe7bc967dd830739988e4be33ed9eccc7b5f8611",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/STATE.yaml",
+      "raw_bytes": 249,
+      "raw_sha256": "2d869661afbee9eddfbe787d22586dd44194b751cd741582470614c87cdd54a3",
+      "stored_path": "kept/pr8079-STATE-3b9688acc891237e.yaml",
+      "stored_sha256": "2d869661afbee9eddfbe787d22586dd44194b751cd741582470614c87cdd54a3"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "57996fced0e315506c84f3de46574c81a25a5cd9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/TRACE_GATE.md",
+      "raw_bytes": 282,
+      "raw_sha256": "d0df3cc25eeb8029f00db1653fb1626e74455173924ee18f116f9889beed5ab8",
+      "stored_path": "kept/pr8079-TRACE_GATE-f67515f6cce5b41d.md",
+      "stored_sha256": "d0df3cc25eeb8029f00db1653fb1626e74455173924ee18f116f9889beed5ab8"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "7d170a11298ae89e676848bd4f89b337fddc0a48",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/ALLQ_BINDING.json",
+      "raw_bytes": 1207187,
+      "raw_sha256": "ef2aeb1c395853fd89c2d0929bd8a44a9814fb34227fc42bd3c7361403d0e328",
+      "stored_path": "kept/pr8079-ALLQ_BINDING-0d719a40ab7687b1.json",
+      "stored_sha256": "ef2aeb1c395853fd89c2d0929bd8a44a9814fb34227fc42bd3c7361403d0e328"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "235faf5e2d3226332c9cbf37b865b8d2b2dce88d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/ALLQ_PROTOCOL.md",
+      "raw_bytes": 1826,
+      "raw_sha256": "e59e8ffa3d502c3b7a0e1d46a8b4c9395510233adbb880e0b173ce35b4dd45fd",
+      "stored_path": "kept/pr8079-ALLQ_PROTOCOL-f1ac83cd51decd26.md",
+      "stored_sha256": "e59e8ffa3d502c3b7a0e1d46a8b4c9395510233adbb880e0b173ce35b4dd45fd"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "14d75e44d123bc544ccc1e5ac78801ae3e8f532b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/ALLQ_RECEIPT.json",
+      "raw_bytes": 756,
+      "raw_sha256": "e7747c68a10434d40b2e4313e8abb529ccb984bba2df21af34c83b52636156bc",
+      "stored_path": "kept/pr8079-ALLQ_RECEIPT-197c694ad2ac5f64.json",
+      "stored_sha256": "e7747c68a10434d40b2e4313e8abb529ccb984bba2df21af34c83b52636156bc"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "315954b750a24ded68d0815e631b918607485612",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/ALLQ_RESULT.json",
+      "raw_bytes": 18179,
+      "raw_sha256": "d560380280550d27fbb77e504b03587443fdf8796b2844d1f01ee61ef9341ac2",
+      "stored_path": "kept/pr8079-ALLQ_RESULT-a6fffb71d15c9429.json",
+      "stored_sha256": "d560380280550d27fbb77e504b03587443fdf8796b2844d1f01ee61ef9341ac2"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "ca1f6bbd54218f01d694e7b6206d64dd29c86cc5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/ALLQ_ROOT_ACCEPTANCE.json",
+      "raw_bytes": 1437,
+      "raw_sha256": "4e49bfdeb536f6435ba56ddd1c62e393dc020e7b867927522e8914edeac8347d",
+      "stored_path": "kept/pr8079-ALLQ_ROOT_ACCEPTANCE-f3d5d727ecb8aa31.json",
+      "stored_sha256": "4e49bfdeb536f6435ba56ddd1c62e393dc020e7b867927522e8914edeac8347d"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "27fc654e07bb54b53a34816f289e7e59c84d4055",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/ALLQ_ROOT_FREEZE.json",
+      "raw_bytes": 1116,
+      "raw_sha256": "b8adc60274ca1693af4a653b142d5850925405371df24b53e0927c74ab94b786",
+      "stored_path": "kept/pr8079-ALLQ_ROOT_FREEZE-73f396316cce0d28.json",
+      "stored_sha256": "b8adc60274ca1693af4a653b142d5850925405371df24b53e0927c74ab94b786"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "a392ba0b1f33885bc2c7f07b3ae4262b2ee501cf",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/ALLQ_RUNTIME_FREEZE.json",
+      "raw_bytes": 1525315,
+      "raw_sha256": "e8986492685aebf5fb073fd5570cf123f743fe67a1e9568cc6e30296bf2300d5",
+      "stored_path": "kept/pr8079-ALLQ_RUNTIME_FREEZE-bf80830700aa6ea8.json",
+      "stored_sha256": "e8986492685aebf5fb073fd5570cf123f743fe67a1e9568cc6e30296bf2300d5"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "fb999c699896db8defd37748ed077e31c687d8b9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/ALLQ_SCHEMA_ACCEPTANCE.json",
+      "raw_bytes": 452,
+      "raw_sha256": "986894bd714d0c72508132c04b709af77620082d2c4eb98f9df6479f4c123881",
+      "stored_path": "kept/pr8079-ALLQ_SCHEMA_ACCEPTANCE-dce6828da97dba22.json",
+      "stored_sha256": "986894bd714d0c72508132c04b709af77620082d2c4eb98f9df6479f4c123881"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "4961efa12a80be9a6024837dadb4fe53d1dbd19e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/ALLQ_WORKER_COMPLETE.json",
+      "raw_bytes": 357,
+      "raw_sha256": "26dce04b3e735ecb8bf84de66dbbf1bba7465450070c5b52732b5944ce1c92da",
+      "stored_path": "kept/pr8079-ALLQ_WORKER_COMPLETE-890de01a600c8ecd.json",
+      "stored_sha256": "26dce04b3e735ecb8bf84de66dbbf1bba7465450070c5b52732b5944ce1c92da"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "10560a1473665e4eb255f7433a7fdf1dd2e5cc07",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/ALLQ_compute.py",
+      "raw_bytes": 738,
+      "raw_sha256": "1250b9209fb6f5dd908490833d140c528f54f1c35eb2291183e75e01eca4db63",
+      "stored_path": "kept/pr8079-ALLQ_compute-22a9ab7a8a16da7a.py",
+      "stored_sha256": "1250b9209fb6f5dd908490833d140c528f54f1c35eb2291183e75e01eca4db63"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "0c77b31609291398ff7c4a054f355d8504da2b41",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/ALLQ_worker.py",
+      "raw_bytes": 4805,
+      "raw_sha256": "69b82a7026e745866197529960eb9027b13290e74a7aea9431dfc29e4436a4d4",
+      "stored_path": "kept/pr8079-ALLQ_worker-21ef34e9e90fecc6.py",
+      "stored_sha256": "69b82a7026e745866197529960eb9027b13290e74a7aea9431dfc29e4436a4d4"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "174f8c1f73d92907abcbc281c213e18105be9622",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/ALL_Q.md",
+      "raw_bytes": 2993,
+      "raw_sha256": "7e63b20fdc0ca8a28d51cae376e12f60e796f2fe135eef29eb1ae1151e7176c2",
+      "stored_path": "kept/pr8079-ALL_Q-b5fcbf94a3fe3ed1.md",
+      "stored_sha256": "7e63b20fdc0ca8a28d51cae376e12f60e796f2fe135eef29eb1ae1151e7176c2"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "15f0122cdc07fdf8ec69f600e448f9262be2e052",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/DEGREE10.md",
+      "raw_bytes": 6892,
+      "raw_sha256": "28b1ecd5892bf41f48a88fcc79f4ee1f9f54933413b93870d85065f2e8eec829",
+      "stored_path": "kept/pr8079-DEGREE10-bf797a38935a935a.md",
+      "stored_sha256": "28b1ecd5892bf41f48a88fcc79f4ee1f9f54933413b93870d85065f2e8eec829"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "1a7351f8ee18af30deed6afb3f2e8aee91226665",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/DEGREE10_BINDING.json",
+      "raw_bytes": 1201241,
+      "raw_sha256": "3bb4b1f9cee4d2aabc58ebcb1db3d94d1fbaf8ffa22e9e2fa16ec7176a0f35fa",
+      "stored_path": "kept/pr8079-DEGREE10_BINDING-8fd659fc95e4e491.json",
+      "stored_sha256": "3bb4b1f9cee4d2aabc58ebcb1db3d94d1fbaf8ffa22e9e2fa16ec7176a0f35fa"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "3c4ffaac8213497dba18993ac9bf36adb1e52fc0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/DEGREE10_PROTOCOL.md",
+      "raw_bytes": 2829,
+      "raw_sha256": "36d9bdb926134b9a76a5517ad0cdd032df89894a9e0e715b0214799c1c36437f",
+      "stored_path": "kept/pr8079-DEGREE10_PROTOCOL-a8ffb06c8b1f1137.md",
+      "stored_sha256": "36d9bdb926134b9a76a5517ad0cdd032df89894a9e0e715b0214799c1c36437f"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "ce94ce34a00608b91c75fd424a59e2b7bc537b07",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/DEGREE10_RECEIPT.json",
+      "raw_bytes": 733,
+      "raw_sha256": "26633a4efba127f9bf04a3f91805b22dde063bdb363e238fd10ffb4e8eed98f4",
+      "stored_path": "kept/pr8079-DEGREE10_RECEIPT-eefd2bec7bfee9c5.json",
+      "stored_sha256": "26633a4efba127f9bf04a3f91805b22dde063bdb363e238fd10ffb4e8eed98f4"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "755b2cc4c5b42d3adefdb11801bc8a8189b60dac",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/DEGREE10_RESULT.json",
+      "raw_bytes": 49404,
+      "raw_sha256": "672ce87da876f1b0943c07f037f50ab3e8789896814f6cad4819730648215b37",
+      "stored_path": "kept/pr8079-DEGREE10_RESULT-9d4b078dafbbd9f4.json",
+      "stored_sha256": "672ce87da876f1b0943c07f037f50ab3e8789896814f6cad4819730648215b37"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "98bf8a235ac3de4bf77be0934b52181dd50e7d86",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/DEGREE10_ROOT_ACCEPTANCE.json",
+      "raw_bytes": 1371,
+      "raw_sha256": "3dabf36feb607e392695bf55661da7b8ff99b7733681b2eb831f43dc91a36522",
+      "stored_path": "kept/pr8079-DEGREE10_ROOT_ACCEPTANCE-180f9cae2bc5f80e.json",
+      "stored_sha256": "3dabf36feb607e392695bf55661da7b8ff99b7733681b2eb831f43dc91a36522"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "9e2693fea32eb5b58f8c71c14008baddf0d031b4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/DEGREE10_ROOT_FREEZE.json",
+      "raw_bytes": 1022,
+      "raw_sha256": "7cf22043bc6f622735944de6ed69922a56dc67461257b6145db8d9002595489e",
+      "stored_path": "kept/pr8079-DEGREE10_ROOT_FREEZE-e2a058e1a2ceac97.json",
+      "stored_sha256": "7cf22043bc6f622735944de6ed69922a56dc67461257b6145db8d9002595489e"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "227817c29b645eef370bdc6acac5ab81d5754b53",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/DEGREE10_RUNTIME_FREEZE.json",
+      "raw_bytes": 1521422,
+      "raw_sha256": "79720f3f049c648b934d4b0d0ddb0f922493c6105582f26ce7c8a3a306e40e2f",
+      "stored_path": "kept/pr8079-DEGREE10_RUNTIME_FREEZE-81cea9d67d61eaa5.json",
+      "stored_sha256": "79720f3f049c648b934d4b0d0ddb0f922493c6105582f26ce7c8a3a306e40e2f"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "cf1eeb6ab8f53c678dd45a169733c144b2a409ee",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/DEGREE10_SCHEMA_ACCEPTANCE.json",
+      "raw_bytes": 486,
+      "raw_sha256": "f37e9d896fcb0de4cd7dc333585996cd92b3cc0ee1eec259df8b8c393dd1479e",
+      "stored_path": "kept/pr8079-DEGREE10_SCHEMA_ACCEPTANCE-79ba07dc3c11e49b.json",
+      "stored_sha256": "f37e9d896fcb0de4cd7dc333585996cd92b3cc0ee1eec259df8b8c393dd1479e"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "952146469b1c9f4504364ca10bdae2e61d9c7621",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/DEGREE10_WORKER_COMPLETE.json",
+      "raw_bytes": 353,
+      "raw_sha256": "499910d7a30815bd09785e301f7ec1487148a9fa23e1c3322ee54e115f60fc68",
+      "stored_path": "kept/pr8079-DEGREE10_WORKER_COMPLETE-4851ab1d4f10cf2f.json",
+      "stored_sha256": "499910d7a30815bd09785e301f7ec1487148a9fa23e1c3322ee54e115f60fc68"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "9aea8001e631bdb9177fe5ce9fa476700ca3e065",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/DEGREE10_compute.py",
+      "raw_bytes": 3910,
+      "raw_sha256": "85515031bbe6fba73dc098b7ea5f3dee16b08f12e6aa454269ebc479ada7e541",
+      "stored_path": "kept/pr8079-DEGREE10_compute-d3235ad429407671.py",
+      "stored_sha256": "85515031bbe6fba73dc098b7ea5f3dee16b08f12e6aa454269ebc479ada7e541"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "3526cc80090b7d3f65ec95b28d3f40bc833c8c05",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/DEGREE10_worker.py",
+      "raw_bytes": 4179,
+      "raw_sha256": "ee92f2a5dbdd242cd8d56e9653dea1b5e8f4edd960debf47588375070f7b02d5",
+      "stored_path": "kept/pr8079-DEGREE10_worker-61ab59f4021c9b93.py",
+      "stored_sha256": "ee92f2a5dbdd242cd8d56e9653dea1b5e8f4edd960debf47588375070f7b02d5"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "333608824e92a82cfa1f68fd942503d1589000f0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/DEGREE11.md",
+      "raw_bytes": 5720,
+      "raw_sha256": "e0c5d1c3f28fc316f1540b3a8577c451e39bdcf6f2b8c6f574ce6b3081ec9f65",
+      "stored_path": "kept/pr8079-DEGREE11-78b50a3d9968445f.md",
+      "stored_sha256": "e0c5d1c3f28fc316f1540b3a8577c451e39bdcf6f2b8c6f574ce6b3081ec9f65"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "0a23d43891940da35d8956470dffef93465ef756",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/DEGREE20.md",
+      "raw_bytes": 4481,
+      "raw_sha256": "2f7af929ac09b5a44d64b021eac93e6721f91b8d95d0bd274e82b5a6cf5e1684",
+      "stored_path": "kept/pr8079-DEGREE20-d9a35db2e6dedcb7.md",
+      "stored_sha256": "2f7af929ac09b5a44d64b021eac93e6721f91b8d95d0bd274e82b5a6cf5e1684"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "1d7e0a8038fdbc06f2e68c30633e532ad39b97cc",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/HIERARCHY.md",
+      "raw_bytes": 4814,
+      "raw_sha256": "e8588a2668e84d20abef1ae2acc827e798f6fb6bfb237f5b082c9786a8067b97",
+      "stored_path": "kept/pr8079-HIERARCHY-3d2cbcb326f3df28.md",
+      "stored_sha256": "e8588a2668e84d20abef1ae2acc827e798f6fb6bfb237f5b082c9786a8067b97"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "c78128d05bf92207003ecde2c074b09cdc547dcf",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/OMEGA5.md",
+      "raw_bytes": 4741,
+      "raw_sha256": "bac566d0ce040b693681523a8bb1a4c1e2c4e25a68e34189b9de3903fcb3d1e2",
+      "stored_path": "kept/pr8079-OMEGA5-76a67ca0725fbb2a.md",
+      "stored_sha256": "bac566d0ce040b693681523a8bb1a4c1e2c4e25a68e34189b9de3903fcb3d1e2"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "7a29994559c4a58a284789beb4ab9f34190c5485",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/OMEGA5_BINDING.json",
+      "raw_bytes": 1075836,
+      "raw_sha256": "6d5864bd8ee47416a9938539de02db49db9a546fe384d1f755b8eaa84442263a",
+      "stored_path": "kept/pr8079-OMEGA5_BINDING-7d730db2963bcb0b.json",
+      "stored_sha256": "6d5864bd8ee47416a9938539de02db49db9a546fe384d1f755b8eaa84442263a"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "0399c1c4a1737ec528de6b87df5767c661604309",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/OMEGA5_PROTOCOL.md",
+      "raw_bytes": 1951,
+      "raw_sha256": "d2f8e752e14a3c0ed9fd650d00d943eff698e293c5abe6c36beae661ce82d354",
+      "stored_path": "kept/pr8079-OMEGA5_PROTOCOL-74b28361b99b6643.md",
+      "stored_sha256": "d2f8e752e14a3c0ed9fd650d00d943eff698e293c5abe6c36beae661ce82d354"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "ad00f7ce03837d2a5684025f8f720e4157c7a20d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/OMEGA5_RECEIPT.json",
+      "raw_bytes": 2868,
+      "raw_sha256": "7176dc588b21a42f147a639f29c0b0b9bb6ef989c55243df146a9aa5310f7fef",
+      "stored_path": "kept/pr8079-OMEGA5_RECEIPT-8f0315e7d9e3478b.json",
+      "stored_sha256": "7176dc588b21a42f147a639f29c0b0b9bb6ef989c55243df146a9aa5310f7fef"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "2a42a538ee33325e917d9d737523dab8fbb93532",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/OMEGA5_RESULT.json",
+      "raw_bytes": 1298,
+      "raw_sha256": "e07e28eb7703f6f04fecd6694b1e0db43e32c14b7546a2d6fb15b6bec33d010b",
+      "stored_path": "kept/pr8079-OMEGA5_RESULT-ef243640ead767c6.json",
+      "stored_sha256": "e07e28eb7703f6f04fecd6694b1e0db43e32c14b7546a2d6fb15b6bec33d010b"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "573381d4790b3f070d16de232087a3c5de9158d1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/OMEGA5_ROOT_ACCEPTANCE.json",
+      "raw_bytes": 1674,
+      "raw_sha256": "ff47ae5deb6eb7644b55abec79937aefa80face8baaebd5a079d7d3042148c2f",
+      "stored_path": "kept/pr8079-OMEGA5_ROOT_ACCEPTANCE-422712697da0e831.json",
+      "stored_sha256": "ff47ae5deb6eb7644b55abec79937aefa80face8baaebd5a079d7d3042148c2f"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "531a9e27cb0c594dd5238232e5531c530b9c3a51",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/OMEGA5_ROOT_FREEZE.json",
+      "raw_bytes": 1040,
+      "raw_sha256": "7c20325f8bda8ab9bff14f3faf8da4b4aa4e1a344a4ec9ee5721000e4f4fef79",
+      "stored_path": "kept/pr8079-OMEGA5_ROOT_FREEZE-b2d9773a6f503ac5.json",
+      "stored_sha256": "7c20325f8bda8ab9bff14f3faf8da4b4aa4e1a344a4ec9ee5721000e4f4fef79"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "2e974ebd01d6ea60113c946c54dea79c6eddb63d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/OMEGA5_RUNTIME_FREEZE.json",
+      "raw_bytes": 1394369,
+      "raw_sha256": "102768f72a0eb22cbd0ce7578d6bf35cb609cf459faad16cc2d6553cf8316675",
+      "stored_path": "kept/pr8079-OMEGA5_RUNTIME_FREEZE-3d9109fb6e1e8060.json",
+      "stored_sha256": "102768f72a0eb22cbd0ce7578d6bf35cb609cf459faad16cc2d6553cf8316675"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "6a87759ccfcff90d6d18982741c01c95d603ba44",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/OMEGA5_SCHEMA_ACCEPTANCE.json",
+      "raw_bytes": 693,
+      "raw_sha256": "d3a97f71534701993498d3836a1ad6373442f2be41c7030f77c177c3670e85e0",
+      "stored_path": "kept/pr8079-OMEGA5_SCHEMA_ACCEPTANCE-45172536b296f9df.json",
+      "stored_sha256": "d3a97f71534701993498d3836a1ad6373442f2be41c7030f77c177c3670e85e0"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "002b2b9958de7828dd18e99d5e927171e6158ca0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/OMEGA5_WORKER_COMPLETE.json",
+      "raw_bytes": 350,
+      "raw_sha256": "10cc1c5a6fe34f9bba6107fba12fac9cd3c2a4d0c922a142575d48af4ae27407",
+      "stored_path": "kept/pr8079-OMEGA5_WORKER_COMPLETE-354376975e0881ee.json",
+      "stored_sha256": "10cc1c5a6fe34f9bba6107fba12fac9cd3c2a4d0c922a142575d48af4ae27407"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "2cf87bca6b4039a701f2479986fd9ad9e33c6345",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/OMEGA5_compute.py",
+      "raw_bytes": 1470,
+      "raw_sha256": "4b1fb102355f4d8bad10f555cbfc610b76f6d2ffb264088922b5e1aff885ec92",
+      "stored_path": "kept/pr8079-OMEGA5_compute-5f49c80f3d42af32.py",
+      "stored_sha256": "4b1fb102355f4d8bad10f555cbfc610b76f6d2ffb264088922b5e1aff885ec92"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "6956041e18462a6df4c2a3d7e6a29eb5f1b22a50",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/imports/OMEGA5_worker.py",
+      "raw_bytes": 3148,
+      "raw_sha256": "2ad0df9a535b3a49d88ee4722f5db17cb380e774dbc6bd9e3b5bfbb362435e98",
+      "stored_path": "kept/pr8079-OMEGA5_worker-8da87085720b9750.py",
+      "stored_sha256": "2ad0df9a535b3a49d88ee4722f5db17cb380e774dbc6bd9e3b5bfbb362435e98"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "00c3fdcfa14b943bd95337a9417be281623340b4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/reviews/AFFECTED_RUNNER_REVIEW.md",
+      "raw_bytes": 1625,
+      "raw_sha256": "c353220ea34445aa4da1758316a70f742007dd0ffda9b311376b100fbbcd240a",
+      "stored_path": "kept/pr8079-AFFECTED_RUNNER_REVIEW-6eb645e3daeb76dd.md",
+      "stored_sha256": "c353220ea34445aa4da1758316a70f742007dd0ffda9b311376b100fbbcd240a"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "53b863f218066e95f7c2c319e9d501bc7b5c2c4d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/reviews/native-allq-saved-screen-cold-review_REVIEW.md",
+      "raw_bytes": 1115,
+      "raw_sha256": "0d5115c8cb68eca62d166d5063fa80cf6a72186f838086cf4e915328190b238f",
+      "stored_path": "kept/pr8079-native-allq-saved-screen-cold-review_REVIEW-fd47ef8891cee0eb.md",
+      "stored_sha256": "0d5115c8cb68eca62d166d5063fa80cf6a72186f838086cf4e915328190b238f"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "fa5980d47ac5c599a21581731353745ea3bcc772",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/reviews/native-degree10-ward-cold-review_REVIEW.md",
+      "raw_bytes": 1554,
+      "raw_sha256": "a785bc200ff9993cd9ac6eab688315a9659ba11baeb250c57a977ab850f1b195",
+      "stored_path": "kept/pr8079-native-degree10-ward-cold-review_REVIEW-fda53fc9013cea0c.md",
+      "stored_sha256": "a785bc200ff9993cd9ac6eab688315a9659ba11baeb250c57a977ab850f1b195"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "c6201029f95e6d0f1249d872318d30a8e111a77f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/reviews/native-degree10-ward-runtime-cold-review_GUARD_DELTA.md",
+      "raw_bytes": 364,
+      "raw_sha256": "5e230a896299c8caaf45896d2260eb4a606e641a490bf13be9c954e7562295cc",
+      "stored_path": "kept/pr8079-native-degree10-ward-runtime-cold-review_GUARD_DELTA-6e5338cba9d0a716.md",
+      "stored_sha256": "5e230a896299c8caaf45896d2260eb4a606e641a490bf13be9c954e7562295cc"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "95fb14c57d20763bd32f98b178597aab5d7a7d80",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/reviews/native-degree10-ward-runtime-cold-review_INITIAL_REVIEW.md",
+      "raw_bytes": 939,
+      "raw_sha256": "e63c7f32c654fe8c7961d5fd2d51a0000f4c7c9f3f5fe63f0d7aedddb7fa719a",
+      "stored_path": "kept/pr8079-native-degree10-ward-runtime-cold-review_INITIAL_REVIEW-991c46668a03cb0c.md",
+      "stored_sha256": "e63c7f32c654fe8c7961d5fd2d51a0000f4c7c9f3f5fe63f0d7aedddb7fa719a"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "df6ea02b458ec669cfbdb42e766287f23fefecf4",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/reviews/native-degree11-independent-review_REVIEW.md",
+      "raw_bytes": 3844,
+      "raw_sha256": "747e55dcc7fb4a1653fbab10ff60ef499b1ab5541f0179844ba20ee252154cd7",
+      "stored_path": "kept/pr8079-native-degree11-independent-review_REVIEW-5a285395cf2662e7.md",
+      "stored_sha256": "747e55dcc7fb4a1653fbab10ff60ef499b1ab5541f0179844ba20ee252154cd7"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "43ea6a137e895bb76480deb1df9f388c2395d09d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/reviews/native-degree20-independent-review_REVIEW.md",
+      "raw_bytes": 2913,
+      "raw_sha256": "2adb4c260c3eb27c4c82d8cabc628fd375e4d972406db4b34cd35717cd6be23c",
+      "stored_path": "kept/pr8079-native-degree20-independent-review_REVIEW-2a4e5fd308464992.md",
+      "stored_sha256": "2adb4c260c3eb27c4c82d8cabc628fd375e4d972406db4b34cd35717cd6be23c"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "b9d4172a9b2e273f7c299a8094a711b64f18363c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/reviews/native-finite-moment-ward-cold-review_REVIEW.md",
+      "raw_bytes": 1813,
+      "raw_sha256": "a9f3f80ae6361b37f0b06fc84e08d449da5e976010e3f23004dd79b26e911ae7",
+      "stored_path": "kept/pr8079-native-finite-moment-ward-cold-review_REVIEW-ab31061d93476750.md",
+      "stored_sha256": "a9f3f80ae6361b37f0b06fc84e08d449da5e976010e3f23004dd79b26e911ae7"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "5abcfcc2c1a88284701a251d15c2d0c25bce8f24",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/reviews/native-omega5-independent-review_AFFECTED_CONFIRMATION.md",
+      "raw_bytes": 504,
+      "raw_sha256": "1279bccff4503274598a05fc0f7fcd5f280b349a6bd256fb276f750a4c5e9c27",
+      "stored_path": "kept/pr8079-native-omega5-independent-review_AFFECTED_CONFIRMATION-5e4be8c1378d3a80.md",
+      "stored_sha256": "1279bccff4503274598a05fc0f7fcd5f280b349a6bd256fb276f750a4c5e9c27"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "18cdc0b4256b2b3f2ab11fa41559ce36382e4d11",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/reviews/native-omega5-independent-review_REVIEW.md",
+      "raw_bytes": 2924,
+      "raw_sha256": "a28d9527ca85b9741022762fafda30dbe990be27dadc7d97fa3845433b20f690",
+      "stored_path": "kept/pr8079-native-omega5-independent-review_REVIEW-a2e124a8b288736c.md",
+      "stored_sha256": "a28d9527ca85b9741022762fafda30dbe990be27dadc7d97fa3845433b20f690"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "c6660addd27d484ece1561323859ca537e8edd05",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/reviews/native-omega5-math-cold-review_REVIEW.md",
+      "raw_bytes": 1275,
+      "raw_sha256": "d53460bf597657188ff377dafabd85d6ebce722d3dd6d0479c91e00f89a883d1",
+      "stored_path": "kept/pr8079-native-omega5-math-cold-review_REVIEW-6b09cddf826677e9.md",
+      "stored_sha256": "d53460bf597657188ff377dafabd85d6ebce722d3dd6d0479c91e00f89a883d1"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "1a1c7c36dae165a04bc6919355a869e6be127cab",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/reviews/native-omega5-root-independent-review_AFFECTED_PASS.md",
+      "raw_bytes": 536,
+      "raw_sha256": "414385df6f6cf956ebed6995a0583f7f37532045da701e764ba7aeda58432460",
+      "stored_path": "kept/pr8079-native-omega5-root-independent-review_AFFECTED_PASS-2f192c9b1855ef42.md",
+      "stored_sha256": "414385df6f6cf956ebed6995a0583f7f37532045da701e764ba7aeda58432460"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "1b34d9116da01bfab12b0307e9fa122609393a45",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/reviews/native-omega5-root-independent-review_REVIEW.md",
+      "raw_bytes": 2319,
+      "raw_sha256": "9000aa853c18c1dbe77394754ce6f6ad8afd4aaf3af1cdb3c1592a0acf2e23b2",
+      "stored_path": "kept/pr8079-native-omega5-root-independent-review_REVIEW-5f9bcabfec0fbfbe.md",
+      "stored_sha256": "9000aa853c18c1dbe77394754ce6f6ad8afd4aaf3af1cdb3c1592a0acf2e23b2"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "9790350466cb7fbd17ffb4f92f60caeadd1ba162",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/verification/CHECKPOINT83_REMOTE_VERIFICATION.json",
+      "raw_bytes": 392,
+      "raw_sha256": "f85f0163ebdfe35883b4a28e2de0b1484ac9ec32ef966a675dfb0e5e5e01f54c",
+      "stored_path": "kept/pr8079-CHECKPOINT83_REMOTE_VERIFICATION-1845141492fa6a48.json",
+      "stored_sha256": "f85f0163ebdfe35883b4a28e2de0b1484ac9ec32ef966a675dfb0e5e5e01f54c"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "c778ee3eeeb674f2dbac27b2c0b3e0e42dc365ce",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/verification/DELIVERY_CHECKS.json",
+      "raw_bytes": 263,
+      "raw_sha256": "cf4e30173833a3e2043d4a952f41e00eca2d488d26bd4b708bef5486e8776dc8",
+      "stored_path": "kept/pr8079-DELIVERY_CHECKS-d2c56bbdc5ae09fb.json",
+      "stored_sha256": "cf4e30173833a3e2043d4a952f41e00eca2d488d26bd4b708bef5486e8776dc8"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "aa1e3e98bb5063b75b8bceeb7f94ab0c0ce3b336",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/verification/DELIVERY_FREEZE.json",
+      "raw_bytes": 12302,
+      "raw_sha256": "b4d99cb2bcd4d9ebf5ca0d6a5c4db6726e5c56425207345f3ce0dfdcfec36b46",
+      "stored_path": "kept/pr8079-DELIVERY_FREEZE-a8ecc303daeb1e75.json",
+      "stored_sha256": "b4d99cb2bcd4d9ebf5ca0d6a5c4db6726e5c56425207345f3ce0dfdcfec36b46"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "53d9afc0a268773b05854d6a7b90c0a21b796973",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/verification/FINAL_PARENT_DELIVERY_REVIEW.md",
+      "raw_bytes": 788,
+      "raw_sha256": "9ef44c529d9885118023f3851ea2f64461febbfe4b8c7e72b5d264b33d1a41b1",
+      "stored_path": "kept/pr8079-FINAL_PARENT_DELIVERY_REVIEW-633f80ac774a2ce6.md",
+      "stored_sha256": "9ef44c529d9885118023f3851ea2f64461febbfe4b8c7e72b5d264b33d1a41b1"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "ac16ea0f95b7cba46098a88ca52f6d44db0715e9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/verification/GRAPH_RECEIPT.json",
+      "raw_bytes": 1070,
+      "raw_sha256": "dc0d6e74ffcbdf6c847ab415fa8ebd091382504303780f501843b9680dc3ecab",
+      "stored_path": "kept/pr8079-GRAPH_RECEIPT-f60aeb78bea3df79.json",
+      "stored_sha256": "dc0d6e74ffcbdf6c847ab415fa8ebd091382504303780f501843b9680dc3ecab"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "5435ed3ad2502005199985a41adfab6cdd3ccb9f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/verification/SOURCE_FREEZE.json",
+      "raw_bytes": 11959,
+      "raw_sha256": "3339677681183ed242cecce0493cab5dd7c0705763da2aafa490735267117caa",
+      "stored_path": "kept/pr8079-SOURCE_FREEZE-a1a84e1ad9392267.json",
+      "stored_sha256": "3339677681183ed242cecce0493cab5dd7c0705763da2aafa490735267117caa"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "25a125b6923d1d46d6982eea222aec4576cec69c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/verification/SUPPORT_OUTPUT.txt",
+      "raw_bytes": 292,
+      "raw_sha256": "c8d5fd31d833b68c4b9c5950f0a5daa4659e6bd723e3a680e59b4f357007920b",
+      "stored_path": "kept/pr8079-SUPPORT_OUTPUT-d1c35acb1406911c.txt",
+      "stored_sha256": "c8d5fd31d833b68c4b9c5950f0a5daa4659e6bd723e3a680e59b4f357007920b"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "a7a5ff59f978c9fd9dc659702f5317e2038479ff",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-finite-moment-ward-20260910/verification/VOCAB.json",
+      "raw_bytes": 153,
+      "raw_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "stored_path": "kept/pr8079-VOCAB-9a896678236a7417.json",
+      "stored_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    }
+  ],
+  "prefix": ".claude/science/physics-loops/native-finite-moment-ward-20260910/",
+  "revision": "181e182a14d358c8bca434a1eac398b27237ec8f",
+  "schema_version": 1,
+  "unique_blobs": {
+    "002b2b9958de7828dd18e99d5e927171e6158ca0": {
+      "occurrences": 1,
+      "raw_bytes": 350,
+      "raw_sha256": "10cc1c5a6fe34f9bba6107fba12fac9cd3c2a4d0c922a142575d48af4ae27407"
+    },
+    "00c3fdcfa14b943bd95337a9417be281623340b4": {
+      "occurrences": 1,
+      "raw_bytes": 1625,
+      "raw_sha256": "c353220ea34445aa4da1758316a70f742007dd0ffda9b311376b100fbbcd240a"
+    },
+    "0399c1c4a1737ec528de6b87df5767c661604309": {
+      "occurrences": 1,
+      "raw_bytes": 1951,
+      "raw_sha256": "d2f8e752e14a3c0ed9fd650d00d943eff698e293c5abe6c36beae661ce82d354"
+    },
+    "0a23d43891940da35d8956470dffef93465ef756": {
+      "occurrences": 1,
+      "raw_bytes": 4481,
+      "raw_sha256": "2f7af929ac09b5a44d64b021eac93e6721f91b8d95d0bd274e82b5a6cf5e1684"
+    },
+    "0c77b31609291398ff7c4a054f355d8504da2b41": {
+      "occurrences": 1,
+      "raw_bytes": 4805,
+      "raw_sha256": "69b82a7026e745866197529960eb9027b13290e74a7aea9431dfc29e4436a4d4"
+    },
+    "10560a1473665e4eb255f7433a7fdf1dd2e5cc07": {
+      "occurrences": 1,
+      "raw_bytes": 738,
+      "raw_sha256": "1250b9209fb6f5dd908490833d140c528f54f1c35eb2291183e75e01eca4db63"
+    },
+    "14d75e44d123bc544ccc1e5ac78801ae3e8f532b": {
+      "occurrences": 1,
+      "raw_bytes": 756,
+      "raw_sha256": "e7747c68a10434d40b2e4313e8abb529ccb984bba2df21af34c83b52636156bc"
+    },
+    "15f0122cdc07fdf8ec69f600e448f9262be2e052": {
+      "occurrences": 1,
+      "raw_bytes": 6892,
+      "raw_sha256": "28b1ecd5892bf41f48a88fcc79f4ee1f9f54933413b93870d85065f2e8eec829"
+    },
+    "174f8c1f73d92907abcbc281c213e18105be9622": {
+      "occurrences": 1,
+      "raw_bytes": 2993,
+      "raw_sha256": "7e63b20fdc0ca8a28d51cae376e12f60e796f2fe135eef29eb1ae1151e7176c2"
+    },
+    "18cdc0b4256b2b3f2ab11fa41559ce36382e4d11": {
+      "occurrences": 1,
+      "raw_bytes": 2924,
+      "raw_sha256": "a28d9527ca85b9741022762fafda30dbe990be27dadc7d97fa3845433b20f690"
+    },
+    "1a1c7c36dae165a04bc6919355a869e6be127cab": {
+      "occurrences": 1,
+      "raw_bytes": 536,
+      "raw_sha256": "414385df6f6cf956ebed6995a0583f7f37532045da701e764ba7aeda58432460"
+    },
+    "1a7351f8ee18af30deed6afb3f2e8aee91226665": {
+      "occurrences": 1,
+      "raw_bytes": 1201241,
+      "raw_sha256": "3bb4b1f9cee4d2aabc58ebcb1db3d94d1fbaf8ffa22e9e2fa16ec7176a0f35fa"
+    },
+    "1b34d9116da01bfab12b0307e9fa122609393a45": {
+      "occurrences": 1,
+      "raw_bytes": 2319,
+      "raw_sha256": "9000aa853c18c1dbe77394754ce6f6ad8afd4aaf3af1cdb3c1592a0acf2e23b2"
+    },
+    "1d7e0a8038fdbc06f2e68c30633e532ad39b97cc": {
+      "occurrences": 1,
+      "raw_bytes": 4814,
+      "raw_sha256": "e8588a2668e84d20abef1ae2acc827e798f6fb6bfb237f5b082c9786a8067b97"
+    },
+    "227817c29b645eef370bdc6acac5ab81d5754b53": {
+      "occurrences": 1,
+      "raw_bytes": 1521422,
+      "raw_sha256": "79720f3f049c648b934d4b0d0ddb0f922493c6105582f26ce7c8a3a306e40e2f"
+    },
+    "235faf5e2d3226332c9cbf37b865b8d2b2dce88d": {
+      "occurrences": 1,
+      "raw_bytes": 1826,
+      "raw_sha256": "e59e8ffa3d502c3b7a0e1d46a8b4c9395510233adbb880e0b173ce35b4dd45fd"
+    },
+    "25a125b6923d1d46d6982eea222aec4576cec69c": {
+      "occurrences": 1,
+      "raw_bytes": 292,
+      "raw_sha256": "c8d5fd31d833b68c4b9c5950f0a5daa4659e6bd723e3a680e59b4f357007920b"
+    },
+    "27fc654e07bb54b53a34816f289e7e59c84d4055": {
+      "occurrences": 1,
+      "raw_bytes": 1116,
+      "raw_sha256": "b8adc60274ca1693af4a653b142d5850925405371df24b53e0927c74ab94b786"
+    },
+    "2a42a538ee33325e917d9d737523dab8fbb93532": {
+      "occurrences": 1,
+      "raw_bytes": 1298,
+      "raw_sha256": "e07e28eb7703f6f04fecd6694b1e0db43e32c14b7546a2d6fb15b6bec33d010b"
+    },
+    "2cf87bca6b4039a701f2479986fd9ad9e33c6345": {
+      "occurrences": 1,
+      "raw_bytes": 1470,
+      "raw_sha256": "4b1fb102355f4d8bad10f555cbfc610b76f6d2ffb264088922b5e1aff885ec92"
+    },
+    "2e974ebd01d6ea60113c946c54dea79c6eddb63d": {
+      "occurrences": 1,
+      "raw_bytes": 1394369,
+      "raw_sha256": "102768f72a0eb22cbd0ce7578d6bf35cb609cf459faad16cc2d6553cf8316675"
+    },
+    "315954b750a24ded68d0815e631b918607485612": {
+      "occurrences": 1,
+      "raw_bytes": 18179,
+      "raw_sha256": "d560380280550d27fbb77e504b03587443fdf8796b2844d1f01ee61ef9341ac2"
+    },
+    "333608824e92a82cfa1f68fd942503d1589000f0": {
+      "occurrences": 1,
+      "raw_bytes": 5720,
+      "raw_sha256": "e0c5d1c3f28fc316f1540b3a8577c451e39bdcf6f2b8c6f574ce6b3081ec9f65"
+    },
+    "3526cc80090b7d3f65ec95b28d3f40bc833c8c05": {
+      "occurrences": 1,
+      "raw_bytes": 4179,
+      "raw_sha256": "ee92f2a5dbdd242cd8d56e9653dea1b5e8f4edd960debf47588375070f7b02d5"
+    },
+    "368cebaac4ae954a743f66a2d376752d471153c2": {
+      "occurrences": 1,
+      "raw_bytes": 947,
+      "raw_sha256": "9ff4f1bdd361a365ceb7cdc72f2982b95fb8911cb2084c647e4f047ecac9ea5e"
+    },
+    "3c4ffaac8213497dba18993ac9bf36adb1e52fc0": {
+      "occurrences": 1,
+      "raw_bytes": 2829,
+      "raw_sha256": "36d9bdb926134b9a76a5517ad0cdd032df89894a9e0e715b0214799c1c36437f"
+    },
+    "43ea6a137e895bb76480deb1df9f388c2395d09d": {
+      "occurrences": 1,
+      "raw_bytes": 2913,
+      "raw_sha256": "2adb4c260c3eb27c4c82d8cabc628fd375e4d972406db4b34cd35717cd6be23c"
+    },
+    "4961efa12a80be9a6024837dadb4fe53d1dbd19e": {
+      "occurrences": 1,
+      "raw_bytes": 357,
+      "raw_sha256": "26dce04b3e735ecb8bf84de66dbbf1bba7465450070c5b52732b5944ce1c92da"
+    },
+    "531a9e27cb0c594dd5238232e5531c530b9c3a51": {
+      "occurrences": 1,
+      "raw_bytes": 1040,
+      "raw_sha256": "7c20325f8bda8ab9bff14f3faf8da4b4aa4e1a344a4ec9ee5721000e4f4fef79"
+    },
+    "53b863f218066e95f7c2c319e9d501bc7b5c2c4d": {
+      "occurrences": 1,
+      "raw_bytes": 1115,
+      "raw_sha256": "0d5115c8cb68eca62d166d5063fa80cf6a72186f838086cf4e915328190b238f"
+    },
+    "53d9afc0a268773b05854d6a7b90c0a21b796973": {
+      "occurrences": 1,
+      "raw_bytes": 788,
+      "raw_sha256": "9ef44c529d9885118023f3851ea2f64461febbfe4b8c7e72b5d264b33d1a41b1"
+    },
+    "5435ed3ad2502005199985a41adfab6cdd3ccb9f": {
+      "occurrences": 1,
+      "raw_bytes": 11959,
+      "raw_sha256": "3339677681183ed242cecce0493cab5dd7c0705763da2aafa490735267117caa"
+    },
+    "573381d4790b3f070d16de232087a3c5de9158d1": {
+      "occurrences": 1,
+      "raw_bytes": 1674,
+      "raw_sha256": "ff47ae5deb6eb7644b55abec79937aefa80face8baaebd5a079d7d3042148c2f"
+    },
+    "57996fced0e315506c84f3de46574c81a25a5cd9": {
+      "occurrences": 1,
+      "raw_bytes": 282,
+      "raw_sha256": "d0df3cc25eeb8029f00db1653fb1626e74455173924ee18f116f9889beed5ab8"
+    },
+    "5abcfcc2c1a88284701a251d15c2d0c25bce8f24": {
+      "occurrences": 1,
+      "raw_bytes": 504,
+      "raw_sha256": "1279bccff4503274598a05fc0f7fcd5f280b349a6bd256fb276f750a4c5e9c27"
+    },
+    "61ef760d717e488bd39ac24b661729a0ff83ddfd": {
+      "occurrences": 1,
+      "raw_bytes": 1260,
+      "raw_sha256": "1a41b05873d962973659cf36c8a31afd549a34bf49bec8aec46bf50e681db289"
+    },
+    "6956041e18462a6df4c2a3d7e6a29eb5f1b22a50": {
+      "occurrences": 1,
+      "raw_bytes": 3148,
+      "raw_sha256": "2ad0df9a535b3a49d88ee4722f5db17cb380e774dbc6bd9e3b5bfbb362435e98"
+    },
+    "6a87759ccfcff90d6d18982741c01c95d603ba44": {
+      "occurrences": 1,
+      "raw_bytes": 693,
+      "raw_sha256": "d3a97f71534701993498d3836a1ad6373442f2be41c7030f77c177c3670e85e0"
+    },
+    "755b2cc4c5b42d3adefdb11801bc8a8189b60dac": {
+      "occurrences": 1,
+      "raw_bytes": 49404,
+      "raw_sha256": "672ce87da876f1b0943c07f037f50ab3e8789896814f6cad4819730648215b37"
+    },
+    "760d152316322161944ff62db514bb5e2ba9d192": {
+      "occurrences": 1,
+      "raw_bytes": 16076,
+      "raw_sha256": "bb524cd6abb3d18848d9e53f163b2d2459a57f2b1a07ecbef1e793c7d1cbf220"
+    },
+    "7a29994559c4a58a284789beb4ab9f34190c5485": {
+      "occurrences": 1,
+      "raw_bytes": 1075836,
+      "raw_sha256": "6d5864bd8ee47416a9938539de02db49db9a546fe384d1f755b8eaa84442263a"
+    },
+    "7d170a11298ae89e676848bd4f89b337fddc0a48": {
+      "occurrences": 1,
+      "raw_bytes": 1207187,
+      "raw_sha256": "ef2aeb1c395853fd89c2d0929bd8a44a9814fb34227fc42bd3c7361403d0e328"
+    },
+    "805faeec59f134067e08a2fa21bc71842bc04cdf": {
+      "occurrences": 1,
+      "raw_bytes": 1214,
+      "raw_sha256": "ec8059f855185e0136cc46bc2cc9a4502cb9c8bb49b1dd9d8dafecd55f75513f"
+    },
+    "952146469b1c9f4504364ca10bdae2e61d9c7621": {
+      "occurrences": 1,
+      "raw_bytes": 353,
+      "raw_sha256": "499910d7a30815bd09785e301f7ec1487148a9fa23e1c3322ee54e115f60fc68"
+    },
+    "95fb14c57d20763bd32f98b178597aab5d7a7d80": {
+      "occurrences": 1,
+      "raw_bytes": 939,
+      "raw_sha256": "e63c7f32c654fe8c7961d5fd2d51a0000f4c7c9f3f5fe63f0d7aedddb7fa719a"
+    },
+    "9790350466cb7fbd17ffb4f92f60caeadd1ba162": {
+      "occurrences": 1,
+      "raw_bytes": 392,
+      "raw_sha256": "f85f0163ebdfe35883b4a28e2de0b1484ac9ec32ef966a675dfb0e5e5e01f54c"
+    },
+    "98bf8a235ac3de4bf77be0934b52181dd50e7d86": {
+      "occurrences": 1,
+      "raw_bytes": 1371,
+      "raw_sha256": "3dabf36feb607e392695bf55661da7b8ff99b7733681b2eb831f43dc91a36522"
+    },
+    "9aea8001e631bdb9177fe5ce9fa476700ca3e065": {
+      "occurrences": 1,
+      "raw_bytes": 3910,
+      "raw_sha256": "85515031bbe6fba73dc098b7ea5f3dee16b08f12e6aa454269ebc479ada7e541"
+    },
+    "9e2693fea32eb5b58f8c71c14008baddf0d031b4": {
+      "occurrences": 1,
+      "raw_bytes": 1022,
+      "raw_sha256": "7cf22043bc6f622735944de6ed69922a56dc67461257b6145db8d9002595489e"
+    },
+    "a392ba0b1f33885bc2c7f07b3ae4262b2ee501cf": {
+      "occurrences": 1,
+      "raw_bytes": 1525315,
+      "raw_sha256": "e8986492685aebf5fb073fd5570cf123f743fe67a1e9568cc6e30296bf2300d5"
+    },
+    "a7a5ff59f978c9fd9dc659702f5317e2038479ff": {
+      "occurrences": 1,
+      "raw_bytes": 153,
+      "raw_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    "aa1e3e98bb5063b75b8bceeb7f94ab0c0ce3b336": {
+      "occurrences": 1,
+      "raw_bytes": 12302,
+      "raw_sha256": "b4d99cb2bcd4d9ebf5ca0d6a5c4db6726e5c56425207345f3ce0dfdcfec36b46"
+    },
+    "ac16ea0f95b7cba46098a88ca52f6d44db0715e9": {
+      "occurrences": 1,
+      "raw_bytes": 1070,
+      "raw_sha256": "dc0d6e74ffcbdf6c847ab415fa8ebd091382504303780f501843b9680dc3ecab"
+    },
+    "ad00f7ce03837d2a5684025f8f720e4157c7a20d": {
+      "occurrences": 1,
+      "raw_bytes": 2868,
+      "raw_sha256": "7176dc588b21a42f147a639f29c0b0b9bb6ef989c55243df146a9aa5310f7fef"
+    },
+    "b9d4172a9b2e273f7c299a8094a711b64f18363c": {
+      "occurrences": 1,
+      "raw_bytes": 1813,
+      "raw_sha256": "a9f3f80ae6361b37f0b06fc84e08d449da5e976010e3f23004dd79b26e911ae7"
+    },
+    "bd751a13f1aba165f29200100d0ce0ec03fbe5b2": {
+      "occurrences": 1,
+      "raw_bytes": 53207,
+      "raw_sha256": "2b946fc99f9d15773d63dab2cb88f793270bd006ff56370238157bcb3460b6b2"
+    },
+    "c6201029f95e6d0f1249d872318d30a8e111a77f": {
+      "occurrences": 1,
+      "raw_bytes": 364,
+      "raw_sha256": "5e230a896299c8caaf45896d2260eb4a606e641a490bf13be9c954e7562295cc"
+    },
+    "c6660addd27d484ece1561323859ca537e8edd05": {
+      "occurrences": 1,
+      "raw_bytes": 1275,
+      "raw_sha256": "d53460bf597657188ff377dafabd85d6ebce722d3dd6d0479c91e00f89a883d1"
+    },
+    "c778ee3eeeb674f2dbac27b2c0b3e0e42dc365ce": {
+      "occurrences": 1,
+      "raw_bytes": 263,
+      "raw_sha256": "cf4e30173833a3e2043d4a952f41e00eca2d488d26bd4b708bef5486e8776dc8"
+    },
+    "c78128d05bf92207003ecde2c074b09cdc547dcf": {
+      "occurrences": 1,
+      "raw_bytes": 4741,
+      "raw_sha256": "bac566d0ce040b693681523a8bb1a4c1e2c4e25a68e34189b9de3903fcb3d1e2"
+    },
+    "ca1f6bbd54218f01d694e7b6206d64dd29c86cc5": {
+      "occurrences": 1,
+      "raw_bytes": 1437,
+      "raw_sha256": "4e49bfdeb536f6435ba56ddd1c62e393dc020e7b867927522e8914edeac8347d"
+    },
+    "cc28d1982aa451ccc1f03ee347d1cb0bd3d4c6b5": {
+      "occurrences": 1,
+      "raw_bytes": 344,
+      "raw_sha256": "b58fedc3bd9c5597138d07890dee79a906ae9c78151cf417bee23f145df0165b"
+    },
+    "ce94ce34a00608b91c75fd424a59e2b7bc537b07": {
+      "occurrences": 1,
+      "raw_bytes": 733,
+      "raw_sha256": "26633a4efba127f9bf04a3f91805b22dde063bdb363e238fd10ffb4e8eed98f4"
+    },
+    "cf1eeb6ab8f53c678dd45a169733c144b2a409ee": {
+      "occurrences": 1,
+      "raw_bytes": 486,
+      "raw_sha256": "f37e9d896fcb0de4cd7dc333585996cd92b3cc0ee1eec259df8b8c393dd1479e"
+    },
+    "df6ea02b458ec669cfbdb42e766287f23fefecf4": {
+      "occurrences": 1,
+      "raw_bytes": 3844,
+      "raw_sha256": "747e55dcc7fb4a1653fbab10ff60ef499b1ab5541f0179844ba20ee252154cd7"
+    },
+    "f3667ae60a29af55e4e31c80c6c947eed2b41a1e": {
+      "occurrences": 1,
+      "raw_bytes": 223,
+      "raw_sha256": "ea4a7d8d2dc5691ead550773e36bb4db7bf426e20b05650505648e8ef8c40ae0"
+    },
+    "f92f7ecacb6f44faca43c150dae443e371df0b67": {
+      "occurrences": 1,
+      "raw_bytes": 285,
+      "raw_sha256": "11ef7592e774789e4ff4411a1c70d1c9e1ed31974f9bafe15354b2d084dd1319"
+    },
+    "fa5980d47ac5c599a21581731353745ea3bcc772": {
+      "occurrences": 1,
+      "raw_bytes": 1554,
+      "raw_sha256": "a785bc200ff9993cd9ac6eab688315a9659ba11baeb250c57a977ab850f1b195"
+    },
+    "fb999c699896db8defd37748ed077e31c687d8b9": {
+      "occurrences": 1,
+      "raw_bytes": 452,
+      "raw_sha256": "986894bd714d0c72508132c04b709af77620082d2c4eb98f9df6479f4c123881"
+    },
+    "fe7bc967dd830739988e4be33ed9eccc7b5f8611": {
+      "occurrences": 1,
+      "raw_bytes": 249,
+      "raw_sha256": "2d869661afbee9eddfbe787d22586dd44194b751cd741582470614c87cdd54a3"
+    }
+  }
+}

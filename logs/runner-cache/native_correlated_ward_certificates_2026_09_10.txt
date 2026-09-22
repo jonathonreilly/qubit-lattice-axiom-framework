@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/native_correlated_ward_certificates_2026_09_10.py
+runner_sha256: e52d053d6cce025277676397c6e35ed337637be5e96430b6fd597174b732ca79
+input_fingerprint_sha256: d792d3a387016dc51a577802d9014a979a18e7b7bdaddab997dcf1c01ccd89e5
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
+TOTAL: PASS=241 FAIL=0
+SUPPORT_ONLY: both signed-dual intervals contain zero; no native replay; integration and formal audit UNRUN
+per_element: exact finite synthetic identities and saved certificate semantics; original numerical arithmetic not replayed
+per_site: supplied local defect families and original Gaussian reference; no new physical lattice or state evaluation
+per_mode: preserved residual and variational modes, with both sign intervals still inconclusive
+per_block: immutable source/result bindings and semantic rejection controls; historical production budgets remain distinct
+lattice_wide: conditional analytical Ward and moment statements use linked proofs; no full alpha sign or model-selection calculation
+
+----- stderr -----
+

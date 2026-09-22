@@ -1,0 +1,6 @@
+{
+  "checks": 444,
+  "native_or_event_arithmetic_replays": 0,
+  "semantic_mutants": 6,
+  "status": "PASS_COMPACT_ONLY"
+}

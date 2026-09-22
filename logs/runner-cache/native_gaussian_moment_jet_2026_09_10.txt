@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/native_gaussian_moment_jet_2026_09_10.py
+runner_sha256: 83cd71c381cd893081bad74dcef762694838c974c9ea8e9940975a1177b08b12
+input_fingerprint_sha256: c67594fa8a2c434ee519760e8ee288f4bb0b8bfd51ba14871ad2a5027cea9cdb
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
+TOTAL: PASS=325 FAIL=0
+SUPPORT_ONLY: moment precision certified; Ward sign remains open; integration and formal audit UNRUN
+per_element: exact finite synthetic identities and saved certificate semantics; original numerical arithmetic not replayed
+per_site: supplied local defect families and original Gaussian reference; no new physical lattice or state evaluation
+per_mode: P/O classes and moments seven through ten; width certificates do not establish a Ward sign
+per_block: immutable source/result bindings and semantic rejection controls; historical production budgets remain distinct
+lattice_wide: conditional analytical Ward and moment statements use linked proofs; no full alpha sign or model-selection calculation
+
+----- stderr -----
+

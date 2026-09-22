@@ -1,0 +1,1205 @@
+{
+  "boundary": "Historical payload storage only; original paths/modes and every disposition remain distinct. No review or audit verdict.",
+  "entries": [
+    {
+      "encoding": "identity",
+      "git_blob": "a8c7e192c4bbb859aaca0be09dbfe921daf194e3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/ARTIFACT_PLAN.md",
+      "raw_bytes": 292,
+      "raw_sha256": "39437d8e898edb4b31e9931c6cf53593fa2821681289b36730ecab3b7bed7ec4",
+      "stored_path": "kept/pr8082-ARTIFACT_PLAN-5a8a2b441ec1dded.md",
+      "stored_sha256": "39437d8e898edb4b31e9931c6cf53593fa2821681289b36730ecab3b7bed7ec4"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "eee1c700c52ac1048f6e68c9f6df4c1440bd8255",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/ASSUMPTIONS_AND_IMPORTS.md",
+      "raw_bytes": 447,
+      "raw_sha256": "71db9a5599466b1e3d5595cc29da885f4d855b2bee0509e150f4ac7fb039a7fd",
+      "stored_path": "kept/pr8082-ASSUMPTIONS_AND_IMPORTS-04947ad72d106df1.md",
+      "stored_sha256": "71db9a5599466b1e3d5595cc29da885f4d855b2bee0509e150f4ac7fb039a7fd"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "4a1d9e9866c4c7ea26f74f2d550de6d2e0ddd9d7",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/CANONICAL_SOURCE_FREEZE.json",
+      "raw_bytes": 13455,
+      "raw_sha256": "73fff219879a858673e101a41144044145242c3ddab01a23d94150cc6a6ff4c9",
+      "stored_path": "kept/pr8082-CANONICAL_SOURCE_FREEZE-fbc8c8e701ae0d2d.json",
+      "stored_sha256": "73fff219879a858673e101a41144044145242c3ddab01a23d94150cc6a6ff4c9"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "0330cc6fbaeadf40bfcb23898b70836bdd790e6f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/CLAIM_STATUS_CERTIFICATE.md",
+      "raw_bytes": 311,
+      "raw_sha256": "6633330fd94ff1e51b9413b99d023cc59da125c5e6688393a9cf8a6b4156a58a",
+      "stored_path": "kept/pr8082-CLAIM_STATUS_CERTIFICATE-4a3d4f79e164376b.md",
+      "stored_sha256": "6633330fd94ff1e51b9413b99d023cc59da125c5e6688393a9cf8a6b4156a58a"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "a2bb021487aee4434a6e71d9826eca9a6f2f1220",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/DELIVERY_FREEZE.json",
+      "raw_bytes": 14524,
+      "raw_sha256": "597f4a8b70ad18b591665a3a2e0a67240d1d680fb5ab49aa1dcf9932b7b2d4c1",
+      "stored_path": "kept/pr8082-DELIVERY_FREEZE-49f85f2f2ce6e6cc.json",
+      "stored_sha256": "597f4a8b70ad18b591665a3a2e0a67240d1d680fb5ab49aa1dcf9932b7b2d4c1"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "e608b876202e0eeffe277f4a1c67cd9e479f2115",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/GOAL.md",
+      "raw_bytes": 121,
+      "raw_sha256": "d4d76c890f6dcadbee169d395bbbfa666c15612172ec989e48e33d7cf15f8227",
+      "stored_path": "kept/pr8082-GOAL-525566f7a8b7cb8d.md",
+      "stored_sha256": "d4d76c890f6dcadbee169d395bbbfa666c15612172ec989e48e33d7cf15f8227"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "32373c19e700b3df680e5c9dd118550884b64e3b",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/HANDOFF.md",
+      "raw_bytes": 468,
+      "raw_sha256": "c8589629f15c5c470f53aa3285628ded64880408b65d6c2d3394fb8d310a50cb",
+      "stored_path": "kept/pr8082-HANDOFF-9ef67db77ea9ef6f.md",
+      "stored_sha256": "c8589629f15c5c470f53aa3285628ded64880408b65d6c2d3394fb8d310a50cb"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "13c4dfa8b140870456668fa19e67f4fc2f0126f3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/IMPORT_PROVENANCE.json",
+      "raw_bytes": 15719,
+      "raw_sha256": "3f2fe1e137cfdc41c7ca8cb20519ba2526ce0590534c27a5531acdd20ea0ad1c",
+      "stored_path": "kept/pr8082-IMPORT_PROVENANCE-99dd1c01ed11f753.json",
+      "stored_sha256": "3f2fe1e137cfdc41c7ca8cb20519ba2526ce0590534c27a5531acdd20ea0ad1c"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "72fc94020cd3e11a0e1e32b674b964eeff48cf25",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/LITERATURE_BRIDGES.md",
+      "raw_bytes": 239,
+      "raw_sha256": "d6ff89dfd213111f7422e6c7a6131663b49cd6e65b0720023d5cdeb84abb9260",
+      "stored_path": "kept/pr8082-LITERATURE_BRIDGES-ae1d413e72d87337.md",
+      "stored_sha256": "d6ff89dfd213111f7422e6c7a6131663b49cd6e65b0720023d5cdeb84abb9260"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "2fe9549de7f8d18d0d41d49a5ed38ae1c110fa8d",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/NO_GO_LEDGER.md",
+      "raw_bytes": 320,
+      "raw_sha256": "697eaea00662cc298d8c2a125274fda3ef6c41363ca090d7066dd8a642da90e1",
+      "stored_path": "kept/pr8082-NO_GO_LEDGER-47d6880ce44b1ce7.md",
+      "stored_sha256": "697eaea00662cc298d8c2a125274fda3ef6c41363ca090d7066dd8a642da90e1"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "627d2f110a81d356baf127ea42cfa4512ef7ad97",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/OPPORTUNITY_QUEUE.md",
+      "raw_bytes": 277,
+      "raw_sha256": "1428b3f36bb756650bd77167e5dc176cc5946c05e51a89de9071560fb42a26d7",
+      "stored_path": "kept/pr8082-OPPORTUNITY_QUEUE-ccb74c0b7866140d.md",
+      "stored_sha256": "1428b3f36bb756650bd77167e5dc176cc5946c05e51a89de9071560fb42a26d7"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "30c03b1afa73efa939108bc77280fa0d0e8b2803",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/PR_BACKLOG.md",
+      "raw_bytes": 137,
+      "raw_sha256": "ebb2eb5e333c0e7ae01eff31d38a1a17a3fad0c5dd41ec6db8370a744334cb3f",
+      "stored_path": "kept/pr8082-PR_BACKLOG-b978f18b90eeb9e7.md",
+      "stored_sha256": "ebb2eb5e333c0e7ae01eff31d38a1a17a3fad0c5dd41ec6db8370a744334cb3f"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "d017007fc815b2dfa3ce482e7d3b92629928b8fd",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/RECOVERY.md",
+      "raw_bytes": 286,
+      "raw_sha256": "fa5931688eb4534f0e9c09e438091f8dbdbffdc181f998074ca6900e9da23eee",
+      "stored_path": "kept/pr8082-RECOVERY-23a7a88823d021c5.md",
+      "stored_sha256": "fa5931688eb4534f0e9c09e438091f8dbdbffdc181f998074ca6900e9da23eee"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "c31f2cd5abec7dc26018eda747d63d64db809018",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/RECOVERY_MAP.json",
+      "raw_bytes": 25394,
+      "raw_sha256": "166d28f4f317d3341d2a342a929ade91790bb0a1d9317f86323d9947ccae8b21",
+      "stored_path": "kept/pr8082-RECOVERY_MAP-980fa11291d7106f.json",
+      "stored_sha256": "166d28f4f317d3341d2a342a929ade91790bb0a1d9317f86323d9947ccae8b21"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "55495f5811f99f718f38b7f325461eb7679fbd31",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/REVIEW_HISTORY.md",
+      "raw_bytes": 941,
+      "raw_sha256": "ac18e7342e752fd8f2cafe31b40c969901e4148777f0e013bd25f49e8e2ef027",
+      "stored_path": "kept/pr8082-REVIEW_HISTORY-3f4cb79c836849bf.md",
+      "stored_sha256": "ac18e7342e752fd8f2cafe31b40c969901e4148777f0e013bd25f49e8e2ef027"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "eddfec7f01136147b099c0e0a36a54176f4fcd65",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/ROUTE_PORTFOLIO.md",
+      "raw_bytes": 284,
+      "raw_sha256": "d8360399c6883c033f614dfa4ee656ecbfd7fa13de56bebeeeb7141c58da5381",
+      "stored_path": "kept/pr8082-ROUTE_PORTFOLIO-026cc4e1e794b8fa.md",
+      "stored_sha256": "d8360399c6883c033f614dfa4ee656ecbfd7fa13de56bebeeeb7141c58da5381"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "1f7084b9694575485cf6b61cf160f0cdc3d457a2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/STATE.yaml",
+      "raw_bytes": 716,
+      "raw_sha256": "6db7b83d94f17eb7bc7b49966a6233901ebcce6deef1ccc6731bd9e71d063844",
+      "stored_path": "kept/pr8082-STATE-3b9688acc891237e.yaml",
+      "stored_sha256": "6db7b83d94f17eb7bc7b49966a6233901ebcce6deef1ccc6731bd9e71d063844"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "873615b832e6f77082cfb622ede5a0d33a3071e9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/TRACE_GATE.md",
+      "raw_bytes": 284,
+      "raw_sha256": "7472ed2a762f7794513fbb16b3ae4d12fbfb2bff5ca53809ce79a86e96f90dfa",
+      "stored_path": "kept/pr8082-TRACE_GATE-f67515f6cce5b41d.md",
+      "stored_sha256": "7472ed2a762f7794513fbb16b3ae4d12fbfb2bff5ca53809ce79a86e96f90dfa"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "daaaf0108b6479125cd44e3e88d017f93d56b253",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/CHECK_RECEIPT.json",
+      "raw_bytes": 335,
+      "raw_sha256": "01d1a854a163002caa2711835e8724b744236d2a24457af7883f861eb95afb09",
+      "stored_path": "kept/pr8082-CHECK_RECEIPT-10cfbfe22f948ddf.json",
+      "stored_sha256": "01d1a854a163002caa2711835e8724b744236d2a24457af7883f861eb95afb09"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "a48f79ff174d8d0a696198a6e4c151d1cf4324f1",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/IMPORTS.json",
+      "raw_bytes": 9403,
+      "raw_sha256": "4552d49674876cc05847676545d4ede33f5785d611ceb54bbbe5adac031bb805",
+      "stored_path": "kept/pr8082-IMPORTS-fe25023672e7d60e.json",
+      "stored_sha256": "4552d49674876cc05847676545d4ede33f5785d611ceb54bbbe5adac031bb805"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "1870c5da7cc0e9ad9e05a2f2a7b86336084d8762",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/NOTE.md",
+      "raw_bytes": 6022,
+      "raw_sha256": "cb28a413092b019a70ba8d1f8128cee73d0fb2ed9732b5919c808126a82b6229",
+      "stored_path": "kept/pr8082-NOTE-c17a9fa8eff6485e.md",
+      "stored_sha256": "cb28a413092b019a70ba8d1f8128cee73d0fb2ed9732b5919c808126a82b6229"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "c39f07181558803a67b6f0ee5e381f9c96c886d2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/SOURCE_FREEZE.json",
+      "raw_bytes": 4799,
+      "raw_sha256": "e082acb7801b0d5b4be7415c6a44f7fd91059b4c225bfccb9005fb3d5a86eec5",
+      "stored_path": "kept/pr8082-SOURCE_FREEZE-1a9a1f664e1b6f3a.json",
+      "stored_sha256": "e082acb7801b0d5b4be7415c6a44f7fd91059b4c225bfccb9005fb3d5a86eec5"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "d86057cee4fe3f50ed9abd8b65c0e420bc41fa2f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/STATUS.json",
+      "raw_bytes": 250,
+      "raw_sha256": "f7452ef42ccef9384a703dc07a7419aaa6c70f84d7428484d630af24af87d282",
+      "stored_path": "kept/pr8082-STATUS-3c8cae35f7133685.json",
+      "stored_sha256": "f7452ef42ccef9384a703dc07a7419aaa6c70f84d7428484d630af24af87d282"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "8cc543e0f3241f7ef5e32f99e36f4c09961d23c0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/check.py",
+      "raw_bytes": 6968,
+      "raw_sha256": "a2afdaaf391731a5133290b0d9f9e58ed8186d155710bacefa10be7725d5d0ea",
+      "stored_path": "kept/pr8082-check-2f5e8875ded74710.py",
+      "stored_sha256": "a2afdaaf391731a5133290b0d9f9e58ed8186d155710bacefa10be7725d5d0ea"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "ba75b336c44b20f9851382a2a18782a4780a08bc",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/high/BINDING.json",
+      "raw_bytes": 3685,
+      "raw_sha256": "decf8fe272b0f658e5e36a0c95980b23df1f4dbb9d615734f727484491b8054e",
+      "stored_path": "kept/pr8082-BINDING-6c06f8b858d8ec1c.json",
+      "stored_sha256": "decf8fe272b0f658e5e36a0c95980b23df1f4dbb9d615734f727484491b8054e"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "ba75b336c44b20f9851382a2a18782a4780a08bc",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/sources/native-gaussian-high-moment-runtime-design-BINDING.json",
+      "raw_bytes": 3685,
+      "raw_sha256": "decf8fe272b0f658e5e36a0c95980b23df1f4dbb9d615734f727484491b8054e",
+      "stored_path": "kept/pr8082-native-gaussian-high-moment-runtime-design-BINDING-99ebcfd9bd11eef6.json",
+      "stored_sha256": "decf8fe272b0f658e5e36a0c95980b23df1f4dbb9d615734f727484491b8054e"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "180acbc767f8d61fddf97b8055d76cad9e62b160",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/high/EVENTS.ndjson",
+      "raw_bytes": 354641,
+      "raw_sha256": "4f9190c57baaa4ec3f69cae2f4a8ca0c35b365b7b024035a3d951a055998c831",
+      "stored_path": "kept/pr8082-EVENTS-33de4df8fc25d68a.ndjson",
+      "stored_sha256": "4f9190c57baaa4ec3f69cae2f4a8ca0c35b365b7b024035a3d951a055998c831"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "b3e4c78388cc54491af515e94596cccf1dc48647",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/high/PARTIAL.json",
+      "raw_bytes": 3968,
+      "raw_sha256": "495f439d8cbe9ee6f05753119a5a3b50a953db22aa844867e5078e3c5089bb2d",
+      "stored_path": "kept/pr8082-PARTIAL-c3e50823929bbb64.json",
+      "stored_sha256": "495f439d8cbe9ee6f05753119a5a3b50a953db22aa844867e5078e3c5089bb2d"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "795e8ce1ddf2962cf31ea9cf2bb2ad4113b9ee93",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/high/RECEIPT.json",
+      "raw_bytes": 1152,
+      "raw_sha256": "f9c19a3970ff17e3141470fcf6ac8781b4d2c6d91b7c389a30f8ab429c18a354",
+      "stored_path": "kept/pr8082-RECEIPT-5471bdf533cb10c0.json",
+      "stored_sha256": "f9c19a3970ff17e3141470fcf6ac8781b4d2c6d91b7c389a30f8ab429c18a354"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "505c35d10335ae555e123ec2b3bcaa0732b9e968",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/high/RESULT.json",
+      "raw_bytes": 3865,
+      "raw_sha256": "7be883d33039bbc8dade6f217a7da8e37356b6e5c785cc4fc68c81eaa548b6b0",
+      "stored_path": "kept/pr8082-RESULT-d7bf302c2b86ca8a.json",
+      "stored_sha256": "7be883d33039bbc8dade6f217a7da8e37356b6e5c785cc4fc68c81eaa548b6b0"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "022667a96e98129cea02a8e5ba8cf4f61503589f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/high/ROOT_ACCEPTANCE.json",
+      "raw_bytes": 2387,
+      "raw_sha256": "2a9dc795f4e90acbf21fec14e219b721c2d3d06d59657adaed291974c44997b8",
+      "stored_path": "kept/pr8082-ROOT_ACCEPTANCE-83e8e86fbd9093af.json",
+      "stored_sha256": "2a9dc795f4e90acbf21fec14e219b721c2d3d06d59657adaed291974c44997b8"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "8991c82bc10cf2cf440c573717336adf4b878c59",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/high/ROOT_FREEZE.json",
+      "raw_bytes": 1313,
+      "raw_sha256": "7d6247b6f7c2215d9afa2d7774e94934dcb0908c80b2fddd018c0b775439413c",
+      "stored_path": "kept/pr8082-ROOT_FREEZE-30401bbbf712a0f2.json",
+      "stored_sha256": "7d6247b6f7c2215d9afa2d7774e94934dcb0908c80b2fddd018c0b775439413c"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "93f52153b4061f5a3929aea34919a6e49c12104a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/high/RUNTIME_FREEZE.json",
+      "raw_bytes": 3262900,
+      "raw_sha256": "2500da35a25b2d2bebd1eb11bd09363d96c31a9c42d33fe20431676cc0cb0cd9",
+      "stored_path": "kept/pr8082-RUNTIME_FREEZE-573b8063d116939d.json",
+      "stored_sha256": "2500da35a25b2d2bebd1eb11bd09363d96c31a9c42d33fe20431676cc0cb0cd9"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "b669c8bbfb76e8786ebb6dfe7b24e9d775194f48",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/high/STARTED.json",
+      "raw_bytes": 285,
+      "raw_sha256": "e81cbda58f58087abdf813f7fa12c64a40bd069b39d300b0df66e101e97fa594",
+      "stored_path": "kept/pr8082-STARTED-c9d88df5684f3bc7.json",
+      "stored_sha256": "e81cbda58f58087abdf813f7fa12c64a40bd069b39d300b0df66e101e97fa594"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "3a8974db16d2d76d1a3887fb3e300a1a45ea388a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/high/TABLES.json",
+      "raw_bytes": 22601,
+      "raw_sha256": "d5f3f0de18514087e0a4d82c46ada8aa19f79a873c9e3f06daaa6b4475e6bc88",
+      "stored_path": "kept/pr8082-TABLES-c7879006c6f0eac2.json",
+      "stored_sha256": "d5f3f0de18514087e0a4d82c46ada8aa19f79a873c9e3f06daaa6b4475e6bc88"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "7cfe3eda2552a733e1f4cadd5f608b1bd1073ca9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/high/WORKER_COMPLETE.json",
+      "raw_bytes": 355,
+      "raw_sha256": "51c2f32ac62d5ba2f8dba0a774c4e8ef239fff4c180774a3e5ac24c5a5bc39c9",
+      "stored_path": "kept/pr8082-WORKER_COMPLETE-14597ec64000c89a.json",
+      "stored_sha256": "51c2f32ac62d5ba2f8dba0a774c4e8ef239fff4c180774a3e5ac24c5a5bc39c9"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "92878482b2fde4e2e4a34f3c30f17056fcf3a50a",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/omega/BINDING.json",
+      "raw_bytes": 1077421,
+      "raw_sha256": "42a4ac65dca346eb6cf2bc5f136f4f849df169f89f266123dfbf794e9fc2013c",
+      "stored_path": "kept/pr8082-BINDING-e04c4b8d74eb73bb.json",
+      "stored_sha256": "42a4ac65dca346eb6cf2bc5f136f4f849df169f89f266123dfbf794e9fc2013c"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "a26aeffec284fc6b19fb4128c639b4e197952404",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/omega/PARTIAL.json",
+      "raw_bytes": 2886,
+      "raw_sha256": "c838b5b6ad7441b2cbd98c7cc6f4ee0239865903385fd63aeb6b780ea456cb82",
+      "stored_path": "kept/pr8082-PARTIAL-da4c8e79420793d9.json",
+      "stored_sha256": "c838b5b6ad7441b2cbd98c7cc6f4ee0239865903385fd63aeb6b780ea456cb82"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "3838754dc9dbc0ef9e81338f7f746ef51050e156",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/omega/RECEIPT.json",
+      "raw_bytes": 3516,
+      "raw_sha256": "dc3fe80c92db83dce304b3157fefb115e414b66780da1cb0a909710581bfe547",
+      "stored_path": "kept/pr8082-RECEIPT-da214dd3bb66837e.json",
+      "stored_sha256": "dc3fe80c92db83dce304b3157fefb115e414b66780da1cb0a909710581bfe547"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "eb45e0447149778472ee2110792fd36f97e53842",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/omega/RESULT.json",
+      "raw_bytes": 1379,
+      "raw_sha256": "32952a5c24c679d23326688a114e7213fb3f2a8c6da58daf435acc9fa2a88df9",
+      "stored_path": "kept/pr8082-RESULT-408bcd02cf0165a2.json",
+      "stored_sha256": "32952a5c24c679d23326688a114e7213fb3f2a8c6da58daf435acc9fa2a88df9"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "2c58fcf0207833bfd347a2759d23312fe6abed23",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/omega/ROOT_ACCEPTANCE.json",
+      "raw_bytes": 336260,
+      "raw_sha256": "a03991147f31f5da750746f226207e9d98141ec2c0688495b43e9a5fd28f1262",
+      "stored_path": "kept/pr8082-ROOT_ACCEPTANCE-a5b1aaa2161e0e13.json",
+      "stored_sha256": "a03991147f31f5da750746f226207e9d98141ec2c0688495b43e9a5fd28f1262"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "338ef3b8cb0697642da28a722c91d52348d51a35",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/omega/ROOT_FREEZE.json",
+      "raw_bytes": 1083,
+      "raw_sha256": "ae90377953e05bd39f3e4d8da06efc305be67dfe2612a9a15d56e0539d140539",
+      "stored_path": "kept/pr8082-ROOT_FREEZE-c38ad1943ab3a9fc.json",
+      "stored_sha256": "ae90377953e05bd39f3e4d8da06efc305be67dfe2612a9a15d56e0539d140539"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "05814e9c9be481c875698e1bbb77ca01bdbdf07e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/omega/RUNTIME_FREEZE.json",
+      "raw_bytes": 2798986,
+      "raw_sha256": "e7b3aa0412b7f3370e27559789c5f9ec74cae9d42fddcd2df477919fdcb0ce85",
+      "stored_path": "kept/pr8082-RUNTIME_FREEZE-465fba6bd6efc4eb.json",
+      "stored_sha256": "e7b3aa0412b7f3370e27559789c5f9ec74cae9d42fddcd2df477919fdcb0ce85"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "7b39ad33215f46a4ae7d2b8ddaa7fc46870f5628",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/omega/STARTED.json",
+      "raw_bytes": 289,
+      "raw_sha256": "ccac01f446f07d67a4dbc7adcf00e01249b74e45facf8a8f44bba4b2b87e56d3",
+      "stored_path": "kept/pr8082-STARTED-9c19a2dc773e2f5b.json",
+      "stored_sha256": "ccac01f446f07d67a4dbc7adcf00e01249b74e45facf8a8f44bba4b2b87e56d3"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "97a3b630bfe74147d8a82a2c47a11c0b9fea06e2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/omega/WORKER_COMPLETE.json",
+      "raw_bytes": 351,
+      "raw_sha256": "20319feae996f1b8b3b5e7994ce5025deb1748545a7613c4fd1742d7bd0bd9a1",
+      "stored_path": "kept/pr8082-WORKER_COMPLETE-a54ff32a835e30c4.json",
+      "stored_sha256": "20319feae996f1b8b3b5e7994ce5025deb1748545a7613c4fd1742d7bd0bd9a1"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "899fe8b42032425f4e3c69ee998ac9131e7506c3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/proofs/native-gaussian-high-moment-parent-review-REVIEW.md",
+      "raw_bytes": 4259,
+      "raw_sha256": "215ee9b392bc12f23ad79ab7ad59c0572949e1d82623ef3cdd9266a7bdbf4dc2",
+      "stored_path": "kept/pr8082-native-gaussian-high-moment-parent-review-REVIEW-f052d6f81f30f6d0.md",
+      "stored_sha256": "215ee9b392bc12f23ad79ab7ad59c0572949e1d82623ef3cdd9266a7bdbf4dc2"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "a9f5963e928556fc2ef309b333dadb33e1fe88b2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/proofs/native-gaussian-jet-degree-cold-review-DERIVATION.md",
+      "raw_bytes": 7408,
+      "raw_sha256": "9e8555db395ddbffc3b4542a9baac863ecf24c830c0e1822b03c02b4b7d604f5",
+      "stored_path": "kept/pr8082-native-gaussian-jet-degree-cold-review-DERIVATION-981c4a3b471adce6.md",
+      "stored_sha256": "9e8555db395ddbffc3b4542a9baac863ecf24c830c0e1822b03c02b4b7d604f5"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "318405c940fabeba62f37750b65f1213b3331793",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/proofs/native-gaussian-jet-root-cold-review-REVIEW.md",
+      "raw_bytes": 2446,
+      "raw_sha256": "6f3426fb8f7c1d3dee59f765c8fbc9923e9baa619ebe956f0d481b7732bdd47d",
+      "stored_path": "kept/pr8082-native-gaussian-jet-root-cold-review-REVIEW-5bf86ae196c3b991.md",
+      "stored_sha256": "6f3426fb8f7c1d3dee59f765c8fbc9923e9baa619ebe956f0d481b7732bdd47d"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "f24c431e0c143f98fbc3e59d4970ee3cad548565",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/proofs/native-gaussian-moment-jet-cold-review-REVIEW.md",
+      "raw_bytes": 5534,
+      "raw_sha256": "eea8f71321083036cf856590ac5997c4d789c0fb5d327abc345c364cb9eb7423",
+      "stored_path": "kept/pr8082-native-gaussian-moment-jet-cold-review-REVIEW-a2bb960eff72d75e.md",
+      "stored_sha256": "eea8f71321083036cf856590ac5997c4d789c0fb5d327abc345c364cb9eb7423"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "0fdf96b275db2beebfdcde031a0e7f9acd72813f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/proofs/native-gaussian-moment-jet-parent-synthesis-REVIEW.md",
+      "raw_bytes": 5366,
+      "raw_sha256": "9f4cff1dd3bda26388f8ed65b8847cc811f6e41c55e35cf132520142dacd4854",
+      "stored_path": "kept/pr8082-native-gaussian-moment-jet-parent-synthesis-REVIEW-a47dbfa67a870e84.md",
+      "stored_sha256": "9f4cff1dd3bda26388f8ed65b8847cc811f6e41c55e35cf132520142dacd4854"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "9476bca849bb8068d019c493c4c5ecedd0e90698",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/proofs/native-gaussian-moment-jet-stretch-DERIVATION.md",
+      "raw_bytes": 6541,
+      "raw_sha256": "0b99a00b3dee9736de38a00edf25bb2f137bf23ed701c3186c29ea06768223d0",
+      "stored_path": "kept/pr8082-native-gaussian-moment-jet-stretch-DERIVATION-0e7bc42dc08458ce.md",
+      "stored_sha256": "0b99a00b3dee9736de38a00edf25bb2f137bf23ed701c3186c29ea06768223d0"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "724909d309a3d9ac1e46efda9af60db495980912",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/proofs/native-omega79-root-cold-review-REVIEW.md",
+      "raw_bytes": 2123,
+      "raw_sha256": "7ac9d296974e07a35b499a7e1fe5452fe32d6b512638e192acdfa0a694fe473b",
+      "stored_path": "kept/pr8082-native-omega79-root-cold-review-REVIEW-305150d91fadc76e.md",
+      "stored_sha256": "7ac9d296974e07a35b499a7e1fe5452fe32d6b512638e192acdfa0a694fe473b"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "ece38c508b59c2bc44d94c0033d16700555eb3f9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/sources/native-gaussian-high-moment-runtime-design-PROTOCOL.md",
+      "raw_bytes": 4073,
+      "raw_sha256": "7efd27b455bf233bb6c6a8c2340069423cce100f312e7fbc04566de88e0c37b9",
+      "stored_path": "kept/pr8082-native-gaussian-high-moment-runtime-design-PROTOCOL-4bd635a4fa599bfa.md",
+      "stored_sha256": "7efd27b455bf233bb6c6a8c2340069423cce100f312e7fbc04566de88e0c37b9"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "005c0ec9b9f3da6f99ce1e5bab90339b82733153",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/sources/native-gaussian-high-moment-runtime-design-adapter.py",
+      "raw_bytes": 1084,
+      "raw_sha256": "da68c7449d8da0252c0fc4a08e7be355c7cc7e7e09bc4bc5765423a95ebca2ac",
+      "stored_path": "kept/pr8082-native-gaussian-high-moment-runtime-design-adapter-36d04f424def5b03.py",
+      "stored_sha256": "da68c7449d8da0252c0fc4a08e7be355c7cc7e7e09bc4bc5765423a95ebca2ac"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "35ea16755dd19d5a8e9ecf98632d08b020781cb0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/sources/native-gaussian-high-moment-runtime-design-core.py",
+      "raw_bytes": 5004,
+      "raw_sha256": "4a64258f93276fc0f24ac23ab65c91953f0b45a9ca2cc2182f9634c17d8cfd94",
+      "stored_path": "kept/pr8082-native-gaussian-high-moment-runtime-design-core-86653ef9f34d9869.py",
+      "stored_sha256": "4a64258f93276fc0f24ac23ab65c91953f0b45a9ca2cc2182f9634c17d8cfd94"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "a67da7cd43e3ff0c26c0e4e6825e099112ceca69",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/sources/native-gaussian-high-moment-runtime-design-engine.py",
+      "raw_bytes": 4441,
+      "raw_sha256": "e1c4a91afffb077714a168676245165c3e96f4751d0acc7c007e01567cf311c3",
+      "stored_path": "kept/pr8082-native-gaussian-high-moment-runtime-design-engine-8e00267a41aebf04.py",
+      "stored_sha256": "e1c4a91afffb077714a168676245165c3e96f4751d0acc7c007e01567cf311c3"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "2f4897f80b387aadbe1d74094f79362321769b96",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/sources/native-gaussian-high-moment-runtime-design-loader.py",
+      "raw_bytes": 6876,
+      "raw_sha256": "af978ca4d9b85199ebd5c1fab42acaa33179418c5ae913f160a6af8742223986",
+      "stored_path": "kept/pr8082-native-gaussian-high-moment-runtime-design-loader-08fd56b87f9b3d61.py",
+      "stored_sha256": "af978ca4d9b85199ebd5c1fab42acaa33179418c5ae913f160a6af8742223986"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "85ec0c2d0941bcc36cf9246df3737ad99b851150",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/sources/native-gaussian-high-moment-runtime-design-worker.py",
+      "raw_bytes": 1518,
+      "raw_sha256": "add45780d52b654d11db96ffb3e60f034e841b2504437c055754219fa2bebab9",
+      "stored_path": "kept/pr8082-native-gaussian-high-moment-runtime-design-worker-cd4d0de236c0901f.py",
+      "stored_sha256": "add45780d52b654d11db96ffb3e60f034e841b2504437c055754219fa2bebab9"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "4a1b6c07b825bc95896be16647ca8656d4b9ebf2",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/sources/native-gaussian-jet-root-review-independent.py",
+      "raw_bytes": 4871,
+      "raw_sha256": "b9677af35f9912cd1dd7afffd7563c7c5029e6d0fd7097bf90f8fe3bb2e31449",
+      "stored_path": "kept/pr8082-native-gaussian-jet-root-review-independent-8ad89959cde6e1bf.py",
+      "stored_sha256": "b9677af35f9912cd1dd7afffd7563c7c5029e6d0fd7097bf90f8fe3bb2e31449"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "d08e5f8453ff9c8af75539a0d6c7a359fb48d81f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/sources/native-gaussian-jet-root-review-run_once.py",
+      "raw_bytes": 6442,
+      "raw_sha256": "f40ac8af4045be6705aefaae176798504dc6f3404d3e91cd7f32e9a959646ed0",
+      "stored_path": "kept/pr8082-native-gaussian-jet-root-review-run_once-11a94bc2d9a4b68f.py",
+      "stored_sha256": "f40ac8af4045be6705aefaae176798504dc6f3404d3e91cd7f32e9a959646ed0"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "e1813d1150aad4c9c60916012fc19ce6a81357a5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/sources/native-gaussian-jet-root-review-schema.py",
+      "raw_bytes": 7627,
+      "raw_sha256": "dd34d4fb5aa975f9685623df1706abc5f0bc24235e9b26a0910ee067889edc2e",
+      "stored_path": "kept/pr8082-native-gaussian-jet-root-review-schema-e88a03969e3f184f.py",
+      "stored_sha256": "dd34d4fb5aa975f9685623df1706abc5f0bc24235e9b26a0910ee067889edc2e"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "cd686dda655ffdf085e8c2ddef4d93180424739f",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/sources/native-omega79-catalog-supplier-design-DERIVATION.md",
+      "raw_bytes": 3426,
+      "raw_sha256": "a6c2b6390189d00e41c5ae5ae9afa500037fde0cc67acc2ec02f1116115f167e",
+      "stored_path": "kept/pr8082-native-omega79-catalog-supplier-design-DERIVATION-0ec9b9774c05c5d0.md",
+      "stored_sha256": "a6c2b6390189d00e41c5ae5ae9afa500037fde0cc67acc2ec02f1116115f167e"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "bd115ca677a158f29fef4108ffd4da4f8d0f5049",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/source_draft/sources/native-omega79-catalog-supplier-design-compute.py",
+      "raw_bytes": 1661,
+      "raw_sha256": "11cd9658255f5c9dff08625b2f029f11f5071b4f8bbaa6341d9ea36b75cd3ee7",
+      "stored_path": "kept/pr8082-native-omega79-catalog-supplier-design-compute-3e1b96080ca5261f.py",
+      "stored_sha256": "11cd9658255f5c9dff08625b2f029f11f5071b4f8bbaa6341d9ea36b75cd3ee7"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "5fd7fea6858a8f770e2724dbcfea4e5660d403df",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/CHECKPOINT92_REMOTE_VERIFICATION.json",
+      "raw_bytes": 387,
+      "raw_sha256": "f766a89e555012aa03efa3f90ddd72536a7f62fd764b27ac63127a2c55fd3fb4",
+      "stored_path": "kept/pr8082-CHECKPOINT92_REMOTE_VERIFICATION-a7351a84c68a98ec.json",
+      "stored_sha256": "f766a89e555012aa03efa3f90ddd72536a7f62fd764b27ac63127a2c55fd3fb4"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "7ec09bd3d6b0bc1b83255157d3170a11f4eaec62",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/CHECKPOINT93_REMOTE_VERIFICATION.json",
+      "raw_bytes": 383,
+      "raw_sha256": "5533bed9f668efba652fff3e653ca6d965ab4ecbd564ff0e417355213b932601",
+      "stored_path": "kept/pr8082-CHECKPOINT93_REMOTE_VERIFICATION-3661652e2360da13.json",
+      "stored_sha256": "5533bed9f668efba652fff3e653ca6d965ab4ecbd564ff0e417355213b932601"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "57108fad5dc6583e46b459df24386f36efb553c9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/CHECKPOINT94_REMOTE_VERIFICATION.json",
+      "raw_bytes": 374,
+      "raw_sha256": "9e2b75f1768faa3600b03562373c33b2fccc3fb5202900bd5da014f9290681a8",
+      "stored_path": "kept/pr8082-CHECKPOINT94_REMOTE_VERIFICATION-e204320f58b021cb.json",
+      "stored_sha256": "9e2b75f1768faa3600b03562373c33b2fccc3fb5202900bd5da014f9290681a8"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "93801d76f023a644886f5c19c68dba678de011f9",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/COMPACT_CHECK.log",
+      "raw_bytes": 124,
+      "raw_sha256": "ceef220f07e74007cb7c96b932c3fbf5bb9ebbdada566c9e386d43dff565a94e",
+      "stored_path": "kept/pr8082-COMPACT_CHECK-3d0ac6058a199248.log",
+      "stored_sha256": "ceef220f07e74007cb7c96b932c3fbf5bb9ebbdada566c9e386d43dff565a94e"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "d001dc6fe3f71f91c77f3770a763201d77eb7ff0",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/CURRENT_MAIN_PREMISE_CHECK.json",
+      "raw_bytes": 927,
+      "raw_sha256": "1550826da82af82714ffac86c79065b987069249511be722db2b1212b18670ea",
+      "stored_path": "kept/pr8082-CURRENT_MAIN_PREMISE_CHECK-94e1cf40050028ae.json",
+      "stored_sha256": "1550826da82af82714ffac86c79065b987069249511be722db2b1212b18670ea"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "f57b27bbfe6bde5de5861e387e28c8b051b5ff3c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/FINAL_METADATA_REVIEW.md",
+      "raw_bytes": 580,
+      "raw_sha256": "2ae8a85aaedc38edddfd735f3b6a99b73ebb3df4769d2da9411dd220aff9ddbd",
+      "stored_path": "kept/pr8082-FINAL_METADATA_REVIEW-6b3104d9f9afb52f.md",
+      "stored_sha256": "2ae8a85aaedc38edddfd735f3b6a99b73ebb3df4769d2da9411dd220aff9ddbd"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "95750db4d69152baae9026e477ba5d0d0c34b4f5",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/INITIAL_WRAPPER_INTERFACE_FAILURE.log",
+      "raw_bytes": 658,
+      "raw_sha256": "3e44a17577f2c1cb1fb791e095d4c90848a56a6aa51fb1168bd0ddeb465728b5",
+      "stored_path": "kept/pr8082-INITIAL_WRAPPER_INTERFACE_FAILURE-3c0d427894df7cee.log",
+      "stored_sha256": "3e44a17577f2c1cb1fb791e095d4c90848a56a6aa51fb1168bd0ddeb465728b5"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "a7904c6e2ed2d8d89c081dc114841ae26fe22e16",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/canonical-review-FREEZE.json",
+      "raw_bytes": 318,
+      "raw_sha256": "e199796fa832a0aa6cc3ac06e9c593b79d917da07040d275032e635e1aa7fffe",
+      "stored_path": "kept/pr8082-canonical-review-FREEZE-926e8f6d9c165380.json",
+      "stored_sha256": "e199796fa832a0aa6cc3ac06e9c593b79d917da07040d275032e635e1aa7fffe"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "fe0834fe41130ca3840f5dea0df653c30cbbf85e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/canonical-review-HASH_CHECK.json",
+      "raw_bytes": 168,
+      "raw_sha256": "bd2c61d5bc3edb2fe6b5d3fe9a8ebdec12004ccaabea11dcbbbbd3872a481087",
+      "stored_path": "kept/pr8082-canonical-review-HASH_CHECK-3e9daa7b82d65bc4.json",
+      "stored_sha256": "bd2c61d5bc3edb2fe6b5d3fe9a8ebdec12004ccaabea11dcbbbbd3872a481087"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "cbc11a3a3c711035b9e911e955cf6e2ee5ced58c",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/canonical-review-README.md",
+      "raw_bytes": 285,
+      "raw_sha256": "1f0bfa3e3abf3109e8dbeff1baf1523165b1db3b1889306a662bafece87068c8",
+      "stored_path": "kept/pr8082-canonical-review-README-6d373254b5a00bf5.md",
+      "stored_sha256": "1f0bfa3e3abf3109e8dbeff1baf1523165b1db3b1889306a662bafece87068c8"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "a8abf7bcd38067d0d0de16928ec2d396a7a4147e",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/canonical-review-REVIEW.md",
+      "raw_bytes": 2491,
+      "raw_sha256": "cd950db3f311a4a455c10594d5de9d19708e5b153f1d79d8c1d80d01e56442c9",
+      "stored_path": "kept/pr8082-canonical-review-REVIEW-4210651e4c41315f.md",
+      "stored_sha256": "cd950db3f311a4a455c10594d5de9d19708e5b153f1d79d8c1d80d01e56442c9"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "dbb5d235abd3d58e69f1d2c2b3dd06540468adde",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/draft-review-FREEZE.json",
+      "raw_bytes": 259,
+      "raw_sha256": "a15da7bab3af377d93a33826ea7eec388dfbe59afa547772d682c17c0649867b",
+      "stored_path": "kept/pr8082-draft-review-FREEZE-54df221ff1b27a57.json",
+      "stored_sha256": "a15da7bab3af377d93a33826ea7eec388dfbe59afa547772d682c17c0649867b"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "711a0403a518387e9c664da644582197ee253766",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/draft-review-HASH_CHECK.json",
+      "raw_bytes": 189,
+      "raw_sha256": "7153d8505d6246d9a623b0ff82f2dbeb2fc1eb944763479a7c47605ca36facc3",
+      "stored_path": "kept/pr8082-draft-review-HASH_CHECK-cbe86e07a5862178.json",
+      "stored_sha256": "7153d8505d6246d9a623b0ff82f2dbeb2fc1eb944763479a7c47605ca36facc3"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "81c86dfaa243986d228e9c66ed916cd90301d656",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/draft-review-REVIEW.md",
+      "raw_bytes": 2638,
+      "raw_sha256": "887576df11c522ffaa36ec4fdc4894482520aa5a682ffddeeb1e084b0eec1392",
+      "stored_path": "kept/pr8082-draft-review-REVIEW-366a97284f4fd728.md",
+      "stored_sha256": "887576df11c522ffaa36ec4fdc4894482520aa5a682ffddeeb1e084b0eec1392"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "8dd3abf55ee5580221c93d13762273284d077753",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/graph-manifest.log",
+      "raw_bytes": 77,
+      "raw_sha256": "9aa45f0055358294735fe0794a790b6fdf5288fd36d357174b23f7ac8120a814",
+      "stored_path": "kept/pr8082-graph-manifest-d69367490f74e5df.log",
+      "stored_sha256": "9aa45f0055358294735fe0794a790b6fdf5288fd36d357174b23f7ac8120a814"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "6d98ee8eee3c37fb14ee7c22842fd6792c3beb80",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/graph.log",
+      "raw_bytes": 280,
+      "raw_sha256": "dcd2f2213468de9f400123e666aac1a276ec5e41568121c95acae1ae62fe36cd",
+      "stored_path": "kept/pr8082-graph-564d445523340929.log",
+      "stored_sha256": "dcd2f2213468de9f400123e666aac1a276ec5e41568121c95acae1ae62fe36cd"
+    },
+    {
+      "encoding": "identity",
+      "git_blob": "5a3f3bd5703683451193965ff61a1d7851d4d4e3",
+      "original_mode": "100644",
+      "original_path": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/verification/vocab.log",
+      "raw_bytes": 146,
+      "raw_sha256": "5ce477bdbd5f4a8ac6432c50e2515f81770ce7222cf7124e9a31279cd539e12a",
+      "stored_path": "kept/pr8082-vocab-2095b5a56dad67d3.log",
+      "stored_sha256": "5ce477bdbd5f4a8ac6432c50e2515f81770ce7222cf7124e9a31279cd539e12a"
+    }
+  ],
+  "prefix": ".claude/science/physics-loops/native-gaussian-moment-jet-20260910/",
+  "revision": "dee7f1f07698bc36cfffc4e6495168a9107ff956",
+  "schema_version": 1,
+  "unique_blobs": {
+    "005c0ec9b9f3da6f99ce1e5bab90339b82733153": {
+      "occurrences": 1,
+      "raw_bytes": 1084,
+      "raw_sha256": "da68c7449d8da0252c0fc4a08e7be355c7cc7e7e09bc4bc5765423a95ebca2ac"
+    },
+    "022667a96e98129cea02a8e5ba8cf4f61503589f": {
+      "occurrences": 1,
+      "raw_bytes": 2387,
+      "raw_sha256": "2a9dc795f4e90acbf21fec14e219b721c2d3d06d59657adaed291974c44997b8"
+    },
+    "0330cc6fbaeadf40bfcb23898b70836bdd790e6f": {
+      "occurrences": 1,
+      "raw_bytes": 311,
+      "raw_sha256": "6633330fd94ff1e51b9413b99d023cc59da125c5e6688393a9cf8a6b4156a58a"
+    },
+    "05814e9c9be481c875698e1bbb77ca01bdbdf07e": {
+      "occurrences": 1,
+      "raw_bytes": 2798986,
+      "raw_sha256": "e7b3aa0412b7f3370e27559789c5f9ec74cae9d42fddcd2df477919fdcb0ce85"
+    },
+    "0fdf96b275db2beebfdcde031a0e7f9acd72813f": {
+      "occurrences": 1,
+      "raw_bytes": 5366,
+      "raw_sha256": "9f4cff1dd3bda26388f8ed65b8847cc811f6e41c55e35cf132520142dacd4854"
+    },
+    "13c4dfa8b140870456668fa19e67f4fc2f0126f3": {
+      "occurrences": 1,
+      "raw_bytes": 15719,
+      "raw_sha256": "3f2fe1e137cfdc41c7ca8cb20519ba2526ce0590534c27a5531acdd20ea0ad1c"
+    },
+    "180acbc767f8d61fddf97b8055d76cad9e62b160": {
+      "occurrences": 1,
+      "raw_bytes": 354641,
+      "raw_sha256": "4f9190c57baaa4ec3f69cae2f4a8ca0c35b365b7b024035a3d951a055998c831"
+    },
+    "1870c5da7cc0e9ad9e05a2f2a7b86336084d8762": {
+      "occurrences": 1,
+      "raw_bytes": 6022,
+      "raw_sha256": "cb28a413092b019a70ba8d1f8128cee73d0fb2ed9732b5919c808126a82b6229"
+    },
+    "1f7084b9694575485cf6b61cf160f0cdc3d457a2": {
+      "occurrences": 1,
+      "raw_bytes": 716,
+      "raw_sha256": "6db7b83d94f17eb7bc7b49966a6233901ebcce6deef1ccc6731bd9e71d063844"
+    },
+    "2c58fcf0207833bfd347a2759d23312fe6abed23": {
+      "occurrences": 1,
+      "raw_bytes": 336260,
+      "raw_sha256": "a03991147f31f5da750746f226207e9d98141ec2c0688495b43e9a5fd28f1262"
+    },
+    "2f4897f80b387aadbe1d74094f79362321769b96": {
+      "occurrences": 1,
+      "raw_bytes": 6876,
+      "raw_sha256": "af978ca4d9b85199ebd5c1fab42acaa33179418c5ae913f160a6af8742223986"
+    },
+    "2fe9549de7f8d18d0d41d49a5ed38ae1c110fa8d": {
+      "occurrences": 1,
+      "raw_bytes": 320,
+      "raw_sha256": "697eaea00662cc298d8c2a125274fda3ef6c41363ca090d7066dd8a642da90e1"
+    },
+    "30c03b1afa73efa939108bc77280fa0d0e8b2803": {
+      "occurrences": 1,
+      "raw_bytes": 137,
+      "raw_sha256": "ebb2eb5e333c0e7ae01eff31d38a1a17a3fad0c5dd41ec6db8370a744334cb3f"
+    },
+    "318405c940fabeba62f37750b65f1213b3331793": {
+      "occurrences": 1,
+      "raw_bytes": 2446,
+      "raw_sha256": "6f3426fb8f7c1d3dee59f765c8fbc9923e9baa619ebe956f0d481b7732bdd47d"
+    },
+    "32373c19e700b3df680e5c9dd118550884b64e3b": {
+      "occurrences": 1,
+      "raw_bytes": 468,
+      "raw_sha256": "c8589629f15c5c470f53aa3285628ded64880408b65d6c2d3394fb8d310a50cb"
+    },
+    "338ef3b8cb0697642da28a722c91d52348d51a35": {
+      "occurrences": 1,
+      "raw_bytes": 1083,
+      "raw_sha256": "ae90377953e05bd39f3e4d8da06efc305be67dfe2612a9a15d56e0539d140539"
+    },
+    "35ea16755dd19d5a8e9ecf98632d08b020781cb0": {
+      "occurrences": 1,
+      "raw_bytes": 5004,
+      "raw_sha256": "4a64258f93276fc0f24ac23ab65c91953f0b45a9ca2cc2182f9634c17d8cfd94"
+    },
+    "3838754dc9dbc0ef9e81338f7f746ef51050e156": {
+      "occurrences": 1,
+      "raw_bytes": 3516,
+      "raw_sha256": "dc3fe80c92db83dce304b3157fefb115e414b66780da1cb0a909710581bfe547"
+    },
+    "3a8974db16d2d76d1a3887fb3e300a1a45ea388a": {
+      "occurrences": 1,
+      "raw_bytes": 22601,
+      "raw_sha256": "d5f3f0de18514087e0a4d82c46ada8aa19f79a873c9e3f06daaa6b4475e6bc88"
+    },
+    "4a1b6c07b825bc95896be16647ca8656d4b9ebf2": {
+      "occurrences": 1,
+      "raw_bytes": 4871,
+      "raw_sha256": "b9677af35f9912cd1dd7afffd7563c7c5029e6d0fd7097bf90f8fe3bb2e31449"
+    },
+    "4a1d9e9866c4c7ea26f74f2d550de6d2e0ddd9d7": {
+      "occurrences": 1,
+      "raw_bytes": 13455,
+      "raw_sha256": "73fff219879a858673e101a41144044145242c3ddab01a23d94150cc6a6ff4c9"
+    },
+    "505c35d10335ae555e123ec2b3bcaa0732b9e968": {
+      "occurrences": 1,
+      "raw_bytes": 3865,
+      "raw_sha256": "7be883d33039bbc8dade6f217a7da8e37356b6e5c785cc4fc68c81eaa548b6b0"
+    },
+    "55495f5811f99f718f38b7f325461eb7679fbd31": {
+      "occurrences": 1,
+      "raw_bytes": 941,
+      "raw_sha256": "ac18e7342e752fd8f2cafe31b40c969901e4148777f0e013bd25f49e8e2ef027"
+    },
+    "57108fad5dc6583e46b459df24386f36efb553c9": {
+      "occurrences": 1,
+      "raw_bytes": 374,
+      "raw_sha256": "9e2b75f1768faa3600b03562373c33b2fccc3fb5202900bd5da014f9290681a8"
+    },
+    "5a3f3bd5703683451193965ff61a1d7851d4d4e3": {
+      "occurrences": 1,
+      "raw_bytes": 146,
+      "raw_sha256": "5ce477bdbd5f4a8ac6432c50e2515f81770ce7222cf7124e9a31279cd539e12a"
+    },
+    "5fd7fea6858a8f770e2724dbcfea4e5660d403df": {
+      "occurrences": 1,
+      "raw_bytes": 387,
+      "raw_sha256": "f766a89e555012aa03efa3f90ddd72536a7f62fd764b27ac63127a2c55fd3fb4"
+    },
+    "627d2f110a81d356baf127ea42cfa4512ef7ad97": {
+      "occurrences": 1,
+      "raw_bytes": 277,
+      "raw_sha256": "1428b3f36bb756650bd77167e5dc176cc5946c05e51a89de9071560fb42a26d7"
+    },
+    "6d98ee8eee3c37fb14ee7c22842fd6792c3beb80": {
+      "occurrences": 1,
+      "raw_bytes": 280,
+      "raw_sha256": "dcd2f2213468de9f400123e666aac1a276ec5e41568121c95acae1ae62fe36cd"
+    },
+    "711a0403a518387e9c664da644582197ee253766": {
+      "occurrences": 1,
+      "raw_bytes": 189,
+      "raw_sha256": "7153d8505d6246d9a623b0ff82f2dbeb2fc1eb944763479a7c47605ca36facc3"
+    },
+    "724909d309a3d9ac1e46efda9af60db495980912": {
+      "occurrences": 1,
+      "raw_bytes": 2123,
+      "raw_sha256": "7ac9d296974e07a35b499a7e1fe5452fe32d6b512638e192acdfa0a694fe473b"
+    },
+    "72fc94020cd3e11a0e1e32b674b964eeff48cf25": {
+      "occurrences": 1,
+      "raw_bytes": 239,
+      "raw_sha256": "d6ff89dfd213111f7422e6c7a6131663b49cd6e65b0720023d5cdeb84abb9260"
+    },
+    "795e8ce1ddf2962cf31ea9cf2bb2ad4113b9ee93": {
+      "occurrences": 1,
+      "raw_bytes": 1152,
+      "raw_sha256": "f9c19a3970ff17e3141470fcf6ac8781b4d2c6d91b7c389a30f8ab429c18a354"
+    },
+    "7b39ad33215f46a4ae7d2b8ddaa7fc46870f5628": {
+      "occurrences": 1,
+      "raw_bytes": 289,
+      "raw_sha256": "ccac01f446f07d67a4dbc7adcf00e01249b74e45facf8a8f44bba4b2b87e56d3"
+    },
+    "7cfe3eda2552a733e1f4cadd5f608b1bd1073ca9": {
+      "occurrences": 1,
+      "raw_bytes": 355,
+      "raw_sha256": "51c2f32ac62d5ba2f8dba0a774c4e8ef239fff4c180774a3e5ac24c5a5bc39c9"
+    },
+    "7ec09bd3d6b0bc1b83255157d3170a11f4eaec62": {
+      "occurrences": 1,
+      "raw_bytes": 383,
+      "raw_sha256": "5533bed9f668efba652fff3e653ca6d965ab4ecbd564ff0e417355213b932601"
+    },
+    "81c86dfaa243986d228e9c66ed916cd90301d656": {
+      "occurrences": 1,
+      "raw_bytes": 2638,
+      "raw_sha256": "887576df11c522ffaa36ec4fdc4894482520aa5a682ffddeeb1e084b0eec1392"
+    },
+    "85ec0c2d0941bcc36cf9246df3737ad99b851150": {
+      "occurrences": 1,
+      "raw_bytes": 1518,
+      "raw_sha256": "add45780d52b654d11db96ffb3e60f034e841b2504437c055754219fa2bebab9"
+    },
+    "873615b832e6f77082cfb622ede5a0d33a3071e9": {
+      "occurrences": 1,
+      "raw_bytes": 284,
+      "raw_sha256": "7472ed2a762f7794513fbb16b3ae4d12fbfb2bff5ca53809ce79a86e96f90dfa"
+    },
+    "8991c82bc10cf2cf440c573717336adf4b878c59": {
+      "occurrences": 1,
+      "raw_bytes": 1313,
+      "raw_sha256": "7d6247b6f7c2215d9afa2d7774e94934dcb0908c80b2fddd018c0b775439413c"
+    },
+    "899fe8b42032425f4e3c69ee998ac9131e7506c3": {
+      "occurrences": 1,
+      "raw_bytes": 4259,
+      "raw_sha256": "215ee9b392bc12f23ad79ab7ad59c0572949e1d82623ef3cdd9266a7bdbf4dc2"
+    },
+    "8cc543e0f3241f7ef5e32f99e36f4c09961d23c0": {
+      "occurrences": 1,
+      "raw_bytes": 6968,
+      "raw_sha256": "a2afdaaf391731a5133290b0d9f9e58ed8186d155710bacefa10be7725d5d0ea"
+    },
+    "8dd3abf55ee5580221c93d13762273284d077753": {
+      "occurrences": 1,
+      "raw_bytes": 77,
+      "raw_sha256": "9aa45f0055358294735fe0794a790b6fdf5288fd36d357174b23f7ac8120a814"
+    },
+    "92878482b2fde4e2e4a34f3c30f17056fcf3a50a": {
+      "occurrences": 1,
+      "raw_bytes": 1077421,
+      "raw_sha256": "42a4ac65dca346eb6cf2bc5f136f4f849df169f89f266123dfbf794e9fc2013c"
+    },
+    "93801d76f023a644886f5c19c68dba678de011f9": {
+      "occurrences": 1,
+      "raw_bytes": 124,
+      "raw_sha256": "ceef220f07e74007cb7c96b932c3fbf5bb9ebbdada566c9e386d43dff565a94e"
+    },
+    "93f52153b4061f5a3929aea34919a6e49c12104a": {
+      "occurrences": 1,
+      "raw_bytes": 3262900,
+      "raw_sha256": "2500da35a25b2d2bebd1eb11bd09363d96c31a9c42d33fe20431676cc0cb0cd9"
+    },
+    "9476bca849bb8068d019c493c4c5ecedd0e90698": {
+      "occurrences": 1,
+      "raw_bytes": 6541,
+      "raw_sha256": "0b99a00b3dee9736de38a00edf25bb2f137bf23ed701c3186c29ea06768223d0"
+    },
+    "95750db4d69152baae9026e477ba5d0d0c34b4f5": {
+      "occurrences": 1,
+      "raw_bytes": 658,
+      "raw_sha256": "3e44a17577f2c1cb1fb791e095d4c90848a56a6aa51fb1168bd0ddeb465728b5"
+    },
+    "97a3b630bfe74147d8a82a2c47a11c0b9fea06e2": {
+      "occurrences": 1,
+      "raw_bytes": 351,
+      "raw_sha256": "20319feae996f1b8b3b5e7994ce5025deb1748545a7613c4fd1742d7bd0bd9a1"
+    },
+    "a26aeffec284fc6b19fb4128c639b4e197952404": {
+      "occurrences": 1,
+      "raw_bytes": 2886,
+      "raw_sha256": "c838b5b6ad7441b2cbd98c7cc6f4ee0239865903385fd63aeb6b780ea456cb82"
+    },
+    "a2bb021487aee4434a6e71d9826eca9a6f2f1220": {
+      "occurrences": 1,
+      "raw_bytes": 14524,
+      "raw_sha256": "597f4a8b70ad18b591665a3a2e0a67240d1d680fb5ab49aa1dcf9932b7b2d4c1"
+    },
+    "a48f79ff174d8d0a696198a6e4c151d1cf4324f1": {
+      "occurrences": 1,
+      "raw_bytes": 9403,
+      "raw_sha256": "4552d49674876cc05847676545d4ede33f5785d611ceb54bbbe5adac031bb805"
+    },
+    "a67da7cd43e3ff0c26c0e4e6825e099112ceca69": {
+      "occurrences": 1,
+      "raw_bytes": 4441,
+      "raw_sha256": "e1c4a91afffb077714a168676245165c3e96f4751d0acc7c007e01567cf311c3"
+    },
+    "a7904c6e2ed2d8d89c081dc114841ae26fe22e16": {
+      "occurrences": 1,
+      "raw_bytes": 318,
+      "raw_sha256": "e199796fa832a0aa6cc3ac06e9c593b79d917da07040d275032e635e1aa7fffe"
+    },
+    "a8abf7bcd38067d0d0de16928ec2d396a7a4147e": {
+      "occurrences": 1,
+      "raw_bytes": 2491,
+      "raw_sha256": "cd950db3f311a4a455c10594d5de9d19708e5b153f1d79d8c1d80d01e56442c9"
+    },
+    "a8c7e192c4bbb859aaca0be09dbfe921daf194e3": {
+      "occurrences": 1,
+      "raw_bytes": 292,
+      "raw_sha256": "39437d8e898edb4b31e9931c6cf53593fa2821681289b36730ecab3b7bed7ec4"
+    },
+    "a9f5963e928556fc2ef309b333dadb33e1fe88b2": {
+      "occurrences": 1,
+      "raw_bytes": 7408,
+      "raw_sha256": "9e8555db395ddbffc3b4542a9baac863ecf24c830c0e1822b03c02b4b7d604f5"
+    },
+    "b3e4c78388cc54491af515e94596cccf1dc48647": {
+      "occurrences": 1,
+      "raw_bytes": 3968,
+      "raw_sha256": "495f439d8cbe9ee6f05753119a5a3b50a953db22aa844867e5078e3c5089bb2d"
+    },
+    "b669c8bbfb76e8786ebb6dfe7b24e9d775194f48": {
+      "occurrences": 1,
+      "raw_bytes": 285,
+      "raw_sha256": "e81cbda58f58087abdf813f7fa12c64a40bd069b39d300b0df66e101e97fa594"
+    },
+    "ba75b336c44b20f9851382a2a18782a4780a08bc": {
+      "occurrences": 2,
+      "raw_bytes": 3685,
+      "raw_sha256": "decf8fe272b0f658e5e36a0c95980b23df1f4dbb9d615734f727484491b8054e"
+    },
+    "bd115ca677a158f29fef4108ffd4da4f8d0f5049": {
+      "occurrences": 1,
+      "raw_bytes": 1661,
+      "raw_sha256": "11cd9658255f5c9dff08625b2f029f11f5071b4f8bbaa6341d9ea36b75cd3ee7"
+    },
+    "c31f2cd5abec7dc26018eda747d63d64db809018": {
+      "occurrences": 1,
+      "raw_bytes": 25394,
+      "raw_sha256": "166d28f4f317d3341d2a342a929ade91790bb0a1d9317f86323d9947ccae8b21"
+    },
+    "c39f07181558803a67b6f0ee5e381f9c96c886d2": {
+      "occurrences": 1,
+      "raw_bytes": 4799,
+      "raw_sha256": "e082acb7801b0d5b4be7415c6a44f7fd91059b4c225bfccb9005fb3d5a86eec5"
+    },
+    "cbc11a3a3c711035b9e911e955cf6e2ee5ced58c": {
+      "occurrences": 1,
+      "raw_bytes": 285,
+      "raw_sha256": "1f0bfa3e3abf3109e8dbeff1baf1523165b1db3b1889306a662bafece87068c8"
+    },
+    "cd686dda655ffdf085e8c2ddef4d93180424739f": {
+      "occurrences": 1,
+      "raw_bytes": 3426,
+      "raw_sha256": "a6c2b6390189d00e41c5ae5ae9afa500037fde0cc67acc2ec02f1116115f167e"
+    },
+    "d001dc6fe3f71f91c77f3770a763201d77eb7ff0": {
+      "occurrences": 1,
+      "raw_bytes": 927,
+      "raw_sha256": "1550826da82af82714ffac86c79065b987069249511be722db2b1212b18670ea"
+    },
+    "d017007fc815b2dfa3ce482e7d3b92629928b8fd": {
+      "occurrences": 1,
+      "raw_bytes": 286,
+      "raw_sha256": "fa5931688eb4534f0e9c09e438091f8dbdbffdc181f998074ca6900e9da23eee"
+    },
+    "d08e5f8453ff9c8af75539a0d6c7a359fb48d81f": {
+      "occurrences": 1,
+      "raw_bytes": 6442,
+      "raw_sha256": "f40ac8af4045be6705aefaae176798504dc6f3404d3e91cd7f32e9a959646ed0"
+    },
+    "d86057cee4fe3f50ed9abd8b65c0e420bc41fa2f": {
+      "occurrences": 1,
+      "raw_bytes": 250,
+      "raw_sha256": "f7452ef42ccef9384a703dc07a7419aaa6c70f84d7428484d630af24af87d282"
+    },
+    "daaaf0108b6479125cd44e3e88d017f93d56b253": {
+      "occurrences": 1,
+      "raw_bytes": 335,
+      "raw_sha256": "01d1a854a163002caa2711835e8724b744236d2a24457af7883f861eb95afb09"
+    },
+    "dbb5d235abd3d58e69f1d2c2b3dd06540468adde": {
+      "occurrences": 1,
+      "raw_bytes": 259,
+      "raw_sha256": "a15da7bab3af377d93a33826ea7eec388dfbe59afa547772d682c17c0649867b"
+    },
+    "e1813d1150aad4c9c60916012fc19ce6a81357a5": {
+      "occurrences": 1,
+      "raw_bytes": 7627,
+      "raw_sha256": "dd34d4fb5aa975f9685623df1706abc5f0bc24235e9b26a0910ee067889edc2e"
+    },
+    "e608b876202e0eeffe277f4a1c67cd9e479f2115": {
+      "occurrences": 1,
+      "raw_bytes": 121,
+      "raw_sha256": "d4d76c890f6dcadbee169d395bbbfa666c15612172ec989e48e33d7cf15f8227"
+    },
+    "eb45e0447149778472ee2110792fd36f97e53842": {
+      "occurrences": 1,
+      "raw_bytes": 1379,
+      "raw_sha256": "32952a5c24c679d23326688a114e7213fb3f2a8c6da58daf435acc9fa2a88df9"
+    },
+    "ece38c508b59c2bc44d94c0033d16700555eb3f9": {
+      "occurrences": 1,
+      "raw_bytes": 4073,
+      "raw_sha256": "7efd27b455bf233bb6c6a8c2340069423cce100f312e7fbc04566de88e0c37b9"
+    },
+    "eddfec7f01136147b099c0e0a36a54176f4fcd65": {
+      "occurrences": 1,
+      "raw_bytes": 284,
+      "raw_sha256": "d8360399c6883c033f614dfa4ee656ecbfd7fa13de56bebeeeb7141c58da5381"
+    },
+    "eee1c700c52ac1048f6e68c9f6df4c1440bd8255": {
+      "occurrences": 1,
+      "raw_bytes": 447,
+      "raw_sha256": "71db9a5599466b1e3d5595cc29da885f4d855b2bee0509e150f4ac7fb039a7fd"
+    },
+    "f24c431e0c143f98fbc3e59d4970ee3cad548565": {
+      "occurrences": 1,
+      "raw_bytes": 5534,
+      "raw_sha256": "eea8f71321083036cf856590ac5997c4d789c0fb5d327abc345c364cb9eb7423"
+    },
+    "f57b27bbfe6bde5de5861e387e28c8b051b5ff3c": {
+      "occurrences": 1,
+      "raw_bytes": 580,
+      "raw_sha256": "2ae8a85aaedc38edddfd735f3b6a99b73ebb3df4769d2da9411dd220aff9ddbd"
+    },
+    "fe0834fe41130ca3840f5dea0df653c30cbbf85e": {
+      "occurrences": 1,
+      "raw_bytes": 168,
+      "raw_sha256": "bd2c61d5bc3edb2fe6b5d3fe9a8ebdec12004ccaabea11dcbbbbd3872a481087"
+    }
+  }
+}

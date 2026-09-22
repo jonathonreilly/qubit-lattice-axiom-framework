@@ -1,0 +1,1032 @@
+diff --git a/.claude/science/physics-loops/static-charge-transfer-sector-20260915/CONFORMANCE.md b/.claude/science/physics-loops/static-charge-transfer-sector-20260915/CONFORMANCE.md
+new file mode 100644
+index 0000000000..1ee001dfdb
+--- /dev/null
++++ b/.claude/science/physics-loops/static-charge-transfer-sector-20260915/CONFORMANCE.md
+@@ -0,0 +1,34 @@
++# Author conformance dispositions
++
++1. Self-containment: one primary runner; all scientific fixtures are internal.
++   The exact provisional source is PR8140 at8a71d7fa8a87a451e5c49df31d18986574d73610,
++   stacked on PR8133. Review all interacting sources or land the bases first.
++2. Cache: the declared300-second runner completed successfully in2.010362s.
++   Its self-file read is an integrity hash, not an external science input.
++3. Scope: the supplied clock law, fixed finite N,beta>0, matched free state,
++   inverse moments, same-charge path comparison and minimal static moment space.
++   Only the quantitative charge bound additionally needs source curvature.
++4. Negative boundaries: N1-N8 is recorded in the source and five substantive
++   resolution lines are cached. No universal no-go or negative packet PASS.
++5. Obligations: cofinal mixed-state matching, nonnegative transformed insertions,
++   inverse cutoffs, dense spectral generators and arbitrary path Green energy
++   are explicit written arguments. No finite checker certifies these limits.
++6. Runner validity: eight actual formula mutations raise AssertionError. Direct
++   inverse solves/spectral sums, explicit temporal links/transfer matrices and
++   unreduced/reduced Green sums take different calculation paths, all personally.
++7. Packet: four finite families reside in the declared primary and its cache.
++   No helper policy, extraction rule or runner registry is changed.
++8. Graph: one new node and one exact repository-source dependency. Generated
++   authority residue was restored to this branch's own HEAD, preserving the
++   inspected manifest. Integration must rebuild on its actual current-main base.
++9. Structure: front matter, target/status trace, dependency table, full proof,
++   scope audit, provenance and author evidence are present. proposed_retained
++   is a source proposal, not an effective audit status.
++10. Authority: no main push, merge, independent audit, verdict, queue edit,
++    axiom/primitive update or editable prompt change was performed.
++11. Facts: numeric summaries come from executed evidence; initial neutral-sector
++    eigensolve failure is preserved in the pinned private campaign checkpoint.
++12. Preflight: complete note and runner personally read; cache, eight mutations,
++    vocabulary, compilation, full pipeline, strict lint and changed-row evidence
++    passed. Final staged whitespace is checked before commit. Independent review
++    and current-main combined integration remain required for landing.
+diff --git a/.claude/science/physics-loops/static-charge-transfer-sector-20260915/HANDOFF.md b/.claude/science/physics-loops/static-charge-transfer-sector-20260915/HANDOFF.md
+new file mode 100644
+index 0000000000..b889d52871
+--- /dev/null
++++ b/.claude/science/physics-loops/static-charge-transfer-sector-20260915/HANDOFF.md
+@@ -0,0 +1,11 @@
++# Static charge transfer sector
++
++Author proposal, independent review pending. Base PR8140 is pinned to
++8a71d7fa8a87a451e5c49df31d18986574d73610, with its provisional PR8133
++sources retained. Review the complete interacting unit or land the bases
++first. This delta proves inverse moments, fixed-surface path comparison,
++a common static transfer space and the general spatial-path Green limit.
++The complete local field algebra, moving matter and native law remain open.
++
++All work is personal. No subagents, merge, audit verdict or axiom change.
++Private proof/check history is durable at3c6b685f6d69393d7dab170713daff2073535812.
+diff --git a/.claude/science/physics-loops/static-charge-transfer-sector-20260915/MUTATION_CHECKS.json b/.claude/science/physics-loops/static-charge-transfer-sector-20260915/MUTATION_CHECKS.json
+new file mode 100644
+index 0000000000..739559ae59
+--- /dev/null
++++ b/.claude/science/physics-loops/static-charge-transfer-sector-20260915/MUTATION_CHECKS.json
+@@ -0,0 +1,94 @@
++{
++  "original_source_sha256": "6e99936a4f99a308f1a6b4d54ac311f433c8f8f9f1943a60ed98750ffe04c2fb",
++  "independent_review": false,
++  "mutations": [
++    {
++      "name": "inverse_scale",
++      "function": "check_inverse_moments",
++      "old": "inverse=largest*float",
++      "new": "inverse=2*largest*float",
++      "source_sha256": "1ca784b32e07c32c5af03a13caf8d51208bbce6031f9f8b94574068365cc3e4b",
++      "exit_code": 1,
++      "elapsed_seconds": 0.41021204192657024,
++      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;s=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/inverse_scale.py');m=importlib.util.module_from_spec(s);s.loader.exec_module(m);m.check_inverse_moments()\n                                                                                                                                                                                                                                                   ~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/inverse_scale.py\", line 44, in check_inverse_moments\n    assert abs(inverse-spectral)<3e-9*max(1,inverse)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
++      "stdout_tail": ""
++    },
++    {
++      "name": "fourier_ratio",
++      "function": "check_inverse_moments",
++      "old": "K=float(np.prod([max(coeff/coeff[(np.arange(N)+int(q))%N]) for q in j]))",
++      "new": "K=1.0",
++      "source_sha256": "2d5b96f7bf9682a35f1577760e10579178629291985cbde6ef686720040538e3",
++      "exit_code": 1,
++      "elapsed_seconds": 0.22963037504814565,
++      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;s=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/fourier_ratio.py');m=importlib.util.module_from_spec(s);s.loader.exec_module(m);m.check_inverse_moments()\n                                                                                                                                                                                                                                                   ~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/fourier_ratio.py\", line 41, in check_inverse_moments\n    assert K>=1-1e-13 and abs(K-ratios.prod(axis=1).max())<2e-11*max(1,K)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
++      "stdout_tail": ""
++    },
++    {
++      "name": "transfer_power",
++      "function": "check_positive_paths",
++      "old": "np.linalg.matrix_power(tilde/lam,time-1)",
++      "new": "np.linalg.matrix_power(tilde/lam,time)",
++      "source_sha256": "f4f365e950b37861d03ac0a587c31cf746ee55f78ca5ae7b1a0ee026823debc7",
++      "exit_code": 1,
++      "elapsed_seconds": 0.1947772919666022,
++      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;s=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/transfer_power.py');m=importlib.util.module_from_spec(s);s.loader.exec_module(m);m.check_positive_paths()\n                                                                                                                                                                                                                                                    ~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/transfer_power.py\", line 122, in check_positive_paths\n    assert abs(original-transformed)<5e-13\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
++      "stdout_tail": ""
++    },
++    {
++      "name": "surface_ratio",
++      "function": "check_positive_paths",
++      "old": "R=float(max(coeff/coeff[(np.arange(N)+shift)%N]))",
++      "new": "R=1.0",
++      "source_sha256": "5696876dd8889f8971d69cf9b8a6e70c901ed58cc7e51dde948a9d23f86dbb05",
++      "exit_code": 1,
++      "elapsed_seconds": 0.1862560419831425,
++      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;s=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/surface_ratio.py');m=importlib.util.module_from_spec(s);s.loader.exec_module(m);m.check_positive_paths()\n                                                                                                                                                                                                                                                   ~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/surface_ratio.py\", line 129, in check_positive_paths\n    assert np.max(v1-R*v0)<4e-13 and np.max(v0/R-v1)<4e-13\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
++      "stdout_tail": ""
++    },
++    {
++      "name": "temporal_phase",
++      "function": "check_mixed_moments",
++      "old": "K+=term*np.exp(-2j*np.pi*(j@shift)/N)/count",
++      "new": "K+=term/count",
++      "source_sha256": "b59491e35eed6c24a255518006d2f49d34ba020f08677ef43a1014e9e83f4f92",
++      "exit_code": 1,
++      "elapsed_seconds": 0.19372195797041059,
++      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;s=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/temporal_phase.py');m=importlib.util.module_from_spec(s);s.loader.exec_module(m);m.check_mixed_moments()\n                                                                                                                                                                                                                                                    ~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/temporal_phase.py\", line 187, in check_mixed_moments\n    assert discrepancy<4e-12\n           ^^^^^^^^^^^^^^^^^\nAssertionError\n",
++      "stdout_tail": ""
++    },
++    {
++      "name": "moment_gram",
++      "function": "check_mixed_moments",
++      "old": "gram[a,b]=mixed[m+n][i,k]",
++      "new": "gram[a,b]=mixed[m+n+1][i,k]",
++      "source_sha256": "d092f7573de7b59b8f3306fb2c2a0f0b490d1dfb4fc14f68931b5b655e8ef678",
++      "exit_code": 1,
++      "elapsed_seconds": 0.18374474998563528,
++      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;s=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/moment_gram.py');m=importlib.util.module_from_spec(s);s.loader.exec_module(m);m.check_mixed_moments()\n                                                                                                                                                                                                                                                 ~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/moment_gram.py\", line 203, in check_mixed_moments\n    assert np.max(abs(vectors.conj().T@vectors-gram))<4e-12\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
++      "stdout_tail": ""
++    },
++    {
++      "name": "green_longitudinal",
++      "function": "general_path_green",
++      "old": "(norm-longitudinal)))",
++      "new": "(norm+longitudinal)))",
++      "source_sha256": "5490ce69c51e5243f502d1697d152434ab7ac0e99dd24ab9848d5ff8a6907b9f",
++      "exit_code": 1,
++      "elapsed_seconds": 0.18479762494098395,
++      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;s=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/green_longitudinal.py');m=importlib.util.module_from_spec(s);s.loader.exec_module(m);m.general_path_green()\n                                                                                                                                                                                                                                                        ~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/green_longitudinal.py\", line 250, in general_path_green\n    assert abs(direct-reduced)<3e-12*max(1,direct)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
++      "stdout_tail": ""
++    },
++    {
++      "name": "path_divergence",
++      "function": "general_path_green",
++      "old": "rho=np.sum(d*eta,axis=-1)",
++      "new": "rho=-np.sum(d*eta,axis=-1)",
++      "source_sha256": "2ddbadbd1126d8f530f06c01e25ea2d226ce9f2229a4f66a360207e4e712d035",
++      "exit_code": 1,
++      "elapsed_seconds": 0.1773316249018535,
++      "stderr_tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    import importlib.util;s=importlib.util.spec_from_file_location('tested','/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/path_divergence.py');m=importlib.util.module_from_spec(s);s.loader.exec_module(m);m.general_path_green()\n                                                                                                                                                                                                                                                     ~~~~~~~~~~~~~~~~~~~~^^\n  File \"/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/toe-static-sector-mutations-q6omw18r/path_divergence.py\", line 241, in general_path_green\n    assert np.max(abs(rho-rho_expected))<4e-15\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
++      "stdout_tail": ""
++    }
++  ]
++}
+diff --git a/.claude/science/physics-loops/static-charge-transfer-sector-20260915/VALIDATION.json b/.claude/science/physics-loops/static-charge-transfer-sector-20260915/VALIDATION.json
+new file mode 100644
+index 0000000000..9fb95b7123
+--- /dev/null
++++ b/.claude/science/physics-loops/static-charge-transfer-sector-20260915/VALIDATION.json
+@@ -0,0 +1,95 @@
++{
++  "utc": "2026-09-15T13:04:35.281180+00:00",
++  "base": "8a71d7fa8a87a451e5c49df31d18986574d73610",
++  "inspected_main": "06a7caddf3eac3154be18d9381d8f8bb26154e81",
++  "source_hashes": {
++    "docs/FINITE_CLOCK_STATIC_CHARGE_TRANSFER_HAMILTONIAN_AND_PATH_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-15.md": "f586575b97039f38354f0dad69677886bc859f5b998b4a0df776b81dc9eed41f",
++    "scripts/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_2026_09_15.py": "6e99936a4f99a308f1a6b4d54ac311f433c8f8f9f1943a60ed98750ffe04c2fb",
++    "logs/runner-cache/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_2026_09_15.txt": "498bf8a263c6cb8c562aebd943dbeb06bce061620fc5cd5c7f6029ed46ce1af4",
++    "docs/audit/data/citation_graph_manifest.json": "915713bfbed5048cf74bec0e0de3bdfe78bacc9af92932264f4e69a2d9d571e4"
++  },
++  "full_pipeline": {
++    "exit_code": 0,
++    "checkpoint": "b983152e0a2c",
++    "tail": [
++      "  OK: no errors",
++      "==> 14/18 render_audit_ledger.py",
++      "Wrote docs/audit/AUDIT_LEDGER.md",
++      "==> 15/18 render_publication_effective_status.py",
++      "publication package deferred (archive/publication/ci3_z3); nothing to render",
++      "==> 16/18 compute_dispatch_shadow.py (shadow lane + churn state; no dispatch effect)",
++      "dispatch shadow: lane=25 gap_available=True manifest=ok prior_state=True",
++      "==> 17/18 render_front_door_status.py",
++      "Wrote docs/repo/FRONT_DOOR_STATUS.md",
++      "Wrote docs/repo/RETAINED_BACKBONE.md",
++      "==> 18/18 repo_invariants_check.py (authority-link guard)",
++      "INFO: attested 0 seed-pruned tracked ledger shards from the captured full-build checkpoint",
++      "PASS rows=4755 retained_grade=0 link_violations=0 class_f_violations=0 graph_delta=acknowledged (enforced)",
++      "==> 18a/18 generate_skill_axiom_baselines.py --check (skill axiom-baseline guard)",
++      "  OK   docs/ai_methodology/skills/physics-loop/SKILL.md: axiom-baseline block in sync",
++      "  OK   docs/ai_methodology/skills/review-loop/SKILL.md: axiom-baseline block in sync",
++      "  OK   docs/ai_methodology/skills/audit-loop/SKILL.md: axiom-baseline block in sync",
++      "  OK   docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md: axiom-baseline block in sync",
++      "  OK   docs/audit/data/skill_axiom_baseline_manifest.json: source acknowledgment current",
++      "==> 18b/18 check_review_loop_skill_contract.py (review quality/safety guard)",
++      "check_review_loop_skill_contract: OK (29 families)",
++      "==> 18c/18 static_pipeline_checkpoint.py finalize (successful full-build checkpoint)",
++      "finalized full checkpoint b983152e0a2c",
++      "",
++      "Pipeline complete.",
++      "  Read docs/audit/AUDIT_LEDGER.md for the rendered ledger.",
++      "  Read docs/audit/AUDIT_QUEUE.md   for the next-up audit queue.",
++      "  Read docs/repo/FRONT_DOOR_STATUS.md for the front-door status snapshot.",
++      "  Read docs/audit/data/reaudit_candidates.json for unblocked re-audit candidates.",
++      "  Read docs/audit/AUDIT_DISPATCH_QUEUE.md for dispatcher-only targeted re-audits.",
++      "  Read docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md for the",
++      "    audit-vs-publication-tables gap report.",
++      "  Read docs/publication/ci3_z3/<NAME>_EFFECTIVE_STATUS.md for the audit-",
++      "    derived view of each publication table."
++    ]
++  },
++  "strict_lint": {
++    "exit_code": 0,
++    "result": "OK: no errors; existing warnings and notices remain"
++  },
++  "changed_evidence": {
++    "base": "8a71d7fa8a87a451e5c49df31d18986574d73610",
++    "changed_path_count": 18,
++    "checked": [
++      {
++        "changed_surfaces": [
++          "docs/FINITE_CLOCK_STATIC_CHARGE_TRANSFER_HAMILTONIAN_AND_PATH_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-15.md",
++          "scripts/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_2026_09_15.py"
++        ],
++        "claim_id": "finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_bounded_theorem_note_2026-09-15",
++        "forensic_evidence_ready": true,
++        "helper_runner_paths": [],
++        "issue": null,
++        "runner_path": "scripts/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_2026_09_15.py"
++      }
++    ],
++    "control_failures": [],
++    "diff_scope": "committed_and_worktree",
++    "failures": [],
++    "schema": "changed_audit_evidence_readiness_v1"
++  },
++  "validation_history": [
++    "First manifest write was called before graph build completed and failed FileNotFoundError. It changed no manifest. After graph completion, the manifest was generated, its one-node one-edge delta inspected and staged.",
++    "Primary cache succeeded, eight actual mutations raised AssertionError, compilation and vocabulary passed. Full pipeline, strict lint and actual changed-row evidence passed."
++  ],
++  "discarded_generated_paths": [
++    "docs/audit/AUDIT_QUEUE.md",
++    "docs/audit/data/dispatch_shadow_state.json",
++    "docs/audit/data/effective_status_summary.json",
++    "docs/audit/data/ledger/ca/carrier_preserving_closed_integer_charge_gas_convexification_bounded_theorem_note_2026-09-15.json",
++    "docs/audit/data/ledger/fi/finite_clock_exact_coupled_electric_magnetic_defect_representation_bounded_theorem_note_2026-09-15.json",
++    "docs/audit/data/ledger/fi/finite_clock_ginibre_free_state_and_static_charge_bound_bounded_theorem_note_2026-09-15.json",
++    "docs/audit/data/ledger/fi/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_bounded_theorem_note_2026-09-15.json",
++    "docs/audit/data/ledger/fr/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_bounded_theorem_note_2026-09-15.json",
++    "docs/audit/data/ledger/qu/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_bounded_theorem_note_2026-09-15.json",
++    "docs/audit/data/ledger_meta.json",
++    "docs/audit/data/load_bearing_summary.json",
++    "docs/repo/FRONT_DOOR_STATUS.md"
++  ],
++  "independent_scientific_review": "pending; author checks only"
++}
+diff --git a/docs/FINITE_CLOCK_STATIC_CHARGE_TRANSFER_HAMILTONIAN_AND_PATH_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-15.md b/docs/FINITE_CLOCK_STATIC_CHARGE_TRANSFER_HAMILTONIAN_AND_PATH_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-15.md
+new file mode 100644
+index 0000000000..4796861f90
+--- /dev/null
++++ b/docs/FINITE_CLOCK_STATIC_CHARGE_TRANSFER_HAMILTONIAN_AND_PATH_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-15.md
+@@ -0,0 +1,445 @@
++---
++claim_id: finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_bounded_theorem_note_2026-09-15
++claim_type: bounded_theorem
++claim_scope: "For the supplied finite-clock Villain law at fixed finite N and beta>0, uniform inverse transfer moments and positive Fourier surface comparisons construct a common injective transfer operator for finite charged insertions. Its nonnegative Hamiltonian has an insertion-path-independent spectral bottom. The prior large-beta Wilson estimate additionally gives a Coulomb-form upper bound on finite neutral static charge energies. This concerns the specified free-boundary static correlation space, not moving matter or physical-law selection."
++upstream_dependencies:
++  - finite_clock_ginibre_free_state_and_static_charge_bound_bounded_theorem_note_2026-09-15
++runner: scripts/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_2026_09_15.py
++---
++
++# Finite-clock static-charge Hamiltonian and path comparison
++
++**Date:** 2026-09-15
++**Type:** bounded_theorem
++**Status:** proposed_retained
++
++For the supplied finite-clock Villain law, the static correlation functions
++below determine one transfer Hilbert space for each finite charge profile.
++The transfer operator is injective, so its logarithm is a densely defined
++nonnegative Hamiltonian. Its spectral bottom agrees for all finite path
++insertions with that charge profile. These are author proof proposals,
++with personal finite checks and independent review still pending.
++
++## Target and explicit dependencies
++
++The [free-state and static-transfer source](FINITE_CLOCK_GINIBRE_FREE_STATE_AND_STATIC_CHARGE_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md)
++identifies the clock law's free-boundary limit and each path's positive
++spectral measure. It left a possible zero-transfer atom and did not identify
++a common path-independent bottom. Parts I-III supply those stronger
++statements. Part IV extends its Green calculation to arbitrary fixed spatial
++paths and neutral charge profiles. The input is pinned to PR8140 at
++`8a71d7fa8a87a451e5c49df31d18986574d73610`, itself stacked on the provisional
++PR8133 source unit. That complete interacting source must be reviewed or
++landed before this consequence is assigned authority.
++
++```yaml
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: upstream_support
++target_claim_id: finite_clock_ginibre_free_state_and_static_charge_bound_bounded_theorem_note_2026-09-15
++target_blocker_text: "Construct a common static-charge transfer Hamiltonian and identify the path-independent bottom in the same free-boundary state."
++source_of_blocker_text: user_goal
++reachability_to_target: supports
++artifact_role: theorem
++next_trace_action: "Independently review the common-space construction, then address the full field algebra and dynamical charged matter."
++conditional_surface_status: "The specified clock Villain law, beta>0, fixed finite N and free-boundary state; the Coulomb-form quantitative bound additionally uses the source's explicit large-beta curvature assumptions."
++hypothetical_axiom_status: null
++admitted_observation_status: null
++claim_type_reason: "Finite operator identities, positive Fourier comparisons and a matrix-moment construction with distinct direct-law finite challenges."
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++```
++
++| Input or obligation | Provenance and use | Status within this proposal |
++|---|---|---|
++| Finite-clock Villain measure and fixed beta>0,N>=1 | Supplied law in the linked source | Model choice; native selection open |
++| Cofinal free state and temporal transfer identity | Source Parts II.4-5 | Provisional proof input; full source review required |
++| Positive one-link Fourier coefficients | Gaussian alias formula below | Recalled and checked directly |
++| Inverse moments and positive Fourier surface comparison | Parts I-II | Derived here for every beta>0 |
++| Common matrix-moment Hilbert space and its spectral bottom | Part III | Derived here from the actual mixed static kernel |
++| General path Green energy | Part IV | Derived here |
++| Quantitative separation bound | Source Part I Wilson inequality | Additional explicit large-beta premise |
++| Complete local field algebra, moving charges, physical clock and law | Separate physical targets | Open; no impossibility claim |
++
++All boxes in the state passage are free cubic boxes as in the source. Fixed
++spatial currents and fillings fit inside sufficiently large spatial boxes;
++no thin-slab curvature estimate is imported. A zero-transfer bound is about
++this reconstructed static space, not every possible infinite-volume charged
++representation. The continuous semigroup is in selected lattice time units.
++
++## Part I. Uniform inverse moments
++
++### 1. A local Fourier comparison
++
++In the notation of the linked source, T=V^(1/2) C V^(1/2), beta>0, and Omega_0 is
++its normalized positive Perron vector, T Omega_0=lambda_0 Omega_0.
++The one-link convolution in C has strictly positive Fourier coefficients
++
++ c_k proportional sum_(r congruent k mod N) exp[-r^2/(2beta)],
++ k in Z_N.                                              (1)
++
++Let j be any integer spatial-link vector of finite support and U_j the
++multiplication operator exp[2pi i j.a/N]. Fourier transformation makes C
++diagonal with eigenvalues product_e c_(k_e); U_j shifts k by j. Hence
++
++ U_j^* C^(-1) U_j <= K(j) C^(-1),
++ K(j)=product_e max_(k in Z_N) c_k/c_(k+j_e).              (2)
++
++This is a positive operator inequality, not a bound on individual matrix
++entries. Each factor is finite, positive and at least1; edges with j_e=0
++contribute1. For a simple length-R path with charge q, K(j)=kappa_q^R,
++kappa_q=max_k c_k/c_(k+q). The choice of Fourier sign changes q to-q and
++gives the same maximum since c_k=c_(-k).
++
++U_j commutes with V and its inverse square root. Therefore
++
++ U_j^* T^(-1) U_j <= K(j) T^(-1).
++
++Taking the expectation in Omega_0 gives the volume-independent bound
++
++ <U_j Omega_0,(T/lambda_0)^(-1) U_j Omega_0> <=K(j).       (3)
++
++The comparison requires no source-curvature estimate or large-beta regime.
++It is valid on every finite spatial box containing j, for every fixed finite
++N and beta>0. K(j) can be extremely large and grows with path length; no
++uniform bound in N or R is asserted. For a charge alias j=0 modN, K=1.
++
++### 2. Removing the possible zero atom after the spatial limit
++
++The finite path-insertion spectral law nu_(L,j) is supported on(0,1], and
++(3) says integral lambda^(-1) nu_(L,j)(dlambda)<=K(j). The free-state
++matching proof in the linked source identifies its weak limit nu_j on[0,1]. For each
++positive integer m the function min(m,1/lambda), assigned value m at0,
++is bounded and continuous on[0,1]. Weak convergence and then monotone
++convergence give
++
++ integral_[0,1] lambda^(-1) nu_j(dlambda)<=K(j),          (4)
++
++where the integrand is infinite at0. Consequently nu_j({0})=0. This is
++stronger than merely knowing finitely many positive-time moments.
++
++On the ENTIRE cyclic Hilbert space L2(nu_j), multiplication by
++H_j=-log lambda is now a densely defined nonnegative self-adjoint operator,
++and the transfer multiplication operator is exactly exp(-H_j). The vectors
++cut off to lambda>=1/m give the required dense domain. Its semigroup is
++strongly continuous by dominated convergence, and for the cyclic vector1
++
++ <1,exp(H_j)1> <=K(j),
++ <1,H_j^p 1> <=p! K(j), p a nonnegative integer.         (5)
++
++The second inequality uses E^p<=p! exp(E) for E>=0. In particular the
++continuous-time interpolation W_j(t)=integral exp(-tE) nu_j(dlambda)
++has every finite one-sided time derivative at0, determined by these moments.
++It extends analytically to Re t>-1 by (4), with derivatives justified on
++compact subsets using the spare exponential margin. This interpolates the
++same integer-time static correlation; no empirical continuous time is derived.
++
++
++## Part II. Positive Fourier surface comparison
++
++### 1. Positive electric-coordinate transfer
++
++For the same finite spatial clock box, put A=V^(1/2) C^(1/2), so
++
++ T=A A^*, Ttilde=A^* A=C^(1/2) V C^(1/2).               (1)
++
++All operators are invertible. In the Fourier basis, C is diagonal with
++strictly positive products of the one-link coefficients c_k. V is a
++convolution matrix whose coefficients are nonnegative: each plaquette
++Villain weight has coefficients c_r>0, and their product expands as
++
++ Vhat(m)=sum_(d1* s=m modN) product_p c_(s_p).           (2)
++
++Thus Ttilde is entrywise nonnegative. Its largest eigenvalue lambda0 is
++simple because T has a strictly positive configuration-space kernel.
++Perron-Frobenius supplies a normalized nonnegative Fourier-coordinate
++eigenvector Psi0. The original Perron vector is
++Omega0=A Psi0/sqrt(lambda0), up to its positive overall phase.
++
++For a spatial character U_j, define v_j=A^* U_j Omega0. Since U_j commutes
++with V and shifts Fourier coordinates,
++
++ v_j=C^(1/2) V U_j C^(1/2) Psi0/sqrt(lambda0).           (3)
++
++Every Fourier coordinate of v_j is nonnegative. This assertion concerns
++these transformed insertion vectors; it does not assume that sqrt(V) has
++nonnegative Fourier coefficients.
++
++For every integer time T>=1,
++
++ W_j(T)=lambda0^(-T) <v_j,Ttilde^(T-1) v_j>.            (4)
++
++This follows from (AA*)^T=A(A*A)^(T-1)A*. The distinction between T and
++T-1 is essential.
++
++### 2. A fixed surface bounds coefficient ratios
++
++Suppose j-k=b=d1* S for a finite integer spatial plaquette field S. On Z3
++every finite conserved difference b has such a finite filling. Work in
++spatial boxes containing its support. Define
++
++ R(S)=product_(p in support S) max_(r in Z_N) c_r/c_(r+S_p).
++
++It is finite and at least1. Because c_r=c_(-r), the maximum for S_p and
++-S_p agrees. In (2), changing the plaquette current variable s to s+S
++is a bijection between the fibers for m and m+b, and each product weight
++changes by a factor between R(S)^(-1) and R(S). Therefore
++
++ R(S)^(-1) Vhat(m)<=Vhat(m-b)<=R(S) Vhat(m)             (5)
++
++for every m. If a coefficient vanishes, the shifted one vanishes too by
++the same bijection, so no division by an unsupported coefficient is made.
++
++Equation(3), term by term, now gives
++
++ R(S)^(-1) v_k <= v_j <= R(S) v_k                     (6)
++
++in the Fourier coordinate order. Since every power Ttilde^(T-1) is
++entrywise nonnegative, (4) implies
++
++ R(S)^(-2) W_k(T)<=W_j(T)<=R(S)^2 W_k(T), T>=1.         (7)
++
++The constant depends only on the fixed filling and local positive couplings,
++not the spatial box or time length. It may be very large, and no optimized
++surface or continuum parameter estimate is claimed.
++
++### 3. Infinite free state and common thresholds
++
++Pass (7) through the matched free-boundary limit at each fixed T. All
++correlations have positive spectral representations, hence their long-time
++rates exist. The fixed multiplicative comparison proves equal rates for
++j and k, at every beta>0 and fixed finite N. Positivity at finite T follows
++also from the transformed nonnegative vectors and positive definiteness;
++the infinite positivity and finite rate follow from Part I's inverse
++moment bound, which gives E_visible<=log K(j) by Jensen for the spectral
++probability measure.
++
++This removes the smallness premise from the path-independence input of
++Part III's common transfer-space construction. Under the additional curvature
++conditions, the sharper separation-uniform Coulomb upper bound continues to
++hold. At other couplings no such separation bound is inferred from R(S),
++K(j), or path independence alone. In particular a confining phase can still
++have a path-independent static energy growing with endpoint separation.
++
++
++## Part III. Common static-charge transfer space
++
++### 1. The mixed moment kernel exists in the matched free state
++
++Fix a finite integer spatial charge profile rho with total sum0. Let J_rho
++be the countable set of finite integer spatial currents j with d0*j=rho.
++For each sufficiently large spatial box, let
++
++ v_(L,j)=U_j Omega_(L,0), tau_L=T_L/lambda_(L,0).
++
++For j,k in J_rho and n>=0 define
++
++ C_n(j,k)=lim_L <v_(L,j),tau_L^n v_(L,k)>.              (1)
++
++The temporal-gauge identity makes the finite expression a closed clock
++character: insert -j at one endpoint slice, k at the other, and the common
++temporal charge lines between them. Signs may be reversed together. The
++current is conserved because d0*j=d0*k=rho. At n=0 it is the equal-time
++closed spatial character k-j. Thus every limit exists by the same cofinal
++free-boundary state argument as the diagonal Wilson moments. The n=0
++diagonal is1. Every finite matrix C_n is Hermitian; positivity statements
++below come from its finite-volume transfer representation, not merely from
++the individual character signs.
++
++This uses exact integer charge representatives. Equivalent Z_N charge
++profiles can be represented by adjusting currents by N times a finite
++integer flow: any finite integer charge difference of total sum0 is the
++divergence of a finite integer flow. Their Fourier multiplication functions
++then agree. The construction may consequently be grouped by charges mod N;
++no representative-dependent physical charge is introduced.
++
++### 2. A direct matrix-moment Hilbert construction
++
++Start with finite formal sums x=sum_(m,j) a_(m,j) [m,j], m>=0, and put
++
++ <x,y>=sum conjugate(a_(m,j)) b_(n,k) C_(m+n)(j,k).     (2)
++
++This form is positive semidefinite: each finite-volume counterpart equals
++the squared norm of sum a_(m,j) tau_L^m v_(L,j), and the finite sum has a
++limit. Quotient null vectors and complete to obtain H_rho.
++
++On formal sums define S[m,j]=[m+1,j]. Finite-volume inequalities
++0<=tau_L<=I and tau_L^2<=I pass to all finite sums, giving
++
++ 0<=<x,Sx><=<x,x>, and ||Sx||<=||x||.
++
++Therefore S respects null vectors and extends to a bounded positive
++self-adjoint contraction on H_rho. The vectors e_j=[0,j] and their S
++polynomials have dense span by construction. Their spectral measures have
++the moments C_n(j,j), so uniqueness of the moment problem on[0,1] identifies
++them with the previously constructed path-insertion measures nu_j.
++
++This is a common minimal representation of the actual mixed static
++correlation kernel. It is stronger than constructing unrelated one-vector
++spaces, but does not by definition construct every local field operator or
++all multi-time products of such operators.
++
++### 3. A genuine Hamiltonian on the whole common space
++
++Part I gives integral lambda^(-1) nu_j(dlambda)<=K(j)<infinity for every
++generating e_j. Hence the spectral projection P_{0} of S annihilates every
++e_j. It commutes with S, so it annihilates every S polynomial times e_j and
++therefore the entire dense span. Thus P_0=0: S is injective.
++
++The spectral functional calculus defines a nonnegative self-adjoint
++
++ H_rho=-log S, S=exp(-H_rho),                           (3)
++
++on a dense domain. Its continuous-time semigroup is strongly continuous.
++The e_j have the finite exponential energy moments from Part I. A finite
++combination sum c_j e_j obeys
++
++ ||S^(-1/2) sum c_j e_j||
++             <=sum |c_j|sqrt(K(j)),                    (4)
++
++by the triangle inequality on the domain of S^(-1/2). This is a domain
++statement about a specific reconstructed transfer space, not an empirical
++choice of continuous physical time.
++
++### 4. The common static threshold is the spectral bottom of this space
++
++By Part II, at every beta>0 and fixed finite N, each e_j has the same visible
++threshold E_rho. Its spectral measure for H_rho has no support below E_rho
++and has support arbitrarily close to it. The projection onto [0,E_rho)
++therefore annihilates every e_j, hence their S-polynomial dense span. So
++
++ inf spectrum(H_rho)=E_rho.                            (5)
++
++This conclusion follows for this explicitly defined common space. It is
++not a claim that every possible infinite-volume charged representation has
++that bottom. Under the source curvature assumptions, two endpoint test charges obey
++the derived separation-uniform Coulomb-form upper bound, and general finite
++neutral charge profiles obey E_rho<=a<rho,G3 rho>/2. Destructive combinations of insertions
++can have a higher individual visible threshold without changing (5).
++
++For the neutral profile the constant insertion j=0 gives the unit vacuum
++vector and E_0=0. Charges that are aliases mod N are identified as above.
++
++
++## Part IV. General spatial-path Green energy
++
++Write a finite spatial current as eta, its divergence as rho=d0*eta, and
++its three Fourier components as eta_hat(k). Put lambda=sum_i|exp(ik_i)-1|^2
++and r=(lambda+2-sqrt(lambda(lambda+4)))/2. As in the rectangular calculation,
++the temporal Green kernel is g_lambda(t)=r^|t|/sqrt(lambda(lambda+4)).
++The temporal current contributes |rho_hat|^2 times the sum of g(t-s) for
++0<=s,t<T. The two spatial caps contribute
++2||eta_hat||^2(1-r^T)/sqrt(lambda(lambda+4)). Different orientations have
++no cross term because the one-form Hodge Green is scalar in orientation.
++Thus exactly
++
++ E_eta(T)=T integral |rho_hat|^2/lambda
++   +2 integral (1-r^T)/sqrt(lambda(lambda+4))
++                   [||eta_hat||^2-|rho_hat|^2/lambda].   (7a)
++
++All integrals use normalized measure on the three-torus. Fourier divergence
++and Cauchy-Schwarz give |rho_hat|^2<=lambda||eta_hat||^2, so the remainder
++is nonnegative. Since ||eta_hat||<=sum_e|eta_e|, it is at most
++2||eta||_1^2 G4(0), uniformly in T. Therefore E_eta(T)/T decreases to
++<rho,G3 rho>. For a pair rho=q(delta_y-delta_x), this is
++2q^2[G3(0)-G3(y-x)], yielding the pair-charge bound. For any finite neutral external charge
++profile the corresponding bound is E_rho<=a<rho,G3 rho>/2. These are
++upper bounds; no equality for the physical interaction energy is inferred.
++
++
++The source Wilson bound is W_eta(T)>=exp[-a E_eta(T)/2], where
++ a=beta^-1+epsilon under its stated source smallness. Passing T to infinity
++using the displayed Green identity therefore gives E_rho<=a<rho,G3 rho>/2
++in the common space of Part III. For two charges q at separation y-x this
++is a q_eff^2[G3(0)-G3(y-x)], with q_eff a smallest absolute representative
++mod N. It is uniformly bounded in their separation. No equality for a
++Coulomb force, photon dispersion or propagating charged particle is inferred.
++
++## No-Go Discipline Gate
++
++This is an affirmative theorem proposal. The following records the scope of
++its conclusions; it submits no impossibility result, exhaustive route search,
++independent wall count or requirement to change the axioms. No negative
++packet PASS is claimed.
++
++**N1 — Actual mechanisms.** The four constructive mechanisms are a local
++inverse-operator comparison, a positive Fourier surface bijection, a mixed
++moment Hilbert construction, and temporal Green summation. Their finite
++controls test incorrect inverse constants, omitted surface constants,
++omitted temporal charge phases and an incorrect longitudinal subtraction.
++These are concrete author checks of this construction, not five exhausted
++alternative research routes. The no-go route quota is not represented as met.
++
++**N2 — Dependencies.** The common-space injectivity uses the inverse moment
++bound. Its path-independent bottom additionally uses the surface comparison.
++The quantitative charge bound adds the earlier Wilson inequality and Part IV.
++These are dependencies in one proof, not independent physical walls. The
++relations among native law selection, full field reconstruction and moving
++matter are unresolved here; no independence assertion is made.
++
++**N3 — Hidden-premise scan.** The supplied Villain law, beta>0, fixed finite N,
++free-boundary state and matched cofinal limits are explicit inputs. "By
++construction" refers to the specified moment-space completion and its dense
++span, not to a pre-existing physical Hilbert space. Large-beta curvature is
++used only for the quantitative charge bound. No all-state uniqueness, physical
++time calibration or full local operator algebra is assumed.
++
++**N4 — Residual match.** The exact linked source at
++8a71d7fa8a87a451e5c49df31d18986574d73610 supplies free-state limits and
++individual path moments. It does not supply the inverse bound or a common
++path-independent bottom; these are the present proof obligations. No prior
++no-go, negative search or numerical failure is used as an impossibility witness.
++
++**N5 — Resolution.** The primary runner evaluates local Fourier ratios,
++spatial-square temporal-link sums, transfer spectra and finite surface/path
++comparisons. Its five resolution lines state that the infinite-volume and
++common-space conclusions require the written arguments. Finite floating
++agreement does not certify either passage.
++
++**N6 — Partial closure.** The present theorem closes a specified mathematical
++construction under a supplied law. Deriving that law, extending the observable
++algebra, and adding dynamical matter remain possible research routes. None is
++claimed to require a new axiom. An improved physical interpretation alone
++would not prove the missing dynamics.
++
++**N7 — Strongest challenge.** A reviewer should challenge whether every mixed
++kernel is obtained in the same free state, whether the transformed insertion
++positivity really follows without positive Fourier coefficients for sqrt(V),
++and whether the generators exhaust the claimed space. Parts II-III address
++those precise issues. A larger physical representation could contain extra
++states below this space's bottom; the conclusion deliberately identifies only
++the common space reconstructed here.
++
++**N8 — Earlier-cycle correction.** The immediately preceding static-source
++proposal left a zero atom and a path-visible threshold. The inverse comparison
++and positive surface bijection provide constructive ways to remove those
++limitations. The separate private real-source square-root logarithm argument
++uses stronger coupling assumptions; it is not needed for Part II. No prior
++limitation is inherited as a permanent physical obstruction.
++
++## Author evidence and limits
++
++The primary runner combines four self-contained finite probes. Thirty
++insertion cases compare direct inverse solves, Fourier alias ratios,
++whitened inverse operators and spectral sums. Five square systems compare
++positive transformed insertion vectors and ten fixed-surface bounds.
++Three systems compare mixed same-charge moments with explicit temporal-link
++sums and check their moment Gram forms. Twenty-four general-path Green
++fixtures compare the reduced identity with direct temporal-kernel sums.
++These floating checks are not interval certificates or infinite-volume proofs.
++
++The first positive-Fourier fixture used a full nearly degenerate Perron
++solve and produced a spurious negative sector component of about9.37e-13.
++Its source and failure are preserved at campaign commit
++`3c6b685f6d69393d7dab170713daff2073535812`. The corrected probe solves the
++exact neutral Fourier block, reconstructs the configuration Perron vector,
++and checks its full-matrix residual and largest eigenvalue. No tolerance
++was loosened and no coordinate was clipped. This is numerical provenance,
++not a scientific input required by the runner.
++
++The primary reads only its own source for an integrity hash. All scientific
++fixtures and actual control formulas are inside it. Its canonical cache uses
++the declared300-second timeout. The author packet records actual mutation
++checks, source hashes and repository validation. These are author checks;
++independent source review and formal audit remain separate. No axiom,
++primitive, editable prompt, audit verdict or main-branch science is changed.
+diff --git a/docs/audit/data/citation_graph_manifest.json b/docs/audit/data/citation_graph_manifest.json
+index d7a9a43c8b..78850a3abe 100644
+--- a/docs/audit/data/citation_graph_manifest.json
++++ b/docs/audit/data/citation_graph_manifest.json
+@@ -1,6 +1,6 @@
+ {
+- "edge_count": 12525,
+- "node_count": 5046,
++ "edge_count": 12526,
++ "node_count": 5047,
+  "nodes": {
+   "3d_correction_master_note": {
+    "deps_hash": "e3b0c44298fc",
+@@ -4930,6 +4930,10 @@
+    "deps_hash": "c05aab2fed6a",
+    "out_degree": 2
+   },
++  "finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_bounded_theorem_note_2026-09-15": {
++   "deps_hash": "c85ce5ad1461",
++   "out_degree": 1
++  },
+   "finite_controller_clean_event_census_cycles863_865_bounded_theorem_note_2026-07-28": {
+    "deps_hash": "7c59543ab5ac",
+    "out_degree": 1
+diff --git a/logs/runner-cache/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_2026_09_15.txt b/logs/runner-cache/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_2026_09_15.txt
+new file mode 100644
+index 0000000000..95849b07ca
+--- /dev/null
++++ b/logs/runner-cache/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_2026_09_15.txt
+@@ -0,0 +1,18 @@
++===== runner cache v1 =====
++runner: scripts/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_2026_09_15.py
++runner_sha256: 6e99936a4f99a308f1a6b4d54ac311f433c8f8f9f1943a60ed98750ffe04c2fb
++timeout_sec: 300
++exit_code: 0
++elapsed_sec: 2.01
++status: ok
++----- stdout -----
++EVIDENCE_JSON: {"general_path_green": [{"T": 1, "direct_time_sum": 1.11782487526517, "grid_side": 24, "path_index": 0, "positive_remainder": 0.6842260656720235, "reduced_energy": 1.11782487526517, "static_limit": 0.4335988095931465}, {"T": 2, "direct_time_sum": 1.6789328688782763, "grid_side": 24, "path_index": 0, "positive_remainder": 0.8117352496919834, "reduced_energy": 1.6789328688782765, "static_limit": 0.4335988095931465}, {"T": 5, "direct_time_sum": 3.025116145742302, "grid_side": 24, "path_index": 0, "positive_remainder": 0.8571220977765692, "reduced_energy": 3.0251161457423015, "static_limit": 0.4335988095931465}, {"T": 12, "direct_time_sum": 6.066037759235948, "grid_side": 24, "path_index": 0, "positive_remainder": 0.8628520441181904, "reduced_energy": 6.0660377592359485, "static_limit": 0.4335988095931465}, {"T": 1, "direct_time_sum": 1.11782487526517, "grid_side": 24, "path_index": 1, "positive_remainder": 0.6842260656720235, "reduced_energy": 1.11782487526517, "static_limit": 0.4335988095931465}, {"T": 2, "direct_time_sum": 1.6789328688782763, "grid_side": 24, "path_index": 1, "positive_remainder": 0.8117352496919835, "reduced_energy": 1.6789328688782765, "static_limit": 0.4335988095931465}, {"T": 5, "direct_time_sum": 3.025116145742302, "grid_side": 24, "path_index": 1, "positive_remainder": 0.8571220977765692, "reduced_energy": 3.0251161457423015, "static_limit": 0.4335988095931465}, {"T": 12, "direct_time_sum": 6.066037759235948, "grid_side": 24, "path_index": 1, "positive_remainder": 0.8628520441181904, "reduced_energy": 6.0660377592359485, "static_limit": 0.4335988095931465}, {"T": 1, "direct_time_sum": 1.1178266111423545, "grid_side": 40, "path_index": 0, "positive_remainder": 0.6842277984593702, "reduced_energy": 1.1178266111423543, "static_limit": 0.4335988126829841}, {"T": 2, "direct_time_sum": 1.6789397624640665, "grid_side": 40, "path_index": 0, "positive_remainder": 0.8117421370980983, "reduced_energy": 1.6789397624640665, "static_limit": 0.4335988126829841}, {"T": 5, "direct_time_sum": 3.02515715103831, "grid_side": 40, "path_index": 0, "positive_remainder": 0.8571630876233897, "reduced_energy": 3.0251571510383104, "static_limit": 0.4335988126829841}, {"T": 12, "direct_time_sum": 6.066221542805824, "grid_side": 40, "path_index": 0, "positive_remainder": 0.8630357906100141, "reduced_energy": 6.066221542805823, "static_limit": 0.4335988126829841}, {"T": 1, "direct_time_sum": 1.1178266111423545, "grid_side": 40, "path_index": 1, "positive_remainder": 0.6842277984593704, "reduced_energy": 1.1178266111423545, "static_limit": 0.4335988126829841}, {"T": 2, "direct_time_sum": 1.6789397624640665, "grid_side": 40, "path_index": 1, "positive_remainder": 0.8117421370980983, "reduced_energy": 1.6789397624640665, "static_limit": 0.4335988126829841}, {"T": 5, "direct_time_sum": 3.02515715103831, "grid_side": 40, "path_index": 1, "positive_remainder": 0.8571630876233897, "reduced_energy": 3.0251571510383104, "static_limit": 0.4335988126829841}, {"T": 12, "direct_time_sum": 6.066221542805822, "grid_side": 40, "path_index": 1, "positive_remainder": 0.8630357906100141, "reduced_energy": 6.066221542805823, "static_limit": 0.4335988126829841}, {"T": 1, "direct_time_sum": 1.117826828195275, "grid_side": 64, "path_index": 0, "positive_remainder": 0.6842280154281644, "reduced_energy": 1.1178268281952752, "static_limit": 0.4335988127671109}, {"T": 2, "direct_time_sum": 1.6789406284232107, "grid_side": 64, "path_index": 0, "positive_remainder": 0.8117430028889889, "reduced_energy": 1.6789406284232107, "static_limit": 0.4335988127671109}, {"T": 5, "direct_time_sum": 3.0251624664468473, "grid_side": 64, "path_index": 0, "positive_remainder": 0.8571684026112933, "reduced_energy": 3.0251624664468477, "static_limit": 0.4335988127671109}, {"T": 12, "direct_time_sum": 6.066249295598816, "grid_side": 64, "path_index": 0, "positive_remainder": 0.863063542393486, "reduced_energy": 6.0662492955988165, "static_limit": 0.4335988127671109}, {"T": 1, "direct_time_sum": 1.117826828195275, "grid_side": 64, "path_index": 1, "positive_remainder": 0.6842280154281644, "reduced_energy": 1.1178268281952752, "static_limit": 0.4335988127671109}, {"T": 2, "direct_time_sum": 1.6789406284232107, "grid_side": 64, "path_index": 1, "positive_remainder": 0.8117430028889889, "reduced_energy": 1.6789406284232107, "static_limit": 0.4335988127671109}, {"T": 5, "direct_time_sum": 3.0251624664468477, "grid_side": 64, "path_index": 1, "positive_remainder": 0.8571684026112933, "reduced_energy": 3.0251624664468477, "static_limit": 0.4335988127671109}, {"T": 12, "direct_time_sum": 6.066249295598816, "grid_side": 64, "path_index": 1, "positive_remainder": 0.863063542393486, "reduced_energy": 6.0662492955988165, "static_limit": 0.4335988127671109}], "inverse_moments": {"cases": [{"K": 1.0, "N": 2, "beta": 0.3, "dimension": 16, "direct_spectral_relative_error": 5.551115123125783e-16, "energy_moments_1_2_3": [1.2787499577378776e-30, 3.565310600883624e-30, 1.0284042585129661e-29], "inverse_moment": 0.9999999999999986, "j": [0, 0, 0, 0], "spectral_inverse_moment": 0.999999999999998, "whitened_comparison_norm": 1.000000000000001}, {"K": 2.653978673872641, "N": 2, "beta": 0.3, "dimension": 16, "direct_spectral_relative_error": 0.0, "energy_moments_1_2_3": [0.9612538071776919, 0.9345429538918548, 0.9411347436348929], "inverse_moment": 2.647251417406884, "j": [1, 0, 0, 0], "spectral_inverse_moment": 2.647251417406884, "whitened_comparison_norm": 2.6539786738726447}, {"K": 2.653978673872641, "N": 2, "beta": 0.3, "dimension": 16, "direct_spectral_relative_error": 0.0, "energy_moments_1_2_3": [0.9612538071776919, 0.9345429538918548, 0.9411347436348929], "inverse_moment": 2.647251417406884, "j": [1, 0, 0, 0], "spectral_inverse_moment": 2.647251417406884, "whitened_comparison_norm": 2.6539786738726447}, {"K": 1.0, "N": 2, "beta": 0.3, "dimension": 16, "direct_spectral_relative_error": 5.551115123125783e-16, "energy_moments_1_2_3": [1.2931664557472347e-30, 3.579326500257795e-30, 1.0298157345515356e-29], "inverse_moment": 0.9999999999999986, "j": [2, 0, 0, 0], "spectral_inverse_moment": 0.999999999999998, "whitened_comparison_norm": 1.0000000000000007}, {"K": 7.043602801370783, "N": 2, "beta": 0.3, "dimension": 16, "direct_spectral_relative_error": 1.1381691842787986e-15, "energy_moments_1_2_3": [1.877032905011765, 3.6564322435160324, 7.404376043198011], "inverse_moment": 7.02321402451805, "j": [1, 1, 0, 0], "spectral_inverse_moment": 7.023214024518042, "whitened_comparison_norm": 7.043602801370788}, {"K": 49.612340423478344, "N": 2, "beta": 0.3, "dimension": 16, "direct_spectral_relative_error": 6.7512270561333695e-15, "energy_moments_1_2_3": [3.4452387635084247, 13.998605696942212, 56.8787752924584], "inverse_moment": 49.46583532601749, "j": [1, 1, 1, 1], "spectral_inverse_moment": 49.46583532601716, "whitened_comparison_norm": 49.61234042347833}, {"K": 1.0, "N": 2, "beta": 0.85, "dimension": 16, "direct_spectral_relative_error": 2.2204460492503126e-16, "energy_moments_1_2_3": [3.223148218259633e-31, 1.1312321436256938e-30, 3.9722594437592254e-30], "inverse_moment": 1.0000000000000002, "j": [0, 0, 0, 0], "spectral_inverse_moment": 1.0, "whitened_comparison_norm": 1.000000000000002}, {"K": 1.062183254265878, "N": 2, "beta": 0.85, "dimension": 16, "direct_spectral_relative_error": 0.0, "energy_moments_1_2_3": [0.006178724123569557, 0.001444361282893787, 0.004954268487712849], "inverse_moment": 1.0095116260232646, "j": [1, 0, 0, 0], "spectral_inverse_moment": 1.0095116260232646, "whitened_comparison_norm": 1.062183254265879}, {"K": 1.062183254265878, "N": 2, "beta": 0.85, "dimension": 16, "direct_spectral_relative_error": 0.0, "energy_moments_1_2_3": [0.006178724123569557, 0.001444361282893787, 0.004954268487712849], "inverse_moment": 1.0095116260232646, "j": [1, 0, 0, 0], "spectral_inverse_moment": 1.0095116260232646, "whitened_comparison_norm": 1.062183254265879}, {"K": 1.0, "N": 2, "beta": 0.85, "dimension": 16, "direct_spectral_relative_error": 2.2204460492503126e-16, "energy_moments_1_2_3": [3.2240748784545026e-31, 1.131253805575331e-30, 3.97233374588553e-30], "inverse_moment": 1.0000000000000002, "j": [2, 0, 0, 0], "spectral_inverse_moment": 1.0, "whitened_comparison_norm": 1.0000000000000013}, {"K": 1.1282332656428509, "N": 2, "beta": 0.85, "dimension": 16, "direct_spectral_relative_error": 6.513493159818908e-16, "energy_moments_1_2_3": [0.009324985276875026, 0.005742909828326526, 0.01994471088748312], "inverse_moment": 1.0226982640964564, "j": [1, 1, 0, 0], "spectral_inverse_moment": 1.022698264096457, "whitened_comparison_norm": 1.1282332656428515}, {"K": 1.2729103017031316, "N": 2, "beta": 0.85, "dimension": 16, "direct_spectral_relative_error": 6.282490480602093e-16, "energy_moments_1_2_3": [0.0064897501912812485, 0.0228234949790036, 0.08026686816950664], "inverse_moment": 1.0603021474236343, "j": [1, 1, 1, 1], "spectral_inverse_moment": 1.0603021474236336, "whitened_comparison_norm": 1.2729103017031327}, {"K": 1.0, "N": 3, "beta": 0.4, "dimension": 81, "direct_spectral_relative_error": 6.661338147750939e-16, "energy_moments_1_2_3": [1.906021027168531e-30, 5.984937719222006e-30, 2.2293106931437264e-29], "inverse_moment": 0.9999999999999991, "j": [0, 0, 0, 0], "spectral_inverse_moment": 0.9999999999999984, "whitened_comparison_norm": 1.0000000000000393}, {"K": 3.410232745762692, "N": 3, "beta": 0.4, "dimension": 81, "direct_spectral_relative_error": 3.910768609550411e-16, "energy_moments_1_2_3": [1.2194705959280179, 1.4914150073144565, 1.8403417083595954], "inverse_moment": 3.4066644247288966, "j": [1, 0, 0, 0], "spectral_inverse_moment": 3.4066644247288953, "whitened_comparison_norm": 3.4102327457627064}, {"K": 3.410232745762692, "N": 3, "beta": 0.4, "dimension": 81, "direct_spectral_relative_error": 1.3035895365168042e-16, "energy_moments_1_2_3": [1.2194705959280179, 1.4914150073144565, 1.8403417083595952], "inverse_moment": 3.4066644247288953, "j": [2, 0, 0, 0], "spectral_inverse_moment": 3.4066644247288957, "whitened_comparison_norm": 3.4102327457627033}, {"K": 1.0, "N": 3, "beta": 0.4, "dimension": 81, "direct_spectral_relative_error": 6.661338147750939e-16, "energy_moments_1_2_3": [1.954792039326172e-30, 6.044584765814768e-30, 2.2366708810918676e-29], "inverse_moment": 0.9999999999999991, "j": [3, 0, 0, 0], "spectral_inverse_moment": 0.9999999999999984, "whitened_comparison_norm": 1.0000000000000393}, {"K": 11.62968738027215, "N": 3, "beta": 0.4, "dimension": 81, "direct_spectral_relative_error": 3.05863086676272e-16, "energy_moments_1_2_3": [2.4045108068527736, 5.869458280812996, 14.556273292951342], "inverse_moment": 11.615372477296427, "j": [1, 1, 0, 0], "spectral_inverse_moment": 11.61537247729643, "whitened_comparison_norm": 11.629687380272175}, {"K": 135.24962856286132, "N": 3, "beta": 0.4, "dimension": 81, "direct_spectral_relative_error": 1.6622648765838365e-14, "energy_moments_1_2_3": [4.53053264132057, 22.5737617966253, 112.70729707699364], "inverse_moment": 135.07564748744025, "j": [1, 1, 1, 1], "spectral_inverse_moment": 135.0756474874425, "whitened_comparison_norm": 135.24962856286123}, {"K": 1.0, "N": 3, "beta": 1.1, "dimension": 81, "direct_spectral_relative_error": 0.0, "energy_moments_1_2_3": [1.0505587962622544e-30, 2.577363424467657e-30, 6.493434821016608e-30], "inverse_moment": 1.0000000000000018, "j": [0, 0, 0, 0], "spectral_inverse_moment": 1.0000000000000018, "whitened_comparison_norm": 1.0000000000000109}, {"K": 1.2954328394650978, "N": 3, "beta": 1.1, "dimension": 81, "direct_spectral_relative_error": 0.0, "energy_moments_1_2_3": [0.10336539911920747, 0.03790949717058519, 0.07172754089060512], "inverse_moment": 1.1468150075155916, "j": [1, 0, 0, 0], "spectral_inverse_moment": 1.1468150075155916, "whitened_comparison_norm": 1.2954328394651087}, {"K": 1.2954328394650978, "N": 3, "beta": 1.1, "dimension": 81, "direct_spectral_relative_error": 0.0, "energy_moments_1_2_3": [0.10336539911920747, 0.0379094971705852, 0.07172754089060512], "inverse_moment": 1.1468150075155916, "j": [2, 0, 0, 0], "spectral_inverse_moment": 1.1468150075155916, "whitened_comparison_norm": 1.2954328394651085}, {"K": 1.0, "N": 3, "beta": 1.1, "dimension": 81, "direct_spectral_relative_error": 0.0, "energy_moments_1_2_3": [1.0546927500893951e-30, 2.5788795615139874e-30, 6.496303463180261e-30], "inverse_moment": 1.0000000000000018, "j": [3, 0, 0, 0], "spectral_inverse_moment": 1.0000000000000018, "whitened_comparison_norm": 1.000000000000011}, {"K": 1.6781462415646058, "N": 3, "beta": 1.1, "dimension": 81, "direct_spectral_relative_error": 6.537116284788218e-16, "energy_moments_1_2_3": [0.17572066888952573, 0.1471098725428259, 0.3193661488737578], "inverse_moment": 1.3586700633839182, "j": [1, 1, 0, 0], "spectral_inverse_moment": 1.358670063383919, "whitened_comparison_norm": 1.678146241564613}, {"K": 2.8161748080774123, "N": 3, "beta": 1.1, "dimension": 81, "direct_spectral_relative_error": 0.0, "energy_moments_1_2_3": [0.2227994143228057, 0.5652510612090997, 1.447320526779758], "inverse_moment": 2.0399395868655983, "j": [1, 1, 1, 1], "spectral_inverse_moment": 2.0399395868655983, "whitened_comparison_norm": 2.816174808077416}, {"K": 1.0, "N": 4, "beta": 0.8, "dimension": 256, "direct_spectral_relative_error": 0.0, "energy_moments_1_2_3": [4.272013955681344e-30, 1.8657732028489301e-29, 9.190666967681893e-29], "inverse_moment": 0.9999999999999997, "j": [0, 0, 0, 0], "spectral_inverse_moment": 0.9999999999999997, "whitened_comparison_norm": 1.0000000000000673}, {"K": 3.2823790175784278, "N": 4, "beta": 0.8, "dimension": 256, "direct_spectral_relative_error": 0.0, "energy_moments_1_2_3": [0.5797351623536304, 0.3750835940503385, 0.3336338822086853], "inverse_moment": 1.8586608164062934, "j": [1, 0, 0, 0], "spectral_inverse_moment": 1.8586608164062934, "whitened_comparison_norm": 3.2823790175784393}, {"K": 3.2823790175784278, "N": 4, "beta": 0.8, "dimension": 256, "direct_spectral_relative_error": 0.0, "energy_moments_1_2_3": [0.5797351623536304, 0.37508359405033853, 0.33363388220868534], "inverse_moment": 1.8586608164062934, "j": [3, 0, 0, 0], "spectral_inverse_moment": 1.8586608164062934, "whitened_comparison_norm": 3.2823790175784437}, {"K": 1.0, "N": 4, "beta": 0.8, "dimension": 256, "direct_spectral_relative_error": 0.0, "energy_moments_1_2_3": [4.331123890674395e-30, 1.8722024973722838e-29, 9.200578363756774e-29], "inverse_moment": 0.9999999999999997, "j": [4, 0, 0, 0], "spectral_inverse_moment": 0.9999999999999997, "whitened_comparison_norm": 1.000000000000067}, {"K": 10.774012015039125, "N": 4, "beta": 0.8, "dimension": 256, "direct_spectral_relative_error": 7.503547085312007e-16, "energy_moments_1_2_3": [1.096808571132456, 1.4444641551591857, 2.314724711514957], "inverse_moment": 3.5510342359497313, "j": [1, 1, 0, 0], "spectral_inverse_moment": 3.5510342359497287, "whitened_comparison_norm": 10.774012015039133}, {"K": 116.07933490020741, "N": 4, "beta": 0.8, "dimension": 256, "direct_spectral_relative_error": 2.98426021246454e-14, "energy_moments_1_2_3": [1.8703334911950606, 5.4142264261553645, 15.86075074114951], "inverse_moment": 14.226282374553639, "j": [1, 1, 1, 1], "spectral_inverse_moment": 14.226282374553215, "whitened_comparison_norm": 116.07933490020727}], "limits": "Finite floating comparisons, no interval proof of matrix positivity or infinite-volume passage.", "source_sha256": "6e99936a4f99a308f1a6b4d54ac311f433c8f8f9f1943a60ed98750ffe04c2fb", "status": "personal_floating_checks_not_independent_review"}, "mixed_moments": {"cases": [{"N": 2, "beta": 0.4, "dimension": 16, "gram_dimension": 9, "maximum_gauge_character_error": 3.2369237412933595e-16, "minimum_eigenvalues": {"contractive_form": -1.9488809010417795e-16, "contractive_norm": -1.7193555355277225e-16, "gram": -1.0834703133802663e-16, "positive_shift": -1.0436294915533387e-16}, "mixed_moments": [[[{"imag": 0.0, "real": 1.0000000000000009}, {"imag": 1.577115143069755e-16, "real": 0.643906122225528}, {"imag": -4.898587196589419e-16, "real": 1.0000000000000009}], [{"imag": -1.577115143069755e-16, "real": 0.643906122225528}, {"imag": 0.0, "real": 1.0000000000000009}, {"imag": -4.731345429209265e-16, "real": 0.643906122225528}], [{"imag": 4.898587196589419e-16, "real": 1.0000000000000009}, {"imag": 4.731345429209265e-16, "real": 0.643906122225528}, {"imag": 0.0, "real": 1.0000000000000009}]], [[{"imag": 0.0, "real": 0.6089610178331252}, {"imag": 1.0676842910580586e-16, "real": 0.4359151927728965}, {"imag": -2.983048645179405e-16, "real": 0.6089610178331252}], [{"imag": -1.0676842910580586e-16, "real": 0.4359151927728965}, {"imag": -1.232595164407831e-32, "real": 0.37443439678765994}, {"imag": -3.203052873174176e-16, "real": 0.4359151927728965}], [{"imag": 2.9830486451794046e-16, "real": 0.6089610178331252}, {"imag": 3.203052873174176e-16, "real": 0.4359151927728965}, {"imag": -4.930380657631324e-32, "real": 0.6089610178331252}]], [[{"imag": 3.0814879110195774e-33, "real": 0.37411096883802003}, {"imag": 6.673587951230519e-17, "real": 0.27246990544036565}, {"imag": -1.8326152020535865e-16, "real": 0.37411096883802003}], [{"imag": -6.673587951230519e-17, "real": 0.27246990544036576}, {"imag": -6.162975822039155e-33, "real": 0.20503491318198433}, {"imag": -2.0020763853691564e-16, "real": 0.27246990544036576}], [{"imag": 1.8326152020535865e-16, "real": 0.37411096883802003}, {"imag": 2.002076385369156e-16, "real": 0.27246990544036565}, {"imag": 0.0, "real": 0.37411096883802003}]], [[{"imag": 0.0, "real": 0.23018178959601546}, {"imag": 4.118183845218049e-17, "real": 0.16813761519179612}, {"imag": -1.1275655674030798e-16, "real": 0.23018178959601546}], [{"imag": -4.11818384521805e-17, "real": 0.1681376151917961}, {"imag": -9.244463733058732e-33, "real": 0.12351241475027555}, {"imag": -1.235455153565415e-16, "real": 0.1681376151917961}], [{"imag": 1.1275655674030795e-16, "real": 0.23018178959601546}, {"imag": 1.235455153565415e-16, "real": 0.16813761519179612}, {"imag": -2.465190328815662e-32, "real": 0.23018178959601546}]], [[{"imag": -6.162975822039155e-33, "real": 0.14166241322432674}, {"imag": 2.5357574369450912e-17, "real": 0.10353015411098876}, {"imag": -6.939456836586458e-17, "real": 0.14166241322432674}], [{"imag": -2.5357574369450906e-17, "real": 0.10353015411098865}, {"imag": -6.162975822039155e-33, "real": 0.07573555001548353}, {"imag": -7.607272310835272e-17, "real": 0.10353015411098865}], [{"imag": 6.939456836586454e-17, "real": 0.14166241322432674}, {"imag": 7.60727231083527e-17, "real": 0.10353015411098876}, {"imag": -4.930380657631324e-32, "real": 0.14166241322432674}]], [[{"imag": -7.703719777548943e-34, "real": 0.08718819784981922}, {"imag": 1.5608032784792434e-17, "real": 0.06372462981024142}, {"imag": -4.27098989680829e-17, "real": 0.08718819784981922}], [{"imag": -1.5608032784792443e-17, "real": 0.06372462981024142}, {"imag": -4.622231866529366e-33, "real": 0.046583170278244865}, {"imag": -4.682409835437731e-17, "real": 0.06372462981024142}], [{"imag": 4.2709898968082916e-17, "real": 0.08718819784981922}, {"imag": 4.6824098354377305e-17, "real": 0.06372462981024142}, {"imag": 1.8488927466117464e-32, "real": 0.08718819784981922}]], [[{"imag": -4.237045877651919e-33, "real": 0.05366165824340471}, {"imag": 9.606406580004377e-18, "real": 0.0392211312955406}, {"imag": -2.628663120188992e-17, "real": 0.05366165824340471}], [{"imag": -9.606406580004386e-18, "real": 0.039221131295540605}, {"imag": -2.311115933264683e-33, "real": 0.028667412641813644}, {"imag": -2.8819219740013156e-17, "real": 0.039221131295540605}], [{"imag": 2.6286631201889916e-17, "real": 0.05366165824340471}, {"imag": 2.881921974001313e-17, "real": 0.0392211312955406}, {"imag": 0.0, "real": 0.05366165824340471}]]], "paths": [[1, 0, 0, 0], [0, -1, -1, -1], [3, 2, 2, 2]], "wrong_temporal_phase_effect": 0.6089610178331253}, {"N": 3, "beta": 0.6, "dimension": 81, "gram_dimension": 9, "maximum_gauge_character_error": 4.286417113330693e-16, "minimum_eigenvalues": {"contractive_form": -8.915024583195034e-16, "contractive_norm": -7.229110248262801e-16, "gram": -7.501858950742062e-16, "positive_shift": -3.7839316615450947e-17}, "mixed_moments": [[[{"imag": 0.0, "real": 1.0000000000000013}, {"imag": 2.1867515189549408e-16, "real": 0.5175783473148104}, {"imag": -5.615458342233568e-16, "real": 0.5175783473148102}], [{"imag": -2.1867515189549408e-16, "real": 0.5175783473148104}, {"imag": 0.0, "real": 1.0000000000000022}, {"imag": -2.0530013242763067e-15, "real": 1.0000000000000022}], [{"imag": 5.615458342233568e-16, "real": 0.5175783473148102}, {"imag": 2.0530013242763067e-15, "real": 1.0000000000000022}, {"imag": 0.0, "real": 1.0000000000000022}]], [[{"imag": -7.122368486834094e-17, "real": 0.4951602297205596}, {"imag": 1.6474757433534934e-16, "real": 0.2882653885364477}, {"imag": -2.8371223644659215e-16, "real": 0.28826538853644745}], [{"imag": -2.1726150992333912e-16, "real": 0.2882653885364473}, {"imag": -3.2363151201036436e-18, "real": 0.22480975752082416}, {"imag": -3.73506805765833e-16, "real": 0.2248097575208243}], [{"imag": 2.5152042602807342e-16, "real": 0.2882653885364472}, {"imag": 4.1793508682524865e-16, "real": 0.22480975752082422}, {"imag": 4.376146835857149e-17, "real": 0.22480975752082433}]], [[{"imag": -6.515209591745421e-17, "real": 0.2466712381793476}, {"imag": 6.57625375593386e-17, "real": 0.1461643301678609}, {"imag": -1.6425255714413318e-16, "real": 0.14616433016786096}], [{"imag": -1.1432152788822327e-16, "real": 0.14616433016786104}, {"imag": -2.1119012644770823e-17, "real": 0.09107512998299125}, {"imag": -1.5796939855933453e-16, "real": 0.09107512998299128}], [{"imag": 1.2183922132995314e-16, "real": 0.14616433016786107}, {"imag": 1.5161273782534555e-16, "real": 0.09107512998299125}, {"imag": 7.389777137880396e-18, "real": 0.0910751299829913}]], [[{"imag": -8.412070339017416e-17, "real": 0.12300074949654312}, {"imag": 1.9714579698563878e-17, "real": 0.07308660396739519}, {"imag": -9.936107023145059e-17, "real": 0.07308660396739522}], [{"imag": -8.51207324673142e-17, "real": 0.07308660396739516}, {"imag": -2.4813163573673127e-17, "real": 0.04377912040319891}, {"imag": -9.447896205594969e-17, "real": 0.04377912040319892}], [{"imag": 4.377191550365454e-17, "real": 0.0730866039673952}, {"imag": 5.2058857597313436e-17, "real": 0.04377912040319892}, {"imag": -1.5221696105495008e-17, "real": 0.04377912040319892}]], [[{"imag": -4.3863846130519383e-17, "real": 0.06134269778064296}, {"imag": -7.367975513931795e-18, "real": 0.03646563801218528}, {"imag": -6.560450958885027e-17, "real": 0.03646563801218531}], [{"imag": -5.074296805817805e-17, "real": 0.03646563801218528}, {"imag": -1.409959855406565e-17, "real": 0.021704965136547395}, {"imag": -4.803527579989325e-17, "real": 0.021704965136547388}], [{"imag": 1.8451438512301738e-17, "real": 0.036465638012185275}, {"imag": 2.501380051612496e-17, "real": 0.021704965136547388}, {"imag": -7.973199828777824e-18, "real": 0.02170496513654739}]], [[{"imag": -2.6702270762394418e-17, "real": 0.03059344639460062}, {"imag": -2.6725648436719486e-17, "real": 0.018187774405651863}, {"imag": -5.565394223965987e-17, "real": 0.018187774405651856}], [{"imag": -2.5077920442251365e-17, "real": 0.018187774405651832}, {"imag": -1.3119453097643473e-17, "real": 0.01081479779901947}, {"imag": -2.9707477878963384e-17, "real": 0.010814797799019473}], [{"imag": -1.9225373171388295e-17, "real": 0.018187774405651856}, {"imag": -8.752869029397071e-18, "real": 0.01081479779901948}, {"imag": -2.5354446337873055e-17, "real": 0.010814797799019487}]], [[{"imag": -7.524187515846029e-18, "real": 0.015257928776216921}, {"imag": 8.123288177976058e-18, "real": 0.009070923794012989}, {"imag": -5.79185368411567e-18, "real": 0.00907092379401299}], [{"imag": -2.9395106882304e-17, "real": 0.009070923794012947}, {"imag": -1.337605704404778e-17, "real": 0.00539288705167567}, {"imag": -2.2113822999447658e-17, "real": 0.005392887051675668}], [{"imag": 6.361904957138541e-18, "real": 0.009070923794012968}, {"imag": 1.0683815102576347e-17, "real": 0.005392887051675678}, {"imag": 2.2679216671331023e-18, "real": 0.00539288705167568}]]], "paths": [[1, 0, 0, 0], [0, -1, -1, -1], [3, 2, 2, 2]], "wrong_temporal_phase_effect": 0.4951602297205596}, {"N": 4, "beta": 0.8, "dimension": 256, "gram_dimension": 9, "maximum_gauge_character_error": 3.397979683809479e-16, "minimum_eigenvalues": {"contractive_form": -9.882934449194513e-16, "contractive_norm": -8.234202574047192e-16, "gram": -7.290282114302092e-16, "positive_shift": -3.656070193966352e-16}, "mixed_moments": [[[{"imag": 0.0, "real": 1.0}, {"imag": 2.494100330058453e-16, "real": 0.5909800020618201}, {"imag": -3.8452966494169077e-16, "real": 0.2458877228006912}], [{"imag": -2.494100330058453e-16, "real": 0.5909800020618201}, {"imag": 0.0, "real": 1.0}, {"imag": -7.867989849679151e-16, "real": 0.5909800020618201}], [{"imag": 3.8452966494169077e-16, "real": 0.2458877228006912}, {"imag": 7.867989849679151e-16, "real": 0.5909800020618201}, {"imag": 0.0, "real": 1.0}]], [[{"imag": -2.335284273895502e-17, "real": 0.5665791414791326}, {"imag": 1.388474252644629e-16, "real": 0.37602961635886545}, {"imag": -2.315296864029705e-16, "real": 0.16055714533919307}], [{"imag": -1.385494005119135e-16, "real": 0.37602961635886484}, {"imag": 8.069959231854985e-18, "real": 0.3135762062361701}, {"imag": -2.52157747194718e-16, "real": 0.14730143836633272}], [{"imag": 2.298313357276609e-16, "real": 0.160557145339193}, {"imag": 2.408216658191334e-16, "real": 0.1473014383663328}, {"imag": 2.0828403382601064e-18, "real": 0.07899721541154606}]], [[{"imag": -1.2883326093159115e-17, "real": 0.3237216638950945}, {"imag": 9.643683665491246e-17, "real": 0.21893835570657316}, {"imag": -1.3616361424239565e-16, "real": 0.09422413634705228}], [{"imag": -7.712523434213322e-17, "real": 0.21893835570657327}, {"imag": -2.7584873217966512e-17, "real": 0.1543321357906831}, {"imag": -1.4245062269708027e-16, "real": 0.06767033931091601}], [{"imag": 1.3917105939655844e-16, "real": 0.09422413634705239}, {"imag": 1.192908186495245e-16, "real": 0.06767033931091618}, {"imag": 6.801824114761467e-20, "real": 0.0300406647328477}]], [[{"imag": -1.775854328990305e-17, "real": 0.18522520658755726}, {"imag": 3.8187483547862313e-17, "real": 0.12567145455474488}, {"imag": -8.587852372689474e-17, "real": 0.054163043792792534}], [{"imag": -2.3438243232875857e-17, "real": 0.12567145455474482}, {"imag": -7.397106856429882e-18, "real": 0.08587710513197284}, {"imag": -6.575064385512308e-17, "real": 0.03713323784527395}], [{"imag": 7.602618059191868e-17, "real": 0.05416304379279238}, {"imag": 6.067301169303201e-17, "real": 0.03713323784527392}, {"imag": -1.4907507623972995e-17, "real": 0.016082466230343307}]], [[{"imag": -4.972286902169043e-18, "real": 0.10600675685185879}, {"imag": 2.6897169216032157e-17, "real": 0.07196252649889874}, {"imag": -4.635230135599265e-17, "real": 0.031022791769583793}], [{"imag": -8.838693196668596e-18, "real": 0.07196252649889884}, {"imag": -3.6018942730724506e-17, "real": 0.04891139655860996}, {"imag": -6.596332473519136e-17, "real": 0.021097344636735585}], [{"imag": 4.407896340188401e-17, "real": 0.03102279176958378}, {"imag": 4.1510776403245017e-17, "real": 0.021097344636735543}, {"imag": 5.7625701919183855e-18, "real": 0.009102458926655281}]], [[{"imag": -1.7018705377585162e-17, "real": 0.06067152971995872}, {"imag": 1.3270511113733383e-18, "real": 0.04119059994387468}, {"imag": -4.1106107022058035e-17, "real": 0.01775787810365272}], [{"imag": -1.1705242568153814e-17, "real": 0.04119059994387458}, {"imag": -1.931570974958001e-17, "real": 0.027970608102520573}, {"imag": -2.0704646878218732e-17, "real": 0.012059697318051607}], [{"imag": 3.6249955170200135e-17, "real": 0.01775787810365253}, {"imag": 4.9125621948255444e-17, "real": 0.012059697318051506}, {"imag": 2.338807356358238e-17, "real": 0.0051998403228969295}]], [[{"imag": 2.242541482601019e-17, "real": 0.034724772006527196}, {"imag": 2.9024659352152635e-17, "real": 0.02357542094648747}, {"imag": 4.088351189248093e-19, "real": 0.010163787196175868}], [{"imag": -1.6201618958246024e-17, "real": 0.02357542094648748}, {"imag": 5.397350883150193e-17, "real": 0.016006448248185777}, {"imag": 3.613530382105073e-17, "real": 0.006900779864211638}], [{"imag": 2.789856222781316e-17, "real": 0.010163787196175778}, {"imag": 2.8702194096188554e-17, "real": 0.006900779864211605}, {"imag": 1.6809667312882252e-17, "real": 0.0029751209444903435}]]], "paths": [[1, 0, 0, 0], [0, -1, -1, -1], [3, 2, 2, 2]], "wrong_temporal_phase_effect": 0.5665791414791327}], "limits": "Floating finite matrices; the common infinite-space construction and threshold proof are analytic.", "source_sha256": "6e99936a4f99a308f1a6b4d54ac311f433c8f8f9f1943a60ed98750ffe04c2fb", "status": "personal_finite_checks_not_independent_review"}, "positive_paths": {"cases": [{"N": 2, "beta": 0.3, "comparisons": [{"R": 2.653978673872641, "coefficient_bounds": [[0.2751414368938816, 0.2751414368938816, 1.937986995678927], [0.10367130663201593, 0.7302195058150369, 0.7302195058150369]], "max_component_difference_if_R_omitted": 0.1724543858059295, "other_W": [0.1085607916056926, 0.029382332167049864, 0.0041024409210383885, 3.435759711016687e-05], "path0_W": [0.3835200354901668, 0.1473502434232859, 0.02176043667166544, 0.0001823864271342952], "surface_multiple": 1}, {"R": 1.0, "coefficient_bounds": [[0.7302195058150369, 0.7302195058150369, 0.7302195058150369], [0.2751414368938816, 0.2751414368938816, 0.2751414368938816]], "max_component_difference_if_R_omitted": 0.0, "other_W": [0.3835200354901668, 0.1473502434232859, 0.02176043667166544, 0.0001823864271342952], "path0_W": [0.3835200354901668, 0.1473502434232859, 0.02176043667166544, 0.0001823864271342952], "surface_multiple": 2}], "dimension": 16, "minimum_V_fourier_entry": -8.213653855024566e-33, "minimum_positive_insertion_entry": -1.2836718734605863e-33}, {"N": 2, "beta": 1.2, "comparisons": [{"R": 1.0107796744261377, "coefficient_bounds": [[0.4973195287487871, 0.4973195287487871, 0.5080992031760377], [0.49201575905365963, 0.5026804713544593, 0.5026804713544593]], "max_component_difference_if_R_omitted": 4.1075565218429144e-05, "other_W": [0.9998201577211445, 0.9996458912109156, 0.9992975088759098, 0.9984270845307823], "path0_W": [0.9998251128498143, 0.9996508720325106, 0.9993024881047248, 0.9984320594225126], "surface_multiple": 1}, {"R": 1.0, "coefficient_bounds": [[0.5026804713544593, 0.5026804713544593, 0.5026804713544593], [0.4973195287487871, 0.4973195287487871, 0.4973195287487871]], "max_component_difference_if_R_omitted": 0.0, "other_W": [0.9998251128498143, 0.9996508720325106, 0.9993024881047248, 0.9984320594225126], "path0_W": [0.9998251128498143, 0.9996508720325106, 0.9993024881047248, 0.9984320594225126], "surface_multiple": 2}], "dimension": 16, "minimum_V_fourier_entry": -1.3877787807814466e-17, "minimum_positive_insertion_entry": -2.533092180371633e-18}, {"N": 3, "beta": 0.5, "comparisons": [{"R": 2.5900032904351704, "coefficient_bounds": [[0.2178873048863522, 0.2178873048863522, 1.4616135436806832], [0.08412626566576405, 0.5643288365997033, 0.5643288365997033], [0.08412626566576405, 0.2178873048863522, 0.5643288365997033]], "max_component_difference_if_R_omitted": 0.08983982588701939, "other_W": [0.12062035081521122, 0.03446099812033239, 0.005136189302730252, 5.05676177235267e-05], "path0_W": [0.3958321079227872, 0.15706701602828424, 0.02474638802190198, 0.00024385448088942735], "surface_multiple": 1}, {"R": 2.5900032904351704, "coefficient_bounds": [[0.2178873048863522, 0.2178873048863522, 1.4616135436806832], [0.08412626566576405, 0.2178873048863522, 0.5643288365997033], [0.08412626566576405, 0.5643288365997033, 0.5643288365997033]], "max_component_difference_if_R_omitted": 0.08983982588701939, "other_W": [0.09102170644463042, 0.029630933596543507, 0.004591342819989878, 4.523591744561634e-05], "path0_W": [0.3958321079227872, 0.15706701602828424, 0.02474638802190198, 0.00024385448088942735], "surface_multiple": 2}], "dimension": 81, "minimum_V_fourier_entry": -2.258508829937233e-16, "minimum_positive_insertion_entry": -2.0922029388809285e-17}, {"N": 3, "beta": 1.4, "comparisons": [{"R": 1.1459750057285396, "coefficient_bounds": [[0.31786647960682507, 0.31786647960682507, 0.4174409241541385], [0.2773764506362382, 0.3642670407883421, 0.3642670407883421], [0.2773764506362382, 0.31786647960682507, 0.3642670407883421]], "max_component_difference_if_R_omitted": 0.0020398425801487208, "other_W": [0.9718826824385997, 0.9502420918880776, 0.9089509648195846, 0.8134365997873212], "path0_W": [0.9773722489669154, 0.9558763668336578, 0.9143537321606932, 0.8182716635158184], "surface_multiple": 1}, {"R": 1.1459750057285396, "coefficient_bounds": [[0.31786647960682507, 0.31786647960682507, 0.4174409241541385], [0.2773764506362382, 0.31786647960682507, 0.3642670407883421], [0.2773764506362382, 0.3642670407883421, 0.3642670407883421]], "max_component_difference_if_R_omitted": 0.0020398425801487208, "other_W": [0.9696504559995973, 0.9479970799407007, 0.9068023835424313, 0.8115137996076842], "path0_W": [0.9773722489669154, 0.9558763668336578, 0.9143537321606932, 0.8182716635158184], "surface_multiple": 2}], "dimension": 81, "minimum_V_fourier_entry": -1.634771718220529e-16, "minimum_positive_insertion_entry": -2.38713472253584e-17}, {"N": 4, "beta": 0.8, "comparisons": [{"R": 3.2823790175784278, "coefficient_bounds": [[0.13589884842794972, 0.2403519178657496, 1.464175825792711], [0.07322491296056025, 0.4460715285929733, 0.7889260920372702], [0.022308488010803172, 0.2403519178657496, 0.2403519178657496], [0.07322491296056025, 0.07322491296056025, 0.7889260920372702]], "max_component_difference_if_R_omitted": 0.04235172268437434, "other_W": [0.31357620623617105, 0.1543321357906835, 0.048911396558610105, 0.0030008724601730177], "path0_W": [0.5665791414791329, 0.32372166389509566, 0.1060067568518592, 0.0065103530031853235], "surface_multiple": 1}, {"R": 6.091800052165748, "coefficient_bounds": [[0.07322491296056025, 0.07322491296056025, 2.7173785611523296], [0.03945499126818846, 0.2403519178657496, 1.464175825792711], [0.012020242347666587, 0.4460715285929733, 0.4460715285929733], [0.03945499126818846, 0.2403519178657496, 1.464175825792711]], "max_component_difference_if_R_omitted": 0.07744861591278235, "other_W": [0.0789972154115463, 0.03004066473284782, 0.009102458926655232, 0.0005577519938730852], "path0_W": [0.5665791414791329, 0.32372166389509566, 0.1060067568518592, 0.0065103530031853235], "surface_multiple": 2}], "dimension": 256, "minimum_V_fourier_entry": -3.2582419710378536e-16, "minimum_positive_insertion_entry": -8.632133648519726e-17}], "limitations": "Finite matrices and coefficient sums; the general surface bijection and common-space limits are written proofs.", "source_sha256": "6e99936a4f99a308f1a6b4d54ac311f433c8f8f9f1943a60ed98750ffe04c2fb", "status": "personal_floating_checks_not_independent_review"}}
++per_element: clock Fourier aliases, coefficient ratios and inverse moments are evaluated at finite N and beta.
++per_site: actual temporal-link gauge sums are matched to same-charge insertion matrix elements on spatial squares.
++per_mode: finite inverse spectra, positive insertion vectors and moment Gram contractions are compared independently.
++per_block: fixed spatial surfaces and general path Green energies are checked on finite Fourier and transfer fixtures.
++lattice_wide: checked and not executed — common Hilbert reconstruction, no zero atom and infinite static thresholds use the written proofs.
++TOTAL: PASS=4 FAIL=0
++
++----- stderr -----
++
+diff --git a/scripts/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_2026_09_15.py b/scripts/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_2026_09_15.py
+new file mode 100644
+index 0000000000..e5c98be4f3
+--- /dev/null
++++ b/scripts/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_2026_09_15.py
+@@ -0,0 +1,269 @@
++#!/usr/bin/env python3
++"""Author finite checks for static charged transfer constructions.
++All fixtures are internal; the only file read is this source for integrity.
++Infinite-volume and Hilbert-space statements require independent review.
++"""
++AUDIT_TIMEOUT_SEC = 300
++
++from pathlib import Path
++import hashlib,itertools,json
++import numpy as np
++from scipy.special import logsumexp
++
++def check_inverse_moments():
++    cases=[]
++    for N,beta in [(2,.3),(2,.85),(3,.4),(3,1.1),(4,.8)]:
++        config=np.array(list(itertools.product(range(N),repeat=4)))
++        count=len(config)
++        theta=2*np.pi*np.arange(N)/N
++        w=np.exp(logsumexp(-beta*(theta[:,None]+2*np.pi*np.arange(-10,11))**2/2,axis=1))
++        coeff=np.fft.fft(w).real/N
++        assert np.max(abs(np.fft.fft(w).imag))/N<1e-13 and coeff.min()>0
++        ks=np.arange(-50,51)
++        alias=np.array([np.exp(-ks[ks%N==k]**2/(2*beta)).sum() for k in range(N)])
++        assert np.max(abs(coeff/coeff[0]-alias/alias[0]))<3e-13
++        # Nonconstant spatial weight, as in a physical spatial square.
++        V=w[config.sum(axis=1)%N];root=np.sqrt(V)
++        diff=(config[:,None,:]-config[None,:,:])%N
++        C=np.prod(w[diff],axis=2)/count
++        T=root[:,None]*C*root[None,:]
++        eig,vec=np.linalg.eigh(T);largest=eig[-1];Omega=vec[:,-1]
++        if Omega.sum()<0:Omega=-Omega
++        assert Omega.min()>0 and eig[0]>0
++        # Product characters diagonalize C independently of eigh(T).
++        fourier=np.exp(2j*np.pi*(config@config.T)/N)/np.sqrt(count)
++        ceig=np.prod(coeff[config],axis=1)
++        assert np.linalg.norm(C@fourier-fourier*ceig[None,:])<2e-12
++        for j in [np.array([q,0,0,0]) for q in (0,1,N-1,N)]+[np.array([1,1,0,0]),np.ones(4,dtype=int)]:
++            phase=np.exp(2j*np.pi*(config@j)/N);psi=phase*Omega
++            ratios=coeff[config]/coeff[(config+j)%N]
++            K=float(np.prod([max(coeff/coeff[(np.arange(N)+int(q))%N]) for q in j]))
++            assert K>=1-1e-13 and abs(K-ratios.prod(axis=1).max())<2e-11*max(1,K)
++            inverse=largest*float(np.vdot(psi,np.linalg.solve(T,psi)).real)
++            spectral=float(np.sum(abs(vec.conj().T@psi)**2*largest/eig))
++            assert abs(inverse-spectral)<3e-9*max(1,inverse)
++            assert inverse<=K*(1+3e-10) and inverse>=1-3e-10
++            # Whitened C-inverse comparison has exactly the local ratios.
++            cinv=(fourier/ceig[None,:])@fourier.conj().T
++            csqrt=(fourier*np.sqrt(ceig)[None,:])@fourier.conj().T
++            shifted=np.conj(phase)[:,None]*cinv*phase[None,:]
++            whitened=csqrt@shifted@csqrt
++            high=float(np.linalg.eigvalsh(whitened)[-1])
++            assert abs(high-K)<3e-9*max(1,K)
++            weights=abs(vec.conj().T@psi)**2;energies=-np.log(eig/largest)
++            moments=[float(np.sum(weights*energies**p)) for p in (1,2,3)]
++            for p,moment in zip((1,2,3),moments):
++                import math
++                assert moment<=math.factorial(p)*K*(1+3e-10)
++            if np.all(j%N==0):assert abs(inverse-1)<3e-10 and abs(K-1)<1e-13
++            cases.append({'N':N,'beta':beta,'j':j.tolist(),'dimension':count,'K':K,'inverse_moment':inverse,
++                'spectral_inverse_moment':spectral,'direct_spectral_relative_error':abs(inverse-spectral)/max(1,inverse),
++                'whitened_comparison_norm':high,'energy_moments_1_2_3':moments})
++    # A zero-shift comparison K=1 is actually false for a charged insertion.
++    assert max(x['inverse_moment'] for x in cases)>1.1
++    result={'status':'personal_floating_checks_not_independent_review','source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
++        'cases':cases,'limits':'Finite floating comparisons, no interval proof of matrix positivity or infinite-volume passage.'}
++    return result
++
++from pathlib import Path
++import hashlib,itertools,json
++import numpy as np
++
++def check_positive_paths():
++    rows=[]
++    for N,beta in [(2,.3),(2,1.2),(3,.5),(3,1.4),(4,.8)]:
++        configs=np.array(list(itertools.product(range(N),repeat=4)));count=len(configs)
++        roots=2*np.pi*np.arange(N)/N
++        w=np.sum(np.exp(-beta*(roots[:,None]+2*np.pi*np.arange(-10,11))**2/2),axis=1)
++        coeff=np.fft.fft(w).real/N;assert coeff.min()>0
++        fourier=np.exp(2j*np.pi*(configs@configs.T)/N)/np.sqrt(count)
++        cprod=np.prod(coeff[configs],axis=1);croot=np.sqrt(cprod)
++        V=w[configs.sum(axis=1)%N];rootV=np.sqrt(V)
++        Vhat=fourier.conj().T@(V[:,None]*fourier)
++        assert np.max(abs(Vhat.imag))<2e-13 and Vhat.real.min()>-2e-13
++        Vhat=Vhat.real
++        C=(fourier*cprod[None,:])@fourier.conj().T
++        T=rootV[:,None]*C*rootV[None,:]
++        # The exact neutral Fourier sector is ker(d0*) mod N. Restrict
++        # before solving: a nearly degenerate full eigensolve contaminated
++        # zero charge components at9e-13 in the preserved first fixture.
++        D=np.zeros((4,4),dtype=int)
++        for edge in range(4):D[edge,edge]=-1;D[edge,(edge+1)%4]=1
++        neutral=np.flatnonzero(np.all((configs@D)%N==0,axis=1))
++        assert len(neutral)==N
++        tilde=croot[:,None]*Vhat*croot[None,:]
++        vals,vecs=np.linalg.eigh(tilde[np.ix_(neutral,neutral)])
++        lam=vals[-1];neutral_vec=vecs[:,-1]
++        if neutral_vec.sum()<0:neutral_vec=-neutral_vec
++        Psi=np.zeros(count);Psi[neutral]=neutral_vec
++        assert Psi.min()>=0 and Psi[neutral].min()>0
++        Omega=rootV*(fourier@(croot*Psi))/np.sqrt(lam)
++        assert np.max(abs(Omega.imag))<3e-13 and Omega.real.min()>0
++        assert abs(np.linalg.norm(Omega)-1)<3e-13
++        assert np.linalg.norm(T@Omega-lam*Omega)<3e-13
++        assert abs(lam-np.linalg.eigvalsh(T)[-1])<3e-13
++        assert np.linalg.norm(tilde@Psi-lam*Psi)<3e-13
++        # One plaquette: b=(1,1,1,1) is its oriented boundary.
++        j=np.array([1,0,0,0]);loop=np.ones(4,dtype=int)
++        vectors=[];probs=[]
++        for charge in (0,1,2):
++            path=j-charge*loop
++            phase=np.exp(2j*np.pi*(configs@path)/N)
++            direct=croot*(fourier.conj().T@(rootV*phase*Omega))
++            indexes=np.ravel_multi_index(((configs-path)%N).T,(N,)*4)
++            positive=croot*(Vhat@(croot*Psi)[indexes])/np.sqrt(lam)
++            assert np.max(abs(direct-positive))<4e-13
++            assert np.max(abs(positive.imag))<4e-13 and positive.real.min()>-4e-13
++            vectors.append(positive.real)
++            values=[]
++            for time in (1,2,4,9):
++                original=np.vdot(phase*Omega,np.linalg.matrix_power(T/lam,time)@(phase*Omega))
++                transformed=np.vdot(positive,np.linalg.matrix_power(tilde/lam,time-1)@positive)/lam
++                assert abs(original-transformed)<5e-13
++                values.append(float(original.real))
++            probs.append(values)
++        comparisons=[]
++        for shift in (1,2):
++            R=float(max(coeff/coeff[(np.arange(N)+shift)%N]))
++            v0,v1=vectors[0],vectors[shift]
++            assert np.max(v1-R*v0)<4e-13 and np.max(v0/R-v1)<4e-13
++            for p0,p1 in zip(probs[0],probs[shift]):
++                assert p1<=R*R*p0+5e-13 and p1>=p0/(R*R)-5e-13
++            # Check the coefficient fiber bijection directly on the one-face
++            # Fourier coefficients, including unsupported noncycle currents.
++            coeff_compare=[]
++            for q in range(N):
++                low=coeff[q]/R;value=coeff[(q-shift)%N];high=coeff[q]*R
++                assert low-3e-13<=value<=high+3e-13
++                coeff_compare.append([float(low),float(value),float(high)])
++            comparisons.append({'surface_multiple':shift,'R':R,'coefficient_bounds':coeff_compare,
++                'max_component_difference_if_R_omitted':float(np.max(abs(v1-v0))),
++                'path0_W':probs[0],'other_W':probs[shift]})
++        rows.append({'N':N,'beta':beta,'dimension':count,'minimum_V_fourier_entry':float(Vhat.min()),
++            'minimum_positive_insertion_entry':min(float(v.min()) for v in vectors),'comparisons':comparisons})
++    assert max(c['max_component_difference_if_R_omitted'] for r in rows for c in r['comparisons'])>1e-3
++    result={'status':'personal_floating_checks_not_independent_review','source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
++       'cases':rows,'limitations':'Finite matrices and coefficient sums; the general surface bijection and common-space limits are written proofs.'}
++    return result
++
++from pathlib import Path
++import hashlib,itertools,json
++import numpy as np
++
++def check_mixed_moments():
++    D=np.zeros((4,4),dtype=int)
++    for e in range(4):D[e,e]=-1;D[e,(e+1)%4]=1
++    j=np.array([1,0,0,0]);loop=np.ones(4,dtype=int)
++    paths=[j,j-loop,j+2*loop]
++    assert all(np.array_equal(D.T@v,D.T@j) for v in paths)
++    rows=[]
++    for N,beta in [(2,.4),(3,.6),(4,.8)]:
++        config=np.array(list(itertools.product(range(N),repeat=4)));count=len(config)
++        angles=2*np.pi*np.arange(N)/N
++        w=np.sum(np.exp(-beta*(angles[:,None]+2*np.pi*np.arange(-10,11))**2/2),axis=1)
++        V=w[config.sum(axis=1)%N];root=np.sqrt(V)
++        diff=(config[:,None,:]-config[None,:,:])%N
++        C=np.prod(w[diff],axis=2)/count
++        T=root[:,None]*C*root[None,:]
++        eigen,vec=np.linalg.eigh(T);lam=eigen[-1];Omega=vec[:,-1]
++        if Omega.sum()<0:Omega=-Omega
++        tau=T/lam
++        # Explicit temporal-link integration with the common charge profile.
++        K=np.zeros_like(C,dtype=complex)
++        wrong=np.zeros_like(C,dtype=complex)
++        for eta in config:
++            shift=D@eta
++            term=np.prod(w[(diff+shift)%N],axis=2)/count
++            K+=term*np.exp(-2j*np.pi*(j@shift)/N)/count
++            wrong+=term/count
++        charged=root[:,None]*K*root[None,:]/lam
++        wrong=root[:,None]*wrong*root[None,:]/lam
++        columns=np.column_stack([np.exp(2j*np.pi*(config@path)/N)*Omega for path in paths])
++        mixed=[]
++        for n in range(7):
++            direct=columns.conj().T@np.linalg.matrix_power(charged,n)@columns
++            temporal=columns.conj().T@np.linalg.matrix_power(tau,n)@columns
++            discrepancy=float(np.max(abs(direct-temporal)))
++            assert discrepancy<4e-12
++            mixed.append(temporal)
++        size=9
++        gram=np.empty((size,size),dtype=complex);shifted=gram.copy();shifted_twice=gram.copy()
++        for a in range(size):
++            m,i=divmod(a,3)
++            for b in range(size):
++                n,k=divmod(b,3)
++                gram[a,b]=mixed[m+n][i,k]
++                shifted[a,b]=mixed[m+n+1][i,k]
++                shifted_twice[a,b]=mixed[m+n+2][i,k]
++        bounds={name:float(np.linalg.eigvalsh(A)[0]) for name,A in
++            [('gram',gram),('positive_shift',shifted),('contractive_form',gram-shifted),('contractive_norm',gram-shifted_twice)]}
++        assert min(bounds.values())>-5e-12
++        # A literal generator realization is separately constructed by powers.
++        vectors=np.column_stack([np.linalg.matrix_power(tau,m)@columns[:,i] for m in range(3) for i in range(3)])
++        assert np.max(abs(vectors.conj().T@vectors-gram))<4e-12
++        # Removing the temporal charge phases changes the actual mixed kernel.
++        wrong_value=columns.conj().T@wrong@columns
++        fault=float(np.max(abs(wrong_value-mixed[1])))
++        assert fault>1e-4
++        rho=D.T@j;charge_error=0.
++        for vertex in range(4):
++            eta=np.eye(4,dtype=int)[vertex]
++            index=np.ravel_multi_index(((config+D@eta)%N).T,(N,)*4)
++            expect=np.exp(2j*np.pi*(rho@eta)/N)*columns
++            charge_error=max(charge_error,float(np.max(abs(columns[index]-expect))))
++        assert charge_error<4e-12
++        alias=np.exp(2j*np.pi*(config@(j+N*loop))/N)*Omega
++        assert np.max(abs(alias-columns[:,0]))<4e-12
++        rows.append({'N':N,'beta':beta,'dimension':count,'paths':[x.tolist() for x in paths],
++            'gram_dimension':size,'minimum_eigenvalues':bounds,'wrong_temporal_phase_effect':fault,
++            'maximum_gauge_character_error':charge_error,
++            'mixed_moments':[[[{'real':float(z.real),'imag':float(z.imag)} for z in row] for row in M] for M in mixed]})
++    result={'status':'personal_finite_checks_not_independent_review','source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
++       'cases':rows,'limits':'Floating finite matrices; the common infinite-space construction and threshold proof are analytic.'}
++    return result
++
++def general_path_green():
++    rows=[]
++    paths=[[(0,(0,0,0)),(0,(1,0,0)),(1,(2,0,0))],
++           [(1,(0,0,0)),(0,(0,1,0)),(0,(1,1,0))]]
++    for size in (24,40,64):
++        grid=2*np.pi*(np.arange(size)+.5)/size-np.pi
++        ks=np.stack(np.meshgrid(grid,grid,grid,indexing='ij'),axis=-1)
++        d=np.exp(-1j*ks)-1;lam=np.sum(abs(d)**2,axis=-1)
++        root=np.sqrt(lam*(lam+4));decay=2/(lam+2+root)
++        g0=1/root
++        rho_expected=np.exp(-1j*(2*ks[...,0]+ks[...,1]))-1
++        for index,path in enumerate(paths):
++            eta=np.zeros(ks.shape,dtype=complex)
++            for direction,position in path:
++                eta[...,direction]+=np.exp(-1j*np.sum(ks*np.array(position),axis=-1))
++            rho=np.sum(d*eta,axis=-1)
++            assert np.max(abs(rho-rho_expected))<4e-15
++            norm=np.sum(abs(eta)**2,axis=-1);longitudinal=abs(rho)**2/lam
++            assert np.min(norm-longitudinal)>-3e-14
++            static=float(np.mean(longitudinal));last=None
++            for time in (1,2,5,12):
++                direct_time=sum(decay**abs(a-b)*g0 for a in range(time) for b in range(time))
++                direct=float(np.mean(abs(rho)**2*direct_time+2*norm*g0*(1-decay**time)))
++                end=float(np.mean(2*g0*(1-decay**time)*(norm-longitudinal)))
++                reduced=time*static+end
++                assert abs(direct-reduced)<3e-12*max(1,direct)
++                assert 0<=end<=2*len(path)**2*float(np.mean(g0))+3e-12
++                if last is not None:assert reduced/time<last
++                last=reduced/time
++                rows.append({'grid_side':size,'path_index':index,'T':time,'direct_time_sum':direct,
++                    'reduced_energy':reduced,'static_limit':static,'positive_remainder':end})
++    return rows
++
++
++def main():
++    result={'inverse_moments':check_inverse_moments(),'positive_paths':check_positive_paths(),
++            'mixed_moments':check_mixed_moments(),'general_path_green':general_path_green()}
++    print('EVIDENCE_JSON: '+json.dumps(result,sort_keys=True))
++    print('per_element: clock Fourier aliases, coefficient ratios and inverse moments are evaluated at finite N and beta.')
++    print('per_site: actual temporal-link gauge sums are matched to same-charge insertion matrix elements on spatial squares.')
++    print('per_mode: finite inverse spectra, positive insertion vectors and moment Gram contractions are compared independently.')
++    print('per_block: fixed spatial surfaces and general path Green energies are checked on finite Fourier and transfer fixtures.')
++    print('lattice_wide: checked and not executed — common Hilbert reconstruction, no zero atom and infinite static thresholds use the written proofs.')
++    print('TOTAL: PASS=4 FAIL=0')
++if __name__=='__main__':main()

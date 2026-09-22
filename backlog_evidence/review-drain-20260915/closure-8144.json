@@ -1,0 +1,58 @@
+{
+  "pr": 8144,
+  "original_head": "691f96525772ec0e7d06a528d14ad17324400f22",
+  "branch": "physics-loop/static-charge-transfer-sector-20260915",
+  "landing": "ecf9c0986cf4fa73017856aa6582c22bc1dc7310",
+  "dependent_base_maintenance": [
+    {
+      "original": {
+        "baseRefName": "physics-loop/static-charge-transfer-sector-20260915",
+        "closedAt": null,
+        "headRefName": "physics-loop/clock-history-field-20260915",
+        "headRefOid": "c5580db2ebe78e4dca71f210539cea1471148483",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8145,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8145"
+      },
+      "original_merge_base": "691f96525772ec0e7d06a528d14ad17324400f22",
+      "delta_sha256": "09c817dba36f330395221657b78735689efe39d068e62fea120182700a3beab6",
+      "delta_file": "closure-8144-child-8145-original.patch",
+      "verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "physics-loop/clock-history-field-20260915",
+        "headRefOid": "c5580db2ebe78e4dca71f210539cea1471148483",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8145,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8145"
+      },
+      "post_delete_verified": {
+        "baseRefName": "main",
+        "closedAt": null,
+        "headRefName": "physics-loop/clock-history-field-20260915",
+        "headRefOid": "c5580db2ebe78e4dca71f210539cea1471148483",
+        "isCrossRepository": false,
+        "isDraft": false,
+        "number": 8145,
+        "state": "OPEN",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8145"
+      }
+    }
+  ],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-22T20:32:44Z",
+    "headRefName": "physics-loop/static-charge-transfer-sector-20260915",
+    "headRefOid": "691f96525772ec0e7d06a528d14ad17324400f22",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8144,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8144"
+  }
+}

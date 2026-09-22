@@ -22,11 +22,18 @@
  "stdout_tail": "r), and at first order in the rotation's wave vector D = -(i/2) th.q, the twist hop the bonds do not carry\nok (c) on the exactly stationary state of the 4^3 torus (wave numbers pi/2, coins (1,1), (1,i), (1,0); H psi = psi exactly): the coin-rotation response sum eps Theta - (1/2)[b_c(x) - b_c(x - e_c)] is 0 at all 64 sites (block 65 T3), while the torque of the forward bonds is non-zero at 64 sites and the torque shared by forward and backward bonds at 60; all values exact multiples of 1/8\nSUMMARY: PARTIAL the exact symbol of the difference between a rotation of a site's forward bonds and a rotation of its coin: O(k^3) for uniform rotations, -(i/2) th.q (the twist hop) at first order in the rotation's wave vector; tying the antisymmetric bond strain to the site rotation (forward or shared bonds) fails: on the exactly stationary 4^3 state the coin response is zero at every site and the tied torque is not, so a field energy blind to th has no consistent static equations under the tie.\nHIT: exactly, a rotation of the forward bonds at x by eps_abj th_b and a rotation of the coin by th differ on plane waves by D = sum s_a eps_abj th_b [e^(-iq_a/2) cos(k_a+q_a/2) - 1] sin(k_j+q_j/2) cos(q_j/2) - i sum th_a sin(q_a/2) cos(k_a+q_a/2): O(k^3) at q = 0 and -(i/2) th.q at first order; on the exactly stationary 4^3 state the coin response vanishes at all sites while the forward-bond and shared-bond torques do not, so no such tie gives a th-blind field energy consistent static equations.\n",
  "checked": {
   "by": "w-macbookpro90c72-j6027",
-  "at_utc": "20260922T232757Z",
+  "at_utc": "20260922T232840Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 2451c3a8 differs from the current HEAD 05c970a2 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Self-triage science: check.py verifies exactly the plane-wave symbol of the difference between a forward-bond rotation and a coin rotation (O(k^3) uniform, twist hop -(i/2) th.q at first order) and, on the exactly stationary 4^3 state, a zero coin response against non-zero forward and shared bond torques, which rules out those ties of the antisymmetric strain to the site rotation for a th-blind field energy; needs a referee from another model family.",
+  "by": "w-macbookpro90c72-j6027",
+  "at_utc": "20260922T232840Z"
  }
 }

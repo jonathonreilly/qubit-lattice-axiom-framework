@@ -1,6 +1,6 @@
 {
- "edge_count": 13669,
- "node_count": 6223,
+ "edge_count": 13684,
+ "node_count": 6234,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5042,9 +5042,17 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "6e596061f61c",
+   "out_degree": 3
+  },
   "finite_clock_gaussian_smoothing_positive_local_electric_extension_and_flux_scaling_equivalence_bounded_theorem_note_2026-09-15": {
    "deps_hash": "718efe9ea279",
    "out_degree": 1
+  },
+  "finite_clock_ginibre_free_state_and_static_charge_bound_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "a15dec29692f",
+   "out_degree": 3
   },
   "finite_clock_image_noise_current_sector_and_positive_time_os_equivalence_bounded_theorem_note_2026-09-14": {
    "deps_hash": "e3b0c44298fc",
@@ -5065,6 +5073,10 @@
   "finite_clock_score_gaussian_maxwell_scaling_limit_bounded_theorem_note_2026-09-14": {
    "deps_hash": "3ff62434e691",
    "out_degree": 1
+  },
+  "finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "de868c3b6a72",
+   "out_degree": 2
   },
   "finite_clock_transfer_disorder_and_spectral_gap_perimeter_bounded_theorem_note_2026-09-14": {
    "deps_hash": "cbfdfa9b6409",
@@ -24325,6 +24337,38 @@
   "work_history.review_loop.pr8137.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "work_history.review_loop.pr8145.8140-clock-static-charge-20260915-conformance": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8145.8140-clock-static-charge-20260915-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8145.8140-clock-static-charge-20260915-trace_gate": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8145.8144-static-charge-transfer-sector-20260915-conformance": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8145.8144-static-charge-transfer-sector-20260915-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8145.8145-clock-history-field-20260915-conformance": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8145.8145-clock-history-field-20260915-handoff": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8145.readme": {
+   "deps_hash": "8948536da7f0",
+   "out_degree": 7
   },
   "work_history.yt.yt_explicit_systematic_reduction_options_2026-04-15": {
    "deps_hash": "e3b0c44298fc",

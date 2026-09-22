@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/native_global_projector_certificate_2026_09_10.py
+runner_sha256: a814be131f7d661fb5c07238c18bc1d9aabd8ffd125f9083e17ab3dbfd9362f8
+input_fingerprint_sha256: e7392e1573aef9517d38399ed6b2a7dc7fe6c93354dbe878b8f6f0e718f56c32
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+{
+  "full_alpha_established": false,
+  "native_reruns": 0,
+  "predicates": 61,
+  "rank_upper": 1572,
+  "status": "PASS_COMPACT_EVIDENCE_ONLY",
+  "total_error_upper_approx": 1.6655044211761766e-13
+}
+TOTAL: PASS=61 FAIL=0
+per_element: imported identities and rational error-ledger consequences checked; coefficient assembly is not rerun
+per_site: numerical real-space columns and sitewise wavefunctions are not evaluated by this compact checker
+per_mode: rank upper bound checked algebraically; no numerical mode basis, Gram matrix or occupation tail computed
+per_block: 378-node,756-block and3407-event receipt relationships checked; acquisition and event reconstruction not repeated
+lattice_wide: infinite-operator bound uses linked analytical proofs and authenticated inputs; no full state or alpha calculation
+
+----- stderr -----
+

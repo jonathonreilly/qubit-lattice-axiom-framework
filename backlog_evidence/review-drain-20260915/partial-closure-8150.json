@@ -1,0 +1,21 @@
+{
+  "pr": 8150,
+  "original_head": "a91fb8280bbeecca01c5fbf963f5a90e23d287a9",
+  "branch": "physics-loop/admissibility-induced-law-block16-static-law-not-a-mixture-of-formation-laws-20260915",
+  "landing": "bd696ae6921c9b1244d29771e0ef2c6d13a0574d",
+  "source_verified_at": "bd696ae6921c9b1244d29771e0ef2c6d13a0574d",
+  "lease_deleted": false,
+  "recovery_branch_preserved": true,
+  "reason_report": "drain8150-report.md",
+  "closed": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-22T21:42:40Z",
+    "headRefName": "physics-loop/admissibility-induced-law-block16-static-law-not-a-mixture-of-formation-laws-20260915",
+    "headRefOid": "a91fb8280bbeecca01c5fbf963f5a90e23d287a9",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8150,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8150"
+  }
+}

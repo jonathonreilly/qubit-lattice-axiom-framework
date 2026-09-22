@@ -1,0 +1,21 @@
+{
+  "pr": 8148,
+  "original_head": "47fea70fbb2d48ab9c1dedccfe9812d6e373a085",
+  "branch": "physics-loop/admissibility-induced-law-block14-formation-rate-clause-witness-20260915",
+  "landing": "bd696ae6921c9b1244d29771e0ef2c6d13a0574d",
+  "source_verified_at": "bd696ae6921c9b1244d29771e0ef2c6d13a0574d",
+  "lease_deleted": false,
+  "recovery_branch_preserved": true,
+  "reason_report": "drain8150-report.md",
+  "closed": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-22T21:42:26Z",
+    "headRefName": "physics-loop/admissibility-induced-law-block14-formation-rate-clause-witness-20260915",
+    "headRefOid": "47fea70fbb2d48ab9c1dedccfe9812d6e373a085",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8148,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8148"
+  }
+}

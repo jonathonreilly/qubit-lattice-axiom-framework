@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py
+runner_sha256: 11faee360b19da49491858bd4d5c9071c5121f8259d385ca17cd0ecb99a41070
+input_fingerprint_sha256: ba7ce0f2ee2cc6a3120ceaddd2bfe469654be8c9e875108e32737a5a63132d79
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 77.16
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md
+  docs/ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SWEEP_FORMATION_LAW_VERSUS_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-06.md
+  docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md
+AUDIT_TIMEOUT_SEC: 300
+scope: the Markov graph of the 3D monotone law (face-diagonal dependence witness), the eight corner laws (sets, groupings, pair witness, rotation orbit), the sweep's imprint on the 2x2 column (irreversibility, in-plane reflection, four one-plane laws); exact; no order selected
+mutation: none
+PASS: A1 the five declared inputs exist (this note, the axiom memo, block 08, block 02, the plane-law note)
+PASS: A2 the five axiom sentences used are present verbatim in the axiom memo
+PASS: A3 the parents' claim ids and the cited fragments (block 08's three-body term; the plane-law note's two classes) are present
+PASS: A4 this note carries its claim id and names this runner
+PASS: B1 R1: at (3,1,2) with all twelve sites at +x, changing the face-diagonal site x+e1-e2 moves the full conditional by TV 793975879125/24719290847393 = 0.03211968 (maximum over its six values)
+PASS: B2 R1: the dependency set of x is six face-diagonal offsets of the form kappa_i e_i - kappa_j e_j (coordinate sum zero); the offsets e_i + e_j and -e_i - e_j are not among them
+PASS: B3 R2 retained mixed-ratio witness: the third-difference ratio of K_3 is 2160/2197 at (3,1,2), 686196/704969 at (5,2,4), 1 at the constant rule
+PASS: B4 control: at the constant rule the full conditional is uniform and does not depend on any site
+PASS: C1 R3a: the eight corners' dependency sets coincide exactly for point-reflection pairs (four distinct sets)
+PASS: C2 R3a: the eight triple groupings of the dependency set are pairwise distinct
+PASS: C3 R3b: at (3,1,2) the (+++) and (---) full conditionals differ on the same twelve-site configuration by TV 1646222697/263752139417 = 0.00624155 (maximum over the 6^6 diagonal assignments, axial values +x)
+PASS: C4 R3c: the 24 proper rotations act transitively on the eight corners; the stabilizer of a corner has order 3 (the rotations about its body diagonal)
+PASS: D1 R4b: on the 2x2 column TV(J, J^T) = 0.04934116 at (3,1,2) and 0.03167900 at (5,2,4): the plane chain is not reversible (exact literals under --exact)
+PASS: D2 control: at the constant rule the joint law is symmetric and the one-plane law is reflection-invariant
+PASS: D3 R4b: TV(pi, pi∘R_2) = 0.02177093 at (3,1,2): the in-plane reflection of the corner changes the one-plane law
+PASS: D4 R4b: the eight predecessor structures give 4 distinct one-plane laws on the 2x2 column, paired by the sweep direction
+PASS: D5 R4b: for each of the four in-plane structures the joint law is asymmetric, so the eight column laws are pairwise distinct at (3,1,2)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the classical names appear only under Prior art and Imports (0 offenders)
+per_element: executed — the six values of the face-diagonal site for the dependence witness; the 6^6 diagonal assignments for the pair witness; the third-difference ratio at three triples
+per_site: executed — the twelve dependency sites of x and the excluded offsets; the eight corners' sets and groupings
+per_mode: executed — the 24 proper rotations on the eight corners and the stabilizer; the four one-plane laws of the 2x2 column
+per_block: executed — the 2x2 column's joint law against its transpose over all 1296^2 ordered pairs at three triples; the in-plane reflection of the one-plane law
+lattice_wide: DLR and containing graph in the stated region; witnessed corner distinctions only; universal static-law and excluded-graph certification deferred
+PASS: G1 the five N5 resolution lines are printed
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

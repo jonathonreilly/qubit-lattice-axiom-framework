@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/native_ward_direct_overlap_2026_09_10.py
+runner_sha256: e7e056b54f33bb0190d033cea3fc47bb862676d98c606ad4ef63b82ad0ae9178
+input_fingerprint_sha256: 807793bbb58b75d2f2d5b473d2d8902031bcb51b4204427a1c1a17040180d2f2
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+{
+  "status": "PASS_EXACT_ALGEBRA_SUPPORT",
+  "predicates": 39,
+  "m1": "1269649/653040",
+  "direct_lower": "506499805921/3158972160",
+  "ordered_words": 90,
+  "synthetic_ward_value": "3054159/8500",
+  "semantic_mutants_rejected": [
+    {
+      "boundary_sign": 1
+    },
+    {
+      "negative_eigenvalue": 3
+    }
+  ],
+  "import_hashes_checked": 15,
+  "native_evaluations": 0,
+  "full_alpha_established": false
+}
+TOTAL: PASS=39 FAIL=0
+per_element: exact rational moment inequalities, Kneser projectors and ordered synthetic Ward algebra.
+per_site: supplied original Gaussian reference and disjoint local defects; no native state evaluation.
+per_mode: finite synthetic matrices verify signs; no physical spectrum or Gaussian mode computation.
+per_block: boundary-sign and negative-eigenvalue alternatives rejected; import hashes checked separately.
+lattice_wide: direct overlap bound only, full Ward correction retained and full alpha sign undetermined.
+
+----- stderr -----
+

@@ -1,0 +1,202 @@
+--- original/docs/ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md
++++ current/docs/ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md
+@@ -1,7 +1,7 @@
+ ---
+ claim_id: admissibility_rule_three_body_term_exceptional_locus_exact_classification_bounded_theorem_note_2026-09-15
+ claim_type: bounded_theorem
+-claim_scope: "On the six Bloch-axis projector menu with the covariant positive product rule of orbit weights (p, q, r): (X1) the two-body normalizer term never vanishes at a nonconstant triple — two mixed-difference ratios of K_2 are both 1 only when p = q = r (proved by factorization); (X2)–(X3) the three-body normalizer term vanishes — log K_3 is a sum of pair functions — exactly at six points of the positive octant up to scale: the constant rule, the point p = q = t* r with t* the positive root of t^3 - 3t^2 - 6t - 1 (in (4, 5)), the two points p = r, q = rho r and q = r, p = rho r with rho the positive root of x^3 - 3x^2 - 15x - 19 (in (6, 7)), and the two points (p, q) = (sigma_1, sigma_2) r and (sigma_2, sigma_1) r with sigma_1 in (1, 2), sigma_2 in (6, 7) the positive roots of x^6 - 6x^5 - 3x^4 + 4x^3 - 3x^2 - 6x + 31, linked by p = psi(q) for an explicit quintic psi; the three points on the lines p = q, p = r, q = r are explained by the collapse of the six-menu to a three-letter quotient on those lines, where pair-additivity is one equation; completeness is proved by exact elimination (a lex elimination basis of the two witness polynomials, exact root isolation, and the reduction of all 16 distinct third-difference numerators modulo each minimal polynomial); (X4) at the five nonconstant exceptional points the three-body normalizer of every formation law factorizes into nonzero pair terms on the co-recorded pairs, so the Markov-graph statements of blocks 09 and 10 hold there through their pair part, while every genuine three-body statement of blocks 08–10 holds exactly off the locus; (X5) the declared triples (3,1,2) and (5,2,4) are off the locus (all 16 numerators nonzero). Exact algebra over the rationals; isolating intervals in place of numbers; no order selected as physical."
++claim_scope: "For the positive six-axis product rule modulo scale, exact classification of all six parameter points with pair-additive three-neighbor log normalizer: the constant point and five nonconstant exceptional points, with exact polynomial isolation and sufficiency checks. The p=q family factors through the three unsigned axes; the p=r family retains six letters and has three triple-pattern values, not a three-letter quotient. At the nonconstant exceptional points the pair component is nonzero. Opposite corner single-site specifications coincide there; this does not prove equality or distinctness of infinite laws. Infinite-law discussion requires c < 1/3. Broader negative certification is deferred."
+ upstream_dependencies:
+   - minimal_axioms
+   - admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_bounded_theorem_note_2026-09-15
+@@ -21,19 +21,17 @@
+ three-way coupling among the three sites a site saw when it formed, and they
+ proved their three-way statements at two rule settings, leaving open whether
+ the coupling could ever vanish at some other nonconstant setting. It can, and
+-this note finds exactly where. Two settings where the rule stops
+-distinguishing two of its three pair types — same sign, opposite sign,
+-orthogonal — behave like rules on a three-letter alphabet, and on each such
+-line there is exactly one extra weight ratio (an algebraic number of degree
+-three) where the three-way coupling disappears; a third line of that kind is
+-the mirror image of the second. Surprisingly there is also one pair of
++this note finds exactly where. On `p=q`, the rule factors through the three unsigned axes. On `p=r`,
++the six-letter rule still distinguishes an antipodal partner, but its triple
++normalizer has three pattern values; this is not a three-letter quotient.
++Each line has one extra algebraic weight ratio where the third difference
++vanishes; `q=r` is the parameter-swapped counterpart. Surprisingly there is also one pair of
+ settings off all these lines, with weight ratios given by a degree-six
+ equation, where it disappears too. That is the whole list: six points in all,
+ counting the trivial constant rule. Everywhere else — in particular at the
+ two settings used throughout the campaign — the three-way coupling is
+-genuine; and even at the six points the two-way couplings across faces
+-survive, so the earlier conclusions about what a site listens to still hold
+-there. Nothing here selects a rule.
++genuine; and at the five nonconstant exceptional points the pair component
++survives. This does not establish eight distinct infinite laws there. Nothing here selects a rule.
+ 
+ Exactly: with `V_1, …, V_5` the five pattern values of `Z_3` (below), the
+ two witnesses `E_1 = V_1 V_5² − V_3³` and `E_2 = V_1 V_4² − V_2 V_3² = −(p − q)² G`
+@@ -54,7 +52,7 @@
+ source_of_blocker_text: handoff
+ reachability_to_target: supports
+ artifact_role: theorem
+-next_trace_action: "the open lemma is settled: false at exactly five nonconstant points, true elsewhere; blocks 08–10's three-body statements are now unconditional off a finite explicit set, and their Markov-graph conclusions hold everywhere nonconstant through the pair part. Next: the region's boundary in (p, q, r); strong coupling. Consumers: the campaign's queue; #8093's assembly; the parked statistical-bridge material (read-only)"
++next_trace_action: "the open lemma is settled: false at exactly five nonconstant points, true elsewhere; blocks 08–10's three-body statements are now unconditional off a finite explicit set, and X4 retains the nonzero pair component, without an eight-law distinction or higher-body inference. Next: the region's boundary in (p, q, r); strong coupling. Consumers: the campaign's queue; #8093's assembly; the parked statistical-bridge material (read-only)"
+ conditional_surface_status: "exact algebra over Q for every statement; the exceptional points are algebraic numbers given by their minimal polynomials and isolating intervals; conditional on the six-axis menu and the product form of the rule (the objects); no infinite-volume statement beyond citation"
+ hypothetical_axiom_status: null
+ admitted_observation_status: null
+@@ -100,6 +98,13 @@
+ `E_2 = −(p − q)² G(p, q)` with `G` a polynomial of degree five, and `E_1`, `G`
+ are symmetric in `(p, q)`.
+ 
++
++### Linked source authority
++
++- [Admissibility Rule Three Dimensional Monotone Formation Law Plane Chain Coupling Region Bounded Theorem Note 2026-09-15](ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md): only its explicit hypotheses and conclusions are used.
++- [Admissibility Rule Three Dimensional Formation Law Markov Graph Eight Corner Laws Sweep Imprint Bounded Theorem Note 2026-09-15](ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md): only its explicit hypotheses and conclusions are used.
++- [Admissibility Rule Recorded Set Gibbs Theorem Formation Laws Markov Graph Bounded Theorem Note 2026-09-15](ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md): only its explicit hypotheses and conclusions are used.
++
+ ## Prior art and what is new
+ 
+ Block 08 (stacked) exhibited the third difference `2160/2197 ≠ 1` at
+@@ -120,7 +125,7 @@
+ |---|---|
+ | X1 the two-body term never vanishes at a nonconstant triple | proved (two factorizations) |
+ | X2 the line `p = q`: exactly `{1, t*}` | proved (three-letter collapse) and executed (factorization; sign-change) |
+-| X2′ the lines `p = r` and `q = r`: exactly `{1, ρ}` | proved (the same collapse with a different quotient) and executed |
++| X2′ the lines `p = r` and `q = r`: exactly `{1, ρ}` | proved (three triple-pattern values on the six-letter menu) and executed |
+ | X3 completeness off the lines: exactly the pair `(σ_1, σ_2)`, `(σ_2, σ_1)` | executed exact elimination (resultant; elimination basis; reduction of all 16 numerators) |
+ | X4 the pair part survives at the exceptional points | proved |
+ | X5 the declared triples are off the locus | executed |
+@@ -201,13 +206,13 @@
+ formation law of block 10's Theorem T1: the normalizer term `−log K_3(v_A)` on
+ every three-element recorded set `A` is a sum of three pair terms
+ `g(v_a, v_b) + g(v_b, v_c) + g(v_a, v_c)` on the co-recorded (face-diagonal)
+-pairs, and the vacuum-normalized pair term `Δ_2 g` is nonzero; consequently
+-block 09's dependence of the full conditional on the face-diagonal sites, its
+-Markov-graph theorem R1, its separation R2 and its eight-fold distinctness
+-R3, and block 10's T4 all hold at these points through the pair part, while
+-the genuine three-body statements (block 08's Q1f, block 09's "three-body"
+-wording, block 10's T3 for `k = 3`) hold exactly at every other nonconstant
+-triple.
++pairs, and the vacuum-normalized pair term `Δ_2 g` is nonzero. This is a
++pair-potential conclusion. In the constructed infinite-law region `c < 1/3`,
++the opposite corners `κ` and `−κ` have the same six diagonal sites, and their
++pair-additive denominators give the same single-site specification. A common
++specification alone proves neither equality nor distinctness of infinite laws.
++No eight-law distinction follows at these exceptional points, and no statement
++about higher maximal-set differences follows from this three-body calculation.
+ 
+ *Proof.* Pair-additivity is the factorization; if `Δ_2 g ≡ 0` then `g` would be
+ a sum of one-point functions and `K_3(a, b, c) = f(a) f(b) f(c)`, which by the
+@@ -215,8 +220,10 @@
+ `V_1 ≠ V_5` at a nonconstant triple (`V_1 − V_5 = p³ + q³ + 4r³ − 3r²(p + q)`,
+ which vanishes only at `p = q = r` by the arithmetic–geometric mean bound
+ applied to `p³ + r³ + r³ ≥ 3pr²` and `q³ + r³ + r³ ≥ 3qr²`). The face-diagonal
+-dependence of block 09's R1 then comes from `Δ_2 g` in place of the mixed
+-second difference of `log K_3`; the rest follows verbatim. ∎
++pair dependence comes from `Δ_2 g`. For opposite corners, each diagonal
++pair contribution appears with the same multiplicity because their diagonal
++sets agree; regrouping a pair-additive triple sum does not change the
++single-site denominator. The stronger law-distinctness inference is not made. ∎
+ 
+ ## X5 — the declared triples are off the locus (executed)
+ 
+@@ -225,48 +232,46 @@
+ `686196/704969`). Every three-body statement of blocks 08–10 is unconditional
+ at both.
+ 
+-## No-Go Discipline Gate
+-
+-The negative sentence of this note is X3's completeness ("at no other point")
+-— a proved statement about the zero set of a polynomial system, executed by
+-exact elimination. Not a route no-go; the gate is answered for completeness.
+-
+-### N1 — Routes by which another exceptional point could exist
+-
+-| route | what it would attempt | why it fails here, or its obligation | marker |
+-|---|---|---|---|
+-| 1 a common zero of `E_1`, `E_2` missed by the elimination | a positive solution outside the elimination basis's variety | the basis generates the same ideal; every positive `q` is a root of `h`; for each, `p` is forced (or the line `q = 1` is handled by symmetry) | RULED OUT (exact; C1–C3) |
+-| 2 a point where the two witnesses vanish but another numerator does not | a point in the variety off the locus | all 16 numerators tested at all six points | RULED OUT (C4) |
+-| 3 a point where some numerator vanishes but the witnesses do not | irrelevant: the locus needs all numerators, in particular the witnesses | — | RULED OUT BY DEFINITION |
+-| 4 boundary weights (`p, q` or `r = 0`) | zero weights | outside positivity; not considered | not attempted; obligation named |
+-| 5 other menus | a different alphabet | the pattern values change; not this note | not attempted; obligation named |
+-
+-### N2 — Wall-independence audit
+-Walls: `W_pos` (positivity; the domain), `W_menu` (the six-axis menu; the pattern values), `W_prod` (the product form). No wall follows from another; all three define the object.
+-
+-### N3 — Hidden-wall scan
+-Scanned for "we assume", "by construction", "as is standard", "the framework provides", "naturally", "obviously", "canonical", "registered", "background", "bridge context". Hits: none. The elimination steps are executed, not assumed.
+-
+-### N4 — Per-citation table
+-| cited surface | residual it attacks | residual claimed here | match |
+-|---|---|---|---|
+-| block 08 (stacked): Q1f | the third difference at (3,1,2), (5,2,4) | X5 | yes |
+-| block 09 (stacked): R1–R3 and their hypothesis | the Markov graph under a nonzero third difference | X4 (the hypothesis map) | yes |
+-| block 10 (stacked): T3, the open lemma | nonzero differences at every nonconstant triple | X2–X3 (false at five points), X4 | yes |
+-
+-### N5 — Resolution audit
+-| phrase | per-element | per-site | per-mode | per-block | lattice-wide |
+-|---|---|---|---|---|---|
+-| "at no other point" | executed: all 16 numerators at the six points; the factorizations of `E_1` on the three lines | — (no sites) | executed: the pattern values against the definition on all 216 triples; the three-letter collapses | executed: the elimination basis, the resultant's factors, the isolating intervals, the reductions modulo minimal polynomials | proved for the whole positive octant (a polynomial statement) |
+-
+-### N6 — Partial-closure paths and primitive scan
+-The registered primitives supply no weight; none is a wall. No reframing changes a polynomial identity.
++## No-Go Discipline Gate — deferred broader certification
++
++This revision retains the constructive identities, quantitative bounds and named
++finite witnesses above. It does not certify the broader exclusion claims in the
++original packet. The original N1–N8 text and every recovery route are preserved
++byte-exact in [the PR8146 history manifest](work_history/review_loop/pr8146/original-manifest.json)
++under PR8142; the original branch remains a recovery handle for unlanded work.
++
++### N1 — Route coverage
++The original list includes unattempted and out-of-domain routes. It is not a
++completed route search; broader negative certification is deferred.
++
++### N2 — Walls
++The positive weights, six-axis menu, product rule and specified formation class
++remain supplied conditions, not deductions or selected physical inputs.
++
++### N3 — Hidden walls
++The statements above carry their finite-window, parameter, nonvanishing and
++invariance hypotheses explicitly. No unrestricted exclusion follows.
++
++### N4 — Citation scope
++Linked source arguments support only their stated mathematical hypotheses.
++Historical branch review and cache records are provenance, not authority.
++
++### N5 — Resolution
++Exact finite witnesses and the proved formula domains remain as stated above.
++They do not establish exhaustive route, phase or infinite-law classification.
++
++### N6 — Partial closure
++The positive results are preserved. Unproved exclusions remain open with their
++original attempted routes recoverable; no new premise closes them.
+ 
+ ### N7 — Steelman
+-Hostile reviewer: "Isolating intervals are not proofs of which root is which; the pairing `ψ(σ_1) = σ_2` could be a numerical coincidence." Reply: `ψ` is computed exactly modulo `s`, `s(ψ) ≡ 0 (mod s)` exactly, so `ψ` permutes the roots of `s`; the enclosure of `ψ` over each isolating interval is an exact rational interval that contains exactly one root's interval — an exact statement, not a numeric one. Conceded: the structural reason for the off-line pair is open.
+-
+-### N8 — Cross-cycle echo
+-The nearest prior wall is block 10's open lemma, now settled; block 04's "silent triples" are unrelated (a criterion's silence, not an algebraic locus).
++A quantitative bound or finite discrepancy does not settle every alternative
++law or order. This revision concedes that gap rather than asserting closure.
++
++### N8 — Recovery
++The history manifest binds original heads, paths, decompressed SHA256 hashes and
++archive hashes. This deferred certificate is not a passing negative-claim gate;
++any future broader exclusion must complete the applicable discipline.
+ 
+ ## Falsifiers
+ - A positive `(p, q)` with all 16 numerators zero outside the six points (refutes X3).
+--- original/scripts/admissibility_rule_three_body_term_exceptional_locus_exact_classification_2026_09_15.py
++++ current/scripts/admissibility_rule_three_body_term_exceptional_locus_exact_classification_2026_09_15.py
+@@ -20,7 +20,7 @@
+ 
+ import sympy as sp
+ 
+-AUDIT_TIMEOUT_SEC = 900
++AUDIT_TIMEOUT_SEC = 300
+ AUDIT_INPUT_PATHS = (
+     "docs/ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+     "docs/MINIMAL_AXIOMS_2026-06-29.md",

@@ -1,0 +1,311 @@
+--- original/docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md
++++ current/docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md
+@@ -1,7 +1,7 @@
+ ---
+ claim_id: admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_bounded_theorem_note_2026-09-15
+ claim_type: bounded_theorem
+-claim_scope: "On the six Bloch-axis projector menu with the covariant positive product rule of orbit weights (p, q, r), under the records-only reading, for the monotone class of formation orders (the linear extensions of the product order) on boxes of Z^3, on columns Z x C over a finite open cross-section C, and on Z^3: (Q1) every linear extension of a box gives one formation law, invariant under the internal symmetry group and under permutations of the axes, consistent on down-sets, with the explicit product form whose interaction carries a genuine three-body normalizer K_3 on the predecessor triples (not a sum of pair terms at the nonconstant triples; executed); (Q2) unlike two dimensions, the box laws are not consistent under translation: summing out the first plane reproduces the smaller box's law if and only if the plane transfer preserves the two-dimensional law, which fails on the 2x2 cross-section on every one of its 1296 states at (3,1,2) and (5,2,4) (executed; the constant rule is the control), and hence on every larger cross-section; the successor triple of a site is never the predecessor triple of a site (proved), so the two-dimensional telescoping has no analogue; (Q3) for every finite cross-section the sweep of planes is a strictly positive Markov chain with a unique stationary plane law, which defines the column law; its two boundary planes carry the two-dimensional law; the quadrant column exists for every positive rule by down-set consistency; the stationary 2x2 plane law is computed exactly by orbit reduction and differs from the two-dimensional law; (Q4) with c the largest one-neighbor sensitivity of the one-, two- and three-neighbor kernels, the influence of a site on a site at monotone distance d is at most N c^d with N the number of monotone paths, every pair correlation of every box or column law is at most 4 |g| |h| (3c)^(ceil(|x-y|_1/2)-1), the plane chain mixes at rate c/(1-2c) uniformly in the cross-section, and for c < 1/3 the stationary plane law on the full Z^2 cross-section exists, is unique, is translation invariant, and defines a translation-invariant law on Z^3 to which every box law converges as its corner recedes; c is an exact rational at eight triples and the three silent triples (3,1,2), (5,2,4), (7,3,5) lie inside the region (3c = 81/110, 31950/63407, 5782/10295); (Q5) corollary at scope: in the region every record two-point function of the monotone formation law decays at least exponentially, so no long-range kernel arises from it. No order or corner is selected as physical; nothing about the static law beyond citation; nothing for c >= 1/3; exact arithmetic throughout."
++claim_scope: "For the supplied positive six-axis product rule and monotone class: exact finite-box factorization and symmetry; finite discrepancy witnesses; positive finite-cross-section plane chain and its unique stationary law; under c < 1/3 the constructed infinite law and single-site exponential covariance bounds. Three-body irreducibility is conditional on a nonzero third mixed difference, witnessed at (3,1,2) and (5,2,4), not every nonconstant triple. Rotations map corner laws covariantly; distinctness is not inferred from covariance. Broader negative certification is deferred."
+ upstream_dependencies:
+   - minimal_axioms
+   - admissibility_rule_infinite_strip_row_sweep_formation_law_versus_static_law_bounded_theorem_note_2026-09-06
+@@ -21,11 +21,10 @@
+ provided each site waits for the three sites behind it — below it, to its
+ left, and in front of it — before it forms. As in the plane, every such order
+ gives exactly the same pattern law, and that law has one new ingredient: a
+-term that couples the three sites behind a site all at once, not just in
+-pairs. Unlike the plane, this law remembers where the block began: if you
+-strip off the first layer, what remains is not the law of the smaller block.
+-So the pattern law of the whole lattice cannot be built by fitting blocks
+-together; it is built by letting the first layer recede to infinity. That
++three-neighbor normalizer. Its irreducible three-body component and the failure
++of first-layer stripping are witnessed at `(3,1,2)` and `(5,2,4)`; neither is
++asserted at every nonconstant triple.
++The constructed infinite law uses the limit as the first layer recedes to infinity. That
+ limit exists and is unique whenever a single number computed from the rule —
+ the most that changing one earlier neighbor can change a site's odds — is
+ below one third. At the three rule settings where all our earlier tests of
+@@ -61,7 +60,7 @@
+ reachability_to_target: supports
+ artifact_role: theorem
+ next_trace_action: "the monotone class on Z^3 is now a declared, constructed object with an exact coupling region; next: the eight corner classes as one covariant family and their relation to the random-priority law; the exact region boundary in (p, q, r); consumers: the campaign's queue, the derivation campaign's assembly (an edge 'clause-needed' for long-range record fields under positive product rules), the parked statistical-bridge material (read-only)"
+-conditional_surface_status: "exact on the declared menu and triples; Q1 is proved for every box and every positive symmetric rule; Q2 is a proved reduction with an executed refutation at the declared nonconstant triples and a proved lemma on the mechanism; Q3 is proved for every finite cross-section and every positive rule, with the 2x2 stationary law executed; Q4 is proved for every box and column, and on Z^2 x Z / Z^3 under c < 1/3; the region membership of eight triples is executed; conditional on the records-only reading, positivity, the six-axis menu and the monotone class as supplied conditions; no static-law statement; no order selected as physical"
++conditional_surface_status: "exact on the declared menu and triples; Q1 factorization is proved for every box and every positive symmetric rule; Q1f irreducibility requires nonzero third difference; Q2 is a proved reduction with an executed refutation at the declared nonconstant triples and a proved lemma on the mechanism; Q3 is proved for every finite cross-section and every positive rule, with the 2x2 stationary law executed; Q4 is proved for every box and column, and on Z^2 x Z / Z^3 under c < 1/3; the region membership of eight triples is executed; conditional on the records-only reading, positivity, the six-axis menu and the monotone class as supplied conditions; no static-law statement; no order selected as physical"
+ hypothetical_axiom_status: null
+ admitted_observation_status: null
+ audit_required_before_effective_retained: true
+@@ -144,6 +143,13 @@
+ (`3c = 81/110, 31950/63407, 5782/10295`). The finite-box bounds of Q4(a), (b)
+ hold at every triple; the infinite-cross-section statements need the strict
+ inequality, which the region names.
++
++
++### Linked source authority
++
++
++- [Admissibility Rule Infinite Strip Row Sweep Formation Law Versus Static Law Bounded Theorem Note 2026-09-06](ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SWEEP_FORMATION_LAW_VERSUS_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-06.md): the actual predecessor premise, restricted to the quoted theorem hypotheses.
++- [Admissibility Rule Monotone Order Formation Law Rows Columns Chains Corner Law Bounded Theorem Note 2026-09-07](ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md): the actual predecessor premise, restricted to the quoted theorem hypotheses.
+ 
+ ## Prior art and what is new
+ 
+@@ -169,8 +175,8 @@
+ their high-noise uniqueness by coupling, the Doeblin contraction for positive
+ finite chains, the Kolmogorov extension, the Krylov–Bogolyubov existence of
+ invariant laws for Feller kernels on compact spaces — are named here and under
+-Imports; every one is re-proved at the scope used, and no value or theorem is
+-imported as authority.
++Imports. The contraction and coupling arguments are proved here; the
++countable extension and compactness results are explicit mathematical imports.
+ 
+ New here: the three-dimensional monotone class as one constructed object — the
+ three-body normalizer and its irreducibility (Q1), the failure of translate
+@@ -264,7 +270,7 @@
+ product of conditionals on every configuration of the `1×2×2` and `2×2×1`
+ boxes and on a fixed sample of `2000` configurations of the cube (B5).
+ 
+-**(f) The three-body normalizer is irreducible.** At a nonconstant triple
++**(f) Witnessed three-body irreducibility.** At a triple with nonzero third mixed difference
+ `log K_3` is not a sum of pair functions: for
+ `(a_0, a_1; b_0, b_1; c_0, c_1) = (+x, +y; +x, +y; +x, +z)`,
+ `K_3(a_0,b_0,c_0) K_3(a_1,b_1,c_0) K_3(a_1,b_0,c_1) K_3(a_0,b_1,c_1) / [K_3(a_1,b_0,c_0) K_3(a_0,b_1,c_0) K_3(a_0,b_0,c_1) K_3(a_1,b_1,c_1)]`
+@@ -272,7 +278,7 @@
+ `F(a, b, c) = g(a, b) + g(b, c) + g(a, c)` has vanishing alternating sum over
+ the eight corners of the cube of choices, so the ratio would be `1`. At the
+ constant rule the ratio is `1` (B6). Hence the interaction of `μ_B` in the
+-bulk is a nearest-neighbor pair term `−log K` plus a genuine three-body term
++bulk at these witnessed triples is a nearest-neighbor pair term `−log K` plus a genuine three-body term
+ `+log K_3` on the predecessor triples `{x − e_1, x − e_2, x − e_3}`, which are
+ pairwise at face-diagonal distance; the two-body diagonal terms of the plane
+ (block 05; the plane-law note, #8039) survive only on the three coordinate
+@@ -546,11 +552,10 @@
+ `Z^2`-chain's law on that window by at most a constant times `(2c)^d/(1 − 2c)`
+ (couple the two plane chains from a common start; the boundary rays are sources
+ in every plane, their influence in-plane decays as in (d)(i), and their
+-accumulated influence along the sweep is summed by (c)). `μ_{Z^3}` is not
+-invariant under the proper cubic rotations that move the corner (the eight
+-corner classes are its images under the eight reflections of the axes; whether
+-they are distinct on `Z^3` is not executed here; on the `2×2×2` cube the
+-reversed order's law differs, #8102). ∎
++accumulated influence along the sweep is summed by (c)). Rotations and axis reflections map `μ_{Z^3}` to the law of the transformed
++corner class. This is covariance of the family; distinctness of the images
++requires a separate argument. At the constant rule all images are the same
++independent uniform law. ∎
+ 
+ **The region.** The hypothesis `c < 1/3` is an exact inequality between
+ rationals at each triple. It holds at `(3, 1, 2)`, `(5, 2, 4)`, `(7, 3, 5)`,
+@@ -568,120 +573,53 @@
+ For every box law, every column law, and for `μ_{Z^3}` when `c < 1/3`, and for
+ every pair of local record observables `g(v_x)`, `h(v_y)` (in particular every
+ axis indicator and every function of a record's content),
+-`|Cov(g(v_x), h(v_y))| ≤ 4 ‖g‖ ‖h‖ (3c)^{⌈|x − y|_1/2⌉ − 1}`. Under the monotone
+-formation law of a positive covariant nearest-neighbor product rule on the
+-six-axis menu, in the region, no record two-point function decays slower than
+-exponentially: neither a lattice Green function nor a transverse kernel appears
+-in the finished record field. This answers, at scope, the reframing test of the
+-derivation campaign's record-dynamics block: for this rule family and order
+-class the record statistics carry no long-range field without a supplied
+-addition. The static law in the region of block 03 (`6c_1 < 1` there) has the
+-same property by that block's coupling; at the silent triples this note's
+-region decides the formation law's decay while the static law's uniqueness
+-remains undecided.
+-
+-## No-Go Discipline Gate
+-
+-The negative sentences of this note are Q2 (the first plane cannot be summed
+-out; a proved reduction with an executed refutation at two triples) and Q5
+-(no long-range record correlation in the region; a proved bound). Neither is a
+-route no-go beyond its scope. The gate is answered for both.
+-
+-### N1 — Routes by which a long-range record correlation could still arise
+-
+-| route | what it would attempt | why it fails here, or its obligation | marker |
+-|---|---|---|---|
+-| 1 strong coupling, `c ≥ 1/3` | let the branching of discrepancies be supercritical | the bound (a) is then not conclusive; nothing is claimed; the finite-box bounds (a), (b) still hold with a rate `3c ≥ 1` that says nothing | not attempted; obligation named |
+-| 2 another order class | the snake, a random priority, a non-monotone order | the mechanism (discrepancies along recorded-neighbor paths) applies with the branching number replaced by the maximal out-degree of the recorded-set graph; the random-priority process has the owner's factorial ancestry bound (unlanded, cited, not used) | ATTEMPTED (mechanism named; not executed) |
+-| 3 a non-product or constraint rule | zero-probability supports (a Gauss-type support rule, #8114's line) | outside the positive product class; the kernels' positivity is what (a) uses | RULED OUT BY PRIOR at scope (positivity is a named premise) |
+-| 4 the static law at a critical coupling | a supplied coupling on the critical surface of the static specification | a static-law statement; not this note; the coupling is a supplied value | not attempted; obligation named |
+-| 5 a continuum alphabet or a larger menu | change `c` | `c` is menu-specific; the theorems hold for any finite menu with positive symmetric covariant `φ`; the numbers do not transfer | not attempted; obligation named |
+-| 6 the constant rule | `p = q = r` | `c = 0`; the law is the independent uniform law; excluded by the variation clause restricted to the menu | ATTEMPTED (control) |
+-
+-### N2 — Wall-independence audit
+-
+-Walls: `W_pos` (positivity), `W_menu` (the six-axis menu), `W_class` (the
+-monotone class with a corner), `W_reg` (`c < 1/3`), `W_var` (nonconstant, for
+-Q1f and Q2d only). `W_reg` and `W_var` are independent: the constant rule
+-satisfies `W_reg` and fails `W_var`; a triple far along the line `(1, 1, t)`
+-satisfies `W_var` and fails `W_reg`. `W_pos` is used by Q3a and Q4a (every kernel value
+-positive; the maximal coupling); `W_menu` fixes the numbers only; `W_class`
+-fixes the recorded sets and is the object's definition. None follows from
+-another. Q1a–e and Q3a–d need `W_pos`, `W_class` only; Q4d–e need `W_reg` in
+-addition; Q1f and Q2d are stated at the executed nonconstant triples.
+-
+-### N3 — Hidden-wall scan
+-
+-Scanned for "we assume", "by construction", "as is standard", "the framework
+-provides", "naturally", "obviously", "canonical", "registered", "background",
+-"bridge context". Hits: none in the theorems. Every step of Q1–Q4 is written
+-out; the cited steps (the extension of a consistent family on a countable product; the
+-compactness of `M^{Z^2}` and the weak-convergence step of (d)(ii)) are named in
+-the obligation table and under Imports. No wall was promoted.
+-
+-### N4 — Per-citation table
+-
+-| cited surface | residual it attacks | residual claimed here | match |
+-|---|---|---|---|
+-| block 05's note (proposed, unaudited): P1, P3, P4, P7(a) | the monotone class on rectangles; the 180-degree identity | Q1a–c one dimension up; Q2b; Q3c | yes (parent; cited and re-proved where used) |
+-| block 02's note (proposed, unaudited): E1–E3 | the row transfer preserves the chain law | Q2e (the mechanism that has no analogue); Q1e (`K_2`) | yes (parent; cited) |
+-| block 03's note (proposed, unaudited): the coupling method and `6c_1` | uniqueness of the static law by a random-scan coupling | contrast only (Q5); the method re-proved for a different structure | yes (contrast; no value used) |
+-| the plane-law note (#8039; landed on main 2026-09-15; not an input) | the plane law by projective consistency | Q2b re-proves the consistency; Q4's 2D remark applies to its law | yes (re-proved) |
+-| #8102 (open PR; not an input) | the multiset key; reversal on the cube | consistent finite fact quoted in Q4e | yes (quoted; not used) |
+-| the random-priority note (branch; not an input) | a covariant random-order law on `Z^3` | a different object; N1 route 2 | yes (contrast) |
+-
+-After dropping nothing, the headline rests on the parents' cited statements and
+-this note's own proofs and executed witnesses.
+-
+-### N5 — Resolution audit
+-
+-| phrase | per-element | per-site | per-mode | per-block | lattice-wide |
+-|---|---|---|---|---|---|
+-| "no record two-point function decays slower than exponentially" | executed: every `(s, s')` and every pair of axis indicators on the cube against the bound; the exact `2×2` transfer on all 1296 states | executed: every site of the cube (uniform marginals; the influence of the corner on the far corner) | executed: the orbit quotient's contraction for `n = 1..6`; the three-body third difference | executed: the `2×2` cross-section's stationary law by orbit reduction; the `2×3` rectangle's sub-rectangle marginals | proved for `c < 1/3` (Q4e); executed only through the region membership of eight triples; not claimed for `c ≥ 1/3` |
+-
+-The runner prints matching `per_element:` … `lattice_wide:` lines; the
+-narrowest form is used.
+-
+-### N6 — Partial-closure paths and primitive scan
+-
+-The registered approved primitives in
+-`docs/audit/data/axiom_premise_nodes.json` (`scale_reference_primitive`,
+-`kinetic_isotropy_primitive`, `realized_state_primitive`) supply a length
+-reference, a graining ratio and a realized-state notion; none supplies an
+-order, a corner, a coupling condition or a pair weight, and none is a wall here.
+-Reframing paths: a stronger coupling (weighted sensitivities, a block coupling)
+-could enlarge the region without any change of reading; the random-priority
+-construction gives a covariant order class whose decay comes from a different
+-mechanism. `docs/repo/DEFERRED_DECISIONS.md` entry 1 wakes on the
+-committed-action identification, which this note does not supply. This note
+-does not say a new axiom is required.
++`|Cov(g(v_x), h(v_y))| ≤ 4 ‖g‖ ‖h‖ (3c)^{⌈|x − y|_1/2⌉ − 1}`. This is a quantitative statement about single-site record observables in the
++specified class and parameter region. It does not classify other observables,
++formation classes or added dynamics. For coincident sites use the trivial bound
++`|Cov(g,h)| ≤ 2 ‖g‖ ‖h‖`; at `c=0` distinct sites are independent (the
++conditional is neighbor-independent), so their covariance is zero. This avoids
++an undefined `0` raised to a nonpositive exponent at short separation.
++
++## No-Go Discipline Gate — deferred broader certification
++
++This revision retains the constructive identities, quantitative bounds and named
++finite witnesses above. It does not certify the broader exclusion claims in the
++original packet. The original N1–N8 text and every recovery route are preserved
++byte-exact in [the PR8146 history manifest](work_history/review_loop/pr8146/original-manifest.json)
++under PR8138; the original branch remains a recovery handle for unlanded work.
++
++### N1 — Route coverage
++The original list includes unattempted and out-of-domain routes. It is not a
++completed route search; broader negative certification is deferred.
++
++### N2 — Walls
++The positive weights, six-axis menu, product rule and specified formation class
++remain supplied conditions, not deductions or selected physical inputs.
++
++### N3 — Hidden walls
++The statements above carry their finite-window, parameter, nonvanishing and
++invariance hypotheses explicitly. No unrestricted exclusion follows.
++
++### N4 — Citation scope
++Linked source arguments support only their stated mathematical hypotheses.
++Historical branch review and cache records are provenance, not authority.
++
++### N5 — Resolution
++Exact finite witnesses and the proved formula domains remain as stated above.
++They do not establish exhaustive route, phase or infinite-law classification.
++
++### N6 — Partial closure
++The positive results are preserved. Unproved exclusions remain open with their
++original attempted routes recoverable; no new premise closes them.
+ 
+ ### N7 — Steelman
+-
+-Hostile reviewer: "The monotone class is an artifact: it has a corner, breaks
+-the cubic symmetry, and its `Z^3` law is one of eight. Physics, if it uses
+-formation at all, would use a covariant process — the random-priority law —
+-whose decay is already faster than exponential. So Q4–Q5 say nothing physical:
+-the axioms supply no order, and this order is the least covariant one." Reply
+-at scope: the note selects nothing; it constructs the object the owner's queue
+-named and proves where it exists, is unique and decays — including at the
+-couplings where the static law's status is unknown — and it records that the
+-eight corner laws form one covariant family. The steelman's positive claim
+-(that a covariant formation process has faster decay) is the owner's separate
+-construction, unlanded; the comparison of the two families on `Z^3` is the next
+-block's object. Conceded: nothing here identifies a physical order.
+-
+-### N8 — Cross-cycle echo
+-
+-`NO_GO_LEDGER.md` holds block 02's separation on the strip (retired by nothing;
+-extended by #8039 and here), block 03's silent triples (open), block 04's
+-two-site criterion (closed for the tested criterion only), and block 05's
+-turning-staircase negative. The wall structurally nearest to Q2 is block 02's
+-"the normalizer history does not wash out along the sweep" — a different
+-statement (the static/formation separation), not retired; the nearest to Q5 is
+-block 03's contraction region, whose mechanism (a random-scan coupling with six
+-neighbors) is replaced here by the causal coupling with three predecessors;
+-this replacement, not a relabeling, is what puts the silent triples inside.
++A quantitative bound or finite discrepancy does not settle every alternative
++law or order. This revision concedes that gap rather than asserting closure.
++
++### N8 — Recovery
++The history manifest binds original heads, paths, decompressed SHA256 hashes and
++archive hashes. This deferred certificate is not a passing negative-claim gate;
++any future broader exclusion must complete the applicable discipline.
+ 
+ ## Falsifiers
+ 
+@@ -717,8 +655,7 @@
+ No plane, bridge, Born or gravity statement enters this note; this note does
+ not fire wake condition 1 of the parked statistical-bridge decision. The
+ unilateral Markov field, the probabilistic cellular automaton and the
+-positive-chain contraction are classical references re-proved here at the scope used; no
+-value, constant or theorem is imported as authority.
++positive-chain contraction have the scoped proofs above; the probability theorems listed under Imports are mathematical inputs, not physical premises.
+ 
+ Further: the two executed refutations of Q2d are at `(3, 1, 2)` and `(5, 2, 4)`;
+ a proof that the plane transfer moves the two-dimensional law at every
+@@ -742,13 +679,16 @@
+   maximal coupling and the triangle inequality for total variation (Q4);
+   monotone-path counts and the binomial series `Σ_j C(n+j, n) x^j = (1 − x)^{−n−1}`
+   (Q4c); the level-chain conditioning (Q4b).
+-- Cited, definition-level: the Kolmogorov extension of a consistent family on
++- Mathematical theorem imports (not definitions): the Kolmogorov extension of a consistent family on
+   a countable product (Q3d, Q4d); compactness of `M^{Z^2}` and the weak
+   subsequential limit of Cesàro averages with Feller continuity (Q4d(ii), the
+   classical Krylov–Bogolyubov argument, four lines); uniqueness of a measure on
+   a generating π-system (Q4d(iii)).
+-- No literature value, constant, or theorem enters as authority; the classical
+-  names appear only in this section and under Prior art.
++- Hypotheses for these imports: the finite menu gives a compact metrizable
++  countable product; the finite-dimensional distributions are consistent;
++  cylinder updates are continuous (the limiting plane kernel uses the proved
++  uniform coupling tail); Cesàro averages are probability measures on that
++  compact space. These are mathematical inputs, not physical axioms.
+ 
+ ## Review record
+ 
+--- original/scripts/admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15.py
++++ current/scripts/admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15.py
+@@ -22,7 +22,7 @@
+ from itertools import permutations, product
+ from pathlib import Path
+ 
+-AUDIT_TIMEOUT_SEC = 900
++AUDIT_TIMEOUT_SEC = 300
+ AUDIT_INPUT_PATHS = (
+     "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+     "docs/MINIMAL_AXIOMS_2026-06-29.md",
+@@ -707,7 +707,7 @@
+ FENCES = (
+     "This note describes the monotone class of formation orders on boxes, columns and `Z^3` for the declared rule; it states nothing about the static law of `Z^3` beyond citing block 03's region and the silent triples, nothing about any order or corner being physical, nothing for `c ≥ 1/3` beyond the finite-box bounds, and nothing about the distinctness of the eight corner laws on `Z^3`.",
+     "No plane, bridge, Born or gravity statement enters this note; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
+-    "no value, constant or theorem is imported as authority.",
++    "the probability theorems listed under Imports are mathematical inputs, not physical premises.",
+ )
+ FORBIDDEN = (
+     "the physical order", "for every coupling", "unique on Z^3", "long-range order exists", "Coulomb phase",

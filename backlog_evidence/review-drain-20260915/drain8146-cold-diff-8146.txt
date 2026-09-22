@@ -1,0 +1,303 @@
+--- original/docs/ADMISSIBILITY_RULE_STRONG_COUPLING_FORMATION_LAW_LEVEL_AUTOMATON_ERODER_METASTABILITY_ORDERED_PHASE_OBLIGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md
++++ current/docs/ADMISSIBILITY_RULE_STRONG_COUPLING_FORMATION_LAW_LEVEL_AUTOMATON_ERODER_METASTABILITY_ORDERED_PHASE_OBLIGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md
+@@ -1,7 +1,7 @@
+ ---
+ claim_id: admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_ordered_phase_obligation_bounded_theorem_note_2026-09-15
+ claim_type: bounded_theorem
+-claim_scope: "On the six Bloch-axis projector menu with the covariant positive product rule of orbit weights (p, q, r), under the records-only reading, for the monotone class on Z^3 at every coupling: (S0) in level time (x_1 + x_2 + x_3 = t) the formation law is a synchronous probabilistic cellular automaton on Z^2 with the north-east-center neighborhood, whose kernel is the rule's three-neighbor conditional; it is well defined at every coupling, and its invariant laws are the translation-invariant formation laws of Z^3 (proved); (S1) the exact noise map: the kernel at a unanimous, a 2:1-orthogonal, a 2:1-antipodal and a tie triple in closed form, every deviation from the majority O(1/p) as p grows, the majority the most likely value iff p > max(q, r) (proved); (S2) the deterministic limit is a majority rule that is an eroder: every finite island of a binary coarse-graining dies within M_1 + M_2 + M_3 - t_0 + 1 levels (proved by the three coordinate maxima); (S3) the coarse-graining 'not +x' of the formation process is stochastically dominated by the majority automaton with independent noise epsilon(p) = max over triples with at least two entries +x of 1 - r(+x | triple), an exact rational, of order max(q, r)/p (proved by a site-by-site coupling); (S4) for every finite cross-section the plane chain has a unique stationary law at every coupling, but its second eigenvalue tends to one as p grows because the six constant planes become absorbing (proved), with the exact 2x2 contraction table at p = 3, 10, 30, 100 (executed); (S5) in two dimensions the formation law is unique at every coupling and its rows are K-chains with correlation eigenvalue (p - q)/Z_1 < 1, so it has no ordered phase at any coupling, and its deterministic limit is a two-predecessor choice with no error correction (proved); (S6) the ordered phase in three dimensions is an exact obligation, not a theorem: the classical stability theorem for noisy monotone eroders, applied to the dominating automaton of S3, would give at least six extremal invariant laws of the level automaton for epsilon(p) below its threshold; it is a reference and is not re-proved; the block's own attempt at a self-contained contour proof is recorded with its exact obstruction. No order, corner or coupling is selected as physical; exact arithmetic throughout."
++claim_scope: "For the positive six-axis product rule and supplied monotone formation class: exact level-time kernel; correspondence between spatially invariant stationary level laws and fully translation-invariant formation laws; closed noise formulas; strict majority preference across both 2:1 patterns iff p > max(q,r) and p^2 q > r^3; finite-island eroder bound; stochastic domination; finite nonempty cross-section metastability. The prescribed consistent two-dimensional rectangle family has a unique extension and exponential row/column correlations. No classification of all two-dimensional stationary laws or diagonal order is proved. The three-dimensional ordered phase remains conditional on the explicitly unproved stability obligation. Broader negative certification is deferred."
+ upstream_dependencies:
+   - minimal_axioms
+   - admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_bounded_theorem_note_2026-09-15
+@@ -30,9 +30,10 @@
+ island of dissent is wiped out in a number of steps we compute exactly. On a
+ finite cross-section the law always has one stationary state, but as the
+ preference grows that state takes ever longer to reach — the six uniform
+-records become traps. In two dimensions none of this happens: with only two
+-earlier neighbors there is no majority, no error correction, and no ordered
+-phase at any coupling. Whether the three-dimensional law really has six
++records become traps. For the prescribed two-dimensional rectangle-law
++extension, row and column correlations decay at every positive coupling. With
++only two earlier neighbors its limiting update chooses between distinct parents;
++this does not classify all stationary laws or diagonal correlations. Whether the three-dimensional law really has six
+ ordered phases at strong coupling is exactly the classical question of whether
+ a noisy majority eroder is stable; we state that obligation precisely, with
+ the exact noise parameters it needs, and we do not claim it.
+@@ -95,6 +96,13 @@
+ otherwise `η_y = 1` with probability `ε`, independently over sites given the
+ previous level. Its noiseless version (`ε = 0`) is the majority rule.
+ 
++
++### Linked source authority
++
++- [Admissibility Rule Three Dimensional Monotone Formation Law Plane Chain Coupling Region Bounded Theorem Note 2026-09-15](ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md): only its explicit hypotheses and conclusions are used.
++- [Admissibility Rule Three Dimensional Formation Law Markov Graph Eight Corner Laws Sweep Imprint Bounded Theorem Note 2026-09-15](ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md): only its explicit hypotheses and conclusions are used.
++- [Admissibility Rule Three Body Term Exceptional Locus Exact Classification Bounded Theorem Note 2026-09-15](ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md): only its explicit hypotheses and conclusions are used.
++
+ ## Prior art and what is new
+ 
+ Block 08 proved uniqueness and decay for `c < 1/3` by a causal coupling and
+@@ -120,12 +128,12 @@
+ 
+ | obligation | status here |
+ |---|---|
+-| S0 level-time automaton; invariant laws ↔ translation-invariant `Z^3` laws | proved; the projection executed (B1) |
++| S0 level-time automaton; spatially invariant stationary laws ↔ translation-invariant `Z^3` laws | proved; the projection executed (B1) |
+ | S1 the noise map, closed forms, limits, the majority-preference condition | proved; verified symbolically against the definition; values at five couplings (B2–B4) |
+ | S2 the eroder theorem with the exact bound | proved; executed on 300 random islands, a line and a triangle (C1–C2) |
+ | S3 the domination lemma; `ε(p)` exact | proved; `ε(p)` executed as the maximum over all 216 triples (B5) |
+ | S4 unique stationary law at finite `W`; `λ_2 → 1` as `p → ∞` | proved; the full-chain memory table and the orbit-quotient contraction table on `2×2`, the absorption probability at `p = 10^6` (D1–D2) |
+-| S5 two dimensions never order | proved; the eigenvalue executed (D3) |
++| S5 prescribed rectangle extension and axial correlation bound | proved; the eigenvalue executed (D3) |
+ | S6 the ordered phase in three dimensions | obligation: the stability theorem for the dominating automaton; not re-proved; the attempt's obstruction recorded |
+ | the static law's ordered phase; the exact threshold `ε_0`; the plane chain on the infinite cross-section at strong coupling | open; not this note |
+ 
+@@ -139,7 +147,7 @@
+ conditional. It is defined at every positive coupling (each level is a product
+ measure given the previous one), commutes with the translations of `Z^2`
+ (the level-preserving translations of `Z^3`), and its stationary two-sided
+-chains are exactly the `Z^3`-translation-invariant laws of the formation
++chains with spatially translation-invariant level marginals are exactly the `Z^3`-translation-invariant laws of the formation
+ process; in block 08's region its invariant law is unique and equals block
+ 08's `Z^3` law.
+ 
+@@ -148,9 +156,12 @@
+ one; the projections of the predecessors are as displayed. A level-preserving
+ translation `x ↦ x + u`, `ℓ(u) = 0`, commutes with the kernel by the rule's
+ translation covariance; the shift by `e_1` maps `L_t` to `L_{t+1}` with the
+-same kernel, so a stationary two-sided level chain is invariant under all
+-translations of `Z^3`, and conversely a translation-invariant law of the
+-process is a stationary level chain. In the region, block 08's discrepancy
++same kernel. Stationarity gives invariance under this time shift; spatial
++translation invariance of the level marginal gives invariance under the two
++level-preserving generators. These three generators span all translations of
++`Z^3`. Conversely a fully translation-invariant formation law supplies both
++invariances. An arbitrary stationary level law alone gives only time-shift
++invariance, not spatial invariance. In the region, block 08's discrepancy
+ bound between two level chains started from any two levels is `(3c)^n` per
+ site after `n` levels, so the invariant law is unique and is the `Z^3` law of
+ Q4e. ∎ Executed: the projected predecessor offsets for a sample of sites (B1).
+@@ -171,18 +182,21 @@
+ For fixed `q, r` and `p → ∞` the three deviations `1 − P(majority)` are
+ `(q³ + 4r³)/p³ + O(p^{−4})`, `r/p + O(p^{−2})` and `q/p + O(p^{−2})`
+ respectively, and the tie splits evenly. The majority value of a `2:1` triple is
+-its most likely output iff `p > max(q, r)`.
++its strictly most likely output across both patterns iff
++`p > max(q, r)` and `p² q > r³`.
+ 
+ *Proof.* Direct evaluation of `Π_i φ(s, a_i)/Z_3(a)` for each pattern (the five
+ pattern values `V_1, …, V_5` of block 11). For `(a, a, b)`: the weights are
+ `p² r` (`s = a`), `q² r` (`−a`), `p r²` (`b`), `q r²` (`−b`), `r³` (each of
+ `±c`), so `a` is the most likely iff `p² r > max(q² r, p r², q r², r³)`, i.e.
+ `p > max(q, r)`; for `(a, a, −a)`: weights `p² q`, `p q²`, and `r³` for the
+-four orthogonal values, so `a` wins iff `p > q` and `p² q > r³`, which holds
+-when `p > max(q, r)`. The expansions are the leading terms of the ratios. ∎
++four orthogonal values, so `a` wins iff `p > q` and `p² q > r³`, an additional condition not implied
++by `p > max(q, r)`. For example `(p,q,r)=(3,1/100,2)` has majority weight
++`9/100` below each orthogonal weight `8`. Combining the two patterns gives
++exactly the two stated strict inequalities. The expansions are the leading terms of the ratios. ∎
+ Executed: the closed forms against the definition, symbolically (B2); the
+ values at `(p, 1, 2)` for `p = 3, 10, 30, 100, 1000` (B3); the preference
+-condition on the two sides of `p = max(q, r)` (B4).
++condition on both strict boundaries and the rational counterexample (B4).
+ 
+ ## Theorem S2 — the majority rule is an eroder, with an exact bound
+ 
+@@ -228,7 +242,7 @@
+ 
+ ## Theorem S4 — finite cross-sections: unique but metastable
+ 
+-**Statement.** For every finite cross-section `C` and every positive coupling
++**Statement.** For every finite nonempty cross-section `C` and every positive coupling
+ the plane chain `P_C` has a unique stationary law (block 08, Q3a). As
+ `p → ∞` with `q, r` fixed, `P_C(p) → P_C(∞)`, the plane transfer of the
+ majority-with-random-ties automaton restricted to `C`, in which each of the six
+@@ -263,11 +277,11 @@
+ tables together are the metastability: fast collapse onto an ordered plane,
+ slow forgetting of which one.
+ 
+-## Theorem S5 — two dimensions never order
++## Theorem S5 — the prescribed rectangle extension and axial correlation bound
+ 
+ **Statement.** The two-dimensional monotone formation law (block 05's
+-rectangle law; its plane extension by projective consistency) is unique at
+-every positive coupling, its rows and columns are `K`-chains (block 05, P4),
++rectangle law) has a unique plane extension with those prescribed rectangle
++marginals at every positive coupling, its rows and columns are `K`-chains (block 05, P4),
+ and the correlation along a row of any function of the record decays like
+ `max(|p − q|, |p + q − 2r|)^d/Z_1^d` with `d` the distance, a ratio strictly
+ below one at every positive coupling: the two-dimensional law has no
+@@ -278,7 +292,9 @@
+ no majority and no error correction.
+ 
+ *Proof.* Uniqueness: the rectangle law is one law (P1) and consistent under
+-translation (block 08, Q2b), so its plane extension is unique. The row
++translation (block 08, Q2b), so its extension with those rectangle marginals is unique. This is not a
++uniqueness theorem for every stationary law of the two-predecessor automaton,
++nor a claim about diagonal order. The row
+ statement: `K` has eigenvalues `1`, `(p − q)/Z_1` (multiplicity three) and
+ `(p + q − 2r)/Z_1` (multiplicity two), all but the first of modulus below one
+ for positive weights (`|p − q| < Z_1` and `|p + q − 2r| < Z_1`), and the
+@@ -321,66 +337,64 @@
+ linear in the number of noise sites, using the eroder's geometry; that
+ construction is the missing lemma, named here and not reproduced.
+ 
+-## No-Go Discipline Gate
+-
+-The negative sentences are S5 ("no ordered phase at any coupling" in two
+-dimensions; proved) and the finite-cross-section uniqueness of S4 (proved).
+-S6 is an obligation, not a negative claim. The gate is answered for S5.
+-
+-### N1 — Routes by which the two-dimensional law could still order
+-
+-| route | what it would attempt | why it fails here, or its obligation | marker |
+-|---|---|---|---|
+-| 1 a different order class in two dimensions | an order whose law is not translate-consistent | the monotone class is the object; other classes are other objects (block 10 gives their Gibbs form on finite windows; their plane limits are not constructed) | not attempted; obligation named |
+-| 2 order along diagonals rather than rows | long-range order in a direction where the law is not a chain | the row chains bound every row-to-row correlation through the level structure only weakly; not claimed either way for diagonals — S5 is stated for rows and columns | narrowed (S5's statement) |
+-| 3 the constant rule | `p = q = r` | the independent uniform law | ATTEMPTED (control) |
+-| 4 zero weights | `q = 0` or `r = 0` | outside positivity; `K`'s eigenvalue can reach one only there | RULED OUT BY PRIOR at scope |
+-| 5 a non-product rule | the sum rule | outside the product form | not attempted; obligation named |
+-
+-### N2 — Wall-independence audit
+-Walls: `W_pos`, `W_menu`, `W_prod`, `W_class`, and for S4 the finiteness of `C`. Independent; each defines the object.
+-
+-### N3 — Hidden-wall scan
+-Scanned for "we assume", "by construction", "as is standard", "the framework provides", "naturally", "obviously", "canonical", "registered", "background", "bridge context". Hits: none in the theorems. S6 names its reference explicitly as not used.
+-
+-### N4 — Per-citation table
+-| cited surface | residual it attacks | residual claimed here | match |
+-|---|---|---|---|
+-| block 08 (stacked): Q3a, Q4, the strong-coupling queue item | the region and the plane chain | S0, S4, S6's framing | yes |
+-| block 09 (stacked): L1 | Gibbs identification | the remark that limit points are Gibbs (not load-bearing) | yes |
+-| block 05 (on main): P1, P4 | rows and columns as chains; one law | S5 | yes |
+-| the classical stability theorem (Prior art) | non-ergodicity of noisy eroders | none (reference only) | non-load-bearing by policy |
+-
+-### N5 — Resolution audit
+-| phrase | per-element | per-site | per-mode | per-block | lattice-wide |
+-|---|---|---|---|---|---|
+-| "no ordered phase at any coupling" (two dimensions, rows and columns) | executed: the eigenvalue at five couplings; the closed forms at all patterns; `ε(p)` over the 216 triples | executed: every site's projected predecessors (S0) | executed: the full `2×2` chain's memory and the quotient's contraction after 1, 2, 4, 8 steps at four couplings; the absorption probability | executed: 300 islands under the eroder bound | proved for every positive triple (S5); the three-dimensional phase is an obligation (S6), not claimed |
+-
+-### N6 — Partial-closure paths and primitive scan
+-The registered primitives supply no coupling or order; none is a wall. A reframing that would settle S6 without the classical theorem is not known; the note names the missing contour lemma.
++## No-Go Discipline Gate — deferred broader certification
++
++This revision retains the constructive identities, quantitative bounds and named
++finite witnesses above. It does not certify the broader exclusion claims in the
++original packet. The original N1–N8 text and every recovery route are preserved
++byte-exact in [the PR8146 history manifest](work_history/review_loop/pr8146/original-manifest.json)
++under PR8146; the original branch remains a recovery handle for unlanded work.
++
++### N1 — Route coverage
++The original list includes unattempted and out-of-domain routes. It is not a
++completed route search; broader negative certification is deferred.
++
++### N2 — Walls
++The positive weights, six-axis menu, product rule and specified formation class
++remain supplied conditions, not deductions or selected physical inputs.
++
++### N3 — Hidden walls
++The statements above carry their finite-window, parameter, nonvanishing and
++invariance hypotheses explicitly. No unrestricted exclusion follows.
++
++### N4 — Citation scope
++Linked source arguments support only their stated mathematical hypotheses.
++Historical branch review and cache records are provenance, not authority.
++
++### N5 — Resolution
++Exact finite witnesses and the proved formula domains remain as stated above.
++They do not establish exhaustive route, phase or infinite-law classification.
++
++### N6 — Partial closure
++The positive results are preserved. Unproved exclusions remain open with their
++original attempted routes recoverable; no new premise closes them.
+ 
+ ### N7 — Steelman
+-Hostile reviewer: "You have proved nothing new about the phase: the eroder property and the domination are trivial, and the theorem that matters is cited, not proved." Reply: agreed that the phase itself is not proved; what is new is exact — the level-time identification, the closed-form noise map with its `1/p` law and the `p > max(q, r)` condition, the exact eroder bound, the exact `ε(p)`, the metastability theorem and the two-dimensional contrast — and the obligation is stated with precisely the inputs a proof would use. Conceded: the ordered phase remains open in this lane.
+-
+-### N8 — Cross-cycle echo
+-Block 03's uniqueness region for the static law is the weak-coupling counterpart; its strong-coupling side is likewise open on `main`. No structurally similar wall was retired.
++A quantitative bound or finite discrepancy does not settle every alternative
++law or order. This revision concedes that gap rather than asserting closure.
++
++### N8 — Recovery
++The history manifest binds original heads, paths, decompressed SHA256 hashes and
++archive hashes. This deferred certificate is not a passing negative-claim gate;
++any future broader exclusion must complete the applicable discipline.
+ 
+ ## Falsifiers
+-- A pattern whose closed form in S1 disagrees with the definition (B2), or a coupling with `p > max(q, r)` at which a `2:1` triple's majority is not the most likely output (B4).
++- A pattern whose closed form in S1 disagrees with the definition (B2), or a coupling satisfying both `p > max(q, r)` and `p² q > r³` at which a `2:1` triple's majority is not the most likely output (B4).
+ - A finite island of the noiseless majority rule surviving beyond `M_1 + M_2 + M_3 − t_0 + 1` levels (C1).
+ - A triple with at least two entries `a` at which `1 − r(a | triple)` exceeds the printed `ε` (B5).
+ - A cross-section and coupling at which the constant plane is not asymptotically absorbing; a full-chain memory number or a quotient contraction number that decreases with `p`; a quotient number above the full chain's (D1–D2).
+ - A positive triple at which `|p − q| ≥ Z_1` or `|p + q − 2r| ≥ Z_1` (D3).
+ 
+ ## Boundaries and non-claims
+-This note structures the strong-coupling side of the three-dimensional monotone formation law and reduces its ordered phase to one exact obligation; it does not prove an ordered phase, does not select an order, corner or coupling as physical, states nothing about the static law's ordered phase, and gives no numeric threshold. No plane, bridge, Born or gravity statement enters this note; this note does not fire wake condition 1 of the parked statistical-bridge decision. The classical stability theorem for noisy eroders is a reference named here and under Prior art, not authority and not re-proved; no value, constant or theorem is imported as authority.
++This note structures the strong-coupling side of the three-dimensional monotone formation law and reduces its ordered phase to one exact obligation; it does not prove an ordered phase, does not select an order, corner or coupling as physical, states nothing about the static law's ordered phase, and gives no numeric threshold. No plane, bridge, Born or gravity statement enters this note; this note does not fire wake condition 1 of the parked statistical-bridge decision. The classical stability theorem for noisy eroders is a reference named here and under Prior art, not authority and not re-proved; the probability and spectral results listed under Imports are mathematical inputs, not physical premises.
+ 
+ Further: the plane chain on the infinite cross-section is not constructed at strong coupling (the level automaton is the object there); the exact threshold `ε_0` is not given; the attempt in S6 is recorded as an obstruction, not as a negative theorem.
+ 
+ ## Imports
+ - `minimal_axioms`: the sentences quoted under Premises.
+ - Blocks 05 (on main), 08 and 09 (stacked): proposed, unaudited; the parts used are restated.
+-- Re-proved at scope: S0–S5.
++- Mathematical imports: countable extension of consistent finite-dimensional laws on the finite-alphabet product space; existence of stationary two-sided Markov chains from invariant marginals; weak compactness and the Cesàro invariant-measure argument for a Feller kernel on a compact product space; continuity of roots of finite characteristic polynomials. Their hypotheses are the finite alphabet, positive local transition probabilities, finite dependence of each cylinder update, and (for the spectral argument) a finite nonempty cross-section. These are used as mathematical theorems, not merely definitions.
++- The exact algebra, eroder bound and coupling are proved above. The stability theorem in S6 remains an unproved conditional obligation.
+ - Reference only (never authority, not used): the stability theorem for noisy monotone eroders — Toom (1980), with modern Peierls-bound presentations — and the north-east-center automaton as the classical example; named here and under Prior art.
+ 
+ ## Review record
+--- original/scripts/admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_2026_09_15.py
++++ current/scripts/admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_2026_09_15.py
+@@ -4,7 +4,7 @@
+ Scope.  The six Bloch-axis menu with the covariant positive product rule (p, q, r), the records-only reading, the monotone
+ class on Z^3 in level time.  S0: the predecessors of a site project to the north-east-center offsets.  S1: the closed
+ forms of the kernel at the unanimous, 2:1-orthogonal, 2:1-antipodal and tie patterns, verified symbolically; the values at
+-(p,1,2) for five couplings; the majority-preference condition p > max(q, r).  S2: the noiseless majority rule on levels is
++(p,1,2) for five couplings; the majority-preference condition p > max(q, r) and p**2*q > r**3.  S2: the noiseless majority rule on levels is
+ an eroder: random islands, a line and a triangle die within M_1 + M_2 + M_3 - t_0 + 1 levels.  S3: epsilon(p) as the exact
+ maximum over all 216 triples with at least two entries +x.  S4: the 2x2 orbit quotient's contraction after n steps rises
+ with p; the constant plane is nearly absorbing at p = 10^6.  S5: the row eigenvalue (p - q)/Z_1 < 1.  Exact rational and
+@@ -23,7 +23,7 @@
+ 
+ import sympy as sp
+ 
+-AUDIT_TIMEOUT_SEC = 900
++AUDIT_TIMEOUT_SEC = 300
+ AUDIT_INPUT_PATHS = (
+     "docs/ADMISSIBILITY_RULE_STRONG_COUPLING_FORMATION_LAW_LEVEL_AUTOMATON_ERODER_METASTABILITY_ORDERED_PHASE_OBLIGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+     "docs/MINIMAL_AXIOMS_2026-06-29.md",
+@@ -282,16 +282,20 @@
+     if mut("noise_values_off"):
+         lit_ok = False
+     checks.check("B3", lit_ok, "S1: at (10,1,2) the four probabilities are 1000/1033, 100/131, 50/71, 10/33; " + "; ".join(f"p={p}: dev(aaa)={dec(1-vals[p][0])}, dev(aab)={dec(1-vals[p][1])}, dev(aa-a)={dec(1-vals[p][2])}" for p in (3, 100, 1000)))
+-    # B4: majority preference iff p > max(q, r): test at (3,1,2) [p > max], (2,1,3) [p < r], (1,2,1) [p < q], (2,2,1) [p = q]
++    # B4: strict majority for both patterns needs both exact inequalities.
+     def majority_most_likely(tr):
+         rule = Rule(tr)
+         c1 = rule.cond((x, x, y))
+         c2 = rule.cond((x, x, mx))
+         return c1[x] > max(c1[s] for s in range(M) if s != x) and c2[x] > max(c2[s] for s in range(M) if s != x)
+-    pref = majority_most_likely((3, 1, 2)) and not majority_most_likely((2, 1, 3)) and not majority_most_likely((1, 2, 1)) and not majority_most_likely((2, 2, 1))
++    preference_triples = ((3, 1, 2), (2, 1, 3), (1, 2, 1), (2, 2, 1),
++                          (3, F(1, 100), 2), (2, 2, 2), (4, F(1, 2), 2))
++    pref = all(majority_most_likely((p, q, r)) ==
++               (p > max(q, r) and p*p*q > r*r*r)
++               for p, q, r in preference_triples)
+     if mut("majority_preference_wrong"):
+-        pref = majority_most_likely((2, 1, 3))
+-    checks.check("B4", pref, "S1: the majority is the strictly most likely output at (3,1,2) and not at (2,1,3), (1,2,1), (2,2,1): iff p > max(q, r)")
++        pref = majority_most_likely((3, F(1, 100), 2))
++    checks.check("B4", pref, "S1: strict majority across both 2:1 patterns iff p > max(q,r) and p^2*q > r^3; exact samples include the small-q counterexample and equality boundaries")
+     # B5: epsilon(p) as the exact maximum over the 216 triples with >= 2 entries +x
+     eps = {}
+     arg = {}
+@@ -425,7 +429,7 @@
+ FENCES = (
+     "This note structures the strong-coupling side of the three-dimensional monotone formation law and reduces its ordered phase to one exact obligation; it does not prove an ordered phase, does not select an order, corner or coupling as physical, states nothing about the static law's ordered phase, and gives no numeric threshold.",
+     "No plane, bridge, Born or gravity statement enters this note; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
+-    "no value, constant or theorem is imported as authority.",
++    "the probability and spectral results listed under Imports are mathematical inputs, not physical premises.",
+ )
+ FORBIDDEN = (
+     "the physical order", "the physical rule", "for every coupling", "selects the", "fires wake condition", "the Bridge weights",

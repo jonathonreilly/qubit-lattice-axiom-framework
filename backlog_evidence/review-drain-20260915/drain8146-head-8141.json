@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "a76f95da766eea86e1ff357130b725563311285c",
+  "fetched_ref": "refs/review-loop/fetched/8141-0ce92be9dba8466796d03567cf7702db",
+  "metadata": {
+    "baseRefName": "physics-loop/admissibility-induced-law-block09-z3-markov-graph-corner-family-20260915",
+    "headRefName": "physics-loop/admissibility-induced-law-block10-recorded-set-gibbs-theorem-20260915",
+    "headRefOid": "a76f95da766eea86e1ff357130b725563311285c",
+    "isDraft": false,
+    "number": 8141,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

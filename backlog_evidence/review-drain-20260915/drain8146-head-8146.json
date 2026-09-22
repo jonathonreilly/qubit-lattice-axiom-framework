@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "3acd27d2fca87311b1cb138dc7514c95d5be6343",
+  "fetched_ref": "refs/review-loop/fetched/8146-093e9498e51b4372a9c004dc1782c357",
+  "metadata": {
+    "baseRefName": "physics-loop/admissibility-induced-law-block11-three-body-exceptional-locus-20260915",
+    "headRefName": "physics-loop/admissibility-induced-law-block12-strong-coupling-phase-20260915",
+    "headRefOid": "3acd27d2fca87311b1cb138dc7514c95d5be6343",
+    "isDraft": false,
+    "number": 8146,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

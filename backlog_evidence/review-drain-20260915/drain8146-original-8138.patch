@@ -1,0 +1,2556 @@
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+index 8f9c496033..3803c4f489 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+@@ -8,3 +8,13 @@
+ | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
+ | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
+ | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
++
++## Block 08 — the three-dimensional monotone formation law (2026-09-15)
++
++| Family | Object/formulation | Mechanism/invariant | Terminal obligation | Strength vs target | Status | Concrete evidence | Reopen condition |
++|---|---|---|---|---|---|---|---|
++| F8.1 projective consistency in 3D | box laws under translation | the 2D 180° identity (P7(a)) | first-plane removal identity | target-equivalent for a translation-invariant limit | blocked-local (refuted at scope) | the `2×2` plane-transfer witness: 1296/1296 states differ at (3,1,2); the successor/predecessor-triple lemma | an identity other than telescoping |
++| F8.2 plane-transfer chain | planes as states of a Markov chain | positivity → unique stationary law; down-set consistency across cross-sections | the infinite-cross-section limit | weaker (finite W) / comparable with F8.3 for W → ∞ | candidate-complete (finite W); provisional (W → ∞ via F8.3) | exact `π_2` by orbit reduction; boundary planes 2D | — |
++| F8.3 causal coupling | discrepancy propagation along monotone paths | per-neighbor sensitivity `c`; path counting `N(z,x) c^d` | none in the region `3c < 1` | stronger than needed (gives decay and uniqueness) | candidate-complete in the region | exact `c` at eight triples; cube influence check | a bound for `c ≥ 1/3` needs a different mechanism |
++| F8.4 Gibbs form | product of kernels regrouped | normalizers as `K`-sums | irreducibility of `K_3` | exact | candidate-complete | third difference `2160/2197` at (3,1,2) | — |
++| F8.5 down-set consistency | marginals on down-sets | leaf removal in reverse order | none | exact, any dimension | candidate-complete | cube marginal on `x_3 = 0` equals the 2D law | — |
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
+index e99dd0e244..027b76a9c1 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
+@@ -23,3 +23,28 @@
+ - Site weight `ψ`: constant by covariance on the transitive menu (executed); on a non-transitive menu it is not.
+ - Simultaneous formation (several records locking in one step) is not a total order; the formation law of a partial order with simultaneous steps would need a joint conditional the axiom does not state; named in N7.
+ - Infinite volume: the static specification's DLR existence (compactness on a finite menu) and uniqueness are outside the block.
++
++## Block 08 (2026-09-15) — the three-dimensional monotone formation law
++
++### Scientific dependencies
++- `minimal_axioms` (the Admissibility sentences; "no possibility is privileged" through the internal covariance of the rule; Record's records-only reading).
++- Block 05's note on main (the rectangle law `μ_P`, P1's recorded-set argument, P4's chains, P7(a)'s 180° identity) and block 02's note on main (E1–E3: the row transfer preserves the chain law; the projective limit on the strip). Both proposed, unaudited; the parts used are restated and re-proved at scope.
++- Block 03's note on main (the coupling method for the static law; re-proved here for the formation law with a different structure — monotone paths instead of a random scan).
++
++### Named premises (supplied; not axiom content)
++- The records-only extension of the rule; positivity `p, q, r > 0`; the six-axis menu; the monotone class (linear extensions of the product order on a box) as a declared order class with a declared corner; the sweep direction `x_1` (any axis by symmetry).
++
++### Declared mathematical scaffolding
++- The one-neighbor sensitivity `c_k := max TV(r(·|A), r(·|A'))` over `k`-tuples differing in one entry; `c := max(c_1, c_2, c_3)`; exact rationals at `(3,1,2), (5,2,4), (7,3,5), (2,1,2), (3,2,2), (5,4,4), (11,10,10), (2,2,2)`.
++- Monotone-path counts `N(z, x)` (multinomial) and the generating function `Σ_j C(n+j, n)(2c)^j = (1−2c)^{−n−1}`.
++- The internal symmetry group of order 48 and the plane transpose for the orbit reduction of the `2×2` plane transfer.
++
++### External references (reference and re-prove; never authority)
++- Unilateral Markov fields / Markov meshes; probabilistic cellular automata and their high-noise uniqueness (Dobrushin–Vasershtein-type coupling); Perron–Frobenius for positive matrices (block 02's F2 on main); Kolmogorov extension; Krylov–Bogolyubov for Feller kernels on compact spaces.
++
++### Counterfactual pass
++- Sweep axis: by the axis-permutation symmetry of the box law, the choice of `x_1` is immaterial; removing the first plane in any direction fails the same way.
++- Corner: the eight corner classes of `Z^3` give (by the point-reflection argument that fails in 3D) up to eight laws; this block treats one corner and states the covariant family; #8102's cube witness shows reversal moves the law.
++- Cross-section boundary: open (no exterior records); a fixed exterior record would enter as a recorded neighbor of the boundary sites, changing `c` to the sensitivities of larger recorded sets (bounded by `c_3`'s analogue with up to four neighbors); not treated.
++- Menu: the sensitivities `c_k` are menu-specific; the theorems (A)–(E) hold for any finite menu with a positive symmetric covariant `φ` with the same proofs; only the exact numbers are six-menu.
++- Order class: a non-monotone order (snake, random priority) has different recorded sets; the coupling theorem's mechanism (discrepancy along recorded-neighbor paths) applies to any order with the branching number replaced by the maximal out-degree of the recorded-set graph; not executed here.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block08_findings.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block08_findings.md
+new file mode 100644
+index 0000000000..a765c42359
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block08_findings.md
+@@ -0,0 +1,28 @@
++# Refuting pass — block 08 (supervisor-run, disjoint machinery; 2026-09-15)
++
++Owner directive: no subagents. This pass is the supervisor's own refutation attempt with machinery disjoint from the runner's (`specs/supervisor_control_block08_refuter.py`, output in `.out.txt`); it is not an independent review and grants no review PASS.
++
++## Load-bearing numbers recomputed by different routes
++
++| item | runner's route | refuting route | result |
++|---|---|---|---|
++| Q2d: TV(`μ_{C_2} P_{C_2}`, `μ_{C_2}`) at (3,1,2) | the fraction transfer `P(w → v)` pushed forward from `μ_{C_2}` over 1296 × 1296 pairs | the cube law's marginal on the plane `x_1 = 1` by an integer-weighted enumeration of all 6^8 configurations (Q2a says the marginal is `μ P`) | `356696849/806187919680`, equal (R1) |
++| Q4: `c_3` at (3,1,2) | fraction kernels; TV as half the ℓ¹ distance | integer `φ` products normalized per tuple; TV as the sum of positive parts | `27/110`, equal (R2) |
++| Q3e: the stationary `2×2` plane law | exact Gaussian elimination on the 32-orbit quotient | power iteration of the quotient, 40 steps, from a point mass | agree to below `10^{-12}` in every orbit (R3) |
++| Q4a: the path count `N(000, 111)` | multinomial `3!/(1!1!1!)` | explicit enumeration of monotone paths | `6` (R4) |
++| Q1f: the third-difference criterion | the alternating product of `K_3` values | a genuinely pair-additive `F` as a control | alternating sum `0` (R5) |
++
++## Attempts to refute the theorems (reasoning; nothing refuted)
++
++- Q2a's "iff": the common factor `Π_{t ≥ 2} P_C` is strictly positive (positivity), so cancelling it is legitimate; the reduction is exact.
++- Q2c's marginal argument: the sites of the corner square record only corner-square sites in both planes — true for the two-predecessor structure in-plane and the `x_1`-predecessor; the sum over the other sites of the new plane removes leaves in reverse order (they are maximal among the remaining sites of the new plane and have no successors in the old plane).
++- Q3a: the contraction uses only that every entry is at least `δ_C > 0`; `ε = 6^{|C|} δ_C ≤ 1` because the uniform law is a probability; if `ε = 1` the chain is iid (constant rule).
++- Q4a's induction: the bound `P(x ∈ D | past) ≤ c Σ_{z ∈ A_x} 1_{z ∈ D}` uses the maximal coupling and the triangle inequality along one-entry changes; the path identity `N(z, x) = Σ_{z' ∈ A_x} N(z, z')` is the last-step decomposition; both hold for sites with fewer than three predecessors (`c ≥ c_k`).
++- Q4b's conditional independence: the level chain is Markov because every predecessor of a level-`t` site lies at level `t − 1` (`|x − e_i|_1 = |x|_1 − 1`); the disjointness of the cones follows from `z ≤ x, z ≤ y ⇒ z ≤ x∧y`; the oscillation bound counts descending monotone paths of length `|y|_1 − m` (at most `3^ℓ`).
++- Q4c's series: `Σ_j C(n+j, n) x^j = (1 − x)^{−n−1}` for `|x| < 1` with `x = 2c`; paths from plane `n` to plane `0` have exactly `n` steps `−e_1`; in-plane steps `j ≥ 0` in two directions.
++- Q4d(i): the boundary rays of `Q_a` are the only sites whose kernels differ between corners `a` and `a'`; a site at in-plane distance `d` from the rays has at most `2^ℓ` monotone paths of length `ℓ ≥ d` to them; the series `Σ_{ℓ ≥ d} (2c)^ℓ` converges for `2c < 1`.
++- Q4e: the two-sided stationary chain is translation-invariant in `x_1` by stationarity and in-plane by uniqueness; the convergence of box laws combines Q3b (the plane chain error, rate `θ`) with the in-plane boundary influence.
++
++## Findings
++
++F1 (fixed before the census): the first draft of the runner's cube pass used the lcm of the individual normalizers as the common denominator; the per-configuration denominator is a product, so the correct common multiple is `6 Z_1^3 (lcm Z_2)^3 (lcm Z_3)` — the runner's own assertion `Σ W = L` caught it. F2 (fixed): the first draft of the note placed `(2, 1, 2)` on the region's boundary by misreading the control's `3c = 1/3`; all eight triples are inside. F3 (fixed): classical names appeared in the status block and in three theorem sections; moved to Prior art / Imports (runner F4). Nothing refuted in the theorems; verdict of this pass: PASS-NO-BLOCKER at the supervisor's own standard, pending the owner's independent review.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block08.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block08.md
+new file mode 100644
+index 0000000000..6f2b8d3b9d
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block08.md
+@@ -0,0 +1,15 @@
++# Claim status certificate — block 08 (close, 2026-09-15)
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: upstream_support
++reachability_to_target: supports
++conditional_surface_status: "exact on the declared menu and triples; Q1 proved for every box and every positive symmetric rule; Q2 a proved reduction with an executed refutation at (3,1,2), (5,2,4) and a proved mechanism lemma; Q3 proved for every finite cross-section, the 2x2 stationary law executed; Q4 proved for every box and column and, for c < 1/3, on Z^3; region membership executed at eight triples; conditional on the records-only reading, positivity, the six-axis menu and the monotone class as supplied conditions"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++claim_type_reason: "elementary proofs (recorded sets; regrouping; leaf removal; the contraction of a strictly positive finite chain; a coupling along monotone paths with an explicit path count; a level-chain conditioning; compactness plus the same coupling), each with exact finite certificates; every printed number an exact rational"
++dependency_classes: "one premise node (minimal_axioms); two unaudited upstream notes on main (blocks 02 and 05) cited and re-proved where load-bearing; concurrent open PRs #8039, #8102 and the owner's unlanded random-priority note cited as context only; PR numbers are evidence addresses only"
++open_imports: "the records-only reading; positivity; the six-axis menu; the monotone class with a declared corner as a supplied order class; the region c < 1/3 for the infinite-cross-section statements"
++review_loop_disposition: pending (supervisor-run block; author checks only; independent review by the owner's loop)
++independence_class: "single seat (Fable, supervisor) running controls, contract, lens, primary, refuting pass and fold; the refuting pass uses disjoint machinery (integer-weighted enumeration; positive-part TV; power iteration; path enumeration) but is not an independent reviewer"
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block08.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block08.md
+new file mode 100644
+index 0000000000..ee547007a9
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block08.md
+@@ -0,0 +1,34 @@
++# GOAL — block 08: the three-dimensional formation law of the monotone class (launched 2026-09-15)
++
++Branch `physics-loop/admissibility-induced-law-block08-z3-formation-law-20260915`, cut from `origin/main` at `5deabeb698` (the owner's corrected blocks 01–05 are on main; blocks 06–07 are open hand-offs #8034/#8035 and are not inputs here). Independent PR against `main`. Campaign directive 2026-09-15 (owner): a 24-hour derivation campaign, no subagents, proofs over computation, lanes nobody else is working. Seats: the supervisor runs every seat itself (controls, contract, lens, primary, refuting pass, fold, census, gates); lens and refuter are recorded as separate passes with disjoint machinery, not as independent reviewers.
++
++## Why this block (lane selection, 2026-09-15)
++
++- The owner's corrected queue (block-04 refresh, item 4, on main): "A fixed finite-width row chain, a two-dimensional quadrant construction and a three-dimensional formation process are different objects. Declare the order and initial or boundary law and the exact uniqueness quantifier. The strip's Perron argument does not extend itself to the plane or `Z^3`." Block 02's own N1 route 3 names "a three-recorded-neighbor sweep on a three-dimensional window" as attempted by witness only (the cube's `210/216` triples), no theorem.
++- Concurrent work read on 2026-09-15: PR #8039 (the plane law of the monotone class in two dimensions: projective consistency, two diagonal classes, the pair potential with the normalizer-induced diagonal term; "does not construct an infinite physical formation schedule"); PR #8102 (the recorded-set multiset key; the `2×2×2` cube's 48 monotone-box orders give one law; reversal moves the law on the cube); PR #8096 (no proper-cubic-invariant sequential order); the owner's random-priority formation law on `Z^3` (`docs/ADMISSIBILITY_RANDOM_PRIORITY_FORMATION_NOTE_2026-09-07.md`, on the branch `physics-loop/toe-campaign-20260907`, unlanded: a covariant random-order construction with a factorial ancestry bound and a content-only covariance bound). None constructs, or bounds, the three-dimensional monotone-class law on an infinite window; none has a coupling region for a formation law. The prior-art search on main (`5deabeb698`; statement nouns: three-body/`K_3`, plane transfer, unilateral, half-space, projective limit, monotone×`Z^3`, disagreement/branching×formation) found only blocks 02/05's own mentions (recorded in `ROUTE_PORTFOLIO.md`).
++- Value for the TOE: the first infinite-volume formation law on the physical lattice for a whole class of orders, with existence, uniqueness and exponential decay proved in an exact region that contains the three silent triples of blocks 03–04 — where the static law's uniqueness is undecided by every criterion tried. It also answers, at scope, the derivation campaign's record-dynamics reframing (#8093): no long-range record correlation arises from the monotone formation law of a positive covariant nearest-neighbor product rule in the region. Negative at scope → N-gate in the note.
++
++## Exact target contract
++
++| field | content |
++|---|---|
++| Target statement | For the six Bloch-axis menu with the covariant positive product rule of orbit weights `(p, q, r)`, under the records-only reading, on boxes `B ⊂ Z^3`, columns `Z × [0,W_2) × [0,W_3)` and the half-space `{x_1 ≥ 0} × Z^2`: (A) the monotone class (all linear extensions of the product order) is one formation law per box, with the explicit Gibbs form whose interaction has a genuine three-body term; (B) unlike two dimensions, the box laws are not consistent under translation (the first plane cannot be removed) — reduced to one exact identity on the `2×2` plane transfer and witnessed; (C) for every finite cross-section the sweep of planes is a positive Markov chain with a unique stationary plane law, which defines the column law; its boundary planes carry the two-dimensional law; (D) with `c := max_{k=1,2,3} c_k` the one-neighbor sensitivity of the `k`-neighbor kernel, every pair correlation of every box/column law is bounded by `4‖g‖‖h‖ (3c)^{⌈|x−y|_1/2⌉−1}`; the plane chain mixes at rate `c/(1−2c)` uniformly in the cross-section; for `c < 1/3` the stationary plane law on the full `Z^2` cross-section exists, is unique and in-plane translation invariant, and defines the half-space law. (E) Corollary at scope: the record two-point functions of the monotone formation law decay exponentially in the region; no long-range kernel. |
++| Quantifiers / domain | all `p, q, r > 0` for (A)–(C) and the bounds of (D); the region `c(p,q,r) < 1/3` for the infinite-cross-section statements of (D); (B)'s witness at the declared triples `(3,1,2)`, `(5,2,4)` and the constant control `(2,2,2)`; exact values of `c` at eight triples |
++| Allowed premises | `minimal_axioms`; the records-only reading, positivity, the declared menu and the monotone class as named supplied conditions (as in blocks 01–05); block 05's rectangle law (on main); block 02's E3 (on main); block 03's coupling method (on main; re-proved at scope) |
++| Forbidden weakenings | no order selected as physical; no static-law statement beyond citation; no claim for `c ≥ 1/3`; no infinite-cross-section claim without the region; no "for every coupling" |
++| Required edge cases | the constant rule (all sensitivities zero; every statement trivial); `W_2 = 1` or `W_3 = 1` (the column degenerates to a strip: block 02's object); comparable and incomparable site pairs in (D); the corner lines and boundary planes |
++| Completion witness | proofs in the note for (A)–(E); exact certificates: `c_k` at the triples, the `2×2` transfer witness (TV and count), the three-body third difference, the 48 extensions, down-set consistency on the cube, the influence bound checked against the exact cube influence, the exact stationary `2×2` plane law by orbit reduction and its interior-pair defect |
++| Outcomes that do not count | a numerical stationary law without the theorem; decay observed on a window without the bound; any statement about the static law of `Z^3` at the silent triples |
++
++## Supervisor-run panel (four lenses, one seat, 2026-09-15)
++
++- *Refuter:* "The 3D law is just #8039's plane law with one more axis." — No: the plane law's existence used translate consistency (P7(a)'s 180° identity); in 3D the successor triple of a site is never the predecessor triple of a site (a combinatorial lemma), the transfer of the first plane does not preserve the 2D law (exact: 1296/1296 states differ at (3,1,2), TV `356696849/806187919680`), so the projective route is closed and the object is the stationary plane chain. "The coupling bound is Dobrushin in disguise." — It is the causal (unilateral) coupling: three predecessors and monotone paths, condition `3c < 1`, not six neighbors and `6c_1 < 1`; at (3,1,2) `3c = 81/110` while `6c_1 = 1620/989`. "Uniform-in-W spectral gap from a TV bound" — the per-site discrepancy bound is what is uniform; the finite-W spectral radius bound follows; the infinite-W statement needs the Feller/compactness step, written out.
++- *Prior art / duplication:* #8039 (2D only), #8102 (finite cube census; reversal witness — consistent with (B)), the random-priority note (random order; factorial ancestry — a different mechanism; cited, not used), blocks 02/05 (inputs). Classical references (unilateral Markov fields, probabilistic cellular automata, Perron–Frobenius, Kolmogorov extension, Dobrushin-type coupling) named only in Prior art and Imports and re-proved at scope.
++- *Axiom reading:* no axiom is touched; the monotone class is a supplied order class (the axioms supply no order); "no possibility is privileged" enters only through the internal covariance of the rule (uniform one-site marginals). The corner of the monotone class is a supplied datum; the 3D law is not proper-cubic-rotation covariant (its eight corner classes form one covariant family) — stated, not adopted as physics.
++- *Scope:* the region is `c < 1/3` on exact rationals; the three silent triples lie inside; nothing about `c ≥ 1/3`; the half-space law is a theorem under the region, the quadrant column exists for every positive rule (down-set consistency), the full-plane cross-section needs the region.
++
++## Plan (derivation first; the runner certifies exact inputs only)
++
++Q1 structure (proofs): one law per box; internal covariance; axis-permutation symmetry; down-set consistency in any dimension; the Gibbs form; the three-body irreducibility (exact witness). Q2 translate inconsistency (proof of the reduction; exact witness; constant control; the no-cancellation lemma). Q3 the plane chain (positivity; unique stationary law; boundary planes are 2D; the quadrant column by down-set consistency; exact `π_2` by orbit reduction). Q4 the coupling theorem (sensitivities; influence bound; covariance bound; sweep rate; uniform-in-W gap; full-plane existence/uniqueness under `c < 1/3`; the region at the triples). Q5 the record-dynamics corollary with the N-gate. Runner families A–G, exact only, stdout under 6000 characters.
++
++Forbidden in the note (runner F-family, substring scan; multi-word tokens): "the physical order", "for every coupling", "unique on Z^3" (without "in the region"), "long-range order exists", "Coulomb phase", "the static law of Z^3 is", "selects the", "fires wake condition", "the Bridge weights", "the Bridge conjecture", "certified".
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+index 6dfc9de138..25ed576ede 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+@@ -25,3 +25,9 @@ Stacked on #8000 → #7999 → #7998 → main; all hand-offs. Block 04 = the two
+ Stacked on #8002 → #8000 → #7999 → #7998 → main; all hand-offs. Block 05 = the monotone-order class: one formation law for every linear extension of the product order (every rule); rows and columns path chains; the 2×2 corner law with corner independence; no right/down turning staircase is first-order Markov in its site values (proved for every nonconstant positive orbit triple under the declared product-rule monotone law); opposite corner classes give the same finite-rectangle law, with two distinct laws only at the executed 2×3 triples; the snake keeps rows and can lose column chains (column 0 survives on 3×3; on the executed 4×3 no column is a chain). Lens before the primary caught the supervisor's own wrong snake control. Historical checker: FIX FIRST on one forbidden mechanism sentence (false; deleted), nothing refuted in the theorems. Lock released.
+ 
+ Current source review found five further P2 groups, corrected in the canonical note and runner with their disposition in REVIEW_HISTORY.md. Same-session confirmation is pending; this appendix records an open review handoff.
++
++## 2026-09-15 block 08 launched (supervisor) — 24-hour derivation campaign
++Owner directive (2026-09-15): resync, read the latest PRs, run a 24-hour physics campaign on lanes nobody else is working, proofs over compute, no subagents. Lane map read: Codex native-fermion/U1/Ward and the clock/Maxwell physics-loop dispatch (#8036–#8136) are saturated; the derivation campaign (#8093) has six of its eleven blocks in open PRs (#8096, #8102, #8105, #8107, #8110, #8114, #8122); #8039 took the 2D plane law. Chosen: the three-dimensional monotone formation law (the owner's corrected queue item 4; block 02's N1 route 3), unworked by anyone. Branch cut from main `5deabeb698`; contract `GOAL_block08.md`; controls `specs/supervisor_control_block08_z3*.py`. Stack: none (independent PR against main). Lock: fable-supervisor.
++
++## 2026-09-15 block 08 opened for review as PR #8138 (supervisor)
++Independent PR against `main` (head on `physics-loop/admissibility-induced-law-block08-z3-formation-law-20260915`; not stacked; not a main landing). Block 08 = the three-dimensional monotone formation law: one law per box with an irreducible three-body normalizer; no translate consistency (the first plane cannot be summed out — exact `2×2` witness on all 1296 states; the successor/predecessor-triple lemma); the plane chain with a unique stationary law per cross-section and two-dimensional boundary planes (the `2×2` stationary law exact, 32 orbits); the causal coupling theorem (`|Cov| ≤ 4‖g‖‖h‖(3c)^{⌈d/2⌉−1}`, sweep rate `c/(1−2c)` uniform in the cross-section, the `Z^3` law unique and translation-invariant for `c < 1/3`); `c = 27/110, 10650/63407, 5782/30885` at the silent triples — inside; the record-dynamics reframing negative at scope (N-gated). Seats: supervisor-run (no subagents): controls, four-lens contract pass, primary, refuting pass with disjoint machinery (five numbers equal; three drafting defects fixed before the census), fold. Certificate: 33/33; 26 mutations in-family; cache pinned (runner sha `311e27d7…`); pipeline two passes, changed-evidence 0/0, audit_lint strict OK, diff --check clean, vocab clean. Lock held; the campaign continues with the queue refresh of 2026-09-15 (block 08 opening).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
+index 9ccaee75bb..41c2ad9c62 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
+@@ -13,3 +13,9 @@ Policy: reference and converge, never borrow; every statement used is re-proved
+ - Compactness of a countable product of finite sets; Kolmogorov / Carathéodory extension on the cylinder algebra; the passage of finite-window conditional identities to a limit — re-proved at scope (Theorem C2, existence only).
+ - The Pickard random field / Markov-mesh (unilateral Markov field) construction — Abend, Harley and Kanal (1965); Pickard (1977, 1980): a two-parent unilateral construction whose rows and columns are Markov chains when the corner-pair condition holds. The framework's row sweep under the records-only reading is an instance: `Z_2 = Z_1^2 K^2` with `K` symmetric doubly stochastic is the condition; Theorem E re-proves the row statement natively (the column statement is a lead for the next block).
+ - Toom and Vasilyev (1970s): product-form and Markov invariant measures of probabilistic cellular automata — reference only.
++
++## Block 08 (2026-09-15) — references, re-proved at scope; none imported as authority
++- Unilateral Markov fields / Markov meshes (Pickard 1980; Abend–Harley–Kanal 1965): the two-dimensional consistency structure that Q2 shows has no three-dimensional analogue for the monotone class.
++- Probabilistic cellular automata and their high-noise uniqueness by coupling (Dobrushin–Vasershtein-type conditions; Lebowitz–Maes–Speer 1990; Toom et al. 1990): Q4's causal coupling is the one-sided (monotone-path) version with the explicit path count; the region `3c < 1` is the analogue of "the sum of dependence coefficients below one", re-proved here.
++- The contraction of a strictly positive finite stochastic matrix (Doeblin): Q3a, proved in four lines.
++- Kolmogorov extension; Krylov–Bogolyubov invariant laws for Feller kernels on compact spaces: cited definition-level steps under Imports.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+index 2977b7f990..f6abf70d19 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+@@ -8,3 +8,8 @@ Routes read at their proofs, not their headlines.
+ | The consistency-first kernel K* and the frontier-process gate (bridge exercise 2026-08-26) | `archive/campaigns/exercise-bridge-adoption-20260826/SYNTHESIS.md` | On the gravity lane's Gaussian fixture, the sliding-frontier process marginals differ from the static Gram weights by an extent-stable gap. | Fixture-level, floats; this block states the axiom-level finite distinction; it does not explain the gate. |
+ | Convex-consistency (affine rule output) vs product form (R136/T212/T213) | same packet | Normalizer constant iff no coupling (rank argument; Funk–Hecke on the sphere). | Re-proved exactly on the menu as the two-neighbor normalizer factorization; used for T2(b). |
+ | Binary full-conditional compatibility (landed 2026-08-10) | `docs/ADMISSIBILITY_BINARY_FULL_CONDITIONAL_COMPATIBILITY_ISING_ACTION_AXIOM_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md` | Static half on binary menus; excludes formation dynamics by its own boundary. | Upstream; generalized here; the excluded object is this block's subject. |
++
++## Block 08 (2026-09-15) — negatives at scope, with escapes
++
++- **Translate inconsistency in 3D (planned theorem Q2).** Scope: the monotone box laws of the six-menu product rule at the declared nonconstant triples; the first plane cannot be summed out consistently (reduced to the `2×2` plane-transfer identity, refuted exactly). Escapes: the constant rule (identity holds); another identity than the 2D telescoping (none known; the successor/predecessor-triple lemma explains the mechanism's failure); a proof for every nonconstant triple is not given (executed witnesses only).
++- **No long-range record correlation from the monotone formation law in the region `c < 1/3` (planned corollary Q5).** Scope: pair correlations of the box, column and half-space laws; exponential decay proved by coupling. Escapes named for the N-gate: `c ≥ 1/3` (strong coupling; the branching bound is not conclusive); non-product or constraint rules (zero-probability supports; the Gauss-law support-rule line of #8114); other order classes (the random-priority process — the owner's factorial bound, unlanded; the snake); the static law at a critical coupling (a supplied value); a continuum alphabet.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+index 74d2f60bae..5e98eb2e3b 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+@@ -78,3 +78,25 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
+ 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
+ 4. **The silent triples by a non-criterion route** (unchanged; heavy).
+ 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
++
++## Refresh 2026-09-15 (campaign launch: 24-hour derivation campaign)
++
++Lane map (open PRs #8010–#8136 and branches since 2026-09-13 read): native-fermion/U1/flux/Ward (Codex, ~50 PRs), clock/Maxwell/Gaussian-transfer (physics-loop dispatch, #8106–#8136), the derivation campaign #8093 (six blocks open; menus-and-Born, clock-and-rate, formation-unit, record-dynamics, assembly not yet opened by that session), #8039 (2D plane law). Ranked for this campaign (derivations; nobody else on them):
++
++1. **Block 08 — the three-dimensional monotone formation law** (running): existence, uniqueness and exponential decay in the exact region `3c < 1`, which contains the silent triples; translate inconsistency; the three-body term; the record-dynamics corollary at scope.
++2. **The corner family on `Z^3` and the covariant mixture** (derivation): the eight corner classes give up to eight column laws; the equal mixture is proper-cubic covariant; whether any statistic distinguishes the mixture from the random-priority law (the owner's covariant construction) — proofs about the family, not a physical order.
++3. **The formation law's own coupling region as a function of `(p, q, r)`** (exact algebra): the thresholds `3c = 1` along the three lines of block 03 and the comparison with the static region `6c_1 = 1`; small.
++4. **Width 6 by block 06's route** (compute-heavy; deferred under the proofs-over-compute directive).
++5. **The silent triples by a non-criterion route** (heavy; unchanged).
++6. **The Gaussian instance in three dimensions** (small; low priority).
++
++## Refresh at block 08 opening (2026-09-15)
++
++Block 08 opened for review (independent PR against main; not a main landing): the three-dimensional monotone formation law — one law per box with an irreducible three-body normalizer; no translate consistency (the first plane cannot be summed out; exact 2x2 witness; the successor/predecessor-triple lemma); the plane chain with a unique stationary law per cross-section and two-dimensional boundary planes; the causal coupling theorem with the region `3c < 1`, containing the silent triples; the `Z^3` law exists, is unique and translation-invariant there with exponential decay; the record-dynamics reframing answered negatively at scope. Ranked next (derivations first; nobody else on them):
++
++1. **The eight corner classes on `Z^3` as one covariant family** (derivation): the point reflection maps the monotone class to its opposite-corner class; whether the eight `Z^3` laws (region `c < 1/3`) are pairwise distinct (a two-site statistic on the cube already separates reversal, #8102); the equal mixture of the eight is proper-cubic covariant; which local statistic distinguishes the mixture from the random-priority law; one block.
++2. **The region's boundary in `(p, q, r)`** (exact algebra): `3c = 1` along the three lines of block 03 by exact bracketing (the line `(1,1,t)` leaves the region; whether `(t,1,1)` and `(t,t,1)` stay inside), and the comparison with the static region `6c_1 < 1`; small.
++3. **Strong coupling `c ≥ 1/3`** (proof target): whether the plane chain still has a unique stationary law on the full cross-section, e.g. by a block coupling or a weighted sensitivity; open.
++4. **Width 6 by block 06's route** (compute-heavy; deferred under the proofs-over-compute directive).
++5. **The silent triples by a non-criterion route** (heavy; unchanged).
++6. **The Gaussian instance in three dimensions** (small; low priority).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block08.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block08.md
+new file mode 100644
+index 0000000000..a9293192db
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block08.md
+@@ -0,0 +1,32 @@
++# RESULTS — block 08: the three-dimensional formation law of the monotone class (2026-09-15)
++
++**Deliverables (branch `physics-loop/admissibility-induced-law-block08-z3-formation-law-20260915`, cut from main `5deabeb698`):** the note `docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md`; the runner `scripts/admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15.py` (33 checks, 26 mutations, exact arithmetic, about 27 s); the pinned cache; the controls `specs/supervisor_control_block08_z3.py`, `_b.py`, `_refuter.py` with outputs; `GOAL_block08.md`; `CHECKER_block08_findings.md`; this record.
++
++## Result, in one paragraph
++
++For the six-axis product rule under the records-only reading, the monotone class on a box of `Z^3` is one formation law with the product form `(1/6) Π K / Π K_2 / Π K_3`, whose three-body normalizer `K_3` is irreducible (third difference `2160/2197` at (3,1,2)). The first plane of a box cannot be summed out: this is equivalent to the plane transfer preserving the two-dimensional law, which fails on the `2×2` cross-section on all 1296 states (TV `356696849/806187919680` at (3,1,2)), hence on every larger cross-section; the successor triple of a site is never a predecessor triple, so the two-dimensional telescoping has no analogue. The sweep of planes is a strictly positive Markov chain with a unique stationary law per cross-section; its boundary planes carry the two-dimensional law; the stationary `2×2` law is exact (32 orbits) and differs from the two-dimensional law by `0.000454716…`. With `c = max(c_1, c_2, c_3)` the one-neighbor sensitivity, the causal coupling gives `|Cov| ≤ 4‖g‖‖h‖(3c)^{⌈|x−y|_1/2⌉−1}`, mixing at rate `c/(1−2c)` uniformly in the cross-section, and for `c < 1/3` the unique translation-invariant law on `Z^3` to which every box law converges. `c = 27/110, 10650/63407, 5782/30885` at the three silent triples: inside. Corollary at scope: no long-range record two-point function under the monotone formation law in the region.
++
++## Certificate
++
++- Runner: `TOTAL: PASS=33 FAIL=0`; 26 mutations, each failing in exactly its family (census at the final sha, see REVIEW_HISTORY.md); stdout 5887 characters; no floating-point literal or conversion call in the source (F3); classical names only under Prior art and Imports (F4).
++- Refuting pass (supervisor, disjoint machinery): five load-bearing numbers recomputed by different routes, all equal (`CHECKER_block08_findings.md`); three drafting defects found and fixed before the census.
++- Claim type `bounded_theorem`; surface status `bounded-support`; trace `upstream_support`; audit required before any retained status.
++
++## What is proved versus executed
++
++| statement | proved | executed |
++|---|---|---|
++| Q1a–e (one law; covariance; axis symmetry; down-sets; product form) | every box, every positive symmetric rule | the cube (48 extensions; marginals; the `x_3 = 0` down-set); the `1×2×2`, `2×2×1` product forms; 2000 sampled cube configurations |
++| Q1f (three-body irreducibility) | the criterion | the ratio at (3,1,2), (5,2,4); the constant control |
++| Q2a, c, e (reduction; one cross-section refutes all; the mechanism lemma) | yes | — |
++| Q2b (2D translate consistency) | re-proved from P7(a) | the `2×3` rectangle |
++| Q2d (the refutation) | — | all 1296 states at (3,1,2), (5,2,4); the constant control; the pair facts |
++| Q3a–d (contraction; column law; boundary planes; quadrant column) | every finite cross-section, every positive rule | positivity and row sums of `P_{C_2}`; the coordinate-line pairs under `π_{C_2}` |
++| Q3e (the stationary `2×2` law) | — | 32 orbits; representative independence; exact solve; TV and the interior pair |
++| Q4a–c (influence; covariance; sweep rate) | every box and column | the cube influence vs `6c^3`; the `2×3` influence vs `3c^3`; the sector contraction vs `θ^n` |
++| Q4d–e (full cross-section; `Z^3` law; convergence of box laws) | for `c < 1/3` | region membership at eight triples |
++| Q5 (decay of two-point functions) | corollary in the region | the cube's pairs (bound not informative at cube distances, stated) |
++
++## Not claimed
++
++Anything about the static law of `Z^3` at the silent triples; anything for `c ≥ 1/3` beyond the finite-box bounds; the distinctness of the eight corner laws on `Z^3`; a physical order or corner; the region's boundary in `(p, q, r)`; a proof of Q2d at every nonconstant triple.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+index 08d17f0940..fb8681786e 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+@@ -199,3 +199,16 @@ executed against the four declared inputs on current main. The original
+ 23-mutation census and historical pipeline receipts are not claimed as
+ fresh checks. Original-reviewer confirmation is pending; no audit status is
+ applied, and only the coordinator may perform authorized integration.
++
++## block 08 — V1-V5 (supervisor, 2026-09-15)
++- V1: the owner's corrected queue names the object ("a three-dimensional formation process [is a] different object. Declare the order and initial or boundary law and the exact uniqueness quantifier"); block 02's N1 route 3 records the three-recorded-neighbor sweep as "ATTEMPTED (witness only; no theorem)"; #8093's record-dynamics block asks whether long-range record correlations arise from the formation law without a supplied tick.
++- V2: new — the three-body normalizer and its irreducibility (Q1f); the reduction of translate consistency to the plane-transfer identity and its exact refutation (Q2a–d); the successor/predecessor-triple lemma (Q2e); the column law and the two-dimensional boundary planes (Q3); the causal coupling theorem with the explicit path count, the covariance bound by level-chain conditioning, the uniform-in-cross-section sweep rate, and the `Z^3` law for `c < 1/3` (Q4); the region membership of the silent triples. Searched `origin/main` at `5deabeb698` (commands and hits in `ROUTE_PORTFOLIO.md`): no landed statement of a three-dimensional monotone law, a plane transfer, or a formation-law coupling region; open PRs #8039 (2D only), #8102 (finite cube), #8096, and the unlanded random-priority note read and distinguished.
++- V3: yes — every theorem carries its proof in the note; the runner certifies the exact inputs and the finite refutation; remaining gaps named (Q2d at every nonconstant triple; the region's boundary; the corner laws' distinctness; `c ≥ 1/3`).
++- V4: yes — before: no infinite-volume formation law on `Z^3` for any order class beyond the owner's random-priority construction (unlanded), and no decay statement for a formation law at the silent triples; after: existence, uniqueness, translation invariance and exponential decay of the monotone-class law in an exact region containing the silent triples, plus the structural facts (three-body term; no translate consistency) that separate three dimensions from two.
++- V5: not a variant — block 05 and #8039 are two-dimensional and use the 180-degree identity that Q2e shows has no analogue; block 03's coupling is a random-scan coupling with six neighbors (`6c_1`), this is a causal coupling with three predecessors (`3c`); the random-priority note's decay mechanism is finite ancestry, not path counting.
++
++## block 08 — supervisor lens pass, primary, refuting pass and fold (2026-09-15)
++Lens (recorded in `GOAL_block08.md` before the build): four objections answered (the 2D-plus-one-axis objection by Q2e and the exact witness; the "Dobrushin in disguise" objection by the structure `3c` versus `6c_1` with the numbers `81/110` versus `1620/989`; the uniform-in-W spectral claim by deriving it from the per-site discrepancy bound; the infinite-W step by the compactness argument written out). Primary: the note's proofs and the runner (33 checks, 26 mutations). Refuting pass (`CHECKER_block08_findings.md`): five load-bearing numbers recomputed by disjoint routes, all equal; three drafting defects fixed before the census (the cube pass's common denominator — caught by the runner's own assertion; `(2,1,2)` misplaced on the region boundary by misreading `3c = 1/3`; classical names in the status block and theorem sections). Fold: the note's Review record names the settled facts. Author checks only; independent review pending.
++
++## block 08 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
++1 self-containment: PASS — declared inputs: this note, the axioms memo, block 02's and block 05's notes, all on main at `5deabeb698`; nothing pinned from a branch or PR (concurrent PRs cited as context only; the random-priority note named as unlanded and not used). 2 cache/execution: PASS — cache by `execute_and_write_cache` (timeout 900 declared); four declared inputs; own-source float scan (F3). 3 claim-scope honesty: PASS — title, headline, claim_scope, status fields, docstring and fences consistent; no "for every coupling", no limit language beyond the proved statements with their hypotheses; classical names only under Prior art and Imports (F4). 4 N-gate: PASS — N1–N8 in the note (six routes in N1; wall table; hidden-wall scan; per-citation table; N5 lines in the runner's cached stdout; primitive scan; steelman; echo). 5 proof obligations: PASS — the obligation table separates proved / executed / open. 6 runner validity: PASS — every literal is recomputed and compared, fail-closed; 26 mutations each in its family. 7 packet completeness: PASS — note names the runner; runner declares the note; controls and refuting pass in the pack with outputs. 8 links/citation graph: run at the gates (pipeline two passes; manifest staged). 9 note structure: PASS — the lane's section order. 10 propose/ratify: PASS — no retained language; audit required stated. 11 sourced facts/counts: PASS — 48 extensions, 32 orbits, 1296 states, the exact rationals, all recomputed. 12 pre-review gates: vocab, pipeline, changed-evidence, audit_lint, diff --check run before the PR (results in the close-out entry).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
+index 9b1cd3a27f..48c813efc1 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
+@@ -84,3 +84,19 @@ git grep -l -iE "phase transition.*(menu|product rule)|(menu|product rule).*phas
+ | the 26 `coupling` hits (e.g. `BBS_RG_BANACH_CONTRACTION_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-10.md`, `FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md`) | non-matching | "coupling" as a physical coupling constant or RG contraction; no coupling of Markov chains for a menu rule |
+ 
+ Target state after the matched-hit review: **open** — no note on `origin/main` computes the one-site interdependence coefficient of the menu rule, states its uniqueness region, or re-proves the criterion.
++
++## Block 08 (2026-09-15) — prior-art search and routes
++
++Searched commit: `origin/main` = `5deabeb698a27c2c3f68c5df685af2521ef15307` (fetched 2026-09-15 immediately before the search).
++
++Commands and hits:
++- `git grep -n -iE "three-body|three body|K_3\(|K₃|plane transfer|transfer of planes|unilateral|half-space|Kolmogorov extension|projective limit" origin/main -- 'docs/*.md'` → context-only hits (helium three-body, OS half-space algebras, safe-front half-space decoder) and the campaign's own blocks 02/05 (projective limit on the strip and quadrant; "unilateral Markov field" as a reference). No hit states a three-dimensional monotone formation law, a plane transfer, or a three-body normalizer term.
++- `git grep -n -iE "(monotone|sweep|linear extension).*(Z\^3|three.dimension|cube)|…reverse…" origin/main -- 'docs/*.md'` → block 02's N1 route 3 ("a three-recorded-neighbor sweep … ATTEMPTED (witness only; no theorem)") and N7; a cutting-path note's staircase in the n-cube (unrelated); no theorem.
++- `git grep -n -iE "(disagreement|discrepanc|branching).*(formation|order|sweep)|…" origin/main -- 'docs/*.md'` → no formation-law coupling result.
++- `git ls-tree -r --name-only origin/main -- docs/ | grep -iE "FORMATION|MONOTONE|SWEEP|HALF_SPACE|PLANE_"` → blocks 01/02/05; joint-formation and formation-weight notes on other objects; nothing on the 3D monotone law.
++- Ledger rows: only block 05's row names the monotone order.
++- Open PRs read: #8039 (2D plane law; explicitly stops at the plane), #8102 (finite cube census, reversal witness), #8096 (no covariant sequential order); the random-priority note on `physics-loop/toe-campaign-20260907` (random order on `Z^3`, factorial ancestry, covariance bound) — a different construction and mechanism.
++
++Classification: **open after the matched-hit review.**
++
++Routes (mathematical approach families; see `APPROACH_REGISTRY.md`): R1 projective consistency in 3D (closed by the exact `2×2` witness; the no-cancellation lemma explains the failure of the 2D telescoping); R2 the plane-transfer Markov chain (finite cross-sections by positivity; the column law); R3 the causal coupling (monotone paths, three predecessors; the region `3c < 1`; uniform-in-W; the full-plane and half-space law); R4 the Gibbs form with the three-body normalizer (algebraic; irreducibility by a third difference); R5 down-set consistency (any dimension) for the quadrant column. Executed on the supervisor's controls before the contract (`specs/supervisor_control_block08_z3.py`, `_b.py`).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+index e166420207..df197a8491 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+@@ -105,3 +105,25 @@ source_review_correction:
+ # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
+ # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
+ # audit_status: "unset; no audit invoked or verdict applied by this source correction"
++
++# ---------------------------------------------------------------- block 08 launch (2026-09-15) — 24-hour derivation campaign (owner directive: no subagents; proofs over compute; unworked lanes)
++# block: 8
++# branch: physics-loop/admissibility-induced-law-block08-z3-formation-law-20260915 (cut from origin/main 5deabeb698; independent PR against main; blocks 06/07 are open hand-offs, not inputs)
++# goal: "the three-dimensional formation law of the monotone class: one law per box with a three-body Gibbs term; translate inconsistency (the first plane cannot be removed; exact 2x2 witness); the plane-transfer chain and its unique stationary law per cross-section; the causal coupling theorem (sensitivity c; region 3c < 1; uniform-in-W mixing; half-space existence/uniqueness); the record-dynamics corollary at scope"
++# delivery: milestone (one coherent theorem package per PR); runtime budget 24h from 2026-09-15T09:00Z; checkpoint interval 30m
++# seats: supervisor runs all seats (controls first: specs/supervisor_control_block08_z3.py, _b.py); lens and refuting passes recorded as separate passes
++# controls_2026-09-15: "c=max(c1,c2,c3) at (3,1,2) = 27/110 (3c = 81/110); (5,2,4): 10650/63407; (7,3,5): 5782/30885 — all three silent triples inside c < 1/3; the 2x2 plane transfer moves the 2D law on 1296/1296 states (TV 356696849/806187919680 at (3,1,2)); K_3 not pair-additive (2160/2197); 48 linear extensions of the cube share the recorded sets"
++# trace: upstream_support (owner queue item 4 of the block-04 refresh; block 02 N1 route 3; #8093 record-dynamics block)
++# next_exact_action: "finish control B (exact stationary 2x2 plane law); write the note (proofs); runner (exact certificates); refuting pass; census; gates; PR"
++# lock: fable-supervisor, 8h from 2026-09-15T09:00Z
++
++# ---------------------------------------------------------------- block 08 close (2026-09-15)
++# block: 8
++# branch: physics-loop/admissibility-induced-law-block08-z3-formation-law-20260915 (cut from main 5deabeb698; independent PR against main)
++# pr_status: opened for review — PR #8138 (base main); hand-off to the owner review-loop; never merged by the campaign; not a main landing
++# final_certificate: "TOTAL: PASS=33 FAIL=0; 26 mutations, census 26/26 in-family; stdout 5887 chars; note 780 lines; refuting pass 5/5 equal; gates: see HANDOFF.md"
++# seats: "supervisor-run (owner directive: no subagents): controls -> contract with a four-lens pass -> primary (proofs, runner) -> refuting pass with disjoint machinery -> fold; author checks only; independent review pending"
++# review_findings: "the 3D monotone law: one law per box with an irreducible three-body term; no translate consistency (exact 2x2 witness; mechanism lemma); plane chain with a unique stationary law per cross-section, 2D boundary planes; causal coupling: |Cov| <= 4|g||h|(3c)^(ceil(d/2)-1), sweep rate c/(1-2c), Z^3 law unique and translation-invariant for c < 1/3; c = 27/110, 10650/63407, 5782/30885 at the silent triples; record-dynamics reframing negative at scope"
++# strongest_unresolved_proof_obligation: "the plane transfer moves the 2D law at every nonconstant triple (executed at two); uniqueness of the stationary plane law on the full cross-section for c >= 1/3; the distinctness of the eight corner laws on Z^3"
++# next_exact_action: "queue refresh 2026-09-15 (block 08 opening): the corner family and the random-priority comparison; the region boundary; strong coupling"
++# lock: held (campaign continues)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+index 8f432e2cd2..0eb4636fed 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+@@ -63,3 +63,25 @@ reachability_to_target: supports
+ artifact_role: theorem
+ next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
+ ```
++
++# Trace gate — block 08, at launch (2026-09-15)
++```yaml
++trace_class: upstream_support
++target_claim_id: null
++target_blocker_text: "the owner's corrected queue (block-04 refresh, item 4): 'a three-dimensional formation process [is a] different object. Declare the order and initial or boundary law and the exact uniqueness quantifier'; block 02 N1 route 3: 'a three-recorded-neighbor sweep … ATTEMPTED (witness only; no theorem)'; #8093's record-dynamics block: whether long-range record correlations arise from the formation law without a supplied tick"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem
++next_trace_action: "declare the monotone class on Z^3 with its corner and sweep; prove existence/uniqueness/decay in the exact region 3c < 1 (which contains the silent triples); answer the record-dynamics reframing at scope (negative, N-gated); consumers: the campaign's queue, #8093's assembly (an edge labelled 'clause-needed' for long-range fields under product rules), the parked statistical-bridge material (read-only)"
++```
++
++# Trace gate — block 08, at PR opening (2026-09-15)
++```yaml
++trace_class: upstream_support
++target_claim_id: null
++target_blocker_text: "the owner's corrected queue (block-04 refresh, item 4): the three-dimensional formation process as a distinct object with a declared order, initial law and uniqueness quantifier; block 02 N1 route 3; #8093's record-dynamics block"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem
++next_trace_action: "declared and constructed: the monotone class on Z^3 with its corner and sweep; unique translation-invariant law with exponential decay for c < 1/3 (the silent triples inside); the record-dynamics reframing answered negatively at scope (N-gated). Next per the queue: the eight corner classes as one covariant family and their relation to the random-priority law; the region's boundary in (p, q, r). Consumers: the campaign's queue; the derivation campaign's assembly (edge label 'clause-needed' for long-range record fields under positive product rules in the region); the parked statistical-bridge material (read-only)"
++```
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block08_refuter.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block08_refuter.out.txt
+new file mode 100644
+index 0000000000..6aa305ed87
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block08_refuter.out.txt
+@@ -0,0 +1,5 @@
++R1 TV(cube marginal on plane 1, mu_2D) = 356696849/806187919680 == note literal: True
++R2 c_3 by positive parts / integer phi = 27/110 == 27/110: True
++R3 power iteration (40 steps) vs exact solve: max |diff| < 10^-12: True (gap numerator digits 364 denominator digits 427 )
++R4 N(000,111) = 6 (expected 6)
++R5 alternating sum of a pair-additive F = 0 (expected 0)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block08_refuter.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block08_refuter.py
+new file mode 100644
+index 0000000000..a315fabbfe
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block08_refuter.py
+@@ -0,0 +1,85 @@
++"""Refuting pass (supervisor, disjoint machinery), block 08.
++R1: the 2x2 transfer's TV at (3,1,2) by a different route — the cube law's marginal on the plane x1 = 1 (integer-weighted
++    enumeration over 6^8, independent of the fraction transfer code) against the 2D law; the identity Q2a says the marginal is mu P.
++R2: c_3 at (3,1,2) by the integer phi formulation and the TV identity sum of positive parts (not the fraction kernels).
++R3: the stationary 2x2 law by power iteration of the orbit quotient (40 steps) vs the exact solve: row of Q^40 vs pi.
++R4: the influence bound's path count on the cube: N(000,111) = 6 by explicit path enumeration.
++R5: the third difference identity for a genuinely pair-additive F (control): ratio 1.
++"""
++from fractions import Fraction as F
++from itertools import product, permutations
++from math import lcm
++import sys
++sys.path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parents[5] / "scripts"))
++import importlib
++run = importlib.import_module("admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15")
++
++M = 6
++rule = run.Rule((3, 1, 2))
++# R1
++sites = run.box_sites((2, 2, 2)); idx = {s: i for i, s in enumerate(sites)}
++phi, Z2, Z3 = rule.phi, rule.Z2, rule.Z3
++l2 = 1
++for v in Z2.values(): l2 = lcm(l2, v)
++l3 = 1
++for v in Z3.values(): l3 = lcm(l3, v)
++L = M * rule.Z1 ** 3 * l2 ** 3 * l3
++edges = [(idx[y], idx[x]) for x in sites for y in run.preds(x)]
++two = [(idx[run.preds(x)[0]], idx[run.preds(x)[1]]) for x in sites if len(run.preds(x)) == 2]
++three = [(idx[run.preds(x)[0]], idx[run.preds(x)[1]], idx[run.preds(x)[2]]) for x in sites if len(run.preds(x)) == 3]
++plane1 = [idx[(1, 0, 0)], idx[(1, 0, 1)], idx[(1, 1, 0)], idx[(1, 1, 1)]]  # (x2,x3) = 00, 01, 10, 11
++marg = {}
++for v in product(range(M), repeat=8):
++    num = 1
++    for a, b in edges: num *= phi[v[b]][v[a]]
++    den = M * rule.Z1 ** 3
++    for a, b in two: den *= Z2[(v[a], v[b])]
++    for a, b, c in three: den *= Z3[(v[a], v[b], v[c])]
++    key = tuple(v[i] for i in plane1)
++    marg[key] = marg.get(key, 0) + num * (L // den)
++mu = run.mu_2x2(rule)
++tvd = sum(abs(F(marg.get(k, 0), L) - mu[k]) for k in mu) / 2
++print("R1 TV(cube marginal on plane 1, mu_2D) =", tvd, "== note literal:", tvd == F(356696849, 806187919680))
++# R2
++def cond_int(rec):
++    k = len(rec)
++    w = [1] * M
++    for a in rec:
++        w = [w[s] * phi[s][a] for s in range(M)]
++    Z = sum(w)
++    return [F(x, Z) for x in w]
++best = F(0)
++for rec in product(range(M), repeat=3):
++    base = cond_int(rec)
++    for i in range(3):
++        for a2 in range(M):
++            if a2 == rec[i]: continue
++            r2 = list(rec); r2[i] = a2
++            other = cond_int(tuple(r2))
++            d = sum(max(x - y, 0) for x, y in zip(base, other))  # TV as the sum of positive parts
++            best = max(best, d)
++print("R2 c_3 by positive parts / integer phi =", best, "== 27/110:", best == F(27, 110))
++# R3
++states, orbit_of, reps, sizes = run.orbits_2x2()
++n = len(reps)
++Q = [[F(0)] * n for _ in range(n)]
++for o, w in enumerate(reps):
++    for v in states:
++        Q[o][orbit_of[v]] += run.plane_transfer(rule, w, v)
++pi_exact = run.solve_stationary(Q)
++row = [F(1) if j == 0 else F(0) for j in range(n)]
++for _ in range(40):
++    row = [sum(row[k] * Q[k][j] for k in range(n)) for j in range(n)]
++gap = max(abs(a - b) for a, b in zip(row, pi_exact))
++print("R3 power iteration (40 steps) vs exact solve: max |diff| < 10^-12:", gap < F(1, 10**12), "(gap numerator digits", len(str(gap.numerator)), "denominator digits", len(str(gap.denominator)), ")")
++# R4
++def paths(z, x):
++    if z == x: return 1
++    return sum(paths(tuple(z[i] + (1 if j == i else 0) for i in range(3)), x) for j in range(3) if z[j] < x[j])
++print("R4 N(000,111) =", paths((0, 0, 0), (1, 1, 1)), "(expected 6)")
++# R5
++g = {(a, b): F(phi[a][b], 7) for a in range(M) for b in range(M)}
++Fpa = lambda a, b, c: g[(a, b)] + g[(b, c)] + g[(a, c)]
++x, y, z = 0, 2, 4
++alt = Fpa(x,x,x) - Fpa(y,x,x) - Fpa(x,y,x) + Fpa(y,y,x) - Fpa(x,x,z) + Fpa(y,x,z) + Fpa(x,y,z) - Fpa(y,y,z)
++print("R5 alternating sum of a pair-additive F =", alt, "(expected 0)")
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block08_z3.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block08_z3.out.txt
+new file mode 100644
+index 0000000000..93fca68a94
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block08_z3.out.txt
+@@ -0,0 +1,29 @@
++=== (1) one-neighbor sensitivities c_1, c_2, c_3 and the branching numbers
++(3, 1, 2): c1=1/6 (0.16667) c2=30/143 (0.20979) c3=27/110 (0.24545); c=max=27/110 (0.24545); 2c=0.4909 3c=0.7364; c/(1-2c)=0.4821
++      argmax c3: rec=['+x', '+x', '+x'] change slot 0 -> -x
++(5, 2, 4): c1=3/23 (0.13043) c2=65/434 (0.14977) c3=10650/63407 (0.16796); c=max=10650/63407 (0.16796); 2c=0.3359 3c=0.5039; c/(1-2c)=0.2529
++      argmax c3: rec=['+x', '+x', '+x'] change slot 0 -> -x
++(7, 3, 5): c1=2/15 (0.13333) c2=910/5609 (0.16224) c3=5782/30885 (0.18721); c=max=5782/30885 (0.18721); 2c=0.3744 3c=0.5616; c/(1-2c)=0.2993
++      argmax c3: rec=['+x', '+x', '+x'] change slot 0 -> -x
++(2, 1, 2): c1=1/11 (0.09091) c2=1/10 (0.10000) c3=1/9 (0.11111); c=max=1/9 (0.11111); 2c=0.2222 3c=0.3333; c/(1-2c)=0.1429
++      argmax c3: rec=['+x', '-x', '+y'] change slot 0 -> -y
++(3, 2, 2): c1=1/13 (0.07692) c2=39/406 (0.09606) c3=234/2077 (0.11266); c=max=234/2077 (0.11266); 2c=0.2253 3c=0.3380; c/(1-2c)=0.1454
++      argmax c3: rec=['+x', '+x', '+x'] change slot 0 -> -x
++(5, 4, 4): c1=1/25 (0.04000) c2=25/546 (0.04579) c3=500/9701 (0.05154); c=max=500/9701 (0.05154); 2c=0.1031 3c=0.1546; c/(1-2c)=0.0575
++      argmax c3: rec=['+x', '+x', '+x'] change slot 0 -> -x
++(11, 10, 10): c1=1/61 (0.01639) c2=671/38502 (0.01743) c3=73810/3994861 (0.01848); c=max=73810/3994861 (0.01848); 2c=0.0370 3c=0.0554; c/(1-2c)=0.0192
++      argmax c3: rec=['+x', '+x', '+x'] change slot 0 -> -x
++(2, 2, 2): c1=0 (0.00000) c2=0 (0.00000) c3=0 (0.00000); c=max=0 (0.00000); 2c=0.0000 3c=0.0000; c/(1-2c)=0.0000
++
++=== (2) the 2x2 plane transfer against the 2D monotone law
++(3, 1, 2): nu = mu P differs from mu on 1296/1296 states, TV = 356696849/806187919680 (0.000442449); one-site marginals uniform: True; row x3=0 (00,10) K-pair: True; row x3=1 (01,11): False; col x2=0 (00,01): True; col x2=1 (10,11): False; anti-diag (01,10) K^2-pair: False; 5.8s
++(5, 2, 4): nu = mu P differs from mu on 1296/1296 states, TV = 17075751317037722924/75640257098415067067163 (0.00022575); one-site marginals uniform: True; row x3=0 (00,10) K-pair: True; row x3=1 (01,11): False; col x2=0 (00,01): True; col x2=1 (10,11): False; anti-diag (01,10) K^2-pair: False; 6.8s
++(2, 2, 2): nu = mu P differs from mu on 0/1296 states, TV = 0 (0); one-site marginals uniform: True; row x3=0 (00,10) K-pair: True; row x3=1 (01,11): True; col x2=0 (00,01): True; col x2=1 (10,11): True; anti-diag (01,10) K^2-pair: True; 5.6s
++
++=== (3) K_3 is not pair-additive: third difference of log K_3 (as a ratio of products)
++(3, 1, 2): product ratio = 2160/2197 -> pair-additive would give 1; not pair-additive: True
++(5, 2, 4): product ratio = 686196/704969 -> pair-additive would give 1; not pair-additive: True
++(2, 2, 2): product ratio = 1 -> pair-additive would give 1; not pair-additive: False
++
++=== (4) P1 in 3D: linear extensions of the 2x2x2 product order share the recorded sets
++linear extensions of the 2x2x2 product order: 48; distinct recorded-set families: 1; recorded sets = predecessors: True
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block08_z3.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block08_z3.py
+new file mode 100644
+index 0000000000..373781c008
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block08_z3.py
+@@ -0,0 +1,162 @@
++"""Supervisor control, block 08: the three-dimensional monotone formation law.
++Exact arithmetic (fractions) only. Items:
++  (1) K, K^2, K_3 at a triple; the one-neighbor sensitivities c_1, c_2, c_3 (max TV over a single recorded-neighbor change);
++  (2) the 2x2 plane transfer does not preserve the 2D monotone law (TV, count of differing states); side facts;
++  (3) K_3 is not pair-additive (third difference);
++  (4) P1 in 3D: the 48 linear extensions of the 2x2x2 product order share recorded sets;
++  (5) the sweep-direction rate c/(1-2c) at the triples.
++"""
++from fractions import Fraction as F
++from itertools import product, permutations
++import sys, time
++
++AXES = ["+x", "-x", "+y", "-y", "+z", "-z"]
++M = 6
++def orbit(s, t):
++    if s == t: return "p"
++    if s[1] == t[1]: return "q"
++    return "r"
++
++def phi_table(tr):
++    p, q, r = map(F, tr)
++    w = {"p": p, "q": q, "r": r}
++    return [[w[orbit(AXES[s], AXES[t])] for t in range(M)] for s in range(M)]
++
++def kernels(tr):
++    phi = phi_table(tr)
++    Z1 = sum(phi[0])
++    K = [[phi[s][a] / Z1 for s in range(M)] for a in range(M)]  # K[a][s] = phi(s,a)/Z1
++    K2 = [[sum(K[a][s] * K[s][b] for s in range(M)) for b in range(M)] for a in range(M)]
++    K3 = {}
++    for a in range(M):
++        for b in range(M):
++            for c in range(M):
++                K3[(a, b, c)] = sum(K[a][s] * K[b][s] * K[c][s] for s in range(M))
++    return phi, Z1, K, K2, K3
++
++def cond(K, K2, K3, rec):
++    """r(s | recorded values rec) as a list over s."""
++    k = len(rec)
++    if k == 0:
++        return [F(1, 6)] * M
++    if k == 1:
++        a, = rec
++        return [K[a][s] for s in range(M)]
++    if k == 2:
++        a, b = rec
++        return [K[a][s] * K[b][s] / K2[a][b] for s in range(M)]
++    a, b, c = rec
++    return [K[a][s] * K[b][s] * K[c][s] / K3[(a, b, c)] for s in range(M)]
++
++def tv(u, v):
++    return sum(abs(x - y) for x, y in zip(u, v)) / 2
++
++def sensitivities(tr):
++    phi, Z1, K, K2, K3 = kernels(tr)
++    out = {}
++    for k in (1, 2, 3):
++        best, arg = F(0), None
++        for rec in product(range(M), repeat=k):
++            base = cond(K, K2, K3, rec)
++            for i in range(k):
++                for a2 in range(M):
++                    if a2 == rec[i]:
++                        continue
++                    rec2 = list(rec); rec2[i] = a2
++                    d = tv(base, cond(K, K2, K3, tuple(rec2)))
++                    if d > best:
++                        best, arg = d, (rec, i, a2)
++        out[k] = (best, arg)
++    return out
++
++def mu2d_square(K, K2):
++    """The 2D monotone law on the 2x2 square: sites (0,0),(0,1),(1,0),(1,1) as (row, col)."""
++    law = {}
++    for v in product(range(M), repeat=4):
++        v00, v01, v10, v11 = v
++        law[v] = F(1, 6) * K[v00][v01] * K[v00][v10] * K[v01][v11] * K[v10][v11] / K2[v01][v10]
++    return law
++
++def plane_transfer_2x2(K, K2, K3, w, v):
++    """P(w -> v): plane x1=n+1 (v) given plane x1=n (w); plane coordinates (x2, x3): sites 00,01,10,11.
++    v00 records w00; v01 records w01, v00; v10 records w10, v00; v11 records w11, v01, v10."""
++    w00, w01, w10, w11 = w
++    v00, v01, v10, v11 = v
++    return (K[w00][v00]
++            * K[w01][v01] * K[v00][v01] / K2[w01][v00]
++            * K[w10][v10] * K[v00][v10] / K2[w10][v00]
++            * K[w11][v11] * K[v01][v11] * K[v10][v11] / K3[(w11, v01, v10)])
++
++def main():
++    triples = [(3, 1, 2), (5, 2, 4), (7, 3, 5), (2, 1, 2), (3, 2, 2), (5, 4, 4), (11, 10, 10), (2, 2, 2)]
++    print("=== (1) one-neighbor sensitivities c_1, c_2, c_3 and the branching numbers")
++    for tr in triples:
++        s = sensitivities(tr)
++        c = max(s[k][0] for k in (1, 2, 3))
++        rate = c / (1 - 2 * c) if 2 * c < 1 else None
++        print(f"{tr}: c1={s[1][0]} ({float(s[1][0]):.5f}) c2={s[2][0]} ({float(s[2][0]):.5f}) c3={s[3][0]} ({float(s[3][0]):.5f}); "
++              f"c=max={c} ({float(c):.5f}); 2c={float(2*c):.4f} 3c={float(3*c):.4f}; c/(1-2c)={None if rate is None else float(rate):.4f}")
++        if s[3][1] is not None:
++            print(f"      argmax c3: rec={[AXES[i] for i in s[3][1][0]]} change slot {s[3][1][1]} -> {AXES[s[3][1][2]]}")
++    print()
++    print("=== (2) the 2x2 plane transfer against the 2D monotone law")
++    for tr in [(3, 1, 2), (5, 2, 4), (2, 2, 2)]:
++        t0 = time.time()
++        phi, Z1, K, K2, K3 = kernels(tr)
++        mu = mu2d_square(K, K2)
++        states = list(product(range(M), repeat=4))
++        assert sum(mu.values()) == 1
++        # push forward
++        nu = {v: F(0) for v in states}
++        for w in states:
++            mw = mu[w]
++            for v in states:
++                nu[v] += mw * plane_transfer_2x2(K, K2, K3, w, v)
++        assert sum(nu.values()) == 1
++        diff = sum(1 for v in states if nu[v] != mu[v])
++        tvd = sum(abs(nu[v] - mu[v]) for v in states) / 2
++        # side facts on nu: one-site marginals; the row x3=0 pair (v00,v10)?? careful: coordinates (x2,x3): 00,01,10,11.
++        # rows of the plane at fixed x3: x3=0 -> sites 00,10 ; x3=1 -> sites 01,11 ; columns at fixed x2: x2=0 -> 00,01 ; x2=1 -> 10,11
++        def pair_law(law, i, j):
++            out = {}
++            for v in states:
++                out[(v[i], v[j])] = out.get((v[i], v[j]), F(0)) + law[v]
++            return out
++        def is_K_pair(pl):
++            return all(pl[(a, b)] == F(1, 6) * K[a][b] for a in range(M) for b in range(M))
++        one = [sum(law for v, law in nu.items() if v[i] == s) for i in range(4) for s in range(M)]
++        uniform = all(x == F(1, 6) for x in one)
++        print(f"{tr}: nu = mu P differs from mu on {diff}/1296 states, TV = {tvd} ({float(tvd):.6g}); one-site marginals uniform: {uniform}; "
++              f"row x3=0 (00,10) K-pair: {is_K_pair(pair_law(nu,0,2))}; row x3=1 (01,11): {is_K_pair(pair_law(nu,1,3))}; "
++              f"col x2=0 (00,01): {is_K_pair(pair_law(nu,0,1))}; col x2=1 (10,11): {is_K_pair(pair_law(nu,2,3))}; anti-diag (01,10) K^2-pair: "
++              f"{all(pair_law(nu,1,2)[(a,b)] == F(1,6)*K2[a][b] for a in range(M) for b in range(M))}; {time.time()-t0:.1f}s")
++    print()
++    print("=== (3) K_3 is not pair-additive: third difference of log K_3 (as a ratio of products)")
++    for tr in [(3, 1, 2), (5, 2, 4), (2, 2, 2)]:
++        phi, Z1, K, K2, K3 = kernels(tr)
++        x, y, z = 0, 2, 4  # +x, +y, +z
++        num = K3[(x, x, x)] * K3[(y, y, x)] * K3[(y, x, z)] * K3[(x, y, z)]
++        den = K3[(y, x, x)] * K3[(x, y, x)] * K3[(x, x, z)] * K3[(y, y, z)]
++        print(f"{tr}: product ratio = {num/den} -> pair-additive would give 1; not pair-additive: {num != den}")
++    print()
++    print("=== (4) P1 in 3D: linear extensions of the 2x2x2 product order share the recorded sets")
++    sites = list(product(range(2), repeat=3))
++    def preds(x):
++        return [tuple(x[i] - (1 if j == i else 0) for i in range(3)) for j in range(3) if x[j] > 0]
++    def extensions(remaining, chosen):
++        if not remaining:
++            yield tuple(chosen); return
++        for x in list(remaining):
++            if all(p in chosen for p in preds(x)):
++                yield from extensions(remaining - {x}, chosen + [x])
++    exts = list(extensions(set(sites), []))
++    recsets = set()
++    for e in exts:
++        pos = {s: t for t, s in enumerate(e)}
++        rec = tuple(tuple(sorted(y for y in sites if sum(abs(a - b) for a, b in zip(x, y)) == 1 and pos[y] < pos[x])) for x in sites)
++        recsets.add(rec)
++    print(f"linear extensions of the 2x2x2 product order: {len(exts)}; distinct recorded-set families: {len(recsets)}; "
++          f"recorded sets = predecessors: {list(recsets)[0] == tuple(tuple(sorted(preds(x))) for x in sites)}")
++
++if __name__ == "__main__":
++    main()
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block08_z3_b.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block08_z3_b.out.txt
+new file mode 100644
+index 0000000000..aaa628ac52
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block08_z3_b.out.txt
+@@ -0,0 +1,8 @@
++=== (5) exact stationary plane law pi_2 (2x2 cross-section) by orbit reduction
++(3, 1, 2): orbits=32 commutes=True TV(pi_2, mu_2D)=53632625669348618474616527326865874982994562247/117947293693604613914719640058669585736649320217760 (0.000454717); one-site uniform=True; row x3=0 K-pair=True row x3=1 K-pair=False col x2=0 K-pair=True col x2=1 K-pair=False antidiag K^2=False; interior pair P(+x,+x)=3438914796365549968370122815581144569126656989/82480624960562667073230517523545164850803720432 vs (1/6)K=1/24; sector row-TV after n steps vs theta^n: [(1, 0.072029738888754, 0.48214285714285715, True), (2, 0.0020087558090941533, 0.23246173469387754, True), (3, 6.243038250494296e-05, 0.11207976494169096, True), (4, 1.8929871946353307e-06, 0.05403845809688671, True), (5, 5.630329380026612e-08, 0.026054256582427524, True), (6, 1.72734384532708e-09, 0.012561873709384698, True)]; 1.0s
++(5, 2, 4): orbits=32 commutes=True TV(pi_2, mu_2D)=32093744907346260011032654873481814550003657153530420393519265100050046582870107528655964423560837480788153866605959222094021309895034014801747913850163742812/140914696705998461697949938969266534770513681719138372790078454216768932162139990825119090837722640519664519696791789610253755978864020980304528969645070823745093 (0.000227753); one-site uniform=True; row x3=0 K-pair=True row x3=1 K-pair=False col x2=0 K-pair=True col x2=1 K-pair=False antidiag K^2=False; interior pair P(+x,+x)=8356376547239671106929641909527693058793591660173697264718510151389146472715078696951155602958281662546642667929403196249565470610354596592000052110762369044173/230587685518906573687554445586072511442658751904044610020128379627440070810774530441103966825364320850360123140204746634960691601777488876861956495782843166128334 vs (1/6)K=5/138; sector row-TV after n steps vs theta^n: [(1, 0.04405579619467895, 0.2529270667584962, True), (2, 0.0007448809567226643, 0.0639721010990568, True), (3, 1.3863945494415579e-05, 0.01618027588536241, True), (4, 2.5322886638864737e-07, 0.004092429719027944, True), (5, 4.558228348709681e-09, 0.0010350862447490348, True), (6, 8.105788533534577e-11, 0.00026180132772644026, True)]; 1.3s
++
++=== (6)+(7) cube: down-set consistency, one-site uniformity, and the exact influence of v_000 on v_111 against 6 c^3
++(3, 1, 2): down-set x3=0 marginal == mu_2D(2x2): True
++(3, 1, 2): one-site marginals uniform on the cube: True
++(3, 1, 2): max TV of law(v_111 | v_000=s) over s,s' = 273651254/10658734515 (0.025674); bound 6 c^3 = 59049/665500 (0.088729); bound holds: True; 48.5s
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block08_z3_b.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block08_z3_b.py
+new file mode 100644
+index 0000000000..78e391b157
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block08_z3_b.py
+@@ -0,0 +1,160 @@
++"""Supervisor control B, block 08: (5) exact stationary plane law pi_2 of the 2x2 cross-section by orbit reduction;
++(6) exact influence checks against the path-counting bound; (7) down-set consistency on the cube.  Exact arithmetic."""
++from fractions import Fraction as F
++from itertools import product, permutations
++import sys, time
++sys.path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parent))
++from supervisor_control_block08_z3 import AXES, M, kernels, cond, tv, mu2d_square, plane_transfer_2x2, sensitivities
++import sympy as sp
++
++# internal symmetry group: the 48 signed axis permutations acting on the six axes (+x,-x,+y,-y,+z,-z) = indices 0..5
++def group48():
++    axes = [(1,0,0),(-1,0,0),(0,1,0),(0,-1,0),(0,0,1),(0,0,-1)]
++    idx = {a: i for i, a in enumerate(axes)}
++    elems = set()
++    for perm in permutations(range(3)):
++        for signs in product((1, -1), repeat=3):
++            mp = []
++            for a in axes:
++                b = [0, 0, 0]
++                for i in range(3):
++                    b[perm[i]] = signs[i] * a[i]
++                mp.append(idx[tuple(b)])
++            elems.add(tuple(mp))
++    return sorted(elems)
++
++def stationary_2x2(tr):
++    phi, Z1, K, K2, K3 = kernels(tr)
++    states = list(product(range(M), repeat=4))
++    G = group48()
++    def act(g, s, transpose):
++        v = tuple(g[x] for x in s)
++        if transpose:  # plane transpose x2 <-> x3: sites 00,01,10,11 -> 00,10,01,11
++            v = (v[0], v[2], v[1], v[3])
++        return v
++    orbit_of, reps = {}, []
++    for s in states:
++        if s in orbit_of:
++            continue
++        o = len(reps); reps.append(s)
++        stack = [s]; orbit_of[s] = o
++        while stack:
++            u = stack.pop()
++            for g in G:
++                for tr_ in (False, True):
++                    v = act(g, u, tr_)
++                    if v not in orbit_of:
++                        orbit_of[v] = o; stack.append(v)
++    n = len(reps)
++    sizes = [0] * n
++    for s in states: sizes[orbit_of[s]] += 1
++    # quotient Q[o][o'] = sum_{v in o'} P(rep_o -> v); check representative independence on a second member
++    Q = [[F(0)] * n for _ in range(n)]
++    for o, w in enumerate(reps):
++        for v in states:
++            Q[o][orbit_of[v]] += plane_transfer_2x2(K, K2, K3, w, v)
++    # commutation check: another member of each orbit gives the same row (first 3 orbits, all members)
++    ok = True
++    for o in range(min(n, 4)):
++        members = [s for s in states if orbit_of[s] == o]
++        for w in members[1:3]:
++            row = [F(0)] * n
++            for v in states:
++                row[orbit_of[v]] += plane_transfer_2x2(K, K2, K3, w, v)
++            ok = ok and row == Q[o]
++    # stationary law on orbits: pi Q = pi (row vector), sum pi = 1 ; exact solve
++    Qm = sp.Matrix(n, n, lambda i, j: sp.Rational(Q[i][j].numerator, Q[i][j].denominator))
++    A = (Qm.T - sp.eye(n))
++    A = A.row_insert(n, sp.ones(1, n))
++    b = sp.zeros(n + 1, 1); b[n, 0] = 1
++    sol = A.solve_least_squares(b) if False else None
++    # exact: solve the square system with the last equation replaced
++    A2 = (Qm.T - sp.eye(n))
++    A2[n - 1, :] = sp.ones(1, n)
++    b2 = sp.zeros(n, 1); b2[n - 1, 0] = 1
++    pi_orb = A2.LUsolve(b2)
++    pi_orb = [F(int(sp.numer(x)), int(sp.denom(x))) for x in pi_orb]
++    assert all(x > 0 for x in pi_orb) and sum(pi_orb) == 1
++    # lift to states
++    pi = {s: pi_orb[orbit_of[s]] / sizes[orbit_of[s]] for s in states}
++    mu = mu2d_square(K, K2)
++    tvd = sum(abs(pi[s] - mu[s]) for s in states) / 2
++    def pair_law(law, i, j):
++        out = {}
++        for v in states:
++            out[(v[i], v[j])] = out.get((v[i], v[j]), F(0)) + law[v]
++        return out
++    def is_K_pair(pl):
++        return all(pl[(a, b)] == F(1, 6) * K[a][b] for a in range(M) for b in range(M))
++    one_uniform = all(sum(law for v, law in pi.items() if v[i] == s) == F(1, 6) for i in range(4) for s in range(M))
++    p01_11 = pair_law(pi, 1, 3)
++    # exact sector contraction: the exact TV between two rows of Q^n (orbit sector) for n = 1..6, against the theorem's rate theta = c/(1-2c)
++    c = max(sensitivities(tr)[k][0] for k in (1, 2, 3)); theta = c / (1 - 2 * c)
++    Qn = [row[:] for row in Q]
++    mods = []
++    for step in range(1, 7):
++        # TV between the plane-state rows: use rows of two representatives lifted: TV(P^n(w,.), P^n(w',.)) = sum_o |Qn[o1][o] - Qn[o2][o]| / 2 for orbit-constant... (rows of Q^n are orbit-summed laws)
++        d = max(sum(abs(Qn[o1][o] - Qn[o2][o]) for o in range(n)) / 2 for o1 in range(n) for o2 in range(n))
++        mods.append((step, d, theta ** step, d <= theta ** step))
++        Qn = [[sum(Qn[i][k] * Q[k][j] for k in range(n)) for j in range(n)] for i in range(n)]
++    return dict(n_orbits=n, commutes=ok, tv_pi_mu=tvd, one_uniform=one_uniform,
++                row_x3_0_K=is_K_pair(pair_law(pi, 0, 2)), row_x3_1_K=is_K_pair(pair_law(pi, 1, 3)),
++                col_x2_0_K=is_K_pair(pair_law(pi, 0, 1)), col_x2_1_K=is_K_pair(pair_law(pi, 2, 3)),
++                antidiag_K2=all(pair_law(pi, 1, 2)[(a, b)] == F(1, 6) * K2[a][b] for a in range(M) for b in range(M)),
++                interior_pair_pp=p01_11[(0, 0)], K_pair_pp=F(1, 6) * K[0][0],
++                sector_tv=mods)
++
++def cube_law(tr):
++    phi, Z1, K, K2, K3 = kernels(tr)
++    sites = list(product(range(2), repeat=3))
++    idx = {s: i for i, s in enumerate(sites)}
++    preds = {x: [tuple(x[i] - (1 if j == i else 0) for i in range(3)) for j in range(3) if x[j] > 0] for x in sites}
++    law = {}
++    for v in product(range(M), repeat=8):
++        w = F(1)
++        for x in sites:
++            rec = tuple(v[idx[y]] for y in preds[x])
++            w *= cond(K, K2, K3, rec)[v[idx[x]]]
++        law[v] = w
++    return sites, idx, preds, law, K, K2, K3
++
++def main():
++    print("=== (5) exact stationary plane law pi_2 (2x2 cross-section) by orbit reduction")
++    for tr in [(3, 1, 2), (5, 2, 4)]:
++        t0 = time.time()
++        r = stationary_2x2(tr)
++        print(f"{tr}: orbits={r['n_orbits']} commutes={r['commutes']} TV(pi_2, mu_2D)={r['tv_pi_mu']} ({float(r['tv_pi_mu']):.6g}); one-site uniform={r['one_uniform']}; "
++              f"row x3=0 K-pair={r['row_x3_0_K']} row x3=1 K-pair={r['row_x3_1_K']} col x2=0 K-pair={r['col_x2_0_K']} col x2=1 K-pair={r['col_x2_1_K']} antidiag K^2={r['antidiag_K2']}; "
++              f"interior pair P(+x,+x)={r['interior_pair_pp']} vs (1/6)K={r['K_pair_pp']}; sector row-TV after n steps vs theta^n: {[(s, float(d), float(th), ok_) for s, d, th, ok_ in r['sector_tv']]}; {time.time()-t0:.1f}s")
++    print()
++    print("=== (6)+(7) cube: down-set consistency, one-site uniformity, and the exact influence of v_000 on v_111 against 6 c^3")
++    for tr in [(3, 1, 2)]:
++        t0 = time.time()
++        sites, idx, preds, law, K, K2, K3 = cube_law(tr)
++        assert sum(law.values()) == 1
++        # down-set {x3 = 0}: marginal equals the 2D 2x2 law with sites (x1,x2)
++        mu2 = mu2d_square(K, K2)
++        marg = {}
++        ds = [(0,0,0),(0,1,0),(1,0,0),(1,1,0)]  # as (row=x1, col=x2): 00,01,10,11
++        for v, w in law.items():
++            key = tuple(v[idx[s]] for s in ds)
++            marg[key] = marg.get(key, F(0)) + w
++        print(f"{tr}: down-set x3=0 marginal == mu_2D(2x2): {marg == mu2}")
++        one = all(sum(w for v, w in law.items() if v[idx[x]] == s) == F(1, 6) for x in sites for s in range(M))
++        print(f"{tr}: one-site marginals uniform on the cube: {one}")
++        # influence: conditional law of v_111 given v_000 = s, over the box law (all else formed by the rule)
++        c = max(sensitivities(tr)[k][0] for k in (1, 2, 3))
++        best = F(0)
++        for s in range(M):
++            for s2 in range(M):
++                if s2 <= s: continue
++                ls = [F(0)] * M; ls2 = [F(0)] * M
++                for v, w in law.items():
++                    if v[idx[(0,0,0)]] == s: ls[v[idx[(1,1,1)]]] += w
++                    if v[idx[(0,0,0)]] == s2: ls2[v[idx[(1,1,1)]]] += w
++                ls = [x * 6 for x in ls]; ls2 = [x * 6 for x in ls2]
++                best = max(best, tv(ls, ls2))
++        print(f"{tr}: max TV of law(v_111 | v_000=s) over s,s' = {best} ({float(best):.6f}); bound 6 c^3 = {6*c**3} ({float(6*c**3):.6f}); bound holds: {best <= 6*c**3}; {time.time()-t0:.1f}s")
++
++if __name__ == "__main__":
++    main()
+diff --git a/docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md b/docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md
+new file mode 100644
+index 0000000000..1ec0912098
+--- /dev/null
++++ b/docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md
+@@ -0,0 +1,795 @@
++---
++claim_id: admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_bounded_theorem_note_2026-09-15
++claim_type: bounded_theorem
++claim_scope: "On the six Bloch-axis projector menu with the covariant positive product rule of orbit weights (p, q, r), under the records-only reading, for the monotone class of formation orders (the linear extensions of the product order) on boxes of Z^3, on columns Z x C over a finite open cross-section C, and on Z^3: (Q1) every linear extension of a box gives one formation law, invariant under the internal symmetry group and under permutations of the axes, consistent on down-sets, with the explicit product form whose interaction carries a genuine three-body normalizer K_3 on the predecessor triples (not a sum of pair terms at the nonconstant triples; executed); (Q2) unlike two dimensions, the box laws are not consistent under translation: summing out the first plane reproduces the smaller box's law if and only if the plane transfer preserves the two-dimensional law, which fails on the 2x2 cross-section on every one of its 1296 states at (3,1,2) and (5,2,4) (executed; the constant rule is the control), and hence on every larger cross-section; the successor triple of a site is never the predecessor triple of a site (proved), so the two-dimensional telescoping has no analogue; (Q3) for every finite cross-section the sweep of planes is a strictly positive Markov chain with a unique stationary plane law, which defines the column law; its two boundary planes carry the two-dimensional law; the quadrant column exists for every positive rule by down-set consistency; the stationary 2x2 plane law is computed exactly by orbit reduction and differs from the two-dimensional law; (Q4) with c the largest one-neighbor sensitivity of the one-, two- and three-neighbor kernels, the influence of a site on a site at monotone distance d is at most N c^d with N the number of monotone paths, every pair correlation of every box or column law is at most 4 |g| |h| (3c)^(ceil(|x-y|_1/2)-1), the plane chain mixes at rate c/(1-2c) uniformly in the cross-section, and for c < 1/3 the stationary plane law on the full Z^2 cross-section exists, is unique, is translation invariant, and defines a translation-invariant law on Z^3 to which every box law converges as its corner recedes; c is an exact rational at eight triples and the three silent triples (3,1,2), (5,2,4), (7,3,5) lie inside the region (3c = 81/110, 31950/63407, 5782/10295); (Q5) corollary at scope: in the region every record two-point function of the monotone formation law decays at least exponentially, so no long-range kernel arises from it. No order or corner is selected as physical; nothing about the static law beyond citation; nothing for c >= 1/3; exact arithmetic throughout."
++upstream_dependencies:
++  - minimal_axioms
++  - admissibility_rule_infinite_strip_row_sweep_formation_law_versus_static_law_bounded_theorem_note_2026-09-06
++  - admissibility_rule_monotone_order_formation_law_rows_columns_chains_corner_law_bounded_theorem_note_2026-09-07
++runner: scripts/admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15.py
++---
++
++# The three-dimensional formation law of the monotone class: the plane chain, the three-body term, and the coupling region that contains the silent triples
++
++**Date:** 2026-09-15
++**Type:** bounded_theorem
++**Status:** bounded-support (exact; conditional on the named supplied readings; unaudited)
++
++## Result up front
++
++Lay records down on a block of the physical lattice, in any order you like,
++provided each site waits for the three sites behind it — below it, to its
++left, and in front of it — before it forms. As in the plane, every such order
++gives exactly the same pattern law, and that law has one new ingredient: a
++term that couples the three sites behind a site all at once, not just in
++pairs. Unlike the plane, this law remembers where the block began: if you
++strip off the first layer, what remains is not the law of the smaller block.
++So the pattern law of the whole lattice cannot be built by fitting blocks
++together; it is built by letting the first layer recede to infinity. That
++limit exists and is unique whenever a single number computed from the rule —
++the most that changing one earlier neighbor can change a site's odds — is
++below one third. At the three rule settings where all our earlier tests of
++the static pattern law were silent, that number is below one third, so there
++the formation law is one object with correlations that die off exponentially
++in every direction. Nothing here says which order, or which corner, is the
++physical one, and nothing is said about the static law itself.
++
++Exactly: for the covariant positive product rule with orbit weights `(p, q, r)`
++on the six-axis menu, with `K(a, s) = φ(s, a)/Z_1` and
++`K_k(a_1, …, a_k) = Σ_s Π_i K(a_i, s)`, the monotone-class law of a box
++`B ⊂ Z^3` is `μ_B(v) = (1/6) Π_{y ∈ A_x} K(v_y, v_x) / Π_{|A_x| ≥ 2} K_{|A_x|}(v_{A_x})`
++with `A_x = {x − e_i : x_i ≥ 1}` the predecessor set (Q1); `log K_3` is not a
++sum of pair terms (the third difference `2160/2197 ≠ 1` at `(3, 1, 2)`). The
++first plane cannot be summed out: on the `2×2` cross-section the plane
++transfer moves the two-dimensional law on all `1296` states, by total
++variation `356696849/806187919680` at `(3, 1, 2)` (Q2). Every finite
++cross-section has a unique stationary plane law (Q3); the causal coupling
++gives `|Cov(g(v_x), h(v_y))| ≤ 4 ‖g‖ ‖h‖ (3c)^{⌈|x − y|_1/2⌉ − 1}` and
++mixing at rate `c/(1 − 2c)` (Q4), with
++`c = 27/110, 10650/63407, 5782/30885` at `(3, 1, 2), (5, 2, 4), (7, 3, 5)`.
++Executed with exact arithmetic: 33 checks, 26 mutations.
++
++## Machine status and trace
++
++```yaml
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: upstream_support
++target_claim_id: null
++target_blocker_text: "the owner's corrected queue (block-04 refresh, item 4): 'a three-dimensional formation process [is a] different object. Declare the order and initial or boundary law and the exact uniqueness quantifier.'; block 02's N1 route 3: 'a three-recorded-neighbor sweep … ATTEMPTED (witness only; no theorem)'; the derivation campaign's record-dynamics block (#8093): whether long-range record correlations arise from the formation law without a supplied tick; the owner's sequencing gate (2026-08-26): what the Admissibility rule induces on the infinite lattice is unidentified"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem
++next_trace_action: "the monotone class on Z^3 is now a declared, constructed object with an exact coupling region; next: the eight corner classes as one covariant family and their relation to the random-priority law; the exact region boundary in (p, q, r); consumers: the campaign's queue, the derivation campaign's assembly (an edge 'clause-needed' for long-range record fields under positive product rules), the parked statistical-bridge material (read-only)"
++conditional_surface_status: "exact on the declared menu and triples; Q1 is proved for every box and every positive symmetric rule; Q2 is a proved reduction with an executed refutation at the declared nonconstant triples and a proved lemma on the mechanism; Q3 is proved for every finite cross-section and every positive rule, with the 2x2 stationary law executed; Q4 is proved for every box and column, and on Z^2 x Z / Z^3 under c < 1/3; the region membership of eight triples is executed; conditional on the records-only reading, positivity, the six-axis menu and the monotone class as supplied conditions; no static-law statement; no order selected as physical"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++claim_type_reason: "Q1 is elementary (recorded sets; regrouping of normalizers) with exact witnesses; Q2 is an exact reduction plus a finite refutation (1296 states) plus a combinatorial lemma; Q3 is the elementary contraction of a strictly positive finite chain plus down-set consistency and the two-dimensional translate consistency re-proved from the parent's 180-degree identity; Q4 is a coupling argument along monotone paths with an explicit path count, a level-chain conditioning argument for the covariance bound, and compactness plus the same coupling for the infinite cross-section; every number printed is an exact rational; nothing infinite-volume is claimed outside the region except existence of the quadrant column"
++```
++
++## Premises and declared objects
++
++**Axioms used (verbatim, the only framework premises).** From
++[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md): "There is one
++fixed nearest-neighbor admissibility rule, covariant under lattice translations
++and proper cubic rotations." — "For each site, the probability distribution over
++the possibilities is determined by, and varies with, the nearest-neighbor
++conditions." — "No possibility is privileged. Possibilities are distinguished by
++the supplied algebraic structure alone." — "Records form." — "When present, a
++record locks exactly one admissible local possibility. A site never carries more
++than one record; records are permanent." — "Only records are readable."
++
++**Readings carried from blocks 01–05, named, nothing new adopted.** The
++records-only reading (an unrecorded neighbor contributes no factor and is not a
++condition); positivity of the rule; the six-axis menu
++`M = {P(±e_1), P(±e_2), P(±e_3)}` with the orbit weights `φ(s, t) = p` (same
++axis and sign), `q` (same axis, opposite sign), `r` (orthogonal), `p, q, r > 0`;
++the variation clause restricted to the menu (`p, q, r` not all equal) names the
++nonconstant case, and the constant rule `(2, 2, 2)` is a control. The formation
++law of an order `σ` on a finite window: the product of the one-site conditionals
++`r(s | recorded neighbors)` (block 01's definition). The monotone class: the
++linear extensions of the product partial order on a box (block 05's class, one
++dimension up). No order and no corner is selected as physical; the axioms supply
++no order.
++
++**Notation.** `Z_1 = p + q + 4r`; `K(a, s) = φ(s, a)/Z_1`, a symmetric doubly
++stochastic `6 × 6` matrix; for `k ≥ 1`,
++`K_k(a_1, …, a_k) = Σ_s Π_{i=1}^k K(a_i, s)`, so `K_1 ≡ 1`, `K_2(a, b) = (K^2)(a, b)`
++(block 02's E1), and `K_3` is a symmetric three-index array. The `k`-neighbor
++kernel is `r(s | a_1, …, a_k) = Π_i K(a_i, s)/K_k(a)` for `k ≥ 1` — the product
++rule's conditional, since `Z_k(a) = Σ_s Π φ(s, a_i) = Z_1^k K_k(a)` — and
++`r(s | ∅) = 1/6`, the uniform law on the menu (forced by the internal covariance
++below on a transitive menu; block 01 declared it). A box is
++`B = {0, …, n_1} × {0, …, n_2} × {0, …, n_3}` with the product order `≤`; the
++level `|x|_1 = x_1 + x_2 + x_3`; the predecessor set `A_x = {x − e_i : x_i ≥ 1}`
++(`|A_x| ∈ {0, 1, 2, 3}`); the successor set `S_x = {x + e_i} ∩ B`. A down-set is
++`D ⊆ B` with `A_x ⊆ D` for every `x ∈ D`. For `z ≤ x`, `N(z, x)` is the number of
++monotone lattice paths from `z` to `x`, the multinomial
++`|x − z|_1! / Π_i (x_i − z_i)!`; `Σ_{z: |x − z|_1 = d} N(z, x) ≤ 3^d`.
++
++**The internal symmetry group.** The 48 signed permutations of the axes act on
++`M`; `φ` is invariant, so every law built from `φ` is invariant under the
++simultaneous action on all site values; the group is transitive on `M` and on
++each of the three ordered-pair types (same, opposite, orthogonal). The proper
++cubic rotations are 24 of the 48; the axioms' covariance clause is under those;
++the extra inversion is a symmetry of the declared rule, not an axiom statement.
++
++**The plane transfer and the two-dimensional law.** For a cross-section
++`C = {0, …, n_2} × {0, …, n_3}` and plane states `w, v ∈ M^C`,
++`P_C(w, v) = Π_{y ∈ C} r(v_y | w_y, v_{y − e_2}, v_{y − e_3})` (absent
++predecessors omitted); `μ_C(v) = Π_{y ∈ C} r(v_y | v_{y − e_2}, v_{y − e_3})` is
++the two-dimensional monotone law of the rectangle `C` (block 05's `μ_P` in the
++coordinates `(x_2, x_3)`). Then `μ_B(v) = μ_C(v^{(0)}) Π_{t=1}^{n_1} P_C(v^{(t−1)}, v^{(t)})`
++for `B = {0, …, n_1} × C`, `v^{(t)}` the plane `x_1 = t`.
++
++**The sensitivities.** `c_k = max TV(r(· | A), r(· | A'))` over `k`-tuples
++`A, A' ∈ M^k` differing in exactly one entry (`k = 1, 2, 3`); `c = max(c_1, c_2, c_3)`;
++`θ = c/(1 − 2c)` when `2c < 1`. Exact at eight triples (runner E1):
++
++| triple | `c_1` | `c_2` | `c_3` | `c` | `3c` | `θ` |
++|---|---|---|---|---|---|---|
++| `(3, 1, 2)` | `1/6` | `30/143` | `27/110` | `27/110` | `81/110` | `27/56` |
++| `(5, 2, 4)` | `3/23` | `65/434` | `10650/63407` | `10650/63407` | `31950/63407` | `10650/42107` |
++| `(7, 3, 5)` | `2/15` | `910/5609` | `5782/30885` | `5782/30885` | `5782/10295` | `5782/19321` |
++| `(2, 1, 2)` | `1/11` | `1/10` | `1/9` | `1/9` | `1/3` | `1/7` |
++| `(3, 2, 2)` | `1/13` | `39/406` | `234/2077` | `234/2077` | `702/2077` | `234/1609` |
++| `(5, 4, 4)` | `1/25` | `25/546` | `500/9701` | `500/9701` | `1500/9701` | `500/8701` |
++| `(11, 10, 10)` | `1/61` | `671/38502` | `73810/3994861` | `73810/3994861` | `221430/3994861` | `73810/3847241` |
++| `(2, 2, 2)` | `0` | `0` | `0` | `0` | `0` | `0` |
++
++All eight triples lie inside the region `3c < 1`; at `(2, 1, 2)`, `3c = 1/3`. The
++three silent triples of blocks 03–04 lie inside with room to spare
++(`3c = 81/110, 31950/63407, 5782/10295`). The finite-box bounds of Q4(a), (b)
++hold at every triple; the infinite-cross-section statements need the strict
++inequality, which the region names.
++
++## Prior art and what is new
++
++Block 02 (on main) proved that the row sweep on a strip preserves the chain law
++(`p_0 P = p_0`, E3) and built the strip's formation law as a projective limit;
++its N1 route 3 records a three-recorded-neighbor sweep as attempted by witness
++only. Block 05 (on main) gave the monotone class on rectangles: one law (P1),
++rows and columns as chains (P4), the corner law (P5), the opposite-corner
++identity by the edge/plaquette product (P7(a)). The plane-law note
++[`ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md`](ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md)
++(PR #8039; landed on main on 2026-09-15 after this block's branch was cut;
++unaudited; not an input here) extends the rectangle laws to the plane by
++projective consistency using P7(a) and identifies the pair potential; it states
++that it "does not construct an infinite physical formation schedule". The concurrent PR #8102
++(open; not an input) gives the recorded-set multiset key and finds on the
++`2×2×2` cube that the reversed order's law differs from the row-major one — a
++finite fact consistent with Q2 here. The owner's random-priority formation law
++on `Z^3` (`docs/ADMISSIBILITY_RANDOM_PRIORITY_FORMATION_NOTE_2026-09-07.md`, on
++the branch `physics-loop/toe-campaign-20260907`, unlanded; not an input) is a
++covariant random-order construction whose decay comes from finite ancestry; it
++is a different object with a different mechanism. The classical references —
++unilateral Markov fields and Markov meshes, probabilistic cellular automata and
++their high-noise uniqueness by coupling, the Doeblin contraction for positive
++finite chains, the Kolmogorov extension, the Krylov–Bogolyubov existence of
++invariant laws for Feller kernels on compact spaces — are named here and under
++Imports; every one is re-proved at the scope used, and no value or theorem is
++imported as authority.
++
++New here: the three-dimensional monotone class as one constructed object — the
++three-body normalizer and its irreducibility (Q1), the failure of translate
++consistency reduced to one exact identity and refuted (Q2), the plane chain with
++its unique stationary law per cross-section and the two-dimensional boundary
++planes (Q3), and the causal coupling theorem with its exact region, uniform in
++the cross-section, giving existence, uniqueness, translation invariance and
++exponential decay on `Z^3` for `c < 1/3` (Q4) — a region that contains the
++silent triples, where the static law's uniqueness is undecided by every
++criterion tried (blocks 03–04, both on main).
++
++## Exact target and obligation graph
++
++**Target.** For the declared rule on the six-axis menu: (Q1) the box law of the
++monotone class and its structure; (Q2) the failure of translation consistency;
++(Q3) the plane chain and the column law; (Q4) the coupling theorem, the region,
++and the `Z^3` law; (Q5) the decay of record two-point functions at scope.
++
++| obligation | status here |
++|---|---|
++| one law per box; internal and axis symmetry; down-set consistency (Q1a–d) | proved for every box and every positive symmetric rule; executed on the cube (B1–B4) |
++| the product form with the three-body normalizer (Q1e); irreducibility (Q1f) | proved (regrouping); executed on the cube and small boxes (B5); third difference executed (B6) |
++| the first plane cannot be summed out (Q2) | reduction proved (a, c); refuted at `(3, 1, 2)`, `(5, 2, 4)` on all 1296 states (C1–C3); the mechanism lemma proved (e); a proof at every nonconstant triple is not given |
++| the two-dimensional translate consistency (Q2b) | re-proved from P7(a) and down-set consistency; executed on the `2×3` rectangle (C4) |
++| the plane chain: positivity, contraction, unique stationary law (Q3a–b) | proved for every finite cross-section; executed at `2×2` (D1–D3) |
++| boundary planes carry the two-dimensional law (Q3c); the quadrant column (Q3d) | proved; executed at `2×2` (D4) |
++| the exact stationary `2×2` plane law (Q3e) | executed by orbit reduction: 32 orbits; TV from `μ_C` and the interior pair (D2, D5) |
++| the influence bound and the covariance bound (Q4a–b) | proved for every box and column; executed against the exact cube influence and the `2×3` rectangle (E2–E4) |
++| the sweep rate and the uniform spectral bound (Q4c) | proved; the sector contraction executed at `2×2` (E5) |
++| the full cross-section and the `Z^3` law for `c < 1/3` (Q4d–e) | proved; the region membership executed at eight triples (E1) |
++| the decay of two-point functions (Q5) | corollary; N-gated; executed on the cube's pairs (E6) |
++| the static law of `Z^3` at the silent triples; `c ≥ 1/3`; a physical order or corner; the eight corner laws' distinctness on `Z^3` | open; not this note |
++
++The strongest missing lemma is a proof that the plane transfer moves the
++two-dimensional law at every nonconstant triple (here: two executed triples and
++the mechanism lemma); it is not used by Q3–Q5, which hold with or without it.
++
++## Theorem Q1 — the box law of the monotone class
++
++**(a) One law.** Every linear extension `σ` of the product order on `B` gives
++the same formation law `μ_B(v) = Π_{x ∈ B} r(v_x | v_{A_x})`, for every
++nearest-neighbor rule.
++
++*Proof.* The neighbors of `x` are `x ± e_i`; those with `x − e_i` are below `x`
++in the product order, hence before it in every linear extension, and those with
++`x + e_i` are above it, hence after it. So the recorded set of `x` is `A_x` for
++every `σ`. ∎ Executed: the `48` linear extensions of the `2×2×2` product order
++share the recorded-set family, which equals the predecessor family (B1).
++
++**(b) Internal covariance.** `μ_B(gv) = μ_B(v)` for every `g` in the internal
++group; hence every one-site marginal is uniform on `M`, and every pair marginal
++`P(v_x = a, v_y = b)` depends on `(a, b)` only through its type (same, opposite,
++orthogonal).
++
++*Proof.* `φ(gs, gt) = φ(s, t)`, so every kernel satisfies
++`r(gs | gA) = r(s | A)` and the product is invariant. The group is transitive on
++`M` and on each ordered-pair type. ∎ Executed on the cube: all one-site
++marginals equal `1/6`; every pair marginal is constant on each type (B2).
++
++**(c) Axis symmetry.** For a permutation `τ` of the coordinate axes,
++`μ_{τB}(τv) = μ_B(v)`, where `τ` acts on sites and `τB` is the permuted box.
++
++*Proof.* `τ` maps predecessor sets to predecessor sets, and each kernel
++`r(s | A)` is symmetric in the recorded values. ∎ (Block 05's P3, one dimension
++up.) Executed: the cube law is invariant under the six axis permutations (B3).
++
++**(d) Down-set consistency.** For every down-set `D ⊆ B`, the marginal of `μ_B`
++on `D` is `μ_D(v_D) = Π_{x ∈ D} r(v_x | v_{A_x})`, the monotone law of `D`
++itself.
++
++*Proof.* For `x ∈ D`, `A_x ⊆ D`, so the factors of `D`'s sites are exactly
++`μ_D`. Sum out the sites of `B ∖ D` in the reverse of a linear extension: the
++site summed is maximal among the remaining ones, so it occurs in no remaining
++factor except its own kernel, which sums to one. ∎ Executed: the cube's
++marginal on the plane `x_3 = 0` is the `2×2` two-dimensional law, and its
++marginals on the corner lines are the `K`-chain with the uniform start (B4).
++In particular the three coordinate planes of a box carry the two-dimensional
++monotone laws of their rectangles, and the three coordinate lines carry the
++`K`-chain.
++
++**(e) The product form.**
++`μ_B(v) = (1/6) Π_{x ∈ B} Π_{y ∈ A_x} K(v_y, v_x) / Π_{x : |A_x| ≥ 2} K_{|A_x|}(v_{A_x})`.
++Every nearest-neighbor edge of `B` occurs exactly once in the numerator (as
++`y ∈ A_x` for its upper endpoint `x`); the denominator carries `K_2 = K^2` on
++the two-predecessor sites (the three coordinate planes, block 05's anti-diagonal
++denominators) and `K_3` on every site with three predecessors.
++
++*Proof.* `Z_k(a) = Σ_s Π_i φ(s, a_i) = Z_1^k K_k(a)`, so
++`r(s | a) = Π_i φ(s, a_i)/Z_k(a) = Π_i K(a_i, s)/K_k(a)`, and `r(s | ∅) = 1/6`
++at the origin. Multiply over `x`. ∎ Executed: the product form agrees with the
++product of conditionals on every configuration of the `1×2×2` and `2×2×1`
++boxes and on a fixed sample of `2000` configurations of the cube (B5).
++
++**(f) The three-body normalizer is irreducible.** At a nonconstant triple
++`log K_3` is not a sum of pair functions: for
++`(a_0, a_1; b_0, b_1; c_0, c_1) = (+x, +y; +x, +y; +x, +z)`,
++`K_3(a_0,b_0,c_0) K_3(a_1,b_1,c_0) K_3(a_1,b_0,c_1) K_3(a_0,b_1,c_1) / [K_3(a_1,b_0,c_0) K_3(a_0,b_1,c_0) K_3(a_0,b_0,c_1) K_3(a_1,b_1,c_1)]`
++equals `2160/2197` at `(3, 1, 2)` and `686196/704969` at `(5, 2, 4)`, while any
++`F(a, b, c) = g(a, b) + g(b, c) + g(a, c)` has vanishing alternating sum over
++the eight corners of the cube of choices, so the ratio would be `1`. At the
++constant rule the ratio is `1` (B6). Hence the interaction of `μ_B` in the
++bulk is a nearest-neighbor pair term `−log K` plus a genuine three-body term
++`+log K_3` on the predecessor triples `{x − e_1, x − e_2, x − e_3}`, which are
++pairwise at face-diagonal distance; the two-body diagonal terms of the plane
++(block 05; the plane-law note, #8039) survive only on the three coordinate
++planes of the box. ∎
++
++## Theorem Q2 — the first plane cannot be summed out
++
++**(a) The reduction.** Let `B = {0, …, n_1} × C` with `n_1 ≥ 1` and let
++`B^+ = {1, …, n_1} × C` be the box without its first plane, with its own
++monotone law `μ_{B^+}` (the same law as `μ_{\{0,…,n_1−1\} × C}` translated by
++`e_1`). Then the marginal of `μ_B` on `B^+` equals `μ_{B^+}` for every
++configuration if and only if `μ_C P_C = μ_C`.
++
++*Proof.* `μ_B(v) = μ_C(v^{(0)}) Π_{t ≥ 1} P_C(v^{(t−1)}, v^{(t)})`; summing
++`v^{(0)}` gives `(μ_C P_C)(v^{(1)}) Π_{t ≥ 2} P_C(v^{(t−1)}, v^{(t)})`, while
++`μ_{B^+}(v) = μ_C(v^{(1)}) Π_{t ≥ 2} P_C(v^{(t−1)}, v^{(t)})` because the sites of
++plane `1` have no predecessor in `B^+` outside their plane. The common factor
++is strictly positive, so the two agree for all `v` iff `(μ_C P_C)(u) = μ_C(u)`
++for all `u`. ∎
++
++**(b) Two dimensions: translate consistency holds (re-proved).** For a
++rectangle `R` and a sub-rectangle `R' ⊆ R`, the marginal of `μ_R` on `R'` is
++the monotone law of `R'`.
++
++*Proof.* Removing last rows and columns is down-set consistency (Q1d, which
++holds in every dimension). To remove the first row: by block 05's P7(a),
++`μ_R` equals the law of the bottom-right class of `R` (the 180-degree
++identity); in that class the first row consists of last-formed sites, so
++summing it out is down-set consistency for that class and leaves the
++bottom-right law of the smaller rectangle, which by P7(a) again is its
++top-left monotone law. The first column is the same with left-right
++reflection. ∎ This is the projective-consistency argument of the plane-law note
++(#8039, landed on main 2026-09-15), re-proved here; the one-row case is exactly
++block 02's `p_0 P = p_0` (E3). Executed: the marginals of the `2×3` law on its four `2×2`
++sub-rectangles and on its translated `1×3` and `2×2` sub-rectangles are the
++sub-rectangle laws (C4).
++
++**(c) Three dimensions: one cross-section refutes all larger ones.** If
++`μ_{C_2} P_{C_2} ≠ μ_{C_2}` for the `2×2` corner square `C_2`, then
++`μ_C P_C ≠ μ_C` for every cross-section `C ⊇ C_2` (with the same corner).
++
++*Proof.* `C_2` is a down-set of `C`, so the marginal of `μ_C` on `C_2` is
++`μ_{C_2}` (Q1d). The sites of `C_2` in the new plane record only sites of
++`C_2` in both planes, so the marginal of `μ_C P_C` on `C_2` equals
++`μ_{C_2} P_{C_2}` (sum the other sites of the new plane in reverse order —
++leaves — and then the other sites of the old plane, which enter only through
++`μ_C`). If `μ_C P_C = μ_C`, taking marginals on `C_2` gives
++`μ_{C_2} P_{C_2} = μ_{C_2}`. ∎
++
++**(d) The refutation, exact.** At `(3, 1, 2)`, `μ_{C_2} P_{C_2}` differs from
++`μ_{C_2}` on every one of the `1296` plane states, with total variation
++`356696849/806187919680`; at `(5, 2, 4)` on every state, with total variation
++`17075751317037722924/75640257098415067067163`; at the constant rule
++`(2, 2, 2)` the two coincide (the uniform law is invariant). Under
++`μ_{C_2} P_{C_2}` the one-site marginals are still uniform and the two pairs
++adjacent to the corner, `((0,0),(1,0))` and `((0,0),(0,1))`, are still
++`(1/6) K`-pairs (they lie on the coordinate lines, Q1d), while the pairs
++`((0,1),(1,1))` and `((1,0),(1,1))` are no longer `(1/6) K`-pairs and the
++anti-diagonal pair `((0,1),(1,0))` is no longer a `(1/6) K^2`-pair (C1–C3).
++Hence, by (a) and (c): for every box `B = {0, …, n_1} × C` with
++`n_1 ≥ 1` and `C ⊇ C_2`, at these two triples, the marginal of `μ_B` on the
++box without its first plane is not the smaller box's monotone law; by Q1c the
++same holds for the first plane in any of the three directions. The family of
++monotone box laws is therefore not consistent under translation, and no law on
++`Z^3` has every box marginal equal to `μ_B`: the infinite-volume object must
++be a limit, which Q3–Q4 construct.
++
++**(e) Why the two-dimensional proof has no analogue (the mechanism lemma).** In
++E3's telescoping, summing the previous row's sites in order produces at each
++step the two-step kernel `K^2` on the two successors of the summed site,
++which is the normalizer of the site whose predecessor pair is exactly that
++pair; the cancellation drives the induction. In three dimensions the sum over
++a site `z` of a plane produces `K_3` on its three successors
++`z + e_1, z + e_2, z + e_3`, and no site of `Z^3` has this triple as its
++predecessor set: if `{z + e_i} = {x − e_i}` then `x = z + e_1 + e_{π(1)} =
++z + e_2 + e_{π(2)}` for a permutation `π`, forcing `π(1) = 2`, `π(2) = 1`, and
++then `x = z + e_3 + e_{π(3)} = z + 2e_3 ≠ z + e_1 + e_2`. ∎ The successor
++triple of a site and the predecessor triple of a site are the two tetrahedral
++sublattices of a unit cube's corners; in two dimensions the two successors of a
++plaquette's first corner are the two predecessors of its last corner, and that
++coincidence is what E3 and P7(a) use. This lemma explains the failure of the
++mechanism; the refutation itself is (d).
++
++## Theorem Q3 — the plane chain and the column law
++
++**(a) Contraction.** For every finite cross-section `C`, `P_C` is a stochastic
++matrix on `M^C` with every entry at least `δ_C = min_{w,v} P_C(w, v) > 0`.
++Consequently for any two laws `ν, ν'` on `M^C`,
++`‖ν P_C − ν' P_C‖_TV ≤ (1 − 6^{|C|} δ_C) ‖ν − ν'‖_TV`, there is exactly one
++stationary law `π_C`, and `‖ν P_C^n − π_C‖_TV ≤ (1 − 6^{|C|} δ_C)^n`.
++
++*Proof.* Positivity of `φ` makes every kernel value positive, hence every entry
++of `P_C`. Write `P_C(w, v) = ε u(v) + (1 − ε) R(w, v)` with `u` uniform,
++`ε = 6^{|C|} δ_C ∈ (0, 1]` and `R` stochastic; then
++`ν P − ν' P = (1 − ε)(ν − ν') R` and `‖(ν − ν') R‖_TV ≤ ‖ν − ν'‖_TV`. The map
++`ν ↦ ν P_C` is a strict contraction of the complete metric space of laws on
++`M^C` under total variation, so it has exactly one fixed point, reached
++geometrically from every start. ∎ Executed at `C_2`: the minimal entry of
++`P_{C_2}` is positive, every row sums to one (D1).
++
++**(b) The column law.** The stationary two-sided chain `(v^{(t)})_{t ∈ Z}` with
++`v^{(t)} ~ π_C` and transitions `P_C` is a law on `M^{Z × C}` — *the monotone
++formation law of the column `Z × C`*. It is the limit of the box laws
++`μ_{\{0,…,n\} × C}` as the first plane recedes: the plane-`t` marginals of the box
++law are `μ_C P_C^t → π_C`, and the joint law of planes `t − k, …, t` converges
++to the stationary `k`-step joint law (a). Any limit point of box laws with the
++first plane receding is this chain.
++
++**(c) The boundary planes carry the two-dimensional law.** Under the column
++law, the restriction to the boundary plane `Z × {0, …, n_2} × {0}` is the
++two-dimensional monotone law of the two-sided strip `Z × {0, …, n_2}` (every
++finite window of it carries the rectangle law of that window); likewise for
++`x_2 = 0`. In particular the row `x_3 = 0` and the row `x_2 = 0` of every plane
++are `K`-chains, and the line `x_2 = x_3 = 0` is a `K`-chain.
++
++*Proof.* The box law's marginal on its plane `x_3 = 0` is the rectangle law of
++`{0, …, n} × {0, …, n_2}` (Q1d); restricted to the planes `t − k, …, t` it is the
++marginal of that rectangle law on its last `k + 1` columns, which is the
++`(k+1) × (n_2+1)` rectangle law by (Q2b), independently of `t` and `n`. The
++box law converges to the column law on every such window (b); the marginals
++agree at every finite stage, hence in the limit. Rows and lines: block 05's P4
++and Q1d. ∎ Executed at `C_2`: under `π_{C_2}` the pairs on the coordinate
++lines are `(1/6) K`-pairs and the one-site marginals are uniform (D4).
++
++**(d) Cross-section consistency and the quadrant column.** If `C ⊆ C'` are
++cross-sections with the same corner (`C` a down-set of `C'`), the column law of
++`C'` restricted to `Z × C` is the column law of `C`. Hence the column laws over
++the quadrant cross-sections `{0, …, n_2} × {0, …, n_3}` are consistent, and the
++extension theorem for consistent families on a countable product (cited under
++Imports) gives one law on `Z × [0, ∞)^2` — *the quadrant column* —
++for every positive rule, without any coupling condition. It is invariant under
++`x_1`-translations and carries the two-dimensional law on its two boundary
++planes.
++
++*Proof.* Under the `C'`-chain the restriction of each plane to `C` evolves by
++`P_C` (the sites of `C` record only sites of `C`, in both planes) and is
++stationary, so by uniqueness (a) its one-plane law is `π_C` and the restricted
++process is the `C`-chain. Consistency over the increasing family of
++cross-sections gives the extension on the countable product. ∎
++
++**(e) The stationary `2×2` plane law, exactly.** `π_{C_2}` is computed exactly
++from the orbit quotient of `P_{C_2}` under the internal group and the plane
++transpose (32 orbits of the `1296` states; the quotient's rows are
++independent of the representative, D2). It differs from `μ_{C_2}` by total
++variation `0.000454716…` (an exact rational with 51-digit numerator and denominator, printed under `--exact`) at `(3, 1, 2)` and `0.000227752…` at `(5, 2, 4)`; its one-site
++marginals are uniform; the coordinate-line pairs are `(1/6) K`-pairs; the
++interior pair `((0,1),(1,1))` is not: its same-axis-and-sign entry is
++`0.0416936074…` against `(1/6) K(+x, +x) = `0.0416666…`` at `(3, 1, 2)` (D5). So the
++bulk plane of the three-dimensional formation law is not the two-dimensional
++monotone law: it keeps that law on its two boundary lines and loses it one step
++in.
++
++## Theorem Q4 — the causal coupling theorem and the region
++
++**Setting.** A monotone coupling of two copies `V, V'` of a box law with forced
++values on a set `S` of source sites: run a linear extension; at each site
++`x ∉ S` draw `(V_x, V'_x)` from a maximal coupling of `r(· | V_{A_x})` and
++`r(· | V'_{A_x})`, diagonal when the recorded tuples coincide. The discrepancy
++set is `D = {x : V_x ≠ V'_x} ⊇ S`. One-entry changes chain the two tuples, so
++`TV(r(· | a), r(· | a')) ≤ c_{|A_x|} · #{i : a_i ≠ a'_i}` and
++`P(x ∈ D | past) ≤ c Σ_{z ∈ A_x} 1_{z ∈ D}`.
++
++**(a) The influence bound.** For `m(x) = P(x ∈ D)`:
++`m(x) ≤ Σ_{z ∈ S} N(z, x) c^{|x − z|_1}` for every `x ∉ S`. In particular, for a
++single source `x` and a site `y ≥ x`, the conditional laws of `V_y` given the
++configuration of the down-set `B ∖ {y' ≥ x}` and `V_x = s`, respectively
++`V_x = s'`, differ in total variation by at most `N(x, y) c^{|y − x|_1} ≤ (3c)^{|y − x|_1}`,
++and for a function `g` of the configuration on a set `Y ⊆ {y ≥ x}`, the two
++conditional expectations differ by at most `2 ‖g‖_∞ Σ_{y ∈ Y} N(x, y) c^{|y − x|_1}`.
++
++*Proof.* Induction along the linear extension:
++`m(x) ≤ c Σ_{z' ∈ A_x} m(z') ≤ c Σ_{z' ∈ A_x} Σ_{z ∈ S} N(z, z') c^{|z' − z|_1} = Σ_{z ∈ S} c^{|x − z|_1} Σ_{z' ∈ A_x} N(z, z') = Σ_{z ∈ S} N(z, x) c^{|x − z|_1}`,
++since every monotone path to `x` passes through a predecessor of `x` last. The
++conditional-law statements follow because the two copies' marginals are the two
++conditional laws and they differ only on `D`. ∎ Executed on the cube at
++`(3, 1, 2)`: the exact total variation between the laws of `v_{111}` given
++`v_{000} = s` and `v_{000} = s'`, maximized over `s ≠ s'`, is `273651254/10658734515 = 0.02567389…`, against
++the bound `N c^3 = 6 · (27/110)^3 = `59049/665500 = 0.08872877…`` (E2); on the `2×3` rectangle
++with two predecessors the influence of `v_{00}` on `v_{12}` is bounded by
++`3 c_{(2)}^3` (E3).
++
++**(b) The covariance bound.** For every box law and all sites `x, y` and
++functions `g, h` on `M`,
++`|Cov(g(v_x), h(v_y))| ≤ 4 ‖g‖_∞ ‖h‖_∞ (3c)^{ρ(x, y) − 1}`, where
++`ρ(x, y) = max(|x − x∧y|_1, |y − x∧y|_1) ≥ ⌈|x − y|_1/2⌉` and `x∧y` is the
++componentwise minimum. The same bound holds for the column law, the quadrant
++column, and (Q4e) the `Z^3` law, as limits of box laws.
++
++*Proof.* Let `L_t = {z ∈ B : |z|_1 = t}` and `𝔉_t` the σ-field of the
++configuration on levels `≤ t`. Every predecessor of a site at level `t` lies at
++level `t − 1`, so given `𝔉_t` the configuration above level `t` is generated by
++the kernels level by level (a Markov chain of levels). Put `m = |x∧y|_1 + 1`.
++The sites `z ≤ x` with `|z|_1 ≥ m` and the sites `z ≤ y` with `|z|_1 ≥ m` are
++disjoint: a common one satisfies `z ≤ x∧y`, hence `|z|_1 ≤ m − 1`. Therefore,
++given `𝔉_m`, `v_x` and `v_y` are functions of disjoint sets of the
++`𝔉_m`-measurable values at level `m` and of the kernels' innovations at
++disjoint sets of sites; they are conditionally independent (if one of them is
++already `𝔉_m`-measurable the statement is trivial). Hence
++`Cov(g(v_x), h(v_y)) = Cov(G, H)` with `G = E[g(v_x) | 𝔉_m]`,
++`H = E[h(v_y) | 𝔉_m]`. If `|y|_1 > m`, `H` depends on the level-`m`
++configuration only through `B_y = {z ∈ L_m : z ≤ y}`, and by (a) applied with
++sources the sites of `B_y` on which two configurations differ,
++`osc(H) ≤ 2 ‖h‖_∞ Σ_{z ∈ B_y} N(z, y) c^{|y|_1 − m} ≤ 2 ‖h‖_∞ (3c)^{|y|_1 − m}`,
++since the number of monotone paths of length `ℓ` descending from `y` is at most
++`3^ℓ`. Then `|Cov(G, H)| ≤ E|G − EG| · osc(H) ≤ 2 ‖g‖_∞ · 2 ‖h‖_∞ (3c)^{|y|_1 − m}`,
++and `|y|_1 − m = |y − x∧y|_1 − 1`. The same with the roles exchanged gives the
++exponent `|x − x∧y|_1 − 1`; take the larger of the two (if the larger belongs to
++a site at level `≤ m`, both exponents are `≤ 0` and the bound is trivial). Finally
++`|x − x∧y|_1 + |y − x∧y|_1 = |x − y|_1`. The column, quadrant-column and `Z^3`
++laws are limits of box laws on every finite window (Q3b, Q3d, Q4e), and the
++bound passes to the limit. ∎ Executed on the cube at `(3, 1, 2)`: every pair
++`(x, y)` and every pair of axis indicators satisfies the bound (E6).
++
++**(c) The sweep rate, uniform in the cross-section.** Assume `2c < 1` and let
++`θ = c/(1 − 2c)`. For any two initial plane laws `ν, ν'` on `M^C`, the coupled
++chains have `P(y ∈ D)` at plane `n` at most
++`Σ_{j ≥ 0} C(n + j, n) 2^j c^{n + j} = c^n (1 − 2c)^{−n−1} = (1 − 2c)^{−1} θ^n`
++for every site `y`, uniformly in `C`. Hence
++`‖ν P_C^n − ν' P_C^n‖_TV ≤ |C| (1 − 2c)^{−1} θ^n` and every eigenvalue of `P_C`
++other than `1` has modulus at most `θ`, for every finite cross-section.
++
++*Proof.* Every site of plane `0` is a potential source. A monotone path from
++`y` in plane `n` down to plane `0` takes exactly `n` steps `−e_1` and some `j ≥ 0`
++steps in `{−e_2, −e_3}`, in any order: at most `C(n + j, n) 2^j` such paths of
++length `n + j`; apply (a) and sum the series. The total-variation bound is the
++union over the sites of `C`; the spectral statement follows because
++`‖(P_C − 1π_C)^n‖_{∞ → ∞} ≤ 2 sup_w ‖P_C^n(w, ·) − π_C‖_TV` and the spectral
++radius is the limit of the `n`-th roots. ∎ Executed at `C_2`, `(3, 1, 2)`: the
++maximal total variation between two rows of the orbit quotient's `n`-th power
++is below `θ^n` for `n = 1, …, 6`, with `θ = 27/56` (E5).
++
++**(d) The full cross-section.** Assume `c < 1/3` (so `2c < 1` and `θ < 1`).
++
++*(i) The plane kernel on `Z^2`.* For `w ∈ M^{Z^2}` and a quadrant
++`Q_a = [a, ∞)^2 ⊂ Z^2`, let `P_{Q_a}(w, ·)` be the law of the in-plane formation
++`v_y ~ r(· | w_y, v_{y − e_2}, v_{y − e_3})` over `Q_a` (predecessors outside
++`Q_a` omitted), well defined on the countable product by down-set consistency
++and the extension theorem cited under Imports. As `a → −∞` these laws converge on every finite
++window, uniformly in `w`: for `a' < a`, couple the two formations with sources
++the sites of the boundary rays of `Q_a` (whose kernels differ, having one
++in-plane predecessor fewer); a site `y` at in-plane distance `≥ d` from the
++boundary is reached by at most `2^ℓ` monotone paths of length `ℓ ≥ d`, so its
++discrepancy is at most `Σ_{ℓ ≥ d} (2c)^ℓ = (2c)^d/(1 − 2c)`. The limit
++`P(w, ·)` is a Markov kernel on `M^{Z^2}`; it is Feller (changing `w_z` is a
++source at `z`, whose influence on a window at distance `d` is at most
++`c (2c)^d/(1 − 2c)`, a summable tail), and it commutes with the in-plane
++translations (the kernels and the predecessor structure are
++translation-invariant on `Z^2`).
++
++*(ii) Existence.* `M^{Z^2}` is compact and metrizable; the Cesàro averages of
++`δ_w P^n` have a weakly convergent subsequence, and Feller continuity passes
++invariance to the limit: an invariant law `π_∞` exists.
++
++*(iii) Uniqueness and translation invariance.* For two invariant laws `π, π'`,
++couple the two chains with every site of plane `0` a source: by (c) the
++discrepancy at any site of plane `n` is at most `(1 − 2c)^{−1} θ^n → 0`, so
++`π = π P^n` and `π' = π' P^n` agree on every finite window. The translate of
++`π_∞` is invariant (i), hence equals `π_∞`.
++
++*(iv) Boundary planes are lost.* The full-cross-section law has no boundary
++plane; the two-dimensional law survives only in the quadrant column (Q3c–d).
++
++**(e) The `Z^3` law.** Under `c < 1/3`, the stationary two-sided chain of
++`P` on `M^{Z^2}` with one-plane law `π_∞` is a law `μ_{Z^3}` on `M^{Z^3}`,
++invariant under all lattice translations, with the covariance bound (b) in every
++direction and the sweep-direction bound (c). Every box law converges to it on
++finite windows as the box's corner recedes in all three directions (in any
++manner): the box law is the column law of its cross-section up to the
++plane-chain error (Q3b), and the column law over `C` restricted to a window at
++in-plane distance `d` from the cross-section's boundary rays differs from the
++`Z^2`-chain's law on that window by at most a constant times `(2c)^d/(1 − 2c)`
++(couple the two plane chains from a common start; the boundary rays are sources
++in every plane, their influence in-plane decays as in (d)(i), and their
++accumulated influence along the sweep is summed by (c)). `μ_{Z^3}` is not
++invariant under the proper cubic rotations that move the corner (the eight
++corner classes are its images under the eight reflections of the axes; whether
++they are distinct on `Z^3` is not executed here; on the `2×2×2` cube the
++reversed order's law differs, #8102). ∎
++
++**The region.** The hypothesis `c < 1/3` is an exact inequality between
++rationals at each triple. It holds at `(3, 1, 2)`, `(5, 2, 4)`, `(7, 3, 5)`,
++`(2, 1, 2)`, `(3, 2, 2)`, `(5, 4, 4)`, `(11, 10, 10)` and at the constant rule;
++along the line `(1, 1, t)` it fails for large `t` (the sensitivity of three
++orthogonal-preferring neighbors to one of them tends to `1/2`), so the region is
++a proper subset of the positive octant; its boundary is not computed here. For
++two dimensions the same proofs with two predecessors give the region
++`2 c_{(2)} < 1`, `c_{(2)} = max(c_1, c_2)`, and the plane law of the plane-law note (#8039; whose
++existence needs no condition) has exponentially decaying correlations there:
++`60/143 < 1` at `(3, 1, 2)`.
++
++## Corollary Q5 — record two-point functions decay exponentially (at scope)
++
++For every box law, every column law, and for `μ_{Z^3}` when `c < 1/3`, and for
++every pair of local record observables `g(v_x)`, `h(v_y)` (in particular every
++axis indicator and every function of a record's content),
++`|Cov(g(v_x), h(v_y))| ≤ 4 ‖g‖ ‖h‖ (3c)^{⌈|x − y|_1/2⌉ − 1}`. Under the monotone
++formation law of a positive covariant nearest-neighbor product rule on the
++six-axis menu, in the region, no record two-point function decays slower than
++exponentially: neither a lattice Green function nor a transverse kernel appears
++in the finished record field. This answers, at scope, the reframing test of the
++derivation campaign's record-dynamics block: for this rule family and order
++class the record statistics carry no long-range field without a supplied
++addition. The static law in the region of block 03 (`6c_1 < 1` there) has the
++same property by that block's coupling; at the silent triples this note's
++region decides the formation law's decay while the static law's uniqueness
++remains undecided.
++
++## No-Go Discipline Gate
++
++The negative sentences of this note are Q2 (the first plane cannot be summed
++out; a proved reduction with an executed refutation at two triples) and Q5
++(no long-range record correlation in the region; a proved bound). Neither is a
++route no-go beyond its scope. The gate is answered for both.
++
++### N1 — Routes by which a long-range record correlation could still arise
++
++| route | what it would attempt | why it fails here, or its obligation | marker |
++|---|---|---|---|
++| 1 strong coupling, `c ≥ 1/3` | let the branching of discrepancies be supercritical | the bound (a) is then not conclusive; nothing is claimed; the finite-box bounds (a), (b) still hold with a rate `3c ≥ 1` that says nothing | not attempted; obligation named |
++| 2 another order class | the snake, a random priority, a non-monotone order | the mechanism (discrepancies along recorded-neighbor paths) applies with the branching number replaced by the maximal out-degree of the recorded-set graph; the random-priority process has the owner's factorial ancestry bound (unlanded, cited, not used) | ATTEMPTED (mechanism named; not executed) |
++| 3 a non-product or constraint rule | zero-probability supports (a Gauss-type support rule, #8114's line) | outside the positive product class; the kernels' positivity is what (a) uses | RULED OUT BY PRIOR at scope (positivity is a named premise) |
++| 4 the static law at a critical coupling | a supplied coupling on the critical surface of the static specification | a static-law statement; not this note; the coupling is a supplied value | not attempted; obligation named |
++| 5 a continuum alphabet or a larger menu | change `c` | `c` is menu-specific; the theorems hold for any finite menu with positive symmetric covariant `φ`; the numbers do not transfer | not attempted; obligation named |
++| 6 the constant rule | `p = q = r` | `c = 0`; the law is the independent uniform law; excluded by the variation clause restricted to the menu | ATTEMPTED (control) |
++
++### N2 — Wall-independence audit
++
++Walls: `W_pos` (positivity), `W_menu` (the six-axis menu), `W_class` (the
++monotone class with a corner), `W_reg` (`c < 1/3`), `W_var` (nonconstant, for
++Q1f and Q2d only). `W_reg` and `W_var` are independent: the constant rule
++satisfies `W_reg` and fails `W_var`; a triple far along the line `(1, 1, t)`
++satisfies `W_var` and fails `W_reg`. `W_pos` is used by Q3a and Q4a (every kernel value
++positive; the maximal coupling); `W_menu` fixes the numbers only; `W_class`
++fixes the recorded sets and is the object's definition. None follows from
++another. Q1a–e and Q3a–d need `W_pos`, `W_class` only; Q4d–e need `W_reg` in
++addition; Q1f and Q2d are stated at the executed nonconstant triples.
++
++### N3 — Hidden-wall scan
++
++Scanned for "we assume", "by construction", "as is standard", "the framework
++provides", "naturally", "obviously", "canonical", "registered", "background",
++"bridge context". Hits: none in the theorems. Every step of Q1–Q4 is written
++out; the cited steps (the extension of a consistent family on a countable product; the
++compactness of `M^{Z^2}` and the weak-convergence step of (d)(ii)) are named in
++the obligation table and under Imports. No wall was promoted.
++
++### N4 — Per-citation table
++
++| cited surface | residual it attacks | residual claimed here | match |
++|---|---|---|---|
++| block 05's note (proposed, unaudited): P1, P3, P4, P7(a) | the monotone class on rectangles; the 180-degree identity | Q1a–c one dimension up; Q2b; Q3c | yes (parent; cited and re-proved where used) |
++| block 02's note (proposed, unaudited): E1–E3 | the row transfer preserves the chain law | Q2e (the mechanism that has no analogue); Q1e (`K_2`) | yes (parent; cited) |
++| block 03's note (proposed, unaudited): the coupling method and `6c_1` | uniqueness of the static law by a random-scan coupling | contrast only (Q5); the method re-proved for a different structure | yes (contrast; no value used) |
++| the plane-law note (#8039; landed on main 2026-09-15; not an input) | the plane law by projective consistency | Q2b re-proves the consistency; Q4's 2D remark applies to its law | yes (re-proved) |
++| #8102 (open PR; not an input) | the multiset key; reversal on the cube | consistent finite fact quoted in Q4e | yes (quoted; not used) |
++| the random-priority note (branch; not an input) | a covariant random-order law on `Z^3` | a different object; N1 route 2 | yes (contrast) |
++
++After dropping nothing, the headline rests on the parents' cited statements and
++this note's own proofs and executed witnesses.
++
++### N5 — Resolution audit
++
++| phrase | per-element | per-site | per-mode | per-block | lattice-wide |
++|---|---|---|---|---|---|
++| "no record two-point function decays slower than exponentially" | executed: every `(s, s')` and every pair of axis indicators on the cube against the bound; the exact `2×2` transfer on all 1296 states | executed: every site of the cube (uniform marginals; the influence of the corner on the far corner) | executed: the orbit quotient's contraction for `n = 1..6`; the three-body third difference | executed: the `2×2` cross-section's stationary law by orbit reduction; the `2×3` rectangle's sub-rectangle marginals | proved for `c < 1/3` (Q4e); executed only through the region membership of eight triples; not claimed for `c ≥ 1/3` |
++
++The runner prints matching `per_element:` … `lattice_wide:` lines; the
++narrowest form is used.
++
++### N6 — Partial-closure paths and primitive scan
++
++The registered approved primitives in
++`docs/audit/data/axiom_premise_nodes.json` (`scale_reference_primitive`,
++`kinetic_isotropy_primitive`, `realized_state_primitive`) supply a length
++reference, a graining ratio and a realized-state notion; none supplies an
++order, a corner, a coupling condition or a pair weight, and none is a wall here.
++Reframing paths: a stronger coupling (weighted sensitivities, a block coupling)
++could enlarge the region without any change of reading; the random-priority
++construction gives a covariant order class whose decay comes from a different
++mechanism. `docs/repo/DEFERRED_DECISIONS.md` entry 1 wakes on the
++committed-action identification, which this note does not supply. This note
++does not say a new axiom is required.
++
++### N7 — Steelman
++
++Hostile reviewer: "The monotone class is an artifact: it has a corner, breaks
++the cubic symmetry, and its `Z^3` law is one of eight. Physics, if it uses
++formation at all, would use a covariant process — the random-priority law —
++whose decay is already faster than exponential. So Q4–Q5 say nothing physical:
++the axioms supply no order, and this order is the least covariant one." Reply
++at scope: the note selects nothing; it constructs the object the owner's queue
++named and proves where it exists, is unique and decays — including at the
++couplings where the static law's status is unknown — and it records that the
++eight corner laws form one covariant family. The steelman's positive claim
++(that a covariant formation process has faster decay) is the owner's separate
++construction, unlanded; the comparison of the two families on `Z^3` is the next
++block's object. Conceded: nothing here identifies a physical order.
++
++### N8 — Cross-cycle echo
++
++`NO_GO_LEDGER.md` holds block 02's separation on the strip (retired by nothing;
++extended by #8039 and here), block 03's silent triples (open), block 04's
++two-site criterion (closed for the tested criterion only), and block 05's
++turning-staircase negative. The wall structurally nearest to Q2 is block 02's
++"the normalizer history does not wash out along the sweep" — a different
++statement (the static/formation separation), not retired; the nearest to Q5 is
++block 03's contraction region, whose mechanism (a random-scan coupling with six
++neighbors) is replaced here by the causal coupling with three predecessors;
++this replacement, not a relabeling, is what puts the silent triples inside.
++
++## Falsifiers
++
++- A linear extension of a box's product order whose recorded sets are not the
++  predecessor sets (refutes Q1a).
++- A configuration of the `1×2×2` or `2×2×1` box on which the product form and
++  the product of conditionals differ (refutes Q1e).
++- A symmetric pair function `g` with `log K_3(a, b, c) = g(a,b) + g(b,c) + g(a,c)`
++  at `(3, 1, 2)` (refutes Q1f; the third difference would then be `1`).
++- A plane state of `C_2` on which `μ_{C_2} P_{C_2}` and `μ_{C_2}` agree at
++  `(3, 1, 2)` (the count `1296` would drop), or a `2×2` sub-rectangle marginal of
++  the `2×3` law that is not the `2×2` law (refutes Q2b).
++- A site of `Z^3` whose predecessor triple is the successor triple of a site
++  (refutes the mechanism lemma).
++- Two distinct stationary laws of `P_{C_2}`, or a row of the orbit quotient that
++  depends on the representative (refutes Q3a or the reduction).
++- A configuration of the cube on which the exact influence of `v_{000}` on
++  `v_{111}` exceeds `6 c^3`, or a pair of axis indicators whose covariance
++  exceeds the bound (refutes Q4a–b).
++- A triple among the eight where the printed `c` is not the exact maximum over
++  all one-entry changes (the runner recomputes the maximum over all
++  `6^k × k × 5` cases for `k = 1, 2, 3`).
++- Two rows of the orbit quotient's `n`-th power at total variation above `θ^n`
++  for some `n ≤ 6` (refutes Q4c at `C_2`).
++
++## Boundaries and non-claims
++
++This note describes the monotone class of formation orders on boxes, columns
++and `Z^3` for the declared rule; it states nothing about the static law of
++`Z^3` beyond citing block 03's region and the silent triples, nothing about any
++order or corner being physical, nothing for `c ≥ 1/3` beyond the finite-box
++bounds, and nothing about the distinctness of the eight corner laws on `Z^3`.
++No plane, bridge, Born or gravity statement enters this note; this note does
++not fire wake condition 1 of the parked statistical-bridge decision. The
++unilateral Markov field, the probabilistic cellular automaton and the
++positive-chain contraction are classical references re-proved here at the scope used; no
++value, constant or theorem is imported as authority.
++
++Further: the two executed refutations of Q2d are at `(3, 1, 2)` and `(5, 2, 4)`;
++a proof that the plane transfer moves the two-dimensional law at every
++nonconstant triple is not given (the mechanism lemma explains the failure of the
++proof, not the truth of the identity's negation); the exact stationary plane law
++is computed at the `2×2` cross-section only; the region's boundary in `(p, q, r)`
++is not computed beyond the eight triples and the two remarks; the covariance
++bound is not sharp (the executed cube influence is well below `6 c^3`); the
++`Z^3` law's relation to the random-priority law is not studied; no formation
++site, probability or rate is supplied; no axiom or primitive is changed.
++
++## Imports
++
++- `minimal_axioms` (the framework premise node): the sentences quoted under
++  Premises.
++- Block 05's and block 02's notes on main (proposed, unaudited): the rectangle
++  law, P1, P3, P4, P7(a); E1–E3. The parts used are restated and, where load-
++  bearing (Q2b, Q3c), re-proved from P7(a).
++- Elementary mathematics re-proved at scope: the Doeblin contraction of a
++  strictly positive stochastic matrix (Q3a); the coupling of two laws with a
++  maximal coupling and the triangle inequality for total variation (Q4);
++  monotone-path counts and the binomial series `Σ_j C(n+j, n) x^j = (1 − x)^{−n−1}`
++  (Q4c); the level-chain conditioning (Q4b).
++- Cited, definition-level: the Kolmogorov extension of a consistent family on
++  a countable product (Q3d, Q4d); compactness of `M^{Z^2}` and the weak
++  subsequential limit of Cesàro averages with Feller continuity (Q4d(ii), the
++  classical Krylov–Bogolyubov argument, four lines); uniqueness of a measure on
++  a generating π-system (Q4d(iii)).
++- No literature value, constant, or theorem enters as authority; the classical
++  names appear only in this section and under Prior art.
++
++## Review record
++
++Supervisor-run block (the owner's 2026-09-15 directive: no subagents). The
++supervisor's controls (`specs/supervisor_control_block08_z3.py`, `_b.py`) computed
++the sensitivities, the `2×2` transfer witness, the third difference, the 48
++extensions, the exact stationary `2×2` law and the cube influence before the
++contract was written; the contract's lens pass (refuter, prior art, axiom
++reading, scope) is recorded in `GOAL_block08.md`; the primary seat wrote the
++proofs and the runner; the refuting pass recomputed the load-bearing numbers
++by disjoint routes (`CHECKER_block08_findings.md`: the `2×2` transfer's total
++variation from the integer-weighted cube marginal on the plane `x_1 = 1`, `c_3`
++from the integer `φ`-formulation with total variation as a sum of positive parts,
++the stationary law by power iteration against the exact solve, the path count
++`N(000, 111) = 6` by enumeration, and the pair-additive control of the third
++difference); the fold is recorded in `REVIEW_HISTORY.md`.
++Facts settled while executing: the integer-weighted cube pass needs the
++common denominator `6 Z_1^3 (lcm Z_2)^3 (lcm Z_3)`, not the lcm of the factors
++(the first draft's assertion caught it); the first draft placed `(2, 1, 2)` on
++the region's boundary by misreading `3c = 1/3` as `3c = 1` — corrected: it lies
++inside; the classical names were moved out of the theorem sections and the
++status block.
++
++## Verification
++
++```bash
++python3 scripts/admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15.py
++python3 scripts/admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15.py --exact
++python3 scripts/admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15.py --list-mutations
++python3 scripts/admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15.py --mutation transfer_invariance_claimed
++```
++
++Families: A authority and inputs; B the box law (extensions, covariance, axis
++symmetry, down-sets, the product form, the three-body term); C the first plane
++(the `2×2` transfer witness, the constant control, the two-dimensional
++consistency); D the plane chain (positivity, the orbit quotient, the exact
++stationary law, the boundary lines); E the coupling (the sensitivities, the
++influence and covariance bounds against exact values, the sector contraction,
++the region); F fences, forbidden phrases, the floating-point self-scan and the
++placement of the classical names; G the resolution lines. Each of the 26
++declared mutations perturbs one object or one comparison and fails in exactly
++one family (`mutation_family_expected:` / `mutation_family_observed:` lines);
++`--exact` prints the rational endpoints and the stationary `2×2` law's orbit
++masses. Expected final line: `TOTAL: PASS=33 FAIL=0`.
+diff --git a/docs/audit/data/citation_graph_manifest.json b/docs/audit/data/citation_graph_manifest.json
+index 2f55bf1641..b27fa5e8e6 100644
+--- a/docs/audit/data/citation_graph_manifest.json
++++ b/docs/audit/data/citation_graph_manifest.json
+@@ -1,6 +1,6 @@
+ {
+- "edge_count": 12552,
+- "node_count": 5058,
++ "edge_count": 12554,
++ "node_count": 5059,
+  "nodes": {
+   "3d_correction_master_note": {
+    "deps_hash": "e3b0c44298fc",
+@@ -730,6 +730,10 @@
+    "deps_hash": "1b3132f0c69b",
+    "out_degree": 3
+   },
++  "admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_bounded_theorem_note_2026-09-15": {
++   "deps_hash": "a44e851e5ec5",
++   "out_degree": 2
++  },
+   "admissibility_rule_two_site_block_criterion_exact_and_silent_for_every_coupling_bounded_theorem_note_2026-09-07": {
+    "deps_hash": "8ae058a5c524",
+    "out_degree": 2
+diff --git a/logs/runner-cache/admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15.txt b/logs/runner-cache/admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15.txt
+new file mode 100644
+index 0000000000..729d8a744f
+--- /dev/null
++++ b/logs/runner-cache/admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15.txt
+@@ -0,0 +1,59 @@
++===== runner cache v1 =====
++runner: scripts/admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15.py
++runner_sha256: 311e27d7406be6167fc6b17c7b904e9e3879230331ad480103a6b8352fa27a21
++input_fingerprint_sha256: d074b3e891eb3ecc32fdf488acb5c35a91e41ef8d3d29b9de34037f49af93204
++timeout_sec: 900
++exit_code: 0
++elapsed_sec: 27.29
++status: ok
++----- stdout -----
++AUDIT_INPUT_PATHS:
++  docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md
++  docs/MINIMAL_AXIOMS_2026-06-29.md
++  docs/ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SWEEP_FORMATION_LAW_VERSUS_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-06.md
++  docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md
++AUDIT_TIMEOUT_SEC: 900
++scope: the 3D monotone formation law — the box law and its three-body term; the first plane cannot be summed out (2x2 witness); the plane chain's exact stationary 2x2 law; the sensitivities, the region 3c < 1, the influence bound; exact; no order selected
++mutation: none
++PASS: A1 the four declared inputs exist (this note, the axiom memo, block 02, block 05)
++PASS: A2 the five axiom sentences used are present verbatim in the axiom memo
++PASS: A3 the parents' claim ids and the cited fragments (the row sweep; one law per linear extension) are present
++PASS: A4 this note carries its claim id and names this runner
++PASS: A5 blocks 03, 04, 06, 07 are not inputs
++PASS: B1 Q1a: the 48 linear extensions of the 2x2x2 product order share one recorded-set family, the predecessor sets
++PASS: B2 Q1b: on the cube every one-site marginal is 1/6 and every pair marginal is constant on each of the three pair types (28 pairs x 36 entries)
++PASS: B3 Q1c: the cube's pair marginals are invariant under the six permutations of the axes
++PASS: B4 Q1d: the cube law's marginal on the down-set x3 = 0 is the 2D 2x2 monotone law (all 1296 entries)
++PASS: B5 Q1e: the product form (1/6) prod K / prod K_2 / prod K_3 equals the product of conditionals on all configurations of 1x2x2 and 2x2x1 and on 2000 sampled cube configurations
++PASS: B6 Q1f: the third-difference ratio of K_3 is 2160/2197 at (3,1,2) and 686196/704969 at (5,2,4) (pair-additive would give 1); 1 at the constant rule
++PASS: C1 Q2d: the 2x2 plane transfer moves the 2D law on 1296/1296 states at (3,1,2) and 1296/1296 at (5,2,4)
++PASS: C2 Q2d: TV(mu P, mu) = 356696849/806187919680 = 0.0004424487 at (3,1,2); 0.0002257495 at (5,2,4) (exact literal under --exact)
++PASS: C3 Q2d control: at the constant rule (2,2,2) the transfer leaves the (uniform) 2D law fixed on all 1296 states
++PASS: C4 Q2b: the 2x3 law's marginals on both 2x2 sub-rectangles are the 2x2 law and its second row is the K-chain (translate consistency in two dimensions)
++PASS: C5 Q2d: after one transfer at (3,1,2) the coordinate-line pairs stay (1/6)K-pairs and the one-site marginals uniform, while the interior pairs are not (1/6)K-pairs and the anti-diagonal is not a (1/6)K^2-pair
++PASS: D1 Q3a: P on the 2x2 cross-section is stochastic (all 1296 rows sum to one) and strictly positive (minimal entry 1/486720)
++PASS: D2 Q3e: the internal group (48) with the plane transpose gives 32 orbits of the 1296 plane states; the quotient rows are representative-independent (last member of every orbit) and stochastic
++PASS: D3 Q3a/e: the exact stationary law of the quotient solves pi Q = pi, is positive and sums to one (unique by the strict positivity of P)
++PASS: D4 Q3c: under the stationary 2x2 plane law the two coordinate-line pairs are (1/6)K-pairs and the one-site marginals are uniform
++PASS: D5 Q3e: TV(pi_2, mu_2D) = 0.0004547168 at (3,1,2) (exact literal under --exact); the interior pair ((0,1),(1,1)) has P(+x,+x) = 0.0416936074 against (1/6)K(+x,+x) = 0.0416666666: not a K-pair
++PASS: E1 Q4: c_1, c_2, c_3 at the eight triples equal the note's exact literals; (3, 1, 2): c=27/110; (5, 2, 4): c=10650/63407; (7, 3, 5): c=5782/30885
++PASS: E1b Q4 region: 3c < 1 at all eight triples (3c = 1/3 at (2,1,2)); at the silent triples 3c = 81/110, 31950/63407, 5782/10295
++PASS: E2 Q4a: on the cube at (3,1,2) the exact influence of v_000 on v_111 is 273651254/10658734515 = 0.02567389 <= N c^3 = 6 (27/110)^3 = 59049/665500 = 0.08872877
++PASS: E3 Q4a (two dimensions): on 2x3 at (3,1,2) the exact influence of v_00 on v_12 is 0.01329534 <= N c^3 = 3 (30/143)^3 = 0.02769981
++PASS: E5 Q4c: the maximal TV between rows of the quotient's n-th power is below theta^n (theta = 27/56) for n = 1..6; n=1: 0.072029 <= 0.482142; n=2: 0.002008 <= 0.232461; n=3: 0.000062 <= 0.112079
++PASS: E6 Q4b: every axis-indicator covariance of every cube pair (largest 0.01391494) satisfies |Cov| <= 4 (3c)^(rho-1); the bound is not informative at cube distances and is recorded as such
++PASS: E7 Q4 (two dimensions): 2 max(c_1, c_2) = 60/143 < 1 at (3,1,2): the plane law's correlations decay exponentially there
++PASS: F1 the note carries the three fence sentences verbatim
++PASS: F2 the note contains no forbidden phrase (0 hits)
++PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
++PASS: F4 the classical names appear only under Prior art and Imports (0 offenders)
++per_element: executed — every one of the 1296 plane states under the 2x2 transfer at (3,1,2), (5,2,4) and the constant rule; every (s, s') for the cube influence; every axis-indicator pair on the cube; the third-difference ratio
++per_site: executed — the recorded set of every site of every one of the 48 extensions; the one-site marginals of every cube site and of every plane site under mu P and under pi_2
++per_mode: executed — the quotient's 32 orbits and its n-th powers for n = 1..6 against theta^n; the three sensitivities c_1, c_2, c_3 at eight triples over all one-entry changes
++per_block: executed — the 2x2 stationary plane law by orbit reduction; the 2x3 rectangle's sub-rectangle marginals and its second row; the cube's down-set marginal on x3 = 0; the 1x2x2 and 2x2x1 product forms
++lattice_wide: proved for c < 1/3 (Q4e), executed only through the region membership of eight triples; nothing for c >= 1/3 beyond the finite-box bounds; nothing about the static law of Z^3
++PASS: G1 the five N5 resolution lines are printed
++TOTAL: PASS=33 FAIL=0
++
++----- stderr -----
++
+diff --git a/scripts/admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15.py b/scripts/admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15.py
+new file mode 100644
+index 0000000000..5aa3e9ae63
+--- /dev/null
++++ b/scripts/admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15.py
+@@ -0,0 +1,815 @@
++#!/usr/bin/env python3
++"""Exact checks: the three-dimensional formation law of the monotone class.
++
++Scope.  The six Bloch-axis menu with the covariant positive product rule of orbit weights (p, q, r), the records-only
++reading, and the monotone class (every linear extension of the product order) on boxes of Z^3.  Q1: one law per box,
++internal covariance, axis symmetry, down-set consistency, the product form with the three-body normalizer K_3 and its
++irreducibility (third difference).  Q2: the first plane cannot be summed out -- reduced to the invariance of the 2D law
++under the plane transfer, refuted exactly on the 2x2 cross-section at (3,1,2) and (5,2,4) (all 1296 states), with the
++constant rule as the control; the 2D translate consistency re-executed on 2x3.  Q3: the plane transfer is a strictly
++positive stochastic matrix; its orbit quotient (32 orbits) and exact stationary law; the coordinate-line pairs stay
++K-pairs, the interior pair does not.  Q4: the one-neighbor sensitivities c_1, c_2, c_3 exactly at eight triples, the
++region 3c < 1, the influence bound N c^d against the exact cube influence, the sector contraction against theta^n.
++Exact rational arithmetic only (fractions and integers); the runner scans its own source for floating-point literals and
++conversion calls.  No order or corner is selected as physical; nothing about the static law of Z^3.
++"""
++
++from __future__ import annotations
++
++import re
++import sys
++from fractions import Fraction
++from itertools import permutations, product
++from pathlib import Path
++
++AUDIT_TIMEOUT_SEC = 900
++AUDIT_INPUT_PATHS = (
++    "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
++    "docs/MINIMAL_AXIOMS_2026-06-29.md",
++    "docs/ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SWEEP_FORMATION_LAW_VERSUS_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-06.md",
++    "docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md",
++)
++ROOT = Path(__file__).resolve().parents[1]
++NOTE_PATH = ROOT / AUDIT_INPUT_PATHS[0]
++AXIOM_PATH = ROOT / AUDIT_INPUT_PATHS[1]
++BLOCK02_PATH = ROOT / AUDIT_INPUT_PATHS[2]
++BLOCK05_PATH = ROOT / AUDIT_INPUT_PATHS[3]
++CLAIM_ID = "admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_bounded_theorem_note_2026-09-15"
++BLOCK02_CLAIM_ID = "admissibility_rule_infinite_strip_row_sweep_formation_law_versus_static_law_bounded_theorem_note_2026-09-06"
++BLOCK02_FRAGMENT = "the row sweep is exactly solvable"
++BLOCK05_CLAIM_ID = "admissibility_rule_monotone_order_formation_law_rows_columns_chains_corner_law_bounded_theorem_note_2026-09-07"
++BLOCK05_FRAGMENT = "every linear extension gives the same formation law"
++AXIOM_NEEDLES = (
++    "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.",
++    "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.",
++    "No possibility is privileged. Possibilities are distinguished by the supplied algebraic structure alone.",
++    "Records form.",
++    "Only records are readable.",
++)
++
++MUTATION_GATE = {
++    "extensions_recorded_sets_wrong": "B",
++    "pair_type_constancy_broken": "B",
++    "axis_symmetry_broken": "B",
++    "downset_marginal_forged": "B",
++    "product_form_wrong": "B",
++    "three_body_ratio_forged": "B",
++    "transfer_invariance_claimed": "C",
++    "transfer_tv_literal_off": "C",
++    "constant_control_broken": "C",
++    "sub_rectangle_consistency_broken": "C",
++    "boundary_pair_claim_wrong": "C",
++    "transfer_row_sums_off": "D",
++    "orbit_count_wrong": "D",
++    "stationary_solve_forged": "D",
++    "coordinate_line_pair_wrong": "D",
++    "stationary_tv_literal_off": "D",
++    "sensitivity_literal_off": "E",
++    "region_membership_flipped": "E",
++    "influence_bound_reversed": "E",
++    "rectangle_influence_bound_off": "E",
++    "sector_contraction_forged": "E",
++    "covariance_bound_denied": "E",
++    "two_dimensional_region_off": "E",
++    "claim_for_every_coupling": "F",
++    "claim_physical_order": "F",
++    "claim_classical_name_in_theorem": "F",
++}
++ACTIVE_MUTATION: str | None = None
++
++
++def mut(name: str) -> bool:
++    if name not in MUTATION_GATE:
++        raise KeyError(name)
++    return ACTIVE_MUTATION == name
++
++
++class Checks:
++    def __init__(self) -> None:
++        self.passed = 0
++        self.failed = 0
++        self.failed_families: list[str] = []
++
++    def check(self, label: str, condition: bool, detail: str) -> None:
++        ok = bool(condition)
++        self.passed += int(ok)
++        self.failed += int(not ok)
++        if not ok:
++            self.failed_families.append(label[0])
++        print(f"{'PASS' if ok else 'FAIL'}: {label} {detail}")
++
++    def finish(self) -> int:
++        print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
++        return self.failed
++
++
++def normalize_text(text: str) -> str:
++    return " ".join(text.split())
++
++
++F = Fraction
++
++
++def dec(x: Fraction, n: int = 8) -> str:
++    """Exact decimal expansion of a nonnegative rational, truncated to n digits; integer arithmetic only."""
++    s = x.numerator * 10 ** n // x.denominator
++    return f"{s // 10 ** n}.{str(s % 10 ** n).zfill(n)}"
++
++
++# ------------------------------------------------------------------ the menu, the rule, the kernels
++AXES = ("+x", "-x", "+y", "-y", "+z", "-z")
++M = 6
++TRIPLES = ((3, 1, 2), (5, 2, 4), (7, 3, 5), (2, 1, 2), (3, 2, 2), (5, 4, 4), (11, 10, 10), (2, 2, 2))
++
++
++def orbit_type(s: int, t: int) -> str:
++    if s == t:
++        return "p"
++    if s // 2 == t // 2:
++        return "q"
++    return "r"
++
++
++class Rule:
++    """phi (integers), Z_k tables (integers), K and the k-neighbor kernels (fractions)."""
++
++    def __init__(self, tr) -> None:
++        p, q, r = tr
++        w = {"p": p, "q": q, "r": r}
++        self.tr = tr
++        self.phi = [[w[orbit_type(s, t)] for t in range(M)] for s in range(M)]
++        self.Z1 = sum(self.phi[0])
++        self.K = [[F(self.phi[s][a], self.Z1) for s in range(M)] for a in range(M)]  # K[a][s]
++        self.Z2 = {(a, b): sum(self.phi[s][a] * self.phi[s][b] for s in range(M)) for a in range(M) for b in range(M)}
++        self.Z3 = {(a, b, c): sum(self.phi[s][a] * self.phi[s][b] * self.phi[s][c] for s in range(M))
++                   for a in range(M) for b in range(M) for c in range(M)}
++        self.K2 = {k: F(v, self.Z1 ** 2) for k, v in self.Z2.items()}
++        self.K3 = {k: F(v, self.Z1 ** 3) for k, v in self.Z3.items()}
++        self._cond: dict = {}
++
++    def cond(self, rec: tuple) -> list:
++        if rec in self._cond:
++            return self._cond[rec]
++        k = len(rec)
++        if k == 0:
++            out = [F(1, M)] * M
++        elif k == 1:
++            out = [self.K[rec[0]][s] for s in range(M)]
++        elif k == 2:
++            out = [F(self.phi[s][rec[0]] * self.phi[s][rec[1]], self.Z2[rec]) for s in range(M)]
++        else:
++            out = [F(self.phi[s][rec[0]] * self.phi[s][rec[1]] * self.phi[s][rec[2]], self.Z3[rec]) for s in range(M)]
++        self._cond[rec] = out
++        return out
++
++
++def tv(u, v) -> Fraction:
++    return sum(abs(x - y) for x, y in zip(u, v)) / 2
++
++
++def sensitivities(rule: Rule) -> dict:
++    out = {}
++    for k in (1, 2, 3):
++        best = F(0)
++        for rec in product(range(M), repeat=k):
++            base = rule.cond(rec)
++            for i in range(k):
++                for a2 in range(M):
++                    if a2 == rec[i]:
++                        continue
++                    rec2 = list(rec)
++                    rec2[i] = a2
++                    d = tv(base, rule.cond(tuple(rec2)))
++                    if d > best:
++                        best = d
++        out[k] = best
++    return out
++
++
++# ------------------------------------------------------------------ boxes, predecessor sets, laws
++def box_sites(dims):
++    return list(product(*[range(n) for n in dims]))
++
++
++def preds(x):
++    return [tuple(x[i] - (1 if j == i else 0) for i in range(len(x))) for j in range(len(x)) if x[j] > 0]
++
++
++def linear_extensions(sites):
++    remaining = set(sites)
++
++    def rec(chosen):
++        if not remaining:
++            yield tuple(chosen)
++            return
++        for x in sorted(remaining):
++            if all(p in chosen for p in preds(x)):
++                remaining.remove(x)
++                chosen.append(x)
++                yield from rec(chosen)
++                chosen.pop()
++                remaining.add(x)
++    return list(rec([]))
++
++
++def law_by_conditionals(rule: Rule, sites, v: dict) -> Fraction:
++    w = F(1)
++    for x in sites:
++        w *= rule.cond(tuple(v[y] for y in preds(x)))[v[x]]
++    return w
++
++
++def law_by_product_form(rule: Rule, sites, v: dict) -> Fraction:
++    w = F(1, M)
++    for x in sites:
++        A = preds(x)
++        for y in A:
++            w *= rule.K[v[y]][v[x]]
++        if len(A) == 2:
++            w /= rule.K2[(v[A[0]], v[A[1]])]
++        elif len(A) == 3:
++            w /= rule.K3[(v[A[0]], v[A[1]], v[A[2]])]
++    return w
++
++
++def rectangle_law(rule: Rule, dims):
++    """Dictionary law of the 2D monotone class on a rectangle (rows x cols)."""
++    sites = box_sites(dims)
++    law = {}
++    for vals in product(range(M), repeat=len(sites)):
++        v = dict(zip(sites, vals))
++        law[vals] = law_by_conditionals(rule, sites, v)
++    return sites, law
++
++
++def cube_pass(rule: Rule):
++    """One integer-weighted pass over the 6^8 configurations of the 2x2x2 box: one-site marginals, pair marginals, the
++    marginal on the down-set x3 = 0, the conditional laws of v_111 given v_000, and a sample check of the product form."""
++    sites = box_sites((2, 2, 2))
++    idx = {s: i for i, s in enumerate(sites)}
++    edges = [(idx[y], idx[x]) for x in sites for y in preds(x)]
++    two = [(idx[x], idx[preds(x)[0]], idx[preds(x)[1]]) for x in sites if len(preds(x)) == 2]
++    three = [(idx[x], idx[preds(x)[0]], idx[preds(x)[1]], idx[preds(x)[2]]) for x in sites if len(preds(x)) == 3]
++    n_one = sum(1 for x in sites if len(preds(x)) == 1)  # one-predecessor sites carry the kernel phi/Z_1
++    from math import lcm
++    l2 = 1
++    for v in rule.Z2.values():
++        l2 = lcm(l2, v)
++    l3 = 1
++    for v in rule.Z3.values():
++        l3 = lcm(l3, v)
++    # every configuration's denominator 6 Z_1^{n_one} prod Z_2 prod Z_3 divides this common multiple
++    L = M * rule.Z1 ** n_one * l2 ** len(two) * l3 ** len(three)
++    phi = rule.phi
++    Z2, Z3 = rule.Z2, rule.Z3
++    one = [[0] * M for _ in sites]
++    pair = {(i, j): [[0] * M for _ in range(M)] for i in range(8) for j in range(i + 1, 8)}
++    ds_idx = [idx[(0, 0, 0)], idx[(0, 1, 0)], idx[(1, 0, 0)], idx[(1, 1, 0)]]  # (x1, x2) as (row, col): 00, 01, 10, 11
++    ds = {}
++    cond111 = [[0] * M for _ in range(M)]  # [s000][s111]
++    i000, i111 = idx[(0, 0, 0)], idx[(1, 1, 1)]
++    total = 0
++    for v in product(range(M), repeat=8):
++        num = 1
++        for a, b in edges:
++            num *= phi[v[b]][v[a]]
++        den = M * rule.Z1 ** n_one
++        for x, a, b in two:
++            den *= Z2[(v[a], v[b])]
++        for x, a, b, c in three:
++            den *= Z3[(v[a], v[b], v[c])]
++        W = num * (L // den)
++        total += W
++        for i in range(8):
++            one[i][v[i]] += W
++        for (i, j), tab in pair.items():
++            tab[v[i]][v[j]] += W
++        key = (v[ds_idx[0]], v[ds_idx[1]], v[ds_idx[2]], v[ds_idx[3]])
++        ds[key] = ds.get(key, 0) + W
++        cond111[v[i000]][v[i111]] += W
++    assert total == L
++    return dict(L=L, one=one, pair=pair, ds=ds, cond111=cond111, sites=sites, idx=idx)
++
++
++# ------------------------------------------------------------------ the 2x2 plane transfer and its orbit quotient
++PLANE_SITES = ((0, 0), (0, 1), (1, 0), (1, 1))  # (x2, x3)
++
++
++def plane_transfer(rule: Rule, w, v) -> Fraction:
++    """P(w -> v) on the 2x2 cross-section: v00 records w00; v01 records w01, v00; v10 records w10, v00; v11 records w11, v01, v10."""
++    w00, w01, w10, w11 = w
++    v00, v01, v10, v11 = v
++    K, K2, K3 = rule.K, rule.K2, rule.K3
++    return (K[w00][v00]
++            * K[w01][v01] * K[v00][v01] / K2[(w01, v00)]
++            * K[w10][v10] * K[v00][v10] / K2[(w10, v00)]
++            * K[w11][v11] * K[v01][v11] * K[v10][v11] / K3[(w11, v01, v10)])
++
++
++def mu_2x2(rule: Rule) -> dict:
++    K, K2 = rule.K, rule.K2
++    return {v: F(1, M) * K[v[0]][v[1]] * K[v[0]][v[2]] * K[v[1]][v[3]] * K[v[2]][v[3]] / K2[(v[1], v[2])]
++            for v in product(range(M), repeat=4)}
++
++
++def group48():
++    axes = [(1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0, -1)]
++    idx = {a: i for i, a in enumerate(axes)}
++    elems = set()
++    for perm in permutations(range(3)):
++        for signs in product((1, -1), repeat=3):
++            mp = []
++            for a in axes:
++                b = [0, 0, 0]
++                for i in range(3):
++                    b[perm[i]] = signs[i] * a[i]
++                mp.append(idx[tuple(b)])
++            elems.add(tuple(mp))
++    return sorted(elems)
++
++
++def orbits_2x2():
++    states = list(product(range(M), repeat=4))
++    G = group48()
++    orbit_of, reps = {}, []
++    for s in states:
++        if s in orbit_of:
++            continue
++        o = len(reps)
++        reps.append(s)
++        stack = [s]
++        orbit_of[s] = o
++        while stack:
++            u = stack.pop()
++            for g in G:
++                gu = tuple(g[x] for x in u)
++                for cand in (gu, (gu[0], gu[2], gu[1], gu[3])):
++                    if cand not in orbit_of:
++                        orbit_of[cand] = o
++                        stack.append(cand)
++    sizes = [0] * len(reps)
++    for s in states:
++        sizes[orbit_of[s]] += 1
++    return states, orbit_of, reps, sizes
++
++
++def solve_stationary(Q):
++    """Exact stationary row vector of a stochastic matrix Q (fractions) by Gaussian elimination on (Q^T - I) with the
++    normalization row; returns the vector."""
++    n = len(Q)
++    A = [[Q[j][i] - (F(1) if i == j else F(0)) for j in range(n)] for i in range(n)]
++    A[n - 1] = [F(1)] * n
++    b = [F(0)] * (n - 1) + [F(1)]
++    for col in range(n):
++        piv = next(r for r in range(col, n) if A[r][col] != 0)
++        A[col], A[piv] = A[piv], A[col]
++        b[col], b[piv] = b[piv], b[col]
++        inv = 1 / A[col][col]
++        A[col] = [x * inv for x in A[col]]
++        b[col] *= inv
++        for r in range(n):
++            if r != col and A[r][col] != 0:
++                f = A[r][col]
++                A[r] = [x - f * y for x, y in zip(A[r], A[col])]
++                b[r] -= f * b[col]
++    return b
++
++
++def pair_law(law: dict, i: int, j: int) -> dict:
++    out = {}
++    for v, w in law.items():
++        out[(v[i], v[j])] = out.get((v[i], v[j]), F(0)) + w
++    return out
++
++
++def is_K_pair(rule: Rule, pl: dict) -> bool:
++    return all(pl[(a, b)] == F(1, M) * rule.K[a][b] for a in range(M) for b in range(M))
++
++
++# ============================================================================================ family A
++def family_a(checks: Checks, note_text: str, axiom_text: str, b02_text: str, b05_text: str) -> None:
++    checks.check("A1", all((ROOT / p).is_file() for p in AUDIT_INPUT_PATHS) and len(set(AUDIT_INPUT_PATHS)) == 4,
++                 "the four declared inputs exist (this note, the axiom memo, block 02, block 05)")
++    flat_ax = normalize_text(axiom_text)
++    checks.check("A2", all(n in flat_ax for n in AXIOM_NEEDLES), "the five axiom sentences used are present verbatim in the axiom memo")
++    f02, f05 = normalize_text(b02_text).lower(), normalize_text(b05_text).lower()
++    checks.check("A3", BLOCK02_CLAIM_ID in f02 and BLOCK02_FRAGMENT in f02 and BLOCK05_CLAIM_ID in f05 and BLOCK05_FRAGMENT in f05,
++                 "the parents' claim ids and the cited fragments (the row sweep; one law per linear extension) are present")
++    flat = normalize_text(note_text)
++    checks.check("A4", CLAIM_ID in flat and Path(__file__).name in flat, "this note carries its claim id and names this runner")
++    checks.check("A5", not any(t in p for p in AUDIT_INPUT_PATHS for t in ("UNIQUENESS_REGION", "TWO_SITE", "WIDTHS_4_5", "HERMITIAN_GAUSSIAN")),
++                 "blocks 03, 04, 06, 07 are not inputs")
++
++
++# ============================================================================================ family B
++def family_b(checks: Checks, report: dict) -> None:
++    rule = Rule((3, 1, 2))
++    sites = box_sites((2, 2, 2))
++    exts = linear_extensions(sites)
++    families = set()
++    for e in exts:
++        pos = {s: t for t, s in enumerate(e)}
++        fam = tuple(tuple(sorted(y for y in sites if sum(abs(a - b) for a, b in zip(x, y)) == 1 and pos[y] < pos[x])) for x in sites)
++        families.add(fam)
++    expected = tuple(tuple(sorted(preds(x))) for x in sites)
++    n_ext = len(exts) + (1 if mut("extensions_recorded_sets_wrong") else 0)
++    checks.check("B1", n_ext == 48 and len(families) == 1 and expected in families,
++                 f"Q1a: the {len(exts)} linear extensions of the 2x2x2 product order share one recorded-set family, the predecessor sets")
++    cp = cube_pass(rule)
++    report["cube"] = cp
++    L = cp["L"]
++    uniform = all(x * M == L for row in cp["one"] for x in row)
++    type_const = True
++    for (i, j), tab in cp["pair"].items():
++        by_type = {}
++        for a in range(M):
++            for b in range(M):
++                by_type.setdefault(orbit_type(a, b), set()).add(tab[a][b])
++        if mut("pair_type_constancy_broken"):
++            by_type["r"].add(-1)
++        type_const = type_const and all(len(s) == 1 for s in by_type.values())
++    checks.check("B2", uniform and type_const, "Q1b: on the cube every one-site marginal is 1/6 and every pair marginal is constant on each of the three pair types (28 pairs x 36 entries)")
++    idx = cp["idx"]
++    axis_ok = True
++    for perm in permutations(range(3)):
++        for (i, j), tab in cp["pair"].items():
++            x, y = sites[i], sites[j]
++            px, py = tuple(x[k] for k in perm), tuple(y[k] for k in perm)
++            a, b = idx[px], idx[py]
++            tab2 = cp["pair"][(a, b)] if a < b else [[cp["pair"][(b, a)][s][t] for s in range(M)] for t in range(M)]
++            if mut("axis_symmetry_broken") and perm == (1, 0, 2):
++                tab2 = [[tab2[s][t] + 1 for t in range(M)] for s in range(M)]
++            axis_ok = axis_ok and tab == tab2
++    checks.check("B3", axis_ok, "Q1c: the cube's pair marginals are invariant under the six permutations of the axes")
++    mu = mu_2x2(rule)
++    ds_ok = all(F(cp["ds"].get(v, 0), L) == mu[v] for v in mu)
++    if mut("downset_marginal_forged"):
++        ds_ok = not ds_ok
++    checks.check("B4", ds_ok, "Q1d: the cube law's marginal on the down-set x3 = 0 is the 2D 2x2 monotone law (all 1296 entries)")
++    ok_pf = True
++    for dims in ((1, 2, 2), (2, 2, 1)):
++        ss = box_sites(dims)
++        for vals in product(range(M), repeat=len(ss)):
++            v = dict(zip(ss, vals))
++            if law_by_conditionals(rule, ss, v) != law_by_product_form(rule, ss, v):
++                ok_pf = False
++                break
++    seed = 20260915
++    for _ in range(2000):
++        seed = (1103515245 * seed + 12345) % 2 ** 31
++        vals = [(seed >> (3 * k)) % M for k in range(8)]
++        v = dict(zip(sites, vals))
++        lhs, rhs = law_by_conditionals(rule, sites, v), law_by_product_form(rule, sites, v)
++        if mut("product_form_wrong"):
++            rhs *= 2
++        if lhs != rhs:
++            ok_pf = False
++            break
++    checks.check("B5", ok_pf, "Q1e: the product form (1/6) prod K / prod K_2 / prod K_3 equals the product of conditionals on all configurations of 1x2x2 and 2x2x1 and on 2000 sampled cube configurations")
++    ratios = {}
++    for tr in ((3, 1, 2), (5, 2, 4), (2, 2, 2)):
++        r3 = Rule(tr).K3
++        x, y, z = 0, 2, 4
++        num = r3[(x, x, x)] * r3[(y, y, x)] * r3[(y, x, z)] * r3[(x, y, z)]
++        den = r3[(y, x, x)] * r3[(x, y, x)] * r3[(x, x, z)] * r3[(y, y, z)]
++        ratios[tr] = num / den
++    if mut("three_body_ratio_forged"):
++        ratios[(3, 1, 2)] = F(1)
++    checks.check("B6", ratios[(3, 1, 2)] == F(2160, 2197) and ratios[(5, 2, 4)] == F(686196, 704969) and ratios[(2, 2, 2)] == 1,
++                 f"Q1f: the third-difference ratio of K_3 is {ratios[(3, 1, 2)]} at (3,1,2) and {ratios[(5, 2, 4)]} at (5,2,4) (pair-additive would give 1); 1 at the constant rule")
++
++
++# ============================================================================================ family C
++TRANSFER_TV = {(3, 1, 2): F(356696849, 806187919680), (5, 2, 4): F(17075751317037722924, 75640257098415067067163)}
++
++
++def family_c(checks: Checks, report: dict, exact: bool) -> None:
++    states = list(product(range(M), repeat=4))
++    results = {}
++    for tr in ((3, 1, 2), (5, 2, 4), (2, 2, 2)):
++        rule = Rule(tr)
++        mu = mu_2x2(rule)
++        nu = {v: F(0) for v in states}
++        row_min, rows_ok = None, True
++        for w in states:
++            rs = F(0)
++            mw = mu[w]
++            for v in states:
++                pv = plane_transfer(rule, w, v)
++                rs += pv
++                nu[v] += mw * pv
++                if row_min is None or pv < row_min:
++                    row_min = pv
++            rows_ok = rows_ok and rs == 1
++        diff = sum(1 for v in states if nu[v] != mu[v])
++        tvd = sum(abs(nu[v] - mu[v]) for v in states) / 2
++        results[tr] = dict(nu=nu, mu=mu, diff=diff, tv=tvd, row_min=row_min, rows_ok=rows_ok, rule=rule)
++    report["transfer"] = results
++    r312, r524, r222 = results[(3, 1, 2)], results[(5, 2, 4)], results[(2, 2, 2)]
++    inv_claim = (r312["diff"] == 0) if mut("transfer_invariance_claimed") else (r312["diff"] == 1296 and r524["diff"] == 1296)
++    checks.check("C1", inv_claim, f"Q2d: the 2x2 plane transfer moves the 2D law on {r312['diff']}/1296 states at (3,1,2) and {r524['diff']}/1296 at (5,2,4)")
++    tv_ok = r312["tv"] == TRANSFER_TV[(3, 1, 2)] and r524["tv"] == TRANSFER_TV[(5, 2, 4)]
++    if mut("transfer_tv_literal_off"):
++        tv_ok = r312["tv"] == TRANSFER_TV[(3, 1, 2)] + F(1, 10 ** 12)
++    checks.check("C2", tv_ok, f"Q2d: TV(mu P, mu) = {r312['tv']} = {dec(r312['tv'], 10)} at (3,1,2); {dec(r524['tv'], 10)} at (5,2,4) (exact literal under --exact)")
++    const_ok = (r222["diff"] == 0 and r222["tv"] == 0)
++    if mut("constant_control_broken"):
++        const_ok = r222["diff"] > 0
++    checks.check("C3", const_ok, "Q2d control: at the constant rule (2,2,2) the transfer leaves the (uniform) 2D law fixed on all 1296 states")
++    rule = r312["rule"]
++    sites23, law23 = rectangle_law(rule, (2, 3))
++    sub_ok = True
++    for sub in (((0, 0), (0, 1), (1, 0), (1, 1)), ((0, 1), (0, 2), (1, 1), (1, 2))):
++        sub_idx = [sites23.index(s) for s in sub]
++        marg = {}
++        for v, w in law23.items():
++            key = tuple(v[i] for i in sub_idx)
++            marg[key] = marg.get(key, F(0)) + w
++        mu = mu_2x2(rule)
++        sub_ok = sub_ok and all(marg[v] == mu[v] for v in mu)
++    row1 = [sites23.index((1, j)) for j in range(3)]
++    marg = {}
++    for v, w in law23.items():
++        key = tuple(v[i] for i in row1)
++        marg[key] = marg.get(key, F(0)) + w
++    chain_ok = all(marg[(a, b, c)] == F(1, M) * rule.K[a][b] * rule.K[b][c] for a in range(M) for b in range(M) for c in range(M))
++    if mut("sub_rectangle_consistency_broken"):
++        chain_ok = not chain_ok
++    checks.check("C4", sub_ok and chain_ok, "Q2b: the 2x3 law's marginals on both 2x2 sub-rectangles are the 2x2 law and its second row is the K-chain (translate consistency in two dimensions)")
++    nu = r312["nu"]
++    bnd = is_K_pair(rule, pair_law(nu, 0, 2)) and is_K_pair(rule, pair_law(nu, 0, 1))
++    inner = is_K_pair(rule, pair_law(nu, 1, 3)) or is_K_pair(rule, pair_law(nu, 2, 3))
++    anti = all(pair_law(nu, 1, 2)[(a, b)] == F(1, M) * rule.K2[(a, b)] for a in range(M) for b in range(M))
++    uni = all(sum(w for v, w in nu.items() if v[i] == s) == F(1, M) for i in range(4) for s in range(M))
++    if mut("boundary_pair_claim_wrong"):
++        inner = True
++    checks.check("C5", bnd and not inner and not anti and uni, "Q2d: after one transfer at (3,1,2) the coordinate-line pairs stay (1/6)K-pairs and the one-site marginals uniform, while the interior pairs are not (1/6)K-pairs and the anti-diagonal is not a (1/6)K^2-pair")
++    if exact:
++        print(f"exact TV(mu P, mu) at (5,2,4) = {r524['tv']}")
++
++
++# ============================================================================================ family D
++STATIONARY_TV_312 = F(53632625669348618474616527326865874982994562247, 117947293693604613914719640058669585736649320217760)
++
++
++def family_d(checks: Checks, report: dict, exact: bool) -> None:
++    res = report["transfer"][(3, 1, 2)]
++    rule = res["rule"]
++    rows_ok, row_min = res["rows_ok"], res["row_min"]
++    if mut("transfer_row_sums_off"):
++        rows_ok = False
++    checks.check("D1", rows_ok and row_min > 0, f"Q3a: P on the 2x2 cross-section is stochastic (all 1296 rows sum to one) and strictly positive (minimal entry {row_min})")
++    states, orbit_of, reps, sizes = orbits_2x2()
++    n = len(reps)
++    Q = [[F(0)] * n for _ in range(n)]
++    for o, w in enumerate(reps):
++        for v in states:
++            Q[o][orbit_of[v]] += plane_transfer(rule, w, v)
++    rep_ok = True
++    for o in range(n):
++        members = [s for s in states if orbit_of[s] == o]
++        w = members[-1]
++        row = [F(0)] * n
++        for v in states:
++            row[orbit_of[v]] += plane_transfer(rule, w, v)
++        rep_ok = rep_ok and row == Q[o]
++    n_rep = n + (1 if mut("orbit_count_wrong") else 0)
++    checks.check("D2", n_rep == 32 and rep_ok and all(sum(r) == 1 for r in Q), f"Q3e: the internal group (48) with the plane transpose gives {n} orbits of the 1296 plane states; the quotient rows are representative-independent (last member of every orbit) and stochastic")
++    pi_orb = solve_stationary(Q)
++    if mut("stationary_solve_forged"):
++        pi_orb = [F(1, n)] * n
++    stat = all(sum(pi_orb[i] * Q[i][j] for i in range(n)) == pi_orb[j] for j in range(n))
++    pos = all(x > 0 for x in pi_orb) and sum(pi_orb) == 1
++    checks.check("D3", stat and pos, "Q3a/e: the exact stationary law of the quotient solves pi Q = pi, is positive and sums to one (unique by the strict positivity of P)")
++    pi = {s: pi_orb[orbit_of[s]] / sizes[orbit_of[s]] for s in states}
++    report["pi"] = pi
++    line_ok = is_K_pair(rule, pair_law(pi, 0, 2)) and is_K_pair(rule, pair_law(pi, 0, 1))
++    uni = all(sum(w for v, w in pi.items() if v[i] == s) == F(1, M) for i in range(4) for s in range(M))
++    if mut("coordinate_line_pair_wrong"):
++        line_ok = not line_ok
++    checks.check("D4", line_ok and uni, "Q3c: under the stationary 2x2 plane law the two coordinate-line pairs are (1/6)K-pairs and the one-site marginals are uniform")
++    mu = res["mu"]
++    tvd = sum(abs(pi[v] - mu[v]) for v in states) / 2
++    inner = pair_law(pi, 1, 3)
++    inner_pp = inner[(0, 0)]
++    tv_ok = tvd == STATIONARY_TV_312
++    if mut("stationary_tv_literal_off"):
++        tv_ok = tvd == STATIONARY_TV_312 + F(1, 10 ** 30)
++    checks.check("D5", tv_ok and inner_pp != F(1, 24) and not is_K_pair(rule, inner),
++                 f"Q3e: TV(pi_2, mu_2D) = {dec(tvd, 10)} at (3,1,2) (exact literal under --exact); the interior pair ((0,1),(1,1)) has P(+x,+x) = {dec(inner_pp, 10)} against (1/6)K(+x,+x) = {dec(F(1, 24), 10)}: not a K-pair")
++    report["Q"] = Q
++    if exact:
++        print(f"exact TV(pi_2, mu_2D) = {tvd}")
++        print("stationary orbit masses: " + " ".join(f"{sizes[o]}:{pi_orb[o]}" for o in range(n)))
++
++
++# ============================================================================================ family E
++SENS = {
++    (3, 1, 2): (F(1, 6), F(30, 143), F(27, 110)),
++    (5, 2, 4): (F(3, 23), F(65, 434), F(10650, 63407)),
++    (7, 3, 5): (F(2, 15), F(910, 5609), F(5782, 30885)),
++    (2, 1, 2): (F(1, 11), F(1, 10), F(1, 9)),
++    (3, 2, 2): (F(1, 13), F(39, 406), F(234, 2077)),
++    (5, 4, 4): (F(1, 25), F(25, 546), F(500, 9701)),
++    (11, 10, 10): (F(1, 61), F(671, 38502), F(73810, 3994861)),
++    (2, 2, 2): (F(0), F(0), F(0)),
++}
++CUBE_INFLUENCE_312 = F(273651254, 10658734515)
++
++
++def family_e(checks: Checks, report: dict, exact: bool) -> None:
++    computed = {tr: sensitivities(Rule(tr)) for tr in TRIPLES}
++    lit_ok = all((computed[tr][1], computed[tr][2], computed[tr][3]) == SENS[tr] for tr in TRIPLES)
++    if mut("sensitivity_literal_off"):
++        lit_ok = computed[(3, 1, 2)][3] == SENS[(3, 1, 2)][2] + F(1, 1000)
++    c = {tr: max(computed[tr].values()) for tr in TRIPLES}
++    checks.check("E1", lit_ok, "Q4: c_1, c_2, c_3 at the eight triples equal the note's exact literals; " + "; ".join(f"{tr}: c={c[tr]}" for tr in TRIPLES[:3]))
++    inside = {tr: 3 * c[tr] < 1 for tr in TRIPLES}
++    region_ok = all(inside.values()) and 3 * c[(2, 1, 2)] == F(1, 3)
++    if mut("region_membership_flipped"):
++        region_ok = not inside[(3, 1, 2)]
++    checks.check("E1b", region_ok, f"Q4 region: 3c < 1 at all eight triples (3c = 1/3 at (2,1,2)); at the silent triples 3c = {3 * c[(3, 1, 2)]}, {3 * c[(5, 2, 4)]}, {3 * c[(7, 3, 5)]}")
++    cp = report["cube"]
++    L = cp["L"]
++    cond = cp["cond111"]
++    best = F(0)
++    for s in range(M):
++        for s2 in range(s + 1, M):
++            ls = [F(cond[s][t] * M, L) for t in range(M)]
++            ls2 = [F(cond[s2][t] * M, L) for t in range(M)]
++            best = max(best, tv(ls, ls2))
++    bound = 6 * c[(3, 1, 2)] ** 3
++    infl_ok = best == CUBE_INFLUENCE_312 and best <= bound
++    if mut("influence_bound_reversed"):
++        infl_ok = best >= bound
++    checks.check("E2", infl_ok, f"Q4a: on the cube at (3,1,2) the exact influence of v_000 on v_111 is {best} = {dec(best)} <= N c^3 = 6 (27/110)^3 = {bound} = {dec(bound)}")
++    rule = Rule((3, 1, 2))
++    c2d = max(computed[(3, 1, 2)][1], computed[(3, 1, 2)][2])
++    sites23, law23 = rectangle_law(rule, (2, 3))
++    i00, i12 = sites23.index((0, 0)), sites23.index((1, 2))
++    best2 = F(0)
++    for s in range(M):
++        for s2 in range(s + 1, M):
++            ls = [F(0)] * M
++            ls2 = [F(0)] * M
++            for v, w in law23.items():
++                if v[i00] == s:
++                    ls[v[i12]] += w
++                if v[i00] == s2:
++                    ls2[v[i12]] += w
++            best2 = max(best2, tv([x * M for x in ls], [x * M for x in ls2]))
++    bound2 = 3 * c2d ** 3
++    rect_ok = best2 <= bound2
++    if mut("rectangle_influence_bound_off"):
++        rect_ok = best2 <= bound2 / 10
++    checks.check("E3", rect_ok, f"Q4a (two dimensions): on 2x3 at (3,1,2) the exact influence of v_00 on v_12 is {dec(best2)} <= N c^3 = 3 (30/143)^3 = {dec(bound2)}")
++    Q = report["Q"]
++    n = len(Q)
++    theta = c[(3, 1, 2)] / (1 - 2 * c[(3, 1, 2)])
++    Qn = [row[:] for row in Q]
++    sector_ok = True
++    labels = []
++    for step in range(1, 7):
++        d = max(sum(abs(Qn[o1][o] - Qn[o2][o]) for o in range(n)) / 2 for o1 in range(n) for o2 in range(n))
++        th = theta ** step
++        if mut("sector_contraction_forged"):
++            d = th * 2
++        sector_ok = sector_ok and d <= th
++        labels.append(f"n={step}: {dec(d, 6)} <= {dec(th, 6)}")
++        Qn = [[sum(Qn[i][k] * Q[k][j] for k in range(n)) for j in range(n)] for i in range(n)]
++    checks.check("E5", sector_ok and theta == F(27, 56), "Q4c: the maximal TV between rows of the quotient's n-th power is below theta^n (theta = 27/56) for n = 1..6; " + "; ".join(labels[:3]))
++    cov_ok = True
++    worst = F(0)
++    sites = cp["sites"]
++    for (i, j), tab in cp["pair"].items():
++        x, y = sites[i], sites[j]
++        meet = tuple(min(a, b) for a, b in zip(x, y))
++        rho = max(sum(a - m for a, m in zip(x, meet)), sum(b - m for b, m in zip(y, meet)))
++        bnd = 4 * (3 * c[(3, 1, 2)]) ** (rho - 1)
++        for a in range(M):
++            for b in range(M):
++                cov = F(tab[a][b], L) - F(1, 36)
++                worst = max(worst, abs(cov))
++                cov_ok = cov_ok and abs(cov) <= bnd
++    if mut("covariance_bound_denied"):
++        cov_ok = worst > 4
++    checks.check("E6", cov_ok, f"Q4b: every axis-indicator covariance of every cube pair (largest {dec(worst)}) satisfies |Cov| <= 4 (3c)^(rho-1); the bound is not informative at cube distances and is recorded as such")
++    two_d = 2 * c2d
++    if mut("two_dimensional_region_off"):
++        two_d = F(1)
++    checks.check("E7", two_d == F(60, 143) and two_d < 1, f"Q4 (two dimensions): 2 max(c_1, c_2) = {two_d} < 1 at (3,1,2): the plane law's correlations decay exponentially there")
++    if exact:
++        for tr in TRIPLES:
++            print(f"exact sensitivities {tr}: c1={computed[tr][1]} c2={computed[tr][2]} c3={computed[tr][3]}")
++
++
++# ============================================================================================ family F
++FENCES = (
++    "This note describes the monotone class of formation orders on boxes, columns and `Z^3` for the declared rule; it states nothing about the static law of `Z^3` beyond citing block 03's region and the silent triples, nothing about any order or corner being physical, nothing for `c ≥ 1/3` beyond the finite-box bounds, and nothing about the distinctness of the eight corner laws on `Z^3`.",
++    "No plane, bridge, Born or gravity statement enters this note; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
++    "no value, constant or theorem is imported as authority.",
++)
++FORBIDDEN = (
++    "the physical order", "for every coupling", "unique on Z^3", "long-range order exists", "Coulomb phase",
++    "the static law of Z^3 is", "selects the", "fires wake condition", "the Bridge weights", "the Bridge conjecture",
++    "certified", "phase transition", "several static laws", "washes out", "toward the plane", "the trend",
++)
++CLAIM_INJECTIONS = {
++    "claim_for_every_coupling": "The decay holds for every coupling.",
++    "claim_physical_order": "The monotone class is the physical order.",
++}
++CLASSICAL_NAMES = ("Doeblin", "Kolmogorov", "Krylov", "Bogolyubov", "Perron", "Frobenius", "Dobrushin", "Pickard", "Vasershtein", "Toom")
++ALLOWED_NAME_SECTIONS = ("Prior art and what is new", "Imports")
++SCAN_MARKER = "float-scan-marker-line"
++
++
++def family_f(checks: Checks, note_text: str) -> None:
++    text = note_text
++    for name, phrase in CLAIM_INJECTIONS.items():
++        if mut(name):
++            text = text + "\n" + phrase
++    flat = normalize_text(text)
++    checks.check("F1", all(f in flat for f in FENCES), "the note carries the three fence sentences verbatim")
++    hits = [ph for ph in FORBIDDEN if ph.lower() in flat.lower()]
++    checks.check("F2", not hits, f"the note contains no forbidden phrase ({len(hits)} hits)")
++    source_lines = Path(__file__).read_text(encoding="utf-8").splitlines()
++    scan = [ln for ln in source_lines if SCAN_MARKER not in ln]
++    float_literal = re.compile(r"(?<![\w.])\d+\.\d+(?![\w.])|(?<![\w.])\d+[eE][-+]?\d+(?![\w.])")
++    conversion = "flo" + "at("  # float-scan-marker-line
++    evalf = "eva" + "lf("  # float-scan-marker-line
++    numeric = "N" + "("  # float-scan-marker-line
++    nsimp = "nsimp" + "lify("  # float-scan-marker-line
++    bad = [ln for ln in scan if float_literal.search(ln) or conversion in ln or evalf in ln or numeric in ln or nsimp in ln]
++    checks.check("F3", not bad and len(scan) > 300, f"runner source: no floating-point literal or conversion call ({len(bad)} hits)")
++    sections = re.split(r"^## ", text, flags=re.M)
++    offenders = []
++    for sec in sections[1:]:
++        title = sec.splitlines()[0].strip()
++        body = sec
++        if mut("claim_classical_name_in_theorem") and title.startswith("Theorem Q3"):
++            body = body + " (this is the Doeblin bound)"
++        if any(title.startswith(a) for a in ALLOWED_NAME_SECTIONS):
++            continue
++        for nm in CLASSICAL_NAMES:
++            if nm in body:
++                offenders.append((title[:30], nm))
++    checks.check("F4", not offenders, f"the classical names appear only under Prior art and Imports ({len(offenders)} offenders)")
++
++
++# ============================================================================================ family G
++N5_LINES = (
++    "per_element: executed — every one of the 1296 plane states under the 2x2 transfer at (3,1,2), (5,2,4) and the constant rule; every (s, s') for the cube influence; every axis-indicator pair on the cube; the third-difference ratio",
++    "per_site: executed — the recorded set of every site of every one of the 48 extensions; the one-site marginals of every cube site and of every plane site under mu P and under pi_2",
++    "per_mode: executed — the quotient's 32 orbits and its n-th powers for n = 1..6 against theta^n; the three sensitivities c_1, c_2, c_3 at eight triples over all one-entry changes",
++    "per_block: executed — the 2x2 stationary plane law by orbit reduction; the 2x3 rectangle's sub-rectangle marginals and its second row; the cube's down-set marginal on x3 = 0; the 1x2x2 and 2x2x1 product forms",
++    "lattice_wide: proved for c < 1/3 (Q4e), executed only through the region membership of eight triples; nothing for c >= 1/3 beyond the finite-box bounds; nothing about the static law of Z^3",
++)
++
++
++def family_g(checks: Checks) -> None:
++    for line in N5_LINES:
++        print(line)
++    checks.check("G1", len(N5_LINES) == 5 and all(len(l) >= 40 for l in N5_LINES), "the five N5 resolution lines are printed")
++
++
++def main(argv) -> int:
++    global ACTIVE_MUTATION
++    if "--list-mutations" in argv:
++        for name, fam in MUTATION_GATE.items():
++            print(f"{name} {fam}")
++        return 0
++    if "--mutation" in argv:
++        ACTIVE_MUTATION = argv[argv.index("--mutation") + 1]
++        if ACTIVE_MUTATION not in MUTATION_GATE:
++            print(f"unknown mutation {ACTIVE_MUTATION}")
++            return 2
++    exact = "--exact" in argv
++    checks = Checks()
++    note_text = NOTE_PATH.read_text(encoding="utf-8") if NOTE_PATH.is_file() else ""
++    axiom_text = AXIOM_PATH.read_text(encoding="utf-8") if AXIOM_PATH.is_file() else ""
++    b02_text = BLOCK02_PATH.read_text(encoding="utf-8") if BLOCK02_PATH.is_file() else ""
++    b05_text = BLOCK05_PATH.read_text(encoding="utf-8") if BLOCK05_PATH.is_file() else ""
++    print("AUDIT_INPUT_PATHS:")
++    for p in AUDIT_INPUT_PATHS:
++        print(f"  {p}")
++    print(f"AUDIT_TIMEOUT_SEC: {AUDIT_TIMEOUT_SEC}")
++    print("scope: the 3D monotone formation law — the box law and its three-body term; the first plane cannot be summed out (2x2 witness); the plane chain's exact stationary 2x2 law; the sensitivities, the region 3c < 1, the influence bound; exact; no order selected")
++    print(f"mutation: {ACTIVE_MUTATION or 'none'}")
++    report: dict = {}
++    family_a(checks, note_text, axiom_text, b02_text, b05_text)
++    family_b(checks, report)
++    family_c(checks, report, exact)
++    family_d(checks, report, exact)
++    family_e(checks, report, exact)
++    family_f(checks, note_text)
++    family_g(checks)
++    if ACTIVE_MUTATION:
++        observed = "".join(sorted(set(checks.failed_families))) or "none"
++        print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
++        print(f"mutation_family_observed: {observed}")
++    failed = checks.finish()
++    return 1 if failed else 0
++
++
++if __name__ == "__main__":
++    raise SystemExit(main(sys.argv[1:]))

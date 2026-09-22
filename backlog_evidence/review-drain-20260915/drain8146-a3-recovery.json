@@ -1,0 +1,12 @@
+{
+  "finding": "A3 stale prose needle after legitimate parent narrowing; four successful primaries are unchanged and reusable.",
+  "failed_execution": "drain8146-execution-8146.json",
+  "failed_cache": "drain8146-failed-a3-cache.txt",
+  "failed_source": "drain8146-before-a3-repair.py",
+  "changed_source": "scripts/admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_2026_09_15.py",
+  "before_sha256": "f6a6d224503d25fa54a6e251e1f5975d4e54588f3087d0f54ae82fb294843fb7",
+  "after_sha256": "063e4d2913cf1e21ceff33dee707d79914ce13a73fc29a8b34df3043201390a1",
+  "repair": "Require the actual unchanged parent theorem title: the plane chain and the column law, alongside its claim ID; preserve rectangle parent proof check.",
+  "tree": "ccaf81f2491137f966b7305ed819833f3a9322e7",
+  "rerun": "Only affected fifth primary after original reviewer confirmation and cheap updated receipt, under same300s/3GiB cap."
+}

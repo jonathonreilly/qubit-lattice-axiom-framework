@@ -1,0 +1,1236 @@
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+index 7686affdc3..b60429ca3f 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+@@ -27,3 +27,12 @@
+ | F9.2 specification uniqueness under full support | two continuous finite-range kernels a.s. equal | every cylinder charged ⇒ equal everywhere | full support (proved from box positivity) | exact | candidate-complete | L2 | — |
+ | F9.3 dependency-set combinatorics | offsets κ_i e_i − κ_j e_j and their grouping | point reflection preserves the set, not the grouping | within-pair witness | exact | candidate-complete | C1–C3 | — |
+ | F9.4 column reversibility | J = πP versus J^T | the reversed class is the reversed chain | none | exact at 2x2 | candidate-complete | D1–D5 | larger cross-sections not computed |
++
++## Block 10 — the recorded-set Gibbs theorem (2026-09-15)
++
++| Family | Object/formulation | Mechanism/invariant | Terminal obligation | Strength vs target | Status | Concrete evidence | Reopen condition |
++|---|---|---|---|---|---|---|---|
++| F10.1 regrouping | the product of conditionals over an order | every edge recorded once by its later endpoint | none | exact | candidate-complete | T1 (executed on 48 orders) | — |
++| F10.2 vacuum-normalized potential | Möbius inversion on the subset lattice | uniqueness; clique support under a Markov hypothesis | none | exact | candidate-complete | T3(a) re-proved | — |
++| F10.3 mixed differences | `Δ_k log K_k` at the vacuum | nonzero iff a genuine `k`-body term | nonzero at every nonconstant triple (open) | exact where executed | candidate-complete at two triples | `k = 2..6` ratios | a triple with a vanishing difference |
++| F10.4 bipartite obstruction | co-recorded neighbors are non-adjacent | even coordinate sums | none | exact | candidate-complete | T4 | a non-bipartite window (none on `Z^3`) |
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
+index df63d7754c..4e16f67f58 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
+@@ -55,3 +55,10 @@
+ - Scaffolding: the dependency offsets κ_i e_i − κ_j e_j; the 24 proper rotations as signed permutations of determinant +1; the reversed transfer P*(v,w) = π(w)P(w,v)/π(v).
+ - External references (re-proved or cited definition-level): DLR equations for finite-range specifications; uniqueness of conditional probabilities; the ergodic decomposition (used only in R3(c)'s last sentence).
+ - Counterfactual pass: a triple with vanishing third difference would silence R1's dependence and hence R2–R3 (not known to exist among nonconstant triples); outside the region the Z^3 object is not constructed; on a larger cross-section the irreversibility is expected but not computed; the random-priority law (covariant by construction) has no corner and no sweep imprint — its Markov graph is not analyzed here.
++
++## Block 10 (2026-09-15) — the recorded-set Gibbs theorem
++- Dependencies: `minimal_axioms`; block 01 (on main; Theorem B and the formation-law definition); blocks 08 and 09 (stacked; the monotone-class instances and the `Z^3` corollary by citation). All proposed, unaudited.
++- Named premises: the records-only reading; positivity (the canonical potential of a positive law); the six-axis menu; the product form of the rule (T1's regrouping); the nonzero mixed differences `Δ_k log K_k` for the sizes that occur (executed `k ≤ 6` at two triples).
++- Scaffolding: the vacuum value `+x`; the mixed-difference ratios; the plaquette (cycle4) and the star (star4) with their 24 orders each.
++- External references (re-proved at scope): the uniqueness of the vacuum-normalized potential of a positive law on a finite set and its clique property (the Grimmett argument for Hammersley–Clifford).
++- Counterfactual pass: a non-product covariant rule (the sum rule) has no regrouping of T1's form — outside; a menu on which co-recorded neighbors could be adjacent (a non-bipartite carrier) would break T4's obstruction; a nonconstant triple with a vanishing mixed difference would make the corresponding `k`-body term vanish (not known to exist).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block10_findings.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block10_findings.md
+new file mode 100644
+index 0000000000..69f4d96913
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block10_findings.md
+@@ -0,0 +1,11 @@
++# Refuting pass — block 10 (supervisor-run, disjoint machinery; 2026-09-15)
++
++`specs/supervisor_control_block10_refuter.py` (output in `.out.txt`); not an independent review.
++
++| item | runner's route | refuting route | result |
++|---|---|---|---|
++| the plaquette's `{b, c}` term | Möbius inversion of `log μ` over the 16 subsets at the witness | the closed form of T3(b): `exp(−Δ_2 log K_2(b, c))` from `Z_2` values | `12/13`, equal |
++| the star's leaf triple | Möbius inversion over the 8 subsets of the leaves | `exp(−Δ_3 log K_3)` from `Z_3` values | `165/169`, equal |
++| the `k`-body verdicts `k = 2..6` | mixed-difference ratios with the vacuum at `+x` | the same with the vacuum at `−x` (different values, same zero/nonzero verdict) | nonzero for every `k` |
++
++Attempts to refute (nothing refuted): T3(a)'s clique argument — the grouping of the four subsets differing at a non-adjacent pair `x, y` yields brackets that are log-ratios of the conditional at `x` evaluated at two configurations differing only at `y`, which the Markov property equates; T3(b)'s maximality — a non-maximal set's term also receives contributions from the sets containing it, so only maximal sets are certified; T4's bipartiteness — two neighbors of a site differ by a vector of even coordinate sum. Findings: F1 (fixed) the token "certified" in the note; F2 (fixed) classical names in four sections outside Prior art / Imports (runner F4). Verdict of this pass: PASS-NO-BLOCKER at the supervisor's own standard, pending the owner's independent review.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block10.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block10.md
+new file mode 100644
+index 0000000000..7bdb4f61ea
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block10.md
+@@ -0,0 +1,15 @@
++# Claim status certificate — block 10 (close, 2026-09-15)
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: upstream_support
++reachability_to_target: supports
++conditional_surface_status: "exact on every finite window and every order for T1, T2, T5 and T4's forward direction; T3(b) and T4's converse at triples where the relevant mixed differences are nonzero (executed k = 2..6 at (3,1,2) and (5,2,4)); T6 executed on the plaquette and the star; conditional on the records-only reading, positivity, the six-axis menu; infinite volume only by citation of blocks 08-09"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++claim_type_reason: "regrouping of the product of conditionals; Möbius inversion on the subset lattice with the clique property re-proved; mixed differences as exact rational ratios; two executed canonical potentials"
++dependency_classes: "one premise node (minimal_axioms); block 01 (on main), blocks 08 and 09 (stacked) — proposed, unaudited; #8102 cited as context only"
++open_imports: "the records-only reading; positivity; the six-axis menu; the product form of the rule; the nonzero mixed differences at the executed triples"
++review_loop_disposition: pending (supervisor-run block; author checks only)
++independence_class: "single seat (Fable, supervisor): control, contract with a lens pass, primary, refuting pass by the closed form and a moved vacuum, fold"
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block10.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block10.md
+new file mode 100644
+index 0000000000..3bb7108eb8
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block10.md
+@@ -0,0 +1,23 @@
++# GOAL — block 10: the recorded-set Gibbs theorem — every formation law is a Gibbs law whose Markov graph is the recorded-set graph (launched 2026-09-15)
++
++Branch `physics-loop/admissibility-induced-law-block10-recorded-set-gibbs-theorem-20260915`, cut from block 09's tip; stacked PR (base = block 09's branch). The note uses block 08's product-form regrouping and the third-difference criterion, block 09's L2 for the `Z^3` corollary, and block 01's Theorem B for the equality case; the finite-window theorem itself is self-contained. Supervisor-run seats. Control first: `specs/supervisor_control_block10_recorded_set.py` (+ `.out.txt`).
++
++## Exact target contract
++
++| field | content |
++|---|---|
++| Target statement | For the six-axis product rule under the records-only reading, on any finite window `W` (a finite induced subgraph of `Z^3`) and any total order `σ` with recorded sets `A_x` (the neighbors of `x` that formed earlier): (T1) the formation law is `μ_σ(v) = Π_{x: A_x = ∅} (1/6) · Π_{edges} K(v_x, v_y) / Π_{x: |A_x| ≥ 2} K_{|A_x|}(v_{A_x})` — a Gibbs law for the potential with `−log K` on every edge of `W` and `+log K_k` on every recorded set of size `k ≥ 2`; (T2) `μ_σ` is a Markov field for the recorded-set graph `G_σ = E(W) ∪ ⋃_x {pairs inside A_x}`; (T3) the canonical (vacuum-normalized) potential of `μ_σ` — unique for a positive law — has a nonzero term on every maximal recorded set `A` of size `k ≥ 2` whose `k`-th mixed difference of `log K_k` is nonzero (executed nonzero for `k = 2, …, 6` at `(3,1,2)` and `(5,2,4)`; zero at the constant rule), and the pairs inside such a set are never adjacent (the lattice is bipartite); hence (T4) `μ_σ` is a nearest-neighbor Markov field if and only if every recorded set has at most one element — block 01's condition, now for the Markov property rather than for equality with the static law — and when it fails `μ_σ` is not Markov for any graph missing a pair of co-recorded neighbors; (T5) the induced interaction has range `√2` and `2` (orthogonal and opposite co-recorded neighbors) and genuine `k`-body terms up to `k = 6`; (T6) executed canonical potentials: the plaquette with its last site recording two (pair term `12/13` on the co-recorded non-adjacent pair, zero on the other non-edge on all 1296 configurations) and the star with its center last (three-body term on the leaves). (T7) On `Z^3`, for the monotone class in block 08's region, block 09's L2 turns T4 into the infinite-volume statement already proved there; for other order classes the infinite-volume law is not constructed. |
++| Quantifiers / domain | every finite window and every total order for T1–T2 and the structure of T3–T5; the nonzero mixed differences executed at two triples for `k ≤ 6` (every recorded set has at most six elements); the two executed windows for T6 |
++| Allowed premises | `minimal_axioms`; the supplied readings of blocks 01–05, 08, 09; block 01's Theorem B and definition of the formation law; block 08's Q1e–f; block 09's L2 |
++| Forbidden weakenings | no physical order; no static-law statement beyond block 01's equality case; no infinite-volume claim for non-monotone classes |
++| Required edge cases | the constant rule (all terms vanish; independent uniform law); a window and order with every `|A_x| ≤ 1` (a tree swept from a leaf; `μ_σ` = the static law, block 01); recorded sets that are contained in others (only maximal ones are certified) |
++| Completion witness | the finite-window proof of T1–T5 with the canonical-potential uniqueness re-proved; the exact mixed-difference ratios for `k = 2..6`; the plaquette and star canonical potentials |
++| Outcomes that do not count | a restatement of block 01's Theorem B; a Markov statement without the canonical-potential argument |
++
++## Supervisor lens (one seat)
++- *Refuter:* "T4 is block 01's Theorem B." — No: B says the formation law equals the static law iff `|A_x| ≤ 1`; T4 says it is not even a nearest-neighbor Markov field otherwise — a different conclusion needing the canonical potential's uniqueness and the `k`-body irreducibility, neither in block 01. "Nonzero canonical term on a non-clique implies non-Markov — is the direction right?" — Yes: a positive law Markov for `G` has a canonical potential supported on cliques of `G` (re-proved); a nonzero term on a non-clique contradicts it. "Overlapping recorded sets could cancel terms." — Only maximal recorded sets are certified; a size-`≥ 2` recorded set is contained in a maximal one of size `≥ 2`.
++- *Prior art:* block 01 (Theorem B; Brook; Hammersley–Clifford referenced only); blocks 08–09 and the plane-law note (the monotone-class cases of T1–T3); #8102 (the multiset key: the law depends on the order only through the multiset of recorded sets of size `≥ 2` — consistent with T1, which exhibits that dependence explicitly). None states the Markov-graph classification for arbitrary orders.
++- *Axiom reading:* nothing selected; the theorem describes what any order induces.
++- *Scope:* finite windows exact; `Z^3` only through block 09.
++
++Forbidden in the note: "the physical order", "for every coupling", "selects the", "fires wake condition", "the Bridge weights", "the Bridge conjecture", "certified", "the static law of Z^3 is unique", "arrow of time is derived".
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+index 66a47d231d..21a57ccbe8 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+@@ -34,3 +34,6 @@ Independent PR against `main` (head on `physics-loop/admissibility-induced-law-b
+ 
+ ## 2026-09-15 block 09 opened for review as PR #8139 (supervisor)
+ Stacked on block 08 (#8138; the stack rebased onto main `7495de3076`, which carries the landed plane-law note). Block 09 = the Markov graph of the three-dimensional monotone law (Gibbs for `−log K` on edges and `+log K_3` on predecessor triples; Markov for the axial+face-diagonal graph, not the nearest-neighbor graph — exact witness), the full-support uniqueness lemma for specifications and the separation from every static Gibbs law on `Z^3`, the eight pairwise distinct corner laws forming one rotation orbit with a covariant non-ergodic mixture, and the sweep's imprint (the plane chain irreversible on the `2×2` column; the in-plane reflection visible; four one-plane laws for eight structures). Seats supervisor-run; refuting pass by the 3x3x3 product form and the reversed transfer, all equal; three drafting defects fixed before the census. Certificate 22/22; 15 mutations in-family; cache pinned; pipeline two passes, changed-evidence, audit_lint strict, diff --check, vocab clean. Lock held; the campaign continues.
++
++## 2026-09-15 block 10 opened for review as PR #8141 (supervisor)
++Stacked on block 09 (#8139) → block 08 (#8138) → main. Block 10 = the recorded-set Gibbs theorem: every formation law on a finite window, for every order, is the Gibbs law with `−log K` on the edges and `+log K_k` on the recorded sets; its Markov graph is the recorded-set graph; the vacuum-normalized potential's term on a maximal recorded set of size `k` is `−m_A Δ_k log K_k`, nonzero for `k = 2..6` at the declared nonconstant triples; hence nearest-neighbor Markov iff no site records two neighbors (block 01's condition for equality with the static law, now for the Markov property), with couplings of range `√2` and `2` and `k`-body terms up to six otherwise; the plaquette (`12/13` on the co-recorded non-adjacent pair) and the star (`165/169` on the leaves) executed. Seats supervisor-run; refuting pass by the closed form and a moved vacuum, all equal; two drafting defects fixed. Certificate 18/18; 10 mutations in-family; cache pinned; gates clean. Lock held; the campaign continues.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+index 657c0fba0e..01ed1d31d2 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+@@ -18,3 +18,6 @@ Routes read at their proofs, not their headlines.
+ - **The Z^3 monotone law is not a static law** (R2): proved from L1–L2 in the region at triples with nonzero third difference; escapes: a longer-range "static" rule (not the declared rule); a nonconstant triple with vanishing third difference (none known); c ≥ 1/3 (not constructed).
+ - **No single covariant law in the monotone class** (R3c): the eight corner laws are distinct and permuted transitively; the covariant object is their mixture; escape: adopting the mixture or a covariant random order as the supplied formation law (owner decision).
+ - **The plane chain is not reversible** (R4): exact on the 2x2 column; on Z^3 through R3; escape: none within the class (the constant rule is the control).
++
++## Block 10 (2026-09-15) — negative at scope
++- **A formation law with a two-element recorded set is not a nearest-neighbor Markov field** (T4's converse), proved on every finite window at triples with nonzero mixed differences; escapes: a vanishing mixed difference at a nonconstant triple (none known); the constant rule; a non-product rule; a non-bipartite carrier (none on `Z^3`).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+index 154173c0af..533f56146b 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+@@ -110,3 +110,12 @@ Block 09 opened for review (stacked on #8138): the `Z^3` monotone law's Markov g
+ 3. **Strong coupling `c ≥ 1/3`** (proof target; open).
+ 4. **The random-priority law's Markov structure** (needs the owner's note as an input; unlanded; deferred).
+ 5. **Width 6** (compute-heavy; deferred); **the silent triples** (heavy); **the 3D Gaussian instance** (small).
++
++## Refresh at block 10 opening (2026-09-15)
++
++Block 10 opened for review (stacked on #8139): the recorded-set Gibbs theorem for every order on finite windows. Ranked next:
++
++1. **The region's boundary in `(p, q, r)`** (exact algebra, small): `3c = 1` along block 03's three lines by exact bracketing; the comparison with `6c_1 = 1`.
++2. **Strong coupling `c ≥ 1/3`** (proof target): uniqueness of the stationary plane law on the full cross-section by a block coupling or weighted sensitivities; open.
++3. **Nonzero mixed differences at every nonconstant triple** (proof target; small algebra for `k = 2`, harder for `k ≥ 3`): would make T4's converse and blocks 08–09's dependence statements unconditional.
++4. **Width 6** (compute-heavy; deferred); **the silent triples** (heavy); **the 3D Gaussian instance** (small); **the random-priority law's Markov structure** (needs the owner's unlanded note).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block10.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block10.md
+new file mode 100644
+index 0000000000..38c97e1e3c
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block10.md
+@@ -0,0 +1,15 @@
++# RESULTS — block 10: the recorded-set Gibbs theorem (2026-09-15)
++
++**Deliverables (branch `physics-loop/admissibility-induced-law-block10-recorded-set-gibbs-theorem-20260915`, stacked on block 09):** the note `docs/ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md`; the runner `scripts/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.py` (18 checks, 10 mutations, exact); the pinned cache; the control `specs/supervisor_control_block10_recorded_set.py` and the refuting pass `specs/supervisor_control_block10_refuter.py` with outputs; `GOAL_block10.md`; `CHECKER_block10_findings.md`; this record.
++
++## Result, in one paragraph
++
++For every finite window and every total formation order, the formation law is the Gibbs law `(1/6)^{n_0} Π_edges K / Π_{|A_x| ≥ 2} K_{|A_x|}(v_{A_x})` (T1), hence a Markov field for the recorded-set graph — the lattice edges plus the pairs inside each recorded set (T2). The vacuum-normalized potential of a positive law on a finite window is unique and, under a Markov hypothesis, supported on cliques (T3a, re-proved); the formation law's term on a maximal recorded set of size `k` is `−m_A Δ_k log K_k`, nonzero whenever the `k`-th mixed difference is nonzero — executed nonzero for `k = 2..6` at `(3,1,2)` and `(5,2,4)`, zero at the constant rule (T3b). Since co-recorded neighbors are never adjacent on the bipartite lattice, a formation law is a nearest-neighbor Markov field iff every recorded set has at most one element (T4) — block 01's condition, now for the Markov property — and otherwise it is Markov for no graph missing a co-recorded pair; the induced interaction reaches distance `√2` and `2` with genuine `k`-body terms up to six (T5). Executed canonical potentials: the plaquette with its last site recording two (pair term `12/13` on the co-recorded non-adjacent pair, zero on the other non-edge on all 1296 configurations) and the star with its center last (three-body term `165/169` on the leaves) (T6). No order is selected.
++
++## Certificate
++- Runner: `TOTAL: PASS=18 FAIL=0`; 10 mutations each in its family; no floating-point literal; classical names only under Prior art and Imports.
++- Refuting pass (closed-form `exp(−Δ_k log K_k)` against the Möbius inversion; the vacuum moved to `−x`): equal / same verdicts (`CHECKER_block10_findings.md`).
++- Claim type `bounded_theorem`; status `bounded-support`; trace `upstream_support`; audit required.
++
++## Not claimed
++Nonzero mixed differences at every nonconstant triple; infinite-volume laws for non-monotone classes; non-product rules.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+index 9a0e757006..776b9f522b 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+@@ -225,3 +225,16 @@ Lens (in `GOAL_block09.md` before the build): the "limit of Gibbs measures with
+ 
+ ## block 09 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
+ 1 self-containment: PASS — inputs: this note, the axioms memo, block 02's note and the plane-law note (both on main `7495de3076`), block 08's note (the stacked base's reviewed delta); nothing pinned from an open PR (#8096, #8102 cited as context). 2 cache/execution: PASS — cache by `execute_and_write_cache`; five declared inputs; own-source float scan. 3 claim-scope honesty: PASS — title, headline, claim_scope, status fields consistent; "no arrow of time follows" stated; classical names only under Prior art and Imports. 4 N-gate: PASS — N1–N8 in the note; N5 lines in the runner. 5 proof obligations: PASS — the obligation table. 6 runner validity: PASS — witnesses recomputed and compared to literals, fail-closed; 15 mutations each in its family. 7 packet completeness: PASS. 8 links/citation graph: run at the gates. 9 note structure: PASS. 10 propose/ratify: PASS — no retained language. 11 sourced facts: PASS — 24 rotations, stabilizer 3, four one-plane laws, the exact rationals. 12 pre-review gates: run before the PR.
++
++## block 10 — V1-V5 (supervisor, 2026-09-15)
++- V1: the campaign's standing question since block 01 — what a formation law is when it is not the static law — for every order on every finite window; #8102's multiset key (the law depends on the order through the recorded sets of size at least two) asks for the structure behind that key.
++- V2: new — the recorded-set Gibbs form for every order (T1), the Markov graph (T2), the vacuum-normalized potential's recorded-set terms as mixed differences of `log K_k` with the executed irreducibility up to `k = 6` (T3), the classification of nearest-neighbor Markov formation laws (T4), the range and body count (T5), the plaquette and star potentials (T6). Searched `origin/main` at `7495de3076` (record in `ROUTE_PORTFOLIO.md`): block 01 references the clique theorem only; no note computes a formation law's canonical potential or its Markov graph.
++- V3: yes — T1–T5 carry proofs (the potential's uniqueness and clique property re-proved); the runner certifies the product form on 48 orders, the mixed differences and the two potentials; the gap (nonzero differences at every nonconstant triple) is named.
++- V4: yes — before: block 01's equality criterion; after: the Markov graph of every formation law and the statement that forming records with a nearest-neighbor rule creates couplings of range `√2` and `2` and of every order up to six whenever any site records two neighbors.
++- V5: not a variant — block 01 compares with one law; blocks 08–09 treat one order class; this note treats every order by a different mechanism (the potential's uniqueness and the bipartite obstruction).
++
++## block 10 — supervisor lens pass, primary, refuting pass and fold (2026-09-15)
++Lens (`GOAL_block10.md`): the "this is Theorem B" objection (different conclusion: the Markov property, not equality), the direction of the clique argument (re-proved in T3a), the overlap-cancellation objection (only maximal sets are covered). Primary: the note and the runner (18 checks, 10 mutations). Refuting pass (`CHECKER_block10_findings.md`): the plaquette and star terms by the closed form `exp(−Δ_k log K_k)` and the `k`-body verdicts with the vacuum at `−x`, all agreeing; two drafting defects fixed (a forbidden token; classical names in four sections). Author checks only; independent review pending.
++
++## block 10 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
++1 self-containment: PASS — inputs: this note, the axioms memo, block 01's note (main `7495de3076`), block 08's note (the stack's reviewed delta); block 09 and #8102 cited only. 2 cache/execution: PASS. 3 claim-scope honesty: PASS (no "certified"; names only under Prior art and Imports). 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS (obligation table; fail-closed literals; controls in the pack). 8: run at the gates. 9–11: PASS. 12: run before the PR.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
+index ce007b30a4..f8baae54f2 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
+@@ -109,3 +109,11 @@ Searched commit: `origin/main` = `7495de3076` (fetched 2026-09-15 before the blo
+ - `git grep -n -iE "(reversib|time.revers|detailed balance|arrow).*(formation|sweep|record)|…" origin/main -- 'docs/*.md'` → the time-directed-sweep note of 2026-09-05 (a current's image under a sweep; different object); no reversibility statement for a formation chain.
+ - The landed plane-law note (read on main): 2D Gibbs identification, two diagonal classes, the center's conditional not the static rule — the two-dimensional analogue of R1–R2; nothing on Z^3, on eight classes, or on reversibility.
+ Classification: **open after the matched-hit review.** Routes: R-A the DLR limit (L1); R-B full-support uniqueness of the specification (L2) — the load-bearing new lemma; R-C dependency-set combinatorics for the corner family; R-D exact 2x2 column computations for the sweep's imprint.
++
++## Block 10 (2026-09-15) — prior-art search and routes
++
++Searched commit: `origin/main` = `7495de3076`.
++- `git grep -n -iE "canonical potential|Möbius|Hammersley|Brook ratio|vacuum potential" origin/main -- 'docs/*.md'` → block 01 (Brook re-proved; Hammersley–Clifford referenced only), an Opus Born-evidence note (Hammersley–Clifford scope remarks); no note computes the canonical potential of a formation law or classifies its Markov graph.
++- `git grep -n -iE "recorded.set graph|recorded-set|Markov graph|k-body|three-body|k-th mixed difference" origin/main -- 'docs/*.md'` → blocks 08/09 (stacked, not on main) are the only prior uses of the three-body term; nothing for arbitrary orders.
++- #8102 (open): the multiset key (the law depends on the order through the recorded sets of size ≥ 2) — consistent with T1; it does not state the Gibbs form or the Markov graph.
++Classification: **open after the matched-hit review.** Routes: T-A regrouping of the product of conditionals (T1–T2); T-B the vacuum-normalized potential's uniqueness and clique property re-proved by Möbius inversion (T3a); T-C the recorded-set terms as mixed differences of `log K_k` (T3b) with the executed irreducibility for `k ≤ 6`; T-D the bipartite obstruction (T4).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+index 31f1be2783..65cd832563 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+@@ -138,3 +138,14 @@ source_review_correction:
+ # strongest_unresolved_proof_obligation: "the third difference of log K_3 nonzero at every nonconstant triple; affine independence of the eight laws; the random-priority law's Markov structure"
+ # next_exact_action: "block 10: the recorded-set Gibbs theorem for arbitrary orders on finite windows (Markov graph = recorded-set graph; NN-Markov iff at most one recorded neighbor; k-body irreducibility k = 2..6); then the region boundary"
+ # lock: held (campaign continues)
++
++# ---------------------------------------------------------------- block 10 close (2026-09-15)
++# block: 10
++# branch: physics-loop/admissibility-induced-law-block10-recorded-set-gibbs-theorem-20260915 (stacked on block 09, PR #8139)
++# pr_status: opened for review — PR #8141 (base = block 09's branch); hand-off; never merged by the campaign; not a main landing
++# final_certificate: "TOTAL: PASS=18 FAIL=0; 10 mutations, census 10/10 in-family; refuting pass 3/3 equal; gates: see HANDOFF.md"
++# seats: "supervisor-run: control -> contract with a lens pass -> primary (T1-T6, runner) -> refuting pass (closed form; moved vacuum) -> fold"
++# review_findings: "every formation law = (1/6)^{n_0} prod_edges K / prod_{|A_x|>=2} K_{|A_x|}: Gibbs, Markov for the recorded-set graph; the vacuum-normalized potential's term on a maximal recorded set of size k is -m_A Delta_k log K_k, nonzero for k = 2..6 at (3,1,2),(5,2,4); NN-Markov iff every recorded set has <= 1 element; plaquette {b,c} term 12/13, star leaves 165/169"
++# strongest_unresolved_proof_obligation: "nonzero mixed differences at every nonconstant triple; infinite-volume laws for non-monotone classes"
++# next_exact_action: "queue refresh 2026-09-15 (block 10 opening): the region's boundary; strong coupling; a campaign handoff at the budget's end"
++# lock: held (campaign continues)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+index e90609677e..7ae780ee29 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+@@ -96,3 +96,14 @@ reachability_to_target: supports
+ artifact_role: theorem
+ next_trace_action: "on Z^3 the monotone-class formation law is separated from every static law by its Markov graph; the covariant object of the class is the mixture of eight distinct laws; the sweep and the corner are readable in the records. Next: the general recorded-set Gibbs theorem for arbitrary orders on finite windows (Markov graph = recorded-set graph; k-body irreducibility for k = 2..6); then the region boundary. Consumers: the campaign's queue; #8093's assembly (formation-law node: 'clause-needed' for a covariant single law); the parked statistical-bridge material (read-only)"
+ ```
++
++# Trace gate — block 10, at PR opening (2026-09-15)
++```yaml
++trace_class: upstream_support
++target_claim_id: null
++target_blocker_text: "the campaign's standing question (block 01): the structure of a formation law when it is not the static law, for every order; #8102's multiset key; the owner's sequencing gate (2026-08-26)"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem
++next_trace_action: "every formation law on a finite window is the recorded-set Gibbs law with the recorded-set graph as its Markov graph; nearest-neighbor Markov iff no site records two neighbors. Next: the region's boundary in (p, q, r); strong coupling. Consumers: the campaign's queue; #8093's assembly (the formation-law node: any single order induces couplings beyond the rule's range); the parked statistical-bridge material (read-only)"
++```
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block10_recorded_set.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block10_recorded_set.out.txt
+new file mode 100644
+index 0000000000..7ad67e5061
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block10_recorded_set.out.txt
+@@ -0,0 +1,17 @@
++=== (1) k-body irreducibility of log Z_k: a witness assignment per k (search over small alphabets), ratio != 1 means nonzero mixed difference
++(3, 1, 2): k=2: ratio 169/121 at ['-x', '-x']; k=3: ratio 169/165 at ['-x', '-x', '+y']; k=4: ratio 25313305500289/23811286661761 at ['-x', '-x', '-x', '-x']; k=5: ratio 2241861381895613/2214449659543773 at ['-x', '-x', '-x', '-x', '+y']; k=6: ratio 3365711854724985238184059815315833869748032435373906868590465031852960001/4006070807282364556080074902906919146027842392940052297554111480712890625 at ['-x', '-x', '-x', '-x', '-x', '-x']
++(5, 2, 4): k=2: ratio 961/784 at ['-x', '-x']; k=3: ratio 1291123/1244800 at ['-x', '-x', '+y']; k=4: ratio 845934898201600/806460091894081 at ['-x', '-x', '-x', '-x']; k=5: ratio 15587985512720310077553426944/15537321646511554718017578125 at ['-x', '-x', '-x', '-x', '+y']; k=6: ratio 173186071925406491867486514134596809426561842922907648626065538109909288395403157427978121972129897191769/179046923579584905228990036011059747422614581214589777445271104973695396918979789807126643778892433719296 at ['-x', '-x', '-x', '-x', '-x', '-x']
++(2, 2, 2): k=2: none (all searched ratios = 1); k=3: none (all searched ratios = 1); k=4: none (all searched ratios = 1); k=5: none (all searched ratios = 1); k=6: none (all searched ratios = 1)
++
++=== (2) plaquette a-b, a-c, b-d, c-d; order (a, b, c, d): d records b and c; canonical potential by Möbius inversion at (3,1,2)
++  exp(Phi_{b,c} non-adjacent (recorded together by d)) at v = 12/13  (1 means zero term)
++  exp(Phi_{a,d} non-adjacent (never recorded together)) at v = 1  (1 means zero term)
++  exp(Phi_{a,b} edge) at v = 3  (1 means zero term)
++  exp(Phi_{b,d} edge) at v = 3/4  (1 means zero term)
++  exp(Phi_{a,b,c,d}) at v = 1  (1 means zero term)
++  exp(Phi_{b,c,d}) at v = 1  (1 means zero term)
++  {a,d} term is zero on all 1296 configurations: True
++  {b,c} term nonzero for some configuration: True
++
++=== (3) star: center x formed last, recording its three leaves (l1, l2, l3): three-body term on the leaves at (3,1,2)
++  three-body term on the leaves nonzero: True; witness ((1, 1, 2), Fraction(165, 169))
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block10_recorded_set.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block10_recorded_set.py
+new file mode 100644
+index 0000000000..dc39dc653e
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block10_recorded_set.py
+@@ -0,0 +1,100 @@
++"""Supervisor control, block 10: the recorded-set Gibbs theorem.
++(1) k-th mixed differences of log Z_k (equivalently log K_k) at the vacuum +x, for k = 2..6, at (3,1,2), (5,2,4), (2,2,2):
++    the k-body term of the canonical potential on a recorded set of size k is nonzero iff some k-th mixed difference is nonzero.
++    Reported as an exact product ratio (the exponential of the alternating sum), != 1 iff nonzero.
++(2) the plaquette (cycle4) formation law for the order a, b, c, d with d recording b and c (its two neighbors): the canonical
++    (vacuum-normalized) potential by Möbius inversion of log mu over the 2^4 subsets, at (3,1,2): the pair term on the
++    non-adjacent pair {b, c} is nonzero (so the law is not Markov for the cycle), and no term appears on the other non-edge {a, d}.
++(3) the star (center x with three leaves, center formed last): the three-body term on the leaves is nonzero.
++Exact arithmetic (fractions); the alternating sums are reported as ratios of products.
++"""
++from fractions import Fraction as F
++from itertools import product, combinations
++import sys
++sys.path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parents[5] / "scripts"))
++import importlib
++run = importlib.import_module("admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15")
++M = 6
++
++def Zk(rule, vals):
++    """Z_k(a_1..a_k) = sum_s prod_i phi(s, a_i) as an exact integer."""
++    return sum(__import__("math").prod(rule.phi[s][a] for a in vals) for s in range(M))
++
++def mixed_ratio(rule, vals):
++    """exp(alternating sum over subsets S of {1..k} of (-1)^{k-|S|} log Z_k(v_S, vacuum elsewhere)) as an exact rational:
++    numerator = product over S with (-1)^{k-|S|} = +1, denominator = product over the others."""
++    k = len(vals)
++    num, den = 1, 1
++    for mask in range(1 << k):
++        arg = [vals[i] if (mask >> i) & 1 else 0 for i in range(k)]
++        z = Zk(rule, arg)
++        if (k - bin(mask).count("1")) % 2 == 0:
++            num *= z
++        else:
++            den *= z
++    return F(num, den)
++
++def main():
++    print("=== (1) k-body irreducibility of log Z_k: a witness assignment per k (search over small alphabets), ratio != 1 means nonzero mixed difference")
++    for tr in [(3, 1, 2), (5, 2, 4), (2, 2, 2)]:
++        rule = run.Rule(tr)
++        out = []
++        for k in range(2, 7):
++            found = None
++            # search assignments over values in {-x, +y, +z, -y} (vacuum is +x = 0)
++            for vals in product((1, 2, 4, 3), repeat=k):
++                r = mixed_ratio(rule, vals)
++                if r != 1:
++                    found = (vals, r); break
++            out.append((k, found))
++        print(f"{tr}: " + "; ".join(f"k={k}: " + ("none (all searched ratios = 1)" if f is None else f"ratio {f[1]} at {[run.AXES[v] for v in f[0]]}") for k, f in out))
++    print()
++    print("=== (2) plaquette a-b, a-c, b-d, c-d; order (a, b, c, d): d records b and c; canonical potential by Möbius inversion at (3,1,2)")
++    rule = run.Rule((3, 1, 2))
++    sites = ["a", "b", "c", "d"]
++    def mu(v):
++        a, b, c, d = v
++        return F(1, M) * rule.K[a][b] * rule.K[a][c] * rule.cond((b, c))[d]
++    # log mu(v) = sum_{S subset} Phi_S(v_S) with Phi_S = 0 when any coordinate in S is the vacuum 0: Phi_S(v) = sum_{T subset S} (-1)^{|S-T|} log mu(v_T, 0 elsewhere)
++    # report as ratios: exp(Phi_S) for the sets S = {b,c}, {a,d}, {a,b}, {a,b,c,d} at a witness v
++    def phi_ratio(S, v):
++        num, den = F(1), F(1)
++        for r in range(len(S) + 1):
++            for T in combinations(S, r):
++                w = [0] * 4
++                for i in T: w[i] = v[i]
++                val = mu(tuple(w))
++                if (len(S) - r) % 2 == 0: num *= val
++                else: den *= val
++        return num / den
++    v = (1, 2, 4, 3)  # a=-x, b=+y, c=+z, d=-y
++    for S, name in [((1, 2), "{b,c} non-adjacent (recorded together by d)"), ((0, 3), "{a,d} non-adjacent (never recorded together)"), ((0, 1), "{a,b} edge"), ((1, 3), "{b,d} edge"), ((0, 1, 2, 3), "{a,b,c,d}"), ((1, 2, 3), "{b,c,d}")]:
++        print(f"  exp(Phi_{name}) at v = {phi_ratio(S, v)}  (1 means zero term)")
++    # maximal over v for {a,d}: check it is 1 for all v
++    all_ad_one = all(phi_ratio((0, 3), vv) == 1 for vv in product(range(M), repeat=4))
++    print(f"  {{a,d}} term is zero on all 1296 configurations: {all_ad_one}")
++    any_bc = any(phi_ratio((1, 2), vv) != 1 for vv in product(range(M), repeat=4))
++    print(f"  {{b,c}} term nonzero for some configuration: {any_bc}")
++    print()
++    print("=== (3) star: center x formed last, recording its three leaves (l1, l2, l3): three-body term on the leaves at (3,1,2)")
++    def mu_star(v):
++        l1, l2, l3, x = v
++        return F(1, M) ** 3 * rule.cond((l1, l2, l3))[x]
++    def phi_ratio_star(S, v):
++        num, den = F(1), F(1)
++        for r in range(len(S) + 1):
++            for T in combinations(S, r):
++                w = [0] * 4
++                for i in T: w[i] = v[i]
++                val = mu_star(tuple(w))
++                if (len(S) - r) % 2 == 0: num *= val
++                else: den *= val
++        return num / den
++    any3 = None
++    for vv in product(range(M), repeat=3):
++        r = phi_ratio_star((0, 1, 2), vv + (0,))
++        if r != 1: any3 = (vv, r); break
++    print(f"  three-body term on the leaves nonzero: {any3 is not None}; witness {any3}")
++
++if __name__ == "__main__":
++    main()
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block10_refuter.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block10_refuter.out.txt
+new file mode 100644
+index 0000000000..39e16f14d3
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block10_refuter.out.txt
+@@ -0,0 +1,3 @@
++R1 plaquette {b,c} closed form: 12/13 == Möbius value 12/13: True
++R2 star leaves closed form: 165/169 == Möbius value 165/169: True
++R3 nonzero k-body term with vacuum -x, k=2..6: [(2, True), (3, True), (4, True), (5, True), (6, True)]
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block10_refuter.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block10_refuter.py
+new file mode 100644
+index 0000000000..3165cd8f9a
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block10_refuter.py
+@@ -0,0 +1,36 @@
++"""Refuting pass, block 10 (supervisor, disjoint machinery): the recorded-set terms by the closed form of T3(b) instead of the
++Möbius inversion — exp Phi_A = exp(-Delta_k log K_k(v_A)) — for the plaquette's {b, c} term and the star's leaf triple; and
++the k-body ratios recomputed from Z_k with the vacuum at -x instead of +x (a different vacuum gives different values but the
++same zero/nonzero verdict)."""
++from fractions import Fraction as F
++from itertools import product
++import sys
++sys.path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parents[5] / "scripts"))
++import importlib
++r10 = importlib.import_module("admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15")
++M = 6
++rule = r10.Rule((3, 1, 2))
++
++def closed_form_ratio(vals, vacuum=0):
++    """exp(-Delta_k log K_k) at vals with the given vacuum: inverse of the mixed ratio of Z_k (the Z_1 powers cancel)."""
++    k = len(vals); num, den = 1, 1
++    for mask in range(1 << k):
++        arg = tuple(vals[i] if (mask >> i) & 1 else vacuum for i in range(k))
++        z = rule.Zk(arg)
++        if (k - bin(mask).count("1")) % 2 == 0: num *= z
++        else: den *= z
++    return F(den, num)
++
++# plaquette {b, c} term at the witness (b, c) = (+y, +z): T3(b) predicts exp Phi_bc = exp(-Delta_2 log K_2(b, c))
++print("R1 plaquette {b,c} closed form:", closed_form_ratio((2, 4)), "== Möbius value 12/13:", closed_form_ratio((2, 4)) == F(12, 13))
++# star leaves at (-x, -x, +y)
++print("R2 star leaves closed form:", closed_form_ratio((1, 1, 2)), "== Möbius value 165/169:", closed_form_ratio((1, 1, 2)) == F(165, 169))
++# k-body verdicts with the vacuum at -x (index 1) for k = 2..6 at witness assignments over {+x, +y}
++verdicts = []
++for k in range(2, 7):
++    found = False
++    for vals in product((0, 2), repeat=k):
++        if closed_form_ratio(vals, vacuum=1) != 1:
++            found = True; break
++    verdicts.append((k, found))
++print("R3 nonzero k-body term with vacuum -x, k=2..6:", verdicts)
+diff --git a/docs/ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md b/docs/ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md
+new file mode 100644
+index 0000000000..5e7f180fbc
+--- /dev/null
++++ b/docs/ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md
+@@ -0,0 +1,322 @@
++---
++claim_id: admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_bounded_theorem_note_2026-09-15
++claim_type: bounded_theorem
++claim_scope: "On the six Bloch-axis projector menu with the covariant positive product rule of orbit weights (p, q, r), under the records-only reading, on every finite window W of Z^3 and for every total formation order sigma with recorded sets A_x: (T1) the formation law is the product (1/6)^{#{x : A_x empty}} prod_{edges} K / prod_{|A_x| >= 2} K_{|A_x|}(v_{A_x}), a Gibbs law for the potential -log K on the edges and +log K_k on the recorded sets of size k >= 2; (T2) it is a Markov field for the recorded-set graph (the edges of W together with the pairs inside each recorded set); (T3) a positive law on a finite window has exactly one vacuum-normalized potential, and that potential of the formation law has a nonzero term on every maximal recorded set of size k >= 2 at which the k-th mixed difference of log K_k is nonzero — nonzero for k = 2, ..., 6 at (3, 1, 2) and (5, 2, 4), zero at the constant rule (executed) — while the pairs inside a recorded set are never adjacent; hence (T4) the formation law is a nearest-neighbor Markov field if and only if every recorded set has at most one element (block 01's condition, now for the Markov property), and otherwise it is Markov for no graph missing a co-recorded pair; (T5) the induced interaction reaches the orthogonal (sqrt 2) and opposite (distance 2) co-recorded neighbors and carries genuine k-body terms up to k = 6; (T6) executed canonical potentials: the plaquette whose last site records two neighbors (pair term 12/13 on the co-recorded non-adjacent pair; zero on the other non-edge on all 1296 configurations; zero four-body and three-body terms at the witness) and the star whose center forms last (three-body term 165/169 on the leaves). Nothing infinite-volume beyond citing blocks 08-09 for the monotone class; no order selected as physical; exact arithmetic throughout."
++upstream_dependencies:
++  - minimal_axioms
++  - admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06
++  - admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_bounded_theorem_note_2026-09-15
++  - admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_bounded_theorem_note_2026-09-15
++runner: scripts/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.py
++---
++
++# Every formation law is a Gibbs law whose Markov graph is the recorded-set graph: nearest-neighbor Markov exactly when no site records two neighbors
++
++**Date:** 2026-09-15
++**Type:** bounded_theorem
++**Status:** bounded-support (exact on finite windows; conditional on the named supplied readings; unaudited)
++
++## Result up front
++
++Whatever order the records form in, the finished pattern obeys a law of the
++same shape: each pair of adjacent records is coupled by the rule's kernel, and
++each group of neighbors that a site "saw" when it formed is coupled all
++together by a normalizer term. So the pattern law is always a Gibbs law, and
++its "who influences whom" graph is the lattice's adjacency plus, for every site,
++the pairs among the neighbors it saw. Those extra pairs are never lattice
++neighbors themselves, and their coupling is genuine for groups of any size from
++two up to six. The consequence: a formation law listens only to nearest
++neighbors precisely when no site ever saw two of its neighbors at once — the
++same condition under which the earlier note showed it coincides with the static
++law. Otherwise it is not a nearest-neighbor law at all, of any kind: forming
++records with the rule creates couplings at a range the rule itself does not
++have. Nothing here picks an order.
++
++Exactly: `μ_σ(v) = (1/6)^{#{x : A_x = ∅}} Π_{xy ∈ E(W)} K(v_x, v_y) / Π_{|A_x| ≥ 2} K_{|A_x|}(v_{A_x})`
++(T1); Markov for `G_σ = E(W) ∪ ⋃_x binom(A_x, 2)` (T2); the unique vacuum-
++normalized potential has a nonzero term on every maximal recorded set of size
++`k` with nonzero `k`-th mixed difference of `log K_k` — ratios `169/121`,
++`169/165`, `25313305500289/23811286661761`, … for `k = 2, 3, 4, …, 6` at
++`(3, 1, 2)` (T3); nearest-neighbor Markov iff `max_x |A_x| ≤ 1` (T4). Executed
++with exact arithmetic: 18 checks, 10 mutations.
++
++## Machine status and trace
++
++```yaml
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: upstream_support
++target_claim_id: null
++target_blocker_text: "the campaign's standing question (block 01): when is the formation law of a covariant nearest-neighbor rule the static law, and what is it otherwise; the derivation campaign's formation-law node (#8093) and the multiset key of #8102 (the law depends on the order through the recorded sets of size at least two); the owner's sequencing gate (2026-08-26)"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem
++next_trace_action: "the structure of every formation law on a finite window is now the recorded-set Gibbs law; the infinite-volume versions exist for the monotone class (blocks 08-09); next: the region's boundary in (p, q, r); a covariant order class's infinite-volume structure needs a supplied construction. Consumers: the campaign's queue; #8093's assembly (the formation-law node: any single order induces a longer-range law than the rule); the parked statistical-bridge material (read-only)"
++conditional_surface_status: "exact on every finite window and every order for T1, T2, T4's forward direction and T5; T3 and T4's converse at triples where the relevant mixed differences are nonzero (executed for k = 2..6 at (3,1,2) and (5,2,4)); T6 executed; conditional on the records-only reading, positivity, the six-axis menu; no infinite-volume claim beyond citation"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++claim_type_reason: "T1 is the regrouping of the product of conditionals; T2 is read off T1; T3 re-proves the uniqueness of the vacuum-normalized potential of a positive law on a finite set and computes its recorded-set terms as mixed differences; T4 combines T3 with the bipartite structure of the lattice; every number printed is an exact rational"
++```
++
++## Premises and declared objects
++
++**Axioms used (verbatim).** From
++[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md): "There is one
++fixed nearest-neighbor admissibility rule, covariant under lattice translations
++and proper cubic rotations." — "For each site, the probability distribution over
++the possibilities is determined by, and varies with, the nearest-neighbor
++conditions." — "Records form." — "When present, a record locks exactly one
++admissible local possibility." — "Only records are readable."
++
++**Readings carried, named, nothing new adopted.** The records-only reading;
++positivity; the six-axis menu with orbit weights `(p, q, r)`; block 01's
++definition of the formation law of a total order `σ` on a finite window `W`
++(a finite induced subgraph of `Z^3` with its nearest-neighbor edges `E(W)`):
++`μ_σ(v) = Π_x r(v_x | v_{A_x})`, where `A_x = {y ∼ x : y before x in σ}` is
++the recorded set of `x`, `r(s | ∅) = 1/6` and
++`r(s | a_1, …, a_k) = Π_i φ(s, a_i)/Z_k(a) = Π_i K(a_i, s)/K_k(a)` with
++`K_k(a) = Σ_s Π_i K(a_i, s)` (block 08's notation; `K_1 ≡ 1`, `K_2 = K^2`). No
++order is selected as physical.
++
++**Vacuum and mixed differences.** Fix the vacuum value `0 = P(+e_1)` (any
++value would do, by the internal covariance). For a function `F` of `k` menu
++values, the `k`-th mixed difference at `a = (a_1, …, a_k)` is
++`Δ_k F(a) = Σ_{S ⊆ {1..k}} (−1)^{k − |S|} F(a_S, 0_{S^c})`; `F` is a sum of
++functions of proper subsets of its arguments iff `Δ_k F ≡ 0`. For `F = log K_k`
++the exponential of `Δ_k F` is a ratio of products of `K_k`-values, an exact
++rational.
++
++**The recorded-set graph.** `G_σ` has vertex set `W` and edge set
++`E(W) ∪ ⋃_x binom(A_x, 2)`. A recorded set is maximal if it is contained in no
++other recorded set of `σ`. On `Z^3` two neighbors of a site are at distance
++`√2` (orthogonal) or `2` (opposite), never adjacent: the lattice is bipartite.
++
++## Prior art and what is new
++
++Block 01 (on main) proved that `μ_σ` equals the static law iff every recorded
++set has at most one element (Theorem B), re-proved Brook's ratio lemma and
++referenced Hammersley–Clifford only. Blocks 08–09 (stacked) and the plane-law
++note (on main) computed the monotone class's Gibbs potentials in three and two
++dimensions and, on `Z^3`, the Markov graph and the separation from static laws.
++The concurrent #8102 (open; not an input) proved that `μ_σ` depends on `σ`
++only through the multiset of recorded sets of size at least two — consistent
++with T1, which displays that dependence. The uniqueness of the vacuum-
++normalized potential of a positive law on a finite set (Grimmett's proof of
++Hammersley–Clifford) is a classical reference re-proved here at scope.
++
++New here: the recorded-set Gibbs form for every order (T1), the Markov graph
++(T2), the canonical-potential terms on the recorded sets and their
++irreducibility up to `k = 6` (T3), the classification of nearest-neighbor
++Markov formation laws (T4), the range statement (T5), and the executed
++plaquette and star potentials (T6).
++
++## Exact target and obligation graph
++
++| obligation | status here |
++|---|---|
++| T1 the product form for every order | proved (regrouping); executed on the plaquette's 24 orders and the star's 24 orders (B1) |
++| T2 the Markov graph | proved from T1 |
++| T3(a) uniqueness of the vacuum-normalized potential; Markov for `G` ⇒ support on cliques of `G` | re-proved (inversion on the subset lattice) |
++| T3(b) the recorded-set terms are mixed differences; nonzero on maximal sets when `Δ_k log K_k ≠ 0` | proved; `Δ_k log K_k ≠ 0` executed for `k = 2..6` at `(3,1,2)`, `(5,2,4)`; zero at `(2,2,2)` (B2, B3) |
++| T4 nearest-neighbor Markov iff `max |A_x| ≤ 1` | proved from T3 and bipartiteness at triples with the executed nonzero differences; forward direction unconditional |
++| T5 range and body count | proved from T1–T3 |
++| T6 the plaquette and the star potentials | executed (C1–C4) |
++| `Δ_k log K_k ≠ 0` at every nonconstant triple; infinite-volume laws for non-monotone classes | open; not this note |
++
++The strongest missing lemma is that `Δ_k log K_k` is nonzero at every
++nonconstant triple for every `k ≤ 6`; T4's converse is stated where it is.
++
++## Theorem T1 — the recorded-set product form
++
++**Statement.** For every finite window `W` and total order `σ`,
++`μ_σ(v) = (1/6)^{n_0} Π_{xy ∈ E(W)} K(v_x, v_y) / Π_{x : |A_x| ≥ 2} K_{|A_x|}(v_{A_x})`,
++with `n_0 = #{x : A_x = ∅}`.
++
++*Proof.* Every edge `xy` of `W` is recorded exactly once, by its later
++endpoint (when the later site forms, the earlier is a recorded neighbor), so
++`Π_x Π_{y ∈ A_x} K(v_y, v_x) = Π_{E(W)} K`. A site with `A_x = ∅` contributes
++`1/6`; one with `|A_x| = 1` contributes `K(v_y, v_x)` (`K_1 ≡ 1`); one with
++`|A_x| ≥ 2` contributes `Π_{y ∈ A_x} K(v_y, v_x)/K_{|A_x|}(v_{A_x})`. ∎
++Executed: on the plaquette (cycle4) and the star (star4), for all `24` orders
++each, the product form equals the product of conditionals on every
++configuration (B1).
++
++## Theorem T2 — the Markov graph
++
++**Statement.** `μ_σ` is a Markov field for `G_σ`: its conditional at `x`
++given the rest depends only on the `G_σ`-neighbors of `x`.
++
++*Proof.* In `μ_σ(v_x = s | rest)` every factor of T1 not containing `x`
++cancels; the remaining factors are the edge factors at `x` and the normalizers
++`K_{|A_y|}(v_{A_y})` of the sites `y` with `x ∈ A_y`, which involve the other
++members of `A_y` — `G_σ`-neighbors of `x` by definition. ∎
++
++## Theorem T3 — the canonical potential and its recorded-set terms
++
++**(a) Uniqueness (re-proved).** Let `μ > 0` be a law on `M^W`. There is exactly
++one family `(Φ_S)_{S ⊆ W}` with `log μ(v) = Σ_S Φ_S(v_S)` and `Φ_S(v_S) = 0`
++whenever some coordinate of `v_S` equals the vacuum; it is
++`Φ_S(v_S) = Σ_{T ⊆ S} (−1)^{|S ∖ T|} log μ(v_T, 0_{W ∖ T})`. If `μ` is a Markov
++field for a graph `G`, then `Φ_S = 0` unless `S` is a clique of `G`.
++
++*Proof.* Existence and uniqueness are the inclusion–exclusion inversion on the
++subset lattice of `W`, applied to `f(T) = log μ(v_T, 0_{T^c})` for fixed `v`. For the
++clique statement take `S` with two non-adjacent sites `x, y ∈ S`; write
++`Φ_S = Σ_{T ⊆ S ∖ {x,y}} (−1)^{|S ∖ T| } [f(T ∪ {x, y}) − f(T ∪ {x}) − f(T ∪ {y}) + f(T)]`
++by grouping the four subsets differing at `x, y`; each bracket equals
++`log [μ(v_x = s | rest) / μ(v_x = 0 | rest)]` evaluated at two configurations
++of the rest differing only at `y`, which are equal by the Markov property
++(`y` is not a `G`-neighbor of `x`); so every bracket vanishes. ∎
++
++**(b) The recorded-set terms.** Let `A` be a maximal recorded set of `σ` with
++`|A| = k ≥ 2` and let `m_A` be the number of sites whose recorded set equals
++`A`. Then `Φ_A(v_A) = −m_A · Δ_k log K_k(v_A)`, and `Φ_A ≠ 0` iff
++`Δ_k log K_k ≢ 0`.
++
++*Proof.* In T1's form, `log μ_σ` is a sum of the constant `n_0 log(1/6)`, the
++edge terms `log K(v_x, v_y)` (functions of pairs), and the terms
++`−log K_{|A_y|}(v_{A_y})` (functions of the recorded sets). The `S`-term of the
++vacuum-normalized potential of a sum is the sum of the `S`-terms, and the
++`S`-term of a function of `v_B` is zero unless `S ⊆ B`, in which case it is
++the `S`-mixed difference of that function with the vacuum at `B ∖ S`. For
++`S = A` maximal: no edge contains `A` (`k ≥ 2` and the pairs of `A` are
++non-adjacent), and the only recorded sets containing `A` are those equal to
++`A` (maximality), each contributing `−Δ_k log K_k(v_A)`. ∎ Executed: the ratio
++`exp(Δ_k log K_k)` at a witness assignment for `k = 2, …, 6` is
++`169/121, 169/165, 25313305500289/23811286661761, 2241861381895613/2214449659543773, …`
++at `(3, 1, 2)` and `961/784, 1291123/1244800, 845934898201600/806460091894081, …`
++at `(5, 2, 4)`, none equal to `1` (B2); at the constant rule every searched
++ratio is `1` (B3). (For `k = 2` the statement is `K^2` not of rank one, i.e.
++nonconstant; for `k = 3` it is block 08's third difference.)
++
++## Theorem T4 — nearest-neighbor Markov exactly when no site records two neighbors
++
++**Statement.** If every recorded set of `σ` has at most one element, `μ_σ`
++is a Markov field for `E(W)` (and equals the static law, block 01's Theorem B).
++Conversely, at a triple where `Δ_k log K_k ≠ 0` for every `k ≤ 6` that occurs
++as the size of a maximal recorded set (executed: every `k ≤ 6` at `(3, 1, 2)`
++and `(5, 2, 4)`), if some recorded set has two or more elements then `μ_σ` is
++not a Markov field for `E(W)`, nor for any graph in which some co-recorded
++pair is not an edge.
++
++*Proof.* Forward: T1 has no normalizer term, so `G_σ = E(W)` and T2 applies.
++Converse: a recorded set with `≥ 2` elements is contained in a maximal one `A`
++with `|A| = k ≥ 2`; by T3(b) `Φ_A ≠ 0`; `A` is not a clique of `E(W)` (its
++pairs are non-adjacent, the lattice being bipartite), nor of any graph missing
++one of its pairs; by T3(a) `μ_σ` is not Markov for such a graph. ∎
++
++## Theorem T5 — the range and the body count of the induced interaction
++
++**Statement.** The potential of T1 couples adjacent sites (the rule's own
++range), orthogonal co-recorded neighbors (distance `√2`), opposite co-recorded
++neighbors (distance `2`), and nothing farther; its canonical terms on maximal
++recorded sets are genuine `k`-body terms for every `k ≤ 6` that occurs, at the
++triples of T3. A site with all six neighbors recorded (formed last in its
++neighborhood) carries a six-body term.
++
++*Proof.* Every recorded set is a subset of a neighborhood; the pairs inside a
++neighborhood are at distance `√2` or `2`; T3(b) gives the body count. ∎
++
++## T6 — two executed canonical potentials
++
++**The plaquette** `a — b, a — c, b — d, c — d` with the order `(a, b, c, d)`
++(`d` records `b` and `c`): at `(3, 1, 2)` the canonical potential has the pair
++term `exp Φ_{bc} = 12/13` at the witness `(a, b, c, d) = (−x, +y, +z, −y)`
++(nonzero for some configuration; `{b, c}` is the co-recorded non-adjacent
++pair), `exp Φ_{ad} = 1` on all `1296` configurations (`{a, d}` is the other
++non-edge, never co-recorded), the edge terms `exp Φ_{ab} = 3`,
++`exp Φ_{bd} = 3/4` at the witness, and `exp Φ_{abcd} = exp Φ_{bcd} = 1` at the
++witness (C1–C3). So this formation law is Markov for the plaquette plus the
++diagonal `{b, c}`, not for the plaquette — the two-dimensional diagonal
++interaction of the plane-law note, at its smallest.
++
++**The star** `x` with leaves `l_1, l_2, l_3`, the center last: the three-body
++term on the leaves is nonzero, `exp Φ_{l_1 l_2 l_3} = 165/169` at
++`(l_1, l_2, l_3) = (−x, −x, +y)` (C4) — block 08's three-body term at its
++smallest, on a tree with no plaquette: the formation law of a tree swept from
++its center outward is nearest-neighbor Markov (every leaf records one site,
++Theorem B), while the same tree swept leaves-first is not (T4).
++
++## No-Go Discipline Gate
++
++The negative sentence is T4's converse ("not a nearest-neighbor Markov field
++when some site records two neighbors"). It is proved from T3 at the triples
++named; not a route no-go beyond that scope.
++
++### N1 — Routes by which a formation law with a two-element recorded set could still be nearest-neighbor Markov
++
++| route | what it would attempt | why it fails here, or its obligation | marker |
++|---|---|---|---|
++| 1 cancellation between overlapping recorded sets | terms on a non-maximal set cancelling | only maximal sets are covered; a `≥ 2` set lies in a maximal `≥ 2` set, whose term has no other contributor | ATTEMPTED (proof) |
++| 2 a triple with `Δ_k log K_k = 0` | a nonconstant `(p, q, r)` at which some `k`-body term vanishes | executed nonzero at two triples for `k ≤ 6`; not proved for all nonconstant triples | not attempted; obligation named |
++| 3 a non-bipartite window | co-recorded neighbors that are adjacent | not on `Z^3` or any of its induced subgraphs | RULED OUT BY PRIOR (the lattice axiom) |
++| 4 the constant rule | `p = q = r` | every term vanishes; the independent uniform law is Markov for every graph; excluded by the variation clause restricted to the menu | ATTEMPTED (control) |
++| 5 a non-product covariant rule | the sum rule | T1's regrouping uses the product form; a different rule is a different note (block 01's family G) | not attempted; obligation named |
++
++### N2 — Wall-independence audit
++Walls: `W_pos` (positivity: the canonical potential of a positive law), `W_menu`, `W_prod` (the product form of the rule), `W_Δ` (nonzero mixed differences), `W_var`. `W_Δ` implies `W_var` (the constant rule has zero differences); `W_var` does not imply `W_Δ` for every `k` (not proved). `W_pos` and `W_prod` are the definitions of the objects. No wall follows from another except as stated.
++
++### N3 — Hidden-wall scan
++Scanned for "we assume", "by construction", "as is standard", "the framework provides", "naturally", "obviously", "canonical", "registered", "background", "bridge context". Hits: "canonical" as the name of the vacuum-normalized potential (defined in T3(a), not an authority). No wall was promoted.
++
++### N4 — Per-citation table
++| cited surface | residual it attacks | residual claimed here | match |
++|---|---|---|---|
++| block 01 (on main): Theorem B and the formation-law definition | equality with the static law iff `≤ 1` recorded | T4's forward direction and the equality case | yes (parent) |
++| block 08 (stacked): Q1e–f | the monotone class's product form and third difference | the `k = 3` case of T3(b) | yes (parent) |
++| block 09 (stacked): L2 | the `Z^3` statement for the monotone class | cited only in the trace | yes (context) |
++| the plane-law note (on main) | the 2D diagonal interaction | T6's plaquette as its smallest instance | yes (context) |
++| #8102 (open; not an input) | the multiset key | consistency remark | yes (context) |
++
++### N5 — Resolution audit
++| phrase | per-element | per-site | per-mode | per-block | lattice-wide |
++|---|---|---|---|---|---|
++| "not a nearest-neighbor Markov field when some site records two neighbors" | executed: the mixed-difference ratios at witness assignments for `k = 2..6`, three triples; the plaquette's `{a, d}` term on all 1296 configurations | executed: every site's recorded set in every order of the plaquette and the star (48 orders) | executed: the canonical terms on the edges, the diagonal, the triple and the quadruple of the plaquette; the leaves' triple of the star | executed: the two windows' full potentials at the witnesses | proved on every finite window at the named triples; infinite volume only by citation (blocks 08–09) |
++
++### N6 — Partial-closure paths and primitive scan
++The registered primitives supply no order, rule or potential; none is a wall. A reframing that would make the formation law nearest-neighbor Markov is the adoption of an order class with `|A_x| ≤ 1` everywhere — impossible on any window with a plaquette (block 01) — or of a rule that is not of product class (block 01's family G, executed there as inconsistent). Not a new-axiom claim.
++
++### N7 — Steelman
++Hostile reviewer: "This is the classical clique theorem plus block 01; the only
++new fact is a table of mixed differences." Reply: the classification of the Markov graph of every formation law and the identification of its canonical terms as mixed differences of the normalizers are not in block 01, whose Theorem B compares with one specific law; the plaquette computation shows the difference concretely (the `{a, d}` term vanishes while `{b, c}` does not — the graph, not merely the law, is what the order shapes). Conceded: the classical uniqueness argument is standard; it is re-proved, not imported.
++
++### N8 — Cross-cycle echo
++The nearest prior wall is block 01's Theorem B (retired by nothing; strengthened here from equality to the Markov property); blocks 08–09 are the monotone-class instances. No structurally similar wall was retired by a mechanism not considered here.
++
++## Falsifiers
++- An order of the plaquette or the star on which T1's product form differs from the product of conditionals (B1).
++- A `k ≤ 6` at `(3, 1, 2)` or `(5, 2, 4)` for which every searched mixed-difference ratio equals `1`, or a nonzero ratio at the constant rule (B2, B3).
++- A configuration of the plaquette on which `exp Φ_{ad} ≠ 1`, or `exp Φ_{bc} = 1` on all configurations (C1, C2).
++- A vanishing three-body term on the star's leaves for all leaf values (C4).
++- A pair of adjacent sites inside a recorded set (impossible on `Z^3`; would refute T4's use of bipartiteness).
++
++## Boundaries and non-claims
++This note describes formation laws on finite windows for every order; it states nothing infinite-volume beyond citing blocks 08–09 for the monotone class, nothing about the static law beyond block 01's equality case, and selects no order as physical. No plane, bridge, Born or gravity statement enters this note; this note does not fire wake condition 1 of the parked statistical-bridge decision. The vacuum-normalized potential and its clique property are classical references re-proved here at the scope used; no value, constant or theorem is imported as authority.
++
++Further: the mixed differences are executed at two nonconstant triples and one witness assignment per `k`, not proved nonzero at every nonconstant triple; T6 covers two windows; the sum rule and other non-product covariant rules are outside T1.
++
++## Imports
++- `minimal_axioms`: the sentences quoted under Premises.
++- Block 01 (on main), blocks 08 and 09 (stacked), the plane-law note (on main): proposed, unaudited; the parts used are restated.
++- Re-proved at scope: the Möbius inversion on the subset lattice and the uniqueness of the vacuum-normalized potential; its clique property under a Markov hypothesis (the standard Hammersley–Clifford / Grimmett argument).
++- No literature value, constant, or theorem enters as authority; the classical names appear only here and under Prior art.
++
++## Review record
++Supervisor-run block (owner directive 2026-09-15: no subagents). The control (`specs/supervisor_control_block10_recorded_set.py`) computed the mixed-difference ratios for `k = 2..6`, the plaquette potential and the star potential before the contract; the lens pass is in `GOAL_block10.md`; the primary seat wrote T1–T6 and the runner; the refuting pass (`CHECKER_block10_findings.md`) recomputed the plaquette and star terms by the closed form `exp(−Δ_k log K_k)`
++and with the vacuum moved to `−x`, instead of the subset-lattice inversion; the fold is in `REVIEW_HISTORY.md`. Facts settled while executing: a word for the covered maximal sets collided
++with a forbidden token and was reworded; the classical names were moved out of
++the obligation table, Theorem T3, the steelman and the Review record.
++
++## Verification
++
++```bash
++python3 scripts/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.py
++python3 scripts/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.py --exact
++python3 scripts/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.py --list-mutations
++python3 scripts/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.py --mutation plaquette_nonedge_term_claimed
++```
++
++Families: A authority and inputs; B the product form and the mixed differences; C the plaquette and star potentials and their Markov graphs; F fences, forbidden phrases, the floating-point self-scan, the placement of the classical names; G the resolution lines. Each of the 10 declared mutations fails in exactly one family. Expected final
++line: `TOTAL: PASS=18 FAIL=0`.
+diff --git a/docs/audit/data/citation_graph_manifest.json b/docs/audit/data/citation_graph_manifest.json
+index af4bec1b21..a0444e0835 100644
+--- a/docs/audit/data/citation_graph_manifest.json
++++ b/docs/audit/data/citation_graph_manifest.json
+@@ -1,6 +1,6 @@
+ {
+- "edge_count": 12555,
+- "node_count": 5060,
++ "edge_count": 12556,
++ "node_count": 5061,
+  "nodes": {
+   "3d_correction_master_note": {
+    "deps_hash": "e3b0c44298fc",
+@@ -730,6 +730,10 @@
+    "deps_hash": "1b3132f0c69b",
+    "out_degree": 3
+   },
++  "admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_bounded_theorem_note_2026-09-15": {
++   "deps_hash": "c8eee4235fc9",
++   "out_degree": 1
++  },
+   "admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_bounded_theorem_note_2026-09-15": {
+    "deps_hash": "c8eee4235fc9",
+    "out_degree": 1
+diff --git a/logs/runner-cache/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.txt b/logs/runner-cache/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.txt
+new file mode 100644
+index 0000000000..d00e07972f
+--- /dev/null
++++ b/logs/runner-cache/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.txt
+@@ -0,0 +1,44 @@
++===== runner cache v1 =====
++runner: scripts/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.py
++runner_sha256: c7a2f5f37d1d64bd2fa89c8b001539a8a276323faafbcc234c0a1e941405e013
++input_fingerprint_sha256: 4860fce2c61ee0e5bd7cfa0337441cbc16d7c4ecb976c9f32522a12de246d237
++timeout_sec: 900
++exit_code: 0
++elapsed_sec: 1.35
++status: ok
++----- stdout -----
++AUDIT_INPUT_PATHS:
++  docs/ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md
++  docs/MINIMAL_AXIOMS_2026-06-29.md
++  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
++  docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md
++AUDIT_TIMEOUT_SEC: 900
++scope: the recorded-set Gibbs theorem — product form for every order (plaquette, star), mixed differences k = 2..6, the plaquette and star canonical potentials and a direct Markov test; exact; no order selected
++mutation: none
++PASS: A1 the four declared inputs exist (this note, the axiom memo, block 01, block 08)
++PASS: A2 the four axiom sentences used are present verbatim in the axiom memo
++PASS: A3 the parents' claim ids and the cited fragments (block 01's condition; block 08's three-body term) are present
++PASS: A4 this note carries its claim id and names this runner
++PASS: B1 T1: the product form equals the product of conditionals on all 1296 configurations for every one of the 48 orders of the plaquette and the star at (3,1,2)
++PASS: B2 T3: exp of the k-th mixed difference of log Z_k at the witness assignments is not 1 for k = 2..6 at (3,1,2) and (5,2,4); the literals for k <= 5 (k <= 4) match
++PASS: B3 T3 control: at the constant rule every mixed-difference ratio over the {-x, +y}-assignments is 1 for k = 2..6
++PASS: B4 T4: no two neighbors of a site of Z^3 are adjacent (their difference has even coordinate sum)
++PASS: C1 T6: the plaquette law (order a, b, c, d) has a zero canonical term on the never-co-recorded non-edge {a, d} on all 1296 configurations
++PASS: C2 T6: the canonical term on the co-recorded non-adjacent pair {b, c} is nonzero; exp Phi_bc = 12/13 at (a,b,c,d) = (-x,+y,+z,-y)
++PASS: C3 T6: edge terms exp Phi_ab = 3, exp Phi_bd = 3/4; the four-body and the {b,c,d} terms are 1 at the witness
++PASS: C4 T6: the star with its center last has a nonzero three-body term on the leaves: exp Phi = 165/169 at (l1,l2,l3) = (-x,-x,+y)
++PASS: C5 T2/T6 direct Markov test on the plaquette: the conditional of b depends on c (co-recorded with b by d) and the conditional of a never depends on d (all configurations)
++PASS: F1 the note carries the three fence sentences verbatim
++PASS: F2 the note contains no forbidden phrase (0 hits)
++PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
++PASS: F4 the classical names appear only under Prior art and Imports (0 offenders)
++per_element: executed — every configuration of the plaquette and the star (1296 each) for every one of their 48 orders; the mixed-difference ratios at witness assignments for k = 2..6 at three triples
++per_site: executed — the recorded set of every site in every order; the conditional of b and of a on the plaquette against their non-edge partners
++per_mode: executed — the canonical terms on the edges, the two non-edges, the triple and the quadruple of the plaquette; the leaves' triple of the star
++per_block: executed — the two windows' full potentials at the witnesses; the plaquette's {a, d} term on all 1296 configurations
++lattice_wide: proved on every finite window at triples with nonzero mixed differences (executed at two); infinite volume only by citation of blocks 08–09 for the monotone class
++PASS: G1 the five N5 resolution lines are printed
++TOTAL: PASS=18 FAIL=0
++
++----- stderr -----
++
+diff --git a/scripts/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.py b/scripts/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.py
+new file mode 100644
+index 0000000000..a27a82608e
+--- /dev/null
++++ b/scripts/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.py
+@@ -0,0 +1,414 @@
++#!/usr/bin/env python3
++"""Exact checks: the recorded-set Gibbs theorem — every formation law's Markov graph is the recorded-set graph.
++
++Scope.  The six Bloch-axis menu with the covariant positive product rule (p, q, r), the records-only reading, finite windows
++and total formation orders.  T1: the product form (1/6)^{n_0} prod_edges K / prod_{|A_x|>=2} K_{|A_x|}(v_{A_x}), checked
++against the product of conditionals on every order of the plaquette and of the star.  T3: the k-th mixed differences of
++log K_k are nonzero for k = 2..6 at (3,1,2) and (5,2,4) (exact ratios) and vanish at the constant rule.  T6: the canonical
++(vacuum-normalized) potential of the plaquette law with its last site recording two neighbors has a nonzero term on the
++co-recorded non-adjacent pair and a zero term on the other non-edge on all 1296 configurations; the star with its center
++last has a nonzero three-body term on the leaves; a direct Markov-property test (conditional dependence on the non-edge
++partner) agrees.  Exact rational arithmetic only; the runner scans its own source for floating-point literals.
++"""
++
++from __future__ import annotations
++
++import re
++import sys
++from fractions import Fraction
++from itertools import combinations, permutations, product
++from math import prod
++from pathlib import Path
++
++AUDIT_TIMEOUT_SEC = 900
++AUDIT_INPUT_PATHS = (
++    "docs/ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md",
++    "docs/MINIMAL_AXIOMS_2026-06-29.md",
++    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
++    "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
++)
++ROOT = Path(__file__).resolve().parents[1]
++NOTE_PATH = ROOT / AUDIT_INPUT_PATHS[0]
++AXIOM_PATH = ROOT / AUDIT_INPUT_PATHS[1]
++BLOCK01_PATH = ROOT / AUDIT_INPUT_PATHS[2]
++BLOCK08_PATH = ROOT / AUDIT_INPUT_PATHS[3]
++CLAIM_ID = "admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_bounded_theorem_note_2026-09-15"
++BLOCK01_CLAIM_ID = "admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06"
++BLOCK01_FRAGMENT = "at most one recorded neighbor"
++BLOCK08_CLAIM_ID = "admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_bounded_theorem_note_2026-09-15"
++BLOCK08_FRAGMENT = "the three-body normalizer is irreducible"
++AXIOM_NEEDLES = (
++    "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.",
++    "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.",
++    "Records form.",
++    "Only records are readable.",
++)
++
++MUTATION_GATE = {
++    "product_form_wrong": "B",
++    "mixed_difference_forged": "B",
++    "constant_rule_difference_claimed": "B",
++    "recorded_pairs_adjacent_claimed": "B",
++    "plaquette_nonedge_term_claimed": "C",
++    "plaquette_diagonal_term_denied": "C",
++    "star_three_body_denied": "C",
++    "markov_test_disagrees": "C",
++    "claim_physical_order": "F",
++    "claim_classical_name_in_theorem": "F",
++}
++ACTIVE_MUTATION: str | None = None
++
++
++def mut(name: str) -> bool:
++    if name not in MUTATION_GATE:
++        raise KeyError(name)
++    return ACTIVE_MUTATION == name
++
++
++class Checks:
++    def __init__(self) -> None:
++        self.passed = 0
++        self.failed = 0
++        self.failed_families: list[str] = []
++
++    def check(self, label: str, condition: bool, detail: str) -> None:
++        ok = bool(condition)
++        self.passed += int(ok)
++        self.failed += int(not ok)
++        if not ok:
++            self.failed_families.append(label[0])
++        print(f"{'PASS' if ok else 'FAIL'}: {label} {detail}")
++
++    def finish(self) -> int:
++        print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
++        return self.failed
++
++
++def normalize_text(text: str) -> str:
++    return " ".join(text.split())
++
++
++F = Fraction
++AXES = ("+x", "-x", "+y", "-y", "+z", "-z")
++M = 6
++
++
++def orbit_type(s: int, t: int) -> str:
++    if s == t:
++        return "p"
++    if s // 2 == t // 2:
++        return "q"
++    return "r"
++
++
++class Rule:
++    def __init__(self, tr) -> None:
++        p, q, r = tr
++        w = {"p": p, "q": q, "r": r}
++        self.tr = tr
++        self.phi = [[w[orbit_type(s, t)] for t in range(M)] for s in range(M)]
++        self.Z1 = sum(self.phi[0])
++        self.K = [[F(self.phi[s][a], self.Z1) for s in range(M)] for a in range(M)]
++
++    def Zk(self, vals) -> int:
++        return sum(prod(self.phi[s][a] for a in vals) for s in range(M))
++
++    def Kk(self, vals) -> Fraction:
++        return F(self.Zk(vals), self.Z1 ** len(vals))
++
++    def cond(self, rec: tuple) -> list:
++        if not rec:
++            return [F(1, M)] * M
++        Z = self.Zk(rec)
++        return [F(prod(self.phi[s][a] for a in rec), Z) for s in range(M)]
++
++
++# ------------------------------------------------------------------ windows, orders, laws
++PLAQUETTE = {"sites": ["a", "b", "c", "d"], "edges": [("a", "b"), ("a", "c"), ("b", "d"), ("c", "d")]}
++STAR = {"sites": ["l1", "l2", "l3", "x"], "edges": [("x", "l1"), ("x", "l2"), ("x", "l3")]}
++
++
++def neighbors(win, s):
++    return [b if a == s else a for a, b in win["edges"] if s in (a, b)]
++
++
++def recorded_sets(win, order):
++    pos = {s: t for t, s in enumerate(order)}
++    return {s: tuple(y for y in neighbors(win, s) if pos[y] < pos[s]) for s in win["sites"]}
++
++
++def law_conditionals(rule: Rule, win, order, v: dict) -> Fraction:
++    rec = recorded_sets(win, order)
++    return prod(rule.cond(tuple(v[y] for y in rec[s]))[v[s]] for s in win["sites"])
++
++
++def law_product_form(rule: Rule, win, order, v: dict) -> Fraction:
++    rec = recorded_sets(win, order)
++    n0 = sum(1 for s in win["sites"] if not rec[s])
++    w = F(1, M) ** n0
++    for a, b in win["edges"]:
++        w *= rule.K[v[a]][v[b]]
++    for s in win["sites"]:
++        if len(rec[s]) >= 2:
++            w /= rule.Kk(tuple(v[y] for y in rec[s]))
++    return w
++
++
++def mixed_ratio(rule: Rule, vals) -> Fraction:
++    """exp of the k-th mixed difference of log Z_k at vals with vacuum 0 (= +x): a ratio of products of Z_k values."""
++    k = len(vals)
++    num, den = 1, 1
++    for mask in range(1 << k):
++        arg = tuple(vals[i] if (mask >> i) & 1 else 0 for i in range(k))
++        z = rule.Zk(arg)
++        if (k - bin(mask).count("1")) % 2 == 0:
++            num *= z
++        else:
++            den *= z
++    return F(num, den)
++
++
++def canonical_ratio(law, sites, S, v: dict) -> Fraction:
++    """exp(Phi_S(v_S)) for the vacuum-normalized potential of the positive law on the window: Möbius inversion."""
++    num, den = F(1), F(1)
++    for r in range(len(S) + 1):
++        for T in combinations(S, r):
++            w = {s: 0 for s in sites}
++            for s in T:
++                w[s] = v[s]
++            val = law(w)
++            if (len(S) - r) % 2 == 0:
++                num *= val
++            else:
++                den *= val
++    return num / den
++
++
++# ============================================================================================ family A
++def family_a(checks: Checks, note_text: str, axiom_text: str, b01: str, b08: str) -> None:
++    checks.check("A1", all((ROOT / p).is_file() for p in AUDIT_INPUT_PATHS) and len(set(AUDIT_INPUT_PATHS)) == 4,
++                 "the four declared inputs exist (this note, the axiom memo, block 01, block 08)")
++    flat_ax = normalize_text(axiom_text)
++    checks.check("A2", all(n in flat_ax for n in AXIOM_NEEDLES), "the four axiom sentences used are present verbatim in the axiom memo")
++    f01, f08 = normalize_text(b01).lower(), normalize_text(b08).lower()
++    checks.check("A3", BLOCK01_CLAIM_ID in f01 and BLOCK01_FRAGMENT in f01 and BLOCK08_CLAIM_ID in f08 and BLOCK08_FRAGMENT in f08,
++                 "the parents' claim ids and the cited fragments (block 01's condition; block 08's three-body term) are present")
++    flat = normalize_text(note_text)
++    checks.check("A4", CLAIM_ID in flat and Path(__file__).name in flat, "this note carries its claim id and names this runner")
++
++
++# ============================================================================================ family B
++RATIOS_312 = {2: F(169, 121), 3: F(169, 165), 4: F(25313305500289, 23811286661761), 5: F(2241861381895613, 2214449659543773)}
++RATIOS_524 = {2: F(961, 784), 3: F(1291123, 1244800), 4: F(845934898201600, 806460091894081)}
++WITNESS = {2: (1, 1), 3: (1, 1, 2), 4: (1, 1, 1, 1), 5: (1, 1, 1, 1, 2), 6: (1, 1, 1, 1, 1, 1)}
++
++
++def family_b(checks: Checks, report: dict) -> None:
++    rule = Rule((3, 1, 2))
++    ok = True
++    n_orders = 0
++    for win in (PLAQUETTE, STAR):
++        for order in permutations(win["sites"]):
++            n_orders += 1
++            for vals in product(range(M), repeat=4):
++                v = dict(zip(win["sites"], vals))
++                lhs = law_conditionals(rule, win, order, v)
++                rhs = law_product_form(rule, win, order, v)
++                if mut("product_form_wrong"):
++                    rhs *= 2
++                if lhs != rhs:
++                    ok = False
++                    break
++            if not ok:
++                break
++        if not ok:
++            break
++    checks.check("B1", ok and n_orders == 48, f"T1: the product form equals the product of conditionals on all 1296 configurations for every one of the {n_orders} orders of the plaquette and the star at (3,1,2)")
++    r312 = {k: mixed_ratio(rule, WITNESS[k]) for k in range(2, 7)}
++    r524 = {k: mixed_ratio(Rule((5, 2, 4)), WITNESS[k]) for k in range(2, 7)}
++    lit_ok = all(r312[k] == RATIOS_312[k] for k in RATIOS_312) and all(r524[k] == RATIOS_524[k] for k in RATIOS_524)
++    nonzero = all(r312[k] != 1 for k in range(2, 7)) and all(r524[k] != 1 for k in range(2, 7))
++    if mut("mixed_difference_forged"):
++        nonzero = r312[6] == 1
++    checks.check("B2", lit_ok and nonzero, "T3: exp of the k-th mixed difference of log Z_k at the witness assignments is not 1 for k = 2..6 at (3,1,2) and (5,2,4); the literals for k <= 5 (k <= 4) match")
++    rc = Rule((2, 2, 2))
++    const = all(mixed_ratio(rc, vals) == 1 for k in range(2, 7) for vals in product((1, 2), repeat=k))
++    if mut("constant_rule_difference_claimed"):
++        const = not const
++    checks.check("B3", const, "T3 control: at the constant rule every mixed-difference ratio over the {-x, +y}-assignments is 1 for k = 2..6")
++    # B4: co-recorded neighbors are never adjacent on Z^3 (bipartite): two neighbors of a site differ by an even vector
++    nbrs = [(1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0, -1)]
++    adj = any(sum(abs(a - b) for a, b in zip(u, w)) == 1 for u in nbrs for w in nbrs if u != w)
++    if mut("recorded_pairs_adjacent_claimed"):
++        adj = True
++    checks.check("B4", not adj, "T4: no two neighbors of a site of Z^3 are adjacent (their difference has even coordinate sum)")
++    report["rule"] = rule
++
++
++# ============================================================================================ family C
++def family_c(checks: Checks, report: dict, exact: bool) -> None:
++    rule = report["rule"]
++    sites = PLAQUETTE["sites"]
++    order = ("a", "b", "c", "d")
++    law = lambda w: law_product_form(rule, PLAQUETTE, order, w)
++    v = {"a": 1, "b": 2, "c": 4, "d": 3}
++    bc = canonical_ratio(law, sites, ("b", "c"), v)
++    ad_all_one = all(canonical_ratio(law, sites, ("a", "d"), dict(zip(sites, vals))) == 1 for vals in product(range(M), repeat=4))
++    bc_some = any(canonical_ratio(law, sites, ("b", "c"), dict(zip(sites, vals))) != 1 for vals in product(range(M), repeat=4))
++    if mut("plaquette_nonedge_term_claimed"):
++        ad_all_one = False
++    checks.check("C1", ad_all_one, "T6: the plaquette law (order a, b, c, d) has a zero canonical term on the never-co-recorded non-edge {a, d} on all 1296 configurations")
++    if mut("plaquette_diagonal_term_denied"):
++        bc_some = False
++    checks.check("C2", bc_some and bc == F(12, 13), f"T6: the canonical term on the co-recorded non-adjacent pair {{b, c}} is nonzero; exp Phi_bc = {bc} at (a,b,c,d) = (-x,+y,+z,-y)")
++    ab = canonical_ratio(law, sites, ("a", "b"), v)
++    bd = canonical_ratio(law, sites, ("b", "d"), v)
++    q4 = canonical_ratio(law, sites, tuple(sites), v)
++    bcd = canonical_ratio(law, sites, ("b", "c", "d"), v)
++    checks.check("C3", ab == 3 and bd == F(3, 4) and q4 == 1 and bcd == 1, f"T6: edge terms exp Phi_ab = {ab}, exp Phi_bd = {bd}; the four-body and the {{b,c,d}} terms are 1 at the witness")
++    # C4: the star, center last: three-body term on the leaves
++    ssites = STAR["sites"]
++    sorder = ("l1", "l2", "l3", "x")
++    slaw = lambda w: law_product_form(rule, STAR, sorder, w)
++    tri = canonical_ratio(slaw, ssites, ("l1", "l2", "l3"), {"l1": 1, "l2": 1, "l3": 2, "x": 0})
++    tri_some = tri != 1
++    if mut("star_three_body_denied"):
++        tri_some = False
++    checks.check("C4", tri_some and tri == F(165, 169), f"T6: the star with its center last has a nonzero three-body term on the leaves: exp Phi = {tri} at (l1,l2,l3) = (-x,-x,+y)")
++    # C5: direct Markov test on the plaquette: the conditional of b given the rest depends on c (non-edge partner) and not... (a, d are its neighbors)
++    def cond_b(w):
++        ws = []
++        for s in range(M):
++            ww = dict(w)
++            ww["b"] = s
++            ws.append(law(ww))
++        Z = sum(ws)
++        return [x / Z for x in ws]
++    base = {"a": 0, "b": 0, "c": 0, "d": 0}
++    dep_c = False
++    for cval in range(M):
++        w = dict(base)
++        w["c"] = cval
++        if cond_b(w) != cond_b(base):
++            dep_c = True
++            break
++    # and the conditional of a does not depend on d (never co-recorded, non-adjacent)
++    def cond_a(w):
++        ws = []
++        for s in range(M):
++            ww = dict(w)
++            ww["a"] = s
++            ws.append(law(ww))
++        Z = sum(ws)
++        return [x / Z for x in ws]
++    indep_d = all(cond_a({**dict(zip(sites, vals)), "d": dval}) == cond_a({**dict(zip(sites, vals)), "d": 0})
++                  for vals in product(range(M), repeat=4) for dval in range(M) if vals[3] == 0)
++    if mut("markov_test_disagrees"):
++        dep_c = not dep_c
++    checks.check("C5", dep_c and indep_d, "T2/T6 direct Markov test on the plaquette: the conditional of b depends on c (co-recorded with b by d) and the conditional of a never depends on d (all configurations)")
++    if exact:
++        print(f"exact plaquette terms at the witness: bc={bc} ab={ab} bd={bd}; star leaves={tri}")
++
++
++# ============================================================================================ family F
++FENCES = (
++    "This note describes formation laws on finite windows for every order; it states nothing infinite-volume beyond citing blocks 08–09 for the monotone class, nothing about the static law beyond block 01's equality case, and selects no order as physical.",
++    "No plane, bridge, Born or gravity statement enters this note; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
++    "no value, constant or theorem is imported as authority.",
++)
++FORBIDDEN = (
++    "the physical order", "for every coupling", "selects the", "fires wake condition", "the Bridge weights", "the Bridge conjecture",
++    "certified", "phase transition", "several static laws", "washes out", "toward the plane", "the trend",
++    "the static law of Z^3 is unique", "arrow of time is derived",
++)
++CLAIM_INJECTIONS = {"claim_physical_order": "The leaves-first order is the physical order."}
++CLASSICAL_NAMES = ("Hammersley", "Clifford", "Grimmett", "Möbius", "Mobius", "Brook", "Dobrushin", "Kolmogorov", "Perron")
++ALLOWED_NAME_SECTIONS = ("Prior art and what is new", "Imports")
++SCAN_MARKER = "float-scan-marker-line"
++
++
++def family_f(checks: Checks, note_text: str) -> None:
++    text = note_text
++    for name, phrase in CLAIM_INJECTIONS.items():
++        if mut(name):
++            text = text + "\n" + phrase
++    flat = normalize_text(text)
++    checks.check("F1", all(f in flat for f in FENCES), "the note carries the three fence sentences verbatim")
++    hits = [ph for ph in FORBIDDEN if ph.lower() in flat.lower()]
++    checks.check("F2", not hits, f"the note contains no forbidden phrase ({len(hits)} hits)")
++    source_lines = Path(__file__).read_text(encoding="utf-8").splitlines()
++    scan = [ln for ln in source_lines if SCAN_MARKER not in ln]
++    float_literal = re.compile(r"(?<![\w.])\d+\.\d+(?![\w.])|(?<![\w.])\d+[eE][-+]?\d+(?![\w.])")
++    conversion = "flo" + "at("  # float-scan-marker-line
++    evalf = "eva" + "lf("  # float-scan-marker-line
++    numeric = "N" + "("  # float-scan-marker-line
++    nsimp = "nsimp" + "lify("  # float-scan-marker-line
++    bad = [ln for ln in scan if float_literal.search(ln) or conversion in ln or evalf in ln or numeric in ln or nsimp in ln]
++    checks.check("F3", not bad and len(scan) > 200, f"runner source: no floating-point literal or conversion call ({len(bad)} hits)")
++    sections = re.split(r"^## ", text, flags=re.M)
++    offenders = []
++    for sec in sections[1:]:
++        title = sec.splitlines()[0].strip()
++        body = sec
++        if mut("claim_classical_name_in_theorem") and title.startswith("Theorem T3"):
++            body = body + " (Hammersley)"
++        if any(title.startswith(a) for a in ALLOWED_NAME_SECTIONS):
++            continue
++        for nm in CLASSICAL_NAMES:
++            if nm in body:
++                offenders.append((title[:30], nm))
++    checks.check("F4", not offenders, f"the classical names appear only under Prior art and Imports ({len(offenders)} offenders)")
++
++
++# ============================================================================================ family G
++N5_LINES = (
++    "per_element: executed — every configuration of the plaquette and the star (1296 each) for every one of their 48 orders; the mixed-difference ratios at witness assignments for k = 2..6 at three triples",
++    "per_site: executed — the recorded set of every site in every order; the conditional of b and of a on the plaquette against their non-edge partners",
++    "per_mode: executed — the canonical terms on the edges, the two non-edges, the triple and the quadruple of the plaquette; the leaves' triple of the star",
++    "per_block: executed — the two windows' full potentials at the witnesses; the plaquette's {a, d} term on all 1296 configurations",
++    "lattice_wide: proved on every finite window at triples with nonzero mixed differences (executed at two); infinite volume only by citation of blocks 08–09 for the monotone class",
++)
++
++
++def family_g(checks: Checks) -> None:
++    for line in N5_LINES:
++        print(line)
++    checks.check("G1", len(N5_LINES) == 5 and all(len(l) >= 40 for l in N5_LINES), "the five N5 resolution lines are printed")
++
++
++def main(argv) -> int:
++    global ACTIVE_MUTATION
++    if "--list-mutations" in argv:
++        for name, fam in MUTATION_GATE.items():
++            print(f"{name} {fam}")
++        return 0
++    if "--mutation" in argv:
++        ACTIVE_MUTATION = argv[argv.index("--mutation") + 1]
++        if ACTIVE_MUTATION not in MUTATION_GATE:
++            print(f"unknown mutation {ACTIVE_MUTATION}")
++            return 2
++    exact = "--exact" in argv
++    checks = Checks()
++    texts = [(ROOT / p).read_text(encoding="utf-8") if (ROOT / p).is_file() else "" for p in AUDIT_INPUT_PATHS]
++    print("AUDIT_INPUT_PATHS:")
++    for p in AUDIT_INPUT_PATHS:
++        print(f"  {p}")
++    print(f"AUDIT_TIMEOUT_SEC: {AUDIT_TIMEOUT_SEC}")
++    print("scope: the recorded-set Gibbs theorem — product form for every order (plaquette, star), mixed differences k = 2..6, the plaquette and star canonical potentials and a direct Markov test; exact; no order selected")
++    print(f"mutation: {ACTIVE_MUTATION or 'none'}")
++    report: dict = {}
++    family_a(checks, texts[0], texts[1], texts[2], texts[3])
++    family_b(checks, report)
++    family_c(checks, report, exact)
++    family_f(checks, texts[0])
++    family_g(checks)
++    if ACTIVE_MUTATION:
++        observed = "".join(sorted(set(checks.failed_families))) or "none"
++        print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
++        print(f"mutation_family_observed: {observed}")
++    failed = checks.finish()
++    return 1 if failed else 0
++
++
++if __name__ == "__main__":
++    raise SystemExit(main(sys.argv[1:]))

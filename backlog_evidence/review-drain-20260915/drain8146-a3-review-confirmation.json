@@ -1,0 +1,54 @@
+{
+  "status": "AFFECTED REPAIR CONFIRMED; FIFTH CAPTURE ONLY AFTER UPDATED CHEAP PREFLIGHT",
+  "tree": "ccaf81f2491137f966b7305ed819833f3a9322e7",
+  "repair": {
+    "finding": "A3 stale prose needle after legitimate parent narrowing; four successful primaries are unchanged and reusable.",
+    "failed_execution": "drain8146-execution-8146.json",
+    "failed_cache": "drain8146-failed-a3-cache.txt",
+    "failed_source": "drain8146-before-a3-repair.py",
+    "changed_source": "scripts/admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_2026_09_15.py",
+    "before_sha256": "f6a6d224503d25fa54a6e251e1f5975d4e54588f3087d0f54ae82fb294843fb7",
+    "after_sha256": "063e4d2913cf1e21ceff33dee707d79914ce13a73fc29a8b34df3043201390a1",
+    "repair": "Require the actual unchanged parent theorem title: the plane chain and the column law, alongside its claim ID; preserve rectangle parent proof check.",
+    "tree": "ccaf81f2491137f966b7305ed819833f3a9322e7",
+    "rerun": "Only affected fifth primary after original reviewer confirmation and cheap updated receipt, under same300s/3GiB cap."
+  },
+  "ast_check": "Exactly two string constants changed; all remaining AST identical. Actual parent theorem title exists. All other v3 source and input hashes unchanged.",
+  "successful_evidence": [
+    {
+      "pr": 8138,
+      "receipt": "/private/tmp/review-drain-20260915/drain8146-execution-8138.json",
+      "sha256": "f20e1c89b0e8a7b630519d5f8ff4b1aa7de7a670c2123f319bbff03c4f18c02a",
+      "runner_sha256": "19c70c0a4164a015ad41de478fc1f91ba3b8119d5baa94d1260e11c073554480",
+      "elapsed_sec": 44.4851291179657
+    },
+    {
+      "pr": 8139,
+      "receipt": "/private/tmp/review-drain-20260915/drain8146-execution-8139.json",
+      "sha256": "afbee6a0fbb036c08a482cb95c30de22865850c1abe9335bd336267d9445ff94",
+      "runner_sha256": "11faee360b19da49491858bd4d5c9071c5121f8259d385ca17cd0ecb99a41070",
+      "elapsed_sec": 77.16017198562622
+    },
+    {
+      "pr": 8141,
+      "receipt": "/private/tmp/review-drain-20260915/drain8146-execution-8141.json",
+      "sha256": "9b600792c0cdb7edcfc439049f1b3aff4926498aeaf54903a71483ce6d390bd2",
+      "runner_sha256": "487a6cbedc3aede26c9eea43b3936168e9f8bba4584971d06bfc11986e77323b",
+      "elapsed_sec": 2.058919906616211
+    },
+    {
+      "pr": 8142,
+      "receipt": "/private/tmp/review-drain-20260915/drain8146-execution-8142.json",
+      "sha256": "0842ce37b99b799291bc9a5d2102838273e5d83327a26c5cfb54e238fbf18897",
+      "runner_sha256": "a9bec2e35e5cfc522e71fd7624fe25e2020baa0d88f39e16ca08df014c377748",
+      "elapsed_sec": 4.075223922729492
+    }
+  ],
+  "failed_evidence": {
+    "drain8146-execution-8146.json": "4251d3fb6317762d3d6f91597122dd9588268276de018545a3d8f23403fd8087",
+    "drain8146-failed-a3-cache.txt": "9d50ef1b57817e1ef85172108703661acbefaa6bf9390702357d028057a0daca",
+    "drain8146-before-a3-repair.py": "f6a6d224503d25fa54a6e251e1f5975d4e54588f3087d0f54ae82fb294843fb7"
+  },
+  "semantic_scope": "Plane-chain premise/proof identity replaces stale prose; no hypothesis, formula, counter or numerical control changed; prior positive-salvage scope unchanged.",
+  "execution": "Reviewer executed no primary. Repeat only fifth under300s/3GiB after updated cheap check; do not repeat four successes."
+}

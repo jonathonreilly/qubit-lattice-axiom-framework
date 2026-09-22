@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_2026_09_15.py
+runner_sha256: f6a6d224503d25fa54a6e251e1f5975d4e54588f3087d0f54ae82fb294843fb7
+input_fingerprint_sha256: 944c449566c6710ccf2bd200e22b17ec158ae1c33c315ccd5a7216f4b4f191d0
+timeout_sec: 300
+exit_code: 1
+elapsed_sec: 14.64
+status: nonzero_exit
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_STRONG_COUPLING_FORMATION_LAW_LEVEL_AUTOMATON_ERODER_METASTABILITY_ORDERED_PHASE_OBLIGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md
+  docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md
+  docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md
+AUDIT_TIMEOUT_SEC: 300
+scope: the strong-coupling side of the 3D monotone law — the level automaton, the exact noise map, the eroder bound, epsilon(p), the 2x2 metastability table, the 2D eigenvalue; exact; no ordered phase claimed
+mutation: none
+PASS: A1 the five declared inputs exist (this note, axiom memo, plane-chain and DLR notes, actual rectangle premise)
+PASS: A2 the four axiom sentences used are present verbatim in the axiom memo
+FAIL: A3 actual parent claim ids, strong-coupling context and rectangle row/column proof identity are present
+PASS: A4 this note carries its claim id and names this runner
+PASS: B1 S0: the three predecessors lie on the previous level and project to the offsets (0,0), (-1,0), (0,-1)
+PASS: B2 S1: the five closed forms (unanimous, 2:1 orthogonal, 2:1 antipodal, tie majority, tie antipode) agree with the definition symbolically
+PASS: B3 S1: at (10,1,2) the four probabilities are 1000/1033, 100/131, 50/71, 10/33; p=3: dev(aaa)=0.55000000, dev(aab)=0.65384615, dev(aa-a)=0.79545454; p=100: dev(aaa)=0.00003299, dev(aab)=0.02066398, dev(aa-a)=0.01302803; p=1000: dev(aaa)=0.00000003, dev(aab)=0.00200696, dev(aa-a)=0.00103093
+PASS: B4 S1: strict majority across both 2:1 patterns iff p > max(q,r) and p^2*q > r^3; exact samples include the small-q counterexample and equality boundaries
+PASS: B5 S3: epsilon(p) over all 216 triples at (p,1,2): p=3: 35/44 = 0.79545454 at ('+x', '+x', '-x'); p=10: 21/71 = 0.29577464 at ('+x', '+x', '-x'); p=100: 211/10211 = 0.02066398 at ('+x', '+x', '+y')
+PASS: C1 S2: 300 random islands (levels 3..12, up to 12 sites) all die within M_1+M_2+M_3-t_0+1 levels (longest life 9)
+PASS: C2 S2: a line of six dies in exactly 6 levels and a filled triangle of fifteen in exactly 9, both equal to the bound
+PASS: D1 S4: full 2x2 chain, TV between the n-step laws from the all-+x and the all--x planes at (p,1,2) matches the memory table, is below one, and increases with p for n = 1, 2, 4, 8: p=3: 0.428390,0.082771,0.002940,0.000003; p=100: 0.976919,0.927316,0.795151,0.549286
+PASS: D1b S4: the 48-fold orbit quotient (the six constant planes identified) contracts at every coupling; its n-step max row TV matches the table, increases with p, and lies below the full chain's memory at every (p, n)
+PASS: D2 S4: at p = 10^6 the constant plane maps to itself with probability 0.99999100 (>= 1 - 10^-5): absorbing in the limit
+PASS: D3 S5: the row eigenvalues (p-q)/Z_1 and (p+q-2r)/Z_1 are below one at every positive triple (Z_1 - (p-q) = 2q+4r > 0, Z_1 - (p+q-2r) = 6r > 0); at (1000,1,2) the first is 0.99008919
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the classical names appear only under Prior art and Imports (0 offenders)
+per_element: executed — the five closed forms against the definition; the 216 triples for epsilon(p) at five couplings; the preference condition at four triples
+per_site: executed — the projected predecessors of 50 random sites; the constant plane's self-transition at p = 10^6
+per_mode: executed — the 2x2 orbit quotient's contraction after 1, 2, 4, 8 steps at four couplings; the row eigenvalues
+per_block: executed — 300 random islands, a line and a filled triangle under the eroder bound
+lattice_wide: S0, S2, S3, S5 proved for every positive triple; S4 proved for every finite cross-section; the three-dimensional ordered phase is an obligation (S6), not claimed
+PASS: G1 the five N5 resolution lines are printed
+TOTAL: PASS=19 FAIL=1
+
+----- stderr -----
+

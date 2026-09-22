@@ -1,0 +1,716 @@
+diff --git a/docs/ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md b/docs/ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md
+index 44cc604de2..ee141fceb4 100644
+--- a/docs/ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md
++++ b/docs/ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md
+@@ -1,7 +1,7 @@
+ ---
+ claim_id: admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_bounded_theorem_note_2026-09-15
+ claim_type: bounded_theorem
+-claim_scope: "For a finite window with supplied total formation order, positive six-axis product rule and records-only reading: exact recorded-set factorization and a containing Markov graph; vacuum-normalized potential and its maximal recorded-set terms. The converse minimal-graph and genuine k-body conclusions require nonzero mixed differences on every maximal recorded-set size that occurs, verified at (3,1,2) and (5,2,4). A nearest-neighbor graph suffices whenever every recorded set has size at most one. Exact plaquette and star witnesses remain; broader negative certification is deferred."
++claim_scope: "For a finite window with supplied total formation order and positive six-axis product rule: exact recorded-set factorization, containing Markov graph, vacuum-normalized potential and maximal-set mixed-difference identities. Exact plaquette/star and mixed-ratio witnesses at the declared triples. A nearest-neighbor graph suffices when every recorded set has at most one element. The converse/minimal-graph and excluded-graph conclusions are explicitly deferred; their full original proof is archived."
+ upstream_dependencies:
+   - minimal_axioms
+   - admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06
+@@ -10,7 +10,7 @@ upstream_dependencies:
+ runner: scripts/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.py
+ ---
+ 
+-# Every formation law is a Gibbs law whose Markov graph is the recorded-set graph: nearest-neighbor Markov exactly when no site records two neighbors
++# Recorded-set Gibbs factorization, a containing graph and exact potential witnesses
+ 
+ **Date:** 2026-09-15
+ **Type:** bounded_theorem
+@@ -24,18 +24,17 @@ each group of neighbors that a site "saw" when it formed is coupled all
+ together by a normalizer term. So the pattern law is always a Gibbs law, and
+ its "who influences whom" graph is the lattice's adjacency plus, for every site,
+ the pairs among the neighbors it saw. Those extra pairs are never lattice neighbors themselves. The displayed graph
+-always contains a valid Markov graph. Its minimality and genuine maximal-set
+-couplings require the nonzero mixed-difference hypothesis in T4, verified at
+-the two declared triples. Under that hypothesis nearest-neighbor Markovity is
+-equivalent to every recorded set having size at most one. Without it, only
+-the sufficient direction and the containing graph are asserted.
++always contains a valid Markov graph. The explicit maximal-set potential
++identities and mixed-ratio witnesses are retained. Certification of the
++converse nearest-neighbor criterion and excluded-graph/minimality conclusions
++is deferred; the sufficient direction is retained.
+ 
+ Exactly: `μ_σ(v) = (1/6)^{#{x : A_x = ∅}} Π_{xy ∈ E(W)} K(v_x, v_y) / Π_{|A_x| ≥ 2} K_{|A_x|}(v_{A_x})`
+ (T1); Markov for `G_σ = E(W) ∪ ⋃_x binom(A_x, 2)` (T2); the unique vacuum-
+ normalized potential has a nonzero term on every maximal recorded set of size
+ `k` with nonzero `k`-th mixed difference of `log K_k` — ratios `169/121`,
+ `169/165`, `25313305500289/23811286661761`, … for `k = 2, 3, 4, …, 6` at
+-`(3, 1, 2)` (T3); under T4's nonzero maximal-set hypothesis, nearest-neighbor Markov iff `max_x |A_x| ≤ 1`. Executed
++`(3, 1, 2)` (T3); T4 retains the sufficient nearest-neighbor condition; its converse is deferred. Executed
+ with exact arithmetic: 18 checks, 10 mutations.
+ 
+ ## Machine status and trace
+@@ -49,13 +48,13 @@ target_blocker_text: "the campaign's standing question (block 01): when is the f
+ source_of_blocker_text: handoff
+ reachability_to_target: supports
+ artifact_role: theorem
+-next_trace_action: "the structure of every formation law on a finite window is now the recorded-set Gibbs law; the infinite-volume versions exist for the monotone class (blocks 08-09); next: the region's boundary in (p, q, r); a covariant order class's infinite-volume structure needs a supplied construction. Consumers: the campaign's queue; #8093's assembly (the formation-law node: the containing graph and conditional minimality criterion); the parked statistical-bridge material (read-only)"
+-conditional_surface_status: "exact on every finite window and every order for T1, T2, T4's forward direction and the range bound in T5; T3 and T4's converse at triples where the relevant mixed differences are nonzero (executed for k = 2..6 at (3,1,2) and (5,2,4)); T6 executed; conditional on the records-only reading, positivity, the six-axis menu; no infinite-volume claim beyond citation"
++next_trace_action: "Use the recorded-set factorization, containing graph and explicit potential identities. The converse nearest-neighbor criterion and excluded-graph/minimality certification remain deferred with original proofs preserved."
++conditional_surface_status: "T1 and T2 finite-window factorization and containing graph; T3 potential identities under stated hypotheses; T4 sufficient direction only; T5 range bound and conditional body-count identities; exact T6 potential witnesses. Converse and excluded-graph certification deferred."
+ hypothetical_axiom_status: null
+ admitted_observation_status: null
+ audit_required_before_effective_retained: true
+ bare_retained_allowed: false
+-claim_type_reason: "T1 is the regrouping of the product of conditionals; T2 is read off T1; T3 re-proves the uniqueness of the vacuum-normalized potential of a positive law on a finite set and computes its recorded-set terms as mixed differences; T4 combines T3 with the bipartite structure of the lattice; every number printed is an exact rational"
++claim_type_reason: "T1 is the regrouping of the product of conditionals; T2 is read off T1; T3 re-proves the uniqueness of the vacuum-normalized potential of a positive law on a finite set and computes its recorded-set terms as mixed differences; T4 retains the sufficient condition only; every number printed is an exact rational"
+ ```
+ 
+ ## Premises and declared objects
+@@ -104,7 +103,8 @@ Block 01 (on main) proved that `μ_σ` equals the static law iff every recorded
+ set has at most one element (Theorem B), re-proved Brook's ratio lemma and
+ referenced Hammersley–Clifford only. Blocks 08–09 (stacked) and the plane-law
+ note (on main) computed the monotone class's Gibbs potentials in three and two
+-dimensions and, on `Z^3`, the Markov graph and the separation from static laws.
++dimensions and, on `Z^3`, the containing graph and conditional witnesses;
++current certification of the static-law exclusion is deferred.
+ The concurrent #8102 (open; not an input) proved that `μ_σ` depends on `σ`
+ only through the multiset of recorded sets of size at least two — consistent
+ with T1, which displays that dependence. The uniqueness of the vacuum-
+@@ -113,8 +113,7 @@ Hammersley–Clifford) is a classical reference re-proved here at scope.
+ 
+ New here: the recorded-set Gibbs form for every order (T1), the Markov graph
+ (T2), the canonical-potential terms on the recorded sets and their
+-irreducibility up to `k = 6` (T3), the classification of nearest-neighbor
+-Markov formation laws (T4), the range statement (T5), and the executed
++irreducibility up to `k = 6` (T3), the sufficient nearest-neighbor condition (T4), the range statement (T5), and the executed
+ plaquette and star potentials (T6).
+ 
+ ## Exact target and obligation graph
+@@ -125,13 +124,15 @@ plaquette and star potentials (T6).
+ | T2 the Markov graph | proved from T1 |
+ | T3(a) uniqueness of the vacuum-normalized potential; Markov for `G` ⇒ support on cliques of `G` | re-proved (inversion on the subset lattice) |
+ | T3(b) the recorded-set terms are mixed differences; nonzero on maximal sets when `Δ_k log K_k ≠ 0` | proved; `Δ_k log K_k ≠ 0` executed for `k = 2..6` at `(3,1,2)`, `(5,2,4)`; zero at `(2,2,2)` (B2, B3) |
+-| T4 nearest-neighbor Markov iff `max |A_x| ≤ 1` | proved from T3 and bipartiteness at triples with the executed nonzero differences; forward direction unconditional |
++| T4 sufficient nearest-neighbor condition | proved when every recorded set has size at most one; converse/excluded-graph certification deferred |
+ | T5 range and body count | proved from T1–T3 |
+ | T6 the plaquette and the star potentials | executed (C1–C4) |
+ | `Δ_k log K_k ≠ 0` at every nonconstant triple; infinite-volume laws for non-monotone classes | open; not this note |
+ 
+-The strongest missing lemma is that `Δ_k log K_k` is nonzero at every
+-nonconstant triple for every `k ≤ 6`; T4's converse is stated where it is.
++The mixed differences are witnessed nonzero at the two declared triples.
++Nonzero at every nonconstant triple is not a valid general premise: the
++exceptional-construction note supplies three-body zero examples. The
++higher-body identities retain their explicit nonvanishing hypotheses.
+ 
+ ## Theorem T1 — the recorded-set product form
+ 
+@@ -196,21 +197,18 @@ at `(5, 2, 4)`, none equal to `1` (B2); at the constant rule every searched
+ ratio is `1` (B3). (For `k = 2` the statement is `K^2` not of rank one, i.e.
+ nonconstant; for `k = 3` it is block 08's third difference.)
+ 
+-## Theorem T4 — the converse graph criterion under nonzero maximal-set differences
++## Theorem T4 — a sufficient nearest-neighbor condition
+ 
+ **Statement.** If every recorded set of `σ` has at most one element, `μ_σ`
+-is a Markov field for `E(W)` (and equals the static law, block 01's Theorem B).
+-Conversely, at a triple where `Δ_k log K_k ≠ 0` for every `k ≤ 6` that occurs
+-as the size of a maximal recorded set (executed: every `k ≤ 6` at `(3, 1, 2)`
+-and `(5, 2, 4)`), if some recorded set has two or more elements then `μ_σ` is
+-not a Markov field for `E(W)`, nor for any graph in which some co-recorded
+-pair is not an edge.
+-
+-*Proof.* Forward: T1 has no normalizer term, so `G_σ = E(W)` and T2 applies.
+-Converse: a recorded set with `≥ 2` elements is contained in a maximal one `A`
+-with `|A| = k ≥ 2`; by T3(b) `Φ_A ≠ 0`; `A` is not a clique of `E(W)` (its
+-pairs are non-adjacent, the lattice being bipartite), nor of any graph missing
+-one of its pairs; by T3(a) `μ_σ` is not Markov for such a graph. ∎
++is a Markov field for `E(W)`.
++
++*Proof.* T1 has no normalizer term, so `G_σ=E(W)` and T2 applies. ∎
++
++The original converse, excluded-graph conclusion and minimality inference,
++including the full proof with its nonzero maximal-set hypotheses, are retained
++byte-exact under PR8141 in the history manifest. Their negative certificate
++is incomplete, so those conclusions are deferred. T3's explicit potential
++formula and finite nonzero mixed-ratio witnesses remain live.
+ 
+ ## Theorem T5 — the range and the body count of the induced interaction
+ 
+@@ -234,7 +232,7 @@ pair), `exp Φ_{ad} = 1` on all `1296` configurations (`{a, d}` is the other
+ non-edge, never co-recorded), the edge terms `exp Φ_{ab} = 3`,
+ `exp Φ_{bd} = 3/4` at the witness, and `exp Φ_{abcd} = exp Φ_{bcd} = 1` at the
+ witness (C1–C3). So this formation law is Markov for the plaquette plus the
+-diagonal `{b, c}`, not for the plaquette — the two-dimensional diagonal
++diagonal `{b, c}` — an explicit two-dimensional diagonal
+ interaction of the plane-law note, at its smallest.
+ 
+ **The star** `x` with leaves `l_1, l_2, l_3`, the center last: the three-body
+@@ -242,7 +240,8 @@ term on the leaves is nonzero, `exp Φ_{l_1 l_2 l_3} = 165/169` at
+ `(l_1, l_2, l_3) = (−x, −x, +y)` (C4) — block 08's three-body term at its
+ smallest, on a tree with no plaquette: the formation law of a tree swept from
+ its center outward is nearest-neighbor Markov (every leaf records one site,
+-Theorem B), while the same tree swept leaves-first is not (T4).
++the sufficient condition), while the leaves-first order has the displayed
++nonzero three-body potential witness. The excluded-graph inference is deferred.
+ 
+ ## No-Go Discipline Gate — deferred broader certification
+ 
+@@ -253,6 +252,8 @@ byte-exact in [the PR8146 history manifest](work_history/review_loop/pr8146/orig
+ under PR8141; the original branch remains a recovery handle for unlanded work.
+ 
+ ### N1 — Route coverage
++The specifically deferred conclusions are the T4 converse/iff criterion and
++the excluded-graph/minimality conclusions.
+ The original list includes unattempted and out-of-domain routes. It is not a
+ completed route search; broader negative certification is deferred.
+ 
+@@ -290,7 +291,7 @@ any future broader exclusion must complete the applicable discipline.
+ - A `k ≤ 6` at `(3, 1, 2)` or `(5, 2, 4)` for which every searched mixed-difference ratio equals `1`, or a nonzero ratio at the constant rule (B2, B3).
+ - A configuration of the plaquette on which `exp Φ_{ad} ≠ 1`, or `exp Φ_{bc} = 1` on all configurations (C1, C2).
+ - A vanishing three-body term on the star's leaves for all leaf values (C4).
+-- A pair of adjacent sites inside a recorded set (impossible on `Z^3`; would refute T4's use of bipartiteness).
++- A pair of adjacent sites inside a recorded set (impossible on `Z^3`; would refute the stated lattice pair geometry).
+ 
+ ## Boundaries and non-claims
+ This note describes formation laws on finite windows for every order; it states nothing infinite-volume beyond citing blocks 08–09 for the monotone class, nothing about the static law beyond block 01's equality case, and selects no order as physical. No plane, bridge, Born or gravity statement enters this note; this note does not fire wake condition 1 of the parked statistical-bridge decision. The vacuum-normalized potential and its clique property are classical references re-proved here at the scope used; no value, constant or theorem is imported as authority.
+diff --git a/docs/ADMISSIBILITY_RULE_STRONG_COUPLING_FORMATION_LAW_LEVEL_AUTOMATON_ERODER_METASTABILITY_ORDERED_PHASE_OBLIGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md b/docs/ADMISSIBILITY_RULE_STRONG_COUPLING_FORMATION_LAW_LEVEL_AUTOMATON_ERODER_METASTABILITY_ORDERED_PHASE_OBLIGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md
+index 0f5f143a1a..d1b8ba1967 100644
+--- a/docs/ADMISSIBILITY_RULE_STRONG_COUPLING_FORMATION_LAW_LEVEL_AUTOMATON_ERODER_METASTABILITY_ORDERED_PHASE_OBLIGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md
++++ b/docs/ADMISSIBILITY_RULE_STRONG_COUPLING_FORMATION_LAW_LEVEL_AUTOMATON_ERODER_METASTABILITY_ORDERED_PHASE_OBLIGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md
+@@ -99,9 +99,11 @@ previous level. Its noiseless version (`ε = 0`) is the majority rule.
+ 
+ ### Linked source authority
+ 
++- [Monotone rectangle formation law](ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md): P1 supplies the prescribed rectangle law, P4 its row/column K-chains, and the finite rectangle consistency identity supplies the selected extension.
++
+ - [Admissibility Rule Three Dimensional Monotone Formation Law Plane Chain Coupling Region Bounded Theorem Note 2026-09-15](ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md): only its explicit hypotheses and conclusions are used.
+ - [Admissibility Rule Three Dimensional Formation Law Markov Graph Eight Corner Laws Sweep Imprint Bounded Theorem Note 2026-09-15](ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md): only its explicit hypotheses and conclusions are used.
+-- [Admissibility Rule Three Body Term Exceptional Locus Exact Classification Bounded Theorem Note 2026-09-15](ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md): only its explicit hypotheses and conclusions are used.
++- [Admissibility Rule Three Body Term Exceptional Locus Exact Classification Bounded Theorem Note 2026-09-15](ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md): only the five explicit triple-pattern formulas are used here; exhaustive classification is deferred.
+ 
+ ## Prior art and what is new
+ 
+@@ -288,8 +290,7 @@ below one at every positive coupling: the two-dimensional law has no
+ long-range order along rows or columns at any coupling. In level time the
+ two-dimensional process is a synchronous automaton on `Z` with the
+ two-predecessor neighborhood `{0, −1}`, whose deterministic limit at `p → ∞`
+-chooses one of two differing predecessors with probability `1/2` each: it has
+-no majority and no error correction.
++chooses one of two differing predecessors with probability `1/2` each: this is the stated two-parent limiting choice rule.
+ 
+ *Proof.* Uniqueness: the rectangle law is one law (P1) and consistent under
+ translation (block 08, Q2b), so its extension with those rectangle marginals is unique. This is not a
+diff --git a/docs/ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md b/docs/ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md
+index a25ef1a1a7..b3e6d56a96 100644
+--- a/docs/ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md
++++ b/docs/ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md
+@@ -1,7 +1,7 @@
+ ---
+ claim_id: admissibility_rule_three_body_term_exceptional_locus_exact_classification_bounded_theorem_note_2026-09-15
+ claim_type: bounded_theorem
+-claim_scope: "For the positive six-axis product rule modulo scale, exact classification of all six parameter points with pair-additive three-neighbor log normalizer: the constant point and five nonconstant exceptional points, with exact polynomial isolation and sufficiency checks. The p=q family factors through the three unsigned axes; the p=r family retains six letters and has three triple-pattern values, not a three-letter quotient. At the nonconstant exceptional points the pair component is nonzero. Opposite corner single-site specifications coincide there; this does not prove equality or distinctness of infinite laws. Infinite-law discussion requires c < 1/3. Broader negative certification is deferred."
++claim_scope: "For the supplied positive six-axis product rule modulo scale: six explicit pair-additive three-neighbor log-normalizer constructions, exact pattern values, polynomial factorizations, isolating intervals and sufficiency reductions. Exhaustive classification and exclusion of other points are deferred, with their original proof preserved in history. The p=q family factors through three unsigned axes; p=r retains six letters. At the five displayed nonconstant points the pair component is nonzero. Opposite-corner single-site specifications coincide there; this does not establish equality or distinctness of infinite laws. Infinite-law discussion requires c < 1/3."
+ upstream_dependencies:
+   - minimal_axioms
+   - admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_bounded_theorem_note_2026-09-15
+@@ -9,7 +9,7 @@ upstream_dependencies:
+ runner: scripts/admissibility_rule_three_body_term_exceptional_locus_exact_classification_2026_09_15.py
+ ---
+ 
+-# The three-body term of the six-menu rule vanishes at exactly five nonconstant weight ratios: the exact exceptional locus
++# Six pair-additive constructions for the three-neighbor normalizer of the supplied six-axis rule
+ 
+ **Date:** 2026-09-15
+ **Type:** bounded_theorem
+@@ -17,29 +17,24 @@ runner: scripts/admissibility_rule_three_body_term_exceptional_locus_exact_class
+ 
+ ## Result up front
+ 
+-The earlier notes found that forming records with the rule creates a genuine
+-three-way coupling among the three sites a site saw when it formed, and they
+-proved their three-way statements at two rule settings, leaving open whether
+-the coupling could ever vanish at some other nonconstant setting. It can, and
+-this note finds exactly where. On `p=q`, the rule factors through the three unsigned axes. On `p=r`,
+-the six-letter rule still distinguishes an antipodal partner, but its triple
+-normalizer has three pattern values; this is not a three-letter quotient.
+-Each line has one extra algebraic weight ratio where the third difference
+-vanishes; `q=r` is the parameter-swapped counterpart. Surprisingly there is also one pair of
+-settings off all these lines, with weight ratios given by a degree-six
+-equation, where it disappears too. That is the whole list: six points in all,
+-counting the trivial constant rule. Everywhere else — in particular at the
+-two settings used throughout the campaign — the three-way coupling is
+-genuine; and at the five nonconstant exceptional points the pair component
+-survives. This does not establish eight distinct infinite laws there. Nothing here selects a rule.
+-
+-Exactly: with `V_1, …, V_5` the five pattern values of `Z_3` (below), the
+-two witnesses `E_1 = V_1 V_5² − V_3³` and `E_2 = V_1 V_4² − V_2 V_3² = −(p − q)² G`
+-vanish together on the positive octant exactly at the six points of (X2)–(X3),
+-`log K_3` is pair-additive at each (all 16 distinct third-difference
+-numerators reduce to zero modulo the point's minimal polynomial), and at no
+-other point. Executed with exact rational and polynomial arithmetic:
+-20 checks, 11 mutations.
++The supplied six-axis product rule has five explicit nonconstant parameter
++settings at which the three-neighbor log normalizer is pair-additive, in
++addition to the constant rule. This note constructs those six points and
++checks the pattern values and exact polynomial reductions. On `p=q` the
++rule factors through three unsigned axes. On `p=r` the six-letter rule
++retains the distinction of an antipodal partner, with three triple-pattern
++values. Two further displayed points lie off those lines and are exchanged
++by a polynomial map on a degree-six algebraic extension.
++
++The live result is sufficiency at these six points, together with the
++factorization and elimination identities written below. The original
++exhaustive classification, its necessity argument and exclusion of every
++other positive point are deferred: the original negative-claim packet did
++not complete the required in-domain route coverage. Their full text remains
++byte-exact in the history manifest under PR8142 and on its original branch.
++No classification PASS is inferred from the identities or from a passing
++runner. The five displayed nonconstant points retain a nonzero pair
++component. No physical rule or infinite-law distinction is selected.
+ 
+ ## Machine status and trace
+ 
+@@ -52,8 +47,8 @@ target_blocker_text: "blocks 08, 09 and 10 (stacked): 'the third difference of l
+ source_of_blocker_text: handoff
+ reachability_to_target: supports
+ artifact_role: theorem
+-next_trace_action: "the open lemma is settled: false at exactly five nonconstant points, true elsewhere; blocks 08–10's three-body statements are now unconditional off a finite explicit set, and X4 retains the nonzero pair component, without an eight-law distinction or higher-body inference. Next: the region's boundary in (p, q, r); strong coupling. Consumers: the campaign's queue; #8093's assembly; the parked statistical-bridge material (read-only)"
+-conditional_surface_status: "exact algebra over Q for every statement; the exceptional points are algebraic numbers given by their minimal polynomials and isolating intervals; conditional on the six-axis menu and the product form of the rule (the objects); no infinite-volume statement beyond citation"
++next_trace_action: "Use the six explicit constructions and their exact sufficiency reductions. Exhaustive exceptional-locus classification and its necessity proof remain deferred in the original archive; no downstream assertion outside the displayed points follows here."
++conditional_surface_status: "Exact identities and six sufficiency constructions over algebraic numbers with isolating intervals, conditional on the supplied six-axis product rule; exhaustive locus certification deferred; infinite-law discussion only under the cited construction hypotheses."
+ hypothetical_axiom_status: null
+ admitted_observation_status: null
+ audit_required_before_effective_retained: true
+@@ -115,18 +110,19 @@ locus. The tools — elimination by resultants and Groebner bases, Sturm-sequenc
+ root isolation, reduction modulo a minimal polynomial — are classical
+ computer-algebra methods, named here and under Imports and executed exactly.
+ 
+-New here: the complete exceptional locus (six points), its structural
+-explanation on the three collapse lines, the exact off-line pair, and the
+-consequences for blocks 08–10.
++Live here: six explicit constructions, structural explanation on the named
++lines, the exact off-line pair, and their pair-potential consequences. The
++original complete-locus conclusion is historical and deferred.
+ 
+ ## Exact target and obligation graph
+ 
+ | obligation | status here |
+ |---|---|
+ | X1 the two-body term never vanishes at a nonconstant triple | proved (two factorizations) |
+-| X2 the line `p = q`: exactly `{1, t*}` | proved (three-letter collapse) and executed (factorization; sign-change) |
+-| X2′ the lines `p = r` and `q = r`: exactly `{1, ρ}` | proved (three triple-pattern values on the six-letter menu) and executed |
+-| X3 completeness off the lines: exactly the pair `(σ_1, σ_2)`, `(σ_2, σ_1)` | executed exact elimination (resultant; elimination basis; reduction of all 16 numerators) |
++| X2 the line `p = q`: constructions at `1, t*` | three-letter collapse, factorization and exact sufficiency |
++| X2′ the lines `p = r` and `q = r`: constructions at `1, ρ` | three triple-pattern values and sufficiency reductions on the six-letter menu |
++| X3 the pair `(σ_1, σ_2)`, `(σ_2, σ_1)` | exact polynomial identities and sufficiency reductions |
++| Exhaustive six-point classification and exclusion of all other points | deferred; original full necessity proof and failed/incomplete route packet preserved in history |
+ | X4 the pair part survives at the exceptional points | proved |
+ | X5 the declared triples are off the locus | executed |
+ | a structural reason for the off-line pair; the analogous loci for `k ≥ 4` | open; not this note |
+@@ -163,42 +159,46 @@ since `log K_3` is the pull-back. Executed: `E_1` restricted to the line equals
+ from "not opposite", and `Z_3` takes three values: `q³ + 5`, `q² + q + 4`,
+ `3q + 3` (executed, B5: three distinct polynomials over the `216` triples).
+ Every one of the `16` third-difference numerators restricted to the line is a
+-unit multiple of `(q − 1)³ (q³ − 3q² − 15q − 19)` times a positive polynomial
+-(B5), so all vanish iff `q = 1` or `q = ρ`, the positive root of
++multiple of `(q − 1)³ (q³ − 3q² − 15q − 19)`
++(B5), so all vanish at `q = 1` and at `q = ρ`, the positive root of
+ `q³ − 3q² − 15q − 19` in `(6, 7)`. **(c) The line `q = r`** is the image of
+ (b) under the symmetry `p ↔ q` of every numerator (B6): the exceptional point
+ is `p = ρ r`. ∎
+ 
+-## Theorem X3 — completeness: the locus off the lines is one pair of points
+-
+-**Statement.** A positive `(p, q)` (with `r = 1`) at which `log K_3` is
+-pair-additive satisfies `E_1 = E_2 = 0`; the positive solutions of this system
+-are exactly `(1, 1)`, `(t*, t*)`, `(1, ρ)`, `(ρ, 1)`, `(σ_1, σ_2)`, `(σ_2, σ_1)`,
+-where `σ_1 ∈ (1, 2)` and `σ_2 ∈ (6, 7)` are the two positive roots of
+-`s(x) = x⁶ − 6x⁵ − 3x⁴ + 4x³ − 3x² − 6x + 31`, and on that factor
+-`p ≡ ψ(q) := −(8/85) q⁵ + (116/255) q⁴ + (196/255) q³ + (82/85) q² + (121/255) q + 356/255 (mod s(q))`,
+-which exchanges `σ_1` and `σ_2`. At every one of the six points all `16`
+-numerators vanish; hence the pair-additive locus is exactly these six points.
+-
+-*Proof (exact elimination, executed).* On the diagonal `p = q`, `E_2 ≡ 0` and
+-`E_1 = 0` gives `{1, t*}` (X2a). Off the diagonal, `E_2 = 0` iff `G = 0`. The
+-lex elimination basis of `(E_1, G)` in `p > q` consists of a univariate
+-`h(q) = (q − 1)⁶ (q³ − 3q² − 15q − 19) s(q) u(q)²` with `u` a sextic without
+-positive real roots (exact root isolation), an element `A(q) p − B(q)` with
+-`A = c (q − 1)`, and a quartic-in-`p` element (C1). For `q` a root of the
+-`ρ`-cubic, `p ≡ B/A ≡ 1 (mod the cubic)`; for `q` a root of `s`,
+-`p ≡ ψ(q) (mod s)` with `s(ψ(q)) ≡ 0`, `E_1(ψ(q), q) ≡ 0` and `G(ψ(q), q) ≡ 0
+-(mod s)` (C2), and the exact rational enclosures of `ψ` over the isolating
+-intervals of `σ_1`, `σ_2` (refined to width `10^{−30}`) show `ψ(σ_1) = σ_2`,
+-`ψ(σ_2) = σ_1` (C3); for `q = 1`, `A(1) = 0` and the system reduces to the line
+-`q = r` of X2c, giving `p ∈ {1, ρ}`. This lists every positive common zero.
+-Sufficiency: at each of the six points, every one of the `16` numerators,
+-reduced modulo the point's minimal polynomial after the substitution
+-`p = q`, `p = 1`, or `p = ψ(q)`, is zero (C4). ∎
+-
+-The off-line pair is not explained by a collapse of the menu: at `(σ_1, σ_2)`
+-the three pair types carry three distinct weights and `Z_3` takes its five
+-generic values; a structural reason is not known (open).
++## Theorem X3 — six constructions and exact reduction identities
++
++**Statement.** Set `r=1`. The points
++`(1,1)`, `(t*,t*)`, `(1,ρ)`, `(ρ,1)`, `(σ_1,σ_2)` and `(σ_2,σ_1)`
++have pair-additive `log K_3`. Here `t*` and `ρ` are the roots specified
++in X2; `σ_1` in `(1,2)` and `σ_2` in `(6,7)` are positive roots of
++`s(x)=x⁶−6x⁵−3x⁴+4x³−3x²−6x+31`. Define
++`ψ(q)=−(8/85)q⁵+(116/255)q⁴+(196/255)q³+(82/85)q²+(121/255)q+356/255`.
++The map `ψ` exchanges these two isolated roots.
++
++*Construction and sufficiency.* Exact reduction gives
++`s(ψ(q)) ≡ E_1(ψ(q),q) ≡ G(ψ(q),q) ≡ 0 (mod s(q))`.
++Rational interval evaluation of `ψ` on the two isolating intervals,
++refined to width `10^{-30}`, lies inside the opposite root's coarse
++isolating interval. At each displayed point every one of the 16
++third-difference numerators is zero: substitute `p=q`, `p=1`, or
++`p=ψ(q)` and reduce modulo the associated minimal polynomial.
++Parameter-exchange symmetry supplies the mirrored points. Thus the
++mixed third differences vanish and `log K_3` is pair-additive. ∎
++
++**Additional exact identities.** The executed elimination basis for
++`(E_1,G)` in the variable order `p > q` has a univariate member proportional to
++`(q−1)^6 (q³−3q²−15q−19) s(q) u(q)^2`, where
++`u(q)=q⁶+3q⁵+6q⁴+13q³+15q²+12q+22`, and a member `A(q)p−B(q)`.
++Reduction of `B/A` gives `1` modulo the `ρ` cubic and `ψ(q)` modulo `s`.
++These are algebraic identities and construction checks. The runner's
++polynomial root counts describe those named univariate polynomials.
++They are not a passing exhaustive classification certificate for the
++original physical/model exclusion target.
++
++**Deferred conclusion.** The original necessity argument assembling these
++identities into “these and no other positive points” is not asserted here.
++It and the attempted N1 routes remain in the exact PR8142 history archive.
++A structural explanation for the displayed off-line pair remains open.
+ 
+ ## Theorem X4 — what survives at the exceptional points
+ 
+@@ -274,20 +274,22 @@ archive hashes. This deferred certificate is not a passing negative-claim gate;
+ any future broader exclusion must complete the applicable discipline.
+ 
+ ## Falsifiers
+-- A positive `(p, q)` with all 16 numerators zero outside the six points (refutes X3).
++- An additional pair-additive point would concern the deferred classification; it would not refute the six constructions claimed here.
+ - A nonzero numerator at any of the six points after exact reduction (refutes the sufficiency half).
+ - A factorization of `E_1` on the line `p = q` other than `−8(t − 1)³(t³ − 3t² − 6t − 1)`, or a fourth distinct `Z_3` value on the line `p = r`.
+ - Both `K_2` ratios of X1 equal to `1` at some nonconstant triple.
+ 
+ ## Boundaries and non-claims
+-This note classifies the zero set of the three-body normalizer term of the six-axis product rule; it states nothing infinite-volume beyond the hypothesis map of X4, selects no rule or order as physical, and gives no structural reason for the off-line pair. No plane, bridge, Born or gravity statement enters this note; this note does not fire wake condition 1 of the parked statistical-bridge decision. Resultants, elimination bases, sign-change sequences and reduction modulo a minimal polynomial are classical computer-algebra methods executed here exactly; no value, constant or theorem is imported as authority.
++This note constructs six pair-additive points and verifies exact polynomial identities for the supplied six-axis product rule; exhaustive classification is deferred. It states nothing infinite-volume beyond the hypothesis map of X4, selects no rule or order as physical, and gives no structural reason for the off-line pair. No plane, bridge, Born or gravity statement enters this note; this note does not fire wake condition 1 of the parked statistical-bridge decision. Resultants, elimination bases, sign-change sequences and reduction modulo a minimal polynomial are classical computer-algebra methods executed here exactly; no value, constant or theorem is imported as authority.
+ 
+ ## Imports
+ - `minimal_axioms`: the sentences quoted under Premises.
+ - Blocks 08, 09, 10 (stacked; proposed, unaudited): the objects and the hypothesis being classified.
+ - Executed exact methods (sympy over `Q`): polynomial factorization, resultants, the lex Groebner basis, Sturm root isolation with rational refinement, inverses and reductions modulo a minimal polynomial. No literature value enters; classical names appear only here and under Prior art.
+ 
+-## Review record
++## Historical author review record
++The following records the original author process, not acceptance of its deferred exhaustive conclusion.
++
+ Supervisor-run block (owner directive 2026-09-15: no subagents). Controls A–F (`specs/supervisor_control_block11_*.py`) found the locus stepwise: the pattern values and the witness `E_1` on the line `p = q` (A); the interval exclusion of candidate pairs (C); the `p = r` collapse and the elimination basis (D); the exact decision of the sextic pair (E); the full pair-additivity test of all 16 numerators at every candidate (F). The lens pass is in `GOAL_block11.md`; the primary seat wrote X1–X5 and the runner; the refuting pass (`CHECKER_block11_findings.md`) recomputed the locus by the other elimination order and by direct interval evaluation. Facts settled while executing: the first control's algebraic-field gcd route was
+ abandoned (too slow) for the elimination basis plus exact reductions; the root
+ exchange `ψ(σ_1) = σ_2` is established by containment of an exact enclosure in the
+diff --git a/docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md b/docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md
+index 8adbb047d3..2290d497ac 100644
+--- a/docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md
++++ b/docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md
+@@ -21,8 +21,8 @@ runner: scripts/admissibility_rule_three_dimensional_formation_law_markov_graph_
+ The constructed three-dimensional formation laws have an explicit finite-range
+ conditional specification. At the witnessed triple `(3,1,2)`, changing a
+ face-diagonal record changes a site's conditional, and all eight corner laws
+-are distinct. The full-support conditional argument proves the conditional
+-separation stated below; it does not classify all parameter triples. Rotations
++are distinct. The full-support conditional lemma and exact kernel witnesses are retained;
++the universal static-law exclusion previously inferred from them is deferred. Rotations
+ permute the corner laws, and their equal mixture is a probability law invariant
+ under those rotations. This construction supplies no physical selection of an
+ order or mixture. Exact finite-column joint laws also witness sweep reversal.
+@@ -32,8 +32,8 @@ Exactly: with `K_3(a, b, c) = Σ_s K(a, s) K(b, s) K(c, s)` and the corner
+ `+log K_3` on the predecessor triples `{y − κ_i e_i}` (R1); its full
+ conditional at `x` depends on `x + κ_i e_i − κ_j e_j` (TV
+ `793975879125/24719290847393` at `(3, 1, 2)` for one change); a full-support
+-law determines its finite-range specification (R2), so `μ_κ` is not a
+-nearest-neighbor Markov field and differs from every static Gibbs law; at `(3,1,2)` the
++law determines its finite-range specification (L2); the universal exclusion
++formerly stated in R2 is deferred; at `(3,1,2)` the
+ eight `μ_κ` are pairwise distinct (R3; within a point-reflection pair, TV
+ `1646222697/263752139417` between the conditionals); the `2×2` column's plane
+ chain is irreversible with `TV(J, J^T) = 0.04934…` at `(3, 1, 2)` and `0` at
+@@ -51,13 +51,13 @@ target_blocker_text: "the owner's sequencing gate (2026-08-26): what the Admissi
+ source_of_blocker_text: handoff
+ reachability_to_target: supports
+ artifact_role: theorem
+-next_trace_action: "the stated nonzero-difference cases are separated from static laws by their conditional specification, and the covariant object of the class is the equal probability mixture of eight corner laws, without physical selection; next: the random-priority law's Markov structure and its relation to the mixture; consumers: the campaign's queue, #8093's assembly (the formation-law node: 'clause-needed' for a covariant single law), the parked statistical-bridge material (read-only)"
+-conditional_surface_status: "exact on the declared menu and triples; R1 containing graph throughout the region; genuine diagonal dependence and R2 separation require the stated nonzero mixed difference with the witness executed at (3,1,2) and the third difference at (3,1,2), (5,2,4); R3 distinctness proved at (3,1,2); covariance of the family throughout the region; R4 executed on the 2x2 column at three triples and proved on Z^3 at (3,1,2) through R3; R5 cited; conditional on the records-only reading, positivity, the six-axis menu, the monotone class as supplied conditions and on block 08's region"
++next_trace_action: "Use the explicit DLR specification, containing graph, conditional and TV witnesses, and the covariant probability mixture. Certification of excluded nearest-neighbor Markovity and separation from every static Gibbs law is deferred with its full original proof archived."
++conditional_surface_status: "L1 full-exterior DLR identity and R1 containing graph hold in the c<1/3 constructed-law region; explicit diagonal dependence and mixed-ratio witnesses retain their stated hypotheses. R2 universal static-law/graph exclusion is deferred. R3 eight-law distinctness at (3,1,2); family covariance throughout the region; finite R4 witnesses unchanged."
+ hypothetical_axiom_status: null
+ admitted_observation_status: null
+ audit_required_before_effective_retained: true
+ bare_retained_allowed: false
+-claim_type_reason: "R1 passes a finite conditional identity to the limit; R2 is a two-line uniqueness argument for full-support laws; R3 combines R2 with exact finite witnesses and the transitivity of the rotation group on the corners; R4 is exact finite computation on the 2x2 column plus R3; every number is an exact rational; nothing is claimed outside block 08's region"
++claim_type_reason: "Finite exterior-cylinder identities pass to the limit; L2 is full-support conditional uniqueness; explicit kernels, mixed ratios and finite TV witnesses support the retained constructions. R2 exclusion certification is deferred."
+ ```
+ 
+ ## Premises and declared objects
+@@ -133,8 +133,7 @@ uniqueness of conditional probabilities and of finite measures — are explicit
+ mathematical imports under Imports; ergodic decomposition is not used.
+ 
+ New here: the Gibbs identification of the three-dimensional law (R1); the
+-separation from every static Gibbs law on `Z^3` through the Markov graph and a
+-full-support uniqueness lemma (R2); the eight-fold distinctness of the corner
++explicit conditional discrepancy and full-support conditional uniqueness (L2); the eight-fold distinctness of the corner
+ laws and the structure of the covariant family (R3); the irreversibility of the
+ plane chain and the visibility of the sweep and of the corner in the record
+ statistics (R4).
+@@ -146,15 +145,17 @@ statistics (R4).
+ | L1: the `Z^3` law is Gibbs for the interior specification | proved (finite conditional identity passed to the limit) |
+ | L2: a full-support law determines its continuous finite-range specification; `μ_κ` has full support | proved |
+ | R1: the Markov graph `G_κ`; the dependence on the face-diagonal sites | proved from L1; witness executed at `(3, 1, 2)` (B1–B3) |
+-| R2: not nearest-neighbor Markov; differs from every static Gibbs law | proved from L2 + R1 at every triple with nonzero third difference; executed at `(3, 1, 2)`, `(5, 2, 4)` (B4) |
++| R2 universal static-law and nearest-neighbor graph exclusion | deferred; exact conditional/mixed-ratio witnesses retained |
+ | R3: covariant orbit and probability mixture; eight distinct laws at (3,1,2) | covariance general in the region; distinctness uses the within-pair witness (C1–C4) |
+ | R4: irreversibility and the corner's visibility on the `2×2` column | executed at three triples (D1–D4); the `Z^3` statement from R3 |
+ | R5: the two-dimensional contrast | cited (the plane-law note); the count comparison is restricted to the witnessed setting |
+-| the third difference nonzero at every nonconstant triple; the eight laws' distinctness outside the region; affine independence of the eight laws | open; not this note |
++| nonzero third difference at every nonconstant triple | false at the displayed exceptional constructions; no exhaustive claim |
++| eight laws outside the witnessed parameter; affine independence | open |
+ 
+-The strongest missing lemma is that the third difference of `log K_3` is
+-nonzero at every nonconstant triple (executed at two); R2 requires the indicated nonzero difference; R3 opposite-corner
+-distinctness is confined to the witnessed triple.
++The nonzero third differences at the two declared triples are finite
++witnesses. The exceptional-construction note displays nonconstant points with
++vanishing third differences; its exhaustive-locus conclusion is deferred.
++R3 opposite-corner distinctness remains confined to `(3,1,2)`.
+ 
+ ## Lemma L1 — the `Z^3` law is Gibbs for the interior specification
+ 
+@@ -237,25 +238,19 @@ kernel does not depend on the sites `x + e_i + e_j` or `x − e_i − e_j` (B2,
+ by construction of the formula); the third difference at both declared
+ triples (B4). ∎
+ 
+-## Theorem R2 — the formation law is not a static law on `Z^3`
+-
+-**Statement.** For `c < 1/3`, every corner `κ`, and every triple at which the
+-third difference of `log K_3` is nonzero (executed: `(3, 1, 2)`, `(5, 2, 4)`),
+-`μ_κ` is not a Markov field for the nearest-neighbor graph, and `μ_κ ≠ ν` for
+-every Gibbs measure `ν` of the static specification `γ^S` — whether the static
+-law is unique or not.
+-
+-*Proof.* `μ_κ` has full support (L2) and is Gibbs for `γ^κ` (L1). If `μ_κ`
+-were a nearest-neighbor Markov field, its full conditional at `x` would be a
+-function of the six axial neighbors, contradicting R1's genuine dependence on
+-`x + κ_1 e_1 − κ_2 e_2`. If `μ_κ = ν` with `ν` Gibbs for `γ^S`, then `μ_κ` is
+-Gibbs for both `γ^κ` and `γ^S`, both finite-range, so by L2 `γ^κ_x = γ^S_x`
+-everywhere; but `γ^S_x` does not depend on `ω_{x + κ_1 e_1 − κ_2 e_2}` while
+-`γ^κ_x` does. ∎ At the silent triples this separates the formation law from
+-every static law without deciding how many static laws there are; where
+-`6c_1 < 1` (block 03) it separates it from the unique one. The finite-window
+-classification of block 01 (equality iff at most one recorded neighbor) is
+-consistent: in the bulk of `Z^3` every site records three.
++## R2 — retained conditional witnesses; exclusion certification deferred
++
++R1 gives an explicit single-site conditional and the exact nonzero
++face-diagonal TV witness at `(3,1,2)`. The third-difference ratios are
++`2160/2197` at `(3,1,2)` and `686196/704969` at `(5,2,4)`, with ratio one
++at the constant control. L2 supplies the conditional-uniqueness lemma.
++
++The original conclusion excluding nearest-neighbor Markovity and every static
++Gibbs law, and its full inference proof, are preserved byte-exact under PR8139
++in the history manifest. Their negative certificate remains incomplete and
++that universal exclusion is not asserted as a current accepted conclusion.
++The constructive DLR identity, containing graph and finite witnesses stand
++within their explicit hypotheses.
+ 
+ ## Theorem R3 — eight corner laws, one covariant family
+ 
+@@ -350,7 +345,7 @@ P7(a)) and there are two laws, distinguished by the axis reflections. In three
+ dimensions the point reflection preserves the dependency set but not its
+ grouping into triples (R3a); at `(3,1,2)` the independent conditional witness
+ then proves eight distinct laws. Different groupings alone do not prove distinctness. The two-dimensional analogue
+-of R2 is the plane-law note's statement that the center's conditional given
++of the conditional witness is the plane-law note's statement that the center's conditional given
+ its eight neighbors is not the static rule.
+ 
+ ## No-Go Discipline Gate — deferred broader certification
+@@ -362,6 +357,8 @@ byte-exact in [the PR8146 history manifest](work_history/review_loop/pr8146/orig
+ under PR8139; the original branch remains a recovery handle for unlanded work.
+ 
+ ### N1 — Route coverage
++The specifically deferred conclusions are R2 exclusion of nearest-neighbor
++Markovity and separation from every static Gibbs law.
+ The original list includes unattempted and out-of-domain routes. It is not a
+ completed route search; broader negative certification is deferred.
+ 
+@@ -435,7 +432,8 @@ random-priority law's Markov structure is not analyzed.
+   region, decay, plane chain. Block 02 (on main): the static specification. The
+   plane-law note (on main): the two-dimensional contrast.
+ - Re-proved at scope: L1 (a finite conditional identity passed to the limit),
+-  L2 (uniqueness of finite-range kernels under full support), R1–R4.
++  L2 (uniqueness of finite-range kernels under full support), R1 and the
++  stated finite R3–R4 witnesses; R2 exclusion certification is deferred.
+ - Mathematical imports: existence and almost-sure uniqueness of conditional
+   probabilities on finite-alphabet countable product spaces; uniqueness of
+   finite measures agreeing on a generating π-system, used to extend the
+diff --git a/docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md b/docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md
+index 52ca24ae09..276deddbaa 100644
+--- a/docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md
++++ b/docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md
+@@ -59,7 +59,7 @@ target_blocker_text: "the owner's corrected queue (block-04 refresh, item 4): 'a
+ source_of_blocker_text: handoff
+ reachability_to_target: supports
+ artifact_role: theorem
+-next_trace_action: "the monotone class on Z^3 is now a declared, constructed object with an exact coupling region; next: the eight corner classes as one covariant family and their relation to the random-priority law; the exact region boundary in (p, q, r); consumers: the campaign's queue, the derivation campaign's assembly (an edge 'clause-needed' for long-range record fields under positive product rules), the parked statistical-bridge material (read-only)"
++next_trace_action: "the monotone class on Z^3 is now a declared, constructed object with an exact coupling region; next: the eight corner classes as one covariant family and their relation to the random-priority law; the exact region boundary in (p, q, r); consumers: the campaign's queue, the derivation campaign's assembly (quantitative single-site covariance bounds only), the parked statistical-bridge material (read-only)"
+ conditional_surface_status: "exact on the declared menu and triples; Q1 factorization is proved for every box and every positive symmetric rule; Q1f irreducibility requires nonzero third difference; Q2 is a proved reduction with an executed refutation at the declared nonconstant triples and a proved lemma on the mechanism; Q3 is proved for every finite cross-section and every positive rule, with the 2x2 stationary law executed; Q4 is proved for every box and column, and on Z^2 x Z / Z^3 under c < 1/3; the region membership of eight triples is executed; conditional on the records-only reading, positivity, the six-axis menu and the monotone class as supplied conditions; no static-law statement; no order selected as physical"
+ hypothetical_axiom_status: null
+ admitted_observation_status: null
+diff --git a/scripts/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.py b/scripts/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.py
+index 8d7a5bec21..49496a36a8 100644
+--- a/scripts/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.py
++++ b/scripts/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.py
+@@ -366,7 +366,7 @@ N5_LINES = (
+     "per_site: executed — the recorded set of every site in every order; the conditional of b and of a on the plaquette against their non-edge partners",
+     "per_mode: executed — the canonical terms on the edges, the two non-edges, the triple and the quadruple of the plaquette; the leaves' triple of the star",
+     "per_block: executed — the two windows' full potentials at the witnesses; the plaquette's {a, d} term on all 1296 configurations",
+-    "lattice_wide: proved on every finite window at triples with nonzero mixed differences (executed at two); infinite volume only by citation of blocks 08–09 for the monotone class",
++    "lattice_wide: finite-window factorization, containing graph and potential identities; converse and excluded-graph certification deferred",
+ )
+ 
+ 
+diff --git a/scripts/admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_2026_09_15.py b/scripts/admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_2026_09_15.py
+index 137860477d..538e06a23b 100644
+--- a/scripts/admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_2026_09_15.py
++++ b/scripts/admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_2026_09_15.py
+@@ -29,12 +29,15 @@ AUDIT_INPUT_PATHS = (
+     "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+     "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
++    "docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+ )
+ ROOT = Path(__file__).resolve().parents[1]
+ CLAIM_ID = "admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_ordered_phase_obligation_bounded_theorem_note_2026-09-15"
+ BLOCK08_CLAIM_ID = "admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_bounded_theorem_note_2026-09-15"
+ BLOCK08_FRAGMENT = "strong coupling"
+ BLOCK09_CLAIM_ID = "admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_bounded_theorem_note_2026-09-15"
++BLOCK05_CLAIM_ID = "admissibility_rule_monotone_order_formation_law_rows_columns_chains_corner_law_bounded_theorem_note_2026-09-07"
++BLOCK05_FRAGMENT = "every row and every column"
+ AXIOM_NEEDLES = (
+     "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.",
+     "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.",
+@@ -224,13 +227,13 @@ def island_bound(island: set, t0: int) -> int:
+ 
+ 
+ # ============================================================================================ family A
+-def family_a(checks: Checks, note_text: str, axiom_text: str, b08: str, b09: str) -> None:
+-    checks.check("A1", all((ROOT / pth).is_file() for pth in AUDIT_INPUT_PATHS) and len(set(AUDIT_INPUT_PATHS)) == 4,
+-                 "the four declared inputs exist (this note, the axiom memo, block 08, block 09)")
++def family_a(checks: Checks, note_text: str, axiom_text: str, b08: str, b09: str, b05: str) -> None:
++    checks.check("A1", all((ROOT / pth).is_file() for pth in AUDIT_INPUT_PATHS) and len(set(AUDIT_INPUT_PATHS)) == 5,
++                 "the five declared inputs exist (this note, axiom memo, plane-chain and DLR notes, actual rectangle premise)")
+     checks.check("A2", all(n in normalize_text(axiom_text) for n in AXIOM_NEEDLES), "the four axiom sentences used are present verbatim in the axiom memo")
+     f08, f09 = normalize_text(b08).lower(), normalize_text(b09).lower()
+-    checks.check("A3", BLOCK08_CLAIM_ID in f08 and BLOCK08_FRAGMENT in f08 and BLOCK09_CLAIM_ID in f09,
+-                 "the parents' claim ids and block 08's strong-coupling fragment are present")
++    checks.check("A3", BLOCK08_CLAIM_ID in f08 and BLOCK08_FRAGMENT in f08 and BLOCK09_CLAIM_ID in f09 and BLOCK05_CLAIM_ID in b05 and BLOCK05_FRAGMENT in normalize_text(b05).lower(),
++                 "actual parent claim ids, strong-coupling context and rectangle row/column proof identity are present")
+     flat = normalize_text(note_text)
+     checks.check("A4", CLAIM_ID in flat and Path(__file__).name in flat, "this note carries its claim id and names this runner")
+ 
+@@ -511,7 +514,7 @@ def main(argv) -> int:
+     print("scope: the strong-coupling side of the 3D monotone law — the level automaton, the exact noise map, the eroder bound, epsilon(p), the 2x2 metastability table, the 2D eigenvalue; exact; no ordered phase claimed")
+     print(f"mutation: {ACTIVE_MUTATION or 'none'}")
+     report: dict = {}
+-    family_a(checks, texts[0], texts[1], texts[2], texts[3])
++    family_a(checks, texts[0], texts[1], texts[2], texts[3], texts[4])
+     family_b(checks, report)
+     family_c(checks)
+     family_d(checks, report, exact)
+diff --git a/scripts/admissibility_rule_three_body_term_exceptional_locus_exact_classification_2026_09_15.py b/scripts/admissibility_rule_three_body_term_exceptional_locus_exact_classification_2026_09_15.py
+index 6796305b92..0dff793c13 100644
+--- a/scripts/admissibility_rule_three_body_term_exceptional_locus_exact_classification_2026_09_15.py
++++ b/scripts/admissibility_rule_three_body_term_exceptional_locus_exact_classification_2026_09_15.py
+@@ -237,7 +237,7 @@ def family_c(checks: Checks, report: dict, exact: bool) -> None:
+     if mut("h_factor_wrong"):
+         h_ok = False
+     checks.check("C1", h_ok and len(u_pos) == 0 and len(Gb.exprs) == 3,
+-                 "X3: the lex Groebner basis of (E_1, G) has three elements; its univariate part is (q-1)^6 (q^3-3q^2-15q-19) s(q) u(q)^2 with u without positive roots")
++                 "X3 algebraic identity: the lex Groebner basis of (E_1, G) has three elements; its univariate part is (q-1)^6 (q^3-3q^2-15q-19) s(q) u(q)^2 with u without positive roots")
+     lin = [g for g in Gb.exprs if sp.Poly(g, p).degree() == 1][0]
+     A = sp.expand(sp.Poly(lin, p).coeff_monomial(p))
+     B = sp.expand(-sp.Poly(lin, p).coeff_monomial(1))
+@@ -252,7 +252,7 @@ def family_c(checks: Checks, report: dict, exact: bool) -> None:
+     if mut("psi_not_root_claimed"):
+         s_psi = False
+     checks.check("C2", psi_ok and s_psi and e1_psi and g_psi and p_rho.as_expr() == 1,
+-                 "X3: on the sextic factor p = psi(q) with s(psi) = E_1(psi, q) = G(psi, q) = 0 modulo s; on the rho-cubic p = 1")
++                 "X3 construction: on the sextic factor p = psi(q) with s(psi) = E_1(psi, q) = G(psi, q) = 0 modulo s; on the rho-cubic p = 1")
+     eps = R(1, 10**30)
+     ivs = positive_intervals(SEXTIC, eps)
+     coarse = [(a, b) for (a, b), m in SEXTIC.intervals() if b > 0]  # the initial isolating intervals, one per positive root
+@@ -284,7 +284,7 @@ def family_c(checks: Checks, report: dict, exact: bool) -> None:
+ 
+ # ============================================================================================ family F
+ FENCES = (
+-    "This note classifies the zero set of the three-body normalizer term of the six-axis product rule; it states nothing infinite-volume beyond the hypothesis map of X4, selects no rule or order as physical, and gives no structural reason for the off-line pair.",
++    "This note constructs six pair-additive points and verifies exact polynomial identities for the supplied six-axis product rule; exhaustive classification is deferred. It states nothing infinite-volume beyond the hypothesis map of X4, selects no rule or order as physical, and gives no structural reason for the off-line pair.",
+     "No plane, bridge, Born or gravity statement enters this note; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
+     "no value, constant or theorem is imported as authority.",
+ )
+@@ -337,7 +337,7 @@ N5_LINES = (
+     "per_site: not applicable — no lattice sites enter; the objects are polynomials in the weights",
+     "per_mode: executed — the five pattern values of Z_3 against the definition on all 216 triples; the three-letter collapse on p = q and the three values on p = r",
+     "per_block: executed — the lex Groebner basis, the factorization of h, the sextic's isolating intervals refined to 10^-30, the exchange psi(sigma_1) = sigma_2 by exact enclosure",
+-    "lattice_wide: proved for the whole positive octant (a polynomial statement); the infinite-volume consequences are the hypothesis map of X4, by citation of blocks 08-10",
++    "lattice_wide: polynomial identities at their stated domains and six sufficiency constructions; exhaustive locus certification deferred; infinite-law remarks only under X4 hypotheses",
+ )
+ 
+ 
+@@ -365,7 +365,7 @@ def main(argv) -> int:
+     for pth in AUDIT_INPUT_PATHS:
+         print(f"  {pth}")
+     print(f"AUDIT_TIMEOUT_SEC: {AUDIT_TIMEOUT_SEC}")
+-    print("scope: the exceptional locus of the three-body term — pattern values, the 16 numerators, X1's factorizations, the three collapse lines, the Groebner elimination, the sextic pair, the reductions at the six points, the declared triples; exact")
++    print("scope: six pair-additive constructions; exhaustive classification deferred — pattern values, the 16 numerators, X1's factorizations, the three collapse lines, the Groebner elimination, the sextic pair, the reductions at the six points, the declared triples; exact")
+     print(f"mutation: {ACTIVE_MUTATION or 'none'}")
+     report: dict = {}
+     family_a(checks, texts[0], texts[1], texts[2], texts[3])
+diff --git a/scripts/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py b/scripts/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py
+index 2fc9f46acc..11e9d6a70e 100644
+--- a/scripts/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py
++++ b/scripts/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py
+@@ -5,7 +5,7 @@ Scope.  The six Bloch-axis menu with the covariant positive product rule (p, q,
+ class with corner kappa in {+1,-1}^3, in block 08's region.  R1: the full conditional at a site depends on the twelve
+ sites of the graph G_kappa (six axial, six face-diagonal x + kappa_i e_i - kappa_j e_j) and genuinely on the face-diagonal
+ ones (exact witness).  R2: the third difference of log K_3 is nonzero at the declared nonconstant triples (the hypothesis
+-under which the law is not nearest-neighbor Markov and not a static law).  R3: the eight corners' dependency sets pair
++retained as exact mixed-ratio witnesses; universal graph/static exclusions deferred).  R3: the eight corners' dependency sets pair
+ up under the point reflection, the triple groupings are all distinct, and within a pair the conditionals differ (exact
+ witness); the 24 proper rotations act transitively on the corners.  R4: on the 2x2 column the two-plane joint law of the
+ stationary plane chain is not its transpose (exact total variation; zero at the constant rule), the one-plane law is not
+@@ -360,7 +360,7 @@ def family_b(checks: Checks, report: dict) -> None:
+     if mut("third_difference_forged"):
+         ratios[(5, 2, 4)] = F(1)
+     checks.check("B3", ratios[(3, 1, 2)] == F(2160, 2197) and ratios[(5, 2, 4)] == F(686196, 704969) and ratios[(2, 2, 2)] == 1,
+-                 f"R2's hypothesis: the third-difference ratio of K_3 is {ratios[(3, 1, 2)]} at (3,1,2), {ratios[(5, 2, 4)]} at (5,2,4), 1 at the constant rule")
++                 f"R2 retained mixed-ratio witness: the third-difference ratio of K_3 is {ratios[(3, 1, 2)]} at (3,1,2), {ratios[(5, 2, 4)]} at (5,2,4), 1 at the constant rule")
+     # B4: the dependence on the diagonal site vanishes at the constant rule (the kernel is uniform)
+     rc = Rule((2, 2, 2))
+     c0 = full_conditional(rc, kappa, axial, base)
+@@ -514,7 +514,7 @@ def family_f(checks: Checks, note_text: str) -> None:
+     for sec in sections[1:]:
+         title = sec.splitlines()[0].strip()
+         body = sec
+-        if mut("claim_classical_name_in_theorem") and title.startswith("Theorem R2"):
++        if mut("claim_classical_name_in_theorem") and title.startswith("R2"):
+             body = body + " (as Dobrushin showed)"
+         if any(title.startswith(a) for a in ALLOWED_NAME_SECTIONS):
+             continue
+@@ -530,7 +530,7 @@ N5_LINES = (
+     "per_site: executed — the twelve dependency sites of x and the excluded offsets; the eight corners' sets and groupings",
+     "per_mode: executed — the 24 proper rotations on the eight corners and the stabilizer; the four one-plane laws of the 2x2 column",
+     "per_block: executed — the 2x2 column's joint law against its transpose over all 1296^2 ordered pairs at three triples; the in-plane reflection of the one-plane law",
+-    "lattice_wide: proved from L1–L2 in block 08's region at triples with nonzero third difference; executed only at (3,1,2) and (5,2,4); nothing claimed elsewhere",
++    "lattice_wide: DLR and containing graph in the stated region; witnessed corner distinctions only; universal static-law and excluded-graph certification deferred",
+ )
+ 
+ 

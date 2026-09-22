@@ -1,0 +1,13 @@
+{
+  "majority_counterexample": {
+    "p": "3",
+    "q": "1/100",
+    "r": "2",
+    "p_gt_max": true,
+    "majority_weight": "9/100",
+    "orthogonal_weight": "8",
+    "majority_is_max": false
+  },
+  "pair_additive_opposite_corner_conditional_equal": 64,
+  "boundary": "Independent exact synthetic mechanism check; no original primary or claimed numerical certificate executed."
+}

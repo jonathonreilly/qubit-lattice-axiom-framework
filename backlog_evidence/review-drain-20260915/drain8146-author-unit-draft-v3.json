@@ -1,0 +1,922 @@
+{
+  "schema_version": 2,
+  "unit_id": "PR8138-8139-8141-8142-8146",
+  "constituents": [
+    {
+      "id": "PR8138",
+      "head": "77c1fd5000061b7e5bef0479229f33f1a9037f47",
+      "delta_base": "018902e8d7570c4ed2800cc4884f0157096da944",
+      "dispositions": {
+        "path": "/private/tmp/review-drain-20260915/drain8146-author-source-handoff-v3.json",
+        "sha256": "34b4ba35035bf74fe0a3a1fda1b731ef005145c05b764ea4b43eba4c390b2859",
+        "json_pointer": "/original_dispositions/8138"
+      }
+    },
+    {
+      "id": "PR8139",
+      "head": "8345c241c10560da9086afbd400b765417fd1c11",
+      "delta_base": "77c1fd5000061b7e5bef0479229f33f1a9037f47",
+      "dispositions": {
+        "path": "/private/tmp/review-drain-20260915/drain8146-author-source-handoff-v3.json",
+        "sha256": "34b4ba35035bf74fe0a3a1fda1b731ef005145c05b764ea4b43eba4c390b2859",
+        "json_pointer": "/original_dispositions/8139"
+      }
+    },
+    {
+      "id": "PR8141",
+      "head": "a76f95da766eea86e1ff357130b725563311285c",
+      "delta_base": "8345c241c10560da9086afbd400b765417fd1c11",
+      "dispositions": {
+        "path": "/private/tmp/review-drain-20260915/drain8146-author-source-handoff-v3.json",
+        "sha256": "34b4ba35035bf74fe0a3a1fda1b731ef005145c05b764ea4b43eba4c390b2859",
+        "json_pointer": "/original_dispositions/8141"
+      }
+    },
+    {
+      "id": "PR8142",
+      "head": "e5b9ca893f95c1bd37e0a920928ed1567420e0ef",
+      "delta_base": "a76f95da766eea86e1ff357130b725563311285c",
+      "dispositions": {
+        "path": "/private/tmp/review-drain-20260915/drain8146-author-source-handoff-v3.json",
+        "sha256": "34b4ba35035bf74fe0a3a1fda1b731ef005145c05b764ea4b43eba4c390b2859",
+        "json_pointer": "/original_dispositions/8142"
+      }
+    },
+    {
+      "id": "PR8146",
+      "head": "3acd27d2fca87311b1cb138dc7514c95d5be6343",
+      "delta_base": "e5b9ca893f95c1bd37e0a920928ed1567420e0ef",
+      "dispositions": {
+        "path": "/private/tmp/review-drain-20260915/drain8146-author-source-handoff-v3.json",
+        "sha256": "34b4ba35035bf74fe0a3a1fda1b731ef005145c05b764ea4b43eba4c390b2859",
+        "json_pointer": "/original_dispositions/8146"
+      }
+    }
+  ],
+  "source": {
+    "base": "59024639572d6d3a1091c727297b18c350d3f484",
+    "commit": "59024639572d6d3a1091c727297b18c350d3f484",
+    "tree": "7d35454614f4315babc580195adc749e2e545d71",
+    "paths": [
+      {
+        "path": "docs/ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "8d0fd4c0eae1b79e6ee2853775b6da9d076766493c66ae37ff30760901094ff1"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_STRONG_COUPLING_FORMATION_LAW_LEVEL_AUTOMATON_ERODER_METASTABILITY_ORDERED_PHASE_OBLIGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "639c843b0348fe3d108f26435e367083ef83091d3304784592da400189f88a78"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "c623b07f8ffe87d9c2e03aec3b204116bebf73955dd12d9c816c167d6ebda6b9"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "8bd61997811b3b9d1cb689aa292ca84f63380ec156dd659bd8eb3c5c1eb51171"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "b3536df8d25d76855f546ce65920a1c40d8462f5eee20a66d706290adc2653a5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8138/8138_ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz",
+        "sha256": "cfb2bda0bbd34ffd50958dbac8daeb28e9b15aab437087647d190e1e2b0fa115"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8138/8138_APPROACH_REGISTRY.md.gz",
+        "sha256": "d8c1de7c35318ea6b483874f25433d762edfdd30fa2f8afdc6bb2c5a04cf7ed0"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8138/8138_ASSUMPTIONS_AND_IMPORTS.md.gz",
+        "sha256": "d9512c53c61475d2f9f29d5912519eed436c9db769d0ee358c69b4283ee17c63"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8138/8138_CHECKER_block08_findings.md.gz",
+        "sha256": "20d795f40a84b067118fad5253205f60f402458bd9f7ebc884faf8e6a635ae4d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8138/8138_CLAIM_STATUS_CERTIFICATE_block08.md.gz",
+        "sha256": "efc2ca6daabac073cff8fce834f8d408abfdbf5b3f199357a343777eb44ce6cf"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8138/8138_GOAL_block08.md.gz",
+        "sha256": "07f699c3eb5938ac13269f5a0869f2ddd6bf36107070f7e864ff815af67f3eab"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8138/8138_HANDOFF.md.gz",
+        "sha256": "69251dbc7bd9d069ef351bbf0e4c87a00e899bb36b7eade119bf5543cd1efc8f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8138/8138_LITERATURE_BRIDGES.md.gz",
+        "sha256": "bd1a64aada81b0ae9950a04a4c0cb48c859c531dc9d9f65df80e05b53252d8e7"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8138/8138_NO_GO_LEDGER.md.gz",
+        "sha256": "baa661166c63c7f24c46b4af65e3bd43ec550a89400d77f73700ac41c09aa450"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8138/8138_OPPORTUNITY_QUEUE.md.gz",
+        "sha256": "afef4191d817c0c39bf1d5ef1108a9e67a3a88f489fcdfa331f328a79e16cffc"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8138/8138_RESULTS_block08.md.gz",
+        "sha256": "b7a58b048052f3031d92c036c45fd419b5b5849bbec739ed9f0ada0c442c6045"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8138/8138_REVIEW_HISTORY.md.gz",
+        "sha256": "e95c33dc9096a7ec4004796ca8632c8c751c87f72bed790a5373e63a84b39a32"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8138/8138_ROUTE_PORTFOLIO.md.gz",
+        "sha256": "6d6ad1b933ae8b733fe7531ba85a14fa3222642605e8e4102cb5b7c54e735e30"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8138/8138_STATE.yaml.gz",
+        "sha256": "539df0264565a331e4eb3aa73d93a490a2413d9d6afa16048c4178f0c202d36f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8138/8138_TRACE_GATE.md.gz",
+        "sha256": "3ad48748bbb7f8358e9b4f901f06657f21c43da4c3f07971f12eab4a119a7114"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8138/8138_admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15.py.gz",
+        "sha256": "6d1471d5f83176e4e2f1d75a6b0f3011f1fcbd6ce503f90c7d244ef53e706055"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8138/8138_admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15.txt.gz",
+        "sha256": "f4209f064f5b8ec83e841249fae85e21f15e1a72e8310f37e3300f770ddff80b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8138/8138_citation_graph_manifest.json.gz",
+        "sha256": "801f157a86ec31d4d9f37406129b1cb660570c073736a36a05e7e1f3c79e89c5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8138/8138_supervisor_control_block08_refuter.out.txt.gz",
+        "sha256": "ae0b924d8082035b3d778eb048125d0caef399b60bbaa8423990a79617fad767"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8138/8138_supervisor_control_block08_refuter.py.gz",
+        "sha256": "c0e864dcf02b86394063103c89ae52d187a1fe7bbf87b5cdc3164803f31c03de"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8138/8138_supervisor_control_block08_z3.out.txt.gz",
+        "sha256": "bb31772dab600053d045298e8864ab38dd973a2027124edc86eb2ef0e88ecf5b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8138/8138_supervisor_control_block08_z3.py.gz",
+        "sha256": "a9fae56551ff6ab228895e42655a699a18942848ea9a2f4b2b77babc5000f6f1"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8138/8138_supervisor_control_block08_z3_b.out.txt.gz",
+        "sha256": "d4e91e1da95064901c21e3fc637bdf680a9565bc333edfad5d07ee657f0482d0"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8138/8138_supervisor_control_block08_z3_b.py.gz",
+        "sha256": "f0e5baada1c412ef03ecb6316a13cac5a68923874d6c329dc48a1ee66896ebe5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8139/8139_ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz",
+        "sha256": "489d2a461caae342409c9e799d5122bda3ef3c128d5b4a2abf04bb9bf0a5e305"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8139/8139_APPROACH_REGISTRY.md.gz",
+        "sha256": "a94d19b8c0124f63a453a96e94f66de26b4a6fe0a91b7f06de10e97ac02f9b77"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8139/8139_ASSUMPTIONS_AND_IMPORTS.md.gz",
+        "sha256": "6274dc165e09147d5973bb16372cb4ab86f558648fa544ea7c3a429913ca20a5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8139/8139_CHECKER_block09_findings.md.gz",
+        "sha256": "c76f2bc8978bdb0e98c444113c7bd20090b697ef5dab79519507139c7fba20a2"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8139/8139_CLAIM_STATUS_CERTIFICATE_block09.md.gz",
+        "sha256": "b7a1926c4f0d6d58476091324d85404e500f6d918be78d47e501baa0988a5665"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8139/8139_GOAL_block09.md.gz",
+        "sha256": "dc0c8ecd9156de4ac17e912cc22b6ad1666f171d812e7b6ff9ce6acfc577d579"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8139/8139_HANDOFF.md.gz",
+        "sha256": "83d349e7bcb27c83eb043d9a405892de9fb51f34455842bae23f16249f5d17e6"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8139/8139_NO_GO_LEDGER.md.gz",
+        "sha256": "d584bfa7e71de4966721369972f0a68dc2d71b4a5479e70050e8706b96091d08"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8139/8139_OPPORTUNITY_QUEUE.md.gz",
+        "sha256": "990c9d91b8ca7961970c93d65a341fb60f8b80d87b4eabf874fb22317b7bc518"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8139/8139_RESULTS_block09.md.gz",
+        "sha256": "009d6746abd4ed6421242aa71948e237dacda3bf0e2346f5697da765c0ac14cb"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8139/8139_REVIEW_HISTORY.md.gz",
+        "sha256": "b5a32e2c681a87dc959041c24126a19964f06b8d92c268e75ac160ef7378dbe8"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8139/8139_ROUTE_PORTFOLIO.md.gz",
+        "sha256": "1ea6f0ac1d3bf1ef1c212970dd79deb1a6574c89cfd3bc65145092028f945e19"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8139/8139_STATE.yaml.gz",
+        "sha256": "ec25d403fa47903f3167c3e79a46e95046064517733fceb9f869172d15251977"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8139/8139_TRACE_GATE.md.gz",
+        "sha256": "ae50fb741da040e2442d213cca4f00735dd3c586b6164d4c3efe43fd7fc98a8d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8139/8139_admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py.gz",
+        "sha256": "c465ae2854d19e8f5cad6cccdb54b927b970fc2607cd6217bb0375e546e9bcc2"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8139/8139_admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.txt.gz",
+        "sha256": "3371740530e63af8739086d687f3b542dafee4618c8958e37895ca015aa32dba"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8139/8139_citation_graph_manifest.json.gz",
+        "sha256": "95e6a819687b322ddf743e6212b704ef1abe3b03114fddcb1599884ab7d61595"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8139/8139_supervisor_control_block09_markov_corner_arrow.out.txt.gz",
+        "sha256": "64cd03edd3f03b74488298070b8eba3403dcc3e8a7fc7b8f9f22519619b6e0b3"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8139/8139_supervisor_control_block09_markov_corner_arrow.py.gz",
+        "sha256": "abd7e821b2616aa817147dfcb24411dd4ac8a653e2b16d59c9113b55b602babd"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8139/8139_supervisor_control_block09_refuter.out.txt.gz",
+        "sha256": "93eda19c973ceedda0fe8b5797f18c54cbb7f3396664ef6af30f9c4c115c88a9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8139/8139_supervisor_control_block09_refuter.py.gz",
+        "sha256": "ef6c349326865be60d7009d90dc98d2c9242cb7f677e973125756e4ac2688d31"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8141/8141_ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz",
+        "sha256": "523b9470980a728436bbcbc474dcb8db5331b0a22fc0eca20ed8474780bf4722"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8141/8141_APPROACH_REGISTRY.md.gz",
+        "sha256": "6b719f7dda3e099385bfb4b79f3db733d0a86074af4e2b014bb8c5ab62b57040"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8141/8141_ASSUMPTIONS_AND_IMPORTS.md.gz",
+        "sha256": "4059005abab575afd9548d6ba53015a7469bfb4400880ae56bc199ae0933610b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8141/8141_CHECKER_block10_findings.md.gz",
+        "sha256": "ef5b49daf23a14fb7a12e2de82238f1339ffb2698319cc2741d1dd506fcd0433"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8141/8141_CLAIM_STATUS_CERTIFICATE_block10.md.gz",
+        "sha256": "370075fad9eff1c025b1d41e4d023a961772b362b47b9405dbf4ef8744336d8f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8141/8141_GOAL_block10.md.gz",
+        "sha256": "d257175998973c0388a7e0ed767e8b7729722d1c432cae80db28f5037e89b4ca"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8141/8141_HANDOFF.md.gz",
+        "sha256": "7030b4fde3761acccdafe15e80d426fb941a1b77fcf53dbe60c7b111951dd379"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8141/8141_NO_GO_LEDGER.md.gz",
+        "sha256": "00dd2031f46f760efa714e5726e87ad5ca4cf1d46284fc96852a551000228334"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8141/8141_OPPORTUNITY_QUEUE.md.gz",
+        "sha256": "dfc4f5c9926265739f54ff026ea413ade83a31795af0cb9cec080ff93e400d5e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8141/8141_RESULTS_block10.md.gz",
+        "sha256": "58f729fe8bf00e23c0d42cd829fbebc1fca9d0b47ad30267f4ccf4510790202c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8141/8141_REVIEW_HISTORY.md.gz",
+        "sha256": "5b9d4c5a2362275aeb53f09e33f0e121d3c2b0580240023af3cb016def60664d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8141/8141_ROUTE_PORTFOLIO.md.gz",
+        "sha256": "eeb7273cab600217d9b11bcc222bb5345c59b40388d1d27d28d34e348e6d26df"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8141/8141_STATE.yaml.gz",
+        "sha256": "956ca67c5ff601953406e56cec0192fd6d8abd1db1a466221f431d5e5b0d82b2"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8141/8141_TRACE_GATE.md.gz",
+        "sha256": "d6bb0305798b6dd715292b61a0f73f8eb88d8ea4faec2bf26bbe43ce93ab9187"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8141/8141_admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.py.gz",
+        "sha256": "5bf50289b1e3f1fef7942520181d33040800f9887c568599b61ddf272a173d42"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8141/8141_admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.txt.gz",
+        "sha256": "99af5b315f447e87cdae8e7a102f59e77e6ab9c31ac1ebe75f817eae4ec438a4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8141/8141_citation_graph_manifest.json.gz",
+        "sha256": "eb0dcdb11b0a206b5c9c333ece117a7d35c821126386bf163783c92eea996d9c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8141/8141_supervisor_control_block10_recorded_set.out.txt.gz",
+        "sha256": "d7ade54b929a0e70cf35617150b09dbd83d74680c54ea939874a00ce15a1b640"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8141/8141_supervisor_control_block10_recorded_set.py.gz",
+        "sha256": "b8067b81f93b64e2d7fee3bf906709af41a9552a23c3336242fff663e9408552"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8141/8141_supervisor_control_block10_refuter.out.txt.gz",
+        "sha256": "38792afffd01e8dce76ef0cf7eb68f758ef7eb15bff5b9571da3e8268f4cf41d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8141/8141_supervisor_control_block10_refuter.py.gz",
+        "sha256": "fd9c283c53f768808971065d3aa413e8a877206fadbfe03379627834c0b16a5a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8142/8142_ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz",
+        "sha256": "2e71588cad976cdb19dcbf532fdcec447bcaa1f2d452a0ad0ec1b6e3249f6269"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8142/8142_APPROACH_REGISTRY.md.gz",
+        "sha256": "c1fd6afb31a98275bed96461f32383d178b5cf88ae3b142b98ca1a00c54410be"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8142/8142_ASSUMPTIONS_AND_IMPORTS.md.gz",
+        "sha256": "08dec37536a2188cb62689aa8e4788d133117d1bacf9cd0874470f91fb9c48ff"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8142/8142_CHECKER_block11_findings.md.gz",
+        "sha256": "286c92cec53bfb7767095f86d46ebeec4cb780d2eba09af322820d540af0907a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8142/8142_CLAIM_STATUS_CERTIFICATE_block11.md.gz",
+        "sha256": "d554e00d00f5639b5ca3c65e2d32f2aef8c96cdd108e61d1eef66654701f1882"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8142/8142_GOAL_block11.md.gz",
+        "sha256": "98c2ef2a1d13248b4e10c216d8cb1eb566cb9f74dbc63c63d5201709215f103a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8142/8142_HANDOFF.md.gz",
+        "sha256": "22b0271f2f4b2254c3ee967a61fe1694d3c50a8d63a5209b7b1b2f7bc6a93642"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8142/8142_HANDOFF_campaign_20260915_next_work.md.gz",
+        "sha256": "7c67cec038cd0228197e813cefb0902cbf4dadaf2afbd4d4addedbafd0e2346c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8142/8142_NO_GO_LEDGER.md.gz",
+        "sha256": "52a2653294edc709fc47954db000cd3a1c29f47759d26239ba40a67877acec6e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8142/8142_OPPORTUNITY_QUEUE.md.gz",
+        "sha256": "08381ddabe9a592e1e4b35b51cde3567f4f3196d7e7d34bff6385ef9ffcc62e5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8142/8142_RESULTS_block11.md.gz",
+        "sha256": "ac73a65b29eb3c608017f6d3106f733ac150f05e9e93a44d70ec0bf27d9813de"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8142/8142_REVIEW_HISTORY.md.gz",
+        "sha256": "d70cd2d1e731c9a149b9ba7fa0138317c4ada0b4c7ba65ae5172136e7a40855c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8142/8142_ROUTE_PORTFOLIO.md.gz",
+        "sha256": "9fcec0318654f1faa8a7107ec9acde40c0db629bda3240b9dc716a0094ee407b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8142/8142_STATE.yaml.gz",
+        "sha256": "e23cd76420a2771e0808bab47d5f21e053d1bd832e243ef7c791206c79119b9a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8142/8142_TRACE_GATE.md.gz",
+        "sha256": "dc5b38feb7c16f4976866595ac39e9cc9fd762279600d9f9e9f7d972bf8482b7"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8142/8142_admissibility_rule_three_body_term_exceptional_locus_exact_classification_2026_09_15.py.gz",
+        "sha256": "13c51303cead9e242f2d9fb37a8d9a230731c97f9448d985970595e187e0f83e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8142/8142_admissibility_rule_three_body_term_exceptional_locus_exact_classification_2026_09_15.txt.gz",
+        "sha256": "57d8a9d555f6c0074d8992fa186714d84b740afb4428908085119d1a07b722bf"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8142/8142_citation_graph_manifest.json.gz",
+        "sha256": "13f461b29a6aa30f2dcfc6c367b78b788991b0c23245057747f5fcf4c21b8085"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8142/8142_supervisor_control_block11_locus.out.txt.gz",
+        "sha256": "c247535fc05d45270b8e7ffb613aae8cb3a7629ebd3c0c4f616cc53985ef87f2"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8142/8142_supervisor_control_block11_locus.py.gz",
+        "sha256": "3896ab5c612536ed53c1d32f775f04c57e3434a2626f42050b0773e0fc2a7d57"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8142/8142_supervisor_control_block11_locus_c.out.txt.gz",
+        "sha256": "007e375b4b66ae3bec16f389e4c3fea478ce9ab494b413fd41036248cfa25c4c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8142/8142_supervisor_control_block11_locus_c.py.gz",
+        "sha256": "f213dd036dd6f3dca6895a1b9d85b6a7f6121d0b2a0367eb9b5e792a6a257db3"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8142/8142_supervisor_control_block11_locus_d.out.txt.gz",
+        "sha256": "3c48f0338a2849f0174c3e7937af1d9fe5e62ce5b7b1106bb71c97eeda304996"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8142/8142_supervisor_control_block11_locus_d.py.gz",
+        "sha256": "5e7f8088304b57e429e35c8c0ebd5d481a20813ea3085d425c4e341ac67ddae5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8142/8142_supervisor_control_block11_locus_e.out.txt.gz",
+        "sha256": "2628e4695a83e65c23c37f26c96c124f1d57b2e06826b1deafdf7168df39ca85"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8142/8142_supervisor_control_block11_locus_e.py.gz",
+        "sha256": "72630f1b03588f0e269f6ad4a118c2c2a358393a5305aa42b99d4ebfdd04722c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8142/8142_supervisor_control_block11_locus_f.out.txt.gz",
+        "sha256": "5f92db442e04e89b7235ce0a54a094a3386867219a1e22f13617125ab7d47a1d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8142/8142_supervisor_control_block11_locus_f.py.gz",
+        "sha256": "e3608aa2c53c5ed15d8e09b33354e3ce9e6d5bca1556c1b09322540e3b5e8621"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8146/8146_ADMISSIBILITY_RULE_STRONG_COUPLING_FORMATION_LAW_LEVEL_AUTOMATON_ERODER_METASTABILITY_ORDERED_PHASE_OBLIGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz",
+        "sha256": "91e8038d880da39f6e26bc76ddee31ec708781a93d2801e93efe9724cb4066a8"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8146/8146_APPROACH_REGISTRY.md.gz",
+        "sha256": "f12799e04829a95cd85eb90b5d65b453863dd24f7f95841f4619fa05c8b15116"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8146/8146_ASSUMPTIONS_AND_IMPORTS.md.gz",
+        "sha256": "180d184c289a0bb3d0e3e1321ab25553628000e404f8393bf171e1d8aa29d065"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8146/8146_CHECKER_block12_findings.md.gz",
+        "sha256": "271ea6891796b06e2efb7b70f06190ea6d26cb5efb46d1e35de5ca551b1941a4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8146/8146_CLAIM_STATUS_CERTIFICATE_block12.md.gz",
+        "sha256": "9ac89e845bfe63203046ff9dc25b876549b40e93785c0852e008554e28bca7aa"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8146/8146_GOAL_block12.md.gz",
+        "sha256": "f6987eec9b0200f9539e29138aad6a74c3678709c3e82a2710142c2d817a89f4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8146/8146_HANDOFF.md.gz",
+        "sha256": "77ef531c4ad619e57cf8d0414993bcd38b6c7bad80829d338d232b61ead70268"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8146/8146_LITERATURE_BRIDGES.md.gz",
+        "sha256": "e1f03fc0bcee1358f34a80d6ec6580a49cd6ac3a5f9128780f7d9c69581bcdb8"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8146/8146_NO_GO_LEDGER.md.gz",
+        "sha256": "8fb9494ce1345b18074523a1f365f27b078932449ebddc718959131c51eeaf45"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8146/8146_OPPORTUNITY_QUEUE.md.gz",
+        "sha256": "7418a69ab643b199e1c2fd94b7a87fdfe59dda2f95a619cdbd8b5423b01606ec"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8146/8146_RESULTS_block12.md.gz",
+        "sha256": "163bd5fd5c2e9a2cce5917adec860e07e0a13ea34d97ade6c42d89c4e50223d6"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8146/8146_REVIEW_HISTORY.md.gz",
+        "sha256": "01aa96dda9c484a9a668be6b6d23bd22bc5a29f98ad73b7e073d44ceb528b92f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8146/8146_ROUTE_PORTFOLIO.md.gz",
+        "sha256": "1a3bc4f9941c39faeb295a52204d644e357e065706790baac38fdc00dd827b0b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8146/8146_STATE.yaml.gz",
+        "sha256": "0475e5518047cef33451edd93fd697c959aeb9a089499ac00044be11bf3a8e9a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8146/8146_TRACE_GATE.md.gz",
+        "sha256": "b4ffe53365cd3cda42589d9efec1d3be59730af80bb6d537ae4fba9b35714a03"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8146/8146_admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_2026_09_15.py.gz",
+        "sha256": "8d7ad243ce1d3e15ed3317539a445eb46468499d11a0d5bc70e2411e316ecf24"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8146/8146_admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_2026_09_15.txt.gz",
+        "sha256": "ab8114b280e8c98212549000d911bfa83826eef980b08d03a1fb4821ed99c7e9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8146/8146_citation_graph_manifest.json.gz",
+        "sha256": "b438af5eddc60b6e120c0065650dcbd5a2d2dad68d439389225b617cfa8e9a2c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8146/8146_supervisor_control_block12_refuter.out.txt.gz",
+        "sha256": "6e0efaca731caf737c035231d8e596907f53ae69c8e45660535f496e80168cd9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8146/8146_supervisor_control_block12_refuter.py.gz",
+        "sha256": "6ea81cec45c8d8cda0ba0a12b23e719d20262a2354613c1370893c47da5e3983"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8146/8146_supervisor_control_block12_strong_coupling.out.txt.gz",
+        "sha256": "cff6a51500c848a3af9c9ad0ba677cc7759b9f3bcaa0f27f2bb11d5bfe0e2381"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/8146/8146_supervisor_control_block12_strong_coupling.py.gz",
+        "sha256": "f589c90788a697da134aabafd3a5edbdfcca1e8faf3dd00cc569a95c2b209c88"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/README.md",
+        "sha256": "ebbfac9cda433197c586af0e63e2b91dc9888d8dc94f4e309d6476a26e435152"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8146/original-manifest.json",
+        "sha256": "ff5b18473dfc1763777f5d6f48ccb8208f15b73f8c7ab878141aeebed200a781"
+      },
+      {
+        "path": "scripts/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.py",
+        "sha256": "487a6cbedc3aede26c9eea43b3936168e9f8bba4584971d06bfc11986e77323b"
+      },
+      {
+        "path": "scripts/admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_2026_09_15.py",
+        "sha256": "f6a6d224503d25fa54a6e251e1f5975d4e54588f3087d0f54ae82fb294843fb7"
+      },
+      {
+        "path": "scripts/admissibility_rule_three_body_term_exceptional_locus_exact_classification_2026_09_15.py",
+        "sha256": "a9bec2e35e5cfc522e71fd7624fe25e2020baa0d88f39e16ca08df014c377748"
+      },
+      {
+        "path": "scripts/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py",
+        "sha256": "11faee360b19da49491858bd4d5c9071c5121f8259d385ca17cd0ecb99a41070"
+      },
+      {
+        "path": "scripts/admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15.py",
+        "sha256": "19c70c0a4164a015ad41de478fc1f91ba3b8119d5baa94d1260e11c073554480"
+      }
+    ],
+    "deleted_paths": []
+  },
+  "inputs": {
+    "runtime": [
+      {
+        "path": "scripts/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.py",
+        "sha256": "487a6cbedc3aede26c9eea43b3936168e9f8bba4584971d06bfc11986e77323b"
+      },
+      {
+        "path": "scripts/admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_2026_09_15.py",
+        "sha256": "f6a6d224503d25fa54a6e251e1f5975d4e54588f3087d0f54ae82fb294843fb7"
+      },
+      {
+        "path": "scripts/admissibility_rule_three_body_term_exceptional_locus_exact_classification_2026_09_15.py",
+        "sha256": "a9bec2e35e5cfc522e71fd7624fe25e2020baa0d88f39e16ca08df014c377748"
+      },
+      {
+        "path": "scripts/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py",
+        "sha256": "11faee360b19da49491858bd4d5c9071c5121f8259d385ca17cd0ecb99a41070"
+      },
+      {
+        "path": "scripts/admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15.py",
+        "sha256": "19c70c0a4164a015ad41de478fc1f91ba3b8119d5baa94d1260e11c073554480"
+      }
+    ],
+    "helpers": [],
+    "parents": [
+      {
+        "path": "docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md",
+        "sha256": "2b6773657a6f4c5961a8bfca919e91c664ee7bd290c9ae4bec095409f59ef1f7"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SWEEP_FORMATION_LAW_VERSUS_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "sha256": "6dd105641721dc9b5ca47ed69961e912eec3dc2dae3386cb4a72f4e2ee7ba7e0"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "d190ba480137f0ef5b03d1b3fee027077b5f71841ecb12133862f627b632f095"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "8d0fd4c0eae1b79e6ee2853775b6da9d076766493c66ae37ff30760901094ff1"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "c623b07f8ffe87d9c2e03aec3b204116bebf73955dd12d9c816c167d6ebda6b9"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "8bd61997811b3b9d1cb689aa292ca84f63380ec156dd659bd8eb3c5c1eb51171"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "b3536df8d25d76855f546ce65920a1c40d8462f5eee20a66d706290adc2653a5"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md",
+        "sha256": "2b6773657a6f4c5961a8bfca919e91c664ee7bd290c9ae4bec095409f59ef1f7"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SWEEP_FORMATION_LAW_VERSUS_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "sha256": "6dd105641721dc9b5ca47ed69961e912eec3dc2dae3386cb4a72f4e2ee7ba7e0"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "d190ba480137f0ef5b03d1b3fee027077b5f71841ecb12133862f627b632f095"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "8d0fd4c0eae1b79e6ee2853775b6da9d076766493c66ae37ff30760901094ff1"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_STRONG_COUPLING_FORMATION_LAW_LEVEL_AUTOMATON_ERODER_METASTABILITY_ORDERED_PHASE_OBLIGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "639c843b0348fe3d108f26435e367083ef83091d3304784592da400189f88a78"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "c623b07f8ffe87d9c2e03aec3b204116bebf73955dd12d9c816c167d6ebda6b9"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "8bd61997811b3b9d1cb689aa292ca84f63380ec156dd659bd8eb3c5c1eb51171"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "b3536df8d25d76855f546ce65920a1c40d8462f5eee20a66d706290adc2653a5"
+      },
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+        "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+        "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+        "sha256": "bbdb794f3925b1a473db22a94eeaa4d0b6be5e302f6dc1463c27306738b731b3"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/LANDING.md",
+        "sha256": "827032765af31a2f4ef64b3e595173c7e81e2f56b713793aba336228411a4624"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+        "sha256": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+        "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+        "sha256": "cfcb43f40791d8e8772e86fd2b53fb11008c5075e416f8cf4eb84bd18ab71773"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/SALVAGE.md",
+        "sha256": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+        "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+        "sha256": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d"
+      },
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/premise_decision_history.json",
+        "sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113"
+      },
+      {
+        "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+        "sha256": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8"
+      },
+      {
+        "path": "docs/repo/DEFERRED_DECISIONS.md",
+        "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e"
+      },
+      {
+        "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+        "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "reviewer": {
+    "session": "/root/review_8012 original scientific review; final confirmation pending",
+    "report": {
+      "path": "/private/tmp/review-drain-20260915/drain8146-original-review-report.json",
+      "sha256": "a82b2cce056161ebe6b08f205b7b6233e8baa0566b8679a67ae46a1bc5b1174e"
+    },
+    "references": [
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8146-author-source-handoff-v3.json",
+        "sha256": "34b4ba35035bf74fe0a3a1fda1b731ef005145c05b764ea4b43eba4c390b2859"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8146-author-cache-api-v3.json",
+        "sha256": "aa7ec37aab22010372121205583032bceba0429c7badb887039c1b2900516e73"
+      }
+    ]
+  },
+  "notes": [
+    {
+      "path": "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15.py",
+      "helpers": [],
+      "citations": [
+        "docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md",
+        "docs/ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SWEEP_FORMATION_LAW_VERSUS_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "repository_dependencies": [
+        "docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md",
+        "docs/ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SWEEP_FORMATION_LAW_VERSUS_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "dependency_rationale": "Finite positive six-axis product rule under supplied formation class; linked predecessor arguments used only within explicit parameter, nonvanishing and invariance hypotheses. Independent final premise/gate confirmation remains pending."
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py",
+      "helpers": [],
+      "citations": [
+        "docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md",
+        "docs/ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SWEEP_FORMATION_LAW_VERSUS_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "repository_dependencies": [
+        "docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md",
+        "docs/ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SWEEP_FORMATION_LAW_VERSUS_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "dependency_rationale": "Finite positive six-axis product rule under supplied formation class; linked predecessor arguments used only within explicit parameter, nonvanishing and invariance hypotheses. Independent final premise/gate confirmation remains pending."
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.py",
+      "helpers": [],
+      "citations": [
+        "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "repository_dependencies": [
+        "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "dependency_rationale": "Finite positive six-axis product rule under supplied formation class; linked predecessor arguments used only within explicit parameter, nonvanishing and invariance hypotheses. Independent final premise/gate confirmation remains pending."
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "admissibility_rule_three_body_term_exceptional_locus_exact_classification_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "admissibility_rule_three_body_term_exceptional_locus_exact_classification_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/admissibility_rule_three_body_term_exceptional_locus_exact_classification_2026_09_15.py",
+      "helpers": [],
+      "citations": [
+        "docs/ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "repository_dependencies": [
+        "docs/ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "dependency_rationale": "Finite positive six-axis product rule under supplied formation class; linked predecessor arguments used only within explicit parameter, nonvanishing and invariance hypotheses. Independent final premise/gate confirmation remains pending."
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_STRONG_COUPLING_FORMATION_LAW_LEVEL_AUTOMATON_ERODER_METASTABILITY_ORDERED_PHASE_OBLIGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_ordered_phase_obligation_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_ordered_phase_obligation_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_2026_09_15.py",
+      "helpers": [],
+      "citations": [
+        "docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "repository_dependencies": [
+        "docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ],
+      "dependency_rationale": "Finite positive six-axis product rule under supplied formation class; linked predecessor arguments used only within explicit parameter, nonvanishing and invariance hypotheses. Independent final premise/gate confirmation remains pending."
+    }
+  ],
+  "supporting_proofs": [],
+  "non_science_notes": [
+    {
+      "path": "docs/work_history/review_loop/pr8146/README.md",
+      "rationale": "Historical source recovery instructions, no autonomous scientific authority.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8146-original-review-report.json",
+        "sha256": "a82b2cce056161ebe6b08f205b7b6233e8baa0566b8679a67ae46a1bc5b1174e"
+      }
+    }
+  ]
+}

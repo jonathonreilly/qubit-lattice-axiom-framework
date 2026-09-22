@@ -1,0 +1,74 @@
+[
+  {
+    "primary": "scripts/admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15.py",
+    "primary_sha256": "19c70c0a4164a015ad41de478fc1f91ba3b8119d5baa94d1260e11c073554480",
+    "timeout": 300,
+    "declared_inputs": [
+      "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "docs/ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SWEEP_FORMATION_LAW_VERSUS_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    ],
+    "declared_input_fingerprint": "9f9c99deb5099fc041115fa8508396c6580dde1d09d32955621259fd5eb250a9",
+    "cache_status": "missing",
+    "helpers": []
+  },
+  {
+    "primary": "scripts/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py",
+    "primary_sha256": "11faee360b19da49491858bd4d5c9071c5121f8259d385ca17cd0ecb99a41070",
+    "timeout": 300,
+    "declared_inputs": [
+      "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SWEEP_FORMATION_LAW_VERSUS_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md"
+    ],
+    "declared_input_fingerprint": "ba7ce0f2ee2cc6a3120ceaddd2bfe469654be8c9e875108e32737a5a63132d79",
+    "cache_status": "missing",
+    "helpers": []
+  },
+  {
+    "primary": "scripts/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.py",
+    "primary_sha256": "487a6cbedc3aede26c9eea43b3936168e9f8bba4584971d06bfc11986e77323b",
+    "timeout": 300,
+    "declared_inputs": [
+      "docs/ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+    ],
+    "declared_input_fingerprint": "be1d434a9b47232c05cf19dc0664e397932b38f7cb8f49f8e61b45de8ff99f08",
+    "cache_status": "missing",
+    "helpers": []
+  },
+  {
+    "primary": "scripts/admissibility_rule_three_body_term_exceptional_locus_exact_classification_2026_09_15.py",
+    "primary_sha256": "a9bec2e35e5cfc522e71fd7624fe25e2020baa0d88f39e16ca08df014c377748",
+    "timeout": 300,
+    "declared_inputs": [
+      "docs/ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+    ],
+    "declared_input_fingerprint": "474468383a6d083a0b2a59d99c9b05eb88a5be365201c20aaf00b3430b5a9358",
+    "cache_status": "missing",
+    "helpers": []
+  },
+  {
+    "primary": "scripts/admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_2026_09_15.py",
+    "primary_sha256": "f6a6d224503d25fa54a6e251e1f5975d4e54588f3087d0f54ae82fb294843fb7",
+    "timeout": 300,
+    "declared_inputs": [
+      "docs/ADMISSIBILITY_RULE_STRONG_COUPLING_FORMATION_LAW_LEVEL_AUTOMATON_ERODER_METASTABILITY_ORDERED_PHASE_OBLIGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    ],
+    "declared_input_fingerprint": "944c449566c6710ccf2bd200e22b17ec158ae1c33c315ccd5a7216f4b4f191d0",
+    "cache_status": "missing",
+    "helpers": []
+  }
+]

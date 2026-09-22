@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "77c1fd5000061b7e5bef0479229f33f1a9037f47",
+  "fetched_ref": "refs/review-loop/fetched/8138-90671f4bfea14b35bfe04caa87bb6020",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block08-z3-formation-law-20260915",
+    "headRefOid": "77c1fd5000061b7e5bef0479229f33f1a9037f47",
+    "isDraft": false,
+    "number": 8138,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,397 @@
+--- original/docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md
++++ current/docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md
+@@ -1,7 +1,7 @@
+ ---
+ claim_id: admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_bounded_theorem_note_2026-09-15
+ claim_type: bounded_theorem
+-claim_scope: "On the six Bloch-axis projector menu with the covariant positive product rule of orbit weights (p, q, r), under the records-only reading, for the monotone class with corner kappa in {+1,-1}^3 (predecessors x - kappa_i e_i) in the region c < 1/3 of the three-dimensional formation-law note (block 08): (R1) the Z^3 formation law mu_kappa is a Gibbs measure for the finite-range specification with potential -log K on nearest-neighbor edges and +log K_3 on the predecessor triples (proved by passing the finite-box conditional identity to the limit), hence a Markov field for the graph G_kappa of six axial and six face-diagonal neighbors x + kappa_i e_i - kappa_j e_j, and its full conditional depends on those face-diagonal sites (exact witness at (3,1,2): total variation 793975879125/24719290847393); (R2) a law with full support determines its continuous finite-range specification (proved), so mu_kappa is not a Markov field for the nearest-neighbor graph and differs from every Gibbs law of block 02's nearest-neighbor static specification on Z^3, unique or not, at every triple in the region where the third difference of log K_3 is nonzero (executed at (3,1,2), (5,2,4)); (R3) the eight corner laws are pairwise distinct: the four point-reflection pairs have four distinct dependency sets (proved), and within a pair the conditionals differ (exact witness at (3,1,2): total variation 1646222697/263752139417); they form one orbit of the proper cubic rotations, each law invariant only under the three-fold rotations about its own body diagonal, and their equal mixture is proper-cubic covariant and translation invariant but not translation-ergodic; (R4) the sweep leaves an imprint: on the 2x2 column the stationary plane chain is not reversible (total variation between the two-plane joint law and its transpose 0.04934... at (3,1,2), 0.031... at (5,2,4), 0 at the constant rule), the one-plane law is not invariant under the in-plane reflection (0.02177...), and the eight predecessor structures give exactly four one-plane laws, the sweep direction being visible only in the joint law; on Z^3 in the region the law is not invariant under the reflection of any axis (from R3). (R5) Two dimensions for contrast (the landed plane-law note): two laws, the point reflection preserving the diagonal pairs. No order or corner is selected as physical; no arrow of time follows (the imprint is that of a supplied order); nothing about the static law's uniqueness; nothing for c >= 1/3; exact arithmetic throughout."
++claim_scope: "Under the supplied positive six-axis product rule and monotone formation class, for c < 1/3 the constructed infinite laws satisfy the finite-range DLR specification. The explicit single-site formula and full-support conditional uniqueness yield a containing Markov graph; genuine diagonal dependence is conditional on the stated nonzero mixed differences. The eight corner laws are proved distinct at (3,1,2), including the exact opposite-corner witness; no all-parameter opposite-corner distinctness is asserted. Covariance of the family and its equal probability mixture hold throughout c < 1/3. Exact finite-column irreversibility witnesses remain. Ergodic decomposition and broader negative certification are not established here."
+ upstream_dependencies:
+   - minimal_axioms
+   - admissibility_rule_infinite_strip_row_sweep_formation_law_versus_static_law_bounded_theorem_note_2026-09-06
+@@ -10,7 +10,7 @@
+ runner: scripts/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py
+ ---
+ 
+-# The three-dimensional formation law is a Markov field for the face-diagonal graph, not the nearest-neighbor one: eight distinct corner laws and the imprint of the sweep
++# The three-dimensional formation law: the face-diagonal specification and eight distinct corner laws at the witnessed triple
+ 
+ **Date:** 2026-09-15
+ **Type:** bounded_theorem
+@@ -18,23 +18,14 @@
+ 
+ ## Result up front
+ 
+-Take the three-dimensional pattern law of the previous note — records laid
+-down on the lattice, each site waiting for the three sites behind it — in the
+-range of rule settings where that law is well defined. Ask what a site knows
+-about the rest once everything else is fixed. Under the static law, a site
+-listens only to its six nearest neighbors. Under the formation law it also
+-listens to six sites one step diagonally across a face, the ones that shared a
+-"behind" relation with it, and this extra listening is genuine (an exact
+-witness). Because a law that gives every pattern a positive chance is pinned
+-down by what its sites listen to, the formation law can never be a static law,
+-whether or not the static law is unique at that setting. The same reasoning
+-shows that the eight ways of choosing "behind" (the eight corners of a cube)
+-give eight different laws, none of them invariant under the rotations of the
+-lattice, though the eight together are permuted by those rotations and their
+-equal blend is invariant. And the direction of the sweep leaves a trace: on a
+-narrow column the joint law of two consecutive layers is not symmetric under
+-exchanging them, so past and future along the sweep can be told apart from the
+-finished records — the trace of a supplied order, not a derived arrow of time.
++The constructed three-dimensional formation laws have an explicit finite-range
++conditional specification. At the witnessed triple `(3,1,2)`, changing a
++face-diagonal record changes a site's conditional, and all eight corner laws
++are distinct. The full-support conditional argument proves the conditional
++separation stated below; it does not classify all parameter triples. Rotations
++permute the corner laws, and their equal mixture is a probability law invariant
++under those rotations. This construction supplies no physical selection of an
++order or mixture. Exact finite-column joint laws also witness sweep reversal.
+ 
+ Exactly: with `K_3(a, b, c) = Σ_s K(a, s) K(b, s) K(c, s)` and the corner
+ `κ ∈ {±1}^3`, `μ_κ` is Gibbs for the potential `−log K` on edges and
+@@ -42,7 +33,7 @@
+ conditional at `x` depends on `x + κ_i e_i − κ_j e_j` (TV
+ `793975879125/24719290847393` at `(3, 1, 2)` for one change); a full-support
+ law determines its finite-range specification (R2), so `μ_κ` is not a
+-nearest-neighbor Markov field and differs from every static Gibbs law; the
++nearest-neighbor Markov field and differs from every static Gibbs law; at `(3,1,2)` the
+ eight `μ_κ` are pairwise distinct (R3; within a point-reflection pair, TV
+ `1646222697/263752139417` between the conditionals); the `2×2` column's plane
+ chain is irreversible with `TV(J, J^T) = 0.04934…` at `(3, 1, 2)` and `0` at
+@@ -60,8 +51,8 @@
+ source_of_blocker_text: handoff
+ reachability_to_target: supports
+ artifact_role: theorem
+-next_trace_action: "the formation law of the monotone class on Z^3 is now separated from every static law by its Markov graph, and the covariant object of the class is the mixture of eight laws, not a law; next: the random-priority law's Markov structure and its relation to the mixture; consumers: the campaign's queue, #8093's assembly (the formation-law node: 'clause-needed' for a covariant single law), the parked statistical-bridge material (read-only)"
+-conditional_surface_status: "exact on the declared menu and triples; R1–R2 proved for every corner and every triple in block 08's region with the witness executed at (3,1,2) and the third difference at (3,1,2), (5,2,4); R3 proved (dependency sets) with the within-pair witness executed at (3,1,2); R4 executed on the 2x2 column at three triples and proved on Z^3 through R3; R5 cited; conditional on the records-only reading, positivity, the six-axis menu, the monotone class as supplied conditions and on block 08's region"
++next_trace_action: "the stated nonzero-difference cases are separated from static laws by their conditional specification, and the covariant object of the class is the equal probability mixture of eight corner laws, without physical selection; next: the random-priority law's Markov structure and its relation to the mixture; consumers: the campaign's queue, #8093's assembly (the formation-law node: 'clause-needed' for a covariant single law), the parked statistical-bridge material (read-only)"
++conditional_surface_status: "exact on the declared menu and triples; R1 containing graph throughout the region; genuine diagonal dependence and R2 separation require the stated nonzero mixed difference with the witness executed at (3,1,2) and the third difference at (3,1,2), (5,2,4); R3 distinctness proved at (3,1,2); covariance of the family throughout the region; R4 executed on the 2x2 column at three triples and proved on Z^3 at (3,1,2) through R3; R5 cited; conditional on the records-only reading, positivity, the six-axis menu, the monotone class as supplied conditions and on block 08's region"
+ hypothetical_axiom_status: null
+ admitted_observation_status: null
+ audit_required_before_effective_retained: true
+@@ -118,6 +109,14 @@
+ `𝒯_κ(x)`. A cylinder is a set fixing finitely many coordinates. A law `μ` on
+ `M^{Z^3}` has full support if every cylinder has positive `μ`-probability.
+ 
++
++### Linked source authority
++
++- [Admissibility Rule Three Dimensional Monotone Formation Law Plane Chain Coupling Region Bounded Theorem Note 2026-09-15](ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md): only its explicit hypotheses and conclusions are used.
++
++- [Admissibility Rule Infinite Strip Row Sweep Formation Law Versus Static Law Bounded Theorem Note 2026-09-06](ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SWEEP_FORMATION_LAW_VERSUS_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-06.md): the actual predecessor premise, restricted to the quoted theorem hypotheses.
++- [Admissibility Plane Formation Diagonal Interaction Note 2026-09-08](ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md): the actual predecessor premise, restricted to the quoted theorem hypotheses.
++
+ ## Prior art and what is new
+ 
+ Block 01 (on main) classified formation against static laws on finite windows
+@@ -130,8 +129,8 @@
+ 2026-09-05 (on main) concerns the record-side image of a current under a
+ supplied sweep on a different object, not the reversibility of the record law.
+ The classical references — Gibbs specifications and the DLR equations, the
+-uniqueness of conditional probabilities, ergodic decomposition — are named here
+-and under Imports and re-proved at scope where load-bearing.
++uniqueness of conditional probabilities and of finite measures — are explicit
++mathematical imports under Imports; ergodic decomposition is not used.
+ 
+ New here: the Gibbs identification of the three-dimensional law (R1); the
+ separation from every static Gibbs law on `Z^3` through the Markov graph and a
+@@ -148,14 +147,14 @@
+ | L2: a full-support law determines its continuous finite-range specification; `μ_κ` has full support | proved |
+ | R1: the Markov graph `G_κ`; the dependence on the face-diagonal sites | proved from L1; witness executed at `(3, 1, 2)` (B1–B3) |
+ | R2: not nearest-neighbor Markov; differs from every static Gibbs law | proved from L2 + R1 at every triple with nonzero third difference; executed at `(3, 1, 2)`, `(5, 2, 4)` (B4) |
+-| R3: eight distinct laws; the covariant orbit; the mixture | proved (dependency sets; transitivity); within-pair witness executed (C1–C4) |
++| R3: covariant orbit and probability mixture; eight distinct laws at (3,1,2) | covariance general in the region; distinctness uses the within-pair witness (C1–C4) |
+ | R4: irreversibility and the corner's visibility on the `2×2` column | executed at three triples (D1–D4); the `Z^3` statement from R3 |
+-| R5: the two-dimensional contrast | cited (the plane-law note); the count `2` versus `8` explained |
++| R5: the two-dimensional contrast | cited (the plane-law note); the count comparison is restricted to the witnessed setting |
+ | the third difference nonzero at every nonconstant triple; the eight laws' distinctness outside the region; affine independence of the eight laws | open; not this note |
+ 
+ The strongest missing lemma is that the third difference of `log K_3` is
+-nonzero at every nonconstant triple (executed at two); R2 and R3 are stated
+-at triples where it is nonzero.
++nonzero at every nonconstant triple (executed at two); R2 requires the indicated nonzero difference; R3 opposite-corner
++distinctness is confined to the witnessed triple.
+ 
+ ## Lemma L1 — the `Z^3` law is Gibbs for the interior specification
+ 
+@@ -176,15 +175,17 @@
+ normalizers `1/K_3(v_{A^κ_y})` for triples meeting `Λ` (no `K_2`
+ normalizer meets `Λ`, since those sit on the coordinate planes of `B`). In the
+ conditional `μ^κ_B(v_Λ | v_{B ∖ Λ})` every factor not containing a site of `Λ`
+-cancels, leaving `γ^κ_Λ(v_Λ | v_{∂Λ})` exactly. Hence, for every such box,
+-`μ^κ_B(v_Λ, v_{∂Λ}) = γ^κ_Λ(v_Λ | v_{∂Λ}) μ^κ_B(v_{∂Λ})` for every pair of
+-configurations on `Λ` and `∂Λ` — a finite identity among the values of the
+-marginal of `μ^κ_B` on the finite window `Λ ∪ ∂Λ`. As the corner recedes,
+-these marginals converge to those of `μ_κ` (block 08, Q4e), so the identity
+-holds for `μ_κ`; since `γ^κ_Λ` depends on the outside only through `∂Λ`, this
+-is the DLR equation. ∎ (The two-dimensional version is the plane-law note's
+-"positive finite-range identification"; the argument is the same one dimension
+-up, with triples in place of diagonal pairs.)
++cancels, leaving `γ^κ_Λ(v_Λ | v_{∂Λ})` exactly. For any fixed exterior cylinder event `E` (supported outside `Λ`), choose the
++box also to contain its finite support. Multiplying the conditional identity by
++`1_E` and integrating gives
++`E_{μ^κ_B}[1_E 1_{v_Λ=a}] = E_{μ^κ_B}[1_E γ^κ_Λ(a | v_{∂Λ})]`.
++Both integrands depend on finitely many coordinates. Finite-window convergence
++therefore passes this identity to `μ_κ` for every exterior cylinder event.
++The exterior cylinders form a generating π-system; equality of the two finite
++measures extends to the entire exterior sigma algebra. Thus `γ^κ_Λ` is a
++version of the conditional law given the full exterior, which is the DLR
++identity. The displayed continuous kernel is defined for every exterior
++configuration; conditional-law equality is almost sure. ∎
+ 
+ ## Lemma L2 — a full-support law determines its continuous specification
+ 
+@@ -272,8 +273,9 @@
+ indices `j` and `k` respectively, so they are in different groups. Executed for
+ all eight corners (C1, C2). ∎
+ 
+-**(b) Distinctness.** For `c < 1/3` at a triple with nonzero third difference,
+-the eight laws `μ_κ` are pairwise distinct.
++**(b) Distinctness at the witnessed triple.** At `(p,q,r)=(3,1,2)`, where
++`c < 1/3`, the eight laws `μ_κ` are pairwise distinct. The following proof
++does not assert opposite-corner distinctness at every nonzero-third-difference triple.
+ 
+ *Proof.* For `κ' ∉ {κ, −κ}` pick `z ∈ D_κ(x) ∖ D_{κ'}(x)`: `γ^κ_x` depends on
+ `ω_z` (R1; the witness at `(3, 1, 2)` is the `(1, 2)`-type site, and the other
+@@ -292,19 +294,18 @@
+ corners transitively, and a rotation `g` maps `μ_κ` to `μ_{gκ}` (it maps the
+ class `𝓜_κ` to `𝓜_{gκ}` and the rule is covariant). The stabilizer of a corner
+ is the three-fold rotation group about its body diagonal, under which `μ_κ` is
+-invariant (block 08's axis symmetry, Q1c); by (b) `μ_κ` is invariant under no
+-other rotation. The equal mixture `μ̄ = (1/8) Σ_κ μ_κ` is invariant under all
+-proper cubic rotations, the axis reflections and all translations. It is not
+-translation-ergodic: each `μ_κ` is translation-mixing (block 08's covariance
+-bound, Q4b, decays exponentially), hence ergodic; distinct ergodic laws are
+-mutually singular, so `μ̄` has eight distinct ergodic components. ∎ No single
+-law of the class is proper-cubic covariant; the covariant object is a mixture
+-— consistent with the finite-window findings of #8096 (no covariant sequential
+-order) and #8102 (the uniform order mixture as a witness device), now on `Z^3`.
++invariant (block 08's axis symmetry, Q1c). At `(3,1,2)`, (b) excludes every
++other proper rotation. Throughout `c < 1/3`, the equal mixture
++`μ̄ = (1/8) Σ_κ μ_κ` is a probability law invariant under all proper cubic
++rotations, axis reflections and translations: these transformations permute
++its summands. This is a mathematical construction; the supplied axioms do not
++select its physical adoption. Single-site covariance decay alone does not
++prove full translation mixing or an eight-component ergodic decomposition;
++no such decomposition is claimed here. ∎
+ 
+ ## Theorem R4 — the imprint of the sweep
+ 
+-**(a) On `Z^3`.** For `c < 1/3` at a triple with nonzero third difference,
++**(a) On `Z^3` at the witnessed triple `(3,1,2)`.**
+ `μ_κ` is not invariant under the reflection of any single axis, nor under any
+ product of reflections other than the identity: the reflection `R` of the axis
+ `i` maps `μ_κ` to `μ_{κ'}` with `κ'_i = −κ_i`, a different law by R3(b). In
+@@ -337,9 +338,8 @@
+ monotone class comes with a corner and a sweep, and the finished records
+ remember both. No arrow of time follows: the axioms supply no order, and a
+ covariant construction (the equal mixture, or a covariant random order) has no
+-such imprint by construction. The result says only that any single monotone
+-order leaves its direction readable in the record statistics, exactly and
+-without a clock.
++such imprint by construction. At the witnessed triple each of the eight supplied classes leaves a
++distinct record law. This statement is not extended to every parameter triple.
+ 
+ ## R5 — two dimensions for contrast (cited)
+ 
+@@ -348,98 +348,51 @@
+ and its grouping (pairs, not triples), so opposite corners coincide (block 05's
+ P7(a)) and there are two laws, distinguished by the axis reflections. In three
+ dimensions the point reflection preserves the dependency set but not its
+-grouping into triples (R3a), so there are eight. The two-dimensional analogue
++grouping into triples (R3a); at `(3,1,2)` the independent conditional witness
++then proves eight distinct laws. Different groupings alone do not prove distinctness. The two-dimensional analogue
+ of R2 is the plane-law note's statement that the center's conditional given
+ its eight neighbors is not the static rule.
+ 
+-## No-Go Discipline Gate
+-
+-The negative sentences of this note are R2 (not a static law; not
+-nearest-neighbor Markov) and R3(c)/R4 (no single covariant law; no invariance
+-under reflections). All are proved at scope from L2 and exact witnesses; none
+-is a route no-go beyond its scope.
+-
+-### N1 — Routes by which the formation law could still be a static law, or covariant
+-
+-| route | what it would attempt | why it fails here, or its obligation | marker |
+-|---|---|---|---|
+-| 1 a static law with a longer-range specification | let the "static law" be Gibbs for a potential with face-diagonal and three-body terms | that is `γ^κ` itself; block 02's static specification is nearest-neighbor by the axiom's rule; a longer-range static rule is not the declared rule | RULED OUT BY PRIOR at scope (the rule is nearest-neighbor) |
+-| 2 a triple where the third difference vanishes | a nonconstant `(p, q, r)` with `log K_3` pair-additive | executed nonzero at `(3, 1, 2)`, `(5, 2, 4)`; not proved for every nonconstant triple; such a triple would make R1's face-diagonal dependence vanish and R2, R3 silent there | not attempted; obligation named |
+-| 3 `c ≥ 1/3` | outside block 08's region the `Z^3` law is not constructed | nothing claimed | not attempted; obligation named |
+-| 4 the mixture as "the" law | take `μ̄` as the physical law | it is covariant but not a Gibbs law for any single specification of the eight and not ergodic; selecting it is an owner decision, not a derivation | ATTEMPTED (its properties stated) |
+-| 5 a covariant random order | the random-priority construction (the owner's note on its branch, unlanded) | a different object with its own Markov structure, not analyzed here | not attempted; obligation named |
+-| 6 the constant rule | `p = q = r` | one uniform law; every statement collapses; excluded by the variation clause restricted to the menu | ATTEMPTED (control) |
+-
+-### N2 — Wall-independence audit
+-
+-Walls: `W_reg` (`c < 1/3`), `W_3` (nonzero third difference), `W_pos`,
+-`W_menu`, `W_class`. `W_reg` and `W_3` are independent: the constant rule has
+-`c = 0` and zero third difference; a triple with `c ≥ 1/3` can have nonzero
+-third difference (e.g. far along `(1, 1, t)`). `W_pos` gives L2's full support
+-and L1's product form; `W_menu` fixes the numbers; `W_class` defines the
+-objects. L1 and L2 need `W_reg` (for the object) and `W_pos`; R1's dependence,
+-R2 and R3(b) need `W_3` in addition; R4(b) is a finite computation needing
+-`W_pos` only.
+-
+-### N3 — Hidden-wall scan
+-
+-Scanned for "we assume", "by construction", "as is standard", "the framework
+-provides", "naturally", "obviously", "canonical", "registered", "background",
+-"bridge context". Hits: "by construction" in R4(c) (a covariant construction
+-has no imprint — a definition-level remark, not load-bearing). The cited steps
+-(the ergodic decomposition; distinct ergodic laws are mutually singular) are
+-named under Imports and used only in R3(c)'s last sentence.
+-
+-### N4 — Per-citation table
+-
+-| cited surface | residual it attacks | residual claimed here | match |
+-|---|---|---|---|
+-| block 08 (stacked; proposed, unaudited): Q1e, Q1f, Q3, Q4b, Q4e | the `Z^3` law, its product form, its region and decay | L1, R1, R3(c), R4(b) | yes (parent; cited) |
+-| block 02 (on main; proposed, unaudited): Theorem C | the static specification and its Gibbs measures | the static side of R2 | yes (parent; cited) |
+-| block 03 (on main; proposed, unaudited): the region `6c_1 < 1` | uniqueness of the static law | contrast in R2 only | yes (contrast) |
+-| the plane-law note (on main; proposed, unaudited) | the 2D Gibbs identification; two classes; the center's conditional | R5; the pattern of L1 | yes (cited) |
+-| #8096, #8102 (open PRs; not inputs) | no covariant sequential order; the order mixture | R3(c)'s consistency remark | yes (context) |
+-| the time-directed-sweep note (on main) | the image of a current under a sweep | none (a different object) | non-match, dropped |
+-
+-After dropping the non-match, the headline rests on the parents' cited
+-statements and this note's own proofs and executed witnesses.
+-
+-### N5 — Resolution audit
+-
+-| phrase | per-element | per-site | per-mode | per-block | lattice-wide |
+-|---|---|---|---|---|---|
+-| "the formation law is not a static law on `Z^3`" | executed: the conditional's dependence on one face-diagonal site over all six values; the `6^6` diagonal assignments for the pair witness; the third difference | executed: the twelve dependency sites and the excluded sites of the kernel formula | executed: the eight corners' sets and groupings; the four one-plane laws | executed: the `2×2` column's joint law and its transpose over all `1296^2` pairs | proved from L1–L2 in the region at triples with nonzero third difference; not claimed elsewhere |
+-
+-### N6 — Partial-closure paths and primitive scan
+-
+-The registered primitives (`scale_reference_primitive`,
+-`kinetic_isotropy_primitive`, `realized_state_primitive`) supply no order,
+-corner, specification or coupling condition; none is a wall. A reframing that
+-would close R3(c)'s "no covariant law" is the adoption of the mixture or of a
+-covariant random order as the supplied formation law — an owner decision,
+-recorded as such. `docs/repo/DEFERRED_DECISIONS.md` entry 1 is not fired.
++## No-Go Discipline Gate — deferred broader certification
++
++This revision retains the constructive identities, quantitative bounds and named
++finite witnesses above. It does not certify the broader exclusion claims in the
++original packet. The original N1–N8 text and every recovery route are preserved
++byte-exact in [the PR8146 history manifest](work_history/review_loop/pr8146/original-manifest.json)
++under PR8139; the original branch remains a recovery handle for unlanded work.
++
++### N1 — Route coverage
++The original list includes unattempted and out-of-domain routes. It is not a
++completed route search; broader negative certification is deferred.
++
++### N2 — Walls
++The positive weights, six-axis menu, product rule and specified formation class
++remain supplied conditions, not deductions or selected physical inputs.
++
++### N3 — Hidden walls
++The statements above carry their finite-window, parameter, nonvanishing and
++invariance hypotheses explicitly. No unrestricted exclusion follows.
++
++### N4 — Citation scope
++Linked source arguments support only their stated mathematical hypotheses.
++Historical branch review and cache records are provenance, not authority.
++
++### N5 — Resolution
++Exact finite witnesses and the proved formula domains remain as stated above.
++They do not establish exhaustive route, phase or infinite-law classification.
++
++### N6 — Partial closure
++The positive results are preserved. Unproved exclusions remain open with their
++original attempted routes recoverable; no new premise closes them.
+ 
+ ### N7 — Steelman
+-
+-Hostile reviewer: "L2 is too strong: Gibbs measures are defined by almost-sure
+-conditionals, and the specification is only determined up to null sets; the
+-witness compares kernels at a single configuration." Reply: with finite-range
+-kernels the comparison is between two functions of finitely many coordinates,
+-and a full-support law charges every cylinder, so an almost-sure equality of
+-such functions is an everywhere equality — the proof of L2; full support is
+-proved from the box laws' uniform positivity. "R3(c)'s ergodicity uses a limit
+-theorem you did not prove." Conceded and stated: the ergodic decomposition is
+-cited definition-level and used only for the last sentence of R3(c); the
+-distinctness of the eight laws (R3(b)) does not use it.
+-
+-### N8 — Cross-cycle echo
+-
+-The nearest prior wall is block 01's finite-window classification (formation =
+-static iff at most one recorded neighbor), which this note extends to `Z^3`
+-through a different mechanism (the Markov graph instead of the normalizer
+-identity); the plane-law note's two-dimensional conditional argument is the
+-same mechanism one dimension down. No structurally similar wall has been
+-retired.
++A quantitative bound or finite discrepancy does not settle every alternative
++law or order. This revision concedes that gap rather than asserting closure.
++
++### N8 — Recovery
++The history manifest binds original heads, paths, decompressed SHA256 hashes and
++archive hashes. This deferred certificate is not a passing negative-claim gate;
++any future broader exclusion must complete the applicable discipline.
+ 
+ ## Falsifiers
+ 
+@@ -464,9 +417,8 @@
+ time — the imprint of the sweep is that of a supplied order. No plane, bridge,
+ Born or gravity statement enters this note; this note does not fire wake
+ condition 1 of the parked statistical-bridge decision. The Gibbs–DLR
+-formalism, the uniqueness of conditional probabilities and the ergodic
+-decomposition are classical references re-proved or cited at the scope used;
+-no value, constant or theorem is imported as authority.
++formalism, the uniqueness of conditional probabilities and finite-measure uniqueness theorem are mathematical inputs at the stated
++scope; no ergodic decomposition is claimed.
+ 
+ Further: the third difference is executed at two triples, not proved nonzero
+ at every nonconstant triple; the within-pair witness is at `(3, 1, 2)` only
+@@ -484,12 +436,13 @@
+   plane-law note (on main): the two-dimensional contrast.
+ - Re-proved at scope: L1 (a finite conditional identity passed to the limit),
+   L2 (uniqueness of finite-range kernels under full support), R1–R4.
+-- Cited, definition-level: the DLR formulation of Gibbs measures for a
+-  finite-range specification (L1's statement); the pointwise ergodic theorem
+-  and the ergodic decomposition, used only for the last sentence of R3(c)
+-  (distinct ergodic translation-invariant laws are mutually singular).
+-- No literature value, constant, or theorem enters as authority; classical
+-  names appear only in this section and under Prior art.
++- Mathematical imports: existence and almost-sure uniqueness of conditional
++  probabilities on finite-alphabet countable product spaces; uniqueness of
++  finite measures agreeing on a generating π-system, used to extend the
++  exterior-cylinder identity to the full exterior sigma algebra. Finite range
++  makes the tested functions cylinder functions; positivity gives full support
++  for the pointwise comparison. These are probability theorems, not definitions.
++- The pointwise ergodic theorem and ergodic decomposition are not used here.
+ 
+ ## Review record
+ 
+--- original/scripts/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py
++++ current/scripts/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py
+@@ -22,7 +22,7 @@
+ from itertools import permutations, product
+ from pathlib import Path
+ 
+-AUDIT_TIMEOUT_SEC = 900
++AUDIT_TIMEOUT_SEC = 300
+ AUDIT_INPUT_PATHS = (
+     "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+     "docs/MINIMAL_AXIOMS_2026-06-29.md",
+@@ -38,7 +38,7 @@
+ PLANE_PATH = ROOT / AUDIT_INPUT_PATHS[4]
+ CLAIM_ID = "admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_bounded_theorem_note_2026-09-15"
+ BLOCK08_CLAIM_ID = "admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_bounded_theorem_note_2026-09-15"
+-BLOCK08_FRAGMENT = "the three-body normalizer is irreducible"
++BLOCK08_FRAGMENT = "witnessed three-body irreducibility"
+ BLOCK02_CLAIM_ID = "admissibility_rule_infinite_strip_row_sweep_formation_law_versus_static_law_bounded_theorem_note_2026-09-06"
+ PLANE_CLAIM_ID = "admissibility_plane_formation_diagonal_interaction_note_2026-09-08"
+ PLANE_FRAGMENT = "the two diagonal classes differ for every nonconstant orbit triple"
+@@ -475,7 +475,7 @@
+ FENCES = (
+     "This note describes the monotone class with a corner on `Z^3` in block 08's region; it states nothing about the static law's uniqueness, nothing for `c ≥ 1/3`, nothing about a physical order or corner, and derives no arrow of time — the imprint of the sweep is that of a supplied order.",
+     "No plane, bridge, Born or gravity statement enters this note; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
+-    "no value, constant or theorem is imported as authority.",
++    "no ergodic decomposition is claimed.",
+ )
+ FORBIDDEN = (
+     "the physical order", "arrow of time is derived", "derives an arrow", "for every coupling", "selects the",

@@ -1,0 +1,74 @@
+{
+  "scope": "Actual current-main APIs on immutable extracted original source, not primary execution or final candidate preflight",
+  "rows": [
+    {
+      "pr": 8138,
+      "note": "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "type_actual": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "runner": "scripts/admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15.py",
+      "timeout_actual": 900,
+      "script_imports_actual": [],
+      "note_sha256": "61496c9348af181b9a3db983fd4486c75d3c1ad188e9f83bb80b00fa99710f94",
+      "runner_sha256": "311e27d7406be6167fc6b17c7b904e9e3879230331ad480103a6b8352fa27a21"
+    },
+    {
+      "pr": 8139,
+      "note": "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "type_actual": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "runner": "scripts/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py",
+      "timeout_actual": 900,
+      "script_imports_actual": [],
+      "note_sha256": "bb6bc9485b293abf2ba75c7e1e5dec0b08cd590ac1cb228fed3fead40b845d34",
+      "runner_sha256": "53ed131d73e9a1383f81e7a7a276b8c77723adc82e617ab05e13b6b5c1ecdb2a"
+    },
+    {
+      "pr": 8141,
+      "note": "docs/ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "type_actual": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "runner": "scripts/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.py",
+      "timeout_actual": 900,
+      "script_imports_actual": [],
+      "note_sha256": "420272f98e00bb411333e0a0887084e4f5a6094264a40c62e85625e1e2e75dc8",
+      "runner_sha256": "c7a2f5f37d1d64bd2fa89c8b001539a8a276323faafbcc234c0a1e941405e013"
+    },
+    {
+      "pr": 8142,
+      "note": "docs/ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "type_actual": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "runner": "scripts/admissibility_rule_three_body_term_exceptional_locus_exact_classification_2026_09_15.py",
+      "timeout_actual": 900,
+      "script_imports_actual": [],
+      "note_sha256": "d73342ce4381a32f1e3980a3e4ef250e6ba2b0fd5fd5e6d38b7bbb3f2e8e6602",
+      "runner_sha256": "9c0996d9414eeae092b6428d80ae20ae483f94733a2fe9826353eab6ee130e8a"
+    },
+    {
+      "pr": 8146,
+      "note": "docs/ADMISSIBILITY_RULE_STRONG_COUPLING_FORMATION_LAW_LEVEL_AUTOMATON_ERODER_METASTABILITY_ORDERED_PHASE_OBLIGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "type_actual": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "runner": "scripts/admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_2026_09_15.py",
+      "timeout_actual": 900,
+      "script_imports_actual": [],
+      "note_sha256": "a32d5fa84ddf73766761893a1fcae20a81b1e3ad71bbb59637841447e558a212",
+      "runner_sha256": "9f13fa26c8e8c1a56a5e97cf54fe71dc472a1c95ca63b774ad7a706d99a56a67"
+    }
+  ],
+  "api_hashes": {
+    "scripts/runner_cache.py": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+    "docs/audit/scripts/build_citation_graph.py": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2"
+  }
+}

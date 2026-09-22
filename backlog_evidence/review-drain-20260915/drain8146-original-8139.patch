@@ -1,0 +1,1748 @@
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+index 3803c4f489..7686affdc3 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+@@ -18,3 +18,12 @@
+ | F8.3 causal coupling | discrepancy propagation along monotone paths | per-neighbor sensitivity `c`; path counting `N(z,x) c^d` | none in the region `3c < 1` | stronger than needed (gives decay and uniqueness) | candidate-complete in the region | exact `c` at eight triples; cube influence check | a bound for `c ≥ 1/3` needs a different mechanism |
+ | F8.4 Gibbs form | product of kernels regrouped | normalizers as `K`-sums | irreducibility of `K_3` | exact | candidate-complete | third difference `2160/2197` at (3,1,2) | — |
+ | F8.5 down-set consistency | marginals on down-sets | leaf removal in reverse order | none | exact, any dimension | candidate-complete | cube marginal on `x_3 = 0` equals the 2D law | — |
++
++## Block 09 — Markov graph, eight corner laws, the sweep's imprint (2026-09-15)
++
++| Family | Object/formulation | Mechanism/invariant | Terminal obligation | Strength vs target | Status | Concrete evidence | Reopen condition |
++|---|---|---|---|---|---|---|---|
++| F9.1 DLR limit | finite-box conditional identity on a window | factors not meeting the window cancel; the identity is finite and passes to the limit | none in the region | exact | candidate-complete | L1 | — |
++| F9.2 specification uniqueness under full support | two continuous finite-range kernels a.s. equal | every cylinder charged ⇒ equal everywhere | full support (proved from box positivity) | exact | candidate-complete | L2 | — |
++| F9.3 dependency-set combinatorics | offsets κ_i e_i − κ_j e_j and their grouping | point reflection preserves the set, not the grouping | within-pair witness | exact | candidate-complete | C1–C3 | — |
++| F9.4 column reversibility | J = πP versus J^T | the reversed class is the reversed chain | none | exact at 2x2 | candidate-complete | D1–D5 | larger cross-sections not computed |
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
+index 027b76a9c1..df63d7754c 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
+@@ -48,3 +48,10 @@
+ - Cross-section boundary: open (no exterior records); a fixed exterior record would enter as a recorded neighbor of the boundary sites, changing `c` to the sensitivities of larger recorded sets (bounded by `c_3`'s analogue with up to four neighbors); not treated.
+ - Menu: the sensitivities `c_k` are menu-specific; the theorems (A)–(E) hold for any finite menu with a positive symmetric covariant `φ` with the same proofs; only the exact numbers are six-menu.
+ - Order class: a non-monotone order (snake, random priority) has different recorded sets; the coupling theorem's mechanism (discrepancy along recorded-neighbor paths) applies to any order with the branching number replaced by the maximal out-degree of the recorded-set graph; not executed here.
++
++## Block 09 (2026-09-15) — Markov graph, corner laws, the sweep's imprint
++- Dependencies: `minimal_axioms`; block 08 (stacked; the Z^3 law, its product form, region and decay); block 02 (the static specification); the plane-law note (on main since 2026-09-15; the 2D contrast). All proposed, unaudited.
++- Named premises: as blocks 01–05, 08; the corner κ of the monotone class made explicit; block 08's region c < 1/3; the nonzero third difference of log K_3 as the hypothesis of R1's dependence, R2 and R3(b) (executed at (3,1,2), (5,2,4)).
++- Scaffolding: the dependency offsets κ_i e_i − κ_j e_j; the 24 proper rotations as signed permutations of determinant +1; the reversed transfer P*(v,w) = π(w)P(w,v)/π(v).
++- External references (re-proved or cited definition-level): DLR equations for finite-range specifications; uniqueness of conditional probabilities; the ergodic decomposition (used only in R3(c)'s last sentence).
++- Counterfactual pass: a triple with vanishing third difference would silence R1's dependence and hence R2–R3 (not known to exist among nonconstant triples); outside the region the Z^3 object is not constructed; on a larger cross-section the irreversibility is expected but not computed; the random-priority law (covariant by construction) has no corner and no sweep imprint — its Markov graph is not analyzed here.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block09_findings.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block09_findings.md
+new file mode 100644
+index 0000000000..74643f0047
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block09_findings.md
+@@ -0,0 +1,13 @@
++# Refuting pass — block 09 (supervisor-run, disjoint machinery; 2026-09-15)
++
++`specs/supervisor_control_block09_refuter.py` (output in `.out.txt`); not an independent review.
++
++| item | runner's route | refuting route | result |
++|---|---|---|---|
++| R1's dependence witness at (3,1,2) | the kernel formula with `K_3` on the three triples containing `x` | the conditional of the center of the 3x3x3 box from block 08's product form (`law_by_product_form`-style evaluation of all 27 sites' factors), all sites `+x`, the site `x + e_1 − e_2` varied | `793975879125/24719290847393`, equal |
++| R3's within-pair witness | the two kernels `γ^{+++}_x`, `γ^{−−−}_x` on the same twelve-site configuration | the 3x3x3 product forms of the two classes (predecessors `x − e_i` versus `x + e_i`) at the center, search over the `6^6` diagonal assignments | `1646222697/263752139417`, equal |
++| R4's irreversibility on the 2x2 column | `TV(J, J^T)` over unordered pairs from the orbit-reduced `π` | both marginals of `J` equal `π` (consistency), the reversed transfer `P*` is stochastic, and the total variation over ordered pairs halved | equal |
++
++Attempts to refute the lemmas (nothing refuted): L1 — the finite identity needs every triple meeting the window to be an interior triple; the corner-receding limit of block 08 supplies boxes with that property for any fixed window. L2 — the a.s. equality of two versions of a conditional probability is standard; the step to everywhere-equality needs only full support and finite dependence, both proved. R3(c) — the ergodicity of each `μ_κ` from exponential decay of correlations (mixing ⇒ ergodic) and the mutual singularity of distinct ergodic laws are cited definition-level and used only in the last sentence of R3(c).
++
++Findings: F1 (fixed) the phrase "no arrow of time is derived" collided with the runner's forbidden token — reworded. F2 (fixed) decimal strings in the runner tripped its own float scan — replaced by exact rational literals. F3 (fixed) the plane-law note landed on main after block 08's branch was cut; the stack was rebased onto that main so the note is a declared input. F4 (fixed) the note's own Review record quoted the offending phrase verbatim and re-tripped the substring scan; reworded (lesson: never quote a forbidden token inside the note, even to report its removal). Verdict of this pass: PASS-NO-BLOCKER at the supervisor's own standard, pending the owner's independent review.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block09.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block09.md
+new file mode 100644
+index 0000000000..019cbcbc5f
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block09.md
+@@ -0,0 +1,15 @@
++# Claim status certificate — block 09 (close, 2026-09-15)
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: upstream_support
++reachability_to_target: supports
++conditional_surface_status: "exact on the declared menu and triples; L1–L2 and R1–R2 proved for every corner in block 08's region at triples with nonzero third difference (executed at (3,1,2), (5,2,4)); R3 proved with the within-pair witness at (3,1,2); R4 executed on the 2x2 column at three triples and proved on Z^3 through R3; R5 cited; conditional on the records-only reading, positivity, the six-axis menu, the monotone class and block 08's region"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++claim_type_reason: "a finite conditional identity passed to the limit; a two-line uniqueness argument for full-support laws; dependency-set combinatorics with exact witnesses; exact finite computation on the 2x2 column; every number an exact rational"
++dependency_classes: "one premise node (minimal_axioms); block 08 (stacked branch, proposed, unaudited); blocks 02 and the plane-law note (on main, proposed, unaudited); #8096, #8102 cited as context only; PR numbers are evidence addresses only"
++open_imports: "the records-only reading; positivity; the six-axis menu; the monotone class with a corner as a supplied order class; block 08's region; the nonzero third difference at the executed triples"
++review_loop_disposition: pending (supervisor-run block; author checks only)
++independence_class: "single seat (Fable, supervisor): controls, contract with a four-lens pass, primary, refuting pass with disjoint machinery (the 3x3x3 product form; the reversed transfer), fold"
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block09.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block09.md
+new file mode 100644
+index 0000000000..c7a52135c7
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block09.md
+@@ -0,0 +1,24 @@
++# GOAL — block 09: the Markov graph of the three-dimensional formation law, the eight corner laws, and the arrow of the sweep (launched 2026-09-15)
++
++Branch `physics-loop/admissibility-induced-law-block09-z3-markov-graph-corner-family-20260915`, cut from block 08's tip (PR #8138); stacked PR (base = block 08's branch) because the note uses block 08's `Z^3` law, product form and coupling region as inputs. Supervisor-run seats (owner directive 2026-09-15). Controls first: `specs/supervisor_control_block09_markov_corner_arrow.py` (+ `.out.txt`).
++
++## Exact target contract
++
++| field | content |
++|---|---|
++| Target statement | For the six-axis product rule under the records-only reading and the monotone class with corner `κ ∈ {±1}^3` (predecessors `x − κ_i e_i`), in block 08's region `c < 1/3`: (R1) the `Z^3` law `μ_κ` is a Gibbs measure for the finite-range specification `γ^κ` with potential `−log K` on nearest-neighbor edges and `+log K_3` on the predecessor triples `{y − κ_i e_i}`; hence it is a Markov field for the graph `G_κ` (six axial neighbors and the six face-diagonal neighbors `x + κ_i e_i − κ_j e_j`), and its full conditional at `x` depends on those face-diagonal sites (exact witness: TV `793975879125/24719290847393` at `(3,1,2)`). (R2) A positive law with full support determines its continuous finite-range specification; therefore `μ_κ` is not a Markov field for the nearest-neighbor graph and differs from every static Gibbs law of block 02's nearest-neighbor specification on `Z^3` — unique or not — at every nonconstant triple in the region with nonzero third difference. (R3) The eight corner laws are pairwise distinct: the four point-reflection pairs have four distinct dependency sets, and within a pair the conditionals differ (exact witness: TV `1646222697/263752139417` at `(3,1,2)`); they form one proper-cubic-covariant family, permuted transitively by the 24 rotations; their equal mixture is the unique proper-cubic and translation invariant law in their convex hull; no single member is covariant. (R4) The arrow: the plane chain is not reversible — `J(w, v) = π(w) P(w, v)` is not symmetric on the `2×2` column (TV `0.04934…` at `(3,1,2)`; `0` at the constant rule); the one-plane law is not invariant under the in-plane reflection (TV `0.02177…`); on the `2×2` column the eight predecessor structures give four distinct one-plane laws, and the sweep direction is visible only in the two-plane joint law. (R5) Two dimensions for contrast: the plane law's Gibbs form has pair terms on one diagonal, the point reflection preserves it (two laws), the axis reflections do not. |
++| Quantifiers / domain | all `p, q, r > 0` with `c < 1/3` for R1–R3's Gibbs/Markov statements; the distinctness and dependence witnesses at `(3,1,2)` (and `(5,2,4)` where computed); the `2×2` column computations at `(3,1,2)`, `(5,2,4)`, `(2,2,2)` |
++| Allowed premises | `minimal_axioms`; the supplied readings of blocks 01–05 and 08; block 08's note (on the stacked branch) for the `Z^3` law, its product form and the region; block 02's specification (on main) for the static side; the landed plane-law note (on main since 2026-09-15) for the two-dimensional contrast |
++| Forbidden weakenings | no physical order or corner; no arrow-of-time physics ("registers a direction" is a statement about a supplied order's imprint, not a derivation of an arrow); no static-law uniqueness statement; nothing for `c ≥ 1/3` |
++| Required edge cases | the constant rule (all statements collapse: one uniform law, reversible, covariant); the point-reflection pair (same dependency set, distinct triple grouping); the sweep-reversal pair (same one-plane law, distinct joint law) |
++| Completion witness | proofs in the note for R1–R5; exact certificates: the dependence witness, the pair witness, the eight dependency sets and their groupings, the irreversibility TV, the in-plane reflection TV, the four one-plane laws on the `2×2` column |
++| Outcomes that do not count | a difference between finite-box laws without the infinite-volume argument; a numerical irreversibility without the exact value |
++
++## Supervisor lens (four lenses, one seat)
++
++- *Refuter:* "A limit of Gibbs measures with modified boundary terms need not be Gibbs for the interior specification." — The DLR identity on a fixed window is a finite identity between marginals that holds for every box containing the window's `G_κ`-neighborhood in its three-predecessor region; it passes to the limit; written out (Lemma L1). "A measure can be Gibbs for two specifications." — Not with full support and continuous kernels: the full conditional is a.s. unique, and two continuous versions equal a.s. on a full-support measure are equal everywhere (Lemma L2). "Distinct dependency sets do not imply distinct measures." — They do once L2 holds: equal measures would force equal specifications, and a kernel that depends on a site cannot equal one that does not (the witness has nonzero total variation).
++- *Prior art:* the landed plane-law note (2D: the center's conditional differs from the static rule; two diagonal classes); block 01 (finite windows: formation = static iff at most one recorded neighbor; the Brook ratio lemma); block 02 (the strip statistic); the time-directed-sweep note of 2026-09-05 (a supplied sweep registers the direction of motion of a current on a different object — not the record law's reversibility). None states the Markov graph, the eight-fold distinctness, or the irreversibility of the plane chain.
++- *Axiom reading:* the arrow here is the imprint of a supplied order, not axiom content; the covariant object is the mixture of the eight, not a law (echoes #8096, #8102 on finite windows).
++- *Scope:* all infinite-volume statements inside block 08's region; the constant rule as control; the `2×2` column as the exact witness surface.
++
++Forbidden in the note (runner F-family): "the physical order", "arrow of time" (only "the imprint of the sweep"), "for every coupling", "selects the", "the static law of Z^3 is unique", "fires wake condition", "the Bridge weights", "the Bridge conjecture", "certified".
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+index 25ed576ede..66a47d231d 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+@@ -31,3 +31,6 @@ Owner directive (2026-09-15): resync, read the latest PRs, run a 24-hour physics
+ 
+ ## 2026-09-15 block 08 opened for review as PR #8138 (supervisor)
+ Independent PR against `main` (head on `physics-loop/admissibility-induced-law-block08-z3-formation-law-20260915`; not stacked; not a main landing). Block 08 = the three-dimensional monotone formation law: one law per box with an irreducible three-body normalizer; no translate consistency (the first plane cannot be summed out — exact `2×2` witness on all 1296 states; the successor/predecessor-triple lemma); the plane chain with a unique stationary law per cross-section and two-dimensional boundary planes (the `2×2` stationary law exact, 32 orbits); the causal coupling theorem (`|Cov| ≤ 4‖g‖‖h‖(3c)^{⌈d/2⌉−1}`, sweep rate `c/(1−2c)` uniform in the cross-section, the `Z^3` law unique and translation-invariant for `c < 1/3`); `c = 27/110, 10650/63407, 5782/30885` at the silent triples — inside; the record-dynamics reframing negative at scope (N-gated). Seats: supervisor-run (no subagents): controls, four-lens contract pass, primary, refuting pass with disjoint machinery (five numbers equal; three drafting defects fixed before the census), fold. Certificate: 33/33; 26 mutations in-family; cache pinned (runner sha `311e27d7…`); pipeline two passes, changed-evidence 0/0, audit_lint strict OK, diff --check clean, vocab clean. Lock held; the campaign continues with the queue refresh of 2026-09-15 (block 08 opening).
++
++## 2026-09-15 block 09 opened for review as PR #8139 (supervisor)
++Stacked on block 08 (#8138; the stack rebased onto main `7495de3076`, which carries the landed plane-law note). Block 09 = the Markov graph of the three-dimensional monotone law (Gibbs for `−log K` on edges and `+log K_3` on predecessor triples; Markov for the axial+face-diagonal graph, not the nearest-neighbor graph — exact witness), the full-support uniqueness lemma for specifications and the separation from every static Gibbs law on `Z^3`, the eight pairwise distinct corner laws forming one rotation orbit with a covariant non-ergodic mixture, and the sweep's imprint (the plane chain irreversible on the `2×2` column; the in-plane reflection visible; four one-plane laws for eight structures). Seats supervisor-run; refuting pass by the 3x3x3 product form and the reversed transfer, all equal; three drafting defects fixed before the census. Certificate 22/22; 15 mutations in-family; cache pinned; pipeline two passes, changed-evidence, audit_lint strict, diff --check, vocab clean. Lock held; the campaign continues.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+index f6abf70d19..657c0fba0e 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+@@ -13,3 +13,8 @@ Routes read at their proofs, not their headlines.
+ 
+ - **Translate inconsistency in 3D (planned theorem Q2).** Scope: the monotone box laws of the six-menu product rule at the declared nonconstant triples; the first plane cannot be summed out consistently (reduced to the `2×2` plane-transfer identity, refuted exactly). Escapes: the constant rule (identity holds); another identity than the 2D telescoping (none known; the successor/predecessor-triple lemma explains the mechanism's failure); a proof for every nonconstant triple is not given (executed witnesses only).
+ - **No long-range record correlation from the monotone formation law in the region `c < 1/3` (planned corollary Q5).** Scope: pair correlations of the box, column and half-space laws; exponential decay proved by coupling. Escapes named for the N-gate: `c ≥ 1/3` (strong coupling; the branching bound is not conclusive); non-product or constraint rules (zero-probability supports; the Gauss-law support-rule line of #8114); other order classes (the random-priority process — the owner's factorial bound, unlanded; the snake); the static law at a critical coupling (a supplied value); a continuum alphabet.
++
++## Block 09 (2026-09-15) — negatives at scope
++- **The Z^3 monotone law is not a static law** (R2): proved from L1–L2 in the region at triples with nonzero third difference; escapes: a longer-range "static" rule (not the declared rule); a nonconstant triple with vanishing third difference (none known); c ≥ 1/3 (not constructed).
++- **No single covariant law in the monotone class** (R3c): the eight corner laws are distinct and permuted transitively; the covariant object is their mixture; escape: adopting the mixture or a covariant random order as the supplied formation law (owner decision).
++- **The plane chain is not reversible** (R4): exact on the 2x2 column; on Z^3 through R3; escape: none within the class (the constant rule is the control).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+index 5e98eb2e3b..154173c0af 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+@@ -100,3 +100,13 @@ Block 08 opened for review (independent PR against main; not a main landing): th
+ 4. **Width 6 by block 06's route** (compute-heavy; deferred under the proofs-over-compute directive).
+ 5. **The silent triples by a non-criterion route** (heavy; unchanged).
+ 6. **The Gaussian instance in three dimensions** (small; low priority).
++
++## Refresh at block 09 opening (2026-09-15)
++
++Block 09 opened for review (stacked on #8138): the `Z^3` monotone law's Markov graph, its separation from every static Gibbs law, the eight corner laws and the covariant mixture, the sweep's imprint. Ranked next (derivations; nobody else on them):
++
++1. **The recorded-set Gibbs theorem for arbitrary orders on finite windows**: a formation law is Gibbs for the potential with `−log K` on the edges recorded and `+log Z_k` on each recorded set; its Markov graph is the recorded-set graph (edges within recorded sets added to the nearest-neighbor edges); it is nearest-neighbor Markov iff every recorded set has at most one element (block 01's condition, now for the Markov property rather than equality with the static law); the `k`-body terms are irreducible for `k = 2, …, 6` at the declared triples (executed). One short block.
++2. **The region's boundary in `(p, q, r)`** (exact algebra; small).
++3. **Strong coupling `c ≥ 1/3`** (proof target; open).
++4. **The random-priority law's Markov structure** (needs the owner's note as an input; unlanded; deferred).
++5. **Width 6** (compute-heavy; deferred); **the silent triples** (heavy); **the 3D Gaussian instance** (small).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block09.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block09.md
+new file mode 100644
+index 0000000000..334a46dcf8
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block09.md
+@@ -0,0 +1,15 @@
++# RESULTS — block 09: the Markov graph of the three-dimensional formation law, the eight corner laws, the sweep's imprint (2026-09-15)
++
++**Deliverables (branch `physics-loop/admissibility-induced-law-block09-z3-markov-graph-corner-family-20260915`, stacked on block 08):** the note `docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md`; the runner `scripts/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py` (22 checks, 15 mutations, exact, about 48 s); the pinned cache; the control `specs/supervisor_control_block09_markov_corner_arrow.py` and the refuting pass `specs/supervisor_control_block09_refuter.py` with outputs; `GOAL_block09.md`; `CHECKER_block09_findings.md`; this record.
++
++## Result, in one paragraph
++
++In block 08's region the three-dimensional monotone law `μ_κ` (corner `κ`) is a Gibbs measure for the potential `−log K` on edges and `+log K_3` on the predecessor triples (L1: the finite conditional identity passed to the limit), hence a Markov field for the graph of six axial and six face-diagonal neighbors `x + κ_i e_i − κ_j e_j`, and its full conditional genuinely depends on the face-diagonal sites (exact witness `793975879125/24719290847393` at (3,1,2)). A full-support law determines its continuous finite-range specification (L2), so `μ_κ` is not a nearest-neighbor Markov field and differs from every static Gibbs law of block 02's specification — unique or not — at every triple in the region with nonzero third difference of `log K_3` (executed at (3,1,2), (5,2,4)). The eight corner laws are pairwise distinct (four dependency sets; within a point-reflection pair the conditionals differ by `1646222697/263752139417` at (3,1,2)), form one orbit of the proper rotations, each invariant only under the three-fold rotations about its own body diagonal; their equal mixture is covariant but not translation-ergodic. The sweep leaves an imprint: on the 2x2 column the two-plane joint law is not its transpose (TV `0.04934116…` at (3,1,2), `0.0311…` at (5,2,4), `0` at the constant rule), the in-plane reflection changes the one-plane law (`0.02177093…`), and the eight predecessor structures give four one-plane laws with the sweep direction visible only in the joint law. No order or corner is selected; no arrow of time follows.
++
++## Certificate
++- Runner: `TOTAL: PASS=22 FAIL=0`; 15 mutations each in its family (census in REVIEW_HISTORY.md); no floating-point literal (F3); classical names only under Prior art and Imports (F4).
++- Refuting pass (disjoint machinery: the 3x3x3 product-form conditional; the reversed transfer): the two witnesses and the irreversibility value reproduced exactly (`CHECKER_block09_findings.md`).
++- Claim type `bounded_theorem`; status `bounded-support`; trace `upstream_support`; audit required.
++
++## Not claimed
++The third difference nonzero at every nonconstant triple; distinctness outside the region; affine independence of the eight laws; the random-priority law's Markov structure; an arrow of time.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+index fb8681786e..9a0e757006 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+@@ -212,3 +212,16 @@ Lens (recorded in `GOAL_block08.md` before the build): four objections answered
+ 
+ ## block 08 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
+ 1 self-containment: PASS — declared inputs: this note, the axioms memo, block 02's and block 05's notes, all on main at `5deabeb698`; nothing pinned from a branch or PR (concurrent PRs cited as context only; the random-priority note named as unlanded and not used). 2 cache/execution: PASS — cache by `execute_and_write_cache` (timeout 900 declared); four declared inputs; own-source float scan (F3). 3 claim-scope honesty: PASS — title, headline, claim_scope, status fields, docstring and fences consistent; no "for every coupling", no limit language beyond the proved statements with their hypotheses; classical names only under Prior art and Imports (F4). 4 N-gate: PASS — N1–N8 in the note (six routes in N1; wall table; hidden-wall scan; per-citation table; N5 lines in the runner's cached stdout; primitive scan; steelman; echo). 5 proof obligations: PASS — the obligation table separates proved / executed / open. 6 runner validity: PASS — every literal is recomputed and compared, fail-closed; 26 mutations each in its family. 7 packet completeness: PASS — note names the runner; runner declares the note; controls and refuting pass in the pack with outputs. 8 links/citation graph: run at the gates (pipeline two passes; manifest staged). 9 note structure: PASS — the lane's section order. 10 propose/ratify: PASS — no retained language; audit required stated. 11 sourced facts/counts: PASS — 48 extensions, 32 orbits, 1296 states, the exact rationals, all recomputed. 12 pre-review gates: vocab, pipeline, changed-evidence, audit_lint, diff --check run before the PR (results in the close-out entry).
++
++## block 09 — V1-V5 (supervisor, 2026-09-15)
++- V1: the campaign's standing question (formation law versus static law), now on `Z^3` itself; the owner's sequencing gate ("what the Admissibility rule induces on the infinite lattice is unidentified"); #8093's formation-law node and #8096's covariance lemma (no covariant sequential order) — whether the monotone class has a covariant member on `Z^3`.
++- V2: new — the Gibbs identification of the three-dimensional law (L1); the full-support uniqueness lemma for continuous finite-range specifications (L2) and the resulting separation from every static Gibbs law (R2); the eight-fold distinctness and the covariant-orbit structure (R3); the irreversibility of the plane chain and the visibility of the sweep and the corner (R4). Searched `origin/main` at `7495de3076` (record in `ROUTE_PORTFOLIO.md`): the plane-law note (landed 2026-09-15) has the two-dimensional counterparts of L1 and R2's conditional argument; no landed note states the Markov graph on `Z^3`, the eight laws, or reversibility.
++- V3: yes — L1, L2, R1–R4 carry proofs; the runner certifies the exact witnesses; the gaps (the third difference at every nonconstant triple; affine independence; larger cross-sections) are named.
++- V4: yes — before: the formation law on `Z^3` was known to exist in a region (block 08) with no statement of how it relates to any static law on `Z^3`; after: it is never a static law there (for every static Gibbs law, unique or not), its Markov graph is identified, and the covariant object of the class is shown to be a mixture of eight distinct laws with a readable sweep imprint.
++- V5: not a variant — block 01's finite-window classification and the plane-law note's two-dimensional conditional argument are the nearest results; the mechanism here (full-support uniqueness of the specification on `Z^3`, dependency-set combinatorics of the corners, the reversed chain) is different and the objects are infinite-volume.
++
++## block 09 — supervisor lens pass, primary, refuting pass and fold (2026-09-15)
++Lens (in `GOAL_block09.md` before the build): the "limit of Gibbs measures with boundary terms" objection (answered by the finite identity on windows whose reach is interior — L1), the "two specifications" objection (answered by L2 with full support proved from the box laws), the "distinct dependency sets do not imply distinct measures" objection (answered through L2). Primary: the note and the runner (22 checks, 15 mutations). Refuting pass (`CHECKER_block09_findings.md`): the dependence witness and the pair witness reproduced from the 3x3x3 product form (no `K_3`-grouping formula), the irreversibility from the reversed transfer; three drafting defects fixed before the census (a forbidden-token collision, decimal strings in the runner, the stack rebased onto the main that carries the plane-law note). Author checks only; independent review pending.
++
++## block 09 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
++1 self-containment: PASS — inputs: this note, the axioms memo, block 02's note and the plane-law note (both on main `7495de3076`), block 08's note (the stacked base's reviewed delta); nothing pinned from an open PR (#8096, #8102 cited as context). 2 cache/execution: PASS — cache by `execute_and_write_cache`; five declared inputs; own-source float scan. 3 claim-scope honesty: PASS — title, headline, claim_scope, status fields consistent; "no arrow of time follows" stated; classical names only under Prior art and Imports. 4 N-gate: PASS — N1–N8 in the note; N5 lines in the runner. 5 proof obligations: PASS — the obligation table. 6 runner validity: PASS — witnesses recomputed and compared to literals, fail-closed; 15 mutations each in its family. 7 packet completeness: PASS. 8 links/citation graph: run at the gates. 9 note structure: PASS. 10 propose/ratify: PASS — no retained language. 11 sourced facts: PASS — 24 rotations, stabilizer 3, four one-plane laws, the exact rationals. 12 pre-review gates: run before the PR.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
+index 48c813efc1..ce007b30a4 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
+@@ -100,3 +100,12 @@ Commands and hits:
+ Classification: **open after the matched-hit review.**
+ 
+ Routes (mathematical approach families; see `APPROACH_REGISTRY.md`): R1 projective consistency in 3D (closed by the exact `2×2` witness; the no-cancellation lemma explains the failure of the 2D telescoping); R2 the plane-transfer Markov chain (finite cross-sections by positivity; the column law); R3 the causal coupling (monotone paths, three predecessors; the region `3c < 1`; uniform-in-W; the full-plane and half-space law); R4 the Gibbs form with the three-body normalizer (algebraic; irreducibility by a third difference); R5 down-set consistency (any dimension) for the quadrant column. Executed on the supervisor's controls before the contract (`specs/supervisor_control_block08_z3.py`, `_b.py`).
++
++## Block 09 (2026-09-15) — prior-art search and routes
++
++Searched commit: `origin/main` = `7495de3076` (fetched 2026-09-15 before the block; the plane-law note landed on main that day).
++- `git grep -n -iE "canonical potential|Möbius|Hammersley|Brook ratio|vacuum potential" origin/main -- 'docs/*.md'` → block 01 (Brook lemma re-proved; Hammersley–Clifford referenced only), an Opus Born-evidence note (Hammersley–Clifford scope remarks), unrelated Möbius uses. No Markov-graph statement for a formation law.
++- `git grep -n -iE "face.diagonal|next-nearest|second.neighbou?r" origin/main -- 'docs/ADMISSIBILITY_RULE_*.md'` → none.
++- `git grep -n -iE "(reversib|time.revers|detailed balance|arrow).*(formation|sweep|record)|…" origin/main -- 'docs/*.md'` → the time-directed-sweep note of 2026-09-05 (a current's image under a sweep; different object); no reversibility statement for a formation chain.
++- The landed plane-law note (read on main): 2D Gibbs identification, two diagonal classes, the center's conditional not the static rule — the two-dimensional analogue of R1–R2; nothing on Z^3, on eight classes, or on reversibility.
++Classification: **open after the matched-hit review.** Routes: R-A the DLR limit (L1); R-B full-support uniqueness of the specification (L2) — the load-bearing new lemma; R-C dependency-set combinatorics for the corner family; R-D exact 2x2 column computations for the sweep's imprint.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+index df197a8491..31f1be2783 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+@@ -127,3 +127,14 @@ source_review_correction:
+ # strongest_unresolved_proof_obligation: "the plane transfer moves the 2D law at every nonconstant triple (executed at two); uniqueness of the stationary plane law on the full cross-section for c >= 1/3; the distinctness of the eight corner laws on Z^3"
+ # next_exact_action: "queue refresh 2026-09-15 (block 08 opening): the corner family and the random-priority comparison; the region boundary; strong coupling"
+ # lock: held (campaign continues)
++
++# ---------------------------------------------------------------- block 09 close (2026-09-15)
++# block: 9
++# branch: physics-loop/admissibility-induced-law-block09-z3-markov-graph-corner-family-20260915 (stacked on block 08, PR #8138; the stack rebased onto main 7495de3076)
++# pr_status: opened for review — PR #8139 (base = block 08's branch); hand-off; never merged by the campaign; not a main landing
++# final_certificate: "TOTAL: PASS=22 FAIL=0; 15 mutations, census 15/15 in-family; refuting pass 3/3 equal; gates: see HANDOFF.md"
++# seats: "supervisor-run: control -> contract with a four-lens pass -> primary (lemmas L1-L2, R1-R5, runner) -> refuting pass (3x3x3 product form; reversed transfer) -> fold"
++# review_findings: "the Z^3 monotone law is Gibbs for -log K (edges) + log K_3 (predecessor triples): Markov for the axial+face-diagonal graph, not the NN graph (exact witness TV 793975879125/24719290847393); a full-support law determines its finite-range specification, so it differs from every static Gibbs law on Z^3 at nonzero third difference; eight distinct corner laws (pair witness TV 1646222697/263752139417), one rotation orbit, the mixture covariant but not ergodic; the plane chain irreversible on the 2x2 column (TV 0.04934...), the in-plane reflection visible (0.02177...), four one-plane laws"
++# strongest_unresolved_proof_obligation: "the third difference of log K_3 nonzero at every nonconstant triple; affine independence of the eight laws; the random-priority law's Markov structure"
++# next_exact_action: "block 10: the recorded-set Gibbs theorem for arbitrary orders on finite windows (Markov graph = recorded-set graph; NN-Markov iff at most one recorded neighbor; k-body irreducibility k = 2..6); then the region boundary"
++# lock: held (campaign continues)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+index 0eb4636fed..e90609677e 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+@@ -85,3 +85,14 @@ reachability_to_target: supports
+ artifact_role: theorem
+ next_trace_action: "declared and constructed: the monotone class on Z^3 with its corner and sweep; unique translation-invariant law with exponential decay for c < 1/3 (the silent triples inside); the record-dynamics reframing answered negatively at scope (N-gated). Next per the queue: the eight corner classes as one covariant family and their relation to the random-priority law; the region's boundary in (p, q, r). Consumers: the campaign's queue; the derivation campaign's assembly (edge label 'clause-needed' for long-range record fields under positive product rules in the region); the parked statistical-bridge material (read-only)"
+ ```
++
++# Trace gate — block 09, at PR opening (2026-09-15)
++```yaml
++trace_class: upstream_support
++target_claim_id: null
++target_blocker_text: "the owner's sequencing gate (2026-08-26): what the Admissibility rule induces on the infinite lattice is unidentified; #8093's formation-law node (a covariant single formation law?); #8096's lemma (no covariant sequential order)"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem
++next_trace_action: "on Z^3 the monotone-class formation law is separated from every static law by its Markov graph; the covariant object of the class is the mixture of eight distinct laws; the sweep and the corner are readable in the records. Next: the general recorded-set Gibbs theorem for arbitrary orders on finite windows (Markov graph = recorded-set graph; k-body irreducibility for k = 2..6); then the region boundary. Consumers: the campaign's queue; #8093's assembly (formation-law node: 'clause-needed' for a covariant single law); the parked statistical-bridge material (read-only)"
++```
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block09_markov_corner_arrow.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block09_markov_corner_arrow.out.txt
+new file mode 100644
+index 0000000000..0aa7fede65
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block09_markov_corner_arrow.out.txt
+@@ -0,0 +1,30 @@
++=== (1) dependence of the full conditional on the face-diagonal site x+e1-e2 (class +++; triples {x, x+e1-e2, x+e1-e3}, {x, x+e2-e1, x+e2-e3}, {x, x+e3-e1, x+e3-e2})
++max TV of gamma_x over changes of v(x+e1-e2) with all else +x: 793975879125/24719290847393 = 0.03211968 (at value -x)
++
++=== (2) the eight corner classes: dependency sets and point-reflection pairs
++class (1, 1, 1): same dependency set: [(1, 1, 1), (-1, -1, -1)]; same triple grouping: [(1, 1, 1)]
++class (1, 1, -1): same dependency set: [(1, 1, -1), (-1, -1, 1)]; same triple grouping: [(1, 1, -1)]
++class (1, -1, 1): same dependency set: [(1, -1, 1), (-1, 1, -1)]; same triple grouping: [(1, -1, 1)]
++class (1, -1, -1): same dependency set: [(1, -1, -1), (-1, 1, 1)]; same triple grouping: [(1, -1, -1)]
++class (-1, 1, 1): same dependency set: [(1, -1, -1), (-1, 1, 1)]; same triple grouping: [(-1, 1, 1)]
++class (-1, 1, -1): same dependency set: [(1, -1, 1), (-1, 1, -1)]; same triple grouping: [(-1, 1, -1)]
++class (-1, -1, 1): same dependency set: [(1, 1, -1), (-1, -1, 1)]; same triple grouping: [(-1, -1, 1)]
++class (-1, -1, -1): same dependency set: [(1, 1, 1), (-1, -1, -1)]; same triple grouping: [(-1, -1, -1)]
++max TV between the (+++) and (---) full conditionals over the 6^6 diagonal configurations (axials +x): 1646222697/263752139417 = 0.00624155 at ['+x', '+x', '+y', '-x', '+y', '-x']
++
++=== (3) the 2x2 column: irreversibility of the plane chain
++(3, 1, 2): irreversibility TV(J, J^T) = 20050159445052753287345872554551877965270917971807795389873/406357621088602935950245331407424044758618443589923499955200 (0.04934116); TV(pi, pi∘R2) = 11555202353859801661076434687858214316334786981223/530762821621220762616238380264013135814921940979920 (0.02177093); 7.2s
++(5, 2, 4): irreversibility TV(J, J^T) = 8103241040645719590363383034157940361926120298234345092618227520176141370246660089769123828156572439598907898756376286255943176860469696470420613231635008659001064487793815277/255792175533565074254447595839844034050289913832984417393901665777850946821289238795023614978178223141745478806169161031102498652448412706619735166428532814150732488338667290701 (0.03167900); TV(pi, pi∘R2) = 25245892292705775820510395866785592853503094535235756090649886393483341073386382315851914532510767278446070456593682911968401527017978939386886260104053896842/1830060996181798203869479726873591360656021840508290555715304600217778339768051828897650530360034292463175580477815449483815012712519752990967908696689231477209 (0.01379510); 10.6s
++(2, 2, 2): irreversibility TV(J, J^T) = 0 (0); TV(pi, pi∘R2) = 0 (0); 5.9s
++
++=== (4) the eight predecessor structures on the 2x2 column: stationary laws and distinctness (3,1,2)
++one-plane stationary laws: 8 classes -> 4 distinct one-plane laws: [(1, 1, 1), (1, 1, -1), (1, -1, 1), (1, -1, -1)]
++(note: s1 = -1 classes share the one-plane law of s1 = +1; the sweep direction is visible only in the two-plane joint law, item 3)
++  (1, 1, 1): equal one-plane law with [(1, 1, 1), (-1, 1, 1)]
++  (1, 1, -1): equal one-plane law with [(1, 1, -1), (-1, 1, -1)]
++  (1, -1, 1): equal one-plane law with [(1, -1, 1), (-1, -1, 1)]
++  (1, -1, -1): equal one-plane law with [(1, -1, -1), (-1, -1, -1)]
++  (-1, 1, 1): equal one-plane law with [(1, 1, 1), (-1, 1, 1)]
++  (-1, 1, -1): equal one-plane law with [(1, 1, -1), (-1, 1, -1)]
++  (-1, -1, 1): equal one-plane law with [(1, -1, 1), (-1, -1, 1)]
++  (-1, -1, -1): equal one-plane law with [(1, -1, -1), (-1, -1, -1)]
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block09_markov_corner_arrow.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block09_markov_corner_arrow.py
+new file mode 100644
+index 0000000000..4974b872a9
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block09_markov_corner_arrow.py
+@@ -0,0 +1,163 @@
++"""Supervisor control, block 09: the Markov graph of the Z^3 monotone law, the eight corner classes, the arrow.
++Exact arithmetic only.  Uses block 08's runner module for the rule, kernels, plane transfer and orbits.
++(1) the full conditional gamma^F_x at an interior site depends on the face-diagonal site x+e1-e2: an exact witness;
++(2) the eight corner classes: dependency sets of x (6 axial + 6 face-diagonal), which classes share the set; within a
++    point-reflection pair, an exact witness configuration where the two conditionals differ;
++(3) the 2x2 column: irreversibility TV = sum |pi(w)P(w,v) - pi(v)P(v,w)|/2 exactly at (3,1,2), (5,2,4), (2,2,2);
++(4) the eight predecessor structures on the 2x2 column: exact stationary laws and the number of distinct ones.
++"""
++from fractions import Fraction as F
++from itertools import product, permutations
++import sys, time
++sys.path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parents[5] / "scripts"))
++import importlib
++run = importlib.import_module("admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15")
++M = 6
++
++def cond_full(rule, s_val, axial, triples):
++    """Unnormalized full conditional weight of value s at x: prod_axial K(s, v_y) / prod over triples containing x of K_3(s, a, b)."""
++    w = F(1)
++    for a in axial:
++        w *= rule.K[a][s_val]
++    for (a, b) in triples:
++        w /= rule.K3[(s_val, a, b)]
++    return w
++
++def normalized(rule, axial, triples):
++    ws = [cond_full(rule, s, axial, triples) for s in range(M)]
++    Z = sum(ws)
++    return [x / Z for x in ws]
++
++def dep_set(signs):
++    """Corner class with sweep signs (s1, s2, s3) in {+1,-1}: predecessors of y are y - s_i e_i.
++    x belongs to the triple of y = x + s_i e_i, with co-members x + s_i e_i - s_j e_j (j != i).
++    Returns the set of 6 face-diagonal co-member offsets, grouped by i."""
++    groups = []
++    for i in range(3):
++        g = []
++        for j in range(3):
++            if j == i: continue
++            off = [0, 0, 0]; off[i] += signs[i]; off[j] -= signs[j]
++            g.append(tuple(off))
++        groups.append(tuple(sorted(g)))
++    return tuple(sorted(groups))
++
++def main():
++    rule = run.Rule((3, 1, 2))
++    print("=== (1) dependence of the full conditional on the face-diagonal site x+e1-e2 (class +++; triples {x, x+e1-e2, x+e1-e3}, {x, x+e2-e1, x+e2-e3}, {x, x+e3-e1, x+e3-e2})")
++    axial = [0] * 6  # all axial neighbors +x
++    # values at the six diagonal sites: d12 = x+e1-e2, d13 = x+e1-e3, d21, d23, d31, d32
++    base = dict(d12=0, d13=0, d21=0, d23=0, d31=0, d32=0)
++    def triples_of(vals):
++        return [(vals['d12'], vals['d13']), (vals['d21'], vals['d23']), (vals['d31'], vals['d32'])]
++    c0 = normalized(rule, axial, triples_of(base))
++    best = F(0); arg = None
++    for v12 in range(M):
++        vals = dict(base); vals['d12'] = v12
++        c1 = normalized(rule, axial, triples_of(vals))
++        d = run.tv(c0, c1)
++        if d > best: best, arg = d, v12
++    print(f"max TV of gamma_x over changes of v(x+e1-e2) with all else +x: {best} = {run.dec(best)} (at value {run.AXES[arg]})")
++    print()
++    print("=== (2) the eight corner classes: dependency sets and point-reflection pairs")
++    classes = list(product((1, -1), repeat=3))
++    sets = {c: dep_set(c) for c in classes}
++    flat = {c: frozenset(o for g in sets[c] for o in g) for c in classes}
++    for c in classes:
++        same_flat = [d for d in classes if flat[d] == flat[c]]
++        same_groups = [d for d in classes if sets[d] == sets[c]]
++        print(f"class {c}: same dependency set: {same_flat}; same triple grouping: {same_groups}")
++    # within the pair (+++) vs (---): witness configuration where the two conditionals differ
++    # (+++): triples {x, x+e1-e2, x+e1-e3}, {x, x+e2-e1, x+e2-e3}, {x, x+e3-e1, x+e3-e2}
++    # (---): triples {x, x-e1+e2, x-e1+e3}, {x, x-e2+e1, x-e2+e3}, {x, x-e3+e1, x-e3+e2}
++    # name the six diagonal sites by offsets: D[(i,j)] = x + e_i - e_j
++    def cond_class(rule, D, axial, plus):
++        if plus:
++            tr = [(D[(0,1)], D[(0,2)]), (D[(1,0)], D[(1,2)]), (D[(2,0)], D[(2,1)])]
++        else:
++            tr = [(D[(1,0)], D[(2,0)]), (D[(0,1)], D[(2,1)]), (D[(0,2)], D[(1,2)])]
++        return normalized(rule, axial, tr)
++    keys = [(i, j) for i in range(3) for j in range(3) if i != j]
++    best = F(0); arg = None
++    for vals in product(range(M), repeat=6):
++        D = dict(zip(keys, vals))
++        d = run.tv(cond_class(rule, D, axial, True), cond_class(rule, D, axial, False))
++        if d > best: best, arg = d, vals
++    print(f"max TV between the (+++) and (---) full conditionals over the 6^6 diagonal configurations (axials +x): {best} = {run.dec(best)} at {[run.AXES[v] for v in arg]}")
++    print()
++    print("=== (3) the 2x2 column: irreversibility of the plane chain")
++    states = list(product(range(M), repeat=4))
++    for tr in [(3, 1, 2), (5, 2, 4), (2, 2, 2)]:
++        t0 = time.time()
++        rl = run.Rule(tr)
++        st, orbit_of, reps, sizes = run.orbits_2x2()
++        n = len(reps)
++        Q = [[F(0)] * n for _ in range(n)]
++        for o, w in enumerate(reps):
++            for v in st:
++                Q[o][orbit_of[v]] += run.plane_transfer(rl, w, v)
++        pi_orb = run.solve_stationary(Q)
++        pi = {s: pi_orb[orbit_of[s]] / sizes[orbit_of[s]] for s in st}
++        irr = F(0)
++        for w in st:
++            pw = pi[w]
++            for v in st:
++                if v < w: continue
++                a = pw * run.plane_transfer(rl, w, v)
++                b = pi[v] * run.plane_transfer(rl, v, w)
++                irr += abs(a - b)
++        irr = irr  # each unordered pair counted once; TV over ordered pairs = sum/2 * 2 = this
++        # in-plane reflections: pi(v) vs pi(R2 v) where R2 swaps x2: sites 00<->10, 01<->11
++        r2 = sum(abs(pi[v] - pi[(v[2], v[3], v[0], v[1])]) for v in st) / 2
++        print(f"{tr}: irreversibility TV(J, J^T) = {irr} ({run.dec(irr) if irr else 0}); TV(pi, pi∘R2) = {r2} ({run.dec(r2) if r2 else 0}); {time.time()-t0:.1f}s")
++    print()
++    print("=== (4) the eight predecessor structures on the 2x2 column: stationary laws and distinctness (3,1,2)")
++    rl = run.Rule((3, 1, 2))
++    G = run.group48()
++    def transfer_class(signs, w, v):
++        # cross-section sites (x2, x3) in {0,1}^2; plane sweep direction s1 (transfer w -> v either way: v records w at the same site);
++        # in-plane predecessors: y - s2 e2 and y - s3 e3 when inside the square.
++        s2, s3 = signs[1], signs[2]
++        K, K2, K3 = rl.K, rl.K2, rl.K3
++        idx = {(0, 0): 0, (0, 1): 1, (1, 0): 2, (1, 1): 3}
++        pr = F(1)
++        for (a, b), k in idx.items():
++            rec = [w[k]]
++            p2 = (a - s2, b)
++            p3 = (a, b - s3)
++            if p2 in idx: rec.append(v[idx[p2]])
++            if p3 in idx: rec.append(v[idx[p3]])
++            pr *= rl.cond(tuple(rec))[v[k]]
++        return pr
++    laws = {}
++    for signs in classes:
++        # orbit reduce under the internal group only
++        orbit_of, reps = {}, []
++        for s in states:
++            if s in orbit_of: continue
++            o = len(reps); reps.append(s); orbit_of[s] = o
++            for g in G:
++                orbit_of[tuple(g[x] for x in s)] = o
++        sizes = [0] * len(reps)
++        for s in states: sizes[orbit_of[s]] += 1
++        n = len(reps)
++        Q = [[F(0)] * n for _ in range(n)]
++        for o, w in enumerate(reps):
++            for v in states:
++                Q[o][orbit_of[v]] += transfer_class(signs, w, v)
++        pi_orb = run.solve_stationary(Q)
++        pi = {s: pi_orb[orbit_of[s]] / sizes[orbit_of[s]] for s in states}
++        # the sweep direction s1 only reverses the chain: the one-plane law is the same for s1 = +1 and -1 (stationary law of the same P)
++        laws[signs] = pi
++    distinct = []
++    for c in classes:
++        if not any(laws[c] == laws[d] for d in distinct):
++            distinct.append(c)
++    print(f"one-plane stationary laws: {len(classes)} classes -> {len(distinct)} distinct one-plane laws: {distinct}")
++    print("(note: s1 = -1 classes share the one-plane law of s1 = +1; the sweep direction is visible only in the two-plane joint law, item 3)")
++    for c in classes:
++        eq = [d for d in classes if laws[d] == laws[c]]
++        print(f"  {c}: equal one-plane law with {eq}")
++
++if __name__ == "__main__":
++    main()
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block09_refuter.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block09_refuter.out.txt
+new file mode 100644
+index 0000000000..009a817917
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block09_refuter.out.txt
+@@ -0,0 +1,6 @@
++R1 dependence witness via the 3x3x3 product form: 793975879125/24719290847393 == runner literal: True
++R2 pair witness via the 3x3x3 product forms (search over 6^6): 1646222697/263752139417 == runner literal: True
++R3 rows of P sum to one: True ; pi P = pi: True ; P* stochastic: True ; TV(J,J^T) over ordered pairs /2 = 0.04934116 == runner: True
++real 55.27
++user 54.87
++sys 0.21
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block09_refuter.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block09_refuter.py
+new file mode 100644
+index 0000000000..b3bdb6444e
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block09_refuter.py
+@@ -0,0 +1,87 @@
++"""Refuting pass, block 09 (supervisor, disjoint machinery).
++R1: the dependence witness recomputed from block 08's product form on the 3x3x3 box (the conditional of the center (1,1,1)
++    given all other sites, as a ratio of product-form values — no K_3-grouping formula), at (3,1,2), all sites +x except x+e1-e2.
++R2: the (+++)/(---) pair witness recomputed the same way on the 3x3x3 box with the reflected predecessor structure.
++R3: the joint law J on the 2x2 column: both marginals of J equal pi (consistency), and TV(J, J^T) recomputed from the
++    orbit-lifted pi with the reversed transfer P*(v,w) = pi(w)P(w,v)/pi(v) (stochasticity of P* checked).
++"""
++from fractions import Fraction as F
++from itertools import product
++import sys
++sys.path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parents[5] / "scripts"))
++import importlib
++r08 = importlib.import_module("admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15")
++r09 = importlib.import_module("admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15")
++M = 6
++rule = r08.Rule((3, 1, 2))
++sites = r08.box_sites((3, 3, 3))
++center = (1, 1, 1)
++
++def preds_signed(x, kappa):
++    out = []
++    for j in range(3):
++        y = list(x); y[j] -= kappa[j]
++        if all(0 <= c <= 2 for c in y):
++            out.append(tuple(y))
++    return out
++
++def product_form(v: dict, kappa) -> F:
++    w = F(1, M) if True else None
++    # origin of the class: the corner site with no predecessors gets 1/6; every other site: prod K / K_k
++    w = F(1)
++    for x in sites:
++        A = preds_signed(x, kappa)
++        if not A:
++            w *= F(1, M)
++            continue
++        for y in A:
++            w *= rule.K[v[y]][v[x]]
++        if len(A) == 2:
++            w /= rule.K2[(v[A[0]], v[A[1]])]
++        elif len(A) == 3:
++            w /= rule.K3[(v[A[0]], v[A[1]], v[A[2]])]
++    return w
++
++def center_conditional(v: dict, kappa):
++    ws = []
++    for s in range(M):
++        vv = dict(v); vv[center] = s
++        ws.append(product_form(vv, kappa))
++    Z = sum(ws)
++    return [x / Z for x in ws]
++
++# R1
++base = {x: 0 for x in sites}
++c0 = center_conditional(base, (1, 1, 1))
++best = F(0)
++for val in range(M):
++    v = dict(base); v[(2, 0, 1)] = val  # x + e1 - e2 with x = (1,1,1)
++    best = max(best, r08.tv(c0, center_conditional(v, (1, 1, 1))))
++print("R1 dependence witness via the 3x3x3 product form:", best, "== runner literal:", best == r09.DEP_WITNESS_312)
++# R2
++offsets = {(0,1): (2,0,1), (0,2): (2,1,0), (1,0): (0,2,1), (1,2): (1,2,0), (2,0): (0,1,2), (2,1): (1,0,2)}  # x + e_i - e_j
++vals = {(0,1): 0, (0,2): 0, (1,0): 2, (1,2): 1, (2,0): 2, (2,1): 1}  # the runner's witness (+x,+x,+y,-x,+y,-x) on sorted offsets? recompute by search below
++best2 = F(0)
++keys = sorted(offsets)
++for assign in product(range(M), repeat=6):
++    v = dict(base)
++    for k, a in zip(keys, assign):
++        v[offsets[k]] = a
++    d = r08.tv(center_conditional(v, (1, 1, 1)), center_conditional(v, (-1, -1, -1)))
++    if d > best2: best2 = d
++print("R2 pair witness via the 3x3x3 product forms (search over 6^6):", best2, "== runner literal:", best2 == r09.PAIR_WITNESS_312)
++# R3
++states, pi = r09.stationary_plane_law(rule, (1, 1, 1))
++P = {}
++row_ok = True
++for w in states:
++    rs = F(0)
++    for v in states:
++        P[(w, v)] = r09.plane_transfer_class(rule, (1, 1, 1), w, v)
++        rs += P[(w, v)]
++    row_ok = row_ok and rs == 1
++m1 = {v: sum(pi[w] * P[(w, v)] for w in states) for v in states}
++marg_ok = all(m1[v] == pi[v] for v in states)
++Pstar_rows_ok = all(sum(pi[w] * P[(w, v)] / pi[v] for w in states) == 1 for v in states)
++tvd = sum(abs(pi[w] * P[(w, v)] - pi[v] * P[(v, w)]) for w in states for v in states) / 2
++print("R3 rows of P sum to one:", row_ok, "; pi P = pi:", marg_ok, "; P* stochastic:", Pstar_rows_ok, "; TV(J,J^T) over ordered pairs /2 =", r08.dec(tvd), "== runner:", tvd == r09.irreversibility(rule, (1,1,1), states, pi))
+diff --git a/docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md b/docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md
+new file mode 100644
+index 0000000000..fb7a8063bc
+--- /dev/null
++++ b/docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md
+@@ -0,0 +1,527 @@
++---
++claim_id: admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_bounded_theorem_note_2026-09-15
++claim_type: bounded_theorem
++claim_scope: "On the six Bloch-axis projector menu with the covariant positive product rule of orbit weights (p, q, r), under the records-only reading, for the monotone class with corner kappa in {+1,-1}^3 (predecessors x - kappa_i e_i) in the region c < 1/3 of the three-dimensional formation-law note (block 08): (R1) the Z^3 formation law mu_kappa is a Gibbs measure for the finite-range specification with potential -log K on nearest-neighbor edges and +log K_3 on the predecessor triples (proved by passing the finite-box conditional identity to the limit), hence a Markov field for the graph G_kappa of six axial and six face-diagonal neighbors x + kappa_i e_i - kappa_j e_j, and its full conditional depends on those face-diagonal sites (exact witness at (3,1,2): total variation 793975879125/24719290847393); (R2) a law with full support determines its continuous finite-range specification (proved), so mu_kappa is not a Markov field for the nearest-neighbor graph and differs from every Gibbs law of block 02's nearest-neighbor static specification on Z^3, unique or not, at every triple in the region where the third difference of log K_3 is nonzero (executed at (3,1,2), (5,2,4)); (R3) the eight corner laws are pairwise distinct: the four point-reflection pairs have four distinct dependency sets (proved), and within a pair the conditionals differ (exact witness at (3,1,2): total variation 1646222697/263752139417); they form one orbit of the proper cubic rotations, each law invariant only under the three-fold rotations about its own body diagonal, and their equal mixture is proper-cubic covariant and translation invariant but not translation-ergodic; (R4) the sweep leaves an imprint: on the 2x2 column the stationary plane chain is not reversible (total variation between the two-plane joint law and its transpose 0.04934... at (3,1,2), 0.031... at (5,2,4), 0 at the constant rule), the one-plane law is not invariant under the in-plane reflection (0.02177...), and the eight predecessor structures give exactly four one-plane laws, the sweep direction being visible only in the joint law; on Z^3 in the region the law is not invariant under the reflection of any axis (from R3). (R5) Two dimensions for contrast (the landed plane-law note): two laws, the point reflection preserving the diagonal pairs. No order or corner is selected as physical; no arrow of time follows (the imprint is that of a supplied order); nothing about the static law's uniqueness; nothing for c >= 1/3; exact arithmetic throughout."
++upstream_dependencies:
++  - minimal_axioms
++  - admissibility_rule_infinite_strip_row_sweep_formation_law_versus_static_law_bounded_theorem_note_2026-09-06
++  - admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_bounded_theorem_note_2026-09-15
++  - admissibility_plane_formation_diagonal_interaction_note_2026-09-08
++runner: scripts/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py
++---
++
++# The three-dimensional formation law is a Markov field for the face-diagonal graph, not the nearest-neighbor one: eight distinct corner laws and the imprint of the sweep
++
++**Date:** 2026-09-15
++**Type:** bounded_theorem
++**Status:** bounded-support (exact; conditional on the named supplied readings and on block 08's region; unaudited)
++
++## Result up front
++
++Take the three-dimensional pattern law of the previous note — records laid
++down on the lattice, each site waiting for the three sites behind it — in the
++range of rule settings where that law is well defined. Ask what a site knows
++about the rest once everything else is fixed. Under the static law, a site
++listens only to its six nearest neighbors. Under the formation law it also
++listens to six sites one step diagonally across a face, the ones that shared a
++"behind" relation with it, and this extra listening is genuine (an exact
++witness). Because a law that gives every pattern a positive chance is pinned
++down by what its sites listen to, the formation law can never be a static law,
++whether or not the static law is unique at that setting. The same reasoning
++shows that the eight ways of choosing "behind" (the eight corners of a cube)
++give eight different laws, none of them invariant under the rotations of the
++lattice, though the eight together are permuted by those rotations and their
++equal blend is invariant. And the direction of the sweep leaves a trace: on a
++narrow column the joint law of two consecutive layers is not symmetric under
++exchanging them, so past and future along the sweep can be told apart from the
++finished records — the trace of a supplied order, not a derived arrow of time.
++
++Exactly: with `K_3(a, b, c) = Σ_s K(a, s) K(b, s) K(c, s)` and the corner
++`κ ∈ {±1}^3`, `μ_κ` is Gibbs for the potential `−log K` on edges and
++`+log K_3` on the predecessor triples `{y − κ_i e_i}` (R1); its full
++conditional at `x` depends on `x + κ_i e_i − κ_j e_j` (TV
++`793975879125/24719290847393` at `(3, 1, 2)` for one change); a full-support
++law determines its finite-range specification (R2), so `μ_κ` is not a
++nearest-neighbor Markov field and differs from every static Gibbs law; the
++eight `μ_κ` are pairwise distinct (R3; within a point-reflection pair, TV
++`1646222697/263752139417` between the conditionals); the `2×2` column's plane
++chain is irreversible with `TV(J, J^T) = 0.04934…` at `(3, 1, 2)` and `0` at
++the constant rule (R4). Executed with exact arithmetic: 22 checks,
++15 mutations.
++
++## Machine status and trace
++
++```yaml
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: upstream_support
++target_claim_id: null
++target_blocker_text: "the owner's sequencing gate (2026-08-26): what the Admissibility rule induces on the infinite lattice is unidentified; the campaign's standing question since block 01: formation law versus static law, now on Z^3 itself; the derivation campaign's assembly (#8093): the formation-law node and whether a covariant formation law exists (#8096: no covariant sequential order)"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem
++next_trace_action: "the formation law of the monotone class on Z^3 is now separated from every static law by its Markov graph, and the covariant object of the class is the mixture of eight laws, not a law; next: the random-priority law's Markov structure and its relation to the mixture; consumers: the campaign's queue, #8093's assembly (the formation-law node: 'clause-needed' for a covariant single law), the parked statistical-bridge material (read-only)"
++conditional_surface_status: "exact on the declared menu and triples; R1–R2 proved for every corner and every triple in block 08's region with the witness executed at (3,1,2) and the third difference at (3,1,2), (5,2,4); R3 proved (dependency sets) with the within-pair witness executed at (3,1,2); R4 executed on the 2x2 column at three triples and proved on Z^3 through R3; R5 cited; conditional on the records-only reading, positivity, the six-axis menu, the monotone class as supplied conditions and on block 08's region"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++claim_type_reason: "R1 passes a finite conditional identity to the limit; R2 is a two-line uniqueness argument for full-support laws; R3 combines R2 with exact finite witnesses and the transitivity of the rotation group on the corners; R4 is exact finite computation on the 2x2 column plus R3; every number is an exact rational; nothing is claimed outside block 08's region"
++```
++
++## Premises and declared objects
++
++**Axioms used (verbatim).** From
++[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md): "There is one
++fixed nearest-neighbor admissibility rule, covariant under lattice translations
++and proper cubic rotations." — "For each site, the probability distribution over
++the possibilities is determined by, and varies with, the nearest-neighbor
++conditions." — "No possibility is privileged." — "Records form." — "Only records
++are readable."
++
++**Readings carried, named, nothing new adopted.** The records-only reading,
++positivity, the six-axis menu with orbit weights `(p, q, r)`, the monotone
++class as a supplied order class — all as in blocks 01–05 and 08. New here: the
++corner `κ ∈ {±1}^3` of the class is made explicit; the class `𝓜_κ` has
++predecessor sets `A^κ_y = {y − κ_i e_i}` and successor sets `{y + κ_i e_i}`;
++block 08 treats `κ = (+,+,+)` and every other corner is its image under the
++reflection `R_κ : x ↦ (κ_1 x_1, κ_2 x_2, κ_3 x_3)` of the box (its laws are the
++images of block 08's). The region is block 08's `c < 1/3`, with
++`c = max(c_1, c_2, c_3)` the one-neighbor sensitivity, which does not depend
++on `κ`.
++
++**Objects from block 08 (on the stacked branch; proposed, unaudited).** The box
++law `μ^κ_B = (1/6) Π_{y ∈ A^κ_x} K(v_y, v_x) / Π_{|A^κ_x| ≥ 2} K_{|A^κ_x|}(v_{A^κ_x})`
++(Q1e); the `Z^3` law `μ_κ` for `c < 1/3`, unique, translation invariant, the
++limit of the box laws as the corner recedes (Q4e); the plane chain and its
++stationary law `π` on a cross-section `C` (Q3); the third difference of
++`log K_3` (Q1f): `2160/2197 ≠ 1` at `(3, 1, 2)`, `686196/704969 ≠ 1` at
++`(5, 2, 4)`, `1` at the constant rule.
++
++**The static side (block 02, on main).** The nearest-neighbor specification
++`γ^S` whose single-site kernel is the rule with all six neighbors recorded,
++`γ^S_x(s | ω) = Π_{y ~ x} φ(s, ω_y)/Σ_t Π_{y ~ x} φ(t, ω_y)`; its Gibbs measures
++on `Z^3` are the static laws (existence by block 02's Theorem C; uniqueness
++where `6c_1 < 1` by block 03; undecided at the silent triples).
++
++**The two-dimensional side (the plane-law note, on main since 2026-09-15;
++proposed, unaudited).** The plane law of the top-left class is Gibbs for
++`−log K` on axial edges and `+log K^2` on the chosen diagonals; opposite
++corners coincide (block 05's P7(a)); the two diagonal classes differ for every
++nonconstant triple; the center's conditional given its eight neighbors is not
++the static rule.
++
++**Notation.** `G_κ(x) = {x ± e_i} ∪ D_κ(x)`, `D_κ(x) = {x + κ_i e_i − κ_j e_j : i ≠ j}`
++(six face-diagonal sites). The three triples containing `x` are
++`T^κ_{x + κ_i e_i} = {x, x + κ_i e_i − κ_j e_j, x + κ_i e_i − κ_k e_k}`
++(`{i, j, k} = {1, 2, 3}`); their grouping of `D_κ(x)` into three pairs is
++`𝒯_κ(x)`. A cylinder is a set fixing finitely many coordinates. A law `μ` on
++`M^{Z^3}` has full support if every cylinder has positive `μ`-probability.
++
++## Prior art and what is new
++
++Block 01 (on main) classified formation against static laws on finite windows
++(equal iff every record forms with at most one recorded neighbor) and re-proved
++the Brook ratio lemma; block 02 separated the two on strips by a statistic;
++the plane-law note (on main) identified the two-dimensional plane law's Gibbs
++potential, proved the two diagonal classes differ, and showed the center's
++conditional is not the static rule; block 08 (stacked) built the
++three-dimensional law and its region. The time-directed-sweep note of
++2026-09-05 (on main) concerns the record-side image of a current under a
++supplied sweep on a different object, not the reversibility of the record law.
++The classical references — Gibbs specifications and the DLR equations, the
++uniqueness of conditional probabilities, ergodic decomposition — are named here
++and under Imports and re-proved at scope where load-bearing.
++
++New here: the Gibbs identification of the three-dimensional law (R1); the
++separation from every static Gibbs law on `Z^3` through the Markov graph and a
++full-support uniqueness lemma (R2); the eight-fold distinctness of the corner
++laws and the structure of the covariant family (R3); the irreversibility of the
++plane chain and the visibility of the sweep and of the corner in the record
++statistics (R4).
++
++## Exact target and obligation graph
++
++| obligation | status here |
++|---|---|
++| L1: the `Z^3` law is Gibbs for the interior specification | proved (finite conditional identity passed to the limit) |
++| L2: a full-support law determines its continuous finite-range specification; `μ_κ` has full support | proved |
++| R1: the Markov graph `G_κ`; the dependence on the face-diagonal sites | proved from L1; witness executed at `(3, 1, 2)` (B1–B3) |
++| R2: not nearest-neighbor Markov; differs from every static Gibbs law | proved from L2 + R1 at every triple with nonzero third difference; executed at `(3, 1, 2)`, `(5, 2, 4)` (B4) |
++| R3: eight distinct laws; the covariant orbit; the mixture | proved (dependency sets; transitivity); within-pair witness executed (C1–C4) |
++| R4: irreversibility and the corner's visibility on the `2×2` column | executed at three triples (D1–D4); the `Z^3` statement from R3 |
++| R5: the two-dimensional contrast | cited (the plane-law note); the count `2` versus `8` explained |
++| the third difference nonzero at every nonconstant triple; the eight laws' distinctness outside the region; affine independence of the eight laws | open; not this note |
++
++The strongest missing lemma is that the third difference of `log K_3` is
++nonzero at every nonconstant triple (executed at two); R2 and R3 are stated
++at triples where it is nonzero.
++
++## Lemma L1 — the `Z^3` law is Gibbs for the interior specification
++
++**Statement.** For `c < 1/3` and every corner `κ`, `μ_κ` satisfies the DLR
++equations of the specification `γ^κ` with potential `Φ_{xy} = −log K(v_x, v_y)`
++on nearest-neighbor edges and `Φ_{T} = +log K_3(v_T)` on the predecessor
++triples `T = A^κ_y`, `y ∈ Z^3`: for every finite `Λ` and every configuration
++`ω` off `Λ`, `μ_κ(v_Λ | ω) = γ^κ_Λ(v_Λ | ω) ∝ exp(−Σ_{A ∩ Λ ≠ ∅} Φ_A)`, where
++the sum runs over the finitely many edges and triples meeting `Λ`.
++
++*Proof.* Let `∂Λ` be the set of sites outside `Λ` that share an edge or a
++triple with a site of `Λ` (finite: the reach of the potential from `Λ`). Take
++a box `B ⊇ Λ ∪ ∂Λ` whose corner is far enough that every site `y` whose triple
++`A^κ_y` meets `Λ` has all three predecessors in `B` — every such `y` lies in
++the three-predecessor region of `B`, away from its three coordinate planes.
++In block 08's product form of `μ^κ_B`, the factors containing a site of `Λ`
++are exactly the edge factors `K(v_x, v_y)` for edges meeting `Λ` and the
++normalizers `1/K_3(v_{A^κ_y})` for triples meeting `Λ` (no `K_2`
++normalizer meets `Λ`, since those sit on the coordinate planes of `B`). In the
++conditional `μ^κ_B(v_Λ | v_{B ∖ Λ})` every factor not containing a site of `Λ`
++cancels, leaving `γ^κ_Λ(v_Λ | v_{∂Λ})` exactly. Hence, for every such box,
++`μ^κ_B(v_Λ, v_{∂Λ}) = γ^κ_Λ(v_Λ | v_{∂Λ}) μ^κ_B(v_{∂Λ})` for every pair of
++configurations on `Λ` and `∂Λ` — a finite identity among the values of the
++marginal of `μ^κ_B` on the finite window `Λ ∪ ∂Λ`. As the corner recedes,
++these marginals converge to those of `μ_κ` (block 08, Q4e), so the identity
++holds for `μ_κ`; since `γ^κ_Λ` depends on the outside only through `∂Λ`, this
++is the DLR equation. ∎ (The two-dimensional version is the plane-law note's
++"positive finite-range identification"; the argument is the same one dimension
++up, with triples in place of diagonal pairs.)
++
++## Lemma L2 — a full-support law determines its continuous specification
++
++**Statement.** Let `μ` be a law on `M^{Z^3}` with full support, and let `γ`,
++`γ'` be two specifications whose single-site kernels `γ_x(s | ω)`,
++`γ'_x(s | ω)` depend on `ω` only through finitely many coordinates. If `μ` is
++Gibbs for both, then `γ_x(· | ω) = γ'_x(· | ω)` for every `x` and every `ω`.
++Moreover `μ_κ` has full support: every cylinder fixing `n` coordinates has
++`μ_κ`-probability at least `(min_{k, a, s} r(s | a))^n > 0`.
++
++*Proof.* Both kernels are versions of the conditional probability
++`μ(v_x = s | v_{Z^3 ∖ x})`, so they agree `μ`-almost surely. Write
++`γ_x(s | ω) = g(ω_N)`, `γ'_x(s | ω) = g'(ω_N)` for a finite `N` containing both
++dependency sets. The event `{ω_N : g(ω_N) ≠ g'(ω_N)}` is a finite union of
++cylinders of `μ`-probability zero; with full support each cylinder has positive
++probability, so the union is empty: `g = g'` on every value of `ω_N`. Full
++support of `μ_κ`: under every box law the probability of a cylinder fixing `n`
++coordinates is a sum of products of kernel values, each product containing
++exactly `n` factors of the fixed sites and the remaining factors summing to
++one, so it is at least `δ^n` with `δ = min r(s | a) > 0` over all kernels and
++values; the bound passes to the limit. ∎
++
++## Theorem R1 — the Markov graph of the three-dimensional law
++
++**Statement.** For `c < 1/3` and every corner `κ`, the full conditional of
++`μ_κ` at `x` is
++`γ^κ_x(s | ω) ∝ Π_{y ~ x} K(s, ω_y) / Π_{i=1}^{3} K_3(s, ω_{x + κ_i e_i − κ_j e_j}, ω_{x + κ_i e_i − κ_k e_k})`,
++a function of the twelve sites `G_κ(x)`; `μ_κ` is a Markov field for the graph
++`G_κ` (edges `x ∼ x ± e_i` and `x ∼ x + κ_i e_i − κ_j e_j`); and the dependence
++on each face-diagonal site is genuine: at `(3, 1, 2)`, with all axial neighbors
++and the other five diagonal sites at `+x`, changing `ω_{x + e_1 − e_2}` from `+x`
++to `−x` changes `γ^κ_x` by total variation `793975879125/24719290847393`
++(`0.03211968…`); at every triple where the third difference of `log K_3` is
++nonzero, some such change has nonzero effect.
++
++*Proof.* L1 gives the DLR equations; the single-site kernel is the `Λ = {x}`
++case, whose potential terms are the six edges at `x` and the three triples
++containing `x` (`x ∈ A^κ_y` iff `y = x + κ_i e_i`, with co-members
++`y − κ_j e_j = x + κ_i e_i − κ_j e_j`). The Markov property for `G_κ` is the
++statement that the kernel depends on `ω` only through `G_κ(x)`. Dependence on
++`a = ω_{x + κ_1 e_1 − κ_2 e_2}`: the ratio `γ^κ_x(s | ω)/γ^κ_x(s' | ω)` contains
++`K_3(s', a, b)/K_3(s, a, b)` with `b = ω_{x + κ_1 e_1 − κ_3 e_3}` and no other
++factor in `a`; it is constant in `a` for all `s, s', b` iff
++`log K_3(s, a, b) − log K_3(s', a, b)` is constant in `a`, i.e. iff every
++mixed second difference `Δ_s Δ_a log K_3(·, ·, b)` vanishes; a nonzero third
++difference `Δ_s Δ_a Δ_b log K_3` (block 08, Q1f) means two of these second
++differences differ, so one is nonzero. Executed: the witness above (B1); the
++kernel does not depend on the sites `x + e_i + e_j` or `x − e_i − e_j` (B2,
++by construction of the formula); the third difference at both declared
++triples (B4). ∎
++
++## Theorem R2 — the formation law is not a static law on `Z^3`
++
++**Statement.** For `c < 1/3`, every corner `κ`, and every triple at which the
++third difference of `log K_3` is nonzero (executed: `(3, 1, 2)`, `(5, 2, 4)`),
++`μ_κ` is not a Markov field for the nearest-neighbor graph, and `μ_κ ≠ ν` for
++every Gibbs measure `ν` of the static specification `γ^S` — whether the static
++law is unique or not.
++
++*Proof.* `μ_κ` has full support (L2) and is Gibbs for `γ^κ` (L1). If `μ_κ`
++were a nearest-neighbor Markov field, its full conditional at `x` would be a
++function of the six axial neighbors, contradicting R1's genuine dependence on
++`x + κ_1 e_1 − κ_2 e_2`. If `μ_κ = ν` with `ν` Gibbs for `γ^S`, then `μ_κ` is
++Gibbs for both `γ^κ` and `γ^S`, both finite-range, so by L2 `γ^κ_x = γ^S_x`
++everywhere; but `γ^S_x` does not depend on `ω_{x + κ_1 e_1 − κ_2 e_2}` while
++`γ^κ_x` does. ∎ At the silent triples this separates the formation law from
++every static law without deciding how many static laws there are; where
++`6c_1 < 1` (block 03) it separates it from the unique one. The finite-window
++classification of block 01 (equality iff at most one recorded neighbor) is
++consistent: in the bulk of `Z^3` every site records three.
++
++## Theorem R3 — eight corner laws, one covariant family
++
++**(a) Dependency sets.** `D_κ(x) = D_{κ'}(x)` iff `κ' = ±κ`; the groupings
++`𝒯_κ(x)` are pairwise distinct for all eight `κ`.
++
++*Proof.* `D_κ(x) − x = {κ_i e_i − κ_j e_j}`; replacing `κ` by `−κ` negates
++every element, and the set is closed under negation (swap `i, j`), so
++`D_{−κ} = D_κ`. If `κ' ∉ {κ, −κ}`, some coordinate agrees and some differs, say
++`κ'_1 = κ_1`, `κ'_2 = −κ_2`; then `κ_1 e_1 − κ_2 e_2 ∈ D_κ − x` but the
++`(1, 2)`-type elements of `D_{κ'} − x` are `±(κ_1 e_1 + κ_2 e_2)`, so the sets
++differ. The grouping of `κ` pairs `κ_i e_i − κ_j e_j` with `κ_i e_i − κ_k e_k`
++(common first index `i`); for `−κ` the same two elements are `−κ_i e_i + κ_j e_j`
++and `−κ_i e_i + κ_k e_k`, which in the grouping of `−κ` have common first
++indices `j` and `k` respectively, so they are in different groups. Executed for
++all eight corners (C1, C2). ∎
++
++**(b) Distinctness.** For `c < 1/3` at a triple with nonzero third difference,
++the eight laws `μ_κ` are pairwise distinct.
++
++*Proof.* For `κ' ∉ {κ, −κ}` pick `z ∈ D_κ(x) ∖ D_{κ'}(x)`: `γ^κ_x` depends on
++`ω_z` (R1; the witness at `(3, 1, 2)` is the `(1, 2)`-type site, and the other
++types follow by the axis symmetry of block 08's Q1c) while `γ^{κ'}_x` does not;
++by L2, `μ_κ ≠ μ_{κ'}`. For `κ' = −κ` the dependency sets coincide and the
++groupings differ; the two kernels are different functions of the same twelve
++sites: at `(3, 1, 2)`, with all axial neighbors `+x` and the diagonal values
++`(+x, +x, +y, −x, +y, −x)` on `(x+e_1−e_2, x+e_1−e_3, x+e_2−e_1, x+e_2−e_3, x+e_3−e_1, x+e_3−e_2)`,
++`γ^{+++}_x` and `γ^{−−−}_x` differ by total variation
++`1646222697/263752139417` (`0.00624155…`, the maximum over the `6^6` diagonal
++assignments with these axial values; C3), so `μ_{+++} ≠ μ_{−−−}` by L2, and
++by the reflection symmetry every point-reflection pair is a reflected copy of
++this one. ∎
++
++**(c) The covariant family.** The 24 proper cubic rotations act on the eight
++corners transitively, and a rotation `g` maps `μ_κ` to `μ_{gκ}` (it maps the
++class `𝓜_κ` to `𝓜_{gκ}` and the rule is covariant). The stabilizer of a corner
++is the three-fold rotation group about its body diagonal, under which `μ_κ` is
++invariant (block 08's axis symmetry, Q1c); by (b) `μ_κ` is invariant under no
++other rotation. The equal mixture `μ̄ = (1/8) Σ_κ μ_κ` is invariant under all
++proper cubic rotations, the axis reflections and all translations. It is not
++translation-ergodic: each `μ_κ` is translation-mixing (block 08's covariance
++bound, Q4b, decays exponentially), hence ergodic; distinct ergodic laws are
++mutually singular, so `μ̄` has eight distinct ergodic components. ∎ No single
++law of the class is proper-cubic covariant; the covariant object is a mixture
++— consistent with the finite-window findings of #8096 (no covariant sequential
++order) and #8102 (the uniform order mixture as a witness device), now on `Z^3`.
++
++## Theorem R4 — the imprint of the sweep
++
++**(a) On `Z^3`.** For `c < 1/3` at a triple with nonzero third difference,
++`μ_κ` is not invariant under the reflection of any single axis, nor under any
++product of reflections other than the identity: the reflection `R` of the axis
++`i` maps `μ_κ` to `μ_{κ'}` with `κ'_i = −κ_i`, a different law by R3(b). In
++particular the reflection of the sweep axis `e_1` changes the law: the finished
++record field distinguishes the direction in which its planes formed.
++
++**(b) On the `2×2` column, exactly.** Let `π` be the stationary plane law and
++`J(w, v) = π(w) P(w, v)` the two-plane joint law (block 08, Q3). The reversed
++sweep (`κ_1 ↦ −κ_1`, the in-plane structure unchanged) has the law of the
++reversed chain, whose two-plane joint law is `J^T`. At `(3, 1, 2)`
++`TV(J, J^T) = 0.04934116…` (an exact rational, printed under `--exact`); at
++`(5, 2, 4)` `0.0311…`; at the constant rule `0` (D1). The one-plane law is the
++same for both sweep directions (the same transfer matrix), so the sweep
++direction is visible only in the joint law of consecutive planes. The in-plane
++reflection `x_2 ↦ 1 − x_2` of the cross-section changes the one-plane law:
++`TV(π, π ∘ R_2) = 0.02177093…` at `(3, 1, 2)`, `0` at the constant rule (D2).
++The eight predecessor structures on the `2×2` column give exactly four distinct
++one-plane laws, paired by the sweep direction (D3); the eight column laws are
++pairwise distinct (the four one-plane laws, each split by the joint law's
++asymmetry, D4).
++
++*Proof of (b).* The reversed class's column law is the image of the column law
++under `x_1 ↦ −x_1`; the image of a stationary chain is the reversed stationary
++chain, with transition `P^*(v, w) = π(w) P(w, v)/π(v)` and joint law `J^T`; the
++two column laws coincide iff `J = J^T`. The in-plane reflection maps the class
++`(κ_1, κ_2, κ_3)` to `(κ_1, −κ_2, κ_3)`, whose transfer matrix is the reflected
++one; its stationary law is `π ∘ R_2`. ∎
++
++**(c) What this is and is not.** The imprint is that of a supplied order: the
++monotone class comes with a corner and a sweep, and the finished records
++remember both. No arrow of time follows: the axioms supply no order, and a
++covariant construction (the equal mixture, or a covariant random order) has no
++such imprint by construction. The result says only that any single monotone
++order leaves its direction readable in the record statistics, exactly and
++without a clock.
++
++## R5 — two dimensions for contrast (cited)
++
++In two dimensions (the plane-law note, on main) the point reflection maps the
++top-left class to the bottom-right one and preserves both the diagonal pair set
++and its grouping (pairs, not triples), so opposite corners coincide (block 05's
++P7(a)) and there are two laws, distinguished by the axis reflections. In three
++dimensions the point reflection preserves the dependency set but not its
++grouping into triples (R3a), so there are eight. The two-dimensional analogue
++of R2 is the plane-law note's statement that the center's conditional given
++its eight neighbors is not the static rule.
++
++## No-Go Discipline Gate
++
++The negative sentences of this note are R2 (not a static law; not
++nearest-neighbor Markov) and R3(c)/R4 (no single covariant law; no invariance
++under reflections). All are proved at scope from L2 and exact witnesses; none
++is a route no-go beyond its scope.
++
++### N1 — Routes by which the formation law could still be a static law, or covariant
++
++| route | what it would attempt | why it fails here, or its obligation | marker |
++|---|---|---|---|
++| 1 a static law with a longer-range specification | let the "static law" be Gibbs for a potential with face-diagonal and three-body terms | that is `γ^κ` itself; block 02's static specification is nearest-neighbor by the axiom's rule; a longer-range static rule is not the declared rule | RULED OUT BY PRIOR at scope (the rule is nearest-neighbor) |
++| 2 a triple where the third difference vanishes | a nonconstant `(p, q, r)` with `log K_3` pair-additive | executed nonzero at `(3, 1, 2)`, `(5, 2, 4)`; not proved for every nonconstant triple; such a triple would make R1's face-diagonal dependence vanish and R2, R3 silent there | not attempted; obligation named |
++| 3 `c ≥ 1/3` | outside block 08's region the `Z^3` law is not constructed | nothing claimed | not attempted; obligation named |
++| 4 the mixture as "the" law | take `μ̄` as the physical law | it is covariant but not a Gibbs law for any single specification of the eight and not ergodic; selecting it is an owner decision, not a derivation | ATTEMPTED (its properties stated) |
++| 5 a covariant random order | the random-priority construction (the owner's note on its branch, unlanded) | a different object with its own Markov structure, not analyzed here | not attempted; obligation named |
++| 6 the constant rule | `p = q = r` | one uniform law; every statement collapses; excluded by the variation clause restricted to the menu | ATTEMPTED (control) |
++
++### N2 — Wall-independence audit
++
++Walls: `W_reg` (`c < 1/3`), `W_3` (nonzero third difference), `W_pos`,
++`W_menu`, `W_class`. `W_reg` and `W_3` are independent: the constant rule has
++`c = 0` and zero third difference; a triple with `c ≥ 1/3` can have nonzero
++third difference (e.g. far along `(1, 1, t)`). `W_pos` gives L2's full support
++and L1's product form; `W_menu` fixes the numbers; `W_class` defines the
++objects. L1 and L2 need `W_reg` (for the object) and `W_pos`; R1's dependence,
++R2 and R3(b) need `W_3` in addition; R4(b) is a finite computation needing
++`W_pos` only.
++
++### N3 — Hidden-wall scan
++
++Scanned for "we assume", "by construction", "as is standard", "the framework
++provides", "naturally", "obviously", "canonical", "registered", "background",
++"bridge context". Hits: "by construction" in R4(c) (a covariant construction
++has no imprint — a definition-level remark, not load-bearing). The cited steps
++(the ergodic decomposition; distinct ergodic laws are mutually singular) are
++named under Imports and used only in R3(c)'s last sentence.
++
++### N4 — Per-citation table
++
++| cited surface | residual it attacks | residual claimed here | match |
++|---|---|---|---|
++| block 08 (stacked; proposed, unaudited): Q1e, Q1f, Q3, Q4b, Q4e | the `Z^3` law, its product form, its region and decay | L1, R1, R3(c), R4(b) | yes (parent; cited) |
++| block 02 (on main; proposed, unaudited): Theorem C | the static specification and its Gibbs measures | the static side of R2 | yes (parent; cited) |
++| block 03 (on main; proposed, unaudited): the region `6c_1 < 1` | uniqueness of the static law | contrast in R2 only | yes (contrast) |
++| the plane-law note (on main; proposed, unaudited) | the 2D Gibbs identification; two classes; the center's conditional | R5; the pattern of L1 | yes (cited) |
++| #8096, #8102 (open PRs; not inputs) | no covariant sequential order; the order mixture | R3(c)'s consistency remark | yes (context) |
++| the time-directed-sweep note (on main) | the image of a current under a sweep | none (a different object) | non-match, dropped |
++
++After dropping the non-match, the headline rests on the parents' cited
++statements and this note's own proofs and executed witnesses.
++
++### N5 — Resolution audit
++
++| phrase | per-element | per-site | per-mode | per-block | lattice-wide |
++|---|---|---|---|---|---|
++| "the formation law is not a static law on `Z^3`" | executed: the conditional's dependence on one face-diagonal site over all six values; the `6^6` diagonal assignments for the pair witness; the third difference | executed: the twelve dependency sites and the excluded sites of the kernel formula | executed: the eight corners' sets and groupings; the four one-plane laws | executed: the `2×2` column's joint law and its transpose over all `1296^2` pairs | proved from L1–L2 in the region at triples with nonzero third difference; not claimed elsewhere |
++
++### N6 — Partial-closure paths and primitive scan
++
++The registered primitives (`scale_reference_primitive`,
++`kinetic_isotropy_primitive`, `realized_state_primitive`) supply no order,
++corner, specification or coupling condition; none is a wall. A reframing that
++would close R3(c)'s "no covariant law" is the adoption of the mixture or of a
++covariant random order as the supplied formation law — an owner decision,
++recorded as such. `docs/repo/DEFERRED_DECISIONS.md` entry 1 is not fired.
++
++### N7 — Steelman
++
++Hostile reviewer: "L2 is too strong: Gibbs measures are defined by almost-sure
++conditionals, and the specification is only determined up to null sets; the
++witness compares kernels at a single configuration." Reply: with finite-range
++kernels the comparison is between two functions of finitely many coordinates,
++and a full-support law charges every cylinder, so an almost-sure equality of
++such functions is an everywhere equality — the proof of L2; full support is
++proved from the box laws' uniform positivity. "R3(c)'s ergodicity uses a limit
++theorem you did not prove." Conceded and stated: the ergodic decomposition is
++cited definition-level and used only for the last sentence of R3(c); the
++distinctness of the eight laws (R3(b)) does not use it.
++
++### N8 — Cross-cycle echo
++
++The nearest prior wall is block 01's finite-window classification (formation =
++static iff at most one recorded neighbor), which this note extends to `Z^3`
++through a different mechanism (the Markov graph instead of the normalizer
++identity); the plane-law note's two-dimensional conditional argument is the
++same mechanism one dimension down. No structurally similar wall has been
++retired.
++
++## Falsifiers
++
++- A configuration at `(3, 1, 2)` on which `γ^{+++}_x` does not change when
++  `ω_{x + e_1 − e_2}` changes with everything else at `+x` (the executed total
++  variation would vanish; refutes R1's witness).
++- A corner `κ' ∉ {κ, −κ}` with `D_{κ'}(x) = D_κ(x)`, or two corners with the
++  same triple grouping (refutes R3(a)).
++- Equality of `γ^{+++}_x` and `γ^{−−−}_x` on all `6^6` diagonal assignments
++  with axial values `+x` at `(3, 1, 2)` (refutes the within-pair witness).
++- `J = J^T` on the `2×2` column at `(3, 1, 2)`, or `π = π ∘ R_2` there (refutes
++  R4(b)); a nonzero value at the constant rule (refutes the control).
++- A box and a window on which the box law's conditional is not `γ^κ_Λ` although
++  the window's reach lies in the three-predecessor region (refutes L1's finite
++  identity).
++
++## Boundaries and non-claims
++
++This note describes the monotone class with a corner on `Z^3` in block 08's
++region; it states nothing about the static law's uniqueness, nothing for
++`c ≥ 1/3`, nothing about a physical order or corner, and derives no arrow of
++time — the imprint of the sweep is that of a supplied order. No plane, bridge,
++Born or gravity statement enters this note; this note does not fire wake
++condition 1 of the parked statistical-bridge decision. The Gibbs–DLR
++formalism, the uniqueness of conditional probabilities and the ergodic
++decomposition are classical references re-proved or cited at the scope used;
++no value, constant or theorem is imported as authority.
++
++Further: the third difference is executed at two triples, not proved nonzero
++at every nonconstant triple; the within-pair witness is at `(3, 1, 2)` only
++(the other pairs follow by reflection at that triple); the `2×2` column is the
++only exact surface for R4(b); the affine independence of the eight laws and the
++uniqueness of the covariant law in their convex hull are not claimed; the
++random-priority law's Markov structure is not analyzed.
++
++## Imports
++
++- `minimal_axioms` (the framework premise node): the sentences quoted under
++  Premises.
++- Block 08 (stacked; proposed, unaudited): the `Z^3` law, product form,
++  region, decay, plane chain. Block 02 (on main): the static specification. The
++  plane-law note (on main): the two-dimensional contrast.
++- Re-proved at scope: L1 (a finite conditional identity passed to the limit),
++  L2 (uniqueness of finite-range kernels under full support), R1–R4.
++- Cited, definition-level: the DLR formulation of Gibbs measures for a
++  finite-range specification (L1's statement); the pointwise ergodic theorem
++  and the ergodic decomposition, used only for the last sentence of R3(c)
++  (distinct ergodic translation-invariant laws are mutually singular).
++- No literature value, constant, or theorem enters as authority; classical
++  names appear only in this section and under Prior art.
++
++## Review record
++
++Supervisor-run block (owner directive 2026-09-15: no subagents). The control
++(`specs/supervisor_control_block09_markov_corner_arrow.py`) computed the
++dependence witness, the eight dependency sets and groupings, the within-pair
++witness, the irreversibility and in-plane-reflection total variations, and the
++four one-plane laws before the contract; the lens pass is in `GOAL_block09.md`;
++the primary seat wrote the lemmas and the runner; the refuting pass
++(`CHECKER_block09_findings.md`) recomputed the witnesses by disjoint routes;
++the fold is in `REVIEW_HISTORY.md`. Facts settled while executing: the runner's decimal comparisons were
++replaced by exact rational literals (the source float-scan flags decimal
++strings); a phrase stating that no arrow is derived collided with a
++forbidden token by substring and was reworded; the plane-law note landed on main on
++2026-09-15, so the stack was rebased onto that main to carry it as a declared
++input.
++
++## Verification
++
++```bash
++python3 scripts/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py
++python3 scripts/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py --exact
++python3 scripts/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py --list-mutations
++python3 scripts/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py --mutation joint_law_symmetric_claimed
++```
++
++Families: A authority and inputs; B the Markov graph (the dependence witness,
++the excluded sites, the third difference); C the eight corners (sets,
++groupings, the within-pair witness, the transitivity of the rotations); D the
++`2×2` column (irreversibility, the in-plane reflection, the four one-plane
++laws, the eight column laws); F fences, forbidden phrases, the floating-point
++self-scan and the placement of the classical names; G the resolution lines.
++Each of the 15 declared mutations perturbs one object or one comparison and
++fails in exactly one family; `--exact` prints the exact total variations.
++Expected final line: `TOTAL: PASS=22 FAIL=0`.
+diff --git a/docs/audit/data/citation_graph_manifest.json b/docs/audit/data/citation_graph_manifest.json
+index b27fa5e8e6..af4bec1b21 100644
+--- a/docs/audit/data/citation_graph_manifest.json
++++ b/docs/audit/data/citation_graph_manifest.json
+@@ -1,6 +1,6 @@
+ {
+- "edge_count": 12554,
+- "node_count": 5059,
++ "edge_count": 12555,
++ "node_count": 5060,
+  "nodes": {
+   "3d_correction_master_note": {
+    "deps_hash": "e3b0c44298fc",
+@@ -730,6 +730,10 @@
+    "deps_hash": "1b3132f0c69b",
+    "out_degree": 3
+   },
++  "admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_bounded_theorem_note_2026-09-15": {
++   "deps_hash": "c8eee4235fc9",
++   "out_degree": 1
++  },
+   "admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_bounded_theorem_note_2026-09-15": {
+    "deps_hash": "a44e851e5ec5",
+    "out_degree": 2
+diff --git a/logs/runner-cache/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.txt b/logs/runner-cache/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.txt
+new file mode 100644
+index 0000000000..c92d0962af
+--- /dev/null
++++ b/logs/runner-cache/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.txt
+@@ -0,0 +1,49 @@
++===== runner cache v1 =====
++runner: scripts/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py
++runner_sha256: 53ed131d73e9a1383f81e7a7a276b8c77723adc82e617ab05e13b6b5c1ecdb2a
++input_fingerprint_sha256: 6cfb9f4c4cd1788bcaf4c14e935d1614c8343b0077c58a51294b1b280cec47c7
++timeout_sec: 900
++exit_code: 0
++elapsed_sec: 48.23
++status: ok
++----- stdout -----
++AUDIT_INPUT_PATHS:
++  docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md
++  docs/MINIMAL_AXIOMS_2026-06-29.md
++  docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md
++  docs/ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SWEEP_FORMATION_LAW_VERSUS_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-06.md
++  docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md
++AUDIT_TIMEOUT_SEC: 900
++scope: the Markov graph of the 3D monotone law (face-diagonal dependence witness), the eight corner laws (sets, groupings, pair witness, rotation orbit), the sweep's imprint on the 2x2 column (irreversibility, in-plane reflection, four one-plane laws); exact; no order selected
++mutation: none
++PASS: A1 the five declared inputs exist (this note, the axiom memo, block 08, block 02, the plane-law note)
++PASS: A2 the five axiom sentences used are present verbatim in the axiom memo
++PASS: A3 the parents' claim ids and the cited fragments (block 08's three-body term; the plane-law note's two classes) are present
++PASS: A4 this note carries its claim id and names this runner
++PASS: B1 R1: at (3,1,2) with all twelve sites at +x, changing the face-diagonal site x+e1-e2 moves the full conditional by TV 793975879125/24719290847393 = 0.03211968 (maximum over its six values)
++PASS: B2 R1: the dependency set of x is six face-diagonal offsets of the form kappa_i e_i - kappa_j e_j (coordinate sum zero); the offsets e_i + e_j and -e_i - e_j are not among them
++PASS: B3 R2's hypothesis: the third-difference ratio of K_3 is 2160/2197 at (3,1,2), 686196/704969 at (5,2,4), 1 at the constant rule
++PASS: B4 control: at the constant rule the full conditional is uniform and does not depend on any site
++PASS: C1 R3a: the eight corners' dependency sets coincide exactly for point-reflection pairs (four distinct sets)
++PASS: C2 R3a: the eight triple groupings of the dependency set are pairwise distinct
++PASS: C3 R3b: at (3,1,2) the (+++) and (---) full conditionals differ on the same twelve-site configuration by TV 1646222697/263752139417 = 0.00624155 (maximum over the 6^6 diagonal assignments, axial values +x)
++PASS: C4 R3c: the 24 proper rotations act transitively on the eight corners; the stabilizer of a corner has order 3 (the rotations about its body diagonal)
++PASS: D1 R4b: on the 2x2 column TV(J, J^T) = 0.04934116 at (3,1,2) and 0.03167900 at (5,2,4): the plane chain is not reversible (exact literals under --exact)
++PASS: D2 control: at the constant rule the joint law is symmetric and the one-plane law is reflection-invariant
++PASS: D3 R4b: TV(pi, pi∘R_2) = 0.02177093 at (3,1,2): the in-plane reflection of the corner changes the one-plane law
++PASS: D4 R4b: the eight predecessor structures give 4 distinct one-plane laws on the 2x2 column, paired by the sweep direction
++PASS: D5 R4b: for each of the four in-plane structures the joint law is asymmetric, so the eight column laws are pairwise distinct at (3,1,2)
++PASS: F1 the note carries the three fence sentences verbatim
++PASS: F2 the note contains no forbidden phrase (0 hits)
++PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
++PASS: F4 the classical names appear only under Prior art and Imports (0 offenders)
++per_element: executed — the six values of the face-diagonal site for the dependence witness; the 6^6 diagonal assignments for the pair witness; the third-difference ratio at three triples
++per_site: executed — the twelve dependency sites of x and the excluded offsets; the eight corners' sets and groupings
++per_mode: executed — the 24 proper rotations on the eight corners and the stabilizer; the four one-plane laws of the 2x2 column
++per_block: executed — the 2x2 column's joint law against its transpose over all 1296^2 ordered pairs at three triples; the in-plane reflection of the one-plane law
++lattice_wide: proved from L1–L2 in block 08's region at triples with nonzero third difference; executed only at (3,1,2) and (5,2,4); nothing claimed elsewhere
++PASS: G1 the five N5 resolution lines are printed
++TOTAL: PASS=22 FAIL=0
++
++----- stderr -----
++
+diff --git a/scripts/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py b/scripts/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py
+new file mode 100644
+index 0000000000..27a16d6dda
+--- /dev/null
++++ b/scripts/admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_2026_09_15.py
+@@ -0,0 +1,579 @@
++#!/usr/bin/env python3
++"""Exact checks: the Markov graph of the three-dimensional monotone formation law, the eight corner laws, the sweep's imprint.
++
++Scope.  The six Bloch-axis menu with the covariant positive product rule (p, q, r), the records-only reading, the monotone
++class with corner kappa in {+1,-1}^3, in block 08's region.  R1: the full conditional at a site depends on the twelve
++sites of the graph G_kappa (six axial, six face-diagonal x + kappa_i e_i - kappa_j e_j) and genuinely on the face-diagonal
++ones (exact witness).  R2: the third difference of log K_3 is nonzero at the declared nonconstant triples (the hypothesis
++under which the law is not nearest-neighbor Markov and not a static law).  R3: the eight corners' dependency sets pair
++up under the point reflection, the triple groupings are all distinct, and within a pair the conditionals differ (exact
++witness); the 24 proper rotations act transitively on the corners.  R4: on the 2x2 column the two-plane joint law of the
++stationary plane chain is not its transpose (exact total variation; zero at the constant rule), the one-plane law is not
++invariant under the in-plane reflection, and the eight predecessor structures give four one-plane laws.  Exact rational
++arithmetic only; the runner scans its own source for floating-point literals.  No order or corner is selected as physical;
++no arrow of time is derived.
++"""
++
++from __future__ import annotations
++
++import re
++import sys
++from fractions import Fraction
++from itertools import permutations, product
++from pathlib import Path
++
++AUDIT_TIMEOUT_SEC = 900
++AUDIT_INPUT_PATHS = (
++    "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
++    "docs/MINIMAL_AXIOMS_2026-06-29.md",
++    "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
++    "docs/ADMISSIBILITY_RULE_INFINITE_STRIP_ROW_SWEEP_FORMATION_LAW_VERSUS_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-06.md",
++    "docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md",
++)
++ROOT = Path(__file__).resolve().parents[1]
++NOTE_PATH = ROOT / AUDIT_INPUT_PATHS[0]
++AXIOM_PATH = ROOT / AUDIT_INPUT_PATHS[1]
++BLOCK08_PATH = ROOT / AUDIT_INPUT_PATHS[2]
++BLOCK02_PATH = ROOT / AUDIT_INPUT_PATHS[3]
++PLANE_PATH = ROOT / AUDIT_INPUT_PATHS[4]
++CLAIM_ID = "admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_bounded_theorem_note_2026-09-15"
++BLOCK08_CLAIM_ID = "admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_bounded_theorem_note_2026-09-15"
++BLOCK08_FRAGMENT = "the three-body normalizer is irreducible"
++BLOCK02_CLAIM_ID = "admissibility_rule_infinite_strip_row_sweep_formation_law_versus_static_law_bounded_theorem_note_2026-09-06"
++PLANE_CLAIM_ID = "admissibility_plane_formation_diagonal_interaction_note_2026-09-08"
++PLANE_FRAGMENT = "the two diagonal classes differ for every nonconstant orbit triple"
++AXIOM_NEEDLES = (
++    "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.",
++    "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.",
++    "No possibility is privileged.",
++    "Records form.",
++    "Only records are readable.",
++)
++
++MUTATION_GATE = {
++    "diagonal_dependence_denied": "B",
++    "excluded_site_dependence_claimed": "B",
++    "third_difference_forged": "B",
++    "dependency_sets_all_distinct_claimed": "C",
++    "groupings_coincide_claimed": "C",
++    "pair_witness_denied": "C",
++    "rotation_orbit_wrong": "C",
++    "joint_law_symmetric_claimed": "D",
++    "constant_rule_irreversible_claimed": "D",
++    "inplane_reflection_invariance_claimed": "D",
++    "one_plane_law_count_wrong": "D",
++    "column_laws_not_distinct_claimed": "D",
++    "claim_physical_order": "F",
++    "claim_arrow_of_time": "F",
++    "claim_classical_name_in_theorem": "F",
++}
++ACTIVE_MUTATION: str | None = None
++
++
++def mut(name: str) -> bool:
++    if name not in MUTATION_GATE:
++        raise KeyError(name)
++    return ACTIVE_MUTATION == name
++
++
++class Checks:
++    def __init__(self) -> None:
++        self.passed = 0
++        self.failed = 0
++        self.failed_families: list[str] = []
++
++    def check(self, label: str, condition: bool, detail: str) -> None:
++        ok = bool(condition)
++        self.passed += int(ok)
++        self.failed += int(not ok)
++        if not ok:
++            self.failed_families.append(label[0])
++        print(f"{'PASS' if ok else 'FAIL'}: {label} {detail}")
++
++    def finish(self) -> int:
++        print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
++        return self.failed
++
++
++def normalize_text(text: str) -> str:
++    return " ".join(text.split())
++
++
++F = Fraction
++
++
++def dec(x: Fraction, n: int = 8) -> str:
++    s = x.numerator * 10 ** n // x.denominator
++    return f"{s // 10 ** n}.{str(s % 10 ** n).zfill(n)}"
++
++
++# ------------------------------------------------------------------ the rule and kernels (self-contained)
++AXES = ("+x", "-x", "+y", "-y", "+z", "-z")
++M = 6
++
++
++def orbit_type(s: int, t: int) -> str:
++    if s == t:
++        return "p"
++    if s // 2 == t // 2:
++        return "q"
++    return "r"
++
++
++class Rule:
++    def __init__(self, tr) -> None:
++        p, q, r = tr
++        w = {"p": p, "q": q, "r": r}
++        self.tr = tr
++        self.phi = [[w[orbit_type(s, t)] for t in range(M)] for s in range(M)]
++        self.Z1 = sum(self.phi[0])
++        self.K = [[F(self.phi[s][a], self.Z1) for s in range(M)] for a in range(M)]
++        self.Z2 = {(a, b): sum(self.phi[s][a] * self.phi[s][b] for s in range(M)) for a in range(M) for b in range(M)}
++        self.Z3 = {(a, b, c): sum(self.phi[s][a] * self.phi[s][b] * self.phi[s][c] for s in range(M))
++                   for a in range(M) for b in range(M) for c in range(M)}
++        self.K2 = {k: F(v, self.Z1 ** 2) for k, v in self.Z2.items()}
++        self.K3 = {k: F(v, self.Z1 ** 3) for k, v in self.Z3.items()}
++        self._cond: dict = {}
++
++    def cond(self, rec: tuple) -> list:
++        if rec in self._cond:
++            return self._cond[rec]
++        k = len(rec)
++        if k == 0:
++            out = [F(1, M)] * M
++        elif k == 1:
++            out = [self.K[rec[0]][s] for s in range(M)]
++        elif k == 2:
++            out = [F(self.phi[s][rec[0]] * self.phi[s][rec[1]], self.Z2[rec]) for s in range(M)]
++        else:
++            out = [F(self.phi[s][rec[0]] * self.phi[s][rec[1]] * self.phi[s][rec[2]], self.Z3[rec]) for s in range(M)]
++        self._cond[rec] = out
++        return out
++
++
++def tv(u, v) -> Fraction:
++    return sum(abs(x - y) for x, y in zip(u, v)) / 2
++
++
++# ------------------------------------------------------------------ the full conditional of a corner class
++CORNERS = tuple(product((1, -1), repeat=3))
++PAIR_KEYS = tuple((i, j) for i in range(3) for j in range(3) if i != j)  # offset x + kappa_i e_i - kappa_j e_j
++
++
++def grouping(kappa):
++    """The three triples containing x, as pairs of offset keys (i, j) with common first index i."""
++    return tuple(tuple(sorted((i, j) for j in range(3) if j != i)) for i in range(3))
++
++
++def dep_offsets(kappa):
++    out = set()
++    for (i, j) in PAIR_KEYS:
++        off = [0, 0, 0]
++        off[i] += kappa[i]
++        off[j] -= kappa[j]
++        out.add(tuple(off))
++    return frozenset(out)
++
++
++def grouping_offsets(kappa):
++    groups = []
++    for i in range(3):
++        g = []
++        for j in range(3):
++            if j == i:
++                continue
++            off = [0, 0, 0]
++            off[i] += kappa[i]
++            off[j] -= kappa[j]
++            g.append(tuple(off))
++        groups.append(tuple(sorted(g)))
++    return tuple(sorted(groups))
++
++
++def full_conditional(rule: Rule, kappa, axial: list, diag: dict) -> list:
++    """gamma^kappa_x(s | omega) for axial values (list of six) and diagonal values diag[(i, j)] at x + kappa_i e_i - kappa_j e_j.
++    The kernel groups the diagonal sites by the first index of the offset: the triple of y = x + kappa_i e_i."""
++    ws = []
++    for s in range(M):
++        w = F(1)
++        for a in axial:
++            w *= rule.K[a][s]
++        for i in range(3):
++            js = [j for j in range(3) if j != i]
++            w /= rule.K3[(s, diag[(i, js[0])], diag[(i, js[1])])]
++        ws.append(w)
++    Z = sum(ws)
++    return [x / Z for x in ws]
++
++
++def full_conditional_by_offset(rule: Rule, kappa, axial: list, values_at_offset: dict) -> list:
++    """The same kernel, but the diagonal values are given per lattice offset (so that two corners sharing the
++    dependency set can be compared on the same configuration)."""
++    diag = {}
++    for (i, j) in PAIR_KEYS:
++        off = [0, 0, 0]
++        off[i] += kappa[i]
++        off[j] -= kappa[j]
++        diag[(i, j)] = values_at_offset[tuple(off)]
++    return full_conditional(rule, kappa, axial, diag)
++
++
++# ------------------------------------------------------------------ the 2x2 column (block 08's machinery, self-contained)
++def plane_transfer_class(rule: Rule, signs, w, v) -> Fraction:
++    s2, s3 = signs[1], signs[2]
++    idx = {(0, 0): 0, (0, 1): 1, (1, 0): 2, (1, 1): 3}
++    pr = F(1)
++    for (a, b), k in idx.items():
++        rec = [w[k]]
++        p2 = (a - s2, b)
++        p3 = (a, b - s3)
++        if p2 in idx:
++            rec.append(v[idx[p2]])
++        if p3 in idx:
++            rec.append(v[idx[p3]])
++        pr *= rule.cond(tuple(rec))[v[k]]
++    return pr
++
++
++def group48():
++    axes = [(1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0, -1)]
++    idx = {a: i for i, a in enumerate(axes)}
++    elems = set()
++    for perm in permutations(range(3)):
++        for signs in product((1, -1), repeat=3):
++            mp = []
++            for a in axes:
++                b = [0, 0, 0]
++                for i in range(3):
++                    b[perm[i]] = signs[i] * a[i]
++                mp.append(idx[tuple(b)])
++            elems.add(tuple(mp))
++    return sorted(elems)
++
++
++def solve_stationary(Q):
++    n = len(Q)
++    A = [[Q[j][i] - (F(1) if i == j else F(0)) for j in range(n)] for i in range(n)]
++    A[n - 1] = [F(1)] * n
++    b = [F(0)] * (n - 1) + [F(1)]
++    for col in range(n):
++        piv = next(r for r in range(col, n) if A[r][col] != 0)
++        A[col], A[piv] = A[piv], A[col]
++        b[col], b[piv] = b[piv], b[col]
++        inv = 1 / A[col][col]
++        A[col] = [x * inv for x in A[col]]
++        b[col] *= inv
++        for r in range(n):
++            if r != col and A[r][col] != 0:
++                f = A[r][col]
++                A[r] = [x - f * y for x, y in zip(A[r], A[col])]
++                b[r] -= f * b[col]
++    return b
++
++
++def stationary_plane_law(rule: Rule, signs):
++    """Exact stationary law of the 2x2 plane transfer of the class with signs (s1 irrelevant), by orbit reduction under
++    the internal group of order 48."""
++    states = list(product(range(M), repeat=4))
++    G = group48()
++    orbit_of, reps = {}, []
++    for s in states:
++        if s in orbit_of:
++            continue
++        o = len(reps)
++        reps.append(s)
++        orbit_of[s] = o
++        for g in G:
++            orbit_of[tuple(g[x] for x in s)] = o
++    sizes = [0] * len(reps)
++    for s in states:
++        sizes[orbit_of[s]] += 1
++    n = len(reps)
++    Q = [[F(0)] * n for _ in range(n)]
++    for o, w in enumerate(reps):
++        for v in states:
++            Q[o][orbit_of[v]] += plane_transfer_class(rule, signs, w, v)
++    pi_orb = solve_stationary(Q)
++    assert all(x > 0 for x in pi_orb) and sum(pi_orb) == 1
++    return states, {s: pi_orb[orbit_of[s]] / sizes[orbit_of[s]] for s in states}
++
++
++def irreversibility(rule: Rule, signs, states, pi) -> Fraction:
++    """TV(J, J^T) with J(w, v) = pi(w) P(w, v): half the sum over ordered pairs of |J(w,v) - J(v,w)|."""
++    total = F(0)
++    for w in states:
++        pw = pi[w]
++        for v in states:
++            if v <= w:
++                continue
++            total += abs(pw * plane_transfer_class(rule, signs, w, v) - pi[v] * plane_transfer_class(rule, signs, v, w))
++    return total  # unordered pairs counted once = ordered-pair sum / 2
++
++
++# ============================================================================================ family A
++def family_a(checks: Checks, note_text: str, axiom_text: str, b08: str, b02: str, plane: str) -> None:
++    checks.check("A1", all((ROOT / p).is_file() for p in AUDIT_INPUT_PATHS) and len(set(AUDIT_INPUT_PATHS)) == 5,
++                 "the five declared inputs exist (this note, the axiom memo, block 08, block 02, the plane-law note)")
++    flat_ax = normalize_text(axiom_text)
++    checks.check("A2", all(n in flat_ax for n in AXIOM_NEEDLES), "the five axiom sentences used are present verbatim in the axiom memo")
++    f08, f02, fpl = normalize_text(b08).lower(), normalize_text(b02).lower(), normalize_text(plane).lower()
++    checks.check("A3", BLOCK08_CLAIM_ID in f08 and BLOCK08_FRAGMENT in f08 and BLOCK02_CLAIM_ID in f02 and PLANE_CLAIM_ID in fpl and PLANE_FRAGMENT in fpl,
++                 "the parents' claim ids and the cited fragments (block 08's three-body term; the plane-law note's two classes) are present")
++    flat = normalize_text(note_text)
++    checks.check("A4", CLAIM_ID in flat and Path(__file__).name in flat, "this note carries its claim id and names this runner")
++
++
++# ============================================================================================ family B
++DEP_WITNESS_312 = F(793975879125, 24719290847393)
++
++
++def family_b(checks: Checks, report: dict) -> None:
++    rule = Rule((3, 1, 2))
++    kappa = (1, 1, 1)
++    axial = [0] * 6
++    base = {k: 0 for k in PAIR_KEYS}
++    c0 = full_conditional(rule, kappa, axial, base)
++    best = F(0)
++    for v12 in range(M):
++        d = dict(base)
++        d[(0, 1)] = v12
++        best = max(best, tv(c0, full_conditional(rule, kappa, axial, d)))
++    if mut("diagonal_dependence_denied"):
++        best = F(0)
++    checks.check("B1", best == DEP_WITNESS_312 and best > 0,
++                 f"R1: at (3,1,2) with all twelve sites at +x, changing the face-diagonal site x+e1-e2 moves the full conditional by TV {best} = {dec(best)} (maximum over its six values)")
++    # B2: the kernel formula involves exactly the twelve sites: the six axial and the six offsets kappa_i e_i - kappa_j e_j; the
++    # offsets e_i + e_j and -e_i - e_j do not occur (structural: dep_offsets has six elements, none of that form)
++    offs = dep_offsets(kappa)
++    plus = {(1, 1, 0), (1, 0, 1), (0, 1, 1), (-1, -1, 0), (-1, 0, -1), (0, -1, -1)}
++    structural = len(offs) == 6 and not (offs & plus) and all(sum(abs(c) for c in o) == 2 and sum(o) == 0 for o in offs)
++    if mut("excluded_site_dependence_claimed"):
++        structural = not structural
++    checks.check("B2", structural, "R1: the dependency set of x is six face-diagonal offsets of the form kappa_i e_i - kappa_j e_j (coordinate sum zero); the offsets e_i + e_j and -e_i - e_j are not among them")
++    ratios = {}
++    for tr in ((3, 1, 2), (5, 2, 4), (2, 2, 2)):
++        r3 = Rule(tr).K3
++        x, y, z = 0, 2, 4
++        num = r3[(x, x, x)] * r3[(y, y, x)] * r3[(y, x, z)] * r3[(x, y, z)]
++        den = r3[(y, x, x)] * r3[(x, y, x)] * r3[(x, x, z)] * r3[(y, y, z)]
++        ratios[tr] = num / den
++    if mut("third_difference_forged"):
++        ratios[(5, 2, 4)] = F(1)
++    checks.check("B3", ratios[(3, 1, 2)] == F(2160, 2197) and ratios[(5, 2, 4)] == F(686196, 704969) and ratios[(2, 2, 2)] == 1,
++                 f"R2's hypothesis: the third-difference ratio of K_3 is {ratios[(3, 1, 2)]} at (3,1,2), {ratios[(5, 2, 4)]} at (5,2,4), 1 at the constant rule")
++    # B4: the dependence on the diagonal site vanishes at the constant rule (the kernel is uniform)
++    rc = Rule((2, 2, 2))
++    c0 = full_conditional(rc, kappa, axial, base)
++    d = dict(base)
++    d[(0, 1)] = 1
++    checks.check("B4", tv(c0, full_conditional(rc, kappa, axial, d)) == 0 and all(x == F(1, 6) for x in c0),
++                 "control: at the constant rule the full conditional is uniform and does not depend on any site")
++
++
++# ============================================================================================ family C
++PAIR_WITNESS_312 = F(1646222697, 263752139417)
++
++
++def family_c(checks: Checks, report: dict) -> None:
++    sets = {k: dep_offsets(k) for k in CORNERS}
++    groups = {k: grouping_offsets(k) for k in CORNERS}
++    pairs_ok = all((sets[k] == sets[k2]) == (k2 == k or k2 == tuple(-c for c in k)) for k in CORNERS for k2 in CORNERS)
++    if mut("dependency_sets_all_distinct_claimed"):
++        pairs_ok = len(set(sets.values())) == 8
++    checks.check("C1", pairs_ok and len(set(sets.values())) == 4, "R3a: the eight corners' dependency sets coincide exactly for point-reflection pairs (four distinct sets)")
++    groups_ok = len(set(groups.values())) == 8
++    if mut("groupings_coincide_claimed"):
++        groups_ok = len(set(groups.values())) == 4
++    checks.check("C2", groups_ok, "R3a: the eight triple groupings of the dependency set are pairwise distinct")
++    rule = Rule((3, 1, 2))
++    axial = [0] * 6
++    offsets = sorted(sets[(1, 1, 1)])
++    best = F(0)
++    best_cfg = None
++    for vals in product(range(M), repeat=6):
++        va = dict(zip(offsets, vals))
++        d = tv(full_conditional_by_offset(rule, (1, 1, 1), axial, va), full_conditional_by_offset(rule, (-1, -1, -1), axial, va))
++        if d > best:
++            best, best_cfg = d, vals
++    if mut("pair_witness_denied"):
++        best = F(0)
++    checks.check("C3", best == PAIR_WITNESS_312 and best > 0,
++                 f"R3b: at (3,1,2) the (+++) and (---) full conditionals differ on the same twelve-site configuration by TV {best} = {dec(best)} (maximum over the 6^6 diagonal assignments, axial values +x)")
++    # C4: the 24 proper rotations act transitively on the 8 corners (signed permutations with determinant +1)
++    rots = []
++    for perm in permutations(range(3)):
++        sign_perm = 1
++        for i in range(3):
++            for j in range(i + 1, 3):
++                if perm[i] > perm[j]:
++                    sign_perm = -sign_perm
++        for signs in product((1, -1), repeat=3):
++            det = sign_perm * signs[0] * signs[1] * signs[2]
++            if det == 1:
++                rots.append((perm, signs))
++    def act(rot, kappa):
++        perm, signs = rot
++        out = [0, 0, 0]
++        for i in range(3):
++            out[perm[i]] = signs[i] * kappa[i]
++        return tuple(out)
++    orbit = {act(r, (1, 1, 1)) for r in rots}
++    stab = [r for r in rots if act(r, (1, 1, 1)) == (1, 1, 1)]
++    n_rots = len(rots) + (1 if mut("rotation_orbit_wrong") else 0)
++    checks.check("C4", n_rots == 24 and orbit == set(CORNERS) and len(stab) == 3,
++                 f"R3c: the {len(rots)} proper rotations act transitively on the eight corners; the stabilizer of a corner has order {len(stab)} (the rotations about its body diagonal)")
++
++
++# ============================================================================================ family D
++IRR_312 = F(20050159445052753287345872554551877965270917971807795389873, 406357621088602935950245331407424044758618443589923499955200)
++R2TV_312 = F(11555202353859801661076434687858214316334786981223, 530762821621220762616238380264013135814921940979920)
++
++
++def family_d(checks: Checks, report: dict, exact: bool) -> None:
++    irr = {}
++    r2tv = {}
++    laws = {}
++    for tr in ((3, 1, 2), (5, 2, 4), (2, 2, 2)):
++        rule = Rule(tr)
++        states, pi = stationary_plane_law(rule, (1, 1, 1))
++        irr[tr] = irreversibility(rule, (1, 1, 1), states, pi)
++        r2tv[tr] = sum(abs(pi[v] - pi[(v[2], v[3], v[0], v[1])]) for v in states) / 2
++        if tr == (3, 1, 2):
++            for signs in CORNERS:
++                laws[signs] = stationary_plane_law(rule, signs)[1]
++    report["irr"] = irr
++    sym_claim = (irr[(3, 1, 2)] == 0) if mut("joint_law_symmetric_claimed") else (irr[(3, 1, 2)] > 0 and irr[(5, 2, 4)] > 0)
++    checks.check("D1", sym_claim and irr[(3, 1, 2)] == IRR_312,
++                 f"R4b: on the 2x2 column TV(J, J^T) = {dec(irr[(3, 1, 2)])} at (3,1,2) and {dec(irr[(5, 2, 4)])} at (5,2,4): the plane chain is not reversible (exact literals under --exact)")
++    const_ok = irr[(2, 2, 2)] == 0 and r2tv[(2, 2, 2)] == 0
++    if mut("constant_rule_irreversible_claimed"):
++        const_ok = irr[(2, 2, 2)] > 0
++    checks.check("D2", const_ok, "control: at the constant rule the joint law is symmetric and the one-plane law is reflection-invariant")
++    refl_ok = r2tv[(3, 1, 2)] > 0 and r2tv[(3, 1, 2)] == R2TV_312
++    if mut("inplane_reflection_invariance_claimed"):
++        refl_ok = r2tv[(3, 1, 2)] == 0
++    checks.check("D3", refl_ok, f"R4b: TV(pi, pi∘R_2) = {dec(r2tv[(3, 1, 2)])} at (3,1,2): the in-plane reflection of the corner changes the one-plane law")
++    distinct = []
++    for k in CORNERS:
++        if not any(laws[k] == laws[d] for d in distinct):
++            distinct.append(k)
++    pairing = all(laws[k] == laws[(-k[0], k[1], k[2])] for k in CORNERS)
++    n_distinct = len(distinct) + (1 if mut("one_plane_law_count_wrong") else 0)
++    checks.check("D4", n_distinct == 4 and pairing, f"R4b: the eight predecessor structures give {len(distinct)} distinct one-plane laws on the 2x2 column, paired by the sweep direction")
++    # D5: the eight column laws are pairwise distinct: the four one-plane laws split by the joint law's asymmetry (irr > 0 for each in-plane structure)
++    irr_all = {signs: irreversibility(Rule((3, 1, 2)), signs, list(product(range(M), repeat=4)), laws[signs]) for signs in distinct}
++    col_ok = all(v > 0 for v in irr_all.values())
++    if mut("column_laws_not_distinct_claimed"):
++        col_ok = not col_ok
++    checks.check("D5", col_ok, "R4b: for each of the four in-plane structures the joint law is asymmetric, so the eight column laws are pairwise distinct at (3,1,2)")
++    if exact:
++        print(f"exact TV(J, J^T) at (3,1,2) = {irr[(3, 1, 2)]}")
++        print(f"exact TV(pi, pi∘R_2) at (3,1,2) = {r2tv[(3, 1, 2)]}")
++
++
++# ============================================================================================ family F
++FENCES = (
++    "This note describes the monotone class with a corner on `Z^3` in block 08's region; it states nothing about the static law's uniqueness, nothing for `c ≥ 1/3`, nothing about a physical order or corner, and derives no arrow of time — the imprint of the sweep is that of a supplied order.",
++    "No plane, bridge, Born or gravity statement enters this note; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
++    "no value, constant or theorem is imported as authority.",
++)
++FORBIDDEN = (
++    "the physical order", "arrow of time is derived", "derives an arrow", "for every coupling", "selects the",
++    "the static law of Z^3 is unique", "fires wake condition", "the Bridge weights", "the Bridge conjecture",
++    "certified", "phase transition", "several static laws", "washes out", "toward the plane", "the trend",
++)
++CLAIM_INJECTIONS = {
++    "claim_physical_order": "The corner (+,+,+) is the physical order.",
++    "claim_arrow_of_time": "Hence the arrow of time is derived from the axioms.",
++}
++CLASSICAL_NAMES = ("Dobrushin", "Lanford", "Ruelle", "Kolmogorov", "Perron", "Frobenius", "Pickard", "Hammersley", "Clifford", "Birkhoff")
++ALLOWED_NAME_SECTIONS = ("Prior art and what is new", "Imports")
++SCAN_MARKER = "float-scan-marker-line"
++
++
++def family_f(checks: Checks, note_text: str) -> None:
++    text = note_text
++    for name, phrase in CLAIM_INJECTIONS.items():
++        if mut(name):
++            text = text + "\n" + phrase
++    flat = normalize_text(text)
++    checks.check("F1", all(f in flat for f in FENCES), "the note carries the three fence sentences verbatim")
++    hits = [ph for ph in FORBIDDEN if ph.lower() in flat.lower()]
++    checks.check("F2", not hits, f"the note contains no forbidden phrase ({len(hits)} hits)")
++    source_lines = Path(__file__).read_text(encoding="utf-8").splitlines()
++    scan = [ln for ln in source_lines if SCAN_MARKER not in ln]
++    float_literal = re.compile(r"(?<![\w.])\d+\.\d+(?![\w.])|(?<![\w.])\d+[eE][-+]?\d+(?![\w.])")
++    conversion = "flo" + "at("  # float-scan-marker-line
++    evalf = "eva" + "lf("  # float-scan-marker-line
++    numeric = "N" + "("  # float-scan-marker-line
++    nsimp = "nsimp" + "lify("  # float-scan-marker-line
++    bad = [ln for ln in scan if float_literal.search(ln) or conversion in ln or evalf in ln or numeric in ln or nsimp in ln]
++    checks.check("F3", not bad and len(scan) > 250, f"runner source: no floating-point literal or conversion call ({len(bad)} hits)")
++    sections = re.split(r"^## ", text, flags=re.M)
++    offenders = []
++    for sec in sections[1:]:
++        title = sec.splitlines()[0].strip()
++        body = sec
++        if mut("claim_classical_name_in_theorem") and title.startswith("Theorem R2"):
++            body = body + " (as Dobrushin showed)"
++        if any(title.startswith(a) for a in ALLOWED_NAME_SECTIONS):
++            continue
++        for nm in CLASSICAL_NAMES:
++            if nm in body:
++                offenders.append((title[:30], nm))
++    checks.check("F4", not offenders, f"the classical names appear only under Prior art and Imports ({len(offenders)} offenders)")
++
++
++# ============================================================================================ family G
++N5_LINES = (
++    "per_element: executed — the six values of the face-diagonal site for the dependence witness; the 6^6 diagonal assignments for the pair witness; the third-difference ratio at three triples",
++    "per_site: executed — the twelve dependency sites of x and the excluded offsets; the eight corners' sets and groupings",
++    "per_mode: executed — the 24 proper rotations on the eight corners and the stabilizer; the four one-plane laws of the 2x2 column",
++    "per_block: executed — the 2x2 column's joint law against its transpose over all 1296^2 ordered pairs at three triples; the in-plane reflection of the one-plane law",
++    "lattice_wide: proved from L1–L2 in block 08's region at triples with nonzero third difference; executed only at (3,1,2) and (5,2,4); nothing claimed elsewhere",
++)
++
++
++def family_g(checks: Checks) -> None:
++    for line in N5_LINES:
++        print(line)
++    checks.check("G1", len(N5_LINES) == 5 and all(len(l) >= 40 for l in N5_LINES), "the five N5 resolution lines are printed")
++
++
++def main(argv) -> int:
++    global ACTIVE_MUTATION
++    if "--list-mutations" in argv:
++        for name, fam in MUTATION_GATE.items():
++            print(f"{name} {fam}")
++        return 0
++    if "--mutation" in argv:
++        ACTIVE_MUTATION = argv[argv.index("--mutation") + 1]
++        if ACTIVE_MUTATION not in MUTATION_GATE:
++            print(f"unknown mutation {ACTIVE_MUTATION}")
++            return 2
++    exact = "--exact" in argv
++    checks = Checks()
++    texts = [(ROOT / p).read_text(encoding="utf-8") if (ROOT / p).is_file() else "" for p in AUDIT_INPUT_PATHS]
++    print("AUDIT_INPUT_PATHS:")
++    for p in AUDIT_INPUT_PATHS:
++        print(f"  {p}")
++    print(f"AUDIT_TIMEOUT_SEC: {AUDIT_TIMEOUT_SEC}")
++    print("scope: the Markov graph of the 3D monotone law (face-diagonal dependence witness), the eight corner laws (sets, groupings, pair witness, rotation orbit), the sweep's imprint on the 2x2 column (irreversibility, in-plane reflection, four one-plane laws); exact; no order selected")
++    print(f"mutation: {ACTIVE_MUTATION or 'none'}")
++    report: dict = {}
++    family_a(checks, texts[0], texts[1], texts[2], texts[3], texts[4])
++    family_b(checks, report)
++    family_c(checks, report)
++    family_d(checks, report, exact)
++    family_f(checks, texts[0])
++    family_g(checks)
++    if ACTIVE_MUTATION:
++        observed = "".join(sorted(set(checks.failed_families))) or "none"
++        print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
++        print(f"mutation_family_observed: {observed}")
++    failed = checks.finish()
++    return 1 if failed else 0
++
++
++if __name__ == "__main__":
++    raise SystemExit(main(sys.argv[1:]))

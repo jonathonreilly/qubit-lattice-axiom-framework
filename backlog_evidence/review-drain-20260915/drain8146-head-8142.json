@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "e5b9ca893f95c1bd37e0a920928ed1567420e0ef",
+  "fetched_ref": "refs/review-loop/fetched/8142-934d84d45080469999ecdd9f73575631",
+  "metadata": {
+    "baseRefName": "physics-loop/admissibility-induced-law-block10-recorded-set-gibbs-theorem-20260915",
+    "headRefName": "physics-loop/admissibility-induced-law-block11-three-body-exceptional-locus-20260915",
+    "headRefOid": "e5b9ca893f95c1bd37e0a920928ed1567420e0ef",
+    "isDraft": false,
+    "number": 8142,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

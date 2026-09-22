@@ -1,0 +1,466 @@
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+index e342269887..108e7d3530 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+@@ -45,3 +45,15 @@
+ | F11.2 two-witness elimination | `E_1 = 0`, `G = 0` | lex elimination basis; `p` linear in `q` on the sextic | none | exact | candidate-complete | X3 (C1–C3) | — |
+ | F11.3 full sufficiency test | all 16 numerators mod minimal polynomials | exact reduction | none | exact | candidate-complete | C4 | — |
+ | F11.4 algebraic-field gcd | gcd over `Q(p_0)` | — | — | — | retired (too slow) | control B | — |
++
++## Block 12 — the strong-coupling side: level automaton, noise map, eroder, metastability, the obligation (2026-09-15)
++
++| Family | Object/formulation | Mechanism/invariant | Terminal obligation | Strength vs target | Status | Concrete evidence | Reopen condition |
++|---|---|---|---|---|---|---|---|
++| F12.1 level time | `L_t = {x : Σ x_i = t}`, projection `π(x) = (x_2, x_3)` | every predecessor lies one level down; north-east-center offsets | none | exact | candidate-complete | S0 (B1) | — |
++| F12.2 noise map | the three-neighbor conditional at the four patterns | closed forms; `1/p` deviations; majority most likely iff `p > max(q, r)` | none | exact | candidate-complete | S1 (B2–B4) | — |
++| F12.3 eroder | the noiseless majority rule on levels | coordinate maxima never increase | none | exact | candidate-complete | S2 (C1–C2) | — |
++| F12.4 domination | `ξ_x = 1{v_x ≠ a}` vs the noisy majority automaton | site-by-site monotone coupling; `ε(p)` exact | none | exact | candidate-complete | S3 (B5) | — |
++| F12.5 finite-cross-section metastability | `P_C(p) → P_C(∞)` with six absorbing states | root continuity; simple eigenvalue 1 at finite `p` | none | exact | candidate-complete | S4 (D1, D1b, D2) | — |
++| F12.6 two-dimensional contrast | rows as `K`-chains; the two-predecessor limit | eigenvalues `(p−q)/Z_1`, `(p+q−2r)/Z_1` | none | exact | candidate-complete | S5 (D3) | — |
++| F12.7 contour proof of stability | explanation trees for a `1` from the all-`0` level | union bound over minimal explanations | the sparse-contour lemma (length linear in the noise count) | would settle S6 | blocked-equivalent (obstruction recorded) | S6 text | a contour construction re-proved at scope |
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
+index 2e6dbea8e4..db3816592e 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
+@@ -69,3 +69,10 @@
+ - Scaffolding: the five pattern values; the 16 distinct numerators; the witnesses `E_1`, `E_2 = −(p−q)² G`; the minimal polynomials `t³−3t²−6t−1`, `x³−3x²−15x−19`, `s(x) = x⁶−6x⁵−3x⁴+4x³−3x²−6x+31`; the quintic `ψ`.
+ - External methods (executed exactly, sympy over `Q`): factorization, resultants, the lex elimination basis, sign-change root isolation with rational refinement, inversion and reduction modulo a minimal polynomial.
+ - Counterfactual pass: zero weights (outside positivity); other menus (different pattern values); `k ≥ 4` loci (not computed).
++
++## Block 12 (2026-09-15) — the strong-coupling side
++- Dependencies: `minimal_axioms`; block 05 (on main; the rectangle law, rows and columns as `K`-chains); blocks 08 and 09 (stacked; the plane chain, the region, the `Z^3` law; the Gibbs identification, not load-bearing). Proposed, unaudited.
++- Named premises: the records-only reading; positivity; the six-axis menu; the product form; the monotone class as the supplied order class; for S4 the finiteness of the cross-section.
++- Scaffolding: level time and the projection `π`; the binary coarse-graining `ξ`; the majority automaton with noise `ε`; the couplings `(p, 1, 2)`; the `2×2` cross-section with its `48`-fold orbit quotient and the full `1296`-state chain.
++- External references, not used and not re-proved (named under Prior art and Imports only): the stability theorem for noisy monotone eroders (Toom 1980) and its modern contour presentations. Everything stated as a theorem (S0–S5) is proved in the note.
++- Counterfactual pass: a menu with `q ≥ p` or `r ≥ p` (the majority is not the most likely output; S1's condition fails, S3's `ε` is not small); a non-product rule (no closed forms); zero weights (outside positivity; `K`'s eigenvalue can reach one only there); an order class in which a site has two predecessors on the same level (not the monotone class; the level chain would not be Markov of order one).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block12_findings.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block12_findings.md
+new file mode 100644
+index 0000000000..157e4e178f
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block12_findings.md
+@@ -0,0 +1,18 @@
++# Refuting pass — block 12 (supervisor-run, disjoint machinery; 2026-09-15)
++
++Routes compared (control `specs/supervisor_control_block12_strong_coupling.py`, refuting pass `specs/supervisor_control_block12_refuter.py`, outputs in `.out.txt`):
++
++| item | runner's route | refuting route | result |
++|---|---|---|---|
++| `ε(p)` (S3) | exact maximum of `1 − r(+x | triple)` over all 216 triples with at least two entries `+x` | the maximum over the three closed-form patterns (unanimous, orthogonal `2:1`, antipodal `2:1`) at `p = 3, 10, 30, 100, 1000` | equal at all five; **F1 found here** |
++| the `2×2` memory (S4) | the full `1296`-state chain with integer numerators over a common denominator `D` (each row sums to `D`), the difference vector iterated | the same chain by `Fraction` arithmetic, rows of the all-`+x` and the all-`−x` planes multiplied out separately, `n = 1, 2` at `p = 10` | equal (`0.798539`, `0.509619`); **F2 found here** |
++| the eroder bound (S2) | 300 random islands on levels 3–12; a line; a filled triangle | every subset of size `≤ 3` of level 4 (575 islands), exhaustively | bound holds; longest life 3 |
++| the closed forms (S1) | symbolic identity against the definition | the control's independent symbolic check before the contract | equal |
++
++Findings (all fixed before the census):
++- **F1 (fixed).** The runner's first `ε` literals at `p = 30, 100, 1000` were the antipodal deviations (`31/481`, `101/7754`, `1001/971004`); the maximum there is the orthogonal one (`71/971`, `211/10211`, `2011/1002011`), since `r > q` makes `r/p` the leading deviation. The note's `ε` values and its sentence on the attaining pattern were corrected; the crossover between the antipodal and the orthogonal pattern lies between `p = 10` and `p = 30` at `(p, 1, 2)`.
++- **F2 (fixed; scientifically the important one).** The note's executed witness for S4 was the `48`-fold orbit quotient's contraction. The quotient identifies the six constant planes (they form one orbit), so its total variation is a *lower* bound for the full chain's (data processing) and it cannot see the slow mode, which is the memory of *which* constant plane the chain started from. At `p = 10` the quotient's one-step maximum is `0.393` while the full chain's distance between the all-`+x` and the all-`−x` rows is `0.799`. The full-chain memory table (`n = 1, 2, 4, 8`; `p = 3, 10, 30, 100`) was added as D1; the quotient table was kept as D1b with the corrected reading (approach to the *set* of constant planes, contracting at every coupling, below the memory at every `(p, n)`).
++- **F3 (fixed).** Decimal strings as comparison literals tripped the runner's own floating-point scan; replaced by integer decimals (`floor(10^6 x)`) compared exactly.
++- **F4 (fixed).** A method name appeared in S6 outside the allowed sections; reworded ("contour route"). The name scan now covers the front matter as well.
++
++Attempts to refute (nothing refuted): S0 is a projection identity (executed on 50 random sites); S2's proof was re-read for the case of an island touching a coordinate maximum from below (the two other predecessors exceed the maximum, so the site cannot be a majority — the argument is complete); S3's coupling was checked for the case where exactly one of `η`'s predecessors is `1` (then at most one of `ξ`'s is, so at least two of `v`'s predecessors equal `a`, and the deviation is at most `ε` by definition — complete); S4's eigenvalue continuity uses only the continuity of polynomial roots; S5's eigenvalues of `K` are the six-menu's standard three (`1`, `(p−q)/Z_1` thrice, `(p+q−2r)/Z_1` twice), rechecked by hand. Verdict of this pass: PASS-NO-BLOCKER at the supervisor's own standard, pending the owner's independent review.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block12.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block12.md
+new file mode 100644
+index 0000000000..4321be6387
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block12.md
+@@ -0,0 +1,15 @@
++# Claim status certificate — block 12 (close, 2026-09-15)
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: upstream_support
++reachability_to_target: supports
++conditional_surface_status: "S0–S5 proved for every positive triple (S4 for every finite cross-section); executed at (p,1,2) for p in {3,10,30,100,1000}; S6 is an obligation stated with its exact inputs and not claimed; conditional on the records-only reading, positivity, the six-axis menu and the monotone class as supplied conditions"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++claim_type_reason: "a projection identity (S0); closed forms verified symbolically (S1); an elementary maximum argument with an exact bound (S2); a site-by-site monotone coupling (S3); spectral continuity plus absorption in the limit (S4); the eigenvalues of K (S5); every number an exact rational; the ordered phase labeled an obligation everywhere (S6)"
++dependency_classes: "one premise node (minimal_axioms); block 05 (on main); blocks 08 and 09 (stacked; proposed, unaudited)"
++open_imports: "the six-axis menu; the product form; positivity; the monotone class as the supplied order class"
++review_loop_disposition: pending (supervisor-run block; author checks only)
++independence_class: "single seat (Fable, supervisor): control, contract with a lens pass, primary, refuting pass by the Fraction route on the full chain, the closed-form patterns and an exhaustive island generator, fold"
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block12.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block12.md
+new file mode 100644
+index 0000000000..eaf5fb0df5
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block12.md
+@@ -0,0 +1,22 @@
++# GOAL — block 12: the strong-coupling side of the three-dimensional formation law (launched 2026-09-15, on the owner's instruction to keep going on the strong-coupling phase)
++
++Branch `physics-loop/admissibility-induced-law-block12-strong-coupling-phase-20260915`, cut from block 11's tip; stacked PR (base = block 11's branch). Supervisor-run seats. Control first: `specs/supervisor_control_block12_strong_coupling.py` (+ `.out.txt`).
++
++## Exact target contract
++
++| field | content |
++|---|---|
++| Target statement | For the six-axis product rule and the monotone class on `Z^3` outside block 08's region: (S1) the exact noise map — the plane chain's kernel at a unanimous, a `2:1`-orthogonal, a `2:1`-antipodal and a tie triple in closed form, all deviations from the majority `O(1/p)` as `p → ∞` with `q, r` fixed, and the majority the most likely value iff `p > max(q, r)`; (S2) the deterministic limit is a majority rule on three predecessors that is an eroder on the level lattice: every finite island dies within `M_1 + M_2 + M_3 − t_0 + 1` levels (proved by the three coordinate maxima); (S3) the binary coarse-graining "not `+x`" of the formation process is stochastically dominated by the majority automaton with independent noise `ε(p) = max_{triples with ≥ 2 entries +x} (1 − r(+x | triple))` (proved by a site-by-site coupling), with `ε(p)` exact; (S4) for every finite cross-section the stationary plane law is unique at every coupling, but the chain's second eigenvalue tends to one as `p → ∞` (the limiting chain has the six constant planes as absorbing states) — metastability, with the exact `2×2` contraction numbers at `p = 3, 10, 30, 100`; (S5) two dimensions for contrast: the plane law is unique at every coupling and its rows are `K`-chains with correlation eigenvalue `(p − q)/Z_1 < 1`, so the two-dimensional formation law has no ordered phase at any coupling; (S6) the ordered phase in three dimensions is stated as an exact obligation, not a theorem: the classical stability theorem for noisy monotone eroders, applied to the dominating process of S3, would give at least six extremal invariant plane laws for `ε(p)` below its threshold; it is a reference here (never authority) and is not re-proved; the block's own attempt at a self-contained Peierls-type proof is recorded with the exact obstruction (the explanation graphs' size is not linear in their number of noise sites without the contour construction). |
++| Quantifiers / domain | all positive `(p, q, r)` for S1–S3, S5; every finite cross-section for S4; the exact numbers at `(p, 1, 2)`, `p ∈ {3, 10, 30, 100, 1000}` |
++| Allowed premises | `minimal_axioms`; the supplied readings of blocks 01–11; block 08's plane chain; block 09's Gibbs identification (for the remark that every limit point of box laws is Gibbs) |
++| Forbidden weakenings | no claim of an ordered phase as a theorem; no numeric threshold as evidence; no physical order or coupling selected |
++| Required edge cases | `p ≤ max(q, r)` (no majority preference; S1's last clause); the constant rule; finite cross-sections (always unique) |
++| Completion witness | proofs of S1–S5 in the note; exact certificates: the closed forms against the definition, the eroder bound on islands, the domination inequality over all `216` triples, the `2×2` contraction table, the 2D eigenvalue; the obligation S6 with the exact inputs |
++| Outcomes that do not count | a simulation of an ordered phase; a spectral gap at finite `W` presented as a phase statement |
++
++## Supervisor lens (one seat)
++- *Refuter:* "S4 is a finite-size effect, not a phase." — Stated as such: metastability at finite `W`; the phase statement is S6, an obligation. "The domination in S3 needs monotonicity." — Only of the dominating process (majority plus noise is monotone in its inputs); the true process is not required to be monotone; the coupling is site by site given the past. "An eroder plus small noise is stable — why not prove it?" — Attempted; the attempt's obstruction is recorded honestly in the note (the linear-size contour lemma), and the classical theorem is cited as a reference, not used.
++- *Prior art:* nothing on main on Toom-type stability, eroders, or an ordered phase of a formation law (search recorded in `ROUTE_PORTFOLIO.md`); the static law's ordered phase is likewise unproved on main (block 03's region is the uniqueness side).
++- *Scope:* exact; no physics selected; the block closes the strong-coupling question to the extent a session can: structure proved, obligation named exactly.
++
++Forbidden in the note: "the physical order", "the physical rule", "for every coupling", "selects the", "fires wake condition", "the Bridge weights", "the Bridge conjecture", "certified", "phase transition is proved", "ordered phase exists" (only "would exist" / "is expected" in the obligation).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+index 0d2cb1b52e..826cb6206d 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+@@ -43,3 +43,6 @@ Stacked on block 10 (#8141) → 09 (#8139) → 08 (#8138) → main. Block 11 = t
+ 
+ ## 2026-09-15 campaign close (supervisor) — value-gate exhaustion after block 11
+ Four blocks opened as the stack main ← #8138 ← #8139 ← #8141 ← #8142 (all hand-offs; never merged by the campaign). Stopped after about three and a half hours of the twenty-four authorized: the refreshed queue's remaining items are one-step variants or corollary-shaped (the region's boundary; the k ≥ 4 loci), computation-heavy (width 6), heavy and unchanged (the silent triples), or a Toom-type stability theorem (strong coupling) beyond a session's reach at the lane's re-prove-at-scope standard — recorded with its exact noise parameters in `HANDOFF_campaign_20260915_next_work.md` §3 as the highest-blast-radius residual. Lock released. Resume rule: read the campaign handoff first; the stack's base is main `7495de3076`; blocks 06–07 (#8034, #8035) remain separate open hand-offs.
++
++## 2026-09-15 block 12 opened for review as PR #8146 (supervisor)
++Stacked on block 11 (#8142) → 10 (#8141) → 09 (#8139) → 08 (#8138) → main; all hand-offs. Owner directive: keep going on the strong-coupling phase. Block 12 = the strong-coupling side of the three-dimensional monotone formation law: in level time it is a north-east-center probabilistic cellular automaton (S0); the exact noise map (unanimous `p³/(p³+q³+4r³)`, orthogonal `2:1` `p²r/V_3`, antipodal `2:1` `p²q/(pq(p+q)+4r³)`, tie `p/(3(p+q))`; majority most likely iff `p > max(q, r)`) (S1); the noiseless majority rule is an eroder with the exact bound `M_1+M_2+M_3−t_0+1` (S2); domination by the noisy majority automaton with exact `ε(p) = max(q,r)/p + O(p^{−2})` (S3); every finite cross-section unique but metastable — on `2×2` the memory of the starting constant plane after eight steps is `3·10^{−6}` at `p = 3` and `0.549` at `p = 100`, while the orbit quotient contracts at every coupling (S4); two dimensions never order (S5); the three-dimensional ordered phase is one exact obligation — the stability of the dominating noisy eroder — with the classical theorem named and not used, and the block's own contour attempt recorded with its obstruction (S6). Seats supervisor-run; the refuting pass caught the `ε` literals at `p ≥ 30` (antipodal for orthogonal) and the orbit quotient's blindness to the slow mode (the full-chain table replaced it). Certificate 20/20; 13 mutations in-family; cache pinned; gates: pipeline ×2, changed-evidence 4/0, audit_lint strict OK, vocab clean, diff --check clean. Lock held (refreshed) for the pull-up.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
+index 41c2ad9c62..e7254ab146 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
+@@ -19,3 +19,8 @@ Policy: reference and converge, never borrow; every statement used is re-proved
+ - Probabilistic cellular automata and their high-noise uniqueness by coupling (Dobrushin–Vasershtein-type conditions; Lebowitz–Maes–Speer 1990; Toom et al. 1990): Q4's causal coupling is the one-sided (monotone-path) version with the explicit path count; the region `3c < 1` is the analogue of "the sum of dependence coefficients below one", re-proved here.
+ - The contraction of a strictly positive finite stochastic matrix (Doeblin): Q3a, proved in four lines.
+ - Kolmogorov extension; Krylov–Bogolyubov invariant laws for Feller kernels on compact spaces: cited definition-level steps under Imports.
++
++## Block 12 (2026-09-15) — references named, none used, none re-proved
++- Toom (1980), "Stable and attractive trajectories in multicomponent systems": the stability of noisy monotone eroders; the north-east-center majority automaton as the classical example with at least two invariant laws at small noise. Named in the note under Prior art and Imports as the theorem S6 would rest on; not used, not re-proved (the block's own contour attempt is recorded with its obstruction).
++- Modern contour (Peierls-bound) presentations of that theorem (e.g. Bramson–Gray 1991; Gács's expositions): reference only.
++- The eroder property and its coordinate-maxima proof (S2), the domination coupling (S3) and the level-time identification (S0) are the note's own, re-proved at scope.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+index 3a4061db9a..05153933fa 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+@@ -24,3 +24,8 @@ Routes read at their proofs, not their headlines.
+ 
+ ## Block 11 (2026-09-15) — the open lemma of blocks 09–10 settled
+ - **"The third difference of `log K_3` is nonzero at every nonconstant triple" is false**: it vanishes at exactly five nonconstant points (three on the collapse lines, one mirror pair off them) and nowhere else (proved by exact elimination). The pair terms survive there (X4), so the Markov-graph conclusions of blocks 09–10 hold everywhere nonconstant; the genuine three-body statements hold off the five points.
++
++## Block 12 (2026-09-15) — negatives at scope; an obligation, not a negative
++- **The two-dimensional monotone formation law has no ordered phase at any coupling along rows and columns** (S5): rows and columns are `K`-chains with eigenvalues strictly below one for every positive triple; the two-predecessor limit has no majority. Escapes named for the N-gate: another order class; order along diagonals (not claimed either way); zero weights; a non-product rule.
++- **Every finite cross-section's plane chain is uniquely stationary at every coupling** (S4, from block 08's Q3a) — with the second eigenvalue tending to one as `p → ∞`; not a negative about `Z^3`.
++- The ordered phase in three dimensions is **not** a negative and **not** a claim: an obligation (S6) with its exact inputs. The block's own contour attempt is recorded as an obstruction, not as a no-go.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+index d385181893..d59303cc03 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+@@ -136,3 +136,13 @@ Block 11 opened for review (stacked on #8141): the exceptional locus of the thre
+ 3. The k = 4, 5, 6 loci — exact elimination on larger systems.
+ 4. The region's boundary in (p, q, r) — small.
+ 5. Width 6; the silent triples; the 3D Gaussian instance; the random-priority law's Markov structure (needs the owner's unlanded note).
++
++## Refresh at block 12 opening (2026-09-15)
++
++Block 12 opened for review (stacked on #8142): the strong-coupling side structured; the ordered phase reduced to the stability obligation with exact inputs. Ranked next:
++
++1. **The stability theorem re-proved at scope** (S6; a sparse-contour construction with explicit constants; hard; a full session at least): would turn the ordered phase into a theorem with a threshold in `p`.
++2. **A structural reason for the sextic pair** `(σ_1, σ_2)` of block 11 — small if it exists.
++3. **The loci for `k = 4, 5, 6`** — exact elimination on larger systems.
++4. **The region's boundary in `(p, q, r)`** — small.
++5. **Width 6; the silent triples; the 3D Gaussian instance; the random-priority law's Markov structure** — unchanged.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block12.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block12.md
+new file mode 100644
+index 0000000000..b9accc0b52
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block12.md
+@@ -0,0 +1,14 @@
++# RESULTS — block 12: the strong-coupling side of the three-dimensional formation law (2026-09-15)
++
++**Deliverables (branch `physics-loop/admissibility-induced-law-block12-strong-coupling-phase-20260915`, stacked on block 11):** the note `docs/ADMISSIBILITY_RULE_STRONG_COUPLING_FORMATION_LAW_LEVEL_AUTOMATON_ERODER_METASTABILITY_ORDERED_PHASE_OBLIGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md`; the runner `scripts/admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_2026_09_15.py` (20 checks, 13 mutations, exact rational and symbolic arithmetic, ~10 s); the pinned cache; the control and the refuting pass with outputs (`specs/supervisor_control_block12_strong_coupling.py`, `specs/supervisor_control_block12_refuter.py`); `GOAL_block12.md`; `CHECKER_block12_findings.md`; this record.
++
++## Result, in one paragraph
++In level time (sites with `x_1 + x_2 + x_3 = t`) the three-dimensional monotone formation law is a synchronous probabilistic cellular automaton on `Z^2` with the north-east-center neighborhood, well defined at every coupling, whose stationary two-sided chains are exactly the translation-invariant `Z^3` laws (S0). Its kernel is the rule's three-neighbor conditional, computed in closed form: unanimous `p³/(p³+q³+4r³)`, orthogonal `2:1` `p²r/V_3`, antipodal `2:1` `p²q/(pq(p+q)+4r³)`, tie `p/(3(p+q))`; every deviation from the majority is `O(1/p)`, and the majority is the most likely output iff `p > max(q, r)` (S1). The noiseless limit is a majority rule that is an eroder: a finite island of a binary coarse-graining dies within `M_1 + M_2 + M_3 − t_0 + 1` levels, by the monotonicity of the three coordinate maxima (S2). The coarse-graining "not `a`" is dominated site by site by the majority automaton with independent noise `ε(p) = max(q, r)/p + O(p^{−2})`, an exact rational (`35/44, 21/71, 71/971, 211/10211, 2011/1002011` at `(p,1,2)`, `p = 3, 10, 30, 100, 1000`), the maximum switching from the antipodal to the orthogonal `2:1` triple between `p = 10` and `p = 30` (S3). Every finite cross-section has a unique stationary plane law, but as `p → ∞` the six constant planes become absorbing and the second eigenvalue tends to one: on the `2×2` cross-section the memory of the starting constant plane after eight steps rises from `3·10^{−6}` at `p = 3` to `0.549` at `p = 100`, while the orbit quotient (the six constant planes identified) contracts at every coupling — fast collapse onto an ordered plane, slow forgetting of which (S4). In two dimensions the law is unique at every coupling, its rows are `K`-chains with eigenvalue `(p − q)/Z_1 < 1`, and the two-predecessor limit has no majority: no ordered phase at any coupling (S5). The ordered phase in three dimensions is stated as one exact obligation — the stability of the dominating noisy eroder below a threshold `ε_0`, which by S3 would give at least six extremal invariant laws — with the classical theorem named as a reference and not used, and the block's own contour attempt recorded with its obstruction (the naive explanation tree's size is not linear in the number of noise sites) (S6).
++
++## Certificate
++- Runner: `TOTAL: PASS=20 FAIL=0`; 13 mutations each in its family; no floating-point literal or conversion; classical names only under Prior art and Imports (every section including the front matter scanned).
++- Refuting pass (`CHECKER_block12_findings.md`): the full `1296`-state chain by the Fraction route agrees with the runner's integer-denominator route at `p = 10`; `ε(p)` from the three closed-form patterns equals the 216-triple maximum at all five couplings; the eroder bound holds on all 575 islands of size `≤ 3` on level 4.
++- Claim type `bounded_theorem`; status `bounded-support`; trace `upstream_support`; audit required.
++
++## Not claimed
++The ordered phase in three dimensions (an obligation, S6); the threshold `ε_0`; the static law's ordered phase; the plane chain on the infinite cross-section at strong coupling; a self-contained contour proof (attempted; obstruction recorded).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+index eb333e18f6..018a3c59e6 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+@@ -251,3 +251,16 @@ Lens (`GOAL_block11.md`): the "one witness is not pair-additivity" objection (an
+ 
+ ## block 11 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
+ 1 self-containment: PASS — inputs: this note, the axioms memo, block 08's and block 10's notes (the stack's reviewed deltas). 2 cache/execution: PASS. 3 claim-scope honesty: PASS — the exceptional points are given as minimal polynomials and isolating intervals, numeric labels marked as such. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.
++
++## block 12 — V1-V5 (supervisor, 2026-09-15)
++- V1: block 08's region `c < 1/3` leaves the strong-coupling side of the `Z^3` formation law open (its queue item); the campaign handoff §3 names the noisy-majority structure as the highest-blast-radius residual; the campaign's standing question "one law or several" now for the formation law.
++- V2: the lens pass in `GOAL_block12.md` (the "you cannot prove the stability theorem in a session" objection — answered by structuring the side exactly and stating the obligation with its inputs instead of claiming; the "2D has no phase either" objection — turned into S5; the "finite W is always unique" objection — turned into S4's metastability).
++- V3: S0–S5 proved; S6 an obligation; executed with exact arithmetic (20 checks, 13 mutations); the refuting pass found two real defects (F1 the `ε` literals; F2 the quotient cannot see the slow mode) and both were folded before the census.
++- V4: no order, corner or coupling selected; no bridge, Born or gravity statement; the reference theorem named and not used; the ordered phase not claimed anywhere (the forbidden-phrase scan carries "ordered phase exists" and "phase transition is proved").
++- V5: consumers named — the campaign's queue; #8093's assembly (the formation-law node's phase structure); the parked statistical-bridge material (read-only).
++
++## block 12 — supervisor lens pass, primary, refuting pass and fold (2026-09-15)
++Lens (`GOAL_block12.md`): as V2. Primary: the note and the runner (20 checks, 13 mutations). Refuting pass (`CHECKER_block12_findings.md`): `ε(p)` from the three closed-form patterns (caught the antipodal-for-orthogonal literals at `p ≥ 30`), the full `1296`-state chain by the `Fraction` route (caught the quotient's blindness to the slow mode; the full-chain memory table replaced it as the executed witness), an exhaustive island generator (575 islands). Two drafting defects also fixed (decimal strings under the float scan; a method name outside the allowed sections). Author checks only; independent review pending.
++
++## block 12 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
++1 self-containment: PASS — inputs: this note, the axioms memo, block 08's and block 09's notes (the stack's reviewed deltas); block 05's note on main. 2 cache/execution: PASS. 3 claim-scope honesty: PASS — the ordered phase is labeled an obligation in the scope line, the status block, the obligation table, S6, the fences and the certificate. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
+index c34086e637..d1edf86a07 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
+@@ -120,3 +120,10 @@ Classification: **open after the matched-hit review.** Routes: T-A regrouping of
+ 
+ ## Block 11 (2026-09-15) — prior-art search and routes
+ Searched commit: `origin/main` = `7495de3076`. `git grep -n -iE "pair-additive|pair additive|three-body term vanish|exceptional locus|Groebner|Gröbner|resultant" origin/main -- 'docs/*.md'` → no note classifies the vanishing set of a normalizer term; blocks 08–10 (stacked) name it as the open lemma. Classification: **open**. Routes: L-A the collapse lines (three-letter quotients; one equation each); L-B two-witness elimination off the lines (resultant; lex elimination basis; exact root isolation); L-C the full test of all 16 numerators at every candidate by reduction modulo minimal polynomials; L-D (abandoned) gcd over algebraic number fields (too slow).
++
++## Block 12 (2026-09-15) — prior-art search and routes
++Searched commits: `origin/main` = `21c50d093e` at launch and `5d3a910feb` at close.
++- `git grep -n -iE "eroder|toom|majority (vote|rule|automaton)|probabilistic cellular|north-east|level time|metastab" origin/main -- 'docs/*.md'` → only Higgs-vacuum metastability notes and one unrelated "majority rule" line in a support-table note; no note treats the formation law as a probabilistic cellular automaton or names an eroder.
++- `git grep -n -iE "strong.coupling|ordered phase|non-ergodic|nonergodic" origin/main -- 'docs/ADMISSIBILITY*.md'` → block 04's two-site criterion (the static law's weak-coupling side; its route 5 "an ordering argument" is named open); nothing on the formation law's phase.
++- Open PRs (`gh pr list`): #8138–#8142 (this stack); #8096 (formation-order covariance), #8087 (native growing formation) — neither touches the strong-coupling phase.
++Classification: **open after the matched-hit review.** Routes: S-A level-time identification (S0) — chosen, definitional; S-B the exact noise map (S1) — chosen; S-C the eroder by coordinate maxima (S2) — chosen; S-D domination by the noisy majority automaton (S3) — chosen; S-E finite-cross-section spectral continuity (S4) — chosen; S-F the two-dimensional contrast by the eigenvalues of `K` (S5) — chosen; S-G a self-contained contour proof of the stability theorem (S6) — attempted, obstruction recorded, not claimed; S-H citing the classical theorem as authority — outside the lane's policy, not taken.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+index 4cde2cbd78..a7faf5b8ed 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+@@ -168,3 +168,14 @@ source_review_correction:
+ # highest_blast_radius_residual: "strong coupling c >= 1/3: the plane chain is a noisy majority rule on three predecessors; non-uniqueness of the stationary plane law at large p needs a Toom-type stability theorem re-proved at scope; exact noise parameters in HANDOFF_campaign_20260915_next_work.md"
+ # next_exact_action: "owner review of #8138-#8142 (and #8034, #8035); next campaign: the strong-coupling phase (panel first)"
+ # lock: released
++
++# ---------------------------------------------------------------- block 12 close (2026-09-15)
++# block: 12
++# branch: physics-loop/admissibility-induced-law-block12-strong-coupling-phase-20260915 (stacked on block 11, PR #8142)
++# pr_status: opened for review — PR #8146 (base = block 11's branch); hand-off; never merged by the campaign; not a main landing
++# final_certificate: "TOTAL: PASS=20 FAIL=0; 13 mutations, census 13/13 in-family; refuting pass equal on all three routes; gates: see HANDOFF.md"
++# seats: "supervisor-run: control -> contract with a lens pass -> primary (S0-S6, runner) -> refuting pass (Fraction route on the full chain; closed-form patterns; exhaustive islands) -> fold"
++# review_findings: "level-time automaton (north-east-center); exact noise map with 1/p deviations and majority iff p > max(q,r); eroder bound M1+M2+M3-t0+1; domination with exact eps(p) = max(q,r)/p + O(1/p^2); finite-W unique but lambda_2 -> 1 (2x2 memory 0.549 after 8 steps at p=100); 2D never orders; the 3D ordered phase = the stability obligation, not claimed"
++# strongest_unresolved_proof_obligation: "the stability of the noisy majority eroder below a threshold (S6): the sparse-contour lemma"
++# next_exact_action: "queue refresh 2026-09-15 (block 12 opening): the stability theorem at scope; the sextic pair; k >= 4 loci; the region boundary"
++# lock: held (refreshed 8h at close-out; per the owner: pull up after this block and find the next high-leverage science)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+index 13b60e4bdc..60af1300c2 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+@@ -118,3 +118,14 @@ reachability_to_target: supports
+ artifact_role: theorem
+ next_trace_action: "the lemma is settled: false at exactly five nonconstant points (three on the collapse lines, one mirror pair off them), true elsewhere; blocks 08–10's three-body statements are unconditional off that set and their Markov-graph conclusions hold everywhere nonconstant. Next: the region's boundary; strong coupling; a campaign handoff. Consumers: the campaign's queue; #8093's assembly; the parked statistical-bridge material (read-only)"
+ ```
++
++# Trace gate — block 12, at PR opening (2026-09-15)
++```yaml
++trace_class: upstream_support
++target_claim_id: null
++target_blocker_text: "block 08's region c < 1/3 leaves the strong-coupling side of the Z^3 formation law open; the campaign handoff §3's residual (the noisy-majority structure and its ordered phase)"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem
++next_trace_action: "the strong-coupling side is structured exactly (level automaton; noise map; eroder; domination; finite-W metastability; 2D contrast) and reduced to one classical obligation (stability of the noisy majority eroder) with its exact inputs; the ordered phase is not claimed. Next: a contour proof re-proved at scope if the owner wants the phase as a theorem; otherwise the lane's remaining items (sextic pair; k ≥ 4 loci; region boundary). Consumers: the campaign's queue; #8093's assembly; the parked statistical-bridge material (read-only)"
++```
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block12_refuter.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block12_refuter.out.txt
+new file mode 100644
+index 0000000000..17927bcf74
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block12_refuter.out.txt
+@@ -0,0 +1,9 @@
++R1 full chain at p=10: TV(all +x, all -x) after 1 step = 0.798539 ; after 2 steps = 0.509619
++R1 the orbit quotient's 1-step max is 0.393104 < the full chain's 0.798539 : the quotient identifies +x with -x planes and cannot see the slow mode
++R1 agrees with the runner's integer-denominator computation: True True
++R2 exhaustive islands (all 575 subsets of size <= 3 of level 4): bound holds: True; longest life: 3
++R3 p=3: max over the three patterns = 35/44 (antipodal) == runner literal 35/44: True
++R3 p=10: max over the three patterns = 21/71 (antipodal) == runner literal 21/71: True
++R3 p=30: max over the three patterns = 71/971 (orthogonal) == runner literal 71/971: True
++R3 p=100: max over the three patterns = 211/10211 (orthogonal) == runner literal 211/10211: True
++R3 p=1000: max over the three patterns = 2011/1002011 (orthogonal) == runner literal 2011/1002011: True
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block12_refuter.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block12_refuter.py
+new file mode 100644
+index 0000000000..61fb0cce53
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block12_refuter.py
+@@ -0,0 +1,51 @@
++"""Refuting pass, block 12 (supervisor seat, disjoint machinery from the runner's checks):
++(R1) the 2x2 numbers on the full 1296-state chain instead of the orbit quotient — TV between the rows of the all-+x and
++     the all--x planes after n steps (the quotient identifies these two states, so it cannot see this mode);
++(R2) the eroder bound with an exhaustive small-island generator (every subset of size <= 3 of level 4);
++(R3) epsilon(p) by maximising over the three closed-form patterns instead of the 216-triple scan.
++Run from the pack: the runner is imported from the repository's scripts/ directory."""
++import importlib
++import sys
++from fractions import Fraction as F
++from itertools import combinations, product
++from pathlib import Path
++
++sys.path.insert(0, str(Path(__file__).resolve().parents[5] / "scripts"))
++r12 = importlib.import_module("admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_2026_09_15")
++M = 6
++rule = r12.Rule((10, 1, 2))
++states = list(product(range(M), repeat=4))
++P = {w: [r12.plane_transfer(rule, w, v) for v in states] for w in states}
++
++
++def tv_rows(w1, w2, n):
++    a, b = P[w1][:], P[w2][:]
++    for _ in range(n - 1):
++        a = [sum(a[i] * P[states[i]][j] for i in range(len(states))) for j in range(len(states))]
++        b = [sum(b[i] * P[states[i]][j] for i in range(len(states))) for j in range(len(states))]
++    return sum(abs(u - v) for u, v in zip(a, b)) / 2
++
++
++w_plus, w_minus = (0, 0, 0, 0), (1, 1, 1, 1)
++d1 = tv_rows(w_plus, w_minus, 1)
++d2 = tv_rows(w_plus, w_minus, 2)
++print("R1 full chain at p=10: TV(all +x, all -x) after 1 step =", r12.dec(d1, 6), "; after 2 steps =", r12.dec(d2, 6))
++print("R1 the orbit quotient's 1-step max is 0.393104 < the full chain's", r12.dec(d1, 6), ": the quotient identifies +x with -x planes and cannot see the slow mode")
++print("R1 agrees with the runner's integer-denominator computation:", r12.micro(d1) == r12.MEMORY[10][1], r12.micro(d2) == r12.MEMORY[10][2])
++pts = [(a, b, 4 - a - b) for a in range(5) for b in range(5 - a)]
++worst, ok, count = 0, True, 0
++for k in (1, 2, 3):
++    for isl in combinations(pts, k):
++        isl = set(isl)
++        T = r12.evolve_majority(isl)
++        B = r12.island_bound(isl, 4)
++        ok = ok and 0 <= T <= B
++        worst = max(worst, T)
++        count += 1
++print(f"R2 exhaustive islands (all {count} subsets of size <= 3 of level 4): bound holds: {ok}; longest life: {worst}")
++x, y, mx = 0, 2, 1
++for p in (3, 10, 30, 100, 1000):
++    rl = r12.Rule((p, 1, 2))
++    cands = {"unanimous": 1 - rl.cond((x, x, x))[x], "orthogonal": 1 - rl.cond((x, x, y))[x], "antipodal": 1 - rl.cond((x, x, mx))[x]}
++    best = max(cands, key=lambda k: cands[k])
++    print(f"R3 p={p}: max over the three patterns = {cands[best]} ({best}) == runner literal {r12.EPS_312[p]}: {cands[best] == r12.EPS_312[p]}")
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block12_strong_coupling.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block12_strong_coupling.out.txt
+new file mode 100644
+index 0000000000..88669c979d
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block12_strong_coupling.out.txt
+@@ -0,0 +1,26 @@
++=== (1) the noise map at (p, 1, 2): P(majority) for the triple patterns; deviation = 1 - P(majority)
++p=3: P(a|a,a,a)=0.45000000 dev=0.55000000; P(a|a,a,b⊥)=0.34615384 dev=0.65384615; P(a|a,a,-a)=0.20454545 dev=0.79545454; tie (a,b,c): P(a)=P(b)=P(c)=0.25000000, P(-a)=0.08333333
++p=10: P(a|a,a,a)=0.96805421 dev=0.03194578; P(a|a,a,b⊥)=0.76335877 dev=0.23664122; P(a|a,a,-a)=0.70422535 dev=0.29577464; tie (a,b,c): P(a)=P(b)=P(c)=0.30303030, P(-a)=0.03030303
++p=30: P(a|a,a,a)=0.99877926 dev=0.00122073; P(a|a,a,b⊥)=0.92687950 dev=0.07312049; P(a|a,a,-a)=0.93555093 dev=0.06444906; tie (a,b,c): P(a)=P(b)=P(c)=0.32258064, P(-a)=0.01075268
++p=100: P(a|a,a,a)=0.99996700 dev=0.00003299; P(a|a,a,b⊥)=0.97933601 dev=0.02066398; P(a|a,a,-a)=0.98697196 dev=0.01302803; tie (a,b,c): P(a)=P(b)=P(c)=0.33003300, P(-a)=0.00330033
++p=1000: P(a|a,a,a)=0.99999996 dev=0.00000003; P(a|a,a,b⊥)=0.99799303 dev=0.00200696; P(a|a,a,-a)=0.99896906 dev=0.00103093; tie (a,b,c): P(a)=P(b)=P(c)=0.33300033, P(-a)=0.00033300
++closed forms: P(a|a,a,a) = p^3/(p^3+q^3+4r^3); P(a|a,a,b⊥) = p^2 r/(r(p^2+q^2)+r^2(p+q)+2r^3); P(a|a,a,-a) = p^2 q/(pq(p+q)+4r^3); tie P(a) = p r^2/(3 r^2 (p+q)) = p/(3(p+q))
++   verified: True True True True
++
++=== (2) the deterministic majority rule on levels is an eroder: death time vs the bound M1+M2+M3 - t0 + 1
++   300 random islands (up to 12 sites, levels 3..12): every island dies; max death time 9; bound M1+M2+M3-t0+1 always holds
++   line of 6 ones on level 10: death time 6; bound 6
++   filled triangle of 15 ones on level 12: death time 9; bound 9
++
++=== (3) the 2x2 orbit quotient at (p,1,2): TV contraction after n steps (max over row pairs), n = 1, 2, 4, 8
++   p=3: [(1, '0.072029'), (2, '0.002008'), (4, '0.000001'), (8, '0.000000')]  (0.7s)
++   p=10: [(1, '0.393104'), (2, '0.113234'), (4, '0.007298'), (8, '0.000021')]  (0.9s)
++   p=30: [(1, '0.653361'), (2, '0.320619'), (4, '0.066726'), (8, '0.001813')]  (1.3s)
++   p=100: [(1, '0.734878'), (2, '0.413945'), (4, '0.110339'), (8, '0.005940')]  (1.6s)
++
++=== (4) two dimensions at (p,1,2): row flip probability 1 - p/Z1 and the row correlation eigenvalue (p-q)/Z1
++   p=3: flip prob 0.75000000, eigenvalue 0.16666666 (< 1 for every finite p: no long-range order along rows)
++   p=10: flip prob 0.47368421, eigenvalue 0.47368421 (< 1 for every finite p: no long-range order along rows)
++   p=30: flip prob 0.23076923, eigenvalue 0.74358974 (< 1 for every finite p: no long-range order along rows)
++   p=100: flip prob 0.08256880, eigenvalue 0.90825688 (< 1 for every finite p: no long-range order along rows)
++   p=1000: flip prob 0.00891972, eigenvalue 0.99008919 (< 1 for every finite p: no long-range order along rows)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block12_strong_coupling.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block12_strong_coupling.py
+new file mode 100644
+index 0000000000..1d0c0bb6f5
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block12_strong_coupling.py
+@@ -0,0 +1,99 @@
++"""Supervisor control, block 12: the strong-coupling side of the three-dimensional formation law.  Exact arithmetic.
++(1) the noise map: the kernel r(.|a,b,c) at large p — the probability of the majority value for the triple patterns
++    (a,a,a), (a,a,b perp), (a,a,-a), and the tie pattern (a,b,c distinct axes), as exact rationals and as functions of p;
++(2) the deterministic limit is a majority eroder on the level lattice: simulate the majority rule on levels from finite
++    islands and compare the death time with the bound M_1 + M_2 + M_3 - t_0 + 1 (exact integers);
++(3) finite cross-section slowdown: the 2x2 orbit quotient's TV contraction after n steps at p = 3, 10, 30, 100 (q = 1, r = 2);
++(4) two dimensions: the row flip probability 1 - p/Z_1 and the row correlation eigenvalue (p - q)/Z_1 at the same p.
++"""
++from fractions import Fraction as F
++from itertools import product, combinations
++import sys, time, random
++sys.path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parents[5] / "scripts"))
++import importlib
++r08 = importlib.import_module("admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_2026_09_15")
++M = 6
++def dec(x, n=8):
++    s = x.numerator * 10**n // x.denominator; return f"{s // 10**n}.{str(s % 10**n).zfill(n)}"
++
++print("=== (1) the noise map at (p, 1, 2): P(majority) for the triple patterns; deviation = 1 - P(majority)")
++x, mx, y, z = 0, 1, 2, 4
++for p in (3, 10, 30, 100, 1000):
++    rule = r08.Rule((p, 1, 2))
++    c_aaa = rule.cond((x, x, x))[x]
++    c_aab = rule.cond((x, x, y))[x]
++    c_aam = rule.cond((x, x, mx))[x]
++    tie = rule.cond((x, y, z))
++    print(f"p={p}: P(a|a,a,a)={dec(c_aaa)} dev={dec(1-c_aaa)}; P(a|a,a,b⊥)={dec(c_aab)} dev={dec(1-c_aab)}; P(a|a,a,-a)={dec(c_aam)} dev={dec(1-c_aam)}; tie (a,b,c): P(a)=P(b)=P(c)={dec(tie[x])}, P(-a)={dec(tie[mx])}")
++# closed forms
++import sympy as sp
++P, Q, R_ = sp.symbols('p q r', positive=True)
++Z1 = P + Q + 4*R_
++print("closed forms: P(a|a,a,a) = p^3/(p^3+q^3+4r^3); P(a|a,a,b⊥) = p^2 r/(r(p^2+q^2)+r^2(p+q)+2r^3); P(a|a,a,-a) = p^2 q/(pq(p+q)+4r^3); tie P(a) = p r^2/(3 r^2 (p+q)) = p/(3(p+q))")
++# verify the closed forms against the definition symbolically
++def orbit(s, u): return 'p' if s == u else ('q' if s//2 == u//2 else 'r')
++w = {'p': P, 'q': Q, 'r': R_}
++def cond_sym(rec, s):
++    num = sp.prod([w[orbit(s, a)] for a in rec]); den = sum(sp.prod([w[orbit(u, a)] for a in rec]) for u in range(M)); return sp.simplify(num/den)
++print("   verified:", sp.simplify(cond_sym((x,x,x), x) - P**3/(P**3+Q**3+4*R_**3)) == 0, sp.simplify(cond_sym((x,x,y), x) - P**2*R_/(R_*(P**2+Q**2)+R_**2*(P+Q)+2*R_**3)) == 0, sp.simplify(cond_sym((x,x,mx), x) - P**2*Q/(P*Q*(P+Q)+4*R_**3)) == 0, sp.simplify(cond_sym((x,y,z), x) - P/(3*(P+Q))) == 0)
++print()
++print("=== (2) the deterministic majority rule on levels is an eroder: death time vs the bound M1+M2+M3 - t0 + 1")
++def evolve_majority(island):
++    """island: set of sites (x1,x2,x3) with a common level t0; evolve the binary majority rule (1 iff >= 2 of the three
++    predecessors x-e_i are 1) level by level until empty; return the number of levels until empty."""
++    cur = set(island); t = 0
++    while cur:
++        # candidates at the next level: successors of current 1s
++        cand = set()
++        for (a, b, c) in cur:
++            cand |= {(a+1, b, c), (a, b+1, c), (a, b, c+1)}
++        nxt = set()
++        for (a, b, c) in cand:
++            n1 = ((a-1, b, c) in cur) + ((a, b-1, c) in cur) + ((a, b, c-1) in cur)
++            if n1 >= 2: nxt.add((a, b, c))
++        cur = nxt; t += 1
++        if t > 10**5: return None
++    return t
++random.seed(20260915)
++worst = 0
++for trial in range(300):
++    t0 = random.randint(3, 12)
++    # random island on level t0: choose sites with nonnegative coords summing to t0
++    pts = [(a, b, t0-a-b) for a in range(t0+1) for b in range(t0+1-a)]
++    k = random.randint(1, min(12, len(pts)))
++    isl = set(random.sample(pts, k))
++    T = evolve_majority(isl)
++    M1 = max(s[0] for s in isl); M2 = max(s[1] for s in isl); M3 = max(s[2] for s in isl)
++    bound = M1 + M2 + M3 - t0 + 1
++    assert T is not None and T <= bound, (isl, T, bound)
++    worst = max(worst, T)
++print(f"   300 random islands (up to 12 sites, levels 3..12): every island dies; max death time {worst}; bound M1+M2+M3-t0+1 always holds")
++# a "row" island: a line of L ones along e2 at level t0: dies in 1 step? and a triangle: dies slowly
++line = {(0, b, 10-b) for b in range(0, 6)}
++print(f"   line of 6 ones on level 10: death time {evolve_majority(line)}; bound {0+5+10-10+1}")
++tri = {(a, b, 12-a-b) for a in range(5) for b in range(5-a)}  # a filled triangle
++print(f"   filled triangle of 15 ones on level 12: death time {evolve_majority(tri)}; bound {4+4+12-12+1}")
++print()
++print("=== (3) the 2x2 orbit quotient at (p,1,2): TV contraction after n steps (max over row pairs), n = 1, 2, 4, 8")
++for p in (3, 10, 30, 100):
++    t0 = time.time()
++    rule = r08.Rule((p, 1, 2))
++    states, orbit_of, reps, sizes = r08.orbits_2x2()
++    n = len(reps)
++    Q = [[F(0)] * n for _ in range(n)]
++    for o, wv in enumerate(reps):
++        for v in states:
++            Q[o][orbit_of[v]] += r08.plane_transfer(rule, wv, v)
++    Qn = [row[:] for row in Q]; out = []
++    step = 1
++    for k in range(1, 9):
++        if k in (1, 2, 4, 8):
++            d = max(sum(abs(Qn[o1][o] - Qn[o2][o]) for o in range(n)) / 2 for o1 in range(n) for o2 in range(n))
++            out.append((k, dec(d, 6)))
++        Qn = [[sum(Qn[i][kk] * Q[kk][j] for kk in range(n)) for j in range(n)] for i in range(n)]
++    print(f"   p={p}: {out}  ({time.time()-t0:.1f}s)")
++print()
++print("=== (4) two dimensions at (p,1,2): row flip probability 1 - p/Z1 and the row correlation eigenvalue (p-q)/Z1")
++for p in (3, 10, 30, 100, 1000):
++    Z = p + 1 + 8
++    print(f"   p={p}: flip prob {dec(F(Z-p, Z))}, eigenvalue {dec(F(p-1, Z))} (< 1 for every finite p: no long-range order along rows)")

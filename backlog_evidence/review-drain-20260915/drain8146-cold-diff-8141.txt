@@ -1,0 +1,195 @@
+--- original/docs/ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md
++++ current/docs/ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md
+@@ -1,7 +1,7 @@
+ ---
+ claim_id: admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_bounded_theorem_note_2026-09-15
+ claim_type: bounded_theorem
+-claim_scope: "On the six Bloch-axis projector menu with the covariant positive product rule of orbit weights (p, q, r), under the records-only reading, on every finite window W of Z^3 and for every total formation order sigma with recorded sets A_x: (T1) the formation law is the product (1/6)^{#{x : A_x empty}} prod_{edges} K / prod_{|A_x| >= 2} K_{|A_x|}(v_{A_x}), a Gibbs law for the potential -log K on the edges and +log K_k on the recorded sets of size k >= 2; (T2) it is a Markov field for the recorded-set graph (the edges of W together with the pairs inside each recorded set); (T3) a positive law on a finite window has exactly one vacuum-normalized potential, and that potential of the formation law has a nonzero term on every maximal recorded set of size k >= 2 at which the k-th mixed difference of log K_k is nonzero — nonzero for k = 2, ..., 6 at (3, 1, 2) and (5, 2, 4), zero at the constant rule (executed) — while the pairs inside a recorded set are never adjacent; hence (T4) the formation law is a nearest-neighbor Markov field if and only if every recorded set has at most one element (block 01's condition, now for the Markov property), and otherwise it is Markov for no graph missing a co-recorded pair; (T5) the induced interaction reaches the orthogonal (sqrt 2) and opposite (distance 2) co-recorded neighbors and carries genuine k-body terms up to k = 6; (T6) executed canonical potentials: the plaquette whose last site records two neighbors (pair term 12/13 on the co-recorded non-adjacent pair; zero on the other non-edge on all 1296 configurations; zero four-body and three-body terms at the witness) and the star whose center forms last (three-body term 165/169 on the leaves). Nothing infinite-volume beyond citing blocks 08-09 for the monotone class; no order selected as physical; exact arithmetic throughout."
++claim_scope: "For a finite window with supplied total formation order, positive six-axis product rule and records-only reading: exact recorded-set factorization and a containing Markov graph; vacuum-normalized potential and its maximal recorded-set terms. The converse minimal-graph and genuine k-body conclusions require nonzero mixed differences on every maximal recorded-set size that occurs, verified at (3,1,2) and (5,2,4). A nearest-neighbor graph suffices whenever every recorded set has size at most one. Exact plaquette and star witnesses remain; broader negative certification is deferred."
+ upstream_dependencies:
+   - minimal_axioms
+   - admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06
+@@ -23,21 +23,19 @@
+ each group of neighbors that a site "saw" when it formed is coupled all
+ together by a normalizer term. So the pattern law is always a Gibbs law, and
+ its "who influences whom" graph is the lattice's adjacency plus, for every site,
+-the pairs among the neighbors it saw. Those extra pairs are never lattice
+-neighbors themselves, and their coupling is genuine for groups of any size from
+-two up to six. The consequence: a formation law listens only to nearest
+-neighbors precisely when no site ever saw two of its neighbors at once — the
+-same condition under which the earlier note showed it coincides with the static
+-law. Otherwise it is not a nearest-neighbor law at all, of any kind: forming
+-records with the rule creates couplings at a range the rule itself does not
+-have. Nothing here picks an order.
++the pairs among the neighbors it saw. Those extra pairs are never lattice neighbors themselves. The displayed graph
++always contains a valid Markov graph. Its minimality and genuine maximal-set
++couplings require the nonzero mixed-difference hypothesis in T4, verified at
++the two declared triples. Under that hypothesis nearest-neighbor Markovity is
++equivalent to every recorded set having size at most one. Without it, only
++the sufficient direction and the containing graph are asserted.
+ 
+ Exactly: `μ_σ(v) = (1/6)^{#{x : A_x = ∅}} Π_{xy ∈ E(W)} K(v_x, v_y) / Π_{|A_x| ≥ 2} K_{|A_x|}(v_{A_x})`
+ (T1); Markov for `G_σ = E(W) ∪ ⋃_x binom(A_x, 2)` (T2); the unique vacuum-
+ normalized potential has a nonzero term on every maximal recorded set of size
+ `k` with nonzero `k`-th mixed difference of `log K_k` — ratios `169/121`,
+ `169/165`, `25313305500289/23811286661761`, … for `k = 2, 3, 4, …, 6` at
+-`(3, 1, 2)` (T3); nearest-neighbor Markov iff `max_x |A_x| ≤ 1` (T4). Executed
++`(3, 1, 2)` (T3); under T4's nonzero maximal-set hypothesis, nearest-neighbor Markov iff `max_x |A_x| ≤ 1`. Executed
+ with exact arithmetic: 18 checks, 10 mutations.
+ 
+ ## Machine status and trace
+@@ -51,8 +49,8 @@
+ source_of_blocker_text: handoff
+ reachability_to_target: supports
+ artifact_role: theorem
+-next_trace_action: "the structure of every formation law on a finite window is now the recorded-set Gibbs law; the infinite-volume versions exist for the monotone class (blocks 08-09); next: the region's boundary in (p, q, r); a covariant order class's infinite-volume structure needs a supplied construction. Consumers: the campaign's queue; #8093's assembly (the formation-law node: any single order induces a longer-range law than the rule); the parked statistical-bridge material (read-only)"
+-conditional_surface_status: "exact on every finite window and every order for T1, T2, T4's forward direction and T5; T3 and T4's converse at triples where the relevant mixed differences are nonzero (executed for k = 2..6 at (3,1,2) and (5,2,4)); T6 executed; conditional on the records-only reading, positivity, the six-axis menu; no infinite-volume claim beyond citation"
++next_trace_action: "the structure of every formation law on a finite window is now the recorded-set Gibbs law; the infinite-volume versions exist for the monotone class (blocks 08-09); next: the region's boundary in (p, q, r); a covariant order class's infinite-volume structure needs a supplied construction. Consumers: the campaign's queue; #8093's assembly (the formation-law node: the containing graph and conditional minimality criterion); the parked statistical-bridge material (read-only)"
++conditional_surface_status: "exact on every finite window and every order for T1, T2, T4's forward direction and the range bound in T5; T3 and T4's converse at triples where the relevant mixed differences are nonzero (executed for k = 2..6 at (3,1,2) and (5,2,4)); T6 executed; conditional on the records-only reading, positivity, the six-axis menu; no infinite-volume claim beyond citation"
+ hypothetical_axiom_status: null
+ admitted_observation_status: null
+ audit_required_before_effective_retained: true
+@@ -92,6 +90,13 @@
+ `E(W) ∪ ⋃_x binom(A_x, 2)`. A recorded set is maximal if it is contained in no
+ other recorded set of `σ`. On `Z^3` two neighbors of a site are at distance
+ `√2` (orthogonal) or `2` (opposite), never adjacent: the lattice is bipartite.
++
++
++### Linked source authority
++
++- [Admissibility Rule Three Dimensional Monotone Formation Law Plane Chain Coupling Region Bounded Theorem Note 2026-09-15](ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md): only its explicit hypotheses and conclusions are used.
++
++- [Admissibility Rule Formation Law Versus Static Law Finite Window Classification Bounded Theorem Note 2026-09-06](ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md): the actual predecessor premise, restricted to the quoted theorem hypotheses.
+ 
+ ## Prior art and what is new
+ 
+@@ -191,7 +196,7 @@
+ ratio is `1` (B3). (For `k = 2` the statement is `K^2` not of rank one, i.e.
+ nonconstant; for `k = 3` it is block 08's third difference.)
+ 
+-## Theorem T4 — nearest-neighbor Markov exactly when no site records two neighbors
++## Theorem T4 — the converse graph criterion under nonzero maximal-set differences
+ 
+ **Statement.** If every recorded set of `σ` has at most one element, `μ_σ`
+ is a Markov field for `E(W)` (and equals the static law, block 01's Theorem B).
+@@ -213,8 +218,8 @@
+ range), orthogonal co-recorded neighbors (distance `√2`), opposite co-recorded
+ neighbors (distance `2`), and nothing farther; its canonical terms on maximal
+ recorded sets are genuine `k`-body terms for every `k ≤ 6` that occurs, at the
+-triples of T3. A site with all six neighbors recorded (formed last in its
+-neighborhood) carries a six-body term.
++triples of T3. Under that nonzero sixth-difference hypothesis, a site with all six
++neighbors recorded (formed last in its neighborhood) carries a six-body term.
+ 
+ *Proof.* Every recorded set is a subset of a neighborhood; the pairs inside a
+ neighborhood are at distance `√2` or `2`; T3(b) gives the body count. ∎
+@@ -239,51 +244,46 @@
+ its center outward is nearest-neighbor Markov (every leaf records one site,
+ Theorem B), while the same tree swept leaves-first is not (T4).
+ 
+-## No-Go Discipline Gate
+-
+-The negative sentence is T4's converse ("not a nearest-neighbor Markov field
+-when some site records two neighbors"). It is proved from T3 at the triples
+-named; not a route no-go beyond that scope.
+-
+-### N1 — Routes by which a formation law with a two-element recorded set could still be nearest-neighbor Markov
+-
+-| route | what it would attempt | why it fails here, or its obligation | marker |
+-|---|---|---|---|
+-| 1 cancellation between overlapping recorded sets | terms on a non-maximal set cancelling | only maximal sets are covered; a `≥ 2` set lies in a maximal `≥ 2` set, whose term has no other contributor | ATTEMPTED (proof) |
+-| 2 a triple with `Δ_k log K_k = 0` | a nonconstant `(p, q, r)` at which some `k`-body term vanishes | executed nonzero at two triples for `k ≤ 6`; not proved for all nonconstant triples | not attempted; obligation named |
+-| 3 a non-bipartite window | co-recorded neighbors that are adjacent | not on `Z^3` or any of its induced subgraphs | RULED OUT BY PRIOR (the lattice axiom) |
+-| 4 the constant rule | `p = q = r` | every term vanishes; the independent uniform law is Markov for every graph; excluded by the variation clause restricted to the menu | ATTEMPTED (control) |
+-| 5 a non-product covariant rule | the sum rule | T1's regrouping uses the product form; a different rule is a different note (block 01's family G) | not attempted; obligation named |
+-
+-### N2 — Wall-independence audit
+-Walls: `W_pos` (positivity: the canonical potential of a positive law), `W_menu`, `W_prod` (the product form of the rule), `W_Δ` (nonzero mixed differences), `W_var`. `W_Δ` implies `W_var` (the constant rule has zero differences); `W_var` does not imply `W_Δ` for every `k` (not proved). `W_pos` and `W_prod` are the definitions of the objects. No wall follows from another except as stated.
+-
+-### N3 — Hidden-wall scan
+-Scanned for "we assume", "by construction", "as is standard", "the framework provides", "naturally", "obviously", "canonical", "registered", "background", "bridge context". Hits: "canonical" as the name of the vacuum-normalized potential (defined in T3(a), not an authority). No wall was promoted.
+-
+-### N4 — Per-citation table
+-| cited surface | residual it attacks | residual claimed here | match |
+-|---|---|---|---|
+-| block 01 (on main): Theorem B and the formation-law definition | equality with the static law iff `≤ 1` recorded | T4's forward direction and the equality case | yes (parent) |
+-| block 08 (stacked): Q1e–f | the monotone class's product form and third difference | the `k = 3` case of T3(b) | yes (parent) |
+-| block 09 (stacked): L2 | the `Z^3` statement for the monotone class | cited only in the trace | yes (context) |
+-| the plane-law note (on main) | the 2D diagonal interaction | T6's plaquette as its smallest instance | yes (context) |
+-| #8102 (open; not an input) | the multiset key | consistency remark | yes (context) |
+-
+-### N5 — Resolution audit
+-| phrase | per-element | per-site | per-mode | per-block | lattice-wide |
+-|---|---|---|---|---|---|
+-| "not a nearest-neighbor Markov field when some site records two neighbors" | executed: the mixed-difference ratios at witness assignments for `k = 2..6`, three triples; the plaquette's `{a, d}` term on all 1296 configurations | executed: every site's recorded set in every order of the plaquette and the star (48 orders) | executed: the canonical terms on the edges, the diagonal, the triple and the quadruple of the plaquette; the leaves' triple of the star | executed: the two windows' full potentials at the witnesses | proved on every finite window at the named triples; infinite volume only by citation (blocks 08–09) |
+-
+-### N6 — Partial-closure paths and primitive scan
+-The registered primitives supply no order, rule or potential; none is a wall. A reframing that would make the formation law nearest-neighbor Markov is the adoption of an order class with `|A_x| ≤ 1` everywhere — impossible on any window with a plaquette (block 01) — or of a rule that is not of product class (block 01's family G, executed there as inconsistent). Not a new-axiom claim.
++## No-Go Discipline Gate — deferred broader certification
++
++This revision retains the constructive identities, quantitative bounds and named
++finite witnesses above. It does not certify the broader exclusion claims in the
++original packet. The original N1–N8 text and every recovery route are preserved
++byte-exact in [the PR8146 history manifest](work_history/review_loop/pr8146/original-manifest.json)
++under PR8141; the original branch remains a recovery handle for unlanded work.
++
++### N1 — Route coverage
++The original list includes unattempted and out-of-domain routes. It is not a
++completed route search; broader negative certification is deferred.
++
++### N2 — Walls
++The positive weights, six-axis menu, product rule and specified formation class
++remain supplied conditions, not deductions or selected physical inputs.
++
++### N3 — Hidden walls
++The statements above carry their finite-window, parameter, nonvanishing and
++invariance hypotheses explicitly. No unrestricted exclusion follows.
++
++### N4 — Citation scope
++Linked source arguments support only their stated mathematical hypotheses.
++Historical branch review and cache records are provenance, not authority.
++
++### N5 — Resolution
++Exact finite witnesses and the proved formula domains remain as stated above.
++They do not establish exhaustive route, phase or infinite-law classification.
++
++### N6 — Partial closure
++The positive results are preserved. Unproved exclusions remain open with their
++original attempted routes recoverable; no new premise closes them.
+ 
+ ### N7 — Steelman
+-Hostile reviewer: "This is the classical clique theorem plus block 01; the only
+-new fact is a table of mixed differences." Reply: the classification of the Markov graph of every formation law and the identification of its canonical terms as mixed differences of the normalizers are not in block 01, whose Theorem B compares with one specific law; the plaquette computation shows the difference concretely (the `{a, d}` term vanishes while `{b, c}` does not — the graph, not merely the law, is what the order shapes). Conceded: the classical uniqueness argument is standard; it is re-proved, not imported.
+-
+-### N8 — Cross-cycle echo
+-The nearest prior wall is block 01's Theorem B (retired by nothing; strengthened here from equality to the Markov property); blocks 08–09 are the monotone-class instances. No structurally similar wall was retired by a mechanism not considered here.
++A quantitative bound or finite discrepancy does not settle every alternative
++law or order. This revision concedes that gap rather than asserting closure.
++
++### N8 — Recovery
++The history manifest binds original heads, paths, decompressed SHA256 hashes and
++archive hashes. This deferred certificate is not a passing negative-claim gate;
++any future broader exclusion must complete the applicable discipline.
+ 
+ ## Falsifiers
+ - An order of the plaquette or the star on which T1's product form differs from the product of conditionals (B1).
+--- original/scripts/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.py
++++ current/scripts/admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_2026_09_15.py
+@@ -20,7 +20,7 @@
+ from math import prod
+ from pathlib import Path
+ 
+-AUDIT_TIMEOUT_SEC = 900
++AUDIT_TIMEOUT_SEC = 300
+ AUDIT_INPUT_PATHS = (
+     "docs/ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+     "docs/MINIMAL_AXIOMS_2026-06-29.md",
+@@ -36,7 +36,7 @@
+ BLOCK01_CLAIM_ID = "admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06"
+ BLOCK01_FRAGMENT = "at most one recorded neighbor"
+ BLOCK08_CLAIM_ID = "admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_bounded_theorem_note_2026-09-15"
+-BLOCK08_FRAGMENT = "the three-body normalizer is irreducible"
++BLOCK08_FRAGMENT = "witnessed three-body irreducibility"
+ AXIOM_NEEDLES = (
+     "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.",
+     "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.",

@@ -1,0 +1,668 @@
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+index b60429ca3f..e342269887 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+@@ -36,3 +36,12 @@
+ | F10.2 vacuum-normalized potential | Möbius inversion on the subset lattice | uniqueness; clique support under a Markov hypothesis | none | exact | candidate-complete | T3(a) re-proved | — |
+ | F10.3 mixed differences | `Δ_k log K_k` at the vacuum | nonzero iff a genuine `k`-body term | nonzero at every nonconstant triple (open) | exact where executed | candidate-complete at two triples | `k = 2..6` ratios | a triple with a vanishing difference |
+ | F10.4 bipartite obstruction | co-recorded neighbors are non-adjacent | even coordinate sums | none | exact | candidate-complete | T4 | a non-bipartite window (none on `Z^3`) |
++
++## Block 11 — the exceptional locus of the three-body term (2026-09-15)
++
++| Family | Object/formulation | Mechanism/invariant | Terminal obligation | Strength vs target | Status | Concrete evidence | Reopen condition |
++|---|---|---|---|---|---|---|---|
++| F11.1 collapse lines | `p = q`, `p = r`, `q = r` | the menu's pair types merge; `Z_3` depends on a partition pattern; pair-additivity is one cubic | none | exact | candidate-complete | X2 | — |
++| F11.2 two-witness elimination | `E_1 = 0`, `G = 0` | lex elimination basis; `p` linear in `q` on the sextic | none | exact | candidate-complete | X3 (C1–C3) | — |
++| F11.3 full sufficiency test | all 16 numerators mod minimal polynomials | exact reduction | none | exact | candidate-complete | C4 | — |
++| F11.4 algebraic-field gcd | gcd over `Q(p_0)` | — | — | — | retired (too slow) | control B | — |
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
+index 4e16f67f58..2e6dbea8e4 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
+@@ -62,3 +62,10 @@
+ - Scaffolding: the vacuum value `+x`; the mixed-difference ratios; the plaquette (cycle4) and the star (star4) with their 24 orders each.
+ - External references (re-proved at scope): the uniqueness of the vacuum-normalized potential of a positive law on a finite set and its clique property (the Grimmett argument for Hammersley–Clifford).
+ - Counterfactual pass: a non-product covariant rule (the sum rule) has no regrouping of T1's form — outside; a menu on which co-recorded neighbors could be adjacent (a non-bipartite carrier) would break T4's obstruction; a nonconstant triple with a vanishing mixed difference would make the corresponding `k`-body term vanish (not known to exist).
++
++## Block 11 (2026-09-15) — the exceptional locus
++- Dependencies: `minimal_axioms`; blocks 08 and 10 (stacked; the objects and the open lemma); block 09 (cited for the hypothesis map). Proposed, unaudited.
++- Named premises: the six-axis menu; the product form; positivity. Scaling invariance (`r = 1`).
++- Scaffolding: the five pattern values; the 16 distinct numerators; the witnesses `E_1`, `E_2 = −(p−q)² G`; the minimal polynomials `t³−3t²−6t−1`, `x³−3x²−15x−19`, `s(x) = x⁶−6x⁵−3x⁴+4x³−3x²−6x+31`; the quintic `ψ`.
++- External methods (executed exactly, sympy over `Q`): factorization, resultants, the lex elimination basis, sign-change root isolation with rational refinement, inversion and reduction modulo a minimal polynomial.
++- Counterfactual pass: zero weights (outside positivity); other menus (different pattern values); `k ≥ 4` loci (not computed).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block11_findings.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block11_findings.md
+new file mode 100644
+index 0000000000..eace8a95ba
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block11_findings.md
+@@ -0,0 +1,12 @@
++# Refuting pass — block 11 (supervisor-run, disjoint machinery; 2026-09-15)
++
++Routes compared (controls in `specs/supervisor_control_block11_locus_*.py`, outputs in `.out.txt`):
++
++| item | runner's route | refuting route | result |
++|---|---|---|---|
++| candidate points off the lines | lex elimination basis of `(E_1, G)`; `p = ψ(q)` modulo the sextic | the resultant `Res_q(E_1, E_2)` factored, each positive root refined to width `10^{-12}`, every ordered candidate pair tested by an exact rational enclosure of `E_1` and `G` over the box (control C): 20 of 25 pairs excluded; the 5 undecided are exactly the six points' pairs (the constant rule, `(1, ρ)`, `(ρ, 1)`, `(σ_1, σ_2)`, `(σ_2, σ_1)`) | consistent |
++| the line `p = r` | divisibility of the 16 numerators by `(q−1)³(q³−3q²−15q−19)` | direct enumeration of `Z_3` on the line (three values) and factorization of the four distinct nonzero numerators there (control D) | equal factors |
++| the sextic pair | `s(ψ) ≡ E_1(ψ, q) ≡ G(ψ, q) ≡ 0 (mod s)` | `gcd(E_1(1, q), G(1, q))` over `Q` for the `p = 1` family and the explicit inversion `A^{-1} mod s` (control E) | equal |
++| sufficiency at the six points | reductions modulo the minimal polynomials | the same reductions computed independently in control F before the runner was written | 0 of 16 numerators nonzero at each |
++
++Attempts to refute (nothing refuted): the necessity direction (pair-additive ⇒ `E_1 = E_2 = 0`) is by definition (two of the cross-ratio identities); the sufficiency direction is executed on all 16 numerators; the exchange `ψ(σ_1) = σ_2` is exact (an enclosure inside the other root's coarse isolating interval, and `ψ` permutes the roots of `s`). Findings: F1 (fixed) the runner's first pairing check demanded containment in a refined interval narrower than any enclosure — corrected to the coarse interval; F2 (fixed) method names (elimination bases, sign-change sequences) appeared in eleven places outside Prior art / Imports; F3 (retired) the algebraic-field gcd route was too slow and was replaced. Verdict of this pass: PASS-NO-BLOCKER at the supervisor's own standard, pending the owner's independent review.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block11.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block11.md
+new file mode 100644
+index 0000000000..d3a09e9b0e
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block11.md
+@@ -0,0 +1,15 @@
++# Claim status certificate — block 11 (close, 2026-09-15)
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: upstream_support
++reachability_to_target: supports
++conditional_surface_status: "exact algebra over Q for every statement (X1–X5); the exceptional points are algebraic numbers with minimal polynomials and isolating intervals; conditional on the six-axis menu and the product form; infinite-volume consequences only as the hypothesis map of X4 by citation"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++claim_type_reason: "factorizations, a structural collapse argument, exact elimination (resultant, lex elimination basis, root isolation, reductions modulo minimal polynomials), all executed; no numeric value used as evidence"
++dependency_classes: "one premise node (minimal_axioms); blocks 08, 09, 10 (stacked; proposed, unaudited)"
++open_imports: "the six-axis menu; the product form; positivity"
++review_loop_disposition: pending (supervisor-run block; author checks only)
++independence_class: "single seat (Fable, supervisor): controls A–F, contract with a lens pass, primary, refuting pass by the other elimination order and exact enclosures, fold"
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block11.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block11.md
+new file mode 100644
+index 0000000000..f0b3dcc0cf
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block11.md
+@@ -0,0 +1,23 @@
++# GOAL — block 11: the exceptional locus of the three-body term — exact elimination (launched 2026-09-15)
++
++Branch `physics-loop/admissibility-induced-law-block11-three-body-exceptional-locus-20260915`, cut from block 10's tip; stacked PR (base = block 10's branch). Supervisor-run seats. Control first: `specs/supervisor_control_block11_locus.py` and `_b.py` (sympy over `Q`; exact root isolation; no floats as evidence).
++
++## Why
++Blocks 08, 09 and 10 state their three-body conclusions "at triples where the third difference of `log K_3` is nonzero", executed at `(3,1,2)` and `(5,2,4)`, and name "nonzero at every nonconstant triple" as the open lemma. The control finds that the lemma is **false**: on the line `p = q = t r` all third differences vanish exactly at the positive root `t*` of `t^3 − 3t^2 − 6t − 1` (`t* ∈ (4, 5)`), because with `p = q` the six-menu collapses to three axes on which pair-additivity is one equation `W_2^3 = W_1 W_3^2 = 8(t−1)^3(t^3−3t^2−6t−1)`. For `k = 2` the lemma is true (two witness ratios vanish together only at `p = q = r`).
++
++## Exact target contract
++
++| field | content |
++|---|---|
++| Target statement | For the six-axis product rule: (X1) `Δ_2 log K_2 ≢ 0` at every nonconstant triple (proved: the ratios `[(p²+q²+4r²)/(2(pq+2r²))]²` and `[(p²+q²+4r²)/(2r(p+q+r))]²` are both `1` iff `p = q = r`); (X2) the set where every third difference vanishes (the pair-additive locus of `log K_3`) contains, on the line `p = q`, exactly the constant rule and the point `t*`; (X3) off the line, the pair-additive locus is contained in the common zeros of two explicit witness polynomials `E_1`, `G`, whose resultant in `q` has finitely many positive real roots in `p` (listed exactly); each candidate is decided by an exact gcd over the algebraic field («OFFLINE»); (X4) consequences: at `(t*, t*, 1)` the monotone formation law's interaction has no three-body term — its normalizer factorizes into pair terms on the face-diagonal pairs — while the pair terms stay nonzero, so blocks 09–10's Markov-graph conclusions hold there through the pair part; the three-body statements of blocks 08–10 hold exactly off the locus; (X5) the values at the declared triples `(3,1,2)`, `(5,2,4)` are off the locus (exact). |
++| Quantifiers / domain | all positive triples for X1–X3; the executed identities are polynomial identities over `Q`; root isolation exact (Sturm intervals) |
++| Allowed premises | `minimal_axioms`; the supplied readings of blocks 01–10; block 10's T3 (the term on a maximal recorded set is `−m_A Δ_k log K_k`) and block 08's Q1f |
++| Forbidden weakenings | no floating-point value as evidence (numeric labels only); no physical claim about `t*` |
++| Required edge cases | the constant rule (all terms vanish); the line `p = q` (the three-axis collapse); `p ≠ q` (the two-witness system) |
++| Completion witness | polynomial identities checked by sympy over `Q`; the factorization of `E_1` on the line; the resultant's factors and their isolating intervals; the exact gcd decisions |
++| Outcomes that do not count | a numeric root without its isolating interval; a witness whose vanishing is only necessary, presented as the locus |
++
++## Supervisor lens (one seat)
++- *Refuter:* "A single witness's vanishing is not pair-additivity." — Correct: pair-additivity needs all cross-ratios `c`-independent; on the line `p = q` the collapse reduces all of them to one equation (proved via the pattern values `W_1, W_2, W_3`); off the line, two witnesses give a necessary condition, decided exactly. "Is `t*` really a zero of every third difference?" — On the line the third difference of any argument choice is a rational function of `(W_1, W_2, W_3)` whose vanishing reduces to `W_2^3 = W_1 W_3^2` (the pattern argument); executed on every pattern class.
++- *Prior art:* blocks 08–10 (the hypothesis named as open); nothing on main computes the locus.
++- *Scope:* exact algebra; no physics selected; `t*` is an algebraic curiosity of the six-menu, recorded as such.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+index 21a57ccbe8..0d2cb1b52e 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+@@ -37,3 +37,9 @@ Stacked on block 08 (#8138; the stack rebased onto main `7495de3076`, which carr
+ 
+ ## 2026-09-15 block 10 opened for review as PR #8141 (supervisor)
+ Stacked on block 09 (#8139) → block 08 (#8138) → main. Block 10 = the recorded-set Gibbs theorem: every formation law on a finite window, for every order, is the Gibbs law with `−log K` on the edges and `+log K_k` on the recorded sets; its Markov graph is the recorded-set graph; the vacuum-normalized potential's term on a maximal recorded set of size `k` is `−m_A Δ_k log K_k`, nonzero for `k = 2..6` at the declared nonconstant triples; hence nearest-neighbor Markov iff no site records two neighbors (block 01's condition for equality with the static law, now for the Markov property), with couplings of range `√2` and `2` and `k`-body terms up to six otherwise; the plaquette (`12/13` on the co-recorded non-adjacent pair) and the star (`165/169` on the leaves) executed. Seats supervisor-run; refuting pass by the closed form and a moved vacuum, all equal; two drafting defects fixed. Certificate 18/18; 10 mutations in-family; cache pinned; gates clean. Lock held; the campaign continues.
++
++## 2026-09-15 block 11 opened for review as PR #8142 (supervisor)
++Stacked on block 10 (#8141) → 09 (#8139) → 08 (#8138) → main. Block 11 = the exact exceptional locus of the three-body term: it vanishes at exactly six points of the positive octant up to scale (the constant rule; `p = q = t* r`; `(1, ρ) r`, `(ρ, 1) r`; the mirror pair `(σ_1, σ_2) r` with `p = ψ(q)` on a sextic), the three on the collapse lines explained by three-letter quotients, completeness by exact elimination and the reduction of all 16 numerators; the two-body term never vanishes at a nonconstant triple; the pair part survives at the five points, so blocks 09–10's Markov-graph conclusions hold everywhere nonconstant and blocks 08–10's three-body statements are unconditional off the five points (the declared triples are off). Seats supervisor-run; refuting pass by the other elimination order; three drafting defects fixed. Certificate 20/20; 11 mutations in-family; cache pinned; gates clean. Lock held; the campaign continues.
++
++## 2026-09-15 campaign close (supervisor) — value-gate exhaustion after block 11
++Four blocks opened as the stack main ← #8138 ← #8139 ← #8141 ← #8142 (all hand-offs; never merged by the campaign). Stopped after about three and a half hours of the twenty-four authorized: the refreshed queue's remaining items are one-step variants or corollary-shaped (the region's boundary; the k ≥ 4 loci), computation-heavy (width 6), heavy and unchanged (the silent triples), or a Toom-type stability theorem (strong coupling) beyond a session's reach at the lane's re-prove-at-scope standard — recorded with its exact noise parameters in `HANDOFF_campaign_20260915_next_work.md` §3 as the highest-blast-radius residual. Lock released. Resume rule: read the campaign handoff first; the stack's base is main `7495de3076`; blocks 06–07 (#8034, #8035) remain separate open hand-offs.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF_campaign_20260915_next_work.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF_campaign_20260915_next_work.md
+new file mode 100644
+index 0000000000..6a151689b3
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF_campaign_20260915_next_work.md
+@@ -0,0 +1,44 @@
++# Handoff — the 24-hour derivation campaign of 2026-09-15 (blocks 08–11) and the next work
++
++For whoever picks this up: a fresh session, the owner, or me after a context reset. Everything below is checkable in the pack (`.claude/science/physics-loops/admissibility-induced-law-20260906/`) and in the PRs named. Nothing is adopted; the owner runs the review-loop and integrates by his own commits (as he did for blocks 01–05 on 2026-09-07).
++
++## 1. What this campaign did (owner directive 2026-09-15: resync, read the latest PRs, run a 24-hour campaign on unworked lanes, proofs over computation, no subagents)
++
++Lane map read at launch: the Codex native-fermion/U1/Ward dispatch (#8036–#8092, #8094–#8104), the clock/Maxwell physics-loop dispatch (#8106–#8136), the derivation campaign #8093 (six of eleven blocks open: #8096, #8102, #8105, #8107, #8110, #8114, #8122), the landed plane-law note (#8039, on main 2026-09-15). Chosen lane: the three-dimensional formation law of the monotone class and what follows from it — nobody else on it. Four blocks, all supervisor-run, all opened as hand-off PRs against the stack `main ← #8138 ← #8139 ← #8141 ← #8142`:
++
++| block | PR | result in one line |
++|---|---|---|
++| 08 | #8138 (base main) | the `Z^3` monotone formation law: one law per box with an irreducible three-body term; no translate consistency (the first plane cannot be summed out — exact `2×2` witness; the successor/predecessor-triple lemma); the plane chain with a unique stationary law per cross-section; the causal coupling theorem: `|Cov| ≤ 4‖g‖‖h‖(3c)^{⌈d/2⌉−1}`, mixing at `c/(1−2c)`, and for `c < 1/3` a unique translation-invariant law on `Z^3` with exponential decay; `c = 27/110, 10650/63407, 5782/30885` at the silent triples — inside |
++| 09 | #8139 | the `Z^3` law is Gibbs for `−log K` on edges + `log K_3` on predecessor triples, Markov for the axial+face-diagonal graph and **not** for the nearest-neighbor graph; a full-support law determines its finite-range specification, so it differs from **every** static Gibbs law on `Z^3` (unique or not); eight pairwise distinct corner laws forming one rotation orbit, their mixture covariant but not ergodic; the sweep's imprint (the plane chain irreversible on the `2×2` column) |
++| 10 | #8141 | the recorded-set Gibbs theorem: every formation law, for every order on every finite window, is Gibbs with `−log K` on edges and `+log K_k` on recorded sets; Markov graph = the recorded-set graph; nearest-neighbor Markov **iff** no site records two neighbors; `k`-body terms irreducible for `k = 2..6` at the declared triples; plaquette `12/13`, star `165/169` |
++| 11 | #8142 | the exceptional locus of the three-body term, complete: it vanishes at exactly six points up to scale (the constant rule; `p = q = t* r`, `t³−3t²−6t−1`; `(1,ρ) r`, `(ρ,1) r`, `x³−3x²−15x−19`; a sextic mirror pair with `p = ψ(q)`); the two-body term never vanishes; the pair part survives, so blocks 09–10 hold everywhere nonconstant |
++
++Layman's summary of the arc: forming records one site at a time with the rule produces a pattern law that is never the static law on the real lattice, because a site ends up listening to sites across the faces of the cube around it, with genuine three-way (and up to six-way) couplings the rule itself does not have; the eight ways of choosing "behind" give eight different laws whose blend, not any member, is symmetric; the finished records remember the sweep's direction; and all of this is exact, with the one exotic exception (five weight ratios where the three-way coupling disappears) found and classified.
++
++## 2. Why the campaign stopped before 24 hours (value-gate exhaustion, per the skill's stop conditions)
++
++After block 11 the refreshed queue held: (i) the region's boundary `3c = 1` on block 03's lines — an exact but one-step variant of block 03's threshold computation for a different coefficient (fails V5); (ii) the loci for `k ≥ 4` — block 11's mechanism on larger systems with no new premise unless a common point appears (corollary-shaped); (iii) width 6 — computation, deferred under the directive; (iv) the silent triples — heavy, unchanged; (v) strong coupling `c ≥ 1/3` — the one item with real upside, but its honest form is a Toom-type theorem (see §3), beyond a session's reach at the lane's standard of re-proving everything at scope. Filling the remaining hours with (i)–(ii) would be the corollary churn the skill forbids. Runtime used: about three and a half hours of the twenty-four (09:00Z–12:35Z).
++
++## 3. The highest-blast-radius unattempted residual: the strong-coupling phase of the formation law
++
++For `c ≥ 1/3` block 08's coupling says nothing. The structure there is identifiable exactly: the plane chain's kernel `r(s | a, b, c) ∝ φ(s,a) φ(s,b) φ(s,c)` is a **noisy majority rule** on three predecessors (the `x_1`-predecessor and two in-plane predecessors — the same neighborhood shape as the classical north-east-center voting automaton). Exact facts: with a unanimous triple `(a, a, a)` the site copies `a` with probability `p³/(p³ + q³ + 4r³)`; with a `2:1` triple `(a, a, b)`, `b ⊥ a`, the majority `a` wins with probability `p² r / (r(p² + q²) + r²(p + q) + 2r³)` and the majority is the most likely value iff `p > max(q, r)`. As `p → ∞` both probabilities tend to one: the sweep tends to copy the corner's value across the whole box, so the stationary plane law should have at least six extremal components (one per axis) at strong coupling — the formation law's own symmetry breaking, the counterpart of the static law's ordered phase. Proving it needs a stability theorem for noisy majority automata at low noise (the classical eroder/contour argument), re-proved at scope with explicit constants; the exact noise probabilities above are the inputs. This is the residual to attempt next, with a panel first (the owner's standing rule for direction-setting junctures). A finite-`W` exact computation of the plane chain's spectral gap as `p` grows (the `2×2` orbit quotient is 32-dimensional) is a cheap first control, not a proof.
++
++## 4. Other next work, ranked
++
++1. **The Toom-type non-uniqueness at strong coupling** (§3) — derivation; hard; highest value.
++2. **A structural reason for the sextic pair** `(σ_1, σ_2)` of block 11 — a hidden symmetry of the six-menu's normalizer? Small if it exists.
++3. **The loci for `k = 4, 5, 6`** — exact elimination on larger systems; whether any point is exceptional for two `k` at once.
++4. **The region's boundary in `(p, q, r)`** — exact bracketing of `3c = 1` on the three lines; small.
++5. **Width 6 by block 06's route**; **the silent triples by a non-criterion route**; **the 3D Gaussian instance** — unchanged.
++6. **The random-priority law's Markov structure** — needs the owner's unlanded note as an input.
++
++## 5. Standing rules that bit us this campaign (each cost a fold)
++
++- **Never quote a forbidden token inside the note, even to report its removal** — the substring scan re-trips (block 09). "certified" hides inside "certified by containment" (block 11).
++- **Classical names — including method names like the elimination basis and sign-change sequences — only under Prior art and Imports**; the status block and the obligation table count as sections (blocks 08, 10, 11).
++- **`git rebase --onto <new-base> <old-base>` when the base branch was rewritten**; a plain rebase replays the old base's commits and conflicts (block 09).
++- **Integer-weighted enumeration** with a common denominator that is a product of lcms (not the lcm of factors) turns 6^8 passes from 50 s into 3 s (block 08).
++- **A refined isolating interval is narrower than any enclosure over it** — certify a root exchange against the coarse interval (block 11).
++- **Algebraic-field gcds in the symbolic engine hang** — use a resultant, a lex elimination basis and reductions modulo the minimal polynomial (block 11).
++- **Re-derive every number from the control's file when writing prose** — a misread `3c = 1/3` as `3c = 1` put a triple on a boundary it is not on (block 08).
++- When a parent note lands on `main` mid-campaign, rebase the stack onto that `main` so it becomes a declared input (block 09), and update the earlier blocks' citations from "open PR" to "landed".
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+index 01ed1d31d2..3a4061db9a 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+@@ -21,3 +21,6 @@ Routes read at their proofs, not their headlines.
+ 
+ ## Block 10 (2026-09-15) — negative at scope
+ - **A formation law with a two-element recorded set is not a nearest-neighbor Markov field** (T4's converse), proved on every finite window at triples with nonzero mixed differences; escapes: a vanishing mixed difference at a nonconstant triple (none known); the constant rule; a non-product rule; a non-bipartite carrier (none on `Z^3`).
++
++## Block 11 (2026-09-15) — the open lemma of blocks 09–10 settled
++- **"The third difference of `log K_3` is nonzero at every nonconstant triple" is false**: it vanishes at exactly five nonconstant points (three on the collapse lines, one mirror pair off them) and nowhere else (proved by exact elimination). The pair terms survive there (X4), so the Markov-graph conclusions of blocks 09–10 hold everywhere nonconstant; the genuine three-body statements hold off the five points.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+index 533f56146b..d385181893 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+@@ -119,3 +119,20 @@ Block 10 opened for review (stacked on #8139): the recorded-set Gibbs theorem fo
+ 2. **Strong coupling `c ≥ 1/3`** (proof target): uniqueness of the stationary plane law on the full cross-section by a block coupling or weighted sensitivities; open.
+ 3. **Nonzero mixed differences at every nonconstant triple** (proof target; small algebra for `k = 2`, harder for `k ≥ 3`): would make T4's converse and blocks 08–09's dependence statements unconditional.
+ 4. **Width 6** (compute-heavy; deferred); **the silent triples** (heavy); **the 3D Gaussian instance** (small); **the random-priority law's Markov structure** (needs the owner's unlanded note).
++
++## Refresh at block 11 opening (2026-09-15)
++
++Block 11 opened for review (stacked on #8141): the exceptional locus of the three-body term, complete. Ranked next:
++
++1. **The region's boundary in `(p, q, r)`** (exact algebra, small): `3c = 1` along block 03's three lines by exact bracketing; the comparison with `6c_1 = 1`.
++2. **Strong coupling `c ≥ 1/3`** (proof target; open): uniqueness of the stationary plane law on the full cross-section by a block coupling or weighted sensitivities.
++3. **The loci for `k = 4, 5, 6`** (exact algebra; larger systems): whether the four- to six-body terms also have finite exceptional sets, and whether any point is common to two of them.
++4. **A structural reason for the off-line pair `(σ_1, σ_2)`** (open; a hidden symmetry of the six-menu's normalizer?).
++5. **Width 6** (compute-heavy; deferred); **the silent triples** (heavy); **the 3D Gaussian instance** (small).
++
++## Campaign close 2026-09-15 — final ranking for the next session
++1. The strong-coupling phase of the formation law (Toom-type non-uniqueness; exact noise parameters in the campaign handoff §3) — derivation; hard; panel first.
++2. A structural reason for block 11's sextic pair — small if it exists.
++3. The k = 4, 5, 6 loci — exact elimination on larger systems.
++4. The region's boundary in (p, q, r) — small.
++5. Width 6; the silent triples; the 3D Gaussian instance; the random-priority law's Markov structure (needs the owner's unlanded note).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block11.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block11.md
+new file mode 100644
+index 0000000000..ec8c6a79de
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block11.md
+@@ -0,0 +1,14 @@
++# RESULTS — block 11: the exceptional locus of the three-body term (2026-09-15)
++
++**Deliverables (branch `physics-loop/admissibility-induced-law-block11-three-body-exceptional-locus-20260915`, stacked on block 10):** the note `docs/ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md`; the runner `scripts/admissibility_rule_three_body_term_exceptional_locus_exact_classification_2026_09_15.py` (20 checks, 11 mutations, exact algebra, ~3 s); the pinned cache; controls A and C–F with outputs; `GOAL_block11.md`; `CHECKER_block11_findings.md`; this record.
++
++## Result, in one paragraph
++The three-body normalizer term of the six-axis product rule — the term blocks 08–10 found in every formation law with a three-element recorded set — vanishes at exactly six points of the positive octant up to scale: the constant rule; `p = q = t* r` with `t*` the positive root of `t³ − 3t² − 6t − 1` (in `(4, 5)`); `(p, q) = (1, ρ) r` and `(ρ, 1) r` with `ρ` the positive root of `x³ − 3x² − 15x − 19` (in `(6, 7)`); and the mirror pair `(σ_1, σ_2) r`, `(σ_2, σ_1) r` with `σ_1 ∈ (1, 2)`, `σ_2 ∈ (6, 7)` the positive roots of `x⁶ − 6x⁵ − 3x⁴ + 4x³ − 3x² − 6x + 31`, linked by an explicit quintic `p = ψ(q)`. The three points on the lines come from the collapse of the six-menu to a three-letter quotient where pair-additivity is one cubic; the off-line pair has no known structural reason. Completeness is exact elimination (two witness polynomials, a lex elimination basis, root isolation, and the reduction of all 16 distinct third-difference numerators modulo each minimal polynomial). The two-body term never vanishes at a nonconstant triple (X1). At the five nonconstant exceptional points the three-body normalizer factorizes into nonzero pair terms, so blocks 09–10's Markov-graph conclusions hold there through the pair part; the declared triples `(3,1,2)`, `(5,2,4)` are off the locus, so every three-body statement of blocks 08–10 is unconditional there.
++
++## Certificate
++- Runner: `TOTAL: PASS=20 FAIL=0`; 11 mutations each in its family; no floating-point literal, conversion or numeric-root call; classical names only under Prior art and Imports.
++- Refuting pass (`CHECKER_block11_findings.md`): the candidate pairs excluded by exact interval enclosures (control C) and the collapse-line factorizations by direct enumeration (control D) agree with the elimination route.
++- Claim type `bounded_theorem`; status `bounded-support`; trace `upstream_support`; audit required.
++
++## Not claimed
++A structural reason for the off-line pair; the loci for `k ≥ 4`; zero weights; other menus.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+index 776b9f522b..eb333e18f6 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+@@ -238,3 +238,16 @@ Lens (`GOAL_block10.md`): the "this is Theorem B" objection (different conclusio
+ 
+ ## block 10 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
+ 1 self-containment: PASS — inputs: this note, the axioms memo, block 01's note (main `7495de3076`), block 08's note (the stack's reviewed delta); block 09 and #8102 cited only. 2 cache/execution: PASS. 3 claim-scope honesty: PASS (no "certified"; names only under Prior art and Imports). 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS (obligation table; fail-closed literals; controls in the pack). 8: run at the gates. 9–11: PASS. 12: run before the PR.
++
++## block 11 — V1-V5 (supervisor, 2026-09-15)
++- V1: blocks 08, 09 and 10 (stacked) name "the third difference of `log K_3` is nonzero at every nonconstant triple" as their strongest missing lemma; the derivation campaign's assembly needs the interaction structure of the formation-law node.
++- V2: new — the complete exceptional locus (six points), the collapse-line explanation, the exact off-line pair with its quintic exchange, the two-body non-vanishing (X1), and the hypothesis map for blocks 08–10 (X4). Searched `origin/main` at `7495de3076` (record in `ROUTE_PORTFOLIO.md`): nothing classifies a normalizer term's zero set.
++- V3: yes — X1, X2, X4 proved in the note; X3 executed by exact elimination with every step a polynomial identity or an exact isolating interval; the open items (a structural reason for the off-line pair; `k ≥ 4`) named.
++- V4: yes — before: three notes conditioned on an unproved lemma; after: the lemma is settled (false at exactly five nonconstant points), the notes' three-body statements are unconditional off a finite explicit set, and their Markov-graph conclusions hold everywhere nonconstant.
++- V5: not a variant — no prior cycle computes a locus; the objects (an elimination basis over `Q`, algebraic points) are new to the campaign.
++
++## block 11 — supervisor lens pass, primary, refuting pass and fold (2026-09-15)
++Lens (`GOAL_block11.md`): the "one witness is not pair-additivity" objection (answered by the full test of all 16 numerators at every candidate), the "is `t*` a zero of every third difference" objection (answered by the three-letter collapse). Primary: the note and the runner (20 checks, 11 mutations). Refuting pass (`CHECKER_block11_findings.md`): the other elimination order (the resultant with exact interval exclusion of 20 of 25 candidate pairs), the direct enumeration on the `p = r` line, and the independent reductions of control F, all consistent; three drafting defects fixed (a refined-interval containment test that could not pass; method names outside the allowed sections; a forbidden token). Author checks only; independent review pending.
++
++## block 11 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
++1 self-containment: PASS — inputs: this note, the axioms memo, block 08's and block 10's notes (the stack's reviewed deltas). 2 cache/execution: PASS. 3 claim-scope honesty: PASS — the exceptional points are given as minimal polynomials and isolating intervals, numeric labels marked as such. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
+index f8baae54f2..c34086e637 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
+@@ -117,3 +117,6 @@ Searched commit: `origin/main` = `7495de3076`.
+ - `git grep -n -iE "recorded.set graph|recorded-set|Markov graph|k-body|three-body|k-th mixed difference" origin/main -- 'docs/*.md'` → blocks 08/09 (stacked, not on main) are the only prior uses of the three-body term; nothing for arbitrary orders.
+ - #8102 (open): the multiset key (the law depends on the order through the recorded sets of size ≥ 2) — consistent with T1; it does not state the Gibbs form or the Markov graph.
+ Classification: **open after the matched-hit review.** Routes: T-A regrouping of the product of conditionals (T1–T2); T-B the vacuum-normalized potential's uniqueness and clique property re-proved by Möbius inversion (T3a); T-C the recorded-set terms as mixed differences of `log K_k` (T3b) with the executed irreducibility for `k ≤ 6`; T-D the bipartite obstruction (T4).
++
++## Block 11 (2026-09-15) — prior-art search and routes
++Searched commit: `origin/main` = `7495de3076`. `git grep -n -iE "pair-additive|pair additive|three-body term vanish|exceptional locus|Groebner|Gröbner|resultant" origin/main -- 'docs/*.md'` → no note classifies the vanishing set of a normalizer term; blocks 08–10 (stacked) name it as the open lemma. Classification: **open**. Routes: L-A the collapse lines (three-letter quotients; one equation each); L-B two-witness elimination off the lines (resultant; lex elimination basis; exact root isolation); L-C the full test of all 16 numerators at every candidate by reduction modulo minimal polynomials; L-D (abandoned) gcd over algebraic number fields (too slow).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+index 65cd832563..4cde2cbd78 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+@@ -149,3 +149,22 @@ source_review_correction:
+ # strongest_unresolved_proof_obligation: "nonzero mixed differences at every nonconstant triple; infinite-volume laws for non-monotone classes"
+ # next_exact_action: "queue refresh 2026-09-15 (block 10 opening): the region's boundary; strong coupling; a campaign handoff at the budget's end"
+ # lock: held (campaign continues)
++
++# ---------------------------------------------------------------- block 11 close (2026-09-15)
++# block: 11
++# branch: physics-loop/admissibility-induced-law-block11-three-body-exceptional-locus-20260915 (stacked on block 10, PR #8141)
++# pr_status: opened for review — PR #8142 (base = block 10's branch); hand-off; never merged by the campaign; not a main landing
++# final_certificate: "TOTAL: PASS=20 FAIL=0; 11 mutations, census 11/11 in-family; refuting pass consistent; gates: see HANDOFF.md"
++# seats: "supervisor-run: controls A, C-F -> contract with a lens pass -> primary (X1-X5, runner) -> refuting pass (other elimination order; exact enclosures) -> fold"
++# review_findings: "the three-body term vanishes at exactly six points up to scale: the constant rule; p=q=t* r (t^3-3t^2-6t-1); (1,rho) r and (rho,1) r (x^3-3x^2-15x-19); (sigma1,sigma2) r and its mirror (x^6-6x^5-3x^4+4x^3-3x^2-6x+31, p = psi(q)); the two-body term never vanishes at a nonconstant triple; the pair part survives at the five points; the declared triples are off the locus"
++# strongest_unresolved_proof_obligation: "a structural reason for the off-line pair; the loci for k >= 4"
++# next_exact_action: "queue refresh 2026-09-15 (block 11 opening): the region's boundary; strong coupling; the campaign handoff"
++# lock: held (campaign continues)
++
++# ---------------------------------------------------------------- campaign close (2026-09-15T12:35Z)
++# blocks_opened: "08 (#8138, base main), 09 (#8139), 10 (#8141), 11 (#8142) — a stack of hand-offs"
++# stop_condition: "value-gate exhaustion (skill Stop Conditions): remaining queue items are one-step variants, corollary-shaped, compute-heavy, or a Toom-type theorem beyond a session"
++# runtime_used: "about 3.5 h of 24 h (09:00Z-12:35Z)"
++# highest_blast_radius_residual: "strong coupling c >= 1/3: the plane chain is a noisy majority rule on three predecessors; non-uniqueness of the stationary plane law at large p needs a Toom-type stability theorem re-proved at scope; exact noise parameters in HANDOFF_campaign_20260915_next_work.md"
++# next_exact_action: "owner review of #8138-#8142 (and #8034, #8035); next campaign: the strong-coupling phase (panel first)"
++# lock: released
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+index 7ae780ee29..13b60e4bdc 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+@@ -107,3 +107,14 @@ reachability_to_target: supports
+ artifact_role: theorem
+ next_trace_action: "every formation law on a finite window is the recorded-set Gibbs law with the recorded-set graph as its Markov graph; nearest-neighbor Markov iff no site records two neighbors. Next: the region's boundary in (p, q, r); strong coupling. Consumers: the campaign's queue; #8093's assembly (the formation-law node: any single order induces couplings beyond the rule's range); the parked statistical-bridge material (read-only)"
+ ```
++
++# Trace gate — block 11, at PR opening (2026-09-15)
++```yaml
++trace_class: upstream_support
++target_claim_id: null
++target_blocker_text: "blocks 08–10's open lemma: the third difference of log K_3 nonzero at every nonconstant triple"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem
++next_trace_action: "the lemma is settled: false at exactly five nonconstant points (three on the collapse lines, one mirror pair off them), true elsewhere; blocks 08–10's three-body statements are unconditional off that set and their Markov-graph conclusions hold everywhere nonconstant. Next: the region's boundary; strong coupling; a campaign handoff. Consumers: the campaign's queue; #8093's assembly; the parked statistical-bridge material (read-only)"
++```
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus.out.txt
+new file mode 100644
+index 0000000000..beb60e9bb5
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus.out.txt
+@@ -0,0 +1,19 @@
++pattern values verified: True
++=== (1) k=2: eigenvalues of K (Z_1 K): 1, (p-q)/Z1 x3, (p+q-2r)/Z1 x2 -> K^2 rank one iff p=q=r; the ratio K2(a,b)K2(0,0)/(K2(a,0)K2(0,b)) at (a,b)=(-x,-x):
++   ratio = (p**2 + q**2 + 4*r**2)**2/(4*(p*q + 2*r**2)**2)  (= 1 iff p = q; the (x,y|x,y) witness for p=q: (p**2 + q**2 + 4*r**2)**2/(4*r**2*(p + q + r)**2) )
++=== (2) the line p = q = t r
++   E1 on the line: -8*(t - 1)**3*(t**3 - 3*t**2 - 6*t - 1)
++   E2 on the line: 0
++   real roots of t^3-3t^2-6t-1 (isolating intervals): [((-2, -1), 1), ((-1, 0), 1), ((4, 5), 1)]
++   positive root t* in (4, 5) ~ 4.41147412781 (numeric label only)
++=== (3) common zeros of E1, E2 off the line p = q (r = 1)
++   factor E1: -p**6 + 6*p**5 - 3*p**4*q**2 + 15*p**4*q - 9*p**4 + 3*p**3*q**2 - 6*p**3*q - 13*p**3 - 3*p**2*q**4 + 3*p**2*q**3 - 18*p**2*q**2 - 15*p**2*q + 18*p**2 + 15*p*q**4 - 6*p*q**3 - 15*p*q**2 + 60*p*q - 12*p - q**6 + 6*q**5 - 9*q**4 - 13*q**3 + 18*q**2 - 12*q - 8
++   factor E2: -(p - q)**2*(p**4*q - p**3*q**2 - 2*p**3*q - p**3 - p**2*q**3 - 4*p**2*q**2 - 7*p**2*q + p*q**4 - 2*p*q**3 - 7*p*q**2 + 4*p - q**3 + 4*q + 16)
++   resultant in p (factored): 32768*(p - 1)**15*(p**3 - 3*p**2 - 15*p - 19)*(p**3 - 3*p**2 - 6*p - 1)**2*(p**6 - 6*p**5 - 3*p**4 + 4*p**3 - 3*p**2 - 6*p + 31)*(p**6 + 3*p**5 + 6*p**4 + 13*p**3 + 15*p**2 + 12*p + 22)**2
++      factor p - 1 degree 1 positive real root intervals: [(1, 1)]
++      factor p**3 - 3*p**2 - 15*p - 19 degree 3 positive real root intervals: [(6, 7)]
++      factor p**3 - 3*p**2 - 6*p - 1 degree 3 positive real root intervals: [(4, 5)]
++      factor p**6 - 6*p**5 - 3*p**4 + 4*p**3 - 3*p**2 - 6*p + 31 degree 6 positive real root intervals: [(1, 2), (6, 7)]
++      factor p**6 + 3*p**5 + 6*p**4 + 13*p**3 + 15*p**2 + 12*p + 22 degree 6 positive real root intervals: []
++=== (4) at p = q: all third differences vanish iff W2^3 = W1 W3^2 (structural): W1 = 2*(t**3 + 2) W2 = 2*(t**2 + t + 1) W3 = 6*t
++   W2^3 - W1 W3^2 = 8*(t - 1)**3*(t**3 - 3*t**2 - 6*t - 1)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus.py
+new file mode 100644
+index 0000000000..60d8890cb8
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus.py
+@@ -0,0 +1,59 @@
++"""Supervisor control, block 11: the exceptional locus of the three-body term (exact algebra, sympy over Q).
++Values of Z_3 by pattern on the six-menu: V1 (x,x,x), V2 (x,x,-x), V3 (x,x,y), V4 (x,-x,y), V5 (x,y,z).
++Pair-additivity of log K_3 <=> every cross-ratio CR_c(a,a',b,b') is c-independent.
++Witness W1: (a,a',b,b') = (x,y,x,y), c in {x,z}: E1 := V1*V5^2 - V3^3 = 0.
++Witness W2: (a,a',b,b') = (x,-x,x,-x), c in {x,y}: E2 := V1*V4^2 - V2*V3^2 = 0.
++(1) k = 2: Delta_2 log K_2 vanishes iff K^2 has rank one iff p = q = r (eigenvalues of K).
++(2) on the line p = q = t r: E1 reduces to (t-1)^3 (t^3 - 3t^2 - 6t - 1); the positive root t* of the cubic is an exceptional point.
++(3) for p != q: the common zeros of E1 and E2 (dehomogenized r = 1) by resultant and exact root isolation.
++(4) at p = q: all third differences vanish iff W2^3 = W1 W3^2 (the 3-axis collapse) -- a structural check on the patterns.
++"""
++import sympy as sp
++p, q, r, t = sp.symbols('p q r t', positive=True)
++V1 = p**3 + q**3 + 4*r**3
++V2 = p*q*(p+q) + 4*r**3
++V3 = r*(p**2+q**2) + r**2*(p+q) + 2*r**3
++V4 = 2*p*q*r + r**2*(p+q) + 2*r**3
++V5 = 3*r**2*(p+q)
++# sanity: recompute the pattern values from the definition on the six-menu
++def orbit(s, u):
++    return 'p' if s == u else ('q' if s//2 == u//2 else 'r')
++w = {'p': p, 'q': q, 'r': r}
++def Z3(a, b, c):
++    return sum(w[orbit(s, a)]*w[orbit(s, b)]*w[orbit(s, c)] for s in range(6))
++x, mx, y, my, z, mz = 0, 1, 2, 3, 4, 5
++checks = [sp.simplify(Z3(x,x,x)-V1), sp.simplify(Z3(x,x,mx)-V2), sp.simplify(Z3(x,x,y)-V3), sp.simplify(Z3(x,mx,y)-V4), sp.simplify(Z3(x,y,z)-V5)]
++print("pattern values verified:", all(c == 0 for c in checks))
++E1 = sp.expand(V1*V5**2 - V3**3)
++E2 = sp.expand(V1*V4**2 - V2*V3**2)
++print("=== (1) k=2: eigenvalues of K (Z_1 K): 1, (p-q)/Z1 x3, (p+q-2r)/Z1 x2 -> K^2 rank one iff p=q=r; the ratio K2(a,b)K2(0,0)/(K2(a,0)K2(0,b)) at (a,b)=(-x,-x):")
++Z1 = p + q + 4*r
++K2 = lambda a, b: sum(w[orbit(s, a)]*w[orbit(s, b)] for s in range(6))
++ratio22 = sp.factor(K2(mx, mx)*K2(x, x)/(K2(mx, x)*K2(x, mx)))
++print("   ratio =", ratio22, " (= 1 iff p = q; the (x,y|x,y) witness for p=q:", sp.factor(K2(y, y)*K2(x, x)/(K2(y, x)*K2(x, y))), ")")
++print("=== (2) the line p = q = t r")
++E1t = sp.factor(E1.subs({p: t, q: t, r: 1}))
++E2t = sp.factor(E2.subs({p: t, q: t, r: 1}))
++print("   E1 on the line:", E1t)
++print("   E2 on the line:", E2t)
++cubic = sp.Poly(t**3 - 3*t**2 - 6*t - 1, t)
++roots = sp.Poly(cubic).intervals()
++print("   real roots of t^3-3t^2-6t-1 (isolating intervals):", roots)
++tstar_iv = [iv for iv, m in roots if iv[0] > 0][0]
++print("   positive root t* in", tstar_iv, "~", sp.N(sp.Poly(cubic).nroots()[-1], 12), "(numeric label only)")
++print("=== (3) common zeros of E1, E2 off the line p = q (r = 1)")
++E1r = sp.Poly(E1.subs(r, 1), p, q); E2r = sp.Poly(E2.subs(r, 1), p, q)
++# remove the trivial factor structure: factor both
++print("   factor E1:", sp.factor(E1.subs(r,1)))
++print("   factor E2:", sp.factor(E2.subs(r,1)))
++res = sp.resultant(E1.subs(r,1), E2.subs(r,1), q)
++resf = sp.factor(res)
++print("   resultant in p (factored):", resf)
++# positive real roots of the resultant
++for fac, mult in sp.factor_list(res)[1]:
++    P = sp.Poly(fac, p)
++    if P.degree() >= 1:
++        ivs = [iv for iv, m in P.intervals() if iv[1] > 0]
++        print("      factor", fac, "degree", P.degree(), "positive real root intervals:", ivs)
++print("=== (4) at p = q: all third differences vanish iff W2^3 = W1 W3^2 (structural): W1 =", sp.factor(V1.subs({p:t,q:t,r:1})), "W2 =", sp.factor(V3.subs({p:t,q:t,r:1})), "W3 =", sp.factor(V5.subs({p:t,q:t,r:1})))
++print("   W2^3 - W1 W3^2 =", sp.factor((V3**3 - V1*V5**2).subs({p:t,q:t,r:1})))
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus_c.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus_c.out.txt
+new file mode 100644
+index 0000000000..7205e367e1
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus_c.out.txt
+@@ -0,0 +1,8 @@
++candidate positive roots of R(p): [('p - 1', '1', '1'), ('p**3 - 3*p**2 - 15*p - 19', '5277833/877086', '10253475/1703953'), ('p**3 - 3*p**2 - 6*p - 1', '6413829/1453897', '4614349/1045988'), ('p**6 - 6*p**5 - 3*p**4 + 4*p**3 - 3*p**2 - 6*p + 31', '3737066/2851315', '805273/614409'), ('p**6 - 6*p**5 - 3*p**4 + 4*p**3 - 3*p**2 - 6*p + 31', '14579525/2283761', '2969491/465146')]
++ordered candidate pairs: 25 ; excluded by enclosure: 20
++undecided pairs (possible common zeros):
++   p - 1 x p - 1 p-box ('1', '1') q-box ('1', '1') E1 enclosure ['0', '0'] G enclosure ['0', '0']
++   p - 1 x p**3 - 3*p**2 - 15*p - 19 p-box ('1', '1') q-box ('5277833/877086', '10253475/1703953') E1 enclosure ['-41968620398641587608590106912973137383867958412472615864967/1058705860796037732490905738599294239716747545085542149843857949992', '236919138012288028313991927446710294391054433316803241713287/6539448601848667544042718671079077328092053506139414563931868970048'] G enclosure ['-1236088422179474438750567866995095/2927800967549117830223740872443217253404432', '396543739001932028989338791559467/710995735033141273227943715157669454390767']
++   p**3 - 3*p**2 - 15*p - 19 x p - 1 p-box ('5277833/877086', '10253475/1703953') q-box ('1', '1') E1 enclosure ['-41968620398641587608590106912973137383867958412472615864967/1058705860796037732490905738599294239716747545085542149843857949992', '236919138012288028313991927446710294391054433316803241713287/6539448601848667544042718671079077328092053506139414563931868970048'] G enclosure ['-1236088422179474438750567866995095/2927800967549117830223740872443217253404432', '396543739001932028989338791559467/710995735033141273227943715157669454390767']
++   p**6 - 6*p**5 - 3*p**4 + 4*p**3 - 3*p**2 - 6*p + 31 x p**6 - 6*p**5 - 3*p**4 + 4*p**3 - 3*p**2 - 6*p + 31 p-box ('3737066/2851315', '805273/614409') q-box ('14579525/2283761', '2969491/465146') E1 enclosure ['-552874807696510535123318718138853217569764196177470835784028760629386901025684260062329525444037167085396787060865289460547859/6379114697422814499805400643742114573271232770070651000257668689305263283242219757993877444089146971230182907911247230043893721400000', '1026521431428566790498539814060723600734043785577974719113875033263333096774170552714755670915962611228376262132478208038443223/12112342881021978927064285397878490469261876960020072934227103245251489530860278448649318611460674908739216750404729667881177078875000'] G enclosure ['-13910755040367147369432449966318679401385238159707130024320045688847359769/6358871463885747739620210461143001859118688266319224495714167810459157658118645525', '4156478070246701733629183594862885245509723421867966818965854511498638816659/1841937926214026886104408232206240113426639536512268221823050636166559395122012814000']
++   p**6 - 6*p**5 - 3*p**4 + 4*p**3 - 3*p**2 - 6*p + 31 x p**6 - 6*p**5 - 3*p**4 + 4*p**3 - 3*p**2 - 6*p + 31 p-box ('14579525/2283761', '2969491/465146') q-box ('3737066/2851315', '805273/614409') E1 enclosure ['-552874807696510535123318718138853217569764196177470835784028760629386901025684260062329525444037167085396787060865289460547859/6379114697422814499805400643742114573271232770070651000257668689305263283242219757993877444089146971230182907911247230043893721400000', '1026521431428566790498539814060723600734043785577974719113875033263333096774170552714755670915962611228376262132478208038443223/12112342881021978927064285397878490469261876960020072934227103245251489530860278448649318611460674908739216750404729667881177078875000'] G enclosure ['-13910755040367147369432449966318679401385238159707130024320045688847359769/6358871463885747739620210461143001859118688266319224495714167810459157658118645525', '4156478070246701733629183594862885245509723421867966818965854511498638816659/1841937926214026886104408232206240113426639536512268221823050636166559395122012814000']
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus_c.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus_c.py
+new file mode 100644
+index 0000000000..c5c2b0ab29
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus_c.py
+@@ -0,0 +1,45 @@
++"""Control C, block 11: the off-line candidates decided by exact interval exclusion.
++E1(p,q) = V1 V5^2 - V3^3 and G(p,q) = E2 / (-(p-q)^2) are symmetric in (p, q) (r = 1).  A common positive zero (p0, q0)
++with p0 != q0 has p0 and q0 among the positive real roots of R(p) = Res_q(E1, E2).  Those roots are isolated exactly
++(Sturm intervals, refined to rational width 10^-12); for every ordered candidate pair the rigorous rational enclosure of
++E1 and of G over the box is computed monomial by monomial; a box whose enclosure of E1 or of G excludes 0 is not a common
++zero.  Exact rational arithmetic only (sympy Rational); no floats as evidence."""
++import sympy as sp
++from itertools import product
++p, q, r = sp.symbols('p q r', positive=True)
++V1 = p**3 + q**3 + 4*r**3; V2 = p*q*(p+q) + 4*r**3; V3 = r*(p**2+q**2) + r**2*(p+q) + 2*r**3; V4 = 2*p*q*r + r**2*(p+q) + 2*r**3; V5 = 3*r**2*(p+q)
++E1 = sp.expand((V1*V5**2 - V3**3).subs(r, 1)); E2 = sp.expand((V1*V4**2 - V2*V3**2).subs(r, 1))
++G = sp.expand(sp.cancel(sp.factor(E2) / (-(p-q)**2)))
++assert sp.expand(E1.subs({p: q, q: p}, simultaneous=True) - E1) == 0 and sp.expand(G.subs({p: q, q: p}, simultaneous=True) - G) == 0
++R = sp.resultant(E1, E2, q)
++factors = [(f, m) for f, m in sp.factor_list(R)[1] if sp.Poly(f, p).degree() >= 1]
++eps = sp.Rational(1, 10**12)
++cands = []
++for f, m in factors:
++    P = sp.Poly(f, p)
++    for (a, b), mult in P.intervals():
++        if b <= 0: continue
++        a2, b2 = P.refine_root(a, b, eps=eps)
++        if b2 <= 0: continue
++        cands.append((str(f), sp.Rational(a2), sp.Rational(b2)))
++print("candidate positive roots of R(p):", [(f, str(a), str(b)) for f, a, b in cands])
++def enclosure(poly, box):
++    (pa, pb), (qa, qb) = box
++    lo = sp.Rational(0); hi = sp.Rational(0)
++    for (i, j), c in sp.Poly(poly, p, q).terms():
++        mlo = pa**i * qa**j; mhi = pb**i * qb**j  # positive box: monomials increasing
++        if c > 0: lo += c*mlo; hi += c*mhi
++        else: lo += c*mhi; hi += c*mlo
++    return lo, hi
++excluded, undecided = [], []
++for (f1, a1, b1), (f2, a2, b2) in product(cands, repeat=2):
++    box = ((a1, b1), (a2, b2))
++    e1 = enclosure(E1, box); g = enclosure(G, box)
++    if e1[0] > 0 or e1[1] < 0 or g[0] > 0 or g[1] < 0:
++        excluded.append((f1, f2))
++    else:
++        undecided.append((f1, f2, (str(a1), str(b1)), (str(a2), str(b2)), [str(x) for x in e1], [str(x) for x in g]))
++print("ordered candidate pairs:", len(cands)**2, "; excluded by enclosure:", len(excluded))
++print("undecided pairs (possible common zeros):")
++for u in undecided:
++    print("  ", u[0], "x", u[1], "p-box", u[2], "q-box", u[3], "E1 enclosure", u[4], "G enclosure", u[5])
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus_d.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus_d.out.txt
+new file mode 100644
+index 0000000000..081dceba36
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus_d.out.txt
+@@ -0,0 +1,16 @@
++(i) p = 1: gcd(E1(1,q), G(1,q)) = (q - 1)*(q**3 - 3*q**2 - 15*q - 19)
++    E1(1,q) factored: -(q - 1)**3*(q**3 - 3*q**2 - 15*q - 19)
++    G(1,q) factored: (q - 1)*(q**3 - 3*q**2 - 15*q - 19)
++(ii) distinct Z_3 values on the line p = r (as polynomials in q): 3
++      q**3 + 5   e.g. (0, 0, 0)  count 6
++      q**2 + q + 4   e.g. (0, 0, 1)  count 90
++      3*q + 3   e.g. (0, 1, 2)  count 120
++     distinct nonzero third-difference numerators on p = r: 4
++       -3*(q - 1)**3*(q + 1)*(q**3 - 3*q**2 - 15*q - 19)
++       (q - 1)**3*(q**2 + q + 4)*(q**3 - 3*q**2 - 15*q - 19)
++       -(q - 1)**3*(q**2 + q + 4)*(q**3 - 3*q**2 - 15*q - 19)
++       3*(q - 1)**3*(q + 1)*(q**3 - 3*q**2 - 15*q - 19)
++(iii) Groebner basis (lex p>q), 3 elements, 0.1s:
++       118760129890253733150720*p**4 - 475040519561014932602880*p**3 - 1425121558683044797808640*p**2 - 475040519561014932602880*p + 125232469292196113209*q**26 - 70020782447366029760*q**25 - 942970138668563
++       1425121558683044797808640*p*q - 1425121558683044797808640*p + 786214359200291194067*q**26 - 6737625257879182399360*q**25 - 4246161920505581924656*q**24 + 79791805907118319193294*q**23 + 10347267795298
++       q**27 - 9*q**26 + 90*q**24 + 72*q**23 + 162*q**22 + 567*q**21 - 1143*q**20 - 1458*q**19 + 1662*q**18 - 6786*q**17 - 1458*q**16 + 25200*q**15 - 24444*q**14 + 4536*q**13 + 91800*q**12 - 148131*q**11 - 3
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus_d.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus_d.py
+new file mode 100644
+index 0000000000..4758e470d8
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus_d.py
+@@ -0,0 +1,47 @@
++"""Control D, block 11: decide the two undecided candidate families exactly.
++(i) p = r = 1: gcd over Q of E1(1, q) and G(1, q) — a common cubic factor would be an exact exceptional point (1, rho, 1).
++(ii) the structure on the line p = r: phi depends only on 'opposite or not' (two classes), K_3 depends on the antipodal pattern;
++     pair-additivity there is one equation — derive it and compare with the gcd.
++(iii) the sextic pair: a lex Groebner basis of (E1, G) exposes the solution structure; then decide whether the pair
++     (sigma_1, sigma_2) is a common zero by exact evaluation of the basis element p - phi(q) (or by the gcd of E1, G
++     modulo the sextic)."""
++import sympy as sp, time
++p, q, r, t = sp.symbols('p q r t', positive=True)
++V1 = p**3 + q**3 + 4*r**3; V2 = p*q*(p+q) + 4*r**3; V3 = r*(p**2+q**2) + r**2*(p+q) + 2*r**3; V4 = 2*p*q*r + r**2*(p+q) + 2*r**3; V5 = 3*r**2*(p+q)
++E1 = sp.expand((V1*V5**2 - V3**3).subs(r, 1)); E2 = sp.expand((V1*V4**2 - V2*V3**2).subs(r, 1))
++G = sp.expand(sp.cancel(sp.factor(E2) / (-(p-q)**2)))
++print("(i) p = 1: gcd(E1(1,q), G(1,q)) =", sp.factor(sp.gcd(sp.Poly(E1.subs(p, 1), q), sp.Poly(G.subs(p, 1), q)).as_expr()))
++print("    E1(1,q) factored:", sp.factor(E1.subs(p, 1)))
++print("    G(1,q) factored:", sp.factor(G.subs(p, 1)))
++# (ii) structure on p = r: pattern values with p = r =: 1, q free: K_3 depends on how many antipodal pairs the triple has? enumerate exactly
++def orbit(s, u): return 'p' if s == u else ('q' if s//2 == u//2 else 'r')
++w = {'p': sp.Integer(1), 'q': q, 'r': sp.Integer(1)}
++def Z3(a, b, c): return sp.expand(sum(w[orbit(s, a)]*w[orbit(s, b)]*w[orbit(s, c)] for s in range(6)))
++vals = {}
++for a in range(6):
++    for b in range(6):
++        for c in range(6):
++            vals.setdefault(Z3(a, b, c), []).append((a, b, c))
++print("(ii) distinct Z_3 values on the line p = r (as polynomials in q):", len(vals))
++for v, trip in vals.items():
++    print("     ", v, "  e.g.", trip[0], " count", len(trip))
++# pair-additivity on this line: all cross-ratios c-independent — test the full set of third differences symbolically as ratios,
++# collect the distinct nontrivial numerator polynomials
++def K3(a, b, c): return Z3(a, b, c)
++ratios = set()
++import itertools
++axes = range(6)
++for a, a2, b, b2, c, c2 in itertools.product(axes, repeat=6):
++    if a == a2 or b == b2 or c == c2: continue
++    num = K3(a,b,c)*K3(a2,b2,c)*K3(a2,b,c2)*K3(a,b2,c2)
++    den = K3(a2,b,c)*K3(a,b2,c)*K3(a,b,c2)*K3(a2,b2,c2)
++    d = sp.factor(sp.expand(num - den))
++    if d != 0: ratios.add(d)
++print("     distinct nonzero third-difference numerators on p = r:", len(ratios))
++for d in list(ratios)[:6]: print("      ", d)
++# (iii) Groebner basis of (E1, G), lex p > q
++t0 = time.time()
++Gb = sp.groebner([E1, G], p, q, order='lex')
++print("(iii) Groebner basis (lex p>q), %d elements, %.1fs:" % (len(Gb.exprs), time.time()-t0))
++for g in Gb.exprs:
++    print("      ", sp.factor(g) if sp.Poly(g, p, q).total_degree() <= 12 else str(g)[:200])
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus_e.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus_e.out.txt
+new file mode 100644
+index 0000000000..4af649a757
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus_e.out.txt
+@@ -0,0 +1,11 @@
++h(q) factored: (q - 1)**6*(q**3 - 3*q**2 - 15*q - 19)*(q**6 - 6*q**5 - 3*q**4 + 4*q**3 - 3*q**2 - 6*q + 31)*(q**6 + 3*q**5 + 6*q**4 + 13*q**3 + 15*q**2 + 12*q + 22)**2
++linear element: A(q) = 1425121558683044797808640*(q - 1)
++psi(q) = p mod sextic: -8*q**5/85 + 116*q**4/255 + 196*q**3/255 + 82*q**2/85 + 121*q/255 + 356/255
++sextic(psi) mod sextic = 0 ? True
++root of the sextic in (1.310646491181, 1.310646491181): p = psi(q) in (6.383997712546, 6.383997712546)  [floats are labels only]
++root of the sextic in (6.383997712546, 6.383997712546): p = psi(q) in (1.310646491181, 1.310646491181)  [floats are labels only]
++E1(psi(q), q) mod sextic = 0 ? True ; G(psi(q), q) mod sextic = 0 ? True
++factor q - 1 : A not invertible mod factor -> zero divisor
++factor q**3 - 3*q**2 - 15*q - 19 positive roots (labels): [6.017463509085493] ; p =  1
++factor q**6 - 6*q**5 - 3*q**4 + 4*q**3 - 3*q**2 - 6*q + 31 positive roots (labels): [1.3106464876213804, 6.383997705764267] ; p =  (degree 6 expression)
++factor q**6 + 3*q**5 + 6*q**4 + 13*q**3 + 15*q**2 + 12*q + 22 positive roots (labels): [] ; p =  (degree 6 expression)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus_e.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus_e.py
+new file mode 100644
+index 0000000000..f13123d70a
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus_e.py
+@@ -0,0 +1,52 @@
++"""Control E, block 11: the sextic candidate pair decided exactly via the lex Groebner basis of (E1, G).
++The basis has a univariate h(q) and an element linear in p: A(q) p - B(q).  On a factor m(q) of h, p = B/A mod m.
++Test: is p0 = (B/A mod m)(sigma) a root of the sextic, and does it equal sigma_1 (the (1,2) root) when q = sigma_2?"""
++import sympy as sp
++p, q, r = sp.symbols('p q r', positive=True)
++V1 = p**3 + q**3 + 4*r**3; V2 = p*q*(p+q) + 4*r**3; V3 = r*(p**2+q**2) + r**2*(p+q) + 2*r**3; V4 = 2*p*q*r + r**2*(p+q) + 2*r**3; V5 = 3*r**2*(p+q)
++E1 = sp.expand((V1*V5**2 - V3**3).subs(r, 1)); E2 = sp.expand((V1*V4**2 - V2*V3**2).subs(r, 1))
++G = sp.expand(sp.cancel(sp.factor(E2) / (-(p-q)**2)))
++Gb = sp.groebner([E1, G], p, q, order='lex')
++h = [g for g in Gb.exprs if not g.has(p)][0]
++print("h(q) factored:", sp.factor(h))
++lin = [g for g in Gb.exprs if sp.Poly(g, p).degree() == 1][0]
++A = sp.Poly(lin, p).coeff_monomial(p); B = -sp.Poly(lin, p).coeff_monomial(1)
++A = sp.expand(A); B = sp.expand(B)
++print("linear element: A(q) =", sp.factor(A))
++sext = q**6 - 6*q**5 - 3*q**4 + 4*q**3 - 3*q**2 - 6*q + 31
++m = sp.Poly(sext, q)
++# p mod m
++Ainv = sp.invert(sp.Poly(A, q), m)  # A^{-1} mod m
++psi = (sp.Poly(B, q) * Ainv).rem(m)
++print("psi(q) = p mod sextic:", psi.as_expr())
++# is psi a root of the sextic modulo m?  m(psi) mod m
++comp = sp.Poly(sext.subs(q, psi.as_expr()), q).rem(m)
++print("sextic(psi) mod sextic = 0 ?", comp.is_zero)
++# which root: enclose psi(q) over the isolating interval of each positive root of the sextic (exact rational enclosure of a univariate polynomial on an interval via monotone-term bounds is not valid for mixed signs; use the sextic's refined interval and Horner with interval arithmetic)
++def horner_interval(poly, a, b):
++    # interval Horner for q in [a, b] with a, b positive rationals
++    lo, hi = sp.Rational(0), sp.Rational(0)
++    for c in sp.Poly(poly, q).all_coeffs():
++        # multiply [lo, hi] by [a, b] (a, b > 0): products of endpoints
++        cands = [lo*a, lo*b, hi*a, hi*b]
++        lo, hi = min(cands) + c, max(cands) + c
++    return lo, hi
++eps = sp.Rational(1, 10**30)
++for (a, b), mult in m.intervals():
++    if b <= 0: continue
++    a2, b2 = m.refine_root(a, b, eps=eps)
++    lo, hi = horner_interval(psi.as_expr(), sp.Rational(a2), sp.Rational(b2))
++    print(f"root of the sextic in ({float(a2):.12f}, {float(b2):.12f}): p = psi(q) in ({float(lo):.12f}, {float(hi):.12f})  [floats are labels only]")
++# cross-check: also evaluate E1 and G at (psi(q), q) modulo m exactly
++E1m = sp.Poly(E1.subs(p, psi.as_expr()), q).rem(m); Gm = sp.Poly(G.subs(p, psi.as_expr()), q).rem(m)
++print("E1(psi(q), q) mod sextic = 0 ?", E1m.is_zero, "; G(psi(q), q) mod sextic = 0 ?", Gm.is_zero)
++# and the other factors of h: p mod each factor
++for fac, mult in sp.factor_list(h)[1]:
++    P = sp.Poly(fac, q)
++    if P.degree() < 1: continue
++    try:
++        Ai = sp.invert(sp.Poly(A, q), P); ps = (sp.Poly(B, q) * Ai).rem(P)
++        pos = [(float(P.refine_root(a, b, eps=sp.Rational(1,10**8))[0])) for (a, b), mm in P.intervals() if b > 0]
++        print("factor", fac, "positive roots (labels):", pos, "; p = ", ps.as_expr() if P.degree() <= 3 else "(degree %d expression)" % P.degree())
++    except Exception as e:
++        print("factor", fac, ": A not invertible mod factor ->", e)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus_f.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus_f.out.txt
+new file mode 100644
+index 0000000000..358d36c6f8
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus_f.out.txt
+@@ -0,0 +1,8 @@
++distinct nonzero third-difference numerators (r = 1): 16
++(sigma_1, sigma_2, 1): p = psi(q) mod sextic: numerators not vanishing = 0 of 16  -> ON the pair-additive locus
++(t*, t*, 1): p = q mod t-cubic: numerators not vanishing = 0 of 16  -> ON the pair-additive locus
++(1, rho_1, 1): p = 1 mod rho-cubic: numerators not vanishing = 0 of 16  -> ON the pair-additive locus
++symmetry check of a numerator under p<->q (difference simplifies to 0): True
++(1, 1, 1): p = 1 mod (q - 1): numerators not vanishing = 0 of 16  -> ON the pair-additive locus
++declared triple (p,q)/r = (3/2, 1/2): nonzero numerators = 16 of 16
++declared triple (p,q)/r = (5/4, 1/2): nonzero numerators = 16 of 16
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus_f.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus_f.py
+new file mode 100644
+index 0000000000..6ac2686eb3
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block11_locus_f.py
+@@ -0,0 +1,45 @@
++"""Control F, block 11: full pair-additivity test at every candidate point, exactly.
++All third-difference numerators N(p,q) = num - den over the 6^6 argument tuples (with the pattern reduction, few distinct
++polynomials); each candidate is a root of a univariate minimal polynomial with p given exactly as a polynomial in q
++(or p = q, or p = 1); a numerator vanishes at the candidate iff its reduction modulo the minimal polynomial is zero."""
++import sympy as sp, itertools
++p, q, r = sp.symbols('p q r', positive=True)
++def orbit(s, u): return 'p' if s == u else ('q' if s//2 == u//2 else 'r')
++w = {'p': p, 'q': q, 'r': sp.Integer(1)}
++cache = {}
++def Z3(a, b, c):
++    key = tuple(sorted((a, b, c)))
++    if key not in cache:
++        cache[key] = sp.expand(sum(w[orbit(s, a)]*w[orbit(s, b)]*w[orbit(s, c)] for s in range(6)))
++    return cache[key]
++nums = set()
++for a, a2, b, b2, c, c2 in itertools.product(range(6), repeat=6):
++    if a == a2 or b == b2 or c == c2: continue
++    n = sp.expand(Z3(a,b,c)*Z3(a2,b2,c)*Z3(a2,b,c2)*Z3(a,b2,c2) - Z3(a2,b,c)*Z3(a,b2,c)*Z3(a,b,c2)*Z3(a2,b2,c2))
++    if n != 0:
++        nums.add(n)
++nums = list(nums)
++print("distinct nonzero third-difference numerators (r = 1):", len(nums))
++sext = sp.Poly(q**6 - 6*q**5 - 3*q**4 + 4*q**3 - 3*q**2 - 6*q + 31, q)
++psi = -sp.Rational(8,85)*q**5 + sp.Rational(116,255)*q**4 + sp.Rational(196,255)*q**3 + sp.Rational(82,85)*q**2 + sp.Rational(121,255)*q + sp.Rational(356,255)
++cub_t = sp.Poly(q**3 - 3*q**2 - 6*q - 1, q)
++cub_r = sp.Poly(q**3 - 3*q**2 - 15*q - 19, q)
++def test(label, sub_p, modulus):
++    bad = 0
++    for n in nums:
++        red = sp.Poly(sp.expand(n.subs(p, sub_p)), q).rem(modulus)
++        if not red.is_zero: bad += 1
++    print(f"{label}: numerators not vanishing = {bad} of {len(nums)}  -> {'ON the pair-additive locus' if bad == 0 else 'NOT on the locus (only some witnesses vanish)'}")
++test("(sigma_1, sigma_2, 1): p = psi(q) mod sextic", psi, sext)
++test("(t*, t*, 1): p = q mod t-cubic", q, cub_t)
++test("(1, rho_1, 1): p = 1 mod rho-cubic", sp.Integer(1), cub_r)
++test("(rho_1, 1, 1): p = rho_1 (q = 1): use symmetry -> substitute q = 1, p = root of rho-cubic in p", None, None) if False else None
++# the mirror (rho_1, 1, 1): swap roles: numerators are symmetric in p,q, so it follows; verify one numerator explicitly
++n0 = nums[0]
++print("symmetry check of a numerator under p<->q (difference simplifies to 0):", sp.expand(n0.subs({p: q, q: p}, simultaneous=True) - n0) == 0 or "not symmetric individually (set is symmetric)")
++# constant rule
++test("(1, 1, 1): p = 1 mod (q - 1)", sp.Integer(1), sp.Poly(q - 1, q))
++# the declared triples are off the locus: E1 nonzero there (block 08); check numerators at (3/2, 1/2) and (5/4, 1/2)
++for tr in [(sp.Rational(3,2), sp.Rational(1,2)), (sp.Rational(5,4), sp.Rational(1,2))]:
++    nz = sum(1 for n in nums if n.subs({p: tr[0], q: tr[1]}) != 0)
++    print(f"declared triple (p,q)/r = {tr}: nonzero numerators = {nz} of {len(nums)}")

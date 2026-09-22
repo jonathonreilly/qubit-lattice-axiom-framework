@@ -1,6 +1,6 @@
 {
- "edge_count": 13606,
- "node_count": 6026,
+ "edge_count": 13656,
+ "node_count": 6068,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13194,6 +13194,10 @@
    "deps_hash": "eaf9417d1828",
    "out_degree": 3
   },
+  "native_global_projector_certificate_note_2026-09-10": {
+   "deps_hash": "51d0e0f274bd",
+   "out_degree": 10
+  },
   "native_growing_formation_current_bounded_theorem_note_2026-09-13": {
    "deps_hash": "d4a1bc27cca4",
    "out_degree": 5
@@ -13317,6 +13321,10 @@
   "native_virtual_pair_ring_mechanism_note_2026-09-08": {
    "deps_hash": "5c958ba514c0",
    "out_degree": 3
+  },
+  "native_ward_direct_overlap_note_2026-09-10": {
+   "deps_hash": "6d7ca52f4032",
+   "out_degree": 5
   },
   "native_weak_electric_defect_density_note_2026-09-08": {
    "deps_hash": "dd92dd1a5f46",
@@ -22801,6 +22809,166 @@
   "work_history.repo.review_feedback.pr8076-evidence.readme": {
    "deps_hash": "373a73c42070",
    "out_degree": 21
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-a_only_review-4a2ba4925dd50891": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-activation_review-86f505c728a48253": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-activation_review-cb4d66cbad2eac94": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-artifact_plan-5a8a2b441ec1dded": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-assumptions_and_imports-04947ad72d106df1": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-claim_status_certificate-4a3d4f79e164376b": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-delivery_review-a70a576883bc78bc": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-derivation-0c6763218d7734e0": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-derivation-159d5c30808e1081": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-derivation-33ba8583384f11ed": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-derivation-62709e00b4615a48": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-derivation-8c91a53ccd862d1b": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-first_fixture_failure-7a9c7136600efbe0": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-goal-525566f7a8b7cb8d": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-handoff-9ef67db77ea9ef6f": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-initial_compact_failure-b64c27ced389297c": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-initial_review-3acd7afef4b788fc": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-literature_bridges-ae1d413e72d87337": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-no_go_ledger-47d6880ce44b1ce7": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-opportunity_queue-ccb74c0b7866140d": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-parent_source_review-841d62bd2592c3a9": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-pr_backlog-b978f18b90eeb9e7": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-review-281ca1a78a5f44f6": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-review-7bc21b85e4219998": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-review-9eb580b6eb41f705": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-review-a050bc114cdca307": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-review-ced60f66502ab4dd": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-review-f61e60d9fc9a4fdd": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-review_history-3f4cb79c836849bf": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-root_review-ab0d47185b27fc31": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-route_portfolio-026cc4e1e794b8fa": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-runtime_weight_review-5109a1710d018446": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-serialization_delta-a105c34b391275d5": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-status-6c33a39439907887": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-trace_gate-f67515f6cce5b41d": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8077-evidence.readme": {
+   "deps_hash": "043fa750d53f",
+   "out_degree": 35
+  },
+  "work_history.repo.review_feedback.pr8077-forensic-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8078-evidence.kept.pr8078-handoff-9ef67db77ea9ef6f": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8078-evidence.kept.pr8078-review_history-3f4cb79c836849bf": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8078-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "work_history.repo.review_feedback.pr8084-native-feedback-evidence.pr8084-claim_status_certificate": {
    "deps_hash": "e3b0c44298fc",

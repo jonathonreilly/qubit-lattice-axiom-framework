@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8023",
+  "tree": "0efe83391c2f29a26ebeb5d4e98cab68371c8c7b",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "claim_id": "gauge_wilson_compact_cube_finite_qubit_cutoff_bounded_theorem_note_2026-09-07",
+      "primary_runner": "scripts/gauge_wilson_compact_cube_finite_qubit_cutoff_2026_09_07.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+      ]
+    },
+    {
+      "path": "docs/GAUGE_WILSON_COMPACT_CUBE_GALERKIN_SPECTRAL_ENCLOSURES_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "claim_id": "gauge_wilson_compact_cube_galerkin_spectral_enclosures_bounded_theorem_note_2026-09-07",
+      "primary_runner": "scripts/gauge_wilson_compact_cube_galerkin_spectral_enclosures_2026_09_07.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8763,
+      "misses": 4450
+    },
+    "packet_imports": {
+      "hits": 8752,
+      "misses": 4448
+    },
+    "declared_inputs": {
+      "hits": 8790,
+      "misses": 4581
+    }
+  },
+  "record_sha256": "e945cc2b12acc5fea2cf1624c4efdc1d1dd57e0b34e299e04bdf757a9bec4cea",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

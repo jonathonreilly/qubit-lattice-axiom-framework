@@ -1,0 +1,7 @@
+{
+  "base": "0ee1a0396c2160605397ecf42f3602215a572c67",
+  "source_confirmation_base": "0ee1a0396c2160605397ecf42f3602215a572c67",
+  "result": "Same base as independent final source confirmation; no intervening main changes or cross-unit interaction. Integration separately verifies exact complete source union and every declared input.",
+  "source_unit": "PR8023",
+  "draft_ready_receipt": "drain8023-mark-ready.json"
+}

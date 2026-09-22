@@ -1,0 +1,8 @@
+{
+  "status": "CONFIRMED IDENTITY-ONLY DISPOSITION GROUPING",
+  "reviewer": "/root/review_8011",
+  "mapping_sha256": "89e6b7aaa7b105ebebd03a8846bb3650acaffad0c7c03309cd143bd8e4626a2c",
+  "record_sha256": "57cedacae0c99a3f62fa9ecca7bdec0b57492fa4903ac18128e344da8e34e822",
+  "source_tree": "2d2b9031ee7c0ef7d8724f9caffa9671fc659445",
+  "reason": "Three unchanged groups of22 concatenate exactly to immutable final reviewer66-row list; per-constituent pointers correct. No source/science verdict change or rerun."
+}

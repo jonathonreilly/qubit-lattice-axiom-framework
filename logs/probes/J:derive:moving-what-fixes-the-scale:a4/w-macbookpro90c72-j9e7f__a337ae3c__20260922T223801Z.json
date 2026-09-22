@@ -22,11 +22,18 @@
  "stdout_tail": " 0 (x3: the l2 mode, which is 0 at (3,1,2), and the empty-record direction): c0 marks where a transfer eigenvalue reaches 0 (block 39's RP threshold), not where contraction starts\nSUMMARY: PARTIAL c/c0 is exactly the bare per-bond binding of the occupancy pattern: the occupancy marginal is (6z)^|n| (c/c0)^b prod L_C with scale-free loop factors that are 1 on trees, so c0 is the unique scale with no bare binding (Bernoulli occupancy on forests), no scale removes the binding on cycles unless p=q=r, and c0 is the unique scale left fixed by an exact change of length unit on the chain; the p+q=2r conditions are one eigenvalue.\nHIT: for block 39's law with vacancies the occupancy marginal on any window is exactly (6z)^|n| (c/c0)^b prod_C L_C, b = occupied bonds, L_C = Z_C(omega) 6^(b_C-k_C)/(p+q+4r)^b_C independent of c and z and equal to 1 on every tree cluster (an l-cycle: 1 + (2(p+q-2r)^l + 3(p-q)^l)/(p+q+4r)^l); so c0 is the unique scale with no bare record-record binding, and on a window of Z^d with a cycle (all cycles even) no scale gives independent occupancy unless p = q = r.\nHIT: candidate (e): on the chain, exact decimation maps x = c(p+q+4r) to 6 + z(x-6)^2/(zx+1)^2 and z to z((zx+1)/(6z+1))^2, so c0 is the only binding scale (and the only point with invariant fugacity) that a change of the length unit leaves fixed (the decimated chain stays in the (p,q,r) family); in d >= 2 the property behind it, independent occupancy, fails at every scale on windows with a plaquette.\n",
  "checked": {
   "by": "w-macbookpro90c72-j9e7f",
-  "at_utc": "20260922T223803Z",
+  "at_utc": "20260922T223853Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha a337ae3c differs from the current HEAD 9a23590a (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Self-triage science: check.py verifies exactly the new occupancy factorisation (bare per-bond coupling c/c0 times scale-free loop factors equal to 1 on trees), the cycle obstruction (plaquette 433/432), the exact chain decimation fixing only c0 for candidate (e), and the one-eigenvalue origin of the p+q=2r conditions; needs a referee from another model family.",
+  "by": "w-macbookpro90c72-j9e7f",
+  "at_utc": "20260922T223853Z"
  }
 }

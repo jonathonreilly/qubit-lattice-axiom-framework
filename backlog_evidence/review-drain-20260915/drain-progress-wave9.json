@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-09-22T21:56:21.686110+00:00",
+  "scope": "All open PRs including drafts; continue until reviewed and landed or rejected/closed.",
+  "main": "19b73e32772a990f4d9d0792013347943bc80818",
+  "closed_since_expanded_scope": [
+    8079,
+    8081,
+    8137,
+    8140,
+    8144,
+    8145,
+    8143,
+    8147,
+    8179,
+    8555,
+    8572,
+    8138,
+    8139,
+    8141,
+    8142,
+    8146,
+    8023,
+    8148,
+    8149,
+    8150,
+    8151,
+    8152
+  ],
+  "open_count": 102,
+  "draft_count_at_inventory": 27,
+  "draft8024_now_ready": true,
+  "inventory": "drain-all-backlog-wave9.json",
+  "inventory_sha256": "c2d7ae53e76e48fed09174518e10fa0c13ebd84c6b13a33a935c29574d4d7f2e",
+  "active": {
+    "integration": "train66 PR8024 fullmath salvage gate",
+    "ready_source": "train67 PR8153 partialpositive salvage finalchecked",
+    "author": "PR8154/8155/8157; PR8025 packaging",
+    "review": "original same-session source confirmations"
+  },
+  "review_skill": "Local and current-main review-loop match as last verified; landing changes no skill files."
+}

@@ -19,14 +19,21 @@
  "stdout_sha256": "b647762785ff853e2e1e85378604663f214c96b554ce44d6069b25fff12e1937",
  "stdout_tail": " 'authority': 'none', 'audit': 'unset', 'elapsed_seconds': 0.2536620830069296, 'peak_rss_bytes': 74989568, 'six_wall_ledger': {'C_ref': 'matter transition and finite recycling constructed; beta/preparation/trap/ledger reference supplied', 'C_num': 'exact projective, integer, composition and refinement residuals plus explicit localized leakage; no empirical scale', 'C_wrap': 'finite two-word reusable ledger closes fresh-bank-per-prefix at capacity 256; unbounded/noisy renewal open', 'C_int': 'actual mass/contact recurrence consumed without calling phase energy or generator entry a rate', 'C_local': 'onsite projector/latch, adjacent transport, 48-M2 echo and all24/all576; autonomous localization/trap derivation open', 'C_source': 'contact/source phase common-mode control only; no physical stress/gravity/backreaction'}}\nSUMMARY_JSON {\"audit\": \"unset\", \"authority\": \"none\", \"axiom_pressure\": false, \"elapsed_seconds_internal\": 0.26748208299977705, \"maximum_RSS_bytes_internal\": 75071488, \"route_A_maximum_residual\": 1.1102230246251565e-15, \"route_B_all576_failures\": 0, \"route_B_localized_held_signal\": 0.028434180567826095, \"route_B_maximum_comparison_inverse_residual\": 1.1120291758370948e-15, \"route_B_maximum_comparison_norm_residual\": 1.1102230246251565e-15, \"route_C_maximum_residual\": 8.589666825289268e-16, \"shared_substrate_obstruction\": false, \"status\": \"cycle573-physical-matter-transition-clock-equivalence-tournament\", \"tests_failed\": 1, \"tests_passed\": 6}\n\nRESULT pass=6 fail=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260922T090750Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T190747Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 860d87e2 differs from the current HEAD ca3ef2a3 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "The probe clone is shallow (/tmp/probes-view and its slot worktrees are grafted at 5938336a45, 2026-09-21), so the runner's git-history gate cannot see older commits: for cycle573 the 'accepted Cycle570 commit is ancestral' check, for the Poisson certificate the 'runner and completed receipt last changed together' check (git log -1 returns the graft), fail; every physics check passes (as w-macbookpro90c72-2 found with its own graft f1d08841be0). This corrects an earlier stale verdict of mine on the 46cc6c62 log.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T190747Z"
  }
 }

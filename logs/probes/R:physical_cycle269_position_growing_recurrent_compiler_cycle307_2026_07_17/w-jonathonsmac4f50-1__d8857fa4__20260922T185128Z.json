@@ -19,14 +19,21 @@
  "stdout_sha256": "8cce591c6d6a8b3e5ae6105bf4eaf34aa08e06d20bc0ce79672680a63aa06453",
  "stdout_tail": " = constant 21 M2 per cell', 'bounded_factors': 'onsite six-mode coin, local reverse, and outer stream/catch-up factors', 'not_supplied': 'global parity service, Jordan-Wigner string, host anchor selector, or recurrent projection', 'open': 'absolute preparation, locally enforced role, autonomous full-Hilbert extension, primitive synthesis, and full Fock'}\nFAIL N4 locks each decisive residual to its matching file and line :: [{'path': 'scripts/physical_cycle269_position_growing_recurrent_compiler_cycle307_2026_07_17.py', 'line': 471, 'fragment': 'complete cross-anchor Gram', 'match': False}, {'path': 'scripts/physical_cycle269_position_growing_recurrent_compiler_cycle307_2026_07_17.py', 'line': 546, 'fragment': 'actual recurrent coin-plus', 'match': False}, {'path': 'scripts/physical_cycle269_position_growing_recurrent_compiler_cycle307_2026_07_17.py', 'line': 753, 'fragment': 'direct sparse composite law exactly', 'match': False}, {'path': 'scripts/physical_cycle269_position_growing_recurrent_compiler_cycle307_2026_07_17.py', 'line': 765, 'fragment': 'homogeneous composite matrix-unit grammar', 'match': False}, {'path': 'scripts/physical_cycle269_position_growing_recurrent_compiler_cycle307_2026_07_17.py', 'line': 882, 'fragment': 'multi-step orbit growth is counted', 'match': False}, {'path': 'scripts/physical_cycle269_position_growing_recurrent_compiler_cycle307_2026_07_17.py', 'line': 1039, 'fragment': 'coarse Cycle-219 mass fixture', 'match': False}]\nTOTAL PASS=25 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260922T185217Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T190746Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha d8857fa4 differs from the current HEAD ca3ef2a3 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main, provenance level: the only failure is N4's exact line pins. The note pins its six witnesses to runner lines 471, 546, 753, 765, 882, 1039, but commit f1e2dc7c17 (2026-07-18, 'repro: make campaign methodology pins ancestry-stable') removed one line above them in this runner and the pins were not updated; the fragments now sit at lines 470, 545, 752, 764, 881, 1038. The other 25 checks pass, including every computation.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T190746Z"
  }
 }

@@ -19,14 +19,21 @@
  "stdout_sha256": "7d0d1ee4ac175937e221fc34967ac76b06f8d3fc8100be3386df55ad17632482",
  "stdout_tail": " contains the complete twelve-row directional implication table :: {'rows': 12, 'missing': []}\nPASS N3-N5 expose a zero-hit scan, exact file-line witnesses, and a multi-resolution table :: \nPASS N6-N8 retain the constructive closure, hostile counterargument, and actual cross-cycle echo :: \nFAIL all six N4 witness locations resolve to nonempty source lines :: {'citations': [('PARITY_DOUBLING_SPECTATOR_COMPILER_CYCLE248_NOTE_2026-07-17.md', '112'), ('PARITY_DOUBLING_SPECTATOR_COMPILER_CYCLE248_NOTE_2026-07-17.md', '115'), ('COHERENT_GAMMA_PARITY_SECTOR_DOUBLING_CYCLE264_NOTE_2026-07-17.md', '27'), ('DRESSED_SPOKE_PARITY_GAUGE_CYCLE273_NOTE_2026-07-17.md', '39'), ('PHYSICAL_CYCLE269_JOINT_SIX_MODE_COIN_LIFT_CYCLE302_NOTE_2026-07-17.md', '46'), ('PHYSICAL_CYCLE269_COIN_STREAM_CONTACT_COMMON_REFINEMENT_CYCLE304_NOTE_2026-07-17.md', '89')], 'failures': [('PARITY_DOUBLING_SPECTATOR_COMPILER_CYCLE248_NOTE_2026-07-17.md', 112, 'missing file'), ('PARITY_DOUBLING_SPECTATOR_COMPILER_CYCLE248_NOTE_2026-07-17.md', 115, 'missing file'), ('COHERENT_GAMMA_PARITY_SECTOR_DOUBLING_CYCLE264_NOTE_2026-07-17.md', 27, 'missing file'), ('DRESSED_SPOKE_PARITY_GAUGE_CYCLE273_NOTE_2026-07-17.md', 39, 'missing file')]}\nPASS the ledger assigns role enforcement to C_local while C_ref and C_wrap remain unchanged :: \nPASS the planning scores rise only in operational and matter lanes :: ()\nPASS the supplied-structure inventory names every release-critical imported object :: ()\nSUMMARY {'pass': 10, 'fail': 1}\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260922T185306Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T190747Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha d8857fa4 differs from the current HEAD ca3ef2a3 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "The only failure is 'all six N4 witness locations resolve to nonempty source lines': four of the six citations point to notes the runner reads under docs/work_history/repo/review_feedback/ that now live at archive/notes/docs/work_history/repo/review_feedback/ with the same names (PARITY_DOUBLING_SPECTATOR_COMPILER_CYCLE248 twice, COHERENT_GAMMA_PARITY_SECTOR_DOUBLING_CYCLE264, DRESSED_SPOKE_PARITY_GAUGE_CYCLE273), hence 'missing file'; the Cycle-302 and Cycle-304 notes are still in place.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T190747Z"
  }
 }

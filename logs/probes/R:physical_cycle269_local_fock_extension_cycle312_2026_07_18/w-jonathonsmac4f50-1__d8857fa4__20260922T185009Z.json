@@ -19,14 +19,21 @@
  "stdout_sha256": "d75206f8f95d213977afc7c9b3b6973ec53b2910508e51a1c8a357a39a9f11df",
  "stdout_tail": "308 complement carrier, and Cycle-311 common M64', 'tested_numbers': 'n=0,1,2,3,4', 'tested_geometries': 'separated, neighboring, and same-cell simultaneous carriers', 'not_supplied': 'global parity service, global pair ordering, Jordan-Wigner string, or host branch', 'open': 'multi-carrier local extension, contact on the recurrent volume, primitive gate synthesis, and full Fock', 'authority': 'none', 'audit': 'unset'}\nFAIL N4 locks each decisive residual to its exact runner line :: [{'path': 'scripts/physical_cycle269_local_fock_extension_cycle312_2026_07_18.py', 'line': 510, 'fragment': 'bounded encoded coin, reverse, and edge blocks', 'match': False}, {'path': 'scripts/physical_cycle269_local_fock_extension_cycle312_2026_07_18.py', 'line': 758, 'fragment': 'formal pair-row Gamma is exactly', 'match': False}, {'path': 'scripts/physical_cycle269_local_fock_extension_cycle312_2026_07_18.py', 'line': 904, 'fragment': 'literal products of even encoded pair creators', 'match': False}, {'path': 'scripts/physical_cycle269_local_fock_extension_cycle312_2026_07_18.py', 'line': 1000, 'fragment': 'commuting-pair multiplicative lift', 'match': False}, {'path': 'scripts/physical_cycle269_local_fock_extension_cycle312_2026_07_18.py', 'line': 1140, 'fragment': 'number-two-selective M2 gate closes', 'match': False}, {'path': 'scripts/physical_cycle269_local_fock_extension_cycle312_2026_07_18.py', 'line': 1208, 'fragment': 'incident-link Gauss census', 'match': False}]\nTOTAL PASS=30 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260922T185023Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T190746Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha d8857fa4 differs from the current HEAD ca3ef2a3 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main, provenance level: the only failure is N4's exact line pins. The note pins its six witnesses to runner lines 510, 758, 904, 1000, 1140, 1208, but commit f1e2dc7c17 (2026-07-18, 'repro: make campaign methodology pins ancestry-stable') removed one line above them in this runner and the pins were not updated; the fragments now sit at lines 509, 757, 903, 999, 1139, 1207. The other 30 checks pass, including every computation.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T190746Z"
  }
 }

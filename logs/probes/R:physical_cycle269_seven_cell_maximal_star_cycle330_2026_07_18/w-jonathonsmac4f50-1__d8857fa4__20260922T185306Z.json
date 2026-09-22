@@ -19,14 +19,21 @@
  "stdout_sha256": "8b7e05d36651d5bde0be84d4dca650b67b195e80c67d1acb501fbe0f988bbf38",
  "stdout_tail": "d_joint_S7_smallest_Gram_eigenvalue': 0.9999999999999996, 'identity_to_first_adjacent_order_residual': 1.414213562373093, 'identity_to_reversal_order_residual': 1.4142135623730865, 'lower_role_register_M2_inventory': {'S4': 5, 'S5': 7, 'S6': 10}, 'two_overlapping_S6_register_M2': 20, 'joint_S7_role_register_M2': 13, 'slot_plus_active_edge_register_M2': 5, 'total_patch_union_with_joint_S7_role_M2': 276, 'maximum_joint_branch_with_joint_S7_role_M2': 52, 'face_port_cell_role_union_M2': 263, 'maximum_joint_branch_before_role_register_M2': 39, 'direct_multiplication_sample_branches': 8, 'direct_multiplication_sample_order_products': 64, 'direct_multiplication_validation_failures': np.int64(0), 'local_physical_union_M2': 263, 'maximum_local_branch_M2': 36, 'port_constraint_commutator_failures': 0, 'fixed_sector_commutator_failures': 0}}\nPASS joint-role update coin contact slot exclusion and lawful-domain deletions are detected :: {'deleted_joint_order_amplitude_Gram_residual': 0.0001984126984126984, 'deleted_update_column_unitarity_residual': 1.0, 'deleted_coin_coefficient': np.complex128(-0.6592368421510875+0.04906436503248315j), 'deleted_coin_unitarity_residual': 0.7605089632771271, 'deleted_contact_residual': 0.3678930670560825, 'deleted_slot_cycle_unitarity_residual': 1.0, 'deleted_unused_S7_state_exclusion_rank_surplus': 3152, 'deleted_unused_slot_state_exclusion_rank_surplus': 2, 'one_S6_only_common_rank_factor': 7, 'lawful_domain_rejections': 2}\nSCIENCE TOTAL PASS=19 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260922T185515Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T190746Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha d8857fa4 differs from the current HEAD ca3ef2a3 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main, provenance level: the only failure is N4's exact line pins. The note pins its six witnesses to runner lines 1015, 1032, 1045, 1056, 1079, 1089, but commit f1e2dc7c17 (2026-07-18, 'repro: make campaign methodology pins ancestry-stable') removed one line above them in this runner and the pins were not updated; the fragments now sit at lines 1014, 1031, 1044, 1055, 1078, 1088. The other 19 checks pass, including every computation.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T190746Z"
  }
 }

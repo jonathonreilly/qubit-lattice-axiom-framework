@@ -32,12 +32,19 @@
  "stdout_sha256": "d08f275f2cbb5a2dd0ffcb2adfa5f9c7f3476d7141c437b457f6cc450ac2bdca",
  "stdout_tail": "PR #8610: Nonlinear permanent-record waves with moving geometry\nbranch codex/mobile-record-smooth-nonlinear-euler-20260921 (base codex/mobile-record-empty-start-quantitative-waves-20260921)\nrunners in the PR: 1\n== scripts/mobile_records_smooth_nonlinear_euler_2026_09_21.py: rc=0 PASS=11 FAIL=0\n   mutation double_block_exponential_coefficient: expected ? observed ? MISMATCH\n   mutation omit_entropy_flux_half_M: expected ? observed ? MISMATCH\n   mutation omit_geometry_marginal_entropy_derivative: expected ? observed ? MISMATCH\n   mutation omit_nonlinear_population_flux: expected ? observed ? MISMATCH\n   mutation omit_owner_boundary_coverage: expected ? observed ? MISMATCH\nHIT: scripts/mobile_records_smooth_nonlinear_euler_2026_09_21.py: mutation census mismatch: double_block_exponential_coefficient omit_entropy_flux_half_M omit_geometry_marginal_entropy_derivative omit_nonlinear_population_flux omit_owner_boundary_coverage",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260922T185023Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T190746Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 699108ae differs from the current HEAD ca3ef2a3 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "The census regex (mutation_family_expected/observed) matches nothing because this mobile-record runner signals a killed mutation as 'FAIL: <target check> AssertionError' with rc=1; at PR head 05ce3bed24 (its only head since 2026-09-22T00:08Z) all 5 mutations fail their declared target check from the runner's MUTATIONS table (dimer_smooth_nonlinear_check.py, dimer_nonlinear_flux_check.py x2, dimer_moving_nonlinear_check.py x2) with rc=1; same class as P:8604/8560/8569 (reported on issue 8294).",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T190746Z"
  }
 }

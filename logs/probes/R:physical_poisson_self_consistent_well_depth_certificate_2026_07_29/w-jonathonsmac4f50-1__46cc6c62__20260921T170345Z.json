@@ -27,20 +27,20 @@
  "stdout_tail": "solute well depth under the Dirichlet-zero reference, not the shell contrast (poisson C_N 0.44796 -> 0.44803, screened 0.18568 -> 0.18543)\n\nTHESIS\n  [PASS] T: On the supplied four-operator family and Dirichlet lattice, with the source sign normalized so no operator is handed a repulsive well, the tested finite-volume sequences produce converged self-consistent states. At the scored couplings, Poisson g=50 and screened Poisson prefer a+c/M for absolute well depth, biharmonic prefers a+b*M, and the local V=0-start sweep is discontinuous. These are finite-range model preferences under an explicit potential reference, not proofs of limits, physical binding energies, operator uniqueness, or the parent susceptibility bridge.\n\n==============================================================================\nSUMMARY: SELF-CONSISTENT WELL DEPTH PASS=14 FAIL=0\nelapsed 419.2s\n==============================================================================\n----- END BLOB-VERIFIED COMPLETED FULL-SWEEP OUTPUT -----\n[PASS] C2 deterministic current slice: current N=12 result rms=3.0595, depth=0.4392, iters=64 versus paired completed log\nfull_runner_sha256=1f61250c40aed3217d8213bbf705c931b4e0406ac724bffe5a6b7e898ad8209a\nhelper_sha256=9e49b83bb9ce50ecdff58092da859dd2ee5b5d2558bf428d0c840b38be4af4f6\ncompleted_log_sha256=f31841fbde68b8bc2ceb552d747723c3184faca1a5824fe3ffca4fb0e16b2bff\nFAIL (C): source-identity-pinned completed sweep plus current deterministic slice\nSUMMARY: CERTIFICATE PASS=5 FAIL=1\n",
  "checked": {
   "by": "w-jonathonsmac4f50-jrev1",
-  "at_utc": "20260922T174009Z",
+  "at_utc": "20260922T190747Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
-   "ok: log's git sha 46cc6c62 differs from the current HEAD 83d0ce51 (fine if you pulled since; the run is bound to its sha)",
+   "ok: log's git sha 46cc6c62 differs from the current HEAD ca3ef2a3 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: CERTIFICATE PASS=5 FAIL=1' vs cache 'SUMMARY: CERTIFICATE PASS=6 FAIL=0'"
   ]
  },
  "triage": {
-  "verdict": "stale",
-  "note": "The physics passes - 'SELF-CONSISTENT WELL DEPTH PASS=14 FAIL=0' and '[PASS] C1 completed full sweep' - and the only failure is '[FAIL] A1 paired artifact: runner and completed log were last changed together at <sha>', a git-history check whose sha depends on the checkout: this log prints 5938336a452b while the other machine's log of the same task on the branch prints f1d08841be08. It reads the checkout's own history, so it cannot pass reproducibly in any probe worktree.",
+  "verdict": "machine",
+  "note": "The probe clone is shallow (/tmp/probes-view and its slot worktrees are grafted at 5938336a45, 2026-09-21), so the runner's git-history gate cannot see older commits: for cycle573 the 'accepted Cycle570 commit is ancestral' check, for the Poisson certificate the 'runner and completed receipt last changed together' check (git log -1 returns the graft), fail; every physics check passes (as w-macbookpro90c72-2 found with its own graft f1d08841be0). This corrects an earlier stale verdict of mine on the 46cc6c62 log.",
   "by": "w-jonathonsmac4f50-jrev1",
-  "at_utc": "20260922T174009Z"
+  "at_utc": "20260922T190747Z"
  }
 }

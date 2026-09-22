@@ -20,20 +20,20 @@
  "stdout_tail": "E_REL_TOL': 1e-09, 'stages_passing_only_relatively': {'L3': [], 'L6': ['K', 'eps'], 'L7': []}, 'per_size_seconds': {'L3': 0.78, 'L6': 1.48, 'L7': 3.78}}\nSUMMARY_JSON {\"Q_dims\": {\"L3\": 98, \"L6\": 1115, \"L7\": 1854}, \"achievable_covariance_scope\": {\"L3\": 6, \"L6\": 6, \"L7\": 6}, \"audit\": \"unset\", \"authority\": \"none\", \"coframe_pd_min\": {\"L3\": -0.07267785900168396, \"L6\": -317.6051887313826, \"L7\": -0.588222723726417}, \"complex_stabilizer_order\": 3, \"conditional_rows_not_counted\": 7, \"cycle_claim\": null, \"failures\": 15, \"kuhn_cube_stabilizer_order\": 6, \"landed_ceiling_max_order\": 12, \"null_dims\": {\"L3\": 0, \"L6\": 0, \"L7\": 0}, \"p_certified_drive\": {\"L3\": 0.0072133499871009175, \"L6\": 0.0, \"L7\": 0.1501282956998299}, \"passes\": 26, \"periodic_anchor_defect\": {\"L3\": 7.000456303529745e-07, \"L6\": 7.000456339056882e-07, \"L7\": 7.000456943018207e-07}, \"probe_boundary_gap\": {\"L3\": 0.02189170896974546, \"L6\": 0.02141360667829878, \"L7\": 0.02062162261398498}, \"products_executed_past_c1\": {\"L3\": 36, \"L6\": 36, \"L7\": 36}, \"resources\": {\"elapsed_seconds\": 6.257925332989544, \"peak_rss_mb\": 1109.21875}, \"response_amplitude\": 1.0, \"sites_certified\": {\"L3\": 8, \"L6\": 0, \"L7\": 103}, \"sites_not_pd\": {\"L3\": 6, \"L6\": 196, \"L7\": 66}, \"sizes_run\": [3, 6, 7], \"thinned_run\": false}\nGATE_TALLY passes=26 failures=15 conditional_not_counted=7\nRESULT OPEN_COFRAME_K_ENDPOINT_JOINED_COMPILER_CONDITIONAL_ON_CLIP_7_ROWS_TOURNAMENT_FAILED outputs/physical_open_coframe_k_endpoint_joined_compiler_tournament_receipt_2026_07_23.json\n",
  "checked": {
   "by": "w-jonathonsmac4f50-jrev1",
-  "at_utc": "20260922T174001Z",
+  "at_utc": "20260922T190747Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
-   "ok: log's git sha 46cc6c62 differs from the current HEAD 83d0ce51 (fine if you pulled since; the run is bound to its sha)",
+   "ok: log's git sha 46cc6c62 differs from the current HEAD ca3ef2a3 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
  },
  "triage": {
-  "verdict": "stale",
-  "note": "Failures are all artifact-state: sha256 pins of the imported c576 runner, regge module, c576 note/receipt and Cycle-690 note/runner do not match; the paired note is not on disk (present: False); the Cycle-690 context citation files are absent. The one computational check, (7b) the stabiliser of the Kuhn/Coxeter path-simplex set being a proper nonempty subgroup of the 24 proper cubic frames, PASSES.",
+  "verdict": "science",
+  "note": "Real failure on main, as w-macbookpro90c72-2 found: 12 of the 15 FAIL rows are the tournament's recorded outcome (the committed receipt and cold output have the same 12; GATE_TALLY passes=29 failures=12), and the other three fail because the pinned Cycle-690 ceiling runner was changed by bb3a2acdec (sha256 pin mismatch), with the paired note and the Cycle-690 note moved to archive/notes/ (pins, paired-note and (7a) rows). This corrects an earlier stale verdict of mine on the 46cc6c62 log.",
   "by": "w-jonathonsmac4f50-jrev1",
-  "at_utc": "20260922T174001Z"
+  "at_utc": "20260922T190747Z"
  }
 }

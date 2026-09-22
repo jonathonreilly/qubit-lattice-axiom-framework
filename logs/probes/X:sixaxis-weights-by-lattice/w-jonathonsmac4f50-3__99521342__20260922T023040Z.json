@@ -1,0 +1,32 @@
+{
+ "task": "X:sixaxis-weights-by-lattice",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 formation_levelplane.py 2 axes6w:8:1:2 0 128 3000 1500 1",
+ "seed": 44240,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "99521342",
+ "started_utc": "20260922T023040Z",
+ "elapsed_s": 8.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=2 menu=axes6w:8:1:2 beta=0.0 L=128 T=3000 plateau_|m|=0.0145 lowk_ratio=nan seconds=8"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "The campaign's six-axis rule with weights (p, q, r) on four event lattices: 2+1 backward (block 28 located the memory threshold at p in (10.5, 11) on the line (p,1,2)), 3+1 backward, and both light-cone lattices. Menu name axes6w:p:q:r; the beta argument is ignored (pass 0). Arguments: dim menu beta L T T0 seed. GRID UNITS: the 80 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "28acadaae0e91ebb41fb8abaa9ef628e0832e09c345b37c4fabba6cc9bed0019",
+ "stdout_tail": "dim=2 (event lattice Z^3) menu=axes6w:8:1:2 beta=0.0 L=128 T=3000 T0=1500 seed=1; predecessors n=3; sigma^2=nan\nmemory table: level, |m|, m.e0\n         1  0.9380  +0.9380\n         2  0.8934  +0.8934\n         3  0.8510  +0.8510\n         4  0.8134  +0.8134\n         5  0.7785  +0.7785\n         7  0.7123  +0.7123\n        10  0.6185  +0.6185\n        14  0.5154  +0.5154\n        20  0.3899  +0.3899\n        28  0.2489  +0.2486\n        39  0.1142  +0.1125\n        55  0.0555  +0.0554\n        76  0.0198  +0.0067\n       107  0.0182  +0.0152\n       149  0.0111  -0.0056\n       208  0.0251  -0.0033\n       290  0.0162  -0.0013\n       405  0.0182  +0.0013\n       566  0.0052  +0.0008\n       790  0.0156  -0.0066\n      1103  0.0149  +0.0126\n      1539  0.0065  +0.0007\n      2149  0.0100  +0.0065\n      3000  0.0141  +0.0069\nSUMMARY: dim=2 menu=axes6w:8:1:2 beta=0.0 L=128 T=3000 plateau_|m|=0.0145 lowk_ratio=nan seconds=8\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260922T023048Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

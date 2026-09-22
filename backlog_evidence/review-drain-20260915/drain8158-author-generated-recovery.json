@@ -1,0 +1,8 @@
+{
+  "reason": "Owned Python bytecode produced by enroll helper; failed strict release preserved",
+  "paths": {
+    "docs/audit/scripts/__pycache__/build_citation_graph.cpython-312.pyc": "0fdbec3f3942c52fa00b40413abcbe708443d4a7bbc21f2034e6d09d7fc6ceee",
+    "docs/audit/scripts/__pycache__/static_pipeline_checkpoint.cpython-312.pyc": "dc0d18702a1511f468fdd1994ccabddbecb4b740501114d2001f7314ece8ac54"
+  },
+  "archive_sha256": "b8ed5d846476665d2f94f2d52c3a290b39295a5b76498fdd0d27ae6a27a5c23c"
+}

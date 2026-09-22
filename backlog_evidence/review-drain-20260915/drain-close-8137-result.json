@@ -1,0 +1,17 @@
+{
+  "at": "2026-09-22T20:21:00.822546+00:00",
+  "before": {
+    "headRefName": "physics-loop/possibility-symmetric-order-dependence-20260915",
+    "headRefOid": "d15d5d9074e343563700691afcfddb5afc761a21",
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8137"
+  },
+  "after": {
+    "closedAt": "2026-09-22T20:20:58Z",
+    "headRefOid": "d15d5d9074e343563700691afcfddb5afc761a21",
+    "state": "CLOSED"
+  },
+  "landed": "a07e161a1ef35e56edab00a351b541a928c49e1d",
+  "remote_source_files_verified": 15,
+  "branch_preserved": "refs/heads/physics-loop/possibility-symmetric-order-dependence-20260915"
+}

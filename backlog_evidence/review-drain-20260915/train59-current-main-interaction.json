@@ -1,0 +1,26 @@
+{
+  "at": "2026-09-22T20:20:18.743864+00:00",
+  "review_base": "59024639572d6d3a1091c727297b18c350d3f484",
+  "integration_base": "a07e161a1ef35e56edab00a351b541a928c49e1d",
+  "main_delta": [
+    "docs/SEQUENTIAL_FORMATION_PATH_AND_STAR_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "docs/audit/data/citation_graph_manifest.json",
+    "docs/work_history/review_loop/pr8137/PR8137_APPROACH_REGISTRY.md",
+    "docs/work_history/review_loop/pr8137/PR8137_ASSUMPTIONS_AND_IMPORTS.md",
+    "docs/work_history/review_loop/pr8137/PR8137_CLAIM_STATUS_CERTIFICATE.md",
+    "docs/work_history/review_loop/pr8137/PR8137_GOAL.md",
+    "docs/work_history/review_loop/pr8137/PR8137_HANDOFF.md",
+    "docs/work_history/review_loop/pr8137/PR8137_OPPORTUNITY_QUEUE.md",
+    "docs/work_history/review_loop/pr8137/PR8137_REVIEW_HISTORY.md",
+    "docs/work_history/review_loop/pr8137/PR8137_ROUTE_PORTFOLIO.md",
+    "docs/work_history/review_loop/pr8137/PR8137_STATE.yaml",
+    "docs/work_history/review_loop/pr8137/PR8137_TRACE_GATE.md",
+    "docs/work_history/review_loop/pr8137/README.md",
+    "docs/work_history/review_loop/pr8137/original-path-map.json",
+    "logs/runner-cache/possibility_symmetric_sequential_variation_forces_order_dependence_2026_09_15.txt",
+    "scripts/possibility_symmetric_sequential_variation_forces_order_dependence_2026_09_15.py"
+  ],
+  "source_commit": "f8e2002fe2667b64771bc7a796a1329f9ba9a2c3",
+  "identity_check": "Every unchanged parent/runtime/context/tooling input still byte-identical; intervening changes disjoint from all bound inputs. Candidate source delta retained exactly by replay.",
+  "interaction_review": "Intervening PR8137 adds supplied sequential path/star identities, explicit scope witnesses and historical recovery. Clock/static-charge uses its separate supplied Villain law, existing source-curvature identities and projective transfer construction; neither imports the new sequential identity as a premise. Shared axioms/primitive source bytes unchanged. No reopened scientific conclusion."
+}

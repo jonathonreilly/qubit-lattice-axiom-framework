@@ -41,7 +41,7 @@ claim_type_reason: "Self-contained derivation with distinct exact-cochain, Gauss
 
 The general lattice theorem and direct Fourier current estimate are derived
 here. Matching the previously regrouped magnetic representation uses two
-explicit same-PR provisional sources, both pending independent review.
+explicit linked bounded theorems below, with their stated hypotheses and scope.
 The finite executable reads no repository helper or scientific input file.
 The infinite-volume physical limit and native-law identification remain
 separate obligations; neither is inferred from the finite checks.

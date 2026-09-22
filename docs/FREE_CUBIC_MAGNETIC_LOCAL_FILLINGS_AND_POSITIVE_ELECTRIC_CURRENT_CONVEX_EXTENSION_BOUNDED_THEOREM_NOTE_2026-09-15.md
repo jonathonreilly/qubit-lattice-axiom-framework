@@ -39,8 +39,8 @@ bare_retained_allowed: false
 claim_type_reason: "Self-contained derivation with distinct exact-cochain, Gaussian, Fourier and finite-enumeration challenges, without a phase inference."
 ```
 
-The two explicit provisional premises are the carrier theorem and exact
-coupled-defect identity included in this PR. Both await independent review.
+The two explicit mathematical premises are the linked carrier theorem and
+exact coupled-defect identity, with their stated hypotheses and scope.
 The new proof below supplies the boundary and local-source bridge.
 The finite executable reads no repository helper or scientific input file.
 The thermodynamic phase and physical-score limit remain separate
@@ -49,8 +49,8 @@ obligations; neither is inferred from the finite checks.
 
 | Premise | Revision status and precise use |
 |---|---|
-| [Carrier theorem](CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md) | Same-PR provisional source; rooted mass bound, explicit constants and finite-dimensional variance estimate |
-| [Coupled-defect law](FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md) | Same-PR provisional source; exact integer-current/magnetic-coset identity and source normalization |
+| [Carrier theorem](CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md) | Linked bounded theorem; rooted mass bound, explicit constants and finite-dimensional variance estimate |
+| [Coupled-defect law](FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md) | Linked bounded theorem; exact integer-current/magnetic-coset identity and source normalization |
 | Cubic boundary filling and actual Hodge kernel | Derived in section1 and matched in section2 here |
 | Positive electric marginal and convex extension | Derived in sections3-4; the extension away from integer currents depends on the fixed filling convention |
 | Fixed-order photon law and matter | Open; no Gaussian limit is inferred from convexity |

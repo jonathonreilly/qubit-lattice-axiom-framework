@@ -1,6 +1,6 @@
 {
- "edge_count": 13711,
- "node_count": 6249,
+ "edge_count": 13720,
+ "node_count": 6253,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -734,9 +734,21 @@
    "deps_hash": "1b3132f0c69b",
    "out_degree": 3
   },
+  "admissibility_rule_formation_law_flip_identities_and_finite_mixture_witnesses_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "a95e40c6cf02",
+   "out_degree": 3
+  },
   "admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06": {
    "deps_hash": "e54933eecd76",
    "out_degree": 2
+  },
+  "admissibility_rule_formation_rate_identities_and_finite_window_witnesses_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "a95e40c6cf02",
+   "out_degree": 3
+  },
+  "admissibility_rule_formation_unit_conditional_identities_and_finite_witnesses_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "a95e40c6cf02",
+   "out_degree": 3
   },
   "admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_bounded_theorem_note_2026-09-07": {
    "deps_hash": "1badd550395b",
@@ -24427,6 +24439,10 @@
    "out_degree": 0
   },
   "work_history.review_loop.pr8147.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8150.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

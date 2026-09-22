@@ -1,0 +1,68 @@
+===== runner cache v1 =====
+runner: scripts/menus_and_born_stabilizer_degenerate_supports_and_antipodal_weight_class_2026_09_22.py
+runner_sha256: 0e79ffcd0424c433fd8601f5b15d0008cd903f0f3affc5fc4466d09015f4d2fd
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.40
+status: ok
+----- stdout -----
+== 1. Stabiliser-degenerate covariant supports: census ==
+[PASS] cubic group O: 24 exact proper rotations; bisector swap and axis flips lie in O
+[PASS] rational data: Q_GEN, U_GEN, P35 unit; U_GEN orthogonal to Q_GEN; P35.Q_GEN = 3/5
+[PASS] (a) soldered, no neighbour: O-orbit menus of sizes 6, 8, 12, 24 with stabilisers 4, 3, 2, 1
+[PASS] (a) unsoldered, no neighbour: every cube-orbit menu is moved by a rational SO(3) element :: no finite nonempty subset of S^2 is SO(3)-invariant
+[PASS] (b) R_q: exact rotation fixing q, of infinite order (Niven: cos = 3/5 is no root-of-unity cosine)
+[PASS] (b) latitudes t_n = (n^2-1)/(n^2+1), n = 1..8: p_n unit, p_n.q = t_n, strictly increasing
+[PASS] (b) transverse radius^2 = 1 - t_n^2 = (2n/(n^2+1))^2 strictly decreasing: no smallest latitude circle
+[PASS] (b) R_q preserves every latitude; the R_q-orbit of the equator point p_1 = U_GEN exceeds 24 points :: finite invariant menus stay inside {q, -q}
+
+-- (c) the antiparallel ordered pair {+z: q, -z: -q} --
+[PASS] (c) unsoldered: (RX180, rot180(u)) with u orthogonal to q fixes the pair and flips q -> -q, all 4 sampled q :: covariance alone forces w(q) = w(-q) = 1/2; no slot-symmetry assumption enters
+[PASS] (c) unsoldered: a perpendicular partner exists for every rational unit q != -e_z: u = rot180(e_z + q) e_x
+[PASS] (c) unsoldered: (I, R_q) also fixes the antiparallel pair, so the stabiliser exceeds the flip Z2
+[PASS] (c) soldered: exactly 4 cubic rotations invert e_z; fair coin forced iff q_x q_y (q_x^2 - q_y^2) = 0 :: orthogonal to one of x, y, (1,1,0), (1,-1,0); 5 sampled q agree
+[PASS] (c) soldered detail: Q_XZ forced by RY180, Q_DIAG by (x,y,z) -> (-y,-x,-z); Q_XY, Q_GEN have fixers {I}
+[PASS] (c) product rule on the antipodal menu: f(1) f(-1) = 0 for all 3 witnesses; symmetrised sum rule gives 1/2 :: zero product mass at both menu points: a graded zero, not a law
+
+-- (d) the parallel pair {+z: q, -z: q} --
+[PASS] (d) unsoldered: (RX180, I) and (I, R_q) fix the parallel pair; (RX180, rot180(u)) does not :: no fixer flips q: nothing beyond the one-neighbour constraint
+
+-- (e) triples: the cross-product lemma and frame attachment --
+[PASS] (e) cross-product equivariance g(a x b) = (ga) x (gb): all 24 of O plus R_q and R_z(3/5), 4 vector pairs
+[PASS] (e) frame lemma: det(frame(q1, q2, q1 x q2)) != 0 for (Q_GEN, U_GEN) and (Q_GEN, P35); only I fixes both q1, q2 :: two non-collinear fixed values force the identity
+[PASS] (e) antiparallel pair + orthogonal third at +x: (RX180, rot180(u)) still fixes the triple: the flip Z2 survives :: fair coin on {q, -q} still forced; the support stays flip-invariant
+[PASS] (e) + non-orthogonal third P35: lattice part must be RX180, and the value part would need r u = (3/2) q + u :: 13/4 != 1: no rotation flips q while fixing P35
+[PASS] (e) soldered own-axis triple {x: x, y: y, z: z}: stabiliser C3 (order 3); six-axis orbits 2, so 1 free parameter
+
+-- six-axis free-parameter census (soldered), two independent counts --
+[PASS] census, one neighbour: 36 configs in orbits 6 + 6 + 24; free parameters 2 + 2 + 5 = 9, both counts agree :: rows (6, 4, 3)x2 (24, 1, 6)x1
+[PASS] census, antiparallel aligned pair {+z: e_z, -z: -e_z}: stabiliser D4 (order 8), 2 orbits: 1 free, coin forced
+[PASS] census, parallel aligned pair {+z: e_z, -z: e_z}: stabiliser C4 (order 4), 3 orbits: 2 free, no forced coin
+[PASS] census, opposite pairs: the two independent free-parameter counts agree :: total 24 over 9 config orbits; rows (3, 8, 2)x2 (6, 4, 3)x1 (12, 2, 3)x2 (12, 2, 4)x2 (24, 1, 6)x2
+[PASS] census, adjacent pairs {+z, +x}: the two independent free-parameter counts agree :: total 87 over 21 config orbits; rows (12, 2, 3)x6 (24, 1, 6)x15
+
+== 2. The antipodal weight class f(p.q) ==
+[PASS] (2a) transitivity at t = 3/5: a rational rotation carries ((4/5,0,3/5), e_z) to (P35, Q_GEN) :: pairs at equal p.q lie on one orbit: the weight is a function of p.q alone
+[PASS] (2b) slot exchange is rotational: every ordered position pair is swapped inside O :: opposite pairs: 4 swappers, stabiliser C4; adjacent pairs: 1 swapper, trivial stabiliser
+[PASS] (2b) unsoldered: (BISECTOR_XZ, I) maps {+z: q, +x: p} to {+z: p, +x: q}: weights are position-blind
+[PASS] (2b) the value-attached menu {v(+z), -v(+z)} breaks under the swap; the four-point menu survives
+[PASS] (2b) soldered: the swap rotates values: BISECTOR_XZ q = (12/13, -4/13, 3/13) != q: exchange is separate
+[PASS] (2c) ker(R_q - I) = span(q): det = 0, some 2x2 minor is nonzero, and (R_q - I) q = 0 :: affinity plus covariance leaves f = (1 + c t)/2
+[PASS] (2c) the affine family (1 + c t)/2 at c = 0, 1/4, 1, -1: normalised and positive on [-1, 1]
+[PASS] (2c) same-label repeat certainty f(1) = 1 selects c = 1 alone; c = -1 is certain for the flipped label :: the Born coefficient is bought by repeat certainty
+[PASS] (2d) cubic and mono witnesses: derivative nonnegative on [-1, 1], endpoints 0 and 1: monotone, positive
+[PASS] (2d) affinity fails at t = 1, 0, midpoint: cubic 9/16 and mono 51/64 against the affine value 3/4 :: affinity is the separating clause
+[PASS] (2e) E[s.q] separates the class: Born 1/3, cubic 1/5, mono 11/30, midpoint mixture 4/15 :: the class is convex
+[PASS] (2e) affine class: E[s.q] = c/3 in [-1/3, 1/3]; the step law 1_{t>0} gives E[s.q] = E|t| = 1/2 :: Born is neither extremal nor singled out by this statistic
+[PASS] (2e) the second moment is blind: E[(s.q)^2] = 1/3 for every normalised f
+[PASS] (2e) the third moment separates again: E[(s.q)^3] = 1/5 Born, 1/7 cubic, 3/14 mono
+
+== 3. Soldered finite alphabets against the continuum ==
+[PASS] (3) soldered menus quantise t: six axes {0, +-1}; 8-orbit {+-1/3, +-1}; 12-orbit {0, +-1/2, +-1}
+[PASS] (3) invariant p_x^4 + p_y^4 + p_z^4: 1 six axes, 1/3 8-orbit, 1/2 12-orbit; Haar mean 3/5 :: matches B1: separates the soldered menus from the continuum
+[PASS] (3) 24-point orbits carry a modulus: (1,2,3) gives 1/2 while (1,2,4) gives 13/21
+
+TOTAL: PASS=42 FAIL=0
+
+----- stderr -----
+

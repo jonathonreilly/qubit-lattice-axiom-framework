@@ -1,0 +1,37 @@
+{
+ "task": "P:8547",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block41-what-a",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8547",
+ "pr": 8547,
+ "branch": "physics-loop/admissibility-induced-law-block41-what-a-source-is-when-records-move-20260920",
+ "git_sha": "1b21fcab",
+ "started_utc": "20260922T185059Z",
+ "elapsed_s": 22.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_what_a_source_is_when_records_move_one_mass_per_record_screened_density_signed_tilt_2026_09_20.py",
+    "returncode": 0,
+    "total": "PASS=19 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "67ba04feef0fcb5adde9824d0b61aa0a4649fc5fe211247065bd6f94a1674b85",
+ "stdout_tail": "PR #8547: ail41: what a source is when records move (mass = record count; no action across empty sites; the tilt channel's charge is signed; the transit Laplacian is sourced by production)\nbranch physics-loop/admissibility-induced-law-block41-what-a-source-is-when-records-move-20260920 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_what_a_source_is_when_records_move_one_mass_per_record_screened_density_signed_tilt_2026_09_20.py: rc=0 PASS=19 FAIL=0\n   mutation orbit_not_transitive_injected: expected B observed B ok\n   mutation gap_interaction_injected: expected B observed B ok\n   mutation contents_coupled_across_gap_injected: expected B observed B ok\n   mutation ladder_not_screened_injected: expected C observed C ok\n   mutation tree_law_at_wrong_scale_injected: expected C observed C ok\n   mutation content_field_not_odd_injected: expected D observed D ok\n   mutation tilt_sign_universal_injected: expected D observed D ok\n   mutation mean_field_wrong: expected D observed D ok\n   mutation closure_with_glue_injected: expected E observed E ok\n   mutation green_function_wrong_injected: expected E observed E ok\n   mutation production_mean_at_wrong_scale_injected: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T185122Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

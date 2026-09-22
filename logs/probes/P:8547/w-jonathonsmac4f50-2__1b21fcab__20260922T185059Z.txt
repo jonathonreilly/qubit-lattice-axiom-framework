@@ -1,0 +1,17 @@
+PR #8547: ail41: what a source is when records move (mass = record count; no action across empty sites; the tilt channel's charge is signed; the transit Laplacian is sourced by production)
+branch physics-loop/admissibility-induced-law-block41-what-a-source-is-when-records-move-20260920 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_what_a_source_is_when_records_move_one_mass_per_record_screened_density_signed_tilt_2026_09_20.py: rc=0 PASS=19 FAIL=0
+   mutation orbit_not_transitive_injected: expected B observed B ok
+   mutation gap_interaction_injected: expected B observed B ok
+   mutation contents_coupled_across_gap_injected: expected B observed B ok
+   mutation ladder_not_screened_injected: expected C observed C ok
+   mutation tree_law_at_wrong_scale_injected: expected C observed C ok
+   mutation content_field_not_odd_injected: expected D observed D ok
+   mutation tilt_sign_universal_injected: expected D observed D ok
+   mutation mean_field_wrong: expected D observed D ok
+   mutation closure_with_glue_injected: expected E observed E ok
+   mutation green_function_wrong_injected: expected E observed E ok
+   mutation production_mean_at_wrong_scale_injected: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

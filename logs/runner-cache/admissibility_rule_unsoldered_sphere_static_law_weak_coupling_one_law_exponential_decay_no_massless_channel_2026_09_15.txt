@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.py
+runner_sha256: 8bb578762cfcf2c2312fe2db593294867727f9313c189b390bbe86243239c925
+input_fingerprint_sha256: 6555d53b77a69418b8755460335c571d5d299e3dd89ebca10440b58907129e1c
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 4.35
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_WEAK_COUPLING_COMPARISON_AND_CORRELATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md
+  docs/ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md
+AUDIT_TIMEOUT_SEC: 300
+scope: the unsoldered sphere static law with overlap e^{beta t} at weak coupling on Z^3 — the covariance eigenvalues and series inequalities behind the one-site contraction, the derivative identity, the threshold sqrt(3)/6, the maximal coupling, the fixed point, the walk bounds, the geometric sums; exact
+mutation: none
+PASS: A1 the four declared inputs exist (this note, the axiom memo, the possibility-covariance note and block 03's note on main)
+PASS: A2 the five axiom sentences used are present verbatim in the axiom memo
+PASS: A3 the parent's claim id and sphere-law section, and block 03's claim id and its coupling theorem, are present
+PASS: A4 this note carries its claim id and names this runner
+PASS: B1 W1(i): under P_h, E[s.h^] = L(x), E[(s.h^)^2] = 1 - 2L/x, Var(s.h^) = L'(x) = 1/x^2 - 1/sinh^2 x, and E[(s.e_perp)^2] = L(x)/x, symbolically (x = beta|h|)
+PASS: B2 W1(ii): the coefficient ratios of (3 sinh^2 x - 3x^2)/(x^2 sinh^2 x) and (x cosh x - sinh x)/((x^2/3) sinh x) are 6/(n(2n-1)) and 3/(2n+1) in closed form, and both are <= 1 (n >= 2, n >= 1) to n = 12
+PASS: B3 W1(ii): the series coefficients match the closed forms (3/2) 2^{2n}/(2n)!, (1/2) 2^{2n-2}/(2n-2)!, 2n/(2n+1)!, 1/(3 (2n-1)!) to n = 12; no x^2 or x^1 terms
+PASS: C1 W1(iii): on a three-point weighted space, d/dt P_t(A) = beta [E_t(X 1_A) - P_t(A) E_t(X)] = beta Cov_t(X, 1_A) symbolically; p(1-p) = 1/4 - (1/2 - p)^2 <= 1/4
+PASS: C2 W1(iv)/W2: beta |Delta|/(2 sqrt 3) = beta sigma_max |Delta| / 2 with sigma_max^2 = 1/3; |Delta| <= 2 gives c = beta/sqrt 3; alpha = 6c = 2 sqrt(3) beta; 2 sqrt(3) (sqrt(3)/6) = 1 and sqrt(3)/6 > 28/100
+PASS: C3 W2: at zero field the antipodal change has TV(P_e, P_-e) = (2 pi/Z) int_0^1 (e^{beta t} - e^{-beta t}) dt = tanh(beta/2); tanh(beta/2)/(beta/sqrt 3) tends to sqrt(3)/2
+PASS: D1 W3 step 0: int (p-q)_+ = int (q-p)_+ = 1 - int min(p,q) = 1/4 on a three-point weighted space; the residual densities have disjoint supports, so P(S != S') = TV
+PASS: D2 W3 step 3: on the cube window at alpha = 9/10, D = (I - C)^{-1} is entrywise nonnegative, u* = D b is the fixed point of Phi, the iterates Phi^t(1) decrease to it from above, and u*_x <= b_x/(1 - alpha)
+PASS: D3 W3/W5 walk bounds on the 7^3 box at alpha = 9/10: sum_y (C^k)_{0y} <= alpha^k, (C^k)_{0x} = 0 for k < |x|_1, and sum_{k<=16} (C^k)_{0x} <= alpha^{|x|_1}/(1 - alpha) for every x != 0
+PASS: D4 W5(c): 1 + 2 sum_{j=1}^{L-1} a^j + a^L = (1+a)/(1-a) - a^L (1+a)/(1-a) <= (1+a)/(1-a) symbolically for L = 1..12; 1 + 2a/(1-a) = (1+a)/(1-a); the torus sum on the 6^3 torus at a = 9/10 is at most ((1+a)/(1-a))^3
+PASS: D5 W5: freezing a site turns the joint density into the window density with that site's record as exterior (symbolic bond factors on a three-site path)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports and the Premises; Gibbs, Laplacian and Green function name standard objects (0 offenders)
+per_element: executed — the covariance identities and the coefficient ratios; the derivative identity; the antipodal value; the threshold arithmetic
+per_site: executed — the maximal coupling on a finite weighted space; the frozen-site conditional on a three-site path
+per_mode: executed — the walk bounds (C^k)_{0x} = 0 for k < |x|_1 and sum_y (C^k)_{0y} <= alpha^k on the 7^3 box
+per_block: executed — the fixed point u* = D b on the cube window; the geometric sums and the 6^3 torus sum
+lattice_wide: checked and not executed — written conditional model proofs and bounds only; the finite runner does not execute an infinite lattice or physical classification
+PASS: G1 the five N5 resolution lines are printed
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

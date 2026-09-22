@@ -1,0 +1,32 @@
+{
+ "task": "X:inertial-sound-speed",
+ "type": "scan",
+ "lane": "moving-records",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 inertial.py sphere 64 0.7 1.0",
+ "seed": 41388,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7550d10c",
+ "started_utc": "20260922T014308Z",
+ "elapsed_s": 178.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "sphere menu, side 64, density 0.7, gamma 1.0, mode 1: fitted speed sqrt(w^2 + g^2)/k = 0.209 (w/k = 0.200, damping 0.0060 per tick); product-closure prediction 0.183;  amplitude every 30 ticks: +1.00 +0.83 +0.48 +0.09 -0.23 -0.42 -0.46 -0.37 -0.21 -0.03 +0.12"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "NEW PHYSICS: records with inertia carry sound (block 44). inertial.py menu side density gamma measures the speed of a standing density wave and prints the product-closure prediction sqrt((1 - rho)/3) (six axes) or sqrt(1 - rho)/3 (sphere). First look at density 0.3: 0.467 vs 0.483 and 0.277 vs 0.279. The scan over density checks the law (1 - rho).",
+ "stdout_sha256": "86034bd86be01df5a387527198aa5dc56105669e74bdc2b920f31e1d01238f47",
+ "stdout_tail": "sphere menu, side 64, density 0.7, gamma 1.0, mode 1: fitted speed sqrt(w^2 + g^2)/k = 0.209 (w/k = 0.200, damping 0.0060 per tick); product-closure prediction 0.183;  amplitude every 30 ticks: +1.00 +0.83 +0.48 +0.09 -0.23 -0.42 -0.46 -0.37 -0.21 -0.03 +0.12\nsphere menu, side 64, density 0.7, gamma 1.0, mode 2: fitted speed sqrt(w^2 + g^2)/k = 0.229 (w/k = 0.200, damping 0.0220 per tick); product-closure prediction 0.183;  amplitude every 30 ticks: +1.01 +0.48 -0.07 -0.23 -0.12 +0.00 +0.05 +0.03 +0.00 -0.01 -0.01\n   178 s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260922T014607Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

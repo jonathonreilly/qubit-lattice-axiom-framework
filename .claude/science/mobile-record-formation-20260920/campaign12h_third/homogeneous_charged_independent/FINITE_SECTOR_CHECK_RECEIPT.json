@@ -1,0 +1,25 @@
+{
+  "started_utc": "2026-09-22T22:51:19.634997+00:00",
+  "finished_utc": "2026-09-22T22:51:19.961729+00:00",
+  "elapsed_seconds": 0.3265826248098165,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/homogeneous_charged_independent/finite_sector_check.py"
+  ],
+  "exit_code": 0,
+  "runner": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/homogeneous_charged_independent/finite_sector_check.py",
+    "bytes": 6104,
+    "sha256": "7043a2e8928a2957a862f63d50ec53e311eba4aeb2ccbe1ed992a3fad3cf33e1"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/homogeneous_charged_independent/FINITE_SECTOR_CHECK.stdout",
+    "bytes": 6630,
+    "sha256": "04cbc26658a336da15b2de755688a622f8cf89e73f64576ab3c5e7d763434f37"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/homogeneous_charged_independent/FINITE_SECTOR_CHECK.stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

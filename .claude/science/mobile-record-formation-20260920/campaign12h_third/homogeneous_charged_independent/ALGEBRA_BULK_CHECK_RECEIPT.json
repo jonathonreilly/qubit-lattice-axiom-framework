@@ -1,0 +1,25 @@
+{
+  "started_utc": "2026-09-22T22:54:05.673163+00:00",
+  "finished_utc": "2026-09-22T22:54:06.063238+00:00",
+  "elapsed_seconds": 0.3896244999486953,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/homogeneous_charged_independent/algebra_bulk_check.py"
+  ],
+  "exit_code": 0,
+  "runner": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/homogeneous_charged_independent/algebra_bulk_check.py",
+    "bytes": 9098,
+    "sha256": "188716a15df7fe68b2d02f85ecdc82314977d49d586bf0e2c91747f15d7732c2"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/homogeneous_charged_independent/ALGEBRA_BULK_CHECK.stdout",
+    "bytes": 6237,
+    "sha256": "29b8f8dff91e7d212f7710755b4128bb3b7d4a85bee76586dd5618c554c84afb"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/homogeneous_charged_independent/ALGEBRA_BULK_CHECK.stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

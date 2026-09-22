@@ -1,0 +1,5 @@
+# Neutral supplied model and task
+
+Finite cubic d>=2 torus, all periods even >=6. Site qutrit 0,+,-, n=q^2. Integer link spin S>=1, E=S_z, U=S_+/sqrt(S(S+1)), zero at endpoints. Uniform Gauss div E-q=0. Positive-axis hop x->y of charge q lowers E by q, reverse is the adjoint. H=V0 B+t T, T minus these charge-preserving hard-core vacancy hops. B=(1/2)sum_edges(n_x+n_y-1)^2=sum_edges n_x n_y-d N+d V/2. Initial occupation is one B=0 checkerboard, N=V/2, total signed charge zero; arbitrary correlated physical charge/field state with bounded per-link electric fourth moments. Allow opposite-charge pair birth on empty edges, resolved or coherent, at coefficient beta, preserving Gauss.
+
+Independently derive second/fourth low blocks including actual charge transport, denominators and folded terms. Determine a sufficient fixed-time volume-uniform local rotor/matter comparison with a finite local preparation and decreasing positive beta, or identify an obstruction. Preserve scope, failed controls, source identities and a PRE seal before author-source access. Only output in this directory. No native closure, phase, audit, Git or publication conclusion.

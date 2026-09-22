@@ -1,0 +1,349 @@
+{
+  "created_utc": "2026-09-22T22:57:04.964364+00:00",
+  "status": "PASS",
+  "source_sha256": "4eea0563eea08e530aa062840a4e02ad2410743a604858ecff0db01ad3e2aa90",
+  "reused_own_helper_sha256": "7043a2e8928a2957a862f63d50ec53e311eba4aeb2ccbe1ed992a3fad3cf33e1",
+  "controls": [
+    {
+      "spin": 2,
+      "ambient_dimension": 2,
+      "fixed_outside_charge": [
+        1,
+        0,
+        -1,
+        0
+      ],
+      "complete_physical_dimension": 42,
+      "code_dimension": 8,
+      "occupation_energy_levels": [
+        "0",
+        "3",
+        "4"
+      ],
+      "single_hop_energy": 3,
+      "opposite_two_hop_energy": 4,
+      "h2_exact": [
+        [
+          "-4/9",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-10/9",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-10/9",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-4/3",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-4/3",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-10/9",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-10/9",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-4/9"
+        ]
+      ],
+      "h4_exact": [
+        [
+          "16/243",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "64/243",
+          "-4/27",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-4/27",
+          "64/243",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "10/27",
+          "-2/9",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-2/9",
+          "10/27",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "64/243",
+          "-4/27",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-4/27",
+          "64/243",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "16/243"
+        ]
+      ],
+      "selected_origin": {
+        "E": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "charge": [
+          1,
+          0,
+          -1,
+          0
+        ]
+      },
+      "selected_target": {
+        "E": [
+          -1,
+          -1,
+          1,
+          1
+        ],
+        "charge": [
+          -1,
+          0,
+          1,
+          0
+        ]
+      },
+      "selected_h4_entry": "-2/9",
+      "equal_oriented_routes_on_opposite_charge_sector": true,
+      "diagonal_formula_and_all_offdiagonals_match": true,
+      "folded_term_needed": true
+    },
+    {
+      "spin": 2,
+      "ambient_dimension": 3,
+      "fixed_outside_charge": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "complete_physical_dimension": 25,
+      "code_dimension": 5,
+      "occupation_energy_levels": [
+        "0",
+        "5",
+        "8"
+      ],
+      "single_hop_energy": 5,
+      "opposite_two_hop_energy": 8,
+      "h2_exact": [
+        [
+          "-4/15",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-2/3",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-4/5",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-2/3",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-4/15"
+        ]
+      ],
+      "h4_exact": [
+        [
+          "2/375",
+          "-2/225",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-2/225",
+          "3/50",
+          "-1/50",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1/50",
+          "11/125",
+          "-1/50",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1/50",
+          "3/50",
+          "-2/225"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-2/225",
+          "2/375"
+        ]
+      ],
+      "selected_origin": {
+        "E": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "charge": [
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "selected_target": {
+        "E": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "charge": [
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "selected_h4_entry": "-1/50",
+      "equal_oriented_routes_on_opposite_charge_sector": null,
+      "diagonal_formula_and_all_offdiagonals_match": true,
+      "folded_term_needed": true
+    }
+  ],
+  "scope": "Complete physical square sectors with S=2, so the factors 1 and sqrt(2/3) both occur. Exact arithmetic, not a full torus diagonalization."
+}

@@ -1,0 +1,25 @@
+{
+  "started_utc": "2026-09-22T22:23:20.377882+00:00",
+  "finished_utc": "2026-09-22T22:23:20.828662+00:00",
+  "elapsed_seconds": 0.4508205419406295,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/homogeneous_occupancy_penalty_check.py"
+  ],
+  "exit_code": 0,
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/homogeneous_occupancy_penalty_check.py",
+    "bytes": 3186,
+    "sha256": "3f5b2f601b078c5618ce976e3a0ce1b991539d6bd873c63f03a76677bcba7d3d"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HOMOGENEOUS_OCCUPANCY_PENALTY_CHECK.stdout",
+    "bytes": 1542,
+    "sha256": "e89e885e12688e1a47bb9fd7379c82de45b621e2aaa2cbe17689011237fe080d"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HOMOGENEOUS_OCCUPANCY_PENALTY_CHECK.stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

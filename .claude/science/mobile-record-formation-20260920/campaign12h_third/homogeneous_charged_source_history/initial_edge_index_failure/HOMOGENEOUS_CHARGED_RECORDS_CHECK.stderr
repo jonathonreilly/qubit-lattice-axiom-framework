@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/homogeneous_charged_records_check.py", line 213, in <module>
+    if __name__=="__main__":main()
+                            ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/homogeneous_charged_records_check.py", line 208, in main
+    "cubic_controls":[cubic(d,6,2) for d in (2,3)],
+                      ~~~~~^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/homogeneous_charged_records_check.py", line 92, in cubic
+    eindex={(x,a):i*d+a for i,x in enumerate(vertices)}
+               ^
+UnboundLocalError: cannot access local variable 'a' where it is not associated with a value

@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-09-22T23:35:00.697990+00:00",
+  "final_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/homogeneous_charged_independent/FINAL_SEAL.json",
+    "bytes": 23742,
+    "sha256": "fdcb0aea3a020ad2c71793dcd50e028e694c26a7c1cd12db590a20ffa9d18c05"
+  },
+  "bindings_verified": 58,
+  "root_read_coverage": "Complete PRE report, three scientific PRE sources and every PRE result field; complete comparison, its new scientific checker and every result field. Prior dependency proofs reused only at unchanged identities.",
+  "finding": "No required correction found in the bounded independent reconstruction/comparison. Conditional local theorem only; no phase or retained-grade claim.",
+  "limits": "No additional broad author-suite replay by root. Numerical test counts do not establish the proof; exact coefficient controls and source arguments were read."
+}

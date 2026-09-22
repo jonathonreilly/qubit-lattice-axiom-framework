@@ -1,0 +1,385 @@
+{
+  "created_utc": "2026-09-22T22:51:19.935398+00:00",
+  "status": "PASS",
+  "source_sha256": "7043a2e8928a2957a862f63d50ec53e311eba4aeb2ccbe1ed992a3fad3cf33e1",
+  "controls": [
+    {
+      "spin": 1,
+      "ambient_dimension": 2,
+      "fixed_outside_charge": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "complete_physical_dimension": 13,
+      "code_dimension": 3,
+      "occupation_energy_levels": [
+        "0",
+        "3",
+        "4"
+      ],
+      "single_hop_energy": 3,
+      "opposite_two_hop_energy": 4,
+      "h2_exact": [
+        [
+          "-2/3",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-4/3",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-2/3"
+        ]
+      ],
+      "h4_exact": [
+        [
+          "1/27",
+          "-1/9",
+          "0"
+        ],
+        [
+          "-1/9",
+          "10/27",
+          "-1/9"
+        ],
+        [
+          "0",
+          "-1/9",
+          "1/27"
+        ]
+      ],
+      "selected_origin": {
+        "E": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "charge": [
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "selected_target": {
+        "E": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "charge": [
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "selected_h4_entry": "-1/9",
+      "equal_oriented_routes_on_opposite_charge_sector": null,
+      "diagonal_formula_and_all_offdiagonals_match": true,
+      "folded_term_needed": true
+    },
+    {
+      "spin": 1,
+      "ambient_dimension": 2,
+      "fixed_outside_charge": [
+        1,
+        0,
+        -1,
+        0
+      ],
+      "complete_physical_dimension": 18,
+      "code_dimension": 4,
+      "occupation_energy_levels": [
+        "0",
+        "3",
+        "4"
+      ],
+      "single_hop_energy": 3,
+      "opposite_two_hop_energy": 4,
+      "h2_exact": [
+        [
+          "-2/3",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-4/3",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-4/3",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-2/3"
+        ]
+      ],
+      "h4_exact": [
+        [
+          "4/27",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "10/27",
+          "-2/9",
+          "0"
+        ],
+        [
+          "0",
+          "-2/9",
+          "10/27",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "4/27"
+        ]
+      ],
+      "selected_origin": {
+        "E": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "charge": [
+          1,
+          0,
+          -1,
+          0
+        ]
+      },
+      "selected_target": {
+        "E": [
+          -1,
+          -1,
+          1,
+          1
+        ],
+        "charge": [
+          -1,
+          0,
+          1,
+          0
+        ]
+      },
+      "selected_h4_entry": "-2/9",
+      "equal_oriented_routes_on_opposite_charge_sector": true,
+      "diagonal_formula_and_all_offdiagonals_match": true,
+      "folded_term_needed": true
+    },
+    {
+      "spin": 1,
+      "ambient_dimension": 3,
+      "fixed_outside_charge": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "complete_physical_dimension": 13,
+      "code_dimension": 3,
+      "occupation_energy_levels": [
+        "0",
+        "5",
+        "8"
+      ],
+      "single_hop_energy": 5,
+      "opposite_two_hop_energy": 8,
+      "h2_exact": [
+        [
+          "-2/5",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-4/5",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-2/5"
+        ]
+      ],
+      "h4_exact": [
+        [
+          "3/250",
+          "-1/50",
+          "0"
+        ],
+        [
+          "-1/50",
+          "11/125",
+          "-1/50"
+        ],
+        [
+          "0",
+          "-1/50",
+          "3/250"
+        ]
+      ],
+      "selected_origin": {
+        "E": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "charge": [
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "selected_target": {
+        "E": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "charge": [
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "selected_h4_entry": "-1/50",
+      "equal_oriented_routes_on_opposite_charge_sector": null,
+      "diagonal_formula_and_all_offdiagonals_match": true,
+      "folded_term_needed": true
+    },
+    {
+      "spin": 1,
+      "ambient_dimension": 3,
+      "fixed_outside_charge": [
+        1,
+        0,
+        -1,
+        0
+      ],
+      "complete_physical_dimension": 18,
+      "code_dimension": 4,
+      "occupation_energy_levels": [
+        "0",
+        "5",
+        "8"
+      ],
+      "single_hop_energy": 5,
+      "opposite_two_hop_energy": 8,
+      "h2_exact": [
+        [
+          "-2/5",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-4/5",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-4/5",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-2/5"
+        ]
+      ],
+      "h4_exact": [
+        [
+          "4/125",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "11/125",
+          "-1/25",
+          "0"
+        ],
+        [
+          "0",
+          "-1/25",
+          "11/125",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "4/125"
+        ]
+      ],
+      "selected_origin": {
+        "E": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "charge": [
+          1,
+          0,
+          -1,
+          0
+        ]
+      },
+      "selected_target": {
+        "E": [
+          -1,
+          -1,
+          1,
+          1
+        ],
+        "charge": [
+          -1,
+          0,
+          1,
+          0
+        ]
+      },
+      "selected_h4_entry": "-1/25",
+      "equal_oriented_routes_on_opposite_charge_sector": true,
+      "diagonal_formula_and_all_offdiagonals_match": true,
+      "folded_term_needed": true
+    }
+  ],
+  "method": "Exact SymPy complete constrained-sector matrices; no author code read/imported.",
+  "scope": "Frozen cubic outside occupation/field; all legal internal square states and hopping channels. Full-torus combinatorics checked separately."
+}

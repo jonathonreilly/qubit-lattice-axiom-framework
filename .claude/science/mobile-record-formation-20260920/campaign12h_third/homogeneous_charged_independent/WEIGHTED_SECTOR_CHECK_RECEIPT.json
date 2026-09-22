@@ -1,0 +1,25 @@
+{
+  "started_utc": "2026-09-22T22:57:04.729147+00:00",
+  "finished_utc": "2026-09-22T22:57:04.986936+00:00",
+  "elapsed_seconds": 0.25736574991606176,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/homogeneous_charged_independent/weighted_sector_check.py"
+  ],
+  "exit_code": 0,
+  "runner": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/homogeneous_charged_independent/weighted_sector_check.py",
+    "bytes": 929,
+    "sha256": "4eea0563eea08e530aa062840a4e02ad2410743a604858ecff0db01ad3e2aa90"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/homogeneous_charged_independent/WEIGHTED_SECTOR_CHECK.stdout",
+    "bytes": 5783,
+    "sha256": "45a5136ed9085dc902063cc7de04bbe2f17a9dfdc65e490c352e46331fb0c4e3"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/homogeneous_charged_independent/WEIGHTED_SECTOR_CHECK.stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

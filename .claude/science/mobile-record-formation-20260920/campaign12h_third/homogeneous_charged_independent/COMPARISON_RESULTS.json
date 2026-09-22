@@ -1,0 +1,349 @@
+{
+  "created_utc": "2026-09-22T23:25:26.852324+00:00",
+  "runner": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/homogeneous_charged_independent/comparison_check.py",
+    "bytes": 11212,
+    "sha256": "c08169189e666bb2b1b9e04bd80f90dbe8512451bc853207ef865cb9eab565d2"
+  },
+  "pre_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/homogeneous_charged_independent/PRE_COMPARISON_SEAL.json",
+    "bytes": 13641,
+    "sha256": "1678d9365ac5c3460d70a13d16b8b3fbeedd0f09b658a023c5ee515e4e213b48"
+  },
+  "author_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HOMOGENEOUS_CHARGED_RECORDS_AUTHOR_SEAL.json",
+    "bytes": 6022,
+    "sha256": "ec6d68f95a67c810e442fe52d8e453183f4d9723e55e52df36a0d8010727b9b0"
+  },
+  "authentication": {
+    "PRE_bindings": 28,
+    "author_bindings": 18,
+    "context_bindings": 5
+  },
+  "independent_guarded_square_controls": [
+    {
+      "spin": 1,
+      "bulk_coordination": 6,
+      "complete_dimension": 24,
+      "code_dimension": 4,
+      "basis_method": "Enumerate electric tuples; infer zero-external-divergence charges.",
+      "penalty_method": "Sum internal squared occupation defects and fixed external squared defects.",
+      "H2_times_Delta": [
+        [
+          "-4",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-4",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-4",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-4"
+        ]
+      ],
+      "H4_times_Delta_cubed": [
+        [
+          "11",
+          "0",
+          "-5",
+          "0"
+        ],
+        [
+          "0",
+          "11",
+          "0",
+          "-5"
+        ],
+        [
+          "-5",
+          "0",
+          "11",
+          "0"
+        ],
+        [
+          "0",
+          "-5",
+          "0",
+          "11"
+        ]
+      ],
+      "every_entry_equals_recorded_author_result": true
+    },
+    {
+      "spin": 2,
+      "bulk_coordination": 4,
+      "complete_dimension": 48,
+      "code_dimension": 8,
+      "basis_method": "Enumerate electric tuples; infer zero-external-divergence charges.",
+      "penalty_method": "Sum internal squared occupation defects and fixed external squared defects.",
+      "H2_times_Delta": [
+        [
+          "-8/3",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-4",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-4",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-8/3",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-8/3",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-4",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-4",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-8/3"
+        ]
+      ],
+      "H4_times_Delta_cubed": [
+        [
+          "40/9",
+          "0",
+          "0",
+          "0",
+          "-8/3",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "10",
+          "0",
+          "0",
+          "0",
+          "-6",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "10",
+          "0",
+          "0",
+          "0",
+          "-6",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "40/9",
+          "0",
+          "0",
+          "0",
+          "-8/3"
+        ],
+        [
+          "-8/3",
+          "0",
+          "0",
+          "0",
+          "40/9",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-6",
+          "0",
+          "0",
+          "0",
+          "10",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-6",
+          "0",
+          "0",
+          "0",
+          "10",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-8/3",
+          "0",
+          "0",
+          "0",
+          "40/9"
+        ]
+      ],
+      "every_entry_equals_recorded_author_result": true
+    }
+  ],
+  "symbolic_normalization": {
+    "alpha": "2*d-1",
+    "Delta": "alpha*V0",
+    "epsilon_independent": "t/V0",
+    "epsilon_author": "t/Delta = epsilon_independent/alpha",
+    "same_K": "t**2/(C*V0*(2*d - 1))",
+    "same_J": "t**4/(V0**3*(d - 1)*(2*d - 1)**2)",
+    "same_V0_schedule": "C**2*K**2/(J*(d - 1))",
+    "epsilon_independent_squared": "J*(d - 1)*(2*d - 1)/(C*K)",
+    "epsilon_author_squared": "J*(d - 1)/(C*K*(2*d - 1))",
+    "fourth_scalar_relation": "author c_d = alpha^3 * independent ell_d",
+    "same_birth_exponent": "3*d; beta0 differs by a fixed alpha^(3*d) if comparing the same numerical beta.",
+    "same_order": "m=3*d+6; full speed O(epsilon^-3), remainder-source volume error O(epsilon^3)."
+  },
+  "independent_halo_count": {
+    "-3": 256,
+    "-2": 1536,
+    "-1": 3840,
+    "0": 5120,
+    "1": 3840,
+    "2": 1536,
+    "3": 256
+  },
+  "cubic_comparison": [
+    {
+      "dimension": 2,
+      "vertices": 36,
+      "pair_counts": {
+        "meet": 216,
+        "r0": 1764,
+        "r1": 504,
+        "r2": 72
+      },
+      "author_Delta_units_scalar": "1152/5",
+      "same_scalar_in_V0_units": "128/15",
+      "scope": "Counts and recorded path denominators authenticated/algebraically compared; no replay of the author cubic routine."
+    },
+    {
+      "dimension": 3,
+      "vertices": 216,
+      "pair_counts": {
+        "meet": 3240,
+        "r0": 191484,
+        "r1": 13608,
+        "r2": 1296
+      },
+      "author_Delta_units_scalar": "3456",
+      "same_scalar_in_V0_units": "3456/125",
+      "scope": "Counts and recorded path denominators authenticated/algebraically compared; no replay of the author cubic routine."
+    }
+  ],
+  "author_receipts": [
+    {
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HOMOGENEOUS_CHARGED_RECORDS_CHECK_RECEIPT.json",
+        "bytes": 1336,
+        "sha256": "ca875c7b73da432235403afdeabb9fd381d41cc9ba68b2acc26ad0b7b79884ee"
+      },
+      "exit_code": 0,
+      "all_three_bound_files_verified": true,
+      "stdout_equals_results": true
+    },
+    {
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HOMOGENEOUS_OCCUPANCY_PENALTY_CHECK_RECEIPT.json",
+        "bytes": 1342,
+        "sha256": "142fd09e1ca987e3bd0995974b15f8cd7652d5e37a714c3594c6ebfad86eaaa1"
+      },
+      "exit_code": 0,
+      "all_three_bound_files_verified": true,
+      "stdout_equals_results": true
+    }
+  ],
+  "preserved_author_failure": {
+    "preserved": true,
+    "original_exit_code": 1,
+    "type": "UnboundLocalError in geometry-index comprehension",
+    "exact_delta_only": "Add missing for a in range(d) to the edge-index dictionary comprehension.",
+    "archived_receipt_rebound_by_basename_to_recorded_recovery_directory": true,
+    "rerun_of_failed_author_attempt": false,
+    "scientific_assertions_changed": false
+  },
+  "new_failed_executions": [],
+  "finding": "No material discrepancy found in the bounded comparison.",
+  "limits": [
+    "Only two author guarded-square physical sectors were independently rebuilt in this comparison.",
+    "No full author suite rerun; all scripts, results and their source-bound streams were read/authenticated.",
+    "Unrelated charged-band/phase and finite-rate formation sources remain unopened.",
+    "Finite exact checks support coefficients; the uniform-volume statement is assessed through its explicit proof and pinned prior machinery."
+  ]
+}

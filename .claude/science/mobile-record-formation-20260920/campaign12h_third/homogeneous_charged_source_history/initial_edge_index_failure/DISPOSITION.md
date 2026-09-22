@@ -1,0 +1,1 @@
+Initial cubic geometry dictionary comprehension omitted the axis loop and raised UnboundLocalError. All preceding exact guarded-square checks completed before this bookkeeping failure. Preserve source/streams/receipt; repair the missing for a in range(d) without changing scientific assertions.

@@ -1,0 +1,43 @@
+{
+  "created_utc": "2026-09-22T22:48:54.662250+00:00",
+  "scope": "Blind independent check of the supplied homogeneous occupation penalty, charged fourth-order transport and finite-time local rotor/matter comparison.",
+  "dependencies": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/REPORT.md",
+      "bytes": 23867,
+      "sha256": "072e1b6c833d023bec988126ca79379848718455122f7462db20db069a790732"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/COMPARISON.md",
+      "bytes": 14232,
+      "sha256": "9051d24628563bc39fed4a8167b5cafe9fc052bc72bc3bbdc7f5f88cf3cdb7b9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/FINAL_SEAL.json",
+      "bytes": 19914,
+      "sha256": "7620bb6ff3b16ec319f12ad0d588d45a56f0fd084ed192b59e8c86d0f9ac30d4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/uniform_local_dynamics_independent/REPORT.md",
+      "bytes": 18674,
+      "sha256": "4dc693c1b9cadd94ea95ce01108a72570482ad82c10c4b3f5f611169f749621e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/uniform_local_dynamics_independent/COMPARISON.md",
+      "bytes": 14369,
+      "sha256": "00048adee9d46312bb197b590d3d2c709e209d7527cd44c2c7f9942a96feea1c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/uniform_local_dynamics_independent/FINAL_SEAL.json",
+      "bytes": 21317,
+      "sha256": "cc213db7ba3b00cce3ae52d8206878219257bda27b831bfdad93129a9dbcafcf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/uniform_local_dynamics_independent/literature/Barthel_Kliesch_1111_4210v2.html",
+      "bytes": 334857,
+      "sha256": "abdeedde2be6d39e29f766e860d90e54783f9a384c3dbf1e75244769a07e84a7"
+    }
+  ],
+  "boundary": "No author homogeneous or charged-potential source, output, seal, campaign checkpoint or registry opened. Previously sealed independent normal-form/large-spin proofs and their identity-matched locality import only.",
+  "literature": "No new theorem lookup yet. Reuse prior fully checked dimension-independent finite-dimensional time-dependent local Lindblad estimate; commuting-penalty interaction picture and charged rotor domain extension are reconstructed here."
+}

@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-09-22T22:38:09.057534+00:00",
+  "status": "Author conditional theorem; independent reconstruction pending.",
+  "declared_model": "Homogeneous commuting occupation repulsion, no fixed Gauss background, hard-core permanent charges and normalized integer-spin links.",
+  "dependencies": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION.md",
+      "bytes": 17686,
+      "sha256": "e03793ab0cc06bcc0d536db5b846addf3a999733c6dc25cc4d08ae457263e16e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/uniform_local_dynamics_independent/FINAL_SEAL.json",
+      "bytes": 21317,
+      "sha256": "cc213db7ba3b00cce3ae52d8206878219257bda27b831bfdad93129a9dbcafcf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/ELECTRIC_AND_MAGNETIC_DYNAMICS_FROM_RECORD_MOTION.md",
+      "bytes": 18939,
+      "sha256": "52f5ce8bd8f1b39049ebbb0407e6881ed8e11de80bc2c29db9e0e56c5cdd3fc2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/FINAL_SEAL.json",
+      "bytes": 19914,
+      "sha256": "7620bb6ff3b16ec319f12ad0d588d45a56f0fd084ed192b59e8c86d0f9ac30d4"
+    }
+  ],
+  "dependency_scope": "Reuse checked finite-circuit and weighted-rotor machinery with explicitly new commuting-halo inverse, order-t excited velocity, charged plaquette exchanges and beta exponent. No pure-gauge photon phase conclusion is transferred.",
+  "other_lane_context": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/late_pr_sync/PR_8626_SCIENCE_NOTE_SOURCE.json",
+    "bytes": 565,
+    "sha256": "61002e8b613d4b9dfbebb8525cf4b381ff36f389efccd66702744dc5575a88c2"
+  },
+  "other_lane_scope": "Source note read fully for model distinction only. Its supplied attractive static record law differs from this repulsive occupation interaction; no theorem or no-go imported.",
+  "read_limits": "Author personally read full changed argument and both runner sources and all result fields. The finite controls do not independently validate the all-size proof.",
+  "failed_attempts": "Missing axis loop in initial cubic edge-index construction; exact failed source, streams and receipt retained. No asserted scientific coefficient changed."
+}

@@ -29,12 +29,19 @@
  "stdout_sha256": "5cb8ffbbf1e5cd25ed078469fd54fb334f4fd87f1ac9829740cd27e77c1f8c6c",
  "stdout_tail": "PR #8594: Derive the complete slow-formation clock for mobile records\nbranch codex/mobile-record-all-stage-formation-20260921 (base codex/mobile-record-geometric-formation-selection-20260921)\nrunners in the PR: 1\n== scripts/mobile_records_all_stage_formation_clock_2026_09_21.py: rc=0 PASS=5 FAIL=0\n   mutation double_killed_birth_hazard: expected ? observed ? MISMATCH\n   mutation omit_augmenting_path_flip: expected ? observed ? MISMATCH\nHIT: scripts/mobile_records_all_stage_formation_clock_2026_09_21.py: mutation census mismatch: double_killed_birth_hazard omit_augmenting_path_flip",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260922T204101Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T204457Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha e64cd7e6 differs from the current HEAD e5a7ba30 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "Census parse artefact (issue 8294): this mobile-record runner (dict MUTATIONS template) prints no mutation_family lines; at PR head d0dec3ccac (its only head since 2026-09-21T18:43Z) both mutations, double_killed_birth_hazard and omit_augmenting_path_flip, fail their declared target geometric_all_stage_check.py with AssertionError and rc=1.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T204457Z"
  }
 }

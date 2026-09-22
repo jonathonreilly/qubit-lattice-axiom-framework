@@ -1,0 +1,96 @@
+[detached HEAD 5ce870a4e4] Preserve independently reviewed source unit PR8027
+ Date: Tue Sep 22 18:54:33 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 82 files changed, 1179 insertions(+)
+ create mode 100644 docs/GAUGE_WILSON_STATIC_SOURCE_GEODESIC_PERTURBATION_BOUNDED_THEOREM_NOTE_2026-09-07.md
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_000_ARTIFACT_PLAN.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_001_ASSUMPTIONS_AND_IMPORTS.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_002_CLAIM_STATUS_CERTIFICATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_003_FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_004_FINAL_MAIN66_LOCK_RELEASE.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_005_FINAL_MAIN66_READINESS.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_006_FINAL_MAIN66_STRICT.log.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_007_FINAL_MAIN66_SYNC_RECEIPT.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_008_FINAL_MAIN66_VALIDATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_009_FINAL_VALIDATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_010_FINAL_VOCAB_LINT.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_011_FROZEN_PORT_RECEIPT.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_012_FULL_PIPELINE.log.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_013_GOAL.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_014_HANDOFF.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_015_HASHES.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_016_INDEPENDENT_RAW.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_017_INDEPENDENT_STDOUT.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_018_LITERATURE_BRIDGES.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_019_LOCK_RELEASE.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_020_N1_N8.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_021_NO_GO_LEDGER.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_022_OPPORTUNITY_QUEUE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_023_PACK_INDEX.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_024_PARENT_VALIDATION_METADATA_CATCHUP.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_025_PORT_EXECUTION_RECEIPT.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_026_PORT_INTERFACE_CHECK.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_027_PRIMARY_RAW.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_028_PRIMARY_STDOUT.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_029_PR_BACKLOG.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_030_PR_BODY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_031_PUBLICATION_RECEIPT.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_032_QUEUE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_033_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_034_REVIEWED_UPSTREAM_SYNC_20260907.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_035_REVIEW_HISTORY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_036_ROOT_CANONICAL_PORT_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_037_ROOT_SINE_DELTA_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_038_ROUTE_PORTFOLIO.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_039_STATE.yaml.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_040_STATUS.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_041_STRICT_LINT.log.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_042_TRACE_GATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_043_UPSTREAM_SYNC_PIPELINE.log.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_044_UPSTREAM_SYNC_READINESS.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_045_UPSTREAM_SYNC_STRICT.log.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_046_UPSTREAM_SYNC_VALIDATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_047_COEFFICIENT_SUPPLEMENT_PREREGISTRATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_048_DERIVATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_049_HASHES.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_050_PREREGISTRATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_051_ROOT_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_052_check.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_053_result.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_054_FINITE_CONTROLS_PREREGISTRATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_055_PREREGISTRATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_056_ROOT_DERIVATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_057_ROOT_DERIVATION_BEFORE_SINE_NORMALIZATION_72f606.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_058_ROOT_PRIMARY_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_059_check.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_060_result.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_061_package.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_062_port.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_063_validated_claims_before_generated_cleanup.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_064_validated_readiness_before_generated_cleanup.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_065_GAUGE_WILSON_STATIC_SOURCE_GEODESIC_PERTURBATION_BOUNDED_THEOREM_NOTE_2026-09-07.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_066_citation_graph_manifest.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_067_build_citation_graph.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_068_gauge_wilson_static_source_geodesic_2026_09_07.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_069_gauge_wilson_static_source_geodesic_cube_check_2026_09_07.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_070_audit_packet_script_deps.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_071_gauge_wilson_static_source_geodesic_2026_09_07.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/8027_072_gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8027/README.md
+ create mode 100644 docs/work_history/review_loop/pr8027/original-manifest.json
+ create mode 100644 logs/runner-cache/gauge_wilson_static_source_geodesic_2026_09_07.txt
+ create mode 100644 logs/runner-cache/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.txt
+ create mode 100644 scripts/gauge_wilson_static_source_geodesic_2026_09_07.py
+ create mode 100644 scripts/gauge_wilson_static_source_geodesic_cube_check_2026_09_07.py
+FROZEN 5ce870a4e405575d14f303603732b4491c3fae93 sources 82 inputs 93 notes 1

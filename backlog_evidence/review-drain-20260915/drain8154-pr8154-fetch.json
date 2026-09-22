@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "e1281625579c98150e818d56e4d29e260c9ded89",
+  "fetched_ref": "refs/review-loop/fetched/8154-da5807f3761d4f7eb1ce082ba2fd3d4d",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block20-unsoldered-static-law-no-long-range-order-on-planes-and-lines-20260915",
+    "headRefOid": "e1281625579c98150e818d56e4d29e260c9ded89",
+    "isDraft": false,
+    "number": 8154,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

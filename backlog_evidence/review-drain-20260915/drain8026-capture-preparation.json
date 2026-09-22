@@ -1,0 +1,6 @@
+{
+  "initial_adapter_preparation": "KeyError tree before script written; attempted invocation of missing file failed; scientific_executions_zero",
+  "correction": "Actual cold report source.tree shape now explicitly bound",
+  "actual_script": "drain8026-capture.py",
+  "limits": "180seconds/180MiB per runner sequential"
+}

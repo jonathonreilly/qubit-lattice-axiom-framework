@@ -1,0 +1,467 @@
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+index 8f9c496033..a7c0c5b13c 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+@@ -9,2 +9,12 @@
+ | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
+ | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
++
++## Block 20 — no long-range order on planes and lines; the channel needs the third dimension (2026-09-15)
++
++| Family | Object/formulation | Mechanism/invariant | Terminal obligation | Strength vs target | Status | Concrete evidence | Reopen condition |
++|---|---|---|---|---|---|---|---|
++| F20.1 the dimension-free lower bound | `u(k) ≥ (M²/3)²/(βE + 4/(3N))` in `d ≤ 3` | the generator identity `L ŝ¹(k) = N^{1/2} m̂`; `N` bonds per direction | none | exact | candidate-complete | H1 (D1–D4) | — |
++| F20.2 the plane's shell sum | `Σ_{k≠0}|k|^{−2} ≥ (N/π²)H_{L−1}` | sup-norm shells `8j`, `|n|² ≤ 2j²`; dyadic blocks | a sharper constant | exact | candidate-complete | H2 (B1–B2, C1–C2) | a better constant |
++| F20.3 the line's block | the `2⌊√L⌋` smallest wavevectors | `βE + 2/(3L) ≤ (βπ² + 2/3)/L` | none | exact; `L ≥ 2` | candidate-complete | H2(e) (B3) | — |
++| F20.4 the assembly | `M⁴ ≤ (3π²β + 1)/H_{L−1}`; `M⁴ ≤ (6π²β + 4)/√L` | the sum rule `N/3` | the decay rate (not claimed) | exact | candidate-complete | H3 (C3, D5) | a rate statement |
++| F20.5 the placement | the channel needs `Z³`; the menu decides | H3 with blocks 19 and 17 | the halves' own reviews | conditional on open PRs | candidate-complete | H4 | a change in blocks 17 or 19 |
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
+index e99dd0e244..cd37b1dfc2 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
+@@ -24,2 +24,10 @@
+ - Simultaneous formation (several records locking in one step) is not a total order; the formation law of a partial order with simultaneous steps would need a joint conditional the axiom does not state; named in N7.
+ - Infinite volume: the static specification's DLR existence (compactness on a finite menu) and uniqueness are outside the block.
++
++## Block 20 (2026-09-15) — no long-range order on planes and lines
++- Dependencies: `minimal_axioms`; the possibility-covariance note (on `main`; the sphere domain and the unsoldered reading); block 01 (on `main`; the static reading). Proposed, unaudited. PRs #8151, #8152 and #8153 referenced as evidence addresses for H4 only.
++- Named premises: the pure-state sphere as the possibility domain; the unsoldered reading; the static reading on windows contained in a coordinate plane or line (no records outside); the exponential overlap `e^{βt}` with `β` supplied; tori of even side.
++- Scaffolding: the sup-norm shells of `{−L+1, …, L}²` to `L = 12`; the dyadic blocks to `m = 12`; the `4×4` and `8` tori for the bond counts and Parseval; the generator about `e₂`; the two-site instance and the direct sums in the refuting pass.
++- Standard mathematical imports at definition level: the unitarity of the discrete torus transform; integration by parts for the divergence-free rotation field on the sphere (executed for polynomials); `|sin t| ≤ |t|`.
++- References named, not used: Mermin–Wagner; Mermin; Hohenberg; McBryan–Spencer; Fröhlich–Pfister; Dobrushin–Shlosman; main's three quantum no-order notes.
++- Counterfactual pass: a discrete menu (no rotation generator, no lower bound; block 17 orders on the plane); the formation reading (block 12's eroder never orders on the plane for a different reason); `d = 3` (the lattice sum stays bounded; block 19 orders above `3√3π/8`); the Born overlap (H1's integration by parts still applies to any smooth positive density, but block 19's upper bound does not, and nothing is claimed).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block20_findings.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block20_findings.md
+new file mode 100644
+index 0000000000..a696032c60
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block20_findings.md
+@@ -0,0 +1,15 @@
++# Refuting pass — block 20 (supervisor-run, disjoint machinery; 2026-09-15)
++
++Routes compared (control `specs/supervisor_control_block20_planes_lines.py`, refuting pass `specs/supervisor_control_block20_refuter.py`, outputs in `.out.txt`):
++
++| item | runner's route | refuting route | result |
++|---|---|---|---|
++| the zero-field lower bound (H1) | the generator, integration-by-parts, second-derivative, root and simplification identities, symbolically | the exactly solvable two-site instance (`Z/2Z`, weight `e^{2βs₁·s₂}`, `⟨s₁·s₂⟩ = coth 2β − 1/(2β)`): `u(π)` against both forms of the bound at `β = 1/2, 1, 2, 5`; the sum rule `u(0) + u(π) = N/3` exactly | the bound holds with room (a factor of about ten); the sum rule exact |
++| the plane's lattice sum (H2a) | sup-norm shell counts and `Σ 1/|n|² ≥ 4H_{L−1}`, exactly for `L ≤ 12` | direct evaluation of `N^{−1}Σ_{k≠0} 1/(βE(k) + 4/(3N))` with exact cosines for `L = 2..64`, `β = 1/4, 1, 4`, against the proved lower bound `H_{L−1}/(π²β + 1/3)` | dominated at every `(L, β)`; the note's bound on `M⁴` is the weaker of the two |
++| the line's block (H2e) | `4⌊√L⌋² ≥ L`, the count `2⌊√L⌋` and the per-term inequality | direct evaluation for `L = 1..400` against `⌊√L⌋/(βπ² + 2/3)` | dominated for `L ≥ 2`; **violated at `L = 1`, `β = 1/4`** (see the finding) |
++| the sum rule (H3) | Parseval with symbolic site values on the `4×4` torus; the sphere average with the polar axis along `e₃` | Parseval on a random real `6×6` field by direct sums (residue `4·10^{−15}`); the sphere average with the polar axis along `e₁` | consistent; `1/3` |
++| the growth of `H_{L−1}` (H2b) | the dyadic bound `H_{2^m} ≥ 1 + m/2` exactly to `m = 12` | `H_{L−1} ≥ log L` for `L ≤ 10⁴` | consistent (the dyadic form is the weaker, exactly checkable one) |
++
++Finding (folded): the first draft of H2(e) counted `2⌊√L⌋` wavevectors with `1 ≤ |n| ≤ ⌊√L⌋` for every `L ≥ 1`; at `L = 1` the range `{−L+1, …, L} = {0, 1}` holds only `n = 1`, and the refuting route's lower bound failed there at `β = 1/4`. Fix: H2(e) and the line half of H3 are stated for `L ≥ 2`, where `⌊√L⌋ ≤ L − 1` puts both `n` and `−n` in the range; the runner's B3 now checks the count exactly for `2 ≤ L ≤ 400`; at `L = 1` the bound exceeds `1` and holds trivially. The control had already corrected the contract's first draft on two points before the primary: the plane's last shell is truncated (the range is `{−L+1, …, L}²`, so the bound is `4H_{L−1}`, not `4H_L`), and the plane's small-term comparison `4/(3N) ≤ |k|²/(3π²)` does not hold on the line (where the block of the smallest wavevectors is used instead).
++
++Attempts to refute (nothing else refuted): H1's use of `|m̂| ≤ 1` and of `⟨m̂²⟩ = M_N²/3` in `d = 1, 2` (rotation invariance is dimension-free); the case `⟨LF⟩ < 0` (then `u > N M_N²/3`, above the bound); the plane's shells for `j ≤ L − 1` all lying in the range (they do, since `−j ≥ −L + 1`); dropping `k = 0` from the sum rule (safe direction); whether the harmonic-sum growth could be defeated by the `4/(3N)` term on the plane (it is `|k_min|²/(3π²)`, at most a third of `|k|²/π²`). Verdict of this pass: PASS-NO-BLOCKER at the supervisor's own standard after the fold, pending the owner's independent review.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block20.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block20.md
+new file mode 100644
+index 0000000000..e131ce274f
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block20.md
+@@ -0,0 +1,15 @@
++# Claim status certificate — block 20 (close, 2026-09-15)
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: upstream_support
++reachability_to_target: supports
++conditional_surface_status: "H1 proved for d <= 3 and every beta > 0 on tori of even side; H2-H3 proved on every plane torus (L >= 2) and line torus (L >= 2) with explicit bounds M_N^4 <= (3 pi^2 beta + 1)/H_(L-1) and (6 pi^2 beta + 4)/sqrt(L); H4 a placement corollary conditional on blocks 19 and 17 (open PRs #8153, #8151) for their halves; the algebraic skeleton executed exactly; conditional on the pure-state sphere as the possibility domain, the unsoldered reading, the static reading and the exponential overlap as supplied conditions; three standard mathematical imports named at definition level (the unitarity of the torus transform; integration by parts for the rotation field on the sphere; |sin t| <= |t|)"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++claim_type_reason: "an integration-by-parts and quadratic-form argument with an exact generator identity; sup-norm shell counting and dyadic blocks; a unitary sum rule; every executed identity exact"
++dependency_classes: "one premise node (minimal_axioms); the possibility-covariance note (on main; proposed, unaudited); block 01 (on main) for the static reading; blocks 17, 18 and 19 (open PRs) as evidence addresses for H4 only"
++open_imports: "the sphere as the possibility domain; the unsoldered and static readings; the exponential overlap; the three standard mathematical imports"
++review_loop_disposition: pending (supervisor-run block; author checks only)
++independence_class: "single seat (Fable, supervisor): control, contract with a lens pass, primary, refuting pass on the solvable two-site instance, direct sums, a second parametrization and a random field, fold (one finding: the line's count at L = 1)"
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block20.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block20.md
+new file mode 100644
+index 0000000000..37a348e887
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block20.md
+@@ -0,0 +1,23 @@
++# GOAL — block 20: the unsoldered static law has no long-range order on any plane at any coupling — the Green-function channel of block 19 needs the third dimension (2026-09-15)
++
++**Owner directive (2026-09-15):** don't stop; assess the next lane at each conclusion; no subagents; derivations over computation.
++
++**Why this block.** Block 19 (PR #8153) locates the gravity node's kernel in the transverse channel of the ordered unsoldered static law on `Z³`. The Lattice axiom names `Z³`; is the third dimension load-bearing for that channel? The zero-field Bogoliubov bound of block 19 (G4) holds in every dimension; combined with the sum rule, it forces the long-range-order parameter to vanish on two-dimensional tori as the side grows, at every coupling, because the two-dimensional lattice sum of `1/|k|²` grows like the logarithm of the side. So on any plane sublattice the unsoldered static law never orders and has no Goldstone channel; on a line likewise. The result is the classical no-order theorem for continuous symmetries in two dimensions, here proved for the record law from block 19's zero-field inequality alone, with no field and no spontaneous-magnetization limit.
++
++**Object.** The torus `T_L^{(2)} = (Z/2L Z)²`, `N = 4L²`, and the line `(Z/2L Z)`, with the static law `μ_L ∝ Π_{⟨xy⟩} e^{β s_x·s_y} Π dσ(s_x)`, `s_x ∈ S²`, `β > 0`; `E(k) = Σ_i 2(1 − cos k_i)`; `M_N² = N^{−2}⟨|Σ_x s_x|²⟩`. Block 19's objects otherwise.
++
++**Contract (stacked on block 19: G4 is the load-bearing input).**
++- H1 (the lower bound in every dimension): block 19's G4 holds verbatim on `Z^d` for `d = 1, 2, 3`: for `k ≠ 0`, `⟨|ŝ^1(k)|²⟩ ≥ (M_N²/3)²/(βE(k) + 4/(3N))` (the simplified form using `M_N² ≤ 1`).
++- H2 (the two-dimensional lattice sum): on `(Z/2L Z)²`, `N^{−1} Σ_{k≠0} 1/E(k) ≥ N^{−1} Σ_{k≠0} 1/|k|² ≥ (1/π²) H_L ≥ (1/π²) log L` (shells in the sup norm: `8j` wavevectors on shell `j`, each with `|k|² ≤ 2(jπ/L)²`), and `4/(3N) ≤ |k|²/(3π²)` for every `k ≠ 0`, so `N^{−1} Σ_{k≠0} 1/(βE(k) + 4/(3N)) ≥ H_L/(π²(β + 1/(3π²)))`.
++- H3 (no long-range order on planes): the sum rule `Σ_{k≠0} ⟨|ŝ^1(k)|²⟩ ≤ N` with H1 and H2 gives `(M_N²/3)² ≤ π²(β + 1/(3π²))/H_L`, hence `M_N² → 0` as `L → ∞` for every `β > 0`; a fortiori on the line, where the sum grows linearly.
++- H4 (the reading): the transverse channel of block 19 exists in three dimensions and not on any coordinate plane or line: the third dimension of the Lattice axiom is load-bearing for the gravity node's kernel under the unsoldered static reading. Not claimed: what replaces it in two dimensions (no statement about algebraic decay).
++- N-gate: the negative sentence (no long-range order on planes) with its escapes: discrete menus (block 17 orders in two dimensions), the formation reading, and the `d = 3` case (block 19).
++
++**Lens pass (self-run panel).**
++- *"This is the classical no-order theorem."* Yes; the content is the derivation from block 19's zero-field inequality for this rule with explicit constants, and the placement: gravity's kernel needs `Z³`.
++- *"The sum rule bounds `Σ_k ⟨|ŝ^1|²⟩` by `N`, but the `k = 0` term is `N M_N²/3`."* The bound uses `Σ_{k≠0} ≤ N − N M_N²/3 ≤ N`; dropping the `k = 0` term only weakens the inequality in the right direction.
++- *"Two dimensions with a discrete menu order."* Block 17: yes; the six-axis law orders on `Z²` for `p ≥ 216 m`. The contrast is the point: continuous symmetry forbids order on planes, discrete does not.
++
++**Forbidden phrases (beyond the lane's standing list):** "phase transition", "the physical dimension", "converge", "emergent", "certified", "Mermin–Wagner is derived" (the theorem is classical; the derivation is re-proved).
++
++**Prior-art search at `origin/main`.** The axiom-first Coleman–Mermin–Wagner notes (2026-04-29, 2026-05-02, 2026-06-04): quantum Hamiltonians on 1D/2D sublattices with the Ward-normalized Bogoliubov bridge; nothing classical for the sphere-valued record law; nothing tying the gravity kernel to the dimension. Open PRs: #8153 (this stack).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+index 6dfc9de138..82f515b4e7 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+@@ -26,2 +26,5 @@ Stacked on #8002 → #8000 → #7999 → #7998 → main; all hand-offs. Block 05
+ 
+ Current source review found five further P2 groups, corrected in the canonical note and runner with their disposition in REVIEW_HISTORY.md. Same-session confirmation is pending; this appendix records an open review handoff.
++
++## 2026-09-15 block 20 opened for review as PR #8154 (supervisor)
++Independent PR against `main` (`2ed54cb83a`); parent on `main`: the possibility-covariance note. The lane assessment after block 19: the kernel is located on `Z³`; is the third dimension load-bearing? Block 20 = for the unsoldered sphere static law with the exponential overlap on coordinate planes and lines: block 19's zero-field lower bound is dimension-free (H1, re-proved with `N` bonds per direction); the plane's lattice sum grows like `H_{L−1}` (sup-norm shells) and the line's like `√L` (the block of the smallest wavevectors) (H2); the sum rule `N/3` then gives `M_N⁴ ≤ (3π²β + 1)/H_{L−1}` on the plane and `M_N⁴ ≤ (6π²β + 4)/√L` on the line, so no long-range order at any `β > 0` (H3); hence block 19's channel needs `Z³`, while block 17's discrete law orders on the plane — the menu decides (H4). Runner 20 checks, 13 mutations in-family, exact, under a second. Refuting pass: the solvable two-site instance, direct sums, a second parametrization, a random field; one finding folded (the line's count at `L = 1`; statements carry `L ≥ 2`). Gates: pipeline ×2, changed-evidence, `audit_lint --strict`, `git diff --check`, vocabulary lint clean on the block's files. Next: the queue refresh at block 20 opening (normalization; the plane's decay rate; the band below the 3D threshold; X4/S6).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
+index 9ccaee75bb..a4db6530ad 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
+@@ -14,2 +14,8 @@ Policy: reference and converge, never borrow; every statement used is re-proved
+ - The Pickard random field / Markov-mesh (unilateral Markov field) construction — Abend, Harley and Kanal (1965); Pickard (1977, 1980): a two-parent unilateral construction whose rows and columns are Markov chains when the corner-pair condition holds. The framework's row sweep under the records-only reading is an instance: `Z_2 = Z_1^2 K^2` with `K` symmetric doubly stochastic is the condition; Theorem E re-proves the row statement natively (the column statement is a lead for the next block).
+ - Toom and Vasilyev (1970s): product-form and Markov invariant measures of probabilistic cellular automata — reference only.
++
++## Block 20 (2026-09-15) — references named; three standard facts imported at definition level
++- Mermin–Wagner (1966), Mermin (1967), Hohenberg (1967): the classical no-order theorem for continuous symmetries in one and two dimensions — re-proved at scope for the record law from the zero-field inequality, with explicit finite-volume bounds.
++- McBryan–Spencer (1977), Fröhlich–Pfister (1981), Dobrushin–Shlosman (1975): algebraic decay and the infinite-volume forms — named only; the decay is not claimed.
++- Main's axiom-first Coleman–Mermin–Wagner packet (2026-04-29), the 2D-sublattice no-SSB note (2026-05-02) and the textbook-import note (2026-05-18): the quantum-Hamiltonian counterparts, conditional on a Ward-normalization lemma; for the record law the generator identity replaces that lemma.
++- The unitarity of the torus transform; integration by parts for the rotation field on the sphere; `|sin t| ≤ |t|` — imported at definition level.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+index 2977b7f990..5681ae3810 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+@@ -9,2 +9,5 @@ Routes read at their proofs, not their headlines.
+ | Convex-consistency (affine rule output) vs product form (R136/T212/T213) | same packet | Normalizer constant iff no coupling (rank argument; Funk–Hecke on the sphere). | Re-proved exactly on the menu as the two-neighbor normalizer factorization; used for T2(b). |
+ | Binary full-conditional compatibility (landed 2026-08-10) | `docs/ADMISSIBILITY_BINARY_FULL_CONDITIONAL_COMPATIBILITY_ISING_ACTION_AXIOM_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md` | Static half on binary menus; excludes formation dynamics by its own boundary. | Upstream; generalized here; the excluded object is this block's subject. |
++
++## Block 20 (2026-09-15) — no long-range order for the unsoldered static law on any coordinate plane or line
++- The negative sentence (H3): for the unsoldered static law with the exponential overlap, `M_N⁴ ≤ (3π²β + 1)/H_{L−1}` on the plane and `M_N⁴ ≤ (6π²β + 4)/√L` on the line (`L ≥ 2`), so the long-range-order parameter tends to zero at every `β > 0`. Escapes named for the N-gate: a discrete menu (block 17 orders on the plane); the formation reading (block 12); `d = 3` (block 19 orders above its threshold). Not claimed: the decay rate of the plane's correlations; the Born overlap.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+index 74d2f60bae..c403e30216 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+@@ -79,2 +79,11 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
+ 4. **The silent triples by a non-criterion route** (unchanged; heavy).
+ 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
++
++## Refresh at block 20 opening (2026-09-15)
++
++Block 20 opened for review (independent PR against main): no long-range order on planes and lines for the unsoldered static law; the Green-function channel needs the third dimension. Ranked next:
++
++1. **The kernel's normalization on `Z³`** (the exact constant of the transverse correlator; a spin-wave lower bound) — hard.
++2. **What replaces the channel on the plane** (algebraic decay of the plane's correlations by a complex-rotation route; the rate is open here) — medium.
++3. **The band below `3√3π/8` on `Z³`; sharpen block 17's constants** — medium.
++4. **Value-dependent order laws (block 16, X4); the stability theorem (block 12, S6)** — hard; unchanged.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block20.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block20.md
+new file mode 100644
+index 0000000000..8e27d18522
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block20.md
+@@ -0,0 +1,16 @@
++# RESULTS — block 20: the unsoldered sphere static law has no long-range order on any coordinate plane or line; the Green-function channel needs the third dimension (2026-09-15)
++
++**Deliverables (branch `physics-loop/admissibility-induced-law-block20-unsoldered-static-law-no-long-range-order-on-planes-and-lines-20260915`, independent PR against `main` at `2ed54cb83a`; parent on `main`: the possibility-covariance note of 2026-09-14):** the note `docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_NO_LONG_RANGE_ORDER_ON_PLANES_AND_LINES_THIRD_DIMENSION_LOAD_BEARING_FOR_THE_GREEN_FUNCTION_CHANNEL_BOUNDED_THEOREM_NOTE_2026-09-15.md`; the runner `scripts/admissibility_rule_unsoldered_sphere_static_law_no_long_range_order_on_planes_and_lines_2026_09_15.py` (20 checks, 13 mutations, exact arithmetic, under a second); the pinned cache; the control and the refuting pass with outputs (`specs/supervisor_control_block20_planes_lines.py`, `specs/supervisor_control_block20_refuter.py`); `GOAL_block20.md`; `CHECKER_block20_findings.md`; this record. Blocks 06–19 remain open as PRs #8034, #8035, #8138–#8142, #8146–#8153.
++
++**Why this block.** Block 19 (PR #8153) locates the gravity node's kernel in the transverse channel of the ordered unsoldered static law on `Z³`. The Lattice axiom names `Z³`; this block asks whether the third dimension is doing work there.
++
++## Result, in one paragraph
++For the unsoldered static law on the sphere with the exponential overlap on tori `(Z/2LZ)^d`: block 19's zero-field lower bound `⟨|ŝ¹(k)|²⟩ ≥ (M_N²/3)²/(βE(k) + 4/(3N))` holds in every dimension `d ≤ 3`, the dimension entering only through the count of `N` bonds per direction (H1, re-proved so the note stands alone). On the plane the lattice sum obeys `Σ_{k≠0}|k|^{−2} ≥ (N/π²)H_{L−1}` (sup-norm shells of `8j` points with `|n|² ≤ 2j²`), `E(k) ≤ |k|²` and `4/(3N) = |k_min|²/(3π²)`; on the line the `2⌊√L⌋` smallest wavevectors have `βE(k) + 4/(3N) ≤ (βπ² + 2/3)/L` (H2). With the sum rule `Σ_k⟨|ŝ¹(k)|²⟩ = N/3` this gives `M_N⁴ ≤ (3π²β + 1)/H_{L−1}` on the plane (`L ≥ 2`) and `M_N⁴ ≤ (6π²β + 4)/√L` on the line (`L ≥ 2`): the long-range-order parameter tends to zero as the torus grows at every `β > 0` (H3). Hence block 19's Green-function channel exists on `Z³` above its threshold and on no plane or line, while the soldered six-axis law orders on the plane (block 17): the third dimension of the Lattice axiom is load-bearing for the gravity node's kernel under the unsoldered static reading, and the menu (continuous or discrete), not the lattice, decides whether a plane orders (H4, a placement corollary conditional on the referenced open blocks for their halves).
++
++## Certificate
++- Runner: `TOTAL: PASS=20 FAIL=0`; 13 mutations each in its family (the census re-run after one mutation was tightened); no floating-point literal or conversion; authors' names only in the allowed sections.
++- Refuting pass (`CHECKER_block20_findings.md`): H1 on the exactly solvable two-site instance at four couplings, with the sum rule exact there; the plane's and the line's sums by direct evaluation up to `L = 64` and `L = 400` at three couplings; the sphere average in a second parametrization; Parseval on a random field. One finding, folded: the line's block count `2⌊√L⌋` fails at `L = 1`, so the line statements carry `L ≥ 2`.
++- Claim type `bounded_theorem`; status `bounded-support`; trace `upstream_support`; audit required.
++
++## Not claimed
++The rate at which the plane's correlations decay; the Born overlap; the kernel's normalization on `Z³`; any reading, rule, coupling or dimension as physical.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+index 08d17f0940..3315550cf8 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+@@ -200,2 +200,15 @@ executed against the four declared inputs on current main. The original
+ fresh checks. Original-reviewer confirmation is pending; no audit status is
+ applied, and only the coordinator may perform authorized integration.
++
++## block 20 — V1-V5 (supervisor, 2026-09-15)
++- V1: block 19's location of the gravity node's kernel (PR #8153) and the Lattice axiom's third dimension: is `Z³` load-bearing for the channel?
++- V2: the lens pass in `GOAL_block20.md` ("this is the classical no-order theorem" — re-proved at scope, with the placement as the content; "the `k = 0` term of the sum rule" — dropped in the safe direction; "two dimensions with a discrete menu order" — block 17, the contrast is the point).
++- V3: H1–H3 proved; the skeleton executed exactly (20 checks, 13 mutations); the refuting pass agreed on five routes and caught the line's count at `L = 1` (folded: `L ≥ 2`); the control corrected the contract's first draft on the plane's last shell and the line's small term.
++- V4: no reading, rule, coupling or dimension selected; the halves of H4 that live in blocks 17 and 19 not re-proved; the decay rate not claimed.
++- V5: consumers named — #8093's assembly (the gravity node's dimension dependence); the campaign's queue.
++
++## block 20 — supervisor lens pass, primary, refuting pass and fold (2026-09-15)
++Lens (`GOAL_block20.md`): as V2. Control: the wavevector range `{−L+1, …, L}` (the plane's last shell truncated; bound `4H_{L−1}`) and the line's small term (the block of the `2⌊√L⌋` smallest wavevectors) fixed in the contract before the primary. Primary: the note and the runner (20 checks, 13 mutations; one mutation tightened after a 12/13 census). Refuting pass (`CHECKER_block20_findings.md`): the solvable two-site instance; direct plane and line sums to `L = 64` and `L = 400`; a second parametrization; a random field — one finding (the line's count at `L = 1`), folded. Author checks only; independent review pending.
++
++## block 20 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
++1 self-containment: PASS — inputs: this note, the axioms memo, the possibility-covariance note, all on `main` at `2ed54cb83a`; nothing pinned from a branch or PR (PRs #8151/#8152/#8153 are evidence addresses for H4 only; H1 re-proved). 2 cache/execution: PASS. 3 claim-scope honesty: PASS — the readings and the overlap named as supplied; the line statements carry `L ≥ 2`; the decay rate, the Born overlap and the normalization marked open; the standard facts named at definition level. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
+index 9b1cd3a27f..cdd648b4cf 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
+@@ -85,2 +85,7 @@ git grep -l -iE "phase transition.*(menu|product rule)|(menu|product rule).*phas
+ 
+ Target state after the matched-hit review: **open** — no note on `origin/main` computes the one-site interdependence coefficient of the menu rule, states its uniqueness region, or re-proves the criterion.
++
++## Block 20 (2026-09-15) — prior-art search and routes (independent PR against main; blocks 06–19 are open PRs #8034, #8035, #8138–#8142, #8146–#8153)
++Searched commit: `origin/main` = `2ed54cb83a`.
++- `git grep -l -iE "mermin|wagner|hohenberg|no ssb|classical heisenberg|sphere-valued" origin/main -- 'docs/*.md'` → the axiom-first Coleman–Mermin–Wagner packet (2026-04-29), the 2D-sublattice no-SSB note (2026-05-02) and the textbook-import note (2026-05-18): quantum Hamiltonians on `Z¹`/`Z²` sublattices with a Ward-normalized lower bound as hypothesis or unsupplied lemma; the textbook note states it does not treat the classical theorem. Nothing for the sphere-valued record law; nothing tying the gravity kernel to the dimension.
++Classification: **open after the matched-hit review.** Routes: W-A the zero-field lower bound with the dimension explicit (H1) — chosen (re-proved so the note stands alone); W-B sup-norm shells and dyadic blocks for the plane's sum (H2) — chosen; W-C the block of the smallest wavevectors for the line (H2e) — chosen (the plane's small-term comparison fails there); W-D the sum rule with the constant `N/3` (H3) — chosen; W-E algebraic decay on the plane by complex rotations — not attempted (queued); W-F the infinite-volume form (no translation-invariant Gibbs state with an order parameter) — not attempted.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+index e166420207..81511576df 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+@@ -106,2 +106,13 @@ source_review_correction:
+ # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
+ # audit_status: "unset; no audit invoked or verdict applied by this source correction"
++
++# ---------------------------------------------------------------- block 20 close (2026-09-15)
++# block: 20
++# branch: physics-loop/admissibility-induced-law-block20-unsoldered-static-law-no-long-range-order-on-planes-and-lines-20260915 (independent; base origin/main 2ed54cb83a; blocks 06-19 are open PRs #8034, #8035, #8138-#8142, #8146-#8153)
++# pr_status: opened for review — PR #8154 (base = main; https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8154); hand-off; never merged by the campaign; not a main landing
++# final_certificate: "TOTAL: PASS=20 FAIL=0; 13 mutations, census 13/13 in-family (one mutation tightened after a 12/13 census); refuting pass consistent on five routes with one finding folded; gates: see HANDOFF.md"
++# seats: "supervisor-run: control (fixed the contract's wavevector range and the line's small term) -> contract with a lens pass -> primary (H1-H4, runner) -> refuting pass (two-site instance; direct sums; second parametrization; random field) -> fold (L >= 2 on the line)"
++# review_findings: "unsoldered sphere static law with e^{beta s.s'} on (Z/2LZ)^d: the zero-field lower bound u(k) >= (M^2/3)^2/(beta E + 4/(3N)) is dimension-free (N bonds per direction); plane: sum_{k != 0} |k|^{-2} >= (N/pi^2) H_(L-1) -> M^4 <= (3 pi^2 beta + 1)/H_(L-1); line: the 2 floor(sqrt L) smallest wavevectors -> M^4 <= (6 pi^2 beta + 4)/sqrt L; no long-range order on any coordinate plane or line at any beta > 0; block 19's Green-function channel needs Z^3; block 17's discrete law orders on the plane, so the menu decides"
++# strongest_unresolved_proof_obligation: "the normalization of the kernel on Z^3; the plane's decay rate; the band below the 3D threshold"
++# next_exact_action: "queue refresh 2026-09-15 (block 20 opening): normalization; the plane's decay rate; the 3D band; X4/S6"
++# lock: held (owner: don't stop; assess the next lane at each conclusion)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+index 8f432e2cd2..fc8c787328 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+@@ -64,2 +64,13 @@ artifact_role: theorem
+ next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
+ ```
++
++# Trace gate — block 20, at PR opening (2026-09-15)
++```yaml
++trace_class: upstream_support
++target_claim_id: null
++target_blocker_text: "#8093's gravity node: block 19 (PR #8153) locates its kernel in the transverse channel of the ordered unsoldered static law on Z^3; the Lattice axiom's third dimension"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem
++next_trace_action: "settled for the unsoldered static reading: no long-range order on any coordinate plane or line at any beta > 0 (M^4 <= (3 pi^2 beta + 1)/H_(L-1); (6 pi^2 beta + 4)/sqrt L), so the channel needs Z^3; the discrete six-axis law orders on the plane (block 17), so the menu decides. Next: the normalization; the plane's decay rate; the band below the 3D threshold. Consumers: #8093's assembly; the campaign's queue"
++```
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block20_planes_lines.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block20_planes_lines.out.txt
+new file mode 100644
+index 0000000000..df3fce1ef7
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block20_planes_lines.out.txt
+@@ -0,0 +1,16 @@
++(1) L=2: shell counts ok=True, |n|^2 <= 2j^2 ok=True, sum 1/|n|^2 = 297/40 >= 4 H_(L-1) = 4: True
++(1) L=3: shell counts ok=True, |n|^2 <= 2j^2 ok=True, sum 1/|n|^2 = 1180/117 >= 4 H_(L-1) = 6: True
++(1) L=12: shell counts ok=True, |n|^2 <= 2j^2 ok=True, sum 1/|n|^2 = 54209494770992943772324924220190748985877671/2870737062158310906739193867717929783219500 >= 4 H_(L-1) = 83711/6930: True
++(1) plane: 8j / (4L-1) shell counts, the norm bound and sum >= 4 H_{L-1} for L = 2..12: True
++(1) dyadic: H_{2^m} >= 1 + m/2 for m <= 12: True
++(2) 2(1 - cos u) = 4 sin^2(u/2): True ; u^2 - 2(1 - cos u) >= 0 at 21 sample points: True
++(3) 4/(3 N) = (pi/L)^2/(3 pi^2) at N = 4 L^2: True
++(4) 4 b^2 - (sqrt a + b)^2 = (b - sqrt a)(3b + sqrt a): True ; b >= sqrt a since 4M^2/(3N) >= 0; then (M^2/3)^2/(a + 4M^2/(3N)) >= (M^2/3)^2/(a + 4/(3N)) iff M^2 <= 1
++(5) 9 * pi^2 (beta + 1/(3 pi^2))/(3 H) = (3 pi^2 beta + 1)/H: True
++(6) sphere average of (s^1)^2 = 1/3
++(6) Parseval on the 4x4 torus (symbolic site values): sum_k |s^(k)|^2 - sum_x s_x^2 = 0
++(7) line: 4 floor(sqrt L)^2 >= L for L = 1..400: True
++(7) line: 4/(3N) at N = 2L is 2/(3L): True ; for n^2 <= L: beta pi^2 n^2/L^2 + 2/(3L) <= (beta pi^2 + 2/3)/L  [n^2/L^2 <= 1/L]
++(7) 9 * (beta pi^2 + 2/3)/(3 m) = 3 (beta pi^2 + 2/3)/m; at m = sqrt(L)/2 this is (6 beta pi^2 + 4)/sqrt(L): True
++(8) |1 - e^{-i theta}|^2 = 2(1 - cos theta): True
++(8) bonds: 4x4 torus 32 = 2N; 8-torus 8 = N
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block20_planes_lines.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block20_planes_lines.py
+new file mode 100644
+index 0000000000..3a4dc107f6
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block20_planes_lines.py
+@@ -0,0 +1,79 @@
++"""Control, block 20 (supervisor): no long-range order for the unsoldered sphere static law on planes and lines — the lattice sums
++and the algebra behind the bound.  Exact (Fractions / sympy) throughout.
++(1) plane torus (Z/2LZ)^2: wavevectors k = (pi/L) n with n in {-L+1..L}^2; the sup-norm shell |n|_inf = j has 8j points for j <= L-1
++    and 4L-1 points for j = L; every point of shell j has |n|^2 <= 2 j^2; hence sum_{n != 0} 1/|n|^2 >= 4 H_{L-1} (checked exactly, L = 2..12);
++    the dyadic bound H_{2^m} >= 1 + m/2 (exact, m <= 12);
++(2) E(k) = sum 2(1 - cos k_i) <= |k|^2: the identity 2(1 - cos u) = 4 sin^2(u/2) and |sin x| <= |x|; sample points;
++(3) 4/(3N) = |k_min|^2/(3 pi^2) at N = 4L^2 (|k_min| = pi/L), so beta E(k) + 4/(3N) <= (beta + 1/(3 pi^2)) |k|^2 for k != 0;
++(4) the simplification chain of the zero-field lower bound: (2M^2/3)^2/[sqrt(a) + sqrt(a + 4M^2/(3N))]^2 >= (M^2/3)^2/(a + 4M^2/(3N))
++    >= (M^2/3)^2/(a + 4/(3N)) for 0 < M^2 <= 1;
++(5) the final algebra: (M^2/3)^2 (N/pi^2) H/(beta + 1/(3 pi^2)) <= N/3  <=>  M^4 <= (3 pi^2 beta + 1)/H;
++(6) isotropy: the sphere average of (s^1)^2 is 1/3; Parseval on the 4x4 torus with symbolic site values (roots of unity +-1, +-i);
++(7) the line torus (Z/2LZ): N = 2L, 4/(3N) = 2/(3L); for 1 <= |n| <= m = floor(sqrt L): beta (pi n/L)^2 + 2/(3L) <= (beta pi^2 + 2/3)/L;
++    2m points; 4 m^2 >= L for L = 1..400 (so m >= sqrt(L)/2); hence M^4 <= (6 beta pi^2 + 4)/sqrt(L);
++(8) the bond identity behind the d-independence of the lower bound: |1 - e^{-i theta}|^2 = 2(1 - cos theta); bonds per direction = N on the 4x4 and 8-tori."""
++from fractions import Fraction as F
++from itertools import product
++from math import isqrt
++import sympy as sp
++
++def H(n):
++    return sum((F(1, j) for j in range(1, n + 1)), F(0))
++
++ok1 = True
++for L in range(2, 13):
++    rng = range(-L + 1, L + 1)
++    pts = [(a, b) for a in rng for b in rng if (a, b) != (0, 0)]
++    shells = {}
++    for a, b in pts:
++        shells.setdefault(max(abs(a), abs(b)), []).append(a * a + b * b)
++    counts_ok = all(len(shells[j]) == 8 * j for j in range(1, L)) and len(shells[L]) == 4 * L - 1
++    norms_ok = all(max(shells[j]) <= 2 * j * j for j in range(1, L + 1))
++    s = sum((F(1, q) for j in shells for q in shells[j]), F(0))
++    ok1 = ok1 and counts_ok and norms_ok and s >= 4 * H(L - 1)
++    if L in (2, 3, 12):
++        print(f"(1) L={L}: shell counts ok={counts_ok}, |n|^2 <= 2j^2 ok={norms_ok}, sum 1/|n|^2 = {s} >= 4 H_(L-1) = {4*H(L-1)}: {s >= 4*H(L-1)}")
++print("(1) plane: 8j / (4L-1) shell counts, the norm bound and sum >= 4 H_{L-1} for L = 2..12:", ok1)
++print("(1) dyadic: H_{2^m} >= 1 + m/2 for m <= 12:", all(H(2 ** m) >= 1 + F(m, 2) for m in range(13)))
++u = sp.symbols("u", real=True)
++ident = sp.simplify(2 * (1 - sp.cos(u)) - 4 * sp.sin(u / 2) ** 2) == 0
++samples = all(sp.simplify(x ** 2 - 2 * (1 - sp.cos(x))) >= 0 for x in [sp.Rational(i, 10) * sp.pi for i in range(-10, 11)])
++print("(2) 2(1 - cos u) = 4 sin^2(u/2):", ident, "; u^2 - 2(1 - cos u) >= 0 at 21 sample points:", samples)
++L, beta, a, M, N = sp.symbols("L beta a M N", positive=True)
++print("(3) 4/(3 N) = (pi/L)^2/(3 pi^2) at N = 4 L^2:", sp.simplify(sp.Rational(4, 3) / (4 * L ** 2) - (sp.pi / L) ** 2 / (3 * sp.pi ** 2)) == 0)
++b = sp.sqrt(a + 4 * M ** 2 / (3 * N))
++full = (2 * M ** 2 / 3) ** 2 / (sp.sqrt(a) + b) ** 2
++simp = (M ** 2 / 3) ** 2 / (a + 4 * M ** 2 / (3 * N))
++# full >= simp  <=>  4 b^2 >= (sqrt a + b)^2  <=>  (b - sqrt a)(3 b + sqrt a) >= 0
++print("(4) 4 b^2 - (sqrt a + b)^2 = (b - sqrt a)(3b + sqrt a):", sp.simplify(4 * b ** 2 - (sp.sqrt(a) + b) ** 2 - (b - sp.sqrt(a)) * (3 * b + sp.sqrt(a))) == 0,
++      "; b >= sqrt a since 4M^2/(3N) >= 0; then (M^2/3)^2/(a + 4M^2/(3N)) >= (M^2/3)^2/(a + 4/(3N)) iff M^2 <= 1")
++Hs = sp.symbols("H", positive=True)
++lhs_bound = sp.pi ** 2 * (beta + 1 / (3 * sp.pi ** 2)) / (3 * Hs)   # (M^2/3)^2 <= this
++print("(5) 9 * pi^2 (beta + 1/(3 pi^2))/(3 H) = (3 pi^2 beta + 1)/H:", sp.simplify(9 * lhs_bound - (3 * sp.pi ** 2 * beta + 1) / Hs) == 0)
++th, ph = sp.symbols("theta phi", real=True)
++avg = sp.integrate(sp.integrate((sp.sin(th) * sp.cos(ph)) ** 2 * sp.sin(th), (th, 0, sp.pi)), (ph, 0, 2 * sp.pi)) / (4 * sp.pi)
++print("(6) sphere average of (s^1)^2 =", avg)
++Lt = 4
++sites = list(product(range(Lt), repeat=2))
++sym = {x: sp.Symbol(f"s_{x[0]}{x[1]}", real=True) for x in sites}
++tot = 0
++for n in product(range(Lt), repeat=2):
++    hat = sum(sp.I ** ((n[0] * x[0] + n[1] * x[1]) % 4) * sym[x] for x in sites) / sp.Integer(4)  # N^{-1/2} = 1/4
++    tot += sp.expand(hat * sp.conjugate(hat))
++print("(6) Parseval on the 4x4 torus (symbolic site values): sum_k |s^(k)|^2 - sum_x s_x^2 =", sp.simplify(sp.expand(tot) - sum(v ** 2 for v in sym.values())))
++ok7 = True
++for Lv in range(1, 401):
++    m = isqrt(Lv)
++    ok7 = ok7 and 4 * m * m >= Lv
++print("(7) line: 4 floor(sqrt L)^2 >= L for L = 1..400:", ok7)
++n = sp.symbols("n", positive=True)
++print("(7) line: 4/(3N) at N = 2L is 2/(3L):", sp.simplify(sp.Rational(4, 3) / (2 * L) - 2 / (3 * L)) == 0,
++      "; for n^2 <= L: beta pi^2 n^2/L^2 + 2/(3L) <= (beta pi^2 + 2/3)/L  [n^2/L^2 <= 1/L]")
++m_ = sp.symbols("m", positive=True)
++# (M^2/3)^2 * m/(beta pi^2 + 2/3) <= 1/3  =>  M^4 <= 3 (beta pi^2 + 2/3)/m ; with m >= sqrt(L)/2: <= 6 (beta pi^2 + 2/3)/sqrt(L) = (6 beta pi^2 + 4)/sqrt(L)
++print("(7) 9 * (beta pi^2 + 2/3)/(3 m) = 3 (beta pi^2 + 2/3)/m; at m = sqrt(L)/2 this is (6 beta pi^2 + 4)/sqrt(L):",
++      sp.simplify(3 * (beta * sp.pi ** 2 + sp.Rational(2, 3)) / (sp.sqrt(L) / 2) - (6 * beta * sp.pi ** 2 + 4) / sp.sqrt(L)) == 0)
++print("(8) |1 - e^{-i theta}|^2 = 2(1 - cos theta):", sp.simplify(sp.expand((1 - sp.exp(-sp.I * th)) * (1 - sp.exp(sp.I * th)), complex=True) - 2 * (1 - sp.cos(th))) == 0)
++bonds2 = {tuple(sorted((x, ((x[0] + d[0]) % 4, (x[1] + d[1]) % 4)))) for x in sites for d in ((1, 0), (0, 1))}
++bonds1 = {tuple(sorted((x, (x + 1) % 8))) for x in range(8)}
++print("(8) bonds: 4x4 torus", len(bonds2), "= 2N; 8-torus", len(bonds1), "= N")
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block20_refuter.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block20_refuter.out.txt
+new file mode 100644
+index 0000000000..256cbf4fed
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block20_refuter.out.txt
+@@ -0,0 +1,15 @@
++R1 beta=1/2: u(pi)=0.228988 >= full bound 0.021636 >= simplified 0.017959 (M^2=0.6565): True
++R1 beta=1: u(pi)=0.154228 >= full bound 0.015438 >= simplified 0.014067 (M^2=0.7687): True
++R1 beta=2: u(pi)=0.083110 >= full bound 0.010271 >= simplified 0.009823 (M^2=0.8753): True
++R1 beta=5: u(pi)=0.033333 >= full bound 0.004936 >= simplified 0.004852 (M^2=0.9500): True
++R1 sum rule u(0) + u(pi) = N/3 exactly: True ; all four couplings consistent: True
++R2 plane L=2: S=0.26066 >= 0.09801; implied M^4 <= 11.5090 <= note's 30.6088
++R2 plane L=8: S=0.48460 >= 0.25413; implied M^4 <= 6.1907 <= note's 11.8051
++R2 plane L=64: S=0.81596 >= 0.46342; implied M^4 <= 3.6767 <= note's 6.4736
++R2 plane: direct sums dominate the proved lower bound, and the note's bound is the weaker one, for L = 2..64, beta = 1/4, 1, 4: True
++R3 line L=1: S=0.10714 >= 0.09491; implied M^4 <= 28.0000 <= note's 63.2176
++R3 line L=16: S=1.69402 >= 0.37964; implied M^4 <= 1.7709 <= note's 15.8044
++R3 line L=400: S=11.49490 >= 1.89820; implied M^4 <= 0.2610 <= note's 3.1609
++R3 line: direct sums dominate the proved lower bound, and the note's bound is the weaker one, for L = 2..400, beta = 1/4, 1, 4: True ; L = 1 violations (the count 2m fails there): [(1, 0.25)]
++R4 sphere average with the polar axis along e_1: 1/3 ; Parseval residue on a random 6x6 field: 3.6e-15
++R5 H_(L-1) >= log L for L = 2..10^4: True
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block20_refuter.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block20_refuter.py
+new file mode 100644
+index 0000000000..95b185d590
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block20_refuter.py
+@@ -0,0 +1,91 @@
++"""Refuting pass, block 20 (supervisor seat, disjoint machinery from the runner's checks):
++(R1) H1 on the exactly solvable two-site instance (Z/2Z, N = 2, two bonds, weight e^{2 beta s1.s2}): <s1.s2> = coth(2 beta) - 1/(2 beta) =: Lam;
++     u(pi) = (1 - Lam)/3, M^2 = (1 + Lam)/2, E(pi) = 4; check the displayed lower bound and its simplified form at beta = 1/2, 1, 2, 5;
++     the sum rule u(0) + u(pi) = N/3 exactly;
++(R2) the plane: N^{-1} sum_{k != 0} 1/(beta E(k) + 4/(3N)) evaluated directly (floating point, exact cosines) for L = 2..64 and
++     beta = 1/4, 1, 4, against the proved lower bound H_{L-1}/(pi^2 beta + 1/3); the implied bound 3/S on M^4 against the note's (3 pi^2 beta + 1)/H_{L-1};
++(R3) the line: the same for L = 2..400 against m/(beta pi^2 + 2/3), m = floor(sqrt L), and 3/S_1 against (6 pi^2 beta + 4)/sqrt L;
++     the first run included L = 1 and found the lower bound violated at beta = 1/4: at L = 1 the range {-L+1..L} = {0, 1} holds only n = 1,
++     so the count 2m of the block fails there (finding folded: H2(e) and the line half of H3 are stated for L >= 2);
++(R4) the sphere average of (s^1)^2 with the polar axis along e_1 (symbolic); Parseval on a random real field on a 6x6 torus (direct sums);
++(R5) H_{L-1} >= log L for L = 2..10^4 (the dyadic bound of the note is the weaker, exact-checkable form)."""
++import cmath
++import math
++import random
++from fractions import Fraction
++
++import sympy as sp
++
++b = sp.symbols("beta", positive=True)
++Lam = sp.coth(2 * b) - 1 / (2 * b)
++u_pi = (1 - Lam) / 3
++M2 = (1 + Lam) / 2
++E = 4
++N = 2
++full = (2 * M2 / 3) ** 2 / (sp.sqrt(b * E) + sp.sqrt(b * E + 4 * M2 / (3 * N))) ** 2
++simp = (M2 / 3) ** 2 / (b * E + sp.Rational(4, 3) / N)
++ok1 = True
++for bv in (sp.Rational(1, 2), 1, 2, 5):
++    vals = [sp.N(x.subs(b, bv), 15) for x in (u_pi, full, simp, M2)]
++    ok1 = ok1 and vals[0] >= vals[1] >= vals[2]
++    print(f"R1 beta={bv}: u(pi)={vals[0]:.6f} >= full bound {vals[1]:.6f} >= simplified {vals[2]:.6f} (M^2={vals[3]:.4f}): {vals[0] >= vals[1] >= vals[2]}")
++u_0 = (1 + Lam) / 3
++print("R1 sum rule u(0) + u(pi) = N/3 exactly:", sp.simplify(u_0 + u_pi - sp.Rational(N, 3)) == 0, "; all four couplings consistent:", ok1)
++
++
++def H(n):
++    return sum(1.0 / j for j in range(1, n + 1))
++
++
++ok2 = True
++for beta in (0.25, 1.0, 4.0):
++    for L in range(2, 65):
++        Nn = 4 * L * L
++        S = 0.0
++        for n1 in range(-L + 1, L + 1):
++            for n2 in range(-L + 1, L + 1):
++                if (n1, n2) == (0, 0):
++                    continue
++                Ek = 2 * (1 - math.cos(math.pi * n1 / L)) + 2 * (1 - math.cos(math.pi * n2 / L))
++                S += 1.0 / (beta * Ek + 4.0 / (3 * Nn))
++        S /= Nn
++        lower = H(L - 1) / (math.pi ** 2 * beta + 1.0 / 3)
++        note_bound = (3 * math.pi ** 2 * beta + 1) / H(L - 1)
++        ok2 = ok2 and S >= lower and 3.0 / S <= note_bound
++        if L in (2, 8, 64) and beta == 1.0:
++            print(f"R2 plane L={L}: S={S:.5f} >= {lower:.5f}; implied M^4 <= {3/S:.4f} <= note's {note_bound:.4f}")
++print("R2 plane: direct sums dominate the proved lower bound, and the note's bound is the weaker one, for L = 2..64, beta = 1/4, 1, 4:", ok2)
++ok3 = True
++bad3 = []
++for beta in (0.25, 1.0, 4.0):
++    for L in range(1, 401):
++        Nn = 2 * L
++        S = 0.0
++        for n in range(-L + 1, L + 1):
++            if n == 0:
++                continue
++            Ek = 2 * (1 - math.cos(math.pi * n / L))
++            S += 1.0 / (beta * Ek + 4.0 / (3 * Nn))
++        S /= Nn
++        m = math.isqrt(L)
++        lower = m / (beta * math.pi ** 2 + 2.0 / 3)
++        note_bound = (6 * math.pi ** 2 * beta + 4) / math.sqrt(L)
++        if L >= 2:
++            ok3 = ok3 and S >= lower and 3.0 / S <= note_bound
++        elif not (S >= lower and 3.0 / S <= note_bound):
++            bad3.append((L, beta))
++        if L in (1, 16, 400) and beta == 1.0:
++            print(f"R3 line L={L}: S={S:.5f} >= {lower:.5f}; implied M^4 <= {3/S:.4f} <= note's {note_bound:.4f}")
++print("R3 line: direct sums dominate the proved lower bound, and the note's bound is the weaker one, for L = 2..400, beta = 1/4, 1, 4:", ok3, "; L = 1 violations (the count 2m fails there):", bad3)
++th, ph = sp.symbols("theta phi", real=True)
++avg = sp.integrate(sp.integrate(sp.cos(th) ** 2 * sp.sin(th), (th, 0, sp.pi)), (ph, 0, 2 * sp.pi)) / (4 * sp.pi)
++random.seed(20)
++Lt = 6
++field = {(x, y): random.uniform(-1, 1) for x in range(Lt) for y in range(Lt)}
++tot = 0.0
++for n1 in range(Lt):
++    for n2 in range(Lt):
++        hat = sum(cmath.exp(2j * math.pi * (n1 * x + n2 * y) / Lt) * v for (x, y), v in field.items()) / math.sqrt(Lt * Lt)
++        tot += abs(hat) ** 2
++print("R4 sphere average with the polar axis along e_1:", avg, "; Parseval residue on a random 6x6 field:", f"{abs(tot - sum(v * v for v in field.values())):.1e}")
++print("R5 H_(L-1) >= log L for L = 2..10^4:", all(H(L - 1) >= math.log(L) for L in range(2, 10001)))

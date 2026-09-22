@@ -1,0 +1,7 @@
+{
+  "source_tree_unchanged": "7e111422b37e42688a69125849fb75702f263f19",
+  "failure": "v1 omitted helpers category although exact helper bound in runtime and notes.helpers",
+  "correction": "v2 duplicates identical actual helper path/hash in required inputs.helpers category; no source or execution change",
+  "v1_sha256": "b8176268fe3a7e83c9085e6c2b2914ac3a3797c13af38edda9d852322664b6cc",
+  "v2_sha256": "5ee1364e5615ab1c2856d5f58fef307e3ac7ac20d28646fddd0f9dfedb9bcde3"
+}

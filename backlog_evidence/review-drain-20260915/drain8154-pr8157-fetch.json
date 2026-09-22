@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "debbd76649e8a08469114e2dbfa52d1d1fd3e022",
+  "fetched_ref": "refs/review-loop/fetched/8157-cda938b87da746bc8a2cca32493aef1c",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block23-unsoldered-sphere-static-law-plane-algebraic-decay-complex-rotations-20260915",
+    "headRefOid": "debbd76649e8a08469114e2dbfa52d1d1fd3e022",
+    "isDraft": false,
+    "number": 8157,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

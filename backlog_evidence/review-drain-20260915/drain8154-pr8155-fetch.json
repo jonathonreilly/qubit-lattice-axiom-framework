@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "c286f2fc6ad4dc94562c1e1e1aa3f85f850f8a9a",
+  "fetched_ref": "refs/review-loop/fetched/8155-f3fa901ba4fa4b0db82068f9a8966d4e",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block21-unsoldered-sphere-static-law-weak-coupling-uniqueness-exponential-decay-20260915",
+    "headRefOid": "c286f2fc6ad4dc94562c1e1e1aa3f85f850f8a9a",
+    "isDraft": false,
+    "number": 8155,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

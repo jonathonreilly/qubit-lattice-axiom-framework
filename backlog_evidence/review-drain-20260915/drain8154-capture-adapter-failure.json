@@ -1,0 +1,7 @@
+{
+  "failed_script": "drain8154-capture.py",
+  "sha256": "c21684a0453ddfb58b399e0555527ad3e565d7266fc2660a0c00ee9c62a559cf",
+  "failure": "KeyError tree: report uses source.tree, failed identity check before execution loop or scientific invocation",
+  "scientific_executions": 0,
+  "correction": "v2 reads the actual immutable cold report field source.tree; source and limits unchanged"
+}

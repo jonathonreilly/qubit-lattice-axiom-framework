@@ -1,0 +1,21 @@
+{
+  "runner": "scripts/gauge_wilson_spatial_loop_area_chain_check_2026_09_07.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "PASS gauge_wilson_spatial_loop_area_chain_check_2026_09_07.py\nper_element: 1 checks; actual 192-face projection chain map\nper_site: 2 checks; projected rank and constant-sheet kernel\nper_mode: 4 checks; four frozen affine filling cases\nper_block: 8 checks; four minima and four actual lifted boundaries\nlattice_wide: 4 checks; three adverse controls and positive resources; no polymer proof\nTOTAL: PASS=19 FAIL=0\nseconds: 0.0035366250085644424; rss_MiB: 20.765625\nsource_sha256: 15e027bdd29e7a28a87b4d88caf68c199cbaf4086f2bfb754526636e4ebec1eb\n",
+  "stderr": "",
+  "elapsed_sec": 0.08035707473754883,
+  "timeout_sec": 180,
+  "live_log": "/private/tmp/review-drain-20260915/author-draft-slot/logs/runner-cache/.in-progress/gauge_wilson_spatial_loop_area_chain_check_2026_09_07.txt",
+  "whole_tree_watchdog": {
+    "limit_bytes": 188743680,
+    "interval_sec": 0.02,
+    "root_pid": 78971,
+    "samples": 2,
+    "peak_tree_rss_bytes": 53952512,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8026-capture.py",
+  "capture_script_sha256": "e8fa01e0abb3e84f77c390a72827036e5e14cda5cd2ce783b8b6230ec5de2df6"
+}

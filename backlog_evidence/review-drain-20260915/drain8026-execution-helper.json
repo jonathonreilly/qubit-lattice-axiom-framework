@@ -1,0 +1,21 @@
+{
+  "runner": "scripts/gauge_wilson_spatial_loop_area_coefficients_check_2026_09_07.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "PASS gauge_wilson_spatial_loop_area_coefficients_check_2026_09_07.py\nper_element: 4 checks; finite Haar-index/arithmetic controls; analytic Haar identity is imported\nper_site: 3 checks; actual two-cube graph and shared link\nper_mode: 4 checks; orders zero to two center census\nper_block: 4 checks; two coefficients, wrong denominator and normalization\nlattice_wide: 18 checks; ten planar, seven periodic and one resource controls; no uniform analytic radius\nTOTAL: PASS=33 FAIL=0\nseconds: 0.002461583004333079; rss_MiB: 21.5\nsource_sha256: def4af204483f2ed396c5219f4319b944c1b464faac60388026827b19801d2c2\n",
+  "stderr": "",
+  "elapsed_sec": 0.08103609085083008,
+  "timeout_sec": 180,
+  "live_log": "/private/tmp/review-drain-20260915/author-draft-slot/logs/runner-cache/.in-progress/gauge_wilson_spatial_loop_area_coefficients_check_2026_09_07.txt",
+  "whole_tree_watchdog": {
+    "limit_bytes": 188743680,
+    "interval_sec": 0.02,
+    "root_pid": 78971,
+    "samples": 3,
+    "peak_tree_rss_bytes": 56311808,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8026-capture.py",
+  "capture_script_sha256": "e8fa01e0abb3e84f77c390a72827036e5e14cda5cd2ce783b8b6230ec5de2df6"
+}

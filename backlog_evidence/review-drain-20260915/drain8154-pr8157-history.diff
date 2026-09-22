@@ -1,0 +1,472 @@
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+index 8f9c496033..d3736249e8 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+@@ -9,2 +9,11 @@
+ | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
+ | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
++
++## Block 23 — algebraic decay on the plane by complex rotations (2026-09-15)
++
++| Family | Object/formulation | Mechanism/invariant | Terminal obligation | Strength vs target | Status | Concrete evidence | Reopen condition |
++|---|---|---|---|---|---|---|---|
++| F23.1 the shift bound | `|⟨s^1s^1 + s^2s^2⟩| ≤ e^{a_x − a_0 + βΣ(cosh Δa − 1)}` | the complex cosine; the modulus; the shift lemma | none | exact | candidate-complete | P1 (B1–B4, E1) | — |
++| F23.2 the shift function | `a_y = γ log((1+R)/(1+d(y)))_+` | the mean value bound; sup-norm shells `≤ 8j`; `cosh t − 1 ≤ (t²/2)cosh t` | a finer count (factor ten of room) | exact | candidate-complete | P2 (B3, C1–C2) | a sharper exponent |
++| F23.3 the rate | `κ(β) = 5/(512β)`; prefactor `(3/2)e^{9/16}` | `cosh 1 ≤ 8/5`; the optimization | the true rate | exact | candidate-complete | P3 (D1–D2, D4) | — |
++| F23.4 the consequences | the torus `M_N²` bound; infinite-volume laws; the placement | shells; the DLR step | existence of plane laws (not needed) | exact | candidate-complete | P4 (D3) | — |
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
+index e99dd0e244..95f98b5897 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
+@@ -24,2 +24,10 @@
+ - Simultaneous formation (several records locking in one step) is not a total order; the formation law of a partial order with simultaneous steps would need a joint conditional the axiom does not state; named in N7.
+ - Infinite volume: the static specification's DLR existence (compactness on a finite menu) and uniqueness are outside the block.
++
++## Block 23 (2026-09-15) — algebraic decay on the plane
++- Dependencies: `minimal_axioms`; the possibility-covariance note (on `main`; the sphere domain and the unsoldered reading); block 01 (on `main`; the static reading). Proposed, unaudited. PRs #8153 and #8154 referenced as evidence addresses for the placement only.
++- Named premises: the pure-state sphere as the possibility domain; the unsoldered reading; the static reading on plane windows with exterior records (no records outside) and on tori; the exponential overlap with `β` supplied.
++- Scaffolding: the cylindrical coordinates `(ρ cos φ, ρ sin φ, ζ)`; the trigonometric polynomial `(Σ_{m≤4}(c cos φ)^m/m!)e^{iφ}` for the shift lemma; sup-norm shells on `Z²` (`j < 30`) and on tori (`L ≤ 12`); `R ≤ 60` for the shell sum; the two-site instance; a `4×4` window, a `24×24` torus, `R ≤ 40` bond sums and a `10⁵`-point grid in the refuting pass.
++- Standard mathematical imports at definition level: the shift lemma for the period integral of an entire `2π`-periodic function; the area-preserving cylindrical projection (`dσ = dζ dφ`).
++- References named, not used: McBryan–Spencer; Fröhlich–Spencer; Fröhlich–Pfister; Kosterlitz–Thouless.
++- Counterfactual pass: a discrete menu (no angle to rotate; block 17 orders on the plane); `d = 3` (the shell sum grows like `R`, not `log R`, and the bound is useless — consistent with block 19's order); the Born overlap (the shift argument applies to any weight entire in the angles; its constants are not computed); the formation reading (block 12).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block23_findings.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block23_findings.md
+new file mode 100644
+index 0000000000..00207d5426
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block23_findings.md
+@@ -0,0 +1,16 @@
++# Refuting pass — block 23 (supervisor-run, disjoint machinery; 2026-09-15)
++
++Routes compared (control `specs/supervisor_control_block23_complex_rotations.py`, refuting pass `specs/supervisor_control_block23_refuter.py`, outputs in `.out.txt`):
++
++| item | runner's route | refuting route | result |
++|---|---|---|---|
++| the shift bound (P1) | the identities symbolically; the shift lemma on monomials; the solvable two-site instance | a heat-bath Monte Carlo estimate of `⟨s_0^1s_x^1 + s_0^2s_x^2⟩` on a `4×4` window with free boundary at `β = 1/2, 2` against the bound with the shift function at two values of `γ` | the bound dominates the estimate (`0.50` and `0.94` against `−0.009` at `β = 1/2`; `0.73` and `0.98` against `0.17` at `β = 2`) |
++| the shift function's Lipschitz bound (P2) | the mean value bound symbolically; shell counts | every bond of the `24×24` torus with the torus distance, for `R = 3, 8, 12, 16` (wrapping past the half-side) | holds on every bond |
++| the bond sum (P2 c) | `Σ_{j≤R} 8j/(1+j)² ≤ 8H_R` exactly; the series ratios | the exact sum over bonds of `cosh(a_y − a_z) − 1` on `Z²` for `R ≤ 40` at `γ = 7/10` against `2γ²cosh γ(1 + 8H_R)` | below the bound throughout; largest ratio `0.10` (the shell bound has a factor ten of room — not claimed) |
++| the harmonic bound (P3) | `log(1+u) ≥ u/(1+u)` symbolically | `H_R ≤ 1 + log R` at `R = 10^k`, `k ≤ 6` | consistent |
++| the optimization (P3) | the maximizer and maximum symbolically; the two branches | a grid of `10⁵` points on `(0, 1]` at `β = 1/10, 1, 10` | agrees to six digits with `5/(512β)` (and with `1 − 128β/5` below `5/256`) |
++| the torus consequence (P4) | the shell sum at `κ' = 1/2, 1` for `L ≤ 40` (termwise) | direct shell sums for `L ≤ 200` | consistent |
++
++Findings: none in the primary. Observations recorded: the bond-sum bound is loose by about a factor ten (the sup-norm shell count and the crude `cosh t − 1 ≤ (t²/2)cosh γ` both lose), so the exponent `κ(β)` could be improved by that factor by a finer count; not claimed. The Monte Carlo estimate on the `4×4` window at `β = 2` (`0.17` for the two-component correlator at distance `√18`) is far below the bound, as expected of a bound uniform in the volume.
++
++Attempts to refute (nothing refuted): the shift lemma's hypothesis for the bond weights with an exterior endpoint (entire and periodic in the interior angle; the exterior angle is a constant); the modulus step when `ρ_yρ_z cos(φ_y − φ_z) < 0` (the inequality `cos θ cosh τ ≤ cos θ + (cosh τ − 1)` needs no sign of `cos θ`; and `ρρ' ≤ 1` is applied to the nonnegative correction only); the torus shells at `j = L` (`4L − 1 ≤ 8L`); the requirement `Λ ⊇ {d < R}` for windows (so the formula vanishes at exterior sites); the sum over the three component pairs (`2s·s'` is their sum, no isotropy used). Verdict of this pass: PASS-NO-BLOCKER at the supervisor's own standard, pending the owner's independent review.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block23.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block23.md
+new file mode 100644
+index 0000000000..e6fa792dc8
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block23.md
+@@ -0,0 +1,15 @@
++# Claim status certificate — block 23 (close, 2026-09-15)
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: upstream_support
++reachability_to_target: supports
++conditional_surface_status: "P1-P4 proved for every beta > 0 on every finite plane window containing the disc {d < R} with any exterior records, on tori of even side, and for every infinite-volume static law on the plane should one exist: |<s_0.s_x>| <= (3/2) e^{9/16} (1 + d(x))^{-kappa(beta)}, kappa = 5/(512 beta) for beta >= 5/256 and 1 - 128 beta/5 below; M_N^2 <= 6 e^{9/16} (1+L)^{-min(kappa,1)} + 1/(4L^2) on the torus; the algebraic skeleton executed exactly; conditional on the pure-state sphere as the possibility domain, the unsoldered and static readings and the exponential overlap as supplied conditions; two standard mathematical imports named at definition level (the shift lemma for period integrals of entire periodic functions; the area-preserving cylindrical projection)"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++claim_type_reason: "a contour shift with explicit modulus bounds; a discrete Dirichlet sum of a logarithm bounded by shell counting; an elementary optimization; every executed identity exact"
++dependency_classes: "one premise node (minimal_axioms); the possibility-covariance note and block 01 (on main; proposed, unaudited); blocks 19 and 20 (open PRs) as evidence addresses for the placement only"
++open_imports: "the sphere as the possibility domain; the unsoldered and static readings; the exponential overlap; the two standard mathematical imports"
++review_loop_disposition: pending (supervisor-run block; author checks only)
++independence_class: "single seat (Fable, supervisor): control (identities; the Lipschitz bound on a patch; shell sums; the constants; the inequality on solvable chains), contract with a lens pass, primary, refuting pass by Monte Carlo on a window, the torus Lipschitz bound, exact bond sums, a grid and direct shell sums, fold (no findings)"
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block23.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block23.md
+new file mode 100644
+index 0000000000..8b50ea9a95
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block23.md
+@@ -0,0 +1,24 @@
++# GOAL — block 23: the plane's correlations decay at least algebraically at every coupling — complex rotations with explicit constants; block 20's rate upgraded to a power of the side (2026-09-15)
++
++**Owner directive (2026-09-15):** don't stop; assess the next lane at each conclusion; no subagents; derivations over computation.
++
++**Why this block.** Block 20 (PR #8154) shows the unsoldered sphere static law never orders on a plane, with the weak rate `M_N⁴ ≤ (3π²β + 1)/H_{L−1}`. What replaces block 19's Green-function channel there? This block gives the rate: on any plane window and on the plane torus, `|⟨s_0·s_x⟩| ≤ (3/2)e^{9/16}(1 + d(x))^{−κ(β)}` with `κ(β) = 5/(512β)` for `β ≥ 5/256` and `κ(β) = 1 − 128β/5 ≥ 1/2` below — a power law with a coupling-dependent exponent, uniform in the window and the exterior records. Hence `M_N² ≤ 6e^{9/16}(1+L)^{−min(κ,1)} + 1/(4L²)` on the torus (a power of the side in place of `(log L)^{−1/2}`), every infinite-volume static law on the plane has the same decay, and no Green-function-type kernel (whose exponent would be fixed by the dimension) exists on planes at any coupling.
++
++**Object.** Records `s = (ρ cos φ, ρ sin φ, ζ)` with `ζ ∈ [−1, 1]`, `ρ = (1 − ζ²)^{1/2}`, `dσ = dζ dφ`; the window law `μ_Λ^ω ∝ Π_b e^{β s_y·s_z} Π dσ` on a finite `Λ ⊂ Z²` with exterior records `ω`, or the torus law on `(Z/2LZ)²`; `d(y)` the Euclidean distance to `0` on `Z²` or the torus distance; `H_R = Σ_{j≤R} 1/j`.
++
++**Contract.**
++- P1 (the complex-shift bound): for any real `a` on the sites (zero at exterior sites), `|⟨s_0^1 s_x^1 + s_0^2 s_x^2⟩| ≤ exp(a_x − a_0 + β Σ_b (cosh(a_y − a_z) − 1))`; the same for the pairs `(2,3)`, `(1,3)`; hence `|⟨s_0·s_x⟩| ≤ (3/2)·` the same. Route: `cos(φ + ia) = cos φ cosh a − i sin φ sinh a`; `|e^{c cos(φ+ia)}| = e^{c cos φ cosh a}`; `cos φ cosh a ≤ cos φ + (cosh a − 1)`; the period integral of an entire `2π`-periodic function is shift-invariant.
++- P2 (the shift function): `a_y = γ max(0, log((1+R)/(1+d(y))))` with `R = d(x)`, on windows `Λ ⊇ {d < R}` and on the torus: `|a_y − a_z| ≤ γ/(1 + min(d(y), d(z)))` on every bond, zero unless the smaller endpoint has `d < R`; `Σ_b (cosh(a_y − a_z) − 1) ≤ 2γ² cosh γ (1 + 8H_R)` (sup-norm shells of at most `8j` sites; `cosh t − 1 ≤ (t²/2)cosh t`).
++- P3 (the rate): `|⟨s_0·s_x⟩| ≤ (3/2) e^{18βγ² cosh γ}(1+R)^{−(γ − 16βγ² cosh γ)}`; with `γ = min(1, 5/(256β))` and `cosh 1 ≤ 8/5` (from `8/3 ≤ e ≤ 11/4`): the exponent `κ(β)` and the prefactor `(3/2)e^{9/16}`.
++- P4 (consequences): the torus bound on `M_N²`; every infinite-volume static law on `Z²` (should one exist) has `|⟨s_0·s_x⟩| ≤ (3/2)e^{9/16}(1+|x|)^{−κ}`; the placement.
++- N-gate: the negative "no Green-function-type kernel on planes" with its escapes (the constants are not sharp; the true decay may be faster; `d = 3`).
++
++**Lens pass (self-run panel).**
++- *"This is McBryan–Spencer 1977."* Yes, for `O(N)`; re-proved at scope with explicit constants for this rule, on windows with exterior records and on the torus, and placed against block 20's rate and block 19's kernel.
++- *"The exponent `5/(512β)` is tiny."* It is the known weakness of the elementary route; the theorem is the existence of a power law with explicit constants, uniform in the volume; the true decay (faster) is not claimed.
++- *"The torus has no exterior; the shift function wraps."* `d_T` is `1`-Lipschitz along bonds and its sup-norm shells have at most `8j` sites, so P2 holds verbatim with `R = d_T(0, x)` up to `√2 L`.
++- *"Exterior records are not integrated."* The shift acts on interior angles only; bonds to the exterior get `a_z = 0`, consistent with the formula because `Λ ⊇ {d < R}`.
++
++**Forbidden phrases (beyond the lane's standing list):** "phase transition", "critical", "converge", "certified", "emergent", "Kosterlitz", "the true exponent is", "the plane carries a Green-function kernel".
++
++**Prior-art search at `origin/main`.** Block 20 (no long-range order on planes); main's quantum no-order notes; nothing on algebraic decay for the sphere-valued record law. Open PRs: #8153–#8156 (this lane).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+index 6dfc9de138..5c29b7764c 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+@@ -26,2 +26,5 @@ Stacked on #8002 → #8000 → #7999 → #7998 → main; all hand-offs. Block 05
+ 
+ Current source review found five further P2 groups, corrected in the canonical note and runner with their disposition in REVIEW_HISTORY.md. Same-session confirmation is pending; this appendix records an open review handoff.
++
++## 2026-09-15 block 23 opened for review as PR #8157 (supervisor)
++Independent PR against `main` (`47dd808347`); parent on `main`: the possibility-covariance note. The lane assessment after block 22: the kernel's window on `Z³` is `[√3/6, 76/100]`; on planes block 20 gives no order but no rate. Block 23 = complex rotations: for any real `a`, `|⟨s_0^1s_x^1 + s_0^2s_x^2⟩| ≤ exp(a_x − a_0 + βΣ_b(cosh(a_y − a_z) − 1))` (P1); the logarithmic shift function has `|Δ_b a| ≤ γ/(1 + min d)` and bond sum `≤ 2γ²cosh γ(1 + 8H_R)` on windows containing the disc and on the torus (P2); `|⟨s_0·s_x⟩| ≤ (3/2)e^{9/16}(1 + d(x))^{−κ(β)}`, `κ = 5/(512β)` for `β ≥ 5/256`, `1 − 128β/5` below (P3); `M_N² ≤ 6e^{9/16}(1+L)^{−min(κ,1)} + 1/(4L²)`; infinite-volume plane laws decay the same way; no Green-function-type kernel on planes (P4). Runner 20 checks, 13 mutations in-family, exact. Refuting pass: Monte Carlo on a window, the torus Lipschitz bound, exact bond sums (factor ten of room, not claimed), a grid, direct shell sums — no findings. Gates: pipeline ×2, changed-evidence, `audit_lint --strict`, `git diff --check`, vocabulary lint clean on the block's files. Next: the queue refresh at block 23 opening (the weak side's coefficient; the normalization; the Born overlap; X4/S6).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
+index 9ccaee75bb..2dcebb30ab 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
+@@ -14,2 +14,7 @@ Policy: reference and converge, never borrow; every statement used is re-proved
+ - The Pickard random field / Markov-mesh (unilateral Markov field) construction — Abend, Harley and Kanal (1965); Pickard (1977, 1980): a two-parent unilateral construction whose rows and columns are Markov chains when the corner-pair condition holds. The framework's row sweep under the records-only reading is an instance: `Z_2 = Z_1^2 K^2` with `K` symmetric doubly stochastic is the condition; Theorem E re-proves the row statement natively (the column statement is a lead for the next block).
+ - Toom and Vasilyev (1970s): product-form and Markov invariant measures of probabilistic cellular automata — reference only.
++
++## Block 23 (2026-09-15) — references named; two standard facts imported at definition level
++- McBryan–Spencer (1977): power-law decay for `O(N)` models on `Z²` by complex rotations — re-proved at scope with explicit constants on windows with exterior records and on the torus.
++- Fröhlich–Spencer (1981), Fröhlich–Pfister (1981), Kosterlitz–Thouless (1973): refinements and the two-component picture — named only.
++- The shift lemma for period integrals (a contour argument); the area-preserving cylindrical projection — imported at definition level.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+index 2977b7f990..41d4c6babb 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+@@ -9,2 +9,5 @@ Routes read at their proofs, not their headlines.
+ | Convex-consistency (affine rule output) vs product form (R136/T212/T213) | same packet | Normalizer constant iff no coupling (rank argument; Funk–Hecke on the sphere). | Re-proved exactly on the menu as the two-neighbor normalizer factorization; used for T2(b). |
+ | Binary full-conditional compatibility (landed 2026-08-10) | `docs/ADMISSIBILITY_BINARY_FULL_CONDITIONAL_COMPATIBILITY_ISING_ACTION_AXIOM_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md` | Static half on binary menus; excludes formation dynamics by its own boundary. | Upstream; generalized here; the excluded object is this block's subject. |
++
++## Block 23 (2026-09-15) — no Green-function-type kernel on planes at any coupling
++- The negative sentence (P4 c): on planes `|⟨s_0·s_x⟩| ≤ (3/2)e^{9/16}(1 + d(x))^{−κ(β)}` with `κ(β) = 5/(512β)` (`β ≥ 5/256`), uniformly in the window and the side; the exponent depends on `β`, whereas a Green-function kernel's power is fixed by the dimension. Escapes named for the N-gate: the constants are crude and the true decay faster (not claimed); `d = 3` (block 19); the Born overlap (not treated).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+index 74d2f60bae..dcb0a1c6d9 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+@@ -79,2 +79,11 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
+ 4. **The silent triples by a non-criterion route** (unchanged; heavy).
+ 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
++
++## Refresh at block 23 opening (2026-09-15)
++
++Block 23 opened for review (independent PR against main): algebraic decay on the plane with `κ(β) = 5/(512β)`; block 20's rate upgraded to a power of the side; no Green-function-type kernel on planes. The lane's picture of the unsoldered sphere static law is now: `Z³` — unique and short-range below `√3/6`, ordered with the Green-function channel above `76/100`; planes and lines — never ordered, power-law bounded. Ranked next:
++
++1. **The weak side's sharper coefficient** (prove the zero-field maximum of the mean absolute deviation; `β < 1/3`) — medium; narrows the band.
++2. **The kernel's normalization on `Z³`** — hard.
++3. **The Born overlap under the unsoldered reading** (reflection positivity holds to `ℓ = 1`; no Gaussian domination; what orders?) — medium-hard.
++4. **Value-dependent order laws (block 16, X4); the stability theorem (block 12, S6)** — hard; unchanged.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block23.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block23.md
+new file mode 100644
+index 0000000000..087c71c2e0
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block23.md
+@@ -0,0 +1,16 @@
++# RESULTS — block 23: on a plane the unsoldered sphere static law's correlations decay at least algebraically at every coupling — complex rotations with explicit constants (2026-09-15)
++
++**Deliverables (branch `physics-loop/admissibility-induced-law-block23-unsoldered-sphere-static-law-plane-algebraic-decay-complex-rotations-20260915`, independent PR against `main` at `47dd808347`; parent on `main`: the possibility-covariance note of 2026-09-14):** the note `docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_PLANE_CORRELATIONS_DECAY_ALGEBRAICALLY_AT_EVERY_COUPLING_COMPLEX_ROTATIONS_EXPLICIT_EXPONENT_BOUNDED_THEOREM_NOTE_2026-09-15.md`; the runner `scripts/admissibility_rule_unsoldered_sphere_static_law_plane_algebraic_decay_complex_rotations_2026_09_15.py` (20 checks, 13 mutations, exact, a few seconds); the pinned cache; the control and the refuting pass with outputs (`specs/supervisor_control_block23_complex_rotations.py`, `specs/supervisor_control_block23_refuter.py`); `GOAL_block23.md`; `CHECKER_block23_findings.md`; this record. Blocks 06–22 remain open as PRs #8034, #8035, #8138–#8142, #8146–#8156.
++
++**Why this block.** Block 20 (PR #8154) shows no long-range order on planes with a logarithmic rate for the order parameter; this block gives the rate of decay of the correlations themselves, uniform in the volume, and thereby says what replaces block 19's Green-function channel on a plane: a power law with a coupling-dependent exponent.
++
++## Result, in one paragraph
++Write each record as `(ρ cos φ, ρ sin φ, ζ)`. The correlation of the first two components is `Re⟨ρ_0ρ_x e^{i(φ_0 − φ_x)}⟩`; shifting every angle by `i a_y` leaves each period integral unchanged (the integrand is entire and periodic), multiplies the observable by `e^{a_x − a_0}` and each bond weight's modulus by at most `e^{β(cosh(a_y − a_z) − 1)}` (`cos(φ + ia) = cos φ cosh a − i sin φ sinh a` and `cos φ cosh a ≤ cos φ + cosh a − 1`), so `|⟨s_0^1s_x^1 + s_0^2s_x^2⟩| ≤ exp(a_x − a_0 + βΣ_b(cosh(a_y − a_z) − 1))` for any real `a`, and `|⟨s_0·s_x⟩| ≤ (3/2)` times the same by summing the three component pairs (P1). With `a_y = γ log((1+R)/(1+d(y)))` inside the disc of radius `R = d(x)` and zero outside, on any window containing the disc or on the torus: `|a_y − a_z| ≤ γ/(1 + min(d(y), d(z)))` on every bond, and the bond sum is at most `2γ²cosh γ(1 + 8H_R)` by sup-norm shells of at most `8j` sites (P2). Hence `|⟨s_0·s_x⟩| ≤ (3/2)e^{18βγ²cosh γ}(1+R)^{−(γ − 16βγ²cosh γ)}`, and with `γ = min(1, 5/(256β))` and `cosh 1 ≤ 8/5` (from `8/3 ≤ e ≤ 11/4`): `|⟨s_0·s_x⟩| ≤ (3/2)e^{9/16}(1 + d(x))^{−κ(β)}`, `κ(β) = 5/(512β)` for `β ≥ 5/256`, `κ(β) = 1 − 128β/5 ≥ 1/2` below, uniformly in the window, the exterior records and the side (P3). On the torus `M_N² ≤ 6e^{9/16}(1+L)^{−min(κ,1)} + 1/(4L²)` (a power of the side where block 20 had `(log L)^{−1/2}`); every infinite-volume static law on the plane, should one exist, has the same decay; and since the exponent depends on `β`, no Green-function-type kernel exists on planes at any coupling (P4).
++
++## Certificate
++- Runner: `TOTAL: PASS=20 FAIL=0`; 13 mutations each in its family; no floating-point literal or conversion; authors' names only in the allowed sections.
++- Refuting pass (`CHECKER_block23_findings.md`): the full shift bound against a Monte Carlo truth on a `4×4` window at two couplings; the shift function's Lipschitz bound on the torus with wrapping; the harmonic bound to `10⁶`; the exact bond sums on `Z²` (a factor ten below the shell bound — unclaimed room); the optimization by a grid; the torus shell sums to `L = 200`. No findings.
++- Claim type `bounded_theorem`; status `bounded-support`; trace `upstream_support`; audit required.
++
++## Not claimed
++The true rate of decay (faster); sharpness of `κ(β)` or of the prefactor; the Born overlap; the existence of infinite-volume laws on the plane (the decay is proved for any that exist); any reading, rule, coupling or dimension as physical.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+index 08d17f0940..396339deb7 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+@@ -200,2 +200,15 @@ executed against the four declared inputs on current main. The original
+ fresh checks. Original-reviewer confirmation is pending; no audit status is
+ applied, and only the coordinator may perform authorized integration.
++
++## block 23 — V1-V5 (supervisor, 2026-09-15)
++- V1: block 20's absence of order on planes (PR #8154) with a logarithmic rate; what replaces block 19's channel there.
++- V2: the lens pass in `GOAL_block23.md` ("this is the 1977 theorem" — re-proved at scope with explicit constants on windows and the torus; "the exponent is tiny" — the dependence on `β` is the content; "the torus wraps" — the torus distance is Lipschitz and its shells never exceed `8j`; "exterior records" — `Λ ⊇ {d < R}`).
++- V3: P1–P4 proved; the skeleton executed exactly (20 checks, 13 mutations); the refuting pass agreed on six routes with no findings and recorded a factor ten of room in the bond sum.
++- V4: no reading, rule, coupling or dimension selected; the true rate and sharpness not claimed; blocks 19 and 20 not re-proved.
++- V5: consumers named — #8093's assembly (the dimension placement with a rate); the campaign's queue.
++
++## block 23 — supervisor lens pass, primary, refuting pass and fold (2026-09-15)
++Lens (`GOAL_block23.md`): as V2. Control: the identities; the Lipschitz bound on an `81×81` patch; the shell sums on `Z²` and tori; the harmonic bound; the `e` bounds; the optimization; P1's inequality on solvable chains. Primary: the note and the runner (20 checks, 13 mutations). Refuting pass (`CHECKER_block23_findings.md`): Monte Carlo on a `4×4` window; the torus Lipschitz bound with wrapping; exact bond sums; a grid; direct shell sums — no findings. Author checks only; independent review pending.
++
++## block 23 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
++1 self-containment: PASS — inputs: this note, the axioms memo, the possibility-covariance note, all on `main` at `47dd808347`; nothing pinned from a branch or PR (PRs #8153/#8154 are evidence addresses for the placement only). 2 cache/execution: PASS. 3 claim-scope honesty: PASS — the readings and the overlap named as supplied; the true rate and sharpness marked open; the existence of plane laws not assumed; the standard facts named at definition level. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
+index 9b1cd3a27f..d402a00f43 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
+@@ -85,2 +85,7 @@ git grep -l -iE "phase transition.*(menu|product rule)|(menu|product rule).*phas
+ 
+ Target state after the matched-hit review: **open** — no note on `origin/main` computes the one-site interdependence coefficient of the menu rule, states its uniqueness region, or re-proves the criterion.
++
++## Block 23 (2026-09-15) — prior-art search and routes (independent PR against main; blocks 06–22 are open PRs #8034, #8035, #8138–#8142, #8146–#8156)
++Searched commit: `origin/main` = `47dd808347`.
++- `git grep -l -iE "mcbryan|complex rotation|algebraic decay|power-law decay" origin/main -- 'docs/*.md'` → nothing for the sphere-valued record law; block 20 (no order on planes, logarithmic rate) is the predecessor.
++Classification: **open after the matched-hit review.** Routes: Z-A complex rotations with the logarithmic shift function (P1–P3) — chosen; Z-B a sharper shell count or a smoother shift function (the bond sum has a factor ten of room) — not pursued; Z-C the infrared bound plus a two-dimensional sum rule (block 20's route) — gives no rate for correlations; Z-D the true (exponential) decay of the three-component model — not attempted (not elementary).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+index e166420207..8ec85bfc81 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+@@ -106,2 +106,13 @@ source_review_correction:
+ # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
+ # audit_status: "unset; no audit invoked or verdict applied by this source correction"
++
++# ---------------------------------------------------------------- block 23 close (2026-09-15)
++# block: 23
++# branch: physics-loop/admissibility-induced-law-block23-unsoldered-sphere-static-law-plane-algebraic-decay-complex-rotations-20260915 (independent; base origin/main 47dd808347; blocks 06-22 are open PRs #8034, #8035, #8138-#8142, #8146-#8156)
++# pr_status: opened for review — PR #8157 (base = main; https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8157); hand-off; never merged by the campaign; not a main landing
++# final_certificate: "TOTAL: PASS=20 FAIL=0; 13 mutations, census 13/13 in-family; refuting pass consistent on six routes, no findings; gates: see HANDOFF.md"
++# seats: "supervisor-run: control (identities; Lipschitz bound on a patch; shell sums; constants; solvable chains) -> contract with a lens pass -> primary (P1-P4, runner) -> refuting pass (Monte Carlo window; torus Lipschitz; exact bond sums; grid; shell sums) -> fold (none needed)"
++# review_findings: "unsoldered sphere static law on a plane: complex rotations give |<s_0.s_x>| <= (3/2) e^{9/16} (1 + d(x))^{-kappa(beta)}, kappa = 5/(512 beta) for beta >= 5/256 and 1 - 128 beta/5 below, uniformly in the window (with exterior records), the side and for infinite-volume laws; M_N^2 <= 6 e^{9/16} (1+L)^{-min(kappa,1)} + 1/(4L^2) on the torus (block 20 had (log L)^{-1/2}); a coupling-dependent power law, so no Green-function-type kernel on planes at any coupling"
++# strongest_unresolved_proof_obligation: "the true decay rate on the plane (not claimed); the weak side's sharper coefficient on Z^3; the normalization"
++# next_exact_action: "queue refresh 2026-09-15 (block 23 opening): the weak side's coefficient; normalization; the Born overlap; X4/S6"
++# lock: held (owner: don't stop; assess the next lane at each conclusion)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+index 8f432e2cd2..ea1e08aa1b 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+@@ -64,2 +64,13 @@ artifact_role: theorem
+ next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
+ ```
++
++# Trace gate — block 23, at PR opening (2026-09-15)
++```yaml
++trace_class: upstream_support
++target_claim_id: null
++target_blocker_text: "#8093's gravity node: blocks 19-22 (PRs #8153-#8156) locate its kernel in the ordered unsoldered static law on Z^3 with window [sqrt(3)/6, 76/100] and show it needs the third dimension; what replaces it on a plane"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem
++next_trace_action: "on planes |<s_0.s_x>| <= (3/2) e^{9/16} (1 + d(x))^{-kappa(beta)}, kappa = 5/(512 beta) for beta >= 5/256, uniformly in the window and the side; M_N^2 <= 6 e^{9/16} (1+L)^{-min(kappa,1)} + 1/(4L^2); a coupling-dependent power law, so no Green-function-type kernel on planes. Next: the weak side's coefficient; the normalization; the Born overlap. Consumers: #8093's assembly; the campaign's queue"
++```
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block23_complex_rotations.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block23_complex_rotations.out.txt
+new file mode 100644
+index 0000000000..9e7c67cfff
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block23_complex_rotations.out.txt
+@@ -0,0 +1,16 @@
++(1) cos(phi + i a) identity: True
++(1) |exp(c cos(phi+ia))| = exp(c cos phi cosh a): Re part is c cos phi cosh a: True
++(1) cos phi + (cosh a - 1) - cos phi cosh a = (1 - cos phi)(cosh a - 1) >= 0: True
++(1) coefficient ratios of (cosh t - 1)/((t^2/2) cosh t) at t^{2k}, k=1..9: [1, 1/6, 1/15, 1/28, 1/45, 1/66, 1/91, 1/120, 1/153] = 2/((2k)(2k-1)): True
++(1) d/du (u - log(1+u)) = u/(1+u) >= 0: True
++(2) |a_y - a_z| <= gamma/(1 + min(|y|,|z|)) on all bonds of a 81x81 patch: True; worst ratio 0.9758
++(2) 4(1 + sum_{j<=R} 8j/(1+j)^2) <= 4(1 + 8 H_R) for R <= 40 exactly: True
++(2) torus sup-norm shells: 8j points for j < L, 4L-1 <= 8L for j = L, L = 2..12: True
++(2) H_R <= 1 + log R for R <= 10^5: True
++(3) partial sum 1+1+1/2+1/6 = 8/3 <= e; 65/24 + 1/100 =  1631/600 <= 11/4: True ; cosh 1 <= (11/4 + 3/8)/2 = 25/16 <= 8/5: True
++(3) gamma* = 5/(256*beta) ; kappa(gamma*) = 5/(512*beta) ; 18 beta gamma*^2 (8/5) = 45/(4096*beta) ; at beta = 5/256: 9/16
++(3) small beta: gamma = 1: kappa = 1 - 128 beta/5 >= 1/2 iff beta <= 5/256: beta <= 5/256
++(4) P1's inequality on 2- and 3-site chains for 41 shift values, beta in (1/4, 1, 4): True; tightest bound/truth = 1.773
++(5) L=10: sum_j 8j(1+j)^-kappa = 241.89 <= 8 L (1+L)^(1-kappa) = 428.61: True
++(5) L=100: sum_j 8j(1+j)^-kappa = 11839.58 <= 8 L (1+L)^(1-kappa) = 20235.55: True
++(5) L=1000: sum_j 8j(1+j)^-kappa = 592512.75 <= 8 L (1+L)^(1-kappa) = 1007845.22: True
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block23_complex_rotations.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block23_complex_rotations.py
+new file mode 100644
+index 0000000000..7825484805
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block23_complex_rotations.py
+@@ -0,0 +1,78 @@
++"""Control, block 23 (supervisor): algebraic decay on the plane by complex rotations, with explicit constants.
++(1) identities: cos(phi + i a) = cos phi cosh a - i sin phi sinh a; |exp(c cos(phi + i a))| = exp(c cos phi cosh a) for real c;
++    cos phi cosh a <= cos phi + (cosh a - 1); cosh t - 1 <= (t^2/2) cosh t (series ratio 2/((2k)(2k-1)) <= 1); log(1+u) <= u;
++(2) the shift function a_y = gamma log((1+R)/(1+|y|))_+ : |a_y - a_z| <= gamma/(1 + min(|y|,|z|)) on bonds (checked on a 41x41 patch);
++    the shell sum sum_{|y|<R+1} 4/(1+|y|)^2 <= 4(1 + 8 H_R) exactly (Z^2, R <= 40) and on the torus (Z/2LZ)^2 with the torus distance (L <= 12);
++    H_R <= 1 + log R;
++(3) constants: cosh 1 <= 25/16 <= 8/5 from 8/3 <= e <= 11/4; kappa(gamma) = gamma - (128/5) beta gamma^2 maximal at gamma* = 5/(256 beta), value 5/(512 beta);
++    prefactor 18 beta gamma^2 cosh gamma <= (144/5) beta gamma^2 = 45/(4096 beta) <= 9/16 for beta >= 5/256; for beta <= 5/256, gamma = 1 gives kappa >= 1/2;
++(4) the inequality of P1 on exactly integrable instances: the two-site and three-site open chains (weight e^{beta s.s'}), |<s_0^1 s_x^1 + s_0^2 s_x^2>| = (2/3) L(beta)^r
++    versus exp(a_x - a_0 + beta sum_b (cosh(Delta a) - 1)) for a grid of shift values and beta in {1/4, 1, 4};
++(5) the torus consequence: M_N^2 <= 6 C_0 (1+L)^{-min(kappa,1)} + 1/(4 L^2) skeleton: sum over sup-norm shells 8j (1+j)^{-kappa} <= L (1+L)^{1-kappa} for kappa <= 1."""
++import math, cmath
++from fractions import Fraction as F
++import sympy as sp
++phi, a, c, t = sp.symbols("phi a c t", real=True)
++lhs = sp.cos(phi + sp.I * a)
++rhs = sp.cos(phi) * sp.cosh(a) - sp.I * sp.sin(phi) * sp.sinh(a)
++print("(1) cos(phi + i a) identity:", sp.simplify(sp.expand(lhs - rhs, complex=True)) == 0)
++print("(1) |exp(c cos(phi+ia))| = exp(c cos phi cosh a): Re part is c cos phi cosh a:", sp.simplify(sp.re(c * rhs) - c * sp.cos(phi) * sp.cosh(a)) == 0)
++print("(1) cos phi + (cosh a - 1) - cos phi cosh a = (1 - cos phi)(cosh a - 1) >= 0:", sp.simplify(sp.cos(phi) + sp.cosh(a) - 1 - sp.cos(phi) * sp.cosh(a) - (1 - sp.cos(phi)) * (sp.cosh(a) - 1)) == 0)
++s1 = sp.series(sp.cosh(t) - 1, t, 0, 20).removeO(); s2 = sp.series(t ** 2 / 2 * sp.cosh(t), t, 0, 20).removeO()
++print("(1) coefficient ratios of (cosh t - 1)/((t^2/2) cosh t) at t^{2k}, k=1..9:", [sp.nsimplify(s1.coeff(t, 2 * k) / s2.coeff(t, 2 * k)) for k in range(1, 10)], "= 2/((2k)(2k-1)):", all(sp.simplify(s1.coeff(t, 2*k)/s2.coeff(t, 2*k) - sp.Rational(2, 2*k*(2*k-1))) == 0 for k in range(1, 10)))
++u = sp.symbols("u", positive=True)
++print("(1) d/du (u - log(1+u)) = u/(1+u) >= 0:", sp.simplify(sp.diff(u - sp.log(1 + u), u) - u / (1 + u)) == 0)
++# (2) shift function Lipschitz on Z^2 patch
++def H(n): return sum((F(1, j) for j in range(1, n + 1)), F(0))
++gamma = 0.7; R = 20
++def a_fun(y): return gamma * max(0.0, math.log((1 + R) / (1 + math.hypot(*y))))
++ok2 = True; worst = 0
++for y1 in range(-40, 41):
++    for y2 in range(-40, 41):
++        for d in ((1, 0), (0, 1)):
++            z = (y1 + d[0], y2 + d[1])
++            m = min(math.hypot(y1, y2), math.hypot(*z))
++            diff = abs(a_fun((y1, y2)) - a_fun(z))
++            ok2 = ok2 and diff <= gamma / (1 + m) + 1e-12
++            worst = max(worst, diff * (1 + m) / gamma)
++print(f"(2) |a_y - a_z| <= gamma/(1 + min(|y|,|z|)) on all bonds of a 81x81 patch: {ok2}; worst ratio {worst:.4f}")
++ok2b = True
++for Rv in range(1, 41):
++    s = sum((F(4, (1 + F(math.isqrt(y1*y1+y2*y2)))**2) for y1 in range(-Rv-1, Rv+2) for y2 in range(-Rv-1, Rv+2) if y1*y1+y2*y2 < (Rv+1)**2), F(0))
++    # with |y| replaced by floor(|y|) the sum only grows; the exact bound uses |y| >= |y|_inf = j: sum <= 4(1 + 8 H_R)
++    s_shell = sum((F(8 * j, (1 + j) ** 2) for j in range(1, Rv + 1)), F(0)) * 4 + 4
++    ok2b = ok2b and s_shell <= 4 * (1 + 8 * H(Rv))
++print("(2) 4(1 + sum_{j<=R} 8j/(1+j)^2) <= 4(1 + 8 H_R) for R <= 40 exactly:", ok2b)
++ok2c = True
++for L in range(2, 13):
++    for j in range(1, L + 1):
++        cnt = sum(1 for x1 in range(-L + 1, L + 1) for x2 in range(-L + 1, L + 1) if max(min(abs(x1), 2*L-abs(x1)), min(abs(x2), 2*L-abs(x2))) == j)
++        ok2c = ok2c and cnt == (8 * j if j < L else 4 * L - 1) and cnt <= 8 * j
++print("(2) torus sup-norm shells: 8j points for j < L, 4L-1 <= 8L for j = L, L = 2..12:", ok2c)
++print("(2) H_R <= 1 + log R for R <= 10^5:", all(sum(1/j for j in range(1, n+1)) <= 1 + math.log(n) + 1e-12 for n in range(1, 100001)))
++# (3) constants
++e_lo = F(8, 3); e_hi = F(11, 4)
++print("(3) partial sum 1+1+1/2+1/6 = 8/3 <= e; 65/24 + 1/100 = ", F(65, 24) + F(1, 100), "<= 11/4:", F(65, 24) + F(1, 100) <= e_hi, "; cosh 1 <= (11/4 + 3/8)/2 =", (e_hi + F(3, 8)) / 2, "<= 8/5:", (e_hi + F(3, 8)) / 2 <= F(8, 5))
++g, b = sp.symbols("gamma beta", positive=True)
++kappa = g - sp.Rational(128, 5) * b * g ** 2
++gstar = sp.solve(sp.diff(kappa, g), g)[0]
++print("(3) gamma* =", gstar, "; kappa(gamma*) =", sp.simplify(kappa.subs(g, gstar)), "; 18 beta gamma*^2 (8/5) =", sp.simplify(sp.Rational(144, 5) * b * gstar ** 2), "; at beta = 5/256:", sp.simplify((sp.Rational(144, 5) * b * gstar ** 2).subs(b, sp.Rational(5, 256))))
++print("(3) small beta: gamma = 1: kappa = 1 - 128 beta/5 >= 1/2 iff beta <= 5/256:", sp.solve(1 - sp.Rational(128, 5) * b - sp.Rational(1, 2) >= 0, b))
++# (4) P1's inequality on the open chains
++Lang = lambda x: 1 / math.tanh(x) - 1 / x
++ok4 = True; tight = 1e9
++for beta in (0.25, 1.0, 4.0):
++    for r in (1, 2):
++        truth = (2 / 3) * Lang(beta) ** r
++        for a0 in [i / 10 for i in range(0, 41)]:
++            # chain 0 - 1 - ... - r with a_0 = a0, a_r = 0, linear in between (a_k = a0 (1 - k/r)); bonds: r
++            da = a0 / r
++            bound = math.exp(-a0 + beta * r * (math.cosh(da) - 1))
++            ok4 = ok4 and truth <= bound + 1e-12
++            tight = min(tight, bound / truth)
++print(f"(4) P1's inequality on 2- and 3-site chains for 41 shift values, beta in (1/4, 1, 4): {ok4}; tightest bound/truth = {tight:.3f}")
++# (5) torus consequence skeleton
++kap = 0.3
++for L in (10, 100, 1000):
++    ssum = sum(8 * j * (1 + j) ** (-kap) for j in range(1, L + 1))
++    print(f"(5) L={L}: sum_j 8j(1+j)^-kappa = {ssum:.2f} <= 8 L (1+L)^(1-kappa) = {8*L*(1+L)**(1-kap):.2f}: {ssum <= 8*L*(1+L)**(1-kap)}")
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block23_refuter.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block23_refuter.out.txt
+new file mode 100644
+index 0000000000..3894396013
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block23_refuter.out.txt
+@@ -0,0 +1,11 @@
++R1 4x4 window beta=0.5 gamma=0.5000: MC estimate of <s^1s^1+s^2s^2>(0,(3,3)) = -0.0089; P1 bound = 0.4958; dominates: True
++R1 4x4 window beta=0.5 gamma=0.0391: MC estimate of <s^1s^1+s^2s^2>(0,(3,3)) = -0.0089; P1 bound = 0.9381; dominates: True
++R1 4x4 window beta=2.0 gamma=0.5000: MC estimate of <s^1s^1+s^2s^2>(0,(3,3)) = 0.1702; P1 bound = 0.7254; dominates: True
++R1 4x4 window beta=2.0 gamma=0.0098: MC estimate of <s^1s^1+s^2s^2>(0,(3,3)) = 0.1702; P1 bound = 0.9841; dominates: True
++R2 torus L=12: the shift function's Lipschitz bound holds on every bond for R = 3, 8, 12, 16 (wrapping): True
++R3 H_R <= 1 + log R at R = 10^k, k <= 6: True
++R3 exact bond sums on Z^2 (R <= 40, gamma = 0.7) are below 2 gamma^2 cosh(gamma)(1 + 8 H_R): True; largest ratio 0.101
++R4 beta=0.1: grid max of gamma - (128/5) beta gamma^2 on (0,1] = 0.097656 vs the note's 0.097656
++R4 beta=1.0: grid max of gamma - (128/5) beta gamma^2 on (0,1] = 0.009766 vs the note's 0.009766
++R4 beta=10.0: grid max of gamma - (128/5) beta gamma^2 on (0,1] = 0.000977 vs the note's 0.000977
++R5 torus shell sums <= 8 L (1+L)^(1-kappa') for L <= 200 at kappa' = 1/2, 1: True
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block23_refuter.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block23_refuter.py
+new file mode 100644
+index 0000000000..675c525455
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block23_refuter.py
+@@ -0,0 +1,101 @@
++"""Refuting pass, block 23 (supervisor seat, disjoint machinery from the runner's checks):
++(R1) the full shift bound of P1 on a 4x4 window with free boundary (16 sites, 24 bonds) at beta = 1/2 and 2: the truth <s_0^1 s_x^1 + s_0^2 s_x^2>
++     for x = (3, 3) by Monte Carlo with the heat-bath sampler (exact one-site conditionals e^{beta s.h}), against exp(a_x - a_0 + beta sum_b (cosh(Delta a) - 1))
++     with the shift function of P2 (gamma = 1/2 and the optimized gamma) — the bound must dominate the estimate well beyond its statistical error;
++(R2) the shift function's Lipschitz bound on the torus (Z/2LZ)^2 with the torus distance, L = 12, R = d_T(0, x) up to 16 (wrapping), every bond;
++(R3) the harmonic bound H_R <= 1 + log R by the integral test for R <= 10^6, and the bond-sum bound 2 gamma^2 cosh(gamma)(1 + 8 H_R) against the exact
++     sum over bonds of (cosh(Delta a) - 1) on Z^2 for R <= 40 (the true sum is far below the bound);
++(R4) the optimization by a grid: max over gamma in (0, 1] of gamma - (128/5) beta gamma^2 at beta = 1/10, 1, 10 against 5/(512 beta) (or the boundary value);
++(R5) the torus consequence: M_N^2 bound skeleton at kappa' = 1/2, 1 against direct shell sums for L <= 200."""
++import math
++import random
++
++import numpy as np
++
++random.seed(23); np.random.seed(23)
++
++
++def heat_bath_window(beta, L, sweeps, burn):
++    sites = [(i, j) for i in range(L) for j in range(L)]
++    S = np.random.normal(size=(L, L, 3)); S /= np.linalg.norm(S, axis=2, keepdims=True)
++    acc = 0.0; cnt = 0
++    for sweep in range(sweeps):
++        for (i, j) in sites:
++            h = np.zeros(3)
++            for di, dj in ((1, 0), (-1, 0), (0, 1), (0, -1)):
++                ii, jj = i + di, j + dj
++                if 0 <= ii < L and 0 <= jj < L:
++                    h += S[ii, jj]
++            hn = np.linalg.norm(h)
++            if hn < 1e-12:
++                v = np.random.normal(size=3); v /= np.linalg.norm(v); S[i, j] = v; continue
++            x = beta * hn
++            u = random.random()
++            # sample t = cos(angle to h) with density e^{x t} on [-1,1]
++            t = math.log(math.exp(-x) + u * (math.exp(x) - math.exp(-x))) / x
++            t = max(-1.0, min(1.0, t))
++            e1 = h / hn
++            tmp = np.array([1.0, 0, 0]) if abs(e1[0]) < 0.9 else np.array([0, 1.0, 0])
++            e2 = np.cross(e1, tmp); e2 /= np.linalg.norm(e2); e3 = np.cross(e1, e2)
++            ph = 2 * math.pi * random.random(); r = math.sqrt(max(0.0, 1 - t * t))
++            S[i, j] = t * e1 + r * (math.cos(ph) * e2 + math.sin(ph) * e3)
++        if sweep >= burn:
++            acc += S[0, 0, 0] * S[L - 1, L - 1, 0] + S[0, 0, 1] * S[L - 1, L - 1, 1]; cnt += 1
++    return acc / cnt
++
++
++L = 4
++x = (3, 3); R = math.hypot(*x)
++for beta in (0.5, 2.0):
++    est = heat_bath_window(beta, L, 6000, 500)
++    for gamma in (0.5, min(1.0, 5 / (256 * beta))):
++        a = {(i, j): gamma * max(0.0, math.log((1 + R) / (1 + math.hypot(i, j)))) for i in range(L) for j in range(L)}
++        bonds = [((i, j), (i + 1, j)) for i in range(L - 1) for j in range(L)] + [((i, j), (i, j + 1)) for i in range(L) for j in range(L - 1)]
++        bsum = sum(math.cosh(a[y] - a[z]) - 1 for y, z in bonds)
++        bound = math.exp(a[x] - a[(0, 0)] + beta * bsum)
++        print(f"R1 4x4 window beta={beta} gamma={gamma:.4f}: MC estimate of <s^1s^1+s^2s^2>(0,(3,3)) = {est:.4f}; P1 bound = {bound:.4f}; dominates: {abs(est) <= bound}")
++Lt = 12
++def dT(y):
++    d1 = min(abs(y[0]) % (2 * Lt), 2 * Lt - abs(y[0]) % (2 * Lt)); d2 = min(abs(y[1]) % (2 * Lt), 2 * Lt - abs(y[1]) % (2 * Lt))
++    return math.hypot(d1, d2)
++ok2 = True
++gamma = 0.8
++for Rv in (3.0, 8.0, 12.0, 16.0):
++    a = lambda y: gamma * max(0.0, math.log((1 + Rv) / (1 + dT(y))))
++    for i in range(2 * Lt):
++        for j in range(2 * Lt):
++            for d in ((1, 0), (0, 1)):
++                y = (i, j); z = ((i + d[0]) % (2 * Lt), (j + d[1]) % (2 * Lt))
++                ok2 = ok2 and abs(a(y) - a(z)) <= gamma / (1 + min(dT(y), dT(z))) + 1e-12
++print(f"R2 torus L=12: the shift function's Lipschitz bound holds on every bond for R = 3, 8, 12, 16 (wrapping): {ok2}")
++H = 0.0; ok3 = True
++for n in range(1, 10 ** 6 + 1):
++    H += 1 / n
++    if n in (10, 100, 1000, 10 ** 4, 10 ** 5, 10 ** 6):
++        ok3 = ok3 and H <= 1 + math.log(n)
++print(f"R3 H_R <= 1 + log R at R = 10^k, k <= 6: {ok3}")
++ok3b = True; worst = 0.0
++for Rv in range(1, 41):
++    gamma = 0.7
++    a = lambda y: gamma * max(0.0, math.log((1 + Rv) / (1 + math.hypot(*y))))
++    tot = 0.0
++    rng = range(-Rv - 2, Rv + 3)
++    for i in rng:
++        for j in rng:
++            for d in ((1, 0), (0, 1)):
++                tot += math.cosh(a((i, j)) - a((i + d[0], j + d[1]))) - 1
++    bound = 2 * gamma ** 2 * math.cosh(gamma) * (1 + 8 * sum(1 / k for k in range(1, Rv + 1)))
++    ok3b = ok3b and tot <= bound; worst = max(worst, tot / bound)
++print(f"R3 exact bond sums on Z^2 (R <= 40, gamma = 0.7) are below 2 gamma^2 cosh(gamma)(1 + 8 H_R): {ok3b}; largest ratio {worst:.3f}")
++for beta in (0.1, 1.0, 10.0):
++    grid = np.linspace(1e-4, 1, 100001)
++    vals = grid - (128 / 5) * beta * grid ** 2
++    best = vals.max()
++    ref = 5 / (512 * beta) if beta >= 5 / 256 else 1 - 128 * beta / 5
++    print(f"R4 beta={beta}: grid max of gamma - (128/5) beta gamma^2 on (0,1] = {best:.6f} vs the note's {ref:.6f}")
++ok5 = True
++for Lv in range(1, 201):
++    for kap in (0.5, 1.0):
++        ssum = sum(8 * j * (1 + j) ** (-kap) for j in range(1, Lv + 1))
++        ok5 = ok5 and ssum <= 8 * Lv * (1 + Lv) ** (1 - kap) + 1e-9
++print(f"R5 torus shell sums <= 8 L (1+L)^(1-kappa') for L <= 200 at kappa' = 1/2, 1: {ok5}")

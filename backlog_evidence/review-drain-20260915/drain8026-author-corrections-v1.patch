@@ -1,0 +1,81 @@
+--- original/docs/GAUGE_WILSON_SPATIAL_LOOP_AREA_SUPPRESSION_BOUNDED_THEOREM_NOTE_2026-09-07.md
++++ corrected/docs/GAUGE_WILSON_SPATIAL_LOOP_AREA_SUPPRESSION_BOUNDED_THEOREM_NOTE_2026-09-07.md
+@@ -26,9 +26,13 @@
+ 
+ Separate exact open-geometry formulas for the REAL normalized trace are omega_u(W_square)=u/144+O(u²) and omega_u(W_two-adjacent-faces)=(7/124416)u²+O(u³). These coefficients are not asserted for small periodic boxes with additional minimal fillings. They do not compute u_0, C_0 or a finite-coupling string tension.
+ 
+-The [compact Hamiltonian source](GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md) fixes the supplied action and kinetic normalization. The [all-label electric source](GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md) fixes the representation-wide gap used in the applicability map. The [chain helper](../scripts/gauge_wilson_spatial_loop_area_chain_check_2026_09_07.py) performs19 finite checks; the [coefficient helper](../scripts/gauge_wilson_spatial_loop_area_coefficients_check_2026_09_07.py) performs33. Neither proves the imported cluster theorem. Their source hashes, unchanged scientific payloads, original defect, prospective controls and independent reviews are in the [durable packet](../.claude/science/physics-loops/spatial-loop-area-20260907/PROOF_REVIEW.md).
++The [compact Hamiltonian source](GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md) fixes the supplied action and kinetic normalization. The [all-label electric source](GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md) fixes the representation-wide gap used in the applicability map. The [chain helper](../scripts/gauge_wilson_spatial_loop_area_chain_check_2026_09_07.py) performs19 finite checks; the [coefficient helper](../scripts/gauge_wilson_spatial_loop_area_coefficients_check_2026_09_07.py) performs33. Neither proves the imported cluster theorem. Their source hashes, unchanged scientific payloads, original defect, prospective controls and independent reviews are in the [original recovery archive](work_history/review_loop/pr8026/README.md).
++
++The current captures are the [chain cache](../logs/runner-cache/gauge_wilson_spatial_loop_area_chain_check_2026_09_07.txt) and [coefficient cache](../logs/runner-cache/gauge_wilson_spatial_loop_area_coefficients_check_2026_09_07.txt). Each reported total includes one resource check. Neither runner executes its sibling; finite checks do not prove the analytical cluster theorem.
+ 
+ ## Proof and provenance conventions
++
++Lane names, preregistration, exposure and review statements below describe the original 2026-09-07 development history. They are not evidence of current independent review or current runner performance.
+ 
+ The following two complete derivations are retained as separate parts. Part I was independently written from the exposed marked-expansion route and reviewed by root and primary; Part II is the primary lane's independently derived selection/coefficient proof. Statements about what had or had not been read refer to the frozen original derivation time, before the subsequent cold reviews preserved in the packet. No independent-discovery claim is made for the shared proposed route. Root's separate conservative reserve uses C_0=2ce²; Part I uses C_0=2ce. Both are existential geometry constants from distinct safe reserves, not conflicting physical numbers.
+ 
+@@ -100,7 +104,7 @@
+ 
+ ## Finite controls and provenance
+ 
+-The preregistered check.py verifies 19 exact finite identities/controls on the actual 192 oriented positive faces of a 4³ torus, projected boundary rank 15, all three affine fillings for four frozen rectangles, actual lifted boundaries, the adverse complement, repeated triple charge cancellation, and insufficiency of total flux alone. It uses 17.875 MiB and 0.0017 seconds in the preserved run. These are chain/arithmetic checks, not proofs of the external polymer estimates, and do not select u_0 or C_0. Original preregistration and raw JSON are retained. This derivation was frozen before reading the other lanes' completed proofs; root's proposed route and later scheduling messages were available and are credited.
++The original preregistered check.py recorded 19 exact finite identities/controls on the actual 192 oriented positive faces of a 4³ torus, projected boundary rank 15, all three affine fillings for four frozen rectangles, actual lifted boundaries, the adverse complement, repeated triple charge cancellation, and insufficiency of total flux alone. That historical run recorded 17.875 MiB and 0.0017 seconds; those values are not current performance measurements. These are chain/arithmetic checks, not proofs of the external polymer estimates, and do not select u_0 or C_0. Original preregistration and raw JSON are retained. This derivation was frozen before reading the other lanes' completed proofs; root's proposed route and later scheduling messages were available and are credited.
+ 
+ 
+ # Part II. All-order rectangular area selection and the first two actual spatial loop coefficients
+@@ -194,3 +198,14 @@
+ Self-review before result exposure found that the first Haar tensor checker compared the same incorrectly transposed Kronecker indices on both sides and therefore passed spuriously. The original source/raw are preserved. The corrected index formula and an E01/E10 adverse control distinguish the erroneous transpose. The physical Haar identity, analytic candidates and center census did not change. This failure is recorded rather than presented as an independent validation success.
+ 
+ A uniform analytic bound or marked-cluster result could combine with this selection rule to imply controlled area suppression. That extra theorem is not proved here. Finite-volume Taylor vanishing alone does not establish an area law, an infinite-volume analytic radius, physical confinement or a continuum limit.
++
++## No-go applicability and finite-evidence boundary
++
++N1: The positive theorem covers the supplied compact Hamiltonian, qualifying rectangles, sufficiently small coupling and the selected periodic thermodynamic limit. It does not exclude other physical routes.
++N2: The two literal repository parents and the two explicitly cited external mathematical imports supply the stated premises; no axiom-to-action or physical-confinement derivation is asserted.
++N3: Independent link-center charges give the analytical all-order selection rule. Repeated insertions, nonplanar fillings and periodic constant sheets are included in that proof.
++N4: The periodic complement and transpose/denominator counterexamples identify specific failures of stronger formulations, not exhaustive failure of all alternatives.
++N5: The chain and coefficient runners check finite indexing and rational arithmetic (19 and 33 checks, each including one resource check). They neither prove the imported marked-cluster bound nor determine its analytic radius.
++N6: The explicit complex marked expansion and weighted pinned-cluster criterion justify the volume-uniform analytic bound; finite Taylor coefficients alone do not.
++N7: No universal negative conclusion is certified. A temporal charge potential, lower bound, arbitrary-coupling theorem and continuum or physical identification remain outside this result.
++N8: Both derivations, failed controls, repairs and all original path versions remain recoverable from the linked archive. Historical success does not replace current evidence or independent audit.
+--- original/scripts/gauge_wilson_spatial_loop_area_chain_check_2026_09_07.py
++++ corrected/scripts/gauge_wilson_spatial_loop_area_chain_check_2026_09_07.py
+@@ -2,6 +2,8 @@
+ """Exact finite support controls; the analytic theorem is in the source note."""
+ import os, sys, time, signal, resource, json, hashlib, math
+ from pathlib import Path
++# These literal paths pin the proof/premise identities; no runtime prose parsing.
++AUDIT_INPUT_PATHS = ['docs/GAUGE_WILSON_SPATIAL_LOOP_AREA_SUPPRESSION_BOUNDED_THEOREM_NOTE_2026-09-07.md', 'docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md', 'docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md']
+ AUDIT_TIMEOUT_SEC = 180
+ AUDIT_RSS_LIMIT_MIB = 180
+ _started = time.monotonic()
+@@ -35,7 +37,7 @@
+     else:
+         print('PASS '+Path(__file__).name)
+         for key, item in scopes.items(): print(key+': '+str(item['checks'])+' checks; '+item['scope'])
+-        print('TOTAL: '+str(expected))
++        print('TOTAL: PASS='+str(expected)+' FAIL=0')
+         print('seconds: '+str(out['seconds'])+'; rss_MiB: '+str(out['rss_MiB']))
+         print('source_sha256: '+out['source_sha256'])
+     signal.alarm(0)
+--- original/scripts/gauge_wilson_spatial_loop_area_coefficients_check_2026_09_07.py
++++ corrected/scripts/gauge_wilson_spatial_loop_area_coefficients_check_2026_09_07.py
+@@ -2,6 +2,8 @@
+ """Exact finite support controls; the analytic theorem is in the source note."""
+ import os, sys, time, signal, resource, json, hashlib, math
+ from pathlib import Path
++# These literal paths pin the proof/premise identities; no runtime prose parsing.
++AUDIT_INPUT_PATHS = ['docs/GAUGE_WILSON_SPATIAL_LOOP_AREA_SUPPRESSION_BOUNDED_THEOREM_NOTE_2026-09-07.md', 'docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md', 'docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md']
+ AUDIT_TIMEOUT_SEC = 180
+ AUDIT_RSS_LIMIT_MIB = 180
+ _started = time.monotonic()
+@@ -35,7 +37,7 @@
+     else:
+         print('PASS '+Path(__file__).name)
+         for key, item in scopes.items(): print(key+': '+str(item['checks'])+' checks; '+item['scope'])
+-        print('TOTAL: '+str(expected))
++        print('TOTAL: PASS='+str(expected)+' FAIL=0')
+         print('seconds: '+str(out['seconds'])+'; rss_MiB: '+str(out['rss_MiB']))
+         print('source_sha256: '+out['source_sha256'])
+     signal.alarm(0)

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8026",
+  "tree": "7e111422b37e42688a69125849fb75702f263f19",
+  "cache_checked": false,
+  "notes": [
+    {
+      "path": "docs/GAUGE_WILSON_SPATIAL_LOOP_AREA_SUPPRESSION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "claim_id": "gauge_wilson_spatial_loop_area_suppression_bounded_theorem_note_2026-09-07",
+      "primary_runner": "scripts/gauge_wilson_spatial_loop_area_chain_check_2026_09_07.py",
+      "helpers": [
+        "scripts/gauge_wilson_spatial_loop_area_coefficients_check_2026_09_07.py"
+      ],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/work_history/review_loop/pr8026/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8762,
+      "misses": 4459
+    },
+    "packet_imports": {
+      "hits": 8752,
+      "misses": 4457
+    },
+    "declared_inputs": {
+      "hits": 8788,
+      "misses": 4592
+    }
+  },
+  "record_sha256": "5ee1364e5615ab1c2856d5f58fef307e3ac7ac20d28646fddd0f9dfedb9bcde3",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "primary": "scripts/gauge_wilson_spatial_loop_area_coefficients_check_2026_09_07.py",
+    "primary_sha256": "def4af204483f2ed396c5219f4319b944c1b464faac60388026827b19801d2c2",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/GAUGE_WILSON_SPATIAL_LOOP_AREA_SUPPRESSION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    ],
+    "declared_input_fingerprint": "3e32308b7dc32b84e58459f9c71d33380b03395c8685703d277ca38c282544a8",
+    "cache_status": "missing",
+    "helpers": []
+  },
+  {
+    "primary": "scripts/gauge_wilson_spatial_loop_area_chain_check_2026_09_07.py",
+    "primary_sha256": "15e027bdd29e7a28a87b4d88caf68c199cbaf4086f2bfb754526636e4ebec1eb",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/GAUGE_WILSON_SPATIAL_LOOP_AREA_SUPPRESSION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    ],
+    "declared_input_fingerprint": "3e32308b7dc32b84e58459f9c71d33380b03395c8685703d277ca38c282544a8",
+    "cache_status": "missing",
+    "helpers": []
+  }
+]

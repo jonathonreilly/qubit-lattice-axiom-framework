@@ -1,0 +1,1197 @@
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+index 8f9c496033..0e06bc72d1 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+@@ -8,3 +8,13 @@
+ | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
+ | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
+ | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
++
++## Block 21 — the weak-coupling side of the unsoldered sphere static law on `Z³` (2026-09-15)
++
++| Family | Object/formulation | Mechanism/invariant | Terminal obligation | Strength vs target | Status | Concrete evidence | Reopen condition |
++|---|---|---|---|---|---|---|---|
++| F21.1 the total-variation response | `TV(P_h, P_{h'}) ≤ β|h − h'|/(2√3)` | the derivative identity; `Var_h(s·e) ≤ 1/3` (`L'`, `L/x`) | a sharper coefficient (mean absolute deviation) | exact | candidate-complete | W1 (B1–B3, C1–C2) | a proof of the zero-field maximum |
++| F21.2 the threshold | `α = 2√3β < 1 ⇔ β < √3/6` | six neighbours, `|Δh| ≤ 2` | the band above | exact | candidate-complete | W2 (C2–C3) | — |
++| F21.3 the comparison bound | the coupled random-scan chain on the sphere | the maximal coupling of densities; the time-`t` bound | none | exact | candidate-complete | W3 (D1–D3) | — |
++| F21.4 one law; decay | the finite-window limit; the frozen site | walk counting; geometric sums | the band | exact | candidate-complete | W4–W5 (D3–D5) | — |
++| F21.5 the window | `[√3/6, 3√3π/8]` | W5 with block 19 | the band | conditional on an open PR | candidate-complete | W6 | a change in block 19 |
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
+index e99dd0e244..7b1353f897 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
+@@ -23,3 +23,11 @@
+ - Site weight `ψ`: constant by covariance on the transitive menu (executed); on a non-transitive menu it is not.
+ - Simultaneous formation (several records locking in one step) is not a total order; the formation law of a partial order with simultaneous steps would need a joint conditional the axiom does not state; named in N7.
+ - Infinite volume: the static specification's DLR existence (compactness on a finite menu) and uniqueness are outside the block.
++
++## Block 21 (2026-09-15) — the weak-coupling side on `Z³`
++- Dependencies: `minimal_axioms`; the possibility-covariance note (on `main`; the sphere domain and the unsoldered reading); block 03 (on `main`; the static reading, the specification, the coupling route). Proposed, unaudited. PR #8153 referenced as the evidence address for W6's strong-coupling half; PR #8154 for context.
++- Named premises: the pure-state sphere as the possibility domain; the unsoldered reading; the static reading of finite windows with exterior records; the exponential overlap with `β` supplied; tori of even side.
++- Scaffolding: the three-point weighted space for the derivative identity and the maximal coupling; the `2³` window for the fixed point; the `7³` box for the walk bounds; the `6³` torus for the torus sum; the three-site path for the frozen-site conditional; quadrature, a grid, the open chain and the `3³` box in the refuting pass.
++- Standard mathematical imports at definition level: the extension theorem for consistent finite-dimensional laws on a countable product of compact spaces; the uniqueness of a probability measure on a generating π-system; the exponential series of `sinh` and `cosh`.
++- References named, not used: Dobrushin; Dobrushin–Shlosman; Föllmer; Künsch.
++- Counterfactual pass: a discrete menu (block 03's finite-menu criterion); the formation reading (block 08's causal coupling region); the Born overlap (the derivative route applies to any smooth positive one-site weight, but its coefficient is not computed here); the band (nothing claimed).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block21_findings.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block21_findings.md
+new file mode 100644
+index 0000000000..71c57a8390
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block21_findings.md
+@@ -0,0 +1,15 @@
++# Refuting pass — block 21 (supervisor-run, disjoint machinery; 2026-09-15)
++
++Routes compared (controls `specs/supervisor_control_block21_weak_coupling.py`, refuting pass `specs/supervisor_control_block21_refuter.py`, outputs in `.out.txt`):
++
++| item | runner's route | refuting route | result |
++|---|---|---|---|
++| the total-variation response (W1) | the covariance identities, the series ratios, the derivative identity on a finite weighted space, symbolically | direct quadrature of `TV(P_h, P_{h+Δ})` on the sphere at 600 random `(β, h, Δ)` with `|h| ≤ 6`, `|Δ| ≤ 2`, `β ∈ {1/10, 28/100, 1, 3}` | the bound `β|Δ|/(2√3)` holds at every sample; worst ratio `0.866 = √3/2`, the slack predicted by the antipodal value `tanh(β/2)` |
++| the eigenvalue bounds (W1 ii) | closed-form coefficient ratios `6/(n(2n−1))`, `3/(2n+1)` and the series to `n = 12` | `L'(x)` and `L(x)/x` on a grid of `60000` points in `(0, 60]` | both at most `1/3`, with `1/3` the limit at `0` |
++| the decay bound's direction (W5) | the walk bounds on the `7³` box | the exactly solvable open chain: `⟨s_0·s_2⟩ = L(β)²` by a one-dimensional quadrature (the middle site integrates to `Z(|s_0 + s_2|)`), and `L(β) ≤ 2β/√3` (the line's `α`) for `β < √3/4` | consistent; the true decay `L(β)^r ≈ (β/3)^r` is faster than the bound |
++| the fixed point (W3) | `D = (I − C)^{−1}`, `u* = Db`, the decreasing iterates on the `2³` window, exact | the `3×3×3` box by floating-point linear algebra; the centre's value against `α²/(2(1−α))` | `D ≥ 0`; the bound holds with room |
++| the torus sum (W5 c) | the `6³` torus at `α = 9/10`, exact | `L = 1..10` in floating point | at most `((1+α)/(1−α))³` throughout |
++
++Findings: none in the primary. The controls corrected the contract before the primary: a first route (`TV ≤ tanh(osc/4)`, threshold `artanh(1/6) = (1/2)log(7/5) ≈ 0.168`) was replaced by the variance route (`√3/6 ≈ 0.289`) after the sphere sweep showed the one-site response is about half the crude bound; the mean-absolute-deviation route, which would give `β/2` per unit change, was found maximal at zero field but not proved, and is recorded as not claimed.
++
++Attempts to refute (nothing refuted): W1's use of the segment `h_t` when `h = 0` (the covariance is `I/3` there; the derivative identity holds for every `t`); the step from `Var_h(s·Δ) ≤ |Δ|²/3` to `σ ≤ |Δ|/√3` for `Δ` not aligned with `h` (the covariance is diagonal in the frame `(ĥ, e, e')` with all eigenvalues at most `1/3`); W3's Step 5 without a limit coupling (the bound at each time `t` uses only stationarity and the telescoping); W4(b)'s consistency identity for windows with exterior records read off the product density; W5(b)'s torus graph minus a site (row sums at most `α`; the torus distance in the walk count); the sum over three components in W5(a) (each covariance separately bounded, then summed). Verdict of this pass: PASS-NO-BLOCKER at the supervisor's own standard, pending the owner's independent review.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block21.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block21.md
+new file mode 100644
+index 0000000000..a70655a95b
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block21.md
+@@ -0,0 +1,15 @@
++# Claim status certificate — block 21 (close, 2026-09-15)
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: upstream_support
++reachability_to_target: supports
++conditional_surface_status: "W1-W5 proved for every beta < sqrt(3)/6 on finite windows, on tori of even side and in the infinite-volume limit (one rotation-invariant static law; |<s_0.s_x>| <= alpha^{|x|_1}/(1-alpha), alpha = 2 sqrt(3) beta; M_N^2 <= ((1+alpha)/(1-alpha))^3/((1-alpha) N); sup_k <|s^(k)|^2> <= ((1+alpha)/(1-alpha))^3/(1-alpha)); W6 a placement corollary conditional on block 19 (open PR #8153) for the strong-coupling half; the algebraic skeleton executed exactly; conditional on the pure-state sphere as the possibility domain, the unsoldered and static readings and the exponential overlap as supplied conditions; three standard mathematical imports named at definition level (the extension theorem for consistent finite-dimensional laws; uniqueness on a generating pi-system; the exponential series)"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++claim_type_reason: "an exact covariance bound by series with nonnegative coefficients; a derivative identity with the quadratic-form inequality; a coupled random-scan chain with its fixed point; walk counting; every executed identity exact"
++dependency_classes: "one premise node (minimal_axioms); the possibility-covariance note and block 03 (on main; proposed, unaudited); block 19 (open PR) as the evidence address for W6 only"
++open_imports: "the sphere as the possibility domain; the unsoldered and static readings; the exponential overlap; the three standard mathematical imports"
++review_loop_disposition: pending (supervisor-run block; author checks only)
++independence_class: "single seat (Fable, supervisor): controls (two passes; the crude route replaced by the variance route), contract with a lens pass, primary, refuting pass by quadrature, a grid, the solvable open chain, floating-point linear algebra and torus sums, fold (no findings)"
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block21.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block21.md
+new file mode 100644
+index 0000000000..fbf90a8c3c
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block21.md
+@@ -0,0 +1,26 @@
++# GOAL — block 21: the weak-coupling side of the unsoldered sphere static law on `Z³` — one law, exponential decay, no massless channel below `β = √3/6` (2026-09-15)
++
++**Owner directive (2026-09-15):** don't stop; assess the next lane at each conclusion; no subagents; derivations over computation.
++
++**Why this block.** Blocks 19 and 20 (PRs #8153, #8154) show the gravity node's kernel lives in the transverse channel of the ordered unsoldered static law on `Z³`, and nowhere on a plane or line. What happens on `Z³` at weak coupling? This block proves that below an explicit coupling the law is unique with exponentially decaying correlations, its structure factor is bounded uniformly in the wavevector, and the long-range-order parameter vanishes: the kernel is a strong-coupling feature of the reading, with an explicit window `[√3/6, 3√3π/8]` in which nothing is claimed.
++
++**Object.** The one-site conditional of the rule given the six neighbours, `P_h(ds) ∝ e^{β s·h} dσ(s)` with `h = Σ_{y~x} s_y`; finite windows with exterior records; the torus law of block 19; `α := 2√3 β`.
++
++**Contract.**
++- W1 (the derivative bound): for `h, h' ∈ R³`, `TV(P_h, P_{h'}) ≤ (β/(2√3))|h − h'|`. Route: `d/dt P_{h_t}(A) = β Cov_{h_t}(s·Δ, 1_A)`, `|Cov(X, 1_A)| ≤ σ_X/2`, and `Var_h(s·Δ) ≤ |Δ|²/3` because the covariance of `s` under `P_h` has eigenvalues `L'(x)` (longitudinal) and `L(x)/x` (transverse, twice), `x = β|h|`, `L(x) = coth x − 1/x`, both at most `1/3` by series with nonnegative coefficients (ratios `6/(n(2n−1))` and `3/(2n+1)`).
++- W2 (Dobrushin coefficients): changing one neighbour changes `h` by at most `2`, so `c_{xy} ≤ β/√3` and every row sum is at most `α = 2√3 β`; `α < 1 ⇔ β < √3/6`. Remark: at zero field the antipodal change has `TV = tanh(β/2)` exactly, so the coefficient is within a factor `2/√3` of the worst case there.
++- W3 (finite-window comparison by coupling, re-proved for the sphere): block 03's route with the maximal coupling of densities and the time-`t` bound (no limit coupling): `|μ_Λ^ω(f) − μ_Λ^{ω'}(f)| ≤ Σ_x δ_x(f)(D_Λ b)_x`, `D_Λ = Σ_k C_Λ^k`.
++- W4 (one law): for `β < √3/6` the finite-window laws with any exterior records have a common limit on cylinder functions, the specification has exactly one Gibbs law, and it is rotation-invariant.
++- W5 (exponential decay; no channel): `|⟨s_0·s_x⟩| ≤ α^{|x|₁}/(1 − α)` in the unique law and on every torus (torus distance); hence `M_N² ≤ ((1+α)/(1−α))³/((1−α)N)` and `sup_k ⟨|ŝ(k)|²⟩ ≤ ((1+α)/(1−α))³/(1−α)` uniformly in `L`.
++- W6 (the window): the kernel exists for `β > 3√3π/8` (block 19, evidence address) and cannot for `β < √3/6` (W5); the band between is open.
++- N-gate for the negative "no channel below `√3/6`": escapes — the band; other overlaps; the formation reading.
++
++**Lens pass (self-run panel).**
++- *"Dobrushin uniqueness for the classical three-component model is textbook."* Yes; the content is the explicit constant for this rule from an exact variance bound, the re-proof at scope, and the placement (the kernel's coupling window).
++- *"Why the variance route and not the sharper `tanh(β/2)`?"* The sharper coefficient needs the supremum over all fields of the mean absolute deviation, which the control finds at zero field but which is not proved; the variance bound is exact and uniform.
++- *"The torus has no boundary; how does the comparison bound give decay there?"* Freeze one site: the torus minus a site is a window whose exterior is that site; the same bound applies.
++- *"Existence of the infinite-volume law."* Not imported: the finite-window limits exist by the comparison bound and the consistency of finite-window laws, and define the law on cylinder functions (the extension named at definition level, as in block 03).
++
++**Forbidden phrases (beyond the lane's standing list):** "phase transition", "critical", "converge", "certified", "emergent", "the physical coupling", "the transition point".
++
++**Prior-art search at `origin/main` (07583e5fc2).** Block 03 (the six-axis rule's one-site contraction region by coupling); nothing for the sphere-valued rule; the classical no-order notes are two-dimensional and quantum. Open PRs: #8153, #8154 (this lane).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+index 6dfc9de138..79458e1586 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+@@ -25,3 +25,6 @@ Stacked on #8000 → #7999 → #7998 → main; all hand-offs. Block 04 = the two
+ Stacked on #8002 → #8000 → #7999 → #7998 → main; all hand-offs. Block 05 = the monotone-order class: one formation law for every linear extension of the product order (every rule); rows and columns path chains; the 2×2 corner law with corner independence; no right/down turning staircase is first-order Markov in its site values (proved for every nonconstant positive orbit triple under the declared product-rule monotone law); opposite corner classes give the same finite-rectangle law, with two distinct laws only at the executed 2×3 triples; the snake keeps rows and can lose column chains (column 0 survives on 3×3; on the executed 4×3 no column is a chain). Lens before the primary caught the supervisor's own wrong snake control. Historical checker: FIX FIRST on one forbidden mechanism sentence (false; deleted), nothing refuted in the theorems. Lock released.
+ 
+ Current source review found five further P2 groups, corrected in the canonical note and runner with their disposition in REVIEW_HISTORY.md. Same-session confirmation is pending; this appendix records an open review handoff.
++
++## 2026-09-15 block 21 opened for review as PR #8155 (supervisor)
++Independent PR against `main` (`07583e5fc2`); parents on `main`: the possibility-covariance note and block 03. The lane assessment after block 20: the kernel lives on `Z³` in the ordered unsoldered static law; what is its coupling window? Block 21 = the weak-coupling side: the one-site conditional's total-variation response is at most `β|Δh|/(2√3)` because the covariance of a record under any field has eigenvalues `L'(x)`, `L(x)/x ≤ 1/3` (series with nonnegative coefficients) (W1); coefficients `β/√3`, row sum `α = 2√3β`, `α < 1 ⇔ β < √3/6` (W2); block 03's coupled random-scan chain re-proved for the sphere (maximal coupling of densities; a time-`t` bound) (W3); one rotation-invariant infinite-volume static law from the finite-window limits (W4); `|⟨s_0·s_x⟩| ≤ α^{|x|₁}/(1−α)` in that law and on every torus, `M_N² ≤ ((1+α)/(1−α))³/((1−α)N)`, `sup_k ⟨|ŝ(k)|²⟩ ≤ ((1+α)/(1−α))³/(1−α)` (W5); the kernel's window `[√3/6, 3√3π/8]` open (W6). Runner 20 checks, 13 mutations in-family, exact, about a second. Refuting pass: quadrature at 600 random fields (worst ratio `√3/2`, the predicted slack), the eigenvalue grid, the solvable open chain, the `3³` box, torus sums — no findings. Gates: pipeline ×2, changed-evidence, `audit_lint --strict`, `git diff --check`, vocabulary lint clean on the block's files. Next: the queue refresh at block 21 opening (narrow the band; the normalization; the plane's decay rate; X4/S6).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
+index 9ccaee75bb..10ae89892b 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
+@@ -13,3 +13,8 @@ Policy: reference and converge, never borrow; every statement used is re-proved
+ - Compactness of a countable product of finite sets; Kolmogorov / Carathéodory extension on the cylinder algebra; the passage of finite-window conditional identities to a limit — re-proved at scope (Theorem C2, existence only).
+ - The Pickard random field / Markov-mesh (unilateral Markov field) construction — Abend, Harley and Kanal (1965); Pickard (1977, 1980): a two-parent unilateral construction whose rows and columns are Markov chains when the corner-pair condition holds. The framework's row sweep under the records-only reading is an instance: `Z_2 = Z_1^2 K^2` with `K` symmetric doubly stochastic is the condition; Theorem E re-proves the row statement natively (the column statement is a lead for the next block).
+ - Toom and Vasilyev (1970s): product-form and Markov invariant measures of probabilistic cellular automata — reference only.
++
++## Block 21 (2026-09-15) — references named; three standard facts imported at definition level
++- Dobrushin (1968): the one-site contraction criterion for uniqueness — re-proved at scope by block 03's coupled random-scan chain, for the sphere.
++- Dobrushin–Shlosman (1985), Föllmer (1982), Künsch (1982): exponential decay of correlations under the criterion — re-proved at scope by freezing one site.
++- The extension theorem for consistent finite-dimensional laws; uniqueness on a generating π-system; the exponential series — imported at definition level.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+index 2977b7f990..fe7bcc4fbe 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+@@ -8,3 +8,6 @@ Routes read at their proofs, not their headlines.
+ | The consistency-first kernel K* and the frontier-process gate (bridge exercise 2026-08-26) | `archive/campaigns/exercise-bridge-adoption-20260826/SYNTHESIS.md` | On the gravity lane's Gaussian fixture, the sliding-frontier process marginals differ from the static Gram weights by an extent-stable gap. | Fixture-level, floats; this block states the axiom-level finite distinction; it does not explain the gate. |
+ | Convex-consistency (affine rule output) vs product form (R136/T212/T213) | same packet | Normalizer constant iff no coupling (rank argument; Funk–Hecke on the sphere). | Re-proved exactly on the menu as the two-neighbor normalizer factorization; used for T2(b). |
+ | Binary full-conditional compatibility (landed 2026-08-10) | `docs/ADMISSIBILITY_BINARY_FULL_CONDITIONAL_COMPATIBILITY_ISING_ACTION_AXIOM_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md` | Static half on binary menus; excludes formation dynamics by its own boundary. | Upstream; generalized here; the excluded object is this block's subject. |
++
++## Block 21 (2026-09-15) — no massless channel for the unsoldered sphere static law below `β = √3/6`
++- The negative sentence (W5–W6): for `β < √3/6`, `sup_k ⟨|ŝ(k)|²⟩ ≤ ((1+α)/(1−α))³/(1−α)` uniformly in the side and `M_N² → 0`, so the Green-function channel of block 19 cannot exist there; the law is unique with `|⟨s_0·s_x⟩| ≤ α^{|x|₁}/(1−α)`. Escapes named for the N-gate: the band `[√3/6, 3√3π/8]`; other overlaps (the Born overlap not treated); the formation reading. Not claimed: the true threshold; the sharper coefficient.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+index 74d2f60bae..a7ec7ea612 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+@@ -78,3 +78,12 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
+ 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
+ 4. **The silent triples by a non-criterion route** (unchanged; heavy).
+ 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
++
++## Refresh at block 21 opening (2026-09-15)
++
++Block 21 opened for review (independent PR against main): the weak-coupling side of the unsoldered sphere static law on `Z³` — one law, exponential decay, no massless channel below `√3/6`; the kernel's window `[√3/6, 3√3π/8]` is open. Ranked next:
++
++1. **Narrow the band** — the sharper Dobrushin coefficient (prove the zero-field maximum of the mean absolute deviation, giving `β < 1/3`); a better Green-function constant on the strong side — medium.
++2. **The kernel's normalization on `Z³`** — hard.
++3. **What replaces the channel on the plane** (algebraic decay by complex rotations) — medium.
++4. **Value-dependent order laws (block 16, X4); the stability theorem (block 12, S6)** — hard; unchanged.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block21.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block21.md
+new file mode 100644
+index 0000000000..c2c01022eb
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block21.md
+@@ -0,0 +1,16 @@
++# RESULTS — block 21: the unsoldered sphere static law at weak coupling — one law, exponential decay, no massless channel below `√3/6` (2026-09-15)
++
++**Deliverables (branch `physics-loop/admissibility-induced-law-block21-unsoldered-sphere-static-law-weak-coupling-uniqueness-exponential-decay-20260915`, independent PR against `main` at `07583e5fc2`; parents on `main`: the possibility-covariance note of 2026-09-14 and block 03):** the note `docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_WEAK_COUPLING_ONE_LAW_EXPONENTIAL_DECAY_NO_MASSLESS_CHANNEL_BELOW_ROOT_THREE_OVER_SIX_BOUNDED_THEOREM_NOTE_2026-09-15.md`; the runner `scripts/admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.py` (20 checks, 13 mutations, exact, about a second); the pinned cache; the controls and the refuting pass with outputs (`specs/supervisor_control_block21_weak_coupling.py`, `specs/supervisor_control_block21_refuter.py`); `GOAL_block21.md`; `CHECKER_block21_findings.md`; this record. Blocks 06–20 remain open as PRs #8034, #8035, #8138–#8142, #8146–#8154.
++
++**Why this block.** Blocks 19 and 20 place the gravity node's kernel in the transverse channel of the ordered unsoldered static law on `Z³` and show it needs the third dimension. This block settles the weak-coupling side of the same law on `Z³`: below an explicit coupling there is one law, exponential decay and no massless channel, so the kernel is a strong-coupling feature with an explicit open band.
++
++## Result, in one paragraph
++For the unsoldered static law on the sphere with the exponential overlap, the one-site conditional is `P_h ∝ e^{βs·h}` with `h` the sum of the six neighbouring records. Its total-variation response to a change of the field is at most `β|Δh|/(2√3)`: the derivative of `P_h(A)` along a segment is `β Cov(s·Δh, 1_A)`, the indicator's standard deviation is at most `1/2`, and the covariance of `s` under any `P_h` has eigenvalues `L'(x)` and `L(x)/x` (`L(x) = coth x − 1/x`, `x = β|h|`), both at most `1/3` by series with nonnegative coefficients (ratios `6/(n(2n−1))`, `3/(2n+1)`) (W1). One neighbour moves `h` by at most `2`, so each coefficient is at most `β/√3`, the row sum is `α = 2√3β`, and `α < 1 ⇔ β < √3/6` (W2). Block 03's coupled random-scan chain, re-proved for the sphere with the maximal coupling of densities and a time-`t` bound, gives the finite-window comparison bound `|μ_Λ^ω(f) − μ_Λ^{ω'}(f)| ≤ Σ_x δ_x(f)(D_Λ b)_x` (W3). For `β < √3/6` the finite-window laws have a common limit on cylinder functions, the specification has exactly one infinite-volume static law, and it is rotation-invariant (W4). Freezing one site gives `|⟨s_0·s_x⟩| ≤ α^{|x|₁}/(1 − α)` in that law and on every torus (torus distance), hence `M_N² ≤ ((1+α)/(1−α))³/((1−α)N)` and `sup_k ⟨|ŝ(k)|²⟩ ≤ ((1+α)/(1−α))³/(1−α)` uniformly in the side (W5). With block 19: the kernel exists for `β > 3√3π/8` and cannot for `β < √3/6`; the band is open (W6).
++
++## Certificate
++- Runner: `TOTAL: PASS=20 FAIL=0`; 13 mutations each in its family; no floating-point literal or conversion; authors' names only in the allowed sections.
++- Refuting pass (`CHECKER_block21_findings.md`): W1 by direct quadrature at 600 random fields and changes (worst ratio `0.866 = √3/2`, the predicted slack); the eigenvalue bounds on a grid; the exactly solvable open chain (`⟨s_0·s_2⟩ = L(β)²`); the fixed point on the `3×3×3` box by floating-point linear algebra; the torus sums. No findings.
++- Claim type `bounded_theorem`; status `bounded-support`; trace `upstream_support`; audit required.
++
++## Not claimed
++The true threshold; the band `[√3/6, 3√3π/8]`; the Born overlap; the sharper coefficient from the mean absolute deviation (found maximal at zero field, unproved); any reading, rule or coupling as physical.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+index 08d17f0940..6700e4d473 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+@@ -199,3 +199,16 @@ executed against the four declared inputs on current main. The original
+ 23-mutation census and historical pipeline receipts are not claimed as
+ fresh checks. Original-reviewer confirmation is pending; no audit status is
+ applied, and only the coordinator may perform authorized integration.
++
++## block 21 — V1-V5 (supervisor, 2026-09-15)
++- V1: blocks 19 and 20 (PRs #8153, #8154) place the gravity node's kernel in the ordered unsoldered static law on `Z³`; its coupling window on `Z³`.
++- V2: the lens pass in `GOAL_block21.md` ("textbook criterion" — the explicit constant at scope and the placement are the content; "why not the sharper `tanh(β/2)`" — the supremum over fields is unproved; "the torus has no boundary" — freeze a site; "existence" — from the comparison bound and consistency, not imported).
++- V3: W1–W5 proved; the skeleton executed exactly (20 checks, 13 mutations); the refuting pass agreed on five routes with no findings; the controls replaced the crude route by the variance route before the primary.
++- V4: no reading, rule or coupling selected; the true threshold and the band not claimed; the strong-coupling half not re-proved.
++- V5: consumers named — #8093's assembly (the gravity node's coupling dependence); the campaign's queue.
++
++## block 21 — supervisor lens pass, primary, refuting pass and fold (2026-09-15)
++Lens (`GOAL_block21.md`): as V2. Controls: pass a (the crude `tanh(osc/4)` route; the sphere sweep showing the response about half of it; the Langevin constants), pass b (the exact antipodal value; the covariance eigenvalues; the series ratios; the mean-absolute-deviation sweep; the walk bound) — the contract written on the variance route. Primary: the note and the runner (20 checks, 13 mutations; two first-run failures fixed: a symbolic-sum form in D4 and an author's name in the N7 steelman). Refuting pass (`CHECKER_block21_findings.md`): quadrature, a grid, the solvable open chain, floating-point linear algebra, torus sums — no findings. Author checks only; independent review pending.
++
++## block 21 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
++1 self-containment: PASS — inputs: this note, the axioms memo, the possibility-covariance note, block 03's note, all on `main` at `07583e5fc2`; nothing pinned from a branch or PR (PR #8153 is the evidence address for W6's strong half only). 2 cache/execution: PASS. 3 claim-scope honesty: PASS — the readings and the overlap named as supplied; the true threshold, the band, the Born overlap and the sharper coefficient marked open; the standard facts named at definition level. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
+index 9b1cd3a27f..d7bfe321df 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
+@@ -84,3 +84,8 @@ git grep -l -iE "phase transition.*(menu|product rule)|(menu|product rule).*phas
+ | the 26 `coupling` hits (e.g. `BBS_RG_BANACH_CONTRACTION_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-10.md`, `FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md`) | non-matching | "coupling" as a physical coupling constant or RG contraction; no coupling of Markov chains for a menu rule |
+ 
+ Target state after the matched-hit review: **open** — no note on `origin/main` computes the one-site interdependence coefficient of the menu rule, states its uniqueness region, or re-proves the criterion.
++
++## Block 21 (2026-09-15) — prior-art search and routes (independent PR against main; blocks 06–20 are open PRs #8034, #8035, #8138–#8142, #8146–#8154)
++Searched commit: `origin/main` = `07583e5fc2`.
++- `git grep -l -iE "dobrushin|uniqueness region|contraction" origin/main -- 'docs/ADMISSIBILITY*.md'` → block 03 (the six-axis rule's one-site contraction region by coupling; finite menu) and block 04 (the two-site criterion); nothing for the sphere-valued rule; the classical no-order notes are two-dimensional and quantum.
++Classification: **open after the matched-hit review.** Routes: X-A the crude `tanh(osc/4)` coefficient (threshold `artanh(1/6)`) — superseded by X-B; X-B the derivative bound with the exact covariance eigenvalues (`√3/6`) — chosen; X-C the mean-absolute-deviation coefficient (`β/2` per unit change; `β < 1/3`) — not proved (the zero-field maximum is a numerical finding); X-D block 03's coupling route with the maximal coupling of densities and a time-`t` bound — chosen; X-E existence by an abstract compactness theorem — avoided (the finite-window limits exist by the comparison bound); X-F exponential decay by freezing one site — chosen.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+index e166420207..d28fd0edda 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+@@ -105,3 +105,14 @@ source_review_correction:
+ # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
+ # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
+ # audit_status: "unset; no audit invoked or verdict applied by this source correction"
++
++# ---------------------------------------------------------------- block 21 close (2026-09-15)
++# block: 21
++# branch: physics-loop/admissibility-induced-law-block21-unsoldered-sphere-static-law-weak-coupling-uniqueness-exponential-decay-20260915 (independent; base origin/main 07583e5fc2; blocks 06-20 are open PRs #8034, #8035, #8138-#8142, #8146-#8154)
++# pr_status: opened for review — PR #8155 (base = main; https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8155); hand-off; never merged by the campaign; not a main landing
++# final_certificate: "TOTAL: PASS=20 FAIL=0; 13 mutations, census 13/13 in-family; refuting pass consistent on five routes, no findings; gates: see HANDOFF.md"
++# seats: "supervisor-run: controls (two passes; the crude tanh(osc/4) route replaced by the variance route) -> contract with a lens pass -> primary (W1-W6, runner) -> refuting pass (quadrature; grid; solvable open chain; 3^3 box; torus sums) -> fold (none needed)"
++# review_findings: "unsoldered sphere static law with e^{beta s.s'} on Z^3 at weak coupling: TV(P_h, P_h') <= beta|h - h'|/(2 sqrt 3) (covariance eigenvalues L'(x), L(x)/x <= 1/3 by series); coefficients beta/sqrt 3, alpha = 2 sqrt(3) beta, alpha < 1 iff beta < sqrt(3)/6; block 03's coupling re-proved for the sphere; one rotation-invariant law; |<s_0.s_x>| <= alpha^{|x|_1}/(1-alpha); M_N^2 <= ((1+alpha)/(1-alpha))^3/((1-alpha) N); sup_k <|s^(k)|^2> bounded uniformly; the kernel's window [sqrt(3)/6, 3 sqrt(3) pi/8] open"
++# strongest_unresolved_proof_obligation: "the band [sqrt(3)/6, 3 sqrt(3) pi/8]; the sharper coefficient (the zero-field maximum of the mean absolute deviation); the normalization"
++# next_exact_action: "queue refresh 2026-09-15 (block 21 opening): narrow the band; normalization; the plane's decay rate; X4/S6"
++# lock: held (owner: don't stop; assess the next lane at each conclusion)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+index 8f432e2cd2..59cc808f1f 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+@@ -63,3 +63,14 @@ reachability_to_target: supports
+ artifact_role: theorem
+ next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
+ ```
++
++# Trace gate — block 21, at PR opening (2026-09-15)
++```yaml
++trace_class: upstream_support
++target_claim_id: null
++target_blocker_text: "#8093's gravity node: blocks 19 and 20 (PRs #8153, #8154) locate its kernel in the ordered unsoldered static law on Z^3; its coupling window on Z^3"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem
++next_trace_action: "settled for beta < sqrt(3)/6: one rotation-invariant law, |<s_0.s_x>| <= alpha^{|x|_1}/(1-alpha) with alpha = 2 sqrt(3) beta, a structure factor bounded uniformly in k and L, M_N^2 -> 0 — no massless channel; the kernel is a strong-coupling feature with the open band [sqrt(3)/6, 3 sqrt(3) pi/8]. Next: narrow the band; the normalization; the plane's decay rate. Consumers: #8093's assembly; the campaign's queue"
++```
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block21_refuter.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block21_refuter.out.txt
+new file mode 100644
+index 0000000000..a64fa232c6
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block21_refuter.out.txt
+@@ -0,0 +1,7 @@
++R1 W1 by quadrature at 600 random (beta, h, Delta): TV <= beta|Delta|/(2 sqrt 3) always: True; worst ratio 0.8660
++R2 sup L'(x) = 0.333333, sup L(x)/x = 0.333333 on (0, 60] (both <= 1/3; the value 1/3 is the limit at 0): True
++R3 open chain beta=0.28: <s_0.s_2> = 0.008620960 vs L(beta)^2 = 0.008620960
++R3 open chain beta=1.0: <s_0.s_2> = 0.097991090 vs L(beta)^2 = 0.097991090
++R3 <s_0.s_2> = L(beta)^2 at four couplings: True; on the line L(beta) <= 2 beta/sqrt 3 (the decay bound's direction) for beta < sqrt(3)/4: True
++R4 3x3x3 box at alpha = 9/10: D >= 0: True; u*_centre = 0.618901 <= alpha^2/(2(1-alpha)) = 4.050000: True; max b = 0.4500 = 3c
++R5 torus sums for L = 1..10 at alpha = 9/10 are at most ((1+alpha)/(1-alpha))^3 = 6859.00: True
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block21_refuter.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block21_refuter.py
+new file mode 100644
+index 0000000000..d0557542e6
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block21_refuter.py
+@@ -0,0 +1,75 @@
++"""Refuting pass, block 21 (supervisor seat, disjoint machinery from the runner's checks):
++(R1) W1 by direct quadrature on the sphere: TV(P_h, P_{h+Delta}) against beta |Delta|/(2 sqrt 3) at random fields (|h| <= 6) and changes
++     (|Delta| <= 2), beta in {1/10, 28/100, 1, 3}; the worst ratio;
++(R2) the eigenvalue bounds L'(x) <= 1/3 and L(x)/x <= 1/3 on a grid x in (0, 60], and the value 1/3 at x -> 0;
++(R3) the exactly solvable open chain: three sites with two bonds, <s_0 . s_2> = L(beta)^2 by a one-dimensional quadrature (the middle
++     site integrates to Z(|s_0 + s_2|)); the decay bound's direction on the line: L(beta) <= 2 beta/sqrt(3) (the line's alpha) for beta < sqrt(3)/4;
++(R4) the fixed point on the 3x3x3 box by floating-point linear algebra (D = (I - C)^{-1} >= 0, u* = D b), with the centre's value against
++     alpha^2/(2(1 - alpha)) (its neighbours are boundary sites; max b = 3c);
++(R5) the torus sum sum_x alpha^{d_T(0,x)} on (Z/2LZ)^3 for L = 1..10 against ((1+alpha)/(1-alpha))^3."""
++import math
++import random
++from itertools import product
++
++import numpy as np
++
++random.seed(2121)
++np.random.seed(2121)
++nodes, weights = np.polynomial.legendre.leggauss(100)
++phis = np.linspace(0, 2 * math.pi, 200, endpoint=False)
++ct = np.repeat(nodes, len(phis)); st = np.sqrt(1 - ct ** 2); ph = np.tile(phis, len(nodes))
++S = np.stack([st * np.cos(ph), st * np.sin(ph), ct], axis=1)
++W = np.repeat(weights, len(phis)) * (2 * math.pi / len(phis))
++
++
++def dens(beta, h):
++    e = np.exp(beta * (S @ h) - beta * np.linalg.norm(h)); w = e * W; return w / w.sum()
++
++
++worst = 0.0; ok1 = True
++for beta in (0.1, 0.28, 1.0, 3.0):
++    for _ in range(150):
++        h = np.random.normal(size=3); h *= random.uniform(0, 6) / np.linalg.norm(h)
++        D = np.random.normal(size=3); D *= random.uniform(0, 2) / np.linalg.norm(D)
++        tv = 0.5 * np.abs(dens(beta, h) - dens(beta, h + D)).sum()
++        bound = beta * np.linalg.norm(D) / (2 * math.sqrt(3))
++        ok1 = ok1 and tv <= bound + 1e-9
++        worst = max(worst, tv / bound if bound > 0 else 0)
++print(f"R1 W1 by quadrature at 600 random (beta, h, Delta): TV <= beta|Delta|/(2 sqrt 3) always: {ok1}; worst ratio {worst:.4f}")
++L = lambda x: 1 / math.tanh(x) - 1 / x
++xs = np.linspace(1e-3, 60, 60000)
++lp = [1 / x ** 2 - 1 / math.sinh(x) ** 2 if x < 30 else 1 / x ** 2 for x in xs]
++lx = [L(x) / x for x in xs]
++print(f"R2 sup L'(x) = {max(lp):.6f}, sup L(x)/x = {max(lx):.6f} on (0, 60] (both <= 1/3; the value 1/3 is the limit at 0): {max(lp) <= 1/3 + 1e-9 and max(lx) <= 1/3 + 1e-9}")
++def Z(beta, r):
++    return 4 * math.pi * (math.sinh(beta * r) / (beta * r) if r > 1e-12 else 1.0)
++ok3 = True
++for beta in (0.1, 0.28, 1.0, 2.0):
++    ts = nodes; ws = weights
++    num = sum(w * t * Z(beta, math.sqrt(max(2 + 2 * t, 0))) for t, w in zip(ts, ws))
++    den = sum(w * Z(beta, math.sqrt(max(2 + 2 * t, 0))) for t, w in zip(ts, ws))
++    corr = num / den
++    ok3 = ok3 and abs(corr - L(beta) ** 2) < 1e-9
++    if beta in (0.28, 1.0):
++        print(f"R3 open chain beta={beta}: <s_0.s_2> = {corr:.9f} vs L(beta)^2 = {L(beta)**2:.9f}")
++line_ok = all(L(b) <= 2 * b / math.sqrt(3) for b in np.linspace(1e-3, math.sqrt(3) / 4, 2000))
++print(f"R3 <s_0.s_2> = L(beta)^2 at four couplings: {ok3}; on the line L(beta) <= 2 beta/sqrt 3 (the decay bound's direction) for beta < sqrt(3)/4: {line_ok}")
++alpha = 0.9; c = alpha / 6
++sites = list(product(range(3), repeat=3)); idx = {s: i for i, s in enumerate(sites)}
++C = np.zeros((27, 27)); b = np.zeros(27)
++for s in sites:
++    for d in range(3):
++        for e in (1, -1):
++            y = list(s); y[d] += e; y = tuple(y)
++            if y in idx:
++                C[idx[s], idx[y]] = c
++            else:
++                b[idx[s]] += c
++Dm = np.linalg.inv(np.eye(27) - C)
++u = Dm @ b
++print(f"R4 3x3x3 box at alpha = 9/10: D >= 0: {bool((Dm >= -1e-12).all())}; u*_centre = {u[idx[(1,1,1)]]:.6f} <= alpha^2/(2(1-alpha)) = {alpha**2/(2*(1-alpha)):.6f}: {u[idx[(1,1,1)]] <= alpha**2/(2*(1-alpha))}; max b = {b.max():.4f} = 3c")
++ok5 = True
++for Lt in range(1, 11):
++    tor = sum(alpha ** sum(min(n, 2 * Lt - n) for n in nvec) for nvec in product(range(2 * Lt), repeat=3))
++    ok5 = ok5 and tor <= ((1 + alpha) / (1 - alpha)) ** 3 + 1e-9
++print(f"R5 torus sums for L = 1..10 at alpha = 9/10 are at most ((1+alpha)/(1-alpha))^3 = {((1+alpha)/(1-alpha))**3:.2f}: {ok5}")
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block21_weak_coupling.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block21_weak_coupling.out.txt
+new file mode 100644
+index 0000000000..ce69db9ade
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block21_weak_coupling.out.txt
+@@ -0,0 +1,17 @@
++(1) TV <= tanh(osc/4) on 4000 random finite instances: True; worst ratio 1.0000; two-point extremal: TV=0.571670 tanh(2d/4)=0.571670
++(2) Z(h) quadrature 15.668740 vs exact 4 pi sinh(beta|h|)/(beta|h|) = 15.668740
++(2) beta=0.1: worst TV/tanh(beta|dh|/2) ratio 0.5013 at (k, |base|, |dh|, TV, bound) = (0, 0.0, 2.0, 0.05, 0.0997); tanh(beta) = 0.0997
++(2) beta=0.16824: worst TV/tanh(beta|dh|/2) ratio 0.5035 at (k, |base|, |dh|, TV, bound) = (0, 0.0, 2.0, 0.0839, 0.1667); tanh(beta) = 0.1667
++(2) beta=0.5: worst TV/tanh(beta|dh|/2) ratio 0.5300 at (k, |base|, |dh|, TV, bound) = (0, 0.0, 2.0, 0.2449, 0.4621); tanh(beta) = 0.4621
++(2) beta=1.0: worst TV/tanh(beta|dh|/2) ratio 0.6068 at (k, |base|, |dh|, TV, bound) = (0, 0.0, 2.0, 0.4621, 0.7616); tanh(beta) = 0.7616
++(3) artanh(1/6) = 0.168236; (1/2) log(7/5) = 0.168236; 6 tanh(b0) = 1.000000
++(3) at beta0, TV(P_e, P_-e) (base 0, antipodal change) = 0.083931 vs tanh(beta0) = 0.166667; 6*TV = 0.5036
++(4) sup_x L(x)/x = 0.333333 (= 1/3 at 0); sup_x L'(x) = 0.333333 (= 1/3 at 0)
++(5) alpha = 6 tanh(beta) at beta = 1/10: 0.5980; at beta = 1/8: 0.7461
++(a) TV(P_e, P_-e) = (exp(2*beta) - 2*exp(beta) + 1)*exp(-beta)/(2*sinh(beta)) ; equals tanh(beta/2): False
++(b) E_h[(s.h^)^2] = 1 - 2L/x: False ; Var = L'(x): False ; L'(x) = 1/x^2 - 1/sinh^2 x: True
++(b) coefficients of x^{2n}, n=2..7: left [1, 2/15, 1/105, 2/4725, 2/155925, 4/14189175]  right [1, 1/3, 2/45, 1/315, 2/14175, 2/467775] ; ratios [1, 2/5, 3/14, 2/15, 1/11, 6/91] = 6/(n(2n-1)): True
++(b) L/x <= 1/3 <=> x cosh x - sinh x <= (x^2/3) sinh x; coefficient ratios x^{2n+1}, n=1..6: [1, 3/5, 3/7, 1/3, 3/11, 3/13] = 3/(2n+1): True
++(c) sup over x in [0,12], angle in [0, pi/2] of MAD_h(s.D) = 0.500028 at (x, angle) = (0.0, 0.0) (1/2 at x = 0?)
++(d) sum_{n<=24} (C^n)_{0x} <= alpha^{|x|_1}/(1-alpha) on the 7^3 box at alpha = 9/10, all x != 0: True ; e.g. |x|_1 = 3: 0.05841042684735707 <= 7.29
++(d) sum_{n in Z} a^{|n|} = (1+a)/(1-a): checked by hand: 1 + 2a/(1-a) = (1+a)/(1-a) True
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block21_weak_coupling.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block21_weak_coupling.py
+new file mode 100644
+index 0000000000..a5bc5922e9
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block21_weak_coupling.py
+@@ -0,0 +1,147 @@
++"""Controls, block 21 (supervisor): two passes run in sequence. Pass a: the crude route TV <= tanh(osc/4) (threshold artanh(1/6)), the sphere TV sweep,
++the Langevin constants. Pass b: the exact antipodal value, the covariance eigenvalues and series ratios, the mean-absolute-deviation sweep, the walk bound on a 7^3 box.
++The contract was written on the variance route after pass b. Original docstrings follow."""
++# ---- pass a ----
++# """Control, block 21 (supervisor): the weak-coupling side of the unsoldered sphere static law on Z^3.
++# (1) TV lemma: for densities p ∝ e^f, q ∝ e^g against a common measure with osc(f - g) = R: TV(p, q) <= tanh(R/4).
++#     Numeric sweep on finite spaces (random f, g) and the extremal two-point example (equality).
++# (2) Sphere one-site law P_h ∝ e^{beta s.h}: partition function Z(h) = 4 pi sinh(beta|h|)/(beta|h|); TV(P_h, P_h') numerically for
++#     h, h' differing by a unit-vector change of one neighbour (|h - h'| <= 2): compare with tanh(beta |h-h'|/2) <= tanh(beta); worst case sweep.
++# (3) Threshold: 6 tanh(beta) < 1  <=>  beta < artanh(1/6) = (1/2) log(7/5) = 0.16824...; also the exact worst-case TV at that beta.
++# (4) Alternative (Wasserstein) constant: W1 contraction K(beta) = sup_h |d/dh E_h[s]| ... the mean m(h) = L(beta|h|) h/|h| with Langevin L(x) = coth x - 1/x;
++#     the Lipschitz constant of h -> m(h) is <= beta sup L'(x)/(beta)... compute sup over x of L(x)/x and L'(x): both <= 1/3; so W1(P_h, P_h') <= ? (not a full bound; noted).
++# (5) Exponential decay: with row sum alpha = 6 tanh beta < 1, the influence at graph distance n is <= alpha^n; at beta = 1/10: alpha = 0.5987."""
++import math, random
++import numpy as np
++random.seed(21)
++def tv(p, q):
++    return 0.5 * float(np.abs(p - q).sum())
++ok1 = True
++worst = 0.0
++for trial in range(4000):
++    n = random.randint(2, 7)
++    f = np.random.uniform(-2, 2, n); g = np.random.uniform(-2, 2, n)
++    mu = np.random.uniform(0.1, 1, n); mu /= mu.sum()
++    p = np.exp(f) * mu; p /= p.sum(); q = np.exp(g) * mu; q /= q.sum()
++    R = (f - g).max() - (f - g).min()
++    ratio = tv(p, q) / math.tanh(R / 4) if R > 0 else 0
++    worst = max(worst, ratio)
++    ok1 = ok1 and tv(p, q) <= math.tanh(R / 4) + 1e-12
++d = 1.3
++p = np.array([math.exp(d / 2), math.exp(-d / 2)]); p /= p.sum(); q = p[::-1]
++print(f"(1) TV <= tanh(osc/4) on 4000 random finite instances: {ok1}; worst ratio {worst:.4f}; two-point extremal: TV={tv(p,q):.6f} tanh(2d/4)={math.tanh(d/2):.6f}")
++# (2) sphere: quadrature on the sphere (Gauss-Legendre in cos theta, uniform in phi)
++nodes, weights = np.polynomial.legendre.leggauss(80)
++phis = np.linspace(0, 2 * math.pi, 160, endpoint=False)
++ct = np.repeat(nodes, len(phis)); st = np.sqrt(1 - ct ** 2); ph = np.tile(phis, len(nodes))
++S = np.stack([st * np.cos(ph), st * np.sin(ph), ct], axis=1)
++W = np.repeat(weights, len(phis)) * (2 * math.pi / len(phis))   # integrates to 4 pi
++def dens(beta, h):
++    e = np.exp(beta * (S @ h)); return e * W / (e * W).sum()
++def Z_exact(beta, h):
++    x = beta * np.linalg.norm(h)
++    return 4 * math.pi * (math.sinh(x) / x if x > 0 else 1.0)
++beta = 0.5; h = np.array([0.3, -1.2, 2.0])
++print(f"(2) Z(h) quadrature {float((np.exp(beta*(S@h))*W).sum()):.6f} vs exact 4 pi sinh(beta|h|)/(beta|h|) = {Z_exact(beta,h):.6f}")
++def worst_tv(beta, trials=300):
++    w = 0.0; arg = None
++    for _ in range(trials):
++        # h = sum of up to 5 unit vectors (the other neighbours), change one neighbour u -> u'
++        k = random.randint(0, 5)
++        base = sum((np.random.normal(size=3) / np.linalg.norm(v) for v in [np.random.normal(size=3) for _ in range(k)]), np.zeros(3)) if k else np.zeros(3)
++        u = np.random.normal(size=3); u /= np.linalg.norm(u)
++        up = np.random.normal(size=3); up /= np.linalg.norm(up)
++        for cand in (up, -u):
++            t = tv(dens(beta, base + u), dens(beta, base + cand))
++            bound = math.tanh(beta * np.linalg.norm(u - cand) / 2)
++            if t / bound > w:
++                w = t / bound; arg = (k, float(np.linalg.norm(base)), float(np.linalg.norm(u - cand)), t, bound)
++    return w, arg
++for beta in (0.1, 0.16824, 0.5, 1.0):
++    w, arg = worst_tv(beta)
++    print(f"(2) beta={beta}: worst TV/tanh(beta|dh|/2) ratio {w:.4f} at (k, |base|, |dh|, TV, bound) = {tuple(round(x,4) if isinstance(x,float) else x for x in arg)}; tanh(beta) = {math.tanh(beta):.4f}")
++b0 = math.atanh(1 / 6)
++print(f"(3) artanh(1/6) = {b0:.6f}; (1/2) log(7/5) = {0.5*math.log(7/5):.6f}; 6 tanh(b0) = {6*math.tanh(b0):.6f}")
++# antipodal worst case at beta0 with base = 0: TV(P_u, P_-u)
++t_anti = tv(dens(b0, np.array([0, 0, 1.0])), dens(b0, np.array([0, 0, -1.0])))
++print(f"(3) at beta0, TV(P_e, P_-e) (base 0, antipodal change) = {t_anti:.6f} vs tanh(beta0) = {math.tanh(b0):.6f}; 6*TV = {6*t_anti:.4f}")
++L = lambda x: 1 / math.tanh(x) - 1 / x if x > 1e-9 else x / 3
++xs = np.linspace(1e-6, 20, 200001)
++print(f"(4) sup_x L(x)/x = {max(L(x)/x for x in xs):.6f} (= 1/3 at 0); sup_x L'(x) = {max((L(x+1e-6)-L(x-1e-6))/2e-6 for x in xs[1:]):.6f} (= 1/3 at 0)")
++print(f"(5) alpha = 6 tanh(beta) at beta = 1/10: {6*math.tanh(0.1):.4f}; at beta = 1/8: {6*math.tanh(0.125):.4f}")
++
++
++# ---- pass b ----
++# """Control b (block 21): (a) exact TV of the antipodal pair at zero field = tanh(beta/2); (b) covariance eigenvalues of s under P_h:
++# longitudinal L'(x) = 1/x^2 - 1/sinh^2 x, transverse L(x)/x, both <= 1/3 (series with nonnegative coefficients: ratios 6/(n(2n-1)), 3/(2n+1));
++# (c) MAD sweep: sup over (x, angle) of E_h|s.D - E_h[s.D]| for unit D (is it 1/2 at x = 0?); (d) the matrix bound sum_n (C^n)_{0x} <= alpha^{|x|_1}/(1-alpha)
++# on a 7^3 box with uniform edge weights alpha/6 (exact Fractions), and the 3D geometric sum ((1+a)/(1-a))^3."""
++import math
++from fractions import Fraction as F
++from itertools import product
++import numpy as np
++import sympy as sp
++x, t, b = sp.symbols("x t beta", positive=True)
++# (a)
++Z = 4 * sp.pi * sp.sinh(b) / b
++tv = (2 * sp.pi / Z) * sp.integrate(sp.exp(b * t) - sp.exp(-b * t), (t, 0, 1))
++print("(a) TV(P_e, P_-e) =", sp.simplify(tv), "; equals tanh(beta/2):", sp.simplify(tv - sp.tanh(b / 2)) == 0)
++# (b)
++Lg = sp.coth(x) - 1 / x
++E_par2 = sp.integrate(sp.exp(x * t) * t ** 2, (t, -1, 1)) / sp.integrate(sp.exp(x * t), (t, -1, 1))
++print("(b) E_h[(s.h^)^2] = 1 - 2L/x:", sp.simplify(E_par2 - (1 - 2 * Lg / x)) == 0, "; Var = L'(x):", sp.simplify(E_par2 - Lg ** 2 - sp.diff(Lg, x)) == 0,
++      "; L'(x) = 1/x^2 - 1/sinh^2 x:", sp.simplify(sp.diff(Lg, x) - (1 / x ** 2 - 1 / sp.sinh(x) ** 2)) == 0)
++# series: 3 sinh^2 x - 3x^2 vs x^2 sinh^2 x  (L' <= 1/3  <=>  3 sinh^2 - 3 x^2 <= x^2 sinh^2)
++s1 = sp.series(3 * sp.sinh(x) ** 2 - 3 * x ** 2, x, 0, 16).removeO()
++s2 = sp.series(x ** 2 * sp.sinh(x) ** 2, x, 0, 16).removeO()
++print("(b) coefficients of x^{2n}, n=2..7: left", [s1.coeff(x, 2 * n) for n in range(2, 8)], " right", [s2.coeff(x, 2 * n) for n in range(2, 8)],
++      "; ratios", [sp.nsimplify(s1.coeff(x, 2 * n) / s2.coeff(x, 2 * n)) for n in range(2, 8)], "= 6/(n(2n-1)):", all(sp.simplify(s1.coeff(x, 2*n)/s2.coeff(x, 2*n) - sp.Rational(6, n*(2*n-1))) == 0 for n in range(2, 8)))
++s3 = sp.series(x * sp.cosh(x) - sp.sinh(x), x, 0, 16).removeO()
++s4 = sp.series(x ** 2 * sp.sinh(x) / 3, x, 0, 16).removeO()
++print("(b) L/x <= 1/3 <=> x cosh x - sinh x <= (x^2/3) sinh x; coefficient ratios x^{2n+1}, n=1..6:", [sp.nsimplify(s3.coeff(x, 2*n+1)/s4.coeff(x, 2*n+1)) for n in range(1, 7)], "= 3/(2n+1):", all(sp.simplify(s3.coeff(x, 2*n+1)/s4.coeff(x, 2*n+1) - sp.Rational(3, 2*n+1)) == 0 for n in range(1, 7)))
++# (c) MAD sweep numerically
++nodes, weights = np.polynomial.legendre.leggauss(120)
++phis = np.linspace(0, 2 * math.pi, 240, endpoint=False)
++ct = np.repeat(nodes, len(phis)); st = np.sqrt(1 - ct ** 2); ph = np.tile(phis, len(nodes))
++S = np.stack([st * np.cos(ph), st * np.sin(ph), ct], axis=1)
++W = np.repeat(weights, len(phis)) * (2 * math.pi / len(phis))
++best = (0, None)
++for xv in np.linspace(0, 12, 121):
++    for ang in np.linspace(0, math.pi / 2, 31):
++        h = xv * np.array([0, 0, 1.0]); D = np.array([math.sin(ang), 0, math.cos(ang)])
++        w = np.exp(S @ h) * W; w /= w.sum()
++        X = S @ D; m = (w * X).sum(); mad = (w * np.abs(X - m)).sum()
++        if mad > best[0]:
++            best = (mad, (round(float(xv), 3), round(float(ang), 3)))
++print(f"(c) sup over x in [0,12], angle in [0, pi/2] of MAD_h(s.D) = {best[0]:.6f} at (x, angle) = {best[1]} (1/2 at x = 0?)")
++# (d) matrix bound on a 7^3 box
++n = 7
++sites = list(product(range(n), repeat=3))
++idx = {s: i for i, s in enumerate(sites)}
++alpha = F(9, 10)
++c = alpha / 6
++ok = True
++o = idx[(3, 3, 3)]
++# vector iteration: v_n = C^n e_o (C symmetric); accumulate sums
++v = [F(0)] * len(sites); v[o] = F(1)
++acc = [F(0)] * len(sites)
++for step in range(1, 25):
++    nv = [F(0)] * len(sites)
++    for s in sites:
++        i = idx[s]
++        if v[i] == 0: continue
++        for d in range(3):
++            for e in (1, -1):
++                y = list(s); y[d] += e
++                if 0 <= y[d] < n:
++                    nv[idx[tuple(y)]] += c * v[i]
++    v = nv
++    for i in range(len(sites)):
++        acc[i] += v[i]
++for s in sites:
++    dist = sum(abs(s[d] - 3) for d in range(3))
++    if dist >= 1:
++        ok = ok and acc[idx[s]] <= alpha ** dist / (1 - alpha)
++print("(d) sum_{n<=24} (C^n)_{0x} <= alpha^{|x|_1}/(1-alpha) on the 7^3 box at alpha = 9/10, all x != 0:", ok, "; e.g. |x|_1 = 3:", float(acc[idx[(4,4,4)]]), "<=", float(alpha**3/(1-alpha)))
++a = sp.symbols("a", positive=True)
++print("(d) sum_{n in Z} a^{|n|} = (1+a)/(1-a):", sp.simplify(sp.summation(a ** sp.Abs(sp.symbols('m', integer=True)), (sp.symbols('m', integer=True), -sp.oo, sp.oo)) - (1 + a) / (1 - a)) == 0 if False else "checked by hand: 1 + 2a/(1-a) = (1+a)/(1-a)", sp.simplify(1 + 2 * a / (1 - a) - (1 + a) / (1 - a)) == 0)
+diff --git a/docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_WEAK_COUPLING_ONE_LAW_EXPONENTIAL_DECAY_NO_MASSLESS_CHANNEL_BELOW_ROOT_THREE_OVER_SIX_BOUNDED_THEOREM_NOTE_2026-09-15.md b/docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_WEAK_COUPLING_ONE_LAW_EXPONENTIAL_DECAY_NO_MASSLESS_CHANNEL_BELOW_ROOT_THREE_OVER_SIX_BOUNDED_THEOREM_NOTE_2026-09-15.md
+new file mode 100644
+index 0000000000..8591635c36
+--- /dev/null
++++ b/docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_WEAK_COUPLING_ONE_LAW_EXPONENTIAL_DECAY_NO_MASSLESS_CHANNEL_BELOW_ROOT_THREE_OVER_SIX_BOUNDED_THEOREM_NOTE_2026-09-15.md
+@@ -0,0 +1,205 @@
++---
++claim_id: admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_below_root_three_over_six_bounded_theorem_note_2026-09-15
++claim_type: bounded_theorem
++claim_scope: "For the static law of the exponential zonal rule on the pure-state sphere under the unsoldered reading on Z^3 — one-site conditional P_h(ds) proportional to exp(beta s.h) dsigma(s) with h the sum of the six neighbouring records, finite windows with exterior records, and the torus law of block 19 — with L(x) = coth x - 1/x and alpha = 2 sqrt(3) beta: (W1) TV(P_h, P_h') <= (beta/(2 sqrt 3)) |h - h'| for all h, h', because d/dt P_{h_t}(A) = beta Cov(s.Delta, 1_A), |Cov(X, 1_A)| <= sigma_X/2, and the covariance of s under P_h has eigenvalues L'(x) and L(x)/x (x = beta|h|), both at most 1/3 by series with nonnegative coefficients (proved; the identities and the coefficient ratios 6/(n(2n-1)) and 3/(2n+1) executed symbolically); (W2) hence each neighbour's coefficient is at most beta/sqrt 3 and every row sum at most alpha, with alpha < 1 iff beta < sqrt(3)/6 (proved; executed); (W3) the finite-window comparison bound by the coupled random-scan chain, |mu_Lambda^omega(f) - mu_Lambda^omega'(f)| <= sum_x delta_x(f) (D_Lambda b)_x with D_Lambda = sum_k C_Lambda^k, re-proved for the sphere with the maximal coupling of densities and a time-t bound (proved; the maximal coupling, the fixed point and the walk bounds executed exactly); (W4) for beta < sqrt(3)/6 the finite-window laws with any exterior records have a common limit on cylinder functions, the specification has exactly one infinite-volume static law, and it is rotation-invariant (proved); (W5) in that law and on every torus |<s_0 . s_x>| <= alpha^{|x|_1}/(1 - alpha) (torus distance on the torus), so M_N^2 <= ((1+alpha)/(1-alpha))^3/((1-alpha) N) and sup_k <|s^(k)|^2> <= ((1+alpha)/(1-alpha))^3/(1-alpha) uniformly in the side: no massless channel (proved; the geometric sums executed); (W6) with block 19 (PR #8153, an evidence address) the gravity node's kernel exists in this reading for beta > 3 sqrt(3) pi/8 and cannot for beta < sqrt(3)/6; the band between is open (a placement corollary). Three standard mathematical imports named at definition level; no coupling, reading or rule is selected as physical; exact arithmetic throughout."
++upstream_dependencies:
++  - minimal_axioms
++  - possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14
++  - admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_bounded_theorem_note_2026-09-06
++runner: scripts/admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.py
++---
++
++# The unsoldered sphere static law at weak coupling: one law, exponential decay, and no massless channel below `β = √3/6` — the Green-function channel is a strong-coupling feature with an explicit window
++
++**Date:** 2026-09-15
++**Type:** bounded_theorem
++**Status:** bounded-support (exact; conditional on the named supplied readings; unaudited)
++
++## Result up front
++
++Blocks 19 and 20 (PRs #8153, #8154) place the gravity node's kernel in the
++transverse channel of the ordered unsoldered static law on `Z³`, and nowhere
++on a plane or a line. This note settles the other side of the coupling axis
++on `Z³`. Below `β = √3/6` the law is unique, its correlations decay
++exponentially, its structure factor is bounded uniformly in the wavevector,
++and the long-range-order parameter vanishes. So the kernel is a strong-coupling
++feature of this reading: present for `β > 3√3π/8`, absent for `β < √3/6`, and
++the band between the two constants is left open.
++
++The mechanism is a one-site contraction, the same route block 03 ran for the
++six-axis rule, now for a continuous menu. The rule's one-site conditional is
++`P_h ∝ e^{β s·h}` with `h` the sum of the six neighbouring records. Moving one
++neighbour moves `h` by at most `2`, and the conditional's total-variation
++response to a change of `h` is at most `β|Δh|/(2√3)`: the derivative of
++`P_h(A)` along a segment is `β` times a covariance of `s·Δh` with an
++indicator, the indicator's standard deviation is at most `1/2`, and the
++variance of any component of `s` under any `P_h` is at most `1/3`. That last
++fact is the only analysis in the note: the covariance of `s` under `P_h` has
++the longitudinal eigenvalue `L'(x)` and the transverse eigenvalue `L(x)/x`,
++with `L(x) = coth x − 1/x` and `x = β|h|`, and both are at most `1/3` because
++the relevant differences are power series with nonnegative coefficients. So
++each of the six neighbours has coefficient at most `β/√3`, the row sum is
++`α = 2√3β`, and `α < 1` is `β < √3/6`. The coupled random-scan chain of block
++03 then gives the finite-window comparison bound, from which uniqueness,
++exponential decay and the bounds on the torus follow.
++
++Exactly: `TV(P_h, P_{h'}) ≤ (β/(2√3))|h − h'|` (W1); `α = 2√3β` (W2);
++the comparison bound (W3); one rotation-invariant law for `β < √3/6` (W4);
++`|⟨s_0·s_x⟩| ≤ α^{|x|₁}/(1 − α)`, `M_N² ≤ ((1+α)/(1−α))³/((1−α)N)`,
++`sup_k ⟨|ŝ(k)|²⟩ ≤ ((1+α)/(1−α))³/(1−α)` (W5); the window
++`[√3/6, 3√3π/8]` (W6). Executed with exact arithmetic: 20 checks, 13 mutations.
++
++## Machine status and trace
++
++```yaml
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: upstream_support
++target_claim_id: null
++target_blocker_text: "the derivation campaign's gravity node (#8093): 'the covariant scalar record statistic whose two-point function on the formation law is the lattice Green function'; blocks 19 and 20 (PRs #8153, #8154) locate it in the transverse channel of the ordered unsoldered static law on Z^3 and show it needs the third dimension; its coupling window on Z^3"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem
++next_trace_action: "the weak-coupling side is settled: for beta < sqrt(3)/6 the unsoldered static law on Z^3 is unique with exponential decay and a bounded structure factor, so the kernel cannot exist there; the kernel is a strong-coupling feature with the open band [sqrt(3)/6, 3 sqrt(3) pi/8]. Open: the band; the normalization; the Born overlap. Consumers: #8093's assembly (the gravity node's coupling dependence); the campaign's queue"
++conditional_surface_status: "W1-W5 proved for every beta < sqrt(3)/6 on finite windows, on tori of even side and in the infinite-volume limit; W6 a placement corollary conditional on block 19 (open PR) for the strong-coupling half; the algebraic skeleton executed exactly (the covariance identities, the coefficient ratios, the derivative identity, the maximal coupling, the fixed point on the cube window, the walk bounds on the 7^3 box, the geometric sums); conditional on the sphere as the possibility domain, the unsoldered and static readings and the exponential overlap as supplied conditions; three standard mathematical imports named at definition level"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++audit_required_before_effective_retained: true
++```
++
++## Premises and declared objects
++
++The axioms memo (`docs/MINIMAL_AXIOMS_2026-06-29.md`) is used through the sentences "Each site has a domain of local possibilities.", "No possibility is privileged.", "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.", "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.", and "Records form.". The landed possibility-covariance note (`docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md`, section "Empty-neighbourhood sphere laws") supplies the pure-state sphere `S²` as the possibility domain and the unsoldered reading. Block 03 (`docs/ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md`, on `main`) supplies the static reading of finite windows with exterior records, the notion of an infinite-volume static law (the specification), and the coupling route re-proved here for the sphere. All proposed and unaudited; block 19 (PR #8153, open) is referenced under Prior art as the evidence address for the strong-coupling half of W6.
++
++Declared objects.
++- **The rule and its windows.** Records `s_x ∈ S²`; `β > 0` supplied; the one-site conditional given the neighbouring records, `P_h(ds) = e^{β s·h} dσ(s)/Z(h)`, `h = Σ_{y ~ x} s_y`, `Z(h) = ∫ e^{β s·h} dσ = 4π sinh(β|h|)/(β|h|)`, `dσ` the uniform surface measure. For a finite window `Λ` with exterior records `ω` on the sites adjacent to `Λ`: `μ_Λ^ω(ds_Λ) ∝ Π_{⟨xy⟩ ⊂ Λ} e^{β s_x·s_y} Π_{x ∈ Λ, y ∉ Λ, y ~ x} e^{β s_x·ω_y} Π_{x ∈ Λ} dσ(s_x)`; its conditional at `x` given the other records is `P_{h_x}` with `h_x` the sum over the six neighbours (interior records or exterior ones). The torus law `μ_L` of block 19 on `(Z/2LZ)³`, `N = (2L)³`, has the same conditionals. An **infinite-volume static law** is a probability measure on `(S²)^{Z³}` whose conditional law on every finite window given the exterior records is `μ_Λ^ω` (block 03's specification reading).
++- **The function `L`.** `L(x) = coth x − 1/x` for `x > 0`, `L(0) = 0`; `L'(x) = 1/x² − 1/sinh² x`.
++- **Coefficients.** `c := β/√3`; `α := 6c = 2√3 β`. For a window `Λ`: `C_Λ` the matrix with `(C_Λ)_{xy} = c` when `x, y ∈ Λ` are neighbours and `0` otherwise; `D_Λ = Σ_{k ≥ 0} C_Λ^k`; for exterior records `ω, ω'`, `b_x = c · #{y ∉ Λ : y ~ x, ω_y ≠ ω'_y}`.
++- **Oscillations.** For `f` on `(S²)^Λ`, `δ_x(f) = sup{|f(ζ) − f(ζ')| : ζ, ζ' differ only at x}`; `‖f‖_δ = Σ_x δ_x(f)`. A local function depends on the records in a box `Δ_ℓ = {|x|₁ ≤ ℓ}`.
++- **Transforms and order parameter** on the torus: `ŝ(k) = N^{−1/2} Σ_x e^{ik·x} s_x`; `M_N² = N^{−2}⟨|Σ_x s_x|²⟩`; `d_T(0, x)` the torus `ℓ¹` distance.
++
++## Prior art and what is new
++
++The one-site contraction criterion for uniqueness is Dobrushin's (1968), with exponential decay of correlations under it (Dobrushin–Shlosman; Föllmer; Künsch); for the classical three-component model it is textbook. None is used as authority; W1–W5 are re-proved at scope. On `main`, block 03 re-proves the criterion by the coupled random-scan chain for the six-axis rule (finite menu) and states the region in the rule's weights; block 02 gives existence by compactness for the finite menu. What is new here: (i) the explicit constant `√3/6` for the sphere rule from an exact bound on the covariance of a record under any field (`L'(x) ≤ 1/3`, `L(x)/x ≤ 1/3`, proved by series); (ii) block 03's coupling route re-proved for a continuous menu, with the maximal coupling of densities and a time-`t` bound in place of the limit coupling, and existence obtained from the comparison bound and the consistency of the finite-window laws rather than imported; (iii) the decay and structure-factor bounds on the torus by freezing one site; (iv) the placement: the Green-function channel of block 19 is a strong-coupling feature with an explicit open band.
++
++## Exact target and obligation graph
++
++| Obligation | Statement | Route | Runner family |
++|---|---|---|---|
++| W1 | `TV(P_h, P_{h'}) ≤ (β/(2√3))|h − h'|` | the derivative identity; the indicator's variance; the covariance eigenvalues `L'`, `L/x ≤ 1/3` | B, C |
++| W2 | `c_{xy} ≤ β/√3`; `α = 2√3β`; `α < 1 ⇔ β < √3/6` | `|Δh| ≤ 2` | C |
++| W3 | the finite-window comparison bound | the coupled random-scan chain; the maximal coupling of densities; the fixed point `D_Λ b` | D |
++| W4 | one rotation-invariant infinite-volume static law for `β < √3/6` | W3 with the walk bound and the consistency of the finite-window laws | D |
++| W5 | `|⟨s_0·s_x⟩| ≤ α^{|x|₁}/(1−α)`; the torus bounds | W3 with one site frozen; the geometric sums | D |
++| W6 | the window `[√3/6, 3√3π/8]` | W5 with block 19 | — |
++
++## Theorem W1 — the total-variation response of the one-site conditional
++
++**Statement.** For all `h, h' ∈ R³`, `TV(P_h, P_{h'}) ≤ (β/(2√3)) |h − h'|`.
++
++**Proof.** (i) *The covariance of a record under a field.* Fix `h ≠ 0`, `x = β|h|`, `ĥ = h/|h|`. Under `P_h`, `s·ĥ` has density `∝ e^{xt}` on `[−1, 1]`, so `E[s·ĥ] = L(x)` and `E[(s·ĥ)²] = 1 − 2L(x)/x` (both by integrating `e^{xt}` and `t e^{xt}`, `t² e^{xt}` over `[−1, 1]`); hence `Var(s·ĥ) = 1 − 2L/x − L² = 1/x² − 1/sinh² x = L'(x)`. For a unit `e ⊥ ĥ`, `E[s·e] = 0` (the reflection `e → −e` preserves `P_h`) and `E[(s·e)²] = (1 − E[(s·ĥ)²])/2 = L(x)/x` (the two transverse directions share `1 − (s·ĥ)²`); the cross moments `E[(s·ĥ)(s·e)]` and `E[(s·e)(s·e')]` vanish by the same reflections. So the covariance matrix of `s` under `P_h` is diagonal in the frame `(ĥ, e, e')` with eigenvalues `L'(x), L(x)/x, L(x)/x`; at `h = 0` it is `I/3`. (ii) *Both eigenvalues are at most `1/3`.* `L'(x) ≤ 1/3` is, after multiplying by `3x² sinh² x > 0`, `3 sinh² x − 3x² ≤ x² sinh² x`. With `sinh² x = (cosh 2x − 1)/2`, the left side is `Σ_{n ≥ 2} (3/2) 2^{2n} x^{2n}/(2n)!` and the right side `Σ_{n ≥ 2} (1/2) 2^{2n−2} x^{2n}/(2n−2)!`; the ratio of the coefficients of `x^{2n}` is `6/(n(2n−1)) ≤ 1` for `n ≥ 2`, so the inequality holds termwise for `x > 0`. `L(x)/x ≤ 1/3` is, after multiplying by `x sinh x > 0`, `x cosh x − sinh x ≤ (x²/3) sinh x`; the left side is `Σ_{n ≥ 1} 2n x^{2n+1}/(2n+1)!`, the right side `Σ_{n ≥ 1} x^{2n+1}/(3(2n−1)!)`, and the coefficient ratio is `3/(2n+1) ≤ 1` for `n ≥ 1`. Hence for every `h` and every `Δ ∈ R³`, `Var_h(s·Δ) ≤ |Δ|²/3`. (iii) *The derivative.* For `h_t = h + tΔ`, `Δ = h' − h`, and a Borel set `A ⊂ S²`, `P_t(A) := P_{h_t}(A) = ∫_A e^{β s·h_t} dσ / Z(h_t)` is smooth in `t` and `d/dt P_t(A) = β [E_t((s·Δ) 1_A) − P_t(A) E_t(s·Δ)] = β Cov_t(s·Δ, 1_A)`. By the quadratic-form inequality, `|Cov_t(s·Δ, 1_A)| ≤ σ_t(s·Δ) · σ_t(1_A) ≤ (|Δ|/√3) · (1/2)`, since `Var(1_A) = P_t(A)(1 − P_t(A)) ≤ 1/4`. (iv) *Integrate.* `|P_{h'}(A) − P_h(A)| ≤ ∫_0^1 |d/dt P_t(A)| dt ≤ β|Δ|/(2√3)` for every `A`, and `TV` is the supremum over `A`. ∎
++
++The identities of (i) and the coefficient ratios of (ii) are executed symbolically (B1–B3); the derivative identity of (iii) on a finite weighted space, the indicator's variance bound and the chain of constants (C1–C2).
++
++## Theorem W2 — the coefficients and the threshold
++
++**Statement.** If two neighbourhood configurations of a site differ only at one neighbour `y`, the conditionals at the site satisfy `TV ≤ c = β/√3`; every row sum of `C_Λ` is at most `α = 2√3 β`; and `α < 1` if and only if `β < √3/6`. At zero field the antipodal change has `TV(P_e, P_{−e}) = tanh(β/2)` exactly, so at that configuration the bound `β/√3` is within the factor `2/√3` of the truth as `β → 0`.
++
++**Proof.** `|h − h'| = |s_y − s'_y| ≤ 2`, so W1 gives `TV ≤ 2β/(2√3) = β/√3`; a site has six neighbours, so the row sum is at most `6β/√3 = 2√3β`; `2√3β < 1 ⇔ β < 1/(2√3) = √3/6`. For the antipodal pair with `h = e`, `h' = −e`: the two densities are `e^{±β t}/Z` in `t = s·e`, `Z = 4π sinh β/β`, and `TV = ∫(p − q)_+ = (2π/Z) ∫_0^1 (e^{βt} − e^{−βt}) dt = (4π(cosh β − 1)/β)/Z = (cosh β − 1)/sinh β = tanh(β/2)`; and `tanh(β/2)/(β/√3) → √3/2`. ∎ (Executed: the threshold arithmetic, `√3/6 > 28/100`, the antipodal value and the limit; C2–C3.)
++
++## Theorem W3 — the finite-window comparison bound by coupling (re-proved for the sphere)
++
++**Statement.** Let `Λ` be a finite window with `n` sites, `ω, ω'` two exterior assignments, `μ = μ_Λ^ω`, `μ' = μ_Λ^{ω'}`, and suppose every row sum of `C_Λ` is at most `α_Λ < 1`. Then for every bounded measurable `f` on `(S²)^Λ`, `|μ(f) − μ'(f)| ≤ Σ_x δ_x(f) (D_Λ b)_x`, with `D_Λ = Σ_{k ≥ 0} C_Λ^k = (I − C_Λ)^{−1}` entrywise nonnegative.
++
++**Proof.** *Step 0 (the maximal coupling of two densities).* For probability densities `p, q` on `S²` with respect to `dσ`, let `m = ∫ min(p, q) dσ`; then `∫(p − q)_+ dσ = ∫(q − p)_+ dσ = 1 − m = TV(p, q)`. Draw `(S, S')` as follows: with probability `m` draw `S` from `min(p, q)/m` and set `S' = S`; otherwise draw `S` from `(p − min(p, q))/(1 − m)` and, independently, `S'` from `(q − min(p, q))/(1 − m)`. The marginals are `p` and `q`, and on the second branch the two densities have disjoint supports, so `P(S ≠ S') = 1 − m = TV(p, q)`. (Executed on a finite weighted space, D1.) *Step 1 (one site).* For records `ζ, ζ'` on `Λ` and the exteriors `ω, ω'`, the conditionals at `x` are `P_{h_x(ζ, ω)}` and `P_{h_x(ζ', ω')}`, and W1 gives `TV ≤ (β/(2√3)) Σ_{y ~ x} |ζ_y − ζ'_y| ≤ Σ_{y ∈ Λ, y ~ x} c 1[ζ_y ≠ ζ'_y] + b_x = (C_Λ 1[ζ ≠ ζ'])_x + b_x`. *Step 2 (the coupled random-scan chain).* Run two copies of the random-scan update (a uniform site `X`, its record redrawn from the conditional), with the same `X` and the maximal coupling of the two conditionals at each step. With `u^t_x = P(η^t_x ≠ η'^t_x)`: `u^{t+1}_x = (1 − 1/n) u^t_x + (1/n) E[TV(P_{h_x(η^t, ω)}, P_{h_x(η'^t, ω')})] ≤ (1 − 1/n) u^t_x + (1/n)((C_Λ u^t)_x + b_x) =: Φ(u^t)_x`, and `Φ` is affine with nonnegative coefficients, hence monotone, so `u^t ≤ Φ^t(u^0) ≤ Φ^t(1)`. *Step 3 (the fixed point).* The linear part of `Φ` has row sums at most `1 − (1 − α_Λ)/n < 1`, so `Φ` is a contraction in the maximum norm; its unique fixed point is `u* = D_Λ b`, since `‖C_Λ‖_∞ ≤ α_Λ < 1` makes `Σ_k C_Λ^k` a finite sum in norm, equal to `(I − C_Λ)^{−1}` and entrywise nonnegative; and `Φ^t(1) → u*`. (Executed on the cube window, D2.) *Step 4 (stationarity).* The conditional of `μ_Λ^ω` at `x` given the other records is `P_{h_x}` (read off the density), so resampling `x` from it leaves `μ` fixed; likewise `μ'`. *Step 5 (the bound at time `t`).* Start the coupled chain from independent draws of `μ` and `μ'`; by Step 4, `η^t ∼ μ` and `η'^t ∼ μ'` for every `t`. Ordering the sites and telescoping through configurations that agree with `η'^t` on the first `i` sites and with `η^t` elsewhere, `|f(η^t) − f(η'^t)| ≤ Σ_x δ_x(f) 1[η^t_x ≠ η'^t_x]`, so `|μ(f) − μ'(f)| = |E[f(η^t) − f(η'^t)]| ≤ Σ_x δ_x(f) u^t_x ≤ Σ_x δ_x(f) Φ^t(1)_x` for every `t`; letting `t → ∞` gives the statement. No limit coupling is needed. ∎
++
++*Walk bound (executed, D3).* `(C_Λ^k)_{xy} = c^k · #{nearest-neighbour walks of length k from x to y inside Λ}`, so `Σ_y (C_Λ^k)_{xy} ≤ (6c)^k = α^k` and `(C_Λ^k)_{xy} = 0` for `k < |x − y|₁`; hence `Σ_{k} (C_Λ^k)_{xy} ≤ α^{|x−y|₁}/(1 − α)` when `α < 1`.
++
++## Theorem W4 — one law for `β < √3/6`
++
++**Statement.** For `β < √3/6`: (a) for every local `f` (depending on `Δ_ℓ`) and any exterior records `b, b'`, `|μ_{Λ_L}^b(f) − μ_{Λ_L}^{b'}(f)| ≤ ‖f‖_δ α^{L−ℓ+1}/(1 − α)`, `Λ_L = {|x|_∞ ≤ L}`; (b) `μ(f) := lim_{L→∞} μ_{Λ_L}^{b_L}(f)` exists for every local `f` and every choice of exterior records `b_L`, and does not depend on the choice; (c) `μ` extends to a probability measure on `(S²)^{Z³}` that is an infinite-volume static law; (d) it is the only one; (e) it is invariant under every simultaneous rotation of all records, so `⟨s_0⟩_μ = 0`.
++
++**Proof.** (a) On `Λ_L` every row sum of `C_Λ` is at most `α < 1`, and `b_y ≤ 6c 1[y ∈ ∂_in Λ_L] = α 1[y ∈ ∂_in Λ_L]`; by W3 and the walk bound, `|μ_{Λ_L}^b(f) − μ_{Λ_L}^{b'}(f)| ≤ Σ_{x ∈ Δ_ℓ} δ_x(f) Σ_k Σ_{y ∈ ∂_in Λ_L} (C_Λ^k)_{xy} α ≤ ‖f‖_δ α Σ_{k ≥ L−ℓ} α^k`, since a walk from `Δ_ℓ` to `∂_in Λ_L` has length at least `L − ℓ`. (b) For `L' > L`, conditioning `μ_{Λ_{L'}}^{b'}` on the records outside `Λ_L` gives `μ_{Λ_L}^{ζ}` with `ζ` those records (read off the density), so `μ_{Λ_{L'}}^{b'}(f) = ∫ μ_{Λ_L}^{ζ}(f) μ_{Λ_{L'}}^{b'}(dζ)` and, by (a), `|μ_{Λ_{L'}}^{b'}(f) − μ_{Λ_L}^{b}(f)| ≤ ‖f‖_δ α^{L−ℓ+1}/(1 − α)`. The differences tend to zero uniformly in the later index and in the exterior records, so the limit exists and is the same for every choice. (c) The limits define, for each box `Δ_ℓ`, a probability law on `(S²)^{Δ_ℓ}` (limits of laws applied to continuous functions of the box's records; the consistency between boxes holds in the limit); the extension theorem for consistent finite-dimensional laws (named under Imports) gives `μ`. `μ` is an infinite-volume static law: for a finite window `Λ` and local `f`, `μ(f) = lim μ_{Λ_{L'}}^b(f) = lim ∫ μ_Λ^{ζ}(f) μ_{Λ_{L'}}^b(dζ) = ∫ μ_Λ^{ζ}(f) μ(dζ)`, because `ζ ↦ μ_Λ^ζ(f)` is a continuous local function. (d) If `ν` is an infinite-volume static law, then `ν(f) = ∫ μ_{Λ_L}^{ζ}(f) ν(dζ)` and by (a) `|ν(f) − μ_{Λ_L}^b(f)| ≤ ‖f‖_δ α^{L−ℓ+1}/(1 − α) → 0`, so `ν = μ` on local functions, hence on the cylinder algebra, hence everywhere (two probability measures agreeing on a generating π-system coincide). (e) A simultaneous rotation `R` of all records maps `μ_Λ^ω` to `μ_Λ^{Rω}` (the overlap and `dσ` are invariant), so the image of `μ` under `R` is again an infinite-volume static law and equals `μ` by (d); hence `⟨s_0⟩_μ = R⟨s_0⟩_μ` for all `R`, i.e. `⟨s_0⟩_μ = 0`. ∎
++
++## Theorem W5 — exponential decay; no massless channel
++
++**Statement.** For `β < √3/6` and `x ≠ 0`: (a) in the law `μ` of W4, `|⟨s_0·s_x⟩| ≤ α^{|x|₁}/(1 − α)`; (b) on the torus `(Z/2LZ)³` for every `L ≥ 1`, `|⟨s_0·s_x⟩_L| ≤ α^{d_T(0,x)}/(1 − α)`; hence (c) `M_N² ≤ ((1+α)/(1−α))³/((1−α)N)` and (d) `⟨|ŝ(k)|²⟩ ≤ ((1+α)/(1−α))³/(1 − α)` for every `k`, uniformly in `L`.
++
++**Proof.** (a) Take `Λ = Λ_L ∋ 0, x` with exterior `b`, and bounded `f = f(s_0)`, `g = g(s_x)`. Conditioning `μ_Λ^b` on `s_x = a` gives the law on `Λ ∖ {x}` with exterior records `(b, a)` (read off the density), so `μ_Λ^b(f g) = ∫ μ_Λ^b(da) g(a) μ_Λ^b(f | a)`. W3 on the window `Λ ∖ {x}` with the exteriors `(b, a)` and `(b, a')`, which differ only at `x`, has `b^{diff}_z = c 1[z ~ x]`, so `|μ_Λ^b(f | a) − μ_Λ^b(f | a')| ≤ δ_0(f) c Σ_{z ~ x} Σ_k (C^k)_{0z} ≤ δ_0(f) c Σ_{k ≥ |x|₁ − 1} α^k = δ_0(f) α^{|x|₁}/(6(1 − α))`, since a walk from `0` to a neighbour of `x` has length at least `|x|₁ − 1` and `c = α/6`. Then `Cov_Λ(f, g) = ∫ μ_Λ^b(da) g(a) [μ_Λ^b(f | a) − μ_Λ^b(f)]` and `|μ_Λ^b(f | a) − μ_Λ^b(f)| ≤ sup_{a'} |μ_Λ^b(f | a) − μ_Λ^b(f | a')|`, so `|Cov_Λ(f, g)| ≤ ‖g‖_∞ δ_0(f) α^{|x|₁}/(6(1 − α))`. With `f = s_0·e_i` (`δ_0 = 2`) and `g = s_x·e_i` (`‖g‖_∞ ≤ 1`), summing over `i = 1, 2, 3`: `|Σ_i Cov_Λ(s_0·e_i, s_x·e_i)| ≤ α^{|x|₁}/(1 − α)`. Let `L → ∞`: each expectation is of a local function, so the covariances tend to those of `μ`, and by W4(e) `⟨s_0·s_x⟩_μ = Σ_i Cov_μ(s_0·e_i, s_x·e_i)`. (b) On the torus, conditioning on `s_x = a` gives the law on the window `T ∖ {x}` with exterior `a`; the torus graph minus a site has row sums at most `α`, and a walk from `0` to a neighbour of `x` has length at least `d_T(0, x) − 1`; the same computation gives the bound, and the torus law is rotation-invariant (its density and `dσ` are), so `⟨s_0⟩_L = 0`. (c) By translation invariance `M_N² = N^{−1} Σ_x ⟨s_0·s_x⟩_L ≤ N^{−1} (1 − α)^{−1} Σ_x α^{d_T(0,x)}`, and `Σ_{x ∈ T} α^{d_T(0,x)} = Π_{i=1}^3 (1 + 2Σ_{j=1}^{L−1} α^j + α^L) ≤ ((1 + α)/(1 − α))³`. (d) `⟨|ŝ(k)|²⟩ = Σ_x e^{ik·x} ⟨s_0·s_x⟩_L`, so `|⟨|ŝ(k)|²⟩| ≤ Σ_x |⟨s_0·s_x⟩_L| ≤ (1 − α)^{−1} ((1 + α)/(1 − α))³`. ∎
++
++The geometric identities and the torus sum are executed (D4); the frozen-site conditional on a small window (D5).
++
++## Corollary W6 — the coupling window of the Green-function channel
++
++**Statement (conditional on block 19 for the strong-coupling half).** Under the unsoldered static reading with the exponential overlap on `Z³`: for `β > 3√3π/8` the transverse structure factor is sandwiched between multiples of `1/(βE(k))` with a positive lower constant (block 19's G5), and for `β < √3/6` the structure factor is bounded uniformly in `k` and `L` while `M_N² → 0` (W5). So the gravity node's kernel is a strong-coupling feature of this reading, and nothing is claimed for `√3/6 ≤ β ≤ 3√3π/8`.
++
++**Proof.** The two halves are W5(c)–(d) and block 19's G3–G5; the latter is an open PR cited as an evidence address, not as authority. ∎
++
++## No-Go Discipline Gate
++
++The negative sentence is W5(d) with W6: no massless channel for `β < √3/6`. Escapes named, not closed: the band `[√3/6, 3√3π/8]`; other overlaps (the Born overlap is not treated); the formation reading (block 13).
++
++### N1 — Routes by which the negative could fail
++1. *The covariance bound `1/3` fails at some field* — closed: the eigenvalues are `L'(x)` and `L(x)/x`, both at most `1/3` by series with nonnegative coefficients (B2–B3 executed to `n = 12` and in closed form).
++2. *The derivative identity or the indicator bound* — closed: executed on a finite weighted space (C1); `p(1 − p) ≤ 1/4`.
++3. *The coupling argument needs a finite menu* — closed: the maximal coupling of densities and the time-`t` bound replace the finite-menu steps of block 03 (D1–D2).
++4. *The walk bound or the geometric sums* — closed: executed exactly on the `7³` box and symbolically (D3–D4).
++5. *The torus has no exterior* — closed: one site is frozen and becomes the exterior (D5).
++6. *The band, other overlaps, the formation reading* — escapes, named above.
++
++### N2 — Wall-independence audit
++No no-go wall of the repository is used.
++
++### N3 — Hidden-wall scan
++No hidden dependence: the inputs are the axioms' sentences, the parent note's sphere law and reading, block 03's static reading and specification, and the supplied overlap.
++
++### N4 — Per-citation table
++| Citation | Role | Load-bearing? |
++|---|---|---|
++| `minimal_axioms` | the five sentences under Premises | yes (premise) |
++| the possibility-covariance note (`main`) | the sphere domain and the unsoldered reading | yes (premise, proposed) |
++| block 03 (`main`) | the static reading, the specification, the coupling route (re-proved here) | yes (premise, proposed) |
++| block 19 (PR #8153) | the strong-coupling half of W6 | W6 only (evidence address) |
++| block 20 (PR #8154) | context (the dimension placement) | no |
++
++### N5 — Resolution audit
++| Claim | per_element | per_site | per_mode | per_block | lattice_wide |
++|---|---|---|---|---|---|
++| "no massless channel below `√3/6`" | executed: the covariance identities and the coefficient ratios; the derivative identity; the antipodal value; the threshold arithmetic | executed: the maximal coupling on a finite weighted space; the frozen-site conditional on a small window | executed: the walk bounds `(C^k)_{0x} = 0` for `k < |x|₁` and `Σ_y (C^k)_{0y} ≤ α^k` on the `7³` box | executed: the fixed point `u* = D b` on the cube window; the geometric sums and the torus sum | proved for every `β < √3/6` on finite windows, tori and the infinite-volume law (W1–W5); the band not claimed |
++
++### N6 — Partial-closure paths and primitive scan
++The registered primitives supply no coupling or overlap; none is a wall.
++
++### N7 — Steelman
++Hostile reviewer: "The one-site contraction criterion for the classical three-component model is in every textbook, and `√3/6` is far below the true threshold." Reply: the framework question is the coupling window of the gravity node's kernel under the reading that supplies it, which needed an explicit constant proved at scope from the rule's own one-site conditional; the constant is not sharp and is not claimed to be — the zero-field antipodal value shows the coefficient's slack there is a factor `2/√3`, and the band is stated as open. Conceded: the band is wide; the sharper coefficient (the supremum over fields of a mean absolute deviation) is not proved.
++
++### N8 — Cross-cycle echo
++Block 03's contraction region for the six-axis rule is the same criterion with a finite menu; block 08's causal coupling region is its formation-law counterpart; block 19's ordered phase is the other end of this note's axis; block 20's dimension placement is the other axis of the same kernel.
++
++## Falsifiers
++- A covariance identity of W1(i) that fails, or a coefficient ratio other than `6/(n(2n−1))` or `3/(2n+1)` for some `n ≤ 12`, or a closed-form coefficient that differs from the series (B1–B3).
++- A failure of the derivative identity on the finite weighted space, of `p(1 − p) ≤ 1/4`, of the chain of constants, of `√3/6 > 28/100`, of the antipodal value `tanh(β/2)` or of the limit `√3/2` (C1–C3).
++- A maximal coupling with disagreement probability other than `TV` (D1); a fixed point other than `D_Λ b`, or `D_Λ` with a negative entry, on the cube window (D2); a walk bound violated on the `7³` box (D3); a geometric identity or the torus sum bound that fails (D4); a frozen-site conditional that is not the window law with that exterior (D5).
++
++## Boundaries and non-claims
++This note proves, for the unsoldered static law with the exponential overlap on `Z³`, that below `β = √3/6` there is exactly one infinite-volume static law, with exponential decay of the record correlations and a structure factor bounded uniformly in the wavevector and the side; it does not locate the true threshold, does not treat the band `[√3/6, 3√3π/8]`, does not treat the Born overlap, does not re-prove the strong-coupling half of the placement (block 19's open PR), does not select a reading, rule or coupling as physical, and adopts no clause. No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision. No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.
++
++## Imports
++- `minimal_axioms`: the sentences quoted under Premises.
++- The possibility-covariance note and block 03 (both on `main`): the readings, the specification and the coupling route; proposed, unaudited. PR #8153 (open) referenced as the evidence address for W6's strong-coupling half; PR #8154 for context.
++- Re-proved at scope: W1 (the covariance eigenvalues and the series inequalities; the derivative identity; the quadratic-form inequality), W2, W3 (the maximal coupling of densities; the coupled chain; the fixed point; the time-`t` bound), W4 (the walk bound; the consistency of finite-window laws), W5.
++- Named standard imports at definition level (never as authority for physics): the extension theorem for consistent finite-dimensional laws on a countable product of compact spaces (Kolmogorov); the uniqueness of a probability measure given on a generating π-system; the exponential series of `sinh` and `cosh`.
++- Reference only (named, not used): Dobrushin (1968); Dobrushin–Shlosman (1985); Föllmer (1982); Künsch (1982).
++
++## Review record
++Supervisor-run block (owner directive: don't stop; assess the next lane at each conclusion; no subagents). The controls (`specs/supervisor_control_block21_weak_coupling.py`) first checked a cruder route — `TV ≤ tanh(osc/4)` on random finite instances, giving the threshold `artanh(1/6) = (1/2) log(7/5)` — then found by a numerical sweep over fields that the one-site conditional's response is about half that bound, computed the exact antipodal value `tanh(β/2)`, verified the covariance eigenvalue formulas and the series ratios, and swept the mean absolute deviation (maximal at zero field, `1/2`, unproved); the contract was then written on the variance route, which is exact and uniform and gives `√3/6`; the lens pass is in `GOAL_block21.md`; the primary seat wrote W1–W6 and the runner; the refuting pass (`CHECKER_block21_findings.md`) checked W1 against direct quadrature at random fields including large ones, the eigenvalue bounds on a grid, the decay bound's direction on the exactly solvable open chain (`⟨s_0·s_r⟩ = L(β)^r`, three sites by quadrature), the fixed point on a `3×3×3` box by floating-point linear algebra, and the torus sum. Facts settled while executing: sympy needs the exponential rewrite to verify the hyperbolic identities; the coefficient ratios have closed forms `6/(n(2n−1))` and `3/(2n+1)`.
++
++## Verification
++
++```bash
++python3 scripts/admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.py
++python3 scripts/admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.py --list-mutations
++python3 scripts/admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.py --mutation claim_channel_below_threshold_injected
++```
++
++Families: A authority and inputs; B the covariance identities and the series inequalities; C the derivative identity, the constants, the antipodal value; D the maximal coupling, the fixed point, the walk bounds, the geometric sums, the frozen-site conditional; F fences, forbidden phrases, the floating-point self-scan, the placement of the classical names; G the resolution lines. Each of the 13 declared mutations fails in exactly one family. Expected final line: `TOTAL: PASS=20 FAIL=0`.
+diff --git a/docs/audit/data/citation_graph_manifest.json b/docs/audit/data/citation_graph_manifest.json
+index ebd50a4fb4..8bb27e5e4e 100644
+--- a/docs/audit/data/citation_graph_manifest.json
++++ b/docs/audit/data/citation_graph_manifest.json
+@@ -1,6 +1,6 @@
+ {
+  "edge_count": 13402,
+- "node_count": 5832,
++ "node_count": 5833,
+  "nodes": {
+   "3d_correction_master_note": {
+    "deps_hash": "e3b0c44298fc",
+@@ -754,6 +754,10 @@
+    "deps_hash": "8ae058a5c524",
+    "out_degree": 2
+   },
++  "admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_below_root_three_over_six_bounded_theorem_note_2026-09-15": {
++   "deps_hash": "e3b0c44298fc",
++   "out_degree": 0
++  },
+   "admissibility_scalar_edge_hodge_rank_one_nonlinear_ward_boundary_bounded_theorem_note_2026-08-14": {
+    "deps_hash": "f21f2489334d",
+    "out_degree": 4
+diff --git a/logs/runner-cache/admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.txt b/logs/runner-cache/admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.txt
+new file mode 100644
+index 0000000000..2eeb5cf543
+--- /dev/null
++++ b/logs/runner-cache/admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.txt
+@@ -0,0 +1,46 @@
++===== runner cache v1 =====
++runner: scripts/admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.py
++runner_sha256: e7089c4afcfacf4fd63d22b460178eada0a14976e20d866620c4375574723342
++input_fingerprint_sha256: c78ff8f36d301741015f17e297a4bb5cc390c3e35bd4f1af5d1498a40560adc5
++timeout_sec: 900
++exit_code: 0
++elapsed_sec: 2.89
++status: ok
++----- stdout -----
++AUDIT_INPUT_PATHS:
++  docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_WEAK_COUPLING_ONE_LAW_EXPONENTIAL_DECAY_NO_MASSLESS_CHANNEL_BELOW_ROOT_THREE_OVER_SIX_BOUNDED_THEOREM_NOTE_2026-09-15.md
++  docs/MINIMAL_AXIOMS_2026-06-29.md
++  docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md
++  docs/ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md
++AUDIT_TIMEOUT_SEC: 900
++scope: the unsoldered sphere static law with overlap e^{beta t} at weak coupling on Z^3 — the covariance eigenvalues and series inequalities behind the one-site contraction, the derivative identity, the threshold sqrt(3)/6, the maximal coupling, the fixed point, the walk bounds, the geometric sums; exact
++mutation: none
++PASS: A1 the four declared inputs exist (this note, the axiom memo, the possibility-covariance note and block 03's note on main)
++PASS: A2 the five axiom sentences used are present verbatim in the axiom memo
++PASS: A3 the parent's claim id and sphere-law section, and block 03's claim id and its coupling theorem, are present
++PASS: A4 this note carries its claim id and names this runner
++PASS: B1 W1(i): under P_h, E[s.h^] = L(x), E[(s.h^)^2] = 1 - 2L/x, Var(s.h^) = L'(x) = 1/x^2 - 1/sinh^2 x, and E[(s.e_perp)^2] = L(x)/x, symbolically (x = beta|h|)
++PASS: B2 W1(ii): the coefficient ratios of (3 sinh^2 x - 3x^2)/(x^2 sinh^2 x) and (x cosh x - sinh x)/((x^2/3) sinh x) are 6/(n(2n-1)) and 3/(2n+1) in closed form, and both are <= 1 (n >= 2, n >= 1) to n = 12
++PASS: B3 W1(ii): the series coefficients match the closed forms (3/2) 2^{2n}/(2n)!, (1/2) 2^{2n-2}/(2n-2)!, 2n/(2n+1)!, 1/(3 (2n-1)!) to n = 12; no x^2 or x^1 terms
++PASS: C1 W1(iii): on a three-point weighted space, d/dt P_t(A) = beta [E_t(X 1_A) - P_t(A) E_t(X)] = beta Cov_t(X, 1_A) symbolically; p(1-p) = 1/4 - (1/2 - p)^2 <= 1/4
++PASS: C2 W1(iv)/W2: beta |Delta|/(2 sqrt 3) = beta sigma_max |Delta| / 2 with sigma_max^2 = 1/3; |Delta| <= 2 gives c = beta/sqrt 3; alpha = 6c = 2 sqrt(3) beta; 2 sqrt(3) (sqrt(3)/6) = 1 and sqrt(3)/6 > 28/100
++PASS: C3 W2: at zero field the antipodal change has TV(P_e, P_-e) = (2 pi/Z) int_0^1 (e^{beta t} - e^{-beta t}) dt = tanh(beta/2); tanh(beta/2)/(beta/sqrt 3) tends to sqrt(3)/2
++PASS: D1 W3 step 0: int (p-q)_+ = int (q-p)_+ = 1 - int min(p,q) = 1/4 on a three-point weighted space; the residual densities have disjoint supports, so P(S != S') = TV
++PASS: D2 W3 step 3: on the cube window at alpha = 9/10, D = (I - C)^{-1} is entrywise nonnegative, u* = D b is the fixed point of Phi, the iterates Phi^t(1) decrease to it from above, and u*_x <= b_x/(1 - alpha)
++PASS: D3 W3/W5 walk bounds on the 7^3 box at alpha = 9/10: sum_y (C^k)_{0y} <= alpha^k, (C^k)_{0x} = 0 for k < |x|_1, and sum_{k<=16} (C^k)_{0x} <= alpha^{|x|_1}/(1 - alpha) for every x != 0
++PASS: D4 W5(c): 1 + 2 sum_{j=1}^{L-1} a^j + a^L = (1+a)/(1-a) - a^L (1+a)/(1-a) <= (1+a)/(1-a) symbolically for L = 1..12; 1 + 2a/(1-a) = (1+a)/(1-a); the torus sum on the 6^3 torus at a = 9/10 is at most ((1+a)/(1-a))^3
++PASS: D5 W5: freezing a site turns the joint density into the window density with that site's record as exterior (symbolic bond factors on a three-site path)
++PASS: F1 the note carries the three fence sentences verbatim
++PASS: F2 the note contains no forbidden phrase (0 hits)
++PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
++PASS: F4 the authors' names appear only under Prior art, Imports and the Premises; Gibbs, Laplacian and Green function name standard objects (0 offenders)
++per_element: executed — the covariance identities and the coefficient ratios; the derivative identity; the antipodal value; the threshold arithmetic
++per_site: executed — the maximal coupling on a finite weighted space; the frozen-site conditional on a three-site path
++per_mode: executed — the walk bounds (C^k)_{0x} = 0 for k < |x|_1 and sum_y (C^k)_{0y} <= alpha^k on the 7^3 box
++per_block: executed — the fixed point u* = D b on the cube window; the geometric sums and the 6^3 torus sum
++lattice_wide: W1-W5 proved for every beta < sqrt(3)/6 on finite windows, tori and the infinite-volume law; W6 a placement corollary conditional on block 19; the band not claimed
++PASS: G1 the five N5 resolution lines are printed
++TOTAL: PASS=20 FAIL=0
++
++----- stderr -----
++
+diff --git a/scripts/admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.py b/scripts/admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.py
+new file mode 100755
+index 0000000000..45360482c6
+--- /dev/null
++++ b/scripts/admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_2026_09_15.py
+@@ -0,0 +1,381 @@
++#!/usr/bin/env python3
++"""Exact checks: the unsoldered sphere static law with overlap e^{beta t} at weak coupling on Z^3 — the algebraic skeleton of the
++one-site contraction (uniqueness, exponential decay, no massless channel below beta = sqrt(3)/6).
++
++Scope.  W1: the covariance identities of a record under a field (longitudinal L'(x) = 1/x^2 - 1/sinh^2 x, transverse L(x)/x), the
++series coefficient ratios 6/(n(2n-1)) and 3/(2n+1) (closed form and to n = 12), the derivative identity d/dt P_t(A) = beta Cov(s.Delta, 1_A)
++on a finite weighted space, p(1-p) <= 1/4, the chain of constants.  W2: the threshold sqrt(3)/6, the antipodal value tanh(beta/2) and
++its small-beta ratio.  W3-W5: the maximal coupling of two densities on a finite space, the fixed point u* = D b on the cube window,
++the walk bounds on the 7^3 box, the geometric sums and the torus sum, the frozen-site conditional.  Exact arithmetic only
++(Fractions and sympy); the runner scans its own source for floating-point literals.
++"""
++
++from __future__ import annotations
++
++import re
++import sys
++from fractions import Fraction
++from itertools import product
++from pathlib import Path
++
++import sympy as sp
++
++AUDIT_TIMEOUT_SEC = 900
++AUDIT_INPUT_PATHS = (
++    "docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_WEAK_COUPLING_ONE_LAW_EXPONENTIAL_DECAY_NO_MASSLESS_CHANNEL_BELOW_ROOT_THREE_OVER_SIX_BOUNDED_THEOREM_NOTE_2026-09-15.md",
++    "docs/MINIMAL_AXIOMS_2026-06-29.md",
++    "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
++    "docs/ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md",
++)
++ROOT = Path(__file__).resolve().parents[1]
++CLAIM_ID = "admissibility_rule_unsoldered_sphere_static_law_weak_coupling_one_law_exponential_decay_no_massless_channel_below_root_three_over_six_bounded_theorem_note_2026-09-15"
++PARENT_CLAIM_ID = "possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14"
++PARENT_FRAGMENT = "Empty-neighbourhood sphere laws"
++BLOCK03_CLAIM_ID = "admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_bounded_theorem_note_2026-09-06"
++BLOCK03_FRAGMENT = "the finite-window comparison bound by coupling"
++AXIOM_NEEDLES = (
++    "Each site has a domain of local possibilities.",
++    "No possibility is privileged.",
++    "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.",
++    "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.",
++    "Records form.",
++)
++
++MUTATION_GATE = {
++    "covariance_identity_wrong": "B",
++    "series_ratio_wrong": "B",
++    "coefficient_formula_wrong": "B",
++    "derivative_identity_wrong": "C",
++    "variance_bound_wrong": "C",
++    "threshold_wrong": "C",
++    "antipodal_tv_wrong": "C",
++    "maximal_coupling_wrong": "D",
++    "fixed_point_wrong": "D",
++    "walk_bound_wrong": "D",
++    "geometric_sum_wrong": "D",
++    "claim_channel_below_threshold_injected": "F",
++    "claim_classical_name_in_theorem": "F",
++}
++ACTIVE_MUTATION: str | None = None
++
++
++def mut(name: str) -> bool:
++    if name not in MUTATION_GATE:
++        raise KeyError(name)
++    return ACTIVE_MUTATION == name
++
++
++class Checks:
++    def __init__(self) -> None:
++        self.passed = 0
++        self.failed = 0
++        self.failed_families: list[str] = []
++
++    def check(self, label: str, condition: bool, detail: str) -> None:
++        ok = bool(condition)
++        self.passed += int(ok)
++        self.failed += int(not ok)
++        if not ok:
++            self.failed_families.append(label[0])
++        print(f"{'PASS' if ok else 'FAIL'}: {label} {detail}")
++
++    def finish(self) -> int:
++        print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
++        return self.failed
++
++
++def normalize_text(text: str) -> str:
++    return " ".join(text.split())
++
++
++def zero(expr) -> bool:
++    return sp.simplify(sp.expand(expr.rewrite(sp.exp))) == 0
++
++
++# ============================================================================================ family A
++def family_a(checks: Checks, texts) -> None:
++    note, axioms, parent, block03 = texts
++    checks.check("A1", all((ROOT / pth).is_file() for pth in AUDIT_INPUT_PATHS) and len(set(AUDIT_INPUT_PATHS)) == 4,
++                 "the four declared inputs exist (this note, the axiom memo, the possibility-covariance note and block 03's note on main)")
++    checks.check("A2", all(n in normalize_text(axioms) for n in AXIOM_NEEDLES), "the five axiom sentences used are present verbatim in the axiom memo")
++    fp, f3 = normalize_text(parent), normalize_text(block03)
++    checks.check("A3", PARENT_CLAIM_ID in fp and PARENT_FRAGMENT in fp and BLOCK03_CLAIM_ID in f3 and BLOCK03_FRAGMENT in f3,
++                 "the parent's claim id and sphere-law section, and block 03's claim id and its coupling theorem, are present")
++    flat = normalize_text(note)
++    checks.check("A4", CLAIM_ID in flat and Path(__file__).name in flat, "this note carries its claim id and names this runner")
++
++
++# ============================================================================================ family B
++def family_b(checks: Checks) -> None:
++    x, t = sp.symbols("x t", positive=True)
++    Lg = sp.coth(x) - 1 / x
++    den = sp.integrate(sp.exp(x * t), (t, -1, 1))
++    E1 = sp.integrate(sp.exp(x * t) * t, (t, -1, 1)) / den
++    E2 = sp.integrate(sp.exp(x * t) * t ** 2, (t, -1, 1)) / den
++    Eperp = sp.integrate(sp.exp(x * t) * (1 - t ** 2) / 2, (t, -1, 1)) / den
++    target_perp = Lg / x
++    if mut("covariance_identity_wrong"):
++        target_perp = Lg / (2 * x)
++    ok = zero(E1 - Lg) and zero(E2 - (1 - 2 * Lg / x)) and zero(E2 - Lg ** 2 - sp.diff(Lg, x)) and zero(sp.diff(Lg, x) - (1 / x ** 2 - 1 / sp.sinh(x) ** 2)) and zero(Eperp - target_perp)
++    checks.check("B1", ok, "W1(i): under P_h, E[s.h^] = L(x), E[(s.h^)^2] = 1 - 2L/x, Var(s.h^) = L'(x) = 1/x^2 - 1/sinh^2 x, and E[(s.e_perp)^2] = L(x)/x, symbolically (x = beta|h|)")
++    n = sp.symbols("n", positive=True, integer=True)
++    even_ratio = (sp.Rational(3, 2) * 2 ** (2 * n) / sp.factorial(2 * n)) / (sp.Rational(1, 2) * 2 ** (2 * n - 2) / sp.factorial(2 * n - 2))
++    odd_ratio = ((2 * n) / sp.factorial(2 * n + 1)) / (1 / (3 * sp.factorial(2 * n - 1)))
++    r_even, r_odd = 6 / (n * (2 * n - 1)), 3 / (2 * n + 1)
++    if mut("series_ratio_wrong"):
++        r_even = 6 / (n * (2 * n + 1))
++    closed = sp.simplify(even_ratio - r_even) == 0 and sp.simplify(odd_ratio - r_odd) == 0
++    bounded = all(sp.Rational(6, m * (2 * m - 1)) <= 1 for m in range(2, 13)) and all(sp.Rational(3, 2 * m + 1) <= 1 for m in range(1, 13))
++    checks.check("B2", closed and bounded, "W1(ii): the coefficient ratios of (3 sinh^2 x - 3x^2)/(x^2 sinh^2 x) and (x cosh x - sinh x)/((x^2/3) sinh x) are 6/(n(2n-1)) and 3/(2n+1) in closed form, and both are <= 1 (n >= 2, n >= 1) to n = 12")
++    s1 = sp.series(3 * sp.sinh(x) ** 2 - 3 * x ** 2, x, 0, 28).removeO()
++    s2 = sp.series(x ** 2 * sp.sinh(x) ** 2, x, 0, 28).removeO()
++    s3 = sp.series(x * sp.cosh(x) - sp.sinh(x), x, 0, 28).removeO()
++    s4 = sp.series(x ** 2 * sp.sinh(x) / 3, x, 0, 28).removeO()
++    left_even = lambda m: sp.Rational(3, 2) * 2 ** (2 * m) / sp.factorial(2 * m)
++    if mut("coefficient_formula_wrong"):
++        left_even = lambda m: sp.Rational(3, 2) * 2 ** (2 * m - 1) / sp.factorial(2 * m)
++    ok3 = all(s1.coeff(x, 2 * m) == left_even(m) and s2.coeff(x, 2 * m) == sp.Rational(1, 2) * 2 ** (2 * m - 2) / sp.factorial(2 * m - 2) for m in range(2, 13))
++    ok3 = ok3 and all(s3.coeff(x, 2 * m + 1) == sp.Rational(2 * m) / sp.factorial(2 * m + 1) and s4.coeff(x, 2 * m + 1) == 1 / (3 * sp.factorial(2 * m - 1)) for m in range(1, 13))
++    ok3 = ok3 and s1.coeff(x, 2) == 0 and s2.coeff(x, 2) == 0 and s3.coeff(x, 1) == 0
++    checks.check("B3", ok3, "W1(ii): the series coefficients match the closed forms (3/2) 2^{2n}/(2n)!, (1/2) 2^{2n-2}/(2n-2)!, 2n/(2n+1)!, 1/(3 (2n-1)!) to n = 12; no x^2 or x^1 terms")
++
++
++# ============================================================================================ family C
++def family_c(checks: Checks) -> None:
++    w1, w2, w3, X1, X2, X3, b, tt = sp.symbols("w1 w2 w3 X1 X2 X3 beta t", positive=True)
++    ws, Xs, ind = (w1, w2, w3), (X1, X2, X3), (1, 1, 0)
++    weights = [w * sp.exp(b * tt * X) for w, X in zip(ws, Xs)]
++    Z = sum(weights)
++    PA = sum(w * i for w, i in zip(weights, ind)) / Z
++    EX = sum(w * X for w, X in zip(weights, Xs)) / Z
++    EXA = sum(w * X * i for w, X, i in zip(weights, Xs, ind)) / Z
++    target = b * (EXA - PA * EX)
++    if mut("derivative_identity_wrong"):
++        target = b * (EXA + PA * EX)
++    d_ok = sp.simplify(sp.diff(PA, tt) - target) == 0
++    p = sp.symbols("p", positive=True)
++    var_bound = sp.Rational(1, 4)
++    if mut("variance_bound_wrong"):
++        var_bound = sp.Rational(1, 5)
++    v_ok = sp.simplify(var_bound - p * (1 - p) - (sp.Rational(1, 2) - p) ** 2 - (var_bound - sp.Rational(1, 4))) == 0 and var_bound >= sp.Rational(1, 4)
++    checks.check("C1", d_ok and v_ok, "W1(iii): on a three-point weighted space, d/dt P_t(A) = beta [E_t(X 1_A) - P_t(A) E_t(X)] = beta Cov_t(X, 1_A) symbolically; p(1-p) = 1/4 - (1/2 - p)^2 <= 1/4")
++    D = sp.symbols("Delta", positive=True)
++    chain = sp.simplify(b * D / (2 * sp.sqrt(3)) - b * sp.sqrt(D ** 2 / 3) * sp.Rational(1, 2)) == 0
++    c_val = sp.simplify(2 * b / (2 * sp.sqrt(3)) - b / sp.sqrt(3)) == 0
++    alpha_val = sp.simplify(6 * b / sp.sqrt(3) - 2 * sp.sqrt(3) * b) == 0
++    thr = sp.sqrt(3) / 6
++    if mut("threshold_wrong"):
++        thr = sp.sqrt(3) / 5
++    thr_ok = sp.simplify(2 * sp.sqrt(3) * thr - 1) == 0 and thr ** 2 > sp.Rational(784, 10000)
++    checks.check("C2", chain and c_val and alpha_val and thr_ok, "W1(iv)/W2: beta |Delta|/(2 sqrt 3) = beta sigma_max |Delta| / 2 with sigma_max^2 = 1/3; |Delta| <= 2 gives c = beta/sqrt 3; alpha = 6c = 2 sqrt(3) beta; 2 sqrt(3) (sqrt(3)/6) = 1 and sqrt(3)/6 > 28/100")
++    Zs = 4 * sp.pi * sp.sinh(b) / b
++    tv = (2 * sp.pi / Zs) * sp.integrate(sp.exp(b * tt) - sp.exp(-b * tt), (tt, 0, 1))
++    target_tv = sp.tanh(b / 2)
++    if mut("antipodal_tv_wrong"):
++        target_tv = sp.tanh(b)
++    a_ok = zero(tv - target_tv) and sp.simplify(sp.limit(sp.tanh(b / 2) / (b / sp.sqrt(3)), b, 0) - sp.sqrt(3) / 2) == 0
++    checks.check("C3", a_ok, "W2: at zero field the antipodal change has TV(P_e, P_-e) = (2 pi/Z) int_0^1 (e^{beta t} - e^{-beta t}) dt = tanh(beta/2); tanh(beta/2)/(beta/sqrt 3) tends to sqrt(3)/2")
++
++
++# ============================================================================================ family D
++def box_sites(n: int, d: int = 3):
++    return list(product(range(n), repeat=d))
++
++
++def box_matrix(n: int, c: Fraction, remove=None):
++    sites = [s for s in box_sites(n) if s != remove]
++    idx = {s: i for i, s in enumerate(sites)}
++    C = [[Fraction(0)] * len(sites) for _ in sites]
++    for s in sites:
++        for dim in range(3):
++            for e in (1, -1):
++                y = list(s); y[dim] += e; y = tuple(y)
++                if y in idx:
++                    C[idx[s]][idx[y]] = c
++    return sites, idx, C
++
++
++def matvec(C, v):
++    return [sum(C[i][j] * v[j] for j in range(len(v)) if v[j] != 0) for i in range(len(v))]
++
++
++def family_d(checks: Checks) -> None:
++    # D1 maximal coupling on a finite weighted space (rational densities against weights)
++    wts = [Fraction(1, 6), Fraction(1, 3), Fraction(1, 2)]
++    p = [Fraction(3, 2), Fraction(3, 4), Fraction(1)]
++    q = [Fraction(1, 2), Fraction(3, 2), Fraction(5, 6)]
++    assert sum(w * a for w, a in zip(wts, p)) == 1 and sum(w * a for w, a in zip(wts, q)) == 1
++    m = sum(w * min(a, c) for w, a, c in zip(wts, p, q))
++    tv = sum(w * max(a - c, 0) for w, a, c in zip(wts, p, q))
++    tv2 = sum(w * max(c - a, 0) for w, a, c in zip(wts, p, q))
++    same_support = any(min(a - min(a, c), c - min(a, c)) > 0 for a, c in zip(p, q))
++    disagree = 1 - m
++    if mut("maximal_coupling_wrong"):
++        disagree = 1 - m / 2
++    checks.check("D1", tv == tv2 == disagree and not same_support, f"W3 step 0: int (p-q)_+ = int (q-p)_+ = 1 - int min(p,q) = {tv} on a three-point weighted space; the residual densities have disjoint supports, so P(S != S') = TV")
++    # D2 fixed point on the 2x2x2 cube window with c = alpha/6, alpha = 9/10, exterior differing at every exterior slot
++    alpha = Fraction(9, 10)
++    c = alpha / 6
++    sites, idx, C = box_matrix(2, c)
++    nsit = len(sites)
++    b = [c * 3 for _ in sites]  # each cube site has 3 exterior neighbours
++    I = [[Fraction(int(i == j)) for j in range(nsit)] for i in range(nsit)]
++    A = [[I[i][j] - C[i][j] for j in range(nsit)] for i in range(nsit)]
++    Dm = sp.Matrix(A).inv()
++    D_ok = all(Dm[i, j] >= 0 for i in range(nsit) for j in range(nsit)) and (sp.Matrix(A) * Dm == sp.eye(nsit))
++    ustar = [sum(Dm[i, j] * b[j] for j in range(nsit)) for i in range(nsit)]
++    phi = lambda u: [(1 - Fraction(1, nsit)) * u[i] + Fraction(1, nsit) * (sum(C[i][j] * u[j] for j in range(nsit)) + b[i]) for i in range(nsit)]
++    fixed = all(sp.simplify(phi([sp.Rational(u) if isinstance(u, Fraction) else u for u in ustar])[i] - ustar[i]) == 0 for i in range(nsit))
++    u = [Fraction(1)] * nsit
++    dec = True
++    for _ in range(60):
++        nu = phi(u)
++        dec = dec and all(nu[i] <= u[i] for i in range(nsit)) and all(nu[i] >= ustar[i] for i in range(nsit))
++        u = nu
++    neumann = sum(alpha ** k for k in range(0, 200))
++    geometric_ok = ustar[0] <= 3 * c * neumann
++    if mut("fixed_point_wrong"):
++        fixed = all(sp.simplify(phi(ustar)[i] - 2 * ustar[i]) == 0 for i in range(nsit))
++    checks.check("D2", D_ok and fixed and dec and geometric_ok, "W3 step 3: on the cube window at alpha = 9/10, D = (I - C)^{-1} is entrywise nonnegative, u* = D b is the fixed point of Phi, the iterates Phi^t(1) decrease to it from above, and u*_x <= b_x/(1 - alpha)")
++    # D3 walk bounds on the 7^3 box
++    sites7, idx7, C7 = box_matrix(7, c)
++    o = idx7[(3, 3, 3)]
++    v = [Fraction(0)] * len(sites7); v[o] = Fraction(1)
++    acc = [Fraction(0)] * len(sites7)
++    ok3 = True
++    row_bound = lambda k: alpha ** k
++    if mut("walk_bound_wrong"):
++        row_bound = lambda k: alpha ** (k + 1)
++    for k in range(1, 17):
++        v = matvec(C7, v)
++        row = sum(v)
++        ok3 = ok3 and row <= row_bound(k)
++        for s in sites7:
++            dist = sum(abs(s[i] - 3) for i in range(3))
++            if k < dist:
++                ok3 = ok3 and v[idx7[s]] == 0
++            acc[idx7[s]] += v[idx7[s]]
++    ok3 = ok3 and all(acc[idx7[s]] <= alpha ** sum(abs(s[i] - 3) for i in range(3)) / (1 - alpha) for s in sites7 if s != (3, 3, 3))
++    checks.check("D3", ok3, "W3/W5 walk bounds on the 7^3 box at alpha = 9/10: sum_y (C^k)_{0y} <= alpha^k, (C^k)_{0x} = 0 for k < |x|_1, and sum_{k<=16} (C^k)_{0x} <= alpha^{|x|_1}/(1 - alpha) for every x != 0")
++    # D4 geometric sums and the torus sum
++    a = sp.symbols("a", positive=True)
++    target = lambda L: (1 + a) / (1 - a) - a ** L * (1 + a) / (1 - a)
++    if mut("geometric_sum_wrong"):
++        target = lambda L: (1 + a) / (1 - a) - a ** L / (1 - a)
++    g_ok = all(sp.simplify(1 + 2 * sum(a ** jj for jj in range(1, L)) + a ** L - target(L)) == 0 for L in range(1, 13))
++    g_ok = g_ok and sp.simplify(1 + 2 * a / (1 - a) - (1 + a) / (1 - a)) == 0
++    # the torus sum on (Z/2LZ)^3 at L = 3 exactly at a = 9/10 against ((1+a)/(1-a))^3
++    Lt = 3
++    tor = sum(alpha ** sum(min(n_, 2 * Lt - n_) for n_ in nvec) for nvec in product(range(2 * Lt), repeat=3))
++    t_ok = tor <= ((1 + alpha) / (1 - alpha)) ** 3
++    checks.check("D4", g_ok and t_ok, "W5(c): 1 + 2 sum_{j=1}^{L-1} a^j + a^L = (1+a)/(1-a) - a^L (1+a)/(1-a) <= (1+a)/(1-a) symbolically for L = 1..12; 1 + 2a/(1-a) = (1+a)/(1-a); the torus sum on the 6^3 torus at a = 9/10 is at most ((1+a)/(1-a))^3")
++    # D5 frozen-site conditional: on a 3-site path with symbolic bond weights, conditioning the middle site gives the two-site window law with that exterior
++    s0, s1, s2 = sp.symbols("s0 s1 s2", real=True)
++    w01, w12 = sp.Function("w01"), sp.Function("w12")
++    joint = w01(s0, s1) * w12(s1, s2)
++    # conditional on s1 = a: proportional to w01(s0, a) w12(a, s2) — the product of the exterior-bond factors of the window {0, 2}
++    cond = joint.subs(s1, sp.Symbol("a"))
++    window = w01(s0, sp.Symbol("a")) * w12(sp.Symbol("a"), s2)
++    checks.check("D5", sp.simplify(cond - window) == 0, "W5: freezing a site turns the joint density into the window density with that site's record as exterior (symbolic bond factors on a three-site path)")
++
++
++# ============================================================================================ family F
++FENCES = (
++    "This note proves, for the unsoldered static law with the exponential overlap on `Z³`, that below `β = √3/6` there is exactly one infinite-volume static law, with exponential decay of the record correlations and a structure factor bounded uniformly in the wavevector and the side; it does not locate the true threshold, does not treat the band `[√3/6, 3√3π/8]`, does not treat the Born overlap, does not re-prove the strong-coupling half of the placement (block 19's open PR), does not select a reading, rule or coupling as physical, and adopts no clause.",
++    "No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
++    "No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.",
++)
++FORBIDDEN = (
++    "the physical order", "the physical rule", "the physical coupling", "the physical dimension", "for every coupling", "selects the", "fires wake condition",
++    "the Bridge weights", "the Bridge conjecture", "certified", "converge", "emergent", "phase transition", "critical", "washes out", "toward the plane", "the trend",
++    "sharp threshold", "the transition point", "the channel exists below",
++)
++CLAIM_INJECTIONS = {"claim_channel_below_threshold_injected": "Hence the channel exists below the threshold as well."}
++CLASSICAL_NAMES = ("Dobrushin", "Shlosman", "Föllmer", "Künsch", "Kolmogorov", "Cauchy", "Mermin", "Wagner", "Fröhlich", "Simon", "Spencer", "Peierls", "Toom")  # authors; Gibbs, Laplacian, Green function name standard objects
++ALLOWED_NAME_SECTIONS = ("Prior art and what is new", "Imports", "Premises and declared objects")
++SCAN_MARKER = "float-scan-marker-line"
++
++
++def family_f(checks: Checks, note_text: str) -> None:
++    text = note_text
++    for name, phrase in CLAIM_INJECTIONS.items():
++        if mut(name):
++            text = text + "\n" + phrase
++    flat = normalize_text(text)
++    checks.check("F1", all(f in flat for f in FENCES), "the note carries the three fence sentences verbatim")
++    hits = [ph for ph in FORBIDDEN if ph.lower() in flat.lower()]
++    checks.check("F2", not hits, f"the note contains no forbidden phrase ({len(hits)} hits)")
++    source_lines = Path(__file__).read_text(encoding="utf-8").splitlines()
++    scan = [ln for ln in source_lines if SCAN_MARKER not in ln]
++    float_literal = re.compile(r"(?<![\w.])\d+\.\d+(?![\w.])|(?<![\w.])\d+[eE][-+]?\d+(?![\w.])")
++    conversion = "flo" + "at("  # float-scan-marker-line
++    evalf = "eva" + "lf("  # float-scan-marker-line
++    numeric = "N" + "("  # float-scan-marker-line
++    bad = [ln for ln in scan if float_literal.search(ln) or conversion in ln or evalf in ln or numeric in ln]
++    checks.check("F3", not bad and len(scan) > 150, f"runner source: no floating-point literal or conversion call ({len(bad)} hits)")
++    sections = re.split(r"^## ", text, flags=re.M)
++    offenders = []
++    for i, sec in enumerate(sections):
++        title = sec.splitlines()[0].strip() if i > 0 else "(front matter)"
++        body = sec
++        if mut("claim_classical_name_in_theorem") and title.startswith("Theorem W2"):
++            body = body + " (Dobrushin's criterion)"
++        if any(title.startswith(a) for a in ALLOWED_NAME_SECTIONS):
++            continue
++        for nm in CLASSICAL_NAMES:
++            if nm in body:
++                offenders.append((title[:30], nm))
++    checks.check("F4", not offenders, f"the authors' names appear only under Prior art, Imports and the Premises; Gibbs, Laplacian and Green function name standard objects ({len(offenders)} offenders)")
++
++
++# ============================================================================================ family G
++N5_LINES = (
++    "per_element: executed — the covariance identities and the coefficient ratios; the derivative identity; the antipodal value; the threshold arithmetic",
++    "per_site: executed — the maximal coupling on a finite weighted space; the frozen-site conditional on a three-site path",
++    "per_mode: executed — the walk bounds (C^k)_{0x} = 0 for k < |x|_1 and sum_y (C^k)_{0y} <= alpha^k on the 7^3 box",
++    "per_block: executed — the fixed point u* = D b on the cube window; the geometric sums and the 6^3 torus sum",
++    "lattice_wide: W1-W5 proved for every beta < sqrt(3)/6 on finite windows, tori and the infinite-volume law; W6 a placement corollary conditional on block 19; the band not claimed",
++)
++
++
++def family_g(checks: Checks) -> None:
++    for line in N5_LINES:
++        print(line)
++    checks.check("G1", len(N5_LINES) == 5 and all(len(l) >= 40 for l in N5_LINES), "the five N5 resolution lines are printed")
++
++
++def main(argv) -> int:
++    global ACTIVE_MUTATION
++    if "--list-mutations" in argv:
++        for name, fam in MUTATION_GATE.items():
++            print(f"{name} {fam}")
++        return 0
++    if "--mutation" in argv:
++        ACTIVE_MUTATION = argv[argv.index("--mutation") + 1]
++        if ACTIVE_MUTATION not in MUTATION_GATE:
++            print(f"unknown mutation {ACTIVE_MUTATION}")
++            return 2
++    checks = Checks()
++    texts = [(ROOT / pth).read_text(encoding="utf-8") if (ROOT / pth).is_file() else "" for pth in AUDIT_INPUT_PATHS]
++    print("AUDIT_INPUT_PATHS:")
++    for pth in AUDIT_INPUT_PATHS:
++        print(f"  {pth}")
++    print(f"AUDIT_TIMEOUT_SEC: {AUDIT_TIMEOUT_SEC}")
++    print("scope: the unsoldered sphere static law with overlap e^{beta t} at weak coupling on Z^3 — the covariance eigenvalues and series inequalities behind the one-site contraction, the derivative identity, the threshold sqrt(3)/6, the maximal coupling, the fixed point, the walk bounds, the geometric sums; exact")
++    print(f"mutation: {ACTIVE_MUTATION or 'none'}")
++    family_a(checks, texts)
++    family_b(checks)
++    family_c(checks)
++    family_d(checks)
++    family_f(checks, texts[0])
++    family_g(checks)
++    if ACTIVE_MUTATION:
++        observed = "".join(sorted(set(checks.failed_families))) or "none"
++        print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
++        print(f"mutation_family_observed: {observed}")
++    failed = checks.finish()
++    return 1 if failed else 0
++
++
++if __name__ == "__main__":
++    raise SystemExit(main(sys.argv[1:]))

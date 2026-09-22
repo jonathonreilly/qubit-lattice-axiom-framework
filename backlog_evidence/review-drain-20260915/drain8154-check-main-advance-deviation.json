@@ -1,0 +1,8 @@
+{
+  "old_check": "drain8154-final-preflight.json",
+  "failure": "input changed during preflight: docs/audit/scripts/build_citation_graph.py",
+  "cause": "Root advanced disjoint current-main tooling while old-base final preflight was active; checker failed freshness. No old-base result reused.",
+  "scientific_source_and_outputs": "all102 byte-identical; no scientific execution repeated",
+  "identity_adapter_attempt": "An initial overly strict equality assertion compared optional commit/deleted_paths fields absent in reviewer source; failed before final record written. Missing-record preflight-v2 preserved. Corrected adapter compares exact base/tree and complete path/hash mappings.",
+  "recovery": "immutable original-reviewer v2 confirmation and current-base bound unit record; final mechanical preflight-v3 follows."
+}

@@ -1,0 +1,31 @@
+import pathlib,json,hashlib,subprocess,sys,gzip,re
+r=pathlib.Path('/private/tmp/review-drain-20260915');w=r/'drain-author-slot';sha=lambda b:hashlib.sha256(b).hexdigest();load=lambda n:json.loads((r/n).read_text());cold=load('drain8154-preexecution-review.json');f=load('drain8154-author-final-freeze.json')
+def git(*a):return subprocess.check_output(['git','-C',str(w),*a])
+assert git('write-tree').decode().strip()==f['tree']=='821947de618ce10c666fb0c1641e4dc522c5bc41';assert not git('diff','--name-only')
+for x in cold['source']['paths']:assert sha((w/x['path']).read_bytes())==x['sha256']and git('show',':'+x['path'])==(w/x['path']).read_bytes()
+for rows in cold['inputs'].values():
+ for x in rows:assert sha((w/x['path']).read_bytes())==x['sha256']
+for p,h in f['source_paths'].items():assert sha((w/p).read_bytes())==h and git('show',':'+p)==(w/p).read_bytes()
+for p,h in f['inputs'].items():assert sha((w/p).read_bytes())==h
+sys.path.insert(0,str(w/'scripts'));import runner_cache as c
+caches=[];executions=[];dispositions=cold['original_dispositions']
+for pr,cap in [(8154,180),(8155,300),(8156,300),(8157,180)]:
+ e=load(f'drain8154-execution-{pr}.json');runner=w/e['runner'];cache=c.cache_path_for(runner);rel=cache.relative_to(w).as_posix();assert c.cache_status(runner)=='fresh';b=cache.read_text();assert e['stdout'].strip()==b.split('----- stdout -----\n',1)[1].split('----- stderr -----',1)[0].strip();assert e['exit_code']==0 and e['status']=='ok' and not e['stderr'];assert len(re.findall(r'^PASS: ',e['stdout'],re.M))==20 and e['stdout'].endswith('TOTAL: PASS=20 FAIL=0\n');watch=e['whole_tree_watchdog'];assert watch['limit_bytes']==1024**3 and not watch['violations']and watch['samples']>0 and watch['peak_tree_rss_bytes']<watch['limit_bytes'];assert e['timeout_sec']==cap and e['elapsed_sec']<cap;assert e['capture_script_sha256']==sha((r/'drain8154-capture-v2.py').read_bytes())
+ caches.append(dict(path=rel,sha256=sha(cache.read_bytes())))
+ for x in dispositions[str(pr)]:
+  raw=(w/x['final_path']).read_bytes();assert sha(raw)==x['final_sha256']and sha(gzip.decompress(raw))==x['original_sha256']
+  if x['original_path'].startswith('logs/'):
+   x['canonical_replacement']=dict(path=rel,sha256=sha(cache.read_bytes()),scope='Fresh20/0 execution of narrowed reviewedsource; original historicalcache remains byte-exact archived.')
+ executions.append(dict(pr=pr,checks_pass=20,checks_fail=0,elapsed_seconds=e['elapsed_sec'],timeout_seconds=cap,watchdog=watch,cache=caches[-1],stdout_sha256=sha(e['stdout'].encode()),receipt_sha256=sha((r/f'drain8154-execution-{pr}.json').read_bytes())))
+changes=git('diff','--name-status',cold['source']['tree'],f['tree']).decode().splitlines();assert set(changes)=={'A\t'+x['path']for x in caches}
+paths=sorted(cold['source']['paths']+caches,key=lambda x:x['path']);assert len(paths)==102 and {x['path']:x['sha256']for x in paths}==f['source_paths']
+# Compare unchanged mathematical output lines with original caches; metadata/fences/resolution are deliberately narrowed.
+comparisons=[]
+for ex in executions:
+ pr=str(ex['pr']);e=load(f'drain8154-execution-{pr}.json');old=next(x for x in dispositions[pr]if x['original_path'].startswith('logs/'));txt=gzip.decompress((w/old['final_path']).read_bytes()).decode();lines=lambda s:[l for l in s.splitlines()if re.match(r'^PASS: [BCDE][0-9]',l)]
+ assert lines(txt)==lines(e['stdout']);comparisons.append(dict(pr=pr,unchanged_mathematical_pass_lines=len(lines(txt)),metadata_boundary='Authority/identity/fence/resolution output changed with reviewed source scope. No numeric-tolerance comparison or primary rerun needed.'))
+refs=[]
+for name in ['drain8154-preexecution-review.json','drain8154-author-unit-draft-v1.json','drain8154-author-source-handoff-v1.json','drain8154-author-cheap-v1.json','drain8154-author-final-freeze.json','drain8154-capture.py','drain8154-capture-v2.py','drain8154-capture-adapter-failure.json','drain8154-final-confirm.py']+[f'drain8154-execution-{pr}.json'for pr in [8154,8155,8156,8157]]:
+ refs.append(dict(path=str(r/name),sha256=sha((r/name).read_bytes())))
+out=dict(status='FINAL SOURCE PASS — BOUNDED MATHEMATICAL SALVAGE; NO AUDIT VERDICT',reviewer='/root/review_8011',unit=[8154,8155,8156,8157],source=dict(base=f['base'],tree=f['tree'],paths=paths),inputs=cold['inputs'],actual_api=cold['actual_api'],original_dispositions=dispositions,affected_confirmation='Only four freshcanonical caches added after cold source. All98 coldsource and actual runtime/helper/parent/context/tooling inputs byteidentical; staged andworking bytes match. All88 original archived versions independently decoded andhashverified. Actual20/0 stdout perprimary matches freshcache. No primary/control/preflight rerun by reviewer.',executions=executions,original_output_comparison=comparisons,adapter_attempt_boundary=load('drain8154-capture-adapter-failure.json'),scope=cold['correction_confirmation'],negative_scope=cold['negative_scope'],current_main_preservation=cold['current_main_preservation'],external_methods=cold['external_methods'],independent_controls_reused=cold['original_session_reuse'],branch_disposition='Preserve all four original branches and88archivedfullversions for deferredphysical/kernel/dimension/alternative-proof exclusion remainder. No broadnegativecertificate granted.',references=refs,next='Root owns sole final schema2 --cache and integration. No primary rerun needed.')
+p=r/'drain8154-final-review.json';assert not p.exists();p.write_text(json.dumps(out,indent=2)+'\n');(r/'drain8154-final-review.md').write_text('# PR8154/8155/8156/8157 final source review\n\nPASS for the corrected supplied-model magnetization, weak-coupling comparison, return-sum and planar correlation bounds. Unsupported physical and broad negative claims remain deferred; preserve all four original branches.\n\nEach primary passed20/0 once under its180/300-second cap and actual1GiB sampled process-tree guard. All102finalpaths,88originalversions andinputs are bound. Onlyfourfreshcaches changed aftercoldreview; mathematical output lines match the originals. The prior adapter failed before any science and remains preserved. No reviewer reruns.\n');print(sha(p.read_bytes()));print([(x['pr'],x['elapsed_seconds'],x['watchdog']['peak_tree_rss_bytes'])for x in executions])

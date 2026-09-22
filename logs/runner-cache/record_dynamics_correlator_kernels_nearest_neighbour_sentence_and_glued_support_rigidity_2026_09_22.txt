@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/record_dynamics_correlator_kernels_nearest_neighbour_sentence_and_glued_support_rigidity_2026_09_22.py
+runner_sha256: ddea90335e042e884d93225be33772c76fc84a0f9a046f6281305d9026236a17
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.19
+status: ok
+----- stdout -----
+== 1. Short-range law: exact geometric record correlator ==
+[PASS] mu_NN: normalised, flip-invariant, reflection-covariant; every one-point mean is exactly 0
+[PASS] connected correlator is exactly geometric: c(i, j) = 3^-(j-i) for every pair of the path :: an order-blind covariant formation law whose record correlator decays geometrically, tick-free
+[PASS] the chain rule of mu_NN is order-blind: two explicit formation orders reproduce mu_NN exactly
+
+== 2. The lattice-Laplacian kernel decays differently, exactly ==
+[PASS] Dirichlet Green function of the path Laplacian: exact closed form G(i, j) = (i+1)(8-j)/9 for i <= j
+[PASS] the kernel decays linearly along the row: G(0, d) = (8-d)/9, with non-constant successive ratios
+[PASS] no scaling matches the kernels: alpha fixed at distance 1 already fails at distance 2, exactly :: geometric against linear decay: the record correlator of mu_NN is not a Laplacian Green kernel
+
+== 3. A supplied long-range law, excluded by the nearest-neighbour sentence ==
+[PASS] mu_LR: normalised, flip-invariant, reflection-covariant; every one-point mean is exactly 0
+[PASS] mu_LR record correlator is distance-blind: one exact value on every pair, far above the geometric tail :: c_LR = 835/867 on every pair against c_NN(0,7) = 1/2187
+[PASS] the chain rule of mu_LR is order-blind: two explicit formation orders reproduce mu_LR exactly :: order-blind, yet not an admissible rule: see the two reading checks below
+[PASS] static reading: mu_NN conditionals depend on neighbours alone (all 256 configurations, 8 sites)
+[PASS] static reading has teeth at distance two: one supplied next-nearest bond (0,2) is excluded
+[PASS] static reading: mu_LR is excluded, its site-0 conditional moves when the far site 7 flips :: 128/129 against 32/33
+[PASS] formation reading: mu_NN's chain rule conditions on a formed non-neighbour (site 2 given site 0) :: 5/9 against 4/9 with site 1 unformed: as a formation rule it is outside the sentence
+[PASS] one supplied long bond reaches exactly where it acts: c(0,7) jumps while c(0,4) barely moves :: c_END(0,7) = 1095/3281, c_END(0,4) = 81/3281
+
+== 4. Glued-support rigidity: exact long-range order with blind two-points ==
+[PASS] uniform Gauss-set law: every one-point and every two-point parity expectation is exactly 0
+[PASS] every check parity is exactly 1, and check sums give exact 4-point order across the window :: multi-point record observables locked at 1 at full window span, with no tick and no dynamics
+[PASS] a non-dual triple has parity exactly 0: the rigidity sits precisely on the dual code
+[PASS] free-alphabet contrast: under fair coins every listed parity is exactly 0 (empty-set parity 1 guards the normaliser) :: the long-range order is a support property: it matches neither the geometric nor the Laplacian kernel
+
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

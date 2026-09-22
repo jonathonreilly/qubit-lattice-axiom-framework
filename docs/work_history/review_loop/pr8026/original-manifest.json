@@ -1,0 +1,698 @@
+[
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/ARTIFACT_PLAN.md",
+    "mode": "100644",
+    "blob": "c89e4ba6d22368cfd1ed89cccdf8d232a2f38c58",
+    "sha256": "e1c45504879c22422e9edc38caeb1d9dd788060af80bbab3195f6b8def173e36",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/e1c45504879c22422e9edc38caeb1d9dd788060af80bbab3195f6b8def173e36.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+    "mode": "100644",
+    "blob": "fa616e21e58f85f3b0e3c9c9f88616ce343b325a",
+    "sha256": "430cb97ded8e87448ac8d756ef563aae7f7588ee7d05fbdb1342d5757a2ff281",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/430cb97ded8e87448ac8d756ef563aae7f7588ee7d05fbdb1342d5757a2ff281.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/CLAIM_STATUS_CERTIFICATE.md",
+    "mode": "100644",
+    "blob": "e3b442e3f3f0c44862e8b384e02e044e9eaf2392",
+    "sha256": "7e049c36268b21b9748dc6db055b46635c427bed754435fa7e41a64e50788f0d",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/7e049c36268b21b9748dc6db055b46635c427bed754435fa7e41a64e50788f0d.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json",
+    "mode": "100644",
+    "blob": "d0cbb7eb413d0145cd8c70fafa6589fbc9fdd230",
+    "sha256": "ee804aab334fbf2c8ab4ba757480cb0f1ef550ad51ca3d4f5dc103b2971fa1a2",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/ee804aab334fbf2c8ab4ba757480cb0f1ef550ad51ca3d4f5dc103b2971fa1a2.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/FINAL_MAIN66_LOCK_RELEASE.json",
+    "mode": "100644",
+    "blob": "c19f3721a340a9569778a4ae4fdb585b16281289",
+    "sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/FINAL_MAIN66_READINESS.json",
+    "mode": "100644",
+    "blob": "7762de0a3186744479e30ebf47a115116cf1e495",
+    "sha256": "6a83feff4913c17a0c075571d718e2334e729577f4e257ad322bce315d7d3d03",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/6a83feff4913c17a0c075571d718e2334e729577f4e257ad322bce315d7d3d03.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/FINAL_MAIN66_STRICT.log",
+    "mode": "100644",
+    "blob": "0e21f955dde35e543ae86db76866c27bbf4d2883",
+    "sha256": "734bb719c7666447341f906022fb4270c897e386df79a3d8472f97d047763e01",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/734bb719c7666447341f906022fb4270c897e386df79a3d8472f97d047763e01.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/FINAL_MAIN66_SYNC_RECEIPT.json",
+    "mode": "100644",
+    "blob": "5f7bfc48374da8f797e4790007caaff60a53a426",
+    "sha256": "0d966cc8e9751d48e86b90135ffed5f9c65221b07583f3c8770125501ea03b69",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/0d966cc8e9751d48e86b90135ffed5f9c65221b07583f3c8770125501ea03b69.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/FINAL_MAIN66_VALIDATION.md",
+    "mode": "100644",
+    "blob": "342854c6db6b89b28ce3601a3c82c210d6453051",
+    "sha256": "309c13c4606e2d49b9d6237589d75ef362272addd0359c21b5fa80952f7a63f9",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/309c13c4606e2d49b9d6237589d75ef362272addd0359c21b5fa80952f7a63f9.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/FINAL_VALIDATION.md",
+    "mode": "100644",
+    "blob": "8f41d677e83f6807edc0b080ecd77abeb018814c",
+    "sha256": "c347596bba0b3a6e99bb6c09e59a7124176026164b941a44e8c73334a038ffc3",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/c347596bba0b3a6e99bb6c09e59a7124176026164b941a44e8c73334a038ffc3.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/FINAL_VOCAB_LINT.txt",
+    "mode": "100644",
+    "blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+    "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/FROZEN_PORT_RECEIPT.json",
+    "mode": "100644",
+    "blob": "9dd4e0ccbf08eddde72b4487aa4b564a97230058",
+    "sha256": "e1294c7f46e861dd5b96aa6d5ffa9e2912d45d624e0645b0d46be602e98feba2",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/e1294c7f46e861dd5b96aa6d5ffa9e2912d45d624e0645b0d46be602e98feba2.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/FULL_PIPELINE.log",
+    "mode": "100644",
+    "blob": "de169c0330d395618651a76b1737a100ddf3396c",
+    "sha256": "2a9a7cc7c7c84586a8566bc2d6fc0d8128c083fec9a845496f4d0e4f65b55f71",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/2a9a7cc7c7c84586a8566bc2d6fc0d8128c083fec9a845496f4d0e4f65b55f71.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/GOAL.md",
+    "mode": "100644",
+    "blob": "33691965a085b44f471c04a243c447e030788c37",
+    "sha256": "2a0ad0e50643f2bd14f85302ed259547ceb966a6a1755bccbe8ba20e5c0a70e9",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/2a0ad0e50643f2bd14f85302ed259547ceb966a6a1755bccbe8ba20e5c0a70e9.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/HANDOFF.md",
+    "mode": "100644",
+    "blob": "92e3622a4932b6b735226d013cade97d17286d1a",
+    "sha256": "3a3a693cfd4dd2f8f145e0cc8db5ff613f8ec7f14ad368448b87e3bf582582ec",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/3a3a693cfd4dd2f8f145e0cc8db5ff613f8ec7f14ad368448b87e3bf582582ec.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/LITERATURE_BRIDGES.md",
+    "mode": "100644",
+    "blob": "ae67391c16f11b404eff830976232bb63c870d8f",
+    "sha256": "a602d6acc0553d384bdf1569ae8aa2695524238e1325eea70ffd467f2b909bba",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/a602d6acc0553d384bdf1569ae8aa2695524238e1325eea70ffd467f2b909bba.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/LOCK_RELEASE.json",
+    "mode": "100644",
+    "blob": "c19f3721a340a9569778a4ae4fdb585b16281289",
+    "sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/NO_GO_DISCIPLINE_CHECKLIST.md",
+    "mode": "100644",
+    "blob": "470938b9b5b8c3412c2432865348761cd6e7baed",
+    "sha256": "afa4332e42b092c6b275f5ccb2c30e67aa64b3b372e79e5e787d064a0c913af9",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/afa4332e42b092c6b275f5ccb2c30e67aa64b3b372e79e5e787d064a0c913af9.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/NO_GO_LEDGER.md",
+    "mode": "100644",
+    "blob": "c03f3b5333586d5e7dd5d3d8221a9b6329153209",
+    "sha256": "a7c6e574502271eddd950e30830fa503025c78629cd1d69d963b05e8b2224aac",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/a7c6e574502271eddd950e30830fa503025c78629cd1d69d963b05e8b2224aac.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/OPPORTUNITY_QUEUE.md",
+    "mode": "100644",
+    "blob": "29954413498a2d0610b17a3b164fb55beeb87e3f",
+    "sha256": "f129ced47bba719d8fc42a3fc2334ed48464abeb767d20d67c6ad8a92a883c3e",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/f129ced47bba719d8fc42a3fc2334ed48464abeb767d20d67c6ad8a92a883c3e.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/PACK_INDEX.json",
+    "mode": "100644",
+    "blob": "72baa3aa51332d8dfde349157ddb98b462cbb54e",
+    "sha256": "022047c3b7758ff9ac43db30f9de304850347838015da6ed07908213fefe223e",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/022047c3b7758ff9ac43db30f9de304850347838015da6ed07908213fefe223e.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/PARENT_VALIDATION_METADATA_CATCHUP.md",
+    "mode": "100644",
+    "blob": "1d4a1483da79b73a44007c81dd500770e50312ee",
+    "sha256": "8d626e3c776c76f22444cae61fda2de539831e52344a8dbca48631f72145aea4",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/8d626e3c776c76f22444cae61fda2de539831e52344a8dbca48631f72145aea4.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/PORT_RECEIPT.json",
+    "mode": "100644",
+    "blob": "26f7d5813de3ce4f98e430c7753f7614462dfaec",
+    "sha256": "d0b57620c57ed913e231e9e38f2019501d0a7a437009e65228ba3f8f6175181d",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/d0b57620c57ed913e231e9e38f2019501d0a7a437009e65228ba3f8f6175181d.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/PROOF_REVIEW.md",
+    "mode": "100644",
+    "blob": "54a29d041b71ed41410ae5bbc5e1a1534d5d940b",
+    "sha256": "f4174fcfc95abc45eea7d53e6b553c2d051ca2e1bec96700625b03491c3cfa84",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/f4174fcfc95abc45eea7d53e6b553c2d051ca2e1bec96700625b03491c3cfa84.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/PR_BACKLOG.md",
+    "mode": "100644",
+    "blob": "72003f92f95a9623b26f95277b044e0bd5fcb275",
+    "sha256": "e2f8dc1c55366600ecc1fac15375aa1206ced9ef1341a123e4b5d9a0f8e6a007",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/e2f8dc1c55366600ecc1fac15375aa1206ced9ef1341a123e4b5d9a0f8e6a007.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/PR_BODY.md",
+    "mode": "100644",
+    "blob": "002ca414427092bb91093a67040732d4d90f2b03",
+    "sha256": "c82fe034e1e888402d9d129d67ffd8bd792a702155e0a056b08a95105e0632d8",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/c82fe034e1e888402d9d129d67ffd8bd792a702155e0a056b08a95105e0632d8.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/PUBLICATION_RECEIPT.json",
+    "mode": "100644",
+    "blob": "eb73e81a9eb60b004c444c170be9a18985063c17",
+    "sha256": "ad44a7f9c09acbfa67389d9966e10ada2d04544dac5d7c2cafae1416d6a6195b",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/ad44a7f9c09acbfa67389d9966e10ada2d04544dac5d7c2cafae1416d6a6195b.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+    "mode": "100644",
+    "blob": "7d6e2bfb030325d59d5c40aec06168e67ef9bcb0",
+    "sha256": "c91244209d93fcd90dabd030b1a13160147023ac7d85abb23732eb6fb3dc698e",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/c91244209d93fcd90dabd030b1a13160147023ac7d85abb23732eb6fb3dc698e.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/REVIEW_HISTORY.md",
+    "mode": "100644",
+    "blob": "b46d5287362b9ec23d0a48027651179daa96cad7",
+    "sha256": "8192e1093cca8ada6dab7ad0b0965ddd8893773dd9a78143ef130756303653cf",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/8192e1093cca8ada6dab7ad0b0965ddd8893773dd9a78143ef130756303653cf.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/ROOT_CANONICAL_PORT_REVIEW.md",
+    "mode": "100644",
+    "blob": "26901ed338135ebc63f8a5460b359f6806ab6d2c",
+    "sha256": "c767db6fb56d572eea8d228242cce084535b6df956dac254e4305928f5cae753",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/c767db6fb56d572eea8d228242cce084535b6df956dac254e4305928f5cae753.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/ROUTE_PORTFOLIO.md",
+    "mode": "100644",
+    "blob": "1628be0a7356bb020629692ef5fa58ec60b8ddc5",
+    "sha256": "f499d63dbbc83bc45711b29d6cde40e649473c07094238d621410b941ad451a2",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/f499d63dbbc83bc45711b29d6cde40e649473c07094238d621410b941ad451a2.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/SCOPED_VALIDATION.md",
+    "mode": "100644",
+    "blob": "810842dde96eb2b3c8a5cad4870bf8799ea71a46",
+    "sha256": "c77bf86c1a91eecdf9c0273ad1be822833ee4e5b30b36ea268e97813128ef8af",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/c77bf86c1a91eecdf9c0273ad1be822833ee4e5b30b36ea268e97813128ef8af.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/STAGING_VALIDATION.json",
+    "mode": "100644",
+    "blob": "4aa52932c998df5b144d8b5ffedb9a90e6630fe2",
+    "sha256": "66199a6f29a96b66bc0596b33c7caca643b6545001c9008e3a039837284377d7",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/66199a6f29a96b66bc0596b33c7caca643b6545001c9008e3a039837284377d7.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/STATE.yaml",
+    "mode": "100644",
+    "blob": "2b6e96395ccbbaee40cd32a5715600ca88c5c1fe",
+    "sha256": "e871d376ad1c243699652b85db0a0953b97f9f4efcacc86447dc0f5e8545d8b0",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/e871d376ad1c243699652b85db0a0953b97f9f4efcacc86447dc0f5e8545d8b0.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/STRICT_LINT.log",
+    "mode": "100644",
+    "blob": "5a6c52b2d1e84940a9d4f043f09663a0781cf435",
+    "sha256": "935e02d95fb1fcbee0912b2e321b8d9b0a7d0843605c79810adb84f44b2da7d5",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/935e02d95fb1fcbee0912b2e321b8d9b0a7d0843605c79810adb84f44b2da7d5.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/TRACE_GATE.md",
+    "mode": "100644",
+    "blob": "ccd31b719d8f2f5bb2c774be8bc1d42e8920145f",
+    "sha256": "b964d1e782f43b0a77c3c17c0decda06784bfb1b7858ed6318fc80da14dd7fb5",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/b964d1e782f43b0a77c3c17c0decda06784bfb1b7858ed6318fc80da14dd7fb5.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/UPSTREAM_SYNC_PIPELINE.log",
+    "mode": "100644",
+    "blob": "7316aef5f35b490e597b043a6d9d8b3ba47113ca",
+    "sha256": "6074b45e3893e7812f81553dab24a16d726df91f90fdb2f423b2133a1bfd4da2",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/6074b45e3893e7812f81553dab24a16d726df91f90fdb2f423b2133a1bfd4da2.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/UPSTREAM_SYNC_READINESS.json",
+    "mode": "100644",
+    "blob": "1ef7720210e483b4422e57b3679fdb83353ce625",
+    "sha256": "d9ac5cb05210923ffc514b35da8bdff64c80e28e0b7082520b208c0094715679",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/d9ac5cb05210923ffc514b35da8bdff64c80e28e0b7082520b208c0094715679.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/UPSTREAM_SYNC_STRICT.log",
+    "mode": "100644",
+    "blob": "ba57e383d75a311708b9db11ead2f961997c8f59",
+    "sha256": "daa0b99a23fc881c6db470bbceaf2fe6870cf77a3bdf8c72bbf576f4b4f33a58",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/daa0b99a23fc881c6db470bbceaf2fe6870cf77a3bdf8c72bbf576f4b4f33a58.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/UPSTREAM_SYNC_VALIDATION.md",
+    "mode": "100644",
+    "blob": "fe1e301a94b5e9aa374b1d0a92b2a0621e34e513",
+    "sha256": "1c2466e03238ba3bc7569038da56e5535b9290da51a533551450ad7bea080832",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/1c2466e03238ba3bc7569038da56e5535b9290da51a533551450ad7bea080832.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/DIFF_ENCODING_RECEIPT.md",
+    "mode": "100644",
+    "blob": "645393d311b9002de15489c45d4ad47698081f7e",
+    "sha256": "f61c5fd0e2da4f7a6aae1ba3bdb07716bce449abcc5b95e3b7f86a26ec27d9ff",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/f61c5fd0e2da4f7a6aae1ba3bdb07716bce449abcc5b95e3b7f86a26ec27d9ff.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/ROOT_WORDING_DIFF.txt",
+    "mode": "100644",
+    "blob": "bb95ada1b59b4aa4ba3518e193e87a03c880b683",
+    "sha256": "6e08e878a51b908e35eb8f13bc6b25579e6486a8969414d83aff0764b391a106",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/6e08e878a51b908e35eb8f13bc6b25579e6486a8969414d83aff0764b391a106.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/ROOT_WORDING_DIFF_ORIGINAL.base64",
+    "mode": "100644",
+    "blob": "36c8afd66747a5d8bb6fe86037ec662f3ad9da10",
+    "sha256": "8033e321b8c0b1b971ccccfe8e596d8ea9e577a48ce42a14db7a113dbdc335f1",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/8033e321b8c0b1b971ccccfe8e596d8ea9e577a48ce42a14db7a113dbdc335f1.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/ROOT_WORDING_DIFF_REVIEW.md",
+    "mode": "100644",
+    "blob": "3e869ab7c6c37afc9f5c234ac536b5f2621a17ab",
+    "sha256": "00fba6cd601807f7aaaea25119b80561bc760945700c3db4ef182ff8eab58da0",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/00fba6cd601807f7aaaea25119b80561bc760945700c3db4ef182ff8eab58da0.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/DERIVATION.md",
+    "mode": "100644",
+    "blob": "ed836900280d444168944fb2fe5dfe2e1bbd7bd7",
+    "sha256": "721889e76b351390a016374434ae3708c9d16e3d9bfe097333381bd1c08c070e",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/721889e76b351390a016374434ae3708c9d16e3d9bfe097333381bd1c08c070e.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/FINITE_CONTROLS_PREREGISTRATION.md",
+    "mode": "100644",
+    "blob": "9ebf12935573ca96fc141e986e6871883c8b2b24",
+    "sha256": "088f30d77e0a9adbbfd01a746811a3f74ccbb79e044d29f841912f8a8fd5c943",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/088f30d77e0a9adbbfd01a746811a3f74ccbb79e044d29f841912f8a8fd5c943.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/PORT_RECEIPT.json",
+    "mode": "100644",
+    "blob": "26f7d5813de3ce4f98e430c7753f7614462dfaec",
+    "sha256": "d0b57620c57ed913e231e9e38f2019501d0a7a437009e65228ba3f8f6175181d",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/d0b57620c57ed913e231e9e38f2019501d0a7a437009e65228ba3f8f6175181d.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/PREREGISTRATION.md",
+    "mode": "100644",
+    "blob": "25268c4c02325e1b55b24e6553a89c6a3549e066",
+    "sha256": "6f93abe0f8f40de6470c7a988173957191b5feeac527fb2a906bf3408422b955",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/6f93abe0f8f40de6470c7a988173957191b5feeac527fb2a906bf3408422b955.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/PRIMARY_SELECTION_REVIEW.md",
+    "mode": "100644",
+    "blob": "dc0be1e0a56e3ae1957c235cb03fe210935d8c3c",
+    "sha256": "57ff99a439e71bc59db8bdf0dff60ee941cc077a60d6fd3a9271ea6130815dbb",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/57ff99a439e71bc59db8bdf0dff60ee941cc077a60d6fd3a9271ea6130815dbb.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/ROOT_REVIEW.md",
+    "mode": "100644",
+    "blob": "aeb9680b0a65e2e147e8a42a0fa6425c7204f771",
+    "sha256": "d6efd4247157eb9375fb66217e975365054becab9c85951eda900d3d4e873928",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/d6efd4247157eb9375fb66217e975365054becab9c85951eda900d3d4e873928.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/check.py",
+    "mode": "100644",
+    "blob": "421be811f646029f7ce8955d8d1cdca0e5962e78",
+    "sha256": "9f27c074f9ad40807bea6e9dbec2f5cbb6c69acbec0462819bcc1d4b4702332d",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/9f27c074f9ad40807bea6e9dbec2f5cbb6c69acbec0462819bcc1d4b4702332d.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/native_canonical_result.json",
+    "mode": "100644",
+    "blob": "fbf67268b2673fa61f7fcd7f6d8d7b419effbf81",
+    "sha256": "1dc2f0b32f76bda38f05b98232e70c030619487b30f0ca785b3913e3d411efc6",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/1dc2f0b32f76bda38f05b98232e70c030619487b30f0ca785b3913e3d411efc6.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/native_canonical_stdout.txt",
+    "mode": "100644",
+    "blob": "c99f44459b5cf32a3bb30038c5ba9d036adf528b",
+    "sha256": "a795676a78838e79b857c47e42f661c0df0667077a873bc61a3beb14f9958e06",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/a795676a78838e79b857c47e42f661c0df0667077a873bc61a3beb14f9958e06.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/primary_canonical_result.json",
+    "mode": "100644",
+    "blob": "74e545f954fbd90f5150e91fc2a46fc6c96fca23",
+    "sha256": "ff5ce33b16fe7b190dfbbdc2a27e157abf052380a02cdb3102bbdd6a9adae378",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/ff5ce33b16fe7b190dfbbdc2a27e157abf052380a02cdb3102bbdd6a9adae378.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/primary_canonical_stdout.txt",
+    "mode": "100644",
+    "blob": "faa97d6c40d73e3129f2ec41efc1418b56863458",
+    "sha256": "b33010ac6dcbff627ec4dfe53fd806d0e8e61aeb91951b76a0d00889f91ce1c5",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/b33010ac6dcbff627ec4dfe53fd806d0e8e61aeb91951b76a0d00889f91ce1c5.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/native/result.json",
+    "mode": "100644",
+    "blob": "78aacce84bd65c9fe4aac48e52f9fbaba62bb515",
+    "sha256": "3dae56cd0a5892bc11e99dc2b690bdc7bf3a18181c3bae2ba3a4328e3e7c290e",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/3dae56cd0a5892bc11e99dc2b690bdc7bf3a18181c3bae2ba3a4328e3e7c290e.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/BEFORE_HAAR_INDEX_FIX_check.py",
+    "mode": "100644",
+    "blob": "3792d703c6b9a6caf03cc1ce443c8bad0af3eea1",
+    "sha256": "879d3a03886989e8251caef0379ca6ce6617c9769af998cd5892de708a354e7b",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/879d3a03886989e8251caef0379ca6ce6617c9769af998cd5892de708a354e7b.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/BEFORE_HAAR_INDEX_FIX_result.json",
+    "mode": "100644",
+    "blob": "aceb6d129d36ec901b9f028e7d1731c2b55b7c44",
+    "sha256": "f5995b94940f115c7c9559aebd76987aaf902fff3eade4c51fca20e8002422c3",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/f5995b94940f115c7c9559aebd76987aaf902fff3eade4c51fca20e8002422c3.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/DERIVATION.md",
+    "mode": "100644",
+    "blob": "981b288642ce015c68202dc9ca5c28c9362e6470",
+    "sha256": "d632c8e8d95d41cb9fb6e0cb0a14dd9272cd3c27cd6ecb1718c092be832fd5e4",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/d632c8e8d95d41cb9fb6e0cb0a14dd9272cd3c27cd6ecb1718c092be832fd5e4.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/FAILURES.md",
+    "mode": "100644",
+    "blob": "fc30b27dd7410966434dc917793e4dca5ec1c430",
+    "sha256": "b1585c36d8837253e480771212e90b3c8b0b8a8eb283dc1ae22db9005f72a3b8",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/b1585c36d8837253e480771212e90b3c8b0b8a8eb283dc1ae22db9005f72a3b8.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/HASHES.json",
+    "mode": "100644",
+    "blob": "cf45f7fb6c4703f8c4446645e4e316640e1ce6a6",
+    "sha256": "0a815207ab4723094ab100bd122f6da4ae44ccb8fadaff5c5908f79607396913",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/0a815207ab4723094ab100bd122f6da4ae44ccb8fadaff5c5908f79607396913.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/PERIODIC_SUPPLEMENT_PREREGISTRATION.md",
+    "mode": "100644",
+    "blob": "1f418340bb86f8f24f4e9ebe8ffd0844f1a148c0",
+    "sha256": "7a38b16fb0f21fe5c4d1c0fb6df848c9e5ed9aab390914ed4461e87efb39dbe8",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/7a38b16fb0f21fe5c4d1c0fb6df848c9e5ed9aab390914ed4461e87efb39dbe8.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/PREREGISTRATION.md",
+    "mode": "100644",
+    "blob": "50aa22afc85088b981a1cf7b5a56a5bb79fd7c63",
+    "sha256": "0371809ed3eea8705fa8cab0eb02c9def581b670f21de7bda47121638ce84516",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/0371809ed3eea8705fa8cab0eb02c9def581b670f21de7bda47121638ce84516.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/TWO_FACE_SUPPLEMENT_PREREGISTRATION.md",
+    "mode": "100644",
+    "blob": "6066d5f366ae1dced36c0a9b7516e4bf49756e95",
+    "sha256": "1d4bc4a528a22f851b31b62ec833db19e9a6fccfce21e6ee45d937e0b751f28b",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/1d4bc4a528a22f851b31b62ec833db19e9a6fccfce21e6ee45d937e0b751f28b.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/check.py",
+    "mode": "100644",
+    "blob": "0ccc85252eb5dac0407e675fa4ce8b2a15f73787",
+    "sha256": "a8c295f03643c313e18f08ac9cff57b90e9a234484747dafcd60d069df490437",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/a8c295f03643c313e18f08ac9cff57b90e9a234484747dafcd60d069df490437.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary/result.json",
+    "mode": "100644",
+    "blob": "cb72e509bcb9dc805f148a0dd7ff277b956e8117",
+    "sha256": "a61b3d9f026f1d5e0ad17d4f61d7a06f58673851dbd8d6099e3e809812bb59d2",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/a61b3d9f026f1d5e0ad17d4f61d7a06f58673851dbd8d6099e3e809812bb59d2.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary_marked_review.md",
+    "mode": "100644",
+    "blob": "06517e7f745891c7cde65794b76c0d4e10b3184b",
+    "sha256": "07acf6f2d7c34c445f7c99dfa3caf97c888f61d3e247440437b93d2921d56ae6",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/07acf6f2d7c34c445f7c99dfa3caf97c888f61d3e247440437b93d2921d56ae6.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/primary_root_wording_diff_review.md",
+    "mode": "100644",
+    "blob": "0a019c1db7736f611e0baf15bd52b7c84be7e501",
+    "sha256": "19d6f5d368652a98baed236208c1f1af1fbf7580c43438129cff5e7ccb4f4de6",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/19d6f5d368652a98baed236208c1f1af1fbf7580c43438129cff5e7ccb4f4de6.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/root/PREREGISTRATION.md",
+    "mode": "100644",
+    "blob": "adadc7d9df194f46aee92fcd025d3a7651332184",
+    "sha256": "b1b93813efba09ddf20c58cac4104630696f509d09757f6c42566b560b60f6e1",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/b1b93813efba09ddf20c58cac4104630696f509d09757f6c42566b560b60f6e1.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/root/ROOT_DERIVATION.md",
+    "mode": "100644",
+    "blob": "44635f0bda06789620dec0784e3746171bd4c75f",
+    "sha256": "c4194f075371af17bf32c9ebdc7195eb9605776973add31b1ebe4890fc6eb1a8",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/c4194f075371af17bf32c9ebdc7195eb9605776973add31b1ebe4890fc6eb1a8.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/root/ROOT_DERIVATION_BEFORE_WORDING_CLARIFICATIONS_3d2d8694.md",
+    "mode": "100644",
+    "blob": "2f99d00d18ced6c359c44de8dac151ef986f9cd5",
+    "sha256": "3d2d869494e39a844d904e664aaf20605c2420bab3d562d3b7f57a8ded7ee031",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/3d2d869494e39a844d904e664aaf20605c2420bab3d562d3b7f57a8ded7ee031.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/root/ROOT_NATIVE_REVIEW.md",
+    "mode": "100644",
+    "blob": "56722dcd7d2cf7ecc00cdaa30841eb695be4da61",
+    "sha256": "4adc34aa1c1aa12c809f9343f27c67d5427e1b8faf88fcdcdcd075d696b7de8e",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/4adc34aa1c1aa12c809f9343f27c67d5427e1b8faf88fcdcdcd075d696b7de8e.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/evidence/root/ROOT_PRIMARY_SELECTION_REVIEW.md",
+    "mode": "100644",
+    "blob": "9f529cfe123a614b48ebec492a0eeb8660aa5762",
+    "sha256": "c98d415888b7747310f60ad07ae80b741b4ccc04c76bf5b0a4941706bce03d6c",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/c98d415888b7747310f60ad07ae80b741b4ccc04c76bf5b0a4941706bce03d6c.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/native_canonical_result.json",
+    "mode": "100644",
+    "blob": "fbf67268b2673fa61f7fcd7f6d8d7b419effbf81",
+    "sha256": "1dc2f0b32f76bda38f05b98232e70c030619487b30f0ca785b3913e3d411efc6",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/1dc2f0b32f76bda38f05b98232e70c030619487b30f0ca785b3913e3d411efc6.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/native_canonical_stdout.txt",
+    "mode": "100644",
+    "blob": "c99f44459b5cf32a3bb30038c5ba9d036adf528b",
+    "sha256": "a795676a78838e79b857c47e42f661c0df0667077a873bc61a3beb14f9958e06",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/a795676a78838e79b857c47e42f661c0df0667077a873bc61a3beb14f9958e06.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/primary_canonical_result.json",
+    "mode": "100644",
+    "blob": "74e545f954fbd90f5150e91fc2a46fc6c96fca23",
+    "sha256": "ff5ce33b16fe7b190dfbbdc2a27e157abf052380a02cdb3102bbdd6a9adae378",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/ff5ce33b16fe7b190dfbbdc2a27e157abf052380a02cdb3102bbdd6a9adae378.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/primary_canonical_stdout.txt",
+    "mode": "100644",
+    "blob": "faa97d6c40d73e3129f2ec41efc1418b56863458",
+    "sha256": "b33010ac6dcbff627ec4dfe53fd806d0e8e61aeb91951b76a0d00889f91ce1c5",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/b33010ac6dcbff627ec4dfe53fd806d0e8e61aeb91951b76a0d00889f91ce1c5.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/validated_claims_before_generated_cleanup.json",
+    "mode": "100644",
+    "blob": "09d75a8fc1945f0743e0c544313873080baa683c",
+    "sha256": "eb287af0d52c8b41e4467464c400d452dc46a882e80f64f2e12e7d85a3115970",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/eb287af0d52c8b41e4467464c400d452dc46a882e80f64f2e12e7d85a3115970.gz"
+  },
+  {
+    "path": ".claude/science/physics-loops/spatial-loop-area-20260907/validated_readiness_before_generated_cleanup.json",
+    "mode": "100644",
+    "blob": "55b2382b5ee3acf52edd40a3a6830205916aec56",
+    "sha256": "aad5ff291d04ccad1f554026a0c5d37bf481111bf443705fba5c31f8d676de65",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/aad5ff291d04ccad1f554026a0c5d37bf481111bf443705fba5c31f8d676de65.gz"
+  },
+  {
+    "path": "docs/GAUGE_WILSON_SPATIAL_LOOP_AREA_SUPPRESSION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "mode": "100644",
+    "blob": "12fa0622d93182fec15f9e13fd43fda02899e9a1",
+    "sha256": "315ec680293c1d646860044d3ce1ff51ef8efe0a5975430d110a167e96f28b72",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/315ec680293c1d646860044d3ce1ff51ef8efe0a5975430d110a167e96f28b72.gz"
+  },
+  {
+    "path": "docs/audit/data/citation_graph_manifest.json",
+    "mode": "100644",
+    "blob": "37b8b88638995a39a647530691dd752b3116522d",
+    "sha256": "d809649456c6573e71d6defda6450d68097189140ba7214556e9937d837b6701",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/d809649456c6573e71d6defda6450d68097189140ba7214556e9937d837b6701.gz"
+  },
+  {
+    "path": "docs/audit/scripts/build_citation_graph.py",
+    "mode": "100755",
+    "blob": "23210dd52b3c59015854e98041e4bf8355c8e297",
+    "sha256": "fdd67c9853781f668b10ae72608b55d824f03682b00cffaf64430bd1c969517e",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/fdd67c9853781f668b10ae72608b55d824f03682b00cffaf64430bd1c969517e.gz"
+  },
+  {
+    "path": "logs/runner-cache/gauge_wilson_spatial_loop_area_chain_check_2026_09_07.txt",
+    "mode": "100644",
+    "blob": "c55547304a63db09e71f2aece5bf7efe02fc8980",
+    "sha256": "b543c14f6fe4bdd8e089f3c737b6e928739a0b202b4ff0cca49bc8fdecf65bee",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/b543c14f6fe4bdd8e089f3c737b6e928739a0b202b4ff0cca49bc8fdecf65bee.gz"
+  },
+  {
+    "path": "logs/runner-cache/gauge_wilson_spatial_loop_area_coefficients_check_2026_09_07.txt",
+    "mode": "100644",
+    "blob": "631b7e2096d0b27bb1ee51ff23e409e95e5fad82",
+    "sha256": "c560e0ccb8dea5228f843d990019c9d4a27328bfbdfa5dec588f94c8bfff0c73",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/c560e0ccb8dea5228f843d990019c9d4a27328bfbdfa5dec588f94c8bfff0c73.gz"
+  },
+  {
+    "path": "scripts/audit_packet_script_deps.py",
+    "mode": "100644",
+    "blob": "a4a8a249dd43dd237be57b44984ab9fd620e3f98",
+    "sha256": "bcff3948629cc65e3bef5d35c5f6dcfc6d6848324833712146de9953ca814066",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/bcff3948629cc65e3bef5d35c5f6dcfc6d6848324833712146de9953ca814066.gz"
+  },
+  {
+    "path": "scripts/gauge_wilson_spatial_loop_area_chain_check_2026_09_07.py",
+    "mode": "100644",
+    "blob": "eeef252518d9b45439e96121e8978a27c3a37978",
+    "sha256": "f171aa356f6e7d07992dc28c48f2ee96c65873c709d1d22c0f3dbc1506070d69",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/f171aa356f6e7d07992dc28c48f2ee96c65873c709d1d22c0f3dbc1506070d69.gz"
+  },
+  {
+    "path": "scripts/gauge_wilson_spatial_loop_area_coefficients_check_2026_09_07.py",
+    "mode": "100644",
+    "blob": "19e47cd56300e47f323f63f8e3180a01aa947dbb",
+    "sha256": "d80f58cfe852b06ab3c298fe29d3784f6371576710806a5488363c642a1645cf",
+    "head": "08d312cdbb643ff661f2abd8b8489bcf0997ba7f",
+    "stored": "docs/work_history/review_loop/pr8026/objects/d80f58cfe852b06ab3c298fe29d3784f6371576710806a5488363c642a1645cf.gz"
+  }
+]

@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/gauge_wilson_spatial_loop_area_chain_check_2026_09_07.py
+runner_sha256: 15e027bdd29e7a28a87b4d88caf68c199cbaf4086f2bfb754526636e4ebec1eb
+input_fingerprint_sha256: 3e32308b7dc32b84e58459f9c71d33380b03395c8685703d277ca38c282544a8
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+PASS gauge_wilson_spatial_loop_area_chain_check_2026_09_07.py
+per_element: 1 checks; actual 192-face projection chain map
+per_site: 2 checks; projected rank and constant-sheet kernel
+per_mode: 4 checks; four frozen affine filling cases
+per_block: 8 checks; four minima and four actual lifted boundaries
+lattice_wide: 4 checks; three adverse controls and positive resources; no polymer proof
+TOTAL: PASS=19 FAIL=0
+seconds: 0.0035366250085644424; rss_MiB: 20.765625
+source_sha256: 15e027bdd29e7a28a87b4d88caf68c199cbaf4086f2bfb754526636e4ebec1eb
+
+----- stderr -----
+

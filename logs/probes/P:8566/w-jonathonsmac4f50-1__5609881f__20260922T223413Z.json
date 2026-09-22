@@ -34,12 +34,19 @@
  "stdout_sha256": "586967b9035ba89dc5d3f21fee081b88d81c9f423eeeab9d6a3691364705c745",
  "stdout_tail": "PR #8566: Local curl fields and quantum-compatible record formation interfaces\nbranch codex/mobile-record-local-curl-quantum-20260921 (base codex/mobile-record-transverse-waves-20260921)\nrunners in the PR: 1\n== scripts/mobile_records_local_curl_quantum_interface_and_born_formation_2026_09_21.py: rc=0 PASS=52 FAIL=0\n   mutation alter_Born_event_probability: expected ? observed ? MISMATCH\n   mutation alter_minimax_witness: expected ? observed ? MISMATCH\n   mutation alter_original_kernel_normalization: expected ? observed ? MISMATCH\n   mutation drop_finite_count_correction: expected ? observed ? MISMATCH\n   mutation halve_Born_cross_reaction: expected ? observed ? MISMATCH\n   mutation halve_native_vector_gain: expected ? observed ? MISMATCH\n   mutation halve_native_wave_speed: expected ? observed ? MISMATCH\nHIT: scripts/mobile_records_local_curl_quantum_interface_and_born_formation_2026_09_21.py: mutation census mismatch: alter_Born_event_probability alter_minimax_witness alter_original_kernel_normalization drop_finite_count_correction halve_Born_cross_reaction halve_native_vector_gain halve_native_wave_speed",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260922T223711Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T230749Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 5609881f differs from the current HEAD b9b9419d (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "Mobile-record census template (MUTATIONS dict {name: (check_file, old, new)}, no mutation_family lines): run_pr_branch.py reads 'expected ? observed ?'. Independent census on the PR branch: 7 of 7 mutations exit 1 with a FAIL line naming the declared target (born_compatible_fourteen_formation_check.py x2, fourteen_label_quantum_check.py x2, late_state_canonical_check.py, local_curl_native_formation_check.py x2). Same class as P:8604/8560/8569/8567/8609/8565/8589, reported on #8294.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T230749Z"
  }
 }

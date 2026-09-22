@@ -30,12 +30,19 @@
  "stdout_sha256": "b7947dda1c6e85be7ee8647351e1302964cc829dfa450a8822d1b2319894f74a",
  "stdout_tail": "PR #8600: Record-color waves through moving geometry with finite preparation\nbranch codex/mobile-record-moving-geometry-waves-20260921 (base codex/mobile-record-all-stage-formation-20260921)\nrunners in the PR: 1\n== scripts/mobile_records_moving_geometry_color_waves_2026_09_21.py: rc=0 PASS=14 FAIL=0\n   mutation double_context_current: expected ? observed ? MISMATCH\n   mutation omit_endpoint_return_word: expected ? observed ? MISMATCH\n   mutation wrong_plaquette_record_rotation: expected ? observed ? MISMATCH\nHIT: scripts/mobile_records_moving_geometry_color_waves_2026_09_21.py: mutation census mismatch: double_context_current omit_endpoint_return_word wrong_plaquette_record_rotation",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260922T224139Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T230749Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha a328ea89 differs from the current HEAD b9b9419d (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "Mobile-record census template: 'expected ? observed ?' for all. Independent census on the PR branch: 3 of 3 mutations exit 1 with a FAIL line naming the declared target (dimer_routed_transport_check.py, dimer_routed_diffusive_gap_check.py, dimer_routed_moving_geometry_check.py). Same class, reported on #8294.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T230749Z"
  }
 }

@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_f_wedge_f_top_form_forces_d_four_exact_2026_05_26",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_f_wedge_f_top_form_forces_d_four_exact_2026_05_26.py",
+ "seed": 15077,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "35863ac8",
+ "started_utc": "20260922T221117Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "68b37b7856165d393a88ba578a43756b8a7d69749ac5be7033533e5544825d6d",
+ "stdout_tail": "d = 6: \u03c9 \u2227 \u03c9 \u2260 0 (sanity)  (\u03c9\u2227\u03c9 = 2 e^1\u2227e^2\u2227e^3\u2227e^4)\n\n----------------------------------------------------------------------------------------\nPart 7: (W3) Uniqueness \u2014 d = 4 is the only top-form wedge-square dim\n----------------------------------------------------------------------------------------\n  [PASS (A)] (W3) at d = 0: \u03c9 \u2227 \u03c9 is a top-form: False  (expected False)\n  [PASS (A)] (W3) at d = 1: \u03c9 \u2227 \u03c9 is a top-form: False  (expected False)\n  [PASS (A)] (W3) at d = 2: \u03c9 \u2227 \u03c9 is a top-form: False  (expected False)\n  [PASS (A)] (W3) at d = 3: \u03c9 \u2227 \u03c9 is a top-form: False  (expected False)\n  [PASS (A)] (W3) at d = 4: \u03c9 \u2227 \u03c9 is a top-form: True  (expected True)\n  [PASS (A)] (W3) at d = 5: \u03c9 \u2227 \u03c9 is a top-form: False  (expected False)\n  [PASS (A)] (W3) at d = 6: \u03c9 \u2227 \u03c9 is a top-form: False  (expected False)\n  [PASS (A)] (W3) at d = 7: \u03c9 \u2227 \u03c9 is a top-form: False  (expected False)\n  [PASS (A)] (W3) at d = 8: \u03c9 \u2227 \u03c9 is a top-form: False  (expected False)\n  [PASS (A)] (W3) Among d in {0, 1, ..., 8}, exactly d = 4 has \u03c9 \u2227 \u03c9 as top-form  (matching d values = [4])\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n\n  PASS = 96\n  FAIL = 0\n\n  Note path: F_WEDGE_F_TOP_FORM_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md\n  Claim id:  f_wedge_f_top_form_forces_d_four_narrow_theorem_note_2026-05-26\n\n  Result: all class-(A) checks pass at exact rational precision.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T221117Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

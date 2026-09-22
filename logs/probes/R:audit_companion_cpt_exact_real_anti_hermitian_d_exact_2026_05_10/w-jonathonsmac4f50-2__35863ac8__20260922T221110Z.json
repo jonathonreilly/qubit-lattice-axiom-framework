@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_cpt_exact_real_anti_hermitian_d_exact_2026_05_10",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_cpt_exact_real_anti_hermitian_d_exact_2026_05_10.py",
+ "seed": 15070,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "35863ac8",
+ "started_utc": "20260922T221110Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=32, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1de7e14bff0e0e6aa455594c7062477ef77890dd1c4d09a57c73a077912f6758",
+ "stdout_tail": "fails premise (3)\n----------------------------------------------------------------------------------------\n  [PASS (A)] (cf.0) counterfactual D_cf anti-Hermitian: D + D.H == 0\n  [PASS (A)] (cf.1) D_cf NOT real: D^* != D (premise (3) fails)  (counterfactual confirms D-real is load-bearing for (3))\n  [PASS (A)] (cf.2a) D_cf breaks premise (2): P D' P != -D'  (the iZ piece commutes with P rather than changing sign)\n  [PASS (A)] (cf.2b) composite Theta D' Theta^{-1} == D' even though (2) fails for D'  (composite_invariant_on_D_cf=True \u2014 illustrating that premise failure does not strictly imply composite failure)\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at exact sympy precision:\n    Premise identities (1), (2), (3) on abstract 2x2 instance (i)\n    Premise identities (1), (2), (3) on a 4D mirror-chain instance (ii)\n    (C1) Theta D Theta^{-1} = D on both instances\n    Step-by-step substitution chain matches proof in note\n    (C2) Hermitian-lift commutator [Theta_H, H] = 0 on both instances\n    No C3 or Theta-square claim is evaluated in this C1-C2 runner\n    Counterfactual: non-real D fails premise (3); no converse claim is made\n\n========================================================================================\nTOTAL: PASS=32, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T221111Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

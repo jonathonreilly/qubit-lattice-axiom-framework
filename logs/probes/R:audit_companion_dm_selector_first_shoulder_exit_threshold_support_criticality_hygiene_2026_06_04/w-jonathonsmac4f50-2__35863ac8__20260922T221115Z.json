@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_dm_selector_first_shoulder_exit_threshold_support_criticality_hygiene_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_dm_selector_first_shoulder_exit_threshold_support_criticality_hygiene_2026_06_04.py",
+ "seed": 15075,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "35863ac8",
+ "started_utc": "20260922T221115Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0` :: observed SUMMARY: PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5ad8f187828aaaf303b28acc15ef90986448fc2e3a9a28cb438942da9a3bcbbe",
+ "stdout_tail": "en_gate clean snapshot with cross-confirmation confirmed and runner total_pass == 11 :: matched: audit_date='2026-05-05T10:15:40.179538+00:00', auditor='codex-fresh-second-dm_selector_first_shoulder_exit_threshold_support_note-20260505'\n  PASS H4.8 ledger row claim_type == 'open_gate' (audit-decided current type preserved; gate stays open) :: observed='open_gate'\n  PASS H4.9 ledger row runner_path AND note_path point to canonical parent paths :: runner_path observed='scripts/frontier_dm_selector_first_shoulder_exit_threshold_support_2026_04_21.py' (expected='scripts/frontier_dm_selector_first_shoulder_exit_threshold_support_2026_04_21.py'); note_path observed='docs/DM_SELECTOR_FIRST_SHOULDER_EXIT_THRESHOLD_SUPPORT_NOTE_2026-04-21.md' (expected='docs/DM_SELECTOR_FIRST_SHOULDER_EXIT_THRESHOLD_SUPPORT_NOTE_2026-04-21.md')\n  PASS H4.10 ledger row deps includes both declared upstream rows (nonrealization and stabilization) :: observed deps=['dm_neutrino_source_surface_atomic_witness_volume_selector_nonrealization_note_2026-04-18', 'dm_selector_threshold_stabilization_support_theorem_note_2026-04-21']; expected to include all of ['dm_neutrino_source_surface_atomic_witness_volume_selector_nonrealization_note_2026-04-18', 'dm_selector_threshold_stabilization_support_theorem_note_2026-04-21']\n\n------------------------------------------------------------------------\nFINAL TALLY: 22 PASS / 0 FAIL  (elapsed 0.58 s)\n------------------------------------------------------------------------\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T221115Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_companion_dm_selector_first_shoulder_exit_threshold_support_criticality_hygiene_2026_06_04.txt against the .txt beside this log"
+  ]
+ }
+}

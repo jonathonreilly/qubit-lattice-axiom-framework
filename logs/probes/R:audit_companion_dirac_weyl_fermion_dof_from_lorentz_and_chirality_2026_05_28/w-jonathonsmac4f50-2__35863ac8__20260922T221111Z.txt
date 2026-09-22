@@ -1,0 +1,57 @@
+
+----------------------------------------------------------------------------------------
+audit-companion: Dirac/Weyl fermion dof branch-rank bridge
+----------------------------------------------------------------------------------------
+note: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/DIRAC_WEYL_FERMION_DOF_FROM_LORENTZ_AND_CHIRALITY_ADMISSION_BRIDGE_NOTE_2026-05-28.md
+parent: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28.md
+
+----------------------------------------------------------------------------------------
+note structure and scope
+----------------------------------------------------------------------------------------
+  [PASS] note contains: Claim type:** bounded_theorem
+  [PASS] note contains: Status authority:** source-note proposal only
+  [PASS] note contains: 2026-06-07 source-packet repair
+  [PASS] note contains: 2026-06-08 label-semantics safe-narrow
+  [PASS] note contains: 2026-06-08 direct branch-rank repair
+  [PASS] note contains: non-load-bearing interpretation
+  [PASS] note contains: branch-rank count
+  [PASS] note contains: Q1 is retired as an unsupported algebraic admission
+  [PASS] note contains: Q2 is repaired as a textbook-counting import
+  [PASS] note contains: source-local finite-rank statement
+  [PASS] note contains: does not derive the Dirac equation
+  [PASS] note contains: does **not** add a new
+  [PASS] note contains: Framework authority and context packet (R1-R4)
+  [PASS] note contains: Retained source plus source-local counting packet (Q1-Q2)
+  [PASS] note contains: Proof-walk
+  [PASS] note contains: Exact arithmetic check
+  [PASS] note contains: Mapping to the parent note's P4 premise
+  [PASS] note contains: Boundaries
+  [PASS] note contains: PER_SITE_SU2_SPIN_HALF_THEOREM_NOTE_2026-05-02
+  [PASS] note contains: CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10
+  [PASS] note contains: CPT_EXACT_NOTE
+  [PASS] note contains: SPIN_STATISTICS_CARDINALITY_PAULI_EXCLUSION_NARROW_THEOREM_NOTE_2026-05-10
+  [PASS] note contains: SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10
+  [PASS] note contains: CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27
+  [PASS] note contains: HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10
+  [PASS] note contains: G_STAR_SM_CONTENT_AT_LEPTOGENESIS_FROM_SUPPLIED_THERMAL_INVENTORY_BOUNDED_THEOREM_NOTE_2026-05-28
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py", line 803, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py", line 778, in main
+    check_live_authority_statuses()
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py", line 170, in check_live_authority_statuses
+    rows = load_ledger_rows()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py", line 126, in load_ledger_rows
+    data = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/audit/data/audit_ledger.json'

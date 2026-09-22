@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_dm_neutrino_bosonic_normalization_observable_principle_bridge_exact_2026_05_16",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_dm_neutrino_bosonic_normalization_observable_principle_bridge_exact_2026_05_16.py",
+ "seed": 15072,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "35863ac8",
+ "started_utc": "20260922T221112Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=44, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "004d2ba82d8ae6c0cdd18f2bd4a44817c047d87b978781f4223217e743233692",
+ "stdout_tail": " = 0 = 0 (nilpotent scalar diagnostic)  (follows from W_scalar[jY] \u2261 0 identically in j)\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at exact sympy precision on the canonical C^16 representation:\n    (F.N) Y^2 = 0 (chiral nilpotency)\n    (F.H) Y + Y^\u2020 = \u0393_1 (Hermitian completion via anticommutation)\n    (F.T1) Tr(\u0393_1^\u2020 \u0393_1) = 16\n    (F.T2) Tr(Y^\u2020 Y) = 8 (= Tr P_L)\n    (DZ) det(m I + j Y) = m^{16} identically in j (Y nilpotent)\n    (DG) det(m I + j \u0393_1) = (m^2 - j^2)^8 (Hermitian involution)\n    (WG) scalar-baseline W_scalar[j \u0393_1] = 8 log|1 - j^2/m^2| at exact rationals\n    (WZ) W_scalar[j Y] = 0 at exact rationals\n    (R)  sqrt(Tr Y^\u2020 Y / Tr \u0393_1^\u2020 \u0393_1) = 1/sqrt(2)\n    (R1) active-space comparator = 1 is comparator-only;\n         \u0393_1, not Y or P_L, is the Hermitian-completion denominator\n    (R2) pseudoscalar companion is Hermitian and trace-orthogonal;\n         trace-orthogonal to \u0393_1 and same magnitude\n    Counterfactual: candidate \u0393\u0303_1 commuting with \u03b3_5 forces Y_tilde = 0\n                     and (F.H) breaks \u2014 anticommutation is load-bearing\n    Scalar diagnostics: \u2202\u00b2_j W_scalar[j \u0393_1]|_0 = -16, \u2202\u00b2_j W_scalar[j Y]|_0 = 0\n\n========================================================================================\nTOTAL: PASS=44, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T221113Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_dm_neutrino_k00_bosonic_normalization_exact_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_dm_neutrino_k00_bosonic_normalization_exact_2026_05_17.py",
+ "seed": 15073,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "35863ac8",
+ "started_utc": "20260922T221113Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "55515bb1b40a251e85c029ea541bf27f1ee666864f79e6f759bb0f9fe16359fc",
+ "stdout_tail": "\u03c1, \u03b3) (breaking-triplet independence)  (Tr(B \u00b7 F00) = 0)\n\n----------------------------------------------------------------------------------------\nPart 7: counterfactual \u2014 non-scalar baseline D = diag(m_1, m_2, m_3) breaks (W)\n----------------------------------------------------------------------------------------\n  [PASS (A)] (cf) non-scalar baseline D = diag(2,3,5) vs diag(2,3) breaks the (W) match for F00 vs F_row  (W_F00 = log(391/360), W_F_row = log(53/48), difference = log(782/795))\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at exact sympy precision on C^3 and C^2:\n    (E1) F00^2 = F00 (idempotency)\n    (E2) F_row^2 = F_row (idempotency)\n    (Tr) Tr F00 = Tr F_row = 1\n    (S1) spec(F00) = {1, 0, 0}\n    (S2) spec(F_row) = {1, 0}\n    (DG3) det(m I_3 + j F00) = m^2 (m + j) = m^3 (1 + j/m)\n    (DG2) det(m I_2 + j F_row) = m (m + j) = m^2 (1 + j/m)\n    (W)  Equal-baseline-subtracted response identity: both = log|1 + j/m|\n    (R1) Tr(H_core \u00b7 F00) = (A + 4 b + 2 c + 2 d)/3 on generic real (A, b, c, d)\n    (R2) Tr(B(\u03b4, \u03c1, \u03b3) \u00b7 F00) = 0 identically\n    Counterfactual: non-scalar baseline D = diag(2,3,5) vs diag(2,3) breaks (W)\n\n========================================================================================\nTOTAL: PASS=19, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T221114Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

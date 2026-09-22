@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_cpt_c3_cp_squared_scalar_exact_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_cpt_c3_cp_squared_scalar_exact_2026_05_17.py",
+ "seed": 15069,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "35863ac8",
+ "started_utc": "20260922T221109Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=44, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "94159ddeb36d8470d410a571e8c9fbbf8c6e43096b3e28c5e81b02ed7d1fb6da",
+ "stdout_tail": "P)^2)\n\n----------------------------------------------------------------------------------------\nPart 10: (R1) substitution into parent narrow theorem's C3\n----------------------------------------------------------------------------------------\n  [PASS (A)] (R1.4.a) Theta^2 == (CP)^2 from parent premises (real C, P)  (parent's Theta^2 = (CP)^2 algebra confirmed on framework C, P)\n  [PASS (A)] (R1.4.b) Theta^2 == +I_V (closes C3 with epsilon = +1, modular)  (parent's missing C3 step now backed by explicit framework C, P)\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at exact sympy precision:\n    Pauli-irrep relations {sigma_i, sigma_j} = 2 delta_{ij} I_2\n    G_C = sigma_3 grading automorphism: G_C sigma_i G_C^{-1} = +/- sigma_i\n    (S1) (G_C G_P)^2 = +I_int for G_P = +/- sigma_3\n    (S2) (C_lat P_lat)^2 = +I_lat (modular, L in {4, 6, 8}, 1-d and 3-d)\n    (S2) (C_lat P_lat)^2 = -I_lat (mirror, L in {4, 6, 8}, 1-d)\n    (S3) (C P)^2 = epsilon * I_V on full V (1-d L=4, 3-d L=4)\n    (cf) convention-dependent scalar sign; all Cl(3)-grading choices give scalar\n    (R1) Theta^2 = +I_V closes C3 with explicit epsilon in modular convention\n\n========================================================================================\nTOTAL: PASS=44, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T221110Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

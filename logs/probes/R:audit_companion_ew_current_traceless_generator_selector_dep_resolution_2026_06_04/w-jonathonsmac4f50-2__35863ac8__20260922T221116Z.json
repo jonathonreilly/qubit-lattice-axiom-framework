@@ -1,0 +1,39 @@
+{
+ "task": "R:audit_companion_ew_current_traceless_generator_selector_dep_resolution_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_ew_current_traceless_generator_selector_dep_resolution_2026_06_04.py",
+ "seed": 15076,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "35863ac8",
+ "started_utc": "20260922T221116Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=29 FAIL=0",
+   "PASS=29 FAIL=0",
+   "PASS=72 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "874e670d655bdee2d75f56a178e1171ccb43283a3299c44a8d1f12899a7bd74b",
+ "stdout_tail": "= 6\n  PASS distinct_lin_squared_vs_quad_diag2m1m1 :: (Tr diag2m1m1)^2 = 0 != Tr(diag2m1m1^2) = 6\n  PASS traceless_linear_diag1m2_1 :: Tr(diag1m2_1) = 0\n  PASS nonzero_quadratic_diag1m2_1 :: Tr(diag1m2_1^2) = 6\n  PASS distinct_lin_squared_vs_quad_diag1m2_1 :: (Tr diag1m2_1)^2 = 0 != Tr(diag1m2_1^2) = 6\n\n========================================================================\nBLOCK 8: No-claim gate preservation; companion disclaims promotion\n========================================================================\n  PASS companion_declares_claim_type_meta :: companion declared claim_type=meta\n  PASS companion_disclaims_status_promotion :: companion explicitly disclaims status promotion\n  PASS companion_disclaims_new_theorem :: companion explicitly disclaims new theorem claim\n  PASS companion_disclaims_parent_edits :: companion explicitly disclaims parent edits\n  PASS companion_disclaims_dep_restoration :: companion explicitly disclaims dep grade restoration\n  PASS companion_names_invalidation_reason :: companion records the exact invalidation_reason string\n  PASS companion_names_parent_row :: companion names the parent ledger row\n  PASS companion_independent_audit_handoff_present :: companion includes independent audit handoff section\n\n========================================================================\nSUMMARY: PASS=72 FAIL=0\n========================================================================\nFINAL_TAG: EW_CURRENT_TRACELESS_GENERATOR_SELECTOR_DEP_RESOLUTION_HYGIENE_OK\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T221117Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

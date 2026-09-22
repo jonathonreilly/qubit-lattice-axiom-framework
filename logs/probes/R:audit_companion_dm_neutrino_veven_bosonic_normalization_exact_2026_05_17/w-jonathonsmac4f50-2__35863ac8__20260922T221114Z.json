@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_dm_neutrino_veven_bosonic_normalization_exact_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_dm_neutrino_veven_bosonic_normalization_exact_2026_05_17.py",
+ "seed": 15074,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "35863ac8",
+ "started_utc": "20260922T221114Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=23, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5a4a3b5df204f60f7f5330b32b45f2f0ff2faf6b6e65029f5a3ad2cf5391719f",
+ "stdout_tail": "--------------------------------------\nPart 7: counterfactual \u2014 non-scalar baseline D = diag(m_1, m_2, m_3) breaks (W1)/(W2)\n----------------------------------------------------------------------------------------\n  [PASS (A)] (cf) non-scalar baseline D = diag(2,3,5) vs diag(2,3) breaks the (W1) match for F1  (W_F1 = log(487/480), W_S1 = log(sqrt(6)/96 + 255/256), difference = log(3896/(5*(8*sqrt(6) + 765))))\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at exact sympy precision on C^3 and C^2:\n    (G)  Frobenius-orthogonality of the active basis\n    (D1) Tr(H \u00b7 F1) = E1(H) = \u03b5 + \u03b6 on generic real coefficients\n    (D2) Tr(H \u00b7 F2) = E2(H) = \u03b1 + \u03b2 - \u03b3 - \u03b4 on generic real coefficients\n    (S1) spec(F1) = {-sqrt(3/8), 0, +sqrt(3/8)}\n    (S2) spec(F2) = {-3/sqrt(8), 0, +3/sqrt(8)}\n    (S3) spec(sqrt(3/8) Z_row) = {-sqrt(3/8), +sqrt(3/8)}\n    (S4) spec((3/sqrt(8)) Z_row) = {-3/sqrt(8), +3/sqrt(8)}\n    (W1) F1 \u2194 sqrt(3/8) Z_row identical exact bosonic response on m I baseline\n    (W2) F2 \u2194 (3/sqrt(8)) Z_row identical exact bosonic response on m I baseline\n    Counterfactual: non-scalar baseline D = diag(2,3,5) vs diag(2,3) breaks (W1)\n\n========================================================================================\nTOTAL: PASS=23, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T221115Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

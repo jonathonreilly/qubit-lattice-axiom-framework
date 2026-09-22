@@ -1,0 +1,10 @@
+PR #8613: physics-loop: admissibility induced-law block 78 - one record per site is an interaction, not a free sea
+branch physics-loop/admissibility-induced-law-block78-one-record-per-site-is-an-interaction-not-a-free-sea-20260922 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_one_record_per_site_is_an_interaction_not_a_free_sea_two_records_under_exclusion_2026_09_22.py: rc=0 PASS=10 FAIL=0
+   mutation hard_core_equals_free_antisymmetric: expected B observed B ok
+   mutation hard_core_equals_free_symmetric: expected B observed B ok
+   mutation exchange_sign_visible_at_second_order: expected C observed C ok
+   mutation hard_core_energy_is_additive: expected D observed D ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

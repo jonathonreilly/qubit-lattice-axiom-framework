@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_dm_neutrino_codd_bosonic_normalization_exact_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_dm_neutrino_codd_bosonic_normalization_exact_2026_05_17.py",
+ "seed": 15073,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "35863ac8",
+ "started_utc": "20260922T221113Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=32, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e7f60733bd2b958c2f585f8efc359675f445d9063663b0c5ae5900fed41c386e",
+ "stdout_tail": ", diff = log(54/53))\n  [PASS (A)] (cf) non-scalar baseline diag(2,3,5) vs diag(2,3) breaks (W) for T_gamma vs Z_odd  (W_T = log(159/160), W_Z = log(33/32), diff = log(53/55))\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at exact sympy precision on C^4, C^3, and C^2:\n    (Herm)  S_cls, T_gamma, Z_odd all Hermitian\n    (Trace) Tr S_cls = Tr T_gamma = Tr Z_odd = 0\n    (S1)    spec(S_cls)   = {+1, -1, 0, 0}\n    (S2)    spec(T_gamma) = {+1, -1, 0}\n    (S3)    spec(Z_odd)   = {+1, -1}\n    (C1)    char poly S_cls   = \u03bb^4 - \u03bb^2\n    (C2)    char poly T_gamma = -\u03bb^3 + \u03bb\n    (C3)    char poly Z_odd   = \u03bb^2 - 1\n    (E1)    S_cls^3   = S_cls   (cubic involution)\n    (E2)    T_gamma^3 = T_gamma (cubic involution)\n    (E3)    Z_odd^3   = Z_odd   (cubic involution)\n    (DG4)   det(m I_4 + j S_cls)   = m^2 (m^2 - j^2)\n    (DG3)   det(m I_3 + j T_gamma) = m (m^2 - j^2)\n    (DG2)   det(m I_2 + j Z_odd)   = m^2 - j^2\n    (W)     Triple baseline match: log|...| - log|m^n| = log|1 - j^2/m^2|\n    (R1)    Small-source curvature \u2202^2 W / \u2202j^2 |_{j=0} = -2/m^2 (all 3)\n    Counterfactual: non-scalar baseline diag(2,3,5,7)/diag(2,3,5)/diag(2,3) breaks (W)\n\n========================================================================================\nTOTAL: PASS=32, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T221113Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

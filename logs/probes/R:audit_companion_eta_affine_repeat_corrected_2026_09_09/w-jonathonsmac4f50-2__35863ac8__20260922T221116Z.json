@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_eta_affine_repeat_corrected_2026_09_09",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_eta_affine_repeat_corrected_2026_09_09.py",
+ "seed": 15076,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "35863ac8",
+ "started_utc": "20260922T221116Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "eb4d7feaf90a2e18731fbef6e79d1cfe8c94890d9469f5c1c2fa14011325644d",
+ "stdout_tail": "INPUT_BOUND: 8 actual current inputs\nPASS fine_coarse_preparation: clean branch law accepted; actual bit labels and coarse weights changed independently\nPASS fine_coarse_test: clean branch law accepted; actual bit labels and coarse weights changed independently\nPASS test_slot_fault_existing_gate: clean={'record_first_fine_cylinder_average': True}; actual test-label swap={'record_first_fine_cylinder_average': False}\nPASS actual_close_projection_fault: clean=True; payload-copying close=False\nPASS explicit_alternative_laws: fresh accepted, frozen/parity differ as actual finite distributions; not generator-mutation claims\nPASS actual_second_read_repeat_condition: [(Fraction(1, 1), Fraction(1, 1), Fraction(0, 1), True), (Fraction(-1, 1), Fraction(-1, 1), Fraction(0, 1), True), (Fraction(1, 2), Fraction(1, 1), Fraction(1, 4), False), (Fraction(1, 1), Fraction(1, 2), Fraction(1, 4), False)]\nPASS encoded_action_scope: actual code traces=(Fraction(50, 1), Fraction(4, 1)); this action is not full-matrix unitary conjugation\nTOTAL: PASS=7 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T221116Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

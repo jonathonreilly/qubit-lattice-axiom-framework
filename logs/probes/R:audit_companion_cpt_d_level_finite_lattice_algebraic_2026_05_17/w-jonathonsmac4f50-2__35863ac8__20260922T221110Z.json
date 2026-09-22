@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_cpt_d_level_finite_lattice_algebraic_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_cpt_d_level_finite_lattice_algebraic_2026_05_17.py",
+ "seed": 15070,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "35863ac8",
+ "started_utc": "20260922T221110Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=39 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d7e2b479ade8f0ffbaf92da6ad2986cd1092cfffc165040b751935e08136701f",
+ "stdout_tail": "--------------\nPart 10: this note's CPT is distinct from sibling Theta_H = P K\n----------------------------------------------------------------------------------------\n  [PASS (A)] (sib.1) Theta_H = P K and CPT = C P T act differently on v=(1,1)^T  (two distinct antiunitary operators (length-2 vs length-3); not logically overlapping)\n  [PASS (A)] (sib.2a) sibling instance: C D C = -D  (sibling's premise 1)\n  [PASS (A)] (sib.2b) sibling instance: P D P = -D  (sibling's premise 2)\n  [PASS (A)] (sib.2c) sibling instance: T D T = D   (sibling's premise 3, D real)\n  [PASS (A)] (sib.2d) sibling: Theta_H * H * Theta_H^{-1} = H on H = i D\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at exact sympy precision:\n    Premise identities (1), (2), (3) on 2x2 instance (I)\n    Premise identities (1), (2), (3) on bipartite L=4 instance (II)\n    (P1) CPT * H * (CPT)^{-1} == H on both instances\n    Step-by-step chain C P H P C -> C(-H)C -> -(-H) -> H on both\n    Counterfactual: violating premise (2)'s sign breaks (P1)\n    Counterfactual: non-real H violates premise (3), breaks (P1)\n    Distinct from sibling Theta_H = P K: different operator-length\n\n========================================================================================\nTOTAL: PASS=39 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T221110Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

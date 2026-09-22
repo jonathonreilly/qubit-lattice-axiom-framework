@@ -1,0 +1,39 @@
+{
+ "task": "R:audit_companion_free_dirac_wigner_action_strong_continuity_bridge_2026_06_07",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_free_dirac_wigner_action_strong_continuity_bridge_2026_06_07.py",
+ "seed": 15078,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "35863ac8",
+ "started_utc": "20260922T221118Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=8 FAIL=0",
+   "PASS=8 FAIL=0",
+   "PASS=48 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ce44a842bfe8fd706ab2cc64c75c3474d4e2537240f505069da47942255e5709",
+ "stdout_tail": "obeys semidirect product law :: miss=1.100e-16\nPASS boost pullback preserves rapidity L2 norm on localized carrier :: 0.943746820->0.943746820\nPASS boost action is strongly continuous near identity on dense carrier :: 1.338e-01, 6.702e-02, 3.353e-02, 1.677e-02\nPASS translation phase action is strongly continuous near identity :: 3.316e-01, 1.673e-01, 8.388e-02, 4.196e-02\nPASS translation phase has unit modulus\n\n------------------------------------------------------------------------------\nSU(2) Wigner carrier checks\n------------------------------------------------------------------------------\nPASS Wigner SU(2) carrier is unitary\nPASS same-axis SU(2) carrier obeys group law\nPASS SU(2) carrier is continuous at identity :: 1.414e-01, 7.070e-02, 3.535e-02, 1.768e-02\nPASS unitary dense-carrier continuity extends by epsilon/3 density argument\n\n------------------------------------------------------------------------------\nFirewall flags\n------------------------------------------------------------------------------\nPASS audit data written flag is false\nPASS audit verdict applied flag is false\nPASS lattice Lorentz derivation flag is false\nPASS spin-statistics derivation flag is false\nPASS interacting theory claim flag is false\nPASS retained-status claim flag is false\nPASS Nelson/common-Gaussian route reintroduced flag is false\n\nFREE DIRAC WIGNER ACTION STRONG-CONTINUITY BRIDGE\nSCORECARD PASS=48 FAIL=0\nAUDIT_LEDGER_WRITTEN=FALSE\nAUDIT_VERDICT_APPLIED=FALSE\nBARE_RETAINED_ALLOWED=FALSE\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T221118Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_fermion_parity_pauli_tensor_exact_2026_05_10",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_fermion_parity_pauli_tensor_exact_2026_05_10.py",
+ "seed": 15077,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "35863ac8",
+ "started_utc": "20260922T221117Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=47, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b92b0ab86cedcfe2fd5e2cf4ba38a6197d0893b19677839626ae53de1f6fc9d2",
+ "stdout_tail": "----------------------\nPart 9: counterfactual probes \u2014 Z_2-odd conjugation\n----------------------------------------------------------------------------------------\n  [PASS (A)] F_3 \u03c3_+^{(1)} F_3 = -\u03c3_+^{(1)} exact (Z_2-odd conjugation, P6 directional)  (confirms Z_2-odd direction of {F, \u03c3_+} = 0)\n  [PASS (A)] F_3 \u03c3_+^{(1)} \u03c3_-^{(2)} F_3 = +\u03c3_+^{(1)} \u03c3_-^{(2)} exact (Z_2-even bilinear)  (confirms Z_2-even direction of [F, bilinear] = 0)\n  [PASS (A)] F_3 n\u0302_1 F_3 = n\u0302_1 exact (Z_2-even bilinear, same site)\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at exact sympy precision on N = 3 site Fock space:\n    (P1) F_3 = \u03c3_3 \u2297 \u03c3_3 \u2297 \u03c3_3 = exp(i \u03c0 Q\u0302_total) on all 8 states\n    (P2) F_3 Hermitian (F_3 = F_3^\u2020)\n    (P3) F_3\u00b2 = I_8 exact (involution)\n    (P4) Spec(F_3) = {+1, -1} exact (diagonal entries)\n    (P5) dim(H_+) = dim(H_-) = 4 = 2^{3-1} (balanced grading)\n    (P6) {F_3, \u03c3_\u00b1^{(x)}} = 0 exact for x = 1, 2, 3\n    (P7) [F_3, n\u0302_x] = 0 and [F_3, bilinear] = 0 exact for all (x,y)\n    [F_3, Q\u0302_total] = 0 exact\n    Combinatorial \u2211 C(N,2k) = \u2211 C(N, 2k+1) = 2^{N-1} for N=1..5\n    Counterfactual Z_2-odd conjugation F \u03c3_+ F = -\u03c3_+ confirmed\n\n========================================================================================\nTOTAL: PASS=47, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T221118Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

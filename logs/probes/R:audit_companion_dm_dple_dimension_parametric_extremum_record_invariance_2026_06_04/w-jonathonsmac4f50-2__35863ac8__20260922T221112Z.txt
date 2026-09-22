@@ -1,0 +1,23 @@
+========================================================================
+DM DPLE dimension-parametric extremum record-invariance hygiene
+========================================================================
+Repo root: <repo>
+Parent note: docs/DM_DPLE_DIMENSION_PARAMETRIC_EXTREMUM_THEOREM_NOTE_2026-04-19.md
+Parent runner: scripts/frontier_dm_dple_theorem.py
+Scope: meta evidence only; no theorem claim and no verdict change.
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/audit_companion_dm_dple_dimension_parametric_extremum_record_invariance_2026_06_04.py", line 167, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/audit_companion_dm_dple_dimension_parametric_extremum_record_invariance_2026_06_04.py", line 94, in main
+    ledger = json.loads(LEDGER.read_text(encoding="utf-8"))["rows"]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/audit/data/audit_ledger.json'

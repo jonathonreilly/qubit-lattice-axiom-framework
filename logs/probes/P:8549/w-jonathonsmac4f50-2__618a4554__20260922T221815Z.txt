@@ -1,0 +1,12 @@
+PR #8549: ail43: the fields of the record layer arrive by diffusion (settling over a distance costs the square of that distance in ticks; a carrier of a long-range field needs a speed)
+branch physics-loop/admissibility-induced-law-block43-record-layer-fields-arrive-by-diffusion-20260920 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_record_layer_fields_arrive_by_diffusion_establishment_time_square_of_the_range_2026_09_20.py: rc=0 PASS=13 FAIL=0
+   mutation mode_factor_wrong: expected B observed B ok
+   mutation slowest_mode_bound_wrong: expected B observed B ok
+   mutation mean_square_reach_ballistic_injected: expected C observed C ok
+   mutation tail_bound_dropped_factor: expected C observed C ok
+   mutation odds_step_not_the_walk_injected: expected D observed D ok
+   mutation mass_term_trade_off_wrong: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

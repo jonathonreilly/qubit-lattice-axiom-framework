@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_falsifiable_predictions_catalog_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_falsifiable_predictions_catalog_2026_06_08.py",
+ "seed": 15077,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "35863ac8",
+ "started_utc": "20260922T221117Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=16 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ad9e721e3c2374a7948ba1a34093501c366830073ee38fa89630eff8951b8e89",
+ "stdout_tail": "6%' hides ~10 sigma once the experimental error is restored\n[PASS] clean-but-untestable (bucket C): Lorentz Y_40 fingerprint 7-18 orders below bounds; proton decay ~13 orders beyond Hyper-K; 3-gen/3-color retrodictions -> distinctive, not near-term falsifiers\n\n-- Headline (honest) --\n[PASS] BUCKET A IS EMPTY IN THIS CATALOG: no clean, unconditional, forward falsifier is identified on this publication surface; the sharp near-term forecasts (P1,P2) are fit-conditional (D) and NuFit-6.1 leans AGAINST them; T1/T2 are NOT independent axiom-tests (restate already-admitted chains, dissolve under their own uncertainties); the precision EW matches are beta=6-calibrated postdictions (B)\n       framework's empirical content is mostly postdictions + conditional, currently unfavorable bets\n\nSCORECARD PASS=16 FAIL=0\nVERDICT: the catalog's forecasts and CURRENT standings are internally consistent and re-stated here -- P1 disfavored-but-allowed (NuFit-6.1 best fits 207/212 deg outside the band, band within 3-sigma); P2 disfavored (NuFit-6.1 both variants lower octant 0.470); P3 weakly disfavored / not robust; T1/T2 NOT independent axiom-tests (n_s -2.4 sigma vs ACT but -0.4 sigma vs Planck and N_e-dependent; J mild +1.4..+2.6 sigma comparator-dependent, decomposing into beta=6 alpha_s + the delta_CKM eta admission); bucket A empty in this catalog. Rigorous derivations deferred to the cited per-prediction runners; NuFit/ACT/global-fit values are comparison windows only, never derived inputs.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T221117Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

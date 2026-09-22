@@ -1,0 +1,37 @@
+{
+ "task": "P:8613",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block78-one-re",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8613",
+ "pr": 8613,
+ "branch": "physics-loop/admissibility-induced-law-block78-one-record-per-site-is-an-interaction-not-a-free-sea-20260922",
+ "git_sha": "618a4554",
+ "started_utc": "20260922T221838Z",
+ "elapsed_s": 314.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_one_record_per_site_is_an_interaction_not_a_free_sea_two_records_under_exclusion_2026_09_22.py",
+    "returncode": 0,
+    "total": "PASS=10 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "163352e041638ecbea95829e4ec759ab3cced087ae67ad43e416e703a34d26fe",
+ "stdout_tail": "PR #8613: physics-loop: admissibility induced-law block 78 - one record per site is an interaction, not a free sea\nbranch physics-loop/admissibility-induced-law-block78-one-record-per-site-is-an-interaction-not-a-free-sea-20260922 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_one_record_per_site_is_an_interaction_not_a_free_sea_two_records_under_exclusion_2026_09_22.py: rc=0 PASS=10 FAIL=0\n   mutation hard_core_equals_free_antisymmetric: expected B observed B ok\n   mutation hard_core_equals_free_symmetric: expected B observed B ok\n   mutation exchange_sign_visible_at_second_order: expected C observed C ok\n   mutation hard_core_energy_is_additive: expected D observed D ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T222352Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

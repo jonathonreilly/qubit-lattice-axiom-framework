@@ -1,6 +1,6 @@
 {
  "edge_count": 13667,
- "node_count": 6212,
+ "node_count": 6213,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -725,6 +725,10 @@
   "admissibility_registered_partition_barycenter_pushforward_bounded_theorem_note_2026-08-12": {
    "deps_hash": "2b42b09047b0",
    "out_degree": 4
+  },
+  "admissibility_rule_alternating_lengths_are_a_relabelling_invisible_to_the_walk_and_free_for_the_ledger_a_rest_energy_needs_the_bonds_own_amplitude_no_strain_gaps_at_first_order_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_bounded_theorem_note_2026-09-06": {
    "deps_hash": "1b3132f0c69b",

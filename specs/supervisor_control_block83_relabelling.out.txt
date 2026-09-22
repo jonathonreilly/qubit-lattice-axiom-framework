@@ -1,0 +1,13 @@
+W1: 6^3 torus, alternation delta = 0.3: operator differences from the free walk and least |E|
+  frame-coupled: max |H - H_free| = 0.00e+00; least |E| = 0.0000 (free: 0.0000; sqrt3 delta = 0.5196)
+  strain-coupled (block 64): max |H - H_free| = 0.00e+00; least |E| = 0.0000 (free: 0.0000; sqrt3 delta = 0.5196)
+  bond's own amplitude: max |H - H_free| = 1.50e-01; least |E| = 0.5196 (free: 0.0000; sqrt3 delta = 0.5196)
+W2: a smooth random strain through block 64's coupling: corner matrix elements and the corner energies
+  max |V| = 0.334; largest corner matrix element = 3.80e-18; zero modes: free 16, strained 0; least |E| strained = 3.87e-05
+W3: sea energy per site on the 8^3 torus against delta: bond's own amplitude / frame-coupled
+  delta=0: bond amplitude -1.19015   frame -1.19015
+  delta=0.1: bond amplitude -1.19971   frame -1.19015
+  delta=0.2: bond amplitude -1.22255   frame -1.19015
+  delta=0.4: bond amplitude -1.30336   frame -1.19015
+  delta=0.7: bond amplitude -1.49128   frame -1.19015
+  delta=1: bond amplitude -1.73205   frame -1.19015

@@ -1,0 +1,7 @@
+# Block 83 — control and findings (2026-09-22)
+
+1. Disjoint machinery (`specs/supervisor_control_block83_relabelling.py`): dense floating-point operators on `6³` and `8³`; the runner is sparse exact Gaussian-rational algebra on `4³` plus an exact symbolic spectrum.
+2. **The panel's leading route closed on the lane's terms (supervisor).** The foundations lens's alternating-length rest energy uses a hop amplitude that follows the bond's length; in the lane the lengths enter through the frame (block 62) or as a relabelling's deformation (blocks 63–64), and for an alternation both couplings vanish exactly. The alternation is the relabelling `ξ_a = −(δ/2)(−1)^{x_a}`.
+3. **Corner lemma tested generically.** The vanishing of `½{X, S_j}` inside the corner subspace was checked for generic rational site and bond functions, not only for the alternation, so it is the lemma and not a coincidence of the pattern.
+4. **Second order left open, executed null.** A smooth random strain on `6³` moves the sixteen zero modes by `4·10⁻⁵` (species points shifting off the grid), no gap; not proved in general and said so.
+5. Finding: block 82's control "the sea lowers its energy under the alternation" is a statement about the bond-amplitude coupling only; under the lane's couplings the sea's energy is exactly constant (W3).

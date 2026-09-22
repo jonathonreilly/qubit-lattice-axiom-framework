@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-22 block 83 — author checks (not a review PASS)
+Written lens pass by the supervisor. Each vanishing derived by hand (one anticommutation) then checked as an exact operator identity; the corner lemma checked against generic rational functions; the sea statement made a theorem (concavity + evenness) with an exact instance. Census 8/8 in family.

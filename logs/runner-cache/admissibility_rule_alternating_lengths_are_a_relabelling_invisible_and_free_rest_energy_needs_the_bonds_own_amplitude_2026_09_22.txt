@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_alternating_lengths_are_a_relabelling_invisible_and_free_rest_energy_needs_the_bonds_own_amplitude_2026_09_22.py
+runner_sha256: d88ae37c53959828e918acd8c0628d56f7fcf7c67ab62edbea0eefe6be2a0346
+input_fingerprint_sha256: f93e4641dadf14432679308ee2842090a43ddaf94042289bafeff9fd80185803
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.71
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_ALTERNATING_LENGTHS_ARE_A_RELABELLING_INVISIBLE_TO_THE_WALK_AND_FREE_FOR_THE_LEDGER_A_REST_ENERGY_NEEDS_THE_BONDS_OWN_AMPLITUDE_NO_STRAIN_GAPS_AT_FIRST_ORDER_BOUNDED_THEOREM_NOTE_2026-09-22.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1(a): block 62's frame coupling 1/2{e_j sigma_j, S_j} with e_j(x) = 1 + delta (-1)^{x_j} on every axis equals the free walk exactly on the 4^3 torus (delta = 3/10): (-1)^{x_j} anticommutes with S_j, so the alternating part of the frame drops out
+PASS: B2 T1(b): block 64's coupling sum_a sigma_a 1/2{C_a[B_a^a], S_a} with the stretch B_a^a(x) = delta (-1)^{x_a} is exactly the zero operator: C_a of an alternating bond weight is i delta (-1)^{x_a} S_a, which anticommutes with S_a
+PASS: B3 T1(c): the alternation is the relabelling B_a^a = d_a xi_a with xi_a = -(delta/2)(-1)^{x_a} (sites displaced alternately by -+ delta/2 along each axis); every plaquette curl of it vanishes and the volume sum over the torus is exactly N: block 64's whole family of field energies charges nothing for it
+PASS: C1 T2(a): for a generic rational site function X and a generic rational bond function v, every term 1/2{X, S_j} and 1/2{C_a[v], S_a} (any coin matrix) has exactly zero matrix elements between the sixteen corner states: S_j annihilates every corner plane wave on either side; no frame or strain pattern of the lane's couplings gives a first-order rest energy
+PASS: C2 T2(b): the coupling to the bond's own amplitude, sum_a sigma_a (1/2i)(t_a(x) T_a - T_a^dag t_a(x)) with t_a - 1 = delta (-1)^{x_a}, has a nonzero block on the corner subspace whose square is exactly 3 delta^2 (block 82 T3(a)'s rest energy sqrt(3) delta at every species): it is the bond's value, not an average over its ends or a difference across it, that a rest energy needs
+PASS: D1 T3: on the ring of four with the bond's own amplitude alternating, the eight energies are +-|delta| (twice each) and +-1 (twice each), exactly; the sea's energy -2 - 2|delta| never rises; in general the sum of the lowest N eigenvalues is concave in the generator and even in delta (translation by one step reverses the alternation), so it is largest at delta = 0
+PASS: D2 T3: on the 4^3 torus the translation by (1, 1, 1) carries the bond-amplitude walk at +delta exactly to the one at -delta: the sea's energy is even in delta, and with concavity it has its maximum at delta = 0
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - every matrix element of the frame-coupled, strain-coupled and bond-amplitude walks on the 4^3 torus; every plaquette curl of the alternation
+per_site: executed - the relabelling xi at every site; the volume factor at every site
+per_mode: executed - the sixteen corner states against generic site and bond functions; the ring of four's exact spectrum; control: spectra on the 6^3 torus and the sea on 8^3
+per_block: executed - the corner block of the bond-amplitude coupling and its square; the translation conjugacy of +delta and -delta
+lattice_wide: T1 holds on every even torus by the anticommutation of (-1)^{x_a} with S_a and by d_a d_b = d_b d_a; T2 by S_j annihilating corner states; T3 by concavity of the lowest-eigenvalue sum and the translation; the couplings, the sea reading and the value of delta are not derived
+PASS: G1 the five N5 resolution lines are printed
+scope: an alternation of the lengths is a relabelling - exactly invisible to the walk through the frame and through the strain coupling, and free for every field energy built from curls; no frame or strain pattern has a first-order matrix element inside the corner subspace; the rest energy of block 82 T3(a) needs the bond's own amplitude; the sea's energy never rises under an alternation but the lane's couplings never see one; nothing adopted
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

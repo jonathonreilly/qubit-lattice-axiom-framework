@@ -1,0 +1,47 @@
+{
+  "actual_model": "gpt-6-sol",
+  "effort": "low",
+  "tasks": [
+    {
+      "start": "2026-09-22T22:30:59.694Z",
+      "end": "2026-09-22T22:32:44.174Z",
+      "cumulative_usage": {
+        "input_tokens": 703795,
+        "cached_input_tokens": 646400,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4004,
+        "reasoning_output_tokens": 687,
+        "total_tokens": 707799
+      }
+    },
+    {
+      "start": "2026-09-22T22:35:56.785Z",
+      "end": "2026-09-22T22:37:59.146Z",
+      "cumulative_usage": {
+        "input_tokens": 1708353,
+        "cached_input_tokens": 1616256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 9375,
+        "reasoning_output_tokens": 1479,
+        "total_tokens": 1717728
+      }
+    }
+  ],
+  "total_active_task_seconds": 226.841,
+  "total_token_usage": {
+    "input_tokens": 1708353,
+    "cached_input_tokens": 1616256,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 9375,
+    "reasoning_output_tokens": 1479,
+    "total_tokens": 1717728
+  },
+  "modeled_standard_credits": 15.02988,
+  "modeled_fast_credits": 37.5747,
+  "pricing_source": "https://learn.chatgpt.com/docs/pricing",
+  "charged_amount_known": false,
+  "scope_limit": "No primary runner or numeric TV recomputation; selected old findings/outputs deliberately unread to preserveblindness. Baseline Astra read broader history and performed20independent exactcontrols.",
+  "baseline_report_sha256": "85470c99cba0d21a4a29572ed307f39e88a4c6c0d745bd8afca9b9e78f0a27ad",
+  "phase1_sha256": "98f3f698281e453c06605e33b957ba0c9196e6101efa2ca53dd178ae0d51b7ed",
+  "phase2_sha256": "9748e040bd874690c49255f054fa472a2c271f96fab13cc45111d46a9e6acc5b"
+}

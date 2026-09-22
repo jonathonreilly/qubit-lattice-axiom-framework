@@ -1,0 +1,11 @@
+PR #8556: ail47: transparent bodies — capture rate is the record count; force is the product of the record counts over distance squared
+branch physics-loop/admissibility-induced-law-block47-transparent-bodies-force-is-the-product-of-record-counts-20260921 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_transparent_bodies_capture_rate_is_the_record_count_force_is_the_product_of_record_counts_predicted_coefficient_2026_09_21.py: rc=0 PASS=12 FAIL=0
+   mutation capture_counts_both_hemispheres: expected B observed B ok
+   mutation six_axis_capture_rate_wrong: expected B observed B ok
+   mutation faces_count_ignores_shared_faces: expected C observed C ok
+   mutation ball_face_count_wrong: expected C observed C ok
+   mutation coefficient_without_blocking: expected D observed D ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

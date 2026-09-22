@@ -1,0 +1,96 @@
+{
+  "tooling_source": "/private/tmp/review-drain-20260915/integration-resume/scripts/runner_cache.py",
+  "tooling_sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+  "method": "Current-main actual cache APIs, root paths explicitly pointed at frozen original checkout; no scientific imports or execution; bytecode disabled.",
+  "rows": [
+    {
+      "path": "scripts/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.py",
+      "timeout": 180,
+      "status": "fresh",
+      "declared_input_fingerprint": null,
+      "top_level_evidence_families": [
+        "cancellation",
+        "trees",
+        "constants",
+        "finite_theta_hessian",
+        "gaussian_precision",
+        "source_curvature"
+      ],
+      "cache_sha256": "902c4d5f1a69bb003b2943d66030ae7dbcfd1d57425f220d07a0d36cfd3df689"
+    },
+    {
+      "path": "scripts/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.py",
+      "timeout": 180,
+      "status": "fresh",
+      "declared_input_fingerprint": null,
+      "top_level_evidence_families": [
+        "three_cube",
+        "four_cube"
+      ],
+      "cache_sha256": "2fa094103908228b5b93e2160cc6619455fcd6989880d8644bdbb80eb9b93d51"
+    },
+    {
+      "path": "scripts/finite_clock_ginibre_free_state_and_static_charge_bound_2026_09_15.py",
+      "timeout": 300,
+      "status": "fresh",
+      "declared_input_fingerprint": null,
+      "top_level_evidence_families": [
+        "clock_transfer",
+        "rectangle_green",
+        "wilson_shift"
+      ],
+      "cache_sha256": "c4bd712a19ee9cb0b76cba8219030b577ce4b17f72c42600204a4855d5007a3d"
+    },
+    {
+      "path": "scripts/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.py",
+      "timeout": 180,
+      "status": "fresh",
+      "declared_input_fingerprint": null,
+      "top_level_evidence_families": [
+        "relative_homotopies",
+        "boundary_controls",
+        "hodge_and_source",
+        "electric_extension"
+      ],
+      "cache_sha256": "e5df4237bfd00aa330773fa8c7bf9692a90d1da6545fe19d24e28344c75f9938"
+    },
+    {
+      "path": "scripts/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.py",
+      "timeout": 180,
+      "status": "fresh",
+      "declared_input_fingerprint": null,
+      "top_level_evidence_families": [
+        "nonorthogonal_lattice",
+        "actual_three_cube",
+        "hypothesis_and_tilt_controls",
+        "local_edge_bounds"
+      ],
+      "cache_sha256": "2e04936e5602ca54cd92268b58b7501542f7ab47da935caf68458725b0ad0061"
+    },
+    {
+      "path": "scripts/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_2026_09_15.py",
+      "timeout": 300,
+      "status": "fresh",
+      "declared_input_fingerprint": null,
+      "top_level_evidence_families": [
+        "general_path_green",
+        "inverse_moments",
+        "mixed_moments",
+        "positive_paths"
+      ],
+      "cache_sha256": "498bf8a263c6cb8c562aebd943dbeb06bce061620fc5cd5c7f6029ed46ce1af4"
+    },
+    {
+      "path": "scripts/finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_2026_09_15.py",
+      "timeout": 300,
+      "status": "fresh",
+      "declared_input_fingerprint": null,
+      "top_level_evidence_families": [
+        "charge_floor",
+        "endpoint_comparison",
+        "history_reconstruction"
+      ],
+      "cache_sha256": "73c10790a149e5a07505dad756ac9328fac36a3ce75ea6136b04c96af7f8c288"
+    }
+  ]
+}

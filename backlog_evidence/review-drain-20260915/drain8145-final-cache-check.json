@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8140-8144-8145",
+  "tree": "100aa75113eea7850d0a485d046bec0f2fbf860d",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "carrier_preserving_closed_integer_charge_gas_convexification_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": []
+    },
+    {
+      "path": "docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "finite_clock_exact_coupled_electric_magnetic_defect_representation_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": []
+    },
+    {
+      "path": "docs/FINITE_CLOCK_GINIBRE_FREE_STATE_AND_STATIC_CHARGE_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "finite_clock_ginibre_free_state_and_static_charge_bound_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/finite_clock_ginibre_free_state_and_static_charge_bound_2026_09_15.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/QUANTIZED_CURRENT_POISSON_IDENTITY_CENTERED_GAUSSIAN_DOMINATION_AND_CLOCK_WILSON_COSETS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/review_loop/pr8145/README.md"
+      ]
+    },
+    {
+      "path": "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ]
+    },
+    {
+      "path": "docs/QUANTIZED_CURRENT_POISSON_IDENTITY_CENTERED_GAUSSIAN_DOMINATION_AND_CLOCK_WILSON_COSETS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ]
+    },
+    {
+      "path": "docs/FINITE_CLOCK_STATIC_CHARGE_TRANSFER_HAMILTONIAN_AND_PATH_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_2026_09_15.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/FINITE_CLOCK_GINIBRE_FREE_STATE_AND_STATIC_CHARGE_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/review_loop/pr8145/README.md"
+      ]
+    },
+    {
+      "path": "docs/FINITE_CLOCK_FIELD_HISTORY_RECONSTRUCTION_AND_CHARGE_SECTOR_HAMILTONIAN_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_bounded_theorem_note_2026-09-15",
+      "primary_runner": "scripts/finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_2026_09_15.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/FINITE_CLOCK_GINIBRE_FREE_STATE_AND_STATIC_CHARGE_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/FINITE_CLOCK_STATIC_CHARGE_TRANSFER_HAMILTONIAN_AND_PATH_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/review_loop/pr8145/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8769,
+      "misses": 4440
+    },
+    "packet_imports": {
+      "hits": 8753,
+      "misses": 4438
+    },
+    "declared_inputs": {
+      "hits": 8801,
+      "misses": 4571
+    }
+  },
+  "record_sha256": "83bf7dab77656cbf1db12ae30d93a64a15913decb2d1fc1366354dcab4cdd247",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

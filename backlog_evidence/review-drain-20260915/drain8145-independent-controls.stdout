@@ -1,0 +1,44 @@
+{
+  "source_sha256": "8fa7ff9d07fad36263f4fa9d9ca59179efd33d7e2c08381326c704a013e7448c",
+  "checks": 103,
+  "failed": 0,
+  "families": [
+    "all24_diagonals17over24",
+    "centered_domination",
+    "coset_k_not_residual",
+    "cube_d_squared",
+    "electric_rank17",
+    "endpoint_two_caps_and_time",
+    "gauge_projector_vs_Fourier",
+    "history_inverse",
+    "inverse_local_ratio",
+    "pointwise_charge_floor",
+    "poisson_mgf",
+    "positive_ground_state",
+    "signed_phase51over8",
+    "spectral_charge_floor",
+    "temporal_resolvent_integral"
+  ],
+  "transfer_fixtures": [
+    {
+      "N": 2,
+      "dimension": 16,
+      "kernel": [
+        3.0,
+        1.0
+      ],
+      "min_transfer_eigenvalue": 1.4758253037399758
+    },
+    {
+      "N": 3,
+      "dimension": 81,
+      "kernel": [
+        4.0,
+        1.0,
+        1.0
+      ],
+      "min_transfer_eigenvalue": 1.0000000000000053
+    }
+  ],
+  "scope": "finite independent synthetic algebra controls; no primary runs and no infinite-volume numerical proof"
+}

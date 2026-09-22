@@ -1,0 +1,553 @@
+{
+  "schema_version": 2,
+  "unit_id": "PR8140-8144-8145",
+  "constituents": [
+    {
+      "id": "PR8140",
+      "head": "8a71d7fa8a87a451e5c49df31d18986574d73610",
+      "delta_base": "5deabeb698a27c2c3f68c5df685af2521ef15307",
+      "dispositions": {
+        "path": "/private/tmp/review-drain-20260915/drain8145-final-source-review.json",
+        "sha256": "80e3822baa50703d065a2d129f578228d844470bff49f00a59148bf764fc15b0",
+        "json_pointer": "/original_dispositions/8140"
+      }
+    },
+    {
+      "id": "PR8144",
+      "head": "691f96525772ec0e7d06a528d14ad17324400f22",
+      "delta_base": "8a71d7fa8a87a451e5c49df31d18986574d73610",
+      "dispositions": {
+        "path": "/private/tmp/review-drain-20260915/drain8145-final-source-review.json",
+        "sha256": "80e3822baa50703d065a2d129f578228d844470bff49f00a59148bf764fc15b0",
+        "json_pointer": "/original_dispositions/8144"
+      }
+    },
+    {
+      "id": "PR8145",
+      "head": "c5580db2ebe78e4dca71f210539cea1471148483",
+      "delta_base": "691f96525772ec0e7d06a528d14ad17324400f22",
+      "dispositions": {
+        "path": "/private/tmp/review-drain-20260915/drain8145-final-source-review.json",
+        "sha256": "80e3822baa50703d065a2d129f578228d844470bff49f00a59148bf764fc15b0",
+        "json_pointer": "/original_dispositions/8145"
+      }
+    }
+  ],
+  "source": {
+    "base": "59024639572d6d3a1091c727297b18c350d3f484",
+    "commit": "59024639572d6d3a1091c727297b18c350d3f484",
+    "tree": "100aa75113eea7850d0a485d046bec0f2fbf860d",
+    "paths": [
+      {
+        "path": "docs/FINITE_CLOCK_FIELD_HISTORY_RECONSTRUCTION_AND_CHARGE_SECTOR_HAMILTONIAN_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "25da897d299d9a49bf72e6d43bbd4d81cc1f0fa238a387ebf68390030f11337d"
+      },
+      {
+        "path": "docs/FINITE_CLOCK_GINIBRE_FREE_STATE_AND_STATIC_CHARGE_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "1421fe81b8d4e8c94cce427036eec61c0262499e0ccadccce126293d0e77a91c"
+      },
+      {
+        "path": "docs/FINITE_CLOCK_STATIC_CHARGE_TRANSFER_HAMILTONIAN_AND_PATH_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "7e8dff1cb419d492c1f9487f663c2392abac96c94bf1c349ceb095f752bdd04c"
+      },
+      {
+        "path": "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "5a25a3abe1294342c2b856b3ff8be8651132d7e37c18fe507457d33129d55f47"
+      },
+      {
+        "path": "docs/QUANTIZED_CURRENT_POISSON_IDENTITY_CENTERED_GAUSSIAN_DOMINATION_AND_CLOCK_WILSON_COSETS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "b6963abb261a50dd4f586b8f8c9e75be3586eb08cf1c6a2bb7cfb99f2a1eb9db"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8145/8140-clock-static-charge-20260915-CONFORMANCE.md",
+        "sha256": "8a35245f39b59f4d706804e27ac05d6ca4bada8a3698e6a6c700547115c0efc8"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8145/8140-clock-static-charge-20260915-HANDOFF.md",
+        "sha256": "2edeab738e39e9b53be97a800c26486421b833f3f0395a587dc5bccdf412b451"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8145/8140-clock-static-charge-20260915-MUTATION_CHECKS.json",
+        "sha256": "6909301cfc5ef8b863d8088ceef874be523c21b09597c7e01513fde6c25f98a9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8145/8140-clock-static-charge-20260915-TRACE_GATE.md",
+        "sha256": "a96940be43247423e6edcf19950367f70b0e1509263a350dc11157fcf2cd14c8"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8145/8140-clock-static-charge-20260915-VALIDATION.json",
+        "sha256": "5d176fdd389fcae00ddf046e856adcff2258bbf89aa45574dd7fe2b3ae6421bb"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8145/8140-runner-cache-carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.txt.gz",
+        "sha256": "f071a620fa50b581d56ee63aa6da4740514dfcaf7651cc553b8f5cfaac2a5018"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8145/8140-runner-cache-finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.txt.gz",
+        "sha256": "9cfb5c63f80a78f989dbfec0d34892d4275b96e4ed0a8cd370ad5145f0e41275"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8145/8140-runner-cache-finite_clock_ginibre_free_state_and_static_charge_bound_2026_09_15.txt.gz",
+        "sha256": "eca1613aa833fa0e4e347e704670ecba9567cf73da496a099cd328601daa9648"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8145/8140-runner-cache-free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.txt.gz",
+        "sha256": "3efcb588596e5836d899e90a1140fe1ff0c11447d716bcd81c0aa3ec5f99f5a1"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8145/8140-runner-cache-quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.txt.gz",
+        "sha256": "ec557f3216a8dd3a6fc520c9079f80c0ed7e5d4003eb0212ec335f4d596f8359"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8145/8144-runner-cache-finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_2026_09_15.txt.gz",
+        "sha256": "8af36d881d4647aa61cd40abd33d7f827853119e19b4c4e5cbe7c6e5a0245e0d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8145/8144-static-charge-transfer-sector-20260915-CONFORMANCE.md",
+        "sha256": "8e4659f4e084c109251cf74054311ed938573b557ecd00e071e80308b7e56e37"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8145/8144-static-charge-transfer-sector-20260915-HANDOFF.md",
+        "sha256": "79e009166021327d1aa39f318d1c4f85650dd8b96122e3deba88a7812b3faf03"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8145/8144-static-charge-transfer-sector-20260915-MUTATION_CHECKS.json",
+        "sha256": "83abb86965843fb2893d960a2055c56e16676db1d317ab8a63349e0dc9651131"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8145/8144-static-charge-transfer-sector-20260915-VALIDATION.json",
+        "sha256": "1c513c337bd62772671c82bbf6af2c5fa95a0e4d146eafd73fa597c975648f07"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8145/8145-clock-history-field-20260915-CONFORMANCE.md",
+        "sha256": "ae0ce06e41aa4c0d40bdff24359740a3713498bfc01ec7405b8e9d3337e6856e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8145/8145-clock-history-field-20260915-HANDOFF.md",
+        "sha256": "eef0cc5b68fcf5f876894e11f938f907de09eea45937019b8ce8b5b385d6b9b4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8145/8145-clock-history-field-20260915-MUTATION_CHECKS.json",
+        "sha256": "c064050a8545914ffe3115a2b139fe5da370abada0ff416e04b1f87de2e318ab"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8145/8145-clock-history-field-20260915-VALIDATION.json",
+        "sha256": "139c14e2df7c5d42c346e45ff83aadf79b32e61396973f94c796a76f545b8124"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8145/8145-runner-cache-finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_2026_09_15.txt.gz",
+        "sha256": "d955023a9bea2ec7ff9792cab04f70742d2d09e982caa37aa987d8e67084de6f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8145/README.md",
+        "sha256": "6a0727c049fe5dd4cb7e78f7fba73cefbcb1489569cd6b612dbbefed83799f32"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8145/original-path-map.json",
+        "sha256": "fb3e7bcb6a10018848d02dd3ce421c7358753d7f6f9b00c6c86075dfb265075b"
+      },
+      {
+        "path": "logs/runner-cache/finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_2026_09_15.txt",
+        "sha256": "73c10790a149e5a07505dad756ac9328fac36a3ce75ea6136b04c96af7f8c288"
+      },
+      {
+        "path": "logs/runner-cache/finite_clock_ginibre_free_state_and_static_charge_bound_2026_09_15.txt",
+        "sha256": "c4bd712a19ee9cb0b76cba8219030b577ce4b17f72c42600204a4855d5007a3d"
+      },
+      {
+        "path": "logs/runner-cache/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_2026_09_15.txt",
+        "sha256": "498bf8a263c6cb8c562aebd943dbeb06bce061620fc5cd5c7f6029ed46ce1af4"
+      },
+      {
+        "path": "scripts/finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_2026_09_15.py",
+        "sha256": "32a085b12393438b77e47cd88879614b9937ba5c190110b6aac2ec5600b1cba4"
+      },
+      {
+        "path": "scripts/finite_clock_ginibre_free_state_and_static_charge_bound_2026_09_15.py",
+        "sha256": "2ca4c711d706d1b263504b59d2501fc748836fd8fe52b2a7ca7e90060036b3fd"
+      },
+      {
+        "path": "scripts/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_2026_09_15.py",
+        "sha256": "6e99936a4f99a308f1a6b4d54ac311f433c8f8f9f1943a60ed98750ffe04c2fb"
+      }
+    ],
+    "deleted_paths": []
+  },
+  "inputs": {
+    "runtime": [
+      {
+        "path": "scripts/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.py",
+        "sha256": "ee6f2e3ef6b4d6b5d4a425682a53f8be9a1a76226177180b2a3c0261b93c8620"
+      },
+      {
+        "path": "scripts/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.py",
+        "sha256": "f0944f826251880d8cb50cc0b1a23ba5455504816b7262e3088895f416fb7cd6"
+      },
+      {
+        "path": "scripts/finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_2026_09_15.py",
+        "sha256": "32a085b12393438b77e47cd88879614b9937ba5c190110b6aac2ec5600b1cba4"
+      },
+      {
+        "path": "scripts/finite_clock_ginibre_free_state_and_static_charge_bound_2026_09_15.py",
+        "sha256": "2ca4c711d706d1b263504b59d2501fc748836fd8fe52b2a7ca7e90060036b3fd"
+      },
+      {
+        "path": "scripts/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_2026_09_15.py",
+        "sha256": "6e99936a4f99a308f1a6b4d54ac311f433c8f8f9f1943a60ed98750ffe04c2fb"
+      },
+      {
+        "path": "scripts/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.py",
+        "sha256": "5dddde52adfa443d9169deec859423a0e5697897915fff73620caea3d1789f92"
+      },
+      {
+        "path": "scripts/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.py",
+        "sha256": "c059f841d9e5863e3d6990dba4da461270580c91f5109a2282f5228f3cb1a369"
+      }
+    ],
+    "helpers": [],
+    "parents": [
+      {
+        "path": "docs/CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "33721f7203035a0eb0d4d3c3ede667fb1416a5df190daf5e84379540088a03dc"
+      },
+      {
+        "path": "docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "9c8a3e14f77deffffee0b4b3a8e1ca9cb1792dbecea86fed6435da43c3ef177c"
+      },
+      {
+        "path": "docs/FINITE_CLOCK_GINIBRE_FREE_STATE_AND_STATIC_CHARGE_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "1421fe81b8d4e8c94cce427036eec61c0262499e0ccadccce126293d0e77a91c"
+      },
+      {
+        "path": "docs/FINITE_CLOCK_STATIC_CHARGE_TRANSFER_HAMILTONIAN_AND_PATH_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "7e8dff1cb419d492c1f9487f663c2392abac96c94bf1c349ceb095f752bdd04c"
+      },
+      {
+        "path": "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "5a25a3abe1294342c2b856b3ff8be8651132d7e37c18fe507457d33129d55f47"
+      },
+      {
+        "path": "docs/QUANTIZED_CURRENT_POISSON_IDENTITY_CENTERED_GAUSSIAN_DOMINATION_AND_CLOCK_WILSON_COSETS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "b6963abb261a50dd4f586b8f8c9e75be3586eb08cf1c6a2bb7cfb99f2a1eb9db"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "33721f7203035a0eb0d4d3c3ede667fb1416a5df190daf5e84379540088a03dc"
+      },
+      {
+        "path": "docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "9c8a3e14f77deffffee0b4b3a8e1ca9cb1792dbecea86fed6435da43c3ef177c"
+      },
+      {
+        "path": "docs/FINITE_CLOCK_FIELD_HISTORY_RECONSTRUCTION_AND_CHARGE_SECTOR_HAMILTONIAN_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "25da897d299d9a49bf72e6d43bbd4d81cc1f0fa238a387ebf68390030f11337d"
+      },
+      {
+        "path": "docs/FINITE_CLOCK_GINIBRE_FREE_STATE_AND_STATIC_CHARGE_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "1421fe81b8d4e8c94cce427036eec61c0262499e0ccadccce126293d0e77a91c"
+      },
+      {
+        "path": "docs/FINITE_CLOCK_STATIC_CHARGE_TRANSFER_HAMILTONIAN_AND_PATH_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "7e8dff1cb419d492c1f9487f663c2392abac96c94bf1c349ceb095f752bdd04c"
+      },
+      {
+        "path": "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "5a25a3abe1294342c2b856b3ff8be8651132d7e37c18fe507457d33129d55f47"
+      },
+      {
+        "path": "docs/QUANTIZED_CURRENT_POISSON_IDENTITY_CENTERED_GAUSSIAN_DOMINATION_AND_CLOCK_WILSON_COSETS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "b6963abb261a50dd4f586b8f8c9e75be3586eb08cf1c6a2bb7cfb99f2a1eb9db"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8145/README.md",
+        "sha256": "6a0727c049fe5dd4cb7e78f7fba73cefbcb1489569cd6b612dbbefed83799f32"
+      },
+      {
+        "path": "logs/runner-cache/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.txt",
+        "sha256": "cc5b3c81a1e52f929fd6e7f8fbed00be16724aa40de955e8a870ab8bdb405409"
+      },
+      {
+        "path": "logs/runner-cache/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.txt",
+        "sha256": "48fe81168bb041be30f16258a499923084f493c573bb3756b215d1acb0c40a28"
+      },
+      {
+        "path": "logs/runner-cache/finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_2026_09_15.txt",
+        "sha256": "73c10790a149e5a07505dad756ac9328fac36a3ce75ea6136b04c96af7f8c288"
+      },
+      {
+        "path": "logs/runner-cache/finite_clock_ginibre_free_state_and_static_charge_bound_2026_09_15.txt",
+        "sha256": "c4bd712a19ee9cb0b76cba8219030b577ce4b17f72c42600204a4855d5007a3d"
+      },
+      {
+        "path": "logs/runner-cache/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_2026_09_15.txt",
+        "sha256": "498bf8a263c6cb8c562aebd943dbeb06bce061620fc5cd5c7f6029ed46ce1af4"
+      },
+      {
+        "path": "logs/runner-cache/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.txt",
+        "sha256": "7e429ce805a1182938c435132adc35a0b914a23b5e0c4c0045b72837bf36c4ab"
+      },
+      {
+        "path": "logs/runner-cache/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.txt",
+        "sha256": "ca1ac091f44f9b8a431808589b3d13ea5d1dd4fe5d601ee08663382b773c36d4"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "reviewer": {
+    "session": "/root/resume_8079_8083",
+    "report": {
+      "path": "/private/tmp/review-drain-20260915/drain8145-final-source-review.json",
+      "sha256": "80e3822baa50703d065a2d129f578228d844470bff49f00a59148bf764fc15b0"
+    },
+    "references": [
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8145-original-findings.json",
+        "sha256": "02f889c4e2db40828b9b08543145d246d1388356f623b04bb7e55cde8aac4926"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8145-scientific-review.md",
+        "sha256": "4e736002546a9503656907c380c9cc3185e3057f572cb0ac23d20bc6a73daeff"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8145-independent-controls.py",
+        "sha256": "8fa7ff9d07fad36263f4fa9d9ca59179efd33d7e2c08381326c704a013e7448c"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8145-control-supervisor.py",
+        "sha256": "bccdd12ce52c15cc49f4a341bce628636bc5029e532d256174bee56b744a0cf6"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8145-independent-controls-execution.json",
+        "sha256": "9efc4da8d26ae6dadf7daace7a693730a3cabc28d1f756a2c7c704d2a61f4b30"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8145-independent-controls.stdout",
+        "sha256": "8c00907efe92e2a339ee05d2b23288c1c996005386841363892007cdd2b7f923"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8145-independent-controls.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8145-original-cache-api.json",
+        "sha256": "073045436489646a2bd88a531b38bd2a010950e0021b27aeef9b00cfe3be0a37"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8145-author-source-handoff.json",
+        "sha256": "560945c46cc08f969c86a93693118420a2b3213fbbc41832556dfe5b5f0b41b9"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8145-author-preflight.json",
+        "sha256": "70c2e9c13cdbe9ffb3aaa4dc0528aa0898ac02a20f9552541e08dfe3bb6a6c00"
+      }
+    ]
+  },
+  "notes": [
+    {
+      "path": "docs/CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "carrier_preserving_closed_integer_charge_gas_convexification_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "carrier_preserving_closed_integer_charge_gas_convexification_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.py",
+      "helpers": [],
+      "citations": [],
+      "repository_dependencies": [],
+      "dependency_rationale": "Self-contained supplied-model mathematical theorem; no repository theorem is a load-bearing premise."
+    },
+    {
+      "path": "docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "finite_clock_exact_coupled_electric_magnetic_defect_representation_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "finite_clock_exact_coupled_electric_magnetic_defect_representation_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.py",
+      "helpers": [],
+      "citations": [],
+      "repository_dependencies": [],
+      "dependency_rationale": "Self-contained supplied-model mathematical theorem; no repository theorem is a load-bearing premise."
+    },
+    {
+      "path": "docs/FINITE_CLOCK_GINIBRE_FREE_STATE_AND_STATIC_CHARGE_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "finite_clock_ginibre_free_state_and_static_charge_bound_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "finite_clock_ginibre_free_state_and_static_charge_bound_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/finite_clock_ginibre_free_state_and_static_charge_bound_2026_09_15.py",
+      "helpers": [],
+      "citations": [
+        "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/QUANTIZED_CURRENT_POISSON_IDENTITY_CENTERED_GAUSSIAN_DOMINATION_AND_CLOCK_WILSON_COSETS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/review_loop/pr8145/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/QUANTIZED_CURRENT_POISSON_IDENTITY_CENTERED_GAUSSIAN_DOMINATION_AND_CLOCK_WILSON_COSETS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "dependency_rationale": "Supplied finite-clock Villain law; linked bounded constructive predecessors supply only their explicit hypotheses and conclusions."
+    },
+    {
+      "path": "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.py",
+      "helpers": [],
+      "citations": [
+        "docs/CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "repository_dependencies": [
+        "docs/CARRIER_PRESERVING_CLOSED_INTEGER_CHARGE_GAS_CONVEXIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "dependency_rationale": "Supplied finite-clock Villain law; linked bounded constructive predecessors supply only their explicit hypotheses and conclusions."
+    },
+    {
+      "path": "docs/QUANTIZED_CURRENT_POISSON_IDENTITY_CENTERED_GAUSSIAN_DOMINATION_AND_CLOCK_WILSON_COSETS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/quantized_current_poisson_identity_centered_gaussian_domination_and_clock_wilson_cosets_2026_09_15.py",
+      "helpers": [],
+      "citations": [
+        "docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "repository_dependencies": [
+        "docs/FINITE_CLOCK_EXACT_COUPLED_ELECTRIC_MAGNETIC_DEFECT_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/FREE_CUBIC_MAGNETIC_LOCAL_FILLINGS_AND_POSITIVE_ELECTRIC_CURRENT_CONVEX_EXTENSION_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "dependency_rationale": "Supplied finite-clock Villain law; linked bounded constructive predecessors supply only their explicit hypotheses and conclusions."
+    },
+    {
+      "path": "docs/FINITE_CLOCK_STATIC_CHARGE_TRANSFER_HAMILTONIAN_AND_PATH_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_2026_09_15.py",
+      "helpers": [],
+      "citations": [
+        "docs/FINITE_CLOCK_GINIBRE_FREE_STATE_AND_STATIC_CHARGE_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/review_loop/pr8145/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/FINITE_CLOCK_GINIBRE_FREE_STATE_AND_STATIC_CHARGE_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "dependency_rationale": "Supplied finite-clock Villain law; linked bounded constructive predecessors supply only their explicit hypotheses and conclusions."
+    },
+    {
+      "path": "docs/FINITE_CLOCK_FIELD_HISTORY_RECONSTRUCTION_AND_CHARGE_SECTOR_HAMILTONIAN_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_2026_09_15.py",
+      "helpers": [],
+      "citations": [
+        "docs/FINITE_CLOCK_GINIBRE_FREE_STATE_AND_STATIC_CHARGE_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/FINITE_CLOCK_STATIC_CHARGE_TRANSFER_HAMILTONIAN_AND_PATH_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/review_loop/pr8145/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/FINITE_CLOCK_STATIC_CHARGE_TRANSFER_HAMILTONIAN_AND_PATH_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/FINITE_CLOCK_GINIBRE_FREE_STATE_AND_STATIC_CHARGE_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "dependency_rationale": "Supplied finite-clock Villain law; linked bounded constructive predecessors supply only their explicit hypotheses and conclusions."
+    }
+  ],
+  "supporting_proofs": [],
+  "non_science_notes": [
+    {
+      "path": "docs/work_history/review_loop/pr8145/8140-clock-static-charge-20260915-CONFORMANCE.md",
+      "rationale": "Exact historical author provenance or archive index, no autonomous current scientific authority.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8145-final-source-review.json",
+        "sha256": "80e3822baa50703d065a2d129f578228d844470bff49f00a59148bf764fc15b0"
+      }
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8145/8140-clock-static-charge-20260915-HANDOFF.md",
+      "rationale": "Exact historical author provenance or archive index, no autonomous current scientific authority.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8145-final-source-review.json",
+        "sha256": "80e3822baa50703d065a2d129f578228d844470bff49f00a59148bf764fc15b0"
+      }
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8145/8140-clock-static-charge-20260915-TRACE_GATE.md",
+      "rationale": "Exact historical author provenance or archive index, no autonomous current scientific authority.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8145-final-source-review.json",
+        "sha256": "80e3822baa50703d065a2d129f578228d844470bff49f00a59148bf764fc15b0"
+      }
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8145/8144-static-charge-transfer-sector-20260915-CONFORMANCE.md",
+      "rationale": "Exact historical author provenance or archive index, no autonomous current scientific authority.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8145-final-source-review.json",
+        "sha256": "80e3822baa50703d065a2d129f578228d844470bff49f00a59148bf764fc15b0"
+      }
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8145/8144-static-charge-transfer-sector-20260915-HANDOFF.md",
+      "rationale": "Exact historical author provenance or archive index, no autonomous current scientific authority.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8145-final-source-review.json",
+        "sha256": "80e3822baa50703d065a2d129f578228d844470bff49f00a59148bf764fc15b0"
+      }
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8145/8145-clock-history-field-20260915-CONFORMANCE.md",
+      "rationale": "Exact historical author provenance or archive index, no autonomous current scientific authority.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8145-final-source-review.json",
+        "sha256": "80e3822baa50703d065a2d129f578228d844470bff49f00a59148bf764fc15b0"
+      }
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8145/8145-clock-history-field-20260915-HANDOFF.md",
+      "rationale": "Exact historical author provenance or archive index, no autonomous current scientific authority.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8145-final-source-review.json",
+        "sha256": "80e3822baa50703d065a2d129f578228d844470bff49f00a59148bf764fc15b0"
+      }
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8145/README.md",
+      "rationale": "Exact historical author provenance or archive index, no autonomous current scientific authority.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8145-final-source-review.json",
+        "sha256": "80e3822baa50703d065a2d129f578228d844470bff49f00a59148bf764fc15b0"
+      }
+    }
+  ]
+}

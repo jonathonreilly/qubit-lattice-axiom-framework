@@ -1,0 +1,118 @@
+{
+  "kind": "same_session_post_integration_compatibility_finding",
+  "prior_final_report": {
+    "path": "/private/tmp/review-drain-20260915/drain8161-final-review.json",
+    "sha256": "ecada41b55bc9181115910733f4aed6abe2aa257a50d464be0b6feb01ffc583c"
+  },
+  "source_head": "ff3ef9f5ef0cc4fb027351366e16e1c347cda143",
+  "source_tree": "2448b62babc3ef6526342e419301649e4cd77b0b",
+  "finding": "Schema2 review receipt ownership did not prevent production graph discovery from making diagnostic an autonomous default_positive_theorem with no runner and reciprocal owner edge. Prior source mathematics verdict stands; packaging compatibility reopened, no landing PASS.",
+  "observed_graph_nodes": {
+    "rotor_fixed_coupling_gauss_characteristic_identity_supporting_proof_2026-09-16": {
+      "claim_id": "rotor_fixed_coupling_gauss_characteristic_identity_supporting_proof_2026-09-16",
+      "claim_type_author_hint": null,
+      "claim_type_author_hint_raw": null,
+      "claim_type_seed_hint": null,
+      "deps": [
+        "rotor_global_gauss_dressing_coulomb_variational_compression_bounded_theorem_note_2026-09-16",
+        "work_history.review_loop.pr8161.readme"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "738c65680f822f85a7616ba1c38fb8eb34669c6f4703bd08eaa0a0063dc6c574",
+      "path": "docs/ROTOR_FIXED_COUPLING_GAUSS_CHARACTERISTIC_IDENTITY_SUPPORTING_PROOF_2026-09-16.md",
+      "runner_path": null,
+      "title": "Volume and infrared scale are separate questions"
+    },
+    "rotor_global_gauss_dressing_coulomb_variational_compression_bounded_theorem_note_2026-09-16": {
+      "claim_id": "rotor_global_gauss_dressing_coulomb_variational_compression_bounded_theorem_note_2026-09-16",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "work_history.review_loop.pr8161.readme",
+        "rotor_fixed_coupling_gauss_characteristic_identity_supporting_proof_2026-09-16"
+      ],
+      "helper_runner_paths": [
+        "scripts/rotor_gauss_charged_ring_compression_2026_09_16.py"
+      ],
+      "note_hash": "206f4bd10af56a9a9bad151eba24cf6957e65efbb7e4e9a48a1519b87a4423d3",
+      "path": "docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "runner_path": "scripts/rotor_gauss_affine_theta_check_2026_09_16.py",
+      "title": "Global Gauss dressing and its Coulomb variational compression"
+    }
+  },
+  "observed_ledger": {
+    "audit_date": null,
+    "audit_invocation_history": [],
+    "audit_invocation_id": null,
+    "audit_state_snapshot": null,
+    "audit_status": "unaudited",
+    "auditor": null,
+    "auditor_confidence": null,
+    "auditor_family": null,
+    "auditor_model": null,
+    "auditor_reasoning_effort": null,
+    "blocker": null,
+    "chain_closes": null,
+    "chain_closure_explanation": null,
+    "claim_id": "rotor_fixed_coupling_gauss_characteristic_identity_supporting_proof_2026-09-16",
+    "claim_scope": null,
+    "claim_type": "positive_theorem",
+    "claim_type_author_hint": null,
+    "claim_type_author_hint_raw": null,
+    "claim_type_last_reviewed": null,
+    "claim_type_provenance": "default_positive_theorem",
+    "criticality": "leaf",
+    "cross_confirmation": null,
+    "decoration_parent_claim_id": null,
+    "deps": [
+      "rotor_global_gauss_dressing_coulomb_variational_compression_bounded_theorem_note_2026-09-16"
+    ],
+    "direct_in_degree": 1,
+    "effective_status": "unaudited",
+    "effective_status_reason": "awaiting_audit",
+    "helper_runner_paths": [],
+    "independence": null,
+    "intrinsic_status": "unaudited",
+    "load_bearing_score": 2.5,
+    "load_bearing_step": null,
+    "load_bearing_step_class": null,
+    "max_descendant_status": "audit_in_progress",
+    "max_descendant_status_rank": 30,
+    "note_hash": "738c65680f822f85a7616ba1c38fb8eb34669c6f4703bd08eaa0a0063dc6c574",
+    "note_path": "docs/ROTOR_FIXED_COUPLING_GAUSS_CHARACTERISTIC_IDENTITY_SUPPORTING_PROOF_2026-09-16.md",
+    "notes_for_re_audit_if_any": null,
+    "open_dependency_paths": [],
+    "previous_audits": [],
+    "prose_corrections": [],
+    "prose_status": "not_evaluated_pre_vocab_lint",
+    "runner_check_breakdown": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "total_pass": 0
+    },
+    "runner_path": null,
+    "title": "Volume and infrared scale are separate questions",
+    "transitive_descendants": 3,
+    "verdict_rationale": null
+  },
+  "recommended_fix": "Move complete short scientific diagnostic into named appendix of Gauss owner; remove separate newly added proof Markdown only; replace link with appendix reference; affine input owner-only; update historical recovery/dispositions to explain exact canonical appendix recovery. Preserve47original archives and all previous receipts.",
+  "science_assessment": "Same exact Gauss exponentiation identity and local bounded characteristic mismatch under fixed g and fixed probes; retain rescaling caveat. Consolidation changes no hypotheses or proof and does not discard or duplicate unique science.",
+  "recapture_scope": {
+    "refresh": [
+      "affine",
+      "ring",
+      "vertex",
+      "infrared"
+    ],
+    "reason": "Gauss note is declared input of each, affine source changes and vertex imports affine",
+    "reuse": [
+      "coupled"
+    ],
+    "condition": "Exact unchanged source/input/cache identity verified"
+  },
+  "reviewer_execution": "read-only graph/ledger/source inspection; no primary/fullpipeline/audit/source mutation",
+  "next": "Freeze corrected source and actual graph/input closure for original same-session cold before four justified captures; final evidence confirmation thereafter."
+}

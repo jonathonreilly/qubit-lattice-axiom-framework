@@ -1,0 +1,72 @@
+diff --git a/docs/ROTOR_FIXED_COUPLING_GAUSS_CHARACTERISTIC_IDENTITY_SUPPORTING_PROOF_2026-09-16.md b/docs/ROTOR_FIXED_COUPLING_GAUSS_CHARACTERISTIC_IDENTITY_SUPPORTING_PROOF_2026-09-16.md
+deleted file mode 100644
+index d947880252..0000000000
+--- a/docs/ROTOR_FIXED_COUPLING_GAUSS_CHARACTERISTIC_IDENTITY_SUPPORTING_PROOF_2026-09-16.md
++++ /dev/null
+@@ -1,15 +0,0 @@
+-# Volume and infrared scale are separate questions
+-
+-This diagnostic is an exact identity inside the supplied charged rotor model, not a separate scientific milestone or axiom no-go. At fixed g>0, write P_e=g E_e. Exact Gauss law implies, for every finite vertex test f and every real t,
+-
+-    exp[i t sum_e (D* f)_e P_e] = exp[i t g sum_x f_x Q_x]
+-
+-on the physical space. Both observables are bounded and local if f has finite support. In a free transverse Maxwell gauge state the left expectation is one. A free matter state with a nontrivial distribution of Q(f) has a right characteristic function different from one for some t. Thus merely increasing volume at fixed g cannot yield the decoupled local Maxwell/free-matter state specified by those two reference properties, with those same observables and fixed normalization. This conclusion does not require convergence of unbounded electric moments.
+-
+-An infrared rescaling changes the probes and may also induce a running effective coupling. The identity above does not rule out an emergent free or weakly interacting macroscopic limit. Proving that limit requires the appropriately scaled charge/current correlations and their coupling to the gauge field. The Coulomb term in the new variational compression preserves this distinction.
+-
+-## Ownership and scope
+-
+-This is a supporting proof owned by the [global Gauss-dressing theorem](ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md). The operator identity follows by exponentiating the exact Gauss constraint on the physical space; the mismatch concerns these fixed local bounded probes at fixed g. It excludes no rescaled macroscopic theory.
+-
+-[Original recovery](work_history/review_loop/pr8161/README.md) and [exact manifest](work_history/review_loop/pr8161/original-manifest.json) preserve all original proofs, working notes, programs and outputs.
+diff --git a/docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md b/docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md
+index 5ec1bff88f..cc86409810 100644
+--- a/docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md
++++ b/docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -298,8 +298,20 @@ N8: earlier bounded-time weak-coupling results do not identify the fixed-g inter
+ [Original recovery](work_history/review_loop/pr8161/README.md) and [exact manifest](work_history/review_loop/pr8161/original-manifest.json) preserve all original proofs, working notes, programs and outputs.
+ 
+ Canonical caches: [rotor_gauss_affine_theta_check_2026_09_16](../logs/runner-cache/rotor_gauss_affine_theta_check_2026_09_16.txt), [rotor_gauss_charged_ring_compression_2026_09_16](../logs/runner-cache/rotor_gauss_charged_ring_compression_2026_09_16.txt). These must match the current source/input bytes.
+-The [bounded Gauss characteristic identity](ROTOR_FIXED_COUPLING_GAUSS_CHARACTERISTIC_IDENTITY_SUPPORTING_PROOF_2026-09-16.md) preserves the distinct volume-versus-scale diagnostic in full.
++The appendix below preserves the distinct volume-versus-scale diagnostic in full.
+ 
+ ## Preserved numerical limitations
+ 
+ The historical g=1.8 affine challenge retained an approximately1.8e-7 derivative discrepancy at its smaller dual cutoff; it was not a rigorous tail interval. Original numerical records, including cutoff limitations, remain byte-exact in recovery. The charged-ring calculation measures off-space leakage separately from compression error; a small compressed error does not bound that leakage.
++
++## Appendix: volume and infrared scale are separate questions
++
++This diagnostic is an exact identity inside the supplied charged rotor model, not a separate scientific milestone or axiom no-go. At fixed g>0, write P_e=g E_e. Exact Gauss law implies, for every finite vertex test f and every real t,
++
++    exp[i t sum_e (D* f)_e P_e] = exp[i t g sum_x f_x Q_x]
++
++on the physical space. Both observables are bounded and local if f has finite support. In a free transverse Maxwell gauge state the left expectation is one. A free matter state with a nontrivial distribution of Q(f) has a right characteristic function different from one for some t. Thus merely increasing volume at fixed g cannot yield the decoupled local Maxwell/free-matter state specified by those two reference properties, with those same observables and fixed normalization. This conclusion does not require convergence of unbounded electric moments.
++
++An infrared rescaling changes the probes and may also induce a running effective coupling. The identity above does not rule out an emergent free or weakly interacting macroscopic limit. Proving that limit requires the appropriately scaled charge/current correlations and their coupling to the gauge field. The Coulomb term in the new variational compression preserves this distinction.
++
++This argument belongs to the supplied-model Gauss-dressing result above. The operator identity follows by exponentiating the exact Gauss constraint on the physical space; the mismatch concerns fixed local bounded probes at fixed g and excludes no rescaled macroscopic theory.
+diff --git a/docs/work_history/review_loop/pr8161/README.md b/docs/work_history/review_loop/pr8161/README.md
+index f42926668f..f2d21a2ead 100644
+--- a/docs/work_history/review_loop/pr8161/README.md
++++ b/docs/work_history/review_loop/pr8161/README.md
+@@ -2,6 +2,6 @@
+ 
+ All47 original path/mode/blob versions are preserved byte-exact as deterministic gzip payloads. The manifest binds original and archive SHA-256. Decode gzip to recover the complete originals; historical outputs and all30 mutation failures are not current executions. The manifest and archived payloads preserve original source independently of branch retention.
+ 
+-The four complete final arguments are canonical supplied-model notes. The unique volume-versus-scale characteristic-function argument is a canonical supporting proof. Working affine Gaussian topology/overlap/moment/cluster/compression lemmas are retained in the full Gauss-dressing proof; centered-sector/mean-difference lemmas in the orthogonal-reference proof; denominator/Ward/node-count lemmas in the coupled-resolvent proof. Original working versions remain exact here.
++The four complete final arguments are canonical supplied-model notes. The unique volume-versus-scale characteristic-function argument is retained in full in the canonical Gauss-dressing note’s appendix. Working affine Gaussian topology/overlap/moment/cluster/compression lemmas are retained in the full Gauss-dressing proof; centered-sector/mean-difference lemmas in the orthogonal-reference proof; denominator/Ward/node-count lemmas in the coupled-resolvent proof. Original working versions remain exact here.
+ 
+ Cutoff limitations, off-space leakage and the squared-norm phase blindness remain in the live proof/evidence discussions. Planning records and old review language supply provenance only.
+diff --git a/scripts/rotor_gauss_affine_theta_check_2026_09_16.py b/scripts/rotor_gauss_affine_theta_check_2026_09_16.py
+index 5ea34963a8..dd075c156f 100644
+--- a/scripts/rotor_gauss_affine_theta_check_2026_09_16.py
++++ b/scripts/rotor_gauss_affine_theta_check_2026_09_16.py
+@@ -3,7 +3,7 @@
+ Finite sums and cutoff comparisons are numerical evidence, not uniform proofs.
+ """
+ AUDIT_TIMEOUT_SEC = 180
+-AUDIT_INPUT_PATHS = ('docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/ROTOR_FIXED_COUPLING_GAUSS_CHARACTERISTIC_IDENTITY_SUPPORTING_PROOF_2026-09-16.md')
++AUDIT_INPUT_PATHS = ('docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md')
+ import hashlib,itertools,json,math,time
+ from pathlib import Path
+ 

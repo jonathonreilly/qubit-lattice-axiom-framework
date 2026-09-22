@@ -1,0 +1,21 @@
+{
+  "runner": "scripts/gauge_wilson_static_source_dirichlet_controls_2026_09_07.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "PASS gauge_wilson_static_source_dirichlet_controls_2026_09_07.py\nper_element: PASS 10 checks; eight SU3 generators,64 trace pairings and Casimir\nper_site: PASS 3 checks; three exact SU3 path matrices\nper_mode: PASS 20 checks; two orientations, cross traces and exact electric increments\nper_block: PASS 8 checks; U1 adverse and finite ghost/gauge creation toys\nlattice_wide: checked and not executed \u2014 imported coordinate/domain theorem and uniform estimate remain analytical; 1 finite toy/resource controls only; positive resources; no imported-theorem or infinite-volume proof\nTOTAL: PASS=42 FAIL=0\nseconds: 0.31343308300711215; rss_MiB: 62.609375\nsource_sha256: 4c8d118b9199baf2fea36712b5ef1d2131df90bb80f9f3c98441b4348712dac5\n",
+  "stderr": "",
+  "elapsed_sec": 0.4724140167236328,
+  "timeout_sec": 180,
+  "live_log": "/private/tmp/review-drain-20260915/author-draft-slot/logs/runner-cache/.in-progress/gauge_wilson_static_source_dirichlet_controls_2026_09_07.txt",
+  "whole_tree_watchdog": {
+    "limit_bytes": 188743680,
+    "interval_sec": 0.02,
+    "root_pid": 23741,
+    "samples": 9,
+    "peak_tree_rss_bytes": 94846976,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8028-capture.py",
+  "capture_script_sha256": "2cbf9dd806ce34f0d22831c16d5e31ed7c55039fde3ce33e874eb2c5c40faebd"
+}

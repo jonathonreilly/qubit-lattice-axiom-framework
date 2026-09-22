@@ -1,0 +1,21 @@
+{
+  "runner": "scripts/gauge_wilson_static_source_sector_controls_2026_09_07.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "PASS gauge_wilson_static_source_sector_controls_2026_09_07.py\nper_element: PASS 1 checks; actual unit cube geometry\nper_site: PASS 6 checks; boundary Gauss and ghost-shortcut controls\nper_mode: PASS 5 checks; nine-source norm inequality controls\nper_block: PASS 12 checks; three complete affine cube source-flow censuses\nlattice_wide: checked and not executed \u2014 imported coordinate/domain theorem and uniform estimate remain analytical; 8 finite toy/resource controls only; seven explicit resolvent/sector toys and resources; no imported-theorem proof\nTOTAL: PASS=32 FAIL=0\nseconds: 0.013029374997131526; rss_MiB: 22.125\nsource_sha256: 436817eaf370cbca3e8e197154ed8b05c8ac6af19e81ccace2e8fdea058d8476\n",
+  "stderr": "",
+  "elapsed_sec": 0.14122509956359863,
+  "timeout_sec": 180,
+  "live_log": "/private/tmp/review-drain-20260915/author-draft-slot/logs/runner-cache/.in-progress/gauge_wilson_static_source_sector_controls_2026_09_07.txt",
+  "whole_tree_watchdog": {
+    "limit_bytes": 188743680,
+    "interval_sec": 0.02,
+    "root_pid": 23741,
+    "samples": 4,
+    "peak_tree_rss_bytes": 55771136,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8028-capture.py",
+  "capture_script_sha256": "2cbf9dd806ce34f0d22831c16d5e31ed7c55039fde3ce33e874eb2c5c40faebd"
+}

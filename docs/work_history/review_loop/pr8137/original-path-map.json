@@ -1,0 +1,52 @@
+[
+  {
+    "original": ".claude/science/physics-loops/possibility-symmetric-order-dependence-20260915/STATE.yaml",
+    "stored": "docs/work_history/review_loop/pr8137/PR8137_STATE.yaml",
+    "sha256": "c7b0ce169245dbd4504920030670ea96468d48456cec8effecb7c4abbc673715"
+  },
+  {
+    "original": ".claude/science/physics-loops/possibility-symmetric-order-dependence-20260915/ASSUMPTIONS_AND_IMPORTS.md",
+    "stored": "docs/work_history/review_loop/pr8137/PR8137_ASSUMPTIONS_AND_IMPORTS.md",
+    "sha256": "8834b8511e15832e5ab64412ae0b9db322cc81c4fbff6b0970b47c143b595858"
+  },
+  {
+    "original": ".claude/science/physics-loops/possibility-symmetric-order-dependence-20260915/CLAIM_STATUS_CERTIFICATE.md",
+    "stored": "docs/work_history/review_loop/pr8137/PR8137_CLAIM_STATUS_CERTIFICATE.md",
+    "sha256": "44a1fd617c3e892e0f3c0289b4be1845841c966c87946756e9400c8ab9b5bb80"
+  },
+  {
+    "original": ".claude/science/physics-loops/possibility-symmetric-order-dependence-20260915/APPROACH_REGISTRY.md",
+    "stored": "docs/work_history/review_loop/pr8137/PR8137_APPROACH_REGISTRY.md",
+    "sha256": "9d3e12439a91b3b4c95e25758c8cfe3efdd73b2dd30910f607e8af99395d514f"
+  },
+  {
+    "original": ".claude/science/physics-loops/possibility-symmetric-order-dependence-20260915/TRACE_GATE.md",
+    "stored": "docs/work_history/review_loop/pr8137/PR8137_TRACE_GATE.md",
+    "sha256": "f560f87e2759cb22ab7a1a37a47e61b513d5d0cf447fd7055d9cdf3cd50169db"
+  },
+  {
+    "original": ".claude/science/physics-loops/possibility-symmetric-order-dependence-20260915/GOAL.md",
+    "stored": "docs/work_history/review_loop/pr8137/PR8137_GOAL.md",
+    "sha256": "748e84b8dfdaf43d61bcf719faa0a081eb5efda51d11ab84e0f7743319091b30"
+  },
+  {
+    "original": ".claude/science/physics-loops/possibility-symmetric-order-dependence-20260915/REVIEW_HISTORY.md",
+    "stored": "docs/work_history/review_loop/pr8137/PR8137_REVIEW_HISTORY.md",
+    "sha256": "58cf68596310d221ce9e32c55bd3a35d69047d869da8c1ab356cb6e768a9825b"
+  },
+  {
+    "original": ".claude/science/physics-loops/possibility-symmetric-order-dependence-20260915/OPPORTUNITY_QUEUE.md",
+    "stored": "docs/work_history/review_loop/pr8137/PR8137_OPPORTUNITY_QUEUE.md",
+    "sha256": "550994b9ce9d8f17da4123afc8ad79dd765729da038ffc179bd3dd1751cf3834"
+  },
+  {
+    "original": ".claude/science/physics-loops/possibility-symmetric-order-dependence-20260915/HANDOFF.md",
+    "stored": "docs/work_history/review_loop/pr8137/PR8137_HANDOFF.md",
+    "sha256": "54c6d596f0caab0e4ed4605eac346f56f81987d53b16ca8eeb222043f8108bae"
+  },
+  {
+    "original": ".claude/science/physics-loops/possibility-symmetric-order-dependence-20260915/ROUTE_PORTFOLIO.md",
+    "stored": "docs/work_history/review_loop/pr8137/PR8137_ROUTE_PORTFOLIO.md",
+    "sha256": "57fa47686d664f3da4cbf8a578f5634ec4de223124325fd9ed80ba1a40254823"
+  }
+]

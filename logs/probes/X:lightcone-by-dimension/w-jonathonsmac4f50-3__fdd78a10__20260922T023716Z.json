@@ -1,0 +1,32 @@
+{
+ "task": "X:lightcone-by-dimension",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 formation_levelplane.py 4s sphere 0.2 16 2000 1000 1",
+ "seed": 44636,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fdd78a10",
+ "started_utc": "20260922T023716Z",
+ "elapsed_s": 18.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=4 menu=sphere beta=0.2 L=16 T=2000 plateau_|m|=0.0043 lowk_ratio=0.0960 seconds=18"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "The dichotomy by dimension with a symmetric past: 1+1 and 2+1 (no memory expected), 3+1, 4+1. Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; a trailing s on dim = symmetric light-cone past). GRID UNITS: the 22 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "4847fb58777749578dc2925bf9abcd3602ac7fc2fc3456fc01015da4ce1c8ec4",
+ "stdout_tail": "e Z^5) menu=sphere beta=0.2 L=16 T=2000 T0=1000 seed=1; predecessors n=9; sigma^2=0.278126\nmemory table: level, |m|, m.e0\n         1  0.5006  +0.5006\n         2  0.2767  +0.2767\n         3  0.1580  +0.1580\n         4  0.0910  +0.0910\n         5  0.0508  +0.0508\n         7  0.0105  +0.0104\n         9  0.0059  +0.0041\n        13  0.0052  -0.0020\n        17  0.0061  -0.0020\n        24  0.0034  -0.0021\n        33  0.0019  -0.0017\n        45  0.0060  -0.0053\n        61  0.0064  -0.0031\n        84  0.0054  -0.0012\n       116  0.0052  -0.0035\n       159  0.0030  +0.0014\n       218  0.0064  +0.0030\n       299  0.0045  -0.0035\n       411  0.0032  -0.0005\n       563  0.0058  +0.0010\n       773  0.0029  +0.0011\n      1062  0.0029  +0.0005\n      1457  0.0007  -0.0004\n      2000  0.0028  +0.0003\nequal-level transverse structure factor S_0(k) / [sigma^2/(1-|phi|^2)] by |k| shell:\n   |k| in [0.3,0.6): 0.0960 (n=32)\n   |k| in [0.6,1.0): 0.2549 (n=200)\n   |k| in [1.0,1.5): 0.4812 (n=832)\n   |k| in [1.5,2.2): 0.7725 (n=3976)\n   |k| in [2.2,3.2): 1.0284 (n=16892)\n   |k| in [3.2,6.0): 1.1073 (n=43594)\nsite covariance without the zero mode along e_1: r, measured C(r), linear C(r), ratio\n     1  +0.003236  +0.020305  0.159\n     2  +0.001638  +0.011812  0.139\n     3  +0.000025  +0.003135  0.008\n     4  -0.000077  +0.001566  -0.049\n     6  -0.000019  +0.000354  -0.055\n     8  -0.000031  +0.000125  -0.247\nSUMMARY: dim=4 menu=sphere beta=0.2 L=16 T=2000 plateau_|m|=0.0043 lowk_ratio=0.0960 seconds=18\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260922T023734Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

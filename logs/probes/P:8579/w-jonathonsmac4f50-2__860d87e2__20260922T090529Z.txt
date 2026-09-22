@@ -1,0 +1,13 @@
+PR #8579: ail58: what a formation event does to the ledger and to the far field — the monopole never jumps, the dipole does (source-link direction, block 6)
+branch physics-loop/admissibility-induced-law-block58-what-a-formation-event-does-to-the-ledger-and-to-the-far-field-20260921 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_what_a_formation_event_does_to_the_ledger_and_to_the_far_field_2026_09_21.py: rc=0 PASS=14 FAIL=0
+   mutation record_keeps_the_bare_energy_and_the_ledger: expected B observed B ok
+   mutation any_ledger_fits_on_one_site: expected B observed B ok
+   mutation outside_sees_the_formation: expected C observed C ok
+   mutation wall_flux_moment_is_not_the_dipole: expected C observed C ok
+   mutation dipole_does_not_jump: expected D observed D ok
+   mutation probability_odds_hold_the_centre: expected D observed D ok
+   mutation records_only_leaves_the_outside_unchanged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

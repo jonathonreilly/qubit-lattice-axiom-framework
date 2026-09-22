@@ -1,0 +1,38 @@
+{
+ "task": "R:frontier_gauge_holonomy_suppresses_r_wrong_ordering_2026_06_15",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_gauge_holonomy_suppresses_r_wrong_ordering_2026_06_15.py",
+ "seed": 67731,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "42684ae0",
+ "started_utc": "20260922T090211Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=18 ALGEBRA_FAIL=0",
+   "PASS=4 CONDITIONAL_FAIL=0",
+   "PASS=22 FAIL=0"
+  ],
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "471f0b80009c08eed62c5dda5f00dc22d9b4ac0416df1c2f7e92c8ebc64fe026",
+ "stdout_tail": "ked -- the fibre-averaged generation operator is assembled entry by entry, M[i,j] = Tr(H block (i,j))/d_R, and the two entries that carry the result are read individually: a_eff = M[0,0] and b_eff = M[1,0] = b*chi_R(U)/d_R, giving r_R = |b_eff|^2/a_eff^2.\n  per_site: checked -- the generation 3-cycle C makes a closed three-site ring; the on-site term a*(I3 x I_dR) is verified link-blind (a_eff = a to 1e-12 in every rep) while only the hop C x U carries the holonomy, and by construction all three diagonal blocks are the same a*I_dR, so one is read.\n  per_mode: checked -- resolution runs over the fibre representation channels d_R = 1, 2, 3, 8 (trivial, U(2), U(3) >= SU(3)-fund, U(8) >= adjoint) separately; the d_R individual unit-modulus eigen-modes inside each channel are summed away by chi_R(U) = Tr_R(U) and never resolved.\n  per_block: checked -- each of the nine d_R x d_R generation blocks of H = a(I3 x I_dR) + b(C x U) + conj(b)(C^T x U^dag) is sliced out and traced over the fibre; the block trace is exactly where |chi_R(U)| <= d_R enters, and the bound survives 800 sampled unitaries across four d_R.\n  lattice_wide: checked and not executed -- U here is one closed based holonomy on a single loop, not a gauge configuration on an extended lattice; no volume, no loop family and no continuum limit is built, so the cap r_R <= r0 is proved pointwise in U and never lattice-wide.\n\nSCORECARD ALGEBRA_PASS=18 ALGEBRA_FAIL=0 CONDITIONAL_PASS=4 CONDITIONAL_FAIL=0\nTOTAL: PASS=22 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T090211Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

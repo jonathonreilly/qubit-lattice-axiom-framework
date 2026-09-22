@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19.py",
+ "seed": 67901,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "42684ae0",
+ "started_utc": "20260922T090501Z",
+ "elapsed_s": 7.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "75192050531ac9170698e8ca93235d947d5a0e5ccc248e03d2e7bceec99ab704",
+ "stdout_tail": "  [PASS] The factorized transfer has symmetric invertible M and strictly positive diagonal D_loc  (symmetry_error=2.220e-16, sigma_min=2.675e-01, d_min=8.821e-26)\n  [PASS] Every tail-orbit increment has a nonzero Gram factor; nonnegative sums prove arbitrary-tail Loewner monotonicity  (max_relative_gram_error=2.041e-16, min_nonzero_norm=3.036e-25, diagnostic_min_eigenvalue=-1.343e-18)\n  [PASS] Positive weighted mass, p-mass, and support separate zero from every nonzero tail generator  (strict positivity on all generators extends to every nonzero nonnegative orbit combination)\n  [PASS] Legacy tails A and B agree with the universal coefficient, functional, and PSD conclusions (regression only)  (massA=1.000e-01, massB=8.000e-02)\n\n======================================================================================================================\nRESULT\n======================================================================================================================\n  Bounded finite-cone result:\n    - all non-retained conjugation-orbit generators are exhausted\n    - their nonnegative cone is exactly the set of admissible tails\n    - rho_0 is the unique coefficient-order least extension\n    - strictly positive bulk-tail functionals uniquely select rho_0\n    - positive diagonal congruence proves Loewner monotonicity for every\n      admissible tail on W_5, with injectivity from M and D_loc\n    - no infinite-weight or physical environment-selection claim is made\n\nPASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T090508Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

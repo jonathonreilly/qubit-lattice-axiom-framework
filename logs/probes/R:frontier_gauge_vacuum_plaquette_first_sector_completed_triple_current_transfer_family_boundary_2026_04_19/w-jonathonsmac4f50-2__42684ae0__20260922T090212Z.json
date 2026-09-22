@@ -1,0 +1,38 @@
+{
+ "task": "R:frontier_gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_2026_04_19",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_2026_04_19.py",
+ "seed": 67732,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "42684ae0",
+ "started_utc": "20260922T090212Z",
+ "elapsed_s": 7.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=10 FAIL=0",
+   "PASS=10 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "abf5f5128b73a505241db4a9b05febe74ac68b9cee87e33f53081b6654196bfb",
+ "stdout_tail": "2` reproduces this runner's retained boundary-face reference value to 1e-9  (||c*Zhat - Z_min||=0.007578536497)\n  [PASS] the retained boundary corner is a strict local minimum: relaxing any of the three active edges into the interior strictly increases the gap  ((rel_tau_t,rel_tau_b,rel_ad)=(7.595174e-03,2.888595e-02,7.580871e-03))\n  [PASS] the retained boundary-face reference fit does not realize Z_min exactly: the diagnostic gap is strictly bounded away from zero (>= 1e-3)  (||c*Zhat - Z_min|| = 0.007578536497 > 1e-3)\n  [PASS] the note's prose conclusion (`no sampled grid point` `realizes the completed first-sector triple`, a `finite sampled-grid no-go`) is recorded with the repaired sampled-grid scope\n\n====================================================================================================================\nRESULT\n====================================================================================================================\n  Boundary-face diagnostic and sampled-grid scope:\n    - the retained boundary-face reference fit fixes lower tau_transfer,\n      upper tau_boundary, and lower asym_decay, with one interior\n      diagnostic optimum at linear_decay ~= 0.323966;\n    - the diagnostic gap ||c_best Zhat_best - Z_min||_2 = 7.578536496603e-03\n      is positive for that boundary-face reference fit;\n    - the parent note's binding negative claim is only the finite\n      sampled-grid no-go, not a continuous-family exclusion.\n\nPASS=10 FAIL=0\nSUMMARY: PASS=10 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T090220Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_2026_04_19.txt against the .txt beside this log"
+  ]
+ }
+}

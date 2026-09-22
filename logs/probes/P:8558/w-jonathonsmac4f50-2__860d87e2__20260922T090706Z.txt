@@ -1,0 +1,15 @@
+PR #8558: ail48: free capturing bodies are carried by the wind — capture law, anisotropic collisionless shadow, dilution law of motion and its window
+branch physics-loop/admissibility-induced-law-block48-free-capturing-bodies-law-of-motion-20260921 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_free_capturing_bodies_are_carried_by_the_wind_capture_law_anisotropic_collisionless_shadow_dilution_law_of_motion_2026_09_21.py: rc=0 PASS=20 FAIL=0
+   mutation capture_sample_unbiased: expected B observed B ok
+   mutation second_moment_wrong: expected B observed B ok
+   mutation plate_response_parallel: expected B observed B ok
+   mutation shadow_step_frequencies_wrong: expected C observed C ok
+   mutation simplex_integral_wrong: expected C observed C ok
+   mutation axis_multiplicity_one: expected C observed C ok
+   mutation collisionless_coefficient_isotropic: expected C observed C ok
+   mutation sweeping_brings_no_momentum: expected D observed D ok
+   mutation window_coefficient_wrong: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

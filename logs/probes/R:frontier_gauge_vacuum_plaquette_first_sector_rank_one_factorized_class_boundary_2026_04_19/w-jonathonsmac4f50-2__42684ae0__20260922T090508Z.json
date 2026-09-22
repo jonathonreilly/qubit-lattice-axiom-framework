@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_gauge_vacuum_plaquette_first_sector_rank_one_factorized_class_boundary_2026_04_19",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_factorized_class_boundary_2026_04_19.py",
+ "seed": 67908,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "42684ae0",
+ "started_utc": "20260922T090508Z",
+ "elapsed_s": 7.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3d13b00758fb4243b06cb57e8b94125b25ca73f238f6400febb77952f49253c7",
+ "stdout_tail": "         ||E_3 v_min - Z_min||=2.483e-16\n  [PASS] The explicit positive rank-one transfer T_min propagates e_0 to v_min at depth three\n         ||T_min^3 e_0-v_min||=1.127e-16\n  [PASS] The Wilson half-slice multiplier is invertible, so D_back = M^-1 T_min M^-1 is the unique pullback\n         (detM,recon_gap)=(1.000e+00,2.947e-16)\n  [PASS] The unique pullback is self-adjoint and conjugation-symmetric but not diagonal\n         offdiag_frob=0.250338180104\n  [PASS] The positive conjugation-symmetric diagonal-family search reproduces the archived boundary residual for v_min\n         best=(2.551923504031e-01,4.248354255292e-18,4.248354255292e-18), gap=0.135462193873\n  [PASS] The same best diagonal family point still misses the three-sample target, so the boundary is executable\n         sample_gap=0.228465894557\n\n================================================================================================================\nRESULT\n================================================================================================================\n  Executable boundary restored:\n    - T_min is an exact positive rank-one transfer realization of Z_min\n    - the unique Wilson half-slice pullback of T_min is not diagonal\n    - therefore that rank-one realization is not in the diagonal\n      factorized-class subfamily T = exp(3J) D exp(3J)\n    - the historical positive diagonal search residual is reproduced\n    - this runner restores the missing executable artifact for re-audit\n\nPASS=6 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T090515Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_gauge_vacuum_plaquette_first_sector_rank_one_factorized_class_boundary_2026_04_19.txt against the .txt beside this log"
+  ]
+ }
+}

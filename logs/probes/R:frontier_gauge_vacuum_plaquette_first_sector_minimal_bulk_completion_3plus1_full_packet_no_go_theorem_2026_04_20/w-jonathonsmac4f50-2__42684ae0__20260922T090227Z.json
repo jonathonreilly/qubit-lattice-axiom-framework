@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_2026_04_20",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_2026_04_20.py",
+ "seed": 67747,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "42684ae0",
+ "started_utc": "20260922T090227Z",
+ "elapsed_s": 8.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2523dbaf6e54d2ea590c89c97e85c75ab58cb628ea21b40620590ec67c6c0114",
+ "stdout_tail": "y interlacing, while the slice comparison uses the full sorted three-mode spectra.\nper_block: executed -- the load-bearing comparison is exactly between one retained 4x4 Hermitian block and a proposed 3x3 compression block. Violation of mu_1 <= lambda_2 or mu_2 <= lambda_3 rules out every real or complex orthonormal 3D compression of that selected ambient, and a separate sorted-spectrum L2 gap rules out unitary dressing of the chosen slice.\nlattice_wide: checked and not executed -- this is a fixed finite-matrix statement on one selected minimally-positive Wilson branch. No lattice extent, volume family, boundary-condition sweep, continuum limit, or thermodynamic limit is constructed, so the conclusion does not extend beyond the named 3d+1 ambient and full sparse-face packet.\n\n======================================================================================================================\nRESULT\n======================================================================================================================\n  Strong full-packet answer:\n    - exact full sparse-face packet matching is impossible on the retained\n      `3d+1` ambient of the selected Wilson branch\n    - the obstruction is structural, not a failed search: the target block\n      violates compression interlacing against the selected retained 4x4 block\n    - so the strongest attainable exact commutation on this ambient is the\n      reduced projected-source packet, not the full 9-channel packet\n\nPASS=4 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T090235Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

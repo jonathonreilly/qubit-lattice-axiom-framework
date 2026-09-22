@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_2026_04_20",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_2026_04_20.py",
+ "seed": 67808,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "42684ae0",
+ "started_utc": "20260922T090328Z",
+ "elapsed_s": 8.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "138f92e4403596eefca1acbbf740888d37341dfd76100301fbc690af8e441974",
+ "stdout_tail": "47, 0.050802315301299]\n  solution[1] singular values             = [13.376154377413, 1.081935978488, 0.557547192076]\n  solution[1] live residual norm          = 1.485e-15\n\n  [PASS] The bounded positive-angle solve returns exactly two retained-line roots on the selected branch  (count=2)\n  [PASS] Both solved roots are exact target-hitting retained-line solutions  (max_err=2.784e-15)\n  [PASS] The two solved roots are genuinely distinct as projective complement lines  (sep=1.143665)\n  [PASS] Each solved root is nondegenerate in the bounded angle chart  (min_sigma=0.252161)\n  [PASS] So the retained complement-line live equation has an isolated exact-solve doublet on the positive 3d+1 chart\n  [PASS] This replaces the old hardcoded witness use by an audited solve of the bounded target equation itself  (all later theorems can import the solved set rather than named witnesses)\n\n======================================================================================================================\nRESULT\n======================================================================================================================\n  Bounded-angle exact solve:\n    - the retained `3d+1` complement-line problem is now solved on the\n      positive-angle chart of the selected branch\n    - the exact target equation has an isolated two-point solution set there\n    - both roots are nondegenerate and can therefore be used as the genuine\n      multiplicity set for the later selector theorem\n\nPASS=6 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T090336Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_2026_04_20.txt against the .txt beside this log"
+  ]
+ }
+}

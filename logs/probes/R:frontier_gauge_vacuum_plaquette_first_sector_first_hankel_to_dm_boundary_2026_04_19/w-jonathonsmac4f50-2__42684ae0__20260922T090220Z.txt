@@ -1,0 +1,33 @@
+======================================================================================================================
+FIRST-JACOBI / FIRST-HANKEL EQUIVALENCE ON CANONICAL WILSON-SIDE PACKET
+(load-bearing checks only, post-2026-05-24 narrowing)
+======================================================================================================================
+
+Question (load-bearing):
+  On the canonical Wilson-side packet selected by the minimal-bulk-completion
+  packet theorem, does the first Jacobi layer (alpha0, beta1) coincide with the
+  first Hankel packet (m1, m2) via alpha0 = m1 and beta1^2 = m2 - m1^2?
+
+  selected (m1, m2)                           = (0.430754683575, 0.249382329102)
+  selected (alpha0, beta1)                    = (0.430754683575, 0.252651403480)
+  beta1 from moments sqrt(m2 - m1^2)           = 0.252651403480
+  Perron eigenvalue                           = 3.536529177387
+  transfer symmetry / Perron-swap errors      = (1.110e-16, 5.138e-16)
+  min eigenvalue(T_sel)                       = -3.699653e-16
+
+  [PASS] Canonical Wilson-side packet is finite and well-defined (m1, m2 finite, m2 > m1^2)  ((m1,m2)=(0.430755,0.249382), m2 - m1^2 = 6.383e-02)
+  [PASS] Selected packet has positive Perron eigenvalue, symmetric transfer operator, conjugation-symmetric Perron state, and beta1 > 0  ((eig,sym,psi_swap,eig_min,beta1)=(3.537e+00,1.110e-16,5.138e-16,-3.700e-16,2.527e-01))
+  [PASS] First Jacobi alpha0 equals first Hankel m1 to machine precision  (|alpha0 - m1| = 0.000e+00)
+  [PASS] First Jacobi beta1 equals sqrt(m2 - m1^2) to machine precision  (|beta1 - sqrt(m2 - m1^2)| = 2.776e-16)
+
+======================================================================================================================
+RESULT
+======================================================================================================================
+  Algebraic equivalence on the canonical Wilson-side packet:
+    (m1, m2)         = (0.430754683575, 0.249382329102)
+    (alpha0, beta1)  = (0.430754683575, 0.252651403480)
+    alpha0 = m1                          : exact (0.0e+00)
+    beta1  = sqrt(m2 - m1^2)             : exact (2.8e-16)
+
+PASS=4 FAIL=0
+SUMMARY: PASS=4 FAIL=0

@@ -1,0 +1,38 @@
+{
+ "task": "R:frontier_gauge_rep_channel_cannot_source_spread_2026_06_15",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_gauge_rep_channel_cannot_source_spread_2026_06_15.py",
+ "seed": 67731,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "42684ae0",
+ "started_utc": "20260922T090211Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=7 ALGEBRA_FAIL=0",
+   "PASS=10 CONDITIONAL_FAIL=0",
+   "PASS=17 FAIL=0"
+  ],
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5ccadd0113fcea183f4846e7e780c1ce955092d9c02f69fad953389dc0736d43",
+ "stdout_tail": "ate -- what this runner resolves\n  per_element: checked -- the resolved elements are the two supplied couplings (a, b): each of the four common scalars s = 0.3, 1.7, 5.0, 0.01 is applied and cancels in r to within 1e-12, and the control with distinct factors (3a, b) moves r by more than 0.1.\n  per_site: checked and not executed -- the generation circulant C (C^3 = I) is declared but never entered: every check evaluates r = |b|^2/a^2 from the two scalar couplings alone, so no matrix entry and no on-site-versus-hop split at any generation position is formed here.\n  per_mode: checked -- the modes that matter are the weak-isospin components inside one multiplet, u against d and nu against e; the colour rep is constant on them, and this runner separates u from d only by right-handed Y_R = 2/3 vs -1/3 and by the anchors 0.773 vs 0.597.\n  per_block: checked -- the four sectors are grouped into the two left-handed multiplet blocks Q_L = (3,2,1/6) and L_L = (1,2,-1/2); a colour-rep function is verified constant on each block, giving at most 2 classes against 3 distinct observed r values -- the counting bound.\n  lattice_wide: checked and not executed -- nothing in this runner extends beyond a finite table of 4 sectors and 2 unbroken-colour classes plus a scalar ratio identity; there is no lattice, no volume and no limit over which a lattice-wide statement could be formed or falsified.\n\nSCORECARD ALGEBRA_PASS=7 ALGEBRA_FAIL=0 CONDITIONAL_PASS=10 CONDITIONAL_FAIL=0\nTOTAL: PASS=17 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T090211Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

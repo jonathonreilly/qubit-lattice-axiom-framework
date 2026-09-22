@@ -1,0 +1,38 @@
+{
+ "task": "R:physical_m2_source_response_common_seam_cycle313_2026_07_18",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_m2_source_response_common_seam_cycle313_2026_07_18.py",
+ "seed": 68066,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "860d87e2",
+ "started_utc": "20260922T090746Z",
+ "elapsed_s": 0.5,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "812db155632a0b4edb7c3b0f1aead4d4f0fd0d65d8270cf733cfdab3cbba7eb9",
+ "stdout_tail": "me, Record'}\n\nNO-GO DISCIPLINE EXECUTABLE CONTROLS\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_m2_source_response_common_seam_cycle313_2026_07_18.py\", line 775, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_m2_source_response_common_seam_cycle313_2026_07_18.py\", line 763, in main\n    no_go_discipline_executable_controls()\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_m2_source_response_common_seam_cycle313_2026_07_18.py\", line 675, in no_go_discipline_executable_controls\n    lines = NOTE.read_text(encoding=\"utf-8\").lower().splitlines()\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1027, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1013, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/PHYSICAL_M2_SOURCE_RESPONSE_COMMON_SEAM_CYCLE313_NOTE_2026-07-18.md'\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T090746Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "automatic: the runner reads /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/PHYSICAL_M2_SOURCE_RESPONSE_COMMON_SEAM_CYCLE313_NOTE_2026-07-18.md, which is not in the tree at that path",
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T090746Z"
+ }
+}

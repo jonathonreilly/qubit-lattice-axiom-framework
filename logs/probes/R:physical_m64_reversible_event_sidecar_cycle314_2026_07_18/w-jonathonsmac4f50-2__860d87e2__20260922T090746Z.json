@@ -1,0 +1,32 @@
+{
+ "task": "R:physical_m64_reversible_event_sidecar_cycle314_2026_07_18",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/physical_m64_reversible_event_sidecar_cycle314_2026_07_18.py",
+ "seed": 68066,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "860d87e2",
+ "started_utc": "20260922T090746Z",
+ "elapsed_s": 3.5,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "162d69eb7125cbd800311d6039bdd6b42da30f6a9186382def18a7c694cecf49",
+ "stdout_tail": "y and local C_hist plus-space', 'exact physical coin/stream/contact/DSK intertwiners and event-parity decoder', 'cubic-scalar h covariance, translations, held size, leakage, deletions, and inverse erasure', 'one independent-swap quotient on five actual Cycle-312 bounded blocks'), 'supplied': ('all Cycle-311 fixed-reference, body-anchor, six-direction, port, f, r, coin, contact, and fixed-seam data', 'one zero-initialized ordinary h M2 per coarse cell', 'the number-conditioned diagonal matrix-unit constraint C_hist', 'the oriented coin-stream-contact update and declared input slice', 'Cycle-312 one-pair block supports and their support-independence certificate'), 'open': ('occurrence/identity, physical close, permanence, and Record formation', 'recurrent M64 volume update and glue to the Cycle-312 trace quotient', 'causal-axis existence/origin/compactification, intrinsic axis label, interval spacing, and rate', 'multi-event past-distinguishing memory and relational clock selection'), 'not_claimed': ('h parity, seam slice, substep count, graph depth, or host position as elapsed time', 'readable h or a coherent copy as a Record', 'a generator element or contact/coin phase as a rate or physical energy', 'a supplied update orientation or spatial direction as a derived time axis'), 'support_max_M2': 57, 'installed_M2_per_cell': 24, 'held_sizes': (3, 4, 5, 6), 'swap_quotient_executions': 3, 'authority': 'none', 'audit': 'unset', 'axiom_pressure': False}\nSUMMARY: 13 passed, 8 failed\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T090750Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

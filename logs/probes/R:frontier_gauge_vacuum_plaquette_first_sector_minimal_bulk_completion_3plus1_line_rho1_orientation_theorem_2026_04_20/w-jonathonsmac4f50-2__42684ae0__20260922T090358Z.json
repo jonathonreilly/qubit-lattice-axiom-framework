@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_orientation_theorem_2026_04_20",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_orientation_theorem_2026_04_20.py",
+ "seed": 67838,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "42684ae0",
+ "started_utc": "20260922T090358Z",
+ "elapsed_s": 8.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8561f607af7742b733df4e639127dc3c05c6dd33194605ceb747da9bd96ed50e",
+ "stdout_tail": "bient order is boundary-first with the preferred (1,0) slot first\n  [PASS] One solved line is the rho1-anchored member of the exact doublet: it loses far less of the preferred (1,0) boundary direction than the mirror member  ((loss10_A,loss10_B)=(0.000595,0.715664))\n  [PASS] The second solved line is the mirror member: it loses far less of the conjugate (0,1) boundary direction than the rho1 member  ((loss01_A,loss01_B)=(0.687142,0.003701))\n  [PASS] The same split appears in Grassmann projector geometry: the rho1 member is closer to the rho1 reference slice while the mirror member is closer to the rho2 slice  ((dA_rho1,dB_rho1,dA_rho2,dB_rho2)=(0.791022,1.411594,1.413793,0.754103))\n  [PASS] So the exact retained-line multiplicity collapses to a rho1/rho2 orientation question rather than arbitrary frame freedom\n\n======================================================================================================================\nRESULT\n======================================================================================================================\n  Rho1-orientation split of the exact line doublet:\n    - the solved retained-line doublet is not structureless\n    - one solved member is sharply `rho1`-anchored in the boundary-first ambient\n    - the other solved member is its mirror `rho2`-anchored partner\n    - so the existing Wilson-side `rho1` preference already collapses the\n      multiplicity to an orientation question rather than arbitrary frame freedom\n\nPASS=5 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T090406Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

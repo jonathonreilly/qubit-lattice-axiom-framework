@@ -1,0 +1,37 @@
+{
+ "task": "P:8558",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block48-free-c",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8558",
+ "pr": 8558,
+ "branch": "physics-loop/admissibility-induced-law-block48-free-capturing-bodies-law-of-motion-20260921",
+ "git_sha": "860d87e2",
+ "started_utc": "20260922T090706Z",
+ "elapsed_s": 4.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_free_capturing_bodies_are_carried_by_the_wind_capture_law_anisotropic_collisionless_shadow_dilution_law_of_motion_2026_09_21.py",
+    "returncode": 0,
+    "total": "PASS=20 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "75a0f60835869971e277c3a8103ba6aa708b218ebaca5ca70571e6fda1ff07db",
+ "stdout_tail": "PR #8558: ail48: free capturing bodies are carried by the wind \u2014 capture law, anisotropic collisionless shadow, dilution law of motion and its window\nbranch physics-loop/admissibility-induced-law-block48-free-capturing-bodies-law-of-motion-20260921 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_free_capturing_bodies_are_carried_by_the_wind_capture_law_anisotropic_collisionless_shadow_dilution_law_of_motion_2026_09_21.py: rc=0 PASS=20 FAIL=0\n   mutation capture_sample_unbiased: expected B observed B ok\n   mutation second_moment_wrong: expected B observed B ok\n   mutation plate_response_parallel: expected B observed B ok\n   mutation shadow_step_frequencies_wrong: expected C observed C ok\n   mutation simplex_integral_wrong: expected C observed C ok\n   mutation axis_multiplicity_one: expected C observed C ok\n   mutation collisionless_coefficient_isotropic: expected C observed C ok\n   mutation sweeping_brings_no_momentum: expected D observed D ok\n   mutation window_coefficient_wrong: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T090710Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

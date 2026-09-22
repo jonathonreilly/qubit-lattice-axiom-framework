@@ -1,0 +1,32 @@
+======================================================================================================================
+GAUGE-VACUUM PLAQUETTE FIRST-SECTOR FINITE-CONE MINIMAL-BULK COMPLETION THEOREM
+======================================================================================================================
+
+  finite box / tail slots / tail orbits       = 36 / 32 / 18
+  z00_min                                     = 0.349606952458
+  rho_ret                                     = [1.0, 0.267139565315, 0.267139565315, 0.0]
+  min diag(D_loc)                             = 8.821e-26
+  min singular value(M)                       = 2.675e-01
+
+  [PASS] The supplied retained packet directly satisfies the theorem's finite, normalized, nonnegative symmetry hypotheses  (rho11=0.000e+00, conjugation_error=0.000e+00)
+  [PASS] rho_0 is an admissible conjugation-symmetric extension and vanishes on every non-retained slot  (retained_match=0.000e+00, tail_nonzeros=0)
+  [PASS] The conjugation-orbit generators are nonnegative, disjoint, and cover every tail slot exactly once  (orbits=18, cover_error=0.0e+00)
+  [PASS] Every admissible tail has unique nonnegative orbit coordinates, proving rho_0 is the unique coefficient-order least extension  (coordinate_reconstruction_error=0.0e+00)
+  [PASS] The factorized transfer has symmetric invertible M and strictly positive diagonal D_loc  (symmetry_error=2.220e-16, sigma_min=2.675e-01, d_min=8.821e-26)
+  [PASS] Every tail-orbit increment has a nonzero Gram factor; nonnegative sums prove arbitrary-tail Loewner monotonicity  (max_relative_gram_error=2.041e-16, min_nonzero_norm=3.036e-25, diagnostic_min_eigenvalue=-1.343e-18)
+  [PASS] Positive weighted mass, p-mass, and support separate zero from every nonzero tail generator  (strict positivity on all generators extends to every nonzero nonnegative orbit combination)
+  [PASS] Legacy tails A and B agree with the universal coefficient, functional, and PSD conclusions (regression only)  (massA=1.000e-01, massB=8.000e-02)
+
+======================================================================================================================
+RESULT
+======================================================================================================================
+  Bounded finite-cone result:
+    - all non-retained conjugation-orbit generators are exhausted
+    - their nonnegative cone is exactly the set of admissible tails
+    - rho_0 is the unique coefficient-order least extension
+    - strictly positive bulk-tail functionals uniquely select rho_0
+    - positive diagonal congruence proves Loewner monotonicity for every
+      admissible tail on W_5, with injectivity from M and D_loc
+    - no infinite-weight or physical environment-selection claim is made
+
+PASS=8 FAIL=0

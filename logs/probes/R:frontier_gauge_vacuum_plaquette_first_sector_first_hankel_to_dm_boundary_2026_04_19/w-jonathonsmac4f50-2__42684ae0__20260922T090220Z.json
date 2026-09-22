@@ -1,0 +1,38 @@
+{
+ "task": "R:frontier_gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_2026_04_19",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_2026_04_19.py",
+ "seed": 67740,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "42684ae0",
+ "started_utc": "20260922T090220Z",
+ "elapsed_s": 7.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=4 FAIL=0",
+   "PASS=4 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "40e804310e2ca2503e4cea6dec4766f6bb66c805ec648c5e0891230dee03dd20",
+ "stdout_tail": "elected (alpha0, beta1)                    = (0.430754683575, 0.252651403480)\n  beta1 from moments sqrt(m2 - m1^2)           = 0.252651403480\n  Perron eigenvalue                           = 3.536529177387\n  transfer symmetry / Perron-swap errors      = (1.110e-16, 5.138e-16)\n  min eigenvalue(T_sel)                       = -3.699653e-16\n\n  [PASS] Canonical Wilson-side packet is finite and well-defined (m1, m2 finite, m2 > m1^2)  ((m1,m2)=(0.430755,0.249382), m2 - m1^2 = 6.383e-02)\n  [PASS] Selected packet has positive Perron eigenvalue, symmetric transfer operator, conjugation-symmetric Perron state, and beta1 > 0  ((eig,sym,psi_swap,eig_min,beta1)=(3.537e+00,1.110e-16,5.138e-16,-3.700e-16,2.527e-01))\n  [PASS] First Jacobi alpha0 equals first Hankel m1 to machine precision  (|alpha0 - m1| = 0.000e+00)\n  [PASS] First Jacobi beta1 equals sqrt(m2 - m1^2) to machine precision  (|beta1 - sqrt(m2 - m1^2)| = 2.776e-16)\n\n======================================================================================================================\nRESULT\n======================================================================================================================\n  Algebraic equivalence on the canonical Wilson-side packet:\n    (m1, m2)         = (0.430754683575, 0.249382329102)\n    (alpha0, beta1)  = (0.430754683575, 0.252651403480)\n    alpha0 = m1                          : exact (0.0e+00)\n    beta1  = sqrt(m2 - m1^2)             : exact (2.8e-16)\n\nPASS=4 FAIL=0\nSUMMARY: PASS=4 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T090227Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_gauge_vacuum_plaquette_first_sector_first_hankel_to_dm_boundary_2026_04_19.txt against the .txt beside this log"
+  ]
+ }
+}

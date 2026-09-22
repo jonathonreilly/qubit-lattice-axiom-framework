@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_closure_endpoint_2026_04_20",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_closure_endpoint_2026_04_20.py",
+ "seed": 67755,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "42684ae0",
+ "started_utc": "20260922T090235Z",
+ "elapsed_s": 52.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9c5a03b3c5d43f6203a8fa34aacb02b7a403328455ac55b8af69d30f550efd08",
+ "stdout_tail": "plex-Givens law yields exact reduced projected-source packet commutation  (packet4_err=5.477e-11)\n  [PASS] The strengthened retained-slice law lands on the live DM target exactly  (dist=3.007e-11)\n  [PASS] The exact reduced-packet dressing is canonical inside the audited G12\u00b7G13\u00b7G23 grammar by least distortion to the identity basis  (distortion=0.380086)\n  [PASS] So the strongest exact closure on this retained 3d+1 ambient is reduced projected-source closure plus live-target closure, not full 9-channel packet equality\n\n======================================================================================================================\nRESULT\n======================================================================================================================\n  Strong retained-ambient closure endpoint:\n    - canonical minimal-positive completion selects the Wilson branch\n    - the retained `3d+1` complement-line problem reduces to a rho1/rho2\n      orientation doublet solved directly on the bounded line chart\n    - the rho1 selector picks the canonical retained real slice\n    - inside that fixed slice, an exact least-distortion complex-Givens\n      dressing reproduces the full reduced projected-source packet\n      (E1,E2,S12,S13) and the live DM target exactly\n    - exact full 9-channel sparse-face packet equality is structurally\n      impossible on this retained `3d+1` ambient, so the reduced-packet\n      closure above is the strongest attainable closure here\n\nPASS=6 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T090328Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_closure_endpoint_2026_04_20.txt against the .txt beside this log"
+  ]
+ }
+}

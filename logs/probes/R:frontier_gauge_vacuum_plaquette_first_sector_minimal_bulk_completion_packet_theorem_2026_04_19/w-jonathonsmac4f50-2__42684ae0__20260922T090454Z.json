@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_2026_04_19",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_2026_04_19.py",
+ "seed": 67894,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "42684ae0",
+ "started_utc": "20260922T090454Z",
+ "elapsed_s": 7.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c69edca2004d9f21cba58c93675ad40527a6059f5f2f87b07824f1c4f1cf5396",
+ "stdout_tail": "igenvalue                           = 3.536529177387\n  transfer symmetry/swap/Perron-swap errors   = (1.110e-16, 4.441e-16, 5.138e-16)\n  min eigenvalue(T_sel)                       = -3.699653e-16\n\n  [PASS] The selected finite-box packet directly has zero mass in every non-retained slot  (max_abs_tail=0.0e+00)\n  [PASS] That selected extension yields one positive self-adjoint conjugation-symmetric factorized transfer operator  ((sym,swap,eig_min)=(1.110e-16,4.441e-16,-3.700e-16))\n  [PASS] Its Perron state is conjugation-symmetric and therefore defines one explicit first-layer Wilson/Perron packet  (psi_swap=5.138e-16)\n  [PASS] The selected first Jacobi layer is equivalent to the first-Hankel packet by alpha0=m1 and beta1^2=m2-m1^2  ((alpha0,beta1)=(0.430755,0.252651))\n  [PASS] So on the finite-cone zero-extension branch, the Wilson-side first-layer packet is explicit  ((m1,m2)=(0.430755,0.249382))\n\n======================================================================================================================\nRESULT\n======================================================================================================================\n  Selected Wilson/Perron packet on the finite-cone zero-extension branch:\n    - alpha0 = 0.430754683575373\n    - beta1  = 0.252651403479691\n    - m1     = 0.430754683575373\n    - m2     = 0.249382329102377\n    - this is now the explicit first-layer packet of the selected\n      factorized-class finite-cone zero-extension branch\n\nPASS=5 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T090501Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

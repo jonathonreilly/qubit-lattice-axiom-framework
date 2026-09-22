@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_gamma_full_vs_gamma_crit_decisive_nogo_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_gamma_full_vs_gamma_crit_decisive_nogo_2026_06_08.py",
+ "seed": 67730,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "42684ae0",
+ "started_utc": "20260922T090210Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b8dec1e826a94786095af715548faf9b243a9aa8dd0b816af46ffaaf42116df1",
+ "stdout_tail": "----------------\n   ... VERDICT: gamma ~ 0.15-0.34 (inflated over-estimate <= 0.58) is below the tight gamma_crit ~ 0.9-1.3, robustly\n   ... (to factor-2 c_v, max colour leak, large N_f, the IR regime, and the 9-decade delta_v_UV sweep). So the\n   ... continuous-time (xi->inf) horn's flow-suppression escape does NOT beat the tight bounds -- the residual D of\n   ... #3121 stands quantitatively. The boundary is asymptotic freedom: a walking plateau would close it but is\n   ... excluded for the framework's AF SU(3).\n   ... SCOPE: a no-go on the flow-suppression SUFFICIENCY of the xi->inf horn ONLY. On the xi=1 discrete surface the\n   ... cited B_4 boundary note gives delta_v=0 by the hypercubic point group, so BOTH horns of delta_v(xi) remain live.\n   ... This does NOT establish delta_v=0, is NOT a custodial mechanism, and is NOT a framework inconsistency.\n\n================================================================================================\nFills #3121 Part D's named open input (the fixed-point anomalous dimension): gamma < gamma_crit for the\ntight bounds, robust to the open coefficient. The xi->inf flow-suppression escape does not beat the bounds;\nboth horns of delta_v(xi) stay live (xi=1 gives delta_v=0 by the cited B_4 boundary). Sets no audit status.\n================================================================================================\nTOTAL: PASS=18 FAIL=0\n================================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T090211Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

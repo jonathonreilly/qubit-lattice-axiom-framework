@@ -1,0 +1,32 @@
+======================================================================================================================
+GAUGE-VACUUM PLAQUETTE FIRST-SECTOR MINIMAL-BULK COMPLETION PACKET
+======================================================================================================================
+
+Question:
+  What explicit Wilson/Perron first-layer packet is obtained on the
+  finite-cone zero-extension branch of the minimal-bulk principle?
+
+  selected alpha0,beta1                       = (0.430754683575, 0.252651403480)
+  selected m1,m2                              = (0.430754683575, 0.249382329102)
+  Perron eigenvalue                           = 3.536529177387
+  transfer symmetry/swap/Perron-swap errors   = (1.110e-16, 4.441e-16, 5.138e-16)
+  min eigenvalue(T_sel)                       = -3.699653e-16
+
+  [PASS] The selected finite-box packet directly has zero mass in every non-retained slot  (max_abs_tail=0.0e+00)
+  [PASS] That selected extension yields one positive self-adjoint conjugation-symmetric factorized transfer operator  ((sym,swap,eig_min)=(1.110e-16,4.441e-16,-3.700e-16))
+  [PASS] Its Perron state is conjugation-symmetric and therefore defines one explicit first-layer Wilson/Perron packet  (psi_swap=5.138e-16)
+  [PASS] The selected first Jacobi layer is equivalent to the first-Hankel packet by alpha0=m1 and beta1^2=m2-m1^2  ((alpha0,beta1)=(0.430755,0.252651))
+  [PASS] So on the finite-cone zero-extension branch, the Wilson-side first-layer packet is explicit  ((m1,m2)=(0.430755,0.249382))
+
+======================================================================================================================
+RESULT
+======================================================================================================================
+  Selected Wilson/Perron packet on the finite-cone zero-extension branch:
+    - alpha0 = 0.430754683575373
+    - beta1  = 0.252651403479691
+    - m1     = 0.430754683575373
+    - m2     = 0.249382329102377
+    - this is now the explicit first-layer packet of the selected
+      factorized-class finite-cone zero-extension branch
+
+PASS=5 FAIL=0

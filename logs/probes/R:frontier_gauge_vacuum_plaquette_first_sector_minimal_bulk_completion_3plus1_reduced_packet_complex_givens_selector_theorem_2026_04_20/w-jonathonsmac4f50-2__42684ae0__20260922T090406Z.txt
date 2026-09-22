@@ -1,0 +1,36 @@
+======================================================================================================================
+GAUGE-VACUUM PLAQUETTE FIRST-SECTOR MINIMAL-BULK COMPLETION 3D+1 REDUCED-PACKET COMPLEX-GIVENS SELECTOR
+======================================================================================================================
+
+Question:
+  On the canonical retained `3d` slice selected from the minimally-positive
+  Wilson branch, is there a finite-parameter internal unitary law that
+  exactly matches the reduced projected-source packet (E1,E2,S12,S13)?
+
+  exact-solution count in audited grammar      = 40
+  selected params                              = [-0.087963207142, 2.185388341023, 0.160925027517, -1.292429740918, -0.200074687201, 0.924832386372]
+  selected reduced packet                      = [0.49641143265, 0.686723396041, 1.041425490444, -0.239880851469]
+  selected distortion to identity              = 0.380085635943
+  next exact distortion                        = 0.392557523997
+  distortion gap                               = 0.012471888054
+
+  [PASS] The selected retained real slice admits exact reduced-packet commutation inside the finite complex-Givens grammar G12·G13·G23  (best_norm=5.477e-11)
+  [PASS] The selected complex-Givens dressing reproduces the exact reduced projected-source packet (E1,E2,S12,S13)  (packet_err=5.477e-11)
+  [PASS] Consequently the exact ordered even law (S12,S13) is now matched on the same selected retained slice  (pair_err=4.115e-11)
+  [PASS] Among the audited exact complex-Givens solutions, Frobenius distance to the identity has a strict minimum  (gap=0.012472)
+  [PASS] The selected exact reduced-packet dressing lands on the observed live DM target as well  (live_err=3.007e-11)
+
+======================================================================================================================
+RESULT
+======================================================================================================================
+  Stronger retained-slice law:
+    - keep the canonical selected Wilson branch and the canonical selected
+      retained `3d` slice from the complement-line theorem
+    - inside that fixed slice, solve the reduced projected-source packet
+      equation within the ordered complex-Givens grammar G12·G13·G23
+    - choose the exact solution with least Frobenius distortion to the
+      identity basis on that selected slice
+    - this yields exact reduced projected-source commutation and the live
+      DM target on the same selected retained slice
+
+PASS=5 FAIL=0

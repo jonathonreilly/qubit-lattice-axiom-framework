@@ -1,0 +1,36 @@
+======================================================================================================================
+GAUGE-VACUUM PLAQUETTE FIRST-SECTOR MINIMAL-BULK COMPLETION 3D+1 EXACT-SOLVE DOUBLET
+======================================================================================================================
+
+Question:
+  On the selected minimally-positive Wilson branch, what does the bounded
+  positive-angle solve of the retained live target equation actually return?
+
+  audited seed counts                         = (7, 5, 5)
+  solution[0] line                        = [0.496770595609683, 0.02439938623901, 0.82894044595913, 0.255893302651396]
+  solution[0] angles                      = [0.049076564903092, 1.030372243025666, 0.258771659866019]
+  solution[0] singular values             = [1.596924368339, 0.5172994552, 0.252160523707]
+  solution[0] live residual norm          = 2.784e-15
+  solution[1] line                        = [0.527310687348998, 0.845969286176726, 0.060833791226264, 0.05078046571476]
+  solution[1] angles                      = [1.013405067046255, 0.060950108356447, 0.050802315301299]
+  solution[1] singular values             = [13.376154377413, 1.081935978488, 0.557547192076]
+  solution[1] live residual norm          = 1.485e-15
+
+  [PASS] The bounded positive-angle solve returns exactly two retained-line roots on the selected branch  (count=2)
+  [PASS] Both solved roots are exact target-hitting retained-line solutions  (max_err=2.784e-15)
+  [PASS] The two solved roots are genuinely distinct as projective complement lines  (sep=1.143665)
+  [PASS] Each solved root is nondegenerate in the bounded angle chart  (min_sigma=0.252161)
+  [PASS] So the retained complement-line live equation has an isolated exact-solve doublet on the positive 3d+1 chart
+  [PASS] This replaces the old hardcoded witness use by an audited solve of the bounded target equation itself  (all later theorems can import the solved set rather than named witnesses)
+
+======================================================================================================================
+RESULT
+======================================================================================================================
+  Bounded-angle exact solve:
+    - the retained `3d+1` complement-line problem is now solved on the
+      positive-angle chart of the selected branch
+    - the exact target equation has an isolated two-point solution set there
+    - both roots are nondegenerate and can therefore be used as the genuine
+      multiplicity set for the later selector theorem
+
+PASS=6 FAIL=0

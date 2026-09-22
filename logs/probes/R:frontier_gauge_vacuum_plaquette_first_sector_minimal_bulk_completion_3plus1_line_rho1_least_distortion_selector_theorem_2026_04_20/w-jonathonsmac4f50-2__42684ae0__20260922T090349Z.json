@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_least_distortion_selector_theorem_2026_04_20",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_least_distortion_selector_theorem_2026_04_20.py",
+ "seed": 67829,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "42684ae0",
+ "started_utc": "20260922T090349Z",
+ "elapsed_s": 8.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bdeaade24a1523eb323c5feb9f6465e681e1f1841e5f1736194db90381b443f6",
+ "stdout_tail": "red-even split                   = (1.098655234032, -0.297110595087)\n\n  [PASS] The retained-line problem has reduced to a rho1/rho2 orientation doublet with two solved exact target-hitting lines  ((sep,max_err)=(1.143665,2.784e-15))\n  [PASS] Projection-Frobenius distortion to the rho1 reference slice has a unique strict minimizer on the solved set  (distances=[0.791022, 1.411594])\n  [PASS] Preferred boundary-anchor loss breaks the solved-set tie in the same direction  (anchor_losses=[0.000595, 0.715664])\n  [PASS] So the rho1-anchored least-distortion selector chooses one solved line uniquely from the full exact-solve set  (chosen_key=(0.791022,0.000595))\n  [PASS] The selected rho1-anchored least-distortion line reproduces the observed live DM target  (dist=2.784e-15)\n\n======================================================================================================================\nRESULT\n======================================================================================================================\n  New complement-line law:\n    - solve the retained `3d+1` complement-line problem on the selected\n      Wilson branch\n    - the full bounded exact-solve set is a rho1/rho2 orientation doublet\n    - choose the member with least Grassmann projection-distortion to the\n      rho1 reference slice, breaking any tie by smallest loss of the\n      preferred boundary anchor `(1,0)`\n    - this selects one canonical solved line and lands exactly on the live DM target\n\nPASS=5 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T090358Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_least_distortion_selector_theorem_2026_04_20.txt against the .txt beside this log"
+  ]
+ }
+}

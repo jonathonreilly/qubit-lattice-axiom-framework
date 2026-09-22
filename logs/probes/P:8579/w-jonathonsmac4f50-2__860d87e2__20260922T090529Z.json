@@ -1,0 +1,37 @@
+{
+ "task": "P:8579",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block58-what-a",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8579",
+ "pr": 8579,
+ "branch": "physics-loop/admissibility-induced-law-block58-what-a-formation-event-does-to-the-ledger-and-to-the-far-field-20260921",
+ "git_sha": "860d87e2",
+ "started_utc": "20260922T090529Z",
+ "elapsed_s": 84.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_what_a_formation_event_does_to_the_ledger_and_to_the_far_field_2026_09_21.py",
+    "returncode": 0,
+    "total": "PASS=14 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "8f75d89d0aedcf76b173df535c40b27cbec670e63f8b53e8ecfbd6648af87c34",
+ "stdout_tail": "PR #8579: ail58: what a formation event does to the ledger and to the far field \u2014 the monopole never jumps, the dipole does (source-link direction, block 6)\nbranch physics-loop/admissibility-induced-law-block58-what-a-formation-event-does-to-the-ledger-and-to-the-far-field-20260921 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_what_a_formation_event_does_to_the_ledger_and_to_the_far_field_2026_09_21.py: rc=0 PASS=14 FAIL=0\n   mutation record_keeps_the_bare_energy_and_the_ledger: expected B observed B ok\n   mutation any_ledger_fits_on_one_site: expected B observed B ok\n   mutation outside_sees_the_formation: expected C observed C ok\n   mutation wall_flux_moment_is_not_the_dipole: expected C observed C ok\n   mutation dipole_does_not_jump: expected D observed D ok\n   mutation probability_odds_hold_the_centre: expected D observed D ok\n   mutation records_only_leaves_the_outside_unchanged: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T090654Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

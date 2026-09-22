@@ -1,0 +1,36 @@
+[0] supplied algebra: H=aI+bC+conj(b)C^2, a!=0, r=|b|^2/a^2
+  ALGEBRA PASS  r and Q well-defined
+
+[A] common-scalar homogeneity: a supplied common scalar cancels in r
+  ALGEBRA PASS  common scalar s=0.3 leaves r invariant (cancels in ratio)
+  ALGEBRA PASS  common scalar s=1.7 leaves r invariant (cancels in ratio)
+  ALGEBRA PASS  common scalar s=5.0 leaves r invariant (cancels in ratio)
+  ALGEBRA PASS  common scalar s=0.01 leaves r invariant (cancels in ratio)
+  ALGEBRA PASS  CONTROL: distinct onsite/hopping factors move r
+
+[B] within-doublet rep-degeneracy: colour-rep functions give <= 2 classes (cannot split the spread)
+  CONDITIONAL PASS  colour rep gives exactly 2 classes over {e,nu,u,d} (colourless dim1 | coloured dim3)
+  CONDITIONAL PASS  within-doublet partners share the colour rep: f_colour(u)=f_colour(d)
+  CONDITIONAL PASS  within-doublet partners share the colour rep: f_colour(nu)=f_colour(e)
+  CONDITIONAL PASS  within-doublet partners share the FULL left-handed multiplet (3,2,1/6) / (1,2,-1/2)
+  CONDITIONAL PASS  observed coloured sectors have DISTINCT r (r_up != r_down) within one colour class
+  CONDITIONAL PASS  => a colour-rep function (1 value per colour class) CANNOT reproduce r_up != r_down (2-class bound violated)
+
+[C] named open comparator: abelian/EWSB data (right-handed Y / T3); other routes untested
+  CONDITIONAL PASS  right-handed hypercharge distinguishes the quark partners (Y_R(u) != Y_R(d))
+  CONDITIONAL PASS  r-ordering (e<d<u) does NOT match |Q|-ordering (d<u<e) => no monotone |Q| law (FIT)
+
+[D] firewall consistency checks: no r value forced; r is free registered data
+  CONDITIONAL PASS  Q(r)=1/3+2r/3 valid for all observed sector r (none forced)
+  ALGEBRA PASS  distinct free couplings give distinct valid r (r is a free input, never selected)
+  CONDITIONAL PASS  more distinct observed r (3) than unbroken-colour classes (2) => r is NOT a gauge-class function
+
+[E] N5 execution certificate -- what this runner resolves
+  per_element: checked -- the resolved elements are the two supplied couplings (a, b): each of the four common scalars s = 0.3, 1.7, 5.0, 0.01 is applied and cancels in r to within 1e-12, and the control with distinct factors (3a, b) moves r by more than 0.1.
+  per_site: checked and not executed -- the generation circulant C (C^3 = I) is declared but never entered: every check evaluates r = |b|^2/a^2 from the two scalar couplings alone, so no matrix entry and no on-site-versus-hop split at any generation position is formed here.
+  per_mode: checked -- the modes that matter are the weak-isospin components inside one multiplet, u against d and nu against e; the colour rep is constant on them, and this runner separates u from d only by right-handed Y_R = 2/3 vs -1/3 and by the anchors 0.773 vs 0.597.
+  per_block: checked -- the four sectors are grouped into the two left-handed multiplet blocks Q_L = (3,2,1/6) and L_L = (1,2,-1/2); a colour-rep function is verified constant on each block, giving at most 2 classes against 3 distinct observed r values -- the counting bound.
+  lattice_wide: checked and not executed -- nothing in this runner extends beyond a finite table of 4 sectors and 2 unbroken-colour classes plus a scalar ratio identity; there is no lattice, no volume and no limit over which a lattice-wide statement could be formed or falsified.
+
+SCORECARD ALGEBRA_PASS=7 ALGEBRA_FAIL=0 CONDITIONAL_PASS=10 CONDITIONAL_FAIL=0
+TOTAL: PASS=17 FAIL=0

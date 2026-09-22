@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_2026_04_20",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_2026_04_20.py",
+ "seed": 67846,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "42684ae0",
+ "started_utc": "20260922T090406Z",
+ "elapsed_s": 47.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ce6386bad62d51e315861a34d6b0fa7ca4e4f64c1a3fc920654d982b9b13a802",
+ "stdout_tail": "2471888054\n\n  [PASS] The selected retained real slice admits exact reduced-packet commutation inside the finite complex-Givens grammar G12\u00b7G13\u00b7G23  (best_norm=5.477e-11)\n  [PASS] The selected complex-Givens dressing reproduces the exact reduced projected-source packet (E1,E2,S12,S13)  (packet_err=5.477e-11)\n  [PASS] Consequently the exact ordered even law (S12,S13) is now matched on the same selected retained slice  (pair_err=4.115e-11)\n  [PASS] Among the audited exact complex-Givens solutions, Frobenius distance to the identity has a strict minimum  (gap=0.012472)\n  [PASS] The selected exact reduced-packet dressing lands on the observed live DM target as well  (live_err=3.007e-11)\n\n======================================================================================================================\nRESULT\n======================================================================================================================\n  Stronger retained-slice law:\n    - keep the canonical selected Wilson branch and the canonical selected\n      retained `3d` slice from the complement-line theorem\n    - inside that fixed slice, solve the reduced projected-source packet\n      equation within the ordered complex-Givens grammar G12\u00b7G13\u00b7G23\n    - choose the exact solution with least Frobenius distortion to the\n      identity basis on that selected slice\n    - this yields exact reduced projected-source commutation and the live\n      DM target on the same selected retained slice\n\nPASS=5 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T090454Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_2026_04_20.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,12 @@
+{
+  "primary": "scripts/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.py",
+  "timeout": 180,
+  "declared_inputs": [
+    "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_ZERO_FIELD_COMPONENT_FOURIER_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+  ],
+  "declared_input_fingerprint": "3f9f4b127313f51ab84bfd91367b1ff175e806069be251831b9e8846153523e9",
+  "cache_status": "missing",
+  "helpers": []
+}

@@ -1,0 +1,11 @@
+{
+  "kind": "coordinator capture resource deviation",
+  "proposed_process_tree_limit_bytes": 1073741824,
+  "configured_process_tree_limit_bytes": 3221225472,
+  "sampled_peak_bytes": 108527616,
+  "elapsed_seconds": 1.5767428874969482,
+  "execution_receipt_sha256": "a00d450d2a874496e8421deede2070c8c1204f99198eca196161c26773b5a935",
+  "capture_script_sha256": "559a2937b6de702e2508be7fb9c3070c4bf31bca066bc9f16da37e969cb88123",
+  "reason": "Capture adapter inherited previous discrete-model 3072MiB watchdog. Failed string replacement left original configured threshold. Actual measured peak was108527616B; no violation. No claim that1GiB was enforced; original executable and raw receipt preserved unchanged.",
+  "status": "Original reviewer assessment of existing bounded evidence requested; no rerun or restamp."
+}

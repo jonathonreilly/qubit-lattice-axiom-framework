@@ -1,0 +1,471 @@
+{
+  "status": "ORIGINAL REVIEW COMPLETE; MATERIAL FINDINGS; AUTHOR SALVAGE PENDING",
+  "reviewer": "/root/review_8011",
+  "unit": 8153,
+  "head": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b",
+  "delta_base": "2ed54cb83a4cb6b336e7053e19c8010d5d2930d8",
+  "current_main": "5418caa10f79b07f758d5d5b9120bdcbec4d19e5",
+  "original_dispositions": [
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "mode": "100644",
+      "blob": "5ba0568cc104a9a21925eaa2d724e8bf39f29532",
+      "sha256": "a7aaea1696ec43e7a539d884f6cd9c6128f98141ea6369cceca7db136b168729",
+      "bytes": 2040,
+      "original_revision": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8153/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "current_main_blob": "8f9c496033ee3e37e4ad73433151a79224a60814",
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md",
+      "mode": "100644",
+      "blob": "21cab1ab053d276ae74e795cd1072a92113cbbd7",
+      "sha256": "655cad4dde856625e70f0fc13ff029d049d362e9e011e4551cf9887200c2fd54",
+      "bytes": 4623,
+      "original_revision": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8153/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md",
+      "current_main_blob": "e99dd0e244c2753522fc80b26960d1979642339c",
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block19_findings.md",
+      "mode": "100644",
+      "blob": "c94c41054283a534087c72ef4e14915495c312e5",
+      "sha256": "df5aa43684d8855fdfe5ebbed68ce866c771d5da67c6dfb09e81d6091bd1391a",
+      "bytes": 2120,
+      "original_revision": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8153/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block19_findings.md",
+      "current_main_blob": null,
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block19_findings.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block19.md",
+      "mode": "100644",
+      "blob": "6b713d8d97cb5ef55c727274415d9fea5dfa0e45",
+      "sha256": "fbc51487a63f1b8dbf623c8053aec5e56cf23a1d99d39746e0804718eb6d336b",
+      "bytes": 1759,
+      "original_revision": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8153/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block19.md",
+      "current_main_blob": null,
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block19.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block19.md",
+      "mode": "100644",
+      "blob": "8a90bc51919bd17268ad0050edbf57568add7828",
+      "sha256": "011279c37550af108516a4e37d9f829a429b2dfa8dda2fcf7177dc0cb9ac1d99",
+      "bytes": 6616,
+      "original_revision": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8153/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block19.md",
+      "current_main_blob": null,
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block19.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "mode": "100644",
+      "blob": "e5960641eb7995559e2cb122a29a552f3b0119ed",
+      "sha256": "594e0759fa69096021f6c80463dde75f8f4ab3e7b9504b40992af99a7a9d9b09",
+      "bytes": 9539,
+      "original_revision": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8153/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "current_main_blob": "6dfc9de13838b8fe1d6d593b83d0d31cd0763b93",
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md",
+      "mode": "100644",
+      "blob": "f1eb0fd0b9928a803876146b0624c48fde306e5b",
+      "sha256": "ff00d6499a24b409217967f2be81334d0b798953baa232f881ccc67dde8d6fd8",
+      "bytes": 2810,
+      "original_revision": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8153/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md",
+      "current_main_blob": "9ccaee75bb420ef215668df8c5bf9b8a5f8fca7f",
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+      "mode": "100644",
+      "blob": "7f84c98857d655fdb0920b7aa848a9db25527614",
+      "sha256": "b515f38407bb6f98d1e3db54a85b327129b185da5866c8533aa0917e21a646d3",
+      "bytes": 2124,
+      "original_revision": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8153/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+      "current_main_blob": "2977b7f9903b58f95963491e44cb244ee894ab84",
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "mode": "100644",
+      "blob": "e3d253388c35f85332aa006d8b925815e7609fc7",
+      "sha256": "2fb87cd3c705c3e556ed2511e48f9e12e3f5dfc8c5a27fa5fec0f193ddf3af17",
+      "bytes": 11419,
+      "original_revision": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8153/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "current_main_blob": "74d2f60bae1b3e2de1ca2cf7ade91cf9e93da3b7",
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block19.md",
+      "mode": "100644",
+      "blob": "5981bd2582502651a94009c3bd0059ee72bd1066",
+      "sha256": "943729c1fae42d7f3a292da0cd698b62c20cd88392f376a954b8b7d9008b47ae",
+      "bytes": 3864,
+      "original_revision": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8153/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block19.md",
+      "current_main_blob": null,
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block19.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "mode": "100644",
+      "blob": "792e650f6b2c0dc6b393590a5eee4b95d749bf94",
+      "sha256": "91d07c96966104bcfccac3276444e2f6fb00cf1b24ce5e70eb395a7c4f67d0d5",
+      "bytes": 56926,
+      "original_revision": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8153/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "current_main_blob": "08d17f0940e3756c94ff724c8ff531adc9e029ce",
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md",
+      "mode": "100644",
+      "blob": "2fcd437c86d6e6153ee2c5f0acaa5bdc90cc26aa",
+      "sha256": "9ad4957192d28fd98cfd5d769a728d6fa4a5fd7ebdb8d99db090d61cb7d84dc5",
+      "bytes": 11727,
+      "original_revision": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8153/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md",
+      "current_main_blob": "9b1cd3a27f32295eccf43bf396e38697cba33b16",
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "mode": "100644",
+      "blob": "7fe7d01fe8577ad967fef527050beb0afe52c809",
+      "sha256": "d7d92cc1692aaf4ac4890b7ff5060b2d95ed09f8b0568e9fc01a6006b6632138",
+      "bytes": 16290,
+      "original_revision": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8153/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "current_main_blob": "e16642020759d3d57935cd6d037d382fc6573bf0",
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "mode": "100644",
+      "blob": "8092882d0da88fa57b5fd444edf3ee79cc7cdad4",
+      "sha256": "cbeb7007cdcaba41ca5376f93c85a02da9308d6a87b822cabb215bc02c51b52e",
+      "bytes": 5136,
+      "original_revision": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8153/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "current_main_blob": "8f432e2cd2631c0cc6a5121f932b305f16d3a023",
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_refuter.out.txt",
+      "mode": "100644",
+      "blob": "8872011de96f8da741e28a827d99506fe55bd81b",
+      "sha256": "54b9b11c2f26e7b5ffb4ff0174e112ba67db3e3858e2b117bdd5d27c182f79d7",
+      "bytes": 465,
+      "original_revision": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8153/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_refuter.out.txt",
+      "current_main_blob": null,
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_refuter.out.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_refuter.py",
+      "mode": "100644",
+      "blob": "0738363ab65c6acfa4d8c43af755ec190ab9f803",
+      "sha256": "4e530dbb1883db64d72d80c3a3f25acd4cd675f34896713293ec2d2837b30fb1",
+      "bytes": 4290,
+      "original_revision": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8153/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_refuter.py",
+      "current_main_blob": null,
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_refuter.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_sphere_static.out.txt",
+      "mode": "100644",
+      "blob": "a164b6291954960ea2e5300a485503de064950aa",
+      "sha256": "de6b710db71b3c78c3ede5081d3863a9b255dc3df5b234b1530ab9dead68a0a2",
+      "bytes": 1261,
+      "original_revision": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8153/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_sphere_static.out.txt",
+      "current_main_blob": null,
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_sphere_static.out.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_sphere_static.py",
+      "mode": "100644",
+      "blob": "debe0e9f3a2223911c71431a41851f92537e9870",
+      "sha256": "af733363770bb3642a54215d64511056bf9a1c34a458e323aec93f9ff3b54f35",
+      "bytes": 5036,
+      "original_revision": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8153/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_sphere_static.py",
+      "current_main_blob": null,
+      "disposition": "historical context and author evidence; preserve exact full bytes, no author verdict imported",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_sphere_static.py"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_ORDERED_PHASE_TRANSVERSE_CHANNEL_CARRIES_THE_LATTICE_GREEN_FUNCTION_INFRARED_AND_BOGOLIUBOV_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "mode": "100644",
+      "blob": "47173a7e7fd581979e230fae2569c515fef55beb",
+      "sha256": "d110f2aca6ffaa7b83a656bb38c55c48474a7007d9fea14b9522b559479edd45",
+      "bytes": 28155,
+      "original_revision": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8153/docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_ORDERED_PHASE_TRANSVERSE_CHANNEL_CARRIES_THE_LATTICE_GREEN_FUNCTION_INFRARED_AND_BOGOLIUBOV_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "current_main_blob": null,
+      "disposition": "original theorem/proof; Gaussian-domination reproof and transverse/physical interpretation fail source review; preserve whole proof and branch; narrow positive salvage pending",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_ORDERED_PHASE_TRANSVERSE_CHANNEL_CARRIES_THE_LATTICE_GREEN_FUNCTION_INFRARED_AND_BOGOLIUBOV_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "mode": "100644",
+      "blob": "f7a77e3f58940bb97d3b70c759de4730144ec8d3",
+      "sha256": "e4a4dd0e1ee627671c28019e69bf9a274282e4ec1c59d9c1301537fee7791ea8",
+      "bytes": 807503,
+      "original_revision": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8153/docs/audit/data/citation_graph_manifest.json",
+      "current_main_blob": "cdac7aefc26c09b9769c33157ae95ff939619d02",
+      "disposition": "generated citation manifest; exclude as authority, preserve historical bytes, regenerate only from accepted source",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:docs/audit/data/citation_graph_manifest.json"
+    },
+    {
+      "path": "logs/runner-cache/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.txt",
+      "mode": "100644",
+      "blob": "b6fb5521b628611425857c3f272b170dfd09a496",
+      "sha256": "500712486f19fac9134d6431d15e51592a5943a00704730db6f30a59c8d6b9a7",
+      "bytes": 3892,
+      "original_revision": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8153/logs/runner-cache/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.txt",
+      "current_main_blob": null,
+      "disposition": "historical17/0 cache; not evidence for missing infinite-volume proof; preserve and supersede only after affected source capture",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:logs/runner-cache/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.txt"
+    },
+    {
+      "path": "scripts/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.py",
+      "mode": "100644",
+      "blob": "54f00949b60c121a49133061a8bcf7642e5be561",
+      "sha256": "7584957994ad0e6b6ae753b99e9ca1fd85c989a0e2f60337b6607c9b3272dca3",
+      "bytes": 17971,
+      "original_revision": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b",
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8153-originals/8153/scripts/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.py",
+      "current_main_blob": null,
+      "disposition": "primary symbolic controls; preserve original; no proof of Gaussian domination or infinite-volume identification",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:scripts/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.py"
+    }
+  ],
+  "read_coverage": "Complete canonical note and runner, changed historical proof/review/state text, both independent historical control scripts and outputs. Inherited campaign material is historical context previously read in this session, not authority; all complete original files identity-verified and retained. Current possibility parent supplies conditional representation definitions, not formation/statistical selection or phase claims.",
+  "findings": [
+    {
+      "id": "F1",
+      "target": "G2 Gaussian domination",
+      "finding": "Shifted spins are not unit: claimed exp(-beta|u-v|\u00b2/2)=exp(-beta)exp(beta u.v) is false. Correct norm factors are necessary. G1 positivity on sphere and informal repeated reflections do not establish the asserted extremum for arbitrary twist.",
+      "repair": "Use a precise Gaussian-domination theorem import with all hypotheses/normalization, or supply corrected proof. Remove arbitrary site-factor extension unless its actual symmetry hypotheses are proved."
+    },
+    {
+      "id": "F2",
+      "target": "lead/trace/G5/N1\u2013N8",
+      "finding": "Universal formation/discrete-model exclusions, only-candidate and gravity identification are unsupported; corrected8147 auxiliary Gaussian and8151 conditional phase scope do not imply them. Four N1 routes including unattempted/out-of-target cases and asserted N2 independence are not negative certification.",
+      "repair": "Withdraw negative/physical classification; retain supplied-model positive bounds and explicitly deferred obligations."
+    },
+    {
+      "id": "F3",
+      "target": "G4/G5",
+      "finding": "Zero-field finite torus is O(3) invariant with equal components; no selected magnetization direction or extremal ordered-state transverse correlation is proved. Momentum comparability alone does not prove pointwise real-space1/r.",
+      "repair": "State zero-field component Fourier bounds, finite-volume magnetization-square liminf and explicit momentum sequences only."
+    },
+    {
+      "id": "F4",
+      "target": "G1/G2 Fourier",
+      "finding": "Reflection form needs real F or conjugation. Self-inverse momentum has cos norm N, sine0 and requires separate same-bound calculation, not merely a strengthening claim.",
+      "repair": "State Hermitian/real scope and compute self-inverse case explicitly."
+    },
+    {
+      "id": "F5",
+      "target": "G3/G5 limits",
+      "finding": "Integrability alone does not justify singular Riemann sums; use lattice shell count near0. A subsequence attaining magnetization liminf does not establish global structure-factor liminf.",
+      "repair": "Use N^-1 sum_{0<|k|<=delta}1/E<=Cdelta+O(1/L); apply all-N root bound with eventual M_N\u00b2>=M\u00b2-eta, k_N\u2192k\u22600."
+    },
+    {
+      "id": "F6",
+      "target": "birth-kernel comparison",
+      "finding": "(1+t)/2 has nonnegative Legendre coefficients1/2,1/2,0,...; it is positive semidefinite, with missing strict positivity.",
+      "repair": "Remove assertion of failure of positivity/RP; distinguish degeneracy."
+    }
+  ],
+  "actual_api": {
+    "type": [
+      "bounded_theorem",
+      "bounded_theorem"
+    ],
+    "timeout": 900,
+    "graph_helpers": [],
+    "packet_helpers": [],
+    "runtime_inputs": [
+      {
+        "path": "docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_ORDERED_PHASE_TRANSVERSE_CHANNEL_CARRIES_THE_LATTICE_GREEN_FUNCTION_INFRARED_AND_BOGOLIUBOV_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "d110f2aca6ffaa7b83a656bb38c55c48474a7007d9fea14b9522b559479edd45",
+        "source": "/private/tmp/review-drain-20260915/drain8153-originals/8153/docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_ORDERED_PHASE_TRANSVERSE_CHANNEL_CARRIES_THE_LATTICE_GREEN_FUNCTION_INFRARED_AND_BOGOLIUBOV_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+        "source": "/private/tmp/review-drain-20260915/review-meta-slot/docs/MINIMAL_AXIOMS_2026-06-29.md"
+      },
+      {
+        "path": "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "sha256": "86d269fec1b464c008b8ba0c9f705e6cf9411c041bdf21b4f96c4ec78f0a047a",
+        "source": "/private/tmp/review-drain-20260915/review-meta-slot/docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+      }
+    ]
+  },
+  "context": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "read_scope": "current authority, exact source reused from same-session premise review; no statistical or phase grant"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "read_scope": "current authority, exact source reused from same-session premise review; no statistical or phase grant"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "read_scope": "current authority, exact source reused from same-session premise review; no statistical or phase grant"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "read_scope": "current authority, exact source reused from same-session premise review; no statistical or phase grant"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "read_scope": "current authority, exact source reused from same-session premise review; no statistical or phase grant"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "read_scope": "current authority, exact source reused from same-session premise review; no statistical or phase grant"
+    }
+  ],
+  "independent_controls": {
+    "checks": 58,
+    "fail": 0,
+    "rotation_series_scope": "rational unit fixtures under actual one-parameter rotation, independent of primary derivative code",
+    "fourier_controls": [
+      {
+        "mode_pi_over_2": [
+          1,
+          0,
+          0
+        ],
+        "E": 2.0,
+        "complex_gradient": 128.0,
+        "cos_norm": 32.0,
+        "sin_norm": 32.0
+      },
+      {
+        "mode_pi_over_2": [
+          1,
+          1,
+          0
+        ],
+        "E": 4.0,
+        "complex_gradient": 256.0,
+        "cos_norm": 32.0,
+        "sin_norm": 32.0
+      },
+      {
+        "mode_pi_over_2": [
+          2,
+          0,
+          0
+        ],
+        "E": 4.0,
+        "complex_gradient": 256.0,
+        "cos_norm": 64.0,
+        "sin_norm": 0.0
+      },
+      {
+        "mode_pi_over_2": [
+          2,
+          2,
+          2
+        ],
+        "E": 12.0,
+        "complex_gradient": 768.0,
+        "cos_norm": 64.0,
+        "sin_norm": 0.0
+      }
+    ],
+    "shifted_kernel_counterexample": "original sx=sy=e1 and phi_x=phi_y=1 yields shifted0: Gaussian exponent0, claimed -beta+beta dot=-beta; norm factors required",
+    "gaussian_import_normalization": "ordered NN J=1/6 sums to(1/3) unordered bond sum; theorem parameter3beta/2 yields beta/2 unordered energy",
+    "elapsed_seconds": 0.0010405840002931654
+  },
+  "external_methods": {
+    "url": "https://www.math.ucla.edu/~biskup/PDFs/papers/Prague-School.pdf",
+    "author": "Marek Biskup",
+    "title": "Reflection Positivity and Phase Transitions in Lattice Spin Models",
+    "local_pdf_sha256": "bba0f0c68a11e5d3125e57f6f8ba3f62af1b0c05093916d46a160a11c324632e",
+    "read_scope": "Theorem4.6 and proof, printedpp40\u201341/PDFpages39\u201340, infrared derivation Eqs4.16\u20134.29. Primary source consulted to verify actual Gaussian-domination hypotheses. Full third-party text remains local.",
+    "mapping": "Identical compact single-site measure uniform S\u00b2, even periodic NN torus, ordered normalized NN J=1/6, source parameter b=3beta/2, h=-phi e gives beta/2 times unordered gradient energy. This is a real mathematical import if used; do not label reference-only."
+  },
+  "current_main_loss": "Review checkout unchanged. New canonical source must not replace current parent or campaign histories. Archive complete original histories and generated manifest as historical evidence; generated manifest is not authority. Current corrected8147 and8151 do not support original universal comparative claims.",
+  "salvage": "Legendre positivity, correctly imported finite Gaussian domination and infrared bound, sum rule and controlled magnetization-square liminf, zero-field Bogoliubov finite identity/root bound and explicit momentum-sequence sandwich. No extremal transverse-state/real-space/gravity identification or universal candidate exclusion.",
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8153-original-inventory.json",
+      "sha256": "20a2eb9f7a8f989ce37532ff05ec243c1a4df39e63e8b591d00f1cec5b7ecbcb"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8153-pr8153-original.patch",
+      "sha256": "76365a51de2369e3cdd60e3f50fda226de752e263fc27142a60099ac9fac7b00"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8153-review-head-check.json",
+      "sha256": "6a12766f7842f19ddb9136027dc8f667d13c867f9cfacb036cdc089c34c20ff0"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8153-review-acquire.json",
+      "sha256": "8cc8d0dfb49dbfee5f88e70c57da45ee041aaeb7b2b51592435eae663a8a6922"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8153/controls-before-fix.py",
+      "sha256": "81d5b370b34d68d1df7a2513e0b383a20485a9f8a0ab7a8271dfab8b1b21bcb4"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8153/control-attempt1.json",
+      "sha256": "9e7ddc51961e24b54f95144baee7c3ddc7421f66c24dd14921d841ea5cf1b0e2"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8153/controls.py",
+      "sha256": "b9294be37fc99b0986be21b0fb6b17e74a992b11235a9904519018111e08193e"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8153/controls.json",
+      "sha256": "cb861c81cf7d8030ec60e8ec481d75e55e7c3c97e245c45226dd4de943cb8463"
+    }
+  ],
+  "execution": "No primary executed. One independent control first failed due complex abs-squared rounding, preserved; corrected exact squared-norm control58/0 in0.00104sec. Original cap900sec; author final contract pending.",
+  "final_source_verdict": "NOT YET PASS; affected author correction required"
+}

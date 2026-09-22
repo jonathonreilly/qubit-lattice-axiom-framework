@@ -1,0 +1,13 @@
+{
+  "kind": "bibliographic mathematical import receipt; no third-party full text",
+  "author": "Marek Biskup",
+  "title": "Reflection Positivity and Phase Transitions in Lattice Spin Models",
+  "url": "https://www.math.ucla.edu/~biskup/PDFs/papers/Prague-School.pdf",
+  "local_pdf_sha256": "bba0f0c68a11e5d3125e57f6f8ba3f62af1b0c05093916d46a160a11c324632e",
+  "local_pdf_bytes": 352923,
+  "local_pdf_preserved": true,
+  "publication_boundary": "Full PDF retained locally only; this metadata receipt may be published. No copied theorem/proof text.",
+  "read_scope": "Theorem4.6/proof printed40\u201341/PDF39\u201340; reflection setup printed37\u201338; nearest-neighbour uniform sphere context.",
+  "mapping": "Even periodic three-dimensional nearest-neighbour torus; identical uniform compact S\u00b2 single-site measure; ordered normalized J=1/6; theorem parameter b=3beta/2; h=-phi e. Twice-counted ordered edges give coefficientbeta/2 on unordered gradient energy. No arbitrary site-factor extension or unrestricted shifted-field extremization proof imported.",
+  "scientific_status": "Load-bearing mathematical import explicitly declared in source; original independent cold confirmation pending."
+}

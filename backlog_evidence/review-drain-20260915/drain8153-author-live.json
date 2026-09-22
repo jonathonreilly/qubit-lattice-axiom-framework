@@ -1,0 +1,9 @@
+{
+  "note": "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_ZERO_FIELD_COMPONENT_FOURIER_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+  "runner": "scripts/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.py",
+  "fences": [
+    "This note gives zero-field component Fourier bounds for the supplied sphere static law using an explicit Gaussian-domination import; it establishes no selected transverse-state correlator, pointwise real-space decay or physical model classification, and adopts no clause.",
+    "No plane, bridge, Born-weight or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
+    "The uniform sphere measure and exponential interaction are declared model inputs; all load-bearing mathematical imports are explicitly identified."
+  ]
+}

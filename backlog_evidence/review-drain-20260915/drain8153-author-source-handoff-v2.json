@@ -1,0 +1,236 @@
+{
+  "status": "AUTHOR DRAFT; ORIGINAL INDEPENDENT COLD CONFIRMATION REQUIRED",
+  "author": "/root/resume_8077",
+  "base": "bd696ae6921c9b1244d29771e0ef2c6d13a0574d",
+  "tree": "047bbca99bc5025c0c7cf932471178beca032911",
+  "original_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "original_sha256": "a7aaea1696ec43e7a539d884f6cd9c6128f98141ea6369cceca7db136b168729",
+      "final_path": "docs/work_history/review_loop/pr8153/8153_APPROACH_REGISTRY.md.gz",
+      "final_sha256": "27198afa17c01de1edca4c57613bf9a0bcc16d12cb89200a993a75bdb9d480ed",
+      "disposition": "Original complete version preserved byte-exact; Positive component Fourier mathematics repaired with explicit import and limits; unsupported transverse/physical/universal negative conclusions deferred. Retain original branch.",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md",
+      "original_sha256": "655cad4dde856625e70f0fc13ff029d049d362e9e011e4551cf9887200c2fd54",
+      "final_path": "docs/work_history/review_loop/pr8153/8153_ASSUMPTIONS_AND_IMPORTS.md.gz",
+      "final_sha256": "3f4c21935810c1b704c3e7429e0aee4a25a610b56af3488a437a3c69dec44157",
+      "disposition": "Original complete version preserved byte-exact; Positive component Fourier mathematics repaired with explicit import and limits; unsupported transverse/physical/universal negative conclusions deferred. Retain original branch.",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block19_findings.md",
+      "original_sha256": "df5aa43684d8855fdfe5ebbed68ce866c771d5da67c6dfb09e81d6091bd1391a",
+      "final_path": "docs/work_history/review_loop/pr8153/8153_CHECKER_block19_findings.md.gz",
+      "final_sha256": "1548caa54484e8342a355449da8752234d1f10b6ae28e3b7eb238387a181f6f5",
+      "disposition": "Original complete version preserved byte-exact; Positive component Fourier mathematics repaired with explicit import and limits; unsupported transverse/physical/universal negative conclusions deferred. Retain original branch.",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block19_findings.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block19.md",
+      "original_sha256": "fbc51487a63f1b8dbf623c8053aec5e56cf23a1d99d39746e0804718eb6d336b",
+      "final_path": "docs/work_history/review_loop/pr8153/8153_CLAIM_STATUS_CERTIFICATE_block19.md.gz",
+      "final_sha256": "094efccd11201b65dc7cbc420945448e917b285023cc7f46b2b9f4f0923267ee",
+      "disposition": "Original complete version preserved byte-exact; Positive component Fourier mathematics repaired with explicit import and limits; unsupported transverse/physical/universal negative conclusions deferred. Retain original branch.",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block19.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block19.md",
+      "original_sha256": "011279c37550af108516a4e37d9f829a429b2dfa8dda2fcf7177dc0cb9ac1d99",
+      "final_path": "docs/work_history/review_loop/pr8153/8153_GOAL_block19.md.gz",
+      "final_sha256": "1e930325afb366e489774ee4778bb6ee76ec0f3b1d3b7341259bb4ea581b328e",
+      "disposition": "Original complete version preserved byte-exact; Positive component Fourier mathematics repaired with explicit import and limits; unsupported transverse/physical/universal negative conclusions deferred. Retain original branch.",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block19.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "original_sha256": "594e0759fa69096021f6c80463dde75f8f4ab3e7b9504b40992af99a7a9d9b09",
+      "final_path": "docs/work_history/review_loop/pr8153/8153_HANDOFF.md.gz",
+      "final_sha256": "0a8124a30a7ac3373ba2e60578c4da626aa60006284141ea94819f70a2f7f52e",
+      "disposition": "Original complete version preserved byte-exact; Positive component Fourier mathematics repaired with explicit import and limits; unsupported transverse/physical/universal negative conclusions deferred. Retain original branch.",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md",
+      "original_sha256": "ff00d6499a24b409217967f2be81334d0b798953baa232f881ccc67dde8d6fd8",
+      "final_path": "docs/work_history/review_loop/pr8153/8153_LITERATURE_BRIDGES.md.gz",
+      "final_sha256": "9a9d8a5d952e98bd52f05b56fd8a8c8f4eee9b3ae70406ed436d1e39490be110",
+      "disposition": "Original complete version preserved byte-exact; Positive component Fourier mathematics repaired with explicit import and limits; unsupported transverse/physical/universal negative conclusions deferred. Retain original branch.",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+      "original_sha256": "b515f38407bb6f98d1e3db54a85b327129b185da5866c8533aa0917e21a646d3",
+      "final_path": "docs/work_history/review_loop/pr8153/8153_NO_GO_LEDGER.md.gz",
+      "final_sha256": "59fc5c7e5a1d30a722909a2422d7e7862f7b19212d47c014557a35a7212737bf",
+      "disposition": "Original complete version preserved byte-exact; Positive component Fourier mathematics repaired with explicit import and limits; unsupported transverse/physical/universal negative conclusions deferred. Retain original branch.",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "original_sha256": "2fb87cd3c705c3e556ed2511e48f9e12e3f5dfc8c5a27fa5fec0f193ddf3af17",
+      "final_path": "docs/work_history/review_loop/pr8153/8153_OPPORTUNITY_QUEUE.md.gz",
+      "final_sha256": "51293ea469cd59e091562d3df2b7e75508b67176b1d5842373bc35276d2218fb",
+      "disposition": "Original complete version preserved byte-exact; Positive component Fourier mathematics repaired with explicit import and limits; unsupported transverse/physical/universal negative conclusions deferred. Retain original branch.",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block19.md",
+      "original_sha256": "943729c1fae42d7f3a292da0cd698b62c20cd88392f376a954b8b7d9008b47ae",
+      "final_path": "docs/work_history/review_loop/pr8153/8153_RESULTS_block19.md.gz",
+      "final_sha256": "bcee4bf5e452c082a8dc8739de2f79cc901f7112393d62dd51f6c3ab9a783d5b",
+      "disposition": "Original complete version preserved byte-exact; Positive component Fourier mathematics repaired with explicit import and limits; unsupported transverse/physical/universal negative conclusions deferred. Retain original branch.",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block19.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "original_sha256": "91d07c96966104bcfccac3276444e2f6fb00cf1b24ce5e70eb395a7c4f67d0d5",
+      "final_path": "docs/work_history/review_loop/pr8153/8153_REVIEW_HISTORY.md.gz",
+      "final_sha256": "831e3288156c457342720f66abb77b319399ff43ba7f0a37689a781517814b24",
+      "disposition": "Original complete version preserved byte-exact; Positive component Fourier mathematics repaired with explicit import and limits; unsupported transverse/physical/universal negative conclusions deferred. Retain original branch.",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md",
+      "original_sha256": "9ad4957192d28fd98cfd5d769a728d6fa4a5fd7ebdb8d99db090d61cb7d84dc5",
+      "final_path": "docs/work_history/review_loop/pr8153/8153_ROUTE_PORTFOLIO.md.gz",
+      "final_sha256": "15f9f1b32f30251423a9b125f528574a2fec409b16ca2ee1d183a12b53f98d6b",
+      "disposition": "Original complete version preserved byte-exact; Positive component Fourier mathematics repaired with explicit import and limits; unsupported transverse/physical/universal negative conclusions deferred. Retain original branch.",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "original_sha256": "d7d92cc1692aaf4ac4890b7ff5060b2d95ed09f8b0568e9fc01a6006b6632138",
+      "final_path": "docs/work_history/review_loop/pr8153/8153_STATE.yaml.gz",
+      "final_sha256": "25f99d9e42e405ec24617d5a63f0908ed9b0da05c2c98ee4496648e536b7378d",
+      "disposition": "Original complete version preserved byte-exact; Positive component Fourier mathematics repaired with explicit import and limits; unsupported transverse/physical/universal negative conclusions deferred. Retain original branch.",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "original_sha256": "cbeb7007cdcaba41ca5376f93c85a02da9308d6a87b822cabb215bc02c51b52e",
+      "final_path": "docs/work_history/review_loop/pr8153/8153_TRACE_GATE.md.gz",
+      "final_sha256": "ed7403f3484cf45b7eddba7370206240c5d0fab5b316f1162689b4912e2d14ca",
+      "disposition": "Original complete version preserved byte-exact; Positive component Fourier mathematics repaired with explicit import and limits; unsupported transverse/physical/universal negative conclusions deferred. Retain original branch.",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_refuter.out.txt",
+      "original_sha256": "54b9b11c2f26e7b5ffb4ff0174e112ba67db3e3858e2b117bdd5d27c182f79d7",
+      "final_path": "docs/work_history/review_loop/pr8153/8153_supervisor_control_block19_refuter.out.txt.gz",
+      "final_sha256": "1f5526f0d85044362f6eb16fec21a3d4be6a2f3c90145f05a053a81710e3d174",
+      "disposition": "Original complete version preserved byte-exact; Positive component Fourier mathematics repaired with explicit import and limits; unsupported transverse/physical/universal negative conclusions deferred. Retain original branch.",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_refuter.out.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_refuter.py",
+      "original_sha256": "4e530dbb1883db64d72d80c3a3f25acd4cd675f34896713293ec2d2837b30fb1",
+      "final_path": "docs/work_history/review_loop/pr8153/8153_supervisor_control_block19_refuter.py.gz",
+      "final_sha256": "ab20f4bc6285c24f4cd9cf0dbef7f5ac80c8f72e6b0b047ccf8c387fb4a43356",
+      "disposition": "Original complete version preserved byte-exact; Positive component Fourier mathematics repaired with explicit import and limits; unsupported transverse/physical/universal negative conclusions deferred. Retain original branch.",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_refuter.py"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_sphere_static.out.txt",
+      "original_sha256": "de6b710db71b3c78c3ede5081d3863a9b255dc3df5b234b1530ab9dead68a0a2",
+      "final_path": "docs/work_history/review_loop/pr8153/8153_supervisor_control_block19_sphere_static.out.txt.gz",
+      "final_sha256": "6a21dfbb7d977f7869cc0c8ff4e7443132b37e1c0472aa768d8e63a922225e9f",
+      "disposition": "Original complete version preserved byte-exact; Positive component Fourier mathematics repaired with explicit import and limits; unsupported transverse/physical/universal negative conclusions deferred. Retain original branch.",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_sphere_static.out.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_sphere_static.py",
+      "original_sha256": "af733363770bb3642a54215d64511056bf9a1c34a458e323aec93f9ff3b54f35",
+      "final_path": "docs/work_history/review_loop/pr8153/8153_supervisor_control_block19_sphere_static.py.gz",
+      "final_sha256": "2545f7dc38f747769be8dde5343aa8ec3e35ae52ceb6f654394400cdb2132410",
+      "disposition": "Original complete version preserved byte-exact; Positive component Fourier mathematics repaired with explicit import and limits; unsupported transverse/physical/universal negative conclusions deferred. Retain original branch.",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_sphere_static.py"
+    },
+    {
+      "original_path": "docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_ORDERED_PHASE_TRANSVERSE_CHANNEL_CARRIES_THE_LATTICE_GREEN_FUNCTION_INFRARED_AND_BOGOLIUBOV_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_sha256": "d110f2aca6ffaa7b83a656bb38c55c48474a7007d9fea14b9522b559479edd45",
+      "final_path": "docs/work_history/review_loop/pr8153/8153_ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_ORDERED_PHASE_TRANSVERSE_CHANNEL_CARRIES_THE_LATTICE_GREEN_FUNCTION_INFRARED_AND_BOGOLIUBOV_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz",
+      "final_sha256": "0daa91d7352b7c8db9b8f1f500d163cfacc06495e9d29725b75cb2fd35316b19",
+      "disposition": "Original complete version preserved byte-exact; Positive component Fourier mathematics repaired with explicit import and limits; unsupported transverse/physical/universal negative conclusions deferred. Retain original branch.",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_ORDERED_PHASE_TRANSVERSE_CHANNEL_CARRIES_THE_LATTICE_GREEN_FUNCTION_INFRARED_AND_BOGOLIUBOV_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "e4a4dd0e1ee627671c28019e69bf9a274282e4ec1c59d9c1301537fee7791ea8",
+      "final_path": "docs/work_history/review_loop/pr8153/8153_citation_graph_manifest.json.gz",
+      "final_sha256": "e04c2ad3b037e559ebee3388e53055571528eb9510834ae730a1939b3b3cfdb3",
+      "disposition": "Original complete version preserved byte-exact; Positive component Fourier mathematics repaired with explicit import and limits; unsupported transverse/physical/universal negative conclusions deferred. Retain original branch.",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:docs/audit/data/citation_graph_manifest.json"
+    },
+    {
+      "original_path": "logs/runner-cache/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.txt",
+      "original_sha256": "500712486f19fac9134d6431d15e51592a5943a00704730db6f30a59c8d6b9a7",
+      "final_path": "docs/work_history/review_loop/pr8153/8153_admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.txt.gz",
+      "final_sha256": "fcc7d79051b67041f97d357dac9a25cb23c9c103cbb56e6a5b5cec9d3a79b324",
+      "disposition": "Original complete version preserved byte-exact; Positive component Fourier mathematics repaired with explicit import and limits; unsupported transverse/physical/universal negative conclusions deferred. Retain original branch.",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:logs/runner-cache/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.txt"
+    },
+    {
+      "original_path": "scripts/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.py",
+      "original_sha256": "7584957994ad0e6b6ae753b99e9ca1fd85c989a0e2f60337b6607c9b3272dca3",
+      "final_path": "docs/work_history/review_loop/pr8153/8153_admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.py.gz",
+      "final_sha256": "a89f63bbb7343b056b0b55beb3a5d73a5c27da7bacc2435f919ae17970d860d2",
+      "disposition": "Original complete version preserved byte-exact; Positive component Fourier mathematics repaired with explicit import and limits; unsupported transverse/physical/universal negative conclusions deferred. Retain original branch.",
+      "recovery": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b:scripts/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.py"
+    }
+  ],
+  "claim_dispositions": {
+    "G1": "Full positive Legendre integral/factorization retained with real reflection form and no arbitrary single-site factors.",
+    "G2": "False shifted-norm and informal extremization proof replaced by actual Gaussian-domination import with identical uniform compact sphere measure, even torus, ordered nearest-neighbour J=1/6 and b=3beta/2. Full infrared derivation explicitly handles2k=0.",
+    "G3": "Sum rule and integral bound retained; singular Riemann sum justified by lattice shell count O(delta)+O(1/L).",
+    "G4": "Full zero-field finite-volume generator/integration-by-parts/quadratic proof retained.",
+    "G5": "Every nonzero limiting momentum sequence uses all-large-volume M_N\u00b2>=M\u00b2-eta, not selected liminf subsequence. Zero-field components only; no extremal transverse/pointwise real-space/physical classification.",
+    "negative_gate": "Universal model exclusions and negative certification deferred; Born kernel nonnegative degenerate coefficients explicitly corrected; original complete proofs and branch preserved."
+  },
+  "preservation": "26 additions only relative bd696ae6921c9b1244d29771e0ef2c6d13a0574d; tracked main parents untouched; all22 originals decoded-hash verified.",
+  "execution_plan": {
+    "timeout_seconds": 180,
+    "process_tree_rss_limit_bytes": 1073741824,
+    "concurrency": 1,
+    "cost_review": "Original preserved cache reports0.85s. Unchanged finite symbolic domains: Legendre degrees0..4,64-site torus two modes,four polynomial integrals. No sampled large-state table;180s/1GiB proposed root capture after cold confirmation. Original cache not reused or restamped.",
+    "authorization": "No author primary/control execution; root capture only after cold and cheap receipt."
+  },
+  "mathematical_import": {
+    "source": "https://www.math.ucla.edu/~biskup/PDFs/papers/Prague-School.pdf",
+    "title": "Reflection Positivity and Phase Transitions in Lattice Spin Models",
+    "theorem": "4.6, printed40-41; bound4.16-4.17",
+    "mapping": "Ordered J=1/6 yields one-third unordered bond sum; b=3beta/2 yields beta/2 gradient energy; h=-phi e; identical uniform S\u00b2 measure; even periodic NN torus. No arbitrary site factors.",
+    "read_scope": "Local primary PDF theorem/proof and reflection definitions read directly; no reproduction of flawed unrestricted shifted-field compactness argument. Full third-party PDF remains local.",
+    "pdf": {
+      "local_sha256": "bba0f0c68a11e5d3125e57f6f8ba3f62af1b0c05093916d46a160a11c324632e",
+      "local_bytes": 352923,
+      "publication": "local only; bibliographic receipt bound instead"
+    },
+    "bibliographic_receipt": {
+      "path": "/private/tmp/review-drain-20260915/drain8153-gaussian-import-bibliography-v1.json",
+      "sha256": "81c7a992bc158d77176dde9aee1a009aff0b544e9e561a6373090ce263f0dfa4"
+    }
+  },
+  "checks": "AST/fences/forbidden/classical-name placement,vocab,staged whitespace; no science execution/cache/pipeline.",
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8153-original-review.json",
+      "sha256": "c0b1f3d288afe10ab6e3ff5638a06bb33ec1a164fc1695760c2046bfa5cd2c99"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8153/controls.json",
+      "sha256": "cb861c81cf7d8030ec60e8ec481d75e55e7c3c97e245c45226dd4de943cb8463"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8153-author-cache-api-v1.json",
+      "sha256": "50f83f58102652222c906f9fcadc2331e9a7ccc73800ff99b8d5eb0c53974b01"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8153-gaussian-import-bibliography-v1.json",
+      "sha256": "81c7a992bc158d77176dde9aee1a009aff0b544e9e561a6373090ce263f0dfa4"
+    }
+  ],
+  "metadata_change": "v2 changes external reference publication boundary only; source/tree unchanged."
+}

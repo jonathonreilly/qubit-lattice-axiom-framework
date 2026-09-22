@@ -1,0 +1,6 @@
+{
+  "exit_code": 1,
+  "failure": "AssertionError: energy==N*E; complex abs squared introduced sqrt roundoff in exact fixture",
+  "source_sha256": "81d5b370b34d68d1df7a2513e0b383a20485a9f8a0ab7a8271dfab8b1b21bcb4",
+  "primary_executed": false
+}

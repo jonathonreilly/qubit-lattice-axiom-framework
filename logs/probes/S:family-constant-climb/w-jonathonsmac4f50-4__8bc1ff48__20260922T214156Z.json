@@ -1,0 +1,32 @@
+{
+ "task": "S:family-constant-climb",
+ "type": "search",
+ "lane": "admissibility-induced-law",
+ "worker": "w-jonathonsmac4f50-4",
+ "model": "claude-opus-5",
+ "command": "python3 probes/lib/climb_cstar.py 166 1800 5 5 8",
+ "seed": 166,
+ "minutes": 30.0,
+ "box": "5x5x8",
+ "git_sha": "8bc1ff48",
+ "started_utc": "20260922T214156Z",
+ "elapsed_s": 1809.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "best": "1/2"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "hill-climb on the family's constant c*(config) (block 32); a HIT is any value above 1 (e.g. '5/4 = 1.250'). Vary seed, box up to 7x7x10, minutes 30-180.",
+ "stdout_sha256": "a6f97bcc445e4c84ee727df1ce905fba746e1c9899b295ce7443a20fcd6ed6b9",
+ "stdout_tail": ", 5), (3, 3, 4), (3, 3, 5), (4, 0, 0), (4, 0, 1), (4, 0, 4), (4, 0, 7), (4, 1, 1), (4, 1, 5), (4, 3, 0), (4, 3, 4), (4, 3, 5), (4, 3, 6), (4, 4, 2), (4, 4, 4)]\nseed 166 5x5x8: c* 0 = 0.000: root=(4, 4, 6) minimal tree (E,|A|,|S|,F)=(3,7,2,1) ones=70 zeta=[(0, 0, 0), (0, 0, 1), (0, 0, 2), (0, 0, 3), (0, 0, 6), (0, 1, 0), (0, 2, 4), (0, 3, 0), (0, 3, 3), (0, 3, 7), (1, 0, 3), (1, 1, 0), (1, 1, 3), (1, 1, 5), (1, 1, 7), (1, 4, 1), (1, 4, 2), (2, 0, 0), (2, 0, 1), (2, 0, 3), (2, 0, 5), (2, 1, 6), (2, 1, 7), (2, 2, 2), (2, 3, 0), (2, 3, 4), (2, 4, 1), (2, 4, 3), (3, 0, 7), (3, 1, 3), (3, 1, 5), (3, 3, 4), (3, 3, 5), (4, 0, 0), (4, 0, 1), (4, 0, 4), (4, 0, 7), (4, 1, 1), (4, 1, 4), (4, 1, 5), (4, 3, 0), (4, 3, 2), (4, 3, 4), (4, 3, 5), (4, 3, 6), (4, 4, 2), (4, 4, 4)]\nseed 166 5x5x8: c* 1/2 = 0.500: root=(4, 4, 7) minimal tree (E,|A|,|S|,F)=(1,2,1,0) ones=66 zeta=[(0, 0, 0), (0, 0, 2), (0, 0, 3), (0, 1, 3), (0, 1, 6), (0, 2, 1), (0, 2, 4), (0, 3, 4), (0, 3, 6), (0, 3, 7), (1, 0, 3), (1, 1, 2), (1, 1, 3), (1, 1, 5), (1, 1, 7), (1, 3, 6), (1, 4, 1), (1, 4, 2), (2, 0, 0), (2, 0, 3), (2, 0, 5), (2, 0, 7), (2, 1, 6), (2, 1, 7), (2, 2, 2), (2, 2, 3), (2, 3, 4), (2, 4, 1), (2, 4, 3), (2, 4, 5), (3, 0, 1), (3, 1, 0), (3, 1, 5), (3, 1, 7), (3, 2, 2), (3, 3, 4), (3, 3, 5), (3, 4, 4), (3, 4, 5), (4, 0, 0), (4, 0, 1), (4, 0, 4), (4, 0, 7), (4, 1, 1), (4, 1, 4), (4, 1, 5), (4, 1, 7), (4, 3, 0), (4, 3, 2), (4, 3, 6), (4, 3, 7), (4, 4, 1), (4, 4, 2), (4, 4, 6)]\nseed 166: done restarts=2 best=1/2\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-4",
+  "at_utc": "20260922T221205Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

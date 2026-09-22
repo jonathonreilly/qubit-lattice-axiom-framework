@@ -1,0 +1,96 @@
+{
+  "passed": 20,
+  "failed": 0,
+  "elapsed_sec": 0.013645084050949663,
+  "cap_seconds": 60,
+  "checks": [
+    {
+      "name": "abstract-fixture-triangle",
+      "pass": true
+    },
+    {
+      "name": "cube12-edges",
+      "pass": true
+    },
+    {
+      "name": "cube-bipartite",
+      "pass": true
+    },
+    {
+      "name": "abstract-TV-(3, 1, 2)",
+      "pass": true
+    },
+    {
+      "name": "square-entry-identity-(3, 1, 2)",
+      "pass": true
+    },
+    {
+      "name": "row-sum-(3, 1, 2)",
+      "pass": true
+    },
+    {
+      "name": "abstract-TV-(5, 2, 4)",
+      "pass": true
+    },
+    {
+      "name": "square-entry-identity-(5, 2, 4)",
+      "pass": true
+    },
+    {
+      "name": "row-sum-(5, 2, 4)",
+      "pass": true
+    },
+    {
+      "name": "abstract-TV-(2, 1, 2)",
+      "pass": true
+    },
+    {
+      "name": "square-entry-identity-(2, 1, 2)",
+      "pass": true
+    },
+    {
+      "name": "row-sum-(2, 1, 2)",
+      "pass": true
+    },
+    {
+      "name": "lattice-path-nonzero",
+      "pass": true
+    },
+    {
+      "name": "constant-rule-two-attachments-equality",
+      "pass": true
+    },
+    {
+      "name": "pendant-constant",
+      "pass": true
+    },
+    {
+      "name": "zero-attachment-positiveconstant",
+      "pass": true
+    },
+    {
+      "name": "cube-exact-TV",
+      "pass": true
+    },
+    {
+      "name": "positive-factor-cancellation",
+      "pass": true
+    },
+    {
+      "name": "sphere-antipodal-series-constant",
+      "pass": true
+    },
+    {
+      "name": "marginal-not-recorded-NN-product",
+      "pass": true
+    }
+  ],
+  "abstract_triangle_TVs": {
+    "(3, 1, 2)": "78621/4563820",
+    "(5, 2, 4)": "675203620/64463986907",
+    "(2, 1, 2)": "221667/30063356"
+  },
+  "actual_path_TV": "1/72",
+  "actual_cube_TV": "9778807/1312253264",
+  "scope": "Independent integer transfer contraction/conditional symmetry controls; no primary imported or executed. Positive-factor cancellation is a counterexample to the inference alone, not to realization by the common pair-rule family."
+}

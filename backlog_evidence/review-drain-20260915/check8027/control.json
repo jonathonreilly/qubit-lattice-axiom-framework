@@ -1,0 +1,22 @@
+{
+  "PASS": 14,
+  "FAIL": 0,
+  "checks": [
+    "(1, 1) characteristic",
+    "(1, 1) zero diagonal",
+    "(2, 1) characteristic",
+    "(2, 1) zero diagonal",
+    "(2, 2) characteristic",
+    "(2, 2) zero diagonal",
+    "3D six permutations",
+    "3D degree2 connected cycle",
+    "3D selected derivative",
+    "source Haar flip normalization",
+    "source convention equivalence",
+    "full subset multiset",
+    "archived splitting corollary",
+    "all-label differences positive"
+  ],
+  "elapsed_sec": 0.11054895899724215,
+  "scope": "Small independent adjacency characteristic polynomials, spectral splitting and exact normalization/Casimir identities; no primary/helper imports or full interacting spectrum."
+}

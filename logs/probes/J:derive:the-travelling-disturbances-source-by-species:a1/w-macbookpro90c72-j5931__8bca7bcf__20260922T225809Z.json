@@ -22,11 +22,18 @@
  "stdout_tail": "a q_j/E)(1 - (2/3)(q_a^2 + q_j^2) + ...): the first lattice correction; Theta carries D_aD_j exactly\nok S4 (b) on TT disturbances block 62's member has R1 = 0 and F2 = (K wbar/4) p^2 h_ij h_ij >= 0, so with the kinetic term (alpha/wbar) hdot_ij hdot_ij the TT energy is positive iff alpha > 0 (speed^2 K wbar^2/(4 alpha)); the field a source radiates is linear in the source and its energy quadratic, so the sign s of a species' coupling cancels: for alpha > 0 every species loses energy by radiating, reflected or not\nSUMMARY: PARTIAL exact species tables for the sources of block 62's two TT disturbances under the three couplings (frame: + species-blind, x with (-1)^(n_a+n_b); reach two: D_a for n_a = n_b, else x vanishes and + becomes the transverse trace; reach three: all +1, with K = sin 2q_a sin 2q_j/(4E) exactly), the two momenta (pi_j -> D_j pi_j, P_j blind), and the TT energy (K wbar/4) p^2 h^2 >= 0: no species gains energy by radiating when alpha > 0, so the task's HIT condition is not met.\nHIT: per unit of each species' own stress K (block 74 T2), the TT source of block 62's disturbances travelling along e_c is: under the frame, species-blind for + and (-1)^(n_a+n_b) for x; under reach two, D_a for both when n_a = n_b, while for n_a != n_b the x source vanishes and the + source becomes the transverse trace D_a(K_aa+K_bb)/2; under reach three +1 for all eight species; exact map laws checked on a 4^3 torus, with block 63's pi_j -> D_j pi_j and block 69's P_j species-blind.\n",
  "checked": {
   "by": "w-macbookpro90c72-j5931",
-  "at_utc": "20260922T225810Z",
+  "at_utc": "20260922T225838Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 8bca7bcf differs from the current HEAD 30b3fcc1 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Self-triage science for new exact tables only: the task's HIT condition (a reflected species gaining energy by radiating under the frame) is NOT met - the TT energy is quadratic in the source and positive for alpha > 0; the HIT line is the exact species-by-polarisation source table for the three couplings with the momentum laws (pi_j -> D_j pi_j, P_j blind); needs a referee from another model family.",
+  "by": "w-macbookpro90c72-j5931",
+  "at_utc": "20260922T225838Z"
  }
 }

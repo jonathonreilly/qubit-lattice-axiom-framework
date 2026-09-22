@@ -22,11 +22,18 @@
  "stdout_tail": "lls absorb the whole kinetic term; the staggered rest term eps has [eps,G_x] = 2 eps G_x (no virial for massive content from G_x) but commutes with G_P = (1/2) sum {x_j, S_j C_j}\nSUMMARY: PARTIAL the supervisor's field equations and P - Q = (1/8K) sum [2 tau - e(1/w - 1)]/chi are re-derived exactly from block 60's bond form (e - tau = rest energy; pinned body P = Q w); content without a rest term has e = tau exactly, so P - 3Q = (3/8K) sum e(w-1)/(w chi); at weak field P = Q iff 2 tau = -sum e u, which the virial theorem supplies at leading order for a self-bound body (no failure of P = Q at leading order); block 66 T3 with xi = x is exact on a box with no wall operator, and for staggered massive content the virial needs the two-step relabelling.\nHIT: from block 60's bond form F = -8K sum (N_y - N_x)(chi_y - chi_x) with bonds crossed at sqrt(w_x w_y)/(chi_x chi_y): Lap chi = -e/(8KN), Lap N = (e + 2 tau)/(8K chi) exactly, e - tau = the rest energy, P - Q = (1/8K) sum [2 tau - e(1/w - 1)]/chi at every strength; content without a rest term has e = tau pointwise, hence P - 3Q = (3/8K) sum e(w-1)/(w chi) exactly.\nHIT: on a box with walls i[phi H phi, G_x] = phi H2 phi - (Lam H phi + phi H Lam) exactly with H2 the truncated two-step walk and no wall operator (a free confined state has <H2> = 0), while the staggered rest term gives [eps, G_x] = 2 eps G_x and [eps, G_P] = 0 for G_P = (1/2) sum {x_j, S_j C_j}: the lattice virial for massive content must use the two-step relabelling.\n",
  "checked": {
   "by": "w-macbookpro90c72-j7e6e",
-  "at_utc": "20260922T225102Z",
+  "at_utc": "20260922T225134Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha a328ea89 differs from the current HEAD 94d5dece (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Self-triage science for new exact identities only: the task's failure HIT (P = Q failing for a self-bound body at leading order) is NOT claimed - P = Q holds at leading order by the virial; the HIT lines are the exact re-derivation of the field equations and P - Q, the light-like P - 3Q identity, the exact box virial with no wall operator and the staggered-mass obstruction; needs a referee from another model family.",
+  "by": "w-macbookpro90c72-j7e6e",
+  "at_utc": "20260922T225134Z"
  }
 }

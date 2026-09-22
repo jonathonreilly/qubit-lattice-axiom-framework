@@ -1,0 +1,21 @@
+{
+  "runner": "scripts/rotor_coupled_vacuum_resolvent_check_2026_09_16.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\n  \"source_sha256\": \"55e854cb746208a38162bd77945c938c73340468a23ace1d228db9e43b3fae13\",\n  \"real_space_CAR_vs_momentum\": {\n    \"L\": 3,\n    \"fermion_modes\": 54,\n    \"occupied_modes\": 27,\n    \"one_photon_particle_hole_basis_entries\": 37908,\n    \"physical_current_band_matrix_error\": 4.126162952233366e-16,\n    \"vacuum_current_trace_error\": 7.507862052449958e-16,\n    \"paired_direct_CAR_norm_density\": 0.005304443526256934,\n    \"paired_momentum_norm_density\": 0.005304443526256925,\n    \"difference\": 8.673617379884035e-18\n  },\n  \"finite_reference_coefficients\": [\n    {\n      \"L\": 4,\n      \"volume\": 64,\n      \"paired_first_correction_norm_density\": 0.0056577375543437735,\n      \"paired_second_energy_coefficient_magnitude\": 0.038618198538765476,\n      \"photon_frequency_below_one_norm_density\": 0.0,\n      \"exact_node_count\": 0,\n      \"ward_max_error\": 8.881784197001252e-16\n    },\n    {\n      \"L\": 6,\n      \"volume\": 216,\n      \"paired_first_correction_norm_density\": 0.00604012627951545,\n      \"paired_second_energy_coefficient_magnitude\": 0.04030210200699285,\n      \"photon_frequency_below_one_norm_density\": 0.0008529175801781833,\n      \"exact_node_count\": 2,\n      \"ward_max_error\": 2.7241126021806753e-15\n    },\n    {\n      \"L\": 8,\n      \"volume\": 512,\n      \"paired_first_correction_norm_density\": 0.006063992618211095,\n      \"paired_second_energy_coefficient_magnitude\": 0.040577694005953,\n      \"photon_frequency_below_one_norm_density\": 0.0005386579610557097,\n      \"exact_node_count\": 0,\n      \"ward_max_error\": 3.552713678800501e-15\n    },\n    {\n      \"L\": 10,\n      \"volume\": 1000,\n      \"paired_first_correction_norm_density\": 0.0061767868671155565,\n      \"paired_second_energy_coefficient_magnitude\": 0.04103547769848116,\n      \"photon_frequency_below_one_norm_density\": 0.0008171224310859141,\n      \"exact_node_count\": 0,\n      \"ward_max_error\": 1.7763568394002505e-15\n    },\n    {\n      \"L\": 12,\n      \"volume\": 1728,\n      \"paired_first_correction_norm_density\": 0.006256693946153074,\n      \"paired_second_energy_coefficient_magnitude\": 0.041305748383124875,\n      \"photon_frequency_below_one_norm_density\": 0.0008907064906669946,\n      \"exact_node_count\": 2,\n      \"ward_max_error\": 3.552713678800501e-15\n    }\n  ],\n  \"seconds\": 2.107771873474121\n}\nPASS: direct L3 real-space CAR versus momentum calculation\nPASS: five finite reference coefficient grids\nPASS: exact finite-node counts at L6 and L12\nper_element: executed \u2014 direct L3 real-space CAR versus momentum calculation\nper_site: executed \u2014 finite supplied-reference configurations at declared cutoffs\nper_mode: executed \u2014 finite matrices or Fourier grids described in the JSON evidence\nper_block: executed \u2014 exact finite-node counts at L6 and L12\nlattice_wide: checked and not executed \u2014 written uniform bounds and limit proofs; no actual interacting infinite-volume state executed\nTOTAL: PASS=3 FAIL=0\n",
+  "stderr": "",
+  "elapsed_sec": 2.4237942695617676,
+  "timeout_sec": 180,
+  "live_log": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/.in-progress/rotor_coupled_vacuum_resolvent_check_2026_09_16.txt",
+  "whole_tree_watchdog": {
+    "limit_bytes": 536870912,
+    "interval_sec": 0.02,
+    "root_pid": 13987,
+    "samples": 46,
+    "peak_tree_rss_bytes": 103612416,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8161-capture-v2.py",
+  "capture_script_sha256": "fa5b8d592528adbe8db00f3b020608dc2bfa23914e7f3f2e60d6f55e25a92883"
+}

@@ -1,0 +1,44 @@
+{
+  "method": "independent standard-library exact rational controls; no primary imports or execution",
+  "aliases": [
+    {
+      "N": 3,
+      "enumerated": 2,
+      "formula": 2
+    },
+    {
+      "N": 5,
+      "enumerated": 6,
+      "formula": 6
+    },
+    {
+      "N": 9,
+      "enumerated": 20,
+      "formula": 20
+    },
+    {
+      "N": 15,
+      "enumerated": 56,
+      "formula": 56
+    },
+    {
+      "N": 31,
+      "enumerated": 240,
+      "formula": 240
+    }
+  ],
+  "signed_stencil_moments": {
+    "2": "1",
+    "4": "0",
+    "6": "-4"
+  },
+  "phase_H_plus2": "1/24 > 0; negative first-order heat-kernel entry",
+  "closed_plus2_minus1_minus1_leading_coefficient": "-1/54",
+  "gaussian_sixth_moment": "15/64",
+  "improved_energy_deficit_pi4_coefficient": "1/12",
+  "negative_controls": [
+    "signed positive-semidefinite symbol is not an all-time nonnegative phase kernel",
+    "alias-free modular Gauss interpretation fails even at composite N",
+    "quartic cancellation requires leaving the nonnegative-jump cone"
+  ]
+}

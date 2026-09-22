@@ -1,0 +1,9 @@
+{
+  "status": "PRE-EXECUTION ADAPTER FAILURE; no primary launched",
+  "cause": "Cold receipt uses verdict field; preparation assumed status and stopped. Subsequent unbound adapter invocation failed placeholder SHA before any execution.",
+  "original_adapter": "drain8161-capture.py",
+  "original_sha256": "4b8be9c8dd9dfb862990ed15aa4902ce30e6e4f3e1e4ff69611b86987ff54c4f",
+  "actual_adapter": "drain8161-capture-v2.py",
+  "actual_sha256": "fa5b8d592528adbe8db00f3b020608dc2bfa23914e7f3f2e60d6f55e25a92883",
+  "primary_receipts_before": []
+}

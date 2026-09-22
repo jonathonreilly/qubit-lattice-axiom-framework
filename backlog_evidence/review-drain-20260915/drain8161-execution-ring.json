@@ -1,0 +1,21 @@
+{
+  "runner": "scripts/rotor_gauss_charged_ring_compression_2026_09_16.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\n  \"source_sha256\": \"d6aa3c56de18e45c4d9cf57e4ae1512006fd054387cd1ed50783aaa4c1207c5f\",\n  \"charged_ring\": [\n    {\n      \"g\": 0.3,\n      \"cutoff\": 37,\n      \"dimension\": 2700,\n      \"isometry_error\": 1.3322676295501878e-15,\n      \"exact_compression_error\": 2.0971299467069714e-15,\n      \"compact_remainder_norm\": 1.91739616321182e-15,\n      \"exponential_scale\": 1.709613268059757e-23,\n      \"leakage_operator_norm\": 0.2236740572383108,\n      \"true_ground_energy\": -1.9184728447951294,\n      \"variational_ground_energy\": -1.9064957360887556,\n      \"variational_excess\": 0.011977108706373807,\n      \"max_affine_transverse_mean\": 5.37090848341617e-23,\n      \"tail_mass_outer_three\": 1.025810818722666e-91\n    },\n    {\n      \"g\": 0.5,\n      \"cutoff\": 23,\n      \"dimension\": 1692,\n      \"isometry_error\": 7.691850745534255e-16,\n      \"exact_compression_error\": 1.3703785768443547e-15,\n      \"compact_remainder_norm\": 6.796556959196406e-08,\n      \"exponential_scale\": 1.0701151964296972e-08,\n      \"leakage_operator_norm\": 0.38136121577284166,\n      \"true_ground_energy\": -1.888491521771606,\n      \"variational_ground_energy\": -1.8523181355691694,\n      \"variational_excess\": 0.03617338620243671,\n      \"max_affine_transverse_mean\": 3.361866039598335e-08,\n      \"tail_mass_outer_three\": 5.520948339521539e-88\n    },\n    {\n      \"g\": 0.8,\n      \"cutoff\": 16,\n      \"dimension\": 1188,\n      \"isometry_error\": 1.3322676295501878e-15,\n      \"exact_compression_error\": 1.3072226910783104e-15,\n      \"compact_remainder_norm\": 0.0049259995038391695,\n      \"exponential_scale\": 0.0007000622238041694,\n      \"leakage_operator_norm\": 0.6342878997243117,\n      \"true_ground_energy\": -1.8455713376997454,\n      \"variational_ground_energy\": -1.72377734420951,\n      \"variational_excess\": 0.12179399349023545,\n      \"max_affine_transverse_mean\": 0.0021993103393590898,\n      \"tail_mass_outer_three\": 7.212050099972184e-95\n    },\n    {\n      \"g\": 1.1,\n      \"cutoff\": 13,\n      \"dimension\": 972,\n      \"isometry_error\": 1.0053497077208614e-15,\n      \"exact_compression_error\": 8.226995222060102e-16,\n      \"compact_remainder_norm\": 0.11403554113968466,\n      \"exponential_scale\": 0.013996201806952607,\n      \"leakage_operator_norm\": 0.8968242387888329,\n      \"true_ground_energy\": -1.914965721464336,\n      \"variational_ground_energy\": -1.5798731806496227,\n      \"variational_excess\": 0.3350925408147134,\n      \"max_affine_transverse_mean\": 0.04397037200877992,\n      \"tail_mass_outer_three\": 6.754633411064712e-106\n    }\n  ],\n  \"seconds\": 0.269683837890625\n}\nPASS: four charged-ring compression fixtures with unchanged cutoff rule\nPASS: off-space leakage and finite variational comparisons\nPASS: outer-tail checks at the original threshold\nper_element: executed \u2014 four charged-ring compression fixtures with unchanged cutoff rule\nper_site: executed \u2014 finite supplied-reference configurations at declared cutoffs\nper_mode: executed \u2014 finite matrices or Fourier grids described in the JSON evidence\nper_block: executed \u2014 outer-tail checks at the original threshold\nlattice_wide: checked and not executed \u2014 written uniform bounds and limit proofs; no actual interacting infinite-volume state executed\nTOTAL: PASS=3 FAIL=0\n",
+  "stderr": "",
+  "elapsed_sec": 0.6459157466888428,
+  "timeout_sec": 180,
+  "live_log": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/.in-progress/rotor_gauss_charged_ring_compression_2026_09_16.txt",
+  "whole_tree_watchdog": {
+    "limit_bytes": 536870912,
+    "interval_sec": 0.02,
+    "root_pid": 13987,
+    "samples": 13,
+    "peak_tree_rss_bytes": 107724800,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8161-capture-v2.py",
+  "capture_script_sha256": "fa5b8d592528adbe8db00f3b020608dc2bfa23914e7f3f2e60d6f55e25a92883"
+}

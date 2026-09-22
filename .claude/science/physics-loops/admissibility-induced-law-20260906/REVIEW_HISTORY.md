@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-22 block 85 — author checks (not a review PASS)
+Written lens pass by the supervisor. Evenness checked exactly on the compressed generators; algebraic ground energies compared exactly after the float scan caught `N(` conversions; the jam named before sizes; linear terms attributed to the small tori's zero modes. Census 6/6 in family.

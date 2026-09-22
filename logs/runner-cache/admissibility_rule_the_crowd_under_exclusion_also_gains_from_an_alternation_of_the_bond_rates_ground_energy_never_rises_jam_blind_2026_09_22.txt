@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_crowd_under_exclusion_also_gains_from_an_alternation_of_the_bond_rates_ground_energy_never_rises_jam_blind_2026_09_22.py
+runner_sha256: 2e424b1a6570dceca828243166b75075349ef33779355d2934cf6d2cea011c2c
+input_fingerprint_sha256: a72dba49e0c0fc1682fb6106c52957911db3e6e051b886ca3c6f76b270dddaf2
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.50
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_CROWD_UNDER_EXCLUSION_ALSO_GAINS_FROM_AN_ALTERNATION_OF_THE_BOND_RATES_ITS_GROUND_ENERGY_NEVER_RISES_THE_JAM_IS_BLIND_BOUNDED_THEOREM_NOTE_2026-09-22.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: on the ring of four with the bond amplitudes 1 + delta (-1)^x, delta = 3/10, translation by one site carries the compressed generator of n = 1, 2, 3 records under exclusion (dimensions [8, 24, 32]) exactly to the generator at -delta: the crowd's ground energy is even in delta at every filling; being a minimum of affine functions of delta it is concave, hence largest at delta = 0
+PASS: B2 T1: two records under exclusion on the ring of four: ground energy -sqrt(2) at delta = 0 and -sqrt(218)/10 at delta = 3/10 (exact algebraic numbers): lower
+PASS: C1 T2: per axis sin^2 k + delta^2 cos^2 k - delta^2 = (1 - delta^2) sin^2 k >= 0 for delta <= 1, so on the two-dimensional torus E^2 >= 2 delta^2 > 0 (three-dimensional: 3 delta^2, block 84 T1): no one-record energy vanishes, exactly half the 2N states are negative, and the free sea's filling under the alternation is N records - every site
+PASS: C2 T2: with a record on every site of the ring (16 coin configurations) the compressed generator is exactly the zero matrix at delta = 3/10: the jam is blind to every bond amplitude, so the sea's own filling has no crowd counterpart that could gain or lose
+PASS: C3 T2: on the ring of four at delta = 3/10 exactly 4 of the 8 one-record energies are negative (the energies are +-3/10 and +-1, twice each): the sea's filling is one record per site
+PASS: D1 T3: on the ring of four one record's lowest energy is exactly -1 at delta = 1/10, 3/10, 1/2 (its energies +-|delta|, +-1): a single moving record gains nothing from the alternation; the gain that drives it is the sea's (all negative states) or the crowd's (executed), not a walker's
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the compressed generator of one, two and three records on the ring of four, entry by entry, at +delta and -delta
+per_site: executed - the jam's generator on every coin configuration of the ring
+per_mode: executed - the eight one-record energies of the ring of four at three values of delta; control: ground energies of the crowd on the 3x3, 4x3 and 4x4 tori at every filling of 3x3
+per_block: executed - the two-record ground energies at delta = 0 and 3/10 as exact algebraic numbers; the translation conjugacy
+lattice_wide: T1 holds at every filling on every even torus by the translation and the minimum-of-affine argument; T2 by block 84 T1's bound on every torus; T3 on the ring of four; the crowd's executed coefficients are for three small tori; the composition sign and the balance as a minimisation are not derived
+PASS: G1 the five N5 resolution lines are printed
+scope: the crowd under exclusion also gains from an alternation of the bond rates - its ground energy is even and concave in delta (never rises) at every filling, exactly; the free sea's filling under an alternation is a record on every site, whose generator is exactly zero (the jam is blind); a single record gains nothing on the ring of four; executed on 2D tori: the crowd lowers its energy at every filling below the jam, with a quadratic coefficient between a tenth and nine tenths of the free sea's; nothing adopted
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,15 @@
+PR #8602: physics-loop: admissibility induced-law block 70 - the species-exchange maps: what each varying field becomes
+branch physics-loop/admissibility-induced-law-block70-species-exchange-maps-what-each-varying-field-becomes-20260921 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_the_eight_species_are_exchanged_by_site_signs_and_a_half_turn_of_the_coin_2026_09_21.py: rc=0 PASS=16 FAIL=0
+   mutation odd_species_keep_the_sign_of_the_energy: expected B observed B ok
+   mutation even_maps_commute: expected B observed B ok
+   mutation frame_is_unchanged_under_exchange: expected C observed C ok
+   mutation twist_is_unchanged_under_exchange: expected C observed C ok
+   mutation reach_two_strain_is_unchanged: expected D observed D ok
+   mutation reach_three_strain_is_mirrored: expected D observed D ok
+   mutation reach_two_keeps_the_energy_reversal: expected E observed E ok
+   mutation exchange_with_reversal_keeps_the_energy: expected E observed E ok
+   mutation inversion_is_a_symmetry_of_every_field: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

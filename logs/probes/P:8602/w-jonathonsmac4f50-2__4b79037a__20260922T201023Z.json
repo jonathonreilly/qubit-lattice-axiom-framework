@@ -1,0 +1,37 @@
+{
+ "task": "P:8602",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block70-specie",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8602",
+ "pr": 8602,
+ "branch": "physics-loop/admissibility-induced-law-block70-species-exchange-maps-what-each-varying-field-becomes-20260921",
+ "git_sha": "4b79037a",
+ "started_utc": "20260922T201023Z",
+ "elapsed_s": 624.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_the_eight_species_are_exchanged_by_site_signs_and_a_half_turn_of_the_coin_2026_09_21.py",
+    "returncode": 0,
+    "total": "PASS=16 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "3d1954000a066545c27df817bd78535bb2a0afe748cd380e75a254c81c011864",
+ "stdout_tail": "PR #8602: physics-loop: admissibility induced-law block 70 - the species-exchange maps: what each varying field becomes\nbranch physics-loop/admissibility-induced-law-block70-species-exchange-maps-what-each-varying-field-becomes-20260921 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_the_eight_species_are_exchanged_by_site_signs_and_a_half_turn_of_the_coin_2026_09_21.py: rc=0 PASS=16 FAIL=0\n   mutation odd_species_keep_the_sign_of_the_energy: expected B observed B ok\n   mutation even_maps_commute: expected B observed B ok\n   mutation frame_is_unchanged_under_exchange: expected C observed C ok\n   mutation twist_is_unchanged_under_exchange: expected C observed C ok\n   mutation reach_two_strain_is_unchanged: expected D observed D ok\n   mutation reach_three_strain_is_mirrored: expected D observed D ok\n   mutation reach_two_keeps_the_energy_reversal: expected E observed E ok\n   mutation exchange_with_reversal_keeps_the_energy: expected E observed E ok\n   mutation inversion_is_a_symmetry_of_every_field: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T202047Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

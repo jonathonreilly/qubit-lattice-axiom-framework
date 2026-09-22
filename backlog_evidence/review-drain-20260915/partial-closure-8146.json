@@ -1,0 +1,21 @@
+{
+  "pr": 8146,
+  "original_head": "3acd27d2fca87311b1cb138dc7514c95d5be6343",
+  "branch": "physics-loop/admissibility-induced-law-block12-strong-coupling-phase-20260915",
+  "landing": "0ee1a0396c2160605397ecf42f3602215a572c67",
+  "source_verified_at": "0ee1a0396c2160605397ecf42f3602215a572c67",
+  "lease_deleted": false,
+  "recovery_branch_preserved": true,
+  "reason_report": "drain8146-report.md",
+  "closed": {
+    "baseRefName": "physics-loop/admissibility-induced-law-block11-three-body-exceptional-locus-20260915",
+    "closedAt": "2026-09-22T21:07:27Z",
+    "headRefName": "physics-loop/admissibility-induced-law-block12-strong-coupling-phase-20260915",
+    "headRefOid": "3acd27d2fca87311b1cb138dc7514c95d5be6343",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8146,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8146"
+  }
+}

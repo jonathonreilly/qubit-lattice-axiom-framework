@@ -1,0 +1,21 @@
+{
+  "pr": 8141,
+  "original_head": "a76f95da766eea86e1ff357130b725563311285c",
+  "branch": "physics-loop/admissibility-induced-law-block10-recorded-set-gibbs-theorem-20260915",
+  "landing": "0ee1a0396c2160605397ecf42f3602215a572c67",
+  "source_verified_at": "0ee1a0396c2160605397ecf42f3602215a572c67",
+  "lease_deleted": false,
+  "recovery_branch_preserved": true,
+  "reason_report": "drain8146-report.md",
+  "closed": {
+    "baseRefName": "physics-loop/admissibility-induced-law-block09-z3-markov-graph-corner-family-20260915",
+    "closedAt": "2026-09-22T21:07:15Z",
+    "headRefName": "physics-loop/admissibility-induced-law-block10-recorded-set-gibbs-theorem-20260915",
+    "headRefOid": "a76f95da766eea86e1ff357130b725563311285c",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8141,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8141"
+  }
+}

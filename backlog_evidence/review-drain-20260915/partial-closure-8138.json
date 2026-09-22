@@ -1,0 +1,21 @@
+{
+  "pr": 8138,
+  "original_head": "77c1fd5000061b7e5bef0479229f33f1a9037f47",
+  "branch": "physics-loop/admissibility-induced-law-block08-z3-formation-law-20260915",
+  "landing": "0ee1a0396c2160605397ecf42f3602215a572c67",
+  "source_verified_at": "0ee1a0396c2160605397ecf42f3602215a572c67",
+  "lease_deleted": false,
+  "recovery_branch_preserved": true,
+  "reason_report": "drain8146-report.md",
+  "closed": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-22T21:07:01Z",
+    "headRefName": "physics-loop/admissibility-induced-law-block08-z3-formation-law-20260915",
+    "headRefOid": "77c1fd5000061b7e5bef0479229f33f1a9037f47",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8138,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8138"
+  }
+}

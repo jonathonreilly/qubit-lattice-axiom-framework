@@ -1,0 +1,32 @@
+{
+ "task": "J:derive:static-formation-singularity:a2",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-j252c",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/static-formation-singularity/w-macbookpro90c72-j252c/check.py",
+ "seed": 14698,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6bafacca",
+ "started_utc": "20260922T220458Z",
+ "elapsed_s": 13.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL exact hull distances at (3,1,2): the full adapted hull on 2x2 and 2x3; the E-count threshold [953,2410] on disjoint plaquettes; exact corner-order certificates on 2xL, 3xL strips and the 2x2xL tube (KL per column, monotone hull, singularity on the half-infinite strip); 2x2x2 monotone hull TV=3205622113713065/81441318629518848; route no-go: the pointwise envelope decays on 2xL."
+ },
+ "review": "check.py (part 1, S0-S2, from an earlier claude-opus-5 session; part 2, S3-S8, by claude-opus-5-5) passes exactly with FAIL empty and shows what is new: TV from the static law to the full adapted hull is exact on the 2x2 (30457/2431728, closing a1's bracket) and on the 2x3 (4120449306433/238517136000000, strictly below the 812090431/41067000000 of every fixed-order mixture), the disjoint-plaquette TV>=1/2 threshold lies in [953,2410], exact corner-order certificates hold on 2xL and 3xL strips and the 2x2xL tube, and the pointwise-envelope route fails on 2xL.",
+ "what": "DERIVATION, independent attempt 2 of 3: How far apart are the static law and the formation laws in infinite volume?. GIVEN (refereed twice): on any window with a cycle the static law is NOT in the convex hull of adapted (value-dependent order) formation laws, for every non-constant rule; the indicator of the constant patterns separates them (Hoelder plus the cycle). TASK: make it quantitative and infinite-volume: (a) a lower bound on the total-variation distance between the static law and the hull that grows with the number of independent cycles; (b) positive relative-entropy density between the static law and any monotone-order formation law on Z^2 and Z^3 (so they are mutually singular in infinite volume) for the six-axis rule at (3,1,2), with an explicit lower bound; (c) which local observable shows the difference most strongly (the plaquette four-point function?) and its exact value under both laws on the 2x2 and 2x2x2 windows. ROUND 2: the first round's attempts and referee reports are under probes/work/derive/<problem>/ and logs/probes/J:derive:*/ and logs/probes/J:confirm:J-derive-*/ (python3 probes/harvest.py lists them); what survived refereeing is stated below as GIVEN, what failed is stated as the gap. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/static-formation-singularity/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/static-formation-singularity/<name>/check.py\"",
+ "stdout_sha256": "27f724fa2a54efe1fb5b6a67fbd8a98eef6761c8a49e70ab1e7e21d4752330a5",
+ "stdout_tail": "x3)=4120449306433/238517136000000 exactly (< 0.874 x the fixed-order value)\nSUMMARY: PARTIAL exact hull distances at (3,1,2): the full adapted hull on 2x2 and 2x3; the E-count threshold [953,2410] on disjoint plaquettes; exact corner-order certificates on 2xL, 3xL strips and the 2x2xL tube (KL per column, monotone hull, singularity on the half-infinite strip); 2x2x2 monotone hull TV=3205622113713065/81441318629518848; route no-go: the pointwise envelope decays on 2xL.\nHIT: TV(static law, closed convex hull of all adapted formation laws) is exact on the 2x2 = 30457/2431728 (the corner mixture attains the Bellman lower bound; optimal test 1_E, E = one diagonal pair equal and the other not antipodal) and on the 2x3 = 4120449306433/238517136000000 (19 value-dependent strategies vs a test with matching Bellman sup), below 812090431/41067000000 = TV to all 720 fixed orders.\nHIT: m disjoint plaquettes: every nondecreasing G of the m E-indicators has sup over the adapted hull of E_nu G = G^(q,...,q), q=1619/5616 (multi-affine Bellman), so TV >= TV(Bin(m,521/1732),Bin(m,q)) >= 1-beta^m with 1-beta >= 9.43777e-5; TV >= 1/2 at m=2410 and TV < 1/2 for m <= 952.\nHIT: corner-order laws on w x L strips (w=2,3) and the 2x2xL tube: exact Perron certificates BC^2 <= K*r2^(L-1) with 1-r2 >= 6.05795792e-4, 1.245343112e-3, 3.511679839e-3 give KL >= (L-1)(1-r2) - log K, TV >= 1/2 against the whole monotone hull for L >= 4624, 2272, 1019, and mutual singularity on the half-infinite strip and tube.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j252c",
+  "at_utc": "20260922T220511Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

@@ -1,0 +1,13 @@
+[W1] 16x6x6 torus, staggered mass m = 0.6 changing sign at x = 4 and x = 12, defect layers of thickness z (sites with no staggered term):
+     z = 0: exact zero modes 0; smallest |E| [0.281 0.281 0.281]
+     z = 1: exact zero modes 16; smallest |E| [0. 0. 0.]; weight within 1 sites of a wall: min 0.834
+     z = 2: exact zero modes 0; smallest |E| [0.1373 0.1373 0.1373]
+     z = 3: exact zero modes 16; smallest |E| [0. 0. 0.]; weight within 2 sites of a wall: min 0.840
+
+[W2] transverse dispersion of the wall modes (Bloch in y, z; ring of 48 along x; one zero site per wall):
+     m = 0.3: q = 0.05: |E| = 0.0033 (speed 0.066); q = 0.1: |E| = 0.0050 (speed 0.050); q = 0.2: |E| = 0.0060 (speed 0.030); q = 0.4: |E| = 0.1244 (speed 0.319)
+     m = 0.6: q = 0.05: |E| = 0.0131 (speed 0.263); q = 0.1: |E| = 0.0256 (speed 0.256); q = 0.2: |E| = 0.0458 (speed 0.231); q = 0.4: |E| = 0.0520 (speed 0.134)
+     m = 1.2: q = 0.05: |E| = 0.0294 (speed 0.589); q = 0.1: |E| = 0.0585 (speed 0.586); q = 0.2: |E| = 0.1139 (speed 0.573); q = 0.4: |E| = 0.2030 (speed 0.521)
+
+[W3] 24x6x6 torus, one zero site per wall: 16 exact zero modes (2 walls x 4 transverse corners x 2 = 16)
+     total zero-mode weight at each transverse corner (four per corner expected): {(0, 0): 4.0, (1, 0): 4.0, (0, 1): 4.0, (1, 1): 4.0}

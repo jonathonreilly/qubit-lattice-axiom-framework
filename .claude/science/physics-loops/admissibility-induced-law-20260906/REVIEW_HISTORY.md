@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-22 block 79 — author checks (not a review PASS)
+Written lens pass by the supervisor. Sharp walls found nothing, smooth walls found exact zero modes; the parity rule was isolated and proved by exact nullspaces. A handedness claim was withheld for want of a stable computation. Control's corner projector corrected. Census 7/7 in family.

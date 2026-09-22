@@ -1,0 +1,35 @@
+{
+  "at": "2026-09-22T19:52:17.756316+00:00",
+  "results": [
+    {
+      "pr": 8079,
+      "before": {
+        "headRefName": "codex/native-finite-moment-ward-20260910",
+        "headRefOid": "181e182a14d358c8bca434a1eac398b27237ec8f",
+        "state": "OPEN"
+      },
+      "after": {
+        "closedAt": "2026-09-22T19:52:12Z",
+        "headRefOid": "181e182a14d358c8bca434a1eac398b27237ec8f",
+        "state": "CLOSED"
+      },
+      "branch_preserved": "refs/heads/codex/native-finite-moment-ward-20260910",
+      "comment_sha256": "1d03fed73c96572ff56b7f271e46c10cfc609aecb8b2ed9ad3e3a5bb8ac41d05"
+    },
+    {
+      "pr": 8081,
+      "before": {
+        "headRefName": "codex/native-correlated-ward-20260910",
+        "headRefOid": "ac5e0c248f9af28f86ee148e95c148a74e260524",
+        "state": "OPEN"
+      },
+      "after": {
+        "closedAt": "2026-09-22T19:52:16Z",
+        "headRefOid": "ac5e0c248f9af28f86ee148e95c148a74e260524",
+        "state": "CLOSED"
+      },
+      "branch_preserved": "refs/heads/codex/native-correlated-ward-20260910",
+      "comment_sha256": "aa5443cfe9f3ae048f1217ad874b1c18e77892d37a7d520e5018a303707da723"
+    }
+  ]
+}

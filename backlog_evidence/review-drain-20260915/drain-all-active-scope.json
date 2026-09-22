@@ -1,0 +1,28 @@
+{
+  "updated": "2026-09-22T19:59:46.810916+00:00",
+  "user_direction": "keep going until all open PRs are reviewed and landed or rejected/closed",
+  "scope": "All open PRs including drafts for ready-or-close triage; refresh arrivals. Supersedes prior campaign cutoffs for this request.",
+  "main": "59024639572d6d3a1091c727297b18c350d3f484",
+  "active_units": [
+    [
+      8137
+    ],
+    [
+      8138,
+      8139,
+      8141,
+      8142,
+      8146
+    ],
+    [
+      8140,
+      8144,
+      8145
+    ]
+  ],
+  "closed_this_scope": [
+    8079,
+    8081
+  ],
+  "authority": "Focused review and source integration only. No formal audit or premise adoption. Original unlanded branches remain recovery handles."
+}

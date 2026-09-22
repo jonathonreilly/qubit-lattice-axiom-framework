@@ -1,0 +1,34 @@
+{
+  "backup": "/Users/jonBridger/.codex/skill-backups/20260922T180558Z-kb32pw19",
+  "destination": "/Users/jonBridger/.codex/skills",
+  "mode": "apply",
+  "skills": [
+    {
+      "changed_paths": [
+        "SKILL.md",
+        "references/AUDIT_COMPATIBILITY.md",
+        "references/COMBINED_VALIDATION.md",
+        "references/FIXES_AND_REPORTING.md",
+        "references/LANDING.md",
+        "references/OPERATIONS.md",
+        "references/REVIEW_SETUP.md",
+        "references/REVIEW_UNITS.md",
+        "references/SALVAGE.md",
+        "references/SCIENCE_LENSES.md",
+        "references/UNIT_RECEIPT.md",
+        "scripts/review_receipt.py"
+      ],
+      "recovery_directory": "/Users/jonBridger/.codex/.methodology-recovery-review-loop-mvd5vs99",
+      "recovery_state": "original_retained",
+      "skill": "review-loop",
+      "status": "applied"
+    }
+  ],
+  "source": {
+    "repository": "/private/tmp/review-drain-20260915/integration-resume",
+    "revision": "1730f93888e3c06725a93b81a033623af9f1b047",
+    "skills_dirty": false,
+    "source_kind": "worktree snapshot; revision identifies its Git base, not uncommitted bytes",
+    "worktree_dirty": false
+  }
+}

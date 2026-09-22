@@ -1,0 +1,21 @@
+{
+  "backup": null,
+  "destination": "/Users/jonBridger/.codex/skills",
+  "mode": "check",
+  "skills": [
+    {
+      "changed_paths": [],
+      "recovery_directory": null,
+      "recovery_state": null,
+      "skill": "review-loop",
+      "status": "in_sync"
+    }
+  ],
+  "source": {
+    "repository": "/private/tmp/review-drain-20260915/integration-resume",
+    "revision": "1730f93888e3c06725a93b81a033623af9f1b047",
+    "skills_dirty": false,
+    "source_kind": "worktree snapshot; revision identifies its Git base, not uncommitted bytes",
+    "worktree_dirty": false
+  }
+}

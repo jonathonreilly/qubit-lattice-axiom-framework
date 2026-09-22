@@ -1,0 +1,11 @@
+{
+  "verdict": "PASS WITH BOUNDED CLAIMS",
+  "tree": "256f5f598ae9c712b13e27da13d6f9f27de54899",
+  "evidence": {
+    "resume8077-original-session-final.json": "843020f06914bb9e2c0fc757456593d49b4c5145bb9c7929b4802cfa52087049",
+    "resume8077-original-session-final-v2.json": "48a5f2a13e809dcfd5a060acbd19c39bb90d9dd8142115afbf3618352924db0f",
+    "resume8077-original-session-final-preflight.json": "8c5a776cbd817de495fb1a8960949d636d8ce87b67619d6532ee605f2a967853"
+  },
+  "sole_final_cache_check": "exit0/mechanical_status=ok/cache_checked=true",
+  "new_primary_runs": 0
+}

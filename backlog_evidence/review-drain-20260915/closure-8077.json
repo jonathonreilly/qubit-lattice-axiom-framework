@@ -1,0 +1,19 @@
+{
+  "pr": 8077,
+  "original_head": "5a94383097a5484aa6d4819d3c9843790d6e950d",
+  "branch": "codex/native-global-projector-certificate-20260910",
+  "landing": "1730f93888e3c06725a93b81a033623af9f1b047",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "codex/native-global-projector-certificate-20260910",
+    "headRefOid": "5a94383097a5484aa6d4819d3c9843790d6e950d",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8077,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8077"
+  }
+}

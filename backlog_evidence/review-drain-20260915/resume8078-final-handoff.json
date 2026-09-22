@@ -1,0 +1,32 @@
+{
+  "verdict": "PASS WITH BOUNDED CLAIMS",
+  "reviewer_session": "/root/review_8011",
+  "source_tree": "9a37ef79225a7d8c9cc83086beb33deeda916ed6",
+  "source_base": "d5949b991200fd9ca006725446808c0df1a58e1a",
+  "final_cache_preflight": "ok",
+  "exit_code": 0,
+  "new_scientific_executions": 0,
+  "refs": [
+    {
+      "path": "/private/tmp/review-drain-20260915/resume8078-original-session-final.json",
+      "sha256": "7f92083f73ac6e1797bad845feb474b3954d032a0a1522d850affb9a5ec68c73"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/resume8078-unit-v1-final.json",
+      "sha256": "4b8e6a8212151af376691222321f448b2786e77c2f7f8a132d7820cc4e0373e6"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/resume8078-final-preflight.json",
+      "sha256": "feadbaa1ac9f0fed33db52fb132fd4b2b79f7039ad6d732dc56fd49350c5345c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/resume8078-final-preflight-execution.json",
+      "sha256": "d6365373fa170af5a92cdd56fc4f09321fefc08b1f4aa04cd9eee19cfe985915"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/resume8078-original-session-confirm.py",
+      "sha256": "f12dcb6ddcae5abf4317641761fda5acd0408214049dec88981139652cad0b4d"
+    }
+  ],
+  "remaining": "Coordinator exact-current-main combined integration gate; no audit or landing verdict."
+}

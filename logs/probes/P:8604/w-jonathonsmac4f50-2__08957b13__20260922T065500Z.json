@@ -1,0 +1,41 @@
+{
+ "task": "P:8604",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-empty-start-quantitative-w",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5",
+ "command": "python3 probes/run_pr_branch.py 8604",
+ "pr": 8604,
+ "branch": "codex/mobile-record-empty-start-quantitative-waves-20260921",
+ "git_sha": "08957b13",
+ "started_utc": "20260922T065500Z",
+ "elapsed_s": 49.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/mobile_records_empty_start_quantitative_waves_2026_09_21.py",
+    "returncode": 0,
+    "total": "PASS=7 FAIL=0",
+    "census_mismatches": [
+     "omit_birth_killing_scale",
+     "omit_route_orientation_factor",
+     "wrong_original_hole_fiber"
+    ]
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "e9206bc79928418c5b4419495f61b2122ed5cd403971ab99fa87ff7190e3888c",
+ "stdout_tail": "PR #8604: Bound empty-start formation and quantitative mobile-record waves\nbranch codex/mobile-record-empty-start-quantitative-waves-20260921 (base codex/mobile-record-moving-geometry-waves-20260921)\nrunners in the PR: 1\n== scripts/mobile_records_empty_start_quantitative_waves_2026_09_21.py: rc=0 PASS=7 FAIL=0\n   mutation omit_birth_killing_scale: expected ? observed ? MISMATCH\n   mutation omit_route_orientation_factor: expected ? observed ? MISMATCH\n   mutation wrong_original_hole_fiber: expected ? observed ? MISMATCH\nHIT: scripts/mobile_records_empty_start_quantitative_waves_2026_09_21.py: mutation census mismatch: omit_birth_killing_scale omit_route_orientation_factor wrong_original_hole_fiber",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T065549Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

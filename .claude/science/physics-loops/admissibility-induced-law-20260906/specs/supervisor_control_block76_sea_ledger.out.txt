@@ -1,0 +1,21 @@
+[W1] volume term and the rates' polarisation (reach three absent: pure rates); per site; gradient part = total - c0 * (mean square)/2
+     L = 6: c0 = -1.18123; (1, 0, 0): Pi = -0.27514, gradient/|q|^2_lat = +0.02017
+     L = 8: c0 = -1.19015; (1, 0, 0): Pi = -0.28458, gradient/|q|^2_lat = +0.02212; (2, 0, 0): Pi = -0.25069, gradient/|q|^2_lat = +0.02342
+     L = 10: c0 = -1.19237; (1, 0, 0): Pi = -0.28929, gradient/|q|^2_lat = +0.02306; (2, 0, 0): Pi = -0.26535, gradient/|q|^2_lat = +0.02369
+     L = 12: c0 = -1.19313; (1, 0, 0): Pi = -0.29196, gradient/|q|^2_lat = +0.02358; (2, 0, 0): Pi = -0.27438, gradient/|q|^2_lat = +0.02390; (3, 0, 0): Pi = -0.25034, gradient/|q|^2_lat = +0.02397; (1, 1, 0): Pi = -0.28553, gradient/|q|^2_lat = +0.02379; (1, 1, 1): Pi = -0.27915, gradient/|q|^2_lat = +0.02380; (2, 2, 0): Pi = -0.25085, gradient/|q|^2_lat = +0.02372
+     clocks' stiffness kappa (coefficient of (1/2) sum_bonds (u_x - u_y)^2), L = 12, mean over six modes: 0.0952 (spread 0.0016)
+
+[W2] strains under reach three, L = 8, q = 2 pi (1,0,0)/8: second order per site, local part, gradient part / |q|^2
+     TT cross (yz)     : total -0.017889; local -0.020034; gradient/|q|^2 = +0.003476
+     TT plus (yy - zz) : total -0.018896; local -0.020186; gradient/|q|^2 = +0.002093
+     isotropic stretch : total -0.008585; local -0.008815; gradient/|q|^2 = +0.000372
+
+[W3] chessboard of clocks u = eps (-1)^(x+y+z), L = 8: E_sea(eps) - E_sea(0) at eps = 0.25, 0.5, 1.0 (exactly zero by T1); corner-type modes' second order
+     chessboard: ['+0.00e+00', '-1.14e-13', '+0.00e+00']
+     cos(pi x)      : second order -0.39672; local part c0/2 = -0.59508; gradient part +0.19836 (= |c0|/2 x |q|^2_lat/12 = +0.19836)
+     cos(pi(x + y)) : second order -0.19836; local part c0/2 = -0.59508; gradient part +0.39672 (= |c0|/2 x |q|^2_lat/12 = +0.39672)
+
+[W4] linearised static law (c0 + kappa q^2_lat) u_q = -m/N with c0 = -1.1931, kappa = 0.0952, L = 12, unit body at the origin:
+     volume term kept    : u at the body +2.0144, neighbour -0.4445, distance 3 -0.0376 -> clock FASTER at the body (repulsion)
+     volume term removed : u at the body -2.4583, neighbour -0.7079, distance 3 -0.1020 -> clock SLOWER at the body (attraction)
+     c0 + 12 kappa = -0.0511 (the zone corner; exactly zero for the true second variation by T1); induced coupling with the volume term removed: gamma_ind = 1/kappa = 10.51

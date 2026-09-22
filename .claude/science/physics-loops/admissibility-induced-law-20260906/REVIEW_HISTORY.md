@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-22 block 76 — author checks (not a review PASS)
+Written lens pass by the supervisor after a four-lens panel (`FORK_PROBE_source_link_20260922.md`). An exact zero seen in the control was proved (T1) and used to predict two further exact factors. The clock stiffness measured across four tori, six modes and three directions before being called nonzero. Fence apostrophes and two names fixed after the first census; one garbled remark rewritten. Census 8/8 in family.

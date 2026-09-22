@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_filled_seas_energy_as_the_ledgers_field_term_chessboard_clocks_invisible_2026_09_22.py
+runner_sha256: a27097f05d22866c95532ff69da0d889f75b689974e985bb0351e6e89ec52b90
+input_fingerprint_sha256: 05d45cb1e0a898ab332f39ca027bc1a3583cb5aa175868e547a6e428fbf159ab
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 26.93
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_FILLED_SEAS_ENERGY_AS_THE_LEDGERS_FIELD_TERM_A_CHESSBOARD_OF_CLOCKS_IS_INVISIBLE_THE_SEA_INDUCES_A_CLOCK_STIFFNESS_NOT_THE_CURVATURE_MEMBER_BOUNDED_THEOREM_NOTE_2026-09-22.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: on a 4x4x4 torus a chessboard of clock rates phi_x = c^{eps(x)} (c = 3/2) has phi_x phi_y = 1 on all 192 bonds and phi H phi psi = H psi at all 64 sites for a rational state; two different rate fields with the same bond products (phi and phi x chessboard) give the same clocked walk at every site: clause B's coupling sees the rates only through the bond products, and a chessboard of clocks is invisible to it
+PASS: B2 T2: U_(111) H2[B] U_(111) psi = -H2[-B] psi at all 64 sites for a varying rational strain (block 70 T3(d)), and the trace of H2[B] over all 128 basis states is exactly zero: the spectrum of H2[-B] is minus the spectrum of H2[B], so the filled sea's energy under the reach-two coupling is EVEN in the strain - no first-order response of the sea to a strain, whatever the strain
+PASS: C1 T3: on a ring of 6 sites with a varying rational rate field, for two exactly orthogonal rational one-record states, the antisymmetric two-record state (144 components) has <H (x) 1 + 1 (x) H> equal to the SUM of the two one-record energies and the site energy density at a site equal to the sum of the two densities: with anticommuting composition the ledger's source is additive over occupied states
+PASS: C2 T3: an exact negative-energy state of the reduced walk (e^{-i pi x/2} on the upper component, energy -1 at the interior sites of the ring) has a negative energy density at every such site; removing it from an occupied many-record state changes the ledger's source there by MINUS that density (additivity, C1), which is positive: a hole in the filled negative branch sources as a positive body does
+PASS: D1 T4: on a 4x4x4 torus with the declared rounded values c = -1193/1000 (volume term) and kappa = 19/200 (clock stiffness), c + 12 kappa = -53/1000 < 0: every mode's denominator c + kappa q^2 is negative, and the linearised static law puts u = 5301534930830125/2518239561333048 > 0 at a unit body (the clock runs FASTER: repulsion); with the volume term removed (c = 0) u = -7585/3648 < 0 (slower: attraction)
+PASS: D2 T4: by T1 the clocked walk with a chessboard of rates of ANY amplitude (here c = 2) is the free walk at every site, so every eigenvalue, the sea's energy and its second variation are exactly unchanged along the chessboard mode: the linearised static law of the sea-as-ledger reading has an exact zero mode and never fixes the clocks' chessboard component
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the bond products of a chessboard of rates on all 192 bonds; the trace of the reach-two generator over all 128 basis states
+per_site: executed - the clocked walk with a chessboard of rates against the free walk at all 64 sites; two rate fields with equal bond products at all sites; the mirror identity of the reach-two generator at all 64 sites; the two-record energy density at a site
+per_mode: executed - the sign of every mode's denominator in the linearised static law on a 4x4x4 torus for the declared rounded values; the chessboard mode as an exact zero
+per_block: executed - the antisymmetric two-record state's energy against the sum of the one-record energies (144 components, exact); the clock at a unit body in the two readings
+lattice_wide: T1 for every chessboard of rates on every lattice with even sides and for every pair of rate fields with equal bond products; T2 for every strain; T3 for every pair of orthogonal one-record states; T4 for the declared values on a 4x4x4 torus, the measured values themselves being the control's (floating point, not claimed); whether the sea is filled, and the exchange sign, are not decided
+PASS: G1 the five N5 resolution lines are printed
+scope: the filled sea's own energy as the ledger's field term - a chessboard of clocks is invisible to clause B's coupling (exact); the sea under reach two is even in the strain (exact); with anticommuting composition the source is additive and a hole sources positively (exact); executed: the sea gives the clocks a stiffness kappa = 0.095 (not counted per local tick), the lengths almost none, a negative volume term c0 = -1.19 that makes the linearised law repulsive and singular at the chessboard mode; removed, the induced coupling is attractive with gamma = 1/kappa = 10.5
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

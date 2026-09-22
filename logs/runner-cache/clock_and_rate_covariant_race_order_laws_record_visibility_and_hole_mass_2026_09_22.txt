@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/clock_and_rate_covariant_race_order_laws_record_visibility_and_hole_mass_2026_09_22.py
+runner_sha256: 99f8ddc195aaad8955973eeff20b108dc45ad11e7e492db30a863655d58811a1
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.40
+status: ok
+----- stdout -----
+== 1. Windows and induced order laws ==
+[PASS] windows: 2x3 has 6 sites and 7 edges; 3x3 roles V=4, L=4, P=1, each L in two checks; |S_Gauss| = 32
+[PASS] uniform rate: the race law is the uniform order law, every one of the 720 orders has mass 1/720
+[PASS] count rate 1 + k: the induced order law is normalised and is not exchangeable :: min 1/3360, max 1/252 against 1/720
+[PASS] count rate: the order law is covariant under the 180-degree window rotation on 6 sampled orders
+[PASS] value rate: driven by any fixed full value pattern, the race masses sum to 1 over all 720 orders :: the race factors telescope: clocks spend no probability on values
+
+== 2. Record-level invisibility for the chain rule of a positive measure ==
+[PASS] mu is a positive normalised pair measure, invariant under the flip and the 180-degree rotation
+[PASS] the chain rule is order-blind: the finished law equals mu for three explicit orders, all 64 atoms
+[PASS] invisibility: under the chain rule the race law is mu for the count, value and inverse-count clocks :: no covariant rate law leaves any record trace when the conditional rule is order-blind
+
+== 3. Record-level visibility for the nearest-neighbour rule ==
+[PASS] the three race laws are normalised and flip-covariant (value clock included)
+   E[agreeing edges]: uniform 16780559/3645000, count 4956001733/1071630000, value 126083753/27337500, static mu 2696/561
+   TV distances: unif-count 29995127/3429216000, unif-value 201911/43740000, count-value 29140541/6429780000
+[PASS] clocks are visible: the count and value clocks shift the finished law of the NN rule (TV > 0)
+[PASS] the agreement statistic separates the clocks pairwise and from the static measure
+
+== 4. The plane hard-support rule: hole mass across clocks ==
+[PASS] uniform clock: d-histogram (3/10, 3/5, 1/10), completion mass E[2^-d] = 5/8, matching the support-rule note
+   completion masses: uniform 5/8 = 0.625; count 145882686915239/206615469060000 = 0.706059; count^2 99873182931058298117591/125349298909891262306100 = 0.796759; 1/(1+k) 304695555559113623750221/524938138301974597200000 = 0.580441
+[PASS] count, count^2 and inverse-count clocks: histogram DP and absorbed-coin DP agree on the completion mass
+[PASS] the completion mass is clock-sensitive: all four covariant rate laws give different exact values :: the hole mass of an order-blind hard-support rule reads the clock
+[PASS] rate covariance on the plane: the count law is invariant under the 90-degree window rotation (samples)
+[PASS] explicit orders reach d = 0, 1, 2 (links early; one link last; two opposite links last)
+[PASS] per order, over all 512 coins: completion fraction 2^-d, patterns exactly S_Gauss, uniform multiplicity :: conditional on completion the record law is uniform for every value-blind clock (mixture of uniforms)
+
+== 5. Independent routes and bindings ==
+[PASS] exchange identity (formation-order block): the chain rule commutes on sampled pairs, the NN rule does not :: the order sensitivity that the clock reads is exactly the failed exchange identity
+[PASS] invisibility extends to the count^2 clock as well
+[PASS] independent route: the uniform-clock NN law equals the uniform mixture of all 720 fixed-order laws
+[PASS] independent route: direct enumeration of all 9! orders reproduces the d-counts 108864, 217728, 36288 :: the support-rule note's histogram, recomputed from scratch
+   E[d]: uniform 4/5; count 224378858694803/361577070855000; count^2 2520469454500023029043211/5954091698219834959539750; 1/(1+k) 23691843271258874793371/26246906915098729860000
+[PASS] eagerness ordering, exactly: count^2 > count > uniform > inverse-count in completion mass; E[d] = 4/5 uniform :: cluster-eager clocks complete checks before links can close them; frontier-averse clocks do the opposite
+
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

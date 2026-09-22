@@ -1,0 +1,991 @@
+{
+  "schema_version": 2,
+  "reviewer": "/root/review_8161",
+  "verdict": "PASS FOR CORRECTED SOURCE AND BOUNDED EVIDENCE",
+  "authority": "Review only; no audit verdict, retained status or unconditional landing PASS. Root sole cache preflight and combined integration gate pending.",
+  "source": {
+    "base": "0ea56ccd19205c66ccfb664fb391ed4de39fa415",
+    "commit": "0ea56ccd19205c66ccfb664fb391ed4de39fa415",
+    "tree": "0f2fbf00b1c24108040992329fa2098c63fb8623",
+    "paths": [
+      {
+        "path": "docs/ROTOR_COUPLED_FREE_VACUUM_RESOLVENT_DENSITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "cea05ba42b01a0120dea95607b24226ca58df383a8697a564e5c64c44a46c022"
+      },
+      {
+        "path": "docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "f9af4371bf725cb151fa61068c0a819f02e32c83e674113df0b4cfdd8a20d07c"
+      },
+      {
+        "path": "docs/ROTOR_ORTHOGONAL_TRANSVERSE_REFERENCE_CURRENT_VERTEX_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "c3919641ace849d9864c31110a675218a77df814f9438df70028466b0f176e89"
+      },
+      {
+        "path": "docs/ROTOR_REFERENCE_VERTEX_INFRARED_WEIGHTED_NORMS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "f0201362f1e057b233e291d40f95c7fd3a98ea6845e5cbb04600bed79a5e0e72"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "2a6cc7873eb0bb0b0ece43dbf6c71aba7dc48578fe1f24b80df434b218ecfbbc"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_000_ASSUMPTIONS_AND_IMPORTS.md.gz",
+        "sha256": "48fea6b7ee0ddff9a4ba5496d603885599ce08089c4fa54322cfb7634ee28b7f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_001_CLAIM_STATUS_CERTIFICATE.md.gz",
+        "sha256": "4b037613871233e6160cfafde0f5dc4d7be92e45dec11e3b0e1e07aa5e859f8a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_002_GOAL.md.gz",
+        "sha256": "8fa9105ec4014de23a2a9ece051d158f9c83fbbf9aac7f31aff3b10762390c1d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_003_HANDOFF.md.gz",
+        "sha256": "1185fda1ccc84666bad8ccebb0e4cffa19759ffd13113b2c57565e0785fe9c87"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_004_MANIFEST.json.gz",
+        "sha256": "e85eb1aba3b3fc11853d11703221be32890ebe62325a977c96f3cef14d2c89f4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_005_OPPORTUNITY_QUEUE.md.gz",
+        "sha256": "510df0f723c84555ea587d81aeb973c403a11d488b6b0075ebc101037e4d6da8"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_006_READING_LEDGER.md.gz",
+        "sha256": "001715fa8c3965fbde0be5ccefff63277262abbfda08d4ddc51bf2013134131c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_007_README.md.gz",
+        "sha256": "fc2f416c34453961362d0a3cf6198aa2c8e6c37bb48b781fd9e9c193d92e5845"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_008_STATE.yaml.gz",
+        "sha256": "17249c4049883fa258d09cc9061e80a6b343663db83219bfce24f136344af65f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_009_TRACE_GATE.md.gz",
+        "sha256": "ac3c6061736ad03aeed0e8b2aebba45b81bf1f25dc9f87633de3ba0869a76478"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_010_BLOCK01_AFFINE_THETA.stderr.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_011_BLOCK01_AFFINE_THETA.stdout.txt.gz",
+        "sha256": "a9993a9374f32d67c4a8650ca9b74fc331abd349c6bc22ca5dd7a15308fee171"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_012_BLOCK01_CHARGED_RING.stderr.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_013_BLOCK01_CHARGED_RING.stdout.txt.gz",
+        "sha256": "b8eaa32e26f9731d2c3773bab411b779127354efc589fca3541ecff60554c2b6"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_014_BLOCK02_ONE_PHOTON.stderr.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_015_BLOCK02_ONE_PHOTON.stdout.txt.gz",
+        "sha256": "dd143ee5d5c16ab8c8fbcae92b6f15719a36953b6bef5b09fdb3a1d5f858a6d4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_016_BLOCK03_INFRARED_VERTEX.stderr.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_017_BLOCK03_INFRARED_VERTEX.stdout.txt.gz",
+        "sha256": "368cebad98785a6799c0d8bb6e4e792b88b8e7545403e295a931ac63e98552d7"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_018_BLOCK04_COUPLED_VACUUM.stderr.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_019_BLOCK04_COUPLED_VACUUM.stdout.txt.gz",
+        "sha256": "9fbe05c4688abcd8e6eae8e4f997aeb9b289f98bdd72b2e5c534aff6e325b40b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_020_block01_affine_theta_check.py.gz",
+        "sha256": "6e01a20ac321cdbcdbbb387776e07dda43497e5b48803d897389b9fb87a2a7d7"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_021_block01_charged_ring_compression.py.gz",
+        "sha256": "a4a14a04cf58deff2d679a8e794ccf8461bd92e5460d6c55050c75e8cda183e8"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_022_block02_one_photon_vertex_check.py.gz",
+        "sha256": "545e5a30e80328e1d07eecec025ecaee8a765217ddef48c4de313e21fecd2c43"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_023_block03_infrared_vertex_check.py.gz",
+        "sha256": "aea4747d1d48393b1f7a8962fa74aaf74c35029094833b58ce96bbe26d0f9624"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_024_block04_coupled_vacuum_check.py.gz",
+        "sha256": "cf5a046bef69a794c74018f861acd5432647e000903e97418405225d8efb1b47"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_025_BLOCK01_GLOBAL_GAUSS_DRESSING_AND_VARIATIONAL_COMPRESSION.md.gz",
+        "sha256": "c7751e6840d908fe78413d6b526e0b829fc5b2f34213f09fb22a71655989d2e9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_026_BLOCK01_VOLUME_VERSUS_SCALE_DIAGNOSTIC.md.gz",
+        "sha256": "2b109c58ee26614eaca343cf154881144a221215a356ae95f54f4231bab269f3"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_027_BLOCK01_WORKING_AFFINE_GAUSSIAN_DRESSING.md.gz",
+        "sha256": "6cd85a484fbca2650508baf7cf7a730d4a9eb631c63c78af06332777ff110763"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_028_BLOCK02_ORTHOGONAL_TRANSVERSE_SECTOR_AND_CURRENT_VERTEX.md.gz",
+        "sha256": "0a25690f2645ce7d0e3e2b2611cf249fcab1ce5a4c34eefb195ee7a97d04d28f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_029_BLOCK02_WORKING_ONE_PHOTON_VERTEX.md.gz",
+        "sha256": "1d9414e799f5a781c65b6619347ce3e6d47fd5a4f6b8354edc6199248ae17b89"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_030_BLOCK03_INFRARED_PROFILE_OF_THE_REFERENCE_VERTEX.md.gz",
+        "sha256": "1f59995ebcdf4f3aa28d0d4806abc21cb030f56e2963424be3161d596a6efa1c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_031_BLOCK04_COUPLED_FREE_VACUUM_RESOLVENT_DENSITIES.md.gz",
+        "sha256": "a23468adad3a695b79f094d9bbcc252253673ae3b4646c39eb27ec8124a76074"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_032_BLOCK04_WORKING_COUPLED_FERMION_DENOMINATOR.md.gz",
+        "sha256": "7ee5bb9f52d82def00063f9df2bafcb0480aaef644e35d754996b2ded4ebfb42"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_033_BLOCK01_04_PERSONAL_PROOF_REVIEW.md.gz",
+        "sha256": "407de177d404ac8d463c801356f2ee447e871c274bb14f34e2a10abe823aaf3e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_034_BLOCK01_MUTATIONS.json.gz",
+        "sha256": "65f6b6ddbeea096a537c5934d9d2334acbaf04c096c380f737108010dd77a530"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_035_BLOCK01_MUTATIONS.stderr.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_036_BLOCK01_MUTATIONS.stdout.txt.gz",
+        "sha256": "b72f0097e8d8a8419aeaae82bf91313c2480c26b19535483409714514311c841"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_037_BLOCK01_PERSONAL_CHECKPOINT.json.gz",
+        "sha256": "9479b0266b9215549320c1d84a0d4461d5663e93df57d9699abd418ed1272738"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_038_BLOCK02_04_MUTATIONS.json.gz",
+        "sha256": "4a2b4f5d70064521a29bf9198d5fecfab04f316548cc7f731a0962af6ade34dd"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_039_BLOCK02_04_MUTATIONS.stderr.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_040_BLOCK02_04_MUTATIONS.stdout.txt.gz",
+        "sha256": "378a6d435a5b52a829032bdbf5abdc6f093924d54579fc973f36f01dc4960ea5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_041_BOUNDARY_STRESS_TEST.md.gz",
+        "sha256": "aed688f91be61d64d42cf2501a2b92c7f37d527a83ec297abf75262798c892f9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_042_FOCUSED_VERIFICATION.json.gz",
+        "sha256": "8b3904f3304cd3a6bd733a2cab0d10df471fe5806d64a44b42350fd589398c59"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_043_FOCUSED_VOCAB.stderr.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_044_FOCUSED_VOCAB.stdout.txt.gz",
+        "sha256": "f97925700ac823613caa1d4adade7e633dd4f657f28f23eb6e341080849ba0f0"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_045_block01_mutation_checks.py.gz",
+        "sha256": "0a50de6ea250dbb9639df21c8565b81849327737b640703b834047bf4097dc49"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/8161_046_block02_04_mutation_checks.py.gz",
+        "sha256": "e1fd278b3f10d2b283a629bfea129a142b3cfc174ae849c2eaec302fc529e49c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/README.md",
+        "sha256": "5a122898a3928543ecc03ee02e49400ed414e4172d1bc921a3c9a2df4f478952"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/original-manifest.json",
+        "sha256": "1923a535198c27caa6a65770a0f565ab4b42ede5aa8bd5566ecfe9c51a1a9079"
+      },
+      {
+        "path": "logs/runner-cache/rotor_coupled_vacuum_resolvent_check_2026_09_16.txt",
+        "sha256": "fa4d966663fe6f24b92b78267587797175179a74c04c61734e5d241c298f6182"
+      },
+      {
+        "path": "logs/runner-cache/rotor_gauss_affine_theta_check_2026_09_16.txt",
+        "sha256": "5cf9a8f85c5d6775e8581e52946a7c70f16c887cb1c833298a82397df06fcdc9"
+      },
+      {
+        "path": "logs/runner-cache/rotor_gauss_charged_ring_compression_2026_09_16.txt",
+        "sha256": "4389962ccbf121ce43c392765f6fd748bafb6e7aca4f6bafcd0d42e833abc3de"
+      },
+      {
+        "path": "logs/runner-cache/rotor_reference_infrared_norm_check_2026_09_16.txt",
+        "sha256": "c074d0b229866bffaa698bc08cc3614a28870c513621a5ebaf532eb0204005a0"
+      },
+      {
+        "path": "logs/runner-cache/rotor_transverse_reference_vertex_check_2026_09_16.txt",
+        "sha256": "839d95ce4ad50be472874faa2c5e87b6e6bb9fa1108211f276cea4fffb26d0b4"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "448f65f64d3e20a79b30215cc91bcbb286e56bafb28371bd836e6f2d71b90c71"
+      },
+      {
+        "path": "scripts/rotor_coupled_vacuum_resolvent_check_2026_09_16.py",
+        "sha256": "55e854cb746208a38162bd77945c938c73340468a23ace1d228db9e43b3fae13"
+      },
+      {
+        "path": "scripts/rotor_gauss_affine_theta_check_2026_09_16.py",
+        "sha256": "b1a7d2713c6f849eebd93be49a190cc0767373141b9950b144b06860d0078d63"
+      },
+      {
+        "path": "scripts/rotor_gauss_charged_ring_compression_2026_09_16.py",
+        "sha256": "d6aa3c56de18e45c4d9cf57e4ae1512006fd054387cd1ed50783aaa4c1207c5f"
+      },
+      {
+        "path": "scripts/rotor_reference_infrared_norm_check_2026_09_16.py",
+        "sha256": "8cac996ca442c9bd4a472e75abe75fcdc2a0264ecf99c2042aa39101662abcb4"
+      },
+      {
+        "path": "scripts/rotor_transverse_reference_vertex_check_2026_09_16.py",
+        "sha256": "db2906f13d4415e62ebbfb68e5cd79116efd78809a1d0324c38d147eee8f30b7"
+      }
+    ],
+    "deleted_paths": []
+  },
+  "original_head": "392e70e8a1c68385533705e01692e954d70ca7bd",
+  "original_delta_base": "e0ef7cf4633034a8c1e6d57f5812cc4275bf1349",
+  "original_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/ASSUMPTIONS_AND_IMPORTS.md",
+      "original_sha256": "5572ac971eee80e5008811ae658f9437f62732cfb8b8ca41d65e366f940f5ec1",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_000_ASSUMPTIONS_AND_IMPORTS.md.gz",
+      "final_sha256": "48fea6b7ee0ddff9a4ba5496d603885599ce08089c4fa54322cfb7634ee28b7f",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/CLAIM_STATUS_CERTIFICATE.md",
+      "original_sha256": "c584bfd12d394f0c58bcab9d64b6ed072a57f652bcb293950cbea8d4dc99c956",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_001_CLAIM_STATUS_CERTIFICATE.md.gz",
+      "final_sha256": "4b037613871233e6160cfafde0f5dc4d7be92e45dec11e3b0e1e07aa5e859f8a",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/GOAL.md",
+      "original_sha256": "e3c506cc3a6c2959726e2163acc2b654aa982d8d126878cebf83ef4307f9d0b8",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_002_GOAL.md.gz",
+      "final_sha256": "8fa9105ec4014de23a2a9ece051d158f9c83fbbf9aac7f31aff3b10762390c1d",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/GOAL.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/HANDOFF.md",
+      "original_sha256": "24364b4cd4ca45bdfac34a5a57c9ecc17ebce5bae3ed2b3e84649be69d6ac57a",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_003_HANDOFF.md.gz",
+      "final_sha256": "1185fda1ccc84666bad8ccebb0e4cffa19759ffd13113b2c57565e0785fe9c87",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/HANDOFF.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/MANIFEST.json",
+      "original_sha256": "d4e66f21f593315a0f9512b99b0348072969ffcde3b41febefd65b2c1f12bbfb",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_004_MANIFEST.json.gz",
+      "final_sha256": "e85eb1aba3b3fc11853d11703221be32890ebe62325a977c96f3cef14d2c89f4",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/MANIFEST.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/OPPORTUNITY_QUEUE.md",
+      "original_sha256": "66d5b28c1116a2514a5a1b6117e879b586a16eb0b6298bb9352d03bd5522a320",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_005_OPPORTUNITY_QUEUE.md.gz",
+      "final_sha256": "510df0f723c84555ea587d81aeb973c403a11d488b6b0075ebc101037e4d6da8",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/OPPORTUNITY_QUEUE.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/READING_LEDGER.md",
+      "original_sha256": "c8a4b3d9a3a961e98135ad5ef9b74f8d49164ee4b9e0f95e09273aa9ae323c6b",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_006_READING_LEDGER.md.gz",
+      "final_sha256": "001715fa8c3965fbde0be5ccefff63277262abbfda08d4ddc51bf2013134131c",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/READING_LEDGER.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/README.md",
+      "original_sha256": "c394af4d8abb559fa914346212f65732ec5a3ccf5c1413907f146c0302f8d704",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_007_README.md.gz",
+      "final_sha256": "fc2f416c34453961362d0a3cf6198aa2c8e6c37bb48b781fd9e9c193d92e5845",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/README.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/STATE.yaml",
+      "original_sha256": "71d8a91fdbb20716fc6f1bd4accba84f2c0113313da22be0353203cada1086a2",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_008_STATE.yaml.gz",
+      "final_sha256": "17249c4049883fa258d09cc9061e80a6b343663db83219bfce24f136344af65f",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/STATE.yaml"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/TRACE_GATE.md",
+      "original_sha256": "0f6d4e5f692ea3824525ce72a00fb1478751e5357289c46a171b21cc1c535885",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_009_TRACE_GATE.md.gz",
+      "final_sha256": "ac3c6061736ad03aeed0e8b2aebba45b81bf1f25dc9f87633de3ba0869a76478",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/TRACE_GATE.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/BLOCK01_AFFINE_THETA.stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_010_BLOCK01_AFFINE_THETA.stderr.txt.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/BLOCK01_AFFINE_THETA.stderr.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/BLOCK01_AFFINE_THETA.stdout.txt",
+      "original_sha256": "f3894a979798aea7d2485a0899dc8fb2b04085fb1d1aabf0263ea4776639830e",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_011_BLOCK01_AFFINE_THETA.stdout.txt.gz",
+      "final_sha256": "a9993a9374f32d67c4a8650ca9b74fc331abd349c6bc22ca5dd7a15308fee171",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/BLOCK01_AFFINE_THETA.stdout.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/BLOCK01_CHARGED_RING.stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_012_BLOCK01_CHARGED_RING.stderr.txt.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/BLOCK01_CHARGED_RING.stderr.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/BLOCK01_CHARGED_RING.stdout.txt",
+      "original_sha256": "3dffd1bd7b62d4d74d0bcdb6938850b07d1a3b832f218de87831de87718117e2",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_013_BLOCK01_CHARGED_RING.stdout.txt.gz",
+      "final_sha256": "b8eaa32e26f9731d2c3773bab411b779127354efc589fca3541ecff60554c2b6",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/BLOCK01_CHARGED_RING.stdout.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/BLOCK02_ONE_PHOTON.stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_014_BLOCK02_ONE_PHOTON.stderr.txt.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/BLOCK02_ONE_PHOTON.stderr.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/BLOCK02_ONE_PHOTON.stdout.txt",
+      "original_sha256": "d06cd11a0bf4c4a3e62d97b0759b232f708b2408eea78d402dcbc0bd65d187e0",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_015_BLOCK02_ONE_PHOTON.stdout.txt.gz",
+      "final_sha256": "dd143ee5d5c16ab8c8fbcae92b6f15719a36953b6bef5b09fdb3a1d5f858a6d4",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/BLOCK02_ONE_PHOTON.stdout.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/BLOCK03_INFRARED_VERTEX.stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_016_BLOCK03_INFRARED_VERTEX.stderr.txt.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/BLOCK03_INFRARED_VERTEX.stderr.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/BLOCK03_INFRARED_VERTEX.stdout.txt",
+      "original_sha256": "3853c1b380e8c05defa733d4de0992a0de7d8024923047a28a0b93bb6eb68760",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_017_BLOCK03_INFRARED_VERTEX.stdout.txt.gz",
+      "final_sha256": "368cebad98785a6799c0d8bb6e4e792b88b8e7545403e295a931ac63e98552d7",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/BLOCK03_INFRARED_VERTEX.stdout.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/BLOCK04_COUPLED_VACUUM.stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_018_BLOCK04_COUPLED_VACUUM.stderr.txt.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/BLOCK04_COUPLED_VACUUM.stderr.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/BLOCK04_COUPLED_VACUUM.stdout.txt",
+      "original_sha256": "8b2e9b74d5a77fd93de4d88ee90c61c6f1479b9e2161c9e69f4279faebe9e594",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_019_BLOCK04_COUPLED_VACUUM.stdout.txt.gz",
+      "final_sha256": "9fbe05c4688abcd8e6eae8e4f997aeb9b289f98bdd72b2e5c534aff6e325b40b",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/BLOCK04_COUPLED_VACUUM.stdout.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/block01_affine_theta_check.py",
+      "original_sha256": "a6605ca12cc6b29d29dddf7d413218823f758ff4791537f23edd3a1783fed2a6",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_020_block01_affine_theta_check.py.gz",
+      "final_sha256": "6e01a20ac321cdbcdbbb387776e07dda43497e5b48803d897389b9fb87a2a7d7",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/block01_affine_theta_check.py"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/block01_charged_ring_compression.py",
+      "original_sha256": "b5280dd96b7f65c8537c0a5f64ef4b70aa050b7ec0eb4ae28a6c83313bab501e",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_021_block01_charged_ring_compression.py.gz",
+      "final_sha256": "a4a14a04cf58deff2d679a8e794ccf8461bd92e5460d6c55050c75e8cda183e8",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/block01_charged_ring_compression.py"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/block02_one_photon_vertex_check.py",
+      "original_sha256": "e58d78b156269e37509c4ad57655043646df89718cae5379bbfe59d1ca9b09a3",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_022_block02_one_photon_vertex_check.py.gz",
+      "final_sha256": "545e5a30e80328e1d07eecec025ecaee8a765217ddef48c4de313e21fecd2c43",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/block02_one_photon_vertex_check.py"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/block03_infrared_vertex_check.py",
+      "original_sha256": "b8df5e5fd2888a72f11b19d47cd5266c547651aed94cabd5b90a7d864ed5c2ed",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_023_block03_infrared_vertex_check.py.gz",
+      "final_sha256": "aea4747d1d48393b1f7a8962fa74aaf74c35029094833b58ce96bbe26d0f9624",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/block03_infrared_vertex_check.py"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/block04_coupled_vacuum_check.py",
+      "original_sha256": "83f09802c0e9ad9857acf0a6eaf6bafafed66b18757070f406a2396fb3d321b8",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_024_block04_coupled_vacuum_check.py.gz",
+      "final_sha256": "cf5a046bef69a794c74018f861acd5432647e000903e97418405225d8efb1b47",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/evidence/block04_coupled_vacuum_check.py"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/notes/BLOCK01_GLOBAL_GAUSS_DRESSING_AND_VARIATIONAL_COMPRESSION.md",
+      "original_sha256": "f29699e6e460d355276cf2d89d8c9c482fdd280496f09d499a3f9e2327adeec9",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_025_BLOCK01_GLOBAL_GAUSS_DRESSING_AND_VARIATIONAL_COMPRESSION.md.gz",
+      "final_sha256": "c7751e6840d908fe78413d6b526e0b829fc5b2f34213f09fb22a71655989d2e9",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/notes/BLOCK01_GLOBAL_GAUSS_DRESSING_AND_VARIATIONAL_COMPRESSION.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/notes/BLOCK01_VOLUME_VERSUS_SCALE_DIAGNOSTIC.md",
+      "original_sha256": "73084dd8537060a46d6e33e0e8076e0406615de057670cb72d36ccec53d7caf3",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_026_BLOCK01_VOLUME_VERSUS_SCALE_DIAGNOSTIC.md.gz",
+      "final_sha256": "2b109c58ee26614eaca343cf154881144a221215a356ae95f54f4231bab269f3",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/notes/BLOCK01_VOLUME_VERSUS_SCALE_DIAGNOSTIC.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/notes/BLOCK01_WORKING_AFFINE_GAUSSIAN_DRESSING.md",
+      "original_sha256": "40e8a09928a735f8d8202ddacb04e2af92e9d0ad3e7b2e18d8459e4d462951da",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_027_BLOCK01_WORKING_AFFINE_GAUSSIAN_DRESSING.md.gz",
+      "final_sha256": "6cd85a484fbca2650508baf7cf7a730d4a9eb631c63c78af06332777ff110763",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/notes/BLOCK01_WORKING_AFFINE_GAUSSIAN_DRESSING.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/notes/BLOCK02_ORTHOGONAL_TRANSVERSE_SECTOR_AND_CURRENT_VERTEX.md",
+      "original_sha256": "5a9c38fa93d17bd4fe23edafff8ef9b9fe1533427aeeba4d1d3c1554a6c07e27",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_028_BLOCK02_ORTHOGONAL_TRANSVERSE_SECTOR_AND_CURRENT_VERTEX.md.gz",
+      "final_sha256": "0a25690f2645ce7d0e3e2b2611cf249fcab1ce5a4c34eefb195ee7a97d04d28f",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/notes/BLOCK02_ORTHOGONAL_TRANSVERSE_SECTOR_AND_CURRENT_VERTEX.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/notes/BLOCK02_WORKING_ONE_PHOTON_VERTEX.md",
+      "original_sha256": "71fb7a300cf3dfd897c58d15d4f843679afef1b4329e8b09dd7e3c44d76345c1",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_029_BLOCK02_WORKING_ONE_PHOTON_VERTEX.md.gz",
+      "final_sha256": "1d9414e799f5a781c65b6619347ce3e6d47fd5a4f6b8354edc6199248ae17b89",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/notes/BLOCK02_WORKING_ONE_PHOTON_VERTEX.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/notes/BLOCK03_INFRARED_PROFILE_OF_THE_REFERENCE_VERTEX.md",
+      "original_sha256": "a61e824bb30b2574ecdeafcf23a57fb811d0bc4ac29b083fcd20db81afc16e7f",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_030_BLOCK03_INFRARED_PROFILE_OF_THE_REFERENCE_VERTEX.md.gz",
+      "final_sha256": "1f59995ebcdf4f3aa28d0d4806abc21cb030f56e2963424be3161d596a6efa1c",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/notes/BLOCK03_INFRARED_PROFILE_OF_THE_REFERENCE_VERTEX.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/notes/BLOCK04_COUPLED_FREE_VACUUM_RESOLVENT_DENSITIES.md",
+      "original_sha256": "ff0e07677d189093388d55b33844be74b619fc1dd9ff6803e9da0321da37b299",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_031_BLOCK04_COUPLED_FREE_VACUUM_RESOLVENT_DENSITIES.md.gz",
+      "final_sha256": "a23468adad3a695b79f094d9bbcc252253673ae3b4646c39eb27ec8124a76074",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/notes/BLOCK04_COUPLED_FREE_VACUUM_RESOLVENT_DENSITIES.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/notes/BLOCK04_WORKING_COUPLED_FERMION_DENOMINATOR.md",
+      "original_sha256": "c20aba9533e23d1d8d0d4d3cf8f874ffbb3b44bb4de16340a4f65c2b1c4070c3",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_032_BLOCK04_WORKING_COUPLED_FERMION_DENOMINATOR.md.gz",
+      "final_sha256": "7ee5bb9f52d82def00063f9df2bafcb0480aaef644e35d754996b2ded4ebfb42",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/notes/BLOCK04_WORKING_COUPLED_FERMION_DENOMINATOR.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/review/BLOCK01_04_PERSONAL_PROOF_REVIEW.md",
+      "original_sha256": "11f3fdd160377d7bd28bc575aa7ed745f89f37d685dbd186a7f723b97a6bd908",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_033_BLOCK01_04_PERSONAL_PROOF_REVIEW.md.gz",
+      "final_sha256": "407de177d404ac8d463c801356f2ee447e871c274bb14f34e2a10abe823aaf3e",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/review/BLOCK01_04_PERSONAL_PROOF_REVIEW.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/review/BLOCK01_MUTATIONS.json",
+      "original_sha256": "0e1dfeb0ebeb9abe82a5c2854575a7b3c5c7da44be1b08c7cb6070e58c5086ec",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_034_BLOCK01_MUTATIONS.json.gz",
+      "final_sha256": "65f6b6ddbeea096a537c5934d9d2334acbaf04c096c380f737108010dd77a530",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/review/BLOCK01_MUTATIONS.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/review/BLOCK01_MUTATIONS.stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_035_BLOCK01_MUTATIONS.stderr.txt.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/review/BLOCK01_MUTATIONS.stderr.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/review/BLOCK01_MUTATIONS.stdout.txt",
+      "original_sha256": "a693855f6c79c17f4fc381568085457217ea39d905e50320d7cd4514b47af45f",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_036_BLOCK01_MUTATIONS.stdout.txt.gz",
+      "final_sha256": "b72f0097e8d8a8419aeaae82bf91313c2480c26b19535483409714514311c841",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/review/BLOCK01_MUTATIONS.stdout.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/review/BLOCK01_PERSONAL_CHECKPOINT.json",
+      "original_sha256": "684a1466a9f11914f9ebc424881a20edaab20ae26e8a438b3cb770980ba80b84",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_037_BLOCK01_PERSONAL_CHECKPOINT.json.gz",
+      "final_sha256": "9479b0266b9215549320c1d84a0d4461d5663e93df57d9699abd418ed1272738",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/review/BLOCK01_PERSONAL_CHECKPOINT.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/review/BLOCK02_04_MUTATIONS.json",
+      "original_sha256": "9ca8fa18a99c071d6f3f7f0a99810ca0d3342aaf17c28fe850c65bd74a847ddf",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_038_BLOCK02_04_MUTATIONS.json.gz",
+      "final_sha256": "4a2b4f5d70064521a29bf9198d5fecfab04f316548cc7f731a0962af6ade34dd",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/review/BLOCK02_04_MUTATIONS.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/review/BLOCK02_04_MUTATIONS.stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_039_BLOCK02_04_MUTATIONS.stderr.txt.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/review/BLOCK02_04_MUTATIONS.stderr.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/review/BLOCK02_04_MUTATIONS.stdout.txt",
+      "original_sha256": "6746d07c884dfa4da8e5d5232b404d8becf0fb47ba9ec255a7b43c8a9132f284",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_040_BLOCK02_04_MUTATIONS.stdout.txt.gz",
+      "final_sha256": "378a6d435a5b52a829032bdbf5abdc6f093924d54579fc973f36f01dc4960ea5",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/review/BLOCK02_04_MUTATIONS.stdout.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/review/BOUNDARY_STRESS_TEST.md",
+      "original_sha256": "159a7496cf85f5ad0a34d1f6dfba36c8dacb73a199db6da2dc3cb42649044075",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_041_BOUNDARY_STRESS_TEST.md.gz",
+      "final_sha256": "aed688f91be61d64d42cf2501a2b92c7f37d527a83ec297abf75262798c892f9",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/review/BOUNDARY_STRESS_TEST.md"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/review/FOCUSED_VERIFICATION.json",
+      "original_sha256": "6e8fbd41f2a3bd948ef5fd9d96eb2d66d4e7393f002c0a336d8e7aa868e567e1",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_042_FOCUSED_VERIFICATION.json.gz",
+      "final_sha256": "8b3904f3304cd3a6bd733a2cab0d10df471fe5806d64a44b42350fd589398c59",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/review/FOCUSED_VERIFICATION.json"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/review/FOCUSED_VOCAB.stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_043_FOCUSED_VOCAB.stderr.txt.gz",
+      "final_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/review/FOCUSED_VOCAB.stderr.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/review/FOCUSED_VOCAB.stdout.txt",
+      "original_sha256": "641fcbb989fc172b6e1d241a9ef93e735bf2de83aa4f60b533bb8a16075b2d8a",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_044_FOCUSED_VOCAB.stdout.txt.gz",
+      "final_sha256": "f97925700ac823613caa1d4adade7e633dd4f657f28f23eb6e341080849ba0f0",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/review/FOCUSED_VOCAB.stdout.txt"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/review/block01_mutation_checks.py",
+      "original_sha256": "24f3b5fdabc5f9272554a38b805d568dcf7e33838ee7788fe0c84cf78005b1a5",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_045_block01_mutation_checks.py.gz",
+      "final_sha256": "0a50de6ea250dbb9639df21c8565b81849327737b640703b834047bf4097dc49",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/review/block01_mutation_checks.py"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/toe-infrared-leverage-20260916/review/block02_04_mutation_checks.py",
+      "original_sha256": "ac4d48d64d63e99dadfcfd73fc75a24c9c70ffb778124b98dbe82ad35b1fd0e2",
+      "final_path": "docs/work_history/review_loop/pr8161/8161_046_block02_04_mutation_checks.py.gz",
+      "final_sha256": "e1fd278b3f10d2b283a629bfea129a142b3cfc174ae849c2eaec302fc529e49c",
+      "disposition": "Complete original bytes retained. Four final proofs canonicalized without mathematical/domain/tolerance changes; characteristic identity kept verbatim in the canonical Gauss owner appendix; working lemmas mapped to final proofs and all limitations preserved. Historical program/results and30 mutation failures remain historical.",
+      "recovery": "392e70e8a1c68385533705e01692e954d70ca7bd:.claude/science/physics-loops/toe-infrared-leverage-20260916/review/block02_04_mutation_checks.py"
+    }
+  ],
+  "inputs": {
+    "runtime": [
+      {
+        "path": "scripts/rotor_coupled_vacuum_resolvent_check_2026_09_16.py",
+        "sha256": "55e854cb746208a38162bd77945c938c73340468a23ace1d228db9e43b3fae13"
+      },
+      {
+        "path": "scripts/rotor_gauss_affine_theta_check_2026_09_16.py",
+        "sha256": "b1a7d2713c6f849eebd93be49a190cc0767373141b9950b144b06860d0078d63"
+      },
+      {
+        "path": "scripts/rotor_gauss_charged_ring_compression_2026_09_16.py",
+        "sha256": "d6aa3c56de18e45c4d9cf57e4ae1512006fd054387cd1ed50783aaa4c1207c5f"
+      },
+      {
+        "path": "scripts/rotor_reference_infrared_norm_check_2026_09_16.py",
+        "sha256": "8cac996ca442c9bd4a472e75abe75fcdc2a0264ecf99c2042aa39101662abcb4"
+      },
+      {
+        "path": "scripts/rotor_transverse_reference_vertex_check_2026_09_16.py",
+        "sha256": "db2906f13d4415e62ebbfb68e5cd79116efd78809a1d0324c38d147eee8f30b7"
+      }
+    ],
+    "helpers": [
+      {
+        "path": "scripts/rotor_gauss_affine_theta_check_2026_09_16.py",
+        "sha256": "b1a7d2713c6f849eebd93be49a190cc0767373141b9950b144b06860d0078d63"
+      },
+      {
+        "path": "scripts/rotor_gauss_charged_ring_compression_2026_09_16.py",
+        "sha256": "d6aa3c56de18e45c4d9cf57e4ae1512006fd054387cd1ed50783aaa4c1207c5f"
+      }
+    ],
+    "parents": [
+      {
+        "path": "docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "f9af4371bf725cb151fa61068c0a819f02e32c83e674113df0b4cfdd8a20d07c"
+      },
+      {
+        "path": "docs/ROTOR_ORTHOGONAL_TRANSVERSE_REFERENCE_CURRENT_VERTEX_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "c3919641ace849d9864c31110a675218a77df814f9438df70028466b0f176e89"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      {
+        "path": "docs/ROTOR_COUPLED_FREE_VACUUM_RESOLVENT_DENSITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "cea05ba42b01a0120dea95607b24226ca58df383a8697a564e5c64c44a46c022"
+      },
+      {
+        "path": "docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "f9af4371bf725cb151fa61068c0a819f02e32c83e674113df0b4cfdd8a20d07c"
+      },
+      {
+        "path": "docs/ROTOR_ORTHOGONAL_TRANSVERSE_REFERENCE_CURRENT_VERTEX_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "c3919641ace849d9864c31110a675218a77df814f9438df70028466b0f176e89"
+      },
+      {
+        "path": "docs/ROTOR_REFERENCE_VERTEX_INFRARED_WEIGHTED_NORMS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "f0201362f1e057b233e291d40f95c7fd3a98ea6845e5cbb04600bed79a5e0e72"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8161/README.md",
+        "sha256": "5a122898a3928543ecc03ee02e49400ed414e4172d1bc921a3c9a2df4f478952"
+      },
+      {
+        "path": "scripts/rotor_gauss_affine_theta_check_2026_09_16.py",
+        "sha256": "b1a7d2713c6f849eebd93be49a190cc0767373141b9950b144b06860d0078d63"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "2a6cc7873eb0bb0b0ece43dbf6c71aba7dc48578fe1f24b80df434b218ecfbbc"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "448f65f64d3e20a79b30215cc91bcbb286e56bafb28371bd836e6f2d71b90c71"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "notes": [
+    {
+      "path": "docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "rotor_global_gauss_dressing_coulomb_variational_compression_bounded_theorem_note_2026-09-16",
+      "declared_claim_id": "rotor_global_gauss_dressing_coulomb_variational_compression_bounded_theorem_note_2026-09-16",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/rotor_gauss_affine_theta_check_2026_09_16.py",
+      "helpers": [
+        "scripts/rotor_gauss_charged_ring_compression_2026_09_16.py"
+      ],
+      "citations": [
+        "docs/work_history/review_loop/pr8161/README.md"
+      ],
+      "repository_dependencies": [],
+      "dependency_rationale": "Explicit supplied model/reference, complete written proof and identified mathematical imports. Linked prior canonical proofs used only where declared. Coupled-resolvent reference/proof independently defined; comparison names are not graph dependencies."
+    },
+    {
+      "path": "docs/ROTOR_ORTHOGONAL_TRANSVERSE_REFERENCE_CURRENT_VERTEX_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "rotor_orthogonal_transverse_reference_current_vertex_bounded_theorem_note_2026-09-16",
+      "declared_claim_id": "rotor_orthogonal_transverse_reference_current_vertex_bounded_theorem_note_2026-09-16",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/rotor_transverse_reference_vertex_check_2026_09_16.py",
+      "helpers": [
+        "scripts/rotor_gauss_affine_theta_check_2026_09_16.py"
+      ],
+      "citations": [
+        "docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/work_history/review_loop/pr8161/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+      ],
+      "dependency_rationale": "Explicit supplied model/reference, complete written proof and identified mathematical imports. Linked prior canonical proofs used only where declared. Coupled-resolvent reference/proof independently defined; comparison names are not graph dependencies."
+    },
+    {
+      "path": "docs/ROTOR_REFERENCE_VERTEX_INFRARED_WEIGHTED_NORMS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "rotor_reference_vertex_infrared_weighted_norms_bounded_theorem_note_2026-09-16",
+      "declared_claim_id": "rotor_reference_vertex_infrared_weighted_norms_bounded_theorem_note_2026-09-16",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/rotor_reference_infrared_norm_check_2026_09_16.py",
+      "helpers": [],
+      "citations": [
+        "docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/ROTOR_ORTHOGONAL_TRANSVERSE_REFERENCE_CURRENT_VERTEX_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/work_history/review_loop/pr8161/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/ROTOR_ORTHOGONAL_TRANSVERSE_REFERENCE_CURRENT_VERTEX_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+      ],
+      "dependency_rationale": "Explicit supplied model/reference, complete written proof and identified mathematical imports. Linked prior canonical proofs used only where declared. Coupled-resolvent reference/proof independently defined; comparison names are not graph dependencies."
+    },
+    {
+      "path": "docs/ROTOR_COUPLED_FREE_VACUUM_RESOLVENT_DENSITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "rotor_coupled_free_vacuum_resolvent_densities_bounded_theorem_note_2026-09-16",
+      "declared_claim_id": "rotor_coupled_free_vacuum_resolvent_densities_bounded_theorem_note_2026-09-16",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/rotor_coupled_vacuum_resolvent_check_2026_09_16.py",
+      "helpers": [],
+      "citations": [
+        "docs/work_history/review_loop/pr8161/README.md"
+      ],
+      "repository_dependencies": [],
+      "dependency_rationale": "Explicit supplied model/reference, complete written proof and identified mathematical imports. Linked prior canonical proofs used only where declared. Coupled-resolvent reference/proof independently defined; comparison names are not graph dependencies."
+    }
+  ],
+  "supporting_proofs": [],
+  "appendix_ownership": {
+    "owner": "docs/ROTOR_GLOBAL_GAUSS_DRESSING_COULOMB_VARIATIONAL_COMPRESSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "section": "Appendix: volume and infrared scale are separate questions",
+    "judgment": "Complete prior scientific diagnostic body verified verbatim in owner appendix, including bounded characteristic identity, fixed-g/probe consequence and rescaling caveat. Ownership explanation retained; no independent row, no lost science."
+  },
+  "executions": [
+    {
+      "runner": "scripts/rotor_coupled_vacuum_resolvent_check_2026_09_16.py",
+      "completed_families": 3,
+      "failures": 0,
+      "elapsed_sec": 2.4237942695617676,
+      "peak_sampled_process_tree_rss_bytes": 103612416,
+      "timeout_sec": 180,
+      "memory_cap_bytes": 536870912,
+      "cache": "logs/runner-cache/rotor_coupled_vacuum_resolvent_check_2026_09_16.txt",
+      "cache_sha256": "fa4d966663fe6f24b92b78267587797175179a74c04c61734e5d241c298f6182",
+      "input_fingerprint": "eba243d6365438c16b9e5567d555ad0da4882b9ddbec088053240932625fa234",
+      "receipt": {
+        "pr": "coupled",
+        "receipt": "/private/tmp/review-drain-20260915/drain8161-execution-coupled.json",
+        "sha256": "a3955892018c6961f341c86363dad8e6869229f3fefaf6ad50b3979ec2b51878",
+        "reuse": "Exact unchanged source/input/cache; no repeat execution."
+      }
+    },
+    {
+      "runner": "scripts/rotor_gauss_affine_theta_check_2026_09_16.py",
+      "completed_families": 4,
+      "failures": 0,
+      "elapsed_sec": 3.733830213546753,
+      "peak_sampled_process_tree_rss_bytes": 385777664,
+      "timeout_sec": 180,
+      "memory_cap_bytes": 536870912,
+      "cache": "logs/runner-cache/rotor_gauss_affine_theta_check_2026_09_16.txt",
+      "cache_sha256": "5cf9a8f85c5d6775e8581e52946a7c70f16c887cb1c833298a82397df06fcdc9",
+      "input_fingerprint": "ae224afbc75e69e28e7db0aa7719aaf7ca1a52617a3c4f334f9419e0576dbd6e",
+      "receipt": {
+        "pr": "affine",
+        "receipt": "/private/tmp/review-drain-20260915/drain8161c-execution-affine.json",
+        "sha256": "4728f6fd93e99f77e4777f4899285dbf5bae116f1c240e22d1fcf15cede10a82"
+      }
+    },
+    {
+      "runner": "scripts/rotor_gauss_charged_ring_compression_2026_09_16.py",
+      "completed_families": 3,
+      "failures": 0,
+      "elapsed_sec": 0.5373640060424805,
+      "peak_sampled_process_tree_rss_bytes": 107282432,
+      "timeout_sec": 180,
+      "memory_cap_bytes": 536870912,
+      "cache": "logs/runner-cache/rotor_gauss_charged_ring_compression_2026_09_16.txt",
+      "cache_sha256": "4389962ccbf121ce43c392765f6fd748bafb6e7aca4f6bafcd0d42e833abc3de",
+      "input_fingerprint": "ae224afbc75e69e28e7db0aa7719aaf7ca1a52617a3c4f334f9419e0576dbd6e",
+      "receipt": {
+        "pr": "ring",
+        "receipt": "/private/tmp/review-drain-20260915/drain8161c-execution-ring.json",
+        "sha256": "9ad9d88c1d56a7674ab8b99d6d9e312d4f6f0bddf6561da2983fb1860f180871"
+      }
+    },
+    {
+      "runner": "scripts/rotor_transverse_reference_vertex_check_2026_09_16.py",
+      "completed_families": 2,
+      "failures": 0,
+      "elapsed_sec": 3.297028064727783,
+      "peak_sampled_process_tree_rss_bytes": 419708928,
+      "timeout_sec": 180,
+      "memory_cap_bytes": 536870912,
+      "cache": "logs/runner-cache/rotor_transverse_reference_vertex_check_2026_09_16.txt",
+      "cache_sha256": "839d95ce4ad50be472874faa2c5e87b6e6bb9fa1108211f276cea4fffb26d0b4",
+      "input_fingerprint": "c75127f19424993e97b3325d8b5d1fbf38f4f35084c3fac22c00fcbf41fdea48",
+      "receipt": {
+        "pr": "vertex",
+        "receipt": "/private/tmp/review-drain-20260915/drain8161c-execution-vertex.json",
+        "sha256": "9184f39c3101437c6216d430a8a341e19c4d6906d66b8b0e95f7fabfb2db9125"
+      }
+    },
+    {
+      "runner": "scripts/rotor_reference_infrared_norm_check_2026_09_16.py",
+      "completed_families": 3,
+      "failures": 0,
+      "elapsed_sec": 0.4671769142150879,
+      "peak_sampled_process_tree_rss_bytes": 101269504,
+      "timeout_sec": 120,
+      "memory_cap_bytes": 536870912,
+      "cache": "logs/runner-cache/rotor_reference_infrared_norm_check_2026_09_16.txt",
+      "cache_sha256": "c074d0b229866bffaa698bc08cc3614a28870c513621a5ebaf532eb0204005a0",
+      "input_fingerprint": "b4e7af0d914fd775b7de8329558ccf7651f4aae333da2581a303fb93114b9a00",
+      "receipt": {
+        "pr": "infrared",
+        "receipt": "/private/tmp/review-drain-20260915/drain8161c-execution-infrared.json",
+        "sha256": "123aae5c7ab383390addea216b2ecd110e6d5f8a89a6c6d5150a0597ec2cdd8e"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8161-original-review.json",
+      "sha256": "2068b09785b32080202c880666c6decb150a4188176284323ef1be03a92491ad"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8161-authority-read-appendix.json",
+      "sha256": "09b324b3a38227bec658c1aa148ecedb232ad1fd1ce944ffb37d4ba850476599"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8161-authority-identity-clarifier.json",
+      "sha256": "5026a3215adceb3b2bca01983fd9519204a83576c45768dc0545679b059c2f11"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8161-final-review.json",
+      "sha256": "ecada41b55bc9181115910733f4aed6abe2aa257a50d464be0b6feb01ffc583c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8161-postintegration-compatibility-finding.json",
+      "sha256": "22f63cf476ab9569a6b2cca49b4464f869245ef9755cfcdb648281d9f3cbad79"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8161-correction-cold-v2.json",
+      "sha256": "b976fd7466398239cc828ddbb9da3cf0c8afab703f41b881a1dddbb00d07d1af"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8161-correction-draft-v2.json",
+      "sha256": "aca047c925a847c2bb88f6a384da1635e759b1f0d9861dde4b36206676adef65"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8161-correction-cheap-v2.json",
+      "sha256": "df15676d08fa86c4e5ffa85f4aa04390ca27ca302f9698dffd290e1c5e46e09f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8161c-author-final-freeze.json",
+      "sha256": "ea40581e0bacc37fe513b4b5050e53823e92764663ada79a5e945e279148fb1a"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8161c-capture.py",
+      "sha256": "565474d25f4a28270d867b40fcc70eb13702b4717418244f047b0b3d8d1e3b30"
+    }
+  ],
+  "source_preservation": {
+    "originals_verified": 47,
+    "staged_paths_verified": 65,
+    "changes_since_cold": [
+      "logs/runner-cache/rotor_gauss_affine_theta_check_2026_09_16.txt",
+      "logs/runner-cache/rotor_gauss_charged_ring_compression_2026_09_16.txt",
+      "logs/runner-cache/rotor_reference_infrared_norm_check_2026_09_16.txt",
+      "logs/runner-cache/rotor_transverse_reference_vertex_check_2026_09_16.txt"
+    ],
+    "result": "All noncache source and input identities unchanged from approved correction cold. Four changed-input caches replaced; coupled cache/source/inputs exactly reused. Complete diagnostic belongs to Gauss appendix within four notes; separate new proof absent and no orphan helper mapping."
+  },
+  "findings": [],
+  "numerical_interpretation": "15 completed assertion-backed families, not15individual assertions. Affine g1.8 mean discrepancy1.818e-7 retained under original finite tolerance; no rigorous tail interval. Ring tiny compact remainder retains0.2237 leakage atg0.3. Vertex omitted-mean error0.108 retained. Infrared slope0.033773978 versus analytic0.033773728 and quartic ratio1.000358 retained. CAR norm discrepancy8.67e-18 verifies normalization, not arbitrary phase. These finite tests supplement written conditional proofs, not all-volume proof by sampling.",
+  "scope": "Same-session narrow correction confirmation reuses complete prior original arguments, authority and affected proof review. Independently checked current disk/index identities, all47 exact original Git/archive bytes, five receipt/stdout/cache fingerprints and actual watchdog evidence. No primary rerun, full pipeline or audit performed. Counts are completed families, not individual assertions. Supplied rotor/CAR/Gaussian/Maxwell/Wilson model bounds do not derive a framework Hamiltonian or fixed-g interacting phase.",
+  "remaining": "Root sole final cache and train73a combined integration gate remain pending; this is not an audit/retained-grade verdict."
+}

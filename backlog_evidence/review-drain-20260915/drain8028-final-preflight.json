@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8028",
+  "tree": "c8c610df477899c5aa376190b02a4305f8fd3be6",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "claim_id": "gauge_wilson_uniform_static_source_energy_bounds_bounded_theorem_note_2026-09-07",
+      "primary_runner": "scripts/gauge_wilson_static_source_sector_controls_2026_09_07.py",
+      "helpers": [
+        "scripts/gauge_wilson_static_source_dirichlet_controls_2026_09_07.py"
+      ],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_STATIC_SOURCE_GEODESIC_PERTURBATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/work_history/review_loop/pr8028/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8762,
+      "misses": 4466
+    },
+    "packet_imports": {
+      "hits": 8752,
+      "misses": 4464
+    },
+    "declared_inputs": {
+      "hits": 8789,
+      "misses": 4601
+    }
+  },
+  "record_sha256": "859a4d8592ac34ba65760e4d20a749b3579741d31afd7546c3d10fc4f397b36d",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

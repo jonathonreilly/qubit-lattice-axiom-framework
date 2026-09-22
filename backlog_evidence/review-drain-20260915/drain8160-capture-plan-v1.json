@@ -1,0 +1,100 @@
+{
+  "role": "PROPOSED CAPTURE PLAN; root must dispatch after staged cheap receipt and original reviewer cold confirmation",
+  "unit": "PR8160",
+  "prepared_receipt_sha256": "8c2e4ac6db2947980f680f598ee01b87899679cd887d3e465982a0d6148f1c21",
+  "read_only_discovery_receipt_sha256": "e76caab1403df00515ebe71de1a11bcd97ec6701ef86c963b184be20a285f102",
+  "original_reviewer_early_report_sha256": "22c17dfe4f6120ef6e07a0b63e8756c9ddb083634c7c6b24c8257563c51d4d84",
+  "concurrency": 1,
+  "process_tree_rss_limit_bytes": 536870912,
+  "rss_sample_interval_seconds": 0.02,
+  "memory_boundary": "Externally sampled supervisor plus recursive descendants. Abort/kill descendants on limit or monitor failure; preserve receipt/stdout/stderr/partial output. Sampling is not a continuous hard-limit proof.",
+  "prerequisites": [
+    "Root guarded current-main advance preserving all101 owned hashes",
+    "Author additive registries and frozen source/input schema2 record",
+    "Cheap receipt mechanical_status ok, cache_checked false, exact record SHA/tree",
+    "Original /root/review_8160 final cold source confirmation bound to exact tree and input hashes",
+    "Root explicit capture dispatch; capture script pins both receipt SHAs and rechecks every source/input byte before and after each run"
+  ],
+  "executions": [
+    {
+      "ordinal": 1,
+      "runner": "scripts/rotor_uniform_compact_response_check_2026_09_16.py",
+      "timeout_seconds": 120,
+      "historical_assertion_count": 62,
+      "count_meaning": "Assertion invocations, including repeated states/transitions; not independent scientific families",
+      "canonical_cache": "logs/runner-cache/rotor_uniform_compact_response_check_2026_09_16.txt",
+      "raw_output": "scripts/rotor_uniform_compact_response_check_2026_09_16.json",
+      "receipt_basename": "drain8160-execution-rotor_uniform_compact_response_check_2026_09_16.json"
+    },
+    {
+      "ordinal": 2,
+      "runner": "scripts/rotor_integer_gaussian_positive_square_check_2026_09_16.py",
+      "timeout_seconds": 120,
+      "historical_assertion_count": 37,
+      "count_meaning": "Assertion invocations, including repeated states/transitions; not independent scientific families",
+      "canonical_cache": "logs/runner-cache/rotor_integer_gaussian_positive_square_check_2026_09_16.txt",
+      "raw_output": "scripts/rotor_integer_gaussian_positive_square_check_2026_09_16.json",
+      "receipt_basename": "drain8160-execution-rotor_integer_gaussian_positive_square_check_2026_09_16.json"
+    },
+    {
+      "ordinal": 3,
+      "runner": "scripts/rotor_tree_slater_dressing_check_2026_09_16.py",
+      "timeout_seconds": 120,
+      "historical_assertion_count": 348,
+      "count_meaning": "Assertion invocations, including repeated states/transitions; not independent scientific families",
+      "canonical_cache": "logs/runner-cache/rotor_tree_slater_dressing_check_2026_09_16.txt",
+      "raw_output": "scripts/rotor_tree_slater_dressing_check_2026_09_16.json",
+      "receipt_basename": "drain8160-execution-rotor_tree_slater_dressing_check_2026_09_16.json"
+    },
+    {
+      "ordinal": 4,
+      "runner": "scripts/rotor_joint_characteristic_check_2026_09_16.py",
+      "timeout_seconds": 120,
+      "historical_assertion_count": 22,
+      "count_meaning": "Assertion invocations, including repeated states/transitions; not independent scientific families",
+      "canonical_cache": "logs/runner-cache/rotor_joint_characteristic_check_2026_09_16.txt",
+      "raw_output": "scripts/rotor_joint_characteristic_check_2026_09_16.json",
+      "receipt_basename": "drain8160-execution-rotor_joint_characteristic_check_2026_09_16.json"
+    },
+    {
+      "ordinal": 5,
+      "runner": "scripts/rotor_joint_weyl_car_state_check_2026_09_16.py",
+      "timeout_seconds": 120,
+      "historical_assertion_count": 46,
+      "count_meaning": "Assertion invocations, including repeated states/transitions; not independent scientific families",
+      "canonical_cache": "logs/runner-cache/rotor_joint_weyl_car_state_check_2026_09_16.txt",
+      "raw_output": "scripts/rotor_joint_weyl_car_state_check_2026_09_16.json",
+      "receipt_basename": "drain8160-execution-rotor_joint_weyl_car_state_check_2026_09_16.json"
+    },
+    {
+      "ordinal": 6,
+      "runner": "scripts/rotor_joint_gauge_propagation_check_2026_09_16.py",
+      "timeout_seconds": 120,
+      "historical_assertion_count": 17776,
+      "count_meaning": "Assertion invocations, including repeated states/transitions; not independent scientific families",
+      "canonical_cache": "logs/runner-cache/rotor_joint_gauge_propagation_check_2026_09_16.txt",
+      "raw_output": "scripts/rotor_joint_gauge_propagation_check_2026_09_16.json",
+      "receipt_basename": "drain8160-execution-rotor_joint_gauge_propagation_check_2026_09_16.json"
+    },
+    {
+      "ordinal": 7,
+      "runner": "scripts/rotor_joint_rooted_matter_dynamics_check_2026_09_16.py",
+      "timeout_seconds": 120,
+      "historical_assertion_count": 33,
+      "count_meaning": "Assertion invocations, including repeated states/transitions; not independent scientific families",
+      "canonical_cache": "logs/runner-cache/rotor_joint_rooted_matter_dynamics_check_2026_09_16.txt",
+      "raw_output": "scripts/rotor_joint_rooted_matter_dynamics_check_2026_09_16.json",
+      "receipt_basename": "drain8160-execution-rotor_joint_rooted_matter_dynamics_check_2026_09_16.json"
+    }
+  ],
+  "execution_rules": [
+    "Use actual runner_cache.execute_and_write_cache for each unique program once in listed order",
+    "Do not recursively execute imported helpers while executing a primary; Python import reads definitions and proof pins only",
+    "Require exit0/status ok, positive TOTAL PASS and zero FAIL, substantive five-line N5 stdout, no monitor violation and current actual cache freshness",
+    "Preserve every failed/timeout/partial result; no automatic retry or restamping",
+    "Stage exact intended caches/raw outputs only after root inspects them; no generated audit data",
+    "Original reviewer performs final source/evidence confirmation and sole final --cache; root integrates"
+  ],
+  "resource_basis": "All seven original declarations are120s; retained unchanged. Largest charged sparse ring dimension36*(2*32+1)=2340; dense one-rotor139; Smith81x81 integer matrix; largest open Wilson128x128; finite symbol grid12^3. Propose512MiB process-tree cap sequentially. No original measured runtime/peak receipt identified; no new runtime measurement claimed. Actual original outputs and 28 source-bound mutation failures retained.",
+  "status": "Not executed"
+}

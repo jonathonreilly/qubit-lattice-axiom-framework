@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "primary_execution": false,
+  "author_imports": false,
+  "ambient_modular_census_N_dimension_aliases": [
+    [
+      3,
+      258,
+      106
+    ],
+    [
+      5,
+      350,
+      58
+    ],
+    [
+      7,
+      490,
+      58
+    ]
+  ],
+  "ring_charge_variance": 0.3125000000000002,
+  "ring_second_coefficients": [
+    "39/128",
+    "35/128",
+    "27/128",
+    "15/128"
+  ],
+  "tangent_schur": "7/4",
+  "weighted_optical_exact_double_eigenvalues": [
+    "763/3",
+    "913/20"
+  ],
+  "magnetic_boundary_difference": "-3/2",
+  "opposite_charge_squared_addition": "verified",
+  "degenerate_elastic_variance": 1,
+  "degenerate_inelastic_variance": 0,
+  "theta_product_series_error": 1.7763568394002505e-15,
+  "scope": "Finite independent algebra controls plus complete proof review; no phase, whole-pipeline or primary recapture."
+}

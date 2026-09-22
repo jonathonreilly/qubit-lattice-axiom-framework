@@ -1,0 +1,235 @@
+{
+  "role": "Read-only original repository API discovery, no science execution",
+  "base": "0ea56ccd19205c66ccfb664fb391ed4de39fa415",
+  "prepared_sha256": "8c2e4ac6db2947980f680f598ee01b87899679cd887d3e465982a0d6148f1c21",
+  "runners": [
+    {
+      "runner": "scripts/rotor_uniform_compact_response_check_2026_09_16.py",
+      "runner_sha256": "bbea0009b470124793dfe432dcb1ad6fb7e06b9e57d5b7376ab049c32052474b",
+      "timeout": 120,
+      "direct_inputs": [
+        "docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+      ],
+      "transitive_import_helpers": [],
+      "runtime_closure": [
+        {
+          "path": "docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "8b881cfe2fe736dfea1bca01227f90f782d79daa00833dbac05d3b27b0c8498f"
+        }
+      ],
+      "declared_input_fingerprint": "a5b21ad594f9e7979dd202b7bfa7bbaa5a476e01faff1322b36395061a7c11e4"
+    },
+    {
+      "runner": "scripts/rotor_integer_gaussian_positive_square_check_2026_09_16.py",
+      "runner_sha256": "e9286f50fc2af8c8803c3fc172d97ea9ccbb682bbc32d99adbb6ac6e497e14fd",
+      "timeout": 120,
+      "direct_inputs": [
+        "docs/ROTOR_JOINT_GROUND_ENERGY_OSCILLATOR_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+      ],
+      "transitive_import_helpers": [],
+      "runtime_closure": [
+        {
+          "path": "docs/ROTOR_JOINT_GROUND_ENERGY_OSCILLATOR_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "80685ca04b4f8ace7e94f4f43455531715d914eb38803c3737118f9fab3e0ebc"
+        },
+        {
+          "path": "docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "8b881cfe2fe736dfea1bca01227f90f782d79daa00833dbac05d3b27b0c8498f"
+        }
+      ],
+      "declared_input_fingerprint": "9943b43fd7f3fdad73dd30897cdf8302ac287668c06ff4213a80f597d5c85026"
+    },
+    {
+      "runner": "scripts/rotor_tree_slater_dressing_check_2026_09_16.py",
+      "runner_sha256": "5f5e073427161a942cf5256a11c40d861772373d14ed668282ee4fd6909a5bdc",
+      "timeout": 120,
+      "direct_inputs": [
+        "docs/ROTOR_JOINT_GROUND_ENERGY_OSCILLATOR_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+      ],
+      "transitive_import_helpers": [],
+      "runtime_closure": [
+        {
+          "path": "docs/ROTOR_JOINT_GROUND_ENERGY_OSCILLATOR_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "80685ca04b4f8ace7e94f4f43455531715d914eb38803c3737118f9fab3e0ebc"
+        },
+        {
+          "path": "docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "8b881cfe2fe736dfea1bca01227f90f782d79daa00833dbac05d3b27b0c8498f"
+        }
+      ],
+      "declared_input_fingerprint": "9943b43fd7f3fdad73dd30897cdf8302ac287668c06ff4213a80f597d5c85026"
+    },
+    {
+      "runner": "scripts/rotor_joint_characteristic_check_2026_09_16.py",
+      "runner_sha256": "399a452145b644c5412e6888b9504e9b4552c4636347a1e34590ee1be8ddb5ac",
+      "timeout": 120,
+      "direct_inputs": [
+        "docs/ROTOR_JOINT_LOCAL_GAUGE_CHARACTERISTIC_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/ROTOR_JOINT_GROUND_ENERGY_OSCILLATOR_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "scripts/rotor_integer_gaussian_positive_square_check_2026_09_16.py"
+      ],
+      "transitive_import_helpers": [
+        "scripts/rotor_integer_gaussian_positive_square_check_2026_09_16.py"
+      ],
+      "runtime_closure": [
+        {
+          "path": "docs/ROTOR_JOINT_GROUND_ENERGY_OSCILLATOR_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "80685ca04b4f8ace7e94f4f43455531715d914eb38803c3737118f9fab3e0ebc"
+        },
+        {
+          "path": "docs/ROTOR_JOINT_LOCAL_GAUGE_CHARACTERISTIC_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "5c9b27943612061c6953794af93f60bbb0dfe2783e123a09c6e70b7b5fb45820"
+        },
+        {
+          "path": "docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "8b881cfe2fe736dfea1bca01227f90f782d79daa00833dbac05d3b27b0c8498f"
+        },
+        {
+          "path": "scripts/rotor_integer_gaussian_positive_square_check_2026_09_16.py",
+          "sha256": "e9286f50fc2af8c8803c3fc172d97ea9ccbb682bbc32d99adbb6ac6e497e14fd"
+        }
+      ],
+      "declared_input_fingerprint": "23e80aa5fc79d95b5639ed9db0eab4848e37fe1192850d8cc78263f6f1d79598"
+    },
+    {
+      "runner": "scripts/rotor_joint_weyl_car_state_check_2026_09_16.py",
+      "runner_sha256": "358181787e9e2a78e1ed6d6c4c1a1aaec50b50e1a678ac42a6dddcdbd6660474",
+      "timeout": 120,
+      "direct_inputs": [
+        "docs/ROTOR_JOINT_EQUAL_TIME_WEYL_CAR_STATE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/ROTOR_JOINT_GROUND_ENERGY_OSCILLATOR_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/ROTOR_JOINT_LOCAL_GAUGE_CHARACTERISTIC_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+      ],
+      "transitive_import_helpers": [],
+      "runtime_closure": [
+        {
+          "path": "docs/ROTOR_JOINT_EQUAL_TIME_WEYL_CAR_STATE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "dbe37676ec9b449ee2ea55d4375406cd0aa01d2f50b9f9d9b72538945c30dbdb"
+        },
+        {
+          "path": "docs/ROTOR_JOINT_GROUND_ENERGY_OSCILLATOR_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "80685ca04b4f8ace7e94f4f43455531715d914eb38803c3737118f9fab3e0ebc"
+        },
+        {
+          "path": "docs/ROTOR_JOINT_LOCAL_GAUGE_CHARACTERISTIC_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "5c9b27943612061c6953794af93f60bbb0dfe2783e123a09c6e70b7b5fb45820"
+        },
+        {
+          "path": "docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "8b881cfe2fe736dfea1bca01227f90f782d79daa00833dbac05d3b27b0c8498f"
+        }
+      ],
+      "declared_input_fingerprint": "33489ccaae08c96ede32d5213540d52bdd64a8451149e09fbb7721d207bfcedd"
+    },
+    {
+      "runner": "scripts/rotor_joint_gauge_propagation_check_2026_09_16.py",
+      "runner_sha256": "a89a760d3696807477410df0fa689beaa494fc5acc67328be2d42f5122909e82",
+      "timeout": 120,
+      "direct_inputs": [
+        "docs/ROTOR_JOINT_REAL_TIME_GAUGE_TWO_POINT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/ROTOR_JOINT_GROUND_ENERGY_OSCILLATOR_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/ROTOR_JOINT_LOCAL_GAUGE_CHARACTERISTIC_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+      ],
+      "transitive_import_helpers": [],
+      "runtime_closure": [
+        {
+          "path": "docs/ROTOR_JOINT_GROUND_ENERGY_OSCILLATOR_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "80685ca04b4f8ace7e94f4f43455531715d914eb38803c3737118f9fab3e0ebc"
+        },
+        {
+          "path": "docs/ROTOR_JOINT_LOCAL_GAUGE_CHARACTERISTIC_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "5c9b27943612061c6953794af93f60bbb0dfe2783e123a09c6e70b7b5fb45820"
+        },
+        {
+          "path": "docs/ROTOR_JOINT_REAL_TIME_GAUGE_TWO_POINT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "7b945b5d7556745396e8bddda9776f7ef1cfb2aba812df4dacc15ec3595e27b0"
+        },
+        {
+          "path": "docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "8b881cfe2fe736dfea1bca01227f90f782d79daa00833dbac05d3b27b0c8498f"
+        }
+      ],
+      "declared_input_fingerprint": "4e8a079569e0143bd971f084a38239fc8c47733e080d67d8e6b5890bf0302f13"
+    },
+    {
+      "runner": "scripts/rotor_joint_rooted_matter_dynamics_check_2026_09_16.py",
+      "runner_sha256": "9523a26e3e8b60027dc9141af4dbe7e5c324ed6e5c8058f23173b595aea3f24a",
+      "timeout": 120,
+      "direct_inputs": [
+        "docs/ROTOR_JOINT_BOUNDED_NEUTRAL_MATTER_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/ROTOR_JOINT_EQUAL_TIME_WEYL_CAR_STATE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "scripts/rotor_joint_gauge_propagation_check_2026_09_16.py"
+      ],
+      "transitive_import_helpers": [
+        "scripts/rotor_joint_gauge_propagation_check_2026_09_16.py"
+      ],
+      "runtime_closure": [
+        {
+          "path": "docs/ROTOR_JOINT_BOUNDED_NEUTRAL_MATTER_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "005acc4364e654c3d32a94c8105552f3a515e497757a48f912d7f7a05ec9d47c"
+        },
+        {
+          "path": "docs/ROTOR_JOINT_EQUAL_TIME_WEYL_CAR_STATE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "dbe37676ec9b449ee2ea55d4375406cd0aa01d2f50b9f9d9b72538945c30dbdb"
+        },
+        {
+          "path": "docs/ROTOR_JOINT_GROUND_ENERGY_OSCILLATOR_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "80685ca04b4f8ace7e94f4f43455531715d914eb38803c3737118f9fab3e0ebc"
+        },
+        {
+          "path": "docs/ROTOR_JOINT_LOCAL_GAUGE_CHARACTERISTIC_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "5c9b27943612061c6953794af93f60bbb0dfe2783e123a09c6e70b7b5fb45820"
+        },
+        {
+          "path": "docs/ROTOR_JOINT_REAL_TIME_GAUGE_TWO_POINT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "7b945b5d7556745396e8bddda9776f7ef1cfb2aba812df4dacc15ec3595e27b0"
+        },
+        {
+          "path": "docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "sha256": "8b881cfe2fe736dfea1bca01227f90f782d79daa00833dbac05d3b27b0c8498f"
+        },
+        {
+          "path": "scripts/rotor_joint_gauge_propagation_check_2026_09_16.py",
+          "sha256": "a89a760d3696807477410df0fa689beaa494fc5acc67328be2d42f5122909e82"
+        }
+      ],
+      "declared_input_fingerprint": "07594eb1530eab95bc58244b6f2c5af76936543abdc6df74b4311ecd068e3e6e"
+    }
+  ],
+  "expected_registry_entries": {
+    "rotor_joint_ground_energy_oscillator_defect_bounded_theorem_note_2026-09-16": [
+      "scripts/rotor_tree_slater_dressing_check_2026_09_16.py"
+    ],
+    "rotor_joint_local_gauge_characteristic_limit_bounded_theorem_note_2026-09-16": [
+      "scripts/rotor_integer_gaussian_positive_square_check_2026_09_16.py"
+    ],
+    "rotor_joint_bounded_neutral_matter_dynamics_bounded_theorem_note_2026-09-16": [
+      "scripts/rotor_joint_gauge_propagation_check_2026_09_16.py"
+    ]
+  },
+  "registry_files": [
+    "scripts/audit_packet_script_deps.py",
+    "docs/audit/scripts/build_citation_graph.py"
+  ],
+  "tooling": [
+    {
+      "path": "scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+    },
+    {
+      "path": "scripts/audit_packet_script_deps.py",
+      "sha256": "02140057ff32e8960477a31a7995d843d98dea3d2f4b8ba20e341a379d4470d1"
+    },
+    {
+      "path": "docs/audit/scripts/build_citation_graph.py",
+      "sha256": "cb67ae77eb07f110d107b0b4d1900f023df63b2f96978bcac822d9fa8fad8aaa"
+    }
+  ],
+  "limitations": "Explicit tree-Slater helper registry is planned, not yet installed; re-discover both helper APIs after authorized union and base advance."
+}

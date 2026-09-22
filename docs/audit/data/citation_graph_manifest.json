@@ -1,6 +1,6 @@
 {
- "edge_count": 13750,
- "node_count": 6270,
+ "edge_count": 13754,
+ "node_count": 6272,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -741,6 +741,10 @@
   "admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_bounded_theorem_note_2026-09-06": {
    "deps_hash": "1b3132f0c69b",
    "out_degree": 3
+  },
+  "admissibility_rule_finite_unrecorded_component_factorization_and_attachment_factors_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "971b1e1951b0",
+   "out_degree": 4
   },
   "admissibility_rule_formation_law_flip_identities_and_finite_mixture_witnesses_bounded_theorem_note_2026-09-15": {
    "deps_hash": "a95e40c6cf02",
@@ -24511,6 +24515,10 @@
    "out_degree": 0
   },
   "work_history.review_loop.pr8154.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8158.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

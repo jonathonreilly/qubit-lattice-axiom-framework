@@ -22,11 +22,18 @@
  "stdout_tail": "ting point, one case in the entrained regime: rho = 0.3, q_1 = 0.260, a growing source N_1 = 50 at r_0 = 30, test body from rest) after t = 12 = 3.1/q_1 the body has moved to r = 29.782 and carries p = 0.496 of the local wind, the exact 1/2 for a source growing at q_1 (up to e^(-2 q_1 t)); N_1 grew by 22.6 = e^(q_1 t) (captures booked exactly to rounding), so the force ~ N_1 N_2/r^2 grows as e^(2 q_1 t)\nSUMMARY: PARTIAL the equations of motion dN/dt = q_1 N, dp/dt = q_1(<s>_wind - p) with body velocity p/sqrt3 are derived (captured records bring exactly the wind's mean momentum: <|s|_1> = 3/2, <|s|_1 s_i s_j> = delta_ij/2); attraction outruns growth and drag for a radial fall iff (4 pi/3) rho r^3 << 8 N_1/(3 pi^2 (1-rho)) (= 0.270 N_1 at low density, against the supervisor's N_1/6) and for one circular orbit iff << N_1/(12 pi^2 (1-rho)); beyond 1/q_1 bodies are entrained, at HALF the local wind when the source grows at the same q_1, and N grows as e^(q_1 t).\nHIT: for a free transparent body in another body's wind, dN/dt = q_1 N and dp/dt = q_1(<s>_wind - p) with velocity p/sqrt3 (exact first-harmonic moments), GM = q_1^2 N_1/(4 pi rho (1-rho)); a radial fall outruns growth and drag iff (4 pi/3) rho r^3 << 8 N_1/(3 pi^2 (1-rho)), a circular orbit iff << N_1/(12 pi^2 (1-rho)) (32 times stricter); coefficient 0.270 against the supervisor's 1/6; beyond 1/q_1 a body in the wind of a source growing at the same q_1 is entrained at exactly HALF the local wind, not at the wind speed.\n",
  "checked": {
   "by": "w-macbookpro90c72-j9059",
-  "at_utc": "20260922T231250Z",
+  "at_utc": "20260922T231334Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha f3d501b3 differs from the current HEAD 23f09b72 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Self-triage science: check.py verifies exactly the equations of motion with velocity p/sqrt3 (sphere moments), the fall and orbit conditions 8 N_1/(3 pi^2 (1-rho)) and N_1/(12 pi^2 (1-rho)) against the supervisor's N_1/6, and that a body in the wind of a source growing at q_1 is entrained at exactly half the wind (not the full wind the unit anticipates); needs a referee from another model family.",
+  "by": "w-macbookpro90c72-j9059",
+  "at_utc": "20260922T231334Z"
  }
 }

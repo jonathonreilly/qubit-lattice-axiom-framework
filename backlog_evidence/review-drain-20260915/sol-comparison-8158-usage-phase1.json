@@ -1,0 +1,46 @@
+{
+  "baseline": {
+    "telemetry_source": "/Users/jonBridger/.codex/sessions/2026/09/15/rollout-2026-09-15T06-09-42-01a0a48b-3900-7940-8474-799a8ef8b3d9.jsonl",
+    "actual_model_configuration": {
+      "model": "gpt-6-astra",
+      "effort": "low"
+    },
+    "task_start": "2026-09-22T22:24:22.771Z",
+    "task_end": "2026-09-22T22:31:08.409Z",
+    "elapsed_seconds": 405.638,
+    "token_usage_delta": {
+      "input_tokens": 3315296,
+      "cached_input_tokens": 3195904,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 6766,
+      "reasoning_output_tokens": 738,
+      "total_tokens": 3322062
+    },
+    "uncached_input_tokens": 119392,
+    "modeled_standard_credits": 118.2031,
+    "note": "Published-rate estimate, not a charge receipt. Cumulative input includes repeated request contexts; reasoning output is included in output, not added twice."
+  },
+  "candidate_phase1": {
+    "telemetry_source": "/Users/jonBridger/.codex/sessions/2026/09/22/rollout-2026-09-22T18-30-59-01a0cb3e-64c9-73c1-8a0b-ec8b5b9a48fe.jsonl",
+    "actual_model_configuration": {
+      "model": "gpt-6-sol",
+      "effort": "low"
+    },
+    "task_start": "2026-09-22T22:30:59.694Z",
+    "task_end": "2026-09-22T22:32:44.174Z",
+    "elapsed_seconds": 104.48,
+    "token_usage_delta": {
+      "input_tokens": 703795,
+      "cached_input_tokens": 646400,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 4004,
+      "reasoning_output_tokens": 687,
+      "total_tokens": 707799
+    },
+    "uncached_input_tokens": 57395,
+    "modeled_standard_credits": 7.10275,
+    "note": "Published-rate estimate, not a charge receipt. Cumulative input includes repeated request contexts; reasoning output is included in output, not added twice."
+  },
+  "pricing_source": "https://learn.chatgpt.com/docs/pricing",
+  "comparison_limit": "Candidate phase1 omitted full historical/parent/disposition scope; phase2 requested blind completion. Context reuse and scope differ, so measured phase1 ratio is not a same-work savings estimate."
+}

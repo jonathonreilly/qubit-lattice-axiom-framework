@@ -1,0 +1,21 @@
+{
+  "pr": 8155,
+  "original_head": "c286f2fc6ad4dc94562c1e1e1aa3f85f850f8a9a",
+  "branch": "physics-loop/admissibility-induced-law-block21-unsoldered-sphere-static-law-weak-coupling-uniqueness-exponential-decay-20260915",
+  "landing": "d0e809a52de34a6e1f086dee7b341dc1f96a07c7",
+  "source_verified_at": "d0e809a52de34a6e1f086dee7b341dc1f96a07c7",
+  "lease_deleted": false,
+  "recovery_branch_preserved": true,
+  "reason_report": "drain8154-report.md",
+  "closed": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-22T22:34:55Z",
+    "headRefName": "physics-loop/admissibility-induced-law-block21-unsoldered-sphere-static-law-weak-coupling-uniqueness-exponential-decay-20260915",
+    "headRefOid": "c286f2fc6ad4dc94562c1e1e1aa3f85f850f8a9a",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8155,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8155"
+  }
+}

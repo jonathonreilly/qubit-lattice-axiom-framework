@@ -1,0 +1,21 @@
+{
+  "pr": 8157,
+  "original_head": "debbd76649e8a08469114e2dbfa52d1d1fd3e022",
+  "branch": "physics-loop/admissibility-induced-law-block23-unsoldered-sphere-static-law-plane-algebraic-decay-complex-rotations-20260915",
+  "landing": "d0e809a52de34a6e1f086dee7b341dc1f96a07c7",
+  "source_verified_at": "d0e809a52de34a6e1f086dee7b341dc1f96a07c7",
+  "lease_deleted": false,
+  "recovery_branch_preserved": true,
+  "reason_report": "drain8154-report.md",
+  "closed": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-22T22:36:17Z",
+    "headRefName": "physics-loop/admissibility-induced-law-block23-unsoldered-sphere-static-law-plane-algebraic-decay-complex-rotations-20260915",
+    "headRefOid": "debbd76649e8a08469114e2dbfa52d1d1fd3e022",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8157,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8157"
+  }
+}

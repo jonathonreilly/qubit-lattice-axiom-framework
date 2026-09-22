@@ -1,0 +1,41 @@
+{
+  "created_at": "2026-09-22T22:32:29.310134+00:00",
+  "user_request": "Controlled GPT6Sol same-PR issue detection and potential cost comparison",
+  "pr": 8158,
+  "head": "dd78e677ba6cda496d6de20cfc215ef8bd09374f",
+  "delta_base": "df5316ee81d59d573b3837afb80d371d12d890d6",
+  "baseline_report": "/private/tmp/review-drain-20260915/drain8158-original-review.json",
+  "baseline_sha256": "85470c99cba0d21a4a29572ed307f39e88a4c6c0d745bd8afca9b9e78f0a27ad",
+  "baseline_model": "gpt-6-astra",
+  "candidate_model": "gpt-6-sol",
+  "reasoning_effort_both": "low",
+  "candidate_session": "/root/sol_compare_8158",
+  "blind_boundary": "No previous turns forked; original source/inventory/current main available; original findings, controls and author corrections explicitly excluded. Candidate findings frozen before comparison.",
+  "comparison_axes": [
+    "material issue recall",
+    "unsupported extra findings",
+    "proof/geometry/claim-boundary specificity",
+    "independent control validity",
+    "source coverage",
+    "elapsed time",
+    "token usage only if directly available"
+  ],
+  "limitation": "One already-selected defective PR is a pilot, not representative recall/false-positive evidence. Baseline session had prior repo context; candidate begins fresh.",
+  "pricing_source": "https://learn.chatgpt.com/docs/pricing",
+  "pricing_read_date": "2026-09-22",
+  "standard_credits_per_million": {
+    "gpt-6-astra": {
+      "input": 250,
+      "cached_input": 25,
+      "output": 1250
+    },
+    "gpt-6-sol": {
+      "input": 50,
+      "cached_input": 5,
+      "output": 250
+    }
+  },
+  "per_equal_token_mix_sol_discount": 0.8,
+  "mode_note": "Fast mode published multiplier2.5 for both; actual charged mode/token mix not measured yet.",
+  "workflow_policy": "Comparison only; no change to review-loop model default or existing scientific acceptance."
+}

@@ -1,0 +1,32 @@
+{
+ "task": "X:moving-contentless-calibration",
+ "type": "scan",
+ "lane": "moving-records",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 moving_gas.py 1 1 1 2.0 0.5 24 3000 1",
+ "seed": 43714,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "966b8f4e",
+ "started_utc": "20260922T022154Z",
+ "elapsed_s": 163.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "p=1.0 q=1.0 r=1.0 c=2.0000 rho=0.5 L=24 nbrs=3.590 nbrs_over_random=1.197 aligned=0.167 S=1.09 accept=0.388 records=6894 seconds=163"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "Calibration: content-less records (p = q = r = 1) at half filling across the literature onset 2.427, three lattice sizes. Arguments: p q r scale rho L sweeps seed. GRID UNITS: the 24 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "550de9d84e622711cfb000b0c3c860f7e2aa6da603a65cf8b88251678e98e9eb",
+ "stdout_tail": "weights (1.0,1.0,1.0) scale c=2.0000 (2.0) rho=0.5 L=24 sweeps=3000 seed=1 mode=parallel; random baseline: nbrs=3.000 aligned=0.1667\nsweep  nbrs  aligned  accept  S\n     1 3.439 0.171 0.429 0.45\n     2 3.457 0.168 0.393 0.56\n     4 3.531 0.167 0.398 0.67\n     9 3.578 0.166 0.386 0.72\n    18 3.593 0.167 0.386 0.73\n    38 3.570 0.165 0.390 0.78\n    79 3.624 0.164 0.390 0.54\n   163 3.547 0.166 0.380 0.44\n   338 3.585 0.172 0.385 1.11\n   700 3.621 0.166 0.387 0.90\n  1449 3.612 0.164 0.386 4.40\n  3000 3.593 0.163 0.395 1.71\nSUMMARY: p=1.0 q=1.0 r=1.0 c=2.0000 rho=0.5 L=24 nbrs=3.590 nbrs_over_random=1.197 aligned=0.167 S=1.09 accept=0.388 records=6894 seconds=163\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260922T022437Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

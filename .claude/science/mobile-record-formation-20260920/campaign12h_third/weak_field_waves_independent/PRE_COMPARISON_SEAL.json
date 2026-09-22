@@ -1,0 +1,202 @@
+{
+  "created_utc": "2026-09-22T22:30:13.533119+00:00",
+  "status": "Blind independent reconstruction complete before any new author weak-field access; no publication or formal audit status.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/ELECTRIC_AND_MAGNETIC_DYNAMICS_FROM_RECORD_MOTION.md",
+      "bytes": 18939,
+      "sha256": "52f5ce8bd8f1b39049ebbb0407e6881ed8e11de80bc2c29db9e0e56c5cdd3fc2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/REPORT.md",
+      "bytes": 23867,
+      "sha256": "072e1b6c833d023bec988126ca79379848718455122f7462db20db069a790732"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/COMPARISON.md",
+      "bytes": 14232,
+      "sha256": "9051d24628563bc39fed4a8167b5cafe9fc052bc72bc3bbdc7f5f88cf3cdb7b9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/PRE_COMPARISON_SEAL.json",
+      "bytes": 10668,
+      "sha256": "f8f457305153006eccda68740a518cfed0c11d3c28d1c77ad3ce6df71970e3c5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/FINAL_SEAL.json",
+      "bytes": 19914,
+      "sha256": "7620bb6ff3b16ec319f12ad0d588d45a56f0fd084ed192b59e8c86d0f9ac30d4"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/COMPACT_PACKET_CHECK.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/COMPACT_PACKET_CHECK.stdout",
+      "bytes": 16712,
+      "sha256": "c157b27de014472d98b7117c9b82c662cc32044fb373851fb74857b1345a6d26"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/COMPACT_PACKET_CHECK_RECEIPT.json",
+      "bytes": 790,
+      "sha256": "764b96dac89e965a0335e91042c258439e8f0e8f6df047778f2221f584202daa"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/COMPACT_PACKET_RESULTS.json",
+      "bytes": 16712,
+      "sha256": "c157b27de014472d98b7117c9b82c662cc32044fb373851fb74857b1345a6d26"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/COUPLING_PATH_CHECK.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/COUPLING_PATH_CHECK.stdout",
+      "bytes": 3788,
+      "sha256": "a719aef20cab29560aada83559d634ba70d9a25b7bf6879618ccb92f2f6c0191"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/COUPLING_PATH_CHECK_RECEIPT.json",
+      "bytes": 734,
+      "sha256": "b72f3a76dd935084f302dc8bcfbe8749610029c2e758cf55e3d626bb59ce1fc4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/COUPLING_PATH_RESULTS.json",
+      "bytes": 3788,
+      "sha256": "a719aef20cab29560aada83559d634ba70d9a25b7bf6879618ccb92f2f6c0191"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/INCIDENCE_CHECK.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/INCIDENCE_CHECK.stdout",
+      "bytes": 6614,
+      "sha256": "c9d844d6d7d2bea8ab15368887f2faf4b048232799a8ac6ce3987f222e47908e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/INCIDENCE_CHECK_RECEIPT.json",
+      "bytes": 785,
+      "sha256": "14b3bde0e5440be2a56c3af5bb5302e838eb2f400c1cdce80b2115e070732ac7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/INCIDENCE_RESULTS.json",
+      "bytes": 6614,
+      "sha256": "c9d844d6d7d2bea8ab15368887f2faf4b048232799a8ac6ce3987f222e47908e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/INPUT_SPEC.md",
+      "bytes": 1298,
+      "sha256": "ae1ba3bb282407d4068bc544aa9ec054c440bb3c30efefbf2bc3107ca525f21a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/REPORT.md",
+      "bytes": 21227,
+      "sha256": "97e03699969206594235e727487ef55ab77d0cb201abff5870dc7ac52fe64a93"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/RUNTIME.json",
+      "bytes": 329,
+      "sha256": "9dac431692ff91b4385e076da540bde641a62567dec62d690684c59cc6fa3a1f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/SOURCE_READ_BOUNDARY.json",
+      "bytes": 2155,
+      "sha256": "5eb7db82b88e26374db728ad4309dc42c0b0b6b311d0faf5c512b7b97454474f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/compact_packet_check.py",
+      "bytes": 5057,
+      "sha256": "51b09a9ea3f695db0cf7b2ae97536153a707f63dbee68cbbc6e168c2b025ff6e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/coupling_path_check.py",
+      "bytes": 2725,
+      "sha256": "7549a074b158337a38e65a3c2aefe129f8e4e84b43a52beb7337931dc5a48410"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/incidence_check.py",
+      "bytes": 5217,
+      "sha256": "f28968a917b7366a60b7d223fd3c669723a548f4e50c22aaf19039129adf0e22"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/seal_reconstruction.py",
+      "bytes": 4295,
+      "sha256": "86be77e8cd6341bbb4fa243006939313fc02bf9ced2fbf0ca1988143ec6e6352"
+    }
+  ],
+  "counts": {
+    "sources": 5,
+    "artifacts": 20,
+    "total": 25
+  },
+  "reused_final_packet_authenticated": {
+    "listed_bindings": 55,
+    "additional_top_level_seals": 2,
+    "seal": {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/FINAL_SEAL.json",
+      "bytes": 19914,
+      "sha256": "7620bb6ff3b16ec319f12ad0d588d45a56f0fd084ed192b59e8c86d0f9ac30d4"
+    }
+  },
+  "result": "A compact cutoff packet in the zero global electric-flux sector approximates the transverse harmonic state with the explicit residual (13) and O(h) fixed-time norm bound (15), at fixed finite box and fixed omega0=sqrt(KJ), h=sqrt(K/J)->0.",
+  "dispersion": "omega(k)=2 sqrt(KJ) sqrt(4 sum_i sin^2(k_i/2)), two transverse polarizations at each nonzero mode.",
+  "countercontrols": [
+    "Gauss alone leaves three physical harmonic directions; an additional global electric-flux sector is selected explicitly.",
+    "At fixed K=1,J=h^-2, the one-square first gap is 4/h-1+O(h); a fixed-time prepared relative phase differs from the uncorrected harmonic one."
+  ],
+  "independent_controls": [
+    {
+      "prefix": "INCIDENCE",
+      "runner": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/incidence_check.py",
+        "bytes": 5217,
+        "sha256": "f28968a917b7366a60b7d223fd3c669723a548f4e50c22aaf19039129adf0e22"
+      },
+      "result": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/INCIDENCE_RESULTS.json",
+        "bytes": 6614,
+        "sha256": "c9d844d6d7d2bea8ab15368887f2faf4b048232799a8ac6ce3987f222e47908e"
+      }
+    },
+    {
+      "prefix": "COMPACT_PACKET",
+      "runner": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/compact_packet_check.py",
+        "bytes": 5057,
+        "sha256": "51b09a9ea3f695db0cf7b2ae97536153a707f63dbee68cbbc6e168c2b025ff6e"
+      },
+      "result": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/COMPACT_PACKET_RESULTS.json",
+        "bytes": 16712,
+        "sha256": "c157b27de014472d98b7117c9b82c662cc32044fb373851fb74857b1345a6d26"
+      }
+    },
+    {
+      "prefix": "COUPLING_PATH",
+      "runner": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/coupling_path_check.py",
+        "bytes": 2725,
+        "sha256": "7549a074b158337a38e65a3c2aefe129f8e4e84b43a52beb7337931dc5a48410"
+      },
+      "result": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/COUPLING_PATH_RESULTS.json",
+        "bytes": 3788,
+        "sha256": "a719aef20cab29560aada83559d634ba70d9a25b7bf6879618ccb92f2f6c0191"
+      }
+    }
+  ],
+  "proof_scope": "Finite box, prescribed small-angle quantum packet, fixed wave/time normalization. Subsequent fixed finite-mode continuum and record-to-rotor compositions use explicitly ordered limits.",
+  "unresolved_extensions": [
+    "No uniform-in-volume weak-packet error or unrestricted joint h,N,S schedule established.",
+    "No thermodynamic phase, record-selected vacuum, all continuum observables, native implementation or full QFT theorem."
+  ],
+  "failures": "All three independent runners passed on their first execution; no failed helper or scientific attempt in this packet.",
+  "source_boundary": "New author weak-field/energy/content/static-source/ramp/transport source, code, result, seal, campaign checkpoint and registry remain unopened.",
+  "mutable_exclusion": "CHECKPOINT.md is an unsealed recovery aid."
+}

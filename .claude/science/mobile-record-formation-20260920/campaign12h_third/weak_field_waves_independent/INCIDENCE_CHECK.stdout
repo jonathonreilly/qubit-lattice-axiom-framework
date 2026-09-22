@@ -1,0 +1,228 @@
+{
+  "created_utc": "2026-09-22T22:19:03.113577+00:00",
+  "status": "PASS",
+  "cubic_controls": [
+    {
+      "side": 3,
+      "vertices": 27,
+      "links": 81,
+      "plaquettes": 81,
+      "prime": 1009,
+      "gradient_rank_mod_prime": 26,
+      "curl_rank_mod_prime": 52,
+      "gradient_plus_harmonic_rank_mod_prime": 29,
+      "exact_real_rank_certificate": "Integer modular lower bound equals the upper bound from the connected gradient and three independent constant directions.",
+      "real_coexact_dimension": 52,
+      "full_curl_square_nullity": 29,
+      "full_spectrum_error": 1.0658141036401503e-14,
+      "largest_eigenvalue": 9.00000000000001,
+      "mode_checks": [
+        {
+          "mode": [
+            0,
+            0,
+            0
+          ],
+          "lambda": 0.0,
+          "curl_symbol_error": 0.0,
+          "curl_square_symbol_error": 0.0
+        },
+        {
+          "mode": [
+            1,
+            0,
+            0
+          ],
+          "lambda": 2.9999999999999996,
+          "curl_symbol_error": 2.886579864025407e-15,
+          "curl_square_symbol_error": 5.178925639311149e-15
+        },
+        {
+          "mode": [
+            1,
+            2,
+            -1
+          ],
+          "lambda": 9.0,
+          "curl_symbol_error": 1.1304665702523182e-14,
+          "curl_square_symbol_error": 2.0253584144909416e-14
+        },
+        {
+          "mode": [
+            1,
+            0,
+            1
+          ],
+          "lambda": 5.999999999999999,
+          "curl_symbol_error": 6.936895214610187e-15,
+          "curl_square_symbol_error": 1.0533085528388577e-14
+        }
+      ]
+    },
+    {
+      "side": 4,
+      "vertices": 64,
+      "links": 192,
+      "plaquettes": 192,
+      "prime": 1009,
+      "gradient_rank_mod_prime": 63,
+      "curl_rank_mod_prime": 126,
+      "gradient_plus_harmonic_rank_mod_prime": 66,
+      "exact_real_rank_certificate": "Integer modular lower bound equals the upper bound from the connected gradient and three independent constant directions.",
+      "real_coexact_dimension": 126,
+      "full_curl_square_nullity": 66,
+      "full_spectrum_error": 1.7763568394002505e-14,
+      "largest_eigenvalue": 12.000000000000007,
+      "mode_checks": [
+        {
+          "mode": [
+            0,
+            0,
+            0
+          ],
+          "lambda": 0.0,
+          "curl_symbol_error": 0.0,
+          "curl_square_symbol_error": 0.0
+        },
+        {
+          "mode": [
+            1,
+            0,
+            0
+          ],
+          "lambda": 1.9999999999999996,
+          "curl_symbol_error": 1.1102230246251565e-15,
+          "curl_square_symbol_error": 1.9860273225978185e-15
+        },
+        {
+          "mode": [
+            1,
+            2,
+            -1
+          ],
+          "lambda": 8.0,
+          "curl_symbol_error": 9.441466109136565e-15,
+          "curl_square_symbol_error": 1.865174681370263e-14
+        },
+        {
+          "mode": [
+            2,
+            0,
+            1
+          ],
+          "lambda": 6.0,
+          "curl_symbol_error": 8.188600426433445e-15,
+          "curl_square_symbol_error": 8.747542958250513e-15
+        }
+      ]
+    },
+    {
+      "side": 6,
+      "vertices": 216,
+      "links": 648,
+      "plaquettes": 648,
+      "prime": 1009,
+      "gradient_rank_mod_prime": 215,
+      "curl_rank_mod_prime": 430,
+      "gradient_plus_harmonic_rank_mod_prime": 218,
+      "exact_real_rank_certificate": "Integer modular lower bound equals the upper bound from the connected gradient and three independent constant directions.",
+      "real_coexact_dimension": 430,
+      "full_curl_square_nullity": 218,
+      "full_spectrum_error": 4.085620730620576e-14,
+      "largest_eigenvalue": 12.00000000000002,
+      "mode_checks": [
+        {
+          "mode": [
+            0,
+            0,
+            0
+          ],
+          "lambda": 0.0,
+          "curl_symbol_error": 0.0,
+          "curl_square_symbol_error": 0.0
+        },
+        {
+          "mode": [
+            1,
+            0,
+            0
+          ],
+          "lambda": 0.9999999999999998,
+          "curl_symbol_error": 2.5121479338940403e-15,
+          "curl_square_symbol_error": 5.1610446135306005e-15
+        },
+        {
+          "mode": [
+            1,
+            2,
+            -1
+          ],
+          "lambda": 4.999999999999999,
+          "curl_symbol_error": 1.1682163181672947e-14,
+          "curl_square_symbol_error": 2.1111760027289803e-14
+        },
+        {
+          "mode": [
+            3,
+            0,
+            1
+          ],
+          "lambda": 5.0,
+          "curl_symbol_error": 1.856198605502442e-14,
+          "curl_square_symbol_error": 1.4782234971282935e-14
+        }
+      ]
+    }
+  ],
+  "finite_mode_continuum": {
+    "physical_side": 2.3,
+    "speed": 1.7,
+    "fixed_mode": [
+      1,
+      2,
+      -1
+    ],
+    "continuum_frequency": 11.375659363174794,
+    "rows": [
+      {
+        "side": 12,
+        "spacing": 0.19166666666666665,
+        "omega0": 4.434782608695652,
+        "frequency": 10.992173464574133,
+        "frequency_error": 0.38348589860066085,
+        "error_divided_by_spacing_squared": 10.438935614082261,
+        "projector_error": 0.016433863894009852
+      },
+      {
+        "side": 24,
+        "spacing": 0.09583333333333333,
+        "omega0": 8.869565217391305,
+        "frequency": 11.278598380800185,
+        "frequency_error": 0.09706098237460914,
+        "error_divided_by_spacing_squared": 10.568454791639862,
+        "projector_error": 0.004056031122938463
+      },
+      {
+        "side": 48,
+        "spacing": 0.04791666666666666,
+        "omega0": 17.73913043478261,
+        "frequency": 11.351319432418872,
+        "frequency_error": 0.024339930755921557,
+        "error_divided_by_spacing_squared": 10.600983074034644,
+        "projector_error": 0.0010107554858336907
+      },
+      {
+        "side": 96,
+        "spacing": 0.02395833333333333,
+        "omega0": 35.47826086956522,
+        "frequency": 11.369569707308411,
+        "frequency_error": 0.0060896558663827705,
+        "error_divided_by_spacing_squared": 10.60912447345626,
+        "projector_error": 0.00025248599886151167
+      }
+    ],
+    "scope": "Only a fixed nonzero Fourier mode and fixed physical box; no infinite-volume or phase assertion."
+  },
+  "source_sha256": "f28968a917b7366a60b7d223fd3c669723a548f4e50c22aaf19039129adf0e22",
+  "limits": "Exact integer incidence identities and rank certificates plus floating spectral controls. The all-size quotient and finite-time bounds are proved in the report, not inferred from these cases."
+}

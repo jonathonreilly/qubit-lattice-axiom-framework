@@ -1,0 +1,25 @@
+{
+  "started_utc": "2026-09-22T22:38:23.394692+00:00",
+  "finished_utc": "2026-09-22T22:38:24.221721+00:00",
+  "elapsed_seconds": 0.8269298342056572,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/comparison_check.py"
+  ],
+  "exit_code": 0,
+  "runner": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/comparison_check.py",
+    "bytes": 9690,
+    "sha256": "e17d2e83ae829fc0ac6ebae37835dfdf52048f91a3147f30ade3c133d0dead33"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/COMPARISON_CHECK.stdout",
+    "bytes": 4681,
+    "sha256": "221d5e06dde64dc0a1be116467f9b55de7c354cd52f9c1280c4d7f1a3688e114"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/COMPARISON_CHECK.stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

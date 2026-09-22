@@ -1,0 +1,114 @@
+{
+  "created_utc": "2026-09-22T22:38:24.042661+00:00",
+  "status": "PASS",
+  "runner": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/comparison_check.py",
+    "bytes": 9690,
+    "sha256": "e17d2e83ae829fc0ac6ebae37835dfdf52048f91a3147f30ade3c133d0dead33"
+  },
+  "authentication": {
+    "pre_seal": {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/PRE_COMPARISON_SEAL.json",
+      "bytes": 12414,
+      "sha256": "d17725c9c6f2b1a973ea89791402c94b1ee87759164a9a551c38b7b499fcf0f6"
+    },
+    "pre_bindings": 25,
+    "author_seal": {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/WEAK_FIELD_WAVEPACKET_AUTHOR_SEAL.json",
+      "bytes": 2354,
+      "sha256": "d05a600d964abc3ae99ce80f1df6e710a33f1fb21415e830821957972a11eaf3"
+    },
+    "author_bindings": 7,
+    "additional_context_dependencies": [
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LARGE_SPIN_RECORD_AUTHOR_SEAL.json",
+        "bytes": 4126,
+        "sha256": "40797e4620ebb864744753ae5429a1727c7b407fc712bda4360e75ea295a1f3b"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/ELECTRIC_AND_MAGNETIC_DYNAMICS_FROM_RECORD_MOTION.md",
+        "bytes": 18939,
+        "sha256": "52f5ce8bd8f1b39049ebbb0407e6881ed8e11de80bc2c29db9e0e56c5cdd3fc2"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/UNIFORM_LOCAL_RING_AUTHOR_SEAL.json",
+        "bytes": 5925,
+        "sha256": "4b52f52f820ed5efbe01b18d47c0166018f0c421cd507fb55f171d893f8a7ce5"
+      }
+    ],
+    "receipt_and_output_bindings_pass": true
+  },
+  "exact_normalization": {
+    "sqrt_K_over_J_equals_g2": "0",
+    "sqrt_KJ_equals_c_over_2a": "0",
+    "epsilon_squared": "0",
+    "induced_electric_coefficient": "0",
+    "induced_plaquette_coefficient": "0",
+    "loop_residual_ground": "35/192",
+    "loop_residual_first": "105/64"
+  },
+  "cubic_vacuum_trace": {
+    "rows": [
+      {
+        "side": 3,
+        "face_variance_from_Fourier_trace": 0.7874837254174247,
+        "quartic_bound_over_g2": 21.44626169298672,
+        "author_difference": -7.105427357601002e-15
+      },
+      {
+        "side": 4,
+        "face_variance_from_Fourier_trace": 0.7934335972773073,
+        "quartic_bound_over_g2": 51.606666767539735,
+        "author_difference": 7.105427357601002e-15
+      },
+      {
+        "side": 6,
+        "face_variance_from_Fourier_trace": 0.7954185754891872,
+        "quartic_bound_over_g2": 175.04506506168266,
+        "author_difference": 0.0
+      }
+    ],
+    "side_six_exact_lambda_histogram": {
+      "0": 1,
+      "1": 6,
+      "2": 12,
+      "3": 14,
+      "4": 27,
+      "5": 36,
+      "6": 24,
+      "7": 36,
+      "8": 27,
+      "9": 14,
+      "10": 12,
+      "11": 6,
+      "12": 1
+    },
+    "side_six_exact_face_variance": "sqrt(11)/108 + 2*sqrt(3)/81 + sqrt(10)/54 + sqrt(6)/27 + sqrt(5)/18 + 11*sqrt(2)/108 + sqrt(7)/18 + 17/108",
+    "side_six_exact_quartic_bound": "sqrt(105)*(3*sqrt(11) + 8*sqrt(3) + 6*sqrt(10) + 12*sqrt(6) + 18*sqrt(5) + 33*sqrt(2) + 18*sqrt(7) + 51)**2/3888",
+    "printed_175_046_is_conservative_upward_decimal": true
+  },
+  "selected_loop": {
+    "g": 0.2,
+    "time": 1.0,
+    "independent_cutoff": 43,
+    "FFT_grid": 16384,
+    "method": "Real-space periodized Gaussian, FFT, sparse matrix exponential; no author function imported.",
+    "state_error": 0.02343319633349967,
+    "difference_from_author": 1.2760625889285393e-14,
+    "residuals": [
+      0.016875181234039034,
+      0.05049122185010481
+    ],
+    "unitarity_error": 2.2093438190040615e-14,
+    "approximation_limit": "Double precision periodic-image and electric cutoffs; not an infinite-matrix interval bound."
+  },
+  "recorded_arithmetic": {
+    "dynamics_rows_arithmetic_only": 24,
+    "cutoff_pairs_arithmetic_only": 4,
+    "continuum_rows_independent_formula": 15,
+    "scope": "Recorded arithmetic authentication is not a rerun of the author diagonalizations."
+  },
+  "author_runner_executed": false,
+  "new_external_literature_used": false,
+  "failures": "None: first execution passed; no earlier attempt was suppressed."
+}

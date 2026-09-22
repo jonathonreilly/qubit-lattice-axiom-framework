@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "source_sha256": "a55e302832c91ae8410e79ef0fa621fbfd24d43ad376f89d078d0adc57585fec",
+  "complete_live_sectors": [
+    {
+      "spin": 1,
+      "complete_physical_dimension": 19,
+      "code_dimension": 3,
+      "star_equals_onsite_charge_projectors": true,
+      "hopping_changes_either_penalty_by_one": true,
+      "record_count_and_birth_annihilation_exact": true,
+      "resolved_and_coherent_loss_exact": "2 Pvac (1-E^2/C)",
+      "largest_local_loss_eigenvalue_exact": "2"
+    },
+    {
+      "spin": 2,
+      "complete_physical_dimension": 39,
+      "code_dimension": 5,
+      "star_equals_onsite_charge_projectors": true,
+      "hopping_changes_either_penalty_by_one": true,
+      "record_count_and_birth_annihilation_exact": true,
+      "resolved_and_coherent_loss_exact": "2 Pvac (1-E^2/C)",
+      "largest_local_loss_eigenvalue_exact": "2"
+    },
+    {
+      "spin": 3,
+      "complete_physical_dimension": 59,
+      "code_dimension": 7,
+      "star_equals_onsite_charge_projectors": true,
+      "hopping_changes_either_penalty_by_one": true,
+      "record_count_and_birth_annihilation_exact": true,
+      "resolved_and_coherent_loss_exact": "2 Pvac (1-E^2/C)",
+      "largest_local_loss_eigenvalue_exact": "2"
+    }
+  ],
+  "weighted_shift_and_moment_controls": {
+    "exact_shift_inequality_rows": 7440,
+    "sampled_spins": 40,
+    "largest_exact_adjacent_w_ratio_in_screen": "25/4",
+    "all_real_quadratic_certificate": "3(1+x^2)-(1+(x+1)^2)=2(x-1/2)^2+1/2",
+    "proof_scope": "The displayed polynomial and cutoff case proof give the universal bounds; the finite screen is a control."
+  },
+  "limits": "Exact finite-sector and scalar inequalities; does not validate a many-volume normal form or phase."
+}

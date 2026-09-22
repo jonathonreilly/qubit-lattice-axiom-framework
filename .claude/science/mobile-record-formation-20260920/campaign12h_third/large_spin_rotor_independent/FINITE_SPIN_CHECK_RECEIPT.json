@@ -1,0 +1,18 @@
+{
+  "started_utc": "2026-09-22T21:32:10.029412+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/finite_spin_check.py"
+  ],
+  "script_sha256": "3b4e969e07835ba6d87c95d0736a520a2c3854ebca61ac9d5a3f4f7763de2bb6",
+  "finished_utc": "2026-09-22T21:32:10.953548+00:00",
+  "exit_code": 0,
+  "FINITE_SPIN_CHECK.stdout": {
+    "bytes": 19017,
+    "sha256": "371d93d3184e57843befd145afe55c11e82afa077393391d91995f0c58be20f5"
+  },
+  "FINITE_SPIN_CHECK.stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "created_utc": "2026-09-22T20:59:43.529193+00:00",
+  "status": "Author conditional construction frozen before independent comparison",
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/ELECTRIC_AND_MAGNETIC_DYNAMICS_FROM_RECORD_MOTION.md",
+      "bytes": 18939,
+      "sha256": "52f5ce8bd8f1b39049ebbb0407e6881ed8e11de80bc2c29db9e0e56c5cdd3fc2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LARGE_SPIN_RECORD_SOURCE_CONTEXT.json",
+      "bytes": 2002,
+      "sha256": "146fab8c9dc88081fd49631d8bf519f2dfa9bbf957b1e3569fb74ca1ca83f6af"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_record_electric_ring_check.py",
+      "bytes": 6861,
+      "sha256": "ed23eb7e64c1847d78501dcb30263ea8d447eafc3a3835abb32e4a7f04fdf090"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LARGE_SPIN_RECORD_ELECTRIC_RING_RESULTS.json",
+      "bytes": 8781,
+      "sha256": "71b0679661d84156f8f637155ca15452b6ba371f7127472b9130256359e7efe6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LARGE_SPIN_RECORD_ELECTRIC_RING_RUN.stdout",
+      "bytes": 2474,
+      "sha256": "2a337661eb6af522333218a2d7184730e40b1d7837dd124c567a8c961edaaa15"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LARGE_SPIN_RECORD_ELECTRIC_RING_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LARGE_SPIN_RECORD_ELECTRIC_RING_RUN_RECEIPT.json",
+      "bytes": 297,
+      "sha256": "67ac74e90fb7fcf4b8c9baf5397cf3e050f259138b3641f9c4d376a9eb5b236f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_live_birth_and_weight_check.py",
+      "bytes": 5238,
+      "sha256": "a55e302832c91ae8410e79ef0fa621fbfd24d43ad376f89d078d0adc57585fec"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LARGE_SPIN_LIVE_BIRTH_AND_WEIGHT_RESULTS.json",
+      "bytes": 1743,
+      "sha256": "12e30c1a18238e999c1a124da5a756085f0ec37c03c30a8dbef283a6211425a8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LARGE_SPIN_LIVE_BIRTH_AND_WEIGHT_RUN.stdout",
+      "bytes": 1743,
+      "sha256": "12e30c1a18238e999c1a124da5a756085f0ec37c03c30a8dbef283a6211425a8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LARGE_SPIN_LIVE_BIRTH_AND_WEIGHT_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LARGE_SPIN_LIVE_BIRTH_AND_WEIGHT_RUN_RECEIPT.json",
+      "bytes": 298,
+      "sha256": "c246aab3c0e0e51ca226063b774dc91872a3b98e833f1236bc532e790fd69ea9"
+    }
+  ],
+  "scope": "Supplied qutrit records, integer spin-S links, increasing scales, finite local dressed preparation and beta=beta0 epsilon^(2d); conditional uniform local rotor limit with a uniform electric fourth-moment hypothesis."
+}

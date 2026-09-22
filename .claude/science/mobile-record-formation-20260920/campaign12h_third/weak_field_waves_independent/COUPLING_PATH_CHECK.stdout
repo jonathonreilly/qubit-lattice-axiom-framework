@@ -1,0 +1,116 @@
+{
+  "created_utc": "2026-09-22T22:22:16.063097+00:00",
+  "status": "PASS",
+  "exact_first_order_quasimode_corrections": [
+    {
+      "n": 0,
+      "harmonic_energy": 2,
+      "first_energy_shift": "-1/4",
+      "first_vector_correction": {
+        "2": "sqrt(2)/16",
+        "4": "sqrt(6)/96"
+      }
+    },
+    {
+      "n": 1,
+      "harmonic_energy": 6,
+      "first_energy_shift": "-5/4",
+      "first_vector_correction": {
+        "3": "5*sqrt(6)/48",
+        "5": "sqrt(30)/96"
+      }
+    }
+  ],
+  "gap_first_correction_exact": "-1",
+  "fixed_physical_time": "pi/2",
+  "rows": [
+    {
+      "h": 0.0625,
+      "Fourier_cutoff": 40,
+      "normalized_first_two_energies": [
+        1.9842499653828631,
+        5.920730915528257
+      ],
+      "normalized_gap": 3.9364809501453935,
+      "gap_correction_divided_by_h": -1.0163047976737047,
+      "physical_gap_at_K1": 62.983695202326295,
+      "relative_phase_at_fixed_time_pi_over2": [
+        -0.025608716408806298,
+        0.9996720430440642
+      ],
+      "distance_from_i": 0.02561081630623303,
+      "bare_harmonic_relative_phase": "1 exactly, since h=1/integer"
+    },
+    {
+      "h": 0.03125,
+      "Fourier_cutoff": 57,
+      "normalized_first_two_energies": [
+        1.992156618485295,
+        5.96065732447392
+      ],
+      "normalized_gap": 3.968500705988625,
+      "gap_correction_divided_by_h": -1.007977408363999,
+      "physical_gap_at_K1": 126.992022591636,
+      "relative_phase_at_fixed_time_pi_over2": [
+        -0.012530555818500906,
+        0.9999214895034907
+      ],
+      "distance_from_i": 0.01253080177078183,
+      "bare_harmonic_relative_phase": "1 exactly, since h=1/integer"
+    },
+    {
+      "h": 0.015625,
+      "Fourier_cutoff": 80,
+      "normalized_first_two_energies": [
+        1.996086075512122,
+        5.980399405505354
+      ],
+      "normalized_gap": 3.984313329993232,
+      "gap_correction_divided_by_h": -1.0039468804331477,
+      "physical_gap_at_K1": 254.99605311956685,
+      "relative_phase_at_fixed_time_pi_over2": [
+        -0.006199705570313563,
+        0.999980781640748
+      ],
+      "distance_from_i": 0.006199735357570463,
+      "bare_harmonic_relative_phase": "1 exactly, since h=1/integer"
+    },
+    {
+      "h": 0.0078125,
+      "Fourier_cutoff": 114,
+      "normalized_first_two_energies": [
+        1.9980449620392653,
+        5.990217124461274
+      ],
+      "normalized_gap": 3.9921721624220083,
+      "gap_correction_divided_by_h": -1.0019632099829323,
+      "physical_gap_at_K1": 510.99803679001707,
+      "relative_phase_at_fixed_time_pi_over2": [
+        -0.0030837981422199637,
+        0.9999952450832044
+      ],
+      "distance_from_i": 0.003083801808027395,
+      "bare_harmonic_relative_phase": "1 exactly, since h=1/integer"
+    },
+    {
+      "h": 0.00390625,
+      "Fourier_cutoff": 160,
+      "normalized_first_two_energies": [
+        1.9990229599627556,
+        5.995112885452083
+      ],
+      "normalized_gap": 3.9960899254893274,
+      "gap_correction_divided_by_h": -1.0009790747321858,
+      "physical_gap_at_K1": 1022.9990209252678,
+      "relative_phase_at_fixed_time_pi_over2": [
+        -0.0015379263867683125,
+        0.9999988173905151
+      ],
+      "distance_from_i": 0.0015379268414600971,
+      "bare_harmonic_relative_phase": "1 exactly, since h=1/integer"
+    }
+  ],
+  "meaning": "At fixed K=1 and J=h^-2, the first gap is 4/h-1+O(h). For h=1/n, the exact relative phase tends to i at time pi/2 while the uncorrected harmonic phase is 1. The report supplies the cutoff-quasimode residual argument.",
+  "scope": "A one-coordinate compact cosine countercontrol for order-of-limits/time normalization, not a separate 3D theorem or phase claim.",
+  "source_sha256": "7549a074b158337a38e65a3c2aefe129f8e4e84b43a52beb7337931dc5a48410"
+}

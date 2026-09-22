@@ -1,0 +1,38 @@
+{
+  "created_utc": "2026-09-22T21:18:53.134494+00:00",
+  "scope": "Finite-box prepared weak-field packets, conditional composition with separately provisional record-to-rotor result.",
+  "dependencies": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LARGE_SPIN_RECORD_AUTHOR_SEAL.json",
+      "bytes": 4126,
+      "sha256": "40797e4620ebb864744753ae5429a1727c7b407fc712bda4360e75ea295a1f3b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/ELECTRIC_AND_MAGNETIC_DYNAMICS_FROM_RECORD_MOTION.md",
+      "bytes": 18939,
+      "sha256": "52f5ce8bd8f1b39049ebbb0407e6881ed8e11de80bc2c29db9e0e56c5cdd3fc2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/UNIFORM_LOCAL_RING_AUTHOR_SEAL.json",
+      "bytes": 5925,
+      "sha256": "4b52f52f820ed5efbe01b18d47c0166018f0c421cd507fb55f171d893f8a7ce5"
+    }
+  ],
+  "external_context": [
+    {
+      "url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.11.395",
+      "coverage": "Accessible abstract and metadata. Body requires authorization. No theorem imported."
+    },
+    {
+      "url": "https://www.numdam.org/item/AIHPA_1983__38_3_295_0.pdf",
+      "coverage": "Extracted introduction, assumptions and leading eigenvalue result; upper/lower-bound context through start section 4. Equations incompletely extracted. No theorem imported; corrigendum not read."
+    }
+  ],
+  "proof": "Complete finite-box cutoff-packet Duhamel proof in author note, not an imported phase/eigenvalue theorem.",
+  "limits": [
+    "Ordered S, g, spacing limits; no uniform joint resource rate.",
+    "Prepared state, zero target electric winding; no native state compiler.",
+    "No full phase, charged matter, gravity, or supplied speed prediction.",
+    "All new work personally authored by root; independent check not yet assigned."
+  ]
+}

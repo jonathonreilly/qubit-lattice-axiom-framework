@@ -1,0 +1,88 @@
+{
+  "created_utc": "2026-09-22T21:37:33.564130+00:00",
+  "status": "PASS",
+  "local_spin_algebra": [
+    {
+      "S": 1,
+      "raising_and_loss_identities_exact": true,
+      "boundary_shift_error_norm_on_top_state": 1
+    },
+    {
+      "S": 2,
+      "raising_and_loss_identities_exact": true,
+      "boundary_shift_error_norm_on_top_state": 1
+    },
+    {
+      "S": 3,
+      "raising_and_loss_identities_exact": true,
+      "boundary_shift_error_norm_on_top_state": 1
+    },
+    {
+      "S": 5,
+      "raising_and_loss_identities_exact": true,
+      "boundary_shift_error_norm_on_top_state": 1
+    }
+  ],
+  "cubic_counting_controls": [
+    {
+      "dimension": 2,
+      "period": 6,
+      "spin": 2,
+      "vertices": 36,
+      "edges": 72,
+      "applied_loop_changes": 36,
+      "electric_square_sum": 96,
+      "sum_initial_hop_weights": "56",
+      "complete_diagonal_fourth_coefficient": "928/3",
+      "folded_disjoint_and_local_expansion_equal": true,
+      "saturated_uniform_flux_both_circulations_blocked": true
+    },
+    {
+      "dimension": 3,
+      "period": 6,
+      "spin": 2,
+      "vertices": 216,
+      "edges": 648,
+      "applied_loop_changes": 83,
+      "electric_square_sum": 192,
+      "sum_initial_hop_weights": "616",
+      "complete_diagonal_fourth_coefficient": "58270/9",
+      "folded_disjoint_and_local_expansion_equal": true,
+      "saturated_uniform_flux_both_circulations_blocked": true
+    },
+    {
+      "dimension": 3,
+      "period": 6,
+      "spin": 3,
+      "vertices": 216,
+      "edges": 648,
+      "applied_loop_changes": 83,
+      "electric_square_sum": 192,
+      "sum_initial_hop_weights": "632",
+      "complete_diagonal_fourth_coefficient": "122195/18",
+      "folded_disjoint_and_local_expansion_equal": true,
+      "saturated_uniform_flux_both_circulations_blocked": true
+    }
+  ],
+  "saturated_countercontrol": [
+    {
+      "dimension": 2,
+      "oriented_plaquettes_touching_edge": 4,
+      "rotor_parity_second_derivative_at_even_uniform_flux": "-16*J**2",
+      "spin_ring_parity_second_derivative_at_saturated_flux": 0
+    },
+    {
+      "dimension": 3,
+      "oriented_plaquettes_touching_edge": 8,
+      "rotor_parity_second_derivative_at_even_uniform_flux": "-32*J**2",
+      "spin_ring_parity_second_derivative_at_saturated_flux": 0
+    },
+    {
+      "dimension": 4,
+      "oriented_plaquettes_touching_edge": 12,
+      "rotor_parity_second_derivative_at_even_uniform_flux": "-48*J**2",
+      "spin_ring_parity_second_derivative_at_saturated_flux": 0
+    }
+  ],
+  "scope": "Exact static path counts and second derivatives; no production dynamics or phase calculation."
+}

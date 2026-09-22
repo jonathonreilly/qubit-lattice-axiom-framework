@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-09-22T20:59:43.526622+00:00",
+  "status": "Source identities, not independent validation",
+  "dependencies": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION.md",
+      "bytes": 17686,
+      "sha256": "e03793ab0cc06bcc0d536db5b846addf3a999733c6dc25cc4d08ae457263e16e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/UNIFORM_LOCAL_RING_AUTHOR_SEAL.json",
+      "bytes": 5925,
+      "sha256": "4b52f52f820ed5efbe01b18d47c0166018f0c421cd507fb55f171d893f8a7ce5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HARDCORE_RECORD_MOTION_GENERATES_GAUGE_RINGS.md",
+      "bytes": 15367,
+      "sha256": "a527532324a5ed75e660b19c131f759fa0b38be4cdcf855f3a4f59c205cbc99e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HOMOGENEOUS_FIELD_STAR_PENALTY_FOR_MOBILE_RECORDS.md",
+      "bytes": 10593,
+      "sha256": "860e8d364e50f8cddcbb6c534d69ca4ce822020ea80deab6c22361eeda0d361c"
+    }
+  ],
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/pdf/1303.5040v3",
+      "coverage": "Complete sectionVII.A, equations96-101, and following VII.B through Eq105 and its caveats read. Existing nonunitary-link electric term and loop mechanism credited. Coefficients for this different hard-core arrangement and joint scaling are derived here."
+    }
+  ],
+  "open_dependencies": [
+    "Uniform local normal-form proof has been independently assigned but not yet compared or confirmed.",
+    "No Coulomb-phase theorem, native compiler, or experimentally matched constants imported."
+  ]
+}

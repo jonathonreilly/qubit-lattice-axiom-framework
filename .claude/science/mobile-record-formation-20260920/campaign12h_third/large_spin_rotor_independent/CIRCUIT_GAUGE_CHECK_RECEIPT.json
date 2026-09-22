@@ -1,0 +1,18 @@
+{
+  "started_utc": "2026-09-22T21:44:56.119995+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/circuit_gauge_check.py"
+  ],
+  "script_sha256": "6aa3fcc8ad3ab9a1b18191aac3103f09744a2acbc79bd20c20838aed72c7fd0d",
+  "finished_utc": "2026-09-22T21:44:57.588834+00:00",
+  "exit_code": 0,
+  "CIRCUIT_GAUGE_CHECK.stdout": {
+    "bytes": 1474,
+    "sha256": "d5ceb38da95ddafe62963aa630e0950743db8fbe674097469c9f8e2f91804129"
+  },
+  "CIRCUIT_GAUGE_CHECK.stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

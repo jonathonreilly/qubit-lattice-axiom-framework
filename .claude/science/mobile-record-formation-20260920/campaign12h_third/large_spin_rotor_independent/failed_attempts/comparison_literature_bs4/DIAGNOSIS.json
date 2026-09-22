@@ -1,0 +1,6 @@
+{
+  "recorded_utc": "2026-09-22T22:01:58.369037+00:00",
+  "failure": "Optional HTML extraction helper imported unavailable bs4. No science assertion executed and no scientific source changed.",
+  "provenance": "Exact inline attempted code and returned complete exec tool output retained. This is not a manufactured prior on-disk command receipt.",
+  "resolution": "Use standard-library HTMLParser; primary section already read through the official arXiv web tool."
+}

@@ -1,0 +1,18 @@
+{
+  "started_utc": "2026-09-22T21:37:33.308800+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/boundary_and_bulk_check.py"
+  ],
+  "script_sha256": "6a550e5443d0091d2c20881988f182ad28c9dc1e77d3126498d53cb8152b4e0b",
+  "finished_utc": "2026-09-22T21:37:33.686129+00:00",
+  "exit_code": 0,
+  "BOUNDARY_BULK_CHECK.stdout": {
+    "bytes": 2637,
+    "sha256": "ce66f10039bfaf809e4cb88dbc802b91b3543fd55ab0f1cce53e03d4582b3d08"
+  },
+  "BOUNDARY_BULK_CHECK.stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

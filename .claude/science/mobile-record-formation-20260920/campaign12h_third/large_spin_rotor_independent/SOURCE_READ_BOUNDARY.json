@@ -1,0 +1,46 @@
+{
+  "created_utc": "2026-09-22T21:43:55.800273+00:00",
+  "status": "Blind large-spin reconstruction; no new author large-spin sources read.",
+  "dependencies": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HARDCORE_RECORD_MOTION_GENERATES_GAUGE_RINGS.md",
+      "bytes": 15367,
+      "sha256": "a527532324a5ed75e660b19c131f759fa0b38be4cdcf855f3a4f59c205cbc99e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HOMOGENEOUS_FIELD_STAR_PENALTY_FOR_MOBILE_RECORDS.md",
+      "bytes": 10593,
+      "sha256": "860e8d364e50f8cddcbb6c534d69ca4ce822020ea80deab6c22361eeda0d361c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION.md",
+      "bytes": 17686,
+      "sha256": "e03793ab0cc06bcc0d536db5b846addf3a999733c6dc25cc4d08ae457263e16e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/uniform_local_dynamics_independent/REPORT.md",
+      "bytes": 18674,
+      "sha256": "4dc693c1b9cadd94ea95ce01108a72570482ad82c10c4b3f5f611169f749621e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/uniform_local_dynamics_independent/COMPARISON.md",
+      "bytes": 14369,
+      "sha256": "00048adee9d46312bb197b590d3d2c709e209d7527cd44c2c7f9942a96feea1c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/uniform_local_dynamics_independent/FINAL_SEAL.json",
+      "bytes": 21317,
+      "sha256": "cc213db7ba3b00cce3ae52d8206878219257bda27b831bfdad93129a9dbcafcf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/uniform_local_dynamics_independent/literature/Barthel_Kliesch_1111_4210v2.html",
+      "bytes": 334857,
+      "sha256": "abdeedde2be6d39e29f766e860d90e54783f9a384c3dbf1e75244769a07e84a7"
+    }
+  ],
+  "inherited_final_bindings_reauthenticated": 58,
+  "new_author_read_boundary": "No new large-spin, weak-field, energy, ramp, transport source/output/seal, campaign checkpoint or registry opened. Only the neutral specification and these pinned previously reviewed dependencies were used.",
+  "primary_literature_use": "Reused the already fully checked finite-dimensional, dimension-independent time-dependent Lindblad locality proof of Barthel and Kliesch 1111.4210v2. The rotor/domain extension is proved by finite-cutoff passage in this report; no infinite-dimensional locality theorem is presumed. No new network lookup was necessary.",
+  "read_note": "A combined print of unchanged dependencies was truncated in the homogeneous note; the relevant missing section was read in a targeted command. Prior complete source reviews are reused by identity.",
+  "scientific_failures": "None: all three independent checkers passed on first execution. Numerical controls are corroboration and are not substitutes for the uniform/domain proofs."
+}

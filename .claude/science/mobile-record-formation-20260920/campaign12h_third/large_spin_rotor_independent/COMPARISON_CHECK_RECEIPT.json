@@ -1,0 +1,12 @@
+{
+  "started_utc": "2026-09-22T22:01:02.219180+00:00",
+  "finished_utc": "2026-09-22T22:01:03.026873+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/comparison_check.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent",
+  "exit_code": 0,
+  "runner_sha256": "336f0eef301b1154cb28fa26ca15d17ff0c6cb36dca4840b69594e2cc70c879f",
+  "source_boundary": "Reads only the authorized author12 and its listed reused dependencies plus own PRE evidence; no author runner imported or executed."
+}

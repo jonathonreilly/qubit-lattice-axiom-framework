@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-09-22T22:09:36.892310+00:00",
+  "status": "Independent reconstruction before access to any new author weak-field packet.",
+  "allowed_pinned_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/ELECTRIC_AND_MAGNETIC_DYNAMICS_FROM_RECORD_MOTION.md",
+      "bytes": 18939,
+      "sha256": "52f5ce8bd8f1b39049ebbb0407e6881ed8e11de80bc2c29db9e0e56c5cdd3fc2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/REPORT.md",
+      "bytes": 23867,
+      "sha256": "072e1b6c833d023bec988126ca79379848718455122f7462db20db069a790732"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/COMPARISON.md",
+      "bytes": 14232,
+      "sha256": "9051d24628563bc39fed4a8167b5cafe9fc052bc72bc3bbdc7f5f88cf3cdb7b9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/PRE_COMPARISON_SEAL.json",
+      "bytes": 10668,
+      "sha256": "f8f457305153006eccda68740a518cfed0c11d3c28d1c77ad3ce6df71970e3c5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/FINAL_SEAL.json",
+      "bytes": 19914,
+      "sha256": "7620bb6ff3b16ec319f12ad0d588d45a56f0fd084ed192b59e8c86d0f9ac30d4"
+    }
+  ],
+  "boundary": "No author weak-field, energy, content, static-source, ramp, transport source/output/seal, campaign checkpoint or registry will be opened before PRE.",
+  "task": "Finite three-dimensional compact rotor: Gauss and harmonic-sector quotient; legitimate compact packet; quantitative weak-coupling finite-time residual; transverse dispersion; separate ordered continuum and phase scope."
+}

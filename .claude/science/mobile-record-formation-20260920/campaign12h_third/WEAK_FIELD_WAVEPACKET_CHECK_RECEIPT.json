@@ -1,0 +1,25 @@
+{
+  "started_utc": "2026-09-22T21:13:28.009918+00:00",
+  "finished_utc": "2026-09-22T21:13:28.869052+00:00",
+  "elapsed_seconds": 0.8589032918680459,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_wavepacket_check.py"
+  ],
+  "exit_code": 0,
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_wavepacket_check.py",
+    "bytes": 8950,
+    "sha256": "0eba8a3774f6d824820ddcf3186a24c9bcb1cae686dc83524d989c0e695b7c9f"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/WEAK_FIELD_WAVEPACKET_CHECK.stdout",
+    "bytes": 20338,
+    "sha256": "f79392f1372c0b0e9910adbc7d75922ae1a4b14a0eafed605444a1aa0c270367"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/WEAK_FIELD_WAVEPACKET_CHECK.stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

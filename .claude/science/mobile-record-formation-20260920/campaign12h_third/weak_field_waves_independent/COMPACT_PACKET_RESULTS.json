@@ -1,0 +1,373 @@
+{
+  "created_utc": "2026-09-22T22:19:03.662903+00:00",
+  "status": "PASS",
+  "model": "One cyclic square: H_h+2/h=4h m^2+(2-e^{i theta}-e^{-i theta})/h, on L2(S1); K=h,J=1/h.",
+  "initial_packet": "C2 cutoff of h^-1/4 (psi0(theta/sqrt(h))+psi1(theta/sqrt(h)))/sqrt(2), normalized on the compact circle.",
+  "harmonic_model": "-4 d_x^2+x^2; E0=2,E1=6, so the centroid frequency is 4.",
+  "exact_leading_residual": "sqrt(525)/12 times h; x^8 mixture moment=(105+945)/2=525.",
+  "predicted_residual_divided_by_h": 1.9094065395649331,
+  "rows": [
+    {
+      "h": 0.125,
+      "Fourier_cutoff": 29,
+      "grid": 8192,
+      "compact_norm_before_normalization": 0.9999973108518679,
+      "grid_norm_squared_minus_retained_norm_squared": 4.084699245510137e-11,
+      "residual_norm": 0.23022040055500187,
+      "residual_divided_by_h": 1.841763204440015,
+      "times": [
+        {
+          "time": 0.2,
+          "state_norm_error": 0.04230798376324723,
+          "error_divided_by_h": 0.33846387010597784,
+          "Duhamel_bound_time_times_residual": 0.04604408011100038,
+          "scaled_angle_mean": 0.7143371314968547,
+          "harmonic_scaled_angle_mean": 0.6967067093471654,
+          "scaled_electric_mean": -0.3387977537873857,
+          "harmonic_scaled_electric_mean": -0.3586780454497614,
+          "bounded_characteristic_difference": 0.01294080756141346,
+          "cutoff_harmonic_characteristic_difference": 9.128245986697013e-06
+        },
+        {
+          "time": 0.75,
+          "state_norm_error": 0.090037450429837,
+          "error_divided_by_h": 0.720299603438696,
+          "Duhamel_bound_time_times_residual": 0.1726653004162514,
+          "scaled_angle_mean": -0.9719366251466766,
+          "harmonic_scaled_angle_mean": -0.9899924966004454,
+          "scaled_electric_mean": -0.11404040137553846,
+          "harmonic_scaled_electric_mean": -0.0705600040299336,
+          "bounded_characteristic_difference": 0.011012844776047326,
+          "cutoff_harmonic_characteristic_difference": 9.296999855381297e-06
+        },
+        {
+          "time": 1.5,
+          "state_norm_error": 0.17828961635275856,
+          "error_divided_by_h": 1.4263169308220685,
+          "Duhamel_bound_time_times_residual": 0.3453306008325028,
+          "scaled_angle_mean": 0.8894776127604502,
+          "harmonic_scaled_angle_mean": 0.960170286650366,
+          "scaled_electric_mean": 0.2213759170879191,
+          "harmonic_scaled_electric_mean": 0.13970774909946293,
+          "bounded_characteristic_difference": 0.04177911328773463,
+          "cutoff_harmonic_characteristic_difference": 9.277319354166312e-06
+        }
+      ]
+    },
+    {
+      "h": 0.0625,
+      "Fourier_cutoff": 40,
+      "grid": 8192,
+      "compact_norm_before_normalization": 0.9999999999633402,
+      "grid_norm_squared_minus_retained_norm_squared": 5.551115123125783e-16,
+      "residual_norm": 0.11669640092086093,
+      "residual_divided_by_h": 1.867142414733775,
+      "times": [
+        {
+          "time": 0.2,
+          "state_norm_error": 0.021183983656692763,
+          "error_divided_by_h": 0.3389437385070842,
+          "Duhamel_bound_time_times_residual": 0.02333928018417219,
+          "scaled_angle_mean": 0.7056003342656711,
+          "harmonic_scaled_angle_mean": 0.6967067093471654,
+          "scaled_electric_mean": -0.3487251240358372,
+          "harmonic_scaled_electric_mean": -0.3586780454497614,
+          "bounded_characteristic_difference": 0.006557828283245512,
+          "cutoff_harmonic_characteristic_difference": 9.944816269044403e-11
+        },
+        {
+          "time": 0.75,
+          "state_norm_error": 0.043517043549761734,
+          "error_divided_by_h": 0.6962726967961878,
+          "Duhamel_bound_time_times_residual": 0.0875223006906457,
+          "scaled_angle_mean": -0.9822101728483139,
+          "harmonic_scaled_angle_mean": -0.9899924966004454,
+          "scaled_electric_mean": -0.09245410079382603,
+          "harmonic_scaled_electric_mean": -0.0705600040299336,
+          "bounded_characteristic_difference": 0.0043009836379551405,
+          "cutoff_harmonic_characteristic_difference": 1.0636823053169728e-10
+        },
+        {
+          "time": 1.5,
+          "state_norm_error": 0.08683279417889433,
+          "error_divided_by_h": 1.3893247068623094,
+          "Duhamel_bound_time_times_residual": 0.1750446013812914,
+          "scaled_angle_mean": 0.9294803823541249,
+          "harmonic_scaled_angle_mean": 0.960170286650366,
+          "scaled_electric_mean": 0.18159284088373825,
+          "harmonic_scaled_electric_mean": 0.13970774909946293,
+          "bounded_characteristic_difference": 0.016817506528706526,
+          "cutoff_harmonic_characteristic_difference": 1.0557825021682987e-10
+        }
+      ]
+    },
+    {
+      "h": 0.03125,
+      "Fourier_cutoff": 57,
+      "grid": 8192,
+      "compact_norm_before_normalization": 0.9999999999999999,
+      "grid_norm_squared_minus_retained_norm_squared": 1.1102230246251565e-16,
+      "residual_norm": 0.059003159930598625,
+      "residual_divided_by_h": 1.888101117779156,
+      "times": [
+        {
+          "time": 0.2,
+          "state_norm_error": 0.01060700706574076,
+          "error_divided_by_h": 0.3394242261037043,
+          "Duhamel_bound_time_times_residual": 0.011800631986119726,
+          "scaled_angle_mean": 0.7011720300452559,
+          "harmonic_scaled_angle_mean": 0.6967067093471654,
+          "scaled_electric_mean": -0.35369966114299606,
+          "harmonic_scaled_electric_mean": -0.3586780454497614,
+          "bounded_characteristic_difference": 0.003297911056898119,
+          "cutoff_harmonic_characteristic_difference": 2.2887833992611187e-16
+        },
+        {
+          "time": 0.75,
+          "state_norm_error": 0.02145909469304655,
+          "error_divided_by_h": 0.6866910301774896,
+          "Duhamel_bound_time_times_residual": 0.04425236994794897,
+          "scaled_angle_mean": -0.9863964447814961,
+          "harmonic_scaled_angle_mean": -0.9899924966004454,
+          "scaled_electric_mean": -0.08155518192005101,
+          "harmonic_scaled_electric_mean": -0.0705600040299336,
+          "bounded_characteristic_difference": 0.0019161919941359687,
+          "cutoff_harmonic_characteristic_difference": 2.220446049250313e-16
+        },
+        {
+          "time": 1.5,
+          "state_norm_error": 0.04288772538534224,
+          "error_divided_by_h": 1.3724072123309516,
+          "Duhamel_bound_time_times_residual": 0.08850473989589794,
+          "scaled_angle_mean": 0.9459564850906079,
+          "harmonic_scaled_angle_mean": 0.960170286650366,
+          "scaled_electric_mean": 0.16088834833561935,
+          "harmonic_scaled_electric_mean": 0.13970774909946293,
+          "bounded_characteristic_difference": 0.007546960250877633,
+          "cutoff_harmonic_characteristic_difference": 1.6653345369377348e-16
+        }
+      ]
+    },
+    {
+      "h": 0.015625,
+      "Fourier_cutoff": 80,
+      "grid": 8192,
+      "compact_norm_before_normalization": 1.0,
+      "grid_norm_squared_minus_retained_norm_squared": -1.1102230246251565e-16,
+      "residual_norm": 0.029667345709882182,
+      "residual_divided_by_h": 1.8987101254324596,
+      "times": [
+        {
+          "time": 0.2,
+          "state_norm_error": 0.005305673426936571,
+          "error_divided_by_h": 0.3395630993239405,
+          "Duhamel_bound_time_times_residual": 0.005933469141976437,
+          "scaled_angle_mean": 0.6989439306512741,
+          "harmonic_scaled_angle_mean": 0.6967067093471654,
+          "scaled_electric_mean": -0.3561885469500986,
+          "harmonic_scaled_electric_mean": -0.3586780454497614,
+          "bounded_characteristic_difference": 0.0016536228680449504,
+          "cutoff_harmonic_characteristic_difference": 1.1102230246251565e-16
+        },
+        {
+          "time": 0.75,
+          "state_norm_error": 0.01066365281320382,
+          "error_divided_by_h": 0.6824737800450444,
+          "Duhamel_bound_time_times_residual": 0.022250509282411637,
+          "scaled_angle_mean": -0.988266945358175,
+          "harmonic_scaled_angle_mean": -0.9899924966004454,
+          "scaled_electric_mean": -0.07607092188306785,
+          "harmonic_scaled_electric_mean": -0.0705600040299336,
+          "bounded_characteristic_difference": 0.0009056912972579638,
+          "cutoff_harmonic_characteristic_difference": 1.5700924586837752e-16
+        },
+        {
+          "time": 1.5,
+          "state_norm_error": 0.021320612071851052,
+          "error_divided_by_h": 1.3645191725984673,
+          "Duhamel_bound_time_times_residual": 0.044501018564823275,
+          "scaled_angle_mean": 0.9533431943383026,
+          "harmonic_scaled_angle_mean": 0.960170286650366,
+          "scaled_electric_mean": 0.15035623889179797,
+          "harmonic_scaled_electric_mean": 0.13970774909946293,
+          "bounded_characteristic_difference": 0.003575838918694252,
+          "cutoff_harmonic_characteristic_difference": 1.2412670766236366e-16
+        }
+      ]
+    },
+    {
+      "h": 0.0078125,
+      "Fourier_cutoff": 114,
+      "grid": 8192,
+      "compact_norm_before_normalization": 0.9999999999999999,
+      "grid_norm_squared_minus_retained_norm_squared": 1.1102230246251565e-16,
+      "residual_norm": 0.014875369934103889,
+      "residual_divided_by_h": 1.9040473515652978,
+      "times": [
+        {
+          "time": 0.2,
+          "state_norm_error": 0.00265318145220216,
+          "error_divided_by_h": 0.3396072258818765,
+          "Duhamel_bound_time_times_residual": 0.002975073986820778,
+          "scaled_angle_mean": 0.6978264519074303,
+          "harmonic_scaled_angle_mean": 0.6967067093471654,
+          "scaled_electric_mean": -0.35743324112894137,
+          "harmonic_scaled_electric_mean": -0.3586780454497614,
+          "bounded_characteristic_difference": 0.0008279674784656183,
+          "cutoff_harmonic_characteristic_difference": 1.1102230246251565e-16
+        },
+        {
+          "time": 0.75,
+          "state_norm_error": 0.005316463681777836,
+          "error_divided_by_h": 0.680507351267563,
+          "Duhamel_bound_time_times_residual": 0.011156527450577916,
+          "scaled_angle_mean": -0.989147709200322,
+          "harmonic_scaled_angle_mean": -0.9899924966004454,
+          "scaled_electric_mean": -0.07331895773749965,
+          "harmonic_scaled_electric_mean": -0.0705600040299336,
+          "bounded_characteristic_difference": 0.00044040641754174045,
+          "cutoff_harmonic_characteristic_difference": 1.2412670766236366e-16
+        },
+        {
+          "time": 1.5,
+          "state_norm_error": 0.010630875557139343,
+          "error_divided_by_h": 1.360752071313836,
+          "Duhamel_bound_time_times_residual": 0.022313054901155833,
+          "scaled_angle_mean": 0.9568263969411703,
+          "harmonic_scaled_angle_mean": 0.960170286650366,
+          "scaled_electric_mean": 0.14504645473392727,
+          "harmonic_scaled_electric_mean": 0.13970774909946293,
+          "bounded_characteristic_difference": 0.0017405444819260745,
+          "cutoff_harmonic_characteristic_difference": 2.482534153247273e-16
+        }
+      ]
+    },
+    {
+      "h": 0.00390625,
+      "Fourier_cutoff": 160,
+      "grid": 8192,
+      "compact_norm_before_normalization": 0.9999999999999999,
+      "grid_norm_squared_minus_retained_norm_squared": 1.1102230246251565e-16,
+      "residual_norm": 0.007448141380487634,
+      "residual_divided_by_h": 1.9067241934048342,
+      "times": [
+        {
+          "time": 0.2,
+          "state_norm_error": 0.0013266522982992527,
+          "error_divided_by_h": 0.3396229883646087,
+          "Duhamel_bound_time_times_residual": 0.0014896282760975268,
+          "scaled_angle_mean": 0.6972668625592617,
+          "harmonic_scaled_angle_mean": 0.6967067093471654,
+          "scaled_electric_mean": -0.35805563219046377,
+          "harmonic_scaled_electric_mean": -0.3586780454497614,
+          "bounded_characteristic_difference": 0.0004142713664668601,
+          "cutoff_harmonic_characteristic_difference": 5.551115123125783e-17
+        },
+        {
+          "time": 0.75,
+          "state_norm_error": 0.0026545291016485183,
+          "error_divided_by_h": 0.6795594500220207,
+          "Duhamel_bound_time_times_residual": 0.0055861060353657255,
+          "scaled_angle_mean": -0.9895745854819633,
+          "harmonic_scaled_angle_mean": -0.9899924966004454,
+          "scaled_electric_mean": -0.0719403747878975,
+          "harmonic_scaled_electric_mean": -0.0705600040299336,
+          "bounded_characteristic_difference": 0.0002171702101754369,
+          "cutoff_harmonic_characteristic_difference": 2.482534153247273e-16
+        },
+        {
+          "time": 1.5,
+          "state_norm_error": 0.0053082680456227,
+          "error_divided_by_h": 1.3589166196794111,
+          "Duhamel_bound_time_times_residual": 0.011172212070731451,
+          "scaled_angle_mean": 0.9585157238717318,
+          "harmonic_scaled_angle_mean": 0.960170286650366,
+          "scaled_electric_mean": 0.1423807100292621,
+          "harmonic_scaled_electric_mean": 0.13970774909946293,
+          "bounded_characteristic_difference": 0.0008586712744758806,
+          "cutoff_harmonic_characteristic_difference": 2.2887833992611187e-16
+        }
+      ]
+    }
+  ],
+  "independent_grid_and_Fourier_refinement": {
+    "refined": {
+      "h": 0.03125,
+      "Fourier_cutoff": 81,
+      "grid": 16384,
+      "compact_norm_before_normalization": 0.9999999999999999,
+      "grid_norm_squared_minus_retained_norm_squared": 1.1102230246251565e-16,
+      "residual_norm": 0.05900315993059841,
+      "residual_divided_by_h": 1.8881011177791491,
+      "times": [
+        {
+          "time": 0.2,
+          "state_norm_error": 0.010607007065741613,
+          "error_divided_by_h": 0.33942422610373163,
+          "Duhamel_bound_time_times_residual": 0.011800631986119683,
+          "scaled_angle_mean": 0.7011720300452557,
+          "harmonic_scaled_angle_mean": 0.6967067093471654,
+          "scaled_electric_mean": -0.35369966114299545,
+          "harmonic_scaled_electric_mean": -0.3586780454497614,
+          "bounded_characteristic_difference": 0.0032979110568986934,
+          "cutoff_harmonic_characteristic_difference": 5.551115123125783e-17
+        },
+        {
+          "time": 0.75,
+          "state_norm_error": 0.0214590946930448,
+          "error_divided_by_h": 0.6866910301774336,
+          "Duhamel_bound_time_times_residual": 0.04425236994794881,
+          "scaled_angle_mean": -0.9863964447814951,
+          "harmonic_scaled_angle_mean": -0.9899924966004454,
+          "scaled_electric_mean": -0.08155518192005058,
+          "harmonic_scaled_electric_mean": -0.0705600040299336,
+          "bounded_characteristic_difference": 0.0019161919941364344,
+          "cutoff_harmonic_characteristic_difference": 2.0014830212433605e-16
+        },
+        {
+          "time": 1.5,
+          "state_norm_error": 0.04288772538533806,
+          "error_divided_by_h": 1.372407212330818,
+          "Duhamel_bound_time_times_residual": 0.08850473989589762,
+          "scaled_angle_mean": 0.9459564850906077,
+          "harmonic_scaled_angle_mean": 0.960170286650366,
+          "scaled_electric_mean": 0.160888348335619,
+          "harmonic_scaled_electric_mean": 0.13970774909946293,
+          "bounded_characteristic_difference": 0.0075469602508777935,
+          "cutoff_harmonic_characteristic_difference": 1.2412670766236366e-16
+        }
+      ]
+    },
+    "differences": [
+      {
+        "time": 0.2,
+        "absolute_differences": {
+          "state_norm_error": 8.534839501805891e-16,
+          "scaled_angle_mean": 1.1102230246251565e-16,
+          "scaled_electric_mean": 6.106226635438361e-16,
+          "bounded_characteristic_difference": 5.741934705483231e-16
+        }
+      },
+      {
+        "time": 0.75,
+        "absolute_differences": {
+          "state_norm_error": 1.7486012637846216e-15,
+          "scaled_angle_mean": 9.992007221626409e-16,
+          "scaled_electric_mean": 4.3021142204224816e-16,
+          "bounded_characteristic_difference": 4.657732532997727e-16
+        }
+      },
+      {
+        "time": 1.5,
+        "absolute_differences": {
+          "state_norm_error": 4.1772141301521515e-15,
+          "scaled_angle_mean": 2.220446049250313e-16,
+          "scaled_electric_mean": 3.608224830031759e-16,
+          "bounded_characteristic_difference": 1.6046192152785466e-16
+        }
+      }
+    ]
+  },
+  "source_sha256": "51b09a9ea3f695db0cf7b2ae97536153a707f63dbee68cbbc6e168c2b025ff6e",
+  "limits": "Floating finite Fourier calculations and explicit refinement; no interval enclosure or proof of the full 3D bound. The report provides the analytic finite-time argument."
+}

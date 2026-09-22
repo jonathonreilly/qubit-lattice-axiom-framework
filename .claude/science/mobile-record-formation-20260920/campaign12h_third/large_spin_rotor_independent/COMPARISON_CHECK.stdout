@@ -1,0 +1,129 @@
+{
+  "created_utc": "2026-09-22T22:01:02.871961+00:00",
+  "status": "PASS",
+  "authenticated_PRE_bindings": 27,
+  "authenticated_author_bindings": 12,
+  "authenticated_context_dependency_bindings": 4,
+  "exact_presealed_comparison": {
+    "rows": [
+      {
+        "spin": 1,
+        "full_live_dimension": 19,
+        "initial_number_dimension": 13,
+        "both_penalties_H2_and_H4_identical": true,
+        "loss_and_dimension_normalizations_match": true
+      },
+      {
+        "spin": 2,
+        "full_live_dimension": 39,
+        "initial_number_dimension": 25,
+        "both_penalties_H2_and_H4_identical": true,
+        "loss_and_dimension_normalizations_match": true
+      },
+      {
+        "spin": 3,
+        "full_live_dimension": 59,
+        "initial_number_dimension": 37,
+        "both_penalties_H2_and_H4_identical": true,
+        "loss_and_dimension_normalizations_match": true
+      }
+    ],
+    "extra_spin_half_normalization_exact": true
+  },
+  "block_basis_control": {
+    "rows": [
+      {
+        "spin": 1,
+        "entry_1_0_in_GH2_commutator": "-2",
+        "nonzero_finite_spin_fourth_order_basis_change": true,
+        "C_times_right_weighted_max_row_sum": "4",
+        "C_times_right_weighted_max_column_sum": "8",
+        "scalar_second_order_commutator_zero": true
+      },
+      {
+        "spin": 2,
+        "entry_1_0_in_GH2_commutator": "-2/3",
+        "nonzero_finite_spin_fourth_order_basis_change": true,
+        "C_times_right_weighted_max_row_sum": "76/15",
+        "C_times_right_weighted_max_column_sum": "8",
+        "scalar_second_order_commutator_zero": true
+      },
+      {
+        "spin": 3,
+        "entry_1_0_in_GH2_commutator": "-1/3",
+        "nonzero_finite_spin_fourth_order_basis_change": true,
+        "C_times_right_weighted_max_row_sum": "17/3",
+        "C_times_right_weighted_max_column_sum": "8",
+        "scalar_second_order_commutator_zero": true
+      },
+      {
+        "spin": 5,
+        "entry_1_0_in_GH2_commutator": "-2/15",
+        "nonzero_finite_spin_fourth_order_basis_change": true,
+        "C_times_right_weighted_max_row_sum": "488/75",
+        "C_times_right_weighted_max_column_sum": "8",
+        "scalar_second_order_commutator_zero": true
+      }
+    ],
+    "scope": "Independent post-seal illustration of admissible analytic block-basis freedom; does not assert the author circuit has a nonzero basis change.",
+    "general_certificate": "For integer m, |2m+1|/(1+m^2)<=3/2. Each row/column has at most two entries, each <=6/C after right multiplication by (1+E^2)^-1. The unit-shift H2 is scalar."
+  },
+  "independent_spectral_point": {
+    "spin": 16,
+    "independently_assembled_full_live_dimension": 319,
+    "initial_number_dimension": 193,
+    "lowest_six_shifted_energies": [
+      -1.1402788796147139,
+      0.6929384456268538,
+      1.5764349942599587,
+      4.497139382006966,
+      4.521484083930792,
+      10.24624344684748
+    ],
+    "largest_difference_from_author_energies": 1.141753358524511e-11,
+    "ground_code_weight": 0.9766206845226657,
+    "residual": 2.192292282386644e-11,
+    "scope": "One independently assembled floating-point finite-square check, not an interval enclosure, large-volume run, or replay of the other three author spectrum points."
+  },
+  "receipts_and_arithmetic": {
+    "receipts": [
+      {
+        "prefix": "LARGE_SPIN_RECORD_ELECTRIC_RING",
+        "source_result_receipt_bound": true,
+        "exit_code": 0,
+        "stderr_empty": true
+      },
+      {
+        "prefix": "LARGE_SPIN_LIVE_BIRTH_AND_WEIGHT",
+        "source_result_receipt_bound": true,
+        "exit_code": 0,
+        "stderr_empty": true
+      }
+    ],
+    "spectrum_arithmetic": [
+      {
+        "spin": 16,
+        "energy_difference": 0.601507952091124,
+        "scaling_arithmetic_exactly_recomputed": true
+      },
+      {
+        "spin": 32,
+        "energy_difference": 0.16237588919538304,
+        "scaling_arithmetic_exactly_recomputed": true
+      },
+      {
+        "spin": 64,
+        "energy_difference": 0.041740340277467425,
+        "scaling_arithmetic_exactly_recomputed": true
+      },
+      {
+        "spin": 128,
+        "energy_difference": 0.010550020261053561,
+        "scaling_arithmetic_exactly_recomputed": true
+      }
+    ],
+    "scope": "Identity/arithmetic authentication of all recorded runs; only the separate spin-16 calculation is independently repeated."
+  },
+  "runner_sha256": "336f0eef301b1154cb28fa26ca15d17ff0c6cb36dca4840b69594e2cc70c879f",
+  "limits": "These finite controls do not prove uniform locality, infinite-rotor domains, or a thermodynamic phase. The complete independent analytic reconstruction and source comparison supply the stated mathematical assessment."
+}

@@ -1,0 +1,841 @@
+{
+  "created_utc": "2026-09-22T21:32:10.733477+00:00",
+  "status": "PASS",
+  "exact_square_controls": [
+    {
+      "spin": 1,
+      "dimension": 19,
+      "initial_number_dimension": 13,
+      "low_dimension": 3,
+      "low_electric_levels": [
+        -1,
+        0,
+        1
+      ],
+      "coefficients": {
+        "sublattice": {
+          "H2": [
+            [
+              "-2",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "-4",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "-2"
+            ]
+          ],
+          "normalized_H4": [
+            [
+              "2",
+              "-2",
+              "0"
+            ],
+            [
+              "-2",
+              "12",
+              "-2"
+            ],
+            [
+              "0",
+              "-2",
+              "2"
+            ]
+          ],
+          "all_entries_match_weighted_path_formula": true
+        },
+        "star": {
+          "H2": [
+            [
+              "-2",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "-4",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "-2"
+            ]
+          ],
+          "normalized_H4": [
+            [
+              "2",
+              "-2",
+              "0"
+            ],
+            [
+              "-2",
+              "12",
+              "-2"
+            ],
+            [
+              "0",
+              "-2",
+              "2"
+            ]
+          ],
+          "all_entries_match_weighted_path_formula": true
+        }
+      },
+      "birth_loss_controls": [
+        {
+          "edge": 0,
+          "loss_eigenvalues": [
+            "0",
+            "1",
+            "2"
+          ]
+        },
+        {
+          "edge": 1,
+          "loss_eigenvalues": [
+            "0",
+            "1",
+            "2"
+          ]
+        },
+        {
+          "edge": 2,
+          "loss_eigenvalues": [
+            "0",
+            "1",
+            "2"
+          ]
+        },
+        {
+          "edge": 3,
+          "loss_eigenvalues": [
+            "0",
+            "1",
+            "2"
+          ]
+        }
+      ],
+      "first_order_distinct_edge_PP_products_zero": 6
+    },
+    {
+      "spin": 2,
+      "dimension": 39,
+      "initial_number_dimension": 25,
+      "low_dimension": 5,
+      "low_electric_levels": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "coefficients": {
+        "sublattice": {
+          "H2": [
+            [
+              "-4/3",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "-10/3",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "-4",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "-10/3",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "-4/3"
+            ]
+          ],
+          "normalized_H4": [
+            [
+              "8/9",
+              "-8/9",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "-8/9",
+              "74/9",
+              "-2",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "-2",
+              "12",
+              "-2",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "-2",
+              "74/9",
+              "-8/9"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "-8/9",
+              "8/9"
+            ]
+          ],
+          "all_entries_match_weighted_path_formula": true
+        },
+        "star": {
+          "H2": [
+            [
+              "-4/3",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "-10/3",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "-4",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "-10/3",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "-4/3"
+            ]
+          ],
+          "normalized_H4": [
+            [
+              "8/9",
+              "-8/9",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "-8/9",
+              "74/9",
+              "-2",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "-2",
+              "12",
+              "-2",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "-2",
+              "74/9",
+              "-8/9"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "-8/9",
+              "8/9"
+            ]
+          ],
+          "all_entries_match_weighted_path_formula": true
+        }
+      },
+      "birth_loss_controls": [
+        {
+          "edge": 0,
+          "loss_eigenvalues": [
+            "0",
+            "2/3",
+            "5/3",
+            "2"
+          ]
+        },
+        {
+          "edge": 1,
+          "loss_eigenvalues": [
+            "0",
+            "2/3",
+            "5/3",
+            "2"
+          ]
+        },
+        {
+          "edge": 2,
+          "loss_eigenvalues": [
+            "0",
+            "2/3",
+            "5/3",
+            "2"
+          ]
+        },
+        {
+          "edge": 3,
+          "loss_eigenvalues": [
+            "0",
+            "2/3",
+            "5/3",
+            "2"
+          ]
+        }
+      ],
+      "first_order_distinct_edge_PP_products_zero": 6
+    },
+    {
+      "spin": 3,
+      "dimension": 59,
+      "initial_number_dimension": 37,
+      "low_dimension": 7,
+      "low_electric_levels": [
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "coefficients": {
+        "sublattice": {
+          "H2": [
+            [
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "-8/3",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "-11/3",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "-4",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "-11/3",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-8/3",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ]
+          ],
+          "normalized_H4": [
+            [
+              "1/2",
+              "-1/2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "-1/2",
+              "47/9",
+              "-25/18",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "-25/18",
+              "181/18",
+              "-2",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "-2",
+              "12",
+              "-2",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "-2",
+              "181/18",
+              "-25/18",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "-25/18",
+              "47/9",
+              "-1/2"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1/2",
+              "1/2"
+            ]
+          ],
+          "all_entries_match_weighted_path_formula": true
+        },
+        "star": {
+          "H2": [
+            [
+              "-1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "-8/3",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "-11/3",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "-4",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "-11/3",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-8/3",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ]
+          ],
+          "normalized_H4": [
+            [
+              "1/2",
+              "-1/2",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "-1/2",
+              "47/9",
+              "-25/18",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "-25/18",
+              "181/18",
+              "-2",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "-2",
+              "12",
+              "-2",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "-2",
+              "181/18",
+              "-25/18",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "-25/18",
+              "47/9",
+              "-1/2"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1/2",
+              "1/2"
+            ]
+          ],
+          "all_entries_match_weighted_path_formula": true
+        }
+      },
+      "birth_loss_controls": [
+        {
+          "edge": 0,
+          "loss_eigenvalues": [
+            "0",
+            "1/2",
+            "4/3",
+            "11/6",
+            "2"
+          ]
+        },
+        {
+          "edge": 1,
+          "loss_eigenvalues": [
+            "0",
+            "1/2",
+            "4/3",
+            "11/6",
+            "2"
+          ]
+        },
+        {
+          "edge": 2,
+          "loss_eigenvalues": [
+            "0",
+            "1/2",
+            "4/3",
+            "11/6",
+            "2"
+          ]
+        },
+        {
+          "edge": 3,
+          "loss_eigenvalues": [
+            "0",
+            "1/2",
+            "4/3",
+            "11/6",
+            "2"
+          ]
+        }
+      ],
+      "first_order_distinct_edge_PP_products_zero": 6
+    }
+  ],
+  "bulk_formulas": {
+    "initial_hop_weight_squared": "a_e=1-(E_e^2-eta_e E_e)/C",
+    "Gauss_linear_cancellation": "sum_e eta_e E_e=sum_{x in A} div E_x=0",
+    "H2": "-(t^2/Delta)dV+(t^2/(Delta C))sum_e E_e^2",
+    "diagonal_H4_dimensionless": "sum_e a_e^2+2 sum_{unordered distinct edges sharing a vertex} a_e a_f",
+    "constant_H4_at_unit_weights": "dV(4d-1)",
+    "diagonal_H4_minus_constant_on_ice": "-2(4d-1)sum_e E_e^2/C + [sum_e q_e^2+2 sum_adjacent q_e q_f]/C^2",
+    "offdiagonal_H4_dimensionless": "-2 sum_p(W_{p,S}+W_{p,S}^dagger)",
+    "scaling": "epsilon^2 C=J/(2g); Delta=J/(2epsilon^4); t=epsilon Delta",
+    "uniform_shift_error_bound": "||(U_infinity-U_S)rho^(1/2)||_2 <= C^(-1) <[E(E+1)]^2>^(1/2)",
+    "boundary_countercontrol": "U_S|S>=0 but U_infinity|S>=|S+1>; operator norm error >=1."
+  },
+  "moment_control": {
+    "polynomial_certificate": "2*m**2 - 2*m + 1",
+    "positive_form": "2(m-1/2)^2+1/2",
+    "fourth_moment_weight": "F(E)=(1+E^2)^2",
+    "weighted_shift_commutator_bound": "||F^(-1/2)[W_p,F]F^(-1/2)|| <= 3 when p meets the edge",
+    "Gronwall_rate": "12 J (d-1)",
+    "sample_max_ratio": 2.5
+  },
+  "rotor_control": {
+    "g": 2.0,
+    "J": 1.0,
+    "rotor_cutoff": 24,
+    "rows": [
+      {
+        "spin": 1,
+        "C": 2,
+        "time": 0.2,
+        "vector_difference": 0.1320361591602735,
+        "C_times_difference": 0.264072318320547,
+        "spin_zero_flux_probability": 0.9244318161447801,
+        "rotor_zero_flux_probability": 0.9374091456884421,
+        "rotor_probability_at_cutoff": 5.2276407846782246e-139
+      },
+      {
+        "spin": 1,
+        "C": 2,
+        "time": 0.7,
+        "vector_difference": 0.755416893907513,
+        "C_times_difference": 1.510833787815026,
+        "spin_zero_flux_probability": 0.5370452725263928,
+        "rotor_zero_flux_probability": 0.9961695354466484,
+        "rotor_probability_at_cutoff": 5.227640784678086e-139
+      },
+      {
+        "spin": 1,
+        "C": 2,
+        "time": 1.3,
+        "vector_difference": 0.4796483619843645,
+        "C_times_difference": 0.959296723968729,
+        "spin_zero_flux_probability": 0.9066617905779607,
+        "rotor_zero_flux_probability": 0.9430740320126666,
+        "rotor_probability_at_cutoff": 5.22764078467803e-139
+      },
+      {
+        "spin": 2,
+        "C": 6,
+        "time": 0.2,
+        "vector_difference": 0.04934723218721531,
+        "C_times_difference": 0.29608339312329185,
+        "spin_zero_flux_probability": 0.9313873273013206,
+        "rotor_zero_flux_probability": 0.9374091456884421,
+        "rotor_probability_at_cutoff": 5.2276407846782246e-139
+      },
+      {
+        "spin": 2,
+        "C": 6,
+        "time": 0.7,
+        "vector_difference": 0.26876061511082355,
+        "C_times_difference": 1.6125636906649414,
+        "spin_zero_flux_probability": 0.9111522748719698,
+        "rotor_zero_flux_probability": 0.9961695354466484,
+        "rotor_probability_at_cutoff": 5.227640784678086e-139
+      },
+      {
+        "spin": 2,
+        "C": 6,
+        "time": 1.3,
+        "vector_difference": 0.3874533333971084,
+        "C_times_difference": 2.3247200003826505,
+        "spin_zero_flux_probability": 0.8429828577771528,
+        "rotor_zero_flux_probability": 0.9430740320126666,
+        "rotor_probability_at_cutoff": 5.22764078467803e-139
+      },
+      {
+        "spin": 4,
+        "C": 20,
+        "time": 0.2,
+        "vector_difference": 0.01519648697448226,
+        "C_times_difference": 0.3039297394896452,
+        "spin_zero_flux_probability": 0.9354149731478243,
+        "rotor_zero_flux_probability": 0.9374091456884421,
+        "rotor_probability_at_cutoff": 5.2276407846782246e-139
+      },
+      {
+        "spin": 4,
+        "C": 20,
+        "time": 0.7,
+        "vector_difference": 0.07610245738313814,
+        "C_times_difference": 1.522049147662763,
+        "spin_zero_flux_probability": 0.9828019168070056,
+        "rotor_zero_flux_probability": 0.9961695354466484,
+        "rotor_probability_at_cutoff": 5.227640784678086e-139
+      },
+      {
+        "spin": 4,
+        "C": 20,
+        "time": 1.3,
+        "vector_difference": 0.13953161250828455,
+        "C_times_difference": 2.7906322501656913,
+        "spin_zero_flux_probability": 0.893831537209029,
+        "rotor_zero_flux_probability": 0.9430740320126666,
+        "rotor_probability_at_cutoff": 5.22764078467803e-139
+      },
+      {
+        "spin": 8,
+        "C": 72,
+        "time": 0.2,
+        "vector_difference": 0.004249740800081652,
+        "C_times_difference": 0.305981337605879,
+        "spin_zero_flux_probability": 0.936839357471478,
+        "rotor_zero_flux_probability": 0.9374091456884421,
+        "rotor_probability_at_cutoff": 5.2276407846782246e-139
+      },
+      {
+        "spin": 8,
+        "C": 72,
+        "time": 0.7,
+        "vector_difference": 0.020529419883625027,
+        "C_times_difference": 1.478118231621002,
+        "spin_zero_flux_probability": 0.9934700411553482,
+        "rotor_zero_flux_probability": 0.9961695354466484,
+        "rotor_probability_at_cutoff": 5.227640784678086e-139
+      },
+      {
+        "spin": 8,
+        "C": 72,
+        "time": 1.3,
+        "vector_difference": 0.039003373991093576,
+        "C_times_difference": 2.8082429273587373,
+        "spin_zero_flux_probability": 0.9295220249109486,
+        "rotor_zero_flux_probability": 0.9430740320126666,
+        "rotor_probability_at_cutoff": 5.22764078467803e-139
+      },
+      {
+        "spin": 16,
+        "C": 272,
+        "time": 0.2,
+        "vector_difference": 0.001126964379740926,
+        "C_times_difference": 0.3065343112895319,
+        "spin_zero_flux_probability": 0.9372571418785123,
+        "rotor_zero_flux_probability": 0.9374091456884421,
+        "rotor_probability_at_cutoff": 5.2276407846782246e-139
+      },
+      {
+        "spin": 16,
+        "C": 272,
+        "time": 0.7,
+        "vector_difference": 0.005383470575626744,
+        "C_times_difference": 1.4643039965704743,
+        "spin_zero_flux_probability": 0.9955283719040123,
+        "rotor_zero_flux_probability": 0.9961695354466484,
+        "rotor_probability_at_cutoff": 5.227640784678086e-139
+      },
+      {
+        "spin": 16,
+        "C": 272,
+        "time": 1.3,
+        "vector_difference": 0.010296595102047258,
+        "C_times_difference": 2.800673867756854,
+        "spin_zero_flux_probability": 0.939542410933191,
+        "rotor_zero_flux_probability": 0.9430740320126666,
+        "rotor_probability_at_cutoff": 5.22764078467803e-139
+      }
+    ],
+    "scope": "Finite cutoff numerical corroboration; domain and local uniformity require the report proof, not small tail values alone."
+  },
+  "source_boundary": "Only neutral specification and previously sealed spin-half/uniform-local dependencies used; no new author large-spin sources."
+}

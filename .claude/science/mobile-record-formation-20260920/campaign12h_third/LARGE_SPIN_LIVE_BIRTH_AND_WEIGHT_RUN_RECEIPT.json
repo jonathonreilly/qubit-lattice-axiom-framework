@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-09-22T20:56:20.395101+00:00",
+  "finished_utc": "2026-09-22T20:56:20.956413+00:00",
+  "command": [
+    "python3",
+    "large_spin_live_birth_and_weight_check.py"
+  ],
+  "exit_code": 0,
+  "runner_sha256": "a55e302832c91ae8410e79ef0fa621fbfd24d43ad376f89d078d0adc57585fec"
+}

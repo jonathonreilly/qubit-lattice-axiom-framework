@@ -1,0 +1,12 @@
+{
+  "started_utc": "2026-09-22T22:19:03.058592+00:00",
+  "finished_utc": "2026-09-22T22:19:03.409559+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/incidence_check.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent",
+  "exit_code": 0,
+  "runner_sha256": "f28968a917b7366a60b7d223fd3c669723a548f4e50c22aaf19039129adf0e22",
+  "source_boundary": "Own reconstruction only. No new author weak-field source, runner, result, seal, checkpoint or registry accessed."
+}

@@ -1,0 +1,12 @@
+{
+  "started_utc": "2026-09-22T22:22:15.381093+00:00",
+  "finished_utc": "2026-09-22T22:22:16.118012+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/coupling_path_check.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent",
+  "exit_code": 0,
+  "runner_sha256": "7549a074b158337a38e65a3c2aefe129f8e4e84b43a52beb7337931dc5a48410",
+  "source_boundary": "Own calculation only; no new author source/output access."
+}

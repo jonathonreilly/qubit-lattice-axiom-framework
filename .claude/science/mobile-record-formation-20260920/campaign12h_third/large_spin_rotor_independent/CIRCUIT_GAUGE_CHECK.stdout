@@ -1,0 +1,85 @@
+{
+  "created_utc": "2026-09-22T21:44:56.915520+00:00",
+  "status": "PASS",
+  "cases": [
+    {
+      "S": 1,
+      "dimension": 19,
+      "gate_counts": [
+        4,
+        0,
+        6,
+        6
+      ],
+      "second_order_block_is_nonconstant": true,
+      "circuit_and_normalized_fourth_order_blocks_identical": true,
+      "H4": [
+        [
+          "2",
+          "-2",
+          "0"
+        ],
+        [
+          "-2",
+          "12",
+          "-2"
+        ],
+        [
+          "0",
+          "-2",
+          "2"
+        ]
+      ]
+    },
+    {
+      "S": 2,
+      "dimension": 39,
+      "gate_counts": [
+        4,
+        0,
+        6,
+        6
+      ],
+      "second_order_block_is_nonconstant": true,
+      "circuit_and_normalized_fourth_order_blocks_identical": true,
+      "H4": [
+        [
+          "8/9",
+          "-8/9",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-8/9",
+          "74/9",
+          "-2",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-2",
+          "12",
+          "-2",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-2",
+          "74/9",
+          "-8/9"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-8/9",
+          "8/9"
+        ]
+      ]
+    }
+  ],
+  "scope": "Exact independently assembled square circuits through order four. The general identification is the report argument, not this enumeration."
+}

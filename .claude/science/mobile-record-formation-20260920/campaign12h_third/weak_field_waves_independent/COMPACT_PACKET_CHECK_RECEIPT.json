@@ -1,0 +1,12 @@
+{
+  "started_utc": "2026-09-22T22:19:03.058957+00:00",
+  "finished_utc": "2026-09-22T22:19:03.687908+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/compact_packet_check.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent",
+  "exit_code": 0,
+  "runner_sha256": "51b09a9ea3f695db0cf7b2ae97536153a707f63dbee68cbbc6e168c2b025ff6e",
+  "source_boundary": "Own reconstruction only. No new author weak-field source, runner, result, seal, checkpoint or registry accessed."
+}

@@ -1,0 +1,305 @@
+{
+  "created_utc": "2026-09-22T22:06:56.260647+00:00",
+  "status": "Bounded independent post-seal source comparison complete; no formal audit or publication status.",
+  "pre_comparison_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/PRE_COMPARISON_SEAL.json",
+    "bytes": 10668,
+    "sha256": "f8f457305153006eccda68740a518cfed0c11d3c28d1c77ad3ce6df71970e3c5"
+  },
+  "author_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LARGE_SPIN_RECORD_AUTHOR_SEAL.json",
+    "bytes": 4126,
+    "sha256": "40797e4620ebb864744753ae5429a1727c7b407fc712bda4360e75ea295a1f3b"
+  },
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/ELECTRIC_AND_MAGNETIC_DYNAMICS_FROM_RECORD_MOTION.md",
+      "bytes": 18939,
+      "sha256": "52f5ce8bd8f1b39049ebbb0407e6881ed8e11de80bc2c29db9e0e56c5cdd3fc2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HARDCORE_RECORD_MOTION_GENERATES_GAUGE_RINGS.md",
+      "bytes": 15367,
+      "sha256": "a527532324a5ed75e660b19c131f759fa0b38be4cdcf855f3a4f59c205cbc99e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HOMOGENEOUS_FIELD_STAR_PENALTY_FOR_MOBILE_RECORDS.md",
+      "bytes": 10593,
+      "sha256": "860e8d364e50f8cddcbb6c534d69ca4ce822020ea80deab6c22361eeda0d361c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LARGE_SPIN_LIVE_BIRTH_AND_WEIGHT_RESULTS.json",
+      "bytes": 1743,
+      "sha256": "12e30c1a18238e999c1a124da5a756085f0ec37c03c30a8dbef283a6211425a8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LARGE_SPIN_LIVE_BIRTH_AND_WEIGHT_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LARGE_SPIN_LIVE_BIRTH_AND_WEIGHT_RUN.stdout",
+      "bytes": 1743,
+      "sha256": "12e30c1a18238e999c1a124da5a756085f0ec37c03c30a8dbef283a6211425a8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LARGE_SPIN_LIVE_BIRTH_AND_WEIGHT_RUN_RECEIPT.json",
+      "bytes": 298,
+      "sha256": "c246aab3c0e0e51ca226063b774dc91872a3b98e833f1236bc532e790fd69ea9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LARGE_SPIN_RECORD_AUTHOR_SEAL.json",
+      "bytes": 4126,
+      "sha256": "40797e4620ebb864744753ae5429a1727c7b407fc712bda4360e75ea295a1f3b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LARGE_SPIN_RECORD_ELECTRIC_RING_RESULTS.json",
+      "bytes": 8781,
+      "sha256": "71b0679661d84156f8f637155ca15452b6ba371f7127472b9130256359e7efe6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LARGE_SPIN_RECORD_ELECTRIC_RING_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LARGE_SPIN_RECORD_ELECTRIC_RING_RUN.stdout",
+      "bytes": 2474,
+      "sha256": "2a337661eb6af522333218a2d7184730e40b1d7837dd124c567a8c961edaaa15"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LARGE_SPIN_RECORD_ELECTRIC_RING_RUN_RECEIPT.json",
+      "bytes": 297,
+      "sha256": "67ac74e90fb7fcf4b8c9baf5397cf3e050f259138b3641f9c4d376a9eb5b236f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LARGE_SPIN_RECORD_SOURCE_CONTEXT.json",
+      "bytes": 2002,
+      "sha256": "146fab8c9dc88081fd49631d8bf519f2dfa9bbf957b1e3569fb74ca1ca83f6af"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/UNIFORM_LOCAL_RING_AUTHOR_SEAL.json",
+      "bytes": 5925,
+      "sha256": "4b52f52f820ed5efbe01b18d47c0166018f0c421cd507fb55f171d893f8a7ce5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION.md",
+      "bytes": 17686,
+      "sha256": "e03793ab0cc06bcc0d536db5b846addf3a999733c6dc25cc4d08ae457263e16e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_live_birth_and_weight_check.py",
+      "bytes": 5238,
+      "sha256": "a55e302832c91ae8410e79ef0fa621fbfd24d43ad376f89d078d0adc57585fec"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_record_electric_ring_check.py",
+      "bytes": 6861,
+      "sha256": "ed23eb7e64c1847d78501dcb30263ea8d447eafc3a3835abb32e4a7f04fdf090"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/uniform_local_dynamics_independent/COMPARISON.md",
+      "bytes": 14369,
+      "sha256": "00048adee9d46312bb197b590d3d2c709e209d7527cd44c2c7f9942a96feea1c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/uniform_local_dynamics_independent/FINAL_SEAL.json",
+      "bytes": 21317,
+      "sha256": "cc213db7ba3b00cce3ae52d8206878219257bda27b831bfdad93129a9dbcafcf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/uniform_local_dynamics_independent/REPORT.md",
+      "bytes": 18674,
+      "sha256": "4dc693c1b9cadd94ea95ce01108a72570482ad82c10c4b3f5f611169f749621e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/uniform_local_dynamics_independent/literature/Barthel_Kliesch_1111_4210v2.html",
+      "bytes": 334857,
+      "sha256": "abdeedde2be6d39e29f766e860d90e54783f9a384c3dbf1e75244769a07e84a7"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/BOUNDARY_BULK_CHECK.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/BOUNDARY_BULK_CHECK.stdout",
+      "bytes": 2637,
+      "sha256": "ce66f10039bfaf809e4cb88dbc802b91b3543fd55ab0f1cce53e03d4582b3d08"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/BOUNDARY_BULK_CHECK_RECEIPT.json",
+      "bytes": 757,
+      "sha256": "f0033bc4a9e604d99bda40123bd91a5c5e4603da48725bee3b12e2930f4016a9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/BOUNDARY_BULK_RESULTS.json",
+      "bytes": 2637,
+      "sha256": "ce66f10039bfaf809e4cb88dbc802b91b3543fd55ab0f1cce53e03d4582b3d08"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/CIRCUIT_GAUGE_CHECK.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/CIRCUIT_GAUGE_CHECK.stdout",
+      "bytes": 1474,
+      "sha256": "d5ceb38da95ddafe62963aa630e0950743db8fbe674097469c9f8e2f91804129"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/CIRCUIT_GAUGE_CHECK_RECEIPT.json",
+      "bytes": 753,
+      "sha256": "b37c73f05d6a1290a0237ae8c57402ffd8d98cdc7061e51a61e8f38dbac79782"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/CIRCUIT_GAUGE_RESULTS.json",
+      "bytes": 1474,
+      "sha256": "d5ceb38da95ddafe62963aa630e0950743db8fbe674097469c9f8e2f91804129"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/COMPARISON.md",
+      "bytes": 14232,
+      "sha256": "9051d24628563bc39fed4a8167b5cafe9fc052bc72bc3bbdc7f5f88cf3cdb7b9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/COMPARISON_CHECK.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/COMPARISON_CHECK.stdout",
+      "bytes": 4716,
+      "sha256": "b22034447b007522fdaadf7dca975316c041148a0850d7d6e8c50dc0afbde6c4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/COMPARISON_CHECK_RECEIPT.json",
+      "bytes": 805,
+      "sha256": "b568d1b3e091c4ea90148e4301ead6004b91d8139d526fcaf58d07c11b00e915"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/COMPARISON_RESULTS.json",
+      "bytes": 4716,
+      "sha256": "b22034447b007522fdaadf7dca975316c041148a0850d7d6e8c50dc0afbde6c4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/FINITE_SPIN_CHECK.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/FINITE_SPIN_CHECK.stdout",
+      "bytes": 19017,
+      "sha256": "371d93d3184e57843befd145afe55c11e82afa077393391d91995f0c58be20f5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/FINITE_SPIN_CHECK_RECEIPT.json",
+      "bytes": 748,
+      "sha256": "71a20528af52da2548c1a37120a69b5e92d3f3d265bae41146685dd4578c905b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/FINITE_SPIN_RESULTS.json",
+      "bytes": 19017,
+      "sha256": "371d93d3184e57843befd145afe55c11e82afa077393391d91995f0c58be20f5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/INPUT_SPEC.md",
+      "bytes": 1641,
+      "sha256": "a89f8205e91d33a6a94be0cd028008d81eaf9a48e21bc198ee4b5745ff755fbd"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/PRE_COMPARISON_SEAL.json",
+      "bytes": 10668,
+      "sha256": "f8f457305153006eccda68740a518cfed0c11d3c28d1c77ad3ce6df71970e3c5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/REPORT.md",
+      "bytes": 23867,
+      "sha256": "072e1b6c833d023bec988126ca79379848718455122f7462db20db069a790732"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/RUNTIME.json",
+      "bytes": 269,
+      "sha256": "675859b694c702db15a5a5b305c4ec76b96cc4c2fd77b8ce6ed863e6f404e405"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/SOURCE_READ_BOUNDARY.json",
+      "bytes": 3466,
+      "sha256": "e86bff46f88e1855e804c607cafaa75b8b8349969420d315f59e3fa4a025476e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/boundary_and_bulk_check.py",
+      "bytes": 4486,
+      "sha256": "6a550e5443d0091d2c20881988f182ad28c9dc1e77d3126498d53cb8152b4e0b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/circuit_gauge_check.py",
+      "bytes": 2779,
+      "sha256": "6aa3fcc8ad3ab9a1b18191aac3103f09744a2acbc79bd20c20838aed72c7fd0d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/comparison_check.py",
+      "bytes": 10239,
+      "sha256": "336f0eef301b1154cb28fa26ca15d17ff0c6cb36dca4840b69594e2cc70c879f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/comparison_literature/RECEIPT.json",
+      "bytes": 875,
+      "sha256": "a5de420c1014d43ebc726e6d56b261bd010be3c6db36fd4d031cb9d9944b2521"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/comparison_literature/SECTION_VII_A_EXTRACT.txt",
+      "bytes": 8629,
+      "sha256": "8dff87905420f747daf7dff867f308485ba6029c43cd7b161afc665c15bc306f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/comparison_literature/Zohar_Cirac_Reznik_1303_5040v3.html",
+      "bytes": 730204,
+      "sha256": "cfea965a2172ef89ff077131034a67ae3b2602096049a2dbb52c33bbc1231d9d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/failed_attempts/comparison_literature_bs4/ATTEMPT.py",
+      "bytes": 516,
+      "sha256": "1bd781d3b96dd263e68dc9fb8ac0246826adef0c82791dcf05d95a5702e9eca8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/failed_attempts/comparison_literature_bs4/DIAGNOSIS.json",
+      "bytes": 467,
+      "sha256": "ff7ce3afea7dcd07e281a86ad19e20014f0578c892ea3dffe37dde1ca7374b05"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/failed_attempts/comparison_literature_bs4/TOOL_RESULT.json",
+      "bytes": 247,
+      "sha256": "d96baa01c3ef7aabe4fbaf46ccb7ffb8d26d3ba4b3438adf67252bf6aa89b0f5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/finite_spin_check.py",
+      "bytes": 9688,
+      "sha256": "3b4e969e07835ba6d87c95d0736a520a2c3854ebca61ac9d5a3f4f7763de2bb6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/seal_comparison.py",
+      "bytes": 4117,
+      "sha256": "500405b0153058bc1866a88fa8ee980b9ac2089b1aec475a7fb95b4b3e1ab946"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/seal_reconstruction.py",
+      "bytes": 4002,
+      "sha256": "61877cb119a4096dad104f6b29ca21d38771a8ccfd04bb6e67463f8c78944011"
+    }
+  ],
+  "counts": {
+    "sources": 21,
+    "artifacts": 34,
+    "total": 55
+  },
+  "findings": [],
+  "disposition": "No substantive correction identified. The finite-spin block-basis allowance is compatible with the specific canonical identification of the blind circuit. The local limit retains all stated preparation, moment, time and resource hypotheses.",
+  "new_independent_evidence": "An explicit nonzero finite-spin analytic block-basis change with weighted vanishing limit; independently assembled spin-16 microscopic spectrum; exact comparison with presealed integer-spin H2/H4/loss calculations.",
+  "authentication_limits": "All author results/logs/receipts authenticated; the other three large-spin spectra and the 7,440-row author screen were not rerun. No full-spectrum interval certificate or many-volume simulation is claimed.",
+  "failures": "One optional bs4 extraction helper failed before any scientific assertion; exact attempted code and complete tool response retained. Standard-library extraction succeeded. No comparison scientific assertion failed.",
+  "source_boundary": "Only the authorized 12-artifact large-spin packet, its pinned already-reviewed dependencies, prior independent evidence, and the credited primary arXiv Section VII.A were read. Other new author packets/checkpoint/registry remain unopened.",
+  "mutable_exclusion": "CHECKPOINT.md is a recovery aid, excluded from all scientific bindings."
+}

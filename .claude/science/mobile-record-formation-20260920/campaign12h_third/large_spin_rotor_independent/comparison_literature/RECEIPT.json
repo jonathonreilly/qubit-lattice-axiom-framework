@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-09-22T21:58:11.892780+00:00",
+  "url": "https://arxiv.org/html/1303.5040v3",
+  "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/comparison_literature/Zohar_Cirac_Reznik_1303_5040v3.html",
+  "bytes": 730204,
+  "sha256": "cfea965a2172ef89ff077131034a67ae3b2602096049a2dbb52c33bbc1231d9d",
+  "read_coverage": "Section VII.A (HTML VII.1), Eqs.96\u2013101 and surrounding argument; Eq.97 verifies the credited nonunitary-link electric mechanism. Adjacent numerical caveats through Eq.105 were also read through the primary HTML tool. No theorem imported.",
+  "purpose": "Attribution and model-distinction check only; this report derives its own coefficients and local comparison.",
+  "boundary": "No newer author packet accessed."
+}

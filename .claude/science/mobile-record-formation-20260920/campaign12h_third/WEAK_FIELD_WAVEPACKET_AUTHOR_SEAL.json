@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-09-22T21:18:53.135584+00:00",
+  "status": "Author-frozen, independent comparison pending; imported record-to-rotor dependencies remain provisional.",
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS.md",
+      "bytes": 15808,
+      "sha256": "0f8f82d2712d0a97036e6c5c3d102ab01cb152e92ad0ce4e81f59f07c0fea5e5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_wavepacket_check.py",
+      "bytes": 8950,
+      "sha256": "0eba8a3774f6d824820ddcf3186a24c9bcb1cae686dc83524d989c0e695b7c9f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/WEAK_FIELD_WAVEPACKET_RESULTS.json",
+      "bytes": 20338,
+      "sha256": "f79392f1372c0b0e9910adbc7d75922ae1a4b14a0eafed605444a1aa0c270367"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/WEAK_FIELD_WAVEPACKET_CHECK.stdout",
+      "bytes": 20338,
+      "sha256": "f79392f1372c0b0e9910adbc7d75922ae1a4b14a0eafed605444a1aa0c270367"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/WEAK_FIELD_WAVEPACKET_CHECK.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/WEAK_FIELD_WAVEPACKET_CHECK_RECEIPT.json",
+      "bytes": 1311,
+      "sha256": "a490be06858dfaa0a19070191c4f09b33b563b3d69bc97461fe31fef9d1c84f4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/WEAK_FIELD_WAVEPACKET_SOURCE_CONTEXT.json",
+      "bytes": 2106,
+      "sha256": "7551a8629667651bd9b142cc2484908ae2da621ac7402e2d29f2dbee3d9bcd98"
+    }
+  ],
+  "count": 7
+}

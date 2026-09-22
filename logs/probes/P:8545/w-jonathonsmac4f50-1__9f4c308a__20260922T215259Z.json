@@ -1,0 +1,54 @@
+{
+ "task": "P:8545",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-formation-20260920",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8545",
+ "pr": 8545,
+ "branch": "codex/mobile-record-formation-20260920",
+ "git_sha": "9f4c308a",
+ "started_utc": "20260922T215259Z",
+ "elapsed_s": 21.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/mobile_records_finite_rate_spatial_bridge_2026_09_20.py",
+    "returncode": 0,
+    "total": "PASS=22 FAIL=0",
+    "census_mismatches": [
+     "oversized_gap"
+    ]
+   },
+   {
+    "runner": "scripts/mobile_records_rare_formation_event_law_2026_09_20.py",
+    "returncode": 0,
+    "total": "PASS=15 FAIL=0",
+    "census_mismatches": [
+     "birth_normalized"
+    ]
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "1d63f5a69b3f60ee1f456ba40bbf3bb6d1f83a9e85561ee635ba79fc7f1ac159",
+ "stdout_tail": "mation-20260920 (base main)\nrunners in the PR: 2\n== scripts/mobile_records_finite_rate_spatial_bridge_2026_09_20.py: rc=0 PASS=22 FAIL=0\n   mutation wrong_center: expected resolvent observed resolvent ok\n   mutation oversized_gap: expected gap observed gap,poisson MISMATCH\n   mutation omit_hazard_variance: expected error observed error ok\n   mutation omit_corrector: expected poisson observed poisson ok\n   mutation drop_wedges: expected dilution observed dilution ok\n   mutation drop_sink: expected vacancy observed vacancy ok\n   mutation dense_closure: expected orientation observed orientation ok\n   mutation wrong_birth_sign: expected spectrum observed spectrum ok\nHIT: scripts/mobile_records_finite_rate_spatial_bridge_2026_09_20.py: mutation census mismatch: oversized_gap\n== scripts/mobile_records_rare_formation_event_law_2026_09_20.py: rc=0 PASS=15 FAIL=0\n   mutation motion_flat: expected motion observed motion ok\n   mutation birth_normalized: expected insertion observed content_law,event_sampling,insertion MISMATCH\n   mutation drop_multiplicity: expected insertion observed insertion ok\n   mutation merge_sectors: expected content_law observed content_law ok\n   mutation unbiased_events: expected event_sampling observed event_sampling ok\n   mutation killing_flat: expected resolvent observed resolvent ok\n   mutation allow_removal: expected vacancies observed vacancies ok\nHIT: scripts/mobile_records_rare_formation_event_law_2026_09_20.py: mutation census mismatch: birth_normalized",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T215401Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: log's git sha 9f4c308a differs from the current HEAD c564b0e2 (fine if you pulled since; the run is bound to its sha)",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Third identical run (9f4c308a): the same two census mismatches as the 2026-09-21 and 2026-09-22T21:21Z runs (triaged science): oversized_gap observed gap,poisson; birth_normalized observed content_law,event_sampling,insertion. Existing issue #8574 (rerun noted there).",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T215401Z"
+ }
+}

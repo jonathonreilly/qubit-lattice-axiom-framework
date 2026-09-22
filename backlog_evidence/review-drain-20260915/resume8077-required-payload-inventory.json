@@ -1,0 +1,38 @@
+{
+  "rows": [
+    {
+      "blob": "bdacf10691d91d803764863134f064bb5bcfa286",
+      "bytes": 9202739,
+      "commit": "2d56ff11d746bee4fe42a6e4d829525274f7f880",
+      "encoding": "gzip",
+      "mode": "100644",
+      "original": "/private/tmp/toe-24h-probes-20260908/native-global-a378-run-prospective/NODES.json",
+      "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/accepted-a378-and-two-followup-preregistrations/native-global-a378-run-prospective/NODES.json",
+      "raw_sha256": "50bacb0cef0bde80f15632dc99ede0de546203199df8caa523b62f3ac337755d",
+      "role": "A378 acquisition / descriptor coefficient source and input",
+      "sha256": "50bacb0cef0bde80f15632dc99ede0de546203199df8caa523b62f3ac337755d",
+      "storage_origin": "new_scoped_CAS",
+      "stored_bytes": 3969562,
+      "stored_repository_path": "docs/work_history/repo/review_feedback/pr8077-forensic-evidence/_objects/50bacb0cef0bde80f15632dc99ede0de546203199df8caa523b62f3ac337755d.gz",
+      "stored_sha256": "9326e5d1b0335be858d6ca77c0bbf67c0b7c726784e930d9b29a3cc15586f2f9",
+      "local": "/private/tmp/review-drain-20260915/resume8077-50bacb0cef0bde80f15632dc99ede0de546203199df8caa523b62f3ac337755d.raw"
+    },
+    {
+      "blob": "1829565de407ba59aa27361e7a036fdc05dcb60b",
+      "bytes": 28346083,
+      "commit": "f7a4e3e43e05b2ea140b99b38b620ec11e40625d",
+      "encoding": "gzip",
+      "mode": "100644",
+      "original": "79:native-global-projector-coefficient-run-prospective/EVENTS.ndjson",
+      "path": ".claude/science/physics-loops/toe-physical-supplier-24h-20260908/checkpoints/accepted-global-projector-and-t-sensitivity/native-global-projector-coefficient-run-prospective/EVENTS.ndjson",
+      "raw_sha256": "75fa20e4df2f261e551ff2fe2f4c5da812b1d0f5e2423c419f43ed9cb21cbdfe",
+      "role": "Original direct recovery map",
+      "sha256": "75fa20e4df2f261e551ff2fe2f4c5da812b1d0f5e2423c419f43ed9cb21cbdfe",
+      "storage_origin": "new_scoped_CAS",
+      "stored_bytes": 8402588,
+      "stored_repository_path": "docs/work_history/repo/review_feedback/pr8077-forensic-evidence/_objects/75fa20e4df2f261e551ff2fe2f4c5da812b1d0f5e2423c419f43ed9cb21cbdfe.gz",
+      "stored_sha256": "ec2a0f470e921fd3a0aedc4beaee3f5b83bcaf19c5223fb75c5213d12911b9f2",
+      "local": "/private/tmp/review-drain-20260915/resume8077-75fa20e4df2f261e551ff2fe2f4c5da812b1d0f5e2423c419f43ed9cb21cbdfe.raw"
+    }
+  ]
+}

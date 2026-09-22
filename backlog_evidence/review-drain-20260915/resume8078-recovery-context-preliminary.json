@@ -1,0 +1,121 @@
+{
+  "status": "PRELIMINARY_RECOVERY_CONTEXT_CHECK_COMPLETE_ORIGINAL_SESSION_CONFIRMATION_PENDING",
+  "reviewer_session": "/root/resume_8078_method",
+  "identity_boundary": "Fresh recovery/context reviewer; not original /root/review_8011. This appendix does not replace the original final-source verdict or certify same-session confirmation. Coordinator reports original local rollout recoverable and will resume it.",
+  "source_base": "d5949b991200fd9ca006725446808c0df1a58e1a",
+  "source_tree": "9a37ef79225a7d8c9cc83086beb33deeda916ed6",
+  "original_review": {
+    "path": "/private/tmp/review-drain-20260915/review-8078-final.json",
+    "sha256": "ed1c8d6536e65d27a4bed261bfdc7c14e239420ed554ce62ad76d0a2641633e5"
+  },
+  "original_unit": {
+    "path": "/private/tmp/review-drain-20260915/8078-unit-v1-final.json",
+    "sha256": "ff5295d30162d55f8d9c3b7a44b50b757814c85bc7bc2d61912afc576d554114"
+  },
+  "original_reviewed_commit": "f98911bbd9e912818ee406040b67bc92bb8a98ca",
+  "original_source_tree": "53d0a6b4767dd06f0a3e4e4cd254c0fa403ae879",
+  "identity_checks": {
+    "source_paths_unchanged": 64,
+    "runtime_inputs_unchanged": 16,
+    "total_bindings_checked": 110,
+    "prior_evidence_refs_verified": 28,
+    "all_46_constituent_dispositions_retained": true,
+    "science_parent_and_authority_pins_unchanged": true,
+    "tooling_pins_unchanged": true
+  },
+  "context_changes": [
+    {
+      "category": "context",
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "old_sha256": "84b0730ae3553748ca73c1314b40990047373c1cc0309fcf33d005ad818c8f56",
+      "new_sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0"
+    },
+    {
+      "category": "context",
+      "path": "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+      "old_sha256": "df41858a7ce5fb4436ad9048826032bcf4a8c84aa4dbdd318aeba7168443134f",
+      "new_sha256": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096"
+    }
+  ],
+  "routed_references_read_and_bound": [
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "sha256": "cfcb43f40791d8e8772e86fd2b53fb11008c5075e416f8cf4eb84bd18ab71773"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "sha256": "bbdb794f3925b1a473db22a94eeaa4d0b6be5e302f6dc1463c27306738b731b3"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md",
+      "sha256": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/LANDING.md",
+      "sha256": "827032765af31a2f4ef64b3e595173c7e81e2f56b713793aba336228411a4624"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SALVAGE.md",
+      "sha256": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee"
+    }
+  ],
+  "method_source_bindings": [
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "sha256": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+      "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+      "sha256": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096"
+    }
+  ],
+  "method_review": {
+    "conclusion": "No material compatibility issue found between the three previously reviewed pending efficiency changes and current routed review-loop instructions.",
+    "analysis": [
+      "The eight references retain complete source/input/proof/no-go/accounting and original-session confirmation obligations; route triggers accumulate, and the entry-point summary is explicitly not a substitute. Current reference content and extraction diff inspected.",
+      "Combined review-only validation now uses an isolated disposable copy with actual reviewed staged/unstaged/untracked inputs; this does not change authorized landing gates, cache semantics or scientific evidence.",
+      "UNIT_RECEIPT proof ownership and declared-timeout clarification still matches unchanged graph/cache/helper APIs. No new claim or autonomous proof is invented for outputs runtime imports.",
+      "Batched index checker is exactly the prior independently reviewed 60810 source. Both freshness checks, strict blob framing and full source/index/tree/input/coverage checks remain. Bound targets are batching policy, not a hard RSS limit.",
+      "OPERATIONS final paragraph matches reviewed ae61 version and distinguishes explicit stage-0 index authority from frozen-commit landed-source authority.",
+      "Original 47 regression and 10 focused controls remain applicable; no parser/checker/API semantic interaction changed, so they were not repeated."
+    ],
+    "evidence": [
+      {
+        "path": "/private/tmp/review-drain-20260915/receipt-batched-index-independent-review.json",
+        "sha256": "f20b3cabed89729e8a5f382618db9a1ef6c0c0fdc0f612a4fa22d40148232c0b"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/skill-proof-ownership-independent-review.json",
+        "sha256": "aef7f75d0331111e17b8eeb999f233ccef01d481e7fe88133aa6e260eac4a015"
+      }
+    ]
+  },
+  "scientific_context": "Direct-overlap supplied-model result, full Ward correction and open alpha/physical-realization boundaries unchanged. All four cited scientific parents, primitive authority and actual runtime inputs retain prior exact identities. No new premise or scalar acquisition is substituted. Prior complete source reading, 10 independent mathematical controls and single 39/0 capture remain immutable evidence.",
+  "checks_not_run": [
+    "No primary/native/scientific runner execution",
+    "No receipt --cache invocation",
+    "No full pipeline or repeated receipt regression suite"
+  ],
+  "findings": [],
+  "remaining": [
+    "Original reviewer session must confirm current context and draft bindings honestly before final receipt preflight",
+    "Coordinator combined current-main preservation and validation gates remain required"
+  ],
+  "permission_or_audit_effect": "None. No source edit, commit, GitHub mutation, audit verdict or landing PASS."
+}

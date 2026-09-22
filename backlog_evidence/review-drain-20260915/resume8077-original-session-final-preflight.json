@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8077",
+  "tree": "256f5f598ae9c712b13e27da13d6f9f27de54899",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/NATIVE_GLOBAL_PROJECTOR_CERTIFICATE_NOTE_2026-09-10.md",
+      "claim_id": "native_global_projector_certificate_note_2026-09-10",
+      "primary_runner": "scripts/native_global_projector_certificate_2026_09_10.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/NATIVE_CERTIFIED_LOCAL_GREEN_SCALARS_NOTE_2026-09-09.md",
+        "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md",
+        "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md",
+        "docs/work_history/repo/review_feedback/pr8077-evidence/README.md",
+        "docs/work_history/repo/review_feedback/pr8077-evidence/kept/pr8077-DERIVATION-0c6763218d7734e0.md",
+        "docs/work_history/repo/review_feedback/pr8077-evidence/kept/pr8077-DERIVATION-159d5c30808e1081.md",
+        "docs/work_history/repo/review_feedback/pr8077-evidence/kept/pr8077-DERIVATION-33ba8583384f11ed.md",
+        "docs/work_history/repo/review_feedback/pr8077-evidence/kept/pr8077-DERIVATION-62709e00b4615a48.md",
+        "docs/work_history/repo/review_feedback/pr8077-evidence/kept/pr8077-DERIVATION-8c91a53ccd862d1b.md",
+        "docs/work_history/repo/review_feedback/pr8077-forensic-evidence/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8077-evidence/kept/pr8077-DERIVATION-0c6763218d7734e0.md",
+      "canonical_note": "docs/NATIVE_GLOBAL_PROJECTOR_CERTIFICATE_NOTE_2026-09-10.md",
+      "citations": [],
+      "rationale": "Current owned analytical proof fully reviewed in original session and same-session exact-byte/current-context confirmation; historical worker language remains provenance, not a new execution.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/resume8077-original-session-final.json",
+        "sha256": "843020f06914bb9e2c0fc757456593d49b4c5145bb9c7929b4802cfa52087049"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8077-evidence/kept/pr8077-DERIVATION-159d5c30808e1081.md",
+      "canonical_note": "docs/NATIVE_GLOBAL_PROJECTOR_CERTIFICATE_NOTE_2026-09-10.md",
+      "citations": [],
+      "rationale": "Current owned analytical proof fully reviewed in original session and same-session exact-byte/current-context confirmation; historical worker language remains provenance, not a new execution.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/resume8077-original-session-final.json",
+        "sha256": "843020f06914bb9e2c0fc757456593d49b4c5145bb9c7929b4802cfa52087049"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8077-evidence/kept/pr8077-DERIVATION-33ba8583384f11ed.md",
+      "canonical_note": "docs/NATIVE_GLOBAL_PROJECTOR_CERTIFICATE_NOTE_2026-09-10.md",
+      "citations": [],
+      "rationale": "Current owned analytical proof fully reviewed in original session and same-session exact-byte/current-context confirmation; historical worker language remains provenance, not a new execution.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/resume8077-original-session-final.json",
+        "sha256": "843020f06914bb9e2c0fc757456593d49b4c5145bb9c7929b4802cfa52087049"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8077-evidence/kept/pr8077-DERIVATION-62709e00b4615a48.md",
+      "canonical_note": "docs/NATIVE_GLOBAL_PROJECTOR_CERTIFICATE_NOTE_2026-09-10.md",
+      "citations": [],
+      "rationale": "Current owned analytical proof fully reviewed in original session and same-session exact-byte/current-context confirmation; historical worker language remains provenance, not a new execution.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/resume8077-original-session-final.json",
+        "sha256": "843020f06914bb9e2c0fc757456593d49b4c5145bb9c7929b4802cfa52087049"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8077-evidence/kept/pr8077-DERIVATION-8c91a53ccd862d1b.md",
+      "canonical_note": "docs/NATIVE_GLOBAL_PROJECTOR_CERTIFICATE_NOTE_2026-09-10.md",
+      "citations": [],
+      "rationale": "Current owned analytical proof fully reviewed in original session and same-session exact-byte/current-context confirmation; historical worker language remains provenance, not a new execution.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/resume8077-original-session-final.json",
+        "sha256": "843020f06914bb9e2c0fc757456593d49b4c5145bb9c7929b4802cfa52087049"
+      }
+    }
+  ],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8761,
+      "misses": 4427
+    },
+    "packet_imports": {
+      "hits": 8751,
+      "misses": 4425
+    },
+    "declared_inputs": {
+      "hits": 8792,
+      "misses": 4558
+    }
+  },
+  "record_sha256": "48a5f2a13e809dcfd5a060acbd19c39bb90d9dd8142115afbf3618352924db0f",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

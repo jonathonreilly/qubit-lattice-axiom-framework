@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-22 block 87 — author checks (not a review PASS)
+Written lens pass by the supervisor. Level rule checked exactly on three rings after the executed length-independence suggested it; tension's sign by concavity; law's reward coupling by coupling and by local count; the control's tension formula corrected against the direct difference; decimal literals in strings replaced by fractions for the float scan. Census 6/6 in family.

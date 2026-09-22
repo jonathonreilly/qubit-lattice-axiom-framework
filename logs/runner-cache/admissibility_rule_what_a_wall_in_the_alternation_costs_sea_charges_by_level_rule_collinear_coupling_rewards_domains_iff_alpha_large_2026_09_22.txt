@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_what_a_wall_in_the_alternation_costs_sea_charges_by_level_rule_collinear_coupling_rewards_domains_iff_alpha_large_2026_09_22.py
+runner_sha256: 53199bf809ea8d18686b5194acbe6f11b5aa74a493a81be86ac4aafa172400c8
+input_fingerprint_sha256: 092d40579f6852942ae34796791751ec85429f12f0824189e164f428c4490f51
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.43
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_WHAT_A_WALL_IN_THE_ALTERNATION_COSTS_THE_SEA_CHARGES_IT_BY_AN_EXACT_LEVEL_RULE_BLOCK_59S_COLLINEAR_COUPLING_REWARDS_IT_DOMAINS_IFF_ALPHA_LARGE_BOUNDED_THEOREM_NOTE_2026-09-22.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: on the rings of 4, 8 and 12 at delta = 3/10 the squared spectrum with two walls equals the wall-free one with two copies of delta^2 and two of 1 removed and two of 0 and two of 1 + delta^2 added, exactly: ring 4: 2 distinct E^2 without walls, 2 with; rule holds: True; ring 8: 3 distinct E^2 without walls, 3 with; rule holds: True; ring 12: 4 distinct E^2 without walls, 4 with; rule holds: True
+PASS: B2 T1: the sea's energy of the wall pair on a ring is (1 + delta) - sqrt(1 + delta^2) (the four levels' negative branch -delta - 1 becomes -sqrt(1 + delta^2)), positive since (1 + delta)^2 - (1 + delta^2) = 2 delta > 0, and independent of the ring's length by the rule
+PASS: C1 T2: by T1 and block 86's separability, a wall's sea energy per unit area is the transverse zone average of sqrt(delta^2 + e^2) + sqrt(1 + e^2) - sqrt(e^2) - sqrt(1 + delta^2 + e^2), e^2 = e_y^2 + e_z^2; the four arguments have equal pairwise sums and the inner pair is less spread, so by the concavity of the square root the integrand is positive at every transverse wave vector (exactly positive at delta = 3/10, e^2 = 9/16); at delta = 1 (e^2 = 2 everywhere) the tension is exactly 2 sqrt(3) - sqrt(2) - 2
+PASS: D1 T3: on the 4^3 torus block 59's law gives the uniform alternation the energy 3N x 2(alpha + 2 beta) delta^2 (block 84 T2) and two walls across x change it by -144/175, that is -2 alpha delta^2 = -9/350 per unit area per wall: the collinear coupling alone rewards a phase slip (its two wall bonds each lose one opposing neighbour), the perpendicular and parallel couplings do not see it
+PASS: E1 T4: a wall's energy per unit area is sigma_sea(delta) - 2 alpha delta^2; at delta = 1 exactly (2 sqrt 3 - sqrt 2 - 2)/2 lies between 2/100 and 3/100, so walls are favoured there iff alpha exceeds a number between 2/100 and 3/100; at smaller delta the executed sigma_sea/(2 delta^2) rises to about 14/100 (control)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the squared spectra of the one-axis operator with and without walls on three rings, level by level; block 59's quadratic form bond by bond on the 4^3 torus
+per_site: executed - the wall's law energy per unit area for each of the three couplings separately
+per_mode: executed - the transverse integrand at a rational point and at delta = 1 exactly; control: the tension on transverse grids to 512^2 and its direct check on 8^3 and 16^3
+per_block: executed - the level rule as a multiset identity on three rings; the criterion at delta = 1 as an exact inequality
+lattice_wide: T1 exact on the rings of 4, 8, 12 and executed to be length-independent on longer rings, not proved for every ring; T2 by concavity given T1 and block 86; T3 on the 4^3 torus and by the local count on every torus; T4 as a criterion; the bond law's three numbers, the sea reading and the balance as a minimisation are not derived
+PASS: G1 the five N5 resolution lines are printed
+scope: what a wall in the alternation costs - two sharp walls replace exactly the levels +-delta, +-1 by 0, 0, +-sqrt(1 + delta^2) on the rings tried, so the sea charges a wall pair (1 + delta) - sqrt(1 + delta^2) on a ring and a positive transverse-average tension in three dimensions (2 sqrt3 - sqrt2 - 2 at delta = 1); block 59's law rewards a wall by exactly 2 alpha delta^2 per unit area (only the collinear coupling sees a phase slip); walls are favoured iff alpha > sigma_sea/(2 delta^2), about 14/100 near the threshold and 1/40 at delta = 1; nothing adopted
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

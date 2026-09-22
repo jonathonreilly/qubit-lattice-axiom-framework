@@ -1,0 +1,25 @@
+W1: sea energy of a wall pair on a ring against (1 + delta) - sqrt(1 + delta^2)
+  delta=0.1: L=16: 0.095012, L=64: 0.095012, L=256: 0.095012; rule: 0.095012
+  delta=0.3: L=16: 0.255969, L=64: 0.255969, L=256: 0.255969; rule: 0.255969
+  delta=0.5: L=16: 0.381966, L=64: 0.381966, L=256: 0.381966; rule: 0.381966
+  delta=0.9: L=16: 0.554638, L=64: 0.554638, L=256: 0.554638; rule: 0.554638
+W2: wall tension sigma_sea(delta)
+  delta=0.01: transverse average 0.000027, 0.000027, 0.000028; direct 8^3 0.000211, 16^3 0.000070; sigma/delta^2 = 0.2751; alpha_c = sigma/(2 delta^2) = 0.1375
+  delta=0.05: transverse average 0.000639, 0.000640, 0.000640; direct 8^3 0.001305, 16^3 0.000748; sigma/delta^2 = 0.2559; alpha_c = sigma/(2 delta^2) = 0.1279
+  delta=0.1: transverse average 0.002336, 0.002336, 0.002336; direct 8^3 0.003206, 16^3 0.002423; sigma/delta^2 = 0.2336; alpha_c = sigma/(2 delta^2) = 0.1168
+  delta=0.3: transverse average 0.014571, 0.014571, 0.014571; direct 8^3 0.014968, 16^3 0.014575; sigma/delta^2 = 0.1619; alpha_c = sigma/(2 delta^2) = 0.0810
+  delta=0.5: transverse average 0.028246, 0.028246, 0.028246; direct 8^3 0.028322, 16^3 0.028246; sigma/delta^2 = 0.1130; alpha_c = sigma/(2 delta^2) = 0.0565
+  delta=0.7: transverse average 0.039292, 0.039292, 0.039292; direct 8^3 0.039299, 16^3 0.039292; sigma/delta^2 = 0.0802; alpha_c = sigma/(2 delta^2) = 0.0401
+  delta=1.0: transverse average 0.049888, 0.049888, 0.049888; direct 8^3 0.049888, 16^3 0.049888; sigma/delta^2 = 0.0499; alpha_c = sigma/(2 delta^2) = 0.0249
+  at delta = 1 exactly 2 sqrt3 - sqrt2 - 2 = 0.049888
+W3: block 59's law on 8^3, random couplings: wall energy per unit area against -2 alpha delta^2
+  alpha=0.2435 beta=0.2443 gamma=0.1594 delta=0.329: per area -0.052588 vs -2 alpha delta^2 = -0.052588
+  alpha=0.0256 beta=0.1212 gamma=0.1285 delta=0.136: per area -0.000952 vs -2 alpha delta^2 = -0.000952
+  alpha=0.0241 beta=0.2998 gamma=0.1992 delta=0.288: per area -0.003994 vs -2 alpha delta^2 = -0.003994
+W4: along block 84's balance: delta*(kappa) and the wall criterion alpha_c(delta*) = sigma_sea/(2 delta*^2)
+  kappa = alpha + 2 beta = 0.125: delta* = 0.098; walls favoured iff alpha > 0.1172 (so iff beta < 0.0039 when kappa is held)
+  kappa = alpha + 2 beta = 0.12: delta* = 0.183; walls favoured iff alpha > 0.1002 (so iff beta < 0.0099 when kappa is held)
+  kappa = alpha + 2 beta = 0.11: delta* = 0.332; walls favoured iff alpha > 0.0764 (so iff beta < 0.0168 when kappa is held)
+  kappa = alpha + 2 beta = 0.1: delta* = 0.480; walls favoured iff alpha > 0.0585 (so iff beta < 0.0207 when kappa is held)
+  kappa = alpha + 2 beta = 0.095: delta* = 0.558; walls favoured iff alpha > 0.0510 (so iff beta < 0.0220 when kappa is held)
+  kappa = alpha + 2 beta = 0.09: delta* = 0.642; walls favoured iff alpha > 0.0442 (so iff beta < 0.0229 when kappa is held)

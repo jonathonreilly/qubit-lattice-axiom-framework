@@ -1,0 +1,113 @@
+[
+  {
+    "pr": 8148,
+    "claim_type": [
+      "bounded_theorem",
+      "bounded_theorem"
+    ],
+    "timeout": 900,
+    "graph_helpers": [],
+    "packet_helpers": [],
+    "inputs": [
+      {
+        "path": "docs/ADMISSIBILITY_RULE_FORMATION_RATE_CLAUSE_WITNESS_NO_COVARIANT_CLOCK_LAW_REACHES_THE_STATIC_LAW_ON_A_PLAQUETTE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "d0567b83bdbd8f8f942423ae907e412f817f3de777a85da1ce9ec931b588b89e",
+        "source": "/private/tmp/review-drain-20260915/drain8150-originals/8148/docs/ADMISSIBILITY_RULE_FORMATION_RATE_CLAUSE_WITNESS_NO_COVARIANT_CLOCK_LAW_REACHES_THE_STATIC_LAW_ON_A_PLAQUETTE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "role": "own note"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+        "source": "/private/tmp/review-drain-20260915/review-meta-slot/docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "role": "current repository premise/read input"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "f17c4b1ee554b76dc4da2df1b2211af593be576a8658b51fb64540e6be20f141",
+        "source": "/private/tmp/review-drain-20260915/review-meta-slot/docs/ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "role": "current repository premise/read input"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+        "source": "/private/tmp/review-drain-20260915/review-meta-slot/docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "role": "current repository premise/read input"
+      }
+    ],
+    "canonical_source_conflicts": []
+  },
+  {
+    "pr": 8149,
+    "claim_type": [
+      "bounded_theorem",
+      "bounded_theorem"
+    ],
+    "timeout": 900,
+    "graph_helpers": [],
+    "packet_helpers": [],
+    "inputs": [
+      {
+        "path": "docs/ADMISSIBILITY_RULE_FORMATION_UNIT_CLAUSE_WITNESS_SEQUENTIAL_FORMATION_REPRODUCES_THE_JOINT_LAW_IFF_NO_SITE_RECORDS_AN_INSIDE_NEIGHBOUR_WITH_A_SECOND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "70876089e4a10af69e98eff129f5131671ea50b0a009853d56c353ea46cd931c",
+        "source": "/private/tmp/review-drain-20260915/drain8150-originals/8149/docs/ADMISSIBILITY_RULE_FORMATION_UNIT_CLAUSE_WITNESS_SEQUENTIAL_FORMATION_REPRODUCES_THE_JOINT_LAW_IFF_NO_SITE_RECORDS_AN_INSIDE_NEIGHBOUR_WITH_A_SECOND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "role": "own note"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+        "source": "/private/tmp/review-drain-20260915/review-meta-slot/docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "role": "current repository premise/read input"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+        "source": "/private/tmp/review-drain-20260915/review-meta-slot/docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "role": "current repository premise/read input"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "f17c4b1ee554b76dc4da2df1b2211af593be576a8658b51fb64540e6be20f141",
+        "source": "/private/tmp/review-drain-20260915/review-meta-slot/docs/ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "role": "current repository premise/read input"
+      }
+    ],
+    "canonical_source_conflicts": []
+  },
+  {
+    "pr": 8150,
+    "claim_type": [
+      "bounded_theorem",
+      "bounded_theorem"
+    ],
+    "timeout": 900,
+    "graph_helpers": [],
+    "packet_helpers": [],
+    "inputs": [
+      {
+        "path": "docs/ADMISSIBILITY_RULE_STATIC_LAW_IS_NOT_A_MIXTURE_OF_FORMATION_LAWS_ON_ANY_WINDOW_WITH_A_CYCLE_FLIP_MONOTONICITY_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "db16bcedee00d39b53d581f09db4d5358759a5092a0f023e7b3a32537de845a7",
+        "source": "/private/tmp/review-drain-20260915/drain8150-originals/8150/docs/ADMISSIBILITY_RULE_STATIC_LAW_IS_NOT_A_MIXTURE_OF_FORMATION_LAWS_ON_ANY_WINDOW_WITH_A_CYCLE_FLIP_MONOTONICITY_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "role": "own note"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+        "source": "/private/tmp/review-drain-20260915/review-meta-slot/docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "role": "current repository premise/read input"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+        "source": "/private/tmp/review-drain-20260915/review-meta-slot/docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "role": "current repository premise/read input"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "f17c4b1ee554b76dc4da2df1b2211af593be576a8658b51fb64540e6be20f141",
+        "source": "/private/tmp/review-drain-20260915/review-meta-slot/docs/ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "role": "current repository premise/read input"
+      }
+    ],
+    "canonical_source_conflicts": []
+  }
+]

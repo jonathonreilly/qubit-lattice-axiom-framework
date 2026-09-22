@@ -1,0 +1,22 @@
+import json,pathlib,hashlib,subprocess,gzip
+R=pathlib.Path('/private/tmp/review-drain-20260915');W=R/'author-draft-slot';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+f=json.load(open(R/'drain8023-author-final-freeze.json'));c=json.load(open(R/'drain8023-cold-confirmation-v1.json'));api=json.load(open(R/'drain8023-author-cache-api-v1.json'))
+assert subprocess.check_output(['git','write-tree'],cwd=W,text=True).strip()==f['tree']=='0efe83391c2f29a26ebeb5d4e98cab68371c8c7b'
+assert all(f['source_paths'][p]==h for p,h in c['source_hashes'].items())
+added=set(f['source_paths'])-set(c['source_hashes']);assert len(added)==2 and all(p.startswith('logs/runner-cache/') for p in added)
+for p,h in f['source_paths'].items():assert sha(W/p)==h
+for p,h in f['inputs'].items():assert sha(W/p)==h
+assert not subprocess.check_output(['git','diff','--name-only'],cwd=W,text=True).strip()
+execs=[]
+for i,(label,count) in enumerate([('cutoff',32),('galerkin',43)]):
+ p=R/f'drain8023-execution-{label}.json';e=json.load(open(p));assert e['status']=='ok' and e['exit_code']==0 and not e['stderr'];assert e['elapsed_sec']<180 and not e['whole_tree_watchdog']['violations'];assert e['whole_tree_watchdog']['peak_tree_rss_bytes']<180*1048576
+ assert sha(pathlib.Path(e['capture_script']))==e['capture_script_sha256'];assert 'TOTAL: PASS='+str(count)+' FAIL=0' in e['stdout']
+ cache=W/'logs/runner-cache'/(pathlib.Path(e['runner']).stem+'.txt');t=cache.read_text();assert e['stdout'] in t;assert 'runner_sha256: '+sha(W/e['runner']) in t;assert 'input_fingerprint_sha256: '+api[i]['declared_input_fingerprint'] in t;assert '\nstatus: ok\n' in t
+ execs.append(dict(path=str(p),sha256=sha(p),total_pass=count,elapsed_sec=e['elapsed_sec'],peak_tree_rss_bytes=e['whole_tree_watchdog']['peak_tree_rss_bytes'],cache=str(cache.relative_to(W)),cache_sha256=sha(cache)))
+for a in c['original_dispositions']:
+ assert sha(W/a['final_path'])==a['final_sha256'];assert hashlib.sha256(gzip.decompress((W/a['final_path']).read_bytes())).hexdigest()==a['original_sha256']
+refs=['drain8023-original-review.json','drain8023-cold-confirmation-v1.json','drain8023-author-final-freeze.json','drain8023-author-cache-api-v1.json','drain8023-capture.py','drain8023-independent-control.json']
+out=dict(status='FINAL SOURCE VERDICT PASS WITH BOUNDED CLAIMS',reviewer_session='/root/review_8012',base=f['base'],tree=f['tree'],original_head='4c3b9bd33bfbc2e03b9d91e05849607bc33ec70c',original_delta_base='66b1b4f8a964f4011a3f4e7876369b7daf8e1834',original_dispositions=c['original_dispositions'],source_hashes=f['source_paths'],inputs=c['inputs'],execution_input_hashes=f['inputs'],executions=execs,references={n:sha(R/n) for n in refs},verification={'originals':407,'archive_objects':384,'source_paths':len(f['source_paths']),'cold_science_and_inputs_unchanged':True,'only_final_changes':'Two actual canonical caches added. Every preexisting main file preserved; source remains additions only.','cache_confirmation':'Actual stdout/header/source SHA/input fingerprint match frozen source and receipts. No primary or shared preflight rerun. Root owns final canonical --cache.'},claim_dispositions=json.load(open(R/'drain8023-original-review.json'))['claim_dispositions'],scope='Supplied fixed compact SU3 cube only: finite carrier with exact Gauss action, energy/time-priced approximation, form-domain Schur count and low-window certified Ritz enclosures. No native compiler/action/clock/physical-parameter selection, whole-cube numerical spectrum, thermodynamic gap, or general negative-route certification.',remaining='No material source finding. No N1 negative packet PASS or audit verdict. Root final receipt/cache/integration gates remain external to this source review.',no_source_edits=True)
+p=R/'drain8023-final-review.json';assert not p.exists();p.write_text(json.dumps(out,indent=2)+'\n')
+(R/'drain8023-final-review.md').write_text('# PR8023 final source review\n\n**PASS WITH BOUNDED CLAIMS**, tree `'+f['tree']+'`.\n\nThe two new supplied-model cutoff and Schur/Ritz results remain within their explicit finite-cube assumptions. All407 original paths are recovered exactly; existing main repairs survive. The two final captures passed32/0 and43/0 under180s/180MiB, with source/input identities unchanged from cold confirmation. Twenty independent exact controls were retained.\n\nNo no-go packet PASS or audit status is granted. Root owns final canonical receipt/cache and integration checks; no reviewer primary rerun was performed.\n')
+print(p,sha(p))

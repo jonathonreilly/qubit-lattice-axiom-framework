@@ -1,0 +1,1 @@
+This note proves flip identities and a sufficient static-mixture construction and reports finite mixture witnesses; universal mixture necessity and cycle or environment exclusions are deferred; no order, mixture, rule or coupling is selected as physical, and no clause is adopted.

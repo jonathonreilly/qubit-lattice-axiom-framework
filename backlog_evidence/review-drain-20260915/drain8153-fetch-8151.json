@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "2772cca288cccf1089db76a979b5c67208d31cf8",
+  "fetched_ref": "refs/review-loop/fetched/8151-17b998a1ca8647848a1a718c0b70635a",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block17-static-law-strong-coupling-order-chessboard-peierls-20260915",
+    "headRefOid": "2772cca288cccf1089db76a979b5c67208d31cf8",
+    "isDraft": false,
+    "number": 8151,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

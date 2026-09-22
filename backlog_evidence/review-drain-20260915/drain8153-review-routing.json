@@ -1,0 +1,64 @@
+{
+  "status": "PROVENANCE_FREEZE_AND_REVIEW_ROUTING_ONLY_NOT_SCIENTIFIC_REVIEW",
+  "author": "/root/resume_8077",
+  "current_main": "0ee1a0396c2160605397ecf42f3602215a572c67",
+  "original_inventory": {
+    "path": "/private/tmp/review-drain-20260915/drain8153-original-inventory.json",
+    "sha256": "20a2eb9f7a8f989ce37532ff05ec243c1a4df39e63e8b591d00f1cec5b7ecbcb"
+  },
+  "wave7_head_matches": true,
+  "original_path_occurrences": 66,
+  "source_collision_result": "All six canonical note/runner paths absent at specified current main; original generated citation manifests collide and must remain history, not overwrite current graph.",
+  "coherence": "Three distinct proof units with thematic interaction, not one automatically coherent scientific gate. PR8151 discrete static strong-coupling order; PR8152 covariance and support geometry; PR8153 continuous static correlation bounds. Shared campaign history alone does not merge them.",
+  "routing": [
+    {
+      "pr": 8151,
+      "unit": "standalone discrete static phase unit",
+      "actual_parent": "ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "focus": "Full site-reflection/chessboard proof, event dissemination normalization, contour separation and 2D-to-3D in-plane step, infinite-volume and multiple-state arguments; actual standard imports and finite execution domains. These are review questions, not adjudicated defects."
+    },
+    {
+      "pr": 8152,
+      "unit": "standalone covariance/support unit",
+      "actual_parent": "POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "focus": "Finite-support hypothesis versus uniform seed; stabilizer/frame covariance and seed-generation scope; cube-orbit classification; Born overlap versus adopted probability law. Compare current corrected PR8137 parent scope, no axiom selector."
+    },
+    {
+      "pr": 8153,
+      "unit": "standalone continuous static correlation unit after parent-scope closure",
+      "actual_parent": "same possibility-covariance parent as8152; static definition references block01 in prose but no literal input/link",
+      "focus": "Full Gaussian-domination/infrared derivation, spectral normalization and finite-to-infinite limits, zero-field lower-bound proof and transverse component interpretation, named mathematical imports; reconcile comparative formation/six-axis exclusions with corrected8147 and independently reviewed8151. Do not assume sole surviving physical candidate."
+    }
+  ],
+  "provisional_author_scope": "Preserve all66 original versions including real controls/output and complete proofs; copy only missing canonical science into clean managed author slot when root dispatches. Replace historical generated manifest with recovery disposition. Bind actual load-bearing parents rather than prose-only imports. All original primaries declare900s and three literal inputs; choose bounded execution metadata only after source review. Any unsupported universal exclusions/classifications require scoped narrowing or explicit negative-gate deferral with original proof/branch recovery; no such judgment made by this routing pass.",
+  "execution": "No runner imported or executed; literal declarations parsed via AST only. No science edits, cache writes, new worktree or GitHub mutations. PR artifacts attached.",
+  "recovery": [
+    {
+      "pr": 8151,
+      "head": "2772cca288cccf1089db76a979b5c67208d31cf8",
+      "delta_base": "2ed54cb83a4cb6b336e7053e19c8010d5d2930d8",
+      "patch": "/private/tmp/review-drain-20260915/drain8153-pr8151-original.patch",
+      "patch_sha256": "53274afc6b5e7eb6d89774306dd4c147effec4f994319545d76c136dd0de9b37",
+      "source_directory": "/private/tmp/review-drain-20260915/drain8153-originals/8151",
+      "fetch_receipt": "/private/tmp/review-drain-20260915/drain8153-fetch-8151.json"
+    },
+    {
+      "pr": 8152,
+      "head": "70f28178c47a6f5bc3666c3e2878950dc212d3f6",
+      "delta_base": "2ed54cb83a4cb6b336e7053e19c8010d5d2930d8",
+      "patch": "/private/tmp/review-drain-20260915/drain8153-pr8152-original.patch",
+      "patch_sha256": "558a22c5aef9606522302677fc7b2e44606ebb12437925965036856c08f34ad8",
+      "source_directory": "/private/tmp/review-drain-20260915/drain8153-originals/8152",
+      "fetch_receipt": "/private/tmp/review-drain-20260915/drain8153-fetch-8152.json"
+    },
+    {
+      "pr": 8153,
+      "head": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b",
+      "delta_base": "2ed54cb83a4cb6b336e7053e19c8010d5d2930d8",
+      "patch": "/private/tmp/review-drain-20260915/drain8153-pr8153-original.patch",
+      "patch_sha256": "76365a51de2369e3cdd60e3f50fda226de752e263fc27142a60099ac9fac7b00",
+      "source_directory": "/private/tmp/review-drain-20260915/drain8153-originals/8153",
+      "fetch_receipt": "/private/tmp/review-drain-20260915/drain8153-fetch-8153.json"
+    }
+  ]
+}

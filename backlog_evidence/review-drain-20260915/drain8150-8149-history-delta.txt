@@ -1,0 +1,505 @@
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+index 8f9c496033..1ce7bdd56a 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+@@ -9,2 +9,12 @@
+ | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
+ | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
++
++## Block 15 — the formation-unit clause witness (2026-09-15)
++
++| Family | Object/formulation | Mechanism/invariant | Terminal obligation | Strength vs target | Status | Concrete evidence | Reopen condition |
++|---|---|---|---|---|---|---|---|
++| F15.1 joint law | the rule-consistent law on a unit given its outside records | the telescoping-ratio uniqueness lemma | none | exact | candidate-complete | U1 (B1) | — |
++| F15.2 the criterion | sequential = joint iff no site records an inside neighbour with a second | one-site conditionals; `K_k` depends on each argument (closed-form lemma) | none | exact at every non-constant rule | candidate-complete | U2 (B2, C1–C3) | — |
++| F15.3 the star and the plaquette | isolated units | Theorem B; the plaquette's last site | none | exact | candidate-complete | U3 (D1–D2) | — |
++| F15.4 environments | connected multi-site units with recorded surroundings | the last site records all six neighbours | none | exact | candidate-complete | U4 (E1–E2) | — |
++| F15.5 random covariant units | mixtures over units | — | a classification | — | not attempted | — | a covariant unit law supplied |
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
+index e99dd0e244..3eab60d293 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
+@@ -24,2 +24,10 @@
+ - Simultaneous formation (several records locking in one step) is not a total order; the formation law of a partial order with simultaneous steps would need a joint conditional the axiom does not state; named in N7.
+ - Infinite volume: the static specification's DLR existence (compactness on a finite menu) and uniqueness are outside the block.
++
++## Block 15 (2026-09-15) — the formation-unit clause witness
++- Dependencies: `minimal_axioms`; block 01 (Theorem B; the cycle disagreement) and the census note (Lemma L; joint formation named as an owner decision), both on `main`. Proposed, unaudited. PR #8148 referenced for context only.
++- Named premises: the records-only reading; the six-axis menu; positivity; the product rule; the definition of joint formation as the rule-consistent law on the unit given its outside records.
++- Scaffolding: the units (star, plaquette, domino, path, single site); the environments (none; all `+x`; a seeded pseudo-random configuration printed by the runner); the star's classes by the number of leaves before the center.
++- External methods (re-proved at scope): the ratio argument for uniqueness of a positive law given its conditionals; the normalizer lemma.
++- References named, not used: the projector chain rule of the unitary-tick notes.
++- Counterfactual pass: the constant rule (all laws uniform); covariant random units (mixtures; not classified); other menus (the lemma's dependence on each argument would need re-proof).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block15_findings.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block15_findings.md
+new file mode 100644
+index 0000000000..cc64e85256
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block15_findings.md
+@@ -0,0 +1,14 @@
++# Refuting pass — block 15 (supervisor-run, disjoint machinery; 2026-09-15)
++
++Routes compared (control `specs/supervisor_control_block15_formation_unit.py`, refuting pass `specs/supervisor_control_block15_refuter.py`, outputs in `.out.txt`):
++
++| item | runner's route | refuting route | result |
++|---|---|---|---|
++| the criterion (U2) | set arithmetic on recorded neighbours per site | a second implementation tracking each site's recorded neighbours as a list at formation time, compared with exact equality on every order of the isolated domino, path and plaquette and the star classes `k = 0, 1, 2` | agrees on every order |
++| the star's joint law and its center-first sequential law (U3) | the normalized edge product; the sequential product of conditionals | the tree factorization `(1/6) Π_leaves K(v_center, v_leaf)` written by hand | equal on all `6^7` patterns, for both laws |
++| the star in the mixed environment (U4) | `seq_law` | an order-by-order recursion: the center's uniform draw times each leaf's conditional given the center and its five outside records | equal on all patterns; differs from the joint law |
++| the normalizer lemma (U2) | symbolic in `(p, q, r)` for `k = 2..6` | integers at `(3,1,2)` for `k = 2..8`: `Z_1^k (K_k(b..b) − K_k(−b,b..b)) = (p−q)(p^{k−1} − q^{k−1})` | equal; positive |
++
++Findings: none in the primary. Two scope notes recorded in the fold: the star's environment executions cover three orders per environment (each star law is `6^7` patterns; the runner stays near one minute), and the lemma's orthogonal form is needed only when `p = q`.
++
++Attempts to refute (nothing refuted): U2's "only if" was re-read for a site `w` whose recorded set `A_w` overlaps other sites' recorded sets — the comparison pattern sets every value in every `A_{w'}` containing `y` to `b`, which is one consistent pattern, and every such factor moves in the same direction (all differences in the Lemma have the sign of `p − q`, or are positive in the orthogonal form); U4 was re-read for a unit some of whose sites are interior (all six neighbours inside) — the argument uses the *last* site of the order, which has all neighbours recorded whether inside or outside, and at least one inside neighbour by connectedness; U1's telescoping path was re-read for positivity (every conditional is strictly positive, so no ratio is undefined). Verdict of this pass: PASS-NO-BLOCKER at the supervisor's own standard, pending the owner's independent review.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block15.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block15.md
+new file mode 100644
+index 0000000000..a5b2b34af8
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block15.md
+@@ -0,0 +1,15 @@
++# Claim status certificate — block 15 (close, 2026-09-15)
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: upstream_support
++reachability_to_target: supports
++conditional_surface_status: "U1, U2, U4 proved for every non-constant rule; U3 and the environment executions at (3,1,2); conditional on the records-only reading, the six-axis menu, the product rule and the definition of joint formation as the rule-consistent law"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++claim_type_reason: "a telescoping ratio argument; a one-site-conditional comparison with an exact normalizer lemma; exhaustive enumeration on small units; a last-site argument; every number an exact rational"
++dependency_classes: "one premise node (minimal_axioms); block 01 and the census note (both on main; proposed, unaudited)"
++open_imports: "the six-axis menu; the product form; positivity; the definition of joint formation as the supplied object of the witness"
++review_loop_disposition: pending (supervisor-run block; author checks only)
++independence_class: "single seat (Fable, supervisor): control, contract with a lens pass, primary, refuting pass by a second criterion implementation, the tree factorization, an order-by-order recursion and the integer lemma, fold"
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block15.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block15.md
+new file mode 100644
+index 0000000000..697bd5266c
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block15.md
+@@ -0,0 +1,25 @@
++# GOAL — block 15: the formation-unit clause witness — when sequential formation of a unit reproduces its joint law (2026-09-15)
++
++**Owner directive (2026-09-15):** don't stop; assess the next lane at each conclusion; no subagents; derivations over computation.
++
++**Why this block.** The derivation campaign's verdict table (#8093) lists "Formation unit" as *to compute*: single-site formation ("for each site") against joint formation on a covariant set, with the expected witness "the joint law on a covariant set differs from every sequential law" on the star (a site and its six neighbours), and the clause candidates "for each site" against "for each admissible set of sites". Nobody has opened it. `main`'s joint-formation notes (2026-09-03/04) live in the unitary-tick setting; the classical definition is stated here.
++
++**Object.** A unit `U ⊂ Z³` (finite), its outside neighbours `O = N(U) \ U` carrying fixed records `v_O` (possibly empty: the isolated unit); the six-axis menu with the product rule `(p, q, r)`, executed at `(3,1,2)`. *Joint formation* of `U`: the records of `U` are drawn from the unique positive law on `U` whose one-site conditionals, given all neighbours inside and outside, are the rule — the Gibbs conditional `Π_{edges in U and U–O} φ / Z_U(v_O)`. *Sequential formation* along an order: `Π_x r(v_x | v_{A_x})` with `A_x` the outside neighbours of `x` together with the inside neighbours recorded before `x`.
++
++**Contract.**
++- U1 (uniqueness lemma, re-proved): a positive law on a finite set is determined by its one-site conditionals; hence the joint law is well defined.
++- U2 (the criterion): sequential formation of `U` in the environment `v_O` equals the joint law **iff** no site records an inside neighbour together with a second recorded neighbour (inside or outside); proved for every non-constant rule via the lemma `K_k(b, b, …, b) ≠ K_k(−b, b, …, b)` for `p ≠ q` (closed form `((p−q)/Z_1)[(p/Z_1)^{k−1} − (q/Z_1)^{k−1}]`) and `K_k(b, …) ≠ K_k(c, …)`, `c ⊥ b`, for `p = q ≠ r`.
++- U3 (the star, corrected): in isolation the star's sequential law equals its joint law iff at most one leaf precedes the center (executed: the seven classes by `k`, total variations for `k = 2..6`); the campaign's expected witness fails on the isolated star and holds on the isolated plaquette (every order differs; executed).
++- U4 (units in a recorded environment): every connected unit with at least two sites differs from its joint law under every order (the last site records all its neighbours); executed on the star, a domino and a path in two environments; a single site agrees.
++- U5 (the clause reading): "for each site" is the sequential reading; "for each admissible set" with the whole window as the set is the static reading; intermediate units in an environment never coincide with sequential formation. Recorded, not adopted.
++- N-gate for the negatives (U2's "only if"; U4).
++
++**Lens pass (self-run panel).**
++- *"Joint formation is undefined for a classical rule."* Defined as the rule-consistent law on the set (U1 makes it unique); this is the only reading under which "for each site … determined by the nearest-neighbour conditions" applies to every site of the set at once.
++- *"The star was supposed to be the witness."* It is not, in isolation: Theorem B (block 01) makes center-first formation reproduce the joint law. The environment restores the witness (U4), and the criterion says exactly why.
++- *"Is U2 just block 01 again?"* Block 01 treats isolated windows without an environment; U2 adds the environment and gives the iff in terms of recorded neighbours; the environment case is what a unit inside a growing record field sees.
++- *"Only small units."* The theorems are general; the executions are on the star, the plaquette, a domino, a path and a single site.
++
++**Forbidden phrases (beyond the lane's standing list):** "the unit clause is adopted", "selects the unit", "converge", "emergent", "certified".
++
++**Prior-art search at `origin/main`.** `git grep -n -iE "joint(ly)? (formation|forms|record)|forms? (all )?at once|formation unit"` → the census note (names joint formation on covariant sets as an owner decision), the unitary-tick notes of 2026-09-03/04 (commuting projectors; a different setting); no classical criterion. Open PRs: none on the unit seam.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+index 6dfc9de138..68a9716fb9 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+@@ -26,2 +26,5 @@ Stacked on #8002 → #8000 → #7999 → #7998 → main; all hand-offs. Block 05
+ 
+ Current source review found five further P2 groups, corrected in the canonical note and runner with their disposition in REVIEW_HISTORY.md. Same-session confirmation is pending; this appendix records an open review handoff.
++
++## 2026-09-15 block 15 opened for review as PR #8149 (supervisor)
++Independent PR against `main` (`0cbc631227`); parents on `main`: block 01 and the census note. The lane assessment after block 14 took #8093's formation-unit row ("to compute"). Block 15 = joint formation defined for a classical rule as the rule-consistent law on the unit given its outside records (unique by the ratio lemma, U1); the criterion — sequential formation reproduces the joint law iff no site records an inside neighbour together with a second recorded neighbour (U2, both directions, every non-constant rule, via the exact normalizer lemma); the star corrected — in isolation it does not separate the readings (equal iff at most one leaf precedes the center), the plaquette does under every order (U3); in a recorded environment every connected multi-site unit differs under every order (the last site records all six neighbours; U4); the clause reading — "for each site" is sequential, the whole window as the unit is the static reading, intermediate units in an environment never coincide with sequential formation (U5). Recorded, not adopted. Seats supervisor-run; refuting pass consistent on four routes. Certificate 18/18; 12 mutations in-family; cache pinned; gates: pipeline ×2, audit_lint strict OK, vocab clean, diff --check clean, only the manifest kept from generated audit data. Lock held (refreshed) for the next assessment.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
+index 9ccaee75bb..413a69afd7 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
+@@ -14,2 +14,7 @@ Policy: reference and converge, never borrow; every statement used is re-proved
+ - The Pickard random field / Markov-mesh (unilateral Markov field) construction — Abend, Harley and Kanal (1965); Pickard (1977, 1980): a two-parent unilateral construction whose rows and columns are Markov chains when the corner-pair condition holds. The framework's row sweep under the records-only reading is an instance: `Z_2 = Z_1^2 K^2` with `K` symmetric doubly stochastic is the condition; Theorem E re-proves the row statement natively (the column statement is a lead for the next block).
+ - Toom and Vasilyev (1970s): product-form and Markov invariant measures of probabilistic cellular automata — reference only.
++
++## Block 15 (2026-09-15) — references named, none used as authority
++- The uniqueness of a positive law given its one-site conditionals (the Brook–Besag ratio argument): re-proved at scope as U1.
++- The projector chain rule for commuting projectors (main's unitary-tick notes of 2026-09-03/04): the setting in which sequential and joint recording agree; contrasted, not used.
++- Block 01's Theorem B and the census note's Lemma L (both on `main`): used as stated.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+index 2977b7f990..2b8972fc14 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+@@ -9,2 +9,6 @@ Routes read at their proofs, not their headlines.
+ | Convex-consistency (affine rule output) vs product form (R136/T212/T213) | same packet | Normalizer constant iff no coupling (rank argument; Funk–Hecke on the sphere). | Re-proved exactly on the menu as the two-neighbor normalizer factorization; used for T2(b). |
+ | Binary full-conditional compatibility (landed 2026-08-10) | `docs/ADMISSIBILITY_BINARY_FULL_CONDITIONAL_COMPATIBILITY_ISING_ACTION_AXIOM_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md` | Static half on binary menus; excludes formation dynamics by its own boundary. | Upstream; generalized here; the excluded object is this block's subject. |
++
++## Block 15 (2026-09-15) — negatives at scope
++- **Sequential formation of a unit reproduces its joint law only when no site records an inside neighbour together with a second recorded neighbour** (U2, "only if"), for every non-constant rule; escape: the constant rule.
++- **In a recorded environment no connected unit with two or more sites is formed "as if one at a time" under any order** (U4); the isolated star with the center first or second is the positive counterpart (U3). Escapes named for the N-gate: covariant random units (mixtures); other menus.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+index 74d2f60bae..7eaec590d0 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+@@ -79,2 +79,11 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
+ 4. **The silent triples by a non-criterion route** (unchanged; heavy).
+ 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
++
++## Refresh at block 15 opening (2026-09-15)
++
++Block 15 opened for review (independent PR against main): the formation-unit clause witness with the criterion. With blocks 14 and 15 the campaign's rate and unit rows are computed. Ranked next:
++
++1. **The menus block** (#8093, "to compute"): covariant supports generated by recorded neighbours under the unsoldered reading — a stabilizer classification; small-to-medium; its Born half collapsed by #8137.
++2. **Covariant random units** (mixtures over units) and **larger windows for the rate no-go** — medium.
++3. **The stability theorem (block 12, S6); the static law's phase; the sphere rule beyond second order** — hard; unchanged.
++4. **Small corollaries of blocks 11–13** — unchanged.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block15.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block15.md
+new file mode 100644
+index 0000000000..a01814d56b
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block15.md
+@@ -0,0 +1,16 @@
++# RESULTS — block 15: the formation-unit clause witness (2026-09-15)
++
++**Deliverables (branch `physics-loop/admissibility-induced-law-block15-formation-unit-clause-witness-20260915`, independent PR against `main` at `0cbc631227`; parents on `main`: block 01 and the census note of 2026-09-13):** the note `docs/ADMISSIBILITY_RULE_FORMATION_UNIT_CLAUSE_WITNESS_SEQUENTIAL_FORMATION_REPRODUCES_THE_JOINT_LAW_IFF_NO_SITE_RECORDS_AN_INSIDE_NEIGHBOUR_WITH_A_SECOND_BOUNDED_THEOREM_NOTE_2026-09-15.md`; the runner `scripts/admissibility_rule_formation_unit_clause_witness_sequential_equals_joint_iff_criterion_2026_09_15.py` (18 checks, 12 mutations, exact rational and symbolic arithmetic, ~65 s); the pinned cache; the control and the refuting pass with outputs (`specs/supervisor_control_block15_formation_unit.py`, `specs/supervisor_control_block15_refuter.py`); `GOAL_block15.md`; `CHECKER_block15_findings.md`; this record. Blocks 06–14 remain open as PRs #8034, #8035, #8138–#8142, #8146, #8147, #8148.
++
++**Why this block.** The derivation campaign's verdict table (#8093) lists "Formation unit" as *to compute*, expecting the joint law on the star to differ from every sequential law; nobody had opened it, and `main`'s joint-formation notes are in the unitary-tick setting.
++
++## Result, in one paragraph
++Joint formation of a unit `U` given its outside records is defined as the unique positive law on `U` whose one-site conditionals given all neighbours are the rule — the Gibbs conditional; uniqueness is the telescoping-ratio lemma, re-proved (U1). Sequential formation along an order reproduces the joint law **iff** no site records an inside neighbour together with a second recorded neighbour, inside or outside (U2); the "only if" uses the exact lemma `K_k(b,…,b) − K_k(−b,b,…,b) = ((p−q)/Z_1)[(p/Z_1)^{k−1} − (q/Z_1)^{k−1}]` (with an orthogonal form for `p = q`) and U1. Consequences: in isolation the star's sequential law equals its joint law iff at most one leaf precedes the center (`TV = 0, 0, 1/72, 5/144, 505/10368, 575/10368, 103375/1492992` for `k = 0..6`), so the campaign's expected star witness fails in isolation, while the isolated plaquette differs under every order (`455/31176`, `37/1299`) and from every convex combination (U3); in a recorded environment every connected unit with at least two sites differs from its joint law under every order, because the last site records all six neighbours (U4; the star's center-first law in the all-`+x` environment is at distance `0.403`). Clause reading: "for each site" is the sequential reading; "for each admissible set" with the whole window as the set is the static reading; intermediate units in an environment never coincide with sequential formation (U5). Recorded, not adopted.
++
++## Certificate
++- Runner: `TOTAL: PASS=18 FAIL=0`; 12 mutations each in its family; no floating-point literal or conversion; classical names only under Prior art and Imports.
++- Refuting pass (`CHECKER_block15_findings.md`): a second implementation of the criterion, the tree factorization of the star's joint law, an order-by-order recursion for the environment star, and the lemma by integers to `k = 8` — all consistent.
++- Claim type `bounded_theorem`; status `bounded-support`; trace `upstream_support`; audit required.
++
++## Not claimed
++Covariant random units; menus other than the six-axis one; any clause; any selection of an order, unit, rule or coupling as physical.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+index 08d17f0940..121dbb47a1 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+@@ -200,2 +200,15 @@ executed against the four declared inputs on current main. The original
+ fresh checks. Original-reviewer confirmation is pending; no audit status is
+ applied, and only the coordinator may perform authorized integration.
++
++## block 15 — V1-V5 (supervisor, 2026-09-15)
++- V1: #8093's formation-unit block ("Formation unit: to compute"), its expected star witness and its clause candidates ("for each site" against "for each admissible set of sites").
++- V2: the lens pass in `GOAL_block15.md` ("joint formation is undefined for a classical rule" — defined as the rule-consistent law, unique by U1; "the star was supposed to be the witness" — it is not in isolation, it is in an environment; "is U2 block 01 again" — block 01 is the isolated case; U2 adds the environment and the iff).
++- V3: U1, U2, U4 proved; U3 and the environment cases executed exactly (18 checks, 12 mutations); the refuting pass agreed on four routes.
++- V4: no order, unit, rule or coupling selected; no clause adopted; the owner's decision named.
++- V5: consumers named — #8093's verdict table and assembly; PR #8148 as the companion witness; the campaign's queue.
++
++## block 15 — supervisor lens pass, primary, refuting pass and fold (2026-09-15)
++Lens (`GOAL_block15.md`): as V2. Primary: the note and the runner (18 checks, 12 mutations). Refuting pass (`CHECKER_block15_findings.md`): a second implementation of the criterion against exact equality, the tree factorization of the star's joint law and its center-first sequential law, an order-by-order recursion for the environment star, and the lemma by integers to `k = 8` — all consistent. No defects found in the primary. Author checks only; independent review pending.
++
++## block 15 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
++1 self-containment: PASS — inputs: this note, the axioms memo, block 01 and the census note, all on `main` at `0cbc631227`; nothing pinned from a branch or PR (PR #8148 is context only). 2 cache/execution: PASS. 3 claim-scope honesty: PASS — the definition of joint formation is named as the supplied object; random units and other menus marked open; the clause table adopts nothing. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
+index 9b1cd3a27f..a137b5c1c8 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
+@@ -85,2 +85,9 @@ git grep -l -iE "phase transition.*(menu|product rule)|(menu|product rule).*phas
+ 
+ Target state after the matched-hit review: **open** — no note on `origin/main` computes the one-site interdependence coefficient of the menu rule, states its uniqueness region, or re-proves the criterion.
++
++## Block 15 (2026-09-15) — prior-art search and routes (independent PR against main; blocks 06–14 are open PRs #8034, #8035, #8138–#8142, #8146–#8148)
++Searched commit: `origin/main` = `0cbc631227`.
++- `git grep -n -iE "joint(ly)? (formation|forms|record)|forms? (all )?at once|formation unit" origin/main -- 'docs/*.md'` → the census note (joint formation on covariant sets named as an owner decision); the unitary-tick notes of 2026-09-03/04 (commuting projectors; sequential and simultaneous recording agree there); no classical definition or criterion.
++- #8093's verdict table: row "Formation unit" — *to compute*; the expected witness (the star) and the clause candidates as recorded in the note.
++- Open PRs: none on the unit seam.
++Classification: **open after the matched-hit review.** Routes: J-A the rule-consistent law as the definition, with the uniqueness lemma (U1) — chosen; J-B the one-site-conditional comparison with the normalizer lemma (U2) — chosen; J-C exhaustive small units, isolated and in environments (U3, U4) — chosen; J-D covariant random units — not taken (mixtures; the plaquette hull and the environment theorem cover the executed cases); J-E other menus — not taken.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+index e166420207..c64f7c5fe2 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+@@ -106,2 +106,13 @@ source_review_correction:
+ # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
+ # audit_status: "unset; no audit invoked or verdict applied by this source correction"
++
++# ---------------------------------------------------------------- block 15 close (2026-09-15)
++# block: 15
++# branch: physics-loop/admissibility-induced-law-block15-formation-unit-clause-witness-20260915 (independent; base origin/main 0cbc631227; blocks 06-14 are open PRs #8034, #8035, #8138-#8142, #8146-#8148)
++# pr_status: opened for review — PR #8149 (base = main); hand-off; never merged by the campaign; not a main landing
++# final_certificate: "TOTAL: PASS=18 FAIL=0; 12 mutations, census 12/12 in-family; refuting pass consistent on four routes; gates: see HANDOFF.md"
++# seats: "supervisor-run: control -> contract with a lens pass -> primary (U1-U5, runner) -> refuting pass (second criterion implementation; tree factorization; order-by-order recursion; integer lemma) -> fold"
++# review_findings: "joint formation = the rule-consistent law (unique by the ratio lemma); sequential = joint iff no site records an inside neighbour with a second recorded neighbour (lemma K_k(b..b) - K_k(-b,b..b) = ((p-q)/Z1)[(p/Z1)^(k-1) - (q/Z1)^(k-1)]); isolated star: equal iff <= 1 leaf before the center (TV 0,0,1/72,5/144,505/10368,575/10368,103375/1492992) -> the campaign's star witness fails in isolation; isolated plaquette: every order differs (455/31176, 37/1299); in an environment every connected multi-site unit differs under every order (last site records all six neighbours); clause reading: whole-window unit = the static reading; recorded, not adopted"
++# strongest_unresolved_proof_obligation: "covariant random units; other menus"
++# next_exact_action: "queue refresh 2026-09-15 (block 15 opening): the menus block; random units; larger windows"
++# lock: held (owner: don't stop; assess the next lane at each conclusion)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+index 8f432e2cd2..13eca3bfed 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+@@ -64,2 +64,13 @@ artifact_role: theorem
+ next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
+ ```
++
++# Trace gate — block 15, at PR opening (2026-09-15)
++```yaml
++trace_class: upstream_support
++target_claim_id: null
++target_blocker_text: "#8093's formation-unit block: single-site formation against joint formation on a covariant set, with the clause candidates 'for each site' against 'for each admissible set of sites'"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem
++next_trace_action: "the witness is exhibited exactly with the criterion for agreement (sequential = joint iff no site records an inside neighbour with a second); the isolated star does not separate the readings, a recorded environment always does; the clause decision is the owner's. Next: the menus block, or the lane's harder residuals. Consumers: #8093's verdict table and assembly; PR #8148"
++```
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block15_formation_unit.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block15_formation_unit.out.txt
+new file mode 100644
+index 0000000000..470d404a0d
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block15_formation_unit.out.txt
+@@ -0,0 +1,25 @@
++isolated star, 0 leaves before the center: TV(seq, joint) = 0 (0.00000); violates criterion: False
++isolated star, 1 leaves before the center: TV(seq, joint) = 0 (0.00000); violates criterion: False
++isolated star, 2 leaves before the center: TV(seq, joint) = 1/72 (0.01389); violates criterion: True
++isolated star, 3 leaves before the center: TV(seq, joint) = 5/144 (0.03472); violates criterion: True
++isolated star, 4 leaves before the center: TV(seq, joint) = 505/10368 (0.04871); violates criterion: True
++isolated star, 5 leaves before the center: TV(seq, joint) = 575/10368 (0.05546); violates criterion: True
++isolated star, 6 leaves before the center: TV(seq, joint) = 103375/1492992 (0.06924); violates criterion: True
++  (35.3s)
++isolated plaquette: distinct TV(seq, joint) values over 24 orders: {'455/31176': 16, '37/1299': 8}
++star in environment (all +x), 0 leaves first: TV(seq, joint) = 0.40290; violates: True
++star in environment (all +x), 6 leaves first: TV(seq, joint) = 0.10368; violates: True
++star in environment (all +x), 1 leaves first: TV(seq, joint) = 0.34869; violates: True
++star in environment (mixed), 0 leaves first: TV(seq, joint) = 0.14627; violates: True
++star in environment (mixed), 6 leaves first: TV(seq, joint) = 0.07539; violates: True
++star in environment (mixed), 1 leaves first: TV(seq, joint) = 0.10719; violates: True
++domino in a mixed environment: (equal, violates) over orders: [(False, True), (False, True)]
++path3 in a mixed environment: (equal, violates) over orders: [(False, True), (False, True), (False, True), (False, True), (False, True), (False, True)]
++single in a mixed environment: (equal, violates) over orders: [(True, False)]
++domino isolated: (equal, violates) over orders: [(True, False), (True, False)]
++path3 isolated: (equal, violates) over orders: [(True, False), (False, True), (True, False), (True, False), (False, True), (True, False)]
++K_2(b,...,b) = 13/72 vs K_2(-b,b,...,b) = 11/72: differ True; predicted difference ((p-q)/Z1)[(p/Z1)^(k-1) - (q/Z1)^(k-1)] = 1/36 == 1/36
++K_3(b,...,b) = 5/144 vs K_3(-b,b,...,b) = 11/432: differ True; predicted difference ((p-q)/Z1)[(p/Z1)^(k-1) - (q/Z1)^(k-1)] = 1/108 == 1/108
++K_4(b,...,b) = 73/10368 vs K_4(-b,b,...,b) = 47/10368: differ True; predicted difference ((p-q)/Z1)[(p/Z1)^(k-1) - (q/Z1)^(k-1)] = 13/5184 == 13/5184
++K_5(b,...,b) = 31/20736 vs K_5(-b,b,...,b) = 53/62208: differ True; predicted difference ((p-q)/Z1)[(p/Z1)^(k-1) - (q/Z1)^(k-1)] = 5/7776 == 5/7776
++K_6(b,...,b) = 493/1492992 vs K_6(-b,b,...,b) = 251/1492992: differ True; predicted difference ((p-q)/Z1)[(p/Z1)^(k-1) - (q/Z1)^(k-1)] = 121/746496 == 121/746496
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block15_formation_unit.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block15_formation_unit.py
+new file mode 100644
+index 0000000000..04678b668f
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block15_formation_unit.py
+@@ -0,0 +1,128 @@
++"""Control, block 15 (supervisor): the formation unit. Six-axis menu, product rule (3,1,2).
++Joint law on a unit U given outside records v_O: prod_{edges inside U and U-O} phi / Z_U(v_O).  Sequential law along an order:
++prod_x r(v_x | v_{A_x}), A_x = (N(x) cap O) cup (inside neighbours recorded before x).
++(1) isolated star (center + 6 leaves): classes by k = number of leaves before the center; TV(seq, joint) per k;
++(2) isolated plaquette: joint = static; TV to the 4 class laws;
++(3) star in an environment (outside values all +x, and a fixed mixed configuration): TV(joint, center-first) and (joint, leaves-first);
++(4) domino and path-of-3 in an environment: all orders vs joint; the criterion 'no site records an inside neighbour together with a second neighbour';
++(5) the lemma: K_k(a, b, ..., b) differs between a = b and a = -b for k = 2..6."""
++from fractions import Fraction as F
++from itertools import permutations, product
++from functools import reduce
++import random, time
++M = 6
++def orbit_type(s, u):
++    return "p" if s == u else ("q" if s // 2 == u // 2 else "r")
++W = {"p": 3, "q": 1, "r": 2}
++phi = [[W[orbit_type(s, t)] for t in range(M)] for s in range(M)]
++Z1 = sum(phi[0])
++_C = {}
++def cond(rec, s):
++    key = (rec, s)
++    if key not in _C:
++        if not rec:
++            _C[key] = F(1, M)
++        else:
++            num = reduce(lambda a, b: a * b, [phi[s][a] for a in rec], 1)
++            den = sum(reduce(lambda a, b: a * b, [phi[u][a] for a in rec], 1) for u in range(M))
++            _C[key] = F(num, den)
++    return _C[key]
++def nbrs(p):
++    return [tuple(p[k] + d[k] for k in range(3)) for d in ((1,0,0),(-1,0,0),(0,1,0),(0,-1,0),(0,0,1),(0,0,-1))]
++def make_unit(U):
++    U = list(U); Uset = set(U)
++    O = sorted({y for x in U for y in nbrs(x) if y not in Uset})
++    return U, O
++def joint_law(U, O, vO):
++    Uset = set(U); idx = {x: i for i, x in enumerate(U)}
++    w = {}
++    for v in product(range(M), repeat=len(U)):
++        x_ = 1
++        for i, x in enumerate(U):
++            for y in nbrs(x):
++                if y in Uset:
++                    j = idx[y]
++                    if j > i:
++                        x_ *= phi[v[i]][v[j]]
++                elif y in vO:
++                    x_ *= phi[v[i]][vO[y]]
++        w[v] = x_
++    Z = sum(w.values())
++    return {v: F(x_, Z) for v, x_ in w.items()}
++def seq_law(U, O, vO, order):
++    Uset = set(U); idx = {x: i for i, x in enumerate(U)}
++    law = {}
++    for v in product(range(M), repeat=len(U)):
++        S = set(); pr = F(1)
++        for x in order:
++            rec = []
++            for y in nbrs(x):
++                if y in Uset and y in S:
++                    rec.append(v[idx[y]])
++                elif y in vO:
++                    rec.append(vO[y])
++            pr *= cond(tuple(sorted(rec)), v[idx[x]])
++            S.add(x)
++        law[v] = pr
++    return law
++def tv(a, b):
++    return sum(abs(a[v] - b[v]) for v in a) / 2
++def violates(U, O, vO, order):
++    """criterion: some site records an inside neighbour together with a second neighbour (inside or outside)"""
++    Uset = set(U); S = set()
++    for x in order:
++        inside = [y for y in nbrs(x) if y in Uset and y in S]
++        outside = [y for y in nbrs(x) if y in vO]
++        if inside and len(inside) + len(outside) >= 2:
++            return True
++        S.add(x)
++    return False
++# (1) isolated star
++center = (0, 0, 0); leaves = nbrs(center)
++U, O = make_unit([center] + leaves)
++J = joint_law(U, O, {})
++t0 = time.time()
++for k in range(7):
++    order = leaves[:k] + [center] + leaves[k:]
++    L = seq_law(U, O, {}, order)
++    print(f"isolated star, {k} leaves before the center: TV(seq, joint) = {tv(L, J)} ({float(tv(L, J)):.5f}); violates criterion: {violates(U, O, {}, order)}")
++print(f"  ({time.time()-t0:.1f}s)")
++# (2) isolated plaquette
++Up, Op = make_unit([(0,0,0),(1,0,0),(1,1,0),(0,1,0)])
++Jp = joint_law(Up, Op, {})
++seen = {}
++for order in permutations(Up):
++    L = seq_law(Up, Op, {}, order)
++    key = tv(L, Jp)
++    seen[key] = seen.get(key, 0) + 1
++print("isolated plaquette: distinct TV(seq, joint) values over 24 orders:", {str(k): n for k, n in seen.items()})
++# (3) star in an environment
++vO_allx = {y: 0 for y in O}
++random.seed(3); vO_mixed = {y: random.randrange(M) for y in O}
++for name, vO in (("all +x", vO_allx), ("mixed", vO_mixed)):
++    Je = joint_law(U, O, vO)
++    for k, order in ((0, [center] + leaves), (6, leaves + [center]), (1, leaves[:1] + [center] + leaves[1:])):
++        L = seq_law(U, O, vO, order)
++        print(f"star in environment ({name}), {k} leaves first: TV(seq, joint) = {float(tv(L, Je)):.5f}; violates: {violates(U, O, vO, order)}")
++# (4) domino and path in an environment
++for name, sites in (("domino", [(0,0,0),(1,0,0)]), ("path3", [(0,0,0),(1,0,0),(2,0,0)]), ("single", [(0,0,0)])):
++    Ud, Od = make_unit(sites)
++    random.seed(5); vO = {y: random.randrange(M) for y in Od}
++    Jd = joint_law(Ud, Od, vO)
++    res = []
++    for order in permutations(Ud):
++        L = seq_law(Ud, Od, vO, order)
++        res.append((tv(L, Jd) == 0, violates(Ud, Od, vO, order)))
++    print(f"{name} in a mixed environment: (equal, violates) over orders:", res)
++# isolated path3 and domino (no environment): criterion vs equality
++for name, sites in (("domino", [(0,0,0),(1,0,0)]), ("path3", [(0,0,0),(1,0,0),(2,0,0)])):
++    Ud, Od = make_unit(sites)
++    Jd = joint_law(Ud, Od, {})
++    res = [(tv(seq_law(Ud, Od, {}, order), Jd) == 0, violates(Ud, Od, {}, order)) for order in permutations(Ud)]
++    print(f"{name} isolated: (equal, violates) over orders:", res)
++# (5) lemma
++for k in range(2, 7):
++    b = 0
++    same = sum(F(phi[s][b], Z1) ** k for s in range(M))
++    anti = sum(F(phi[s][1], Z1) * F(phi[s][b], Z1) ** (k - 1) for s in range(M))
++    print(f"K_{k}(b,...,b) = {same} vs K_{k}(-b,b,...,b) = {anti}: differ {same != anti}; predicted difference ((p-q)/Z1)[(p/Z1)^(k-1) - (q/Z1)^(k-1)] = {F(2, Z1) * (F(3, Z1) ** (k-1) - F(1, Z1) ** (k-1))} == {same - anti}")
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block15_refuter.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block15_refuter.out.txt
+new file mode 100644
+index 0000000000..9397033a40
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block15_refuter.out.txt
+@@ -0,0 +1,4 @@
++R1 second implementation of the criterion agrees with exact equality on every order of the domino, path, plaquette and the star classes k = 0,1,2: True
++R2 tree factorization equals the runner's joint law and the center-first sequential law on all 6^7 patterns: True True
++R3 order-by-order recursion equals the runner's center-first environment law on all patterns: True ; TV to the joint law: True
++R4 integer form of the lemma Z_1^k (K_k(b..b) - K_k(-b,b..b)) = (p-q)(p^(k-1) - q^(k-1)) for k = 2..8: True
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block15_refuter.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block15_refuter.py
+new file mode 100644
+index 0000000000..9d68d158e0
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block15_refuter.py
+@@ -0,0 +1,79 @@
++"""Refuting pass, block 15 (supervisor seat, disjoint machinery from the runner's checks):
++(R1) the criterion by a second implementation that tracks, for each site, its recorded neighbours as a list at formation time
++     (no set arithmetic), compared with exact equality on every order of the isolated path, domino and plaquette and on the
++     star classes k = 0, 1, 2 (isolated);
++(R2) the star's isolated joint law by the tree factorization mu(v) = (1/6) prod_leaves K(v_center, v_leaf) instead of the
++     normalized edge product, and the center-first sequential law by hand (the same product), compared with the runner's laws;
++(R3) the star in the mixed environment: the center-first law by an order-by-order recursion over the values of the center
++     (sum over the center's value of the leaves' independent conditionals), compared with the runner's seq_law;
++(R4) the normalizer lemma at (3,1,2) by direct summation with integers for k = 2..8 (beyond the runner's symbolic range).
++Run from the pack: the runner is imported from the repository's scripts/ directory."""
++import importlib
++import random
++import sys
++from fractions import Fraction as F
++from itertools import permutations, product
++from pathlib import Path
++
++ROOT = Path(__file__).resolve().parents[5]
++sys.path.insert(0, str(ROOT / "scripts"))
++r15 = importlib.import_module("admissibility_rule_formation_unit_clause_witness_sequential_equals_joint_iff_criterion_2026_09_15")
++M = 6
++def violates2(U, vO, order):
++    Uset = set(U)
++    recorded = []
++    for x in order:
++        rec_inside = 0; rec_total = 0
++        for y in r15.nbrs(x):
++            if y in recorded:
++                rec_inside += 1; rec_total += 1
++            elif (y not in Uset) and (y in vO):
++                rec_total += 1
++        if rec_inside >= 1 and rec_total >= 2:
++            return True
++        recorded.append(x)
++    return False
++ok1 = True
++for sites in ([(0,0,0),(1,0,0)], [(0,0,0),(1,0,0),(2,0,0)], [(0,0,0),(1,0,0),(1,1,0),(0,1,0)]):
++    U, O = r15.make_unit(sites)
++    J = r15.joint_law(U, {})
++    for order in permutations(U):
++        eq = r15.tv(r15.seq_law(U, {}, order), J) == 0
++        ok1 = ok1 and (eq == (not violates2(U, {}, order))) and (violates2(U, {}, order) == r15.violates(U, {}, order))
++star_U, star_O = r15.make_unit([r15.CENTER] + r15.LEAVES)
++Jstar = r15.joint_law(star_U, {})
++for k in (0, 1, 2):
++    order = r15.LEAVES[:k] + [r15.CENTER] + r15.LEAVES[k:]
++    eq = r15.tv(r15.seq_law(star_U, {}, order), Jstar) == 0
++    ok1 = ok1 and (eq == (not violates2(star_U, {}, order)))
++print("R1 second implementation of the criterion agrees with exact equality on every order of the domino, path, plaquette and the star classes k = 0,1,2:", ok1)
++# R2 tree factorization of the star's joint law and the center-first sequential law by hand
++tree = {}
++for v in product(range(M), repeat=7):
++    w = F(1, 6)
++    for i in range(1, 7):
++        w *= F(r15.PHI[v[i]][v[0]], r15.Z1)
++    tree[v] = w
++seq0 = r15.seq_law(star_U, {}, [r15.CENTER] + r15.LEAVES)
++print("R2 tree factorization equals the runner's joint law and the center-first sequential law on all 6^7 patterns:", all(tree[v] == Jstar[v] for v in tree), all(tree[v] == seq0[v] for v in tree))
++# R3 environment star, center-first, by recursion over the center's value
++random.seed(3)
++vO_mixed = {y: random.randrange(M) for y in star_O}
++Je = r15.joint_law(star_U, vO_mixed)
++seq_env = r15.seq_law(star_U, vO_mixed, [r15.CENTER] + r15.LEAVES)
++rec = {}
++for v in product(range(M), repeat=7):
++    w = F(1, 6)  # the center has no outside neighbours: its six neighbours are the leaves
++    for i, leaf in enumerate(r15.LEAVES, start=1):
++        recs = [v[0]] + [vO_mixed[y] for y in r15.nbrs(leaf) if y in vO_mixed]
++        w *= r15.cond(tuple(sorted(recs)), v[i])
++    rec[v] = w
++print("R3 order-by-order recursion equals the runner's center-first environment law on all patterns:", all(rec[v] == seq_env[v] for v in rec), "; TV to the joint law:", r15.tv(rec, Je) > 0)
++# R4 lemma by integers for k = 2..8
++ok4 = True
++for k in range(2, 9):
++    same = sum(r15.PHI[s][0] ** k for s in range(M))
++    anti = sum(r15.PHI[s][1] * r15.PHI[s][0] ** (k - 1) for s in range(M))
++    pred = (3 - 1) * (3 ** (k - 1) - 1 ** (k - 1))
++    ok4 = ok4 and (same - anti == pred) and same > anti
++print("R4 integer form of the lemma Z_1^k (K_k(b..b) - K_k(-b,b..b)) = (p-q)(p^(k-1) - q^(k-1)) for k = 2..8:", ok4)

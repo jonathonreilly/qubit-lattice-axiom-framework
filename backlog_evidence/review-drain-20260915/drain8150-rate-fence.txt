@@ -1,0 +1,1 @@
+This note proves clock and plaquette identities, the seeded-tree construction and finite witnesses; universal clock-law and convex-mixture exclusions are deferred; no order, rate, rule or coupling is selected as physical, and no clause is adopted.

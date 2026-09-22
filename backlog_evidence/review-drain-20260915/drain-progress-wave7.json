@@ -1,0 +1,19 @@
+{
+  "main": "0ee1a0396c2160605397ecf42f3602215a572c67",
+  "open_count": 107,
+  "draft_count": 27,
+  "closed_since_all_open_scope": 16,
+  "completed_last_train": "train62",
+  "active_units": [
+    "PR8148-8150",
+    "PR8023"
+  ],
+  "next_routing": [
+    "PR8151",
+    "PR8152",
+    "PR8153"
+  ],
+  "inventory": "drain-all-backlog-wave7.json",
+  "inventory_sha256": "ac46ef077d4248e587b3b03756b6369fe6e7b2bef855fa9b99b56059daec1232",
+  "review_loop_distribution": "Installed complete review-loop skill matches remote main0ee1a0396c including references/helpers."
+}

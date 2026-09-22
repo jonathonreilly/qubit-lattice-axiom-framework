@@ -1,0 +1,1332 @@
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+index 8f9c496033..65c9d5e0eb 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+@@ -8,3 +8,12 @@
+ | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
+ | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
+ | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
++
++## Block 16 — the static law is not a mixture of formation laws (2026-09-15)
++
++| Family | Object/formulation | Mechanism/invariant | Terminal obligation | Strength vs target | Status | Concrete evidence | Reopen condition |
++|---|---|---|---|---|---|---|---|
++| F16.1 the flip lemma | `w_σ(v^z) ≥ w_σ(v)` | each affected normalizer strictly decreases (closed-form lemma) | none | exact | candidate-complete | X1 (B1–B2) | — |
++| F16.2 the mixture theorem | `Σ P(σ) μ_σ = static` iff only qualifying orders are charged | a termwise-nonnegative sum; the cycle lemma | none | exact at every non-constant rule | candidate-complete | X2 (C1–C4) | — |
++| F16.3 units in constant environments | the joint law against mixtures | the same flip with block 15's criterion | non-constant environments | exact | candidate-complete | X3 (D1–D2) | a monotone flip for mixed environments |
++| F16.4 value-dependent order laws | `P(σ | v)` | — | a mechanism beyond symmetry | — | open (X4) | #8148 on the plaquette | a general argument |
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
+index e99dd0e244..90d0445846 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
+@@ -23,3 +23,10 @@
+ - Site weight `ψ`: constant by covariance on the transitive menu (executed); on a non-transitive menu it is not.
+ - Simultaneous formation (several records locking in one step) is not a total order; the formation law of a partial order with simultaneous steps would need a joint conditional the axiom does not state; named in N7.
+ - Infinite volume: the static specification's DLR existence (compactness on a finite menu) and uniqueness are outside the block.
++
++## Block 16 (2026-09-15) — the static law is not a mixture of formation laws
++- Dependencies: `minimal_axioms`; block 01 (Theorem B; the cycle lemma) and the census note (Lemma L; Theorem 3), both on `main`. Proposed, unaudited. PRs #8148 and #8149 referenced for context; the normalizer lemma re-proved here.
++- Named premises: the records-only reading; the six-axis menu; positivity; the product rule.
++- Scaffolding: the constant pattern and its one-site flips; the weight ratio `μ_σ/Π K`; the windows (plaquette, `2×3`, cube, path, star, domino); the all-`+x` environment for X3.
++- External methods: none beyond elementary comparison.
++- Counterfactual pass: the constant rule (all laws uniform); value-dependent order laws (outside X1); non-constant environments (the flip's monotonicity fails when other recorded values differ from the flipped site's original value); other menus.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block16_findings.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block16_findings.md
+new file mode 100644
+index 0000000000..09955c35c2
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block16_findings.md
+@@ -0,0 +1,14 @@
++# Refuting pass — block 16 (supervisor-run, disjoint machinery; 2026-09-15)
++
++Routes compared (control `specs/supervisor_control_block16_flip_monotonicity.py`, refuting pass `specs/supervisor_control_block16_refuter.py`, outputs in `.out.txt`):
++
++| item | runner's route | refuting route | result |
++|---|---|---|---|
++| the flip lemma (X1) | the weight formula `M^{−n_0} Π 1/K_{|A_x|}` per order (per class on the cube) | the ratio `μ_σ/Π K` from the product of conditionals directly, at the constant pattern and each flip, on every class of the plaquette, `2×3` and the cube; the control checked all `322,560` order–site pairs of the cube by the weight formula | equal; strictness on exactly the predicted pairs |
++| the qualifying orders (X2) | the union of recorded sets of size `≥ 2` | a direct search for a site with two recorded neighbours at formation time, on every order of the path and the star | agree |
++| the `2×3` uniform mixture (X2) | mixture by classes | the census runner's own pinned cache (decimal to twelve digits) | match |
++| the environment claim (X3) | exact laws and mixtures | by hand on the domino in the all-`+x` environment: the second site's normalizer `K_6(first, five outside +x)` is `493/1492992` at `first = +x` and `251/1492992` at `first = −x` | differ, as the lemma predicts |
++
++Findings: none in the primary. Two scope notes recorded in the fold: the cube's runner check is per class (the control covered every order); X3 is stated for constant environments because the flip's monotonicity needs every other member of a recorded set to carry the flipped site's original value.
++
++Attempts to refute (nothing refuted): X1 was re-read for a site `z` that belongs to the recorded sets of several later sites — each factor moves the same way, so the product moves strictly; for the flipped site's own factor `K_{|A_z|}(v_{A_z})`, which does not contain `v_z`; and for `p = q`, where the orthogonal flip replaces the antipodal one with the second form of the lemma. X2's "only if" was re-read for mixtures with zero weight on some classes (the sum is over charged orders only, and each is forced individually). Verdict of this pass: PASS-NO-BLOCKER at the supervisor's own standard, pending the owner's independent review.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block16.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block16.md
+new file mode 100644
+index 0000000000..26e0bc90bd
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block16.md
+@@ -0,0 +1,15 @@
++# Claim status certificate — block 16 (close, 2026-09-15)
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: upstream_support
++reachability_to_target: supports
++conditional_surface_status: "X1–X3 proved for every finite window and every non-constant rule; executed at (3,1,2); conditional on the records-only reading, the six-axis menu and the product rule as supplied conditions"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++claim_type_reason: "a monotone comparison of two patterns per order from the exact normalizer lemma; a termwise-nonnegative sum forced to vanish; block 01's cycle lemma; every number an exact rational"
++dependency_classes: "one premise node (minimal_axioms); block 01 and the census note (both on main; proposed, unaudited)"
++open_imports: "the six-axis menu; the product form; positivity"
++review_loop_disposition: pending (supervisor-run block; author checks only)
++independence_class: "single seat (Fable, supervisor): control, contract with a lens pass, primary, refuting pass by the full sequential laws, a direct two-neighbour search, the census cache and a hand computation, fold"
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block16.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block16.md
+new file mode 100644
+index 0000000000..7cacd05430
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block16.md
+@@ -0,0 +1,23 @@
++# GOAL — block 16: the static law is not a mixture of formation laws on any window with a cycle (2026-09-15)
++
++**Owner directive (2026-09-15):** don't stop; assess the next lane at each conclusion; no subagents; derivations over computation.
++
++**Why this block.** Blocks 14 and 15 (PRs #8148, #8149) showed on the plaquette, through its symmetries, that the static law is unreachable by rate and unit clauses. The normalizer lemma of block 15 gives a symmetry-free mechanism: flipping one record from `b` to `−b` raises every order's weight ratio monotonically. That yields a general theorem in a few lines: for every finite window and every probability law on orders, the mixture of sequential laws equals the static law iff the law charges only orders in which every site records at most one neighbour; on any window with a cycle no such order exists. It closes the "randomized formation" route to the static reading completely (value-blind randomization of any kind: random orders, random priorities, set-dependent clocks), unifies block 01's Theorem B, the census note's Theorem 3 and block 14's plaquette hull statement, and extends to units in an environment with block 15's criterion.
++
++**Object.** A finite window `Λ ⊂ Z³` (or a unit `U` with outside records `v_O`); the six-axis menu with the product rule `(p,q,r)`, executed at `(3,1,2)`; the sequential laws `μ_σ`; a probability `P` on orders ("a mixture"); the static law `Π_edges φ/Z` (or the joint law of the unit).
++
++**Contract.**
++- X1 (the flip lemma): with `w_σ(v) = μ_σ(v)/Π_edges K(v_e)`, `v = all b`, and `v^z` the pattern with site `z` flipped to `−b` (or to `c ⊥ b` when `p = q`): `w_σ(v^z) ≥ w_σ(v)` for every order, with strict inequality iff `z` lies in some recorded set of size at least two. Proved; executed on every (order, site) pair of the plaquette, `2×3` and the cube.
++- X2 (the mixture theorem): `Σ_σ P(σ) μ_σ = static` iff `P` charges only orders in which every site records at most one neighbour. On a window with a cycle no order qualifies, so no mixture is the static law. Proved for every non-constant rule.
++- X3 (units in an environment): the same with block 15's criterion and the joint law; proved.
++- X4 (what is left): value-dependent order laws are outside X2 (block 14 covers the plaquette); recorded as the open boundary.
++- N-gate for the negatives.
++
++**Lens pass (self-run panel).**
++- *"This is block 01 plus the census note."* Those treat one order and one mixture; X2 treats every mixture on every window with one proof; the flip lemma is the new mechanism.
++- *"The order law could depend on the values."* Then `P(σ|v)` changes with the flip and the argument breaks; block 14 handled that on the plaquette by symmetry; X4 names it as the boundary.
++- *"Small block."* Yes: a short theorem with a wide scope; the executions are exhaustive on three windows.
++
++**Forbidden phrases (beyond the lane's standing list):** "the static law is derived", "the formation reading is refuted", "converge", "emergent", "certified".
++
++**Prior-art search at `origin/main`.** `git grep -n -iE "mixture over (all )?orders|convex (hull|combination) of (the )?(order|sequential|formation) laws|random(ized)? formation"` → the census note (the uniform mixture; Theorem 3), nothing on general mixtures. Open PRs: #8148, #8149 (this lane; plaquette-specific).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+index 6dfc9de138..ea6c749099 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+@@ -25,3 +25,6 @@ Stacked on #8000 → #7999 → #7998 → main; all hand-offs. Block 04 = the two
+ Stacked on #8002 → #8000 → #7999 → #7998 → main; all hand-offs. Block 05 = the monotone-order class: one formation law for every linear extension of the product order (every rule); rows and columns path chains; the 2×2 corner law with corner independence; no right/down turning staircase is first-order Markov in its site values (proved for every nonconstant positive orbit triple under the declared product-rule monotone law); opposite corner classes give the same finite-rectangle law, with two distinct laws only at the executed 2×3 triples; the snake keeps rows and can lose column chains (column 0 survives on 3×3; on the executed 4×3 no column is a chain). Lens before the primary caught the supervisor's own wrong snake control. Historical checker: FIX FIRST on one forbidden mechanism sentence (false; deleted), nothing refuted in the theorems. Lock released.
+ 
+ Current source review found five further P2 groups, corrected in the canonical note and runner with their disposition in REVIEW_HISTORY.md. Same-session confirmation is pending; this appendix records an open review handoff.
++
++## 2026-09-15 block 16 opened for review as PR #8150 (supervisor)
++Independent PR against `main` (`fa0200b439`); parents on `main`: block 01 and the census note. Block 16 = the static law is not a mixture of formation laws on any window with a cycle: the flip lemma (flipping one record of the constant pattern raises every order's weight ratio `μ_σ/Π K`, strictly iff the site lies in a recorded set of size at least two, by the exact normalizer lemma; X1); the mixture theorem (a mixture over orders is the static law iff it charges only orders in which every site records at most one neighbour; on a window with a cycle none does; X2); units in constant environments with block 15's criterion (X3); value-dependent order laws named as the open boundary (X4). Executed exhaustively on the flips of the plaquette, `2×3` and the cube (by classes) and the criterion on the path and the star; the `2×3` uniform mixture reproduces the census note's exact distance. Seats supervisor-run; refuting pass consistent on four routes. Certificate 17/17; 10 mutations in-family; cache pinned; gates: pipeline ×2, audit_lint strict OK, vocab clean, diff --check clean, only the manifest kept from generated audit data. Lock held (refreshed) for the next assessment.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
+index 9ccaee75bb..10d6aaedd5 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
+@@ -13,3 +13,6 @@ Policy: reference and converge, never borrow; every statement used is re-proved
+ - Compactness of a countable product of finite sets; Kolmogorov / Carathéodory extension on the cylinder algebra; the passage of finite-window conditional identities to a limit — re-proved at scope (Theorem C2, existence only).
+ - The Pickard random field / Markov-mesh (unilateral Markov field) construction — Abend, Harley and Kanal (1965); Pickard (1977, 1980): a two-parent unilateral construction whose rows and columns are Markov chains when the corner-pair condition holds. The framework's row sweep under the records-only reading is an instance: `Z_2 = Z_1^2 K^2` with `K` symmetric doubly stochastic is the condition; Theorem E re-proves the row statement natively (the column statement is a lead for the next block).
+ - Toom and Vasilyev (1970s): product-form and Markov invariant measures of probabilistic cellular automata — reference only.
++
++## Block 16 (2026-09-15) — references named, none used as authority
++- None external: the mechanism is the lane's own normalizer lemma. Block 01's Theorem B and cycle lemma and the census note's Theorem 3 (all on `main`) used as stated.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+index 2977b7f990..4dfc5c8a90 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+@@ -8,3 +8,6 @@ Routes read at their proofs, not their headlines.
+ | The consistency-first kernel K* and the frontier-process gate (bridge exercise 2026-08-26) | `archive/campaigns/exercise-bridge-adoption-20260826/SYNTHESIS.md` | On the gravity lane's Gaussian fixture, the sliding-frontier process marginals differ from the static Gram weights by an extent-stable gap. | Fixture-level, floats; this block states the axiom-level finite distinction; it does not explain the gate. |
+ | Convex-consistency (affine rule output) vs product form (R136/T212/T213) | same packet | Normalizer constant iff no coupling (rank argument; Funk–Hecke on the sphere). | Re-proved exactly on the menu as the two-neighbor normalizer factorization; used for T2(b). |
+ | Binary full-conditional compatibility (landed 2026-08-10) | `docs/ADMISSIBILITY_BINARY_FULL_CONDITIONAL_COMPATIBILITY_ISING_ACTION_AXIOM_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md` | Static half on binary menus; excludes formation dynamics by its own boundary. | Upstream; generalized here; the excluded object is this block's subject. |
++
++## Block 16 (2026-09-15) — negative at scope
++- **No mixture of formation laws is the static law on any window with a cycle** (X2), for every probability law on orders and every non-constant rule; on cycle-free windows exactly the mixtures charging only orders with every recorded set of size at most one qualify. Escapes named for the N-gate: value-dependent order laws beyond the plaquette (open); the constant rule; other menus; non-constant environments for the unit version.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+index 74d2f60bae..3ce575e228 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+@@ -78,3 +78,12 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
+ 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
+ 4. **The silent triples by a non-criterion route** (unchanged; heavy).
+ 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
++
++## Refresh at block 16 opening (2026-09-15)
++
++Block 16 opened for review (independent PR against main): the static law is not a mixture of formation laws on any window with a cycle. Ranked next:
++
++1. **Value-dependent order laws on general windows** (X4): a mechanism beyond the plaquette's symmetry — medium-hard; would complete the reachability picture.
++2. **The menus block** (#8093, "to compute"): covariant supports generated by recorded neighbours — a stabilizer classification; small-to-medium.
++3. **The stability theorem (block 12, S6); the static law's phase; the sphere rule beyond second order** — hard; unchanged.
++4. **Small corollaries of blocks 11–13** — unchanged.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block16.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block16.md
+new file mode 100644
+index 0000000000..191627e4e3
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block16.md
+@@ -0,0 +1,16 @@
++# RESULTS — block 16: the static law is not a mixture of formation laws (2026-09-15)
++
++**Deliverables (branch `physics-loop/admissibility-induced-law-block16-static-law-not-a-mixture-of-formation-laws-20260915`, independent PR against `main` at `fa0200b439`; parents on `main`: block 01 and the census note of 2026-09-13):** the note `docs/ADMISSIBILITY_RULE_STATIC_LAW_IS_NOT_A_MIXTURE_OF_FORMATION_LAWS_ON_ANY_WINDOW_WITH_A_CYCLE_FLIP_MONOTONICITY_BOUNDED_THEOREM_NOTE_2026-09-15.md`; the runner `scripts/admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.py` (17 checks, 10 mutations, exact rational and symbolic arithmetic, ~25 s); the pinned cache; the control and the refuting pass with outputs (`specs/supervisor_control_block16_flip_monotonicity.py`, `specs/supervisor_control_block16_refuter.py`); `GOAL_block16.md`; `CHECKER_block16_findings.md`; this record. Blocks 06–15 remain open as PRs #8034, #8035, #8138–#8142, #8146–#8149.
++
++**Why this block.** Blocks 14 and 15 excluded rate and unit clauses on the plaquette through its symmetries. The normalizer lemma of block 15 gives a symmetry-free mechanism that settles every window at once.
++
++## Result, in one paragraph
++For an order `σ` let `w_σ(v) = μ_σ(v)/Π_edges K(v_e)`; the static law is a constant multiple of `Π_edges K`. Flipping one record of the constant pattern from `b` to `−b` (to an orthogonal value when `p = q`) changes only the normalizers `K_{|A_x|}` of sites whose recorded set contains the flipped site, and each of those strictly decreases by the exact lemma `K_k(b,…,b) − K_k(−b,b,…,b) = ((p−q)/Z_1)[(p/Z_1)^{k−1} − (q/Z_1)^{k−1}]`; so every order's weight ratio rises, strictly iff the flipped site lies in a recorded set of size at least two (X1). Hence for every probability law on orders the mixture of formation laws is the static law iff it charges only orders in which every site records at most one neighbour — a sum of nonnegative terms must vanish termwise — and on any window with a cycle no order qualifies (the last vertex of a cycle to form records two): no mixture over orders, whatever the mixing, is the static law (X2). The same holds for a unit against its joint law in a constant environment with block 15's criterion (X3). Value-dependent order laws are the open boundary beyond the plaquette (X4). Executed: the flip on every order–site pair of the plaquette (96) and `2×3` (4320) and every class–site pair of the cube (4336); the criterion on the path (4 of 6 orders qualify) and the star (48 of 120); the `2×3` uniform mixture at the census note's exact distance; random mixtures differ everywhere.
++
++## Certificate
++- Runner: `TOTAL: PASS=17 FAIL=0`; 10 mutations each in its family; no floating-point literal or conversion; classical names only under Prior art and Imports.
++- Refuting pass (`CHECKER_block16_findings.md`): the flip comparison from the full sequential laws, a direct search for two-neighbour sites, the census cache to twelve digits, the domino by hand — all consistent.
++- Claim type `bounded_theorem`; status `bounded-support`; trace `upstream_support`; audit required.
++
++## Not claimed
++Value-dependent order laws beyond the plaquette; other menus; non-constant environments for units; any clause; any selection of an order, mixture, rule or coupling as physical.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+index 08d17f0940..10942a0eb9 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+@@ -199,3 +199,16 @@ executed against the four declared inputs on current main. The original
+ 23-mutation census and historical pipeline receipts are not claimed as
+ fresh checks. Original-reviewer confirmation is pending; no audit status is
+ applied, and only the coordinator may perform authorized integration.
++
++## block 16 — V1-V5 (supervisor, 2026-09-15)
++- V1: the campaign's standing question whether the repository's static law can arise from the formation reading by any randomization of the order (the census note's "witness-generating device"; the plaquette results of PRs #8148, #8149); #8093's assembly needs the status of the static reconstruction.
++- V2: the lens pass in `GOAL_block16.md` ("block 01 plus the census note" — those treat one order and one mixture, this treats every mixture on every window; "the order law could depend on the values" — outside X1, named as X4; "small block" — yes, wide scope).
++- V3: X1–X3 proved; executed exhaustively on the flips of three windows and the criterion on two trees (17 checks, 10 mutations); the refuting pass agreed on four routes.
++- V4: no order, mixture, rule or coupling selected; no clause adopted.
++- V5: consumers named — #8093's assembly; PRs #8148, #8149 as instances; the campaign's queue.
++
++## block 16 — supervisor lens pass, primary, refuting pass and fold (2026-09-15)
++Lens (`GOAL_block16.md`): as V2. Primary: the note and the runner (17 checks, 10 mutations). Refuting pass (`CHECKER_block16_findings.md`): the flip from the full sequential laws on every class of three windows, a direct two-neighbour search on two trees, the census cache to twelve digits, the domino by hand — all consistent; no defects in the primary; two scope notes folded (per-class cube check; constant environments for X3). Author checks only; independent review pending.
++
++## block 16 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
++1 self-containment: PASS — inputs: this note, the axioms memo, block 01 and the census note, all on `main` at `fa0200b439`; nothing pinned from a branch or PR (PRs #8148/#8149 are context only; the lemma is re-proved). 2 cache/execution: PASS. 3 claim-scope honesty: PASS — value-dependent order laws and non-constant environments marked open; the theorem quantifies over value-blind mixtures only. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
+index 9b1cd3a27f..05a63fb5f6 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
+@@ -84,3 +84,9 @@ git grep -l -iE "phase transition.*(menu|product rule)|(menu|product rule).*phas
+ | the 26 `coupling` hits (e.g. `BBS_RG_BANACH_CONTRACTION_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-10.md`, `FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md`) | non-matching | "coupling" as a physical coupling constant or RG contraction; no coupling of Markov chains for a menu rule |
+ 
+ Target state after the matched-hit review: **open** — no note on `origin/main` computes the one-site interdependence coefficient of the menu rule, states its uniqueness region, or re-proves the criterion.
++
++## Block 16 (2026-09-15) — prior-art search and routes (independent PR against main; blocks 06–15 are open PRs #8034, #8035, #8138–#8142, #8146–#8149)
++Searched commit: `origin/main` = `fa0200b439`.
++- `git grep -n -iE "mixture over (all )?orders|convex (hull|combination) of (the )?(order|sequential|formation) laws|random(ized)? formation" origin/main -- 'docs/*.md'` → the census note (the uniform mixture; Theorem 3); nothing on general mixtures or a monotonicity mechanism.
++- Open PRs: #8148 (the rate clause; plaquette hull by symmetry), #8149 (the unit criterion and the normalizer lemma) — this lane; none elsewhere.
++Classification: **open after the matched-hit review.** Routes: M-A the flip lemma from the normalizer lemma (X1) — chosen; M-B the termwise-vanishing sum with block 01's cycle lemma (X2) — chosen; M-C the constant-environment unit version (X3) — chosen; M-D value-dependent order laws on general windows — not taken (open; the plaquette case is #8148); M-E other menus — not taken.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+index e166420207..cb46309c45 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+@@ -105,3 +105,14 @@ source_review_correction:
+ # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
+ # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
+ # audit_status: "unset; no audit invoked or verdict applied by this source correction"
++
++# ---------------------------------------------------------------- block 16 close (2026-09-15)
++# block: 16
++# branch: physics-loop/admissibility-induced-law-block16-static-law-not-a-mixture-of-formation-laws-20260915 (independent; base origin/main fa0200b439; blocks 06-15 are open PRs #8034, #8035, #8138-#8142, #8146-#8149)
++# pr_status: opened for review — PR #8150 (base = main); hand-off; never merged by the campaign; not a main landing
++# final_certificate: "TOTAL: PASS=17 FAIL=0; 10 mutations, census 10/10 in-family; refuting pass consistent on four routes; gates: see HANDOFF.md"
++# seats: "supervisor-run: control -> contract with a lens pass -> primary (X1-X4, runner) -> refuting pass (full sequential laws; direct two-neighbour search; census cache; hand computation) -> fold"
++# review_findings: "flip lemma: w_sigma(v^z) >= w_sigma(v), strict iff z in a recorded set of size >= 2 (normalizer lemma); mixture theorem: sum P(sigma) mu_sigma = static iff P charges only orders with every |A_x| <= 1; no mixture is the static law on any window with a cycle; units in constant environments with block 15's criterion; value-dependent order laws open beyond the plaquette"
++# strongest_unresolved_proof_obligation: "value-dependent order laws on general windows"
++# next_exact_action: "queue refresh 2026-09-15 (block 16 opening): value-dependent order laws; the menus block"
++# lock: held (owner: don't stop; assess the next lane at each conclusion)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+index 8f432e2cd2..d3ca3cd64a 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+@@ -63,3 +63,14 @@ reachability_to_target: supports
+ artifact_role: theorem
+ next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
+ ```
++
++# Trace gate — block 16, at PR opening (2026-09-15)
++```yaml
++trace_class: upstream_support
++target_claim_id: null
++target_blocker_text: "whether the repository's static law can arise from the axioms' formation reading by any randomization of the order; the status of the static reconstruction in #8093's assembly"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem
++next_trace_action: "closed for value-blind randomization on every window with a cycle: no mixture of formation laws is the static law; the exact criterion on cycle-free windows; units in constant environments. Open: value-dependent order laws beyond the plaquette. Consumers: #8093's assembly; PRs #8148, #8149"
++```
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block16_flip_monotonicity.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block16_flip_monotonicity.out.txt
+new file mode 100644
+index 0000000000..fd8add3c81
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block16_flip_monotonicity.out.txt
+@@ -0,0 +1,5 @@
++plaquette: flip monotonicity and strictness-iff hold on all 96 (order, site) pairs: True; strict in 48; time 0.0s
++2x3: flip monotonicity and strictness-iff hold on all 4320 (order, site) pairs: True; strict in 2592; time 0.2s
++cube: flip monotonicity and strictness-iff hold on all 322560 (order, site) pairs: True; strict in 230400; time 23.2s
++path3: 4 good / 2 bad orders; uniform mixture over good = static: True; three random full mixtures differ: [True, True, True]
++star4: 48 good / 72 bad orders; uniform mixture over good = static: True; three random full mixtures differ: [True, True, True]
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block16_flip_monotonicity.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block16_flip_monotonicity.py
+new file mode 100644
+index 0000000000..56fcc3eb75
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block16_flip_monotonicity.py
+@@ -0,0 +1,88 @@
++"""Control, block 16 (supervisor): the flip monotonicity behind 'no mixture over orders is the static law'.
++Six-axis menu, (p,q,r) = (3,1,2). For an order sigma, w_sigma(v) = mu_sigma(v)/prod_edges K(v) = M^{-n0} prod_x 1/K_{|A_x|}(v_{A_x}).
++Claim: with v = all b and v'_z = the flip of site z to -b, w_sigma(v') >= w_sigma(v), strict iff z lies in some A_x with |A_x| >= 2.
++(1) plaquette (24 orders), 2x3 (720 orders), cube (40320 orders): check per order and per z, exactly;
++(2) forest iff on the path P3 and the 4-leaf star: uniform mixture over 'good' orders = static; mixing in any bad order breaks it;
++(3) the plaquette's value-dependent parallel law: the flip inequality can fail for P(sigma|v) (recorded)."""
++from fractions import Fraction as F
++from functools import reduce
++from itertools import permutations, product
++import random, time
++M = 6
++def orbit_type(s, u):
++    return "p" if s == u else ("q" if s // 2 == u // 2 else "r")
++W = {"p": 3, "q": 1, "r": 2}
++phi = [[W[orbit_type(s, t)] for t in range(M)] for s in range(M)]
++Z1 = sum(phi[0])
++def Kk(vals):
++    return sum(reduce(lambda a, b: a * b, [F(phi[s][a], Z1) for a in vals], F(1)) for s in range(M)) if vals else F(1)
++def window(pos):
++    sites = sorted(pos)
++    edges = [(i, j) for i in sites for j in sites if i < j and sum(abs(pos[i][k] - pos[j][k]) for k in range(3)) == 1]
++    nb = {i: [j for j in sites if (min(i, j), max(i, j)) in edges] for i in sites}
++    return sites, edges, nb
++def w_of(order, nb, v):
++    S = set(); w = F(1)
++    for x in order:
++        A = [v[y] for y in nb[x] if y in S]
++        if not A:
++            w /= M
++        else:
++            w /= Kk(tuple(A))
++        S.add(x)
++    return w
++def bad_sites(order, nb):
++    S = set(); bad = set()
++    for x in order:
++        A = [y for y in nb[x] if y in S]
++        if len(A) >= 2:
++            bad |= set(A)
++        S.add(x)
++    return bad
++windows = {"plaquette": {0: (0,0,0), 1: (1,0,0), 2: (1,1,0), 3: (0,1,0)}, "2x3": {i: (i // 3, i % 3, 0) for i in range(6)}, "cube": {i: (i & 1, (i >> 1) & 1, (i >> 2) & 1) for i in range(8)}}
++for name, pos in windows.items():
++    sites, edges, nb = window(pos); n = len(sites)
++    t0 = time.time(); ok = True; strict_count = 0; total = 0
++    for order in permutations(sites):
++        v = tuple([0] * n)
++        w0 = w_of(order, nb, v)
++        bad = bad_sites(order, nb)
++        for z in sites:
++            v2 = list(v); v2[z] = 1; w1 = w_of(order, nb, tuple(v2))
++            total += 1
++            if w1 > w0: strict_count += 1
++            ok = ok and (w1 >= w0) and ((w1 > w0) == (z in bad))
++    print(f"{name}: flip monotonicity and strictness-iff hold on all {total} (order, site) pairs: {ok}; strict in {strict_count}; time {time.time()-t0:.1f}s")
++# (2) forest iff
++def static_law(sites, edges):
++    w = {}
++    for v in product(range(M), repeat=len(sites)):
++        x = 1
++        for (i, j) in edges: x *= phi[v[i]][v[j]]
++        w[v] = x
++    Z = sum(w.values()); return {v: F(x, Z) for v, x in w.items()}
++def seq_law(order, nb, sites):
++    law = {}
++    for v in product(range(M), repeat=len(sites)):
++        S = set(); pr = F(1)
++        for x in order:
++            A = tuple(v[y] for y in nb[x] if y in S)
++            num = reduce(lambda a, b: a * b, [phi[v[x]][a] for a in A], 1) if A else 1
++            den = sum(reduce(lambda a, b: a * b, [phi[u][a] for a in A], 1) for u in range(M)) if A else M
++            pr *= F(num, den); S.add(x)
++        law[v] = pr
++    return law
++def tv(a, b): return sum(abs(a[v] - b[v]) for v in a) / 2
++for name, pos in (("path3", {0: (0,0,0), 1: (1,0,0), 2: (2,0,0)}), ("star4", {0: (0,0,0), 1: (1,0,0), 2: (-1,0,0), 3: (0,1,0), 4: (0,-1,0)})):
++    sites, edges, nb = window(pos); st = static_law(sites, edges)
++    orders = list(permutations(sites)); good = [o for o in orders if not bad_sites(o, nb)]; badl = [o for o in orders if bad_sites(o, nb)]
++    laws = {o: seq_law(o, nb, sites) for o in orders}
++    mix_good = {v: sum(laws[o][v] for o in good) / len(good) for v in st}
++    random.seed(1)
++    res = []
++    for _ in range(3):
++        wts = {o: F(random.randint(1, 9)) for o in orders}
++        tot = sum(wts.values())
++        mix = {v: sum(wts[o] * laws[o][v] for o in orders) / tot for v in st}
++        res.append(tv(mix, st) > 0)
++    print(f"{name}: {len(good)} good / {len(badl)} bad orders; uniform mixture over good = static: {tv(mix_good, st) == 0}; three random full mixtures differ: {res}")
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block16_refuter.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block16_refuter.out.txt
+new file mode 100644
+index 0000000000..6f6097f47c
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block16_refuter.out.txt
+@@ -0,0 +1,4 @@
++R1 flip comparison from the full sequential laws agrees with the weight formula on every class of the plaquette, 2x3 and the cube: True
++R2 direct search for a site with two recorded neighbours agrees with the runner's qualifying-order test on the path and the star: True
++R3 the census runner's cache line: PASS: D8 rect TV(mix,static) (3, 1, 2) 0.029104037152 | exact value to 12 digits: 0.029104037152 | match: True
++R4 domino in the all-+x environment: the second site's normalizer K_6(first, five outside +x) at first = +x vs -x: 493/1492992 251/1492992 differ: True
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block16_refuter.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block16_refuter.py
+new file mode 100644
+index 0000000000..b4fffbdea5
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block16_refuter.py
+@@ -0,0 +1,70 @@
++"""Refuting pass, block 16 (supervisor seat, disjoint machinery from the runner's checks):
++(R1) the flip comparison from the full sequential laws (mu_sigma(v^z)/prod K(v^z) against mu_sigma(v)/prod K(v)) instead of the
++     weight formula, on every order of the plaquette and 2x3 and every class of the cube;
++(R2) the qualifying orders of the path and the star by a direct search for a site with two recorded neighbours at formation time,
++     against the runner's bad_union;
++(R3) the 2x3 uniform mixture's distance from the census runner's own pinned cache (decimal) against the runner's exact value;
++(R4) X3's environment claim on the domino by hand: the second site records the first plus five outside sites, so its normalizer
++     K_6 depends on the first site's value — evaluated exactly at (3,1,2) for the two flips.
++Run from the pack: the runner is imported from the repository's scripts/ directory."""
++import importlib
++import sys
++from fractions import Fraction as F
++from itertools import permutations
++from pathlib import Path
++
++ROOT = Path(__file__).resolve().parents[5]
++sys.path.insert(0, str(ROOT / "scripts"))
++r16 = importlib.import_module("admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15")
++M = 6
++ok1 = True
++for name in ("plaquette", "2x3", "cube"):
++    sites, edges, nb = r16.window(r16.WINDOWS[name])
++    n = len(sites)
++    seen = set()
++    for order in permutations(sites):
++        key = r16.multiset_key(order, nb)
++        if key in seen:
++            continue
++        seen.add(key)
++        v = tuple([0] * n)
++        # ratio mu_sigma / prod K at v and at the flips, from the product of conditionals directly (single-pattern evaluation)
++        def ratio(pat):
++            S = set(); pr = F(1)
++            for x in order:
++                rec = tuple(sorted(pat[y] for y in nb[x] if y in S))
++                pr *= r16.cond(rec, pat[x]); S.add(x)
++            pk = F(1)
++            for (i, j) in edges:
++                pk *= F(r16.PHI[pat[i]][pat[j]], r16.Z1)
++            return pr / pk
++        r0 = ratio(v)
++        bad = r16.bad_union(order, nb)
++        for z in sites:
++            v2 = list(v); v2[z] = 1
++            r1 = ratio(tuple(v2))
++            ok1 = ok1 and r1 >= r0 and ((r1 > r0) == (z in bad))
++print("R1 flip comparison from the full sequential laws agrees with the weight formula on every class of the plaquette, 2x3 and the cube:", ok1)
++ok2 = True
++for name in ("path3", "star4"):
++    sites, edges, nb = r16.window(r16.WINDOWS[name])
++    for order in permutations(sites):
++        S = set(); has_two = False
++        for x in order:
++            if sum(1 for y in nb[x] if y in S) >= 2:
++                has_two = True
++            S.add(x)
++        ok2 = ok2 and (has_two == bool(r16.bad_union(order, nb)))
++print("R2 direct search for a site with two recorded neighbours agrees with the runner's qualifying-order test on the path and the star:", ok2)
++cache = ROOT / "logs" / "runner-cache" / "admissibility_formation_order_menu_order_mixture_monotone_box_and_cube_census_2026_09_13.txt"
++txt = cache.read_text(encoding="utf-8") if cache.is_file() else ""
++line = next((ln for ln in txt.splitlines() if "TV(mix,static) (3, 1, 2)" in ln), "")
++exact = F(372254646387017, 12790481418000000)
++dec12 = exact.numerator * 10 ** 12 // exact.denominator
++print("R3 the census runner's cache line:", line.strip()[:80], "| exact value to 12 digits: 0." + str(dec12).zfill(12), "| match:", ("0." + str(dec12).zfill(12)) in line)
++U, O = r16.make_unit([(0, 0, 0), (1, 0, 0)])
++vO = {y: 0 for y in O}
++others = tuple(sorted([0] * 5))
++k6_same = r16.Kk(tuple(sorted(others + (0,))))
++k6_anti = r16.Kk(tuple(sorted(others + (1,))))
++print("R4 domino in the all-+x environment: the second site's normalizer K_6(first, five outside +x) at first = +x vs -x:", k6_same, k6_anti, "differ:", k6_same != k6_anti)
+diff --git a/docs/ADMISSIBILITY_RULE_STATIC_LAW_IS_NOT_A_MIXTURE_OF_FORMATION_LAWS_ON_ANY_WINDOW_WITH_A_CYCLE_FLIP_MONOTONICITY_BOUNDED_THEOREM_NOTE_2026-09-15.md b/docs/ADMISSIBILITY_RULE_STATIC_LAW_IS_NOT_A_MIXTURE_OF_FORMATION_LAWS_ON_ANY_WINDOW_WITH_A_CYCLE_FLIP_MONOTONICITY_BOUNDED_THEOREM_NOTE_2026-09-15.md
+new file mode 100644
+index 0000000000..625c43a4d1
+--- /dev/null
++++ b/docs/ADMISSIBILITY_RULE_STATIC_LAW_IS_NOT_A_MIXTURE_OF_FORMATION_LAWS_ON_ANY_WINDOW_WITH_A_CYCLE_FLIP_MONOTONICITY_BOUNDED_THEOREM_NOTE_2026-09-15.md
+@@ -0,0 +1,271 @@
++---
++claim_id: admissibility_rule_static_law_is_not_a_mixture_of_formation_laws_on_any_window_with_a_cycle_flip_monotonicity_bounded_theorem_note_2026-09-15
++claim_type: bounded_theorem
++claim_scope: "On every finite window of Z^3 with the six-axis menu and the covariant positive product rule (p, q, r), executed at (3, 1, 2), under the records-only reading: (X1) for every order, flipping one record of the constant pattern from b to -b (or to an orthogonal value when p = q) does not decrease the order's weight ratio mu_sigma / prod_edges K, and increases it strictly iff the flipped site lies in a recorded set of size at least two (proved; executed on every order-site pair of the plaquette and 2x3 and on every class-site pair of the cube); (X2) for every probability law on orders, the mixture of the sequential laws equals the static law iff the law charges only orders in which every site records at most one neighbour; on any window containing a cycle no order qualifies, so no mixture over orders — uniform, random-priority, any value-blind clock law, any convex combination — is the static law (proved for every non-constant rule; executed on the path, the star, 2x3 and the plaquette, reproducing the census note's uniform value); (X3) the same statement for a unit in a constant environment against its joint law, with the criterion of the formation-unit note (proved; executed); (X4) value-dependent order laws are the open boundary (the plaquette case is settled in the rate-clause note). No order, mixture, rule or coupling is selected as physical; exact arithmetic throughout."
++upstream_dependencies:
++  - minimal_axioms
++  - admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06
++  - admissibility_formation_order_menu_order_mixture_monotone_box_and_cube_census_bounded_theorem_note_2026-09-13
++runner: scripts/admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.py
++---
++
++# The static law is not a mixture of formation laws on any window with a cycle: a one-record flip raises every order's weight, so a mixture over orders is the static law exactly when it charges only orders where every site records at most one neighbour
++
++**Date:** 2026-09-15
++**Type:** bounded_theorem
++**Status:** bounded-support (exact; conditional on the named supplied readings; unaudited)
++
++## Result up front
++
++Lay records down in some order and you get a pattern law that depends on
++the order; average over orders with any weights you like — a uniform
++shuffle, random priorities, clocks that fire faster near existing records —
++and you get a mixture. Could some mixture be the static law the rest of the
++repository uses? Two earlier notes said no on one square, using the
++square's symmetries. Here is the reason that needs no symmetry at all. Take
++the pattern in which every record is the same value, and flip one record to
++its opposite. For every order, the flip can only raise the order's weight
++relative to the static edge product, and it raises it strictly exactly when
++the flipped site was among the recorded neighbours of some site that saw two
++or more. A mixture that equals the static law must leave the ratio unchanged,
++so every order it charges must have no site that records two neighbours. On
++any window with a cycle there is no such order: the last corner of the cycle
++to form always sees two. So the static law is not a mixture of formation
++laws there, whatever the mixing. On windows without cycles the criterion
++tells you exactly which mixtures work: those that only charge orders in
++which every record sees at most one neighbour.
++
++Exactly: `w_σ(v^z) − w_σ(v) ≥ 0` with strictness iff `z ∈ ∪_{|A_x| ≥ 2} A_x`
++(X1), from `K_k(b,…,b) − K_k(−b,b,…,b) = ((p−q)/Z_1)[(p/Z_1)^{k−1} − (q/Z_1)^{k−1}]`;
++on `2×3` the uniform mixture sits at `372254646387017/12790481418000000` from the
++static law (the census note's value) and every mixture does not reach it;
++on the path `4` of `6` orders qualify and their mixtures are the static law,
++on the four-leaf star `48` of `120`. Executed with exact arithmetic:
++17 checks, 10 mutations.
++
++## Machine status and trace
++
++```yaml
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: upstream_support
++target_claim_id: null
++target_blocker_text: "the campaign's standing question whether the static law used across the repository can arise from the axioms' formation reading by any randomization of the order (the census note's 'witness-generating device'; the rate-clause and formation-unit notes' plaquette results); the derivation campaign's assembly (#8093): the status of the static reconstruction"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem
++next_trace_action: "closed for value-blind randomization on every window with a cycle: the static law is not a mixture of formation laws; the exact criterion on cycle-free windows. Open boundary: value-dependent order laws beyond the plaquette. Consumers: #8093's assembly (the static reconstruction is neither a formation law nor a mixture of them); PRs #8148, #8149 (their plaquette results are instances)"
++conditional_surface_status: "X1–X3 proved for every finite window and every non-constant rule; executed at (3,1,2); conditional on the records-only reading, the six-axis menu and the product rule as supplied conditions"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++claim_type_reason: "a monotone comparison of two patterns per order (X1) from the exact normalizer lemma; a termwise-nonnegative sum forced to vanish (X2); the cycle lemma of block 01; every number an exact rational"
++```
++
++## Premises and declared objects
++
++**Axioms used (verbatim).** From
++[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md): "There is one
++fixed nearest-neighbor admissibility rule, covariant under lattice translations
++and proper cubic rotations." — "For each site, the probability distribution over
++the possibilities is determined by, and varies with, the nearest-neighbor
++conditions." — "Records form." — "Only records are readable."
++
++**Readings carried, named, nothing new adopted.** The records-only reading
++and the sequential formation law of block 01
++([`ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md`](ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md)):
++along an order `σ` of the window `Λ` the site `x` records with its recorded
++neighbours `A_x(σ)` only, `μ_σ(v) = Π_x r(v_x | v_{A_x})`,
++`r(a | ∅) = 1/M`, `r(a | A) = Π_{y∈A} K(v_y, a)/K_{|A|}(v_A)`, `K(b,a) = φ(a,b)/Z_1`,
++`K_k(v_A) = Σ_s Π_{y∈A} K(v_y, s)`, `K_1 ≡ 1`; block 01's Theorem B (if every
++`|A_x| ≤ 1` then `μ_σ` is the static law) and its cycle lemma (on a window
++with a cycle every order has a site with `|A_x| ≥ 2`, the last vertex of the
++cycle to form). The census note
++([`ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md`](ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md)):
++Lemma L (the multiset key) and Theorem 3 (the uniform mixture on `2×3`). The
++static law `Π_edges φ(v_e)/Z`. The six-axis menu, positivity, the product rule
++`(p,q,r)`, `Z_1 = p + q + 4r`.
++
++**Mixtures.** A probability `P` on the orders of `Λ`; `μ_P = Σ_σ P(σ) μ_σ`.
++Every value-blind randomization of the order is of this form: the uniform
++shuffle, random priorities, clocks whose rates depend on the recorded set
++(the rate-clause note, PR #8148, R1), any convex combination.
++
++**Weights and flips.** `w_σ(v) = μ_σ(v)/Π_edges K(v_e) = M^{−n_0(σ)} Π_{x: |A_x| ≥ 2} 1/K_{|A_x|}(v_{A_x})`,
++`n_0(σ)` the number of sites with `A_x = ∅` (each edge's `K` appears once, at
++its later endpoint; `K_1 ≡ 1`). The static law is `Π_edges K · Z_1^{|E|}/Z`, a
++constant multiple of `Π_edges K`. For a value `b`, `v ≡ b` is the constant
++pattern and `v^z` the pattern with site `z` set to `−b` (to a `c ⊥ b` when
++`p = q`).
++
++**The normalizer lemma (from the formation-unit note, PR #8149; re-proved).**
++For `k ≥ 2`: `K_k(b,…,b) − K_k(−b,b,…,b) = ((p−q)/Z_1)[(p/Z_1)^{k−1} − (q/Z_1)^{k−1}] > 0`
++for `p ≠ q` (both factors have the sign of `p − q`), and
++`K_k(b,…,b) − K_k(c,b,…,b) = [(p−r)(p^{k−1} − r^{k−1}) + (q−r)(q^{k−1} − r^{k−1})]/Z_1^k > 0`
++unless `p = q = r`. *Proof.* `K_k(a,b,…,b) = Σ_s K(a,s) K(b,s)^{k−1}` and
++`K(b,·) − K(−b,·)` is `±(p−q)/Z_1` at `s = ±b`, zero elsewhere; likewise for
++`c`. ∎
++
++## Prior art and what is new
++
++Block 01 (on `main`) compared single orders with the static law (Theorem B
++and the cycle lemma); the census note computed the uniform mixture on `2×3`
++and the cube and called it a witness-generating device; the rate-clause and
++formation-unit notes (PRs #8148, #8149, open) excluded every covariant rate
++law and every convex combination on the plaquette, using the plaquette's
++symmetries. Nothing on `main` treats general mixtures on general windows
++(search recorded in `ROUTE_PORTFOLIO.md`).
++
++New here: the flip lemma (X1) as a symmetry-free mechanism; the mixture
++theorem with its exact criterion on every window (X2); the constant-environment
++version for units (X3); the boundary (X4).
++
++## Exact target and obligation graph
++
++| obligation | status here |
++|---|---|
++| X1 the flip lemma with the strictness criterion | proved; executed on every (order, site) pair of the plaquette (96) and `2×3` (4320) and every (class, site) pair of the cube (4336) (B1–B2) |
++| X2 the mixture theorem; the cycle corollary | proved; executed: the criterion on the path and the star (mixtures over qualifying orders equal the static law, any other differs); the uniform and random mixtures on `2×3` and the plaquette; the cycle lemma on all classes (C1–C4) |
++| X3 units in a constant environment | proved; executed on the domino and the path in the all-`+x` environment and in isolation (D1–D2) |
++| X4 value-dependent order laws | open beyond the plaquette; named |
++| windows with a cycle but other menus; the static law's own phase | open; not this note |
++
++## Theorem X1 — the flip lemma
++
++**Statement.** For every window, every order `σ`, every value `b` and every
++site `z`: `w_σ(v^z) ≥ w_σ(v)`, with equality iff `z ∉ ∪_{x: |A_x(σ)| ≥ 2} A_x(σ)`.
++
++*Proof.* `v_z` enters `w_σ` only through the factors `1/K_{|A_x|}(v_{A_x})`
++with `z ∈ A_x` and `|A_x| ≥ 2` (the factor of `x = z` itself does not contain
++`v_z`). In `v` every member of `A_x` equals `b`; in `v^z` the member `z`
++equals `−b` (or `c`) and the others still `b`; by the normalizer lemma each
++such `K` strictly decreases, so each such factor strictly increases, and no
++other factor changes. ∎ Executed: every (order, site) pair of the plaquette
++and of `2×3`, and every (multiset class, site) pair of the cube — `w_σ` depends
++on `σ` only through the recorded sets — with strictness exactly on the
++predicted pairs (B1); the lemma symbolically for `k = 2..6` (B2).
++
++## Theorem X2 — the mixture theorem
++
++**Statement.** For every finite window `Λ`, every non-constant rule and
++every probability `P` on orders: `μ_P` is the static law of `Λ` iff every
++order charged by `P` has `|A_x(σ)| ≤ 1` for all `x`. In particular, on every
++window containing a cycle, no mixture of formation laws is the static law.
++
++*Proof.* (⇐) Each charged `μ_σ` is the static law by Theorem B, hence so is
++the mixture. (⇒) If `μ_P` is the static law then `μ_P/Π_edges K` is constant,
++so for every `z`: `0 = Σ_σ P(σ)[w_σ(v^z) − w_σ(v)]`, a sum of nonnegative
++terms by X1; hence every charged `σ` has `z ∉ ∪_{|A_x| ≥ 2} A_x`. Over all
++`z ∈ Λ` the union is empty for every charged `σ`: no site records two or more
++neighbours. The cycle lemma gives the particular case. ∎ Executed: on the
++path (`4` of `6` orders qualify) and the four-leaf star (`48` of `120`) the
++uniform mixture over qualifying orders equals the static law exactly and
++pseudo-random mixtures that charge a non-qualifying order differ (C1–C2); on
++`2×3` the uniform mixture reproduces the census note's distance and
++pseudo-random mixtures differ (C3); the cycle lemma on every class of the
++plaquette, `2×3` and the cube (C4).
++
++*Reading.* Randomizing the order buys nothing toward the static law: the
++missing normalizers can only be averaged, never cancelled, because a flip
++moves every one of them the same way. The static reading is not a
++formation law and not an average of formation laws on any window with a
++square in it.
++
++## Theorem X3 — units in a constant environment
++
++**Statement.** Let `U` be a unit whose outside neighbours all carry the same
++record `b`, and let `μ^{joint}` be its joint law (the formation-unit note, U1).
++For every probability `P` on the orders of `U`: `Σ_σ P(σ) μ_σ(· | v_O) = μ^{joint}(· | v_O)`
++iff every charged order satisfies the criterion of the formation-unit note
++(no site records an inside neighbour together with a second recorded
++neighbour). In a full constant environment every connected unit with two or
++more sites therefore has no such mixture.
++
++*Proof.* With the outside records equal to `b`, the constant inside pattern
++`v ≡ b` and its flips `v^z` (`z ∈ U`) have all members of every recorded set
++equal to `b` except the flipped one, so X1's argument applies verbatim to the
++ratio `μ_σ/Π K` over the edges inside `U` and from `U` to `O`, whose constant
++multiple is the joint law; strictness occurs iff `z` lies in a recorded set
++of size at least two, and the recorded sets of size at least two that contain
++an inside site are exactly the criterion's violations. The last sentence is
++the formation-unit note's U4. ∎ Executed: the domino and the path in the
++all-`+x` environment (every order violates; every mixture differs) and in
++isolation (mixtures over qualifying orders equal the joint law) (D1–D2).
++
++## X4 — the boundary
++
++For an order law that depends on the recorded values, `P(σ | v)` changes
++with the flip and X1 gives no comparison. The rate-clause note settles the
++plaquette for every covariant value-dependent clock law by symmetry; larger
++windows with value-dependent order laws are open.
++
++## No-Go Discipline Gate
++
++The negative sentence is X2's cycle corollary (and X3's environment
++corollary): no mixture over orders is the static (joint) law. Proved for
++every non-constant rule.
++
++### N1 — Routes by which a mixture could still reach the static law
++
++| route | what it would attempt | why it fails here, or its obligation | marker |
++|---|---|---|---|
++| 1 cancellation among orders | some orders over-weighting, others under-weighting a pattern | the flip moves every order's weight the same way (X1), so a sum of nonnegative terms vanishes only termwise | RULED OUT AT SCOPE |
++| 2 value-dependent order laws | `P(σ | v)` compensating the flip | outside X1; the plaquette is settled by symmetry (PR #8148); larger windows open | X4 |
++| 3 the constant rule | `p = q = r` | every law uniform | trivial |
++| 4 other menus | a menu where some normalizer is constant in one argument | outside the six-axis menu; obligation named | not attempted |
++| 5 non-constant environments for units | the flip's monotonicity uses equal recorded values | X3 restricted to constant environments; per-order statements in PR #8149 | narrowed |
++
++### N2 — Wall-independence audit
++Walls: the records-only reading, the product rule, positivity. Independent; each defines the object.
++
++### N3 — Hidden-wall scan
++Scanned for "we assume", "by construction", "as is standard", "the framework provides", "naturally", "obviously", "canonical", "registered", "background", "bridge context". Hits: none in the theorems.
++
++### N4 — Per-citation table
++| cited surface | residual it attacks | residual claimed here | match |
++|---|---|---|---|
++| block 01 (main): Theorem B; the cycle lemma | single orders | X2's "if" and the corollary | yes |
++| the census note (main): Lemma L; Theorem 3 | the multiset key; the uniform mixture | the class reduction of the executions; the reproduced value | yes |
++| PRs #8148, #8149 (open; not inputs) | the plaquette by symmetry; the criterion and lemma | X3's criterion; the lemma re-proved here | context only |
++
++### N5 — Resolution audit
++| phrase | per-element | per-site | per-mode | per-block | lattice-wide |
++|---|---|---|---|---|---|
++| "no mixture over orders is the static law on a window with a cycle" | executed: the lemma for `k = 2..6`; the flip on every order–site pair of two windows and every class–site pair of the cube | executed: every pattern of the path, the star, the plaquette and `2×3` in the mixture checks | executed: every order class of three windows | executed: five windows, two environments | proved for every window and every non-constant rule (X2); value-dependent order laws open (X4) |
++
++### N6 — Partial-closure paths and primitive scan
++The realized-state primitive supplies no measure over orders; none is assumed — the theorem quantifies over all. No primitive is a wall.
++
++### N7 — Steelman
++Hostile reviewer: "A three-line argument; the plaquette results already said this." Reply: they said it for one window through its symmetries; this says it for every window with one mechanism, gives the exact criterion where mixtures do work, and needs nothing but the normalizer lemma. Conceded: value-dependent order laws are open beyond the plaquette.
++
++### N8 — Cross-cycle echo
++Block 01's Theorem B, the seeded-growth result of PR #8148 and X2's criterion are one fact: every record seeing at most one neighbour is exactly when the formation reading meets the static one. No structurally similar wall was retired.
++
++## Falsifiers
++- An (order, site) pair on the plaquette or `2×3`, or a (class, site) pair on the cube, where the flip lowers the weight or where strictness disagrees with the criterion (B1); a `k ≤ 6` where the lemma's closed form fails (B2).
++- A mixture over qualifying orders of the path or the star that is not the static law, or a mixture charging a non-qualifying order that is (C1–C2); a uniform `2×3` mixture differing from the census value (C3); a class of any of the three windows with all recorded sets of size at most one (C4).
++- A domino or path order in the all-`+x` environment that satisfies the criterion or a mixture equal to the joint law there; an isolated qualifying mixture that is not the joint law (D1–D2).
++
++## Boundaries and non-claims
++This note proves that mixtures of formation laws are the static law only when they charge orders in which every record sees at most one neighbour, and never on a window with a cycle; it does not treat value-dependent order laws beyond the plaquette, other menus, or non-constant environments for units, does not select an order, mixture, rule or coupling as physical, and adopts no clause. No plane, bridge, Born or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision. No value, constant or theorem is imported as authority.
++
++## Imports
++- `minimal_axioms`: the sentences quoted under Premises.
++- Block 01 and the census note (both on `main`): proposed, unaudited; the parts used (Theorem B, the cycle lemma, Lemma L, Theorem 3's value) are restated. PRs #8148 and #8149 (open) are referenced for context only; the normalizer lemma is re-proved here.
++- Re-proved at scope: the normalizer lemma, X1, X2, X3.
++
++## Review record
++Supervisor-run block (owner directive: don't stop; assess the next lane and take it; no subagents). The control (`specs/supervisor_control_block16_flip_monotonicity.py`) checked the flip lemma on every order–site pair of three windows and the forest criterion before the contract; the lens pass is in `GOAL_block16.md`; the primary seat wrote X1–X4 and the runner; the refuting pass (`CHECKER_block16_findings.md`) recomputed the flip comparison from the full sequential laws instead of the weight formula, the qualifying orders by a direct search for a site with two recorded neighbours, and the `2×3` uniform mixture by the census runner's cache. Facts settled while executing: the cube's flip check runs on its 542 multiset classes rather than its 40,320 orders (the weight depends on the order only through the recorded sets; the control checked all 322,560 order–site pairs); X3 is stated for constant environments only, because the flip's monotonicity needs every other member of a recorded set to carry the same value as the flipped one.
++
++## Verification
++
++```bash
++python3 scripts/admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.py
++python3 scripts/admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.py --exact
++python3 scripts/admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.py --list-mutations
++python3 scripts/admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.py --mutation mixture_equals_static_claimed
++```
++
++Families: A authority and inputs; B the lemma and the flip lemma; C the mixture theorem on the path, the star, `2×3` and the plaquette, and the cycle lemma; D units in a constant environment; F fences, forbidden phrases, the floating-point self-scan, the placement of the classical names; G the resolution lines. Each of the 10 declared mutations fails in exactly one family. Expected final line: `TOTAL: PASS=17 FAIL=0`.
+diff --git a/docs/audit/data/citation_graph_manifest.json b/docs/audit/data/citation_graph_manifest.json
+index acdd67ac38..b30807ff62 100644
+--- a/docs/audit/data/citation_graph_manifest.json
++++ b/docs/audit/data/citation_graph_manifest.json
+@@ -1,6 +1,6 @@
+ {
+- "edge_count": 13383,
+- "node_count": 5821,
++ "edge_count": 13386,
++ "node_count": 5822,
+  "nodes": {
+   "3d_correction_master_note": {
+    "deps_hash": "e3b0c44298fc",
+@@ -746,6 +746,10 @@
+    "deps_hash": "1b3132f0c69b",
+    "out_degree": 3
+   },
++  "admissibility_rule_static_law_is_not_a_mixture_of_formation_laws_on_any_window_with_a_cycle_flip_monotonicity_bounded_theorem_note_2026-09-15": {
++   "deps_hash": "a95e40c6cf02",
++   "out_degree": 3
++  },
+   "admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_bounded_theorem_note_2026-09-07": {
+    "deps_hash": "8188f46b334d",
+    "out_degree": 2
+diff --git a/logs/runner-cache/admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.txt b/logs/runner-cache/admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.txt
+new file mode 100644
+index 0000000000..bd459aecb6
+--- /dev/null
++++ b/logs/runner-cache/admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.txt
+@@ -0,0 +1,43 @@
++===== runner cache v1 =====
++runner: scripts/admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.py
++runner_sha256: 6d754300891f5c0877e1f1e65b75f94c19be1f237f710d8f804440349e0f9b7f
++input_fingerprint_sha256: 2a6aef6a2b9aafd364c423809cd993a5a60ce978e8d311a9a9a5d60aed02dff1
++timeout_sec: 900
++exit_code: 0
++elapsed_sec: 19.30
++status: ok
++----- stdout -----
++AUDIT_INPUT_PATHS:
++  docs/ADMISSIBILITY_RULE_STATIC_LAW_IS_NOT_A_MIXTURE_OF_FORMATION_LAWS_ON_ANY_WINDOW_WITH_A_CYCLE_FLIP_MONOTONICITY_BOUNDED_THEOREM_NOTE_2026-09-15.md
++  docs/MINIMAL_AXIOMS_2026-06-29.md
++  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
++  docs/ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md
++AUDIT_TIMEOUT_SEC: 900
++scope: the static law is not a mixture of formation laws on any window with a cycle — the flip lemma, the mixture theorem with its criterion, units in a constant environment; exact; no clause adopted
++mutation: none
++PASS: A1 the four declared inputs exist (this note, the axiom memo, block 01 and the census note, both on main)
++PASS: A2 the four axiom sentences used are present verbatim in the axiom memo
++PASS: A3 the parents' claim ids, block 01's Theorem B and the census note's Theorem 3 rational are present
++PASS: A4 this note carries its claim id and names this runner
++PASS: B1 X1: the flip raises every order's weight ratio, strictly iff the site lies in a recorded set of size >= 2: plaquette: 96 pairs (4 classes), 48 strict; 2x3: 4320 pairs (28 classes), 2592 strict; cube: 4336 pairs (542 classes), 3184 strict
++PASS: B2 the normalizer lemma: K_k(b..b) - K_k(-b,b..b) = ((p-q)/Z_1)[(p/Z_1)^(k-1) - (q/Z_1)^(k-1)] and the orthogonal form, symbolically for k = 2..6
++PASS: C1 X2 (if): on the path and the four-leaf star, the uniform and a pseudo-random mixture over qualifying orders equal the static law exactly: path3: 4/6 qualifying; star4: 48/120 qualifying
++PASS: C2 X2 (only if): three pseudo-random mixtures charging non-qualifying orders differ from the static law on the path and the star
++PASS: C3 X2: on 2x3 the uniform mixture over 720 orders (28 classes) is at the census note's distance 372254646387017/12790481418000000 from the static law; two pseudo-random class mixtures and a plaquette mixture differ (TV 0.028208, 0.028038, 0.018328)
++PASS: C4 X2 (cycle lemma): every multiset class of the plaquette, 2x3 and the cube contains a recorded set of size >= 2, so no order qualifies
++PASS: D1 X3: the domino and the path in the all-+x environment — every order violates the criterion, every order and a pseudo-random mixture differ from the joint law
++PASS: D2 X3 (isolated): the uniform mixture over the qualifying orders of the domino and the path equals the joint law
++PASS: F1 the note carries the three fence sentences verbatim
++PASS: F2 the note contains no forbidden phrase (0 hits)
++PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
++PASS: F4 the classical names appear only under Prior art and Imports (0 offenders)
++per_element: executed — the normalizer lemma for k = 2..6 symbolically; the flip on every order-site pair of the plaquette (96) and 2x3 (4320) and every class-site pair of the cube (4336)
++per_site: executed — every pattern of the path, the star, the plaquette and 2x3 in the mixture checks; every pattern of the domino and the path in the environment checks
++per_mode: executed — every order class of the plaquette (4), 2x3 (28) and the cube (542); every order of the path, the star, the domino
++per_block: executed — six windows, two environments
++lattice_wide: X1-X3 proved for every finite window and every non-constant rule; value-dependent order laws beyond the plaquette and other menus not claimed
++PASS: G1 the five N5 resolution lines are printed
++TOTAL: PASS=17 FAIL=0
++
++----- stderr -----
++
+diff --git a/scripts/admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.py b/scripts/admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.py
+new file mode 100644
+index 0000000000..6546c1aaf2
+--- /dev/null
++++ b/scripts/admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.py
+@@ -0,0 +1,538 @@
++#!/usr/bin/env python3
++"""Exact checks: the static law is not a mixture of formation laws on any window with a cycle (flip monotonicity).
++
++Scope.  Six-axis menu, covariant positive product rule (p, q, r) = (3, 1, 2), records-only reading.  X1: flipping one record of
++the constant pattern raises every order's weight ratio mu_sigma / prod K, strictly iff the site lies in a recorded set of size >= 2
++(every order-site pair of the plaquette and 2x3; every class-site pair of the cube).  X2: mixtures over orders equal the static
++law iff they charge only orders with every recorded set of size <= 1 (path, star; the uniform and random mixtures on 2x3 and the
++plaquette; the cycle lemma on all classes).  X3: units in a constant environment.  Exact rational and symbolic arithmetic only;
++the runner scans its own source for floating-point literals.
++"""
++
++from __future__ import annotations
++
++import random
++import re
++import sys
++from fractions import Fraction
++from functools import reduce
++from itertools import permutations, product
++from pathlib import Path
++
++import sympy as sp
++
++AUDIT_TIMEOUT_SEC = 900
++AUDIT_INPUT_PATHS = (
++    "docs/ADMISSIBILITY_RULE_STATIC_LAW_IS_NOT_A_MIXTURE_OF_FORMATION_LAWS_ON_ANY_WINDOW_WITH_A_CYCLE_FLIP_MONOTONICITY_BOUNDED_THEOREM_NOTE_2026-09-15.md",
++    "docs/MINIMAL_AXIOMS_2026-06-29.md",
++    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
++    "docs/ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
++)
++ROOT = Path(__file__).resolve().parents[1]
++CLAIM_ID = "admissibility_rule_static_law_is_not_a_mixture_of_formation_laws_on_any_window_with_a_cycle_flip_monotonicity_bounded_theorem_note_2026-09-15"
++BLOCK01_CLAIM_ID = "admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06"
++BLOCK01_FRAGMENT = "Theorem B"
++CENSUS_CLAIM_ID = "admissibility_formation_order_menu_order_mixture_monotone_box_and_cube_census_bounded_theorem_note_2026-09-13"
++CENSUS_FRAGMENT = "372254646387017/12790481418000000"
++AXIOM_NEEDLES = (
++    "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.",
++    "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.",
++    "Records form.",
++    "Only records are readable.",
++)
++
++MUTATION_GATE = {
++    "flip_inequality_wrong": "B",
++    "strictness_criterion_wrong": "B",
++    "normalizer_lemma_wrong": "B",
++    "qualifying_mixture_not_static_claimed": "C",
++    "mixture_equals_static_claimed": "C",
++    "census_value_mismatch": "C",
++    "cycle_lemma_wrong": "C",
++    "environment_mixture_equals_joint_claimed": "D",
++    "claim_static_law_derived": "F",
++    "claim_classical_name_in_theorem": "F",
++}
++ACTIVE_MUTATION: str | None = None
++
++
++def mut(name: str) -> bool:
++    if name not in MUTATION_GATE:
++        raise KeyError(name)
++    return ACTIVE_MUTATION == name
++
++
++class Checks:
++    def __init__(self) -> None:
++        self.passed = 0
++        self.failed = 0
++        self.failed_families: list[str] = []
++
++    def check(self, label: str, condition: bool, detail: str) -> None:
++        ok = bool(condition)
++        self.passed += int(ok)
++        self.failed += int(not ok)
++        if not ok:
++            self.failed_families.append(label[0])
++        print(f"{'PASS' if ok else 'FAIL'}: {label} {detail}")
++
++    def finish(self) -> int:
++        print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
++        return self.failed
++
++
++def normalize_text(text: str) -> str:
++    return " ".join(text.split())
++
++
++F = Fraction
++M = 6
++P_, Q_, R_ = 3, 1, 2
++
++
++def dec(x: Fraction, n: int = 6) -> str:
++    s = x.numerator * 10 ** n // x.denominator
++    return f"{s // 10 ** n}.{str(s % 10 ** n).zfill(n)}"
++
++
++def orbit_type(s: int, u: int) -> str:
++    if s == u:
++        return "p"
++    if s // 2 == u // 2:
++        return "q"
++    return "r"
++
++
++WEIGHTS = {"p": P_, "q": Q_, "r": R_}
++PHI = [[WEIGHTS[orbit_type(s, t)] for t in range(M)] for s in range(M)]
++Z1 = sum(PHI[0])
++STEPS = ((1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0, -1))
++_KK: dict = {}
++
++
++def Kk(vals: tuple) -> Fraction:
++    if vals not in _KK:
++        _KK[vals] = sum((reduce(lambda a, b: a * b, [F(PHI[s][a], Z1) for a in vals], F(1)) for s in range(M)), F(0)) if vals else F(1)
++    return _KK[vals]
++
++
++_COND: dict = {}
++
++
++def cond(rec: tuple, s: int) -> Fraction:
++    key = (rec, s)
++    if key not in _COND:
++        if not rec:
++            _COND[key] = F(1, M)
++        else:
++            num = reduce(lambda a, b: a * b, [PHI[s][a] for a in rec], 1)
++            den = sum(reduce(lambda a, b: a * b, [PHI[u][a] for a in rec], 1) for u in range(M))
++            _COND[key] = F(num, den)
++    return _COND[key]
++
++
++def window(pos: dict):
++    sites = sorted(pos)
++    edges = [(i, j) for i in sites for j in sites if i < j and sum(abs(pos[i][k] - pos[j][k]) for k in range(3)) == 1]
++    nb = {i: [j for j in sites if (min(i, j), max(i, j)) in edges] for i in sites}
++    return sites, edges, nb
++
++
++WINDOWS = {
++    "plaquette": {0: (0, 0, 0), 1: (1, 0, 0), 2: (1, 1, 0), 3: (0, 1, 0)},
++    "2x3": {i: (i // 3, i % 3, 0) for i in range(6)},
++    "cube": {i: (i & 1, (i >> 1) & 1, (i >> 2) & 1) for i in range(8)},
++    "path3": {0: (0, 0, 0), 1: (1, 0, 0), 2: (2, 0, 0)},
++    "star4": {0: (0, 0, 0), 1: (1, 0, 0), 2: (-1, 0, 0), 3: (0, 1, 0), 4: (0, -1, 0)},
++    "domino": {0: (0, 0, 0), 1: (1, 0, 0)},
++}
++
++
++def recorded_sets(order, nb):
++    S: set = set()
++    out = {}
++    for x in order:
++        out[x] = tuple(y for y in nb[x] if y in S)
++        S.add(x)
++    return out
++
++
++def weight(order, nb, v) -> Fraction:
++    w = F(1)
++    for x, A in recorded_sets(order, nb).items():
++        if not A:
++            w /= M
++        else:
++            w /= Kk(tuple(sorted(v[y] for y in A)))
++    return w
++
++
++def bad_union(order, nb) -> set:
++    bad: set = set()
++    for x, A in recorded_sets(order, nb).items():
++        if len(A) >= 2:
++            bad |= set(A)
++    return bad
++
++
++def multiset_key(order, nb):
++    return tuple(sorted(A for A in (tuple(sorted(a)) for a in recorded_sets(order, nb).values()) if len(A) >= 2))
++
++
++def static_law(sites, edges) -> dict:
++    w = {}
++    for v in product(range(M), repeat=len(sites)):
++        x = 1
++        for (i, j) in edges:
++            x *= PHI[v[i]][v[j]]
++        w[v] = x
++    Z = sum(w.values())
++    return {v: F(x, Z) for v, x in w.items()}
++
++
++def seq_law(order, nb, sites) -> dict:
++    law = {}
++    for v in product(range(M), repeat=len(sites)):
++        S: set = set()
++        pr = F(1)
++        for x in order:
++            rec = tuple(sorted(v[y] for y in nb[x] if y in S))
++            pr *= cond(rec, v[x])
++            S.add(x)
++        law[v] = pr
++    return law
++
++
++def tv(a: dict, b: dict) -> Fraction:
++    return sum((abs(a[v] - b[v]) for v in a), F(0)) / 2
++
++
++# ------------------------------------------------------------------ units in an environment (block 15's objects)
++def nbrs(p):
++    return [tuple(p[k] + d[k] for k in range(3)) for d in STEPS]
++
++
++def make_unit(sites):
++    U = list(sites)
++    Uset = set(U)
++    O = sorted({y for x in U for y in nbrs(x) if y not in Uset})
++    return U, O
++
++
++def joint_law(U, vO) -> dict:
++    Uset = set(U)
++    idx = {x: i for i, x in enumerate(U)}
++    w = {}
++    for v in product(range(M), repeat=len(U)):
++        x_ = 1
++        for i, x in enumerate(U):
++            for y in nbrs(x):
++                if y in Uset:
++                    if idx[y] > i:
++                        x_ *= PHI[v[i]][v[idx[y]]]
++                elif y in vO:
++                    x_ *= PHI[v[i]][vO[y]]
++        w[v] = x_
++    Z = sum(w.values())
++    return {v: F(x_, Z) for v, x_ in w.items()}
++
++
++def seq_law_env(U, vO, order) -> dict:
++    Uset = set(U)
++    idx = {x: i for i, x in enumerate(U)}
++    law = {}
++    for v in product(range(M), repeat=len(U)):
++        S: set = set()
++        pr = F(1)
++        for x in order:
++            rec = []
++            for y in nbrs(x):
++                if y in Uset and y in S:
++                    rec.append(v[idx[y]])
++                elif y in vO:
++                    rec.append(vO[y])
++            pr *= cond(tuple(sorted(rec)), v[idx[x]])
++            S.add(x)
++        law[v] = pr
++    return law
++
++
++def violates(U, vO, order) -> bool:
++    Uset = set(U)
++    S: set = set()
++    for x in order:
++        inside = [y for y in nbrs(x) if y in Uset and y in S]
++        outside = [y for y in nbrs(x) if y in vO]
++        if inside and len(inside) + len(outside) >= 2:
++            return True
++        S.add(x)
++    return False
++
++
++# ============================================================================================ family A
++def family_a(checks: Checks, texts) -> None:
++    note, axioms, b01, census = texts
++    checks.check("A1", all((ROOT / pth).is_file() for pth in AUDIT_INPUT_PATHS) and len(set(AUDIT_INPUT_PATHS)) == 4,
++                 "the four declared inputs exist (this note, the axiom memo, block 01 and the census note, both on main)")
++    checks.check("A2", all(n in normalize_text(axioms) for n in AXIOM_NEEDLES), "the four axiom sentences used are present verbatim in the axiom memo")
++    f01, fc = normalize_text(b01), normalize_text(census)
++    checks.check("A3", BLOCK01_CLAIM_ID in f01 and BLOCK01_FRAGMENT in f01 and CENSUS_CLAIM_ID in fc and CENSUS_FRAGMENT in fc,
++                 "the parents' claim ids, block 01's Theorem B and the census note's Theorem 3 rational are present")
++    flat = normalize_text(note)
++    checks.check("A4", CLAIM_ID in flat and Path(__file__).name in flat, "this note carries its claim id and names this runner")
++
++
++# ============================================================================================ family B
++def family_b(checks: Checks, report: dict) -> None:
++    ok = True
++    strict_total = 0
++    counts = {}
++    for name in ("plaquette", "2x3", "cube"):
++        sites, edges, nb = window(WINDOWS[name])
++        n = len(sites)
++        reps = {}
++        for order in permutations(sites):
++            key = multiset_key(order, nb)
++            if key not in reps:
++                reps[key] = order
++        pairs = 0
++        strict = 0
++        orders_iter = reps.values() if name == "cube" else list(permutations(sites))
++        for order in orders_iter:
++            v = tuple([0] * n)
++            w0 = weight(order, nb, v)
++            bad = bad_union(order, nb)
++            for z in sites:
++                v2 = list(v)
++                v2[z] = 1
++                w1 = weight(order, nb, tuple(v2))
++                pairs += 1
++                if mut("flip_inequality_wrong") and name == "plaquette" and z == 0:
++                    w1 = w0 - F(1, 10 ** 6)
++                pred = z in bad
++                if mut("strictness_criterion_wrong"):
++                    pred = z not in bad
++                ok = ok and (w1 >= w0) and ((w1 > w0) == pred)
++                strict += int(w1 > w0)
++        counts[name] = (pairs, strict, len(reps))
++        strict_total += strict
++        report.setdefault("classes", {})[name] = reps
++    checks.check("B1", ok, "X1: the flip raises every order's weight ratio, strictly iff the site lies in a recorded set of size >= 2: " + "; ".join(f"{n}: {c[0]} pairs ({c[2]} classes), {c[1]} strict" for n, c in counts.items()))
++    pp, qq, rr = sp.symbols("p q r", positive=True)
++    lem = True
++    for k in range(2, 7):
++        ZZ = pp + qq + 4 * rr
++        Kb = [pp / ZZ, qq / ZZ, rr / ZZ, rr / ZZ, rr / ZZ, rr / ZZ]
++        Kmb = [qq / ZZ, pp / ZZ, rr / ZZ, rr / ZZ, rr / ZZ, rr / ZZ]
++        Kc = [rr / ZZ, rr / ZZ, pp / ZZ, qq / ZZ, rr / ZZ, rr / ZZ]
++        same = sum(Kb[s] ** k for s in range(6))
++        anti = sum(Kmb[s] * Kb[s] ** (k - 1) for s in range(6))
++        orth = sum(Kc[s] * Kb[s] ** (k - 1) for s in range(6))
++        pred_anti = (pp - qq) / ZZ * ((pp / ZZ) ** (k - 1) - (qq / ZZ) ** (k - 1))
++        pred_orth = ((pp - rr) * (pp ** (k - 1) - rr ** (k - 1)) + (qq - rr) * (qq ** (k - 1) - rr ** (k - 1))) / ZZ ** k
++        if mut("normalizer_lemma_wrong"):
++            pred_anti = pred_anti * (k + 1) / k
++        lem = lem and sp.simplify(same - anti - pred_anti) == 0 and sp.simplify(same - orth - pred_orth) == 0
++    checks.check("B2", lem, "the normalizer lemma: K_k(b..b) - K_k(-b,b..b) = ((p-q)/Z_1)[(p/Z_1)^(k-1) - (q/Z_1)^(k-1)] and the orthogonal form, symbolically for k = 2..6")
++
++
++# ============================================================================================ family C
++def family_c(checks: Checks, report: dict, exact: bool) -> None:
++    random.seed(20260915)
++    ok_q, ok_bad = True, True
++    details = []
++    for name in ("path3", "star4"):
++        sites, edges, nb = window(WINDOWS[name])
++        st = static_law(sites, edges)
++        orders = list(permutations(sites))
++        good = [o for o in orders if not bad_union(o, nb)]
++        laws = {}
++        for o in orders:
++            key = multiset_key(o, nb)
++            if key not in laws:
++                laws[key] = seq_law(o, nb, sites)
++        mix_good = {v: sum((laws[multiset_key(o, nb)][v] for o in good), F(0)) / len(good) for v in st}
++        wts = {o: F(random.randint(1, 9)) for o in good}
++        tot = sum(wts.values())
++        mix_good2 = {v: sum((wts[o] * laws[multiset_key(o, nb)][v] for o in good), F(0)) / tot for v in st}
++        eq = tv(mix_good, st) == 0 and tv(mix_good2, st) == 0
++        if mut("qualifying_mixture_not_static_claimed"):
++            eq = not eq
++        ok_q = ok_q and eq
++        diffs = []
++        for _ in range(3):
++            w2 = {o: F(random.randint(1, 9)) for o in orders}
++            t2 = sum(w2.values())
++            mix = {v: sum((w2[o] * laws[multiset_key(o, nb)][v] for o in orders), F(0)) / t2 for v in st}
++            diffs.append(tv(mix, st))
++        ok_bad = ok_bad and all(d > 0 for d in diffs)
++        details.append(f"{name}: {len(good)}/{len(orders)} qualifying")
++    checks.check("C1", ok_q, "X2 (if): on the path and the four-leaf star, the uniform and a pseudo-random mixture over qualifying orders equal the static law exactly: " + "; ".join(details))
++    if mut("mixture_equals_static_claimed"):
++        ok_bad = False
++    checks.check("C2", ok_bad, "X2 (only if): three pseudo-random mixtures charging non-qualifying orders differ from the static law on the path and the star")
++    sites, edges, nb = window(WINDOWS["2x3"])
++    st6 = static_law(sites, edges)
++    reps = report["classes"]["2x3"]
++    laws6 = {key: seq_law(o, nb, sites) for key, o in reps.items()}
++    counts = {}
++    for o in permutations(sites):
++        key = multiset_key(o, nb)
++        counts[key] = counts.get(key, 0) + 1
++    uni = {v: sum((F(counts[k], 720) * laws6[k][v] for k in laws6), F(0)) for v in st6}
++    d_uni = tv(uni, st6)
++    census = F(372254646387017, 12790481418000000)
++    c3 = d_uni == census
++    if mut("census_value_mismatch"):
++        c3 = d_uni == census * F(1001, 1000)
++    rnd = []
++    for _ in range(2):
++        w2 = {k: F(random.randint(1, 9)) for k in laws6}
++        t2 = sum(w2.values())
++        mix = {v: sum((w2[k] * laws6[k][v] for k in laws6), F(0)) / t2 for v in st6}
++        rnd.append(tv(mix, st6))
++    sites4, edges4, nb4 = window(WINDOWS["plaquette"])
++    st4 = static_law(sites4, edges4)
++    laws4 = {key: seq_law(o, nb4, sites4) for key, o in report["classes"]["plaquette"].items()}
++    w4 = {k: F(random.randint(1, 9)) for k in laws4}
++    t4 = sum(w4.values())
++    mix4 = {v: sum((w4[k] * laws4[k][v] for k in laws4), F(0)) / t4 for v in st4}
++    checks.check("C3", c3 and all(d > 0 for d in rnd) and tv(mix4, st4) > 0, f"X2: on 2x3 the uniform mixture over 720 orders (28 classes) is at the census note's distance {d_uni} from the static law; two pseudo-random class mixtures and a plaquette mixture differ (TV " + ", ".join(dec(d) for d in rnd) + f", {dec(tv(mix4, st4))})")
++    cyc = True
++    for name in ("plaquette", "2x3", "cube"):
++        keys = report["classes"][name].keys()
++        cyc = cyc and all(len(k) >= 1 for k in keys)
++    if mut("cycle_lemma_wrong"):
++        cyc = not cyc
++    checks.check("C4", cyc, "X2 (cycle lemma): every multiset class of the plaquette, 2x3 and the cube contains a recorded set of size >= 2, so no order qualifies")
++    if exact:
++        print("exact random mixture TVs on 2x3:", [str(d) for d in rnd])
++
++
++# ============================================================================================ family D
++def family_d(checks: Checks) -> None:
++    random.seed(7)
++    ok_env, ok_iso = True, True
++    for name in ("domino", "path3"):
++        U, O = make_unit(list(WINDOWS[name].values()))
++        vO = {y: 0 for y in O}
++        J = joint_law(U, vO)
++        orders = list(permutations(U))
++        laws = {o: seq_law_env(U, vO, o) for o in orders}
++        allviol = all(violates(U, vO, o) for o in orders)
++        w2 = {o: F(random.randint(1, 9)) for o in orders}
++        t2 = sum(w2.values())
++        mix = {v: sum((w2[o] * laws[o][v] for o in orders), F(0)) / t2 for v in J}
++        ok_env = ok_env and allviol and tv(mix, J) > 0 and all(tv(laws[o], J) > 0 for o in orders)
++        Ji = joint_law(U, {})
++        lawsi = {o: seq_law_env(U, {}, o) for o in orders}
++        good = [o for o in orders if not violates(U, {}, o)]
++        mixi = {v: sum((lawsi[o][v] for o in good), F(0)) / len(good) for v in Ji}
++        ok_iso = ok_iso and tv(mixi, Ji) == 0 and len(good) >= 1
++    if mut("environment_mixture_equals_joint_claimed"):
++        ok_env = False
++    checks.check("D1", ok_env, "X3: the domino and the path in the all-+x environment — every order violates the criterion, every order and a pseudo-random mixture differ from the joint law")
++    checks.check("D2", ok_iso, "X3 (isolated): the uniform mixture over the qualifying orders of the domino and the path equals the joint law")
++
++
++# ============================================================================================ family F
++FENCES = (
++    "This note proves that mixtures of formation laws are the static law only when they charge orders in which every record sees at most one neighbour, and never on a window with a cycle; it does not treat value-dependent order laws beyond the plaquette, other menus, or non-constant environments for units, does not select an order, mixture, rule or coupling as physical, and adopts no clause.",
++    "No plane, bridge, Born or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
++    "No value, constant or theorem is imported as authority.",
++)
++FORBIDDEN = (
++    "the physical order", "the physical rule", "the physical mixture", "for every coupling", "selects the", "fires wake condition", "the Bridge weights",
++    "the Bridge conjecture", "certified", "converge", "emergent", "the static law is derived", "the formation reading is refuted", "washes out", "toward the plane", "the trend",
++)
++CLAIM_INJECTIONS = {"claim_static_law_derived": "Hence the static law is derived from the formation reading."}
++CLASSICAL_NAMES = ("Brook", "Besag", "Toom", "Peierls", "Fourier", "Dobrushin", "Gillespie", "Eden", "Hammersley")
++ALLOWED_NAME_SECTIONS = ("Prior art and what is new", "Imports")
++SCAN_MARKER = "float-scan-marker-line"
++
++
++def family_f(checks: Checks, note_text: str) -> None:
++    text = note_text
++    for name, phrase in CLAIM_INJECTIONS.items():
++        if mut(name):
++            text = text + "\n" + phrase
++    flat = normalize_text(text)
++    checks.check("F1", all(f in flat for f in FENCES), "the note carries the three fence sentences verbatim")
++    hits = [ph for ph in FORBIDDEN if ph.lower() in flat.lower()]
++    checks.check("F2", not hits, f"the note contains no forbidden phrase ({len(hits)} hits)")
++    source_lines = Path(__file__).read_text(encoding="utf-8").splitlines()
++    scan = [ln for ln in source_lines if SCAN_MARKER not in ln]
++    float_literal = re.compile(r"(?<![\w.])\d+\.\d+(?![\w.])|(?<![\w.])\d+[eE][-+]?\d+(?![\w.])")
++    conversion = "flo" + "at("  # float-scan-marker-line
++    evalf = "eva" + "lf("  # float-scan-marker-line
++    numeric = "N" + "("  # float-scan-marker-line
++    bad = [ln for ln in scan if float_literal.search(ln) or conversion in ln or evalf in ln or numeric in ln]
++    checks.check("F3", not bad and len(scan) > 200, f"runner source: no floating-point literal or conversion call ({len(bad)} hits)")
++    sections = re.split(r"^## ", text, flags=re.M)
++    offenders = []
++    for i, sec in enumerate(sections):
++        title = sec.splitlines()[0].strip() if i > 0 else "(front matter)"
++        body = sec
++        if mut("claim_classical_name_in_theorem") and title.startswith("Theorem X2"):
++            body = body + " (a Dobrushin-type comparison)"
++        if any(title.startswith(a) for a in ALLOWED_NAME_SECTIONS):
++            continue
++        for nm in CLASSICAL_NAMES:
++            if nm in body:
++                offenders.append((title[:30], nm))
++    checks.check("F4", not offenders, f"the classical names appear only under Prior art and Imports ({len(offenders)} offenders)")
++
++
++# ============================================================================================ family G
++N5_LINES = (
++    "per_element: executed — the normalizer lemma for k = 2..6 symbolically; the flip on every order-site pair of the plaquette (96) and 2x3 (4320) and every class-site pair of the cube (4336)",
++    "per_site: executed — every pattern of the path, the star, the plaquette and 2x3 in the mixture checks; every pattern of the domino and the path in the environment checks",
++    "per_mode: executed — every order class of the plaquette (4), 2x3 (28) and the cube (542); every order of the path, the star, the domino",
++    "per_block: executed — six windows, two environments",
++    "lattice_wide: X1-X3 proved for every finite window and every non-constant rule; value-dependent order laws beyond the plaquette and other menus not claimed",
++)
++
++
++def family_g(checks: Checks) -> None:
++    for line in N5_LINES:
++        print(line)
++    checks.check("G1", len(N5_LINES) == 5 and all(len(l) >= 40 for l in N5_LINES), "the five N5 resolution lines are printed")
++
++
++def main(argv) -> int:
++    global ACTIVE_MUTATION
++    if "--list-mutations" in argv:
++        for name, fam in MUTATION_GATE.items():
++            print(f"{name} {fam}")
++        return 0
++    if "--mutation" in argv:
++        ACTIVE_MUTATION = argv[argv.index("--mutation") + 1]
++        if ACTIVE_MUTATION not in MUTATION_GATE:
++            print(f"unknown mutation {ACTIVE_MUTATION}")
++            return 2
++    exact = "--exact" in argv
++    checks = Checks()
++    texts = [(ROOT / pth).read_text(encoding="utf-8") if (ROOT / pth).is_file() else "" for pth in AUDIT_INPUT_PATHS]
++    print("AUDIT_INPUT_PATHS:")
++    for pth in AUDIT_INPUT_PATHS:
++        print(f"  {pth}")
++    print(f"AUDIT_TIMEOUT_SEC: {AUDIT_TIMEOUT_SEC}")
++    print("scope: the static law is not a mixture of formation laws on any window with a cycle — the flip lemma, the mixture theorem with its criterion, units in a constant environment; exact; no clause adopted")
++    print(f"mutation: {ACTIVE_MUTATION or 'none'}")
++    report: dict = {}
++    family_a(checks, texts)
++    family_b(checks, report)
++    family_c(checks, report, exact)
++    family_d(checks)
++    family_f(checks, texts[0])
++    family_g(checks)
++    if ACTIVE_MUTATION:
++        observed = "".join(sorted(set(checks.failed_families))) or "none"
++        print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
++        print(f"mutation_family_observed: {observed}")
++    failed = checks.finish()
++    return 1 if failed else 0
++
++
++if __name__ == "__main__":
++    raise SystemExit(main(sys.argv[1:]))

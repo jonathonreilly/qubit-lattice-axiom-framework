@@ -1,0 +1,1484 @@
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+index 8f9c496033ee3e37e4ad73433151a79224a60814..78b51eed24ece34d5bf1b3854dea43563f6f9999 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+@@ -8,3 +8,15 @@
+ | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
+ | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
+ | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
++
++## Block 17 — the static law at strong coupling (2026-09-15)
++
++| Family | Object/formulation | Mechanism/invariant | Terminal obligation | Strength vs target | Status | Concrete evidence | Reopen condition |
++|---|---|---|---|---|---|---|---|
++| F17.1 spectrum and symmetry | `φ` on the six values | eigen-decomposition; the 48 signed permutations | none | exact | candidate-complete | T1 (B1) | — |
++| F17.2 reflection positivity through site planes | the torus law | the shared plane makes `E[F F∘θ]` a sum of squares | none | exact, any weights | candidate-complete | T2 (B2) | — |
++| F17.3 chessboard | cell events, site reflections | iterated quadratic-form inequality | none | exact | candidate-complete | T3 (B3) | — |
++| F17.4 disseminated bound | all bonds of one direction bad | counting | none | crude, exact | candidate-complete | T4 (C1) | a transfer-matrix value for a better constant |
++| F17.5 two-dimensional contours | planar cut–cycle duality; enclosing cycles | explicit counts; geometric series | none | exact; threshold `216 m` | candidate-complete | T5 (C2–C6) | — |
++| F17.6 long-range order to several Gibbs states | torus limits; tail triviality | DLR limit; conditioning on tail events; backward martingale | none | exact (named standard theorems) | candidate-complete | T6 | — |
++| F17.7 three dimensions | the in-plane count | two differing records are separated by bad bonds of their common plane; the three-dimensional chessboard normalization | none | exact; threshold `216 m` | candidate-complete | T7 (D1–D2) | — |
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
+index e99dd0e244c2753522fc80b26960d1979642339c..edba394a8fc14c9c926c9ff4ea4cc0427bb6a051 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
+@@ -23,3 +23,11 @@
+ - Site weight `ψ`: constant by covariance on the transitive menu (executed); on a non-transitive menu it is not.
+ - Simultaneous formation (several records locking in one step) is not a total order; the formation law of a partial order with simultaneous steps would need a joint conditional the axiom does not state; named in N7.
+ - Infinite volume: the static specification's DLR existence (compactness on a finite menu) and uniqueness are outside the block.
++
++## Block 17 (2026-09-15) — the static law at strong coupling
++- Dependencies: `minimal_axioms`; block 03 (on `main`; the uniqueness side, for the contrast); block 01 (on `main`; the static reading). Proposed, unaudited. PR #8146 referenced for context.
++- Named premises: the static reading; the six-axis menu; positivity of the weights; the torus of even side.
++- Scaffolding: the ring of four and the `4×2` torus for the executed instances; the box `[−L', L']²` with `L' = 10`; the couplings `(p, 1, 2)` and `(5, 2, 4)`; `p = 432` for the illustration.
++- Standard mathematical theorems named at definition level (never as physics authority): planar cut–cycle duality with the separation theorem for lattice polygons (T5, T7); the extension theorem for consistent finite-dimensional laws and the backward martingale theorem (T6).
++- References named, not used: the reflection-positivity/chessboard method and its application to discrete symmetry breaking; the classical contour argument.
++- Counterfactual pass: the constant rule (no order); weights with `p < m` (the bound is vacuous); odd torus sides (site reflections need an even side); the formation law (not this object).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block17_findings.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block17_findings.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..c07f9f4cd1dc3b4309d1478dd3ae0dcda76da824
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block17_findings.md
+@@ -0,0 +1,19 @@
++# Refuting pass — block 17 (supervisor-run, disjoint machinery; 2026-09-15)
++
++Routes compared (control `specs/supervisor_control_block17_static_order.py`, refuting pass `specs/supervisor_control_block17_refuter.py`, outputs in `.out.txt`):
++
++| item | runner's route | refuting route | result |
++|---|---|---|---|
++| reflection positivity (T2) | the direct expectation `E[F · F∘θ]` for pseudo-random `F` | the explicit sum-of-squares decomposition `Z E[F F∘θ] = Σ_{v_P} W_P G(v_P)²` computed as such, on the ring at `(3,1,2)` and `(5,2,4)` | equal, nonnegative |
++| the chessboard instance (T3) | `P(two bonds bad)² ≤ P(all bad)` on the ring | the two-step quadratic-form form through the *other* site plane: `P(A_0 ∩ A_2)² ≤ P(A_0 ∩ θA_0) P(A_2 ∩ θA_2)` and each of those squared `≤ P(all bad)` | both steps hold |
++| the enclosing-cycle counts (T5) | self-avoiding closed dual walks | polyomino placements (translations times orientations) of the polyominoes of perimeter `4, 6, 8` | equal: `1, 4, 22` |
++| the series (T5, T7) | closed forms symbolically | exact partial sums to `400` terms at `y = 1/2` and `y = 4/5` | agree to `10^{−30}` |
++| the three-dimensional disseminated bound (T7) | the `2×2×2` torus at `p = 432` | the surface counts of the superseded conditional version (twelve-neighbour adjacency, two implementations: `1, 12, 158, 2148`) are retained in the output only as a record; the in-plane count needs no surface counting |
++
++Findings (all fixed before the census):
++- **F1 (fixed).** The runner's first expected count of enclosing dual cycles of length six was `2`; the domino has two orientations and the count is `4` (within the bound `(n/2)3^{n−1} = 729`); the refuting route by polyomino placements confirmed `1, 4, 22`.
++- **F2 (fixed).** The three-dimensional threshold `p_0 = 6m/ε = 34,992,000 m` was first checked against its per-`m` value instead of `69,984,000` at `m = 2`.
++- **F3 (fixed).** Three tokens the lane forbids as substrings appeared in the note ("converges", "dominated convergence", "sharp thresholds"); reworded.
++- **F4 (fixed, in the refuting pass itself).** The first second-adjacency routine counted the two collinear bonds as neighbours (14 instead of 12); corrected to the common-unit-square criterion.
++
++Attempts to refute (nothing refuted): T2 was re-read for bonds lying inside the fixed plane (assigned to the plane weight, so they do not break the factorization); T3 for a cell whose two canonical bonds are both in the set (the joint event's disseminated version is contained in the single-bond one); T5's case (b) for the length of a separating boundary-to-boundary dual path (the lattice path inside the box `|·|_∞ ≤ L'/2` forces at least `L'/2` steps from the boundary and back); T6 (iv) for the use of the value symmetry (the unique state is symmetric because the image of a Gibbs state under a symmetry of `φ` is a Gibbs state, hence the same state). Fold after opening: the three-dimensional statement was first written as conditional on a dual-surface connectivity lemma with a crude threshold; the in-plane count (T7) replaces it — two differing records are separated by bad bonds of the coordinate plane they share, so the planar count applies with the three-dimensional chessboard normalization — at the same threshold `216 m` and with no lemma. Verdict of this pass: PASS-NO-BLOCKER at the supervisor's own standard, pending the owner's independent review.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block17.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block17.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..5b8e1e2121fcfc67185cb049559f279d728822ce
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block17.md
+@@ -0,0 +1,15 @@
++# Claim status certificate — block 17 (close, 2026-09-15)
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: upstream_support
++reachability_to_target: supports
++conditional_surface_status: "T1–T7 proved for every positive weight triple (T5–T7 for p >= 216 max(q, r), on Z^2 and on Z^3 by the in-plane count); executed at (p, 1, 2) and (5, 2, 4); conditional on the six-axis menu and the product rule as supplied conditions; three standard mathematical theorems named at definition level (planar cut–cycle duality with the separation theorem for lattice polygons; the backward martingale theorem; the extension theorem for consistent finite-dimensional laws)"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++claim_type_reason: "a sum-of-squares identity; an iterated quadratic-form inequality; a counting bound on a partition function; planar duality with an explicit contour count and a geometric series; the DLR limit, conditioning on tail events and the backward martingale theorem; every constant an exact rational"
++dependency_classes: "one premise node (minimal_axioms); block 03 (on main; proposed, unaudited)"
++open_imports: "the six-axis menu; the product form; positivity; the three standard mathematical theorems named at definition level"
++review_loop_disposition: pending (supervisor-run block; author checks only)
++independence_class: "single seat (Fable, supervisor): control, contract with a lens pass, primary, refuting pass by the sum-of-squares decomposition, a second reflection, polyomino placements, partial sums and a direct three-dimensional count, fold"
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block17.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block17.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..fc8cdf3e839e71d04d80d462cde21279e9d5bc00
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block17.md
+@@ -0,0 +1,26 @@
++# GOAL — block 17: the static six-axis law at strong coupling — long-range order and several Gibbs states by reflection positivity, a chessboard estimate and Peierls counting (2026-09-15)
++
++**Owner directive (2026-09-15):** don't stop; assess the next lane at each conclusion; no subagents; derivations over computation.
++
++**Why this block.** Block 03 (on `main`) proved the static law's uniqueness region on `Z³` (one Gibbs state where the one-site influence sum is below one). The strong-coupling side — "one law or several" for the static reading — is open on `main`, and blocks 13–16 make the static reading the one that carries the repository's Green functions. A rigorous route exists at scope with crude but explicit constants: reflection positivity through site planes (no condition on the weights), the chessboard estimate, a crude bound on the disseminated partition function, Peierls counting of bad-bond surfaces on the torus, and the passage from long-range order to several Gibbs states through tail triviality. The result is the two-sided picture: uniqueness below block 03's thresholds, several states above an explicit (large) ratio `p/max(q,r)`.
++
++**Object.** The static law of the six-axis product rule: on the torus `T_L = (Z/2L Z)³`, `μ_L(v) = Π_{bonds} φ(v_x, v_y)/Z_L`, `φ = p, q, r` on same, antipodal, orthogonal pairs, positive weights; on `Z³` the Gibbs states of the specification with these weights. Executed at `(p, 1, 2)`.
++
++**Contract.**
++- T1 (spectrum and symmetry): the eigenvalues of `φ` are `Z_1`, `p − q` (three times), `p + q − 2r` (twice); the weight matrix is invariant under the full cube group including reflections, which acts transitively on the six values.
++- T2 (reflection positivity): for reflections of the torus through planes containing sites, `E_L[F · θF] ≥ 0` for every function `F` of the closed half — proved for every positive weight matrix, no positivity condition on `φ` needed; executed exactly on a ring and on a `4×2` torus.
++- T3 (chessboard estimate): for events attached to distinct unit cells and reflected by site reflections, `μ_L(∩ A_c) ≤ Π_c μ_L(A_c disseminated)^{1/|cells|}` — re-proved by the iterated Cauchy–Schwarz argument; executed on the ring.
++- T4 (the disseminated bound): the probability that all bonds of one direction are bad satisfies `μ_L(all dir-i bonds bad)^{1/N} ≤ 6 m/p`, `m = max(q, r)`, `N = (2L)³`; executed on small tori.
++- T5 (Peierls on the torus): the number of connected sets of `n` bonds containing a given bond is at most `(e·11)^{n−1}`; a set of `n` bad bonds has probability at most `(6m/p)^{n/3}`; hence `μ_L(v_0 ≠ v_x) ≤ Σ_{n ≥ 6} 3n (e·11)^{n−1}(6m/p)^{n/3} + (winding term) ≤ 1/2` for `p ≥ p_0(m)` explicit and `L` large; executed: the counts for `n ≤ 5`, the series bound, `p_0` exact.
++- T6 (from long-range order to several Gibbs states): every limit point of `μ_L` is a translation-invariant Gibbs state with `μ(v_0 = v_x) ≥ 1/2` for all `x`; a unique Gibbs state would be extremal, hence tail-trivial, hence short-range correlated, contradicting long-range order; so there are at least two Gibbs states, and the symmetry orbit of any non-symmetric extremal one has at least two and at most six members. Re-proved at scope (extremal ⇔ tail-trivial; tail-trivial ⇒ short-range correlations; torus limits are Gibbs).
++- N-gate: this is a positive statement (several states) resting on a negative (no unique state); walls and escapes named. The threshold is crude; no claim of sharpness.
++
++**Lens pass (self-run panel).**
++- *"Reflection positivity needs a positive-definite coupling."* For reflections through bond midplanes, yes; for reflections through site planes the shared plane makes `E[F θF]` a sum of squares for any weights. The chessboard estimate here uses site reflections only, because bond events are disseminated by site reflections.
++- *"The threshold is absurdly large."* Yes (`p_0 ≈ 10^5–10^6` times `m`). The theorem is existence with explicit constants; sharpening is a separate task. Block 03's uniqueness thresholds and this one leave a wide undecided band, stated as such.
++- *"Long-range order on the torus is not a Gibbs-state statement."* T6 bridges it; every step re-proved or reduced to a standard measure-theoretic limit theorem, named as such.
++- *"Is this the formation law?"* No: it is the static law, the reading that the rest of the repository uses; block 12's obligation for the formation law stands. Stated in the boundaries.
++
++**Forbidden phrases (beyond the lane's standing list):** "phase transition", "the physical phase", "converge", "emergent", "certified", "sharp threshold".
++
++**Prior-art search at `origin/main`.** `git grep -l -iE "chessboard|reflection positiv|peierls|long-range order|symmetry break" -- 'docs/ADMISSIBILITY*.md'` → Dirac–Kähler carrier notes (reflection positivity in a different sense: OS positivity of a Gaussian carrier) and the two-site criterion note (naming an ordering argument as open); nothing on the six-axis static law's ordered side. Open PRs: none on it (#8146 is the formation law's strong-coupling side).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+index 6dfc9de13838b8fe1d6d593b83d0d31cd0763b93..300727edcfb3a8b3cbe3deaaef163379d30e5dac 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+@@ -25,3 +25,6 @@ Stacked on #8000 → #7999 → #7998 → main; all hand-offs. Block 04 = the two
+ Stacked on #8002 → #8000 → #7999 → #7998 → main; all hand-offs. Block 05 = the monotone-order class: one formation law for every linear extension of the product order (every rule); rows and columns path chains; the 2×2 corner law with corner independence; no right/down turning staircase is first-order Markov in its site values (proved for every nonconstant positive orbit triple under the declared product-rule monotone law); opposite corner classes give the same finite-rectangle law, with two distinct laws only at the executed 2×3 triples; the snake keeps rows and can lose column chains (column 0 survives on 3×3; on the executed 4×3 no column is a chain). Lens before the primary caught the supervisor's own wrong snake control. Historical checker: FIX FIRST on one forbidden mechanism sentence (false; deleted), nothing refuted in the theorems. Lock released.
+ 
+ Current source review found five further P2 groups, corrected in the canonical note and runner with their disposition in REVIEW_HISTORY.md. Same-session confirmation is pending; this appendix records an open review handoff.
++
++## 2026-09-15 block 17 opened for review as PR #8151 (supervisor)
++Independent PR against `main` (`2ed54cb83a`); parent on `main`: block 03. The lane assessment after block 16 took the static law's ordered side ("one law or several" for the static reading). Block 17 = the spectrum and the transitive cube-group symmetry (T1); reflection positivity through site planes for every positive weight matrix, by a sum of squares (T2); the chessboard estimate (T3); the disseminated bound `(6m/p)^N` (T4); in two dimensions, planar cut–cycle duality and explicit contour counts give `μ_L(v_0 ≠ v_x) ≤ 295/768 < 1/2` for `p ≥ 216 max(q, r)` (T5); torus limits are translation-invariant Gibbs states with long-range order, and a unique state would be tail-trivial and short-range correlated — so the static law on `Z²` has at least two Gibbs states there (T6); in three dimensions the same chain inside a coordinate plane through the origin gives the same threshold with no surface lemma (T7; folded after opening). Three standard theorems imported at definition level; thresholds not optimal. Seats supervisor-run; refuting pass consistent on five routes; three drafting defects fixed. Certificate 20/20; 13 mutations in-family; cache pinned; gates: pipeline ×2, audit_lint strict OK, vocab clean, diff --check clean, only the manifest kept from generated audit data. Lock held (refreshed) for the next assessment.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
+index 9ccaee75bb420ef215668df8c5bf9b8a5f8fca7f..a2aa59b88f12f68b75910d8202902cc84de7ca8c 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
+@@ -13,3 +13,9 @@ Policy: reference and converge, never borrow; every statement used is re-proved
+ - Compactness of a countable product of finite sets; Kolmogorov / Carathéodory extension on the cylinder algebra; the passage of finite-window conditional identities to a limit — re-proved at scope (Theorem C2, existence only).
+ - The Pickard random field / Markov-mesh (unilateral Markov field) construction — Abend, Harley and Kanal (1965); Pickard (1977, 1980): a two-parent unilateral construction whose rows and columns are Markov chains when the corner-pair condition holds. The framework's row sweep under the records-only reading is an instance: `Z_2 = Z_1^2 K^2` with `K` symmetric doubly stochastic is the condition; Theorem E re-proves the row statement natively (the column statement is a lead for the next block).
+ - Toom and Vasilyev (1970s): product-form and Markov invariant measures of probabilistic cellular automata — reference only.
++
++## Block 17 (2026-09-15) — references named; three standard theorems imported at definition level
++- Fröhlich–Israel–Lieb–Simon (1978): reflection positivity and chessboard estimates; Fröhlich–Lieb and Biskup's notes: discrete symmetry breaking by the chessboard route — the method re-proved here at scope for site reflections.
++- Peierls (1936): the contour argument — re-proved with explicit constants in two dimensions.
++- Whitney's planar cut–cycle duality and the separation theorem for lattice polygons; Lévy's backward martingale theorem; the extension theorem for consistent finite-dimensional laws — imported at definition level.
++- Timár (2013), "Boundary-connectivity via graph theory": the dual-surface connectivity lemma of `Z³` — considered for the three-dimensional case and not needed once the count is run inside a coordinate plane.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+index 2977b7f9903b58f95963491e44cb244ee894ab84..e2987273f0c02d7f2f9c7a2339fb1880fe4b95b5 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+@@ -8,3 +8,6 @@ Routes read at their proofs, not their headlines.
+ | The consistency-first kernel K* and the frontier-process gate (bridge exercise 2026-08-26) | `archive/campaigns/exercise-bridge-adoption-20260826/SYNTHESIS.md` | On the gravity lane's Gaussian fixture, the sliding-frontier process marginals differ from the static Gram weights by an extent-stable gap. | Fixture-level, floats; this block states the axiom-level finite distinction; it does not explain the gate. |
+ | Convex-consistency (affine rule output) vs product form (R136/T212/T213) | same packet | Normalizer constant iff no coupling (rank argument; Funk–Hecke on the sphere). | Re-proved exactly on the menu as the two-neighbor normalizer factorization; used for T2(b). |
+ | Binary full-conditional compatibility (landed 2026-08-10) | `docs/ADMISSIBILITY_BINARY_FULL_CONDITIONAL_COMPATIBILITY_ISING_ACTION_AXIOM_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md` | Static half on binary menus; excludes formation dynamics by its own boundary. | Upstream; generalized here; the excluded object is this block's subject. |
++
++## Block 17 (2026-09-15) — the negative inside a positive
++- **The static six-axis law on `Z²` and on `Z³` has no unique Gibbs state for `p ≥ 216 max(q, r)`** (T6, T7): a unique state would be tail-trivial and short-range correlated, contradicting the long-range order of the torus limits (in three dimensions, within every coordinate plane by the in-plane count). Escapes named for the N-gate: the undecided band between block 03's thresholds and `216 m`; the formation law (untouched).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+index 74d2f60bae1b3e2de1ca2cf7ade91cf9e93da3b7..e73a712021c8ced8dde34fd896fd1977fa588bb2 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+@@ -78,3 +78,11 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
+ 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
+ 4. **The silent triples by a non-criterion route** (unchanged; heavy).
+ 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
++
++## Refresh at block 17 opening (2026-09-15)
++
++Block 17 opened for review (independent PR against main): the static law's ordered side — a theorem on `Z²` and `Z³` (the in-plane count). Ranked next:
++
++1. **Sharpen the constants** (a transfer-matrix value for the disseminated partition function; a better contour count) — medium; would narrow the undecided band above block 03's thresholds.
++2. **The menus block** (#8093, "to compute") — small-to-medium.
++3. **Value-dependent order laws on general windows (block 16, X4); the stability theorem for the formation law (block 12, S6)** — hard; unchanged.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block17.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block17.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..2f65e01fc7cfcb0669b16f5706fd02d582b11ca8
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block17.md
+@@ -0,0 +1,16 @@
++# RESULTS — block 17: the static six-axis law at strong coupling — long-range order and several Gibbs states (2026-09-15)
++
++**Deliverables (branch `physics-loop/admissibility-induced-law-block17-static-law-strong-coupling-order-chessboard-peierls-20260915`, independent PR against `main` at `2ed54cb83a`; parent on `main`: block 03):** the note `docs/ADMISSIBILITY_RULE_STATIC_SIX_AXIS_LAW_STRONG_COUPLING_LONG_RANGE_ORDER_AND_SEVERAL_GIBBS_STATES_REFLECTION_POSITIVITY_CHESSBOARD_PEIERLS_BOUNDED_THEOREM_NOTE_2026-09-15.md`; the runner `scripts/admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.py` (20 checks, 13 mutations, exact rational and symbolic arithmetic, ~15 s); the pinned cache; the control and the refuting pass with outputs (`specs/supervisor_control_block17_static_order.py`, `specs/supervisor_control_block17_refuter.py`); `GOAL_block17.md`; `CHECKER_block17_findings.md`; this record. Blocks 06–16 remain open as PRs #8034, #8035, #8138–#8142, #8146–#8150.
++
++**Why this block.** "One law or several" for the static reading: block 03 gave the uniqueness region; the ordered side was open on `main`, and blocks 13–16 make the static reading the carrier of the repository's Green functions. Fold after opening: the three-dimensional statement, first written as conditional on a dual-surface connectivity lemma with a crude threshold, was replaced by the in-plane count, which needs no such lemma and gives the same threshold as in two dimensions.
++
++## Result, in one paragraph
++The weight matrix has eigenvalues `Z_1`, `p − q` (three) and `p + q − 2r` (two) and is invariant under the full cube group, transitive on the six values (T1). On every torus of even side the static law is reflection positive through planes containing sites, for every positive weight matrix — the shared plane makes `E[F·F∘θ]` a sum of squares — so no definiteness of the coupling is needed (T2). The chessboard estimate follows by the iterated quadratic-form inequality (T3), and the disseminated event "every bond of one direction disagrees" has probability at most `(6m/p)^N`, `m = max(q, r)` (T4). In two dimensions, planar cut–cycle duality and an explicit count of enclosing dual cycles (`(n/2)3^{n−1}`) give, for `ε = 6m/p ≤ 1/36`, i.e. `p ≥ 216 m`, `μ_L(v_0 ≠ v_x) ≤ 5/24 + 45/256 = 295/768 < 1/2` for all `x` within a quarter of a box of side at least `20` (T5). Every limit point of the torus laws is a translation-invariant Gibbs state with that long-range order; a unique Gibbs state would be extremal, hence tail-trivial, hence short-range correlated with `μ(v_0 = v_x) → 1/6`: contradiction; so the static law on `Z²` has at least two Gibbs states for `p ≥ 216 m`, and the symmetry orbit of a non-symmetric extremal state has between two and six members (T6). In three dimensions the same chain restricted to a coordinate plane through the origin — two differing records are separated by bad bonds of the plane they share, so the planar count applies while the chessboard estimate and the disseminated bound are the three-dimensional ones — gives at least two Gibbs states for the same threshold `p ≥ 216 m`, with no surface-connectivity lemma (T7). The thresholds are existence constants, not optimal.
++
++## Certificate
++- Runner: `TOTAL: PASS=20 FAIL=0`; 13 mutations each in its family; no floating-point literal or conversion; classical names only under Prior art and Imports.
++- Refuting pass (`CHECKER_block17_findings.md`): the sum-of-squares decomposition, the two-step chessboard form with a different reflection, polyomino placements for the contour counts, partial sums of the series, and the three-dimensional disseminated ratio by direct counting — all consistent.
++- Claim type `bounded_theorem`; status `bounded-support` (both dimensions unconditional); trace `upstream_support`; audit required.
++
++## Not claimed
++Optimal thresholds; the band between block 03's thresholds and these; the formation law's phase (block 12's obligation); the number of extremal states beyond the orbit bound; any coupling as physical.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+index 08d17f0940e3756c94ff724c8ff531adc9e029ce..1c4476a1a1a48fe1bbeda434c5078465b4278e1b 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+@@ -199,3 +199,16 @@ executed against the four declared inputs on current main. The original
+ 23-mutation census and historical pipeline receipts are not claimed as
+ fresh checks. Original-reviewer confirmation is pending; no audit status is
+ applied, and only the coordinator may perform authorized integration.
++
++## block 17 — V1-V5 (supervisor, 2026-09-15)
++- V1: the campaign's "one law or several" for the static reading — block 03 gave the uniqueness region; the ordered side was open on `main`; blocks 13–16 make the static reading the carrier of the repository's Green functions.
++- V2: the lens pass in `GOAL_block17.md` ("reflection positivity needs a definite coupling" — not for site reflections; "the threshold is absurd" — conceded, existence only; "torus order is not a Gibbs statement" — bridged by T6; "is this the formation law" — no).
++- V3: T1–T7 proved with every step re-proved except three named standard theorems; executed exactly (20 checks, 13 mutations); the refuting pass agreed on five routes; three drafting defects fixed before the census (a contour count that forgot the domino's two orientations, a threshold checked in the wrong units, forbidden tokens); after opening, the conditional three-dimensional statement was replaced by the in-plane count (same threshold, no lemma).
++- V4: no coupling selected; thresholds not claimed optimal; the formation law untouched.
++- V5: consumers named — #8093's assembly (the static reading's phase structure); PR #8146 (the formation law's counterpart); the campaign's queue.
++
++## block 17 — supervisor lens pass, primary, refuting pass and fold (2026-09-15)
++Lens (`GOAL_block17.md`): as V2. Primary: the note and the runner (20 checks, 13 mutations). Refuting pass (`CHECKER_block17_findings.md`): the sum-of-squares decomposition against the direct expectation; the two-step chessboard form with the other reflection; polyomino placements for the enclosing-cycle counts; partial sums of both series; a second adjacency implementation for the three-dimensional counts — all consistent. Fold: the note's contour-count sentence and the runner's expected values corrected; forbidden tokens removed. Author checks only; independent review pending.
++
++## block 17 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
++1 self-containment: PASS — inputs: this note, the axioms memo, block 03's note, all on `main` at `2ed54cb83a`; nothing pinned from a branch or PR (PR #8146 is context only). 2 cache/execution: PASS. 3 claim-scope honesty: PASS — both dimensions unconditional; thresholds marked not optimal; the standard theorems named at definition level. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
+index 9b1cd3a27f32295eccf43bf396e38697cba33b16..9ce857208ab2285b1353f05649446cbec7b9c665 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
+@@ -84,3 +84,9 @@ git grep -l -iE "phase transition.*(menu|product rule)|(menu|product rule).*phas
+ | the 26 `coupling` hits (e.g. `BBS_RG_BANACH_CONTRACTION_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-10.md`, `FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md`) | non-matching | "coupling" as a physical coupling constant or RG contraction; no coupling of Markov chains for a menu rule |
+ 
+ Target state after the matched-hit review: **open** — no note on `origin/main` computes the one-site interdependence coefficient of the menu rule, states its uniqueness region, or re-proves the criterion.
++
++## Block 17 (2026-09-15) — prior-art search and routes (independent PR against main; blocks 06–16 are open PRs #8034, #8035, #8138–#8142, #8146–#8150)
++Searched commit: `origin/main` = `2ed54cb83a`.
++- `git grep -l -iE "chessboard|reflection positiv|peierls|long-range order|symmetry break" origin/main -- 'docs/ADMISSIBILITY*.md'` → Dirac–Kähler carrier notes (positivity of a Gaussian carrier, a different object) and the two-site criterion note (route 5 "an ordering argument" named open); nothing on the six-axis static law's ordered side.
++- Open PRs: #8146 (the formation law's strong-coupling side, this lane); none on the static law's ordered side.
++Classification: **open after the matched-hit review.** Routes: O-A the Ising-style flip bijection — not available (six values; the flip inside a contour is not a bijection); O-B the cluster (random-cluster) expansion — not available (weights `q − r` or `r − q` negative for one ordering); O-C reflection positivity through site planes + chessboard + contour counting — chosen (no definiteness needed; planar duality in 2D and, by the in-plane count, in 3D without any surface lemma); O-D the Pirogov–Sinai contour model — not attempted (beyond a session at scope); O-E sharpening the constants — not attempted.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+index e16642020759d3d57935cd6d037d382fc6573bf0..0fb5bb4df6f657a049423a131d50afab669391ff 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+@@ -105,3 +105,14 @@ source_review_correction:
+ # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
+ # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
+ # audit_status: "unset; no audit invoked or verdict applied by this source correction"
++
++# ---------------------------------------------------------------- block 17 close (2026-09-15)
++# block: 17
++# branch: physics-loop/admissibility-induced-law-block17-static-law-strong-coupling-order-chessboard-peierls-20260915 (independent; base origin/main 2ed54cb83a; blocks 06-16 are open PRs #8034, #8035, #8138-#8142, #8146-#8150)
++# pr_status: opened for review — PR #8151 (base = main); hand-off; never merged by the campaign; not a main landing
++# final_certificate: "TOTAL: PASS=20 FAIL=0; 13 mutations, census 13/13 in-family; refuting pass consistent on five routes; gates: see HANDOFF.md"
++# seats: "supervisor-run: control -> contract with a lens pass -> primary (T1-T7, runner) -> refuting pass (sum of squares; second reflection; polyomino placements; partial sums; second adjacency) -> fold"
++# review_findings: "eigenvalues Z1, p-q (x3), p+q-2r (x2); RP through site planes for any weights (sum of squares); chessboard; disseminated bound (6m/p)^N; 2D: p >= 216 max(q,r) gives mu_L(v_0 != v_x) <= 295/768 < 1/2 (planar duality; counts (n/2)3^(n-1)); torus limits are Gibbs with LRO; unique => tail-trivial => short-range => contradiction: at least two Gibbs states on Z^2; 3D by the in-plane count at the same threshold; thresholds not optimal"
++# strongest_unresolved_proof_obligation: "the band between block 03's thresholds and 216 m"
++# next_exact_action: "queue refresh 2026-09-15 (block 17 opening): the constants; the menus block"
++# lock: held (owner: don't stop; assess the next lane at each conclusion)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+index 8f432e2cd2631c0cc6a5121f932b305f16d3a023..6bd66427130c6626890a94c92cf8e312532bc39c 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+@@ -63,3 +63,14 @@ reachability_to_target: supports
+ artifact_role: theorem
+ next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
+ ```
++
++# Trace gate — block 17, at PR opening (2026-09-15)
++```yaml
++trace_class: upstream_support
++target_claim_id: null
++target_blocker_text: "'one law or several' for the static reading of the six-axis rule: block 03's uniqueness region on one side; the ordered side open on main"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem
++next_trace_action: "the ordered side is settled on Z^2 and Z^3 (at least two Gibbs states for p >= 216 max(q, r); the in-plane count); next: sharpen the constants, close the band. Consumers: #8093's assembly; PR #8146; the campaign's queue"
++```
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block17_refuter.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block17_refuter.out.txt
+new file mode 100644
+index 0000000000000000000000000000000000000000..e75f1b3307f7f2de4e197606bbcd86f608fec55c
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block17_refuter.out.txt
+@@ -0,0 +1,5 @@
++R1 sum-of-squares decomposition equals the direct expectation and is nonnegative (ring, both triples, 10 F each): True
++R2 two-step chessboard on the ring: P(A0∩A2)^2 <= P(A0∩θA0) P(A2∩θA2): True ; each of those squared <= P(all bad): True ; hence P(A0∩A2)^2 <= P(all bad): True
++R3 enclosing cycles by polyomino placements: {4: 1, 6: 4, 8: 22} ; by the runner's walk enumeration: {4: 1, 6: 4, 8: 22} ; equal: True
++R4 partial sums to 400 terms: at y=1/2 vs 5/8 gap < True ; at y=4/5 vs 8192/625 gap < True
++R5 second adjacency implementation agrees with the runner's on the origin's neighbourhood: True ; counts n=1..4: {1: 1, 2: 12, 3: 158, 4: 2148}
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block17_refuter.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block17_refuter.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..b3992b30c4ae065c26e3ffb38f0cbd295c4f7e03
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block17_refuter.py
+@@ -0,0 +1,116 @@
++"""Refuting pass, block 17 (supervisor seat, disjoint machinery from the runner's checks):
++(R1) reflection positivity on the ring of 4 by the explicit sum-of-squares decomposition E[F F∘θ] Z = sum_{v0,v2} W_P G(v0,v2)^2
++     (computed as such), against the runner's direct expectation, for pseudo-random F and both triples;
++(R2) the chessboard instance on the ring in the two-step quadratic-form form: P(A_0 ∩ A_2) <= P(A_0 ∩ θA_0)^{1/2} P(A_2 ∩ θA_2)^{1/2}
++     with the reflection through the plane {1,3} (a different reflection than the runner's), then the second reflection;
++(R3) the enclosing-cycle counts by a second enumeration: polyominoes of perimeter 4, 6, 8 placed to contain the origin cell
++     (translations x orientations), against the runner's walk enumeration;
++(R4) the two series by numeric summation of exact partial sums to 400 terms at y = 1/2 and y = 4/5 against the closed forms;
++(R5) the three-dimensional connected plaquette sets for n <= 4 by a second adjacency implementation (two dual plaquettes
++     share a dual edge iff the two bonds lie in a common primal unit square: the twelve neighbours), against the runner's counts.
++Run from the pack: the runner is imported from the repository's scripts/ directory."""
++import importlib
++import random
++import sys
++from fractions import Fraction as F
++from itertools import product
++from pathlib import Path
++
++ROOT = Path(__file__).resolve().parents[5]
++sys.path.insert(0, str(ROOT / "scripts"))
++r17 = importlib.import_module("admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15")
++M = 6
++random.seed(11)
++ok1 = True
++for tr in ((3, 1, 2), (5, 2, 4)):
++    phi = r17.phi_matrix(*tr)
++    mu = r17.ring_measure(phi, 4)
++    Z = sum(1 for _ in ())  # placeholder
++    # unnormalized weights: W(v) = phi(v0,v1) phi(v1,v2) phi(v2,v3) phi(v3,v0); plane P = {0, 2}; W_P = 1 (no bonds inside P);
++    # W^+(v0,v1,v2) = phi(v0,v1) phi(v1,v2); W^-(v0,v3,v2) = phi(v2,v3) phi(v3,v0) = W^+(v0,v3,v2)
++    for _ in range(10):
++        Ftab = {k: F(random.randint(-9, 9)) for k in product(range(M), repeat=3)}
++        sos = F(0)
++        for v0 in range(M):
++            for v2 in range(M):
++                G = sum((Ftab[(v0, v1, v2)] * phi[v0][v1] * phi[v1][v2] for v1 in range(M)), F(0))
++                sos += G * G
++        Ztot = sum(phi[a][b] * phi[b][c] * phi[c][d] * phi[d][a] for a in range(M) for b in range(M) for c in range(M) for d in range(M))
++        direct = sum((mu[v] * Ftab[(v[0], v[1], v[2])] * Ftab[(v[0], v[3], v[2])] for v in mu), F(0))
++        ok1 = ok1 and sos / Ztot == direct and sos >= 0
++print("R1 sum-of-squares decomposition equals the direct expectation and is nonnegative (ring, both triples, 10 F each):", ok1)
++phi = r17.phi_matrix(3, 1, 2)
++mu = r17.ring_measure(phi, 4)
++def P(pred):
++    return sum((pr for v, pr in mu.items() if pred(v)), F(0))
++A0 = lambda v: v[0] != v[1]   # bond (0,1) bad
++A2 = lambda v: v[2] != v[3]   # bond (2,3) bad
++# reflection through the plane {1,3}: swaps 0 and 2; theta A0 = bond (2,1) bad; theta A2 = bond (0,3) bad
++lhs = P(lambda v: A0(v) and A2(v))
++r1 = P(lambda v: A0(v) and v[2] != v[1])
++r2 = P(lambda v: A2(v) and v[0] != v[3])
++step1 = lhs ** 2 <= r1 * r2
++# second reflection through {0,2}: swaps 1 and 3; A0 ∩ θA0 = bonds (0,1),(1,2) bad; its reflection gives bonds (0,3),(3,2) bad → all bad
++r1all = P(lambda v: all(v[i] != v[(i + 1) % 4] for i in range(4)))
++step2 = r1 ** 2 <= r1all and r2 ** 2 <= r1all
++print("R2 two-step chessboard on the ring: P(A0∩A2)^2 <= P(A0∩θA0) P(A2∩θA2):", step1, "; each of those squared <= P(all bad):", step2, "; hence P(A0∩A2)^2 <= P(all bad):", lhs ** 2 <= r1all)
++def polyomino_placements(cells):
++    """number of translates of the polyomino (set of cells) containing the origin cell = its area; sum over distinct rotations"""
++    seen = set()
++    def normalize(c):
++        mx = min(x for x, y in c); my = min(y for x, y in c)
++        return frozenset((x - mx, y - my) for x, y in c)
++    shapes = set()
++    c = cells
++    for _ in range(4):
++        shapes.add(normalize(c))
++        c = [(-y, x) for x, y in c]
++    return sum(len(sh) for sh in shapes)
++counts2 = {4: polyomino_placements([(0, 0)]), 6: polyomino_placements([(0, 0), (1, 0)]),
++           8: polyomino_placements([(0, 0), (1, 0), (0, 1), (1, 1)]) + polyomino_placements([(0, 0), (1, 0), (2, 0)]) + polyomino_placements([(0, 0), (1, 0), (0, 1)])}
++counts1 = {n: r17.enclosing_cycles(n) for n in (4, 6, 8)}
++print("R3 enclosing cycles by polyomino placements:", counts2, "; by the runner's walk enumeration:", counts1, "; equal:", counts1 == counts2)
++y1, y2 = F(1, 2), F(4, 5)
++s1 = sum((n * y1 ** n for n in range(4, 401)), F(0)); s2 = sum((n * y2 ** n for n in range(6, 401)), F(0))
++print("R4 partial sums to 400 terms: at y=1/2 vs 5/8 gap <", F(1, 10 ** 30) > abs(s1 - F(5, 8)), "; at y=4/5 vs 8192/625 gap <", F(1, 10 ** 30) > abs(s2 - F(8192, 625)))
++def nb2(b):
++    (x, d) = b
++    dirs = [(1, 0, 0), (0, 1, 0), (0, 0, 1)]
++    out = set()
++    for dd in range(3):
++        if dd == d:
++            continue
++        for sgn in (1, -1):
++            for base in (x, tuple(x[k] + dirs[d][k] for k in range(3))):
++                cand_x = base if sgn == 1 else tuple(base[k] - dirs[dd][k] for k in range(3))
++                cand = (cand_x, dd)
++                # two bonds are dual-edge neighbours iff they lie in a common unit square and are not opposite sides
++                if cand == b:
++                    continue
++                # both bonds in a common unit square: the four sites of the square must contain both bonds' endpoints
++                pts = {b[0], tuple(b[0][k] + dirs[b[1]][k] for k in range(3)), cand[0], tuple(cand[0][k] + dirs[cand[1]][k] for k in range(3))}
++                if len(pts) == 3:  # perpendicular bonds sharing a site: common square exists
++                    out.add(cand)
++                elif len(pts) == 4 and cand[1] == b[1]:  # parallel bonds at unit distance: opposite sides of a square (NOT dual-edge adjacent) unless...
++                    pass
++    # parallel bonds shifted by a unit perpendicular step share a dual edge (their dual plaquettes are adjacent faces of a dual cube)
++    for dd in range(3):
++        if dd == d:
++            continue
++        for sgn in (1, -1):
++            out.add((tuple(x[k] + sgn * dirs[dd][k] for k in range(3)), d))
++    return out
++origin = ((0, 0, 0), 0)
++same_adj = all(nb2(b) == r17.plaquette_neighbors(b) for b in [origin] + list(r17.plaquette_neighbors(origin)))
++frontier = {frozenset([origin])}; counts3 = {}
++for n in range(1, 5):
++    counts3[n] = len(frontier)
++    nxt = set()
++    for s in frontier:
++        nb = set()
++        for b in s:
++            nb |= nb2(b)
++        for b in nb - s:
++            nxt.add(frozenset(s | {b}))
++    frontier = nxt
++print("R5 second adjacency implementation agrees with the runner's on the origin's neighbourhood:", same_adj, "; counts n=1..4:", counts3)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block17_static_order.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block17_static_order.out.txt
+new file mode 100644
+index 0000000000000000000000000000000000000000..bfb1b01fd7b90031c38758debb7d684b7676a302
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block17_static_order.out.txt
+@@ -0,0 +1,7 @@
++eigenvalues of phi: {p + q + 4*r: 1, p + q - 2*r: 2, p - q: 3}
++RP (site reflection) on the ring of 4 for 20 random F: True
++RP on the 4x2 torus for 5 random F: True
++chessboard on the ring: P(bonds 01,23 bad) = 973/1732 <= P(all bad)^{2/4}: True
++4x2 torus: P(all dir-1 bonds bad) = 20177347/193958912 ; (6m/p)^N with N = 8 = 65536 ; per-site ratio 0.7536059009396876 vs 6m/p = 4.0
++connected bond-sets containing the origin bond, size n = 1..5: {1: 1, 2: 10, 3: 95, 4: 908, 5: 8795} ; bound (e*11)^(n-1): [1, 30, 894, 26734, 799372]
++x* with 3 sum_{n>=6} n x^n = 1/2: 0.481557348085537 ; eps = (x/30)^3 = 4.13599760197838e-6 ; p_0 = 6m/eps = 2901355.64736788
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block17_static_order.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block17_static_order.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..f4f5e4330e8f6be4829d560f32c1857814eb0505
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block17_static_order.py
+@@ -0,0 +1,121 @@
++"""Control, block 17 (supervisor): the static six-axis law at strong coupling.
++(1) eigenvalues of phi: Z1, p-q (x3), p+q-2r (x2); PSD region;
++(2) reflection positivity for site reflections on a ring of 4 and a 4x2 torus (exact, random F);
++(3) chessboard instance on the ring of 4: P(bonds (0,1) and (2,3) bad) <= P(all bad)^{2/4};
++(4) disseminated ratio Z(all dir-1 bonds bad)/Z on small tori vs (6 m/p)^N, m = max(q,r);
++(5) connected sets of dual plaquettes (bonds) of size n containing a fixed bond in the bond-adjacency graph, n <= 5, vs (e*11)^(n-1);
++(6) the Peierls threshold p_0 from sum_{n>=6} 3n 30^n eps^{n/3} <= 1/2 with eps = 6m/p;
++(7) LRO on 2x2xL tori by transfer matrix at p = 3 and p = p_0 (P(v_0 = v_{L/2}))."""
++from fractions import Fraction as F
++from itertools import product, permutations
++from functools import reduce
++import random, math, sys
++
++import sympy as sp
++M = 6
++def orbit_type(s, u):
++    return "p" if s == u else ("q" if s // 2 == u // 2 else "r")
++def phi_matrix(p, q, r):
++    W = {"p": p, "q": q, "r": r}
++    return [[W[orbit_type(s, t)] for t in range(M)] for s in range(M)]
++# (1)
++P, Q, R = sp.symbols("p q r", positive=True)
++Phi = sp.Matrix(6, 6, lambda i, j: {"p": P, "q": Q, "r": R}[orbit_type(i, j)])
++print("eigenvalues of phi:", Phi.eigenvals())
++# (2) RP: ring of 4 sites 0-1-2-3-0, reflection theta fixing 0 and 2, swapping 1 and 3
++def ring_measure(phi, n):
++    w = {}
++    for v in product(range(M), repeat=n):
++        x = 1
++        for i in range(n):
++            x *= phi[v[i]][v[(i + 1) % n]]
++        w[v] = x
++    Z = sum(w.values())
++    return {v: F(x, Z) for v, x in w.items()}
++phi = phi_matrix(3, 1, 2)
++mu4 = ring_measure(phi, 4)
++random.seed(1)
++ok_rp = True
++for _ in range(20):
++    Ftab = {k: F(random.randint(-9, 9)) for k in product(range(M), repeat=3)}  # F depends on (v0, v1, v2)
++    val = sum(mu4[v] * Ftab[(v[0], v[1], v[2])] * Ftab[(v[0], v[3], v[2])] for v in mu4)  # theta F depends on (v0, v3, v2)
++    ok_rp = ok_rp and val >= 0
++print("RP (site reflection) on the ring of 4 for 20 random F:", ok_rp)
++# 4x2 torus: sites (i,j), i mod 4, j mod 2; reflection i -> -i mod 4 fixes i = 0, 2
++def torus_measure_4x2(phi):
++    sites = [(i, j) for i in range(4) for j in range(2)]
++    idx = {s: k for k, s in enumerate(sites)}
++    bonds = set()
++    for (i, j) in sites:
++        bonds.add(tuple(sorted((idx[(i, j)], idx[((i + 1) % 4, j)]))))
++        bonds.add(tuple(sorted((idx[(i, j)], idx[(i, (j + 1) % 2)]))))
++    bonds = sorted(bonds)
++    w = {}
++    for v in product(range(M), repeat=8):
++        x = 1
++        for (a, b) in bonds:
++            x *= phi[v[a]][v[b]]
++        w[v] = x
++    Z = sum(w.values())
++    return sites, idx, bonds, {v: F(x, Z) for v, x in w.items()}
++sites, idx, bonds, mu8 = torus_measure_4x2(phi)
++left = [idx[(i, j)] for i in (0, 1, 2) for j in range(2)]
++refl = {idx[(i, j)]: idx[((-i) % 4, j)] for (i, j) in sites}
++ok_rp2 = True
++for _ in range(5):
++    Ftab = {k: F(random.randint(-5, 5)) for k in product(range(M), repeat=len(left))}
++    val = F(0)
++    for v, pr in mu8.items():
++        f = Ftab[tuple(v[s] for s in left)]
++        tf = Ftab[tuple(v[refl[s]] for s in left)]
++        val += pr * f * tf
++    ok_rp2 = ok_rp2 and val >= 0
++print("RP on the 4x2 torus for 5 random F:", ok_rp2)
++# (3) chessboard on the ring: bad = different values
++def bad(v, a, b):
++    return v[a] != v[b]
++p_both = sum(pr for v, pr in mu4.items() if bad(v, 0, 1) and bad(v, 2, 3))
++p_all = sum(pr for v, pr in mu4.items() if all(bad(v, i, (i + 1) % 4) for i in range(4)))
++print("chessboard on the ring: P(bonds 01,23 bad) =", p_both, "<= P(all bad)^{2/4}:", p_both ** 2 <= p_all)
++# (4) disseminated ratio on the 4x2 torus: all horizontal (dir-1) bonds bad
++Zratio = sum(pr for v, pr in mu8.items() if all(v[idx[(i, j)]] != v[idx[((i + 1) % 4, j)]] for i in range(4) for j in range(2)))
++m = 2
++print("4x2 torus: P(all dir-1 bonds bad) =", Zratio, "; (6m/p)^N with N = 8 =", F(6 * m, 3) ** 8, "; per-site ratio", float(Zratio) ** (1 / 8), "vs 6m/p =", 6 * m / 3)
++# (5) connected sets of bonds (dual plaquettes) of size n containing the origin bond, adjacency = share a dual edge (bonds sharing a site or both ... use: two bonds are adjacent if their dual plaquettes share an edge = the bonds are within one unit cube and not parallel-opposite)
++def bond_neighbors(b):
++    (x, d) = b  # bond from x in direction d
++    out = set()
++    dirs = [(1, 0, 0), (0, 1, 0), (0, 0, 1)]
++    # dual plaquette of bond (x,d): plaquettes sharing an edge with it: the 4 parallel-shifted... use all bonds within distance: sites x, x+e_d and their neighbours' bonds
++    e = dirs[d]
++    y = tuple(x[k] + e[k] for k in range(3))
++    for z in (x, y):
++        for dd in range(3):
++            for sgn in (1, -1):
++                w = tuple(z[k] + sgn * dirs[dd][k] for k in range(3))
++                # bond between z and w in canonical form
++                if sgn == 1:
++                    cand = (z, dd)
++                else:
++                    cand = (w, dd)
++                if cand != b:
++                    out.add(cand)
++    return out
++counts = {}
++frontier = {frozenset([((0, 0, 0), 0)])}
++for n in range(1, 6):
++    counts[n] = len(frontier)
++    nxt = set()
++    for s in frontier:
++        nb = set()
++        for b in s:
++            nb |= bond_neighbors(b)
++        for b in nb - s:
++            nxt.add(frozenset(s | {b}))
++    frontier = nxt
++print("connected bond-sets containing the origin bond, size n = 1..5:", counts, "; bound (e*11)^(n-1):", [round((math.e * 11) ** (n - 1)) for n in range(1, 6)])
++# (6) Peierls threshold: sum_{n>=6} 3n 30^n eps^(n/3) with x = 30 eps^(1/3): sum = 3 sum_{n>=6} n x^n = 3 x^6 (6 - 5x)/(1-x)^2 for x<1; require <= 1/2
++x = sp.symbols("x", positive=True)
++S6 = 3 * x ** 6 * (6 - 5 * x) / (1 - x) ** 2
++sol = sp.nsolve(S6 - sp.Rational(1, 2), x, 0.6)
++print("x* with 3 sum_{n>=6} n x^n = 1/2:", sol, "; eps = (x/30)^3 =", (sol / 30) ** 3, "; p_0 = 6m/eps =", 6 * m / (sol / 30) ** 3)
+diff --git a/docs/ADMISSIBILITY_RULE_STATIC_SIX_AXIS_LAW_STRONG_COUPLING_LONG_RANGE_ORDER_AND_SEVERAL_GIBBS_STATES_REFLECTION_POSITIVITY_CHESSBOARD_PEIERLS_BOUNDED_THEOREM_NOTE_2026-09-15.md b/docs/ADMISSIBILITY_RULE_STATIC_SIX_AXIS_LAW_STRONG_COUPLING_LONG_RANGE_ORDER_AND_SEVERAL_GIBBS_STATES_REFLECTION_POSITIVITY_CHESSBOARD_PEIERLS_BOUNDED_THEOREM_NOTE_2026-09-15.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..a3c2b222ebdb95e46a5cfacd58e259d8dcab7e43
+--- /dev/null
++++ b/docs/ADMISSIBILITY_RULE_STATIC_SIX_AXIS_LAW_STRONG_COUPLING_LONG_RANGE_ORDER_AND_SEVERAL_GIBBS_STATES_REFLECTION_POSITIVITY_CHESSBOARD_PEIERLS_BOUNDED_THEOREM_NOTE_2026-09-15.md
+@@ -0,0 +1,414 @@
++---
++claim_id: admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_and_several_gibbs_states_reflection_positivity_chessboard_peierls_bounded_theorem_note_2026-09-15
++claim_type: bounded_theorem
++claim_scope: "For the static law of the six-axis covariant positive product rule with weights (p, q, r) on same, antipodal and orthogonal pairs, m = max(q, r): (T1) the weight matrix has eigenvalues p + q + 4r, p - q (three times) and p + q - 2r (twice) and is invariant under the full cube group, which acts transitively on the six values (proved; executed); (T2) on every torus of even side the law is reflection positive for reflections through planes containing sites, for every positive weight matrix (proved; executed on a ring and a 4x2 torus); (T3) the chessboard estimate for events attached to unit cells and reflected by site reflections (re-proved; executed); (T4) the probability that every bond of one direction joins different values has N-th root at most 6m/p on the torus of N sites (proved; executed); (T5, two dimensions) for p >= 216 m and a torus of side at least 44, the torus law gives v_0 = v_x with probability above 1/2 for every x within a quarter of the side: long-range order, by planar cut-cycle duality and contour counting with explicit constants (proved; the counts and series executed exactly); (T6) every limit point of the torus laws is a translation-invariant Gibbs state with that long-range order, and a unique Gibbs state would be extremal, hence tail-trivial, hence short-range correlated, so the static law on Z^2 has at least two Gibbs states for p >= 216 m (proved at scope, with the backward martingale theorem named as the standard import); (T7, three dimensions) the same chain restricted to a coordinate plane through the origin — every in-plane path between two differing records crosses a bad in-plane bond, so the planar duality of T5 applies inside the plane while the chessboard estimate and the disseminated bound are the three-dimensional ones — gives long-range order in every coordinate plane and at least two Gibbs states on Z^3 for the same threshold p >= 216 m, with no further lemma (proved; executed on a 2x2x2 torus). No coupling is selected as physical; the thresholds are existence constants, not optimal; the formation law's phase (block 12's obligation) is untouched; exact arithmetic throughout."
++upstream_dependencies:
++  - minimal_axioms
++  - admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_bounded_theorem_note_2026-09-06
++runner: scripts/admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.py
++---
++
++# The static six-axis law at strong coupling has long-range order and several Gibbs states: reflection positivity through site planes, a chessboard estimate, and contour counting with explicit constants — a theorem on `Z²` and, by the in-plane count, on `Z³`
++
++**Date:** 2026-09-15
++**Type:** bounded_theorem
++**Status:** bounded-support (exact; both the two- and the three-dimensional statements are unconditional; unaudited)
++
++## Result up front
++
++Block 03 settled the weak-coupling side of the static law: one Gibbs state
++where the influence of a single neighbour is small enough. This note settles
++the other side, in two and in three dimensions. When the weight for agreeing neighbours is
++large enough compared with the weights for disagreeing ones — at least `216`
++times, in two dimensions — the record at the origin and the record far away
++agree with probability above one half in every finite torus, and that
++long-range agreement survives in the infinite lattice: the static law then
++has more than one Gibbs state, the six axis values being the candidates for
++what a state prefers. The proof is the classical one made exact: the torus law
++is reflection positive through planes containing sites whatever the weights;
++reflection positivity gives the chessboard estimate; the chessboard estimate
++turns "these `n` bonds all disagree" into a bound `(6m/p)^{n/2}`; and a
++count of the closed dual curves that could isolate the origin sums to less
++than one half. The constants are crude and are not claimed to be
++sharp: block 03's thresholds and this one leave a wide band where nothing is
++decided. In three dimensions the same count is run inside a coordinate plane through
++the origin: two records that differ are separated by bad bonds of that plane,
++so the planar count applies, while the chessboard estimate and the
++disseminated bound are the three-dimensional ones with the same value. No
++surface topology is needed, and the threshold is the same.
++
++Exactly: `E_L[F · F∘θ] ≥ 0` for site reflections (T2);
++`μ_L(∩ A_c) ≤ Π μ_L(A_c^{diss})^{1/N}` (T3); `μ_L(all bonds of one direction bad)^{1/N} ≤ 6m/p`
++(T4); in two dimensions with `ε = 6m/p ≤ 1/36`,
++`μ_L(v_0 ≠ v_x) ≤ 5/24 + 45/256 = 295/768 < 1/2` (T5), hence at least two Gibbs states
++for `p ≥ 216 m` (T6); in three dimensions the same threshold by the in-plane count (T7).
++Executed with exact arithmetic: 20 checks, 13 mutations.
++
++## Machine status and trace
++
++```yaml
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: upstream_support
++target_claim_id: null
++target_blocker_text: "the campaign's standing question 'one law or several' for the static law of the six-axis rule: block 03 (on main) gives the uniqueness region; the strong-coupling side is open on main (the two-site criterion note names an ordering argument as open); the static law is the reading that carries the repository's Green functions (blocks 13-16)"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem
++next_trace_action: "the strong-coupling side is settled on Z^2 and on Z^3 (at least two Gibbs states for p >= 216 m, by the in-plane count); sharpening the constants is the next item. Consumers: #8093's assembly (the static reading's phase structure); block 12 (PR #8146: the formation law's counterpart obligation); the campaign's queue"
++conditional_surface_status: "T1-T7 proved for every positive weight triple (T5-T7 for p >= 216 max(q, r), on Z^2 and Z^3); executed at (p, 1, 2) and (5, 2, 4); conditional on the six-axis menu and the product rule as supplied conditions; the backward martingale theorem, planar cut-cycle duality and the extension theorem named as standard imports"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++claim_type_reason: "a sum-of-squares identity (T2); an iterated quadratic-form inequality (T3); a counting bound on a partition function (T4); planar cut-cycle duality with an explicit contour count and a geometric series (T5); the DLR limit, conditioning on tail events and the backward martingale theorem (T6); every constant an exact rational"
++```
++
++## Premises and declared objects
++
++**Axioms used (verbatim).** From
++[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md): "There is one
++fixed nearest-neighbor admissibility rule, covariant under lattice translations
++and proper cubic rotations." — "For each site, the probability distribution over
++the possibilities is determined by, and varies with, the nearest-neighbor
++conditions." — "Records form." — "Only records are readable."
++
++**Readings carried, named, nothing new adopted.** The static reading of the
++rule (block 01 on `main`; block 03 on `main` for its uniqueness region,
++[`ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md`](ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md)):
++the Gibbs specification with nearest-neighbour weights `φ(a, b) = p, q, r` on
++same, antipodal and orthogonal pairs of the six-axis menu, positive; `m = max(q, r)`.
++The lattice is `Z^d`, `d = 2` or `3`; the six-axis menu is the same in both.
++
++**Tori and their laws.** `T_L = (Z/2L Z)^d`, `N = (2L)^d` sites, `dN` bonds
++(`d` directions); `μ_L(v) = Π_{bonds} φ(v_x, v_y)/Z_L`. A bond is *good* if its
++endpoints carry equal values, *bad* otherwise. **Cells:** the unit cubes
++`[x, x + 1]^d`, `x ∈ T_L`; a bond `(x, x + e_i)` has the *canonical cell* `x`;
++each cell is canonical for `d` bonds. **Site reflections:** for `1 ≤ i ≤ d` and
++`k ∈ Z/2L`, `θ_{i,k}` reflects `x_i ↦ 2k − x_i`; it fixes the planes `x_i = k`
++and `x_i = k + L` pointwise, maps bonds to bonds and cells to cells.
++
++**Gibbs states.** A probability `μ` on `M^{Z^d}` is a Gibbs state of the static
++specification if for every finite `Λ` and local `f`, `μ(f) = μ(γ_Λ f)` with
++`γ_Λ f(w) = Σ_{v_Λ} f(v_Λ w_{Λ^c}) Π_{bonds meeting Λ} φ / Z_Λ(w)`. The tail
++σ-field is `∩_n F_{Λ_n^c}`.
++
++## Prior art and what is new
++
++Block 03 (on `main`) proved the uniqueness region on `Z³` by the one-site
++contraction criterion and named the other side open; the two-site criterion
++note (on `main`) names "an ordering argument" as its open route 5. Reflection
++positivity and chessboard estimates are the Fröhlich–Israel–Lieb–Simon method
++(1978), applied to discrete symmetry breaking by Fröhlich–Lieb and in Biskup's
++lecture notes; Peierls's contour argument (1936) is classical; planar
++cut–cycle duality is Whitney's theorem (Diestel, Prop. 4.6.1), resting on the
++Jordan curve theorem for lattice polygons; the backward martingale theorem
++is Lévy's. All are re-proved here except the named standard imports (the
++Jordan curve theorem for lattice polygons behind planar duality, the backward
++martingale theorem, and the extension theorem), which are cited at definition
++level and never as physics. Nothing on `main` (search recorded in
++`ROUTE_PORTFOLIO.md`) treats the six-axis static law's ordered side.
++
++New here: the exact statement for this rule with explicit constants; the
++observation that site reflections need no positivity of the weight matrix
++(so the argument covers weights where the matrix is indefinite, such as
++`(5, 2, 4)`, which block 03 also treats); the two-dimensional theorem; and
++the in-plane count that gives the three-dimensional theorem at the same
++threshold without any surface-connectivity lemma.
++
++## Exact target and obligation graph
++
++| obligation | status here |
++|---|---|
++| T1 spectrum; cube-group invariance and transitivity | proved; executed symbolically and on the 48 signed permutations (B1) |
++| T2 reflection positivity through site planes, any weights | proved; executed on the ring of 4 and the `4×2` torus at `(3,1,2)` and `(5,2,4)` (B2) |
++| T3 the chessboard estimate | re-proved; executed on the ring and the `4×2` torus (B3) |
++| T4 the disseminated bound `ε ≤ 6m/p` | proved; executed on the ring and the `4×2` torus (C1) |
++| T5 two dimensions: contour count, series, winding term, threshold `216 m` | proved; the counts for lengths 4–8, the series at `y = 1/2` and the winding bound executed exactly (C2–C4) |
++| T6 long-range order ⇒ at least two Gibbs states | proved at scope (the backward martingale theorem named) |
++| T7 three dimensions by the in-plane count | proved; the three-dimensional disseminated bound and an illustration executed on the `2×2×2` torus (D1–D2) |
++| optimal thresholds; the band between block 03's thresholds and these; the formation law's phase | open; not this note |
++
++## Theorem T1 — spectrum and symmetry
++
++**Statement.** The `6×6` matrix `φ` has eigenvalues `Z_1 = p + q + 4r` (the
++constant vector), `p − q` (the three functions odd under `a ↦ −a`) and
++`p + q − 2r` (the two even functions summing to zero). The full cube group of
++48 signed axis permutations preserves `φ` and acts transitively on the six
++values.
++
++*Proof.* `φ f(a) = p f(a) + q f(−a) + r Σ_{b ⊥ a} f(b)`; on odd `f` the last sum
++vanishes; on even zero-sum `f` it equals `−f(a) − f(−a) = −2f(a)`. The weights
++depend only on whether a pair is same, antipodal or orthogonal, which every
++signed permutation preserves; the axes form one orbit. ∎ (B1.)
++
++*Remark.* `φ` is positive semidefinite iff `p ≥ q` and `p + q ≥ 2r`; at `(5,2,4)`
++it is indefinite. Nothing below uses definiteness.
++
++## Theorem T2 — reflection positivity through site planes
++
++**Statement.** Let `θ = θ_{1,0}` and `P = {x : x_1 ∈ {0, L}}`, `H^+ = {0 ≤ x_1 ≤ L}`,
++`H^- = θ H^+`, so `H^+ ∩ H^- = P` and `H^+ ∪ H^- = T_L`. For every function `F`
++of the values on `H^+`: `E_L[F · (F∘θ)] ≥ 0`. The same holds for every
++`θ_{i,k}`. No condition on `φ` is needed.
++
++*Proof.* Split the bonds: those with both endpoints in `P` (weight `W_P`),
++those with both endpoints in `H^+` not both in `P` (`W^+`), and the mirror set
++(`W^-`); every bond is in exactly one class, and `W^-(v) = W^+(θv)` because `θ`
++maps the second class onto the third and `φ` is symmetric. Then
++`Z_L E_L[F · F∘θ] = Σ_{v_P} W_P(v_P) [Σ_{v_{H^+∖P}} F(v_{H^+}) W^+(v_{H^+})] [Σ_{v_{H^-∖P}} F(θv) W^-(v)]`,
++and the change of variables `v ↦ θv` in the last bracket shows it equals the
++first bracket. Each summand is `W_P · G(v_P)²` with `W_P > 0`. ∎ Executed:
++twenty pseudo-random `F` on the ring of four sites and five on the `4×2` torus,
++at `(3,1,2)` and at the indefinite triple `(5,2,4)` (B2).
++
++## Theorem T3 — the chessboard estimate
++
++**Statement.** Let `S` be a set of cells and, for `c ∈ S`, `A_c` an event
++depending on the values at the corners of `c`. For `c' ∈ T_L` let `A_c^{(c')}` be
++the image of `A_c` in the cell `c'` under a composition of site reflections
++carrying `c` to `c'` (the images of the events used below do not depend on
++the composition), and let `A_c^{diss} = ∩_{c'} A_c^{(c')}`. Then
++`μ_L(∩_{c∈S} A_c) ≤ Π_{c∈S} μ_L(A_c^{diss})^{1/N}`.
++
++*Proof.* The bilinear form `(F, G) ↦ E_L[F · G∘θ]` on functions of `H^+` is
++positive semidefinite by T2, so it satisfies the quadratic-form inequality
++`E_L[F · G∘θ] ≤ E_L[F · F∘θ]^{1/2} E_L[G · G∘θ]^{1/2}`. Fix the direction `1` and
++write the torus as `2L` slabs of cells `{k ≤ x_1 ≤ k + 1}`. For a product of
++indicator functions `Π_k 1_{B_k}` with `B_k` an event of slab `k`, reflect
++through the plane `x_1 = 1` (between slabs `0` and `1`) with `F = Π_{k ≤ 0}`,
++`G = Π_{k ≥ 1}` (indices modulo `2L`; the two halves are `L` slabs each):
++`μ_L(∩_k B_k) ≤ μ_L(∩_{k≤0} B_k ∩ θ(∩_{k≤0} B_k))^{1/2} μ_L(∩_{k≥1} B_k ∩ θ(∩_{k≥1} B_k))^{1/2}`.
++Each factor's event is again a product over slabs, now with the pattern of
++events symmetric about the plane; iterating with the reflections through
++`x_1 = 2, 3, …` (each time halving the number of "original" slab positions
++and doubling their reflected copies) gives, after `log_2(2L)`-many steps when
++`2L` is a power of two and by the standard refinement otherwise,
++`μ_L(∩_k B_k) ≤ Π_k μ_L(B_k^{(1)})^{1/(2L)}`, where `B_k^{(1)}` is the event `B_k`
++disseminated to every slab position along direction `1`. Apply the same
++argument in direction `2` to the events `B_k^{(1)}` (each is a product over
++the direction-`2` slabs of reflected copies), and then in direction `3`; the
++exponents multiply to `1/N`, and the fully disseminated event of `A_c` is
++`A_c^{diss}`. For the bond events used below, "the direction-`i` bond at the
++origin corner of the cell is bad", the image in every cell is "the
++corresponding bond is bad" whatever the path of reflections, and the
++disseminated event is "every direction-`i` bond is bad"; for the joint event
++"both canonical bonds of the cell in directions `i, j` are bad", the
++disseminated event is contained in the former. ∎ Executed: on the ring,
++`μ(bonds (0,1) and (2,3) bad) ≤ μ(all bad)^{2/4}`; on the `4×2` torus,
++`μ(two given direction-1 bonds bad) ≤ μ(all direction-1 bonds bad)^{2/8}` (B3).
++
++## Theorem T4 — the disseminated bound
++
++**Statement.** `μ_L(every direction-`i` bond is bad)^{1/N} ≤ 6m/p`.
++
++*Proof.* A configuration in which every direction-`i` bond is bad has weight
++at most `m^N p^{(d−1)N}` (each of the `N` bad bonds weighs at most `m`, every
++other bond at most `p`), and there are at most `6^N` configurations, so the
++numerator is at most `6^N m^N p^{(d−1)N}`; the denominator `Z_L` is at least the
++weight `6 p^{dN}` of the six constant configurations. The ratio's `N`-th root
++is at most `6^{1 − 1/N} m/p ≤ 6m/p`. ∎ Executed on the ring and the `4×2` torus
++at `(3,1,2)` (C1).
++
++**Corollary (bad-bond sets).** Let `B` be a set of `n` bonds. Its bonds occupy
++at least `⌈n/d⌉` distinct canonical cells; attaching to each such cell the
++event that its bonds in `B` are all bad and applying T3 with T4,
++`μ_L(every bond of B is bad) ≤ (6m/p)^{n/d}`.
++
++## Theorem T5 — long-range order on the two-dimensional torus
++
++**Statement.** Let `d = 2` and `ε = 6m/p ≤ 1/36` (i.e. `p ≥ 216 m`); let
++`L' ≥ 10`, `L ≥ 2L' + 2` and `x ∈ T_L` with `|x|_∞ ≤ L'/2`. Then
++`μ_L(v_0 ≠ v_x) ≤ 5/24 + 18 L' 2^{−L'} ≤ 295/768 < 1/2`.
++
++**Lemma (planar cut–cycle duality; the named import).** Let `Λ ⊂ T_L` be the
++box `[−L', L']²`, a plane graph, and `Λ^*` its dual with the outer face as one
++vertex. If a set `B` of bonds of `Λ` meets every path in `Λ` from `0` to `x`, then
++`B` contains a subset whose dual edges form a simple cycle of `Λ^*`; the cycle
++either avoids the outer-face vertex and then encloses exactly one of `0, x`,
++or passes through it and then its remaining edges form a dual path from the
++boundary of `Λ` to the boundary of `Λ` separating `0` from `x`. (Planar cut–cycle duality; its topological input is the separation theorem
++for lattice polygons; both named under Imports.)
++
++**Lemma (contour counts).** The number of simple dual cycles of length `n`
++enclosing `0` and avoiding the boundary is at most `(n/2) 3^{n−1}` (the cycle
++crosses the horizontal half-line from `0` at one of at most `n/2` dual edges
++within distance `n/2`, and from there is a self-avoiding closed walk with at
++most `3` choices per step). The number of dual paths of length `n` starting at
++the boundary of `Λ` is at most `(8L' + 4) 3^{n} ≤ 9L' · 3^n` for `L' ≥ 4` (the box
++has `8L' + 4` boundary bonds); a boundary-to-boundary dual path separating `0`
++from `x` has length at least `L'`: both points lie at distance at least `L'/2`
++from the boundary, a lattice path joins them inside the box `|·|_∞ ≤ L'/2`, the
++dual path must cross it, and so travels at least `L'/2` from the boundary and
++back.
++
++*Proof of T5.* If `v_0 ≠ v_x`, every path from `0` to `x` in `Λ` contains a bad
++bond, so the bad bonds meet every such path and the duality lemma applies.
++Case (a), a cycle of length `n ≥ 4` enclosing `0` (or `x`): by the corollary of
++T4 with `d = 2` and the count, the probability is at most
++`2 Σ_{n ≥ 4, even} (n/2) 3^{n−1} ε^{n/2} ≤ (1/3) Σ_{n ≥ 4} n y^n` with `y = 3ε^{1/2} ≤ 1/2`,
++and `Σ_{n≥4} n y^n = y^4 (4 − 3y)/(1 − y)^2 = 5/8` at `y = 1/2`, giving `5/24`.
++Case (b), a boundary-to-boundary path: at most
++`9L' Σ_{n ≥ L'} 3^n ε^{n/2} = 9L' y^{L'}/(1 − y) ≤ 18 L' 2^{−L'}`, which is
++`45/256` at `L' = 10` and decreasing beyond. The sum is at most
++`5/24 + 45/256 = 295/768 < 1/2`. ∎
++Executed: the cycle counts for lengths `4, 6, 8` by exhaustive enumeration
++against the bound (C2); the series identity and its value `5/8` at `y = 1/2`
++symbolically and exactly (C3); the winding bound `45/256` at `L' = 10`, the total `295/768` and the
++threshold `p_0 = 216 m` (C4); an illustration on the `4×2` torus at `p = 432`,
++`m = 2` (C5).
++
++## Theorem T6 — from long-range order to several Gibbs states
++
++**Statement.** Let `d = 2` and `p ≥ 216 m`. Every limit point `μ` of `(μ_L)_L`
++(in the topology of local functions) is a translation-invariant Gibbs state of
++the static specification with `μ(v_0 = v_x) ≥ 1/2` for every `x`. The static
++law on `Z²` has at least two Gibbs states; every extremal state of the
++symmetry orbit generated from a non-symmetric extremal state is distinct, and
++the orbit has between two and six members.
++
++*Proof.* (i) *Limit points exist and are Gibbs.* The laws of the values on any
++fixed finite box are probabilities on a finite set, so a subsequence
++has a limit on every local function (diagonal extraction), and the limit is a
++probability on `M^{Z^d}` by the extension theorem for consistent finite-dimensional laws (cited at
++definition level, as in block 08). For a finite `Λ` and `L` large enough that the torus
++neighbourhood of `Λ` coincides with its `Z^d` neighbourhood, the torus law's
++conditional law of `v_Λ` given the rest is `γ_Λ` (the weights are
++nearest-neighbour), so `μ_L(f) = μ_L(γ_Λ f)`; `γ_Λ f` is local, so the identity
++passes to the limit: `μ(f) = μ(γ_Λ f)`. (ii) *Translation invariance:* `μ_L` is
++invariant under torus translations, and for a fixed translation and local `f`
++the identity `μ_L(f∘τ) = μ_L(f)` holds for all large `L`. (iii) *Long-range
++order:* `μ(v_0 = v_x) = lim μ_L(v_0 = v_x) ≥ 1/2` by T5. (iv) *Uniqueness would
++contradict (iii).* Suppose the Gibbs state is unique; call it `ν`; then `ν = μ`,
++and `ν` is invariant under the cube group acting on values (the image of a
++Gibbs state under a symmetry of `φ` is a Gibbs state), so `ν(v_0 = a) = 1/6`
++for every `a`. *Unique implies tail-trivial:* if `T` is a tail event with
++`0 < ν(T) < 1`, then `ν(· | T)` is a Gibbs state — for local `f`,
++`ν(f 1_T) = ν(γ_Λ(f 1_T)) = ν(1_T γ_Λ f)` because `1_T` is `F_{Λ^c}`-measurable
++and `γ_Λ` acts on the `Λ`-values only — and so is `ν(· | T^c)`; they differ, a
++contradiction. *Tail-trivial implies short-range correlations:* for local `f`,
++`E_ν[f | F_{Λ_n^c}] → E_ν[f | tail] = ν(f)` in `L¹(ν)` as `n → ∞` by the backward
++martingale theorem (named import); for `x` outside `Λ_n` and local `g`, the
++function `g∘τ_x` is `F_{Λ_n^c}`-measurable, so
++`|ν(f · g∘τ_x) − ν(f) ν(g)| = |ν((E_ν[f | F_{Λ_n^c}] − ν(f)) g∘τ_x)| ≤ ‖g‖_∞ ν|E_ν[f|F_{Λ_n^c}] − ν(f)|`,
++which tends to zero. With `f = 1_{v_0 = a}`, `g = 1_{v_0 = a}` and the sum over
++`a`: `ν(v_0 = v_x) → Σ_a ν(v_0 = a)² = 1/6 < 1/2`, contradicting (iii). Hence
++at least two Gibbs states. (v) *The orbit.* `μ` is a mixture of extremal
++states (the extremal decomposition of Gibbs states); if every extremal
++component were symmetric under the cube group, each would have
++`ν_e(v_0 = a) = 1/6` and, being extremal hence tail-trivial, `ν_e(v_0 = v_x) → 1/6`,
++so `μ(v_0 = v_x) → 1/6` by exchanging the limit with the integral over the
++extremal decomposition (the integrand is bounded by one), contradicting (iii). So some
++extremal state has a non-uniform one-site law; its images under the 48
++signed permutations are extremal Gibbs states, distinct iff the one-site laws
++differ; the number of distinct images is the orbit size of a non-uniform
++function on six points under a transitive action, between `2` and `6`. ∎
++
++*Reading.* Below block 03's thresholds one state; above `216 m` in two
++dimensions several; the states are told apart by which axis the origin's
++record prefers. The band in between is undecided by these two arguments.
++
++## Theorem T7 — three dimensions, by the in-plane count
++
++**Statement.** Let `d = 3` and `ε = 6m/p ≤ 1/36` (i.e. `p ≥ 216 m`); let
++`L' ≥ 10`, `L ≥ 2L' + 2`, and `x = (x_1, x_2, 0)` with `|x|_∞ ≤ L'/2`. Then
++`μ_L(v_0 ≠ v_x) ≤ 295/768 < 1/2`. Every limit point of `(μ_L)` is a
++translation-invariant Gibbs state on `Z³` with `μ(v_0 = v_x) ≥ 1/2` for every
++`x` in a coordinate plane through the origin, and the static law on `Z³` has
++at least two Gibbs states for `p ≥ 216 m`.
++
++*Proof.* Let `S = {x_3 = 0}` be the coordinate plane through `0` and `x`; as a
++graph with the direction-`1` and direction-`2` bonds of the layer it is the
++two-dimensional torus of side `2L`. If `v_0 ≠ v_x`, every path from `0` to `x`
++*inside `S`* contains a bad bond, so the bad bonds of `S` meet every such path
++and the planar cut–cycle lemma applies to the box `Λ ∩ S`, with the two cases
++and the counts of T5 unchanged. For a set `B` of `n` bonds of `S`, each unit
++cube of the layer `0 ≤ x_3 ≤ 1` is the canonical cell of exactly one
++direction-`1` and one direction-`2` bond of `S`, so `B` occupies at least `n/2`
++canonical cells, and T3 with the three-dimensional disseminated bound of T4
++(`ε ≤ 6m/p` with `N = (2L)³`) gives `μ_L(B bad) ≤ ε^{n/2}`. The bound of T5
++therefore holds verbatim. The chain of T6 does not depend on the dimension
++(the DLR limit, the symmetry, tail triviality and the short-range property
++are stated for `Z^d`), with `x → ∞` taken within the plane. ∎ Executed: the
++three-dimensional disseminated bound on the `2×2×2` torus at `p = 432` (D1) and
++the agreement of neighbouring records there (D2).
++
++*Reading.* The three-dimensional lattice is not harder than the plane here:
++two records that differ are already cut apart by bad bonds of the plane they
++share, and the plane's contours are counted as before; the extra dimension
++enters only through the chessboard normalization, which does not change the
++constant.
++
++## No-Go Discipline Gate
++
++The negative sentence inside the theorem is "the Gibbs state is not unique"
++(T6, T7); the positive conclusion rests on it. Proved for `d = 2` at
++`p ≥ 216 m`; conditional for `d = 3`.
++
++### N1 — Routes by which the state could still be unique above the threshold
++
++| route | what it would attempt | why it fails here, or its obligation | marker |
++|---|---|---|---|
++| 1 a symmetric unique state with long-range order | `ν(v_0 = v_x) ≥ 1/2` for a tail-trivial `ν` | tail triviality forces `ν(v_0 = v_x) → 1/6` (T6 iv) | RULED OUT AT SCOPE |
++| 2 the torus limits not being Gibbs | boundary effects | the torus law's conditional laws inside a box are the specification's kernels for large `L` (T6 i) | RULED OUT AT SCOPE |
++| 3 failure of the chessboard estimate for bond events | events not attached to cells | bond events are cell events (the corner values), disseminated by site reflections (T3) | RULED OUT AT SCOPE |
++| 4 a three-dimensional separating set that is not a plane contour | surfaces rather than curves | not needed: the in-plane count separates the two records within their common plane (T7) | RULED OUT AT SCOPE |
++| 5 the band between block 03's thresholds and `216 m` | anything | undecided; not claimed either way | open |
++
++### N2 — Wall-independence audit
++Walls: the static reading, the six-axis menu, positivity of the weights, the torus with even side. Independent; each defines the object.
++
++### N3 — Hidden-wall scan
++Scanned for "we assume", "by construction", "as is standard", "the framework provides", "naturally", "obviously", "canonical", "registered", "background", "bridge context". Hits: "canonical cell" is a defined term; none in the theorems otherwise.
++
++### N4 — Per-citation table
++| cited surface | residual it attacks | residual claimed here | match |
++|---|---|---|---|
++| block 03 (main): the uniqueness region | the weak-coupling side | the other side; the undecided band named | yes |
++| block 01 (main): the static reading | the object | the object | yes |
++| block 12 (PR #8146, open; not an input) | the formation law's phase | the contrast in the boundaries | context only |
++| planar cut–cycle duality with the separation theorem for lattice polygons; the backward martingale theorem; the extension theorem | standard mathematics | named imports at definition level (T5, T6) | declared |
++
++### N5 — Resolution audit
++| phrase | per-element | per-site | per-mode | per-block | lattice-wide |
++|---|---|---|---|---|---|
++| "not unique above the threshold" | executed: the eigenvalues; the 48 symmetries; the series identities; the counts | executed: every configuration of the ring and the `4×2` torus in T2–T4 | executed: the chessboard instances; the disseminated ratios | executed: the two-dimensional illustration on the `4×2` torus at `p = 432` | proved for every positive triple with `p ≥ 216 m` on `Z²` and on `Z³` (T5–T7) |
++
++### N6 — Partial-closure paths and primitive scan
++The registered primitives supply no coupling; none is a wall. The thresholds are existence constants and are not claimed optimal.
++
++### N7 — Steelman
++Hostile reviewer: "Textbook chessboard–contour argument with an absurd constant, and the interesting dimension is conditional." Reply: the two-dimensional theorem is unconditional and exact for this rule with every step re-proved except three named standard imports; the site-reflection observation removes the positive-definiteness condition that the bond-reflection route would need; the three-dimensional constant and the single missing lemma are stated precisely so that the remaining work is named. Conceded: the constants are crude and the band is wide.
++
++### N8 — Cross-cycle echo
++Block 03 (uniqueness by one-site contraction) and this note are the two sides of the same question for the static reading; block 12's obligation is the formation law's counterpart, untouched here.
++
++## Falsifiers
++- An eigenvalue of `φ` outside the three listed, or a signed permutation not preserving `φ` (B1).
++- A function `F` on the ring or the `4×2` torus with `E[F · F∘θ] < 0` (B2); a chessboard instance violated (B3); a disseminated ratio above `(6m/p)^N` (C1).
++- A count of enclosing dual cycles of length `4, 6` or `8` above `(n/2) 3^{n−1}`, a series value at `y = 1/2` other than `5/8`, or a winding bound at `L' = 10` other than `45/256` (C2–C4); the `4×2` illustration at `p = 432` below `1/2` (C5).
++- A three-dimensional torus on which the disseminated ratio exceeds `(6m/p)^N`, or the `2×2×2` illustration at `p = 432` with neighbouring records agreeing with probability at most `1/2` (D1–D2).
++
++## Boundaries and non-claims
++This note proves long-range order and the existence of at least two Gibbs states for the static six-axis law on `Z²` when `p ≥ 216 max(q, r)`, and on `Z³` for the same threshold by the in-plane count; it does not claim optimal thresholds, says nothing about the band between block 03's thresholds and these, says nothing about the formation law's phase (block 12's obligation stands), does not count the extremal states beyond the orbit bound, and does not select a coupling as physical. No plane, bridge, Born or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision. No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.
++
++## Imports
++- `minimal_axioms`: the sentences quoted under Premises.
++- Block 03 (on `main`): the uniqueness side, referenced for the contrast; block 01 (on `main`): the static reading. Proposed, unaudited.
++- Re-proved at scope: T1, T2, T3, T4, T5's counts and series, T6's chain except the named theorems, T7's in-plane reduction.
++- Named standard imports at definition level (never as authority for physics): Whitney's planar cut–cycle duality with the Jordan curve theorem for lattice polygons (T5, T7); Kolmogorov's extension and the backward martingale theorem (T6).
++- Reference only (named, not used): the Fröhlich–Israel–Lieb–Simon method and Biskup's lecture notes for the chessboard route; Peierls's argument.
++
++## Review record
++Supervisor-run block (owner directive: don't stop; assess the next lane and take it; no subagents). The control (`specs/supervisor_control_block17_static_order.py`) computed the spectrum, reflection positivity and chessboard instances, the disseminated ratio, the connected-set counts and the threshold before the contract; the lens pass is in `GOAL_block17.md`; the primary seat wrote T1–T7 and the runner; the refuting pass (`CHECKER_block17_findings.md`) recomputed reflection positivity by an explicit sum-of-squares decomposition, the chessboard instance by the two-step quadratic-form inequality, the contour counts by a second enumeration, and the series by numeric summation of partial sums. Facts settled while executing: the runner's first expected count of enclosing dual cycles of length six forgot the domino's two orientations (the count is `4`, within the bound); the three-dimensional statement was first written as conditional on a dual-surface connectivity lemma with a crude threshold, then replaced by the in-plane count, which needs no such lemma and gives the same threshold as in two dimensions; three tokens the lane forbids as substrings were reworded; the refuting pass's second-adjacency routine (for the superseded surface count) is retained in its output only as a record.
++
++## Verification
++
++```bash
++python3 scripts/admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.py
++python3 scripts/admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.py --exact
++python3 scripts/admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.py --list-mutations
++python3 scripts/admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.py --mutation unique_state_above_threshold_claimed
++```
++
++Families: A authority and inputs; B the spectrum and symmetry, reflection positivity, the chessboard instances; C the disseminated bound, the two-dimensional counts, series, winding bound, threshold and illustration; D the three-dimensional disseminated bound and illustration on the `2×2×2` torus; F fences, forbidden phrases, the floating-point self-scan, the placement of the classical names; G the resolution lines. Each of the 13 declared mutations fails in exactly one family. Expected final line: `TOTAL: PASS=20 FAIL=0`.
+diff --git a/docs/audit/data/citation_graph_manifest.json b/docs/audit/data/citation_graph_manifest.json
+index 3683d0174e5c907d4f8ceb326e9529d941529b85..0f187cfd13ebcdf47ff3fc1c1a174bf2bf8d7d9f 100644
+--- a/docs/audit/data/citation_graph_manifest.json
++++ b/docs/audit/data/citation_graph_manifest.json
+@@ -1,6 +1,6 @@
+ {
+- "edge_count": 13395,
+- "node_count": 5829,
++ "edge_count": 13397,
++ "node_count": 5830,
+  "nodes": {
+   "3d_correction_master_note": {
+    "deps_hash": "e3b0c44298fc",
+@@ -746,6 +746,10 @@
+    "deps_hash": "1b3132f0c69b",
+    "out_degree": 3
+   },
++  "admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_and_several_gibbs_states_reflection_positivity_chessboard_peierls_bounded_theorem_note_2026-09-15": {
++   "deps_hash": "8ae058a5c524",
++   "out_degree": 2
++  },
+   "admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_bounded_theorem_note_2026-09-07": {
+    "deps_hash": "8188f46b334d",
+    "out_degree": 2
+diff --git a/logs/runner-cache/admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.txt b/logs/runner-cache/admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.txt
+new file mode 100644
+index 0000000000000000000000000000000000000000..64af3fc8fc283d24accabdfabb92f6a2ec6d0aae
+--- /dev/null
++++ b/logs/runner-cache/admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.txt
+@@ -0,0 +1,45 @@
++===== runner cache v1 =====
++runner: scripts/admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.py
++runner_sha256: 3196852da08b1b3cb6a1ae52541f420b48a2aec1a0e91dc20343247a524be0e0
++input_fingerprint_sha256: 9d604660db607f7e959ece0eac5c5c46e237a4b56f6c47867e2e9ac6e6a6f622
++timeout_sec: 900
++exit_code: 0
++elapsed_sec: 18.10
++status: ok
++----- stdout -----
++AUDIT_INPUT_PATHS:
++  docs/ADMISSIBILITY_RULE_STATIC_SIX_AXIS_LAW_STRONG_COUPLING_LONG_RANGE_ORDER_AND_SEVERAL_GIBBS_STATES_REFLECTION_POSITIVITY_CHESSBOARD_PEIERLS_BOUNDED_THEOREM_NOTE_2026-09-15.md
++  docs/MINIMAL_AXIOMS_2026-06-29.md
++  docs/ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md
++AUDIT_TIMEOUT_SEC: 900
++scope: the static six-axis law at strong coupling — spectrum and symmetry, reflection positivity through site planes, chessboard, the disseminated bound, contour counts, the threshold 216 m on Z^2 and Z^3 (the in-plane count); exact
++mutation: none
++PASS: A1 the three declared inputs exist (this note, the axiom memo, block 03 on main)
++PASS: A2 the four axiom sentences used are present verbatim in the axiom memo
++PASS: A3 block 03's claim id and its one-neighbor coefficient are present
++PASS: A4 this note carries its claim id and names this runner
++PASS: B1 T1: eigenvalues Z_1, p-q (x3), p+q-2r (x2); the 48 signed permutations preserve phi and act transitively on the six values
++PASS: B2 T2: E[F F∘θ] >= 0 for site reflections — 20 pseudo-random F on the ring of 4 at (3,1,2) and (5,2,4), 3 on the 4x2 torus at (3,1,2)
++PASS: B3 T3: chessboard instances — ring: P(two bonds bad)^2 = 0.315594 <= P(all bad) = 0.323614; 4x2 torus: P(two direction-1 bonds bad)^4 <= P(all direction-1 bad) = 0.103125
++PASS: C1 T4: at p = 432, m = 2 (eps = 6m/p = 1/36): P(all bonds bad) on the ring = 0.000000032 <= eps^4 = 0.000000595; on the 4x2 torus P(all direction-1 bad) = 0.000000000000 <= eps^8
++PASS: C2 T5: enclosing dual cycles of length 4, 6, 8: {4: 1, 6: 4, 8: 22} <= (n/2) 3^(n-1) = {4: 54, 6: 729, 8: 8748}
++PASS: C3 T5: sum_{n>=4} n y^n = y^4 (4 - 3y)/(1 - y)^2, equal to 5/8 at y = 1/2 (case (a) bound 5/24)
++PASS: C4 T5: the winding bound 18 L' 2^{-L'} at L' = 10 is 45/256, the total 5/24 + 45/256 = 295/768 < 1/2; y = 3 eps^{1/2} = 1/2 at eps = 1/36, i.e. p_0 = 216 m
++PASS: C5 T5: at m = 2 the threshold is p_0 = 432 and eps = 6m/p_0 = 1/36 exactly
++PASS: C6 T5 illustration: on the 4x2 torus at p = 432 the records at distance 2 agree with probability 0.999999 > 1/2
++PASS: D1 T7: on the 2x2x2 torus at p = 432 the probability that every direction-1 bond disagrees is 0.000000000000000 <= (6m/p)^N = (1/36)^8
++PASS: D2 T7 illustration: on the 2x2x2 torus at p = 432 neighbouring records agree with probability 0.999999 > 1/2; each unit cube of a layer is canonical for one in-plane bond per in-plane direction
++PASS: F1 the note carries the three fence sentences verbatim
++PASS: F2 the note contains no forbidden phrase (0 hits)
++PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
++PASS: F4 the classical names appear only under Prior art and Imports (0 offenders)
++per_element: executed — the spectrum symbolically; the 48 signed permutations; the series identity at y = 1/2; the enclosing-cycle counts for lengths 4, 6, 8
++per_site: executed — every configuration of the ring of 4 and the 4x2 torus in the reflection-positivity, chessboard and disseminated checks
++per_mode: executed — the chessboard instances on the ring and the 4x2 torus; the disseminated ratios at p = 432
++per_block: executed — the 4x2 and 2x2x2 torus illustrations at p = 432 (agreement above 1/2)
++lattice_wide: T1-T7 proved for every positive triple with p >= 216 max(q, r) on Z^2 and Z^3 (the in-plane count); thresholds not claimed optimal
++PASS: G1 the five N5 resolution lines are printed
++TOTAL: PASS=20 FAIL=0
++
++----- stderr -----
++
+diff --git a/scripts/admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.py b/scripts/admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..4fe618852570ec25a2586d0c22483a0929d3f809
+--- /dev/null
++++ b/scripts/admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_several_gibbs_states_2026_09_15.py
+@@ -0,0 +1,449 @@
++#!/usr/bin/env python3
++"""Exact checks: the static six-axis law at strong coupling — reflection positivity, chessboard, disseminated bound, contour
++counts, the two-dimensional threshold 216 m and the conditional three-dimensional constants.
++
++Scope.  Static law mu_L(v) = prod_bonds phi(v_x, v_y)/Z_L on tori, phi = (p, q, r) on same/antipodal/orthogonal pairs.  T1: the
++spectrum of phi and the 48 signed permutations.  T2: reflection positivity through site planes on a ring of 4 and a 4x2 torus, at
++(3,1,2) and at the indefinite triple (5,2,4), for pseudo-random F.  T3: chessboard instances.  T4: the disseminated bound
++(6m/p)^N on the ring and the 4x2 torus at p = 432.  T5: enclosing dual-cycle counts for lengths 4, 6, 8; the series identity and
++its value 5/8 at y = 1/2; the winding bound 45/256; the total 295/768; the threshold 216 m; an illustration on the 4x2 torus at
++p = 432.  T7: the three-dimensional disseminated bound and an illustration on the 2x2x2 torus at p = 432 (the in-plane count needs no
++further lemma).  Exact rational and symbolic arithmetic only; the runner scans its own source for
++floating-point literals.
++"""
++
++from __future__ import annotations
++
++import random
++import re
++import sys
++from fractions import Fraction
++from itertools import permutations, product
++from pathlib import Path
++
++import sympy as sp
++
++AUDIT_TIMEOUT_SEC = 900
++AUDIT_INPUT_PATHS = (
++    "docs/ADMISSIBILITY_RULE_STATIC_SIX_AXIS_LAW_STRONG_COUPLING_LONG_RANGE_ORDER_AND_SEVERAL_GIBBS_STATES_REFLECTION_POSITIVITY_CHESSBOARD_PEIERLS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
++    "docs/MINIMAL_AXIOMS_2026-06-29.md",
++    "docs/ADMISSIBILITY_RULE_EXACT_UNIQUENESS_REGION_ONE_SITE_CONTRACTION_COUPLING_BOUNDED_THEOREM_NOTE_2026-09-06.md",
++)
++ROOT = Path(__file__).resolve().parents[1]
++CLAIM_ID = "admissibility_rule_static_six_axis_law_strong_coupling_long_range_order_and_several_gibbs_states_reflection_positivity_chessboard_peierls_bounded_theorem_note_2026-09-15"
++BLOCK03_CLAIM_ID = "admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_bounded_theorem_note_2026-09-06"
++BLOCK03_FRAGMENT = "one-neighbor interdependence coefficient"
++AXIOM_NEEDLES = (
++    "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.",
++    "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.",
++    "Records form.",
++    "Only records are readable.",
++)
++
++MUTATION_GATE = {
++    "eigenvalues_wrong": "B",
++    "symmetry_not_preserved_claimed": "B",
++    "rp_negative_claimed": "B",
++    "chessboard_violated_claimed": "B",
++    "disseminated_bound_wrong": "C",
++    "contour_count_bound_wrong": "C",
++    "series_value_wrong": "C",
++    "winding_bound_wrong": "C",
++    "threshold_wrong": "C",
++    "unique_state_above_threshold_claimed": "C",
++    "three_d_disseminated_bound_wrong": "D",
++    "claim_sharp_threshold": "F",
++    "claim_classical_name_in_theorem": "F",
++}
++ACTIVE_MUTATION: str | None = None
++
++
++def mut(name: str) -> bool:
++    if name not in MUTATION_GATE:
++        raise KeyError(name)
++    return ACTIVE_MUTATION == name
++
++
++class Checks:
++    def __init__(self) -> None:
++        self.passed = 0
++        self.failed = 0
++        self.failed_families: list[str] = []
++
++    def check(self, label: str, condition: bool, detail: str) -> None:
++        ok = bool(condition)
++        self.passed += int(ok)
++        self.failed += int(not ok)
++        if not ok:
++            self.failed_families.append(label[0])
++        print(f"{'PASS' if ok else 'FAIL'}: {label} {detail}")
++
++    def finish(self) -> int:
++        print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
++        return self.failed
++
++
++def normalize_text(text: str) -> str:
++    return " ".join(text.split())
++
++
++F = Fraction
++M = 6
++
++
++def dec(x: Fraction, n: int = 6) -> str:
++    s = x.numerator * 10 ** n // x.denominator
++    return f"{s // 10 ** n}.{str(s % 10 ** n).zfill(n)}"
++
++
++def orbit_type(s: int, u: int) -> str:
++    if s == u:
++        return "p"
++    if s // 2 == u // 2:
++        return "q"
++    return "r"
++
++
++def phi_matrix(p: int, q: int, r: int):
++    w = {"p": p, "q": q, "r": r}
++    return [[w[orbit_type(s, t)] for t in range(M)] for s in range(M)]
++
++
++AXIS = {0: (1, 0, 0), 1: (-1, 0, 0), 2: (0, 1, 0), 3: (0, -1, 0), 4: (0, 0, 1), 5: (0, 0, -1)}
++
++
++def signed_permutations():
++    idx = {v: k for k, v in AXIS.items()}
++    out = []
++    for perm in permutations(range(3)):
++        for signs in product((1, -1), repeat=3):
++            mp = []
++            for k in range(M):
++                a = AXIS[k]
++                b = [0, 0, 0]
++                for i in range(3):
++                    b[perm[i]] = signs[i] * a[i]
++                mp.append(idx[tuple(b)])
++            out.append(tuple(mp))
++    return out
++
++
++# ------------------------------------------------------------------ small tori
++def ring_measure(phi, n: int) -> dict:
++    w = {}
++    for v in product(range(M), repeat=n):
++        x = 1
++        for i in range(n):
++            x *= phi[v[i]][v[(i + 1) % n]]
++        w[v] = x
++    Z = sum(w.values())
++    return {v: F(x, Z) for v, x in w.items()}
++
++
++def torus_4x2(phi):
++    sites = [(i, j) for i in range(4) for j in range(2)]
++    idx = {s: k for k, s in enumerate(sites)}
++    hb = [(idx[(i, j)], idx[((i + 1) % 4, j)]) for i in range(4) for j in range(2)]  # direction-1 bonds (8)
++    vb = sorted({tuple(sorted((idx[(i, 0)], idx[(i, 1)]))) for i in range(4)})  # direction-2 bonds (4 distinct pairs, each doubled on the 2-torus)
++    w = {}
++    for v in product(range(M), repeat=8):
++        x = 1
++        for (a, b) in hb:
++            x *= phi[v[a]][v[b]]
++        for (a, b) in vb:
++            x *= phi[v[a]][v[b]] ** 2
++        w[v] = x
++    Z = sum(w.values())
++    return sites, idx, hb, {v: F(x, Z) for v, x in w.items()}
++
++
++# ============================================================================================ family A
++def family_a(checks: Checks, texts) -> None:
++    note, axioms, b03 = texts
++    checks.check("A1", all((ROOT / pth).is_file() for pth in AUDIT_INPUT_PATHS) and len(set(AUDIT_INPUT_PATHS)) == 3,
++                 "the three declared inputs exist (this note, the axiom memo, block 03 on main)")
++    checks.check("A2", all(n in normalize_text(axioms) for n in AXIOM_NEEDLES), "the four axiom sentences used are present verbatim in the axiom memo")
++    f03 = normalize_text(b03)
++    checks.check("A3", BLOCK03_CLAIM_ID in f03 and BLOCK03_FRAGMENT in f03, "block 03's claim id and its one-neighbor coefficient are present")
++    flat = normalize_text(note)
++    checks.check("A4", CLAIM_ID in flat and Path(__file__).name in flat, "this note carries its claim id and names this runner")
++
++
++# ============================================================================================ family B
++def family_b(checks: Checks, report: dict) -> None:
++    P_, Q_, R_ = sp.symbols("p q r", positive=True)
++    Phi = sp.Matrix(M, M, lambda i, j: {"p": P_, "q": Q_, "r": R_}[orbit_type(i, j)])
++    ev = Phi.eigenvals()
++    expected = {P_ + Q_ + 4 * R_: 1, P_ - Q_: 3, P_ + Q_ - 2 * R_: 2}
++    if mut("eigenvalues_wrong"):
++        expected = {P_ + Q_ + 4 * R_: 1, P_ - Q_: 2, P_ + Q_ - 2 * R_: 3}
++    ev_ok = all(any(sp.simplify(k - e) == 0 and m == mult for k, m in ev.items()) for e, mult in expected.items()) and sum(ev.values()) == 6
++    phi = phi_matrix(3, 1, 2)
++    perms = signed_permutations()
++    inv = all(phi[g[a]][g[b]] == phi[a][b] for g in perms for a in range(M) for b in range(M))
++    transitive = all(any(g[0] == a for g in perms) for a in range(M))
++    if mut("symmetry_not_preserved_claimed"):
++        inv = not inv
++    checks.check("B1", ev_ok and len(perms) == 48 and inv and transitive, "T1: eigenvalues Z_1, p-q (x3), p+q-2r (x2); the 48 signed permutations preserve phi and act transitively on the six values")
++    random.seed(20260915)
++    ok_rp = True
++    for tr in ((3, 1, 2), (5, 2, 4)):
++        mu4 = ring_measure(phi_matrix(*tr), 4)
++        for _ in range(20):
++            Ftab = {k: F(random.randint(-9, 9)) for k in product(range(M), repeat=3)}
++            val = sum((mu4[v] * Ftab[(v[0], v[1], v[2])] * Ftab[(v[0], v[3], v[2])] for v in mu4), F(0))
++            ok_rp = ok_rp and val >= 0
++    sites, idx, hb, mu8 = torus_4x2(phi_matrix(3, 1, 2))
++    report["torus312"] = (sites, idx, hb, mu8)
++    left = [idx[(i, j)] for i in (0, 1, 2) for j in range(2)]
++    refl = {idx[(i, j)]: idx[((-i) % 4, j)] for (i, j) in sites}
++    for _ in range(3):
++        Ftab = {k: F(random.randint(-5, 5)) for k in product(range(M), repeat=len(left))}
++        val = F(0)
++        for v, pr in mu8.items():
++            val += pr * Ftab[tuple(v[s] for s in left)] * Ftab[tuple(v[refl[s]] for s in left)]
++        ok_rp = ok_rp and val >= 0
++    if mut("rp_negative_claimed"):
++        ok_rp = False
++    checks.check("B2", ok_rp, "T2: E[F F∘θ] >= 0 for site reflections — 20 pseudo-random F on the ring of 4 at (3,1,2) and (5,2,4), 3 on the 4x2 torus at (3,1,2)")
++    mu4 = ring_measure(phi_matrix(3, 1, 2), 4)
++    p_both = sum((pr for v, pr in mu4.items() if v[0] != v[1] and v[2] != v[3]), F(0))
++    p_all = sum((pr for v, pr in mu4.items() if all(v[i] != v[(i + 1) % 4] for i in range(4))), F(0))
++    ring_ok = p_both ** 2 <= p_all  # P(both)^{1} <= P(all)^{2/4}  <=>  P(both)^2 <= P(all)
++    # 4x2 torus: two direction-1 bonds at cells (0,0) and (2,1) versus all direction-1 bonds bad
++    b1, b2 = hb[0], hb[5]
++    p_two = sum((pr for v, pr in mu8.items() if v[b1[0]] != v[b1[1]] and v[b2[0]] != v[b2[1]]), F(0))
++    p_alld1 = sum((pr for v, pr in mu8.items() if all(v[a] != v[b] for (a, b) in hb)), F(0))
++    torus_ok = p_two ** 4 <= p_alld1  # P(two) <= P(all)^{2/8}  <=>  P(two)^4 <= P(all)
++    report["p_alld1_312"] = p_alld1
++    if mut("chessboard_violated_claimed"):
++        torus_ok = p_two ** 4 > p_alld1
++    checks.check("B3", ring_ok and torus_ok, f"T3: chessboard instances — ring: P(two bonds bad)^2 = {dec(p_both ** 2)} <= P(all bad) = {dec(p_all)}; 4x2 torus: P(two direction-1 bonds bad)^4 <= P(all direction-1 bad) = {dec(p_alld1)}")
++
++
++# ============================================================================================ family C
++def enclosing_cycles(n: int) -> int:
++    """simple cycles of length n on the dual lattice (half-integer points) enclosing the origin cell, by enumeration of
++    self-avoiding closed walks starting at a dual vertex crossing the positive half-line within distance n/2."""
++    found = set()
++    starts = [(k + F(1, 2), F(-1, 2)) for k in range(0, n // 2 + 1)]  # dual vertices just below the half-line
++    steps = [(1, 0), (-1, 0), (0, 1), (0, -1)]
++
++    def encloses(cycle_edges):
++        # even-odd rule: count vertical crossings of the ray from the origin (0,0) going right along y = 0
++        crossings = 0
++        for (a, b) in cycle_edges:
++            (x1, y1), (x2, y2) = a, b
++            if x1 == x2 and x1 > 0 and min(y1, y2) < 0 < max(y1, y2):
++                crossings += 1
++        return crossings % 2 == 1
++
++    def walk(path, edges):
++        if len(path) - 1 == n:
++            if path[-1] == path[0]:
++                key = frozenset(edges)
++                if encloses(edges):
++                    found.add(key)
++            return
++        cur = path[-1]
++        for dx, dy in steps:
++            nxt = (cur[0] + dx, cur[1] + dy)
++            e = frozenset((cur, nxt))
++            if e in edges:
++                continue
++            if nxt in path[1:] or (nxt == path[0] and len(path) < n):
++                continue
++            if nxt == path[0] and len(path) != n:
++                continue
++            walk(path + [nxt], edges + [tuple(sorted((cur, nxt)))])
++    for s in starts:
++        walk([s], [])
++    return len(found)
++
++
++def family_c(checks: Checks, report: dict, exact: bool) -> None:
++    m = 2
++    # disseminated bound at p = 432: ring and 4x2 torus
++    phi_big = phi_matrix(432, 1, 2)
++    mu4 = ring_measure(phi_big, 4)
++    p_all_ring = sum((pr for v, pr in mu4.items() if all(v[i] != v[(i + 1) % 4] for i in range(4))), F(0))
++    sites, idx, hb, mu8 = torus_4x2(phi_big)
++    report["torus432"] = (sites, idx, hb, mu8)
++    p_alld1 = sum((pr for v, pr in mu8.items() if all(v[a] != v[b] for (a, b) in hb)), F(0))
++    eps = F(6 * m, 432)
++    diss_ok = p_all_ring <= eps ** 4 and p_alld1 <= eps ** 8
++    if mut("disseminated_bound_wrong"):
++        diss_ok = p_alld1 <= eps ** 16
++    checks.check("C1", diss_ok, f"T4: at p = 432, m = 2 (eps = 6m/p = 1/36): P(all bonds bad) on the ring = {dec(p_all_ring, 9)} <= eps^4 = {dec(eps ** 4, 9)}; on the 4x2 torus P(all direction-1 bad) = {dec(p_alld1, 12)} <= eps^8")
++    counts = {n: enclosing_cycles(n) for n in (4, 6, 8)}
++    bound = {n: F(n, 2) * 3 ** (n - 1) for n in (4, 6, 8)}
++    cnt_ok = counts == {4: 1, 6: 4, 8: 22} and all(counts[n] <= bound[n] for n in counts)
++    if mut("contour_count_bound_wrong"):
++        cnt_ok = counts == {4: 1, 6: 4, 8: 23}
++    checks.check("C2", cnt_ok, f"T5: enclosing dual cycles of length 4, 6, 8: {counts} <= (n/2) 3^(n-1) = {dict((n, int(b)) for n, b in bound.items())}")
++    y = sp.symbols("y", positive=True)
++    series = sp.summation(sp.Symbol("n") * y ** sp.Symbol("n"), (sp.Symbol("n"), 4, sp.oo))
++    closed = y ** 4 * (4 - 3 * y) / (1 - y) ** 2
++    ident = sp.simplify(sp.simplify(series.subs(y, sp.Rational(1, 2))) - closed.subs(y, sp.Rational(1, 2))) == 0 and closed.subs(y, sp.Rational(1, 2)) == sp.Rational(5, 8)
++    partial = sum((F(n, 1) * F(1, 2 ** n) for n in range(4, 200)), F(0))
++    val_ok = ident and abs(partial - F(5, 8)) < F(1, 10 ** 40)
++    if mut("series_value_wrong"):
++        val_ok = closed.subs(y, sp.Rational(1, 2)) == sp.Rational(3, 5)
++    checks.check("C3", val_ok, "T5: sum_{n>=4} n y^n = y^4 (4 - 3y)/(1 - y)^2, equal to 5/8 at y = 1/2 (case (a) bound 5/24)")
++    Lp = 10
++    winding = F(18 * Lp, 2 ** Lp)
++    total = F(5, 24) + winding
++    w_ok = winding == F(45, 256) and total == F(295, 768) and total < F(1, 2)
++    if mut("winding_bound_wrong"):
++        w_ok = winding == F(45, 512)
++    checks.check("C4", w_ok and 3 * F(1, 6) == F(1, 2) and 6 * m * 36 == 216 * m, "T5: the winding bound 18 L' 2^{-L'} at L' = 10 is 45/256, the total 5/24 + 45/256 = 295/768 < 1/2; y = 3 eps^{1/2} = 1/2 at eps = 1/36, i.e. p_0 = 216 m")
++    thr_ok = (216 * m == 432) and (F(6 * m, 216 * m) == F(1, 36))
++    if mut("threshold_wrong"):
++        thr_ok = F(6 * m, 216 * m) == F(1, 35)
++    checks.check("C5", thr_ok, "T5: at m = 2 the threshold is p_0 = 432 and eps = 6m/p_0 = 1/36 exactly")
++    same = sum((pr for v, pr in mu8.items() if v[idx[(0, 0)]] == v[idx[(2, 0)]]), F(0))
++    illus = same > F(1, 2)
++    if mut("unique_state_above_threshold_claimed"):
++        illus = same <= F(1, 2)
++    checks.check("C6", illus, f"T5 illustration: on the 4x2 torus at p = 432 the records at distance 2 agree with probability {dec(same)} > 1/2")
++    if exact:
++        print("exact 4x2 torus agreement at p = 432:", same)
++
++
++# ============================================================================================ family D
++def torus_2x2x2(phi):
++    """the 2x2x2 torus: each pair of adjacent sites is joined by two bonds (periodic side 2); 8 direction-1 bond slots."""
++    sites = list(product(range(2), repeat=3))
++    idx = {s: k for k, s in enumerate(sites)}
++    pairs = {d: set() for d in range(3)}
++    for s in sites:
++        for d in range(3):
++            t_ = list(s)
++            t_[d] = (s[d] + 1) % 2
++            pairs[d].add(tuple(sorted((idx[s], idx[tuple(t_)]))))
++    w = {}
++    for v in product(range(M), repeat=8):
++        x = 1
++        for d in range(3):
++            for (a, b) in pairs[d]:
++                x *= phi[v[a]][v[b]] ** 2
++        w[v] = x
++    Z = sum(w.values())
++    return idx, pairs, {v: F(x, Z) for v, x in w.items()}
++
++
++def family_d(checks: Checks) -> None:
++    m = 2
++    idx, pairs, mu = torus_2x2x2(phi_matrix(432, 1, 2))
++    p_alld1 = sum((pr for v, pr in mu.items() if all(v[a] != v[b] for (a, b) in pairs[0])), F(0))
++    eps = F(6 * m, 432)
++    d1 = p_alld1 <= eps ** 8
++    if mut("three_d_disseminated_bound_wrong"):
++        d1 = p_alld1 <= eps ** 16
++    checks.check("D1", d1, f"T7: on the 2x2x2 torus at p = 432 the probability that every direction-1 bond disagrees is {dec(p_alld1, 15)} <= (6m/p)^N = (1/36)^8")
++    same = sum((pr for v, pr in mu.items() if v[idx[(0, 0, 0)]] == v[idx[(1, 0, 0)]]), F(0))
++    d2 = same > F(1, 2) and all(len(pairs[d]) == 4 for d in range(3))
++    checks.check("D2", d2, f"T7 illustration: on the 2x2x2 torus at p = 432 neighbouring records agree with probability {dec(same)} > 1/2; each unit cube of a layer is canonical for one in-plane bond per in-plane direction")
++
++
++# ============================================================================================ family F
++FENCES = (
++    "This note proves long-range order and the existence of at least two Gibbs states for the static six-axis law on `Z²` when `p ≥ 216 max(q, r)`, and on `Z³` for the same threshold by the in-plane count; it does not claim optimal thresholds, says nothing about the band between block 03's thresholds and these, says nothing about the formation law's phase (block 12's obligation stands), does not count the extremal states beyond the orbit bound, and does not select a coupling as physical.",
++    "No plane, bridge, Born or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
++    "No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.",
++)
++FORBIDDEN = (
++    "the physical order", "the physical rule", "the physical phase", "for every coupling", "selects the", "fires wake condition", "the Bridge weights",
++    "the Bridge conjecture", "certified", "converge", "emergent", "phase transition", "sharp threshold", "washes out", "toward the plane", "the trend",
++)
++CLAIM_INJECTIONS = {"claim_sharp_threshold": "Hence 216 m is the sharp threshold of the phase transition."}
++CLASSICAL_NAMES = ("Peierls", "Cauchy", "Schwarz", "Whitney", "Jordan", "Timár", "Lévy", "Kolmogorov", "Fröhlich", "Lieb", "Simon", "Biskup", "Israel", "Dobrushin")
++ALLOWED_NAME_SECTIONS = ("Prior art and what is new", "Imports")
++SCAN_MARKER = "float-scan-marker-line"
++
++
++def family_f(checks: Checks, note_text: str) -> None:
++    text = note_text
++    for name, phrase in CLAIM_INJECTIONS.items():
++        if mut(name):
++            text = text + "\n" + phrase
++    flat = normalize_text(text)
++    checks.check("F1", all(f in flat for f in FENCES), "the note carries the three fence sentences verbatim")
++    hits = [ph for ph in FORBIDDEN if ph.lower() in flat.lower()]
++    checks.check("F2", not hits, f"the note contains no forbidden phrase ({len(hits)} hits)")
++    source_lines = Path(__file__).read_text(encoding="utf-8").splitlines()
++    scan = [ln for ln in source_lines if SCAN_MARKER not in ln]
++    float_literal = re.compile(r"(?<![\w.])\d+\.\d+(?![\w.])|(?<![\w.])\d+[eE][-+]?\d+(?![\w.])")
++    conversion = "flo" + "at("  # float-scan-marker-line
++    evalf = "eva" + "lf("  # float-scan-marker-line
++    numeric = "N" + "("  # float-scan-marker-line
++    bad = [ln for ln in scan if float_literal.search(ln) or conversion in ln or evalf in ln or numeric in ln]
++    checks.check("F3", not bad and len(scan) > 200, f"runner source: no floating-point literal or conversion call ({len(bad)} hits)")
++    sections = re.split(r"^## ", text, flags=re.M)
++    offenders = []
++    for i, sec in enumerate(sections):
++        title = sec.splitlines()[0].strip() if i > 0 else "(front matter)"
++        body = sec
++        if mut("claim_classical_name_in_theorem") and title.startswith("Theorem T3"):
++            body = body + " (the Cauchy–Schwarz inequality)"
++        if any(title.startswith(a) for a in ALLOWED_NAME_SECTIONS):
++            continue
++        for nm in CLASSICAL_NAMES:
++            if nm in body:
++                offenders.append((title[:30], nm))
++    checks.check("F4", not offenders, f"the classical names appear only under Prior art and Imports ({len(offenders)} offenders)")
++
++
++# ============================================================================================ family G
++N5_LINES = (
++    "per_element: executed — the spectrum symbolically; the 48 signed permutations; the series identity at y = 1/2; the enclosing-cycle counts for lengths 4, 6, 8",
++    "per_site: executed — every configuration of the ring of 4 and the 4x2 torus in the reflection-positivity, chessboard and disseminated checks",
++    "per_mode: executed — the chessboard instances on the ring and the 4x2 torus; the disseminated ratios at p = 432",
++    "per_block: executed — the 4x2 and 2x2x2 torus illustrations at p = 432 (agreement above 1/2)",
++    "lattice_wide: T1-T7 proved for every positive triple with p >= 216 max(q, r) on Z^2 and Z^3 (the in-plane count); thresholds not claimed optimal",
++)
++
++
++def family_g(checks: Checks) -> None:
++    for line in N5_LINES:
++        print(line)
++    checks.check("G1", len(N5_LINES) == 5 and all(len(l) >= 40 for l in N5_LINES), "the five N5 resolution lines are printed")
++
++
++def main(argv) -> int:
++    global ACTIVE_MUTATION
++    if "--list-mutations" in argv:
++        for name, fam in MUTATION_GATE.items():
++            print(f"{name} {fam}")
++        return 0
++    if "--mutation" in argv:
++        ACTIVE_MUTATION = argv[argv.index("--mutation") + 1]
++        if ACTIVE_MUTATION not in MUTATION_GATE:
++            print(f"unknown mutation {ACTIVE_MUTATION}")
++            return 2
++    exact = "--exact" in argv
++    checks = Checks()
++    texts = [(ROOT / pth).read_text(encoding="utf-8") if (ROOT / pth).is_file() else "" for pth in AUDIT_INPUT_PATHS]
++    print("AUDIT_INPUT_PATHS:")
++    for pth in AUDIT_INPUT_PATHS:
++        print(f"  {pth}")
++    print(f"AUDIT_TIMEOUT_SEC: {AUDIT_TIMEOUT_SEC}")
++    print("scope: the static six-axis law at strong coupling — spectrum and symmetry, reflection positivity through site planes, chessboard, the disseminated bound, contour counts, the threshold 216 m on Z^2 and Z^3 (the in-plane count); exact")
++    print(f"mutation: {ACTIVE_MUTATION or 'none'}")
++    report: dict = {}
++    family_a(checks, texts)
++    family_b(checks, report)
++    family_c(checks, report, exact)
++    family_d(checks)
++    family_f(checks, texts[0])
++    family_g(checks)
++    if ACTIVE_MUTATION:
++        observed = "".join(sorted(set(checks.failed_families))) or "none"
++        print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
++        print(f"mutation_family_observed: {observed}")
++    failed = checks.finish()
++    return 1 if failed else 0
++
++
++if __name__ == "__main__":
++    raise SystemExit(main(sys.argv[1:]))

@@ -1,0 +1,1164 @@
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+index 8f9c496033ee3e37e4ad73433151a79224a60814..5ba0568cc104a9a21925eaa2d724e8bf39f29532 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+@@ -8,3 +8,13 @@
+ | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
+ | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
+ | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
++
++## Block 19 — the Green-function channel of the unsoldered static law (2026-09-15)
++
++| Family | Object/formulation | Mechanism/invariant | Terminal obligation | Strength vs target | Status | Concrete evidence | Reopen condition |
++|---|---|---|---|---|---|---|---|
++| F19.1 bond-plane reflection positivity | `e^{β s·s'}` as a kernel | positive Legendre coefficients (Rodrigues) | none | exact | candidate-complete | G1 (B1) | — |
++| F19.2 infrared bound | gradient twists are site shifts | iterated reflection positivity; the plane wave as a Laplacian eigenfunction | none | exact | candidate-complete | G2 (B2–B3) | — |
++| F19.3 long-range order | the sum rule | `G(0) ≤ √3π/8` | a sharper constant | exact; `β > 3√3π/8` | candidate-complete | G3 (C1–C2) | a better Green-function bound |
++| F19.4 the Bogoliubov lower bound | zero field, `F = ŝ^1(k) m̂` | integration by parts twice; the second-derivative identity | none | exact | candidate-complete | G4 (D1–D3) | — |
++| F19.5 the sandwich | `(M²/3)²/(βE) ≤ S^⊥ ≤ 1/(βE)` | G2 + G4 | the normalization | exact up to constants | candidate-complete | G5 | the exact constant |
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
+index e99dd0e244c2753522fc80b26960d1979642339c..21cab1ab053d276ae74e795cd1072a92113cbbd7 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
+@@ -23,3 +23,11 @@
+ - Site weight `ψ`: constant by covariance on the transitive menu (executed); on a non-transitive menu it is not.
+ - Simultaneous formation (several records locking in one step) is not a total order; the formation law of a partial order with simultaneous steps would need a joint conditional the axiom does not state; named in N7.
+ - Infinite volume: the static specification's DLR existence (compactness on a finite menu) and uniqueness are outside the block.
++
++## Block 19 (2026-09-15) — the Green-function channel
++- Dependencies: `minimal_axioms`; the possibility-covariance note (on `main`; the sphere domain and the unsoldered reading); block 01 (on `main`; the static reading). Proposed, unaudited. PRs #8147 and #8151 referenced for context.
++- Named premises: the pure-state sphere as the possibility domain; the unsoldered reading; the static reading; the exponential overlap `e^{βt}` with `β` supplied; the torus of even side.
++- Scaffolding: the `4³` and `6×4×4` tori for the identities; the wavevectors `(π/2,0,0)`, `(π/2,π/2,0)`, `(π/3,0,0)`; the generator about `e_2` (and `e_1` in the refuting pass).
++- Standard mathematical imports at definition level: the Legendre expansion of a smooth function and the addition theorem; the unitarity of the discrete torus transform; integration by parts for the divergence-free rotation field on the sphere (executed for polynomials).
++- References named, not used: Fröhlich–Simon–Spencer; Fröhlich–Israel–Lieb–Simon; Mermin; Biskup.
++- Counterfactual pass: an overlap without Legendre positivity (no bond-plane reflection positivity); the Born overlap (positive but not of Gaussian form; the twist argument does not apply as written); a discrete menu (no rotation generator; no Bogoliubov bound — block 17's case); the formation reading (parabolic; block 13).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block19_findings.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block19_findings.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..c94c41054283a534087c72ef4e14915495c312e5
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block19_findings.md
+@@ -0,0 +1,14 @@
++# Refuting pass — block 19 (supervisor-run, disjoint machinery; 2026-09-15)
++
++Routes compared (control `specs/supervisor_control_block19_sphere_static.py`, refuting pass `specs/supervisor_control_block19_refuter.py`, outputs in `.out.txt`):
++
++| item | runner's route | refuting route | result |
++|---|---|---|---|
++| the Legendre coefficients of `e^{βt}` (G1) | the Rodrigues form against direct integration, symbolically in `β`, `ℓ ≤ 4` | the orthogonality route with the Taylor series of `e^{βt}` truncated at order 40, at `β = 1, 3`, `ℓ ≤ 3` | agree to `10^{−12}`; all positive |
++| the gradient sum of the plane wave (G2) | the `4³` torus at two wavevectors | direct bond enumeration on a `6×4×4` torus at `k = (π/3, 0, 0)` (`E = 1`): `48 = E · N/2` | equal |
++| the single-bond second-derivative identity (G4) | the generator about `e_2` | the generator about `e_1` (transverse pair `(s^2, s^3)`) | the same identity |
++| the cosine inequality and the ball integral (G3) | sample points; the radial integral | the Taylor lower bound `u²/2 − u⁴/24` at the sample points; the ball integral in spherical coordinates | consistent; `4√3π²` |
++
++Findings: none in the primary. The control caught the generator's sign convention (`L s^3 = −s^1`, `L s^1 = s^3`) before the contract; it enters G4 only through an absolute value.
++
++Attempts to refute (nothing refuted): G2's domination step was re-read for the crossing bonds after the site shift (the crossing weight is the untwisted positive-definite kernel; the shifted site measures are single-site factors; the iteration ends at fields constant along every direction, where `Z` equals `Z(0)`); G2's expansion for wavevectors with `2k = 0` (the gradient sum is then `E(k) N`, which only strengthens the bound); G3's Riemann-sum limit (the integrand's singularity `π²/(4|k|²)` is integrable in three dimensions); G4's use of `|m̂| ≤ 1` and of the component symmetry `⟨m̂²⟩ = M_N²/3`; G5's subsequence for a fixed wavevector. Verdict of this pass: PASS-NO-BLOCKER at the supervisor's own standard, pending the owner's independent review.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block19.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block19.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..6b713d8d97cb5ef55c727274415d9fea5dfa0e45
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block19.md
+@@ -0,0 +1,15 @@
++# Claim status certificate — block 19 (close, 2026-09-15)
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: upstream_support
++reachability_to_target: supports
++conditional_surface_status: "G1–G5 proved for every beta > 0 (G3–G5 for beta > 3 sqrt(3) pi/8) on tori of even side and their limits; the algebraic skeleton executed exactly; conditional on the pure-state sphere as the possibility domain, the unsoldered reading and the exponential overlap as supplied conditions; three standard mathematical imports named at definition level (the Legendre expansion with the addition theorem; the unitarity of the torus transform; integration by parts for the rotation field on the sphere)"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++claim_type_reason: "a positivity of Legendre coefficients; an iterated reflection-positivity inequality and a second-order expansion; a unitary sum rule and an elementary integral bound; integration by parts on the sphere with the quadratic-form inequality; every executed identity exact"
++dependency_classes: "one premise node (minimal_axioms); the possibility-covariance note (on main; proposed, unaudited); block 01 (on main) for the static reading"
++open_imports: "the sphere as the possibility domain; the unsoldered reading; the exponential overlap; the three standard mathematical imports"
++review_loop_disposition: pending (supervisor-run block; author checks only)
++independence_class: "single seat (Fable, supervisor): control, contract with a lens pass, primary, refuting pass by the orthogonality route, a second torus, a second generator axis and a second inequality, fold"
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block19.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block19.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..8a90bc51919bd17268ad0050edbf57568add7828
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block19.md
+@@ -0,0 +1,26 @@
++# GOAL — block 19: the unsoldered static law's ordered phase carries the lattice Green function in its transverse channel — infrared bound, long-range order, and a classical Bogoliubov lower bound at zero field (2026-09-15)
++
++**Owner directive (2026-09-15):** don't stop; assess the next lane at each conclusion; no subagents; derivations over computation.
++
++**Why this block.** Blocks 13 and 17 leave the repository's `1/(4π r)` Green function (the gravity node's input, #8093) with exactly one place to come from inside the axioms' readings: the *static* reading (block 13: a causal formation law is parabolic) with a *continuous* possibility symmetry (block 17: the soldered six-axis law orders with a discrete symmetry and no massless channel). Under the unsoldered reading the static law on the sphere with the exponential overlap `e^{β s·s'}` is the classical three-component spin model; in its ordered phase the broken continuous symmetry forces a massless transverse channel whose structure factor is comparable to the lattice Green function `1/E(k)`. This block proves that at scope: reflection positivity through bond planes (Legendre positivity), Gaussian domination with gradient twists (the infrared upper bound), the sum rule (long-range order above an explicit `β`), and a classical Bogoliubov argument run at zero field against the long-range-order parameter itself (the lower bound), so that no spontaneous-magnetization limit is needed.
++
++**Object.** The torus `T_L = (Z/2L Z)³`, `N = (2L)³`; spins `s_x ∈ S²`; the static law `μ_L(ds) = Z^{−1} Π_{⟨xy⟩} e^{β s_x·s_y} Π_x dσ(s_x)`, `dσ` the uniform surface measure, `β > 0` (the exponential zonal rule's coupling; the unsoldered reading's product rule with overlap `e^{βt}`). The transform `ŝ(k) = N^{−1/2} Σ_x e^{ik·x} s_x`; `E(k) = Σ_i 2(1 − cos k_i)` (the lattice Laplacian's symbol); the long-range-order parameter `M_N² = N^{−2} ⟨|Σ_x s_x|²⟩`.
++
++**Contract.**
++- G1 (Legendre positivity and reflection positivity through bond planes): `e^{βt} = Σ_ℓ a_ℓ(β) P_ℓ(t)` with `a_ℓ(β) = (2ℓ+1)/2 · (β^ℓ/(2^ℓ ℓ!)) ∫_{−1}^{1} (1−t²)^ℓ e^{βt} dt > 0`; hence the cross-plane weight is a positive-definite kernel and `E[F · F∘θ] ≥ 0` for reflections through planes bisecting bonds, with arbitrary single-site measures.
++- G2 (Gaussian domination and the infrared bound): for a real function `φ` on the torus, `Z(φ) := ∫ Π_{⟨xy⟩} e^{−(β/2)|s_x − s_y − (φ_x − φ_y) e|²} Π dσ ≤ Z(0)` (the gradient twist is a site shift; iterated bond-plane reflection positivity removes it); expanding at `φ = λ cos(k·x)` gives `⟨|ŝ^e(k)|²⟩ ≤ 1/(β E(k))` for every component `e` and `k ≠ 0`, also in the presence of any single-site factors.
++- G3 (the sum rule and long-range order): `Σ_k Σ_e ⟨|ŝ^e(k)|²⟩ = N`, hence `M_N² ≥ 1 − (3/β) N^{−1} Σ_{k≠0} 1/E(k) → 1 − 3G(0)/β` with `G(0) = ∫ d³k/((2π)³ E(k)) ≤ √3 π/8` (from `1 − cos u ≥ 2u²/π²`); so `M² := lim inf M_N² > 0` for `β > 3√3π/8`, in particular for `β ≥ 21/10`.
++- G4 (the classical Bogoliubov inequality at zero field): with the rotation generator `L = Σ_x e^{−ik·x} L_x` about `e_2`, integration by parts on the sphere gives `⟨L F⟩ = −⟨F · L log w⟩`, the quadratic-form inequality bounds `|⟨L F⟩|² ≤ ⟨|F|²⟩⟨|L log w|²⟩`, and a second integration by parts gives `⟨|L log w|²⟩ = β Σ_{⟨xy⟩} |c_x − c_y|² ⟨s_x^1 s_y^1 + s_x^3 s_y^3⟩ ≤ β N E(k)`; with `F = ŝ^1(k) · m̂` (`m̂ = N^{−1}Σ s_y^3`; `L_x s_x^3 = −s_x^1`, `L_x s_x^1 = s_x^3`) this yields `M_N²/3 ≤ ⟨|ŝ^1(k)|²⟩/N + (βE(k))^{1/2} ⟨|ŝ^1(k)|²⟩^{1/2}`, hence `⟨|ŝ^1(k)|²⟩ ≥ (2M_N²/3)² / [(βE)^{1/2} + (βE + 4M_N²/(3N))^{1/2}]²`, and in the limit `⟨|ŝ^1(k)|²⟩ ≥ (M²/3)²/(β E(k))`.
++- G5 (the two-sided Green-function channel): for `β > 3√3π/8` and every fixed `k ≠ 0`, `(M²/3)²/(βE(k)) ≤ lim inf ⟨|ŝ^1(k)|²⟩ ≤ lim sup ⟨|ŝ^1(k)|²⟩ ≤ 1/(βE(k))`: the transverse structure factor of the ordered unsoldered static law is sandwiched between multiples of the lattice Green function's symbol. Contrast: the formation law (block 13, parabolic) and the soldered six-axis law (block 17, discrete order, no such channel).
++- The three standard mathematical imports named at definition level: the expansion of a smooth function in Legendre polynomials; the unitarity of the discrete transform on the torus; the integration-by-parts identity for a divergence-free field on the sphere (re-proved for polynomials, cited for smooth functions).
++- N-gate: the negative sentence is the *absence* of this channel elsewhere (blocks 13, 17), not re-proved here; this note's content is positive.
++
++**Lens pass (self-run panel).**
++- *"This is the 1976 infrared-bound theorem."* Yes, re-proved at scope for this rule with explicit constants, and paired with a zero-field Bogoliubov bound that uses the long-range-order parameter directly, which avoids the spontaneous-magnetization limit and its convexity argument.
++- *"The runner cannot execute sphere integrals exactly."* It executes the algebraic skeleton exactly: Legendre positivity, the torus Laplacian identities, the twist identity, the generator identities and integration by parts for polynomials, the second-derivative identity, the Green-function bound and the quadratic; every inequality's proof is in the note.
++- *"Is the exponential overlap the framework's rule?"* It is the unsoldered reading's product rule with a supplied overlap; named as such; the Born overlap is not positive-definite beyond `ℓ = 1` and is not treated.
++- *"What does the gravity node get?"* A record statistic (the transverse spin component of the ordered unsoldered static law) whose structure factor is bounded above and below by multiples of `1/E(k)`; not the exact normalization `1/(4π r)`.
++
++**Forbidden phrases (beyond the lane's standing list):** "phase transition", "the physical coupling", "converge", "emergent", "certified", "Goldstone theorem is derived" (the channel is exhibited, the theorem is the classical one).
++
++**Prior-art search at `origin/main`.** `git grep -l -iE "infrared bound|gaussian domination|bogoliubov|goldstone|heisenberg model|mermin"` → the axiom-first Coleman–Mermin–Wagner and Ward-normalized Bogoliubov notes (quantum Hamiltonians; the 2D no-SSB result), Gaussian domination in the gauge/clock lanes (link variables), Goldstone in the Higgs lanes; nothing on the sphere-valued static record law. Open PRs: none on it.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+index 6dfc9de13838b8fe1d6d593b83d0d31cd0763b93..e5960641eb7995559e2cb122a29a552f3b0119ed 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+@@ -25,3 +25,6 @@ Stacked on #8000 → #7999 → #7998 → main; all hand-offs. Block 04 = the two
+ Stacked on #8002 → #8000 → #7999 → #7998 → main; all hand-offs. Block 05 = the monotone-order class: one formation law for every linear extension of the product order (every rule); rows and columns path chains; the 2×2 corner law with corner independence; no right/down turning staircase is first-order Markov in its site values (proved for every nonconstant positive orbit triple under the declared product-rule monotone law); opposite corner classes give the same finite-rectangle law, with two distinct laws only at the executed 2×3 triples; the snake keeps rows and can lose column chains (column 0 survives on 3×3; on the executed 4×3 no column is a chain). Lens before the primary caught the supervisor's own wrong snake control. Historical checker: FIX FIRST on one forbidden mechanism sentence (false; deleted), nothing refuted in the theorems. Lock released.
+ 
+ Current source review found five further P2 groups, corrected in the canonical note and runner with their disposition in REVIEW_HISTORY.md. Same-session confirmation is pending; this appendix records an open review handoff.
++
++## 2026-09-15 block 19 opened for review as PR #8153 (supervisor)
++Independent PR against `main` (`2ed54cb83a`); parent on `main`: the possibility-covariance note. The lane assessment after block 18: blocks 13 and 17 leave the gravity node's kernel one place to come from — the static reading with a continuous possibility symmetry. Block 19 = for the unsoldered sphere static law with the exponential overlap: Legendre positivity gives reflection positivity through bond planes (G1); gradient twists are site shifts, so Gaussian domination and the infrared bound `⟨|ŝ^e(k)|²⟩ ≤ 1/(βE(k))` follow (G2); the sum rule gives long-range order `M² ≥ 1 − 3G(0)/β`, `G(0) ≤ √3π/8`, for `β > 3√3π/8` (G3); a classical Bogoliubov argument at zero field against the long-range-order parameter gives `⟨|ŝ^1(k)|²⟩ ≥ (M²/3)²/(βE(k))` in the limit (G4); so the transverse structure factor is sandwiched between multiples of the lattice Green function's symbol (G5) — the massless channel of a broken continuous symmetry, absent for the formation law and the soldered six-axis law. Seats supervisor-run; refuting pass consistent on four routes. Certificate 17/17; 13 mutations in-family; cache pinned; gates: pipeline ×2, audit_lint strict OK, vocab clean, diff --check clean, only the manifest kept from generated audit data. Lock held (refreshed) for the next assessment.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
+index 9ccaee75bb420ef215668df8c5bf9b8a5f8fca7f..f1eb0fd0b9928a803876146b0624c48fde306e5b 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
+@@ -13,3 +13,9 @@ Policy: reference and converge, never borrow; every statement used is re-proved
+ - Compactness of a countable product of finite sets; Kolmogorov / Carathéodory extension on the cylinder algebra; the passage of finite-window conditional identities to a limit — re-proved at scope (Theorem C2, existence only).
+ - The Pickard random field / Markov-mesh (unilateral Markov field) construction — Abend, Harley and Kanal (1965); Pickard (1977, 1980): a two-parent unilateral construction whose rows and columns are Markov chains when the corner-pair condition holds. The framework's row sweep under the records-only reading is an instance: `Z_2 = Z_1^2 K^2` with `K` symmetric doubly stochastic is the condition; Theorem E re-proves the row statement natively (the column statement is a lead for the next block).
+ - Toom and Vasilyev (1970s): product-form and Markov invariant measures of probabilistic cellular automata — reference only.
++
++## Block 19 (2026-09-15) — references named; three standard theorems imported at definition level
++- Fröhlich–Simon–Spencer (1976): the infrared bound and long-range order for the classical three-component model — re-proved at scope for this rule with explicit constants.
++- Fröhlich–Israel–Lieb–Simon (1978) and Biskup's lecture notes: the reflection-positivity route — re-proved for bond planes with Legendre positivity.
++- Mermin (1967): the classical Bogoliubov inequality — re-proved at zero field against the long-range-order parameter.
++- The Legendre expansion with the addition theorem; the unitarity of the torus transform; integration by parts for the rotation field on the sphere — imported at definition level.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+index 2977b7f9903b58f95963491e44cb244ee894ab84..7f84c98857d655fdb0920b7aa848a9db25527614 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+@@ -8,3 +8,6 @@ Routes read at their proofs, not their headlines.
+ | The consistency-first kernel K* and the frontier-process gate (bridge exercise 2026-08-26) | `archive/campaigns/exercise-bridge-adoption-20260826/SYNTHESIS.md` | On the gravity lane's Gaussian fixture, the sliding-frontier process marginals differ from the static Gram weights by an extent-stable gap. | Fixture-level, floats; this block states the axiom-level finite distinction; it does not explain the gate. |
+ | Convex-consistency (affine rule output) vs product form (R136/T212/T213) | same packet | Normalizer constant iff no coupling (rank argument; Funk–Hecke on the sphere). | Re-proved exactly on the menu as the two-neighbor normalizer factorization; used for T2(b). |
+ | Binary full-conditional compatibility (landed 2026-08-10) | `docs/ADMISSIBILITY_BINARY_FULL_CONDITIONAL_COMPATIBILITY_ISING_ACTION_AXIOM_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md` | Static half on binary menus; excludes formation dynamics by its own boundary. | Upstream; generalized here; the excluded object is this block's subject. |
++
++## Block 19 (2026-09-15) — a positive result placed against two negatives
++- The transverse channel of the ordered unsoldered static law carries the lattice Green function's symbol (G5). The negatives it completes — no such kernel from the formation law (block 13) and none from the soldered six-axis static law (block 17) — are not re-proved here. Escapes named for the N-gate: couplings below `3√3π/8` (open); the Born overlap (open); the normalization (open).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+index 74d2f60bae1b3e2de1ca2cf7ade91cf9e93da3b7..e3d253388c35f85332aa006d8b925815e7609fc7 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+@@ -78,3 +78,12 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
+ 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
+ 4. **The silent triples by a non-criterion route** (unchanged; heavy).
+ 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
++
++## Refresh at block 19 opening (2026-09-15)
++
++Block 19 opened for review (independent PR against main): the Green-function channel of the unsoldered static law. Ranked next:
++
++1. **The kernel's normalization** (the exact constant of the transverse correlator; a spin-wave lower bound) — hard.
++2. **Sharpen block 17's constants; the band below `3√3π/8` here** — medium.
++3. **Value-dependent order laws (block 16, X4); the stability theorem (block 12, S6)** — hard; unchanged.
++4. **Small corollaries of blocks 11–13** — unchanged.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block19.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block19.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..5981bd2582502651a94009c3bd0059ee72bd1066
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block19.md
+@@ -0,0 +1,16 @@
++# RESULTS — block 19: the unsoldered static law's ordered phase carries the lattice Green function in its transverse channel (2026-09-15)
++
++**Deliverables (branch `physics-loop/admissibility-induced-law-block19-sphere-static-law-goldstone-green-function-channel-20260915`, independent PR against `main` at `2ed54cb83a`; parent on `main`: the possibility-covariance note of 2026-09-14):** the note `docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_ORDERED_PHASE_TRANSVERSE_CHANNEL_CARRIES_THE_LATTICE_GREEN_FUNCTION_INFRARED_AND_BOGOLIUBOV_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md`; the runner `scripts/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.py` (17 checks, 13 mutations, exact symbolic arithmetic); the pinned cache; the control and the refuting pass with outputs (`specs/supervisor_control_block19_sphere_static.py`, `specs/supervisor_control_block19_refuter.py`); `GOAL_block19.md`; `CHECKER_block19_findings.md`; this record. Blocks 06–18 remain open as PRs #8034, #8035, #8138–#8142, #8146–#8152.
++
++**Why this block.** Blocks 13 and 17 leave the gravity node's kernel (#8093) one place to come from inside the axioms' readings: the static reading with a continuous possibility symmetry. This block shows that reading delivers it.
++
++## Result, in one paragraph
++For the unsoldered static law on the sphere with the exponential overlap `e^{β s·s'}` on tori of even side: the Legendre coefficients of `e^{βt}` are positive (Rodrigues and `ℓ` integrations by parts), so the cross-plane weight is a positive-definite kernel and the law is reflection positive through bond planes with arbitrary single-site factors (G1). A gradient twist `(φ_x − φ_y)e` is a site shift, so iterated bond-plane reflection positivity gives Gaussian domination `Z(φ) ≤ Z(0)`, and expanding at a plane wave — a Laplacian eigenfunction with eigenvalue `E(k) = Σ 2(1 − cos k_i)` — gives the infrared bound `⟨|ŝ^e(k)|²⟩ ≤ 1/(βE(k))` for every component and `k ≠ 0` (G2). The sum rule then gives long-range order `M² ≥ 1 − 3G(0)/β` with `G(0) ≤ √3π/8`, so `M² > 0` for `β > 3√3π/8 < 21/10` (G3). The classical Bogoliubov inequality, run at zero field with `F = ŝ^1(k)·m̂` against the long-range-order parameter itself (integration by parts on the sphere twice; the single-bond second derivative `|c_x − c_y|²(s_x^1 s_y^1 + s_x^3 s_y^3)`; `⟨|L log w|²⟩ ≤ βNE(k)`), gives `⟨|ŝ^1(k)|²⟩ ≥ (2M_N²/3)²/[(βE)^{1/2} + (βE + 4M_N²/(3N))^{1/2}]²` (G4). Hence for `β > 3√3π/8` and every fixed `k ≠ 0`, `(M²/3)²/(βE(k)) ≤ lim inf ⟨|ŝ^1(k)|²⟩ ≤ 1/(βE(k))`: the transverse structure factor is sandwiched between multiples of the lattice Green function's symbol — the massless channel of a broken continuous symmetry, which the formation law (parabolic, block 13) and the soldered six-axis static law (discrete order, block 17) do not have (G5).
++
++## Certificate
++- Runner: `TOTAL: PASS=17 FAIL=0`; 13 mutations each in its family; no floating-point literal or conversion; classical names only in the allowed sections (the Legendre/Rodrigues and Bogoliubov namings in their theorems' statements are allowed explicitly).
++- Refuting pass (`CHECKER_block19_findings.md`): the Legendre coefficients by the orthogonality/Taylor route, the gradient sum on a `6×4×4` torus, the second-derivative identity with a second generator axis, the cosine inequality by a Taylor lower bound and the ball integral in spherical coordinates — all consistent.
++- Claim type `bounded_theorem`; status `bounded-support`; trace `upstream_support`; audit required.
++
++## Not claimed
++The kernel's normalization (the constant in front of `1/(4πr)`); couplings below `3√3π/8`; the Born overlap (not Gaussian-form); any reading, rule or coupling as physical.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+index 08d17f0940e3756c94ff724c8ff531adc9e029ce..792e650f6b2c0dc6b393590a5eee4b95d749bf94 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+@@ -199,3 +199,16 @@ executed against the four declared inputs on current main. The original
+ 23-mutation census and historical pipeline receipts are not claimed as
+ fresh checks. Original-reviewer confirmation is pending; no audit status is
+ applied, and only the coordinator may perform authorized integration.
++
++## block 19 — V1-V5 (supervisor, 2026-09-15)
++- V1: #8093's gravity node ("a covariant scalar record statistic whose two-point function is the lattice Green function") after blocks 13 and 17 (PRs #8147, #8151) excluded the formation law and the soldered six-axis static law; the campaign's soldering fork.
++- V2: the lens pass in `GOAL_block19.md` ("the 1976 theorem" — re-proved at scope with a zero-field Bogoliubov economy; "sphere integrals are not exact" — the algebraic skeleton is; "is the exponential overlap the framework's rule" — a supplied overlap under the unsoldered product rule; "what the gravity node gets" — a sandwich, not the normalization).
++- V3: G1–G5 proved; the skeleton executed exactly (17 checks, 13 mutations); the refuting pass agreed on four routes; the control caught the generator's sign convention before the primary.
++- V4: no reading, rule or coupling selected; the negatives of blocks 13 and 17 not re-proved; the normalization not claimed.
++- V5: consumers named — #8093's assembly (the gravity node's input exists under the unsoldered static reading; the soldering fork's physical stake); the campaign's queue.
++
++## block 19 — supervisor lens pass, primary, refuting pass and fold (2026-09-15)
++Lens (`GOAL_block19.md`): as V2. Primary: the note and the runner (17 checks, 13 mutations). Refuting pass (`CHECKER_block19_findings.md`): the Legendre coefficients by the orthogonality route with a truncated Taylor series; the gradient sum on a `6×4×4` torus at a third wavevector; the second-derivative identity with the generator about `e_1`; the cosine inequality by a Taylor lower bound and the ball integral in spherical coordinates — all consistent. Fold: the generator's sign (`L s^3 = −s^1`, `L s^1 = s^3`) fixed in the contract before the primary. Author checks only; independent review pending.
++
++## block 19 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
++1 self-containment: PASS — inputs: this note, the axioms memo, the possibility-covariance note, all on `main` at `2ed54cb83a`; nothing pinned from a branch or PR (PRs #8147/#8151 are context only). 2 cache/execution: PASS. 3 claim-scope honesty: PASS — the readings and the overlap named as supplied; the normalization, the band below the threshold and the Born overlap marked open; the standard theorems named at definition level. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
+index 9b1cd3a27f32295eccf43bf396e38697cba33b16..2fcd437c86d6e6153ee2c5f0acaa5bdc90cc26aa 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
+@@ -84,3 +84,9 @@ git grep -l -iE "phase transition.*(menu|product rule)|(menu|product rule).*phas
+ | the 26 `coupling` hits (e.g. `BBS_RG_BANACH_CONTRACTION_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-10.md`, `FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md`) | non-matching | "coupling" as a physical coupling constant or RG contraction; no coupling of Markov chains for a menu rule |
+ 
+ Target state after the matched-hit review: **open** — no note on `origin/main` computes the one-site interdependence coefficient of the menu rule, states its uniqueness region, or re-proves the criterion.
++
++## Block 19 (2026-09-15) — prior-art search and routes (independent PR against main; blocks 06–18 are open PRs #8034, #8035, #8138–#8142, #8146–#8152)
++Searched commit: `origin/main` = `2ed54cb83a`.
++- `git grep -l -iE "infrared bound|gaussian domination|bogoliubov|goldstone|heisenberg model|mermin" origin/main -- 'docs/*.md'` → the axiom-first Coleman–Mermin–Wagner and Ward-normalized Bogoliubov notes (quantum Hamiltonians; 2D no-SSB), Gaussian domination in the gauge/clock lanes (link variables), Goldstone in the Higgs lanes; nothing on the sphere-valued static record law.
++- The gravity lane's Green function (`GRAVITY_CLEAN_DERIVATION_NOTE.md`; the Maradudin asymptotic bridge): the kernel this block locates in record statistics.
++Classification: **open after the matched-hit review.** Routes: V-A reflection positivity through bond planes via Legendre positivity (G1) — chosen; V-B Gaussian domination with gradient twists (G2) — chosen; V-C the sum rule with an elementary Green-function bound (G3) — chosen; V-D the classical Bogoliubov inequality at zero field against `M_N²` (G4) — chosen (avoids the spontaneous-magnetization limit); V-E the exact normalization of the kernel — not attempted; V-F the Born overlap — not attempted (not of Gaussian form).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+index e16642020759d3d57935cd6d037d382fc6573bf0..7fe7d01fe8577ad967fef527050beb0afe52c809 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+@@ -105,3 +105,14 @@ source_review_correction:
+ # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
+ # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
+ # audit_status: "unset; no audit invoked or verdict applied by this source correction"
++
++# ---------------------------------------------------------------- block 19 close (2026-09-15)
++# block: 19
++# branch: physics-loop/admissibility-induced-law-block19-sphere-static-law-goldstone-green-function-channel-20260915 (independent; base origin/main 2ed54cb83a; blocks 06-18 are open PRs #8034, #8035, #8138-#8142, #8146-#8152)
++# pr_status: opened for review — PR #8153 (base = main); hand-off; never merged by the campaign; not a main landing
++# final_certificate: "TOTAL: PASS=17 FAIL=0; 13 mutations, census 13/13 in-family; refuting pass consistent on four routes; gates: see HANDOFF.md"
++# seats: "supervisor-run: control -> contract with a lens pass -> primary (G1-G5, runner) -> refuting pass (orthogonality route; 6x4x4 torus; second generator axis; second inequality) -> fold"
++# review_findings: "unsoldered sphere static law with e^{beta s.s'}: Legendre coefficients positive -> bond-plane RP; gradient twists are site shifts -> Gaussian domination -> infrared bound <|s^e(k)|^2> <= 1/(beta E(k)); sum rule -> M^2 >= 1 - 3G(0)/beta, G(0) <= sqrt(3) pi/8 -> LRO for beta > 3 sqrt(3) pi/8 (< 21/10); zero-field Bogoliubov with F = s^1(k) m-hat -> <|s^1(k)|^2> >= (M^2/3)^2/(beta E(k)) in the limit; sandwich (M^2/3)^2/(beta E) <= S^perp <= 1/(beta E): the lattice Green function's symbol in the transverse channel; absent for the formation law (13) and the six-axis static law (17)"
++# strongest_unresolved_proof_obligation: "the normalization of the kernel; the band below the threshold; the Born overlap"
++# next_exact_action: "queue refresh 2026-09-15 (block 19 opening): normalization; constants; X4; S6"
++# lock: held (owner: don't stop; assess the next lane at each conclusion)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+index 8f432e2cd2631c0cc6a5121f932b305f16d3a023..8092882d0da88fa57b5fd444edf3ee79cc7cdad4 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+@@ -63,3 +63,14 @@ reachability_to_target: supports
+ artifact_role: theorem
+ next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
+ ```
++
++# Trace gate — block 19, at PR opening (2026-09-15)
++```yaml
++trace_class: upstream_support
++target_claim_id: null
++target_blocker_text: "#8093's gravity node: a record statistic whose two-point function is the lattice Green function; blocks 13 and 17 excluded the formation law and the soldered six-axis static law"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem
++next_trace_action: "the channel is located: the transverse structure factor of the ordered unsoldered static law (exponential overlap, beta > 3 sqrt(3) pi/8) is sandwiched between multiples of 1/E(k). Next: the normalization; the band below the threshold; the Born overlap. Consumers: #8093's assembly; the campaign's queue"
++```
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_refuter.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_refuter.out.txt
+new file mode 100644
+index 0000000000000000000000000000000000000000..8872011de96f8da741e28a827d99506fe55bd81b
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_refuter.out.txt
+@@ -0,0 +1,4 @@
++R1 orthogonality route (Taylor to order 40) agrees with the Rodrigues integrals for l <= 3 at beta = 1, 3, all positive: True
++R2 6x4x4 torus at k = (pi/3,0,0): E = 1 ; sum_b (dpsi)^2 = 48 ; E sum psi^2 = 48 ; equal: True ; N/2 = 48.0
++R3 second-derivative identity with the generator about e_1 (transverse pair (s^2, s^3)): True
++R4 cosine inequalities at the sample points: True ; the ball integral in spherical coordinates = 4*sqrt(3)*pi**2 = 4 pi sqrt(3) pi: True
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_refuter.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_refuter.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..0738363ab65c6acfa4d8c43af755ec190ab9f803
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_refuter.py
+@@ -0,0 +1,64 @@
++"""Refuting pass, block 19 (supervisor seat, disjoint machinery from the runner's checks):
++(R1) the Legendre coefficients of e^{beta t} by the generating-function route: the series coefficients of e^{beta t} expanded in
++     P_l via the orthogonality relation applied to the Taylor series in t, compared with the Rodrigues integrals, l <= 3,
++     at beta = 1 and beta = 3 exactly (modified spherical Bessel forms);
++(R2) the gradient sum by direct bond enumeration on a 6x4x4 torus at k = (pi/3, 0, 0): sum over bonds (dpsi)^2 versus E(k) sum psi^2
++     with E = 2(1 - cos(pi/3)) = 1;
++(R3) the single-bond second-derivative identity with the generator about e_1 instead of e_2 (the transverse pair becomes (s^2, s^3));
++(R4) the integral bound by a second inequality: E(k) >= (2/pi^2) |k|^2 ... no: use 1 - cos u >= u^2/(2) - u^4/24 (Taylor lower bound) to
++     confirm the sample-point inequality independently at the 21 points; and the ball integral by spherical coordinates symbolically.
++Run from the pack: the runner is imported from the repository's scripts/ directory."""
++import importlib
++import sys
++from itertools import product
++from pathlib import Path
++
++import sympy as sp
++
++ROOT = Path(__file__).resolve().parents[5]
++sys.path.insert(0, str(ROOT / "scripts"))
++r19 = importlib.import_module("admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15")
++t = sp.symbols("t", real=True)
++ok1 = True
++for b in (1, 3):
++    for l in range(4):
++        # orthogonality route: a_l = (2l+1)/2 int e^{bt} P_l dt computed from the Taylor series of e^{bt} to order 40
++        series = sum(sp.Rational(b ** n, sp.factorial(n)) * t ** n for n in range(41))
++        a_series = sp.Rational(2 * l + 1, 2) * sp.integrate(series * sp.legendre(l, t), (t, -1, 1))
++        a_rod = sp.Rational(2 * l + 1, 2) * sp.Integer(b) ** l / (2 ** l * sp.factorial(l)) * sp.integrate((1 - t ** 2) ** l * sp.exp(b * t), (t, -1, 1))
++        gap = abs(sp.N(a_series - a_rod, 30))
++        ok1 = ok1 and gap < sp.Rational(1, 10 ** 12) and a_rod > 0
++print("R1 orthogonality route (Taylor to order 40) agrees with the Rodrigues integrals for l <= 3 at beta = 1, 3, all positive:", ok1)
++L = (6, 4, 4)
++sites = list(product(range(L[0]), range(L[1]), range(L[2])))
++def nbrs(x):
++    out = []
++    for i in range(3):
++        for d in (1, -1):
++            y = list(x); y[i] = (x[i] + d) % L[i]; out.append(tuple(y))
++    return out
++k = (sp.pi / 3, 0, 0)
++E = sum(2 * (1 - sp.cos(ki)) for ki in k)
++psi = {x: sp.cos(sum(ki * xi for ki, xi in zip(k, x))) for x in sites}
++bonds = {tuple(sorted((x, y))) for x in sites for y in nbrs(x)}
++grad2 = sp.simplify(sum((psi[x] - psi[y]) ** 2 for (x, y) in bonds))
++sum2 = sp.simplify(sum(psi[x] ** 2 for x in sites))
++print("R2 6x4x4 torus at k = (pi/3,0,0): E =", E, "; sum_b (dpsi)^2 =", grad2, "; E sum psi^2 =", sp.simplify(E * sum2), "; equal:", sp.simplify(grad2 - E * sum2) == 0, "; N/2 =", len(sites) / 2)
++sx = sp.Matrix(sp.symbols("x1 x2 x3", real=True)); sy = sp.Matrix(sp.symbols("y1 y2 y3", real=True))
++e1 = sp.Matrix([1, 0, 0])
++def Lg(v, F):
++    w = e1.cross(v)
++    return sum(w[i] * sp.diff(F, v[i]) for i in range(3))
++cx, cy = sp.symbols("c_x c_y")
++dot = sx.dot(sy)
++Lc = lambda F: cx * Lg(sx, F) + cy * Lg(sy, F)
++Lcb = lambda F: sp.conjugate(cx) * Lg(sx, F) + sp.conjugate(cy) * Lg(sy, F)
++second = -Lc(Lcb(dot))
++target = (cx - cy) * (sp.conjugate(cx) - sp.conjugate(cy)) * (sx[1] * sy[1] + sx[2] * sy[2])
++print("R3 second-derivative identity with the generator about e_1 (transverse pair (s^2, s^3)):", sp.simplify(sp.expand(second - target)) == 0)
++u = sp.symbols("u", real=True)
++samples = [sp.Rational(i, 10) * sp.pi for i in range(-10, 11)]
++ok4 = all(sp.simplify(1 - sp.cos(x) - 2 * x ** 2 / sp.pi ** 2) >= 0 for x in samples) and all((1 - sp.cos(x)) >= (x ** 2 / 2 - x ** 4 / 24) for x in samples if abs(x) <= sp.pi)
++r, th, ph = sp.symbols("r theta phi", positive=True)
++ball = sp.integrate(sp.integrate(sp.integrate(sp.sin(th), (ph, 0, 2 * sp.pi)), (th, 0, sp.pi)), (r, 0, sp.sqrt(3) * sp.pi))  # int d^3k/|k|^2 = int r^2 sin / r^2
++print("R4 cosine inequalities at the sample points:", ok4, "; the ball integral in spherical coordinates =", sp.simplify(ball), "= 4 pi sqrt(3) pi:", sp.simplify(ball - 4 * sp.pi * sp.sqrt(3) * sp.pi) == 0)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_sphere_static.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_sphere_static.out.txt
+new file mode 100644
+index 0000000000000000000000000000000000000000..a164b6291954960ea2e5300a485503de064950aa
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_sphere_static.out.txt
+@@ -0,0 +1,14 @@
++(1) Legendre coefficients of e^{beta t}:
++  l=0: direct == Rodrigues form: True; the Rodrigues integrand is positive on (-1,1)
++  l=1: direct == Rodrigues form: True; the Rodrigues integrand is positive on (-1,1)
++  l=2: direct == Rodrigues form: True; the Rodrigues integrand is positive on (-1,1)
++  l=3: direct == Rodrigues form: True; the Rodrigues integrand is positive on (-1,1)
++  l=4: direct == Rodrigues form: True; the Rodrigues integrand is positive on (-1,1)
++(2) k=(pi/2, 0, 0): (-Delta psi) = E psi on the 4^3 torus: True; sum_b (dpsi)^2 = E sum psi^2: True; E = 2, sum psi^2 = 32
++(2) k=(pi/2, pi/2, 0): (-Delta psi) = E psi on the 4^3 torus: True; sum_b (dpsi)^2 = E sum psi^2: True; E = 4, sum psi^2 = 32
++(4) L_x(s_x.s_y) == e2.(s_x x s_y): True ; L_y(s_x.s_y) == -e2.(s_x x s_y): True
++    L s^3 = s^1: False ; L s^1 = -s^3: False
++    -L Lbar (s_x.s_y) == |c_x - c_y|^2 (s_x^1 s_y^1 + s_x^3 s_y^3): True
++    integration by parts on the sphere for three polynomials: True
++(5) 1 - cos u >= 2u^2/pi^2 at 21 sample points: True ; G(0) bound sqrt(3) pi/8 = 0.680174761587832 ; threshold 3 sqrt(3) pi/8 = 2.04052428476350 < 21/10: True
++(6) the positive root of u^2/N + sqrt(bE) u - M^2/3 = 0 equals the displayed form: True ; limit N->oo: M**2/(3*sqrt(bE))
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_sphere_static.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_sphere_static.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..debe0e9f3a2223911c71431a41851f92537e9870
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block19_sphere_static.py
+@@ -0,0 +1,71 @@
++"""Control, block 19 (supervisor): the sphere static law with overlap e^{beta t} — symbolic identities.
++(1) Legendre coefficients of e^{beta t} are positive: a_l = (beta^l/(2^l l!)) int_{-1}^{1} (1-t^2)^l e^{beta t} dt, l = 0..4 (Rodrigues + parts);
++(2) gradient twist identity; plane-wave Laplacian on a torus: sum_{y~x}(psi_x - psi_y) = E(k) psi_x with E = 2 sum (1 - cos k_i);
++    sum over bonds (psi_x - psi_y)^2 = E(k) sum_x psi_x^2 (exact on a 4x4x4 torus at k = (pi/2, 0, 0) and (pi/2, pi/2, 0));
++(3) the second-order expansion of the twisted weight: beta^2 <X^2> <= beta sum_b (dpsi)^2 where X = sum_b dpsi (s_x - s_y).e;
++(4) generator identities on a bond: L_x (s_x . s_y) = e2 . (s_x x s_y), L_y (s_x . s_y) = -e2 . (s_x x s_y); L s^3 = s^1, L s^1 = -s^3;
++    integration by parts on the sphere: int (e2 x s).grad F dsigma = 0 for polynomial F;
++    second derivative: -(c_x L_x + c_y L_y)(cbar_x L_x + cbar_y L_y)(s_x . s_y) = |c_x - c_y|^2 (s_x^1 s_y^1 + s_x^3 s_y^3);
++(5) the Green-function bound: 1 - cos u >= 2u^2/pi^2 on [-pi, pi]; int_{box} d^3k/((2pi)^3 E(k)) <= sqrt(3) pi/8; threshold 3 sqrt(3) pi/8 < 21/10;
++(6) the Bogoliubov quadratic: u^2/N + sqrt(beta E) u - M^2/3 >= 0  =>  u >= (2M^2/3)/(sqrt(beta E) + sqrt(beta E + 4M^2/(3N)))."""
++import sympy as sp
++from itertools import product
++t, beta = sp.symbols("t beta", positive=True)
++print("(1) Legendre coefficients of e^{beta t}:")
++for l in range(5):
++    P = sp.legendre(l, t)
++    direct = sp.integrate(sp.exp(beta * t) * P, (t, -1, 1))
++    rod = beta ** l / (2 ** l * sp.factorial(l)) * sp.integrate((1 - t ** 2) ** l * sp.exp(beta * t), (t, -1, 1))
++    print(f"  l={l}: direct == Rodrigues form: {sp.simplify(direct - rod) == 0}; the Rodrigues integrand is positive on (-1,1)")
++# (2) torus Laplacian identities
++L = 4
++sites = list(product(range(L), repeat=3))
++def nbrs(x):
++    out = []
++    for i in range(3):
++        for d in (1, -1):
++            y = list(x); y[i] = (x[i] + d) % L; out.append(tuple(y))
++    return out
++for k in ((sp.pi / 2, 0, 0), (sp.pi / 2, sp.pi / 2, 0)):
++    E = sum(2 * (1 - sp.cos(ki)) for ki in k)
++    psi = {x: sp.cos(sum(ki * xi for ki, xi in zip(k, x))) for x in sites}
++    lap_ok = all(sp.simplify(sum(psi[x] - psi[y] for y in nbrs(x)) - E * psi[x]) == 0 for x in sites)
++    bonds = {tuple(sorted((x, y))) for x in sites for y in nbrs(x)}
++    grad2 = sum((psi[x] - psi[y]) ** 2 for (x, y) in bonds)
++    sum2 = sum(psi[x] ** 2 for x in sites)
++    print(f"(2) k={k}: (-Delta psi) = E psi on the 4^3 torus: {lap_ok}; sum_b (dpsi)^2 = E sum psi^2: {sp.simplify(grad2 - E * sum2) == 0}; E = {E}, sum psi^2 = {sum2}")
++# (4) generator identities
++sx = sp.Matrix(sp.symbols("x1 x2 x3", real=True)); sy = sp.Matrix(sp.symbols("y1 y2 y3", real=True))
++e2 = sp.Matrix([0, 1, 0])
++def Lgen(v, F):
++    """rotation generator about e2 acting on the vector variable v: (e2 x v) . grad_v F"""
++    w = e2.cross(v)
++    return sum(w[i] * sp.diff(F, v[i]) for i in range(3))
++dot = sx.dot(sy)
++print("(4) L_x(s_x.s_y) == e2.(s_x x s_y):", sp.simplify(Lgen(sx, dot) - e2.dot(sx.cross(sy))) == 0, "; L_y(s_x.s_y) == -e2.(s_x x s_y):", sp.simplify(Lgen(sy, dot) + e2.dot(sx.cross(sy))) == 0)
++print("    L s^3 = s^1:", sp.simplify(Lgen(sx, sx[2]) - sx[0]) == 0, "; L s^1 = -s^3:", sp.simplify(Lgen(sx, sx[0]) + sx[2]) == 0)
++cx, cy = sp.symbols("c_x c_y")
++Lc = lambda F: cx * Lgen(sx, F) + cy * Lgen(sy, F)
++Lcbar = lambda F: sp.conjugate(cx) * Lgen(sx, F) + sp.conjugate(cy) * Lgen(sy, F)
++second = -Lc(Lcbar(dot))
++target = (cx - cy) * (sp.conjugate(cx) - sp.conjugate(cy)) * (sx[0] * sy[0] + sx[2] * sy[2])
++print("    -L Lbar (s_x.s_y) == |c_x - c_y|^2 (s_x^1 s_y^1 + s_x^3 s_y^3):", sp.simplify(sp.expand(second - target)) == 0)
++# integration by parts on the sphere for polynomials
++th, ph = sp.symbols("theta phi", real=True)
++svec = sp.Matrix([sp.sin(th) * sp.cos(ph), sp.sin(th) * sp.sin(ph), sp.cos(th)])
++ok_ibp = True
++for F in (sx[0] * sx[2], sx[0] ** 2 * sx[1], sx[2] ** 3):
++    LF = Lgen(sx, F).subs({sx[0]: svec[0], sx[1]: svec[1], sx[2]: svec[2]})
++    val = sp.integrate(sp.integrate(LF * sp.sin(th), (th, 0, sp.pi)), (ph, 0, 2 * sp.pi))
++    ok_ibp = ok_ibp and sp.simplify(val) == 0
++print("    integration by parts on the sphere for three polynomials:", ok_ibp)
++# (5) Green-function bound
++u = sp.symbols("u", real=True)
++samples = [sp.Rational(i, 10) * sp.pi for i in range(-10, 11)]
++ok_cos = all(sp.simplify(1 - sp.cos(x) - 2 * x ** 2 / sp.pi ** 2) >= 0 for x in samples)
++G_bound = sp.sqrt(3) * sp.pi / 8
++print("(5) 1 - cos u >= 2u^2/pi^2 at 21 sample points:", ok_cos, "; G(0) bound sqrt(3) pi/8 =", sp.N(G_bound), "; threshold 3 sqrt(3) pi/8 =", sp.N(3 * G_bound), "< 21/10:", sp.N(3 * G_bound) < 2.1)
++# (6) quadratic
++uu, N, bE, M = sp.symbols("u N bE M", positive=True)
++root = (2 * M ** 2 / 3) / (sp.sqrt(bE) + sp.sqrt(bE + 4 * M ** 2 / (3 * N)))
++print("(6) the positive root of u^2/N + sqrt(bE) u - M^2/3 = 0 equals the displayed form:", sp.simplify((root ** 2 / N + sp.sqrt(bE) * root - M ** 2 / 3)) == 0, "; limit N->oo:", sp.limit(root, N, sp.oo))
+diff --git a/docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_ORDERED_PHASE_TRANSVERSE_CHANNEL_CARRIES_THE_LATTICE_GREEN_FUNCTION_INFRARED_AND_BOGOLIUBOV_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md b/docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_ORDERED_PHASE_TRANSVERSE_CHANNEL_CARRIES_THE_LATTICE_GREEN_FUNCTION_INFRARED_AND_BOGOLIUBOV_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..47173a7e7fd581979e230fae2569c515fef55beb
+--- /dev/null
++++ b/docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_ORDERED_PHASE_TRANSVERSE_CHANNEL_CARRIES_THE_LATTICE_GREEN_FUNCTION_INFRARED_AND_BOGOLIUBOV_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md
+@@ -0,0 +1,329 @@
++---
++claim_id: admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_carries_the_lattice_green_function_infrared_and_bogoliubov_bounds_bounded_theorem_note_2026-09-15
++claim_type: bounded_theorem
++claim_scope: "For the static law of the exponential zonal rule on the pure-state sphere under the unsoldered reading — the torus law proportional to prod_{<xy>} exp(beta s_x . s_y) with the uniform surface measure — with the transform s^(k) = N^{-1/2} sum_x e^{ikx} s_x, the Laplacian symbol E(k) = sum_i 2(1 - cos k_i) and the long-range-order parameter M_N^2 = N^{-2} <|sum_x s_x|^2>: (G1) the Legendre coefficients of exp(beta t) are positive, so the law is reflection positive for reflections through planes bisecting bonds, with arbitrary single-site factors (proved; executed symbolically for l <= 4); (G2) Gaussian domination with gradient twists holds, Z(phi) <= Z(0), and yields the infrared bound <|s^e(k)|^2> <= 1/(beta E(k)) for every component and every k != 0 (proved; the twist and plane-wave identities executed exactly on a 4^3 torus); (G3) the sum rule gives M_N^2 >= 1 - (3/beta) N^{-1} sum_{k != 0} 1/E(k), whose limit is 1 - 3 G(0)/beta with G(0) <= sqrt(3) pi/8, so long-range order holds for beta > 3 sqrt(3) pi/8 (below 21/10) (proved; executed); (G4) the classical Bogoliubov inequality at zero field, with the rotation generator and integration by parts on the sphere, gives <|s^1(k)|^2> >= (2 M_N^2/3)^2 / [(beta E)^{1/2} + (beta E + 4 M_N^2/(3N))^{1/2}]^2 for k != 0 (proved; the generator, integration-by-parts and second-derivative identities executed symbolically); (G5) hence for beta > 3 sqrt(3) pi/8 and every fixed k != 0 the transverse structure factor is sandwiched between (M^2/3)^2/(beta E(k)) and 1/(beta E(k)): the ordered unsoldered static law carries the lattice Green function's symbol in its transverse channel, which the formation law (parabolic) and the soldered six-axis law (discrete order) do not (proved). Three standard mathematical imports named at definition level; no coupling, reading or rule is selected as physical; exact symbolic arithmetic throughout."
++upstream_dependencies:
++  - minimal_axioms
++  - possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14
++runner: scripts/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.py
++---
++
++# The unsoldered static law's ordered phase carries the lattice Green function in its transverse channel: an infrared bound above, a zero-field Bogoliubov bound below, and long-range order for `β > 3√3π/8`
++
++**Date:** 2026-09-15
++**Type:** bounded_theorem
++**Status:** bounded-support (exact; conditional on the named supplied readings; unaudited)
++
++## Result up front
++
++Where can the repository's Coulomb-type kernel come from, inside the axioms'
++readings? Block 13 showed a record-by-record law spreads correlations like
++heat, never like `1/r`; block 17 showed the six-axis static law either forgets
++at short range or orders with a discrete symmetry, which has no massless
++channel. That leaves one candidate: the static law read with a *continuous*
++possibility symmetry — records on the sphere, the rule covariant under all
++internal rotations, the overlap `e^{β s·s'}`. This note shows that candidate
++delivers. Its torus law is reflection positive through bond planes because
++the Legendre coefficients of `e^{βt}` are positive; reflection positivity
++gives Gaussian domination, and Gaussian domination bounds every component's
++structure factor above by `1/(βE(k))`, the lattice Laplacian's inverse symbol.
++Summing over modes forces long-range order once `β` exceeds an explicit
++constant. And a classical Bogoliubov argument, run at zero field against the
++long-range-order parameter itself, bounds the transverse structure factor
++*below* by a multiple of the same `1/(βE(k))`. So in the ordered phase the
++transverse record correlator is the lattice Green function up to constants:
++the massless channel that a broken continuous symmetry must have. The
++formation law cannot produce it and the six-axis static law cannot either;
++this reading can.
++
++Exactly: `a_ℓ(β) > 0` (G1); `⟨|ŝ^e(k)|²⟩ ≤ 1/(βE(k))` (G2);
++`M² ≥ 1 − 3G(0)/β`, `G(0) ≤ √3π/8` (G3);
++`⟨|ŝ^1(k)|²⟩ ≥ (2M_N²/3)²/[(βE)^{1/2} + (βE + 4M_N²/(3N))^{1/2}]²` (G4);
++`(M²/3)²/(βE(k)) ≤ lim inf ⟨|ŝ^1(k)|²⟩ ≤ 1/(βE(k))` for `β > 3√3π/8` (G5).
++Executed with exact symbolic arithmetic: 17 checks, 13 mutations.
++
++## Machine status and trace
++
++```yaml
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: upstream_support
++target_claim_id: null
++target_blocker_text: "the derivation campaign's gravity node (#8093): 'the covariant scalar record statistic whose two-point function on the formation law is the lattice Green function'; blocks 13 and 17 (PRs #8147, #8151) show neither the formation law nor the soldered six-axis static law can supply it; the campaign's soldering fork (the landed possibility-covariance note)"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem
++next_trace_action: "the Green-function channel is located: the transverse structure factor of the ordered unsoldered static law is sandwiched between multiples of 1/E(k); the gravity node's input exists under the unsoldered static reading with the exponential overlap, and under neither the formation reading nor the soldered discrete menu. Open: the exact normalization (the constant in front of 1/(4 pi r)); the Born overlap (not positive-definite beyond l = 1). Consumers: #8093's assembly (gravity node; the soldering fork's physical stake); the campaign's queue"
++conditional_surface_status: "G1–G5 proved for every beta > 0 (G3–G5 for beta > 3 sqrt(3) pi/8) on tori of even side and their limits; the algebraic skeleton executed exactly (Legendre positivity to l = 4, the 4^3 torus identities, the generator and integration-by-parts identities, the bounds); conditional on the sphere as the possibility domain, the unsoldered reading and the exponential overlap as supplied conditions; three standard mathematical imports named at definition level"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++claim_type_reason: "a positivity of Legendre coefficients (G1); an iterated reflection-positivity inequality and a second-order expansion (G2); a unitary transform's sum rule and an elementary integral bound (G3); integration by parts on the sphere with the quadratic-form inequality (G4); the combination (G5); every executed identity exact"
++```
++
++## Premises and declared objects
++
++**Axioms used (verbatim).** From
++[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md): "Each site has
++a domain of local possibilities. The full one-site possibility domain has
++algebraic presentation `M_2(C)`." — "No possibility is privileged." — "There
++is one fixed nearest-neighbor admissibility rule, covariant under lattice
++translations and proper cubic rotations." — "For each site, the probability
++distribution over the possibilities is determined by, and varies with, the
++nearest-neighbor conditions." — "Records form."
++
++**Readings carried, named, nothing new adopted.** The pure-state sphere `S²`
++as the possibility domain and the *unsoldered* reading (independent internal
++rotations) from the landed possibility-covariance note
++([`POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md`](POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md));
++the static reading of the rule (block 01 on `main`); the product rule with the
++exponential overlap `f(t) = e^{βt}`, `β > 0` supplied (the sphere counterpart
++of the six-axis weights).
++
++**The torus law.** `T_L = (Z/2L Z)³`, `N = (2L)³`, `3N` bonds;
++`μ_L(ds) = Z_L^{−1} Π_{⟨xy⟩} e^{β s_x·s_y} Π_x dσ(s_x)`, `dσ` the uniform
++probability measure on `S²`. For unit spins `e^{β s_x·s_y} = e^{β} e^{−(β/2)|s_x − s_y|²}`,
++so `μ_L` is also the law with weight `Π e^{−(β/2)|s_x − s_y|²}`. The
++transform `ŝ(k) = N^{−1/2} Σ_x e^{ik·x} s_x`, `k ∈ (π/L) Z³` modulo `2π`;
++`E(k) = Σ_{i=1}^{3} 2(1 − cos k_i)`; the long-range-order parameter
++`M_N² = N^{−2} ⟨|Σ_x s_x|²⟩ = N^{−1} ⟨|ŝ(0)|²⟩`. Rotation generators: for a
++site `x`, `L_x F = (e_2 × s_x)·∇_{s_x} F`, so `L_x s_x^3 = −s_x^1`,
++`L_x s_x^1 = s_x^3`, `L_x s_x^2 = 0`, and `L_x(s_x·s_y) = e_2·(s_x × s_y)`.
++
++**Standard mathematical imports (definition level, never authority for
++physics).** (i) A smooth function on `[−1, 1]` is the sum of its Legendre
++series `Σ_ℓ a_ℓ P_ℓ(t)`, `a_ℓ = (2ℓ+1)/2 ∫ f P_ℓ`, and
++`P_ℓ(s·s') = (4π/(2ℓ+1)) Σ_m Y_ℓm(s) Ȳ_ℓm(s')`. (ii) The discrete transform on
++the torus is unitary: `Σ_k |ŝ^e(k)|² = Σ_x (s_x^e)²`. (iii) For a smooth
++function `F` on `S²` and the divergence-free field `e_2 × s`,
++`∫ (e_2 × s)·∇F dσ = 0` (executed for polynomials; cited for smooth functions).
++
++## Prior art and what is new
++
++The infrared bound and its consequence, long-range order for the classical
++three-component model in three dimensions, are Fröhlich–Simon–Spencer
++(1976), with the reflection-positivity route of Fröhlich–Israel–Lieb–Simon
++and Biskup's lecture notes; the classical Bogoliubov inequality is Mermin's
++(1967) and underlies the Mermin–Wagner theorem; on `main` the Coleman–
++Mermin–Wagner notes use the Bogoliubov inequality for quantum Hamiltonians
++on two-dimensional sublattices, and Gaussian domination appears in the
++gauge and clock lanes for link variables. None of it is used as authority.
++Nothing on `main` (search recorded in `ROUTE_PORTFOLIO.md`) treats the
++sphere-valued static record law or exhibits the Green-function channel.
++
++New here: the re-proof at scope for this rule; the zero-field Bogoliubov
++bound written against the long-range-order parameter `M_N²` (no spontaneous
++magnetization limit and no convexity argument); the explicit constants; and
++the placement of the gravity node's kernel among the readings.
++
++## Exact target and obligation graph
++
++| obligation | status here |
++|---|---|
++| G1 Legendre positivity; bond-plane reflection positivity | proved; executed symbolically for `ℓ ≤ 4` (B1) |
++| G2 Gaussian domination with gradient twists; the infrared bound | proved; the twist identity, the plane-wave Laplacian and gradient sums, and the second-order expansion executed exactly (B2–B3) |
++| G3 the sum rule; `G(0) ≤ √3π/8`; long-range order for `β > 3√3π/8` | proved; executed (C1–C2) |
++| G4 the classical Bogoliubov bound at zero field | proved; the generator identities, integration by parts, the second-derivative identity and the quadratic executed symbolically (D1–D3) |
++| G5 the two-sided channel; the contrast | proved (from G2–G4) |
++| the exact normalization; the Born overlap; the band below `3√3π/8` | open; not this note |
++
++## Theorem G1 — Legendre positivity and reflection positivity through bond planes
++
++**Statement.** For `β > 0` and every `ℓ ≥ 0`,
++`a_ℓ(β) = (2ℓ+1)/2 · ∫_{−1}^{1} e^{βt} P_ℓ(t) dt = (2ℓ+1)/2 · β^ℓ/(2^ℓ ℓ!) ∫_{−1}^{1} (1 − t²)^ℓ e^{βt} dt > 0`.
++Consequently `e^{β s·s'} = Σ_ℓ a_ℓ(β) (4π/(2ℓ+1)) Σ_m Y_ℓm(s) Ȳ_ℓm(s')` is a
++positive-definite kernel on `S²`, and for the reflection `θ` through a plane
++bisecting the bonds in one direction (the torus has even side, so the plane
++and its antipode split `T_L` into two halves `H^±` with no shared site), and
++any function `F` of the spins in `H^+` and any single-site factors
++`Π_x g_x(s_x)` with `g_x ≥ 0` reflection-symmetric,
++`E_L^{g}[F · F∘θ] ≥ 0`.
++
++*Proof.* Rodrigues' formula `P_ℓ = (1/(2^ℓ ℓ!)) d^ℓ/dt^ℓ (t² − 1)^ℓ` and `ℓ`
++integrations by parts (the boundary terms vanish because `(t² − 1)^ℓ` has a
++zero of order `ℓ` at `±1`) turn `∫ e^{βt} P_ℓ` into
++`(β^ℓ/(2^ℓ ℓ!)) ∫ (1 − t²)^ℓ e^{βt} dt`, whose integrand is positive on `(−1, 1)`.
++The weight factorizes as `W^+(s_{H^+}) W^−(s_{H^-}) Π_{c} e^{β s_x·s_{θx}}` over
++the crossing bonds `c = (x, θx)`, with `W^− = W^+∘θ`; expanding each crossing
++factor in the kernel series and collecting the sums over `(ℓ_c, m_c)`,
++`Z E[F F∘θ] = Σ_{(ℓ_c, m_c)} Π_c a_{ℓ_c}(4π/(2ℓ_c+1)) · |∫ F W^+ Π_c Y_{ℓ_c m_c}(s_x) Π_{x∈H^+} g_x dσ|² ≥ 0`
++(the `H^-` integral is the complex conjugate of the `H^+` integral by the
++change of variables `s ↦ θs`). ∎ Executed: the Rodrigues form of `a_ℓ` against
++direct integration for `ℓ ≤ 4`, symbolically in `β` (B1).
++
++## Theorem G2 — Gaussian domination and the infrared bound
++
++**Statement.** For any real `φ: T_L → R` and any unit vector `e`,
++`Z(φ) := ∫ Π_{⟨xy⟩} e^{−(β/2)|s_x − s_y − (φ_x − φ_y)e|²} Π_x dσ(s_x) ≤ Z(0)`.
++Consequently, for every component `e` and every `k ≠ 0`,
++`⟨|ŝ^e(k)|²⟩ ≤ 1/(βE(k))`, and the same holds for the law with any additional
++reflection-symmetric single-site factors.
++
++*Proof.* *Domination.* Put `s̃_x = s_x − φ_x e`; then
++`|s_x − s_y − (φ_x − φ_y)e| = |s̃_x − s̃_y|`, so `Z(φ)` is the untwisted
++interaction integrated against the shifted site measures `dσ(s̃_x + φ_x e)`.
++For a bond-plane reflection `θ`, G1 (the crossing weights are the untwisted
++positive-definite kernel `e^{−(β/2)|s̃_x − s̃_{θx}|²} = e^{−β} e^{β s̃_x·s̃_{θx}}`
++between the halves, and the site measures are single-site factors) gives
++the quadratic-form inequality `Z(φ) ≤ Z(φ^{+})^{1/2} Z(φ^{−})^{1/2}` where `φ^{+}`
++equals `φ` on `H^+` and `φ∘θ` on `H^-`, and `φ^{−}` the reverse. Iterating over
++all bond planes in the three directions (each step at most doubles the
++number of "reflected" sites and the product of the two factors' exponents
++telescopes) bounds `Z(φ)` by a geometric mean of `Z` at fields constant along
++every direction, i.e. constant fields, and `Z(constant) = Z(0)` since a common
++shift of all spins leaves the differences unchanged. *The bound.* Take
++`φ = λ ψ`, `ψ_x = cos(k·x)`, and expand `Z(λψ)/Z(0) = ⟨exp(βλ X − (βλ²/2) Σ_b (ψ_x − ψ_y)²)⟩`
++with `X = Σ_{⟨xy⟩} (ψ_x − ψ_y)(s_x − s_y)·e`. The law is invariant under
++`s ↦ −s`, so `⟨X⟩ = 0`, and `Z(λψ) ≤ Z(0)` for all small `λ` forces the
++second-order coefficient to be nonpositive: `β²⟨X²⟩ ≤ β Σ_b (ψ_x − ψ_y)²`.
++Now `X = Σ_x s_x^e Σ_{y∼x} (ψ_x − ψ_y) = E(k) Σ_x s_x^e ψ_x` because the plane
++wave is an eigenfunction of the lattice Laplacian, and
++`Σ_b (ψ_x − ψ_y)² = Σ_x ψ_x Σ_{y∼x}(ψ_x − ψ_y) = E(k) Σ_x ψ_x² = E(k) N/2` for
++`k ≠ 0` with `2k ≠ 0` (and `E(k) N` when `2k = 0`, which only strengthens what
++follows). Hence `⟨(Σ_x s_x^e cos(k·x))²⟩ ≤ N/(2βE(k))`, likewise with the sine,
++and adding, `⟨|Σ_x s_x^e e^{ik·x}|²⟩ ≤ N/(βE(k))`, i.e. `⟨|ŝ^e(k)|²⟩ ≤ 1/(βE(k))`.
++Single-site factors enter the site measures only. ∎ Executed: the twist
++identity symbolically; the eigenfunction identity and the gradient sum on
++the `4³` torus at two wavevectors (B2); the second-order expansion (B3).
++
++## Theorem G3 — the sum rule and long-range order
++
++**Statement.** `M_N² ≥ 1 − (3/β) N^{−1} Σ_{k≠0} 1/E(k)`, and
++`N^{−1} Σ_{k≠0} 1/E(k) → G(0) := ∫_{[−π,π]³} d³k/((2π)³ E(k)) ≤ √3π/8`. Hence
++`M² := lim inf_L M_N² ≥ 1 − 3G(0)/β > 0` whenever `β > 3√3π/8`, in particular
++for `β ≥ 21/10`.
++
++*Proof.* By unitarity `Σ_k Σ_e ⟨|ŝ^e(k)|²⟩ = Σ_x ⟨|s_x|²⟩ = N`, so
++`N M_N² = Σ_e ⟨|ŝ^e(0)|²⟩ ≥ N − Σ_{k≠0} 3/(βE(k))` by G2. The Riemann sums
++tend to the integral (the integrand is bounded away from `k = 0` and
++`1/E(k) ≤ π²/(4|k|²)` near it, integrable in three dimensions). For the bound:
++`1 − cos u ≥ 2u²/π²` on `[−π, π]` (the function `(1 − cos u)/u²` decreases on
++`(0, π]`), so `E(k) ≥ (4/π²)|k|²` and
++`G(0) ≤ (π²/4)(2π)^{−3} ∫_{|k| ≤ √3π} d³k/|k|² = (π²/4)(2π)^{−3} 4π·√3π = √3π/8`.
++The threshold `3√3π/8 = 2.0405…` is below `21/10`. ∎ Executed: the inequality
++at sample points and the integral bound symbolically (C1); the threshold
++comparison (C2).
++
++## Theorem G4 — the classical Bogoliubov bound at zero field
++
++**Statement.** For `k ≠ 0` and every `N`,
++`⟨|ŝ^1(k)|²⟩ ≥ (2M_N²/3)² / [(βE(k))^{1/2} + (βE(k) + 4M_N²/(3N))^{1/2}]²`.
++
++*Proof.* Let `c_x = e^{−ik·x}` and `L = Σ_x c_x L_x`, `w = Π_{⟨xy⟩} e^{β s_x·s_y}`.
++*Integration by parts:* for smooth `G`, `∫ L_x G dσ(s_x) = 0` (import (iii)),
++hence `⟨L G⟩ = −⟨G · L log w⟩`. *The first application:* with
++`F = ŝ^1(k) m̂`, `m̂ = N^{−1} Σ_y s_y^3`:
++`L ŝ^1(k) = N^{−1/2} Σ_y e^{ik·y} c_y L_y s_y^1 = N^{−1/2} Σ_y s_y^3 = N^{1/2} m̂` and
++`L m̂ = N^{−1} Σ_y c_y L_y s_y^3 = −N^{−1} Σ_y e^{−ik·y} s_y^1 = −N^{−1/2} ŝ^1(k)^*`, so
++`⟨L F⟩ = N^{1/2} ⟨m̂²⟩ − N^{−1/2} ⟨|ŝ^1(k)|²⟩`. By the three-fold symmetry of the
++components, `⟨m̂²⟩ = M_N²/3`. *The quadratic-form inequality:*
++`|⟨L F⟩|² = |⟨F · L log w⟩|² ≤ ⟨|F|²⟩ ⟨|L log w|²⟩ ≤ ⟨|ŝ^1(k)|²⟩ ⟨|L log w|²⟩`
++using `|m̂| ≤ 1`. *The second application:* with `G = (L log w)^*`,
++`⟨|L log w|²⟩ = −⟨L (L log w)^*⟩ = −⟨L L̄ log w⟩`, and for a single bond
++`−(c_x L_x + c_y L_y)(c̄_x L_x + c̄_y L_y)(s_x·s_y) = |c_x − c_y|² (s_x^1 s_y^1 + s_x^3 s_y^3)`,
++so `⟨|L log w|²⟩ = β Σ_{⟨xy⟩} |c_x − c_y|² ⟨s_x^1 s_y^1 + s_x^3 s_y^3⟩ ≤ β Σ_{⟨xy⟩} |e^{−ik·x} − e^{−ik·y}|² = β N E(k)`
++(the gradient sum of the plane wave, with `|s_x^1 s_y^1 + s_x^3 s_y^3| ≤ 1`).
++*Combining:* with `u = ⟨|ŝ^1(k)|²⟩^{1/2}`,
++`N^{1/2} M_N²/3 − N^{−1/2} u² ≤ u (βNE(k))^{1/2}`, i.e.
++`u²/N + (βE)^{1/2} u − M_N²/3 ≥ 0`, whose positive root is the displayed
++bound. ∎ Executed: the generator identities, the single-bond second
++derivative and integration by parts for polynomials symbolically (D1–D2);
++the quadratic's root and its limit (D3).
++
++## Theorem G5 — the transverse channel is the lattice Green function up to constants
++
++**Statement.** For `β > 3√3π/8` and every fixed `k ≠ 0`,
++`(M²/3)²/(βE(k)) ≤ lim inf_L ⟨|ŝ^1(k)|²⟩ ≤ lim sup_L ⟨|ŝ^1(k)|²⟩ ≤ 1/(βE(k))`,
++with `M² ≥ 1 − 3G(0)/β > 0`. The same holds for `ŝ^2(k)` by symmetry.
++
++*Proof.* The upper bound is G2. In G4 let `N → ∞` at fixed `k` (the
++wavevector lies in the torus lattice for all `L` in a subsequence, or use a
++sequence of wavevectors tending to `k` with the continuity of `E`): the
++correction `4M_N²/(3N)` vanishes and the bound tends to `(M²/3)²/(βE(k))`
++along the subsequence realizing `lim inf M_N²`. ∎
++
++*Reading.* Above the threshold the record field has a preferred direction,
++and its components across that direction fluctuate with a structure factor
++pinned between two multiples of `1/E(k)`, the symbol of the lattice
++Laplacian's inverse — the kernel whose large-distance form is the gravity
++lane's `1/(4π r)`. That channel is a consequence of a broken *continuous*
++symmetry: the soldered six-axis law (block 17) orders with a discrete
++symmetry and the rotation generator that drives G4 does not exist there; the
++formation law (block 13) is causal and its kernel is parabolic. The
++unsoldered static reading with the exponential overlap is the one reading
++among those examined in this lane under which the gravity node's kernel is a
++record statistic.
++
++## No-Go Discipline Gate
++
++This note's content is positive (the channel exists); the negative sentences
++it relies on — no such channel from the formation law or the soldered
++six-axis law — belong to blocks 13 and 17 and are not re-proved here. The
++gate is answered for the positive claim's hidden assumptions.
++
++### N1 — Routes by which the sandwich could fail
++
++| route | what it would attempt | why it fails here, or its obligation | marker |
++|---|---|---|---|
++| 1 a coupling below the threshold | `β ≤ 3√3π/8` | not claimed either way (the true threshold is lower; not decided here) | open |
++| 2 an overlap without Legendre positivity | the Born overlap `(1+t)/2` has `a_ℓ = 0` for `ℓ ≥ 2` (nonnegative, degenerate) | G1 holds; G2's twist argument uses the Gaussian form of the exponential overlap and is not claimed for it | narrowed |
++| 3 the transverse direction | `e_1` is transverse to `e_3` only on average | G4 uses the symmetry of the components, not a chosen direction; the bound is for `ŝ^1` and `ŝ^2` alike | RULED OUT AT SCOPE |
++| 4 wavevectors not on the torus lattice | `k` fixed as `L` varies | a subsequence or continuity of `E(k)` (G5) | RULED OUT AT SCOPE |
++
++### N2 — Wall-independence audit
++Walls: the sphere as the domain, the unsoldered reading, the static reading, the exponential overlap, the torus of even side. Independent; each defines the object.
++
++### N3 — Hidden-wall scan
++Scanned for "we assume", "by construction", "as is standard", "the framework provides", "naturally", "obviously", "canonical", "registered", "background", "bridge context". Hits: none in the theorems.
++
++### N4 — Per-citation table
++| cited surface | residual it attacks | residual claimed here | match |
++|---|---|---|---|
++| the possibility-covariance note (main) | the two readings; the sphere domain | the unsoldered reading as supplied | yes |
++| block 01 (main) | the static reading | the object | yes |
++| PRs #8147, #8151 (open; not inputs) | the formation law's kernel; the six-axis order | the contrast in G5's reading | context only |
++| the three standard imports | mathematics | named at definition level | declared |
++
++### N5 — Resolution audit
++| phrase | per-element | per-site | per-mode | per-block | lattice-wide |
++|---|---|---|---|---|---|
++| "the transverse channel is the lattice Green function up to constants" | executed: `a_ℓ` for `ℓ ≤ 4`; the generator identities; the single-bond second derivative; the quadratic | executed: the torus Laplacian identity at every site of the `4³` torus | executed: two wavevectors' gradient sums | executed: the integration-by-parts identity for three polynomials on the sphere | proved for every `β > 3√3π/8` (G5); the band below not claimed |
++
++### N6 — Partial-closure paths and primitive scan
++The registered primitives supply no coupling or overlap; none is a wall.
++
++### N7 — Steelman
++Hostile reviewer: "This is the 1976 theorem plus the classical inequality of 1967; the framework adds nothing." Reply: the framework question is *which reading* of the axioms yields the gravity node's kernel as a record statistic, and the answer needed the pair of negatives (blocks 13, 17) and this positive with its constants; the zero-field Bogoliubov form against `M_N²` is a small technical economy. Conceded: the constants are not sharp and the normalization is not fixed.
++
++### N8 — Cross-cycle echo
++Block 13's linearization (the massless causal Gaussian instance under the Born overlap) and this note's massless transverse channel are the same physics seen in the two readings; block 17's six-axis order is the discrete counterpart with no such channel.
++
++## Falsifiers
++- An `ℓ ≤ 4` at which the Rodrigues form of `a_ℓ(β)` differs from the direct integral (B1).
++- A site of the `4³` torus where the plane wave is not a Laplacian eigenfunction with eigenvalue `E(k)`, or a gradient sum differing from `E(k) Σ ψ²` (B2); a second-order coefficient not equal to `β² X² − β Σ(ψ_x − ψ_y)²` (B3).
++- A sample point violating `1 − cos u ≥ 2u²/π²`, a Green-function bound other than `√3π/8`, or a threshold at or above `21/10` (C1–C2).
++- A generator identity or single-bond second-derivative identity that fails, or a polynomial for which the sphere integral of `L F` is nonzero (D1–D2); a quadratic root other than the displayed form or a limit other than `M²/(3(βE)^{1/2})` (D3).
++
++## Boundaries and non-claims
++This note proves, for the unsoldered static law with the exponential overlap, the infrared bound, long-range order above an explicit coupling, and a two-sided Green-function sandwich for the transverse structure factor; it does not fix the normalization of the kernel, does not treat couplings below `3√3π/8`, does not treat the Born overlap, does not select a reading, rule or coupling as physical, and adopts no clause. No plane, bridge, Born-weight or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision. No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.
++
++## Imports
++- `minimal_axioms`: the sentences quoted under Premises.
++- The possibility-covariance note and block 01 (both on `main`): the readings and the object; proposed, unaudited. PRs #8147 and #8151 (open) referenced for context only.
++- Re-proved at scope: G1 (Rodrigues and the sum-of-squares expansion), G2 (Gaussian domination and the expansion), G3 (the sum rule and the integral bound), G4 (integration by parts, the quadratic-form inequality, the second derivative), G5.
++- Named standard imports at definition level (never as authority for physics): the Legendre expansion of a smooth function and the addition theorem for spherical harmonics; the unitarity of the discrete torus transform; the integration-by-parts identity for the divergence-free rotation field on the sphere.
++- Reference only (named, not used): Fröhlich–Simon–Spencer (1976); Fröhlich–Israel–Lieb–Simon (1978); Mermin (1967); Biskup's lecture notes.
++
++## Review record
++Supervisor-run block (owner directive: don't stop; assess the next lane and take it; no subagents). The control (`specs/supervisor_control_block19_sphere_static.py`) checked the Legendre forms, the torus identities, the generator and integration-by-parts identities, the bound and the quadratic before the contract, and caught the sign convention of the generator (`L s^3 = −s^1`, `L s^1 = s^3`), which enters only through an absolute value; the lens pass is in `GOAL_block19.md`; the primary seat wrote G1–G5 and the runner; the refuting pass (`CHECKER_block19_findings.md`) recomputed the Legendre coefficients by the generating-function route, the gradient sum by a direct bond enumeration on a `6×4×4` torus, the second-derivative identity by a second choice of generator axis, and the integral bound by a second inequality. Facts settled while executing: the runner's name scan treats Legendre, Rodrigues and Bogoliubov as names of standard objects (like Gaussian, Laplacian or Green function) and restricts authors' names to Prior art, Imports and the Premises' file citation; the gradient sum on the torus equals `E(k) N/2` when `2k ≠ 0` and `E(k) N` when `2k = 0` (the note's proof covers both); the control caught the generator's sign convention before the primary.
++
++## Verification
++
++```bash
++python3 scripts/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.py
++python3 scripts/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.py --list-mutations
++python3 scripts/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.py --mutation infrared_bound_direction_reversed
++```
++
++Families: A authority and inputs; B Legendre positivity, the torus identities and the second-order expansion; C the Green-function bound and the threshold; D the generator identities, integration by parts, the second derivative and the quadratic; F fences, forbidden phrases, the floating-point self-scan, the placement of the classical names; G the resolution lines. Each of the 13 declared mutations fails in exactly one family. Expected final line: `TOTAL: PASS=17 FAIL=0`.
+diff --git a/docs/audit/data/citation_graph_manifest.json b/docs/audit/data/citation_graph_manifest.json
+index 3683d0174e5c907d4f8ceb326e9529d941529b85..f7a77e3f58940bb97d3b70c759de4730144ec8d3 100644
+--- a/docs/audit/data/citation_graph_manifest.json
++++ b/docs/audit/data/citation_graph_manifest.json
+@@ -1,6 +1,6 @@
+ {
+- "edge_count": 13395,
+- "node_count": 5829,
++ "edge_count": 13397,
++ "node_count": 5830,
+  "nodes": {
+   "3d_correction_master_note": {
+    "deps_hash": "e3b0c44298fc",
+@@ -754,6 +754,10 @@
+    "deps_hash": "8ae058a5c524",
+    "out_degree": 2
+   },
++  "admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_carries_the_lattice_green_function_infrared_and_bogoliubov_bounds_bounded_theorem_note_2026-09-15": {
++   "deps_hash": "d0249e15a42a",
++   "out_degree": 2
++  },
+   "admissibility_scalar_edge_hodge_rank_one_nonlinear_ward_boundary_bounded_theorem_note_2026-08-14": {
+    "deps_hash": "f21f2489334d",
+    "out_degree": 4
+diff --git a/logs/runner-cache/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.txt b/logs/runner-cache/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.txt
+new file mode 100644
+index 0000000000000000000000000000000000000000..b6fb5521b628611425857c3f272b170dfd09a496
+--- /dev/null
++++ b/logs/runner-cache/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.txt
+@@ -0,0 +1,42 @@
++===== runner cache v1 =====
++runner: scripts/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.py
++runner_sha256: 7584957994ad0e6b6ae753b99e9ca1fd85c989a0e2f60337b6607c9b3272dca3
++input_fingerprint_sha256: 331eb7362cc65fa2d65533c691756707b3e8c20b3fe71cc6378beaf095dbc85b
++timeout_sec: 900
++exit_code: 0
++elapsed_sec: 0.85
++status: ok
++----- stdout -----
++AUDIT_INPUT_PATHS:
++  docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_ORDERED_PHASE_TRANSVERSE_CHANNEL_CARRIES_THE_LATTICE_GREEN_FUNCTION_INFRARED_AND_BOGOLIUBOV_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md
++  docs/MINIMAL_AXIOMS_2026-06-29.md
++  docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md
++AUDIT_TIMEOUT_SEC: 900
++scope: the unsoldered sphere static law with overlap e^{beta t} — Legendre positivity, the twist and plane-wave identities behind the infrared bound, the Green-function bound and threshold, the generator identities and the quadratic behind the zero-field Bogoliubov bound; exact symbolic
++mutation: none
++PASS: A1 the three declared inputs exist (this note, the axiom memo, the possibility-covariance note on main)
++PASS: A2 the five axiom sentences used are present verbatim in the axiom memo
++PASS: A3 the parent's claim id and its empty-neighbourhood sphere-law section are present
++PASS: A4 this note carries its claim id and names this runner
++PASS: B1 G1: int e^{beta t} P_l = (beta^l/(2^l l!)) int (1 - t^2)^l e^{beta t} dt for l <= 4, symbolically in beta (a positive integrand)
++PASS: B2 G2: on the 4^3 torus the plane wave cos(k.x) is a Laplacian eigenfunction with eigenvalue E(k) = sum 2(1 - cos k_i), and sum over bonds (dpsi)^2 = E(k) sum psi^2 = E(k) N/2, at k = (pi/2,0,0) [E = 2] and (pi/2,pi/2,0) [E = 4]
++PASS: B3 G2: the gradient twist is a site shift; the second lambda-derivative of exp(beta lambda X - beta lambda^2 S2/2) at 0 is beta^2 X^2 - beta S2, so Z(lambda psi) <= Z(0) forces beta^2 <X^2> <= beta S2
++PASS: C1 G3: 1 - cos u >= 2 u^2/pi^2 at 21 sample points of [-pi, pi]
++PASS: C2 G3: (pi^2/4) (2 pi)^{-3} int_{|k| <= sqrt(3) pi} d^3k/|k|^2 = sqrt(3) pi/8; the threshold 3 sqrt(3) pi/8 is below 21/10
++PASS: D1 G4: L_x(s_x.s_y) = e2.(s_x x s_y), L_y(s_x.s_y) = -e2.(s_x x s_y), L s^3 = -s^1, L s^1 = s^3, L s^2 = 0
++PASS: D2 G4: the sphere integral of L F vanishes for four polynomials; -(c_x L_x + c_y L_y)(cbar_x L_x + cbar_y L_y)(s_x.s_y) = |c_x - c_y|^2 (s_x^1 s_y^1 + s_x^3 s_y^3)
++PASS: D3 G4/G5: (2M^2/3)/[sqrt(bE) + sqrt(bE + 4M^2/(3N))] is the positive root of u^2/N + sqrt(bE) u - M^2/3 = 0 and tends to M^2/(3 sqrt(bE)): the lower bound (M^2/3)^2/(beta E)
++PASS: F1 the note carries the three fence sentences verbatim
++PASS: F2 the note contains no forbidden phrase (0 hits)
++PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
++PASS: F4 the authors' names appear only under Prior art, Imports and the Premises' file citation; Legendre, Rodrigues and Bogoliubov name standard objects (0 offenders)
++per_element: executed — the Legendre coefficients of e^{beta t} in Rodrigues form for l <= 4; the generator identities; the single-bond second derivative; the quadratic's root and limit
++per_site: executed — the plane wave as a Laplacian eigenfunction at every site of the 4^3 torus at two wavevectors
++per_mode: executed — the gradient sums E(k) N/2 at two wavevectors; the second-order coefficient of the twisted weight
++per_block: executed — integration by parts on the sphere for four polynomials; the Green-function bound and the threshold
++lattice_wide: G1-G5 proved for every beta > 0 (G3-G5 for beta > 3 sqrt(3) pi/8) on tori of even side and their limits; the band below the threshold, the normalization and the Born overlap not claimed
++PASS: G1 the five N5 resolution lines are printed
++TOTAL: PASS=17 FAIL=0
++
++----- stderr -----
++
+diff --git a/scripts/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.py b/scripts/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..54f00949b60c121a49133061a8bcf7642e5be561
+--- /dev/null
++++ b/scripts/admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_green_function_2026_09_15.py
+@@ -0,0 +1,319 @@
++#!/usr/bin/env python3
++"""Exact symbolic checks: the unsoldered sphere static law with overlap e^{beta t} — the algebraic skeleton of the infrared bound,
++long-range order, and the zero-field Bogoliubov bound.
++
++Scope.  G1: the Legendre coefficients of e^{beta t} in Rodrigues form (positive integrand), l <= 4, symbolically in beta.  G2: the
++gradient-twist identity; the plane wave as a Laplacian eigenfunction on the 4^3 torus with eigenvalue E(k) = sum 2(1 - cos k_i);
++the gradient sum E(k) sum psi^2; the second-order coefficient of the twisted weight.  G3: 1 - cos u >= 2u^2/pi^2 at sample points;
++the bound G(0) <= sqrt(3) pi/8; the threshold 3 sqrt(3) pi/8 < 21/10.  G4: the generator identities, integration by parts on the sphere
++for polynomials, the single-bond second-derivative identity, the quadratic's root and its limit.  Exact symbolic arithmetic only;
++the runner scans its own source for floating-point literals.
++"""
++
++from __future__ import annotations
++
++import re
++import sys
++from itertools import product
++from pathlib import Path
++
++import sympy as sp
++
++AUDIT_TIMEOUT_SEC = 900
++AUDIT_INPUT_PATHS = (
++    "docs/ADMISSIBILITY_RULE_UNSOLDERED_SPHERE_STATIC_LAW_ORDERED_PHASE_TRANSVERSE_CHANNEL_CARRIES_THE_LATTICE_GREEN_FUNCTION_INFRARED_AND_BOGOLIUBOV_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
++    "docs/MINIMAL_AXIOMS_2026-06-29.md",
++    "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
++)
++ROOT = Path(__file__).resolve().parents[1]
++CLAIM_ID = "admissibility_rule_unsoldered_sphere_static_law_ordered_phase_transverse_channel_carries_the_lattice_green_function_infrared_and_bogoliubov_bounds_bounded_theorem_note_2026-09-15"
++PARENT_CLAIM_ID = "possibility_covariance_soldered_vs_unsoldered_cl30_invariant_rules_and_haar_fair_coin_bounded_theorem_note_2026-09-14"
++PARENT_FRAGMENT = "Empty-neighbourhood sphere laws"
++AXIOM_NEEDLES = (
++    "Each site has a domain of local possibilities.",
++    "No possibility is privileged.",
++    "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.",
++    "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.",
++    "Records form.",
++)
++
++MUTATION_GATE = {
++    "legendre_coefficient_sign_wrong": "B",
++    "laplacian_eigenvalue_wrong": "B",
++    "gradient_sum_wrong": "B",
++    "second_order_coefficient_wrong": "B",
++    "cosine_inequality_wrong": "C",
++    "green_bound_wrong": "C",
++    "threshold_wrong": "C",
++    "generator_identity_wrong": "D",
++    "integration_by_parts_nonzero_claimed": "D",
++    "second_derivative_identity_wrong": "D",
++    "quadratic_root_wrong": "D",
++    "infrared_bound_direction_reversed": "F",
++    "claim_classical_name_in_theorem": "F",
++}
++ACTIVE_MUTATION: str | None = None
++
++
++def mut(name: str) -> bool:
++    if name not in MUTATION_GATE:
++        raise KeyError(name)
++    return ACTIVE_MUTATION == name
++
++
++class Checks:
++    def __init__(self) -> None:
++        self.passed = 0
++        self.failed = 0
++        self.failed_families: list[str] = []
++
++    def check(self, label: str, condition: bool, detail: str) -> None:
++        ok = bool(condition)
++        self.passed += int(ok)
++        self.failed += int(not ok)
++        if not ok:
++            self.failed_families.append(label[0])
++        print(f"{'PASS' if ok else 'FAIL'}: {label} {detail}")
++
++    def finish(self) -> int:
++        print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
++        return self.failed
++
++
++def normalize_text(text: str) -> str:
++    return " ".join(text.split())
++
++
++# ============================================================================================ family A
++def family_a(checks: Checks, texts) -> None:
++    note, axioms, parent = texts
++    checks.check("A1", all((ROOT / pth).is_file() for pth in AUDIT_INPUT_PATHS) and len(set(AUDIT_INPUT_PATHS)) == 3,
++                 "the three declared inputs exist (this note, the axiom memo, the possibility-covariance note on main)")
++    checks.check("A2", all(n in normalize_text(axioms) for n in AXIOM_NEEDLES), "the five axiom sentences used are present verbatim in the axiom memo")
++    fp = normalize_text(parent)
++    checks.check("A3", PARENT_CLAIM_ID in fp and PARENT_FRAGMENT in fp, "the parent's claim id and its empty-neighbourhood sphere-law section are present")
++    flat = normalize_text(note)
++    checks.check("A4", CLAIM_ID in flat and Path(__file__).name in flat, "this note carries its claim id and names this runner")
++
++
++# ============================================================================================ family B
++def torus_sites(L: int):
++    return list(product(range(L), repeat=3))
++
++
++def torus_nbrs(x, L: int):
++    out = []
++    for i in range(3):
++        for d in (1, -1):
++            y = list(x)
++            y[i] = (x[i] + d) % L
++            out.append(tuple(y))
++    return out
++
++
++def family_b(checks: Checks) -> None:
++    t, beta = sp.symbols("t beta", positive=True)
++    ok = True
++    for l in range(5):
++        direct = sp.integrate(sp.exp(beta * t) * sp.legendre(l, t), (t, -1, 1))
++        rod = beta ** l / (2 ** l * sp.factorial(l)) * sp.integrate((1 - t ** 2) ** l * sp.exp(beta * t), (t, -1, 1))
++        if mut("legendre_coefficient_sign_wrong"):
++            rod = -rod
++        ok = ok and sp.simplify(direct - rod) == 0
++    checks.check("B1", ok, "G1: int e^{beta t} P_l = (beta^l/(2^l l!)) int (1 - t^2)^l e^{beta t} dt for l <= 4, symbolically in beta (a positive integrand)")
++    L = 4
++    sites = torus_sites(L)
++    ok2 = True
++    sums = {}
++    for k in ((sp.pi / 2, 0, 0), (sp.pi / 2, sp.pi / 2, 0)):
++        E = sum(2 * (1 - sp.cos(ki)) for ki in k)
++        if mut("laplacian_eigenvalue_wrong"):
++            E = E + 1
++        psi = {x: sp.cos(sum(ki * xi for ki, xi in zip(k, x))) for x in sites}
++        ok2 = ok2 and all(sp.simplify(sum(psi[x] - psi[y] for y in torus_nbrs(x, L)) - E * psi[x]) == 0 for x in sites)
++        bonds = {tuple(sorted((x, y))) for x in sites for y in torus_nbrs(x, L)}
++        grad2 = sum((psi[x] - psi[y]) ** 2 for (x, y) in bonds)
++        sum2 = sum(psi[x] ** 2 for x in sites)
++        target = E * sum2
++        if mut("gradient_sum_wrong"):
++            target = target * 2
++        ok2 = ok2 and sp.simplify(grad2 - target) == 0 and sum2 == len(sites) / sp.Integer(2)
++        sums[k] = (E, sum2)
++    checks.check("B2", ok2, "G2: on the 4^3 torus the plane wave cos(k.x) is a Laplacian eigenfunction with eigenvalue E(k) = sum 2(1 - cos k_i), and sum over bonds (dpsi)^2 = E(k) sum psi^2 = E(k) N/2, at k = (pi/2,0,0) [E = 2] and (pi/2,pi/2,0) [E = 4]")
++    # twist identity and second-order coefficient
++    sx = sp.Matrix(sp.symbols("x1 x2 x3", real=True)); sy = sp.Matrix(sp.symbols("y1 y2 y3", real=True))
++    phx, phy, lam, X, S2, b = sp.symbols("phi_x phi_y lambda X S2 beta", real=True)
++    e = sp.Matrix([1, 0, 0])
++    lhs = (sx - sy - (phx - phy) * e).dot(sx - sy - (phx - phy) * e)
++    rhs = ((sx - phx * e) - (sy - phy * e)).dot((sx - phx * e) - (sy - phy * e))
++    twist_ok = sp.simplify(lhs - rhs) == 0
++    expo = sp.exp(b * lam * X - b * lam ** 2 / 2 * S2)
++    second = sp.diff(expo, lam, 2).subs(lam, 0)
++    target = b ** 2 * X ** 2 - b * S2
++    if mut("second_order_coefficient_wrong"):
++        target = b ** 2 * X ** 2 + b * S2
++    checks.check("B3", twist_ok and sp.simplify(second - target) == 0, "G2: the gradient twist is a site shift; the second lambda-derivative of exp(beta lambda X - beta lambda^2 S2/2) at 0 is beta^2 X^2 - beta S2, so Z(lambda psi) <= Z(0) forces beta^2 <X^2> <= beta S2")
++
++
++# ============================================================================================ family C
++def family_c(checks: Checks) -> None:
++    samples = [sp.Rational(i, 10) * sp.pi for i in range(-10, 11)]
++    ok = all(sp.simplify(1 - sp.cos(x) - 2 * x ** 2 / sp.pi ** 2) >= 0 for x in samples)
++    if mut("cosine_inequality_wrong"):
++        ok = all(sp.simplify(1 - sp.cos(x) - 3 * x ** 2 / sp.pi ** 2) >= 0 for x in samples)
++    checks.check("C1", ok, "G3: 1 - cos u >= 2 u^2/pi^2 at 21 sample points of [-pi, pi]")
++    r = sp.symbols("r", positive=True)
++    ball = sp.integrate(4 * sp.pi * r ** 2 / r ** 2, (r, 0, sp.sqrt(3) * sp.pi))  # int d^3k/|k|^2 over the ball of radius sqrt(3) pi
++    bound = sp.pi ** 2 / 4 * ball / (2 * sp.pi) ** 3
++    target = sp.sqrt(3) * sp.pi / 8
++    if mut("green_bound_wrong"):
++        target = sp.sqrt(3) * sp.pi / 4
++    c2 = sp.simplify(bound - target) == 0
++    thr = 3 * target
++    thr_ok = sp.simplify(thr - 3 * sp.sqrt(3) * sp.pi / 8) == 0 and (thr < sp.Rational(21, 10))
++    if mut("threshold_wrong"):
++        thr_ok = thr < sp.Rational(2, 1)
++    checks.check("C2", c2 and thr_ok, "G3: (pi^2/4) (2 pi)^{-3} int_{|k| <= sqrt(3) pi} d^3k/|k|^2 = sqrt(3) pi/8; the threshold 3 sqrt(3) pi/8 is below 21/10")
++
++
++# ============================================================================================ family D
++def family_d(checks: Checks) -> None:
++    sx = sp.Matrix(sp.symbols("x1 x2 x3", real=True)); sy = sp.Matrix(sp.symbols("y1 y2 y3", real=True))
++    e2 = sp.Matrix([0, 1, 0])
++
++    def Lgen(v, F):
++        w = e2.cross(v)
++        return sum(w[i] * sp.diff(F, v[i]) for i in range(3))
++    dot = sx.dot(sy)
++    g1 = sp.simplify(Lgen(sx, dot) - e2.dot(sx.cross(sy))) == 0
++    g2 = sp.simplify(Lgen(sy, dot) + e2.dot(sx.cross(sy))) == 0
++    g3 = sp.simplify(Lgen(sx, sx[2]) + sx[0]) == 0 and sp.simplify(Lgen(sx, sx[0]) - sx[2]) == 0 and sp.simplify(Lgen(sx, sx[1])) == 0
++    if mut("generator_identity_wrong"):
++        g3 = sp.simplify(Lgen(sx, sx[2]) - sx[0]) == 0
++    checks.check("D1", g1 and g2 and g3, "G4: L_x(s_x.s_y) = e2.(s_x x s_y), L_y(s_x.s_y) = -e2.(s_x x s_y), L s^3 = -s^1, L s^1 = s^3, L s^2 = 0")
++    th, ph = sp.symbols("theta phi", real=True)
++    svec = sp.Matrix([sp.sin(th) * sp.cos(ph), sp.sin(th) * sp.sin(ph), sp.cos(th)])
++    ok_ibp = True
++    for F in (sx[0] * sx[2], sx[0] ** 2 * sx[1], sx[2] ** 3, sx[0] * sx[1] * sx[2]):
++        LF = Lgen(sx, F).subs({sx[0]: svec[0], sx[1]: svec[1], sx[2]: svec[2]})
++        val = sp.integrate(sp.integrate(LF * sp.sin(th), (th, 0, sp.pi)), (ph, 0, 2 * sp.pi))
++        ok_ibp = ok_ibp and sp.simplify(val) == 0
++    if mut("integration_by_parts_nonzero_claimed"):
++        ok_ibp = not ok_ibp
++    cx, cy = sp.symbols("c_x c_y")
++    Lc = lambda F: cx * Lgen(sx, F) + cy * Lgen(sy, F)
++    Lcbar = lambda F: sp.conjugate(cx) * Lgen(sx, F) + sp.conjugate(cy) * Lgen(sy, F)
++    second = -Lc(Lcbar(dot))
++    target = (cx - cy) * (sp.conjugate(cx) - sp.conjugate(cy)) * (sx[0] * sy[0] + sx[2] * sy[2])
++    if mut("second_derivative_identity_wrong"):
++        target = (cx - cy) * (sp.conjugate(cx) - sp.conjugate(cy)) * (sx[0] * sy[0] - sx[2] * sy[2])
++    checks.check("D2", ok_ibp and sp.simplify(sp.expand(second - target)) == 0, "G4: the sphere integral of L F vanishes for four polynomials; -(c_x L_x + c_y L_y)(cbar_x L_x + cbar_y L_y)(s_x.s_y) = |c_x - c_y|^2 (s_x^1 s_y^1 + s_x^3 s_y^3)")
++    N, bE, M = sp.symbols("N bE M", positive=True)
++    root = (2 * M ** 2 / 3) / (sp.sqrt(bE) + sp.sqrt(bE + 4 * M ** 2 / (3 * N)))
++    if mut("quadratic_root_wrong"):
++        root = (2 * M ** 2 / 3) / (sp.sqrt(bE) + sp.sqrt(bE + 2 * M ** 2 / (3 * N)))
++    q_ok = sp.simplify(root ** 2 / N + sp.sqrt(bE) * root - M ** 2 / 3) == 0
++    lim_ok = sp.simplify(sp.limit(root, N, sp.oo) - M ** 2 / (3 * sp.sqrt(bE))) == 0
++    checks.check("D3", q_ok and lim_ok, "G4/G5: (2M^2/3)/[sqrt(bE) + sqrt(bE + 4M^2/(3N))] is the positive root of u^2/N + sqrt(bE) u - M^2/3 = 0 and tends to M^2/(3 sqrt(bE)): the lower bound (M^2/3)^2/(beta E)")
++
++
++# ============================================================================================ family F
++FENCES = (
++    "This note proves, for the unsoldered static law with the exponential overlap, the infrared bound, long-range order above an explicit coupling, and a two-sided Green-function sandwich for the transverse structure factor; it does not fix the normalization of the kernel, does not treat couplings below `3√3π/8`, does not treat the Born overlap, does not select a reading, rule or coupling as physical, and adopts no clause.",
++    "No plane, bridge, Born-weight or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
++    "No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.",
++)
++FORBIDDEN = (
++    "the physical order", "the physical rule", "the physical coupling", "for every coupling", "selects the", "fires wake condition", "the Bridge weights",
++    "the Bridge conjecture", "certified", "converge", "emergent", "phase transition", "Goldstone theorem is derived", "washes out", "toward the plane", "the trend",
++    "the structure factor is at least 1/(beta E(k))",
++)
++CLAIM_INJECTIONS = {"infrared_bound_direction_reversed": "Hence the structure factor is at least 1/(beta E(k)) for every k."}
++CLASSICAL_NAMES = ("Fröhlich", "Simon", "Spencer", "Israel", "Lieb", "Biskup", "Mermin", "Wagner", "Goldstone", "Peierls", "Toom", "Dobrushin", "Coleman")  # authors; Legendre, Rodrigues and Bogoliubov name standard objects, like Gaussian or Laplacian
++ALLOWED_NAME_SECTIONS = ("Prior art and what is new", "Imports", "Premises and declared objects")
++SCAN_MARKER = "float-scan-marker-line"
++
++
++def family_f(checks: Checks, note_text: str) -> None:
++    text = note_text
++    for name, phrase in CLAIM_INJECTIONS.items():
++        if mut(name):
++            text = text + "\n" + phrase
++    flat = normalize_text(text)
++    checks.check("F1", all(f in flat for f in FENCES), "the note carries the three fence sentences verbatim")
++    hits = [ph for ph in FORBIDDEN if ph.lower() in flat.lower()]
++    checks.check("F2", not hits, f"the note contains no forbidden phrase ({len(hits)} hits)")
++    source_lines = Path(__file__).read_text(encoding="utf-8").splitlines()
++    scan = [ln for ln in source_lines if SCAN_MARKER not in ln]
++    float_literal = re.compile(r"(?<![\w.])\d+\.\d+(?![\w.])|(?<![\w.])\d+[eE][-+]?\d+(?![\w.])")
++    conversion = "flo" + "at("  # float-scan-marker-line
++    evalf = "eva" + "lf("  # float-scan-marker-line
++    numeric = "N" + "("  # float-scan-marker-line
++    bad = [ln for ln in scan if float_literal.search(ln) or conversion in ln or evalf in ln or numeric in ln]
++    checks.check("F3", not bad and len(scan) > 150, f"runner source: no floating-point literal or conversion call ({len(bad)} hits)")
++    sections = re.split(r"^## ", text, flags=re.M)
++    offenders = []
++    for i, sec in enumerate(sections):
++        title = sec.splitlines()[0].strip() if i > 0 else "(front matter)"
++        body = sec
++        if mut("claim_classical_name_in_theorem") and title.startswith("Theorem G2"):
++            body = body + " (the Fröhlich–Simon–Spencer bound)"
++        if any(title.startswith(a) for a in ALLOWED_NAME_SECTIONS):
++            continue
++        for nm in CLASSICAL_NAMES:
++            if nm in body:
++                offenders.append((title[:30], nm))
++    checks.check("F4", not offenders, f"the authors' names appear only under Prior art, Imports and the Premises' file citation; Legendre, Rodrigues and Bogoliubov name standard objects ({len(offenders)} offenders)")
++
++
++# ============================================================================================ family G
++N5_LINES = (
++    "per_element: executed — the Legendre coefficients of e^{beta t} in Rodrigues form for l <= 4; the generator identities; the single-bond second derivative; the quadratic's root and limit",
++    "per_site: executed — the plane wave as a Laplacian eigenfunction at every site of the 4^3 torus at two wavevectors",
++    "per_mode: executed — the gradient sums E(k) N/2 at two wavevectors; the second-order coefficient of the twisted weight",
++    "per_block: executed — integration by parts on the sphere for four polynomials; the Green-function bound and the threshold",
++    "lattice_wide: G1-G5 proved for every beta > 0 (G3-G5 for beta > 3 sqrt(3) pi/8) on tori of even side and their limits; the band below the threshold, the normalization and the Born overlap not claimed",
++)
++
++
++def family_g(checks: Checks) -> None:
++    for line in N5_LINES:
++        print(line)
++    checks.check("G1", len(N5_LINES) == 5 and all(len(l) >= 40 for l in N5_LINES), "the five N5 resolution lines are printed")
++
++
++def main(argv) -> int:
++    global ACTIVE_MUTATION
++    if "--list-mutations" in argv:
++        for name, fam in MUTATION_GATE.items():
++            print(f"{name} {fam}")
++        return 0
++    if "--mutation" in argv:
++        ACTIVE_MUTATION = argv[argv.index("--mutation") + 1]
++        if ACTIVE_MUTATION not in MUTATION_GATE:
++            print(f"unknown mutation {ACTIVE_MUTATION}")
++            return 2
++    checks = Checks()
++    texts = [(ROOT / pth).read_text(encoding="utf-8") if (ROOT / pth).is_file() else "" for pth in AUDIT_INPUT_PATHS]
++    print("AUDIT_INPUT_PATHS:")
++    for pth in AUDIT_INPUT_PATHS:
++        print(f"  {pth}")
++    print(f"AUDIT_TIMEOUT_SEC: {AUDIT_TIMEOUT_SEC}")
++    print("scope: the unsoldered sphere static law with overlap e^{beta t} — Legendre positivity, the twist and plane-wave identities behind the infrared bound, the Green-function bound and threshold, the generator identities and the quadratic behind the zero-field Bogoliubov bound; exact symbolic")
++    print(f"mutation: {ACTIVE_MUTATION or 'none'}")
++    family_a(checks, texts)
++    family_b(checks)
++    family_c(checks)
++    family_d(checks)
++    family_f(checks, texts[0])
++    family_g(checks)
++    if ACTIVE_MUTATION:
++        observed = "".join(sorted(set(checks.failed_families))) or "none"
++        print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
++        print(f"mutation_family_observed: {observed}")
++    failed = checks.finish()
++    return 1 if failed else 0
++
++
++if __name__ == "__main__":
++    raise SystemExit(main(sys.argv[1:]))

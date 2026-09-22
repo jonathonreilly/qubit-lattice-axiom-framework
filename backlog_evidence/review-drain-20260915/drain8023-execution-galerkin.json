@@ -1,0 +1,21 @@
+{
+  "runner": "scripts/gauge_wilson_compact_cube_galerkin_spectral_enclosures_2026_09_07.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "PASS exact Schur/Ritz interval controls; TOTAL=43\nper_element: Exact rational matrices, principal-minor positivity and Sturm root enclosures.\nper_site: No whole-cube eigenvalue calculation; operator theorem uses full physical or link space.\nper_mode: Four coupled2/3-dimensional fixtures plus one uncoupled interleaving adverse case.\nper_block: Both directions of finite-gap error; actual-Haar R0 ground-only coupling imported explicitly.\nlattice_wide: Fixed compact cube cutoff theorem; no full-spectrum uniform rate or thermodynamic claim.\nactual_R0={\"b_squared\": \"v\\u00b2/3\", \"condition\": \"6v<4/a; no second Ritz eigenvalue at R=0\", \"g0\": \"4/a\", \"mu0\": \"6v\"}\nthree_level certified_gap_interval=[\"16249538182239/8268906708479\", \"13165442555549/5386818745220\"]\nground_only_coupling certified_gap_interval=[\"7/8\", \"10/9\"]\nresources: elapsed_sec=0.23455437499796972 rss_MiB=63.65625; limits=180sec/180MiB\nsource_sha256=e16ee207fca5c63ffcc915fe884ce74b30366cb338e1e404bf59bc665b39e2cf\nTOTAL: PASS=43 FAIL=0\n",
+  "stderr": "",
+  "elapsed_sec": 0.37642693519592285,
+  "timeout_sec": 180,
+  "live_log": "/private/tmp/review-drain-20260915/author-draft-slot/logs/runner-cache/.in-progress/gauge_wilson_compact_cube_galerkin_spectral_enclosures_2026_09_07.txt",
+  "whole_tree_watchdog": {
+    "limit_bytes": 188743680,
+    "interval_sec": 0.02,
+    "root_pid": 48473,
+    "samples": 7,
+    "peak_tree_rss_bytes": 102285312,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8023-capture.py",
+  "capture_script_sha256": "1d4fd1e50e283b41edf032b084c8196b66687287fc0695568a0936dce4706c60"
+}

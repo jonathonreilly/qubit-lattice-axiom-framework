@@ -1,0 +1,44 @@
+[
+  {
+    "primary": "scripts/admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.py",
+    "primary_sha256": "4e6c394ebc830396d518e04d149756ca04ae0d3f99668d2062e7be7c3fbadedc",
+    "timeout": 300,
+    "declared_inputs": [
+      "docs/ADMISSIBILITY_RULE_FORMATION_RATE_IDENTITIES_AND_FINITE_WINDOW_WITNESSES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "docs/ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md"
+    ],
+    "declared_input_fingerprint": "4e9863a99dc668d7d210d88fba60276d085798480f7dc0dd9fb733f2ea1af7ec",
+    "cache_status": "missing",
+    "helpers": []
+  },
+  {
+    "primary": "scripts/admissibility_rule_formation_unit_clause_witness_sequential_equals_joint_iff_criterion_2026_09_15.py",
+    "primary_sha256": "5795b0097fc16fc4eaf492905f3a510fb5116f1d9e3d70d94e5560992406d45e",
+    "timeout": 300,
+    "declared_inputs": [
+      "docs/ADMISSIBILITY_RULE_FORMATION_UNIT_CONDITIONAL_IDENTITIES_AND_FINITE_WITNESSES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "docs/ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+    ],
+    "declared_input_fingerprint": "e355a81d51daa859400a6bd735f292af680cd994f16eb55cc3306c0b0b93f284",
+    "cache_status": "missing",
+    "helpers": []
+  },
+  {
+    "primary": "scripts/admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.py",
+    "primary_sha256": "67c6265fecbbf764b92c69495cbcb6b3a5788a31db7c423cc297f87fde5f33be",
+    "timeout": 300,
+    "declared_inputs": [
+      "docs/ADMISSIBILITY_RULE_FORMATION_LAW_FLIP_IDENTITIES_AND_FINITE_MIXTURE_WITNESSES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "docs/ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+    ],
+    "declared_input_fingerprint": "12555a6194a695167da75638c89b711373fb96a51db5a0c89975b502cff12ea9",
+    "cache_status": "missing",
+    "helpers": []
+  }
+]

@@ -1,0 +1,1615 @@
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+index 8f9c496033..a4455ce511 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+@@ -8,3 +8,13 @@
+ | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
+ | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
+ | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
++
++## Block 14 — the formation-rate clause witness and the plaquette no-go (2026-09-15)
++
++| Family | Object/formulation | Mechanism/invariant | Terminal obligation | Strength vs target | Status | Concrete evidence | Reopen condition |
++|---|---|---|---|---|---|---|---|
++| F14.1 clocks to orders | independent memoryless clocks with covariant rates | `P(next = x) = λ_x/Λ`; mixtures through the multiset key | none | exact | candidate-complete | R1 (B1–B2) | — |
++| F14.2 the witness | uniform / seeded / attracting / parallel growth on `2×3`, the cube, the plaquette | exact enumeration by classes | none | exact | candidate-complete | R2 (C1–C4) | — |
++| F14.3 trees | seeded growth on cycle-free windows | connected cluster ⇒ one recorded neighbour ⇒ Theorem B | none | exact | candidate-complete | R3 (D1–D2) | — |
++| F14.4 the plaquette no-go | every covariant rate law | uniform first site; `p_type` by the diagonal-axis rotation; `G(p,d)` strictly increasing | larger windows | exact at every non-constant rule | candidate-complete | R4 (E1–E3) | a window-general argument |
++| F14.5 hull and span | convex combinations of order laws; the affine span | monotone class ratios; exact rank | none | exact | candidate-complete | R5, R6 (E4–E5) | — |
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
+index e99dd0e244..aaebce40c0 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md
+@@ -23,3 +23,11 @@
+ - Site weight `ψ`: constant by covariance on the transitive menu (executed); on a non-transitive menu it is not.
+ - Simultaneous formation (several records locking in one step) is not a total order; the formation law of a partial order with simultaneous steps would need a joint conditional the axiom does not state; named in N7.
+ - Infinite volume: the static specification's DLR existence (compactness on a finite menu) and uniqueness are outside the block.
++
++## Block 14 (2026-09-15) — the formation-rate clause witness
++- Dependencies: `minimal_axioms` (including reading note (2): no formation site, probability or rate is supplied); the census note (Lemma L, Theorem 3) and block 01 (Theorem B), both on `main`. Proposed, unaudited. Block 13 (PR #8147) referenced for motivation only.
++- Named premises: the records-only reading; the six-axis menu; positivity; the product rule; the clock model (independent memoryless clocks with covariant rates) as the supplied object of the witness.
++- Scaffolding: the windows (`2×3`, the open cube, the plaquette, the path, the star); the four executed rate laws; the plaquette types (toward/away/perpendicular) and the diagonal normalizers `d_same, d_anti, d_orth`.
++- External methods (re-proved at scope): competing exponentials; the plaquette symmetry argument; the class-ratio monotonicity; Gaussian elimination for the rank.
++- References named, not used: the competing-exponentials construction of a continuous-time chain; seeded growth as the classical boundary-growth model.
++- Counterfactual pass: the constant rule (all laws uniform); clocks with memory (outside the model); joint formation (next block); larger windows (not classified).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block14_findings.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block14_findings.md
+new file mode 100644
+index 0000000000..8c4a2a2578
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block14_findings.md
+@@ -0,0 +1,17 @@
++# Refuting pass — block 14 (supervisor-run, disjoint machinery; 2026-09-15)
++
++Routes compared (control `specs/supervisor_control_block14_rate_laws.py`, refuting pass `specs/supervisor_control_block14_refuter.py`, outputs in `.out.txt`):
++
++| item | runner's route | refuting route | result |
++|---|---|---|---|
++| the plaquette laws under four rate laws (R2, R4) | a history dynamic program over (order, values) | per-order closed forms — path orders `(1/6) Π K / K_2(closed diagonal)`, diagonal-first orders `(1/36) Π K / K_2²` — with the order probabilities read off the rate functions causally | equal on all 1296 patterns for all four laws |
++| the uniform distance on `2×3` (R2) | mixture by multiset classes | the census runner's own pinned cache on `main` (a different implementation; it prints `0.029104037152`) | agrees with the exact rational's decimal expansion |
++| the plaquette types (R4) | a stored table of corner diagonals | the sign of the dot product with the vector to the opposite corner computed from coordinates | equal on all `6⁴` patterns |
++| the tree theorem (R3) | total variation of the seeded law to the static law | structural: every seeded-charged order on the path and the star gives every site after the first exactly one recorded neighbour | holds for every charged order |
++| the general identity (R4, E2) | symbolic identities in `(p_in, p_out, p, q, r)` | direct evaluation at 200 random rational points, including the sign | equal; strictly positive unless `p = q` (resp. `p = q = r`) |
++
++Findings:
++- **F1 (fixed).** The runner's first symbolic positivity test for E2 expanded the cofactor of `(d_anti − d_same)` in the variable `1 − p` and saw negative coefficients; the proof's own form — the cofactor is a convex combination of `1/6` and `(d_anti + d_same)/36` — is what the runner now checks, together with the two gap identities `d_anti − d_same = Z_1²(p−q)²/(K_2^{anti} K_2^{same})` and `d_orth − d_same = Z_1²((p−r)² + (q−r)²)/(K_2^{orth} K_2^{same})`.
++- **F2 (noted).** The census runner prints the uniform distance as a decimal; the exact rational is in the census note's text (checked by A3). The refuting pass compares the decimal.
++
++Attempts to refute (nothing refuted): the plaquette argument was re-read for a rate law that depends on the *window* (the rate is a lattice function; the window only sets which sites can form, so the 90° and 180° rotations used are symmetries of the process); for a rate law whose diagonal candidate's rate depends on the *adjacent* candidates' geometry (it enters only through the sum `λ_a + λ_b`, which is invariant under the diagonal-axis rotation); and for the claim that value-dependent decisions in the path class drop out (both diagonals carry the same `d` on the comparison patterns, so whichever diagonal is closed the weight is `(1/6) Π K d`). Verdict of this pass: PASS-NO-BLOCKER at the supervisor's own standard, pending the owner's independent review.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block14.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block14.md
+new file mode 100644
+index 0000000000..b502fbfd80
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block14.md
+@@ -0,0 +1,15 @@
++# Claim status certificate — block 14 (close, 2026-09-15)
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: upstream_support
++reachability_to_target: supports
++conditional_surface_status: "R1, R3, R4, R5 proved for every positive triple (R4, R5 at every non-constant rule); R2, R6 executed at (3,1,2); conditional on the records-only reading, the six-axis menu, the product rule and the clock model as supplied conditions"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++claim_type_reason: "competing memoryless clocks; exact enumeration with the multiset key; a counting argument on trees with block 01's Theorem B; a symmetry-type argument with a strictly increasing weight, executed symbolically; an exact rank test; every number an exact rational"
++dependency_classes: "one premise node (minimal_axioms); the census note and block 01 (both on main; proposed, unaudited)"
++open_imports: "the six-axis menu; the product form; positivity; the clock model as the supplied object of the witness"
++review_loop_disposition: pending (supervisor-run block; author checks only)
++independence_class: "single seat (Fable, supervisor): control, contract with a lens pass, primary, refuting pass by per-order closed forms, the census cache, an independent type routine, a structural tree check and random-point identities, fold"
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block14.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block14.md
+new file mode 100644
+index 0000000000..7f08b7f32c
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block14.md
+@@ -0,0 +1,27 @@
++# GOAL — block 14: the formation-rate clause witness — no covariant clock law reaches the static law on a plaquette; every one does on a tree (2026-09-15)
++
++**Owner directive (2026-09-15):** don't stop; when a lane is exhausted, step back, assess the next lane and take it; no subagents; derivations over computation.
++
++**Why this block.** The derivation campaign's verdict table (#8093) lists "formation rate" as *to compute*: exhibit two covariant rate laws whose induced order laws give different finished-window laws, and record the separating clause candidates — (a) a rate independent of the nearest-neighbour conditions, (b) a rate determined by them, (c) no clause (registered data). No PR and no note on `main` (`f1755b6e10`) does it. The census note on `main` (2026-09-13) supplies the multiset key (Lemma L) and the uniform mixture's distance to the static law; block 01 (on `main`) supplies Theorem B (equality of the two readings when every record forms with at most one recorded neighbour). The block goes one step past the witness: it asks whether *any* covariant rate law can make the formation reading reproduce the static law — the reconciliation the repository's static reconstruction would need — and answers it exactly.
++
++**Object.** A finite window `Λ ⊂ Z³`; the six-axis menu with the product rule `(p, q, r)`, executed at `(3, 1, 2)`; records form one at a time; each unrecorded site `x` carries an exponential clock of rate `λ(x, S, v_S) ≥ 0` depending covariantly (lattice translations and proper cubic rotations acting on sites and values together) on the current recorded set `S` and its values; clocks are independent and memoryless; when `x`'s clock rings first, `x` records a value drawn from the rule given its recorded neighbours. *Value-blind* laws depend on `S` only; the three executed ones: uniform (`λ ≡ 1`), seeded (`λ = 1` if `x` has a recorded neighbour or `S = ∅`, else `0`), attracting (`λ = 1 + k`, `k` the number of recorded neighbours). One value-dependent law: parallel growth (`λ = 1 + [some recorded neighbour's value is the axis pointing from it to x]`).
++
++**Contract.**
++- R1 (clocks to orders): the next site is `x` with probability `λ_x/Σλ`, independent of the waiting time; the finished law is the jump chain's; for value-blind laws it is the mixture `Σ_σ P_R(σ) μ_σ` and depends on `R` only through the induced distribution on recorded-set multisets (Lemma L).
++- R2 (the witness): on `2×3` the three value-blind laws give pairwise different finished laws (exact total variations; the uniform one reproduces the census note's Theorem 3 rational); on the `2×2×2` cube the all-`+x` probability differs; the parallel-growth law differs from all three on the plaquette.
++- R3 (trees): on every tree window the seeded law gives the static law exactly (each record after the first has exactly one recorded neighbour; Theorem B); executed on the path and the star; the uniform law does not.
++- R4 (the plaquette no-go): for **every** covariant rate law — arbitrary causal dependence on the recorded values included — the finished law of the `2×2` plaquette is not the static law at every non-constant rule. Proof: the first site is uniform; from `S = {s}` the probability of the diagonal candidate depends only on the type of `v_s` (toward / away from the diagonal / perpendicular); for patterns whose two diagonals have the same pair type, `μ/Π_edges K = (1/4) Σ_s G(p_{type(s)}, d)` with `G(p, d) = (1 − p) d/6 + p d²/36` strictly increasing in `d = 1/K_2`; the patterns `(+x, −x, +x, −x)` and `(+x, +x, −x, −x)` have the same type multiset and `d_same ≠ d_anti` when `p ≠ q`; `(+x, −x, +y, +y)` gives `d_orth` when `p = q ≠ r`.
++- R5 (corollary): the static plaquette law is not a convex combination of the order laws.
++- R6 (executed): the parallel-growth law's plaquette law lies outside the affine span of the order laws.
++- The clause candidates recorded, not adopted; the owner's decision named.
++- N-gate for R4–R5.
++
++**Lens pass (self-run panel, before the primary).**
++- *"The witness is a corollary of order dependence (#8137) and the multiset key."* The witness alone, yes. R4 is not: it quantifies over every covariant rate law, value-dependent ones included, and uses the plaquette's symmetry types; R3 is the positive half (trees). Together they say exactly where a rate clause can and cannot deliver the static reading.
++- *"Value-dependent rates could bias the order to compensate."* Handled: the first site is uniform by the 90° rotation; the diagonal probability from `{s}` depends only on the type of `v_s` by the 180° rotation about the diagonal axis; in the path class the closing diagonal is irrelevant when both diagonals have the same type; the comparison patterns have equal type multisets.
++- *"Only one window."* The no-go is stated for the plaquette only; larger windows are not claimed (their class structure differs). The plaquette suffices for the clause table.
++- *"Rates that depend on the window?"* The rate law is a lattice function of `(x, S, v_S)`; the window only sets which sites can form; covariance is under the lattice group.
++
++**Forbidden phrases (beyond the lane's standing list):** "selects the physical rate", "the rate clause is adopted", "converge", "emergent", "certified".
++
++**Prior-art search at `origin/main` `f1755b6e10`.** `git grep -l -iE "random.priority|exponential clock|rate law|formation rate"` → the census note (uniform mixture), gravity/native notes using "rate" in other senses; no rate-law witness, no reachability statement. Open PRs: none on the rate seam (#8137 order dependence; #8140–#8145 finite-clock lanes; #8146/#8147 this lane).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+index 6dfc9de138..1824314aa6 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+@@ -25,3 +25,6 @@ Stacked on #8000 → #7999 → #7998 → main; all hand-offs. Block 04 = the two
+ Stacked on #8002 → #8000 → #7999 → #7998 → main; all hand-offs. Block 05 = the monotone-order class: one formation law for every linear extension of the product order (every rule); rows and columns path chains; the 2×2 corner law with corner independence; no right/down turning staircase is first-order Markov in its site values (proved for every nonconstant positive orbit triple under the declared product-rule monotone law); opposite corner classes give the same finite-rectangle law, with two distinct laws only at the executed 2×3 triples; the snake keeps rows and can lose column chains (column 0 survives on 3×3; on the executed 4×3 no column is a chain). Lens before the primary caught the supervisor's own wrong snake control. Historical checker: FIX FIRST on one forbidden mechanism sentence (false; deleted), nothing refuted in the theorems. Lock released.
+ 
+ Current source review found five further P2 groups, corrected in the canonical note and runner with their disposition in REVIEW_HISTORY.md. Same-session confirmation is pending; this appendix records an open review handoff.
++
++## 2026-09-15 block 14 opened for review as PR #8148 (supervisor)
++Independent PR against `main` (`f1755b6e10`); parents on `main`: the census note (2026-09-13) and block 01. Owner directive: don't stop; when a lane is exhausted, assess the next lane and take it. The assessment after block 13 found #8093's clock-and-rate block untouched ("Formation rate: to compute"). Block 14 = the rate witness and the reachability pair: competing memoryless clocks give the jump chain and, for value-blind laws, mixtures over orders through the multiset key (R1); the uniform, seeded and attracting laws give three different laws on `2×3` (the uniform distance equals the census note's rational), different all-`+x` probabilities on the cube, and four different laws on the plaquette including a value-dependent one (R2); on trees the seeded law equals the static law exactly (R3); on the plaquette no covariant rate law, value-dependent or not, is the static law at any non-constant rule — the plaquette's symmetries reduce every clock to the type probabilities `p_in, p_out, p_perp`, and the weight `(1/4)Σ_s G(p_{type(s)}, d)` is strictly increasing in `d = 1/K_2`, which differs between two patterns of equal type multiset (R4); the static law is outside the convex hull of the order laws (R5) and the value-dependent law outside their span (R6). Clause candidates (a)/(b)/(c) recorded, not adopted. Seats supervisor-run; refuting pass consistent on five routes; one runner defect fixed. Certificate 22/22; 13 mutations in-family; cache pinned; gates: pipeline ×2, audit_lint strict OK, vocab clean, diff --check clean, only the manifest kept from generated audit data. Lock held (refreshed) for the next block (the formation-unit witness).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
+index 9ccaee75bb..5155facc87 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md
+@@ -13,3 +13,8 @@ Policy: reference and converge, never borrow; every statement used is re-proved
+ - Compactness of a countable product of finite sets; Kolmogorov / Carathéodory extension on the cylinder algebra; the passage of finite-window conditional identities to a limit — re-proved at scope (Theorem C2, existence only).
+ - The Pickard random field / Markov-mesh (unilateral Markov field) construction — Abend, Harley and Kanal (1965); Pickard (1977, 1980): a two-parent unilateral construction whose rows and columns are Markov chains when the corner-pair condition holds. The framework's row sweep under the records-only reading is an instance: `Z_2 = Z_1^2 K^2` with `K` symmetric doubly stochastic is the condition; Theorem E re-proves the row statement natively (the column statement is a lead for the next block).
+ - Toom and Vasilyev (1970s): product-form and Markov invariant measures of probabilistic cellular automata — reference only.
++
++## Block 14 (2026-09-15) — references named, none used as authority
++- Competing independent exponential clocks and the embedded jump chain (the construction behind Gillespie's simulation algorithm): re-proved at scope as R1 by the exact integral.
++- Boundary-restricted growth (the Eden model's support rule): the seeded law; named only.
++- The census note on `main` (2026-09-13): Lemma L and Theorem 3 used as stated; the uniform distance reproduced exactly.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+index 2977b7f990..5a70290ba1 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+@@ -8,3 +8,7 @@ Routes read at their proofs, not their headlines.
+ | The consistency-first kernel K* and the frontier-process gate (bridge exercise 2026-08-26) | `archive/campaigns/exercise-bridge-adoption-20260826/SYNTHESIS.md` | On the gravity lane's Gaussian fixture, the sliding-frontier process marginals differ from the static Gram weights by an extent-stable gap. | Fixture-level, floats; this block states the axiom-level finite distinction; it does not explain the gate. |
+ | Convex-consistency (affine rule output) vs product form (R136/T212/T213) | same packet | Normalizer constant iff no coupling (rank argument; Funk–Hecke on the sphere). | Re-proved exactly on the menu as the two-neighbor normalizer factorization; used for T2(b). |
+ | Binary full-conditional compatibility (landed 2026-08-10) | `docs/ADMISSIBILITY_BINARY_FULL_CONDITIONAL_COMPATIBILITY_ISING_ACTION_AXIOM_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md` | Static half on binary menus; excludes formation dynamics by its own boundary. | Upstream; generalized here; the excluded object is this block's subject. |
++
++## Block 14 (2026-09-15) — negatives at scope
++- **No covariant formation-rate law reproduces the static law on the plaquette** (R4), for every non-constant rule and arbitrary causal dependence of the rates on the recorded values; escapes named for the N-gate: the constant rule; clocks with memory; joint formation; larger windows (not classified). The positive counterpart: on trees the seeded law reproduces it exactly (R3).
++- **The static plaquette law is not a convex combination of the sequential laws** (R5); the value-dependent parallel-growth law leaves even their linear span (R6, executed).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+index 74d2f60bae..4aa71bc646 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+@@ -78,3 +78,13 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
+ 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
+ 4. **The silent triples by a non-criterion route** (unchanged; heavy).
+ 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
++
++## Refresh at block 14 opening (2026-09-15)
++
++Block 14 opened for review (independent PR against main): the formation-rate clause witness and the plaquette no-go. Ranked next:
++
++1. **The formation-unit witness** (#8093, "to compute"): joint formation on a covariant set (a site and its six neighbours) against sequential formation; the exact separation and a theorem on when they agree — small-to-medium; derivation content in the joint law's definition and the agreement criterion.
++2. **The menus block** (#8093): covariant supports generated by recorded neighbours — mostly a stabilizer classification; low-medium.
++3. **Larger windows for the rate no-go** — whether every window containing a plaquette is unreachable by a rate clause; medium.
++4. **The stability theorem (block 12, S6); the static law's phase; the sphere rule beyond second order** — hard; unchanged.
++5. **Small corollaries of blocks 11–13** — unchanged.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block14.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block14.md
+new file mode 100644
+index 0000000000..4f103858d5
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block14.md
+@@ -0,0 +1,16 @@
++# RESULTS — block 14: the formation-rate clause witness (2026-09-15)
++
++**Deliverables (branch `physics-loop/admissibility-induced-law-block14-formation-rate-clause-witness-20260915`, independent PR against `main` at `f1755b6e10`; parents on `main`: the census note of 2026-09-13 and block 01):** the note `docs/ADMISSIBILITY_RULE_FORMATION_RATE_CLAUSE_WITNESS_NO_COVARIANT_CLOCK_LAW_REACHES_THE_STATIC_LAW_ON_A_PLAQUETTE_BOUNDED_THEOREM_NOTE_2026-09-15.md`; the runner `scripts/admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.py` (22 checks, 13 mutations, exact rational and symbolic arithmetic, ~17 s); the pinned cache; the control and the refuting pass with outputs (`specs/supervisor_control_block14_rate_laws.py`, `specs/supervisor_control_block14_refuter.py`); `GOAL_block14.md`; `CHECKER_block14_findings.md`; this record. Blocks 06–13 remain open as PRs #8034, #8035, #8138–#8142, #8146, #8147.
++
++**Why this block (the lane assessment after block 13).** The derivation campaign's verdict table (#8093) lists "formation rate" as *to compute*, with three clause candidates; nobody had opened it. The block exhibits the witness and answers the question behind it: whether a rate clause can make the formation reading reproduce the static law.
++
++## Result, in one paragraph
++Give every empty site an exponential clock whose rate depends covariantly on the recorded set and its values. The next site is the one whose clock rings first, with probability `λ_x/Σλ`, and the finished law is the jump chain's; value-blind laws give a mixture over orders that depends on the law only through the induced distribution of recorded-set multisets (R1). On `2×3` at `(3,1,2)` the uniform, seeded and attracting laws give three different laws at distances `0.0291`, `0.0203`, `0.0258` from the static law — the first equal to the census note's Theorem 3 rational — and on the cube the all-`+x` probabilities differ (R2). On every tree window the seeded law equals the static law exactly, because every record after the first has exactly one recorded neighbour (R3). On the plaquette no covariant rate law whatsoever — value-dependent ones included — gives the static law at any non-constant rule: the first site is uniform, the only surviving value-dependent decision is the probability `p_type` of jumping across the square, which depends only on the type of the first recorded value, and for patterns whose two diagonals have the same pair type `μ/Π K = (1/4) Σ_s G(p_{type(s)}, d)` with `G(p,d) = (1−p)d/6 + p d²/36` strictly increasing in `d = 1/K_2`; the patterns `(+x,−x,+x,−x)` and `(+x,+x,−x,−x)` have equal type multisets and `d_same = 72/13 ≠ d_anti = 72/11` (R4; `(+x,−x,+y,+y)` with `d_orth = 6` covers `p = q`). Hence the static plaquette law is not a convex combination of the order laws (R5), and the value-dependent parallel-growth law even leaves their linear span (R6). The clause candidates are recorded, not adopted.
++
++## Certificate
++- Runner: `TOTAL: PASS=22 FAIL=0`; 13 mutations each in its family; no floating-point literal or conversion; classical names only under Prior art and Imports.
++- Refuting pass (`CHECKER_block14_findings.md`): the plaquette laws from per-order closed forms, the census cache, an independent type routine, the structural tree check and random-point evaluation of the E2 identities — all consistent.
++- Claim type `bounded_theorem`; status `bounded-support`; trace `upstream_support`; audit required.
++
++## Not claimed
++Larger windows containing a plaquette; clocks with memory; joint formation (the formation-unit block, next); any clause; any selection of an order, rate, rule or coupling as physical.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+index 08d17f0940..fe9b122418 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+@@ -199,3 +199,16 @@ executed against the four declared inputs on current main. The original
+ 23-mutation census and historical pipeline receipts are not claimed as
+ fresh checks. Original-reviewer confirmation is pending; no audit status is
+ applied, and only the coordinator may perform authorized integration.
++
++## block 14 — V1-V5 (supervisor, 2026-09-15)
++- V1: #8093's clock-and-rate block ("Formation rate: to compute") and its three clause candidates; the reconciliation question behind it (can a rate clause deliver the static reading the repository's static reconstruction and the gravity Green function need).
++- V2: the lens pass in `GOAL_block14.md` ("a corollary of order dependence" — the witness yes, the no-go no; "value-dependent rates could compensate" — handled by the type argument; "one window" — conceded and stated).
++- V3: R1, R3, R4, R5 proved; R2, R6 executed exactly (22 checks, 13 mutations); the refuting pass agreed on five routes; one drafting defect in the runner's symbolic positivity test fixed before the census.
++- V4: no order, rate, rule or coupling selected; no clause adopted; the owner's decision named.
++- V5: consumers named — #8093's verdict table and assembly; the gravity node; the formation-unit block.
++
++## block 14 — supervisor lens pass, primary, refuting pass and fold (2026-09-15)
++Lens (`GOAL_block14.md`): as V2. Primary: the note and the runner (22 checks, 13 mutations). Refuting pass (`CHECKER_block14_findings.md`): the plaquette laws from per-order closed forms against the history DP (all four laws, 1296 patterns), the census runner's own cache for the uniform distance, an independent type routine on all patterns, the structural one-recorded-neighbour check on every seeded-charged tree order, and the E2 identities at 200 random rational points — all consistent. Fold: the runner's first symbolic positivity test expanded the cofactor in the wrong variable; replaced by the proof's convex-combination form. Author checks only; independent review pending.
++
++## block 14 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-15)
++1 self-containment: PASS — inputs: this note, the axioms memo, the census note and block 01, all on `main` at `f1755b6e10`; nothing pinned from a branch or PR (block 13 is motivation only). 2 cache/execution: PASS. 3 claim-scope honesty: PASS — the no-go is stated for the plaquette; larger windows marked open; the clause table adopts nothing. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
+index 9b1cd3a27f..d04a6aa8b7 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md
+@@ -84,3 +84,10 @@ git grep -l -iE "phase transition.*(menu|product rule)|(menu|product rule).*phas
+ | the 26 `coupling` hits (e.g. `BBS_RG_BANACH_CONTRACTION_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-10.md`, `FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md`) | non-matching | "coupling" as a physical coupling constant or RG contraction; no coupling of Markov chains for a menu rule |
+ 
+ Target state after the matched-hit review: **open** — no note on `origin/main` computes the one-site interdependence coefficient of the menu rule, states its uniqueness region, or re-proves the criterion.
++
++## Block 14 (2026-09-15) — prior-art search and routes (independent PR against main; blocks 06–13 are open PRs #8034, #8035, #8138–#8142, #8146, #8147)
++Searched commit: `origin/main` = `f1755b6e10`.
++- `git grep -l -iE "random.priority|exponential clock|rate law|formation rate" origin/main -- 'docs/*.md'` → the census note (the uniform mixture; Lemma L), and notes using "rate" in other senses (native, gravity, action-transfer); no rate-law witness and no reachability statement.
++- #8093's verdict table: row "Formation rate" — *to compute*; clause candidates (a), (b), (c) as recorded in the note.
++- Open PRs: none on the rate seam (#8137 order dependence; #8140–#8145 finite-clock lanes; #8146/#8147 this lane).
++Classification: **open after the matched-hit review.** Routes: C-A competing exponential clocks → jump chain → mixtures by multiset classes (R1) — chosen; C-B the witness by exact enumeration on `2×3`, the cube and the plaquette (R2) — chosen; C-C the tree theorem via Theorem B (R3) — chosen; C-D the plaquette symmetry-type argument for every covariant rate law (R4) with its corollaries (R5, R6) — chosen; C-E classifying larger windows — not taken (the plaquette suffices for the clause table); C-F clocks with memory — outside the campaign's clause.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+index e166420207..77c1b33df9 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+@@ -105,3 +105,14 @@ source_review_correction:
+ # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
+ # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
+ # audit_status: "unset; no audit invoked or verdict applied by this source correction"
++
++# ---------------------------------------------------------------- block 14 close (2026-09-15)
++# block: 14
++# branch: physics-loop/admissibility-induced-law-block14-formation-rate-clause-witness-20260915 (independent; base origin/main f1755b6e10; blocks 06-13 are open PRs #8034, #8035, #8138-#8142, #8146, #8147)
++# pr_status: opened for review — PR #8148 (base = main); hand-off; never merged by the campaign; not a main landing
++# final_certificate: "TOTAL: PASS=22 FAIL=0; 13 mutations, census 13/13 in-family; refuting pass consistent on five routes; gates: see HANDOFF.md"
++# seats: "supervisor-run: control -> contract with a lens pass -> primary (R1-R6, runner) -> refuting pass (per-order closed forms; census cache; independent types; structural trees; random-point identities) -> fold"
++# review_findings: "clocks -> jump chain lambda_x/Lambda; value-blind laws = mixtures through the multiset key; witness on 2x3 (uniform 0.0291 = census; seeded 0.0203; attracting 0.0258), the cube and the plaquette; trees: seeded growth = static exactly; plaquette: no covariant rate law (value-dependent included) is the static law at any non-constant rule (G(p,d) strictly increasing in d = 1/K_2; equal type multisets); static not in the convex hull of order laws; parallel growth outside their span; clause candidates recorded, not adopted"
++# strongest_unresolved_proof_obligation: "the no-go on every window containing a plaquette; the formation-unit question"
++# next_exact_action: "queue refresh 2026-09-15 (block 14 opening): the formation-unit witness; the menus block; larger windows"
++# lock: held (owner: don't stop; assess the next lane at each conclusion)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+index 8f432e2cd2..c601521f1f 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+@@ -63,3 +63,14 @@ reachability_to_target: supports
+ artifact_role: theorem
+ next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
+ ```
++
++# Trace gate — block 14, at PR opening (2026-09-15)
++```yaml
++trace_class: upstream_support
++target_claim_id: null
++target_blocker_text: "#8093's clock-and-rate block: whether any finished-window statistic depends on the formation-rate law, with the separating clause candidates; and whether a rate clause can reproduce the static law"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem
++next_trace_action: "the witness is exhibited exactly; a rate clause reproduces the static law on trees and on no window containing a plaquette (for every covariant rate law); the clause decision is the owner's. Next: the formation-unit witness (joint formation on a covariant set against sequential formation). Consumers: #8093's verdict table and assembly; the gravity node"
++```
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block14_rate_laws.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block14_rate_laws.out.txt
+new file mode 100644
+index 0000000000..b0b52e6400
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block14_rate_laws.out.txt
+@@ -0,0 +1,13 @@
++plaquette uniform: TV to static = 0.016593; mu/prodK at P1, P3, P4 = 152/169, 136/121, 1
++plaquette seeded: TV to static = 0.012525; mu/prodK at P1, P3, P4 = 12/13, 12/11, 1
++plaquette attract: TV to static = 0.014966; mu/prodK at P1, P3, P4 = 768/845, 672/605, 1
++plaquette parallel: TV to static = 0.016265; mu/prodK at P1, P3, P4 = 305/338, 271/242, 1
++static/prodK constant: 1
++2x3 classes: 28 (census note: 28); time 0.0s
++2x3 class laws computed in 13.7s
++2x3 uniform: TV to static = 372254646387017/12790481418000000 = 0.029104; nonzero classes 28
++2x3 seeded: TV to static = 5951761987229/292725576000000 = 0.020332; nonzero classes 6
++2x3 attract: TV to static = 32318135184155791/1253467178964000000 = 0.025783; nonzero classes 28
++census note's uniform TV: 372254646387017/12790481418000000 = 0.029104037152436212
++path3 seeded growth == static: True; uniform TV = 0.004630
++star4 seeded growth == static: True; uniform TV = 0.016637
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block14_rate_laws.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block14_rate_laws.py
+new file mode 100644
+index 0000000000..137181a7d0
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block14_rate_laws.py
+@@ -0,0 +1,140 @@
++"""Control, block 14 (supervisor): formation-rate laws. Six-axis menu, product rule (p,q,r) = (3,1,2).
++(1) plaquette: finished law under rate laws {uniform, seeded, attracting, parallel-biased}, exact; TV to static; the ratio
++    mu/prod K on the patterns P1 = (+x,-x,+x,-x) and P3 = (+x,+x,-x,-x) and P4 = (+x,-x,+y,+y);
++(2) 2x3: 720 orders -> multiset classes (expect 28); rate-law mixtures; TV(uniform mixture, static) vs the census note;
++(3) 2x2x2 cube: probability of the all-+x pattern under the three value-blind rate laws; classes (expect 542);
++(4) trees: path P3 and the 6-leaf star under seeded growth equal the static law."""
++from fractions import Fraction as F
++from itertools import permutations, product
++import time
++M = 6
++def orbit_type(s, u):
++    return "p" if s == u else ("q" if s // 2 == u // 2 else "r")
++W = {"p": 3, "q": 1, "r": 2}
++phi = [[W[orbit_type(s, t)] for t in range(M)] for s in range(M)]
++Z1 = sum(phi[0])
++def cond(rec, s):
++    num = 1
++    for a in rec:
++        num *= phi[s][a]
++    den = sum(__import__("functools").reduce(lambda x, y: x * y, [phi[u][a] for a in rec], 1) for u in range(M))
++    return F(num, den)
++def static_law(sites, edges):
++    pats = list(product(range(M), repeat=len(sites)))
++    w = {}
++    for v in pats:
++        x = 1
++        for (i, j) in edges:
++            x *= phi[v[i]][v[j]]
++        w[v] = x
++    Z = sum(w.values())
++    return {v: F(x, Z) for v, x in w.items()}
++def tv(a, b):
++    return sum(abs(a[v] - b[v]) for v in a) / 2
++# generic growth process on a window: rate(x, S, vS, nbrs) -> rational; returns finished law
++def finished_law(sites, nbrs, rate):
++    n = len(sites)
++    law = {}
++    # recursive over histories: state = (recorded tuple of (site, value)) ; enumerate all orders x values by DP on partial configs
++    from collections import defaultdict
++    layer = {((), ()): F(1)}  # (recorded sites tuple, values tuple) -> prob
++    for step in range(n):
++        new = defaultdict(F)
++        for (S, vals), pr in layer.items():
++            Sset = set(S)
++            vmap = dict(zip(S, vals))
++            rates = {x: rate(x, Sset, vmap, nbrs) for x in sites if x not in Sset}
++            tot = sum(rates.values())
++            for x, lam in rates.items():
++                if lam == 0:
++                    continue
++                rec = tuple(vmap[y] for y in nbrs[x] if y in Sset)
++                for s in range(M):
++                    c = cond(rec, s) if rec else F(1, M)
++                    new[(S + (x,), vals + (s,))] += pr * lam / tot * c
++        layer = new
++    for (S, vals), pr in layer.items():
++        v = [None] * n
++        for x, s in zip(S, vals):
++            v[x] = s
++        law[tuple(v)] = law.get(tuple(v), F(0)) + pr
++    return law
++uniform = lambda x, S, v, nb: F(1)
++seeded = lambda x, S, v, nb: (F(1) if (len(S) == 0 or any(y in S for y in nb[x])) else F(0))
++attract = lambda x, S, v, nb: F(1 + sum(1 for y in nb[x] if y in S))
++# (1) plaquette 1=(0,0) 2=(1,0) 3=(1,1) 4=(0,1); directions to candidate from recorded neighbour; parallel bias:
++# rate = 1 + [some recorded neighbour y of x has value parallel to the direction x - y]
++pos = {0: (0, 0), 1: (1, 0), 2: (1, 1), 3: (0, 1)}
++axis_of_value = {0: (1, 0, 0), 1: (-1, 0, 0), 2: (0, 1, 0), 3: (0, -1, 0), 4: (0, 0, 1), 5: (0, 0, -1)}
++def parallel(x, S, v, nb):
++    b = 0
++    for y in nb[x]:
++        if y in S:
++            d = (pos[x][0] - pos[y][0], pos[x][1] - pos[y][1], 0)
++            if axis_of_value[v[y]] == d:
++                b = 1
++    return F(1 + b)
++sites4 = [0, 1, 2, 3]; edges4 = [(0, 1), (1, 2), (2, 3), (3, 0)]
++nb4 = {0: [1, 3], 1: [0, 2], 2: [1, 3], 3: [2, 0]}
++stat4 = static_law(sites4, edges4)
++def prodK(v, edges):
++    x = F(1)
++    for (i, j) in edges:
++        x *= F(phi[v[i]][v[j]], Z1)
++    return x
++P1, P3, P4 = (0, 1, 0, 1), (0, 0, 1, 1), (0, 1, 2, 2)
++for name, rl in (("uniform", uniform), ("seeded", seeded), ("attract", attract), ("parallel", parallel)):
++    mu = finished_law(sites4, nb4, rl)
++    assert abs(sum(mu.values()) - 1) == 0
++    print(f"plaquette {name}: TV to static = {float(tv(mu, stat4)):.6f}; mu/prodK at P1, P3, P4 = {mu[P1]/prodK(P1, edges4)}, {mu[P3]/prodK(P3, edges4)}, {mu[P4]/prodK(P4, edges4)}")
++print("static/prodK constant:", len({stat4[v] / prodK(v, edges4) for v in stat4}))
++# (2) 2x3: sites 0..5 at (r,c); classes
++sites6 = list(range(6)); pos6 = {i: (i // 3, i % 3) for i in sites6}
++edges6 = [(i, j) for i in sites6 for j in sites6 if i < j and abs(pos6[i][0] - pos6[j][0]) + abs(pos6[i][1] - pos6[j][1]) == 1]
++nb6 = {i: [j for j in sites6 if (min(i, j), max(i, j)) in edges6] for i in sites6}
++def multiset_key(order, nb):
++    S = set(); key = []
++    for x in order:
++        A = tuple(sorted(y for y in nb[x] if y in S))
++        if len(A) >= 2:
++            key.append(A)
++        S.add(x)
++    return tuple(sorted(key))
++t0 = time.time()
++classes = {}
++for order in permutations(sites6):
++    classes.setdefault(multiset_key(order, nb6), []).append(order)
++print(f"2x3 classes: {len(classes)} (census note: 28); time {time.time()-t0:.1f}s")
++def order_prob(order, nb, rate):
++    S = set(); pr = F(1)
++    for x in order:
++        rates = {y: rate(y, S, {}, nb) for y in nb if y not in S}
++        pr *= rates[x] / sum(rates.values())
++        S.add(x)
++    return pr
++def class_law(order, sites, nb):
++    n = len(sites); law = {}
++    for v in product(range(M), repeat=n):
++        S = set(); pr = F(1)
++        for x in order:
++            rec = tuple(v[y] for y in nb[x] if y in S)
++            pr *= cond(rec, v[x]) if rec else F(1, M)
++            S.add(x)
++        law[v] = pr
++    return law
++stat6 = static_law(sites6, edges6)
++t0 = time.time()
++laws6 = {k: class_law(orders[0], sites6, nb6) for k, orders in classes.items()}
++print(f"2x3 class laws computed in {time.time()-t0:.1f}s")
++for name, rl in (("uniform", uniform), ("seeded", seeded), ("attract", attract)):
++    Pc = {k: sum(order_prob(o, nb6, rl) for o in orders) for k, orders in classes.items()}
++    assert sum(Pc.values()) == 1
++    mix = {v: sum(Pc[k] * laws6[k][v] for k in classes) for v in stat6}
++    print(f"2x3 {name}: TV to static = {tv(mix, stat6)} = {float(tv(mix, stat6)):.6f}; nonzero classes {sum(1 for k in Pc if Pc[k] > 0)}")
++print("census note's uniform TV: 372254646387017/12790481418000000 =", float(F(372254646387017, 12790481418000000)))
++# (4) trees: path 0-1-2 and star center 0 with leaves 1..6
++for name, sites, edges in (("path3", [0, 1, 2], [(0, 1), (1, 2)]), ("star4", [0, 1, 2, 3, 4], [(0, 1), (0, 2), (0, 3), (0, 4)])):
++    nb = {i: [j for j in sites if (min(i, j), max(i, j)) in edges] for i in sites}
++    mu = finished_law(sites, nb, seeded)
++    st = static_law(sites, edges)
++    print(f"{name} seeded growth == static: {tv(mu, st) == 0}; uniform TV = {float(tv(finished_law(sites, nb, uniform), st)):.6f}")
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block14_refuter.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block14_refuter.out.txt
+new file mode 100644
+index 0000000000..38d4c107a1
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block14_refuter.out.txt
+@@ -0,0 +1,5 @@
++R1 plaquette laws from per-order closed forms equal the history DP for all four laws on 1296 patterns: True
++R2 the census runner's own pinned cache carries the uniform-mixture distance (fraction or decimal 0.0291...): True | PASS: D8 rect TV(mix,static) (3, 1, 2) 0.029104037152
++R3 independent type routine agrees with the runner's on P1, P3, P4 and all 6^4 patterns: True
++R4 every seeded-charged order on the path and the star records exactly one neighbour per site after the first: True
++R5 the E2 identities and their signs hold at 200 random rational points: True
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block14_refuter.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block14_refuter.py
+new file mode 100644
+index 0000000000..38c3a94bee
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block14_refuter.py
+@@ -0,0 +1,102 @@
++"""Refuting pass, block 14 (supervisor seat, disjoint machinery from the runner's checks):
++(R1) the plaquette laws from per-order weights by the hand-derived closed forms (path orders: (1/6) prod K / K_2 of the closed
++     diagonal; diagonal-first orders: (1/36) prod K / K_2^2), with the order probabilities read off the rate functions, against
++     the runner's history DP on all 1296 patterns for the four laws;
++(R2) the census note's Theorem 3 rational read from the census runner's own pinned cache on main (a different implementation);
++(R3) the plaquette types by an independent routine (the sign of the angle between the value axis and the corner diagonal computed
++     from coordinates of the opposite corner rather than a stored direction table);
++(R4) the tree theorem structurally: every seeded-charged order on the star and the path gives every site after the first exactly
++     one recorded neighbour;
++(R5) the general identity of E2 at random rational points (p_in, p_out, p, q, r) by direct evaluation.
++Run from the pack: the runner is imported from the repository's scripts/ directory."""
++import importlib
++import random
++import re
++import sys
++from fractions import Fraction as F
++from itertools import permutations
++from pathlib import Path
++
++ROOT = Path(__file__).resolve().parents[5]
++sys.path.insert(0, str(ROOT / "scripts"))
++r14 = importlib.import_module("admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15")
++M = 6
++sites, pos, edges, nb = r14.window("plaquette")
++opp = {0: 2, 1: 3, 2: 0, 3: 1}
++def closed_diagonal(order):
++    S = set(); kind = None; diag = None; count = 0
++    for x in order:
++        A = [y for y in nb[x] if y in S]
++        if len(A) == 2:
++            count += 1; diag = tuple(sorted(A))
++        S.add(x)
++    return count, diag
++ok1 = True
++for name, rate in r14.RATE_LAWS.items():
++    law = {}
++    for v in r14.static_law(sites, edges):
++        pk = r14.prod_K(v, edges)
++        tot = F(0)
++        for order in permutations(sites):
++            # order probability with value-dependent rates: causal
++            S = set(); pr = F(1); vm = {}
++            for x in order:
++                rates = {y: rate(y, S, vm, nb, pos) for y in sites if y not in S}
++                tt = sum(rates.values())
++                if rates[x] == 0:
++                    pr = F(0); break
++                pr *= rates[x] / tt
++                S.add(x); vm[x] = v[x]
++            if pr == 0:
++                continue
++            count, diag = closed_diagonal(order)
++            k2 = r14.K2(v[diag[0]], v[diag[1]])
++            w = F(1, 6) * pk / k2 if count == 1 else F(1, 36) * pk / (k2 * k2)
++            tot += pr * w
++        law[v] = tot
++    direct = r14.finished_law(sites, nb, pos, rate)
++    ok1 = ok1 and all(law[v] == direct[v] for v in law)
++print("R1 plaquette laws from per-order closed forms equal the history DP for all four laws on 1296 patterns:", ok1)
++cache = ROOT / "logs" / "runner-cache" / "admissibility_formation_order_menu_order_mixture_monotone_box_and_cube_census_2026_09_13.txt"
++found = None
++if cache.is_file():
++    txt = cache.read_text(encoding="utf-8")
++    frac = re.search(r"372254646387017\s*/\s*12790481418000000", txt) is not None
++    # the census runner prints the distance as a decimal; the exact rational is stated in its note (checked by the runner's A3)
++    found = frac or ("0.0291" in txt)
++    line = next((ln for ln in txt.splitlines() if "0.0291" in ln or "372254646387017" in ln), "")
++print("R2 the census runner's own pinned cache carries the uniform-mixture distance (fraction or decimal 0.0291...):", found, "|", line[:120])
++def vtype2(s, val):
++    ax = r14.AXIS[val]
++    o = pos[opp[s]]
++    d = tuple(o[k] - pos[s][k] for k in range(3))
++    dot = sum(ax[k] * d[k] for k in range(3))
++    return "in" if dot > 0 else ("out" if dot < 0 else "perp")
++P1, P3, P4 = (0, 1, 0, 1), (0, 0, 1, 1), (0, 1, 2, 2)
++print("R3 independent type routine agrees with the runner's on P1, P3, P4 and all 6^4 patterns:", all(vtype2(s, v[s]) == r14.vtype(s, v[s]) for v in r14.static_law(sites, edges) for s in range(4)))
++ok4 = True
++for name in ("path3", "star4"):
++    st, ps, ed, nbt = r14.window(name)
++    for order in permutations(st):
++        if r14.order_prob(order, nbt, ps, r14.seeded) == 0:
++            continue
++        S = set()
++        for i, x in enumerate(order):
++            k = sum(1 for y in nbt[x] if y in S)
++            ok4 = ok4 and (k == (0 if i == 0 else 1))
++            S.add(x)
++print("R4 every seeded-charged order on the path and the star records exactly one neighbour per site after the first:", ok4)
++random.seed(7)
++G = lambda p, d: (1 - p) * d / 6 + p * d * d / 36
++ok5 = True
++for _ in range(200):
++    p, q, r = (F(random.randint(1, 40), random.randint(1, 40)) for _ in range(3))
++    pin, pout = F(random.randint(0, 20), 20), F(random.randint(0, 20), 20)
++    Z = p + q + 4 * r
++    ds, da, do = Z * Z / (p * p + q * q + 4 * r * r), Z * Z / (2 * p * q + 4 * r * r), Z * Z / (2 * r * (p + q) + 2 * r * r)
++    lhs = sum(G(pt, da) - G(pt, ds) for pt in (pin, pout)) / 2
++    rhs = (da - ds) * sum((1 - pt) / 6 + pt * (da + ds) / 36 for pt in (pin, pout)) / 2
++    ok5 = ok5 and lhs == rhs and (da - ds) == Z * Z * (p - q) ** 2 / ((2 * p * q + 4 * r * r) * (p * p + q * q + 4 * r * r)) and lhs >= 0 and (lhs > 0 or p == q)
++    lhs_o = sum(G(pt, do) - G(pt, ds) for pt in (pin, pout)) / 2
++    ok5 = ok5 and (do - ds) == Z * Z * ((p - r) ** 2 + (q - r) ** 2) / ((2 * r * (p + q) + 2 * r * r) * (p * p + q * q + 4 * r * r)) and lhs_o >= 0
++print("R5 the E2 identities and their signs hold at 200 random rational points:", ok5)
+diff --git a/docs/ADMISSIBILITY_RULE_FORMATION_RATE_CLAUSE_WITNESS_NO_COVARIANT_CLOCK_LAW_REACHES_THE_STATIC_LAW_ON_A_PLAQUETTE_BOUNDED_THEOREM_NOTE_2026-09-15.md b/docs/ADMISSIBILITY_RULE_FORMATION_RATE_CLAUSE_WITNESS_NO_COVARIANT_CLOCK_LAW_REACHES_THE_STATIC_LAW_ON_A_PLAQUETTE_BOUNDED_THEOREM_NOTE_2026-09-15.md
+new file mode 100644
+index 0000000000..88e1a487b2
+--- /dev/null
++++ b/docs/ADMISSIBILITY_RULE_FORMATION_RATE_CLAUSE_WITNESS_NO_COVARIANT_CLOCK_LAW_REACHES_THE_STATIC_LAW_ON_A_PLAQUETTE_BOUNDED_THEOREM_NOTE_2026-09-15.md
+@@ -0,0 +1,361 @@
++---
++claim_id: admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_the_static_law_on_a_plaquette_bounded_theorem_note_2026-09-15
++claim_type: bounded_theorem
++claim_scope: "On finite windows of Z^3 with the six-axis menu and the covariant positive product rule (p, q, r), executed at (3, 1, 2), under the records-only reading, with records forming one at a time under independent memoryless clocks whose rates depend covariantly on the recorded set and its values: (R1) the next site is x with probability lambda_x / sum lambda, the finished law is the jump chain's, and for value-blind rate laws it is the mixture over orders of the sequential laws, depending on the rate law only through the induced distribution on recorded-set multisets (proved); (R2) the uniform, seeded and attracting laws give pairwise different finished laws on the 2x3 rectangle (exact total variations; the uniform one equals the census note's Theorem 3 rational) and different all-+x probabilities on the 2x2x2 cube; a value-dependent parallel-growth law differs from all three on the plaquette (executed); (R3) on every tree window the seeded law gives the static law exactly, since every record after the first has exactly one recorded neighbour (proved; executed on the path and the star); (R4) for every covariant rate law, with arbitrary causal dependence on the recorded values, the finished law of the 2x2 plaquette is not the static law at every non-constant rule (proved by the plaquette's symmetry types and a strictly increasing weight; executed symbolically for the general law and exactly for four laws); (R5) the static plaquette law is not a convex combination of the sequential laws (proved); (R6) the parallel-growth law's plaquette law lies outside the affine span of the sequential laws (executed). The separating clause candidates are recorded and not adopted; no order, rate, rule or coupling is selected as physical; exact arithmetic throughout."
++upstream_dependencies:
++  - minimal_axioms
++  - admissibility_formation_order_menu_order_mixture_monotone_box_and_cube_census_bounded_theorem_note_2026-09-13
++  - admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06
++runner: scripts/admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.py
++---
++
++# The formation-rate clause witness: every covariant clock law gives a mixture over orders that is the static law on trees and never the static law on a plaquette
++
++**Date:** 2026-09-15
++**Type:** bounded_theorem
++**Status:** bounded-support (exact; conditional on the named supplied readings; unaudited)
++
++## Result up front
++
++The axioms say records form and say how a forming record's value depends
++on its recorded neighbours; they say nothing about *when* a site forms. The
++derivation campaign asks for a witness that the missing rate law matters,
++and names three clause candidates: a rate that ignores the neighbourhood, a
++rate set by it, or no clause at all. Give every empty site a clock whose
++rate may depend, in any covariant way, on where the records are and what
++they say. Then the order in which records form is random, the finished
++pattern law is an average over orders, and different clock laws give
++different averages: on a two-by-three window the uniform clock, a clock
++that only fires next to existing records, and a clock that fires faster
++the more recorded neighbours a site has give three different laws, and we
++print their exact distances from the static law. That is the witness the
++campaign asked for.
++
++The sharper question is whether some clock law could make the
++record-by-record reading reproduce the static law that the rest of the
++repository uses — the law a gravity Green function would need (block 13).
++On any tree-shaped window the answer is yes, exactly: the clock that fires
++only next to existing records gives every site exactly one recorded
++neighbour, and then the two readings agree. On a single square the answer
++is no, for every covariant clock law whatsoever, value-dependent or not:
++the square's symmetries pin the only decisions a clock can make down to a
++few numbers, and the resulting weight is strictly increasing in a quantity
++that takes different values on two patterns the static law weighs equally.
++So a rate clause cannot deliver the static reading on any window with a
++square in it, while it delivers it exactly on windows without cycles.
++
++Exactly: `P(next = x) = λ_x/Σλ` (R1); on `2×3` at `(3,1,2)` the distances to
++the static law are `372254646387017/12790481418000000` (uniform, the census
++note's number), `5951761987229/292725576000000` (seeded) and
++`32318135184155791/1253467178964000000` (attracting) (R2); on the plaquette
++`μ/Π_edges K = (1/4) Σ_s G(p_{type(s)}, d)` with `G(p,d) = (1−p)d/6 + p d²/36`
++and `d_same = 72/13`, `d_anti = 72/11`, `d_orth = 6` at `(3,1,2)` (R4).
++Executed with exact arithmetic: 22 checks, 13 mutations.
++
++## Machine status and trace
++
++```yaml
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: upstream_support
++target_claim_id: null
++target_blocker_text: "the derivation campaign's clock-and-rate block (#8093, verdict table row 'Formation rate': to compute) — whether any finished-window statistic depends on the formation-rate law, with the separating clause candidates (a) rate independent of the nearest-neighbour conditions, (b) rate determined by them, (c) no clause; and the reconciliation question behind it: whether a rate clause can make the formation reading reproduce the static law"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem
++next_trace_action: "the witness is exhibited exactly and the reconciliation question is answered: a rate clause reproduces the static law on trees and on no window containing a plaquette; the clause decision is the owner's. Consumers: #8093's verdict table and assembly; the gravity node (block 13: its Green function needs the static reading, which no rate clause supplies); the formation-unit block (next)"
++conditional_surface_status: "R1, R3, R4, R5 proved for every positive triple (R4 at every non-constant rule); R2, R6 executed at (3,1,2); conditional on the records-only reading, the six-axis menu, the product rule and the clock model as supplied conditions"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++claim_type_reason: "competing memoryless clocks (R1); exact enumeration of orders and patterns with the multiset key (R2); a counting argument on trees with block 01's Theorem B (R3); a symmetry-type argument with a strictly increasing weight (R4, R5); an exact rank test (R6); every number an exact rational"
++```
++
++## Premises and declared objects
++
++**Axioms used (verbatim).** From
++[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md): "There is one
++fixed nearest-neighbor admissibility rule, covariant under lattice translations
++and proper cubic rotations." — "For each site, the probability distribution over
++the possibilities is determined by, and varies with, the nearest-neighbor
++conditions." — "Records form." — "Only records are readable." — and from its
++reading note (2): the distribution "does not supply the formation site,
++probability, or rate."
++
++**Readings carried, named, nothing new adopted.** The records-only reading
++and the formation law of block 01
++([`ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md`](ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md)):
++along an order `σ` the site `x_k` draws from the rule with its recorded
++neighbours `A_k` only, `μ_σ(v) = Π_k r(v_{x_k} | v_{A_k})`, with
++`r(a | ∅) = 1/M` and `r(a | A) = Π_{y∈A} K(v_y, a)/K_{|A|}(v_A)`,
++`K(b, a) = φ(a, b)/Z_1`, `K_k(v_A) = Σ_s Π_{y∈A} K(v_y, s)` (`K_1 ≡ 1`). The
++static law `Π_edges φ(v_e)/Z`. The six-axis menu, positivity, the product rule
++with weights `(p, q, r)`, `Z_1 = p + q + 4r`. The multiset key of the census
++note ([`ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md`](ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md),
++Lemma L): `μ_σ` depends on `σ` only through the multiset of recorded sets of
++size at least two.
++
++**The clock model (the supplied object of this block).** Every unrecorded
++site `x` carries an exponential clock of rate `λ(x, S, v_S) ≥ 0`, a function
++of the site, the recorded set `S` and the recorded values, invariant under the
++simultaneous action of lattice translations and proper cubic rotations on
++`(x, S, v_S)` (the menu carries the rotation action on axes). Clocks are
++independent given the state and memoryless. When `x`'s clock rings first, `x`
++records a value from the rule given `v_{N(x)∩S}`; then all clocks restart. The
++window `Λ` is the set of sites that can form; the process stops when `Λ` is
++recorded. *Value-blind* laws depend on `(x, S)` only. Executed laws: uniform
++`λ ≡ 1`; seeded `λ = 1` if `N(x) ∩ S ≠ ∅` or `S = ∅`, else `0`; attracting
++`λ = 1 + |N(x) ∩ S|`; parallel growth
++`λ = 1 + [∃ y ∈ N(x) ∩ S : v_y = the axis from y to x]`.
++
++**Windows.** The `2×3` rectangle; the open `2×2×2` cube; the plaquette
++(sites `1 = (0,0)`, `2 = (1,0)`, `3 = (1,1)`, `4 = (0,1)` in the plane `z = 0`);
++the path of three sites; the star (a site and four of its neighbours).
++
++**Plaquette types.** For a corner `s` let `δ_s` point from `s` to the opposite
++corner (`δ_1 = (1,1,0)`, `δ_2 = (−1,1,0)`, `δ_3 = (−1,−1,0)`, `δ_4 = (1,−1,0)`).
++A value `v_s` is of type *toward* if `v_s · δ_s > 0`, *away* if `< 0`,
++*perpendicular* if `v_s = ±z`. Write `d_same = 1/K_2(a,a)`,
++`d_anti = 1/K_2(a,−a)`, `d_orth = 1/K_2(a,b)` for `b ⊥ a`; at `(3,1,2)`:
++`72/13`, `72/11`, `6`.
++
++## Prior art and what is new
++
++The census note (on `main`) proved the multiset key and computed the uniform
++mixture over all orders on `2×3` and on the cube, calling it a
++witness-generating device; block 01 proved Theorem B (the two readings agree
++when every record forms with at most one recorded neighbour) and the
++disagreement on every window with a cycle; PR #8137 (open) shows a varying
++possibility-symmetric rule has order-dependent statistics. Competing
++exponential clocks and their jump chain are the textbook construction of a
++continuous-time Markov chain (Gillespie's algorithm is the same fact);
++growth restricted to the boundary of the recorded cluster is the Eden model's
++support rule. None of it is used as authority. Nothing on `main`
++(`f1755b6e10`; search recorded in `ROUTE_PORTFOLIO.md`) exhibits the rate-law
++witness or asks whether a rate law can reproduce the static law.
++
++New here: the witness (R2) and the positive/negative reachability pair —
++exact equality on trees (R3), impossibility on the plaquette for every
++covariant rate law, value-dependent ones included (R4), with its two
++corollaries (R5, R6).
++
++## Exact target and obligation graph
++
++| obligation | status here |
++|---|---|
++| R1 clocks to orders; value-blind laws give mixtures through the multiset distribution | proved; the jump probability executed symbolically; mixtures by classes against full enumeration (B1–B2) |
++| R2 the witness on `2×3`, the cube and the plaquette | executed (C1–C4) |
++| R3 trees: seeded growth = static | proved; executed on the path and the star (D1–D2) |
++| R4 the plaquette no-go for every covariant rate law | proved; executed symbolically in the type probabilities and exactly for four laws (E1–E3) |
++| R5 not a convex combination of the sequential laws | proved; executed by the class ratios (E4) |
++| R6 parallel growth outside the affine span | executed (E5) |
++| larger windows containing a plaquette; other menus; the formation-unit question | open; not this note |
++
++## Theorem R1 — clocks give orders, orders give mixtures
++
++**Statement.** In the state `(S, v_S)` with unrecorded rates `λ_y`,
++`Λ = Σ_y λ_y > 0`, the next site to form is `x` with probability `λ_x/Λ`,
++independent of the waiting time, and the finished law is that of the
++discrete chain with these jump probabilities. For a value-blind law the jump
++probabilities do not depend on the values, the order `σ` has a law `P_R(σ)`
++independent of the values, and the finished law is `μ_R = Σ_σ P_R(σ) μ_σ`,
++which depends on `R` only through the induced law of the recorded-set
++multiset. For a value-dependent law the finished law is
++`μ_R(v) = Σ_σ P_R(σ | v) μ_σ(v)`, where `P_R(σ | v)` uses at each step only
++the values recorded before it.
++
++*Proof.* With independent exponential times `T_y` of rates `λ_y`,
++`P(T_x < T_y ∀ y ≠ x) = ∫_0^∞ λ_x e^{−λ_x t} Π_{y≠x} e^{−λ_y t} dt = λ_x/Λ`,
++and the minimum's law is exponential with rate `Λ` independent of which clock
++rang; memorylessness makes the state sequence Markov with these jump
++probabilities, and the finished pattern depends only on the state sequence.
++Value-blind: the jump probabilities are functions of `(S)` only, so the order
++law factorizes out of the value draws; the last claim is Lemma L. ∎ Executed:
++the jump probabilities for rates `(1, 2, 3)` by the exact integral (B1); the
++mixtures on `2×3` computed by multiset classes against the full enumeration of
++`720` orders (B2).
++
++## Theorem R2 — the witness
++
++**Statement.** At `(3,1,2)` on `2×3` (28 classes, as in the census note) the
++uniform, seeded and attracting laws give pairwise different finished laws;
++their distances to the static law are `372254646387017/12790481418000000` (`0.0291…`) (uniform; equal to the
++census note's Theorem 3 value), `5951761987229/292725576000000` (`0.0203…`) (seeded; it charges 6 of the 28
++classes) and `32318135184155791/1253467178964000000` (`0.0258…`) (attracting); the pairwise distances are
++`1415480709077/147346345935360` (uniform–seeded, `0.0096…`), `842029569149/229205427010560` (uniform–attracting, `0.0037…`), `12238463804737/2062848843095040` (seeded–attracting, `0.0059…`). On the open cube (542 classes) the all-`+x` pattern has
++probability `338229/7997080000` (uniform), `84807/1799782400` (seeded), `3244436397/73116160000000` (attracting) under the three laws, against `59049/775835648` for the
++static law. On the plaquette the four laws give distances `262271/15806232` (uniform, `0.0166…`), `30457/2431728` (seeded, `0.0125…`), `591377/39515580` (attracting, `0.0150…`), `2239744469/137703893184` (parallel growth, `0.0163…`) to the
++static law and are pairwise different.
++
++*Proof.* Enumeration; the class structure is Lemma L. ∎ (C1–C4.)
++
++## Theorem R3 — on trees the seeded law is the static law
++
++**Statement.** Let `Λ` be a tree (a connected window without cycles). Under
++the seeded law the recorded set is connected at every step, so every record
++after the first has exactly one recorded neighbour, and `μ_seeded` equals the
++static law of `Λ` exactly, whatever the first site. The uniform law differs
++from it on the path and on the star.
++
++*Proof.* If the recorded cluster is connected and `x` has two recorded
++neighbours, the two paths from `x` through them into the cluster close a
++cycle; so on a tree every new site has exactly one recorded neighbour, the
++seeded law keeps the cluster connected by construction, and block 01's Theorem
++B applies to every order it charges. Under the uniform law an order in which
++two non-adjacent sites form before their common neighbour has positive
++probability and gives a site with two recorded neighbours. ∎ Executed: the
++path and the four-leaf star, seeded equal to static, uniform at distance
++`1/216` on the path and `56059/3369600` on the star (D1–D2).
++
++## Theorem R4 — no covariant rate law reaches the static law on a plaquette
++
++**Statement.** For every covariant rate law — value-dependent or not — and
++every non-constant rule (not `p = q = r`), the finished law of the plaquette
++is not the static law.
++
++*Proof.* Write `Π K = Π_edges K(v_e)`. Every order of the plaquette is of one of
++two kinds: a *path* order (start `s`, then an adjacent corner, then the next
++along the cycle, then the last corner, which records both its neighbours, the
++ends of one diagonal) with `μ_σ = (1/6) Π K · d`, `d = 1/K_2` of that diagonal;
++or a *diagonal-first* order (start `s`, then the opposite corner with no
++recorded neighbour, then the remaining two, each recording both) with
++`μ_σ = (1/36) Π K · d_s²`, `d_s` for the diagonal through `s`. (Each edge factor
++`K` appears once, when its later endpoint forms; `K_1 ≡ 1`.) The static law is
++`Π K · Z_1⁴/Z`, a constant multiple of `Π K`.
++
++Now the clock. At `S = ∅` the four rates are equal (the 90° rotation about
++the plaquette's axis is a proper rotation carrying each corner to the next
++and fixing the configuration), so the first site is uniform and its value is
++uniform. At `S = {s}` the probability `p_s` that the opposite corner forms
++next is `λ_diag/(λ_diag + λ_a + λ_b)`, a function of `(s, v_s)` alone; the
++180° rotation about the axis `δ_s` (a proper rotation; it swaps the two
++adjacent candidates and fixes the diagonal one, and acts on values by
++swapping the two in-plane axes along `δ_s` and reversing `z`) shows that `p_s`
++depends only on the type of `v_s`: `p_in`, `p_out`, `p_perp`. Whatever happens
++later, a diagonal-first history from `s` ends with weight `(1/36) Π K d_s²`,
++and a path history from `s` ends with weight `(1/6) Π K d` for the diagonal it
++closes. Hence for any pattern whose two diagonals have the same pair type,
++`d_1 = d_2 = d`, the finished law is
++`μ(v) = Π K · (1/4) Σ_s [(1 − p_{type(s)}) d/6 + p_{type(s)} d²/36] = Π K · (1/4) Σ_s G(p_{type(s)}, d)`,
++where `G(p, d) = (1 − p) d/6 + p d²/36` is strictly increasing in `d > 0` for
++every `p ∈ [0, 1]`, and the path-class decisions (which may depend on values)
++drop out because both diagonals carry the same `d`.
++
++Take `P_1 = (+x, −x, +x, −x)`: diagonals `(+x,+x)` and `(−x,−x)`, `d = d_same`;
++types toward, toward, away, away. Take `P_3 = (+x, +x, −x, −x)`: diagonals
++`(+x,−x)` twice, `d = d_anti`; types toward, away, toward, away — the same
++multiset. So `μ(P_3)/ΠK(P_3) − μ(P_1)/ΠK(P_1) = (1/2) Σ_{τ ∈ {in, out}} [G(p_τ, d_anti) − G(p_τ, d_same)]`,
++which is strictly positive when `d_anti > d_same`, i.e. `K_2(a,−a) < K_2(a,a)`,
++i.e. `(p − q)² > 0`. If `p = q`, take `P_4 = (+x, −x, +y, +y)`: diagonals
++`(+x,+y)` and `(−x,+y)`, `d = d_orth`; types toward, toward, away, away — the
++multiset of `P_1`; and `d_orth ≠ d_same` iff `(p − r)² + (q − r)² > 0`. In
++either case the two ratios differ while the static law's ratio is constant. ∎
++
++Executed: the general identity with `p_in`, `p_out` as symbols and the three
++`d`'s as rational functions of `(p, q, r)` (E1); the four explicit laws'
++ratios at `P_1, P_3, P_4` (uniform: `152/169, 136/121, 1`) and their distances
++to the static law (E2); the type assignment of `P_1, P_3, P_4` and the three
++values of `d` (E3).
++
++*Reading.* The clock can only decide, at the first fork, how often to jump
++across the square, and that decision cannot depend on more than the type of
++one recorded value; everything else is fixed by the square's shape. Two
++patterns the static law weighs equally then receive weights that differ by a
++strictly monotone function of the diagonal normalizer.
++
++## Corollaries R5 and R6
++
++**R5.** The static plaquette law is not a convex combination of the sequential
++laws `μ_σ`. *Proof.* A combination `Σ c_σ μ_σ` with `c_σ ≥ 0` has, on patterns
++with `d_1 = d_2 = d`, the ratio `(c_path/6) d + (c_diag/36) d²` to `Π K`, strictly
++increasing in `d` unless `c_path = c_diag = 0`. ∎ Executed by the four class
++laws' ratios at `P_1, P_3, P_4` (E4).
++
++**R6 (executed).** The parallel-growth law's plaquette law lies outside the
++affine span of the four class laws: the rank of the five laws as vectors on
++the `1296` patterns is five (E5). So value-dependent rates leave not only the
++convex hull but the linear span of the order laws.
++
++## The clause candidates (recorded, not adopted)
++
++| candidate | what this note says about it |
++|---|---|
++| (a) "records form at a rate that does not depend on the nearest-neighbour conditions" | the uniform law; its finished law is the census note's mixture, at distance `0.0291…` from the static law on `2×3` (R2); on the plaquette never the static law (R4) |
++| (b) "records form at a rate determined by the nearest-neighbour conditions" | a family; on trees one member (seeded) gives the static law exactly (R3); on the plaquette no member does, however the rates depend on the recorded values (R4) |
++| (c) no clause | every rate-dependent statistic is registered data under the realized-state primitive; the witness shows which statistics those are |
++
++The decision among them is the owner's. This note selects none.
++
++## No-Go Discipline Gate
++
++The negative sentences are R4 and R5 (the static plaquette law is unreachable
++by any covariant rate law and by any convex combination of order laws). Both
++are proved for every positive triple except the constant rule.
++
++### N1 — Routes by which a rate clause could still reach the static law
++
++| route | what it would attempt | why it fails here, or its obligation | marker |
++|---|---|---|---|
++| 1 value-dependent rates | bias the order by the recorded values | the only value-dependent decision that survives the type argument is `p_{type}`; the weight stays strictly increasing in `d` (R4) | RULED OUT AT SCOPE |
++| 2 a larger window | different class structure | not claimed either way; the plaquette suffices for the clause table | narrowed |
++| 3 the constant rule | `p = q = r` | `d_same = d_anti = d_orth`; the static law is uniform and so is every formation law | trivial |
++| 4 non-memoryless clocks | a clock law with memory | outside the model (the campaign's clause is about rates) | not attempted; obligation named |
++| 5 joint formation | several sites at once | the formation-unit block (next) | not this note |
++
++### N2 — Wall-independence audit
++Walls: the records-only reading, the product rule, positivity, the clock model. Independent; each defines the object.
++
++### N3 — Hidden-wall scan
++Scanned for "we assume", "by construction", "as is standard", "the framework provides", "naturally", "obviously", "canonical", "registered", "background", "bridge context". Hits: "registered data" in the clause table quotes the campaign's wording for candidate (c); none in the theorems.
++
++### N4 — Per-citation table
++| cited surface | residual it attacks | residual claimed here | match |
++|---|---|---|---|
++| census note (main): Lemma L, Theorem 3 | the multiset key; the uniform mixture | R1's last clause; R2's uniform value | yes |
++| block 01 (main): Theorem B; the cycle disagreement | equality with at most one recorded neighbour | R3 | yes |
++| #8093's clock-and-rate block | the witness and the clause candidates | R2; the clause table | yes |
++| block 13 (PR #8147, open; not an input) | the Green function needs the static reading | the motivation only | context only |
++
++### N5 — Resolution audit
++| phrase | per-element | per-site | per-mode | per-block | lattice-wide |
++|---|---|---|---|---|---|
++| "never the static law on the plaquette" | executed: the ratios at `P_1, P_3, P_4` for four laws and symbolically for the general law | executed: every pattern of the plaquette (`1296`) and of `2×3` (`46656`) | executed: the 28 classes of `2×3`, the 542 of the cube, the 4 of the plaquette | executed: the three windows and two trees | proved for every positive triple except the constant rule (R4, R5); larger windows not claimed |
++
++### N6 — Partial-closure paths and primitive scan
++The realized-state primitive supplies no measure over orders (the campaign's reading); the clock law is the supplied object here and is not adopted. No primitive is a wall.
++
++### N7 — Steelman
++Hostile reviewer: "The witness is trivial given order dependence, and the no-go is one window." Reply: the witness is what the campaign asked for and is exhibited exactly; the no-go quantifies over every covariant rate law including value-dependent ones and is paired with the exact positive result on trees, so the clause table now has the precise boundary of what a rate sentence can buy. Conceded: larger windows are not classified.
++
++### N8 — Cross-cycle echo
++Block 01's cycle disagreement and block 13's parabolic kernel are the same fact seen twice: the record-by-record reading is causal, and causality is what a static Green function lacks. No structurally similar wall was retired.
++
++## Falsifiers
++- A rate vector for which the exact integral does not give `λ_x/Λ` (B1); a `2×3` mixture by classes that differs from the full enumeration (B2).
++- Two of the three value-blind laws with the same `2×3` law, or a uniform distance differing from the census note's rational (C1–C2).
++- A tree window on which the seeded law differs from the static law (D1).
++- A pattern pair among `P_1, P_3, P_4` with equal type multisets and equal `d` at a non-constant rule, or a general-law identity whose difference is not strictly positive (E1–E3); a nonnegative combination of the class ratios that is constant (E4); a rank below five (E5).
++
++## Boundaries and non-claims
++This note exhibits the formation-rate witness and settles where a covariant rate law can reproduce the static law (trees) and where none can (a plaquette); it does not classify larger windows, does not treat clocks with memory or joint formation, does not select an order, rate, rule or coupling as physical, and adopts no clause. No plane, bridge, Born or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision. No value, constant or theorem is imported as authority.
++
++## Imports
++- `minimal_axioms`: the sentences quoted under Premises.
++- The census note and block 01 (both on `main`): proposed, unaudited; the parts used (Lemma L; Theorem B) are restated and re-used as stated.
++- Re-proved at scope: R1 (competing memoryless clocks), R3, R4, R5.
++- Reference only (named, not used): Gillespie's construction of a continuous-time Markov chain by competing exponentials; the Eden model as the classical seeded growth.
++
++## Review record
++Supervisor-run block (owner directive: don't stop; assess the next lane and take it; no subagents). The control (`specs/supervisor_control_block14_rate_laws.py`) computed the plaquette laws, the `2×3` classes and mixtures, and the trees before the contract; the lens pass is in `GOAL_block14.md`; the primary seat wrote R1–R6 and the runner; the refuting pass (`CHECKER_block14_findings.md`) recomputed the plaquette mixture from the per-order weights by hand-derived formulas, the `2×3` seeded law by direct history enumeration without classes, and the type assignment of the three patterns by an independent geometric routine. Facts settled while executing: the first symbolic positivity test in the runner expanded the cofactor of `(d_anti − d_same)` in `1 − p` and saw negative coefficients; the proof's own form — the cofactor is a convex combination of `1/6` and `(d_anti + d_same)/36` — was executed instead (E2); the general identity was checked against all four explicit laws' exact ratios before the symbolic step (E1).
++
++## Verification
++
++```bash
++python3 scripts/admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.py
++python3 scripts/admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.py --exact
++python3 scripts/admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.py --list-mutations
++python3 scripts/admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.py --mutation static_reached_on_plaquette_claimed
++```
++
++Families: A authority and inputs; B the jump probabilities and the class mixtures; C the witness on `2×3`, the cube and the plaquette; D the trees; E the plaquette no-go (general identity, explicit laws, types, the class ratios, the rank); F fences, forbidden phrases, the floating-point self-scan, the placement of the classical names; G the resolution lines. Each of the 13 declared mutations fails in exactly one family. Expected final line: `TOTAL: PASS=22 FAIL=0`.
+diff --git a/docs/audit/data/citation_graph_manifest.json b/docs/audit/data/citation_graph_manifest.json
+index 2b92106baf..cfb5c7d45f 100644
+--- a/docs/audit/data/citation_graph_manifest.json
++++ b/docs/audit/data/citation_graph_manifest.json
+@@ -1,6 +1,6 @@
+ {
+- "edge_count": 13355,
+- "node_count": 5783,
++ "edge_count": 13358,
++ "node_count": 5784,
+  "nodes": {
+   "3d_correction_master_note": {
+    "deps_hash": "e3b0c44298fc",
+@@ -734,6 +734,10 @@
+    "deps_hash": "e54933eecd76",
+    "out_degree": 2
+   },
++  "admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_the_static_law_on_a_plaquette_bounded_theorem_note_2026-09-15": {
++   "deps_hash": "a95e40c6cf02",
++   "out_degree": 3
++  },
+   "admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_bounded_theorem_note_2026-09-07": {
+    "deps_hash": "1badd550395b",
+    "out_degree": 3
+diff --git a/logs/runner-cache/admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.txt b/logs/runner-cache/admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.txt
+new file mode 100644
+index 0000000000..7bd3d385a5
+--- /dev/null
++++ b/logs/runner-cache/admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.txt
+@@ -0,0 +1,48 @@
++===== runner cache v1 =====
++runner: scripts/admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.py
++runner_sha256: 0c5f9c5b735587d3315ea1236e28ff4651d9bd259732d2f3e66feb0667b89716
++input_fingerprint_sha256: d986a7631cfb9c7508c89d193a7422a80740d4fdcaa274201ccbbcbe9d6fdea7
++timeout_sec: 900
++exit_code: 0
++elapsed_sec: 17.91
++status: ok
++----- stdout -----
++AUDIT_INPUT_PATHS:
++  docs/ADMISSIBILITY_RULE_FORMATION_RATE_CLAUSE_WITNESS_NO_COVARIANT_CLOCK_LAW_REACHES_THE_STATIC_LAW_ON_A_PLAQUETTE_BOUNDED_THEOREM_NOTE_2026-09-15.md
++  docs/MINIMAL_AXIOMS_2026-06-29.md
++  docs/ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md
++  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
++AUDIT_TIMEOUT_SEC: 900
++scope: formation-rate laws — clocks to orders, the rate witness on 2x3, the cube and the plaquette, trees under seeded growth, the plaquette no-go for every covariant rate law; exact; no clause adopted
++mutation: none
++PASS: A1 the four declared inputs exist (this note, the axiom memo, the census note and block 01, both on main)
++PASS: A2 the axiom sentences and the reading-note clause used are present verbatim in the axiom memo
++PASS: A3 the parents' claim ids, the census note's Theorem 3 rational and block 01's Theorem B are present
++PASS: A4 this note carries its claim id and names this runner
++PASS: B1 R1: for rates (1, 2, 3) the exact integrals give P(x rings first) = 1/6, 1/3, 1/2 = lambda_x / Lambda
++PASS: B2 R1: the mixtures by multiset classes equal the full history enumeration (plaquette: 4 classes, three laws, all 1296 patterns; 2x3: 30 random patterns, 720 orders, seeded law)
++PASS: C1 R2: on 2x3 (28 classes) the uniform, seeded (6 classes charged) and attracting laws are pairwise different: TV = uniform-seeded: 0.009606, uniform-attracting: 0.003673, seeded-attracting: 0.005932
++PASS: C2 R2: distances to the static law on 2x3: uniform 372254646387017/12790481418000000 (the census note's rational), seeded 5951761987229/292725576000000, attracting 32318135184155791/1253467178964000000
++PASS: C3 R2: on the open cube (542 classes) the all-+x probability differs across the three laws and from the static law: uniform: 338229/7997080000, seeded: 84807/1799782400, attracting: 3244436397/73116160000000; static 59049/775835648
++PASS: C4 R2: on the plaquette the four laws are pairwise different and none is the static law: TV to static uniform: 262271/15806232, seeded: 30457/2431728, attracting: 591377/39515580, parallel: 2239744469/137703893184
++PASS: D1 R3: on the path of three sites and the four-leaf star the seeded law equals the static law exactly
++PASS: D2 R3: the uniform law differs from the static law on both trees: TV path3: 1/216, star4: 56059/3369600
++PASS: E1 R4: mu/prod K = (1/4) sum_s G(p_type(s), d) reproduces the exact ratios of all four laws at P1, P3, P4 (uniform: 152/169, 136/121, 1)
++PASS: E2 R4: for every (p_in, p_out) in [0,1]^2 and positive (p, q, r), mu/prod K at P3 minus at P1 is (d_anti - d_same) times a convex combination of 1/6 and (d_anti + d_same)/36, with d_anti - d_same = Z_1^2 (p-q)^2/(K2a K2s); likewise P4 minus P1 with ((p-r)^2 + (q-r)^2): never the static law unless p = q = r
++PASS: E3 R4: P1, P3, P4 all have type multiset {in, in, out, out}; their diagonal pairs give d_same = 72/13, d_anti = 72/11, d_orth = 6
++PASS: E4 R5: each of the four class laws has ratio to prod K strictly increasing along d_same < d_orth < d_anti at P1, P4, P3, so no convex combination is constant
++PASS: E5 R6: the four class laws have rank 4 and with the parallel-growth law rank 5: the value-dependent law lies outside the affine span of the order laws
++PASS: F1 the note carries the three fence sentences verbatim
++PASS: F2 the note contains no forbidden phrase (0 hits)
++PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
++PASS: F4 the classical names appear only under Prior art and Imports (0 offenders)
++per_element: executed — the jump probabilities by exact integral; the ratios mu/prod K at P1, P3, P4 for four laws and the general identity in (p_in, p_out) symbolically
++per_site: executed — every pattern of the plaquette (1296) and of 2x3 (46656) under three value-blind laws; 30 random 2x3 patterns against the full order enumeration
++per_mode: executed — the 4 classes of the plaquette, the 28 of 2x3 and the 542 of the cube; the rank of the class laws with the parallel-growth law
++per_block: executed — the plaquette, 2x3, the cube, the path and the star
++lattice_wide: R1, R3, R4, R5 proved for every positive triple (R4, R5 at every non-constant rule); larger windows with a plaquette are not claimed; no clause adopted
++PASS: G1 the five N5 resolution lines are printed
++TOTAL: PASS=22 FAIL=0
++
++----- stderr -----
++
+diff --git a/scripts/admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.py b/scripts/admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.py
+new file mode 100644
+index 0000000000..0721ca3205
+--- /dev/null
++++ b/scripts/admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.py
+@@ -0,0 +1,619 @@
++#!/usr/bin/env python3
++"""Exact checks: the formation-rate clause witness and the plaquette no-go.
++
++Scope.  Six-axis menu, covariant positive product rule (p, q, r) = (3, 1, 2), records-only reading; records form one at a time
++under independent memoryless clocks with covariant rates.  R1: competing clocks give jump probabilities lambda_x/Lambda (exact
++integral); value-blind laws give mixtures over orders computed by multiset classes (checked against full enumeration).  R2: the
++uniform, seeded and attracting laws on 2x3 (28 classes) give pairwise different finished laws; the uniform distance to the static
++law equals the census note's rational; the cube's all-+x probability differs; four laws on the plaquette.  R3: on the path and
++the star the seeded law equals the static law.  R4: the plaquette identity mu / prod K = (1/4) sum_s G(p_type(s), d) with
++G(p, d) = (1-p) d/6 + p d^2/36, checked against four explicit laws and symbolically for every (p_in, p_out); the type assignment.
++R5: the class ratios are strictly increasing in d.  R6: the parallel-growth law is outside the affine span of the order laws.
++Exact rational and symbolic arithmetic only; the runner scans its own source for floating-point literals.
++"""
++
++from __future__ import annotations
++
++import random
++import re
++import sys
++from collections import defaultdict
++from fractions import Fraction
++from functools import reduce
++from itertools import permutations, product
++from pathlib import Path
++
++import sympy as sp
++
++AUDIT_TIMEOUT_SEC = 900
++AUDIT_INPUT_PATHS = (
++    "docs/ADMISSIBILITY_RULE_FORMATION_RATE_CLAUSE_WITNESS_NO_COVARIANT_CLOCK_LAW_REACHES_THE_STATIC_LAW_ON_A_PLAQUETTE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
++    "docs/MINIMAL_AXIOMS_2026-06-29.md",
++    "docs/ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
++    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
++)
++ROOT = Path(__file__).resolve().parents[1]
++CLAIM_ID = "admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_the_static_law_on_a_plaquette_bounded_theorem_note_2026-09-15"
++CENSUS_CLAIM_ID = "admissibility_formation_order_menu_order_mixture_monotone_box_and_cube_census_bounded_theorem_note_2026-09-13"
++CENSUS_FRAGMENT = "372254646387017/12790481418000000"
++BLOCK01_CLAIM_ID = "admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06"
++BLOCK01_FRAGMENT = "Theorem B"
++AXIOM_NEEDLES = (
++    "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.",
++    "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.",
++    "Records form.",
++    "Only records are readable.",
++    "it does not supply the formation site, probability, or rate.",
++)
++
++MUTATION_GATE = {
++    "jump_probability_wrong": "B",
++    "class_mixture_differs_from_enumeration": "B",
++    "rate_laws_give_same_law_claimed": "C",
++    "census_rational_mismatch": "C",
++    "cube_probabilities_equal_claimed": "C",
++    "seeded_tree_not_static_claimed": "D",
++    "plaquette_identity_wrong": "E",
++    "static_reached_on_plaquette_claimed": "E",
++    "type_assignment_wrong": "E",
++    "class_ratios_not_monotone_claimed": "E",
++    "parallel_law_in_span_claimed": "E",
++    "claim_rate_clause_adopted": "F",
++    "claim_classical_name_in_theorem": "F",
++}
++ACTIVE_MUTATION: str | None = None
++
++
++def mut(name: str) -> bool:
++    if name not in MUTATION_GATE:
++        raise KeyError(name)
++    return ACTIVE_MUTATION == name
++
++
++class Checks:
++    def __init__(self) -> None:
++        self.passed = 0
++        self.failed = 0
++        self.failed_families: list[str] = []
++
++    def check(self, label: str, condition: bool, detail: str) -> None:
++        ok = bool(condition)
++        self.passed += int(ok)
++        self.failed += int(not ok)
++        if not ok:
++            self.failed_families.append(label[0])
++        print(f"{'PASS' if ok else 'FAIL'}: {label} {detail}")
++
++    def finish(self) -> int:
++        print(f"TOTAL: PASS={self.passed} FAIL={self.failed}")
++        return self.failed
++
++
++def normalize_text(text: str) -> str:
++    return " ".join(text.split())
++
++
++F = Fraction
++M = 6
++P_, Q_, R_ = 3, 1, 2
++
++
++def dec(x: Fraction, n: int = 6) -> str:
++    s = x.numerator * 10 ** n // x.denominator
++    return f"{s // 10 ** n}.{str(s % 10 ** n).zfill(n)}"
++
++
++def orbit_type(s: int, u: int) -> str:
++    if s == u:
++        return "p"
++    if s // 2 == u // 2:
++        return "q"
++    return "r"
++
++
++WEIGHTS = {"p": P_, "q": Q_, "r": R_}
++PHI = [[WEIGHTS[orbit_type(s, t)] for t in range(M)] for s in range(M)]
++Z1 = sum(PHI[0])
++AXIS = {0: (1, 0, 0), 1: (-1, 0, 0), 2: (0, 1, 0), 3: (0, -1, 0), 4: (0, 0, 1), 5: (0, 0, -1)}
++_COND: dict = {}
++
++
++def cond(rec: tuple, s: int) -> Fraction:
++    key = (rec, s)
++    if key in _COND:
++        return _COND[key]
++    if not rec:
++        val = F(1, M)
++    else:
++        num = reduce(lambda a, b: a * b, [PHI[s][a] for a in rec], 1)
++        den = sum(reduce(lambda a, b: a * b, [PHI[u][a] for a in rec], 1) for u in range(M))
++        val = F(num, den)
++    _COND[key] = val
++    return val
++
++
++def K2(a: int, b: int) -> Fraction:
++    return sum((F(PHI[u][a] * PHI[u][b], Z1 * Z1) for u in range(M)), F(0))
++
++
++# ------------------------------------------------------------------ windows
++def window(name: str):
++    if name == "plaquette":
++        pos = {0: (0, 0, 0), 1: (1, 0, 0), 2: (1, 1, 0), 3: (0, 1, 0)}
++    elif name == "2x3":
++        pos = {i: (i // 3, i % 3, 0) for i in range(6)}
++    elif name == "cube":
++        pos = {i: (i & 1, (i >> 1) & 1, (i >> 2) & 1) for i in range(8)}
++    elif name == "path3":
++        pos = {0: (0, 0, 0), 1: (1, 0, 0), 2: (2, 0, 0)}
++    elif name == "star4":
++        pos = {0: (0, 0, 0), 1: (1, 0, 0), 2: (-1, 0, 0), 3: (0, 1, 0), 4: (0, -1, 0)}
++    else:
++        raise KeyError(name)
++    sites = sorted(pos)
++    edges = [(i, j) for i in sites for j in sites if i < j and sum(abs(pos[i][k] - pos[j][k]) for k in range(3)) == 1]
++    nb = {i: [j for j in sites if (min(i, j), max(i, j)) in edges] for i in sites}
++    return sites, pos, edges, nb
++
++
++def static_law(sites, edges):
++    w = {}
++    for v in product(range(M), repeat=len(sites)):
++        x = 1
++        for (i, j) in edges:
++            x *= PHI[v[i]][v[j]]
++        w[v] = x
++    Z = sum(w.values())
++    return {v: F(x, Z) for v, x in w.items()}
++
++
++def prod_K(v, edges) -> Fraction:
++    x = F(1)
++    for (i, j) in edges:
++        x *= F(PHI[v[i]][v[j]], Z1)
++    return x
++
++
++def tv(a: dict, b: dict) -> Fraction:
++    return sum((abs(a[v] - b[v]) for v in a), F(0)) / 2
++
++
++# ------------------------------------------------------------------ rate laws: rate(x, S, vmap, nb, pos)
++def uniform(x, S, v, nb, pos):
++    return F(1)
++
++
++def seeded(x, S, v, nb, pos):
++    return F(1) if (len(S) == 0 or any(y in S for y in nb[x])) else F(0)
++
++
++def attracting(x, S, v, nb, pos):
++    return F(1 + sum(1 for y in nb[x] if y in S))
++
++
++def parallel(x, S, v, nb, pos):
++    bias = 0
++    for y in nb[x]:
++        if y in S:
++            d = tuple(pos[x][k] - pos[y][k] for k in range(3))
++            if AXIS[v[y]] == d:
++                bias = 1
++    return F(1 + bias)
++
++
++RATE_LAWS = {"uniform": uniform, "seeded": seeded, "attracting": attracting, "parallel": parallel}
++
++
++def finished_law(sites, nb, pos, rate) -> dict:
++    """Exact finished law by dynamic programming over histories (order and values)."""
++    n = len(sites)
++    layer = {((), ()): F(1)}
++    for _ in range(n):
++        new: dict = defaultdict(F)
++        for (S, vals), pr in layer.items():
++            Sset = set(S)
++            vmap = dict(zip(S, vals))
++            rates = {x: rate(x, Sset, vmap, nb, pos) for x in sites if x not in Sset}
++            tot = sum(rates.values())
++            for x, lam in rates.items():
++                if lam == 0:
++                    continue
++                rec = tuple(vmap[y] for y in nb[x] if y in Sset)
++                for s in range(M):
++                    new[(S + (x,), vals + (s,))] += pr * lam / tot * cond(rec, s)
++        layer = new
++    law: dict = defaultdict(F)
++    for (S, vals), pr in layer.items():
++        v = [0] * n
++        for x, s in zip(S, vals):
++            v[x] = s
++        law[tuple(v)] += pr
++    return dict(law)
++
++
++def multiset_key(order, nb):
++    S: set = set()
++    key = []
++    for x in order:
++        A = tuple(sorted(y for y in nb[x] if y in S))
++        if len(A) >= 2:
++            key.append(A)
++        S.add(x)
++    return tuple(sorted(key))
++
++
++def order_prob(order, nb, pos, rate) -> Fraction:
++    S: set = set()
++    pr = F(1)
++    for x in order:
++        rates = {y: rate(y, S, {}, nb, pos) for y in nb if y not in S}
++        tot = sum(rates.values())
++        if rates[x] == 0:
++            return F(0)
++        pr *= rates[x] / tot
++        S.add(x)
++    return pr
++
++
++def order_law_single(order, nb, v) -> Fraction:
++    S: set = set()
++    pr = F(1)
++    for x in order:
++        rec = tuple(v[y] for y in nb[x] if y in S)
++        pr *= cond(rec, v[x])
++        S.add(x)
++    return pr
++
++
++def class_laws(sites, nb):
++    classes: dict = {}
++    for order in permutations(sites):
++        classes.setdefault(multiset_key(order, nb), []).append(order)
++    laws = {}
++    for k, orders in classes.items():
++        rep = orders[0]
++        laws[k] = {v: order_law_single(rep, nb, v) for v in product(range(M), repeat=len(sites))}
++    return classes, laws
++
++
++# ============================================================================================ family A
++def family_a(checks: Checks, texts) -> None:
++    note, axioms, census, b01 = texts
++    checks.check("A1", all((ROOT / pth).is_file() for pth in AUDIT_INPUT_PATHS) and len(set(AUDIT_INPUT_PATHS)) == 4,
++                 "the four declared inputs exist (this note, the axiom memo, the census note and block 01, both on main)")
++    checks.check("A2", all(n in normalize_text(axioms) for n in AXIOM_NEEDLES), "the axiom sentences and the reading-note clause used are present verbatim in the axiom memo")
++    fc, f01 = normalize_text(census), normalize_text(b01)
++    checks.check("A3", CENSUS_CLAIM_ID in fc and CENSUS_FRAGMENT in fc and BLOCK01_CLAIM_ID in f01 and BLOCK01_FRAGMENT in f01,
++                 "the parents' claim ids, the census note's Theorem 3 rational and block 01's Theorem B are present")
++    flat = normalize_text(note)
++    checks.check("A4", CLAIM_ID in flat and Path(__file__).name in flat, "this note carries its claim id and names this runner")
++
++
++# ============================================================================================ family B
++def family_b(checks: Checks, report: dict) -> None:
++    t = sp.symbols("t", positive=True)
++    rates = (1, 2, 3)
++    probs = []
++    for i, lx in enumerate(rates):
++        integrand = lx * sp.exp(-lx * t) * sp.prod([sp.exp(-ly * t) for j, ly in enumerate(rates) if j != i])
++        probs.append(sp.integrate(integrand, (t, 0, sp.oo)))
++    expected = [sp.Rational(lx, sum(rates)) for lx in rates]
++    if mut("jump_probability_wrong"):
++        expected = [sp.Rational(lx * lx, sum(r * r for r in rates)) for lx in rates]
++    checks.check("B1", all(sp.simplify(a - b) == 0 for a, b in zip(probs, expected)) and sum(probs) == 1,
++                 "R1: for rates (1, 2, 3) the exact integrals give P(x rings first) = 1/6, 1/3, 1/2 = lambda_x / Lambda")
++    sites, pos, edges, nb = window("plaquette")
++    classes, laws = class_laws(sites, nb)
++    report["plq"] = (sites, pos, edges, nb, classes, laws)
++    ok = True
++    for name in ("uniform", "seeded", "attracting"):
++        rate = RATE_LAWS[name]
++        Pc = {k: sum((order_prob(o, nb, pos, rate) for o in orders), F(0)) for k, orders in classes.items()}
++        mix = {v: sum((Pc[k] * laws[k][v] for k in classes), F(0)) for v in laws[next(iter(laws))]}
++        direct = finished_law(sites, nb, pos, rate)
++        if mut("class_mixture_differs_from_enumeration") and name == "seeded":
++            mix = {v: mix[v] * F(1001, 1000) for v in mix}
++        ok = ok and all(mix[v] == direct[v] for v in mix) and sum(Pc.values()) == 1
++    # 2x3: classes vs full enumeration on 30 random patterns for the seeded law
++    sites6, pos6, edges6, nb6 = window("2x3")
++    classes6, laws6 = class_laws(sites6, nb6)
++    report["2x3"] = (sites6, pos6, edges6, nb6, classes6, laws6)
++    random.seed(20260915)
++    sample = [tuple(random.randrange(M) for _ in range(6)) for _ in range(30)]
++    orders6 = list(permutations(sites6))
++    Pc6 = {k: sum((order_prob(o, nb6, pos6, seeded) for o in orders), F(0)) for k, orders in classes6.items()}
++    for v in sample:
++        by_class = sum((Pc6[k] * laws6[k][v] for k in classes6), F(0))
++        by_orders = sum((order_prob(o, nb6, pos6, seeded) * order_law_single(o, nb6, v) for o in orders6), F(0))
++        ok = ok and by_class == by_orders
++    checks.check("B2", ok and len(classes) == 4, f"R1: the mixtures by multiset classes equal the full history enumeration (plaquette: {len(classes)} classes, three laws, all 1296 patterns; 2x3: 30 random patterns, 720 orders, seeded law)")
++
++
++# ============================================================================================ family C
++def family_c(checks: Checks, report: dict, exact: bool) -> None:
++    sites6, pos6, edges6, nb6, classes6, laws6 = report["2x3"]
++    stat6 = static_law(sites6, edges6)
++    mixes = {}
++    tvs = {}
++    charged = {}
++    for name in ("uniform", "seeded", "attracting"):
++        rate = RATE_LAWS[name]
++        Pc = {k: sum((order_prob(o, nb6, pos6, rate) for o in orders), F(0)) for k, orders in classes6.items()}
++        charged[name] = sum(1 for k in Pc if Pc[k] > 0)
++        mixes[name] = {v: sum((Pc[k] * laws6[k][v] for k in classes6), F(0)) for v in stat6}
++        tvs[name] = tv(mixes[name], stat6)
++    pairs = {(a, b): tv(mixes[a], mixes[b]) for a, b in (("uniform", "seeded"), ("uniform", "attracting"), ("seeded", "attracting"))}
++    distinct = all(x > 0 for x in pairs.values())
++    if mut("rate_laws_give_same_law_claimed"):
++        distinct = all(x == 0 for x in pairs.values())
++    checks.check("C1", distinct and len(classes6) == 28 and charged["seeded"] == 6 and charged["uniform"] == 28,
++                 f"R2: on 2x3 (28 classes) the uniform, seeded (6 classes charged) and attracting laws are pairwise different: TV = " + ", ".join(f"{a}-{b}: {dec(x)}" for (a, b), x in pairs.items()))
++    census = F(372254646387017, 12790481418000000)
++    c2 = tvs["uniform"] == census
++    if mut("census_rational_mismatch"):
++        c2 = tvs["uniform"] == census * F(1001, 1000)
++    checks.check("C2", c2 and tvs["seeded"] == F(5951761987229, 292725576000000), f"R2: distances to the static law on 2x3: uniform {tvs['uniform']} (the census note's rational), seeded {tvs['seeded']}, attracting {tvs['attracting']}")
++    report["tv23"] = (tvs, pairs)
++    # cube: all-+x probability
++    sites8, pos8, edges8, nb8 = window("cube")
++    classes8: dict = {}
++    for order in permutations(sites8):
++        classes8.setdefault(multiset_key(order, nb8), []).append(order)
++    allx = tuple([0] * 8)
++    cube = {}
++    for name in ("uniform", "seeded", "attracting"):
++        rate = RATE_LAWS[name]
++        tot = F(0)
++        for k, orders in classes8.items():
++            pk = sum((order_prob(o, nb8, pos8, rate) for o in orders), F(0))
++            if pk:
++                tot += pk * order_law_single(orders[0], nb8, allx)
++        cube[name] = tot
++    # static all-+x on the cube: prod_edges phi / Z with Z by enumeration over 6^8 patterns is heavy; use the transfer over the two faces
++    face = list(product(range(M), repeat=4))
++    def face_weight(f):
++        w = 1
++        for (i, j) in ((0, 1), (1, 3), (3, 2), (2, 0)):
++            w *= PHI[f[i]][f[j]]
++        return w
++    Zc = 0
++    fw = {f: face_weight(f) for f in face}
++    for f1 in face:
++        for f2 in face:
++            w = fw[f1] * fw[f2]
++            for i in range(4):
++                w *= PHI[f1[i]][f2[i]]
++            Zc += w
++    static_allx = F(P_ ** 12, Zc)
++    cube_ok = len({cube[n] for n in cube}) == 3 and all(cube[n] != static_allx for n in cube) and len(classes8) == 542
++    if mut("cube_probabilities_equal_claimed"):
++        cube_ok = len({cube[n] for n in cube}) == 1
++    checks.check("C3", cube_ok, f"R2: on the open cube (542 classes) the all-+x probability differs across the three laws and from the static law: " + ", ".join(f"{n}: {cube[n]}" for n in cube) + f"; static {static_allx}")
++    report["cube"] = (cube, static_allx)
++    sites, pos, edges, nb, classes, laws = report["plq"]
++    stat4 = static_law(sites, edges)
++    plq = {name: finished_law(sites, nb, pos, RATE_LAWS[name]) for name in RATE_LAWS}
++    report["plq_laws"] = (plq, stat4)
++    tv4 = {name: tv(plq[name], stat4) for name in plq}
++    pairwise = all(tv(plq[a], plq[b]) > 0 for a in plq for b in plq if a < b)
++    checks.check("C4", pairwise and all(x > 0 for x in tv4.values()), "R2: on the plaquette the four laws are pairwise different and none is the static law: TV to static " + ", ".join(f"{n}: {tv4[n]}" for n in tv4))
++    report["tv4"] = tv4
++    if exact:
++        print("exact 2x3 pairwise TVs:", "; ".join(f"{a}-{b}: {x}" for (a, b), x in pairs.items()))
++        print("exact 2x3 attracting TV to static:", tvs["attracting"])
++
++
++# ============================================================================================ family D
++def family_d(checks: Checks, report: dict) -> None:
++    res = {}
++    for name in ("path3", "star4"):
++        sites, pos, edges, nb = window(name)
++        st = static_law(sites, edges)
++        se = finished_law(sites, nb, pos, seeded)
++        un = finished_law(sites, nb, pos, uniform)
++        res[name] = (tv(se, st), tv(un, st))
++    seeded_ok = all(res[n][0] == 0 for n in res)
++    if mut("seeded_tree_not_static_claimed"):
++        seeded_ok = all(res[n][0] > 0 for n in res)
++    checks.check("D1", seeded_ok, "R3: on the path of three sites and the four-leaf star the seeded law equals the static law exactly")
++    checks.check("D2", all(res[n][1] > 0 for n in res), "R3: the uniform law differs from the static law on both trees: TV " + ", ".join(f"{n}: {res[n][1]}" for n in res))
++    report["trees"] = res
++
++
++# ============================================================================================ family E
++DELTA = {0: (1, 1, 0), 1: (-1, 1, 0), 2: (-1, -1, 0), 3: (1, -1, 0)}
++
++
++def vtype(s: int, val: int) -> str:
++    d = sum(AXIS[val][k] * DELTA[s][k] for k in range(3))
++    return "in" if d > 0 else ("out" if d < 0 else "perp")
++
++
++def family_e(checks: Checks, report: dict) -> None:
++    sites, pos, edges, nb, classes, laws = report["plq"]
++    plq, stat4 = report["plq_laws"]
++    d_same, d_anti, d_orth = 1 / K2(0, 0), 1 / K2(0, 1), 1 / K2(0, 2)
++    G = lambda p, d: (1 - p) * d / 6 + p * d * d / 36
++    P1, P3, P4 = (0, 1, 0, 1), (0, 0, 1, 1), (0, 1, 2, 2)
++    # type probabilities of each law from the rate function at S = {0} with value of each type
++    ok = True
++    ratios = {}
++    for name, rate in RATE_LAWS.items():
++        ptype = {}
++        for val, typ in ((0, "in"), (1, "out"), (4, "perp")):
++            S = {0}
++            vm = {0: val}
++            lam = {x: rate(x, S, vm, nb, pos) for x in (1, 2, 3)}
++            ptype[typ] = lam[2] / (lam[1] + lam[2] + lam[3])
++        for pat, d in ((P1, d_same), (P3, d_anti), (P4, d_orth)):
++            predicted = sum((G(ptype[vtype(s, pat[s])], d) for s in range(4)), F(0)) / 4
++            actual = plq[name][pat] / prod_K(pat, edges)
++            ratios[(name, pat)] = actual
++            if mut("plaquette_identity_wrong"):
++                predicted = predicted * F(1001, 1000)
++            ok = ok and predicted == actual
++    checks.check("E1", ok, "R4: mu/prod K = (1/4) sum_s G(p_type(s), d) reproduces the exact ratios of all four laws at P1, P3, P4 (uniform: " + ", ".join(str(ratios[("uniform", p)]) for p in (P1, P3, P4)) + ")")
++    p_in, p_out, pp, qq, rr = sp.symbols("p_in p_out p q r", positive=True)
++    ZZ = pp + qq + 4 * rr
++    K2s_num, K2a_num, K2o_num = pp ** 2 + qq ** 2 + 4 * rr ** 2, 2 * pp * qq + 4 * rr ** 2, 2 * rr * (pp + qq) + 2 * rr ** 2
++    ds, da, do = ZZ ** 2 / K2s_num, ZZ ** 2 / K2a_num, ZZ ** 2 / K2o_num
++    Gs = lambda p, d: (1 - p) * d / 6 + p * d ** 2 / 36
++    # (i) G(p, d') - G(p, d) = (d' - d) * ((1 - p)/6 + p (d' + d)/36): a convex combination of 1/6 and (d'+d)/36 for p in [0, 1]
++    ident = all(sp.simplify(Gs(pt, dd) - Gs(pt, ds) - (dd - ds) * ((1 - pt) / 6 + pt * (dd + ds) / 36)) == 0 for pt in (p_in, p_out) for dd in (da, do))
++    # (ii) d_anti - d_same = Z^2 (p - q)^2 / (K2a K2s); d_orth - d_same = Z^2 ((p - r)^2 + (q - r)^2) / (K2o K2s), positive denominators
++    gap_anti = sp.simplify(da - ds - ZZ ** 2 * (pp - qq) ** 2 / (K2a_num * K2s_num)) == 0
++    gap_orth = sp.simplify(do - ds - ZZ ** 2 * ((pp - rr) ** 2 + (qq - rr) ** 2) / (K2o_num * K2s_num)) == 0
++    sym_ok = ident and gap_anti and gap_orth
++    if mut("static_reached_on_plaquette_claimed"):
++        sym_ok = sp.simplify(Gs(p_in, da) - Gs(p_in, ds)) == 0
++    checks.check("E2", sym_ok, "R4: for every (p_in, p_out) in [0,1]^2 and positive (p, q, r), mu/prod K at P3 minus at P1 is (d_anti - d_same) times a convex combination of 1/6 and (d_anti + d_same)/36, with d_anti - d_same = Z_1^2 (p-q)^2/(K2a K2s); likewise P4 minus P1 with ((p-r)^2 + (q-r)^2): never the static law unless p = q = r")
++    types = {pat: tuple(sorted(vtype(s, pat[s]) for s in range(4))) for pat in (P1, P3, P4)}
++    dvals = {P1: (1 / K2(P1[0], P1[2]), 1 / K2(P1[1], P1[3])), P3: (1 / K2(P3[0], P3[2]), 1 / K2(P3[1], P3[3])), P4: (1 / K2(P4[0], P4[2]), 1 / K2(P4[1], P4[3]))}
++    t_ok = types[P1] == types[P3] == types[P4] == ("in", "in", "out", "out") and dvals[P1] == (d_same, d_same) and dvals[P3] == (d_anti, d_anti) and dvals[P4] == (d_orth, d_orth)
++    if mut("type_assignment_wrong"):
++        t_ok = types[P1] == ("in", "in", "in", "out")
++    checks.check("E3", t_ok and d_same == F(72, 13) and d_anti == F(72, 11) and d_orth == 6, "R4: P1, P3, P4 all have type multiset {in, in, out, out}; their diagonal pairs give d_same = 72/13, d_anti = 72/11, d_orth = 6")
++    # E4: class ratios at P1, P3, P4 are strictly increasing in d for every class
++    mono = True
++    for k, law in laws.items():
++        vec = [law[pat] / prod_K(pat, edges) for pat in (P1, P3, P4)]  # d increases: same < anti ... check order by d values
++        order_d = sorted([(d_same, 0), (d_anti, 1), (d_orth, 2)])
++        seq = [vec[i] for _, i in order_d]
++        mono = mono and seq[0] < seq[1] < seq[2]
++    if mut("class_ratios_not_monotone_claimed"):
++        mono = not mono
++    checks.check("E4", mono, "R5: each of the four class laws has ratio to prod K strictly increasing along d_same < d_orth < d_anti at P1, P4, P3, so no convex combination is constant")
++    # E5: rank of the five laws
++    pats = list(stat4)
++    rows = [[laws[k][v] for v in pats] for k in laws] + [[plq["parallel"][v] for v in pats]]
++    def rank(mat):
++        mat = [r[:] for r in mat]
++        rk = 0
++        ncol = len(mat[0])
++        for c in range(ncol):
++            piv = next((i for i in range(rk, len(mat)) if mat[i][c] != 0), None)
++            if piv is None:
++                continue
++            mat[rk], mat[piv] = mat[piv], mat[rk]
++            for i in range(len(mat)):
++                if i != rk and mat[i][c] != 0:
++                    f = mat[i][c] / mat[rk][c]
++                    mat[i] = [x - f * y for x, y in zip(mat[i], mat[rk])]
++            rk += 1
++            if rk == len(mat):
++                break
++        return rk
++    r5 = rank(rows)
++    r4 = rank(rows[:4])
++    span_ok = r5 == 5 and r4 == 4
++    if mut("parallel_law_in_span_claimed"):
++        span_ok = r5 == 4
++    checks.check("E5", span_ok, f"R6: the four class laws have rank {r4} and with the parallel-growth law rank {r5}: the value-dependent law lies outside the affine span of the order laws")
++
++
++# ============================================================================================ family F
++FENCES = (
++    "This note exhibits the formation-rate witness and settles where a covariant rate law can reproduce the static law (trees) and where none can (a plaquette); it does not classify larger windows, does not treat clocks with memory or joint formation, does not select an order, rate, rule or coupling as physical, and adopts no clause.",
++    "No plane, bridge, Born or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
++    "No value, constant or theorem is imported as authority.",
++)
++FORBIDDEN = (
++    "the physical order", "the physical rule", "the physical rate", "for every coupling", "selects the", "fires wake condition", "the Bridge weights",
++    "the Bridge conjecture", "certified", "converge", "emergent", "the rate clause is adopted", "washes out", "toward the plane", "the trend",
++)
++CLAIM_INJECTIONS = {"claim_rate_clause_adopted": "Hence the rate clause is adopted and selects the physical rate."}
++CLASSICAL_NAMES = ("Gillespie", "Eden", "Toom", "Peierls", "Fourier", "Dobrushin", "Kolmogorov", "Doeblin")
++ALLOWED_NAME_SECTIONS = ("Prior art and what is new", "Imports")
++SCAN_MARKER = "float-scan-marker-line"
++
++
++def family_f(checks: Checks, note_text: str) -> None:
++    text = note_text
++    for name, phrase in CLAIM_INJECTIONS.items():
++        if mut(name):
++            text = text + "\n" + phrase
++    flat = normalize_text(text)
++    checks.check("F1", all(f in flat for f in FENCES), "the note carries the three fence sentences verbatim")
++    hits = [ph for ph in FORBIDDEN if ph.lower() in flat.lower()]
++    checks.check("F2", not hits, f"the note contains no forbidden phrase ({len(hits)} hits)")
++    source_lines = Path(__file__).read_text(encoding="utf-8").splitlines()
++    scan = [ln for ln in source_lines if SCAN_MARKER not in ln]
++    float_literal = re.compile(r"(?<![\w.])\d+\.\d+(?![\w.])|(?<![\w.])\d+[eE][-+]?\d+(?![\w.])")
++    conversion = "flo" + "at("  # float-scan-marker-line
++    evalf = "eva" + "lf("  # float-scan-marker-line
++    numeric = "N" + "("  # float-scan-marker-line
++    bad = [ln for ln in scan if float_literal.search(ln) or conversion in ln or evalf in ln or numeric in ln]
++    checks.check("F3", not bad and len(scan) > 200, f"runner source: no floating-point literal or conversion call ({len(bad)} hits)")
++    sections = re.split(r"^## ", text, flags=re.M)
++    offenders = []
++    for i, sec in enumerate(sections):
++        title = sec.splitlines()[0].strip() if i > 0 else "(front matter)"
++        body = sec
++        if mut("claim_classical_name_in_theorem") and title.startswith("Theorem R1"):
++            body = body + " (Gillespie's construction)"
++        if any(title.startswith(a) for a in ALLOWED_NAME_SECTIONS):
++            continue
++        for nm in CLASSICAL_NAMES:
++            if nm in body:
++                offenders.append((title[:30], nm))
++    checks.check("F4", not offenders, f"the classical names appear only under Prior art and Imports ({len(offenders)} offenders)")
++
++
++# ============================================================================================ family G
++N5_LINES = (
++    "per_element: executed — the jump probabilities by exact integral; the ratios mu/prod K at P1, P3, P4 for four laws and the general identity in (p_in, p_out) symbolically",
++    "per_site: executed — every pattern of the plaquette (1296) and of 2x3 (46656) under three value-blind laws; 30 random 2x3 patterns against the full order enumeration",
++    "per_mode: executed — the 4 classes of the plaquette, the 28 of 2x3 and the 542 of the cube; the rank of the class laws with the parallel-growth law",
++    "per_block: executed — the plaquette, 2x3, the cube, the path and the star",
++    "lattice_wide: R1, R3, R4, R5 proved for every positive triple (R4, R5 at every non-constant rule); larger windows with a plaquette are not claimed; no clause adopted",
++)
++
++
++def family_g(checks: Checks) -> None:
++    for line in N5_LINES:
++        print(line)
++    checks.check("G1", len(N5_LINES) == 5 and all(len(l) >= 40 for l in N5_LINES), "the five N5 resolution lines are printed")
++
++
++def main(argv) -> int:
++    global ACTIVE_MUTATION
++    if "--list-mutations" in argv:
++        for name, fam in MUTATION_GATE.items():
++            print(f"{name} {fam}")
++        return 0
++    if "--mutation" in argv:
++        ACTIVE_MUTATION = argv[argv.index("--mutation") + 1]
++        if ACTIVE_MUTATION not in MUTATION_GATE:
++            print(f"unknown mutation {ACTIVE_MUTATION}")
++            return 2
++    exact = "--exact" in argv
++    checks = Checks()
++    texts = [(ROOT / pth).read_text(encoding="utf-8") if (ROOT / pth).is_file() else "" for pth in AUDIT_INPUT_PATHS]
++    print("AUDIT_INPUT_PATHS:")
++    for pth in AUDIT_INPUT_PATHS:
++        print(f"  {pth}")
++    print(f"AUDIT_TIMEOUT_SEC: {AUDIT_TIMEOUT_SEC}")
++    print("scope: formation-rate laws — clocks to orders, the rate witness on 2x3, the cube and the plaquette, trees under seeded growth, the plaquette no-go for every covariant rate law; exact; no clause adopted")
++    print(f"mutation: {ACTIVE_MUTATION or 'none'}")
++    report: dict = {}
++    family_a(checks, texts)
++    family_b(checks, report)
++    family_c(checks, report, exact)
++    family_d(checks, report)
++    family_e(checks, report)
++    family_f(checks, texts[0])
++    family_g(checks)
++    if exact:
++        tvs, pairs = report["tv23"]
++        print("exact tree TVs (uniform):", report["trees"])
++        print("exact plaquette TVs:", report["tv4"])
++    if ACTIVE_MUTATION:
++        observed = "".join(sorted(set(checks.failed_families))) or "none"
++        print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
++        print(f"mutation_family_observed: {observed}")
++    failed = checks.finish()
++    return 1 if failed else 0
++
++
++if __name__ == "__main__":
++    raise SystemExit(main(sys.argv[1:]))

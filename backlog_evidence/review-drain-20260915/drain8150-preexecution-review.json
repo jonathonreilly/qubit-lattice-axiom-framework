@@ -1,0 +1,1510 @@
+{
+  "status": "COLD SOURCE PASS WITH BOUNDED POSITIVE CLAIMS; EXECUTION AND FINAL CACHE CONFIRMATION PENDING",
+  "reviewer_session": "/root/review_8011",
+  "source": {
+    "base": "9ca43f83245a29864d7fbae1b6af2a6601a6e7d7",
+    "commit": "9ca43f83245a29864d7fbae1b6af2a6601a6e7d7",
+    "tree": "4f6dce7143b14f1c52d9d05b44000e8f0c91f8a7",
+    "paths": [
+      {
+        "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_FLIP_IDENTITIES_AND_FINITE_MIXTURE_WITNESSES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "06ffbbd6f1cad25b8289b6a09a0c0bd0482f40a011484c4fcd2304c3337176c8"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_FORMATION_RATE_IDENTITIES_AND_FINITE_WINDOW_WITNESSES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "d703f929b1ba752bf2bcfc738ddcf01aedab4926a460ecc729be70371a44d32e"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_FORMATION_UNIT_CONDITIONAL_IDENTITIES_AND_FINITE_WITNESSES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "abd8ecde52b3a085e66c1f6e823759823ef8935e03c9dc60e33dff7a632cb1c7"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8148/8148_ADMISSIBILITY_RULE_FORMATION_RATE_CLAUSE_WITNESS_NO_COVARIANT_CLOCK_LAW_REACHES_THE_STATIC_LAW_ON_A_PLAQUETTE_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz",
+        "sha256": "8379b4a633d309dcb3decf75c864bb00562e38ecca9e7560a30f323029d1a824"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8148/8148_APPROACH_REGISTRY.md.gz",
+        "sha256": "fa13de2c21163d155433576880aa58d99e7e087591c3fd9119e805653bea698d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8148/8148_ASSUMPTIONS_AND_IMPORTS.md.gz",
+        "sha256": "882581103410c2cf3843fc9762959788c4319aa7b8916f9de3b0612d64536ab6"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8148/8148_CHECKER_block14_findings.md.gz",
+        "sha256": "06568389ea14400802eebd74dd605861236802e2cfca2f57bc7625c457174230"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8148/8148_CLAIM_STATUS_CERTIFICATE_block14.md.gz",
+        "sha256": "109a1e7593283cd1e121950932f1b2a9a6c3ecede9413aa2cef0d52e3c1c66f9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8148/8148_GOAL_block14.md.gz",
+        "sha256": "e496f3e14e0d43c7651144ad0868987b4d0a9fa3b4cc976fab79228fe62ef67b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8148/8148_HANDOFF.md.gz",
+        "sha256": "a6129d80cf5b95942a46d8dbfe371f561199f0563cbdeda1bfc794574d7512c6"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8148/8148_LITERATURE_BRIDGES.md.gz",
+        "sha256": "9f3d94e296854d10501938ff0136ab7ccf278882e679881a40ed8a4ed9be12db"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8148/8148_NO_GO_LEDGER.md.gz",
+        "sha256": "1909ee856e99d1df8b2ee0a70df9ddd4ae63a13e661f2ad5dd569696753ad83f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8148/8148_OPPORTUNITY_QUEUE.md.gz",
+        "sha256": "078a4ff61ace78231fd5929d61acbcc73993b10ba1aa37e69d2dfe8ab2f68506"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8148/8148_RESULTS_block14.md.gz",
+        "sha256": "284e85d402d8b7bd9ba58d820981e1c620b40613e243c44206a9f3d1622a122d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8148/8148_REVIEW_HISTORY.md.gz",
+        "sha256": "713cf6f64574c0097c78c0a47d53e7e177e03604822d4611d7e395b1bcd2749b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8148/8148_ROUTE_PORTFOLIO.md.gz",
+        "sha256": "28385d651072f172b8270562049e5d65cbf6e0ad6b07b6f3c544dd0726ff303c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8148/8148_STATE.yaml.gz",
+        "sha256": "cb280d64be97283979bd14a9d5b0ca4d86d45165b86b1429f52da238cae3a303"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8148/8148_TRACE_GATE.md.gz",
+        "sha256": "1e06fc1ab06b1ab485bbc78a41bde92a27a87570c7d6fe3d4361d87723e9ccf6"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8148/8148_admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.py.gz",
+        "sha256": "d79c9403d58e217392ade039656bf242a624e908d7c76028a8a3db4cd88b46fc"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8148/8148_admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.txt.gz",
+        "sha256": "c348b87a1127035ddc78c749d968d1a6ac519a12cebaddaf06cc56429fd242d9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8148/8148_citation_graph_manifest.json.gz",
+        "sha256": "017b35d2107531e9fc5ee4a689d20fe2e45723cb7f3e552cfd87ea4739375459"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8148/8148_supervisor_control_block14_rate_laws.out.txt.gz",
+        "sha256": "8c8ad8cf0c764d4571ca94e45356c9f04b70983ce43ecc75b0f903a9599d1766"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8148/8148_supervisor_control_block14_rate_laws.py.gz",
+        "sha256": "c380a39a2421fc761db9f5e1aba881c3192e8a02d950f6652fd67380e630cb27"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8148/8148_supervisor_control_block14_refuter.out.txt.gz",
+        "sha256": "ca6d572d516ae1259d62ca502883260dbe02b6bca81555a00d99acb6c5443e90"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8148/8148_supervisor_control_block14_refuter.py.gz",
+        "sha256": "6da8e96c8d5859158f0cd51a0e4b1ed8097880a6c289919bea25e2a14f8bb204"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8149/8149_ADMISSIBILITY_RULE_FORMATION_UNIT_CLAUSE_WITNESS_SEQUENTIAL_FORMATION_REPRODUCES_THE_JOINT_LAW_IFF_NO_SITE_RECORDS_AN_INSIDE_NEIGHBOUR_WITH_A_SECOND_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz",
+        "sha256": "564cb560baf7a5f36493d13b05989ec3c899d1ae0ccd0456c9368c793d91ea67"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8149/8149_APPROACH_REGISTRY.md.gz",
+        "sha256": "c2f6536c30ac0cd9c5f378fa9980a118d1d6deed522d38855fea6c639a8b5d38"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8149/8149_ASSUMPTIONS_AND_IMPORTS.md.gz",
+        "sha256": "e147e7ddf6f0a7604901384d19c8e1ea2a2632d094abc343dfd47033015383bc"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8149/8149_CHECKER_block15_findings.md.gz",
+        "sha256": "f91a0a24d2831e97607e15618cde4907496a6da3c237ef565d62acfe0f5da0d9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8149/8149_CLAIM_STATUS_CERTIFICATE_block15.md.gz",
+        "sha256": "e7dc64438f3d373bfbaf9069a928bee559ccac9d2a0250e27b6e0bb1be8a5d7f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8149/8149_GOAL_block15.md.gz",
+        "sha256": "37938209f47b7ae34df0531c7e07a16a1c3b0f3ca4989dfe5a491e6522f1e771"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8149/8149_HANDOFF.md.gz",
+        "sha256": "6b9af92ab6ff0914c43e110d02fdc0526b3bc08181876636517935bd9e90de56"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8149/8149_LITERATURE_BRIDGES.md.gz",
+        "sha256": "a9d7ea1cf72b13dfc24616630459044fa9feb56f16833a4ccd7d5e8c66029691"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8149/8149_NO_GO_LEDGER.md.gz",
+        "sha256": "dcd4c7138c492a3f269aced943db8c2d12d82e1c4aa07ff995b10506a75396b6"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8149/8149_OPPORTUNITY_QUEUE.md.gz",
+        "sha256": "5a4b74e1de483182e90f877e29a5b6b57a9b19efe197777804b80e1a5004fa3a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8149/8149_RESULTS_block15.md.gz",
+        "sha256": "6586f0af78231b122793e9fc2e3ecc467da63f3d8e1d2f1f0944437328b4902c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8149/8149_REVIEW_HISTORY.md.gz",
+        "sha256": "7766cb1166bdadf60d2675f590d5a7428d1a030df51ea07d651ea3b9b46d5b5b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8149/8149_ROUTE_PORTFOLIO.md.gz",
+        "sha256": "26da444c12da41bb1e4af44e5cff550bc69f3654e133660d8ded76fecb638d6b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8149/8149_STATE.yaml.gz",
+        "sha256": "9dadacd7205fbe26fcfc2b9301bb01402b20d1b1017cebd16640c112e6309ebb"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8149/8149_TRACE_GATE.md.gz",
+        "sha256": "fb5551aaf4e417dfa99f07ec9f216e40b7fad497b2a153758ad1825e2955889f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8149/8149_admissibility_rule_formation_unit_clause_witness_sequential_equals_joint_iff_criterion_2026_09_15.py.gz",
+        "sha256": "b37c5145e8b9b5f924c0f3a4fb675d70d9f8257de712947f6a521482cd3aff94"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8149/8149_admissibility_rule_formation_unit_clause_witness_sequential_equals_joint_iff_criterion_2026_09_15.txt.gz",
+        "sha256": "8015f69b55c0f9e155fb489f4e5f542a89df13d2ea0305f274bae9377ef8c9c0"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8149/8149_citation_graph_manifest.json.gz",
+        "sha256": "1f78636ada6be6ba351c7e08b3faed1acb3f710b9187516432440dead6426571"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8149/8149_supervisor_control_block15_formation_unit.out.txt.gz",
+        "sha256": "7940c069af859559b66f1027f9b690dd777a7437e6d6a2c388894de3536a080d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8149/8149_supervisor_control_block15_formation_unit.py.gz",
+        "sha256": "4dae182ee16130c6d94ae548e18eb6600c624582947366e13ae9783a43604aca"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8149/8149_supervisor_control_block15_refuter.out.txt.gz",
+        "sha256": "400754be846d2c9fc4b1fe77ee9a6e861267baacb6e40ba66b162d3887fc6c22"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8149/8149_supervisor_control_block15_refuter.py.gz",
+        "sha256": "27b17d675952b82115ff710b669bbecfc3c3c1e33bed775e954d6e46f30334f4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8150/8150_ADMISSIBILITY_RULE_STATIC_LAW_IS_NOT_A_MIXTURE_OF_FORMATION_LAWS_ON_ANY_WINDOW_WITH_A_CYCLE_FLIP_MONOTONICITY_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz",
+        "sha256": "d4387c0cb4900fda892e741142c73336f84f12d52499a4d3e21d43fe56ba2403"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8150/8150_APPROACH_REGISTRY.md.gz",
+        "sha256": "961b77925e584f435c8014f12c15117f88aac5e210b0c144310f5c81562e470a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8150/8150_ASSUMPTIONS_AND_IMPORTS.md.gz",
+        "sha256": "cd27584b8fb06cb926fe1ce642131979a768f58fa56b7643141634ed1e9aeced"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8150/8150_CHECKER_block16_findings.md.gz",
+        "sha256": "b3cce47d56845c34bfcdd5d535106649f0389d63c181d8c03d0e6323c9a2cb50"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8150/8150_CLAIM_STATUS_CERTIFICATE_block16.md.gz",
+        "sha256": "f4d4492d1e1b29c8ee85feec55567f4abf4f3c030e847775df0ba72d38252fed"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8150/8150_GOAL_block16.md.gz",
+        "sha256": "6311795089f30629f930b0a838bcac7b5f6af8a5081115d803614d156baf4464"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8150/8150_HANDOFF.md.gz",
+        "sha256": "992ad53614797755e3d697f02de2d37186c453be9b289a3ec7037c833fe1d0d5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8150/8150_LITERATURE_BRIDGES.md.gz",
+        "sha256": "6cf5ca8b2089eec514f222ee94499cd3ca85d3dfcc59b253bc41afe23f363334"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8150/8150_NO_GO_LEDGER.md.gz",
+        "sha256": "98ae8ced55ce970bb6d62075a6609ecce1b4d9deeb10e5478b30be84118505ed"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8150/8150_OPPORTUNITY_QUEUE.md.gz",
+        "sha256": "ef73c69661dbc43ab95d20c5610f6df750e969f169e9109d6683f06b2ceaef1e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8150/8150_RESULTS_block16.md.gz",
+        "sha256": "efc011aa0265480f8703cfa1f6a6593847759a48318c86b7869b6c1d932cc5e4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8150/8150_REVIEW_HISTORY.md.gz",
+        "sha256": "02beb5e7a0b27c5d540e733f5e97fb39fc0b31c7f8609ee89ec1052e389d64b8"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8150/8150_ROUTE_PORTFOLIO.md.gz",
+        "sha256": "526431faa1e291e27cefd5b12fdf740eeacc2916324e193fad799d98bb004f3f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8150/8150_STATE.yaml.gz",
+        "sha256": "73590bb02268a423c77ae245f981fdab52b85e7d268a47a97bb5d8a0ec22e05e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8150/8150_TRACE_GATE.md.gz",
+        "sha256": "de33e5b03ec9365b5ea6df559dddeca22f50286472f87b475ad3ca069af13661"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8150/8150_admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.py.gz",
+        "sha256": "1982ad861b2ab861d0b6cd7b43e8bb3ee3dc62c9c86646ed14b9c5fa652d17f7"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8150/8150_admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.txt.gz",
+        "sha256": "5c4ba6a1b62d13e6cf9887b12a0b6ba49fafd63e827135c04fc62dc4f8c703e3"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8150/8150_citation_graph_manifest.json.gz",
+        "sha256": "e9a3a92092759da784c9da953577d05d393ec1f48b753b4d53d4e8d389d809e2"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8150/8150_supervisor_control_block16_flip_monotonicity.out.txt.gz",
+        "sha256": "22ced638c4cb40e2589a8ae11888dd27833ec787fe10850c7db42ce6f7de8fed"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8150/8150_supervisor_control_block16_flip_monotonicity.py.gz",
+        "sha256": "1671d202aaa76eebba9e5f49c29990044807baa41e2d1f02f97f5a4d37ece337"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8150/8150_supervisor_control_block16_refuter.out.txt.gz",
+        "sha256": "3c4ce0610a5f51a9a73091ac933f530b32374dd96c6be6dd39f9468d6a14861b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/8150/8150_supervisor_control_block16_refuter.py.gz",
+        "sha256": "b9f5ca67084ad04f47c4c68cfe677de58a66cda92e9a86b96d49a242f3f25b32"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/README.md",
+        "sha256": "c356038be513f760c7ce1e693d7b7e9a8d053c73492513e4294b0badaf2f8317"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8150/original-manifest.json",
+        "sha256": "90aff04e70165cb48d60d39f3d71d2a104b4fc7363d7373698a17478c5586a6f"
+      },
+      {
+        "path": "scripts/admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.py",
+        "sha256": "4e6c394ebc830396d518e04d149756ca04ae0d3f99668d2062e7be7c3fbadedc"
+      },
+      {
+        "path": "scripts/admissibility_rule_formation_unit_clause_witness_sequential_equals_joint_iff_criterion_2026_09_15.py",
+        "sha256": "5795b0097fc16fc4eaf492905f3a510fb5116f1d9e3d70d94e5560992406d45e"
+      },
+      {
+        "path": "scripts/admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.py",
+        "sha256": "67c6265fecbbf764b92c69495cbcb6b3a5788a31db7c423cc297f87fde5f33be"
+      }
+    ],
+    "deleted_paths": []
+  },
+  "original_dispositions": [
+    {
+      "pr": 8148,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "mode": "100644",
+      "blob": "a4455ce511fdcdd2228c49555b9a60b6dd88df0d",
+      "sha256": "8ed4ff16ca4c5d5aa6540c2e9718d3902f9402d2487cfc1285db4af4b84d6e15",
+      "bytes": 2150,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "original_sha256": "8ed4ff16ca4c5d5aa6540c2e9718d3902f9402d2487cfc1285db4af4b84d6e15",
+      "final_path": "docs/work_history/review_loop/pr8150/8148/8148_APPROACH_REGISTRY.md.gz",
+      "final_sha256": "fa13de2c21163d155433576880aa58d99e7e087591c3fd9119e805653bea698d",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "47fea70fbb2d48ab9c1dedccfe9812d6e373a085:.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md"
+    },
+    {
+      "pr": 8148,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md",
+      "mode": "100644",
+      "blob": "aaebce40c0082db8ad50a0ab10aeecb6b45528b1",
+      "sha256": "9c740ee53e54650226d9d930b9b72430afd03b19355bca3d4ad2fde552f5cbaa",
+      "bytes": 4480,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md",
+      "original_sha256": "9c740ee53e54650226d9d930b9b72430afd03b19355bca3d4ad2fde552f5cbaa",
+      "final_path": "docs/work_history/review_loop/pr8150/8148/8148_ASSUMPTIONS_AND_IMPORTS.md.gz",
+      "final_sha256": "882581103410c2cf3843fc9762959788c4319aa7b8916f9de3b0612d64536ab6",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "47fea70fbb2d48ab9c1dedccfe9812d6e373a085:.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "pr": 8148,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block14_findings.md",
+      "mode": "100644",
+      "blob": "8c4a2a25787c8ec85ae2d082a61efb3065acabdd",
+      "sha256": "0ebd87be111d9714abbd1215d146b434a4148454e21e07f1e70e06e2af3ffc6b",
+      "bytes": 2979,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block14_findings.md",
+      "original_sha256": "0ebd87be111d9714abbd1215d146b434a4148454e21e07f1e70e06e2af3ffc6b",
+      "final_path": "docs/work_history/review_loop/pr8150/8148/8148_CHECKER_block14_findings.md.gz",
+      "final_sha256": "06568389ea14400802eebd74dd605861236802e2cfca2f57bc7625c457174230",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "47fea70fbb2d48ab9c1dedccfe9812d6e373a085:.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block14_findings.md"
+    },
+    {
+      "pr": 8148,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block14.md",
+      "mode": "100644",
+      "blob": "b502fbfd80dadbbdbb19afd6cac8db4b607bc60f",
+      "sha256": "77d44f1c900e14a04942a58cb6042f7e4770a4078c3ffd355c5cda32b27062f5",
+      "bytes": 1454,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block14.md",
+      "original_sha256": "77d44f1c900e14a04942a58cb6042f7e4770a4078c3ffd355c5cda32b27062f5",
+      "final_path": "docs/work_history/review_loop/pr8150/8148/8148_CLAIM_STATUS_CERTIFICATE_block14.md.gz",
+      "final_sha256": "109a1e7593283cd1e121950932f1b2a9a6c3ecede9413aa2cef0d52e3c1c66f9",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "47fea70fbb2d48ab9c1dedccfe9812d6e373a085:.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block14.md"
+    },
+    {
+      "pr": 8148,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block14.md",
+      "mode": "100644",
+      "blob": "7f08b7f32cd40ecc53b0ec17714a800748ca5307",
+      "sha256": "99e6fc4b01d11a9a2c53043e82075b606a548e6aa5b5ea5345f25c712e03e2b9",
+      "bytes": 5706,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block14.md",
+      "original_sha256": "99e6fc4b01d11a9a2c53043e82075b606a548e6aa5b5ea5345f25c712e03e2b9",
+      "final_path": "docs/work_history/review_loop/pr8150/8148/8148_GOAL_block14.md.gz",
+      "final_sha256": "e496f3e14e0d43c7651144ad0868987b4d0a9fa3b4cc976fab79228fe62ef67b",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "47fea70fbb2d48ab9c1dedccfe9812d6e373a085:.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block14.md"
+    },
+    {
+      "pr": 8148,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "mode": "100644",
+      "blob": "1824314aa6d9f7d6738efb313cc7cc441824ccbd",
+      "sha256": "61e99d93c51f24c91ff0577a1d7f80ea68012757bb082930a5207c7bc8a97e2a",
+      "bytes": 9879,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "original_sha256": "61e99d93c51f24c91ff0577a1d7f80ea68012757bb082930a5207c7bc8a97e2a",
+      "final_path": "docs/work_history/review_loop/pr8150/8148/8148_HANDOFF.md.gz",
+      "final_sha256": "a6129d80cf5b95942a46d8dbfe371f561199f0563cbdeda1bfc794574d7512c6",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "47fea70fbb2d48ab9c1dedccfe9812d6e373a085:.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md"
+    },
+    {
+      "pr": 8148,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md",
+      "mode": "100644",
+      "blob": "5155facc87ab23a71f96ad4a8cbc2a6c005f4252",
+      "sha256": "55cddbfcc28ae9d3a6431f25afc9549f2b059007370f25d06c685278c66cff78",
+      "bytes": 2528,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md",
+      "original_sha256": "55cddbfcc28ae9d3a6431f25afc9549f2b059007370f25d06c685278c66cff78",
+      "final_path": "docs/work_history/review_loop/pr8150/8148/8148_LITERATURE_BRIDGES.md.gz",
+      "final_sha256": "9f3d94e296854d10501938ff0136ab7ccf278882e679881a40ed8a4ed9be12db",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "47fea70fbb2d48ab9c1dedccfe9812d6e373a085:.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md"
+    },
+    {
+      "pr": 8148,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+      "mode": "100644",
+      "blob": "5a70290ba1338385b99df427acb7b5fdb9d636f4",
+      "sha256": "3992fdc6f21adf88a773415603ede3eaa55dce1da6d380d3662a49ddc81b92c2",
+      "bytes": 2256,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+      "original_sha256": "3992fdc6f21adf88a773415603ede3eaa55dce1da6d380d3662a49ddc81b92c2",
+      "final_path": "docs/work_history/review_loop/pr8150/8148/8148_NO_GO_LEDGER.md.gz",
+      "final_sha256": "1909ee856e99d1df8b2ee0a70df9ddd4ae63a13e661f2ad5dd569696753ad83f",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "47fea70fbb2d48ab9c1dedccfe9812d6e373a085:.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md"
+    },
+    {
+      "pr": 8148,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "mode": "100644",
+      "blob": "4aa71bc6464844e37be454efbe9eeede7548d781",
+      "sha256": "39aecd565e6a81a760f006ecfed71330cb0a5455fcab3dfebbe6dcd0ab5c83d3",
+      "bytes": 11812,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "original_sha256": "39aecd565e6a81a760f006ecfed71330cb0a5455fcab3dfebbe6dcd0ab5c83d3",
+      "final_path": "docs/work_history/review_loop/pr8150/8148/8148_OPPORTUNITY_QUEUE.md.gz",
+      "final_sha256": "078a4ff61ace78231fd5929d61acbcc73993b10ba1aa37e69d2dfe8ab2f68506",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "47fea70fbb2d48ab9c1dedccfe9812d6e373a085:.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md"
+    },
+    {
+      "pr": 8148,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block14.md",
+      "mode": "100644",
+      "blob": "4f103858d50363ee73dbd8e8d0d798a383fb056a",
+      "sha256": "7bbb95a858850212a4b9d188a06343fff5ce6485b29ebcfc5fa83d597b4f8af2",
+      "bytes": 3728,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block14.md",
+      "original_sha256": "7bbb95a858850212a4b9d188a06343fff5ce6485b29ebcfc5fa83d597b4f8af2",
+      "final_path": "docs/work_history/review_loop/pr8150/8148/8148_RESULTS_block14.md.gz",
+      "final_sha256": "284e85d402d8b7bd9ba58d820981e1c620b40613e243c44206a9f3d1622a122d",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "47fea70fbb2d48ab9c1dedccfe9812d6e373a085:.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block14.md"
+    },
+    {
+      "pr": 8148,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "mode": "100644",
+      "blob": "fe9b12241851cf1b65820e3aa47344f83de930ab",
+      "sha256": "8775b7c16da6e24e3195ead01a16e1a4bdcda0eec50a4cdabcc76263ef7ca577",
+      "bytes": 56695,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "original_sha256": "8775b7c16da6e24e3195ead01a16e1a4bdcda0eec50a4cdabcc76263ef7ca577",
+      "final_path": "docs/work_history/review_loop/pr8150/8148/8148_REVIEW_HISTORY.md.gz",
+      "final_sha256": "713cf6f64574c0097c78c0a47d53e7e177e03604822d4611d7e395b1bcd2749b",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "47fea70fbb2d48ab9c1dedccfe9812d6e373a085:.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md"
+    },
+    {
+      "pr": 8148,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md",
+      "mode": "100644",
+      "blob": "d04a6aa8b7867200da56dd58fffb4df8e084098b",
+      "sha256": "1d48d3d555df70abee5c1eddb0628c4746c8416babaa5b5e452adca8351f879f",
+      "bytes": 11732,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md",
+      "original_sha256": "1d48d3d555df70abee5c1eddb0628c4746c8416babaa5b5e452adca8351f879f",
+      "final_path": "docs/work_history/review_loop/pr8150/8148/8148_ROUTE_PORTFOLIO.md.gz",
+      "final_sha256": "28385d651072f172b8270562049e5d65cbf6e0ad6b07b6f3c544dd0726ff303c",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "47fea70fbb2d48ab9c1dedccfe9812d6e373a085:.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md"
+    },
+    {
+      "pr": 8148,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "mode": "100644",
+      "blob": "77c1b33df9401fa2d5f8cb4bf183fa6a96bc44e3",
+      "sha256": "b61013765d6c1a3019a87b9fccbf77cf7cca9c06d9b48ab6d20f1bc73223f1c3",
+      "bytes": 16259,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "original_sha256": "b61013765d6c1a3019a87b9fccbf77cf7cca9c06d9b48ab6d20f1bc73223f1c3",
+      "final_path": "docs/work_history/review_loop/pr8150/8148/8148_STATE.yaml.gz",
+      "final_sha256": "cb280d64be97283979bd14a9d5b0ca4d86d45165b86b1429f52da238cae3a303",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "47fea70fbb2d48ab9c1dedccfe9812d6e373a085:.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml"
+    },
+    {
+      "pr": 8148,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "mode": "100644",
+      "blob": "c601521f1f3429d15dc901f70eefdc1c1ea89f2d",
+      "sha256": "8647fb2d4440e93830dd39040601d5eef3262aeafe5f26e5d26ad9ce80b65c39",
+      "bytes": 5206,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "original_sha256": "8647fb2d4440e93830dd39040601d5eef3262aeafe5f26e5d26ad9ce80b65c39",
+      "final_path": "docs/work_history/review_loop/pr8150/8148/8148_TRACE_GATE.md.gz",
+      "final_sha256": "1e06fc1ab06b1ab485bbc78a41bde92a27a87570c7d6fe3d4361d87723e9ccf6",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "47fea70fbb2d48ab9c1dedccfe9812d6e373a085:.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md"
+    },
+    {
+      "pr": 8148,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block14_rate_laws.out.txt",
+      "mode": "100644",
+      "blob": "b0b52e6400246d7730642f639468d215c9dd29df",
+      "sha256": "a3b5ae3e74d5d97f1ea3b23537af7b0466b2eaf982ff80e09cc057dd8a4c7ab0",
+      "bytes": 933,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block14_rate_laws.out.txt",
+      "original_sha256": "a3b5ae3e74d5d97f1ea3b23537af7b0466b2eaf982ff80e09cc057dd8a4c7ab0",
+      "final_path": "docs/work_history/review_loop/pr8150/8148/8148_supervisor_control_block14_rate_laws.out.txt.gz",
+      "final_sha256": "8c8ad8cf0c764d4571ca94e45356c9f04b70983ce43ecc75b0f903a9599d1766",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "47fea70fbb2d48ab9c1dedccfe9812d6e373a085:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block14_rate_laws.out.txt"
+    },
+    {
+      "pr": 8148,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block14_rate_laws.py",
+      "mode": "100644",
+      "blob": "137181a7d05ba4e41f6166423f79faa2559ab417",
+      "sha256": "7ff4f4a05971321916183d6cbdd5e0e598673e7aeb2fc70f319f2f4426d5d20d",
+      "bytes": 6761,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block14_rate_laws.py",
+      "original_sha256": "7ff4f4a05971321916183d6cbdd5e0e598673e7aeb2fc70f319f2f4426d5d20d",
+      "final_path": "docs/work_history/review_loop/pr8150/8148/8148_supervisor_control_block14_rate_laws.py.gz",
+      "final_sha256": "c380a39a2421fc761db9f5e1aba881c3192e8a02d950f6652fd67380e630cb27",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "47fea70fbb2d48ab9c1dedccfe9812d6e373a085:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block14_rate_laws.py"
+    },
+    {
+      "pr": 8148,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block14_refuter.out.txt",
+      "mode": "100644",
+      "blob": "38d4c107a158cc6381cb89625a94503e926e5dd4",
+      "sha256": "1058e52180cb3c56e16ef7fa0696391cefbd3a45cc9c3e12524186e54f240e41",
+      "bytes": 567,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block14_refuter.out.txt",
+      "original_sha256": "1058e52180cb3c56e16ef7fa0696391cefbd3a45cc9c3e12524186e54f240e41",
+      "final_path": "docs/work_history/review_loop/pr8150/8148/8148_supervisor_control_block14_refuter.out.txt.gz",
+      "final_sha256": "ca6d572d516ae1259d62ca502883260dbe02b6bca81555a00d99acb6c5443e90",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "47fea70fbb2d48ab9c1dedccfe9812d6e373a085:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block14_refuter.out.txt"
+    },
+    {
+      "pr": 8148,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block14_refuter.py",
+      "mode": "100644",
+      "blob": "38c3a94bee1f619538c364c707cce92d2fc30da3",
+      "sha256": "5685e3f281fb3cea0ee473bc3057c4727652c7d4e41e729f087321c76e5331fa",
+      "bytes": 5609,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block14_refuter.py",
+      "original_sha256": "5685e3f281fb3cea0ee473bc3057c4727652c7d4e41e729f087321c76e5331fa",
+      "final_path": "docs/work_history/review_loop/pr8150/8148/8148_supervisor_control_block14_refuter.py.gz",
+      "final_sha256": "6da8e96c8d5859158f0cd51a0e4b1ed8097880a6c289919bea25e2a14f8bb204",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "47fea70fbb2d48ab9c1dedccfe9812d6e373a085:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block14_refuter.py"
+    },
+    {
+      "pr": 8148,
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_RATE_CLAUSE_WITNESS_NO_COVARIANT_CLOCK_LAW_REACHES_THE_STATIC_LAW_ON_A_PLAQUETTE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "mode": "100644",
+      "blob": "88e1a487b2bd7460225f4852f649543f1fa40ccd",
+      "sha256": "d0567b83bdbd8f8f942423ae907e412f817f3de777a85da1ce9ec931b588b89e",
+      "bytes": 28571,
+      "original_path": "docs/ADMISSIBILITY_RULE_FORMATION_RATE_CLAUSE_WITNESS_NO_COVARIANT_CLOCK_LAW_REACHES_THE_STATIC_LAW_ON_A_PLAQUETTE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_sha256": "d0567b83bdbd8f8f942423ae907e412f817f3de777a85da1ce9ec931b588b89e",
+      "final_path": "docs/work_history/review_loop/pr8150/8148/8148_ADMISSIBILITY_RULE_FORMATION_RATE_CLAUSE_WITNESS_NO_COVARIANT_CLOCK_LAW_REACHES_THE_STATIC_LAW_ON_A_PLAQUETTE_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz",
+      "final_sha256": "8379b4a633d309dcb3decf75c864bb00562e38ecca9e7560a30f323029d1a824",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "47fea70fbb2d48ab9c1dedccfe9812d6e373a085:docs/ADMISSIBILITY_RULE_FORMATION_RATE_CLAUSE_WITNESS_NO_COVARIANT_CLOCK_LAW_REACHES_THE_STATIC_LAW_ON_A_PLAQUETTE_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+    },
+    {
+      "pr": 8148,
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "mode": "100644",
+      "blob": "cfb5c7d45f81539d29b8db6d52943930f9ecaba8",
+      "sha256": "0d37ee799e88c7c988e419cc1a736533eb566669acf0a8c85040ca6893216603",
+      "bytes": 800815,
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "0d37ee799e88c7c988e419cc1a736533eb566669acf0a8c85040ca6893216603",
+      "final_path": "docs/work_history/review_loop/pr8150/8148/8148_citation_graph_manifest.json.gz",
+      "final_sha256": "017b35d2107531e9fc5ee4a689d20fe2e45723cb7f3e552cfd87ea4739375459",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "47fea70fbb2d48ab9c1dedccfe9812d6e373a085:docs/audit/data/citation_graph_manifest.json"
+    },
+    {
+      "pr": 8148,
+      "path": "logs/runner-cache/admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.txt",
+      "mode": "100644",
+      "blob": "7bd3d385a52e3883620f56f477c8da2fad9717f0",
+      "sha256": "462706cf1c082aa629c71c15de8e5ae04da4ed7f182687f1a6a7b29e2c921a00",
+      "bytes": 4874,
+      "original_path": "logs/runner-cache/admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.txt",
+      "original_sha256": "462706cf1c082aa629c71c15de8e5ae04da4ed7f182687f1a6a7b29e2c921a00",
+      "final_path": "docs/work_history/review_loop/pr8150/8148/8148_admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.txt.gz",
+      "final_sha256": "c348b87a1127035ddc78c749d968d1a6ac519a12cebaddaf06cc56429fd242d9",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "47fea70fbb2d48ab9c1dedccfe9812d6e373a085:logs/runner-cache/admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.txt"
+    },
+    {
+      "pr": 8148,
+      "path": "scripts/admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.py",
+      "mode": "100644",
+      "blob": "0721ca3205e6eb53fd4600509cf762229ec85ef0",
+      "sha256": "0c5f9c5b735587d3315ea1236e28ff4651d9bd259732d2f3e66feb0667b89716",
+      "bytes": 29867,
+      "original_path": "scripts/admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.py",
+      "original_sha256": "0c5f9c5b735587d3315ea1236e28ff4651d9bd259732d2f3e66feb0667b89716",
+      "final_path": "docs/work_history/review_loop/pr8150/8148/8148_admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.py.gz",
+      "final_sha256": "d79c9403d58e217392ade039656bf242a624e908d7c76028a8a3db4cd88b46fc",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "47fea70fbb2d48ab9c1dedccfe9812d6e373a085:scripts/admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.py"
+    },
+    {
+      "pr": 8149,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "mode": "100644",
+      "blob": "1ce7bdd56a10dcd32091292ed7dd6ed4dfe2079e",
+      "sha256": "4091636ab8d37200f9b52dd79f9dfe23723d5cd28246380897547f3bd2946900",
+      "bytes": 2030,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "original_sha256": "4091636ab8d37200f9b52dd79f9dfe23723d5cd28246380897547f3bd2946900",
+      "final_path": "docs/work_history/review_loop/pr8150/8149/8149_APPROACH_REGISTRY.md.gz",
+      "final_sha256": "c2f6536c30ac0cd9c5f378fa9980a118d1d6deed522d38855fea6c639a8b5d38",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "cac35566ade2d3ceddb4371c2232c5f8d9611246:.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md"
+    },
+    {
+      "pr": 8149,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md",
+      "mode": "100644",
+      "blob": "3eab60d293c7ab45ee23d8e242b798fe5bb5491e",
+      "sha256": "80c42757f30ee5972aa073c4160b327da9462b8263085c637e3456a075b39418",
+      "bytes": 4372,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md",
+      "original_sha256": "80c42757f30ee5972aa073c4160b327da9462b8263085c637e3456a075b39418",
+      "final_path": "docs/work_history/review_loop/pr8150/8149/8149_ASSUMPTIONS_AND_IMPORTS.md.gz",
+      "final_sha256": "e147e7ddf6f0a7604901384d19c8e1ea2a2632d094abc343dfd47033015383bc",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "cac35566ade2d3ceddb4371c2232c5f8d9611246:.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "pr": 8149,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block15_findings.md",
+      "mode": "100644",
+      "blob": "cc64e85256ba4b9274e3dd94a1cbda71ebd47634",
+      "sha256": "28bf1d5c5efd12b0c6fbdbfc4fcd9756e7ab5294a4635c9e3ba933f4c14b78a0",
+      "bytes": 2490,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block15_findings.md",
+      "original_sha256": "28bf1d5c5efd12b0c6fbdbfc4fcd9756e7ab5294a4635c9e3ba933f4c14b78a0",
+      "final_path": "docs/work_history/review_loop/pr8150/8149/8149_CHECKER_block15_findings.md.gz",
+      "final_sha256": "f91a0a24d2831e97607e15618cde4907496a6da3c237ef565d62acfe0f5da0d9",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "cac35566ade2d3ceddb4371c2232c5f8d9611246:.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block15_findings.md"
+    },
+    {
+      "pr": 8149,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block15.md",
+      "mode": "100644",
+      "blob": "a5b2b34af82da9bdc70fe506140ee6161df7f41e",
+      "sha256": "3b3377980bdf9987a2901ba6936c2f2c7a0ffcc840d6a4bff508a90537e75f1b",
+      "bytes": 1388,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block15.md",
+      "original_sha256": "3b3377980bdf9987a2901ba6936c2f2c7a0ffcc840d6a4bff508a90537e75f1b",
+      "final_path": "docs/work_history/review_loop/pr8150/8149/8149_CLAIM_STATUS_CERTIFICATE_block15.md.gz",
+      "final_sha256": "e7dc64438f3d373bfbaf9069a928bee559ccac9d2a0250e27b6e0bb1be8a5d7f",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "cac35566ade2d3ceddb4371c2232c5f8d9611246:.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block15.md"
+    },
+    {
+      "pr": 8149,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block15.md",
+      "mode": "100644",
+      "blob": "697bd5266c55ee01b5e865ec3ca18ba05be8883e",
+      "sha256": "98016e8e9a410b3be86f4750f0bd4b9446b26fd65d23684039d2191a338c368b",
+      "bytes": 4354,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block15.md",
+      "original_sha256": "98016e8e9a410b3be86f4750f0bd4b9446b26fd65d23684039d2191a338c368b",
+      "final_path": "docs/work_history/review_loop/pr8150/8149/8149_GOAL_block15.md.gz",
+      "final_sha256": "37938209f47b7ae34df0531c7e07a16a1c3b0f3ca4989dfe5a491e6522f1e771",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "cac35566ade2d3ceddb4371c2232c5f8d9611246:.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block15.md"
+    },
+    {
+      "pr": 8149,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "mode": "100644",
+      "blob": "68a9716fb97636b9024766dc4a211505b0e42804",
+      "sha256": "f86ec503b60ff21e1b99fb847ff74176b5a6ea079e5eefe0af9abe95b9a71b47",
+      "bytes": 9566,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "original_sha256": "f86ec503b60ff21e1b99fb847ff74176b5a6ea079e5eefe0af9abe95b9a71b47",
+      "final_path": "docs/work_history/review_loop/pr8150/8149/8149_HANDOFF.md.gz",
+      "final_sha256": "6b9af92ab6ff0914c43e110d02fdc0526b3bc08181876636517935bd9e90de56",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "cac35566ade2d3ceddb4371c2232c5f8d9611246:.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md"
+    },
+    {
+      "pr": 8149,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md",
+      "mode": "100644",
+      "blob": "413a69afd745d522c63eeb6a4c5b4082b6d53dcf",
+      "sha256": "3795c7a6d249d95f0f8f4a28c77f58c8fadfbd4854368f73fc92f60989b5e271",
+      "bytes": 2533,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md",
+      "original_sha256": "3795c7a6d249d95f0f8f4a28c77f58c8fadfbd4854368f73fc92f60989b5e271",
+      "final_path": "docs/work_history/review_loop/pr8150/8149/8149_LITERATURE_BRIDGES.md.gz",
+      "final_sha256": "a9d7ea1cf72b13dfc24616630459044fa9feb56f16833a4ccd7d5e8c66029691",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "cac35566ade2d3ceddb4371c2232c5f8d9611246:.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md"
+    },
+    {
+      "pr": 8149,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+      "mode": "100644",
+      "blob": "2b8972fc140aba8e6ec4ad6c599227b2fc1bc9b3",
+      "sha256": "c76d6702053b311900cb450354208ff71df63a9a8119a91d5b6fbb3cec17e638",
+      "bytes": 2213,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+      "original_sha256": "c76d6702053b311900cb450354208ff71df63a9a8119a91d5b6fbb3cec17e638",
+      "final_path": "docs/work_history/review_loop/pr8150/8149/8149_NO_GO_LEDGER.md.gz",
+      "final_sha256": "dcd4c7138c492a3f269aced943db8c2d12d82e1c4aa07ff995b10506a75396b6",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "cac35566ade2d3ceddb4371c2232c5f8d9611246:.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md"
+    },
+    {
+      "pr": 8149,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "mode": "100644",
+      "blob": "7eaec590d0803f20a798679ea838c6e03dfc249d",
+      "sha256": "26477196b234bb30642f74a80c4c57f87a78094fcc72299c52fce499d473dfad",
+      "bytes": 11621,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "original_sha256": "26477196b234bb30642f74a80c4c57f87a78094fcc72299c52fce499d473dfad",
+      "final_path": "docs/work_history/review_loop/pr8150/8149/8149_OPPORTUNITY_QUEUE.md.gz",
+      "final_sha256": "5a4b74e1de483182e90f877e29a5b6b57a9b19efe197777804b80e1a5004fa3a",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "cac35566ade2d3ceddb4371c2232c5f8d9611246:.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md"
+    },
+    {
+      "pr": 8149,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block15.md",
+      "mode": "100644",
+      "blob": "a01814d56b6a3b7b16b7256ab2e63e5591d266c7",
+      "sha256": "e97ab7b157aed41dcf4a8838d2ec9eb74432252d039c53499f94f0460119536a",
+      "bytes": 3453,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block15.md",
+      "original_sha256": "e97ab7b157aed41dcf4a8838d2ec9eb74432252d039c53499f94f0460119536a",
+      "final_path": "docs/work_history/review_loop/pr8150/8149/8149_RESULTS_block15.md.gz",
+      "final_sha256": "6586f0af78231b122793e9fc2e3ecc467da63f3d8e1d2f1f0944437328b4902c",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "cac35566ade2d3ceddb4371c2232c5f8d9611246:.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block15.md"
+    },
+    {
+      "pr": 8149,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "mode": "100644",
+      "blob": "121dbb47a1905d3e1d9549229a67632c3bf24325",
+      "sha256": "391356387db17193037d3934e7826ca20ab089b4d08fdbd31c8980ad644d5c1d",
+      "bytes": 56508,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "original_sha256": "391356387db17193037d3934e7826ca20ab089b4d08fdbd31c8980ad644d5c1d",
+      "final_path": "docs/work_history/review_loop/pr8150/8149/8149_REVIEW_HISTORY.md.gz",
+      "final_sha256": "7766cb1166bdadf60d2675f590d5a7428d1a030df51ea07d651ea3b9b46d5b5b",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "cac35566ade2d3ceddb4371c2232c5f8d9611246:.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md"
+    },
+    {
+      "pr": 8149,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md",
+      "mode": "100644",
+      "blob": "a137b5c1c8c13efc4a8217c679140cbdcfd08df1",
+      "sha256": "3d35821198087b4cbcf3a760ffcaacd0d7ae7c66cb049efbc9741f28a2e91d4b",
+      "bytes": 11650,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md",
+      "original_sha256": "3d35821198087b4cbcf3a760ffcaacd0d7ae7c66cb049efbc9741f28a2e91d4b",
+      "final_path": "docs/work_history/review_loop/pr8150/8149/8149_ROUTE_PORTFOLIO.md.gz",
+      "final_sha256": "26da444c12da41bb1e4af44e5cff550bc69f3654e133660d8ded76fecb638d6b",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "cac35566ade2d3ceddb4371c2232c5f8d9611246:.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md"
+    },
+    {
+      "pr": 8149,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "mode": "100644",
+      "blob": "c64f7c5fe21be6bbd5a8f6f9b48dc5903c5050ad",
+      "sha256": "4ffa4855ea1247f1bfa773a0c61dad67c5a14ce25e7934830998e33277efa0de",
+      "bytes": 16326,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "original_sha256": "4ffa4855ea1247f1bfa773a0c61dad67c5a14ce25e7934830998e33277efa0de",
+      "final_path": "docs/work_history/review_loop/pr8150/8149/8149_STATE.yaml.gz",
+      "final_sha256": "9dadacd7205fbe26fcfc2b9301bb01402b20d1b1017cebd16640c112e6309ebb",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "cac35566ade2d3ceddb4371c2232c5f8d9611246:.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml"
+    },
+    {
+      "pr": 8149,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "mode": "100644",
+      "blob": "13eca3bfedee6a2945a481690631e13068cfdd65",
+      "sha256": "f68e6394e5aac16b8d073120b13b6ac428f7d86ed1c724552991c0387fdfd388",
+      "bytes": 5211,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "original_sha256": "f68e6394e5aac16b8d073120b13b6ac428f7d86ed1c724552991c0387fdfd388",
+      "final_path": "docs/work_history/review_loop/pr8150/8149/8149_TRACE_GATE.md.gz",
+      "final_sha256": "fb5551aaf4e417dfa99f07ec9f216e40b7fad497b2a153758ad1825e2955889f",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "cac35566ade2d3ceddb4371c2232c5f8d9611246:.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md"
+    },
+    {
+      "pr": 8149,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block15_formation_unit.out.txt",
+      "mode": "100644",
+      "blob": "470d404a0d8cd91134a63416c4c24a50a9635036",
+      "sha256": "abb33177e8fd805a810d028a511601a109d3fe5a3ca068e56fe94e2e83bb477d",
+      "bytes": 2631,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block15_formation_unit.out.txt",
+      "original_sha256": "abb33177e8fd805a810d028a511601a109d3fe5a3ca068e56fe94e2e83bb477d",
+      "final_path": "docs/work_history/review_loop/pr8150/8149/8149_supervisor_control_block15_formation_unit.out.txt.gz",
+      "final_sha256": "7940c069af859559b66f1027f9b690dd777a7437e6d6a2c388894de3536a080d",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "cac35566ade2d3ceddb4371c2232c5f8d9611246:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block15_formation_unit.out.txt"
+    },
+    {
+      "pr": 8149,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block15_formation_unit.py",
+      "mode": "100644",
+      "blob": "04678b668f1b355d702b89d627fb125db1307d16",
+      "sha256": "4a214ecc605008d454977c781841fbb9f24a763ec8b6fe15a5834bd24718d98f",
+      "bytes": 5910,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block15_formation_unit.py",
+      "original_sha256": "4a214ecc605008d454977c781841fbb9f24a763ec8b6fe15a5834bd24718d98f",
+      "final_path": "docs/work_history/review_loop/pr8150/8149/8149_supervisor_control_block15_formation_unit.py.gz",
+      "final_sha256": "4dae182ee16130c6d94ae548e18eb6600c624582947366e13ae9783a43604aca",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "cac35566ade2d3ceddb4371c2232c5f8d9611246:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block15_formation_unit.py"
+    },
+    {
+      "pr": 8149,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block15_refuter.out.txt",
+      "mode": "100644",
+      "blob": "9397033a408d92c0751b6593560e0098a29a9c31",
+      "sha256": "909834473928f3d7c705ef665e27477076a68004a45ec2434f5c82cef72d2bb2",
+      "bytes": 506,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block15_refuter.out.txt",
+      "original_sha256": "909834473928f3d7c705ef665e27477076a68004a45ec2434f5c82cef72d2bb2",
+      "final_path": "docs/work_history/review_loop/pr8150/8149/8149_supervisor_control_block15_refuter.out.txt.gz",
+      "final_sha256": "400754be846d2c9fc4b1fe77ee9a6e861267baacb6e40ba66b162d3887fc6c22",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "cac35566ade2d3ceddb4371c2232c5f8d9611246:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block15_refuter.out.txt"
+    },
+    {
+      "pr": 8149,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block15_refuter.py",
+      "mode": "100644",
+      "blob": "9d68d158e0acd6b897729179150b96df44392ebe",
+      "sha256": "23a015121ab4f087f759e3961374c86ecb9c841e50495ec5c52f4503b5dd6de7",
+      "bytes": 4385,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block15_refuter.py",
+      "original_sha256": "23a015121ab4f087f759e3961374c86ecb9c841e50495ec5c52f4503b5dd6de7",
+      "final_path": "docs/work_history/review_loop/pr8150/8149/8149_supervisor_control_block15_refuter.py.gz",
+      "final_sha256": "27b17d675952b82115ff710b669bbecfc3c3c1e33bed775e954d6e46f30334f4",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "cac35566ade2d3ceddb4371c2232c5f8d9611246:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block15_refuter.py"
+    },
+    {
+      "pr": 8149,
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_UNIT_CLAUSE_WITNESS_SEQUENTIAL_FORMATION_REPRODUCES_THE_JOINT_LAW_IFF_NO_SITE_RECORDS_AN_INSIDE_NEIGHBOUR_WITH_A_SECOND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "mode": "100644",
+      "blob": "71685af67b48e87186663b30fd95ad5cc7b7b2fd",
+      "sha256": "70876089e4a10af69e98eff129f5131671ea50b0a009853d56c353ea46cd931c",
+      "bytes": 23105,
+      "original_path": "docs/ADMISSIBILITY_RULE_FORMATION_UNIT_CLAUSE_WITNESS_SEQUENTIAL_FORMATION_REPRODUCES_THE_JOINT_LAW_IFF_NO_SITE_RECORDS_AN_INSIDE_NEIGHBOUR_WITH_A_SECOND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_sha256": "70876089e4a10af69e98eff129f5131671ea50b0a009853d56c353ea46cd931c",
+      "final_path": "docs/work_history/review_loop/pr8150/8149/8149_ADMISSIBILITY_RULE_FORMATION_UNIT_CLAUSE_WITNESS_SEQUENTIAL_FORMATION_REPRODUCES_THE_JOINT_LAW_IFF_NO_SITE_RECORDS_AN_INSIDE_NEIGHBOUR_WITH_A_SECOND_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz",
+      "final_sha256": "564cb560baf7a5f36493d13b05989ec3c899d1ae0ccd0456c9368c793d91ea67",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "cac35566ade2d3ceddb4371c2232c5f8d9611246:docs/ADMISSIBILITY_RULE_FORMATION_UNIT_CLAUSE_WITNESS_SEQUENTIAL_FORMATION_REPRODUCES_THE_JOINT_LAW_IFF_NO_SITE_RECORDS_AN_INSIDE_NEIGHBOUR_WITH_A_SECOND_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+    },
+    {
+      "pr": 8149,
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "mode": "100644",
+      "blob": "0a50e0366365d3fb74fe96d67825bc4939665b6e",
+      "sha256": "01514cb6b05eac39fe08096b6f14a9436f7f16e86fd503d3da4e7c126b89bcd9",
+      "bytes": 805463,
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "01514cb6b05eac39fe08096b6f14a9436f7f16e86fd503d3da4e7c126b89bcd9",
+      "final_path": "docs/work_history/review_loop/pr8150/8149/8149_citation_graph_manifest.json.gz",
+      "final_sha256": "1f78636ada6be6ba351c7e08b3faed1acb3f710b9187516432440dead6426571",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "cac35566ade2d3ceddb4371c2232c5f8d9611246:docs/audit/data/citation_graph_manifest.json"
+    },
+    {
+      "pr": 8149,
+      "path": "logs/runner-cache/admissibility_rule_formation_unit_clause_witness_sequential_equals_joint_iff_criterion_2026_09_15.txt",
+      "mode": "100644",
+      "blob": "4e8511336ae2a41c883a4e2c2b845b3abfb8826c",
+      "sha256": "bf8ad1a978b2f8cd4b9cc4362a4d256e1f9dbea84e2aabbcb50a42684530678b",
+      "bytes": 4095,
+      "original_path": "logs/runner-cache/admissibility_rule_formation_unit_clause_witness_sequential_equals_joint_iff_criterion_2026_09_15.txt",
+      "original_sha256": "bf8ad1a978b2f8cd4b9cc4362a4d256e1f9dbea84e2aabbcb50a42684530678b",
+      "final_path": "docs/work_history/review_loop/pr8150/8149/8149_admissibility_rule_formation_unit_clause_witness_sequential_equals_joint_iff_criterion_2026_09_15.txt.gz",
+      "final_sha256": "8015f69b55c0f9e155fb489f4e5f542a89df13d2ea0305f274bae9377ef8c9c0",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "cac35566ade2d3ceddb4371c2232c5f8d9611246:logs/runner-cache/admissibility_rule_formation_unit_clause_witness_sequential_equals_joint_iff_criterion_2026_09_15.txt"
+    },
+    {
+      "pr": 8149,
+      "path": "scripts/admissibility_rule_formation_unit_clause_witness_sequential_equals_joint_iff_criterion_2026_09_15.py",
+      "mode": "100644",
+      "blob": "ceb831a762dc584d74331e9a4b202760c562aafc",
+      "sha256": "5a9ea1b5c33ce321ace1bf910488074fd76c95ae203b5795e51633cc73c3f871",
+      "bytes": 22497,
+      "original_path": "scripts/admissibility_rule_formation_unit_clause_witness_sequential_equals_joint_iff_criterion_2026_09_15.py",
+      "original_sha256": "5a9ea1b5c33ce321ace1bf910488074fd76c95ae203b5795e51633cc73c3f871",
+      "final_path": "docs/work_history/review_loop/pr8150/8149/8149_admissibility_rule_formation_unit_clause_witness_sequential_equals_joint_iff_criterion_2026_09_15.py.gz",
+      "final_sha256": "b37c5145e8b9b5f924c0f3a4fb675d70d9f8257de712947f6a521482cd3aff94",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "cac35566ade2d3ceddb4371c2232c5f8d9611246:scripts/admissibility_rule_formation_unit_clause_witness_sequential_equals_joint_iff_criterion_2026_09_15.py"
+    },
+    {
+      "pr": 8150,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "mode": "100644",
+      "blob": "65c9d5e0eb0b082acea32b4b2464fad40078d1c0",
+      "sha256": "75dc092274e22a782692460f6cfac72f888519928b893bb48b280c75cd6a21e5",
+      "bytes": 1920,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "original_sha256": "75dc092274e22a782692460f6cfac72f888519928b893bb48b280c75cd6a21e5",
+      "final_path": "docs/work_history/review_loop/pr8150/8150/8150_APPROACH_REGISTRY.md.gz",
+      "final_sha256": "961b77925e584f435c8014f12c15117f88aac5e210b0c144310f5c81562e470a",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "a91fb8280bbeecca01c5fbf963f5a90e23d287a9:.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md"
+    },
+    {
+      "pr": 8150,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md",
+      "mode": "100644",
+      "blob": "90d0445846921a2ebb8c565e21f20443b696a850",
+      "sha256": "e013a9589765ae30910853765e3ec1d20a75ae08cf4c1fea1195af6dad976a92",
+      "bytes": 4140,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md",
+      "original_sha256": "e013a9589765ae30910853765e3ec1d20a75ae08cf4c1fea1195af6dad976a92",
+      "final_path": "docs/work_history/review_loop/pr8150/8150/8150_ASSUMPTIONS_AND_IMPORTS.md.gz",
+      "final_sha256": "cd27584b8fb06cb926fe1ce642131979a768f58fa56b7643141634ed1e9aeced",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "a91fb8280bbeecca01c5fbf963f5a90e23d287a9:.claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "pr": 8150,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block16_findings.md",
+      "mode": "100644",
+      "blob": "09955c35c29e7c82f5cecd60c8f1470c0c318fb8",
+      "sha256": "f8d74a12cce41daa43b89cbfd2e0c4e08bad00ece53ca35b7d06f2338fdc3196",
+      "bytes": 2266,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block16_findings.md",
+      "original_sha256": "f8d74a12cce41daa43b89cbfd2e0c4e08bad00ece53ca35b7d06f2338fdc3196",
+      "final_path": "docs/work_history/review_loop/pr8150/8150/8150_CHECKER_block16_findings.md.gz",
+      "final_sha256": "b3cce47d56845c34bfcdd5d535106649f0389d63c181d8c03d0e6323c9a2cb50",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "a91fb8280bbeecca01c5fbf963f5a90e23d287a9:.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block16_findings.md"
+    },
+    {
+      "pr": 8150,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block16.md",
+      "mode": "100644",
+      "blob": "26e0bc90bd707f68d1b514cb3a80557e184d38e2",
+      "sha256": "14b4a57d66c86a4315332bac498ffbfeb6aad9127e7a7a34a13ac8e8b4de39aa",
+      "bytes": 1253,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block16.md",
+      "original_sha256": "14b4a57d66c86a4315332bac498ffbfeb6aad9127e7a7a34a13ac8e8b4de39aa",
+      "final_path": "docs/work_history/review_loop/pr8150/8150/8150_CLAIM_STATUS_CERTIFICATE_block16.md.gz",
+      "final_sha256": "f4d4492d1e1b29c8ee85feec55567f4abf4f3c030e847775df0ba72d38252fed",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "a91fb8280bbeecca01c5fbf963f5a90e23d287a9:.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block16.md"
+    },
+    {
+      "pr": 8150,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block16.md",
+      "mode": "100644",
+      "blob": "7cacd054306c4869e5cf2596f8f35ce1be53cab2",
+      "sha256": "a819d1499588f00b1550813720073be81028a8f3fcbe15bb06d78b7bc57c9e2b",
+      "bytes": 3360,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block16.md",
+      "original_sha256": "a819d1499588f00b1550813720073be81028a8f3fcbe15bb06d78b7bc57c9e2b",
+      "final_path": "docs/work_history/review_loop/pr8150/8150/8150_GOAL_block16.md.gz",
+      "final_sha256": "6311795089f30629f930b0a838bcac7b5f6af8a5081115d803614d156baf4464",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "a91fb8280bbeecca01c5fbf963f5a90e23d287a9:.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block16.md"
+    },
+    {
+      "pr": 8150,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "mode": "100644",
+      "blob": "ea6c7490991139c65cb233d8aa300b31a41ff275",
+      "sha256": "960c7967155deb1391b93d92eaed6e34d20c0929fca50aa121d9464a9a47be41",
+      "bytes": 9400,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "original_sha256": "960c7967155deb1391b93d92eaed6e34d20c0929fca50aa121d9464a9a47be41",
+      "final_path": "docs/work_history/review_loop/pr8150/8150/8150_HANDOFF.md.gz",
+      "final_sha256": "992ad53614797755e3d697f02de2d37186c453be9b289a3ec7037c833fe1d0d5",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "a91fb8280bbeecca01c5fbf963f5a90e23d287a9:.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md"
+    },
+    {
+      "pr": 8150,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md",
+      "mode": "100644",
+      "blob": "10d6aaedd57fea610869a47e5af7bb03dc1f19d6",
+      "sha256": "59045b7fbcf17bdfbba8b00910ec79863eaea0b201d714a65954acb6a25de6ed",
+      "bytes": 2306,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md",
+      "original_sha256": "59045b7fbcf17bdfbba8b00910ec79863eaea0b201d714a65954acb6a25de6ed",
+      "final_path": "docs/work_history/review_loop/pr8150/8150/8150_LITERATURE_BRIDGES.md.gz",
+      "final_sha256": "6cf5ca8b2089eec514f222ee94499cd3ca85d3dfcc59b253bc41afe23f363334",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "a91fb8280bbeecca01c5fbf963f5a90e23d287a9:.claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md"
+    },
+    {
+      "pr": 8150,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+      "mode": "100644",
+      "blob": "4dfc5c8a9016d69264ccdf3b777f3b990e8bfcfd",
+      "sha256": "d5f02c0bf2f33f019253b2e31986f132cf92a5741f2a448a967904a08cc443bd",
+      "bytes": 2134,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+      "original_sha256": "d5f02c0bf2f33f019253b2e31986f132cf92a5741f2a448a967904a08cc443bd",
+      "final_path": "docs/work_history/review_loop/pr8150/8150/8150_NO_GO_LEDGER.md.gz",
+      "final_sha256": "98ae8ced55ce970bb6d62075a6609ecce1b4d9deeb10e5478b30be84118505ed",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "a91fb8280bbeecca01c5fbf963f5a90e23d287a9:.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md"
+    },
+    {
+      "pr": 8150,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "mode": "100644",
+      "blob": "3ce575e228b1402d8edf9862cef86454fa4a2e0d",
+      "sha256": "5cbe17dc05e8eb7190538fc74fb902926fa889d1017dfe175c6d4703213156c7",
+      "bytes": 11567,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "original_sha256": "5cbe17dc05e8eb7190538fc74fb902926fa889d1017dfe175c6d4703213156c7",
+      "final_path": "docs/work_history/review_loop/pr8150/8150/8150_OPPORTUNITY_QUEUE.md.gz",
+      "final_sha256": "ef73c69661dbc43ab95d20c5610f6df750e969f169e9109d6683f06b2ceaef1e",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "a91fb8280bbeecca01c5fbf963f5a90e23d287a9:.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md"
+    },
+    {
+      "pr": 8150,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block16.md",
+      "mode": "100644",
+      "blob": "191627e4e383a174486e5f8fc19f267810762598",
+      "sha256": "ad668d50a96d774c16d6a844035ade6c294d2d1df1611e5c4c5102bd438249dd",
+      "bytes": 3370,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block16.md",
+      "original_sha256": "ad668d50a96d774c16d6a844035ade6c294d2d1df1611e5c4c5102bd438249dd",
+      "final_path": "docs/work_history/review_loop/pr8150/8150/8150_RESULTS_block16.md.gz",
+      "final_sha256": "efc011aa0265480f8703cfa1f6a6593847759a48318c86b7869b6c1d932cc5e4",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "a91fb8280bbeecca01c5fbf963f5a90e23d287a9:.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block16.md"
+    },
+    {
+      "pr": 8150,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "mode": "100644",
+      "blob": "10942a0eb9628147ee1afbb743ca0368bbb45458",
+      "sha256": "c7eea3799dafef7a49c8f4f4b388043d400752ede7dde8b2f2f6da5fc61ee4f4",
+      "bytes": 56561,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "original_sha256": "c7eea3799dafef7a49c8f4f4b388043d400752ede7dde8b2f2f6da5fc61ee4f4",
+      "final_path": "docs/work_history/review_loop/pr8150/8150/8150_REVIEW_HISTORY.md.gz",
+      "final_sha256": "02beb5e7a0b27c5d540e733f5e97fb39fc0b31c7f8609ee89ec1052e389d64b8",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "a91fb8280bbeecca01c5fbf963f5a90e23d287a9:.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md"
+    },
+    {
+      "pr": 8150,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md",
+      "mode": "100644",
+      "blob": "05a63fb5f624213214f1527443bd126d4f9cbf2c",
+      "sha256": "b77582f077284ad459f464315c81993d783ba64b0c1a24cc79c047969b387db1",
+      "bytes": 11459,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md",
+      "original_sha256": "b77582f077284ad459f464315c81993d783ba64b0c1a24cc79c047969b387db1",
+      "final_path": "docs/work_history/review_loop/pr8150/8150/8150_ROUTE_PORTFOLIO.md.gz",
+      "final_sha256": "526431faa1e291e27cefd5b12fdf740eeacc2916324e193fad799d98bb004f3f",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "a91fb8280bbeecca01c5fbf963f5a90e23d287a9:.claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md"
+    },
+    {
+      "pr": 8150,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "mode": "100644",
+      "blob": "cb46309c4558b164038c11afc9bf4c1711813177",
+      "sha256": "bbb67c7069675d7490aa9facb967e049e6e4db142d833ddf80ff5be2dd451b25",
+      "bytes": 16051,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "original_sha256": "bbb67c7069675d7490aa9facb967e049e6e4db142d833ddf80ff5be2dd451b25",
+      "final_path": "docs/work_history/review_loop/pr8150/8150/8150_STATE.yaml.gz",
+      "final_sha256": "73590bb02268a423c77ae245f981fdab52b85e7d268a47a97bb5d8a0ec22e05e",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "a91fb8280bbeecca01c5fbf963f5a90e23d287a9:.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml"
+    },
+    {
+      "pr": 8150,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "mode": "100644",
+      "blob": "d3ca3cd64a1b5dcd58e99869085dd9bbaccf7f2f",
+      "sha256": "facd5e7504ec4de01ed89a222e371e96004cc3f148e2125e334a59337cb16cfa",
+      "bytes": 5121,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "original_sha256": "facd5e7504ec4de01ed89a222e371e96004cc3f148e2125e334a59337cb16cfa",
+      "final_path": "docs/work_history/review_loop/pr8150/8150/8150_TRACE_GATE.md.gz",
+      "final_sha256": "de33e5b03ec9365b5ea6df559dddeca22f50286472f87b475ad3ca069af13661",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "a91fb8280bbeecca01c5fbf963f5a90e23d287a9:.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md"
+    },
+    {
+      "pr": 8150,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block16_flip_monotonicity.out.txt",
+      "mode": "100644",
+      "blob": "fd8add3c813d29a483216a9378fdccfc87b1873e",
+      "sha256": "117da0cfe34a1a49dccac2827e80d12fdd5a3c61b988050bb64196a75d910bbe",
+      "bytes": 598,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block16_flip_monotonicity.out.txt",
+      "original_sha256": "117da0cfe34a1a49dccac2827e80d12fdd5a3c61b988050bb64196a75d910bbe",
+      "final_path": "docs/work_history/review_loop/pr8150/8150/8150_supervisor_control_block16_flip_monotonicity.out.txt.gz",
+      "final_sha256": "22ced638c4cb40e2589a8ae11888dd27833ec787fe10850c7db42ce6f7de8fed",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "a91fb8280bbeecca01c5fbf963f5a90e23d287a9:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block16_flip_monotonicity.out.txt"
+    },
+    {
+      "pr": 8150,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block16_flip_monotonicity.py",
+      "mode": "100644",
+      "blob": "56fcc3eb75c08753845d7a0fd3dcc8fbac4df03d",
+      "sha256": "81666b5282a4594aef118685c5c14f246a74b852ead5aebf2c90741abaa11059",
+      "bytes": 4414,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block16_flip_monotonicity.py",
+      "original_sha256": "81666b5282a4594aef118685c5c14f246a74b852ead5aebf2c90741abaa11059",
+      "final_path": "docs/work_history/review_loop/pr8150/8150/8150_supervisor_control_block16_flip_monotonicity.py.gz",
+      "final_sha256": "1671d202aaa76eebba9e5f49c29990044807baa41e2d1f02f97f5a4d37ece337",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "a91fb8280bbeecca01c5fbf963f5a90e23d287a9:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block16_flip_monotonicity.py"
+    },
+    {
+      "pr": 8150,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block16_refuter.out.txt",
+      "mode": "100644",
+      "blob": "6f6097f47ca1a82e8d60b85eb8e0f07e3d8ce8d6",
+      "sha256": "8543eff8464eb9e3b0e73b6c045cf53672f4970b5a4293db4d48ddf4fb2b8afd",
+      "bytes": 569,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block16_refuter.out.txt",
+      "original_sha256": "8543eff8464eb9e3b0e73b6c045cf53672f4970b5a4293db4d48ddf4fb2b8afd",
+      "final_path": "docs/work_history/review_loop/pr8150/8150/8150_supervisor_control_block16_refuter.out.txt.gz",
+      "final_sha256": "3c4ce0610a5f51a9a73091ac933f530b32374dd96c6be6dd39f9468d6a14861b",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "a91fb8280bbeecca01c5fbf963f5a90e23d287a9:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block16_refuter.out.txt"
+    },
+    {
+      "pr": 8150,
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block16_refuter.py",
+      "mode": "100644",
+      "blob": "b4fffbdea51663c1028ad3d8674f31381885d919",
+      "sha256": "7e602280cdd29c452fa3c69b741eb68d95bccf41e478faecb3b1806df9e96b56",
+      "bytes": 3843,
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block16_refuter.py",
+      "original_sha256": "7e602280cdd29c452fa3c69b741eb68d95bccf41e478faecb3b1806df9e96b56",
+      "final_path": "docs/work_history/review_loop/pr8150/8150/8150_supervisor_control_block16_refuter.py.gz",
+      "final_sha256": "b9f5ca67084ad04f47c4c68cfe677de58a66cda92e9a86b96d49a242f3f25b32",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "a91fb8280bbeecca01c5fbf963f5a90e23d287a9:.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block16_refuter.py"
+    },
+    {
+      "pr": 8150,
+      "path": "docs/ADMISSIBILITY_RULE_STATIC_LAW_IS_NOT_A_MIXTURE_OF_FORMATION_LAWS_ON_ANY_WINDOW_WITH_A_CYCLE_FLIP_MONOTONICITY_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "mode": "100644",
+      "blob": "625c43a4d1da9ca9ac1a43c0f15d2e112b62d0d6",
+      "sha256": "db16bcedee00d39b53d581f09db4d5358759a5092a0f023e7b3a32537de845a7",
+      "bytes": 21732,
+      "original_path": "docs/ADMISSIBILITY_RULE_STATIC_LAW_IS_NOT_A_MIXTURE_OF_FORMATION_LAWS_ON_ANY_WINDOW_WITH_A_CYCLE_FLIP_MONOTONICITY_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_sha256": "db16bcedee00d39b53d581f09db4d5358759a5092a0f023e7b3a32537de845a7",
+      "final_path": "docs/work_history/review_loop/pr8150/8150/8150_ADMISSIBILITY_RULE_STATIC_LAW_IS_NOT_A_MIXTURE_OF_FORMATION_LAWS_ON_ANY_WINDOW_WITH_A_CYCLE_FLIP_MONOTONICITY_BOUNDED_THEOREM_NOTE_2026-09-15.md.gz",
+      "final_sha256": "d4387c0cb4900fda892e741142c73336f84f12d52499a4d3e21d43fe56ba2403",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "a91fb8280bbeecca01c5fbf963f5a90e23d287a9:docs/ADMISSIBILITY_RULE_STATIC_LAW_IS_NOT_A_MIXTURE_OF_FORMATION_LAWS_ON_ANY_WINDOW_WITH_A_CYCLE_FLIP_MONOTONICITY_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+    },
+    {
+      "pr": 8150,
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "mode": "100644",
+      "blob": "b30807ff628770ac1f0fc39e930f9deaa56a66dc",
+      "sha256": "240dd5dd4421c7056723a403e23dc76498c2b528861ff6464e97393550c0308c",
+      "bytes": 806384,
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "240dd5dd4421c7056723a403e23dc76498c2b528861ff6464e97393550c0308c",
+      "final_path": "docs/work_history/review_loop/pr8150/8150/8150_citation_graph_manifest.json.gz",
+      "final_sha256": "e9a3a92092759da784c9da953577d05d393ec1f48b753b4d53d4e8d389d809e2",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "a91fb8280bbeecca01c5fbf963f5a90e23d287a9:docs/audit/data/citation_graph_manifest.json"
+    },
+    {
+      "pr": 8150,
+      "path": "logs/runner-cache/admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.txt",
+      "mode": "100644",
+      "blob": "bd459aecb6209d0d76fd3b7719c4bd41478eaf2b",
+      "sha256": "857274df95269e6a62fd4005adb28758328e00457c1605a270586fdf16af0902",
+      "bytes": 3932,
+      "original_path": "logs/runner-cache/admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.txt",
+      "original_sha256": "857274df95269e6a62fd4005adb28758328e00457c1605a270586fdf16af0902",
+      "final_path": "docs/work_history/review_loop/pr8150/8150/8150_admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.txt.gz",
+      "final_sha256": "5c4ba6a1b62d13e6cf9887b12a0b6ba49fafd63e827135c04fc62dc4f8c703e3",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "a91fb8280bbeecca01c5fbf963f5a90e23d287a9:logs/runner-cache/admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.txt"
+    },
+    {
+      "pr": 8150,
+      "path": "scripts/admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.py",
+      "mode": "100644",
+      "blob": "6546c1aaf2d493e15eb97d2eab303fa39cc63083",
+      "sha256": "6d754300891f5c0877e1f1e65b75f94c19be1f237f710d8f804440349e0f9b7f",
+      "bytes": 23630,
+      "original_path": "scripts/admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.py",
+      "original_sha256": "6d754300891f5c0877e1f1e65b75f94c19be1f237f710d8f804440349e0f9b7f",
+      "final_path": "docs/work_history/review_loop/pr8150/8150/8150_admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.py.gz",
+      "final_sha256": "1982ad861b2ab861d0b6cd7b43e8bb3ee3dc62c9c86646ed14b9c5fa652d17f7",
+      "disposition": "Exact original bytes preserved in deterministic gzip; valid positive identities and finite witnesses separately narrowed into canonical source. Original negative certification deferred and original branches must remain recoverable.",
+      "recovery": "a91fb8280bbeecca01c5fbf963f5a90e23d287a9:scripts/admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.py"
+    }
+  ],
+  "claim_dispositions": {
+    "PR8148": "R1 causal scheduling identity (not posterior), value-blind mixture; R2 exact finite witnesses; R3 seeded connected-tree sufficient construction; R4/R5 coefficient/difference identities retained with original universal exclusions deferred; R6 finite rank retained. Remove gravity/static equivalence and primitive statistical grant.",
+    "PR8149": "U1 positive-law uniqueness/model convention retained; U2 arbitrary fixed-boundary sufficiency and repeated-value lemma retained, necessity proof gap explicit; U3 primary five-star-class/24plaquette finite witnesses distinguished from historical seven classes; U4 finite environments and one-site identity only, universal conclusion deferred; U5 no axiom selector.",
+    "PR8150": "X1 exact constant-pattern flip and strictness retained; X2 sufficient mixture construction and linear difference identity plus finite samples retained; necessity/cycle exclusions deferred; X3 constant-boundary flip identity and finite samples, universal mixture exclusion deferred; X4 scheduling weight boundary explicit."
+  },
+  "inputs": {
+    "runtime": [
+      {
+        "path": "scripts/admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.py",
+        "sha256": "4e6c394ebc830396d518e04d149756ca04ae0d3f99668d2062e7be7c3fbadedc"
+      },
+      {
+        "path": "scripts/admissibility_rule_formation_unit_clause_witness_sequential_equals_joint_iff_criterion_2026_09_15.py",
+        "sha256": "5795b0097fc16fc4eaf492905f3a510fb5116f1d9e3d70d94e5560992406d45e"
+      },
+      {
+        "path": "scripts/admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.py",
+        "sha256": "67c6265fecbbf764b92c69495cbcb6b3a5788a31db7c423cc297f87fde5f33be"
+      }
+    ],
+    "helpers": [],
+    "parents": [
+      {
+        "path": "docs/ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "f17c4b1ee554b76dc4da2df1b2211af593be576a8658b51fb64540e6be20f141"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "f17c4b1ee554b76dc4da2df1b2211af593be576a8658b51fb64540e6be20f141"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_FLIP_IDENTITIES_AND_FINITE_MIXTURE_WITNESSES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "06ffbbd6f1cad25b8289b6a09a0c0bd0482f40a011484c4fcd2304c3337176c8"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_FORMATION_RATE_IDENTITIES_AND_FINITE_WINDOW_WITNESSES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "d703f929b1ba752bf2bcfc738ddcf01aedab4926a460ecc729be70371a44d32e"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_FORMATION_UNIT_CONDITIONAL_IDENTITIES_AND_FINITE_WITNESSES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "abd8ecde52b3a085e66c1f6e823759823ef8935e03c9dc60e33dff7a632cb1c7"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "d1ee18f36318f6b714bb2eb48a1300fb96c6e6a172df2b15decc483bf85bd0e2"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "1c19d4d2dddf1eadbff407c57dbd834746c9056cfd4dc1b911c874d822d0f3a7"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "actual_api_closure": [
+    {
+      "primary": "scripts/admissibility_rule_formation_rate_clause_witness_no_covariant_clock_law_reaches_static_law_2026_09_15.py",
+      "timeout": 300,
+      "graph_helpers": [],
+      "packet_helpers": [],
+      "inputs": [
+        {
+          "path": "docs/ADMISSIBILITY_RULE_FORMATION_RATE_IDENTITIES_AND_FINITE_WINDOW_WITNESSES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+          "sha256": "d703f929b1ba752bf2bcfc738ddcf01aedab4926a460ecc729be70371a44d32e"
+        },
+        {
+          "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+        },
+        {
+          "path": "docs/ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+          "sha256": "f17c4b1ee554b76dc4da2df1b2211af593be576a8658b51fb64540e6be20f141"
+        },
+        {
+          "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+          "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+        }
+      ],
+      "type": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ]
+    },
+    {
+      "primary": "scripts/admissibility_rule_formation_unit_clause_witness_sequential_equals_joint_iff_criterion_2026_09_15.py",
+      "timeout": 300,
+      "graph_helpers": [],
+      "packet_helpers": [],
+      "inputs": [
+        {
+          "path": "docs/ADMISSIBILITY_RULE_FORMATION_UNIT_CONDITIONAL_IDENTITIES_AND_FINITE_WITNESSES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+          "sha256": "abd8ecde52b3a085e66c1f6e823759823ef8935e03c9dc60e33dff7a632cb1c7"
+        },
+        {
+          "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+        },
+        {
+          "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+          "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+        },
+        {
+          "path": "docs/ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+          "sha256": "f17c4b1ee554b76dc4da2df1b2211af593be576a8658b51fb64540e6be20f141"
+        }
+      ],
+      "type": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ]
+    },
+    {
+      "primary": "scripts/admissibility_rule_static_law_not_a_mixture_of_formation_laws_flip_monotonicity_2026_09_15.py",
+      "timeout": 300,
+      "graph_helpers": [],
+      "packet_helpers": [],
+      "inputs": [
+        {
+          "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_FLIP_IDENTITIES_AND_FINITE_MIXTURE_WITNESSES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+          "sha256": "06ffbbd6f1cad25b8289b6a09a0c0bd0482f40a011484c4fcd2304c3337176c8"
+        },
+        {
+          "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+        },
+        {
+          "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+          "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+        },
+        {
+          "path": "docs/ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+          "sha256": "f17c4b1ee554b76dc4da2df1b2211af593be576a8658b51fb64540e6be20f141"
+        }
+      ],
+      "type": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ]
+    }
+  ],
+  "findings_resolution": {
+    "8149_fixed_boundary": "Only sufficiency retained for arbitrary fixed exterior; unsupported converse explicitly deferred.",
+    "model_axiom_boundary": "Supplied sequential/joint/clock conventions distinguished from axioms; no realized-state statistical grant.",
+    "8148_scope": "Positive total rate, value-blind mixing, causal weight versus posterior, seeded trees, finite plaquette scope corrected.",
+    "gravity": "No gravity/static equivalence imported.",
+    "8149_coverage": "Five canonical star classes and two plus three environment orders stated; historical seven-class controls distinct.",
+    "negative_gate": "No negative-certification PASS. Universal exclusions deferred; original proofs and branch recovery preserved."
+  },
+  "mathematical_change": "No computation/predicate/formula changes in the three runner diffs; metadata, scope labels and source text fences changed. Complete revised notes read; previous independent 5436 rational controls reused without rerun.",
+  "current_main": {
+    "commit": "0ee1a0396c2160605397ecf42f3602215a572c67",
+    "declared_parent_bytes_unchanged": true,
+    "new_context": [
+      {
+        "path": "docs/ADMISSIBILITY_RULE_RECORDED_SET_GIBBS_THEOREM_FORMATION_LAWS_MARKOV_GRAPH_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "8d0fd4c0eae1b79e6ee2853775b6da9d076766493c66ae37ff30760901094ff1",
+        "read_scope": "claim scope, result and potentially interacting boundary/mixture assertions"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_STRONG_COUPLING_FORMATION_LAW_LEVEL_AUTOMATON_ERODER_METASTABILITY_ORDERED_PHASE_OBLIGATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "639c843b0348fe3d108f26435e367083ef83091d3304784592da400189f88a78",
+        "read_scope": "claim scope, result and potentially interacting boundary/mixture assertions"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "c623b07f8ffe87d9c2e03aec3b204116bebf73955dd12d9c816c167d6ebda6b9",
+        "read_scope": "claim scope, result and potentially interacting boundary/mixture assertions"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_MARKOV_GRAPH_EIGHT_CORNER_LAWS_SWEEP_IMPRINT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "8bd61997811b3b9d1cb689aa292ca84f63380ec156dd659bd8eb3c5c1eb51171",
+        "read_scope": "claim scope, result and potentially interacting boundary/mixture assertions"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_MONOTONE_FORMATION_LAW_PLANE_CHAIN_COUPLING_REGION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "b3536df8d25d76855f546ce65920a1c40d8462f5eee20a66d706290adc2653a5",
+        "read_scope": "claim scope, result and potentially interacting boundary/mixture assertions"
+      }
+    ],
+    "assessment": "New formation-suite notes retain supplied finite recorded-set/monotone models, conditional infinite-law regions and explicit negative deferrals. They neither select clocks/units nor repair the deferred arbitrary-boundary converse. Pair-additive exceptional points concern log K3 decomposition, not constancy of Kk in a recorded argument. No new dependency imported, no existing main source replaced, and no proposed source path collides with the added suite."
+  },
+  "allowed_capture": {
+    "runners": 3,
+    "concurrency": 1,
+    "timeout_seconds_each": 300,
+    "rss_limit_bytes": 3221225472,
+    "expected_pass_counts": [
+      22,
+      18,
+      17
+    ],
+    "owner": "root",
+    "preserve_all_attempts": true,
+    "no_scientific_execution_by_reviewer": true
+  },
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8150-original-review.json",
+      "sha256": "4f6ac75535a596bb4849db7149fe824d90000b2980a6b8cb33e0bb9fc714fcd4"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8150-original-inventory.json",
+      "sha256": "977be64bddf560a89e4c59398aed7b78c54a8379ba353b7d1634e9668751519b"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8150-independent-controls.py",
+      "sha256": "909da9c76f7ae64112e6d1a3627ecd8df7d12f164c2b5c95d0d2a73998097012"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8150-independent-controls.json",
+      "sha256": "4426623370f24d88f8a363fa11303c216be4ec596722b754c62ccec7f5194b34"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8150-author-unit-draft-v1.json",
+      "sha256": "545c1bbdf8a0fdeba3113f628922291a790706d858ff24de8f3336d4aa05deaa"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8150-author-source-handoff-v1.json",
+      "sha256": "ed6179c7bd76c4fb78ed65ad6d3aeaea0d39f3ea3711cfc635c1a88e7bc5b0e3"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8150-author-cache-api-v1.json",
+      "sha256": "0e2cec9b5901ae699be970faa1bb0d3dd0d08e1e2e0bcf9b98899934cd917405"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8150-author-cheap-v1.json",
+      "sha256": "b78069b39951527e502a9e4c7f62325bde6fdad411170bfa94c3f26d1bff3515"
+    }
+  ],
+  "final_scope": "Positive identities/sufficient constructions and exact finite witnesses only; no audit or universal negative certification. Final source/output/cache confirmation remains with this original reviewer after captures."
+}

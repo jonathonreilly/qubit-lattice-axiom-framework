@@ -1,0 +1,2863 @@
+{
+  "baseRefName": "main",
+  "headRefName": "codex/compact-cutoff-block32-20260907",
+  "headRefOid": "4c3b9bd33bfbc2e03b9d91e05849607bc33ec70c",
+  "isDraft": true,
+  "number": 8023,
+  "state": "OPEN",
+  "title": "[physics-loop] compact-cutoff block32 conditional-support",
+  "delta_base": "66b1b4f8a964f4011a3f4e7876369b7daf8e1834",
+  "original_paths": [
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/ARTIFACT_PLAN.md",
+      "head_mode": "100644",
+      "head_blob": "26f9abaa240b4b1713cf09e5aeb056419de7c3e7",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+      "head_mode": "100644",
+      "head_blob": "7eb51ae0b136707b2d9612d840e0cbe056d803ec",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/CLAIM_STATUS_CERTIFICATE.md",
+      "head_mode": "100644",
+      "head_blob": "dacb5023b1c3fa48f508a801bbc1be668bb48c43",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/CUTOFF_RAW.json",
+      "head_mode": "100644",
+      "head_blob": "5a5c86de36f6045af4201862a486f94f8591c505",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/CUTOFF_STDOUT.txt",
+      "head_mode": "100644",
+      "head_blob": "5b308a7798f22ae7f9889040b0647798e1ddd860",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/EXECUTION_RECEIPT.json",
+      "head_mode": "100644",
+      "head_blob": "44f96463ab0d0ec8cf2f2b40a6f48763a2026ad8",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json",
+      "head_mode": "100644",
+      "head_blob": "e40f8ebd67d257b1b166672188153158dcdc4033",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/FINAL_MAIN66_LOCK_RELEASE.json",
+      "head_mode": "100644",
+      "head_blob": "c19f3721a340a9569778a4ae4fdb585b16281289",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/FINAL_MAIN66_READINESS.json",
+      "head_mode": "100644",
+      "head_blob": "7c48fdc2fd9cd96c01b58b437608c070cd1000e9",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/FINAL_MAIN66_STRICT.log",
+      "head_mode": "100644",
+      "head_blob": "b650100e5535af58e359a0d3f58c64546ca15d32",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/FINAL_MAIN66_SYNC_RECEIPT.json",
+      "head_mode": "100644",
+      "head_blob": "1aa9fdbfafb60d1ac14f8cc36f4ab45a50e3d47e",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/FINAL_MAIN66_VALIDATION.md",
+      "head_mode": "100644",
+      "head_blob": "565254325d84e70f6a6573765359872d43a1d600",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/FINAL_VALIDATION.md",
+      "head_mode": "100644",
+      "head_blob": "dfe66537faccda3370102f433c3fe7d6d98b0ab3",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/FINAL_VOCAB_LINT.txt",
+      "head_mode": "100644",
+      "head_blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/FROZEN_PORT_RECEIPT.json",
+      "head_mode": "100644",
+      "head_blob": "5f9a491f8842edc178058e4a7deb65358378a7c9",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/FULL_PIPELINE.log",
+      "head_mode": "100644",
+      "head_blob": "280543a982d2eef1e33caa10090da4b7f844bfab",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/GALERKIN_RAW.json",
+      "head_mode": "100644",
+      "head_blob": "b1f6d84b1f87a899381e45f8a95bebd16c3fae63",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/GALERKIN_STDOUT.txt",
+      "head_mode": "100644",
+      "head_blob": "e4529890d91bbe335e2016b68ebe8b0816706211",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/GOAL.md",
+      "head_mode": "100644",
+      "head_blob": "2f4c6d8fe6758fafcd05f115cc5fd52984c236df",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/HANDOFF.md",
+      "head_mode": "100644",
+      "head_blob": "fc4c407adae7d3b033cf65bb32a9a2e3333d6dcb",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/HASHES.json",
+      "head_mode": "100644",
+      "head_blob": "0a07e6bc7f09b2044871a3af2298d869a4444eda",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/LITERATURE_BRIDGES.md",
+      "head_mode": "100644",
+      "head_blob": "f66d94c49adec88e49ccc6268089e3eb468380e1",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/LOCK_RELEASE.json",
+      "head_mode": "100644",
+      "head_blob": "c19f3721a340a9569778a4ae4fdb585b16281289",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/N1_N8.md",
+      "head_mode": "100644",
+      "head_blob": "eeebbcb158e93098a299930a4cf9df49c5b72659",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/NO_GO_LEDGER.md",
+      "head_mode": "100644",
+      "head_blob": "6d17886ee2c97c345234d4c6e7e61930da9d0909",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/OPPORTUNITY_QUEUE.md",
+      "head_mode": "100644",
+      "head_blob": "c3933c0e8a12d37c619256674a749a059276b941",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/PACK_INDEX.md",
+      "head_mode": "100644",
+      "head_blob": "c95d8a164afc2c247d7e7b90da3000a6a4db9583",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/PARENT_VALIDATION_METADATA_CATCHUP.md",
+      "head_mode": "100644",
+      "head_blob": "faee412a6ebad909a547f6fef98a1c06e4f90e6f",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/PORT_RECEIPT.json",
+      "head_mode": "100644",
+      "head_blob": "08e19d60bd370369ac55b4ab03f2fe887f481618",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/PRIMARY_CUTOFF_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "89936e3c2162c9cb6306fa4749711bded142dc38",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/PRIMARY_GALERKIN_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "3ca429c7b5cd8f19ed93d2c28023008fb2902aed",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/PR_BACKLOG.md",
+      "head_mode": "100644",
+      "head_blob": "b6bce78eba8c24fcefbd8030a79659ae20171861",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/PR_BODY.md",
+      "head_mode": "100644",
+      "head_blob": "fa3dd7eb6ba6f81e000433027b31b4aaf94cc820",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/PUBLICATION_RECEIPT.json",
+      "head_mode": "100644",
+      "head_blob": "31e0455c21e147d50e5aa4c38526105673a59d03",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/QUEUE.md",
+      "head_mode": "100644",
+      "head_blob": "a66d7fbc1e1839391e33b68bc32e8d96c8ae04a6",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "e1f0288a05cded3cbc6736d6b3d58b4170e0e6f7",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "head_mode": "100644",
+      "head_blob": "6e643c9b479c3fec5e9d95cd6b9bc7ff0b87ff1c",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/REVIEW_HISTORY.md",
+      "head_mode": "100644",
+      "head_blob": "de4fd37b04c4e64b8dd2e129ec99a5e085ca3dc3",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/ROOT_CANONICAL_PORT_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "807c33fd93265691ade87472dddef7654e470e7b",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/ROOT_CUTOFF_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "ddb3b7fac64176217b1e3e410684aeafb459a78c",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/ROOT_GALERKIN_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "8221b929b03d7f02f19ae901b858bcfcb7b85ee6",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/ROUTE_PORTFOLIO.md",
+      "head_mode": "100644",
+      "head_blob": "91cb64f607263d25b830f69eaa931eef50eee17f",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/STATE.yaml",
+      "head_mode": "100644",
+      "head_blob": "eb2387597208df406a95415009d53d959c5eb73d",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/STATUS.md",
+      "head_mode": "100644",
+      "head_blob": "0ea4cd08e3e9100d5b086741739b83f47d0bea01",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/STRICT_LINT.log",
+      "head_mode": "100644",
+      "head_blob": "85805aa5b3d13f77f590d7e3627f471c0856334e",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/TRACE_GATE.md",
+      "head_mode": "100644",
+      "head_blob": "d6ac244f15035b4492d59413c74bc3a1da783d00",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/UPSTREAM_SYNC_PIPELINE.log",
+      "head_mode": "100644",
+      "head_blob": "0bbaf2da590add14e6c79195de21d791053daf95",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/UPSTREAM_SYNC_READINESS.json",
+      "head_mode": "100644",
+      "head_blob": "d4071d07caec09388628b6ad71b767209e206e9c",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/UPSTREAM_SYNC_STRICT.log",
+      "head_mode": "100644",
+      "head_blob": "5de45fbb3c64234e3071f75b9ddc8de2db330c40",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/UPSTREAM_SYNC_VALIDATION.md",
+      "head_mode": "100644",
+      "head_blob": "3106e242e8e75d92f4661dec9af09ba2bcb08c5a",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/evidence/finite-qubit-cutoff/DERIVATION.md",
+      "head_mode": "100644",
+      "head_blob": "5560f1a64e9d4192868f051ee3c200292c7f8e35",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/evidence/finite-qubit-cutoff/FREEZE_RECEIPT.json",
+      "head_mode": "100644",
+      "head_blob": "d50d692fb8565fd449db9401d390d887ebe39252",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/evidence/finite-qubit-cutoff/PREREGISTRATION.md",
+      "head_mode": "100644",
+      "head_blob": "2212af7d008208765b45be1ef37c0d061ae71a47",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/evidence/finite-qubit-cutoff/check.py",
+      "head_mode": "100644",
+      "head_blob": "0297a9da11cd796f5d4b1af1ca9bb5a5b90ff423",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/evidence/finite-qubit-cutoff/result.json",
+      "head_mode": "100644",
+      "head_blob": "4f7f82afaf8c6101fb20c081241e052378a0794f",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/evidence/galerkin-spectrum/DERIVATION.md",
+      "head_mode": "100644",
+      "head_blob": "48bbe7b61de51976ef58b4f5d2cf4b3dbd53b032",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/evidence/galerkin-spectrum/FAILURES.md",
+      "head_mode": "100644",
+      "head_blob": "f9819cd03218a21c029c0e86b05c83e041bb892e",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/evidence/galerkin-spectrum/HASHES.json",
+      "head_mode": "100644",
+      "head_blob": "6b9462bbe7b39af2102691a605821de85cd4b27e",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/evidence/galerkin-spectrum/PREREGISTRATION.md",
+      "head_mode": "100644",
+      "head_blob": "2c12d29bc6c1166c34d9543693dfe78f8a9cae4a",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/evidence/galerkin-spectrum/SUPPLEMENT_PREREGISTRATION.md",
+      "head_mode": "100644",
+      "head_blob": "08063381630d45dd3d877805f47ce041321a642e",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/evidence/galerkin-spectrum/check.py",
+      "head_mode": "100644",
+      "head_blob": "2f7e1970206edd5f172f1730811969c9baea0d3f",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/evidence/galerkin-spectrum/check_before_boolean_count_fix.py",
+      "head_mode": "100644",
+      "head_blob": "2a114b6de5505c59894127a157695a8f5b2e5f5d",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/evidence/galerkin-spectrum/result.json",
+      "head_mode": "100644",
+      "head_blob": "90c9ba270fe92601a1d5cb09ed2db298cf61d2db",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/package.py",
+      "head_mode": "100644",
+      "head_blob": "91b4c093e62a7de37760ca60d38884d2dfbb235a",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/port.py",
+      "head_mode": "100644",
+      "head_blob": "e6dbd3de8f0f22cc9ff03f8ec3f50aeb64ed19bb",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/validated_claims_before_generated_cleanup.json",
+      "head_mode": "100644",
+      "head_blob": "4eebda2f5c26891d8bb3205deb3b1e02602644a5",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-cutoff-20260907/validated_readiness_before_generated_cleanup.json",
+      "head_mode": "100644",
+      "head_blob": "979f48be03c72eaee129dfe891a30e5d0610c473",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/ARTIFACT_PLAN.md",
+      "head_mode": "100644",
+      "head_blob": "1fc3804aaf048b12e8cf1058c408ce16cc0a17ff",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+      "head_mode": "100644",
+      "head_blob": "0f067081c0996413d5dbdb314efe001204e9aab3",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/CLAIM_STATUS_CERTIFICATE.md",
+      "head_mode": "100644",
+      "head_blob": "5f9719e7bd820417c6dfb24ef62af8934000feb9",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json",
+      "head_mode": "100644",
+      "head_blob": "308e02903a6a83e0c671178f9f483f49061fdb35",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_MAIN66_LOCK_RELEASE.json",
+      "head_mode": "100644",
+      "head_blob": "c19f3721a340a9569778a4ae4fdb585b16281289",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_MAIN66_READINESS.json",
+      "head_mode": "100644",
+      "head_blob": "f6a451b05b1011ef0d6e56bc2514e226ad6478f5",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_MAIN66_STRICT.log",
+      "head_mode": "100644",
+      "head_blob": "122e91ffd2b44cf922b12bcdd3ffe11f914d2bea",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_MAIN66_SYNC_RECEIPT.json",
+      "head_mode": "100644",
+      "head_blob": "335b59177800699ebab9ddd5dc0fa989657c2978",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_MAIN66_VALIDATION.md",
+      "head_mode": "100644",
+      "head_blob": "90136bbe810104fb1d1745a981e5a5c2ef9fbec2",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_VALIDATION.md",
+      "head_mode": "100644",
+      "head_blob": "2083cdd9dc9fd64d8d9c8220e3a4a72cd2ee11ad",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/FINAL_VOCAB_LINT.txt",
+      "head_mode": "100644",
+      "head_blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/FROZEN_PORT_RECEIPT.json",
+      "head_mode": "100644",
+      "head_blob": "f68e962c518bb93db1579a20a881dcadbe748887",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/FULL_PIPELINE.log",
+      "head_mode": "100644",
+      "head_blob": "7b6cfdb173ab8f6f324c06d94f2c6d42bddc1553",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/GOAL.md",
+      "head_mode": "100644",
+      "head_blob": "4a2ff6b9e1eff39875f6910182082f6b1bd14f40",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/HANDOFF.md",
+      "head_mode": "100644",
+      "head_blob": "ef52e12e84b5ca6c47f0a82bc7c8e46c883c3ee4",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/LITERATURE_BRIDGES.md",
+      "head_mode": "100644",
+      "head_blob": "336f200f2da52b0defeb9988e4c0b4bb1ca3ed21",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/LOCK_RELEASE.json",
+      "head_mode": "100644",
+      "head_blob": "c19f3721a340a9569778a4ae4fdb585b16281289",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/NO_GO_LEDGER.md",
+      "head_mode": "100644",
+      "head_blob": "7c3b226b1750fcccf43fcf3de496ea5f0e9d420e",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/OPPORTUNITY_QUEUE.md",
+      "head_mode": "100644",
+      "head_blob": "b0a5e478945085b20498b177bea16f9642f94a6c",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/PROOF_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "f546c9262b8f035c43ab0b053f89e5649fd47662",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/PR_BACKLOG.md",
+      "head_mode": "100644",
+      "head_blob": "55f83caac9f31744eaa32ffb399eaef3aeb5ece6",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/PR_BODY.md",
+      "head_mode": "100644",
+      "head_blob": "96172b059641c070be93214391a2772313e253b2",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/PUBLICATION_RECEIPT.json",
+      "head_mode": "100644",
+      "head_blob": "c489d7ff5f50a8f99675b97233c4bd8728660543",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "head_mode": "100644",
+      "head_blob": "3e3dbfafa977fa935cb3816d2ca5055a9430dbae",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/REVIEW_HISTORY.md",
+      "head_mode": "100644",
+      "head_blob": "2ad97d940db0fedf172cca09faf606d422ed72de",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/ROOT_CANONICAL_PORT_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "8f845e30fc452e41d203787ee2f7f04d76486d45",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/ROOT_FINAL_PORT_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "4385d7bb535850f32beb5c87f3718afc4ce6f8a6",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/ROUTE_PORTFOLIO.md",
+      "head_mode": "100644",
+      "head_blob": "17f14acc669ccc45533ba4ff3da425a49baf2037",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/SCRATCH_FREEZE_RECEIPT.json",
+      "head_mode": "100644",
+      "head_blob": "f68e962c518bb93db1579a20a881dcadbe748887",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/SCRATCH_PACK_INDEX.md",
+      "head_mode": "100644",
+      "head_blob": "179ef11991f8d951bee78d2cddde6d2e562aada0",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/SCRATCH_result.json",
+      "head_mode": "100644",
+      "head_blob": "e8cad198c6894f9f1194410868b924f588d046f6",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/STATE.yaml",
+      "head_mode": "100644",
+      "head_blob": "73e1b55037051a8c3c2be3b4782c18d4055f0f29",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/STRICT_LINT.log",
+      "head_mode": "100644",
+      "head_blob": "11a6cf1e8b2cc54af4b623a459f66fbaa71870ee",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/TRACE_GATE.md",
+      "head_mode": "100644",
+      "head_blob": "c9e6f94d61a1e2d82563f74f79d33826195904f5",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/UPSTREAM_SYNC_PIPELINE.log",
+      "head_mode": "100644",
+      "head_blob": "ec18e9b870bb2e96f0bb996db4f9c802655b0535",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/UPSTREAM_SYNC_READINESS.json",
+      "head_mode": "100644",
+      "head_blob": "fe4422ffbe69652930e8eee99aca12bdd9d40ead",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/UPSTREAM_SYNC_STRICT.log",
+      "head_mode": "100644",
+      "head_blob": "110b9525abd9c63e4b8b816e4f1b05a24f6669f5",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/UPSTREAM_SYNC_VALIDATION.md",
+      "head_mode": "100644",
+      "head_blob": "d9def7acdbc64275b06d8bd735a7508f5a3dc292",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/CERTIFICATE_PREREGISTRATION.md",
+      "head_mode": "100644",
+      "head_blob": "ece4304a924599b881b684149315aca723f46e74",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/DERIVATION.md",
+      "head_mode": "100644",
+      "head_blob": "76b39551429f582b9b5d0c529f4e313e0903add7",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/DERIVATION_FIRST_FREEZE_095c3f80.md",
+      "head_mode": "100644",
+      "head_blob": "4aeaa79e4c6cb6acab925ecf83c45ca1ec91f8ea",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/LITERATURE_PROVENANCE.md",
+      "head_mode": "100644",
+      "head_blob": "05fd6de89cd245bb63b2cec19264ae8dc1cb9cb6",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/NATIVE_COLD_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "008c5148bf64e48415b0c3b44dbca7c2402d9ecf",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/PREREGISTRATION.md",
+      "head_mode": "100644",
+      "head_blob": "061806b0c791c1ebb8045db1c675f36328b95c61",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/ROOT_COLD_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "b612b839121f945a3024e83b9a9f5aae10f53586",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/evidence/ROOT_INDEPENDENT_DERIVATION.md",
+      "head_mode": "100644",
+      "head_blob": "6f022443f7b36bc228ddd575c70602f208f880c0",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/validated_claims_before_generated_cleanup.json",
+      "head_mode": "100644",
+      "head_blob": "1adefbbf9c4877c9bc5cade9b758858899503821",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-hamiltonian-20260907/validated_readiness_before_generated_cleanup.json",
+      "head_mode": "100644",
+      "head_blob": "ffa28a52b6f265121312fff7d765b1ed21f467ec",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/ALL_RAW.json",
+      "head_mode": "100644",
+      "head_blob": "ec926a709f496133fe70022012983cc12a5b0db4",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/ALL_STDOUT.txt",
+      "head_mode": "100644",
+      "head_blob": "6d559b07ed5e40f883d63288160c60850eb414ff",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/ARTIFACT_PLAN.md",
+      "head_mode": "100644",
+      "head_blob": "b89edb23b83f88e042e9b476ffe446bec0a89c47",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+      "head_mode": "100644",
+      "head_blob": "01dcbc4bd0c5992242961a2b17877802720e2d28",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/CLAIM_STATUS_CERTIFICATE.md",
+      "head_mode": "100644",
+      "head_blob": "1ec5aee54684cc75f7962c1fee29ea5d56df86e9",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/EXECUTION_RECEIPT.json",
+      "head_mode": "100644",
+      "head_blob": "fc2db00a3b5619e864e86692b8fd4cc26aa09cad",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json",
+      "head_mode": "100644",
+      "head_blob": "e310dce29e147c520c1ed3aef1bbd57915054e76",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/FINAL_MAIN66_LOCK_RELEASE.json",
+      "head_mode": "100644",
+      "head_blob": "c19f3721a340a9569778a4ae4fdb585b16281289",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/FINAL_MAIN66_READINESS.json",
+      "head_mode": "100644",
+      "head_blob": "98f3f4773948866c49adeab41cc2af8da4b5f137",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/FINAL_MAIN66_STRICT.log",
+      "head_mode": "100644",
+      "head_blob": "719d19591f2b4f0bd84b91cdb2390b8c047e978f",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/FINAL_MAIN66_SYNC_RECEIPT.json",
+      "head_mode": "100644",
+      "head_blob": "06c7c879be180afcd77c97b07f6dc26b3cb3ef08",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/FINAL_MAIN66_VALIDATION.md",
+      "head_mode": "100644",
+      "head_blob": "41024ad367d587473139e15ac368dc5c8ac43998",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/FINAL_VALIDATION.md",
+      "head_mode": "100644",
+      "head_blob": "8401ad6ca7cf8ab39d809531b14cb0b7a2b27741",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/FINAL_VOCAB_LINT.txt",
+      "head_mode": "100644",
+      "head_blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/FROZEN_PORT_RECEIPT.json",
+      "head_mode": "100644",
+      "head_blob": "572ee411b6646eb1bd7d1f015eb7a5342f700198",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/FULL_PIPELINE.log",
+      "head_mode": "100644",
+      "head_blob": "92f28e50ddf99a88790498a94f73e98947689604",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/GOAL.md",
+      "head_mode": "100644",
+      "head_blob": "afab3d4d978c72bf41913e8755e714485fa20454",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/HANDOFF.md",
+      "head_mode": "100644",
+      "head_blob": "a69dc4642e2c42a3c8c3c88aa492a23380df10a3",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/HASHES.json",
+      "head_mode": "100644",
+      "head_blob": "1d4af2f5343f1612f6a53b6c01ee5d0cff2b8d1f",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/LITERATURE_BRIDGES.md",
+      "head_mode": "100644",
+      "head_blob": "a2bbd3a61affb85f42fd9209643de9ea1615716a",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/LOCK_RELEASE.json",
+      "head_mode": "100644",
+      "head_blob": "c19f3721a340a9569778a4ae4fdb585b16281289",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/LOW_RAW.json",
+      "head_mode": "100644",
+      "head_blob": "19084fc7b3346b12a3908e0a76babec120d91ae3",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/LOW_STDOUT.txt",
+      "head_mode": "100644",
+      "head_blob": "1be8c7e5840bdae3dbda0d3372e29cc42c05de13",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/N1_N8.md",
+      "head_mode": "100644",
+      "head_blob": "8c63e0b91c6e884cec1935e5a59a7c45ccfec11e",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/NO_GO_LEDGER.md",
+      "head_mode": "100644",
+      "head_blob": "1ef13db4082d6be2e326f2da7273c81e88ea0ed4",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/OPPORTUNITY_QUEUE.md",
+      "head_mode": "100644",
+      "head_blob": "7a2c438d13dbf3d71c058d05071f7f381babb4de",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/ORBITAL_GAP_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "e2d5c90db8caf6190d685c6787e5056017eb4ebf",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/PACK_INDEX.md",
+      "head_mode": "100644",
+      "head_blob": "07e09d6b3ec4ea63921ebda16ab5b0c42cb3a898",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/PORT_RECEIPT.json",
+      "head_mode": "100644",
+      "head_blob": "007f65835cd6b8310b4d463d112970f79b253b19",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/PR_BACKLOG.md",
+      "head_mode": "100644",
+      "head_blob": "742b787508dde7961a589f1e7ba719098f0379e4",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/PR_BODY.md",
+      "head_mode": "100644",
+      "head_blob": "2c1bcfbd7c0db37076ad28c8a52c6cfa197448d8",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/PUBLICATION_RECEIPT.json",
+      "head_mode": "100644",
+      "head_blob": "970ce2dd8b35e46ec6a674c04b1bc2d6c043f298",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/QUEUE.md",
+      "head_mode": "100644",
+      "head_blob": "bcb5c4af913687e244aba93c27607e0937095ef2",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/REPORTING_REPAIR.md",
+      "head_mode": "100644",
+      "head_blob": "96c0a64117870fdcbbc9904fac1536334772707a",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "head_mode": "100644",
+      "head_blob": "3042d5343fd280fe2e84b4dbc802f11331092fb6",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/REVIEW_HISTORY.md",
+      "head_mode": "100644",
+      "head_blob": "4ee02ec4138646eca1bc678a86554db83a9c5882",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/ROOT_ALL_COUPLING_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "2874075e9d314f6978f90f0097fe26bb9651ad4a",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/ROOT_CANONICAL_PORT_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "b5797a92434c61ec3fa2849e08300a5da017c8d6",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/ROOT_LOW_GAP_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "b4f15743ea3bda31eecb42dd8e3b38fbad7a529b",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/ROUTE_PORTFOLIO.md",
+      "head_mode": "100644",
+      "head_blob": "ba0d624c157d28b56f57c28421282577530cba28",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/STATE.yaml",
+      "head_mode": "100644",
+      "head_blob": "fa14f21b821b7d5800a8046fb674b18b11a60a7f",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/STATUS.md",
+      "head_mode": "100644",
+      "head_blob": "3e573bb4c7a2f32ab393b1975d5dfe37c588fd66",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/STRICT_LINT.log",
+      "head_mode": "100644",
+      "head_blob": "91f504783e1a27c92bac8ee26dbde376694ecf4d",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/TRACE_GATE.md",
+      "head_mode": "100644",
+      "head_blob": "471d315b2c20bf4953cbf799a7e1c25c2d22fa29",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/UPSTREAM_SYNC_PIPELINE.log",
+      "head_mode": "100644",
+      "head_blob": "5e2443cf9a1584ac9e4c77d606fb7e0457c5a6a7",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/UPSTREAM_SYNC_READINESS.json",
+      "head_mode": "100644",
+      "head_blob": "15b8ea47b792338f2f30a541de9ee13141bd9cd2",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/UPSTREAM_SYNC_STRICT.log",
+      "head_mode": "100644",
+      "head_blob": "e2dd2449d4a1ea6e2efefb2c689df0b2712914f3",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/UPSTREAM_SYNC_VALIDATION.md",
+      "head_mode": "100644",
+      "head_blob": "491649440a98688b121dbc223863625567dceeb7",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-all-coupling-gap/DERIVATION.md",
+      "head_mode": "100644",
+      "head_blob": "dc1f3badd95c539780e9612f0617d8514ad43547",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-all-coupling-gap/HASHES.json",
+      "head_mode": "100644",
+      "head_blob": "adc36234586bd016620167952492ab2bdad525b5",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-all-coupling-gap/PREREGISTRATION.md",
+      "head_mode": "100644",
+      "head_blob": "6d9a1900a97c1ca103d7199af980ef34b86c51af",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-all-coupling-gap/check.py",
+      "head_mode": "100644",
+      "head_blob": "ece54e8d1534c4ba7b50eb514131e189cb2f55c1",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-all-coupling-gap/result.json",
+      "head_mode": "100644",
+      "head_blob": "8c56e32f71cc7e7d4008d7d279a57d526dedbbbc",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-electric-gap/DERIVATION.md",
+      "head_mode": "100644",
+      "head_blob": "775482bbe7acca77da806aea9f386cd74d41de12",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-electric-gap/HASHES.json",
+      "head_mode": "100644",
+      "head_blob": "170edded6fbf05deb71507ebb8796d94dd292897",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-electric-gap/PREREGISTRATION.md",
+      "head_mode": "100644",
+      "head_blob": "d71643f043a6cdbd52daeeaa12ec3045ba914380",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-electric-gap/check.py",
+      "head_mode": "100644",
+      "head_blob": "8e101d307fa66bb0a8787e6f894575d7dbda5ddd",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/evidence/compact-electric-gap/result.json",
+      "head_mode": "100644",
+      "head_blob": "ba447c460b589c58042646728bf05f03298020ca",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/reporting-history/LOW_BEFORE_PARENTHESIS_FIX.py",
+      "head_mode": "100644",
+      "head_blob": "076d09499857b227822bef2e95a7d01012e6a92a",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/reporting-history/PORT_RECEIPT.json",
+      "head_mode": "100644",
+      "head_blob": "4f3935fef05f15c0fbaa2b774121d3b1a8d3d0fd",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/reporting-history/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.py",
+      "head_mode": "100644",
+      "head_blob": "2dc01ae07cf8602a3be3893a6d331c3f4dfbb30c",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/reporting-history/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.py",
+      "head_mode": "100644",
+      "head_blob": "c2a14a360b4fdf4f5576ad6d54c2e87297bcc824",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/validated_claims_before_generated_cleanup.json",
+      "head_mode": "100644",
+      "head_blob": "3abbd52cbff5eea6af163e1ee40d9c3a838e5087",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/compact-physical-gap-20260907/validated_readiness_before_generated_cleanup.json",
+      "head_mode": "100644",
+      "head_blob": "d5e15295a6c6a709e3fbc4e2e9fb91d23537242b",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/ARTIFACT_PLAN.md",
+      "head_mode": "100644",
+      "head_blob": "d978a5c38b71d202c1763649dfc5f07a86922e65",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+      "head_mode": "100644",
+      "head_blob": "68360b273db7c093e1eb014936db5f3d32a7d0b5",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/CANONICAL_LIVE_RESULT.json",
+      "head_mode": "100644",
+      "head_blob": "54a05852135eacad714742abfbcc83557495f109",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/CLAIM_ROWS_BEFORE_CLEANUP.json",
+      "head_mode": "100644",
+      "head_blob": "3bc99217116adf1a261614af1077a88607a65af5",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/CLAIM_STATUS_CERTIFICATE.md",
+      "head_mode": "100644",
+      "head_blob": "6bd4b0568d800aa2b8eb1986a188a19dbc1b9e74",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json",
+      "head_mode": "100644",
+      "head_blob": "287d27fd8770df8fe40d353398a40c1dca5e4fcd",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/FINAL_MAIN66_LOCK_RELEASE.json",
+      "head_mode": "100644",
+      "head_blob": "c19f3721a340a9569778a4ae4fdb585b16281289",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/FINAL_MAIN66_READINESS.json",
+      "head_mode": "100644",
+      "head_blob": "ef46d0ebc657a1612530c91c0e713bcfcf74c538",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/FINAL_MAIN66_STRICT.log",
+      "head_mode": "100644",
+      "head_blob": "445beb091e815511dda7d956b8b7e03c817b4461",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/FINAL_MAIN66_SYNC_RECEIPT.json",
+      "head_mode": "100644",
+      "head_blob": "b9b36a276c5f3d01a6548b3ff375f98db39489ea",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/FINAL_MAIN66_VALIDATION.md",
+      "head_mode": "100644",
+      "head_blob": "d1749800a1e1803dae93cff6303ca6c42c48bf3c",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/FINAL_VALIDATION_SUMMARY.json",
+      "head_mode": "100644",
+      "head_blob": "a413f00bd58c6fb973be92d29b7009ee7a820e73",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/FROZEN_PORT_RECEIPT.json",
+      "head_mode": "100644",
+      "head_blob": "910405e18ce387cba205c71c3edc93a4ff3fc3a3",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/FULL_PIPELINE.log",
+      "head_mode": "100644",
+      "head_blob": "13d683737d240741e1d2067da018dcfcfb39249e",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/FULL_PIPELINE_FAILED_SOURCE_STABILITY.log",
+      "head_mode": "100644",
+      "head_blob": "ebc27a36ce64a4c8157287a0cb4aec83202a060a",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/GENERATED_INVENTORY_BEFORE_CLEANUP.txt",
+      "head_mode": "100644",
+      "head_blob": "8caacb8f5eafe299c067e3e10b03ace592ef8b8e",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/GOAL.md",
+      "head_mode": "100644",
+      "head_blob": "f64a2d6f5ba2b0d3accb1d5bf4fbb05c02b52e4c",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/HANDOFF.md",
+      "head_mode": "100644",
+      "head_blob": "caed2824a53f039afc1ccfd107f55192c0bfb0db",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/LITERATURE_BRIDGES.md",
+      "head_mode": "100644",
+      "head_blob": "e543927b47fe0e29e3b76989d9e70c9ee5b31950",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/LIVE_SCIENTIFIC_COMPARISON.json",
+      "head_mode": "100644",
+      "head_blob": "30537159a67957a1de187abd809dca384b23cf42",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/LOCK.json",
+      "head_mode": "100644",
+      "head_blob": "7f0cbde09a1a7b53e1dd725c39b3ca3de5919b8e",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "head_mode": "100644",
+      "head_blob": "614b303897848abca7d22fe6b6dd63b5e6424a67",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/NO_GO_LEDGER.md",
+      "head_mode": "100644",
+      "head_blob": "87e84e76e014b037ec2ff4a843da1d1444348f0f",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/OPPORTUNITY_QUEUE.md",
+      "head_mode": "100644",
+      "head_blob": "90a7b62f68e9788d78c36ba92512b55f0860df4b",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/PROOF_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "b4b6d5d461145ddf5ab8448c4be4cba5e09ddaaa",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/PR_BACKLOG.md",
+      "head_mode": "100644",
+      "head_blob": "3dced8d3c6bad522bd1f9669302c86249e0865e5",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/PR_BODY.md",
+      "head_mode": "100644",
+      "head_blob": "a7cb10e19eb05be987c651fc54d8373e7b00f772",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/PUBLICATION_RECEIPT.json",
+      "head_mode": "100644",
+      "head_blob": "733591fae6b0d2c7a2681d179e933df318ae5953",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/READINESS_BEFORE_CLEANUP.json",
+      "head_mode": "100644",
+      "head_blob": "eae75696404d222a849847fd8536dbf4ef9dcaa4",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "head_mode": "100644",
+      "head_blob": "43c89abf718e50615b381c9535e4732336415705",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/REVIEW_HISTORY.md",
+      "head_mode": "100644",
+      "head_blob": "c252f7cc219840c350a44f8d451cfb948b6bb8d6",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/ROOT_FINAL_PORT_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "583ff68cbe02a238260ed9c20b5aa327bb93f527",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/ROUTE_PORTFOLIO.md",
+      "head_mode": "100644",
+      "head_blob": "e3d0c9dc0a9ca5f1401a104a0c1f2143c8c78f08",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/SCOPED_VALIDATION.md",
+      "head_mode": "100644",
+      "head_blob": "aa7bcb5df9421fed368e461bddbbeb569d89cba1",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/SCRATCH_HASHES.json",
+      "head_mode": "100644",
+      "head_blob": "2ba00698aaf5d245b6bd03c57b28e99a3cbb001e",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/SCRATCH_PACK_INDEX.md",
+      "head_mode": "100644",
+      "head_blob": "807cfc6be47c82199af1993efaf95795bbc72fb4",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/SCRATCH_PORT_RECEIPT.json",
+      "head_mode": "100644",
+      "head_blob": "7e91bd9c917d2249b0d3e255692141fa78f9cdd5",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/SCRATCH_helper.json",
+      "head_mode": "100644",
+      "head_blob": "c6c2dc840be5ab65c64abc8c1d06524ec565aeea",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/STATE.yaml",
+      "head_mode": "100644",
+      "head_blob": "ea4215e636836fbc273ff33d3c0ce2cb35f55e08",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/STRICT_LINT.log",
+      "head_mode": "100644",
+      "head_blob": "d7b3b622ceafb15c4a63721250f5c0371252e9a6",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/TRACE_GATE.md",
+      "head_mode": "100644",
+      "head_blob": "b8bcdd724249c59eef7c76cb70ecb7c6aff46fc4",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/UPSTREAM_SYNC_PIPELINE.log",
+      "head_mode": "100644",
+      "head_blob": "ce7b36e981c88598878500884db57d5da0966292",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/UPSTREAM_SYNC_READINESS.json",
+      "head_mode": "100644",
+      "head_blob": "9e1b914ff5b32b3b8e191ab92899e5eaac355d06",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/UPSTREAM_SYNC_STRICT.log",
+      "head_mode": "100644",
+      "head_blob": "4ee2288112f2795815c1147a8838a61df6efbebb",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/UPSTREAM_SYNC_VALIDATION.md",
+      "head_mode": "100644",
+      "head_blob": "39d1449eec098bc440663da855fcafdccccb858b",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/VALIDATION_ATTEMPTS.md",
+      "head_mode": "100644",
+      "head_blob": "b840fbec1faca8a966cda361c59ec84c04538308",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/VALIDATION_RESULT.json",
+      "head_mode": "100644",
+      "head_blob": "f8397f45d48718df361b79a823e7e5d29be7f868",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/VOCAB_LINT.log",
+      "head_mode": "100644",
+      "head_blob": "c1cbbaa2c2ca3207e105a2ada683a664021e00d8",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/VOCAB_REPORT.json",
+      "head_mode": "100644",
+      "head_blob": "a7a5ff59f978c9fd9dc659702f5317e2038479ff",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/NATIVE_ROOT_DERIVATION_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "fadf645b01c42f3d7e88645eb0cd99fd9f25ec32",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/ORBITAL_NATIVE_COLD_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "0f358882a60735245e3d415070e13e19cd80471b",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/ORBITAL_PORT_RECEIPT.json",
+      "head_mode": "100644",
+      "head_blob": "8180cb0aa55662bdd34f35d44fe98d8705242edb",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/ORBITAL_ROOT_METRIC_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "c0686d93d4ec7001028601747174dadb275d7834",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/ORBITAL_SUPPLEMENT_CONTRACT.md",
+      "head_mode": "100644",
+      "head_blob": "584ce4c1125715feaac3d1cca6c1dfe8fb7d787e",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/native_DERIVATION.md",
+      "head_mode": "100644",
+      "head_blob": "7cf5a7d07d73321b87ffd23954b0406b04f56bd8",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/native_GEOMETRY_CODE_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "922ade1f7d2be7ed9494b9f1f3ed4542a31466d6",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/native_GEOMETRY_IMPORT_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "81a48f1099319cbbecb2eac8e3c776b506e1bfbe",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/native_HAAR_METRIC_CHECK.json",
+      "head_mode": "100644",
+      "head_blob": "c42aeecaee0a0b218692e88e9c5a4e2f6ce6d9a2",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/native_HAAR_METRIC_DERIVATION.md",
+      "head_mode": "100644",
+      "head_blob": "2616dd10d271fc29f0c8ba9d4dccd2157aa9740b",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/native_PREREGISTRATION.md",
+      "head_mode": "100644",
+      "head_blob": "3c504e00e2fbdb54df650dca9ce988c6f96351d7",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/orbital-original/DERIVATION.md",
+      "head_mode": "100644",
+      "head_blob": "a6fee4fbb17df55546fd0b9e214006b871f6de74",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/orbital-original/FAILURES.md",
+      "head_mode": "100644",
+      "head_blob": "af34738ec689dd441fda78498e0c4d4f57589f66",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/orbital-original/FREEZE_RECEIPT.json",
+      "head_mode": "100644",
+      "head_blob": "184ba2ce44094b5a6789fd2dcd25500f08ed1141",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/orbital-original/PREREGISTRATION.md",
+      "head_mode": "100644",
+      "head_blob": "86c5692ab07346555f381f2398ea7a37dde48c7c",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/orbital-original/check.py",
+      "head_mode": "100644",
+      "head_blob": "7a15bbd8ebe157bb25b2479de7b45fb2f464f221",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/orbital-original/check_before_symbolic_order_fix.py",
+      "head_mode": "100644",
+      "head_blob": "dc586908e407860b5bfe0e93102ff45073727ce0",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/orbital-original/result.json",
+      "head_mode": "100644",
+      "head_blob": "c3feadae161b7c408fcef93e5e477faf4691cf9d",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/root-independent/DERIVATION.md",
+      "head_mode": "100644",
+      "head_blob": "49bbfe42eebcca7ba6f4dbf07277f47efac5e944",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/root-independent/PROVENANCE.md",
+      "head_mode": "100644",
+      "head_blob": "58a952b51b0c4b7ac37d40f6bd0f4922cce131cc",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/full-cube-transfer-20260907/evidence/root-independent/ROOT_INDEPENDENT_REVIEWS.md",
+      "head_mode": "100644",
+      "head_blob": "5d8ad73bbe7aec9188eac982abd7ee9e84bef8f1",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/ARTIFACT_PLAN.md",
+      "head_mode": "100644",
+      "head_blob": "12b63e31913dfdb47a00c1882087bd7ae2e8ee6f",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+      "head_mode": "100644",
+      "head_blob": "e893ed5df71aee4f6fec5487385ac8617d48943c",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/CLAIM_STATUS_CERTIFICATE.md",
+      "head_mode": "100644",
+      "head_blob": "eb1f14b0bd3e5d5b43dcbda14d9b885a5ed26c2f",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json",
+      "head_mode": "100644",
+      "head_blob": "9d576f1865a0c5c3081167d6a69e81fa679c252a",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/FINAL_MAIN66_LOCK_RELEASE.json",
+      "head_mode": "100644",
+      "head_blob": "c19f3721a340a9569778a4ae4fdb585b16281289",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/FINAL_MAIN66_READINESS.json",
+      "head_mode": "100644",
+      "head_blob": "7eb33cd3e94c37e971090202d039a2335fee543f",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/FINAL_MAIN66_STRICT.log",
+      "head_mode": "100644",
+      "head_blob": "9a99413d73e526f013a34769d186e9939fc06a70",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/FINAL_MAIN66_SYNC_RECEIPT.json",
+      "head_mode": "100644",
+      "head_blob": "a92c15262b3a52964e2904add8138ffc0f7c73e7",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/FINAL_MAIN66_VALIDATION.md",
+      "head_mode": "100644",
+      "head_blob": "1fd547449154451a6c169652535a7a2b4353b18a",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/FINAL_PORT_RECEIPTS.json",
+      "head_mode": "100644",
+      "head_blob": "1de4ed0f45bf09f4ea72745a284978533d83e3ab",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/FINAL_VALIDATION.md",
+      "head_mode": "100644",
+      "head_blob": "d415eedab026bcb7f537fb28f23b5386b4406bed",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/FINAL_VOCAB_LINT.txt",
+      "head_mode": "100644",
+      "head_blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/GOAL.md",
+      "head_mode": "100644",
+      "head_blob": "db1f8b3c25822594df3ab452838d747822811955",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/HANDOFF.md",
+      "head_mode": "100644",
+      "head_blob": "cd6a6c39be5dcca8af02b90ffc2e614183c196e9",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/LITERATURE_BRIDGES.md",
+      "head_mode": "100644",
+      "head_blob": "cc68032bfb3af56895375d390ae6c917e63c3199",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/LIVE_SCIENTIFIC_COMPARISON.json",
+      "head_mode": "100644",
+      "head_blob": "3f6261cda187034b6ed6097d4ff9e1343578dbc7",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "head_mode": "100644",
+      "head_blob": "05dccc32e67b5d0010f4b627bee553a3a7ed5db3",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/NO_GO_LEDGER.md",
+      "head_mode": "100644",
+      "head_blob": "b8fb8b0d52e5fcbdc84a452504b110eded26d45c",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/OPPORTUNITY_QUEUE.md",
+      "head_mode": "100644",
+      "head_blob": "7288dda9d6bf37943b31fab100cb1a220d0bffab",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/PROOF_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "e57e28c68ccae5807a98d1b2625dbe63953eac17",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/PR_BACKLOG.md",
+      "head_mode": "100644",
+      "head_blob": "aef4d58b8cf077e52d6a9ad2b755fde16eb561a8",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/PUBLISHED_REVIEW_RECEIPT.json",
+      "head_mode": "100644",
+      "head_blob": "fe007ef0fee7ca239c91817cab8168ce79c81ace",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "head_mode": "100644",
+      "head_blob": "1ba20f2581ac1a4a7f92983f969bf7c6ebe2f0e3",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/REVIEW_HISTORY.md",
+      "head_mode": "100644",
+      "head_blob": "7493bd9f626efddc0ed704e9aacd4aa492dea58f",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/ROOT_ACTUAL_CUBE_HS_SPECTRUM_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "a9e58ad3213bb0277864a551a48fea4a2c85b835",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/ROOT_FINAL_PORT_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "14acb0ad9e295af6fc5c4c8f047df503ad64092e",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/ROOT_SCOPE_REPORTING_REPAIR.json",
+      "head_mode": "100644",
+      "head_blob": "615eaa853bae444212063af77f598df1a52465bd",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/ROUTE_PORTFOLIO.md",
+      "head_mode": "100644",
+      "head_blob": "a8f1b4f11f4737ef201372c658e498bdf5ab86c3",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/SCOPED_VALIDATION.md",
+      "head_mode": "100644",
+      "head_blob": "a428445a0c9d6d9b70b1c91262e208052c290541",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/STATE.yaml",
+      "head_mode": "100644",
+      "head_blob": "59d9d54e928473e7cdc74865b62f0b8cb1d46a4d",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/TRACE_GATE.md",
+      "head_mode": "100644",
+      "head_blob": "09d86fbac0d3ebc9430c3466726dedd544cf75e1",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/UPSTREAM_SYNC_PIPELINE.log",
+      "head_mode": "100644",
+      "head_blob": "1568e6760948e0cbf097da8ce60c0427ee3e86a2",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/UPSTREAM_SYNC_READINESS.json",
+      "head_mode": "100644",
+      "head_blob": "46d2c5dfe0bd546175caf4f80eecca37bcb4d9b5",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/UPSTREAM_SYNC_STRICT.log",
+      "head_mode": "100644",
+      "head_blob": "6863aae6cd97be3f6e306379108eea4d061a8717",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/UPSTREAM_SYNC_VALIDATION.md",
+      "head_mode": "100644",
+      "head_blob": "6a3a3f5d2d0210d6e842a8259d77beccd5b18d5a",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/native-originals/DERIVATION.md",
+      "head_mode": "100644",
+      "head_blob": "607649cc20af66243c40cbde6de255e6d6c0f865",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/native-originals/HASHES.json",
+      "head_mode": "100644",
+      "head_blob": "b9686d3a0b2bc042fe63502ede932cfeab043d3b",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/native-originals/OPERATOR_EXTENSION_PREREGISTRATION.md",
+      "head_mode": "100644",
+      "head_blob": "069e8857482df036d04f33df5093194bee57aa30",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/native-originals/PREREGISTRATION.md",
+      "head_mode": "100644",
+      "head_blob": "32f6aaef5a1c00bb23954181b6ef392545c297f7",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/native-originals/adapted_tree_check.py",
+      "head_mode": "100644",
+      "head_blob": "c2b258ec6396d591d9e27859597b7d15b3e72329",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/native-originals/adapted_tree_result.json",
+      "head_mode": "100644",
+      "head_blob": "09365d8f59f123863f6e32865823e9dd9b34e59c",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/native-originals/staging/GAUGE_WILSON_CUBE_SLAB_NONLINEAR_SADDLE_DILATED_KERNEL_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "head_mode": "100644",
+      "head_blob": "33d154995769e8fe07e5b99f14a1d3f335c1a416",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/native-originals/staging/LIVE_RECHECK_RECEIPT.json",
+      "head_mode": "100644",
+      "head_blob": "93287d5f96d2526a3df74f189c6ce048d5b3e3ca",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/native-originals/staging/ORBITAL_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "acecba7d8e4468e4772c745c8cafeeb3c155e9de",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/native-originals/staging/PACK_INDEX.md",
+      "head_mode": "100644",
+      "head_blob": "f1e601aa69e160db86e64e1c60e1131a892355ea",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/native-originals/staging/PORT_RECEIPT.json",
+      "head_mode": "100644",
+      "head_blob": "db40d048ae40a76af5165606d3fd06760886c3fd",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/native-originals/staging/PRIMARY_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "8c248972766f55d07f709772bf4353df112b2b60",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/native-originals/staging/gauge_wilson_cube_slab_adapted_tree_saddle_check_2026_09_07.py",
+      "head_mode": "100644",
+      "head_blob": "f46335bd39a2a30f166db2f2d383729ac98ea9e7",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/native-originals/staging/result.json",
+      "head_mode": "100644",
+      "head_blob": "d2109bda5fd184e4dfb83a2dc582a617133c338c",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/orbital-review/REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "acecba7d8e4468e4772c745c8cafeeb3c155e9de",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/primary-originals/HASHES.json",
+      "head_mode": "100644",
+      "head_blob": "225e3ab9a7aeaac19f04580e621bdaec746da193",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/primary-originals/PACK_INDEX.md",
+      "head_mode": "100644",
+      "head_blob": "3cc830ace4c0bc514a09f210ebd2b8fa3557f702",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/primary-originals/PORT_RECEIPT.json",
+      "head_mode": "100644",
+      "head_blob": "617b725dd520efead49c3c1cec80b47c52459cf8",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/primary-originals/docs/GAUGE_WILSON_CUBE_SLAB_EXACT_COVARIANCE_CENTRAL_GAUSSIAN_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "head_mode": "100644",
+      "head_blob": "d81b84b125fc6e4e00daa47d8e4483c4631082a2",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/primary-originals/evidence/BETA6_SANITY_PREREGISTRATION.md",
+      "head_mode": "100644",
+      "head_blob": "4d60b7669eca5bd2b3b1197daf415ad0f10ca8ce",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/primary-originals/evidence/BETA6_SANITY_PROOF.md",
+      "head_mode": "100644",
+      "head_blob": "0f3485117eacde60e286f4feadf5b55905e90541",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/primary-originals/evidence/BETA6_SANITY_RESULT.json",
+      "head_mode": "100644",
+      "head_blob": "129b430dec9ddbe6365c6019d797931a4cd7ce6c",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/primary-originals/evidence/CANONICAL_CERTIFICATE_PLAN.md",
+      "head_mode": "100644",
+      "head_blob": "b4d44ee0450cf960fba674bcc5aefb25781a17b3",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/primary-originals/evidence/DERIVATION.md",
+      "head_mode": "100644",
+      "head_blob": "3040266e43a9a580858be823839d7df8a4d8ec43",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/primary-originals/evidence/FAILED_CONTROLS.md",
+      "head_mode": "100644",
+      "head_blob": "316ed0851800d448ff799b94a4f8efd790bfee0c",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/primary-originals/evidence/GAUSSIAN_NORMALIZATION_PREREGISTRATION.md",
+      "head_mode": "100644",
+      "head_blob": "de12c6419e5bd6e6506b6740514057666b2856c2",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/primary-originals/evidence/HASHES.json",
+      "head_mode": "100644",
+      "head_blob": "6d06b3037637737c6864b3a3b8cea3ae355b621e",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/primary-originals/evidence/ITERATOR_FAILURE.txt",
+      "head_mode": "100644",
+      "head_blob": "18abd6d8f8e71c4df65bbbe53797b8585eba22ba",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/primary-originals/evidence/PREREGISTRATION.md",
+      "head_mode": "100644",
+      "head_blob": "8e00a129d60b6c04ca48d509cef5a50a3820d0d5",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/primary-originals/evidence/check-before-iterator-fix.py",
+      "head_mode": "100644",
+      "head_blob": "c887abac45c93d37ddf48f60b989f8a33406ea2a",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/primary-originals/evidence/check.py",
+      "head_mode": "100644",
+      "head_blob": "419b834453f26ae92073c291731ce72fcdbc3f35",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/primary-originals/evidence/cube-nonlinear-saddle-review/REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "8c248972766f55d07f709772bf4353df112b2b60",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/primary-originals/evidence/cube-source-gaussian-review/REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "b7f4ee0246f8b6270f3df17aba0d483320c81217",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/primary-originals/evidence/normalization_check.py",
+      "head_mode": "100644",
+      "head_blob": "6a8c978254f1fd37348ce215e7c2443360c25d8a",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/primary-originals/evidence/normalization_check_before_prefactor_fix.py",
+      "head_mode": "100644",
+      "head_blob": "91ea2e2ed4d57ee606221cae682c3c145cc71240",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/primary-originals/evidence/normalization_result.json",
+      "head_mode": "100644",
+      "head_blob": "9e7945ec7a590ef6ba2045363858d35f1ab0953e",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/primary-originals/evidence/result.json",
+      "head_mode": "100644",
+      "head_blob": "40d8f22d2e36c0085500b505b0cbd33ced26f808",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/primary-originals/result.json",
+      "head_mode": "100644",
+      "head_blob": "3624950105e4db584ec0057f37ff4748fafa2d4f",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/primary-originals/scripts/gauge_wilson_cube_slab_exact_covariance_central_gaussian_spectrum_2026_09_07.py",
+      "head_mode": "100644",
+      "head_blob": "1b1fee32dad4423f2bb9739cee51669625f579d9",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/structural_runner_after_scope_reporting_fix.json",
+      "head_mode": "100644",
+      "head_blob": "982746eac34db5808008096552958eaba3c8ca3c",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/structural_runner_before_scope_reporting_fix.py",
+      "head_mode": "100644",
+      "head_blob": "610d4e5bb89439bd141ff31390405c0c8ebfa69d",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/validated_claims_before_generated_cleanup.json",
+      "head_mode": "100644",
+      "head_blob": "603a4684f787e11d195085a3d251efff92d0eba2",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-gaussian-20260907/validated_readiness_before_generated_cleanup.json",
+      "head_mode": "100644",
+      "head_blob": "24cf095756c4472cdfcc84306c2308b021de3498",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/ARTIFACT_PLAN.md",
+      "head_mode": "100644",
+      "head_blob": "3eab8dee903e7564255bd92a4168a1cc36f46078",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+      "head_mode": "100644",
+      "head_blob": "8c6064fb2a6561d8d4d1b8583cf472b72491023e",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/CLAIM_STATUS_CERTIFICATE.md",
+      "head_mode": "100644",
+      "head_blob": "9a27c7de62b9b613b8ded7649f538cbde78d171e",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/FINAL_PORT_RECEIPTS.json",
+      "head_mode": "100644",
+      "head_blob": "38d43a2e708bc1c0bb997cbf3e4204e85a75b606",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/FINAL_VALIDATION.md",
+      "head_mode": "100644",
+      "head_blob": "a78d83e1eb0680b938f22135ce520207c106e59b",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/FINAL_VOCAB_LINT.txt",
+      "head_mode": "100644",
+      "head_blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/GOAL.md",
+      "head_mode": "100644",
+      "head_blob": "add5c4443b5e15592eb5f8f31c6bd5991346b8c6",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/HANDOFF.md",
+      "head_mode": "100644",
+      "head_blob": "3141b9957bb05297b4e88851657707b70b0e748d",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/HASHES.json",
+      "head_mode": "100644",
+      "head_blob": "c4ff651cda5b18548f5c91df67e05a56c33c4c96",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/INDEPENDENT_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "453e5016bcaa6ccd0a900f7204e43649291f7349",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/LITERATURE_BRIDGES.md",
+      "head_mode": "100644",
+      "head_blob": "8c9e4f58f9905c65ca3553b09e06b3d2bf838dbe",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "head_mode": "100644",
+      "head_blob": "af72d976c25d2271322e9ee5ecca25a2bb5acbf8",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/NO_GO_LEDGER.md",
+      "head_mode": "100644",
+      "head_blob": "df6a80d48cbb03848a81bdd20d1f5f60b16cf663",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/OPPORTUNITY_QUEUE.md",
+      "head_mode": "100644",
+      "head_blob": "ccd71b8c3de9f02aaf5def51aef7e55b3511d715",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/PORT_RECEIPT.json",
+      "head_mode": "100644",
+      "head_blob": "04311b3db7004e8e693f8e70fb1bfeaa63516e79",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/PRE_MAIN66_SYNC/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "head_mode": "100644",
+      "head_blob": "b1db76e0ad4d890fc854e927696fb85ddacbb106",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/PRE_MAIN66_SYNC/UPSTREAM_SYNC_PIPELINE.log",
+      "head_mode": "100644",
+      "head_blob": "af105cecfa81fc5ffa8ddad9917fa996a2c2ee04",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/PRE_MAIN66_SYNC/UPSTREAM_SYNC_READINESS.json",
+      "head_mode": "100644",
+      "head_blob": "47bc758d881d649f02344a753b0015f6727c504d",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/PRE_MAIN66_SYNC/UPSTREAM_SYNC_STRICT.log",
+      "head_mode": "100644",
+      "head_blob": "8a6998ee2ac1b98b6264b742941983037c91bbd8",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/PRE_MAIN66_SYNC/UPSTREAM_SYNC_VALIDATION.md",
+      "head_mode": "100644",
+      "head_blob": "b71cffca28d56bc92b03aed66961b8ada839fd4a",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/PROOF_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "7399b5098222491270332f7cdc4bdcb27bd49d6a",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/PR_BACKLOG.md",
+      "head_mode": "100644",
+      "head_blob": "7d9a5bd35ca12f497618ea0463d0be19978b0a5a",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/REVIEWED_UPSTREAM_SYNC_20260907.json",
+      "head_mode": "100644",
+      "head_blob": "2d935e16a432b704c2be67830e379ccccc55545c",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/REVIEW_HISTORY.md",
+      "head_mode": "100644",
+      "head_blob": "8cdf5ebcfe0aabb5abd0a48dedd8b20f02ed0c9a",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/ROOT_FINAL_PORT_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "ab90cecf1d7957e1bb3b53a1a9123e048718c189",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/ROUTE_PORTFOLIO.md",
+      "head_mode": "100644",
+      "head_blob": "bbe8798937bf23b149ec5b74fa3aa52a7c96b742",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/SCOPED_VALIDATION.md",
+      "head_mode": "100644",
+      "head_blob": "0e0703db9a3cbfb5717ad3cd80e75d361e6156c2",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/STATE.yaml",
+      "head_mode": "100644",
+      "head_blob": "bca2f48ed2d3df1aa7ccf4e6e9373e526edfc579",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/TRACE_GATE.md",
+      "head_mode": "100644",
+      "head_blob": "62f6f91d2374c349cc6750e13e64cb0da1d8c2a4",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/UPSTREAM_SYNC_PIPELINE.log",
+      "head_mode": "100644",
+      "head_blob": "af105cecfa81fc5ffa8ddad9917fa996a2c2ee04",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/UPSTREAM_SYNC_READINESS.json",
+      "head_mode": "100644",
+      "head_blob": "47bc758d881d649f02344a753b0015f6727c504d",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/UPSTREAM_SYNC_STRICT.log",
+      "head_mode": "100644",
+      "head_blob": "8a6998ee2ac1b98b6264b742941983037c91bbd8",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/UPSTREAM_SYNC_VALIDATION.md",
+      "head_mode": "100644",
+      "head_blob": "b71cffca28d56bc92b03aed66961b8ada839fd4a",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/canonical-live.json",
+      "head_mode": "100644",
+      "head_blob": "b65cca01d3730fbb3cbfbc17d73d663d545a1b8b",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/native-originals/DERIVATION.md",
+      "head_mode": "100644",
+      "head_blob": "605f6e87b2d530404e6c304b8b76443fa73289dc",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/native-originals/DISK_WORD_CERTIFICATE.md",
+      "head_mode": "100644",
+      "head_blob": "4d46861a90e17aed3ad2d857eea6aa87cc020d04",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/native-originals/PREREGISTRATION.md",
+      "head_mode": "100644",
+      "head_blob": "9260afc36c1ff6e8d78bf9854bd6a4f9e074bbd0",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/native-originals/UNTRUNCATED_NORM_COROLLARY.md",
+      "head_mode": "100644",
+      "head_blob": "80a58b9521ccd156d48be431f484e165c59bf753",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/native-originals/check.py",
+      "head_mode": "100644",
+      "head_blob": "8c265569c6487eaf801e25d587c8300f9b3aad48",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/native-originals/result.json",
+      "head_mode": "100644",
+      "head_blob": "5ece1f79488fe4a6db6a336d540f4be9988b68a9",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/native-originals/staging/GAUGE_WILSON_CUBE_SLAB_WEAK_COUPLING_WINDOW_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "head_mode": "100644",
+      "head_blob": "c72b6a4f0c417b06da6eb05aef9ed8812622d33b",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/native-originals/staging/INDEPENDENT_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "453e5016bcaa6ccd0a900f7204e43649291f7349",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/native-originals/staging/PACK_INDEX.md",
+      "head_mode": "100644",
+      "head_blob": "26569755660262a80b6a13acc78930574afd112d",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/native-originals/staging/PORT_RECEIPT.json",
+      "head_mode": "100644",
+      "head_blob": "04311b3db7004e8e693f8e70fb1bfeaa63516e79",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/native-originals/staging/PROOF_REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "7399b5098222491270332f7cdc4bdcb27bd49d6a",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/native-originals/staging/gauge_wilson_cube_slab_weak_coupling_window_check_2026_09_07.py",
+      "head_mode": "100644",
+      "head_blob": "f95abed9e2269f1bbfff4923add44609757b85de",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/native-originals/staging/result.json",
+      "head_mode": "100644",
+      "head_blob": "e628d103cb472beb1578ee854f9835c34274ecb5",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/primary-review/HASHES.json",
+      "head_mode": "100644",
+      "head_blob": "c4ff651cda5b18548f5c91df67e05a56c33c4c96",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/primary-review/REVIEW.md",
+      "head_mode": "100644",
+      "head_blob": "453e5016bcaa6ccd0a900f7204e43649291f7349",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/validated_claims_before_generated_cleanup.json",
+      "head_mode": "100644",
+      "head_blob": "9b39e075931edc55a7ecadbf73fb88cd73d5e9b2",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": ".claude/science/physics-loops/spatial-wilson-weak-coupling-20260907/validated_readiness_before_generated_cleanup.json",
+      "head_mode": "100644",
+      "head_blob": "b2b5c72f07de8352a08b446b3b77e5bd0c7ceaa9",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": "docs/GAUGE_WILSON_COMPACT_CUBE_ALL_COUPLING_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "head_mode": "100644",
+      "head_blob": "36ede9f1b36c4f8e20eef2d113d1ca959ad9e4b3",
+      "main_blob": "36ede9f1b36c4f8e20eef2d113d1ca959ad9e4b3",
+      "byte_identical_to_current_main": true
+    },
+    {
+      "path": "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "head_mode": "100644",
+      "head_blob": "c3aa6e9d7d2dd17805c40ad6042daf5283b25cf6",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": "docs/GAUGE_WILSON_COMPACT_CUBE_GALERKIN_SPECTRAL_ENCLOSURES_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "head_mode": "100644",
+      "head_blob": "b46e12bfda7702f9dc7af50f848a915ccb4e5c15",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": "docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "head_mode": "100644",
+      "head_blob": "5cc6827e11c993308ebb7a7b8679d158c947e46f",
+      "main_blob": "5cc6827e11c993308ebb7a7b8679d158c947e46f",
+      "byte_identical_to_current_main": true
+    },
+    {
+      "path": "docs/GAUGE_WILSON_CUBE_SLAB_EXACT_COVARIANCE_CENTRAL_GAUSSIAN_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "head_mode": "100644",
+      "head_blob": "c2e506ab4dff6a59af4a4c26e255828a9d8414bd",
+      "main_blob": "ff1ab34b3c09bc74dcb3d145532590efd383d67f",
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": "docs/GAUGE_WILSON_CUBE_SLAB_NONLINEAR_SADDLE_DILATED_KERNEL_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "head_mode": "100644",
+      "head_blob": "83ef1196e8419028cbd3bf9f077eeee45717cb89",
+      "main_blob": "51c5d2f9f352ad8c867036bf604198cee5c7bcf3",
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": "docs/GAUGE_WILSON_CUBE_SLAB_WEAK_COUPLING_WINDOW_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "head_mode": "100644",
+      "head_blob": "1e895d08d7fb910d75505c3e072b9f39858ed481",
+      "main_blob": "455aa6bbed441b4ee408204486228312418ff00d",
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "head_mode": "100644",
+      "head_blob": "75f96a8a315d77d5ebb8344ba798ebee0bd554f5",
+      "main_blob": "75f96a8a315d77d5ebb8344ba798ebee0bd554f5",
+      "byte_identical_to_current_main": true
+    },
+    {
+      "path": "docs/GAUGE_WILSON_FULL_CUBE_PHYSICAL_TRANSFER_GEOMETRY_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "head_mode": "100644",
+      "head_blob": "fb4dac03f28fb05694eccc0480f6c0cf61a9a8c5",
+      "main_blob": "c78457b547ffc1f7203131a1672b5fc16fa9abfc",
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": "docs/GAUGE_WILSON_FULL_CUBE_SIMULTANEOUS_TRANSFER_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "head_mode": "100644",
+      "head_blob": "ef6b9430f1a6a6558bed011cf137f2d403c1bbe6",
+      "main_blob": "75ea1198bc10c46346cf37af22a4626db95a3091",
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "head_mode": "100644",
+      "head_blob": "b10b06d479606357df80d826c3c06db921116856",
+      "main_blob": "73239cd04d4a77c9c0d96a9d1af090dafb52ce36",
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.txt",
+      "head_mode": "100644",
+      "head_blob": "4f428f9313526bd5f9b251fad63d720f3024dd1c",
+      "main_blob": "eeef5b99e116f5994e495077cbcfb901df774e54",
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_compact_cube_finite_qubit_cutoff_2026_09_07.txt",
+      "head_mode": "100644",
+      "head_blob": "0b1b414c660eefea3e0563d01c98c287c08efac1",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_compact_cube_galerkin_spectral_enclosures_2026_09_07.txt",
+      "head_mode": "100644",
+      "head_blob": "121656bdcf43d8b82dab639b0626d642f5d90e3a",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.txt",
+      "head_mode": "100644",
+      "head_blob": "3a83f80e71f7e3476aab5e981014ca066d89c19a",
+      "main_blob": "15daecf2a3eac6bed911041bf22b5dd1ecb778b1",
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_cube_slab_adapted_tree_saddle_check_2026_09_07.txt",
+      "head_mode": "100644",
+      "head_blob": "c6bc5c460785968f89429b22f1e2d86516bb08b0",
+      "main_blob": "9218e7c019602f993a3973230b8e3da7d9d56e14",
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_cube_slab_exact_covariance_central_gaussian_spectrum_2026_09_07.txt",
+      "head_mode": "100644",
+      "head_blob": "7ac01ec8d2cc16db88d28c6055b931d20bb95c03",
+      "main_blob": "51dcdd637eadb1245540b46a8de25124e5725ffc",
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_cube_slab_weak_coupling_window_check_2026_09_07.txt",
+      "head_mode": "100644",
+      "head_blob": "f7f046ef2fd73c4bb8b3dd2ea13a49a32c317882",
+      "main_blob": "2a190f06b8499827abe396836d8bdf22716aebb0",
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_full_cube_compact_hamiltonian_limit_check_2026_09_07.txt",
+      "head_mode": "100644",
+      "head_blob": "d8e41c99e155c75f9e270f7c77bc32972253aafd",
+      "main_blob": "fd0c9acdbc2ddbc0f58e15f4809eeccd51812cee",
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_full_cube_transfer_geometry_check_2026_09_07.txt",
+      "head_mode": "100644",
+      "head_blob": "1b234e069917cdf95ffaf162761e34c265324e0b",
+      "main_blob": "1dff8dc7439001ae7b609ec838db1f551ff83edd",
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": "scripts/gauge_wilson_compact_cube_all_coupling_gap_2026_09_07.py",
+      "head_mode": "100644",
+      "head_blob": "916fb23a53937b5bb240a4bcb0b6b21eeab8c6bc",
+      "main_blob": "59f59198d1b02a8af19e50eb126f164ccb7544dc",
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": "scripts/gauge_wilson_compact_cube_finite_qubit_cutoff_2026_09_07.py",
+      "head_mode": "100644",
+      "head_blob": "79fa435c78c0c41bcbb78a64be3bab05c6c5ba21",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": "scripts/gauge_wilson_compact_cube_galerkin_spectral_enclosures_2026_09_07.py",
+      "head_mode": "100644",
+      "head_blob": "42f24084ff1ca543249ffda1063320100799ff18",
+      "main_blob": null,
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": "scripts/gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_2026_09_07.py",
+      "head_mode": "100644",
+      "head_blob": "80006b37e7d55e816161eaf6086b87c60449d04c",
+      "main_blob": "cc7b4184e48cc92a3f6d21d9b05acc1d6a4590d2",
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": "scripts/gauge_wilson_cube_slab_adapted_tree_saddle_check_2026_09_07.py",
+      "head_mode": "100644",
+      "head_blob": "8faafaedfec01637e7182ab25093da007bdb19b4",
+      "main_blob": "f1f73eb82e53f28a82df40888ba32cbe04081a2e",
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": "scripts/gauge_wilson_cube_slab_exact_covariance_central_gaussian_spectrum_2026_09_07.py",
+      "head_mode": "100644",
+      "head_blob": "ac253eb3e7af461dbae91ce5af0e7938596987fb",
+      "main_blob": "5d2458f3292e25f0526257b43c39b0b3cc492faf",
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": "scripts/gauge_wilson_cube_slab_weak_coupling_window_check_2026_09_07.py",
+      "head_mode": "100644",
+      "head_blob": "6b43b142e4b23510969b438f25ebd01a774798f5",
+      "main_blob": "21c99d55795a514a042941ad650635ea0ea4ad98",
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": "scripts/gauge_wilson_full_cube_compact_hamiltonian_limit_check_2026_09_07.py",
+      "head_mode": "100644",
+      "head_blob": "aaeb1ecdc2d29e2cc24b875ba38a23593c58c5cc",
+      "main_blob": "69638ae4a2b46878f6fa7c5e737143e3c107b20e",
+      "byte_identical_to_current_main": false
+    },
+    {
+      "path": "scripts/gauge_wilson_full_cube_transfer_geometry_check_2026_09_07.py",
+      "head_mode": "100644",
+      "head_blob": "917f321c558b220b36257eceaaa871d29e2eed6a",
+      "main_blob": "917f321c558b220b36257eceaaa871d29e2eed6a",
+      "byte_identical_to_current_main": true
+    }
+  ],
+  "current_main": "9ca43f83245a29864d7fbae1b6af2a6601a6e7d7",
+  "boundary": "Routing facts only; equality does not establish same contextual scientific acceptance; complete review and old disposition recovery still required."
+}

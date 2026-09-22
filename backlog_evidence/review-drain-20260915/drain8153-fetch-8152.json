@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "70f28178c47a6f5bc3666c3e2878950dc212d3f6",
+  "fetched_ref": "refs/review-loop/fetched/8152-363a21f2a4414aafb9f6e5697f3e11a8",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block18-menus-neighbour-generated-supports-cube-orbits-20260915",
+    "headRefOid": "70f28178c47a6f5bc3666c3e2878950dc212d3f6",
+    "isDraft": false,
+    "number": 8152,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

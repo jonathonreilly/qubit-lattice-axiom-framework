@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "checks": [
+    "dimension_R0",
+    "dimension_R1",
+    "dimension_R2",
+    "dimension_R3",
+    "dimension_R4",
+    "dimension_R5",
+    "dimension_R6",
+    "dimension_R7",
+    "dimension_R8",
+    "dimension_R9",
+    "dimension_R10",
+    "dimension_R11",
+    "rank2Q_congruence_-1",
+    "rank2Q_congruence_1/2",
+    "rank2Q_congruence_3",
+    "rank2Q_congruence_7",
+    "endpoint_(11, 3, 2)",
+    "endpoint_(17, 5, 3)",
+    "endpoint_(19, 0, 0)",
+    "endpoint_(31, 7, 4)"
+  ],
+  "count": 20,
+  "elapsed": 0.25210795900784433,
+  "scope": "Independent exact dimension identity and rank-two excluded-block Schur congruence/endpoint controls; no primary imported or whole-cube diagonalization."
+}

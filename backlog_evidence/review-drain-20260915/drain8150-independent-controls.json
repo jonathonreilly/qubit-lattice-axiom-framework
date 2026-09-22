@@ -1,0 +1,16 @@
+{
+  "checks": 5436,
+  "failures": 0,
+  "elapsed_seconds": 0.15058458398561925,
+  "plaquette_total_variations": {
+    "uniform": "262271/15806232",
+    "seeded": "30457/2431728",
+    "attracting": "591377/39515580",
+    "parallel": "2239744469/137703893184"
+  },
+  "fixed_minus_x_environment_normalizers": [
+    502,
+    986
+  ],
+  "scope": "Independent merged partial-configuration DP (no original imports), direct sequential-product flip checks on24orders\u00d74sites\u00d75triples, exact normalizer identities; fixed-boundary sign reversal tests proof gap, not a counterexample to arbitrary-env theorem."
+}

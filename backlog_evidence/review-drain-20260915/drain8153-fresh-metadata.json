@@ -1,0 +1,35 @@
+[
+  {
+    "baseRefName": "main",
+    "baseRefOid": "2ed54cb83a4cb6b336e7053e19c8010d5d2930d8",
+    "headRefName": "physics-loop/admissibility-induced-law-block17-static-law-strong-coupling-order-chessboard-peierls-20260915",
+    "headRefOid": "2772cca288cccf1089db76a979b5c67208d31cf8",
+    "isDraft": false,
+    "number": 8151,
+    "state": "OPEN",
+    "title": "[physics-loop] admissibility-induced-law block17 \u2014 bounded_theorem \u2014 bounded-support: the static six-axis law at strong coupling has long-range order and several Gibbs states on Z\u00b2 and Z\u00b3 for p \u2265 216 max(q,r) \u2014 reflection positivity through site planes, chessboard, contour counting (3D by the in-plane count)",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8151"
+  },
+  {
+    "baseRefName": "main",
+    "baseRefOid": "2ed54cb83a4cb6b336e7053e19c8010d5d2930d8",
+    "headRefName": "physics-loop/admissibility-induced-law-block18-menus-neighbour-generated-supports-cube-orbits-20260915",
+    "headRefOid": "70f28178c47a6f5bc3666c3e2878950dc212d3f6",
+    "isDraft": false,
+    "number": 8152,
+    "state": "OPEN",
+    "title": "[physics-loop] admissibility-induced-law block18 \u2014 bounded_theorem \u2014 bounded-support: menus \u2014 unsoldered finite supports are neighbour-generated (antipodal for one neighbour; no site-independent finite menu), soldered menus are unions of the cube's orbits 6/8/12/24 with the six axes minimal; Born deterministic on the antipodal pair",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8152"
+  },
+  {
+    "baseRefName": "main",
+    "baseRefOid": "2ed54cb83a4cb6b336e7053e19c8010d5d2930d8",
+    "headRefName": "physics-loop/admissibility-induced-law-block19-sphere-static-law-goldstone-green-function-channel-20260915",
+    "headRefOid": "ea3cbd0f2b6b90789026ae28f95b8167cf7c4b1b",
+    "isDraft": false,
+    "number": 8153,
+    "state": "OPEN",
+    "title": "[physics-loop] admissibility-induced-law block19 \u2014 bounded_theorem \u2014 bounded-support: the unsoldered static law's ordered phase carries the lattice Green function in its transverse channel \u2014 infrared bound above, zero-field Bogoliubov bound below, long-range order for \u03b2 > 3\u221a3\u03c0/8",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8153"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "primary": "scripts/gauge_wilson_compact_cube_finite_qubit_cutoff_2026_09_07.py",
+    "primary_sha256": "61361c1e67c8bbc0f5bccaa58294243d8f48825e509dfb8de7a23178c59b6552",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    ],
+    "declared_input_fingerprint": "345a088e93314bb55a6654b13ddbbe7a731f2430b95677bba5b7aec180976bff",
+    "cache_status": "missing",
+    "helpers": []
+  },
+  {
+    "primary": "scripts/gauge_wilson_compact_cube_galerkin_spectral_enclosures_2026_09_07.py",
+    "primary_sha256": "e16ee207fca5c63ffcc915fe884ce74b30366cb338e1e404bf59bc665b39e2cf",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/GAUGE_WILSON_COMPACT_CUBE_GALERKIN_SPECTRAL_ENCLOSURES_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    ],
+    "declared_input_fingerprint": "194251abce2d76991964fc777ec646ed84a4e9ff25c9d7afa9a08050511d7141",
+    "cache_status": "missing",
+    "helpers": []
+  }
+]

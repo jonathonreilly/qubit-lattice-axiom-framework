@@ -1,0 +1,21 @@
+{
+  "before": {
+    "baseRefName": "main",
+    "headRefName": "codex/compact-cutoff-block32-20260907",
+    "headRefOid": "4c3b9bd33bfbc2e03b9d91e05849607bc33ec70c",
+    "isDraft": true,
+    "number": 8023,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8023"
+  },
+  "after": {
+    "baseRefName": "main",
+    "headRefName": "codex/compact-cutoff-block32-20260907",
+    "headRefOid": "4c3b9bd33bfbc2e03b9d91e05849607bc33ec70c",
+    "isDraft": false,
+    "number": 8023,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8023"
+  },
+  "authorization": "User authorized review/land or reject/close all open PRs including draft triage; final independent source review PASS. Mark-ready grants no mechanical or landing PASS."
+}

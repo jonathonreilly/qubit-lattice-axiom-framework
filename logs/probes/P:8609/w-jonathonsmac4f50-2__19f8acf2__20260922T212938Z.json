@@ -30,12 +30,19 @@
  "stdout_sha256": "854a713b4ef04b9b906776644a724fb45689477a4809780c32cd2925e9ea0a92",
  "stdout_tail": "PR #8609: Physics: controlled positive quantum curl limits from finite qubits\nbranch codex/mobile-record-positive-quantum-curl-20260921 (base main)\nrunners in the PR: 1\n== scripts/mobile_records_positive_quantum_curl_limits_2026_09_21.py: rc=0 PASS=11 FAIL=0\n   mutation halve_dilute_commutator_bound: expected ? observed ? MISMATCH\n   mutation omit_occupation_depletion: expected ? observed ? MISMATCH\n   mutation wrong_incidence_adjoint: expected ? observed ? MISMATCH\nHIT: scripts/mobile_records_positive_quantum_curl_limits_2026_09_21.py: mutation census mismatch: halve_dilute_commutator_bound omit_occupation_depletion wrong_incidence_adjoint",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260922T212954Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T215401Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 19f8acf2 differs from the current HEAD c564b0e2 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "false-positive",
+  "note": "Mobile-record census template: MUTATIONS = {name: (check_file, old, new)} and no mutation_family lines, so run_pr_branch.py reads 'expected ? observed ?' for every mutation. Independent census on the PR branch (runpy-loaded table, each --mutation run): 3 of 3 exit 1 with a FAIL line naming the declared target (halve_dilute_commutator_bound: dimer_local_dilute_curl_check.py; omit_occupation_depletion: dimer_finite_qubit_curl_check.py; wrong_incidence_adjoint: dimer_edge_face_gauss_check.py). Same class as P:8604/P:8560/P:8569/P:8567, reported on #8294.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260922T215401Z"
  }
 }

@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:the-level-ordered-response-kernel:a1",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-jonathonsmac4f50-j40ae",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/the-level-ordered-response-kernel/w-jonathonsmac4f50-j40ae/check.py",
+ "seed": 92047,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d30a4f3c",
+ "started_utc": "20260923T193407Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PROVED the level-ordered gain-one response kernel exactly: G(a,b,c) = (4/3) L!/(a!b!c!) 3^-L on the forward octant and 0 elsewhere (L = a+b+c); R(k) = 4/(3 - sum e^-ik_j); every level carries 4/3; a one-sided wake along (1,1,1) with on-axis 2/(pi r) (8/7 of the light-cone kernel's 7/(4 pi r)) and a Gaussian cross-section of variance L/3; in drift-free directions the rule-gain model gives 2A(4 beta)/E(k), above the light-cone bound 1/E(k) iff beta > 0.45"
+ },
+ "review": "Own plan: the gain-one kernel (1-P)^-1 with P = (1 + sum e^{-ik_j})/4 is the Green function of the walk with steps {0,e1,e2,e3}; summing the zero steps in closed form gives G(a,b,c) = (4/3) L!/(a!b!c!) 3^-L on the forward octant, zero elsewhere: a one-sided wake along (1,1,1) (on-axis 2/(pi r), Gaussian cross-section of variance L/3, 4/3 per level); in drift-free directions the rule-gain linear model is 2A(4 beta)/E(k), above the light-cone bound for beta > 0.45; exact recursion, series and Fourier checks, asymptotics labelled numerical.",
+ "what": "DERIVATION, independent attempt 1 of 2: Under the level-ordered past, what surrounds a held source? The drifted kernel. SETTING (the formation lane of the admissibility induced-law campaign, under the owner's reading that records FORM: open PRs #8678 (block 89) #8692 (block 90) #8696 (block 91) #8703 (block 92) and block 93 'covariance forces a reversible formation law' when opened; decision record #8572 (eighth addendum); blocks 19 (#8153), 20 (#8154, closed and archived), 26-28 (#8170, #8172); ALL clauses supplied, nothing adopted; read the relevant notes on their PR branches before starting - git fetch origin <branch>; git show origin/<branch>:<note>). TASK: under the level-ordered past (records at (t+1, x) from x - e_j, j = 1..3, and x itself; levels as diagonals of Z^3; NOT covariant in the 3+1 reading, block 93) the chain is not reversible (block 90 T1: cycle ratio e^{8 beta}); the probes' source-potential scans found response ratios 0.92-1.06 against the symmetric kernel, with a forward-backward asymmetry. (a) The linear (gain-one) theory's stationary response to a held source, exactly: (1 - P)^-1 with P(k) = (1 + sum_j e^{-i k_j})/4; its large-distance form (a wake along (1,1,1)?) against the inverse Laplacian; (b) whether the nonlinear law's response can exceed the light-cone law's upper bound 1/E(k) (one executed ratio did). HIT: (a) exact. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/the-level-ordered-response-kernel/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/the-level-ordered-response-kernel/<name>/check.py\"",
+ "stdout_sha256": "78e72acb03f865c20fa72e8c92bdb5c4225da3d44ec9dfea45ef05b63a4447d9",
+ "stdout_tail": "1.81): the rule-gain model exceeds the light-cone bound 1/E(k) in the drift-free directions iff 4 beta > kappa*, i.e. beta > 0.45 (A increasing)\nPASS E4.4 the kernel is not symmetric: G(1,0,0) = 4/9 but G(-1,0,0) = 0 (forward-backward asymmetry, exact)\n   NUMERICAL on-axis G(n,n,n) * pi r / 2 (should -> 1): [0.97803, 0.99778, 0.99978, 0.99998]\nPASS N1 NUMERICAL: on the axis G ~ 2/(pi r) = (8/7) x 7/(4 pi r)\n   NUMERICAL transverse profile / (2 sqrt3/(pi L)) exp(-3 rho^2/(2L)) at L = 9000: [0.9999, 0.9999, 1.0, 1.0]\nPASS N2 NUMERICAL: Gaussian cross-section of variance L/3 per transverse direction\n\nSUMMARY: PROVED the level-ordered gain-one response kernel exactly: G(a,b,c) = (4/3) L!/(a!b!c!) 3^-L on the forward octant and 0 elsewhere (L = a+b+c); R(k) = 4/(3 - sum e^-ik_j); every level carries 4/3; a one-sided wake along (1,1,1) with on-axis 2/(pi r) (8/7 of the light-cone kernel's 7/(4 pi r)) and a Gaussian cross-section of variance L/3; in drift-free directions the rule-gain model gives 2A(4 beta)/E(k), above the light-cone bound 1/E(k) iff beta > 0.45\nHIT: (a) exact: the level-ordered gain-one kernel is G(a,b,c) = (4/3) L!/(a!b!c!) 3^-L on the forward octant, zero behind: a wake along (1,1,1), not the inverse Laplacian (on-axis 2/(pi r), Gaussian cross-section of variance L/3, total 4/3 per level, R(k) = 4/(3 - sum_j e^-ik_j)); (b) its rule-gain linear response exceeds the light-cone bound 1/E(k) by the factor 2A(4 beta) in the drift-free directions, i.e. for beta > 0.45\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j40ae",
+  "at_utc": "20260923T193425Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Self-triage: exact closed form of the level-ordered gain-one response kernel (a one-sided multinomial wake along (1,1,1), on-axis 2/(pi r)) and the linear model's excess over the light-cone bound for beta > 0.45; to be refereed by another model family. Issue #8835.",
+  "by": "w-jonathonsmac4f50-j40ae",
+  "at_utc": "20260923T193425Z"
+ }
+}

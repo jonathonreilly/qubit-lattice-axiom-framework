@@ -1,0 +1,17 @@
+PASS E1.1 the recursion G = (4/3) delta + (1/3) sum_j G(x - e_j) is solved by (4/3) L!/(a!b!c!) 3^(-L) at every octant point with L <= 24
+PASS E1.2 the kernel vanishes off the forward octant (support argument; sampled: every point with a coordinate -1, |x|<=6, gets 0)
+PASS E2 sum_j C(L+j, j) 4^(-j) = (4/3)^(L+1) (partial sums to j = 400 below it and within 1e-30, L = 0..11; the identity is (1-x)^(-L-1) at x = 1/4)
+PASS E3.1 every level L carries total response exactly 4/3 (L = 0..24)
+PASS E3.2 level sum sum_{a+b+c=L} G e^{-ik.x} = (4/3)(sum_j e^{-ik_j}/3)^L (multinomial theorem, L = 5 symbolic)
+PASS E3.3 R(k) = sum_L (4/3)(S/3)^L = 4/(3 - S) = 1/(1 - P(k)) with P = (1 + S)/4
+PASS E4.1 light-cone gain-one kernel: 1/(1 - P_lc) = 7/E(k) with P_lc = (1 + 2 sum cos k_j)/7
+PASS E4.2 along k = (q, -q, 0): 3 - sum e^{-ik_j} = E(k)/2, so the level-ordered gain-one kernel is 8/E(k) (vs 7/E light-cone)
+PASS E4.3 A(kappa) = 1/2 at kappa* in (1.79, 1.81): the rule-gain model exceeds the light-cone bound 1/E(k) in the drift-free directions iff 4 beta > kappa*, i.e. beta > 0.45 (A increasing)
+PASS E4.4 the kernel is not symmetric: G(1,0,0) = 4/9 but G(-1,0,0) = 0 (forward-backward asymmetry, exact)
+   NUMERICAL on-axis G(n,n,n) * pi r / 2 (should -> 1): [0.97803, 0.99778, 0.99978, 0.99998]
+PASS N1 NUMERICAL: on the axis G ~ 2/(pi r) = (8/7) x 7/(4 pi r)
+   NUMERICAL transverse profile / (2 sqrt3/(pi L)) exp(-3 rho^2/(2L)) at L = 9000: [0.9999, 0.9999, 1.0, 1.0]
+PASS N2 NUMERICAL: Gaussian cross-section of variance L/3 per transverse direction
+
+SUMMARY: PROVED the level-ordered gain-one response kernel exactly: G(a,b,c) = (4/3) L!/(a!b!c!) 3^-L on the forward octant and 0 elsewhere (L = a+b+c); R(k) = 4/(3 - sum e^-ik_j); every level carries 4/3; a one-sided wake along (1,1,1) with on-axis 2/(pi r) (8/7 of the light-cone kernel's 7/(4 pi r)) and a Gaussian cross-section of variance L/3; in drift-free directions the rule-gain model gives 2A(4 beta)/E(k), above the light-cone bound 1/E(k) iff beta > 0.45
+HIT: (a) exact: the level-ordered gain-one kernel is G(a,b,c) = (4/3) L!/(a!b!c!) 3^-L on the forward octant, zero behind: a wake along (1,1,1), not the inverse Laplacian (on-axis 2/(pi r), Gaussian cross-section of variance L/3, total 4/3 per level, R(k) = 4/(3 - sum_j e^-ik_j)); (b) its rule-gain linear response exceeds the light-cone bound 1/E(k) by the factor 2A(4 beta) in the drift-free directions, i.e. for beta > 0.45

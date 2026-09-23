@@ -1,0 +1,36 @@
+{
+ "task": "R:gauge_vacuum_plaquette_slab_window_coupling_derived_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_vacuum_plaquette_slab_window_coupling_derived_bounded_2026_06_12.py",
+ "seed": 78253,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "34e3d17f",
+ "started_utc": "20260923T154413Z",
+ "elapsed_s": 1.3,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=20, FAIL=2",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0d0d8b1fb63ac259142b6a3adca0a48f1d362b09ddf7c993704cefb3ec4138d5",
+ "stdout_tail": "runcation: trivial window channel, equal to switched-off window.\n\n================================================================================================================\nPart 4: switched-off measurement gate\n================================================================================================================\nP(k=2, window channel switched off) = 0.449370834209282\nW44 unwindowed k=2 reference        = 0.449370834209281\ndelta_off_minus_W44                = +8.881784197001252e-16\nW44 strip-word deep limit           = 0.615191992185898\npair-support limit from runner      = 0.615191992185898\nPASS: window switched off reproduces W44 k=2 strip-word value\nPASS: pair-support limit is unchanged by the switched-off window gate\nPASS: nontrivial k=2 displacement is not reported without the missing recoupling object\n      the runner reports zero switched-off displacement only, not a window-physics cancellation\n\n================================================================================================================\nPart 5: note hygiene and no-go discipline visibility\n================================================================================================================\nPASS: note delegates status to the independent audit lane\nPASS: note uses markdown links for one-hop authorities\nPASS: context refs avoid branch-local .claude paths\nPASS: note avoids overreach closure phrases\nPASS: note includes a visible N1-N8 wall-discipline gate\n\nTOTAL: PASS=20, FAIL=2\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T154414Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=20, FAIL=2' vs cache 'TOTAL: PASS=22, FAIL=0'"
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "task": "R:gauge_vacuum_plaquette_three_sample_positive_cone_scope_guard_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_vacuum_plaquette_three_sample_positive_cone_scope_guard_2026_06_08.py",
+ "seed": 78254,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "34e3d17f",
+ "started_utc": "20260923T154414Z",
+ "elapsed_s": 8.4,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=6 SUPPORT=3 FAIL=2",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5674f323640988844cfbd7a9089f4c2586c65d74f40c4fffff832c8b0932009b",
+ "stdout_tail": "4-17: effective=unaudited, audit=unaudited, gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note: effective=unaudited, audit=unaudited, gauge_vacuum_plaquette_first_three_sample_local_wilson_partial_evaluation_note_2026-04-17: effective=unaudited, audit=unaudited\n  [PASS] [THEOREM] The radical sample matrix is exactly invertible and the displayed inverse is internally consistent\n         |det(F)|=10.810321693971, max |F^(-1)F-I|=9.734e-209\n  [PASS] [THEOREM] The radical entries have the sign pattern needed for cone and order statements\n         b-a=2.557423237285636, c=1.785994236888177; a<0, b>0, c>0, d>0, e<0\n  [PASS] [THEOREM] Nonnegative supplied first-sector coefficients are equivalent to the half-space test F^(-1)Z >= 0\n         Z=F a_vec with det(F)!=0, so componentwise a_vec>=0 iff componentwise F^(-1)Z>=0\n  [PASS] [THEOREM] The exact order witness Z_B-Z_A=(b-a)a_(1,0)+c a_(1,1) is nonnegative on the supplied positive cone\n         b-a=2.557423237285636, c=1.785994236888177\n  [PASS] [THEOREM] The exact local Wilson sample triple reconstructs uniquely but lies outside the supplied positive cone\n         a_loc=( 0.349606952458405, 0.093393849310838, -0.031909612770024 ); max |F a_loc-Z_loc|=1.435e-82\n  [PASS] [THEOREM] The local obstruction is sharper than the coarse order witness and requires a positive adjoint-channel correction\n         order gap=0.181857215938493, minimal adjoint-channel repair=0.031909612770024\n\nTHEOREM PASS=6 SUPPORT=3 FAIL=2\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T154422Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'PASS=6 SUPPORT=3 FAIL=2' vs cache 'PASS=6 SUPPORT=5 FAIL=0'"
+  ]
+ }
+}

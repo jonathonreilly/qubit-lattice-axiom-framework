@@ -1,0 +1,11 @@
+--- baseline.py
++++ bisector-swap.py
+@@ -71,7 +71,7 @@
+     qp = (Fraction(1), Fraction(0), Fraction(0))
+     rotations = proper_cubic_rotations()
+     check('orthogonal-menu', dot(q, qp) == 0 and distinct_four(q, qp), 'Four allowed points, not assumed positive support')
+-    swap = lambda v: (v[2], -v[1], v[0])
++    swap = lambda v: (v[0], -v[1], v[2])
+     check('bisector-swap', swap(q) == qp and swap(qp) == q, 'Internal rotation exchanges ordered records')
+     flip = lambda v: (-v[0], -v[1], v[2])
+     check('different-input', flip(q) == q and flip(qp) == neg(qp), 'This relates distinct inputs; no forced alpha=gamma')

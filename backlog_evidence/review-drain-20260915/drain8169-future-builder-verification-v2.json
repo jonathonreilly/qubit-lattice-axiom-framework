@@ -1,0 +1,31 @@
+{
+  "status": "SYNTAX AND READ-ONLY METADATA GUARDS VERIFIED; BUILDER NOT EXECUTED",
+  "builder": {
+    "path": "/private/tmp/review-drain-20260915/drain8169-build-staged-draft-v2.py",
+    "sha256": "fea6555363013d31dde34a6cd877d83494f8e48b9dc4785d6a5fc26895ddf912"
+  },
+  "capture_plan": {
+    "path": "/private/tmp/review-drain-20260915/drain8169-capture-plan-v2.json",
+    "sha256": "3d6b9eb2644e968f3d2c1b54d0b3388bf3e1cde9280d9577ceca79b21ab8fa2b"
+  },
+  "source_files_verified": 13,
+  "recovery_entries_verified": 8,
+  "actual_inputs": 3,
+  "helpers": [],
+  "registry_edits_needed": false,
+  "primary_runs": 0,
+  "mutation_runs": 0,
+  "staging": false,
+  "observed_slot_head": "ed129b572ea8364ed8d2792a0860b07ab94056a5",
+  "required_dispatch": "Advance owned slot to then-current origin/main preserving exact untracked files. Supply --expected-base <fresh SHA> --stage-authorized --version <unused vN> --confirmation /private/tmp/review-drain-20260915/drain8169-early-v2-review.json --confirmation-sha256 25687c1bc05b7cc03eca05d909184ad9d61f85403e1f841d42572049408cccb1",
+  "pending": {
+    "status": "REQUIRED AND PENDING; zero executed by author",
+    "targets": [
+      "lambda bounds and inversion",
+      "slot exchange/swap",
+      "raw and normalized overlap normalization",
+      "endpoint-event separator"
+    ],
+    "procedure": "Original reviewer/coordinator must specify and execute decisive final-source mutants in isolated copies after final source freeze, preserve each exact source/diff/output/error and expected rejection. No successful result is asserted. Original check8169 controls and old source/cache remain historical evidence, not replacement final-source mutation results."
+  }
+}

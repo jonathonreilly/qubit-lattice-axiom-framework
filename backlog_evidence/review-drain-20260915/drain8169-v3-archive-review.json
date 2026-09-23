@@ -1,0 +1,108 @@
+{
+  "reviewer_session": "/root/review_8169",
+  "assessment": "CONFIRMED: narrow storage-only v2-to-v3 repair preserves all original evidence and prior early scientific review. Not final source/landing PASS.",
+  "prepared_v3_sha256": "a16a32d955f77fbb804143e2cd202f84314142710d8ea3a87fb42f19b951fa99",
+  "anchors": {
+    "drain8169-author-prepared-v3.json": "a16a32d955f77fbb804143e2cd202f84314142710d8ea3a87fb42f19b951fa99",
+    "drain8169-prepared-v3-source-freeze.json": "78507b371937b810a2b9c70cc59bb21782ad0797ba007855069abea7a054a8e6",
+    "drain8169-archive-preservation-v3.json": "881458af8bc1d29fdc1e1cbc611e71d6c282939bc9824a057d2340a6896f162c",
+    "drain8169-author-v2-to-v3.diff": "51129f548c126008ac5bf0be2cbddc20e29e8910b476abc5e1fb211e95d3635f"
+  },
+  "freeze_file_count": 13,
+  "changed_paths": [
+    "docs/work_history/repo/review_feedback/pr8169-evidence/README.md",
+    "docs/work_history/repo/review_feedback/pr8169-evidence/archive-manifest.json",
+    "docs/work_history/repo/review_feedback/pr8169-evidence/kept/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16-719bfa0c25e7665f.txt",
+    "docs/work_history/repo/review_feedback/pr8169-evidence/kept/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16-719bfa0c25e7665f.txt.gz"
+  ],
+  "unchanged_scientific_paths": [
+    "docs/FRAME_ATTACHED_MENU_EXCHANGE_COVARIANT_PROBABILITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "docs/work_history/repo/review_feedback/pr8169-evidence/DEFERRED_CORRECTED_ENDPOINT_PROOF.md",
+    "scripts/frame_attached_menu_exchange_probabilities_2026_09_16.py"
+  ],
+  "recovery": [
+    {
+      "original_path": ".claude/science/physics-loops/frame-attached-four-point-weights-20260916/CLAIM_STATUS_CERTIFICATE.md",
+      "mode": "100644",
+      "git_blob": "2e1efea5ebfa174ee6ff2d0d73f989be2e5f1c27",
+      "raw_sha256": "5c8ca22ef22459780e7b2c8f20a522e307546a7b6a212f1e83a77809b9f44074",
+      "stored_path": "kept/CLAIM_STATUS_CERTIFICATE-2e1efea5ebfa174e.md",
+      "encoding": "identity",
+      "verified": true
+    },
+    {
+      "original_path": ".claude/science/physics-loops/frame-attached-four-point-weights-20260916/HANDOFF.md",
+      "mode": "100644",
+      "git_blob": "2588781386ad583a427de3b60579aea86c06f0ea",
+      "raw_sha256": "ff892d37f027e372a732af407a4912e3f2f01313f95c14c16e0b8e3640712e34",
+      "stored_path": "kept/HANDOFF-2588781386ad583a.md",
+      "encoding": "identity",
+      "verified": true
+    },
+    {
+      "original_path": ".claude/science/physics-loops/frame-attached-four-point-weights-20260916/OPPORTUNITY_QUEUE.md",
+      "mode": "100644",
+      "git_blob": "8e0fa176acb3672320135deef09c1cb869eb53d9",
+      "raw_sha256": "9ac9e684f62ff643e4a7519bbb5d6e942300644f1b3324937d1eb889cc1797f5",
+      "stored_path": "kept/OPPORTUNITY_QUEUE-8e0fa176acb36723.md",
+      "encoding": "identity",
+      "verified": true
+    },
+    {
+      "original_path": ".claude/science/physics-loops/frame-attached-four-point-weights-20260916/TRACE_GATE.md",
+      "mode": "100644",
+      "git_blob": "b16d8ada36906b74b6f28e0ec3307bcd0711b3b1",
+      "raw_sha256": "41d08bab8e18b31700a50b44e82bac2ddcd0f4ffe060b15cea1a963e9f08585d",
+      "stored_path": "kept/TRACE_GATE-b16d8ada36906b74.md",
+      "encoding": "identity",
+      "verified": true
+    },
+    {
+      "original_path": "docs/ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "mode": "100644",
+      "git_blob": "9744b717438183f6ebc4e40a0c5f868673977250",
+      "raw_sha256": "ec915e66d82cd8c8b01eb4e0b582f414301b47af234895c2ca4ce494a5828225",
+      "stored_path": "kept/ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16-9744b717438183f6.md",
+      "encoding": "identity",
+      "verified": true
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "mode": "100644",
+      "git_blob": "6a6622bf983c983605f7c1fd1e6a7d9986f4143e",
+      "raw_sha256": "01b0ed5a1f65ede1eefa99c96b78ede7a7bf130883eb8674ac6ef452fc4b0b08",
+      "stored_path": "kept/citation_graph_manifest-6a6622bf983c9836.json",
+      "encoding": "identity",
+      "verified": true
+    },
+    {
+      "original_path": "logs/runner-cache/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16.txt",
+      "mode": "100644",
+      "git_blob": "719bfa0c25e7665f0bd166e71fece9dd57b8502f",
+      "raw_sha256": "c7b1ff2af5d1335d5eed15e3bc5d007a10f85b04d9c5830c2f4d8d8e67fb7fff",
+      "stored_path": "kept/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16-719bfa0c25e7665f.txt.gz",
+      "encoding": "gzip",
+      "verified": true
+    },
+    {
+      "original_path": "scripts/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16.py",
+      "mode": "100644",
+      "git_blob": "4c34d2777f1fd27b78ead525a78a7165ca9c3b18",
+      "raw_sha256": "5379c584efe47c3787de95bffd6a7c54b5d784540f5b9b380217ad566268fbf1",
+      "stored_path": "kept/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16-4c34d2777f1fd27b.py",
+      "encoding": "identity",
+      "verified": true
+    }
+  ],
+  "gzip_verification": "mtime0, deterministic recompression equality, decoded exact original bytes including terminal blank lines, rawSHA and Gitblob verified; original100644 mode retained in manifest",
+  "recovery_readme": "Explicit relative manifest and gzip link resolve within snapshot; historical cache clearly noncurrent and corrected deferred proof separate from original.",
+  "prior_failure": "Original staged whitespace failure remains preserved; no historical trimming or report restamping.",
+  "checks_not_run": [
+    "primary",
+    "mutations",
+    "gate",
+    "staging"
+  ],
+  "prior_review": "drain8169-early-v2-review.json remains immutable and scientific conclusions apply unchanged to the3 identical scientific sources",
+  "remaining": "Execution/evidence, exact current-main interaction and original same-session final confirmation remain due."
+}

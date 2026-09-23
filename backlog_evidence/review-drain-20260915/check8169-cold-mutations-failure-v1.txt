@@ -1,0 +1,1 @@
+subprocess.SubprocessError: Exception occurred in preexec_fn. macOS RLIMIT_AS setup failed before baseline child execution; no scientific result. Original orchestration and generated baseline retained.

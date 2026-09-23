@@ -1,0 +1,11 @@
+--- baseline.py
++++ chain-separator.py
+@@ -109,7 +109,7 @@
+     r = (Fraction(4, 5), Fraction(0), Fraction(3, 5))
+     check('second-record-dependence', normalized(q, qp) != normalized(q, r), 'Moving atoms and t change the normalized law')
+     check('collinear-menu', len(set(four_point_support(q, q))) == 2, 'Original collinear menu control')
+-    check('chain-endpoint-event', all((abs(dot(q, scale(a * b, q))) == 1 for a, b in product((-1, 1), repeat=2))), 'Every one-record sign path is collinear, including singleton choices')
++    check('chain-endpoint-event', all((abs(dot(q, scale(a * b, qp))) == 1 for a, b in product((-1, 1), repeat=2))), 'Every one-record sign path is collinear, including singleton choices')
+     axes = tuple((scale(sign, e) for e in (q, qp, (Fraction(0), Fraction(1), Fraction(0))) for sign in (-1, 1)))
+     check('independent-endpoint-analogue', sum((abs(dot(l, r)) < 1 for l, r in product(axes, repeat=2))) == 24, 'Finite six-axis analogue:24/36; Haar probability1 is analytic, not this finite test')
+     failed = sum((not r['passed'] for r in results))

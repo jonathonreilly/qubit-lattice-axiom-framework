@@ -1,0 +1,48 @@
+[detached HEAD ea8346e523] Preserve independently reviewed source unit PR8168
+ Date: Tue Sep 22 23:01:26 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 32 files changed, 1418 insertions(+)
+ create mode 100644 docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md
+ create mode 100644 docs/work_history/review_loop/pr8168/README.md
+ create mode 100644 docs/work_history/review_loop/pr8168/manifest.json
+ create mode 100644 docs/work_history/review_loop/pr8168/original-001-8c38bad2d919.gz
+ create mode 100644 docs/work_history/review_loop/pr8168/original-002-df3ad9e05e3a.gz
+ create mode 100644 docs/work_history/review_loop/pr8168/original-003-e79c7288a553.gz
+ create mode 100644 docs/work_history/review_loop/pr8168/original-004-7fb6a617a8de.gz
+ create mode 100644 docs/work_history/review_loop/pr8168/original-005-bdfdff8010ca.gz
+ create mode 100644 docs/work_history/review_loop/pr8168/original-006-6cbc4d17ae46.gz
+ create mode 100644 docs/work_history/review_loop/pr8168/original-007-ec55087e3a71.gz
+ create mode 100644 docs/work_history/review_loop/pr8168/original-008-2ecda668d9b7.gz
+ create mode 100644 docs/work_history/review_loop/pr8168/original-009-513c57091061.gz
+ create mode 100644 docs/work_history/review_loop/pr8168/original-010-be96d04bf202.gz
+ create mode 100644 docs/work_history/review_loop/pr8168/original-011-f0f9e7e3816b.gz
+ create mode 100644 docs/work_history/review_loop/pr8168/original-012-cf484ac7313c.gz
+ create mode 100644 docs/work_history/review_loop/pr8168/original-013-1a9efb74a86b.gz
+ create mode 100644 docs/work_history/review_loop/pr8168/original-014-be723c5de131.gz
+ create mode 100644 docs/work_history/review_loop/pr8168/original-015-d37524ae96d7.gz
+ create mode 100644 docs/work_history/review_loop/pr8168/original-016-7c9d3f3b0e2f.gz
+ create mode 100644 docs/work_history/review_loop/pr8168/original-017-7feb20ec2e10.gz
+ create mode 100644 docs/work_history/review_loop/pr8168/original-018-26fc99386251.gz
+ create mode 100644 docs/work_history/review_loop/pr8168/original-019-3e6ef3f649c7.gz
+ create mode 100644 docs/work_history/review_loop/pr8168/original-020-40756a0c9783.gz
+ create mode 100644 docs/work_history/review_loop/pr8168/original-021-50c9f5270aa1.gz
+ create mode 100644 docs/work_history/review_loop/pr8168/original-022-0f232997cbaf.gz
+ create mode 100644 docs/work_history/review_loop/pr8168/original-023-58dac02adaba.gz
+ create mode 100644 docs/work_history/review_loop/pr8168/original-024-98d101672c35.gz
+ create mode 100644 docs/work_history/review_loop/pr8168/original-025-fa262348870c.gz
+ create mode 100644 docs/work_history/review_loop/pr8168/original-026-0e285551d502.gz
+ create mode 100644 docs/work_history/review_loop/pr8168/original-027-9c0100b33b9e.gz
+ create mode 100644 logs/runner-cache/admissibility_rule_three_dimensional_formation_law_ordered_phase_stability_noisy_level_automaton_2026_09_16.txt
+ create mode 100755 scripts/admissibility_rule_three_dimensional_formation_law_ordered_phase_stability_noisy_level_automaton_2026_09_16.py
+FROZEN ea8346e52369639495a3848ee02b04d1f539c04b sources 32 inputs 57 notes 1

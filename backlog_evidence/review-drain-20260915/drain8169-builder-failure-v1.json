@@ -1,0 +1,5 @@
+{
+  "status": "FAILED; preserve source/index state for diagnosis",
+  "error": "CalledProcessError(2, ['git', '-C', '/private/tmp/review-drain-20260915/author-draft-slot', 'diff', '--cached', '--check'])",
+  "traceback": "Traceback (most recent call last):\n  File \"/private/tmp/review-drain-20260915/drain8169-build-staged-draft-v2.py\", line 113, in <module>\n    try:run()\n        ^^^^^\n  File \"/private/tmp/review-drain-20260915/drain8169-build-staged-draft-v2.py\", line 99, in run\n    subprocess.run(['git','-C',str(W),'diff','--cached','--check'],check=True)\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py\", line 571, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command '['git', '-C', '/private/tmp/review-drain-20260915/author-draft-slot', 'diff', '--cached', '--check']' returned non-zero exit status 2.\n"
+}

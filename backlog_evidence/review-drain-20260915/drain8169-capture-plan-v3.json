@@ -1,0 +1,65 @@
+{
+  "status": "UNEXECUTED FUTURE PLAN",
+  "primary": {
+    "program": {
+      "path": "scripts/frame_attached_menu_exchange_probabilities_2026_09_16.py",
+      "sha256": "e0b2d51ed782e235975027756785e1fe6da14ce0cfcf8066a16ccdb8b673caf8"
+    },
+    "argv": [
+      "python3",
+      "scripts/frame_attached_menu_exchange_probabilities_2026_09_16.py"
+    ],
+    "cwd": "/private/tmp/review-drain-20260915/author-draft-slot",
+    "timeout_seconds": 120,
+    "process_tree_memory_limit_bytes": 268435456,
+    "stdout": "logs/runner-cache/frame_attached_menu_exchange_probabilities_2026_09_16.txt",
+    "json_output": "logs/runner-cache/frame_attached_menu_exchange_probabilities_2026_09_16.json",
+    "output_contract": "JSON checks list with label/passed/detail, passed/failed, source_sha256/input_sha256; stdout TOTAL PASS/FAIL counts actual checks; exit int(failed>0). Preserve exceptions and resource failures.",
+    "expected_checks_source_derived_not_executed": 46,
+    "identity_checks": 3,
+    "finite_checks": 43,
+    "scope": "Finite exact rational controls; not numerical Haar proof, physical spectrum, infinite lattice or formal negative certification",
+    "source_basis": "24 small 3x3 rational matrices, finite four-atom menus and36endpoint pairs, standard-library JSON/hash overhead; no numerical array package or scaling lattice",
+    "inputs": [
+      {
+        "path": "docs/FRAME_ATTACHED_MENU_EXCHANGE_COVARIANT_PROBABILITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "d9450ac04bcb887168291f0ccbd4fc101456aa180ab3c543effa38254d2a2e6b"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "sha256": "86d269fec1b464c008b8ba0c9f705e6cf9411c041bdf21b4f96c4ec78f0a047a"
+      }
+    ]
+  },
+  "review": {
+    "path": "/private/tmp/review-drain-20260915/drain8169-early-v2-review.json",
+    "sha256": "25687c1bc05b7cc03eca05d909184ad9d61f85403e1f841d42572049408cccb1"
+  },
+  "mutation_execution": {
+    "status": "REQUIRED AND PENDING; zero executed by author",
+    "targets": [
+      "lambda bounds and inversion",
+      "slot exchange/swap",
+      "raw and normalized overlap normalization",
+      "endpoint-event separator"
+    ],
+    "procedure": "Original reviewer/coordinator must specify and execute decisive final-source mutants in isolated copies after final source freeze, preserve each exact source/diff/output/error and expected rejection. No successful result is asserted. Original check8169 controls and old source/cache remain historical evidence, not replacement final-source mutation results."
+  },
+  "remaining": [
+    "Final-author cold read and bounded primary/cache on exact frozen final input bytes",
+    "Decisive mutation controls, especially lambda bounds/inversion, slot-exchange/swap, normalization and endpoint separator",
+    "Fresh current-main authority/input interaction check after slot advance",
+    "Final same-session affected confirmation and integrated mechanical gate; no final PASS now"
+  ],
+  "registry_edits": [],
+  "supersedes": "v1 wording clarified to actual JSON key checks; no execution",
+  "source_preparation": {
+    "path": "/private/tmp/review-drain-20260915/drain8169-author-prepared-v3.json",
+    "sha256": "a16a32d955f77fbb804143e2cd202f84314142710d8ea3a87fb42f19b951fa99"
+  },
+  "additional_precondition": "Original reviewer narrow archive confirmation must bind prepared-v3 before staging. Scientific primary and inputs unchanged; all mutation requirements remain pending."
+}

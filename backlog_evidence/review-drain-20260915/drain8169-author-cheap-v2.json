@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8169",
+  "tree": "f06b5e4d116883bf15f9473a25636197b59053f8",
+  "cache_checked": false,
+  "notes": [
+    {
+      "path": "docs/FRAME_ATTACHED_MENU_EXCHANGE_COVARIANT_PROBABILITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "frame_attached_menu_exchange_covariant_probabilities_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/frame_attached_menu_exchange_probabilities_2026_09_16.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "docs/work_history/repo/review_feedback/pr8169-evidence/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8769,
+      "misses": 4527
+    },
+    "packet_imports": {
+      "hits": 8759,
+      "misses": 4525
+    },
+    "declared_inputs": {
+      "hits": 8799,
+      "misses": 4680
+    }
+  },
+  "record_sha256": "2cdfe5df89b5e423dabc0492eb4446c03d708c85133b300cb44d105568aa65a2",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

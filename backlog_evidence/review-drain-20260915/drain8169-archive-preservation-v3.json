@@ -1,0 +1,39 @@
+{
+  "status": "STORAGE ONLY; AFFECTED REVIEW PENDING",
+  "base": "a9f71131f2772035c55fa4a851c0832a5cb82d00",
+  "owned_paths_unstaged": 13,
+  "original_payload": {
+    "original_path": "logs/runner-cache/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16.txt",
+    "original_mode": "100644",
+    "git_blob": "719bfa0c25e7665f0bd166e71fece9dd57b8502f",
+    "raw_sha256": "c7b1ff2af5d1335d5eed15e3bc5d007a10f85b04d9c5830c2f4d8d8e67fb7fff",
+    "encoding": "gzip",
+    "stored_path": "kept/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16-719bfa0c25e7665f.txt.gz",
+    "stored_sha256": "a380dc5cd8bbc627fed45a18e619a1dfbbbdc25438b9353e7964232b7721d598"
+  },
+  "raw_bytes_preserved": true,
+  "proof_runner_deferred_proof_unchanged": true,
+  "index_clean": true,
+  "failure_preserved": {
+    "path": "/private/tmp/review-drain-20260915/drain8169-builder-failure-v1.json",
+    "sha256": "752e9899ccb23f86882271f1855b5a60bc8e2f7902cad437c9d8b872e8b6343e"
+  },
+  "artifacts": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8169-author-prepared-v3.json",
+      "sha256": "a16a32d955f77fbb804143e2cd202f84314142710d8ea3a87fb42f19b951fa99"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8169-prepared-v3-source-freeze.json",
+      "sha256": "78507b371937b810a2b9c70cc59bb21782ad0797ba007855069abea7a054a8e6"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8169-author-full-mapping-v3.json",
+      "sha256": "886ee0e6b0618bd16856d74b2f4fd568a726caa782ac85a1f61078e376177fb6"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8169-author-v2-to-v3.diff",
+      "sha256": "51129f548c126008ac5bf0be2cbddc20e29e8910b476abc5e1fb211e95d3635f"
+    }
+  ]
+}

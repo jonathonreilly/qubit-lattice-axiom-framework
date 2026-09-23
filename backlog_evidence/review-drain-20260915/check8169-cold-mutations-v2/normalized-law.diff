@@ -1,0 +1,11 @@
+--- baseline.py
++++ normalized-law.py
+@@ -101,7 +101,7 @@
+             lam = (4 * alpha - 1) / (1 + t)
+             check('lambda-inverse:' + str((t, alpha)), linear_copy_mass(lam, t) == alpha and abs(lam) * (1 + t) <= 1, 'Function parameterization, not a fixed universal lambda')
+         raw = tuple(((1 + dot(s, q)) / 2 for s in four_point_support(q, r)))
+-        norm = tuple((v / 2 for v in raw))
++        norm = tuple((v / 3 for v in raw))
+         check('overlap-normalization:' + str(t), sum(raw) == 2 and sum(norm) == 1 and (min(norm) >= 0), 'Raw sum2, normalized ordered-reference law')
+     check('excluded-lambda', Fraction(1, 2) - linear_copy_mass(Fraction(1), Fraction(3, 5)) == Fraction(-3, 20), 'lambda=1 at t=3/5 violates nonnegativity')
+     normalized = lambda x, y: law(x, y, tuple(((1 + dot(s, x)) / 4 for s in four_point_support(x, y))))

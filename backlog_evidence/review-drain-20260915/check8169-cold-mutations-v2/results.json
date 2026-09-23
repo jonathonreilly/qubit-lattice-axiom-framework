@@ -1,0 +1,118 @@
+{
+  "source_sha256": "e0b2d51ed782e235975027756785e1fe6da14ce0cfcf8066a16ccdb8b673caf8",
+  "method": "AST extracted computational body, same finite assertions;3 file-input checks and JSON output side effects removed, all math unchanged before each single targeted mutation",
+  "timeout_each_seconds": 10,
+  "address_space_limit_bytes": null,
+  "memory_limit_note": "RLIMIT_AS unavailable on this macOS; no enforced memory cap claimed for scratch finite controls. Primary process-tree cap remains separate.",
+  "cases": [
+    {
+      "name": "baseline",
+      "sha256": "84b3597694f4ae84a9fee94a186bc8dc96fbe8ee958e3b68e3f8bd00b6484278",
+      "returncode": 0,
+      "elapsed": 0.05002212501130998,
+      "expected_failed_check": null,
+      "failures": [],
+      "observed_expected": true
+    },
+    {
+      "name": "lambda-bound",
+      "sha256": "73eaa95f8ba232d2cb01397ab14a3077b8d358ddd7cddb7e37c6aea6ef548552",
+      "returncode": 1,
+      "elapsed": 0.045779500040225685,
+      "expected_failed_check": "linear-bound:",
+      "failures": [
+        "FAIL: linear-bound:(Fraction(-3, 5), Fraction(5, 1)) Exact valid lambda(t) boundary and interior",
+        "FAIL: linear-bound:(Fraction(0, 1), Fraction(2, 1)) Exact valid lambda(t) boundary and interior",
+        "FAIL: linear-bound:(Fraction(3, 5), Fraction(5, 4)) Exact valid lambda(t) boundary and interior"
+      ],
+      "observed_expected": true
+    },
+    {
+      "name": "lambda-inversion",
+      "sha256": "36568c1e63f3b4f40400fb35359fffc1965824b7262cf4a7e8770fa15879d28b",
+      "returncode": 1,
+      "elapsed": 0.04010574996937066,
+      "expected_failed_check": "lambda-inverse:",
+      "failures": [
+        "FAIL: lambda-inverse:(Fraction(-3, 5), Fraction(0, 1)) Function parameterization, not a fixed universal lambda",
+        "FAIL: lambda-inverse:(Fraction(-3, 5), Fraction(1, 8)) Function parameterization, not a fixed universal lambda",
+        "FAIL: lambda-inverse:(Fraction(-3, 5), Fraction(1, 2)) Function parameterization, not a fixed universal lambda",
+        "FAIL: lambda-inverse:(Fraction(3, 5), Fraction(0, 1)) Function parameterization, not a fixed universal lambda",
+        "FAIL: lambda-inverse:(Fraction(3, 5), Fraction(1, 8)) Function parameterization, not a fixed universal lambda",
+        "FAIL: lambda-inverse:(Fraction(3, 5), Fraction(1, 2)) Function parameterization, not a fixed universal lambda"
+      ],
+      "observed_expected": true
+    },
+    {
+      "name": "slot-exchange",
+      "sha256": "8c20b3c9934488b69be60b2dc5bbef215c67a8d0abd7349b1dc1eb7e2edd9e85",
+      "returncode": 1,
+      "elapsed": 0.04292595898732543,
+      "expected_failed_check": "slot-exchange:",
+      "failures": [
+        "FAIL: slot-exchange:adjacent Proper cubic slot exchange exists in this occupancy stratum",
+        "FAIL: slot-exchange:opposite Proper cubic slot exchange exists in this occupancy stratum"
+      ],
+      "observed_expected": true
+    },
+    {
+      "name": "bisector-swap",
+      "sha256": "fe53dfeaec10a8eca67300370b62bb0754d1cd05a8629d4aaa8bd2df79c06edb",
+      "returncode": 1,
+      "elapsed": 0.17129408300388604,
+      "expected_failed_check": "bisector-swap",
+      "failures": [
+        "FAIL: bisector-swap Internal rotation exchanges ordered records"
+      ],
+      "observed_expected": true
+    },
+    {
+      "name": "raw-normalization",
+      "sha256": "ff5d91230808cbe1f3899d9c70ee8d4f50200926671310da0108178567c184ce",
+      "returncode": 1,
+      "elapsed": 0.08142391598084942,
+      "expected_failed_check": "overlap-normalization:",
+      "failures": [
+        "FAIL: overlap-normalization:-3/5 Raw sum2, normalized ordered-reference law",
+        "FAIL: overlap-normalization:0 Raw sum2, normalized ordered-reference law",
+        "FAIL: overlap-normalization:3/5 Raw sum2, normalized ordered-reference law"
+      ],
+      "observed_expected": true
+    },
+    {
+      "name": "normalized-law",
+      "sha256": "77b198a0f3f0a83298c2a2a397cc6f66aee3a79dc82e9da24cde0cc19dcbb177",
+      "returncode": 1,
+      "elapsed": 0.06470612500561401,
+      "expected_failed_check": "overlap-normalization:",
+      "failures": [
+        "FAIL: overlap-normalization:-3/5 Raw sum2, normalized ordered-reference law",
+        "FAIL: overlap-normalization:0 Raw sum2, normalized ordered-reference law",
+        "FAIL: overlap-normalization:3/5 Raw sum2, normalized ordered-reference law"
+      ],
+      "observed_expected": true
+    },
+    {
+      "name": "chain-separator",
+      "sha256": "7f03374ce427d409306a6e24305ace2fea3caa613f3997e820529f42afdc3fea",
+      "returncode": 1,
+      "elapsed": 0.04865974996937439,
+      "expected_failed_check": "chain-endpoint-event",
+      "failures": [
+        "FAIL: chain-endpoint-event Every one-record sign path is collinear, including singleton choices"
+      ],
+      "observed_expected": true
+    },
+    {
+      "name": "endpoint-threshold",
+      "sha256": "b43505918ffeed03c94cfa497360105301e0c8fc8dc025c77965283444876646",
+      "returncode": 1,
+      "elapsed": 0.0543598749791272,
+      "expected_failed_check": "independent-endpoint-analogue",
+      "failures": [
+        "FAIL: independent-endpoint-analogue Finite six-axis analogue:24/36; Haar probability1 is analytic, not this finite test"
+      ],
+      "observed_expected": true
+    }
+  ]
+}

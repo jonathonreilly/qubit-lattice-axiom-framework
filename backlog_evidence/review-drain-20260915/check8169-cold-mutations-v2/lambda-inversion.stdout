@@ -1,0 +1,49 @@
+PASS: orthogonal-menu Four allowed points, not assumed positive support
+PASS: bisector-swap Internal rotation exchanges ordered records
+PASS: different-input This relates distinct inputs; no forced alpha=gamma
+PASS: cubic-group Original full proper cubic group
+PASS: menu-covariance All 24 finite group controls; general SO(3) proof is analytic
+PASS: slot-exchange:adjacent Proper cubic slot exchange exists in this occupancy stratum
+PASS: slot-exchange:opposite Proper cubic slot exchange exists in this occupancy stratum
+PASS: ordered-unequal-covariance Unequal masses retain internal covariance
+PASS: ordered-exchange-distinction Exchange is an additional hypothesis
+PASS: exchange-family Original four pairs, including zero weights
+PASS: invalid-family Original normalization countercontrol
+PASS: support-not-menu Support counts use nonzero masses
+PASS: singleton-one-record delta_q is a normalized covariant singleton; covariance also follows from pushforward
+PASS: gibbs-B2 B=2,t=0: alpha=1/3,gamma=1/6
+PASS: gibbs-B1 B=1 gives uniform masses
+PASS: original-linear-fixtures Original lambda values at t=0 retained
+PASS: linear-bound:(Fraction(-3, 5), Fraction(0, 1)) Exact valid lambda(t) boundary and interior
+PASS: linear-bound:(Fraction(-3, 5), Fraction(5, 2)) Exact valid lambda(t) boundary and interior
+PASS: linear-bound:(Fraction(-3, 5), Fraction(-5, 2)) Exact valid lambda(t) boundary and interior
+FAIL: lambda-inverse:(Fraction(-3, 5), Fraction(0, 1)) Function parameterization, not a fixed universal lambda
+FAIL: lambda-inverse:(Fraction(-3, 5), Fraction(1, 8)) Function parameterization, not a fixed universal lambda
+FAIL: lambda-inverse:(Fraction(-3, 5), Fraction(1, 2)) Function parameterization, not a fixed universal lambda
+PASS: overlap-normalization:-3/5 Raw sum2, normalized ordered-reference law
+PASS: linear-bound:(Fraction(0, 1), Fraction(0, 1)) Exact valid lambda(t) boundary and interior
+PASS: linear-bound:(Fraction(0, 1), Fraction(1, 1)) Exact valid lambda(t) boundary and interior
+PASS: linear-bound:(Fraction(0, 1), Fraction(-1, 1)) Exact valid lambda(t) boundary and interior
+PASS: lambda-inverse:(Fraction(0, 1), Fraction(0, 1)) Function parameterization, not a fixed universal lambda
+PASS: lambda-inverse:(Fraction(0, 1), Fraction(1, 8)) Function parameterization, not a fixed universal lambda
+PASS: lambda-inverse:(Fraction(0, 1), Fraction(1, 2)) Function parameterization, not a fixed universal lambda
+PASS: overlap-normalization:0 Raw sum2, normalized ordered-reference law
+PASS: linear-bound:(Fraction(3, 5), Fraction(0, 1)) Exact valid lambda(t) boundary and interior
+PASS: linear-bound:(Fraction(3, 5), Fraction(5, 8)) Exact valid lambda(t) boundary and interior
+PASS: linear-bound:(Fraction(3, 5), Fraction(-5, 8)) Exact valid lambda(t) boundary and interior
+FAIL: lambda-inverse:(Fraction(3, 5), Fraction(0, 1)) Function parameterization, not a fixed universal lambda
+FAIL: lambda-inverse:(Fraction(3, 5), Fraction(1, 8)) Function parameterization, not a fixed universal lambda
+FAIL: lambda-inverse:(Fraction(3, 5), Fraction(1, 2)) Function parameterization, not a fixed universal lambda
+PASS: overlap-normalization:3/5 Raw sum2, normalized ordered-reference law
+PASS: excluded-lambda lambda=1 at t=3/5 violates nonnegativity
+PASS: normalized-exchange Exchange failure, not blanket framework variation failure
+PASS: second-record-dependence Moving atoms and t change the normalized law
+PASS: collinear-menu Original collinear menu control
+PASS: chain-endpoint-event Every one-record sign path is collinear, including singleton choices
+PASS: independent-endpoint-analogue Finite six-axis analogue:24/36; Haar probability1 is analytic, not this finite test
+TOTAL: PASS=37 FAIL=6
+per_element: exact menu atoms, scalar probabilities, support and parameter-bound checks.
+per_site: one-record singleton/pair cases and both adjacent/opposite occupied-slot strata.
+per_mode: checked and not executed — no physical spectrum or dynamical modes are defined.
+per_block: 24 cubic rotations, rational parameter fixtures, four chain sign paths and 36 six-axis endpoint pairs.
+lattice_wide: checked and not executed — Haar measure and general process statements require analytic proofs; no infinite lattice is simulated.

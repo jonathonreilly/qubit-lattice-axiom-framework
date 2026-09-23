@@ -1,0 +1,11 @@
+--- baseline.py
++++ lambda-bound.py
+@@ -94,7 +94,7 @@
+     check('original-linear-fixtures', [linear_copy_mass(l, Fraction(0)) for l in (Fraction(0), Fraction(1), Fraction(-1), Fraction(1, 2))] == [Fraction(1, 4), Fraction(1, 2), Fraction(0), Fraction(3, 8)], 'Original lambda values at t=0 retained')
+     for t in (Fraction(-3, 5), Fraction(0), Fraction(3, 5)):
+         r = (Fraction(4, 5), Fraction(0), t) if t else qp
+-        for lam in (Fraction(0), 1 / (1 + t), -1 / (1 + t)):
++        for lam in (Fraction(0), 2 / (1 + t), -1 / (1 + t)):
+             vals = [(1 + lam * dot(s, add(q, r))) / 4 for s in four_point_support(q, r)]
+             check('linear-bound:' + str((t, lam)), sum(vals) == 1 and min(vals) >= 0, 'Exact valid lambda(t) boundary and interior')
+         for alpha in (Fraction(0), Fraction(1, 8), Fraction(1, 2)):

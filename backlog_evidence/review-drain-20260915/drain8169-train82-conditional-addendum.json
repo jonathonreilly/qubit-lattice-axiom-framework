@@ -1,0 +1,292 @@
+{
+  "reviewer_session": "/root/review_8169",
+  "assessment": "CONDITIONAL MAIN-INTERACTION CLEARANCE ONLY; inactive until exact landing activation checks",
+  "reviewed_candidate_commit": "ea8346e52369639495a3848ee02b04d1f539c04b",
+  "reviewed_candidate_tree": "35792654d51bbda4db1ec5c93fc7028adee39545",
+  "candidate_base": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+  "candidate_delta_paths": [
+    "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "docs/work_history/review_loop/pr8168/README.md",
+    "docs/work_history/review_loop/pr8168/manifest.json",
+    "docs/work_history/review_loop/pr8168/original-001-8c38bad2d919.gz",
+    "docs/work_history/review_loop/pr8168/original-002-df3ad9e05e3a.gz",
+    "docs/work_history/review_loop/pr8168/original-003-e79c7288a553.gz",
+    "docs/work_history/review_loop/pr8168/original-004-7fb6a617a8de.gz",
+    "docs/work_history/review_loop/pr8168/original-005-bdfdff8010ca.gz",
+    "docs/work_history/review_loop/pr8168/original-006-6cbc4d17ae46.gz",
+    "docs/work_history/review_loop/pr8168/original-007-ec55087e3a71.gz",
+    "docs/work_history/review_loop/pr8168/original-008-2ecda668d9b7.gz",
+    "docs/work_history/review_loop/pr8168/original-009-513c57091061.gz",
+    "docs/work_history/review_loop/pr8168/original-010-be96d04bf202.gz",
+    "docs/work_history/review_loop/pr8168/original-011-f0f9e7e3816b.gz",
+    "docs/work_history/review_loop/pr8168/original-012-cf484ac7313c.gz",
+    "docs/work_history/review_loop/pr8168/original-013-1a9efb74a86b.gz",
+    "docs/work_history/review_loop/pr8168/original-014-be723c5de131.gz",
+    "docs/work_history/review_loop/pr8168/original-015-d37524ae96d7.gz",
+    "docs/work_history/review_loop/pr8168/original-016-7c9d3f3b0e2f.gz",
+    "docs/work_history/review_loop/pr8168/original-017-7feb20ec2e10.gz",
+    "docs/work_history/review_loop/pr8168/original-018-26fc99386251.gz",
+    "docs/work_history/review_loop/pr8168/original-019-3e6ef3f649c7.gz",
+    "docs/work_history/review_loop/pr8168/original-020-40756a0c9783.gz",
+    "docs/work_history/review_loop/pr8168/original-021-50c9f5270aa1.gz",
+    "docs/work_history/review_loop/pr8168/original-022-0f232997cbaf.gz",
+    "docs/work_history/review_loop/pr8168/original-023-58dac02adaba.gz",
+    "docs/work_history/review_loop/pr8168/original-024-98d101672c35.gz",
+    "docs/work_history/review_loop/pr8168/original-025-fa262348870c.gz",
+    "docs/work_history/review_loop/pr8168/original-026-0e285551d502.gz",
+    "docs/work_history/review_loop/pr8168/original-027-9c0100b33b9e.gz",
+    "logs/runner-cache/admissibility_rule_three_dimensional_formation_law_ordered_phase_stability_noisy_level_automaton_2026_09_16.txt",
+    "scripts/admissibility_rule_three_dimensional_formation_law_ordered_phase_stability_noisy_level_automaton_2026_09_16.py"
+  ],
+  "candidate_record_sha256": "99ac6bfc61624b175f93ce85847617c11dfb6fd9252d0362aa5e1c099e8a9ef0",
+  "original_final_report": {
+    "path": "/private/tmp/review-drain-20260915/drain8169-final-review.json",
+    "sha256": "5bae2ba7985f397403b0635b200bb698fb0b72faaa5b83472b546dcc85533d50",
+    "base": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "tree": "859c453e942131b41daf8ccf5a4a286f14a4cc76"
+  },
+  "new_science_scope": {
+    "path": "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "sha256": "01b4ca057540b1f84b261f5b7ce4328540b7efa9ca845a95c14e9952a75006e2",
+    "interaction": "PR8168 concerns a supplied fixed six-axis positive product rule, three recorded predecessors and independent synchronous level updates from a constant plane, with noisy-majority stability and invariant level laws. PR8169 concerns a frame-attached four-point sphere menu with independent continuous internal rotations and two occupied exchangeable slots. No fixed six-axis menu, coupling, formation order or independent update mechanism is derived/adopted as a framework premise by the candidate. Consequently it neither supplies nor contradicts PR8169 menu weights or the deferred path endpoint separator. Level-ordered six-axis process hypotheses differ from finite antipodal one-neighbor kernels with Haar-empty roots.",
+    "dependencies": "Only shared minimal_axioms plus PR8168 product-rule/level-automaton parents; no PR8169 note/runner/helper or covariance-parent dependency is added. No authority registry or extraction/tooling bytes change in this32-path candidate."
+  },
+  "verified_existing_bound_inputs": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71"
+    },
+    {
+      "path": "docs/POSSIBILITY_COVARIANCE_SOLDERED_VS_UNSOLDERED_CL30_INVARIANT_RULES_AND_HAAR_FAIR_COIN_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "sha256": "86d269fec1b464c008b8ba0c9f705e6cf9411c041bdf21b4f96c4ec78f0a047a",
+      "blob": "eb9f897127d2db9b2f3226abd1e93311188fdcee"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "blob": "5acb4643882438f8dd16baf9694e6fa2d33d1dc6"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "blob": "a74392f6939b2e51109756c37d6d5d59bb54c5a4"
+    },
+    {
+      "path": "docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "750bdd27065ef957228c7316996d6a9cfcb5af19a5407309e532e9c1edc6fce0",
+      "blob": "282cc8cb15afa2b18913598321562411437d98cc"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "blob": "0075998454899efb1b83e71daea5bc60d3499d49"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/PREFLIGHT.md",
+      "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb",
+      "blob": "220f819c425cc57c1720088e76e2c1b3ee08b9e8"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+      "blob": "d2f92d6e168bfb77e1d88087724683d85069ddc8"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "blob": "da1bc02c3d9d3ba6b667139762ffa8d66efc73b1"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md",
+      "sha256": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4",
+      "blob": "ed33c5e9a77be23ebbfeeb7881ae890b89e7916f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "sha256": "bbdb794f3925b1a473db22a94eeaa4d0b6be5e302f6dc1463c27306738b731b3",
+      "blob": "9d8bab3d36e69334528aec9354a17b2caf14135c"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/LANDING.md",
+      "sha256": "827032765af31a2f4ef64b3e595173c7e81e2f56b713793aba336228411a4624",
+      "blob": "bc875707331374b9f95e420b6f247a7a44a56255"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+      "sha256": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096",
+      "blob": "c8763a3376f152dc95fb1021cf3038e870b9cf73"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "blob": "1ec31f6e817cb259df1bdafa4a358b12e0ac15b8"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "sha256": "cfcb43f40791d8e8772e86fd2b53fb11008c5075e416f8cf4eb84bd18ab71773",
+      "blob": "54066b6a5671a2ec1bb2eec10825254ae3f0c9f9"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SALVAGE.md",
+      "sha256": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee",
+      "blob": "f0e3641abdda250c1d45f7489452f931d4f5da08"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7",
+      "blob": "0fe53898c0383aa5acdc89c13f92a79e7653aa7f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "sha256": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d",
+      "blob": "ddfa5ef7e87f32babf6dcb948c290d1901587c53"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+      "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc",
+      "blob": "cf3afc4b7e5cb9b562807f7a4c5740ea1e3c5209"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py",
+      "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494",
+      "blob": "0aa2627f2c9ea8a64475d29b6130fcdedf26e06d"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa"
+    },
+    {
+      "path": "docs/audit/data/doc_authority_registry.json",
+      "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173",
+      "blob": "faf95ad794f7714b88307f27e047c6c5aa95af0e"
+    },
+    {
+      "path": "docs/audit/scripts/build_citation_graph.py",
+      "sha256": "b2117b565aa795e67cd62d0f49f89cf2ed83a14d9d3447c1600ee0bf9c0ba8c5",
+      "blob": "890397f3318e0624429c4fe524577b383411e576"
+    },
+    {
+      "path": "docs/audit/scripts/ledger_io.py",
+      "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+      "blob": "27093e96a9934c5e7ae65b381a56a80b9f7b2039"
+    },
+    {
+      "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+      "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+      "blob": "6adf1c3a64e9faf4715afe965aa36c2c25a12f80"
+    },
+    {
+      "path": "scripts/audit_packet_script_deps.py",
+      "sha256": "38210e23dbe9d703552c0381a3719b2a9a1551004028e0d64714da1bee3ddd8d",
+      "blob": "9671f636da64c7bc22114eb88fdac8654e62b108"
+    },
+    {
+      "path": "scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "blob": "4c92f04ee2b1b36d29b0db5b2f77583634144159"
+    }
+  ],
+  "unit_owned_bound_inputs": [
+    {
+      "path": "docs/FRAME_ATTACHED_MENU_EXCHANGE_COVARIANT_PROBABILITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "expected_sha256": "d9450ac04bcb887168291f0ccbd4fc101456aa180ab3c543effa38254d2a2e6b",
+      "candidate": "absent; final reviewed source preserved separately"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/DEFERRED_CORRECTED_ENDPOINT_PROOF.md",
+      "expected_sha256": "0e117aa234fb3902c377601e753fe8aa105f263f4adab3b4fbcdd3936ee6d24c",
+      "candidate": "absent; final reviewed source preserved separately"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/README.md",
+      "expected_sha256": "310f19e24db6327f4856a34ec27722ffb4389f20f4b3f74e981b4a5bfc51c29e",
+      "candidate": "absent; final reviewed source preserved separately"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/archive-manifest.json",
+      "expected_sha256": "6c41c1c597492815b68b2f85191d231deb4ee7523f9270c385bf074996db2b32",
+      "candidate": "absent; final reviewed source preserved separately"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/kept/ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16-9744b717438183f6.md",
+      "expected_sha256": "ec915e66d82cd8c8b01eb4e0b582f414301b47af234895c2ca4ce494a5828225",
+      "candidate": "absent; final reviewed source preserved separately"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/kept/CLAIM_STATUS_CERTIFICATE-2e1efea5ebfa174e.md",
+      "expected_sha256": "5c8ca22ef22459780e7b2c8f20a522e307546a7b6a212f1e83a77809b9f44074",
+      "candidate": "absent; final reviewed source preserved separately"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/kept/HANDOFF-2588781386ad583a.md",
+      "expected_sha256": "ff892d37f027e372a732af407a4912e3f2f01313f95c14c16e0b8e3640712e34",
+      "candidate": "absent; final reviewed source preserved separately"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/kept/OPPORTUNITY_QUEUE-8e0fa176acb36723.md",
+      "expected_sha256": "9ac9e684f62ff643e4a7519bbb5d6e942300644f1b3324937d1eb889cc1797f5",
+      "candidate": "absent; final reviewed source preserved separately"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/kept/TRACE_GATE-b16d8ada36906b74.md",
+      "expected_sha256": "41d08bab8e18b31700a50b44e82bac2ddcd0f4ffe060b15cea1a963e9f08585d",
+      "candidate": "absent; final reviewed source preserved separately"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/kept/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16-4c34d2777f1fd27b.py",
+      "expected_sha256": "5379c584efe47c3787de95bffd6a7c54b5d784540f5b9b380217ad566268fbf1",
+      "candidate": "absent; final reviewed source preserved separately"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/kept/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16-719bfa0c25e7665f.txt.gz",
+      "expected_sha256": "a380dc5cd8bbc627fed45a18e619a1dfbbbdc25438b9353e7964232b7721d598",
+      "candidate": "absent; final reviewed source preserved separately"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8169-evidence/kept/citation_graph_manifest-6a6622bf983c9836.json",
+      "expected_sha256": "01b0ed5a1f65ede1eefa99c96b78ede7a7bf130883eb8674ac6ef452fc4b0b08",
+      "candidate": "absent; final reviewed source preserved separately"
+    },
+    {
+      "path": "scripts/frame_attached_menu_exchange_probabilities_2026_09_16.py",
+      "expected_sha256": "e0b2d51ed782e235975027756785e1fe6da14ce0cfcf8066a16ccdb8b673caf8",
+      "candidate": "absent; final reviewed source preserved separately"
+    }
+  ],
+  "source_hashes": {
+    "docs/FRAME_ATTACHED_MENU_EXCHANGE_COVARIANT_PROBABILITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md": "d9450ac04bcb887168291f0ccbd4fc101456aa180ab3c543effa38254d2a2e6b",
+    "docs/work_history/repo/review_feedback/pr8169-evidence/DEFERRED_CORRECTED_ENDPOINT_PROOF.md": "0e117aa234fb3902c377601e753fe8aa105f263f4adab3b4fbcdd3936ee6d24c",
+    "docs/work_history/repo/review_feedback/pr8169-evidence/README.md": "310f19e24db6327f4856a34ec27722ffb4389f20f4b3f74e981b4a5bfc51c29e",
+    "docs/work_history/repo/review_feedback/pr8169-evidence/archive-manifest.json": "6c41c1c597492815b68b2f85191d231deb4ee7523f9270c385bf074996db2b32",
+    "docs/work_history/repo/review_feedback/pr8169-evidence/kept/ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16-9744b717438183f6.md": "ec915e66d82cd8c8b01eb4e0b582f414301b47af234895c2ca4ce494a5828225",
+    "docs/work_history/repo/review_feedback/pr8169-evidence/kept/CLAIM_STATUS_CERTIFICATE-2e1efea5ebfa174e.md": "5c8ca22ef22459780e7b2c8f20a522e307546a7b6a212f1e83a77809b9f44074",
+    "docs/work_history/repo/review_feedback/pr8169-evidence/kept/HANDOFF-2588781386ad583a.md": "ff892d37f027e372a732af407a4912e3f2f01313f95c14c16e0b8e3640712e34",
+    "docs/work_history/repo/review_feedback/pr8169-evidence/kept/OPPORTUNITY_QUEUE-8e0fa176acb36723.md": "9ac9e684f62ff643e4a7519bbb5d6e942300644f1b3324937d1eb889cc1797f5",
+    "docs/work_history/repo/review_feedback/pr8169-evidence/kept/TRACE_GATE-b16d8ada36906b74.md": "41d08bab8e18b31700a50b44e82bac2ddcd0f4ffe060b15cea1a963e9f08585d",
+    "docs/work_history/repo/review_feedback/pr8169-evidence/kept/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16-4c34d2777f1fd27b.py": "5379c584efe47c3787de95bffd6a7c54b5d784540f5b9b380217ad566268fbf1",
+    "docs/work_history/repo/review_feedback/pr8169-evidence/kept/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16-719bfa0c25e7665f.txt.gz": "a380dc5cd8bbc627fed45a18e619a1dfbbbdc25438b9353e7964232b7721d598",
+    "docs/work_history/repo/review_feedback/pr8169-evidence/kept/citation_graph_manifest-6a6622bf983c9836.json": "01b0ed5a1f65ede1eefa99c96b78ede7a7bf130883eb8674ac6ef452fc4b0b08",
+    "logs/runner-cache/frame_attached_menu_exchange_probabilities_2026_09_16.json": "0bba5cc0fe476a8e51a3088b2af2ee22a444bb0af843f7b7487ab5706dda9423",
+    "logs/runner-cache/frame_attached_menu_exchange_probabilities_2026_09_16.txt": "012086acb670c19681d8e8a27108bb1b183e76f3d04145e189a4692150d409d7",
+    "scripts/frame_attached_menu_exchange_probabilities_2026_09_16.py": "e0b2d51ed782e235975027756785e1fe6da14ce0cfcf8066a16ccdb8b673caf8"
+  },
+  "activation_conditions": [
+    "Root verifies landed source equals exact reviewed ea8346e... candidate for all32 source paths and every other base path.",
+    "Any extra landing cleanup must be solely docs/audit/data/citation_graph_manifest.json; this path is not a PR8169 bound premise/input or runtime file. No other source/tooling/authority change is covered.",
+    "All15 PR8169 reviewed source/evidence hashes must remain exact; all existing bound input/premise/tooling hashes listed here must remain exact at activated main.",
+    "Original PR8169 head must remain7e268bd96edda8819250318a3cbdaa1b20e90f35 and all unchanged-head/combined landing gates remain in force.",
+    "Root records actual landing/activation identity; this addendum does not assert the candidate is already main."
+  ],
+  "conclusion": "No affected scientific premise or semantic interaction reopens if activation conditions hold. Original final source/evidence verdict and capture retain their original identities; do not recapture or restamp. Deferred negative certification/branch-retention obligation unchanged.",
+  "primary_runs": 0,
+  "gates": 0,
+  "source_or_index_edits": 0,
+  "full_review_of_PR8168": "not performed; bounded scope/dependency interaction review only"
+}

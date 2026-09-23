@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_quark_route2_nonseparable_quadratic_equivariant_primitive_no_go_2026_06_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_quark_route2_nonseparable_quadratic_equivariant_primitive_no_go_2026_06_21.py",
+ "seed": 42330,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "08fdf456",
+ "started_utc": "20260923T054530Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=12 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ece8c01b7551eb745fe2dc3b594d3f610919a6202e71ae22e7199759314319dd",
+ "stdout_tail": "2, 2, 1) in Sym^2(E (+) T1), so the E-output and T1-output channels are counted independently and it is their combined dimension 3 that leaves lambda unselected.\nper_block: the symmetric square is broken into its constituent blocks and the dimensions are made to balance -- Sym^2(E) at dimension 3, E tensor T1 at 6, Sym^2(T1) at 6 and the total Sym^2(E (+) T1) at 15, of which 9 are readout-relevant and the remaining 6 are non-readout T2-type; every one of those multiplicities is computed here rather than assumed.\nlattice_wide: executed, and certified explicitly as a finite statement -- P_A1 is a true average over all 48 group elements acting on the whole 6-arm star, so the decomposition A1 (+) E (+) T1 with ranks summing to 6 is a claim about that entire finite star at once; no larger lattice, no volume sequence and no thermodynamic limit is taken anywhere, so the no-go holds for this one finite star and is not asymptotic.\n\n========================================================================================\nPASS=12 FAIL=0\n\nVERDICT: no-go for the pure O_h nonseparable quadratic primitive route.\nO_h allows quadratic maps Sym^2(E (+) T1) -> E (+) T1, including a genuinely\nmixed E tensor T1 -> T1 channel, but the map is not unique: there are two\nindependent E-output reduced coefficients and one T-output coefficient. The\nendpoint lambda=9/4 is therefore not selected by the representation content;\nit still requires an additional coefficient-selection or normalization primitive.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T054530Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+LOCAL CONJUGATE RESERVOIR / SOURCE-FIELD LEDGER REPAIR
+FAIL the conjugate-reservoir note exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/LOCAL_CONJUGATE_RESERVOIR_SOURCE_FIELD_LEDGER_REPAIR_NOTE_2026-07-17.md
+
+LOCAL FULL-M2 CONJUGATE RESERVOIR
+PASS the seven-M2 exchange is unitary, Hermitian-generated, and conserves reservoir plus field excitation :: {'support_M2': 7, 'unitarity_residual': 4.004469278125907e-16, 'excitation_commutator': 0.0}
+PASS the prepared total-Q=1 sector is invariant without any global mediator-occupancy query :: {'Q1_dimension': 7, 'leakage': 0.0}
+PASS the onsite source-plus-field ledger is an exact operator identity with signed emission and absorption directions :: {'operator_ledger_residual': 3.4166566809407604e-16, 'minimum_transfer_eigenvalue': -0.35482279539047895, 'maximum_transfer_eigenvalue': 0.3548227953904791}
+PASS the same forward gate consumes reservoir excitation on emission and restores it on scalar absorption :: {'angle': 0.3627245233399082, 'emitted_field_weight': 0.12589921612871377, 'absorbed_reservoir_weight': 0.1258992161287138}
+PASS the supplied full-M2 field-coin extension is unitary and preserves field excitation number :: 
+PASS the physical reservoir-field gate commutes with all 24 proper-cubic frames :: 0.0
+
+PHYSICAL MATTER CONTROL / SUPPORT / LEAKAGE
+PASS m N_x times the reservoir-field exchange has bounded physical-M2 support and zero code leakage through held-out L=6 :: [{'L': 3, 'held_out': False, 'matter_number_union_M2': 18, 'maximum_B_weight': 5, 'reservoir_plus_field_M2': 7, 'joint_vertex_union_M2': 25, 'maximum_expanded_term_weight': 12, 'check_or_Wilson_leakage': 0, 'B_noncommutations': 0}, {'L': 4, 'held_out': False, 'matter_number_union_M2': 18, 'maximum_B_weight': 5, 'reservoir_plus_field_M2': 7, 'joint_vertex_union_M2': 25, 'maximum_expanded_term_weight': 12, 'check_or_Wilson_leakage': 0, 'B_noncommutations': 0}, {'L': 5, 'held_out': False, 'matter_number_union_M2': 18, 'maximum_B_weight': 5, 'reservoir_plus_field_M2': 7, 'joint_vertex_union_M2': 25, 'maximum_expanded_term_weight': 12, 'check_or_Wilson_leakage': 0, 'B_noncommutations': 0}, {'L': 6, 'held_out': True, 'matter_number_union_M2': 18, 'maximum_B_weight': 5, 'reservoir_plus_field_M2': 7, 'joint_vertex_union_M2': 25, 'maximum_expanded_term_weight': 12, 'check_or_Wilson_leakage': 0, 'B_noncommutations': 0}]
+PASS the mapped physical mass control passes all 648 proper-frame and translation tests :: {'tests': 648, 'failures': []}
+
+MASS / CONTACT / DELETION
+PASS the additive m N_x control commutes with the actual onsite matter coin/contact and keeps W_g identity for N at most one :: {'coin_commutator': 0.0, 'contact_commutator': 0.0}
+PASS coupling deletion is exact and leaves the Cycle-219 one-particle mass/contact fixture :: {'deletion_residual': 0.0, 'analytic_mass': 0.4534056541748852, 'dispersion_mass': 0.4534056690336209}
+PASS the reservoir coupling imports the Cycle-219 c-inverse-squared phase-to-mass normalization :: {'raw_phase': 0.15113521805829502, 'mass': 0.4534056541748852, 'ratio': 0.3333333333333332}
+
+OPERATOR-LEVEL SOURCE + FIELD CONTINUITY
+PASS the fixed occupied-control reservoir-field coin-vertex-stream update has an exact operator-level continuity ledger :: {'dimension': 189, 'maximum_divergence_residual': 1.5167952278789587e-15, 'maximum_vertex_source_residual': 3.4279119115275734e-16}
+PASS the fixed-control reservoir-field one-excitation update is unitary and its inverse restores every amplitude :: 7.263701286747599e-15
+PASS the fixed-control reservoir-field update is translation invariant and covariant in all 24 proper-cubic frames :: {'maximum_frame_residual': np.float64(2.280353229183044e-15), 'maximum_translation_residual': np.float64(0.0)}
+
+COMPOSITION / SPECTATOR / SCHEDULE
+PASS two independent local reservoir vertices commute and their excitation transfers add exactly :: {'commutator': 0.0, 'transfer_additivity_residual': 2.6622212897024595e-16}
+PASS a normalized spectator factor does not alter the local source-field operator ledger :: 
+PASS the update schedule and unimplemented carried-source extension are explicit :: {'schedule': 'candidate full schedule: matter/field onsite coins; local matter-controlled reservoir-field exchange; matter and direction-field streams; arrival-cell contact; moving matter is not executed in the reservoir-field matrix control', 'remaining': 'the reservoir is attached to a lattice cell; transporting it with a moving matter body needs a new bounded carrier/compiler'}
+
+LAWFUL DOMAIN / SUPPLIED STRUCTURE
+PASS the declared domain rejects aliased and mistyped fixtures :: {'rejected': 4}
+PASS the supplied structure inventory is explicit :: {'supplied': ('Cycle-269 sectorwise mapped matter code and B representatives', 'beta=-0.3 and m=-3 tan(beta/2)', 'one site-local reservoir M2 per coarse cell', 'six physical directional field M2 per coarse cell', 'full field-coin extension outside the zero/one sector', 'uniform scalar creation convention', 'coupling 0.8 and coin-vertex-stream-contact schedule', 'prepared total reservoir-plus-field excitation sector'), 'derived': ('full local physical-M2 exchange gate', 'operator-level source-field balance', 'zero/one mediator invariance without occupancy queries', 'bounded support, zero leakage, covariance, deletion, and composition'), 'not_earned': ('reservoir transport with moving matter', 'energy/stress/gravity-source interpretation', 'field work or matter recoil', 'clock normalization or metric response', 'prepared full-Fock matter encoder')}
+
+SUMMARY PASS 19 FAIL 1
+RESULT LOCAL_CONJUGATE_RESERVOIR_LEDGER_REPAIR_OPEN

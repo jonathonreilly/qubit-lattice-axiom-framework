@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_quark_route2_nonlinear_log_curvature_readout_2026_06_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_quark_route2_nonlinear_log_curvature_readout_2026_06_21.py",
+ "seed": 42330,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "08fdf456",
+ "started_utc": "20260923T054530Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "981be5ff73119fd736fcc79eaae68b042da061e66be6c7aabb990c2d26a371d0",
+ "stdout_tail": "  q_E=15/8\nPASS: log-barrier curvature returns rho_E=21/4\n       rho_E=21/4\nPASS: log-barrier curvature returns c_TE=-8/9\n       c_TE=-8/9\n\n----------------------------------------------------------------------------------------\n3. Current-bank firewall\n----------------------------------------------------------------------------------------\nPASS: Schur note says quadratic invariant functionals do not force the bridge\nPASS: checked current bank does not name a log-barrier primitive\nPASS: checked current bank does not derive the second-dual law\nPASS: conditional log-curvature primitive would be sufficient but is not supplied\n\n----------------------------------------------------------------------------------------\n4. Boundary\n----------------------------------------------------------------------------------------\nPASS: no observed endpoint value is used as proof input\nPASS: this is conditional support, not current-surface closure\nPASS: next positive target is a Route-2 log-barrier/readout variational theorem\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\nTOTAL: PASS=18, FAIL=0\nVERDICT: conditional support. A log-barrier Hessian on Route-2 channel weights would produce the required second-dual law and the endpoint triple exactly. The current checked bank does not supply that variational/readout primitive, so the parent endpoint remains open.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T054530Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

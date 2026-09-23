@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_retention_law_is_A2plus_2026_05_31",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flavor_retention_law_is_A2plus_2026_05_31.py",
+ "seed": 42346,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6b8958a5",
+ "started_utc": "20260923T054546Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4e2e50c5ab6a8fe12b6e8d8eb4c92bbb207e6cd766b3c9774f796a1f7f45208f",
+ "stdout_tail": "[PASS] R1 C3-invariant onsite diagonal sources are scalar\n       solve -> {a: c, b: c}\n[PASS] R2 supplied Q(z) coordinates give Q(0)=2/3 and Q(-1/3)=1\n       Q(0)=2/3, Q(-1/3)=1\n[PASS] R3 Z=2P_+-I and S_Q1=I-Z/3 have the displayed d=3 coefficients\n       diag(S_Q1)=10/9 and offdiag(S_Q1)=-2/9\n[PASS] R4 onsite diagonal algebra intersects the C3 circulant algebra only in scalars\n       solve -> {x: z, y: z}\n[PASS] R5 diagonal onsite descent erases sample off-diagonal circulant splitting\n       descent=1.0*I\n[PASS] R6 source guards keep Q values as supplied coordinates and source-locality open\n\nSCORECARD PASS=6 FAIL=0\nVERDICT: bounded support for finite supplied-onsite algebra only.\nQ(0)=2/3 is a coordinate value of the supplied Q(z) formula, not a\nframework-native charged-lepton value. The physical source-locality/\nreadout bridge remains open.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T054546Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

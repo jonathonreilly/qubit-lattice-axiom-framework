@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_r_half_is_a_stationary_point_not_forced_2026_06_02",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flavor_r_half_is_a_stationary_point_not_forced_2026_06_02.py",
+ "seed": 42344,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6b8958a5",
+ "started_utc": "20260923T054544Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f2ede25bed54717081c6ca11dc01963f08c6bbb20e96b7ff0bc72171b0c225ab",
+ "stdout_tail": "dS/dr(1/2)=0.00e+00, S(1/2)=0.6931=log2 -> a genuine STATIONARY point, not arbitrary\n[PASS] 1b singlet-doublet power imbalance |3-6r| is at a TROUGH (=0) exactly at r=1/2; r=1/2 = fixed point of r->1-r\n       the balanced interior between the two enhanced-symmetry endpoints r=0, r=1\n[PASS] 2 three distinguished points: r=0->Q=1/3 (S_3 degenerate), r=1/2->Q=2/3 (balanced), r=1->Q=1 (maximal hierarchy)\n       three lanes = different physics (degenerate / balanced / hierarchical), NOT competing answers\n[PASS] 3 SECTOR functional extremizes at r=1/2; per-DOF functional at r=1 -> different extrema = different LANES (no forcing needed)\n       the residual is 'which extremum/lane each sector occupies' (a which-vacuum question), NOT 'force a measure'\n\nSCORECARD PASS=4 FAIL=0\nREFRAME (verified): r=1/2 is a distinguished STATIONARY POINT (max sector-entropy / imbalance trough /\nswap fixed-point) -- a NATURAL value (vacuum-at-extremum), NOT a forced/fine-tuned one. The three Q-lanes\n(1/3 degenerate, 2/3 balanced, 1 maximal-hierarchy) are distinguished points of the r-family = different\nphysics, not competing answers. The 5-round J-hunt's 'force det_C over det_R' was the WRONG target -- they\nare different LANES. Residual reframed: 'which extremum/lane does each sector occupy' (lane assignment, a\nwhich-vacuum question), strictly more honest+physical than measure-forcing. (Caveat: r=1/2 is the SECTOR\nextremum; per-DOF peaks at r=1 -- but these are different lanes, not a selection to win.)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T054544Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

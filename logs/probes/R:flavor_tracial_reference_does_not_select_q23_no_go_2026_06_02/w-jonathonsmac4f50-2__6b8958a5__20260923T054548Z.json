@@ -1,0 +1,34 @@
+{
+ "task": "R:flavor_tracial_reference_does_not_select_q23_no_go_2026_06_02",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flavor_tracial_reference_does_not_select_q23_no_go_2026_06_02.py",
+ "seed": 42348,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6b8958a5",
+ "started_utc": "20260923T054548Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=39 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9768b00adb520673b5e6ac22be5f5d7a00df476cffaf68384b5d3571815fd6b1",
+ "stdout_tail": "mal central idempotents are built and tested one at a time (e0 = (I+C+C^2)/3 rank 1, e1 = I-e0 rank 2, e0e1 = 0), and the Tomita map is applied to each of the 18 realified basis elements E_ij and i E_ij of M3(C) separately.\n  per_site: checked \u2014 BLOCK 5 iterates the region sizes |Lambda| = 1, 2, 4 and reports the induced generation weight (0.333:0.667) at each; the site direction enters only through the product-trace factorization premise, no explicit multi-site tensor state is assembled here.\n  per_mode: checked \u2014 the circulant spectrum is resolved as the singlet mode a+2b against the twice-degenerate doublet mode a-b, and the reflection-positivity Gram is read mode-wise as min-eig of (H+m^2)^-1 at r = 0.3, 0.5, 1.0 (positive) and r = 2.0 (negative, past the endpoint).\n  per_block: checked \u2014 the whole tie is a two-block statement: the trace gives (Tr rho e0, Tr rho e1) = (1/3, 2/3) -> r=1, the equal-block state gives (1/2, 1/2) -> r=1/2, and the doublet block is compressed both as det_R (full 2 real) and det_C (e1 S e1), both PSD.\n  lattice_wide: checked and not executed \u2014 region size stops at |Lambda| = 4 and is never taken to a limit; no infinite-volume state, cluster-decay rate or lattice-wide observable is constructed, so the verdict is carried entirely by the single-factor block algebra.\n\n==============================================================================\nSCORECARD: PASS=39 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T054549Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

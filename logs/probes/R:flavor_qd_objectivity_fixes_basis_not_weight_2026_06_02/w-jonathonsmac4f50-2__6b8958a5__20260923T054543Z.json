@@ -1,0 +1,38 @@
+{
+ "task": "R:flavor_qd_objectivity_fixes_basis_not_weight_2026_06_02",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flavor_qd_objectivity_fixes_basis_not_weight_2026_06_02.py",
+ "seed": 42343,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6b8958a5",
+ "started_utc": "20260923T054543Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=5 FAIL=0",
+   "PASS=5, FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4f1f75d33e8667d546b0d437db40d48cae70597d474e149ed057cfe2436be8f7",
+ "stdout_tail": "[PASS] two K-real sectors give a rank-1/rank-2 pointer alphabet\n[PASS] objectivity plateau reports H(weights), not a selected weight\n       H(1/3,2/3)=0.918296; H(1/2,1/2)=1.000000\n[PASS] tracial I/3 gives sector weights (1/3,2/3), hence r=1\n       (p_triv,p_doublet)=(0.333333,0.666667); r=1.000000\n[PASS] I/3 is sampled U(3)-invariant while the uniform-sector state is not\n[PASS] conjugation fixes both real effects and gives no rank swap\n\nSCORECARD PASS=5 FAIL=0\nFINDING: QD objectivity fixes the two-sector pointer basis but does not select the sector weights.\nThe uniform sector weight remains an extra measure/reference choice, not a consequence of redundant objectivity.\nper_element: checked \u2014 projector traces are 1.0 and 2.0, resolving the 1+2 pointer atoms.\nper_site: checked \u2014 one local tracial carrier gives weights (0.333333,0.666667) and r=1.000000.\nper_mode: checked \u2014 2000 sampled U(3) rotations preserve I/3=True but preserve the uniform-sector state=False.\nper_block: checked \u2014 conjugation fixes both real rank blocks and the real C+Cdag operator=True.\nlattice_wide: checked and not executed \u2014 lattice dynamics is outside this three-state objectivity claim; the executed finite-carrier suite has PASS=5, FAIL=0.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T054543Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

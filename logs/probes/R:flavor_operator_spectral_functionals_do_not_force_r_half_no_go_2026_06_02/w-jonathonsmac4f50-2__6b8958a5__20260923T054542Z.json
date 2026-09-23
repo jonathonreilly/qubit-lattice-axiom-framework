@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_operator_spectral_functionals_do_not_force_r_half_no_go_2026_06_02",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flavor_operator_spectral_functionals_do_not_force_r_half_no_go_2026_06_02.py",
+ "seed": 42342,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6b8958a5",
+ "started_utc": "20260923T054542Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5e7e5246a5127cd17b2cec6659c380a3d35a8908bd2b50a95aabfeaa455df0f4",
+ "stdout_tail": "nt weights C,C^2 separately -> r=1\n[PASS] 2c. Cl(3) grade-1 canonical metric is isotropic delta_ij (says nothing about I-vs-(J-I) weight)\n[PASS] 3a. Sector-power entropy S2 has unique crit pt r=1/2 (a MAX, S=log2)\n[PASS] 3b. 2-sector imbalance (p_I-p_off)^2 has unique min at r=1/2\n[PASS] 4a. Ad-invariant metric energy B(H,H)=(3a+9b)a^2 + 6a b^2; 'channel-balance' needs alpha=3 beta (a free curve)\n[PASS] 4b. r=1/2 (3a^2=6b^2 channel-energy balance) corresponds to Frobenius beta=0 -- a single UNFORCED point of the PD cone\n[PASS] 4c. PD cone contains beta!=0 (alpha=beta=1: PD, Ad-invariant, != Frobenius) -> beta=0 not forced\n[PASS] 5. RP/T-positivity (e^{-tH} PD) holds on the WHOLE admissible r-line -> inequality, pins no interior r\n\nSCORECARD: PASS=17 FAIL=0\nper_element: PASS | the exact three-eigenvalue trace functional reduces elementwise to Q(r)=1/3+(2/3)r\nper_site: PASS | checked and not executed \u2014 the tested invariant is the internal C3 commutant Gram matrix and has no spatial-site index or intersite operator\nper_mode: PASS | the three canonical C3 modes are Hilbert-Schmidt isotropic while all fourteen positivity samples leave the interior ratio unpinned\nper_block: PASS | the two-sector fold reaches r=1/2 only after the executed block choice, while the invariant metric retains a free beta curve\nlattice_wide: PASS | checked and not executed \u2014 the exact proof exhausts the finite three-mode carrier and positivity samples but defines no lattice tensor product or spatial limit\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T054543Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

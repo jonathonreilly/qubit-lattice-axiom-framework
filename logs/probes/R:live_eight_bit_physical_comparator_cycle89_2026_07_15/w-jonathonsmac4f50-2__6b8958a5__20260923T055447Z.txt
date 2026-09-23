@@ -1,0 +1,55 @@
+
+===============================================================================
+A - Corrected live inventory and exact eight-bit bound
+===============================================================================
+PASS A01 live table is exactly Cycle-85 bridge union
+PASS A02 live table has 236 canonical and 5,240 raw rows
+PASS A03 live arity census is pinned
+PASS A04 exact output inventory has 132 roles
+PASS A05 exact active inventory has 139 roles
+PASS A06 completed live endpoint supplies 91 roles
+PASS A07 source-preserving alphabet has 153 roles
+PASS A08 eight bits are necessary and sufficient
+
+===============================================================================
+B - Minimal live codebook extension and physical comparator table
+===============================================================================
+PASS B01 old 134-role alphabet is an exact live subset
+PASS B02 exactly nineteen new roles are pinned
+PASS B03 all old physical codewords are preserved
+PASS B04 all 153 live roles have distinct words
+PASS B05 EMPTY=11111111 remains reserved
+PASS B06 exactly 103 words remain reserved
+PASS B07 assigned and reserved words partition 256
+PASS B08 every harness contains exactly 38 H0/H1 records
+PASS B09 fixed 22-record cage has trivial proper-cubic stabilizer
+PASS B10 comparator has three canonical and 56 raw rows
+PASS B11 comparator consumes and writes only H0/H1
+PASS B12 live, binary, and comparator raw domains are pairwise disjoint
+PASS B13 corrected comparator union has 5,428 raw rows
+PASS B14 corrected comparator union is output-single-valued
+
+===============================================================================
+C - All 65,536 comparisons and every reachable stage
+===============================================================================
+PASS C01 first-difference census is exact :: Counter({0: 32768, 1: 16384, 2: 8192, 3: 4096, 4: 2048, 5: 1024, 6: 512, 8: 256, 7: 256})
+PASS C02 all 131,072 stages have exact frontier :: []
+PASS C03 all-pairs graph has 65,536 edges and terminals :: (65536, 65536)
+PASS C04 exactly 256 equal pairs reach MATCH
+PASS C05 no stage exposes more than one write
+PASS C06 every assigned live role compares equal to itself
+
+===============================================================================
+D - Proper-cubic covariance and historical boundary
+===============================================================================
+PASS D01 all 120 transformed controls have exact frontier :: []
+FAIL D02 note exists and carries authority none
+FAIL D03 note names Cycle 85 as the only selected base
+FAIL D04 note preserves Cycles 81/82/86/87 as historical
+FAIL D05 note states the 38-record harness is supplied
+FAIL D06 note denies foundation and axiom effects
+
+LIVE_CANONICAL=236 LIVE_RAW=5240 OUTPUT_ROLES=132 ACTIVE_ROLES=139 FULL_ROLES=153
+BITS=8 OLD_WORDS=134 NEW_WORDS=19 RESERVED=103 EMPTY=11111111
+COMPARATOR_CANONICAL=3 COMPARATOR_RAW=56 PHYSICAL_UNION_RAW=5428
+SUMMARY: 29 PASS / 5 FAIL

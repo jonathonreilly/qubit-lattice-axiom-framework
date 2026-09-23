@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_substrate_bridge_fails_source_operator_asymmetry_2026_05_31",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flavor_substrate_bridge_fails_source_operator_asymmetry_2026_05_31.py",
+ "seed": 42347,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6b8958a5",
+ "started_utc": "20260923T054547Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1cda7297c55e25328be9514e8209b58f08016bacc3e074e30673700dfbda22c9",
+ "stdout_tail": "============================================================================\nFlavor substrate operator-collapse finite algebra\n============================================================================\nClaim boundary: explicit 3x3 matrices only; no source-domain bridge closure.\n\n[PASS] literal source-free S=I has degenerate spectrum and Q=1/3\n       eig=[1. 1. 1.], Q=0.333333\n[PASS] split circulant H at b=1/sqrt(2) has signed Q=2/3\n       eig=[0.292893 0.292893 2.414214], Q_signed=0.666667\n[PASS] onsite projection Diag(H)=I collapses the split operator to Q=1/3\n       Diag(H) eig=[1. 1. 1.], Q=0.333333\n[PASS] E_loc(I+zZ)=(1-z/3)I is scalar for displayed Z\n       z=0.6, scalar=0.800000\n[PASS] operator-collapse contrast is exactly Q=2/3 before projection and Q=1/3 after projection\n\nSCORECARD PASS=5 FAIL=0\nVERDICT: bounded finite-algebra support only. The source-domain carrier/readout\nbridge and broader substrate-necessity conclusion remain outside this packet.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T054547Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

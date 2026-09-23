@@ -1,0 +1,14 @@
+[PASS] B1 pure phase loop pins to -pi for all |b| (topological 'w pin', r-blind)
+       Berry=[np.float64(-3.1416), np.float64(-3.1416), np.float64(-3.1416), np.float64(-3.1416)] (all = -pi)
+[PASS] B2 gapped loop r-selective; r=1/2 -> 0.5765 rad, NOT 2/9 in any normalization
+       |Berry(r=1/2)|=0.576493; 2/9=0.2222, (2/9)pi=0.6981, (2/9)2pi=1.3963
+[PASS] B2b 2/9 rad picks r=0.158 (not 1/2); r=1/2 not pinned by 2/9
+       r(|Berry|=2/9 rad)=0.1580
+[PASS] B3 cos^2theta=1/(1+r) equals Q=1/3+2r/3 ONLY at r=1/2 (crossing, not derivation)
+       different functions of r; agree only at the point we want to derive
+
+SCORECARD PASS=4 FAIL=0
+VERDICT: the qubit-factor Berry holonomy does NOT derive 2/9 or pin r=1/2. Pure phase
+loop -> topological winding pin (r-blind); gapped loop -> continuous r-selective phase
+that misses 2/9 and does not single out r=1/2. The off-index Berry route converges,
+once more, on the irreducible r=1/2 / generation-chiral pin -- which it does not supply.

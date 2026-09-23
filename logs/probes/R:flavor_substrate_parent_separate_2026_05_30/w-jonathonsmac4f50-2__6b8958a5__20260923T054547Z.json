@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_substrate_parent_separate_2026_05_30",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flavor_substrate_parent_separate_2026_05_30.py",
+ "seed": 42347,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6b8958a5",
+ "started_utc": "20260923T054547Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "05f7683460c98c1eb6c2844bb41f37087924db335ea704ec3fbdb6765ff5ef76",
+ "stdout_tail": "[PASS] D1 coin-blind grading forces K into even value slot plus odd chiral slot\n[PASS] D2 value side commutes with Gamma_chi and C; chiral side anticommutes with Gamma_chi\n[PASS] D3 diag(1,omega) has order 3 and determinant omega\n[PASS] D4 diag(1,omega) is not one of the supplied Z2 spin-factor charges\n[PASS] D5 source guard: native/non-native status and only-way theorem are left open\n\nSCORECARD PASS=5 FAIL=0\nVERDICT: on the supplied Z2 spin-factor reading, the naive lift splits\ninto separate value and chirality slots. Unification on this route\nrequires an order-3 complex charge diag(1,omega), but this runner does\nnot decide that charge's native status in full complex M2(C).\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T054547Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,17 @@
+[PASS] R1 C3-invariant onsite diagonal sources are scalar
+       solve -> {a: c, b: c}
+[PASS] R2 supplied Q(z) coordinates give Q(0)=2/3 and Q(-1/3)=1
+       Q(0)=2/3, Q(-1/3)=1
+[PASS] R3 Z=2P_+-I and S_Q1=I-Z/3 have the displayed d=3 coefficients
+       diag(S_Q1)=10/9 and offdiag(S_Q1)=-2/9
+[PASS] R4 onsite diagonal algebra intersects the C3 circulant algebra only in scalars
+       solve -> {x: z, y: z}
+[PASS] R5 diagonal onsite descent erases sample off-diagonal circulant splitting
+       descent=1.0*I
+[PASS] R6 source guards keep Q values as supplied coordinates and source-locality open
+
+SCORECARD PASS=6 FAIL=0
+VERDICT: bounded support for finite supplied-onsite algebra only.
+Q(0)=2/3 is a coordinate value of the supplied Q(z) formula, not a
+framework-native charged-lepton value. The physical source-locality/
+readout bridge remains open.

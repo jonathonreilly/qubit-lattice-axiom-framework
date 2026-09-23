@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_quark_route2_nonlinear_tensor_observable_class_no_go_2026_06_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_quark_route2_nonlinear_tensor_observable_class_no_go_2026_06_21.py",
+ "seed": 42330,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "08fdf456",
+ "started_utc": "20260923T054530Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=31, FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bff74bd492bbfd2bfef78be40192603877669d366c9a4071b175615348fc9793",
+ "stdout_tail": "enter slot moves, which is what makes the target c_TE=-8/9 a purely E-channel demand rather than a joint one.\nper_block: the tensor grammar is swept as graded blocks -- 6 scalar contraction pairs each yielding a dot and a determinant, 15 pure symmetric powers over degrees 1 to 5, 117 mixed tensor words over degrees 2 to 4, symmetric powers again at degrees 1 through 6, and six representative polynomial probes; every block collapses to one signature across 6 exact rho_E values, and these are computed tensor entries rather than counted inventory.\nlattice_wide: checked and not executed -- what looks spacetime-shaped here is a single outer product against one hand-chosen universal time vector (1, 2/3, 5/7, 11/13), which tests only that the readout ambiguity does not sit in the right/time factor and says nothing about extent; no volume, sum or limit appears anywhere, and part 5 records that the bank leaves arbitrary future nonlinear observables explicitly open.\n\n==============================================================================\nTOTAL: PASS=31, FAIL=0\n==============================================================================\n\nVERDICT: exact negative boundary / no-go for finite E-center-blind tensor-polynomial Route-2 observables. Nonlinearity does not by itself select rho_E=21/4; any successful nonlinear repair must introduce a nonblind E-center lift, source-domain rule, or equivalent readout primitive. This does not rule out arbitrary future nonlinear observables.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T054530Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

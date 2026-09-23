@@ -1,0 +1,32 @@
+{
+ "task": "R:live_eight_bit_physical_comparator_cycle89_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "live",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/live_eight_bit_physical_comparator_cycle89_2026_07_15.py",
+ "seed": 42887,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6b8958a5",
+ "started_utc": "20260923T055447Z",
+ "elapsed_s": 56.9,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "416c4569e5e497593d685e0667c172b47720b0f3e519d3f9520576a602d34492",
+ "stdout_tail": "omparator union has 5,428 raw rows\nPASS B14 corrected comparator union is output-single-valued\n\n===============================================================================\nC - All 65,536 comparisons and every reachable stage\n===============================================================================\nPASS C01 first-difference census is exact :: Counter({0: 32768, 1: 16384, 2: 8192, 3: 4096, 4: 2048, 5: 1024, 6: 512, 8: 256, 7: 256})\nPASS C02 all 131,072 stages have exact frontier :: []\nPASS C03 all-pairs graph has 65,536 edges and terminals :: (65536, 65536)\nPASS C04 exactly 256 equal pairs reach MATCH\nPASS C05 no stage exposes more than one write\nPASS C06 every assigned live role compares equal to itself\n\n===============================================================================\nD - Proper-cubic covariance and historical boundary\n===============================================================================\nPASS D01 all 120 transformed controls have exact frontier :: []\nFAIL D02 note exists and carries authority none\nFAIL D03 note names Cycle 85 as the only selected base\nFAIL D04 note preserves Cycles 81/82/86/87 as historical\nFAIL D05 note states the 38-record harness is supplied\nFAIL D06 note denies foundation and axiom effects\n\nLIVE_CANONICAL=236 LIVE_RAW=5240 OUTPUT_ROLES=132 ACTIVE_ROLES=139 FULL_ROLES=153\nBITS=8 OLD_WORDS=134 NEW_WORDS=19 RESERVED=103 EMPTY=11111111\nCOMPARATOR_CANONICAL=3 COMPARATOR_RAW=56 PHYSICAL_UNION_RAW=5428\nSUMMARY: 29 PASS / 5 FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T055544Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

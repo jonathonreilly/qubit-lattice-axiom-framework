@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_r_half_stable_under_thermalizing_arrow_2026_06_02",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flavor_r_half_stable_under_thermalizing_arrow_2026_06_02.py",
+ "seed": 42345,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6b8958a5",
+ "started_utc": "20260923T054545Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "36d5ac8ac2f81c2f2dccb3d8235494d4460fbd5fc5bb5c99dd24b88b43fb3b18",
+ "stdout_tail": "p flips repeller<->attractor\n[PASS] 2 r=1/2 <=> HS 2-sector equipartition: ||aI||^2 = ||bC+conj(b)C^2||^2 (3a^2=6|b|^2), the unique 2-block entropy max\n       ||aI||^2=3.000 = ||doublet||^2=3.000\n[PASS] 3 endpoint spectra: r=0 -> [1,1,1] (degenerate) and r=1 -> [0,0,3] (two massless); distinct massive use lies in the open interior\n       r=0 eig=[1.0, 1.0, 1.0], r=1 eig=[-0.0, -0.0, 3.0] -> admissible set is the open interior (0,1)\n[PASS] 4 the 'sigma' involution |b|^2->a^2-|b|^2 IS r<->1-r and CHANGES Tr H^2 -> a relabeling, NOT a dynamical symmetry (stability rests on equipartition+selected map, not symmetry-protection)\n       Tr H^2(0.2)=4.2 != Tr H^2(0.8)=7.800000000000001 -> not Casimir-preserving\n[PASS] 5 RESIDUAL: only the 2-SECTOR entropy peaks at r=1/2; the 3-eigenvalue spectral entropy peaks at r=0 -> r=1/2 stability requires selecting the 2-sector coarse-graining\n       argmax S2(2-sector)=0.501 (=1/2); argmax Sspec(3-eigenvalue)=0.010 (->0) -> the partition is the open posit\n\nSCORECARD PASS=5 FAIL=0\nVERDICT (bounded map theorem): r=1/2 is STABLE for the supplied two-sector reverse map\ng(r)=sqrt(r/2). The sharpening map S(r)=2r^2 has multiplier 2 at r=1/2; g has multiplier\n1/2 and every tested positive seed flows to r=1/2. GROUNDED: r=1/2 is HS 2-sector\nequipartition and Q=1/3+(2/3)r gives Q=2/3 there. RESIDUAL: selecting the 2-isotype\ncoarse-graining and binding physical r-evolution to g, or to any entropy-increasing\ntwo-sector flow, remains outside this theorem.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T054545Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

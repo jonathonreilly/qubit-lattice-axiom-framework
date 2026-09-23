@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_trace_vs_center_dissolves_2026_05_30",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flavor_trace_vs_center_dissolves_2026_05_30.py",
+ "seed": 42347,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6b8958a5",
+ "started_utc": "20260923T054547Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5924c00f923393a4989863a984401e02b77bfbb2f9a3574cec178c53498ef1e0",
+ "stdout_tail": "heat/Seeley coefficient endpoint behavior ===\n[PASS] Seeley coefficient Tr(H^2) has no interior extremum in x in (0,1)\n       d/dx=12*x\n[PASS] Seeley coefficient Tr(H^4) has no interior extremum in x in (0,1)\n       d/dx=72*x*(x**2 + x + 1)\n[PASS] Seeley coefficient Tr(H^6) has no interior extremum in x in (0,1)\n       d/dx=36*x*(11*x**4 + 25*x**3 + 30*x**2 + 10*x + 5)\n[PASS] Seeley coefficient Tr(H^8) has no interior extremum in x in (0,1)\n       d/dx=48*x*(43*x**6 + 147*x**5 + 231*x**4 + 175*x**3 + 105*x**2 + 21*x + 7)\n[PASS] heat-trace coefficient extrema are endpoint-only in this restricted packet\n       Theta_t series through t^4: 3 + t*(-6*x**2 - 3) + t**2*(9*x**4 + 12*x**3 + 18*x**2 + 3/2) + t**3*(-11*x**6 - 30*x**5 - 45*x**4 - 20*x**3 - 15*x**2 - 1/2) + t**4*(43*x**8/4 + 42*x**7 + 77*x**6 + 70*x**5 + 105*x**4/2 + 14*x**3 + 7*x**2 + 1/8) + O(t**5)\n\n=== D6. scope firewall ===\n[PASS] no observed mass value or new axiom is used\n       all checks are exact finite C3 algebra/source-packet formulas\n[PASS] physical selector remains open\n       block-count vs trace, signed/Hermitian vs singular-value, and r=1/2 modulus selection are not closed here\n\nSCORECARD PASS=17 FAIL=0\nVERDICT: restricted bounded support. The signed trace formula, center/block-count\ninventory formula, Bures/SLD r=1/16, endpoint heat/Seeley behavior, and\npositive-chamber eigenvalue-as-mass root are instantiated exactly. The physical\nreadout, block-count selector, and Fourier modulus remain open residuals.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T054548Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,52 @@
+
+===============================================================================
+A - Corrected six-slot directional program bank
+===============================================================================
+PASS A01 direction order is exactly all six nearest neighbours
+PASS A02 EMPTY=11111111 is genuinely reserved
+PASS A03 all 236 programs are exactly 48 bits and distinct
+PASS A04 exact minimum program Hamming distance is one
+PASS A05 live row arity census is preserved
+PASS A06 bank contains exactly 742 EMPTY slots
+PASS A07 exactly 232 programs use at least one EMPTY slot
+PASS A08 exactly four rows have all six physical slots
+PASS A09 every live output has an assigned physical word
+
+===============================================================================
+B - Corrected-union physical output writer
+===============================================================================
+PASS B01 output table has five canonical and 48 raw rows
+PASS B02 exactly 24 raw rows are identical-H1 aliases
+PASS B03 corrected writer union has 5,452 raw rows
+PASS B04 corrected writer union is output-single-valued
+PASS B05 writer rows consume and write only H0/H1
+PASS B06 writer source is 69 supplied records plus port
+PASS B07 fixed 62-record writer cage has trivial stabilizer
+PASS B08 all 4,608 writer stages have exact frontier :: []
+PASS B09 writer graph has 4,352 edges and 256 terminals :: (4352, 256)
+
+===============================================================================
+C - Four full rows through 48-bit compare and output write
+===============================================================================
+PASS C01 stream source has 193 supplied records
+PASS C02 stream reuses Cycle-89 equality row
+PASS C03 all 3,648 one-role substitutions stop quietly :: []
+PASS C04 four pipelines have 264 states, 260 edges, four terminals :: (264, 260, 4)
+PASS C05 every full-row physical frontier is exact :: []
+PASS C06 terminal words are exactly the four live outputs
+PASS C07 each pipeline has 262 supplied source records
+
+===============================================================================
+D - Proper-cubic covariance and residual boundary
+===============================================================================
+PASS D01 all 96 transformed pipeline controls are exact :: []
+FAIL D02 note exists and carries authority none
+FAIL D03 note says all streams and program rails are supplied
+FAIL D04 note names the open-direction residual
+FAIL D05 note names serial-selector residual
+FAIL D06 note denies foundation and axiom effects
+
+PROGRAMS=236 SLOT_BITS=48 EMPTY_SLOTS=742 SIX_ROWS=4
+OUTPUT_CANONICAL=5 OUTPUT_RAW=48 PHYSICAL_UNION_RAW=5452
+FULL_ROW_STATES=264 FULL_ROW_EDGES=260 SUBSTITUTIONS=3648
+SUMMARY: 26 PASS / 5 FAIL

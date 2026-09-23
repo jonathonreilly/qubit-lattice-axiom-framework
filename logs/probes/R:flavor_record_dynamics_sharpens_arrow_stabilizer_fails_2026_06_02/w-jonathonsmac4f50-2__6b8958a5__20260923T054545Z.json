@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026_06_02",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026_06_02.py",
+ "seed": 42345,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6b8958a5",
+ "started_utc": "20260923T054545Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4bba73cac4ab3ab5e27f40f7025bedc99f4f0cdedceb5061aa9ff79d40f68f16",
+ "stdout_tail": "[PASS] Lueders sharpening r->2r^2 makes r=1/2 unstable\n       f(0.5)=0.500000; f'(0.5)=2.000000\n[PASS] iteration from r=0.49 runs away from 1/2\n       after 60 steps: r=0.000e+00\n[PASS] reverse map sqrt(r/2) stabilizes r=1/2 but is the tested erasure direction\n       g'(0.5)=0.500000; from 0.05 -> 0.500000\n[PASS] C3-invariant operator is already block diagonal in the tested projectors\n       max offblock=1.356e-15\n[PASS] thermalizing to I/3 gives dimension weights and r=1\n       (p_triv,p_doublet)=(0.333333,0.666667); r=1.000000\n\nSCORECARD PASS=5 FAIL=0\nFINDING: the tested record dynamics does not make r=1/2 a dynamical attractor.\nThe remaining value route is a measure/reference choice.\nper_element: PASS | the executed Lueders map fixes r=1/2 elementwise but has derivative two there, proving local instability\nper_site: PASS | sixty executed sharpening updates from the nearby value r=0.49 run to below 1e-6 rather than returning to one half\nper_mode: PASS | the reverse square-root mode converges to one half only in the explicitly tested erasure direction\nper_block: PASS | the complete C3 block is already singlet-doublet diagonal and thermalization gives dimension weights with r=1\nlattice_wide: PASS | checked and not executed \u2014 this runner exhausts one internal 3x3 C3 record block and specifies no spatial lattice or intersite record dynamics\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T054545Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

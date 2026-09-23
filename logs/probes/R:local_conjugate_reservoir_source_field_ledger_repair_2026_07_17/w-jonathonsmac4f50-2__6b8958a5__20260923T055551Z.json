@@ -1,0 +1,32 @@
+{
+ "task": "R:local_conjugate_reservoir_source_field_ledger_repair_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "local",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/local_conjugate_reservoir_source_field_ledger_repair_2026_07_17.py",
+ "seed": 42951,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6b8958a5",
+ "started_utc": "20260923T055551Z",
+ "elapsed_s": 33.9,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c42aa8346a3833da743992494608b9ca63d3c96cbf8e980a3756966271b59b19",
+ "stdout_tail": "plicit :: {'schedule': 'candidate full schedule: matter/field onsite coins; local matter-controlled reservoir-field exchange; matter and direction-field streams; arrival-cell contact; moving matter is not executed in the reservoir-field matrix control', 'remaining': 'the reservoir is attached to a lattice cell; transporting it with a moving matter body needs a new bounded carrier/compiler'}\n\nLAWFUL DOMAIN / SUPPLIED STRUCTURE\nPASS the declared domain rejects aliased and mistyped fixtures :: {'rejected': 4}\nPASS the supplied structure inventory is explicit :: {'supplied': ('Cycle-269 sectorwise mapped matter code and B representatives', 'beta=-0.3 and m=-3 tan(beta/2)', 'one site-local reservoir M2 per coarse cell', 'six physical directional field M2 per coarse cell', 'full field-coin extension outside the zero/one sector', 'uniform scalar creation convention', 'coupling 0.8 and coin-vertex-stream-contact schedule', 'prepared total reservoir-plus-field excitation sector'), 'derived': ('full local physical-M2 exchange gate', 'operator-level source-field balance', 'zero/one mediator invariance without occupancy queries', 'bounded support, zero leakage, covariance, deletion, and composition'), 'not_earned': ('reservoir transport with moving matter', 'energy/stress/gravity-source interpretation', 'field work or matter recoil', 'clock normalization or metric response', 'prepared full-Fock matter encoder')}\n\nSUMMARY PASS 19 FAIL 1\nRESULT LOCAL_CONJUGATE_RESERVOIR_LEDGER_REPAIR_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T055625Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

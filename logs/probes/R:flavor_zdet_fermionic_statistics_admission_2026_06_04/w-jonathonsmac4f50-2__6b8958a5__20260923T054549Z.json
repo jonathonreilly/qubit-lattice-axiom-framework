@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_zdet_fermionic_statistics_admission_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flavor_zdet_fermionic_statistics_admission_2026_06_04.py",
+ "seed": 42349,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6b8958a5",
+ "started_utc": "20260923T054549Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e8a2b0842aab35315d1f7390b69ce96d2645b136d44954b2c56e07e77f5f1172",
+ "stdout_tail": "igner dressing realizes cross-site CAR as a generator change\n[PASS] local dimension two is shared by fermions and hard-core bosons\n[PASS] signed determinant and unsigned permanent are distinct statistics choices\n       det=4.971000; permanent=5.947000\n[PASS] Gamma_chi is an internal-generation object distinct from spatial CAR\n       Gamma_chi commutes with the tested C3-equivariant mass operator\n[PASS] one-hop Grassmann bridge is consumed only at its abstract source boundary\n       no live audit status is pinned by this runner\n[PASS] graded tensor route composes parity-odd generators into CAR with even bilinears\n       F c_i F=-c_i, {c1,c2}=0, and c1^dag c2 is Z2-even\n[PASS] source boundary guard: finite bridge only, no physical baseline/admission conclusion promoted\n       the packet leaves the physical FS selector open\n[PASS] dependency boundary guard: consumed supports are algebraic, not physical spin-statistics selectors\n       parity supplies Z2 grading; Grassmann bridge supplies abstract two-candidate determinant scope\n\nSCORECARD PASS=10 FAIL=0\nFINDING: the abstract determinant side has formal parity support plus the separately graded Grassmann bridge.\nThe physical-lattice cross-site CAR/Grassmann selector remains open.\nThe tested finite hard-core/tensor-product routes still do not force that statistics choice.\nKoide generation chirality remains a separate internal-factor residual.\nDOWNSTREAM: determinant statistics does not select the Koide occupancy/slot-degree atom.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T054549Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

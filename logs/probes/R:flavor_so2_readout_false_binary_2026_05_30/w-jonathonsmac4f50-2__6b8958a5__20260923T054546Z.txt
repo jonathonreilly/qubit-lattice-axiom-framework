@@ -1,0 +1,14 @@
+[PASS] S1 continuous C rephase obstruction: C->exp(i alpha)C preserves C^3=I only at cube-root phases
+       this checks the finite C3 obstruction; it is not a global readout-selector theorem
+[PASS] S2 delta moves the spectrum but is blind in Q for the supplied circulant family
+       Q(delta)=0.66667; sorted spectra at delta=0.3 and 1.1 differ
+[PASS] S3 real determinant and stipulated singlet/doublet block-counting product differ
+       det_R=50.0=alpha beta^2; block product=10.0=alpha beta
+[PASS] S4 full degeneracy occurs at every delta=m*pi/3, not only sin(delta)=0
+       nondegeneracy in this family is delta not a multiple of pi/3
+
+SCORECARD PASS=4 FAIL=0
+VERDICT: BOUNDED-SUPPORT finite algebra only. The runner verifies the C3 rephase obstruction,
+delta-blind Q for the supplied circulant family, the det_R versus block-product counting
+formulas, and the delta=m*pi/3 degeneracy locus. It does not prove an exhaustive
+readout-normalization theorem or decide which counting a framework rule selects.

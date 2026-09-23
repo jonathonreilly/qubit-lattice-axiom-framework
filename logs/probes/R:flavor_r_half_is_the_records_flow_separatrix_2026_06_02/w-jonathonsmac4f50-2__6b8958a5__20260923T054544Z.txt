@@ -1,0 +1,16 @@
+[PASS] 1 Lueders/records sharpening (p->p^2/Z) on the 2-sector power distribution = the map r -> 2r^2 EXACTLY
+       grounded in the cited Lueders composition-consistency source
+[PASS] 2 fixed points r=0 (f'=0 STABLE) and r=1/2 (f'=2 UNSTABLE separatrix); finite r=1 is not fixed, and r>1/2 runs to projective doublet-collapse
+       r=1/2 is the REPELLING WATERSHED; the upper basin is r->infinity in this coordinate
+[PASS] 3 2-SECTOR entropy S2 peaks at r=1/2 (the unforced det_C partition); 3-real-DOF entropy S3 peaks at finite r=1 as a separate comparator
+       argmax S2=0.500 (1/2), argmax S3=1.000 (1) -> S3's r=1 is not a fixed point of r->2r^2
+[PASS] 4 r=1/2 is a STABLE max of the (unforced) 2-sector entropy but an UNSTABLE separatrix of the supplied records map -> not an attractor for that map
+       a physical charged-lepton use would need a stabilizer/bridge that pins the 2-sector record basis
+
+SCORECARD PASS=4 FAIL=0
+VERDICT (bounded records-map theorem): the supplied Lueders sharpening map is r -> 2r^2;
+r=1/2 (Q=2/3) is its UNSTABLE SEPARATRIX. The finite fixed points are r=0 and r=1/2;
+finite r=1 is not fixed by this map, while r>1/2 runs to the projective doublet-collapse
+end (r->infinity in this coordinate). r=1/2 is a STABLE max only of the unforced 2-sector
+(det_C) entropy. A physical charged-lepton use would need an additional bridge/stabilizer
+selecting the 2-sector record basis; this runner does not derive the physical records flow.

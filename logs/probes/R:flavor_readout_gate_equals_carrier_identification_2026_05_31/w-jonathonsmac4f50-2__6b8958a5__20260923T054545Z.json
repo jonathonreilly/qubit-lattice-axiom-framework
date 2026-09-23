@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_readout_gate_equals_carrier_identification_2026_05_31",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flavor_readout_gate_equals_carrier_identification_2026_05_31.py",
+ "seed": 42345,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6b8958a5",
+ "started_utc": "20260923T054545Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e2be8df41191938c350da0cabbae72b409dd5b6ac88fe969982b6b0a0d8d7d5c",
+ "stdout_tail": "e-16  => J_cs cannot select det_C vs det_R as Q-readout\n[PASS] B3 Q is set by r=|b|^2/a^2 (J_cs's kernel direction): r=1/2 -> Q=2/3 ; r=1 -> Q=1; J_cs annihilates this axis\n       r=0.5000 -> Q=0.6667; the z=0 zero-section pick (r=1/2 vs r=1) is what retained_no_go isolates\n[PASS] C1 L_3(1,2)=2/9 (holomorphic/det_C) and L_3(1,1)=1/9 (real/Euler): genuine C_3 fact, NOT a Q-selector\n       L_3(1,2)=0.222222, L_3(1,1)=0.111111; which determinant is the physical mass ratio is unforced\n[PASS] D1 A2 admits BOTH: extensive sum L*(2/9) (quasi-local, A2-compatible) AND intensive 2/9; A2 selects NEITHER\n       L=5: extensive=1.1111, intensive=0.2222; the carrier choice (R^3 vs lattice) IS the gate\n\nSCORECARD PASS=11 FAIL=0\nVERDICT: open_gate_support. No identification-independent forcing of 2/9\nas THE observable exists in framework baseline+retained. The readout gate, generation-carrier\nidentification, and zero-section pick are one remaining physical carrier/basepoint premise,\nnot three independently closed theorems. New verified negative: J_cs is silent on r\n(the Q-setting parameter), so the Schur-forced complex structure does NOT select det_C\nover det_R as the Koide readout.\nProvenance (verified vs origin/main 2026-05-31): open_gate lepton_brannen_bae_delta_two_ninths;\nretained_no_go koide_q_delta_residual_cohomology_obstruction; retained_bounded koide_z3_\nequivariant_anticommuting_no_go. No load-bearing on unaudited closure_c_staggered_dirac_gate /\nkoide_phase_aps_eta_parity_route.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T054545Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,27 @@
+[PASS] additive record readout selects log form once multiplicative Z is supplied
+[PASS] genuine log|det H| counts the doublet with multiplicity two
+       log|det|=0.386622
+[PASS] block-count reading uses a distinct multiplicity-stripped functional
+       block=0.609766; logdet=0.386622
+[PASS] form and weight are independent gates
+       log form does not choose dimension count versus block count
+[PASS] pre-record normalized and post-record additive ledgers can coexist
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/flavor_record_readout_form_not_weight_2026_06_02.py", line 107, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/flavor_record_readout_form_not_weight_2026_06_02.py", line 86, in main
+    passed.extend(run_occupancy_boundary_checks(root, check, "downstream occupancy atom"))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/flavor_occupancy_boundary_checks_2026_06_13.py", line 24, in run_occupancy_boundary_checks
+    rows = json.loads((root / "docs" / "audit" / "data" / "audit_ledger.json").read_text())["rows"]
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/audit/data/audit_ledger.json'

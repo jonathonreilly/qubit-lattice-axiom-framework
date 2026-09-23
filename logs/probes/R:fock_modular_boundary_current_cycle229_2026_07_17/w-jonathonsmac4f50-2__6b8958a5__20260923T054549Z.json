@@ -1,0 +1,31 @@
+{
+ "task": "R:fock_modular_boundary_current_cycle229_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "fock",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
+ "seed": 42349,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6b8958a5",
+ "started_utc": "20260923T054549Z",
+ "elapsed_s": 1.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9191e723f5563586cac32f7c42a5d291df6fd154c29ae16df3f2417e09da6be9",
+ "stdout_tail": "778493579016, 'zone_energy': 6.282886439394652, 'zone_wrapped': -0.00029886778493473166, 'zone_alias': 0.00029886778493448674}, {'delta': 0.0001, 'zero_energy': 2.98867833148291e-05, 'zero_wrapped': 2.98867833148291e-05, 'zone_energy': 6.283155420396272, 'zone_wrapped': -2.9886783314193157e-05, 'zone_alias': 2.988678331394823e-05}]}\nPASS at the sampled momentum block, selected central mode pairs avoid one-pair wrapping :: [(0.6461859514500672, 0.6461859514500672), (0.46816523077629135, 0.46816523077629135), (0.4720409492350612, 0.4720409492350612)]\nPASS the reference-relative deviation vector obeys an exact local continuity equation :: [{'beta': 0.0, 'reference': 0.0, 'continuity': 3.903127820947816e-18, 'transport': 2.1462037776348665e-16, 'global_change': 2.5934115965853266e-16}, {'beta': -0.3, 'reference': 0.0, 'continuity': 4.7704895589362195e-18, 'transport': 2.2828260045513484e-16, 'global_change': 3.642919299551295e-17}, {'beta': -0.3, 'reference': 0.4, 'continuity': 3.469446951953614e-18, 'transport': 2.3681383483135135e-16, 'global_change': 1.7780915628762273e-17}]\nPASS the finite Fock blocks are covariant over all proper-cubic frames :: {'spectral_residual': 1.1657341758564144e-15, 'fock_covariance_residual': np.float64(2.4197916225879954e-15)}\nPASS the held family uses generic complex non-Clifford phase data :: {'imaginary_coin_norm': 0.36605726271674877, 'maximum_quarter_turn_distance': 0.32586269887001074}\nPASS 17 FAIL 0\nRESULT FOCK_PARTIAL_MODULAR_BOUNDARY_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T054551Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

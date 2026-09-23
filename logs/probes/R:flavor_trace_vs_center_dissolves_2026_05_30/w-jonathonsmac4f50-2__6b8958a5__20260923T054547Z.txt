@@ -1,0 +1,51 @@
+=== D1. signed/Hermitian trace formula ===
+[PASS] signed trace/dimension formula is Q = 1/3 + (2/3) r
+       Q_trace=2*r/3 + 1/3; Q=2/3 roots=[1/2]
+[PASS] the trace denominator is fixed by Tr(H)=3a and doublet multiplicity two
+       lambda_s=a + 2*b, lambda_d=a - b
+
+=== D2. center/block-count inventory formula ===
+[PASS] center/block-count formula is Q_block = 1/3 + (1/3) r
+       Q_block=r/3 + 1/3; Q=2/3 roots=[1]
+[PASS] center/block-count reaches Q=2/3 at r=1, not r=1/2
+       Q_block(1/2)=1/2, Q_block(1)=2/3
+
+=== D3. eigenvalue-as-mass separated from singular-value readout ===
+[PASS] eigenvalue-as-mass Q=2/3 root is exact
+       x=b/a=1/4 + sqrt(2)/2; r=x^2=sqrt(2)/4 + 9/16 ~= 0.916053
+[PASS] the squared equation is 16 x^2 - 8 x - 7 = 0 on the positive chamber
+       x_star ~= 0.957107, so all two-level eigenvalues remain nonnegative
+[PASS] this is not a global singular-value readout claim
+       singular-value readout uses |lambda_k| across sign/phase chambers; this packet only isolates the positive eigenvalue-as-mass solve
+
+=== D4. Fisher and Bures/SLD sector balances ===
+[PASS] classical unnormalized Fisher balance lands r = 17/2 - 6 sqrt(2)
+       r_Fisher=17/2 - 6*sqrt(2) ~= 0.014719
+[PASS] Bures/SLD normalized spectral sector balance lands r = 1/16
+       p_s=2*x/3 + 1/3, p_d(each)=1/3 - x/3, r_SLD=1/16
+[PASS] Bures/SLD r=1/16 is not the Koide r=1/2 point
+       Q_trace(1/16)=3/8
+
+=== D5. heat/Seeley coefficient endpoint behavior ===
+[PASS] Seeley coefficient Tr(H^2) has no interior extremum in x in (0,1)
+       d/dx=12*x
+[PASS] Seeley coefficient Tr(H^4) has no interior extremum in x in (0,1)
+       d/dx=72*x*(x**2 + x + 1)
+[PASS] Seeley coefficient Tr(H^6) has no interior extremum in x in (0,1)
+       d/dx=36*x*(11*x**4 + 25*x**3 + 30*x**2 + 10*x + 5)
+[PASS] Seeley coefficient Tr(H^8) has no interior extremum in x in (0,1)
+       d/dx=48*x*(43*x**6 + 147*x**5 + 231*x**4 + 175*x**3 + 105*x**2 + 21*x + 7)
+[PASS] heat-trace coefficient extrema are endpoint-only in this restricted packet
+       Theta_t series through t^4: 3 + t*(-6*x**2 - 3) + t**2*(9*x**4 + 12*x**3 + 18*x**2 + 3/2) + t**3*(-11*x**6 - 30*x**5 - 45*x**4 - 20*x**3 - 15*x**2 - 1/2) + t**4*(43*x**8/4 + 42*x**7 + 77*x**6 + 70*x**5 + 105*x**4/2 + 14*x**3 + 7*x**2 + 1/8) + O(t**5)
+
+=== D6. scope firewall ===
+[PASS] no observed mass value or new axiom is used
+       all checks are exact finite C3 algebra/source-packet formulas
+[PASS] physical selector remains open
+       block-count vs trace, signed/Hermitian vs singular-value, and r=1/2 modulus selection are not closed here
+
+SCORECARD PASS=17 FAIL=0
+VERDICT: restricted bounded support. The signed trace formula, center/block-count
+inventory formula, Bures/SLD r=1/16, endpoint heat/Seeley behavior, and
+positive-chamber eigenvalue-as-mass root are instantiated exactly. The physical
+readout, block-count selector, and Fourier modulus remain open residuals.

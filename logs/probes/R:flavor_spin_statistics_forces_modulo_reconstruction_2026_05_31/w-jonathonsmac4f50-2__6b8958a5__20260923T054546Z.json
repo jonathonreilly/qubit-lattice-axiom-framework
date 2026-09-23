@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_spin_statistics_forces_modulo_reconstruction_2026_05_31",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flavor_spin_statistics_forces_modulo_reconstruction_2026_05_31.py",
+ "seed": 42346,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6b8958a5",
+ "started_utc": "20260923T054546Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3b8816460b2e701c587df554ed2d01fd6b9d67a7a803b465992d598479f7b656",
+ "stdout_tail": "[PASS] T1a CAR occupation is bounded below for the supplied spinor field\n       CAR spectrum [0.0, 1.7, 1.7, 3.4]\n[PASS] T1b wrong Bose quantization has an unbounded-below direction\n       Bose min over n_a<=7 is -11.9; the direction continues downward as the truncation grows\n[PASS] Dirac-Kahler taste can be spectator multiplicity of a clean spinor block\n       block eigs [(1-1.631j), (1+1.631j)] each appear four times\n[PASS] free propagator kernel identity is statistics-blind\n       the kernel matrix does not encode a Fock statistics choice\n[PASS] two-site qubit carrier is statistics-agnostic before a generator choice\n       ordinary ladders commute; Jordan-Wigner dressed generators anticommute\n[PASS] spatial qubit spin is j=1/2\n       Casimir j(j+1)=3/4; full boost-spinor embedding remains open\n[PASS] source boundary guard: no current-surface P1 forcing promoted\n       the packet keeps T1 as downstream support and leaves R open\n\nSCORECARD PASS=7 FAIL=0\nVERDICT: bounded-support route pruning.\nThe T1 engine is real for a supplied relativistic spin-1/2 field,\nand the taste spectator check removes one obstacle, but current\nbaseline plus emergent spacetime does not force P1/CAR without a\nnon-circular reconstruction R and a bare-qubit boost-spinor embedding.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T054547Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

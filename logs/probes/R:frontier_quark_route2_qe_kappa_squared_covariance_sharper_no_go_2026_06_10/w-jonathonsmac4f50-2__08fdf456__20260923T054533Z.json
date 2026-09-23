@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_quark_route2_qe_kappa_squared_covariance_sharper_no_go_2026_06_10",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_quark_route2_qe_kappa_squared_covariance_sharper_no_go_2026_06_10.py",
+ "seed": 42333,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "08fdf456",
+ "started_utc": "20260923T054533Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "af5e7e8d5adfe63b5af9b40fb65a265e260fb04bc6cbfde5e9bd92f1c47e380a",
+ "stdout_tail": "slot 8/9.\nlattice_wide: executed, and certified explicitly as a finite statement -- the Reynolds projector averages all 48 group elements over the whole six-arm shell and the completeness identity P_A1 + P_E + P_T1 = I closes that shell globally, which is a claim about this one seven-site star; no volume sequence, no larger star and no thermodynamic limit is constructed anywhere in this runner, so nothing asymptotic is being asserted.\n\nTOTAL: PASS=7 FAIL=0\nVERDICT: no derivation of rho_E = 21/4 from the exact finite Route-2 star/O_h objects. SHARPER\nNO-GO with new exact content: 9/4 = kappa^2 where kappa = 3/2 is the DERIVED per-arm O_h shell\nleverage P_T1/P_E = dim(T1)/dim(E) on the readout's own E/T channels (a SAME-DOMAIN quantity), and\nthe commutant Hom_Oh(E,T1)=0 leaves the E and T scales independent -- so equivariance does NOT\nforce the readout covariance lambda = q_E/q_T = kappa^2; positivity leaves a continuum (rho_E>-6).\nThe single remaining open datum is precisely the covariance bridge lambda = kappa^2 (equivalently\nthe E-center datum / rho_E). This RELOCATES the missing primitive from the cross-domain color\ncoincidence c_TE=-R_conn=-8/9 (a fiber-space fraction, already no-go'd) to a SAME-DOMAIN\nreadout-covariance rule -- a sharper, more attackable target. Scope: closes the finite-star /\nequivariant / carrier-linear / positivity / simple-covariance routes; does NOT prove impossibility\nover arbitrary future nonlinear tensor observables. No PDG/fitted value consumed.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T054534Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

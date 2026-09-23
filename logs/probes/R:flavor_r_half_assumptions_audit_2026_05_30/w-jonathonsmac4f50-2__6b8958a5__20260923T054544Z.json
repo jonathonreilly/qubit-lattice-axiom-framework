@@ -1,0 +1,34 @@
+{
+ "task": "R:flavor_r_half_assumptions_audit_2026_05_30",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flavor_r_half_assumptions_audit_2026_05_30.py",
+ "seed": 42344,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6b8958a5",
+ "started_utc": "20260923T054544Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "cb955d8decbdfcdd7130452b7da8533efdb89da3a78e0f6df35a806e87827c77",
+ "stdout_tail": "B3 check: lepton sqrt-mass variance ratio vs the cross-sector 2/9=(N-1)/N^2:\n  r=0.5: var/(sum)^2 = 0.1111 = (2/9)r ; Q=0.6667\n  r=1.0: var/(sum)^2 = 0.2222 = (2/9)r ; Q=1.0000\n  => r=1/2 gives 1/9 (NOT 2/9); the 2/9 cross-sector value -> r=1 -> Q=1 (distinct objects).\n\nA5 check: y_tau-self-term Delta Q ~ 4.29e-05 vs 0.333 needed -> shortfall ~7769x\n\nA7 check: Q linear in r -> 0.91 sigma maps to r-window ~[0.49996,0.50002] (width 6.1e-5);\n  nearest simple fraction (4/9,5/9) ~5450 sigma. Relaxing the target SHARPENS the pin.\n\nVERDICT: 0/4 live assumptions fell -> r=1/2 robustly the irreducible pin.\nStructural reason: framework reaches DISCRETE data + endpoints, never the CONTINUOUS modulus r.\nOne route left: a NATIVE (framework baseline) matter beta-function with a 1/2-attractor (needs bridge-gap action).\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T054544Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

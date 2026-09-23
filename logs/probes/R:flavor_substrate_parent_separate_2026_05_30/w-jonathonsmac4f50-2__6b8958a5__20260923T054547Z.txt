@@ -1,0 +1,11 @@
+[PASS] D1 coin-blind grading forces K into even value slot plus odd chiral slot
+[PASS] D2 value side commutes with Gamma_chi and C; chiral side anticommutes with Gamma_chi
+[PASS] D3 diag(1,omega) has order 3 and determinant omega
+[PASS] D4 diag(1,omega) is not one of the supplied Z2 spin-factor charges
+[PASS] D5 source guard: native/non-native status and only-way theorem are left open
+
+SCORECARD PASS=5 FAIL=0
+VERDICT: on the supplied Z2 spin-factor reading, the naive lift splits
+into separate value and chirality slots. Unification on this route
+requires an order-3 complex charge diag(1,omega), but this runner does
+not decide that charge's native status in full complex M2(C).

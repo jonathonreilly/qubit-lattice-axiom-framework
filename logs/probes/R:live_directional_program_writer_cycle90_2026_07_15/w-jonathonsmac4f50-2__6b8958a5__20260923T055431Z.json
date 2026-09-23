@@ -1,0 +1,32 @@
+{
+ "task": "R:live_directional_program_writer_cycle90_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "live",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/live_directional_program_writer_cycle90_2026_07_15.py",
+ "seed": 42871,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6b8958a5",
+ "started_utc": "20260923T055431Z",
+ "elapsed_s": 15.9,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4b93233e9a1837a79b7eccb287120cd05612791bf781d1c66a544c49d9f4a527",
+ "stdout_tail": "s trivial stabilizer\nPASS B08 all 4,608 writer stages have exact frontier :: []\nPASS B09 writer graph has 4,352 edges and 256 terminals :: (4352, 256)\n\n===============================================================================\nC - Four full rows through 48-bit compare and output write\n===============================================================================\nPASS C01 stream source has 193 supplied records\nPASS C02 stream reuses Cycle-89 equality row\nPASS C03 all 3,648 one-role substitutions stop quietly :: []\nPASS C04 four pipelines have 264 states, 260 edges, four terminals :: (264, 260, 4)\nPASS C05 every full-row physical frontier is exact :: []\nPASS C06 terminal words are exactly the four live outputs\nPASS C07 each pipeline has 262 supplied source records\n\n===============================================================================\nD - Proper-cubic covariance and residual boundary\n===============================================================================\nPASS D01 all 96 transformed pipeline controls are exact :: []\nFAIL D02 note exists and carries authority none\nFAIL D03 note says all streams and program rails are supplied\nFAIL D04 note names the open-direction residual\nFAIL D05 note names serial-selector residual\nFAIL D06 note denies foundation and axiom effects\n\nPROGRAMS=236 SLOT_BITS=48 EMPTY_SLOTS=742 SIX_ROWS=4\nOUTPUT_CANONICAL=5 OUTPUT_RAW=48 PHYSICAL_UNION_RAW=5452\nFULL_ROW_STATES=264 FULL_ROW_EDGES=260 SUBSTITUTIONS=3648\nSUMMARY: 26 PASS / 5 FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T055447Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

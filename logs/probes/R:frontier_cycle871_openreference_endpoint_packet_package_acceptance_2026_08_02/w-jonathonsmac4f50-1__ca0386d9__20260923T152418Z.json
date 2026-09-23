@@ -1,0 +1,32 @@
+{
+ "task": "R:frontier_cycle871_openreference_endpoint_packet_package_acceptance_2026_08_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle871_openreference_endpoint_packet_package_acceptance_2026_08_02.py",
+ "seed": 77058,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ca0386d9",
+ "started_utc": "20260923T152418Z",
+ "elapsed_s": 309.4,
+ "returncode": 1,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c161794616fa69a2b11c8ef4af3a94cec94377f9f591cbe64844d513788699b2",
+ "stdout_tail": "CYCLE871_ENDPOINT_PACKET_PACKAGE_ACCEPTANCE_FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T152927Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

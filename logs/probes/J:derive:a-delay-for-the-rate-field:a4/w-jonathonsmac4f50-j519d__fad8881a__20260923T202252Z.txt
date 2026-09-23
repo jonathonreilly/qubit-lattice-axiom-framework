@@ -1,0 +1,64 @@
+PASS 1.1a on-site sum v^2/w: L dt changes under t->f(t) and the change vanishes iff f''=0 :: change = -f2*(2*f1*v1*w2 + 2*f1*v2*w1 - f2*w1 - f2*w2)/(f1**2*w1*w2)
+PASS 1.1b wall-referred sum (v - v_ref)^2/w: L dt unchanged for every f
+PASS 1.1c weight one: a(w)=1/w gives a(s w) s^2 = s a(w)
+PASS 1.2 Euler-Lagrange of the kinetic term = (u'' - u'^2/2)/(gamma c^2 w)
+PASS 1.3 dF/du_x = (12/gamma) phi_x (phi_x - average of phi)
+PASS 1.4a u'' - u'^2/2 = 2 phi''/phi - 4 phi'^2/phi^2
+PASS 1.4b phi'' = 2 phi'^2/phi + c^2 phi^4 Lap(phi) - (gamma c^2/2) phi^3 e
+PASS 1.5a linear part = c^2 wbar^2 (sum_j u_j - 6 u_x) - gamma c^2 wbar e :: -c**2*e*gamma*wbar + c**2*u_1*wbar**2 + c**2*u_2*wbar**2 + c**2*u_3*wbar**2 + c**2*u_4*wbar**2 + c**2*u_5*wbar**2 + c**2*u_6*wbar**2 - 6*c**2*u_x*wbar**2
+PASS 1.5b in the form c^2 wbar^2 * const * (average of u - u): const = 6
+PASS 1.6 linearization about any background: coefficient of each neighbour = c^2 w_x^2 (w_x = phi0_x^2)
+PASS 1.7a |grad_k sqrt(E)|^2 = sum sin^2(k/2)cos^2(k/2) / sum sin^2(k/2)  (<= 1 since cos^2 <= 1)
+PASS 1.7b along an axis omega = 2 c wbar sin(k/2): group speed -> c wbar as k -> 0
+PASS 2.1 V < c: steady co-moving field -1/sqrt(z'^2 + (1-V^2/c^2) rho^2) solves the steady law off the body
+PASS 2.2a V = c: Lienard-Wiechert denominator c(t - t_r) - (z - c t_r) = c t - z, independent of rho :: t_r = [(c**2*t**2 - rho**2 - zeta**2)/(2*c*(c*t - zeta))]
+PASS 2.2b V = c: wake energy lower bound pi int (c^2t^2 - z^2)/(ct - z)^4 dz grows linearly in t :: integral = pi/(4*c*t) - pi/a + pi*c*t/a**2
+PASS 2.3 resonance c|k| = |k| V cos(theta): no direction for V = c/2 or 9c/10; the cone cos(theta) = c/V for V = 2c; for V = c, theta = 0
+PASS 2.4 V(p) = p/sqrt(m^2+p^2): V^2 = V0^2 at p^2 = m^2 V0^2/(1-V0^2); 1 - V^2 = m^2/(m^2+p^2) > 0; V -> 1 as p -> oo
+PASS 3.1a 2t(1 - cos(s/sqrt t)) = s^2 - s^4/(12 t) + O(t^-2)
+PASS 3.1b cos(n s/sqrt t) = 1 - n^2 s^2/(2t) + O(t^-2)
+PASS 3.1c e^{-2t}I_n(2t) = (4 pi t)^{-1/2} (1 - (4n^2-1)/(16 t) + O(t^-2))
+PASS 3.1d c1(x) = -|x|^2/4 + 3/16
+PASS 3.2a lambda^1 coefficient (4pi)^{-3/2} Gamma(-1/2) = -1/(4 pi), the same at every site
+PASS 3.2b lambda^3 coefficient c1(x) (4pi)^{-3/2} Gamma(-3/2) = -(|x|^2 - 3/4)/(24 pi)
+PASS 3.2c continuum comparator e^{-lam r}/(4 pi r) = 1/(4pi r) - lam/(4pi) + lam^2 r/(8pi) - lam^3 r^2/(24 pi) + ...
+PASS 3.3a <sum_j n_j^4> over the sphere = 3/5
+PASS 3.3b density of states near E = 0: sqrt(E)/(4 pi^2) (1 + E/8)
+PASS 3.3c Im g(0,omega) = pi DOS(omega^2/c^2) agrees with the lambda^1 and lambda^3 terms at x = 0
+PASS 3.4 grad of (|x-y|^2 - 3/4) is 2(x - y): the lattice constant carries no pull
+PASS 3.5 [executed] (4 pi t)^{3/2} p_t(x) - 1 - c1(x)/t is O(t^-2) at t = 100..1600 :: max |t^2 * remainder| = 4.656
+PASS 4.1a exact static lattice solution: ledger <H_w> + F = sum_x e_x/phi_x (far charge) :: ledger = 98472010604/55122246973
+PASS 4.1b wall flux sum (1 - phi) = (gamma/2) x ledger (Gauss form of 'the far field reads the ledger')
+PASS 4.1c the naive linear-in-u charge sum e = sum m phi^2 differs from the ledger here
+PASS 4.2a far charge sum eps phi = M + T + U (to the order of U)
+PASS 4.2b the linear-in-u source sum e/wbar = M + T + 2U
+PASS 4.3a local units: both sides of Step 1.4 scale as wbar^{5/2}, leaving theta'' - 2theta'^2/theta = c^2 theta^4 [Lap theta - (gamma/2) eps theta]
+PASS 4.3b (Lap - d^2/dtau^2 / c^2) theta = sigma, sigma = (gamma/2) eps theta + [theta''(theta^-4 - 1) - 2 theta'^2 theta^-5]/c^2
+PASS 4.4 Lap(-2 pi r) = -4 pi/r in three dimensions (the cross integral int dx/(|x-a||x-b|) = C - 2 pi |a-b|)
+PASS 5.1 matched pulls: with S proportional to E the two pulls cancel (D'' = sum F = 0 at leading order)
+PASS 6.1a <n_i n_j> = delta_ij/3
+PASS 6.1b <n_i n_j n_k n_l> = (dd+dd+dd)/15
+PASS 6.1c <(n.J.n)^2> = (2 J:J + (tr J)^2)/15 for symmetric J
+PASS 6.2 power prefactor (1/gamma)(1/c)(gamma/(4 pi))^2 (4 pi) = G/c with G = gamma/(4 pi)
+PASS 6.3a Lagrange-Jacobi on Kepler orbits: tr I''' = -2 dU/dt
+PASS 6.3b <P> c^5 = (16/15) G^4 mu^2 M^3/a^5 (1 + 99e^2/32 + 51e^4/128)/(1-e^2)^{7/2}
+PASS 6.3c comparator check: (G/5)<Q''':Q'''> reproduces 32/5 (1 + 73e^2/24 + 37e^4/96)/(1-e^2)^{7/2}
+PASS 6.3d circular orbits: scalar/comparator = 1/6
+PASS 6.4 the linear-in-u reading adds (G/c)<(tr I''')^2>(1/4 - 1/(6c^2)) = spurious monopole power :: = -G**4*M**3*e**2*mu**2*(3*c**2 - 2)*(e**2 + 4)/(24*a**5*c**3*sqrt(1 - e)*(e - 1)**3*(e + 1)**(7/2))
+PASS 6.5 <(tr I''')^2> = G^3 M^3 mu^2 e^2 (4+e^2) / (2 a^5 (1-e^2)^{7/2}): zero on circles
+exact part done in 5.8 s
+PASS E1.0 [executed] lattice G(0) = 0.2527310... :: G(0) = 0.252731009855
+EXEC E1 m=0.02 wbar=1.0: half-rise times at r=[6, 8, 10, 12, 14, 16, 18]: [6.249, 8.285, 10.332, 12.365, 14.394, 16.42, 18.443]  fitted speed 0.9839 sites per unit t
+EXEC E1 m=0.02 wbar=2.0: half-rise times at r=[6, 8, 10, 12, 14, 16, 18]: [3.098, 4.115, 5.138, 6.155, 7.169, 8.182, 9.194]  fitted speed 1.9681 sites per unit t
+EXEC E1 m=6.0 wbar=1.0: half-rise times at r=[6, 8, 10, 12, 14, 16, 18]: [6.379, 8.425, 10.464, 12.492, 14.513, 16.53, 18.544]  fitted speed 0.9868 sites per unit t
+EXEC E1 m=6.0 wbar=2.0: half-rise times at r=[6, 8, 10, 12, 14, 16, 18]: [3.16, 4.183, 5.203, 6.216, 7.226, 8.234, 9.241]  fitted speed 1.9739 sites per unit t
+PASS E1.a [executed] front speed = c x ambient rate within 3% at wbar = 1 and 2 (source m = 0.02) :: speeds 0.9839, 1.9681, ratio 2.0003
+PASS E1.b [executed] front speed = c x ambient rate within 3% at wbar = 1 and 2 (source m = 6.0) :: speeds 0.9868, 1.9739, ratio 2.0003
+EXEC E2 held well m_B=0.01 per site on a ball of radius 3: w at the ray's closest point = 0.9835  measured delay 0.302  straight-ray int(1/w - 1) dl = 0.277
+EXEC E2 held well m_B=0.02 per site on a ball of radius 3: w at the ray's closest point = 0.9678  measured delay 0.594  straight-ray int(1/w - 1) dl = 0.549
+EXEC E2 held well m_B=0.05 per site on a ball of radius 3: w at the ray's closest point = 0.9242  measured delay 1.402  straight-ray int(1/w - 1) dl = 1.333
+EXEC E2 held well m_B=0.1 per site on a ball of radius 3: w at the ray's closest point = 0.8623  measured delay 2.539  straight-ray int(1/w - 1) dl = 2.550
+PASS E2 [executed] a probe pulse through slow clocks is delayed by the straight-ray integral of (1/w - 1)/c within 12% :: worst relative deviation 0.092
+total 13.7 s; PASS=52 FAIL=0
+SUMMARY: PARTIAL (a) weak-field law u'' = c^2 wbar^2 Lap u - gamma c^2 wbar e, const 6 in the (average - u) form, principal part c^2 w_x^2 Lap about every static background (c sites per local tick); (b) c is fixed by neither covariance nor scale covariance; 'no ever-growing wake for every body' is c >= 1, an inequality; (c) the lattice retarded kernel's odd part is -lam/(4pi) (the same at every site) and -lam^3(|x|^2 - 3/4)/(24pi); the far field's monopole charge is the ledger, so the monopole is silent at leading order (the linear-in-u reading radiates spuriously); the dipole is silent at leading order by matched pulls; leading power (G/(60c^5))<2 I''':I''' + (tr I''')^2> = (16/15)(G^4 mu^2 M^3/(c^5 a^5))(1 + 99e^2/32 + 51e^4/128)/(1-e^2)^{7/2}, 1/6 of the comparator at e = 0
+HIT: within blocks 53-57's supplied clauses, the rate field's motion referred to the wall clocks has local speed c w_x (principal part, every background); no-growing-wake for all bodies is exactly c >= 1 (continuum level); the far monopole charge equals the ledger, so two circling point bodies radiate at leading order only through the scalar quadrupole with trace: <P> = (16/15) G^4 mu^2 M^3 (1 + 99e^2/32 + 51e^4/128)/(c^5 a^5 (1-e^2)^{7/2}), G = gamma/(4 pi), local units; the lattice retarded kernel's odd terms are -lam/(4 pi) and -lam^3 (|x|^2 - 3/4)/(24 pi)

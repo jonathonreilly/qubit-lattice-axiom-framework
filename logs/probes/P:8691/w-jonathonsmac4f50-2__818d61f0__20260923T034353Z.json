@@ -1,0 +1,36 @@
+{
+ "task": "P:8691",
+ "type": "pr-reexecution",
+ "lane": "relational-frames-one-qubit-spirals-2026",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8691",
+ "pr": 8691,
+ "branch": "claude/relational-frames-one-qubit-spirals-20260922",
+ "git_sha": "818d61f0",
+ "started_utc": "20260923T034353Z",
+ "elapsed_s": 4.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/relational_frames_in_one_qubit_spiral_records_under_possibility_covariance_2026_09_22.py",
+    "returncode": 0,
+    "total": "PASS=7 FAIL=0"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "3198f013646d0e433f6d99a90aa11877ee45edd129355b5ac6c3985795d3822c",
+ "stdout_tail": "PR #8691: docs(campaign): relational frames in one qubit via spiral records\nbranch claude/relational-frames-one-qubit-spirals-20260922 (base main)\nrunners in the PR: 1\n== scripts/relational_frames_in_one_qubit_spiral_records_under_possibility_covariance_2026_09_22.py: rc=0 PASS=7 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T034358Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

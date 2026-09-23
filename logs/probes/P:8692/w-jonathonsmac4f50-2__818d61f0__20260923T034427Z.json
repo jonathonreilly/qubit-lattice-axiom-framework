@@ -1,0 +1,37 @@
+{
+ "task": "P:8692",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block90-light-",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8692",
+ "pr": 8692,
+ "branch": "physics-loop/admissibility-induced-law-block90-light-cone-formation-keeps-memory-in-3plus1-20260923",
+ "git_sha": "818d61f0",
+ "started_utc": "20260923T034427Z",
+ "elapsed_s": 14.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_light_cone_formation_keeps_memory_in_3plus1_stationary_law_one_layer_of_a_reflection_positive_bilayer_2026_09_23.py",
+    "returncode": 0,
+    "total": "PASS=15 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "4e637c93eeb7e8064f96a0fecc93a7a263fbfdb04b200434df24b99e1f05be4d",
+ "stdout_tail": "PR #8692: physics-loop: admissibility induced-law block 90 - light-cone formation keeps memory in 3+1: its stationary law is one layer of a reflection-positive bilayer, ordered above beta = 0.5905\nbranch physics-loop/admissibility-induced-law-block90-light-cone-formation-keeps-memory-in-3plus1-20260923 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_light_cone_formation_keeps_memory_in_3plus1_stationary_law_one_layer_of_a_reflection_positive_bilayer_2026_09_23.py: rc=0 PASS=15 FAIL=0\n   mutation light_cone_not_reversible: expected B observed B ok\n   mutation level_order_reversible: expected B observed B ok\n   mutation relabelling_not_an_isomorphism: expected C observed C ok\n   mutation rung_branch_shift_is_one: expected C observed C ok\n   mutation a_crossing_edge_is_not_a_mirror_pair: expected D observed D ok\n   mutation layer_halves_positive: expected D observed D ok\n   mutation threshold_without_the_rung_branch: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T034441Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,13 @@
+PR #8692: physics-loop: admissibility induced-law block 90 - light-cone formation keeps memory in 3+1: its stationary law is one layer of a reflection-positive bilayer, ordered above beta = 0.5905
+branch physics-loop/admissibility-induced-law-block90-light-cone-formation-keeps-memory-in-3plus1-20260923 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_light_cone_formation_keeps_memory_in_3plus1_stationary_law_one_layer_of_a_reflection_positive_bilayer_2026_09_23.py: rc=0 PASS=15 FAIL=0
+   mutation light_cone_not_reversible: expected B observed B ok
+   mutation level_order_reversible: expected B observed B ok
+   mutation relabelling_not_an_isomorphism: expected C observed C ok
+   mutation rung_branch_shift_is_one: expected C observed C ok
+   mutation a_crossing_edge_is_not_a_mirror_pair: expected D observed D ok
+   mutation layer_halves_positive: expected D observed D ok
+   mutation threshold_without_the_rung_branch: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

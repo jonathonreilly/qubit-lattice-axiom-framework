@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-23 block 91 — author checks (not a review PASS)
+Written lens pass by the supervisor (Claude Opus 5.5). Reversibility with a source proved before any equilibrium tool; response as a covariance checked exactly; the upper bound's machinery exercised on the ladder with rational enclosures of beta; the lower bound's algebra symbolic; the sharper floor with `⟨P_b⟩` added after noticing the slab bonds' symmetry; the control's apparent violations of the floor traced to a wandering direction (no field) and a nonlinear source (8 per cent of the local field) and removed by `ε = 0.02`, `h = 0.1` checked against `h = 0.05`; three classical names removed from the claim sections; blocks 19 and 20 found to hold the static law's window already, and the novelty statement narrowed to the formation law's response, the `⟨P_b⟩` floor and the near-saturation. Census 8/8 in family.

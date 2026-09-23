@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+## Block 91 (2026-09-23)
+```yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: "the gravity node's kernel under the owner's reading (blocks 29, 35); the probes' source-potential scans under light-cone formation, executed only"
+source_of_blocker_text: 2026-09-23 harvest and block 90
+reachability_to_target: advances
+artifact_role: theorem
+next_trace_action: "the held source's response under light-cone formation lies between <m>^2/(<P_b>E(k) + eps<m>) and 1/E(k) at every wave vector; next: the two-source interaction; a sharper small-k statement; the level-ordered law; an other-family referee"
+```

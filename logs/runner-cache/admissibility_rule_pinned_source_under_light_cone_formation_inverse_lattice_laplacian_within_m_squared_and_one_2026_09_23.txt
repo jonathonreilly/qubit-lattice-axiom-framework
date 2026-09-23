@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_pinned_source_under_light_cone_formation_inverse_lattice_laplacian_within_m_squared_and_one_2026_09_23.py
+runner_sha256: 209ff6fd696b70aecef65b285e6543dccbf7a85f3e1ffc734637566f0b86c444
+input_fingerprint_sha256: 48a5135c1d08347ae3aef81f17cced17b0fb1a8a506450f2486d16b31fabb64b
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 5.20
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_A_PINNED_SOURCE_UNDER_LIGHT_CONE_FORMATION_IS_ANSWERED_BY_THE_INVERSE_LATTICE_LAPLACIAN_WITHIN_A_FACTOR_BETWEEN_M_SQUARED_AND_ONE_BOUNDED_THEOREM_NOTE_2026-09-23.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: with a uniform field and a source pinned at one site, both added to the rule's argument (weights t^(s'.h) v^(s'_1) u^(s'_1 [x = 0]); t, v, u symbolic), the light-cone chain satisfies detailed balance for every pair of configurations with pi(s) = v^(sum s_1) u^(s_0,1) prod_x Z_x(s), on a ring of four (two values) and a ring of three (four six-axis contents): the source keeps the chain reversible
+PASS: B2 T1: pi is the level marginal of the doubled graph's ferromagnet t^(sum over edges s.s') with the uniform field on every vertex and the source on BOTH vertices of the pinned site (the level below and the level above), exactly for all 16 configurations of the ring of four
+PASS: C1 T2: on the ring of four (two values, symbolic t), the derivative of the stationary <s_x> with respect to the source's weight u = e^(beta h) at u = 1 equals Cov(s_(x,0), s_(0,0) + s_(0,1)) under the doubled graph's ferromagnet, at every x: the response is beta x the covariance with the pinned site's records on both levels
+PASS: C2 T2: in the bilayer's labels (x, b) = (x, a XOR parity(x)) the pinned site's two records are the two slabs at x0, so the response is 2 beta Cov(S_+(x), S_+(x0)), S_+ the slabs' mean (checked at every x); a level's structure factor is exactly <|S_+^(k)|^2> + <|S_-^(k + pi)|^2> with no cross term, at all four wave numbers of the ring (the slab swap kills the cross terms)
+PASS: D1 T3: the parity relabelling maps the doubled ring of four onto the ladder (two rings and four rungs, 12 edges); on the ladder with two-valued spins, Z(h) = sum_s prod_edges exp(-(beta/2)(s_u - s_v - h_u + h_v)^2) <= Z(0) exactly for all 2187 fields h in {-1, 0, 1} (one vertex held at 0) at t = e^beta = 4, and for all 128 fields in {0, 1} at t = 9/4 (Gaussian domination, t^(1/2) rational)
+PASS: D2 T3: on the Ising ladder at t = 4 and t = 9/4, the response 2 beta N^-1 <|S_+^(k)|^2> is at most 1/E_1(k), E_1 = 2 - 2 cos k, at all three wave numbers k != 0, exactly (beta bounded above by 1387/1000 and 811/1000, certified by a partial sum of the exponential series exceeding t): the upper bound's instance on the smallest ladder
+PASS: E1 T3: for the rotation generator about an axis perpendicular to the field, weighted by c_u (D = sum c_u L_u), exactly: D-bar D of a bond's energy -s_u.s_v is |c_u - c_v|^2 (s^x_u s^x_v + s^z_u s^z_v), at most |c_u - c_v|^2; D-bar D of the field's energy -eps s^z_u is eps |c_u|^2 s^z_u; D of sum_u c-bar_u s^x_u is sum_u |c_u|^2 s^z_u; and the rotation field has zero integral on the sphere against every monomial of degree at most 3 (the integration by parts behind <D F> = beta <F D H>)
+PASS: E2 T3: on the 4^3 bilayer, sum over edges of |e^(ik.x_u) - e^(ik.x_v)|^2 = 2N E(k) exactly at all 64 wave vectors (slab bonds 2 - 2 cos k_j on both slabs; rungs 0), and N E(k) on the single 4^3 torus (the static law's case)
+PASS: E3 T3: the two bounds' algebra: with <D F> = 2N<m>, <D-bar D H> = 2N(<P_b> E(k) + eps<m>) (P_b = s^x s^x' + s^z s^z' on a bond to a displaced predecessor, alike on all of them by symmetry; rungs carry no weight) and F = 2 S_+^(k), the derivation inequality gives R_perp(k) >= <m>^2/(<P_b> E(k) + eps<m>) >= <m>^2/(E(k) + eps<m>) since <P_b> <= 1; with the infrared bound N^-1 <|S_+^(k)|^2> <= 1/(2 beta E(k)) it gives R_perp(k) <= 1/E(k); the weights 1 - cos(k.x) of R(0) - R(x) = N^-1 sum_k (1 - cos k.x) R^(k) are nonnegative (all 4096 pairs on 4^3), so the window carries over to potential differences
+PASS: E4 T4: the gain-one linear model with the sphere rule's gain A(7 beta)/7 at the aligned configuration and predecessor average 1 - E(k)/7 answers A(7 beta)/E(k), inside the window only where A(7 beta) >= <m>^2; the probes' linear prediction (h/(7 beta)) 7/E(k), their field entering as e^(s'.h), is exactly the upper bound h/(beta E(k))
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - detailed balance with a field and a source for every pair of configurations on rings of three and four (t, v, u symbolic); the level marginal for every configuration
+per_site: executed - the response at every site of the doubled ring of four against the covariance, in both labellings; the bilayer stiffness sum over every edge of the 4^3 bilayer
+per_mode: executed - the branch decomposition and the vanishing cross term at every wave number of the ring; the ladder upper bound at every nonzero wave number at two couplings; control: the response mode by mode on 16^3 planes against 1/E(k) and m^2/E(k)
+per_block: executed - Gaussian domination on the ladder for 2315 fields at two couplings; the derivation algebra and the sphere integrals symbolically; the two bounds' algebra; the linear comparator
+lattice_wide: T1 for every ring or torus and every menu by the symmetry of the stencil (checked on rings); T2 for every even L by the slab swap (checked on the ring of four); T3's upper bound for every even L by block 90's Gaussian domination and its lower bound for the sphere menu by the derivation inequality, both for every beta and every uniform field; the passage to infinite volume and the positivity of the spontaneous direction are not proved here; the clause, the menu, the coupling and the source are supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: a pinned source under light-cone formation - a uniform field and a source added to the rule keep the chain reversible, the response of a level's records equals beta times their covariance with the source site's records on both levels, i.e. 2 beta times the bilayer's symmetric-branch covariance, and mode by mode <m>^2/(E(k) + eps<m>) <= R_perp(k) <= 1/E(k): the inverse lattice Laplacian within a factor between the squared mean record direction and one; the probes' linear prediction is the upper bound; nothing adopted
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

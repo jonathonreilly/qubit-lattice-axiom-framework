@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_dm_wilson_direct_descendant_canonical_path_selector_theorem_2026_04_19",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_dm_wilson_direct_descendant_canonical_path_selector_theorem_2026_04_19.py",
+ "seed": 60529,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1adc8349",
+ "started_utc": "20260923T104849Z",
+ "elapsed_s": 24.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=25 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1c0202b4937d0d8d38724956b561699bcb1926897ab3138815350f10df6acb40",
+ "stdout_tail": "he whole audit lives in the five-component source chart (x0, x1, y0, y1, delta) on the canonical carrier, and the open question is which path through that chart is selected, not what any site contributes.\n  per_mode: checked \u2014 singular and eigen modes are resolved individually. local_rank_data() counts the observable Jacobian's singular values one at a time against 1e-8 and reports the smallest, and solve_metric() eigendecomposes each flow metric and floors its eigenvalues mode by mode at 1e-8 before inverting, so every metric direction is handled separately.\n  per_block: checked \u2014 local_rank_data() performs an explicit block split of the observable Jacobian. The eta_1 constraint row jac[0:1,:] defines the tangent block through null_space, and the remaining response rows jac[1:,:] are restricted onto that block and re-ranked on their own, so transverse rank is certified separately from the constraint direction.\n  lattice_wide: checked and not executed \u2014 nothing here has extent and no asymptotic limit is taken. The longest executions are a gradient flow capped at 8000 steps of size 2e-3 with a 60-step bisection onto eta_1 = 1, and brentq on the segment parameter lambda over [0,1]; these are trajectories in a five-parameter chart, not a lattice sweep.\n\n========================================================================================\nSUMMARY: PASS=25 FAIL=0\nVERDICT: PATH STILL CHOSEN\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T104913Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

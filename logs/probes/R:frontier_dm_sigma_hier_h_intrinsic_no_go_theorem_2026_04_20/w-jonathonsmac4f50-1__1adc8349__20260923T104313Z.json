@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_dm_sigma_hier_h_intrinsic_no_go_theorem_2026_04_20",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_dm_sigma_hier_h_intrinsic_no_go_theorem_2026_04_20.py",
+ "seed": 60193,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1adc8349",
+ "started_utc": "20260923T104313Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "97331342b4ab307440b33aa48de8f77da57cbb84cf2040edc67718137b17f438",
+ "stdout_tail": " off one pinned 3x3 Hermitian H_pin at (m_*, delta_*, q_+*) = (0.657061, 0.933806, 0.715042), whose three rows are charged-lepton flavor labels; the surviving ambiguity is a labeling question at a single point, so there is no site to resolve.\nper_mode: checked \u2014 the three eigenmodes of H_pin are extracted in ascending eigenvalue order via argsort and the spectrum is confirmed common to both sigma choices, together with trace(H_pin), trace(H_pin^2) and det(H_pin). That per-mode identity is exactly why an H-intrinsic selector is blind: the modes do not differ, only their assignment to flavor rows does.\nper_block: checked \u2014 the mu<->tau swap is block-resolved: it fixes the electron row and acts only inside the 2x2 mu-tau doublet block, and the runner verifies P_+ = S_(mu tau) P_- to atol 1e-12. The Jarlskog sign flip between +/-0.9873607592 is produced entirely by that one doublet-block transposition.\nlattice_wide: checked and not executed \u2014 there is no lattice, extent, or asymptotic limit here. The evidence is exact linear algebra at the single pinned chamber point above; no volume scaling or continuum statement is attempted, and none is needed since the obstruction is already exhibited at that one pin.\n\nInterpretation:\n  The surviving sigma_hier ambiguity is not an ambiguity of H_pin.\n  It is the residual mu<->tau flavor-label ambiguity after\n  diagonalization. Any selector family living only on H_pin, or any\n  mu<->tau-even PMNS scalar family, is blind to it.\n\nPASS=11 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T104313Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

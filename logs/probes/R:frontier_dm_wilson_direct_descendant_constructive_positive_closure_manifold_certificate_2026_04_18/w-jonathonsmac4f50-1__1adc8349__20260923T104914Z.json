@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dm_wilson_direct_descendant_constructive_positive_closure_manifold_certificate_2026_04_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_dm_wilson_direct_descendant_constructive_positive_closure_manifold_certificate_2026_04_18.py",
+ "seed": 60554,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1adc8349",
+ "started_utc": "20260923T104914Z",
+ "elapsed_s": 3.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e701dd50f1b619e5d5e2af63c431367d1ecab7c283829c6550d4df8b802ae01b",
+ "stdout_tail": "|1 - F'(I_e)/F'(e_base)|_max: 4.914018e-01\n  bracket half-width r:                              1.000000e-03\n  K-image half-width upper bound (|N| + r*c):        4.914018e-04\n  contracted-image half-width r*(1 - c):             5.085982e-04\n  [PASS] Krawczyk contraction factor c < 1 (necessary for uniqueness)  (c = 4.914018e-01)\n  [PASS] K(I_e) is strictly contained in interior of I_e  (|N| + r*c = 4.914018e-04 < r = 1.000000e-03)\n  [PASS] Newton correction fits inside contracted bracket interior  (|N| = 2.529402e-13 < r*(1-c) = 5.085982e-04)\n\n========================================================================================\nPART 7: WRITE THE CERTIFICATE JSON\n========================================================================================\n  certificate written to outputs/dm_wilson_constructive_positive_closure_manifold_certificate_2026-04-18.json\n  [PASS] Certificate JSON written to disk  (size=4469 bytes)\n\n========================================================================================\nPART 8: BOTTOM LINE\n========================================================================================\n  [PASS] Krawczyk-interval regular-root certificate established for the base point  (sign-change + uniform F' bound + strict K-contraction all hold on the bracket)\n\n========================================================================================\nSUMMARY: PASS=10 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T104918Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_dm_wilson_direct_descendant_constructive_positive_closure_manifold_certificate_2026_04_18.txt against the .txt beside this log"
+  ]
+ }
+}

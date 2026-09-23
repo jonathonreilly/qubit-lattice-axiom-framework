@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_dm_wilson_direct_descendant_canonical_fiber_mixed_spectral_branch_weight_no_go_2026_04_19",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_dm_wilson_direct_descendant_canonical_fiber_mixed_spectral_branch_weight_no_go_2026_04_19.py",
+ "seed": 60498,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1adc8349",
+ "started_utc": "20260923T104818Z",
+ "elapsed_s": 12.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "59eb785951b0b91807200b8c62f3afabbc0a073c74f5b0fa5a648f15690c79cc",
+ "stdout_tail": "der test is by construction a local scalar law on the positive source fiber over one canonical favored-column orbit, so locality is the note's premise rather than something swept; H_e is a single local matrix and no site-resolved quantity is built or compared.\nper_mode: checked \u2014 the normalized Schur spectrum is resolved mode by mode by eigvalsh, sorted descending and divided by its own sum, and the full per-mode vector is printed for each alpha. The law then aggregates those mode weights into the single Shannon number, and Part 3's tradeoff is precisely that aggregate moving against the raw margin.\nper_block: checked \u2014 two block-level quantities are resolved. The canonical fiber is pinned by the favored-column power sums p2 and p3 held to their targets within 1e-12 for both sampled members, and the right-sensitive even-response pair (E1,E2) is moved and measured as a block by its own norm against 1e-4, separately from gamma and from Delta_src.\nlattice_wide: checked and not executed \u2014 there is no lattice and no asymptotic limit. The widest execution is a 4001-point scan of the interpolation parameter lambda on [0,1] along the segment from the aligned seed source to each selected source, which is a one-dimensional path through a five-parameter source space, not lattice extent.\n\n========================================================================================\nSUMMARY: PASS=10 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T104830Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

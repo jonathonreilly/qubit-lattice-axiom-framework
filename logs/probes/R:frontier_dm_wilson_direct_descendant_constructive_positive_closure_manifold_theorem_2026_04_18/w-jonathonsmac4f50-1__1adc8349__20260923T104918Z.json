@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dm_wilson_direct_descendant_constructive_positive_closure_manifold_theorem_2026_04_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_dm_wilson_direct_descendant_constructive_positive_closure_manifold_theorem_2026_04_18.py",
+ "seed": 60558,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1adc8349",
+ "started_utc": "20260923T104918Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=24 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4abe41d3af5d8f85222c2409c8addd8faac8b4247d53b80a5d99ed3f752c679a",
+ "stdout_tail": "y +1e-03 still admits an exact nearby eta=1 root  (root e=1.967799508545)\n  [PASS] That nearby root stays in the constructive positive branch after perturbing d by +1e-03  (Delta=0.000781272094)\n\n========================================================================================\nPART 3: CURRENT PROJECTED-SOURCE SCALARS VARY ON THE LOCAL EXACT-CLOSURE SET\n========================================================================================\n  [PASS] Delta_src is not locally constant on the exact constructive positive closure set  (span=7.042955e-05)\n  [PASS] gamma is not locally constant on the exact constructive positive closure set  (span=7.675094e-03)\n  [PASS] E1 is not locally constant on the exact constructive positive closure set  (span=8.268133e-03)\n  [PASS] E2 is not locally constant on the exact constructive positive closure set  (span=8.001017e-03)\n\n========================================================================================\nPART 4: BOTTOM LINE\n========================================================================================\n  [PASS] The exact constructive positive closure set is locally non-isolated and needs a new independent selector condition  (regular eta=1 equation + open inequalities => local positive-dimensional exact-closure family)\n\n========================================================================================\nSUMMARY: PASS=24 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T104918Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_dm_wilson_direct_descendant_constructive_positive_closure_manifold_theorem_2026_04_18.txt against the .txt beside this log"
+  ]
+ }
+}

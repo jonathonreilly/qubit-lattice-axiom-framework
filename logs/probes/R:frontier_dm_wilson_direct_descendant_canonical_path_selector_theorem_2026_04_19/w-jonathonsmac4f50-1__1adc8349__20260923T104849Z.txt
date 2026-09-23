@@ -1,0 +1,79 @@
+========================================================================================
+DM WILSON DIRECT-DESCENDANT CANONICAL PATH STATUS AUDIT
+========================================================================================
+
+========================================================================================
+PART 1: THE CURRENT ALIGNED-SEED -> CONSTRUCTIVE-WITNESS PATH REMAINS SUPPORT-LEVEL SCIENCE
+========================================================================================
+  [PASS] The current candidate affine path still reaches a unique exact eta_1 = 1 point  (lambda_*=0.795532193595)
+  [PASS] The current candidate root is still constructive and positive-branch  (pack=[1.       0.177466 0.247923 1.552086 0.006583])
+  [PASS] The current candidate root is still locally visible in the full observable chart  (min singulars=(1.590479e-03,1.591548e-03))
+
+========================================================================================
+PART 2: COMPETING FIXED-SEED AFFINE SELECTOR LAWS ALREADY EXIST
+========================================================================================
+  [PASS] The A+, B+, and C+ multiplicity endpoints are all constructive positive overshooting witnesses  (three retained overshooting witnesses on the same fixed seed surface)
+  [PASS] Each competing seed-fixed affine segment has an exact eta_1 = 1 root in (0,1)  (A+: 0.746363160385, B+: 0.999143075148, C+: 0.999586526822)
+  [PASS] Each competing affine crossing is transverse  (A+: d eta/dlambda=0.545503, B+: d eta/dlambda=0.414780, C+: d eta/dlambda=0.510978)
+  [PASS] Each competing affine root is itself constructive positive and locally complete  (A+, B+, and C+ all land on full-rank constructive positive exact roots)
+  [PASS] Those competing affine-selected roots are distinct from the current candidate root  (A+: dist=0.099644, B+: dist=0.266530, C+: dist=0.733775)
+
+========================================================================================
+PART 3: GEODESIC LANGUAGE DOES NOT MAKE THE CURRENT SEGMENT UNIQUE
+========================================================================================
+  [PASS] The current and competing selector segments are all straight affine geodesics in the natural constant-metric chart  (P: (0.0e+00, 1.1e-16); A+: (0.0e+00, 2.5e-16); B+: (0.0e+00, 1.6e-16); C+: (0.0e+00, 1.6e-16))
+  [PASS] So the standard affine-geodesic class already contains multiple constructive exact candidates  (P together with A+, B+, and C+)
+
+========================================================================================
+PART 4: THE OBVIOUS SEED-BASED ETA_1 GRADIENT FLOW IS METRIC-DEPENDENT
+========================================================================================
+  [PASS] The Euclidean and x1-heavy eta_1 gradient flows both hit exact eta_1 = 1 roots  (euclid: eta_1=1.000000000000, x1-heavy: eta_1=1.000000000000)
+  [PASS] Those gradient-flow roots are distinct, so the flow law depends on the chosen metric  (dist=0.078494)
+  [PASS] Neither obvious eta_1 gradient flow lands on the current constructive path-selected root  (euclid: dist_to_P=1.624214, x1-heavy: dist_to_P=1.649935)
+  [PASS] Neither obvious eta_1 gradient flow root is constructive positive  (euclid: pack=[ 1.        0.       -0.300455  0.011231  0.037109]; x1-heavy: pack=[ 1.        0.       -0.341398 -0.103936  0.036317])
+
+========================================================================================
+PART 5: NATURAL CARRIER PULLBACK GEOMETRIES STILL DO NOT RECOVER THE CURRENT ROOT
+========================================================================================
+  [PASS] The canonical Y- and H-carriers induce positive-definite pullback metrics at the aligned seed  (H-pullback: min eig=5.968896e-02; Y-pullback: min eig=9.404444e-02)
+  [PASS] The H- and Y-pullback eta_1 flows both hit exact eta_1 = 1 roots  (H-pullback: eta_1=1.000000000000, Y-pullback: eta_1=1.000000000000)
+  [PASS] Those pullback-flow roots are distinct, so even natural carrier geometries do not produce one canonical eta_1 flow  (dist=0.020960)
+  [PASS] Neither pullback-flow root lands on the current constructive path-selected point  (H-pullback: dist_to_P=1.595027, Y-pullback: dist_to_P=1.594874)
+  [PASS] Neither pullback-flow root is constructive positive  (H-pullback: pack=[ 1.        0.       -0.236231  0.223191  0.038093]; Y-pullback: pack=[ 1.        0.       -0.243929  0.208417  0.037647])
+
+========================================================================================
+PART 6: THE SOURCE-SURFACE SELECTOR PACKET DOES NOT DESCEND TO THIS LANE
+========================================================================================
+  [PASS] Every current exact direct-descendant root stays uniformly away from the source-surface intrinsic slot pair  (P: 1.005553, A+: 1.011810, B+: 1.136827, C+: 1.139620)
+  [PASS] Every current exact direct-descendant root also stays uniformly away from the source-surface CP pair  (P: 0.514999, A+: 0.519718, B+: 0.541670, C+: 0.538323)
+  [PASS] The constructive transport-plateau witnesses are likewise outside the source-surface sheet  (W0: (slot=1.047552, cp=0.514646); W1: (slot=1.101717, cp=0.536296); W2: (slot=1.111832, cp=0.529698); W3: (slot=0.969967, cp=0.528847))
+  [PASS] Even nearest-source-surface heuristics split on the plateau rather than selecting one witness direction  (slot nearest=W3, cp nearest=W0)
+
+========================================================================================
+PART 7: BOTTOM LINE
+========================================================================================
+  [PASS] The aligned-seed -> constructive-witness affine path is still chosen rather than derived  (competing affine/geodesic candidates exist; natural carrier pullback flows miss P; the source-surface selector packet does not descend)
+  [PASS] A future closure theorem must add either a direct-descendant -> source-surface bridge theorem or a microscopic value law on L_e itself  (a generic metric or borrowed source-surface law is not enough on the present retained packet)
+
+  current path root P   = [1.049267 0.483152 0.666307 0.084107 1.497666]
+  competing root A+ = [1.014977 0.492209 0.653283 0.119128 1.412372]
+  competing root B+ = [0.860633 0.327351 0.713328 0.104582 1.590138]
+  competing root C+ = [1.00713  0.301884 0.795716 0.029973 2.193449]
+  flow root   euclid = [0.585168 0.417071 0.266752 0.209285 0.      ]
+  flow root x1-heavy = [0.569279 0.422268 0.195768 0.238319 0.      ]
+  pullback root H-pullback = [0.651198 0.431546 0.306859 0.187944 0.      ]
+  pullback root Y-pullback = [0.639747 0.422065 0.320674 0.182706 0.      ]
+
+========================================================================================
+PART 8: N5 EXECUTION CERTIFICATE — WHAT THIS RUNNER RESOLVES
+========================================================================================
+  per_element: checked — constructive_positive() never accepts a root on a pooled score. It gates each observable coordinate on its own: |eta_1 - 1| below 1e-10, and then gamma, E1, E2 and Delta_src each required strictly positive individually. The same five coordinates are re-read one by one at every competing, flow and pullback root.
+  per_site: checked and not executed — no lattice site index is constructed anywhere. The whole audit lives in the five-component source chart (x0, x1, y0, y1, delta) on the canonical carrier, and the open question is which path through that chart is selected, not what any site contributes.
+  per_mode: checked — singular and eigen modes are resolved individually. local_rank_data() counts the observable Jacobian's singular values one at a time against 1e-8 and reports the smallest, and solve_metric() eigendecomposes each flow metric and floors its eigenvalues mode by mode at 1e-8 before inverting, so every metric direction is handled separately.
+  per_block: checked — local_rank_data() performs an explicit block split of the observable Jacobian. The eta_1 constraint row jac[0:1,:] defines the tangent block through null_space, and the remaining response rows jac[1:,:] are restricted onto that block and re-ranked on their own, so transverse rank is certified separately from the constraint direction.
+  lattice_wide: checked and not executed — nothing here has extent and no asymptotic limit is taken. The longest executions are a gradient flow capped at 8000 steps of size 2e-3 with a 60-step bisection onto eta_1 = 1, and brentq on the segment parameter lambda over [0,1]; these are trajectories in a five-parameter chart, not a lattice sweep.
+
+========================================================================================
+SUMMARY: PASS=25 FAIL=0
+VERDICT: PATH STILL CHOSEN
+========================================================================================

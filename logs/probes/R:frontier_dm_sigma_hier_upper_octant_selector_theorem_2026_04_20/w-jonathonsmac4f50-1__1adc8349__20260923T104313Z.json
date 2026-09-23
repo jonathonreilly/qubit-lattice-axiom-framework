@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dm_sigma_hier_upper_octant_selector_theorem_2026_04_20",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_dm_sigma_hier_upper_octant_selector_theorem_2026_04_20.py",
+ "seed": 60193,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1adc8349",
+ "started_utc": "20260923T104313Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=14 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7f4f877fcf630b308f9f4eaf684c90eeafb870383481aa46f6d04d94569d99be",
+ "stdout_tail": "=============\nPART 4: THE UPPER-OCTANT LAW SELECTS sigma = (2,1,0)\n========================================================================================\n sigma=(2,0,1): s23^2 - threshold = -0.085969789225\n sigma=(2,1,0): s23^2 - threshold = +0.004030153447\n  [PASS] sigma=(2,0,1) lies below the chamber upper-octant threshold  (gap=-0.085969789225)\n  [PASS] sigma=(2,1,0) lies above the chamber upper-octant threshold  (gap=+0.004030153447)\n  [PASS] So exactly one 9/9-magnitude-passing permutation is chamber-compatible\n  [PASS] The unique chamber-compatible hierarchy pairing is sigma=(2,1,0)  (s23^2=0.544999971336)\n\n========================================================================================\nPART 5: CP SIGN IS NOW A CONSEQUENCE, NOT AN IMPORT\n========================================================================================\n  [PASS] Once sigma=(2,1,0) is selected, the predicted CP sign is automatically negative  (sin(dCP)=-0.987360759210)\n  [PASS] The note records that upper-octant selection replaces the external CP-sign discriminator\n\n========================================================================================\nRESULT\n========================================================================================\n  sigma_hier = (2,1,0) is uniquely selected on the pinned chamber\n  package by the system:\n    - 9/9 NuFit magnitude pass\n    - exact chamber upper-octant law\n  The external CP-sign discriminator is no longer needed for I12 here.\n\nPASS=14 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T104314Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

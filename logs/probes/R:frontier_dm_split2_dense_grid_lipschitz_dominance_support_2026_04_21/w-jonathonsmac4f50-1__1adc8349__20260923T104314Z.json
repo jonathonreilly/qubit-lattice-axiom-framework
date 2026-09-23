@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_dm_split2_dense_grid_lipschitz_dominance_support_2026_04_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_dm_split2_dense_grid_lipschitz_dominance_support_2026_04_21.py",
+ "seed": 60194,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1adc8349",
+ "started_utc": "20260923T104314Z",
+ "elapsed_s": 293.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8545a830f4f46f723271cef30efd0fbe302c67799070373a5b240fa9ac2c6563",
+ "stdout_tail": "   CAP best \u03b7 = 0.884530, ENDPOINT best \u03b7 = 0.883987\n\n========================================================================================\nSUMMARY\n========================================================================================\nPASSED: 9/9\n  [PASS] C.1 CAP_BOX dense-grid max \u03b7_best < 1 with margin > 0.1\n  [PASS] C.2 CAP_BOX seeded-optimization best \u03b7 < 1 with margin, consistent with grid\n  [PASS] C.3 CAP_BOX empirical-Lipschitz upper bound max \u03b7_best < 1\n  [PASS] C.4 ENDPOINT_BOX dense-grid max \u03b7_best < 1 with margin > 0.1\n  [PASS] C.5 ENDPOINT_BOX seeded-optimization best \u03b7 < 1, consistent with grid\n  [PASS] C.6 ENDPOINT_BOX empirical-Lipschitz upper bound max \u03b7_best < 1\n  [PASS] C.7 Both CAP_BOX and ENDPOINT_BOX have feasible (lower-repair) points\n  [PASS] C.8 Grid density 51\u00d751\u00d751 is 12.5\u00d7 denser per direction than existing branch (11\u00d731\u00d731)\n  [PASS] C.9 No rival with \u03b7_best \u2265 1 found by seeded optimization in either box\n\nVERDICT:\n  Strong carrier-side support on both split-2 upper-face neighborhoods\n  at dense-grid plus empirical-Lipschitz rigor.\n\n  CAP_BOX:\n    grid max \u03b7 = 0.884524\n    certified max = 0.884553 < 1.0 (margin 0.115447)\n  ENDPOINT_BOX:\n    grid max \u03b7 = 0.883985\n    certified max = 0.884005 < 1.0 (margin 0.115995)\n\n  This materially sharpens the residual carrier-side blocker, but it does\n  not yet close the interval-certified exact-carrier dominance/completeness\n  theorem target. Full rigorous enclosure of the transport pipeline\n  remains open.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T104807Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_dm_split2_dense_grid_lipschitz_dominance_support_2026_04_21.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dm_wilson_direct_descendant_constructive_positive_closure_multiplicity_theorem_2026_04_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_dm_wilson_direct_descendant_constructive_positive_closure_multiplicity_theorem_2026_04_18.py",
+ "seed": 60558,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1adc8349",
+ "started_utc": "20260923T104918Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e901446fbe684684aa9e3b8ebd2ad0d1f0fc2b520d3bf40486a6f733af36b596",
+ "stdout_tail": "mily C stays on the fixed native seed surface  ((xbar,ybar)=(0.563333333333,0.306666666667))\n  [PASS] Family C endpoints both stay inside the constructive positive branch  (Delta_src endpoints=(0.013109630346,0.013105435893))\n  [PASS] Family C endpoints lie on opposite sides of exact closure  ((eta_lo,eta_hi)=(1.000210552142,0.999789986336))\n  [PASS] Family C therefore contains an exact constructive positive eta = 1 root  (delta_root=2.199356725683)\n\n========================================================================================\nPART 3: THE THREE EXACT ROOTS ARE DISTINCT\n========================================================================================\n  [PASS] The three witness delta-intervals are pairwise disjoint  (intervals=[(1.88233895, 1.89233895), (1.5915018, 1.6015018), (2.19435677, 2.20435677)])\n  [PASS] The resulting exact roots are pairwise distinct in parameter space  (min separation=0.390174)\n\n========================================================================================\nPART 4: BOTTOM LINE\n========================================================================================\n  [PASS] Exact closure plus positive branch plus constructive signs is still non-unique  (the branch already contains at least three distinct exact eta = 1 points)\n\n========================================================================================\nSUMMARY: PASS=17 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T104919Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

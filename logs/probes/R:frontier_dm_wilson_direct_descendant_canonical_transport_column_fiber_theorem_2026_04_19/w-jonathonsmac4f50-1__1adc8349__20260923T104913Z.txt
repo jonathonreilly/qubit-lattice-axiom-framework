@@ -1,0 +1,21 @@
+========================================================================================
+DM WILSON DIRECT-DESCENDANT CANONICAL TRANSPORT-COLUMN FIBER THEOREM
+========================================================================================
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/frontier_dm_wilson_direct_descendant_canonical_transport_column_fiber_theorem_2026_04_19.py", line 490, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/frontier_dm_wilson_direct_descendant_canonical_transport_column_fiber_theorem_2026_04_19.py", line 270, in main
+    grad = column_gradient(witness_sorted)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/frontier_dm_wilson_direct_descendant_canonical_transport_column_fiber_theorem_2026_04_19.py", line 147, in column_gradient
+    grad[idx] = (eta_from_column(column + dcol) - eta_from_column(column - dcol)) / (2.0 * step)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/frontier_dm_wilson_direct_descendant_canonical_transport_column_fiber_theorem_2026_04_19.py", line 108, in eta_from_column
+    * flavored_column_functional(np.asarray(column, dtype=float), Z_GRID, SOURCE_PROFILE, WASHOUT_TAIL)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py", line 161, in flavored_column_functional
+    raise ValueError("column entries must sum to one")
+ValueError: column entries must sum to one

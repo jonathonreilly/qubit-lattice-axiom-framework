@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dm_wilson_direct_descendant_boundary_arrest_triplet_y_maximin_2026_04_19",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_dm_wilson_direct_descendant_boundary_arrest_triplet_y_maximin_2026_04_19.py",
+ "seed": 60488,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1adc8349",
+ "started_utc": "20260923T104808Z",
+ "elapsed_s": 9.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f035d414746d1e6d2ed0ccdcdc208ca2bd9e2beb1f6e52eee688c6c1d45ef4fc",
+ "stdout_tail": " fiber  (distance to W1=0.090092058962)\n  [PASS] The maximin selector strictly improves the vanishing common floor of the pure J_ctr source-boundary certificate  ((t_*, J_y[J_ctr*])=(0.110013443757,5.249372e-09))\n  [PASS] The more-isotropic B_major certificate is rejected because its constructive-triplet barrier collapses below the maximin floor  ((J_ctr,J_y)[B_major]=(0.000309820614,0.493481195966))\n\n========================================================================================\nPART 4: BOTTOM LINE\n========================================================================================\n  [PASS] The first successful retained drift-arrest law on this lane is the coefficient-free two-law maximin system t = min(J_ctr, J_y)  (J_iso remains part of the certificate, but the active arrest barriers are the constructive triplet and the native y-simplex)\n\n  canonical column first two entries = [0.928711 0.035644]\n\n  pure J_ctr source-boundary certificate:\n    source5 = [0.847411 0.32885  0.70537  0.       2.373733]\n    pack    = [1.05222  0.126333 0.080477 1.057144 0.020496]\n    (J_iso, J_ctr, J_y) = (0.126895048903, 0.143712259311, 5.249372267031e-09)\n\n  triplet/y maximin interior certificate:\n    source5 = [0.846378 0.324609 0.718243 0.02499  2.223474]\n    pack    = [1.05222  0.11886  0.064692 1.087093 0.019794]\n    (J_iso, J_ctr, J_y, t_*) = (0.121416739542, 0.110013443757, 0.110013443757, 0.110013443757)\n\n  best tested interior certificate label = B_major\n  PASS=15 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T104818Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_dm_wilson_direct_descendant_boundary_arrest_triplet_y_maximin_2026_04_19.txt against the .txt beside this log"
+  ]
+ }
+}

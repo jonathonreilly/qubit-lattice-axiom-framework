@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dm_selector_first_shoulder_exit_threshold_support_2026_04_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_dm_selector_first_shoulder_exit_threshold_support_2026_04_21.py",
+ "seed": 60184,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1adc8349",
+ "started_utc": "20260923T104304Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "17a07315fbd5f3d83defee9fd4891e94d1f42a47742c59cdbf09bbbfa9d82f75",
+ "stdout_tail": ".926143 0.991613])\n  [PASS] So the exact intrinsic family already carries one canonical breakpoint candidate selecting the preferred lift  (tau_b,min = 0.148036252277635)\n\n========================================================================================\nPART 4: SCIENTIFIC CONSEQUENCE\n========================================================================================\n  [PASS] The older nonrealization note still honestly states that no intrinsic threshold law is yet derived\n  [PASS] This theorem narrows the positive selector burden further without promoting closure  (a natural breakpoint candidate now exists: the earliest middle-branch threshold tau_b,min)\n  [PASS] What remains is to derive why the physical threshold law should equal that earliest intrinsic breakpoint, or else derive a stronger microscopic law  (support narrowing only)\n\n========================================================================================\nRESULT\n========================================================================================\n  The exact intrinsic threshold-volume family now contains a canonical\n  breakpoint candidate, tau_b,min = min_i log(1+b_i).\n  On the recovered bank that breakpoint belongs uniquely to the preferred\n  lift and already selects it.\n  The remaining selector-side burden is therefore narrower again:\n    derive why the physical threshold law is the earliest middle-branch\n    breakpoint, or derive a stronger microscopic selector law.\n\nSUMMARY: PASS=11 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T104305Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_dm_selector_first_shoulder_exit_threshold_support_2026_04_21.txt against the .txt beside this log"
+  ]
+ }
+}

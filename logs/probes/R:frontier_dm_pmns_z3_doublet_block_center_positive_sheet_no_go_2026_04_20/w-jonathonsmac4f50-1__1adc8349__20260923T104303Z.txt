@@ -1,0 +1,62 @@
+========================================================================================
+DM PMNS Z3 DOUBLET-BLOCK CENTER POSITIVE-SHEET NO-GO THEOREM
+========================================================================================
+
+Question:
+  Does the coefficient-free center law delta_db = 1, q_+ = 0, together
+  with the already-closed I12 sign law I_src > 0, close the remaining
+  PMNS angle-pin I5 on the fixed native N_e seed surface?
+
+========================================================================================
+PART 1: THE POSITIVE-SHEET CENTER LAW IS NOT A POINT SELECTOR
+========================================================================================
+  [PASS] The verifier finds many distinct positive-sheet center solutions  (count=11)
+  [PASS] Every retained representative satisfies the exact center law delta_db = 1, q_+ = 0
+  [PASS] Every retained representative lies on the positive I_src sheet  (cubic values=[0.000233445, 0.001078298, 0.001554339, 0.000902109, 0.001296607, 0.002050621])
+  [PASS] The PMNS angle triple varies macroscopically across the positive-sheet center locus  (ranges=(0.243800,0.953571) × (0.030505,0.597343) × (0.094027,0.997611))
+  rep 1: obs=[0.2438   0.075946 0.808903], I_src=0.000233445
+  rep 2: obs=[0.251506 0.097954 0.804629], I_src=0.001078298
+  rep 3: obs=[0.943628 0.030505 0.124917], I_src=0.001554339
+  rep 4: obs=[0.475654 0.495846 0.997611], I_src=0.000902109
+
+========================================================================================
+PART 2: THE CENTER CONSTRAINTS HAVE RANK 2 ON THE VERIFIED PATCH
+========================================================================================
+  [PASS] At retained representative points, rank d(delta_db, q_+) = 2  (ranks=[2, 2, 2, 2, 2, 2, 2, 2])
+  [PASS] So on the verified patch the center law cuts the 5-real seed surface to a local 3-real locus  (dim(seed surface)=5 and dim(center pair)=2)
+
+========================================================================================
+PART 3: CONDITIONAL VALUE — CENTER LAW CUTS THE EXACT TARGET TO A TWO-SHEET PAIR
+========================================================================================
+  [PASS] If the exact PMNS target is imposed as well, the center law yields exactly two source solutions  (count=2)
+  [PASS] The two conditional solutions have the same x and y data
+  [PASS] They differ only by the sheet flip delta_src -> -delta_src and I_src -> -I_src  (delta_src=(-0.728938949196,0.728938949196))
+
+========================================================================================
+PART 4: THE NOTE RECORDS THE CORRECT NO-GO STATUS
+========================================================================================
+  [PASS] The new note states that center law + I12 does not close I5
+  [PASS] The note records the local 3-real positive-sheet center locus
+  [PASS] The current authoritative I5 status note still treats I5 as open
+
+========================================================================================
+PART 5: N5 EXECUTION CERTIFICATE -- WHAT THIS RUNNER RESOLVES
+========================================================================================
+  per_element: checked -- the center pair is resolved componentwise rather than through a single norm: the residuals delta_db - 1 and q_+ are each held to their own 1e-10 tolerance, and every candidate is admitted individually with its own chart, angle triple, I_src sign and Jacobian rank, deduplicated at 1e-3 in chart norm before it counts.
+  per_site: checked and not executed -- nothing in this runner carries a lattice site index. The 5-real chart is a coordinate patch on the fixed native N_e seed surface and H is one 3x3 source Hermitian, so the geometry being measured is a parameter-space locus, not a site-resolved field.
+  per_mode: checked -- the three PMNS angle observables are range-tested separately, each against its own spread threshold (0.5 for the solar mode, 0.4 for the reactor mode, 0.8 for the atmospheric mode), so the macroscopic variation along the center locus is established mode by mode and not by one pooled distance.
+  per_block: checked -- the entire center law is a Z_3 doublet-block statement. Both constraints delta_db(H) = 1 and q_+(H) = 0 are doublet-block center coordinates extracted by active_target_from_h, so the rank-2 Jacobian and the resulting local 3-real cut of the 5-real seed surface are block-resolved quantities rather than whole-matrix ones.
+  lattice_wide: checked and not executed -- there is no lattice, no volume, and no asymptotic limit anywhere here. The widest execution is a bounded search over the chart box [CHART_LO, CHART_HI] from seeded restarts, which samples a compact parameter region and makes no statement about extent.
+
+========================================================================================
+RESULT
+========================================================================================
+  Honest status:
+    - center law + I12 leaves a positive-sheet 3-real locus and does not
+      derive the PMNS target by itself
+    - the center law is still useful conditionally: once the exact PMNS
+      target manifold is imposed, it cuts that manifold to a two-sheet pair
+    - so I5 remains open, but the live missing object is now sharper than
+      before
+
+PASS=12 FAIL=0

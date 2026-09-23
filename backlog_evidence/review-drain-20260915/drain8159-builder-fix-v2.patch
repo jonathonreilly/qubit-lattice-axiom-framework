@@ -1,0 +1,60 @@
+--- builder-v1
++++ builder-v2
+@@ -11,7 +11,9 @@
+ cost={e['runner']:e for e in json.loads((R/'drain8159-author-resource-plan-v3.json').read_text())};scope=json.loads((R/'drain8159-affected-scope-confirmation-v4.json').read_text())
+ assert len(d['files'])==436 and len(d['notes'])==25 and len(d['runners'])==41 and len(d['helper_map_plan'])==9 and len(proof)==72
+ owner=json.loads((R/'review-draft-slot.json').read_text());assert owner['owner']=='PR8159-author' and Path(owner['path']).resolve()==W.resolve()
+-assert git('rev-parse','HEAD')==args.expected_base==git('rev-parse','origin/main');assert not git('diff','--name-only','HEAD') and not git('diff','--cached','--name-only')
++assert args.expected_base=='631d6b36cd1e9b860763ebcad36e40a2bbe7439c'
++assert git('rev-parse','HEAD')==args.expected_base==git('rev-parse','origin/main');assert not git('diff','--cached','--name-only')
++assert set(git('diff','--name-only','HEAD').splitlines())=={'scripts/audit_packet_script_deps.py','docs/audit/scripts/build_citation_graph.py'}
+ assert set(git('ls-files','--others','--exclude-standard').splitlines())=={e['path'] for e in d['files']}
+ for e in d['files']:assert sha(W/e['path'])==e['sha256'],e['path']
+ # Guard both evidence memberships separately; changed current-main premises require reviewer confirmation.
+@@ -20,7 +22,7 @@
+ for e in q['mathematical_premise_closure']:
+  for x in e['parents']:assert sha(W/x['path'])==x['sha256'],x['path']
+ files={k:R/f'drain8159-author-{k}-{args.version}.json' for k in ['unit-draft','source-handoff','cache-api']};assert all(not p.exists() for p in files.values())
+-refs=[ref(R/x) for x in ['drain8159-author-canonical-draft-v4.json','drain8159-author-input-discovery-v4.json','drain8159-author-resource-plan-v3.json','drain8159-author-full-proof-map-v4.json','drain8159-affected-scope-confirmation-v4.json','drain8159-block27-import-recovery-v1.json','drain8159-capture-plan-v1.json','drain8159-negative-certification-disposition-v1.json']]
++refs=[ref(R/x) for x in ['drain8159-author-canonical-draft-v4.json','drain8159-author-input-discovery-v4.json','drain8159-author-resource-plan-v3.json','drain8159-author-full-proof-map-v4.json','drain8159-affected-scope-confirmation-v4.json','drain8159-block27-import-recovery-v1.json','drain8159-capture-plan-v1.json','drain8159-negative-certification-disposition-v1.json','drain8159-builder-fix-explanation-v2.json']]
+ review=R/'drain8159-final366-original-dispositions.json';original=json.loads(review.read_text());orig={e['path']:e for e in original['paths']};m=json.loads((W/'docs/work_history/review_loop/pr8159/manifest.json').read_text());assert len(m['paths'])==len(orig)==366
+ updates={e['path']:e['scope_disposition'] for e in scope['updated_exact_original_dispositions']};disps=[]
+ for e in m['paths']:
+@@ -33,9 +35,10 @@
+ registry=['scripts/audit_packet_script_deps.py','docs/audit/scripts/build_citation_graph.py'];replacements={};preserved={}
+ def mapof(text):return ast.literal_eval(next(n.value for n in ast.parse(text).body if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='EXPLICIT_PACKET_HELPER_RUNNER_PATHS' for t in n.targets)))
+ for path in registry:
+- text=(W/path).read_text();old=mapof(text);assert not set(old)&set(d['helper_map_plan']);mark='EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {';assert text.count(mark)==1
+- new=text.replace(mark,mark+'\n'+''.join('    '+repr(k)+': '+repr(v)+',\n' for k,v in d['helper_map_plan'].items()),1);assert mapof(new)==dict(old,**d['helper_map_plan']);replacements[path]=new;preserved[path]={'before_sha256':sha(W/path),'preserved_entries':len(old),'added_entries':9}
+-for path,text in replacements.items():(W/path).write_text(text)
++ text=(W/path).read_text();base_text=subprocess.check_output(['git','-C',str(W),'show','HEAD:'+path],text=True);old=mapof(base_text);assert not set(old)&set(d['helper_map_plan']);mark='EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {';assert base_text.count(mark)==1
++ expected=base_text.replace(mark,mark+'\n'+''.join('    '+repr(k)+': '+repr(v)+',\n' for k,v in d['helper_map_plan'].items()),1)
++ assert text==expected,'Registry has changes beyond exact reviewed additions: '+path
++ assert mapof(text)==dict(old,**d['helper_map_plan']);preserved[path]={'before_sha256':hashlib.sha256(base_text.encode()).hexdigest(),'current_sha256':sha(W/path),'preserved_entries':len(old),'added_entries':9,'continuation_no_write':True}
+ sys.path[:0]=[str(W/'scripts'),str(W/'docs/audit/scripts')];import runner_cache as c,audit_packet_script_deps as a,build_citation_graph as g
+ notes=[];context=set();helpers=set();runtime=set();parents=set();apis=[];discovery={e['runner']:e for e in q['programs']};note_expected={e['path']:e for e in q['notes']}
+ for path in d['notes']:
+@@ -46,11 +49,18 @@
+ assert {x['primary_runner'] for x in notes}|helpers==set(d['runners'])
+ for path in d['runners']:
+  ins=list(c.declared_input_paths(W/path));assert ins==discovery[path]['declared_inputs'];assert c.declared_timeout_for(W/path)==cost[path]['time_cap_seconds']
+- hp=sorted('scripts/'+h+'.py' for h in a.transitive_helpers(Path(path).stem));assert hp==sorted(discovery[path]['proposed_transitive_helpers'])
+- closure=set(ins)
+- for h in hp:closure.add(h);closure.update(c.declared_input_paths(W/h) or [])
+- assert closure=={e['path'] for e in discovery[path]['runtime_closure']}
+- runtime.update(closure|{path});context.update(ins);apis.append(dict(primary=path,timeout=cost[path]['time_cap_seconds'],declared_inputs=ins,packet_transitive_helpers=hp,runtime_closure=bind(closure),closure_scope='Declared runtime/helper fingerprint closure; local_spectrum AST-selects functions and does not execute helper module top-level. Actual import behavior is source-inventoried in capture plan.',declared_input_fingerprint=c.declared_input_fingerprint(W/path),cache_status=c.cache_status(path)))
++ hp=sorted('scripts/'+h+'.py' for h in a.transitive_helpers(Path(path).stem))
++ selected=['scripts/polarized_word_check_2026_09_15.py'] if path=='scripts/local_spectrum_check_2026_09_15.py' else []
++ assert set(hp)|set(selected)==set(discovery[path]['proposed_transitive_helpers'])
++ if selected:
++  assert hp==[] and set(selected)<=set(ins)
++  source=(W/path).read_text();assert "if isinstance(node,(ast.Import,ast.ImportFrom)):" in source and "elif isinstance(node,ast.FunctionDef) and node.name in needed:" in source
++ actual_closure=set(ins)
++ for h in hp:actual_closure.add(h);actual_closure.update(c.declared_input_paths(W/h) or [])
++ conservative=set(actual_closure)
++ for h in selected:conservative.add(h);conservative.update(c.declared_input_paths(W/h) or [])
++ assert conservative=={e['path'] for e in discovery[path]['runtime_closure']}
++ runtime.update(actual_closure|{path});context.update(conservative);apis.append(dict(primary=path,timeout=cost[path]['time_cap_seconds'],declared_inputs=ins,packet_transitive_helpers=hp,selected_source_helpers=selected,runtime_closure=bind(actual_closure),conservative_selected_source_closure=bind(conservative),not_executed_selected_helper_note_reads=bind(conservative-actual_closure),closure_scope='Actual direct reads plus normal imported-module reads. AST-selected helper imports and nine definitions execute, but helper module top-level note reads/fixtures do not. Conservative extra note bindings retained as context and separately identified.',declared_input_fingerprint=c.declared_input_fingerprint(W/path),cache_status=c.cache_status(path)))
+ for e in q['mathematical_premise_closure']:parents.update(x['path'] for x in e['parents'])
+ context.update(d['notes']);context.update(['docs/work_history/review_loop/pr8159/README.md','docs/work_history/review_loop/pr8159/manifest.json','docs/work_history/review_loop/pr8159/imports/manifest.json'])
+ subprocess.run(['git','-C',str(W),'add','--',*[e['path'] for e in d['files']],*registry],check=True);subprocess.run(['git','-C',str(W),'diff','--cached','--check'],check=True)

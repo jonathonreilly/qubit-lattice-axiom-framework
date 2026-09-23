@@ -1,0 +1,8 @@
+{
+  "status": "NARROW CONTINUATION; NO SCIENCE OR REGISTRY BYTE EDIT",
+  "cause": "V1 conflated proposed conservative selected-source closure with actual packet transitive imports. local_spectrum reads polarized_word source and AST-selects imports plus nine functions, not module top-level execution. API correctly reports no transitive module import.",
+  "repair": "Separate API packet imports, explicit selected source, actual reads, and conservative extra helper-note context. Guard exact two already-added registry diffs against HEAD plus all436 bytes and runtime/math hashes before stage438. No omitted real input; selected Python source is already literally declared.",
+  "original_failure": "drain8159-builder-failure-v1.json",
+  "builder_sha256": "f2807748fbe0dd0f299e067d87c525d84db63c3b3a89ef71931fdcf0b7ff4f6f",
+  "prior_artifacts_preserved": true
+}

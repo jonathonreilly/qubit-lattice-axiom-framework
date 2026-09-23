@@ -1,0 +1,1468 @@
+{
+  "schema_version": 1,
+  "pr": 8167,
+  "review_kind": "original-independent-science-review",
+  "reviewer_session": "/root/review_8167",
+  "created_utc": "2026-09-23T01:22:41.741081+00:00",
+  "head": "5265ddd85815fe92e55342f4352f5e675b84703c",
+  "merge_base": "6dda46fc1af02827e9c6b64b2f7d05c381a3ce07",
+  "current_main_for_review": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+  "declared_base": "main",
+  "fresh_github_head_verified": "5265ddd85815fe92e55342f4352f5e675b84703c",
+  "github_state": "OPEN",
+  "github_draft": false,
+  "verdict": "POSITIVE_SOURCE_SALVAGE_WITH_DEFERRED_NEGATIVE_CERTIFICATION",
+  "landing_ready": false,
+  "formal_retained_grade": false,
+  "audit_verdict": null,
+  "material_math_findings": [],
+  "findings": [
+    {
+      "id": "8167-N1",
+      "category": "AUDIT_COMPATIBILITY",
+      "path": "NO_GO_DISCIPLINE_CHECKLIST.md",
+      "lines": "3-22",
+      "finding": "The source honestly supplies one constructive refutation and explicitly disclaims formal packet PASS. Scope checks are not five independent families. Negative implication and related negative class exclusions cannot receive packet PASS under current rule.",
+      "disposition": "Preserve complete source and branch; defer negative certification, without invented routes or positive-label bypass."
+    },
+    {
+      "id": "8167-PACKAGE",
+      "category": "AUDIT_COMPATIBILITY",
+      "finding": "All changed paths are branch-local packet material; three raw JSON outputs are not canonical cache envelopes, and there are no canonical source rows/helper declarations or N5 cached certificate lines.",
+      "disposition": "Canonicalize surviving positive science with accurate note/input pins, source registration and fresh bounded evidence; archive exact historical payload; same-session final confirmation required."
+    }
+  ],
+  "claims_and_boundaries": [
+    "Finite compact cover theorem: normalized Haar requires (2pi)^E kernel factor. The exact trace retains initial Q fundamental cell, all intermediate real coordinates and terminal winding w. Every finite graph and g,T>0; no Gauss projection or thermodynamic limit.",
+    "Normalized background derivatives: Phi_ab=<S_ab>-Cov(S_a,S_b), and cubic contact/covariance/cumulant formula derived by differentiating normalized expectations. Actual periodic-observable insertion differs from nonlinear background partition derivatives. Free-circle derivatives are exact checks, not uniform-coupling/volume exclusions.",
+    "Finite-thermal compact sine MGF: positive electric Dyson trace coefficients remove phases, then coordinate positivity bounds amplitude increase, yielding exp(t\u00b2 H2/2) for real time-dependent L2 sources. It controls actual sin(B)/g observables, not principal flux or integer fillings.",
+    "Static exact curl Ward identity and conditional Gaussian theorem: h=Cu, fixed beta and fixed g, bounded H2, vanishing H3 and deterministic L2 contact concentration imply the displayed quantitative MGF bound. Supplied stationary spatially ergodic Gibbs loop state gives weighted contact concentration. No supplied state existence/uniqueness, beta-uniform limit, physical Gauss projection or photon pole.",
+    "Sparse construction: side6 isolated oriented unit loops, q=p^4, random origin, independent plane/offset marks and 24 product-sign sequences yield stationary ergodic symmetric current law and joint vertex bound. Diffuse filling limit is rho product of four independent normals plus independent Gaussian noise; kappa4=78rho^4 and real MGF lower bound diverges. Complete construction is mathematically supported; formal negative implication certification remains deferred."
+  ],
+  "proof_assessment": "CONDITIONAL for supplied-model/state results; CLOSED algebra within stated finite domains. Actual full compact principal-flux/photon target remains OPEN. No equivalent-gap near-closure framing.",
+  "imports": {
+    "supplied": "Rotor Hamiltonian, g,beta, full thermal trace, source class and Gibbs state with local compact-loop specification; construction probability law explicitly supplied. None selected by axioms or approved primitives.",
+    "mathematics": "Feynman-Kac, covering kernels, bounded perturbation/Dyson trace expansion, spectral perturbation, elementary iid CLT and mean ergodic theorem; applications derived explicitly.",
+    "empirical": "None.",
+    "siblings": "PR8165 and PR8166 motivate the problem only. No estimate or result from their unlanded heads is required by these proofs; do not add false load-bearing dependency edges."
+  },
+  "required_author_fix_scope": [
+    "Keep complete positive cover/source and sine-score proof bodies, exact constants and quantitative Gaussian estimate; retain all source/state/temperature and Gauss-sector boundaries.",
+    "Preserve full sparse construction, failed side4 adjacency claim/correction, initial Fourier 2/3 refinement failure, nine current and nine historical mutated sources and errors, diagnostics and all116 path identities. Unlanded negative certification keeps branch recovery handle.",
+    "Canonical source/runners need markdown dependency and input bindings; no unlanded sibling theorem dependency is necessary. If consolidation creates supporting-proof owners, bind all complete proof sources.",
+    "Primary runners are finite challenges, not proofs of infinite-volume law. Preserve 120-second contracts and actual fixture sizes/tolerances. Canonical cache must follow genuine final execution; no historical restamping.",
+    "No formal N1 PASS, no disguised negative claim as positive theorem to bypass procedural gate. Root must decide exact deferred-versus-positive source boundary and return final affected bytes to this reviewer.",
+    "Root owns combined pipeline/evidence/strict checks, exact-current-main preservation, landing and remote closure; none performed in this independent review."
+  ],
+  "read_scope": {
+    "source": "Complete three final proof notes, final runners, mutation harness, focused verifier, packet Markdown/state, original note/source historical diffs and mutation source diffs. Manifest and raw JSON data parsed/source-bound; repetitive numeric leaves not each treated as new proofs.",
+    "authority": "Frozen main mandatory memo, primitive registry/procedure and all primitive sources; review-loop setup/units/science/fixes/salvage/operations/compatibility; no-go N1-N8 and proof governance. Repo status/queue/harness context inspected for relevant authority; no audit verdict used as premise.",
+    "complete_original_inventory": "116 added paths; no deletions or modifications relative actual merge base. Entire original prefix absent at frozen main, so original import overwrites no current source in that prefix. Final canonical current-main interaction check remains required."
+  },
+  "source_cost": {
+    "paths": 141,
+    "bytes": 399194,
+    "python_files": 25,
+    "primary_reruns": 0
+  },
+  "checks": {
+    "independent_controls": {
+      "status": "PASS",
+      "circle_cubic": "-849.144094776154117849809620172093306934033567544729296739611",
+      "circle_derivative_error": "1.75240110224569750473176843754448298615021501071188066468127e-57",
+      "moment2": "1/6",
+      "moment4": "341/3456",
+      "amplitude_maxerror": 2.220446049250313e-16,
+      "elapsed_seconds": 0.11456983297830448,
+      "scope": "Small independent algebra and finite-law controls; no primary runner rerun; not infinite-volume numeric proof."
+    },
+    "primary_reruns": 0,
+    "pipeline_runs": 0,
+    "syntax_files": 25,
+    "manifest_entries_verified": 115,
+    "mutated_source_error_pairs_verified": 18,
+    "current_main_prefix_absent": true,
+    "final_remote_head_unchanged": true
+  },
+  "original_dispositions": [
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/APPROACH_REGISTRY.md",
+      "mode": "100644",
+      "blob": "8535b7aed8ce7fbac5a05cccdd75c670313dd55e",
+      "sha256": "b67c3706618401c7256f94642c644ece45abffcef70036486b0c4d7dd53d0754",
+      "bytes": 1349,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/APPROACH_REGISTRY.md",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/APPROACH_REGISTRY.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/ARTIFACT_PLAN.md",
+      "mode": "100644",
+      "blob": "8636393dc4a98029ad7fc1790aaa5276d7a404c7",
+      "sha256": "5526e661a11e8d39f2b6da2e1837863f30805569e51f9a43f4be4e0413676b32",
+      "bytes": 521,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/ARTIFACT_PLAN.md",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/ARTIFACT_PLAN.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/ASSUMPTIONS_AND_IMPORTS.md",
+      "mode": "100644",
+      "blob": "80f30bf263f3215cfaf03a02d6201dfb4a82a4d0",
+      "sha256": "6202d4d7f537334154e308149d8a944e876c1af30997b37d42c85e1361d24876",
+      "bytes": 2554,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/ASSUMPTIONS_AND_IMPORTS.md",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/CLAIM_STATUS_CERTIFICATE.md",
+      "mode": "100644",
+      "blob": "b4bbe848950b2e1812ca09b96bf778b7f56cc15b",
+      "sha256": "a5a6a6d23e4324cc36138735a41d0a0a79ae562f4d19ffa720b0739e1f47322a",
+      "bytes": 1364,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/CLAIM_STATUS_CERTIFICATE.md",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/GOAL.md",
+      "mode": "100644",
+      "blob": "c50a6ef3a13a73169232ba7ca5f15fe521e72caa",
+      "sha256": "20c1b7743deccc72a7eaf2ebc44e7a5aea37bf7effc2e690cae1bf5e98058cf7",
+      "bytes": 1511,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/GOAL.md",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/GOAL.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/HANDOFF.md",
+      "mode": "100644",
+      "blob": "5bcb0e85d0cdfcd95450d20f948bdd6ac93ab2b5",
+      "sha256": "ead93eaf27ce82fa89910cd0c0a53cc46b456bdbde85f1eb27ea7126ecc067c0",
+      "bytes": 4362,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/HANDOFF.md",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/HANDOFF.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/LITERATURE_BRIDGES.md",
+      "mode": "100644",
+      "blob": "2e6e4b136550f1d99fd627b06c8be29a5a3f1a29",
+      "sha256": "d1bee88fe71e78fa5b8c0ea108418416f6815c4d2b5a111e1fe962d68fa69004",
+      "bytes": 675,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/LITERATURE_BRIDGES.md",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/LITERATURE_BRIDGES.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/MANIFEST.json",
+      "mode": "100644",
+      "blob": "45233526af07d5c9926f17df7d2f66d1fe2bcc28",
+      "sha256": "d66bf5387933dcbfd01b427598ff1eb65738cc539ee14ee46847e8298ca6a930",
+      "bytes": 21586,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/MANIFEST.json",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/MANIFEST.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "mode": "100644",
+      "blob": "bff297484c3a18ea855f93f00d96ca4c7f4f8352",
+      "sha256": "ad3b995265818f809d8d0c0f980a352e7755e5a5c47be1c5aad5a9929d5f1ffb",
+      "bytes": 5432,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/NO_GO_DISCIPLINE_CHECKLIST.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/NO_GO_LEDGER.md",
+      "mode": "100644",
+      "blob": "eee229d0f460ac32f450d2cc7adc9879b30e750e",
+      "sha256": "b63328587df046a5dcdc1ae8f8f30c34683d4d0d7382dea571aa4bb1f215e2f6",
+      "bytes": 760,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/NO_GO_LEDGER.md",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/NO_GO_LEDGER.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/OPPORTUNITY_QUEUE.md",
+      "mode": "100644",
+      "blob": "b16ff7fe1433b04523085bdd3510c640440c4dc3",
+      "sha256": "60d92a2b23c874d179e6e800bb0c547209b4eaceb2e6ec040507dea3a7491f5d",
+      "bytes": 956,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/OPPORTUNITY_QUEUE.md",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/OPPORTUNITY_QUEUE.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/READING_LEDGER.md",
+      "mode": "100644",
+      "blob": "df048c748966c305175536286d75c22dff8258ff",
+      "sha256": "896ae572dee8262d84f6eb9d2ea3c42c4f74d541f86047c022637e59dca4947b",
+      "bytes": 1361,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/READING_LEDGER.md",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/READING_LEDGER.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/README.md",
+      "mode": "100644",
+      "blob": "584ab4db07caedd0f13bcda08c24bf619021ebaf",
+      "sha256": "6c6e0e8dc2578f57767a64383b253313aafe723969eb0d0e29d646fd886849ab",
+      "bytes": 3917,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/README.md",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/README.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/REVIEW_HISTORY.md",
+      "mode": "100644",
+      "blob": "a52a3e0f497ffe97096f0012900a604322110d38",
+      "sha256": "774fedf185f7db87e5e923794d4cf020afe7ad6229e337f6645b0b29b8517d51",
+      "bytes": 3433,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/REVIEW_HISTORY.md",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/REVIEW_HISTORY.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/ROUTE_PORTFOLIO.md",
+      "mode": "100644",
+      "blob": "fee35757f312ffe1d231c1b92f1a4cadbe46ff2b",
+      "sha256": "7d92dbcdbf43e51956b903a542e2274e55438074c7f86e2c34d4b5a8404233bf",
+      "bytes": 477,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/ROUTE_PORTFOLIO.md",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/ROUTE_PORTFOLIO.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/STATE.yaml",
+      "mode": "100644",
+      "blob": "596387c30ffa984a5a9f691650e1aed68d9bd587",
+      "sha256": "4797301e770da68045be9e138828b4a5a1dfe055e6ecbe0a03efcf00825cc7d6",
+      "bytes": 1481,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/STATE.yaml",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/STATE.yaml"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/TRACE_GATE.md",
+      "mode": "100644",
+      "blob": "29492a7cffe9c22b2dcc221706624c6bcd9486c8",
+      "sha256": "6342f77119d111192a75e490ed0706f282c56c0931dcaf161973a37c86236215",
+      "bytes": 1066,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/TRACE_GATE.md",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/TRACE_GATE.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_cover_source_check.ATTEMPT1.stderr.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_cover_source_check.ATTEMPT1.stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_cover_source_check.ATTEMPT1.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_cover_source_check.ATTEMPT1.stdout.json",
+      "mode": "100644",
+      "blob": "adb63b5aaf90d51479d54567f8814f70a6988e3a",
+      "sha256": "d068738b6ba2cdf602dad89e12443e3ed1c364a58a9cb0c9236f754e0dba31b7",
+      "bytes": 18357,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_cover_source_check.ATTEMPT1.stdout.json",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_cover_source_check.ATTEMPT1.stdout.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_cover_source_check.FINAL.stderr.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_cover_source_check.FINAL.stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_cover_source_check.FINAL.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_cover_source_check.FINAL.stdout.json",
+      "mode": "100644",
+      "blob": "adb63b5aaf90d51479d54567f8814f70a6988e3a",
+      "sha256": "d068738b6ba2cdf602dad89e12443e3ed1c364a58a9cb0c9236f754e0dba31b7",
+      "bytes": 18357,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_cover_source_check.FINAL.stdout.json",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_cover_source_check.FINAL.stdout.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_cover_source_check.py",
+      "mode": "100644",
+      "blob": "db6149411e4088e412c88d67cbc9230122135e6b",
+      "sha256": "01ec94ab5b1c5b93d57f8c55d9248f9dcf52903e024ba49c0f630daf31af31f5",
+      "bytes": 6572,
+      "disposition": "narrowed",
+      "reason": "Preserve mathematical checks; add canonical note/input pins, honest counted assertions and evidence wrapper before final capture.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_cover_source_check.py",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_cover_source_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.ATTEMPT1.stderr.txt",
+      "mode": "100644",
+      "blob": "d9f06b41721d1a1a1581b7ac3b14c8a916bff924",
+      "sha256": "6c34c99629aae623e91ba45fafd310e8985922341a497d0601993e7238a8a319",
+      "bytes": 837,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.ATTEMPT1.stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.ATTEMPT1.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.ATTEMPT1.stdout.json",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.ATTEMPT1.stdout.json",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.ATTEMPT1.stdout.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.ATTEMPT2.stderr.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.ATTEMPT2.stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.ATTEMPT2.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.ATTEMPT2.stdout.json",
+      "mode": "100644",
+      "blob": "c4e140d9bf82f9657b2687910b8956a1bb441b76",
+      "sha256": "b31e00e8da862ba1eb42470219366abdb178a8a14848e1f6571c4be308228357",
+      "bytes": 16429,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.ATTEMPT2.stdout.json",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.ATTEMPT2.stdout.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.FINAL.stderr.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.FINAL.stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.FINAL.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.FINAL.stdout.json",
+      "mode": "100644",
+      "blob": "c4e140d9bf82f9657b2687910b8956a1bb441b76",
+      "sha256": "b31e00e8da862ba1eb42470219366abdb178a8a14848e1f6571c4be308228357",
+      "bytes": 16429,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.FINAL.stdout.json",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.FINAL.stdout.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.py",
+      "mode": "100644",
+      "blob": "e845135c9f74d35d29a3699977d8517863ef7cb9",
+      "sha256": "d4d6bb7c2e6702ebf1f766db2cd575e74e16a69cae26d3faf370d077d3ad29fa",
+      "bytes": 7255,
+      "disposition": "narrowed",
+      "reason": "Preserve mathematical checks; add canonical note/input pins, honest counted assertions and evidence wrapper before final capture.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.py",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/evidence/compact_score_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/formula_faults.ATTEMPT1.stderr.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/formula_faults.ATTEMPT1.stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/evidence/formula_faults.ATTEMPT1.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/formula_faults.ATTEMPT1.stdout.json",
+      "mode": "100644",
+      "blob": "bcf625c1f847078cf7fef8f18ee95b3f75efd28c",
+      "sha256": "4ae3a4b3b287031ece07a98b2d33bdcf67e24828959d267dcafcf17f074c9329",
+      "bytes": 4370,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/formula_faults.ATTEMPT1.stdout.json",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/evidence/formula_faults.ATTEMPT1.stdout.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/formula_faults.ATTEMPT2.stderr.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/formula_faults.ATTEMPT2.stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/evidence/formula_faults.ATTEMPT2.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/formula_faults.ATTEMPT2.stdout.json",
+      "mode": "100644",
+      "blob": "052f0de9f8995720f487125eec379356b9be136a",
+      "sha256": "31ed79d996e9cea3ee62cf48a3a3b0609ba3a3f23ddf4178917f3c15a2d915e1",
+      "bytes": 4367,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/formula_faults.ATTEMPT2.stdout.json",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/evidence/formula_faults.ATTEMPT2.stdout.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/run_formula_faults.py",
+      "mode": "100644",
+      "blob": "6b68d726eeb1a2f7b1fbeeee0cae758013f56a7a",
+      "sha256": "bdd7e535fdd44b30749d3afbcbbc79f170cc4889cb82cdd43afa6172d0be2cd6",
+      "bytes": 2714,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/run_formula_faults.py",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/evidence/run_formula_faults.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/sparse_loop_counterexample_check.ATTEMPT1.stderr.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/sparse_loop_counterexample_check.ATTEMPT1.stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/evidence/sparse_loop_counterexample_check.ATTEMPT1.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/sparse_loop_counterexample_check.ATTEMPT1.stdout.json",
+      "mode": "100644",
+      "blob": "85e7f8ac6c9eb2b7521d7047630ccc319fa26f5d",
+      "sha256": "480d6dcf9ba640a1706110a07c9e3066efcf7fd6c2398b4e814c6bf33a97c883",
+      "bytes": 3464,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/sparse_loop_counterexample_check.ATTEMPT1.stdout.json",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/evidence/sparse_loop_counterexample_check.ATTEMPT1.stdout.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/sparse_loop_counterexample_check.ATTEMPT2.stderr.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/sparse_loop_counterexample_check.ATTEMPT2.stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/evidence/sparse_loop_counterexample_check.ATTEMPT2.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/sparse_loop_counterexample_check.ATTEMPT2.stdout.json",
+      "mode": "100644",
+      "blob": "03d5c158a50443eca8960fe608e8048f5d56ed2d",
+      "sha256": "e9460ee9a0f5581880bc35a501acd40d011693bb503676931c228e604153c57e",
+      "bytes": 3463,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/sparse_loop_counterexample_check.ATTEMPT2.stdout.json",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/evidence/sparse_loop_counterexample_check.ATTEMPT2.stdout.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/sparse_loop_counterexample_check.FINAL.stderr.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/sparse_loop_counterexample_check.FINAL.stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/evidence/sparse_loop_counterexample_check.FINAL.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/sparse_loop_counterexample_check.FINAL.stdout.json",
+      "mode": "100644",
+      "blob": "03d5c158a50443eca8960fe608e8048f5d56ed2d",
+      "sha256": "e9460ee9a0f5581880bc35a501acd40d011693bb503676931c228e604153c57e",
+      "bytes": 3463,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/sparse_loop_counterexample_check.FINAL.stdout.json",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/evidence/sparse_loop_counterexample_check.FINAL.stdout.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/evidence/sparse_loop_counterexample_check.py",
+      "mode": "100644",
+      "blob": "b70fcd906a5e42a9bea0acc5e4fe135f02a1c944",
+      "sha256": "cfee7b31f5e8276145c9000669739abafd3549dbc27572ce3161727e3a594810",
+      "bytes": 7185,
+      "disposition": "deferred",
+      "reason": "Preserve finite construction checks with deferred negative theorem; do not misstate numerical check as all-volume certificate.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/evidence/sparse_loop_counterexample_check.py",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/evidence/sparse_loop_counterexample_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/notes/COMPACT_SINE_SCORE_DOMINATION_AND_STATIC_CURL_LIMIT.md",
+      "mode": "100644",
+      "blob": "6043fed7c222c17d061c5800831e8e07e92e9edc",
+      "sha256": "3965a88a8274bdffa1b12be0bece7e1ce21b4d270f4ef5b26ab1041c29da06a8",
+      "bytes": 10625,
+      "disposition": "narrowed",
+      "reason": "Preserve complete positive identities/proof and conditional limit; canonical packaging, explicit inputs and negative-certification separation pending.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/notes/COMPACT_SINE_SCORE_DOMINATION_AND_STATIC_CURL_LIMIT.md",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/notes/COMPACT_SINE_SCORE_DOMINATION_AND_STATIC_CURL_LIMIT.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/notes/EXACT_COMPACT_COVER_AND_SOURCE_IDENTITIES.md",
+      "mode": "100644",
+      "blob": "8a036192e12023c10183557f2d526c55dfb2dc9c",
+      "sha256": "8dfeb0852a3fc5dc11ae7f0410981b2d43f8e649aa074d1a95c1b10f29b55242",
+      "bytes": 10445,
+      "disposition": "narrowed",
+      "reason": "Preserve complete positive identities/proof and conditional limit; canonical packaging, explicit inputs and negative-certification separation pending.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/notes/EXACT_COMPACT_COVER_AND_SOURCE_IDENTITIES.md",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/notes/EXACT_COMPACT_COVER_AND_SOURCE_IDENTITIES.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/notes/SPARSE_LOOPS_WITH_NONGAUSSIAN_FILLING_FLUCTUATIONS.md",
+      "mode": "100644",
+      "blob": "10e2c461deea8f7a52709214625002349cef06cf",
+      "sha256": "54ea2c673d71b5bbbf3ac24854b3b5af1166c13c4462ddae5d14f0cb06608b29",
+      "bytes": 12130,
+      "disposition": "deferred",
+      "reason": "Complete explicit construction and limit reviewed with no material mathematical defect; negative implication certification remains blocked by N1. Preserve entire argument, never relabel to bypass gate.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/notes/SPARSE_LOOPS_WITH_NONGAUSSIAN_FILLING_FLUCTUATIONS.md",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/notes/SPARSE_LOOPS_WITH_NONGAUSSIAN_FILLING_FLUCTUATIONS.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/FOCUSED_VERIFY.json",
+      "mode": "100644",
+      "blob": "7085ce4cf467c53d57d3f1ec509f57e4a83abf13",
+      "sha256": "7f021f5b5068a7e811fe4382506f2ba88843c0595cc2e6b08a4acac63a3eb184",
+      "bytes": 5004,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/FOCUSED_VERIFY.json",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/FOCUSED_VERIFY.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/PERSONAL_REVIEW.md",
+      "mode": "100644",
+      "blob": "4c9745d9f88f78d54e7624ba2df10ff41d0441c5",
+      "sha256": "b361ca818aabbda7fd57e50ddc018ee9456015063a8618c47a4cb33fa2dfc387",
+      "bytes": 7460,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/PERSONAL_REVIEW.md",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/PERSONAL_REVIEW.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/VOCAB_FINAL.stderr.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/VOCAB_FINAL.stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/VOCAB_FINAL.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/VOCAB_FINAL.stdout.txt",
+      "mode": "100644",
+      "blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "bytes": 81,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/VOCAB_FINAL.stdout.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/VOCAB_FINAL.stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/VOCAB_FIX.stderr.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/VOCAB_FIX.stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/VOCAB_FIX.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/VOCAB_FIX.stdout.txt",
+      "mode": "100644",
+      "blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "bytes": 81,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/VOCAB_FIX.stdout.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/VOCAB_FIX.stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/focused_verify.py",
+      "mode": "100644",
+      "blob": "e98c440b0f215b88a0ee17e9eeaa13546f07bf0f",
+      "sha256": "64466bd013ee4f0aaa16db9c97e4c08c2cae2ee78b9aba2aac9d18c6937ee660",
+      "bytes": 4648,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/focused_verify.py",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/focused_verify.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/curl_premise/compact_score_check.py",
+      "mode": "100644",
+      "blob": "b5a6a513f28b4239518483d63cde2c4903fb8cd9",
+      "sha256": "140307143a94c3173412a9586c0a3713794d26df18c1b57e190a44dfe26b3555",
+      "bytes": 7255,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/curl_premise/compact_score_check.py",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/curl_premise/compact_score_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/curl_premise/stderr.txt",
+      "mode": "100644",
+      "blob": "283806805f8fd92437ba7953effb1b12c42ef1b1",
+      "sha256": "32a0574e831def9f278ab606edac6958cd66f9dc97d79781a03a25f851d3594a",
+      "bytes": 962,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/curl_premise/stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/curl_premise/stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/curl_premise/stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/curl_premise/stdout.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/curl_premise/stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/fourth_moment/sparse_loop_counterexample_check.py",
+      "mode": "100644",
+      "blob": "3fe454aa559cacb1d7e03e808e6b78d0bc8c9861",
+      "sha256": "d24f97a3c873780b0c6719d0afd11ac8bf4eb829385728791d82104db32ebf7c",
+      "bytes": 7185,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/fourth_moment/sparse_loop_counterexample_check.py",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/fourth_moment/sparse_loop_counterexample_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/fourth_moment/stderr.txt",
+      "mode": "100644",
+      "blob": "3e1a1bf6b2e0115ca9765f116d116555a877818d",
+      "sha256": "07f2810673172113221297af1a4d31a22b9794f4ca1427168f785fce6ea9aa5e",
+      "bytes": 1045,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/fourth_moment/stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/fourth_moment/stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/fourth_moment/stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/fourth_moment/stdout.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/fourth_moment/stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/ground_ward_factor/compact_cover_source_check.py",
+      "mode": "100644",
+      "blob": "65555142f42c9b58252bda876f6c4790f4417005",
+      "sha256": "1f4ffca8541a3eff3bdae4982a80ffc3b122c6429aead99b3f75961dcf5f00b2",
+      "bytes": 6570,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/ground_ward_factor/compact_cover_source_check.py",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/ground_ward_factor/compact_cover_source_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/ground_ward_factor/stderr.txt",
+      "mode": "100644",
+      "blob": "1a8e9287394a517e320d3820e2aba2913cc13160",
+      "sha256": "8225846b2770741e55008db9c9e5a355f910cb785530e74409854c8f1f663a01",
+      "bytes": 1304,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/ground_ward_factor/stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/ground_ward_factor/stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/ground_ward_factor/stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/ground_ward_factor/stdout.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/ground_ward_factor/stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/haar_normalization/compact_cover_source_check.py",
+      "mode": "100644",
+      "blob": "59e0afbb650e302f5e8e567fc1e165630d39a885",
+      "sha256": "1787df3fdfd68a3952054adf7dfb82615e1ce586507f5fe92a2b2dd6b9a3dae4",
+      "bytes": 6566,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/haar_normalization/compact_cover_source_check.py",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/haar_normalization/compact_cover_source_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/haar_normalization/stderr.txt",
+      "mode": "100644",
+      "blob": "512673607f7acd9805e865fc8f7d744e5490a3da",
+      "sha256": "49658bf322893f7d1eb78e163815260cadc7128366c05bd3c025c14605982f81",
+      "bytes": 982,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/haar_normalization/stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/haar_normalization/stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/haar_normalization/stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/haar_normalization/stdout.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/haar_normalization/stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/loop_boundary/sparse_loop_counterexample_check.py",
+      "mode": "100644",
+      "blob": "50ee82943b3ec6e0edca48221debfcbf3845a413",
+      "sha256": "69ddc24146be2c0e86cb31939493e8b5b7f99ca2fd7642eb6241fa9266b40fd5",
+      "bytes": 7184,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/loop_boundary/sparse_loop_counterexample_check.py",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/loop_boundary/sparse_loop_counterexample_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/loop_boundary/stderr.txt",
+      "mode": "100644",
+      "blob": "cb559d198ab68c2f65615784f09250326ee30b79",
+      "sha256": "477a7f80781e90d7ccd02d7ba7be7dd425053e74ca7e2047bf272ce282ae35c7",
+      "bytes": 1062,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/loop_boundary/stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/loop_boundary/stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/loop_boundary/stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/loop_boundary/stdout.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/loop_boundary/stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/sign_environment/sparse_loop_counterexample_check.py",
+      "mode": "100644",
+      "blob": "e81a81d4c0e038f2b71e8d0653174718719334b4",
+      "sha256": "dd68adabd2fd05621b9e6dfa199c89fb7f2191118d58e57abac68ed23d3f987e",
+      "bytes": 7185,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/sign_environment/sparse_loop_counterexample_check.py",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/sign_environment/sparse_loop_counterexample_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/sign_environment/stderr.txt",
+      "mode": "100644",
+      "blob": "9a5fdc5c7b20ab79cfd808dbd9175c25e6251994",
+      "sha256": "8046861cf63ef68a0cfbdd8ce7bd63caf4bcc7601511d501aa207e0be30172af",
+      "bytes": 1421,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/sign_environment/stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/sign_environment/stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/sign_environment/stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/sign_environment/stdout.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/sign_environment/stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/source_phase/compact_score_check.py",
+      "mode": "100644",
+      "blob": "ee24d41d5441229962f331e9cfece981dc3a5895",
+      "sha256": "f731110d982a9bcfa31926d7dbd3b2edc12f4df6d58a7559c29288460b3c1d5c",
+      "bytes": 7255,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/source_phase/compact_score_check.py",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/source_phase/compact_score_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/source_phase/stderr.txt",
+      "mode": "100644",
+      "blob": "c6e09ca1f9dc4d424a27066f11d75ab2eba40ffa",
+      "sha256": "5ca0c6985ee1a6e2f4130bae4efc4bfbf7c25bc1a7a59de65b39c408be3a7eb0",
+      "bytes": 930,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/source_phase/stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/source_phase/stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/source_phase/stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/source_phase/stdout.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/source_phase/stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/thermal_time_measure/compact_score_check.py",
+      "mode": "100644",
+      "blob": "70b98d9e28679de394ccd3142d6dc87c9cf06234",
+      "sha256": "e78629ee61bf35a8f52e86c16b2227015ed362ee688f7974b8218b4b2664f326",
+      "bytes": 7250,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/thermal_time_measure/compact_score_check.py",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/thermal_time_measure/compact_score_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/thermal_time_measure/stderr.txt",
+      "mode": "100644",
+      "blob": "b855535a5261d26cb0d2877b78cf33bc1a4ec625",
+      "sha256": "c272741d8ea73354ebe8dc9ccc0505dfde22b12ca7f8c41063bb7e68ad638712",
+      "bytes": 986,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/thermal_time_measure/stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/thermal_time_measure/stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/thermal_time_measure/stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/thermal_time_measure/stdout.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/thermal_time_measure/stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/winding_cubic/compact_cover_source_check.py",
+      "mode": "100644",
+      "blob": "eeedd16d3024ba8c14b438320f02f0dd692d2716",
+      "sha256": "e440e8959220ea3a90085808099db54a3e5eeae329847bce1e4e4cfe5f8acc7c",
+      "bytes": 6573,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/winding_cubic/compact_cover_source_check.py",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/winding_cubic/compact_cover_source_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/winding_cubic/stderr.txt",
+      "mode": "100644",
+      "blob": "f820c5c4c3d0d8f8206efa5e1512419ac764b2d4",
+      "sha256": "fdee7303fb0c1b6acd6a089612b74b2109e7880d9265f12a0479d86ddd6706b0",
+      "bytes": 967,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/winding_cubic/stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/winding_cubic/stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/winding_cubic/stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/winding_cubic/stdout.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults/winding_cubic/stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/curl_premise/compact_score_check.py",
+      "mode": "100644",
+      "blob": "b5a6a513f28b4239518483d63cde2c4903fb8cd9",
+      "sha256": "140307143a94c3173412a9586c0a3713794d26df18c1b57e190a44dfe26b3555",
+      "bytes": 7255,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/curl_premise/compact_score_check.py",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/curl_premise/compact_score_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/curl_premise/stderr.txt",
+      "mode": "100644",
+      "blob": "283806805f8fd92437ba7953effb1b12c42ef1b1",
+      "sha256": "32a0574e831def9f278ab606edac6958cd66f9dc97d79781a03a25f851d3594a",
+      "bytes": 962,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/curl_premise/stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/curl_premise/stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/curl_premise/stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/curl_premise/stdout.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/curl_premise/stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/fourth_moment/sparse_loop_counterexample_check.py",
+      "mode": "100644",
+      "blob": "6e000a108cbb81537e5b31076bd127ae7e845675",
+      "sha256": "7d77f158eae4c0d4154f941e739833b71cbf6c196f2c4c116ca6c72091d68e54",
+      "bytes": 7181,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/fourth_moment/sparse_loop_counterexample_check.py",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/fourth_moment/sparse_loop_counterexample_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/fourth_moment/stderr.txt",
+      "mode": "100644",
+      "blob": "3e1a1bf6b2e0115ca9765f116d116555a877818d",
+      "sha256": "07f2810673172113221297af1a4d31a22b9794f4ca1427168f785fce6ea9aa5e",
+      "bytes": 1045,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/fourth_moment/stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/fourth_moment/stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/fourth_moment/stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/fourth_moment/stdout.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/fourth_moment/stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/ground_ward_factor/compact_cover_source_check.py",
+      "mode": "100644",
+      "blob": "65555142f42c9b58252bda876f6c4790f4417005",
+      "sha256": "1f4ffca8541a3eff3bdae4982a80ffc3b122c6429aead99b3f75961dcf5f00b2",
+      "bytes": 6570,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/ground_ward_factor/compact_cover_source_check.py",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/ground_ward_factor/compact_cover_source_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/ground_ward_factor/stderr.txt",
+      "mode": "100644",
+      "blob": "1a8e9287394a517e320d3820e2aba2913cc13160",
+      "sha256": "8225846b2770741e55008db9c9e5a355f910cb785530e74409854c8f1f663a01",
+      "bytes": 1304,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/ground_ward_factor/stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/ground_ward_factor/stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/ground_ward_factor/stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/ground_ward_factor/stdout.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/ground_ward_factor/stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/haar_normalization/compact_cover_source_check.py",
+      "mode": "100644",
+      "blob": "59e0afbb650e302f5e8e567fc1e165630d39a885",
+      "sha256": "1787df3fdfd68a3952054adf7dfb82615e1ce586507f5fe92a2b2dd6b9a3dae4",
+      "bytes": 6566,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/haar_normalization/compact_cover_source_check.py",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/haar_normalization/compact_cover_source_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/haar_normalization/stderr.txt",
+      "mode": "100644",
+      "blob": "512673607f7acd9805e865fc8f7d744e5490a3da",
+      "sha256": "49658bf322893f7d1eb78e163815260cadc7128366c05bd3c025c14605982f81",
+      "bytes": 982,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/haar_normalization/stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/haar_normalization/stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/haar_normalization/stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/haar_normalization/stdout.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/haar_normalization/stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/loop_boundary/sparse_loop_counterexample_check.py",
+      "mode": "100644",
+      "blob": "ed3463aaafdfc408712be35f1216d2da114caa3a",
+      "sha256": "7727bd0055e4b989ea71e6ebe98c55407b4a230a91503fbf44263dc79e4ec21b",
+      "bytes": 7180,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/loop_boundary/sparse_loop_counterexample_check.py",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/loop_boundary/sparse_loop_counterexample_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/loop_boundary/stderr.txt",
+      "mode": "100644",
+      "blob": "cb559d198ab68c2f65615784f09250326ee30b79",
+      "sha256": "477a7f80781e90d7ccd02d7ba7be7dd425053e74ca7e2047bf272ce282ae35c7",
+      "bytes": 1062,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/loop_boundary/stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/loop_boundary/stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/loop_boundary/stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/loop_boundary/stdout.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/loop_boundary/stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/run.stderr.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/run.stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/run.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/run.stdout.json",
+      "mode": "100644",
+      "blob": "bcf625c1f847078cf7fef8f18ee95b3f75efd28c",
+      "sha256": "4ae3a4b3b287031ece07a98b2d33bdcf67e24828959d267dcafcf17f074c9329",
+      "bytes": 4370,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/run.stdout.json",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/run.stdout.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/sign_environment/sparse_loop_counterexample_check.py",
+      "mode": "100644",
+      "blob": "2eccddb89c865fe80e501f36e321dc3ac9d9e69d",
+      "sha256": "6884ae63b57d286bcbc530b7b4ee0fefa977199264f274b7e5c7f6c7fd5084f7",
+      "bytes": 7181,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/sign_environment/sparse_loop_counterexample_check.py",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/sign_environment/sparse_loop_counterexample_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/sign_environment/stderr.txt",
+      "mode": "100644",
+      "blob": "9a5fdc5c7b20ab79cfd808dbd9175c25e6251994",
+      "sha256": "8046861cf63ef68a0cfbdd8ce7bd63caf4bcc7601511d501aa207e0be30172af",
+      "bytes": 1421,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/sign_environment/stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/sign_environment/stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/sign_environment/stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/sign_environment/stdout.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/sign_environment/stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/source_phase/compact_score_check.py",
+      "mode": "100644",
+      "blob": "ee24d41d5441229962f331e9cfece981dc3a5895",
+      "sha256": "f731110d982a9bcfa31926d7dbd3b2edc12f4df6d58a7559c29288460b3c1d5c",
+      "bytes": 7255,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/source_phase/compact_score_check.py",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/source_phase/compact_score_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/source_phase/stderr.txt",
+      "mode": "100644",
+      "blob": "c6e09ca1f9dc4d424a27066f11d75ab2eba40ffa",
+      "sha256": "5ca0c6985ee1a6e2f4130bae4efc4bfbf7c25bc1a7a59de65b39c408be3a7eb0",
+      "bytes": 930,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/source_phase/stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/source_phase/stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/source_phase/stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/source_phase/stdout.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/source_phase/stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/thermal_time_measure/compact_score_check.py",
+      "mode": "100644",
+      "blob": "70b98d9e28679de394ccd3142d6dc87c9cf06234",
+      "sha256": "e78629ee61bf35a8f52e86c16b2227015ed362ee688f7974b8218b4b2664f326",
+      "bytes": 7250,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/thermal_time_measure/compact_score_check.py",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/thermal_time_measure/compact_score_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/thermal_time_measure/stderr.txt",
+      "mode": "100644",
+      "blob": "b855535a5261d26cb0d2877b78cf33bc1a4ec625",
+      "sha256": "c272741d8ea73354ebe8dc9ccc0505dfde22b12ca7f8c41063bb7e68ad638712",
+      "bytes": 986,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/thermal_time_measure/stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/thermal_time_measure/stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/thermal_time_measure/stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/thermal_time_measure/stdout.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/thermal_time_measure/stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/winding_cubic/compact_cover_source_check.py",
+      "mode": "100644",
+      "blob": "eeedd16d3024ba8c14b438320f02f0dd692d2716",
+      "sha256": "e440e8959220ea3a90085808099db54a3e5eeae329847bce1e4e4cfe5f8acc7c",
+      "bytes": 6573,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/winding_cubic/compact_cover_source_check.py",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/winding_cubic/compact_cover_source_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/winding_cubic/stderr.txt",
+      "mode": "100644",
+      "blob": "f820c5c4c3d0d8f8206efa5e1512419ac764b2d4",
+      "sha256": "fdee7303fb0c1b6acd6a089612b74b2109e7880d9265f12a0479d86ddd6706b0",
+      "bytes": 967,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/winding_cubic/stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/winding_cubic/stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/winding_cubic/stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/winding_cubic/stdout.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/formula_faults_before_separation/winding_cubic/stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/initial_box_separation/FINDING.md",
+      "mode": "100644",
+      "blob": "a560b21d8d9efd80a17dd13c52241787c8e0cce8",
+      "sha256": "6926058b06eb055cf8ffb01075981f9c5072db1f421bd101c548af6378ddb9ab",
+      "bytes": 692,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/initial_box_separation/FINDING.md",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/initial_box_separation/FINDING.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/initial_box_separation/SPARSE_LOOPS_WITH_NONGAUSSIAN_FILLING_FLUCTUATIONS.md",
+      "mode": "100644",
+      "blob": "eff10bf524fb23c8aa7fb9aef733a8c1e61abdd3",
+      "sha256": "723df4625d9d6573c26fad85f798d76bf5044e93dd92151529c64124eadbe87b",
+      "bytes": 12071,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/initial_box_separation/SPARSE_LOOPS_WITH_NONGAUSSIAN_FILLING_FLUCTUATIONS.md",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/initial_box_separation/SPARSE_LOOPS_WITH_NONGAUSSIAN_FILLING_FLUCTUATIONS.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/initial_box_separation/sparse_loop_counterexample_check.ATTEMPT1.stderr.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/initial_box_separation/sparse_loop_counterexample_check.ATTEMPT1.stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/initial_box_separation/sparse_loop_counterexample_check.ATTEMPT1.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/initial_box_separation/sparse_loop_counterexample_check.ATTEMPT1.stdout.json",
+      "mode": "100644",
+      "blob": "85e7f8ac6c9eb2b7521d7047630ccc319fa26f5d",
+      "sha256": "480d6dcf9ba640a1706110a07c9e3066efcf7fd6c2398b4e814c6bf33a97c883",
+      "bytes": 3464,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/initial_box_separation/sparse_loop_counterexample_check.ATTEMPT1.stdout.json",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/initial_box_separation/sparse_loop_counterexample_check.ATTEMPT1.stdout.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/initial_box_separation/sparse_loop_counterexample_check.py",
+      "mode": "100644",
+      "blob": "3ee768b6d29df53648182b60d7643c706e6c3135",
+      "sha256": "b91e824a223e7d4a9bebf778462465bb3cb346ce63ed42956f6ec4f5ac92656d",
+      "bytes": 7181,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/initial_box_separation/sparse_loop_counterexample_check.py",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/initial_box_separation/sparse_loop_counterexample_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/initial_score_refinement_failure/compact_score_check.ATTEMPT1.stderr.txt",
+      "mode": "100644",
+      "blob": "d9f06b41721d1a1a1581b7ac3b14c8a916bff924",
+      "sha256": "6c34c99629aae623e91ba45fafd310e8985922341a497d0601993e7238a8a319",
+      "bytes": 837,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/initial_score_refinement_failure/compact_score_check.ATTEMPT1.stderr.txt",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/initial_score_refinement_failure/compact_score_check.ATTEMPT1.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/initial_score_refinement_failure/compact_score_check.ATTEMPT1.stdout.json",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/initial_score_refinement_failure/compact_score_check.ATTEMPT1.stdout.json",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/initial_score_refinement_failure/compact_score_check.ATTEMPT1.stdout.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/initial_score_refinement_failure/compact_score_check.py",
+      "mode": "100644",
+      "blob": "18e1967aef18a59bdec8128f01fe78a534d736a7",
+      "sha256": "a37534021caa4d8b6818316e778fd7f1128123df754ae1f169c356f691d8f5cb",
+      "bytes": 7255,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/initial_score_refinement_failure/compact_score_check.py",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/initial_score_refinement_failure/compact_score_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-winding-20260916/review/initial_score_refinement_failure/refinement_diagnostic.json",
+      "mode": "100644",
+      "blob": "9359f4b77edcdc9de73525ca87ee3895c5be9b43",
+      "sha256": "c5006a81784508f310539187876d1cc115c8b7ed9d72d0e0ee548a9b2786706a",
+      "bytes": 1431,
+      "disposition": "deferred",
+      "reason": "Exact historical recovery/provenance, including failures, operational state and mutations; not live scientific or audit authority.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8167-originals/.claude/science/physics-loops/toe-compact-winding-20260916/review/initial_score_refinement_failure/refinement_diagnostic.json",
+      "git_recovery": "5265ddd85815fe92e55342f4352f5e675b84703c:.claude/science/physics-loops/toe-compact-winding-20260916/review/initial_score_refinement_failure/refinement_diagnostic.json"
+    }
+  ],
+  "lenses": {
+    "CodeRunnerReviewer": "Finite math checks clean; canonical evidence packaging pending.",
+    "PhysicsClaimReviewer": "Conditional/support boundaries explicit.",
+    "ProofObligationReviewer": "CONDITIONAL",
+    "ImportSupportReviewer": "DISCLOSED",
+    "NatureRetentionReviewer": "BOUNDED, no retained grade",
+    "NoGoDisciplineReviewer": "FAIL N1 packet, honest scope otherwise; not a mathematical refutation of the construction.",
+    "LabelingConventionReviewer": "NOT APPLICABLE",
+    "RepoGovernanceReviewer": "FIX canonical placement and provenance separation",
+    "AuditCompatibility": "FIX, no audit authority edits allowed"
+  },
+  "branch_recovery": "Preserve physics-loop/toe-compact-winding-20260916 while any negative certification/source remains unlanded.",
+  "bound_artifacts": {
+    "drain8167-original-inventory.json": "89dc423ecb70ead70f972fe20ea439e4f8a53951490d466a7f2aa4b8acf2a6e8",
+    "drain8167-original.patch": "2c7e4401f6fe95cb8b1c238e3cdf4be57daaeb8c2e19e24ec85a2298c322740c",
+    "drain8167-head-fetch.json": "4bfab24fedd4e10d71a0de75faec20ce3650dab0b5d7a4dca98462ce59480050",
+    "drain8167-provenance-checks.json": "ff6cf3fad7719a10c07966a2fc22179c1c3262f4d3d693b1abccbe8ccf30a5b8",
+    "check8167/independent_controls.py": "e7a69a07c087cb4d269c345669378427dba433810e91c0d1b5af608be7257b31",
+    "check8167/independent_controls.json": "f87760972e1f2e62207f2ad7c0241e5fccf798057861765c18fbf632c7944a34",
+    "check8167/final-github.json": "e04d311cee42fe1778bcb5ca0d63797a277f84bf771dafb16eaad4c020f32e3e"
+  },
+  "authority_inputs": [
+    {
+      "path": "docs/CANONICAL_HARNESS_INDEX.md",
+      "sha256": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5",
+      "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c"
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c"
+    },
+    {
+      "path": "docs/audit/README.md",
+      "sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f",
+      "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c"
+    },
+    {
+      "path": "docs/audit/data/premise_decision_history.json",
+      "sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113",
+      "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c"
+    },
+    {
+      "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+      "sha256": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8",
+      "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c"
+    },
+    {
+      "path": "docs/repo/CONTROLLED_VOCABULARY.md",
+      "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+      "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c"
+    },
+    {
+      "path": "docs/repo/DEFERRED_DECISIONS.md",
+      "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+      "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c"
+    },
+    {
+      "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+      "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+      "revision": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c"
+    }
+  ]
+}

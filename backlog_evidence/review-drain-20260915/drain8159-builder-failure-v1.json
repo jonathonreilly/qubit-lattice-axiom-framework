@@ -1,0 +1,16 @@
+{
+  "status": "BUILDER FAILED BEFORE STAGING OR SCIENCE EXECUTION",
+  "error": "Transitive-helper membership assertion",
+  "builder_sha256": "7f1d4e2780afbff1fc88c366af93c981d744e022b661dc8a1a0f44e235c75a37",
+  "differences": [
+    {
+      "runner": "scripts/local_spectrum_check_2026_09_15.py",
+      "actual": [],
+      "expected": [
+        "scripts/polarized_word_check_2026_09_15.py"
+      ]
+    }
+  ],
+  "registry_writes_completed": true,
+  "staged_paths": []
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle972_law_independent_check_2026_08_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle972_law_independent_check_2026_08_09.py",
+ "seed": 54146,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a1fff620",
+ "started_utc": "20260923T090226Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0c02d1a5e140406644a355574fcc770540fc41f26b4afd81c509d804b66d595c",
+ "stdout_tail": "6_08_09.json', 'docs/MINIMAL_AXIOMS_2026-06-29.md', 'scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py', 'scripts/frontier_cycle970_inter_site_gate_2026_08_09.py', 'docs/INTER_SITE_GATE_CYCLE970_BOUNDED_THEOREM_NOTE_2026-08-09.md']; blocked_modules_loaded=False; primary_calls_real_apply_semantic=True\nPASS R1_REFUTE_FULL_WITNESS_CENSUS :: independent_family=20; witnesses=6/20 ['CNOT(+x->C)', 'CNOT(-x->C)', 'CNOT(+y->C)', 'CNOT(-y->C)', 'CNOT(+z->C)', 'CNOT(-z->C)']; dependent_word_x_rows=12/40; changed_edge_pairs=384/7680; exact_xor_failures=0/768; control_failures=0/768\nPASS R2_REFUTE_COVARIANCE_AND_CLASSES :: independent_rotations=24; verdict=COVARIANT; non_covariant=[]; word_law_classes=1; state_classes=2; orbit_sizes=[6, 6]; stabilizers=[4, 4]; transported_rotation_failures=0/61440; translation_failures=0/15360\nPASS R3_REFUTE_MARGINAL_GAP :: independent_marginal_changed_words=0/20; changed_edge_pairs=0/3840; identity=(1/2)sum_x indicator[y=x XOR n]=1/2 because XOR by fixed n permutes x\nPASS R4_ACTIVE_CORRUPTION_PROBES :: refutation_corruption_probes={\"class_count_plus_one\":true,\"covariance_flip\":true,\"marginal_count_plus_one\":true,\"witness_count_plus_one\":true,\"xor_to_xnor_truth_table\":true}; primary_and_cache_match_independent=True\nPASS R5_CONTROLS :: determinism_replay=True; runtime_s=1.008956<timeout_s=300; stdout_upper_bound_bytes=3915<6000<150000; timeout_s=300<1400\nVERDICT: PRIMARY_SURVIVES_INDEPENDENT_REFUTATION_ATTEMPT\nTOTAL: PASS=6 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T090227Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle972_law_independent_check_2026_08_09.txt against the .txt beside this log"
+  ]
+ }
+}

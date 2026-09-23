@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle970_inter_site_gate_2026_08_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle970_inter_site_gate_2026_08_09.py",
+ "seed": 53739,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a1fff620",
+ "started_utc": "20260923T085539Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "aa9f972e948e015fe6826c241f2cf544d18884cd25f3269d931e785ae0481740",
+ "stdout_tail": "2026-06-29.md\":\"93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753\",\"scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py\":\"7ffe1dd4b169f774dce5bc9db29c5329c6e06c92e02506fbc734916ff11de884\",\"scripts/frontier_cycle718_carrier_return_core_2026_07_26.py\":\"c9196fdfe2ed6101f7f62ac3552c9fb4944276b67f9f82fe326c89f8c21e23d7\",\"scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py\":\"0008837e938fdc589473967763c5319aeb5fc4996bd8380d5d33c3ec61062691\",\"scripts/frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26.py\":\"b8afe7e4697b0838715a079203930fb37bc7a6fc133e092f02a22141049aad8c\",\"scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py\":\"b514b0e20197bb0ce5e5440b4b0c1f2a0f74a1962b127e8a4e4a2e97c8f86a1a\",\"scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py\":\"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4\"}; BLOCKLIST=['docs/MINIMAL_AXIOMS_2026-06-29.md'] text_only=True; substrate_bridge=True; determinism_replay=True; runtime_s=0.022416<1400; stdout_upper_bound_bytes=2531<6000<150000; timeout_s=300<1400\nCHECKER_PAYLOAD: {\"conditioned_configurations\":40,\"construction_succeeded\":true,\"distribution_neighbor_0\":[1,0],\"distribution_neighbor_1\":[0,1],\"family_words\":5,\"gate_word\":[\"CNOT(1->0)\"],\"resolved_changed\":4,\"resolved_total\":20,\"scope_route\":\"one_cnot_finite_family_witness\",\"state_mutated_on_neighbor_1\":true}\nVERDICT: CYCLE719_BOUND_ONE_CNOT_INTER_SITE_WITNESS\nTOTAL: PASS=4 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T085539Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle970_inter_site_gate_2026_08_09.txt against the .txt beside this log"
+  ]
+ }
+}

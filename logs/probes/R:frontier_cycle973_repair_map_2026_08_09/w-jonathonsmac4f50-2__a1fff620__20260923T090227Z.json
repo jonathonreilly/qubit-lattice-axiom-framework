@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle973_repair_map_2026_08_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle973_repair_map_2026_08_09.py",
+ "seed": 54147,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a1fff620",
+ "started_utc": "20260923T090227Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "31909a67f3fd1beefd72904dea253379f6e642395d663e0cfd04c213cac4118a",
+ "stdout_tail": "PASS A_PINNED_SNAPSHOT :: commit=323d7fc32d77598f74ea6cd4d30c38dda0fe5070; objects={\"docs_tree\":\"7dbc99ea9bb07250a72fff4722d37cdc1c573daf\",\"scripts_tree\":\"b74e1639fc2a2250c0de2a56ad33665533a22c81\",\"snapshot_commit\":\"323d7fc32d77598f74ea6cd4d30c38dda0fe5070\",\"snapshot_tree\":\"45f8bd67eedaccb34918cb6804e850e1ba7f21fb\"}; working_tree_corpus_reads=0\nPASS B_EXACT_ROW_SET :: rows=26; path_digest=3241f04f3b1ffe136c5b2b20bc76ab5acdb6d3c6f9c8cb66b718f3288acfdd01; paths_sorted_unique=True\nPASS C_EXACT_QUOTES_AND_OBLIGATIONS :: exact_quotes=26; named_unattempted_obligations=26; pinned_blob_reads=26\nPASS D_CLOSED_MAP :: delta_histogram={\"ORTHOGONAL_RESTATEMENT\":6,\"STRICTLY_STRONGER\":8,\"STRICTLY_WEAKER\":7,\"UNDERDETERMINED_BY_TEXT\":5}; witness_counts={\"BEARS\":3,\"SILENT\":23}; map_digest=f863cd6edac1d2fd4ccace04596f908b1cabb204c4e3c554384a781261c7aade\nPASS E_CURRENT_AXIOM_BOUNDARY :: path=docs/MINIMAL_AXIOMS_2026-06-29.md; sha256=93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753; admissibility_distribution=True; record_scalar_I=False; record_finite_additivity=False; record_I_empty=False; separate_current_row_review=True\nVERDICT: CYCLE973_26_ROW_REPAIR_MAP_EMITTED\nTOTAL: PASS=5 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T090228Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

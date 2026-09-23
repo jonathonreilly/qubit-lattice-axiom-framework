@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle972_covariant_dependence_law_2026_08_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle972_covariant_dependence_law_2026_08_09.py",
+ "seed": 54144,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a1fff620",
+ "started_utc": "20260923T090224Z",
+ "elapsed_s": 1.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "25da91e3fb6fed46cd4225394edb794405e3cbe00e3f905cb7875aaa79c6ee5e",
+ "stdout_tail": "tier_cycle970_inter_site_gate_2026_08_09.py\":\"d744fa093cbc3639cdf06acf5382825ed677892b88c45cd3334a2ac055facb4c\"}; cycle970_provenance=current_landed_files; runner_read=AST_only; note_read=text_only; determinism_replay=True; runtime_s=1.230543<timeout_s=300; stdout_upper_bound_bytes=3868<6000<150000; timeout_s=300<1400\nCHECKER_PAYLOAD: {\"changed_edge_pair_comparisons\":384,\"control_preservation_failures\":[],\"covariant\":true,\"dependent_word_local_input_rows\":12,\"edge_pair_comparisons\":7680,\"family_words\":20,\"landed_coordinate_bridge_comparisons\":2560,\"landed_coordinate_bridge_failure_count\":0,\"law_truth_table_comparisons\":768,\"marginal_changed_edge_pairs\":0,\"marginal_changed_words\":0,\"marginal_edge_pairs\":3840,\"marginal_word_rows\":20,\"non_covariant_witnesses\":[],\"proper_rotation_count\":24,\"rotation_semantic_comparisons\":61440,\"rotation_semantic_failure_count\":0,\"science_digest\":\"a74ea5871fe738500391fd6cbb4d49926933677b8357cc1f1216a7e3cdd04ab0\",\"state_orbit_sizes\":[6,6],\"state_resolved_class_count\":2,\"state_stabilizer_sizes\":[4,4],\"translation_semantic_comparisons\":15360,\"translation_semantic_failure_count\":0,\"witness_structures_digest\":\"7bb28fd319c77d3201afad7e9f6de331f1b1b4b025e682c1afdc78988c38c049\",\"witness_word_count\":6,\"witness_word_names\":[\"CNOT(+x->C)\",\"CNOT(-x->C)\",\"CNOT(+y->C)\",\"CNOT(-y->C)\",\"CNOT(+z->C)\",\"CNOT(-z->C)\"],\"word_law_class_count\":1,\"word_local_input_rows\":40,\"xor_law_failures\":[]}\nVERDICT: BOUNDED_COVARIANT_DEPENDENCE_LAW_CHARACTERIZED\nTOTAL: PASS=5 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T090226Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle972_covariant_dependence_law_2026_08_09.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle947_h0_discharge_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle947_h0_discharge_2026_07_28.py",
+ "seed": 53738,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a1fff620",
+ "started_utc": "20260923T085538Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "567c0b5567341162e73045d5fbb6b2c38ca0ae489d32bf2f8a8bd255b7c557df",
+ "stdout_tail": "l site map, choice-law independence, minimal semantic cone,\nfull symmetry classification, H0 discharge, or successor selection.\n\nCLAIMS_JSON: {\"bare_transpositions\":0,\"fixed_choice_vs_distribution_counterexample\":true,\"graph_reachability_counterexample\":true,\"lane_grammar_ok\":true,\"local_symmetry_implication_counterexample\":true,\"ordered_multiset_counterexample\":true,\"proper_box_isometries\":24,\"science_digest\":\"65a4722ebc3870c61fa22f3f7a02a8168222f822b9ed72d6b7307165643275ab\",\"support_boundary_ok\":true}\n\n-- CERTIFICATES --------------------------------------------------------\n  PASS  P1_LANE_GRAMMAR                    three accepted, four refused by a fail-closed AST recognizer\n  PASS  P2_LANE_SEMANTICS                  all 16 two-word states and both lane perturbations\n  PASS  P3_FIXED_CHOICE_VS_DISTRIBUTION    exact probabilities 1/4 and 3/4 from four equiprobable seeds\n  PASS  P4_SUPPORT_BOUNDARY                mu=0 and mu=1 have singleton support; 1/4 and 3/4 have both\n  PASS  P5_GRAPH_IS_OVERAPPROXIMATION      double-XOR cancellation plus a four-node depth control\n  PASS  P6_ORDER_MATTERS                   two CNOT orders, all four Boolean inputs\n  PASS  P7_SYMMETRY_SCOPE                  identity-rule implication counterexample and the supplied 3-cube proper-isometry subgroup\n  PASS  P8_DETERMINISM                     complete science payload recomputed in-process\n  PASS  P9_RUNTIME                         elapsed_s=0.001 budget_s=30\n\nTOTAL: PASS=9 FAIL=0\nVERDICT: PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T085538Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle947_h0_discharge_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle971_fidelity_independent_check_2026_08_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle971_fidelity_independent_check_2026_08_09.py",
+ "seed": 53953,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a1fff620",
+ "started_utc": "20260923T085913Z",
+ "elapsed_s": 190.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8313878b5aabcdbfa1f7e9a951b886dba7c32dc0176fcb961306e4afaee01375",
+ "stdout_tail": "_neighbor_conditions\":94,\"vary_with\":193}; row_digest=a24d1a30308acae64c6836a5e8804e433a16185085cebef704661193b772186f; exact_path_token_rows_match=True\nPASS R2_REFUTE_DELTA_CLASSIFICATION :: independent_class_counts={\"MEANING_CHANGED\":26,\"NEWLY_WITNESSABLE\":0,\"SUPPORT_READING_SAFE\":70,\"UNAFFECTED\":1344}; adjudication_manifest_valid=True; adjudication_manifest_sha256=e2b5195b9fd140d30eb551a3906c67dee1e603718b1ea6913d7410923716b68c; full_lists_match=True; classes_digest=389004fadd21329b142498f9af6042ad74d66b63561da88bdfb37750b67b9c59\nPASS R3_REFUTE_VACUITY_PROBE :: independent_state_resolved_runners/branch_pairs=1/1; independent_marginal_runners/branch_pairs=0/0; pinned_python_files_scanned=5646; state_paths=['scripts/audit_companion_minimal_axioms_clean_base_exact.py']; marginal_paths=[]\nPASS R4_REFUTE_AXIOM_PROVENANCE :: independent_authority_checks={\"new_distribution_sentence\":true,\"owner_date\":true,\"registry_support\":true,\"support_provenance\":true}\nPASS R5_CONTROLS :: determinism_replay=True; runtime_s=190.068222<timeout_s=300<=300; stdout_upper_bound_bytes=5104<6000<150000; literal_AUDIT_INPUT_PATHS=['scripts/frontier_cycle971_axiom_fidelity_reread_2026_08_09.py', 'logs/runner-cache/frontier_cycle971_axiom_fidelity_reread_2026_08_09.txt', 'outputs/axiom_fidelity_reread_cycle971_receipt_2026_08_09.json', 'outputs/axiom_fidelity_reread_cycle971_independent_semantic_adjudications_2026_08_09.json']\nVERDICT: PRIMARY_SURVIVES_INDEPENDENT_REFUTATION_ATTEMPT\nTOTAL: PASS=6 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T090224Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle971_fidelity_independent_check_2026_08_09.txt against the .txt beside this log"
+  ]
+ }
+}

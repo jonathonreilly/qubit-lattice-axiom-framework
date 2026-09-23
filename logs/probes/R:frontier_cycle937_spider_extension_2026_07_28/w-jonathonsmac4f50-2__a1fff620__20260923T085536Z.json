@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle937_spider_extension_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle937_spider_extension_2026_07_28.py",
+ "seed": 53736,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a1fff620",
+ "started_utc": "20260923T085536Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "aa06231e155eecd347d60f99cce1967df904772e0b49b30e09547fd237bb61b0",
+ "stdout_tail": "27203e-09, \"ladder\": \"deg2@0.125\", \"pinned_ceiling_row_spread\": 1.6342333796146025e-06, \"pinned_ceiling_row_spread_excluding_L1\": 2.021983892819268e-09, \"pinned_saturation_arm_length_1e-6\": 2, \"predicted_saturation_arm_length_from_the_ladder\": 2, \"prediction_agrees\": true}, {\"abs_dev_delta_2_vs_pinned_spread\": 5.746168943443486e-09, \"abs_dev_delta_3_vs_pinned_spread_excl_L1\": 2.321129399796007e-13, \"delta_2_derived\": 3.191228515525557e-06, \"delta_3_derived\": 5.745938287671226e-09, \"ladder\": \"deg2@0.15\", \"pinned_ceiling_row_spread\": 3.1969746844690006e-06, \"pinned_ceiling_row_spread_excluding_L1\": 5.746170400611206e-09, \"pinned_saturation_arm_length_1e-6\": 2, \"predicted_saturation_arm_length_from_the_ladder\": 2, \"prediction_agrees\": true}], \"status\": \"Underlying tables are historical outputs, not rerun or asymptotic evidence.\"}, \"refutations\": [], \"scope\": \"Supplied finite Hamiltonian and preparation only; no physical supplier or asymptotic claim.\"}\n[PASS] finite_reduction_hankel_complement_agreement\n[PASS] G1_actual_field_specific_comparators\n[PASS] L_zero_supplied_preparation_graph_comparisons\n[PASS] arm_field_on_changes_star_comparison\n[PASS] historical_finite_scores_reproduced\n[PASS] actual_vendor_guard_rejects_wrong_expected_hash\n[PASS] symmetric_matrix_and_evolution\n[PASS] broken_arm_leakage_and_state_difference\n[PASS] terminal_rejects_refutation\n[PASS] terminal_rejects_missing_or_failed_science\n[PASS] actual_input_guard_rejects_wrong_expected_hash\nTOTAL: PASS=11 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T085536Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle937_spider_extension_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

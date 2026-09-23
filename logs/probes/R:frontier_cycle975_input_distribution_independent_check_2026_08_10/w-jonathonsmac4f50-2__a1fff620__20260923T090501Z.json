@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle975_input_distribution_independent_check_2026_08_10",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle975_input_distribution_independent_check_2026_08_10.py",
+ "seed": 54301,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a1fff620",
+ "started_utc": "20260923T090501Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "be4ecaf1e0d0821a9dcce66697f924597fb0d19b70e3d9d65126cc1468463069",
+ "stdout_tail": "terns\":[[[\"-1\",\"2\"],[\"1\",\"-2\"]]],\"exact_970_ordered_pair_inputs\":[0],\"family_words\":20,\"fixed_inputs_with_witness\":2,\"input_cell_definitions\":[\"p=0\",\"0<p<1/2\",\"p=1/2\",\"1/2<p<1\",\"p=1\"],\"input_cells\":5,\"input_family\":\"mu_p=p delta_0+(1-p) delta_1 for every real p in [0,1]\",\"marginal_counts_by_representative\":{\"0\":[6,192,\"1\"],\"1\":[6,192,\"1\"],\"1/2\":[0,0,\"0\"],\"1/4\":[6,192,\"1/2\"],\"3/4\":[6,192,\"1/2\"]},\"state_changed_edge_pairs\":384,\"state_dependent_rows\":12,\"state_edge_pairs\":7680,\"state_rows\":40,\"symbolic_edge_pairs\":3840,\"symbolic_nonzero_edge_pairs\":192,\"x0_classification\":\"sufficient, not necessary, and merely convenient\",\"zero_set\":[\"1/2\"]},\"primary_cache_sha256\":\"9077f015d4ca3ff59a898634820b02a86c6cd2199903abbb34c04543dcbbf7fc\",\"primary_payload_matches\":true,\"primary_source_sha256\":\"e768008585663482ab482b8bf63d01a0fbdd1fc16e7380d2ca19c29b7ccf747e\",\"refute_spec_count\":4}\nVERDICT: PRIMARY_SURVIVES_INDEPENDENT_REFUTATION_ATTEMPT\nper_element: checked and executed -- the independent Boolean reconstruction enumerated both target inputs and outcomes\nper_site: checked and executed -- all six target-neighbour directions on the declared star were enumerated\nper_mode: checked and not executed -- no Fourier or mode decomposition belongs to the reviewed claim\nper_block: checked and executed -- every independent word/input/neighbour/spectator block was enumerated\nlattice_wide: checked and not executed -- the checker refutes only the declared target-centred-star theorem\nTOTAL: PASS=6 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T090501Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle975_input_distribution_independent_check_2026_08_10.txt against the .txt beside this log"
+  ]
+ }
+}

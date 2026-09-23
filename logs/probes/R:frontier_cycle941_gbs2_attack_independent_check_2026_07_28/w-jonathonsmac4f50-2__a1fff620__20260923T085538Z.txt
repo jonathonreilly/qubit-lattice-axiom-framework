@@ -1,0 +1,3 @@
+[PASS] negative screening can destroy uniqueness
+[PASS] row-class and column-class statistics need not agree
+TOTAL: PASS=2 FAIL=0

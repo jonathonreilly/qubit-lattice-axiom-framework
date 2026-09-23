@@ -1,0 +1,38 @@
+{
+ "task": "R:physical_cell_cutting_object_distance_cycle751_2026_08_09",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cell_cutting_object_distance_cycle751_2026_08_09.py",
+ "seed": 54890,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "da25a1f4",
+ "started_utc": "20260923T091450Z",
+ "elapsed_s": 0.1,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "expected_ok": false,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "979cde220e381b6d6361a8b007e3633160d6da65f4af6475b7f655c4dc9e736d",
+ "stdout_tail": "FAIL dependency.cycle749  current primary and independent Cycle 749 certificates bind all rows and 132 carriers\nFAIL dependency.cycle750  current primary and independent Cycle 750 certificates bind both carrier graph types\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_cell_cutting_object_distance_cycle751_2026_08_09.py\", line 210, in <module>\n    bad_c749[\"family_separator\"][\"family_sizes\"] = [12, 12, 12, 24, 25, 47]\n    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^\nKeyError: 'family_separator'\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T091450Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: parse field 'total' found nothing in the stdout: the run may not have reached its summary",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: the pinned cache ends with the verdict 'TOTAL: PASS=49 FAIL=0' and this run printed none",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_cell_cutting_object_distance_cycle751_2026_08_09.txt against the .txt beside this log"
+  ]
+ }
+}

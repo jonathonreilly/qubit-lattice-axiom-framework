@@ -1,0 +1,24 @@
+FAIL independent.cycle749_contract  current Cycle 749 primary and independent certificates bind all rows and 132 carriers
+FAIL independent.cycle750_contract  current Cycle 750 primary and independent certificates bind both carrier graph types
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_cell_cutting_object_distance_cycle751_independent_check_2026_08_09.py", line 205, in <module>
+    predecessor = runpy.run_path(
+                  ^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_cell_cutting_carrier_cube_metric_cycle750_independent_check_2026_08_09.py", line 172, in <module>
+    predecessor = runpy.run_path(
+                  ^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_cell_cutting_family_separator_cycle749_independent_check_2026_08_08.py", line 513, in <module>
+    group = closure(generators)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_cell_cutting_family_separator_cycle749_independent_check_2026_08_08.py", line 465, in closure
+    product = tuple(int(value) for value in generator[element_array])
+                                            ~~~~~~~~~^^^^^^^^^^^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0

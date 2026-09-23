@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle941_gbs2_attack_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle941_gbs2_attack_2026_07_28.py",
+ "seed": 53736,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a1fff620",
+ "started_utc": "20260923T085536Z",
+ "elapsed_s": 1.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "705d46bdd3adc4754e6e384e7c5d58253980bc777123df80d3fde6b220bf7c01",
+ "stdout_tail": " -1], [-1, 0, 1], [-1, 1, -1], [-1, 1, 0], [-1, 1, 1], [0, -1, -1], [0, -1, 1], [0, 0, 0], [0, 1, -1], [0, 1, 1], [1, -1, -1], [1, -1, 0], [1, -1, 1], [1, 0, -1], [1, 0, 1], [1, 1, -1], [1, 1, 0], [1, 1, 1]], [[-1, 0, 0], [0, -1, 0], [0, 0, -1], [0, 0, 0], [0, 0, 1], [0, 1, 0], [1, 0, 0]], [[-1, -1, -1], [-1, -1, 1], [-1, 0, 0], [-1, 1, -1], [-1, 1, 1], [0, -1, 0], [0, 0, -1], [0, 0, 0], [0, 0, 1], [0, 1, 0], [1, -1, -1], [1, -1, 1], [1, 0, 0], [1, 1, -1], [1, 1, 1]], [[-1, -1, 0], [-1, 0, -1], [-1, 0, 0], [-1, 0, 1], [-1, 1, 0], [0, -1, -1], [0, -1, 0], [0, -1, 1], [0, 0, -1], [0, 0, 0], [0, 0, 1], [0, 1, -1], [0, 1, 0], [0, 1, 1], [1, -1, 0], [1, 0, -1], [1, 0, 0], [1, 0, 1], [1, 1, 0]], [[-1, -1, -1], [-1, -1, 0], [-1, -1, 1], [-1, 0, -1], [-1, 0, 0], [-1, 0, 1], [-1, 1, -1], [-1, 1, 0], [-1, 1, 1], [0, -1, -1], [0, -1, 0], [0, -1, 1], [0, 0, -1], [0, 0, 0], [0, 0, 1], [0, 1, -1], [0, 1, 0], [0, 1, 1], [1, -1, -1], [1, -1, 0], [1, -1, 1], [1, 0, -1], [1, 0, 0], [1, 0, 1], [1, 1, -1], [1, 1, 0], [1, 1, 1]]], \"radius2_window_count\": 512, \"rounded_versus_all_nearest_seed_difference\": [\"pair\"]}}\n[PASS] negative screening can destroy uniqueness\n[PASS] row-class and column-class statistics need not agree\n[PASS] all4788unreduced site equations hold for actual orbit solutions\n[PASS] C941 rounded-seed layers independently enumerated\n[PASS] original separate statistic retained\n[PASS] all6144 supplied containment counts\n[PASS] screened origin identity and domain\nTOTAL: PASS=7 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T085538Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

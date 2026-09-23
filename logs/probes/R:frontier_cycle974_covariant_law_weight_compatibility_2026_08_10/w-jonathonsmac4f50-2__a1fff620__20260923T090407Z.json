@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle974_covariant_law_weight_compatibility_2026_08_10",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle974_covariant_law_weight_compatibility_2026_08_10.py",
+ "seed": 54247,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a1fff620",
+ "started_utc": "20260923T090407Z",
+ "elapsed_s": 52.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ea6645d536fb8f3dea875419bf38736ef386f968c840e1e71fbf25012c671bb2",
+ "stdout_tail": "ons\":64,\"rotation_count\":24,\"rotation_failures\":[],\"rotation_semantic_comparisons\":61440,\"state_resolved_class_count\":2,\"translation_failures\":[],\"translation_semantic_comparisons\":15360,\"uniform_target_input_changed_pairs\":0,\"uniform_target_input_edge_pairs\":3840,\"witness_word_count\":6,\"word_law_class_count\":1,\"xor_failures\":[],\"xor_truth_table_comparisons\":768}\nB_COMPATIBILITY_TEST PASS :: criterion=existential joint-extension criterion: a normalized event weighting p_i survives iff there exists P_i(e,x,n,y) with event marginal p_i and conditional P_i(y|x,n)=1{y=x XOR n_d} on every fixed-input radius-one configuration; mechanically use P_i=p_i(e)*q(x,n)*1{y=x XOR n_d}, q=1/128.  Exclude only on nonnegative/normalization failure, event-marginal mismatch, or a first conditional configuration mismatch.; verdicts={\"M1_COUNTING\":\"SURVIVES\",\"M2_PER_WORLD_UNIFORM\":\"SURVIVES\",\"M3_OCCUPATION_WEIGHTED\":\"SURVIVES\",\"M4_FORMATION_LIFETIME\":\"SURVIVES\",\"M5_FORMATION_MOMENT\":\"SURVIVES\"}; witness_pair={\"condition_n_d_0\":[0,0,0,0,0,0],\"condition_n_d_1\":[1,0,0,0,0,0],\"distribution_n_d_0\":[1,0],\"distribution_n_d_1\":[0,1],\"fixed_target_input\":0}\nC_SELECTION_STATUS PASS :: case=MULTIPLE_SURVIVORS_UNDER_DECLARED_CRITERION; five_to=5; excluded=0; reduction=0/5 (0%); multiple_survivors_under_criterion=True; selected=None; refutation_target=None\nD_CONTROLS PASS :: sha_pins=True; BLOCKLIST_text_AST_only=True; determinism=True; runtime_s=52.037<1400; stdout_bytes=2480<6000<150000\nTOTAL: PASS=4 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T090500Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle974_covariant_law_weight_compatibility_2026_08_10.txt against the .txt beside this log"
+  ]
+ }
+}

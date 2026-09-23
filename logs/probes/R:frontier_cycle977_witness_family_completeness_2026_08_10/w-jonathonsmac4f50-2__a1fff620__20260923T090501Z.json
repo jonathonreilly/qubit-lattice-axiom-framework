@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle977_witness_family_completeness_2026_08_10",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle977_witness_family_completeness_2026_08_10.py",
+ "seed": 54301,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a1fff620",
+ "started_utc": "20260923T090501Z",
+ "elapsed_s": 16.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8154a1b261812ddb721aa8484b739610efe78ae86515ccf8a1a19bc72a1b4bcd",
+ "stdout_tail": "member_count\":12,\"members\":[\"TOF(+x,+y->C)\",\"TOF(+x,+z->C)\",\"TOF(+x,-y->C)\",\"TOF(+x,-z->C)\",\"TOF(+y,+z->C)\",\"TOF(+y,-z->C)\",\"TOF(-x,+y->C)\",\"TOF(-x,+z->C)\",\"TOF(-x,-y->C)\",\"TOF(-x,-z->C)\",\"TOF(-y,+z->C)\",\"TOF(-y,-z->C)\"],\"representative\":\"TOF(+x,+y->C)\"},{\"covariant\":true,\"law\":\"x XOR n_+x AND n_-x\",\"member_count\":3,\"members\":[\"TOF(+x,-x->C)\",\"TOF(+y,-y->C)\",\"TOF(+z,-z->C)\"],\"representative\":\"TOF(+x,-x->C)\"}],\"conditioned_configurations\":19840,\"dependent_word_input_rows\":42,\"edge_pair_comparisons\":59520,\"family_covariant\":true,\"family_descriptor_digest\":\"fe29ad310ab15bfa4057ff2eba264df53521e581481a4f9e035c829502758497\",\"family_kind_counts\":{\"CNOT\":42,\"TOF\":105,\"X\":7,\"identity\":1},\"family_size\":155,\"legacy_witness_count\":6,\"non_covariant_witnesses\":[],\"rotation_checks\":476160,\"rotation_failure_count\":0,\"science_digest\":\"bc684f5218ce1e593f1d63676bd66a89a2340f11a33a611ec31eec3455d36929\",\"translation_checks\":119040,\"translation_failure_count\":0,\"witness_count\":21,\"witness_names\":[\"CNOT(+x->C)\",\"CNOT(-x->C)\",\"CNOT(+y->C)\",\"CNOT(-y->C)\",\"CNOT(+z->C)\",\"CNOT(-z->C)\",\"TOF(+x,-x->C)\",\"TOF(+x,+y->C)\",\"TOF(+x,-y->C)\",\"TOF(+x,+z->C)\",\"TOF(+x,-z->C)\",\"TOF(-x,+y->C)\",\"TOF(-x,-y->C)\",\"TOF(-x,+z->C)\",\"TOF(-x,-z->C)\",\"TOF(+y,-y->C)\",\"TOF(+y,+z->C)\",\"TOF(+y,-z->C)\",\"TOF(-y,+z->C)\",\"TOF(-y,-z->C)\",\"TOF(+z,-z->C)\"],\"witness_signature_digest\":\"1cceceaa1e1b2ca574ab39c7dcb9f3eba0729ddf4e38628461bc5276abadca97\",\"word_input_rows\":310}\nVERDICT: LEGACY_FAMILY_UNDERCOUNTED_WITNESSES\nTOTAL: PASS=4 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T090518Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

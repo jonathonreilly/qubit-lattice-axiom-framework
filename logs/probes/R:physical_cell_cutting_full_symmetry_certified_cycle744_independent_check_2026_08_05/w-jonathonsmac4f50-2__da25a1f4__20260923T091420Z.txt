@@ -1,0 +1,20 @@
+PASS independent.population  opposite-pivot reconstruction gives 15800 by 192
+FAIL independent.dependencies  Cycle 742 exact maps and Cycle 743 exact group package are current
+PASS independent.extra_automorphisms  both predecessor permutations preserve every independently reconstructed row
+PASS independent.generated_group  tuple closure is transitive of order 384 with point stabilizer two
+PASS independent.point_partition  explicit cell splitting gives 16 singleton and 88 two-element suborbits
+PASS independent.exhaustive_stabilizer_branch  the two discrete branches yield exactly identity and the known stabilizer map
+PASS independent.full_group  orbit-stabilizer upper bound equals the contained generated group
+FAIL independent.primary_contract  primary receipt pins current sources and the independently rebuilt certificate
+PASS hostile.primary_status  a failing primary receipt is rejected
+PASS hostile.stabilizer_size  an enlarged stabilizer cannot satisfy the certificate contract
+PASS hostile.automorphism  a transposed image pair breaks exact incidence preservation
+PASS hostile.omitted_generator  omitting b1 collapses the generated group
+PASS hostile.incidence_identity  one changed incidence bit invalidates the canonical table identity
+per_element: checked -- all 192 columns enter opposite-pivot incidence, group closure, and explicit-cell refinement
+per_site: checked and not executed -- one supplied coordinate four-cube only
+per_mode: checked and not executed -- no field or momentum modes are present
+per_block: checked -- all 15800 rows and all 50 generators are tested
+lattice_wide: checked and not executed -- no multi-cell or continuum claim
+RECEIPT outputs/physical_cell_cutting_full_symmetry_certified_cycle744_independent_check_2026_08_05_receipt_2026-08-05.json
+TOTAL: PASS=11 FAIL=2

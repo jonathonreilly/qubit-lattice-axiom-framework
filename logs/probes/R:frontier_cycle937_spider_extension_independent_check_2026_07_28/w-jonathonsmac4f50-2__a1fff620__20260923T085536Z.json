@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle937_spider_extension_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle937_spider_extension_independent_check_2026_07_28.py",
+ "seed": 53736,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a1fff620",
+ "started_utc": "20260923T085536Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b93b2743bf0dcb409f65a3e35069a34f830c5ded0631f1261e86a674eb1e801e",
+ "stdout_tail": "{\"broken_arm\": {\"full_evolution_difference\": 0.04862544679807266, \"leakage\": 0.10000000000000006, \"projected_lift_norm\": 0.9999999999999991}, \"clean_baseline\": {\"C_pair\": 0.0340948578580788, \"L\": 2, \"complement_residual\": 0.0, \"d\": 2, \"edges\": [[0, 1]], \"entropy_residual\": 4.3021142204224816e-16, \"field\": 0.13, \"full_dim\": 32, \"initial_residual\": 1.1102230246251565e-16, \"intertwining_residual\": 2.7755575615628914e-17, \"isometry_residual\": 2.220446049250313e-16, \"pointer_field\": 0.13, \"projection_residual\": 4.440892098500626e-16, \"reduced_dim\": 20, \"s_full\": [6.581934129453733e-19, 0.01704742892903897, 6.581934129453733e-19], \"s_reduced\": [0.0, 0.0170474289290394, 0.0], \"state_residual\": 1.5499072293638092e-15, \"t\": 0.7}}\n[PASS] symmetric_matrix_and_evolution\n[PASS] broken_arm_leakage_and_state_difference\n[PASS] terminal_rejects_refutation\n[PASS] terminal_rejects_missing_or_failed_science\n[PASS] actual_input_guard_rejects_wrong_expected_hash\nTOTAL: PASS=5 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T085536Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle937_spider_extension_independent_check_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/static_ice_measure_nearest_neighbour_admissibility_needs_a_frame_source_2026_09_22.py
+runner_sha256: d9747510dd18310cfb42093bd7aa7d2474116c888dacd752b9b872469ed66d84
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 51.18
+status: ok
+----- stdout -----
+1. occupation form: vertices carry nothing
+[PASS] ice configurations on the coarse 2x2x2 torus (Z_4^3 fine) enumerated :: 9600 configurations; 8 vertices, 24 links
+[PASS] each link's conditional given all other sites is fixed by next-nearest links :: n(l) = 3 - (other five links at either endpoint)
+[PASS] with constant vertex, plaquette and cube records the link's value is not a function of its neighbours :: every link takes both values under identical neighbour records: the sentence fails
+[PASS] the landed RK sector: 880 zero-flux states, and every link still takes both values there :: flux = net arrow count through a plane, arrows from the even to the odd coarse sublattice
+2. soldered vertex records
+[PASS] soldered records: every site's value is a function of its six neighbours' values (by direction) :: 64 sites x 9600 states
+[PASS] the soldered support is invariant under the 24 rotations acting on positions and on records :: link marginal is the uniform ice measure (one state per ice configuration)
+3. unsoldered vertex-only records
+[PASS] star window: an unsoldered link rule sees only the vertex, so all six links would be equal; no ice pattern is :: 20 ice patterns, none constant
+[PASS] 2x2x2 torus: the two links of an axis join the same vertex pair, and every ice state has such a pair unequal :: a symmetric function of endpoint records gives them equal values; no vertex alphabet works
+4. coordinate letters (open PR 8676)
+[PASS] static rigidity lemma: a plaquette whose two paths agree, with consistent back-steps, forces equal local frames :: all 48 x 48 frame pairs and 24 perpendicular pairs (first frame fixed by relabelling)
+[PASS] all 48 signed frames are complete static records of the frame rule on the torus :: with the lemma, these and their 64 offsets are all of them
+[PASS] a site's six neighbour labels fix its own label in every frame :: unique candidate for all 48 frames
+[PASS] coordinate letters: every site's value is a function of its neighbours' values up to rotation :: 1228800 (site, state) pairs over a proper and an improper frame; key ignores directions
+[PASS] rotating positions with values fixed keeps the lettered records consistent (unsoldered covariance) :: ice at every vertex, links agree with both vertex records, roles read from labels
+N5 resolution certificate: exact finite algebra and declared enumeration domains only
+N5 sampling certificate: external fixed orders and fresh conditional draws where formation is used
+N5 dependency certificate: self-contained stdlib runner; no physical encoding supplied
+N5 scaling certificate: finite checks do not execute infinite-volume or spectral limits
+N5 scope certificate: source proofs carry universal implications; alternative models remain open
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

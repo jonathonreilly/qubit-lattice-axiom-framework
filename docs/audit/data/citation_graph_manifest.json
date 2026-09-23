@@ -1,6 +1,6 @@
 {
- "edge_count": 14025,
- "node_count": 6473,
+ "edge_count": 14029,
+ "node_count": 6477,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3657,6 +3657,10 @@
   "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28": {
    "deps_hash": "42db6a056a96",
    "out_degree": 2
+  },
+  "directed_ice_sweep_formation_makes_ice_correlations_causal_flux_propagates_as_a_directed_random_walk_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "directional_b_density_stencil_note": {
    "deps_hash": "e3b0c44298fc",
@@ -16602,6 +16606,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "registered_frames_coordinate_labels_sweep_rigidity_corner_price_and_soldered_emulation_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
   "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": {
    "deps_hash": "28f13d4d9ca8",
    "out_degree": 7
@@ -18122,6 +18130,10 @@
    "deps_hash": "ac6bfb491704",
    "out_degree": 4
   },
+  "static_ice_measure_nearest_neighbour_admissibility_needs_a_frame_source_soldered_vertex_records_or_coordinate_letters_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
   "static_source_readout_i1_accepted_premise_bridge_bounded_note_2026-05-27": {
    "deps_hash": "63a3ca8f58cf",
    "out_degree": 3
@@ -19221,6 +19233,10 @@
   "unified_program_note": {
    "deps_hash": "dd9fd64aa659",
    "out_degree": 22
+  },
+  "uniform_ice_by_formation_the_square_loop_obstruction_the_plaquette_coordinator_and_plans_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "unit_conversion_is_the_accepted_non_bounding_ruler_reconciliation_note_2026-06-08": {
    "deps_hash": "d292eab310f2",

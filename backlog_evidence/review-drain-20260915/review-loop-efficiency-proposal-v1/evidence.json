@@ -1,0 +1,60 @@
+{
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-capture-dual-binding-v2.json",
+      "sha256": "f1308b59571f515c97b37f54dfcc745331f3a2b40c778b1b5dd7f689ad34ba2a"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-adapter-review-v2.json",
+      "sha256": "c789eeeee564f5118d3fdfd47706e850e9c805064099b17f4e5a1e1dfbde2444"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8176-capture-dual-binding-v2.json",
+      "sha256": "5b4615ff3b832f23006b2065e7064d1ceaa2951683f7096ff9815079456d5299"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8176-adapter-review-v2.json",
+      "sha256": "357562e86290ee489ac250991734ec163179bea4eafdc3ffbbeaed4d22c057ec"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-early-review-v1.md",
+      "sha256": "cf5838c5e262276956690b1a79494aa6cda99b627a5b9003649c20960291ecaa"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-early-review-v2.md",
+      "sha256": "d0762f4b0cafb13091e2d4d89064eea9c93e4121797e7dc2a7f0588571404e43"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-io-control-receipt-v2.json",
+      "sha256": "0366ea0ace10fe60f633f777f47ac2f67862bfdf456c8ddf41827f8b4af71c65"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-capture-v3.py",
+      "sha256": "df1b538f1c0c3bae759dea26e371850f9f1284f4376ddb3d6157da6577052ac6"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-basename-collision-check-v3.json",
+      "sha256": "27589cbdba55d1142f40633caad5fa6ef21bbab6af96c01574dd00572f7f5824"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-original/inventory.json",
+      "sha256": "247038ae72ce92f8a5b72a58f42ada6e2e752097656b7dac32056860dd434f0e"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-original/main-loss-guard.json",
+      "sha256": "f8849e04979296764a7e6844d12a94dd5aa4ccbb247c052ee3eddae7c78aece0"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-original/original.patch",
+      "sha256": "9887b73aa5f1c89df2de5950c00f23cd9dbaaf2872062a9706e65f273b5ca9bd"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-author-cheap-v1.json",
+      "sha256": "30979b36068cccc08eb01ba7fcef963a12a989a9f22c7145a5a8bb8bff75bcc3"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-receipt-tooling-fix-v2.json",
+      "sha256": "35f49131f0d7aac299ab25ae5ac8360bb9a1971b06b5e8fe1d3c940236b14164"
+    }
+  ]
+}

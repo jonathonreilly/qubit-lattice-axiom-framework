@@ -1,0 +1,84 @@
+{
+  "scope": "Documentation mechanics only; not an independent methodology verdict or landing authorization",
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/Users/jonBridger/.codex/skills/review-loop",
+        "apply",
+        "--check",
+        "/private/tmp/review-drain-20260915/review-loop-efficiency-proposal-v1/proposal.patch"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/private/tmp/review-drain-20260915/review-loop-efficiency-proposal-v1",
+        "apply",
+        "--reverse",
+        "--check",
+        "proposal.patch"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "/Users/jonBridger/.codex/skills/.system/skill-creator/scripts/quick_validate.py",
+        "/Users/jonBridger/.codex/skills/review-loop"
+      ],
+      "exit_code": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    }
+  ],
+  "frontmatter": "SKILL.md unchanged; quick_validate checked the unchanged entry point directly",
+  "markdown": [
+    {
+      "path": "references/REVIEW_UNITS.md",
+      "utf8": true,
+      "final_newline": true,
+      "no_trailing_whitespace": true,
+      "balanced_fences": true,
+      "reference_targets_unchanged": true
+    },
+    {
+      "path": "references/OPERATIONS.md",
+      "utf8": true,
+      "final_newline": true,
+      "no_trailing_whitespace": true,
+      "balanced_fences": true,
+      "reference_targets_unchanged": true
+    },
+    {
+      "path": "references/FIXES_AND_REPORTING.md",
+      "utf8": true,
+      "final_newline": true,
+      "no_trailing_whitespace": true,
+      "balanced_fences": true,
+      "reference_targets_unchanged": true
+    },
+    {
+      "path": "references/UNIT_RECEIPT.md",
+      "utf8": true,
+      "final_newline": true,
+      "no_trailing_whitespace": true,
+      "balanced_fences": true,
+      "reference_targets_unchanged": true
+    }
+  ],
+  "all_15_live_skill_files_unchanged_from_parity_receipt": true,
+  "parity_receipt": {
+    "path": "/private/tmp/review-drain-20260915/review-loop-remote-parity-train88.json",
+    "sha256": "36a2a2bfb89f4758e403afd9c2cd59d3f67b49dae7033bd601c24cc92cdf1e52"
+  },
+  "scripts_changed": false,
+  "science_executed": false
+}

@@ -1,0 +1,346 @@
+{
+  "schema_version": 1,
+  "kind": "author-preparation-not-review-verdict",
+  "pr": 8177,
+  "owner": "PR8177-author",
+  "base": "64f53dd443cd02997394e1a8bef16e2baf9f9d39",
+  "head": "9e98fd751435c1b65898f8e3058250a2e56d9703",
+  "source_count": 56,
+  "source": [
+    {
+      "path": "docs/ROOTED_MARKED_TREE_EXTENSION_SEED_INDUCTION_AND_RELAXED_LIFTED_TREE_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-17.md",
+      "mode": "100644",
+      "sha256": "24be34b472e47cafd59a15dd5125bfad54a1270fb4712002d9bf29d145029559"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/README.md",
+      "mode": "100644",
+      "sha256": "20ba8efdb15e3e2a17214a2e7e537f8e6049f21c293584e659e108466a5a762d"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-01-APPROACH_REGISTRY.md.gz",
+      "mode": "100644",
+      "sha256": "af92ca6399a4b99cc6d44aab5bb102fd72419716322bbdd57b90bfa8dc58add7"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-02-CHECKER_block33_findings.md.gz",
+      "mode": "100644",
+      "sha256": "591c0969fcc9346ceabaf92401cb5abd9f1998e22342fb5d54ef319e68832bdd"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-03-CLAIM_STATUS_CERTIFICATE_block33.md.gz",
+      "mode": "100644",
+      "sha256": "9f287c201ddb8b8e77f611fabe61e82dad7f15240130f8930aedeb74b9e67553"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-04-GOAL_block33.md.gz",
+      "mode": "100644",
+      "sha256": "521c2e6ebe8893c8e4ea6e498480af20f3d27f7b406cf7691e098ea89edf45f2"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-05-HANDOFF.md.gz",
+      "mode": "100644",
+      "sha256": "72407fbae9ba80b236f0eb6ade0801fe2e5586fea3738ad7d5abe1bb7e5ed2b2"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-06-NO_GO_LEDGER.md.gz",
+      "mode": "100644",
+      "sha256": "15213bc6408443f3ee71021dd7fddccb88021c09c8e31d4714a93faf30eb7ceb"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-07-OPPORTUNITY_QUEUE.md.gz",
+      "mode": "100644",
+      "sha256": "851f17e08556a5f636bb50d2b1b2600ead7e959f29b15bbdd4fca09e9d8f5536"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-08-RESULTS_block33.md.gz",
+      "mode": "100644",
+      "sha256": "cee92027a01abe3da0d42d552445fa1317e89cb49e826706a1ad563c727286a3"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-09-REVIEW_HISTORY.md.gz",
+      "mode": "100644",
+      "sha256": "a92b7563166b6c0bfb461373db447ff6d1cd3aeff4d00e11b8c369bafbcb6603"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-10-STATE.yaml.gz",
+      "mode": "100644",
+      "sha256": "b8646937d7930163f69a33e2262d843d11b77202712c89daf795bc5e2e6e482e"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-11-TRACE_GATE.md.gz",
+      "mode": "100644",
+      "sha256": "f3497bb2ab4f94d3d8c97d0fe95f2ce5b5355ea89de8f3c62975d5789ec0a62b"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-12-supervisor_control_block33_certify33.out.txt.gz",
+      "mode": "100644",
+      "sha256": "da5ab6368306aace6be3fa406d9c7eb87c1c90443482f009c494430376014db4"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-13-supervisor_control_block33_certify33.py.gz",
+      "mode": "100644",
+      "sha256": "c1a61f3e163ae885fdc53f07d3b8a1c588de2022bb5140119b7038fad9d1456d"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-14-supervisor_control_block33_core30.py.gz",
+      "mode": "100644",
+      "sha256": "f84b5c2b7090bdf146079018c7d0b56317110e4702595cef6a6f329c72aad98f"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-15-supervisor_control_block33_diag.out.txt.gz",
+      "mode": "100644",
+      "sha256": "74b1d81f1e8ccc5f4218784105e7dad490ffa86b748075136b95c0a727b0e7e4"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-16-supervisor_control_block33_diag.py.gz",
+      "mode": "100644",
+      "sha256": "ad490fb120e95c849ef4202c27a1b489bfa1515fe0dd726caa167739cfb30d63"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-17-supervisor_control_block33_doublechild.out.txt.gz",
+      "mode": "100644",
+      "sha256": "8c5fa7e6df4f9e596e31e829ec2386bb47c7dee36865f832c4dae785a2c61a6d"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-18-supervisor_control_block33_doublechild2.py.gz",
+      "mode": "100644",
+      "sha256": "219f69ac6a6ababd99061a6bcfa7d6fa86391f758b17a2f6c84eb6005fe6ba33"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-19-supervisor_control_block33_doublekind.py.gz",
+      "mode": "100644",
+      "sha256": "7675571e35c3ed4769a5723bd8877a612f6f01c8d8cd9862495e0461d55bedfa"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-20-supervisor_control_block33_kind_certs.out.txt.gz",
+      "mode": "100644",
+      "sha256": "35fa2d29dbda2d020c044c819b2bdf46425ea5a05a437bcb607227c8aee2b8e6"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-21-supervisor_control_block33_kind_certs.py.gz",
+      "mode": "100644",
+      "sha256": "5ee9937f9172a08c429491b8a7eb055fa1c5ae81b4a6a48859f0da502f856ce3"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-22-supervisor_control_block33_lemmas.out.txt.gz",
+      "mode": "100644",
+      "sha256": "d692118561c835bca496897d18e6edfc961b31629c0a631c059297809260bb3e"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-23-supervisor_control_block33_lemmas.py.gz",
+      "mode": "100644",
+      "sha256": "3a82d272967d2fd80c15c7328ff50262a78efdb860f4ebb23a48de5b271567ec"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-24-supervisor_control_block33_mintree.py.gz",
+      "mode": "100644",
+      "sha256": "c7390f21771ccb4f760995d3f2fc9605e2f576e48fba8b4f9112c1f647dcd1fb"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-25-supervisor_control_block33_overlap.out.txt.gz",
+      "mode": "100644",
+      "sha256": "3454257034cb3114aa2ec0ab99ab03e56209a515eb3ff6e344f192cc442f86ab"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-26-supervisor_control_block33_overlap.py.gz",
+      "mode": "100644",
+      "sha256": "57a0a06c28fb0baa32797381ce8596ffadcfaf188d793311057862a4a5df629b"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-27-supervisor_control_block33_refuter.out.txt.gz",
+      "mode": "100644",
+      "sha256": "5cfd1c08d7384091a597bb52ac4721098f5c66130b6f20226701c2fe703b50c0"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-28-supervisor_control_block33_refuter.py.gz",
+      "mode": "100644",
+      "sha256": "87df766395256be51095ce4f0de6940db2654e898257064ef9fff145968ebe3a"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-29-supervisor_control_block33_restricted_count.out.txt.gz",
+      "mode": "100644",
+      "sha256": "6c535b7abb3cedca734e7346b4d8fdcdef441577d4d8c0fafec429470efea229"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-30-supervisor_control_block33_restricted_count.py.gz",
+      "mode": "100644",
+      "sha256": "119d9ad94bdaa5703c68914b1a137bfeaf19e4f13ff4124274208bd490d79083"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-31-supervisor_control_block33_rooted.out.txt.gz",
+      "mode": "100644",
+      "sha256": "49d549561a2830e0ad47df3489550d13488ec4859355c38e5cdad9556a191099"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-32-supervisor_control_block33_rooted.py.gz",
+      "mode": "100644",
+      "sha256": "7f5b60f6273c9c3e8f33a93114374c8758a2877180fb2c392368b83b07b56819"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-33-supervisor_control_block33_shape.out.txt.gz",
+      "mode": "100644",
+      "sha256": "01ed560ba5252bd9c107bebf8c71f5ee3f64deca1820ff2c2460d083fdd22aa2"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-34-supervisor_control_block33_shape.py.gz",
+      "mode": "100644",
+      "sha256": "fd7b1708d1ae18f504bba4cd30bea1f496d1c32196212ee79c111a7cb9561eac"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-35-supervisor_control_block33_shape2.out.txt.gz",
+      "mode": "100644",
+      "sha256": "a88f21d9513353385e69344daec7ef883340d41a4ee0e893bda353e29501eb70"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-36-supervisor_control_block33_shape2.py.gz",
+      "mode": "100644",
+      "sha256": "6dc13ec789e837eaff10db39673d447cf1b49f3591ca32c526d2d51f6fb8a1ae"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-37-supervisor_control_block33_structural.out.txt.gz",
+      "mode": "100644",
+      "sha256": "85eac03984b24e95c26be51891a1490fe70b04519b529f4ab52f8b3f79ea5a78"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-38-supervisor_control_block33_structural.py.gz",
+      "mode": "100644",
+      "sha256": "739547da96ac1525aa94f925b85352039f257b7674319875a90a916fd90e79a6"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-39-supervisor_control_block33_tight.out.txt.gz",
+      "mode": "100644",
+      "sha256": "d7551367d6a9f875d7a39ac7c5d4a601949a49f0dde41e26306415475a302c73"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-40-supervisor_control_block33_tight.py.gz",
+      "mode": "100644",
+      "sha256": "90432879118df823e56fd5f3b4fe96425f1b328889dea0fbf9a43c9c0758c403"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-41-supervisor_control_block33_tightpairs.out.txt.gz",
+      "mode": "100644",
+      "sha256": "dd03b22173a828d8fb03c07c1554ba08ccadeb553b41a8e7056cf8e6136dd036"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-42-supervisor_control_block33_tightpairs.py.gz",
+      "mode": "100644",
+      "sha256": "e35c0a131ad0e869f45464b4bc83e7f20bf774378c05470f7e0867c6181341bc"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-43-supervisor_control_block33_violate.out.txt.gz",
+      "mode": "100644",
+      "sha256": "7e2024a992d30c9a045a3860c6aa4e1718bf351c8eb263145d41ab68cc08b620"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-44-supervisor_control_block33_violate.py.gz",
+      "mode": "100644",
+      "sha256": "de5ab135d509ac109996ec591e6d5e1328f3d8c1032323df7460b5f1fcf11512"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-45-supervisor_control_block33_vprofile.out.txt.gz",
+      "mode": "100644",
+      "sha256": "777cb0c942053ba2d3df3c7ea3f8615aad99126551c0c272550b5bce2e87d831"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-46-supervisor_control_block33_vprofile.py.gz",
+      "mode": "100644",
+      "sha256": "6f81017fe35d5091563f01fb9d6713a159f0bff7db3002b6acb32ea932c1aae5"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-47-ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_ROOTED_INEQUALITY_REDUCES_THE_UNIT_BUDGET_TO_THE_TIGHT_SIBLING_LEMMA_AND_THE_ONE_PROCESSED_CHILD_COUNT_BOUNDED_THEOREM_NOTE_2026-09-17.md.gz",
+      "mode": "100644",
+      "sha256": "b0606265a271036d573efa2185f195c123dc28297c9fe04b4084656c760101b0"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-48-citation_graph_manifest.json.gz",
+      "mode": "100644",
+      "sha256": "0bbc27fa1d64fb2485733a27cb9d8d3e0813e802d4f632666473e75e3f5d3740"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-49-admissibility_rule_six_axis_formation_threshold_rooted_inequality_reduces_the_unit_budget_to_the_tight_sibling_lemma_and_the_one_processed_child_count_2026_09_17.txt.gz",
+      "mode": "100644",
+      "sha256": "9d1af4a2c1ccaaffc46fbc3523e9bdd971d2b7049ccd49777fbc987c999d54cf"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/originals/pr8177-50-admissibility_rule_six_axis_formation_threshold_rooted_inequality_reduces_the_unit_budget_to_the_tight_sibling_lemma_and_the_one_processed_child_count_2026_09_17.py.gz",
+      "mode": "100644",
+      "sha256": "1f49b8c3414dde35754db92d0789928ffd84e220922e7cf7f49069f63d71b7c6"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/pr8177-deferred-science-and-history.txt",
+      "mode": "100644",
+      "sha256": "5278a87b8d71f9da372d2fe9f7f9691dcc79400a21711cd4494abd5de2ea929a"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/pr8177-original-delta.patch.gz",
+      "mode": "100644",
+      "sha256": "16b76114e7797f9d2de52358c3a625657dee411e05272fecfbae7eae2cb9e352"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8177/pr8177-original-manifest.json",
+      "mode": "100644",
+      "sha256": "39ec4c7abd886df5508b43c786f87b3127ed1cac9a78e0e6d795b08a1d7e65a3"
+    },
+    {
+      "path": "scripts/rooted_marked_tree_extension_seed_induction_relaxed_lifted_certificates_check_2026_09_17.py",
+      "mode": "100644",
+      "sha256": "58202cb8f1e613b4661c538e3c5678b9cdf4f47a8a4fbed8bbf226660e325100"
+    }
+  ],
+  "original_count": 50,
+  "canonical_notes": [
+    "docs/ROOTED_MARKED_TREE_EXTENSION_SEED_INDUCTION_AND_RELAXED_LIFTED_TREE_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-17.md"
+  ],
+  "primaries": [
+    "scripts/rooted_marked_tree_extension_seed_induction_relaxed_lifted_certificates_check_2026_09_17.py"
+  ],
+  "deferred_science": [
+    "docs/work_history/review_loop/pr8177/pr8177-deferred-science-and-history.txt"
+  ],
+  "snapshot": "/private/tmp/review-drain-20260915/drain8177-prepared-source-v2",
+  "original_manifest": {
+    "path": "docs/work_history/review_loop/pr8177/pr8177-original-manifest.json",
+    "sha256": "39ec4c7abd886df5508b43c786f87b3127ed1cac9a78e0e6d795b08a1d7e65a3"
+  },
+  "mathematical_function_ast_comparison": {
+    "mut": true,
+    "Checks": true,
+    "normalize_text": true,
+    "level": true,
+    "preds": true,
+    "is_fork": true,
+    "run_automaton": true,
+    "kinds": true,
+    "component": true,
+    "cost_of": true,
+    "single_seed_min": true,
+    "verify_tree": true,
+    "tree_counts": true,
+    "brute_min": true,
+    "cone": true,
+    "single_seed_min_capped": true,
+    "brute_rooted": true,
+    "tiny_realizations": true,
+    "family_b": true,
+    "realization": true,
+    "deviations": true,
+    "upf": true,
+    "rhs": true,
+    "family_d": true,
+    "main": true
+  },
+  "fixtures_unchanged": true,
+  "explicit_changes": [
+    "C1 exact ZA/ZB profile with targeted mutation",
+    "E1 exact120 equal minima0differences",
+    "source pins and reporting;120second cap"
+  ],
+  "primary_runs": 0,
+  "mutation_runs": 0,
+  "simulation_runs": 0,
+  "staged": false,
+  "branch_preservation_required": true,
+  "document_basename_collisions": [],
+  "revision_reason": "Timeless N5 evidence lifecycle prose; own-note literal SHA pin updated, no mathematical/code calculation change"
+}

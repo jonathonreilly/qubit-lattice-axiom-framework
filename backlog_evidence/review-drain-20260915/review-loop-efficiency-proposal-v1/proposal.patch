@@ -1,0 +1,91 @@
+--- a/references/REVIEW_UNITS.md
++++ b/references/REVIEW_UNITS.md
+@@ -23,6 +23,13 @@
+ current-main delta independently; neither PR titles nor file counts prove
+ content coverage.
+ 
++For stale branches, a compact recovery packet can retain the complete original
++binary delta and full snapshots of every original path at its base, head and
++reviewed current main, recording absent paths explicitly. Include all necessary
++proofs, premises, inputs and interacting context; omit only unrelated whole-main
++diff material. This does not trim the scientific read or the final candidate's
++current-main loss check.
++
+ Run every applicable reviewer lens on the complete final unit and its
+ interactions. Preserve theorem, proof-obligation, import, independent-math,
+ no-go, labeling, and governance standards without exception for batch size.
+@@ -33,6 +40,22 @@
+ gate even if source bytes look identical. A changed premise, input, source byte,
+ or semantic interaction reopens the affected conclusion even if a PR head did
+ not change. Both require renewed frozen provenance and same-session confirmation.
++
++### Preserve frozen source across unrelated main advances
++
++A unit already staged on a frozen base need not be rebased for bounded capture
++when main advances outside its complete source/input closure. Bind the frozen
++checkout base/tree and the actual reviewed main commit separately in immutable
++review evidence. The original reviewer must inspect that actual main advance
++for preservation and semantic interactions in the same session; hypothetical
++approval of future main states is insufficient. Before and after each capture,
++check the exact frozen HEAD/tree and reviewed main, require the frozen base to
++be an ancestor of reviewed main, and reject any main delta overlapping bound
++source or any input category, alongside existing file hash/stat guards. Movement,
++overlap or changed interactions holds the affected operation for renewed review.
++Keep successful science evidence with its original identities; do not rerun it
++solely to rebase. Integration still builds on actual current main and needs the
++fresh combined gate when the validated base/tree changes.
+ 
+ ### Overlap repairs and review without changing acceptance
+ 
+--- a/references/OPERATIONS.md
++++ b/references/OPERATIONS.md
+@@ -30,6 +30,12 @@
+ run actual helper/input discovery before freezing or executing evidence.
+ Never replace active inputs with opaque gzip objects or silently drop duplicate
+ original paths, inherited evidence, deleted content or failed attempts.
++
++Before staging archival Markdown or capturing evidence that binds it, check its
++proposed basenames against the repository-wide tracked `docs/**` inventory and
++one another; historical placement does not exempt a basename collision. Respect
++the existing `README.md` and `SKILL.md` exceptions. Choose unique archival names
++and update recovery mappings and consumers before the source freeze.
+ 
+ Freeze the newly generated manifest's SHA-256 in the independent review receipt,
+ alongside the original revision and verified complete Git inventory. For reuse:
+--- a/references/FIXES_AND_REPORTING.md
++++ b/references/FIXES_AND_REPORTING.md
+@@ -83,6 +83,18 @@
+   [combined candidate stage](COMBINED_VALIDATION.md) when claim notes or governance/publication surfaces
+   changed; this bullet does not require an additional per-unit full run.
+ 
++Normal runner and `--json` output must remain reproducible when canonical output
++files already exist. Exclusive creation belongs to a unique evidence-attempt
++path, not a canonical output opened exclusively on every default invocation.
++When both stdout and JSON are needed from one authorized run, an explicitly
++requested unique external sidecar can preserve same-run JSON without a second
++science execution. Check changed output handling with isolated synthetic IO
++controls, including repeated default output and sidecar collision preservation.
++For captures using `runner_cache`, preserve the raw `execute_runner` return
++externally before later cache/API identity checks can discard it; retain failure
++and partial-output artifacts separately from any success receipt. This does not
++relax a once-only attempt limit or authorize another execution.
++
+ If a runner is long, stochastic, or requires unavailable data, do not fake the
+ check. Report it as not run with the reason.
+ 
+--- a/references/UNIT_RECEIPT.md
++++ b/references/UNIT_RECEIPT.md
+@@ -113,7 +113,12 @@
+   Mechanical validity does not prove semantic completeness of that inventory.
+ - Tooling includes `docs/audit/scripts/build_citation_graph.py`,
+   `docs/audit/scripts/static_pipeline_checkpoint.py` , `scripts/runner_cache.py`, `scripts/audit_packet_script_deps.py` and its
+-  imported `docs/audit/scripts/ledger_io.py`. The ledger API is imported only;
++  imported `docs/audit/scripts/ledger_io.py`. These API script paths must appear
++  in `inputs.tooling` even when an edited helper map is already in `source.paths`;
++  source ownership alone does not satisfy the checker's tooling category. Use
++  the actual checker schema when assembling the record and reuse matching
++  verified discovery rather than repeating scans or scientific review to repair
++  a category omission. The ledger API is imported only;
+   no ledger materialization or audit command is called.
+   When present, `docs/audit/data/axiom_premise_nodes.json` and
+   `docs/audit/data/doc_authority_registry.json` are also bound because the actual

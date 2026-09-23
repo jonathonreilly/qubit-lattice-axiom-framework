@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "kind": "read-only-source-discovery-not-execution",
+  "base": "64f53dd443cd02997394e1a8bef16e2baf9f9d39",
+  "primary": "scripts/rooted_marked_tree_extension_seed_induction_relaxed_lifted_certificates_check_2026_09_17.py",
+  "primary_sha256": "58202cb8f1e613b4661c538e3c5678b9cdf4f47a8a4fbed8bbf226660e325100",
+  "runtime_inputs": [
+    {
+      "path": "docs/ROOTED_MARKED_TREE_EXTENSION_SEED_INDUCTION_AND_RELAXED_LIFTED_TREE_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-17.md",
+      "sha256": "24be34b472e47cafd59a15dd5125bfad54a1270fb4712002d9bf29d145029559",
+      "role": "proof source"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "framework authority"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "role": "explicit product-model/comparison parent; finite proof self-contained"
+    },
+    {
+      "path": "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "5642877329c141c39394936173c35c82c5cd18bb8f9a408c17fad0497cef647e",
+      "role": "explicit product-model/comparison parent; finite proof self-contained"
+    }
+  ],
+  "input_fingerprint": "2335d6fc69e839b4b8ebdc9f9ae0b5caaed6c9883dd325abc5260072d99cd787",
+  "declared_timeout": 120,
+  "packet_transitive_helpers": [],
+  "graph_helpers": [],
+  "citations": [
+    "docs/work_history/review_loop/pr8177/README.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+    "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+  ],
+  "graph_primary": "scripts/rooted_marked_tree_extension_seed_induction_relaxed_lifted_certificates_check_2026_09_17.py",
+  "framework_dependencies": [
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+    "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+  ],
+  "mathematical_premise_notes": [
+    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+    "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+  ],
+  "mathematical_imports": [
+    "finite graph trees and level induction",
+    "weight-preserving word lift injection; relaxed occupancy and collisions",
+    "nonnegative polynomial height iteration and exact rational certificates"
+  ],
+  "deferred_role": "Complete corrected negative argument plus original full note, not live supporting proof or premise; global construction/physical implications remain unsupported",
+  "registry_changes_required": false,
+  "primary_imported": false,
+  "primary_executed": false,
+  "static_compile": true,
+  "original_archives_verified": 50,
+  "original_delta_verified": true
+}

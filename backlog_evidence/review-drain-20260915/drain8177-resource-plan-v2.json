@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "kind": "proposed-resource-plan-not-execution",
+  "primary": "scripts/rooted_marked_tree_extension_seed_induction_relaxed_lifted_certificates_check_2026_09_17.py",
+  "timeout_seconds": 120,
+  "memory_limit_bytes": 402653184,
+  "limits_status": "Unmeasured corrected-source proposal; original timeout900s; external process-tree sampled RSS/wall limits, preserve failures without implicit retry",
+  "historical_cache": {
+    "path": "drain8177-original/head/logs/runner-cache/admissibility_rule_six_axis_formation_threshold_rooted_inequality_reduces_the_unit_budget_to_the_tight_sibling_lemma_and_the_one_processed_child_count_2026_09_17.txt",
+    "elapsed_seconds": 1.39,
+    "scope": "Historical source cache only; original reviewer did not run full baseline"
+  },
+  "independent_original_finite_control": {
+    "exit": 0,
+    "wall_seconds": 0.6819665840012021,
+    "peak_rss_kib_observed": 57568,
+    "limits": {
+      "cpu_seconds": 90,
+      "wall_seconds": 110,
+      "rss_kib": 524288,
+      "rss_poll_seconds": 0.02
+    }
+  },
+  "cost": {
+    "brute_force": "B:140 accepted seeded33 realizations in3x3x5 window with4..10live sites; <=2^9node subsets per queried site, arrow choices at most3 per nonseed; <=45fork candidate pairs. E:60 accepted seeded34 realizations with5..10live sites, two costs and both restrictions. Original rejection loops have no deterministic proposal cap: external watchdog required.",
+    "large_fixtures": "ZA112sites/ZB200sites; level-capped single-seed subset dynamic programs at fixed root/predecessors; sequential small state maps, no dense numerical lattice/eigensolver.",
+    "arithmetic": "Eight fixed Fraction polynomial certificates plus one full-slot comparison and n2,n3 symbolic slot identity; exact coefficients unchanged.",
+    "imports": "SymPy and stdlib; no local helper. No top-level solver/search or historical missing module promoted.",
+    "memory": "Independent finite control sampled57568KiB RSS, not a full corrected-primary measurement.384MiB is a proposed external ceiling with headroom; no claim of measured success."
+  },
+  "expected_completed_checks": 18,
+  "count_scope": "A4+B3+C2+D3+E1+F4+G1; packaging and reporting included",
+  "stdout_only": true,
+  "json_outputs": [],
+  "other_output_writes": [],
+  "cache_destination": "logs/runner-cache/rooted_marked_tree_extension_seed_induction_relaxed_lifted_certificates_check_2026_09_17.txt",
+  "mutations": {
+    "extension_lemma_wrong": "B",
+    "seed_lemma_wrong": "B",
+    "tightness_wrong": "C",
+    "predecessor_profile_wrong": "C",
+    "certificate_wrong": "D",
+    "upfactor_wrong": "D",
+    "claim_transition_injected": "F",
+    "claim_classical_name_in_theorem": "F"
+  },
+  "new_targeted_mutation": {
+    "name": "predecessor_profile_wrong",
+    "target": "C1",
+    "mechanism": "Require incorrect ZB[-1,-1,-1] rather than true[-1,-1,0]",
+    "expected_exit_code": 1,
+    "expected_total": "PASS=17 FAIL=1",
+    "status": "proposed only; no execution"
+  },
+  "unchanged_mutation_reruns_requested": false,
+  "primary_runs": 0,
+  "simulation_runs": 0,
+  "mutation_runs": 0
+}

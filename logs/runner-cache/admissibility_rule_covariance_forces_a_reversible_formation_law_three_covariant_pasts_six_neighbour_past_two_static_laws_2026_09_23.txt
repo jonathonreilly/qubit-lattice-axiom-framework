@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_covariance_forces_a_reversible_formation_law_three_covariant_pasts_six_neighbour_past_two_static_laws_2026_09_23.py
 runner_sha256: 1db7c1e010be0766488c5bab4c574497087b46f43306c820701d077b8302b20c
-input_fingerprint_sha256: 57e82088ab61b81755d7a2f687e22266bc0d651d5a6b92e1c20c2cf25ef3b852
+input_fingerprint_sha256: 30c5637d2b82d79e694d55f9a548f3f90a50e067e6199f788f24aa27f9fdb471
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.69
+elapsed_sec: 1.00
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

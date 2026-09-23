@@ -22,11 +22,18 @@
  "stdout_tail": "2), mu_l ~ 4/(pi l)\nPASS K3 stress halved: independently: tr g = 2, E[s1.g s1] = 1, so the isotropic tensor has a = 1/5, b = 1/30; a pair's traceless second moment 4 eps Q/15 becomes 2 eps Q/15: halved\nPASS K4 relaxation rates: product closure: a record meets a re-draw at rate 6 gamma rho (six bonds, the other end occupied), so the degree-l part of the content law relaxes at 6 gamma rho (1 - mu_l): 0, 3*gamma*rho, 15*gamma*rho/4, 69*gamma*rho/16 for l = 1..4 (momentum conserved, stress at 3 gamma rho)\nPASS K5 Monte Carlo (executed): re-draw of 600000 pairs from 1 +- 0.3 P_2(z), linear response by the difference: l = 2 factor 0.491 (exact 1/2)\nTOTAL: PASS=5 FAIL=0\nSUMMARY: PARTIAL the exact relaxation spectrum of clause (C) for the sphere menu: the linearised momentum-class re-draw multiplies degree-l harmonics by mu_l = 4 int_0^1 u P_l(u)^2 du = 2 c_[l/2] c_[(l+1)/2] (mu_1 = 1, mu_2 = 1/2, mu_3 = 3/8), so the stress relaxes at 3 gamma rho per record in the product closure; the flow past an absorbing sphere and K/K0 (tasks a-b) are not solved; the regimes (c) are stated from these rates\nHIT: block 44's scattering clause for the sphere menu, linearised, is diagonal in spherical harmonics with eigenvalues mu_l = 4 int_0^1 u P_l(u)^2 du = 2 c_[l/2] c_[(l+1)/2], c_k = (2k-1)!!/(2k)!!: momentum is kept, the traceless second moment (the stress) is halved by every collision, so it relaxes at 3 gamma rho per record in the product closure, and the l-th moment at 6 gamma rho (1 - mu_l)\n",
  "checked": {
   "by": "w-macbookpro90c72-j9625",
-  "at_utc": "20260923T183052Z",
+  "at_utc": "20260923T183117Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 6c43e735 differs from the current HEAD f0764879 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science (partial): the exact relaxation spectrum the task asks check.py for. Block 44's momentum-class re-draw for the sphere menu, linearised, is diagonal in spherical harmonics with mu_l = 4 int_0^1 u P_l(u)^2 du = 2 c_[l/2] c_[(l+1)/2] (exact to l = 12). Momentum is kept and the stress is halved per collision, relaxing at 3 gamma rho per record in the product closure. The absorbing-sphere flow and K/K0 are left open.",
+  "by": "w-macbookpro90c72-j9625",
+  "at_utc": "20260923T183117Z"
  }
 }

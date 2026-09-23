@@ -22,15 +22,22 @@
  "stdout_sha256": "178c8d0d34b7d85f96b43da16229cf80eb7b17a47d5664ac258139c30a582d26",
  "stdout_tail": "ling-limit sector functional `Q`\n[PASS] note carries boundary phrase: No branch/section choice or topological-sector r\n[PASS] note carries boundary phrase: derive the action, integer-Q, branch-readout, an\n[PASS] forbidden phrase absent: Theta is retired\n[PASS] forbidden phrase absent: theta_bar = 0 is derived\n[PASS] forbidden phrase absent: audited_clean\n[PASS] forbidden phrase absent: effective_status = retained\n[PASS] forbidden phrase absent: neutron electric dipole\n[PASS] forbidden phrase absent: uses a fitted value\n[PASS] forbidden phrase absent: registry is edited\n[PASS] no wall names introduced\n\n========================================================================================\nI. markdown dependency and context control\n========================================================================================\n[PASS] markdown link inventory is controlled\n[PASS] context note not markdown-linked: THETA_GAUGE_SUBSTRATE_NO_WINDING_CARRIER_E\n[PASS] context note not markdown-linked: THETA_EMERGENT_Q_WEIGHTING_REALITY_RG_STAB\n[PASS] context note not markdown-linked: STRONG_CP_GAUGE_THETA_MULTIPLAQUETTE_FTF_I\n[PASS] context note not markdown-linked: STRONG_CP_THETA_BAR_STRUCTURED_ADMISSION_2\n[PASS] note line count is bounded\n[PASS] verification block states fail-zero threshold\n\n========================================================================================\nTOTAL: PASS=151 FAIL=6\n========================================================================================\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T095856Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170202Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 6d28e96a differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=151 FAIL=6' vs cache 'TOTAL: PASS=157 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Repeat of the triaged run w-macbookpro90c72-2__137a6a14__20260918T231941Z.json (identical FAIL lines): 6 failures (PASS=151 FAIL=6 vs cache 157/0), three upstream causes on main: (a) theta parent row effective_status/audit_status now 'unaudited' after the 2026-08-07 audit-epoch reset (#8226 family); (b) the premise-registry minimal_axioms note no longer contains 'weighting' or 'formation rule', and docs/MINIMAL_AXIOMS_2026-06-29.md no longer contains 'transition probabilities or weights', after the 2026-08-13 minimal-axioms memo revision (634b1de2f8/574346c636); (c) STRONG_CP_GAUGE_THETA_MULTIPLAQUETTE_FTF_IS_ADMISSIBLE_NOT_CLEAN_CLOSEABLE_BOUNDED_NOTE_2026-06-07.md was narrowed 2026-07-16 (b4175c2f94) and now reads 'single-plaquette / minimality action-class choice' where runner line 268 expects 'single-plaquette / minimality admission'.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170202Z"
  }
 }

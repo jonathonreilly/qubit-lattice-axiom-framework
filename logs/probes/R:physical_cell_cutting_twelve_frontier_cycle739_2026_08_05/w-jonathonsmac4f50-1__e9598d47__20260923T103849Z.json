@@ -22,15 +22,22 @@
  "stdout_sha256": "4d3ecb5f2a24a25e86abc550f19407812fb9fc27b354620fa11637a6f32a85a9",
  "stdout_tail": "own reading, have weight 12, and are distinct\nPASS G32  each of the five planted twelve piece sets is found by a search blind to it, including the two forcing the eighth split\nPASS G33  the sets found at twelve fall into orbits of the symmetries that fix their reading, of sizes dividing 48\nPASS G34  all 63 weight 12 words of the quarter subcode are among the 7808 sets carrying the zero reading at twelve\nPASS G35  none of the six nonconstant readings is carried at any size up to twelve, and each forces an even total, barring every odd size: the six need at least fourteen pieces\nin-column-space 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0\nPASS G36  all but the synthetic reading lie in the column space, so each of the six nonconstant readings is carried by some set\nper_element: checked -- all 192 used piece columns enter every exact support calculation\nper_site: checked -- one supplied 16-corner coordinate cell; no physical cell selection\nper_mode: checked and not executed -- no field, spectral, or momentum-mode decomposition exists\nper_block: checked -- all 15800 cutting rows and every scheduled quarter/eighth split execute\nlattice_wide: checked and not executed -- no multi-cell, arbitrary-L, boundary, or continuum claim\nelapsed under 100 s peak memory under 3000 MB\nPASS G37  the whole runner finishes under 900 seconds\nPASS G38  its output stays under 6000 characters\nRECEIPT outputs/physical_cell_cutting_twelve_frontier_cycle739_2026_08_05_receipt_2026-08-05.json\n\nTOTAL: PASS=39 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T104019Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170200Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha e9598d47 differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=39 FAIL=1' vs cache 'TOTAL: PASS=40 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Repeat of the triaged run w-jonathonsmac4f50-2__1a269638__20260923T032313Z.json (identical FAIL lines): Issue #8713: DEP2 fails because the Cycle 738 independent receipt pins requirements-release.txt at e153eea331 and main has 7756c1080a; every other conjunct of C738_OK holds on main.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170200Z"
  }
 }

@@ -21,15 +21,22 @@
  "stdout_sha256": "22063a44ede3f5d1b26e516e061349cbfd7b5485b5c410d89d5354aa1225396a",
  "stdout_tail": "r stdout reports PASS line: nearest escape is real response-class failure :: fragment='PASS: the nearest escape is marked by a real response-class failure'\n\n========================================================================\nBlock H4: ledger-state criticality-bump invariants (post-soft-reset shape)\n========================================================================\n  FAIL H4.1 ledger row exists for `yt_schur_stability_gap_note` :: ledger=docs/audit/data/audit_ledger.json\n  FAIL H4.2 ledger-state invariant :: ledger row missing; cannot evaluate\n  FAIL H4.3 ledger-state invariant :: ledger row missing; cannot evaluate\n  FAIL H4.4 ledger-state invariant :: ledger row missing; cannot evaluate\n  FAIL H4.5 ledger-state invariant :: ledger row missing; cannot evaluate\n  FAIL H4.6 ledger-state invariant :: ledger row missing; cannot evaluate\n  FAIL H4.7 ledger-state invariant :: ledger row missing; cannot evaluate\n  FAIL H4.8 ledger-state invariant :: ledger row missing; cannot evaluate\n  FAIL H4.9 ledger-state invariant :: ledger row missing; cannot evaluate\n  FAIL H4.10 ledger-state invariant :: ledger row missing; cannot evaluate\n  FAIL H4.11 ledger-state invariant :: ledger row missing; cannot evaluate\n  FAIL H4.12 ledger-state invariant :: ledger row missing; cannot evaluate\n\n------------------------------------------------------------------------\nFINAL TALLY: 11 PASS / 12 FAIL  (elapsed 37.15 s)\n------------------------------------------------------------------------\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T061717Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170156Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha c473f620 differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: last line differs from the pinned cache: run 'FINAL TALLY: 11 PASS / 12 FAIL  (elapsed 37.15 s)' vs cache 'FINAL TALLY: 24 PASS / 0 FAIL  (elapsed 45.09 s)'",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_companion_yt_schur_stability_gap_criticality_hygiene_2026_06_04.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Repeat of the triaged run w-macbookpro90c72-1__e3f99c1b__20260918T225940Z.json (identical FAIL lines): Runner reads the gitignored generated docs/audit/data/audit_ledger.json, absent from a fresh checkout of main (#8212): every H4.x ledger-row check fails with 'ledger row missing'; the parent-runner checks pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170156Z"
  }
 }

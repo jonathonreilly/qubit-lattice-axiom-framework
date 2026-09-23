@@ -22,15 +22,22 @@
  "stdout_sha256": "45d94ccbeae124e79be89c96c530de75c6106c6bc3d15af675b7fe5de0e93043",
  "stdout_tail": "it tensor-carrier bridge\nsurface: generated C^2 tensor C^2 / M_2(C) tensor M_2(C)\n========================================================================================\n[FAIL] dependency cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02 effective_status is retained (got=None)\n[FAIL] dependency tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25 effective_status is retained (got=None)\n[FAIL] dependency tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03 effective_status is retained_no_go (got=None)\n[PASS] dim_C H_x = 2\n[PASS] dim_C H_x tensor H_y = 4\n[PASS] sixteen Pauli products span M_4(C) (rank=16)\n[PASS] left embedding M_2(C)->M_4(C) is rank-four faithful\n[PASS] right embedding M_2(C)->M_4(C) is rank-four faithful\n[PASS] distinct-site local embeddings commute\n[PASS] products of the two local images generate M_4(C) (rank=16)\n[PASS] ordinary complex tensor product has one shared scalar i\n[PASS] Bell vector Phi+ is a unit vector in C^2 tensor C^2\n[PASS] Bell witness on the same surface gives <Phi+|C|Phi+> = 2*sqrt(2)\n[PASS] generated complex two-qubit surface is locally tomographic by dimension count\n[PASS] retained no-go boundary visible: locality alone is not the proof route\n========================================================================================\nSUMMARY: TWO-SITE QUBIT TENSOR BRIDGE PASS=12 FAIL=3\n========================================================================================\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T061639Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170156Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha c473f620 differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: TWO-SITE QUBIT TENSOR BRIDGE PASS=12 FAIL=3' vs cache 'SUMMARY: TWO-SITE QUBIT TENSOR BRIDGE PASS=15 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Repeat of the triaged run w-macbookpro90c72-1__e3f99c1b__20260918T225937Z.json (identical FAIL lines): Runner reads the gitignored generated docs/audit/data/audit_ledger.json, absent from a fresh checkout of main (#8212): the three dependency effective_status checks get None (PASS=12 FAIL=3).",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170156Z"
  }
 }

@@ -25,15 +25,22 @@
  "stdout_sha256": "e76573d6bb253f2c8e5d46ace4888a70ef49e6d14cc52e30ad416d163493b8a4",
  "stdout_tail": "source\n  [PASS] ANTI-CIRCULARITY C1 code path takes omega/weights, not phase input  (lefschetz_args=('root',), cotangent_args=())\n\nPart C3: operator family\n  [PASS] C3a D(delta) eigenvalue branches cross zero and are nontrivial  (zero_crossings=12, branch_range=3.999990)\n  [PASS] C3b spectral flow over one phase period is an integer and equals 0  (spectral_flow=0)\n  [PASS] C3c eta(delta) is flat over the scan  (eta_range=0)\n\nPart C4: independence assembly\n  [PASS] C4a nearest zero-crossing does not match Part-C1 value  (topological_eta=0.222222222222, nearest_zero=0.420000000000, distance=0.197778)\n  [PASS] C4b analytic index, topological eta, and free mass phase are distinct  (analytic_index=0, topological_eta=2/9, mass_phase_free=True, delta_forced_by_eta=False)\n  [PASS] C4c note states route boundary without irreducibility/no-go posture\n\nB-checks: note and dependencies\n  [FAIL] B1 fixed-locus dependency carries L_3(1,2)=2/9 content\n  [PASS] B2 substep2 dependency carries D_KD Kahler-Dirac content\n  [PASS] B3 minimal axioms dependency is present and status-bounded as meta\n  [PASS] B4 firewall wording is present and terminal no-go wording is absent\n  [PASS] B5 malformed no-go gate is absent\n  [PASS] B6 anti-circularity confirmation sentence is present\n  [PASS] B7 markdown link inventory is exactly three  (count=3)\n  [PASS] B8 context inventory is backticked\n  [PASS] B9 status lines and No-promotion statement are present\n\nSUMMARY: PASS=23 FAIL=1 TOTAL=24\nTOTAL PASS=23 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T035046Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170157Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha a6719703 differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'PASS=23 FAIL=1' vs cache 'PASS=24 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Repeat of the triaged run w-macbookpro90c72-1__eb32cbc5__20260918T212926Z.json (identical FAIL lines): Real failure on main, text level: B1 requires 'fixed-locus' and L_3(1,2) with 2/9 in docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md, but its 2026-07-11 exact supplier repair renamed the quantity L_C_3(N) (still 2/9) and assigns eta/APS identification to separate theorem domains (PASS=23 FAIL=1 vs cache 24).",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170157Z"
  }
 }

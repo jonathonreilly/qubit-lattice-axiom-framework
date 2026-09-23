@@ -19,14 +19,21 @@
  "stdout_sha256": "5e0f91eb64f8c556f75412d6332258fd9e01da7d4300f1e5022a68e141f9ff10",
  "stdout_tail": "\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_enlarged_link_contact_work_tournament_cycle569_2026_07_22.py\", line 34, in <module>\n    import physical_held_sparse_order_retirement_cycle563_2026_07_21 as c563\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_held_sparse_order_retirement_cycle563_2026_07_21.py\", line 33, in <module>\n    import physical_global_N3_returned_slot_compiler_cycle560_2026_07_21 as c560\nModuleNotFoundError: No module named 'physical_global_N3_returned_slot_compiler_cycle560_2026_07_21'\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T095308Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170201Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha d4f5d0e7 differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Repeat of the triaged run w-jonathonsmac4f50-2__d0317746__20260923T030113Z.json (identical FAIL lines): Issue #8708: imports the cycle563 runner, whose cycle560 dependency exists nowhere on origin/main (ModuleNotFoundError); no pinned cache.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170201Z"
  }
 }

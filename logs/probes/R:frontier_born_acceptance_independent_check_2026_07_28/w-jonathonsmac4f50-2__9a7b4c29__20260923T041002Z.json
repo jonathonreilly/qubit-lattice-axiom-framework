@@ -21,15 +21,22 @@
  "stdout_sha256": "175c6e587cedee6c253a1854646ce841b694518f199f3ef4d81b4a72f220238c",
  "stdout_tail": "FAIL 1/5 contract_and_source_pins :: CertificateError: one or more declared runtime inputs are absent\nPASS 2/5 exact_projector_oracle :: vectors=102; maximum_entry_error=2.78e-17\nPASS 3/5 schema_and_refusal_boundary :: landed ValueError=3/3; Boolean landed-returned; schema/registry provenance=12/12\nFAIL 4/5 hermetic_primary_and_sandbox :: CertificateError: primary clean exit=1\nFAIL 5/5 independent_comparator_adversaries :: CertificateError: primary hermetic run must precede comparator inspection\nSUMMARY 2/5 FAIL\nRUNTIME 3.408761s\nRESULT BORN_PROJECTOR_FIXTURE_INDEPENDENT_CHECK_GREEN\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T041006Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170157Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 9a7b4c29 differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_born_acceptance_independent_check_2026_07_28.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Repeat of the triaged run w-macbookpro90c72-1__068a0866__20260918T222028Z.json (identical FAIL lines): Check 1 fails 'one or more declared runtime inputs are absent' because it re-declares the harness inputs, 12 of the 52 declared AUDIT_INPUT_PATHS (the 2026-07-11 instrument-nonselection notes and ten cycle211-287 review_feedback notes) were moved to archive/ by the 2026-09-05 densify-freeze migration (#8198); checks 4-5 fail only as cascades (primary harness clean exit=1, comparator gated on it); the harness failure is itself archive plus a Python-version ast.dump digest pin; no physics change.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170157Z"
  }
 }

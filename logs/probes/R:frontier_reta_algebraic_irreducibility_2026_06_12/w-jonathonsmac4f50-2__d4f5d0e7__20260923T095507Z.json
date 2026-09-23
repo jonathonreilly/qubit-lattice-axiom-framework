@@ -22,15 +22,22 @@
  "stdout_sha256": "53fecbe4199bd71e5b5b3a80c4a246fc0dffcbf09e4aa5cf5841c677335df387",
  "stdout_tail": "_2026-08-08.json |  18 +-\n ...tor_cycle749_2026_08_08_receipt_2026-08-08.json | 562 +--------------------\n ...endent_check_2026_08_08_receipt_2026-08-08.json | 214 +-------\n ...ier_cycle741_2026_08_05_receipt_2026-08-05.json |  18 +-\n ...endent_check_2026_08_05_receipt_2026-08-05.json |  22 +-\n ...ied_cycle744_2026_08_05_receipt_2026-08-05.json |  14 +-\n ...endent_check_2026_08_05_receipt_2026-08-05.json |  16 +-\n ...try_cycle743_2026_08_05_receipt_2026-08-05.json |  12 +-\n ...endent_check_2026_08_05_receipt_2026-08-05.json |  16 +-\n ...nce_cycle751_2026_08_09_receipt_2026-08-09.json | 115 +----\n ...endent_check_2026_08_09_receipt_2026-08-09.json | 122 +----\n ...ier_cycle739_2026_08_05_receipt_2026-08-05.json |  12 +-\n ...its_cycle733_2026_08_04_receipt_2026-08-04.json |   2 +-\n ...ion_cycle716_2026_08_02_receipt_2026-08-02.json |   2 +-\n ...ent_tournament_cycle583_receipt_2026_07_22.json |  12 +-\n ...channel_census_cycle699_receipt_2026_07_25.json |   2 +-\n ...ion_tournament_cycle622_receipt_2026_07_22.json |   2 +-\n ...nel_cycle706_2026_08_01_receipt_2026-08-01.json |   2 +-\n ...sus_cycle718_2026_08_02_receipt_2026-08-02.json | 132 ++---\n ...ate_response_tournament_receipt_2026_07_23.json |  14 +-\n ...der_tournament_cycle612_receipt_2026_07_22.json |   2 +-\n ...y_completeness_cycle977_receipt_2026_08_10.json |   4 +-\n 51 files changed, 288 insertions(+), 1295 deletions(-)\n========================================================================\nSUMMARY: TOTAL PASS=20 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T095508Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170158Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha d4f5d0e7 differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: TOTAL PASS=20 FAIL=1' vs cache 'SUMMARY: TOTAL PASS=21 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Repeat of the triaged run w-jonathonsmac4f50-2__abafb404__20260923T020723Z.json (identical FAIL lines): Issue #8681. Runner/note desync on main: check 13's fixed_dep_ok needs 'local density `2/9`' and 'core identity' in the fixed-locus note, which on main is retitled 'C3 Body-Diagonal Fixed Locus and Local Inverse-Determinant Density' and states L_C_3(N) = 2/9 without them (same root cause as #8234); radian and minimal-axioms phrases present; 20/21 as cache otherwise.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170158Z"
  }
 }

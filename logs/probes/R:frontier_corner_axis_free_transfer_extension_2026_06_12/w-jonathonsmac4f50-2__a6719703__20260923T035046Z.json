@@ -22,15 +22,22 @@
  "stdout_sha256": "0f22221e0535826421f1ef889be0dc0931ea00053a2cf53631dccb56ee7f4a43",
  "stdout_tail": "n\n[PASS] K-covariance: K swaps doublet kernels and fixes singlet kernel numerically -- max doublet residual=1.665e-16, singlet residual=0.000e+00\n[PASS] mode-set fork: rho-map sends per-channel/per-K-orbit branches to full binary r-set -- per-channel r=1, per-K-orbit r=1/2; no computed pin\n[PASS] mode-set fork: trace correspondence fixes normalization within each branch -- branch exponents={'per-channel': 4, 'per-K-orbit': 2}\n[PASS] robustness: transfer, corner, and trace checks repeat at second supplied-domain point -- dispersion residual=5.300e-16, corner min eig=4.138e-06, trace residual=8.882e-16\n[FAIL] dependency greps: transfer, Grassmann, and registrability phrases present -- load-bearing phrases found in the three dependency notes\n[PASS] note firewall sentences present and closing language absent -- firewall_present=True, closing_absent=True\n[PASS] positive-mass condition marked supplied-domain with backticked strong-CP context only -- supplied-domain present; no markdown link to STRONG_CP_THETA_ZERO_NOTE.md\n[PASS] link inventory exactly the three load-bearing links; companions backticked only -- links=3, resolve_ok=True, companions_backticked_only=True\n[PASS] no-promotion statement present -- status authority remains independent audit lane\n[PASS] Berezin path self-check: genuine expansion, no determinant substitute flag -- BEREZIN_USED_DET_SUBSTITUTE=False\n\nMODE-SET FORK STATUS: exhibited, not resolved; computed r-set is full binary {1, 1/2}.\nSUMMARY: PASS=17 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T035046Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170157Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha a6719703 differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: PASS=17 FAIL=1' vs cache 'SUMMARY: PASS=18 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Repeat of the triaged run w-macbookpro90c72-1__eb32cbc5__20260918T212926Z.json (identical FAIL lines): Real failure on main: the dependency-grep check requires '2-step blocked transfer matrix' in docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md, which is now narrowed to positivity of the conditional Fock construction Gamma(lambda_-) and states it does not support unconditional free-case physical two-step transfer positivity (PASS=17 FAIL=1 vs cache 18); the note still reuses the per-channel two-step transfer construction.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170157Z"
  }
 }

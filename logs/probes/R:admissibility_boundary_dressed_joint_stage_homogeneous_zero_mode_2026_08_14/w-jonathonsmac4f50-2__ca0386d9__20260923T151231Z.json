@@ -19,14 +19,21 @@
  "stdout_sha256": "600abaecc8d4a999cf54ab34de8a0800e7d9711dda74fb493eeb81362c489a6d",
  "stdout_tail": "\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/admissibility_boundary_dressed_joint_stage_homogeneous_zero_mode_2026_08_14.py\", line 1039, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/admissibility_boundary_dressed_joint_stage_homogeneous_zero_mode_2026_08_14.py\", line 893, in main\n    authority = authority_certificate(mutation)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/admissibility_boundary_dressed_joint_stage_homogeneous_zero_mode_2026_08_14.py\", line 145, in authority_certificate\n    path for path in parent[\"loaded_missing\"] if path != RUNNER_RELATIVE\n                     ~~~~~~^^^^^^^^^^^^^^^^^^\nKeyError: 'loaded_missing'\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T151232Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170155Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha ca0386d9 differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Repeat of the triaged run w-jonathonsmac4f50-2__c844ace7__20260923T012600Z.json (identical FAIL lines): Real failure on main, runner-to-runner desync: the runner imports block 95's runner (admissibility_incidence_scalar_graph_matter_first_order_total_ward_cadence_boundary_2026_08_14) and at line 143-145 reads parent['loaded_missing'] (and origin_main, axiom, block77/78/83/93, mismatches, missing) from block95.authority_certificate(''), but that function now returns only {'failures', 'mutation_ok'} (same on origin/main, last touched ed6c77aea6 2026-09-15), so it stops with KeyError: 'loaded_missing' before any check; no pinned cache exists for this runner.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170155Z"
  }
 }

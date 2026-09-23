@@ -22,15 +22,22 @@
  "stdout_sha256": "e5f4acb6895ef1dd603761e60d9ace2723ea9ac634d2592edf0a5ee008630ee6",
  "stdout_tail": "s its SHA-pinned cache\nPASS: bridge contains theorem phrase: A[phi; rho] = (1/2) <phi, H phi> - <P0 rho, phi>\nPASS: bridge contains theorem phrase: phi = G0 P0 rho\nPASS: bridge contains theorem phrase: rho_psi(x) = |psi(x)|^2\nPASS: bridge contains theorem phrase: S_test(phi; x) = L_test (1 - phi(x))\nPASS: bridge contains theorem phrase: G(r) -> 1 / (4 pi |r|)\nPASS: bridge dependency link present: SELF_CONSISTENCY_FORCES_POISSON_NOTE.md\nPASS: bridge dependency link present: POISSON_EXHAUSTIVE_UNIQUENESS_NOTE.md\nPASS: bridge dependency link present: LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md\nPASS: bridge dependency link present: POISSON_SELF_GRAVITY_LOOP_V3_NOTE.md\nPASS: bridge dependency link present: GATE_B_POISSON_SELF_GRAVITY_NOTE.md\nPASS: bridge cache header is v1\nPASS: bridge cache names bridge runner\nPASS: bridge cache pins current bridge runner SHA\nPASS: bridge cache exit code is zero\nPASS: bridge cache status ok\nFAIL: bridge cache has expected pass total\nPASS: bilinear inverse-square force closes for M=3.0, m=5.0, r=7.0 -- force=0.0243604504732, expected=0.0243604504732\nPASS: bilinear inverse-square force closes for M=2.25, m=11.0, r=13.0 -- force=0.0116540971643, expected=0.0116540971643\nPASS: bilinear inverse-square force closes for M=17.0, m=0.5, r=19.0 -- force=0.00187370777878, expected=0.00187370777878\nPASS: 1/r potential ratio is exact in the asymptotic law\nPASS: force ratio is inverse-square in the asymptotic law\nTOTAL: PASS=75 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T074456Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170158Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 7dbe5e6a differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=75 FAIL=1' vs cache 'TOTAL: PASS=76 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Repeat of the triaged run w-macbookpro90c72-1__4de85861__20260918T234541Z.json (identical FAIL lines): Real failure on main, stale companion pin: runner line 230 requires 'TOTAL: PASS=38 FAIL=0' in the weak-field source-response bridge cache; 10d9931af7 (2026-06-11 18:31Z, 'Repair weak-field gravity force sign') added six sign-convention checks and the bridge cache now reads 'TOTAL: PASS=44 FAIL=0'. The certificate (630b3d874b, 02:04Z the same day) was not re-pinned; the bridge runner-SHA check passes. PASS=75 FAIL=1 vs cache 76/0.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170158Z"
  }
 }

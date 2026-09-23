@@ -22,11 +22,12 @@
  "stdout_sha256": "05b3f087641cb1f902cc008d3b6a63f0ff5a87f125f454fcce544698c789f20c",
  "stdout_tail": "FAIL dependency.cycle748  current primary and independent Cycle 748 certificates bind all 15800 rows and 132 carriers\nPASS hostile.cycle748_inventory  a predecessor receipt reverting to the half-row pair inventory is rejected\nPASS hostile.cycle748_census  a predecessor receipt losing one of the 132 carriers is rejected\nPASS hostile.cycle748_independent  a failing independent predecessor certificate is rejected\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T064532Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170200Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha f1345732 differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: parse field 'total' found nothing in the stdout: the run may not have reached its summary",
@@ -34,5 +35,11 @@
    "FAIL: the pinned cache ends with the verdict 'TOTAL: PASS=42 FAIL=0' and this run printed none",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_cell_cutting_family_separator_cycle749_2026_08_08.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Repeat of the triaged run w-macbookpro90c72-1__6e3c2612__20260919T000159Z.json (identical FAIL lines): Real failure on main, stale input pin: every committed Cycle 746-755 cell-cutting receipt records requirements-release.txt at e153eea331 (9bb85856a3, 2026-08-12); f6f861e8f0 (2026-09-07) added sympy==1.14.0 and it now hashes to 7756c1080a, so inputs_current rejects the predecessor receipts on any clone of main; every other recorded input matches the committed bytes. Fails dependency.cycle748 and exits by design (line 187, no tally) vs cache 42/0.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170200Z"
  }
 }

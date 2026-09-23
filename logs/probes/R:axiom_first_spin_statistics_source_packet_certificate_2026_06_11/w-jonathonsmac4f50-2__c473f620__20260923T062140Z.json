@@ -22,15 +22,22 @@
  "stdout_sha256": "9a586385d0c5bbdde996f9ceaef11ad07490d8337efb1b22f1a998bb841f4ffb",
  "stdout_tail": ": dim_C H_x = 2\nPASS: authorities section contains: Grassmann choice remains a\nPASS: authorities section contains: declared frame hypothesis\nPASS: packet section contains: does not apply an audit verdict\nPASS: packet section contains: current registered axiom surface\nPASS: packet section contains: single-module `k = 1 => dim_C H_x = 2` authority\nPASS: packet section contains: superseded 2026-04-11 axiom file is historical only\nPASS: packet section contains: hard-core/CAR selection remains out of scope\nFAIL: single-module authority contains: **Claim type:** positive_theorem\nPASS: single-module authority contains: If* the per-site Hilbert space `H_x`\nPASS: single-module authority contains: `k(x) = 1`\nPASS: single-module authority contains: `dim_C H_x = 2` exactly\nPASS: single-module authority contains: U4 statement that this note does not close\nPASS: single-module authority contains: No new\nPASS: single-module authority contains: axioms\nPASS: primary cache header is v1\nPASS: primary cache names runner\nPASS: primary cache pins current runner SHA\nPASS: primary cache exit code zero\nPASS: primary cache status ok\nPASS: primary cache has expected total\nPASS: primary cache contains tag: [S2] PASS\nPASS: primary cache contains tag: [FALS] PASS\nPASS: primary cache contains tag: [S1] PASS\nPASS: primary cache contains tag: [S1-CAR] PASS\nPASS: primary cache contains tag: [S3] PASS\nPASS: primary cache contains tag: [S4] PASS\nPASS: primary cache contains tag: [CTX] PASS\nTOTAL: PASS=71 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T062140Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170156Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha c473f620 differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=71 FAIL=1' vs cache 'TOTAL: PASS=72 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Repeat of the triaged run w-macbookpro90c72-2__ab3d7451__20260919T094350Z.json (identical FAIL lines): Real failure on main: the certificate requires '**Claim type:** positive_theorem' in its single-module authority docs/STAGGERED_DIRAC_SUBSTEP1_U4_CONDITIONAL_SINGLE_MODULE_NARROW_BOUNDED_NOTE_2026-05-17.md, which after its 2026-06-17/2026-07-10 repairs is bounded_theorem and declares the carrier identification a bounded premise 'not derived here' (PASS=71 FAIL=1 vs cache 72); the dependency was narrowed.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170156Z"
  }
 }

@@ -22,15 +22,22 @@
  "stdout_sha256": "9c2940504fa3ed4fc498b2bbbe1a24f2498ee37c8b6fcddc659a46a6eaedbdf7",
  "stdout_tail": "es with SU(2)_L generator 3\n[PASS] fundamental generator stack has no invariant vector\n[PASS] Hom_SU(2)(trivial,fundamental) dimension is zero\n\nPart 5: gstar census boundary\n[PASS] single supplied doublet gives g_* = 427/4: 427/4\n[PASS] second independent doublet gives g_* = 443/4: 443/4\n[PASS] second independent doublet shift is +4: 4\n[PASS] radial support does not add a second doublet\n\nPart 6: note and downstream firewall checks\n[PASS] support note firewall phrase present: does not derive the one-complex `SU(2)_L` EWSB thermal doublet from\n[PASS] support note firewall phrase present: does not promote the `g_*` Higgs-sector row\n[PASS] support note firewall phrase present: does not introduce a new axiom\n[PASS] support note firewall phrase present: retained-bounded declared-inventory premise\n[PASS] support note firewall phrase present: neutral/radial carrier\n[PASS] support note firewall phrase present: not field-content authority\n[PASS] downstream gstar note cites this support note\n[PASS] downstream citation keeps support-only scope\n[PASS] no-go note remains compatible with support route\n[PASS] forbidden overclaim absent: **Status:** retained\n[PASS] forbidden overclaim absent: proposed_retained\n[PASS] forbidden overclaim absent: promoted to retained\n[PASS] forbidden overclaim absent: fully derives the doublet\n[PASS] forbidden overclaim absent: field-content authority from H_unit\n\nwrote outputs/sm_gstar_hunit_neutral_radial_orbit_support_2026-06-18.json\nSUMMARY: PASS=66 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T040210Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170159Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 86f451b0 differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: PASS=66 FAIL=1' vs cache 'SUMMARY: PASS=67 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Repeat of the triaged run w-macbookpro90c72-1__c8fda2bc__20260918T230047Z.json (identical FAIL lines): Runner reads the gitignored generated docs/audit/data/audit_ledger.json, absent from a fresh checkout of main (#8212): the only failure is '[FAIL] docs/audit/data/audit_ledger.json exists' (PASS=66 FAIL=1).",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170159Z"
  }
 }

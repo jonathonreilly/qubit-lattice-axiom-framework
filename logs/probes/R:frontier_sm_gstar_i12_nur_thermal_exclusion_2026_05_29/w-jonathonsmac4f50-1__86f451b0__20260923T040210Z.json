@@ -22,15 +22,22 @@
  "stdout_sha256": "309f3137e16a8ecea977bb497cd71d3ef3d83e979638d8eab05e3aa343cbdeb3",
  "stdout_tail": "----------------------------------------------------------------------\n8. No-overclaim / forbidden-import / vocabulary scan\n----------------------------------------------------------------------------------------\n  [PASS] no bare '**Status:** retained/promoted' line\n  [PASS] claim type is bounded_theorem\n  [PASS] status authority is independent audit lane only\n  [PASS] note does NOT claim to derive the small neutrino mass\n  [PASS] no load-bearing forbidden import 'wilson plaquette' (1 occurrence(s))\n  [PASS] no load-bearing forbidden import 'staggered phase' (1 occurrence(s))\n  [PASS] no load-bearing forbidden import 'brillouin' (1 occurrence(s))\n  [PASS] no load-bearing forbidden import 'link unitar' (1 occurrence(s))\n  [PASS] no load-bearing forbidden import 'monte carlo' (1 occurrence(s))\n  [PASS] no load-bearing forbidden import 'best-fit' (0 occurrence(s))\n  [PASS] no load-bearing forbidden import 'chi-squared fit' (0 occurrence(s))\n  [PASS] no load-bearing forbidden import 'fitted to data' (0 occurrence(s))\n  [PASS] no new-vocabulary string 'algebraic universality'\n  [PASS] no new-vocabulary string 'two-class framing'\n  [PASS] no new-vocabulary string 'lattice-realization-invariant by definition'\n  [PASS] no new-vocabulary string '(ckn)'\n\n----------------------------------------------------------------------------------------\nSCORECARD\n----------------------------------------------------------------------------------------\n  PASS = 66\n  FAIL = 1\n\nRESULT: PASS=66 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T040210Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170159Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 86f451b0 differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'PASS=66 FAIL=1' vs cache 'PASS=70 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Repeat of the triaged run w-macbookpro90c72-1__c8fda2bc__20260918T230048Z.json (identical FAIL lines): Real failure on main, text level: the comparator-bridge check (runner lines 502-506) requires 'admitted empirical small-neutrino-mass observation' in docs/SM_GSTAR_I12_EMPIRICAL_THERMAL_COMPARATOR_BRIDGE_BOUNDED_NOTE_2026-06-15.md; f44e13faf8 (2026-06-20, 'bound sm gstar i12 comparator arithmetic') rewrote it as 'the declared empirical small-neutrino-mass comparator' (line 27), after the guard landed in 69f90d3a5a (2026-06-17). 'does not derive small neutrino mass' is still present (line 33). PASS=66 FAIL=1 vs cache PASS=70 FAIL=0; the other 3 missing PASS rows are the optional ledger cross-check, skipped because the gitignored audit ledger is absent (#8212).",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170159Z"
  }
 }

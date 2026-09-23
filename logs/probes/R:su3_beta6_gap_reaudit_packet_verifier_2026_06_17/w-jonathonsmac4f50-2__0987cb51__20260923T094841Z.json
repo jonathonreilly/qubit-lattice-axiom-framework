@@ -27,14 +27,21 @@
  "stdout_sha256": "ae3a1adc5e2375058880e95c45ea8624da4c7d8beb9f1b3056a9f59d480a52b9",
  "stdout_tail": "ction_positivity_wilson_temporal_gauge_2026_06_05.txt contains 'integrated three-factor RP Gram PSD'\nPASS scripts/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.py exists\nPASS logs/runner-cache/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.txt exists\nPASS logs/runner-cache/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.txt records runner path -- runner=scripts/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.py\nPASS logs/runner-cache/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.txt exits zero -- exit_code=0\nPASS logs/runner-cache/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.txt status ok -- status=ok\nPASS logs/runner-cache/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.txt sha matches source -- cache=ef7a0d07c209a0d35a6aff23c131545cfbcf2f75dded4bb7274ff945a8cced8a, live=ef7a0d07c209a0d35a6aff23c131545cfbcf2f75dded4bb7274ff945a8cced8a\nPASS logs/runner-cache/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.txt contains 'TOTAL: 17 PASS / 0 FAIL'\nPASS logs/runner-cache/frontier_rp_wilson_temporal_gauge_sign_and_positivity_repair_2026_06_06.txt contains 'sign is load-bearing'\nPASS restricted packet is non-promotional\nPASS remaining positive route is exactly the bulk-criticality theorem\n============================================================================\nTOTAL: PASS=86 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T094841Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170202Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 0987cb51 differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=86 FAIL=1' vs cache 'TOTAL: PASS=87 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Repeat of the triaged run w-jonathonsmac4f50-2__3720d817__20260923T024026Z.json (identical FAIL lines): Issue #8695: runner/runner desync on main - the verifier pins 'TOTAL: 25 PASS / 0 FAIL' in the companion reflection-positivity cache, which on main reads 'TOTAL: 34 PASS / 0 FAIL' (companion grew, still all-pass; cache sha matches source); 86/87 otherwise.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170202Z"
  }
 }

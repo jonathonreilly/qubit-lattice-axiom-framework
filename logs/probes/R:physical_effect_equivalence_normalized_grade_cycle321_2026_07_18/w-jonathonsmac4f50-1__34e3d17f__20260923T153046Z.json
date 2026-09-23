@@ -19,14 +19,21 @@
  "stdout_sha256": "6f0deb01eb4f0e17d034545ba6f07a82be9e840cea3c04b91675ee8281cbf2fd",
  "stdout_tail": " (0.5, 0.5)}, 'ray_program': {'weight': 0.61, 'split': 0.37}}\nDATA axis {'coarse_effect_residual': 4.3676465171938503e-16, 'held_every_input_matrix_element_residual': np.float64(3.400058012914541e-16), 'selected_outcome_Choi_residual': 0.43472221389748616, 'pointer_erased_system_Choi_residual': 0.8694444277949724, 'held_future_selected_witness': np.float64(0.1385715014981988), 'held_future_erased_witness': np.float64(0.2771430029963976), 'coarse_transcript_Choi_residual': 5.925344115423113e-16, 'fine_transcript_Choi_residual': 0.9229898955347268}\nDATA ray {'coarse_effect_residual': 1.0385185452638061e-16, 'coarse_instrument_Choi_residual': 9.522237824687716e-17, 'pointer_erased_system_Choi_residual': 1.0516384885128963e-16, 'coarse_transcript_Choi_residual': 1.0385185452638061e-16, 'held_future_witness': np.float64(1.1159342773238595e-16), 'fine_transcript_Choi_residual': 1.0826693770491527}\nDATA grade {'compiled_program_menus': 10, 'unique_effects': 20, 'normalization_rank': 7, 'normalization_nullity': 13, 'trace_grade_normalization_residual': 5.551115123125783e-16, 'finite_nontrace_grade_normalization_residual': 6.753223014464259e-16, 'finite_grade_minimum': 0.054002448635711686, 'finite_grade_maximum': 0.4999999999999999, 'best_trace_form_residual': 0.02092925769136329, 'nonlinear_binary_grade_menu_sums': (0.07994396059581478, 0.2868988391376458, 0.36305318654884255, 0.30045429897694087, 0.33333333333333337, 0.5714285714285711)}\nSUMMARY PASS 23 FAIL 1\nRESULT CYCLE321_OPEN\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T153049Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170200Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 34e3d17f differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Repeat of the triaged run w-jonathonsmac4f50-2__d0317746__20260923T030103Z.json (identical FAIL lines): Machine: the only FAIL is the git gate 'recorded no-go methodology commit remains an ancestor of origin/main' (8e1adb5bc); this slot is a shallow clone, and the commit is an ancestor of origin/main in a checkout with deeper history.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170200Z"
  }
 }

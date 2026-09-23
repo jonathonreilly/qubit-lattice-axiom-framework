@@ -22,15 +22,22 @@
  "stdout_sha256": "4a2b89c5775bec8e71f863e26042b7a4bbb6680f92539d2cc2aabfd0738abd2b",
  "stdout_tail": "enter order is K4,K3,K5,K6, not the capture order  (null center order=(3, 4, 5, 6), capture order=(6, 5, 3, 4))\n\nS4 note hygiene\n------------------------------------------------------------------------------\n  [PASS] S4: canonical claim type and status-authority front matter are present\n  [PASS] S4: dependency links are exactly the depth anchors plus realized-state primitive  (links=[('`DET_PHASE_HARMONIC_DEPTH_STATE_DEPENDENT_BOUNDED_THEOREM_NOTE_2026-06-12.md`', 'DET_PHASE_HARMONIC_DEPTH_STATE_DEPENDENT_BOUNDED_THEOREM_NOTE_2026-06-12.md'), ('`HARMONIC_DEPTH_HANKEL_RANK_MECHANISM_BOUNDED_THEOREM_NOTE_2026-06-12.md`', 'HARMONIC_DEPTH_HANKEL_RANK_MECHANISM_BOUNDED_THEOREM_NOTE_2026-06-12.md'), ('`REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md`', 'REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md')])\n  [PASS] S4: realized-state primitive boundary is not widened\n  [PASS] S4: causal/generative interpretation remains outside this runner\n  [FAIL] S4: note, runner, and cache are the touched files in this spec path set\n==============================================================================\nTOTAL: PASS=12 FAIL=14\n==============================================================================\nSCOPE: exact finite one-body L=3 gauge-link system, realized seeds only.\nCLAIM TESTED: coupled-gap count is identical (3 each), while the tone-weight\n  distribution is ordered by concentration: K6 is most concentrated, K3/K4\n  are least concentrated, and inverse PR is monotone with order-4 capture.\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T132156Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170157Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha ace3456e differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=12 FAIL=14' vs cache 'TOTAL: PASS=26 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Repeat of the triaged run w-jonathonsmac4f50-2__db814d54__20260921T050110Z.json (identical FAIL lines): Reproducible numerical regression against a PASS cache, not documentation state. Pinned cache says TOTAL: PASS=26 FAIL=0; this run and my independent re-run both give PASS=12 FAIL=14 on numpy 2.4.1 / scipy 1.17.0. The basis-independent ANCHOR checks still pass at 1e-2 (capture@order4 table, trajectory ranks 71/84/36/35, gap count 3), while every exact frozen table of derived weight quantities fails at 5e-12, by percent-level margins: participation ratio K6 frozen 1.2001324 vs observed 1.2573046 (+4.8%), entropy K6 0.3630228 vs 0.4274181 (+17.7%), gap-second-moment K6 0.8043253 vs 1.0051005 (+25%). One qualitative consequence: the frozen tables have PR(K3)=1.6002 < PR(K4)=1.6360 but observed PR(K3)=1.6412 > PR(K4)=1.6272, so the S2 concentration ordering K6<K5<K3<K4 flips to (6,5,4,3). ",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170157Z"
  }
 }

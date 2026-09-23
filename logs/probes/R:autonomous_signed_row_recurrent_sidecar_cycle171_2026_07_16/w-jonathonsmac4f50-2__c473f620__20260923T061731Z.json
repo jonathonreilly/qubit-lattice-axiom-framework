@@ -19,14 +19,21 @@
  "stdout_sha256": "b251a54fb44b22c86958be577f19ae151b32940d4a48099f412c01cb556b7a0f",
  "stdout_tail": "ntations :: (Counter({(230, 526, 5, 1229, 9, 515, 0): 2, (230, 579, 5, 802, 6, 515, 0): 2, (230, 413, 4, 1116, 9, 515, 0): 1, (230, 475, 4, 1069, 9, 515, 0): 1, (230, 399, 4, 1529, 12, 515, 0): 1, (230, 483, 4, 1400, 11, 515, 0): 1, (230, 828, 6, 529, 5, 515, 0): 1, (230, 1229, 9, 526, 5, 515, 0): 1, (230, 802, 6, 579, 5, 515, 0): 1, (230, 1217, 9, 547, 5, 515, 0): 1, (230, 923, 7, 373, 4, 515, 0): 1, (230, 1223, 9, 373, 4, 515, 0): 1, (230, 969, 7, 373, 4, 515, 0): 1, (230, 1360, 9, 393, 4, 515, 0): 1, (230, 374, 4, 976, 7, 515, 0): 1, (230, 373, 4, 969, 7, 515, 0): 1, (230, 373, 4, 1223, 9, 515, 0): 1, (230, 373, 4, 928, 7, 515, 0): 1, (230, 1412, 11, 459, 4, 515, 0): 1, (230, 1420, 11, 380, 4, 515, 0): 1, (230, 1007, 8, 510, 4, 515, 0): 1, (230, 1079, 9, 431, 4, 515, 0): 1}), [])\nPASS all 76,032 new raw-row rotations preserve output :: []\n\nSCOPE\nFAIL review note carries N1-N8 and bounded-carrier scope :: \n\nACCOUNTING\nSOURCE_RECORDS 544\nVARIABLE_RECORDS 229\nCANONICAL_ADDITIONS 132\nRAW_ADDITIONS 3168\nFULL_RAW 103820\nCARRIER_CLEAN_EXISTING_ROLES 117\nCAUSAL_CERTIFICATE 230 1079 9 431 4 515\nLEDGER ({'generation': 0, 'x': 7, 'displacement': 0, 'block_records': 0, 'commit_depth': 0}, {'generation': 1, 'x': 11, 'displacement': 4, 'block_records': 75, 'commit_depth': 19}, {'generation': 2, 'x': 15, 'displacement': 4, 'block_records': 75, 'commit_depth': 71}, {'generation': 3, 'x': 19, 'displacement': 4, 'block_records': 75, 'commit_depth': 123})\nPASS 22 FAIL 2\nRESULT CYCLE171_OPEN\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T062116Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170156Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha c473f620 differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Repeat of the triaged run w-macbookpro90c72-2__ab3d7451__20260919T093924Z.json (identical FAIL lines): Source note AUTONOMOUS_SIGNED_ROW_RECURRENT_SIDECAR_CYCLE171_NOTE_2026-07-16.md was moved to archive/notes/docs/work_history/repo/review_feedback/ (#8198 class), so the runner fails only 'review note exists' and 'review note carries N1-N8' (PASS=22 FAIL=2; no runner cache on main); every computed check passes; repository hygiene, not a physics result.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170156Z"
  }
 }

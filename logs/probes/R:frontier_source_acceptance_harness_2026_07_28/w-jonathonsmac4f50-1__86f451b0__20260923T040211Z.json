@@ -21,15 +21,22 @@
  "stdout_sha256": "da218b3fc375cbe10eef77e9387e31e852ca5701c2fb7b5d2744745c7ab4ae8d",
  "stdout_tail": "s\": [\n        \"orientation_twist\",\n        \"response_locking\",\n        \"free_tensor_carrier\"\n      ],\n      \"verdict\": \"REJECT\"\n    },\n    \"typed_bridge_landed\": \"REJECT\",\n    \"wrong_tensor_pin\": \"DRIFT\"\n  },\n  \"frozen_record_digests\": {\n    \"recoil\": \"f0700d2a13aaabc3817d422876d76682c2ed6c393f796f58c9f16f83428f2530\",\n    \"tensor_lift\": \"7ceadfe93210f0e16b523cc525987b490ed5ed67451a6a3f283c670858d4cc56\",\n    \"typed_bridge\": \"dbda46063afcd1d3d7092079f090907f23fbbf0786c2fa8164be1efee16fd40b\",\n    \"typed_bridge_contract_rows\": \"9ced4631a1382e85989c8a301fca8bc48bf7f759aad71c8ba7c5110c85614b35\"\n  },\n  \"harness_input_ports\": {\n    \"recoil\": false,\n    \"tensor_lift\": true,\n    \"typed_bridge\": false\n  },\n  \"new_physics_claimed\": false,\n  \"pins\": {\n    \"recoil\": {\n      \"actual\": \"4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75\",\n      \"expected\": \"4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75\",\n      \"verified\": true\n    },\n    \"tensor_lift\": {\n      \"actual\": \"33c2bf0df699da181eed1414ee828c3633fec2be51ac1646659ffce714d2ab31\",\n      \"expected\": \"33c2bf0df699da181eed1414ee828c3633fec2be51ac1646659ffce714d2ab31\",\n      \"verified\": true\n    },\n    \"typed_bridge\": {\n      \"actual\": \"834f63475a66e02b7b2a956c710d9b6b3107df764605bae747cc1bf40ed61b59\",\n      \"expected\": \"834f63475a66e02b7b2a956c710d9b6b3107df764605bae747cc1bf40ed61b59\",\n      \"verified\": true\n    }\n  },\n  \"runtime_seconds\": 161.776002,\n  \"tool_role\": \"non-authoritative candidate testing\"\n}\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T040452Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170159Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 86f451b0 differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_source_acceptance_harness_2026_07_28.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Repeat of the triaged run w-macbookpro90c72-1__c8fda2bc__20260918T230048Z.json (identical FAIL lines): The one failure re-executes scripts/physical_m2_gravity_source_bridge_tournament_synthesis_cycle294_2026_07_17.py as a subprocess, which gets REJECT (1 pass / 1 fail) because its route runners read notes moved to archive/ by the 2026-09-05 densify-freeze migration (#8198); that runner's own probe log is triaged machine for the same cause. The other 14 checks pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170159Z"
  }
 }

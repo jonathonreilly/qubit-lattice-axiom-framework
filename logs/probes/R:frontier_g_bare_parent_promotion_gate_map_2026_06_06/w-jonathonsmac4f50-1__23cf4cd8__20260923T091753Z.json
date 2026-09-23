@@ -22,15 +22,22 @@
  "stdout_sha256": "af9bc050a54aa8dc2facf4dd0a3ddc9b90e5fc899924be61cde3ae77c78ac598",
  "stdout_tail": "air candidate files are present\n  [PASS] parent re-audit is still required\n  [FAIL] canonical normalization is still admitted upstream\n  [PASS] N_F forced by baseline is false on current panel surface\n  [PASS] L3 invariance does not imply uniqueness\n  [PASS] staggered-Dirac gate is not treated as closed\n  [PASS] parent promotion route is blocked\n\n----------------------------------------------------------------------------------------\nPart 5: branch-local note hygiene\n----------------------------------------------------------------------------------------\n  [PASS] gate note contains: branch-local no-go gate map\n  [PASS] gate note contains: negative route pruning\n  [PASS] gate note contains: conditional algebra core + L3 invariance => parent promotion\n  [PASS] gate note contains: is blocked on the current surface\n  [PASS] gate note contains: No repo-wide audit verdict is applied here\n  [PASS] gate note contains: No claim is made that `g_bare = 1` is false\n  [PASS] gate note avoids banned phrase: retained branch-local\n  [PASS] gate note avoids banned phrase: would become retained\n  [PASS] gate note avoids banned phrase: promoted to retained\n  [PASS] gate note avoids banned phrase: retained on the actual surface\n  [PASS] gate note avoids banned phrase: full retained at this time\n\n========================================================================================\n  TOTAL: PASS=39, FAIL=6\n========================================================================================\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T091753Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170158Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 23cf4cd8 differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=39, FAIL=6' vs cache 'TOTAL: PASS=45, FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Repeat of the triaged run w-jonathonsmac4f50-2__42684ae0__20260922T090210Z.json (identical FAIL lines): Real failure on main, text level: the runner requires five phrases in its parent note docs/G_BARE_DERIVATION_NOTE.md (the two 2026-05-03 theorem-note filenames, 'not a retained-status promotion', 'canonical normalization itself remains the admitted upstream convention layer', 'not a fixed-point condition'); the note exists but contains none of them, even with whitespace normalized, after its 2026-07-16/18 rewrites (115b97fddf, dd1cfc4c64, f8dca3eccd on main); TOTAL PASS=39 FAIL=6, the sixth failure being the dependent 'canonical normalization is still admitted upstream'.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170158Z"
  }
 }

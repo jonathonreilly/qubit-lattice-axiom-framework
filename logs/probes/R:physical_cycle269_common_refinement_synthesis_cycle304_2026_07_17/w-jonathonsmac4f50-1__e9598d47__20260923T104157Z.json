@@ -19,14 +19,21 @@
  "stdout_sha256": "51c8bf3d279ff3ce864537725ab3adbe25b810feda24f62e58daedbc8d81c216",
  "stdout_tail": ": 772, 'fragment': 'actual separated-cell recurrent coin', 'match': True}, {'path': 'scripts/physical_cycle269_coin_stream_contact_common_refinement_cycle304_2026_07_17.py', 'line': 810, 'fragment': 'one common E intertwines the fixed-seam', 'match': True}, {'path': 'scripts/physical_cycle269_coin_stream_contact_common_refinement_cycle304_2026_07_17.py', 'line': 834, 'fragment': 'mass fixture and exact contact firewall', 'match': True}, {'path': 'scripts/physical_cycle269_coin_stream_contact_common_refinement_cycle304_2026_07_17.py', 'line': 1022, 'fragment': 'opposite-wedge, phase-flag, and schedule deletions', 'match': True}, {'path': 'docs/work_history/repo/review_feedback/PHYSICAL_CYCLE269_COIN_STREAM_CONTACT_COMMON_REFINEMENT_CYCLE304_NOTE_2026-07-17.md', 'line': 65, 'fragment': 'not the actual recurrent volume update', 'match': True}, {'path': 'docs/work_history/repo/review_feedback/PHYSICAL_CYCLE269_COIN_STREAM_CONTACT_COMMON_REFINEMENT_CYCLE304_NOTE_2026-07-17.md', 'line': 89, 'fragment': 'phase flag is not locally enforced', 'match': True}]\nPASS N5 records tested resolutions and narrows every broader reading :: \nPASS N6--N8 retain constructive paths, the hostile countercase, and explicit retirement mechanisms :: \nPASS the broad Gate fails and creates no shared obstruction or axiom pressure :: \nPASS the ledger keeps C_ref, C_wrap, and C_local at the reviewed scope :: \nPASS the TOE lane scores do not turn the comparator into integrated closure :: \nTOTAL PASS=14 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T104204Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170200Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha e9598d47 differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Repeat of the triaged run w-jonathonsmac4f50-2__1a269638__20260923T034245Z.json (identical FAIL lines): Machine: the only FAIL is the ancestry gate for 9955ada6 (shallow clone); the commit is an ancestor of origin/main with deeper history.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170200Z"
  }
 }

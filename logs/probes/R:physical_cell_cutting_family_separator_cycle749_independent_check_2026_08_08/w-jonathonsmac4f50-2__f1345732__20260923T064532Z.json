@@ -22,11 +22,12 @@
  "stdout_sha256": "f7504a1ca452ed50d6522f2728ddf6cdc116ea02b06fec9c5400a648a9b3bd78",
  "stdout_tail": "PASS independent.population  opposite-pivot reconstruction gives 15800 rows, 192 columns, weights 24 and 1975\nPASS independent.targets  the reconstructed four target and its complement reproduce the landed target identity\nPASS independent.all_marked  exact clique enumeration reproduces all 192 landed all-marked carriers\nFAIL independent.symmetry_actions  all 48 geometric maps and both extra generators preserve the incidence rows and four target\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_cell_cutting_family_separator_cycle749_independent_check_2026_08_08.py\", line 513, in <module>\n    group = closure(generators)\n            ^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_cell_cutting_family_separator_cycle749_independent_check_2026_08_08.py\", line 465, in closure\n    product = tuple(int(value) for value in generator[element_array])\n                                            ~~~~~~~~~^^^^^^^^^^^^^^^\nIndexError: index 0 is out of bounds for axis 0 with size 0\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T064534Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170200Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha f1345732 differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: parse field 'total' found nothing in the stdout: the run may not have reached its summary",
@@ -34,5 +35,11 @@
    "FAIL: the pinned cache ends with the verdict 'TOTAL: PASS=23 FAIL=0' and this run printed none",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_cell_cutting_family_separator_cycle749_independent_check_2026_08_08.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Repeat of the triaged run w-macbookpro90c72-1__6e3c2612__20260919T000159Z.json (identical FAIL lines): Probe-environment contamination (#8213 comment): the preceding Cycle 749 primary run in the same slot left its receipt as a 4-key 'runner has not completed' placeholder without symmetry_witness; this checker built b0 from an empty list and raised IndexError in closure (line 465). The committed receipt carries a 192-entry extra_generator_b0, so the crash does not occur on a clean clone; its contract gates there still bind the stale requirements-release.txt pin reported for the sibling Cycle 746-755 tasks.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170200Z"
  }
 }

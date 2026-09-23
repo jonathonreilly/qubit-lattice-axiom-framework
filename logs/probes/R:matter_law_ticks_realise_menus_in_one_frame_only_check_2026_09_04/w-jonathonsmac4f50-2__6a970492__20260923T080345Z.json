@@ -22,15 +22,22 @@
  "stdout_sha256": "4293f04f331cc00768f2dc525eb5a2c130ccad5e8c458e21629e2c500945ebe9",
  "stdout_tail": "nu one-menu families (site k <= 7, torus T0) are consistent, sum pinned\nPASS: T5-rogue uniform differs from the prescribed sea on126/129 site and1324/1329 star odds classes; it remains Born for P_M/|M|\nPASS: M1-other-Born-state actual nonuniform site odds differ from the positive trace1 uniform diagonal density\nPASS: T5-effects each menu's odds live on its support and sum to 1; menus cover the basis\nPASS: T5-arity no menu has three outcomes at any unit; minimum sizes 4 / 19 / 5 / 7\nPASS: T5-killing the site realises only {P0},{P1},{P0,P1}; the 8 four-outcome menus pair up\nPASS: T5-fibre-172 PR #7931: 9969 conditions, 82116 pairs, 164232 checks, 172 phase-blind keyed groups (9-decimal rounding)\nPASS: T5-fibre-menu Lemma 2 on site 0 (175419 conditions) and star(0) (19619): 635/1499 full-state keys rounded9decimals; none has2menus\nFAIL: T5-fibre-born Lemma 3, float: p(w|n) = <w|sigma(n)|w> to 1.2e-14: the specified-state diagonal identity\nPASS: M4-static-dwell supplied H=X control: unequal static odds become1/2 at tau=pi/4; eigenstate remains fixed\nPASS: gate-axioms TEXT ONLY: Admissibility and Record quotes match MINIMAL_AXIOMS_2026-06-29.md\nPASS: gate-title TEXT ONLY: corrected static title and absence of old promotion phrases\nPASS: gate-quoted TEXT ONLY: historical full-census numbers occur in disclosure; no comparison is executed\nPASS: gate-surface TEXT ONLY: conditional surface and independent-audit boundary\nrecorded_arguments: 1 printed, none counted\nTOTAL: PASS=60 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T080458Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170200Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 6a970492 differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=60 FAIL=1' vs cache 'TOTAL: PASS=61 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Repeat of the triaged run w-jonathonsmac4f50-2__f2b73089__20260920T062506Z.json (identical FAIL lines): TOTAL: PASS=60 FAIL=1 against the cache's PASS=61 FAIL=0, and the single failure is a floating-point tolerance that is too tight to be host-independent. The gate T5-fibre-born is worst < 8e-15, where worst is the largest absolute difference between a bincount-normalised histogram pu and the diagonal of a reduced density matrix, maximised over the 175419 conditions on site 0 and the 19619 on star(0). This host gives 1.2e-14; the cache records 3.7e-15. Both are ordinary for sums of that length: the random-walk estimate for accumulated rounding over about 2 x 10^5 double-precision terms is of order sqrt(N) eps = 7e-14, so 8e-15 sits below the noise floor the computation can promise and the verdict depends on summation order and BLAS rather than on the identity being checked. Every other g",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170200Z"
  }
 }

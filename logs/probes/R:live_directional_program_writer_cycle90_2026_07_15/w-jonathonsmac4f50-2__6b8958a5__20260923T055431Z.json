@@ -19,14 +19,21 @@
  "stdout_sha256": "4b93233e9a1837a79b7eccb287120cd05612791bf781d1c66a544c49d9f4a527",
  "stdout_tail": "s trivial stabilizer\nPASS B08 all 4,608 writer stages have exact frontier :: []\nPASS B09 writer graph has 4,352 edges and 256 terminals :: (4352, 256)\n\n===============================================================================\nC - Four full rows through 48-bit compare and output write\n===============================================================================\nPASS C01 stream source has 193 supplied records\nPASS C02 stream reuses Cycle-89 equality row\nPASS C03 all 3,648 one-role substitutions stop quietly :: []\nPASS C04 four pipelines have 264 states, 260 edges, four terminals :: (264, 260, 4)\nPASS C05 every full-row physical frontier is exact :: []\nPASS C06 terminal words are exactly the four live outputs\nPASS C07 each pipeline has 262 supplied source records\n\n===============================================================================\nD - Proper-cubic covariance and residual boundary\n===============================================================================\nPASS D01 all 96 transformed pipeline controls are exact :: []\nFAIL D02 note exists and carries authority none\nFAIL D03 note says all streams and program rails are supplied\nFAIL D04 note names the open-direction residual\nFAIL D05 note names serial-selector residual\nFAIL D06 note denies foundation and axiom effects\n\nPROGRAMS=236 SLOT_BITS=48 EMPTY_SLOTS=742 SIX_ROWS=4\nOUTPUT_CANONICAL=5 OUTPUT_RAW=48 PHYSICAL_UNION_RAW=5452\nFULL_ROW_STATES=264 FULL_ROW_EDGES=260 SUBSTITUTIONS=3648\nSUMMARY: 26 PASS / 5 FAIL\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T055447Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170159Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 6b8958a5 differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Repeat of the triaged run w-macbookpro90c72-1__aaf70495__20260918T220214Z.json (identical FAIL lines): Runner fails on current main because its source note was moved to archive/ by the 2026-09-05 densify-freeze migration (#8198): 'FAIL D02 note exists and carries authority none'; repository hygiene, not an environment fault and not a physics result.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170159Z"
  }
 }

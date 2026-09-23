@@ -25,15 +25,22 @@
  "stdout_sha256": "4f8f0031413c60eab07e6d63050da7f8475a021a9f93d424faa16acfa4d9a21b",
  "stdout_tail": "201,max=70.941, IDX_12_rot1_rot2:min=-24.329,max=108.009, IDX_12_all_chars:min=-76.365,max=124.945, IDX_tracefree:min=-103.032,max=-66.669)\n[PASS] [V3] anti-fabrication: full-spectrum machinery is nonzero  (max|IDX|=374.836; (r=0.5,m0=0.5) J=(0.000,100.004,100.004); (r=0.5,m0=1.5) J=(-156.108,-36.494,-36.494); (r=1.0,m0=0.5) J=(50.811,162.013,162.013); (r=1.0,m0=1.5) J=(-50.811,103.737,103.737))\n[PASS] [V4] named continuum bridge: 2/9 = fixed-point weight times trace-free average  (weight=-(-1)**(2/3)/(1 - (-1)**(2/3))**2, tracefree_average=2/3, bridge=-2*(-1)**(2/3)/(3*(1 - (-1)**(2/3))**2), unweighted_count=2)\n[FAIL] [B] dependency grep: fixed-locus note carries the L_3(1,2)=2/9 phrase\n[PASS] [B] dependency grep: edge note carries the H(k) Wilson edge phrase\n[PASS] [B] firewall and walls-move sentences are present\n[PASS] [B] forbidden closure/import rhetoric absent\n[PASS] [B] six-wall carrier-search map paragraph present with the five prior walls\n[PASS] [B] dependency markdown link inventory is exactly the three dependency links  (dependency_links=3, total_links=5)\n[PASS] [B] runner and cache markdown links are present\n[PASS] [B] domain-wall context note is backticked, not a dependency link\n[PASS] [B] No-promotion statement present\n[PASS] [B] status-authority lines present\n==============================================================================\nSUMMARY: PASS=19 FAIL=1\nTOTAL: PASS=19 FAIL=1\n==============================================================================\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T113005Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170159Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 769d150d differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=19 FAIL=1' vs cache 'TOTAL: PASS=20 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Repeat of the triaged run w-jonathonsmac4f50-2__abafb404__20260923T020724Z.json (identical FAIL lines): Issue #8683. Runner/note desync on main: the [B] guard needs 'L_3(1,2) = 2/9' (or L3/L\u2083) in the fixed-locus note; the note now states L_C_3(N) = 2/9 (same root cause as #8234); 19/20 as cache otherwise.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170159Z"
  }
 }

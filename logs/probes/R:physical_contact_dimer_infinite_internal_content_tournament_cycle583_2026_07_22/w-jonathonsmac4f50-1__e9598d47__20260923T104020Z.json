@@ -19,14 +19,21 @@
  "stdout_sha256": "a5cb152bf31573ffb6b8825075600a8dfbfd565c77e758c5a126fb991dc7c548",
  "stdout_tail": "phase, a hostile reviewer must reject an ordinary spectral-gap or Combes\u2013Thomas proof until a continuous contact-cyclic cancellation stable under exponential weighting is proved. The finite T2 cross term and exact three-CAR quotient keep constructive second-mode routes open, while held localization/Krylov thresholds presently do not certify them.', 'N8_cross_cycle_echo': ('Cycle219 supplied the massive proper-cubic one-particle walk', 'Cycle230 supplied intrinsic CAR and local even contact but no physical-site compiler', 'Cycles563/569 retained the physical-M2 mass/contact/seam fixtures', 'Cycle578 found a finite contact-bound dispersive A2 dimer branch', 'Cycle583 exposes its exact finite-rank contact resolvent and the precise full-spectrum-touch boundary, while scouting rather than excluding internal multiplicity'), 'negative_claim_shipped': False, 'shared_substrate_obstruction': False, 'axiom_pressure': False}\nPASS the frozen Cycle583 tournament remains below the 360-second and 3-GiB internal maximum-RSS caps :: {'elapsed_seconds': 96.4104967090534, 'maximum_RSS_bytes': 2334408704}\nSUMMARY_JSON {\"axiom_pressure\": false, \"elapsed_seconds\": 96.4104967090534, \"maximum_RSS_bytes\": 2334408704, \"route_A_full_spectrum_distance\": 1.8529835144581194e-15, \"route_A_max_BS_residual\": 1.9555493987582955e-14, \"route_B_second_mode_certified\": false, \"route_C_second_mode_certified\": false, \"shared_substrate_obstruction\": false, \"tests_failed\": 1, \"tests_passed\": 14}\nRESULT pass=14 fail=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T104157Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170200Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha e9598d47 differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Repeat of the triaged run w-jonathonsmac4f50-2__1a269638__20260923T033737Z.json (identical FAIL lines): Machine: the gate's only failing part is ancestor=False for the accepted Cycle578 commit d73ae344 (shallow clone); the commit is an ancestor of origin/main with deeper history, and every logged dependency sha256 equals the runner's expected DEPENDENCY_SHA256.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170200Z"
  }
 }

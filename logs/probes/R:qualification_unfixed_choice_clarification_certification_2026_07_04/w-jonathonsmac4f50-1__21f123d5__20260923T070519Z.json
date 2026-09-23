@@ -22,14 +22,21 @@
  "stdout_sha256": "151df0c401c33ef73090eef2296a5e14ee5c78c9d5b0a0bbd023b8c463b87de4",
  "stdout_tail": "PASS: C1a four axiom section headers present -- headers=4/4\nPASS: C1b axioms' named content unchanged (verbatim sentences present) -- named-content sentences present=7/7\nFAIL: C1c base further-physical-structure sentence present unchanged\nFAIL: C1d exact approved clause present in the Qualification -- clause appears immediately after the base sentence\nPASS: C1e clause did not alter the state / law-domain sentences\nFAIL: C1f minimal_axioms machine mirror carries exact approved clause -- axiom_premise_nodes.json minimal_axioms note\nPASS: C2a a law not depending on the unfixed handedness passes the achiral diagnostic -- R_align is O_h-covariant on 40x48 checks\nPASS: C2b a law depending on the unfixed handedness is the forbidden case absent admission -- R_J2 fails the reflection diagnostic -- it depends on the unfixed choice\nPASS: C2c a state configuration may still carry the handedness (state left free) -- configs with nonzero handedness=116/200\nPASS: C3a the mirror pair shares the tested mirror-even invariant summaries -- invariant-matched chiral pairs=116\nPASS: C3b the mirror pair carries opposite handedness (the unfixed choice)\nTOTAL: PASS=8 FAIL=3\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T070520Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170202Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 21f123d5 differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=8 FAIL=3' vs cache 'TOTAL: PASS=11 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Repeat of the triaged run w-macbookpro90c72-2__a60d50e2__20260918T225457Z.json (identical FAIL lines): Real failure on main, text level: C1c/C1d/C1f (runner lines 84-100) require BASE_SENTENCE 'Further physical structure requires derivation, bridge, explicit admission, or approved primitive registration before use as a premise.' followed by CLAUSE 'In particular, a law may not depend on a choice not fixed by the supplied structure, unless that choice is admitted.' in docs/MINIMAL_AXIOMS_2026-06-29.md and mirrored in axiom_premise_nodes.json; c62dce4792 (2026-07-11, premise-retirement review repair) rewrote the Qualification to '...requires a retained derivation or bridge, or explicit approved-primitive registration, before use as a premise. A choice not fixed by the supplied structure remains a named conditional or open dependency.' (memo lines 85-90); the registry note carries neither. ",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170202Z"
  }
 }

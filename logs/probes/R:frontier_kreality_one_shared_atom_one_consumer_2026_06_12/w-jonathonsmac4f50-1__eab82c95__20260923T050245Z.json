@@ -22,15 +22,22 @@
  "stdout_sha256": "989b20858858938e5aee77c0077deedb46b1cc8b77ce481ea5827931929f9c74",
  "stdout_tail": "PASS: P4.1 assembly booleans: one predicate, theta unloaded, Koide consumes, K-odd falsifier named\nPASS: B1 standard status-authority lines are present\nPASS: B2 No-promotion statement is present\nPASS: B3 firewall keeps predicate named/supplied and not derived or registered\nPASS: B4 firewall keeps r, delta, registry, audit grades, and occupancy binary untouched\nPASS: B5 closing language is absent -- found=[]\nPASS: B6 markdown link inventory is exactly the three dependency links -- links=3\nPASS: B7 context companions are backticked, not markdown-linked\nFAIL: B8 theta note still names the mass-orientation premise being unloaded\nPASS: B9 bridge dependency still names additivity and orbit phrases\nPASS: B10 target file inventory for this spec is exactly the requested pair -- note=docs/KREALITY_PREDICATE_ONE_SHARED_ATOM_ONE_CONSUMER_BOUNDED_NOTE_2026-06-12.md, runner=scripts/frontier_kreality_one_shared_atom_one_consumer_2026_06_12.py\n\n========================================================================================\nSUMMARY: PASS=31 FAIL=1\ngit diff --stat (not invoked; local file summary for this no-git run)\n docs/KREALITY_PREDICATE_ONE_SHARED_ATOM_ONE_CONSUMER_BOUNDED_NOTE_2026-06-12.md | 97 lines\n scripts/frontier_kreality_one_shared_atom_one_consumer_2026_06_12.py | 308 lines\n 2 files changed, 405 insertions(+)\nSUMMARY: K-reality remains a named/supplied open predicate; theta-side registrability does not consume it; Koide partition selection is the one surviving consumer.\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T050245Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170158Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha eab82c95 differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: PASS=31 FAIL=1' vs cache 'SUMMARY: PASS=32 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Repeat of the triaged run w-macbookpro90c72-1__0252f31d__20260918T224831Z.json (identical FAIL lines): Real failure on main, text level: check B8 (runner line 286) requires 'positive real quark-mass orientation' or 'positive real mass orientation' in docs/STRONG_CP_THETA_ZERO_NOTE.md; the phrase occurred 3 times at 5f16086894 (2026-05-26) and 0 times after 99494f7f38 (2026-07-13, cited-selection wiring + constructed action basis), which narrowed the note to a bounded theorem (conditional theta_eff=0 on the selected K-real Case-A action surface) that names a 'positive-mass convention' among cited conditions and links the separate mass-orientation notes; PASS=31 FAIL=1 against cache 32/0, the other 31 checks agree.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170158Z"
  }
 }

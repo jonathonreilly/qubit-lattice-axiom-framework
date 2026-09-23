@@ -22,15 +22,22 @@
  "stdout_sha256": "1482104e2f2dbd4d4260be4194edf60780f496ce8a61b3f15c0e85990dc76ab6",
  "stdout_tail": "ta_pos = 0.261799387799)\n  [PASS] (B2) The unphased point carries delta = 0  (delta_0 = 0.000000000000)\n  [PASS] (B3) The target 2/d^2 = 2/9 lies strictly inside the physical first branch  (0 < 2/9 = 0.222222222222 < pi/12 = 0.261799387799)\n  [PASS] (B4) There is a unique interior first-branch point m_* with delta = 2/d^2  (m_* = -1.160443440065)\n\n(C) The local selected-line packet is too small\n------------------------------------------------------------------------\n  [PASS] (C1) The intrinsic Berry packet is locally fixed: A = dtheta, F = 0\n  [PASS] (C2) The equator Fubini-Study density is constant\n  [PASS] (C3) The structural scalar rho_delta = |Im(b_F)|^2 is branch-constant  (rho_delta = 0.222222222222)\n  [PASS] (C4) Yet delta(m) varies strictly along the first branch  (delta' range = [-0.293421, -0.161625])\n  [PASS] (C5) Two interior points share the same local packet  (same (A_theta, g_FS, rho_delta))\n  [PASS] (C6) Those same points carry different Berry holonomies  (|delta_a-delta_b| = 0.146620)\n\n(D) Reduction consequence\n------------------------------------------------------------------------\n  [PASS] (D1) The target point exists uniquely but is not locally distinguished\n  [PASS] (D2) So any native closure of P must use branch-global or ambient data  (not an intrinsic local selected-line scalar law)\n\n========================================================================\nSummary: PASS=12, FAIL=3\n========================================================================\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T050244Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170158Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha eab82c95 differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'PASS=12, FAIL=3' vs cache 'PASS=15, FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Repeat of the triaged run w-macbookpro90c72-1__0252f31d__20260918T224826Z.json (identical FAIL lines): Real failure on main, text level: checks A1-A3 (runner lines 171-182) require 'd_t = 1 uniquely', 'spacetime is 3+1 dimensional' and 'single-clock codimension-1 evolution excludes d_t > 1' in docs/ANOMALY_FORCES_TIME_THEOREM.md; all three were present at b97e1fbf79 (2026-05-17), A2 was dropped by 0a53ee9ed4 (2026-05-28, narrowed anomaly time bridge wording) and A1/A3 by 73ebfbc67c (2026-06-10, anomaly-forces-time boundary repair); the note is now a bounded_theorem with a conditional 3+1 claim scope whose d_t <= 1 upper bound is the declared B-AXIS premise, while the paired Koide note (line 81) still says it 'proves' the ambient is exactly 3+1 with one clock; Summary PASS=12 FAIL=3 against cache 15/0.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170158Z"
  }
 }

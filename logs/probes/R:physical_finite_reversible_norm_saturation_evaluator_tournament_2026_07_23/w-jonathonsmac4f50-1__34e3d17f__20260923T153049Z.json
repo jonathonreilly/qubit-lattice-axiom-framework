@@ -19,14 +19,21 @@
  "stdout_sha256": "02421d9f9adbe6499f94152eb4ecd083e8b793333616ab91a340fc7d7a2058c0",
  "stdout_tail": "\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/physical_finite_reversible_norm_saturation_evaluator_tournament_2026_07_23.py\", line 360, in <module>\n    LABEL_PERMS = [extract_label_perm(f) for f in FRAMES]\n                   ^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/physical_finite_reversible_norm_saturation_evaluator_tournament_2026_07_23.py\", line 351, in extract_label_perm\n    mat = c576.frame_sector_permutation(frame)  # (1 + 24*15) square permutation\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: module 'physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22' has no attribute 'frame_sector_permutation'\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T153052Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170201Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 34e3d17f differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Repeat of the triaged run w-jonathonsmac4f50-2__d0317746__20260923T030126Z.json (identical FAIL lines): Issue #8709: AttributeError - calls c576.frame_sector_permutation on the cycle576 tournament module, but on main the function lives in ..._cycle576_regge_support_2026_07_22.py; no pinned cache.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170201Z"
  }
 }

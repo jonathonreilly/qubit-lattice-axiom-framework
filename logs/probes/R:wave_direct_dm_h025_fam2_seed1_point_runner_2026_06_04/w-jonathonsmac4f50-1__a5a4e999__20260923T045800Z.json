@@ -22,15 +22,22 @@
  "stdout_sha256": "af74295cc83b1078bc1b95e235bf68a7bcccd1f1e63eee78045570e1359fb54d",
  "stdout_tail": "rect_dm_h025_point_runner.py\nPASS artifact present: scripts/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.py\nPASS artifact present: logs/2026-04-08-wave-direct-dm-h025-fam2-seed1.txt\nFAIL artifact present: docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_FOLLOWUP_NOTE.md\nFAIL artifact present: docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_CONTROL_NOTE.md\nFAIL artifact present: docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md\nFAIL artifact present: docs/WAVE_DIRECT_DM_H025_FAM2_TWO_POINT_SYNTHESIS_NOTE.md\nFAIL artifact present: docs/WAVE_DIRECT_DM_H025_TWO_POINT_SYNTHESIS_NOTE.md\nPASS artifact present: docs/WAVE_DIRECT_DM_PORTABILITY_BATCH_NOTE.md\nPASS measure_dm helper source contains def measure_dm\nPASS measure_dm helper source calls prop_beam and cz\nPASS measure_dm helper source calls solve_wave for early/late histories\nPASS continuum helper source exposes field_at/prop_beam/cz\nPASS measure_dm helper cache is SHA-fresh and ok\nPASS continuum helper cache is SHA-fresh and ok\nWAVE DIRECT-DM H025 FAM2 SEED1 TARGET CERTIFICATE\nfamily=Fam2 drift=0.05 restore=0.30\nseed=1\nH=0.250 strength=0.004000\ndM(early)  = +0.003777\ndM(late)   = +0.005814\ndelta_hist = -0.002037\nR_hist     = -35.03%\nlate_gain  = +0.002037\nMEASURE_DM_SOURCE_PACKET=PASS\nMEASURE_DM_SOURCE=scripts/wave_direct_dm_matched_history_probe.py\nCONTINUUM_HELPER_SOURCE=scripts/wave_retardation_continuum_limit.py\nOUTPUT_JSON=outputs/wave_direct_dm_h025_fam2_seed1_point_runner_2026_06_04.json\nSUMMARY: WAVE H025 FAM2 SEED1 PASS=28 FAIL=5\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T045945Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170202Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha a5a4e999 differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: WAVE H025 FAM2 SEED1 PASS=28 FAIL=5' vs cache 'SUMMARY: WAVE H025 FAM2 SEED1 PASS=33 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Repeat of the triaged run w-macbookpro90c72-2__3b9476c1__20260918T233119Z.json (identical FAIL lines): All 5 failures are 'artifact present' checks on WAVE_DIRECT_DM_H025 follow-up/control/synthesis notes, all moved to archive/notes/docs/ by the 2026-09-05 densify-freeze migration (#8198); repository hygiene, not an environment fault and not a physics result.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170202Z"
  }
 }

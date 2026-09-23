@@ -19,14 +19,21 @@
  "stdout_sha256": "23412f8e985450a93172482aa081c70168f3b3181af83bf2c5ccfa45b899a515",
  "stdout_tail": " full-history closure under both schedules :: (Counter({(2289, 4232, 18, 16, 0, 10): 32}), ())\nPASS all 32 histories realize exactly the intended ancestry :: ()\n\nALL-24 PROPER-CUBIC COVARIANCE OF THE NEW EGRESS\nPASS the completed-boundary egress closes in all 24 proper-cubic orientations :: (Counter({(769, 772, 6, 6, 0): 16, (769, 772, 10, 6, 0): 4, (769, 772, 6, 10, 0): 4}), ())\nPASS whole-history rotated schedule sensitivity is exactly inherited from Cycle-178 :: Counter({'discovery-alias': 9, 'replay-alias': 8, 'pass': 7})\n\n320 ENDPOINT DELETION / ABSENCE CONTROLS\nPASS all 160 local endpoint-edge deletions are exact :: (160, ())\nPASS all 160 complete-boundary endpoint absences are exact :: (160, ())\n\nACCOUNTING\nNEW_ROLES ('EGRESS_CAP', 'MEMBER5')\nSUPPLIED_RECORDS 3016 Counter({'MARK': 2517, 'P0': 465, 'EGRESS_CAP': 34})\nEXTENSION_DYNAMIC_RECORDS 768\nCABLE_DYNAMIC_RECORDS 465\nTERMINAL_BIT_RECORDS 5\nSTATUS_DYNAMIC_RECORDS 293\nCONSUMER_RECORDS 5\nCOMPILED_CANONICAL_ROWS 16 Counter({'status-tree': 6, 'recurrent-adapter': 4, 'terminal-egress': 2, 'status-conversion': 2, 'consumer': 2})\nNEW_RAW_ROWS 342\nFULL_RAW_ROWS 102338\nALL32_SHAPES Counter({(2289, 4232, 18, 16, 0, 10): 32})\nCOVARIANCE_SHAPES Counter({(769, 772, 6, 6, 0): 16, (769, 772, 10, 6, 0): 4, (769, 772, 6, 10, 0): 4})\nJ01 (-56, 9, 0) J23 (-56, 33, 0) J0123 (-66, 21, 0) JFINAL (-76, 40, 0)\nCONSUMER_SITES ((-89, 3, -30), (-89, 15, -30), (-89, 27, -30), (-89, 39, -30), (-89, 51, -30))\nPASS 12 FAIL 1\nRESULT CYCLE190_OPEN\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T062530Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170156Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha c473f620 differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Repeat of the triaged run w-macbookpro90c72-2__ab3d7451__20260919T094350Z.json (identical FAIL lines): Runner fails on current main because its source note was moved to archive/ by the 2026-09-05 densify-freeze migration (#8198): 'FAIL Cycle-190 review note exists ::'; repository hygiene, not an environment fault and not a physics result.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170156Z"
  }
 }

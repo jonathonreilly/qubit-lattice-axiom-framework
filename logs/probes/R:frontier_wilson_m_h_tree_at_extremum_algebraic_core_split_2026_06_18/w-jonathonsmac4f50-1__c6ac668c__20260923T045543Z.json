@@ -22,15 +22,22 @@
  "stdout_sha256": "cb22e9ecdeeb2298ffa3ab1acf21143d89fe4554ba1c384a7dbd493c11c26bba",
  "stdout_tail": "6305420270533e-13])\n  [PASS][C] B1 numerical Q_W finite at r=0.0  (Q=0.324538510)\n  [PASS][C] B1 numerical Q_W finite at r=0.1  (Q=0.312543415)\n  [PASS][C] B1 numerical Q_W finite at r=0.25  (Q=0.264884872)\n  [PASS][C] current B1 u0 differs from older rounded 0.8776 surface  (u0_B1=0.877681381)\n  [PASS][C] current B1 u0 matches 0.877681381 to displayed precision\n\n----------------------------------------------------------------------------------------\nD. Parent linkage and boundary checks\n----------------------------------------------------------------------------------------\n  [PASS][A] parent all-orders note now points to split artifact\n  [FAIL][A] parent pointer states original row remains conditional\n  [PASS][A] parent pointer names B1 u0 sync\n  [PASS][D] runner itself does not write audit ledgers\n  [PASS][D] runner has no external mass constants\n  [PASS][D] note keeps physical pole outside scope\n  [PASS][D] note keeps nonzero r derivation outside scope\n  [PASS][D] note keeps external matching outside scope\n  RESIDUAL (declared-open): Physical Higgs-pole readout and uniform-channel selection remain open; this split only certifies the diagnostic curvature algebra.\n  RESIDUAL (declared-open): A framework-native nonzero Wilson coefficient r remains open; r is symbolic in the split theorem.\n\nVERDICT: Wilson all-orders extremum algebraic diagnostic core split verified; matching/readout imports remain outside scope.\nBreakdown: A=16 B=12 C=9 D=11 RESIDUAL=2\nTOTAL: PASS=48 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T045543Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170159Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha c6ac668c differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=48 FAIL=1' vs cache 'TOTAL: PASS=49 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Repeat of the triaged run w-jonathonsmac4f50-1__dc7b043a__20260920T081821Z.json (identical FAIL lines): TOTAL: PASS=48 FAIL=1 against the cache's PASS, and the one failing gate is a literal-phrase check whose sentence was reworded. Check D/A asserts 'physical matching content of this older note remains conditional' in the whitespace-flattened parent note docs/WILSON_M_H_TREE_AT_EXTREMUM_ALL_ORDERS_BOUNDED_NOTE_2026-05-08.md. Commit 024a14fd4f (review: split wilson extremum algebraic core) added both the check and that sentence, so the pinned cache legitimately records PASS. Commit 110350f7f7 (review: split wilson mh tree readout scope) then reworded it to 'The matching content of this note remains conditional on the closures (1)-(5) listed above', dropping 'physical' and 'older' and replacing 'admissions' with 'closures (1)-(5)'. The note still says the readout remains conditional, so th",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170159Z"
  }
 }

@@ -22,15 +22,22 @@
  "stdout_sha256": "70ef7b602ca4c472884a3427fa447b72a8e0f846382c2129651ca3d0b78f40d7",
  "stdout_tail": "ope: meta evidence only; no theorem claim and no verdict change.\nPASS parent_note_exists\nPASS parent_runner_exists\nPASS parent_claim_type_expected\nPASS parent_runner_path_expected\nPASS parent_current_criticality_expected\nFAIL parent_current_load_expected :: load=4.822\nFAIL parent_note_hash_expected\nPASS parent_note_hash_matches_ledger\nFAIL parent_runner_hash_expected\nPASS parent_deps_exact :: count=3\nFAIL parent_helper_loader_declared\nPASS parent_current_row_unresolved\nPASS parent_load_bearing_block_present\nPASS parent_load_bearing_contains_witness_phrase_0\nPASS parent_load_bearing_contains_witness_phrase_1\nPASS parent_load_bearing_contains_witness_phrase_2\nPASS parent_load_bearing_contains_witness_phrase_3\nPASS parent_load_bearing_contains_witness_phrase_4\nPASS parent_load_bearing_omits_record_axiom_terms\nPASS parent_runner_exit_zero :: returncode=0\nPASS parent_runner_tally_present\nPASS parent_runner_pass_count_six :: pass_count=6\nPASS parent_runner_fail_count_zero :: fail_count=0\nPASS parent_runner_total_count_six :: total=6\nPASS record_marker_true_exit_zero :: returncode=0\nPASS record_marker_does_not_change_parent_output\nPASS companion_declares_meta_type\nPASS companion_disclaims_new_theorem\nPASS companion_disclaims_verdict_change\nPASS companion_keeps_helper_boundary\nPASS companion_marks_axioms_not_support\n========================================================================\nSUMMARY: PASS=27 FAIL=4\n========================================================================\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T080315Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170156Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 6a970492 differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: PASS=27 FAIL=4' vs cache 'SUMMARY: PASS=31 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Repeat of the triaged run w-macbookpro90c72-2__8c48da25__20260918T231847Z.json (identical FAIL lines): Companion pins (runner lines 27-38, written 0af98613ef 2026-06-05) are stale on main: parent note docs/SCALAR_TRACE_TENSOR_NO_GO_NOTE.md revised 2026-06-16/06-20 (7a550c9053, edcf147b69, 337d374233), sha256 now 0d33f1d8... vs pinned da00887d...; parent runner revised 2026-06-16 and 2026-08-07 (9ed0a48334, N5 execution certificate), now 64b08fe3... vs pinned 5ce8dce5...; parent row load_bearing_score 4.822 vs pinned 7.172; helper_runner_paths now 13 runners vs pinned {scripts/_frontier_loader.py}. parent_note_hash_matches_ledger passes. The only cache commit (0af98613ef, PASS=31 FAIL=0) predates all of these revisions.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170156Z"
  }
 }

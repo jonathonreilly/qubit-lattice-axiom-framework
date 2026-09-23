@@ -22,15 +22,22 @@
  "stdout_sha256": "796b0604a79dbfa3ab80c5b52e9b949765ac3e42ed6fd568636c421824974c3a",
  "stdout_tail": " dep RP phrase present: 'free fermion-sector two-step positivity factor': docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md contains the real phrase\n[PASS] B dep registrability phrase present: 'finitely additive over finite': docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md contains the real phrase\n[PASS] B dep registrability phrase present: 'constant on `K`/CPT': docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md contains the real phrase\n[PASS] B note firewall sentences present: required firewall fragments found in note\n[PASS] B closing language absent: forbidden branch-selection/fork-closure phrases absent\n[PASS] B link inventory exactly two load-bearing links: links=[('`AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md`', 'AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md'), ('`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`', 'REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md')]\n[PASS] B context companions are backticked only: wave companions, occupancy note, and R-D chain are context tokens, not markdown links\n[PASS] B No-promotion statement present: No-promotion statement and status authority sentence found\n\nSUMMARY:\nPASS=23 FAIL=2\nResult: both fork branches are registrable and generically unequal; the fork is registration-blind, leaving branch discrimination to record dynamics.\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T035047Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170157Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha a6719703 differs from the current HEAD e069fe46 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'PASS=23 FAIL=2' vs cache 'PASS=25 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Repeat of the triaged run w-macbookpro90c72-1__eb32cbc5__20260918T212927Z.json (identical FAIL lines): Real failure on main: the B dependency guard requires '2-step blocked transfer matrix' and 'free fermion-sector two-step positivity factor' in docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md, which is now narrowed to the conditional Fock construction Gamma(lambda_-) and disclaims unconditional two-step transfer positivity (PASS=23 FAIL=2 vs cache 25); the note still cites it for the per-channel two-step transfer.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170157Z"
  }
 }

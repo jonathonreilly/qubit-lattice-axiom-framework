@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/relational_letters_multi_qubit_units_single_face_attachment_is_a_fair_coin_2026_09_23.py
+runner_sha256: d2579d8fc67c005e957430ad583206227c21b264e41bb12b3c7792d9d40b2541
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.18
+status: ok
+----- stdout -----
+A. a single face cannot tell the continuation's sign
+[PASS] reversing the circle and the half turn about the growth axis give the same face view up to a rotation of the circle :: for all 24 proper orientations, both circle orientations and all three growth axes: the reversed view is the half-turned view plus a constant, while the correct step is negated by the one and kept by the other
+[PASS] so no deterministic covariant rule continues through a single face, and a randomised one is right with probability at most 1/2 :: a covariant step law is symmetric under t -> -t; no valid step (1, 2, 5 units of 30 degrees, either sign) satisfies t = -t modulo 12; the fair coin over the sign of the missing angle is covariant (the missing angle is the same in all three views, 144 of 144)
+B. what growth needs
+[PASS] corner growth of n units per side has exactly 3(n - 1) single-face attachments, so registration is at most 2^(-3(n - 1)) :: n = 2: 3 attachments, bound 1/8; n = 3: 6 attachments, bound 1/64; n = 4: 9 attachments, bound 1/512; n = 5: 12 attachments, bound 1/4096; in any growth, a unit that extends the formed span along an axis touches the formed region through one face
+[PASS] the covariant fair coin attains the bound: exactly one of its 2^6 sign draws registers the 3 x 3 x 3 grid of units :: the growth makes 6 single-face attachments; registering draws per pattern: [1] over all 48 first-unit patterns, so registration has probability exactly 1/64
+C. rules that break a covariance do better
+[PASS] covariance-breaking rules register the frame in 12 and 6 of the 48 first-unit patterns :: exact over 24 proper orientations and both circle orientations on a 3 x 3 x 3 grid of units
+[PASS] each control keeps one covariance and breaks the other :: copying an in-face sign commutes with the reversal on 144 of 144 views and with the half turn on 0; treating the face as the back side commutes with the half turn on 144 of 144 and with the reversal on 0; each is right on 72 and 72 of the 144 views
+D. the nearest-neighbour premise carries the bound
+[PASS] a unit that reads two layers back sees the step along the growth axis and registers the frame in all 48 patterns :: 48 of 48; the site two layers back is not a neighbour of the unit, so this read is outside local formation
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

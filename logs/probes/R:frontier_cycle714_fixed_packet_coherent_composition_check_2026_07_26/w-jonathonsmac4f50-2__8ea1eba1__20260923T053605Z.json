@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle714_fixed_packet_coherent_composition_check_2026_07_26",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle714_fixed_packet_coherent_composition_check_2026_07_26.py",
+ "seed": 41765,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8ea1eba1",
+ "started_utc": "20260923T053605Z",
+ "elapsed_s": 42.1,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "fb81dfeac9b7da873d94e57765135418ff08dcc24a29f498566facd95e5b262a",
+ "stdout_tail": "external\": {\"final_amplitude\": [0.9999999999999913, -4.554560263873204e-15], \"final_support\": 1, \"maximum_transient_support\": 2, \"sparse_residual\": 9.784431971240087e-15}, \"alternating_external\": {\"final_amplitude\": [0.9999999999999913, -4.554560263873204e-15], \"final_support\": 1, \"maximum_transient_support\": 2, \"sparse_residual\": 9.784431971240087e-15}, \"opposite_alternating_external\": {\"final_amplitude\": [0.9999999999999913, -4.554560263873204e-15], \"final_support\": 1, \"maximum_transient_support\": 2, \"sparse_residual\": 9.784431971240087e-15}, \"vacuum\": {\"final_amplitude\": [0.9999999999999913, -4.554560263873204e-15], \"final_support\": 1, \"maximum_transient_support\": 2, \"sparse_residual\": 9.784431971240087e-15}}, \"maximum_background_residual\": 9.784431971240087e-15, \"maximum_transient_support\": 2, \"semantic_output_basis\": 609356918205826616262145}}, \"route_return_failures\": 0, \"routed_gates\": 2598, \"routed_word_sha256\": \"f56d6b6630801be480e0017a72fe3adfb19c0d64657de498048fd52fe6986956\", \"touched_M2\": 76}, \"same_E_argument\": \"Extend Cycle713 E by the supplied blank packet/head/rotor/control registers. Its retained pointer coordinate is exactly the packet control coordinate. The Cycle713 routed word returns its routing permutation, and the independently executed packet routed word returns its routing permutation, so their literal concatenation implements the checked decoded composition on the extended Cycle713 code space.\"}\nCYCLE714_FIXED_PACKET_COHERENT_COMPOSITION_INCOMPLETE\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T053647Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: last line differs from the pinned cache: run 'CYCLE714_FIXED_PACKET_COHERENT_COMPOSITION_INCOMPLETE' vs cache 'CYCLE714_FIXED_PACKET_COHERENT_COMPOSITION_PASS'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle714_fixed_packet_coherent_composition_check_2026_07_26.txt against the .txt beside this log"
+  ]
+ }
+}

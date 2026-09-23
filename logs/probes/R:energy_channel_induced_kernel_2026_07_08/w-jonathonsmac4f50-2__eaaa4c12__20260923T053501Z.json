@@ -1,0 +1,34 @@
+{
+ "task": "R:energy_channel_induced_kernel_2026_07_08",
+ "type": "runner-reexecution",
+ "lane": "energy",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/energy_channel_induced_kernel_2026_07_08.py",
+ "seed": 41701,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "eaaa4c12",
+ "started_utc": "20260923T053501Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "65e3f56bf25fbc57daad290ad0a8e3996ddc5900a89ba98b367042dbe69c7aab",
+ "stdout_tail": "SPEC-NOTE background-only;sum_hn=H;chi-positive-Lehmann;q=2pi*k/(N/2);no-dynamical-field\nBACKGROUND m=0:chi0=4.08e-28,rescale=7e-16,A=7.66887,B=-17.2571,fit_res=0.0212,valid=zero:Y+fit:Y;m=0.05:chi0=3.44e-28,rescale=1e-15,A=1.45552,B=57.3647,fit_res=0.0286,valid=zero:Y+fit:Y;m=0.2:chi0=2.7e-28,rescale=6.5e-16,A=0.0333771,B=15.9414,fit_res=0.00559,valid=zero:Y+fit:Y;m=0.5:chi0=2.07e-28,rescale=2.6e-16,A=0.00148695,B=4.79926,fit_res=0.000899,valid=zero:Y+fit:Y\nCONTINUITY m=0.2,q=1:pair=5e-12,kernel=9.4e-14,valid=Y;m=0.2,q=2:pair=1.1e-12,kernel=2.4e-14,valid=Y;m=0.5,q=1:pair=1.7e-12,kernel=1.4e-13,valid=Y;m=0.5,q=2:pair=1.4e-12,kernel=3.5e-14,valid=Y\nCHECKS CHECK-01-zero-mode=ok;CHECK-02-small-q-fit=ok;CHECK-03-continuity=ok\nTOTAL PASS elapsed=0.78s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T053502Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run 'TOTAL PASS elapsed=0.78s' vs cache 'TOTAL PASS elapsed=0.73s'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/energy_channel_induced_kernel_2026_07_08.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.py",
+ "seed": 41727,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8ea1eba1",
+ "started_utc": "20260923T053527Z",
+ "elapsed_s": 37.3,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ba83f2250022347a6fee41e34b99267572f6359c6067c001d0d1ce46a3b3b557",
+ "stdout_tail": "scripts/local_generator_source_tournament_cycle228_2026_07_17.py\": \"97fdf54189d7da93099aeab4a9b1dd8501c7262d55493b9fa95bf1c2f5c97a9d\", \"scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py\": \"36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac\", \"scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py\": \"6365d5aed1e70fb9b427ee6fb987879027cc30c818856a992b3fbf9d057e0c1b\", \"scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py\": \"c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b\", \"scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py\": \"472e28c78901368629c8d9d6f614bb8fb3ea003639ac61d480d06941cdf6cb86\", \"scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py\": \"b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae\", \"scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py\": \"9ef0fff433bbf1c96c9b13c5ce79530e01fe705f08c6caf6b60316e20359e011\"}, \"transitive_repo_scripts\": 32, \"untracked_declared_paths\": []}, \"report_sha256\": \"3b680ebc8736cc56780009af8252e0efe1a9db803a163a1ae8534e9edeea7d46\", \"supplied\": [\"Cycle712 target code state and fixed decoded coin/reverse/seam/contact order\", \"three clean endpoint-register M2 per internal seam and blank route work\", \"Cycle704 binder plus Cycle610 actuality/admissibility/law-domain/bank inputs\", \"offline serial gate word and Manhattan route\"]}\nCYCLE713_PHYSICAL_M2_ENDPOINT_INSTRUMENT_BRIDGE_INCOMPLETE\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T053605Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: last line differs from the pinned cache: run 'CYCLE713_PHYSICAL_M2_ENDPOINT_INSTRUMENT_BRIDGE_INCOMPLETE' vs cache 'CYCLE713_PHYSICAL_M2_ENDPOINT_INSTRUMENT_BRIDGE_PASS'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.txt against the .txt beside this log"
+  ]
+ }
+}

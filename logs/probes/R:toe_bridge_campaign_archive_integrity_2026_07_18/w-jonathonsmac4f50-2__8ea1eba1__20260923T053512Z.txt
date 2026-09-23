@@ -1,0 +1,15 @@
+FAIL archive history count :: {'expected': 417, 'observed': 86}
+FAIL archive script count :: {'expected': 469, 'observed': 136}
+PASS every archived path exists
+PASS all archive scripts parse
+FAIL all Python imports resolve inside the archive or external environment :: [('scripts/compact_five_literal_membership_bind_cycle183_2026_07_16.py', 'compact_five_literal_lane_spacing_cycle180_2026_07_16', 'local dependency lies outside archive closure'), ('scripts/physical_signed_row_egress_cycle167_2026_07_16.py', 'physical_signed_row_egress_collision_probe_2026_07_16', 'local dependency lies outside archive closure'), ('scripts/physical_signed_row_egress_cycle167_2026_07_16.py', 'physical_ported_sign_reader_probe_2026_07_16', 'local dependency lies outside archive closure'), ('scripts/physical_signed_row_egress_cycle167_2026_07_16.py', 'physical_joint_stabilizer_update_geometry_probe_2026_07_16', 'local dependency lies outside archive closure'), ('scripts/physical_signed_row_egress_cycle167_2026_07_16.py', 'factorized_commuting_signed_membership_probe_2026_07_16', 'local dependency lies outside archive closure'), ('scripts/physical_signed_row_egress_cycle167_2026_07_16.py', 'physical_downstream_signed_row_decoder_probe_2026_07_16', 'local dependency lies outside archive closure')]
+PASS import resolver rejects a deleted or misspelled dependency
+PASS every historical runner reference resolves
+PASS bare runner-reference resolver rejects a missing target
+FAIL archive path digest :: {'expected': '981c928ffdc00f4a333b8c6b61f86c54b385c67af4f1efb426df12287e411584', 'observed': '6a0f639847d3b0119a4e0b1a027365804b13c742f056c2edcbd633ccd1679ea7'}
+FAIL archive content digest :: {'expected': '6b293b65e11351fc9895c268f4d0226f4fbde3a9e1e8beb8f93fcc2d86060d9b', 'observed': '2707bee2aac2a2522d7cb8b7232be2e287b9623fb160946d03bf2a487cf8586f'}
+PASS canonical notes exist and declare bounded theorem scope
+PASS every canonical runner reference resolves
+PASS branch state and runner cache are absent
+SUMMARY history=86 scripts=136 PASS=8 FAIL=5
+BOUNDARY: static package integrity only; no runner PASS, physics claim, audit verdict, or constitutional conclusion is created

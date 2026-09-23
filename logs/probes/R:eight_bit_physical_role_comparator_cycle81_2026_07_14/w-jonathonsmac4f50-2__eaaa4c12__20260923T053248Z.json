@@ -1,0 +1,32 @@
+{
+ "task": "R:eight_bit_physical_role_comparator_cycle81_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "eight",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/eight_bit_physical_role_comparator_cycle81_2026_07_14.py",
+ "seed": 41568,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "eaaa4c12",
+ "started_utc": "20260923T053248Z",
+ "elapsed_s": 70.5,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "dd79884bdbaa473115b65957651aa42bc598cb4308baf9504d446bb2a17ea3ee",
+ "stdout_tail": "in is disjoint from selected recurrence union\nPASS B13 provisional union has 4,564 raw rows\nPASS B14 provisional union is output-single-valued\n\n===============================================================================\nC - All 65,536 physical comparisons and reachable states\n===============================================================================\nPASS C01 first-difference census is exact :: Counter({0: 32768, 1: 16384, 2: 8192, 3: 4096, 4: 2048, 5: 1024, 6: 512, 8: 256, 7: 256})\nPASS C02 all 131,072 reachable states have exact frontier :: []\nPASS C03 all-pairs graph has exactly 65,536 edges :: 65536\nPASS C04 every pair has exactly one terminal\nPASS C05 exactly the 256 equal pairs reach MATCH\nPASS C06 no state exposes more than one write\nPASS C07 rejected one-rail design would corrupt 32,640 pairs\n\n===============================================================================\nD - Covariance and supplied-harness boundary\n===============================================================================\nPASS D01 all 120 transformed controls have exact frontier :: []\nFAIL D02 note exists and carries no authority\nFAIL D03 note says the comparator harness is supplied\nFAIL D04 note names the surviving seed-growth residual\nFAIL D05 note names the row-port next step\nFAIL D06 note denies axiom consequence\n\nOUTPUT_ROLES=113 ACTIVE_ROLES=120 FULL_ROLES=134 BITS=8 RESERVED=122\nCOMPARATOR_CANONICAL=3 COMPARATOR_RAW=56 PAIR_STATES=131072 PAIR_EDGES=65536\nSUMMARY: 32 PASS / 5 FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T053359Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle714_full34_fixed_packet_independent_route_replay_2026_07_26",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle714_full34_fixed_packet_independent_route_replay_2026_07_26.py",
+ "seed": 41807,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8ea1eba1",
+ "started_utc": "20260923T053647Z",
+ "elapsed_s": 8.0,
+ "returncode": 1,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6e45dabaa553297937078cb00d37074a4217756867b2848a64e198016be5bfc5",
+ "stdout_tail": " 60,\n    \"endpoint_target_decode_synth_Sdg\": 19,\n    \"endpoint_target_decode_synth_V_Sdg\": 14,\n    \"endpoint_target_decode_synth_X_H\": 14,\n    \"endpoint_target_decode_synth_X_S\": 14,\n    \"endpoint_target_decode_synth_Z_S\": 12,\n    \"endpoint_target_decode_synth_clear_VX_CNOT\": 26,\n    \"endpoint_target_decode_synth_clear_W_CNOT\": 160,\n    \"endpoint_target_encode_inverse_synth_CZ_CNOT\": 102,\n    \"endpoint_target_encode_inverse_synth_CZ_H\": 204,\n    \"endpoint_target_encode_inverse_synth_H\": 28,\n    \"endpoint_target_encode_inverse_synth_SWAP_CNOT\": 60,\n    \"endpoint_target_encode_inverse_synth_Sdg\": 19,\n    \"endpoint_target_encode_inverse_synth_V_Sdg\": 14,\n    \"endpoint_target_encode_inverse_synth_X_H\": 14,\n    \"endpoint_target_encode_inverse_synth_X_S\": 14,\n    \"endpoint_target_encode_inverse_synth_Z_S\": 12,\n    \"endpoint_target_encode_inverse_synth_clear_VX_CNOT\": 26,\n    \"endpoint_target_encode_inverse_synth_clear_W_CNOT\": 160,\n    \"packet_CNOT\": 295,\n    \"packet_H\": 94,\n    \"packet_T\": 188,\n    \"packet_TD\": 141,\n    \"route_swap\": 18278\n  },\n  \"scientific_scope\": \"independent symbolic routing/wire-label replay only; the packet candidate's separate Boolean/action checks carry the semantic claim; the independently reconstructed endpoint word is required to match the repaired Cycle713 literal word exactly\",\n  \"shared_pointer_exactly_once_in_packet_map\": true,\n  \"shared_pointer_site\": [\n    -8,\n    -1,\n    1\n  ],\n  \"source_closure\": false\n}\nCYCLE714_FULL34_PACKET_ROUTE_REPLAY_FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T053655Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run 'CYCLE714_FULL34_PACKET_ROUTE_REPLAY_FAIL' vs cache 'CYCLE714_FULL34_PACKET_ROUTE_REPLAY_PASS'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle714_full34_fixed_packet_independent_route_replay_2026_07_26.txt against the .txt beside this log"
+  ]
+ }
+}

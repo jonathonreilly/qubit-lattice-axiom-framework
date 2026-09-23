@@ -1,0 +1,58 @@
+
+===============================================================================
+A - Literal fixed-word writer and table partition
+===============================================================================
+FAIL A01 note exists
+PASS A02 writer is 13 canonical / 312 proper-cubic raw rows :: canonical=13 raw=312
+PASS A03 completion is four canonical / 96 raw rows :: canonical=4 raw=96
+PASS A04 full 8,048-row law is single-valued and alphabet-closed
+PASS A05 extension adds zero supplied records to the exact 264 boundary
+PASS A06 eight physical records decode literal R_B11=10010100 :: (1, 0, 0, 1, 0, 1, 0, 0)
+PASS A07 centre is a literal inherited Cycle-93 H1 comparator :: (((-1, 0, 0), 'H1'), ((0, -1, 0), 'H1'), ((0, 0, -1), 'H0'), ((0, 0, 1), 'H1'), ((0, 1, 0), 'H1'))
+PASS A08 inherited R_LC row has exactly two R_A31 relay images :: {(5, 5, 3), (4, 5, 4)}
+
+===============================================================================
+B - All-current-rows asynchronous composition
+===============================================================================
+PASS B01 exact variable corpus is 46 inherited plus 23 new writes
+PASS B02 every local subset has no non-expected enabled target :: frozenset()
+PASS B03 all schedules give one complete 69-write terminal :: states=73656 edges=430754 terminals=1 max=11
+PASS B04 next front never precedes all eight data records plus status :: ()
+PASS B05 terminal carries the exact fresh post-completion R_B11 token
+PASS B06 terminal exposes only the inherited repaired-rail front :: {(-2, 1, 1): frozenset({'R_C02'})}
+
+===============================================================================
+C - 96-prefix rail product and late-alias control
+===============================================================================
+PASS C01 all 96 rail appends remain exact singleton fronts :: []
+PASS C02 extension is rail-separated and has zero 97-prefix aliases :: distance=7 hits=[]
+PASS C03 exact locality product is 7,144,632 states / 48,854,114 edges :: states=7144632 edges=48854114
+PASS C04 late control grows 101 complete slices / 1,212 records :: []
+
+===============================================================================
+D - Every word corruption and the H0 reject control
+===============================================================================
+PASS D01 all eight flips plus wrong VALID/READY stop before the writer :: []
+PASS D02 corrupt graph census is executable and pinned :: [(1080, 3522, (30,)), (920, 2938, (29,)), (760, 2354, (28,)), (520, 1438, (27,)), (120, 238, (20,)), (200, 490, (20,)), (80, 152, (18,)), (60, 109, (17,)), (40, 66, (16,)), (20, 23, (15,))]
+PASS D03 all ten corrupt terminals retain 96 exact rail appends :: []
+PASS D04 H0 control retains exact STATUS->AUX->A_0_0 reject projection :: []
+PASS D05 exhausted H0 control has two exact partial terminals and no completion :: states=44 edges=97 sizes=(6, 7) bad=()
+
+===============================================================================
+E - Proper-cubic covariance and bounded scope
+===============================================================================
+PASS E01 all 193,152 proper-cubic raw images preserve output :: []
+PASS E02 correct/corrupt/H0 terminal corpora expose only rotated next rail :: []
+FAIL E03 note names selected output/payload writer
+FAIL E04 note names STREAM_COMPLETION_TO_REUSABLE_CONE seam
+FAIL E05 note states Cycle 114 contributes zero rows
+FAIL E06 note carries the remote N1-N8 discipline
+FAIL E07 note makes no generic addressability claim
+FAIL E08 note makes no axiom addition
+PASS E09 Cycle 112 writes only runner and review note
+
+WRITER_CANONICAL=13 WRITER_RAW=312 COMPLETION_CANONICAL=4 COMPLETION_RAW=96
+GROWN=69 UNION_RAW=8048 LOCAL_STATES=73656 LOCAL_EDGES=430754
+PRODUCT_STATES=7144632 PRODUCT_EDGES=48854114
+PASS=25 FAIL=7
+RESULT=FAIL

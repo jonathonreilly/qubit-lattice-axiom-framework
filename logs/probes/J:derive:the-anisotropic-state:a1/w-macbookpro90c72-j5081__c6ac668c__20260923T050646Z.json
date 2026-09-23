@@ -1,0 +1,32 @@
+{
+ "task": "J:derive:the-anisotropic-state:a1",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-j5081",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/the-anisotropic-state/w-macbookpro90c72-j5081/check.py",
+ "seed": 40006,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c6ac668c",
+ "started_utc": "20260923T050646Z",
+ "elapsed_s": 1.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL the anisotropy balance has no global minimum for any beta (explicit runaway points both ways); a metastable planar state below threshold, none towards chains; the anisotropic walk stays massless and combines with the alternation exactly, whose threshold it raises along its fast axes"
+ },
+ "review": "Exact (sympy, integer-scaled matrices): the sea term is concave (pointwise second derivative (8a^2X^2+28abXY+2b^2Y^2)/(2f^{3/2})), its second-order coefficient is chi_a + 2<|s|> by a cyclic-sum identity, F(eps) = 36 beta eps^2 + E_sea falls below F(0) beyond explicit eps both towards chains and planes for every beta (no global minimum), the critical points solve R(eps) = 72 beta, the anisotropic walk keeps its eight massless species, anisotropy and alternation combine as E^2 = sum t_j^2(sin^2 k_j + sinh^2 delta_j), and the per-axis alternation threshold t_j^2<1/E>/4 diverges along the chains; executed zone averages (floating point): E'''(0) = -6.94, R_min = 2.593 at eps = -0.97, a metastable planar state for 0.036 < beta < 0.059, none towards chains, and mutual promotion of the two instabilities.",
+ "what": "DERIVATION, independent attempt 1 of 2: Below the anisotropy threshold: where does the lattice settle, and what does the walk look like there?. SETTING (source-link direction, blocks 53-89 of the admissibility induced-law campaign: open PRs #8568 #8570 #8571 #8573 #8578 #8579 #8581 #8590 #8591 #8592 #8593 #8595 #8596 #8597 #8598 #8599 #8601 #8602 #8603 #8605 #8606 #8607 #8608 #8611 #8612 #8613 #8614 #8615 #8626 #8628 #8632 #8652 #8657 #8660 #8662 #8665 and block 89 'the unit of rate decides the alternation's thresholds' when opened; decision record #8572 with FORK_PROBE_source_link_20260922.md; the moving-records reading of blocks 39-52; ALL supplied clauses, nothing adopted; read the relevant notes on their PR branches before starting - git fetch origin <branch>; git show origin/<branch>:<note>; the 2026-09-23 harvest's issues #8616-#8673 carry the worker results this problem builds on). TASK: block 88 (#8665): the uniform bond rates go anisotropic (a traceless modulation (2, -1, -1) of the three axes' rates) when beta < chi_a/72 with rates linear in the law's variable, (chi_a + 2 <|s|>)/72 in log rates (block 89); the walk then has E^2 = e^{4 eps} s_x^2 + e^{-2 eps}(s_y^2 + s_z^2). (a) The balance at all strengths (exact zone integrals; the law quadratic in log rates): eps*(beta), and whether it runs away to decoupled chains or planes. (b) The walk's speeds and the eight species in the anisotropic state; a rest energy? (c) Can the anisotropy and the alternation coexist, and which comes first in the plane (alpha, beta)? HIT: (a) exact. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/the-anisotropic-state/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/the-anisotropic-state/<name>/check.py\"",
+ "stdout_sha256": "232e0d9fca5a9c71fbeb2f846e6057a2fa59835d4c1c6c736124326062a568c8",
+ "stdout_tail": "ternation threshold <1/|s|>/4 = 0.2276\nnote: conversely an alternation of equal delta on the three axes raises the anisotropy's second-order coefficient (the mass sum_j t_j^2 sinh^2 delta also responds to the anisotropy): delta 0.1: 4.3459 (beta 0.06036); delta 0.3: 4.8841 (beta 0.06784); delta 0.5: 5.8001 (beta 0.08056), against 4.2703 at delta = 0\nruntime 0.4 s\nSUMMARY: PARTIAL the anisotropy balance has no global minimum for any beta (explicit runaway points both ways); a metastable planar state below threshold, none towards chains; the anisotropic walk stays massless and combines with the alternation exactly, whose threshold it raises along its fast axes\nHIT: (a) the balance F(eps) = 36 beta eps^2 - <sqrt(e^{4eps} s_x^2 + e^{-2eps}(s_y^2 + s_z^2))> has a concave sea term and, for every beta, falls below F(0) beyond eps = max(1, (3pi/8)(36beta + sqrt3)) towards chains and below -max(1, 3pi(36beta + sqrt3)) towards planes: no global minimum; its critical points solve R(eps) = 72 beta, R = -E_sea'/eps (executed: a metastable planar state for 0.0360 < beta < 0.0593, none on the chains side).\nHIT: (b, c) the anisotropy keeps all eight species massless at speeds e^{2eps}, e^{-eps}, e^{-eps}; with the alternation E^2 = sum_j t_j^2 (sin^2 k_j + sinh^2 delta_j) exactly; along axis j the alternation sets in below alpha + 2 beta = t_j^2 <1/E_eps>/4, unbounded along the runaway to chains; executed, each instability raises the other's threshold, so they coexist whichever comes first.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j5081",
+  "at_utc": "20260923T050647Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

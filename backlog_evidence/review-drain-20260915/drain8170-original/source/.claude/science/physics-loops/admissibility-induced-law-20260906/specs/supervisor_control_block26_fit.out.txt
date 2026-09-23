@@ -1,0 +1,21 @@
+sphere formation law, aligned start, periodic L x L plane, m = projection of the plane-averaged record on the initial direction (|m| for runs without it)
+ beta    L      T  m(500)  m(5000)    m(T)  exp[500,5000]  exp[5000,T]  exp[500,T]  gamma_lin
+   12  512  20000  0.8951   0.8715  0.8515         0.0120       0.0154      0.0145    0.01117  sim_b12_L512_T20000.txt
+   24  512  20000  0.9483   0.9367  0.9268         0.0055       0.0071      0.0066    0.00566  sim_b24_L512_T20000.txt
+    3  512  20000  0.5118   0.3863  0.2735         0.1181       0.2629      0.1864    0.04084  sim_b3_L512_T20000.txt
+    6  256  20000  0.7827   0.7322  0.6711         0.0358       0.0399      0.0324    0.02170  sim_b6_L256_T20000.txt
+    6  512  20000  0.7826   0.7349  0.6823         0.0275       0.0498      0.0395    0.02170  sim_b6_L512_T20000.txt
+   12  512  20000  0.8941   0.8673  0.8567         0.0132       0.0076      0.0103    0.01117  ref_sphere_b12_L512.txt
+    6  128  20000  0.7726   0.5797  0.7521         0.1111      -0.2061      0.0068    0.02170  ref_sphere_b6_L128.txt
+    6   32  20000  0.7737   0.1459 -0.4303         0.5261          nan         nan    0.02170  ref_sphere_b6_L32.txt
+    6   64  20000  0.7943   0.6923  0.7117         0.0535      -0.0235      0.0344    0.02170  ref_sphere_b6_L64.txt
+
+linear model (theta = average of predecessors + Gaussian noise of variance A(3 beta)/(3 beta) per component), v_t = mean |theta|^2 / 2
+  t=   500  v_sim=0.19359  v_pred=0.19246  exp(-v_sim)=0.8240   ref_linear_b6_L512.txt
+  t=  3000  v_sim=0.24063  v_pred=0.23134  exp(-v_sim)=0.7861   ref_linear_b6_L512.txt
+  t=  5500  v_sim=0.23655  v_pred=0.24449  exp(-v_sim)=0.7893   ref_linear_b6_L512.txt
+  t=  8000  v_sim=0.24530  v_pred=0.25262  exp(-v_sim)=0.7825   ref_linear_b6_L512.txt
+  t= 10500  v_sim=0.25121  v_pred=0.25852  exp(-v_sim)=0.7779   ref_linear_b6_L512.txt
+  t= 13000  v_sim=0.24965  v_pred=0.26316  exp(-v_sim)=0.7791   ref_linear_b6_L512.txt
+  t= 15500  v_sim=0.27172  v_pred=0.26697  exp(-v_sim)=0.7621   ref_linear_b6_L512.txt
+  t= 18000  v_sim=0.26744  v_pred=0.27022  exp(-v_sim)=0.7653   ref_linear_b6_L512.txt

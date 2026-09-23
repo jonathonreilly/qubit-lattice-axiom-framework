@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16.py
+runner_sha256: 94d81cac39baf54ef7ae701a8436b3bd891652dc8cae1471e0f3c1d7379006f0
+input_fingerprint_sha256: 81a39415f0f66940c1ebfbe63cc92b9366243ced4f79cd40329d3f4d6e188aec
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 2.62
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_IN_LEVEL_TIME_GAIN_ONE_SPIN_WAVES_LOCAL_LIMIT_CONSTANT_FINITE_PLANES_FORGET_AND_THE_SIMULATED_ALGEBRAIC_DECAY_OF_THE_INITIAL_PLANE_MEMORY_BOUNDED_THEOREM_NOTE_2026-09-16.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
+PASS: A1 the note carries its claim_id once
+PASS: A2 the axioms memo carries the four sentences quoted under Premises
+PASS: A3 block 01's note (on main) carries its claim_id and the rule's product form
+PASS: A4 all declared inputs exist
+PASS: B1 T1: for the sphere kernel with concentration kappa, E[w] = coth kappa - 1/kappa =: A(kappa) and E[w^2] = 1 - 2A/kappa (w the cosine to the mean direction), so E[s|S] = A u and E[s s^T|S] = (A/kappa) I + (1 - 3A/kappa) u u^T; the density against the uniform law on the sphere is (kappa/sinh kappa) e^{kappa s.u}
+PASS: B2 T1: A'(kappa) = 1/kappa^2 - 1/sinh^2 kappa; sinh^2 kappa = sum_{n>=1} 2^{2n-1} kappa^{2n}/(2n)! has the terms kappa^2 + kappa^4/3 + positive, so A'(kappa) <= 1/(3 + kappa^2) and A(kappa) < kappa/3; exact enclosures confirm A(kappa) < kappa/3 at ten rational points from 1/10 to 72
+PASS: B3 T1: the one-step magnetization from the aligned plane is A(3 beta): in [8888, 8889]/10^4 at beta = 3, [9444, 9445]/10^4 at 6, [9722, 9723]/10^4 at 12, [9861, 9862]/10^4 at 24 (exact enclosures); the one-step transverse second moment is 2A(3 beta)/(3 beta)
+PASS: C1 T2: beta s.(s_1 + s_2 + s_3) = 3 beta - (beta/2) sum_i |theta - theta_i|^2 + O(4) in transverse coordinates; the minimizer is the average of the three (gain one) with Hessian -3 beta I; the exact one-step transverse variance is A(3 beta)/(3 beta) per component
+PASS: D1 T3: p_k(-a, -b) = k!/(a! b! (k-a-b)!)/3^k by direct enumeration of the 3^k paths for k <= 6, and P_k = sum_y p_k(y)^2 (the return sum)
+PASS: D2 T3: for k <= 150 the exact return sums satisfy 3 sqrt3/(4 pi k) - 1/k^2 - (5/(2k)) e^{-k/4} <= P_k <= 3 sqrt3/(4 pi k) + 27/k^2 + e^{-sqrt(k)/7}, with sqrt3, pi and the exponentials enclosed rationally; k^2 |P_k - 3 sqrt3/(4 pi k)| stays below 1
+PASS: D3 T3: 1 - u = (4/9)[sin^2(theta1/2) + sin^2(theta2/2) + sin^2((theta1 - theta2)/2)], the quadratic part is theta^T M theta with det M = 1/27, the Gaussian integrals are 3 sqrt3 pi/k, (3 sqrt3 pi/k)(2/k^2) and 1458 pi/k^3; sum_{k<=t} P_k >= (3 sqrt3/(4 pi)) H_t - 6/25 for t <= 150 exactly and the tail beyond 150 costs at most 1/100, giving the constant 1/4 for every t; the upper error sum 27 pi^2/6 + 98 is below 150
+PASS: E1 T4: on the one-site periodic plane the chain s_{t+1} ~ K_beta(.|3 s_t) has E[s_{t+1}.e | s_t] = A(3 beta)(s_t.e), so m_t = A(3 beta)^t exactly
+PASS: E2 T4: the kernel's density against the uniform law on the sphere is at least 2 kappa/(e^{2 kappa} - 1) >= 2 kappa e^{-2 kappa}, decreasing in kappa; on an L x L plane the level kernel has density at least (6 beta/(e^{6 beta} - 1))^{L^2}, a uniform minorization
+PASS: E3 T5: gamma(beta) = (3 sqrt3/(4 pi)) A(3 beta)/(3 beta) lies in [408, 409]/10^4 at beta = 3, [216, 217]/10^4 at 6, [1116, 1117]/10^5 at 12, [566, 567]/10^5 at 24 (exact enclosures)
+PASS: E4 side-by-side: at the six-axis weights (e^beta, e^-beta, 1) the three deviations are (e^{-3 beta} + 4)/(e^{3 beta} + e^{-3 beta} + 4), (e^{-beta} + 4)/(e^{beta} + e^{-beta} + 4), (e^{-2 beta} + e^{beta} + e^{-beta} + 2)/(e^{2 beta} + e^{-2 beta} + e^{beta} + e^{-beta} + 2); the aligned-triple deviation is below 1/1600 at beta = 3 and below 1/10^7 at beta = 6
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the kernel's moments and normalizer symbolically; the bound A(kappa) < kappa/3 at ten rational points by exact enclosure; the second-order expansion and its minimizer
+per_site: executed — the one-site chain m_t = A(3 beta)^t; the minorization identities; the six-axis deviations at (e^beta, e^-beta, 1) in closed form with exact enclosures at beta = 3, 6
+per_mode: executed — the trinomial path identity by enumeration for k <= 6; the return sums P_k exactly for k <= 150 against the two-sided bounds with the constant 3 sqrt3/(4 pi); the Gaussian integrals of the proof
+per_block: executed — sum_{k<=t} P_k >= (3 sqrt3/(4 pi)) H_t - 3 for t <= 150; the exponent gamma(beta) enclosed at four couplings
+lattice_wide: T1-T5 proved for every beta > 0; the nonlinear decay on the infinite plane simulated at beta = 3, 6, 12, 24 (control and refuter outputs), not proved
+PASS: G1 the five N5 resolution lines are printed
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

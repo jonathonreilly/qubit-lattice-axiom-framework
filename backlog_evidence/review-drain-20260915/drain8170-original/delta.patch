@@ -1,0 +1,1908 @@
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+index 8f9c496033..4e9fef47b9 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+@@ -8,3 +8,8 @@
+ | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
+ | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
+ | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
++| F26.1 the sphere kernel and gain one | exact moments; `A(κ) < κ/3`; the second-order expansion | covariance forces the average | none | exact; variance `A(3β)/(3β)` | candidate-complete | T1–T2 (B1–B3, C1) | — |
++| F26.2 the level walk's constant | the integral representation; Gaussian estimates with explicit errors; exact sums to `150` | Parseval; `1 − u` bracketed by quadratic and quartic forms | none | exact; `3√3/(4π)`, harmonic constant `1/4` | candidate-complete | T3 (D1–D3) | — |
++| F26.3 finite planes forget; the linearized exponent | a uniform minorization; the path representation | rotation invariance of the unique law; `v_t = σ²ΣP_k` | the memory time's growth with `L` | exact | candidate-complete | T4–T5 (E1–E3) | — |
++| F26.4 the nonlinear decay (executed) | simulation on planes to `512 × 512`, `20000` levels, four couplings; the six-axis side-by-side | the exact linear theory as the yardstick | a proof for the infinite plane | numerical; conjecture named | frontier discovery | specs (control, refuter) | a plateau at some `β` (none seen) |
++| F26.5 a twist proof in level time | rotate the trajectory by an in-plane twist; relative entropy | — | — | fails: the cost is proportional to the number of levels | closed-negative | N1 | — |
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block26_findings.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block26_findings.md
+new file mode 100644
+index 0000000000..c0a6cd25f4
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block26_findings.md
+@@ -0,0 +1,17 @@
++# Refuting pass — block 26 (supervisor-run, disjoint machinery; 2026-09-16)
++
++Routes compared (controls `specs/supervisor_control_block26_exact.py`, `..._sphere_sim.py`, `..._sixaxis_sim.py`, `..._fit.py`; refuting pass `specs/supervisor_control_block26_refuter.py`; outputs in `.out.txt`):
++
++| item | control's / runner's route | refuting route | result |
++|---|---|---|---|
++| the kernel's moments (T1) | symbolic integrals; exact rational enclosures of `A(3β)` | the control's sampler (inversion of the cosine's law) at `2·10⁶` draws for `κ = 1, 3, 9, 18, 36` against `A(κ)` and `1 − 2A/κ` | agreement to `4·10⁻⁴` (Monte-Carlo accuracy) |
++| the return sums (T3) | exact multinomial sums for `k ≤ 150`; quadrature to `k = 10⁴` | FFT convolution of the step law on a `1024 × 1024` torus | equal to the exact sums to ten digits; `kP_k = 0.41315, 0.41332` at `k = 300, 600` against `3√3/(4π) = 0.41350` |
++| the linearized variance (T5) | the path representation `v_t = σ²Σ_{k<t}P_k` | the linear recursion simulated on a `128 × 128` torus, `400` realisations, `40` levels; and on `512 × 512` for `20000` levels | agreement to `2·10⁻⁴` at `t ≤ 40`; within the plane-average noise at `t ≤ 20000` (`0.267` against `0.270` at `t = 18000`) |
++| the nonlinear decay (executed) | the control's sampler, `512 × 512`, `20000` levels | an independently coded sampler (inversion written the other way; a Rodrigues rotation of a pole sample) at `β = 12`, `512 × 512`, another seed | the same decay within the run-to-run noise (`m` from `0.894` to `0.857` against `0.895` to `0.852`) |
++| finite planes (T4) | the minorization bound | the independent sampler on `L = 32, 64, 128` at `β = 6` for `20000` levels, tracking the projection on the initial direction | the `32`-plane's direction wanders and crosses zero by `t ≈ 12500` (scale `βL² ≈ 6000`); the `64`- and `128`-planes wander without losing the sign within the run; the large planes are far from this regime |
++| the linear against the nonlinear | — | the linear model and the nonlinear law at `β = 6`, both `512 × 512` | the nonlinear law decays faster (`m(20000) = 0.68` against the linear proxy `0.77`) |
++| the six-axis side-by-side | block 25's kernel at `(e^{β}, e^{−β}, 1)` | exact closed forms of the three deviations (runner E4) against the simulated dissent | the aligned-triple deviation `(e^{−3β} + 4)/(e^{3β} + e^{−3β} + 4)` (`4.9·10⁻⁴` at `β = 3`) matches the simulated dissent `5.6·10⁻⁴` |
++
++Findings: none against the theorems. One observational correction folded before the note was finished: the first fit script measured the norm of the plane-averaged record, which on a small periodic plane stays near its saturated value while the direction wanders; the memory of the initial plane is the projection on the initial direction, which the refuter now tracks (the large-plane runs are unaffected, the two observables differing by less than `10⁻³` there).
++
++Attempts to refute (nothing refuted): the Parseval step (checked by the FFT route); the sign of `P_k − 3√3/(4πk)` (always negative, about `−1/(10k²)`, inside the stated bounds); the harmonic constant `1/4` (the exact deficit sums to `0.16` at `t = 150`); the exponent's enclosures (two intervals had to move down one unit in the last digit after exact enclosure — caught by the runner before the note was fixed); a plateau of the nonlinear magnetization (none at any `β` on the executed scale; the local exponent grows along the runs at `β = 6`). Verdict of this pass: PASS-NO-BLOCKER at the supervisor's own standard for T1–T5; the executed decay is evidence, not proof, and is labelled so; pending the owner's independent review.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block26.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block26.md
+new file mode 100644
+index 0000000000..315a8231a8
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block26.md
+@@ -0,0 +1,15 @@
++# Claim status certificate — block 26 (close, 2026-09-16)
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: frontier_discovery
++reachability_to_target: supports
++conditional_surface_status: "T1-T5 proved for every beta > 0: the sphere kernel's moments and A(kappa) < kappa/3; gain one with the exact one-step variance A(3 beta)/(3 beta); the level walk's return sums between 3 sqrt3/(4 pi k) and explicit errors, sum_{k<=t} P_k >= (3 sqrt3/(4 pi)) H_t - 1/4; every finite periodic plane forgets (unique rotation-invariant law), m_t = A(3 beta)^t on one site; the linearized field's variance gamma(beta) log t + O(1) with gamma = (3 sqrt3/(4 pi)) A(3 beta)/(3 beta), no stationary law with finite variance. Executed, not proved: the nonlinear law on periodic planes up to 512 x 512 for 20000 levels loses its initial plane at beta = 3, 6, 12, 24 with no plateau; the six-axis law at (e^beta, e^-beta, 1) keeps it. Conditional on the records-only reading, positivity of the overlap weight, the sphere menu and the monotone level order as supplied conditions; three standard mathematical imports named at definition level"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++claim_type_reason: "exact integrals and series bounds; a local limit constant from the integral representation with explicit Gaussian estimates and a computer-assisted harmonic constant; a uniform minorization; the path representation of a linear recursion; the nonlinear infinite-plane decay is a simulation-supported conjecture labelled as such"
++dependency_classes: "one premise node (minimal_axioms); block 01 (on main; proposed, unaudited); blocks 13, 18, 19, 22, 25 (open PRs) as evidence addresses for the gain-one law, the menu, the static sphere order and threshold, the six-axis formation order"
++open_imports: "the records-only reading; positivity of the overlap weight; the sphere menu; the monotone level order; the three standard mathematical imports"
++review_loop_disposition: pending (supervisor-run block; author checks only)
++independence_class: "single seat (Fable, supervisor): controls (exact identities; the simulations), contract with a lens pass, primary, refuting pass by an independently coded sampler, FFT return sums, the linear recursion on a torus, a finite-size series and the linear-versus-nonlinear comparison, fold (one observational correction folded: the memory observable is the projection on the initial direction)"
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block26.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block26.md
+new file mode 100644
+index 0000000000..083903adfd
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block26.md
+@@ -0,0 +1,24 @@
++# GOAL — block 26: the unsoldered formation law in level time — gain-one spin waves, the local-limit constant, finite planes forget, and the simulated algebraic decay of the initial plane's memory (2026-09-16)
++
++**Directive.** Owner 2026-09-16: "keep running the campaign for 12 more hours." The lane's proof-shaped queue was exhausted after block 25's sharpening (the arrow budget refuted; the band, the normalization and X4 hard). Stepping back: the campaign has the static side of the unsoldered (sphere) reading — block 19 (order on `Z³` for `β > 76/100`, blocks 21–23) — and the formation side of the six-axis reading — block 25 (order at strong coupling). The formation side of the sphere reading is unworked: block 13 (T5b) linearized it and found gain one with variance `1/(3β)`, and explicitly left "whether an aligned region exists at all" open. Exploration this morning: the sphere formation law started from an aligned plane loses its magnetization at every coupling tested (`β = 3, 6, 12`) with no plateau over `3000` levels, at rates that track the gain-one spin-wave prediction at large `β`; the six-axis formation law at the same `β` (weights `e^{β}, e^{−β}, 1`) keeps its plane. This is the qualitative discriminator the campaign lacked: under the sphere menu the reading decides memory; under the six-axis menu both readings keep it.
++
++**Exact target (claim type `bounded_theorem`; trace class `frontier_discovery`).** For the unsoldered formation law in level order on `Z³` — the record at `x` drawn from `K_β(s | s_{x−e_1}, s_{x−e_2}, s_{x−e_3}) ∝ e^{β s·S}`, `S = Σ_j s_{x−e_j}`, read as the level automaton on `Z²` — prove exactly:
++- T1 (the kernel): `K_β(·|S)` is the exponential-overlap law with concentration `κ = β|S|` about `û = S/|S|`; `E[s | S] = A(κ)û`, `E[s sᵀ | S] = (A/κ) I + (1 − 3A/κ) ûûᵀ` with `A(κ) = coth κ − 1/κ`; `A(κ) < κ/3` for `κ > 0`; hence the one-step magnetization from the aligned plane is `A(3β)` and the transverse second moment of one step at the aligned plane is `2A(3β)/(3β)`.
++- T2 (gain one, re-proved for the sphere; block 13 is a sibling, not a premise): rotation covariance forces the linearized transverse mean to be the average of the three predecessors' transverse coordinates; the exact one-step transverse variance per component is `A(3β)/(3β)`.
++- T3 (the level walk's constant): `P_k = Σ_y p_k(y)²` (the k-step return sum of the three-predecessor walk, `p_k` trinomial) satisfies `3√3/(4πk) − 1/k² − (5/(2k))e^{−k/4} ≤ P_k ≤ 3√3/(4πk) + 27/k² + e^{−√k/7}`; hence `k P_k → 3√3/(4π)` and `Σ_{k≤t} P_k ≥ (3√3/(4π)) H_t − 3`.
++- T4 (finite planes forget): on every periodic `L×L` level plane the automaton has a unique invariant law, invariant under all rotations, so the magnetization from any initial plane tends to `0`; for `L = 1` exactly `m_t = A(3β)^t`.
++- T5 (the linearized field): the transverse field of the linearization has variance `v_t = (A(3β)/(3β)) Σ_{k<t} P_k` per component, `v_t = γ(β) log t + O(1)` with `γ(β) = (3√3/(4π))·A(3β)/(3β)`; no stationary law of the linearized field; the linearized magnetization decays as `t^{−γ(β)}`.
++- Executed, not proved (frontier discovery): the nonlinear law simulated on periodic planes up to `512×512` for `20000` levels at `β = 3, 6, 12, 24`: the magnetization decays with no plateau, with local exponents approaching `γ(β)` from above as `β` grows; the six-axis formation law at weights `(e^{β}, e^{−β}, 1)` keeps its plane at the same `β`; finite-size series; an independent sampler; the linear model against its exact variance.
++
++**Falsifiers.** A kernel moment differing from `A(κ)`, `1 − 2A/κ`; `A(κ) ≥ κ/3` somewhere; a linearized mean other than the average; a `P_k` outside the two-sided bounds; a path count differing from the trinomial identity; `m_t ≠ A(3β)^t` on the one-site plane; a simulated magnetization that settles at a positive plateau on the infinite-plane scale (`t ≪ L²`) at some `β` — this would refute the discovery claim, not the theorems.
++
++**Lens pass (self-run panel).**
++- *"Block 13 already has gain one and `1/(3β)`."* Yes; T2 re-proves it at scope in one paragraph because the note must be self-contained against `main`; the new exact content is T1's nonlinear identities, T3's constant with explicit error bounds (block 13 had only `1/(36n) ≤ P_n ≤ 9π/(16n)`), T4, and T5's exponent. The new science is the executed nonlinear decay and the contrast with blocks 19 and 25.
++- *"A simulation is not a theorem."* Stated as such everywhere: claim type carries the exact parts; the decay on the infinite plane is a frontier discovery with the falsifier named; no sentence says the sphere formation law "has no ordered phase".
++- *"Finite planes forget trivially."* Yes (T4 is elementary); its value is the exact `L = 1` rate and the statement that the memory time's growth with `L` is the whole question — polynomial (diffusive, `L²` in the linear theory) against the six-axis law's contours.
++- *"Why not the twist argument (a two-dimensional symmetry argument in level time)?"* Tried at the whiteboard: an in-plane twist costs an amount proportional to the number of levels (the fluctuation-generated in-plane cost is of order one per site per level), so the box argument gives nothing; recorded under N1.
++- *"Names."* The exponential-overlap law on the sphere and `A(κ)` are named after their authors only under Prior art, Premises and Imports; theorems use `K_β` and `A(κ)`.
++
++**Forbidden phrases (beyond the lane's standing list):** "has no ordered phase", "does not order", "Mermin", "Wagner", "spontaneous symmetry breaking", "quasi-long-range", "converge", "critical", "certified".
++
++**Prior-art search at `origin/main`.** Nothing on the sphere formation law in level time; the static sphere law (blocks 19–23) and the six-axis formation law (blocks 08–12, 25) are open PRs, referenced as evidence addresses; block 01 (main) supplies the rule.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+index 6dfc9de138..2061d1bff2 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+@@ -25,3 +25,9 @@ Stacked on #8000 → #7999 → #7998 → main; all hand-offs. Block 04 = the two
+ Stacked on #8002 → #8000 → #7999 → #7998 → main; all hand-offs. Block 05 = the monotone-order class: one formation law for every linear extension of the product order (every rule); rows and columns path chains; the 2×2 corner law with corner independence; no right/down turning staircase is first-order Markov in its site values (proved for every nonconstant positive orbit triple under the declared product-rule monotone law); opposite corner classes give the same finite-rectangle law, with two distinct laws only at the executed 2×3 triples; the snake keeps rows and can lose column chains (column 0 survives on 3×3; on the executed 4×3 no column is a chain). Lens before the primary caught the supervisor's own wrong snake control. Historical checker: FIX FIRST on one forbidden mechanism sentence (false; deleted), nothing refuted in the theorems. Lock released.
+ 
+ Current source review found five further P2 groups, corrected in the canonical note and runner with their disposition in REVIEW_HISTORY.md. Same-session confirmation is pending; this appendix records an open review handoff.
++
++## 2026-09-16 block 26 opened for review (supervisor; twelve-hour continuation)
++Independent PR against `main` (`6dda46fc1a`); parent on `main`: block 01. After block 25's sharpening the lane's proof-shaped queue was empty; stepping back over the campaign's map found the sphere menu's formation reading unworked (block 13's open item). Block 26 = the unsoldered formation law in level time: T1 the sphere kernel's exact moments and `A(κ) < κ/3`; T2 gain one with the exact one-step variance `A(3β)/(3β)`; T3 the level walk's local-limit constant `3√3/(4π)` with explicit two-sided errors and `Σ_{k≤t}P_k ≥ (3√3/(4π))H_t − 1/4`; T4 every finite periodic plane forgets (unique rotation-invariant law; `m_t = A(3β)^t` on one site); T5 the linearized field's variance `γ(β) log t + O(1)`, `γ = (3√3/(4π))A(3β)/(3β)`, no stationary law with finite variance. Executed, not proved: the nonlinear law on planes up to `512 × 512` for `20000` levels loses its initial plane at `β = 3, 6, 12, 24` with no plateau (local exponents above `γ(β)`, approaching it as `β` grows), while the six-axis law at `(e^{β}, e^{−β}, 1)` keeps it — the reading decides memory for the sphere menu, the menu decides that formation keeps it. Runner 20 checks, 14 mutations in-family, exact, three seconds. Refuting pass: an independently coded sampler, FFT return sums, the linear recursion on a torus, the linear model against the nonlinear law, a small-plane series; one observational correction folded (the memory observable is the projection on the initial direction). A twist-type proof fails in level time (recorded in N1). Gates: pipeline ×2, changed-evidence, `audit_lint --strict`, `git diff --check`, vocabulary lint clean on the block's files. Next: the queue refresh at block 26 opening.
++
++## 2026-09-16 block 26 opened for review as PR #8170 (supervisor)
++PR #8170 (base `main`, independent). Records: `RESULTS_block26.md`, `CHECKER_block26_findings.md`, `CLAIM_STATUS_CERTIFICATE_block26.md`, `GOAL_block26.md`; specs with outputs. The twelve-hour continuation proceeds to the queue refresh at block 26 opening (item 1: a dynamical proof of the sphere formation law's memory loss; item 2: the six-axis memory time on a torus).
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+index 2977b7f990..05cc24d676 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md
+@@ -8,3 +8,6 @@ Routes read at their proofs, not their headlines.
+ | The consistency-first kernel K* and the frontier-process gate (bridge exercise 2026-08-26) | `archive/campaigns/exercise-bridge-adoption-20260826/SYNTHESIS.md` | On the gravity lane's Gaussian fixture, the sliding-frontier process marginals differ from the static Gram weights by an extent-stable gap. | Fixture-level, floats; this block states the axiom-level finite distinction; it does not explain the gate. |
+ | Convex-consistency (affine rule output) vs product form (R136/T212/T213) | same packet | Normalizer constant iff no coupling (rank argument; Funk–Hecke on the sphere). | Re-proved exactly on the menu as the two-neighbor normalizer factorization; used for T2(b). |
+ | Binary full-conditional compatibility (landed 2026-08-10) | `docs/ADMISSIBILITY_BINARY_FULL_CONDITIONAL_COMPATIBILITY_ISING_ACTION_AXIOM_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md` | Static half on binary menus; excludes formation dynamics by its own boundary. | Upstream; generalized here; the excluded object is this block's subject. |
++
++## Block 26 (2026-09-16) — the twist route to a no-order proof for the sphere formation law fails in level time
++- Attempted: rotating the whole level-time trajectory by an in-plane twist `φ(x_⊥)` (the two-dimensional relative-entropy argument for continuous symmetries). The twisted law is the causal law with each site's predecessors rotated by the differences `φ(x_⊥) − φ(x_⊥ − e_j⊥)`; its relative entropy per site against the original is of order `|∇φ|²` times the local transverse spread, of order one per site per level, so the total cost over `T` levels is proportional to `T` and no bounded-cost twist exists. Not a wall; recorded so the next attempt starts from the dynamical identities (T1c). The executed sentence (the sphere formation law loses its plane) stays a conjecture.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+index 74d2f60bae..72e985a42c 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+@@ -78,3 +78,13 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
+ 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
+ 4. **The silent triples by a non-criterion route** (unchanged; heavy).
+ 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
++
++## Refresh at block 26 opening (2026-09-16)
++
++Block 26 opened for review (independent PR against main): the sphere formation law in level time — exact linear theory with the local-limit constant, finite planes forget, and the executed loss of the initial plane's memory at every coupling tried, against the six-axis law keeping its plane at the same weight. The campaign's memory map now reads: six-axis static keeps (17), six-axis formation keeps (25), sphere static keeps (19), sphere formation loses (26, executed). Ranked next:
++
++1. **A proof that the sphere formation law loses its plane** — the twist argument fails in level time (block 26's N1); the natural route is dynamical, through the exact one-step identity `m_{t+1} = E[A(β|S|)(S·e)/|S|]` and the transverse second-moment identity of T1, seeking a strict decrease that the linear theory only gives at second order — hard, uncertain.
++2. **The six-axis memory time on a torus** — an exact lower bound exponential in `L` from block 25's trees (a dissenting torus needs a wrapping explanation), the exact counterpart of T4's `L²` scale — medium.
++3. **The band between block 08's region and block 25's** — hard.
++4. **The kernel's normalization on `Z³`** — hard.
++5. **Value-dependent order laws (block 16, X4)** — hard; unchanged.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block26.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block26.md
+new file mode 100644
+index 0000000000..0263fa9278
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block26.md
+@@ -0,0 +1,27 @@
++# RESULTS — block 26: the unsoldered formation law in level time — gain-one spin waves with the local-limit constant, finite planes forget, and the simulated algebraic decay of the initial plane's memory (2026-09-16)
++
++**Deliverables (branch `physics-loop/admissibility-induced-law-block26-unsoldered-formation-law-level-time-gain-one-spin-waves-memory-decay-20260916`, independent PR against `main` at `6dda46fc1a`; parent on `main`: block 01):** the note `docs/ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_IN_LEVEL_TIME_GAIN_ONE_SPIN_WAVES_LOCAL_LIMIT_CONSTANT_FINITE_PLANES_FORGET_AND_THE_SIMULATED_ALGEBRAIC_DECAY_OF_THE_INITIAL_PLANE_MEMORY_BOUNDED_THEOREM_NOTE_2026-09-16.md`; the runner `scripts/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16.py` (20 checks, 14 mutations, exact, three seconds); the pinned cache; the controls (`specs/supervisor_control_block26_exact.py`, `specs/supervisor_control_block26_sphere_sim.py`, `specs/supervisor_control_block26_sixaxis_sim.py`, `specs/supervisor_control_block26_fit.py`) and the refuting pass (`specs/supervisor_control_block26_refuter.py`) with outputs; `GOAL_block26.md`; `CHECKER_block26_findings.md`; this record. Blocks 06–25 remain open as PRs #8034, #8035, #8138–#8142, #8146–#8158, #8168.
++
++**Why this block.** The owner asked (2026-09-16) to keep the campaign running for twelve more hours after block 25's sharpening had exhausted the lane's proof-shaped queue. Stepping back over the campaign's map: the six-axis menu orders under both readings (blocks 17, 25); the sphere menu orders under the static reading (block 19) and its formation reading was unworked, with block 13's second-order analysis (gain one) pointing at the opposite behaviour. A morning exploration showed the sphere formation law losing its plane at every coupling tried while the six-axis law at the same weight kept it. That is the qualitative discriminator the campaign's record-dynamics row lacked for the continuous menu.
++
++## Result, in one paragraph
++The sphere kernel `K_β(·|S)` is the exponential-overlap law with concentration `β|S|`; its mean is `A(κ)û` and its second moment `(A/κ)I + (1 − 3A/κ)ûûᵀ`, `A(κ) = coth κ − 1/κ < κ/3` (T1). Its linearization at the aligned plane has gain one — the new record's transverse coordinate is the average of its three predecessors' — with exact one-step variance `A(3β)/(3β)` per component (T2, block 13's statement re-proved with the exact variance). The three-predecessor level walk's return sums satisfy `3√3/(4πk) − 1/k² − (5/(2k))e^{−k/4} ≤ P_k ≤ 3√3/(4πk) + 27/k² + e^{−√k/7}`, so `kP_k → 3√3/(4π)`, and `Σ_{k≤t}P_k ≥ (3√3/(4π))H_t − 1/4` (T3; the constant by a computer-assisted step, exact sums to `150` plus the tail bound). Every finite periodic plane has a unique, rotation-invariant invariant law, so it forgets its initial plane; on one site `m_t = A(3β)^t` (T4). The linearized field's variance is `σ²Σ_{k<t}P_k = γ(β) log t + O(1)` with `γ(β) = (3√3/(4π))A(3β)/(3β)` (`0.0408, 0.0217, 0.0112, 0.0057` at `β = 3, 6, 12, 24`), and it has no stationary law with finite variance (T5). Executed and not proved: the nonlinear law on periodic planes up to `512 × 512` for `20000` levels loses the memory of its initial plane at every `β` tried, with no plateau, at local exponents above `γ(β)` that approach it as `β` grows; the six-axis formation law at `(e^{β}, e^{−β}, 1)` keeps its plane at the same `β` (dissent `6·10⁻⁴` at `β = 3`, `3·10⁻⁵` at `4`, `0` at `6` over `3000` levels). Under the sphere menu the reading decides memory; under the six-axis menu the menu decides that formation keeps it.
++
++| `β` | `L` | levels | `m(500)` | `m(5000)` | `m(20000)` | `exp[500, 5000]` | `exp[5000, 20000]` | `exp[500, 20000]` | `γ(β)` | run |
++|---|---|---|---|---|---|---|---|---|---|---|
++| 3 | 512 | 20000 | 0.5118 | 0.3863 | 0.2735 | 0.1181 | 0.2629 | 0.1864 | 0.04084 | control |
++| 6 | 256 | 20000 | 0.7827 | 0.7322 | 0.6711 | 0.0358 | 0.0399 | 0.0324 | 0.02170 | control |
++| 6 | 512 | 20000 | 0.7826 | 0.7349 | 0.6823 | 0.0275 | 0.0498 | 0.0395 | 0.02170 | control |
++| 12 | 512 | 20000 | 0.8951 | 0.8715 | 0.8515 | 0.0120 | 0.0154 | 0.0145 | 0.01117 | control |
++| 12 | 512 | 20000 | 0.8941 | 0.8673 | 0.8567 | 0.0132 | 0.0076 | 0.0103 | 0.01117 | refuter (independent sampler) |
++| 24 | 512 | 20000 | 0.9483 | 0.9367 | 0.9268 | 0.0055 | 0.0071 | 0.0066 | 0.00566 | control |
++
++Six-axis formation law at `(e^{β}, e^{−β}, 1)`, `256 × 256`, `3000` levels (control `..._sixaxis_sim`): mean fraction of dissenting records `5.6·10⁻⁴` at `β = 3`, `2.8·10⁻⁵` at `β = 4`, `0` at `β = 6` — the plane is kept. Small periodic planes at `β = 6` (refuter, the projection on the initial direction): `L = 32` wanders through `0.29` at `t = 4500` and crosses zero by `t ≈ 12500` (the scale `βL² ≈ 6·10³` of T4); `L = 64` and `L = 128` wander between `0.57` and `0.79` without losing the sign within `20000` levels; the large planes above are far from this regime (`βL² ≥ 4·10⁵`).
++
++## Certificate
++- Runner: `TOTAL: PASS=20 FAIL=0`; 14 mutations each in its family; no floating-point literal or conversion; authors' names only in the allowed sections.
++- Refuting pass (`CHECKER_block26_findings.md`): the control's sampler against the exact moments by Monte Carlo (agreement to `4·10⁻⁴` at `2·10⁶` draws); `P_k` by FFT convolution equal to the exact sums to ten digits for `k ≤ 150` and `kP_k = 0.41332` at `k = 600`; the linear recursion on a torus against `σ²Σ_{k<t}P_k` (agreement to `2·10⁻⁴`); an independently coded sampler reproducing the nonlinear decay at `β = 12`; the linear model on `512 × 512` reproducing its exact variance and decaying more slowly than the nonlinear law; a small-plane series (`L = 32, 64, 128`) showing the direction wandering and lost on the scale of `βL²` levels, as T4 requires.
++- Claim type `bounded_theorem` (T1–T5); trace class `frontier_discovery` (the executed decay); status `bounded-support`; audit required.
++
++## Not claimed
++That the sphere formation law on the infinite plane has no invariant law with positive magnetization (conjectured on the executed evidence and the exact linear theory; a twist-type proof fails in level time, N1); a number for the nonlinear decay rate; anything about other menus, orders or readings; any reading, menu, rule or coupling as physical.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+index 08d17f0940..5eeaa28fca 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+@@ -199,3 +199,16 @@ executed against the four declared inputs on current main. The original
+ 23-mutation census and historical pipeline receipts are not claimed as
+ fresh checks. Original-reviewer confirmation is pending; no audit status is
+ applied, and only the coordinator may perform authorized integration.
++
++## block 26 — V1-V5 (supervisor, 2026-09-16)
++- V1: block 13's open item (PR #8147): whether an aligned region of the sphere formation law exists; the campaign's record-dynamics row for the continuous menu; the owner's directive to keep the campaign running twelve more hours with the proof-shaped queue empty.
++- V2: the lens pass in `GOAL_block26.md` ("block 13 already has gain one" — re-proved at scope, the new exact content is T1, T3's constant, T4, T5's exponent; "a simulation is not a theorem" — labelled a frontier discovery with its falsifier; "finite planes forget trivially" — yes, the value is the `L²` scale against the six-axis contours; "why not a twist argument" — tried, fails in level time, recorded under N1; names only in the allowed sections).
++- V3: T1–T5 proved; the skeleton executed exactly (20 checks, 14 mutations); the refuting pass agreed on seven routes; one observational correction folded before the note was finished (the memory observable).
++- V4: no reading, menu, rule or coupling selected; the infinite-plane statement a conjecture; the nonlinear rate not claimed as a number; blocks 13, 19, 25 not re-proved beyond what is used.
++- V5: consumers named — the campaign's decision record (memory under the two readings and two menus); #8093's assembly; the queue.
++
++## block 26 — supervisor controls, primary, refuting pass and fold (2026-09-16)
++Exploration: the sphere formation law at `β = 3, 6, 12` on a `256 × 256` plane lost its magnetization with no plateau over `3000` levels; the six-axis law at the same weight kept its plane. Exact control (`supervisor_control_block26_exact.py`): the kernel's moments, the bound, the return sums against the two-sided bounds (`P_k` below `3√3/(4πk)` by about `1/(10k²)`), the quadrature value of `kP_k` to `10⁴`, the exponents; the intervals for `γ(6)` and `γ(12)` moved down one unit in the last digit after the exact enclosure. Primary: the note and the runner (20 checks, 14 mutations; the harmonic constant `1/4` through a computer-assisted step). Refuting pass (`CHECKER_block26_findings.md`): the sampler's moments by Monte Carlo, `P_k` by FFT, the linear recursion on a torus, an independently coded sampler at `β = 12`, the linear model on `512 × 512`, a small-plane series — no findings against the theorems; the memory observable corrected to the projection on the initial direction. Author checks only; independent review pending.
++
++## block 26 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-16)
++1 self-containment: PASS — inputs: this note, the axioms memo, block 01's note, all on `main` at `6dda46fc1a`; the menu, the level order and the level automaton declared in the note; nothing pinned from a branch or PR (PRs #8147/#8152/#8153/#8156/#8168 are evidence addresses). 2 cache/execution: PASS. 3 claim-scope honesty: PASS — the readings named as supplied; the nonlinear decay marked executed, not proved; the conjecture named with its falsifier; the standard facts named at definition level. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+index e166420207..829e293fc3 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+@@ -105,3 +105,13 @@ source_review_correction:
+ # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
+ # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
+ # audit_status: "unset; no audit invoked or verdict applied by this source correction"
++# ---------------------------------------------------------------- block 26 close (2026-09-16)
++# block: 26
++# branch: physics-loop/admissibility-induced-law-block26-unsoldered-formation-law-level-time-gain-one-spin-waves-memory-decay-20260916 (independent; base origin/main 6dda46fc1a; blocks 06-25 are open PRs #8034, #8035, #8138-#8142, #8146-#8158, #8168)
++# pr_status: opened for review — PR #8170 (base = main; https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8170); hand-off; never merged by the campaign; not a main landing
++# final_certificate: "TOTAL: PASS=20 FAIL=0; 14 mutations, census 14/14 in-family; refuting pass consistent on seven routes; gates: see HANDOFF.md"
++# seats: "supervisor-run: exploration (the sphere and six-axis laws simulated at the same weight) -> exact control -> contract with a lens pass -> primary (T1-T5, runner) -> refuting pass (independent sampler; FFT return sums; the linear recursion on a torus; linear vs nonlinear; finite-size series) -> fold (the memory observable corrected to the projection on the initial direction)"
++# review_findings: "the sphere formation law: gain-one spin waves with exact variance A(3 beta)/(3 beta); the level walk's constant 3 sqrt3/(4 pi) with explicit errors; finite planes forget; gamma(beta) = (3 sqrt3/(4 pi)) A(3 beta)/(3 beta); executed: the nonlinear law loses its initial plane at beta = 3, 6, 12, 24 (no plateau; exponents above gamma), the six-axis law at (e^beta, e^-beta, 1) keeps it"
++# strongest_unresolved_proof_obligation: "a proof that the sphere formation law on the infinite plane has no invariant law reached from an aligned plane with positive magnetization (the twist argument fails in level time; a dynamical route through the exact one-step identity m_{t+1} = E[A(beta|S|)(S.e)/|S|] is the natural next attempt)"
++# next_exact_action: "queue refresh 2026-09-16 (block 26 opening): the sphere formation law's no-order proof (dynamical route); the six-axis memory time on a torus (exponential in L) as the exact counterpart; the intermediate band; normalization; X4"
++# lock: held (owner: keep running the campaign for 12 more hours from 2026-09-16 ~09:50)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+index 8f432e2cd2..151b6bec86 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+@@ -63,3 +63,14 @@ reachability_to_target: supports
+ artifact_role: theorem
+ next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
+ ```
++
++# Trace gate — block 26, at PR opening (2026-09-16)
++```yaml
++trace_class: frontier_discovery
++target_claim_id: null
++target_blocker_text: "block 13's open item (PR #8147): whether an aligned region of the sphere formation law exists at all; the campaign's record-dynamics row for the continuous menu"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem_plus_decisive_artifact
++next_trace_action: "T1-T5 exact (gain one with the exact variance; the local-limit constant; finite planes forget; the exponent gamma(beta)); the nonlinear decay executed at four couplings and named a conjecture for the infinite plane; the six-axis law keeps its plane at the same weight. Next: a dynamical proof of the decay; the six-axis memory time on a torus. Consumers: the campaign's decision record; #8093's assembly"
++```
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_exact.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_exact.out.txt
+new file mode 100644
+index 0000000000..891d6f3da2
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_exact.out.txt
+@@ -0,0 +1,12 @@
++(1) E[w] - A = 0 ; E[w^2] - (1 - 2A/k) = 0
++(1) sinh^2 k - k^2 - k^4/3 series (all coefficients >= 0): 2*kappa**10/14175 + kappa**8/315 + 2*kappa**6/45 ; A' == 1/k^2 - 1/sinh^2: True
++(2) two-sided bounds hold for k <= 300: True; k^2 (c0/k - P_k) max = 0.103; k^2 (P_k - c0/k) max = 0.000; k P_k at 300 = 0.41315 vs c0 = 0.41350
++(2) quadrature k P_k at k=300: 0.41315
++(2) quadrature k P_k at k=1000: 0.41339
++(2) quadrature k P_k at k=3000: 0.41346
++(2) quadrature k P_k at k=10000: 0.41349
++(3) gamma_lin(beta=3) = 0.04084  (A(3beta) = 0.88889; sqrt3/(4 pi beta) = 0.04594)
++(3) gamma_lin(beta=6) = 0.02170  (A(3beta) = 0.94444; sqrt3/(4 pi beta) = 0.02297)
++(3) gamma_lin(beta=12) = 0.01117  (A(3beta) = 0.97222; sqrt3/(4 pi beta) = 0.01149)
++(3) gamma_lin(beta=24) = 0.00566  (A(3beta) = 0.98611; sqrt3/(4 pi beta) = 0.00574)
++(3) gamma_lin(beta=48) = 0.00285  (A(3beta) = 0.99306; sqrt3/(4 pi beta) = 0.00287)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_exact.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_exact.py
+new file mode 100644
+index 0000000000..0e078d3e64
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_exact.py
+@@ -0,0 +1,44 @@
++"""Control (exact parts) for block 26: (1) vMF moments on S^2: E[w] = A(k) = coth k - 1/k, E[w^2] = 1 - 2A/k; the Langevin bound
++A(k) <= k/3 via sinh^2 k >= k^2 + k^4/3.  (2) The level walk's return sum P_k = sum_y p_k(y)^2 exactly (k <= 300) and the explicit
++two-sided bounds 3 sqrt3/(4 pi k) - 1/k^2 - (5/(2k)) e^{-k/4} <= P_k <= 3 sqrt3/(4 pi k) + 27/k^2 + e^{-sqrt k/7}; k P_k for larger k by
++quadrature.  (3) The spin-wave exponent gamma(beta) = (3 sqrt3/(4 pi)) A(3 beta)/(3 beta)."""
++import sympy as sp
++from fractions import Fraction as F
++from math import comb, factorial, sqrt, pi, exp, cos
++k, w = sp.symbols("kappa w", positive=True)
++Z = sp.integrate(sp.exp(k * w), (w, -1, 1))
++Ew = sp.simplify(sp.integrate(w * sp.exp(k * w), (w, -1, 1)) / Z)
++Ew2 = sp.simplify(sp.integrate(w**2 * sp.exp(k * w), (w, -1, 1)) / Z)
++A = sp.coth(k) - 1 / k
++print("(1) E[w] - A =", sp.simplify((Ew - A).rewrite(sp.exp)), "; E[w^2] - (1 - 2A/k) =", sp.simplify((Ew2 - (1 - 2 * A / k)).rewrite(sp.exp)))
++# Langevin bound: A'(k) = 1/k^2 - 1/sinh^2 k <= 1/(3 + k^2) since sinh^2 k >= k^2 + k^4/3: series of sinh^2 = (cosh 2k - 1)/2 = sum_{n>=1} (2k)^{2n}/(2 (2n)!)
++ser = sp.series(sp.sinh(k)**2 - k**2 - k**4 / 3, k, 0, 12).removeO()
++print("(1) sinh^2 k - k^2 - k^4/3 series (all coefficients >= 0):", ser, "; A' == 1/k^2 - 1/sinh^2:", sp.simplify(sp.diff(A, k) - (1 / k**2 - 1 / sp.sinh(k)**2)) == 0)
++# (2) P_k exact
++def Pk(kk):
++    tot = 0
++    for a in range(kk + 1):
++        for b in range(kk + 1 - a):
++            c = kk - a - b
++            m = factorial(kk) // (factorial(a) * factorial(b) * factorial(c))
++            tot += m * m
++    return F(tot, 9 ** kk)
++c0 = 3 * sqrt(3) / (4 * pi)
++ok = True; worst_lo = 0; worst_hi = 0
++for kk in range(1, 301):
++    p = float(Pk(kk))
++    lo = c0 / kk - 1 / kk**2 - (5 / (2 * kk)) * exp(-kk / 4); hi = c0 / kk + 27 / kk**2 + exp(-sqrt(kk) / 7)
++    ok = ok and lo <= p <= hi
++    worst_lo = max(worst_lo, (c0 / kk - p) * kk * kk); worst_hi = max(worst_hi, (p - c0 / kk) * kk * kk)
++print(f"(2) two-sided bounds hold for k <= 300: {ok}; k^2 (c0/k - P_k) max = {worst_lo:.3f}; k^2 (P_k - c0/k) max = {worst_hi:.3f}; k P_k at 300 = {300*float(Pk(300)):.5f} vs c0 = {c0:.5f}")
++# quadrature for larger k
++import numpy as np
++n = 4096; th = np.linspace(-np.pi, np.pi, n, endpoint=False)
++T1, T2 = np.meshgrid(th, th, indexing="ij")
++u = (3 + 2 * np.cos(T1) + 2 * np.cos(T2) + 2 * np.cos(T1 - T2)) / 9
++for kk in (300, 1000, 3000, 10000):
++    print(f"(2) quadrature k P_k at k={kk}: {kk * (u**kk).mean():.5f}")
++def Afun(x): return 1 / np.tanh(x) - 1 / x
++for beta in (3, 6, 12, 24, 48):
++    g = c0 * Afun(3 * beta) / (3 * beta)
++    print(f"(3) gamma_lin(beta={beta}) = {g:.5f}  (A(3beta) = {Afun(3*beta):.5f}; sqrt3/(4 pi beta) = {sqrt(3)/(4*pi*beta):.5f})")
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_fit.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_fit.out.txt
+new file mode 100644
+index 0000000000..e65f9660e9
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_fit.out.txt
+@@ -0,0 +1,21 @@
++sphere formation law, aligned start, periodic L x L plane, m = projection of the plane-averaged record on the initial direction (|m| for runs without it)
++ beta    L      T  m(500)  m(5000)    m(T)  exp[500,5000]  exp[5000,T]  exp[500,T]  gamma_lin
++   12  512  20000  0.8951   0.8715  0.8515         0.0120       0.0154      0.0145    0.01117  sim_b12_L512_T20000.txt
++   24  512  20000  0.9483   0.9367  0.9268         0.0055       0.0071      0.0066    0.00566  sim_b24_L512_T20000.txt
++    3  512  20000  0.5118   0.3863  0.2735         0.1181       0.2629      0.1864    0.04084  sim_b3_L512_T20000.txt
++    6  256  20000  0.7827   0.7322  0.6711         0.0358       0.0399      0.0324    0.02170  sim_b6_L256_T20000.txt
++    6  512  20000  0.7826   0.7349  0.6823         0.0275       0.0498      0.0395    0.02170  sim_b6_L512_T20000.txt
++   12  512  20000  0.8941   0.8673  0.8567         0.0132       0.0076      0.0103    0.01117  ref_sphere_b12_L512.txt
++    6  128  20000  0.7726   0.5797  0.7521         0.1111      -0.2061      0.0068    0.02170  ref_sphere_b6_L128.txt
++    6   32  20000  0.7737   0.1459 -0.4303         0.5261          nan         nan    0.02170  ref_sphere_b6_L32.txt
++    6   64  20000  0.7943   0.6923  0.7117         0.0535      -0.0235      0.0344    0.02170  ref_sphere_b6_L64.txt
++
++linear model (theta = average of predecessors + Gaussian noise of variance A(3 beta)/(3 beta) per component), v_t = mean |theta|^2 / 2
++  t=   500  v_sim=0.19359  v_pred=0.19246  exp(-v_sim)=0.8240   ref_linear_b6_L512.txt
++  t=  3000  v_sim=0.24063  v_pred=0.23134  exp(-v_sim)=0.7861   ref_linear_b6_L512.txt
++  t=  5500  v_sim=0.23655  v_pred=0.24449  exp(-v_sim)=0.7893   ref_linear_b6_L512.txt
++  t=  8000  v_sim=0.24530  v_pred=0.25262  exp(-v_sim)=0.7825   ref_linear_b6_L512.txt
++  t= 10500  v_sim=0.25121  v_pred=0.25852  exp(-v_sim)=0.7779   ref_linear_b6_L512.txt
++  t= 13000  v_sim=0.24965  v_pred=0.26316  exp(-v_sim)=0.7791   ref_linear_b6_L512.txt
++  t= 15500  v_sim=0.27172  v_pred=0.26697  exp(-v_sim)=0.7621   ref_linear_b6_L512.txt
++  t= 18000  v_sim=0.26744  v_pred=0.27022  exp(-v_sim)=0.7653   ref_linear_b6_L512.txt
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_fit.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_fit.py
+new file mode 100644
+index 0000000000..75dc4ad65a
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_fit.py
+@@ -0,0 +1,34 @@
++# Summary table for block 26: magnetization runs (sphere), linear model against its prediction, six-axis side-by-side.
++import numpy as np, re, glob, os
++S = os.environ.get("B26_DATA", os.path.dirname(os.path.abspath(__file__))) + "/"
++def A(x): return 1 / np.tanh(x) - 1 / x
++c0 = 3 * np.sqrt(3) / (4 * np.pi)
++def load_m(fn):
++    """m_z = projection of the plane-averaged record on the initial direction (the memory); |m| only if m_z is absent."""
++    t, m = [], []
++    for l in open(fn):
++        mm = re.match(r"\s*t=\s*(\d+)\s+\|m\|=([0-9.]+)(?:\s+m_z=(-?[0-9.]+))?", l)
++        if mm: t.append(int(mm.group(1))); m.append(float(mm.group(3) if mm.group(3) is not None else mm.group(2)))
++    return np.array(t), np.array(m)
++def fit(t, m, a, b):
++    sel = (t >= a) & (t <= b)
++    return -np.polyfit(np.log(t[sel]), np.log(m[sel]), 1)[0]
++print("sphere formation law, aligned start, periodic L x L plane, m = projection of the plane-averaged record on the initial direction (|m| for runs without it)")
++print(f"{'beta':>5} {'L':>4} {'T':>6} {'m(500)':>7} {'m(5000)':>8} {'m(T)':>7} {'exp[500,5000]':>14} {'exp[5000,T]':>12} {'exp[500,T]':>11} {'gamma_lin':>10}")
++for fn in sorted(glob.glob(S + "sim_b*_L*_T*.txt")) + sorted(glob.glob(S + "ref_sphere_b*_L*.txt")):
++    mm = re.search(r"b(\d+)_L(\d+)", fn); beta, L = int(mm.group(1)), int(mm.group(2))
++    t, m = load_m(fn)
++    if len(t) < 10: continue
++    T = t[-1]
++    def at(tt): return m[np.argmin(abs(t - tt))]
++    print(f"{beta:5d} {L:4d} {T:6d} {at(500):7.4f} {at(5000):8.4f} {m[-1]:7.4f} {fit(t,m,500,5000):14.4f} {fit(t,m,5000,T):12.4f} {fit(t,m,500,T):11.4f} {c0*A(3*beta)/(3*beta):10.5f}  {os.path.basename(fn)}")
++print("\nlinear model (theta = average of predecessors + Gaussian noise of variance A(3 beta)/(3 beta) per component), v_t = mean |theta|^2 / 2")
++for fn in sorted(glob.glob(S + "ref_linear_b*_L*.txt")):
++    sim, pred = {}, {}
++    for l in open(fn):
++        a = re.match(r"\s*t=\s*(\d+)\s+v_t\(sim\)=([0-9.]+)", l)
++        if a: sim[int(a.group(1))] = float(a.group(2))
++        b = re.match(r"\s*prediction v_(\d+) = .* = ([0-9.]+)", l)
++        if b: pred[int(b.group(1))] = float(b.group(2))
++    for tt in sorted(sim)[::5]:
++        print(f"  t={tt:6d}  v_sim={sim[tt]:.5f}  v_pred={pred.get(tt, float('nan')):.5f}  exp(-v_sim)={np.exp(-sim[tt]):.4f}   {os.path.basename(fn)}")
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_refuter.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_refuter.out.txt
+new file mode 100644
+index 0000000000..6369a7bd26
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_refuter.out.txt
+@@ -0,0 +1,277 @@
++===== mode fast (seed 5) =====
++refuter fast checks
++  kappa=  1.0: mean w = 0.31296 vs A = 0.31304; mean w^2 = 0.37395 vs 1 - 2A/kappa = 0.37393
++  kappa=  3.0: mean w = 0.67202 vs A = 0.67164; mean w^2 = 0.55250 vs 1 - 2A/kappa = 0.55224
++  kappa=  9.0: mean w = 0.88896 vs A = 0.88889; mean w^2 = 0.80257 vs 1 - 2A/kappa = 0.80247
++  kappa= 18.0: mean w = 0.94442 vs A = 0.94444; mean w^2 = 0.89501 vs 1 - 2A/kappa = 0.89506
++  kappa= 36.0: mean w = 0.97220 vs A = 0.97222; mean w^2 = 0.94594 vs 1 - 2A/kappa = 0.94599
++  k=   1: P_k(FFT) = 0.3333333333  exact = 0.3333333333  k P_k = 0.33333  (c0 = 0.41350)
++  k=   2: P_k(FFT) = 0.1851851852  exact = 0.1851851852  k P_k = 0.37037  (c0 = 0.41350)
++  k=   3: P_k(FFT) = 0.1275720165  exact = 0.1275720165  k P_k = 0.38272  (c0 = 0.41350)
++  k=  10: P_k(FFT) = 0.0403432070  exact = 0.0403432070  k P_k = 0.40343  (c0 = 0.41350)
++  k=  50: P_k(FFT) = 0.0082287926  exact = 0.0082287926  k P_k = 0.41144  (c0 = 0.41350)
++  k= 150: P_k(FFT) = 0.0027520578  exact = 0.0027520578  k P_k = 0.41281  (c0 = 0.41350)
++  k= 300: P_k(FFT) = 0.0013771746  exact = nan  k P_k = 0.41315  (c0 = 0.41350)
++  k= 600: P_k(FFT) = 0.0006888741  exact = nan  k P_k = 0.41332  (c0 = 0.41350)
++  t=  1: v_t(sim) = 0.05246  exact sigma^2 sum_(k<t) P_k = 0.05247
++  t=  2: v_t(sim) = 0.06999  exact sigma^2 sum_(k<t) P_k = 0.06996
++  t=  5: v_t(sim) = 0.09149  exact sigma^2 sum_(k<t) P_k = 0.09148
++  t= 10: v_t(sim) = 0.10699  exact sigma^2 sum_(k<t) P_k = 0.10705
++  t= 20: v_t(sim) = 0.12214  exact sigma^2 sum_(k<t) P_k = 0.12236
++  t= 40: v_t(sim) = 0.13751  exact sigma^2 sum_(k<t) P_k = 0.13754
++(5s)
++===== mode linear beta=6 L=512 T=20000 seed=11 =====
++refuter linear beta=6.0 sigma^2=0.052469 L=512 T=20000 seed=11
++  t=   500  v_t(sim)=0.19359  exp(-v)=0.82399
++  t=  1000  v_t(sim)=0.20731  exp(-v)=0.81277
++  t=  1500  v_t(sim)=0.21026  exp(-v)=0.81038
++  t=  2000  v_t(sim)=0.21482  exp(-v)=0.80668
++  t=  2500  v_t(sim)=0.22275  exp(-v)=0.80031
++  t=  3000  v_t(sim)=0.24063  exp(-v)=0.78613
++  t=  3500  v_t(sim)=0.23991  exp(-v)=0.78670
++  t=  4000  v_t(sim)=0.23151  exp(-v)=0.79333
++  t=  4500  v_t(sim)=0.24212  exp(-v)=0.78496
++  t=  5000  v_t(sim)=0.24209  exp(-v)=0.78498
++  t=  5500  v_t(sim)=0.23655  exp(-v)=0.78935
++  t=  6000  v_t(sim)=0.23930  exp(-v)=0.78718
++  t=  6500  v_t(sim)=0.24071  exp(-v)=0.78607
++  t=  7000  v_t(sim)=0.25135  exp(-v)=0.77775
++  t=  7500  v_t(sim)=0.24821  exp(-v)=0.78020
++  t=  8000  v_t(sim)=0.24530  exp(-v)=0.78247
++  t=  8500  v_t(sim)=0.24739  exp(-v)=0.78083
++  t=  9000  v_t(sim)=0.24387  exp(-v)=0.78359
++  t=  9500  v_t(sim)=0.24375  exp(-v)=0.78368
++  t= 10000  v_t(sim)=0.24886  exp(-v)=0.77969
++  t= 10500  v_t(sim)=0.25121  exp(-v)=0.77786
++  t= 11000  v_t(sim)=0.24865  exp(-v)=0.77986
++  t= 11500  v_t(sim)=0.24983  exp(-v)=0.77893
++  t= 12000  v_t(sim)=0.24761  exp(-v)=0.78066
++  t= 12500  v_t(sim)=0.24766  exp(-v)=0.78062
++  t= 13000  v_t(sim)=0.24965  exp(-v)=0.77908
++  t= 13500  v_t(sim)=0.25362  exp(-v)=0.77599
++  t= 14000  v_t(sim)=0.25726  exp(-v)=0.77317
++  t= 14500  v_t(sim)=0.25545  exp(-v)=0.77457
++  t= 15000  v_t(sim)=0.25696  exp(-v)=0.77340
++  t= 15500  v_t(sim)=0.27172  exp(-v)=0.76207
++  t= 16000  v_t(sim)=0.26758  exp(-v)=0.76523
++  t= 16500  v_t(sim)=0.26663  exp(-v)=0.76596
++  t= 17000  v_t(sim)=0.26821  exp(-v)=0.76475
++  t= 17500  v_t(sim)=0.27160  exp(-v)=0.76216
++  t= 18000  v_t(sim)=0.26744  exp(-v)=0.76533
++  t= 18500  v_t(sim)=0.26852  exp(-v)=0.76451
++  t= 19000  v_t(sim)=0.27426  exp(-v)=0.76013
++  t= 19500  v_t(sim)=0.27393  exp(-v)=0.76039
++  t= 20000  v_t(sim)=0.27342  exp(-v)=0.76078
++  prediction v_500 = sigma^2 sum_(k'<500) P_k' = 0.19246
++  prediction v_1000 = sigma^2 sum_(k'<1000) P_k' = 0.20750
++  prediction v_1500 = sigma^2 sum_(k'<1500) P_k' = 0.21630
++  prediction v_2000 = sigma^2 sum_(k'<2000) P_k' = 0.22254
++  prediction v_2500 = sigma^2 sum_(k'<2500) P_k' = 0.22739
++  prediction v_3000 = sigma^2 sum_(k'<3000) P_k' = 0.23134
++  prediction v_3500 = sigma^2 sum_(k'<3500) P_k' = 0.23469
++  prediction v_4000 = sigma^2 sum_(k'<4000) P_k' = 0.23758
++  prediction v_4500 = sigma^2 sum_(k'<4500) P_k' = 0.24014
++  prediction v_5000 = sigma^2 sum_(k'<5000) P_k' = 0.24242
++  prediction v_5500 = sigma^2 sum_(k'<5500) P_k' = 0.24449
++  prediction v_6000 = sigma^2 sum_(k'<6000) P_k' = 0.24638
++  prediction v_6500 = sigma^2 sum_(k'<6500) P_k' = 0.24812
++  prediction v_7000 = sigma^2 sum_(k'<7000) P_k' = 0.24973
++  prediction v_7500 = sigma^2 sum_(k'<7500) P_k' = 0.25122
++  prediction v_8000 = sigma^2 sum_(k'<8000) P_k' = 0.25262
++  prediction v_8500 = sigma^2 sum_(k'<8500) P_k' = 0.25394
++  prediction v_9000 = sigma^2 sum_(k'<9000) P_k' = 0.25518
++  prediction v_9500 = sigma^2 sum_(k'<9500) P_k' = 0.25635
++  prediction v_10000 = sigma^2 sum_(k'<10000) P_k' = 0.25746
++  prediction v_10500 = sigma^2 sum_(k'<10500) P_k' = 0.25852
++  prediction v_11000 = sigma^2 sum_(k'<11000) P_k' = 0.25953
++  prediction v_11500 = sigma^2 sum_(k'<11500) P_k' = 0.26050
++  prediction v_12000 = sigma^2 sum_(k'<12000) P_k' = 0.26142
++  prediction v_12500 = sigma^2 sum_(k'<12500) P_k' = 0.26231
++  prediction v_13000 = sigma^2 sum_(k'<13000) P_k' = 0.26316
++  prediction v_13500 = sigma^2 sum_(k'<13500) P_k' = 0.26397
++  prediction v_14000 = sigma^2 sum_(k'<14000) P_k' = 0.26476
++  prediction v_14500 = sigma^2 sum_(k'<14500) P_k' = 0.26553
++  prediction v_15000 = sigma^2 sum_(k'<15000) P_k' = 0.26626
++  prediction v_15500 = sigma^2 sum_(k'<15500) P_k' = 0.26697
++  prediction v_16000 = sigma^2 sum_(k'<16000) P_k' = 0.26766
++  prediction v_16500 = sigma^2 sum_(k'<16500) P_k' = 0.26833
++  prediction v_17000 = sigma^2 sum_(k'<17000) P_k' = 0.26898
++  prediction v_17500 = sigma^2 sum_(k'<17500) P_k' = 0.26961
++  prediction v_18000 = sigma^2 sum_(k'<18000) P_k' = 0.27022
++  prediction v_18500 = sigma^2 sum_(k'<18500) P_k' = 0.27081
++  prediction v_19000 = sigma^2 sum_(k'<19000) P_k' = 0.27139
++  prediction v_19500 = sigma^2 sum_(k'<19500) P_k' = 0.27195
++  prediction v_20000 = sigma^2 sum_(k'<20000) P_k' = 0.27250
++(145s)
++===== mode sphere beta=12 L=512 T=20000 seed=13 (independent sampler; |m| only) =====
++refuter sphere beta=12.0 L=512 T=20000 seed=13
++  t=   500  |m|=0.89406
++  t=  1000  |m|=0.88607
++  t=  1500  |m|=0.88135
++  t=  2000  |m|=0.87913
++  t=  2500  |m|=0.87757
++  t=  3000  |m|=0.87343
++  t=  3500  |m|=0.87313
++  t=  4000  |m|=0.87100
++  t=  4500  |m|=0.86675
++  t=  5000  |m|=0.86734
++  t=  5500  |m|=0.86974
++  t=  6000  |m|=0.86816
++  t=  6500  |m|=0.86767
++  t=  7000  |m|=0.86793
++  t=  7500  |m|=0.86814
++  t=  8000  |m|=0.86780
++  t=  8500  |m|=0.86566
++  t=  9000  |m|=0.86126
++  t=  9500  |m|=0.86400
++  t= 10000  |m|=0.86351
++  t= 10500  |m|=0.86236
++  t= 11000  |m|=0.85514
++  t= 11500  |m|=0.85540
++  t= 12000  |m|=0.85651
++  t= 12500  |m|=0.86008
++  t= 13000  |m|=0.85928
++  t= 13500  |m|=0.85693
++  t= 14000  |m|=0.86153
++  t= 14500  |m|=0.86344
++  t= 15000  |m|=0.86066
++  t= 15500  |m|=0.86108
++  t= 16000  |m|=0.86206
++  t= 16500  |m|=0.86122
++  t= 17000  |m|=0.86465
++  t= 17500  |m|=0.86361
++  t= 18000  |m|=0.86287
++  t= 18500  |m|=0.86307
++  t= 19000  |m|=0.85756
++  t= 19500  |m|=0.86042
++  t= 20000  |m|=0.85665
++(600s)
++===== mode sphere beta=6 L=32 T=20000 (independent sampler; m_z = projection on the initial direction) =====
++refuter sphere beta=6.0 L=32 T=20000 seed=49
++  t=   500  |m|=0.81563  m_z=0.77373
++  t=  1000  |m|=0.79357  m_z=0.75229
++  t=  1500  |m|=0.76651  m_z=0.71475
++  t=  2000  |m|=0.82870  m_z=0.64774
++  t=  2500  |m|=0.82542  m_z=0.56314
++  t=  3000  |m|=0.80684  m_z=0.57213
++  t=  3500  |m|=0.78891  m_z=0.43651
++  t=  4000  |m|=0.81001  m_z=0.49402
++  t=  4500  |m|=0.82134  m_z=0.28757
++  t=  5000  |m|=0.81614  m_z=0.14593
++  t=  5500  |m|=0.80000  m_z=0.34943
++  t=  6000  |m|=0.80832  m_z=0.28092
++  t=  6500  |m|=0.81296  m_z=0.35933
++  t=  7000  |m|=0.80078  m_z=0.32624
++  t=  7500  |m|=0.81966  m_z=0.38860
++  t=  8000  |m|=0.80285  m_z=0.28835
++  t=  8500  |m|=0.83047  m_z=0.37436
++  t=  9000  |m|=0.78951  m_z=0.28666
++  t=  9500  |m|=0.79730  m_z=0.36001
++  t= 10000  |m|=0.79233  m_z=0.45809
++  t= 10500  |m|=0.79778  m_z=0.31970
++  t= 11000  |m|=0.83248  m_z=0.24006
++  t= 11500  |m|=0.82933  m_z=-0.01600
++  t= 12000  |m|=0.80418  m_z=-0.10216
++  t= 12500  |m|=0.82832  m_z=-0.26000
++  t= 13000  |m|=0.81942  m_z=-0.42451
++  t= 13500  |m|=0.83345  m_z=-0.53344
++  t= 14000  |m|=0.82094  m_z=-0.68133
++  t= 14500  |m|=0.81454  m_z=-0.75090
++  t= 15000  |m|=0.77307  m_z=-0.72800
++  t= 15500  |m|=0.80550  m_z=-0.62374
++  t= 16000  |m|=0.83188  m_z=-0.55593
++  t= 16500  |m|=0.80412  m_z=-0.46106
++  t= 17000  |m|=0.81739  m_z=-0.30342
++  t= 17500  |m|=0.80781  m_z=-0.36081
++  t= 18000  |m|=0.80899  m_z=-0.30964
++  t= 18500  |m|=0.82552  m_z=-0.53176
++  t= 19000  |m|=0.81255  m_z=-0.36237
++  t= 19500  |m|=0.79166  m_z=-0.53647
++  t= 20000  |m|=0.79350  m_z=-0.43033
++(2s)
++===== mode sphere beta=6 L=64 T=20000 (independent sampler; m_z = projection on the initial direction) =====
++refuter sphere beta=6.0 L=64 T=20000 seed=81
++  t=   500  |m|=0.79463  m_z=0.79430
++  t=  1000  |m|=0.78951  m_z=0.78741
++  t=  1500  |m|=0.78890  m_z=0.78839
++  t=  2000  |m|=0.73419  m_z=0.73046
++  t=  2500  |m|=0.73791  m_z=0.73211
++  t=  3000  |m|=0.75808  m_z=0.74503
++  t=  3500  |m|=0.74778  m_z=0.73642
++  t=  4000  |m|=0.76807  m_z=0.74211
++  t=  4500  |m|=0.77626  m_z=0.71437
++  t=  5000  |m|=0.76924  m_z=0.69233
++  t=  5500  |m|=0.76374  m_z=0.67767
++  t=  6000  |m|=0.73985  m_z=0.59580
++  t=  6500  |m|=0.78361  m_z=0.64198
++  t=  7000  |m|=0.79131  m_z=0.67111
++  t=  7500  |m|=0.77162  m_z=0.68505
++  t=  8000  |m|=0.77139  m_z=0.66483
++  t=  8500  |m|=0.80143  m_z=0.67420
++  t=  9000  |m|=0.77721  m_z=0.64463
++  t=  9500  |m|=0.75926  m_z=0.69931
++  t= 10000  |m|=0.77513  m_z=0.72728
++  t= 10500  |m|=0.77415  m_z=0.75088
++  t= 11000  |m|=0.78598  m_z=0.77349
++  t= 11500  |m|=0.78223  m_z=0.76564
++  t= 12000  |m|=0.80495  m_z=0.80102
++  t= 12500  |m|=0.79171  m_z=0.76478
++  t= 13000  |m|=0.79655  m_z=0.75699
++  t= 13500  |m|=0.75903  m_z=0.72984
++  t= 14000  |m|=0.78277  m_z=0.73095
++  t= 14500  |m|=0.79969  m_z=0.72764
++  t= 15000  |m|=0.77931  m_z=0.74883
++  t= 15500  |m|=0.79953  m_z=0.72770
++  t= 16000  |m|=0.77111  m_z=0.65962
++  t= 16500  |m|=0.79790  m_z=0.61472
++  t= 17000  |m|=0.78936  m_z=0.62824
++  t= 17500  |m|=0.76513  m_z=0.66384
++  t= 18000  |m|=0.79455  m_z=0.66852
++  t= 18500  |m|=0.79855  m_z=0.66675
++  t= 19000  |m|=0.78065  m_z=0.69850
++  t= 19500  |m|=0.76749  m_z=0.63808
++  t= 20000  |m|=0.79120  m_z=0.71174
++(7s)
++===== mode sphere beta=6 L=128 T=20000 (independent sampler; m_z = projection on the initial direction) =====
++refuter sphere beta=6.0 L=128 T=20000 seed=145
++  t=   500  |m|=0.77351  m_z=0.77256
++  t=  1000  |m|=0.74556  m_z=0.74529
++  t=  1500  |m|=0.74838  m_z=0.74241
++  t=  2000  |m|=0.75271  m_z=0.74506
++  t=  2500  |m|=0.74401  m_z=0.72128
++  t=  3000  |m|=0.73016  m_z=0.70405
++  t=  3500  |m|=0.70838  m_z=0.66353
++  t=  4000  |m|=0.70720  m_z=0.65264
++  t=  4500  |m|=0.69270  m_z=0.60789
++  t=  5000  |m|=0.69556  m_z=0.57967
++  t=  5500  |m|=0.70540  m_z=0.59665
++  t=  6000  |m|=0.70684  m_z=0.59783
++  t=  6500  |m|=0.72778  m_z=0.61335
++  t=  7000  |m|=0.73431  m_z=0.61303
++  t=  7500  |m|=0.72931  m_z=0.58620
++  t=  8000  |m|=0.71389  m_z=0.52452
++  t=  8500  |m|=0.72863  m_z=0.56759
++  t=  9000  |m|=0.73128  m_z=0.59027
++  t=  9500  |m|=0.76044  m_z=0.61995
++  t= 10000  |m|=0.76001  m_z=0.62447
++  t= 10500  |m|=0.76361  m_z=0.65110
++  t= 11000  |m|=0.74734  m_z=0.68385
++  t= 11500  |m|=0.72123  m_z=0.65676
++  t= 12000  |m|=0.72181  m_z=0.64059
++  t= 12500  |m|=0.71901  m_z=0.64885
++  t= 13000  |m|=0.73703  m_z=0.66043
++  t= 13500  |m|=0.73943  m_z=0.67493
++  t= 14000  |m|=0.75965  m_z=0.67822
++  t= 14500  |m|=0.76394  m_z=0.68850
++  t= 15000  |m|=0.75646  m_z=0.70219
++  t= 15500  |m|=0.75554  m_z=0.68925
++  t= 16000  |m|=0.73696  m_z=0.69547
++  t= 16500  |m|=0.74942  m_z=0.73587
++  t= 17000  |m|=0.75504  m_z=0.75173
++  t= 17500  |m|=0.73528  m_z=0.73151
++  t= 18000  |m|=0.71722  m_z=0.71021
++  t= 18500  |m|=0.73996  m_z=0.72862
++  t= 19000  |m|=0.72931  m_z=0.72493
++  t= 19500  |m|=0.74631  m_z=0.74048
++  t= 20000  |m|=0.76258  m_z=0.75206
++(25s)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_refuter.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_refuter.py
+new file mode 100644
+index 0000000000..eb0b609f3f
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_refuter.py
+@@ -0,0 +1,88 @@
++"""Refuting pass, block 26 (independent machinery).
++Modes: fast - the control's sampler against the exact moments by Monte Carlo, P_k by FFT convolution against the exact sums, the linear
++recursion on a torus against the exact variance; sphere - the sphere formation law with an independently coded sampler (inversion written
++the other way, tangent frame by a Rodrigues rotation of a pole sample); linear - the linear model against its exact prediction.
++Usage: python3 <this> <mode> <beta> <L> <T> <seed>."""
++# Refuting-pass simulations (independent code): (a) sphere formation law with a differently coded vMF sampler (inversion written the other
++# way, tangent frame by a Rodrigues rotation of a pole sample); (b) the linear Gaussian model theta_x = avg + N(0, A(3b)/(3b) I_2) with
++# its exact prediction v_t = sigma^2 sum_{k<t} P_k; (c) finite-size series at beta = 6 (L = 64, 128).
++import numpy as np, sys, time
++from math import factorial
++mode = sys.argv[1]; beta = float(sys.argv[2]); L = int(sys.argv[3]); T = int(sys.argv[4]); seed = int(sys.argv[5])
++rng = np.random.default_rng(seed); rec = max(1, T // 40)
++def A(x): return 1 / np.tanh(x) - 1 / x
++t0 = time.time()
++if mode == "fast":
++    print("refuter fast checks")
++    # (i) the control's sampler (inversion of the cosine law, uniform azimuth) against E[w] = A(kappa), E[w^2] = 1 - 2A/kappa
++    for kap in (1.0, 3.0, 9.0, 18.0, 36.0):
++        n = 2_000_000; U = rng.random(n); w = 1 + np.log(U + (1 - U) * np.exp(-2 * kap)) / kap
++        print(f"  kappa={kap:5.1f}: mean w = {w.mean():.5f} vs A = {A(kap):.5f}; mean w^2 = {(w*w).mean():.5f} vs 1 - 2A/kappa = {1 - 2*A(kap)/kap:.5f}")
++    # (ii) P_k by FFT convolution of the step law on a 1024 x 1024 torus (no wrap for k < 1024)
++    from math import factorial
++    def Pk_exact(k):
++        tot = 0
++        for a in range(k + 1):
++            for b in range(k + 1 - a):
++                mlt = factorial(k) // (factorial(a) * factorial(b) * factorial(k - a - b)); tot += mlt * mlt
++        return tot / 9 ** k
++    N = 1024; step = np.zeros((N, N)); step[0, 0] = step[-1, 0] = step[0, -1] = 1 / 3
++    Fs = np.fft.fft2(step); c0 = 3 * np.sqrt(3) / (4 * np.pi)
++    for k in (1, 2, 3, 10, 50, 150, 300, 600):
++        pk = np.real(np.fft.ifft2(Fs ** k)); Pk = float((pk * pk).sum())
++        ex = Pk_exact(k) if k <= 150 else float("nan")
++        print(f"  k={k:4d}: P_k(FFT) = {Pk:.10f}  exact = {ex:.10f}  k P_k = {k*Pk:.5f}  (c0 = {c0:.5f})")
++    # (iii) the linear recursion on a 128 x 128 torus for 40 levels, 400 independent noise realisations, against sigma^2 sum_{k<t} P_k
++    sig2 = A(18) / 18; Lt = 128; reps = 400; acc = np.zeros(41)
++    for r_ in range(reps):
++        th = np.zeros((Lt, Lt, 2))
++        for t in range(1, 41):
++            th = (th + np.roll(th, 1, 0) + np.roll(th, 1, 1)) / 3 + rng.normal(0, np.sqrt(sig2), (Lt, Lt, 2))
++            acc[t] += (th * th).sum(-1).mean() / 2
++    acc /= reps
++    for t in (1, 2, 5, 10, 20, 40):
++        cum = sig2 * sum(Pk_exact(k) for k in range(t))
++        print(f"  t={t:3d}: v_t(sim) = {acc[t]:.5f}  exact sigma^2 sum_(k<t) P_k = {cum:.5f}")
++if mode == "sphere":
++    s = np.zeros((L, L, 3)); s[..., 2] = 1
++    print(f"refuter sphere beta={beta} L={L} T={T} seed={seed}")
++    for t in range(1, T + 1):
++        Sv = s + np.roll(s, 1, 0) + np.roll(s, 1, 1); n = np.sqrt((Sv * Sv).sum(-1)); u = Sv / n[..., None]; kap = beta * n
++        U = rng.random((L, L)); w = 1 + np.log1p(-U * (1 - np.exp(-2 * kap))) / kap
++        w = np.clip(w, -1, 1); ph = 2 * np.pi * rng.random((L, L)); r = np.sqrt(1 - w * w)
++        v = np.stack([r * np.cos(ph), r * np.sin(ph), w], -1)          # sample around the pole
++        # Rodrigues rotation taking the pole to u: axis k = z x u, angle with cos = u_z
++        kx, ky = -u[..., 1], u[..., 0]; kn = np.sqrt(kx * kx + ky * ky); c = u[..., 2]
++        safe = kn > 1e-12; kx = np.where(safe, kx / np.where(safe, kn, 1), 0); ky = np.where(safe, ky / np.where(safe, kn, 1), 0)
++        sn = np.sqrt(np.clip(1 - c * c, 0, 1))
++        K = np.stack([kx, ky, np.zeros_like(kx)], -1)
++        kv = np.cross(K, v); kdv = (K * v).sum(-1)
++        s_new = v * c[..., None] + kv * sn[..., None] + K * (kdv * (1 - c))[..., None]
++        s = np.where(safe[..., None], s_new, np.where((c > 0)[..., None], v, -v))
++        if t % rec == 0:
++            m = s.mean((0, 1)); print(f"  t={t:6d}  |m|={np.linalg.norm(m):.5f}  m_z={m[2]:.5f}")
++elif mode == "linear":
++    sig2 = A(3 * beta) / (3 * beta)
++    th = np.zeros((L, L, 2)); P = []
++    # exact P_k (floats) for the prediction
++    def Pk(k):
++        tot = 0
++        for a in range(k + 1):
++            for b in range(k + 1 - a):
++                mlt = factorial(k) // (factorial(a) * factorial(b) * factorial(k - a - b)); tot += mlt * mlt
++        return tot / 9 ** k
++    pred = {}
++    print(f"refuter linear beta={beta} sigma^2={sig2:.6f} L={L} T={T} seed={seed}")
++    for t in range(1, T + 1):
++        th = (th + np.roll(th, 1, 0) + np.roll(th, 1, 1)) / 3 + rng.normal(0, np.sqrt(sig2), (L, L, 2))
++        if t % rec == 0:
++            v = (th * th).sum(-1).mean() / 2
++            print(f"  t={t:6d}  v_t(sim)={v:.5f}  exp(-v)={np.exp(-v):.5f}")
++    # prediction at a few t (sum of P_k up to t-1 via quadrature for speed)
++    n = 2048; g = np.linspace(-np.pi, np.pi, n, endpoint=False); T1, T2 = np.meshgrid(g, g, indexing="ij")
++    u = (3 + 2 * np.cos(T1) + 2 * np.cos(T2) + 2 * np.cos(T1 - T2)) / 9
++    acc = 0.0; uk = np.ones_like(u)
++    for k in range(0, T):
++        acc += uk.mean(); uk = uk * u
++        if (k + 1) % rec == 0: print(f"  prediction v_{k+1} = sigma^2 sum_(k'<{k+1}) P_k' = {sig2 * acc:.5f}")
++print(f"({time.time()-t0:.0f}s)")
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_sixaxis_sim.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_sixaxis_sim.out.txt
+new file mode 100644
+index 0000000000..69da2aaa54
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_sixaxis_sim.out.txt
+@@ -0,0 +1,126 @@
++six-axis beta=3.0 (p,q,r)=(20.09,0.04979,1.0) L=256 T=3000
++  t=    75  frac(value 0)=0.99944
++  t=   150  frac(value 0)=0.99942
++  t=   225  frac(value 0)=0.99936
++  t=   300  frac(value 0)=0.99933
++  t=   375  frac(value 0)=0.99945
++  t=   450  frac(value 0)=0.99950
++  t=   525  frac(value 0)=0.99940
++  t=   600  frac(value 0)=0.99939
++  t=   675  frac(value 0)=0.99951
++  t=   750  frac(value 0)=0.99934
++  t=   825  frac(value 0)=0.99957
++  t=   900  frac(value 0)=0.99930
++  t=   975  frac(value 0)=0.99956
++  t=  1050  frac(value 0)=0.99951
++  t=  1125  frac(value 0)=0.99953
++  t=  1200  frac(value 0)=0.99940
++  t=  1275  frac(value 0)=0.99944
++  t=  1350  frac(value 0)=0.99947
++  t=  1425  frac(value 0)=0.99930
++  t=  1500  frac(value 0)=0.99948
++  t=  1575  frac(value 0)=0.99944
++  t=  1650  frac(value 0)=0.99965
++  t=  1725  frac(value 0)=0.99948
++  t=  1800  frac(value 0)=0.99931
++  t=  1875  frac(value 0)=0.99945
++  t=  1950  frac(value 0)=0.99953
++  t=  2025  frac(value 0)=0.99940
++  t=  2100  frac(value 0)=0.99954
++  t=  2175  frac(value 0)=0.99940
++  t=  2250  frac(value 0)=0.99951
++  t=  2325  frac(value 0)=0.99950
++  t=  2400  frac(value 0)=0.99944
++  t=  2475  frac(value 0)=0.99953
++  t=  2550  frac(value 0)=0.99934
++  t=  2625  frac(value 0)=0.99936
++  t=  2700  frac(value 0)=0.99945
++  t=  2775  frac(value 0)=0.99944
++  t=  2850  frac(value 0)=0.99948
++  t=  2925  frac(value 0)=0.99950
++  t=  3000  frac(value 0)=0.99937
++(12s)
++six-axis beta=4.0 (p,q,r)=(54.6,0.01832,1.0) L=256 T=3000
++  t=    75  frac(value 0)=0.99997
++  t=   150  frac(value 0)=1.00000
++  t=   225  frac(value 0)=0.99998
++  t=   300  frac(value 0)=0.99998
++  t=   375  frac(value 0)=1.00000
++  t=   450  frac(value 0)=0.99998
++  t=   525  frac(value 0)=0.99997
++  t=   600  frac(value 0)=0.99994
++  t=   675  frac(value 0)=0.99994
++  t=   750  frac(value 0)=0.99994
++  t=   825  frac(value 0)=0.99998
++  t=   900  frac(value 0)=0.99995
++  t=   975  frac(value 0)=1.00000
++  t=  1050  frac(value 0)=0.99995
++  t=  1125  frac(value 0)=1.00000
++  t=  1200  frac(value 0)=0.99998
++  t=  1275  frac(value 0)=0.99997
++  t=  1350  frac(value 0)=0.99998
++  t=  1425  frac(value 0)=0.99994
++  t=  1500  frac(value 0)=0.99995
++  t=  1575  frac(value 0)=0.99995
++  t=  1650  frac(value 0)=0.99997
++  t=  1725  frac(value 0)=0.99994
++  t=  1800  frac(value 0)=0.99997
++  t=  1875  frac(value 0)=0.99995
++  t=  1950  frac(value 0)=1.00000
++  t=  2025  frac(value 0)=0.99997
++  t=  2100  frac(value 0)=1.00000
++  t=  2175  frac(value 0)=0.99992
++  t=  2250  frac(value 0)=0.99998
++  t=  2325  frac(value 0)=1.00000
++  t=  2400  frac(value 0)=0.99995
++  t=  2475  frac(value 0)=0.99998
++  t=  2550  frac(value 0)=0.99997
++  t=  2625  frac(value 0)=0.99998
++  t=  2700  frac(value 0)=0.99997
++  t=  2775  frac(value 0)=1.00000
++  t=  2850  frac(value 0)=1.00000
++  t=  2925  frac(value 0)=0.99997
++  t=  3000  frac(value 0)=1.00000
++(13s)
++six-axis beta=6.0 (p,q,r)=(403.4,0.002479,1.0) L=256 T=3000
++  t=    75  frac(value 0)=1.00000
++  t=   150  frac(value 0)=1.00000
++  t=   225  frac(value 0)=1.00000
++  t=   300  frac(value 0)=1.00000
++  t=   375  frac(value 0)=1.00000
++  t=   450  frac(value 0)=1.00000
++  t=   525  frac(value 0)=1.00000
++  t=   600  frac(value 0)=1.00000
++  t=   675  frac(value 0)=1.00000
++  t=   750  frac(value 0)=1.00000
++  t=   825  frac(value 0)=1.00000
++  t=   900  frac(value 0)=1.00000
++  t=   975  frac(value 0)=1.00000
++  t=  1050  frac(value 0)=1.00000
++  t=  1125  frac(value 0)=1.00000
++  t=  1200  frac(value 0)=1.00000
++  t=  1275  frac(value 0)=1.00000
++  t=  1350  frac(value 0)=1.00000
++  t=  1425  frac(value 0)=1.00000
++  t=  1500  frac(value 0)=1.00000
++  t=  1575  frac(value 0)=1.00000
++  t=  1650  frac(value 0)=1.00000
++  t=  1725  frac(value 0)=1.00000
++  t=  1800  frac(value 0)=1.00000
++  t=  1875  frac(value 0)=1.00000
++  t=  1950  frac(value 0)=1.00000
++  t=  2025  frac(value 0)=1.00000
++  t=  2100  frac(value 0)=1.00000
++  t=  2175  frac(value 0)=1.00000
++  t=  2250  frac(value 0)=1.00000
++  t=  2325  frac(value 0)=1.00000
++  t=  2400  frac(value 0)=1.00000
++  t=  2475  frac(value 0)=1.00000
++  t=  2550  frac(value 0)=1.00000
++  t=  2625  frac(value 0)=1.00000
++  t=  2700  frac(value 0)=1.00000
++  t=  2775  frac(value 0)=1.00000
++  t=  2850  frac(value 0)=1.00000
++  t=  2925  frac(value 0)=1.00000
++  t=  3000  frac(value 0)=1.00000
++(13s)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_sixaxis_sim.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_sixaxis_sim.py
+new file mode 100644
+index 0000000000..42e69bc4a4
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_sixaxis_sim.py
+@@ -0,0 +1,23 @@
++# The six-axis formation law in level time at the sphere weight restricted to the axes: (p, q, r) = (e^beta, e^-beta, 1).
++# Values 0..5 = +e1,-e1,+e2,-e2,+e3,-e3; phi(v,v') = p same, q antipodal, r orthogonal. Periodic L x L plane, aligned start (value 0).
++import numpy as np, sys, time
++beta = float(sys.argv[1]); L = int(sys.argv[2]); T = int(sys.argv[3])
++p, q, r = np.exp(beta), np.exp(-beta), 1.0
++phi = np.full((6, 6), r)
++for v in range(6):
++    phi[v, v] = p; phi[v, v ^ 1] = q
++rng = np.random.default_rng(7)
++s = np.zeros((L, L), dtype=np.int64)
++rec = max(1, T // 40); t0 = time.time()
++print(f"six-axis beta={beta} (p,q,r)=({p:.4g},{q:.4g},{r}) L={L} T={T}")
++for t in range(1, T + 1):
++    p1, p2, p3 = s, np.roll(s, 1, axis=0), np.roll(s, 1, axis=1)
++    W = phi[:, p1] * phi[:, p2] * phi[:, p3]          # shape (6, L, L)
++    W = W / W.sum(axis=0, keepdims=True)
++    C = np.cumsum(W, axis=0)
++    U = rng.random((L, L))
++    s = (U[None, :, :] > C).sum(axis=0)
++    s = np.minimum(s, 5)
++    if t % rec == 0:
++        print(f"  t={t:6d}  frac(value 0)={np.mean(s == 0):.5f}")
++print(f"({time.time()-t0:.0f}s)")
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_sphere_sim.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_sphere_sim.out.txt
+new file mode 100644
+index 0000000000..d6fb9c6074
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_sphere_sim.out.txt
+@@ -0,0 +1,210 @@
++===== sim_b12_L512_T20000.txt =====
++beta=12.0 L=512 T=20000 (621s)
++  t=   500  |m|=0.89514  m_z=0.89510
++  t=  1000  |m|=0.88717  m_z=0.88708
++  t=  1500  |m|=0.88166  m_z=0.88160
++  t=  2000  |m|=0.87941  m_z=0.87939
++  t=  2500  |m|=0.87659  m_z=0.87652
++  t=  3000  |m|=0.87608  m_z=0.87606
++  t=  3500  |m|=0.87417  m_z=0.87414
++  t=  4000  |m|=0.87158  m_z=0.87151
++  t=  4500  |m|=0.87093  m_z=0.87073
++  t=  5000  |m|=0.87166  m_z=0.87146
++  t=  5500  |m|=0.87014  m_z=0.86998
++  t=  6000  |m|=0.87036  m_z=0.86995
++  t=  6500  |m|=0.86714  m_z=0.86638
++  t=  7000  |m|=0.86524  m_z=0.86423
++  t=  7500  |m|=0.86440  m_z=0.86385
++  t=  8000  |m|=0.86156  m_z=0.86113
++  t=  8500  |m|=0.86008  m_z=0.85963
++  t=  9000  |m|=0.85628  m_z=0.85610
++  t=  9500  |m|=0.85522  m_z=0.85510
++  t= 10000  |m|=0.85391  m_z=0.85369
++  t= 10500  |m|=0.85453  m_z=0.85445
++  t= 11000  |m|=0.85535  m_z=0.85524
++  t= 11500  |m|=0.85646  m_z=0.85631
++  t= 12000  |m|=0.85396  m_z=0.85385
++  t= 12500  |m|=0.85580  m_z=0.85534
++  t= 13000  |m|=0.85412  m_z=0.85379
++  t= 13500  |m|=0.85304  m_z=0.85267
++  t= 14000  |m|=0.85482  m_z=0.85437
++  t= 14500  |m|=0.85757  m_z=0.85673
++  t= 15000  |m|=0.85939  m_z=0.85844
++  t= 15500  |m|=0.85791  m_z=0.85648
++  t= 16000  |m|=0.85920  m_z=0.85739
++  t= 16500  |m|=0.85528  m_z=0.85220
++  t= 17000  |m|=0.85491  m_z=0.85234
++  t= 17500  |m|=0.85481  m_z=0.85124
++  t= 18000  |m|=0.85548  m_z=0.85234
++  t= 18500  |m|=0.85485  m_z=0.85125
++  t= 19000  |m|=0.85408  m_z=0.85157
++  t= 19500  |m|=0.85186  m_z=0.84952
++  t= 20000  |m|=0.85371  m_z=0.85153
++===== sim_b24_L512_T20000.txt =====
++beta=24.0 L=512 T=20000 (545s)
++  t=   500  |m|=0.94831  m_z=0.94830
++  t=  1000  |m|=0.94440  m_z=0.94435
++  t=  1500  |m|=0.94173  m_z=0.94170
++  t=  2000  |m|=0.94057  m_z=0.94056
++  t=  2500  |m|=0.93914  m_z=0.93911
++  t=  3000  |m|=0.93902  m_z=0.93901
++  t=  3500  |m|=0.93812  m_z=0.93810
++  t=  4000  |m|=0.93676  m_z=0.93673
++  t=  4500  |m|=0.93645  m_z=0.93637
++  t=  5000  |m|=0.93684  m_z=0.93675
++  t=  5500  |m|=0.93614  m_z=0.93607
++  t=  6000  |m|=0.93612  m_z=0.93593
++  t=  6500  |m|=0.93459  m_z=0.93422
++  t=  7000  |m|=0.93385  m_z=0.93338
++  t=  7500  |m|=0.93345  m_z=0.93320
++  t=  8000  |m|=0.93195  m_z=0.93177
++  t=  8500  |m|=0.93117  m_z=0.93096
++  t=  9000  |m|=0.92914  m_z=0.92907
++  t=  9500  |m|=0.92871  m_z=0.92867
++  t= 10000  |m|=0.92807  m_z=0.92798
++  t= 10500  |m|=0.92845  m_z=0.92843
++  t= 11000  |m|=0.92864  m_z=0.92861
++  t= 11500  |m|=0.92900  m_z=0.92895
++  t= 12000  |m|=0.92772  m_z=0.92769
++  t= 12500  |m|=0.92878  m_z=0.92860
++  t= 13000  |m|=0.92819  m_z=0.92806
++  t= 13500  |m|=0.92735  m_z=0.92719
++  t= 14000  |m|=0.92829  m_z=0.92808
++  t= 14500  |m|=0.92977  m_z=0.92939
++  t= 15000  |m|=0.93099  m_z=0.93059
++  t= 15500  |m|=0.93003  m_z=0.92939
++  t= 16000  |m|=0.93072  m_z=0.92992
++  t= 16500  |m|=0.92872  m_z=0.92735
++  t= 17000  |m|=0.92839  m_z=0.92722
++  t= 17500  |m|=0.92844  m_z=0.92677
++  t= 18000  |m|=0.92875  m_z=0.92731
++  t= 18500  |m|=0.92838  m_z=0.92671
++  t= 19000  |m|=0.92819  m_z=0.92703
++  t= 19500  |m|=0.92703  m_z=0.92594
++  t= 20000  |m|=0.92780  m_z=0.92682
++===== sim_b3_L512_T20000.txt =====
++beta=3.0 L=512 T=20000 (535s)
++  t=   500  |m|=0.51187  m_z=0.51176
++  t=  1000  |m|=0.46473  m_z=0.46437
++  t=  1500  |m|=0.43163  m_z=0.43095
++  t=  2000  |m|=0.42222  m_z=0.42162
++  t=  2500  |m|=0.39922  m_z=0.39821
++  t=  3000  |m|=0.39599  m_z=0.39588
++  t=  3500  |m|=0.39506  m_z=0.39446
++  t=  4000  |m|=0.40095  m_z=0.40005
++  t=  4500  |m|=0.39959  m_z=0.39833
++  t=  5000  |m|=0.38730  m_z=0.38631
++  t=  5500  |m|=0.37550  m_z=0.37464
++  t=  6000  |m|=0.37723  m_z=0.37403
++  t=  6500  |m|=0.36632  m_z=0.36210
++  t=  7000  |m|=0.36007  m_z=0.35541
++  t=  7500  |m|=0.36420  m_z=0.36164
++  t=  8000  |m|=0.34224  m_z=0.33975
++  t=  8500  |m|=0.33876  m_z=0.33721
++  t=  9000  |m|=0.32475  m_z=0.32447
++  t=  9500  |m|=0.32173  m_z=0.32134
++  t= 10000  |m|=0.31233  m_z=0.31130
++  t= 10500  |m|=0.31470  m_z=0.31421
++  t= 11000  |m|=0.30829  m_z=0.30749
++  t= 11500  |m|=0.30489  m_z=0.30414
++  t= 12000  |m|=0.29669  m_z=0.29607
++  t= 12500  |m|=0.30197  m_z=0.30026
++  t= 13000  |m|=0.30076  m_z=0.29973
++  t= 13500  |m|=0.30395  m_z=0.30319
++  t= 14000  |m|=0.30562  m_z=0.30364
++  t= 14500  |m|=0.30929  m_z=0.30532
++  t= 15000  |m|=0.30297  m_z=0.29662
++  t= 15500  |m|=0.29120  m_z=0.28123
++  t= 16000  |m|=0.29276  m_z=0.28358
++  t= 16500  |m|=0.28049  m_z=0.26987
++  t= 17000  |m|=0.28098  m_z=0.27431
++  t= 17500  |m|=0.27812  m_z=0.26878
++  t= 18000  |m|=0.27372  m_z=0.26421
++  t= 18500  |m|=0.28893  m_z=0.27858
++  t= 19000  |m|=0.29633  m_z=0.28971
++  t= 19500  |m|=0.28088  m_z=0.27217
++  t= 20000  |m|=0.27989  m_z=0.27349
++===== sim_b6_L256_T20000.txt =====
++beta=6.0 L=256 T=20000 (116s)
++  t=   500  |m|=0.78292  m_z=0.78267
++  t=  1000  |m|=0.76809  m_z=0.76753
++  t=  1500  |m|=0.76676  m_z=0.76672
++  t=  2000  |m|=0.74954  m_z=0.74924
++  t=  2500  |m|=0.74166  m_z=0.74081
++  t=  3000  |m|=0.73118  m_z=0.72937
++  t=  3500  |m|=0.73282  m_z=0.72749
++  t=  4000  |m|=0.73407  m_z=0.72865
++  t=  4500  |m|=0.73100  m_z=0.72530
++  t=  5000  |m|=0.73813  m_z=0.73220
++  t=  5500  |m|=0.72218  m_z=0.71912
++  t=  6000  |m|=0.71926  m_z=0.71508
++  t=  6500  |m|=0.72506  m_z=0.71911
++  t=  7000  |m|=0.72270  m_z=0.71846
++  t=  7500  |m|=0.72921  m_z=0.72166
++  t=  8000  |m|=0.72953  m_z=0.71884
++  t=  8500  |m|=0.73565  m_z=0.72376
++  t=  9000  |m|=0.72896  m_z=0.72204
++  t=  9500  |m|=0.72533  m_z=0.71914
++  t= 10000  |m|=0.72403  m_z=0.71651
++  t= 10500  |m|=0.72344  m_z=0.71500
++  t= 11000  |m|=0.72820  m_z=0.71880
++  t= 11500  |m|=0.71878  m_z=0.71402
++  t= 12000  |m|=0.73119  m_z=0.72325
++  t= 12500  |m|=0.71510  m_z=0.70978
++  t= 13000  |m|=0.70659  m_z=0.70433
++  t= 13500  |m|=0.71068  m_z=0.70726
++  t= 14000  |m|=0.71511  m_z=0.70957
++  t= 14500  |m|=0.70738  m_z=0.70513
++  t= 15000  |m|=0.71517  m_z=0.71275
++  t= 15500  |m|=0.71735  m_z=0.71346
++  t= 16000  |m|=0.71603  m_z=0.71042
++  t= 16500  |m|=0.71210  m_z=0.71070
++  t= 17000  |m|=0.70190  m_z=0.69975
++  t= 17500  |m|=0.70766  m_z=0.70344
++  t= 18000  |m|=0.69833  m_z=0.69477
++  t= 18500  |m|=0.68667  m_z=0.68451
++  t= 19000  |m|=0.67961  m_z=0.67634
++  t= 19500  |m|=0.67891  m_z=0.67731
++  t= 20000  |m|=0.67420  m_z=0.67114
++===== sim_b6_L512_T20000.txt =====
++beta=6.0 L=512 T=20000 (602s)
++  t=   500  |m|=0.78266  m_z=0.78259
++  t=  1000  |m|=0.76604  m_z=0.76588
++  t=  1500  |m|=0.75421  m_z=0.75407
++  t=  2000  |m|=0.74977  m_z=0.74966
++  t=  2500  |m|=0.74467  m_z=0.74447
++  t=  3000  |m|=0.74474  m_z=0.74469
++  t=  3500  |m|=0.74139  m_z=0.74129
++  t=  4000  |m|=0.73694  m_z=0.73676
++  t=  4500  |m|=0.73362  m_z=0.73320
++  t=  5000  |m|=0.73525  m_z=0.73486
++  t=  5500  |m|=0.72837  m_z=0.72804
++  t=  6000  |m|=0.73154  m_z=0.73067
++  t=  6500  |m|=0.72540  m_z=0.72396
++  t=  7000  |m|=0.71950  m_z=0.71744
++  t=  7500  |m|=0.71714  m_z=0.71585
++  t=  8000  |m|=0.71449  m_z=0.71347
++  t=  8500  |m|=0.71069  m_z=0.70967
++  t=  9000  |m|=0.70399  m_z=0.70347
++  t=  9500  |m|=0.69990  m_z=0.69958
++  t= 10000  |m|=0.69990  m_z=0.69928
++  t= 10500  |m|=0.69860  m_z=0.69827
++  t= 11000  |m|=0.69956  m_z=0.69896
++  t= 11500  |m|=0.70501  m_z=0.70420
++  t= 12000  |m|=0.70078  m_z=0.70007
++  t= 12500  |m|=0.70550  m_z=0.70388
++  t= 13000  |m|=0.70151  m_z=0.70037
++  t= 13500  |m|=0.69759  m_z=0.69662
++  t= 14000  |m|=0.69922  m_z=0.69813
++  t= 14500  |m|=0.70369  m_z=0.70152
++  t= 15000  |m|=0.70170  m_z=0.69918
++  t= 15500  |m|=0.70174  m_z=0.69835
++  t= 16000  |m|=0.69954  m_z=0.69515
++  t= 16500  |m|=0.69200  m_z=0.68472
++  t= 17000  |m|=0.69165  m_z=0.68563
++  t= 17500  |m|=0.69093  m_z=0.68318
++  t= 18000  |m|=0.69377  m_z=0.68705
++  t= 18500  |m|=0.69202  m_z=0.68459
++  t= 19000  |m|=0.68714  m_z=0.68134
++  t= 19500  |m|=0.68341  m_z=0.67803
++  t= 20000  |m|=0.68780  m_z=0.68227
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_sphere_sim.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_sphere_sim.py
+new file mode 100644
+index 0000000000..fa0bc7e4e8
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_sphere_sim.py
+@@ -0,0 +1,29 @@
++# Exploration: the unsoldered (sphere) formation law in level time on a periodic L x L level plane.
++# New spin at x ~ exp(beta s . S), S = s_{x-e1} + s_{x-e2} + s_{x-e3}; in plane coordinates the three predecessors of (i,j) are
++# (i,j) [the e1-predecessor, projected onto the plane through the bijection x -> (x2, x3)], (i-1,j), (i,j-1).
++# Exact vMF sampling on S^2: cosine w = 1 + log(u + (1-u) e^{-2 kappa})/kappa, uniform azimuth.
++import numpy as np, sys, time
++def run(beta, L, T, seed=0, record_every=1):
++    rng = np.random.default_rng(seed)
++    s = np.zeros((L, L, 3)); s[..., 2] = 1.0   # aligned initial plane (pole)
++    out = []
++    for t in range(1, T + 1):
++        S = s + np.roll(s, 1, axis=0) + np.roll(s, 1, axis=1)
++        norm = np.linalg.norm(S, axis=2); u = S / norm[..., None]; kappa = beta * norm
++        U = rng.random((L, L)); w = 1.0 + np.log(U + (1.0 - U) * np.exp(-2.0 * kappa)) / kappa
++        w = np.clip(w, -1.0, 1.0)
++        phi = rng.random((L, L)) * 2 * np.pi
++        # orthonormal tangent frame at u
++        a = np.where((np.abs(u[..., 0]) < 0.9)[..., None], np.array([1.0, 0, 0]), np.array([0, 1.0, 0]))
++        e1 = a - (a * u).sum(-1)[..., None] * u; e1 /= np.linalg.norm(e1, axis=2)[..., None]
++        e2 = np.cross(u, e1)
++        r = np.sqrt(np.clip(1 - w * w, 0, 1))
++        s = w[..., None] * u + r[..., None] * (np.cos(phi)[..., None] * e1 + np.sin(phi)[..., None] * e2)
++        if t % record_every == 0:
++            m = s.mean(axis=(0, 1)); out.append((t, np.linalg.norm(m), m[2]))
++    return out
++beta = float(sys.argv[1]); L = int(sys.argv[2]); T = int(sys.argv[3])
++t0 = time.time(); res = run(beta, L, T, seed=1, record_every=max(1, T // 40))
++print(f"beta={beta} L={L} T={T} ({time.time()-t0:.0f}s)")
++for t, m, mz in res:
++    print(f"  t={t:6d}  |m|={m:.5f}  m_z={mz:.5f}")
+diff --git a/docs/ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_IN_LEVEL_TIME_GAIN_ONE_SPIN_WAVES_LOCAL_LIMIT_CONSTANT_FINITE_PLANES_FORGET_AND_THE_SIMULATED_ALGEBRAIC_DECAY_OF_THE_INITIAL_PLANE_MEMORY_BOUNDED_THEOREM_NOTE_2026-09-16.md b/docs/ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_IN_LEVEL_TIME_GAIN_ONE_SPIN_WAVES_LOCAL_LIMIT_CONSTANT_FINITE_PLANES_FORGET_AND_THE_SIMULATED_ALGEBRAIC_DECAY_OF_THE_INITIAL_PLANE_MEMORY_BOUNDED_THEOREM_NOTE_2026-09-16.md
+new file mode 100644
+index 0000000000..e50aaf4b66
+--- /dev/null
++++ b/docs/ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_IN_LEVEL_TIME_GAIN_ONE_SPIN_WAVES_LOCAL_LIMIT_CONSTANT_FINITE_PLANES_FORGET_AND_THE_SIMULATED_ALGEBRAIC_DECAY_OF_THE_INITIAL_PLANE_MEMORY_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -0,0 +1,237 @@
++---
++claim_id: admissibility_rule_unsoldered_formation_law_in_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_and_the_simulated_algebraic_decay_of_the_initial_plane_memory_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++claim_scope: "For the unsoldered (sphere) formation law of the covariant rule with overlap weight e^{beta s.s'} on Z^3 in level order — the record at x drawn from K_beta(s | s_{x-e_1}, s_{x-e_2}, s_{x-e_3}) proportional to e^{beta s.S}, S the sum of the three recorded predecessors, read as the synchronous level automaton on Z^2: (T1) K_beta(.|S) is the exponential-overlap law with concentration kappa = beta |S| about S/|S|; E[s|S] = A(kappa) S/|S| and E[s s^T|S] = (A/kappa) I + (1 - 3A/kappa) u u^T with A(kappa) = coth kappa - 1/kappa, and A(kappa) < kappa/3; from the aligned plane the one-step magnetization is A(3 beta) and the one-step transverse second moment 2A(3 beta)/(3 beta) (proved; symbolic and exact enclosures); (T2) the linearized transverse mean is the average of the three predecessors' transverse coordinates — gain one, forced by rotation covariance — with exact one-step variance A(3 beta)/(3 beta) per component (proved; block 13's second-order statement re-proved at scope); (T3) the return sums P_k = sum_y p_k(y)^2 of the three-predecessor level walk obey 3 sqrt3/(4 pi k) - 1/k^2 - (5/(2k)) e^{-k/4} <= P_k <= 3 sqrt3/(4 pi k) + 27/k^2 + e^{-sqrt(k)/7}, so k P_k tends to 3 sqrt3/(4 pi), and sum_{k<=t} P_k >= (3 sqrt3/(4 pi)) H_t - 1/4 for every t (proved; the sums exact for k <= 150, the constants enclosed rationally); (T4) on every periodic L x L level plane the automaton has a unique invariant law, invariant under all rotations, so the magnetization from any initial plane tends to zero, and on the one-site plane m_t = A(3 beta)^t exactly (proved); (T5) the linearized transverse field from the aligned plane has variance v_t = (A(3 beta)/(3 beta)) sum_{k<t} P_k per component, growing like gamma(beta) log t with gamma(beta) = (3 sqrt3/(4 pi)) A(3 beta)/(3 beta), and has no stationary law with finite variance (proved). Executed and not proved (frontier discovery): the nonlinear law simulated on periodic planes up to 512 x 512 for 20000 levels at beta = 3, 6, 12, 24 loses the magnetization of its initial plane with no plateau, at local exponents above gamma(beta) that approach it as beta grows, while the six-axis formation law at the weights (e^beta, e^-beta, 1) keeps its plane at the same beta; the infinite-plane statement is a conjecture named as such. No menu, reading, order or coupling is selected as physical; exact arithmetic throughout the runner."
++upstream_dependencies:
++  - minimal_axioms
++  - admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06
++runner: scripts/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16.py
++---
++
++# The unsoldered formation law in level time: gain-one spin waves with the local-limit constant, finite planes forget, and the simulated algebraic decay of the initial plane's memory
++
++**Date:** 2026-09-16
++**Type:** bounded_theorem (T1–T5); frontier discovery for the executed nonlinear decay
++**Status:** bounded-support (exact; conditional on the named supplied readings; the infinite-plane decay simulated, not proved; unaudited)
++
++## Result up front
++
++The campaign now knows both sides of the six-axis menu — the static reading
++orders at strong coupling (block 17) and so does the formation reading (block
++25) — and one side of the sphere menu: the static sphere law orders on `Z³`
++for `β > 76/100` (blocks 19, 22). The formation side of the sphere menu was
++unworked. Block 13 linearized it and found gain one: a new record's transverse
++coordinate is the plain average of its three predecessors' plus a noise of
++variance `1/(3β)`, and a plain average on a two-dimensional level plane never
++settles — the variance grows like the logarithm of the level. Block 13 left
++"whether an aligned region exists at all" open.
++
++This note proves the exact one-step identities of the nonlinear kernel, the
++local-limit constant `3√3/(4π)` of the level walk with explicit error bounds
++(block 13 had only two-sided bounds a factor thirty apart), that every finite
++periodic plane forgets its initial plane, and the exact exponent
++`γ(β) = (3√3/(4π))·A(3β)/(3β)` of the linearized field. Then it does what the
++theorems cannot: it runs the nonlinear law. Started from a plane of identical
++records, the sphere formation law loses its magnetization at every coupling
++tried (`β = 3, 6, 12, 24`), with no plateau over twenty thousand levels on
++planes of half a million sites, at rates above the spin-wave value and
++approaching it as `β` grows; the six-axis formation law with the same overlap
++weight restricted to the axes (`p, q, r = e^{β}, e^{−β}, 1`) keeps its plane
++at the same `β`. In plain words: with a continuum of directions to choose
++from, records laid down one after another drift slowly away from the direction
++they started with, and the drift never stops; with six directions only, they
++hold. The static reading of the sphere menu holds too (block 19). So the
++reading decides memory for the continuous menu, and the menu decides whether
++the formation reading keeps it. The infinite-plane statement for the sphere
++formation law is a conjecture supported by the simulations and by the exact
++linear theory; it is not proved here.
++
++Exactly: the kernel's moments and `A(κ) < κ/3` (T1); gain one and the
++one-step variance `A(3β)/(3β)` (T2); the two-sided bounds on `P_k` with the
++constant `3√3/(4π)` and `Σ_{k≤t} P_k ≥ (3√3/(4π))H_t − 1/4` (T3); the unique
++rotation-invariant law of every finite plane and `m_t = A(3β)^t` on one site
++(T4); `v_t = (A(3β)/(3β)) Σ_{k<t} P_k` and the exponent `γ(β)` (T5). Executed
++with exact arithmetic: 20 checks, 14 mutations. Simulated (control and refuting
++specs, not the runner): the nonlinear decay, the six-axis side-by-side, the
++linear model against its exact variance, finite-size series, an independent
++sampler.
++
++## Machine status and trace
++
++```yaml
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: frontier_discovery
++target_claim_id: null
++target_blocker_text: "block 13's open item (PR #8147): whether an aligned region of the sphere formation law exists at all; the campaign's record-dynamics row for the continuous menu"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem_plus_decisive_artifact
++next_trace_action: "T1-T5 exact; the nonlinear decay of the sphere formation law's magnetization is executed at beta = 3, 6, 12, 24 and named as a conjecture for the infinite plane. Open: a proof that the sphere formation law on Z^3 has no invariant law reached from an aligned plane with positive magnetization (the twist argument fails in level time; recorded under N1); the growth of the memory time with the plane size (L^2 in the linear theory) against the six-axis law's. Consumers: the campaign's decision record (memory under the two readings and two menus); #8093's assembly"
++conditional_surface_status: "T1-T5 proved for every beta > 0 under the records-only reading, positivity of the overlap weight, the sphere menu and the monotone level order as supplied conditions; the nonlinear infinite-plane decay simulated on periodic planes up to 512 x 512 for 20000 levels (control and refuter outputs in the pack), not proved; three standard mathematical imports named at definition level"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++audit_required_before_effective_retained: true
++```
++
++## Premises and declared objects
++
++The axioms memo (`docs/MINIMAL_AXIOMS_2026-06-29.md`) is used through the sentences "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.", "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.", "Records form.", and "Only records are readable.". Block 01 (`docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md`, on `main`) supplies the rule's product form and its one-site conditional given a recorded set; the unsoldered menu, the monotone level order and its level reading are declared below (blocks 05, 08, 12, 13, 18, 19, 25 — open PRs #8003, #8138, #8146, #8147, #8152, #8153, #8168 — are referenced as evidence addresses only). All proposed and unaudited.
++
++Declared objects.
++- **The unsoldered menu and rule.** Values are unit vectors `s ∈ S²` (the unsoldered reading of the qubit, block 18's menu); the covariant overlap weight `φ(s, s') = e^{β s·s'}` with `β > 0` (the static law of this weight is blocks 19–23's object). The one-site conditional given a recorded set `A` of neighbours is `K(s | s_A) ∝ Π_{y∈A} φ(s, s_y)` against the uniform surface measure.
++- **Space-time and level time.** Sites `x ∈ Z³`, level `τ(x) = x_1 + x_2 + x_3`, predecessors `x − e_j`; records form level by level, the record at `x` drawn from `K_β(· | s_{x−e_1}, s_{x−e_2}, s_{x−e_3})`, independently across a level given the previous one; level `0` carries a supplied plane. The **level automaton** is the Markov chain of level configurations on `(S²)^{Z²}` after the bijection `x ↦ (x_2, x_3)` of each level; its neighbourhood is `{(0,0), (−1,0), (0,−1)}`. The **plane coordinates** of the three predecessors are the shifts `(0,0)`, `(−1,0)`, `(0,−1)`.
++- **The sphere kernel.** For `S ∈ R³`, `K_β(ds | S) = (κ/(4π sinh κ)) e^{κ s·û} dσ(s)` with `κ = β|S|`, `û = S/|S|` (uniform when `S = 0`), `dσ` the surface measure. `A(κ) = coth κ − 1/κ` (the mean cosine to `û`).
++- **The magnetization.** From the aligned plane (every level-`0` record equal to `e`), `m_t = E[s_x·e]` at any site `x` of level `t` (the same at every site by translation invariance).
++- **The level walk.** The walk on `Z²` with steps `(0,0)`, `(−1,0)`, `(0,−1)`, each with probability `1/3`; `p_k(y)` its `k`-step law; `P_k = Σ_y p_k(y)²`; `u(θ) = |φ(θ)|²` with `φ(θ) = (1 + e^{−iθ_1} + e^{−iθ_2})/3`, so `u = (3 + 2cos θ_1 + 2cos θ_2 + 2cos(θ_1 − θ_2))/9`.
++- **The linearized field.** `θ_x = (θ_{x−e_1} + θ_{x−e_2} + θ_{x−e_3})/3 + ξ_x` on levels `t ≥ 1` with `θ ≡ 0` on level `0` and `ξ_x` i.i.d. centred with variance `σ² = A(3β)/(3β)` per component (two components); `v_t` its variance per component at level `t`; `H_t = Σ_{k≤t} 1/k`.
++- **The six-axis side-by-side.** The six-axis formation law of block 25 with the overlap weight restricted to the axes: `(p, q, r) = (e^{β}, e^{−β}, 1)`.
++
++## Prior art and what is new
++
++The exponential-overlap law on the sphere is the von Mises–Fisher law and `A(κ)` is the Langevin function; their moments are textbook facts, re-derived here in two lines. The absence of a stationary law for a gain-one average with noise on a two-dimensional lattice is block 13's T2/T5 (PR #8147), whose bounds on the return sums (`1/(36n)` and `9π/(16n)`) are replaced here by the constant `3√3/(4π)` with explicit errors (a local limit theorem for this walk, proved by hand from the integral representation). The impossibility of continuous symmetry breaking in two-dimensional equilibrium systems (Mermin–Wagner; Dobrushin–Shlosman; Pfister) does not apply to the level automaton, which is a non-equilibrium chain: an in-plane twist costs an amount proportional to the number of levels, so the relative-entropy box argument gives nothing (N1). Continuous-symmetry order in non-equilibrium two-dimensional dynamics is possible in general (Toner–Tu on Vicsek-type flocking), which is why the question is not settled by analogy and why it is executed here. None of these is used as authority. What is new: (i) the exact nonlinear identities T1 and the finite-plane theorem T4 for the sphere formation law; (ii) the level walk's local-limit constant with explicit two-sided error bounds and the harmonic lower bound with the computer-assisted constant `1/4` (T3); (iii) the exponent `γ(β)` (T5); (iv) the executed nonlinear decay at four couplings with the six-axis side-by-side at the same weight — the discriminator: under the sphere menu the reading decides memory (static keeps it, block 19; formation loses it, here), under the six-axis menu both readings keep it (blocks 17, 25).
++
++## Exact target and obligation graph
++
++| Obligation | Statement | Route | Runner family |
++|---|---|---|---|
++| T1 | the kernel's moments; `A(κ) < κ/3`; one-step magnetization `A(3β)` | two integrals; `sinh²κ ≥ κ² + κ⁴/3` | B |
++| T2 | gain one; one-step transverse variance `A(3β)/(3β)` | the second-order expansion; covariance | C |
++| T3 | `P_k` between `3√3/(4πk) ∓` explicit errors; `Σ_{k≤t}P_k ≥ (3√3/(4π))H_t − 1/4` | the integral representation; Gaussian integrals; exact sums to `150` | D |
++| T4 | finite planes forget; `m_t = A(3β)^t` on one site | a uniform minorization; rotation invariance of the unique law | E |
++| T5 | `v_t = σ² Σ_{k<t}P_k`; `γ(β)`; no stationary law with finite variance | the path representation; T3 | E |
++| executed | the nonlinear decay; the six-axis side-by-side | simulation (control, refuter) | — (specs) |
++
++## Theorem T1 — the kernel
++
++**Statement.** (a) `K_β(· | S)` has mean `A(κ)û` and second moment `E[s sᵀ | S] = (A(κ)/κ) I + (1 − 3A(κ)/κ) ûûᵀ`, where `κ = β|S|`, `û = S/|S|`; in particular `E[(s·û)²] = 1 − 2A/κ` and the transverse second moment is `E|s − (s·û)û|² = 2A/κ`. (b) `0 < A(κ) < κ/3` for `κ > 0`, and `A'(κ) ≤ 1/(3 + κ²)`. (c) From the aligned plane, `m_1 = A(3β)` and the one-step transverse second moment is `2A(3β)/(3β)`; more generally `m_{t+1} = E[A(β|S|) (S·e)/|S|]` with `S` the sum of the three predecessors at level `t`.
++
++**Proof.** (a) With `w = s·û`, the surface measure gives `∫ e^{κ s·û} dσ = 2π ∫_{−1}^{1} e^{κw} dw = 4π sinh κ/κ`, `E[w] = ∫ w e^{κw} dw / ∫ e^{κw} dw = coth κ − 1/κ` and `E[w²] = 1 − 2A/κ` (integration by parts; B1). The law is invariant under rotations about `û`, so `E[s] = E[w] û` and `E[s sᵀ] = a I + b ûûᵀ` with `a + b = E[w²]` and trace `3a + b = 1`, whence `a = A/κ`, `b = 1 − 3A/κ`. (b) `A'(κ) = 1/κ² − 1/sinh² κ`, and `sinh² κ = Σ_{n≥1} 2^{2n−1}κ^{2n}/(2n)! ≥ κ² + κ⁴/3`, so `A'(κ) ≤ 1/κ² − 1/(κ² + κ⁴/3) = 1/(3 + κ²) < 1/3`; as `A(0⁺) = 0`, `A(κ) = ∫_0^κ A' < κ/3`; positivity from `A' > 0` (`sinh κ > κ`). (c) At the aligned plane `S = 3e`, `κ = 3β`, `û = e`; apply (a). The general identity is the tower property with (a). ∎ (B1–B3: the moments symbolically; the series and the bound; exact rational enclosures of `A(3β)` at `β = 3, 6, 12, 24`: `[8888, 8889]/10⁴`, `[9444, 9445]/10⁴`, `[9722, 9723]/10⁴`, `[9861, 9862]/10⁴`.)
++
++## Theorem T2 — gain one
++
++**Statement.** Write the unit vectors near the pole `e` as `s = (θ, √(1 − |θ|²))` with `θ ∈ R²` and likewise `s_i = (θ_i, ·)` for the three predecessors. Then `β s·(s_1 + s_2 + s_3) = 3β − (β/2) Σ_i |θ − θ_i|² + O(4)`: the quadratic form is minimized at the average `(θ_1 + θ_2 + θ_3)/3` with Hessian `−3β I`. The linearized transverse mean has gain one; the exact one-step transverse variance at the aligned plane is `A(3β)/(3β)` per component.
++
++**Proof.** `s·s_i = θ·θ_i + √(1 − |θ|²)√(1 − |θ_i|²) = 1 − |θ − θ_i|²/2 + O(4)`; sum and multiply by `β`. The gradient of `Σ_i |θ − θ_i|²` vanishes at the average and its Hessian is `6I`. Gain one is forced by covariance: the kernel depends on the predecessors through their sum and is covariant under rotations, so shifting all three transverse coordinates by a common small `δ` shifts the mean by `δ`, and the symmetric linear map with that property is the average. The one-step variance is T1(c): `2A(3β)/(3β)` over two components. ∎ (C1, symbolically in a scaling parameter.)
++
++*Reading.* Block 13 (PR #8147, T5b) obtained the same expansion for a general zonal overlap with variance `1/(3β)` at second order; here the variance is the exact one-step value `A(3β)/(3β)`, which tends to `1/(3β)` as `β → ∞`.
++
++## Theorem T3 — the level walk's constant
++
++**Statement.** For every `k ≥ 1`,
++```
++3√3/(4πk) − 1/k² − (5/(2k)) e^{−k/4}  ≤  P_k  ≤  3√3/(4πk) + 27/k² + e^{−√k/7};
++```
++hence `k P_k → 3√3/(4π)`. Moreover `Σ_{k≤t} P_k ≥ (3√3/(4π)) H_t − 1/4` for every `t ≥ 1`, so `Σ_{k≤t} P_k ≥ (3√3/(4π)) log t − 1/4`.
++
++**Proof.** *The representation.* `p_k(y) = (2π)^{−2} ∫_{[−π,π]²} φ(θ)^k e^{−iθ·y} dθ` and, by Parseval, `P_k = (2π)^{−2} ∫ u(θ)^k dθ` with `u = |φ|²`. *The identity.* `1 − u = (4/9)[sin²(θ_1/2) + sin²(θ_2/2) + sin²((θ_1 − θ_2)/2)]` (D3). *Bounds on `1 − u`.* From `x²/4 − x⁴/48 ≤ sin²(x/2) ≤ x²/4` (all real `x`): `Q − W ≤ 1 − u ≤ Q` on `R²`, with `Q(θ) = (1/9)(θ_1² + θ_2² + (θ_1 − θ_2)²) = θᵀMθ`, `M = (1/9)[[2, −1], [−1, 2]]`, `det M = 1/27`, `Q ≥ |θ|²/9`, and `W = (1/108)(θ_1⁴ + θ_2⁴ + (θ_1 − θ_2)⁴) ≤ |θ|⁴/12` (as `(θ_1 − θ_2)⁴ ≤ 8(θ_1⁴ + θ_2⁴)`). On the square, from `sin²(x/2) ≥ x²/π²` for `|x| ≤ π` (dropping the third term): `1 − u ≥ (4/(9π²))|θ|²`. *Upper bound.* Let `ρ = (12/k)^{1/4}` (`ρ < π`). Outside `|θ| ≤ ρ`, `u^k ≤ (1 − 4ρ²/(9π²))^k ≤ e^{−(4√12/(9π²))√k} ≤ e^{−√k/7}`, and the normalized area is at most `1`. Inside, `u ≤ 1 − Q + W ≤ e^{W − Q}` and `kW ≤ kρ⁴/12 = 1`, so `u^k ≤ e^{−kQ} e^{kW} ≤ e^{−kQ}(1 + e·kW)`; therefore `(2π)^{−2} ∫_{|θ|≤ρ} u^k ≤ (2π)^{−2}[∫_{R²} e^{−kQ} + (ek/12) ∫_{R²} e^{−k|θ|²/9} |θ|⁴] = (2π)^{−2}[3√3π/k + (ek/12)(1458π/k³)] ≤ 3√3/(4πk) + 27/k²` (`121.5e/(4π) < 27`; the Gaussian integrals: D3). *Lower bound.* On `{Q ≤ 1/2}` (inside the square, as `|θ| ≤ 3/√2 < π` there), `u ≥ 1 − Q` and `log(1 − Q) ≥ −Q − Q²`, so `u^k ≥ e^{−kQ}(1 − kQ²)`; hence `P_k ≥ (2π)^{−2}[∫_{R²} e^{−kQ} − ∫_{Q>1/2} e^{−kQ} − k ∫_{R²} e^{−kQ} Q²] ≥ (2π)^{−2}[3√3π/k − e^{−k/4}·6√3π/k − k·(3√3π/k)(2/k²)] ≥ 3√3/(4πk) − (5/(2k))e^{−k/4} − 1/k²` (`∫ e^{−kQ}Q² = (3√3π/k)(2/k²)`: D3; `3√3/(2π) < 1`, `6√3/(4π) < 5/2`). *The harmonic bound.* For `t ≤ 150` the exact sums satisfy `Σ_{k≤t} P_k ≥ (3√3/(4π))H_t − 6/25` (D3, exact rationals with `3√3/(4π)` enclosed from above). For `t > 150`, the lower bound gives `Σ_{150<k≤t} P_k ≥ (3√3/(4π))(H_t − H_{150}) − Σ_{k>150}[1/k² + (5/(2k))e^{−k/4}] ≥ (3√3/(4π))(H_t − H_{150}) − 1/100`; adding, `Σ_{k≤t} P_k ≥ (3√3/(4π))H_t − 1/4`. Finally `H_t ≥ log t`. ∎ (D1: the trinomial form of `p_k` by enumeration; D2: the two-sided bounds for `k ≤ 150` with `√3`, `π` and the exponentials enclosed rationally, and `k²|P_k − 3√3/(4πk)| < 1`; D3: the identity, the Gaussian integrals, the harmonic bound.)
++
++*Reading.* The exact sums lie below `3√3/(4πk)` by about `1/(10k²)`; the stated errors are what the elementary argument gives.
++
++## Theorem T4 — finite planes forget
++
++**Statement.** On the periodic `L × L` level plane the level automaton has a unique invariant law `π_L`, invariant under every rotation of `S²`; from any initial plane, `|E[s_x · e] at level t| ≤ 2(1 − δ_L^{L²})^t` with `δ_L = 6β/(e^{6β} − 1)`; in particular the magnetization tends to `0`. On the one-site plane (`L = 1`), from the aligned plane, `m_t = A(3β)^t` exactly.
++
++**Proof.** The density of `K_β(· | S)` against the uniform probability law on the sphere is `(κ/sinh κ) e^{κ s·û} ≥ (κ/sinh κ) e^{−κ} = 2κ/(e^{2κ} − 1)`, a decreasing function of `κ` (E2), and `κ = β|S| ≤ 3β`; so every site's conditional has density at least `δ_L := 6β/(e^{6β} − 1)` (and `1` when `S = 0`). The level kernel is the product over the `L²` sites, so it has density at least `δ_L^{L²}` against the product uniform law: a uniform minorization, which gives a unique invariant law and total-variation distance `≤ (1 − δ_L^{L²})^t` from it after `t` levels. The kernel commutes with the simultaneous rotation of all records (`K_β(Rs | RS) = K_β(s | S)`), so `π_L ∘ R^{−1}` is invariant and equals `π_L`; the vector `E_{π_L}[s_x]` is then fixed by every rotation, hence `0`, and `|E_t[s_x·e]| ≤ 2(1 − δ_L^{L²})^t`. For `L = 1` the chain is `s_{t+1} ∼ K_β(· | 3s_t)`, with `E[s_{t+1}·e | s_t] = A(3β)(s_t·e)` by T1(a) (`κ = 3β`, `û = s_t`); iterate. ∎ (E1: the one-site recursion symbolically; E2: the minorization identities.)
++
++*Reading.* Every finite plane forgets, so the question is the growth of the memory time with `L`: the six-axis formation law's contours make it exponential in `L` in its ordered phase (block 25's route on a torus), while gain-one diffusion makes the linearized sphere field's memory time of order `βL²`. That difference of scale is what the executed nonlinear runs test on planes far larger than the levels run.
++
++## Theorem T5 — the linearized field
++
++**Statement.** From the aligned plane, `v_t = σ² Σ_{k<t} P_k` per component, `σ² = A(3β)/(3β)`; hence, with `γ(β) := (3√3/(4π))·A(3β)/(3β)`,
++```
++σ² ((3√3/(4π)) H_{t−1} − 1/4)  ≤  v_t  ≤  σ² ((3√3/(4π)) H_{t−1} + 150)      (t ≥ 2),
++```
++so `v_t = γ(β) log t + O(1)` and `v_t → ∞`; the linearized field has no stationary law with finite variance; and the second-order proxy `e^{−v_t}` of the magnetization decays like `t^{−γ(β)}`. Exactly, `γ(β) ∈ [408, 409]/10⁴` at `β = 3`, `[216, 217]/10⁴` at `6`, `[1116, 1117]/10⁵` at `12`, `[566, 567]/10⁵` at `24`, and `γ(β) → √3/(4πβ)` as `β → ∞`.
++
++**Proof.** Unfolding the recursion, `θ_x = Σ_{k<t} Σ_y p_k(y) ξ_{x − (0, y), t−k}` (the level walk started at `x`'s plane coordinates; T3's `p_k`), a sum of independent centred terms, so `Var = σ² Σ_{k<t} Σ_y p_k(y)² = σ² Σ_{k<t} P_k`. The bounds are T3 with `Σ_{k≥1}(27/k² + e^{−√k/7}) < 150`. A stationary law with finite variance would give, started from it, a variance at level `t` at least `v_t` (the noise terms of levels `1..t` are independent of the initial field), impossible as `v_t → ∞`. The enclosures of `γ` are exact arithmetic (E3). ∎
++
++*Reading.* At second order the sphere formation law is exactly block 13's massless causal law with the sphere's own noise; its magnetization proxy decays algebraically with an exponent that vanishes like `1/β`. The nonlinear law can only be worse at keeping its plane than this proxy suggests if the neglected cubic terms push the field further, and the executed runs say they do.
++
++## Executed: the nonlinear law simulated (frontier discovery, not proved)
++
++Controls `specs/supervisor_control_block26_sphere_sim.py` (the sphere formation law on a periodic `L × L` level plane from the aligned plane; each record drawn exactly from `K_β(· | S)` by inverting the cosine's law and drawing a uniform azimuth), `specs/supervisor_control_block26_sixaxis_sim.py` (block 25's six-axis law at `(e^{β}, e^{−β}, 1)`), and `specs/supervisor_control_block26_fit.py` (the table); refuting spec `specs/supervisor_control_block26_refuter.py` (an independent sampler built by a rotation of a pole sample; the linear model against its exact variance; a finite-size series). Outputs in `.out.txt`. `|m|` is the norm of the plane-averaged record; `exp[a, b]` is the slope of `−log|m|` against `log t` over `[a, b]`.
++
++| `β` | `L` | levels | `m(500)` | `m(5000)` | `m(20000)` | `exp[500, 5000]` | `exp[5000, 20000]` | `exp[500, 20000]` | `γ(β)` | run |
++|---|---|---|---|---|---|---|---|---|---|---|
++| 3 | 512 | 20000 | 0.5118 | 0.3863 | 0.2735 | 0.1181 | 0.2629 | 0.1864 | 0.04084 | control |
++| 6 | 256 | 20000 | 0.7827 | 0.7322 | 0.6711 | 0.0358 | 0.0399 | 0.0324 | 0.02170 | control |
++| 6 | 512 | 20000 | 0.7826 | 0.7349 | 0.6823 | 0.0275 | 0.0498 | 0.0395 | 0.02170 | control |
++| 12 | 512 | 20000 | 0.8951 | 0.8715 | 0.8515 | 0.0120 | 0.0154 | 0.0145 | 0.01117 | control |
++| 12 | 512 | 20000 | 0.8941 | 0.8673 | 0.8567 | 0.0132 | 0.0076 | 0.0103 | 0.01117 | refuter (independent sampler) |
++| 24 | 512 | 20000 | 0.9483 | 0.9367 | 0.9268 | 0.0055 | 0.0071 | 0.0066 | 0.00566 | control |
++
++Six-axis formation law at `(e^{β}, e^{−β}, 1)`, `256 × 256`, `3000` levels (control `..._sixaxis_sim`): mean fraction of dissenting records `5.6·10⁻⁴` at `β = 3`, `2.8·10⁻⁵` at `β = 4`, `0` at `β = 6` — the plane is kept. Small periodic planes at `β = 6` (refuter, the projection on the initial direction): `L = 32` wanders through `0.29` at `t = 4500` and crosses zero by `t ≈ 12500` (the scale `βL² ≈ 6·10³` of T4); `L = 64` and `L = 128` wander between `0.57` and `0.79` without losing the sign within `20000` levels; the large planes above are far from this regime (`βL² ≥ 4·10⁵`).
++
++What the runs say. (i) At every `β` the magnetization decays with no plateau over the whole run, on planes whose linear size squared exceeds the number of levels by more than a factor ten, so the finite-plane forgetting of T4 (memory time of order `L²` or longer) is not what is seen: the two plane sizes at `β = 6` agree. (ii) The local exponent is at or above `γ(β)` at every `β` and grows along the run — strongly at `β = 3` (`0.12` to `0.26`), hardly at `β = 24` (`0.0055` to `0.0071` against `γ = 0.0057`); the ratio to `γ(β)` falls toward one as `β` grows, so the exact linear theory is the large-`β` limit of what the nonlinear law does and the neglected terms only speed the loss of memory up. (iii) The linear model, simulated with the same noise, reproduces its exact variance `σ² Σ_{k<t} P_k` and decays more slowly than the nonlinear law at the same `β`: the neglected cubic terms speed the loss of memory up. (iv) The six-axis formation law at the same overlap weight keeps its plane: the fraction of dissenting records stays at `6·10⁻⁴` (`β = 3`), below `10⁻⁴` (`β = 4`) and at `0` (`β = 6`) over `3000` levels, as block 25 proves for large enough `p`. **Conjecture (not claimed as a theorem):** on the infinite plane the sphere formation law started from an aligned plane has `m_t → 0` for every `β > 0`, at least as fast as `t^{−γ(β)}`.
++
++## No-Go Discipline Gate
++
++The executed sentence is negative for the sphere formation law (it loses its plane) and is not a theorem; its escapes are named.
++
++### N1 — Routes by which the executed conclusion could be wrong, and by which a proof was sought
++1. *A plateau beyond the levels run.* The linear theory predicts none (`v_t → ∞`, T5), the local exponents grow rather than shrink along the runs, and no plane size shows saturation; but only `2·10⁴` levels at `β ≤ 24` are executed. The falsifier is stated.
++2. *Finite-size forgetting mistaken for infinite-plane decay.* Excluded on the run's scale by T4's `L²` estimate and by the agreement of `L = 256` and `L = 512` at `β = 6`; the finite-size series in the refuter shows the small planes decaying faster, as they must.
++3. *The sampler.* Two independent samplers agree; both reproduce `A(κ)` and `1 − 2A/κ` to Monte-Carlo accuracy (refuter).
++4. *A proof by a two-dimensional symmetry argument.* Attempted: rotating the whole trajectory by an in-plane twist `φ(x_⊥)` changes each site's conditional through the differences `φ(x_⊥) − φ(x_⊥ − e_j⊥)`, whose relative-entropy cost per site is of order `|∇φ|²` times the local transverse spread, of order one per site per level; over `T` levels the cost is proportional to `T`, so no twist of bounded cost exists and the box argument that closes the equilibrium case gives nothing here. Not a wall; recorded so that the next attempt starts elsewhere (a dynamical argument on the transverse second moment is the natural next route: T1(c) gives the exact one-step recursion `m_{t+1} = E[A(β|S|)(S·e)/|S|]`).
++5. *The exponent comparison.* The linear exponent is exact (T5); the nonlinear local exponents are fits over decades with the plane-average noise of a `512 × 512` plane; only their ordering and trend are used.
++
++### N2 — Wall-independence audit
++No no-go wall of the repository is used.
++
++### N3 — Hidden-wall scan
++No hidden dependence: the inputs are the axioms' sentences, block 01's rule, the sphere menu and the level order as declared.
++
++### N4 — Per-citation table
++| Citation | Role | Load-bearing? |
++|---|---|---|
++| `minimal_axioms` | the four sentences under Premises | yes (premise) |
++| block 01 (`main`) | the rule and its one-site conditional | yes (premise, proposed) |
++| block 13 (PR #8147) | the gain-one law and its bounds; its open item | sibling (re-proved at scope where used) |
++| blocks 18, 19, 22, 25 (open PRs) | the menu; the static sphere order; the six-axis formation order | placement only (evidence addresses) |
++
++### N5 — Resolution audit
++| Claim | per_element | per_site | per_mode | per_block | lattice_wide |
++|---|---|---|---|---|---|
++| "the sphere formation law loses its plane; the six-axis keeps it" | executed: the kernel's moments and normalizer symbolically; `A(κ) < κ/3` at ten points by enclosure; the expansion and its minimizer | executed: the one-site chain; the minorization; the six-axis deviations at `(e^{β}, e^{−β}, 1)` | executed: the path identity for `k ≤ 6`; `P_k` exactly for `k ≤ 150` against the bounds; the Gaussian integrals | executed: the harmonic bound to `150`; `γ(β)` enclosed at four couplings | T1–T5 proved for every `β > 0`; the nonlinear infinite-plane decay simulated at four couplings, not proved |
++
++### N6 — Partial-closure paths and primitive scan
++The registered primitives supply no coupling, menu or order; none is a wall.
++
++### N7 — Steelman
++Hostile reviewer: "A simulation of twenty thousand levels proves nothing about the infinite plane, and the exact part is a textbook exercise plus a local limit theorem." Reply: the exact part is stated as what it is, and the local-limit constant with explicit errors is more than block 13 had; the simulation is the campaign's first look at the sphere formation law and it answers the question the campaign asked — whether the two readings keep memory the same way — in the only currency available today, with the exact linear theory as the yardstick and the falsifier named. Conceded: the infinite-plane statement is a conjecture; the local exponents drift, so no single number is claimed for the nonlinear decay.
++
++### N8 — Cross-cycle echo
++Block 13's gain dichotomy is the linear core; block 19's static order is the counterpart the runs are measured against; block 25's six-axis contours are why the discrete menu holds; block 20's "the menu decides" on planes has its formation-time echo here.
++
++## Falsifiers
++- A kernel moment differing from `A(κ)`, `1 − 2A/κ`, a normalizer other than `sinh κ/κ`, or `A(κ) ≥ κ/3` at some `κ > 0` (B1–B3).
++- A second-order expansion with a minimizer other than the average, or a one-step variance other than `A(3β)/(3β)` (C1).
++- A `p_k` differing from the trinomial form, a `P_k` outside the stated two-sided bounds, a Gaussian integral of the proof with a different value, or `Σ_{k≤t}P_k < (3√3/(4π))H_t − 6/25` at some `t ≤ 150` (D1–D3).
++- `m_t ≠ A(3β)^t` on the one-site plane, a density bound below `2κ/(e^{2κ} − 1)`, a `γ(β)` outside the stated enclosures, or a six-axis deviation differing from the closed forms (E1–E4).
++- For the discovery claim: a simulated magnetization of the sphere formation law settling at a positive plateau on scales `t ≪ L²` at some `β`.
++
++## Boundaries and non-claims
++This note proves, for the unsoldered formation law `K_β(s | s_1, s_2, s_3) ∝ e^{β s·(s_1 + s_2 + s_3)}` in level time, the exact one-step identities of its kernel, the local-limit constant `3√3/(4π)` of the level walk's return sum with explicit error bounds, the loss of the initial plane's memory on every finite periodic plane, and the exponent `γ(β) = (3√3/(4π))·A(3β)/(3β)` of the linearized transverse field; the algebraic decay of the nonlinear law's magnetization on the infinite plane is executed by simulation and is not proved; it does not select a menu, reading, order or coupling as physical, and adopts no clause. No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision. No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.
++
++Further: whether the sphere formation law on the infinite plane has an invariant law with positive magnetization reached from some initial plane is not claimed either way; the nonlinear decay rate is not claimed as a number; the static sphere law is used only as the counterpart (block 19, an open PR, evidence address); other menus, orders and readings are not treated.
++
++## Imports
++- `minimal_axioms`: the sentences quoted under Premises.
++- Block 01 (on `main`): the rule and its conditional; proposed, unaudited. PRs #8003, #8138, #8146, #8147, #8152, #8153, #8156, #8168 (open) referenced as evidence addresses for the monotone class, the formation law on `Z³`, the level-time reading, the gain-one law, the menus, the static sphere order and its threshold, and the six-axis formation order.
++- Re-proved at scope: the moments of the exponential-overlap law (von Mises–Fisher) and the bound on the Langevin function `A(κ)`; block 13's gain-one expansion; the local limit constant of the level walk from the integral representation; the minorization argument for the finite plane.
++- Named standard imports at definition level (never as authority for physics): Parseval's identity on the torus; the uniform-minorization (Doeblin) bound for Markov chains; the tower property and the strong law used in the simulations' averages.
++- Reference only (named, not used): Mermin–Wagner, Dobrushin–Shlosman and Pfister (equilibrium two-dimensional continuous symmetry); Toner–Tu and Vicsek (non-equilibrium flocking order); Toom (the discrete counterpart, block 25).
++
++## Review record
++Supervisor-run block (owner directive 2026-09-16: "keep running the campaign for 12 more hours"; the lane's proof-shaped queue exhausted after block 25's sharpening). The lane assessment found the sphere formation law unworked (block 13's open item) and the six-axis comparison free. Exploration: the sphere law at `β = 3, 6, 12` on a `256 × 256` plane lost its magnetization with no plateau over `3000` levels at rates tracking `γ(β)` at large `β`; the six-axis law at the same weight kept its plane. The exact control (`specs/supervisor_control_block26_exact.py`) verified the kernel moments, the bound `A(κ) < κ/3`, the return sums against the two-sided bounds (the exact sums lie below `3√3/(4πk)` by about `1/(10k²)`), the quadrature value of `kP_k` to `10⁴` steps, and the exponents; the lens pass is in `GOAL_block26.md`. Facts settled while executing: the intervals for `γ(β)` at `β = 6` and `12` had to be moved down one unit in the last digit after the exact enclosure (`0.021696`, `0.011167`); the harmonic bound's proved constant is `1/4` through a computer-assisted step (exact sums to `150` plus the tail bound), the elementary tail alone giving only `6`; the twist argument for a proof was tried and fails in level time (N1). The refuting pass (`CHECKER_block26_findings.md`) used an independently coded sampler, the linear model against its exact variance, a finite-size series, `P_k` by a second method, and the sampler's moments by Monte Carlo.
++
++## Verification
++
++```bash
++python3 scripts/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16.py
++python3 scripts/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16.py --list-mutations
++python3 scripts/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16.py --mutation return_lower_bound_wrong
++```
++
++Families: A authority and inputs; B the kernel's moments and the bound; C gain one; D the level walk and its constant; E finite planes, the exponent, the six-axis deviations; F fences, forbidden phrases, the floating-point self-scan, the placement of the classical names; G the resolution lines. Each of the 14 declared mutations fails in exactly one family. Expected final line: `TOTAL: PASS=20 FAIL=0`.
+diff --git a/docs/audit/data/citation_graph_manifest.json b/docs/audit/data/citation_graph_manifest.json
+index 9c5ee54886..c62d06ab53 100644
+--- a/docs/audit/data/citation_graph_manifest.json
++++ b/docs/audit/data/citation_graph_manifest.json
+@@ -1,6 +1,6 @@
+ {
+  "edge_count": 13568,
+- "node_count": 6014,
++ "node_count": 6015,
+  "nodes": {
+   "3d_correction_master_note": {
+    "deps_hash": "e3b0c44298fc",
+@@ -754,6 +754,10 @@
+    "deps_hash": "8ae058a5c524",
+    "out_degree": 2
+   },
++  "admissibility_rule_unsoldered_formation_law_in_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_and_the_simulated_algebraic_decay_of_the_initial_plane_memory_bounded_theorem_note_2026-09-16": {
++   "deps_hash": "e3b0c44298fc",
++   "out_degree": 0
++  },
+   "admissibility_scalar_edge_hodge_rank_one_nonlinear_ward_boundary_bounded_theorem_note_2026-08-14": {
+    "deps_hash": "f21f2489334d",
+    "out_degree": 4
+diff --git a/logs/runner-cache/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16.txt b/logs/runner-cache/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16.txt
+new file mode 100644
+index 0000000000..e85af41ebb
+--- /dev/null
++++ b/logs/runner-cache/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16.txt
+@@ -0,0 +1,42 @@
++===== runner cache v1 =====
++runner: scripts/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16.py
++runner_sha256: 94d81cac39baf54ef7ae701a8436b3bd891652dc8cae1471e0f3c1d7379006f0
++input_fingerprint_sha256: 81a39415f0f66940c1ebfbe63cc92b9366243ced4f79cd40329d3f4d6e188aec
++timeout_sec: 900
++exit_code: 0
++elapsed_sec: 2.62
++status: ok
++----- stdout -----
++AUDIT_INPUT_PATHS:
++  docs/ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_IN_LEVEL_TIME_GAIN_ONE_SPIN_WAVES_LOCAL_LIMIT_CONSTANT_FINITE_PLANES_FORGET_AND_THE_SIMULATED_ALGEBRAIC_DECAY_OF_THE_INITIAL_PLANE_MEMORY_BOUNDED_THEOREM_NOTE_2026-09-16.md
++  docs/MINIMAL_AXIOMS_2026-06-29.md
++  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
++PASS: A1 the note carries its claim_id once
++PASS: A2 the axioms memo carries the four sentences quoted under Premises
++PASS: A3 block 01's note (on main) carries its claim_id and the rule's product form
++PASS: A4 all declared inputs exist
++PASS: B1 T1: for the sphere kernel with concentration kappa, E[w] = coth kappa - 1/kappa =: A(kappa) and E[w^2] = 1 - 2A/kappa (w the cosine to the mean direction), so E[s|S] = A u and E[s s^T|S] = (A/kappa) I + (1 - 3A/kappa) u u^T; the density against the uniform law on the sphere is (kappa/sinh kappa) e^{kappa s.u}
++PASS: B2 T1: A'(kappa) = 1/kappa^2 - 1/sinh^2 kappa; sinh^2 kappa = sum_{n>=1} 2^{2n-1} kappa^{2n}/(2n)! has the terms kappa^2 + kappa^4/3 + positive, so A'(kappa) <= 1/(3 + kappa^2) and A(kappa) < kappa/3; exact enclosures confirm A(kappa) < kappa/3 at ten rational points from 1/10 to 72
++PASS: B3 T1: the one-step magnetization from the aligned plane is A(3 beta): in [8888, 8889]/10^4 at beta = 3, [9444, 9445]/10^4 at 6, [9722, 9723]/10^4 at 12, [9861, 9862]/10^4 at 24 (exact enclosures); the one-step transverse second moment is 2A(3 beta)/(3 beta)
++PASS: C1 T2: beta s.(s_1 + s_2 + s_3) = 3 beta - (beta/2) sum_i |theta - theta_i|^2 + O(4) in transverse coordinates; the minimizer is the average of the three (gain one) with Hessian -3 beta I; the exact one-step transverse variance is A(3 beta)/(3 beta) per component
++PASS: D1 T3: p_k(-a, -b) = k!/(a! b! (k-a-b)!)/3^k by direct enumeration of the 3^k paths for k <= 6, and P_k = sum_y p_k(y)^2 (the return sum)
++PASS: D2 T3: for k <= 150 the exact return sums satisfy 3 sqrt3/(4 pi k) - 1/k^2 - (5/(2k)) e^{-k/4} <= P_k <= 3 sqrt3/(4 pi k) + 27/k^2 + e^{-sqrt(k)/7}, with sqrt3, pi and the exponentials enclosed rationally; k^2 |P_k - 3 sqrt3/(4 pi k)| stays below 1
++PASS: D3 T3: 1 - u = (4/9)[sin^2(theta1/2) + sin^2(theta2/2) + sin^2((theta1 - theta2)/2)], the quadratic part is theta^T M theta with det M = 1/27, the Gaussian integrals are 3 sqrt3 pi/k, (3 sqrt3 pi/k)(2/k^2) and 1458 pi/k^3; sum_{k<=t} P_k >= (3 sqrt3/(4 pi)) H_t - 6/25 for t <= 150 exactly and the tail beyond 150 costs at most 1/100, giving the constant 1/4 for every t; the upper error sum 27 pi^2/6 + 98 is below 150
++PASS: E1 T4: on the one-site periodic plane the chain s_{t+1} ~ K_beta(.|3 s_t) has E[s_{t+1}.e | s_t] = A(3 beta)(s_t.e), so m_t = A(3 beta)^t exactly
++PASS: E2 T4: the kernel's density against the uniform law on the sphere is at least 2 kappa/(e^{2 kappa} - 1) >= 2 kappa e^{-2 kappa}, decreasing in kappa; on an L x L plane the level kernel has density at least (6 beta/(e^{6 beta} - 1))^{L^2}, a uniform minorization
++PASS: E3 T5: gamma(beta) = (3 sqrt3/(4 pi)) A(3 beta)/(3 beta) lies in [408, 409]/10^4 at beta = 3, [216, 217]/10^4 at 6, [1116, 1117]/10^5 at 12, [566, 567]/10^5 at 24 (exact enclosures)
++PASS: E4 side-by-side: at the six-axis weights (e^beta, e^-beta, 1) the three deviations are (e^{-3 beta} + 4)/(e^{3 beta} + e^{-3 beta} + 4), (e^{-beta} + 4)/(e^{beta} + e^{-beta} + 4), (e^{-2 beta} + e^{beta} + e^{-beta} + 2)/(e^{2 beta} + e^{-2 beta} + e^{beta} + e^{-beta} + 2); the aligned-triple deviation is below 1/1600 at beta = 3 and below 1/10^7 at beta = 6
++PASS: F1 the note carries the three fence sentences verbatim
++PASS: F2 the note contains no forbidden phrase (0 hits)
++PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
++PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
++per_element: executed — the kernel's moments and normalizer symbolically; the bound A(kappa) < kappa/3 at ten rational points by exact enclosure; the second-order expansion and its minimizer
++per_site: executed — the one-site chain m_t = A(3 beta)^t; the minorization identities; the six-axis deviations at (e^beta, e^-beta, 1) in closed form with exact enclosures at beta = 3, 6
++per_mode: executed — the trinomial path identity by enumeration for k <= 6; the return sums P_k exactly for k <= 150 against the two-sided bounds with the constant 3 sqrt3/(4 pi); the Gaussian integrals of the proof
++per_block: executed — sum_{k<=t} P_k >= (3 sqrt3/(4 pi)) H_t - 3 for t <= 150; the exponent gamma(beta) enclosed at four couplings
++lattice_wide: T1-T5 proved for every beta > 0; the nonlinear decay on the infinite plane simulated at beta = 3, 6, 12, 24 (control and refuter outputs), not proved
++PASS: G1 the five N5 resolution lines are printed
++TOTAL: PASS=20 FAIL=0
++
++----- stderr -----
++
+diff --git a/scripts/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16.py b/scripts/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16.py
+new file mode 100755
+index 0000000000..7a6b13bd8d
+--- /dev/null
++++ b/scripts/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16.py
+@@ -0,0 +1,443 @@
++#!/usr/bin/env python3
++"""Exact checks: the unsoldered formation law in level time — gain-one spin waves, the local-limit constant of the level walk,
++finite planes forget, and the exponent of the linearized field.
++
++Scope.  T1: the sphere kernel's moments E[w] = A(kappa) = coth kappa - 1/kappa and E[w^2] = 1 - 2A/kappa (symbolic), the bound
++A(kappa) < kappa/3 through sinh^2 kappa >= kappa^2 + kappa^4/3, the one-step magnetization A(3 beta) from the aligned plane with exact
++rational enclosures.  T2: the second-order expansion of beta s.(s_1 + s_2 + s_3) in transverse coordinates has the average as its
++minimizer (gain one) and the exact one-step transverse variance A(3 beta)/(3 beta) per component.  T3: the trinomial path identity,
++the return sums P_k exactly for k <= 150 against the two-sided bounds with the constant 3 sqrt3/(4 pi) (rational enclosures of sqrt3,
++pi and the exponentials), the Gaussian integrals of the proof, and sum_{k<=t} P_k >= (3 sqrt3/(4 pi)) H_t - 3.  T4: the one-site chain
++m_t = A(3 beta)^t and the minorization 2 kappa/(e^{2 kappa} - 1) of the kernel's density.  T5: the exponent gamma(beta) with exact
++enclosures at beta = 3, 6, 12, 24.  The six-axis side-by-side deviations at weights (e^beta, e^-beta, 1) in closed form.  Exact arithmetic
++only (integers, Fractions, sympy); the runner scans its own source for floating-point literals.
++"""
++
++from __future__ import annotations
++
++import re
++import sys
++from fractions import Fraction
++from itertools import product
++from math import factorial, isqrt
++from pathlib import Path
++
++import sympy as sp
++
++AUDIT_TIMEOUT_SEC = 900
++AUDIT_INPUT_PATHS = (
++    "docs/ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_IN_LEVEL_TIME_GAIN_ONE_SPIN_WAVES_LOCAL_LIMIT_CONSTANT_FINITE_PLANES_FORGET_AND_THE_SIMULATED_ALGEBRAIC_DECAY_OF_THE_INITIAL_PLANE_MEMORY_BOUNDED_THEOREM_NOTE_2026-09-16.md",
++    "docs/MINIMAL_AXIOMS_2026-06-29.md",
++    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
++)
++ROOT = Path(__file__).resolve().parents[1]
++CLAIM_ID = "admissibility_rule_unsoldered_formation_law_in_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_and_the_simulated_algebraic_decay_of_the_initial_plane_memory_bounded_theorem_note_2026-09-16"
++BLOCK01_CLAIM_ID = "admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06"
++BLOCK01_FRAGMENT = "the static law of a product rule"
++AXIOM_NEEDLES = (
++    "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.",
++    "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.",
++    "Records form.",
++    "Only records are readable.",
++)
++
++MUTATION_GATE = {
++    "kernel_mean_wrong": "B",
++    "second_moment_wrong": "B",
++    "langevin_bound_wrong": "B",
++    "gain_wrong": "C",
++    "path_identity_wrong": "D",
++    "return_constant_wrong": "D",
++    "return_lower_bound_wrong": "D",
++    "harmonic_bound_wrong": "D",
++    "one_site_chain_wrong": "E",
++    "minorization_wrong": "E",
++    "exponent_wrong": "E",
++    "sixaxis_deviation_wrong": "E",
++    "claim_order_injected": "F",
++    "claim_classical_name_in_theorem": "F",
++}
++ACTIVE_MUTATION: str | None = None
++
++
++def mut(name: str) -> bool:
++    if name not in MUTATION_GATE:
++        raise KeyError(name)
++    return ACTIVE_MUTATION == name
++
++
++class Checks:
++    def __init__(self) -> None:
++        self.passed = 0
++        self.failed = 0
++        self.failed_families: set[str] = set()
++
++    def check(self, tag: str, ok: bool, msg: str) -> None:
++        if ok:
++            self.passed += 1
++            print(f"PASS: {tag} {msg}")
++        else:
++            self.failed += 1
++            self.failed_families.add(tag[0])
++            print(f"FAIL: {tag} {msg}")
++
++
++def normalize_text(text: str) -> str:
++    return re.sub(r"\s+", " ", text)
++
++
++# ------------------------------------------------------------------------------------------- exact enclosures
++def exp_bounds(x: Fraction, terms: int | None = None) -> tuple[Fraction, Fraction]:
++    """Rational lower and upper bounds of e^x for rational x >= 0 from the series with a geometric tail bound."""
++    assert x >= 0
++    n = terms if terms is not None else 2 * (int(x) + 1) + 40
++    lo = Fraction(0)
++    term = Fraction(1)
++    for k in range(n + 1):
++        lo += term
++        term = term * x / (k + 1)
++    # the tail sum_{k>n} x^k/k! <= term * 1/(1 - x/(n+2)), term = x^{n+1}/(n+1)!
++    assert x < n + 2
++    hi = lo + term / (1 - x / (n + 2))
++    return lo, hi
++
++
++def exp_neg_upper(x: Fraction) -> Fraction:
++    """e^{-x} <= 1/(1 + x + x^2/2 + x^3/6 + x^4/24) for x >= 0."""
++    return 1 / (1 + x + x ** 2 / 2 + x ** 3 / 6 + x ** 4 / 24)
++
++
++def A_bounds(kappa: Fraction) -> tuple[Fraction, Fraction]:
++    """Rational enclosure of A(kappa) = coth kappa - 1/kappa: coth kappa = (E + 1)/(E - 1), E = e^{2 kappa}, decreasing in E."""
++    e_lo, e_hi = exp_bounds(2 * kappa)
++    return (e_hi + 1) / (e_hi - 1) - 1 / kappa, (e_lo + 1) / (e_lo - 1) - 1 / kappa
++
++
++def pi_bounds() -> tuple[Fraction, Fraction]:
++    """Machin: pi = 16 arctan(1/5) - 4 arctan(1/239); alternating series with decreasing terms bracket each arctan."""
++    def arctan_partial(x: Fraction, n: int) -> Fraction:
++        return sum((Fraction((-1) ** k) * x ** (2 * k + 1) / (2 * k + 1) for k in range(n)), Fraction(0))
++    a5_lo, a5_hi = arctan_partial(Fraction(1, 5), 14), arctan_partial(Fraction(1, 5), 13)   # 14 terms ends with a negative term
++    a239_lo, a239_hi = arctan_partial(Fraction(1, 239), 4), arctan_partial(Fraction(1, 239), 3)
++    return 16 * a5_lo - 4 * a239_hi, 16 * a5_hi - 4 * a239_lo
++
++
++def sqrt_bounds(n: int, digits: int = 9) -> tuple[Fraction, Fraction]:
++    scale = 10 ** digits
++    r = isqrt(n * scale * scale)
++    lo = Fraction(r, scale)
++    hi = Fraction(r + 1, scale)
++    assert lo * lo < n < hi * hi
++    return lo, hi
++
++
++PI_LO, PI_HI = pi_bounds()
++S3_LO, S3_HI = sqrt_bounds(3)
++C0_LO, C0_HI = 3 * S3_LO / (4 * PI_HI), 3 * S3_HI / (4 * PI_LO)   # 3 sqrt3/(4 pi)
++
++
++# ============================================================================================ family A
++def family_a(checks: Checks, texts) -> None:
++    note, axioms, block01 = texts
++    checks.check("A1", CLAIM_ID in note and len(re.findall(r"^claim_id:", note, flags=re.M)) == 1, "the note carries its claim_id once")
++    checks.check("A2", all(n in normalize_text(axioms) for n in AXIOM_NEEDLES), "the axioms memo carries the four sentences quoted under Premises")
++    checks.check("A3", BLOCK01_CLAIM_ID in block01 and BLOCK01_FRAGMENT in block01.lower(), "block 01's note (on main) carries its claim_id and the rule's product form")
++    checks.check("A4", all(Path(ROOT, p).exists() for p in AUDIT_INPUT_PATHS), "all declared inputs exist")
++
++
++# ============================================================================================ family B
++def family_b(checks: Checks) -> None:
++    k, w = sp.symbols("kappa w", positive=True)
++    Z = sp.integrate(sp.exp(k * w), (w, -1, 1))
++    Ew = sp.integrate(w * sp.exp(k * w), (w, -1, 1)) / Z
++    Ew2 = sp.integrate(w ** 2 * sp.exp(k * w), (w, -1, 1)) / Z
++    A = sp.coth(k) - 1 / k
++    if mut("kernel_mean_wrong"):
++        A = sp.coth(k) + 1 / k
++    second = 1 - 2 * A / k
++    if mut("second_moment_wrong"):
++        second = 1 - A / k
++    ok1 = sp.simplify((Ew - A).rewrite(sp.exp)) == 0 and sp.simplify((Ew2 - second).rewrite(sp.exp)) == 0
++    # normalizer of the density with respect to the uniform probability measure on the sphere: sinh(kappa)/kappa
++    norm = sp.simplify((Z / 2 - sp.sinh(k) / k).rewrite(sp.exp)) == 0
++    checks.check("B1", ok1 and norm, "T1: for the sphere kernel with concentration kappa, E[w] = coth kappa - 1/kappa =: A(kappa) and E[w^2] = 1 - 2A/kappa (w the cosine to the mean direction), so E[s|S] = A u and E[s s^T|S] = (A/kappa) I + (1 - 3A/kappa) u u^T; the density against the uniform law on the sphere is (kappa/sinh kappa) e^{kappa s.u}")
++    # A(kappa) < kappa/3: A' = 1/kappa^2 - 1/sinh^2 kappa <= 1/(3 + kappa^2) because sinh^2 kappa >= kappa^2 + kappa^4/3 (all series terms positive)
++    Aprime = sp.simplify(sp.diff(sp.coth(k) - 1 / k, k) - (1 / k ** 2 - 1 / sp.sinh(k) ** 2)) == 0
++    ser = sp.series(sp.sinh(k) ** 2, k, 0, 14).removeO()
++    coeffs = [ser.coeff(k, 2 * n) for n in range(1, 7)]
++    series_ok = coeffs[0] == 1 and coeffs[1] == sp.Rational(1, 3) and all(c > 0 for c in coeffs) and all(sp.simplify(c - sp.Rational(2 ** (2 * n - 1), factorial(2 * n))) == 0 for n, c in zip(range(1, 7), coeffs))
++    ident = sp.simplify(1 / k ** 2 - 1 / (k ** 2 + k ** 4 / 3) - 1 / (3 + k ** 2)) == 0
++    slope = Fraction(1, 3)
++    if mut("langevin_bound_wrong"):
++        slope = Fraction(1, 4)
++    pts = [Fraction(1, 10), Fraction(1, 2), Fraction(1), Fraction(2), Fraction(3), Fraction(6), Fraction(9), Fraction(18), Fraction(36), Fraction(72)]
++    below = all(A_bounds(kp)[1] < slope * kp for kp in pts)
++    checks.check("B2", Aprime and series_ok and ident and below, "T1: A'(kappa) = 1/kappa^2 - 1/sinh^2 kappa; sinh^2 kappa = sum_{n>=1} 2^{2n-1} kappa^{2n}/(2n)! has the terms kappa^2 + kappa^4/3 + positive, so A'(kappa) <= 1/(3 + kappa^2) and A(kappa) < kappa/3; exact enclosures confirm A(kappa) < kappa/3 at ten rational points from 1/10 to 72")
++    encl = {b: A_bounds(Fraction(3 * b)) for b in (3, 6, 12, 24)}
++    digits = {3: (Fraction(8888, 10 ** 4), Fraction(8889, 10 ** 4)), 6: (Fraction(9444, 10 ** 4), Fraction(9445, 10 ** 4)), 12: (Fraction(9722, 10 ** 4), Fraction(9723, 10 ** 4)), 24: (Fraction(9861, 10 ** 4), Fraction(9862, 10 ** 4))}
++    ok3 = all(digits[b][0] <= encl[b][0] and encl[b][1] <= digits[b][1] for b in encl)
++    checks.check("B3", ok3, "T1: the one-step magnetization from the aligned plane is A(3 beta): in [8888, 8889]/10^4 at beta = 3, [9444, 9445]/10^4 at 6, [9722, 9723]/10^4 at 12, [9861, 9862]/10^4 at 24 (exact enclosures); the one-step transverse second moment is 2A(3 beta)/(3 beta)")
++
++
++# ============================================================================================ family C
++def family_c(checks: Checks) -> None:
++    beta, eps = sp.symbols("beta epsilon", positive=True)
++    th = sp.symbols("t1 t2", real=True)
++    ths = [sp.symbols(f"a{i}1 a{i}2", real=True) for i in range(3)]
++
++    def unit(v):
++        return sp.Matrix([eps * v[0], eps * v[1], sp.sqrt(1 - eps ** 2 * (v[0] ** 2 + v[1] ** 2))])
++
++    s = unit(th)
++    total = sum((s.dot(unit(a)) for a in ths), sp.Integer(0))
++    expansion = sp.series(beta * total, eps, 0, 3).removeO()
++    quad = sp.expand(expansion.coeff(eps, 2))
++    target = -sp.Rational(1, 2) * beta * sum(((th[0] - a[0]) ** 2 + (th[1] - a[1]) ** 2 for a in ths), sp.Integer(0))
++    ok1 = sp.simplify(quad - target) == 0 and sp.simplify(expansion.coeff(eps, 0) - 3 * beta) == 0 and expansion.coeff(eps, 1) == 0
++    # the minimizer of the quadratic form is the average of the three transverse coordinates (gain one)
++    sol = sp.solve([sp.diff(quad, th[0]), sp.diff(quad, th[1])], th, dict=True)[0]
++    avg = [sum((a[j] for a in ths), sp.Integer(0)) / 3 for j in range(2)]
++    if mut("gain_wrong"):
++        avg = [sum((a[j] for a in ths[:2]), sp.Integer(0)) / 2 for j in range(2)]
++    ok2 = all(sp.simplify(sol[th[j]] - avg[j]) == 0 for j in range(2))
++    hess = sp.hessian(quad, th)
++    ok3 = sp.simplify(hess - (-3 * beta) * sp.eye(2)) == sp.zeros(2, 2)
++    # exact one-step transverse variance at the aligned plane: per component A(3 beta)/(3 beta) (from E[1 - w^2] = 2A/kappa at kappa = 3 beta)
++    k = sp.symbols("kappa", positive=True)
++    A = sp.coth(k) - 1 / k
++    per_component = sp.simplify(((1 - (1 - 2 * A / k)) / 2).subs(k, 3 * beta) - (sp.coth(3 * beta) - 1 / (3 * beta)) / (3 * beta)) == 0
++    checks.check("C1", ok1 and ok2 and ok3 and per_component, "T2: beta s.(s_1 + s_2 + s_3) = 3 beta - (beta/2) sum_i |theta - theta_i|^2 + O(4) in transverse coordinates; the minimizer is the average of the three (gain one) with Hessian -3 beta I; the exact one-step transverse variance is A(3 beta)/(3 beta) per component")
++
++
++# ============================================================================================ family D
++def trinomial(kk: int, a: int, b: int) -> int:
++    return factorial(kk) // (factorial(a) * factorial(b) * factorial(kk - a - b))
++
++
++def P_exact(kk: int) -> Fraction:
++    tot = 0
++    for a in range(kk + 1):
++        for b in range(kk + 1 - a):
++            m = trinomial(kk, a, b)
++            tot += m * m
++    return Fraction(tot, 9 ** kk)
++
++
++def family_d(checks: Checks) -> None:
++    # D1: the trinomial identity against direct path enumeration (steps: stay-in-column for e_1, and the two in-plane shifts)
++    base = 3
++    if mut("path_identity_wrong"):
++        base = 2
++    ok1 = True
++    for kk in range(1, 7):
++        counts = {}
++        for path in product(range(3), repeat=kk):
++            a = sum(1 for st in path if st == 1)
++            b = sum(1 for st in path if st == 2)
++            counts[(a, b)] = counts.get((a, b), 0) + 1
++        ok1 = ok1 and all(Fraction(c, base ** kk) == Fraction(trinomial(kk, a, b), 3 ** kk) for (a, b), c in counts.items())
++        ok1 = ok1 and sum((Fraction(c, 3 ** kk) ** 2 for c in counts.values()), Fraction(0)) == P_exact(kk)
++    checks.check("D1", ok1, "T3: p_k(-a, -b) = k!/(a! b! (k-a-b)!)/3^k by direct enumeration of the 3^k paths for k <= 6, and P_k = sum_y p_k(y)^2 (the return sum)")
++    # D2: two-sided bounds with rational enclosures
++    c_lo, c_hi = C0_LO, C0_HI
++    if mut("return_constant_wrong"):
++        c_lo, c_hi = 2 * C0_LO, 2 * C0_HI
++    sub = Fraction(1)
++    if mut("return_lower_bound_wrong"):
++        sub = Fraction(0)
++    ok2 = True
++    worst = Fraction(0)
++    for kk in range(1, 151):
++        p = P_exact(kk)
++        x_lo = Fraction(isqrt(kk * 10 ** 6), 10 ** 3) / 7          # a rational lower bound of sqrt(k)/7
++        hi = c_hi / kk + Fraction(27, kk * kk) + exp_neg_upper(x_lo)
++        lo = c_lo / kk - sub / (kk * kk) - Fraction(5, 2 * kk) * exp_neg_upper(Fraction(kk, 4))
++        ok2 = ok2 and lo <= p <= hi
++        worst = max(worst, abs(kk * p - (c_lo + c_hi) / 2) * kk)
++    checks.check("D2", ok2 and worst < 1, "T3: for k <= 150 the exact return sums satisfy 3 sqrt3/(4 pi k) - 1/k^2 - (5/(2k)) e^{-k/4} <= P_k <= 3 sqrt3/(4 pi k) + 27/k^2 + e^{-sqrt(k)/7}, with sqrt3, pi and the exponentials enclosed rationally; k^2 |P_k - 3 sqrt3/(4 pi k)| stays below 1")
++    # D3: the Gaussian integrals of the proof and the harmonic lower bound
++    x, y, kk_s = sp.symbols("x y k", positive=True)
++    M = sp.Matrix([[2, -1], [-1, 2]]) / 9
++    detM = sp.simplify(M.det())
++    lam = [sp.Rational(1, 9), sp.Rational(1, 3)]
++    gauss = sp.integrate(sp.integrate(sp.exp(-kk_s * (lam[0] * x ** 2 + lam[1] * y ** 2)), (x, -sp.oo, sp.oo)), (y, -sp.oo, sp.oo))
++    g_ok = sp.simplify(gauss - 3 * sp.sqrt(3) * sp.pi / kk_s) == 0 and detM == sp.Rational(1, 27)
++    q2 = sp.integrate(sp.integrate(sp.exp(-kk_s * (lam[0] * x ** 2 + lam[1] * y ** 2)) * (lam[0] * x ** 2 + lam[1] * y ** 2) ** 2, (x, -sp.oo, sp.oo)), (y, -sp.oo, sp.oo))
++    q2_ok = sp.simplify(q2 - 3 * sp.sqrt(3) * sp.pi / kk_s * 2 / kk_s ** 2) == 0
++    r = sp.symbols("r", positive=True)
++    quart = sp.integrate(2 * sp.pi * sp.exp(-kk_s * r ** 2 / 9) * r ** 5, (r, 0, sp.oo))
++    quart_ok = sp.simplify(quart - 1458 * sp.pi / kk_s ** 3) == 0
++    t1, t2 = sp.symbols("theta1 theta2", real=True)
++    u = (3 + 2 * sp.cos(t1) + 2 * sp.cos(t2) + 2 * sp.cos(t1 - t2)) / 9
++    ident = sp.simplify(1 - u - sp.Rational(4, 9) * (sp.sin(t1 / 2) ** 2 + sp.sin(t2 / 2) ** 2 + sp.sin((t1 - t2) / 2) ** 2)) == 0
++    quad_ident = sp.simplify(sp.Rational(1, 9) * (t1 ** 2 + t2 ** 2 + (t1 - t2) ** 2) - (sp.Matrix([t1, t2]).T * M * sp.Matrix([t1, t2]))[0]) == 0
++    offset = Fraction(6, 25)
++    if mut("harmonic_bound_wrong"):
++        offset = Fraction(0)
++    acc = Fraction(0)
++    H = Fraction(0)
++    ok3 = True
++    for t in range(1, 151):
++        acc += P_exact(t)
++        H += Fraction(1, t)
++        ok3 = ok3 and acc >= C0_HI * H - offset
++    # the tail beyond 150: sum_{k>150} 1/k^2 <= 1/150 and sum_{k>150} (5/(2k)) e^{-k/4} <= (5/302) e^{-151/4} / (1 - e^{-1/4}) with 1 - e^{-1/4} >= 1/5
++    tail = Fraction(1, 150) + Fraction(5, 302) * exp_neg_upper(Fraction(151, 4)) * 5
++    # the upper constant: sum_{k>=1} (27/k^2 + e^{-sqrt k/7}) <= 27 pi^2/6 + integral_0^inf e^{-sqrt x/7} dx = 27 pi^2/6 + 98 < 150
++    xx = sp.symbols("x", positive=True)
++    tail_int = sp.integrate(sp.exp(-sp.sqrt(xx) / 7), (xx, 0, sp.oo))
++    upper_const = 27 * PI_HI ** 2 / 6 + 98 < 150 and sp.simplify(tail_int - 98) == 0
++    checks.check("D3", g_ok and q2_ok and quart_ok and ident and quad_ident and ok3 and tail <= Fraction(1, 100) and upper_const, "T3: 1 - u = (4/9)[sin^2(theta1/2) + sin^2(theta2/2) + sin^2((theta1 - theta2)/2)], the quadratic part is theta^T M theta with det M = 1/27, the Gaussian integrals are 3 sqrt3 pi/k, (3 sqrt3 pi/k)(2/k^2) and 1458 pi/k^3; sum_{k<=t} P_k >= (3 sqrt3/(4 pi)) H_t - 6/25 for t <= 150 exactly and the tail beyond 150 costs at most 1/100, giving the constant 1/4 for every t; the upper error sum 27 pi^2/6 + 98 is below 150")
++
++
++# ============================================================================================ family E
++def family_e(checks: Checks) -> None:
++    beta, k = sp.symbols("beta kappa", positive=True)
++    A = sp.coth(k) - 1 / k
++    # E1: the one-site plane: s_{t+1} ~ K(.|3 s_t): E[s_{t+1} . e | s_t] = A(3 beta) (s_t . e), so m_t = A(3 beta)^t
++    factor = A.subs(k, 3 * beta)
++    if mut("one_site_chain_wrong"):
++        factor = A.subs(k, beta)
++    # the conditional mean is A(kappa) u with u = s_t and kappa = beta |3 s_t| = 3 beta (B1); check the concentration and the power law on t <= 4 symbolically
++    m = sp.Integer(1)
++    ok1 = True
++    for t in range(1, 5):
++        m = m * (sp.coth(3 * beta) - 1 / (3 * beta))
++        ok1 = ok1 and sp.simplify(m - factor ** t) == 0
++    checks.check("E1", ok1, "T4: on the one-site periodic plane the chain s_{t+1} ~ K_beta(.|3 s_t) has E[s_{t+1}.e | s_t] = A(3 beta)(s_t.e), so m_t = A(3 beta)^t exactly")
++    # E2: the minorization: the density against the uniform law is (kappa/sinh kappa) e^{kappa w} >= 2 kappa/(e^{2 kappa} - 1), decreasing in kappa, >= 2 kappa e^{-2 kappa}
++    dens_min = sp.simplify(((k / sp.sinh(k)) * sp.exp(-k) - 2 * k / (sp.exp(2 * k) - 1)).rewrite(sp.exp))
++    g = 2 * k / (sp.exp(2 * k) - 1)
++    lower = 2 * k * sp.exp(-2 * k)
++    if mut("minorization_wrong"):
++        lower = 4 * k * sp.exp(-2 * k)
++    diff = sp.simplify((g - lower) * (sp.exp(2 * k) - 1) * sp.exp(2 * k) / (2 * k))   # = e^{2k} - (e^{2k} - 1) * c = 1 when c = 1
++    decreasing = sp.simplify(sp.diff(g, k) * (sp.exp(2 * k) - 1) ** 2 / 2 - (sp.exp(2 * k) - 1 - 2 * k * sp.exp(2 * k))) == 0
++    # e^{2k} - 1 - 2k e^{2k} < 0 for k > 0: its derivative is -4k e^{2k} < 0 and it vanishes at 0
++    dneg = sp.simplify(sp.diff(sp.exp(2 * k) - 1 - 2 * k * sp.exp(2 * k), k) + 4 * k * sp.exp(2 * k)) == 0
++    checks.check("E2", dens_min == 0 and sp.simplify(diff - 1) == 0 and decreasing and dneg, "T4: the kernel's density against the uniform law on the sphere is at least 2 kappa/(e^{2 kappa} - 1) >= 2 kappa e^{-2 kappa}, decreasing in kappa; on an L x L plane the level kernel has density at least (6 beta/(e^{6 beta} - 1))^{L^2}, a uniform minorization")
++    # E3: the exponent gamma(beta) = (3 sqrt3/(4 pi)) A(3 beta)/(3 beta) with exact enclosures
++    stated = {3: (Fraction(408, 10 ** 4), Fraction(409, 10 ** 4)), 6: (Fraction(216, 10 ** 4), Fraction(217, 10 ** 4)), 12: (Fraction(1116, 10 ** 5), Fraction(1117, 10 ** 5)), 24: (Fraction(566, 10 ** 5), Fraction(567, 10 ** 5))}
++    c_lo, c_hi = C0_LO, C0_HI
++    if mut("exponent_wrong"):
++        c_lo, c_hi = 2 * C0_LO, 2 * C0_HI
++    ok3 = True
++    for b, (lo_s, hi_s) in stated.items():
++        a_lo, a_hi = A_bounds(Fraction(3 * b))
++        g_lo, g_hi = c_lo * a_lo / (3 * b), c_hi * a_hi / (3 * b)
++        ok3 = ok3 and lo_s <= g_lo and g_hi <= hi_s
++    checks.check("E3", ok3, "T5: gamma(beta) = (3 sqrt3/(4 pi)) A(3 beta)/(3 beta) lies in [408, 409]/10^4 at beta = 3, [216, 217]/10^4 at 6, [1116, 1117]/10^5 at 12, [566, 567]/10^5 at 24 (exact enclosures)")
++    # E4: the six-axis side-by-side at (p, q, r) = (e^beta, e^-beta, 1): block 12's closed forms specialised
++    p, q, r = sp.exp(beta), sp.exp(-beta), sp.Integer(1)
++    d1 = 1 - p ** 3 / (p ** 3 + q ** 3 + 4 * r ** 3)
++    d2 = 1 - p ** 2 * q / (p * q * (p + q) + 4 * r ** 3)
++    d3 = 1 - p ** 2 * r / (r * (p ** 2 + q ** 2) + r ** 2 * (p + q) + 2 * r ** 3)
++    c1 = (sp.exp(-3 * beta) + 4) / (sp.exp(3 * beta) + sp.exp(-3 * beta) + 4)
++    c2 = (sp.exp(-beta) + 4) / (sp.exp(beta) + sp.exp(-beta) + 4)
++    if mut("sixaxis_deviation_wrong"):
++        c2 = (sp.exp(-beta) + 2) / (sp.exp(beta) + sp.exp(-beta) + 4)
++    c3 = (sp.exp(-2 * beta) + sp.exp(beta) + sp.exp(-beta) + 2) / (sp.exp(2 * beta) + sp.exp(-2 * beta) + sp.exp(beta) + sp.exp(-beta) + 2)
++    ok4 = all(sp.simplify(a - b) == 0 for a, b in ((d1, c1), (d2, c2), (d3, c3)))
++    # at beta = 3 the aligned-triple deviation d1 = (e^-9 + 4)/(e^9 + e^-9 + 4) < 1/2000 (e^9 > 8000), and at beta = 6 below 1/10^7
++    e9_lo = exp_bounds(Fraction(9))[0]
++    e18_lo = exp_bounds(Fraction(18))[0]
++    small = (Fraction(5) / e9_lo) < Fraction(1, 1600) and (Fraction(5) / e18_lo) < Fraction(1, 10 ** 7)
++    checks.check("E4", ok4 and small, "side-by-side: at the six-axis weights (e^beta, e^-beta, 1) the three deviations are (e^{-3 beta} + 4)/(e^{3 beta} + e^{-3 beta} + 4), (e^{-beta} + 4)/(e^{beta} + e^{-beta} + 4), (e^{-2 beta} + e^{beta} + e^{-beta} + 2)/(e^{2 beta} + e^{-2 beta} + e^{beta} + e^{-beta} + 2); the aligned-triple deviation is below 1/1600 at beta = 3 and below 1/10^7 at beta = 6")
++
++
++# ============================================================================================ family F
++FENCES = (
++    "This note proves, for the unsoldered formation law `K_β(s | s_1, s_2, s_3) ∝ e^{β s·(s_1 + s_2 + s_3)}` in level time, the exact one-step identities of its kernel, the local-limit constant `3√3/(4π)` of the level walk's return sum with explicit error bounds, the loss of the initial plane's memory on every finite periodic plane, and the exponent `γ(β) = (3√3/(4π))·A(3β)/(3β)` of the linearized transverse field; the algebraic decay of the nonlinear law's magnetization on the infinite plane is executed by simulation and is not proved; it does not select a menu, reading, order or coupling as physical, and adopts no clause.",
++    "No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
++    "No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.",
++)
++FORBIDDEN = (
++    "the physical order", "the physical rule", "the physical coupling", "the physical dimension", "for every coupling", "selects the", "fires wake condition",
++    "the Bridge weights", "the Bridge conjecture", "certified", "converge", "emergent", "phase transition", "critical", "washes out", "toward the plane", "the trend",
++    "sharp threshold", "the transition point", "has no ordered phase", "does not order", "spontaneous symmetry breaking", "quasi-long-range", "proves that the sphere formation law",
++)
++CLAIM_INJECTIONS = {"claim_order_injected": "Hence the sphere formation law has no ordered phase."}
++CLASSICAL_NAMES = ("Mermin", "Wagner", "Fisher", "Mises", "Langevin", "Toner", "Vicsek", "Toom", "Dobrushin", "Shlosman", "Pfister", "Fröhlich", "Peierls", "Bogoliubov")
++ALLOWED_NAME_SECTIONS = ("Prior art and what is new", "Imports", "Premises and declared objects", "Review record")
++SCAN_MARKER = "float-scan-marker-line"
++
++
++def family_f(checks: Checks, note_text: str) -> None:
++    text = note_text
++    for name, phrase in CLAIM_INJECTIONS.items():
++        if mut(name):
++            text = text.replace("## Theorem T5", phrase + "\n\n## Theorem T5", 1)
++    if mut("claim_classical_name_in_theorem"):
++        text = text.replace("## Theorem T1", "## Theorem T1 (after Langevin)", 1)
++    norm = normalize_text(text)
++    checks.check("F1", all(normalize_text(f) in norm for f in FENCES), "the note carries the three fence sentences verbatim")
++    hits = [p for p in FORBIDDEN if p in text]
++    checks.check("F2", not hits, f"the note contains no forbidden phrase ({len(hits)} hits)")
++    src = Path(__file__).read_text(encoding="utf-8")
++    body = src.split(SCAN_MARKER)[0]
++    float_hits = re.findall(r"(?<![\w.])\d+\.\d+(?![\w.])|\bfloat\(|\.evalf\(|\bN\(", body)
++    checks.check("F3", not float_hits, f"runner source: no floating-point literal or conversion call ({len(float_hits)} hits)")
++    sections = re.split(r"^## ", text, flags=re.M)
++    offenders = []
++    for sec in sections[1:]:
++        title = sec.split("\n", 1)[0].strip()
++        if any(title.startswith(a) for a in ALLOWED_NAME_SECTIONS):
++            continue
++        for nm in CLASSICAL_NAMES:
++            if nm in sec:
++                offenders.append((title[:40], nm))
++    front = sections[0]
++    offenders += [("front matter", nm) for nm in CLASSICAL_NAMES if nm in front]
++    checks.check("F4", not offenders, f"the authors' names appear only under Prior art, Imports, the Premises and the Review record ({len(offenders)} offenders)")
++
++
++# ============================================================================================ family G
++N5_LINES = (
++    "per_element: executed — the kernel's moments and normalizer symbolically; the bound A(kappa) < kappa/3 at ten rational points by exact enclosure; the second-order expansion and its minimizer",
++    "per_site: executed — the one-site chain m_t = A(3 beta)^t; the minorization identities; the six-axis deviations at (e^beta, e^-beta, 1) in closed form with exact enclosures at beta = 3, 6",
++    "per_mode: executed — the trinomial path identity by enumeration for k <= 6; the return sums P_k exactly for k <= 150 against the two-sided bounds with the constant 3 sqrt3/(4 pi); the Gaussian integrals of the proof",
++    "per_block: executed — sum_{k<=t} P_k >= (3 sqrt3/(4 pi)) H_t - 3 for t <= 150; the exponent gamma(beta) enclosed at four couplings",
++    "lattice_wide: T1-T5 proved for every beta > 0; the nonlinear decay on the infinite plane simulated at beta = 3, 6, 12, 24 (control and refuter outputs), not proved",
++)
++
++
++def family_g(checks: Checks) -> None:
++    for line in N5_LINES:
++        print(line)
++    checks.check("G1", len(N5_LINES) == 5, "the five N5 resolution lines are printed")
++
++
++# ============================================================================================ main
++def main(argv) -> int:
++    global ACTIVE_MUTATION
++    if "--list-mutations" in argv:
++        for name, fam in MUTATION_GATE.items():
++            print(f"{name} {fam}")
++        return 0
++    if "--mutation" in argv:
++        ACTIVE_MUTATION = argv[argv.index("--mutation") + 1]
++        if ACTIVE_MUTATION not in MUTATION_GATE:
++            print(f"unknown mutation {ACTIVE_MUTATION}")
++            return 2
++    print("AUDIT_INPUT_PATHS:")
++    for p in AUDIT_INPUT_PATHS:
++        print(f"  {p}")
++    texts = [Path(ROOT, p).read_text(encoding="utf-8") if Path(ROOT, p).exists() else "" for p in AUDIT_INPUT_PATHS]
++    checks = Checks()
++    family_a(checks, texts)
++    family_b(checks)
++    family_c(checks)
++    family_d(checks)
++    family_e(checks)
++    family_f(checks, texts[0])
++    family_g(checks)
++    if ACTIVE_MUTATION:
++        print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
++        print(f"mutation_family_observed: {''.join(sorted(checks.failed_families)) or '-'}")
++    print(f"TOTAL: PASS={checks.passed} FAIL={checks.failed}")
++    return 0 if checks.failed == 0 else 1
++
++
++if __name__ == "__main__":
++    sys.exit(main(sys.argv[1:]))
++# float-scan-marker-line

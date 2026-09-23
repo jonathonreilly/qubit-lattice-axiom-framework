@@ -1,0 +1,31 @@
+{
+  "status": "PREPARED ONLY; ORIGINAL REVIEWER DISPATCH OWNED BY ROOT",
+  "source_freeze": {
+    "path": "/private/tmp/review-drain-20260915/drain8170-prepared-v2-source-freeze.json",
+    "sha256": "85ed6d5761e216ebe92f056d4c725e535b1b0e6906aeda59c6a30f6d9ddeb749"
+  },
+  "prepared": {
+    "path": "/private/tmp/review-drain-20260915/drain8170-author-prepared-v2.json",
+    "sha256": "8a417cb105b96e60e8e942673ac4ce01818f2b4754c4537fecad17461f3756a8"
+  },
+  "discovery": {
+    "path": "/private/tmp/review-drain-20260915/drain8170-author-discovery-v2.json",
+    "sha256": "1ea9b35090823ad3dcd018ea324a01053cae1449e96c9bcc2a63aa04beba678c"
+  },
+  "resources": {
+    "path": "/private/tmp/review-drain-20260915/drain8170-author-input-resource-plan-v2.json",
+    "sha256": "481eb44a14431361852b6cebaa6ba9a9fee33619297a1c2b8b5734c74c3b8c04"
+  },
+  "correction": {
+    "path": "/private/tmp/review-drain-20260915/drain8170-author-correction-v2.diff",
+    "sha256": "8dc0e0555aac8a81d38a585deaaa4a3450dcf37e2621236c0e1874a979ce3875"
+  },
+  "source_files": 30,
+  "originals": 25,
+  "primary_runs": 0,
+  "mutation_runs": 0,
+  "simulations": 0,
+  "registry_edits": [],
+  "staged": false,
+  "branch_retention_required": true
+}

@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "15b6e402b902964ada51ffdd8e8c88fb4e472013",
+  "fetched_ref": "refs/review-loop/fetched/8171-86225bbda0164e35b6c3913af6fde469",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block27-unsoldered-formation-law-weak-coupling-causal-coupling-contracts-20260916",
+    "headRefOid": "15b6e402b902964ada51ffdd8e8c88fb4e472013",
+    "isDraft": false,
+    "number": 8171,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

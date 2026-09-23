@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "checks": [
+    {
+      "runner": "scripts/compact_rotor_bridge_cubic_check_2026_09_16.py",
+      "scopes": [
+        [
+          "per_element",
+          "finite positive precision and cubic coefficients"
+        ],
+        [
+          "per_site",
+          "one-face and two-adjacent-face finite bridge fixtures only"
+        ],
+        [
+          "per_mode",
+          "Hermite/Bessel resolutions and finite grids"
+        ],
+        [
+          "per_block",
+          "three completed finite diagnostic families; no exhaustive theorem execution"
+        ],
+        [
+          "lattice_wide",
+          "not executed; all-volume and continuous-time claims are written proofs"
+        ]
+      ],
+      "graph_helpers": [],
+      "packet_helpers": [],
+      "runtime_inputs": [
+        "docs/COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+      ],
+      "fingerprint": "7008bdd0d0c9741bac6d5d871c2f629fd5e53cccc5a9ff813969753632ef036c",
+      "computational_functions_unchanged": true
+    },
+    {
+      "runner": "scripts/compact_rotor_convex_carrier_check_2026_09_16.py",
+      "scopes": [
+        [
+          "per_element",
+          "finite scalar clipped-extension derivative and matching checks"
+        ],
+        [
+          "per_site",
+          "declared finite adjacent-face bridge fixtures only"
+        ],
+        [
+          "per_mode",
+          "finite time Fourier carrier identities on the declared slice counts"
+        ],
+        [
+          "per_block",
+          "three completed finite diagnostic families; no exhaustive theorem execution"
+        ],
+        [
+          "lattice_wide",
+          "not executed; global comparison estimates are written proofs"
+        ]
+      ],
+      "graph_helpers": [
+        "scripts/compact_rotor_bridge_cubic_check_2026_09_16.py"
+      ],
+      "packet_helpers": [
+        "scripts/compact_rotor_bridge_cubic_check_2026_09_16.py"
+      ],
+      "runtime_inputs": [
+        "docs/COMPACT_ROTOR_CONVEX_CARRIER_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "scripts/compact_rotor_bridge_cubic_check_2026_09_16.py"
+      ],
+      "fingerprint": "d7028784354f0527511c97504be0c1917ceea0503045f0ba98124ddad9960319",
+      "computational_functions_unchanged": true
+    },
+    {
+      "runner": "scripts/compact_rotor_integer_filling_check_2026_09_16.py",
+      "scopes": [
+        [
+          "per_element",
+          "integer boundary and Hodge orientation identities"
+        ],
+        [
+          "per_site",
+          "finite four-dimensional chains and witness membership counts"
+        ],
+        [
+          "per_mode",
+          "checked and not executed; no spectral decomposition is performed by this integer-chain program"
+        ],
+        [
+          "per_block",
+          "five completed finite diagnostic families; no exhaustive theorem execution"
+        ],
+        [
+          "lattice_wide",
+          "not executed; infinite fillings/tail use explicit probability premise and written proof"
+        ]
+      ],
+      "graph_helpers": [],
+      "packet_helpers": [],
+      "runtime_inputs": [
+        "docs/COMPACT_ROTOR_INTEGER_FILLING_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/COMPACT_ROTOR_CONVEX_CARRIER_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/COMPACT_ROTOR_TEMPORAL_OSCILLATION_COARSE_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+      ],
+      "fingerprint": "1bdd51d42e4fc8b4f3cf5b58033875d8e2a0d221a8c59e8f67d5fd7e244d4bb2",
+      "computational_functions_unchanged": true
+    },
+    {
+      "runner": "scripts/compact_rotor_magnetic_covariance_check_2026_09_16.py",
+      "scopes": [
+        [
+          "per_element",
+          "finite matrix covariance entries and static response comparisons"
+        ],
+        [
+          "per_site",
+          "finite periodic spatial side4 fixture with declared time slices"
+        ],
+        [
+          "per_mode",
+          "finite temporal/spatial Fourier modes and replicated factors"
+        ],
+        [
+          "per_block",
+          "three completed finite diagnostic families; no exhaustive theorem execution"
+        ],
+        [
+          "lattice_wide",
+          "not executed; Gaussian subsequences/Riesz uniformity use written proofs"
+        ]
+      ],
+      "graph_helpers": [],
+      "packet_helpers": [],
+      "runtime_inputs": [
+        "docs/COMPACT_ROTOR_MAGNETIC_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/COMPACT_ROTOR_CONVEX_CARRIER_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/PRECONDITIONED_EXTENDED_GRADIENT_GAUSSIAN_REMAINDER_AND_FREE_CUBIC_RIESZ_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fingerprint": "9f72bedee076e2b20ec5b68623b897e09bd60e6642f26f3a8f12179a5345cf3d",
+      "computational_functions_unchanged": true
+    }
+  ],
+  "builder_executed": false,
+  "primary_executed": false,
+  "source_hashes_match": true
+}

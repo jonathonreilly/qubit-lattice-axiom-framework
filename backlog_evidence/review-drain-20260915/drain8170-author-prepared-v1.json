@@ -1,0 +1,38 @@
+{
+  "status": "UNTRACKED AUTHOR PREPARATION; ORIGINAL REVIEWER AFFECTED CONFIRMATION REQUIRED",
+  "owner": "PR8170-author",
+  "base": "012c276a64c80cf5256d68fa7dbb06939586153b",
+  "original_head": "f9e1177003afa991ec87831d2be70611068a09ab",
+  "original_merge_base": "6dda46fc1af02827e9c6b64b2f7d05c381a3ce07",
+  "notes": [
+    {
+      "path": "docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "bd7968234832dcd13368f4208b2081a69aaf9674b1e9b24b65f44ee986f26b0a"
+    }
+  ],
+  "runners": [
+    {
+      "path": "scripts/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.py",
+      "sha256": "2b6ebb3f1c4cde779f5c4fbbc2e0b761a5c86d2d2e26cb66da262e4053a71331"
+    }
+  ],
+  "archive_manifest": {
+    "path": "docs/work_history/repo/review_feedback/pr8170-evidence/archive-manifest.json",
+    "sha256": "20b3d0e8675e742dbb95f6929c5cdb63f5358ff826a334955ae22935b6d1f251"
+  },
+  "deferred_science": {
+    "path": "docs/work_history/repo/review_feedback/pr8170-evidence/DEFERRED_SCIENCE.md",
+    "sha256": "d84528a412c74cc2e9a5e8bb59c8fff49ba04ae58e5ee766a65641c248405db2"
+  },
+  "source_files": 30,
+  "originals": 25,
+  "branch_retention_required": true,
+  "primary_runs": 0,
+  "mutations": 0,
+  "simulations": 0,
+  "staged": false,
+  "original_report": {
+    "path": "/private/tmp/review-drain-20260915/drain8170-review-original.json",
+    "sha256": "50c0805a36729945a28283fc603c34612f709a1e120e3017170373d4031fed6c"
+  }
+}

@@ -1,0 +1,260 @@
+[
+  {
+    "revision": "6dda46fc1af02827e9c6b64b2f7d05c381a3ce07",
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+    "blob": "8f9c496033ee3e37e4ad73433151a79224a60814",
+    "sha256": "b02b4a93b36ef5177c8727f1a3d6932ba32dbcb1f4debb3da7f454b6dba566af",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/base/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+    "blob": "8f9c496033ee3e37e4ad73433151a79224a60814",
+    "sha256": "b02b4a93b36ef5177c8727f1a3d6932ba32dbcb1f4debb3da7f454b6dba566af",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/current-main/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md"
+  },
+  {
+    "revision": "6dda46fc1af02827e9c6b64b2f7d05c381a3ce07",
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+    "blob": "6dfc9de13838b8fe1d6d593b83d0d31cd0763b93",
+    "sha256": "e52898452cca1ed4e5065f0f8c2e27a7a9afd018a8e8d5867e991d7adf4ba59f",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/base/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+    "blob": "6dfc9de13838b8fe1d6d593b83d0d31cd0763b93",
+    "sha256": "e52898452cca1ed4e5065f0f8c2e27a7a9afd018a8e8d5867e991d7adf4ba59f",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/current-main/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md"
+  },
+  {
+    "revision": "6dda46fc1af02827e9c6b64b2f7d05c381a3ce07",
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+    "blob": "2977b7f9903b58f95963491e44cb244ee894ab84",
+    "sha256": "6b14211f9f8f1f284602d74b61136b60dca0bc01b508176a309a4bc1d3dd848c",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/base/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+    "blob": "2977b7f9903b58f95963491e44cb244ee894ab84",
+    "sha256": "6b14211f9f8f1f284602d74b61136b60dca0bc01b508176a309a4bc1d3dd848c",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/current-main/.claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md"
+  },
+  {
+    "revision": "6dda46fc1af02827e9c6b64b2f7d05c381a3ce07",
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+    "blob": "74d2f60bae1b3e2de1ca2cf7ade91cf9e93da3b7",
+    "sha256": "c6e70a8f36829082ff26280dfb350c8232111a23fcf3c076c70d45e7ae27df19",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/base/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+    "blob": "74d2f60bae1b3e2de1ca2cf7ade91cf9e93da3b7",
+    "sha256": "c6e70a8f36829082ff26280dfb350c8232111a23fcf3c076c70d45e7ae27df19",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/current-main/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md"
+  },
+  {
+    "revision": "6dda46fc1af02827e9c6b64b2f7d05c381a3ce07",
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+    "blob": "08d17f0940e3756c94ff724c8ff531adc9e029ce",
+    "sha256": "7beef809b0e4e0b1bc815e3f44f271f80cf951b3b4789d09e7e588819f22b8d7",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/base/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+    "blob": "08d17f0940e3756c94ff724c8ff531adc9e029ce",
+    "sha256": "7beef809b0e4e0b1bc815e3f44f271f80cf951b3b4789d09e7e588819f22b8d7",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/current-main/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md"
+  },
+  {
+    "revision": "6dda46fc1af02827e9c6b64b2f7d05c381a3ce07",
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+    "blob": "e16642020759d3d57935cd6d037d382fc6573bf0",
+    "sha256": "2b955f847d5c0f6e7e6325cbdcc51aeb9bbd0197832d23195b34c5cb969d08a3",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/base/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+    "blob": "e16642020759d3d57935cd6d037d382fc6573bf0",
+    "sha256": "2b955f847d5c0f6e7e6325cbdcc51aeb9bbd0197832d23195b34c5cb969d08a3",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/current-main/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml"
+  },
+  {
+    "revision": "6dda46fc1af02827e9c6b64b2f7d05c381a3ce07",
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+    "blob": "8f432e2cd2631c0cc6a5121f932b305f16d3a023",
+    "sha256": "3cc64ad72621aef21a26cc7948950a42b27a0b4cf63518039dab916261938fe3",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/base/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+    "blob": "8f432e2cd2631c0cc6a5121f932b305f16d3a023",
+    "sha256": "3cc64ad72621aef21a26cc7948950a42b27a0b4cf63518039dab916261938fe3",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/current-main/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md"
+  },
+  {
+    "revision": "6dda46fc1af02827e9c6b64b2f7d05c381a3ce07",
+    "path": "docs/audit/data/citation_graph_manifest.json",
+    "blob": "9c5ee548861f53d42bff5d600652e7391b769f17",
+    "sha256": "a3dcc3d90687ae261e65dc02caec57008d018c514d8ef6cd6fcbfb0d2806f5fb",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/base/docs/audit/data/citation_graph_manifest.json"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": "docs/audit/data/citation_graph_manifest.json",
+    "blob": "0584ee1bce605760e1521910a9a11fb52335a704",
+    "sha256": "e7d1ffb56638f3cf007b24c5dd160ea28dfdd27282d253fce3041a0c4703b10d",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/current-main/docs/audit/data/citation_graph_manifest.json"
+  },
+  {
+    "revision": "f9e1177003afa991ec87831d2be70611068a09ab",
+    "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+    "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/inputs-original/docs/MINIMAL_AXIOMS_2026-06-29.md"
+  },
+  {
+    "revision": "f9e1177003afa991ec87831d2be70611068a09ab",
+    "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+    "blob": "ec3bb81397ea1b136c4040c69832ad1a1bc9ee76",
+    "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/inputs-original/docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": "AGENTS.md",
+    "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/authority/AGENTS.md"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_FINITE_TORUS_MAGNETIZATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "sha256": "1ead528308a21cded343d0790dd9de2715eeacdc47d6d1b4922a3358dbcbe179",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/authority/docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_FINITE_TORUS_MAGNETIZATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+    "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/authority/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+    "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/authority/docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/authority/docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/authority/docs/MINIMAL_AXIOMS_2026-06-29.md"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": "docs/ADMISSIBILITY_RULE_CUBIC_WALK_RETURN_SUM_AND_SPHERE_STATIC_MAGNETIZATION_SUFFICIENT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "sha256": "4007d47a15efe7ba10159ea268cbae4ddd1b5420c6b5fcbd6a88e6917aba2ac2",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/authority/docs/ADMISSIBILITY_RULE_CUBIC_WALK_RETURN_SUM_AND_SPHERE_STATIC_MAGNETIZATION_SUFFICIENT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+    "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/authority/docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": "docs/ADMISSIBILITY_RULE_STATIC_SIX_AXIS_REFLECTION_IDENTITIES_AND_CONDITIONAL_CONTOUR_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "sha256": "9632e807157b58cbbbac39d9632f2806b49ec221a664c3dda5f941106833bd16",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/authority/docs/ADMISSIBILITY_RULE_STATIC_SIX_AXIS_REFLECTION_IDENTITIES_AND_CONDITIONAL_CONTOUR_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": "docs/CANONICAL_HARNESS_INDEX.md",
+    "sha256": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/authority/docs/CANONICAL_HARNESS_INDEX.md"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+    "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/authority/docs/ai_methodology/SCIENCE_WORKFLOW.md"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": "docs/audit/README.md",
+    "sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/authority/docs/audit/README.md"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": "docs/repo/CONTROLLED_VOCABULARY.md",
+    "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/authority/docs/repo/CONTROLLED_VOCABULARY.md"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": "docs/repo/DEFERRED_DECISIONS.md",
+    "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/authority/docs/repo/DEFERRED_DECISIONS.md"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+    "sha256": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/authority/docs/repo/ACTIVE_REVIEW_QUEUE.md"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+    "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/authority/docs/repo/REVIEW_FEEDBACK_WORKFLOW.md"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+    "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/authority/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+    "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/authority/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+    "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/authority/docs/ai_methodology/skills/no-go-discipline/SKILL.md"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+    "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/authority/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": "docs/audit/data/axiom_premise_nodes.json",
+    "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/authority/docs/audit/data/axiom_premise_nodes.json"
+  },
+  {
+    "revision": "e6e9cfe996c7f4b9f2a1bb02492dddba444259e9",
+    "path": "docs/audit/data/premise_decision_history.json",
+    "sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113",
+    "snapshot": "/private/tmp/review-drain-20260915/drain8170-original/authority/docs/audit/data/premise_decision_history.json"
+  }
+]

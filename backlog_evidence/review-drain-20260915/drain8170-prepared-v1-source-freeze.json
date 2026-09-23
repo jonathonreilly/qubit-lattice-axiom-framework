@@ -1,0 +1,185 @@
+{
+  "files": [
+    {
+      "path": "docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "bd7968234832dcd13368f4208b2081a69aaf9674b1e9b24b65f44ee986f26b0a",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8170-evidence/DEFERRED_SCIENCE.md",
+      "sha256": "d84528a412c74cc2e9a5e8bb59c8fff49ba04ae58e5ee766a65641c248405db2",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/docs/work_history/repo/review_feedback/pr8170-evidence/DEFERRED_SCIENCE.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8170-evidence/README.md",
+      "sha256": "618fd4f90d72f42aa428258ae0a44019c22f8acfd88f3573a4eedfeeb8b7f39f",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/docs/work_history/repo/review_feedback/pr8170-evidence/README.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8170-evidence/archive-manifest.json",
+      "sha256": "20b3d0e8675e742dbb95f6929c5cdb63f5358ff826a334955ae22935b6d1f251",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/docs/work_history/repo/review_feedback/pr8170-evidence/archive-manifest.json"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_IN_LEVEL_TIME_GAIN_ONE_SPIN_WAVES_LOCAL_LIMIT_CONSTANT_FINITE_PLANES_FORGET_AND_THE_SIMULATED_ALGEBRAIC_DECAY_OF_THE_INITIAL_PLANE_MEMORY_BOUNDED_THEOREM_NOTE_2026-09-16-e50aaf4b6686e647.md",
+      "sha256": "8495f04ed691512ec1830f870965c3a149b7e77330f2a9ed0d40e6fa46887578",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/docs/work_history/repo/review_feedback/pr8170-evidence/kept/ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_IN_LEVEL_TIME_GAIN_ONE_SPIN_WAVES_LOCAL_LIMIT_CONSTANT_FINITE_PLANES_FORGET_AND_THE_SIMULATED_ALGEBRAIC_DECAY_OF_THE_INITIAL_PLANE_MEMORY_BOUNDED_THEOREM_NOTE_2026-09-16-e50aaf4b6686e647.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/APPROACH_REGISTRY-4e9fef47b9eac07d.md",
+      "sha256": "24ea06f9384ee6eb4becbad9cf8132d32a753e821c0f8488a1308e9fcf685ecf",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/docs/work_history/repo/review_feedback/pr8170-evidence/kept/APPROACH_REGISTRY-4e9fef47b9eac07d.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/CHECKER_block26_findings-c0a6cd25f43f3f2c.md",
+      "sha256": "6c7d0f099effdd8349bb75de1adbaa85a54aaf0822ea429e6a66fca4e8896b74",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/docs/work_history/repo/review_feedback/pr8170-evidence/kept/CHECKER_block26_findings-c0a6cd25f43f3f2c.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/CLAIM_STATUS_CERTIFICATE_block26-315a8231a89a61c4.md",
+      "sha256": "ebf19ceedb084cdc1a8e6ccc865d8dd5f06ba58f8b6dc50ac5a9045db9bb580a",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/docs/work_history/repo/review_feedback/pr8170-evidence/kept/CLAIM_STATUS_CERTIFICATE_block26-315a8231a89a61c4.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/GOAL_block26-083903adfde6cc31.md",
+      "sha256": "8d5d40f4796993afc416746d092b6385ba93378ab247a955797afaedad05d151",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/docs/work_history/repo/review_feedback/pr8170-evidence/kept/GOAL_block26-083903adfde6cc31.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/HANDOFF-2061d1bff2a70397.md",
+      "sha256": "b85c9887abf8f9af60f2974d02d8c1a036ea3db4c969895237c29fc6f46f90ed",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/docs/work_history/repo/review_feedback/pr8170-evidence/kept/HANDOFF-2061d1bff2a70397.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/NO_GO_LEDGER-05cc24d6760014de.md",
+      "sha256": "9d9d9077de70a3e446bb15eb57d148c418d4f8a7b868753c7016dfe7aedf0d8f",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/docs/work_history/repo/review_feedback/pr8170-evidence/kept/NO_GO_LEDGER-05cc24d6760014de.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/OPPORTUNITY_QUEUE-72e985a42c72b74e.md",
+      "sha256": "1776ff224ff72af33f15155d54dd9d157d476102cf4bf80e62d9ab0471846dd3",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/docs/work_history/repo/review_feedback/pr8170-evidence/kept/OPPORTUNITY_QUEUE-72e985a42c72b74e.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/RESULTS_block26-0263fa9278e61353.md",
+      "sha256": "800fb7d3beb194b60b4447d9c723f9e226aa6421730ac807054747f6923aabd8",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/docs/work_history/repo/review_feedback/pr8170-evidence/kept/RESULTS_block26-0263fa9278e61353.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/REVIEW_HISTORY-5eeaa28fca70564a.md",
+      "sha256": "5b780ecf7ed43201a33effef1feb629e96679b9f4c009f0f1f745e4bd15fd638",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/docs/work_history/repo/review_feedback/pr8170-evidence/kept/REVIEW_HISTORY-5eeaa28fca70564a.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/STATE-829e293fc3eb28c8.yaml",
+      "sha256": "d2966b891d3b55d236ef97cd65fd608c892963248b808bb2903d040f2771ca64",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/docs/work_history/repo/review_feedback/pr8170-evidence/kept/STATE-829e293fc3eb28c8.yaml"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/TRACE_GATE-151b6bec86e6fa6b.md",
+      "sha256": "fc93de23a14a7ea7705c6d21045aae9e5a89da4456613519de1104a52437d3f6",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/docs/work_history/repo/review_feedback/pr8170-evidence/kept/TRACE_GATE-151b6bec86e6fa6b.md"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16-7a6b13bd8dc79184.py",
+      "sha256": "94d81cac39baf54ef7ae701a8436b3bd891652dc8cae1471e0f3c1d7379006f0",
+      "mode": "0o755",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/docs/work_history/repo/review_feedback/pr8170-evidence/kept/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16-7a6b13bd8dc79184.py"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16-e85af41ebb5f3988.txt.gz",
+      "sha256": "48cf7c7fedc99a9063348915102a0c519d657dac72780285a21950064ea91ac9",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/docs/work_history/repo/review_feedback/pr8170-evidence/kept/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16-e85af41ebb5f3988.txt.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/citation_graph_manifest-c62d06ab535f0231.json.gz",
+      "sha256": "76107dad032c1759fa09a95cf7aac56f984c1dc18ef6ea86d7609c311ce870ca",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/docs/work_history/repo/review_feedback/pr8170-evidence/kept/citation_graph_manifest-c62d06ab535f0231.json.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_exact-0e078d3e64a7b76c.py",
+      "sha256": "a8f7a98bfe52150682ee4f1258feaf4a981f1667dbc8636969bb711e41aa4869",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_exact-0e078d3e64a7b76c.py"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_exact.out-891d6f3da2690316.txt.gz",
+      "sha256": "46d6a4bfcc3cc34bda23fc4a1b44bb95162a463334c31daa69edfcbed09ac693",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_exact.out-891d6f3da2690316.txt.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_fit-75dc4ad65a2006b6.py",
+      "sha256": "e3e747a96d357aa924633cdd2fc787328928f70ab365786e87af02d59be62a82",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_fit-75dc4ad65a2006b6.py"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_fit.out-e65f9660e918cddf.txt.gz",
+      "sha256": "2e6dd197db579e5d16da975ed6572c0db1f4d4b312348fcffc0057ea5c39a53e",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_fit.out-e65f9660e918cddf.txt.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_refuter-eb0b609f3f34e516.py",
+      "sha256": "a45d93a50107988710e370ea8fcfd3e5c02c9d9acc021c7d4c7d65389b4b8474",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_refuter-eb0b609f3f34e516.py"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_refuter.out-6369a7bd268aca02.txt.gz",
+      "sha256": "b2002e8f3ea785e0d5a36f37ce85a2a3be1a102c3374f4c66b4281e1600c2e01",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_refuter.out-6369a7bd268aca02.txt.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_sixaxis_sim-42e69bc4a408b08b.py",
+      "sha256": "1ff3e186c5eb7c7777ac0ccbafe3555724305e892a9e7f381f37c497472458ea",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_sixaxis_sim-42e69bc4a408b08b.py"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_sixaxis_sim.out-69da2aaa54f4ba02.txt.gz",
+      "sha256": "2168ab947944e6583ef7e504febc0a58e85f0712c1553709efe44290db2be474",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_sixaxis_sim.out-69da2aaa54f4ba02.txt.gz"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_sphere_sim-fa0bc7e4e8db6745.py",
+      "sha256": "d1a2a10be02d8c4aacb3922a8b619ed1e98b8a44c2b5a08f5a252a66327d233e",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_sphere_sim-fa0bc7e4e8db6745.py"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_sphere_sim.out-d6fb9c6074f0412b.txt.gz",
+      "sha256": "c46a7ee8fd505a3126d4a4f74bae7f412378a7dfa969fe24914acc4293d81051",
+      "mode": "0o644",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_sphere_sim.out-d6fb9c6074f0412b.txt.gz"
+    },
+    {
+      "path": "scripts/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.py",
+      "sha256": "2b6ebb3f1c4cde779f5c4fbbc2e0b761a5c86d2d2e26cb66da262e4053a71331",
+      "mode": "0o755",
+      "immutable_copy": "/private/tmp/review-drain-20260915/drain8170-prepared-v1-source/scripts/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.py"
+    }
+  ],
+  "count": 30
+}

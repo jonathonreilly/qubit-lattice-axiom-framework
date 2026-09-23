@@ -1,0 +1,7 @@
+--- prepared-v1/scripts/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.py
++++ prepared-v2/scripts/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.py
+@@ -408,4 +408,3 @@
+ 
+ if __name__ == "__main__":
+     sys.exit(main(sys.argv[1:]))
+-

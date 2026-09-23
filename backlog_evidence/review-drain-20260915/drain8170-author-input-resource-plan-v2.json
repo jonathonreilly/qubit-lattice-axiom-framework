@@ -1,0 +1,77 @@
+{
+  "runner": {
+    "path": "scripts/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.py",
+    "sha256": "3bcc5fd69299c8c176321bd95ae46416a3325e4a0ed1f9916ff820baf7236cca"
+  },
+  "ordered_inputs": [
+    {
+      "path": "docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "bd7968234832dcd13368f4208b2081a69aaf9674b1e9b24b65f44ee986f26b0a"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+    }
+  ],
+  "mathematical_parents": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "Framework or finite product-rule vocabulary only; no selection of sphere process"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "role": "Framework or finite product-rule vocabulary only; no selection of sphere process"
+    }
+  ],
+  "mathematical_closure": "Complete corrected moment/series/mean proof, literal local-limit proof and finite-plane proof, declared auxiliary recurrence variance proof and finite six-axis enumeration in canonical note. Standard math imports explicit; no empirical fits or sibling phase theorem used. Deferred auxiliary obstruction and twist/nonlinear histories are recovery, not live dependencies.",
+  "context_only": [
+    {
+      "path": "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "01b4ca057540b1f84b261f5b7ce4328540b7efa9ca845a95c14e9952a75006e2"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_STATIC_SIX_AXIS_REFLECTION_IDENTITIES_AND_CONDITIONAL_CONTOUR_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "9632e807157b58cbbbac39d9632f2806b49ec221a664c3dda5f941106833bd16"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_FINITE_TORUS_MAGNETIZATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "1ead528308a21cded343d0790dd9de2715eeacdc47d6d1b4922a3358dbcbe179"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_CUBIC_WALK_RETURN_SUM_AND_SPHERE_STATIC_MAGNETIZATION_SUFFICIENT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "4007d47a15efe7ba10159ea268cbae4ddd1b5420c6b5fcbd6a88e6917aba2ac2"
+    }
+  ],
+  "timeout_sec": 900,
+  "proposed_external_process_tree_limit_bytes": 805306368,
+  "source_basis": "Inherited 900-second primary cap; fixed SymPy integrals/differentiation, exact trinomial loops k<=150 twice, 3^k enumeration k<=6, bounded rational exponentials; no arrays/lattice simulation or historical fit execution. 768MiB proposed for symbolic working sets, unmeasured; preserve any failure.",
+  "json_output": "logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.json",
+  "mutation_json_pattern": "logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--<mutation>.json",
+  "stdout": "logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.txt",
+  "checks_source_derived_not_executed": 17,
+  "mutation_names": {
+    "kernel_mean_wrong": "B",
+    "second_moment_wrong": "B",
+    "langevin_bound_wrong": "B",
+    "gain_wrong": "C",
+    "path_identity_wrong": "D",
+    "return_constant_wrong": "D",
+    "return_lower_bound_wrong": "D",
+    "harmonic_bound_wrong": "D",
+    "one_site_chain_wrong": "E",
+    "minorization_wrong": "E",
+    "exponent_wrong": "E",
+    "sixaxis_deviation_wrong": "E",
+    "positive_series_coefficient_wrong": "B",
+    "exact_mean_gain_wrong": "C"
+  },
+  "mutation_status": "All 14 current mathematical mutations pending independent confirmation/execution; original14 definitions and raw histories preserved. Two retired prose-policy mutations are not silently counted as current.",
+  "primary_executions": 0,
+  "simulation_executions": 0
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "finding": "8170-1",
+    "disposition": "False derivative bound removed; positive-series identity and exact counterexample added, old false PASS retained in history.",
+    "status": "AUTHOR CORRECTION; INDEPENDENT CONFIRMATION PENDING"
+  },
+  {
+    "finding": "8170-2",
+    "disposition": "Exact mean gain A(3beta), quadratic maximum and normalized direction distinguished; auxiliary recursion explicitly supplied, gamma asymptotic corrected.",
+    "status": "AUTHOR CORRECTION; INDEPENDENT CONFIRMATION PENDING"
+  },
+  {
+    "finding": "8170-3",
+    "disposition": "No nonlinear beta L\u00b2 scale/exclusion remains active; finite-plane bound preserved literally.",
+    "status": "AUTHOR CORRECTION; INDEPENDENT CONFIRMATION PENDING"
+  },
+  {
+    "finding": "8170-4",
+    "disposition": "Full rows/raw NaNs and signed projections retained in recovery; corrected observable/cadence discussion, no live universal exponent inference.",
+    "status": "AUTHOR CORRECTION; INDEPENDENT CONFIRMATION PENDING"
+  },
+  {
+    "finding": "8170-5",
+    "disposition": "Historical fit not promoted; missing split inputs explicit, reopening requires deterministic pinned parser. No fabricated missing projection or rerun.",
+    "status": "AUTHOR CORRECTION; INDEPENDENT CONFIRMATION PENDING"
+  },
+  {
+    "finding": "8170-6",
+    "disposition": "Settled phase map withdrawn; current-main PR8168 formation proof context and conditional static scope distinguished.",
+    "status": "AUTHOR CORRECTION; INDEPENDENT CONFIRMATION PENDING"
+  },
+  {
+    "finding": "8170-7",
+    "disposition": "Broad certification withheld; full auxiliary contradiction and twist obligation readable in deferred science; five historical entries not called five closed independent routes.",
+    "status": "AUTHOR CORRECTION; INDEPENDENT CONFIRMATION PENDING"
+  },
+  {
+    "finding": "8170-8",
+    "disposition": "Actual two-parent Markdown links and literal input pins; no helper registry edits; final topology/cache/gate reserved for coordinator.",
+    "status": "AUTHOR CORRECTION; INDEPENDENT CONFIRMATION PENDING"
+  }
+]

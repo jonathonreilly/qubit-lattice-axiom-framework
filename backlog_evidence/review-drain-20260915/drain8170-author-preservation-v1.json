@@ -1,0 +1,36 @@
+{
+  "originals": 25,
+  "raw_sha_blob_verified": true,
+  "unchanged_function_asts": [
+    "mut",
+    "normalize_text",
+    "exp_bounds",
+    "exp_neg_upper",
+    "A_bounds",
+    "pi_bounds",
+    "sqrt_bounds",
+    "trinomial",
+    "P_exact",
+    "family_e"
+  ],
+  "complete_local_limit_proof_literal": true,
+  "complete_finite_plane_proof_literal": true,
+  "formula_changes": [
+    "Replace false derivative upper-bound argument with positive-series identity; retain exact counterexample",
+    "Correct exact mean gain and quadratic maximum; auxiliary model explicit",
+    "Include P0=1 in upper summation",
+    "Gamma asymptotic equivalence, proxy not nonlinear observable"
+  ],
+  "retired_mutations": [
+    "claim_order_injected",
+    "claim_classical_name_in_theorem"
+  ],
+  "added_mutations": [
+    "positive_series_coefficient_wrong",
+    "exact_mean_gain_wrong"
+  ],
+  "all_original_mutation_sources_recoverable": true,
+  "primary_runs": 0,
+  "simulation_runs": 0,
+  "mutation_runs": 0
+}

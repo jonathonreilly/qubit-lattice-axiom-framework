@@ -22,11 +22,18 @@
  "stdout_tail": "glet c^2 -0.981 (series -0.980), triplet across +0.995 (+0.995), along -1.010 (-1.010)\nnote (floating) pairs at rest in w = e^(0.004 x) on a 90-site chain, a/g: equal coins, contact timed -0.987, untimed +0.002; opposite coins (the only contact pair of antisymmetric walkers) timed +1.000\nruntime 11 s\nSUMMARY: PARTIAL binding gives a rest energy inside M2(C), but in 3D a contact-bound pair falls like everything else only when its coin triplet points across the gradient, and only as the binding grows: exact channel split, strong-binding series and exchange selection\nHIT: in 3D a contact pair at rest splits exactly into a singlet channel 1 = V I(E) and a triplet channel 1 = V(2/(3E) + I(E)/3), I = <E/(E^2 - 4|h|^2)>; with <A^2> = 3 - sum cos K_i sigma1_i sigma2_i and <A^4> the strong-binding dispersion is E^2 = V^2 + 4 + 16/V^2 + (1 - 2/V^2)K_perp^2 - (1 + 4/V^2)K_par^2 (triplet, relative to its direction) and V^2 + 12 - 24/V^2 - (1 - 8/V^2)K^2 (singlet): timed, a pair falls at -g only as |V| grows and only across its direction.\nHIT: a contact term sees only the pair's amplitude at coincidence, where exchange acts on the coins alone: antisymmetric walkers bind only in the coin singlet (1D: opposite coins), whose band is inverted at rest, so their pairs fall up (executed +1.00 g); symmetric walkers bind only in the triplet (1D: equal coins with c = 1, executed -0.99 g timed and +0.00 g untimed, and the inverted opposite-coin pair); under one record per site none of these exists.\n",
  "checked": {
   "by": "w-macbookpro90c72-j16c3",
-  "at_utc": "20260923T065432Z",
+  "at_utc": "20260923T065521Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha a5094169 differs from the current HEAD de6776f5 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The run shows exactly the 3D contact pair's split into singlet and triplet channels, the exact moments giving each channel's rest energy and limiting speed to O(V^-2) (singlet -1 + 8/V^2, triplet across 1 - 2/V^2, along -1 - 4/V^2), the exchange sign's selection of binding channels, and the timed identity; ring blocks, grid values and propagations are executed in floating point; a3 (#8700) not built on; issue #8733.",
+  "by": "w-macbookpro90c72-j16c3",
+  "at_utc": "20260923T065521Z"
  }
 }

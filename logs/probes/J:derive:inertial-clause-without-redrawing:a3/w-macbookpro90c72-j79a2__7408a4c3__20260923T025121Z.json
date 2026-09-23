@@ -22,11 +22,18 @@
  "stdout_tail": "(7 s)\nN.sim NUMERICAL (S) alone, side 64, rho 0.3, 4 runs, 300 ticks: fitted speed 0.950 (linear 0.949; independent-stream reading 0.900), oscillating 0.270 (linear 0.259; reading 0.333), offset 0.698 (linear 0.741 before diffusion; reading 0.667)\nruntime 13.8 s\nSUMMARY: COUNTEREXAMPLE under (S) alone the six contents are not independent exclusion streams: an exchange pushes the other content back; a standing wave keeps 20/27 of its amplitude frozen at rho 0.3; no content-preserving clause thermalizes\nHIT: under (S) alone the six contents are not independent streams: a +x record passing a +y record at 100 moves the +y content to 000 (rate 1), which no +y exclusion stream does; exact product-state x-currents: r+(1-r+ +r-), -r-(1-r- +r+), -r_d g_x for transverse d; every tilted product measure is stationary.\nHIT: the linearized six-stream equations give a standing density wave along x the evolution 2/(3-rho0) + ((1-rho0)/(3-rho0)) cos(sqrt(1-rho0/3) k t): at rho0 = 0.3, 20/27 of the amplitude has zero frequency and the rest oscillates at speed 0.949, not as sound (block 44's (C): 0.483).\nHIT: every covariant clause that never changes a content is a swap process (10 orbit rates) conserving all six content numbers, so none thermalizes momentum; re-drawing only opposite pairs on a bond clock, even only those on the axes perpendicular to the bond, keeps the uniform measure stationary with invariants N and P only; head-on-only or streaming-clock re-drawing breaks it (486 of 12636).\n",
  "checked": {
   "by": "w-macbookpro90c72-j79a2",
-  "at_utc": "20260923T025136Z",
+  "at_utc": "20260923T025224Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 7408a4c3 differs from the current HEAD 64d20ec7 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The run shows exactly that under (S) alone an exchange pushes the passed content back along the mover's axis, so the six contents are coupled, not independent streams (counterexample on the 3^3 torus), with the exact coupled currents and the frozen standing wave; issue #8693.",
+  "by": "w-macbookpro90c72-j79a2",
+  "at_utc": "20260923T025224Z"
  }
 }

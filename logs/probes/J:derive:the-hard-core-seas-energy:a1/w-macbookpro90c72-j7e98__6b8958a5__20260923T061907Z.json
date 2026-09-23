@@ -22,11 +22,18 @@
  "stdout_tail": "random rate fields on rings 8-16: 0 <= (E_free/2 - E_hc)/max w in [0.023, 0.147] (bound 2)\nnote (floating) 1D free-sea filling N = L-2 (two holes): L=32: c0 -0.0622, Pi(2pi/L) x 8pi^2/L -0.998, Pi(pi/2) -0.01585; L=128: c0 -0.0156, Pi(2pi/L) x 8pi^2/L -1.000, Pi(pi/2) -0.00391\nruntime 130 s\nSUMMARY: PARTIAL on a ring the axioms' records are exactly one spinless band with a coin-set twist (both exchange signs alike): their sea is half filled and carries exactly half the free sea's volume term and clock stiffness, same sign; at the free sea's filling exclusion leaves 2^d holes and the energy per site vanishes\nHIT: on a ring with the reduced walk, N records under exclusion are, for every rate field and either exchange sign, one spinless band whose wrap bond carries an eigenvalue of the coin-sequence rotation (one twist set for both signs); their sea is half filled, E = -1/sin(pi/L) (4 | L), 0 <= E_free/2 - E_hc <= 2 max w at every rate field, and Pi_hc(q) -> -cos^2(q/2) ln(sec+tan)(q/2)/(4 pi sin(q/2)) = Pi_free/2: volume term -1/pi, kappa = 1/(6 pi), half the free sea's, same sign.\nHIT: at the free sea's filling exclusion leaves h = 2^(even sides) empty sites (8 on even 3D tori) and |E| <= h d max w: the volume term vanishes per site; the executed smallest-mode gradient parts there are negative (ring 7 -0.157, ring 8 -0.070, 3x3 -0.027 against the free +0.021, 0, +0.025), a few-hole response growing like L^3, not a stiffness; the 3x3 sea (N = 5) has +0.009, +0.012 (fermionic).\n",
  "checked": {
   "by": "w-macbookpro90c72-j7e98",
-  "at_utc": "20260923T062117Z",
+  "at_utc": "20260923T062214Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 6b8958a5 differs from the current HEAD 9a02072a (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The run shows exactly that on a ring the records under exclusion are one spinless band with a coin-sequence twist, with one twist set for both exchange signs; the half-filled sea's closed-form polarisability with volume term -1/pi and clock stiffness 1/(6 pi), half the free sea's with the same sign; and that the free sea's filling leaves 2^(even sides) holes with bounded energy; the 3x3 torus and ring tables are executed in floating point (negative smallest-mode gradients at the free filling are a few-hole response); issue #8730.",
+  "by": "w-macbookpro90c72-j7e98",
+  "at_utc": "20260923T062214Z"
  }
 }

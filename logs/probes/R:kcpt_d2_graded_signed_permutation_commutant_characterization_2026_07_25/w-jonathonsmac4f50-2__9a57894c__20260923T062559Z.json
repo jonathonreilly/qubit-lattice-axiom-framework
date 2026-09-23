@@ -1,0 +1,35 @@
+{
+ "task": "R:kcpt_d2_graded_signed_permutation_commutant_characterization_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "kcpt",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/kcpt_d2_graded_signed_permutation_commutant_characterization_2026_07_25.py",
+ "seed": 44759,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9a57894c",
+ "started_utc": "20260923T062559Z",
+ "elapsed_s": 383.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=32 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "618d4668990d1d15cdb94eadba93150331d0bb089e9b9aa979c85b2f9fb2d00c",
+ "stdout_tail": "GC_L6] PASS -- |GC|=41472=41472 (pinned) =2*|Comm|, partition (20736, 20736, 0) (kernel=Comm), H and <H,g_r4> subset GC\n[GATE ORDER_COINCIDENCE_L6] PASS -- |<H,g_r4>|=20736=|Comm| but distinct groups (|Comm\\HG|=10368, |HG\\Comm|=10368), |HG cap Comm|=10368=|Comm|/2\n[GATE END_COMM_L6] PASS -- dim End_Comm(C^N)=7 (raw 7.000000000)\n[GATE END_HG_L6] PASS -- dim End_<H,g_r4>=7 = per-shell [1, 2, 2, 2] (shell_commutant [1, 2, 2, 2] agrees)\n[GATE END_H_L6] PASS -- dim End_H=19 (landed anchor 19), End_Comm=7 (L-stable) vs End_H growing\n[GATE WORD_R4_L6] PASS -- dim <A_nat,g_r4>=60=60 pinned (closed), g_r4 in Comm\\H, explicit !=20 exclusion (redundant given the =60 pin)\n[GATE COMM_REJECT_L4] PASS -- |Comm|_L4=6144 != 20736 (L=6 value); the two lattices differ\n[GATE SEP6_ANCHOR] PASS -- sep6 rank_sum=16, ||sep6||=4.0000000000, H-invariance 3.2e-13\n[GATE SEP6_GENSET_MOVE] PASS -- Comm generating set closes to |Comm|; sep6 moved by Comm gens: max disp 8.0000 (pinned 8), mod-sign 5.6569 (pinned 4*sqrt2) (H-specific: not Comm-invariant even up to sign)\n[GATE OMEGA_SAMPLE] PASS -- omega for 5 Comm\\H elements (sample, not census): [0.0, 0.0, 0.0, 0.0, 0.0] all closed, dim 32, omega 0 each\n[GATE PERT1_NEITHER] PASS -- diag((-1)^x0) grade=0 (neither: classifier is not a commute/anticommute proxy)\n[GATE PERT2_FAIL] PASS -- Comm generator o adjacent transposition commutes=False (exact verification rejects a corrupted element)\n\n[info] total wall-clock 384s, peak RSS 1.57 GB\n\nTOTAL: PASS=32 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T063223Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/kcpt_d2_graded_signed_permutation_commutant_characterization_2026_07_25.txt against the .txt beside this log"
+  ]
+ }
+}

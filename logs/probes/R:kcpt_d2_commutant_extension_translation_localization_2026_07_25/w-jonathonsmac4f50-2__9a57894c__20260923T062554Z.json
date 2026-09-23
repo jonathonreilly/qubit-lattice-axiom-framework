@@ -1,0 +1,35 @@
+{
+ "task": "R:kcpt_d2_commutant_extension_translation_localization_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "kcpt",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/kcpt_d2_commutant_extension_translation_localization_2026_07_25.py",
+ "seed": 44754,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9a57894c",
+ "started_utc": "20260923T062554Z",
+ "elapsed_s": 4.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=110 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0babd560c647f40bf448df7e407ec34bffbec76efcaada53649cd9fff528fddc",
+ "stdout_tail": "_matches_formula                        q((L/2)v) = (-1)^{(L/2)^2 sum_{i<j} v_i v_j} on all 8 v\n  PASS  L6.G18.q_minus_count                            q=-I count=4 (XREF 4)\n  PASS  L6.G18.q_minus_set_L6                           -I 2-torsion set = {(3,3,0),(3,0,3),(0,3,3),(3,3,3)}\n  PASS  L6.G19.struct_gens_generate_Comm                closure of 7 structural generators = |Comm| = 20736\n  PASS  L6.G19.Ttilde_normal                            conjugates of T~ generators by all 7 struct gens land in T~\n  PASS  L6.G19.Ttilde_cap_S_trivial                     T~ cap S = {+I}\n  PASS  L6.G19.order_product                            |T~|*|S|=432*48=20736 = |Comm|\n  PASS  L6.G19.TS_product_set_eq_Comm                   product set T~*S: 20736 distinct elements = Comm elementwise\n  PASS  L6.G20.spectrum_eigenvalues                     eig=[0, -3, -6, -9] (int resid 2.13e-14 < 1e-9)\n  PASS  L6.G20.spectrum_multiplicities                  mults=[8, 48, 96, 64] (XREF [8, 48, 96, 64])\n  [L=6 wall 2.6s]\n\n========================================================================\ncross-surface gates\n========================================================================\n  PASS  X.G21.beta_unit_matrix_agree                    same beta unit matrix at L=4 and L=6\n  PASS  X.G21.q_differs_across_surfaces                 q_minus_count 0 (L=4) vs 4 (L=6): (L/2)^2 parity even vs odd\n\n========================================================================\nTOTAL: PASS=110 FAIL=0\ngates=110 wall=4.1s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T062559Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/kcpt_d2_commutant_extension_translation_localization_2026_07_25.txt against the .txt beside this log"
+  ]
+ }
+}

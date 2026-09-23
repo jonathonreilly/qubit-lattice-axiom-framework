@@ -1,0 +1,44 @@
+{
+ "task": "R:kcpt_dirac_symmetry_five_module_selective_cp_fusion_2026_07_21",
+ "type": "runner-reexecution",
+ "lane": "kcpt",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/kcpt_dirac_symmetry_five_module_selective_cp_fusion_2026_07_21.py",
+ "seed": 45253,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9a57894c",
+ "started_utc": "20260923T063413Z",
+ "elapsed_s": 32.0,
+ "returncode": 1,
+ "hit": false,
+ "summary": {
+  "expected_ok": false,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "39ea48ce1b6391ca868adcfafca2b7af07c25314d9aa82a8b43329a90d3fc4d6",
+ "stdout_tail": " would be reducible)\n[PASS] G19: M-shells=[np.float64(-12.0), np.float64(-8.0), np.float64(-4.0), np.float64(-0.0)]  max||[D2/Jf, L_s]||=4.16e-17\n[PASS] G20: mshell(ind12)=(-8.0,-8.0)  tr(L_-8)=24  tr(P_ind12)=12  => dim Z(A) > 4\n[PASS] G21: max_h||[h,P12+]||=2.35e-15 (in End_H)  ||[D2,P12+]||=0.354 (not central) => dim Z(A) < 6\n[PASS] G22: (dim C[M], dim Z(A), dim End_H) = (4, 5, 6)  with 4 < 5 < 6\n[PASS] G23: ||J^2+I||=4.44e-16  ||J+J^T||=0.00e+00  ||JJ^T-I||=4.44e-16  ||J-Se||=1.000 (>=|Se|)  ||J+Se||=1.000 (>=|Se|)\n[PASS] G24: ||P_a D2 P_b||=8.47e-16  ||P_a Jf P_b||=2.99e-16  (no induced-12 edge => 5 modules)\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/kcpt_dirac_symmetry_five_module_selective_cp_fusion_2026_07_21.py\", line 585, in <module>\n    _u14=read_repo(\"docs/KCPT_CP_COMPLETION_UNDER_EXTENDED_GROUP_BOUNDED_THEOREM_NOTE_2026-07-20.md\")\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/kcpt_dirac_symmetry_five_module_selective_cp_fusion_2026_07_21.py\", line 399, in read_repo\n    with open(os.path.join(_ROOT, rel), encoding=\"utf-8\") as fh:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/KCPT_CP_COMPLETION_UNDER_EXTENDED_GROUP_BOUNDED_THEOREM_NOTE_2026-07-20.md'\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T063446Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (False)",
+   "FAIL: parse field 'total' found nothing in the stdout: the run may not have reached its summary",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: the pinned cache ends with the verdict 'TOTAL: PASS=28 FAIL=0' and this run printed none",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/kcpt_dirac_symmetry_five_module_selective_cp_fusion_2026_07_21.txt against the .txt beside this log"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "automatic: the runner reads /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/KCPT_CP_COMPLETION_UNDER_EXTENDED_GROUP_BOUNDED_THEOREM_NOTE_2026-07-20.md, which is not in the tree at that path",
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T063446Z"
+ }
+}

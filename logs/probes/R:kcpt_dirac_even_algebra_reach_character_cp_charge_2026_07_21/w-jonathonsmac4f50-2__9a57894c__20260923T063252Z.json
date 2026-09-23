@@ -1,0 +1,36 @@
+{
+ "task": "R:kcpt_dirac_even_algebra_reach_character_cp_charge_2026_07_21",
+ "type": "runner-reexecution",
+ "lane": "kcpt",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/kcpt_dirac_even_algebra_reach_character_cp_charge_2026_07_21.py",
+ "seed": 45172,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9a57894c",
+ "started_utc": "20260923T063252Z",
+ "elapsed_s": 26.4,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=22 FAIL=3",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e462d471ea67cac09f837efa69a407d7a07772412fd484f4054099c058b9360b",
+ "stdout_tail": " nonzero 12+/12- off-block 0.565 => not H-invariant\nPASS G-REJ-PEVEN - nonzero D2 J_full is S_eps-even and H-invariant (generator commutator residual 2.22e-16)\nPASS G-T3-MSHELLS - constituent M-shells (multiset) = {0, -4, -4, -8, -8, -12}\nPASS G-T3-DEGENPAIRS - CP-pair share M-shell -4; two induced-12 share M-shell -8; two induced-8 M-distinct (0 vs -12)\nPASS G-GAP - dim End_H - dim C[M] = 2 = number of intra-shell (M-degenerate) constituent pairs\nPASS G-T4-ISOEQ - all six character projectors (d/|H|) sum_h conj(chi) rho(h) reconstruct their constituent projectors; max residual 8.80e-15\nPASS G-T4-RANK5 - adjoining the CP isotypic projector raises reach 4 -> 5\nPASS G-T4-RANK6 - adjoining the induced-12 isotypic projector raises reach 5 -> 6 = dim End_H\nPASS G-T4-SEPSPLIT - CP isotypic charge separates {12+,12-}: block-scalar 1 on one, 0 on its chi_sgn-twin\nPASS G-T4-SEPIND - induced-12 isotypic charge separates the two M-shell(-8) constituents: 1 vs 0\nPASS G-T5-MCPEVEN - S_eps M S_eps = M (computed residual 0.00e+00); f(M) is constant on the twist-pair's common shell\nPASS G-T5-TWIST - max_h |chi_12+(h)-chi_sgn(h)chi_12-(h)| = 5.33e-15; the central projector is character-sensitive, not chi_sgn-odd\nFAIL G-PIN-U14 - U14 six-constituent decomposition sentence present in the U14 note\nFAIL G-PIN-U16 - U16 chi_sgn-covariance sentence present in the U16 note\nFAIL G-PIN-SELF - self-note dependency inventory: exactly U14 + U16 linked (2 edges), U17 backticked (0)\n\nTOTAL: PASS=22 FAIL=3\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T063319Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=22 FAIL=3' vs cache 'TOTAL: PASS=25 FAIL=0'"
+  ]
+ }
+}

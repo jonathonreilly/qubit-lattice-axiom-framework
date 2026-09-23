@@ -1,0 +1,35 @@
+{
+ "task": "R:kcpt_l6_surface_change_module_structure_natural_algebra_invariance_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "kcpt",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/kcpt_l6_surface_change_module_structure_natural_algebra_invariance_2026_07_25.py",
+ "seed": 45389,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9a57894c",
+ "started_utc": "20260923T063629Z",
+ "elapsed_s": 81.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=34 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "86bf37c5d24431a22abfafafcc22583ea1baa6cc91bbfde77d4a7024cee35616",
+ "stdout_tail": "] PASS -- 4 blocks, ranks [8, 48, 64, 96], block-alg dim [4, 4, 4, 4] (=>M_2), block-center [1, 1, 1, 1], max||P_block-P_shell|| 2.5e-14\n[GATE D3s1234] PASS -- 4 blocks, ranks [8, 48, 64, 96], block-alg dim [4, 4, 4, 4] (=>M_2), block-center [1, 1, 1, 1], max||P_block-P_shell|| 4.8e-14\n[GATE D4] PASS -- positive control overlap^2(A_nat, P_m) min 1.000000000000\n[info] section D done (0s)\n[GATE E1] PASS -- dim A' = 13; Gram null_max 3.63e-12, first non-null 1.60e+01, scale 4.00e+01\n[GATE E2] PASS -- A' abelian: max pairwise ||[A,B]||_F = 2.23e-14\n[GATE E3s11] PASS -- ranks [8, 8, 8, 12, 12, 12, 12, 24, 24, 24, 24, 24, 24], sum 216, dim A = sum r_i^2 = 4224\n[GATE E3s2024] PASS -- ranks [8, 8, 8, 12, 12, 12, 12, 24, 24, 24, 24, 24, 24], sum 216, dim A = sum r_i^2 = 4224\n[GATE E4] PASS -- L=4: |H|=1536, dim A'=5, ranks [8, 8, 12, 12, 24], dim A = 992\n[GATE E4b] PASS -- L=4: End_H = C^6 abelian (char 6, dim 6, max ||[X,Y]||_F 1.8e-15); dressed-r4 commutes True, in H False\n[GATE E5] PASS -- L=6 separator complement dim 9 (C[M] dim 4); L=4 comparison dim 1\n[GATE E6] PASS -- sep6 rank sum 16, ||sep6||_F 4.000000000000, [sep6,D2] 9.7e-13, [sep6,J] 3.2e-13, max[sep6,rho(h)] 3.8e-13\n[GATE E7a] PASS -- overlap^2(A_nat, 9 complement dirs) max 3.24e-27\n[GATE E7b] PASS -- sep6 + 6 quartet diffs blind: overlap^2 max 1.25e-32\n[GATE E8] PASS -- augmented A_nat basis: overlap^2(aug, sep6) = 1.000000000000\n[info] section E done (1s)\n[info] wall-clock 81.6s, peak RSS 0.92 GB\nTOTAL: PASS=34 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T063751Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/kcpt_l6_surface_change_module_structure_natural_algebra_invariance_2026_07_25.txt against the .txt beside this log"
+  ]
+ }
+}

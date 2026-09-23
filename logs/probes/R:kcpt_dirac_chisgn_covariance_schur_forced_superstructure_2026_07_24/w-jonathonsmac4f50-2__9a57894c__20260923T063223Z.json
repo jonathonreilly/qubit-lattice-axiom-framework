@@ -1,0 +1,35 @@
+{
+ "task": "R:kcpt_dirac_chisgn_covariance_schur_forced_superstructure_2026_07_24",
+ "type": "runner-reexecution",
+ "lane": "kcpt",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/kcpt_dirac_chisgn_covariance_schur_forced_superstructure_2026_07_24.py",
+ "seed": 45143,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9a57894c",
+ "started_utc": "20260923T063223Z",
+ "elapsed_s": 29.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=38 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a59401e94dccd1810cac57adf23faa4dc0391ad860251b48df2e14a06efd321b",
+ "stdout_tail": "singular values of K: 24 within 1e-9 of 2, 40 <= 1e-9 (sv1=2.000000000000002, sv24=1.999999999999998, sv25=9.199e-16)\n[PASS] G07c: external anchor 1 (DERIVED): ||[D2,P_12+]||_2 = max sv(K)=2.000000000000002, |max sv - 2.0|=2.220e-15 (<= 1.0e-12)\n[PASS] G07d: external anchor 2 (measured lattice-frame, re-pinned): ||[D2,P_12+]||_max=0.35355339059327712 vs 1/(2 sqrt 2)=0.35355339059327373, diff=3.386e-15 (<= 1.0e-12)\n[PASS] G07e: contrast rejector: an UNFUSED (central) ind12 projector commutes with D2: ||[D2, P_ind12]||=6.895e-15 (<= 1.0e-12) -- sharp central-vs-noncentral contrast\n[PASS] G08a: each of six M-blocks Z^dag M Z is scalar lambda*I: max residual=9.780e-15 (<= 1.0e-12); full eigenspace max||(M-lambda I)Z||=5.504e-14 (<= 1.0e-12); lambdas=[-12.0, 0.0, -8.0, -8.0, -4.0, -4.0]\n[PASS] G08b: m := -lambda/4 DERIVED: multiset sorted=[0, 1, 1, 2, 2, 3] (=[0,1,1,2,2,3]); ind8s->{0,3}=(0,3)  ind12s->{2,2}=(2,2)  12+/-->{1,1}=(1,1)\n[PASS] G08c: m=0 ind8 (kernel shell): ||D2 Z||=4.581e-15 (<= 1.0e-12) -- D2 vanishes (D2^2=0 there and D2 normal => D2=0)\n[PASS] G08d: m=0 ind8: J_full block spans the twisted line, J_blk = c*X0: residual=1.221e-15 (<= 1.0e-12), |c|=2.82843 (>SV_GAP=1e-04)\n[PASS] G08e: m=3 ind8: D2 block spans the twisted line, D2_blk = c*X0: residual=2.682e-15 (<= 1.0e-12), |c|=9.79796 (>SV_GAP=1e-04)\n[PASS] G08f: both m=2 ind12s: D2 block spans the twisted line, D2_blk = c*X0: max residual=8.722e-15 (<= 1.0e-12), min|c|=9.79796 (>SV_GAP=1e-04)\nTOTAL: PASS=38 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T063252Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/kcpt_dirac_chisgn_covariance_schur_forced_superstructure_2026_07_24.txt against the .txt beside this log"
+  ]
+ }
+}

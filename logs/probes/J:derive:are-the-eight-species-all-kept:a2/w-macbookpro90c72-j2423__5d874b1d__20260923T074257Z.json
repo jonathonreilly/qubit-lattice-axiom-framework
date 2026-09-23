@@ -22,11 +22,18 @@
  "stdout_tail": "876/609875, m2 = -239024/609875 (K = 1/2), the rates' operator -Lap + Q/chi positive definite (all 45 exact pivots > 0, block 71 T3(d)), rates N > 0 everywhere, block 60's bond-form ledger stationary at every site exactly, and the walls' ledger 8K(Q1 + Q2) = 0: a static closed system with both signs and total ledger zero, the positive body heavier in bare energy\nruntime 0 s\nSUMMARY: PARTIAL no supplied clause removes branches (nothing in M2(C) gaps a species, a staggered mass gaps opposite-sense pairs and breaks the odd maps, records cannot tell species or signs apart, reading the sixteen as one object is the parked site-algebra decision); and a static closed system with a positive and a negative body has total ledger zero exactly\nHIT: in block 60's curvature member a positive and a negative body at rest with charges Q1 = -Q2 have walls' ledger 8K(Q1 + Q2) = 0 and an exact static solution with positive lengths and rates (5x3x3 box, Q = 1/10: bare energies 248876/609875 and -239024/609875, rates' operator positive definite): with amplitudes of both signs the unit of rate can be a variable, as block 60 T1 allows only at total zero.\nHIT: no supplied clause removes any of the sixteen branches: in M2(C) no term anticommutes with the coin, so covariant nearest-neighbour terms are scalar at every species point; the staggered mass gaps species only in opposite-sense pairs (senses sum to zero) and breaks the odd species maps; a formed record weighs both signs and all species equally.\n",
  "checked": {
   "by": "w-macbookpro90c72-j2423",
-  "at_utc": "20260923T074258Z",
+  "at_utc": "20260923T074352Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 5d874b1d differs from the current HEAD 0f5ba7c6 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The run shows exactly that nothing in M2(C) gaps a species and the staggered mass gaps opposite-sense pairs while breaking the odd species maps, that the sixteen-component reading is the parked site-algebra decision (stopped), that a formed record weighs both signs and all species equally, and that a positive and a negative body in the curvature member have an exact static solution with total ledger zero (5x3x3 box); doubling assumed for general local terms; issue #8741.",
+  "by": "w-macbookpro90c72-j2423",
+  "at_utc": "20260923T074352Z"
  }
 }

@@ -1,0 +1,27 @@
+W1: infinite-volume thresholds
+  (w_0, w_1) = (1, 1): beta_0 = 0.590494
+  (w_0, w_1) = (1, 2): beta_0 = 0.317441
+  (w_0, w_1) = (2, 1): beta_0 = 0.539817
+  six neighbours alone (w_0 = 0, w_1 = 1): 3 I(0) = 0.758193; record below alone: no memory
+W2: even and odd sites of a level, started orthogonal (even along z, odd along x), 16^3, beta = 1.5
+  w_0 = 0, w_1 = 1:
+    t=1: |m_even|=0.892 |m_odd|=0.888 cos=-0.013
+    t=2: |m_even|=0.863 |m_odd|=0.860 cos=-0.015
+    t=5: |m_even|=0.832 |m_odd|=0.834 cos=+0.019
+    t=10: |m_even|=0.828 |m_odd|=0.834 cos=-0.001
+    t=25: |m_even|=0.824 |m_odd|=0.815 cos=-0.034
+    t=50: |m_even|=0.808 |m_odd|=0.819 cos=-0.053
+    t=100: |m_even|=0.820 |m_odd|=0.820 cos=-0.105
+    t=200: |m_even|=0.821 |m_odd|=0.823 cos=+0.017
+    t=400: |m_even|=0.816 |m_odd|=0.819 cos=-0.116
+  w_0 = 1, w_1 = 1:
+    t=1: |m_even|=0.894 |m_odd|=0.894 cos=+0.314
+    t=2: |m_even|=0.867 |m_odd|=0.869 cos=+0.551
+    t=5: |m_even|=0.862 |m_odd|=0.863 cos=+0.914
+    t=10: |m_even|=0.865 |m_odd|=0.863 cos=+0.998
+    t=25: |m_even|=0.858 |m_odd|=0.862 cos=+0.999
+    t=50: |m_even|=0.861 |m_odd|=0.863 cos=+1.000
+    t=100: |m_even|=0.852 |m_odd|=0.859 cos=+1.000
+    t=200: |m_even|=0.858 |m_odd|=0.860 cos=+1.000
+    t=400: |m_even|=0.854 |m_odd|=0.854 cos=+1.000
+CONTROL exit=0

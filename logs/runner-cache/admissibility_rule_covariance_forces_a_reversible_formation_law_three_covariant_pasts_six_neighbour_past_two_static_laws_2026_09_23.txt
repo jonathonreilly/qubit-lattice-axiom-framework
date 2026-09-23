@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_covariance_forces_a_reversible_formation_law_three_covariant_pasts_six_neighbour_past_two_static_laws_2026_09_23.py
+runner_sha256: 1db7c1e010be0766488c5bab4c574497087b46f43306c820701d077b8302b20c
+input_fingerprint_sha256: 57e82088ab61b81755d7a2f687e22266bc0d651d5a6b92e1c20c2cf25ef3b852
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.69
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_COVARIANCE_FORCES_A_REVERSIBLE_FORMATION_LAW_THREE_COVARIANT_PASTS_AND_THE_SIX_NEIGHBOUR_PAST_SETTLES_INTO_TWO_COPIES_OF_THE_STATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-23.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: the 24 proper rotations (signed permutation matrices of determinant one) split the nearest-neighbour past {0, +-e_j} into two orbits, the record below and its six neighbours; among all 2187 weightings with weights 0, 1, 2 exactly 9 are invariant, all constant on the orbits (w_0 below, w_1 on the six) and all symmetric, w_(-d) = w_d
+PASS: B2 T1: the level-ordered past {0, -e_1, -e_2, -e_3} is fixed by only 3 of the 24 rotations (the turns about the body diagonal) and is not symmetric: in the 3+1 reading a rule with that past is not covariant under the Lattice axiom's rotations
+PASS: C1 T2: with the record below weighted t0 = e^(beta w_0) and the two neighbours t1 = e^(beta w_1) (symbolic), the pairwise chain satisfies detailed balance with pi(s) = prod_x Z(h_x(s)) for every pair of configurations on a ring of four (two values) and a ring of three (four six-axis contents): every covariant past, at every pair of weights, is reversible
+PASS: D1 T3: with the six neighbours alone (w_0 = 0) the parity relabelling maps the doubled graph (384 edges at L = 4, 1296 at L = 6) onto two DISJOINT cubic tori, slab 0 being the even sites of one level with the odd sites of the next: two successive levels carry two independent copies of the static sphere law with coupling beta w_1, and a level's even and odd sites are independent
+PASS: D2 T3: with the record below alone (w_1 = 0) the chain factorises over sites; for the six-axis contents the one-site kernel t^(c'.c)/Z is symmetric with equal row sums, so its stationary law is uniform at every beta; the stationary law of a level is a product of uniform laws and <|m|^2> = 1/N: no common direction ever forms
+PASS: D3 T3: with all seven, the relabelling carries the weights: every rung (the record below) has weight w_0 and every slab bond (a displaced predecessor) weight w_1, for (w_0, w_1) = (1, 1), (1, 2), (2, 1) on 4^3: the stationary law is one layer of block 90's bilayer with rung coupling beta w_0 and slab coupling beta w_1, reflection positive by the same structure
+PASS: E1 T3: the sum rule over the weighted bilayer's two branches (w_1 E(k) and w_1 E(k) + 2 w_0) gives memory of a level for beta > beta_L(w_0, w_1) = (3/(2 w_1))(G_L + H_L(2 w_0/w_1)); exactly on 4^3: beta_4(1, 1) = 18239/35840 (block 90), beta_4(1, 2) = 2857397/10250240, beta_4(2, 1) = 32773/71680; with the six neighbours alone each copy of the static law orders for beta w_1 > 3 G_L = 1517/2560 on 4^3 (the single torus's sum rule)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - all 2187 weightings of the past against all 24 rotations; detailed balance for every pair on two rings with two symbolic weights; the one-site kernel of the copy past
+per_site: executed - the six-neighbour relabelling edge by edge onto two disjoint cubic tori (L = 4, 6) and its classes vertex by vertex; the weighted relabelling edge by edge for three weight pairs
+per_mode: executed - the weighted thresholds from the exact spectra on 4^3; control: infinite-volume thresholds by quadrature and a simulation of the six-neighbour past's two sublattices
+per_block: executed - the level-ordered past's stabiliser; the copy past's uniform stationary law; the six-neighbour limit of the threshold
+lattice_wide: T1 exactly (a finite group on a finite set); T2 for every ring or torus and every menu by the symmetry of the weighted stencil (checked on rings); T3 for every even L by the parity argument (checked on 4 and 6) with blocks 19 and 90 for memory; the 3+1 reading, the nearest-neighbour past and the pairwise rule are supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: covariance forces a reversible formation law - in the 3+1 reading the pasts of a record covariant under the cube's 24 rotations are the record below, its six neighbours, or all seven, with orbit weights w_0 and w_1; all are symmetric, and under block 19's pairwise rule all are reversible; the record below alone keeps no common direction, the six neighbours alone settle into two independent copies of the static law, and all seven into block 90's bilayer with rung w_0 and slabs w_1; the level-ordered past is not covariant; nothing adopted
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

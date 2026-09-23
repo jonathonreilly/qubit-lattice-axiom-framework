@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-23 block 93 — author checks (not a review PASS)
+Written lens pass by the supervisor (Claude Opus 5.5). The classification by enumeration over the rotation group; reversibility with symbolic weights; the six-neighbour decoupling and the weighted relabelling edge by edge; the thresholds exact on `4³`; a threshold mutation that did not bite fixed by checking exact values; the expected total corrected before gates. Census 8/8 in family.

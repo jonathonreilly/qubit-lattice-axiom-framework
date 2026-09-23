@@ -19,14 +19,21 @@
  "stdout_sha256": "a6d001f9ec0b43d1de3bc1c18d407bbd495c97cda4cf915e335572ca3d843398",
  "stdout_tail": ": Counter({5: 128})\nPASS every output is the exact indexed row bit and phase is not consumed :: \nPASS 3,072 ported rows are disjoint from Cycle 154 :: 3072\nPASS ported fanout merges into 86,444 rows without conflict :: 86444\nPASS deleting any direct fanout parent suppresses its intended bit :: (640, ())\n\nOPEN PORTS AND CABLE BIND\nPASS all 768 ported four-bit causal cubes are exact :: []\nPASS all 768 fanout-plus-four-cable causal products are exact :: ({193}, [])\nPASS one row record and no literal inputs drive sixteen physical writes :: \nPASS every cable endpoint retains its indexed symplectic bit :: []\n\nPREDECESSOR COEXISTENCE\nPASS all 192 Cycle-154 cable histories survive ported rows :: []\nPASS all 768 Cycle-153 terminal fanout graphs survive ported rows :: []\nPASS all 54,000 Cycle-152 router graphs survive ported rows :: []\nPASS ported rows preserve all 86,640 prior unified histories :: []\nPASS Cycle-144 terminal retains exactly its two priced fronts :: {(-9, -1, 0): frozenset({'B1'}), (-11, 1, 2): frozenset({'R_B21'})}\n\nSCOPE\nFAIL note contains: ported symplectic row fanout :: \nFAIL note contains: four transport-ready bits :: \nFAIL note contains: phase bit remains in the row record :: \nFAIL note contains: core-first, cage-once :: \nFAIL note contains: does not derive occurrence or equal weights :: \nFAIL note contains: no axiom addition follows :: \nFAIL note contains: n1 \u2014 alternative routes :: \nFAIL note contains: n8 \u2014 cross-cycle echo :: \n\nTOTAL\nPASS 16 FAIL 9\nRESULT FAIL\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T122258Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T192338Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha a53d9ca5 differs from the current HEAD 194b463c (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note PHYSICAL_PORTED_SYMPLECTIC_FANOUT_CABLE_CYCLE155_NOTE_2026-07-15.md is on main only under archive/notes/ (densify-freeze migration 0b6129121f). With every archived note restored to its old path on a clean checkout of main (b8d0017208), the runner exits 0 (TOTAL; PASS 25 FAIL 0; RESULT PHYSICAL_PORTED_SYMPLECTIC_FANOUT_CABLE); so every FAIL in the log follows from the archive move.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T192338Z"
  }
 }

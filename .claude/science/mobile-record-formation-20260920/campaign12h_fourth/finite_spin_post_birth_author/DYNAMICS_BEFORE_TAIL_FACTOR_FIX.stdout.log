@@ -1,0 +1,655 @@
+{"S": 4, "Pdim": 264, "elapsed_seconds": 0.017346667125821114, "max_state_error": 0.2454563087119072}
+{"S": 8, "Pdim": 552, "elapsed_seconds": 0.033441207837313414, "max_state_error": 0.10995402889933273}
+{"S": 12, "Pdim": 840, "elapsed_seconds": 0.0698777090292424, "max_state_error": 0.07123952328360067}
+{"S": 16, "Pdim": 1128, "elapsed_seconds": 0.2626620000228286, "max_state_error": 0.053333582392429725}
+{"S": 24, "Pdim": 1704, "elapsed_seconds": 0.22942450013943017, "max_state_error": 0.03220048306870318}
+{"S": 32, "Pdim": 2280, "elapsed_seconds": 0.46526725008152425, "max_state_error": 0.02920343498209096}
+{
+  "source_sha256": "19d1d2c60730a3b0f0e2694ecc7244ad2322f251d9d8736133f40936f8d67136",
+  "parameters": {
+    "K": 0.4,
+    "delta": 0.7,
+    "kappa": 0.3
+  },
+  "flat_reference_cut": 32,
+  "flat_reference_Dyson_tail_norm_bound": 6.492036204221587e-29,
+  "rows": [
+    {
+      "S": 4,
+      "eta": 8.0,
+      "epsilon": 0.2958039891549808,
+      "physical_P_dimension": 264,
+      "generator_nnz": 1624,
+      "elapsed_seconds": 0.017346667125821114,
+      "controls": [
+        {
+          "t": 0.0,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.0,
+          "finite_spin_survival": 1.0000000000000002,
+          "flat_limit_survival": 1.0,
+          "survival_error": 2.220446049250313e-16
+        },
+        {
+          "t": 0.0,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.0,
+          "finite_spin_survival": 1.0000000000000002,
+          "flat_limit_survival": 1.0,
+          "survival_error": 2.220446049250313e-16
+        },
+        {
+          "t": 0.19999999999999998,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.0509856131601761,
+          "finite_spin_survival": 0.7958680740862327,
+          "flat_limit_survival": 0.7866278610664879,
+          "survival_error": 0.009240213019679255
+        },
+        {
+          "t": 0.19999999999999998,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.11336195339529459,
+          "finite_spin_survival": 0.7965541094423441,
+          "flat_limit_survival": 0.7866278610665274,
+          "survival_error": 0.009926248375790592
+        },
+        {
+          "t": 0.39999999999999997,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.08784084273565497,
+          "finite_spin_survival": 0.633219854420993,
+          "flat_limit_survival": 0.6187833918060557,
+          "survival_error": 0.014436462614852097
+        },
+        {
+          "t": 0.39999999999999997,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.18204002524140647,
+          "finite_spin_survival": 0.6367735570070084,
+          "flat_limit_survival": 0.6187833918060781,
+          "survival_error": 0.01799016520086749
+        },
+        {
+          "t": 0.6,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.12390914737211069,
+          "finite_spin_survival": 0.503983640051737,
+          "flat_limit_survival": 0.48675225595987825,
+          "survival_error": 0.017231384091765334
+        },
+        {
+          "t": 0.6,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.2454563087119072,
+          "finite_spin_survival": 0.5114299775504321,
+          "flat_limit_survival": 0.48675225595988453,
+          "survival_error": 0.02467772159046039
+        }
+      ]
+    },
+    {
+      "S": 8,
+      "eta": 28.8,
+      "epsilon": 0.15590239111558088,
+      "physical_P_dimension": 552,
+      "generator_nnz": 3608,
+      "elapsed_seconds": 0.033441207837313414,
+      "controls": [
+        {
+          "t": 0.0,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.0,
+          "finite_spin_survival": 1.0000000000000002,
+          "flat_limit_survival": 1.0,
+          "survival_error": 2.220446049250313e-16
+        },
+        {
+          "t": 0.0,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.0,
+          "finite_spin_survival": 1.0000000000000002,
+          "flat_limit_survival": 1.0,
+          "survival_error": 2.220446049250313e-16
+        },
+        {
+          "t": 0.19999999999999998,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.026235031587904526,
+          "finite_spin_survival": 0.7892407507900885,
+          "flat_limit_survival": 0.7866278610664879,
+          "survival_error": 0.002612889723535017
+        },
+        {
+          "t": 0.19999999999999998,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.06250791664232637,
+          "finite_spin_survival": 0.7895426631478994,
+          "flat_limit_survival": 0.7866278610665274,
+          "survival_error": 0.0029148020813459796
+        },
+        {
+          "t": 0.39999999999999997,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.04039548070882518,
+          "finite_spin_survival": 0.62288392429878,
+          "flat_limit_survival": 0.6187833918060557,
+          "survival_error": 0.004100532492639086
+        },
+        {
+          "t": 0.39999999999999997,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.08901045907456703,
+          "finite_spin_survival": 0.6242234104793394,
+          "flat_limit_survival": 0.6187833918060781,
+          "survival_error": 0.005440018673198432
+        },
+        {
+          "t": 0.6,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.05473676133715007,
+          "finite_spin_survival": 0.4916916429012408,
+          "flat_limit_survival": 0.48675225595987825,
+          "survival_error": 0.004939386941269108
+        },
+        {
+          "t": 0.6,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.10995402889933273,
+          "finite_spin_survival": 0.49448779188823744,
+          "flat_limit_survival": 0.48675225595988453,
+          "survival_error": 0.007735535928265758
+        }
+      ]
+    },
+    {
+      "S": 12,
+      "eta": 62.400000000000006,
+      "epsilon": 0.10591481821704042,
+      "physical_P_dimension": 840,
+      "generator_nnz": 5432,
+      "elapsed_seconds": 0.0698777090292424,
+      "controls": [
+        {
+          "t": 0.0,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.0,
+          "finite_spin_survival": 1.0000000000000002,
+          "flat_limit_survival": 1.0,
+          "survival_error": 2.220446049250313e-16
+        },
+        {
+          "t": 0.0,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.0,
+          "finite_spin_survival": 1.0000000000000002,
+          "flat_limit_survival": 1.0,
+          "survival_error": 2.220446049250313e-16
+        },
+        {
+          "t": 0.19999999999999998,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.01785033186924811,
+          "finite_spin_survival": 0.787839263509328,
+          "flat_limit_survival": 0.7866278610664879,
+          "survival_error": 0.0012114024427745118
+        },
+        {
+          "t": 0.19999999999999998,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.042820831851118006,
+          "finite_spin_survival": 0.787990108186998,
+          "flat_limit_survival": 0.7866278610665274,
+          "survival_error": 0.0013622471204445263
+        },
+        {
+          "t": 0.39999999999999997,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.02676122206870592,
+          "finite_spin_survival": 0.6206882053358935,
+          "flat_limit_survival": 0.6187833918060557,
+          "survival_error": 0.0019048135297525803
+        },
+        {
+          "t": 0.39999999999999997,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.058806834423212516,
+          "finite_spin_survival": 0.6213534726364343,
+          "flat_limit_survival": 0.6187833918060781,
+          "survival_error": 0.0025700808302933087
+        },
+        {
+          "t": 0.6,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.03582493098166833,
+          "finite_spin_survival": 0.48906845206469196,
+          "flat_limit_survival": 0.48675225595987825,
+          "survival_error": 0.0023161961047202806
+        },
+        {
+          "t": 0.6,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.07123952328360067,
+          "finite_spin_survival": 0.4904939369671218,
+          "flat_limit_survival": 0.48675225595988453,
+          "survival_error": 0.0037416810071501105
+        }
+      ]
+    },
+    {
+      "S": 16,
+      "eta": 108.80000000000001,
+      "epsilon": 0.08021111848996848,
+      "physical_P_dimension": 1128,
+      "generator_nnz": 7224,
+      "elapsed_seconds": 0.2626620000228286,
+      "controls": [
+        {
+          "t": 0.0,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.0,
+          "finite_spin_survival": 1.0000000000000002,
+          "flat_limit_survival": 1.0,
+          "survival_error": 2.220446049250313e-16
+        },
+        {
+          "t": 0.0,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.0,
+          "finite_spin_survival": 1.0000000000000002,
+          "flat_limit_survival": 1.0,
+          "survival_error": 2.220446049250313e-16
+        },
+        {
+          "t": 0.19999999999999998,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.013527309941402634,
+          "finite_spin_survival": 0.7873237878160901,
+          "flat_limit_survival": 0.7866278610664879,
+          "survival_error": 0.0006959267495366683
+        },
+        {
+          "t": 0.19999999999999998,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.03254669235006876,
+          "finite_spin_survival": 0.7874131267956344,
+          "flat_limit_survival": 0.7866278610665274,
+          "survival_error": 0.0007852657290808862
+        },
+        {
+          "t": 0.39999999999999997,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.020132031176553714,
+          "finite_spin_survival": 0.6198810281622535,
+          "flat_limit_survival": 0.6187833918060557,
+          "survival_error": 0.0010976363561125968
+        },
+        {
+          "t": 0.39999999999999997,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.04427522690530717,
+          "finite_spin_survival": 0.6202830033351163,
+          "flat_limit_survival": 0.6187833918060781,
+          "survival_error": 0.0014996115289753753
+        },
+        {
+          "t": 0.6,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.026713971483880616,
+          "finite_spin_survival": 0.4880888379011704,
+          "flat_limit_survival": 0.48675225595987825,
+          "survival_error": 0.0013365819411987334
+        },
+        {
+          "t": 0.6,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.053333582392429725,
+          "finite_spin_survival": 0.48893435283831144,
+          "flat_limit_survival": 0.48675225595988453,
+          "survival_error": 0.0021820968783397565
+        }
+      ]
+    },
+    {
+      "S": 24,
+      "eta": 240.00000000000003,
+      "epsilon": 0.05400617248673216,
+      "physical_P_dimension": 1704,
+      "generator_nnz": 11032,
+      "elapsed_seconds": 0.22942450013943017,
+      "controls": [
+        {
+          "t": 0.0,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.0,
+          "finite_spin_survival": 1.0000000000000002,
+          "flat_limit_survival": 1.0,
+          "survival_error": 2.220446049250313e-16
+        },
+        {
+          "t": 0.0,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.0,
+          "finite_spin_survival": 1.0000000000000002,
+          "flat_limit_survival": 1.0,
+          "survival_error": 2.220446049250313e-16
+        },
+        {
+          "t": 0.19999999999999998,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.009188694611830642,
+          "finite_spin_survival": 0.7869440818486919,
+          "flat_limit_survival": 0.7866278610664879,
+          "survival_error": 0.0003162207821384433
+        },
+        {
+          "t": 0.19999999999999998,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.021950813675733403,
+          "finite_spin_survival": 0.7869870442208176,
+          "flat_limit_survival": 0.7866278610665274,
+          "survival_error": 0.00035918315426408665
+        },
+        {
+          "t": 0.39999999999999997,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.013537645281779687,
+          "finite_spin_survival": 0.6192834093618662,
+          "flat_limit_survival": 0.6187833918060557,
+          "survival_error": 0.0005000175557252629
+        },
+        {
+          "t": 0.39999999999999997,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.029909098908471266,
+          "finite_spin_survival": 0.6194754479457854,
+          "flat_limit_survival": 0.6187833918060781,
+          "survival_error": 0.0006920561396444036
+        },
+        {
+          "t": 0.6,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.017867173385485314,
+          "finite_spin_survival": 0.48736227948179134,
+          "flat_limit_survival": 0.48675225595987825,
+          "survival_error": 0.0006100235218196581
+        },
+        {
+          "t": 0.6,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.03220048306870318,
+          "finite_spin_survival": 0.4877502345041612,
+          "flat_limit_survival": 0.48675225595988453,
+          "survival_error": 0.0009979785441895372
+        }
+      ]
+    },
+    {
+      "S": 32,
+      "eta": 422.40000000000003,
+      "epsilon": 0.0407086842049331,
+      "physical_P_dimension": 2280,
+      "generator_nnz": 14840,
+      "elapsed_seconds": 0.46526725008152425,
+      "controls": [
+        {
+          "t": 0.0,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.0,
+          "finite_spin_survival": 1.0000000000000002,
+          "flat_limit_survival": 1.0,
+          "survival_error": 2.220446049250313e-16
+        },
+        {
+          "t": 0.0,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.0,
+          "finite_spin_survival": 1.0000000000000002,
+          "flat_limit_survival": 1.0,
+          "survival_error": 2.220446049250313e-16
+        },
+        {
+          "t": 0.19999999999999998,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.006956034531352558,
+          "finite_spin_survival": 0.7868078312347879,
+          "flat_limit_survival": 0.7866278610664879,
+          "survival_error": 0.00017997016823445566
+        },
+        {
+          "t": 0.19999999999999998,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.01659684238440853,
+          "finite_spin_survival": 0.7868334488948145,
+          "flat_limit_survival": 0.7866278610665274,
+          "survival_error": 0.0002055878282610779
+        },
+        {
+          "t": 0.39999999999999997,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.010800723270708551,
+          "finite_spin_survival": 0.619066934505818,
+          "flat_limit_survival": 0.6187833918060557,
+          "survival_error": 0.0002835426996770085
+        },
+        {
+          "t": 0.39999999999999997,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.023612166185862767,
+          "finite_spin_survival": 0.6191742617661699,
+          "flat_limit_survival": 0.6187833918060781,
+          "survival_error": 0.0003908699600289056
+        },
+        {
+          "t": 0.6,
+          "initial_flat_label": [
+            1,
+            1,
+            1
+          ],
+          "state_norm_error": 0.014632343042463827,
+          "finite_spin_survival": 0.487099904429957,
+          "flat_limit_survival": 0.48675225595987825,
+          "survival_error": 0.00034764846998530663
+        },
+        {
+          "t": 0.6,
+          "initial_flat_label": [
+            0,
+            0,
+            0
+          ],
+          "state_norm_error": 0.02920343498209096,
+          "finite_spin_survival": 0.48733011785086594,
+          "flat_limit_survival": 0.48675225595988453,
+          "survival_error": 0.0005778618908942601
+        }
+      ]
+    }
+  ],
+  "scope": "Author finite-spin convergence controls for two prepared flat vectors, not a proof or a full first-output replacement."
+}

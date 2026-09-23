@@ -1,0 +1,111 @@
+{
+  "rows": [
+    {
+      "theta": 0.0,
+      "J_isometry_error": 7.691850745534255e-16,
+      "JG_zero_error": 0.0,
+      "wedge_projector_difference": 4.943418487567685e-15,
+      "G_rank": 22
+    },
+    {
+      "theta": 0.0001,
+      "J_isometry_error": 6.080941944488118e-16,
+      "JG_zero_error": 1.4525173423582704e-16,
+      "wedge_projector_difference": 4.519559512993586e-15,
+      "G_rank": 24,
+      "inverse_norm": 21213.203436592667,
+      "predicted_inverse_norm": 21213.20343657852,
+      "inverse_identity_error": 6.988796964576679e-12
+    },
+    {
+      "theta": 0.07,
+      "J_isometry_error": 7.691850745534255e-16,
+      "JG_zero_error": 5.0868752890911693e-17,
+      "wedge_projector_difference": 4.815624577633481e-15,
+      "G_rank": 24,
+      "inverse_norm": 30.30526381240931,
+      "predicted_inverse_norm": 30.30526381240932,
+      "inverse_identity_error": 9.770183968850769e-15
+    },
+    {
+      "theta": 0.31,
+      "J_isometry_error": 7.691850745534255e-16,
+      "JG_zero_error": 7.603212034309381e-17,
+      "wedge_projector_difference": 5.562029424700668e-15,
+      "G_rank": 24,
+      "inverse_norm": 6.846014286149998,
+      "predicted_inverse_norm": 6.846014286149995,
+      "inverse_identity_error": 2.356909651786964e-15
+    },
+    {
+      "theta": 0.7853981633974483,
+      "J_isometry_error": 7.691850745534255e-16,
+      "JG_zero_error": 2.2688345031698574e-17,
+      "wedge_projector_difference": 4.6865709653522175e-15,
+      "G_rank": 24,
+      "inverse_norm": 2.7086777341763324,
+      "predicted_inverse_norm": 2.7086777341763324,
+      "inverse_identity_error": 1.922424551822106e-15
+    },
+    {
+      "theta": 1.5706963267948966,
+      "J_isometry_error": 7.691850745534255e-16,
+      "JG_zero_error": 2.7194799118628437e-16,
+      "wedge_projector_difference": 4.148337906993169e-15,
+      "G_rank": 24,
+      "inverse_norm": 21213.203436570137,
+      "predicted_inverse_norm": 21213.203436580854,
+      "inverse_identity_error": 8.031960255946515e-12
+    },
+    {
+      "theta": 1.5707963267948966,
+      "J_isometry_error": 7.691850745534255e-16,
+      "JG_zero_error": 6.743390007327458e-33,
+      "wedge_projector_difference": 4.855952853420661e-15,
+      "G_rank": 22
+    },
+    {
+      "theta": 2.19,
+      "J_isometry_error": 5.438959822042073e-16,
+      "JG_zero_error": 3.0418168692682085e-16,
+      "wedge_projector_difference": 6.598966832314077e-15,
+      "G_rank": 24,
+      "inverse_norm": 3.4319733436306334,
+      "predicted_inverse_norm": 3.431973343630634,
+      "inverse_identity_error": 2.1558743619463696e-15
+    },
+    {
+      "theta": 3.14,
+      "J_isometry_error": 7.691850745534255e-16,
+      "JG_zero_error": 2.1812499033698082e-16,
+      "wedge_projector_difference": 5.654277748465326e-15,
+      "G_rank": 24,
+      "inverse_norm": 1331.9408451818374,
+      "predicted_inverse_norm": 1331.9408451819045,
+      "inverse_identity_error": 4.4099399249232484e-13
+    },
+    {
+      "theta": 4.6,
+      "J_isometry_error": 7.691850745534255e-16,
+      "JG_zero_error": 8.39164770062382e-18,
+      "wedge_projector_difference": 5.004460590857823e-15,
+      "G_rank": 24,
+      "inverse_norm": 18.87591107500361,
+      "predicted_inverse_norm": 18.875911075003636,
+      "inverse_identity_error": 5.613664332206248e-15
+    },
+    {
+      "theta": 6.2,
+      "J_isometry_error": 6.080941944488118e-16,
+      "JG_zero_error": 2.553092960934778e-16,
+      "wedge_projector_difference": 4.946711370705423e-15,
+      "G_rank": 24,
+      "inverse_norm": 25.501959129780403,
+      "predicted_inverse_norm": 25.501959129780474,
+      "inverse_identity_error": 4.995219192035454e-15
+    }
+  ],
+  "crossings": "theta in (pi/2) Z; rank 22 at a crossing and rank 24 otherwise, while the physical flat frame remains rank 12 and smooth.",
+  "inverse_formula": "||G_Q(theta)^-1||=1/[2 sqrt(2) sin(dist(theta,(pi/2)Z)/6)] away from crossings.",
+  "status": "floating controls of analytically derived expressions"
+}

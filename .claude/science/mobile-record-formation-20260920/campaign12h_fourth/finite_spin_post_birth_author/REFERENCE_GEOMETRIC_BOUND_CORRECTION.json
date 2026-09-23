@@ -1,0 +1,5 @@
+{
+  "utc": "2026-09-23T18:10:30.191648+00:00",
+  "correction": "Replace a 40-term numerical tail sum by an exact rational geometric upper bound on the infinite Dyson tail, then round upward. The matrix calculation and all physical parameters remain unchanged.",
+  "prior_bound_status": "A numerical approximation to twice the infinite tail; not itself a strict bound."
+}

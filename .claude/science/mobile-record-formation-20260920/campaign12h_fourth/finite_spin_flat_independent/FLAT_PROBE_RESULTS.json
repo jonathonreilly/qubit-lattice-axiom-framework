@@ -1,0 +1,966 @@
+{
+  "operators": {
+    "D": [
+      {
+        "input": [
+          0,
+          0
+        ],
+        "compression": [
+          {
+            "state": "(0, 0, 0)",
+            "coefficient": "4*f**2 - 5*f + 2"
+          }
+        ],
+        "leakage": [
+          {
+            "state": "((-1, 1, 1, 0, 1, 1, 1, 0), 0)",
+            "coefficient": "f - 1"
+          },
+          {
+            "state": "((-1, 1, 1, 1, 1, 0, 1, 0), 0)",
+            "coefficient": "3*f - 2"
+          },
+          {
+            "state": "((1, 0, 1, 1, 1, 0, 1, -1), -1)",
+            "coefficient": "1 - f"
+          },
+          {
+            "state": "((1, 0, 1, 0, 1, 1, 1, -1), -1)",
+            "coefficient": "3*f - 2"
+          }
+        ]
+      },
+      {
+        "input": [
+          0,
+          1
+        ],
+        "compression": [
+          {
+            "state": "(0, 1, 0)",
+            "coefficient": "4*f**2 - 3*f + 1"
+          }
+        ],
+        "leakage": [
+          {
+            "state": "((1, -1, 1, 0, 1, 1, 1, 0), 0)",
+            "coefficient": "-f"
+          },
+          {
+            "state": "((1, -1, 1, 1, 1, 0, 1, 0), 0)",
+            "coefficient": "3*f - 1"
+          },
+          {
+            "state": "((-1, 0, 1, 1, 1, 0, 1, 1), 1)",
+            "coefficient": "f"
+          },
+          {
+            "state": "((-1, 0, 1, 0, 1, 1, 1, 1), 1)",
+            "coefficient": "3*f - 1"
+          }
+        ]
+      },
+      {
+        "input": [
+          0,
+          2
+        ],
+        "compression": [
+          {
+            "state": "(0, 2, 0)",
+            "coefficient": "4*f**2"
+          }
+        ],
+        "leakage": [
+          {
+            "state": "((1, 1, -1, 0, 1, 1, 1, 0), 0)",
+            "coefficient": "-2*f"
+          },
+          {
+            "state": "((1, 0, -1, 1, 1, 0, 1, 1), 1)",
+            "coefficient": "2*f"
+          }
+        ]
+      },
+      {
+        "input": [
+          0,
+          3
+        ],
+        "compression": [
+          {
+            "state": "(0, 3, 0)",
+            "coefficient": "4*f**2 + 3*f + 1"
+          }
+        ],
+        "leakage": [
+          {
+            "state": "((1, 1, 1, 0, -1, 1, 1, 0), 0)",
+            "coefficient": "-f"
+          },
+          {
+            "state": "((1, 1, 1, -1, 1, 0, 1, 0), 0)",
+            "coefficient": "-3*f - 1"
+          },
+          {
+            "state": "((1, 0, 1, -1, 1, 0, 1, 1), 1)",
+            "coefficient": "f"
+          },
+          {
+            "state": "((1, 0, 1, 0, -1, 1, 1, 1), 1)",
+            "coefficient": "-3*f - 1"
+          }
+        ]
+      },
+      {
+        "input": [
+          0,
+          4
+        ],
+        "compression": [
+          {
+            "state": "(0, 4, 0)",
+            "coefficient": "4*f**2 + 5*f + 2"
+          }
+        ],
+        "leakage": [
+          {
+            "state": "((1, 1, 1, 0, 1, -1, 1, 0), 0)",
+            "coefficient": "f + 1"
+          },
+          {
+            "state": "((1, 1, 1, 1, -1, 0, 1, 0), 0)",
+            "coefficient": "-3*f - 2"
+          },
+          {
+            "state": "((1, 0, 1, 1, -1, 0, 1, 1), 1)",
+            "coefficient": "-f - 1"
+          },
+          {
+            "state": "((1, 0, 1, 0, 1, -1, 1, 1), 1)",
+            "coefficient": "-3*f - 2"
+          }
+        ]
+      },
+      {
+        "input": [
+          0,
+          5
+        ],
+        "compression": [
+          {
+            "state": "(0, 5, 0)",
+            "coefficient": "4*f**2 + 8*f + 4"
+          }
+        ],
+        "leakage": [
+          {
+            "state": "((1, 1, 1, 0, 1, 1, -1, 0), 0)",
+            "coefficient": "2*f + 2"
+          },
+          {
+            "state": "((1, 0, 1, 1, 1, 0, -1, 1), 1)",
+            "coefficient": "-2*f - 2"
+          }
+        ]
+      },
+      {
+        "input": [
+          1,
+          0
+        ],
+        "compression": [
+          {
+            "state": "(1, 0, 0)",
+            "coefficient": "4*f**2 - 8*f + 4"
+          }
+        ],
+        "leakage": [
+          {
+            "state": "((-1, 0, 1, 1, 1, 0, 1, 1), 0)",
+            "coefficient": "2 - 2*f"
+          },
+          {
+            "state": "((-1, 1, 1, 0, 1, 1, 1, 0), 0)",
+            "coefficient": "2*f - 2"
+          }
+        ]
+      },
+      {
+        "input": [
+          1,
+          1
+        ],
+        "compression": [
+          {
+            "state": "(1, 1, 0)",
+            "coefficient": "4*f**2 - 5*f + 2"
+          }
+        ],
+        "leakage": [
+          {
+            "state": "((1, 0, -1, 1, 1, 0, 1, 1), 0)",
+            "coefficient": "1 - f"
+          },
+          {
+            "state": "((1, -1, 1, 0, 1, 0, 1, 1), 0)",
+            "coefficient": "2 - 3*f"
+          },
+          {
+            "state": "((1, -1, 1, 0, 1, 1, 1, 0), 0)",
+            "coefficient": "f - 1"
+          },
+          {
+            "state": "((1, 0, -1, 1, 1, 1, 1, 0), 0)",
+            "coefficient": "2 - 3*f"
+          }
+        ]
+      },
+      {
+        "input": [
+          1,
+          2
+        ],
+        "compression": [
+          {
+            "state": "(1, 2, 0)",
+            "coefficient": "4*f**2 - 3*f + 1"
+          }
+        ],
+        "leakage": [
+          {
+            "state": "((1, 0, 1, -1, 1, 0, 1, 1), 0)",
+            "coefficient": "f"
+          },
+          {
+            "state": "((1, 1, -1, 0, 1, 0, 1, 1), 0)",
+            "coefficient": "1 - 3*f"
+          },
+          {
+            "state": "((1, 1, -1, 0, 1, 1, 1, 0), 0)",
+            "coefficient": "-f"
+          },
+          {
+            "state": "((1, 0, 1, -1, 1, 1, 1, 0), 0)",
+            "coefficient": "1 - 3*f"
+          }
+        ]
+      },
+      {
+        "input": [
+          1,
+          3
+        ],
+        "compression": [
+          {
+            "state": "(1, 3, 0)",
+            "coefficient": "4*f**2"
+          }
+        ],
+        "leakage": [
+          {
+            "state": "((1, 0, 1, 1, -1, 0, 1, 1), 0)",
+            "coefficient": "2*f"
+          },
+          {
+            "state": "((1, 1, 1, 0, -1, 1, 1, 0), 0)",
+            "coefficient": "-2*f"
+          }
+        ]
+      },
+      {
+        "input": [
+          1,
+          4
+        ],
+        "compression": [
+          {
+            "state": "(1, 4, 0)",
+            "coefficient": "4*f**2 + 3*f + 1"
+          }
+        ],
+        "leakage": [
+          {
+            "state": "((1, 0, 1, 1, 1, 0, -1, 1), 0)",
+            "coefficient": "f"
+          },
+          {
+            "state": "((1, 1, 1, 0, 1, 0, -1, 1), 0)",
+            "coefficient": "3*f + 1"
+          },
+          {
+            "state": "((1, 1, 1, 0, 1, -1, 1, 0), 0)",
+            "coefficient": "-f"
+          },
+          {
+            "state": "((1, 0, 1, 1, 1, -1, 1, 0), 0)",
+            "coefficient": "3*f + 1"
+          }
+        ]
+      },
+      {
+        "input": [
+          1,
+          5
+        ],
+        "compression": [
+          {
+            "state": "(1, 5, 0)",
+            "coefficient": "4*f**2 + 5*f + 2"
+          }
+        ],
+        "leakage": [
+          {
+            "state": "((1, 0, 1, 1, 1, 0, 1, -1), 0)",
+            "coefficient": "-f - 1"
+          },
+          {
+            "state": "((1, 1, 1, 0, 1, 0, 1, -1), 0)",
+            "coefficient": "3*f + 2"
+          },
+          {
+            "state": "((1, 1, 1, 0, 1, 1, -1, 0), 0)",
+            "coefficient": "f + 1"
+          },
+          {
+            "state": "((1, 0, 1, 1, 1, 1, -1, 0), 0)",
+            "coefficient": "3*f + 2"
+          }
+        ]
+      }
+    ],
+    "H4": [
+      {
+        "input": [
+          0,
+          0
+        ],
+        "compression": [
+          {
+            "state": "(0, 0, 0)",
+            "coefficient": "12"
+          },
+          {
+            "state": "(1, 0, 0)",
+            "coefficient": "-2"
+          },
+          {
+            "state": "(1, 5, -1)",
+            "coefficient": "2"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          0,
+          1
+        ],
+        "compression": [
+          {
+            "state": "(0, 1, 0)",
+            "coefficient": "12"
+          },
+          {
+            "state": "(1, 1, 0)",
+            "coefficient": "-2"
+          },
+          {
+            "state": "(1, 0, 1)",
+            "coefficient": "2"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          0,
+          2
+        ],
+        "compression": [
+          {
+            "state": "(0, 2, 0)",
+            "coefficient": "12"
+          },
+          {
+            "state": "(1, 2, 0)",
+            "coefficient": "-2"
+          },
+          {
+            "state": "(1, 1, 1)",
+            "coefficient": "2"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          0,
+          3
+        ],
+        "compression": [
+          {
+            "state": "(0, 3, 0)",
+            "coefficient": "12"
+          },
+          {
+            "state": "(1, 3, 0)",
+            "coefficient": "-2"
+          },
+          {
+            "state": "(1, 2, 1)",
+            "coefficient": "2"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          0,
+          4
+        ],
+        "compression": [
+          {
+            "state": "(0, 4, 0)",
+            "coefficient": "12"
+          },
+          {
+            "state": "(1, 4, 0)",
+            "coefficient": "-2"
+          },
+          {
+            "state": "(1, 3, 1)",
+            "coefficient": "2"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          0,
+          5
+        ],
+        "compression": [
+          {
+            "state": "(0, 5, 0)",
+            "coefficient": "12"
+          },
+          {
+            "state": "(1, 5, 0)",
+            "coefficient": "-2"
+          },
+          {
+            "state": "(1, 4, 1)",
+            "coefficient": "2"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          1,
+          0
+        ],
+        "compression": [
+          {
+            "state": "(1, 0, 0)",
+            "coefficient": "12"
+          },
+          {
+            "state": "(0, 1, -1)",
+            "coefficient": "2"
+          },
+          {
+            "state": "(0, 0, 0)",
+            "coefficient": "-2"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          1,
+          1
+        ],
+        "compression": [
+          {
+            "state": "(1, 1, 0)",
+            "coefficient": "12"
+          },
+          {
+            "state": "(0, 2, -1)",
+            "coefficient": "2"
+          },
+          {
+            "state": "(0, 1, 0)",
+            "coefficient": "-2"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          1,
+          2
+        ],
+        "compression": [
+          {
+            "state": "(1, 2, 0)",
+            "coefficient": "12"
+          },
+          {
+            "state": "(0, 3, -1)",
+            "coefficient": "2"
+          },
+          {
+            "state": "(0, 2, 0)",
+            "coefficient": "-2"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          1,
+          3
+        ],
+        "compression": [
+          {
+            "state": "(1, 3, 0)",
+            "coefficient": "12"
+          },
+          {
+            "state": "(0, 4, -1)",
+            "coefficient": "2"
+          },
+          {
+            "state": "(0, 3, 0)",
+            "coefficient": "-2"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          1,
+          4
+        ],
+        "compression": [
+          {
+            "state": "(1, 4, 0)",
+            "coefficient": "12"
+          },
+          {
+            "state": "(0, 5, -1)",
+            "coefficient": "2"
+          },
+          {
+            "state": "(0, 4, 0)",
+            "coefficient": "-2"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          1,
+          5
+        ],
+        "compression": [
+          {
+            "state": "(1, 5, 0)",
+            "coefficient": "12"
+          },
+          {
+            "state": "(0, 0, 1)",
+            "coefficient": "2"
+          },
+          {
+            "state": "(0, 5, 0)",
+            "coefficient": "-2"
+          }
+        ],
+        "leakage": []
+      }
+    ],
+    "loss_res": [
+      {
+        "input": [
+          0,
+          0
+        ],
+        "compression": [
+          {
+            "state": "(0, 0, 0)",
+            "coefficient": "4"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          0,
+          1
+        ],
+        "compression": [
+          {
+            "state": "(0, 1, 0)",
+            "coefficient": "4"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          0,
+          2
+        ],
+        "compression": [
+          {
+            "state": "(0, 2, 0)",
+            "coefficient": "4"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          0,
+          3
+        ],
+        "compression": [
+          {
+            "state": "(0, 3, 0)",
+            "coefficient": "4"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          0,
+          4
+        ],
+        "compression": [
+          {
+            "state": "(0, 4, 0)",
+            "coefficient": "4"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          0,
+          5
+        ],
+        "compression": [
+          {
+            "state": "(0, 5, 0)",
+            "coefficient": "4"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          1,
+          0
+        ],
+        "compression": [
+          {
+            "state": "(1, 0, 0)",
+            "coefficient": "4"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          1,
+          1
+        ],
+        "compression": [
+          {
+            "state": "(1, 1, 0)",
+            "coefficient": "4"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          1,
+          2
+        ],
+        "compression": [
+          {
+            "state": "(1, 2, 0)",
+            "coefficient": "4"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          1,
+          3
+        ],
+        "compression": [
+          {
+            "state": "(1, 3, 0)",
+            "coefficient": "4"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          1,
+          4
+        ],
+        "compression": [
+          {
+            "state": "(1, 4, 0)",
+            "coefficient": "4"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          1,
+          5
+        ],
+        "compression": [
+          {
+            "state": "(1, 5, 0)",
+            "coefficient": "4"
+          }
+        ],
+        "leakage": []
+      }
+    ],
+    "loss_coh": [
+      {
+        "input": [
+          0,
+          0
+        ],
+        "compression": [
+          {
+            "state": "(0, 0, 0)",
+            "coefficient": "4"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          0,
+          1
+        ],
+        "compression": [
+          {
+            "state": "(0, 1, 0)",
+            "coefficient": "4"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          0,
+          2
+        ],
+        "compression": [
+          {
+            "state": "(0, 2, 0)",
+            "coefficient": "4"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          0,
+          3
+        ],
+        "compression": [
+          {
+            "state": "(0, 3, 0)",
+            "coefficient": "4"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          0,
+          4
+        ],
+        "compression": [
+          {
+            "state": "(0, 4, 0)",
+            "coefficient": "4"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          0,
+          5
+        ],
+        "compression": [
+          {
+            "state": "(0, 5, 0)",
+            "coefficient": "4"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          1,
+          0
+        ],
+        "compression": [
+          {
+            "state": "(1, 0, 0)",
+            "coefficient": "4"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          1,
+          1
+        ],
+        "compression": [
+          {
+            "state": "(1, 1, 0)",
+            "coefficient": "4"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          1,
+          2
+        ],
+        "compression": [
+          {
+            "state": "(1, 2, 0)",
+            "coefficient": "4"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          1,
+          3
+        ],
+        "compression": [
+          {
+            "state": "(1, 3, 0)",
+            "coefficient": "4"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          1,
+          4
+        ],
+        "compression": [
+          {
+            "state": "(1, 4, 0)",
+            "coefficient": "4"
+          }
+        ],
+        "leakage": []
+      },
+      {
+        "input": [
+          1,
+          5
+        ],
+        "compression": [
+          {
+            "state": "(1, 5, 0)",
+            "coefficient": "4"
+          }
+        ],
+        "leakage": []
+      }
+    ]
+  },
+  "flat_eigen_residuals": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      2,
+      0
+    ],
+    [
+      0,
+      3,
+      0
+    ],
+    [
+      0,
+      4,
+      0
+    ],
+    [
+      0,
+      5,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      2,
+      0
+    ],
+    [
+      1,
+      3,
+      0
+    ],
+    [
+      1,
+      4,
+      0
+    ],
+    [
+      1,
+      5,
+      0
+    ]
+  ]
+}

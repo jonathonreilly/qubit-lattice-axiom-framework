@@ -1,0 +1,319 @@
+{
+  "source_sha256": "d187a313be1bdc3618263871768c34d27b038ce51a1ccfb0590c0f4064a4f2ab",
+  "rows": [
+    {
+      "kind": 0,
+      "r": 0,
+      "electric_quadratic": "4*f**2 - 5*f + 2",
+      "leading_spin_leakage_norm_squared": "10*f**2 - 14*f + 5",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 0,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 0,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 1,
+          "r": 5,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        }
+      ]
+    },
+    {
+      "kind": 0,
+      "r": 1,
+      "electric_quadratic": "4*f**2 - 3*f + 1",
+      "leading_spin_leakage_norm_squared": "10*f**2 - 6*f + 1",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 1,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 0,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 1,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        }
+      ]
+    },
+    {
+      "kind": 0,
+      "r": 2,
+      "electric_quadratic": "4*f**2",
+      "leading_spin_leakage_norm_squared": "4*f**2",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 2,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 1,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 2,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        }
+      ]
+    },
+    {
+      "kind": 0,
+      "r": 3,
+      "electric_quadratic": "4*f**2 + 3*f + 1",
+      "leading_spin_leakage_norm_squared": "10*f**2 + 6*f + 1",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 3,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 2,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 3,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        }
+      ]
+    },
+    {
+      "kind": 0,
+      "r": 4,
+      "electric_quadratic": "4*f**2 + 5*f + 2",
+      "leading_spin_leakage_norm_squared": "10*f**2 + 14*f + 5",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 4,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 3,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 4,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        }
+      ]
+    },
+    {
+      "kind": 0,
+      "r": 5,
+      "electric_quadratic": "4*f**2 + 8*f + 4",
+      "leading_spin_leakage_norm_squared": "4*f**2 + 8*f + 4",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 5,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 4,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 5,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 0,
+      "electric_quadratic": "4*f**2 - 8*f + 4",
+      "leading_spin_leakage_norm_squared": "4*f**2 - 8*f + 4",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 0,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 0,
+          "r": 1,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 0,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 1,
+      "electric_quadratic": "4*f**2 - 5*f + 2",
+      "leading_spin_leakage_norm_squared": "10*f**2 - 14*f + 5",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 1,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 0,
+          "r": 2,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 1,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 2,
+      "electric_quadratic": "4*f**2 - 3*f + 1",
+      "leading_spin_leakage_norm_squared": "10*f**2 - 6*f + 1",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 2,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 0,
+          "r": 3,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 2,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 3,
+      "electric_quadratic": "4*f**2",
+      "leading_spin_leakage_norm_squared": "4*f**2",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 3,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 0,
+          "r": 4,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 3,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 4,
+      "electric_quadratic": "4*f**2 + 3*f + 1",
+      "leading_spin_leakage_norm_squared": "10*f**2 + 6*f + 1",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 4,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 0,
+          "r": 5,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 4,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 5,
+      "electric_quadratic": "4*f**2 + 5*f + 2",
+      "leading_spin_leakage_norm_squared": "10*f**2 + 14*f + 5",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 0,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 0,
+          "r": 5,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 1,
+          "r": 5,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    }
+  ],
+  "status": "author exact symbolic identities in the compact flat basis",
+  "scope": "Compression and invariant H4, not yet a joint-scaling time-limit proof."
+}

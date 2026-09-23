@@ -1,0 +1,38 @@
+--- before_tail_factor_fix
++++ before_geometric_bound
+@@ -130,11 +130,12 @@
+     propagated=expm_multiply(A,initial,start=times[0],stop=times[-1],num=len(times),traceA=A.diagonal().sum())
+     # In interaction picture of the diagonal, each flux-changing step is
+     # bounded by the off-diagonal H4 norm 4 delta; reaching the cut requires
+-    # at least cut-max|f_initial|+1 such steps. Bound the Dyson tail.
++    # at least cut-max|f_initial|+1 such steps. Comparing both full and
++    # truncated Dyson terms gives twice the individual tail bound.
+     import math
+     n0=cut-max(abs(s[2]) for s in seeds)+1
+     x=4*delta*float(times[-1])
+-    tail=sum(x**n/math.factorial(n) for n in range(n0,n0+40))
++    tail=2*sum(x**n/math.factorial(n) for n in range(n0,n0+40))
+     return basis,propagated,seeds,tail
+ 
+ 
+
+--- before_geometric_bound
++++ current
+@@ -132,10 +132,16 @@
+     # bounded by the off-diagonal H4 norm 4 delta; reaching the cut requires
+     # at least cut-max|f_initial|+1 such steps. Comparing both full and
+     # truncated Dyson terms gives twice the individual tail bound.
++    # An exact rational geometric upper bound covers the infinite tail;
++    # rounding the final float upward preserves this bound.
+     import math
+     n0=cut-max(abs(s[2]) for s in seeds)+1
+     x=4*delta*float(times[-1])
+-    tail=2*sum(x**n/math.factorial(n) for n in range(n0,n0+40))
++    from fractions import Fraction
++    x_upper=math.ceil(x)
++    assert x_upper<n0+1
++    exact_bound=Fraction(2*x_upper**n0*(n0+1),math.factorial(n0)*(n0+1-x_upper))
++    tail=math.nextafter(float(exact_bound),math.inf)
+     return basis,propagated,seeds,tail
+ 
+ 

@@ -1,0 +1,294 @@
+{
+  "exact": {
+    "flat_basis_modes_checked": 12,
+    "electric_counterexample_squared_leakage": "5",
+    "exact_Gauss_hop_checks": 576,
+    "D_compression_table": [
+      [
+        [
+          -5,
+          2
+        ],
+        [
+          -3,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          8,
+          4
+        ]
+      ],
+      [
+        [
+          -8,
+          4
+        ],
+        [
+          -5,
+          2
+        ],
+        [
+          -3,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          2
+        ]
+      ]
+    ],
+    "H4_and_both_losses_invariant": true
+  },
+  "finite_spin": [
+    {
+      "S": 4,
+      "P_dimension": 264,
+      "C": 20,
+      "H2_C_expansion_error": 0.02633403898972517,
+      "C_times_H2_error": 0.5266807797945035,
+      "H4_error": 0.813945768513984,
+      "loss_error": 0.2757716446627536
+    },
+    {
+      "S": 8,
+      "P_dimension": 552,
+      "C": 72,
+      "H2_C_expansion_error": 0.007042602804603717,
+      "C_times_H2_error": 0.5070674019314676,
+      "H4_error": 0.22884239335242376,
+      "loss_error": 0.07802181304758982
+    },
+    {
+      "S": 16,
+      "P_dimension": 1128,
+      "C": 272,
+      "H2_C_expansion_error": 0.0018450247308431534,
+      "C_times_H2_error": 0.5018467267893377,
+      "H4_error": 0.06078212551888973,
+      "loss_error": 0.020759028016019254
+    },
+    {
+      "S": 32,
+      "P_dimension": 2280,
+      "C": 1056,
+      "H2_C_expansion_error": 0.00047393375589665316,
+      "C_times_H2_error": 0.5004740462268658,
+      "H4_error": 0.01567020801107683,
+      "loss_error": 0.005354333157874702
+    }
+  ],
+  "dynamics": [
+    {
+      "S": 4,
+      "time": 0.0,
+      "state_error": 0.0,
+      "density_trace_error": 1.1102230246251565e-16,
+      "survival": 0.9999999999999998,
+      "limiting_survival": 1.0,
+      "physical_flat_leakage_norm": 2.3551386880256624e-16
+    },
+    {
+      "S": 4,
+      "time": 0.05,
+      "state_error": 0.11918945137461044,
+      "density_trace_error": 0.16373852719979032,
+      "survival": 0.9348141171029034,
+      "limiting_survival": 0.9231163463866358,
+      "physical_flat_leakage_norm": 0.07008183972813439
+    },
+    {
+      "S": 4,
+      "time": 0.15,
+      "state_error": 0.3081984745446963,
+      "density_trace_error": 0.3667334759331461,
+      "survival": 0.8179035796528518,
+      "limiting_survival": 0.7866278610665535,
+      "physical_flat_leakage_norm": 0.1540321745850248
+    },
+    {
+      "S": 4,
+      "time": 0.4,
+      "state_error": 0.6032891742799631,
+      "density_trace_error": 0.5586676643433829,
+      "survival": 0.5878785072650745,
+      "limiting_survival": 0.5272924240430485,
+      "physical_flat_leakage_norm": 0.21396342091771614
+    },
+    {
+      "S": 8,
+      "time": 0.0,
+      "state_error": 0.0,
+      "density_trace_error": 1.1102230246251565e-16,
+      "survival": 0.9999999999999998,
+      "limiting_survival": 1.0,
+      "physical_flat_leakage_norm": 2.3551386880256624e-16
+    },
+    {
+      "S": 8,
+      "time": 0.05,
+      "state_error": 0.06562834004305396,
+      "density_trace_error": 0.11722948672873862,
+      "survival": 0.9265934136525604,
+      "limiting_survival": 0.9231163463866358,
+      "physical_flat_leakage_norm": 0.05909486759212474
+    },
+    {
+      "S": 8,
+      "time": 0.15,
+      "state_error": 0.1288488132331442,
+      "density_trace_error": 0.19565908481042882,
+      "survival": 0.7958260079117219,
+      "limiting_survival": 0.7866278610665535,
+      "physical_flat_leakage_norm": 0.09957369583811798
+    },
+    {
+      "S": 8,
+      "time": 0.4,
+      "state_error": 0.23670713009116237,
+      "density_trace_error": 0.278458932790951,
+      "survival": 0.5464934120385472,
+      "limiting_survival": 0.5272924240430485,
+      "physical_flat_leakage_norm": 0.15487736706640887
+    },
+    {
+      "S": 16,
+      "time": 0.0,
+      "state_error": 0.0,
+      "density_trace_error": 1.1102230246251565e-16,
+      "survival": 0.9999999999999998,
+      "limiting_survival": 1.0,
+      "physical_flat_leakage_norm": 2.3551386880256624e-16
+    },
+    {
+      "S": 16,
+      "time": 0.05,
+      "state_error": 0.034066037493264104,
+      "density_trace_error": 0.06427101654975022,
+      "survival": 0.9240506600345288,
+      "limiting_survival": 0.9231163463866358,
+      "physical_flat_leakage_norm": 0.033071291032925096
+    },
+    {
+      "S": 16,
+      "time": 0.15,
+      "state_error": 0.06111864112540749,
+      "density_trace_error": 0.10375857901478384,
+      "survival": 0.7891509640661726,
+      "limiting_survival": 0.7866278610665535,
+      "physical_flat_leakage_norm": 0.05613910384804863
+    },
+    {
+      "S": 16,
+      "time": 0.4,
+      "state_error": 0.10669380630689682,
+      "density_trace_error": 0.14524780619769953,
+      "survival": 0.5328031268730578,
+      "limiting_survival": 0.5272924240430485,
+      "physical_flat_leakage_norm": 0.09462909454088791
+    },
+    {
+      "S": 32,
+      "time": 0.0,
+      "state_error": 0.0,
+      "density_trace_error": 1.1102230246251565e-16,
+      "survival": 0.9999999999999998,
+      "limiting_survival": 1.0,
+      "physical_flat_leakage_norm": 2.3551386880256624e-16
+    },
+    {
+      "S": 32,
+      "time": 0.05,
+      "state_error": 0.01738448018308003,
+      "density_trace_error": 0.03325173678781462,
+      "survival": 0.9233590936126986,
+      "limiting_survival": 0.9231163463866358,
+      "physical_flat_leakage_norm": 0.01714420508957935
+    },
+    {
+      "S": 32,
+      "time": 0.15,
+      "state_error": 0.030634062739764052,
+      "density_trace_error": 0.05373036485095939,
+      "survival": 0.7872937068318083,
+      "limiting_survival": 0.7866278610665535,
+      "physical_flat_leakage_norm": 0.029961620163481903
+    },
+    {
+      "S": 32,
+      "time": 0.4,
+      "state_error": 0.06633884265148209,
+      "density_trace_error": 0.09533157332812822,
+      "survival": 0.5288795613888575,
+      "limiting_survival": 0.5272924240430485,
+      "physical_flat_leakage_norm": 0.06471142556372117
+    }
+  ],
+  "limits": [
+    {
+      "time": 0.0,
+      "flux_cutoffs": [
+        12,
+        20
+      ],
+      "state_norm_difference": 0.0
+    },
+    {
+      "time": 0.05,
+      "flux_cutoffs": [
+        12,
+        20
+      ],
+      "state_norm_difference": 5.297141713066851e-15
+    },
+    {
+      "time": 0.15,
+      "flux_cutoffs": [
+        12,
+        20
+      ],
+      "state_norm_difference": 1.0375416448645186e-14
+    },
+    {
+      "time": 0.4,
+      "flux_cutoffs": [
+        12,
+        20
+      ],
+      "state_norm_difference": 5.160614311416346e-14
+    }
+  ],
+  "coherent_spin8_loss_error": 0.07802181304758982,
+  "parameters": {
+    "K": 0.7,
+    "delta": 1.1,
+    "kappa": 0.4,
+    "time_grid": [
+      0.0,
+      0.05,
+      0.15,
+      0.4
+    ],
+    "instruments": "resolved dynamic control; both exact rotor losses; finite coherent loss control",
+    "numerical_status": "Floating corroboration, no interval or generic-state error certificate."
+  }
+}

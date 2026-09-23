@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-09-23T18:42:24.305558+00:00",
+  "reviewer": "root",
+  "author_seal_sha256": "dfc55f6eac748bb11130fe3a8e5544194c6babd810c0c06d45e177c56c72df7e",
+  "independent_PRE_sha256": "97aa84106b6ca88adcb4bd4c6286ada6d24087740da767fded03485590df495b",
+  "independent_FINAL_sha256": "4bbbdcf3fa5a12181ccaf4e9ad09ec5dfb82fe4a078d5256ccad67caedf10cfe",
+  "coverage": "Complete author proof, current controls and reference-bound history; complete independent report and four science runners; complete comparison, loss clarification and comparison runner read. PRE 10 sources/34 artifacts verified; root authenticated all 76 unique file bindings recursively in FINAL, including the candidate prior source that the checker expressly excluded. That extra root authentication does not change the checker access record.",
+  "findings": "No required author mathematical correction found. Checker basis signs reconcile. Weighted domain, physical spin embedding, crossing cutoff and eta^(-1/7) core estimate are supported; both jumps and deterministic microscopic density transfer retain their stated scope. The checker comment about finite-spin loss differences is explicitly superseded by its separate clarification.",
+  "scope": "Prepared physical flat-sector initial densities on a fixed eight-site ring. Actual first output has only half its norm in that sector; no whole-output or microscopic random-stop restart theorem. Conditional supplied model; no formal audit/retained promotion."
+}

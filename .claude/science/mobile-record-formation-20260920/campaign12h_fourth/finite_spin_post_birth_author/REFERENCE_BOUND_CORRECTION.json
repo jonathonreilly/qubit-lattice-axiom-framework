@@ -1,0 +1,7 @@
+{
+  "utc": "2026-09-23T18:04:27.294492+00:00",
+  "correction": "Use twice the Dyson tail for the full-minus-truncated propagator bound. No matrix, cutoff, time, parameter or control value changes.",
+  "before_bound": 6.492036204221587e-29,
+  "after_bound": 1.2984072408443174e-28,
+  "original_evidence_preserved_with_suffix": "BEFORE_TAIL_FACTOR_FIX"
+}

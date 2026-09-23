@@ -1,6 +1,6 @@
 {
- "edge_count": 14013,
- "node_count": 6463,
+ "edge_count": 14017,
+ "node_count": 6465,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -16726,6 +16726,10 @@
    "deps_hash": "249b8e8adb93",
    "out_degree": 6
   },
+  "rooted_marked_tree_extension_seed_induction_and_relaxed_lifted_tree_certificates_bounded_theorem_note_2026-09-17": {
+   "deps_hash": "4b1f4f4b0e8b",
+   "out_degree": 4
+  },
   "rotor_coupled_free_vacuum_resolvent_densities_bounded_theorem_note_2026-09-16": {
    "deps_hash": "f015d82dc5d6",
    "out_degree": 1
@@ -25283,6 +25287,10 @@
    "out_degree": 0
   },
   "work_history.review_loop.pr8176.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8177.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

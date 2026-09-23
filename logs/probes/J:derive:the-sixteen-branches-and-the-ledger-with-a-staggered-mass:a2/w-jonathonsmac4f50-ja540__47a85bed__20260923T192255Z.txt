@@ -1,0 +1,21 @@
+PASS E1.1 even species maps: V_n (H + m eps) V_n = H + m eps (m = 3, 4^3 torus, exact)
+PASS E1.2 odd species maps: V_n (H + m eps) V_n = -H + m eps; eps V_n commutes with H + m eps
+PASS E1.3 Theta = sigma_2 K commutes with H + m eps; the twin maps A_n = Theta V_n (odd n) send it to -H + m eps, not -(H + m eps)
+PASS E1.4 tau eps (translation by e1 after the site sign) anticommutes with H + m eps in a uniform field
+PASS E1.5 in a rate field: tau eps (phi H phi + m w eps) eps tau^-1 = -(phi' H phi' + m w' eps), phi' = tau phi (exact, integer phi)
+PASS E1.6 every on-site operator commutes with eps (block-diagonal in the site basis), and H has no on-site part
+PASS E2 twin's energy density e_{z+e1}[tau eps psi] = -e_z[psi] at every site (5 random Gaussian-integer states)
+PASS E3.1 chessboard phi = c^eps: phi H phi = H exactly (c = 2), and m w eps = m (cosh a eps + sinh a) with w = e^(a eps)
+PASS E3.2 (H + m cosh a eps)^2 = H^2 + m^2 cosh^2 a, so the spectrum is m sinh a +- sqrt(E^2 + m^2 cosh^2 a) (c = 2, m = 3)
+PASS E3.3 the chessboard mode is not stationary: d/da E_sea at a = 0 is +m per negative state (N m in total)
+PASS E4.1 hop trace: tr(sigma_a/(2i) (sigma_a/(2i))^dagger) = 1/2
+PASS E4.2 second-order sea energy per bond: gradient term +(1/(16m))(u_x - u_y)^2, i.e. kappa = 1/(8m) + O(m^-3)  [B = 1/(16*m), A = -1/(16*m)]
+   NUMERICAL kappa(m) (mode n = 1 along e1; c0 = E_sea/N):
+   L= 8 m=0    k=0.08848 m=0.25 k=0.09374 m=0.5  k=0.09023 m=1    k=0.07636 m=1.5  k=0.06289 m=2    k=0.05229 m=3    k=0.03816 m=4    k=0.02968 m=6    k=0.02035 m=8    k=0.01542
+   L=16 m=0    k=0.09643 m=0.25 k=0.09663 m=0.5  k=0.09133 m=1    k=0.07660 m=1.5  k=0.06296 m=2    k=0.05231 m=3    k=0.03816 m=4    k=0.02968 m=6    k=0.02035 m=8    k=0.01542
+   L=24 m=0    k=0.09804 m=0.25 k=0.09699 m=0.5  k=0.09148 m=1    k=0.07664 m=1.5  k=0.06297 m=2    k=0.05231 m=3    k=0.03816 m=4    k=0.02968 m=6    k=0.02035 m=8    k=0.01542
+PASS N1 NUMERICAL: kappa(m) > 0 at every m in {0,...,8} and L in {8,16,24}: no sign change
+PASS N2 NUMERICAL: at L = 24 kappa decreases with m from m = 0.25 on, and kappa * 8m -> 1 (0.987 at m = 8)
+PASS N3 NUMERICAL: block 77 W3 reproduced at L = 8 (kappa = 0.088/0.090/0.076 at m = 0, 1/2, 1)
+
+SUMMARY: PARTIAL exact: with the staggered mass the even species maps survive, the odd ones survive as eps V_n, and no on-site map makes twins; tau eps (one-site translation after the site sign) anticommutes with the massive walk and carries a solution in rate field w to a twin in the translated field with energy density -e_{z-e1}; the chessboard of clocks is NOT invisible with a mass (m w eps = m cosh a eps + m sinh a; E_sea(a) = N m sinh a - sum sqrt(E^2 + m^2 cosh^2 a), first variation N m); kappa(m) = 1/(8m) + O(m^-3) exactly at large m and (floating) positive on 0..8: no sign change

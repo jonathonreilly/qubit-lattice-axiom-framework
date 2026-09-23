@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/formed_flux_transport_for_every_linear_ice_sweep_rule_birkhoff_markov_walks_2026_09_23.py
+runner_sha256: d5665863c4b2ad0dbb87d4aaf9ae772b5f7a2e20914b38246b186404cc1efff1
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.02
+status: ok
+----- stdout -----
+A. which rules have a linear mean response
+[PASS] of the 27 deterministic rules, exactly the 6 permutation rules have a linear mean response :: every rule keeps the ice rule; linearity holds for all 8 back patterns exactly when sum_j pi^(j) = 1
+[PASS] mixtures of the permutation rules are linear with a doubly stochastic M; other laws are not linear :: 40 random mixtures linear and doubly stochastic; 40 random laws off the Birkhoff polytope all nonlinear
+B. the mean arrow field is a Markov walk on directions
+[PASS] for a linear rule the mean forward arrows are M times the mean back arrows, so means propagate by M E(q) :: by linearity of expectation, F_t(q) = M E(q) F_(t-1)(q) for the layer transforms of the mean arrow field
+C. damped off the permutations, rigid on them
+[PASS] mixtures with all transitions positive are damped at every nonzero transverse grid wavevector; permutations never damp :: 60 quarter-period wavevectors with nonzero transverse part; spectral radius below 1 certified by a power of norm below 1 for 7 rules including p = 1/2; each permutation's powers stay unimodular and monomial, and the certificate correctly fails for them
+D. spreading
+[PASS] the straight-continuation family reproduces open PR 8701's spreading rate (2/9)(1 + p)/(1 - p) :: occupation variance rates 2/9 at p = 0, 2/3 at p = 1/2, 14/9 at p = 3/4
+E. every rule, one defect in the saturated state
+[PASS] for every rule, one reversed arrow in the saturated state walks by the column-stochastic kernel pi, damped off the axis :: 20 random rules off the Birkhoff polytope: the reversed arrow leaves each vertex along i with probability pi^(j)_i and the rest stays saturated; spectral radius below 1 at all 60 transverse grid wavevectors
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

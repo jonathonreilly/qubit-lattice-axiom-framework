@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_by_formation_square_loop_obstruction_plaquette_coordinator_and_plans_2026_09_22.py
+runner_sha256: a19c7df82061465244b6901687e30a3bc482c209b235eb4d19b05a679beae750
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 8.16
+status: ok
+----- stdout -----
+A. the square window
+[PASS] ice configurations on the window: 10016 = tr T^4 with T = [[4,6],[6,4]] :: 4 vertices, 20 links, 4 of them shared
+B. local records, no plaquette site
+[PASS] the incidence graph has exactly one loop, the square; removing any of its 8 sites leaves a forest
+[PASS] for each choice of the last square site, the path's ends are dependent marginally and given the middle site :: dependent given 3-5 of 5 inner sites; a collider forces marginal independence, no collider forces independence given every inner site
+[PASS] the sweep order of open PR 8667 completes without an unrecorded site but not uniformly :: masses 1/8000 or 1/12000, as the theorem requires of every order
+C. the plaquette site as coordinator
+[PASS] with the plaquette site, removing any square site still leaves a loop through the plaquette :: 4 independent loops
+[PASS] the coordinator's law on its four links is invariant under the 8 symmetries of the square :: its law is the ice measure's marginal on the shared links
+[PASS] plaquette first, then its links, then vertices: no unrecorded site and exactly the uniform ice law
+[PASS] two squares sharing a link: each square's other links depend on the other square's given the shared link :: 501632 ice configurations; a second coordinator seeing only the shared link cannot supply them
+D. non-local records
+[PASS] a vertex that records a whole configuration, copied along, also gives the uniform law :: at the price of 10016 plan records carrying non-local content
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

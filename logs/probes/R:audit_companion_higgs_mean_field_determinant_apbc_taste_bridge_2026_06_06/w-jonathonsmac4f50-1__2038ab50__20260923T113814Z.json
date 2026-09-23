@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_higgs_mean_field_determinant_apbc_taste_bridge_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_higgs_mean_field_determinant_apbc_taste_bridge_2026_06_06.py",
+ "seed": 63494,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2038ab50",
+ "started_utc": "20260923T113814Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "727048472b8f3e9469cdc5d578351441e62ff4fdfc1db4d1dfc28b3609ea412d",
+ "stdout_tail": "lidean Cl(4) Dirac element\n  [PASS] {gamma_mu,gamma_nu}=2 delta_mu_nu I\n  [PASS] D_spin^2 = 4 I_4\n  [PASS] D_spin is Hermitian\n\n[Part 3] spin-taste/color lift and mean-field determinant form\n  [PASS] D_16 has spin-taste dimension 16\n  [PASS] D_16^dag D_16 = 4 I_16\n  [PASS] color lift has dimension 48\n  [PASS] D_48^dag D_48 = 4 I_48\n  [PASS] D_mf^dag D_mf = 4 u_0^2 I_48\n  [PASS] W(J) = (48/2) log(J^2 + 4 u_0^2) gives W''(0)=48/(4u_0^2)  (W''=12/u_0**2)\n  [PASS] W''(0)/48 = 1/(4 u_0^2)  (per_mode=1/(4*u_0**2))\n  [PASS] 4/(u_0^2 N_taste) at N_taste=16 equals 1/(4u_0^2)  (R=1/(4*u_0**2))\n  [PASS] per-mode curvature matches R_lattice\n\n==============================================================================\nSUMMARY\n==============================================================================\n  PASS binary APBC hypercube count is 2^4 = 16 (count=16)\n  PASS spin x taste carrier dimension is 4 x 4 = 16\n  PASS two taste-count descriptions agree\n  PASS {gamma_mu,gamma_nu}=2 delta_mu_nu I\n  PASS D_spin^2 = 4 I_4\n  PASS D_spin is Hermitian\n  PASS D_16 has spin-taste dimension 16\n  PASS D_16^dag D_16 = 4 I_16\n  PASS color lift has dimension 48\n  PASS D_48^dag D_48 = 4 I_48\n  PASS D_mf^dag D_mf = 4 u_0^2 I_48\n  PASS W(J) = (48/2) log(J^2 + 4 u_0^2) gives W''(0)=48/(4u_0^2) (W''=12/u_0**2)\n  PASS W''(0)/48 = 1/(4 u_0^2) (per_mode=1/(4*u_0**2))\n  PASS 4/(u_0^2 N_taste) at N_taste=16 equals 1/(4u_0^2) (R=1/(4*u_0**2))\n  PASS per-mode curvature matches R_lattice\n\nTOTAL: 15 PASS / 0 FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T113815Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

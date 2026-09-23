@@ -1,0 +1,44 @@
+{
+ "task": "R:observable_principle_p1_cap_k_check_2026_06_10",
+ "type": "runner-reexecution",
+ "lane": "observable",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/observable_principle_p1_cap_k_check_2026_06_10.py",
+ "seed": 63997,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2038ab50",
+ "started_utc": "20260923T114637Z",
+ "elapsed_s": 10.0,
+ "returncode": 1,
+ "hit": false,
+ "summary": {
+  "expected_ok": false,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e7f68036e79d8ab7f455b864a138afdbef660ab24bb1f294bb849901d254b61f",
+ "stdout_tail": "from the retained no-go: a family-lift input such as 'a supplied law, ...' is the named legitimate route\n  [PASS][B] this route's escape is by input type: the note declares its load-bearing input as a supplied dynamics law ((REG-dyn)+(REG-tau), uniform over every e-fold) and consumes no post-record certificate; the cap's k-uniformity is the T5 symbol check, not a finite-prefix extrapolation\n== T11: clock-window boundary honesty ==\n  [PASS][B] the clock is supplied, never derived from counts: the retained_no_go clock/rate interface states 'Without the supplied `tau`, the same record history supports many inequivalent rates' \u2014 present verbatim\n  [PASS][B] the note declares (REG-tau) as a supplied clock-window clause of the realization class (not derived); the retained single-clock Stone row licenses only that 'evolve for t given (T, tau)' is well-defined \u2014 the window value stays declared\n== T12: ledger grades, firewall strings, honest scope ==\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/observable_principle_p1_cap_k_check_2026_06_10.py\", line 466, in <module>\n    with open(os.path.join(REPO, \"docs\", \"audit\", \"data\", \"audit_ledger.json\"), \"r\", encoding=\"utf-8\") as fh:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-1/docs/audit/data/audit_ledger.json'\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T114647Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (False)",
+   "FAIL: parse field 'total' found nothing in the stdout: the run may not have reached its summary",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: the pinned cache ends with the verdict 'TOTAL: PASS=31 FAIL=0' and this run printed none",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/observable_principle_p1_cap_k_check_2026_06_10.txt against the .txt beside this log"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "automatic: the runner reads /Users/jonBridger/.probe-workers/probes-view/slot-1/docs/audit/data/audit_ledger.json, which is not in the tree at that path",
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T114647Z"
+ }
+}

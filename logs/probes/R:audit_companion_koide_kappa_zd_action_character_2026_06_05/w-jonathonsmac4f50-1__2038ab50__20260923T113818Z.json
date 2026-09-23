@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_koide_kappa_zd_action_character_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_koide_kappa_zd_action_character_2026_06_05.py",
+ "seed": 63498,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2038ab50",
+ "started_utc": "20260923T113818Z",
+ "elapsed_s": 1.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a2cc3d73b5606cde6c5bbfadd9a28acf0080b806e9ace7f1051b65d2c00e4516",
+ "stdout_tail": "5,6} with pattern (1, (1,), 0)  (d's with (1,(1,),0): [3])\n\n----------------------------------------------------------------------------------------\nNarrow theorem summary\n----------------------------------------------------------------------------------------\n\n  Z_d action on Herm_circ(d): rho(M) = Omega^{-1} M Omega,\n  Omega = diag(1, omega, ..., omega^{d-1}), omega = exp(2 pi i / d).\n\n  Bridge facts proven (NOT just pair-counting):\n    (S)  Shift-conjugation C M C^{-1} = M is TRIVIAL on Herm_circ(d) -- the\n         trap the conditional verdict flagged; the genuine action is rho.\n    (C1) rho is a faithful non-trivial Z_d representation on Herm_circ(d).\n    (C2) rho(C^k) = omega^k C^k -- the C^k line carries character k.\n    (C3) Hermiticity (a_{d-k} = conj(a_k)) ties {k, d-k} into a 2-real-dim\n         doublet V_k; rho|_V_k = rotation by 2 pi k / d.\n    (C4) even d: rho(C^{d/2}) = -C^{d/2} (sign irrep); rho(I) = I (trivial).\n    (C5) multiplicities (1, floor((d-1)/2), [d even]); dimension 1 + 2*doublets\n         + [d even] = d; pattern (1, (1,), 0) realized uniquely at d = 3.\n\n  Repairs missing_bridge_theorem for\n  koide_kappa_block_total_frobenius_algebraic_narrow_theorem_note_2026-05-10.\n  No PDG / fitted / lattice-MC / beta=6 / g_bare inputs; no audit files written.\n\n\n========================================================================================\n  TOTAL: 112 PASS / 0 FAIL\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T113819Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "task": "R:fermion_charge_coupling_screens_link_field_lambda_sign_check_2026_09_04",
+ "type": "runner-reexecution",
+ "lane": "fermion",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/fermion_charge_coupling_screens_link_field_lambda_sign_check_2026_09_04.py",
+ "seed": 63336,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2038ab50",
+ "started_utc": "20260923T113536Z",
+ "elapsed_s": 149.6,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=20 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "34dfed6efb753394e924e581ecae4d6f159199e4e2ce456ddcd795ab04068a85",
+ "stdout_tail": "one short L = 4 pair (N_w = 1000, tau = 15 + 60, dtau = 0.05, K = 240, K_p = 120, 10 bins, cubic-averaged): S_T(pi/2) = 0.3577(143) at Uc = 0 and 0.2858(147) at Uc = 1, a fall of 20.1 per cent at descriptive 3.5 bin-error units, compared with finite C4 19.2; S_L <= 3e-33, Gauss residual 0\nPASS D1 [unverified historical arithmetic, seeds 20261416, 20261426] quoted cross-lane: at V = 1 the old record states omega(k_min) = 0.3025(9) at L = 6, 0.1778(4) at L = 8 against the sister lane's 0.305382(5596) and 0.177396(3236) -- 0.94 and 0.23 per cent, 0.51 and 0.12 descriptive bin-error units -- with S_T(k_min) = 0.7500, 0.7479 (the ice 3/4) and omega/q^2 = 0.3025, 0.3035, without a phase/limit conclusion. The source's '0.5 per cent' at L = 6 is the bin-error-unit comparison; the percentage is 0.94\nPASS D2 [unverified historical arithmetic, seeds 20261401-4/11-4/21-4] the L^3 scan: at L = 4, S_T(pi/2) falls 0.354(5) -> 0.285(10) from Uc = 0 to 1, 19.5 per cent, C4's fraction; at L = 8 nothing is resolved -- S_T(pi/4) = 0.311, 0.285, 0.311, 0.354 moves by 2.3 descriptive bin-error units, not monotonically, and the copy count 20, 15, 20, 54 flags a population-control breakdown at Uc = 1; the historical rows establish no crossover or exclusion. Crude, on C4's rows: u = 6.14, U_0 = 5.19, k_* = 0.92 = pi/3.4\nPreserved runtime artifacts: /var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/fermion_screens_link_62kjl2vu\nruntime 149.4 s (AUDIT_TIMEOUT_SEC = 240); skipped 0\nTOTAL: PASS=20 FAIL=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T113805Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=20 FAIL=1' vs cache 'TOTAL: PASS=21 FAIL=0'"
+  ]
+ }
+}

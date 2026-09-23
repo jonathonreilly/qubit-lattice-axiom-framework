@@ -1,0 +1,35 @@
+{
+ "task": "R:observable_principle_t1d_determinant_context_quotient_bridge_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "observable",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/observable_principle_t1d_determinant_context_quotient_bridge_2026_06_18.py",
+ "seed": 64009,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2038ab50",
+ "started_utc": "20260923T114649Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=20 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4ca38c5805f0f9edecac3e8fbb601c8ce6ad5f3fd2e74d081d66f5949dd12048",
+ "stdout_tail": " det(A)det(E)=24\n[PASS] log readout is additive on direct sums: W(A+E)=3.178053830348\n[PASS] scaled log family remains additive: c=5/3 representative satisfies the same product-to-sum law\n[PASS] unit determinant fixes additive baseline: W(1)=0.000000000000\n[PASS] context assigns distinct atoms to distinct source labels: atoms=['record:A', 'record:E', 'record:F']\n[PASS] disjoint source records have empty pairwise intersections: three labels give three record atoms\n[PASS] context rejects noninjective source labels: duplicate source label raises before Record additivity is invoked\n[PASS] noninjective source-to-record map is not the determinant context: shared-record assignment remains a separate no-go witness\n[PASS] trace-deformed readout is still direct-sum additive: additivity alone does not imply determinant quotient\n[PASS] trace-deformed readout fails quotient despite additivity: the quotient clause is independent and load-bearing\n[PASS] injective atom assignment does not force determinant quotient: blocks-to-records and determinant-only are independent clauses\n[PASS] finite product/additivity table passes: cases=4\n[PASS] context has fewer sectors than raw positive blocks when determinant fibers coincide: blocks=6 sectors=4\n[PASS] the bridge uses no fitted empirical constants: only exact positive rational blocks and the scale parameter c are used\n[PASS] runner preserves T1-d no-go boundary: minimal Record does not supply this determinant-sector context\nTOTAL: PASS=20 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T114649Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

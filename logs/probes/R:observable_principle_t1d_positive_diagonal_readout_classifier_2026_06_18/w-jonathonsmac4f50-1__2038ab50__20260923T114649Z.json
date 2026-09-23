@@ -1,0 +1,35 @@
+{
+ "task": "R:observable_principle_t1d_positive_diagonal_readout_classifier_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "observable",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/observable_principle_t1d_positive_diagonal_readout_classifier_2026_06_18.py",
+ "seed": 64009,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2038ab50",
+ "started_utc": "20260923T114649Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=33 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ffc29d852cf8d51036e05296eb05184ddaaffd0aa83ac79fe94d10a849d6db85",
+ "stdout_tail": "only Cauchy law  -- gap at x=2,y=3 is epsilon\n[PASS] same determinant witness detects non-log one-site invariant  -- W(diag(4,1))-W(diag(2,2)) = epsilon\n[PASS] dimension constant is invisible at fixed dimension and fixed determinant\n[PASS] dimension constant is not global determinant-only data  -- W(diag(4))-W(diag(2,2)) = -k\n[PASS] global determinant-only readout forces phi(1)=0  -- otherwise det=1 blocks carry an extra dimension label\n== T4: source-to-record disjointness is a separate bridge ==\n[PASS] positive diagonal source blocks may be disjoint  -- A={1, 2}, B={3, 4}\n[PASS] non-injective source-to-record assignment remains logically possible  -- A->r0, B->r0\n[PASS] classifier does not derive source-blocks-to-records clause  -- the readout-context bridge must still rule this out\n== T5: source-note guardrails and parent discoverability ==\n[PASS] parent still declares T1-d as an explicit Boundary\n[PASS] parent cites the positive-diagonal classifier\n[PASS] parent says classifier does not derive T1-d from Record\n[PASS] classifier states bounded-support rather than an audit verdict\n[PASS] classifier forbids treating T1-d as Record-derived\n[PASS] classifier names both remaining T1-d bridge pieces\n[PASS] classifier links its proof-surface dependencies\n[PASS] classifier does not claim to close the parent audit row\n[PASS] prior no-go still supplies the independence wall\n[PASS] minimal axiom memo withholds source/action and physical-observable identification\nTOTAL: PASS=33 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T114650Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

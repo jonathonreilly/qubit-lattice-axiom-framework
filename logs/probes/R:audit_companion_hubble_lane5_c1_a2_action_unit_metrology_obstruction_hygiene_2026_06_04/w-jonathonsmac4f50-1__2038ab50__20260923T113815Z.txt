@@ -1,0 +1,43 @@
+========================================================================================
+AUDIT COMPANION: HUBBLE LANE 5 (C1) A2 ACTION-UNIT METROLOGY
+OBSTRUCTION -- CURRENT-SOURCE AUDIT-READINESS HYGIENE
+========================================================================================
+
+Companion target:
+  hubble_lane5_c1_a2_action_unit_metrology_obstruction_note_2026-04-29
+
+Question:
+  Does the current parent A2 obstruction source packet still expose
+  the same bounded action-unit metrology boundary, with live row,
+  dependency, cache, and runner surfaces internally aligned?
+
+Answer:
+  Yes. The parent note hash matches the live ledger row, the
+  parent runner and cache agree on the current PASS=16 FAIL=0
+  source-boundary surface, and the ledger/prose retain the required
+  g_bare, minimal-axiom, and staggered-carrier dependency edges.
+
+----------------------------------------------------------------------------------------
+(R1) Presence checks for parent note and parent runner
+----------------------------------------------------------------------------------------
+  [PASS] parent note file exists on disk  (path=docs/HUBBLE_LANE5_C1_A2_ACTION_UNIT_METROLOGY_OBSTRUCTION_NOTE_2026-04-29.md)
+  [PASS] parent runner file exists on disk  (path=scripts/frontier_hubble_lane5_c1_a2_action_unit_metrology_obstruction.py)
+
+----------------------------------------------------------------------------------------
+(R2) Note-hash invariance against current ledger row
+----------------------------------------------------------------------------------------
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/audit_companion_hubble_lane5_c1_a2_action_unit_metrology_obstruction_hygiene_2026_06_04.py", line 570, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/audit_companion_hubble_lane5_c1_a2_action_unit_metrology_obstruction_hygiene_2026_06_04.py", line 542, in main
+    part_R2_note_hash_invariance()
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/audit_companion_hubble_lane5_c1_a2_action_unit_metrology_obstruction_hygiene_2026_06_04.py", line 128, in part_R2_note_hash_invariance
+    row = load_ledger_row()
+          ^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/audit_companion_hubble_lane5_c1_a2_action_unit_metrology_obstruction_hygiene_2026_06_04.py", line 106, in load_ledger_row
+    with open(ROOT / LEDGER_REL, "r", encoding="utf-8") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-1/docs/audit/data/audit_ledger.json'

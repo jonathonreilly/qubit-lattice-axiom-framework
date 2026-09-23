@@ -1,0 +1,29 @@
+external_scientific_inputs: none; all objects are declared in the source note
+package_local_integrity_reads: the source note is a content-pinned runner input
+proof_scope: exact finite-group, Q-linear Pauli, and rational Bloch-body algebra
+PASS: audit-inputs the source note is the sole declared input
+PASS: group-generators the declared quarter turns have determinant +1 and order four
+PASS: group-enumeration generator closure equals the independent 24-element signed-permutation enumeration
+PASS: group-closure every product stays in the determinant-+1 signed-permutation group
+PASS: irreducible-character the exact character inner product is one
+PASS: irreducible-commutant the exact commutant dimension is one
+PASS: fixed-equations the stacked generator fixed equations have rank three
+PASS: reynolds-projector the exact Reynolds numerator is the zero matrix
+PASS: pauli-q-linearity the Pauli-coordinate map is Q-linear with a nondegenerate basis Gram matrix
+PASS: pauli-quarter-turn-normalization both conjugation numerators have N N-dagger = 2I
+PASS: pauli-quarter-turn-intertwining independent unitary conjugation implements both declared vector rotations
+PASS: pauli-fixed-space zero is the unique coordinate compatible with the rank-three fixed equations
+PASS: density-exact-formula rho(r) is Hermitian, trace one, and has the exact Bloch determinant
+PASS: density-determinant-scale det rho(r) equals (1-|r|^2)/4 on independent rational samples
+PASS: density-body-boundary the norm-one control is in the Bloch body and is a determinant-zero rank-one density
+PASS: density-body-interior the 3/5 control is inside the Bloch body and has determinant 4/25
+PASS: density-body-exterior the 6/5 mutation is outside the Bloch body and fails positive semidefiniteness
+PASS: density-group-action all group elements preserve the exact Bloch norm
+PASS: density-unique-fixed the rank-three fixed equations select rho(0)=I/2
+PASS: section-bound-conclusions each displayed theorem section contains its exact canonical conclusion
+PASS: canonical-claim-block the executable claim block exactly matches all computed theorem outputs
+PASS: self-contained-authority the note declares no upstream dependency or physical bridge
+PASS: claim-surface-trim the superseded physical and negative-evidence sections are absent
+PASS: proof-boundary the proof boundary states covered edge cases, excluded domains, and missing-lemma status
+PASS: review-record the narrowing record distinguishes withdrawal from refutation and fixes the preserved scope
+TOTAL: PASS=25 FAIL=0

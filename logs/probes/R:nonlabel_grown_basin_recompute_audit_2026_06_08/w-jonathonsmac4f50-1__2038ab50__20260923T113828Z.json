@@ -1,0 +1,35 @@
+{
+ "task": "R:nonlabel_grown_basin_recompute_audit_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "nonlabel",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/nonlabel_grown_basin_recompute_audit_2026_06_08.py",
+ "seed": 63508,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2038ab50",
+ "started_utc": "20260923T113828Z",
+ "elapsed_s": 116.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=3 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3b8442b118b914e8c4fa15d6be1d27672ab7d9adc4a018aae5d177f5e17943ae",
+ "stdout_tail": "==========================================================================================\nNON-LABEL GROWN BASIN LIVE RECOMPUTE AUDIT\ndrift=0.20 restores=[0.6, 0.7, 0.8] seed=0 NL=25 source_strength=5.0e-05\n==========================================================================================\nrestore=0.60 zero=+0.000000000000e+00 plus=-3.392850377389e-05 minus=+3.391821268520e-05 neutral=+0.000000000000e+00 double=-6.786728601815e-05 exp=1.000218512071 PASS\nrestore=0.70 zero=+0.000000000000e+00 plus=-3.534838056581e-05 minus=+3.533742984684e-05 neutral=+0.000000000000e+00 double=-7.070769755103e-05 exp=1.000223160122 PASS\nrestore=0.80 zero=+0.000000000000e+00 plus=-3.620003163686e-05 minus=+3.618855546964e-05 neutral=+0.000000000000e+00 double=-7.241152409304e-05 exp=1.000228358345 PASS\n\nSAFE READ: live recompute confirms the three-row bounded basin gates.\nSCORECARD PASS=3 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T114025Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,63 @@
+FAIL the Cycle-274 note exists :: /Users/jonBridger/.probe-workers/probes-view/slot-1/docs/work_history/repo/review_feedback/OBSERVABLE_SPECIFIC_WILSON_BLINDNESS_CYCLE274_NOTE_2026-07-17.md
+PASS sparse U^dagger is the actual Cycle-230 S C update :: 0.0
+PASS the actual stream retains its S=B A factorization :: 0.0
+PASS the one-particle rest-mass fixture is preserved :: (0.4534056541748851, 0.4534056541748852)
+PASS all eight twisted one-particle updates are unitary at L=3 :: 6.358506109566444e-15
+PASS L=3 exact onsite-density onset equals first topological wrap :: (2, 2)
+PASS L=3 onsite density, scalar-mass, and mode densities cancel before wrap :: 0.0
+PASS L=3 contact density cancels in every sector before wrap :: 
+PASS L=3 genuine N=2 contact density has exact sector readout at wrap :: 0.8131880250343394
+PASS L=3 contact and one-particle probes remain resolved beyond wrap :: 
+DATA training L=3 t=2 onsite= ('6.465283738524e-01', '6.465283738524e-01', '6.465283738524e-01', '6.465283738524e-01', '6.465283738524e-01', '6.465283738524e-01', '6.465283738524e-01') scalar_mass= ('3.896492974340e-01', '3.896492974340e-01', '5.395920258766e-01', '3.896492974340e-01', '5.395920258766e-01', '5.395920258766e-01', '6.465283738524e-01') mode= ('6.465283738524e-01', '0.000000000000e+00', '6.465283738524e-01', '0.000000000000e+00', '6.465283738524e-01', '0.000000000000e+00', '6.465283738524e-01') kinetic_fro= ('2.266230894930e+00', '0.000000000000e+00', '2.266230894930e+00', '0.000000000000e+00', '2.266230894930e+00', '0.000000000000e+00', '2.266230894930e+00') current_fro= ('1.906091333371e+00', '0.000000000000e+00', '1.906091333371e+00', '0.000000000000e+00', '1.906091333371e+00', '0.000000000000e+00', '1.906091333371e+00') contact= ('8.131880250343e-01', '8.131880250343e-01', '8.131880250343e-01', '8.131880250343e-01', '8.131880250343e-01', '8.131880250343e-01', '8.131880250343e-01')
+DATA training L=3 t=3 onsite= ('6.700113411148e-01', '6.700113411148e-01', '7.962732128767e-01', '6.700113411148e-01', '7.962732128767e-01', '7.962732128767e-01', '8.783259563942e-01') scalar_mass= ('5.636397084013e-01', '5.636397084013e-01', '7.581832778284e-01', '5.636397084013e-01', '7.581832778284e-01', '7.581832778284e-01', '8.783259563942e-01') mode= ('6.407594221703e-01', '3.203215477432e-01', '6.990726945342e-01', '3.203215477432e-01', '6.990726945342e-01', '4.468322713783e-01', '7.491861706107e-01') kinetic_fro= ('2.309980185397e+00', '6.319162582892e-01', '2.246402511060e+00', '6.319162582892e-01', '2.246402511060e+00', '8.684553193826e-01', '2.191132515319e+00') current_fro= ('2.275324497273e+00', '6.492526427350e-01', '2.234478278202e+00', '6.492526427350e-01', '2.234478278202e+00', '9.181818927624e-01', '2.192871355923e+00') contact= ('8.216906583165e-01', '8.216906583165e-01', '9.016048217889e-01', '8.216906583165e-01', '9.016048217889e-01', '9.016048217889e-01', '9.485427616658e-01')
+PASS L=4 exact onsite-density onset equals first topological wrap :: (2, 2)
+PASS L=4 onsite density, scalar-mass, and mode densities cancel before wrap :: 0.0
+PASS L=4 contact density cancels in every sector before wrap :: 
+PASS L=4 genuine N=2 contact density has exact sector readout at wrap :: 0.8131880250343392
+PASS L=4 contact and one-particle probes remain resolved beyond wrap :: 
+PASS L=4 directed-mode density is exactly blind at full-cell first wrap :: (0.0, 0.3937950122184034)
+DATA training L=4 t=2 onsite= ('6.465283738524e-01', '6.465283738524e-01', '6.465283738524e-01', '6.465283738524e-01', '6.465283738524e-01', '6.465283738524e-01', '6.465283738524e-01') scalar_mass= ('2.783432897421e-01', '2.783432897421e-01', '3.896492974340e-01', '2.783432897421e-01', '3.896492974340e-01', '3.896492974340e-01', '4.722867393218e-01') mode= ('0.000000000000e+00', '0.000000000000e+00', '0.000000000000e+00', '0.000000000000e+00', '0.000000000000e+00', '0.000000000000e+00', '0.000000000000e+00') kinetic_fro= ('2.122261951852e+00', '0.000000000000e+00', '2.122261951852e+00', '0.000000000000e+00', '2.122261951852e+00', '0.000000000000e+00', '2.122261951852e+00') current_fro= ('2.122261951852e+00', '0.000000000000e+00', '2.122261951852e+00', '0.000000000000e+00', '2.122261951852e+00', '0.000000000000e+00', '2.122261951852e+00') contact= ('6.465283738524e-01', '6.465283738524e-01', '8.131880250343e-01', '6.465283738524e-01', '8.131880250343e-01', '8.131880250343e-01', '8.131880250343e-01')
+DATA training L=4 t=3 onsite= ('6.529579606788e-01', '6.529579606788e-01', '7.288061207584e-01', '6.529579606788e-01', '7.288061207584e-01', '7.288061207584e-01', '7.875466114228e-01') scalar_mass= ('4.182463842007e-01', '4.182463842007e-01', '5.770799405764e-01', '4.182463842007e-01', '5.770799405764e-01', '5.770799405764e-01', '6.886752934120e-01') mode= ('2.354378365721e-01', '2.280285850903e-01', '3.254947494399e-01', '2.280285850903e-01', '3.254947494399e-01', '3.203215477432e-01', '3.937950122184e-01') kinetic_fro= ('2.364462185576e+00', '4.560571701806e-01', '2.334077629170e+00', '4.560571701806e-01', '2.334077629170e+00', '6.406430954863e-01', '2.304497350858e+00') current_fro= ('2.364462185576e+00', '4.560571701806e-01', '2.334077629170e+00', '4.560571701806e-01', '2.334077629170e+00', '6.406430954863e-01', '2.304497350858e+00') contact= ('6.754877074082e-01', '6.754877074082e-01', '8.432005358039e-01', '6.754877074082e-01', '8.432005358039e-01', '8.432005358039e-01', '8.839181943784e-01')
+PASS L=5 exact onsite-density onset equals first topological wrap :: (3, 3)
+PASS L=5 onsite density, scalar-mass, and mode densities cancel before wrap :: 0.0
+PASS L=5 contact density cancels in every sector before wrap :: 
+PASS L=5 genuine N=2 contact density has exact sector readout at wrap :: 0.32831289466323527
+PASS L=5 contact and one-particle probes remain resolved beyond wrap :: 
+DATA training L=5 t=3 onsite= ('2.354378365721e-01', '2.354378365721e-01', '2.354378365721e-01', '2.354378365721e-01', '2.354378365721e-01', '2.354378365721e-01', '2.354378365721e-01') scalar_mass= ('1.365744954305e-01', '1.365744954304e-01', '1.926903848976e-01', '1.365744954304e-01', '1.926903848976e-01', '1.926903848976e-01', '2.354378365721e-01') mode= ('2.354378365721e-01', '0.000000000000e+00', '2.354378365721e-01', '0.000000000000e+00', '2.354378365721e-01', '0.000000000000e+00', '2.354378365721e-01') kinetic_fro= ('1.012876915890e+00', '0.000000000000e+00', '1.012876915890e+00', '0.000000000000e+00', '1.012876915890e+00', '0.000000000000e+00', '1.012876915890e+00') current_fro= ('1.002397078623e+00', '0.000000000000e+00', '1.002397078623e+00', '0.000000000000e+00', '1.002397078623e+00', '0.000000000000e+00', '1.002397078623e+00') contact= ('3.283128946632e-01', '3.283128946632e-01', '3.283128946632e-01', '3.283128946632e-01', '3.283128946632e-01', '3.283128946632e-01', '3.283128946632e-01')
+DATA training L=5 t=4 onsite= ('3.610246723811e-01', '3.610246723811e-01', '4.239917609814e-01', '3.610246723811e-01', '4.239917609814e-01', '4.239917609814e-01', '4.728463914270e-01') scalar_mass= ('2.786882390579e-01', '2.786882390579e-01', '3.901218244143e-01', '2.786882390579e-01', '3.901218244143e-01', '3.901218244143e-01', '4.728463914270e-01') mode= ('3.484235610086e-01', '1.116000587339e-01', '3.647885240305e-01', '1.116000587339e-01', '3.647885240305e-01', '1.575788731189e-01', '3.803476195500e-01') kinetic_fro= ('1.256513101408e+00', '2.232001174678e-01', '1.272105255912e+00', '2.232001174678e-01', '1.272105255912e+00', '3.151577462377e-01', '1.287387358322e+00') current_fro= ('1.253455052844e+00', '2.232001174678e-01', '1.269084779520e+00', '2.232001174678e-01', '1.269084779520e+00', '3.151577462377e-01', '1.284402820713e+00') contact= ('4.857048692901e-01', '4.857048692901e-01', '5.374540377251e-01', '4.857048692901e-01', '5.374540377251e-01', '5.374540377250e-01', '5.795047406586e-01')
+PASS L=6 exact onsite-density onset equals first topological wrap :: (3, 3)
+PASS L=6 onsite density, scalar-mass, and mode densities cancel before wrap :: 0.0
+PASS L=6 contact density cancels in every sector before wrap :: 
+PASS L=6 genuine N=2 contact density has exact sector readout at wrap :: 0.32831289466323393
+PASS L=6 contact and one-particle probes remain resolved beyond wrap :: 
+PASS L=6 directed-mode density is exactly blind at full-cell first wrap :: (0.0, 0.13808379128197099)
+DATA held-out L=6 t=3 onsite= ('2.354378365721e-01', '2.354378365721e-01', '2.354378365721e-01', '2.354378365721e-01', '2.354378365721e-01', '2.354378365721e-01', '2.354378365721e-01') scalar_mass= ('9.668633071723e-02', '9.668633071723e-02', '1.365744954304e-01', '9.668633071723e-02', '1.365744954304e-01', '1.365744954304e-01', '1.670719568436e-01') mode= ('0.000000000000e+00', '0.000000000000e+00', '0.000000000000e+00', '0.000000000000e+00', '0.000000000000e+00', '0.000000000000e+00', '0.000000000000e+00') kinetic_fro= ('9.638636225227e-01', '0.000000000000e+00', '9.638636225227e-01', '0.000000000000e+00', '9.638636225227e-01', '0.000000000000e+00', '9.638636225227e-01') current_fro= ('9.638636225227e-01', '0.000000000000e+00', '9.638636225227e-01', '0.000000000000e+00', '9.638636225227e-01', '0.000000000000e+00', '9.638636225227e-01') contact= ('2.354378365718e-01', '2.354378365718e-01', '3.283128946632e-01', '2.354378365718e-01', '3.283128946632e-01', '3.283128946632e-01', '3.283128946632e-01')
+DATA held-out L=6 t=4 onsite= ('3.546624860748e-01', '3.546624860748e-01', '3.900290410962e-01', '3.546624860748e-01', '3.900290410962e-01', '3.900290410962e-01', '4.200545347867e-01') scalar_mass= ('2.007842820878e-01', '2.007842820878e-01', '2.824868025327e-01', '2.007842820878e-01', '2.824868025327e-01', '2.824868025327e-01', '3.441705928968e-01') mode= ('8.157326222311e-02', '7.897494650446e-02', '1.134478773840e-01', '7.897494650446e-02', '1.134478773840e-01', '1.116000587339e-01', '1.380837912820e-01') kinetic_fro= ('1.192263643119e+00', '1.579498930089e-01', '1.200827284895e+00', '1.579498930089e-01', '1.200827284895e+00', '2.232001174678e-01', '1.209298018119e+00') current_fro= ('1.192263643119e+00', '1.579498930089e-01', '1.200827284895e+00', '1.579498930089e-01', '1.200827284895e+00', '2.232001174678e-01', '1.209298018119e+00') contact= ('3.627199823861e-01', '3.627199823862e-01', '4.935991947588e-01', '3.627199823862e-01', '4.935991947588e-01', '4.935991947588e-01', '5.197949028908e-01')
+PASS all evolved low-rank subspaces preserve the declared particle sectors :: 3.759653922458047e-13
+PASS twisted actual update is covariant under all 24 proper-cubic frames :: (24, 0.0, True)
+PASS twisted actual update is covariant under the full 27-element L=3 translation group :: 0.0
+PASS coin-mixing deletion removes onsite-density Wilson readout :: 0.0
+PASS contact deletion is exactly invisible in the one-particle sector :: 
+PASS contact phase is initially a projector-global phase but becomes observable after mixing :: (0.0, 0.1629183446203678)
+PASS Wilson deletion returns exact zero residual :: 
+PASS lawful-domain guard rejects small torus, bad sector, negative iteration, and nonunitary coin :: 4
+PASS supplied numerical fixture remains explicit :: (-0.3, 0.37, 0.4534056541748851, 2e-14)
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/observable_specific_wilson_blindness_cycle274_2026_07_17.py", line 830, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/observable_specific_wilson_blindness_cycle274_2026_07_17.py", line 817, in main
+    "no route-independent obstruction" in normalized(NOTE)
+                                          ^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/observable_specific_wilson_blindness_cycle274_2026_07_17.py", line 62, in normalized
+    text = path.read_text(encoding="utf-8").lower()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-1/docs/work_history/repo/review_feedback/OBSERVABLE_SPECIFIC_WILSON_BLINDNESS_CYCLE274_NOTE_2026-07-17.md'

@@ -1,0 +1,35 @@
+{
+ "task": "R:onsite_charge_conserving_common_hamiltonian_strict_qca_dichotomy_2026_07_12",
+ "type": "runner-reexecution",
+ "lane": "onsite",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/onsite_charge_conserving_common_hamiltonian_strict_qca_dichotomy_2026_07_12.py",
+ "seed": 64076,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2038ab50",
+ "started_utc": "20260923T114756Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=41 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "24db8e93e01f76bf5830a845c919b6568304b2fccda2f439ee33d435cb0d0eef",
+ "stdout_tail": "ery tested local radius\nPASS Q02: the leaking one-particle evolution remains unitary\nPASS R01: the J=0 interaction sends a ladder operator to one neighbor factor\nPASS R02: gt in (pi/2)Z gives radius zero in the commuting branch\nPASS R03: the commuting-branch neighbor factor is scalar iff sin(2gt)=0, so exact radius is one iff sin(2gt)!=0\nPASS E01: seven explicit Hermitian 8x8 gammas satisfy the exact Cl(7) relations\nPASS E02: the flat symbol q has exact Laurent identity q^2=(a^2+b^2)I\nPASS E03: for ab nonzero the onsite and nearest-neighbor pieces do not commute\nPASS E04: exp(-itq)=cos(t)I-i sin(t)q, giving radius at most one for all t and exact one at this sample\nPASS E05: the irreducible 8-mode Cl(7) volume element is a nonzero central scalar\nPASS E06: all 24 proper cubic rotations induce twelve even and twelve odd signed-pair maps\nPASS E07: the odd signed-pair maps cannot fix Gamma0 in one irreducible 8-mode Cl(7) carrier\nPASS E08: the doubled-carrier Pin intertwiners are unitary for all 24 rotations\nPASS E09: the 16-mode doubled-chirality repair is covariant for all 24 proper cubic rotations\nPASS E10: the doubled 16-mode Laurent coefficients define a Hermitian finite-range quadratic CAR Hamiltonian\nPASS E11: the radius-one coefficient convolution preserves CAR with inverse at the same radius; local Fock dimension is 2^16\nPASS E12: the exact CAR bilinear commutator fixes the transposed coefficient in H_flat and generates the displayed U_t derivative\nSUMMARY PASS=41 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T114757Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

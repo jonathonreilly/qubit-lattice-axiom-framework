@@ -1,0 +1,35 @@
+{
+ "task": "R:one_time_dimension_dt1_reduction_check_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "one",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/one_time_dimension_dt1_reduction_check_2026_06_17.py",
+ "seed": 64065,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2038ab50",
+ "started_utc": "20260923T114745Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ae4ec73c4c28d2d6dd41ad7801d3fa1bf4ebb5f41b1fafb3f07ae5f4300983c9",
+ "stdout_tail": "CLIFFORD-ODD]: the even-d / gamma_5 argument allows ALL odd d_t (does NOT pin d_t=1)\n  [PASS] d_s=3,d_t=1: total d=4 even, gamma_5 exists (anticommutes all gamma)\n  [PASS] d_s=3,d_t=3: total d=6 even, gamma_5 exists (anticommutes all gamma)\n  [PASS] d_s=3,d_t=5: total d=8 even, gamma_5 exists (anticommutes all gamma)\n   => the anomaly/Clifford LOWER bound is d_t in {1,3,5,...} (odd>=1); it does NOT exclude 3,5.\n\nBLOCK [FORCING-STATUS]: the only would-be UPPER-bound (d_t<=1) forcings, classified\n   - Tegmark/ultrahyperbolic well-posedness: needs a predictive-determinism desideratum the\n     axioms LACK (Record supplies no time order; the realized-state primitive permits\n     only pointwise evaluation at a supplied realized state, with no selection rule).\n     => IMPORTED/external, not framework-internal.\n   - Record single-total-order: Record axiom is UNORDERED finite additivity; the single\n     linear order is a SUPPLIED post-record layer => not a derivation.\n   - Stone/N5: gives uniqueness GIVEN one generator; cannot fix the generator COUNT => circular.\n  [PASS] tested current routes do not force d_t<=1 (external/circular/symmetry-blind)\n\nCONCLUSION: d_t=1 = [odd>=1 : internal-conditional] INTERSECT [<=1 : B-AXIS.3 = emergent-dynamics gate].\nMulti-time is kinematically realizable; d_t=1 REDUCES to the (existing) emergent-dynamics gate,\nnot a new admission and not closed without the single-generator clause. Distinct from the arrow (direction) admission.\n\nTOTAL: PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T114745Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

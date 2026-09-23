@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_hodge_star_middle_form_decomposition_forces_d_four_exact_2026_05_26",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_hodge_star_middle_form_decomposition_forces_d_four_exact_2026_05_26.py",
+ "seed": 63495,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2038ab50",
+ "started_utc": "20260923T113815Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "eada925f9f2df9fae456f364d538a31e665a20540487783bef55a434aaf732dd",
+ "stdout_tail": "\n----------------------------------------------------------------------------------------\n  [PASS (A)] (H9) Among d \u2208 {0, 1, ..., 8}, exactly d = 4 has * endo of \u039b\u00b2(R^d)  (matching d values = [4])\n\n----------------------------------------------------------------------------------------\nPart 10: Trace of `*` on \u039b\u00b2(R^4) is zero (equal-dim split sanity)\n----------------------------------------------------------------------------------------\n  [PASS (A)] Tr(* on \u039b\u00b2(R^4) Riemannian) = 0 (equal +1/-1 multiplicity split)  (trace = 0)\n  [PASS (A)] *^2 = identity on \u039b\u00b2(R^4) Riemannian (matrix form of (Q'))  (*^2 - I = Matrix([[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]))\n  [PASS (A)] Tr(*^2) = dim \u039b\u00b2(R^4) = 6  (Tr(*^2) = 6)\n  [PASS (A)] (H8) Multiplicity of +1 eigenvalue of `*` on \u039b\u00b2(R^4) is 3 (self-dual subspace dim)  (+1 mult = 3)\n  [PASS (A)] (H8) Multiplicity of -1 eigenvalue of `*` on \u039b\u00b2(R^4) is 3 (anti-self-dual subspace dim)  (-1 mult = 3)\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n\n  PASS = 178\n  FAIL = 0\n\n  Note path: HODGE_STAR_MIDDLE_FORM_DECOMPOSITION_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md\n  Claim id:  hodge_star_middle_form_decomposition_forces_d_four_narrow_theorem_note_2026-05-26\n\n  Result: all class-(A) checks pass at exact rational precision.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T113815Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

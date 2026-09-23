@@ -1,0 +1,25 @@
+===============================================================================
+A - Canonical synchronized surfaces
+===============================================================================
+PASS canonical source exists: docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS canonical source exists: docs/audit/data/axiom_premise_nodes.json
+PASS canonical source exists: docs/audit/AXIOM_MINIMALITY_POLICY.md
+PASS canonical source exists: scripts/audit_companion_minimal_axioms_clean_base_exact.py
+PASS canonical source exists: docs/repo/CONTROLLED_VOCABULARY.md
+PASS canonical source exists: docs/repo/controlled_vocabulary.yaml
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/one_cut_foundation_surface_impact_map_2026_07_14.py", line 137, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/one_cut_foundation_surface_impact_map_2026_07_14.py", line 95, in main
+    note = NOTE.read_text(encoding="utf-8").lower().replace("*", "").replace("`", "")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-1/docs/work_history/repo/review_feedback/ONE_CUT_FOUNDATION_SURFACE_IMPACT_MAP_NOTE_2026-07-14.md'

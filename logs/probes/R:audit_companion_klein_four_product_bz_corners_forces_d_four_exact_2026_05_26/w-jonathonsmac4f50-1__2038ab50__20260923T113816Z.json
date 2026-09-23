@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_klein_four_product_bz_corners_forces_d_four_exact_2026_05_26",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_klein_four_product_bz_corners_forces_d_four_exact_2026_05_26.py",
+ "seed": 63496,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2038ab50",
+ "started_utc": "20260923T113816Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "91bccf77358919082fcd549cf54747e2222bb412f0e6598121b5d981ef6d0b28",
+ "stdout_tail": "y element (0, 0): e + a = a + e = a  (identity verified)\n  [PASS (A)] (V-axiom) V_4 inverses: a + a = e for all a \u2208 V_4  (every element self-inverse)\n  [PASS (A)] (V-axiom) V_4 associativity  (64 triples verified)\n\n----------------------------------------------------------------------------------------\nPart 13: Cardinality computation matches BZ-corner count\n----------------------------------------------------------------------------------------\n  [PASS (A)] (V-BZ) BZ-corner count at d = 2: |{0, \u03c0}^2| = 2^2 = 4  (|corners| = 4)\n  [PASS (A)] (V-BZ) BZ-corner count at d = 3: |{0, \u03c0}^3| = 2^3 = 8  (|corners| = 8)\n  [PASS (A)] (V-BZ) BZ-corner count at d = 4: |{0, \u03c0}^4| = 2^4 = 16  (|corners| = 16)\n  [PASS (A)] (V-BZ) BZ-corner count at d = 5: |{0, \u03c0}^5| = 2^5 = 32  (|corners| = 32)\n  [PASS (A)] (V-BZ) BZ-corner count at d = 6: |{0, \u03c0}^6| = 2^6 = 64  (|corners| = 64)\n  [PASS (A)] (V-BZ) BZ-corner count at d = 7: |{0, \u03c0}^7| = 2^7 = 128  (|corners| = 128)\n  [PASS (A)] (V-BZ) BZ-corner count at d = 8: |{0, \u03c0}^8| = 2^8 = 256  (|corners| = 256)\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n\n  PASS = 75\n  FAIL = 0\n\n  Note path: KLEIN_FOUR_PRODUCT_BZ_CORNERS_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md\n  Claim id:  klein_four_product_bz_corners_forces_d_four_narrow_theorem_note_2026-05-26\n\n  Result: all class-(A) checks pass at exact precision.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T113816Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

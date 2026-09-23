@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_lattice_green_function_zero_argument_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_lattice_green_function_zero_argument_2026_05_17.py",
+ "seed": 63499,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2038ab50",
+ "started_utc": "20260923T113819Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=26, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "798bf807b873e32663b35fc184757a2b12e8ba43b4e7adb22dcc1ad859187dfb",
+ "stdout_tail": "llary (C2) bounded by parent-cited BKM\n----------------------------------------------------------------------------------------\n  [PASS (A)] (C2) G_lat(0; L= 8) < 0.2527 (parent-cited BKM literature)  (0.224605625 < 0.2527)\n  [PASS (A)] (C2) G_lat(0; L=16) < 0.2527 (parent-cited BKM literature)  (0.238630319 < 0.2527)\n  [PASS (A)] (C2) G_lat(0; L=32) < 0.2527 (parent-cited BKM literature)  (0.245676551 < 0.2527)\n  [PASS (A)] (C2) G_lat(0; L=64) < 0.2527 (parent-cited BKM literature)  (0.249203284 < 0.2527)\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at 1e-9 precision (or exact float comparison):\n    (T1) four closed-arithmetic readouts G_lat(0; L) at L in\n         {8, 16, 32, 64}\n    (T2) strict monotone-in-L ordering across the four sample sizes\n    (T3) L=64 readout sits below 0.2527 with gap < 0.005\n    (T4) cubic-symmetry invariance under (x<->y), (x<->z), (y<->z)\n    (C1) positivity at every sample size; summand positivity at L=8\n    L=8 sum has exactly L^3 - 1 = 511 terms (zero-mode excluded)\n    counterfactual: naive-momentum kernel gives a different value\n    (C2) all four sample readouts below parent-cited BKM 0.2527\n\n========================================================================================\nTOTAL: PASS=26, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T113820Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

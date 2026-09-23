@@ -1,0 +1,32 @@
+{
+ "task": "R:nondiagonal_reference_cat_parity_join_cycle267_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "nondiagonal",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/nondiagonal_reference_cat_parity_join_cycle267_2026_07_17.py",
+ "seed": 63507,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2038ab50",
+ "started_utc": "20260923T113827Z",
+ "elapsed_s": 1.3,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4b731907344f57b455a7db266e6a24127686495c295c0a64bdfd4c85840ed8cc",
+ "stdout_tail": "oles_per_cell': 6, 'cell_cat_roles_per_cell': 1, 'reference_gamma_roles_per_cell': 3, 'radii': (6, 12, 18, 24), 'proper_frame_failures': 0, 'collisions': 0, 'period64_macro_marker': 'supplied'}\nPASS the one-particle mass and Cycle-230 numerical fixtures are preserved as untouched matter-side fixtures :: {'beta': -0.3, 'g': 0.37, 'rest_mass': 0.4534056541748851, 'principal_sea_rank': 73, 'local_B_A_algebra': 'unchanged for undressed tensor routes', 'contact_and_seam_block': 'not reproduced by a common physical E', 'E_G_intertwining': False}\nPASS the tournament reports route-specific residuals without promoting them to a shared obstruction :: {'right_rank_candidates': ('vertex X-equality', 'cell X-cat', 'cluster-cat'), 'common_failures': ('three nonlocal Wilson sector choices inherited from Cycle 261', 'no bounded arbitrary-input parity-cat preparation', 'no bounded relation identifying matter parity with the added logical Z'), 'stronger_spoke_failure_scope': 'reference-only three-qubit Pauli endpoint grammar', 'live_routes': ('dressed/quartic reference gauges', 'larger local Clifford registers', 'local topological-sector fixing or boundary constructions', 'non-Pauli encoders'), 'global_Jordan_Wigner_ordering': False, 'global_parity_service': False, 'bounded_full_Fock_encoder': False, 'universal_no_go': False, 'axiom_pressure': False, 'authority': 'none', 'audit': 'unset', 'compiler_depth_is_physical_time': False, 'reference_carriers_are_Records': False}\nSUMMARY pass=12 fail=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T113828Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

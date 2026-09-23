@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_kraus_choi_representation_deps_changed_hygiene_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_kraus_choi_representation_deps_changed_hygiene_2026_06_04.py",
+ "seed": 63499,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2038ab50",
+ "started_utc": "20260923T113819Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=35 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "149af6e0ba84f1780fe18392c99a86d07b27b557913925e3f960cf9786d27c5f",
+ "stdout_tail": "d_readout_terms :: {'I(R_1': 0, 'I(R)': 0, 'scalar record': 0, 'record functional': 0, 'record-readout': 0, 'additive scalar record': 0}\nPASS parent_pointer_surface_present :: chars=494\nPASS parent_pointer_surface_marks_not_load_bearing\nPASS parent_pointer_surface_lists_BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20\nPASS parent_pointer_surface_lists_PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20\nPASS parent_pointer_surface_lists_PERSISTENT_RECORD_OVERLAP_KERNEL_NOTE\nPASS old_axioms_have_qubit_content\nPASS new_axioms_have_quantum_content\nPASS old_axioms_have_lattice_content\nPASS new_axioms_have_lattice_content\nPASS new_axioms_have_separate_record_content\nPASS old_axioms_lack_record_additivity_formula\nPASS dephasing_kraus_trace_preserving\nPASS dephasing_choi_is_psd\nPASS depolarizing_kraus_trace_preserving\nPASS depolarizing_choi_is_psd\nPASS unitary_kraus_trace_preserving\nPASS unitary_choi_is_psd\nPASS transpose_map_choi_has_negative_eigenvalue\nPASS finite_region_tensor_dim_size_1\nPASS finite_region_tensor_dim_size_2\nPASS finite_region_tensor_dim_size_3\nPASS finite_region_tensor_dim_size_4\nPASS finite_region_tensor_dims_match_parent_formula\nPASS companion_declares_meta_type\nPASS companion_disclaims_new_theorem\nPASS companion_disclaims_direct_status_change\nPASS companion_keeps_record_non_load_bearing\n========================================================================\nSUMMARY: PASS=35 FAIL=0\n========================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T113819Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

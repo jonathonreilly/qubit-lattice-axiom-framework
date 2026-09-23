@@ -1,0 +1,35 @@
+========================================================================================
+C3 body-diagonal fixed locus and local inverse-determinant density
+========================================================================================
+
+Part A: proper cubic body-diagonal rotation
+-------------------------------------------
+  [PASS (A)] the cyclic axis map is an orientation-preserving orthogonal matrix
+  [PASS (A)] the cyclic axis map has exact order three
+  [PASS (A)] Rodrigues rotation by 2*pi/3 about (1,1,1) equals the cyclic axis map
+  [PASS (A)] the characteristic polynomial is 1-x^3  (det(P-xI)=1 - x**3)
+  [PASS (A)] the fixed subspace is the one-dimensional body diagonal
+
+Part B: exact real normal-plane determinant
+-------------------------------------------
+  [PASS (A)] the two displayed vectors span the body-diagonal orthogonal plane
+  [PASS (A)] the normal-plane action is exact and preserves the induced metric  (N=Matrix([[0, -1], [1, -1]]))
+  [PASS (A)] the normal-plane characteristic polynomial is x^2+x+1  (det(N-xI)=x**2 + x + 1)
+  [PASS (A)] the complexified normal eigenvalues are the conjugate weights omega and omega^2
+  [PASS (A)] both nonidentity C3 elements have real normal determinant three  (det(I-N)=3, det(I-N^2)=3)
+  [PASS (A)] the complex eigenvalue product reproduces det_R(I-N)=3
+
+Part C: finite C3 inverse-determinant density
+---------------------------------------------
+  [PASS (A)] the group-averaged inverse normal determinant is 2/9  (L=(1/3)(1/3+1/3)=2/9)
+  [PASS (A)] the density is real, positive, and invariant under reversing the C3 generator
+  [PASS (A)] the computed fixed-locus density has no free parameters
+
+Scope guard
+-----------
+  [PASS (B)] source note has no load-bearing links to the former seven-row supplier stack
+  [PASS (B)] source note separates physical R-eta and charged-lepton angle identification
+
+========================================================================================
+TOTAL: PASS=16, FAIL=0
+========================================================================================

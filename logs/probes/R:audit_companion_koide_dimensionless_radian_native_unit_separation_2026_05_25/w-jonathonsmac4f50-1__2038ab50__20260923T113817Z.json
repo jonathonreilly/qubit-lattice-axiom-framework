@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_koide_dimensionless_radian_native_unit_separation_2026_05_25",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_koide_dimensionless_radian_native_unit_separation_2026_05_25.py",
+ "seed": 63497,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2038ab50",
+ "started_utc": "20260923T113817Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=146 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bf8ff4b2d511dd5c5b5d379824b6a9dc04597942fa3b82803768289e1e73bb5d",
+ "stdout_tail": "q_i across the six native units\n----------------------------------------------------------------------------------------\n  [PASS] six native-unit constructions enumerated  (len(NATIVE_UNITS) = 6)\n  [PASS] six q_i collapse to five distinct rationals (q_2 = q_5 = 2/3)  (qs = [2, 2/3, 2/9, 1, 2/3, 1/3], distinct = [2/9, 1/3, 2/3, 1, 2])\n\n----------------------------------------------------------------------------------------\nBoundary: no q_i is zero (separation would be vacuous if alpha_i = 0)\n----------------------------------------------------------------------------------------\n  [PASS] alpha_1 cycle: q_i != 0  (q_i = 2)\n  [PASS] alpha_2 Z_3-step: q_i != 0  (q_i = 2/3)\n  [PASS] alpha_3 Plancherel-step: q_i != 0  (q_i = 2/9)\n  [PASS] alpha_4 Bargmann closed-orbit: q_i != 0  (q_i = 1)\n  [PASS] alpha_5 character-step: q_i != 0  (q_i = 2/3)\n  [PASS] alpha_6 selected-line CP^1 Berry-per-step: q_i != 0  (q_i = 1/3)\n\n========================================================================================\nSUMMARY: PASS=146 FAIL=0\nPASSED: 146/146\n========================================================================================\nKOIDE_DIMENSIONLESS_RADIAN_NATIVE_UNIT_SEPARATION=TRUE\nPURE_RATIONAL_2_OVER_9_NOT_IN_Q_DOT_ALPHA_FOR_ANY_NATIVE_UNIT=TRUE\nALL_SIX_NATIVE_UNITS_ARE_RATIONAL_MULTIPLES_OF_PI=TRUE\nNO_NONZERO_RATIONAL_C_SOLVES_C_ALPHA_EQUAL_2_OVER_9=TRUE\nRADIAN_BRIDGE_POSTULATE_P_CLOSURE_ASSERTED=FALSE\nRETAINED_GRADE_CLOSURE_ASSERTED=FALSE\nRETAINED_GRADE_NO_GO_ASSERTED=FALSE\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T113818Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_companion_koide_dimensionless_radian_native_unit_separation_2026_05_25.txt against the .txt beside this log"
+  ]
+ }
+}

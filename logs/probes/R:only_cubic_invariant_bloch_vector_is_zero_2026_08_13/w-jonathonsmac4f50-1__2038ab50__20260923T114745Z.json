@@ -1,0 +1,35 @@
+{
+ "task": "R:only_cubic_invariant_bloch_vector_is_zero_2026_08_13",
+ "type": "runner-reexecution",
+ "lane": "only",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/only_cubic_invariant_bloch_vector_is_zero_2026_08_13.py",
+ "seed": 64065,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2038ab50",
+ "started_utc": "20260923T114745Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=25 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "695ae819b946f32fc32c859da6397b87078dbf29801fa5fcb9a6fceae7a0891f",
+ "stdout_tail": "I\nPASS: pauli-quarter-turn-intertwining independent unitary conjugation implements both declared vector rotations\nPASS: pauli-fixed-space zero is the unique coordinate compatible with the rank-three fixed equations\nPASS: density-exact-formula rho(r) is Hermitian, trace one, and has the exact Bloch determinant\nPASS: density-determinant-scale det rho(r) equals (1-|r|^2)/4 on independent rational samples\nPASS: density-body-boundary the norm-one control is in the Bloch body and is a determinant-zero rank-one density\nPASS: density-body-interior the 3/5 control is inside the Bloch body and has determinant 4/25\nPASS: density-body-exterior the 6/5 mutation is outside the Bloch body and fails positive semidefiniteness\nPASS: density-group-action all group elements preserve the exact Bloch norm\nPASS: density-unique-fixed the rank-three fixed equations select rho(0)=I/2\nPASS: section-bound-conclusions each displayed theorem section contains its exact canonical conclusion\nPASS: canonical-claim-block the executable claim block exactly matches all computed theorem outputs\nPASS: self-contained-authority the note declares no upstream dependency or physical bridge\nPASS: claim-surface-trim the superseded physical and negative-evidence sections are absent\nPASS: proof-boundary the proof boundary states covered edge cases, excluded domains, and missing-lemma status\nPASS: review-record the narrowing record distinguishes withdrawal from refutation and fixes the preserved scope\nTOTAL: PASS=25 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T114745Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

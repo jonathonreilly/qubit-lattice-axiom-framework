@@ -1,0 +1,34 @@
+{
+ "task": "R:observable_principle_p1_nu_license_check_2026_06_10",
+ "type": "runner-reexecution",
+ "lane": "observable",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/observable_principle_p1_nu_license_check_2026_06_10.py",
+ "seed": 64008,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2038ab50",
+ "started_utc": "20260923T114648Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=38 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c4febb079c17e83df0008d085f2ffd5bef8d160166faeb5a4a71f8c14f61faae",
+ "stdout_tail": "ume or limit is taken, and the gap the note names - a retained supplier for the curvature clause (NU), reduced here to the response clause (BR) - is a repository-wide licensing fact. The runner probes it by scanning the ledger and finding zero retained-grade rows in the relevant vocabulary, which is evidence of absence rather than a derivation, and is exactly why the clause stays open.\n  scope: the T9 ledger scan applies its regular expression to row identifiers alone. A retained-grade supplier whose claim_id happened not to spell out curvature, barrier, response-bound or resolution vocabulary would pass through the filter unseen, so the zero-match result bounds what is findable by name, not what exists.\n  scope: Lemma N is executed as verification, not as a proof of the comparison theorem. The logistic and super-logistic comparison functions are exhibited in closed form and confirmed to solve their ODEs with the right initial value, and their blow-up points are checked exactly at one instance each (c = 2 nu giving u* = u1 - log 2); the general comparison argument that turns those solutions into the bound is carried by the note's prose, not by this execution.\n  scope: every selection statement is computed over the five-member probe p in {0, 2, 1, 1/2, -1/2} rather than over all real p, and of the 38 checks 6 are ledger-key or Markdown scans while 32 compute. The runner is fully deterministic: no RNG stream and no optimizer, with exact SymPy throughout.\n\nTOTAL: PASS=38 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T114648Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

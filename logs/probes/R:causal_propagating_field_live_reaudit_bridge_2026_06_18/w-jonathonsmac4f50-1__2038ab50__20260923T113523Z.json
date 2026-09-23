@@ -1,0 +1,34 @@
+{
+ "task": "R:causal_propagating_field_live_reaudit_bridge_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "causal",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/causal_propagating_field_live_reaudit_bridge_2026_06_18.py",
+ "seed": 63323,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2038ab50",
+ "started_utc": "20260923T113523Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5b7515aaa88793091dc2a55ce92ce79ad60d4ed8af802673cefd348d2c2cc691",
+ "stdout_tail": "theorem row: bridge is dispatch/readiness metadata\n[PASS] bridge note names dispatch sidecar: docs/audit/data/causal_field_live_reaudit_queue_2026-06-18.json\n[PASS] dispatch sidecar uses supported schema: promotion_reaudit_queue.v1\n[PASS] dispatch sidecar is not an audit verdict: dispatcher_only_not_audit_verdict\n[PASS] dispatch sidecar forbids use as evidence: True\n[PASS] dispatch sidecar has exactly one target: targets=1\n[PASS] dispatch sidecar targets live packet row: causal_propagating_field_live_packet_note_2026-06-05\n[PASS] dispatch sidecar expects current retained-bounded row: {'audit_question': 'Fresh-context re-audit: ignoring the archived failed causal_propagating_field_note row and stale 0.63 / 0.45 table, does the current live bounded finite replay in CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md audit clean under its narrowed configured-family scope?', 'claim_id': 'causal_propagating_field_live_packet_note_2026-06-05', 'current_audit_status': 'audited_clean', 'current_claim_type': 'bounded_theorem', 'current_effective_status': 'retained_bounded', 'note_path': 'docs/CAUSAL_PROPAGATING_FIELD_LIVE_PACKET_NOTE_2026-06-05.md'}\n[PASS] dispatch sidecar excludes archived table as evidence: archived table forbidden\n================================================================================================\nSUMMARY: CAUSAL FIELD LIVE REAUDIT BRIDGE PASS=49 FAIL=0\n================================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T113523Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run 'SUMMARY: CAUSAL FIELD LIVE REAUDIT BRIDGE PASS=49 FAIL=0' vs cache '\\\\n=============================================================================='",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

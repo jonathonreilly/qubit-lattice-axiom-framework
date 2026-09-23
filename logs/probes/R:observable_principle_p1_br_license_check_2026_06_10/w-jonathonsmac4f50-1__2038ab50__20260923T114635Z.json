@@ -1,0 +1,34 @@
+{
+ "task": "R:observable_principle_p1_br_license_check_2026_06_10",
+ "type": "runner-reexecution",
+ "lane": "observable",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/observable_principle_p1_br_license_check_2026_06_10.py",
+ "seed": 63995,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2038ab50",
+ "started_utc": "20260923T114635Z",
+ "elapsed_s": 1.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=31 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "15930ce802885f97918b307688bbba7c37c548f059fc443652ee59ef53072f01",
+ "stdout_tail": " the missing global supplier is precisely this note's obstruction. Z^3 appears only as a register-count formula, never as a lattice carrying a field, and no volume, sequence or thermodynamic limit is taken. More to the point, the gap the note names - a retained supplier for the registration-rate cap (CAP-K) - is a global licensing statement, the ledger scan returns zero retained-grade rows matching that vocabulary, and the adjacent finite-to-unbounded family-lift no-go cited in T6 states outright that finitely many e-fold checks cannot certify the uniform cap. No execution of this runner could close that.\n  scope: the clause under hunt is a supremum over all of R_{>0}, and the runner reaches it partly by spot evaluation rather than proof. W_V's unboundedness is shown by exceeding the caps 10, 100 and 1000 at m = 1e2, 1e4 and 1e6, not by an unbounded-limit argument, and every selection pass set is computed over the 5-member probe {0, 2, 1, 1/2, -1/2} rather than over all real p.\n  scope: the T9 ledger scan matches its regex against claim_id keys only, not against row bodies, so a retained-grade supplier whose identifier happened to lack capacity/rate/resolution vocabulary would not be surfaced by it. Several further checks in T6, T7 and T10 are file-presence and substring scans over Markdown, which evaluate no quantity at all.\n  scope: fully deterministic - no RNG stream and no optimizer appears anywhere, and the symbolic work is exact SymPy throughout.\n\nTOTAL: PASS=31 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T114637Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

@@ -1,0 +1,15 @@
+import sys,json
+from pathlib import Path
+sys.dont_write_bytecode=True
+sys.path.insert(0,sys.argv[1])
+import runner_cache as c
+original_execute_runner=c.execute_runner
+def preserve_execute_runner(runner_path,timeout_sec):
+    result=original_execute_runner(runner_path,timeout_sec=timeout_sec)
+    with Path(sys.argv[4]).open('x') as evidence:
+        json.dump(result,evidence,indent=2)
+        evidence.write('\n')
+    return result
+c.execute_runner=preserve_execute_runner
+r,p=c.execute_and_write_cache(sys.argv[2],900)
+Path(sys.argv[3]).write_text(json.dumps(dict(result=r,cache=str(p) if p else None),indent=2)+'\n')

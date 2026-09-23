@@ -1,0 +1,383 @@
+{
+  "head": "c8ae4a4622c1aa924ff6c9b3452021022f20746d",
+  "current_main": "8bf464953779b8ada8415208e89a656411f9f525",
+  "merge_base": "6dda46fc1af02827e9c6b64b2f7d05c381a3ce07",
+  "paths": [
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "original": {
+        "mode": "100644",
+        "blob": "f296aef8bec769dd5d6dba8e92fd68299d49a1f3",
+        "sha256": "573f5ed6133f2f043568aa62f69a38e5d9bc2733899f806ea7f985e37d6dbb42",
+        "bytes": 1763,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md"
+      },
+      "base": {
+        "mode": "100644",
+        "blob": "8f9c496033ee3e37e4ad73433151a79224a60814",
+        "sha256": "b02b4a93b36ef5177c8727f1a3d6932ba32dbcb1f4debb3da7f454b6dba566af",
+        "bytes": 879,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/base/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md"
+      },
+      "current_main": {
+        "mode": "100644",
+        "blob": "8f9c496033ee3e37e4ad73433151a79224a60814",
+        "sha256": "b02b4a93b36ef5177c8727f1a3d6932ba32dbcb1f4debb3da7f454b6dba566af",
+        "bytes": 879,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/current_main/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md"
+      }
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block28_findings.md",
+      "original": {
+        "mode": "100644",
+        "blob": "6fdbdf7ac1bd8d16a773dc45b7432b933c5d3eb1",
+        "sha256": "338982c97dbeea3f1474f8f43da993eea5d67fbf3350255dc6965f998e953762",
+        "bytes": 3328,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block28_findings.md"
+      },
+      "base": null,
+      "current_main": null
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block28.md",
+      "original": {
+        "mode": "100644",
+        "blob": "bb508f195a32e2e9acea2512dec239051639fee1",
+        "sha256": "f4f745e8a159f63162b930a7e5e6c8604ce8c213967009ef3de2b3ae0c42aa72",
+        "bytes": 2377,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block28.md"
+      },
+      "base": null,
+      "current_main": null
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block28.md",
+      "original": {
+        "mode": "100644",
+        "blob": "90d0882134e9ee53709577a521373ddc4102144a",
+        "sha256": "44feba3aa88bdcd1d6dafeef4979eae970eb71c5cd1e2f3ef223d7c590f14400",
+        "bytes": 3748,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block28.md"
+      },
+      "base": null,
+      "current_main": null
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "original": {
+        "mode": "100644",
+        "blob": "44c009a7729b873dcd3449ca5faeb95cfef42c94",
+        "sha256": "36e775394dcead762a03cb6a113e0debd4f7962a5c67d9136a39cdd7db2c62ff",
+        "bytes": 9924,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md"
+      },
+      "base": {
+        "mode": "100644",
+        "blob": "6dfc9de13838b8fe1d6d593b83d0d31cd0763b93",
+        "sha256": "e52898452cca1ed4e5065f0f8c2e27a7a9afd018a8e8d5867e991d7adf4ba59f",
+        "bytes": 8140,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/base/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md"
+      },
+      "current_main": {
+        "mode": "100644",
+        "blob": "6dfc9de13838b8fe1d6d593b83d0d31cd0763b93",
+        "sha256": "e52898452cca1ed4e5065f0f8c2e27a7a9afd018a8e8d5867e991d7adf4ba59f",
+        "bytes": 8140,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/current_main/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md"
+      }
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "original": {
+        "mode": "100644",
+        "blob": "da597e8270234a2746514d2155cb635591db91a6",
+        "sha256": "86693056ebc7d831ee15d66876bcdde4e714030f43abc6f883416e887e474f2f",
+        "bytes": 11861,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md"
+      },
+      "base": {
+        "mode": "100644",
+        "blob": "74d2f60bae1b3e2de1ca2cf7ade91cf9e93da3b7",
+        "sha256": "c6e70a8f36829082ff26280dfb350c8232111a23fcf3c076c70d45e7ae27df19",
+        "bytes": 10878,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/base/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md"
+      },
+      "current_main": {
+        "mode": "100644",
+        "blob": "74d2f60bae1b3e2de1ca2cf7ade91cf9e93da3b7",
+        "sha256": "c6e70a8f36829082ff26280dfb350c8232111a23fcf3c076c70d45e7ae27df19",
+        "bytes": 10878,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/current_main/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md"
+      }
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block28.md",
+      "original": {
+        "mode": "100644",
+        "blob": "94bec5337188678b2cdd50ca681476563b00356f",
+        "sha256": "57e7a5d363cb0796d6a8b846c6dd89ce8cca6c30825761c81560a9b866d17a2c",
+        "bytes": 4612,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block28.md"
+      },
+      "base": null,
+      "current_main": null
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "original": {
+        "mode": "100644",
+        "blob": "5de1f2362d5592b4d55a29c44398c969c652b6a2",
+        "sha256": "2bb63d9a67822fdd6a7e902a3a419a690a0f5d0609ff93468581be008602e0e0",
+        "bytes": 56969,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md"
+      },
+      "base": {
+        "mode": "100644",
+        "blob": "08d17f0940e3756c94ff724c8ff531adc9e029ce",
+        "sha256": "7beef809b0e4e0b1bc815e3f44f271f80cf951b3b4789d09e7e588819f22b8d7",
+        "bytes": 54405,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/base/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md"
+      },
+      "current_main": {
+        "mode": "100644",
+        "blob": "08d17f0940e3756c94ff724c8ff531adc9e029ce",
+        "sha256": "7beef809b0e4e0b1bc815e3f44f271f80cf951b3b4789d09e7e588819f22b8d7",
+        "bytes": 54405,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/current_main/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md"
+      }
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "original": {
+        "mode": "100644",
+        "blob": "4e45eff3b361f6e35b4084fc13c6f125a6c7e986",
+        "sha256": "42c7d658468ed8f305a075ba44afb666472a984d4c9bbf1f7a5e1d148949b5b2",
+        "bytes": 16549,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml"
+      },
+      "base": {
+        "mode": "100644",
+        "blob": "e16642020759d3d57935cd6d037d382fc6573bf0",
+        "sha256": "2b955f847d5c0f6e7e6325cbdcc51aeb9bbd0197832d23195b34c5cb969d08a3",
+        "bytes": 14595,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/base/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml"
+      },
+      "current_main": {
+        "mode": "100644",
+        "blob": "e16642020759d3d57935cd6d037d382fc6573bf0",
+        "sha256": "2b955f847d5c0f6e7e6325cbdcc51aeb9bbd0197832d23195b34c5cb969d08a3",
+        "bytes": 14595,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/current_main/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml"
+      }
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "original": {
+        "mode": "100644",
+        "blob": "e0b88a0cc15db463a77777d9e7b58547225facae",
+        "sha256": "b49e62bb70fc7cc6d565d67e141f85dc5fa73465e21f12afa92c5ade05f1aab2",
+        "bytes": 5121,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md"
+      },
+      "base": {
+        "mode": "100644",
+        "blob": "8f432e2cd2631c0cc6a5121f932b305f16d3a023",
+        "sha256": "3cc64ad72621aef21a26cc7948950a42b27a0b4cf63518039dab916261938fe3",
+        "bytes": 4403,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/base/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md"
+      },
+      "current_main": {
+        "mode": "100644",
+        "blob": "8f432e2cd2631c0cc6a5121f932b305f16d3a023",
+        "sha256": "3cc64ad72621aef21a26cc7948950a42b27a0b4cf63518039dab916261938fe3",
+        "bytes": 4403,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/current_main/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md"
+      }
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_exact.out.txt",
+      "original": {
+        "mode": "100644",
+        "blob": "82cb36c9ecb8ead2545ba0c48bbb581cb869092e",
+        "sha256": "1d5b1c151f83c671b8a6892043e5b01738f8d891002ee2a5ca977d43a0b4e71a",
+        "bytes": 416,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_exact.out.txt"
+      },
+      "base": null,
+      "current_main": null
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_exact.py",
+      "original": {
+        "mode": "100644",
+        "blob": "841cfedbb1c9c00ad93f2b43eb09210c6fdecacc",
+        "sha256": "d2f006d612617e5a7766a2cd65bd3782792ffc2e5aee3f92256139c6d9a5a324",
+        "bytes": 3921,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_exact.py"
+      },
+      "base": null,
+      "current_main": null
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_refuter.out.txt",
+      "original": {
+        "mode": "100644",
+        "blob": "4785cb7bd1bc89bc91e834354aded507af0d3a7a",
+        "sha256": "6e81342b8c7d17609bfc13c6f240463ff8b505f18ddd59d5b32b994d71508085",
+        "bytes": 1510,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_refuter.out.txt"
+      },
+      "base": null,
+      "current_main": null
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_refuter.py",
+      "original": {
+        "mode": "100644",
+        "blob": "be8a580c8a49dcc46f5db33351f95329c022ec39",
+        "sha256": "384bd0c38378dff80e6882de3822ce127fbf6120b43ceea3f38db507b0eef15c",
+        "bytes": 5036,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_refuter.py"
+      },
+      "base": null,
+      "current_main": null
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_formation_sixaxis.out.txt",
+      "original": {
+        "mode": "100644",
+        "blob": "24388d69821ab568a0be12727f843d641f76324f",
+        "sha256": "9541ed8d2a57689f14c05fc906fe4398baef050ff9a797067f6d89edc86031fa",
+        "bytes": 1990,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_formation_sixaxis.out.txt"
+      },
+      "base": null,
+      "current_main": null
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_formation_sixaxis.py",
+      "original": {
+        "mode": "100644",
+        "blob": "c7293f468d6cffac9a56408846d9d64d76490dba",
+        "sha256": "06c9db295dc6cae60c0585c23116b47b409c55ab8729bb2f18e8dc094bef80e5",
+        "bytes": 1004,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_formation_sixaxis.py"
+      },
+      "base": null,
+      "current_main": null
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sixaxis.out.txt",
+      "original": {
+        "mode": "100644",
+        "blob": "bac7f37e8a0ea271730c5f83918b34f119cd5c5e",
+        "sha256": "8d901726502f29589f7b266b86c952f83dbcdc7a87fb4609813f8127a6caa718",
+        "bytes": 1926,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sixaxis.out.txt"
+      },
+      "base": null,
+      "current_main": null
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sixaxis.py",
+      "original": {
+        "mode": "100644",
+        "blob": "3356d4221aa94000d73a4008943ff5c8dcbd283a",
+        "sha256": "6ab23de4f0290d0473c57e1c0abbdbd9b1758b309fa7d6f219c3c0072d80da21",
+        "bytes": 1579,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sixaxis.py"
+      },
+      "base": null,
+      "current_main": null
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sphere.out.txt",
+      "original": {
+        "mode": "100644",
+        "blob": "19a5299c46cab3eecc496fecae70078821d41edc",
+        "sha256": "5cd24d1b6ee3c8990d9fa7246848828c56eb61fa2da27a514fab3d50e7bf91c5",
+        "bytes": 839,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sphere.out.txt"
+      },
+      "base": null,
+      "current_main": null
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sphere.py",
+      "original": {
+        "mode": "100644",
+        "blob": "45845b8cb7ae5b023c84f788376981be1678b63c",
+        "sha256": "e609ad1a105c4495e1aed06138b832b2860a7554c5572abb9782a3d0771e439e",
+        "bytes": 1819,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sphere.py"
+      },
+      "base": null,
+      "current_main": null
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "original": {
+        "mode": "100644",
+        "blob": "f2af9a93a1c168a8905cfbab33f08ea85454dc4c",
+        "sha256": "b1a4a11040a1dbadbdc5a800960c56df6d59851635006087940bcef7b5809990",
+        "bytes": 28428,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/original/docs/ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+      },
+      "base": null,
+      "current_main": null
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "original": {
+        "mode": "100644",
+        "blob": "3c45f083d588d6d8e048f2510a2d8240ced0d61b",
+        "sha256": "0d30ac700152b3dfbacc7354da368cc5fe31ca1effec5e1d7092862ad013029f",
+        "bytes": 834847,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/original/docs/audit/data/citation_graph_manifest.json"
+      },
+      "base": {
+        "mode": "100644",
+        "blob": "9c5ee548861f53d42bff5d600652e7391b769f17",
+        "sha256": "a3dcc3d90687ae261e65dc02caec57008d018c514d8ef6cd6fcbfb0d2806f5fb",
+        "bytes": 834602,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/base/docs/audit/data/citation_graph_manifest.json"
+      },
+      "current_main": {
+        "mode": "100644",
+        "blob": "1cbed9bb8574ea2f569c9ce948d9d54ac6a83c7d",
+        "sha256": "6d1f97818c189d2e727bd9e2214044fcde1efe6699cb88fa6ef0c0d3574e0c7e",
+        "bytes": 888713,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/current_main/docs/audit/data/citation_graph_manifest.json"
+      }
+    },
+    {
+      "path": "logs/runner-cache/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16.txt",
+      "original": {
+        "mode": "100644",
+        "blob": "5d81f2535f3c684039d893266dbbdec01bf3251d",
+        "sha256": "69c15b5b2b288e6a9fd8ff35671ec2505eef0d7dac3db9c250f400f488fcc59e",
+        "bytes": 3337,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/original/logs/runner-cache/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16.txt"
+      },
+      "base": null,
+      "current_main": null
+    },
+    {
+      "path": "scripts/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16.py",
+      "original": {
+        "mode": "100755",
+        "blob": "6411552d4900e6e069df500cd6ac25163688a044",
+        "sha256": "cdb2b7e3b0ffce085650a92498dc24f2797360a81e2b9ed38ef1d6f1de5013f6",
+        "bytes": 16224,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8172-original/original/scripts/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16.py"
+      },
+      "base": null,
+      "current_main": null
+    }
+  ],
+  "shared_paths": [
+    "docs/audit/data/citation_graph_manifest.json"
+  ],
+  "clean_initial": ""
+}

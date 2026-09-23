@@ -1,0 +1,483 @@
+{
+  "review": "PR8172 original independent source review",
+  "session": "/root/review_8172",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "low",
+  "date_utc": "2026-09-23T03:45:38.140259+00:00",
+  "status": "FIX REQUIRED; no original landing PASS",
+  "iteration": 1,
+  "head": "c8ae4a4622c1aa924ff6c9b3452021022f20746d",
+  "declared_base": "main",
+  "merge_base": "6dda46fc1af02827e9c6b64b2f7d05c381a3ce07",
+  "authority_main": "8bf464953779b8ada8415208e89a656411f9f525",
+  "original_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "original_sha256": "573f5ed6133f2f043568aa62f69a38e5d9bc2733899f806ea7f985e37d6dbb42",
+      "original_blob": "f296aef8bec769dd5d6dba8e92fd68299d49a1f3",
+      "original_mode": "100644",
+      "disposition": "deferred",
+      "reason": "Preserve exact full historical packet, including inherited records, old proofs, failed proposals, specs and outputs; no authority adopted from campaign certification.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block28_findings.md",
+      "original_sha256": "338982c97dbeea3f1474f8f43da993eea5d67fbf3350255dc6965f998e953762",
+      "original_blob": "6fdbdf7ac1bd8d16a773dc45b7432b933c5d3eb1",
+      "original_mode": "100644",
+      "disposition": "deferred",
+      "reason": "Preserve exact full historical packet, including inherited records, old proofs, failed proposals, specs and outputs; no authority adopted from campaign certification.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block28_findings.md",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block28.md",
+      "original_sha256": "f4f745e8a159f63162b930a7e5e6c8604ce8c213967009ef3de2b3ae0c42aa72",
+      "original_blob": "bb508f195a32e2e9acea2512dec239051639fee1",
+      "original_mode": "100644",
+      "disposition": "deferred",
+      "reason": "Preserve exact full historical packet, including inherited records, old proofs, failed proposals, specs and outputs; no authority adopted from campaign certification.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block28.md",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block28.md",
+      "original_sha256": "44feba3aa88bdcd1d6dafeef4979eae970eb71c5cd1e2f3ef223d7c590f14400",
+      "original_blob": "90d0882134e9ee53709577a521373ddc4102144a",
+      "original_mode": "100644",
+      "disposition": "deferred",
+      "reason": "Preserve exact full historical packet, including inherited records, old proofs, failed proposals, specs and outputs; no authority adopted from campaign certification.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block28.md",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "original_sha256": "36e775394dcead762a03cb6a113e0debd4f7962a5c67d9136a39cdd7db2c62ff",
+      "original_blob": "44c009a7729b873dcd3449ca5faeb95cfef42c94",
+      "original_mode": "100644",
+      "disposition": "deferred",
+      "reason": "Preserve exact full historical packet, including inherited records, old proofs, failed proposals, specs and outputs; no authority adopted from campaign certification.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "original_sha256": "86693056ebc7d831ee15d66876bcdde4e714030f43abc6f883416e887e474f2f",
+      "original_blob": "da597e8270234a2746514d2155cb635591db91a6",
+      "original_mode": "100644",
+      "disposition": "deferred",
+      "reason": "Preserve exact full historical packet, including inherited records, old proofs, failed proposals, specs and outputs; no authority adopted from campaign certification.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block28.md",
+      "original_sha256": "57e7a5d363cb0796d6a8b846c6dd89ce8cca6c30825761c81560a9b866d17a2c",
+      "original_blob": "94bec5337188678b2cdd50ca681476563b00356f",
+      "original_mode": "100644",
+      "disposition": "deferred",
+      "reason": "Preserve exact full historical packet, including inherited records, old proofs, failed proposals, specs and outputs; no authority adopted from campaign certification.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block28.md",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "original_sha256": "2bb63d9a67822fdd6a7e902a3a419a690a0f5d0609ff93468581be008602e0e0",
+      "original_blob": "5de1f2362d5592b4d55a29c44398c969c652b6a2",
+      "original_mode": "100644",
+      "disposition": "deferred",
+      "reason": "Preserve exact full historical packet, including inherited records, old proofs, failed proposals, specs and outputs; no authority adopted from campaign certification.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "original_sha256": "42c7d658468ed8f305a075ba44afb666472a984d4c9bbf1f7a5e1d148949b5b2",
+      "original_blob": "4e45eff3b361f6e35b4084fc13c6f125a6c7e986",
+      "original_mode": "100644",
+      "disposition": "deferred",
+      "reason": "Preserve exact full historical packet, including inherited records, old proofs, failed proposals, specs and outputs; no authority adopted from campaign certification.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "original_sha256": "b49e62bb70fc7cc6d565d67e141f85dc5fa73465e21f12afa92c5ade05f1aab2",
+      "original_blob": "e0b88a0cc15db463a77777d9e7b58547225facae",
+      "original_mode": "100644",
+      "disposition": "deferred",
+      "reason": "Preserve exact full historical packet, including inherited records, old proofs, failed proposals, specs and outputs; no authority adopted from campaign certification.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_exact.out.txt",
+      "original_sha256": "1d5b1c151f83c671b8a6892043e5b01738f8d891002ee2a5ca977d43a0b4e71a",
+      "original_blob": "82cb36c9ecb8ead2545ba0c48bbb581cb869092e",
+      "original_mode": "100644",
+      "disposition": "deferred",
+      "reason": "Preserve exact full historical packet, including inherited records, old proofs, failed proposals, specs and outputs; no authority adopted from campaign certification.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_exact.out.txt",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_exact.py",
+      "original_sha256": "d2f006d612617e5a7766a2cd65bd3782792ffc2e5aee3f92256139c6d9a5a324",
+      "original_blob": "841cfedbb1c9c00ad93f2b43eb09210c6fdecacc",
+      "original_mode": "100644",
+      "disposition": "deferred",
+      "reason": "Preserve exact full historical packet, including inherited records, old proofs, failed proposals, specs and outputs; no authority adopted from campaign certification.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_exact.py",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_refuter.out.txt",
+      "original_sha256": "6e81342b8c7d17609bfc13c6f240463ff8b505f18ddd59d5b32b994d71508085",
+      "original_blob": "4785cb7bd1bc89bc91e834354aded507af0d3a7a",
+      "original_mode": "100644",
+      "disposition": "deferred",
+      "reason": "Preserve exact full historical packet, including inherited records, old proofs, failed proposals, specs and outputs; no authority adopted from campaign certification.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_refuter.out.txt",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_refuter.py",
+      "original_sha256": "384bd0c38378dff80e6882de3822ce127fbf6120b43ceea3f38db507b0eef15c",
+      "original_blob": "be8a580c8a49dcc46f5db33351f95329c022ec39",
+      "original_mode": "100644",
+      "disposition": "deferred",
+      "reason": "Preserve exact full historical packet, including inherited records, old proofs, failed proposals, specs and outputs; no authority adopted from campaign certification.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_refuter.py",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_formation_sixaxis.out.txt",
+      "original_sha256": "9541ed8d2a57689f14c05fc906fe4398baef050ff9a797067f6d89edc86031fa",
+      "original_blob": "24388d69821ab568a0be12727f843d641f76324f",
+      "original_mode": "100644",
+      "disposition": "deferred",
+      "reason": "Preserve exact full historical packet, including inherited records, old proofs, failed proposals, specs and outputs; no authority adopted from campaign certification.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_formation_sixaxis.out.txt",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_formation_sixaxis.py",
+      "original_sha256": "06c9db295dc6cae60c0585c23116b47b409c55ab8729bb2f18e8dc094bef80e5",
+      "original_blob": "c7293f468d6cffac9a56408846d9d64d76490dba",
+      "original_mode": "100644",
+      "disposition": "deferred",
+      "reason": "Preserve exact full historical packet, including inherited records, old proofs, failed proposals, specs and outputs; no authority adopted from campaign certification.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_formation_sixaxis.py",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sixaxis.out.txt",
+      "original_sha256": "8d901726502f29589f7b266b86c952f83dbcdc7a87fb4609813f8127a6caa718",
+      "original_blob": "bac7f37e8a0ea271730c5f83918b34f119cd5c5e",
+      "original_mode": "100644",
+      "disposition": "deferred",
+      "reason": "Preserve exact full historical packet, including inherited records, old proofs, failed proposals, specs and outputs; no authority adopted from campaign certification.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sixaxis.out.txt",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sixaxis.py",
+      "original_sha256": "6ab23de4f0290d0473c57e1c0abbdbd9b1758b309fa7d6f219c3c0072d80da21",
+      "original_blob": "3356d4221aa94000d73a4008943ff5c8dcbd283a",
+      "original_mode": "100644",
+      "disposition": "deferred",
+      "reason": "Preserve exact full historical packet, including inherited records, old proofs, failed proposals, specs and outputs; no authority adopted from campaign certification.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sixaxis.py",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sphere.out.txt",
+      "original_sha256": "5cd24d1b6ee3c8990d9fa7246848828c56eb61fa2da27a514fab3d50e7bf91c5",
+      "original_blob": "19a5299c46cab3eecc496fecae70078821d41edc",
+      "original_mode": "100644",
+      "disposition": "deferred",
+      "reason": "Preserve exact full historical packet, including inherited records, old proofs, failed proposals, specs and outputs; no authority adopted from campaign certification.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sphere.out.txt",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sphere.py",
+      "original_sha256": "e609ad1a105c4495e1aed06138b832b2860a7554c5572abb9782a3d0771e439e",
+      "original_blob": "45845b8cb7ae5b023c84f788376981be1678b63c",
+      "original_mode": "100644",
+      "disposition": "deferred",
+      "reason": "Preserve exact full historical packet, including inherited records, old proofs, failed proposals, specs and outputs; no authority adopted from campaign certification.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8172-original/original/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sphere.py",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": "docs/ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "original_sha256": "b1a4a11040a1dbadbdc5a800960c56df6d59851635006087940bcef7b5809990",
+      "original_blob": "f2af9a93a1c168a8905cfbab33f08ea85454dc4c",
+      "original_mode": "100644",
+      "disposition": "deferred",
+      "reason": "Original source frozen; proposed narrow correction and final same-session confirmation pending.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8172-original/original/docs/ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "0d30ac700152b3dfbacc7354da368cc5fe31ca1effec5e1d7092862ad013029f",
+      "original_blob": "3c45f083d588d6d8e048f2510a2d8240ced0d61b",
+      "original_mode": "100644",
+      "disposition": "superseded",
+      "reason": "Generated topology acknowledgement must be regenerated on final current-main candidate; original preserved only.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8172-original/original/docs/audit/data/citation_graph_manifest.json",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": "logs/runner-cache/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16.txt",
+      "original_sha256": "69c15b5b2b288e6a9fd8ff35671ec2505eef0d7dac3db9c250f400f488fcc59e",
+      "original_blob": "5d81f2535f3c684039d893266dbbdec01bf3251d",
+      "original_mode": "100644",
+      "disposition": "deferred",
+      "reason": "Historical author execution receipt only; do not restamp. Final corrected-source evidence pending.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8172-original/original/logs/runner-cache/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16.txt",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": "scripts/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16.py",
+      "original_sha256": "cdb2b7e3b0ffce085650a92498dc24f2797360a81e2b9ed38ef1d6f1de5013f6",
+      "original_blob": "6411552d4900e6e069df500cd6ac25163688a044",
+      "original_mode": "100755",
+      "disposition": "deferred",
+      "reason": "Original source frozen; proposed narrow correction and final same-session confirmation pending.",
+      "recovery": "/private/tmp/review-drain-20260915/drain8172-original/original/scripts/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16.py",
+      "final_path": null,
+      "final_sha256": null
+    }
+  ],
+  "findings": [
+    {
+      "id": "8172-R1",
+      "category": "BUG",
+      "severity": "P1",
+      "path": "docs/ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "lines": [
+        25,
+        108,
+        134
+      ],
+      "title": "Point checks do not establish the claimed half-line uniqueness region",
+      "evidence": "Independent exact enumeration confirms 3c(37/10)=406962630/413162167 and 3c(19/5)=871815/862244, but at p=1/10 gives 3c=87/52>1. The claimed criterion holds for p<=3.7 is false. This does not prove nonuniqueness at p=1/10.",
+      "repair": "State the two exact point evaluations only; any connected interval or threshold-location assertion needs its actual interval proof. For epsilon from p=285718, include derivatives showing monotonicity, or narrow to the two integer evaluations."
+    },
+    {
+      "id": "8172-R2",
+      "category": "PROOF_OBLIGATION",
+      "severity": "P1",
+      "path": "docs/ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "lines": [
+        116
+      ],
+      "related": "scripts/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16.py:148-162,185",
+      "title": "Healing proof and region enumerator omit translated islands",
+      "evidence": "The step i_j<=D is false without normalization. I={(100,-100,0)} has D=0, three region sites, while the original coordinate box counts zero. Translated triangle has 76 actual sites and zero counted. C1 also compares max(-a-b) rather than true third coordinate t-a-b, so its maximum check is weaker than claimed. The union-bound theorem is salvageable, not refuted.",
+      "repair": "Use B_j=D+1+M_j, sum B_j=4D+3, or translate by an island point on level zero then explicitly apply the original bound. Count U by a complete predecessor enumeration or valid coordinate limits; test translation invariance and t-a-b maxima. Define island nonempty or handle empty set separately. Bound survival by min(1,18(D+1)^3 epsilon) when giving a probability reading; healing is at least 1-bound, not equality."
+    },
+    {
+      "id": "8172-R3",
+      "category": "IMPORTED_VALUE",
+      "severity": "P1",
+      "path": "docs/ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "lines": [
+        124,
+        167,
+        199
+      ],
+      "title": "Sphere influence is conditional on an unproved contraction import",
+      "evidence": "The source proves only propagation of the supplied recurrence. Block27 contraction is neither reproduced nor linked/input-bound, while prose says it is re-proved. D0 is <=2 delta, not equality for arbitrary two distinct initial directions. Primary D1 checks a scalar recurrence at one rational g; it does not construct or verify the sphere coupling.",
+      "repair": "Keep full original proof. Narrow T3 to a nonnegative recurrence lemma with explicit supplied coefficient and D0<=2 delta, or import the independently corrected block27 theorem with exact hypotheses and current source/input pins after its landing. Never treat unlanded 8171 repair as main authority."
+    },
+    {
+      "id": "8172-R4",
+      "category": "OVERCLAIM",
+      "severity": "P1",
+      "path": "docs/ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "lines": [
+        21,
+        32,
+        38,
+        44,
+        74,
+        144
+      ],
+      "title": "Finite simulations are promoted to actual memory thresholds and never statements",
+      "evidence": "One seeded finite run per setting, no equilibrium/mixing or thermodynamic-limit control, cannot show permanent memory or its absence at all beta. Positive finite kernels permit later loss. The ratio about one third is a descriptive ratio of chosen finite observations, not a physical/theorem threshold ratio. A finite-run bracket is not a certified transition bracket.",
+      "repair": "Preserve all exact original simulations and outputs as historical exploratory observations, with sizes, run lengths, seeds, observables, and lack of error/equilibration certification explicit. Replace actual strengths/keeps/never by measured finite-time results and defer asymptotic thresholds. No reruns required to honestly archive observations."
+    },
+    {
+      "id": "8172-R5",
+      "category": "BUG",
+      "severity": "P2",
+      "path": "docs/ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "lines": [
+        144
+      ],
+      "title": "Reported simulation coverage exceeds the saved runs",
+      "evidence": "L16 heat-bath scan has 3.5 and 4, not 3.6/3.7. Metropolis has 3.6 and 3.8, not 3.7. Thus all three lattice sizes and both algorithms at 3.6/3.7 is unsupported. Healing refuter uses a rectangular superset of the true forward cone, not the asserted event; the smallest island rectangle has 16 level-one sites while the true cone has 3. Larger bounds exceed one and are vacuous.",
+      "repair": "Report each protocol exactly as saved. Label healing rectangular test as a different/superset observable, with no claimed direct frequency test of exact F. Preserve existing outputs and code without retroactively relabeling execution."
+    },
+    {
+      "id": "8172-R6",
+      "category": "SEMANTIC_BRIDGE",
+      "severity": "P1",
+      "path": "docs/ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "lines": [
+        4,
+        26,
+        82,
+        137
+      ],
+      "title": "Historical proved-region table conflicts with corrected main scope",
+      "evidence": "Current-main formation stability note explicitly records that static reflection order remains conditional because site-reflection parity leaves a dissemination gap. PR8172 cannot restore unconditional static order at p>=432. Current-main sphere beta>0.76 bound is a sufficient supplied-model corollary with Gaussian-domination import, not an actual transition. Other uninspected old region assertions cannot be certified by addresses or prose alone.",
+      "repair": "If retaining comparison table, link and bind corrected current sources with their exact conditional bounds. Otherwise preserve old map historically and defer the theorem comparison. Do not overwrite already-corrected main science."
+    },
+    {
+      "id": "8172-R7",
+      "category": "AUDIT_COMPATIBILITY",
+      "severity": "P1",
+      "path": "scripts/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16.py",
+      "lines": [
+        26,
+        285,
+        286
+      ],
+      "title": "Runtime evidence closure and resolution certificate are incomplete",
+      "evidence": "Only three note paths are declared; no simulation source/output or sphere contraction source is bound. No Markdown premise links exist in original note. N5 per_block says executed simulation although primary never executes or reads the specs/results; lattice_wide overstates proofs. Historical PASS cache does not cure missing inputs or validate finite data. No helper execution was performed in this review.",
+      "repair": "Bind actual active proof/data inputs and paired runner/parent links; use owned proof/runtime inputs as appropriate. Say simulations were historical, checked but not executed in current primary; infinite lattice is proof-only or conditional. Capture only the final corrected frozen primary under authorized limits; retain old receipt unchanged."
+    },
+    {
+      "id": "8172-R8",
+      "category": "NO_GO_OVERCLAIM",
+      "severity": "P2",
+      "path": "docs/ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "lines": [
+        146,
+        151,
+        177
+      ],
+      "title": "N1-N8 does not certify broad negative or threshold conclusions",
+      "evidence": "N1 lists four items, not five normalized attempted families; finite size and finite time remain unresolved, N3 hides contraction and sampling assumptions, N4 labels imports as evidence addresses, N5 overstates coverage, and N7 itself concedes true thresholds unproved.",
+      "repair": "Withhold negative certification, record actual tested controls and untested routes honestly, and retain only positive conditional finite lemmas plus historical observations. Do not fabricate a fifth route or weaken the schema. Any future negative certificate needs its real route/proof support."
+    },
+    {
+      "id": "8172-R9",
+      "category": "REPO_GOVERNANCE",
+      "severity": "P2",
+      "path": "docs/ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "lines": [
+        13,
+        74,
+        82,
+        203
+      ],
+      "title": "Campaign packaging is not canonical science or independent review",
+      "evidence": "Block numbers, open-PR assertions, supervisor PASS and campaign certificates are live-facing. Common .claude campaign files contain inherited earlier history and must not be copied over current source. Generated manifest is the only shared changed path.",
+      "repair": "Archive exact campaign source/proofs/specs/logs with path/mode/hash recovery and explicit historical status; keep active scientific proofs accessible. Use descriptive scientific names and genuine Markdown links. Recompute generated manifest only at coordinator integration; no audit verdict changes."
+    }
+  ],
+  "evidence": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-original/inventory.json",
+      "sha256": "6200f626acac435ad76d69ad05fa244732b1bbf0e0feae4b5714fcf76b167878"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-original/original.patch",
+      "sha256": "88667c80568e3a5563ede5f624837f13bdcc89c35384b2b443f8fd0b3527ce71"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-original/current_main.patch",
+      "sha256": "1092fd580ce44545c8c91b3eaa9020eee7c48c784c752cc7574549f609b8b4ee"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-original/head_vs_main.patch",
+      "sha256": "928dfe0f355ef7dd62e0afe2a75b123f424a759105a8cf07f869e0194c590984"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-original/complete-inherited-packet.tar",
+      "sha256": "47193e42af4893425222fa2c8a8771580bda659e1ee3422cb736cca947670900"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-original/complete-packet-inventory.json",
+      "sha256": "45f6b2e57e9a612415f34328b391bcab04f0c3a6dcf88c89c1002b188cfe3619"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8172/independent.py",
+      "sha256": "28edcddd63e07c65128528c73185fc7e33f9a70a157a4148473f4a35b59dca0f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8172/independent.out.json",
+      "sha256": "057ea5d6ee51c40d8951bb22fa561db8eb051d5c21309d191648fc87c2a57642"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8172/independent.err",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "source_loss_guard": {
+    "shared_paths": [
+      "docs/audit/data/citation_graph_manifest.json"
+    ],
+    "no_source_replacement_authorized": true,
+    "current_main_changes_preserved_by": "Original review has no source mutations; final integration must apply reviewed delta and freshly check all source interactions. Only shared path is generated manifest; do not copy it from old PR.",
+    "semantic_loss": "Do not reintroduce unconditional p>=432 static-order claim or overstate corrected sphere results."
+  },
+  "coverage": {
+    "complete_changed_science": "Full 213-line note, 328-line primary, all five block28 control/refuter programs and all saved outputs read. Full changed history deltas inspected; complete 79-entry inherited packet preserved and byte-verified. Prior inherited campaign certificates are history, not recertified science.",
+    "inputs": "All three declared original primary inputs preserved; original axiom and product-rule inputs equal frozen-current-main blobs. Product-rule note fully read for actual definitions and limits. Current-main comparison note excerpts read to identify conflicts; no fresh proof certification of comparison parents.",
+    "authorities": "Current-main review-loop and all routed references, no-go discipline, proof-search governance, axiom memo/registry/primitive sources. Setup governance surfaces read at relevant scope; complete snapshots retained.",
+    "freshness": "Coordinator-frozen main used via immutable Git blobs, never stale checkout authority; no remote mutation performed."
+  },
+  "lens_results": {
+    "CodeRunnerReviewer": "FAIL: clipped count, incomplete closure/certificates",
+    "PhysicsClaimReviewer": "SUPPORT after narrowing; original overclaims",
+    "ProofObligationReviewer": "FAIL original T2 proof gap; CONDITIONAL recurrence; T1 point facts independently confirmed",
+    "ImportSupportReviewer": "FAIL hidden sphere contraction and overstated static/sampling implications",
+    "NatureRetentionReviewer": "OPEN; no retained-grade grant",
+    "NoGoDisciplineReviewer": "FAIL original N1/N3/N4/N5/N7; negative certification deferred",
+    "LabelingConventionReviewer": "NOT APPLICABLE: genuine algebraic core",
+    "RepoGovernanceReviewer": "FIX",
+    "AuditCompatibility": "FIX; combined validation deferred to coordinator",
+    "MethodologySkillReviewer": "NOT APPLICABLE: campaign historical records do not alter methodology"
+  },
+  "checks": {
+    "independent_controls": "Finite independent exact enumeration (no original code import/execution): five rational sensitivities via dot-product menu and positive-part TV; two noise thresholds via conditional masses; explicit forward/backward cones and translated islands; exhaustive step strings t=0..8. 0.046 seconds observed, exit 0, empty stderr; no explicit wall-clock cap was imposed for this fixed finite script.",
+    "diff_checks": "working, staged, original-base-relative git diff --check exit 0",
+    "skipped": "Original primary, simulations, original mutation suite, full pipeline, strict audit lint, evidence gate, auditor and verdict tools not executed per assignment. No fabricated execution or failed attempt omitted.",
+    "resource_plan": "Repair author should first freeze corrected note/runtime/helper/data closure. Keep historical scans as observations without rerun; execute final focused primary once with its actual declared timeout under coordinator authorization. If broad proofs are deferred, state that explicitly; no simulation or full-gate authorization inferred."
+  },
+  "salvage": "Preserve all full originals; repair finite healing proof/count, keep exact point/deviation arithmetic, keep explicit recurrence corollary or later reviewed contraction input, retain full historical simulations with corrected scope. Defer actual phase thresholds, permanent memory/never assertions, unverified old region comparisons and negative certification. No source is deleted by this review.",
+  "commits_created": [],
+  "full_pipeline_count": 0,
+  "landing": "Not performed. Root owns slot release and orchestration; final affected/current-main confirmations must use this session."
+}

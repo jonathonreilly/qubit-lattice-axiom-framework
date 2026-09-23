@@ -1,0 +1,14 @@
+{
+  "staged_tree": "3ec7c92b81e9ec8ff85d79af9c982faff5b07aa2",
+  "head": "8bf464953779b8ada8415208e89a656411f9f525",
+  "verified_paths": 30,
+  "verified_input_groups": {
+    "runtime": 4,
+    "helpers": 0,
+    "parents": 2,
+    "context": 23,
+    "tooling": 7
+  },
+  "unstaged": "",
+  "unexpected_staged": []
+}

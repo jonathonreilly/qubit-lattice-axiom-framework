@@ -1,0 +1,26 @@
+{
+  "reason": "GitHub GH001 rejected two uncompressed historical comparison patches above100MB; no remote update occurred. Representation-only correction to sole unpublished commit; exact raw identities preserved.",
+  "unpublished_rejected_commit": "3fa7fbac56831312247c97abb0c201d9c9a9ffaf",
+  "preserved_local_ref": "refs/review-loop/preserved/provenance-large-patch-push-rejection-v1",
+  "files": [
+    {
+      "original_path": "drain8172-original/head_vs_main.patch",
+      "decoded_sha256": "928dfe0f355ef7dd62e0afe2a75b123f424a759105a8cf07f869e0194c590984",
+      "decoded_bytes": 131913969,
+      "remote_encoded_path": "drain8172-original/head_vs_main.patch.gz",
+      "encoded_sha256": "9a5a147ac0cf5ae429175b515bf24b38e73eac5c4e254166a80faafaed3ce457",
+      "encoded_bytes": 53913955,
+      "encoding": "gzip, mtime=0; lossless; original file remains locally unchanged"
+    },
+    {
+      "original_path": "drain8172-original/current_main.patch",
+      "decoded_sha256": "1092fd580ce44545c8c91b3eaa9020eee7c48c784c752cc7574549f609b8b4ee",
+      "decoded_bytes": 131773702,
+      "remote_encoded_path": "drain8172-original/current_main.patch.gz",
+      "encoded_sha256": "c85d3c7574aa8cc14d971c5ff007bafcdac1712fab0783823ef10b71a320f928",
+      "encoded_bytes": 53884211,
+      "encoding": "gzip, mtime=0; lossless; original file remains locally unchanged"
+    }
+  ],
+  "restoration": "Decode each gzip to original_path; verify decoded_sha256 before using unchanged reviewer reference."
+}

@@ -1,0 +1,1199 @@
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+index 8f9c496033..f296aef8be 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+@@ -8,3 +8,7 @@
+ | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
+ | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
+ | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
++| F28.1 the brackets of the proved regions at `(p, 1, 2)` | exact rationals: `c(37/10)`, `c(19/5)`, `ε(285717)`, `ε(285718)` | the maximum over triples and alternatives | none | exact | candidate-complete | T1 (B1–B2) | — |
++| F28.2 the healing bound | the eroder bound; a coupling on the noise-free region; a box count | `P(survival) ≤ 18(D+1)³ε` | a sharper count (executed ratio `4`) | exact | candidate-complete | T2 (C1–C2) | — |
++| F28.3 the influence bound | block 27's contraction with a localized start | `2(√3β)^t p_t` | — | exact | candidate-complete | T3 (D1) | — |
++| F28.4 the map (executed) | scans on two plane sizes, three lattice sizes, two starts, two algorithms | the four strengths as brackets | the strengths as theorems | numerical | frontier discovery | specs (control, refuter) | a plane kept below or lost above a bracket on a larger run |
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block28_findings.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block28_findings.md
+new file mode 100644
+index 0000000000..6fdbdf7ac1
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block28_findings.md
+@@ -0,0 +1,15 @@
++# Refuting pass — block 28 (supervisor-run, disjoint machinery; 2026-09-16)
++
++Routes compared (controls `specs/supervisor_control_block28_exact.py`, `..._scan_formation_sixaxis.py`, `..._scan_static_sixaxis.py`, `..._scan_static_sphere.py`; refuting pass `specs/supervisor_control_block28_refuter.py`; outputs in `.out.txt`):
++
++| item | control's route | refuting route | result |
++|---|---|---|---|
++| six-axis formation strength at `(p, 1, 2)` | aligned start, memory of the initial value; `128²` and `256²`; fine scan `9`–`13` | random start, fraction of the majority value (spontaneous order), `128²`, `4000` levels | control: lost at `10.5`, kept at `11`; refuter: majority `0.18, 0.22, 0.39, 0.37, 0.69` at `p = 10, 11, 12, 13, 15` — order sets in at the same strength and grows slowly from a random start (domains merge) |
++| six-axis static strength at `(p, 1, 2)` | heat-bath sweeps, aligned and random starts, `16³`, `24³`, `32³`; fine scan `3.5`–`4.0` | single-site proposals with the weight ratio (a different chain), aligned start, `16³` | control: disordered at `3.6`, ordered at `3.7` on all sizes and starts; refuter: `0.22` at `3.6`, `0.78` at `3.8` |
++| sphere static strength | heat bath with the exact conditional, aligned start, `16³`, `24³`; fine scan `0.66`–`0.72` | heat bath from a random start, `16³` | control: `0.07, 0.11, 0.25, 0.36` at `0.66, 0.68, 0.70, 0.72` on `24³`; refuter: `0.12` at `0.66`, `0.29` at `0.70` |
++| the healing bound (T2) | the eroder bound and the exact region count on random islands; the polynomial inequality | the noisy automaton at `ε = 10^{−3}` from triangular islands of side `1`–`4` on a `64²` plane, `400` trials each: survival = a one in the forward cone at level `D + 1` | survival `0.003, 0.055, 0.098, 0.198` against the bound `18(D+1)³ε = 0.018, 0.49, 2.25, 6.2` (the bound is loose by a factor `6`–`30`, as a union bound over the region is) |
++| T1's brackets | exact rationals at `37/10`, `19/5`, `285717`, `285718` | the floating-point scan of `c(p)` at `p = 2, 3, 3.5, 4, …` (exploration) | `3c = 0.926` at `3.5`, `1.056` at `4`, consistent with the exact bracket |
++
++Findings: none against the theorems. Two observations folded: the first region count used a crude box (`16(D+1)³`, unproved) and was replaced by the exact region with the proof's box (`18(D+1)³`); at strong preference from a random start the static six-axis chain can freeze into two domains (`p = 8` on `16³`: majority `0.50`), a known artifact of local dynamics, which is why the aligned start is the map's reference and why the brackets are read where both starts agree.
++
++Attempts to refute (nothing refuted): whether the formation law's memory at `p = 11` is a finite-size plateau (the `256²` plane agrees with `128²`; the random start orders at the same strength); whether the static strength depends on the algorithm (heat bath and single-site proposals agree); whether the sphere bracket is an artifact of the aligned start (the random start agrees); whether an island can survive the noiseless rule past `D + 1` (none of `300` random islands does; two are alive at level `D`). Verdict of this pass: PASS-NO-BLOCKER at the supervisor's own standard for T1–T3; the map is evidence, not proof, and is labelled so; pending the owner's independent review.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block28.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block28.md
+new file mode 100644
+index 0000000000..bb508f195a
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block28.md
+@@ -0,0 +1,15 @@
++# Claim status certificate — block 28 (close, 2026-09-16)
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: frontier_discovery
++reachability_to_target: supports
++conditional_surface_status: "T1-T3 proved as stated: block 08's criterion at (p, 1, 2) holds at 37/10 and fails at 19/5, block 25's condition holds from 285718 (exact rationals); the healing bound P(an island with D survives to level D + 1 in its forward cone) <= 18 (D+1)^3 epsilon for the noisy majority automaton (the eroder bound re-proved, the region counted); the influence bound 2 (sqrt3 beta)^t p_t(x - x_0) for the sphere formation law. Executed, not proved: the map — six-axis static keeps a majority from p in (3.6, 3.7), six-axis formation keeps its plane from p in (10.5, 11) at (p, 1, 2), sphere static keeps a magnetization from beta in (0.66, 0.72), sphere formation never (block 26); brackets on finite planes and lattices. Conditional on the records-only reading, positivity, the menus and the monotone level order as supplied conditions; two standard mathematical imports named at definition level"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++claim_type_reason: "exact rational evaluations; a coordinate-maximum argument; a coupling on a noise-free region with a box count; a linear recursion solved exactly; the located strengths are simulation brackets labelled as such"
++dependency_classes: "one premise node (minimal_axioms); block 01 (on main; proposed, unaudited); blocks 08, 12, 25, 27 (open PRs) re-computed or re-proved where used; blocks 03, 17, 19, 21, 22, 26 (open PRs) as evidence addresses for the other proved regions and the sphere formation runs"
++open_imports: "the records-only reading; positivity; the six-axis and sphere menus; the monotone level order; the two standard mathematical imports"
++review_loop_disposition: pending (supervisor-run block; author checks only)
++independence_class: "single seat (Fable, supervisor): controls (exact brackets, eroder and region counts, the scans), contract with a lens pass, primary, refuting pass by a random start, a different chain, a random-start sphere run and a direct test of the healing bound, fold (the crude region count replaced by the exact one; the frozen-domain artifact noted)"
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block28.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block28.md
+new file mode 100644
+index 0000000000..90d0882134
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block28.md
+@@ -0,0 +1,15 @@
++# GOAL — block 28: the map of memory — where each of the four laws keeps its plane, located numerically against the proved regions, with the healing bound and the influence bound as exact corollaries (2026-09-16)
++
++**Directive.** Owner 2026-09-16: keep running the campaign twelve more hours. After blocks 25–27 the campaign holds proved regions for all four laws (static/formation × six-axis/sphere) but no location of the actual transitions: six-axis static orders for `p ≥ 216 m` (block 17) and is unique for small `p` (block 03); six-axis formation orders for `p ≥ 285718` at `(p, 1, 2)` (block 25) and is unique for `3c < 1`, i.e. `p ≤ 3.7` at `(p, 1, 2)` (block 08); sphere static orders for `β > 76/100` (blocks 19, 22) and is unique for `β < √3/6` (block 21); sphere formation is unique for `β < 1/√3` (block 27) and loses its plane at every `β` tried (block 26). The decision record needs the actual numbers: which reading keeps memory at what strength of preference.
++
++**Exact target (claim type `bounded_theorem`; trace class `frontier_discovery` for the map).**
++- T1 (block 08's criterion at `(p, 1, 2)`, exact): the total-variation sensitivity `c(p)` of the six-axis conditional to one predecessor satisfies `3c < 1` at `p = 37/10` and `3c > 1` at `p = 38/10` (exact rationals), so block 08's uniqueness region on this line ends between; block 25's condition `ε ≤ 7/10⁶` begins at `p = 285718`.
++- T2 (healing): for the noisy majority automaton at noise `ε`, an island of ones at level `0` with coordinate maxima `M_i`, `D = M_1 + M_2 + M_3`, has died by level `D + 1` unless a noise site lies in a space-time region of at most `16(D + 1)³` sites; so `P(the island survives) ≤ 16(D + 1)³ ε`. (Block 12's eroder bound re-proved in two lines; the coupling of the noisy and noiseless evolutions on the noise-free region.)
++- T3 (influence): for the sphere formation law, the influence of one initial record at `x_0` on the record at `x` of level `t` (the per-site coupled distance when the two initial planes differ at `x_0` only) is at most `2(√3β)^t p_t(x − x_0)`, `p_t` the level walk's law; it is confined to the forward cone and, for `β < 1/√3`, decays exponentially in `t` on top of the directed heat kernel.
++- Executed (the map, not proved): the six-axis formation law at `(p, 1, 2)` scanned in `p` on `128²` and `256²` planes (memory of the aligned plane over `4000`–`8000` levels): the strength above which the plane is kept; the six-axis static law on `16³` and `24³` by heat-bath sweeps from aligned and random starts: the strength above which a majority value persists; the sphere static law on `16³`, `24³`: `|m|` against `β`, against `76/100` and `√3/6`; the sphere formation law: block 26. The map placed against the proved regions.
++
++**Falsifiers.** `3c(37/10) ≥ 1` or `3c(38/10) ≤ 1`; an island surviving the noiseless rule beyond `D + 1`; a region count above `16(D+1)³`; an influence exceeding `2(√3β)^t p_t`; for the map: a plane kept below the located strength on a larger plane or longer run, or lost above it.
++
++**Lens pass.** *"Numerics again."* The theorems are small and exact; the map is what the decision record lacks and it is labelled executed. *"Finite-size effects and first-order hysteresis for the static six-axis law."* Two sizes and two starts are run; the located strengths are brackets, not digits. *"The static sphere law is the classical Heisenberg model."* Yes; its transition is known in the literature; here it is re-measured and named as reference only. *"Names."* Only in the allowed sections.
++
++**Forbidden phrases:** the standing list plus "has no ordered phase", "does not order", "converge", "critical", "certified", "phase transition".
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+index 6dfc9de138..44c009a772 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+@@ -25,3 +25,9 @@ Stacked on #8000 → #7999 → #7998 → main; all hand-offs. Block 04 = the two
+ Stacked on #8002 → #8000 → #7999 → #7998 → main; all hand-offs. Block 05 = the monotone-order class: one formation law for every linear extension of the product order (every rule); rows and columns path chains; the 2×2 corner law with corner independence; no right/down turning staircase is first-order Markov in its site values (proved for every nonconstant positive orbit triple under the declared product-rule monotone law); opposite corner classes give the same finite-rectangle law, with two distinct laws only at the executed 2×3 triples; the snake keeps rows and can lose column chains (column 0 survives on 3×3; on the executed 4×3 no column is a chain). Lens before the primary caught the supervisor's own wrong snake control. Historical checker: FIX FIRST on one forbidden mechanism sentence (false; deleted), nothing refuted in the theorems. Lock released.
+ 
+ Current source review found five further P2 groups, corrected in the canonical note and runner with their disposition in REVIEW_HISTORY.md. Same-session confirmation is pending; this appendix records an open review handoff.
++
++## 2026-09-16 block 28 opened for review (supervisor; twelve-hour continuation)
++Independent PR against `main` (`6dda46fc1a`); parent on `main`: block 01. Block 28 = the map of memory: the strengths at which the four laws keep their planes located by simulation and placed against the proved regions — six-axis static keeps a majority from `p ∈ (3.6, 3.7)` at `(p, 1, 2)` (proved regions: forgets at `(3, 1, 2)`, block 03; keeps for `p ≥ 432`, block 17); six-axis formation keeps its plane from `p ∈ (10.5, 11)` (forgets for `p ≤ 3.7`, block 08; keeps for `p ≥ 285718`, block 25); sphere static keeps a magnetization from `β ∈ (0.66, 0.72)` (forgets for `β < 0.289`, block 21; keeps for `β > 0.76`, block 22); sphere formation never (block 26; forgets for `β < 0.577`, block 27). The static reading keeps memory at about a third of the preference the formation reading needs on the six-axis menu. Exact core: T1 the brackets of blocks 08 and 25 at `(p, 1, 2)`; T2 the healing bound `18(D+1)³ε` (block 12's eroder re-proved, a coupling, a box count); T3 the influence bound `2(√3β)^t p_t`. Runner 14 checks, 8 mutations in-family, exact. Refuting pass: random starts, a different chain, a direct test of the healing bound — consistent; the crude region count replaced by the exact one. Gates: pipeline ×2, changed-evidence, `audit_lint --strict`, `git diff --check`, vocabulary lint clean. Next: the queue refresh at block 28 opening.
++
++## 2026-09-16 block 28 opened for review as PR #8172 (supervisor)
++PR #8172 (base `main`, independent). Records: `RESULTS_block28.md`, `CHECKER_block28_findings.md`, `CLAIM_STATUS_CERTIFICATE_block28.md`, `GOAL_block28.md`; specs with outputs. The twelve-hour continuation proceeds to the queue refresh at block 28 opening.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+index 74d2f60bae..da597e8270 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+@@ -78,3 +78,12 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
+ 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
+ 4. **The silent triples by a non-criterion route** (unchanged; heavy).
+ 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
++
++## Refresh at block 28 opening (2026-09-16)
++
++Block 28 opened for review (independent PR against main): the map of memory located — six-axis static `p ∈ (3.6, 3.7)`, six-axis formation `p ∈ (10.5, 11)` at `(p, 1, 2)`, sphere static `β ∈ (0.66, 0.72)`, sphere formation never — against proved regions two to four orders of magnitude away on the six-axis menu. Ranked next:
++
++1. **The six-axis order threshold sharpened toward the located strength** — block 25's count is at its own edge (`7·10^{−6}` against a located `ε ≈ 0.07` at `p = 11`); the remaining route is a renormalized contour argument (pairs of noise events or blocks as the effective noise), whose domination lemma is the obstacle — hard.
++2. **A proof of the loss of memory at strong coupling for the sphere formation law** — hard (block 26's N1).
++3. **The six-axis memory time on a torus** — medium-hard (needs a disjoint-trees step).
++4. **The band, the normalization, X4** — hard; unchanged.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block28.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block28.md
+new file mode 100644
+index 0000000000..94bec53371
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block28.md
+@@ -0,0 +1,17 @@
++# RESULTS — block 28: the map of memory — where each of the four laws keeps its plane, located against the proved regions, with the healing and influence bounds (2026-09-16)
++
++**Deliverables (branch `physics-loop/admissibility-induced-law-block28-map-of-memory-four-laws-located-healing-influence-20260916`, independent PR against `main` at `6dda46fc1a`; parent on `main`: block 01):** the note `docs/ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md`; the runner `scripts/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16.py` (14 checks, 8 mutations, exact, seven seconds); the pinned cache; the controls (`specs/supervisor_control_block28_exact.py`, `..._scan_formation_sixaxis.py`, `..._scan_static_sixaxis.py`, `..._scan_static_sphere.py`) and the refuting pass (`specs/supervisor_control_block28_refuter.py`) with outputs; `GOAL_block28.md`; `CHECKER_block28_findings.md`; this record. Blocks 06–27 remain open as PRs #8034, #8035, #8138–#8142, #8146–#8158, #8168, #8170, #8171.
++
++**Why this block.** The twelve-hour continuation after blocks 26–27: the campaign held proved regions for all four laws (weak-preference forgetting: 03, 08, 21, 27; strong-preference memory: 17, 22, 25; the sphere formation runs: 26) but no located strengths. The decision record needs the numbers: which reading and which menu keep memory at what strength.
++
++## Result, in one paragraph
++Exact: at `(p, 1, 2)` block 08's criterion `3c < 1` holds at `p = 37/10` and fails at `19/5`, and block 25's condition holds from `p = 285718` (T1); for the noisy majority automaton an island with `D = M_1 + M_2 + M_3` is empty at level `D + 1` under the noiseless rule and, with noise `ε`, has a one in its forward cone at level `D + 1` with probability at most `18(D + 1)³ ε` — the healing bound (T2; block 12's eroder re-proved, a coupling on the noise-free region, the region counted: at most `(D+1)(6D+5)(6D+4)/2`); under the sphere formation law one changed initial record influences the record at level `t` and displacement `y` by at most `2(√3β)^t p_t(y)` (T3). Executed, not proved: the six-axis formation law at `(p, 1, 2)` keeps its aligned plane from a strength between `10.5` and `11` (`128²` and `256²` planes, `4000`–`8000` levels; from a random start the majority grows from `p ≈ 11`); the six-axis static law keeps a majority value from a strength between `3.6` and `3.7` (`16³`, `24³`, `32³`, aligned and random starts, heat bath and single-site proposals); the sphere static law keeps a magnetization from `β` between `0.66` and `0.72` (`16³`, `24³`, both starts; the literature's `0.693` inside); the sphere formation law never (block 26). Against the proved regions: block 17's `432` is a hundred times the static strength, block 25's `285718` twenty-five thousand times the formation strength, block 22's `0.76` within a tenth of the sphere's; block 08's `3.7` sits, by coincidence of this line, where the static law's strength lies. **The static reading keeps memory at about a third of the preference the formation reading needs on the six-axis menu; on the sphere menu only the static reading keeps it.**
++
++## Certificate
++- Runner: `TOTAL: PASS=14 FAIL=0`; 8 mutations each in its family; no floating-point literal or conversion; authors' names only in the allowed sections.
++- Control: the exact brackets; the eroder bound and the exact region count (largest ratio `4.04(D+1)³` against the proved `18`) on random islands; the influence recursion; the scans on two plane sizes and three lattice sizes with fine scans around the changes.
++- Refuting pass (`CHECKER_block28_findings.md`): the formation law from a random start (spontaneous majority `0.18, 0.22, 0.39, 0.37, 0.69` at `p = 10, 11, 12, 13, 15`); the static six-axis law by single-site proposals (`0.22` at `3.6`, `0.78` at `3.8`); the sphere law from a random start (`0.12` at `0.66`, `0.29` at `0.70`); the healing bound tested on triangular islands at `ε = 10^{−3}` (survival `0.003, 0.055, 0.098, 0.198` for `D = 0, 2, 4, 6` against `0.018, 0.49, 2.25, 6.2`).
++- Claim type `bounded_theorem` (T1–T3); trace class `frontier_discovery` (the map); status `bounded-support`; audit required.
++
++## Not claimed
++The located strengths as theorems (brackets on finite planes and lattices); the order of the static six-axis change; strengths on other lines of weights; any reading, menu, rule or coupling as physical.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+index 08d17f0940..5de1f2362d 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+@@ -199,3 +199,16 @@ executed against the four declared inputs on current main. The original
+ 23-mutation census and historical pipeline receipts are not claimed as
+ fresh checks. Original-reviewer confirmation is pending; no audit status is
+ applied, and only the coordinator may perform authorized integration.
++
++## block 28 — V1-V5 (supervisor, 2026-09-16)
++- V1: the campaign's decision record lacked the located strengths at which the four laws keep memory; the proved regions (03, 08, 17, 21, 22, 25, 27) and block 26's runs framed the question.
++- V2: the lens pass in `GOAL_block28.md` ("numerics again" — labelled executed with brackets; the theorems small and exact; "finite size and hysteresis" — two plane sizes, three lattice sizes, two starts, two algorithms; "the sphere static law is the classical Heisenberg model" — named as reference only; names in the allowed sections).
++- V3: T1–T3 proved; the skeleton executed exactly (14 checks, 8 mutations); the refuting pass agreed on five routes; the crude region count replaced by the exact one before the note was finished.
++- V4: no reading, menu, rule or coupling selected; the strengths are brackets; the order of the static change not claimed.
++- V5: consumers named — the campaign's decision record (the map); #8093's assembly; the queue.
++
++## block 28 — supervisor controls, primary, refuting pass and fold (2026-09-16)
++Controls: the scans (`128²`/`256²` planes for the formation law, `16³`/`24³`/`32³` lattices for the static laws, fine scans around the changes); the exact control (block 08's bracket at `37/10` and `19/5`; the eroder bound on `300` random islands; the exact region count, largest ratio `4.04(D+1)³`; the influence recursion). Primary: the note and the runner (14 checks, 8 mutations). Refuting pass (`CHECKER_block28_findings.md`): the formation law from a random start, the static six-axis law by single-site proposals, the sphere law from a random start, the healing bound tested at `ε = 10^{−3}` — no findings against the theorems; two observations folded (the crude region count; the frozen-domain artifact at strong preference from a random start). Author checks only; independent review pending.
++
++## block 28 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-16)
++1 self-containment: PASS — inputs: this note, the axioms memo, block 01's note, all on `main` at `6dda46fc1a`; the menus, readings and the level automaton declared in the note; the proved regions re-computed where a number is used (T1) and otherwise evidence addresses. 2 cache/execution: PASS. 3 claim-scope honesty: PASS — the strengths marked executed brackets; the theorems as stated; the literature value named as reference only. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+index e166420207..4e45eff3b3 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+@@ -105,3 +105,13 @@ source_review_correction:
+ # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
+ # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
+ # audit_status: "unset; no audit invoked or verdict applied by this source correction"
++# ---------------------------------------------------------------- block 28 close (2026-09-16)
++# block: 28
++# branch: physics-loop/admissibility-induced-law-block28-map-of-memory-four-laws-located-healing-influence-20260916 (independent; base origin/main 6dda46fc1a; blocks 06-27 are open PRs #8034, #8035, #8138-#8142, #8146-#8158, #8168, #8170, #8171)
++# pr_status: opened for review — PR #8172 (base = main; https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8172); hand-off; never merged by the campaign; not a main landing
++# final_certificate: "TOTAL: PASS=14 FAIL=0; 8 mutations, census 8/8 in-family; refuting pass consistent on five routes; gates: see HANDOFF.md"
++# seats: "supervisor-run: scans (two plane sizes, three lattice sizes, two starts) -> exact control -> contract with a lens pass -> primary (T1-T3, runner) -> refuting pass (random starts; a different chain; the healing bound tested) -> fold (the crude region count replaced; the frozen-domain artifact noted)"
++# review_findings: "the map: six-axis static p in (3.6, 3.7), six-axis formation p in (10.5, 11) at (p,1,2), sphere static beta in (0.66, 0.72), sphere formation never; proved regions 10^2-10^4 away on the six-axis menu; T1 brackets exact; T2 healing bound 18(D+1)^3 eps; T3 influence bound 2(sqrt3 beta)^t p_t"
++# strongest_unresolved_proof_obligation: "the located strengths as theorems (the proved regions are two to four orders of magnitude away on the six-axis menu); a proof of the sphere formation law's loss of memory at strong coupling"
++# next_exact_action: "queue refresh 2026-09-16 (block 28 opening): the six-axis order threshold sharpened toward the located strengths (a pair-noise or block renormalization of block 25's count); a proof at strong coupling for the sphere formation law; the six-axis memory time on a torus; the band; normalization; X4"
++# lock: held (owner: keep running the campaign for 12 more hours from 2026-09-16 ~09:50)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+index 8f432e2cd2..e0b88a0cc1 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+@@ -63,3 +63,14 @@ reachability_to_target: supports
+ artifact_role: theorem
+ next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
+ ```
++
++# Trace gate — block 28, at PR opening (2026-09-16)
++```yaml
++trace_class: frontier_discovery
++target_claim_id: null
++target_blocker_text: "the campaign's decision record: which reading and which menu keep memory at what strength of preference"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem_plus_decisive_artifact
++next_trace_action: "the map located (six-axis static (3.6, 3.7), six-axis formation (10.5, 11) at (p,1,2); sphere static (0.66, 0.72); sphere formation never) with T1-T3 exact. Next: the six-axis order threshold toward the located strength; a proof at strong coupling for the sphere formation law. Consumers: the campaign's decision record; #8093's assembly"
++```
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_exact.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_exact.out.txt
+new file mode 100644
+index 0000000000..82cb36c9ec
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_exact.out.txt
+@@ -0,0 +1,5 @@
++(1) p = 37/10: c = 135654210/413162167 = 0.32833; 3c = 0.98499 (< 1)
++(1) p = 19/5: c = 290605/862244 = 0.33703; 3c = 1.01110 (> 1)
++(2) 300 random islands: all dead within D + 1 levels (D = M1 + M2 + M3): True
++(2) exact count of the noise-sensitive region U <= 18 (D+1)^3 on 200 random islands: True; worst |U|/(D+1)^3 = 4.043
++(3) the influence recursion gives exactly 2 (3 g)^t p_t for t <= 5 (g = beta/sqrt3): True
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_exact.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_exact.py
+new file mode 100644
+index 0000000000..841cfedbb1
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_exact.py
+@@ -0,0 +1,70 @@
++"""Control (exact parts) for block 28: (1) block 08's criterion at (p,1,2): c(p) exactly at rational p; (2) block 12's eroder bound
++on random islands (noiseless rule), and the exact region count against 18(D+1)^3; (3) the influence recursion identity."""
++from fractions import Fraction as F
++from itertools import product
++import random
++def cond(p, q, r, a, b, c):
++    phi = [[r]*6 for _ in range(6)]
++    for v in range(6): phi[v][v] = p; phi[v][v ^ 1] = q
++    w = [phi[v][a]*phi[v][b]*phi[v][c] for v in range(6)]; Z = sum(w); return [x / Z for x in w]
++def c_of(p):
++    worst = F(0)
++    for a, b, c in product(range(6), repeat=3):
++        k1 = cond(p, F(1), F(2), a, b, c)
++        for a2 in range(6):
++            if a2 == a: continue
++            k2 = cond(p, F(1), F(2), a2, b, c)
++            worst = max(worst, sum(abs(x - y) for x, y in zip(k1, k2)) / 2)
++    return worst
++for p in (F(37, 10), F(38, 10)):
++    c = c_of(p); print(f"(1) p = {p}: c = {c} = {float(c):.5f}; 3c = {float(3*c):.5f} ({'<' if 3*c < 1 else '>'} 1)")
++# (2) eroder bound: noiseless majority from an island at level 0; coordinates x with x1+x2+x3 = 0 represented by (x1, x2)
++random.seed(4); ok = True; worst_ratio = 0
++def step(ones):
++    # ones: set of (x1, x2) at level t; level t+1 sites y = x + e_j have preds y - e_1, y - e_2, y - e_3
++    cand = set()
++    for (a, b) in ones:
++        cand |= {(a+1, b), (a, b+1), (a, b)}   # y = x + e1 -> (a+1, b); x + e2 -> (a, b+1); x + e3 -> (a, b) [x3 absorbs]
++    new = set()
++    for (a, b) in cand:
++        preds = [(a-1, b), (a, b-1), (a, b)]   # y - e1, y - e2, y - e3 in (x1, x2) coordinates
++        if sum(1 for q in preds if q in ones) >= 2: new.add((a, b))
++    return new
++for trial in range(300):
++    n = random.randint(1, 12); ones = {(random.randint(-4, 4), random.randint(-4, 4)) for _ in range(n)}
++    M1 = max(a for a, b in ones); M2 = max(b for a, b in ones); M3 = max(-a-b for a, b in ones); D = M1 + M2 + M3
++    cur = ones; t = 0
++    while cur and t <= D + 2:
++        cur = step(cur); t += 1
++    ok = ok and (not cur) and t <= D + 1
++print(f"(2) 300 random islands: all dead within D + 1 levels (D = M1 + M2 + M3): {ok}")
++# region count, exact: U = {y : 1 <= tau(y) <= D+1, exists island site i with tau(max(i, y)) <= D+1}; bound 18 (D+1)^3
++def region_size(island3):
++    M = [max(i[j] for i in island3) for j in range(3)]; D = sum(M); B = 2*D + 1; cnt = 0
++    for y1 in range(-3*B - 3, B + 1):
++        for y2 in range(-3*B - 3, B + 1):
++            for s in range(1, D + 2):
++                y = (y1, y2, s - y1 - y2)
++                if y[2] > B: continue
++                if any(sum(max(i[j], y[j]) for j in range(3)) <= D + 1 for i in island3): cnt += 1
++    return cnt, D
++ok3 = True; worst = 0
++for trial in range(200):
++    n = random.randint(1, 10); ones = {(random.randint(-4, 4), random.randint(-4, 4)) for _ in range(n)}
++    cnt, D = region_size([(a, b, -a-b) for a, b in ones]); ok3 = ok3 and cnt <= 18 * (D + 1) ** 3; worst = max(worst, cnt / (D + 1) ** 3)
++print(f"(2) exact count of the noise-sensitive region U <= 18 (D+1)^3 on 200 random islands: {ok3}; worst |U|/(D+1)^3 = {worst:.3f}")
++# (3) influence identity: D_{t+1}(x) = (beta/sqrt3) sum_j D_t(x - e_j) from D_0 = 2 delta gives 2 (beta/sqrt3)^t 3^t p_t(x - x0) = 2 (sqrt3 beta)^t p_t
++from math import factorial
++def p_t(t, a, b):
++    c = t - a - b
++    return F(factorial(t), factorial(a)*factorial(b)*factorial(c)) / 3**t if min(a, b, c) >= 0 else F(0)
++g = F(1, 5)   # stands for beta/sqrt3 as a rational placeholder
++Dt = {(0, 0): F(2)}; okk = True
++for t in range(1, 6):
++    new = {}
++    for (a, b), v in Dt.items():
++        for da, db in ((1, 0), (0, 1), (0, 0)):
++            new[(a+da, b+db)] = new.get((a+da, b+db), F(0)) + g * v
++    Dt = new
++    okk = okk and all(v == 2 * (3*g)**t * p_t(t, a, b) for (a, b), v in Dt.items())
++print(f"(3) the influence recursion gives exactly 2 (3 g)^t p_t for t <= 5 (g = beta/sqrt3): {okk}")
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_refuter.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_refuter.out.txt
+new file mode 100644
+index 0000000000..4785cb7bd1
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_refuter.out.txt
+@@ -0,0 +1,24 @@
++(a) six-axis formation law at (p,1,2), L=128, T=4000, random start: fraction of the majority value over the last half
++  p=   9: majority fraction 0.1761   (4s)
++  p=  10: majority fraction 0.1827   (3s)
++  p=  11: majority fraction 0.2207   (3s)
++  p=  12: majority fraction 0.3887   (4s)
++  p=  13: majority fraction 0.3674   (3s)
++  p=  15: majority fraction 0.6861   (3s)
++(b) six-axis static law at (p,1,2), L=16, Metropolis single-site proposals (2000 sweeps), aligned start: fraction of the majority value over the last half
++  p= 3.4: order 0.1943   (1s)
++  p= 3.6: order 0.2239   (1s)
++  p= 3.8: order 0.7839   (1s)
++  p= 4.0: order 0.8777   (1s)
++  p= 4.5: order 0.9550   (1s)
++(c) sphere static law, L=16, heat bath, RANDOM start (1500 sweeps): |m| over the last half
++  beta=0.60: |m| = 0.0559   (1s)
++  beta=0.66: |m| = 0.1239   (1s)
++  beta=0.70: |m| = 0.2936   (2s)
++  beta=0.74: |m| = 0.4356   (1s)
++  beta=0.80: |m| = 0.5358   (2s)
++(d) healing: the noisy majority automaton at eps = 10^-3 from an island (a filled triangle of side k at level 0) on a 64x64 plane; survival = a one in the island's forward cone at level D+1; 400 trials each
++  triangle side 1 (D = 0): survival frequency 0.003 against the bound 18 (D+1)^3 eps = 0.018
++  triangle side 2 (D = 2): survival frequency 0.055 against the bound 18 (D+1)^3 eps = 0.486
++  triangle side 3 (D = 4): survival frequency 0.098 against the bound 18 (D+1)^3 eps = 2.250
++  triangle side 4 (D = 6): survival frequency 0.198 against the bound 18 (D+1)^3 eps = 6.174
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_refuter.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_refuter.py
+new file mode 100644
+index 0000000000..be8a580c8a
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_refuter.py
+@@ -0,0 +1,71 @@
++"""Refuting pass, block 28 (independent machinery): (a) the six-axis formation law at (p,1,2) from a RANDOM start (spontaneous order:
++fraction of the majority value), a different observable and start from the control's aligned-start memory; (b) the six-axis static law by
++single-site Metropolis (a different algorithm from the control's heat-bath), from an aligned start; (c) the sphere static law from a
++random start with the heat bath; (d) the healing bound tested directly: islands of size D in the noisy automaton at eps = 10^-3, the
++survival frequency against 18 (D+1)^3 eps."""
++import numpy as np, sys, time
++rng = np.random.default_rng(31)
++def phi_of(p, q=1.0, r=2.0):
++    phi = np.full((6, 6), r)
++    for v in range(6): phi[v, v] = p; phi[v, v ^ 1] = q
++    return phi
++print("(a) six-axis formation law at (p,1,2), L=128, T=4000, random start: fraction of the majority value over the last half")
++for p in (9, 10, 11, 12, 13, 15):
++    phi = phi_of(p); L, T = 128, 4000; s = rng.integers(0, 6, (L, L)); fr = []; t0 = time.time()
++    for t in range(1, T + 1):
++        W = phi[:, s] * phi[:, np.roll(s, 1, 0)] * phi[:, np.roll(s, 1, 1)]
++        C = np.cumsum(W / W.sum(0, keepdims=True), axis=0); s = np.minimum((rng.random((L, L))[None] > C).sum(0), 5)
++        if t > T // 2: fr.append(np.bincount(s.ravel(), minlength=6).max() / L**2)
++    print(f"  p={p:4d}: majority fraction {np.mean(fr):.4f}   ({time.time()-t0:.0f}s)")
++print("(b) six-axis static law at (p,1,2), L=16, Metropolis single-site proposals (2000 sweeps), aligned start: fraction of the majority value over the last half")
++for p in (3.4, 3.6, 3.8, 4.0, 4.5):
++    phi = phi_of(p); L = 16; s = np.zeros((L, L, L), dtype=np.int64); logphi = np.log(phi); ords = []; t0 = time.time()
++    idx = np.indices((L, L, L)).sum(0) % 2
++    for sw in range(2000):
++        for par in (0, 1):
++            prop = rng.integers(0, 6, (L, L, L))
++            dE = np.zeros((L, L, L))
++            for ax in range(3):
++                for sh in (1, -1):
++                    nb = np.roll(s, sh, ax); dE += logphi[prop, nb] - logphi[s, nb]
++            acc = (rng.random((L, L, L)) < np.exp(np.minimum(0, dE))) & (idx == par)
++            s = np.where(acc, prop, s)
++        if sw >= 1000: ords.append(np.bincount(s.ravel(), minlength=6).max() / L**3)
++    print(f"  p={p:4.1f}: order {np.mean(ords):.4f}   ({time.time()-t0:.0f}s)")
++print("(c) sphere static law, L=16, heat bath, RANDOM start (1500 sweeps): |m| over the last half")
++def vmf(V):
++    n = np.linalg.norm(V, axis=-1); kap = np.maximum(n, 1e-12); u = V / kap[..., None]
++    U = rng.random(n.shape); w = np.clip(1 + np.log(U + (1 - U) * np.exp(-2 * kap)) / kap, -1, 1); ph = 2 * np.pi * rng.random(n.shape)
++    a = np.where((np.abs(u[..., 0]) < 0.9)[..., None], np.array([1.0, 0, 0]), np.array([0, 1.0, 0]))
++    e1 = a - (a * u).sum(-1)[..., None] * u; e1 /= np.linalg.norm(e1, axis=-1)[..., None]; e2 = np.cross(u, e1)
++    rr = np.sqrt(np.clip(1 - w * w, 0, 1)); s = w[..., None] * u + rr[..., None] * (np.cos(ph)[..., None] * e1 + np.sin(ph)[..., None] * e2)
++    zero = n <= 1e-12
++    if zero.any():
++        g = rng.normal(size=s[zero].shape); s[zero] = g / np.linalg.norm(g, axis=-1)[..., None]
++    return s
++L = 16; idx = np.indices((L, L, L)).sum(0) % 2
++for beta in (0.6, 0.66, 0.7, 0.74, 0.8):
++    g = rng.normal(size=(L, L, L, 3)); s = g / np.linalg.norm(g, axis=-1)[..., None]; ms = []; t0 = time.time()
++    for sw in range(1500):
++        for par in (0, 1):
++            V = sum(np.roll(s, sh, ax) for ax in range(3) for sh in (1, -1))
++            s = np.where((idx == par)[..., None], vmf(beta * V), s)
++        if sw >= 750: ms.append(np.linalg.norm(s.mean((0, 1, 2))))
++    print(f"  beta={beta:4.2f}: |m| = {np.mean(ms):.4f}   ({time.time()-t0:.0f}s)")
++print("(d) healing: the noisy majority automaton at eps = 10^-3 from an island (a filled triangle of side k at level 0) on a 64x64 plane; survival = a one in the island's forward cone at level D+1; 400 trials each")
++def run_island(k, eps, trials):
++    L = 64; surv = 0
++    for tr in range(trials):
++        eta = np.zeros((L, L), dtype=np.int64)
++        pts = [(a, b) for a in range(k) for b in range(k) if a + b < k]   # triangle in (x1, x2) with x3 = -(x1+x2)
++        for a, b in pts: eta[(20 + a) % L, (20 + b) % L] = 1
++        M1 = max(a for a, b in pts); M2 = max(b for a, b in pts); M3 = max(-a - b for a, b in pts); D = M1 + M2 + M3
++        for t in range(1, D + 2):
++            maj = ((eta + np.roll(eta, 1, 0) + np.roll(eta, 1, 1)) >= 2).astype(np.int64)
++            eta = np.maximum(maj, (rng.random((L, L)) < eps).astype(np.int64))
++        # forward cone of the island at level D+1 in plane coordinates: x1 >= 20, x2 >= 20 (the x3-shift is absorbed), within reach
++        cone = eta[20:20 + k + D + 2, 20:20 + k + D + 2]
++        surv += int(cone.any())
++    return surv / trials, D
++for k in (1, 2, 3, 4):
++    f, D = run_island(k, 1e-3, 400); print(f"  triangle side {k} (D = {D}): survival frequency {f:.3f} against the bound 18 (D+1)^3 eps = {18*(D+1)**3*1e-3:.3f}")
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_formation_sixaxis.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_formation_sixaxis.out.txt
+new file mode 100644
+index 0000000000..24388d6982
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_formation_sixaxis.out.txt
+@@ -0,0 +1,34 @@
++===== form_sixaxis_L128.txt =====
++six-axis formation law at (p,1,2), L=128, T=4000, aligned start; memory = fraction of the initial value at levels T/2..T (mean), and at T
++  p=   4.0: memory mean 0.1666  final 0.1677   (4s)
++  p=   6.0: memory mean 0.1662  final 0.1674   (3s)
++  p=   8.0: memory mean 0.1670  final 0.1617   (3s)
++  p=  10.0: memory mean 0.1660  final 0.1752   (4s)
++  p=  12.0: memory mean 0.9325  final 0.9348   (3s)
++  p=  15.0: memory mean 0.9792  final 0.9811   (3s)
++  p=  18.0: memory mean 0.9902  final 0.9918   (3s)
++  p=  22.0: memory mean 0.9953  final 0.9946   (3s)
++  p=  26.0: memory mean 0.9974  final 0.9978   (3s)
++  p=  30.0: memory mean 0.9984  final 0.9987   (4s)
++  p=  35.0: memory mean 0.9990  final 0.9990   (3s)
++  p=  40.0: memory mean 0.9994  final 0.9992   (3s)
++  p=  50.0: memory mean 0.9997  final 0.9995   (4s)
++  p=  60.0: memory mean 0.9998  final 0.9999   (3s)
++  p=  80.0: memory mean 0.9999  final 0.9999   (3s)
++===== form_sixaxis_L256.txt =====
++six-axis formation law at (p,1,2), L=256, T=8000, aligned start; memory = fraction of the initial value at levels T/2..T (mean), and at T
++  p=  15.0: memory mean 0.9793  final 0.9791   (29s)
++  p=  18.0: memory mean 0.9902  final 0.9907   (29s)
++  p=  22.0: memory mean 0.9954  final 0.9958   (30s)
++  p=  26.0: memory mean 0.9974  final 0.9979   (29s)
++  p=  30.0: memory mean 0.9984  final 0.9982   (31s)
++  p=  35.0: memory mean 0.9990  final 0.9992   (32s)
++===== form_sixaxis_L256_fine.txt =====
++six-axis formation law at (p,1,2), L=256, T=8000, aligned start; memory = fraction of the initial value at levels T/2..T (mean), and at T
++  p=   9.0: memory mean 0.1663  final 0.1628   (32s)
++  p=  10.0: memory mean 0.1670  final 0.1781   (32s)
++  p=  10.5: memory mean 0.1706  final 0.1633   (32s)
++  p=  11.0: memory mean 0.8443  final 0.8402   (30s)
++  p=  11.5: memory mean 0.9064  final 0.9041   (30s)
++  p=  12.0: memory mean 0.9324  final 0.9309   (30s)
++  p=  13.0: memory mean 0.9582  final 0.9589   (29s)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_formation_sixaxis.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_formation_sixaxis.py
+new file mode 100644
+index 0000000000..c7293f468d
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_formation_sixaxis.py
+@@ -0,0 +1,18 @@
++# Six-axis formation law (level automaton) at (p, q, r) = (p, 1, 2): memory of the aligned plane after T levels, scanning p.
++import numpy as np, sys, time
++L, T = int(sys.argv[1]), int(sys.argv[2]); ps = [float(x) for x in sys.argv[3:]]
++rng = np.random.default_rng(1)
++print(f"six-axis formation law at (p,1,2), L={L}, T={T}, aligned start; memory = fraction of the initial value at levels T/2..T (mean), and at T")
++for p in ps:
++    q, r = 1.0, 2.0
++    phi = np.full((6, 6), r)
++    for v in range(6):
++        phi[v, v] = p; phi[v, v ^ 1] = q
++    s = np.zeros((L, L), dtype=np.int64); fr = []
++    t0 = time.time()
++    for t in range(1, T + 1):
++        W = phi[:, s] * phi[:, np.roll(s, 1, 0)] * phi[:, np.roll(s, 1, 1)]
++        C = np.cumsum(W / W.sum(0, keepdims=True), axis=0)
++        s = np.minimum((rng.random((L, L))[None] > C).sum(0), 5)
++        if t > T // 2: fr.append(np.mean(s == 0))
++    print(f"  p={p:6.1f}: memory mean {np.mean(fr):.4f}  final {np.mean(s == 0):.4f}   ({time.time()-t0:.0f}s)")
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sixaxis.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sixaxis.out.txt
+new file mode 100644
+index 0000000000..bac7f37e8a
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sixaxis.out.txt
+@@ -0,0 +1,32 @@
++===== stat_sixaxis_L16.txt =====
++six-axis static law at (p,1,2), L=16, sweeps=1500; order = mean fraction of the majority value over the last half (aligned start | random start)
++  p= 1.50: order 0.1747 | 0.1749   (1s per start)
++  p= 2.00: order 0.1762 | 0.1764   (1s per start)
++  p= 2.50: order 0.1785 | 0.1785   (1s per start)
++  p= 3.00: order 0.1827 | 0.1825   (1s per start)
++  p= 3.50: order 0.1963 | 0.2016   (1s per start)
++  p= 4.00: order 0.8781 | 0.8775   (1s per start)
++  p= 5.00: order 0.9794 | 0.9793   (1s per start)
++  p= 6.00: order 0.9940 | 0.9939   (1s per start)
++  p= 8.00: order 0.9990 | 0.4991   (1s per start)
++===== stat_sixaxis_L24.txt =====
++six-axis static law at (p,1,2), L=24, sweeps=1500; order = mean fraction of the majority value over the last half (aligned start | random start)
++  p= 2.00: order 0.1720 | 0.1719   (3s per start)
++  p= 2.50: order 0.1733 | 0.1731   (3s per start)
++  p= 3.00: order 0.1754 | 0.1755   (3s per start)
++  p= 3.50: order 0.1842 | 0.1857   (3s per start)
++  p= 4.00: order 0.8774 | 0.8766   (3s per start)
++===== stat_sixaxis_L24_fine.txt =====
++six-axis static law at (p,1,2), L=24, sweeps=2000; order = mean fraction of the majority value over the last half (aligned start | random start)
++  p= 3.50: order 0.1821 | 0.1844   (4s per start)
++  p= 3.60: order 0.1908 | 0.1894   (4s per start)
++  p= 3.70: order 0.6717 | 0.6744   (4s per start)
++  p= 3.80: order 0.7837 | 0.7832   (4s per start)
++  p= 3.90: order 0.8407 | 0.8408   (4s per start)
++  p= 4.00: order 0.8772 | 0.8768   (4s per start)
++===== stat_sixaxis_L32_fine.txt =====
++six-axis static law at (p,1,2), L=32, sweeps=2000; order = mean fraction of the majority value over the last half (aligned start | random start)
++  p= 3.60: order 0.1836 | 0.1826   (13s per start)
++  p= 3.70: order 0.6764 | 0.6730   (12s per start)
++  p= 3.80: order 0.7833 | 0.7845   (13s per start)
++  p= 3.90: order 0.8401 | 0.8403   (16s per start)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sixaxis.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sixaxis.py
+new file mode 100644
+index 0000000000..3356d4221a
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sixaxis.py
+@@ -0,0 +1,29 @@
++# Six-axis static law on a periodic L^3 lattice at (p, q, r) = (p, 1, 2): heat-bath (Gibbs) checkerboard sweeps; the fraction of the
++# majority value after equilibration, from an aligned start and from a random start.
++import numpy as np, sys, time
++L, sweeps = int(sys.argv[1]), int(sys.argv[2]); ps = [float(x) for x in sys.argv[3:]]
++rng = np.random.default_rng(2)
++idx = np.indices((L, L, L)).sum(0) % 2
++print(f"six-axis static law at (p,1,2), L={L}, sweeps={sweeps}; order = mean fraction of the majority value over the last half (aligned start | random start)")
++for p in ps:
++    q, r = 1.0, 2.0
++    phi = np.full((6, 6), r)
++    for v in range(6):
++        phi[v, v] = p; phi[v, v ^ 1] = q
++    res = []
++    for start in ("aligned", "random"):
++        s = np.zeros((L, L, L), dtype=np.int64) if start == "aligned" else rng.integers(0, 6, (L, L, L))
++        ords = []; t0 = time.time()
++        for sw in range(sweeps):
++            for par in (0, 1):
++                W = np.ones((6, L, L, L))
++                for ax in range(3):
++                    for sh in (1, -1):
++                        W = W * phi[:, np.roll(s, sh, ax)]
++                C = np.cumsum(W / W.sum(0, keepdims=True), axis=0)
++                new = np.minimum((rng.random((L, L, L))[None] > C).sum(0), 5)
++                s = np.where(idx == par, new, s)
++            if sw >= sweeps // 2:
++                counts = np.bincount(s.ravel(), minlength=6); ords.append(counts.max() / L**3)
++        res.append(np.mean(ords))
++    print(f"  p={p:5.2f}: order {res[0]:.4f} | {res[1]:.4f}   ({time.time()-t0:.0f}s per start)")
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sphere.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sphere.out.txt
+new file mode 100644
+index 0000000000..19a5299c46
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sphere.out.txt
+@@ -0,0 +1,21 @@
++===== stat_sphere_L16.txt =====
++sphere static law, L=16, sweeps=1500; |m| over the last half, aligned start
++  beta=0.500: |m| = 0.0355   (1s)
++  beta=0.600: |m| = 0.0569   (1s)
++  beta=0.650: |m| = 0.0915   (1s)
++  beta=0.700: |m| = 0.3050   (1s)
++  beta=0.750: |m| = 0.4607   (1s)
++  beta=0.800: |m| = 0.5362   (1s)
++  beta=0.900: |m| = 0.6269   (1s)
++===== stat_sphere_L24.txt =====
++sphere static law, L=24, sweeps=1500; |m| over the last half, aligned start
++  beta=0.600: |m| = 0.0305   (4s)
++  beta=0.650: |m| = 0.0580   (4s)
++  beta=0.700: |m| = 0.2343   (4s)
++  beta=0.750: |m| = 0.4413   (4s)
++===== stat_sphere_L24_fine.txt =====
++sphere static law, L=24, sweeps=2000; |m| over the last half, aligned start
++  beta=0.660: |m| = 0.0676   (6s)
++  beta=0.680: |m| = 0.1144   (5s)
++  beta=0.700: |m| = 0.2534   (5s)
++  beta=0.720: |m| = 0.3607   (5s)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sphere.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sphere.py
+new file mode 100644
+index 0000000000..45845b8cb7
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sphere.py
+@@ -0,0 +1,30 @@
++# Sphere static law (weight e^{beta s.s'}) on a periodic L^3 lattice: heat-bath checkerboard sweeps with the exact conditional
++# (exponential-overlap law with concentration beta |sum of 6 neighbours|); |magnetization| over the last half, aligned start.
++import numpy as np, sys, time
++L, sweeps = int(sys.argv[1]), int(sys.argv[2]); betas = [float(x) for x in sys.argv[3:]]
++rng = np.random.default_rng(3)
++idx = np.indices((L, L, L)).sum(0) % 2
++def vmf(V):
++    n = np.linalg.norm(V, axis=-1); kap = np.maximum(n, 1e-12); u = V / kap[..., None]
++    U = rng.random(n.shape); w = np.clip(1 + np.log(U + (1 - U) * np.exp(-2 * kap)) / kap, -1, 1); ph = 2 * np.pi * rng.random(n.shape)
++    a = np.where((np.abs(u[..., 0]) < 0.9)[..., None], np.array([1.0, 0, 0]), np.array([0, 1.0, 0]))
++    e1 = a - (a * u).sum(-1)[..., None] * u; e1 /= np.linalg.norm(e1, axis=-1)[..., None]; e2 = np.cross(u, e1)
++    rr = np.sqrt(np.clip(1 - w * w, 0, 1))
++    s = w[..., None] * u + rr[..., None] * (np.cos(ph)[..., None] * e1 + np.sin(ph)[..., None] * e2)
++    zero = n <= 1e-12
++    if zero.any():
++        g = rng.normal(size=s[zero].shape); s[zero] = g / np.linalg.norm(g, axis=-1)[..., None]
++    return s
++print(f"sphere static law, L={L}, sweeps={sweeps}; |m| over the last half, aligned start")
++for beta in betas:
++    s = np.zeros((L, L, L, 3)); s[..., 2] = 1; ms = []; t0 = time.time()
++    for sw in range(sweeps):
++        for par in (0, 1):
++            V = np.zeros_like(s)
++            for ax in range(3):
++                for sh in (1, -1):
++                    V = V + np.roll(s, sh, ax)
++            new = vmf(beta * V)
++            s = np.where((idx == par)[..., None], new, s)
++        if sw >= sweeps // 2: ms.append(np.linalg.norm(s.mean((0, 1, 2))))
++    print(f"  beta={beta:5.3f}: |m| = {np.mean(ms):.4f}   ({time.time()-t0:.0f}s)")
+diff --git a/docs/ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md b/docs/ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md
+new file mode 100644
+index 0000000000..f2af9a93a1
+--- /dev/null
++++ b/docs/ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -0,0 +1,213 @@
++---
++claim_id: admissibility_rule_map_of_memory_where_each_of_the_four_laws_keeps_its_plane_located_against_the_proved_regions_with_the_healing_and_influence_bounds_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++claim_scope: "For the covariant product rule on the six-axis menu with weights (p, q, r) and on the unsoldered sphere menu with weight e^{beta s.s'}, under the static reading (the Gibbs law on Z^3) and the formation reading in level order (the level automaton on Z^2): (T1) at (p, 1, 2), block 08's uniqueness criterion 3c < 1 for the formation law holds at p = 37/10 and fails at p = 19/5 (c the exact total-variation sensitivity of the conditional to one predecessor), and block 25's ordering condition epsilon(p, 1, 2) <= 7/10^6 holds from p = 285718 (proved; exact rationals); (T2) for the noisy majority automaton at noise epsilon, an island of ones at level 0 with coordinate maxima M_i, D = M_1 + M_2 + M_3, is empty at level D + 1 under the noiseless rule, and under noise it has a one in its forward cone at level D + 1 only if a noise site lies in a region of at most 18 (D + 1)^3 sites, so the island survives with probability at most 18 (D + 1)^3 epsilon (proved; the eroder bound re-proved, the region counted exactly on random islands); (T3) for the sphere formation law, two initial planes differing at one site x_0 give coupled records at x of level t at expected chordal distance at most 2 (sqrt3 beta)^t p_t(x - x_0), p_t the level walk's law (proved). Executed, not proved (the map): on periodic planes and lattices, the six-axis formation law at (p, 1, 2) keeps its aligned plane from a strength between 10.5 and 11 (128^2 and 256^2 planes, 4000-8000 levels) against the proved region p >= 285718 and uniqueness for p <= 37/10; the six-axis static law keeps a majority value from a strength between 3.6 and 3.7 (16^3, 24^3, 32^3 lattices, aligned and random starts, heat bath and single-site proposals) against the proved region p >= 432 at (p, 1, 2) and uniqueness at (3, 1, 2); the sphere static law keeps a magnetization from beta between 0.66 and 0.72 (16^3, 24^3) against the proved region beta > 76/100 and uniqueness for beta < sqrt3/6; the sphere formation law loses its plane at every beta tried (block 26) against uniqueness for beta < 1/sqrt3 (block 27). The static reading keeps memory at about a third of the preference strength the formation reading needs on the six-axis menu. No menu, reading, order or coupling is selected as physical; exact arithmetic throughout the runner."
++upstream_dependencies:
++  - minimal_axioms
++  - admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06
++runner: scripts/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16.py
++---
++
++# The map of memory: where each of the four laws keeps its plane, located against the proved regions, with the healing and influence bounds
++
++**Date:** 2026-09-16
++**Type:** bounded_theorem (T1–T3); frontier discovery for the executed map
++**Status:** bounded-support (exact; conditional on the named supplied readings; the located strengths executed on finite planes and lattices, not proved; unaudited)
++
++## Result up front
++
++The campaign has, for each of its four laws — two menus (the six axes and the
++sphere) under two readings (static and formation) — a proved region of weak
++preference where every arrangement of records forgets where it started, and,
++for three of them, a proved region of strong preference where a plane of
++identical records is kept. The proved regions are far apart: on the six-axis
++menu at weights `(p, 1, 2)` the formation law is proved to forget for
++`p ≤ 3.7` (block 08) and to keep its plane for `p ≥ 285718` (block 25); the
++static law is proved to forget at `(3, 1, 2)` (block 03) and to keep a majority
++for `p ≥ 432` (block 17); the sphere static law forgets for `β < 0.289` (block
++21) and keeps a magnetization for `β > 0.76` (block 22); the sphere formation
++law forgets for `β < 0.577` (block 27) and, in the runs of block 26, at every
++`β` tried. This note locates the actual strengths by simulation and places the
++proved regions against them.
++
++The map. At `(p, 1, 2)` the six-axis static law keeps a majority value from a
++preference strength between `3.6` and `3.7`, and the six-axis formation law keeps
++its aligned plane from a strength between `10.5` and `11`: the static reading
++keeps memory at about a third of the strength the formation reading needs. The
++sphere static law keeps a magnetization from `β` between `0.66` and `0.72`; the
++sphere formation law never does (block 26). Block 17's `432` is about a
++hundred times the static strength; block 25's `285718` is twenty-five thousand
++times the formation strength; block 22's `0.76` is within a tenth of the sphere's
++strength; block 08's `3.7` for the formation law happens to sit where the
++*static* law's strength lies — a coincidence of this line of weights, not a
++relation. In plain words: laying records down one after another costs about
++three times the preference for agreement that a single settled arrangement
++costs, before a memory holds; and with a sphere of directions the settled
++arrangement holds from a modest preference while the record-by-record one
++never does.
++
++Two exact corollaries anchor the map. The healing bound (T2): in the ordered
++regime of the formation reading, an island of dissent of size `D` is erased
++within `D + 1` levels unless a noise event falls in a region of `18(D + 1)³`
++sites, so isolated errors heal with probability `1 − 18(D + 1)³ε`. The
++influence bound (T3): under the sphere formation law, one changed initial
++record influences the record at level `t` and in-plane displacement `y` by at
++most `2(√3β)^t p_t(y)` — confined to the forward cone, spread like the directed
++heat kernel, and, below `β = 1/√3`, shrinking exponentially with the level.
++
++Exactly: the brackets of the proved regions at `(p, 1, 2)` (T1); the healing
++bound (T2); the influence bound (T3). Executed with exact arithmetic: 14 checks,
++8 mutations; the map in the control and refuter specs (two plane sizes, three
++lattice sizes, two starts, two algorithms).
++
++## Machine status and trace
++
++```yaml
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: frontier_discovery
++target_claim_id: null
++target_blocker_text: "the campaign's decision record: which reading and which menu keep memory at what strength of preference — the proved regions (blocks 03, 08, 17, 21, 22, 25, 27) leave the actual strengths unlocated"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem_plus_decisive_artifact
++next_trace_action: "the map located: six-axis static from p in (3.6, 3.7), six-axis formation from p in (10.5, 11) at (p, 1, 2); sphere static from beta in (0.66, 0.72); sphere formation never (block 26). Open: the true strengths as theorems (the proved regions are 10^2 to 10^4 away on the six-axis menu); the six-axis formation law's transition on a larger plane. Consumers: the campaign's decision record; #8093's assembly"
++conditional_surface_status: "T1-T3 proved as stated under the records-only reading, positivity, the six-axis and sphere menus and the monotone level order as supplied conditions; the located strengths executed on periodic planes (128^2, 256^2) and lattices (16^3, 24^3, 32^3), brackets not proved values; two standard mathematical imports named at definition level"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++audit_required_before_effective_retained: true
++```
++
++## Premises and declared objects
++
++The axioms memo (`docs/MINIMAL_AXIOMS_2026-06-29.md`) is used through the sentences "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.", "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.", "Records form.", and "Only records are readable.". Block 01 (`docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md`, on `main`) supplies the rule's product form and its one-site conditional given a recorded set; the menus, the two readings and the level automaton are declared below (blocks 03, 08, 12, 17, 18, 19, 21, 22, 25, 26, 27 — open PRs #8000, #8138, #8146, #8151, #8152, #8153, #8155, #8156, #8168, #8170, #8171 — are referenced as evidence addresses only). All proposed and unaudited.
++
++Declared objects.
++- **The six-axis law.** Values in `{±e_1, ±e_2, ±e_3}`; `φ(v, v') = p, q, r` for equal, antipodal, orthogonal pairs (`p, q, r > 0`); the weights `(p, 1, 2)` throughout the map. **Static reading:** the Gibbs law on a periodic `L³` lattice with density `∝ Π_{bonds} φ(v_x, v_y)`; its single-site conditional given the six neighbours is `∝ Π_{6} φ(v, v_y)`. **Formation reading:** the level automaton of blocks 12 and 25 — the record at `x` drawn from `K(· | v_{x−e_1}, v_{x−e_2}, v_{x−e_3}) ∝ Π_3 φ(v, v_{x−e_j})`, read as a synchronous automaton on the periodic `L²` level plane after the bijection of each level.
++- **The sphere law.** Values in `S²`, weight `e^{β s·s'}`. **Static reading:** the Gibbs law on a periodic `L³` lattice with density `∝ Π_{bonds} e^{β s_x·s_y}`, single-site conditional the exponential-overlap law with concentration `β|Σ_6 s_y|`. **Formation reading:** block 26's level automaton (the conditional with concentration `β|Σ_3 s_{x−e_j}|`).
++- **Memory and order.** Formation: the aligned plane (all records equal to a value `a`, or a direction `e`) at level `0`; the **memory** at level `t` is the fraction of records equal to `a` (six-axis) or the mean of `s·e` (sphere). Static: from an aligned or random start, heat-bath sweeps (each site redrawn from its conditional given its six neighbours, on a checkerboard) or single-site proposals accepted with the ratio of weights; the **order** is the fraction of the majority value (six-axis) or `|mean s|` (sphere) over the second half of the sweeps.
++- **The noisy majority automaton and islands.** As in block 25: `η_x = maj(η_{x−e_1}, η_{x−e_2}, η_{x−e_3}) ∨ ζ_x`, `ζ` i.i.d. Bernoulli(`ε`) on levels `≥ 1`; an **island** is a finite set `I` of ones on level `0` (zeros elsewhere), with coordinate maxima `M_i = max_I x_i`, `D = M_1 + M_2 + M_3 ≥ 0`; its **forward cone** at level `T` is `F_T(I) = {x : τ(x) = T, x ≥ i for some i ∈ I}` (coordinatewise); the **noise-sensitive region** `U(I) = {y : 1 ≤ τ(y) ≤ D + 1, y ≤ x for some x ∈ F_{D+1}(I)}`.
++- **The level walk and the causal coupling.** As in blocks 26 and 27: `p_t(y)` the law of the three-predecessor walk after `t` steps; the causal coupling of two runs of the sphere formation law with per-site expected chordal distance `D_t(x)`.
++- **Block 08's criterion.** `c(p) = max` over predecessor triples `(a, b, c)` and alternatives `a' ≠ a` of `TV(K(·|a, b, c), K(·|a', b, c))`; uniqueness holds when `3c < 1`. **Block 25's condition.** `ε(p, q, r) = max(d_1, d_2, d_3)` with the three deviations in closed form; the ordered phase is proved for `ε ≤ 7/10⁶`.
++
++## Prior art and what is new
++
++Locating transitions of lattice models by simulation is standard practice; the sphere static law is the classical Heisenberg model on the cubic lattice, whose transition is known in the literature (`β_c ≈ 0.693`), and the six-axis static law is a six-state model with cubic anisotropy of the Potts family; the formation law is a probabilistic cellular automaton of Toom's family. None of this is used as authority: the strengths are re-measured here with the campaign's own rules, on small lattices, and stated as brackets. What is new: (i) the map itself — the four laws' strengths on one line of weights, placed against the campaign's proved regions, with the ratio between the readings; (ii) the healing bound (T2), an exact corollary of block 12's eroder theorem with a coupling and a count; (iii) the influence bound (T3), an exact corollary of block 27's contraction with a localized initial difference; (iv) the exact brackets of blocks 08 and 25 at `(p, 1, 2)` (T1).
++
++## Exact target and obligation graph
++
++| Obligation | Statement | Route | Runner family |
++|---|---|---|---|
++| T1 | `3c < 1` at `37/10`, `> 1` at `19/5`; `ε ≤ 7/10⁶` from `285718` | exact rationals | B |
++| T2 | the eroder bound; `|U(I)| ≤ 18(D + 1)³`; `P(survival) ≤ 18(D + 1)³ ε` | coordinate maxima; a coupling; a box count | C |
++| T3 | `D_t(x) ≤ 2(√3β)^t p_t(x − x_0)` | block 27's contraction with a localized start | D |
++| executed | the map | simulation (control, refuter) | — (specs) |
++
++## Theorem T1 — the proved regions on the line `(p, 1, 2)`
++
++**Statement.** `3c(37/10) = 406962630/413162167 < 1` and `3c(19/5) = 871815/862244 > 1`, so block 08's criterion on this line holds up to a `p` between `3.7` and `3.8`. `ε(p, 1, 2) ≤ 7/10⁶` holds at `p = 285718` and fails at `285717`.
++
++**Proof.** `c(p)` is a maximum of finitely many rational functions of `p`, evaluated exactly at the two points over the `216` triples and the five alternatives at each (B1); the deviations are block 25's closed forms `d_1 = (q³ + 4r³)/(p³ + q³ + 4r³)`, `d_2 = 1 − p²q/(pq(p + q) + 4r³)`, `d_3 = 1 − p²r/(r(p² + q²) + r²(p + q) + 2r³)`, evaluated exactly (B2). ∎
++
++## Theorem T2 — the healing bound
++
++**Statement.** Under the noiseless majority rule an island `I` is empty at level `D + 1`. Under noise `ε`, `P(η has a one in F_{D+1}(I)) ≤ |U(I)| ε ≤ 18(D + 1)³ ε`.
++
++**Proof.** *The eroder bound* (block 12's S2, re-proved). If `x` is a one at level `t + 1` with `x_i > M_i(t)` for some `i`, then its two predecessors `x − e_j`, `j ≠ i`, have `i`-th coordinate `x_i > M_i(t)` and are zeros, so `x` has at most one one-predecessor and is not a majority: the coordinate maxima never increase. A one at level `t` has `Σ_i x_i = t` and `x_i ≤ M_i`, so `t ≤ D`: level `D + 1` is empty (C1). *The coupling.* Run the noisy and the noiseless automata with the same island. If no noise site lies in `U(I)`, then by induction on the level every site of `U(I)` and every site of `F_{D+1}(I)` — whose predecessors down to level `1` lie in `U(I)` — carries the same value in both runs, so `F_{D+1}(I)` carries no one. Hence the event has probability at most `P(ζ = 1 somewhere in U(I)) ≤ |U(I)| ε`. *The count.* A site `y ∈ U(I)` at level `s ∈ [1, D + 1]` satisfies `y ≤ x` for some `x` at level `D + 1` with `x ≥ i`, `i ∈ I`; then `x_j = D + 1 − Σ_{k≠j} x_k ≤ D + 1 − Σ_{k≠j} i_k = D + 1 + i_j ≤ 2D + 1`, so `y_j ≤ 2D + 1 =: B` for each `j`. The number of `y` at level `s` with all `y_j ≤ B` is the number of non-negative `d_j = B − y_j` with `Σ d_j = 3B − s`, i.e. `C(3B − s + 2, 2) ≤ C(6D + 5, 2) = (6D + 5)(6D + 4)/2`; over `D + 1` levels, `|U(I)| ≤ (D + 1)(6D + 5)(6D + 4)/2 ≤ 18(D + 1)³`, the difference being `(D + 1)(9D + 8)` (C2). ∎ (Executed: the exact `|U(I)|` on `120` random islands is at most `4.05(D + 1)³`; the refuter tests the survival frequency of triangular islands at `ε = 10^{−3}` against the bound.)
++
++*Reading.* In the ordered regime of the formation reading, dissent heals: an error of size `D` is gone within `D + 1` levels unless noise strikes a region of a few thousand sites around it. This is the mechanism behind block 25's stability, isolated as a finite statement.
++
++## Theorem T3 — the influence bound
++
++**Statement.** For the sphere formation law at any `β > 0`, let two initial planes differ at `x_0` only. Under the causal coupling of block 27, the per-site expected chordal distance at `x` of level `t` satisfies `D_t(x) ≤ 2(√3β)^t p_t(x − x_0)`, and `Σ_x D_t(x) ≤ 2(√3β)^t`.
++
++**Proof.** Block 27's T2 gives `D_{t+1}(x) ≤ (β/√3) Σ_j D_t(x − e_j)` with `D_0 = 2·1{x = x_0}`; the linear recursion is solved by `2(β/√3)^t · 3^t p_t(x − x_0) = 2(√3β)^t p_t(x − x_0)` (the walk's law is the `t`-fold convolution of the uniform step over the three predecessors), and the sum over a level of `p_t` is `1` (D1). ∎
++
++*Reading.* Influence is confined to the forward cone and spreads as the directed heat kernel of block 13; below `β = 1/√3` it also shrinks exponentially with the level. Above, the bound is trivial, and block 26's runs show the field itself forgetting.
++
++## Executed: the map (frontier discovery, not proved)
++
++Controls `specs/supervisor_control_block28_scan_formation_sixaxis.py` (the level automaton from the aligned plane; memory over the second half of the levels), `..._scan_static_sixaxis.py` (heat-bath sweeps on a checkerboard from aligned and random starts), `..._scan_static_sphere.py` (heat-bath sweeps with the exact conditional), `..._exact.py`; refuting spec `specs/supervisor_control_block28_refuter.py` (the formation law from a random start — spontaneous order; the static six-axis law by single-site proposals; the sphere static law from a random start; the healing bound tested). Outputs in `.out.txt`.
++
++| law | runs | memory or order along the scan | located strength | proved regions (blocks) |
++|---|---|---|---|---|
++| six-axis formation `(p, 1, 2)` | `128²`, `4000` levels | `4`: 0.1666 `6`: 0.1662 `8`: 0.1670 `10`: 0.1660 `12`: 0.9325 `15`: 0.9792 `18`: 0.9902 `22`: 0.9953 `26`: 0.9974 `30`: 0.9984 `35`: 0.9990 `40`: 0.9994 `50`: 0.9997 `60`: 0.9998 `80`: 0.9999 | `p ∈ (10.5, 11)` | forgets for `p ≤ 3.7` (08); keeps for `p ≥ 285718` (25) |
++| six-axis formation `(p, 1, 2)` | `256²`, `8000` levels | `15`: 0.9793 `18`: 0.9902 `22`: 0.9954 `26`: 0.9974 `30`: 0.9984 `35`: 0.9990; fine: `9`: 0.1663 `10`: 0.1670 `10.5`: 0.1706 `11`: 0.8443 `11.5`: 0.9064 `12`: 0.9324 `13`: 0.9582 | `p ∈ (10.5, 11)` | — |
++| six-axis static `(p, 1, 2)` | `16³`, `1500` sweeps, aligned/random | `1.5`: 0.1747/0.1749 `2`: 0.1762/0.1764 `2.5`: 0.1785/0.1785 `3`: 0.1827/0.1825 `3.5`: 0.1963/0.2016 `4`: 0.8781/0.8775 `5`: 0.9794/0.9793 `6`: 0.9940/0.9939 `8`: 0.9990/0.4991 | `p ∈ (3.6, 3.7)` | forgets at `(3, 1, 2)` (03); keeps for `p ≥ 432` (17) |
++| six-axis static `(p, 1, 2)` | `24³`, `1500`–`2000` sweeps | `2`: 0.1720/0.1719 `2.5`: 0.1733/0.1731 `3`: 0.1754/0.1755 `3.5`: 0.1842/0.1857 `4`: 0.8774/0.8766; fine: `3.5`: 0.1821/0.1844 `3.6`: 0.1908/0.1894 `3.7`: 0.6717/0.6744 `3.8`: 0.7837/0.7832 `3.9`: 0.8407/0.8408 `4`: 0.8772/0.8768 | `p ∈ (3.6, 3.7)` | — |
++| six-axis static `(p, 1, 2)` | `32³`, `2000` sweeps | `3.6`: 0.1836/0.1826 `3.7`: 0.6764/0.6730 `3.8`: 0.7833/0.7845 `3.9`: 0.8401/0.8403 | `p ∈ (3.6, 3.7)` | — |
++| sphere static | `16³`, `1500` sweeps | `0.5`: 0.0355 `0.6`: 0.0569 `0.65`: 0.0915 `0.7`: 0.3050 `0.75`: 0.4607 `0.8`: 0.5362 `0.9`: 0.6269 | `β ∈ (0.65, 0.70)` | forgets for `β < 0.289` (21); keeps for `β > 0.76` (22) |
++| sphere static | `24³`, `1500`–`2000` sweeps | `0.6`: 0.0305 `0.65`: 0.0580 `0.7`: 0.2343 `0.75`: 0.4413; fine: `0.66`: 0.0676 `0.68`: 0.1144 `0.7`: 0.2534 `0.72`: 0.3607 | `β ∈ (0.66, 0.72)` | — |
++| sphere formation | block 26 (`512²`, `20000` levels) | memory lost at `β = 3, 6, 12, 24` | none | forgets for `β < 0.577` (27) |
++
++
++What the runs say. (i) The six-axis formation law at `(p, 1, 2)` forgets its plane (memory `1/6`) up to `p = 10.5` and keeps it from `p = 11` on the `256²` plane (`10` and `12` on `128²`); from a random start the majority fraction grows from `p ≈ 11` on, more slowly because domains must merge (refuter). (ii) The six-axis static law is disordered at `p = 3.6` and ordered at `p = 3.7` on all three lattice sizes, from both starts and under both algorithms. (iii) The sphere static law's magnetization rises between `β = 0.66` and `0.72` on both lattices (`0.11` at `0.68`, `0.25` at `0.70` on `24³`), consistent with the literature value named under Prior art. (iv) The healing frequencies of triangular islands at `ε = 10^{−3}` (`0.003, 0.055, 0.098, 0.198` for sides `1`–`4`, `D = 0, 2, 4, 6`) lie below the bound of T2 (`0.018, 0.49, 2.25, 6.2`). **The map (executed):** static six-axis `p ∈ (3.6, 3.7)`; formation six-axis `p ∈ (10.5, 11)`; static sphere `β ∈ (0.66, 0.72)`; formation sphere: none (block 26). The proved regions are placed in the table's last column.
++
++## No-Go Discipline Gate
++
++The executed sentence locates strengths; its escapes are named.
++
++### N1 — Routes by which the map could be wrong
++1. *Finite size.* Two plane sizes and three lattice sizes give the same brackets; the located strengths are stated as brackets, not digits.
++2. *Hysteresis and equilibration of the static six-axis law.* Aligned and random starts agree at every strength in the table except at strong preference from a random start, where domains freeze (`p = 8` on `16³`: two domains of half the lattice each), which does not affect the bracket; heat bath and single-site proposals agree.
++3. *The memory observable of the formation law.* The fraction of the initial value over the second half of the run; a plane that will forget later than the run cannot be excluded (block 26's `L²` scale is far beyond the run for the six-axis law's dissent-free plateaus).
++4. *The proved regions.* Re-computed exactly where a number is quoted (T1); the others are evidence addresses.
++
++### N2 — Wall-independence audit
++No no-go wall of the repository is used.
++
++### N3 — Hidden-wall scan
++No hidden dependence: the inputs are the axioms' sentences, block 01's rule, the menus, readings and orders as declared.
++
++### N4 — Per-citation table
++| Citation | Role | Load-bearing? |
++|---|---|---|
++| `minimal_axioms` | the four sentences under Premises | yes (premise) |
++| block 01 (`main`) | the rule and its one-site conditional | yes (premise, proposed) |
++| blocks 08, 12, 25, 27 (open PRs) | the criterion, the eroder bound, the ordering condition, the contraction | re-computed or re-proved at scope where used (T1–T3) |
++| blocks 03, 17, 19, 21, 22, 26 (open PRs) | the other proved regions; the sphere formation runs | placement only (evidence addresses) |
++
++### N5 — Resolution audit
++| Claim | per_element | per_site | per_mode | per_block | lattice_wide |
++|---|---|---|---|---|---|
++| "where each law keeps its plane" | executed: the exact sensitivity at two couplings; the deviations at two couplings | executed: the eroder bound on random islands; the influence recursion | executed: the region count on random islands; the polynomial inequality | executed: the map by simulation on two plane sizes, three lattice sizes, two starts, two algorithms | T1–T3 proved as stated; the strengths executed brackets |
++
++### N6 — Partial-closure paths and primitive scan
++The registered primitives supply no coupling, menu or order; none is a wall.
++
++### N7 — Steelman
++Hostile reviewer: "Simulations on `16³` lattices and `128²` planes prove nothing; the theorems are corollaries." Reply: the map is the number the decision record needs and it is labelled executed with brackets; the corollaries are new statements (a finite healing bound, a finite influence bound) with proofs. Conceded: the true strengths are not theorems, and the proved regions on the six-axis menu are two to four orders of magnitude away from them.
++
++### N8 — Cross-cycle echo
++Blocks 03, 08, 21, 27 (the uniqueness table), 17, 22, 25 (the ordering regions) and 26 (the sphere formation runs) are the eight facts the map is drawn against; block 12's eroder is T2's core; block 27's contraction is T3's.
++
++## Falsifiers
++- `3c(37/10) ≥ 1` or `3c(19/5) ≤ 1`; `ε(285718, 1, 2) > 7/10⁶` or `ε(285717, 1, 2) ≤ 7/10⁶` (B1–B2).
++- An island alive at level `D + 1` under the noiseless rule, a coordinate maximum that increases, a region `U(I)` above `18(D + 1)³`, or a negative coefficient in `18(D+1)³ − (D+1)(6D+5)(6D+4)/2` (C1–C2).
++- An influence solution differing from `2(√3β)^t p_t` (D1).
++- For the map: a plane kept below the stated bracket or lost above it on a larger plane or lattice or a longer run; a healing frequency above `18(D+1)³ε`.
++
++## Boundaries and non-claims
++This note proves, at `(p, 1, 2)`, the exact brackets of block 08's uniqueness criterion (`3c < 1` at `p = 37/10`, `3c > 1` at `19/5`) and of block 25's condition (`ε ≤ 7/10⁶` from `p = 285718`), the healing bound `P(an island with D = M_1 + M_2 + M_3 survives to level D + 1 in its forward cone) ≤ 18(D + 1)³ ε` for the noisy majority automaton, and the influence bound `2(√3β)^t p_t(x − x_0)` for the sphere formation law; the located strengths at which the four laws keep their planes are executed by simulation and are brackets, not proved values; it does not select a menu, reading, order or coupling as physical, and adopts no clause. No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision. No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.
++
++Further: the strengths on other lines of weights are not treated; the order of the static six-axis change (first or second order) is not claimed; nothing is claimed about which reading is physical.
++
++## Imports
++- `minimal_axioms`: the sentences quoted under Premises.
++- Block 01 (on `main`): the rule and its conditional; proposed, unaudited. PRs #8000, #8138, #8146, #8151, #8152, #8153, #8155, #8156, #8168, #8170, #8171 (open) referenced as evidence addresses for the proved regions and the declared objects.
++- Re-proved at scope: block 12's eroder bound; the coupling of noisy and noiseless runs on a noise-free region; block 27's contraction with a localized start.
++- Named standard imports at definition level (never as authority for physics): the union bound; the heat-bath (Gibbs sampler) and single-site-proposal (Metropolis) chains as samplers of the static laws on finite lattices.
++- Reference only (named, not used): the literature value of the classical Heisenberg model's transition on the cubic lattice (`β_c ≈ 0.693`); Toom's family of automata; the Potts family of models.
++
++## Review record
++Supervisor-run block (owner directive 2026-09-16: keep the campaign running twelve more hours). After block 27 the campaign held proved regions for all four laws but no located strengths; the map was the decision record's missing number and cheap to execute. The control ran the formation scan on `128²` (4000 levels) and `256²` (8000 levels), the static six-axis scan on `16³`, `24³`, `32³` from two starts, and the sphere scan on `16³`, `24³`, then fine scans around the changes; the exact control verified block 08's bracket, the eroder bound on `300` random islands, the exact region count (largest ratio `4.04(D+1)³` against the proved `18`), and the influence recursion. The lens pass is in `GOAL_block28.md`. Facts settled while executing: the first region count used a crude box (`16(D+1)³` unproved); the exact region and the proof's box give `18(D+1)³`; at `p = 8` from a random start on `16³` the static six-axis chain freezes into two domains (a known artifact of local dynamics at strong preference), which is why the aligned start is the map's reference. The refuting pass (`CHECKER_block28_findings.md`) used a random start for the formation law (spontaneous order), single-site proposals for the static six-axis law, a random start for the sphere law, and a direct test of the healing bound.
++
++## Verification
++
++```bash
++python3 scripts/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16.py
++python3 scripts/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16.py --list-mutations
++python3 scripts/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16.py --mutation region_count_wrong
++```
++
++Families: A authority and inputs; B the brackets of the proved regions; C the healing bound; D the influence bound; F fences, forbidden phrases, the floating-point self-scan, the placement of the classical names; G the resolution lines. Each of the 8 declared mutations fails in exactly one family. Expected final line: `TOTAL: PASS=14 FAIL=0`.
+diff --git a/docs/audit/data/citation_graph_manifest.json b/docs/audit/data/citation_graph_manifest.json
+index 9c5ee54886..3c45f083d5 100644
+--- a/docs/audit/data/citation_graph_manifest.json
++++ b/docs/audit/data/citation_graph_manifest.json
+@@ -1,6 +1,6 @@
+ {
+  "edge_count": 13568,
+- "node_count": 6014,
++ "node_count": 6015,
+  "nodes": {
+   "3d_correction_master_note": {
+    "deps_hash": "e3b0c44298fc",
+@@ -742,6 +742,10 @@
+    "deps_hash": "0447028c8504",
+    "out_degree": 2
+   },
++  "admissibility_rule_map_of_memory_where_each_of_the_four_laws_keeps_its_plane_located_against_the_proved_regions_with_the_healing_and_influence_bounds_bounded_theorem_note_2026-09-16": {
++   "deps_hash": "e3b0c44298fc",
++   "out_degree": 0
++  },
+   "admissibility_rule_monotone_order_formation_law_rows_columns_chains_corner_law_bounded_theorem_note_2026-09-07": {
+    "deps_hash": "1b3132f0c69b",
+    "out_degree": 3
+diff --git a/logs/runner-cache/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16.txt b/logs/runner-cache/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16.txt
+new file mode 100644
+index 0000000000..5d81f2535f
+--- /dev/null
++++ b/logs/runner-cache/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16.txt
+@@ -0,0 +1,36 @@
++===== runner cache v1 =====
++runner: scripts/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16.py
++runner_sha256: cdb2b7e3b0ffce085650a92498dc24f2797360a81e2b9ed38ef1d6f1de5013f6
++input_fingerprint_sha256: af57267012a2fc521548cf9fd34907a91d7ed2630d8803408fc55bbe93ef9fcf
++timeout_sec: 900
++exit_code: 0
++elapsed_sec: 5.66
++status: ok
++----- stdout -----
++AUDIT_INPUT_PATHS:
++  docs/ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md
++  docs/MINIMAL_AXIOMS_2026-06-29.md
++  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
++PASS: A1 the note carries its claim_id once
++PASS: A2 the axioms memo carries the four sentences quoted under Premises
++PASS: A3 block 01's note (on main) carries its claim_id and the rule's product form
++PASS: A4 all declared inputs exist
++PASS: B1 T1: block 08's criterion at (p, 1, 2): 3c = 406962630/413162167 < 1 at p = 37/10 and 3c = 871815/862244 > 1 at p = 19/5 (c the exact total-variation sensitivity to one predecessor, maximised over the 216 triples and the five alternatives)
++PASS: B2 T1: block 25's condition epsilon(p, 1, 2) <= 7/10^6 holds at p = 285718 and fails at 285717 (closed forms of the three deviations)
++PASS: C1 T2: on 300 random islands the coordinate maxima never increase under the noiseless majority rule and every island is empty at level D + 1, D = M_1 + M_2 + M_3 (2 islands still alive at level D)
++PASS: C2 T2: the noise-sensitive region U of an island (sites of levels 1..D+1 below some level-(D+1) site of the island's forward cone) has at most 18 (D+1)^3 sites on 120 random islands (largest ratio 6671/1728), and (D+1)(6D+5)(6D+4)/2 <= 18 (D+1)^3 since the difference is (D+1)(9D+8)
++PASS: D1 T3: the influence recursion D_{t+1}(x) = (beta/sqrt3) sum_j D_t(x - e_j) from D_0 = 2 at x_0 is solved exactly by 2 (sqrt3 beta)^t p_t(x - x_0), whose sum over the level is 2 (sqrt3 beta)^t (t <= 6, exact)
++PASS: F1 the note carries the three fence sentences verbatim
++PASS: F2 the note contains no forbidden phrase (0 hits)
++PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
++PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
++per_element: executed — the six-axis conditional's exact sensitivity at two rational couplings; the three deviations' closed forms at 285717 and 285718
++per_site: executed — the coordinate maxima and the eroder bound on 300 random islands; the influence recursion's exact solution to t = 6
++per_mode: executed — the noise-sensitive region counted exactly on 120 random islands against 18 (D+1)^3; the polynomial inequality symbolically
++per_block: executed — the map of memory by simulation in the control and refuter specs (the six-axis formation law at (p,1,2) on 128^2 and 256^2 planes, the six-axis static law on 16^3, 24^3, 32^3, the sphere static law on 16^3, 24^3); brackets, not proved
++lattice_wide: T1-T3 proved as stated; the located strengths are executed brackets on finite planes and lattices
++PASS: G1 the five N5 resolution lines are printed
++TOTAL: PASS=14 FAIL=0
++
++----- stderr -----
++
+diff --git a/scripts/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16.py b/scripts/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16.py
+new file mode 100755
+index 0000000000..6411552d49
+--- /dev/null
++++ b/scripts/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16.py
+@@ -0,0 +1,328 @@
++#!/usr/bin/env python3
++"""Exact checks: the map of memory — the proved regions re-computed at (p, 1, 2), the healing bound for the noisy majority automaton,
++and the influence bound for the sphere formation law.
++
++Scope.  T1: block 08's criterion 3c < 1 at (p, 1, 2) holds at p = 37/10 and fails at p = 19/5 (c the exact total-variation sensitivity
++of the six-axis conditional to one predecessor, maximised over all triples); block 25's condition epsilon(p, 1, 2) <= 7/10^6 holds at
++p = 285718 and fails at 285717 (closed forms).  T2: the eroder bound (coordinate maxima never increase; an island with D = M_1 + M_2 + M_3
++is empty at level D + 1) executed on random islands; the noise-sensitive region U counted exactly and bounded by 18 (D + 1)^3, with the
++polynomial inequality behind the bound checked symbolically.  T3: the influence recursion's solution 2 (sqrt3 beta)^t p_t(x - x_0)
++(exact, t <= 6).  Exact arithmetic only (integers, Fractions and sympy); the runner scans its own source for floating-point literals.
++"""
++
++from __future__ import annotations
++
++import random
++import re
++import sys
++from fractions import Fraction
++from itertools import product
++from math import factorial
++from pathlib import Path
++
++import sympy as sp
++
++AUDIT_TIMEOUT_SEC = 900
++AUDIT_INPUT_PATHS = (
++    "docs/ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
++    "docs/MINIMAL_AXIOMS_2026-06-29.md",
++    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
++)
++ROOT = Path(__file__).resolve().parents[1]
++CLAIM_ID = "admissibility_rule_map_of_memory_where_each_of_the_four_laws_keeps_its_plane_located_against_the_proved_regions_with_the_healing_and_influence_bounds_bounded_theorem_note_2026-09-16"
++BLOCK01_CLAIM_ID = "admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06"
++BLOCK01_FRAGMENT = "the static law of a product rule"
++AXIOM_NEEDLES = (
++    "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.",
++    "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.",
++    "Records form.",
++    "Only records are readable.",
++)
++
++MUTATION_GATE = {
++    "criterion_bracket_wrong": "B",
++    "threshold_p0_wrong": "B",
++    "eroder_bound_wrong": "C",
++    "region_count_wrong": "C",
++    "polynomial_wrong": "C",
++    "influence_wrong": "D",
++    "claim_reading_injected": "F",
++    "claim_classical_name_in_theorem": "F",
++}
++ACTIVE_MUTATION: str | None = None
++
++
++def mut(name: str) -> bool:
++    if name not in MUTATION_GATE:
++        raise KeyError(name)
++    return ACTIVE_MUTATION == name
++
++
++class Checks:
++    def __init__(self) -> None:
++        self.passed = 0
++        self.failed = 0
++        self.failed_families: set[str] = set()
++
++    def check(self, tag: str, ok: bool, msg: str) -> None:
++        if ok:
++            self.passed += 1
++            print(f"PASS: {tag} {msg}")
++        else:
++            self.failed += 1
++            self.failed_families.add(tag[0])
++            print(f"FAIL: {tag} {msg}")
++
++
++def normalize_text(text: str) -> str:
++    return re.sub(r"\s+", " ", text)
++
++
++# ============================================================================================ family A
++def family_a(checks: Checks, texts) -> None:
++    note, axioms, block01 = texts
++    checks.check("A1", CLAIM_ID in note and len(re.findall(r"^claim_id:", note, flags=re.M)) == 1, "the note carries its claim_id once")
++    checks.check("A2", all(n in normalize_text(axioms) for n in AXIOM_NEEDLES), "the axioms memo carries the four sentences quoted under Premises")
++    checks.check("A3", BLOCK01_CLAIM_ID in block01 and BLOCK01_FRAGMENT in block01.lower(), "block 01's note (on main) carries its claim_id and the rule's product form")
++    checks.check("A4", all(Path(ROOT, p).exists() for p in AUDIT_INPUT_PATHS), "all declared inputs exist")
++
++
++# ============================================================================================ family B
++def conditional(p: Fraction, q: Fraction, r: Fraction, a: int, b: int, c: int):
++    phi = [[r] * 6 for _ in range(6)]
++    for v in range(6):
++        phi[v][v] = p
++        phi[v][v ^ 1] = q
++    w = [phi[v][a] * phi[v][b] * phi[v][c] for v in range(6)]
++    Z = sum(w)
++    return [x / Z for x in w]
++
++
++def sensitivity(p: Fraction) -> Fraction:
++    worst = Fraction(0)
++    for a, b, c in product(range(6), repeat=3):
++        k1 = conditional(p, Fraction(1), Fraction(2), a, b, c)
++        for a2 in range(6):
++            if a2 == a:
++                continue
++            k2 = conditional(p, Fraction(1), Fraction(2), a2, b, c)
++            worst = max(worst, sum((abs(x - y) for x, y in zip(k1, k2)), Fraction(0)) / 2)
++    return worst
++
++
++def deviations(p, q, r):
++    p, q, r = Fraction(p), Fraction(q), Fraction(r)
++    d1 = 1 - p ** 3 / (p ** 3 + q ** 3 + 4 * r ** 3)
++    d2 = 1 - p ** 2 * q / (p * q * (p + q) + 4 * r ** 3)
++    d3 = 1 - p ** 2 * r / (r * (p ** 2 + q ** 2) + r ** 2 * (p + q) + 2 * r ** 3)
++    return d1, d2, d3
++
++
++def family_b(checks: Checks) -> None:
++    lo, hi = Fraction(37, 10), Fraction(19, 5)
++    if mut("criterion_bracket_wrong"):
++        lo, hi = Fraction(19, 5), Fraction(4)
++    c_lo, c_hi = sensitivity(lo), sensitivity(hi)
++    checks.check("B1", 3 * c_lo < 1 < 3 * c_hi, f"T1: block 08's criterion at (p, 1, 2): 3c = {3 * c_lo} < 1 at p = 37/10 and 3c = {3 * c_hi} > 1 at p = 19/5 (c the exact total-variation sensitivity to one predecessor, maximised over the 216 triples and the five alternatives)")
++    p0 = 285718
++    if mut("threshold_p0_wrong"):
++        p0 = 285717
++    eps0 = Fraction(7, 10 ** 6)
++    ok = max(deviations(p0, 1, 2)) <= eps0 < max(deviations(p0 - 1, 1, 2))
++    checks.check("B2", ok, "T1: block 25's condition epsilon(p, 1, 2) <= 7/10^6 holds at p = 285718 and fails at 285717 (closed forms of the three deviations)")
++
++
++# ============================================================================================ family C
++def erode(ones):
++    cand = set()
++    for (a, b) in ones:
++        cand |= {(a + 1, b), (a, b + 1), (a, b)}
++    new = set()
++    for (a, b) in cand:
++        preds = [(a - 1, b), (a, b - 1), (a, b)]
++        if sum(1 for z in preds if z in ones) >= 2:
++            new.add((a, b))
++    return new
++
++
++def region_size(island3):
++    M = [max(i[j] for i in island3) for j in range(3)]
++    D = sum(M)
++    B = 2 * D + 1
++    cnt = 0
++    for y1 in range(-3 * B - 3, B + 1):
++        for y2 in range(-3 * B - 3, B + 1):
++            for s in range(1, D + 2):
++                y = (y1, y2, s - y1 - y2)
++                if y[2] > B:
++                    continue
++                if any(sum(max(i[j], y[j]) for j in range(3)) <= D + 1 for i in island3):
++                    cnt += 1
++    return cnt, D
++
++
++def family_c(checks: Checks) -> None:
++    random.seed(28)
++    shift = 1
++    if mut("eroder_bound_wrong"):
++        shift = 0
++    ok1 = True
++    alive_at_D = 0
++    islands = []
++    for trial in range(300):
++        n = random.randint(1, 10)
++        ones = {(random.randint(-4, 4), random.randint(-4, 4)) for _ in range(n)}
++        islands.append(ones)
++        M1 = max(a for a, b in ones)
++        M2 = max(b for a, b in ones)
++        M3 = max(-a - b for a, b in ones)
++        D = M1 + M2 + M3
++        cur = ones
++        maxima_ok = True
++        for t in range(1, D + shift + 1):
++            nxt = erode(cur)
++            if nxt:
++                maxima_ok = maxima_ok and max(a for a, b in nxt) <= max(a for a, b in cur) and max(b for a, b in nxt) <= max(b for a, b in cur) and max(-a - b for a, b in nxt) <= max(-a - b for a, b in cur)
++            if t == D and nxt:
++                alive_at_D += 1
++            cur = nxt
++        ok1 = ok1 and maxima_ok and not cur
++    checks.check("C1", ok1 and alive_at_D > 0, f"T2: on 300 random islands the coordinate maxima never increase under the noiseless majority rule and every island is empty at level D + 1, D = M_1 + M_2 + M_3 ({alive_at_D} islands still alive at level D)")
++    const = 18
++    if mut("region_count_wrong"):
++        const = 3
++    ok2 = True
++    worst = Fraction(0)
++    for ones in islands[:120]:
++        island3 = [(a, b, -a - b) for a, b in ones]
++        cnt, D = region_size(island3)
++        ok2 = ok2 and cnt <= const * (D + 1) ** 3
++        worst = max(worst, Fraction(cnt, (D + 1) ** 3))
++    Dv = sp.symbols("D", nonnegative=True)
++    poly_const = 18
++    if mut("polynomial_wrong"):
++        poly_const = 17
++    diff = sp.expand(poly_const * (Dv + 1) ** 3 - (Dv + 1) * (6 * Dv + 5) * (6 * Dv + 4) / 2)
++    poly_ok = all(coef >= 0 for coef in sp.Poly(diff, Dv).all_coeffs()) and sp.simplify(diff - (Dv + 1) * (9 * Dv + 8)) == 0
++    checks.check("C2", ok2 and poly_ok, f"T2: the noise-sensitive region U of an island (sites of levels 1..D+1 below some level-(D+1) site of the island's forward cone) has at most 18 (D+1)^3 sites on 120 random islands (largest ratio {worst}), and (D+1)(6D+5)(6D+4)/2 <= 18 (D+1)^3 since the difference is (D+1)(9D+8)")
++
++
++# ============================================================================================ family D
++def p_t(t, a, b):
++    c = t - a - b
++    if min(a, b, c) < 0:
++        return Fraction(0)
++    return Fraction(factorial(t), factorial(a) * factorial(b) * factorial(c)) / 3 ** t
++
++
++def family_d(checks: Checks) -> None:
++    g = Fraction(2, 7)   # stands for beta/sqrt3; the identity is polynomial in g
++    Dt = {(0, 0): Fraction(2)}
++    pref = Fraction(2)
++    if mut("influence_wrong"):
++        pref = Fraction(1)
++    ok = True
++    for t in range(1, 7):
++        new = {}
++        for (a, b), v in Dt.items():
++            for da, db in ((1, 0), (0, 1), (0, 0)):
++                new[(a + da, b + db)] = new.get((a + da, b + db), Fraction(0)) + g * v
++        Dt = new
++        ok = ok and all(v == pref * (3 * g) ** t * p_t(t, a, b) for (a, b), v in Dt.items()) and sum(Dt.values()) == pref * (3 * g) ** t
++    checks.check("D1", ok, "T3: the influence recursion D_{t+1}(x) = (beta/sqrt3) sum_j D_t(x - e_j) from D_0 = 2 at x_0 is solved exactly by 2 (sqrt3 beta)^t p_t(x - x_0), whose sum over the level is 2 (sqrt3 beta)^t (t <= 6, exact)")
++
++
++# ============================================================================================ family F
++FENCES = (
++    "This note proves, at `(p, 1, 2)`, the exact brackets of block 08's uniqueness criterion (`3c < 1` at `p = 37/10`, `3c > 1` at `19/5`) and of block 25's condition (`ε ≤ 7/10⁶` from `p = 285718`), the healing bound `P(an island with D = M_1 + M_2 + M_3 survives to level D + 1 in its forward cone) ≤ 18(D + 1)³ ε` for the noisy majority automaton, and the influence bound `2(√3β)^t p_t(x − x_0)` for the sphere formation law; the located strengths at which the four laws keep their planes are executed by simulation and are brackets, not proved values; it does not select a menu, reading, order or coupling as physical, and adopts no clause.",
++    "No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
++    "No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.",
++)
++FORBIDDEN = (
++    "the physical order", "the physical rule", "the physical coupling", "the physical dimension", "the physical reading", "the physical menu", "for every coupling", "selects the", "fires wake condition",
++    "the Bridge weights", "the Bridge conjecture", "certified", "converge", "emergent", "phase transition", "critical", "washes out", "toward the plane", "the trend",
++    "sharp threshold", "the transition point", "has no ordered phase", "does not order",
++)
++CLAIM_INJECTIONS = {"claim_reading_injected": "Hence the formation reading is the physical reading."}
++CLASSICAL_NAMES = ("Heisenberg", "Potts", "Metropolis", "Toom", "Dobrushin", "Peierls", "Ising", "Binder", "Doeblin", "Kantorovich")
++ALLOWED_NAME_SECTIONS = ("Prior art and what is new", "Imports", "Premises and declared objects", "Review record")
++SCAN_MARKER = "float-scan-marker-line"
++
++
++def family_f(checks: Checks, note_text: str) -> None:
++    text = note_text
++    for name, phrase in CLAIM_INJECTIONS.items():
++        if mut(name):
++            text = text.replace("## Theorem T3", phrase + "\n\n## Theorem T3", 1)
++    if mut("claim_classical_name_in_theorem"):
++        text = text.replace("## Theorem T1", "## Theorem T1 (after Dobrushin)", 1)
++    norm = normalize_text(text)
++    checks.check("F1", all(normalize_text(f) in norm for f in FENCES), "the note carries the three fence sentences verbatim")
++    hits = [p for p in FORBIDDEN if p in text]
++    checks.check("F2", not hits, f"the note contains no forbidden phrase ({len(hits)} hits)")
++    src = Path(__file__).read_text(encoding="utf-8")
++    body = src.split(SCAN_MARKER)[0]
++    float_hits = re.findall(r"(?<![\w.])\d+\.\d+(?![\w.])|\bfloat\(|\.evalf\(|\bN\(", body)
++    checks.check("F3", not float_hits, f"runner source: no floating-point literal or conversion call ({len(float_hits)} hits)")
++    sections = re.split(r"^## ", text, flags=re.M)
++    offenders = []
++    for sec in sections[1:]:
++        title = sec.split("\n", 1)[0].strip()
++        if any(title.startswith(a) for a in ALLOWED_NAME_SECTIONS):
++            continue
++        for nm in CLASSICAL_NAMES:
++            if nm in sec:
++                offenders.append((title[:40], nm))
++    offenders += [("front matter", nm) for nm in CLASSICAL_NAMES if nm in sections[0]]
++    checks.check("F4", not offenders, f"the authors' names appear only under Prior art, Imports, the Premises and the Review record ({len(offenders)} offenders)")
++
++
++# ============================================================================================ family G
++N5_LINES = (
++    "per_element: executed — the six-axis conditional's exact sensitivity at two rational couplings; the three deviations' closed forms at 285717 and 285718",
++    "per_site: executed — the coordinate maxima and the eroder bound on 300 random islands; the influence recursion's exact solution to t = 6",
++    "per_mode: executed — the noise-sensitive region counted exactly on 120 random islands against 18 (D+1)^3; the polynomial inequality symbolically",
++    "per_block: executed — the map of memory by simulation in the control and refuter specs (the six-axis formation law at (p,1,2) on 128^2 and 256^2 planes, the six-axis static law on 16^3, 24^3, 32^3, the sphere static law on 16^3, 24^3); brackets, not proved",
++    "lattice_wide: T1-T3 proved as stated; the located strengths are executed brackets on finite planes and lattices",
++)
++
++
++def family_g(checks: Checks) -> None:
++    for line in N5_LINES:
++        print(line)
++    checks.check("G1", len(N5_LINES) == 5, "the five N5 resolution lines are printed")
++
++
++# ============================================================================================ main
++def main(argv) -> int:
++    global ACTIVE_MUTATION
++    if "--list-mutations" in argv:
++        for name, fam in MUTATION_GATE.items():
++            print(f"{name} {fam}")
++        return 0
++    if "--mutation" in argv:
++        ACTIVE_MUTATION = argv[argv.index("--mutation") + 1]
++        if ACTIVE_MUTATION not in MUTATION_GATE:
++            print(f"unknown mutation {ACTIVE_MUTATION}")
++            return 2
++    print("AUDIT_INPUT_PATHS:")
++    for p in AUDIT_INPUT_PATHS:
++        print(f"  {p}")
++    texts = [Path(ROOT, p).read_text(encoding="utf-8") if Path(ROOT, p).exists() else "" for p in AUDIT_INPUT_PATHS]
++    checks = Checks()
++    family_a(checks, texts)
++    family_b(checks)
++    family_c(checks)
++    family_d(checks)
++    family_f(checks, texts[0])
++    family_g(checks)
++    if ACTIVE_MUTATION:
++        print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
++        print(f"mutation_family_observed: {''.join(sorted(checks.failed_families)) or '-'}")
++    print(f"TOTAL: PASS={checks.passed} FAIL={checks.failed}")
++    return 0 if checks.failed == 0 else 1
++
++
++if __name__ == "__main__":
++    sys.exit(main(sys.argv[1:]))
++# float-scan-marker-line

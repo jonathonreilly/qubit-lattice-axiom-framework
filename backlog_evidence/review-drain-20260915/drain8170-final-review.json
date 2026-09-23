@@ -1,0 +1,860 @@
+{
+  "schema_version": 1,
+  "reviewer_session": "/root/review_8170",
+  "same_original_session": true,
+  "pr": 8170,
+  "created_utc": "2026-09-23T03:46:47.914033+00:00",
+  "base": "8bf464953779b8ada8415208e89a656411f9f525",
+  "tree": "2ab5e0ff2f8a8188572ffe402f0ded5f9433b214",
+  "decision": "SCIENCE_EVIDENCE_ACCEPTED",
+  "verdict": "Final same-session science and evidence confirmation accepted for this exact narrowed partial salvage. Integration, final cache preflight and combined gate remain required; no landing PASS.",
+  "blockers": [],
+  "source_hashes": {
+    "docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md": "bd7968234832dcd13368f4208b2081a69aaf9674b1e9b24b65f44ee986f26b0a",
+    "docs/work_history/repo/review_feedback/pr8170-evidence/DEFERRED_SCIENCE.md": "d84528a412c74cc2e9a5e8bb59c8fff49ba04ae58e5ee766a65641c248405db2",
+    "docs/work_history/repo/review_feedback/pr8170-evidence/README.md": "618fd4f90d72f42aa428258ae0a44019c22f8acfd88f3573a4eedfeeb8b7f39f",
+    "docs/work_history/repo/review_feedback/pr8170-evidence/archive-manifest.json": "20b3d0e8675e742dbb95f6929c5cdb63f5358ff826a334955ae22935b6d1f251",
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_IN_LEVEL_TIME_GAIN_ONE_SPIN_WAVES_LOCAL_LIMIT_CONSTANT_FINITE_PLANES_FORGET_AND_THE_SIMULATED_ALGEBRAIC_DECAY_OF_THE_INITIAL_PLANE_MEMORY_BOUNDED_THEOREM_NOTE_2026-09-16-e50aaf4b6686e647.md": "8495f04ed691512ec1830f870965c3a149b7e77330f2a9ed0d40e6fa46887578",
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/APPROACH_REGISTRY-4e9fef47b9eac07d.md": "24ea06f9384ee6eb4becbad9cf8132d32a753e821c0f8488a1308e9fcf685ecf",
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/CHECKER_block26_findings-c0a6cd25f43f3f2c.md": "6c7d0f099effdd8349bb75de1adbaa85a54aaf0822ea429e6a66fca4e8896b74",
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/CLAIM_STATUS_CERTIFICATE_block26-315a8231a89a61c4.md": "ebf19ceedb084cdc1a8e6ccc865d8dd5f06ba58f8b6dc50ac5a9045db9bb580a",
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/GOAL_block26-083903adfde6cc31.md": "8d5d40f4796993afc416746d092b6385ba93378ab247a955797afaedad05d151",
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/HANDOFF-2061d1bff2a70397.md": "b85c9887abf8f9af60f2974d02d8c1a036ea3db4c969895237c29fc6f46f90ed",
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/NO_GO_LEDGER-05cc24d6760014de.md": "9d9d9077de70a3e446bb15eb57d148c418d4f8a7b868753c7016dfe7aedf0d8f",
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/OPPORTUNITY_QUEUE-72e985a42c72b74e.md": "1776ff224ff72af33f15155d54dd9d157d476102cf4bf80e62d9ab0471846dd3",
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/RESULTS_block26-0263fa9278e61353.md": "800fb7d3beb194b60b4447d9c723f9e226aa6421730ac807054747f6923aabd8",
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/REVIEW_HISTORY-5eeaa28fca70564a.md": "5b780ecf7ed43201a33effef1feb629e96679b9f4c009f0f1f745e4bd15fd638",
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/STATE-829e293fc3eb28c8.yaml": "d2966b891d3b55d236ef97cd65fd608c892963248b808bb2903d040f2771ca64",
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/TRACE_GATE-151b6bec86e6fa6b.md": "fc93de23a14a7ea7705c6d21045aae9e5a89da4456613519de1104a52437d3f6",
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16-7a6b13bd8dc79184.py": "94d81cac39baf54ef7ae701a8436b3bd891652dc8cae1471e0f3c1d7379006f0",
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16-e85af41ebb5f3988.txt.gz": "48cf7c7fedc99a9063348915102a0c519d657dac72780285a21950064ea91ac9",
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/citation_graph_manifest-c62d06ab535f0231.json.gz": "76107dad032c1759fa09a95cf7aac56f984c1dc18ef6ea86d7609c311ce870ca",
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_exact-0e078d3e64a7b76c.py": "a8f7a98bfe52150682ee4f1258feaf4a981f1667dbc8636969bb711e41aa4869",
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_exact.out-891d6f3da2690316.txt.gz": "46d6a4bfcc3cc34bda23fc4a1b44bb95162a463334c31daa69edfcbed09ac693",
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_fit-75dc4ad65a2006b6.py": "e3e747a96d357aa924633cdd2fc787328928f70ab365786e87af02d59be62a82",
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_fit.out-e65f9660e918cddf.txt.gz": "2e6dd197db579e5d16da975ed6572c0db1f4d4b312348fcffc0057ea5c39a53e",
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_refuter-eb0b609f3f34e516.py": "a45d93a50107988710e370ea8fcfd3e5c02c9d9acc021c7d4c7d65389b4b8474",
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_refuter.out-6369a7bd268aca02.txt.gz": "b2002e8f3ea785e0d5a36f37ce85a2a3be1a102c3374f4c66b4281e1600c2e01",
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_sixaxis_sim-42e69bc4a408b08b.py": "1ff3e186c5eb7c7777ac0ccbafe3555724305e892a9e7f381f37c497472458ea",
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_sixaxis_sim.out-69da2aaa54f4ba02.txt.gz": "2168ab947944e6583ef7e504febc0a58e85f0712c1553709efe44290db2be474",
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_sphere_sim-fa0bc7e4e8db6745.py": "d1a2a10be02d8c4aacb3922a8b619ed1e98b8a44c2b5a08f5a252a66327d233e",
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_sphere_sim.out-d6fb9c6074f0412b.txt.gz": "c46a7ee8fd505a3126d4a4f74bae7f412378a7dfa969fe24914acc4293d81051",
+    "logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--exact_mean_gain_wrong.json": "fde9a3d790e4481489575d2ed1c1ba209f1dbac6dd066d33dd57fb2fdb011298",
+    "logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--exponent_wrong.json": "42e5578807987ebd3236ff2781652dfe6cd1acd9506f944d01cd550d4bff7e36",
+    "logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--gain_wrong.json": "9f7b6e0c215282bd7195ec82d25f54e24112349950899e34f51a5dd0ba90e717",
+    "logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--harmonic_bound_wrong.json": "46145f43073f70ac86829cce662d8dcd79e9f46f904599313d091ccb82f09423",
+    "logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--kernel_mean_wrong.json": "89e85701d89547a458ab1d5794d4a5892d7ad7a824a796d0e6f8da1e9eebd568",
+    "logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--langevin_bound_wrong.json": "47b27be71d40387be171d12400e84b01ab1388ff6953e7e533ed7e8198448b7c",
+    "logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--minorization_wrong.json": "933e8a9bdcda388ab1d23d78b12f02ca45c17b38fe06199c3ed2b7e28e9abb8f",
+    "logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--one_site_chain_wrong.json": "6bbc1e7a8a61ff285cf29306ebb7b953a5fae024663392dbaabfa53dd44d2591",
+    "logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--path_identity_wrong.json": "38e303c79b4c1c1b0eaebd7c00fc8f54dd39fc61fe3d44402421bde25e9161b5",
+    "logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--positive_series_coefficient_wrong.json": "42c6b71068f5ce73b464ad3e799821183f5b08ddbafc69eb705d7589bb841068",
+    "logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--return_constant_wrong.json": "1bc11cbbd0cf9f7048afd830e8f820b155d7ff44a34a02c6c15c0296c7169cca",
+    "logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--return_lower_bound_wrong.json": "5b204536b02b7950c6bdfbee3e4ae1ebf3ac516113707675357b3bb6b79783aa",
+    "logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--second_moment_wrong.json": "32c27165d604401ecc91c36cea3b8024fc274f41b770af8b0c3ddda2baf8d340",
+    "logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--sixaxis_deviation_wrong.json": "e82aa4196da03a01ffd12783312a4ac1a350079458eb0527039f4de75d276f78",
+    "logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.json": "a0fe2c7586344abff18c783f0ef7920998ac8da3c802e1f43af53a79edf84b4e",
+    "logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.txt": "dc7e5fd12c14d6b4d5e8d87657b6c3c4bc9fd9ddacf0b5ed0049d02a7be7f30f",
+    "scripts/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.py": "3bcc5fd69299c8c176321bd95ae46416a3325e4a0ed1f9916ff820baf7236cca"
+  },
+  "original_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "original_mode": "100644",
+      "original_blob": "4e9fef47b9eac07da6061e8d5eb2cc26575174eb",
+      "original_sha256": "24ea06f9384ee6eb4becbad9cf8132d32a753e821c0f8488a1308e9fcf685ecf",
+      "recovery": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/APPROACH_REGISTRY-4e9fef47b9eac07d.md",
+      "recovery_encoding": "identity",
+      "disposition": "Deferred historical science and provenance; all failures/NaNs/observables retained, not current execution or authority",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block26_findings.md",
+      "original_mode": "100644",
+      "original_blob": "c0a6cd25f43f3f2c976cb82368051297852f158e",
+      "original_sha256": "6c7d0f099effdd8349bb75de1adbaa85a54aaf0822ea429e6a66fca4e8896b74",
+      "recovery": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/CHECKER_block26_findings-c0a6cd25f43f3f2c.md",
+      "recovery_encoding": "identity",
+      "disposition": "Deferred historical science and provenance; all failures/NaNs/observables retained, not current execution or authority",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block26.md",
+      "original_mode": "100644",
+      "original_blob": "315a8231a89a61c44ecc5e38d54291af23833e2f",
+      "original_sha256": "ebf19ceedb084cdc1a8e6ccc865d8dd5f06ba58f8b6dc50ac5a9045db9bb580a",
+      "recovery": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/CLAIM_STATUS_CERTIFICATE_block26-315a8231a89a61c4.md",
+      "recovery_encoding": "identity",
+      "disposition": "Deferred historical science and provenance; all failures/NaNs/observables retained, not current execution or authority",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block26.md",
+      "original_mode": "100644",
+      "original_blob": "083903adfde6cc318aa66758c8022fcdac62fa26",
+      "original_sha256": "8d5d40f4796993afc416746d092b6385ba93378ab247a955797afaedad05d151",
+      "recovery": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/GOAL_block26-083903adfde6cc31.md",
+      "recovery_encoding": "identity",
+      "disposition": "Deferred historical science and provenance; all failures/NaNs/observables retained, not current execution or authority",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "original_mode": "100644",
+      "original_blob": "2061d1bff2a7039726e7e01d01eb816e20ec6b56",
+      "original_sha256": "b85c9887abf8f9af60f2974d02d8c1a036ea3db4c969895237c29fc6f46f90ed",
+      "recovery": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/HANDOFF-2061d1bff2a70397.md",
+      "recovery_encoding": "identity",
+      "disposition": "Deferred historical science and provenance; all failures/NaNs/observables retained, not current execution or authority",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+      "original_mode": "100644",
+      "original_blob": "05cc24d6760014de53cdc6d8daf3f24fba7dddda",
+      "original_sha256": "9d9d9077de70a3e446bb15eb57d148c418d4f8a7b868753c7016dfe7aedf0d8f",
+      "recovery": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/NO_GO_LEDGER-05cc24d6760014de.md",
+      "recovery_encoding": "identity",
+      "disposition": "Deferred historical science and provenance; all failures/NaNs/observables retained, not current execution or authority",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "original_mode": "100644",
+      "original_blob": "72e985a42c72b74eed9bebb56a92f52bb3be65d2",
+      "original_sha256": "1776ff224ff72af33f15155d54dd9d157d476102cf4bf80e62d9ab0471846dd3",
+      "recovery": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/OPPORTUNITY_QUEUE-72e985a42c72b74e.md",
+      "recovery_encoding": "identity",
+      "disposition": "Deferred historical science and provenance; all failures/NaNs/observables retained, not current execution or authority",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block26.md",
+      "original_mode": "100644",
+      "original_blob": "0263fa9278e6135389aa6107f9d9a23d2026cf4d",
+      "original_sha256": "800fb7d3beb194b60b4447d9c723f9e226aa6421730ac807054747f6923aabd8",
+      "recovery": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/RESULTS_block26-0263fa9278e61353.md",
+      "recovery_encoding": "identity",
+      "disposition": "Deferred historical science and provenance; all failures/NaNs/observables retained, not current execution or authority",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "original_mode": "100644",
+      "original_blob": "5eeaa28fca70564ae1a0bf97c3e5185c90597dfc",
+      "original_sha256": "5b780ecf7ed43201a33effef1feb629e96679b9f4c009f0f1f745e4bd15fd638",
+      "recovery": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/REVIEW_HISTORY-5eeaa28fca70564a.md",
+      "recovery_encoding": "identity",
+      "disposition": "Deferred historical science and provenance; all failures/NaNs/observables retained, not current execution or authority",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "original_mode": "100644",
+      "original_blob": "829e293fc3eb28c8bf96c0c0f4776ed733fcc155",
+      "original_sha256": "d2966b891d3b55d236ef97cd65fd608c892963248b808bb2903d040f2771ca64",
+      "recovery": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/STATE-829e293fc3eb28c8.yaml",
+      "recovery_encoding": "identity",
+      "disposition": "Deferred historical science and provenance; all failures/NaNs/observables retained, not current execution or authority",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "original_mode": "100644",
+      "original_blob": "151b6bec86e6fa6b0e4413619d91661f998f8e4a",
+      "original_sha256": "fc93de23a14a7ea7705c6d21045aae9e5a89da4456613519de1104a52437d3f6",
+      "recovery": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/TRACE_GATE-151b6bec86e6fa6b.md",
+      "recovery_encoding": "identity",
+      "disposition": "Deferred historical science and provenance; all failures/NaNs/observables retained, not current execution or authority",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_exact.out.txt",
+      "original_mode": "100644",
+      "original_blob": "891d6f3da269031690e16d1575897d1904f14cae",
+      "original_sha256": "089bdbcdbd1b3b21fc58e6f0b641d21c17fff96d69d5ddfa19a990377c54c676",
+      "recovery": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_exact.out-891d6f3da2690316.txt.gz",
+      "recovery_encoding": "gzip",
+      "disposition": "Deferred historical science and provenance; all failures/NaNs/observables retained, not current execution or authority",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_exact.py",
+      "original_mode": "100644",
+      "original_blob": "0e078d3e64a7b76c245aa95223461be6becd5147",
+      "original_sha256": "a8f7a98bfe52150682ee4f1258feaf4a981f1667dbc8636969bb711e41aa4869",
+      "recovery": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_exact-0e078d3e64a7b76c.py",
+      "recovery_encoding": "identity",
+      "disposition": "Deferred historical science and provenance; all failures/NaNs/observables retained, not current execution or authority",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_fit.out.txt",
+      "original_mode": "100644",
+      "original_blob": "e65f9660e918cddfe5894845c60b4915a40a6f17",
+      "original_sha256": "6e2572ac84539b3ba3f85ecedea98d6399adc06b41ed526573912e602df4cb0b",
+      "recovery": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_fit.out-e65f9660e918cddf.txt.gz",
+      "recovery_encoding": "gzip",
+      "disposition": "Deferred historical science and provenance; all failures/NaNs/observables retained, not current execution or authority",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_fit.py",
+      "original_mode": "100644",
+      "original_blob": "75dc4ad65a2006b6ebca689fca3dee4595e9771d",
+      "original_sha256": "e3e747a96d357aa924633cdd2fc787328928f70ab365786e87af02d59be62a82",
+      "recovery": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_fit-75dc4ad65a2006b6.py",
+      "recovery_encoding": "identity",
+      "disposition": "Deferred historical science and provenance; all failures/NaNs/observables retained, not current execution or authority",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_refuter.out.txt",
+      "original_mode": "100644",
+      "original_blob": "6369a7bd268aca024feac2ea1a50e76123be7a57",
+      "original_sha256": "4761cd588ba67061c53fee1aa7c750dc09f0bdfecab615cbc516231226021ef2",
+      "recovery": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_refuter.out-6369a7bd268aca02.txt.gz",
+      "recovery_encoding": "gzip",
+      "disposition": "Deferred historical science and provenance; all failures/NaNs/observables retained, not current execution or authority",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_refuter.py",
+      "original_mode": "100644",
+      "original_blob": "eb0b609f3f34e516fd172edcdf78afa0206d92d2",
+      "original_sha256": "a45d93a50107988710e370ea8fcfd3e5c02c9d9acc021c7d4c7d65389b4b8474",
+      "recovery": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_refuter-eb0b609f3f34e516.py",
+      "recovery_encoding": "identity",
+      "disposition": "Deferred historical science and provenance; all failures/NaNs/observables retained, not current execution or authority",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_sixaxis_sim.out.txt",
+      "original_mode": "100644",
+      "original_blob": "69da2aaa54f4ba0272614bea030c413a5beb9019",
+      "original_sha256": "8f7009704e40af92484f50b9d855f01084ea0f756383a61b18155584d9df2edb",
+      "recovery": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_sixaxis_sim.out-69da2aaa54f4ba02.txt.gz",
+      "recovery_encoding": "gzip",
+      "disposition": "Deferred historical science and provenance; all failures/NaNs/observables retained, not current execution or authority",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_sixaxis_sim.py",
+      "original_mode": "100644",
+      "original_blob": "42e69bc4a408b08b062af77b0a6d479cce656b10",
+      "original_sha256": "1ff3e186c5eb7c7777ac0ccbafe3555724305e892a9e7f381f37c497472458ea",
+      "recovery": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_sixaxis_sim-42e69bc4a408b08b.py",
+      "recovery_encoding": "identity",
+      "disposition": "Deferred historical science and provenance; all failures/NaNs/observables retained, not current execution or authority",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_sphere_sim.out.txt",
+      "original_mode": "100644",
+      "original_blob": "d6fb9c6074f0412b057702002b1a47fe0665d605",
+      "original_sha256": "7b8e562e1882ac13075e437bcbce3de629f73802d5aaa6f49d40df1f4badb10a",
+      "recovery": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_sphere_sim.out-d6fb9c6074f0412b.txt.gz",
+      "recovery_encoding": "gzip",
+      "disposition": "Deferred historical science and provenance; all failures/NaNs/observables retained, not current execution or authority",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block26_sphere_sim.py",
+      "original_mode": "100644",
+      "original_blob": "fa0bc7e4e8db67450a6fdefbeb603715642edfd7",
+      "original_sha256": "d1a2a10be02d8c4aacb3922a8b619ed1e98b8a44c2b5a08f5a252a66327d233e",
+      "recovery": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_sphere_sim-fa0bc7e4e8db6745.py",
+      "recovery_encoding": "identity",
+      "disposition": "Deferred historical science and provenance; all failures/NaNs/observables retained, not current execution or authority",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": "docs/ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_IN_LEVEL_TIME_GAIN_ONE_SPIN_WAVES_LOCAL_LIMIT_CONSTANT_FINITE_PLANES_FORGET_AND_THE_SIMULATED_ALGEBRAIC_DECAY_OF_THE_INITIAL_PLANE_MEMORY_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "original_mode": "100644",
+      "original_blob": "e50aaf4b6686e6471d2cc9a54f86bfdd1b8ba452",
+      "original_sha256": "8495f04ed691512ec1830f870965c3a149b7e77330f2a9ed0d40e6fa46887578",
+      "recovery": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_IN_LEVEL_TIME_GAIN_ONE_SPIN_WAVES_LOCAL_LIMIT_CONSTANT_FINITE_PLANES_FORGET_AND_THE_SIMULATED_ALGEBRAIC_DECAY_OF_THE_INITIAL_PLANE_MEMORY_BOUNDED_THEOREM_NOTE_2026-09-16-e50aaf4b6686e647.md",
+      "recovery_encoding": "identity",
+      "disposition": "Narrowed and corrected canonical mathematical source; complete exact original retained",
+      "final_path": "docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "final_sha256": "bd7968234832dcd13368f4208b2081a69aaf9674b1e9b24b65f44ee986f26b0a"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_mode": "100644",
+      "original_blob": "c62d06ab535f0231d64120d2b5175de48cff2497",
+      "original_sha256": "27c03592cfde345ef30501764424cf18a6ba9505d70de41b5ecc8c413ef90f8b",
+      "recovery": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/citation_graph_manifest-c62d06ab535f0231.json.gz",
+      "recovery_encoding": "gzip",
+      "disposition": "Historical topology superseded; preserve current-main map, coordinator rebuilds final graph",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": "logs/runner-cache/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16.txt",
+      "original_mode": "100644",
+      "original_blob": "e85af41ebb5f398804eceff03ff2244bbf9820a5",
+      "original_sha256": "d874a47eda88679834b991daaf2acc21997e700e1cba620a578df20a7e630661",
+      "recovery": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16-e85af41ebb5f3988.txt.gz",
+      "recovery_encoding": "gzip",
+      "disposition": "Deferred historical science and provenance; all failures/NaNs/observables retained, not current execution or authority",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": "scripts/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16.py",
+      "original_mode": "100755",
+      "original_blob": "7a6b13bd8dc791840048782dfb83081b5f6ee2d6",
+      "original_sha256": "94d81cac39baf54ef7ae701a8436b3bd891652dc8cae1471e0f3c1d7379006f0",
+      "recovery": "docs/work_history/repo/review_feedback/pr8170-evidence/kept/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16-7a6b13bd8dc79184.py",
+      "recovery_encoding": "identity",
+      "disposition": "Narrowed and corrected canonical mathematical source; complete exact original retained",
+      "final_path": "scripts/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.py",
+      "final_sha256": "3bcc5fd69299c8c176321bd95ae46416a3325e4a0ed1f9916ff820baf7236cca"
+    }
+  ],
+  "claim_dispositions": [
+    {
+      "claim": "kernel moments",
+      "disposition": "Retained complete derivation; strict mean bound repaired by positive entire-series coefficients; S=0 uniform case supplied."
+    },
+    {
+      "claim": "mean/mode",
+      "disposition": "Exact conditional mean gain A(3beta); quadratic maximum and normalized direction gain one separated."
+    },
+    {
+      "claim": "walk local limit",
+      "disposition": "Complete literal proof and all rational fixtures through k150 retained; harmonic constant1/4 unchanged."
+    },
+    {
+      "claim": "finite planes",
+      "disposition": "Complete literal uniform-minorization/unique rotation-invariant law and L1 recursion retained; no betaL\u00b2 scale inferred."
+    },
+    {
+      "claim": "auxiliary variance",
+      "disposition": "Independent supplied average-plus-noise recurrence only; full variance/path proof retained with P0 upper allowance and asymptotic equivalence."
+    },
+    {
+      "claim": "auxiliary obstruction",
+      "disposition": "Complete valid proof readable in deferred appendix; formal negative promotion deferred."
+    },
+    {
+      "claim": "six-axis identities",
+      "disposition": "Finite conditional weight enumeration only; exact original runner family retained. Current formation theorem context acknowledged, not imported."
+    },
+    {
+      "claim": "historical fits and simulations",
+      "disposition": "All original values, NaNs, signed projections, source/output mismatches preserved. No current parser or simulation promotion."
+    },
+    {
+      "claim": "twist/nonlinear conjectures",
+      "disposition": "Exact original and corrected reading preserved; no five-route certificate, fixed-twist cost not universal impossibility; branch retained."
+    },
+    {
+      "claim": "old phase map",
+      "disposition": "Unconditional/static settled comparison withdrawn; reviewed main formation and conditional static context distinct."
+    }
+  ],
+  "branch_retention_required": true,
+  "source_confirmation": {
+    "cold_paths_unchanged": 30,
+    "final_staged_paths": 46,
+    "added_evidence_paths": 16,
+    "original_recoveries": 25,
+    "verification": "All final worktree and stage-0 bytes match the exact 46-path freeze; exact staged path set and tree match, no unstaged changes. All real input hashes and every capture before/after generation match. All 25 recoveries decoded as applicable and independently matched to original raw SHA256 and Git blob identities. Final disposition paths and hashes verified.",
+    "proof_scope": "The full previously reviewed local-limit and finite-plane proofs remain unchanged. Exact moments, repaired positive-series inequality, exact mean Jacobian, mode expansion, auxiliary gain-one variance/proxy and finite-plane minorization remain distinct. The supplied kernel, beta and update schedule are assumptions, not axiom-selected laws.",
+    "no_summary_loss": "Full original proof, program, input and raw historical failure bodies remain in byte-exact recovery. The complete deferred auxiliary no-finite-variance-stationary-law argument remains preserved; no negative result is fake-certified or discarded.",
+    "deferred": "Nonlinear infinite-plane memory/exponent claims, finite-size scaling extrapolation, phase and broad twist/no-go certification remain unlanded. Historical fit/simulation outputs remain recovery only; partial salvage requires original branch retention."
+  },
+  "main_interaction": {
+    "from": "012c276a64c80cf5256d68fa7dbb06939586153b",
+    "to": "8bf464953779b8ada8415208e89a656411f9f525",
+    "changes": "Train83 adds four supplied compact-rotor/comparison notes and a supplied frame-attached four-point probability note, their runners/evidence/recovery and topology acknowledgment.",
+    "assessment": "PR8166 concerns lifted Brownian bridges, real convex comparison, conditional integer filling and magnetic covariance; its compact-law transfer and physical selection remain open. PR8169 concerns exchange-covariant probabilities on a finite frame-attached menu and explicitly supplies its representation/menu. Neither changes the uniform-sphere, three-predecessor level kernel supplied by PR8170, nor supplies its beta, schedule, law or noise. No proof/import from these additions is consumed. No overlapping source path or changed premise/helper/API requires reopening sphere mathematics.",
+    "unchanged": "Axiom memo, primitive registry, product-rule parent, review-loop sources and runner_cache unchanged across base advance; prior now-landed PR8168 small-noise context unchanged.",
+    "preservation": "Candidate adds only its exact 30 paths; train83 source, history and current shared boards are retained intact. Historical topology is compressed recovery only; live final topology regeneration remains coordinator duty."
+  },
+  "evidence_confirmation": {
+    "primary": "One accepted-adapter primary attempt, 17 passed and 0 failed; full actual raw result equals receipt result and baseline structured data/source/input pins match.",
+    "mutations": "All fourteen distinct planned invocations attempted once, each exit 1 with its actual expected failed family and 17 total checks. Structured results equal retained per-mutation JSON; stdout totals match. Every raw stdout/stderr and receipt artifact hash verified. No mutation survived, no abnormal failure or cap breach reported.",
+    "epistemic_scope": "Finite exact/symbolic diagnostic checks and mutation sensitivity support the implementation. They do not replace the retained written all-domain proofs and do not establish a nonlinear infinite-plane law. No simulations were used for current certification.",
+    "executions": [
+      {
+        "receipt": "/private/tmp/review-drain-20260915/drain8170-execution-v2.json",
+        "mutation": null,
+        "failed_tags": [],
+        "elapsed_seconds": 3.821214916999452,
+        "sampled_peak_bytes": 131317760
+      },
+      {
+        "receipt": "/private/tmp/review-drain-20260915/drain8170-mutation-kernel_mean_wrong-v1.json",
+        "mutation": "kernel_mean_wrong",
+        "failed_tags": [
+          "B1"
+        ],
+        "elapsed_seconds": 3.94147050002357,
+        "sampled_peak_bytes": 105070592
+      },
+      {
+        "receipt": "/private/tmp/review-drain-20260915/drain8170-mutation-second_moment_wrong-v1.json",
+        "mutation": "second_moment_wrong",
+        "failed_tags": [
+          "B1"
+        ],
+        "elapsed_seconds": 3.9479225000250153,
+        "sampled_peak_bytes": 104660992
+      },
+      {
+        "receipt": "/private/tmp/review-drain-20260915/drain8170-mutation-langevin_bound_wrong-v1.json",
+        "mutation": "langevin_bound_wrong",
+        "failed_tags": [
+          "B2"
+        ],
+        "elapsed_seconds": 3.556882124976255,
+        "sampled_peak_bytes": 104759296
+      },
+      {
+        "receipt": "/private/tmp/review-drain-20260915/drain8170-mutation-gain_wrong-v1.json",
+        "mutation": "gain_wrong",
+        "failed_tags": [
+          "C1"
+        ],
+        "elapsed_seconds": 4.032976709015202,
+        "sampled_peak_bytes": 104054784
+      },
+      {
+        "receipt": "/private/tmp/review-drain-20260915/drain8170-mutation-path_identity_wrong-v1.json",
+        "mutation": "path_identity_wrong",
+        "failed_tags": [
+          "D1"
+        ],
+        "elapsed_seconds": 3.869502542016562,
+        "sampled_peak_bytes": 104939520
+      },
+      {
+        "receipt": "/private/tmp/review-drain-20260915/drain8170-mutation-return_constant_wrong-v1.json",
+        "mutation": "return_constant_wrong",
+        "failed_tags": [
+          "D2"
+        ],
+        "elapsed_seconds": 3.563531541964039,
+        "sampled_peak_bytes": 104054784
+      },
+      {
+        "receipt": "/private/tmp/review-drain-20260915/drain8170-mutation-return_lower_bound_wrong-v1.json",
+        "mutation": "return_lower_bound_wrong",
+        "failed_tags": [
+          "D2"
+        ],
+        "elapsed_seconds": 3.400597875006497,
+        "sampled_peak_bytes": 104906752
+      },
+      {
+        "receipt": "/private/tmp/review-drain-20260915/drain8170-mutation-harmonic_bound_wrong-v1.json",
+        "mutation": "harmonic_bound_wrong",
+        "failed_tags": [
+          "D3"
+        ],
+        "elapsed_seconds": 3.2136330000357702,
+        "sampled_peak_bytes": 104660992
+      },
+      {
+        "receipt": "/private/tmp/review-drain-20260915/drain8170-mutation-one_site_chain_wrong-v1.json",
+        "mutation": "one_site_chain_wrong",
+        "failed_tags": [
+          "E1"
+        ],
+        "elapsed_seconds": 3.3944684579619206,
+        "sampled_peak_bytes": 105660416
+      },
+      {
+        "receipt": "/private/tmp/review-drain-20260915/drain8170-mutation-minorization_wrong-v1.json",
+        "mutation": "minorization_wrong",
+        "failed_tags": [
+          "E2"
+        ],
+        "elapsed_seconds": 3.2451867909985594,
+        "sampled_peak_bytes": 105119744
+      },
+      {
+        "receipt": "/private/tmp/review-drain-20260915/drain8170-mutation-exponent_wrong-v1.json",
+        "mutation": "exponent_wrong",
+        "failed_tags": [
+          "E3"
+        ],
+        "elapsed_seconds": 3.225284375017509,
+        "sampled_peak_bytes": 105037824
+      },
+      {
+        "receipt": "/private/tmp/review-drain-20260915/drain8170-mutation-sixaxis_deviation_wrong-v1.json",
+        "mutation": "sixaxis_deviation_wrong",
+        "failed_tags": [
+          "E4"
+        ],
+        "elapsed_seconds": 3.207336540974211,
+        "sampled_peak_bytes": 104628224
+      },
+      {
+        "receipt": "/private/tmp/review-drain-20260915/drain8170-mutation-positive_series_coefficient_wrong-v1.json",
+        "mutation": "positive_series_coefficient_wrong",
+        "failed_tags": [
+          "B2"
+        ],
+        "elapsed_seconds": 3.229883083025925,
+        "sampled_peak_bytes": 103645184
+      },
+      {
+        "receipt": "/private/tmp/review-drain-20260915/drain8170-mutation-exact_mean_gain_wrong-v1.json",
+        "mutation": "exact_mean_gain_wrong",
+        "failed_tags": [
+          "C2"
+        ],
+        "elapsed_seconds": 4.480663415975869,
+        "sampled_peak_bytes": 104382464
+      }
+    ]
+  },
+  "resource_observations": {
+    "per_invocation_limits_seconds": 900,
+    "per_invocation_sampled_rss_limit_bytes": 805306368,
+    "primary_elapsed_seconds": 3.821214916999452,
+    "primary_sampled_peak_bytes": 131317760,
+    "mutation_max_elapsed_seconds": 4.480663415975869,
+    "mutation_max_sampled_peak_bytes": 105660416,
+    "mutation_total_elapsed_seconds": 50.309339457016904,
+    "limitations": "Observed sampled supervisor/process-tree RSS for these runs, not OS hard reservations or a universal future resource guarantee. No automatic retries or enlarged caps."
+  },
+  "reviewer_actions": {
+    "science_executions": 0,
+    "primary_runs": 0,
+    "mutation_runs": 0,
+    "formal_gates": 0,
+    "source_edits": 0,
+    "staging": 0,
+    "commits": 0
+  },
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-execution-v2.json",
+      "sha256": "2e1c3b552c2f124359f1ba5477b2ada78510272e124bea3eae44b340c070831b"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.json",
+      "sha256": "a0fe2c7586344abff18c783f0ef7920998ac8da3c802e1f43af53a79edf84b4e"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.txt",
+      "sha256": "dc7e5fd12c14d6b4d5e8d87657b6c3c4bc9fd9ddacf0b5ed0049d02a7be7f30f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-worker-v2.json",
+      "sha256": "5f081e2d403512ddf07b89ea0836d48d8e7eee9f097ae3c3fe2a35e411a2448e"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-supervisor-v2.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-raw-result-v2.json",
+      "sha256": "479f847542aee41377f764f8d9624ddd6a6a606cc1f90b20f1a28227e7ff1d16"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-author-unit-draft-v1.json",
+      "sha256": "c06333ca7a1f24fe9f4cbdbe38d37063188a23c8353f0ff80ef6c804bd8f2677"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-cold-adapter-confirmation-v2.json",
+      "sha256": "4c1b862894176eb5079b3ffd81d30490e0862a741fcbe773dd5bd14b3078d625"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-capture-v2.py",
+      "sha256": "dff1c5e96b79a8267aa856865b7d158dc2bc342a7587698ded1bca8182303379"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-author-cheap-v1.json",
+      "sha256": "284f9f2acbc5fda7e5b0352ab031e3a0563901ea83c0723f4520884639601c42"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-kernel_mean_wrong-v1.json",
+      "sha256": "286e6845721cdcd74e854b9b27fefc7c5920cff9fd10cc1a71d941e92e824b9d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-kernel_mean_wrong-v1.stdout.txt",
+      "sha256": "098156cb0413d103db4fb470e44f63ddc2c4ccc51358a2f514154ecc118adb57"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-kernel_mean_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--kernel_mean_wrong.json",
+      "sha256": "89e85701d89547a458ab1d5794d4a5892d7ad7a824a796d0e6f8da1e9eebd568"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-capture-v1.py",
+      "sha256": "54d4a4d1974e7295b5b1a7ad38d353bc74d0bb3dbbfe86a253b29a1831aa849e"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-second_moment_wrong-v1.json",
+      "sha256": "44678e090ee028f99c25d3b865d9db29c8dbd478efe760819f9c078387f96605"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-second_moment_wrong-v1.stdout.txt",
+      "sha256": "098156cb0413d103db4fb470e44f63ddc2c4ccc51358a2f514154ecc118adb57"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-second_moment_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--second_moment_wrong.json",
+      "sha256": "32c27165d604401ecc91c36cea3b8024fc274f41b770af8b0c3ddda2baf8d340"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-langevin_bound_wrong-v1.json",
+      "sha256": "ec32ada66fc135451c0c817a56c9f86d00e2a0ec09e0db574b6dcacaf15e53c5"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-langevin_bound_wrong-v1.stdout.txt",
+      "sha256": "c5c7c0973bfcf79f3fb63dc4071602270eb79a5ff5561f6d8320f6eb13c588d1"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-langevin_bound_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--langevin_bound_wrong.json",
+      "sha256": "47b27be71d40387be171d12400e84b01ab1388ff6953e7e533ed7e8198448b7c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-gain_wrong-v1.json",
+      "sha256": "a6e279c6cabc1fdb35142e4eb693a6320882528496da2386c07711fddf311a83"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-gain_wrong-v1.stdout.txt",
+      "sha256": "084743a3ebe4957eb50b9856613eb5eef78dd5bf1682d02bcc70d0583427ae1b"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-gain_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--gain_wrong.json",
+      "sha256": "9f7b6e0c215282bd7195ec82d25f54e24112349950899e34f51a5dd0ba90e717"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-path_identity_wrong-v1.json",
+      "sha256": "17108dc2958c57c301b4b3999819eeabce0f2ec26126a1ce24e9e593a8ee3143"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-path_identity_wrong-v1.stdout.txt",
+      "sha256": "d205a5b319bc5734d9ecac88bdcfd69a08f6528799c969951c601c6d857a0d70"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-path_identity_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--path_identity_wrong.json",
+      "sha256": "38e303c79b4c1c1b0eaebd7c00fc8f54dd39fc61fe3d44402421bde25e9161b5"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-return_constant_wrong-v1.json",
+      "sha256": "0945b8cad3154792c5467ae619faaf1d08463da9ec0ce596d10f3b71c24a2295"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-return_constant_wrong-v1.stdout.txt",
+      "sha256": "fd5d276d5475d00ac417553e4b0743452cac35f52d2af736b8e481506f6e9824"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-return_constant_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--return_constant_wrong.json",
+      "sha256": "1bc11cbbd0cf9f7048afd830e8f820b155d7ff44a34a02c6c15c0296c7169cca"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-return_lower_bound_wrong-v1.json",
+      "sha256": "fd3a167f5379aeb757d042292f583a541bc1555445719c8b35aad557f2a1f135"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-return_lower_bound_wrong-v1.stdout.txt",
+      "sha256": "fd5d276d5475d00ac417553e4b0743452cac35f52d2af736b8e481506f6e9824"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-return_lower_bound_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--return_lower_bound_wrong.json",
+      "sha256": "5b204536b02b7950c6bdfbee3e4ae1ebf3ac516113707675357b3bb6b79783aa"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-harmonic_bound_wrong-v1.json",
+      "sha256": "edb1ffb448f855cc29ba3613f19081122051d06c40392e86bcc71ccfea3dcfd5"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-harmonic_bound_wrong-v1.stdout.txt",
+      "sha256": "8e97d522cdf0d74834a3ef66203a935bcc729718ff927c35d457ab77cc3017b5"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-harmonic_bound_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--harmonic_bound_wrong.json",
+      "sha256": "46145f43073f70ac86829cce662d8dcd79e9f46f904599313d091ccb82f09423"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-one_site_chain_wrong-v1.json",
+      "sha256": "ec86cc448a87df44730b6a45a37a408d9c200269f0ad2d888cd28b978c098d28"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-one_site_chain_wrong-v1.stdout.txt",
+      "sha256": "19a8e3abef42cb93bd9965d7d16cadf49529d0cf38f3172bdfabaa961838d0f0"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-one_site_chain_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--one_site_chain_wrong.json",
+      "sha256": "6bbc1e7a8a61ff285cf29306ebb7b953a5fae024663392dbaabfa53dd44d2591"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-minorization_wrong-v1.json",
+      "sha256": "597e281848a3ae050942105e9dbee35b3cc1a8322f359daac8df9b3956801e50"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-minorization_wrong-v1.stdout.txt",
+      "sha256": "3d880705c3c8ff1b032ce14c7dcf6132bfbc1615f6ab68737c48e6b39af65e86"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-minorization_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--minorization_wrong.json",
+      "sha256": "933e8a9bdcda388ab1d23d78b12f02ca45c17b38fe06199c3ed2b7e28e9abb8f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-exponent_wrong-v1.json",
+      "sha256": "4a554a5f16621aba8aba3e643efc9f1ef90811a7ebaecf6ca8e21a2296f5a99a"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-exponent_wrong-v1.stdout.txt",
+      "sha256": "44b0486eea399c17d28d79afc11ce5e287bd8263d295a299ffd2394b04984d39"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-exponent_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--exponent_wrong.json",
+      "sha256": "42e5578807987ebd3236ff2781652dfe6cd1acd9506f944d01cd550d4bff7e36"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-sixaxis_deviation_wrong-v1.json",
+      "sha256": "d260ce05b97770d4ba7279df69b4029aa6ec7170053999d996a17a36f7393831"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-sixaxis_deviation_wrong-v1.stdout.txt",
+      "sha256": "1869afc977ef585b963b9cf6cf7e215ab0846cb3a468002a5fad343286fd32e7"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-sixaxis_deviation_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--sixaxis_deviation_wrong.json",
+      "sha256": "e82aa4196da03a01ffd12783312a4ac1a350079458eb0527039f4de75d276f78"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-positive_series_coefficient_wrong-v1.json",
+      "sha256": "76c82f226aac5a003d5781e9b2cc95db79895cb386b155ec8a41274942e7408c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-positive_series_coefficient_wrong-v1.stdout.txt",
+      "sha256": "c5c7c0973bfcf79f3fb63dc4071602270eb79a5ff5561f6d8320f6eb13c588d1"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-positive_series_coefficient_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--positive_series_coefficient_wrong.json",
+      "sha256": "42c6b71068f5ce73b464ad3e799821183f5b08ddbafc69eb705d7589bb841068"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-exact_mean_gain_wrong-v1.json",
+      "sha256": "9d47b9d7251a1633b14f9ef28302b3033229b1072e829530ac94f23c63bf4463"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-exact_mean_gain_wrong-v1.stdout.txt",
+      "sha256": "005779ae6edcdc7040c52a7162724709b36d4e30bcc6e01c0b6cfb9632acca14"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-exact_mean_gain_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--exact_mean_gain_wrong.json",
+      "sha256": "fde9a3d790e4481489575d2ed1c1ba209f1dbac6dd066d33dd57fb2fdb011298"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-author-final-freeze.json",
+      "sha256": "9fe977da0c15248bb4a2da8b873aa16447a581f4b03a2634ed6dd69b583f3c67"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-author-source-handoff-v1.json",
+      "sha256": "0d85e4252f64f67313c7cf6a7e37da1a3a46f073bcb00583e438ea5280fff7e5"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-review-original.json",
+      "sha256": "50c0805a36729945a28283fc603c34612f709a1e120e3017170373d4031fed6c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-early-review-v2.json",
+      "sha256": "01bc3b8aadb5231e4145b7d9fd423727c058de7bf186ea30053abba16707d3e4"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-cold-review-v1.json",
+      "sha256": "253a8279b493e547f26b67b6c1133d9fad2f5c30c0dc7ec146a52c28d4cdb3e2"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-capture-preservation-control-v2.json",
+      "sha256": "a4328471bed78386347af4117e4e316ca0d9032127ef92491e0f2fbab1cfcc3c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-plan-v1.json",
+      "sha256": "8560f3cf1e71ce578feb6ff15b6a32ff13777fce09f937df6faff141f756b6ed"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8170/final_metadata.json",
+      "sha256": "9a1e95fb615833dbe079fa1d6afcad6ef43a441353c4b626c034cb542f648822"
+    }
+  ],
+  "remaining": "Coordinator final cache preflight, enrollment, integrated topology/gate, landing and closure. Original branch must remain available for unlanded negative certification."
+}

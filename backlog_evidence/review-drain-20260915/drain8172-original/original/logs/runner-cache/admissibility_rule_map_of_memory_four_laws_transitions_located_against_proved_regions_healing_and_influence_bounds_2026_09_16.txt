@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16.py
+runner_sha256: cdb2b7e3b0ffce085650a92498dc24f2797360a81e2b9ed38ef1d6f1de5013f6
+input_fingerprint_sha256: af57267012a2fc521548cf9fd34907a91d7ed2630d8803408fc55bbe93ef9fcf
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 5.66
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
+PASS: A1 the note carries its claim_id once
+PASS: A2 the axioms memo carries the four sentences quoted under Premises
+PASS: A3 block 01's note (on main) carries its claim_id and the rule's product form
+PASS: A4 all declared inputs exist
+PASS: B1 T1: block 08's criterion at (p, 1, 2): 3c = 406962630/413162167 < 1 at p = 37/10 and 3c = 871815/862244 > 1 at p = 19/5 (c the exact total-variation sensitivity to one predecessor, maximised over the 216 triples and the five alternatives)
+PASS: B2 T1: block 25's condition epsilon(p, 1, 2) <= 7/10^6 holds at p = 285718 and fails at 285717 (closed forms of the three deviations)
+PASS: C1 T2: on 300 random islands the coordinate maxima never increase under the noiseless majority rule and every island is empty at level D + 1, D = M_1 + M_2 + M_3 (2 islands still alive at level D)
+PASS: C2 T2: the noise-sensitive region U of an island (sites of levels 1..D+1 below some level-(D+1) site of the island's forward cone) has at most 18 (D+1)^3 sites on 120 random islands (largest ratio 6671/1728), and (D+1)(6D+5)(6D+4)/2 <= 18 (D+1)^3 since the difference is (D+1)(9D+8)
+PASS: D1 T3: the influence recursion D_{t+1}(x) = (beta/sqrt3) sum_j D_t(x - e_j) from D_0 = 2 at x_0 is solved exactly by 2 (sqrt3 beta)^t p_t(x - x_0), whose sum over the level is 2 (sqrt3 beta)^t (t <= 6, exact)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the six-axis conditional's exact sensitivity at two rational couplings; the three deviations' closed forms at 285717 and 285718
+per_site: executed — the coordinate maxima and the eroder bound on 300 random islands; the influence recursion's exact solution to t = 6
+per_mode: executed — the noise-sensitive region counted exactly on 120 random islands against 18 (D+1)^3; the polynomial inequality symbolically
+per_block: executed — the map of memory by simulation in the control and refuter specs (the six-axis formation law at (p,1,2) on 128^2 and 256^2 planes, the six-axis static law on 16^3, 24^3, 32^3, the sphere static law on 16^3, 24^3); brackets, not proved
+lattice_wide: T1-T3 proved as stated; the located strengths are executed brackets on finite planes and lattices
+PASS: G1 the five N5 resolution lines are printed
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

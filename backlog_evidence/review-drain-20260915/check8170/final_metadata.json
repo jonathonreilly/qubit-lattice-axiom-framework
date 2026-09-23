@@ -1,0 +1,439 @@
+{
+  "verified": true,
+  "tree": "2ab5e0ff2f8a8188572ffe402f0ded5f9433b214",
+  "paths": 46,
+  "original_recoveries": 25,
+  "executions": [
+    {
+      "receipt": "/private/tmp/review-drain-20260915/drain8170-execution-v2.json",
+      "mutation": null,
+      "failed_tags": [],
+      "elapsed_seconds": 3.821214916999452,
+      "sampled_peak_bytes": 131317760
+    },
+    {
+      "receipt": "/private/tmp/review-drain-20260915/drain8170-mutation-kernel_mean_wrong-v1.json",
+      "mutation": "kernel_mean_wrong",
+      "failed_tags": [
+        "B1"
+      ],
+      "elapsed_seconds": 3.94147050002357,
+      "sampled_peak_bytes": 105070592
+    },
+    {
+      "receipt": "/private/tmp/review-drain-20260915/drain8170-mutation-second_moment_wrong-v1.json",
+      "mutation": "second_moment_wrong",
+      "failed_tags": [
+        "B1"
+      ],
+      "elapsed_seconds": 3.9479225000250153,
+      "sampled_peak_bytes": 104660992
+    },
+    {
+      "receipt": "/private/tmp/review-drain-20260915/drain8170-mutation-langevin_bound_wrong-v1.json",
+      "mutation": "langevin_bound_wrong",
+      "failed_tags": [
+        "B2"
+      ],
+      "elapsed_seconds": 3.556882124976255,
+      "sampled_peak_bytes": 104759296
+    },
+    {
+      "receipt": "/private/tmp/review-drain-20260915/drain8170-mutation-gain_wrong-v1.json",
+      "mutation": "gain_wrong",
+      "failed_tags": [
+        "C1"
+      ],
+      "elapsed_seconds": 4.032976709015202,
+      "sampled_peak_bytes": 104054784
+    },
+    {
+      "receipt": "/private/tmp/review-drain-20260915/drain8170-mutation-path_identity_wrong-v1.json",
+      "mutation": "path_identity_wrong",
+      "failed_tags": [
+        "D1"
+      ],
+      "elapsed_seconds": 3.869502542016562,
+      "sampled_peak_bytes": 104939520
+    },
+    {
+      "receipt": "/private/tmp/review-drain-20260915/drain8170-mutation-return_constant_wrong-v1.json",
+      "mutation": "return_constant_wrong",
+      "failed_tags": [
+        "D2"
+      ],
+      "elapsed_seconds": 3.563531541964039,
+      "sampled_peak_bytes": 104054784
+    },
+    {
+      "receipt": "/private/tmp/review-drain-20260915/drain8170-mutation-return_lower_bound_wrong-v1.json",
+      "mutation": "return_lower_bound_wrong",
+      "failed_tags": [
+        "D2"
+      ],
+      "elapsed_seconds": 3.400597875006497,
+      "sampled_peak_bytes": 104906752
+    },
+    {
+      "receipt": "/private/tmp/review-drain-20260915/drain8170-mutation-harmonic_bound_wrong-v1.json",
+      "mutation": "harmonic_bound_wrong",
+      "failed_tags": [
+        "D3"
+      ],
+      "elapsed_seconds": 3.2136330000357702,
+      "sampled_peak_bytes": 104660992
+    },
+    {
+      "receipt": "/private/tmp/review-drain-20260915/drain8170-mutation-one_site_chain_wrong-v1.json",
+      "mutation": "one_site_chain_wrong",
+      "failed_tags": [
+        "E1"
+      ],
+      "elapsed_seconds": 3.3944684579619206,
+      "sampled_peak_bytes": 105660416
+    },
+    {
+      "receipt": "/private/tmp/review-drain-20260915/drain8170-mutation-minorization_wrong-v1.json",
+      "mutation": "minorization_wrong",
+      "failed_tags": [
+        "E2"
+      ],
+      "elapsed_seconds": 3.2451867909985594,
+      "sampled_peak_bytes": 105119744
+    },
+    {
+      "receipt": "/private/tmp/review-drain-20260915/drain8170-mutation-exponent_wrong-v1.json",
+      "mutation": "exponent_wrong",
+      "failed_tags": [
+        "E3"
+      ],
+      "elapsed_seconds": 3.225284375017509,
+      "sampled_peak_bytes": 105037824
+    },
+    {
+      "receipt": "/private/tmp/review-drain-20260915/drain8170-mutation-sixaxis_deviation_wrong-v1.json",
+      "mutation": "sixaxis_deviation_wrong",
+      "failed_tags": [
+        "E4"
+      ],
+      "elapsed_seconds": 3.207336540974211,
+      "sampled_peak_bytes": 104628224
+    },
+    {
+      "receipt": "/private/tmp/review-drain-20260915/drain8170-mutation-positive_series_coefficient_wrong-v1.json",
+      "mutation": "positive_series_coefficient_wrong",
+      "failed_tags": [
+        "B2"
+      ],
+      "elapsed_seconds": 3.229883083025925,
+      "sampled_peak_bytes": 103645184
+    },
+    {
+      "receipt": "/private/tmp/review-drain-20260915/drain8170-mutation-exact_mean_gain_wrong-v1.json",
+      "mutation": "exact_mean_gain_wrong",
+      "failed_tags": [
+        "C2"
+      ],
+      "elapsed_seconds": 4.480663415975869,
+      "sampled_peak_bytes": 104382464
+    }
+  ],
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-execution-v2.json",
+      "sha256": "2e1c3b552c2f124359f1ba5477b2ada78510272e124bea3eae44b340c070831b"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.json",
+      "sha256": "a0fe2c7586344abff18c783f0ef7920998ac8da3c802e1f43af53a79edf84b4e"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.txt",
+      "sha256": "dc7e5fd12c14d6b4d5e8d87657b6c3c4bc9fd9ddacf0b5ed0049d02a7be7f30f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-worker-v2.json",
+      "sha256": "5f081e2d403512ddf07b89ea0836d48d8e7eee9f097ae3c3fe2a35e411a2448e"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-supervisor-v2.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-raw-result-v2.json",
+      "sha256": "479f847542aee41377f764f8d9624ddd6a6a606cc1f90b20f1a28227e7ff1d16"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-author-unit-draft-v1.json",
+      "sha256": "c06333ca7a1f24fe9f4cbdbe38d37063188a23c8353f0ff80ef6c804bd8f2677"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-cold-adapter-confirmation-v2.json",
+      "sha256": "4c1b862894176eb5079b3ffd81d30490e0862a741fcbe773dd5bd14b3078d625"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-capture-v2.py",
+      "sha256": "dff1c5e96b79a8267aa856865b7d158dc2bc342a7587698ded1bca8182303379"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-author-cheap-v1.json",
+      "sha256": "284f9f2acbc5fda7e5b0352ab031e3a0563901ea83c0723f4520884639601c42"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-kernel_mean_wrong-v1.json",
+      "sha256": "286e6845721cdcd74e854b9b27fefc7c5920cff9fd10cc1a71d941e92e824b9d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-kernel_mean_wrong-v1.stdout.txt",
+      "sha256": "098156cb0413d103db4fb470e44f63ddc2c4ccc51358a2f514154ecc118adb57"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-kernel_mean_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--kernel_mean_wrong.json",
+      "sha256": "89e85701d89547a458ab1d5794d4a5892d7ad7a824a796d0e6f8da1e9eebd568"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-capture-v1.py",
+      "sha256": "54d4a4d1974e7295b5b1a7ad38d353bc74d0bb3dbbfe86a253b29a1831aa849e"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-second_moment_wrong-v1.json",
+      "sha256": "44678e090ee028f99c25d3b865d9db29c8dbd478efe760819f9c078387f96605"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-second_moment_wrong-v1.stdout.txt",
+      "sha256": "098156cb0413d103db4fb470e44f63ddc2c4ccc51358a2f514154ecc118adb57"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-second_moment_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--second_moment_wrong.json",
+      "sha256": "32c27165d604401ecc91c36cea3b8024fc274f41b770af8b0c3ddda2baf8d340"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-langevin_bound_wrong-v1.json",
+      "sha256": "ec32ada66fc135451c0c817a56c9f86d00e2a0ec09e0db574b6dcacaf15e53c5"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-langevin_bound_wrong-v1.stdout.txt",
+      "sha256": "c5c7c0973bfcf79f3fb63dc4071602270eb79a5ff5561f6d8320f6eb13c588d1"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-langevin_bound_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--langevin_bound_wrong.json",
+      "sha256": "47b27be71d40387be171d12400e84b01ab1388ff6953e7e533ed7e8198448b7c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-gain_wrong-v1.json",
+      "sha256": "a6e279c6cabc1fdb35142e4eb693a6320882528496da2386c07711fddf311a83"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-gain_wrong-v1.stdout.txt",
+      "sha256": "084743a3ebe4957eb50b9856613eb5eef78dd5bf1682d02bcc70d0583427ae1b"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-gain_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--gain_wrong.json",
+      "sha256": "9f7b6e0c215282bd7195ec82d25f54e24112349950899e34f51a5dd0ba90e717"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-path_identity_wrong-v1.json",
+      "sha256": "17108dc2958c57c301b4b3999819eeabce0f2ec26126a1ce24e9e593a8ee3143"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-path_identity_wrong-v1.stdout.txt",
+      "sha256": "d205a5b319bc5734d9ecac88bdcfd69a08f6528799c969951c601c6d857a0d70"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-path_identity_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--path_identity_wrong.json",
+      "sha256": "38e303c79b4c1c1b0eaebd7c00fc8f54dd39fc61fe3d44402421bde25e9161b5"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-return_constant_wrong-v1.json",
+      "sha256": "0945b8cad3154792c5467ae619faaf1d08463da9ec0ce596d10f3b71c24a2295"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-return_constant_wrong-v1.stdout.txt",
+      "sha256": "fd5d276d5475d00ac417553e4b0743452cac35f52d2af736b8e481506f6e9824"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-return_constant_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--return_constant_wrong.json",
+      "sha256": "1bc11cbbd0cf9f7048afd830e8f820b155d7ff44a34a02c6c15c0296c7169cca"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-return_lower_bound_wrong-v1.json",
+      "sha256": "fd3a167f5379aeb757d042292f583a541bc1555445719c8b35aad557f2a1f135"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-return_lower_bound_wrong-v1.stdout.txt",
+      "sha256": "fd5d276d5475d00ac417553e4b0743452cac35f52d2af736b8e481506f6e9824"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-return_lower_bound_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--return_lower_bound_wrong.json",
+      "sha256": "5b204536b02b7950c6bdfbee3e4ae1ebf3ac516113707675357b3bb6b79783aa"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-harmonic_bound_wrong-v1.json",
+      "sha256": "edb1ffb448f855cc29ba3613f19081122051d06c40392e86bcc71ccfea3dcfd5"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-harmonic_bound_wrong-v1.stdout.txt",
+      "sha256": "8e97d522cdf0d74834a3ef66203a935bcc729718ff927c35d457ab77cc3017b5"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-harmonic_bound_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--harmonic_bound_wrong.json",
+      "sha256": "46145f43073f70ac86829cce662d8dcd79e9f46f904599313d091ccb82f09423"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-one_site_chain_wrong-v1.json",
+      "sha256": "ec86cc448a87df44730b6a45a37a408d9c200269f0ad2d888cd28b978c098d28"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-one_site_chain_wrong-v1.stdout.txt",
+      "sha256": "19a8e3abef42cb93bd9965d7d16cadf49529d0cf38f3172bdfabaa961838d0f0"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-one_site_chain_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--one_site_chain_wrong.json",
+      "sha256": "6bbc1e7a8a61ff285cf29306ebb7b953a5fae024663392dbaabfa53dd44d2591"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-minorization_wrong-v1.json",
+      "sha256": "597e281848a3ae050942105e9dbee35b3cc1a8322f359daac8df9b3956801e50"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-minorization_wrong-v1.stdout.txt",
+      "sha256": "3d880705c3c8ff1b032ce14c7dcf6132bfbc1615f6ab68737c48e6b39af65e86"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-minorization_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--minorization_wrong.json",
+      "sha256": "933e8a9bdcda388ab1d23d78b12f02ca45c17b38fe06199c3ed2b7e28e9abb8f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-exponent_wrong-v1.json",
+      "sha256": "4a554a5f16621aba8aba3e643efc9f1ef90811a7ebaecf6ca8e21a2296f5a99a"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-exponent_wrong-v1.stdout.txt",
+      "sha256": "44b0486eea399c17d28d79afc11ce5e287bd8263d295a299ffd2394b04984d39"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-exponent_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--exponent_wrong.json",
+      "sha256": "42e5578807987ebd3236ff2781652dfe6cd1acd9506f944d01cd550d4bff7e36"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-sixaxis_deviation_wrong-v1.json",
+      "sha256": "d260ce05b97770d4ba7279df69b4029aa6ec7170053999d996a17a36f7393831"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-sixaxis_deviation_wrong-v1.stdout.txt",
+      "sha256": "1869afc977ef585b963b9cf6cf7e215ab0846cb3a468002a5fad343286fd32e7"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-sixaxis_deviation_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--sixaxis_deviation_wrong.json",
+      "sha256": "e82aa4196da03a01ffd12783312a4ac1a350079458eb0527039f4de75d276f78"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-positive_series_coefficient_wrong-v1.json",
+      "sha256": "76c82f226aac5a003d5781e9b2cc95db79895cb386b155ec8a41274942e7408c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-positive_series_coefficient_wrong-v1.stdout.txt",
+      "sha256": "c5c7c0973bfcf79f3fb63dc4071602270eb79a5ff5561f6d8320f6eb13c588d1"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-positive_series_coefficient_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--positive_series_coefficient_wrong.json",
+      "sha256": "42c6b71068f5ce73b464ad3e799821183f5b08ddbafc69eb705d7589bb841068"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-exact_mean_gain_wrong-v1.json",
+      "sha256": "9d47b9d7251a1633b14f9ef28302b3033229b1072e829530ac94f23c63bf4463"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-exact_mean_gain_wrong-v1.stdout.txt",
+      "sha256": "005779ae6edcdc7040c52a7162724709b36d4e30bcc6e01c0b6cfb9632acca14"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-exact_mean_gain_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--exact_mean_gain_wrong.json",
+      "sha256": "fde9a3d790e4481489575d2ed1c1ba209f1dbac6dd066d33dd57fb2fdb011298"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-author-final-freeze.json",
+      "sha256": "9fe977da0c15248bb4a2da8b873aa16447a581f4b03a2634ed6dd69b583f3c67"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-author-source-handoff-v1.json",
+      "sha256": "0d85e4252f64f67313c7cf6a7e37da1a3a46f073bcb00583e438ea5280fff7e5"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-review-original.json",
+      "sha256": "50c0805a36729945a28283fc603c34612f709a1e120e3017170373d4031fed6c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-early-review-v2.json",
+      "sha256": "01bc3b8aadb5231e4145b7d9fd423727c058de7bf186ea30053abba16707d3e4"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-cold-review-v1.json",
+      "sha256": "253a8279b493e547f26b67b6c1133d9fad2f5c30c0dc7ec146a52c28d4cdb3e2"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-capture-preservation-control-v2.json",
+      "sha256": "a4328471bed78386347af4117e4e316ca0d9032127ef92491e0f2fbab1cfcc3c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-plan-v1.json",
+      "sha256": "8560f3cf1e71ce578feb6ff15b6a32ff13777fce09f937df6faff141f756b6ed"
+    }
+  ]
+}

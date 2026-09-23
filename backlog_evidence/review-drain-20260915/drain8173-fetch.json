@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "e5b3aa31686d88d8a2fe0aad5e938acac0e39404",
+  "fetched_ref": "refs/review-loop/fetched/8173-6a88b6afb08b46ef9edd939f5523d0df",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block29-transverse-kernel-normalization-measured-sum-rule-spin-wave-20260916",
+    "headRefOid": "e5b3aa31686d88d8a2fe0aad5e938acac0e39404",
+    "isDraft": false,
+    "number": 8173,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

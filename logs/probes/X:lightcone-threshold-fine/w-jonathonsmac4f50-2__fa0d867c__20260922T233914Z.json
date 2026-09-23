@@ -1,0 +1,32 @@
+{
+ "task": "X:lightcone-threshold-fine",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "cd probes/lib && python3 formation_levelplane.py 3s sphere 1.00 32 4000 2000 1",
+ "seed": 20354,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fa0d867c",
+ "started_utc": "20260922T233914Z",
+ "elapsed_s": 22.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "dim=3 menu=sphere beta=1.0 L=32 T=4000 plateau_|m|=0.7637 lowk_ratio=1.1527 seconds=22"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "Locate where the light-cone sphere law in 3+1 starts to keep memory (first look: memory at beta = 1 on a 16^3 plane). Arguments: dim menu beta L T T0 seed (probes/lib/formation_levelplane.py; a trailing s on dim = symmetric light-cone past). GRID UNITS: the 30 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "618f2ac1b6c223a730ab017a34add3c109440de267ad24ec0f7e5cd98d7e0f27",
+ "stdout_tail": "6  0.7820  +0.7820\n         8  0.7769  +0.7769\n        11  0.7746  +0.7746\n        16  0.7734  +0.7734\n        22  0.7705  +0.7705\n        32  0.7691  +0.7689\n        45  0.7690  +0.7688\n        63  0.7675  +0.7674\n        89  0.7680  +0.7680\n       126  0.7652  +0.7652\n       178  0.7629  +0.7623\n       252  0.7647  +0.7647\n       356  0.7622  +0.7620\n       503  0.7600  +0.7596\n       711  0.7611  +0.7594\n      1004  0.7660  +0.7653\n      1418  0.7628  +0.7611\n      2004  0.7614  +0.7579\n      2831  0.7616  +0.7568\n      4000  0.7647  +0.7614\nequal-level transverse structure factor S_0(k) / [sigma^2/(1-|phi|^2)] by |k| shell:\n   |k| in [0,0.3): 1.1527 (n=18)\n   |k| in [0.3,0.6): 1.1043 (n=104)\n   |k| in [0.6,1.0): 1.0896 (n=392)\n   |k| in [1.0,1.5): 1.0974 (n=1348)\n   |k| in [1.5,2.2): 1.1018 (n=4024)\n   |k| in [2.2,3.2): 1.1033 (n=12063)\n   |k| in [3.2,6.0): 1.1034 (n=14818)\nsite covariance without the zero mode along e_1: r, measured C(r), linear C(r), ratio, r*linear C(r) (the 1/r law of a three-dimensional plane)\n     1  +0.027398  +0.024759  1.107  +0.02476\n     2  +0.018705  +0.016870  1.109  +0.03374\n     3  +0.009610  +0.008529  1.127  +0.02559\n     4  +0.006522  +0.005759  1.132  +0.02304\n     6  +0.003141  +0.002788  1.126  +0.01673\n     8  +0.001513  +0.001409  1.074  +0.01127\n    12  -0.000005  +0.000205  -0.026  +0.00247\n    16  -0.000440  -0.000099  4.421  -0.00159\nSUMMARY: dim=3 menu=sphere beta=1.0 L=32 T=4000 plateau_|m|=0.7637 lowk_ratio=1.1527 seconds=22\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260922T233937Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

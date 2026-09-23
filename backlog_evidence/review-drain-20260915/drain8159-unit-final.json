@@ -1,0 +1,3682 @@
+{
+  "schema_version": 2,
+  "unit_id": "PR8159",
+  "constituents": [
+    {
+      "id": "PR8159",
+      "head": "ccca36e505a4cc5d0cd4735b377c15d69042fc41",
+      "delta_base": "6ad6a2184b7c2067e597528e0964753874493b4a",
+      "dispositions": {
+        "path": "/private/tmp/review-drain-20260915/drain8159-final-review.json",
+        "sha256": "6e8b9700782f9935e8fad67399addd3211c04c5cb1b79c2f74da70e5197c3111",
+        "json_pointer": "/original_dispositions"
+      }
+    }
+  ],
+  "source": {
+    "base": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "commit": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+    "tree": "292212d2ae2bf927a6275783252c82559f4666a9",
+    "paths": [
+      {
+        "path": "docs/CHARGED_RING_SLOW_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbbcbb346f725448b936df560904842eb6390b0751585d31616a2c63b2ca6b98"
+      },
+      {
+        "path": "docs/CUBIC_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "7d446318b8dbc204b2c1cef233f901078cdd6829bb325db2cb7e0100633fb8ca"
+      },
+      {
+        "path": "docs/CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "d13c0d208e8915fcf4c7398dcc144536f1305046a57cbe9245088bfd04f7bc2f"
+      },
+      {
+        "path": "docs/EXACT_GAUGE_WARD_RESPONSE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "7a460381594eb146002105566995fb328d827051ddaa4eed28936e202e81f72e"
+      },
+      {
+        "path": "docs/FINITE_GRAPH_CYCLIC_WEAK_COUPLING_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "aa4b2dc8acbe9bfade778ceb1b9d6b2d711721a76fde517c8c690cc5ce863218"
+      },
+      {
+        "path": "docs/FINITE_NATIVE_WINDING_CURVATURE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "bfbbb45f3ec7ca59b0d32d9482f209d0da16098f1b4cafe39882d903077236e9"
+      },
+      {
+        "path": "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "84d8eecde04a7fe9f60014a36fe265a413ba779c1487b416115c15f472d7d2f1"
+      },
+      {
+        "path": "docs/FIXED_COUPLING_ROTOR_GROUND_CUTOFF_COMPACTNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "fce8dfa118325552e93dec94089c9c76b3b5ed52e0c31f9742372297a47f97b4"
+      },
+      {
+        "path": "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "3c22468d38ee7733013b0d663507f9d2a5bcba75460f4700e02d949a8768b823"
+      },
+      {
+        "path": "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "58b714ec8df5a67efc65037caa1721178e1400c55d0bc743fd5a1227448ae542"
+      },
+      {
+        "path": "docs/ITERATED_LOCAL_MAXWELL_MATTER_STATE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "a8f99cf9b8e30031a85ff0b4e24cbddb38351a8ba0c01fa4a9d8c8cbfae9d111"
+      },
+      {
+        "path": "docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "a3a855d8f48556d991537d5bd5aefe2d9d9a9fd9a0b561311c2d2921ee9c07a1"
+      },
+      {
+        "path": "docs/NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "69299818ff8e463e4a246044f4b160a7a22867e7205bcb55f56cdeb802149192"
+      },
+      {
+        "path": "docs/NATIVE_MIXED_SIXTH_ORDER_COEFFICIENT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "6aa00d3bbba0927f92f1dbd4da52b83e0b15f21a5c03816c04bd7f4699f23392"
+      },
+      {
+        "path": "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "5c4482c4a0531be707f64ffeb07b705659d6aa19478b3be2878929f5b39a794a"
+      },
+      {
+        "path": "docs/POSITIVE_AUXILIARY_CURRENT_LAW_AND_REGULATOR_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "94f3be3f568d3391a56d35ec98bb3dc8a0cdf1de38c36ab50eaffca8b44d75e9"
+      },
+      {
+        "path": "docs/POSITIVE_ELECTRIC_GENERATOR_CONE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cb90dfc9747c088b6a429699388c6d38462613095b8fc421bcb015d10accbbbd"
+      },
+      {
+        "path": "docs/REAL_OVERLAP_LOCAL_SOURCE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "b55c574197329d931e39ced4cb34063ebe1438dcf654c7d049d76340d60e8c23"
+      },
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      },
+      {
+        "path": "docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "6c2affb5dde329a00bb495bf3ddeefb8a6bcdbf187f1e32f991033a3a4b3a236"
+      },
+      {
+        "path": "docs/SUPPLIED_MATCHED_FREE_CONE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "24dbc17e78cb932f240f6b0bdbec62663795b3cfccb1030a5ca8f1b7ff1cdfab"
+      },
+      {
+        "path": "docs/SUPPLIED_QUARTET_LEADING_DECAY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "8979b78cb9939242eefccc2dfc321a0ff8ea63c61b4da07590b2941a68d7a61c"
+      },
+      {
+        "path": "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "0d103102a710ebde79af54b2b63e811d2381abf80874c4a203eb76d04d2853af"
+      },
+      {
+        "path": "docs/SUPPLIED_QUARTET_QUADRATIC_BACKREACTION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "3f5b18314e2d2aec6288db338bc157c2fbdbce5a7a4ced534179dc39de612f1a"
+      },
+      {
+        "path": "docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "750bdd27065ef957228c7316996d6a9cfcb5af19a5407309e532e9c1edc6fce0"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "bb31a2027ae6ea2b63a3608748e147141c82b23979cf8a00aa34afbb415dcae5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/README.md",
+        "sha256": "03fbe8b86afc72cb14a51a7b73d0f542907c8fc8e19d05cd697432fc38ae1c11"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/imports/BLOCK27_ALL_COMPONENT_MIXED_COEFFICIENT.md.gz",
+        "sha256": "9e2bfe6c1d29cbf09805922f3a13e3ea33da0960883bae568b19033383079002"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/imports/manifest.json",
+        "sha256": "d53fff78d69c66f110b72e809968af9f2a4ce35b87afbfffe8ca582b60a889da"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/manifest.json",
+        "sha256": "3c3e11b79c35b8d426442c627ef149c8d18dc9bfd68dfe1d52ca858bd5d16ec0"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/001-APPROACH_REGISTRY.md.gz",
+        "sha256": "459a27482180ec2ebb47380840d9ccac5aa9b275cdf7a798103a388f5a0638c6"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/002-GOAL.md.gz",
+        "sha256": "4b1bbdc0bf352a426afdcf039fb431e69b89d3d310c2aaa313013a9794c617f1"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/003-HANDOFF.md.gz",
+        "sha256": "94f3c599f4ead53e6546d6651af42b53b4a1461468638e474c5b7a6903b0d523"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/004-NO_GO_LEDGER.md.gz",
+        "sha256": "4358f1324f4259638aca683bb1a2f0264abdc1b2f219dbaaf9c6174813f07269"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/005-OPPORTUNITY_QUEUE.md.gz",
+        "sha256": "602058418f61b91fb829736cb9b9e4f60c41c87f699eb45c25aae9e5142fc316"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/006-READING_LEDGER.md.gz",
+        "sha256": "9778a5aba3729ef557e9974b75ffea426512dd50cedd020b08d2281df8d54e2e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/007-README.md.gz",
+        "sha256": "e2d74ed0ef6799b8bcab13145ce938ea3ddd58d235fa4ce99fad5941d54894eb"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/008-STATE.yaml.gz",
+        "sha256": "8d82a32149f14812cc57227aace0262247a49dfd4090cc651f54e4252a41745d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/009-TRACE_GATE.md.gz",
+        "sha256": "a10beda957b1f8de28d2f7a73af124124c1c9c8e430473e2bdff6abf1706953a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/010-block10_local_spectrum_check.json.gz",
+        "sha256": "39508079ff613273475c822632f7fcead1a1ef461936617dce14917a0abfd9dc"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/011-block10_local_spectrum_check.py.gz",
+        "sha256": "927be7cb5f625670320dfe0bc76ed36b77d77ee5d66ef63c69b210d475204895"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/012-block10_local_spectrum_check.txt.gz",
+        "sha256": "39508079ff613273475c822632f7fcead1a1ef461936617dce14917a0abfd9dc"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/013-block11_quartet_metric_check.json.gz",
+        "sha256": "034791ae920009e5e6b411872413faf100e06eab7fef4aa8eb425973c6a299fa"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/014-block11_quartet_metric_check.py.gz",
+        "sha256": "bd72d2530059d031d3083c1208b0800707f7c09961ef59f8f2adc4146958bda0"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/015-block11_quartet_metric_check.txt.gz",
+        "sha256": "034791ae920009e5e6b411872413faf100e06eab7fef4aa8eb425973c6a299fa"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/016-block12_ground_cutoff_check.json.gz",
+        "sha256": "b1f44000ecdd9a2dc27e21db9d43e13b534d84fb5e1b5787d23a2741334f91b9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/017-block12_ground_cutoff_check.py.gz",
+        "sha256": "bb02646fd2d554fedc8f4568f5085b04354225f97bc16a87dfa07190482d021c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/018-block12_ground_cutoff_check.txt.gz",
+        "sha256": "b1f44000ecdd9a2dc27e21db9d43e13b534d84fb5e1b5787d23a2741334f91b9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/019-block13_quadratic_coframe_check.json.gz",
+        "sha256": "bdb451af64e27f151f2c95c1f897c025ebd5220597e314bb11dc1dd785734973"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/020-block13_quadratic_coframe_check.py.gz",
+        "sha256": "ec831436a7d828164eb7731651639a6810e19451f7a58182bbd4c22c025a5890"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/021-block13_quadratic_coframe_check.txt.gz",
+        "sha256": "bdb451af64e27f151f2c95c1f897c025ebd5220597e314bb11dc1dd785734973"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/022-block14_decay_check.json.gz",
+        "sha256": "75c0ce60c30e9dd737f23e74baaf2d1a29897399348cbb51855d6a8e40d73b68"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/023-block14_decay_check.py.gz",
+        "sha256": "ecd755e2898717ad554d7ea6657df28ffa0c21409690a30b7b8a36c70339b08d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/024-block14_decay_check.txt.gz",
+        "sha256": "75c0ce60c30e9dd737f23e74baaf2d1a29897399348cbb51855d6a8e40d73b68"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/025-block15_mixed_history_check.json.gz",
+        "sha256": "ec70322eca3c7a21863dbeb3c5208983b9816423fbae9a3d39202492b4ff2653"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/026-block15_mixed_history_check.py.gz",
+        "sha256": "3013f73ab5b48d92361d6c789f8eb63daf392916f465b4d56343dc26e07ab608"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/027-block15_mixed_history_check.txt.gz",
+        "sha256": "ec70322eca3c7a21863dbeb3c5208983b9816423fbae9a3d39202492b4ff2653"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/028-block16_cyclic_equilibrium_check.json.gz",
+        "sha256": "5e464c2fcbd2884296379d12a1b371be969682b85f8fbe680e2eeea66da36030"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/029-block16_cyclic_equilibrium_check.py.gz",
+        "sha256": "b3eee32bbfadd26380effb4debc73c932818bf932d37cccae16746a7006db97a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/030-block16_cyclic_equilibrium_check.stderr.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/031-block16_cyclic_equilibrium_check.txt.gz",
+        "sha256": "5e464c2fcbd2884296379d12a1b371be969682b85f8fbe680e2eeea66da36030"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/032-block17_cyclic_scaling_check.json.gz",
+        "sha256": "ebf6c2ba92870737b111ed1575fada9f4b6a4f15113be5719d3c696f0a7ac25e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/033-block17_cyclic_scaling_check.py.gz",
+        "sha256": "a6fd95751a123bbed5445e3cd9c67851ddd351bf97d73c03950f35ad0c471a09"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/034-block17_cyclic_scaling_check.stderr.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/035-block17_cyclic_scaling_check.txt.gz",
+        "sha256": "ebf6c2ba92870737b111ed1575fada9f4b6a4f15113be5719d3c696f0a7ac25e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/036-block18_positive_generator_check.json.gz",
+        "sha256": "9c69c3603868704cded6c209dc78bb11583d9305ecaae972ee556572d738d129"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/037-block18_positive_generator_check.py.gz",
+        "sha256": "d8a1aa28f6e1594e5bc455691c5a9345fe7bcbf786f77188c0aea82702c4e1df"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/038-block18_positive_generator_check.stderr.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/039-block18_positive_generator_check.txt.gz",
+        "sha256": "9c69c3603868704cded6c209dc78bb11583d9305ecaae972ee556572d738d129"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/040-block19_charged_ring_check.json.gz",
+        "sha256": "6e87c2c01f9b363138f1eae346217f86051e971e7904449ab0c7736aaa20c9ac"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/041-block19_charged_ring_check.py.gz",
+        "sha256": "ce425068efcc7177d37a6b0b7d68def331b1d7e01147df474bc508fea230d8f2"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/042-block19_charged_ring_check.stderr.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/043-block19_charged_ring_check.txt.gz",
+        "sha256": "6e87c2c01f9b363138f1eae346217f86051e971e7904449ab0c7736aaa20c9ac"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/044-block1_hybrid_curvature_check.json.gz",
+        "sha256": "16c589f80607a5d4d8158e33e156031977b5f0907d8044355b08fed6c7476a55"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/045-block1_hybrid_curvature_check.py.gz",
+        "sha256": "331a7f181bf114c366809d7fb8807ffd419a996caf85356da23d1067975f53ff"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/046-block1_hybrid_generator_check.json.gz",
+        "sha256": "07e3a917bc8319d2e50e1219d7552050d0581fc950a386a7cb8a6a816ac82958"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/047-block1_hybrid_generator_check.py.gz",
+        "sha256": "124e9ee9221b51edc88cd956998a099b159b7ba1e7d5dbace949e0f9dfb08e80"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/048-block1_integrated_rate_check.json.gz",
+        "sha256": "fcf205e5a00619395d5c689e0701d01927ec259e4ef5e7ed9eba05492cafaad3"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/049-block1_integrated_rate_check.py.gz",
+        "sha256": "cf9017c3df82729adc7b20c978429762952fad884ee5c2734806a37d7a508c07"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/050-block20_holonomy_check.json.gz",
+        "sha256": "cf6bd5007613fe92c6185358fd304c62e149aa2c72b16c05093493ec41e8c835"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/051-block20_holonomy_check.py.gz",
+        "sha256": "6d675f8c6afb4060c37fb417f173c1626fcb3f56fff9ca3573f1c8790713c65d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/052-block20_holonomy_check.stderr.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/053-block20_holonomy_check.txt.gz",
+        "sha256": "cf6bd5007613fe92c6185358fd304c62e149aa2c72b16c05093493ec41e8c835"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/054-block21_slow_fast_check.json.gz",
+        "sha256": "8c1bb5f429f9ae8e7668371133a36a818f0bb087116fe36b8202e7a7f52d4237"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/055-block21_slow_fast_check.py.gz",
+        "sha256": "e7c56ed47c69d775ea82c0b2775fc6d1db00ac7f8a8815c4aea26d65433452b5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/056-block21_slow_fast_check.stderr.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/057-block21_slow_fast_check.txt.gz",
+        "sha256": "bad99634e4ef4f1f9da5d3b9a6a8b5ee7651d485eb09488fd32501c7db5c7dd0"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/058-block22_physical_probe_check.json.gz",
+        "sha256": "03d9d0305284e65c69356198ea18f3b61d4caad828c9248d91e6acae5cefc30b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/059-block22_physical_probe_check.py.gz",
+        "sha256": "08239d0d1de1b324fbe123fd1bf964aaa4a3304ad14c7b875a5cc39ad257a870"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/060-block22_physical_probe_check.stderr.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/061-block22_physical_probe_check.txt.gz",
+        "sha256": "ccf83054eb5bed303448a36b9228d2472a559a1176f6cad7fe1c59c9ca5c7305"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/062-block23_matched_cone_check.json.gz",
+        "sha256": "72285911f73d2369a5bdc73a5eb6c853e951699af9370c845c61a4cdb97544bd"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/063-block23_matched_cone_check.py.gz",
+        "sha256": "c0872fdc79340b6eef354f9efce0326a81a7c7cd7b686f41455173468ef58ac7"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/064-block23_matched_cone_check.stderr.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/065-block23_matched_cone_check.txt.gz",
+        "sha256": "72285911f73d2369a5bdc73a5eb6c853e951699af9370c845c61a4cdb97544bd"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/066-block24_response_identity_check.json.gz",
+        "sha256": "0859dd776ecad019d32936c1ac1bd8c36d2eeece1b40afd71dc6aa14a55577d7"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/067-block24_response_identity_check.py.gz",
+        "sha256": "19dfa84ac182e177ddfc16d2ed020851234d600c47cf3718cc00d799a935d4e1"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/068-block24_response_identity_check.stderr.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/069-block24_response_identity_check.txt.gz",
+        "sha256": "0859dd776ecad019d32936c1ac1bd8c36d2eeece1b40afd71dc6aa14a55577d7"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/070-block25_visible_threshold_check.json.gz",
+        "sha256": "ee0eb46562340a551af201fe86308168bcb4f56c9b841350e4dc518ad5272a26"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/071-block25_visible_threshold_check.py.gz",
+        "sha256": "c950520e7c2e3e8d982c3aaefdda18ffb074d8faa2c3e1e68a06724e5b732716"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/072-block25_visible_threshold_check.stderr.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/073-block25_visible_threshold_check.txt.gz",
+        "sha256": "ee0eb46562340a551af201fe86308168bcb4f56c9b841350e4dc518ad5272a26"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/074-block2_cofactor_cyclic_check.json.gz",
+        "sha256": "46783bbb33fe5dec820f4d47a0309d17cab8d78f958487bab33cd70ba0f6d709"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/075-block2_cofactor_cyclic_check.py.gz",
+        "sha256": "47abcbbd31035998c1150d4afdb9c7cde0a84346f36f9a06cffc4a56532e9277"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/076-block2_contact_register_check.json.gz",
+        "sha256": "ed7aaa64f9941764279074e4131cf4e442f0d5e015fbf2664d68f659bb41ae35"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/077-block2_contact_register_check.py.gz",
+        "sha256": "05383da95abde9f62c0568047af6ddee88871b823ab907bd9ed8a16585cbf6f0"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/078-block2_cut_completion_check.json.gz",
+        "sha256": "a32a6774653b04caf957523a7fc4685fda6483d3eac6775160c144b1d7988cf0"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/079-block2_cut_completion_check.py.gz",
+        "sha256": "db30fa8511b9fdee037b7817706f7ea9cb7730ce7aae4a0e98b0e094d4c1489c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/080-block2_determinant_exclusion_check.json.gz",
+        "sha256": "56dfb99c70d1757756a56db7c18ec53fb58e5e80b9c711bab0bfcafb3f6dd33e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/081-block2_determinant_exclusion_check.py.gz",
+        "sha256": "a73fedf728e949578c1f51df971ccd44a635cc83c00b4db5b070c7d234909af7"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/082-block2_forest_interpolation_check.json.gz",
+        "sha256": "e849d8cc0b4777ec9e578f9ca8e04aa085b815a43a90016a45eeca25531ed64f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/083-block2_forest_interpolation_check.py.gz",
+        "sha256": "63ddc2dcd5536cdca036d6b4c012dcfd14400a180be58dbe1a196a6c774957f5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/084-block2_gaussian_cycle_check.json.gz",
+        "sha256": "25f9cc3cfaeed4527f3a693e5fe0ca3a09d74081771a16c9f6d0a1a9a402614c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/085-block2_gaussian_cycle_check.py.gz",
+        "sha256": "7777b6462ef0f84a78931a678ccc13db982ef874a6360c8bdbef12e91e53ca57"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/086-block2_graph_source_check.json.gz",
+        "sha256": "c7b7c7188aaaea7e2528c8e18a81e541cc5a1026f7178abf899a0165503495f1"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/087-block2_graph_source_check.py.gz",
+        "sha256": "4b52fc044bf659af9958998fc38a96cc2d6e6aa41da58bdd10a087044a2963d7"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/088-block2_hard_core_cycle_check.json.gz",
+        "sha256": "8c6dc9676aa795ead9c94f99e4181c0c37f8f6f6626904318304472123c60911"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/089-block2_hard_core_cycle_check.py.gz",
+        "sha256": "67d6f4ae40641871dee7a27c3bd7d40d71ba99b8c2f61e2f3a169f98e8cae2e8"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/090-block2_operator_source_check.json.gz",
+        "sha256": "0d0c7643554f5de6c768efdd2d3fbf62eeb8a1c6fe62e27e611b2369f4ad5d9b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/091-block2_operator_source_check.py.gz",
+        "sha256": "ccc6fec201e142859c6487ba4c749531f5263597ac4d161f275f162e8c33a956"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/092-block2_partition_exclusion_check.json.gz",
+        "sha256": "2015347a3d3cd360f39fcf951080c6bdaaf7de1003c69b9fd43613909857038e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/093-block2_partition_exclusion_check.py.gz",
+        "sha256": "25fc42cf7cfdb660e4e5ca7fdcb683c0f93f230ed32ac9135ee481ceb1975a5d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/094-block2_phase_energy_check.json.gz",
+        "sha256": "7ba4a947e265135c0d836dee14f834cf32e619acf4ecbd66b4a1387314d81caa"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/095-block2_phase_energy_check.py.gz",
+        "sha256": "3bcde1e906fa964fd450fea5fcb4fb71791185ef13b7dd7f423a63e36da9af46"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/096-block3_general_order_check.json.gz",
+        "sha256": "c29e90b27988a72bd7a31815eb41060018c0f83b02f873439b3b0c2e84945915"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/097-block3_general_order_check.py.gz",
+        "sha256": "2d2099ea7b09f84142da722041c1ffe2fcaca105baf9add56ce6ae0bf23dc4e4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/098-block3_general_order_check.txt.gz",
+        "sha256": "06220242d83ff54fc7103e109752f32174add82e8284d1cf845f112f62923315"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/099-block3_record_pair_check.json.gz",
+        "sha256": "21be01b5e3df5b6a49a6999b3049e87c6a3806a0ad658e9c8fadb1db82a0a66c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/100-block3_record_pair_check.py.gz",
+        "sha256": "f251dbe6615cb6b3269bd7e03ef15bfc877ece2b20a5df3047666c0d0ecc1677"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/101-block3_record_pair_check.txt.gz",
+        "sha256": "57e02613669904a7864b2f6769af66bde27cd10f55de0590a01a7fe4250fd129"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/102-block4_fourier_gaussian_register_check.json.gz",
+        "sha256": "507a3cb359fe2790506c4f70d0fff23ee959d111309a54edfbf526aff6b65ece"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/103-block4_fourier_gaussian_register_check.py.gz",
+        "sha256": "551a7e10ca6915c9d274c50ebe37e0360d5c3cef4e1750f21dbaba7bd9eb86fd"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/104-block4_fourier_gaussian_register_check.txt.gz",
+        "sha256": "507a3cb359fe2790506c4f70d0fff23ee959d111309a54edfbf526aff6b65ece"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/105-block4_tree_count_check.json.gz",
+        "sha256": "2b007de62be928b4156be1c0366787f8bb1e7aa2ce545e1169ca3ce4467d9bab"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/106-block4_tree_count_check.py.gz",
+        "sha256": "e62e103cc7dcce8b554c697804f7a15996eca56663e5fba22a2cb820ad73c03b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/107-block5_algebra_naturality_check.json.gz",
+        "sha256": "709cf5af89e30e09e1ab7e7e66f6196cb727d179bb83896dd1ebd82ce4d87685"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/108-block5_algebra_naturality_check.py.gz",
+        "sha256": "cf65557dbf739fc60e3f3956c56d6f4408dd3d0dba72da6ee2dcabbc38116c84"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/109-block5_algebra_naturality_check.txt.gz",
+        "sha256": "729e8d76ae1e099fcb0435a8da0bbd5534fc0346cdb41873b22f99acf41860bb"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/110-block5_inverse_corner_support_check.json.gz",
+        "sha256": "ba3089afca7c1ae48e09fc67a42a275c388fd2dae8aa414d9844accd184b6088"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/111-block5_inverse_corner_support_check.py.gz",
+        "sha256": "6884eaf6e523c741a4a58c31800cc86ac331a77122f661f4baeb81438a425943"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/112-block5_inverse_corner_support_check.txt.gz",
+        "sha256": "dd67fbb3ddfd9f3b31f971850aac90795eeeb6f78e09cfa5b0d2d52e1309cc35"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/113-block6_positive_auxiliary_check.json.gz",
+        "sha256": "0a588849a7f0cf9e70c53458b98bc41ffe98903b44f398597ba0ca49ace7fc3e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/114-block6_positive_auxiliary_check.py.gz",
+        "sha256": "b63d8cd53e308d5ae8d84b4622f87d00476454b9c51bc56d0fd9e9e40d0ae706"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/115-block6_positive_auxiliary_check.txt.gz",
+        "sha256": "ade2289d848dc83347f487bfda7e2f8501cbbaa24aa0fa97d3826ed156f43069"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/116-block7_native_motion_check.json.gz",
+        "sha256": "212626dfaa7fe8362814eef4f4d17de1f91e166088ea13f5665c46c28efa2cac"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/117-block7_native_motion_check.py.gz",
+        "sha256": "ee50d5ba02420d714c3dfa7c034f3c54b60c8ff85854bd13ae22617595151926"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/118-block7_native_motion_check.txt.gz",
+        "sha256": "212626dfaa7fe8362814eef4f4d17de1f91e166088ea13f5665c46c28efa2cac"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/119-block8_native_twist_check.json.gz",
+        "sha256": "b54ac17d97d17cefe71742f9628b3724440fc84d187cb73a1ea3b18eec60b717"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/120-block8_native_twist_check.py.gz",
+        "sha256": "e4b3618833d562c081ccb17807a0f9bf4b9a9d34753cd8d9a9b24d622d9e9ed6"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/121-block8_native_twist_check.txt.gz",
+        "sha256": "b54ac17d97d17cefe71742f9628b3724440fc84d187cb73a1ea3b18eec60b717"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/122-block9_polarized_word_check.json.gz",
+        "sha256": "4c7258700811aecfda6af0027921bca02342ffd61640bb9725becd59396a9209"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/123-block9_polarized_word_check.py.gz",
+        "sha256": "13fa3bd92dae385f3963eb491e79045a70dc9b6a6efae43bd2166632e60fd3ee"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/124-block9_polarized_word_check.txt.gz",
+        "sha256": "4c7258700811aecfda6af0027921bca02342ffd61640bb9725becd59396a9209"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/125-review_harmonic_metric_check.json.gz",
+        "sha256": "734ab4625f32115d51e474a931115afeecadf60efdf3f5ed15b8b18106cc1cbe"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/126-review_harmonic_metric_check.py.gz",
+        "sha256": "80819acea1c046f868e6ba90ceb95aa6cb20c98851d8c7a110bc00cfeada7efa"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/127-review_harmonic_metric_check.stderr.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/128-review_harmonic_metric_check.txt.gz",
+        "sha256": "734ab4625f32115d51e474a931115afeecadf60efdf3f5ed15b8b18106cc1cbe"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/129-BLOCK10_LOCAL_SOURCE_SPECTRA_AND_DARK_THRESHOLD.md.gz",
+        "sha256": "581ae12d7268f27840145d8de00e5ca24c798dbb1ec044b3cf88424782c390d7"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/130-BLOCK10_ROUTE_AND_NO_GO_REVIEW.md.gz",
+        "sha256": "b57163f9e0574668915d412753b53f814c6e50cd179d4c687555874550711fe4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/131-BLOCK11_QUARTET_METRIC_FLOW_AND_POLARIZATION.md.gz",
+        "sha256": "87f871e6719e9b069e7d426973cd93be6f709d96f6e856edd5ace82e38eb02a9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/132-BLOCK11_ROUTE_AND_NO_GO_REVIEW.md.gz",
+        "sha256": "e98a09899523d05792f7c7f9c17e32118317c7ddcfc3ab06416aba8f6ca282d6"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/133-BLOCK12_GROUND_STATE_CUTOFF_COMPACTNESS.md.gz",
+        "sha256": "96a76723935841a1a338c544e0277e1c58b9313091a538cf67e668c9b629dbc4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/134-BLOCK12_ROUTE_AND_NO_GO_REVIEW.md.gz",
+        "sha256": "b0318f9219fb71873f28fda24a7e3a10dd674cf4734105b11d93dc1b38eb73b2"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/135-BLOCK13_QUARTET_QUADRATIC_BACKREACTION.md.gz",
+        "sha256": "11d5eeca7c30884f9b15e9cf0a3bfe81b21fc71a7e9e8697fa94d8c97000d782"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/136-BLOCK13_ROUTE_AND_NO_GO_REVIEW.md.gz",
+        "sha256": "81b04259d4ccc2d3689db545ecc6b938147dbd50c05129e6c68e8ee50b103770"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/137-BLOCK14_QUARTET_DECAY_AND_CONE_STABILITY.md.gz",
+        "sha256": "d22782e8209b3352c84b334f85ff668892e16536cd546b0b88ec45802f296f96"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/138-BLOCK14_ROUTE_AND_NO_GO_REVIEW.md.gz",
+        "sha256": "be21a164c7e024f4146c870952cfe5752e6942904a40227b9aac7d73f97ab67b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/139-BLOCK15_MIXED_HISTORY_BOUNDEDNESS_AND_SIXTH_POLE.md.gz",
+        "sha256": "4d8e11755ad3659eafb629245957eec83febd8a35a7397d6120eb91118650e27"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/140-BLOCK15_ROUTE_AND_NO_GO_REVIEW.md.gz",
+        "sha256": "73d399a2b0e4e7fc3119840d73de15beccc4eaf3dc96760b63f86351ddc640b9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/141-BLOCK16_CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT.md.gz",
+        "sha256": "3dd9a8a6ef9cad43c8a2667925c9a7cb77ab547dc5487dd9906b18ebfcaa4e6b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/142-BLOCK16_ROUTE_AND_NO_GO_REVIEW.md.gz",
+        "sha256": "9b2b6825e3fbc7849dd598f3282135b09f856e114f347a220999a0ad35da1455"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/143-BLOCK17_CYCLIC_WEAK_COUPLING_SPECTRAL_LIMITS.md.gz",
+        "sha256": "829bf42d17383da128614d43ce66b3cb87f49d96c8438c60b9319804cc941a5f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/144-BLOCK17_ROUTE_AND_NO_GO_REVIEW.md.gz",
+        "sha256": "bd94cdd192d028c7f21de0fb9e72f074f2a9f4e2097f3838c79454c2a02bf0c3"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/145-BLOCK18_POSITIVE_ELECTRIC_GENERATOR_ACCURACY.md.gz",
+        "sha256": "c3c0c959510061b399c0e7b579174bee93662b8276661ec1ffb9469ef0a7d7e3"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/146-BLOCK18_ROUTE_AND_NO_GO_REVIEW.md.gz",
+        "sha256": "0efd81bb0ed91b62e77cf2280197fd6e73c0d2c7d761a2f8c34638239e2cc6e5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/147-BLOCK19_CHARGED_RING_SLOW_SPECTRUM.md.gz",
+        "sha256": "fab034accb1c4a9ff1e004bcb07652563bebc06bab591fd7f705ce3f77240f1a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/148-BLOCK19_ROUTE_AND_NO_GO_REVIEW.md.gz",
+        "sha256": "7efafa3728b52756ffe9323347ac72ffb3b80a500b9e0e8a814ab1b34d8623d6"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/149-BLOCK1_BOUNDED_RATE_ALTERNATIVE.md.gz",
+        "sha256": "a3063f522c4636b05163cffbd36f2f4feadd3d18e7b7bf112dd193656051467a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/150-BLOCK1_CURVATURE_TEST_DESIGN.md.gz",
+        "sha256": "24b6f79c74fe0fbd48164fea3d6015d32d5762739ac19c72d68c12b5e0fd79f9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/151-BLOCK1_INTEGRATED_IDENTITIES_AND_RATE_MOMENTS.md.gz",
+        "sha256": "3cc39cb36d58e45ad832c97d83a145ca765cdceb75e0d5330202d464643cc851"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/152-BLOCK1_POINTWISE_CURVATURE_WITNESS.md.gz",
+        "sha256": "414d9820b3ecd766e7f8ab2c4586e18023deedeb5f244598d03dc7e63e9d2ca3"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/153-BLOCK1_POSITIVE_HYBRID_GENERATOR.md.gz",
+        "sha256": "879b05c50f84b9ed1fec12a4a8240ff519f1b7391bab50b4f0ed08c19f46835b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/154-BLOCK20_ROUTE_AND_NO_GO_REVIEW.md.gz",
+        "sha256": "7e160aa38dc9926aa4f503df699b7d0fc31d7fd1e5d760a48ffe2790e3c31f17"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/155-BLOCK20_WEYL_HOLONOMY_CASIMIR_SELECTION.md.gz",
+        "sha256": "9ea9d2dd6bbe524d14e65cdb6d9810122354c315c36ffc74ff0b5c371ad476f8"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/156-BLOCK21_FIXED_BOX_SLOW_HOLONOMY_THEOREM.md.gz",
+        "sha256": "0d7146c40a26ef13dfe257ee2d58918cf503aea05441da857f1e2d8933ff52f4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/157-BLOCK21_ROUTE_AND_NO_GO_REVIEW.md.gz",
+        "sha256": "6354eb0fd7ad4e7bf0a5e924cb9464571064fab720a347dc595c3251507bec42"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/158-BLOCK22_ITERATED_PHYSICAL_MAXWELL_MATTER_STATE.md.gz",
+        "sha256": "5faae02f00f1c87e0ff1379a6c1407e1c755f2edde312233d6de113fb3cb941d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/159-BLOCK22_ROUTE_AND_NO_GO_REVIEW.md.gz",
+        "sha256": "bc6403ea4fb542159e05f1d7572632ee1315733eaa4709476002cb7352eca65b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/160-BLOCK23_MATCHED_FREE_CONE_WITH_POSITIVE_WEIGHTS.md.gz",
+        "sha256": "91e99c9e0fb8f74293edc7e555b0b346ef03291c68bae9713c9a3c60758895f7"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/161-BLOCK23_ROUTE_AND_NO_GO_REVIEW.md.gz",
+        "sha256": "725214d10605da1cb80c55a68610dfcc5606f89654fb8d61ee49da64d9a117fa"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/162-BLOCK24_EXACT_RESPONSE_IDENTITIES_AND_PHASE_TEST.md.gz",
+        "sha256": "7efa9b575a9dfad4ccf4118f69f8459b1e957e69adfa41ff479e3f495529b0c5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/163-BLOCK24_ROUTE_AND_NO_GO_REVIEW.md.gz",
+        "sha256": "e1a3c9206f2a3b867f8a2524313d967c3ef8ca21eb92184b7544ab2b0030be1f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/164-BLOCK25_ROUTE_AND_NO_GO_REVIEW.md.gz",
+        "sha256": "99b5517b4643cf5a113d6c6b74cb570c2190493f67542304d5f52e56d2d65b4b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/165-BLOCK25_VISIBLE_THRESHOLD_ON_REAL_OVERLAP_MOMENTA.md.gz",
+        "sha256": "eed2935a3ebb078db682a355e3896da5b4cc7fc0d50d1d6a488b78af6ffc7b90"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/166-BLOCK2_ASSUMPTIONS_AND_ROUTE_REFRAME.md.gz",
+        "sha256": "0fed1153793a5b8b0ede4771860a7b9f28513974465fc9cfe5aae23f25d4216e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/167-BLOCK2_COFACTOR_CYCLIC_REALIZATIONS.md.gz",
+        "sha256": "dc7a92a585fe1dc4695353ab8b3771e10a9feefe30ed1262bcc6236f63b88fa7"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/168-BLOCK2_COMPATIBLE_LOOP_QUADRATIC_LIMIT.md.gz",
+        "sha256": "4a6976a1e0f3c557abf0ab9753e6d501322f53511606d2e4d5fce8eb27fdbcfd"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/169-BLOCK2_CONTACT_REGISTER_SUM.md.gz",
+        "sha256": "80b9cc8704a15e921d34f4321ad9a031398fbb24d19a386ced8bc6f5966070cb"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/170-BLOCK2_DETERMINANT_EXCLUSION_AND_LOCAL_DERIVATIVES.md.gz",
+        "sha256": "dc50da53b1a3d655f29d684f9fa99f4f297bbf78a91f54ff602d42edef3dde36"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/171-BLOCK2_FRONTIER_REASSESSMENT.md.gz",
+        "sha256": "92359287299a0c9598ae31358c48eb2db7c93fc403f08c3bf57e4dbcb16dfac7"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/172-BLOCK2_GAUSSIAN_DRESSED_CYCLE_SOURCE_SUM.md.gz",
+        "sha256": "ed81f3fdca25d3b20d6e027ce5a67f7853f89d5b1588901894907fa382e7e528"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/173-BLOCK2_GRAPH_HOLDER_SOURCE_REMAINDER.md.gz",
+        "sha256": "cd0f250cafea47c2ea5b538533cc5fcf3ddc27706495a2d09853d7f1cbe65c0a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/174-BLOCK2_HARD_CORE_GAUSSIAN_CYCLE_SOURCE_SUM.md.gz",
+        "sha256": "56c4730b381c7059c0d7d720c7019ed38b01d5e95f0477dafd6539c746b1b24b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/175-BLOCK2_MACROSCOPIC_COMPONENT_SOURCE_BOUND.md.gz",
+        "sha256": "9202bdcacdbb9cebc78ed977729bb571879a8a85073a4409ec0bbea4510dfd27"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/176-BLOCK2_ORDER_GROWTH_AND_SUMMATION_OBLIGATION.md.gz",
+        "sha256": "92f0c8893d4bc3f29b5096d7f3fceb150fc25f92c11bbe951c847d932f345375"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/177-BLOCK2_PHASE_PRESERVING_FOREST_INTERPOLATION.md.gz",
+        "sha256": "2271d688f072a727f149af41a70536348b5496e16e9671e4f40d6577cca15485"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/178-BLOCK2_RANDOM_PARTITION_EXCLUSION_INTERPOLATION.md.gz",
+        "sha256": "fd57d4dd9705b1a8a2e8a815c094a126ef792c06347db4abbec5ab5a7d6a1713"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/179-BLOCK2_SIGNED_SINE_OPERATOR_AND_CYCLES.md.gz",
+        "sha256": "732220b9e9a4abae4982f02d2518f0d47b19c479773ed455f5170c22bcc2d9a3"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/180-BLOCK2_STABLE_CUT_COMPLETION_ALL_FIXED_ORDERS.md.gz",
+        "sha256": "4d7f3d3760e7be13942f422469f8700fd54b582e567b5bd1662dd716aac096a5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/181-BLOCK2_TWO_ROOT_PHASE_ENERGY_BOUND.md.gz",
+        "sha256": "fee116d5d9ea2cf7d8903ccbc46b1c75a3732f91905a1691af0dab48da29be18"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/182-BLOCK3_FULL_DOMAIN_RECORD_MODEL_PAIR.md.gz",
+        "sha256": "952cb3dc615fa60297f22d75a1a786bed2de10c534b514f8e2c6b9041dd995b0"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/183-BLOCK3_GENERAL_ALPHABET_ORDER_INDEPENDENCE.md.gz",
+        "sha256": "c00287b667da84e1e30d68a66d7bdcf6ae1360368cf56372861d9e370800b90e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/184-BLOCK3_NO_GO_DISCIPLINE_CHECKLIST.md.gz",
+        "sha256": "a6f8ed353c4f33ee74c7ba93c9dd276283cd6465f2f3749445c80e49228a583c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/185-BLOCK4_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS.md.gz",
+        "sha256": "e4ba875203ffecea551691508581ecd00d9d17dc093c344d15cc116b5a1d0863"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/186-BLOCK4_TREE_COUNT_AND_DECORATED_CYCLE_NORMALIZATION.md.gz",
+        "sha256": "1e29f43ad2acb1e1d20022d2787a40cf1ad5ba39c3cec6a7cc033935ca06c8ce"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/187-BLOCK5_CONTINUOUS_AND_BOREL_KERNEL_SUPPORT.md.gz",
+        "sha256": "d1954a3a8ce046593a72ceaf3dc4bd8c8c844369321847779d2932614153f076"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/188-BLOCK5_FULL_ALGEBRA_NATURALITY_AND_CENTRAL_SUPPORT.md.gz",
+        "sha256": "7eeed04e6621cad2fa9f0fe95666a03481f27593063842f1258f5b6f29682b79"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/189-BLOCK5_RECORD_GENERATED_GAUSSIAN_KERNEL.md.gz",
+        "sha256": "b8dad8c7fa9b163f4919ac2af1a3f029230fbd92d35a2eb6678c07a640b4c9fe"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/190-BLOCK5_SCOPE_AND_NO_GO_REVIEW.md.gz",
+        "sha256": "2283656b0b446f5737b1855132d9b600238ae45b05bcf79e1f85ae2f92b16cd9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/191-BLOCK6_PLANAR_LOOP_AND_QUADRATIC_REGULATOR_TEST.md.gz",
+        "sha256": "03492196af3e00ca303b9fc37bfdf8c7c72733aed9466be4478dab20e06a8f00"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/192-BLOCK6_POSITIVE_AUXILIARY_CURRENT_REPRESENTATION.md.gz",
+        "sha256": "ba3ad271fb34cd671e7753b768cb7ee386274f44be1e8ff6602151992080c564"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/193-BLOCK6_ROUTE_AND_NO_GO_REVIEW.md.gz",
+        "sha256": "a9c79d456a72ec854798fb3b5025d68cc5ffe0b3d6c01e980afadf1e49e46638"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/194-BLOCK7_NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT.md.gz",
+        "sha256": "8cd56eb5d071365b1079c5f49fa92f5a49eb29fa3b9326e1754a13b2a657cc8b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/195-BLOCK8_NATIVE_TWISTS_AND_WINDING_CONDUCTANCE.md.gz",
+        "sha256": "c6123522a5cb8e113811e7568f5a63fcdeecfa3cab7e6345df5a2147727e55d5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/196-BLOCK8_ROUTE_AND_NO_GO_REVIEW.md.gz",
+        "sha256": "9bf9549c7a773d2eb7c044e34a66cab0f8d91ee834eac171092957b385db90fe"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/197-BLOCK9_POLARIZED_CHARGED_SECTOR_AND_FLAT_THRESHOLD.md.gz",
+        "sha256": "81b74700d9c0c094075dae9dd63bfdae162b35965a6070a52ee4462db6710355"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/198-BLOCK9_ROUTE_AND_NO_GO_REVIEW.md.gz",
+        "sha256": "c823fe1a2d237e1f8b9a64f5b287847302bb09f2ecdc233c3501016e89524545"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/199-REVIEW_PERIODIC_HARMONIC_METRIC.md.gz",
+        "sha256": "5a1018b04a124ed933cd6162c30621675d464d7eace39aef0264983fe9a27a47"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/200-BLOCK10_PERSONAL_REVIEW.json.gz",
+        "sha256": "3596dbac451400cd787854d8f14a9a93403f9c3ffd3a40aaab4df92554d6b197"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/201-BLOCK11_PERSONAL_REVIEW.json.gz",
+        "sha256": "62e5b8913b965a9b560a8de177e53623b2263c226852b3150dd7f7473818d3ae"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/202-BLOCK12_PERSONAL_REVIEW.json.gz",
+        "sha256": "507f876a14ff20ac0efe3a637e339515a89a5b45501e8a56d9061251a15ef4d5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/203-BLOCK13_PERSONAL_REVIEW.json.gz",
+        "sha256": "77e95877e9ff1570312ecac1d008eb4215b765855ed6fe95efcf0aab1c0b4aa6"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/204-BLOCK14_PERSONAL_REVIEW.json.gz",
+        "sha256": "278c87397f95830d974c9cfbbbf58a2c0bd5d71846d5df222d723e2b2a8e9744"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/205-BLOCK14_VOCAB.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/206-BLOCK15_PARENT_REVISIONS.json.gz",
+        "sha256": "d1ac2a1bd78f58229d7044355e69c5e4885682a8b9663e6cbb031ff52de6f765"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/207-BLOCK15_PERSONAL_REVIEW.json.gz",
+        "sha256": "5a6d58981c27f3c9542a5ce3220ce355e4614d9dbd9eaf64ef3cc667408be108"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/208-BLOCK15_PREFLIGHT.json.gz",
+        "sha256": "1c7eb30c49325f45de3ba33a133f5507a27180e8452130ef1b12194f051730e3"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/209-BLOCK15_VOCAB.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/210-BLOCK16_PARENT_REVISIONS.json.gz",
+        "sha256": "978d8592f5e4cb4b26f0f1b63103a3b7c5d64e8ee6a7d79e047887ed93179388"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/211-BLOCK16_PERSONAL_REVIEW.json.gz",
+        "sha256": "48f63c7d9120db5e71eae7af93cf91ce6f366798be6adf3e2e718bec7fb9327d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/212-BLOCK16_VOCAB.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/213-BLOCK17_PARENT_REVISIONS.json.gz",
+        "sha256": "c974f362e605bcbdce4afc5ac9fa509feb786fd4299a65b9f1f6dd450b4950c1"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/214-BLOCK17_PERSONAL_REVIEW.json.gz",
+        "sha256": "1bc7d8d1de2386cc469743a57441e5d76f24751e430fde7d3dffe9e2aee8dd40"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/215-BLOCK17_PREFLIGHT.json.gz",
+        "sha256": "048c8990055fed9ad5edcae142711761ce746511938b1a6764d0cc7f395790cd"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/216-BLOCK17_VOCAB.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/217-BLOCK18_PERSONAL_REVIEW.json.gz",
+        "sha256": "19092c746d256576f14d0c8576a782d59685ea3c466443f7a4e0cc7ed8fbb1f9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/218-BLOCK18_PREFLIGHT.json.gz",
+        "sha256": "dc756dbb5fc5719de431e7b4fa95ad20667196f4af3ef0ba3263d2eaecf02903"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/219-BLOCK18_VOCAB.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/220-BLOCK19_PARENT_REVISIONS.json.gz",
+        "sha256": "f647886da26f250742c7aa6104a930e49bd3f801f1422d213f8478f053fa7e8b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/221-BLOCK19_PERSONAL_REVIEW.json.gz",
+        "sha256": "9be977605dda95f7c382ae31db7ec601665963b73da34dd4588a8d85bdd01181"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/222-BLOCK19_PREFLIGHT.json.gz",
+        "sha256": "6f97e28921dc758052c13c7f8387f0f1a5c85d855f53fbb18f1afd302fcf2e76"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/223-BLOCK19_VOCAB.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/224-BLOCK1_CHECKPOINT_SOURCE_HASHES.json.gz",
+        "sha256": "112f101be0c609cf6c253f5eca43fcd25c86193d67dd8397f0a161e42adee45c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/225-BLOCK20_PARENT_REVISIONS.json.gz",
+        "sha256": "35a3a679a2a61af4255e517217d301a39117beb1d51f2378790995a35891d149"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/226-BLOCK20_PERSONAL_REVIEW.json.gz",
+        "sha256": "85deec1cf9df6eea3bb1b9732041c989ba27475d3ca1688962925045d6b03d20"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/227-BLOCK20_PREFLIGHT.json.gz",
+        "sha256": "ddc72418d00991f0274073952f1c46b64f9f5aa263339513474be5ce488558ff"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/228-BLOCK20_VOCAB.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/229-BLOCK21_PERSONAL_REVIEW.json.gz",
+        "sha256": "62ac4219bef613132dc1cfd240a236758b0f15063130fcde1b8d3f7735afe39f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/230-BLOCK21_PREFLIGHT.json.gz",
+        "sha256": "dcb659fd211052e7d2aabf5054ed596390ea8f38712a41bb59ed04b963ee5e9e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/231-BLOCK21_VOCAB.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/232-BLOCK22_PERSONAL_REVIEW.json.gz",
+        "sha256": "38bd34a074b9f6d47b62d058c75dbce48e808bf1bdf369eb5448b3df682255a6"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/233-BLOCK22_PREFLIGHT.json.gz",
+        "sha256": "e402d631e2ceb4d5bda82da55257dbb21388f1aff8d7fe68d3695143badb3a63"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/234-BLOCK22_VOCAB.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/235-BLOCK23_PERSONAL_REVIEW.json.gz",
+        "sha256": "858d46e6313823439414b00ddfb37bd2796ef86bb24290f2f50c5d03f7f41d32"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/236-BLOCK23_PREFLIGHT.json.gz",
+        "sha256": "30ba61195aae70b763955dd05ff3cc7d32dfa35ca31e33eb7f763130861f3e66"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/237-BLOCK23_VOCAB.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/238-BLOCK24_PERSONAL_REVIEW.json.gz",
+        "sha256": "88d92f870b8fb7466bf940c54bea0b671856c4726f366ebfdcf75cce80caa746"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/239-BLOCK24_PREFLIGHT.json.gz",
+        "sha256": "1de71ede782c0088a6f0cfbe15303c17101daff10aa1538240eeb243d6acc967"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/240-BLOCK24_PREFLIGHT_SOURCE.md.gz",
+        "sha256": "b335b345bec18a1ff3cec2207c265d2038f499b6ce7bd9a6e86d7eb6fd02a2f7"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/241-BLOCK24_VOCAB.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/242-BLOCK25_PERSONAL_REVIEW.json.gz",
+        "sha256": "a6873843fcdfa35a9c5d5a3c285354a65b50240b959289a8fd334b40e43d2473"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/243-BLOCK25_PREFLIGHT.json.gz",
+        "sha256": "da779704c5e55bcded088e145017ff7c921098390f4854227ea15079749172f9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/244-BLOCK25_VOCAB.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/245-BLOCK2_CONTACT_REGISTER_PERSONAL_REVIEW.json.gz",
+        "sha256": "f1f1825c0fec773fb6739ae342dff210c4e62bf2214cfed294207d21c863e480"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/246-BLOCK2_DRESSED_CYCLE_PERSONAL_REVIEW.json.gz",
+        "sha256": "fd61551adffcb0f34d3a7b9d5de86f9dcd99436a56e120593fa2fed66e984565"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/247-BLOCK2_FOREST_EXCLUSION_PERSONAL_REVIEW.json.gz",
+        "sha256": "62f82adf296fe996e5f60c8f1da9ae44debc589b743e4cf895a41a806375d98d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/248-BLOCK2_HARD_CORE_LOOP_PERSONAL_REVIEW.json.gz",
+        "sha256": "d82f83d54e17e99b5d06c1498542a52d1afc75f2967480075a526d8357ad60f1"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/249-BLOCK2_SOURCE_PERSONAL_REVIEW.json.gz",
+        "sha256": "83566ebf642a424508e16fd100fb214f08dd7ee488721fe124518862831aeac2"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/250-BLOCK3_PERSONAL_REVIEW.json.gz",
+        "sha256": "417410135162b4ef117c6a6f1e556eb6746a2d25c5a7538f8bd93664b1e43307"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/251-BLOCK4_PERSONAL_REVIEW.json.gz",
+        "sha256": "d888de391d189c80be7e220f226a670f757f19f8fea7b0d0d1e8dff3e5423b9d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/252-BLOCK5_PERSONAL_REVIEW.json.gz",
+        "sha256": "44dcd5530d4642797a289b29bd3ec77b3d8be06b205a299e0d68715267bfc736"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/253-BLOCK6_LITERATURE_READING.json.gz",
+        "sha256": "b267a1352e4b5d5c1aa92a385fea52b0a9ad67d8a4dad110c195075098d2c441"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/254-BLOCK6_PERSONAL_REVIEW.json.gz",
+        "sha256": "398a9b44690d5f0f77d64b78eeaffd8ffa18ee270a9365aec31ecc215dbcd772"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/255-BLOCK7_PERSONAL_REVIEW.json.gz",
+        "sha256": "3acbf0ba0560eaebc717ea67bff145e8e90a39bd29d8e3111a3cc1b869d8ad41"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/256-BLOCK8_PERSONAL_REVIEW.json.gz",
+        "sha256": "daf9ae785f28e0426fb8c36468aa4587a295676ccc07b8c7c1bcee1dadc5c7fb"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/257-BLOCK9_PERSONAL_REVIEW.json.gz",
+        "sha256": "98d47dee0c3b98489403c6ca588947c071cceea80576941ea8fe3ca93f2eb5a4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/258-END_STAGE_NEW_MAIN_READING.json.gz",
+        "sha256": "3a3b4135dfcb46c6d74a4272e029bb33f7ac3c95ef4eafc3835b5820c92d752b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/259-END_STAGE_VOCAB.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/260-MILESTONE_MANIFEST.json.gz",
+        "sha256": "5e0d164d9823fe058b99ccfdf711ddda7ecacdd3d0d92898a909fd91bdfdc0e2"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/261-MILESTONE_PERSONAL_REVIEW.json.gz",
+        "sha256": "0bee7a9c78fe8cb232a573173df6ac1879c3357288d82ac3f3076f93b3ce80c1"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/262-MILESTONE_PERSONAL_REVIEW.md.gz",
+        "sha256": "7228b76c1a57975a5c1e247c290a8c6958e57b29afd2254e2a8de171df8518a0"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/263-USER_EXTENSION_20260916.json.gz",
+        "sha256": "8e089052a48110720b75c14325ffd6eb01a286d135ec63b38631ffc64e958245"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/264-block11_vocab.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/265-block12_vocab.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/266-block13_vocab.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/267-BLOCK14_QUARTET_DECAY_AND_CONE_STABILITY.md.gz",
+        "sha256": "4368d377294ad8bb2b4ac70526b6700886cf317cfcd284b507e55e87cbda2bcd"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/268-DISPOSITION.json.gz",
+        "sha256": "c9ab1cfda160859bd5fcbd137715332c5eb84f89f3888936d1e180100d510bfe"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/269-STATUS.json.gz",
+        "sha256": "1964003713a01880775c447f1902889c15fa75203100d741e1e8ea63a8d716bc"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/270-block14_decay_check.py.gz",
+        "sha256": "12f3f47274af107729dcf210e8dac756c095b7d790f98de5511cadf371944785"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/271-diagnostic.json.gz",
+        "sha256": "7ce2bc48c5d0bf559ec421cc8f12aa703166ec8fc1a28b5c9502e96b3674b043"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/272-stderr.txt.gz",
+        "sha256": "41ad25f9dd51b6b20d07a232952b85fc7c338821f934f8c5a86a72a34b0acdc0"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/273-stdout.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/274-BLOCK14_QUARTET_DECAY_AND_CONE_STABILITY.md.gz",
+        "sha256": "4368d377294ad8bb2b4ac70526b6700886cf317cfcd284b507e55e87cbda2bcd"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/275-DISPOSITION.json.gz",
+        "sha256": "e2cd6c591a84a7e6fdbe91fd7ab2a6a1aa1b708682809b2abdb9867e36ca45a2"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/276-STATUS.json.gz",
+        "sha256": "f39ba657ef69176ac79c5205c4ea818daca41bbcedf727e77d9f245de54d77c1"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/277-block14_decay_check.py.gz",
+        "sha256": "22db7c58527c3d3987556e0f49268af408d4b7fc0ea1778276eab3511839173c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/278-diagnostic.json.gz",
+        "sha256": "bf62025a657f19c9f9cb6c07a5417b238721638e16ef5413adada253845e5b3e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/279-stderr.txt.gz",
+        "sha256": "dae2390bf6290fba6d69c885a049892eed96c55cbed99bc571acd9016b96dccb"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/280-stdout.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/281-BLOCK17_CYCLIC_WEAK_COUPLING_SPECTRAL_LIMITS.md.gz",
+        "sha256": "dfa1ea0c547c86b9e5239a21ddf1ef38cbaad6f3525f4b61c53e8d3276256521"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/282-PROVENANCE.json.gz",
+        "sha256": "c45f389cc28b70869e6f16c38788b65ff9f204ee06b07bccaa3f037b3b40376f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/283-block17_cyclic_scaling_check.json.gz",
+        "sha256": "f8999e8c7b014ea9096b55c479a4f3b44044c8628de346a896a09d29b711355c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/284-block17_cyclic_scaling_check.py.gz",
+        "sha256": "466e4915c76bfeb8b7354a2b059396d6d88883e585101eb7adb90f8c81644b3f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/285-block17_cyclic_scaling_check.stderr.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/286-block17_cyclic_scaling_check.txt.gz",
+        "sha256": "f8999e8c7b014ea9096b55c479a4f3b44044c8628de346a896a09d29b711355c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/287-BLOCK17_CYCLIC_WEAK_COUPLING_SPECTRAL_LIMITS.md.gz",
+        "sha256": "dfa1ea0c547c86b9e5239a21ddf1ef38cbaad6f3525f4b61c53e8d3276256521"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/288-BLOCK17_PREFLIGHT.json.gz",
+        "sha256": "048c8990055fed9ad5edcae142711761ce746511938b1a6764d0cc7f395790cd"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/289-PROVENANCE.json.gz",
+        "sha256": "a0c62bb1e5ed6ff985eaabaaa48f528da6b063421230a7f4090f1d71e2d9a0e4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/290-block17_cyclic_scaling_check.py.gz",
+        "sha256": "d92a55096e44159b0645ccde9ee612ba0d518e2c125f42cb7fb9b8cc71722d3b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/291-block17_cyclic_scaling_check.stderr.gz",
+        "sha256": "86f4a89d7d8c5b0c00726d3d128fc26110064c6e1baa473cc165e3fe07f34012"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/292-block17_cyclic_scaling_check.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/293-block1_checkpoint2_vocab.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/294-RECEIPT.json.gz",
+        "sha256": "4a523c07c5d427b27b62e17e33291e99559b663231a11686700c01409699ed25"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/295-source.py.gz.gz",
+        "sha256": "1cd2d6477abe6f594550652eec64de2facbb1837aaac27526bc9e927b7191f74"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/296-stderr.txt.gz",
+        "sha256": "7a6d8e1a2ee88b0aaee9844d71ea7f6f430e2949d93abe8f5c2922afe0fa4341"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/297-stdout.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/298-RESULTS.json.gz",
+        "sha256": "aebe8faa5e93f62e24bef73b8e999c72ae422276551e619d251a8837a30330c1"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/299-missing_smoothing_noise.py.gz.gz",
+        "sha256": "fc287cde900ca8e15d68040f40202ddf3ff3b4b6d2c39360b2a383b8c8379183"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/300-missing_smoothing_noise.stderr.gz",
+        "sha256": "dfb968d080ec3821d656aada94ff8f5be6e08f1ca8d51827eda6a88bc3194a78"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/301-wrong_rate_energy.py.gz.gz",
+        "sha256": "f1e970a1b3e9dabd24e5bebe3ccd71eebf2979295a70926e0f2f0b4913c3fe17"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/302-wrong_rate_energy.stderr.gz",
+        "sha256": "f9c197ce05d64a8df828da758791c40ee144611428eb2949913a96c7e3365c76"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/303-wrong_shift_phase.py.gz.gz",
+        "sha256": "a6c21f5961516bda3fc45b812d41a9c43f99e4491928e6483adc8047cb5e857a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/304-wrong_shift_phase.stderr.gz",
+        "sha256": "d2e1a0c63275e688a81fb07e45261907cbc72892403800f518d260dbebbb1ab8"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/305-BLOCK20_WEYL_HOLONOMY_CASIMIR_SELECTION.md.gz",
+        "sha256": "9ea9d2dd6bbe524d14e65cdb6d9810122354c315c36ffc74ff0b5c371ad476f8"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/306-block20_holonomy_check.py.gz",
+        "sha256": "07b3223c2aa877a113af58652da06204f4f6649f19bd9589967c09e061f28eba"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/307-block20_holonomy_check.stderr.gz",
+        "sha256": "143ec219b80bccc273a99f4c38897e7c677f3de8382f6588a2d496a177bb7f6e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/308-block20_holonomy_check.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/309-block21_slow_fast_check.json.gz",
+        "sha256": "7bf11f6dc0ec2a809ade490aeee1994a381f6a26ea72f2df7808cd23e5a471e5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/310-block21_slow_fast_check.py.gz",
+        "sha256": "785fbe3fba07c6d57458c5e5b9f52218eb4fb5bd2371b76fb318fb0666298a11"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/311-block21_slow_fast_check.stderr.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/312-block21_slow_fast_check.txt.gz",
+        "sha256": "85e5b1d4ce976f1a6d7db43f6e5faf83737a8ae35f622f27f24b2190cacd30cb"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/313-BLOCK21_FIXED_BOX_SLOW_HOLONOMY_THEOREM.md.gz",
+        "sha256": "0d7146c40a26ef13dfe257ee2d58918cf503aea05441da857f1e2d8933ff52f4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/314-block21_slow_fast_check.py.gz",
+        "sha256": "8c4dae297d195b5ebe3c28ee3d2783dab17c65f03f1cfa6d47d33c4612562201"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/315-block21_slow_fast_check.stderr.gz",
+        "sha256": "f35be996f6282fca4616f45248364ba214748e3559c171a48bb5f00e729608ea"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/316-block21_slow_fast_check.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/317-block2_checkpoint4_vocab.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/318-block2_checkpoint_vocab.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/319-block2_contact_register_vocab.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/320-block2_cut_completion_vocab.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/321-RECEIPT.json.gz",
+        "sha256": "57b9ae0cfe17bc62d4b673d8b9ed2ec48d39e15800d4df139586cf5e42135b85"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/322-source.py.gz.gz",
+        "sha256": "2efdb828d86a06d94621ed2cf22856fbce3b0c3f5cc4ca2ae16b1aad20e70c6a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/323-block2_determinant_exclusion_vocab.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/324-block2_determinant_exclusion_check.py.gz",
+        "sha256": "cc90348890af51915e59ad02e9f09e5039b1b51441dbc3055157ceaad359af11"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/325-failure.json.gz",
+        "sha256": "ef47cf5c7ece348294d2c9be8851d34407a9e3748cbd7ee9864deb7efba0ef71"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/326-block2_dressed_cycle_vocab.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/327-INTERRUPTION.md.gz",
+        "sha256": "d2c9648781870e4228313479dd051214805e15cd928d7ec2418b62013a4387bf"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/328-RECEIPT.json.gz",
+        "sha256": "5f977f68d81497f7517e5e7897d937c2db5df4e24977eae2ffe11d0bfc9c14fd"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/329-source.py.gz.gz",
+        "sha256": "456086902a7b8efac98ef5c83673f234b4f1d11ca5d68a01b43af36c95ab2cff"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/330-block2_graph_source_vocab.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/331-block2_growth_vocab.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/332-block2_hard_core_cycle_vocab.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/333-INTERRUPTION.md.gz",
+        "sha256": "54a78499fac392a161f9b7c5c5976d27aa0713737c864e0cb046eb6632879027"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/334-RECEIPT.json.gz",
+        "sha256": "7eb825812e1378421840cd6fbcab2ff30f168195ba2e567ab58ae6ad099bc305"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/335-source.py.gz.gz",
+        "sha256": "5d2da9539b2705433c6b5877abc677e9eff2c8152cddd3c85c181bdf74263b5f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/336-block2_loop_quadratic_vocab.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/337-block2_partition_exclusion_vocab.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/338-block2_source_checkpoint_vocab.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/339-RESULTS.json.gz",
+        "sha256": "e8e0dfd0dca66e04abdbb82de3e46b4cd44a2219ef6e6b9f003a47068ee84b99"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/340-cut_missing_mixed.py.gz.gz",
+        "sha256": "ef0063241e2516f5a26286278d2631186b75d7d74fbff540e84aec841543da88"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/341-cut_missing_mixed.stderr.gz",
+        "sha256": "03554e4907dae0eef40bea9c7d9f77927d3bc6a300dc2ca3a28ee740d233c2b1"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/342-cut_missing_mixed.stdout.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/343-cut_missing_same.py.gz.gz",
+        "sha256": "472e89ba338f1d681ae82f677224c4fc5a0af6e9c66f1544d466960841113847"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/344-cut_missing_same.stderr.gz",
+        "sha256": "fcc5a1e68e3a27803d5c0f6636cfdcc4fe372f48d9ce0478d85884fa9c29e7a3"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/345-cut_missing_same.stdout.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/346-cut_missing_source.py.gz.gz",
+        "sha256": "e1db3a4d7b22eb38c4ca677f75bbce3665ea5d85aa17ec3462a01cecd19fdb08"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/347-cut_missing_source.stderr.gz",
+        "sha256": "8364c245235c26ac93f3b86d522d5527facde1d5371ed3e3370a388ea9dea7c7"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/348-cut_missing_source.stdout.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/349-source_missing_phase_i.py.gz.gz",
+        "sha256": "0391f4879c5d9bf5286658f76c1a5d6b1e7b7ec43157796be1c3b0239492e901"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/350-source_missing_phase_i.stderr.gz",
+        "sha256": "dc7ab48a3fbf542ec6fc7fa0b9bf6dcbcc9de0f39cdc01b1a1388fae5aba058a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/351-source_missing_phase_i.stdout.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/352-block3_record_pair_vocab.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/353-block4_fourier_gaussian_register_check.py.gz",
+        "sha256": "674a3549e91feb9f98ddc81643fadbbad191226b5dd7aa7eacf9bec6b0377b83"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/354-failure.json.gz",
+        "sha256": "9581f90b85c3b373d4003db73ea32c6922f1042cf839305238327e6ad5d6037f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/355-block4_vocab.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/356-block5_algebra_naturality_check.py.gz",
+        "sha256": "d2d92c333f4656a32d5467b1064ea4f5d119a6ab4c702926c242160b34cf0f88"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/357-failure.json.gz",
+        "sha256": "9315af30955a8f21490a8d35eff03f088c3b392fc6422a6d26d9388141df7d51"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/358-block5_inverse_corner_support_check.py.gz",
+        "sha256": "634f2f13ea2a15d26858bfa896311b66a6a161378a9bf3db4469aab2a2de0372"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/359-failure.json.gz",
+        "sha256": "7bcc30567214a8412020a45fef675db927ce7ac522c6b1080f82685a4af0f532"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/360-block5_vocab.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/361-block6_positive_auxiliary_check.py.gz",
+        "sha256": "71244760b20abb7b6a43d70674d62af4fda29666ba2d5b273fd4fb3a1eb26691"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/362-block6_positive_auxiliary_check.txt.gz",
+        "sha256": "89d3ce535bbcb712dae0e9d7d5d01f04cf42b921c65343dbca87dc62bb569885"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/363-diagnosis.json.gz",
+        "sha256": "30a05d41d0e10d7f3766b2bbc1262072f580ac6ed022ae7d3a1fd0a00473259c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/364-block9_initial.py.gz",
+        "sha256": "bac0059a685e518278cb3b8ed1133d2196bef1cb254989053e75f8a0b9465476"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/365-block9_initial.txt.gz",
+        "sha256": "f9b3b25c78a5384c4a0baca18f0f83f1022711a3ccd63ea53d781a5477942504"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/originals/366-diagnosis.json.gz",
+        "sha256": "3a5ede84ee7e83d97141645573fc7be955056d077761f8d23c978fd0a46d4302"
+      },
+      {
+        "path": "logs/runner-cache/algebra_naturality_check_2026_09_15.json",
+        "sha256": "3ea3ff9ecd8c48f7ab7358b8852927ca973c409c83cfde63567e7ac40f3b3755"
+      },
+      {
+        "path": "logs/runner-cache/algebra_naturality_check_2026_09_15.txt",
+        "sha256": "c10e561075461fa38261a15365d82d8645c0350e6a3da958cd331533b210a92a"
+      },
+      {
+        "path": "logs/runner-cache/charged_ring_check_2026_09_15.json",
+        "sha256": "d9f24521e4c41824c538ac60022cef9d417149a44d7ce3c7d1b2a5f10b80b5db"
+      },
+      {
+        "path": "logs/runner-cache/charged_ring_check_2026_09_15.txt",
+        "sha256": "1d0ca0a52c54b0015baa532bdc9cf100ca80d61816edc449ca4551bd275dff92"
+      },
+      {
+        "path": "logs/runner-cache/cofactor_cyclic_check_2026_09_15.json",
+        "sha256": "b4994afbe319717ab482292ae8d1bceb974888a911f7cbfb17a63070380aee84"
+      },
+      {
+        "path": "logs/runner-cache/cofactor_cyclic_check_2026_09_15.txt",
+        "sha256": "892981a88357be65035a120e9d9a07dec3403a09a89412f699c933c09609837b"
+      },
+      {
+        "path": "logs/runner-cache/contact_register_check_2026_09_15.json",
+        "sha256": "d9ec22f9087b3da21337e307300ea7fdf5e1c90ee2a40ae536aae8c15f113bc4"
+      },
+      {
+        "path": "logs/runner-cache/contact_register_check_2026_09_15.txt",
+        "sha256": "26929471518443bded92d9e6611a6b493eb8b0136c43d6f028417bb0c5d2cc45"
+      },
+      {
+        "path": "logs/runner-cache/cut_completion_check_2026_09_15.json",
+        "sha256": "c54a874c2f6eb351cf7f25135fbdf1b57ab54a980f8e4d7dd69dfd1a5bcd99b6"
+      },
+      {
+        "path": "logs/runner-cache/cut_completion_check_2026_09_15.txt",
+        "sha256": "943b6b79821d50853b31b3f48c75db74841dfa13b8d5d1c473023574db26c2ee"
+      },
+      {
+        "path": "logs/runner-cache/cyclic_equilibrium_check_2026_09_15.json",
+        "sha256": "b97a32f02927ed8abaeba9026b9c40253b9063cffc187d8b7dd48a03fb2da1e7"
+      },
+      {
+        "path": "logs/runner-cache/cyclic_equilibrium_check_2026_09_15.txt",
+        "sha256": "90a47869c451423121de8e990e8e8fb55d67818e4fd89a9b5e0f72f3e86c3264"
+      },
+      {
+        "path": "logs/runner-cache/cyclic_scaling_check_2026_09_15.json",
+        "sha256": "3b7ed5773af01eafb3c19a597f7024f7d026575fa9f2bbe16ca55b9e6ce24b9d"
+      },
+      {
+        "path": "logs/runner-cache/cyclic_scaling_check_2026_09_15.txt",
+        "sha256": "acf10093e2216d458e70fb76881bc5aa9ab5aa7af496035cad3966cb398ef09f"
+      },
+      {
+        "path": "logs/runner-cache/decay_check_2026_09_15.json",
+        "sha256": "21952437d7e98aa6efd424b4ff34267491427c5a3270e1be0688771139434829"
+      },
+      {
+        "path": "logs/runner-cache/decay_check_2026_09_15.txt",
+        "sha256": "1bd0fe59eac5763aff5b54862957bb0288e6261bbb3dc693f4bdf0d4bea804ca"
+      },
+      {
+        "path": "logs/runner-cache/determinant_exclusion_check_2026_09_15.json",
+        "sha256": "358d622ce0a904bb79f2c0d388f7bb2b33ca6d1af00fd70957e446fa36a022aa"
+      },
+      {
+        "path": "logs/runner-cache/determinant_exclusion_check_2026_09_15.txt",
+        "sha256": "38cfbc01f42c2ffe010ce7c87394a3833a6c94f4a1659f95419aa48c44bbe29f"
+      },
+      {
+        "path": "logs/runner-cache/forest_interpolation_check_2026_09_15.json",
+        "sha256": "659c63164a7af3a59712d271a5a48787e1671380922df8bd9072b7c8a308c826"
+      },
+      {
+        "path": "logs/runner-cache/forest_interpolation_check_2026_09_15.txt",
+        "sha256": "c5fa7265330d9e9dcfa6c783a7fae1be47b11505d88e03151c97fc14717387bc"
+      },
+      {
+        "path": "logs/runner-cache/fourier_gaussian_register_check_2026_09_15.json",
+        "sha256": "00dc854fb7fb5435da31b0b8e9d8dee7b4a8d0845097dd251dc068a53d404da3"
+      },
+      {
+        "path": "logs/runner-cache/fourier_gaussian_register_check_2026_09_15.txt",
+        "sha256": "13010f9fe9c8f48ca0398a7aaca2123bbdc86a3dcc3d98110842d8a719f7a82a"
+      },
+      {
+        "path": "logs/runner-cache/gaussian_cycle_check_2026_09_15.json",
+        "sha256": "58de017fcaf9322317876395a30642d8567bc717e3c036b03e52752e859f5a9f"
+      },
+      {
+        "path": "logs/runner-cache/gaussian_cycle_check_2026_09_15.txt",
+        "sha256": "3dd18661b64cf97f3b2e56fbadef88a0fe6cbc4f216f14fff1627a33f97f2ad9"
+      },
+      {
+        "path": "logs/runner-cache/general_order_check_2026_09_15.json",
+        "sha256": "84356aa19c943bae1767bce62fa132bcaae396545ccfc7d5e18e2df168b2a598"
+      },
+      {
+        "path": "logs/runner-cache/general_order_check_2026_09_15.txt",
+        "sha256": "08fef78491da5160d9fafaf43620f4f956c3902347e3195d63cdc50a343b2c97"
+      },
+      {
+        "path": "logs/runner-cache/graph_source_check_2026_09_15.json",
+        "sha256": "f551d6c6a01ae455419ef5555184ea752719d3afe0b3ba826bfc9f075d02fc56"
+      },
+      {
+        "path": "logs/runner-cache/graph_source_check_2026_09_15.txt",
+        "sha256": "e8a97ef29868e3dd57ccda0aec4b452587cc276d88040d597aa31c7a48b07883"
+      },
+      {
+        "path": "logs/runner-cache/ground_cutoff_check_2026_09_15.json",
+        "sha256": "e27833ce5016b16f731742792dea8b6c8ecc914e0722c71278b8b7bb8d54e1ab"
+      },
+      {
+        "path": "logs/runner-cache/ground_cutoff_check_2026_09_15.txt",
+        "sha256": "1f8f803370de11092e5d768389174d3c51d5ba5a7f2db027107f267a5efd36be"
+      },
+      {
+        "path": "logs/runner-cache/hard_core_cycle_check_2026_09_15.json",
+        "sha256": "c4f4f0612dad6b51316fdcea60f8430b3ee14f7ffd1537c34af1f442dca55bdc"
+      },
+      {
+        "path": "logs/runner-cache/hard_core_cycle_check_2026_09_15.txt",
+        "sha256": "37d04c225024ad81c4573726bc7632641f291a7a772d2b59aeed262e7b7fcb4e"
+      },
+      {
+        "path": "logs/runner-cache/holonomy_check_2026_09_15.json",
+        "sha256": "ae21da213ef1d6e44a57ccf78c766ddc2b062056070ee56eb4ed92f0960bb36f"
+      },
+      {
+        "path": "logs/runner-cache/holonomy_check_2026_09_15.txt",
+        "sha256": "74818192ff96c6b32d44f87dac263a04225679df238fc1342c006df20d32b75a"
+      },
+      {
+        "path": "logs/runner-cache/hybrid_curvature_check_2026_09_15.json",
+        "sha256": "cba7ed6dbf6ce48f1ad5c4cbbcdaa7185a9f26ecc001ea4ab7ac29e6c870e0c2"
+      },
+      {
+        "path": "logs/runner-cache/hybrid_curvature_check_2026_09_15.txt",
+        "sha256": "0d5553f61af7f445fa24209eb861351dd45368f9fa9b4ef52e5c31da709a07d7"
+      },
+      {
+        "path": "logs/runner-cache/hybrid_generator_check_2026_09_15.json",
+        "sha256": "4daa3faa6aba988f564f2ae48a47a9fb0991a867bb491364a3ea1e2235a8e4d4"
+      },
+      {
+        "path": "logs/runner-cache/hybrid_generator_check_2026_09_15.txt",
+        "sha256": "58cb39be7a6dfc58e7c8962c281af301acce2aca05e2aa0bc172fbd1e73b3c1b"
+      },
+      {
+        "path": "logs/runner-cache/integrated_rate_check_2026_09_15.json",
+        "sha256": "71816a7c34d8095efdde6fda429d9cf3c0b8ec00c4fa8918330bde12e2094719"
+      },
+      {
+        "path": "logs/runner-cache/integrated_rate_check_2026_09_15.txt",
+        "sha256": "e2c89752ba04e703fdcdb3c533662e7b62e0c868870f7e08b14552a3b5e7d7fc"
+      },
+      {
+        "path": "logs/runner-cache/inverse_corner_support_check_2026_09_15.json",
+        "sha256": "c837fa817bc7d8912e723bbe82349191806ac983273bc394e768141a17e524d9"
+      },
+      {
+        "path": "logs/runner-cache/inverse_corner_support_check_2026_09_15.txt",
+        "sha256": "3f4761f8e763d88706bfe9a5a1a9a38dc075f0adf74ae9c3bbac4f2ab201b2bd"
+      },
+      {
+        "path": "logs/runner-cache/local_spectrum_check_2026_09_15.json",
+        "sha256": "daff5da4603dd75fc2b91677a041be3ced6f3f38413c7493a6fca3f58ba86821"
+      },
+      {
+        "path": "logs/runner-cache/local_spectrum_check_2026_09_15.txt",
+        "sha256": "ff9d4ac634846fe15fffe42f020c9d386dd5412591cfff5ed39600e1e65bc441"
+      },
+      {
+        "path": "logs/runner-cache/matched_cone_check_2026_09_15.json",
+        "sha256": "fcb3c34e4cc0bee79beb9879c4c6133ce983885d86ae02175382faaaca767b2b"
+      },
+      {
+        "path": "logs/runner-cache/matched_cone_check_2026_09_15.txt",
+        "sha256": "4816da6aeb5ec166012230de78494067d14b27b6c14969d8754b21f402aa4963"
+      },
+      {
+        "path": "logs/runner-cache/mixed_history_check_2026_09_15.json",
+        "sha256": "d500c753bf59ea20c5e3adb29c771fddaebc9a646dd8ef7ff1bb08477ee6fc9b"
+      },
+      {
+        "path": "logs/runner-cache/mixed_history_check_2026_09_15.txt",
+        "sha256": "ca765b6c5b30df2ebba58ae4605ac37dcbbb3774233e14d9b22846c8a40f8e0a"
+      },
+      {
+        "path": "logs/runner-cache/native_motion_check_2026_09_15.json",
+        "sha256": "6e587902d2c50444d427635b3deddbdb1272dd9e8de44ffd657e1d766609dafb"
+      },
+      {
+        "path": "logs/runner-cache/native_motion_check_2026_09_15.txt",
+        "sha256": "8c668c92925a447db7cf9cf4ec1217ae77e5d127b30463786be8684bcb19eafe"
+      },
+      {
+        "path": "logs/runner-cache/native_twist_check_2026_09_15.json",
+        "sha256": "e038da1df5513fc8a7919ba3ab2adeaf7633e15bc355ca8e509833fc64ad142c"
+      },
+      {
+        "path": "logs/runner-cache/native_twist_check_2026_09_15.txt",
+        "sha256": "277b93b04c58d2b7e027083b4f12243366cefd2ca021126bc6864973a680c5d1"
+      },
+      {
+        "path": "logs/runner-cache/operator_source_check_2026_09_15.json",
+        "sha256": "118aad01dd1fdc39f8ce7b928304f1be5226e93629654f9923fb58b28def4a07"
+      },
+      {
+        "path": "logs/runner-cache/operator_source_check_2026_09_15.txt",
+        "sha256": "6fc54be8a3ffb08bf8fd8ca2f9f7acd173310a91beaf5ff0879ac6265afdb329"
+      },
+      {
+        "path": "logs/runner-cache/partition_exclusion_check_2026_09_15.json",
+        "sha256": "88c85e36a6c0101f42d4d9f4b49eb3812160198cc6750ec423daa8ae44d674d6"
+      },
+      {
+        "path": "logs/runner-cache/partition_exclusion_check_2026_09_15.txt",
+        "sha256": "463c013b96d5bcbeb6a3b3419bb586ef6fc07be27b53f21b3e140df599593048"
+      },
+      {
+        "path": "logs/runner-cache/phase_energy_check_2026_09_15.json",
+        "sha256": "0af57c8b455f7890e6c74ce7c42994a17b9545c531a23ab5f156813b2e183693"
+      },
+      {
+        "path": "logs/runner-cache/phase_energy_check_2026_09_15.txt",
+        "sha256": "5a2e407d299ea3a618e923eb1daddb51e3a3b6be07585d22b0c4a8956e7c3e9d"
+      },
+      {
+        "path": "logs/runner-cache/physical_probe_check_2026_09_15.json",
+        "sha256": "0165bc2bbef93c6e3ce2868d94f4736c9b0e81e90bbca072c408efa3760329ff"
+      },
+      {
+        "path": "logs/runner-cache/physical_probe_check_2026_09_15.txt",
+        "sha256": "20ece3b4a02fa05eb4cfaaff7bbac93f004ecddd3cba0d68cdff62b1ef12335f"
+      },
+      {
+        "path": "logs/runner-cache/polarized_word_check_2026_09_15.json",
+        "sha256": "3f13a97c5726a89613b4a59d7d7fe26a05b4eda807dc9b257a4f217cef21f2be"
+      },
+      {
+        "path": "logs/runner-cache/polarized_word_check_2026_09_15.txt",
+        "sha256": "d1e799097d36562d810569ebd70cbe8ad9c59567ad1d4e4f6f09f0b129acbfc0"
+      },
+      {
+        "path": "logs/runner-cache/positive_auxiliary_check_2026_09_15.json",
+        "sha256": "89651a8ebe0fed36e6335e15ee8c7b6cf08c2c732345b3c172625592ab1fb402"
+      },
+      {
+        "path": "logs/runner-cache/positive_auxiliary_check_2026_09_15.txt",
+        "sha256": "d2cffb95dea95ce4893bda079ab556ad5687a5e5b79199275532d4fde3d302cd"
+      },
+      {
+        "path": "logs/runner-cache/positive_generator_check_2026_09_15.json",
+        "sha256": "1b4c339d6a9ec8c136758f25c5280ff758119a4a6b084e62e3d2fe26f3d60b2e"
+      },
+      {
+        "path": "logs/runner-cache/positive_generator_check_2026_09_15.txt",
+        "sha256": "92018cec3e6ce3d4d2f4044cc608c831ad7a01595e8138a3fbec48321ccbeddd"
+      },
+      {
+        "path": "logs/runner-cache/quadratic_coframe_check_2026_09_15.json",
+        "sha256": "733f1483e923483d062a9dbd88709a1f065dec6145b915efe6aeaf6a9d41bfa0"
+      },
+      {
+        "path": "logs/runner-cache/quadratic_coframe_check_2026_09_15.txt",
+        "sha256": "88bf83e1a954827ab8ce4df953a506d44b94616eff16334672d97e66ffe81560"
+      },
+      {
+        "path": "logs/runner-cache/quartet_metric_check_2026_09_15.json",
+        "sha256": "e322579aad3bca0d77219799bbdf3bd2222bab1dd7ca5965112c9c10770b2df0"
+      },
+      {
+        "path": "logs/runner-cache/quartet_metric_check_2026_09_15.txt",
+        "sha256": "701b427b9815c65e45be160a64aa711b3f36b953fd45ee16ce12b495c0d168e5"
+      },
+      {
+        "path": "logs/runner-cache/record_pair_check_2026_09_15.json",
+        "sha256": "64d0687af1b0c7e07fe866ebc66b8f9c3059f739a76db8b7ad032af9d7cc0291"
+      },
+      {
+        "path": "logs/runner-cache/record_pair_check_2026_09_15.txt",
+        "sha256": "ebe8d9cec8c8a7ad02c3e7dd2a64f31dd3c598bd108845ec718cebd1b320cd87"
+      },
+      {
+        "path": "logs/runner-cache/response_identity_check_2026_09_15.json",
+        "sha256": "1593a18949c13740855c261d7454247b5bab7a6ffaef999210ef57afd0367ad3"
+      },
+      {
+        "path": "logs/runner-cache/response_identity_check_2026_09_15.txt",
+        "sha256": "5c7b4bed0705e3bdea3d0b576d0acdb26a6e7916ab6bd00da7b4f8cd4011029d"
+      },
+      {
+        "path": "logs/runner-cache/review_harmonic_metric_check_2026_09_15.json",
+        "sha256": "08d0c8195629d8f6aeb1ab43d02181735cd2e73e450cbd5509596c7e2d2d7326"
+      },
+      {
+        "path": "logs/runner-cache/review_harmonic_metric_check_2026_09_15.txt",
+        "sha256": "f8460445ba7ab792b5c7904b66774f14d76c228f5bcfd66fa0731e25557f29e4"
+      },
+      {
+        "path": "logs/runner-cache/slow_fast_check_2026_09_15.json",
+        "sha256": "a50ff979c5ca67081b0310a6af6fdfaab0a38bbcc59230685689941ee333c9f8"
+      },
+      {
+        "path": "logs/runner-cache/slow_fast_check_2026_09_15.txt",
+        "sha256": "6515eed6374dc7f3cc0ff22c6427ac0fb402ffc5a855d3aafc31f4890f482e1b"
+      },
+      {
+        "path": "logs/runner-cache/tree_count_check_2026_09_15.json",
+        "sha256": "ec18f3edeb8317767e433c1564b09969f3810c3460e0e6d525924744db7881bf"
+      },
+      {
+        "path": "logs/runner-cache/tree_count_check_2026_09_15.txt",
+        "sha256": "18a1e07cbbb685fcb33778f35fc74c0eb9cac5f13bbf70902666249c277e94e0"
+      },
+      {
+        "path": "logs/runner-cache/visible_threshold_check_2026_09_15.json",
+        "sha256": "bb50e37932c9dae88764338fb053b3b5ae02644225cfa710b8ab44464adb066c"
+      },
+      {
+        "path": "logs/runner-cache/visible_threshold_check_2026_09_15.txt",
+        "sha256": "026cfa3852807318daf0a80ea9f2cd10346c1b55b5673469b6002114bd978d43"
+      },
+      {
+        "path": "scripts/algebra_naturality_check_2026_09_15.py",
+        "sha256": "791ab9cbae504bc6d65bdef7e82b36a2b10592492240903bf65d6555799a3676"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "728629ffe0fea6d13f0010eb274458da0060f73c02cc1fff26b4f6beba09f3cc"
+      },
+      {
+        "path": "scripts/charged_ring_check_2026_09_15.py",
+        "sha256": "d7dd992cc5fd3af51fde72cb54a5e8cb05bf3d822d1defd879d22d0ee916cddc"
+      },
+      {
+        "path": "scripts/cofactor_cyclic_check_2026_09_15.py",
+        "sha256": "6ca04bfd0d28da2a74b161688a954054bb7887defb9cc01b2d4bee61f7579111"
+      },
+      {
+        "path": "scripts/contact_register_check_2026_09_15.py",
+        "sha256": "ea4cbe01dc77a3053e61072368b0ecc9f99f620a0c424982d68f8da272c232b8"
+      },
+      {
+        "path": "scripts/cut_completion_check_2026_09_15.py",
+        "sha256": "f75b0f367e03d980f928a5431a463395f4d67c4024d620b275bf6a31d9eaa7e0"
+      },
+      {
+        "path": "scripts/cyclic_equilibrium_check_2026_09_15.py",
+        "sha256": "bcbcb17302e6cc9fcc6819831bf810b4060acb6aa0ad61b6149ee4014402fc6c"
+      },
+      {
+        "path": "scripts/cyclic_scaling_check_2026_09_15.py",
+        "sha256": "0646a64e80a67ffe562140513c84884346df560d113d9c8fa9fce707ecfca2ba"
+      },
+      {
+        "path": "scripts/decay_check_2026_09_15.py",
+        "sha256": "99c62cc75d82d781ac1606649f4bd871ca542fbc30d56c0ff001d85863db7494"
+      },
+      {
+        "path": "scripts/determinant_exclusion_check_2026_09_15.py",
+        "sha256": "ff2370755fafd6c162b0d286114deea1fc1b5fa7a2bca87be091c1a123534564"
+      },
+      {
+        "path": "scripts/forest_interpolation_check_2026_09_15.py",
+        "sha256": "01d07bd14e50bf594703df38e7a359965969b56dfbb71ed6f33098103b510021"
+      },
+      {
+        "path": "scripts/fourier_gaussian_register_check_2026_09_15.py",
+        "sha256": "4e1aae5a7a14e2b149dfcae9fa19daa1128ceacc3b327761f3c142b0a05bba93"
+      },
+      {
+        "path": "scripts/gaussian_cycle_check_2026_09_15.py",
+        "sha256": "1fb8088a9a72ef13cf1a7240f6a04d79c9149f2210649761b056a85a11a2f762"
+      },
+      {
+        "path": "scripts/general_order_check_2026_09_15.py",
+        "sha256": "620f99cd7f3cd42b91efcb22cbfa5c5a79fb668b812a128180404d049a18d7d7"
+      },
+      {
+        "path": "scripts/graph_source_check_2026_09_15.py",
+        "sha256": "18089ffce3b2b57e98f0f27223c69cef442feaeb7db271fe9a9801fbd74b8eca"
+      },
+      {
+        "path": "scripts/ground_cutoff_check_2026_09_15.py",
+        "sha256": "b8b78409a0bcd4e9ca472f65e1fc66c053e4b6f61bd8f576ebb61df3d7a4f3c4"
+      },
+      {
+        "path": "scripts/hard_core_cycle_check_2026_09_15.py",
+        "sha256": "ae301d5dcd5a3a934cf62e1609be59e11e4c4aaa01fce92e1cbca968c781e71e"
+      },
+      {
+        "path": "scripts/holonomy_check_2026_09_15.py",
+        "sha256": "c0ee175798de3c1e4f61d8a5f27af37d108c079cc794d8ac75537e9d89cf30fa"
+      },
+      {
+        "path": "scripts/hybrid_curvature_check_2026_09_15.py",
+        "sha256": "3d615c284ecc2cdb64c547d9306daea2f856d3c66a81af5f2677c4bdd668ae52"
+      },
+      {
+        "path": "scripts/hybrid_generator_check_2026_09_15.py",
+        "sha256": "5d4e0f87d6d048c2e038dca2b85a8d1d2cf9592926cbcfe9ccad74e284f31cee"
+      },
+      {
+        "path": "scripts/integrated_rate_check_2026_09_15.py",
+        "sha256": "9b93c4d78523b8363e44ac4c48c32b9e53606760fd067cc96e3c6250800aa993"
+      },
+      {
+        "path": "scripts/inverse_corner_support_check_2026_09_15.py",
+        "sha256": "e845a9e8e92b2b0dae8364450724fed592cbcea8cd0814516fa65a8ddfc794b3"
+      },
+      {
+        "path": "scripts/local_spectrum_check_2026_09_15.py",
+        "sha256": "26b293b3657e49c0abb2286dea59f424da2141fa930e78573d25db959837bfc1"
+      },
+      {
+        "path": "scripts/matched_cone_check_2026_09_15.py",
+        "sha256": "7589f3815af40612c1e0e49098b8b3af29049d241f6fd54653c5523913b4e279"
+      },
+      {
+        "path": "scripts/mixed_history_check_2026_09_15.py",
+        "sha256": "b8853d66e555f78e3ba28b165f9aead8c60cbd7bfc2c1ce6573bb6404a50cfa5"
+      },
+      {
+        "path": "scripts/native_motion_check_2026_09_15.py",
+        "sha256": "e11214c3ad4a87efd3847e6ee2a9a736b48bc8799373218505febd20bd53d3da"
+      },
+      {
+        "path": "scripts/native_twist_check_2026_09_15.py",
+        "sha256": "671a19dcda0285447aa4b162ef7e9860340c3729e3a2b26485279d51e9294d82"
+      },
+      {
+        "path": "scripts/operator_source_check_2026_09_15.py",
+        "sha256": "f2d3502d44f5b81d6fbf1a567ebe405e85a0e9c32980cec7083b48788a1c7eb9"
+      },
+      {
+        "path": "scripts/partition_exclusion_check_2026_09_15.py",
+        "sha256": "6aa97c6f6a9a142f0be87c26c668befddc97432a05cb9ef999d751575c03659d"
+      },
+      {
+        "path": "scripts/phase_energy_check_2026_09_15.py",
+        "sha256": "307e0e4e066d9a9db3d6f10ee0e81baa9287b5fa7730f6702cbdd278095a6673"
+      },
+      {
+        "path": "scripts/physical_probe_check_2026_09_15.py",
+        "sha256": "ca40da09ce8e1d9b8b147187c4c995e2ded3c28429c909403fc309e41d23869f"
+      },
+      {
+        "path": "scripts/polarized_word_check_2026_09_15.py",
+        "sha256": "0227179a994d587740dea92b182d7b98467dceb10c1512b636655bcb73888362"
+      },
+      {
+        "path": "scripts/positive_auxiliary_check_2026_09_15.py",
+        "sha256": "b5288ba2ff203248fd5a5f9b768562a43b1eaddda76c3b60e526bb380318fc13"
+      },
+      {
+        "path": "scripts/positive_generator_check_2026_09_15.py",
+        "sha256": "6279f4f85cb4ac6d148117167d7a4be32abb51a90389e966a60e9145d34a4cb7"
+      },
+      {
+        "path": "scripts/quadratic_coframe_check_2026_09_15.py",
+        "sha256": "180cb705df6de9e4ace402e4561508f67d51d6e7094de9ef635ec38e0df3b993"
+      },
+      {
+        "path": "scripts/quartet_metric_check_2026_09_15.py",
+        "sha256": "39f256955fd28a0090de564a8ae0d4a6ad0af07e03dbaf04abcdde28f2ec820c"
+      },
+      {
+        "path": "scripts/record_pair_check_2026_09_15.py",
+        "sha256": "5afaa1492afa3e2da5195776cb07a931cb41667e777edd1c34910175ef97ee76"
+      },
+      {
+        "path": "scripts/response_identity_check_2026_09_15.py",
+        "sha256": "b81caeeb31f9580a4794b8d474793c27964d30ab112689fc63ecf632fd8763c7"
+      },
+      {
+        "path": "scripts/review_harmonic_metric_check_2026_09_15.py",
+        "sha256": "e024c209365025b24e46b9312309683753cb63d6b314094a82a5957b18b26737"
+      },
+      {
+        "path": "scripts/slow_fast_check_2026_09_15.py",
+        "sha256": "f6b6e5b0427b88edd4b08a1dc5253e4b068c26fba7e474821d06b97f5f1df88f"
+      },
+      {
+        "path": "scripts/tree_count_check_2026_09_15.py",
+        "sha256": "53c6fa0c46be0e08f9690422ae7a33cea500a0fd963c74036ca5b9f2a41070be"
+      },
+      {
+        "path": "scripts/visible_threshold_check_2026_09_15.py",
+        "sha256": "32decf8bbe185badac69af2635218b17812d3fdaaea3fbbc845b0a63581d7993"
+      }
+    ],
+    "deleted_paths": []
+  },
+  "inputs": {
+    "runtime": [
+      {
+        "path": "docs/CHARGED_FINITE_LINK_LOCAL_DYNAMICS_AND_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "eb2e9d2e5377af13af94df558d9ac4bf07e499ccae512444251be86bc305d8a4"
+      },
+      {
+        "path": "docs/CHARGED_RING_SLOW_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbbcbb346f725448b936df560904842eb6390b0751585d31616a2c63b2ca6b98"
+      },
+      {
+        "path": "docs/CUBIC_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "7d446318b8dbc204b2c1cef233f901078cdd6829bb325db2cb7e0100633fb8ca"
+      },
+      {
+        "path": "docs/CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "d13c0d208e8915fcf4c7398dcc144536f1305046a57cbe9245088bfd04f7bc2f"
+      },
+      {
+        "path": "docs/EXACT_GAUGE_WARD_RESPONSE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "7a460381594eb146002105566995fb328d827051ddaa4eed28936e202e81f72e"
+      },
+      {
+        "path": "docs/EXACT_GAUSS_REDUCTION_AND_FIXED_VOLUME_WEAK_COUPLING_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "4f9c085195ba1b769949dc121778b3012479bc28eb6e1108e81e7a6c1848ceba"
+      },
+      {
+        "path": "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "938df6cf9b527c050ff2aa79e55cca8d310bdaf2d129d50ef9b62d53993704a2"
+      },
+      {
+        "path": "docs/FINITE_GRAPH_CYCLIC_WEAK_COUPLING_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "aa4b2dc8acbe9bfade778ceb1b9d6b2d711721a76fde517c8c690cc5ce863218"
+      },
+      {
+        "path": "docs/FINITE_INTEGER_LINK_WEAK_COUPLING_PAYLOAD_AND_MONOPOLE_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "2a6d5c79513cb92334e64d780d5b8490b6f4e9b781ad24adaafc33e1288d6851"
+      },
+      {
+        "path": "docs/FINITE_NATIVE_WINDING_CURVATURE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "bfbbb45f3ec7ca59b0d32d9482f209d0da16098f1b4cafe39882d903077236e9"
+      },
+      {
+        "path": "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "84d8eecde04a7fe9f60014a36fe265a413ba779c1487b416115c15f472d7d2f1"
+      },
+      {
+        "path": "docs/FIXED_COUPLING_ROTOR_GROUND_CUTOFF_COMPACTNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "fce8dfa118325552e93dec94089c9c76b3b5ed52e0c31f9742372297a47f97b4"
+      },
+      {
+        "path": "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "e00414f51b7a7ece4a9f107092e92877a296c66282133f6d35c62939fc3ed268"
+      },
+      {
+        "path": "docs/FORMATION_ORDER_COVARIANCE_AND_ISOTROPIC_BINARY_ORDER_BLIND_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "42cbbd5ceaea95533d670fe4f3e527f566cca4cb14b826b9d98cc1ab2168c008"
+      },
+      {
+        "path": "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "3c22468d38ee7733013b0d663507f9d2a5bcba75460f4700e02d949a8768b823"
+      },
+      {
+        "path": "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "58b714ec8df5a67efc65037caa1721178e1400c55d0bc743fd5a1227448ae542"
+      },
+      {
+        "path": "docs/ITERATED_LOCAL_MAXWELL_MATTER_STATE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "a8f99cf9b8e30031a85ff0b4e24cbddb38351a8ba0c01fa4a9d8c8cbfae9d111"
+      },
+      {
+        "path": "docs/LOCAL_HALL_FREE_MIXED_WEYL_QUARTET_AND_COMMON_METRIC_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "9318215ebc71ad93aa9dbe8117f68122bfa3f6a3d2cc4967560d740d8ba2c6db"
+      },
+      {
+        "path": "docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "a3a855d8f48556d991537d5bd5aefe2d9d9a9fd9a0b561311c2d2921ee9c07a1"
+      },
+      {
+        "path": "docs/NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "69299818ff8e463e4a246044f4b160a7a22867e7205bcb55f56cdeb802149192"
+      },
+      {
+        "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70"
+      },
+      {
+        "path": "docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md",
+        "sha256": "5ab56a41ae9524c433a50ee79889f29bf33cab7059f88f7dccd2449f8b6bdb2f"
+      },
+      {
+        "path": "docs/NATIVE_GLOBAL_CHARGE_CONNECTIVITY_AND_EXCHANGE_NOTE_2026-09-08.md",
+        "sha256": "e57d84de87b131384b2be7c6f33bedd41449cb5c36e37d8fab5c4751e57e55a5"
+      },
+      {
+        "path": "docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md",
+        "sha256": "586b895c89eabe67c4ac6c93b5f83f9bfd9118483c4265a652f6f4e822b75583"
+      },
+      {
+        "path": "docs/NATIVE_MIXED_SIXTH_ORDER_COEFFICIENT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "6aa00d3bbba0927f92f1dbd4da52b83e0b15f21a5c03816c04bd7f4699f23392"
+      },
+      {
+        "path": "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "c0360ad1ec65a78ca63b6d6cbd24dd387e455197c87e54441424550e145c5a9f"
+      },
+      {
+        "path": "docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "01b1d213957dc1c85a520cabb6dab6ef7f6daf0b5631205f76d66d001861c8ca"
+      },
+      {
+        "path": "docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md",
+        "sha256": "46d531814d55b1a9c4e00b10ddce9cee30a673e0f93d925d83242425c95f1cd9"
+      },
+      {
+        "path": "docs/NATIVE_STAR_INFRARED_SPECTRAL_DOMINANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "d6c7c21b65e36beecd1293a5782902019d214a782297137aa8e437ef3479ba9c"
+      },
+      {
+        "path": "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+        "sha256": "1557d48a8e3d5fcc17a01982484bffa6f27e0be16a42c88062eadb455dada226"
+      },
+      {
+        "path": "docs/NATIVE_THIRD_ORDER_STAR_VERTEX_NOTE_2026-09-08.md",
+        "sha256": "c3ca9084907eab9f220886bd9e5d9c35654b0f27009d0cbbfb973ec30a8445e1"
+      },
+      {
+        "path": "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+        "sha256": "787948c0e58c794371fc0839d99a9eae15f49abed523b0eba9b001d010578ada"
+      },
+      {
+        "path": "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+        "sha256": "0c6c768b4fb0416067c5de3dd159596a0367e8c9c77c10f0c5700936ff6aa2f0"
+      },
+      {
+        "path": "docs/NATIVE_WEAK_ELECTRIC_SPECTATOR_GAP_NOTE_2026-09-08.md",
+        "sha256": "0f0a62aff6c9841a42b4850f3e5e4b8c9c9f613d37d755ca8f74f05f60d52270"
+      },
+      {
+        "path": "docs/NATIVE_WEYL_GAUGE_HALL_AND_CONE_FLOW_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "9a4e3ec1310fde85e4d5f34dd1af9b8999629df7b9988a7d54d040c0f8b7fb7d"
+      },
+      {
+        "path": "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "5c4482c4a0531be707f64ffeb07b705659d6aa19478b3be2878929f5b39a794a"
+      },
+      {
+        "path": "docs/POSITIVE_AUXILIARY_CURRENT_LAW_AND_REGULATOR_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "94f3be3f568d3391a56d35ec98bb3dc8a0cdf1de38c36ab50eaffca8b44d75e9"
+      },
+      {
+        "path": "docs/POSITIVE_ELECTRIC_GENERATOR_CONE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cb90dfc9747c088b6a429699388c6d38462613095b8fc421bcb015d10accbbbd"
+      },
+      {
+        "path": "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "sha256": "41d6b505e1afa88345a92caf3f33b4f0021101c30bb6ec9e23daa818204525f5"
+      },
+      {
+        "path": "docs/REAL_OVERLAP_LOCAL_SOURCE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "b55c574197329d931e39ced4cb34063ebe1438dcf654c7d049d76340d60e8c23"
+      },
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      },
+      {
+        "path": "docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "6c2affb5dde329a00bb495bf3ddeefb8a6bcdbf187f1e32f991033a3a4b3a236"
+      },
+      {
+        "path": "docs/SUPPLIED_MATCHED_FREE_CONE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "24dbc17e78cb932f240f6b0bdbec62663795b3cfccb1030a5ca8f1b7ff1cdfab"
+      },
+      {
+        "path": "docs/SUPPLIED_QUARTET_LEADING_DECAY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "8979b78cb9939242eefccc2dfc321a0ff8ea63c61b4da07590b2941a68d7a61c"
+      },
+      {
+        "path": "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "0d103102a710ebde79af54b2b63e811d2381abf80874c4a203eb76d04d2853af"
+      },
+      {
+        "path": "docs/SUPPLIED_QUARTET_QUADRATIC_BACKREACTION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "3f5b18314e2d2aec6288db338bc157c2fbdbce5a7a4ced534179dc39de612f1a"
+      },
+      {
+        "path": "docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "750bdd27065ef957228c7316996d6a9cfcb5af19a5407309e532e9c1edc6fce0"
+      },
+      {
+        "path": "scripts/algebra_naturality_check_2026_09_15.py",
+        "sha256": "791ab9cbae504bc6d65bdef7e82b36a2b10592492240903bf65d6555799a3676"
+      },
+      {
+        "path": "scripts/charged_ring_check_2026_09_15.py",
+        "sha256": "d7dd992cc5fd3af51fde72cb54a5e8cb05bf3d822d1defd879d22d0ee916cddc"
+      },
+      {
+        "path": "scripts/cofactor_cyclic_check_2026_09_15.py",
+        "sha256": "6ca04bfd0d28da2a74b161688a954054bb7887defb9cc01b2d4bee61f7579111"
+      },
+      {
+        "path": "scripts/contact_register_check_2026_09_15.py",
+        "sha256": "ea4cbe01dc77a3053e61072368b0ecc9f99f620a0c424982d68f8da272c232b8"
+      },
+      {
+        "path": "scripts/cut_completion_check_2026_09_15.py",
+        "sha256": "f75b0f367e03d980f928a5431a463395f4d67c4024d620b275bf6a31d9eaa7e0"
+      },
+      {
+        "path": "scripts/cyclic_equilibrium_check_2026_09_15.py",
+        "sha256": "bcbcb17302e6cc9fcc6819831bf810b4060acb6aa0ad61b6149ee4014402fc6c"
+      },
+      {
+        "path": "scripts/cyclic_scaling_check_2026_09_15.py",
+        "sha256": "0646a64e80a67ffe562140513c84884346df560d113d9c8fa9fce707ecfca2ba"
+      },
+      {
+        "path": "scripts/decay_check_2026_09_15.py",
+        "sha256": "99c62cc75d82d781ac1606649f4bd871ca542fbc30d56c0ff001d85863db7494"
+      },
+      {
+        "path": "scripts/determinant_exclusion_check_2026_09_15.py",
+        "sha256": "ff2370755fafd6c162b0d286114deea1fc1b5fa7a2bca87be091c1a123534564"
+      },
+      {
+        "path": "scripts/forest_interpolation_check_2026_09_15.py",
+        "sha256": "01d07bd14e50bf594703df38e7a359965969b56dfbb71ed6f33098103b510021"
+      },
+      {
+        "path": "scripts/fourier_gaussian_register_check_2026_09_15.py",
+        "sha256": "4e1aae5a7a14e2b149dfcae9fa19daa1128ceacc3b327761f3c142b0a05bba93"
+      },
+      {
+        "path": "scripts/gaussian_cycle_check_2026_09_15.py",
+        "sha256": "1fb8088a9a72ef13cf1a7240f6a04d79c9149f2210649761b056a85a11a2f762"
+      },
+      {
+        "path": "scripts/general_order_check_2026_09_15.py",
+        "sha256": "620f99cd7f3cd42b91efcb22cbfa5c5a79fb668b812a128180404d049a18d7d7"
+      },
+      {
+        "path": "scripts/graph_source_check_2026_09_15.py",
+        "sha256": "18089ffce3b2b57e98f0f27223c69cef442feaeb7db271fe9a9801fbd74b8eca"
+      },
+      {
+        "path": "scripts/ground_cutoff_check_2026_09_15.py",
+        "sha256": "b8b78409a0bcd4e9ca472f65e1fc66c053e4b6f61bd8f576ebb61df3d7a4f3c4"
+      },
+      {
+        "path": "scripts/hard_core_cycle_check_2026_09_15.py",
+        "sha256": "ae301d5dcd5a3a934cf62e1609be59e11e4c4aaa01fce92e1cbca968c781e71e"
+      },
+      {
+        "path": "scripts/holonomy_check_2026_09_15.py",
+        "sha256": "c0ee175798de3c1e4f61d8a5f27af37d108c079cc794d8ac75537e9d89cf30fa"
+      },
+      {
+        "path": "scripts/hybrid_curvature_check_2026_09_15.py",
+        "sha256": "3d615c284ecc2cdb64c547d9306daea2f856d3c66a81af5f2677c4bdd668ae52"
+      },
+      {
+        "path": "scripts/hybrid_generator_check_2026_09_15.py",
+        "sha256": "5d4e0f87d6d048c2e038dca2b85a8d1d2cf9592926cbcfe9ccad74e284f31cee"
+      },
+      {
+        "path": "scripts/integrated_rate_check_2026_09_15.py",
+        "sha256": "9b93c4d78523b8363e44ac4c48c32b9e53606760fd067cc96e3c6250800aa993"
+      },
+      {
+        "path": "scripts/inverse_corner_support_check_2026_09_15.py",
+        "sha256": "e845a9e8e92b2b0dae8364450724fed592cbcea8cd0814516fa65a8ddfc794b3"
+      },
+      {
+        "path": "scripts/local_spectrum_check_2026_09_15.py",
+        "sha256": "26b293b3657e49c0abb2286dea59f424da2141fa930e78573d25db959837bfc1"
+      },
+      {
+        "path": "scripts/matched_cone_check_2026_09_15.py",
+        "sha256": "7589f3815af40612c1e0e49098b8b3af29049d241f6fd54653c5523913b4e279"
+      },
+      {
+        "path": "scripts/mixed_history_check_2026_09_15.py",
+        "sha256": "b8853d66e555f78e3ba28b165f9aead8c60cbd7bfc2c1ce6573bb6404a50cfa5"
+      },
+      {
+        "path": "scripts/native_motion_check_2026_09_15.py",
+        "sha256": "e11214c3ad4a87efd3847e6ee2a9a736b48bc8799373218505febd20bd53d3da"
+      },
+      {
+        "path": "scripts/native_twist_check_2026_09_15.py",
+        "sha256": "671a19dcda0285447aa4b162ef7e9860340c3729e3a2b26485279d51e9294d82"
+      },
+      {
+        "path": "scripts/operator_source_check_2026_09_15.py",
+        "sha256": "f2d3502d44f5b81d6fbf1a567ebe405e85a0e9c32980cec7083b48788a1c7eb9"
+      },
+      {
+        "path": "scripts/partition_exclusion_check_2026_09_15.py",
+        "sha256": "6aa97c6f6a9a142f0be87c26c668befddc97432a05cb9ef999d751575c03659d"
+      },
+      {
+        "path": "scripts/phase_energy_check_2026_09_15.py",
+        "sha256": "307e0e4e066d9a9db3d6f10ee0e81baa9287b5fa7730f6702cbdd278095a6673"
+      },
+      {
+        "path": "scripts/physical_probe_check_2026_09_15.py",
+        "sha256": "ca40da09ce8e1d9b8b147187c4c995e2ded3c28429c909403fc309e41d23869f"
+      },
+      {
+        "path": "scripts/polarized_word_check_2026_09_15.py",
+        "sha256": "0227179a994d587740dea92b182d7b98467dceb10c1512b636655bcb73888362"
+      },
+      {
+        "path": "scripts/positive_auxiliary_check_2026_09_15.py",
+        "sha256": "b5288ba2ff203248fd5a5f9b768562a43b1eaddda76c3b60e526bb380318fc13"
+      },
+      {
+        "path": "scripts/positive_generator_check_2026_09_15.py",
+        "sha256": "6279f4f85cb4ac6d148117167d7a4be32abb51a90389e966a60e9145d34a4cb7"
+      },
+      {
+        "path": "scripts/quadratic_coframe_check_2026_09_15.py",
+        "sha256": "180cb705df6de9e4ace402e4561508f67d51d6e7094de9ef635ec38e0df3b993"
+      },
+      {
+        "path": "scripts/quartet_metric_check_2026_09_15.py",
+        "sha256": "39f256955fd28a0090de564a8ae0d4a6ad0af07e03dbaf04abcdde28f2ec820c"
+      },
+      {
+        "path": "scripts/record_pair_check_2026_09_15.py",
+        "sha256": "5afaa1492afa3e2da5195776cb07a931cb41667e777edd1c34910175ef97ee76"
+      },
+      {
+        "path": "scripts/response_identity_check_2026_09_15.py",
+        "sha256": "b81caeeb31f9580a4794b8d474793c27964d30ab112689fc63ecf632fd8763c7"
+      },
+      {
+        "path": "scripts/review_harmonic_metric_check_2026_09_15.py",
+        "sha256": "e024c209365025b24e46b9312309683753cb63d6b314094a82a5957b18b26737"
+      },
+      {
+        "path": "scripts/slow_fast_check_2026_09_15.py",
+        "sha256": "f6b6e5b0427b88edd4b08a1dc5253e4b068c26fba7e474821d06b97f5f1df88f"
+      },
+      {
+        "path": "scripts/tree_count_check_2026_09_15.py",
+        "sha256": "53c6fa0c46be0e08f9690422ae7a33cea500a0fd963c74036ca5b9f2a41070be"
+      },
+      {
+        "path": "scripts/visible_threshold_check_2026_09_15.py",
+        "sha256": "32decf8bbe185badac69af2635218b17812d3fdaaea3fbbc845b0a63581d7993"
+      }
+    ],
+    "helpers": [
+      {
+        "path": "scripts/cofactor_cyclic_check_2026_09_15.py",
+        "sha256": "6ca04bfd0d28da2a74b161688a954054bb7887defb9cc01b2d4bee61f7579111"
+      },
+      {
+        "path": "scripts/contact_register_check_2026_09_15.py",
+        "sha256": "ea4cbe01dc77a3053e61072368b0ecc9f99f620a0c424982d68f8da272c232b8"
+      },
+      {
+        "path": "scripts/cut_completion_check_2026_09_15.py",
+        "sha256": "f75b0f367e03d980f928a5431a463395f4d67c4024d620b275bf6a31d9eaa7e0"
+      },
+      {
+        "path": "scripts/cyclic_equilibrium_check_2026_09_15.py",
+        "sha256": "bcbcb17302e6cc9fcc6819831bf810b4060acb6aa0ad61b6149ee4014402fc6c"
+      },
+      {
+        "path": "scripts/determinant_exclusion_check_2026_09_15.py",
+        "sha256": "ff2370755fafd6c162b0d286114deea1fc1b5fa7a2bca87be091c1a123534564"
+      },
+      {
+        "path": "scripts/forest_interpolation_check_2026_09_15.py",
+        "sha256": "01d07bd14e50bf594703df38e7a359965969b56dfbb71ed6f33098103b510021"
+      },
+      {
+        "path": "scripts/gaussian_cycle_check_2026_09_15.py",
+        "sha256": "1fb8088a9a72ef13cf1a7240f6a04d79c9149f2210649761b056a85a11a2f762"
+      },
+      {
+        "path": "scripts/general_order_check_2026_09_15.py",
+        "sha256": "620f99cd7f3cd42b91efcb22cbfa5c5a79fb668b812a128180404d049a18d7d7"
+      },
+      {
+        "path": "scripts/graph_source_check_2026_09_15.py",
+        "sha256": "18089ffce3b2b57e98f0f27223c69cef442feaeb7db271fe9a9801fbd74b8eca"
+      },
+      {
+        "path": "scripts/hard_core_cycle_check_2026_09_15.py",
+        "sha256": "ae301d5dcd5a3a934cf62e1609be59e11e4c4aaa01fce92e1cbca968c781e71e"
+      },
+      {
+        "path": "scripts/hybrid_curvature_check_2026_09_15.py",
+        "sha256": "3d615c284ecc2cdb64c547d9306daea2f856d3c66a81af5f2677c4bdd668ae52"
+      },
+      {
+        "path": "scripts/integrated_rate_check_2026_09_15.py",
+        "sha256": "9b93c4d78523b8363e44ac4c48c32b9e53606760fd067cc96e3c6250800aa993"
+      },
+      {
+        "path": "scripts/inverse_corner_support_check_2026_09_15.py",
+        "sha256": "e845a9e8e92b2b0dae8364450724fed592cbcea8cd0814516fa65a8ddfc794b3"
+      },
+      {
+        "path": "scripts/operator_source_check_2026_09_15.py",
+        "sha256": "f2d3502d44f5b81d6fbf1a567ebe405e85a0e9c32980cec7083b48788a1c7eb9"
+      },
+      {
+        "path": "scripts/partition_exclusion_check_2026_09_15.py",
+        "sha256": "6aa97c6f6a9a142f0be87c26c668befddc97432a05cb9ef999d751575c03659d"
+      },
+      {
+        "path": "scripts/polarized_word_check_2026_09_15.py",
+        "sha256": "0227179a994d587740dea92b182d7b98467dceb10c1512b636655bcb73888362"
+      },
+      {
+        "path": "scripts/review_harmonic_metric_check_2026_09_15.py",
+        "sha256": "e024c209365025b24e46b9312309683753cb63d6b314094a82a5957b18b26737"
+      },
+      {
+        "path": "scripts/slow_fast_check_2026_09_15.py",
+        "sha256": "f6b6e5b0427b88edd4b08a1dc5253e4b068c26fba7e474821d06b97f5f1df88f"
+      },
+      {
+        "path": "scripts/tree_count_check_2026_09_15.py",
+        "sha256": "53c6fa0c46be0e08f9690422ae7a33cea500a0fd963c74036ca5b9f2a41070be"
+      }
+    ],
+    "parents": [
+      {
+        "path": "docs/CHARGED_FINITE_LINK_LOCAL_DYNAMICS_AND_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "eb2e9d2e5377af13af94df558d9ac4bf07e499ccae512444251be86bc305d8a4"
+      },
+      {
+        "path": "docs/EXACT_GAUSS_REDUCTION_AND_FIXED_VOLUME_WEAK_COUPLING_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "4f9c085195ba1b769949dc121778b3012479bc28eb6e1108e81e7a6c1848ceba"
+      },
+      {
+        "path": "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "938df6cf9b527c050ff2aa79e55cca8d310bdaf2d129d50ef9b62d53993704a2"
+      },
+      {
+        "path": "docs/FINITE_GRAPH_CYCLIC_WEAK_COUPLING_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "aa4b2dc8acbe9bfade778ceb1b9d6b2d711721a76fde517c8c690cc5ce863218"
+      },
+      {
+        "path": "docs/FINITE_INTEGER_LINK_WEAK_COUPLING_PAYLOAD_AND_MONOPOLE_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "2a6d5c79513cb92334e64d780d5b8490b6f4e9b781ad24adaafc33e1288d6851"
+      },
+      {
+        "path": "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "84d8eecde04a7fe9f60014a36fe265a413ba779c1487b416115c15f472d7d2f1"
+      },
+      {
+        "path": "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "e00414f51b7a7ece4a9f107092e92877a296c66282133f6d35c62939fc3ed268"
+      },
+      {
+        "path": "docs/FORMATION_ORDER_COVARIANCE_AND_ISOTROPIC_BINARY_ORDER_BLIND_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "42cbbd5ceaea95533d670fe4f3e527f566cca4cb14b826b9d98cc1ab2168c008"
+      },
+      {
+        "path": "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "3c22468d38ee7733013b0d663507f9d2a5bcba75460f4700e02d949a8768b823"
+      },
+      {
+        "path": "docs/ITERATED_LOCAL_MAXWELL_MATTER_STATE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "a8f99cf9b8e30031a85ff0b4e24cbddb38351a8ba0c01fa4a9d8c8cbfae9d111"
+      },
+      {
+        "path": "docs/LOCAL_HALL_FREE_MIXED_WEYL_QUARTET_AND_COMMON_METRIC_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "9318215ebc71ad93aa9dbe8117f68122bfa3f6a3d2cc4967560d740d8ba2c6db"
+      },
+      {
+        "path": "docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "a3a855d8f48556d991537d5bd5aefe2d9d9a9fd9a0b561311c2d2921ee9c07a1"
+      },
+      {
+        "path": "docs/NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "69299818ff8e463e4a246044f4b160a7a22867e7205bcb55f56cdeb802149192"
+      },
+      {
+        "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70"
+      },
+      {
+        "path": "docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md",
+        "sha256": "5ab56a41ae9524c433a50ee79889f29bf33cab7059f88f7dccd2449f8b6bdb2f"
+      },
+      {
+        "path": "docs/NATIVE_GLOBAL_CHARGE_CONNECTIVITY_AND_EXCHANGE_NOTE_2026-09-08.md",
+        "sha256": "e57d84de87b131384b2be7c6f33bedd41449cb5c36e37d8fab5c4751e57e55a5"
+      },
+      {
+        "path": "docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md",
+        "sha256": "586b895c89eabe67c4ac6c93b5f83f9bfd9118483c4265a652f6f4e822b75583"
+      },
+      {
+        "path": "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "c0360ad1ec65a78ca63b6d6cbd24dd387e455197c87e54441424550e145c5a9f"
+      },
+      {
+        "path": "docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "01b1d213957dc1c85a520cabb6dab6ef7f6daf0b5631205f76d66d001861c8ca"
+      },
+      {
+        "path": "docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md",
+        "sha256": "46d531814d55b1a9c4e00b10ddce9cee30a673e0f93d925d83242425c95f1cd9"
+      },
+      {
+        "path": "docs/NATIVE_STAR_INFRARED_SPECTRAL_DOMINANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "d6c7c21b65e36beecd1293a5782902019d214a782297137aa8e437ef3479ba9c"
+      },
+      {
+        "path": "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+        "sha256": "1557d48a8e3d5fcc17a01982484bffa6f27e0be16a42c88062eadb455dada226"
+      },
+      {
+        "path": "docs/NATIVE_THIRD_ORDER_STAR_VERTEX_NOTE_2026-09-08.md",
+        "sha256": "c3ca9084907eab9f220886bd9e5d9c35654b0f27009d0cbbfb973ec30a8445e1"
+      },
+      {
+        "path": "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+        "sha256": "787948c0e58c794371fc0839d99a9eae15f49abed523b0eba9b001d010578ada"
+      },
+      {
+        "path": "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+        "sha256": "0c6c768b4fb0416067c5de3dd159596a0367e8c9c77c10f0c5700936ff6aa2f0"
+      },
+      {
+        "path": "docs/NATIVE_WEAK_ELECTRIC_SPECTATOR_GAP_NOTE_2026-09-08.md",
+        "sha256": "0f0a62aff6c9841a42b4850f3e5e4b8c9c9f613d37d755ca8f74f05f60d52270"
+      },
+      {
+        "path": "docs/NATIVE_WEYL_GAUGE_HALL_AND_CONE_FLOW_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "9a4e3ec1310fde85e4d5f34dd1af9b8999629df7b9988a7d54d040c0f8b7fb7d"
+      },
+      {
+        "path": "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "5c4482c4a0531be707f64ffeb07b705659d6aa19478b3be2878929f5b39a794a"
+      },
+      {
+        "path": "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "sha256": "41d6b505e1afa88345a92caf3f33b4f0021101c30bb6ec9e23daa818204525f5"
+      },
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      },
+      {
+        "path": "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "0d103102a710ebde79af54b2b63e811d2381abf80874c4a203eb76d04d2853af"
+      },
+      {
+        "path": "docs/SUPPLIED_QUARTET_QUADRATIC_BACKREACTION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "3f5b18314e2d2aec6288db338bc157c2fbdbce5a7a4ced534179dc39de612f1a"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/CHARGED_FINITE_LINK_LOCAL_DYNAMICS_AND_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "eb2e9d2e5377af13af94df558d9ac4bf07e499ccae512444251be86bc305d8a4"
+      },
+      {
+        "path": "docs/CHARGED_RING_SLOW_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbbcbb346f725448b936df560904842eb6390b0751585d31616a2c63b2ca6b98"
+      },
+      {
+        "path": "docs/CUBIC_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "7d446318b8dbc204b2c1cef233f901078cdd6829bb325db2cb7e0100633fb8ca"
+      },
+      {
+        "path": "docs/CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "d13c0d208e8915fcf4c7398dcc144536f1305046a57cbe9245088bfd04f7bc2f"
+      },
+      {
+        "path": "docs/EXACT_GAUGE_WARD_RESPONSE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "7a460381594eb146002105566995fb328d827051ddaa4eed28936e202e81f72e"
+      },
+      {
+        "path": "docs/EXACT_GAUSS_REDUCTION_AND_FIXED_VOLUME_WEAK_COUPLING_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "4f9c085195ba1b769949dc121778b3012479bc28eb6e1108e81e7a6c1848ceba"
+      },
+      {
+        "path": "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "938df6cf9b527c050ff2aa79e55cca8d310bdaf2d129d50ef9b62d53993704a2"
+      },
+      {
+        "path": "docs/FINITE_GRAPH_CYCLIC_WEAK_COUPLING_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "aa4b2dc8acbe9bfade778ceb1b9d6b2d711721a76fde517c8c690cc5ce863218"
+      },
+      {
+        "path": "docs/FINITE_INTEGER_LINK_WEAK_COUPLING_PAYLOAD_AND_MONOPOLE_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "2a6d5c79513cb92334e64d780d5b8490b6f4e9b781ad24adaafc33e1288d6851"
+      },
+      {
+        "path": "docs/FINITE_NATIVE_WINDING_CURVATURE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "bfbbb45f3ec7ca59b0d32d9482f209d0da16098f1b4cafe39882d903077236e9"
+      },
+      {
+        "path": "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "84d8eecde04a7fe9f60014a36fe265a413ba779c1487b416115c15f472d7d2f1"
+      },
+      {
+        "path": "docs/FIXED_COUPLING_ROTOR_GROUND_CUTOFF_COMPACTNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "fce8dfa118325552e93dec94089c9c76b3b5ed52e0c31f9742372297a47f97b4"
+      },
+      {
+        "path": "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "e00414f51b7a7ece4a9f107092e92877a296c66282133f6d35c62939fc3ed268"
+      },
+      {
+        "path": "docs/FORMATION_ORDER_COVARIANCE_AND_ISOTROPIC_BINARY_ORDER_BLIND_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "42cbbd5ceaea95533d670fe4f3e527f566cca4cb14b826b9d98cc1ab2168c008"
+      },
+      {
+        "path": "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "3c22468d38ee7733013b0d663507f9d2a5bcba75460f4700e02d949a8768b823"
+      },
+      {
+        "path": "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "58b714ec8df5a67efc65037caa1721178e1400c55d0bc743fd5a1227448ae542"
+      },
+      {
+        "path": "docs/ITERATED_LOCAL_MAXWELL_MATTER_STATE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "a8f99cf9b8e30031a85ff0b4e24cbddb38351a8ba0c01fa4a9d8c8cbfae9d111"
+      },
+      {
+        "path": "docs/LOCAL_HALL_FREE_MIXED_WEYL_QUARTET_AND_COMMON_METRIC_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "9318215ebc71ad93aa9dbe8117f68122bfa3f6a3d2cc4967560d740d8ba2c6db"
+      },
+      {
+        "path": "docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "a3a855d8f48556d991537d5bd5aefe2d9d9a9fd9a0b561311c2d2921ee9c07a1"
+      },
+      {
+        "path": "docs/NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "69299818ff8e463e4a246044f4b160a7a22867e7205bcb55f56cdeb802149192"
+      },
+      {
+        "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70"
+      },
+      {
+        "path": "docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md",
+        "sha256": "5ab56a41ae9524c433a50ee79889f29bf33cab7059f88f7dccd2449f8b6bdb2f"
+      },
+      {
+        "path": "docs/NATIVE_GLOBAL_CHARGE_CONNECTIVITY_AND_EXCHANGE_NOTE_2026-09-08.md",
+        "sha256": "e57d84de87b131384b2be7c6f33bedd41449cb5c36e37d8fab5c4751e57e55a5"
+      },
+      {
+        "path": "docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md",
+        "sha256": "586b895c89eabe67c4ac6c93b5f83f9bfd9118483c4265a652f6f4e822b75583"
+      },
+      {
+        "path": "docs/NATIVE_MIXED_SIXTH_ORDER_COEFFICIENT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "6aa00d3bbba0927f92f1dbd4da52b83e0b15f21a5c03816c04bd7f4699f23392"
+      },
+      {
+        "path": "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "c0360ad1ec65a78ca63b6d6cbd24dd387e455197c87e54441424550e145c5a9f"
+      },
+      {
+        "path": "docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "01b1d213957dc1c85a520cabb6dab6ef7f6daf0b5631205f76d66d001861c8ca"
+      },
+      {
+        "path": "docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md",
+        "sha256": "46d531814d55b1a9c4e00b10ddce9cee30a673e0f93d925d83242425c95f1cd9"
+      },
+      {
+        "path": "docs/NATIVE_STAR_INFRARED_SPECTRAL_DOMINANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "d6c7c21b65e36beecd1293a5782902019d214a782297137aa8e437ef3479ba9c"
+      },
+      {
+        "path": "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+        "sha256": "1557d48a8e3d5fcc17a01982484bffa6f27e0be16a42c88062eadb455dada226"
+      },
+      {
+        "path": "docs/NATIVE_THIRD_ORDER_STAR_VERTEX_NOTE_2026-09-08.md",
+        "sha256": "c3ca9084907eab9f220886bd9e5d9c35654b0f27009d0cbbfb973ec30a8445e1"
+      },
+      {
+        "path": "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+        "sha256": "787948c0e58c794371fc0839d99a9eae15f49abed523b0eba9b001d010578ada"
+      },
+      {
+        "path": "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+        "sha256": "0c6c768b4fb0416067c5de3dd159596a0367e8c9c77c10f0c5700936ff6aa2f0"
+      },
+      {
+        "path": "docs/NATIVE_WEAK_ELECTRIC_SPECTATOR_GAP_NOTE_2026-09-08.md",
+        "sha256": "0f0a62aff6c9841a42b4850f3e5e4b8c9c9f613d37d755ca8f74f05f60d52270"
+      },
+      {
+        "path": "docs/NATIVE_WEYL_GAUGE_HALL_AND_CONE_FLOW_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "sha256": "9a4e3ec1310fde85e4d5f34dd1af9b8999629df7b9988a7d54d040c0f8b7fb7d"
+      },
+      {
+        "path": "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "5c4482c4a0531be707f64ffeb07b705659d6aa19478b3be2878929f5b39a794a"
+      },
+      {
+        "path": "docs/POSITIVE_AUXILIARY_CURRENT_LAW_AND_REGULATOR_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "94f3be3f568d3391a56d35ec98bb3dc8a0cdf1de38c36ab50eaffca8b44d75e9"
+      },
+      {
+        "path": "docs/POSITIVE_ELECTRIC_GENERATOR_CONE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cb90dfc9747c088b6a429699388c6d38462613095b8fc421bcb015d10accbbbd"
+      },
+      {
+        "path": "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "sha256": "41d6b505e1afa88345a92caf3f33b4f0021101c30bb6ec9e23daa818204525f5"
+      },
+      {
+        "path": "docs/REAL_OVERLAP_LOCAL_SOURCE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "b55c574197329d931e39ced4cb34063ebe1438dcf654c7d049d76340d60e8c23"
+      },
+      {
+        "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+      },
+      {
+        "path": "docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "6c2affb5dde329a00bb495bf3ddeefb8a6bcdbf187f1e32f991033a3a4b3a236"
+      },
+      {
+        "path": "docs/SUPPLIED_MATCHED_FREE_CONE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "24dbc17e78cb932f240f6b0bdbec62663795b3cfccb1030a5ca8f1b7ff1cdfab"
+      },
+      {
+        "path": "docs/SUPPLIED_QUARTET_LEADING_DECAY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "8979b78cb9939242eefccc2dfc321a0ff8ea63c61b4da07590b2941a68d7a61c"
+      },
+      {
+        "path": "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "0d103102a710ebde79af54b2b63e811d2381abf80874c4a203eb76d04d2853af"
+      },
+      {
+        "path": "docs/SUPPLIED_QUARTET_QUADRATIC_BACKREACTION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "3f5b18314e2d2aec6288db338bc157c2fbdbce5a7a4ced534179dc39de612f1a"
+      },
+      {
+        "path": "docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "750bdd27065ef957228c7316996d6a9cfcb5af19a5407309e532e9c1edc6fce0"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/README.md",
+        "sha256": "03fbe8b86afc72cb14a51a7b73d0f542907c8fc8e19d05cd697432fc38ae1c11"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/imports/manifest.json",
+        "sha256": "d53fff78d69c66f110b72e809968af9f2a4ce35b87afbfffe8ca582b60a889da"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8159/manifest.json",
+        "sha256": "3c3e11b79c35b8d426442c627ef149c8d18dc9bfd68dfe1d52ca858bd5d16ec0"
+      },
+      {
+        "path": "scripts/algebra_naturality_check_2026_09_15.py",
+        "sha256": "791ab9cbae504bc6d65bdef7e82b36a2b10592492240903bf65d6555799a3676"
+      },
+      {
+        "path": "scripts/cofactor_cyclic_check_2026_09_15.py",
+        "sha256": "6ca04bfd0d28da2a74b161688a954054bb7887defb9cc01b2d4bee61f7579111"
+      },
+      {
+        "path": "scripts/contact_register_check_2026_09_15.py",
+        "sha256": "ea4cbe01dc77a3053e61072368b0ecc9f99f620a0c424982d68f8da272c232b8"
+      },
+      {
+        "path": "scripts/cyclic_equilibrium_check_2026_09_15.py",
+        "sha256": "bcbcb17302e6cc9fcc6819831bf810b4060acb6aa0ad61b6149ee4014402fc6c"
+      },
+      {
+        "path": "scripts/determinant_exclusion_check_2026_09_15.py",
+        "sha256": "ff2370755fafd6c162b0d286114deea1fc1b5fa7a2bca87be091c1a123534564"
+      },
+      {
+        "path": "scripts/forest_interpolation_check_2026_09_15.py",
+        "sha256": "01d07bd14e50bf594703df38e7a359965969b56dfbb71ed6f33098103b510021"
+      },
+      {
+        "path": "scripts/gaussian_cycle_check_2026_09_15.py",
+        "sha256": "1fb8088a9a72ef13cf1a7240f6a04d79c9149f2210649761b056a85a11a2f762"
+      },
+      {
+        "path": "scripts/hybrid_generator_check_2026_09_15.py",
+        "sha256": "5d4e0f87d6d048c2e038dca2b85a8d1d2cf9592926cbcfe9ccad74e284f31cee"
+      },
+      {
+        "path": "scripts/polarized_word_check_2026_09_15.py",
+        "sha256": "0227179a994d587740dea92b182d7b98467dceb10c1512b636655bcb73888362"
+      },
+      {
+        "path": "scripts/record_pair_check_2026_09_15.py",
+        "sha256": "5afaa1492afa3e2da5195776cb07a931cb41667e777edd1c34910175ef97ee76"
+      },
+      {
+        "path": "scripts/slow_fast_check_2026_09_15.py",
+        "sha256": "f6b6e5b0427b88edd4b08a1dc5253e4b068c26fba7e474821d06b97f5f1df88f"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "bb31a2027ae6ea2b63a3608748e147141c82b23979cf8a00aa34afbb415dcae5"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "728629ffe0fea6d13f0010eb274458da0060f73c02cc1fff26b4f6beba09f3cc"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "reviewer": {
+    "session": "review_8159_native; original same-session reviewer",
+    "report": {
+      "path": "/private/tmp/review-drain-20260915/drain8159-final-review.json",
+      "sha256": "6e8b9700782f9935e8fad67399addd3211c04c5cb1b79c2f74da70e5197c3111"
+    },
+    "references": [
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-final366-original-dispositions.json",
+        "sha256": "23492a5e1cbaadc9239ae801f98a734ae479bc266e4b90b04b0dfa4885916547"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-author-canonical-draft-v4.json",
+        "sha256": "d5104ade42349c641bb2ef39de5ff23f65c2e9d6aa78cd35bea4275d86537554"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-author-input-discovery-v4.json",
+        "sha256": "b7da2c9ab85b40b7ee84f707b6129eab6bae91960dc0f91a8d09bcc7a993c3b1"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-author-resource-plan-v3.json",
+        "sha256": "2d164e9655218853d1b94eba383df040e8efc7b71b49bb659bef54c171afa357"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-author-full-proof-map-v4.json",
+        "sha256": "8038972a62394af72da542193bd2ff223754e8e7d9ce5ee4aabfa4a7f134133e"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-affected-scope-confirmation-v4.json",
+        "sha256": "b0c778b08d39c530d7a5be070dafd9888147f9e9f481d16c8040a6b8dbbfde72"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-block27-import-recovery-v1.json",
+        "sha256": "d53fff78d69c66f110b72e809968af9f2a4ce35b87afbfffe8ca582b60a889da"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-capture-plan-v1.json",
+        "sha256": "b52bc22b10ee2b6428cee226e051d4946453139f0c473ccc1d033b328c53cb6e"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-negative-certification-disposition-v1.json",
+        "sha256": "4333279b51bab32fcc9c69a6010b7e9dc9dc595562aac48ae08bbaba9a9011a4"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-builder-fix-explanation-v2.json",
+        "sha256": "2dc6dbc9ce22f842a2e26fa75c932ba34e8024b5240e786f7b2e077b898eabd4"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-author-source-handoff-v1.json",
+        "sha256": "905586ff3e885ca2a39bf52c729458758c6a528b2ac2b96a2a42721c25d076fa"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-author-cache-api-v1.json",
+        "sha256": "0094bb296526bc47b773a37aa35242af8b5b9ad00e23b5565760ba1ddbd7740a"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-author-source-handoff-v2.json",
+        "sha256": "944f22a0c01abddcbcbd0ef7b2a92d3a16844399d068a6b84f2968830d5dca3b"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-author-cache-api-v2.json",
+        "sha256": "99ca8813d6b633838f57fb501d91b0c34d13ccf56bec6f03e1bb436c6c4507a2"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-holonomy-slab-assessment-v1.json",
+        "sha256": "6399c3899fc7fe0180d4351ef4efc765effa67c3e9a111e41afb3c3ba2886677"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-author-unit-draft-v2.json",
+        "sha256": "26bee4a8957a77818c6a3b42759c9e7935a36c62c434ee6837aac2ceb2e3457d"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-author-final-freeze.json",
+        "sha256": "96cb6f3cb520d57715abb046e9e19eebce66125c74a55c713a9c49792acf641e"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-capture.py",
+        "sha256": "b7e0a4bcd9235f5d9500b6495d79f9fca6736517dc5463545a205833af877294"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-charged_ring_check_2026_09_15.json",
+        "sha256": "d54296980f5574e42361b530ab41ab5880388b062be01a5d7f5143a9a75f8fb8"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-cyclic_equilibrium_check_2026_09_15.json",
+        "sha256": "2b8432dd113d5a04f224fcadf33a005ae2b1a21ca434b0ccd3f0bfc0972c5fde"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-cyclic_scaling_check_2026_09_15.json",
+        "sha256": "05a0963cb0ce093f53c199a54534d94c8f715e8d579881a988afb4d65594ef4b"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-decay_check_2026_09_15.json",
+        "sha256": "1c543a7c5b59ac10c6e33693fd21ee4c22f82ea623fc641d74441eba98c4e0d7"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-ground_cutoff_check_2026_09_15.json",
+        "sha256": "830825cfd6cc7f3cbb69ef22ed8916a4223f52acd6029de40d92b1e84fd5259c"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-hybrid_curvature_check_2026_09_15.json",
+        "sha256": "18879f724205a8deeec196edeb830baef602b522270567a5ea37205547da2031"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-hybrid_generator_check_2026_09_15.json",
+        "sha256": "b08a3c91274589637ae882ff89fa33554cabe4fc0ee271a91f39e1d6aa060a57"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-integrated_rate_check_2026_09_15.json",
+        "sha256": "586fe48d085873f1cd8a763edd449950f45d18e65e1d82693662e3b8755be04b"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-local_spectrum_check_2026_09_15.json",
+        "sha256": "15c4700661dab0fe03ac858a084649940d9512ccc0897dce42bcce3e22de5de2"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-mixed_history_check_2026_09_15.json",
+        "sha256": "a30fb08ef03788cba0e282bbd40b011bfa98d1b62d98bcdc2ac106f3a17fba2d"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-positive_generator_check_2026_09_15.json",
+        "sha256": "7e1f329f8d6c6a40502b3d78240e915339ec7182b7336b3e43794778b0300594"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-quadratic_coframe_check_2026_09_15.json",
+        "sha256": "325a79d56a67a9b29813364a7d83b8b6864ad7ec70d875350a542ff10fa672a6"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-quartet_metric_check_2026_09_15.json",
+        "sha256": "5582e4858b03731851b83f64b7c711034e16f9cb50e48b2926de6246fb95bbc9"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-v2-holonomy_check_2026_09_15.json",
+        "sha256": "26a9dff3742e54a45ceb40984f8af62e413022713e945ece8051d9a3b5e46ecd"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-v2-slow_fast_check_2026_09_15.json",
+        "sha256": "7d7dc8a81a00ab6b6f5fa917ec75f23ab006b42375e55eb858d29d629de2b525"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-v2-physical_probe_check_2026_09_15.json",
+        "sha256": "d12b669e66e962553bb01aa60ce41f98d001d5a046d5d34aec988b8acb959db4"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-v2-matched_cone_check_2026_09_15.json",
+        "sha256": "a6010a340dc0a3483b2835d80c0a7375703dee262d53de052a9708ff9d67e6b5"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-v2-response_identity_check_2026_09_15.json",
+        "sha256": "d7aba6be9efc575611d6ed3fff191ffd699d9583894b6007a0e6517bbf3edf04"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-v2-visible_threshold_check_2026_09_15.json",
+        "sha256": "6a87d51aa753db49701ec7afe6d487fba763f2b6a35b7cf4e6fc691202b92adb"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-v2-cofactor_cyclic_check_2026_09_15.json",
+        "sha256": "7f429be006d7773f5cbcfdaaf0a7a069e0c3596a3f4f30ad1c3fd600bd9e4735"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-v2-contact_register_check_2026_09_15.json",
+        "sha256": "511037d713c748081051b0c8996d6bbd0d5d035a1cf5663448ef602bc32b0e34"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-v2-cut_completion_check_2026_09_15.json",
+        "sha256": "e6853f61b579df892196aeef7cac67e6233c21b683051bb8a133727e75966b6f"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-v2-determinant_exclusion_check_2026_09_15.json",
+        "sha256": "c60fdbe78b74f1a78a489520f3dd6eff26198ae52d0b10582f5354520a3a87d5"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-v2-forest_interpolation_check_2026_09_15.json",
+        "sha256": "0f879752f03a64dcd0c8ac706ffa106163c4c3bb4ab351b81c37758b0f7cbd38"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-v2-gaussian_cycle_check_2026_09_15.json",
+        "sha256": "45f9b9bde1ea75389dd83f90d5738002444af4944ac81dab7baa483f21b3394e"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-v2-graph_source_check_2026_09_15.json",
+        "sha256": "ce1229de5dbe0b11559e37e95c428e00d217de89579efa30a6538765f7dd925b"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-v2-hard_core_cycle_check_2026_09_15.json",
+        "sha256": "34dc96175d2b5f9153bd3aa643a229e6cc8d76b493be7af719c8c4d63037f9c1"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-v2-operator_source_check_2026_09_15.json",
+        "sha256": "e72cd6d5561290b827b4545cc5bae79eea6382c01d382c03271793093d14ce01"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-v2-partition_exclusion_check_2026_09_15.json",
+        "sha256": "5ac8a62e9e6b5071a561c8414d401f9523de0c19a0b380d8426e16d08b9c055e"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-v2-phase_energy_check_2026_09_15.json",
+        "sha256": "370d692692638f0cc178aeeb217c38433efbec00c04ece381c85363a755f6512"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-v2-general_order_check_2026_09_15.json",
+        "sha256": "33c5e8be293285ba48a9fa09e617ad1d0c09ce722fe2d062b6c09a0832474f26"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-v2-record_pair_check_2026_09_15.json",
+        "sha256": "54943abe223382f5f70acd33550ddf2bfb0a1c9978e6ad5822626e365690b92a"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-v2-fourier_gaussian_register_check_2026_09_15.json",
+        "sha256": "bf2455f43fb448dfb76b9faa8a87ee1abdbc1b3b8f90aed57db0288d5d8a485a"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-v2-tree_count_check_2026_09_15.json",
+        "sha256": "f13de3eecdd318b0f415517b90c00b4a8790b5abb6c9610c48f07b13dca29420"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-v2-algebra_naturality_check_2026_09_15.json",
+        "sha256": "bcfa3514cc8b57a4dc32b87b1943416b039685ab4cd78d08787edfd105344446"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-v2-inverse_corner_support_check_2026_09_15.json",
+        "sha256": "2fc490b6679175201bad6fa2bd380b3ff197626c13aa32a893bddd1f9c383ae3"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-v2-positive_auxiliary_check_2026_09_15.json",
+        "sha256": "f03f56753421101e437454e2c9ec6b6bcdb7b7e82cb73ea44fcc701b6ccbd6b5"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-v2-native_motion_check_2026_09_15.json",
+        "sha256": "7e87f30967b1f263d9bdb588c4a09db2fcea6b3306c7ca516477936cb2abb8d4"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-v2-native_twist_check_2026_09_15.json",
+        "sha256": "c81ac415f493e2f37d147f6684342f530b12fe2ee18bde345d1fd02f940ab495"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-v2-polarized_word_check_2026_09_15.json",
+        "sha256": "f4cc5b724acbe1586991f4016820aa50d0e1bcc4c65ad74b28aa7ca472ae37f7"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-execution-v2-review_harmonic_metric_check_2026_09_15.json",
+        "sha256": "1f0517039a3bd1df75c58548b61c323a9d0be880e421da75b7d5a7496c24c115"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8159-capture-v2.py",
+        "sha256": "d12c8c9a0860aed62836e85892a52472b5cf1bb0642fd9449a03fe5db94d17c1"
+      }
+    ]
+  },
+  "notes": [
+    {
+      "path": "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "hybrid_generators_integrated_rates_and_curvature_witness_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "hybrid_generators_integrated_rates_and_curvature_witness_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/hybrid_generator_check_2026_09_15.py",
+      "helpers": [
+        "scripts/hybrid_curvature_check_2026_09_15.py",
+        "scripts/integrated_rate_check_2026_09_15.py"
+      ],
+      "citations": [
+        "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "dependency_rationale": "Owned full proofs and exact reviewed mathematical dependencies; supplied-model scopes and v4 partial-salvage boundaries apply."
+    },
+    {
+      "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "signed_forest_fixed_order_remainders_and_restricted_loop_sums_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "signed_forest_fixed_order_remainders_and_restricted_loop_sums_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/phase_energy_check_2026_09_15.py",
+      "helpers": [
+        "scripts/cofactor_cyclic_check_2026_09_15.py",
+        "scripts/contact_register_check_2026_09_15.py",
+        "scripts/cut_completion_check_2026_09_15.py",
+        "scripts/determinant_exclusion_check_2026_09_15.py",
+        "scripts/forest_interpolation_check_2026_09_15.py",
+        "scripts/gaussian_cycle_check_2026_09_15.py",
+        "scripts/graph_source_check_2026_09_15.py",
+        "scripts/hard_core_cycle_check_2026_09_15.py",
+        "scripts/operator_source_check_2026_09_15.py",
+        "scripts/partition_exclusion_check_2026_09_15.py"
+      ],
+      "citations": [
+        "docs/work_history/review_loop/pr8159/README.md"
+      ],
+      "repository_dependencies": [],
+      "dependency_rationale": "Owned full proofs and exact reviewed mathematical dependencies; supplied-model scopes and v4 partial-salvage boundaries apply."
+    },
+    {
+      "path": "docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "supplied_record_laws_and_common_order_kernels_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "supplied_record_laws_and_common_order_kernels_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/record_pair_check_2026_09_15.py",
+      "helpers": [
+        "scripts/general_order_check_2026_09_15.py"
+      ],
+      "citations": [
+        "docs/FORMATION_ORDER_COVARIANCE_AND_ISOTROPIC_BINARY_ORDER_BLIND_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/FORMATION_ORDER_COVARIANCE_AND_ISOTROPIC_BINARY_ORDER_BLIND_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+      ],
+      "dependency_rationale": "Owned full proofs and exact reviewed mathematical dependencies; supplied-model scopes and v4 partial-salvage boundaries apply."
+    },
+    {
+      "path": "docs/CUBIC_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "cubic_fourier_energy_and_gaussian_registers_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "cubic_fourier_energy_and_gaussian_registers_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/fourier_gaussian_register_check_2026_09_15.py",
+      "helpers": [
+        "scripts/cofactor_cyclic_check_2026_09_15.py",
+        "scripts/contact_register_check_2026_09_15.py",
+        "scripts/determinant_exclusion_check_2026_09_15.py",
+        "scripts/forest_interpolation_check_2026_09_15.py",
+        "scripts/tree_count_check_2026_09_15.py"
+      ],
+      "citations": [
+        "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "dependency_rationale": "Owned full proofs and exact reviewed mathematical dependencies; supplied-model scopes and v4 partial-salvage boundaries apply."
+    },
+    {
+      "path": "docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "supplied_algebra_action_and_kernel_support_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "supplied_algebra_action_and_kernel_support_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/algebra_naturality_check_2026_09_15.py",
+      "helpers": [
+        "scripts/inverse_corner_support_check_2026_09_15.py"
+      ],
+      "citations": [
+        "docs/work_history/review_loop/pr8159/README.md"
+      ],
+      "repository_dependencies": [],
+      "dependency_rationale": "Owned full proofs and exact reviewed mathematical dependencies; supplied-model scopes and v4 partial-salvage boundaries apply."
+    },
+    {
+      "path": "docs/POSITIVE_AUXILIARY_CURRENT_LAW_AND_REGULATOR_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "positive_auxiliary_current_law_and_regulator_witness_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "positive_auxiliary_current_law_and_regulator_witness_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/positive_auxiliary_check_2026_09_15.py",
+      "helpers": [],
+      "citations": [
+        "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "dependency_rationale": "Owned full proofs and exact reviewed mathematical dependencies; supplied-model scopes and v4 partial-salvage boundaries apply."
+    },
+    {
+      "path": "docs/NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "native_charge_motion_and_spectral_weight_bounds_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "native_charge_motion_and_spectral_weight_bounds_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/native_motion_check_2026_09_15.py",
+      "helpers": [],
+      "citations": [
+        "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_GLOBAL_CHARGE_CONNECTIVITY_AND_EXCHANGE_NOTE_2026-09-08.md",
+        "docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md",
+        "docs/NATIVE_GLOBAL_CHARGE_CONNECTIVITY_AND_EXCHANGE_NOTE_2026-09-08.md",
+        "docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md"
+      ],
+      "dependency_rationale": "Owned full proofs and exact reviewed mathematical dependencies; supplied-model scopes and v4 partial-salvage boundaries apply."
+    },
+    {
+      "path": "docs/FINITE_NATIVE_WINDING_CURVATURE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "finite_native_winding_curvature_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "finite_native_winding_curvature_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/native_twist_check_2026_09_15.py",
+      "helpers": [],
+      "citations": [
+        "docs/NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/NATIVE_GLOBAL_CHARGE_CONNECTIVITY_AND_EXCHANGE_NOTE_2026-09-08.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/NATIVE_GLOBAL_CHARGE_CONNECTIVITY_AND_EXCHANGE_NOTE_2026-09-08.md"
+      ],
+      "dependency_rationale": "Owned full proofs and exact reviewed mathematical dependencies; supplied-model scopes and v4 partial-salvage boundaries apply."
+    },
+    {
+      "path": "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "polarized_word_carrier_and_essential_threshold_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "polarized_word_carrier_and_essential_threshold_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/polarized_word_check_2026_09_15.py",
+      "helpers": [],
+      "citations": [
+        "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md",
+        "docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md"
+      ],
+      "dependency_rationale": "Owned full proofs and exact reviewed mathematical dependencies; supplied-model scopes and v4 partial-salvage boundaries apply."
+    },
+    {
+      "path": "docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "local_source_diagonal_spectral_bounds_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "local_source_diagonal_spectral_bounds_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/local_spectrum_check_2026_09_15.py",
+      "helpers": [
+        "scripts/polarized_word_check_2026_09_15.py"
+      ],
+      "citations": [
+        "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "dependency_rationale": "Owned full proofs and exact reviewed mathematical dependencies; supplied-model scopes and v4 partial-salvage boundaries apply."
+    },
+    {
+      "path": "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "supplied_quartet_linear_metric_flow_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "supplied_quartet_linear_metric_flow_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/quartet_metric_check_2026_09_15.py",
+      "helpers": [],
+      "citations": [
+        "docs/LOCAL_HALL_FREE_MIXED_WEYL_QUARTET_AND_COMMON_METRIC_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/NATIVE_WEYL_GAUGE_HALL_AND_CONE_FLOW_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/LOCAL_HALL_FREE_MIXED_WEYL_QUARTET_AND_COMMON_METRIC_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/NATIVE_WEYL_GAUGE_HALL_AND_CONE_FLOW_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+      ],
+      "dependency_rationale": "Owned full proofs and exact reviewed mathematical dependencies; supplied-model scopes and v4 partial-salvage boundaries apply."
+    },
+    {
+      "path": "docs/FIXED_COUPLING_ROTOR_GROUND_CUTOFF_COMPACTNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "fixed_coupling_rotor_ground_cutoff_compactness_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "fixed_coupling_rotor_ground_cutoff_compactness_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/ground_cutoff_check_2026_09_15.py",
+      "helpers": [],
+      "citations": [
+        "docs/CHARGED_FINITE_LINK_LOCAL_DYNAMICS_AND_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/CHARGED_FINITE_LINK_LOCAL_DYNAMICS_AND_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+      ],
+      "dependency_rationale": "Owned full proofs and exact reviewed mathematical dependencies; supplied-model scopes and v4 partial-salvage boundaries apply."
+    },
+    {
+      "path": "docs/SUPPLIED_QUARTET_QUADRATIC_BACKREACTION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "supplied_quartet_quadratic_backreaction_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "supplied_quartet_quadratic_backreaction_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/quadratic_coframe_check_2026_09_15.py",
+      "helpers": [],
+      "citations": [
+        "docs/NATIVE_WEYL_GAUGE_HALL_AND_CONE_FLOW_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/NATIVE_WEYL_GAUGE_HALL_AND_CONE_FLOW_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+      ],
+      "dependency_rationale": "Owned full proofs and exact reviewed mathematical dependencies; supplied-model scopes and v4 partial-salvage boundaries apply."
+    },
+    {
+      "path": "docs/SUPPLIED_QUARTET_LEADING_DECAY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "supplied_quartet_leading_decay_bounds_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "supplied_quartet_leading_decay_bounds_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/decay_check_2026_09_15.py",
+      "helpers": [],
+      "citations": [
+        "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/SUPPLIED_QUARTET_QUADRATIC_BACKREACTION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/SUPPLIED_QUARTET_QUADRATIC_BACKREACTION_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "dependency_rationale": "Owned full proofs and exact reviewed mathematical dependencies; supplied-model scopes and v4 partial-salvage boundaries apply."
+    },
+    {
+      "path": "docs/NATIVE_MIXED_SIXTH_ORDER_COEFFICIENT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "native_mixed_sixth_order_coefficient_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "native_mixed_sixth_order_coefficient_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/mixed_history_check_2026_09_15.py",
+      "helpers": [],
+      "citations": [
+        "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md",
+        "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/NATIVE_STAR_INFRARED_SPECTRAL_DOMINANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+        "docs/NATIVE_THIRD_ORDER_STAR_VERTEX_NOTE_2026-09-08.md",
+        "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+        "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+        "docs/NATIVE_WEAK_ELECTRIC_SPECTATOR_GAP_NOTE_2026-09-08.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+        "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+        "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+        "docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md",
+        "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/NATIVE_STAR_INFRARED_SPECTRAL_DOMINANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/NATIVE_WEAK_ELECTRIC_SPECTATOR_GAP_NOTE_2026-09-08.md",
+        "docs/NATIVE_THIRD_ORDER_STAR_VERTEX_NOTE_2026-09-08.md"
+      ],
+      "dependency_rationale": "Owned full proofs and exact reviewed mathematical dependencies; supplied-model scopes and v4 partial-salvage boundaries apply."
+    },
+    {
+      "path": "docs/CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "cyclic_equilibrium_and_integer_gauss_limit_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "cyclic_equilibrium_and_integer_gauss_limit_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/cyclic_equilibrium_check_2026_09_15.py",
+      "helpers": [],
+      "citations": [
+        "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+      ],
+      "dependency_rationale": "Owned full proofs and exact reviewed mathematical dependencies; supplied-model scopes and v4 partial-salvage boundaries apply."
+    },
+    {
+      "path": "docs/FINITE_GRAPH_CYCLIC_WEAK_COUPLING_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "finite_graph_cyclic_weak_coupling_limits_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "finite_graph_cyclic_weak_coupling_limits_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/cyclic_scaling_check_2026_09_15.py",
+      "helpers": [
+        "scripts/cyclic_equilibrium_check_2026_09_15.py"
+      ],
+      "citations": [
+        "docs/EXACT_GAUSS_REDUCTION_AND_FIXED_VOLUME_WEAK_COUPLING_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/FINITE_INTEGER_LINK_WEAK_COUPLING_PAYLOAD_AND_MONOPOLE_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "docs/EXACT_GAUSS_REDUCTION_AND_FIXED_VOLUME_WEAK_COUPLING_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/FINITE_INTEGER_LINK_WEAK_COUPLING_PAYLOAD_AND_MONOPOLE_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+      ],
+      "dependency_rationale": "Owned full proofs and exact reviewed mathematical dependencies; supplied-model scopes and v4 partial-salvage boundaries apply."
+    },
+    {
+      "path": "docs/POSITIVE_ELECTRIC_GENERATOR_CONE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "positive_electric_generator_cone_bounds_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "positive_electric_generator_cone_bounds_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/positive_generator_check_2026_09_15.py",
+      "helpers": [],
+      "citations": [
+        "docs/FINITE_GRAPH_CYCLIC_WEAK_COUPLING_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/FINITE_GRAPH_CYCLIC_WEAK_COUPLING_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "dependency_rationale": "Owned full proofs and exact reviewed mathematical dependencies; supplied-model scopes and v4 partial-salvage boundaries apply."
+    },
+    {
+      "path": "docs/CHARGED_RING_SLOW_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "charged_ring_slow_spectrum_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "charged_ring_slow_spectrum_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/charged_ring_check_2026_09_15.py",
+      "helpers": [],
+      "citations": [
+        "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+      ],
+      "dependency_rationale": "Owned full proofs and exact reviewed mathematical dependencies; supplied-model scopes and v4 partial-salvage boundaries apply."
+    },
+    {
+      "path": "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "free_weyl_holonomy_minimization_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "free_weyl_holonomy_minimization_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/holonomy_check_2026_09_15.py",
+      "helpers": [],
+      "citations": [
+        "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+      ],
+      "dependency_rationale": "Owned full proofs and exact reviewed mathematical dependencies; supplied-model scopes and v4 partial-salvage boundaries apply."
+    },
+    {
+      "path": "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "fixed_box_slow_spectrum_and_harmonic_metric_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "fixed_box_slow_spectrum_and_harmonic_metric_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/slow_fast_check_2026_09_15.py",
+      "helpers": [
+        "scripts/review_harmonic_metric_check_2026_09_15.py"
+      ],
+      "citations": [
+        "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "dependency_rationale": "Owned full proofs and exact reviewed mathematical dependencies; supplied-model scopes and v4 partial-salvage boundaries apply."
+    },
+    {
+      "path": "docs/ITERATED_LOCAL_MAXWELL_MATTER_STATE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "iterated_local_maxwell_matter_state_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "iterated_local_maxwell_matter_state_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/physical_probe_check_2026_09_15.py",
+      "helpers": [
+        "scripts/slow_fast_check_2026_09_15.py"
+      ],
+      "citations": [
+        "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "dependency_rationale": "Owned full proofs and exact reviewed mathematical dependencies; supplied-model scopes and v4 partial-salvage boundaries apply."
+    },
+    {
+      "path": "docs/SUPPLIED_MATCHED_FREE_CONE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "supplied_matched_free_cone_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "supplied_matched_free_cone_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/matched_cone_check_2026_09_15.py",
+      "helpers": [],
+      "citations": [
+        "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/ITERATED_LOCAL_MAXWELL_MATTER_STATE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/ITERATED_LOCAL_MAXWELL_MATTER_STATE_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "dependency_rationale": "Owned full proofs and exact reviewed mathematical dependencies; supplied-model scopes and v4 partial-salvage boundaries apply."
+    },
+    {
+      "path": "docs/EXACT_GAUGE_WARD_RESPONSE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "exact_gauge_ward_response_identities_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "exact_gauge_ward_response_identities_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/response_identity_check_2026_09_15.py",
+      "helpers": [],
+      "citations": [
+        "docs/EXACT_GAUSS_REDUCTION_AND_FIXED_VOLUME_WEAK_COUPLING_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/EXACT_GAUSS_REDUCTION_AND_FIXED_VOLUME_WEAK_COUPLING_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+      ],
+      "dependency_rationale": "Owned full proofs and exact reviewed mathematical dependencies; supplied-model scopes and v4 partial-salvage boundaries apply."
+    },
+    {
+      "path": "docs/REAL_OVERLAP_LOCAL_SOURCE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "claim_id": "real_overlap_local_source_threshold_bounded_theorem_note_2026-09-15",
+      "declared_claim_id": "real_overlap_local_source_threshold_bounded_theorem_note_2026-09-15",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/visible_threshold_check_2026_09_15.py",
+      "helpers": [],
+      "citations": [
+        "docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/review_loop/pr8159/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "dependency_rationale": "Owned full proofs and exact reviewed mathematical dependencies; supplied-model scopes and v4 partial-salvage boundaries apply."
+    }
+  ],
+  "supporting_proofs": [],
+  "non_science_notes": [
+    {
+      "path": "docs/work_history/review_loop/pr8159/README.md",
+      "rationale": "Exact recovery, honest untraced evidence qualifications, and partial-salvage branch preservation.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8159-final-review.json",
+        "sha256": "6e8b9700782f9935e8fad67399addd3211c04c5cb1b79c2f74da70e5197c3111"
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "main": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+  "closed_since_expanded_scope": 49,
+  "inventory": "backlog-inventory-wave30.json",
+  "open": 90,
+  "draft": 0,
+  "active": {
+    "8172": "Final independent PASS; final cache receipt running",
+    "8173": "Same-session cold review",
+    "8174": "Same-session affected-source review",
+    "8175": "Original independent review"
+  },
+  "model_comparison": "Completed/published; Astra low remains default",
+  "skill_parity": "review-loop-remote-parity-train85.json"
+}

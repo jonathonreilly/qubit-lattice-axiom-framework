@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_six_axis_formation_threshold_sharper_bad_pair_budget_false_explicit_witnesses_and_the_two_level_period_2026_09_16.py
+runner_sha256: 9d77fd7686afb43fc0298a205976e9841f4189ca2f4e7c46b527ceeecf801f52
+input_fingerprint_sha256: deaa5f7f0d84f2f4dd0c18417802aba46fdeb040138f7005937d234b7eb1213e
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.53
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_SHARPER_BAD_PAIR_BUDGET_IS_FALSE_FOR_THE_EXTENDED_EXPLANATION_TREE_EXPLICIT_WITNESSES_AND_THE_TWO_LEVEL_PERIOD_BOUNDED_THEOREM_NOTE_2026-09-16.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
+PASS: A1 the note carries its claim_id once
+PASS: A2 the axioms memo carries the four sentences quoted under Premises
+PASS: A3 block 01's note (on main) carries its claim_id and the rule's product form
+PASS: A4 all declared inputs exist
+PASS: B1 T1: an amplified site's excuse (its single predecessor v - e_j) raises the charges k != j by 1/3 and lowers the charge j by 2/3: a bad pair costs one unit of span
+PASS: B2 T1: on the three witnesses the rise of the potential at a fork-free refinement is 1 - b and at most 1 - b + (forks created) otherwise, the rises sum to the number of forks, the excuse arrows and amplified nodes sum to E and |A| over the refinements, b <= a and e + a = kept <= 3 at every refinement
+PASS: B3 T1: a fork-free refinement with three processed poles (rise 1, three excuse arrows) followed by one with two bad poles and one processed pole (rise -1, one excuse arrow, two amplified nodes) is rise-neutral with four excuse arrows per two amplified nodes — the period of ratio 2; the witnesses' logs contain 4 such consecutive pairs
+PASS: C1 T2: witness W1 (window 4x4x7, root (3,3,4), 11 noise marks = the tree's seed and ten amplified nodes): the tree is valid with E = 16, |A| = 10, |S| = 1, no fork, 10 refinements, 10 bad pairs; block 30's budget 3(|S|-1) + 2|A| = 20 holds; the sharper budget 3(|S|-1) + |A| = 10 fails by 6: the ratio is 8/5
+PASS: C2 T2: witnesses W2 (window 4x4x7, root (3,3,6): E = 20, |A| = 12, |S| = 1) and W3 (window 5x5x9, root (4,4,5): E = 23, |A| = 12, |S| = 2, one fork) are valid trees with ratio 5/3, within block 30's budget
+PASS: C3 T2: W1 contains 2 refinement(s) with a bad pole, two excuse arrows and rise 0, and 2 with two bad poles, one excuse arrow and rise -1; at each, e > 3 rise + a, so no per-refinement inequality gives the sharper budget
+PASS: C4 T2: 300 uniformly random cones of depth 3-8 (214 explained) never exceed the ratio 1 (worst 1/2), while the witnesses reach 8/5 and 5/3: block 30's executed maximum 2/3 was a sampling artefact
+PASS: C5 T2: in W1 and W2 every amplified node of the tree is a bad pole (b = |A|), W1 has 27 nodes and W2 33, and W3 carries exactly one fork (its two seeds)
+PASS: D1 T3 (the stake): had the sharper budget held, the amplification weight would be epsilon_2/t and the rational triples at (453,1,2), (232,1,1), (905,2,4), (677,1,3) with t = 77/1000, 19/250, 39/500, 77/1000 are exact super-solutions at (t + epsilon_2/t, epsilon_1/t^3) with epsilon_1 R-bar < 10^-5: a factor 9 below block 30's region on every line
+PASS: D2 T3 (the stake): under the sharper budget the ceiling would be max_t t (4/27 - t) = 4/729 at t = 2/27, crossed on (p, 1, 2) between p = 367 and 368 (d_3(367) = 745/135434, d_3(368) = 747/136171); the refutation leaves block 30's ceiling 256/531441 in force
+PASS: D3 T3 (the stake): the refuted budget would have moved every line by a factor between 8 and 10 (4165 -> 453, 2085 -> 232, 8330 -> 905, 6247 -> 677); none of it is claimed
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — the increments of an amplified excuse; the rise identity at every refinement of the three witnesses; the period's arithmetic (4 excuse arrows per 2 amplified nodes, rise 0)
+per_site: executed — the three witnesses rebuilt from their noise marks through the one-sided automaton; every arrow checked against the 1-predecessors; the ceiling's crossing between 367 and 368 on (p,1,2)
+per_mode: executed — the trees' counts (16/10/1, 20/12/1, 23/12/2), the sharper budget failing by 6, 8, 8 and block 30's budget holding; 300 uniformly random cones never above 1
+per_block: executed — the four super-solution certificates of the stake with epsilon_1 R-bar < 10^-5; the one-variable maximum 4/729 symbolically
+lattice_wide: the refutation is a statement about block 30's construction on the automaton (any weights); the constant 2's attainment, a different construction and the true strength are not claimed
+PASS: G1 the five N5 resolution lines are printed
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

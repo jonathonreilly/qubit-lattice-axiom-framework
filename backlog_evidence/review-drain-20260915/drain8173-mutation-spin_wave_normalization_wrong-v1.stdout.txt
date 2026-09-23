@@ -1,0 +1,26 @@
+AUDIT_INPUT_PATHS:
+  docs/SPHERE_STATIC_FINITE_VOLUME_GAUSSIAN_COVARIANCE_FIXED_AXIS_RESPONSE_AND_PROJECTED_MODE_SUM_BOUNDED_THEOREM_NOTE_2026-09-16.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
+PASS: A1 the note carries its claim_id once
+PASS: A2 the axioms memo carries the four sentences quoted under Premises
+PASS: A3 the context-only finite-menu note carries its identity and product-law heading; no sphere bound is imported
+PASS: A4 all three declared source/context inputs match literal SHA-256 pins
+PASS: B1 T1: on the periodic 4^3 lattice the plane waves e^{ik.x} are eigenvectors of the graph Laplacian with eigenvalue E(k) = 2 sum_j (1 - cos k_j) (four wavevectors, symbolic)
+FAIL: B2 T1: for the Gaussian transverse model with precision beta Lap on the 4-ring the k-modes n = 1, 2 have variance 1/(beta E(k)) = 1/(2 beta), 1/(4 beta) per component, so beta E(k) <|theta_hat(k)|^2> = 1 — the spin-wave value of the normalization
+PASS: C1 T2: single site in a field: kappa E[(s^1)^2] = E[s^3] for the exponential law with concentration kappa = beta h (the transverse sum rule's one-site instance, symbolic)
+PASS: C2 T2: the rotation generator about e_2 sends s^1 to s^3 and s^3 to -s^1; the surface integral of L(s^1 s^3) vanishes (the integration by parts behind the general sum rule beta h N <(m^1)^2> = <m^3> on any torus)
+PASS: D1 T3: the unnormalized 4-site rational ring transform obeys sum_k |F(k)|^2/N = sum_x f_x^2; the vector projection and translation steps are written proofs
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — exact 64-by-64 Laplacian entries and four plane-wave identities; scalar covariance factors checked on a ring
+per_site: executed — one-site exponential moments and the rotation surface integral; no stochastic spin updates or field-chain estimates
+per_mode: executed — four selected cubic waves, two selected ring inverse eigenvalues and four rational Fourier coefficients; no all-mode numerical sweep
+per_block: executed — one finite cubic matrix and finite ring fixtures; no sampled spatial blocks, measured normalization or simulation output
+lattice_wide: checked and not executed — arbitrary finite-volume covariance, global rotation cancellation and projected vector mode sum are written proofs
+PASS: G1 the five N5 resolution lines are printed
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=13 FAIL=1

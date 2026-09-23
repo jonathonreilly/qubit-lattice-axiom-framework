@@ -1,0 +1,164 @@
+{
+  "base": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+  "tree": "27b9eec3aa17dad34bfcd5e8d3128214cf8f32e7",
+  "source_entries": [
+    {
+      "path": "docs/SPHERE_STATIC_FINITE_VOLUME_GAUSSIAN_COVARIANCE_FIXED_AXIS_RESPONSE_AND_PROJECTED_MODE_SUM_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "mode": "100644",
+      "blob": "1831a104ef2553dcdab279d7fd116bf9f5f96893",
+      "sha256": "a73ca20d57b4d738084d43748f476da9c353d3f65d56d846ea7525bc93104f05"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/README.md",
+      "mode": "100644",
+      "blob": "bd553ac136a4154a12f4a2fb2fa7683709663ab4",
+      "sha256": "33724294adedcce27ec90174e18f2986e9c56278d553cc5c06fe2eae8a0e8ade"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/01-APPROACH_REGISTRY.md.gz",
+      "mode": "100644",
+      "blob": "6f8d2a35611309fd28c9650f88b54fac5fce49ff",
+      "sha256": "857d09cef32234c520bd59d08411b449f5ac04b78d74378c448502592012ba29"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/02-CHECKER_block29_findings.md.gz",
+      "mode": "100644",
+      "blob": "3837ec6d0affa8ed5ea067f2e1b8de953545f866",
+      "sha256": "2c638ede1b64b9d5423d79e97398efafcf2fdce83cb6afa524caf05110cead96"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/03-CLAIM_STATUS_CERTIFICATE_block29.md.gz",
+      "mode": "100644",
+      "blob": "144fbadb3ff10eb77204cd3580adf015e65d4864",
+      "sha256": "8ed5405e355813d9395b90cfdbd896c76262aac8a5a3b7a8b31a72731f9de888"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/04-GOAL_block29.md.gz",
+      "mode": "100644",
+      "blob": "24ded44f0596f5039d41d089bf0f116cf12470b5",
+      "sha256": "378a1fe8125abd4749ca4889b0fe8f331e514073621332dc88f643ff8bf98f39"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/05-HANDOFF.md.gz",
+      "mode": "100644",
+      "blob": "45ca2d92b3dd9f9fd73b15ef7c72a735dc41bd38",
+      "sha256": "199169ccf962e9fe4c4274b447793eb9074cf24ea4df3b8705c9de77234c14ce"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/06-OPPORTUNITY_QUEUE.md.gz",
+      "mode": "100644",
+      "blob": "efade81ebb4108f0a1c29f5ba586db1e01eba473",
+      "sha256": "9f7b952ec26ecdb6b8917b4d6a8f90e9d214f4a91afc37f28da2f1a00ab96f23"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/07-RESULTS_block29.md.gz",
+      "mode": "100644",
+      "blob": "e8eb2737ef738df126177022adca4de8b8278106",
+      "sha256": "54601c9c78b6854fff41f45211687701a74f939787a8dcb5671be0632b3d939d"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/08-REVIEW_HISTORY.md.gz",
+      "mode": "100644",
+      "blob": "5f17fd0e5e117099d382906b0a088c19233dab58",
+      "sha256": "e2248333ffc2003d302581c24bb5821e7415189c2706daa67224c8f19e578fa2"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/09-STATE.yaml.gz",
+      "mode": "100644",
+      "blob": "6a9e8c508bebdd3d1b9c974e33c124ff316aa7e0",
+      "sha256": "5ac09f19b043e9994f0d0171edb383996cb7e660f54d73eff7e7c22ea2627063"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/10-TRACE_GATE.md.gz",
+      "mode": "100644",
+      "blob": "9bf5325ea738eac31788e7aedd4d4303542d0949",
+      "sha256": "c6b7406443a249e7c9f1fbe883a83e3e7d75a776f94c3d2994252e785e6d1ed2"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/11-supervisor_control_block29_exact.out.txt.gz",
+      "mode": "100644",
+      "blob": "53d3803412f329cbc15142f7b48fa763bf1044a5",
+      "sha256": "8b27327e129541631721fe0f4e0bb92eb1c77453fd1886de8369c1da77eb1f55"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/12-supervisor_control_block29_exact.py.gz",
+      "mode": "100644",
+      "blob": "96dab36c5ca6f00dafc6e008c6bfd8a1f006dbd6",
+      "sha256": "d46232eaca14d0dc92f7f51eb2432771a8ea15054953fca893047470262b4754"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/13-supervisor_control_block29_kernel.out.txt.gz",
+      "mode": "100644",
+      "blob": "b1047659992375e3cfde5eaf30a2d8eaf3267b2b",
+      "sha256": "7394155c39ccd6233e938dc2a2f913ce081686e3ace1e78ecb4ed025747cb821"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/14-supervisor_control_block29_kernel.py.gz",
+      "mode": "100644",
+      "blob": "63d64b2617ffa9a89aea9db0455455e2337c5483",
+      "sha256": "aa07f0258de983d20a07a41015900f53078af1f683f29c3b2e4cace9942ceaf7"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/15-supervisor_control_block29_refuter.out.txt.gz",
+      "mode": "100644",
+      "blob": "1b4bfa3bff2dcdc681ea8ea3fdd483c54338fb72",
+      "sha256": "f4ada474e66f7a8c5a05ce98710e0412962b23380f2d00314167f607169e9f96"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/16-supervisor_control_block29_refuter.py.gz",
+      "mode": "100644",
+      "blob": "231bd52a14d243bbb484d1d24f1d9da27d9db026",
+      "sha256": "77c4a78d30833aa44c7c089a3019ba0dd5704f0e810e23ae5fd3a2f26f93dee7"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/17-ADMISSIBILITY_RULE_TRANSVERSE_KERNEL_NORMALIZATION_IN_THE_ORDERED_SPHERE_STATIC_LAW_MEASURED_BETWEEN_THE_BOUNDS_WITH_THE_TRANSVERSE_SUM_RULE_AND_THE_SPIN_WAVE_REFERENCE_BOUNDED_THEOREM_NOTE_2026-09-16.md.gz",
+      "mode": "100644",
+      "blob": "096139bdbf17255c8d8fd5b542b409af2185b00b",
+      "sha256": "c9e103ad9136141775b33773d4f51d30eedfe195920bba15322b8a9ead2bcf28"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/18-citation_graph_manifest.json.gz",
+      "mode": "100644",
+      "blob": "cf3d42f384cad4ea3de1c305954703b66fbcfe8b",
+      "sha256": "2abec2b944c759ec88868f40652699ef9454a34415b94e463723f4d86806fda8"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/19-admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.txt.gz",
+      "mode": "100644",
+      "blob": "855adffe96f46642d1d3d7072bfd8bac51fba1ef",
+      "sha256": "f3868586fdec6e47545fd4f2f0c66950f8dce8cc234c0a4108c28d8130af7380"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/originals/20-admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.py.gz",
+      "mode": "100644",
+      "blob": "de5d445fe6fb851ab9c0683adbbab4f1878054c9",
+      "sha256": "b92a1afb616f83b1e19068aa751fb8386ca2f306238dad7d4d0fb4f07123323e"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/pr8173-original-manifest.json",
+      "mode": "100644",
+      "blob": "b8df27bd12015905091b38293c975b39d10dc9b7",
+      "sha256": "73153da44fb0d4b53229c976e5e6aba77a6f471b51cb1e2c3a2e4feda0b89186"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8173/pr8173-original-note-and-measurement-corrections.txt",
+      "mode": "100644",
+      "blob": "13c7a2033ce1abf2f7b068679eb941397afb897b",
+      "sha256": "896e6b6840c46861084116f9c26c988b48776a6e561d86813d707880d7aa04c0"
+    },
+    {
+      "path": "scripts/sphere_static_finite_volume_covariance_response_projected_mode_sum_check_2026_09_16.py",
+      "mode": "100755",
+      "blob": "ba535d375e30b7cb9a0d2c7a2a27880d7657f9c5",
+      "sha256": "54441f119d85ebc62de0127366305e8b9871592b33f064f0c0f4d633fdb13682"
+    }
+  ],
+  "all_record_inputs_index_and_worktree_verified": true,
+  "all_reviewer_references_verified": true,
+  "current_main_changed_paths": 71,
+  "changed_bound_inputs": [],
+  "cache_absent": true,
+  "worktree_delta_empty": true,
+  "index_matches_recorded_tree": true,
+  "primary_runs": 0
+}

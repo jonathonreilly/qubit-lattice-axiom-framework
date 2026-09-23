@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "/private/tmp/review-drain-20260915/drain-author-slot/scripts/admissibility_rule_six_axis_formation_threshold_sharper_bad_pair_budget_false_explicit_witnesses_and_the_two_level_period_2026_09_16.py"
+  ],
+  "exit": 0,
+  "wall_seconds": 0.585654666996561,
+  "user_cpu": 0.463194,
+  "system_cpu": 0.043515,
+  "max_rss_bytes": 68173824,
+  "wall_limit": 30,
+  "cpu_limit": 20,
+  "memory_design": "finite 225-site windows; observed RSS; OS AS cap unsupported (preserved failure)"
+}

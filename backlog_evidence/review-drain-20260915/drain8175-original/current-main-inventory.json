@@ -1,0 +1,301 @@
+{
+  "main": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+  "paths": [
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "snapshot": {
+        "mode": "100644",
+        "blob": "8f9c496033ee3e37e4ad73433151a79224a60814",
+        "sha256": "b02b4a93b36ef5177c8727f1a3d6932ba32dbcb1f4debb3da7f454b6dba566af",
+        "bytes": 879
+      }
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block31_findings.md",
+      "snapshot": null
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block31.md",
+      "snapshot": null
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block31.md",
+      "snapshot": null
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "snapshot": {
+        "mode": "100644",
+        "blob": "6dfc9de13838b8fe1d6d593b83d0d31cd0763b93",
+        "sha256": "e52898452cca1ed4e5065f0f8c2e27a7a9afd018a8e8d5867e991d7adf4ba59f",
+        "bytes": 8140
+      }
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+      "snapshot": {
+        "mode": "100644",
+        "blob": "2977b7f9903b58f95963491e44cb244ee894ab84",
+        "sha256": "6b14211f9f8f1f284602d74b61136b60dca0bc01b508176a309a4bc1d3dd848c",
+        "bytes": 1652
+      }
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "snapshot": {
+        "mode": "100644",
+        "blob": "74d2f60bae1b3e2de1ca2cf7ade91cf9e93da3b7",
+        "sha256": "c6e70a8f36829082ff26280dfb350c8232111a23fcf3c076c70d45e7ae27df19",
+        "bytes": 10878
+      }
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block31.md",
+      "snapshot": null
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "snapshot": {
+        "mode": "100644",
+        "blob": "08d17f0940e3756c94ff724c8ff531adc9e029ce",
+        "sha256": "7beef809b0e4e0b1bc815e3f44f271f80cf951b3b4789d09e7e588819f22b8d7",
+        "bytes": 54405
+      }
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "snapshot": {
+        "mode": "100644",
+        "blob": "e16642020759d3d57935cd6d037d382fc6573bf0",
+        "sha256": "2b955f847d5c0f6e7e6325cbdcc51aeb9bbd0197832d23195b34c5cb969d08a3",
+        "bytes": 14595
+      }
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "snapshot": {
+        "mode": "100644",
+        "blob": "8f432e2cd2631c0cc6a5121f932b305f16d3a023",
+        "sha256": "3cc64ad72621aef21a26cc7948950a42b27a0b4cf63518039dab916261938fe3",
+        "bytes": 4403
+      }
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block31_certify.out.txt",
+      "snapshot": null
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block31_certify.py",
+      "snapshot": null
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block31_climb.out.txt",
+      "snapshot": null
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block31_climb.py",
+      "snapshot": null
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block31_climb_wide.out.txt",
+      "snapshot": null
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block31_climb_wide.py",
+      "snapshot": null
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block31_core.py",
+      "snapshot": null
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block31_refuter.out.txt",
+      "snapshot": null
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block31_refuter.py",
+      "snapshot": null
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block31_search.out.txt",
+      "snapshot": null
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block31_search.py",
+      "snapshot": null
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block31_witness.out.txt",
+      "snapshot": null
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block31_witness.py",
+      "snapshot": null
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_SHARPER_BAD_PAIR_BUDGET_IS_FALSE_FOR_THE_EXTENDED_EXPLANATION_TREE_EXPLICIT_WITNESSES_AND_THE_TWO_LEVEL_PERIOD_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "snapshot": null
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "snapshot": {
+        "mode": "100644",
+        "blob": "c21daead253bb6ff5834affe0068b561dce2e147",
+        "sha256": "0d1b088ef492d73fb8608f63ed97fdb9d4e1af5607e4899cda8c140128bb6bc5",
+        "bytes": 891252
+      }
+    },
+    {
+      "path": "logs/runner-cache/admissibility_rule_six_axis_formation_threshold_sharper_bad_pair_budget_false_explicit_witnesses_and_the_two_level_period_2026_09_16.txt",
+      "snapshot": null
+    },
+    {
+      "path": "scripts/admissibility_rule_six_axis_formation_threshold_sharper_bad_pair_budget_false_explicit_witnesses_and_the_two_level_period_2026_09_16.py",
+      "snapshot": null
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "snapshot": {
+        "mode": "100644",
+        "blob": "5acb4643882438f8dd16baf9694e6fa2d33d1dc6",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+        "bytes": 5313
+      }
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "snapshot": {
+        "mode": "100644",
+        "blob": "a74392f6939b2e51109756c37d6d5d59bb54c5a4",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+        "bytes": 2581
+      }
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "snapshot": {
+        "mode": "100644",
+        "blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+        "bytes": 4770
+      }
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "snapshot": {
+        "mode": "100644",
+        "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+        "bytes": 11333
+      }
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "snapshot": {
+        "mode": "100644",
+        "blob": "ec3bb81397ea1b136c4040c69832ad1a1bc9ee76",
+        "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+        "bytes": 45923
+      }
+    },
+    {
+      "path": "docs/CANONICAL_HARNESS_INDEX.md",
+      "snapshot": {
+        "mode": "100644",
+        "blob": "6aca1f45f18874a028eedb5501a173fc8dcb37d4",
+        "sha256": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5",
+        "bytes": 109354
+      }
+    },
+    {
+      "path": "docs/audit/README.md",
+      "snapshot": {
+        "mode": "100644",
+        "blob": "ca590b6141c1440a520c1ef2d777aa74bec41e35",
+        "sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f",
+        "bytes": 35690
+      }
+    },
+    {
+      "path": "docs/repo/CONTROLLED_VOCABULARY.md",
+      "snapshot": {
+        "mode": "100644",
+        "blob": "27e61f73c6839c28091947c0056da16b478c0a19",
+        "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+        "bytes": 39977
+      }
+    },
+    {
+      "path": "docs/repo/DEFERRED_DECISIONS.md",
+      "snapshot": {
+        "mode": "100644",
+        "blob": "4b8954556f59870f204de0709f6bf2f0a2c67a86",
+        "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+        "bytes": 10595
+      }
+    },
+    {
+      "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+      "snapshot": {
+        "mode": "100644",
+        "blob": "a4b0638649e7f8402cf5f2827e4bf2329f95aea3",
+        "sha256": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8",
+        "bytes": 20824
+      }
+    },
+    {
+      "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+      "snapshot": {
+        "mode": "100644",
+        "blob": "eaff7bb45b92f647467c2847b5521f6e45a472ae",
+        "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+        "bytes": 3694
+      }
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "snapshot": {
+        "mode": "100644",
+        "blob": "0075998454899efb1b83e71daea5bc60d3499d49",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+        "bytes": 6427
+      }
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "snapshot": {
+        "mode": "100644",
+        "blob": "b1b498432c82d68c4e59fb5601df5dbfc73ea72e",
+        "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+        "bytes": 16941
+      }
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "snapshot": {
+        "mode": "100644",
+        "blob": "cd4b0f2a9bf9b2bb20e2316993cc49f669430c0e",
+        "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+        "bytes": 4975
+      }
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "snapshot": {
+        "mode": "100644",
+        "blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+        "bytes": 6416
+      }
+    },
+    {
+      "path": "docs/audit/data/premise_decision_history.json",
+      "snapshot": {
+        "mode": "100644",
+        "blob": "9f05a519e90f8ad7eaf0607f6fd00547722944b1",
+        "sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113",
+        "bytes": 11572
+      }
+    }
+  ]
+}

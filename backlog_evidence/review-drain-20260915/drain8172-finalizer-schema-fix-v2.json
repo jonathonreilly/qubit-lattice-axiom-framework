@@ -1,0 +1,12 @@
+{
+  "failure": "v1 stopped before any source/unit mutation: TypeError string indices must be integers because actual final-review references is a named mapping, not a list",
+  "old": {
+    "path": "/private/tmp/review-drain-20260915/finalize_drain8172_unit_v1.py",
+    "sha256": "a6ee08716160ae485ae18c6908e6c8a04375676170fc66bde8e9297a23174fea"
+  },
+  "new": {
+    "path": "/private/tmp/review-drain-20260915/finalize_drain8172_unit_v2.py",
+    "sha256": "acdfd73d8cc44b2ce11c6ede91bb4f14a1acbad90525c416dcaf03f34abe138d"
+  },
+  "change": "Iterate actual references.values(); no verdict, identity or evidence check weakened"
+}

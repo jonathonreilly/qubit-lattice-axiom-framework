@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "kind": "original-same-session-cold-staged-source-capture-review",
+  "pr": 8173,
+  "reviewer_session": "/root/review_8173",
+  "reviewer_model": "gpt-6-astra",
+  "reviewer_reasoning": "low",
+  "same_session": true,
+  "verdict": "CAPTURE_CLEARED",
+  "capture_clearance": true,
+  "base": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+  "source_tree": "27b9eec3aa17dad34bfcd5e8d3128214cf8f32e7",
+  "original_head": "e5b3aa31686d88d8a2fe0aad5e938acac0e39404",
+  "blockers": [],
+  "source_paths_verified": 25,
+  "original_payloads_verified": 20,
+  "staged_modes_verified": true,
+  "inputs_verified": true,
+  "current_main_preserved": true,
+  "source_and_proofs_unchanged_from_v3": true,
+  "primary_invocations_cleared": 1,
+  "expected_baseline_checks": 14,
+  "mathematical_mutations_cleared": [
+    "eigenvalue_wrong",
+    "spin_wave_normalization_wrong",
+    "sum_rule_wrong",
+    "integration_by_parts_wrong",
+    "parseval_wrong"
+  ],
+  "mutation_expected_total": {
+    "passed": 13,
+    "failed": 1
+  },
+  "limits": {
+    "wall_seconds_each": 60,
+    "memory_bytes_each": 402653184,
+    "mechanism": "sampled aggregate process-tree RSS; 0.02-second sampling plus ps overhead",
+    "measured": false
+  },
+  "adapter_condition": "New immutable v2 versions may bind only this actual report identity/schema predicates and exact tree; root inspects bounded diff before dispatch.",
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-author-unit-draft-v1.json",
+      "sha256": "1fc8ad873caf277a1b1842867730fef0b2a203f6406492260f1edb4b0eade1ca"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-author-cheap-v1.json",
+      "sha256": "c53f4fe1866baeefacc158f42118b01a3a718b59644feaffefdb95564b78465c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-advance-train85.json",
+      "sha256": "e965bcf28e7bc1ec22b393547253d6b9dddb6b61fab439be8ed4b83958189e3b"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-build-staged-draft-v1.py",
+      "sha256": "72ce28cba7434db29b79a540c936c383d5e8f830d5c103fd4f804c35d97cd824"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-capture-v1.py",
+      "sha256": "53a1d0d1ea346032c8a9855653dc303906cc561553335a2ffbc0921bca047ce5"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-mutation-capture-v1.py",
+      "sha256": "3677d329364868e58eccde538d72ed5444d2cea806dadad34488ece912609007"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-capture-plan-v1.json",
+      "sha256": "dc092c64d06b5edeaa973c8b8637ded7faa8e320bfd3d13b0181e45eb2e2de1e"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-adapter-verification-v1.json",
+      "sha256": "45af6288cb3f10ea5fb9dcc0a632deae875422a80114348e59ae9c6f7e64fd3f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-adapter-bindings-v1.json",
+      "sha256": "0271fe78f57c9a602b3626b238d0e0f5eb42d6a045b354217466b8a2cc5fd597"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-adapter-authority-v1.json",
+      "sha256": "9cd8decb20c4912cf2930d39e5ede9ed483fe2b0eb6017e0d58813e92d12e95f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-early-review-v3.json",
+      "sha256": "9ad28d3417d6c1a3b10d92dc7027ee029c39a58d98e042de25ed50f29e04adb0"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8173/cold-v1-identity.py",
+      "sha256": "2fdb6818a2846f88672a7bc2da5c89e03ebfc91bf58c392a6464d95aa817e82d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8173/cold-v1-identity.stdout.json",
+      "sha256": "92b572d56491c7d17fed797f19e9f42582d3582866704a3b2a07f8ace5f9d9c2"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8173/cold-v1-identity.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "report": {
+    "path": "/private/tmp/review-drain-20260915/drain8173-cold-review-v1.md",
+    "sha256": "b0a954d702bc451838945191ddf0652e308e17f50cb2097f7eaadcf875107003"
+  },
+  "primary_runs": 0,
+  "mutation_runs": 0,
+  "simulation_runs": 0,
+  "pipeline_runs": 0,
+  "branch_preservation_required": true,
+  "final_pass": false,
+  "landing_pass": false
+}

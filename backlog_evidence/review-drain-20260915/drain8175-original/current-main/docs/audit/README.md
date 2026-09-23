@@ -1,0 +1,643 @@
+# Audit Lane
+
+> **Key terms used in this doc** are indexed A-Z at [docs/KEY_TERMINOLOGY.md](../KEY_TERMINOLOGY.md); each row points to the canonical source-of-truth doc.
+
+**Status:** infrastructure lane for `main`.
+This lane does not produce physics claims. It audits existing ones.
+
+## What this lane does
+
+The publication package historically mixed author-facing status labels with
+claim strength. The audit lane now separates those concerns: the auditor sets
+`claim_type`, the auditor sets `audit_status`, and the pipeline derives
+`effective_status` through the citation graph. Nothing presents as retained
+to the outside world unless the scoped audit chain is clean.
+
+The first repo-wide trace (CKM atlas) showed several failure modes that
+self-declared tiers do not catch:
+
+1. **Definition-as-derivation** — a new symbol is defined as a small-integer
+   ratio, then "shown" to match data by name substitution.
+2. **Conditional-on-open-work** — a `retained` note depends on a `support` or
+   `open` note for the load-bearing identification step.
+3. **Algebraic decoration** — many `retained` corollaries are consequences of
+   a single upstream parameter choice and add no independent physical content.
+4. **Stale narrative wrappers** — a failed wrapper frame remains easy to cite
+   even after its audit verdict invalidates the global story.
+
+The audit lane mechanizes detection of these patterns.
+
+## Layout
+
+```
+docs/audit/
+  README.md                          # this file
+  FRESH_LOOK_REQUIREMENTS.md         # who may audit what, and how
+  ALGEBRAIC_DECORATION_POLICY.md     # how to identify and prune decoration
+  STALE_NARRATIVE_POLICY.md          # how to archive failed wrapper frames
+  AUDIT_AGENT_PROMPT_TEMPLATE.md     # the prompt template for cold auditors
+  AUDIT_LEDGER.md                    # ignored, materialized human-readable cache
+  data/
+    ledger/<id[:2]>/<id>.json        # tracked source of truth: one claim row per shard
+    ledger_meta.json                 # tracked source of truth: top-level ledger metadata
+    audit_ledger.json                # ignored materialized monolith cache
+    citation_graph.json              # ignored generated doc -> cited-authorities cache
+    source_path_aliases.json         # controlled: source-note renames preserving audit rows
+    runner_classification.json       # ignored generated A/B/C/D cache
+    audit_dispatch_queue.json        # generated: targeted re-audits normal queue will not surface
+  scripts/
+    build_citation_graph.py          # parse all .md docs into the graph
+    seed_audit_ledger.py             # initialize ledger rows from claim notes
+    classify_runner_passes.py        # classify runner outputs by check type
+    compute_effective_status.py      # propagate audit results down the graph
+    compute_audit_dispatch_queue.py  # render dispatcher sidecars into audit_dispatch_queue.json
+    audit_lint.py                    # validate ledger consistency
+    unregistered_runner_bearing_note_baseline.txt
+                                     # controlled: known runner-bearing notes
+                                     # on excluded paths (see below)
+    runner_pin_gate.py               # one runner-pin predicate for writer + lint
+    runner_pin_baseline.json         # controlled: terminal verdicts whose
+                                     # snapshot predates the runner-pin fields
+```
+
+Run `python3 docs/audit/scripts/ledger_io.py --materialize` before directly
+using a legacy monolith reader. All ledger writers must call
+`ledger_io.save_ledger()`; direct edits to the ignored monolith are refused.
+
+## Scope-aware fields
+
+The audit lane separates **classification** from **verdict**. Authors may
+write whatever status prose they need inside source notes, but the retained
+library is driven only by auditor-owned fields:
+
+- `claim_type` — what kind of object the auditor says the row is:
+  - `positive_theorem`
+  - `bounded_theorem`
+  - `no_go`
+  - `open_gate`
+  - `decoration`
+  - `meta`
+- `claim_scope` — the auditor's short, citeable statement of what was
+  actually audited. This is required for applied audits.
+- `audit_status` — what the audit found:
+  - `unaudited`
+  - `audit_in_progress`
+  - `audited_clean`
+  - `audited_renaming`
+  - `audited_conditional`
+  - `audited_decoration`
+  - `audited_failed`
+  - `audited_numerical_match`
+- `effective_status` — derived, publication-facing status:
+  - `retained` for `claim_type = positive_theorem` plus
+    `audit_status = audited_clean` plus retained-grade dependencies.
+  - `retained_no_go` for `claim_type = no_go` plus
+    `audit_status = audited_clean` plus retained-grade dependencies.
+  - `retained_bounded` for `claim_type = bounded_theorem` plus
+    `audit_status = audited_clean` plus retained-grade dependencies.
+  - `retained_pending_chain` for a clean theorem/no-go/bounded row whose
+    upstream chain is not yet retained-grade.
+  - `open_gate` for a clean open gate; this blocks retained propagation.
+  - `decoration_under_<parent_claim_id>` for an audited decoration whose
+    parent is retained-grade.
+  - `meta` for non-claim infrastructure rows.
+  - `audited_<failure_mode>` for terminal non-clean audit verdicts on active
+    claims.
+
+Foundational-premise dependencies are handled by
+`docs/audit/scripts/premise_nodes.py`. Exactly two supplied premise types satisfy
+chain closure without bounding a row: axioms and explicitly approved framework
+primitives in `docs/audit/data/axiom_premise_nodes.json`. Derivation obligations,
+historical admissions, governance decisions, and conventions do not satisfy a
+dependency. They must earn retained-grade normally or leave the consumer
+conditional/pending-chain.
+
+An entry in `docs/audit/data/derivation_obligations.json` and the source note
+named by its own `current_path` are two records of the same open obligation, so
+`audit_lint.py` reconciles them: the registry `target` against the opening
+paragraph of the note's `## Exact target` section, `self_liquidation_condition`
+against the note's `## Closure criterion` rather than another section, a
+declared `historical_governance_source` against whether the note names it, both
+sections against existing at all, `self_liquidation_condition` against being
+non-empty, and the obligation's ledger row against being typed `open_gate` —
+the only typing that keeps the registry's promise that an obligation never
+satisfies dependency closure. The lint reports divergence and never repairs it:
+what an obligation demands is owner/audit-lane content, and deciding which of
+the two surfaces is right is not a mechanical call.
+
+Whether a finding can block turns on whether it reads note prose. Two checks do
+not — `self_liquidation_condition` is empty or it is not, and the ledger row is
+typed `open_gate` or it is not — so both are facts about machine records the
+lint already owns, and both are error-eligible. Every other check interprets
+prose, and is reported on each run as a `..._advisory` notice that never errors:
+`audit_lint.py` is a stop-work gate in `run_pipeline.sh` and
+`pre_commit_audit_check.sh`, so a hard error whose trigger is a hand-rolled
+Markdown parse — or a raw filename substring test that a percent-encoded link
+target defeats — is a repo-wide outage caused by somebody's Markdown style.
+Arming any of them needs container-aware parsing, a link-resolving citation
+check, or a structured registry field.
+
+`scripts/derivation_obligation_reconciliation_baseline.txt` grandfathers
+error-eligible divergences as `derivation_obligation_registry_note_divergence`
+notices; a new one errors, and a drained line surfaces as `..._baseline_stale`.
+It currently ships **empty** — nothing error-eligible diverges — and stays as
+the sanctioned drain. Shrink-only is a reviewed convention rather than a
+mechanical guarantee: the lint cannot distinguish a drained line from a newly
+added suppression, so growth of that file is a review question. The `open_gate`
+typing check is outside the baseline in the other direction — it is not
+grandfatherable at all.
+- `prose_status` — vocabulary-drift status, orthogonal to `audit_status`. See
+  `docs/repo/VOCABULARY_HYGIENE_DESIGN.md`. One of:
+  - `clean` — no vocabulary drift detected by `vocab_lint`.
+  - `auto_corrected` — routine drift mechanically rewritten by
+    `vocab_lint --fix`; rewrites logged in `prose_corrections`.
+  - `needs_human_vocab_decision` — genuinely new term that `vocab_lint`
+    cannot mechanically rewrite; queued for periodic vocab-extension review.
+  - `not_evaluated_pre_vocab_lint` — pre-Cleanup-1 row never linted under
+    the new rules, or a newly seeded/source-drift row has not yet been
+    linted under the new rules. Used as the seeder/backfill default.
+  - `queue_backpressure_exceeded` — vocab-extension review queue is >50
+    entries deep; new unresolved terms emit this until the queue is
+    processed.
+
+  `prose_status` does **not** propagate into `effective_status`. A
+  non-clean prose_status never demotes a physics-clean row; a clean
+  prose_status never promotes a physics non-clean row. Physics and
+  vocabulary are reviewed by separate mechanisms.
+
+- `prose_corrections` — list of `(rule_id, before, after)` tuples recording
+  the mechanical rewrites `vocab_lint --fix` applied to the source note
+  during the same audit cycle.
+
+When an audit chain runs `vocab_lint --fix` on the source note before
+applying the verdict, the resulting note-hash refresh and the
+`prose_status` / `prose_corrections` write happen atomically via a
+`pre_audit_prose_fix` envelope on the incoming audit blob:
+
+```json
+{
+  "claim_id": "...",
+  "verdict": "audited_clean",
+  ...,
+  "pre_audit_prose_fix": {
+    "old_hash": "<row.note_hash before vocab_lint --fix>",
+    "new_hash": "<note_hash after vocab_lint --fix>",
+    "prose_status": "auto_corrected",
+    "prose_corrections": [
+      {"rule_id": "legacy_alias_strip", "before": "(legacy alias: A1)", "after": ""}
+    ]
+  }
+}
+```
+
+`apply_audit.py` verifies `old_hash` matches the ledger's current
+`note_hash`, then refreshes `note_hash` to `new_hash` before the
+hash-drift check; without the envelope, running `vocab_lint --fix`
+would immediately invalidate the audit. The envelope is the supported
+atomic refresh path.
+
+Generated audit data must not contain legacy source-status authority fields.
+The graph builder may use old source-note status prose as a one-way migration
+hint when seeding `claim_type`, but the ledger, queue, prompt, and rendered
+audit surfaces are `claim_type` / `audit_status` / `effective_status` only.
+`support` is not a claim class. Once a legacy support-labeled note has an
+`audited_clean` verdict, it retains according to its ledger `claim_type` and
+dependency closure; old source-note prose neither grants nor blocks retained
+status.
+Legacy critical rows whose confirmed clean cross-confirmation predates
+`claim_type` may clear `claim_type_backfill_reaudit` with a restricted-input
+audit that writes the scoped `claim_type`; missing `claim_type` fields in the
+old confirmation summaries are migration debt, not a cross-confirmation
+disagreement.
+
+## Claim typing at authoring time
+
+Every new source note under `docs/` must declare its claim class with an
+explicit header line the graph builder can read:
+
+```
+**Type:** positive_theorem | bounded_theorem | no_go | open_gate | decoration | meta
+```
+
+`seed_audit_ledger.default_claim_type_for` resolves the seeded `claim_type`
+in this precedence order (the auditor always owns the final value):
+
+1. `data/meta_source_patterns.txt` — curated per-file registry for
+   catalog/index/infrastructure docs (e.g. `docs/CANONICAL_HARNESS_INDEX.md`);
+   applies even over author hints.
+2. The explicit `Type:` / `Claim type:` header, else the legacy
+   Status-line migration hint.
+3. Infrastructure directory families
+   (`seed_audit_ledger.INFRA_META_PATH_PREFIXES`: `docs/repo/`,
+   `docs/work_history/`, `docs/lanes/`, `docs/publication/`,
+   `docs/ai_methodology/` — the same families as
+   `data/excluded_source_patterns.txt`): hint-less notes under these paths
+   seed as `meta` (documentation, not claims).
+4. Fallback: `positive_theorem` with provenance `default_positive_theorem`.
+
+Tier 4 is visible debt, not a hidden state: `audit_lint.py` warns on every
+such row (`claim_type_defaulted`), and `pre_commit_audit_check.sh` (via
+`check_staged_claim_typing.py`) refuses staged notes that would enter or
+stay in the defaulted class, so the legacy backlog can only shrink.
+
+`meta` deserves care in both directions: meta rows are never queued for
+audit and chain-satisfy their dependents as stable context, so `meta` is
+reserved for documents that carry no claim any dependent could consume as
+evidence.
+
+Exclusion is history-preserving: a ledger row whose path matches
+`data/excluded_source_patterns.txt` is dropped at the next seeding run
+only when it is an unaudited unknown — no terminal or in-flight
+`audit_status` and no archived `previous_audits` (lint notice
+`excluded_path_row_pending_drop` until then; the seeder also strips the
+dropped row's ids from dependents' dep lists, so no dangling edges).
+Rows carrying audit history are never auto-dropped — retroactive
+exclusion must not erase audit evidence; they stay in the ledger,
+surface as `excluded_path_row_grandfathered` lint notices, and retiring
+them is an owner/audit-lane decision. Exact paths in
+`data/never_gate_source_paths.txt` always stay.
+
+Exclusion is a location gate, and it runs before claim typing: a note whose
+path matches `data/excluded_source_patterns.txt` can never acquire a claim id,
+note hash, runner pin, queue entry, or verdict, whatever `Type:` header its
+author writes. That is correct for documentation, and wrong for a note that
+names a `scripts/*.py` runner — such a note is a runner-gated result the audit
+lane cannot see, and an excluded directory that collects them is a write-only
+sink for runner-gated science. `audit_lint.py` reports that combination.
+
+It **reports** it; it does not refuse it. On the commit that introduced the
+detector it finds 398 notes, of which 369 sit under
+`docs/work_history/repo/review_feedback/` and were all added in the seventeen
+days from 2026-07-10 to 2026-07-26 by a lane that is still producing them. An
+error disposition would be red on arrival, red again within hours of any drain,
+and — because `audit_lint.py` is a hard gate in both `scripts/run_pipeline.sh`
+(stage 13, under `set -e`) and `scripts/pre_commit_audit_check.sh` — would stop
+every lane in the repo rather than the one producing the notes. Arming it
+therefore waits on the prior decision about what `docs/work_history/` is for
+and where a runner-gated result belongs, which is an owner call. The ordinary
+repairs, when a specific note is worth registering, are to move it onto an
+auditable `docs/` path, register the exact path in
+`data/never_gate_source_paths.txt`, or drop the runner reference when the note
+is narrative only.
+
+Two notice categories carry the measurement that decision needs.
+`unregistered_runner_bearing_note` covers the paths listed in
+`scripts/unregistered_runner_bearing_note_baseline.txt` — the population as
+measured when the detector was written.
+`unregistered_runner_bearing_note_unbaselined` covers everything else the
+detector finds, so what the class has grown by is readable straight off a lint
+run; five such notes already existed when the detector landed. A baseline line
+that no longer describes an unregistered runner-bearing note surfaces as an
+`unregistered_runner_bearing_note_baseline_stale` notice and should be pruned.
+Do not add lines to the baseline to quiet a new note: an unlisted note is
+already only a notice, and adding it destroys the growth measurement.
+Registering the notes themselves is the separate owner policy decision; these
+files record the debt rather than settling it.
+
+### Draining the `claim_type_defaulted` backlog
+
+The `claim_type_defaulted` lint warning list is the worklist; the
+pre-commit gate stops regrowth. Per row, in order of preference:
+
+1. **Infrastructure/doc rows** — covered by the meta tiers above or by
+   exclusion; nothing to do beyond the next seeding run.
+2. **Claim notes whose own text states the class** — add the matching
+   `Type:` header. This is an author hint only: the auditor confirms the
+   type at audit, and a header must describe the note as written, never
+   retype content to fit a desired class.
+3. **Evidence-adjacent catalogs** (package READMEs, `*_ledger` /
+   `*_packet` summaries with citers) — do **not** register these as meta
+   first; meta chain-satisfies dependents unaudited, so premature meta
+   typing launders evidence edges. Apply the dependency-honesty protocol
+   (precedent: PR #4780): read each citing note, rewire edges that
+   consume evidence to the underlying evidence notes, demote navigation
+   references to backticked context — and only when no dependent
+   consumes the catalog as evidence, register it in
+   `data/meta_source_patterns.txt`.
+
+## The hard rules
+
+1. **Retained grade is audit-only.** The audit lane may grant
+   `effective_status = retained`, `retained_no_go`, or `retained_bounded`
+   only from `claim_type + audited_clean + retained-grade dependencies`.
+   Author labels and source-note status prose do not promote rows.
+
+2. **Open gates block propagation.** `open_gate`, `unaudited`,
+   `audit_in_progress`, `retained_pending_chain`, and terminal non-clean
+   audit verdicts are not retained-grade dependencies.
+
+3. **No self-audit.** The auditor of a claim must not share identity with
+   the claim's author. The best available full Codex GPT model at maximum
+   reasoning is the designated independent auditor for this repo (see
+   `FRESH_LOOK_REQUIREMENTS.md`); using a different model family from the one
+   that produced most existing notes satisfies the cross-family condition,
+   while same-family confirmation must be recorded as `fresh_context` from a
+   distinct restricted-input session.
+
+4. **Decoration must be boxed.** Claims tagged `audited_decoration` cannot
+   appear as separate retained rows in the publication-facing tables; they
+   roll up under their parent claim. See `ALGEBRAIC_DECORATION_POLICY.md`.
+
+5. **Publication tables consume effective status.** Public tables must read
+   `effective_status` from the audit ledger or an artifact derived from it,
+   not source-note status prose.
+
+6. **Runner timeout is not a verdict.** A wall-time timeout, missing stdout,
+   or noncompletion of a long-running runner is not evidence that the
+   scientific claim is wrong, conditional, or failed. If the load-bearing
+   step cannot be judged without that run, the row remains pending with a
+   compute-required blocker or is skipped in the current audit loop until a
+   completed log, faster/sliced runner, cached certificate, or independent
+   derivation is supplied. A terminal non-clean verdict may cite concrete
+   runner evidence such as a completed mismatch or an executable/import error,
+   but not mere long compute.
+
+   This rule is retroactive as an audit policy check. A legacy terminal
+   non-clean row whose primary rationale is only wall-time exhaustion,
+   missing stdout, or another compute-budget limit must be treated as a
+   policy-repair/re-audit candidate, not as settled scientific evidence. Do
+   not mechanically reset rows that also contain an independent substantive
+   blocker; repair those by re-auditing the actual blocker under the current
+   restricted-input process.
+
+7. **A terminal verdict must bind the runner source it names.** A verdict is
+   tied to the runner it cites only through
+   `audit_state_snapshot.runner_hash` and `.helper_runner_hashes`; those are
+   the only fields `invalidate_stale_audits.detect_invalidation` compares, and
+   it skips a channel entirely when the field is null or absent. The writer
+   has recorded `runner_hash` since 2026-05-16 and `helper_runner_hashes`
+   since 2026-07-15, so verdicts issued before those dates leave a channel
+   unbound and their runners can be rewritten with the verdict standing.
+   `scripts/runner_pin_gate.py` is the one predicate both sides execute:
+   `apply_audit.snapshot_audit_state` refuses to write a terminal verdict that
+   leaves a named runner unbound, and `audit_lint.py` classifies the
+   pre-existing population against `scripts/runner_pin_baseline.json`.
+
+   A runner absent from disk may carry a null hash only under
+   `audited_conditional` / `audited_failed`, whose v1 blocker fingerprint pins
+   `runner_present` and therefore binds the absence itself. Every other
+   terminal verdict is refused on an absent runner, because a null legacy hash
+   is a pin no comparator can ever act on.
+
+   `runner_pin_baseline.json` records that legacy population once and is
+   **shrink-only**; tooling never adds to it. Each entry stores the runner's
+   sha *at baseline time* — repository content at the moment the debt was
+   recorded, never what an auditor saw. Nothing is back-filled into a
+   snapshot: writing today's sha into a legacy snapshot would assert the
+   auditor saw current content, which is precisely what the missing pin makes
+   unknowable. Lint dispositions:
+
+   - `runner_pin_grandfathered` (notice) — unpinned, recorded, source
+     unchanged.
+   - `runner_pin_absent_and_source_drifted` (warning) — the runner already
+     moved after the verdict and no pin caught it. These are re-audit
+     candidates; nothing queues them, and spending audit capacity on them is
+     an owner/audit-lane decision.
+   - `runner_pin_baseline_new_drift` — the recorded source moved, or a helper
+     entered an unbound closure, since the baseline. Error on a retained-grade
+     row, warning otherwise.
+   - `runner_pin_writer_regression` — the snapshot had the field and left it
+     empty. Error on a retained-grade row, warning otherwise.
+   - `runner_pin_baseline_missing` — a pre-pin-shaped terminal row the
+     baseline does not cover. Error on a retained-grade row, warning
+     otherwise; the retained/non-retained split is the same one the
+     `note_hash` drift rule uses.
+   - `runner_pin_baseline_stale` (notice) — the entry has drained because the
+     row was re-pinned or reset; drop the line.
+
+   Draining: re-audit re-pins the row and the entry drops out. Do **not** add
+   entries to quiet a finding. When a retained-grade row raises
+   `runner_pin_baseline_new_drift` for a move that is real and already made,
+   record it on that row's existing entry as `source_drifted_since_verdict`
+   with `drift_evidence`; that states the debt without asserting a verdict and
+   drops the row to the recorded-drift warning class. Clearing the debt itself
+   is a re-audit, which only the audit lane can perform.
+
+## Prose status attribution
+
+Authors may write status prose in their own notes (see "Scope-aware fields"),
+so a status word is never a lint error on its own. What is checked is prose
+that pins a retained-grade or clean status token onto a **named other claim**
+whose live row is weaker — a reader following that citation is told the
+dependency carries authority the audit lane never granted it. `audit_lint.py`
+compares the token to the target's live `effective_status` and reports the
+mismatch as a `prose_status_attribution` **notice**. It is a notice, not an
+error, because author prose stays permitted and the adjacency rule is high
+precision but not perfect.
+
+These lines go stale by a normal mechanism, which is why nothing but the
+ledger should be trusted for status: a note is audited, the note is later
+edited, `seed_audit_ledger.archive_prior_audit()` retires the verdict and
+resets the row — and every downstream sentence quoting the old verdict
+silently becomes false, because nothing in the toolchain reads those
+sentences.
+
+Two narrow shapes are **errors**. Both are refinements of the overstating
+population above, so each fires only where the token **also** claims more than
+the target's live row — neither is an unconditional ban on the shape:
+
+- **`retained_no_go` about a named target that is weaker.** Pipeline-authoritative
+  promotion to that effective_status requires `claim_type = no_go` and
+  `audited_clean` (`compute_effective_status.clean_status`) and, for the clean
+  verdict to survive, a valid No-Go Discipline packet — enforced by
+  `no_go_discipline_gate` through `apply_audit` and `invalidate_stale_audits`,
+  not by `clean_status` itself. Where the named row is weaker the label is
+  wrong by construction, not merely stale. This rule is a ratchet: the
+  population measured when it landed is grandfathered in
+  `scripts/prose_retained_no_go_attribution_baseline.txt`, keyed
+  `<note_path>::<target claim id>` so a grandfathered note still errors when it
+  labels a **new** target, and reported as a drainable
+  `prose_retained_no_go_attribution` notice. The baseline sits beside the
+  scripts, not under `data/`, because that directory is restored wholesale from
+  origin/main before a science PR lands and a baseline there would have each
+  drain silently reverted.
+
+  A key that stops being reported surfaces as
+  `prose_retained_no_go_attribution_baseline_stale`. That notice is a **report,
+  not an instruction to prune** — it says only that the key was not reported on
+  this run. Three common reasons, of which one is a drain. **Drained:** the note
+  no longer makes the attribution (label gone, or rewritten so it no longer
+  asserts the grade); prune the key. **Dormant:** the attribution is still there
+  but the named target was promoted, so the token no longer overstates it; leave
+  the key, because pruning it would make an ordinary later demotion a new hard
+  error on unchanged prose. (No live row carries `retained_no_go` today — see
+  the `no_go_grade_path_unreached` notice — so this case is currently empty.)
+  **Rekeyed:** the citing note was renamed, so the old key goes quiet *and* the
+  label errors under its new path; update the key rather than pruning it.
+
+  That list is **not exhaustive**: anything that stops the detector yielding
+  that (note, target) pair silences the key the same way — the line gaining
+  ledger metadata and routing through the second rule instead, an edit that
+  inserts a hedge or breaks token/reference adjacency, an earlier reference on
+  the same line winning the one-report-per-token rule, either row leaving the
+  ledger, or the note becoming unreadable. Telling these apart mechanically
+  would need a source identifier that survives a rename and a liveness signal
+  independent of the target's current grade; neither exists yet, so shrink-only
+  is a reviewed convention here rather than a mechanical guarantee, and the
+  drainer reads the note before acting.
+- **An overstating status token asserted with ledger metadata** — an
+  `audit_date`, or an explicit "in the current audit ledger" / "per the ledger"
+  claim. That impersonates the ledger rather than paraphrasing it, and it is
+  exactly the form that outlives the verdict it quotes. No baseline: the ledger
+  is the ledger. A line whose quoted status currently **matches** the live row
+  is out of scope — it is equally a hand-copied snapshot, but erroring on it
+  would make the rule a ban on quoting the ledger at all, and it is not
+  measurably wrong today. Widening the rule to that population is a separate
+  reviewed change (measured 2026-07-27: 0 additional lines repo-wide).
+
+The repair in both cases is the same, and it is not to write a fresher status
+word. State the **cited content** and let `data/ledger/<id[:2]>/<id>.json`
+carry the grade.
+
+## Workflow
+
+### Mechanical phase (cron-able)
+
+```bash
+python3 docs/audit/scripts/run_citation_graph_build.py
+python3 docs/audit/scripts/seed_audit_ledger.py
+python3 docs/audit/scripts/classify_runner_passes.py   # optional, slow
+python3 docs/audit/scripts/compute_effective_status.py
+python3 docs/audit/scripts/audit_lint.py
+```
+
+This (a) keeps the graph in sync with the docs, (b) seeds new claim notes as
+`unaudited`, (c) classifies runner PASSes by check type, (d) recomputes
+`effective_status` everywhere, (e) lints for cycles, dangling citations, and
+inconsistent inheritance.
+
+### Audit phase (per claim, semi-automated)
+
+For each `unaudited` claim, an audit agent is spawned with
+`AUDIT_AGENT_PROMPT_TEMPLATE.md`. The agent receives only:
+
+- the source note,
+- the source note's directly cited authorities (one hop),
+- the rubric,
+- the runner's classification breakdown.
+
+The agent does **not** receive the broader publication framing or the
+publication-facing claim status. That is the "fresh look" requirement. The
+agent returns a fill of the audit row.
+
+Live primary and independent-helper stdout use a named 20,000-character
+per-section budget. Oversized output retains both its header and tail through
+deterministic head+tail clipping; the clipping marker remains load-bearing
+evidence, so an `audited_clean` verdict is still forbidden until the complete
+needed evidence fits. The overall prompt keeps its separate 1,000,000-character
+soft transport limit.
+
+If the primary runner is load-bearing but does not complete inside the
+current audit budget, the audit is not applied as `audited_conditional` or
+`audited_failed` for that reason alone. The loop records a local
+`compute_required` skip, or tooling records `audit_in_progress` with a
+compute blocker when supported, and then continues to the next ready row.
+Rows skipped this way need a completed run artifact, reduced deterministic
+runner, or proof-level replacement before re-audit.
+
+For every `audited_conditional` or `audited_renaming` result, the auditor
+must make the repair lane machine-sortable by prefixing
+`notes_for_re_audit_if_any` with one repair class:
+
+- `missing_dependency_edge` — a needed source note or authority exists or is
+  named, but is not wired as a direct dependency for the audited claim.
+- `dependency_not_retained` — a direct dependency exists but is not retained
+  grade.
+- `missing_bridge_theorem` — the claim needs a new theorem for a physical
+  carrier, readout, unit map, boundary condition, sector choice,
+  normalization, or observable bridge.
+- `scope_too_broad` — a clean bounded core exists, but the current claim scope
+  includes an unclosed extension.
+- `runner_artifact_issue` — a runner, log, classifier, threshold, import, or
+  pass/fail accounting problem blocks closure despite otherwise local scope.
+- `compute_required` — closure needs a completed long run, sliced runner,
+  cached certificate, or independent derivation.
+- `other` — none of the above fits; the note must state why.
+
+After the class, the auditor names the cheapest next repair action. Examples:
+add an explicit citation/dependency edge, audit a named dependency first,
+create/open a bridge theorem, split a clean bounded core from a conditional
+extension, or repair/slice a runner. The audit lane surfaces these repairs; it
+does not perform them unless explicitly asked.
+
+When the cheapest repair action is dependent-side (for example, narrowing
+downstream citing sentences to the audited scope), the named action must also
+include adding a dated downstream-hygiene line to the audited note's own
+boundary. Terminal rows re-enter the audit queue only through their own
+note/runner hash drift or a dispatcher sidecar; a dependent-side repair that
+never touches the stuck row itself satisfies the audit's condition without
+ever rescheduling the row for re-audit.
+
+For high-stakes claims (`criticality = critical` by transitive-descendant
+count; the audit lane does not use author-declared flagship status), a second independent
+agent runs the same audit; the two must agree before `audited_clean` lands.
+If two validator-clean, applyable audits disagree, the next step is a governed
+five-judge panel. Five fresh judges read the restricted source packet and both
+audit arguments, vote on the complete scientific tuple, and explain the error
+in any position they reject. At least three matching votes are required. No
+majority, a majority for neither, or an unapplyable majority launches another
+fresh five-judge panel with all prior outcomes in context. Contract-invalid
+seats are reseated before a panel; they are not scientific disagreements. The
+ledger keeps legacy `third_audit` storage fields for the representative panel
+judgment, but a single third auditor has no authority to resolve disagreement.
+The apply gate requires an invocation-bound `judicial_panel_record_v1` carrying
+five distinct valid votes, the current source/seat fingerprint, and a matching
+3-of-5 complete-tuple majority before it writes that legacy projection.
+
+### Pruning phase (per decoration cluster)
+
+When a claim is marked `audited_decoration`, the pruning policy
+(`ALGEBRAIC_DECORATION_POLICY.md`) decides whether it gets:
+
+- **Boxed** as a corollary inside its parent note, or
+- **Removed** if it adds no falsifiability and no compression.
+
+## Reading the publication package after audit
+
+External readers should read `effective_status`. The audit ledger is the
+canonical surface for claim strength.
+
+## What this lane is not
+
+- Not a physics result.
+- Not a replacement for peer review (it is the strongest internal check that
+  is feasible without external reviewers; external review remains the
+  separate, missing ingredient for actual disciplinary impact).
+- Not a re-derivation of the physics — the audit checks whether the existing
+  derivations close, not whether alternative derivations exist.
+
+## Two-Tier Assurance And Rolling Certification (2026-07-12, owner-approved)
+
+The lane runs two assurance tiers:
+
+- **Development tier (default).** Verdicts bind to claim content (note,
+  runner, and premise hashes) and survive unrelated repository growth. Every
+  audit still requires independent cross-family re-derivation at xhigh and
+  the two-pass cross-confirmation flow on critical rows. Wall-naming
+  positive/bounded rows apply the No-Go Discipline as auditor judgment, and
+  any supplied N1-N8 packet is validated structurally (no manifest-backed
+  containment, live-stdout, or full-universe disposition plumbing).
+- **Forensic tier.** Mandatory for `claim_type: no_go` rows and no-go-named
+  source files (foreclosure is permanent), and for freeze/certification runs
+  (`AUDIT_FORENSIC_MODE=1`),
+  which force the full heavyweight regime lane-wide against a pinned commit:
+  authenticated evidence transport, verbatim-contained route evidence, live
+  runner-stdout citation, and complete index dispositions with authenticated
+  omitted-tail summaries.
+
+**Rolling certification** replaces scheduled freezes: the pipeline
+continuously reports, per flagship lane
+(`docs/audit/data/lane_certification_config.json` →
+`docs/audit/data/lane_certification.json`), whether every configured scientific
+root claim and their combined transitive dependency closure are chain-satisfying
+against the current state. Retained-grade rows, decorations of retained parents,
+and registered accepted premises satisfy the marker; metadata does not.
+Certification is a state the repository re-enters as audit throughput
+catches up; a marker rolling back after an axiom or source change is the
+honest coordination signal for collaborators, not an error. If a publication
+or replication request ever needs a citable artifact, snapshot the lane's
+currently-certified commit and run the forensic tier over its closure there.
+Some configured roots intentionally name unresolved scientific `open_gate`
+obligations. Those lanes remain uncertified until source-level science retires
+or replaces the open root; audit throughput alone cannot certify an open gate,
+and substituting an already-retained surrogate would hide the live obligation.

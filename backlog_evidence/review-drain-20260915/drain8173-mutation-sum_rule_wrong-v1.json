@@ -1,0 +1,949 @@
+{
+  "status": "EXPECTED_MUTATION_REJECTION_OBSERVED; finite diagnostic only, not universal proof",
+  "mutation": "sum_rule_wrong",
+  "expected_family": "C",
+  "command": [
+    "/usr/local/bin/python3",
+    "-u",
+    "/private/tmp/review-drain-20260915/review-draft-slot/scripts/sphere_static_finite_volume_covariance_response_projected_mode_sum_check_2026_09_16.py",
+    "--mutation",
+    "sum_rule_wrong"
+  ],
+  "exit_code": 1,
+  "error": null,
+  "elapsed_seconds": 1.317238042014651,
+  "whole_tree_watchdog": {
+    "limit_seconds": 60,
+    "limit_bytes": 402653184,
+    "sampling_interval_seconds": 0.02,
+    "samples": 18,
+    "peak_tree_rss_bytes": 100974592,
+    "violations": [],
+    "scope": "External supervisor plus runner and descendants; sampled aggregate RSS, not OS hard reservation"
+  },
+  "before": {
+    "docs/SPHERE_STATIC_FINITE_VOLUME_GAUSSIAN_COVARIANCE_FIXED_AXIS_RESPONSE_AND_PROJECTED_MODE_SUM_BOUNDED_THEOREM_NOTE_2026-09-16.md": {
+      "sha256": "a73ca20d57b4d738084d43748f476da9c353d3f65d56d846ea7525bc93104f05",
+      "device": 16777231,
+      "inode": 252474222,
+      "size": 17677,
+      "mtime_ns": 1790136386432361228,
+      "ctime_ns": 1790136386432361228
+    },
+    "docs/work_history/review_loop/pr8173/README.md": {
+      "sha256": "33724294adedcce27ec90174e18f2986e9c56278d553cc5c06fe2eae8a0e8ade",
+      "device": 16777231,
+      "inode": 252474221,
+      "size": 1124,
+      "mtime_ns": 1790136257276239258,
+      "ctime_ns": 1790136257276252758
+    },
+    "docs/work_history/review_loop/pr8173/originals/01-APPROACH_REGISTRY.md.gz": {
+      "sha256": "857d09cef32234c520bd59d08411b449f5ac04b78d74378c448502592012ba29",
+      "device": 16777231,
+      "inode": 252474199,
+      "size": 958,
+      "mtime_ns": 1790136256910428480,
+      "ctime_ns": 1790136256910484854
+    },
+    "docs/work_history/review_loop/pr8173/originals/02-CHECKER_block29_findings.md.gz": {
+      "sha256": "2c638ede1b64b9d5423d79e97398efafcf2fdce83cb6afa524caf05110cead96",
+      "device": 16777231,
+      "inode": 252474200,
+      "size": 1396,
+      "mtime_ns": 1790136256927864836,
+      "ctime_ns": 1790136256927891002
+    },
+    "docs/work_history/review_loop/pr8173/originals/03-CLAIM_STATUS_CERTIFICATE_block29.md.gz": {
+      "sha256": "8ed5405e355813d9395b90cfdbd896c76262aac8a5a3b7a8b31a72731f9de888",
+      "device": 16777231,
+      "inode": 252474201,
+      "size": 1110,
+      "mtime_ns": 1790136256951215269,
+      "ctime_ns": 1790136256951281727
+    },
+    "docs/work_history/review_loop/pr8173/originals/04-GOAL_block29.md.gz": {
+      "sha256": "378a1fe8125abd4749ca4889b0fe8f331e514073621332dc88f643ff8bf98f39",
+      "device": 16777231,
+      "inode": 252474202,
+      "size": 1628,
+      "mtime_ns": 1790136256969754241,
+      "ctime_ns": 1790136256969789866
+    },
+    "docs/work_history/review_loop/pr8173/originals/05-HANDOFF.md.gz": {
+      "sha256": "199169ccf962e9fe4c4274b447793eb9074cf24ea4df3b8705c9de77234c14ce",
+      "device": 16777231,
+      "inode": 252474203,
+      "size": 4694,
+      "mtime_ns": 1790136256986421229,
+      "ctime_ns": 1790136256986447187
+    },
+    "docs/work_history/review_loop/pr8173/originals/06-OPPORTUNITY_QUEUE.md.gz": {
+      "sha256": "9f7b952ec26ecdb6b8917b4d6a8f90e9d214f4a91afc37f28da2f1a00ab96f23",
+      "device": 16777231,
+      "inode": 252474204,
+      "size": 4852,
+      "mtime_ns": 1790136257007937385,
+      "ctime_ns": 1790136257007994468
+    },
+    "docs/work_history/review_loop/pr8173/originals/07-RESULTS_block29.md.gz": {
+      "sha256": "54601c9c78b6854fff41f45211687701a74f939787a8dcb5671be0632b3d939d",
+      "device": 16777231,
+      "inode": 252474205,
+      "size": 2065,
+      "mtime_ns": 1790136257030187993,
+      "ctime_ns": 1790136257030238368
+    },
+    "docs/work_history/review_loop/pr8173/originals/08-REVIEW_HISTORY.md.gz": {
+      "sha256": "e2248333ffc2003d302581c24bb5821e7415189c2706daa67224c8f19e578fa2",
+      "device": 16777231,
+      "inode": 252474206,
+      "size": 19420,
+      "mtime_ns": 1790136257048891214,
+      "ctime_ns": 1790136257048917547
+    },
+    "docs/work_history/review_loop/pr8173/originals/09-STATE.yaml.gz": {
+      "sha256": "5ac09f19b043e9994f0d0171edb383996cb7e660f54d73eff7e7c22ea2627063",
+      "device": 16777231,
+      "inode": 252474207,
+      "size": 6087,
+      "mtime_ns": 1790136257066168822,
+      "ctime_ns": 1790136257066218988
+    },
+    "docs/work_history/review_loop/pr8173/originals/10-TRACE_GATE.md.gz": {
+      "sha256": "c6b7406443a249e7c9f1fbe883a83e3e7d75a776f94c3d2994252e785e6d1ed2",
+      "device": 16777231,
+      "inode": 252474208,
+      "size": 1637,
+      "mtime_ns": 1790136257082433438,
+      "ctime_ns": 1790136257082458438
+    },
+    "docs/work_history/review_loop/pr8173/originals/11-supervisor_control_block29_exact.out.txt.gz": {
+      "sha256": "8b27327e129541631721fe0f4e0bb92eb1c77453fd1886de8369c1da77eb1f55",
+      "device": 16777231,
+      "inode": 252474209,
+      "size": 237,
+      "mtime_ns": 1790136257097621188,
+      "ctime_ns": 1790136257097670646
+    },
+    "docs/work_history/review_loop/pr8173/originals/12-supervisor_control_block29_exact.py.gz": {
+      "sha256": "d46232eaca14d0dc92f7f51eb2432771a8ea15054953fca893047470262b4754",
+      "device": 16777231,
+      "inode": 252474210,
+      "size": 1217,
+      "mtime_ns": 1790136257116621406,
+      "ctime_ns": 1790136257116664948
+    },
+    "docs/work_history/review_loop/pr8173/originals/13-supervisor_control_block29_kernel.out.txt.gz": {
+      "sha256": "7394155c39ccd6233e938dc2a2f913ce081686e3ace1e78ecb4ed025747cb821",
+      "device": 16777231,
+      "inode": 252474211,
+      "size": 852,
+      "mtime_ns": 1790136257133152270,
+      "ctime_ns": 1790136257133206145
+    },
+    "docs/work_history/review_loop/pr8173/originals/14-supervisor_control_block29_kernel.py.gz": {
+      "sha256": "aa07f0258de983d20a07a41015900f53078af1f683f29c3b2e4cace9942ceaf7",
+      "device": 16777231,
+      "inode": 252474212,
+      "size": 1401,
+      "mtime_ns": 1790136257150441003,
+      "ctime_ns": 1790136257150466169
+    },
+    "docs/work_history/review_loop/pr8173/originals/15-supervisor_control_block29_refuter.out.txt.gz": {
+      "sha256": "f4ada474e66f7a8c5a05ce98710e0412962b23380f2d00314167f607169e9f96",
+      "device": 16777231,
+      "inode": 252474213,
+      "size": 438,
+      "mtime_ns": 1790136257168494438,
+      "ctime_ns": 1790136257168564354
+    },
+    "docs/work_history/review_loop/pr8173/originals/16-supervisor_control_block29_refuter.py.gz": {
+      "sha256": "77c4a78d30833aa44c7c089a3019ba0dd5704f0e810e23ae5fd3a2f26f93dee7",
+      "device": 16777231,
+      "inode": 252474214,
+      "size": 1804,
+      "mtime_ns": 1790136257186278124,
+      "ctime_ns": 1790136257186302582
+    },
+    "docs/work_history/review_loop/pr8173/originals/17-ADMISSIBILITY_RULE_TRANSVERSE_KERNEL_NORMALIZATION_IN_THE_ORDERED_SPHERE_STATIC_LAW_MEASURED_BETWEEN_THE_BOUNDS_WITH_THE_TRANSVERSE_SUM_RULE_AND_THE_SPIN_WAVE_REFERENCE_BOUNDED_THEOREM_NOTE_2026-09-16.md.gz": {
+      "sha256": "c9e103ad9136141775b33773d4f51d30eedfe195920bba15322b8a9ead2bcf28",
+      "device": 16777231,
+      "inode": 252474215,
+      "size": 8920,
+      "mtime_ns": 1790136257203257984,
+      "ctime_ns": 1790136257203314984
+    },
+    "docs/work_history/review_loop/pr8173/originals/18-citation_graph_manifest.json.gz": {
+      "sha256": "2abec2b944c759ec88868f40652699ef9454a34415b94e463723f4d86806fda8",
+      "device": 16777231,
+      "inode": 252474216,
+      "size": 128207,
+      "mtime_ns": 1790136257242373371,
+      "ctime_ns": 1790136257242403787
+    },
+    "docs/work_history/review_loop/pr8173/originals/19-admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.txt.gz": {
+      "sha256": "f3868586fdec6e47545fd4f2f0c66950f8dce8cc234c0a4108c28d8130af7380",
+      "device": 16777231,
+      "inode": 252474217,
+      "size": 1702,
+      "mtime_ns": 1790136257259755436,
+      "ctime_ns": 1790136257259820185
+    },
+    "docs/work_history/review_loop/pr8173/originals/20-admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.py.gz": {
+      "sha256": "b92a1afb616f83b1e19068aa751fb8386ca2f306238dad7d4d0fb4f07123323e",
+      "device": 16777231,
+      "inode": 252474218,
+      "size": 5923,
+      "mtime_ns": 1790136257275716929,
+      "ctime_ns": 1790136257275745429
+    },
+    "docs/work_history/review_loop/pr8173/pr8173-original-manifest.json": {
+      "sha256": "73153da44fb0d4b53229c976e5e6aba77a6f471b51cb1e2c3a2e4feda0b89186",
+      "device": 16777231,
+      "inode": 252474219,
+      "size": 15518,
+      "mtime_ns": 1790136257275992677,
+      "ctime_ns": 1790136257276009594
+    },
+    "docs/work_history/review_loop/pr8173/pr8173-original-note-and-measurement-corrections.txt": {
+      "sha256": "896e6b6840c46861084116f9c26c988b48776a6e561d86813d707880d7aa04c0",
+      "device": 16777231,
+      "inode": 252474220,
+      "size": 26308,
+      "mtime_ns": 1790136257276165051,
+      "ctime_ns": 1790136257276180675
+    },
+    "scripts/sphere_static_finite_volume_covariance_response_projected_mode_sum_check_2026_09_16.py": {
+      "sha256": "54441f119d85ebc62de0127366305e8b9871592b33f064f0c0f4d633fdb13682",
+      "device": 16777231,
+      "inode": 252474223,
+      "size": 15356,
+      "mtime_ns": 1790136386432496727,
+      "ctime_ns": 1790136386432496727
+    },
+    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md": {
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "device": 16777231,
+      "inode": 244188469,
+      "size": 45923,
+      "mtime_ns": 1790110816258258156,
+      "ctime_ns": 1790110816258258156
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "device": 16777231,
+      "inode": 244190583,
+      "size": 11333,
+      "mtime_ns": 1790110816510588403,
+      "ctime_ns": 1790110816510588403
+    },
+    "docs/ADMISSIBILITY_RULE_CUBIC_WALK_RETURN_SUM_AND_SPHERE_STATIC_MAGNETIZATION_SUFFICIENT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "sha256": "4007d47a15efe7ba10159ea268cbae4ddd1b5420c6b5fcbd6a88e6917aba2ac2",
+      "device": 16777231,
+      "inode": 252308514,
+      "size": 14900,
+      "mtime_ns": 1790135747920625463,
+      "ctime_ns": 1790135747920625463
+    },
+    "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_ZERO_FIELD_COMPONENT_FOURIER_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "sha256": "dfac044b35160d3c5a1cb1bd5a20707f0ae9695623d0b8641f099060420a421b",
+      "device": 16777231,
+      "inode": 252308524,
+      "size": 21293,
+      "mtime_ns": 1790135747924980065,
+      "ctime_ns": 1790135747924980065
+    },
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": {
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "device": 16777231,
+      "inode": 244190111,
+      "size": 4770,
+      "mtime_ns": 1790110816450341213,
+      "ctime_ns": 1790110816450341213
+    },
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "device": 16777231,
+      "inode": 244191366,
+      "size": 5313,
+      "mtime_ns": 1790110816613163842,
+      "ctime_ns": 1790110816613163842
+    },
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": {
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "device": 16777231,
+      "inode": 244191547,
+      "size": 2581,
+      "mtime_ns": 1790110816635067945,
+      "ctime_ns": 1790110816635067945
+    },
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": {
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "device": 16777231,
+      "inode": 244192495,
+      "size": 6427,
+      "mtime_ns": 1790110816767776936,
+      "ctime_ns": 1790110816767776936
+    },
+    "docs/ai_methodology/skills/review-loop/PREFLIGHT.md": {
+      "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb",
+      "device": 16777231,
+      "inode": 244192540,
+      "size": 8247,
+      "mtime_ns": 1790110816774010556,
+      "ctime_ns": 1790110816774010556
+    },
+    "docs/ai_methodology/skills/review-loop/SKILL.md": {
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+      "device": 16777231,
+      "inode": 252308620,
+      "size": 19430,
+      "mtime_ns": 1790135747951635279,
+      "ctime_ns": 1790135747951635279
+    },
+    "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md": {
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "device": 16777231,
+      "inode": 252308621,
+      "size": 23216,
+      "mtime_ns": 1790135747951747900,
+      "ctime_ns": 1790135747951747900
+    },
+    "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md": {
+      "sha256": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4",
+      "device": 16777231,
+      "inode": 252308622,
+      "size": 3829,
+      "mtime_ns": 1790135747951811480,
+      "ctime_ns": 1790135747951811480
+    },
+    "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md": {
+      "sha256": "bbdb794f3925b1a473db22a94eeaa4d0b6be5e302f6dc1463c27306738b731b3",
+      "device": 16777231,
+      "inode": 252308623,
+      "size": 6707,
+      "mtime_ns": 1790135747951887060,
+      "ctime_ns": 1790135747951887060
+    },
+    "docs/ai_methodology/skills/review-loop/references/LANDING.md": {
+      "sha256": "827032765af31a2f4ef64b3e595173c7e81e2f56b713793aba336228411a4624",
+      "device": 16777231,
+      "inode": 252308624,
+      "size": 28160,
+      "mtime_ns": 1790135747951992847,
+      "ctime_ns": 1790135747951992847
+    },
+    "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md": {
+      "sha256": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096",
+      "device": 16777231,
+      "inode": 252308625,
+      "size": 6185,
+      "mtime_ns": 1790135747952185047,
+      "ctime_ns": 1790135747952185047
+    },
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md": {
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "device": 16777231,
+      "inode": 252308626,
+      "size": 5188,
+      "mtime_ns": 1790135747952250336,
+      "ctime_ns": 1790135747952250336
+    },
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md": {
+      "sha256": "cfcb43f40791d8e8772e86fd2b53fb11008c5075e416f8cf4eb84bd18ab71773",
+      "device": 16777231,
+      "inode": 252308627,
+      "size": 10211,
+      "mtime_ns": 1790135747952316875,
+      "ctime_ns": 1790135747952316875
+    },
+    "docs/ai_methodology/skills/review-loop/references/SALVAGE.md": {
+      "sha256": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee",
+      "device": 16777231,
+      "inode": 252308628,
+      "size": 5009,
+      "mtime_ns": 1790135747953767853,
+      "ctime_ns": 1790135747953767853
+    },
+    "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md": {
+      "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7",
+      "device": 16777231,
+      "inode": 252308629,
+      "size": 12918,
+      "mtime_ns": 1790135747953871099,
+      "ctime_ns": 1790135747953871099
+    },
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": {
+      "sha256": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d",
+      "device": 16777231,
+      "inode": 252308630,
+      "size": 14219,
+      "mtime_ns": 1790135747956734099,
+      "ctime_ns": 1790135747956734099
+    },
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": {
+      "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc",
+      "device": 16777231,
+      "inode": 252308631,
+      "size": 24983,
+      "mtime_ns": 1790135747957207578,
+      "ctime_ns": 1790135747957207578
+    },
+    "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py": {
+      "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494",
+      "device": 16777231,
+      "inode": 244192557,
+      "size": 15405,
+      "mtime_ns": 1790110816779616926,
+      "ctime_ns": 1790110816779616926
+    },
+    "docs/audit/data/axiom_premise_nodes.json": {
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "device": 16777231,
+      "inode": 244192608,
+      "size": 6416,
+      "mtime_ns": 1790110816790503081,
+      "ctime_ns": 1790110816790503081
+    },
+    "docs/audit/data/doc_authority_registry.json": {
+      "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173",
+      "device": 16777231,
+      "inode": 244192624,
+      "size": 6052,
+      "mtime_ns": 1790110816804886900,
+      "ctime_ns": 1790110816804886900
+    },
+    "docs/audit/scripts/build_citation_graph.py": {
+      "sha256": "b2117b565aa795e67cd62d0f49f89cf2ed83a14d9d3447c1600ee0bf9c0ba8c5",
+      "device": 16777231,
+      "inode": 252308643,
+      "size": 74385,
+      "mtime_ns": 1790135747972826024,
+      "ctime_ns": 1790135747972826024
+    },
+    "docs/audit/scripts/ledger_io.py": {
+      "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+      "device": 16777231,
+      "inode": 244197792,
+      "size": 12227,
+      "mtime_ns": 1790110817723780436,
+      "ctime_ns": 1790110817723780436
+    },
+    "docs/audit/scripts/static_pipeline_checkpoint.py": {
+      "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+      "device": 16777231,
+      "inode": 244197814,
+      "size": 28870,
+      "mtime_ns": 1790110817730902429,
+      "ctime_ns": 1790110817730902429
+    },
+    "scripts/audit_packet_script_deps.py": {
+      "sha256": "38210e23dbe9d703552c0381a3719b2a9a1551004028e0d64714da1bee3ddd8d",
+      "device": 16777231,
+      "inode": 252317200,
+      "size": 39496,
+      "mtime_ns": 1790135749615028093,
+      "ctime_ns": 1790135749615028093
+    },
+    "scripts/runner_cache.py": {
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "device": 16777231,
+      "inode": 244247644,
+      "size": 24941,
+      "mtime_ns": 1790110825405943560,
+      "ctime_ns": 1790110825405943560
+    },
+    "logs/runner-cache/sphere_static_finite_volume_covariance_response_projected_mode_sum_check_2026_09_16.txt": {
+      "sha256": "5c239ec1b43954a92b4e836065022b85fba84859b04f7fdfb28e1cc021798252",
+      "device": 16777231,
+      "inode": 252482621,
+      "size": 3129,
+      "mtime_ns": 1790137848778218935,
+      "ctime_ns": 1790137848778218935
+    }
+  },
+  "after": {
+    "docs/SPHERE_STATIC_FINITE_VOLUME_GAUSSIAN_COVARIANCE_FIXED_AXIS_RESPONSE_AND_PROJECTED_MODE_SUM_BOUNDED_THEOREM_NOTE_2026-09-16.md": {
+      "sha256": "a73ca20d57b4d738084d43748f476da9c353d3f65d56d846ea7525bc93104f05",
+      "device": 16777231,
+      "inode": 252474222,
+      "size": 17677,
+      "mtime_ns": 1790136386432361228,
+      "ctime_ns": 1790136386432361228
+    },
+    "docs/work_history/review_loop/pr8173/README.md": {
+      "sha256": "33724294adedcce27ec90174e18f2986e9c56278d553cc5c06fe2eae8a0e8ade",
+      "device": 16777231,
+      "inode": 252474221,
+      "size": 1124,
+      "mtime_ns": 1790136257276239258,
+      "ctime_ns": 1790136257276252758
+    },
+    "docs/work_history/review_loop/pr8173/originals/01-APPROACH_REGISTRY.md.gz": {
+      "sha256": "857d09cef32234c520bd59d08411b449f5ac04b78d74378c448502592012ba29",
+      "device": 16777231,
+      "inode": 252474199,
+      "size": 958,
+      "mtime_ns": 1790136256910428480,
+      "ctime_ns": 1790136256910484854
+    },
+    "docs/work_history/review_loop/pr8173/originals/02-CHECKER_block29_findings.md.gz": {
+      "sha256": "2c638ede1b64b9d5423d79e97398efafcf2fdce83cb6afa524caf05110cead96",
+      "device": 16777231,
+      "inode": 252474200,
+      "size": 1396,
+      "mtime_ns": 1790136256927864836,
+      "ctime_ns": 1790136256927891002
+    },
+    "docs/work_history/review_loop/pr8173/originals/03-CLAIM_STATUS_CERTIFICATE_block29.md.gz": {
+      "sha256": "8ed5405e355813d9395b90cfdbd896c76262aac8a5a3b7a8b31a72731f9de888",
+      "device": 16777231,
+      "inode": 252474201,
+      "size": 1110,
+      "mtime_ns": 1790136256951215269,
+      "ctime_ns": 1790136256951281727
+    },
+    "docs/work_history/review_loop/pr8173/originals/04-GOAL_block29.md.gz": {
+      "sha256": "378a1fe8125abd4749ca4889b0fe8f331e514073621332dc88f643ff8bf98f39",
+      "device": 16777231,
+      "inode": 252474202,
+      "size": 1628,
+      "mtime_ns": 1790136256969754241,
+      "ctime_ns": 1790136256969789866
+    },
+    "docs/work_history/review_loop/pr8173/originals/05-HANDOFF.md.gz": {
+      "sha256": "199169ccf962e9fe4c4274b447793eb9074cf24ea4df3b8705c9de77234c14ce",
+      "device": 16777231,
+      "inode": 252474203,
+      "size": 4694,
+      "mtime_ns": 1790136256986421229,
+      "ctime_ns": 1790136256986447187
+    },
+    "docs/work_history/review_loop/pr8173/originals/06-OPPORTUNITY_QUEUE.md.gz": {
+      "sha256": "9f7b952ec26ecdb6b8917b4d6a8f90e9d214f4a91afc37f28da2f1a00ab96f23",
+      "device": 16777231,
+      "inode": 252474204,
+      "size": 4852,
+      "mtime_ns": 1790136257007937385,
+      "ctime_ns": 1790136257007994468
+    },
+    "docs/work_history/review_loop/pr8173/originals/07-RESULTS_block29.md.gz": {
+      "sha256": "54601c9c78b6854fff41f45211687701a74f939787a8dcb5671be0632b3d939d",
+      "device": 16777231,
+      "inode": 252474205,
+      "size": 2065,
+      "mtime_ns": 1790136257030187993,
+      "ctime_ns": 1790136257030238368
+    },
+    "docs/work_history/review_loop/pr8173/originals/08-REVIEW_HISTORY.md.gz": {
+      "sha256": "e2248333ffc2003d302581c24bb5821e7415189c2706daa67224c8f19e578fa2",
+      "device": 16777231,
+      "inode": 252474206,
+      "size": 19420,
+      "mtime_ns": 1790136257048891214,
+      "ctime_ns": 1790136257048917547
+    },
+    "docs/work_history/review_loop/pr8173/originals/09-STATE.yaml.gz": {
+      "sha256": "5ac09f19b043e9994f0d0171edb383996cb7e660f54d73eff7e7c22ea2627063",
+      "device": 16777231,
+      "inode": 252474207,
+      "size": 6087,
+      "mtime_ns": 1790136257066168822,
+      "ctime_ns": 1790136257066218988
+    },
+    "docs/work_history/review_loop/pr8173/originals/10-TRACE_GATE.md.gz": {
+      "sha256": "c6b7406443a249e7c9f1fbe883a83e3e7d75a776f94c3d2994252e785e6d1ed2",
+      "device": 16777231,
+      "inode": 252474208,
+      "size": 1637,
+      "mtime_ns": 1790136257082433438,
+      "ctime_ns": 1790136257082458438
+    },
+    "docs/work_history/review_loop/pr8173/originals/11-supervisor_control_block29_exact.out.txt.gz": {
+      "sha256": "8b27327e129541631721fe0f4e0bb92eb1c77453fd1886de8369c1da77eb1f55",
+      "device": 16777231,
+      "inode": 252474209,
+      "size": 237,
+      "mtime_ns": 1790136257097621188,
+      "ctime_ns": 1790136257097670646
+    },
+    "docs/work_history/review_loop/pr8173/originals/12-supervisor_control_block29_exact.py.gz": {
+      "sha256": "d46232eaca14d0dc92f7f51eb2432771a8ea15054953fca893047470262b4754",
+      "device": 16777231,
+      "inode": 252474210,
+      "size": 1217,
+      "mtime_ns": 1790136257116621406,
+      "ctime_ns": 1790136257116664948
+    },
+    "docs/work_history/review_loop/pr8173/originals/13-supervisor_control_block29_kernel.out.txt.gz": {
+      "sha256": "7394155c39ccd6233e938dc2a2f913ce081686e3ace1e78ecb4ed025747cb821",
+      "device": 16777231,
+      "inode": 252474211,
+      "size": 852,
+      "mtime_ns": 1790136257133152270,
+      "ctime_ns": 1790136257133206145
+    },
+    "docs/work_history/review_loop/pr8173/originals/14-supervisor_control_block29_kernel.py.gz": {
+      "sha256": "aa07f0258de983d20a07a41015900f53078af1f683f29c3b2e4cace9942ceaf7",
+      "device": 16777231,
+      "inode": 252474212,
+      "size": 1401,
+      "mtime_ns": 1790136257150441003,
+      "ctime_ns": 1790136257150466169
+    },
+    "docs/work_history/review_loop/pr8173/originals/15-supervisor_control_block29_refuter.out.txt.gz": {
+      "sha256": "f4ada474e66f7a8c5a05ce98710e0412962b23380f2d00314167f607169e9f96",
+      "device": 16777231,
+      "inode": 252474213,
+      "size": 438,
+      "mtime_ns": 1790136257168494438,
+      "ctime_ns": 1790136257168564354
+    },
+    "docs/work_history/review_loop/pr8173/originals/16-supervisor_control_block29_refuter.py.gz": {
+      "sha256": "77c4a78d30833aa44c7c089a3019ba0dd5704f0e810e23ae5fd3a2f26f93dee7",
+      "device": 16777231,
+      "inode": 252474214,
+      "size": 1804,
+      "mtime_ns": 1790136257186278124,
+      "ctime_ns": 1790136257186302582
+    },
+    "docs/work_history/review_loop/pr8173/originals/17-ADMISSIBILITY_RULE_TRANSVERSE_KERNEL_NORMALIZATION_IN_THE_ORDERED_SPHERE_STATIC_LAW_MEASURED_BETWEEN_THE_BOUNDS_WITH_THE_TRANSVERSE_SUM_RULE_AND_THE_SPIN_WAVE_REFERENCE_BOUNDED_THEOREM_NOTE_2026-09-16.md.gz": {
+      "sha256": "c9e103ad9136141775b33773d4f51d30eedfe195920bba15322b8a9ead2bcf28",
+      "device": 16777231,
+      "inode": 252474215,
+      "size": 8920,
+      "mtime_ns": 1790136257203257984,
+      "ctime_ns": 1790136257203314984
+    },
+    "docs/work_history/review_loop/pr8173/originals/18-citation_graph_manifest.json.gz": {
+      "sha256": "2abec2b944c759ec88868f40652699ef9454a34415b94e463723f4d86806fda8",
+      "device": 16777231,
+      "inode": 252474216,
+      "size": 128207,
+      "mtime_ns": 1790136257242373371,
+      "ctime_ns": 1790136257242403787
+    },
+    "docs/work_history/review_loop/pr8173/originals/19-admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.txt.gz": {
+      "sha256": "f3868586fdec6e47545fd4f2f0c66950f8dce8cc234c0a4108c28d8130af7380",
+      "device": 16777231,
+      "inode": 252474217,
+      "size": 1702,
+      "mtime_ns": 1790136257259755436,
+      "ctime_ns": 1790136257259820185
+    },
+    "docs/work_history/review_loop/pr8173/originals/20-admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.py.gz": {
+      "sha256": "b92a1afb616f83b1e19068aa751fb8386ca2f306238dad7d4d0fb4f07123323e",
+      "device": 16777231,
+      "inode": 252474218,
+      "size": 5923,
+      "mtime_ns": 1790136257275716929,
+      "ctime_ns": 1790136257275745429
+    },
+    "docs/work_history/review_loop/pr8173/pr8173-original-manifest.json": {
+      "sha256": "73153da44fb0d4b53229c976e5e6aba77a6f471b51cb1e2c3a2e4feda0b89186",
+      "device": 16777231,
+      "inode": 252474219,
+      "size": 15518,
+      "mtime_ns": 1790136257275992677,
+      "ctime_ns": 1790136257276009594
+    },
+    "docs/work_history/review_loop/pr8173/pr8173-original-note-and-measurement-corrections.txt": {
+      "sha256": "896e6b6840c46861084116f9c26c988b48776a6e561d86813d707880d7aa04c0",
+      "device": 16777231,
+      "inode": 252474220,
+      "size": 26308,
+      "mtime_ns": 1790136257276165051,
+      "ctime_ns": 1790136257276180675
+    },
+    "scripts/sphere_static_finite_volume_covariance_response_projected_mode_sum_check_2026_09_16.py": {
+      "sha256": "54441f119d85ebc62de0127366305e8b9871592b33f064f0c0f4d633fdb13682",
+      "device": 16777231,
+      "inode": 252474223,
+      "size": 15356,
+      "mtime_ns": 1790136386432496727,
+      "ctime_ns": 1790136386432496727
+    },
+    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md": {
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "device": 16777231,
+      "inode": 244188469,
+      "size": 45923,
+      "mtime_ns": 1790110816258258156,
+      "ctime_ns": 1790110816258258156
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "device": 16777231,
+      "inode": 244190583,
+      "size": 11333,
+      "mtime_ns": 1790110816510588403,
+      "ctime_ns": 1790110816510588403
+    },
+    "docs/ADMISSIBILITY_RULE_CUBIC_WALK_RETURN_SUM_AND_SPHERE_STATIC_MAGNETIZATION_SUFFICIENT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "sha256": "4007d47a15efe7ba10159ea268cbae4ddd1b5420c6b5fcbd6a88e6917aba2ac2",
+      "device": 16777231,
+      "inode": 252308514,
+      "size": 14900,
+      "mtime_ns": 1790135747920625463,
+      "ctime_ns": 1790135747920625463
+    },
+    "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_ZERO_FIELD_COMPONENT_FOURIER_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "sha256": "dfac044b35160d3c5a1cb1bd5a20707f0ae9695623d0b8641f099060420a421b",
+      "device": 16777231,
+      "inode": 252308524,
+      "size": 21293,
+      "mtime_ns": 1790135747924980065,
+      "ctime_ns": 1790135747924980065
+    },
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": {
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "device": 16777231,
+      "inode": 244190111,
+      "size": 4770,
+      "mtime_ns": 1790110816450341213,
+      "ctime_ns": 1790110816450341213
+    },
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "device": 16777231,
+      "inode": 244191366,
+      "size": 5313,
+      "mtime_ns": 1790110816613163842,
+      "ctime_ns": 1790110816613163842
+    },
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": {
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "device": 16777231,
+      "inode": 244191547,
+      "size": 2581,
+      "mtime_ns": 1790110816635067945,
+      "ctime_ns": 1790110816635067945
+    },
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": {
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "device": 16777231,
+      "inode": 244192495,
+      "size": 6427,
+      "mtime_ns": 1790110816767776936,
+      "ctime_ns": 1790110816767776936
+    },
+    "docs/ai_methodology/skills/review-loop/PREFLIGHT.md": {
+      "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb",
+      "device": 16777231,
+      "inode": 244192540,
+      "size": 8247,
+      "mtime_ns": 1790110816774010556,
+      "ctime_ns": 1790110816774010556
+    },
+    "docs/ai_methodology/skills/review-loop/SKILL.md": {
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+      "device": 16777231,
+      "inode": 252308620,
+      "size": 19430,
+      "mtime_ns": 1790135747951635279,
+      "ctime_ns": 1790135747951635279
+    },
+    "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md": {
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "device": 16777231,
+      "inode": 252308621,
+      "size": 23216,
+      "mtime_ns": 1790135747951747900,
+      "ctime_ns": 1790135747951747900
+    },
+    "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md": {
+      "sha256": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4",
+      "device": 16777231,
+      "inode": 252308622,
+      "size": 3829,
+      "mtime_ns": 1790135747951811480,
+      "ctime_ns": 1790135747951811480
+    },
+    "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md": {
+      "sha256": "bbdb794f3925b1a473db22a94eeaa4d0b6be5e302f6dc1463c27306738b731b3",
+      "device": 16777231,
+      "inode": 252308623,
+      "size": 6707,
+      "mtime_ns": 1790135747951887060,
+      "ctime_ns": 1790135747951887060
+    },
+    "docs/ai_methodology/skills/review-loop/references/LANDING.md": {
+      "sha256": "827032765af31a2f4ef64b3e595173c7e81e2f56b713793aba336228411a4624",
+      "device": 16777231,
+      "inode": 252308624,
+      "size": 28160,
+      "mtime_ns": 1790135747951992847,
+      "ctime_ns": 1790135747951992847
+    },
+    "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md": {
+      "sha256": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096",
+      "device": 16777231,
+      "inode": 252308625,
+      "size": 6185,
+      "mtime_ns": 1790135747952185047,
+      "ctime_ns": 1790135747952185047
+    },
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md": {
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "device": 16777231,
+      "inode": 252308626,
+      "size": 5188,
+      "mtime_ns": 1790135747952250336,
+      "ctime_ns": 1790135747952250336
+    },
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md": {
+      "sha256": "cfcb43f40791d8e8772e86fd2b53fb11008c5075e416f8cf4eb84bd18ab71773",
+      "device": 16777231,
+      "inode": 252308627,
+      "size": 10211,
+      "mtime_ns": 1790135747952316875,
+      "ctime_ns": 1790135747952316875
+    },
+    "docs/ai_methodology/skills/review-loop/references/SALVAGE.md": {
+      "sha256": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee",
+      "device": 16777231,
+      "inode": 252308628,
+      "size": 5009,
+      "mtime_ns": 1790135747953767853,
+      "ctime_ns": 1790135747953767853
+    },
+    "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md": {
+      "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7",
+      "device": 16777231,
+      "inode": 252308629,
+      "size": 12918,
+      "mtime_ns": 1790135747953871099,
+      "ctime_ns": 1790135747953871099
+    },
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": {
+      "sha256": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d",
+      "device": 16777231,
+      "inode": 252308630,
+      "size": 14219,
+      "mtime_ns": 1790135747956734099,
+      "ctime_ns": 1790135747956734099
+    },
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": {
+      "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc",
+      "device": 16777231,
+      "inode": 252308631,
+      "size": 24983,
+      "mtime_ns": 1790135747957207578,
+      "ctime_ns": 1790135747957207578
+    },
+    "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py": {
+      "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494",
+      "device": 16777231,
+      "inode": 244192557,
+      "size": 15405,
+      "mtime_ns": 1790110816779616926,
+      "ctime_ns": 1790110816779616926
+    },
+    "docs/audit/data/axiom_premise_nodes.json": {
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "device": 16777231,
+      "inode": 244192608,
+      "size": 6416,
+      "mtime_ns": 1790110816790503081,
+      "ctime_ns": 1790110816790503081
+    },
+    "docs/audit/data/doc_authority_registry.json": {
+      "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173",
+      "device": 16777231,
+      "inode": 244192624,
+      "size": 6052,
+      "mtime_ns": 1790110816804886900,
+      "ctime_ns": 1790110816804886900
+    },
+    "docs/audit/scripts/build_citation_graph.py": {
+      "sha256": "b2117b565aa795e67cd62d0f49f89cf2ed83a14d9d3447c1600ee0bf9c0ba8c5",
+      "device": 16777231,
+      "inode": 252308643,
+      "size": 74385,
+      "mtime_ns": 1790135747972826024,
+      "ctime_ns": 1790135747972826024
+    },
+    "docs/audit/scripts/ledger_io.py": {
+      "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+      "device": 16777231,
+      "inode": 244197792,
+      "size": 12227,
+      "mtime_ns": 1790110817723780436,
+      "ctime_ns": 1790110817723780436
+    },
+    "docs/audit/scripts/static_pipeline_checkpoint.py": {
+      "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+      "device": 16777231,
+      "inode": 244197814,
+      "size": 28870,
+      "mtime_ns": 1790110817730902429,
+      "ctime_ns": 1790110817730902429
+    },
+    "scripts/audit_packet_script_deps.py": {
+      "sha256": "38210e23dbe9d703552c0381a3719b2a9a1551004028e0d64714da1bee3ddd8d",
+      "device": 16777231,
+      "inode": 252317200,
+      "size": 39496,
+      "mtime_ns": 1790135749615028093,
+      "ctime_ns": 1790135749615028093
+    },
+    "scripts/runner_cache.py": {
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "device": 16777231,
+      "inode": 244247644,
+      "size": 24941,
+      "mtime_ns": 1790110825405943560,
+      "ctime_ns": 1790110825405943560
+    },
+    "logs/runner-cache/sphere_static_finite_volume_covariance_response_projected_mode_sum_check_2026_09_16.txt": {
+      "sha256": "5c239ec1b43954a92b4e836065022b85fba84859b04f7fdfb28e1cc021798252",
+      "device": 16777231,
+      "inode": 252482621,
+      "size": 3129,
+      "mtime_ns": 1790137848778218935,
+      "ctime_ns": 1790137848778218935
+    }
+  },
+  "structured_result": {
+    "parsed_stdout": true,
+    "failed_tags": [
+      "C1"
+    ],
+    "expected_failed_tags": [
+      "C1"
+    ],
+    "completed_checks": 14,
+    "passed": 13,
+    "failed": 1
+  },
+  "artifacts": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-mutation-sum_rule_wrong-v1.stdout.txt",
+      "sha256": "21ecd71ef693c05ed81fcb099fe5fd3a2addbece5b6f2ecb0899849a6fd6e009"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-mutation-sum_rule_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "primary_receipt": {
+    "path": "/private/tmp/review-drain-20260915/drain8173-execution-v2.json",
+    "sha256": "d839f3f6156b0d4d58ab8664a1fa948f7e7b39eb939f5e33cd8ef5e857bd446c"
+  },
+  "record": {
+    "path": "/private/tmp/review-drain-20260915/drain8173-author-unit-draft-v1.json",
+    "sha256": "1fc8ad873caf277a1b1842867730fef0b2a203f6406492260f1edb4b0eade1ca"
+  },
+  "cold": {
+    "path": "/private/tmp/review-drain-20260915/drain8173-cold-review-v1.json",
+    "sha256": "bac7fd67ae26ccc43049d4845c0fc3bd80a6007016eb5e4f3c8782f1e80faf4b"
+  },
+  "adapter": {
+    "path": "/private/tmp/review-drain-20260915/drain8173-mutation-capture-v2.py",
+    "sha256": "5642cdd03810c93ba55865df3eee1db8ff5b127c8f256e622b65ef20231f8f73"
+  },
+  "baseline_runs": 0,
+  "mutation_attempts": 1,
+  "simulation_runs": 0
+}

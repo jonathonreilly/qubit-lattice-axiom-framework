@@ -1,0 +1,20 @@
+{
+  "handoff_verified": true,
+  "source_files": 25,
+  "original_payloads_verified": 20,
+  "readable_note_exact": true,
+  "mathematical_AST_equal_ignoring_report_strings": {
+    "family_b": true,
+    "family_c": true,
+    "family_d": true
+  },
+  "runtime_pins_verified": {
+    "docs/SPHERE_STATIC_FINITE_VOLUME_GAUSSIAN_COVARIANCE_FIXED_AXIS_RESPONSE_AND_PROJECTED_MODE_SUM_BOUNDED_THEOREM_NOTE_2026-09-16.md": "a73ca20d57b4d738084d43748f476da9c353d3f65d56d846ea7525bc93104f05",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+  },
+  "current_main": "6332b12b59c83c5b08cc7b4ad90898cb6666050d",
+  "current_main_paths_changed": 47,
+  "runtime_input_intersection": [],
+  "primary_runs": 0
+}

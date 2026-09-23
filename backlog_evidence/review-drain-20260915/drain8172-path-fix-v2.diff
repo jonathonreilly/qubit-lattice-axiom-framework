@@ -1,0 +1,17 @@
+diff --git a/docs/work_history/repo/review_feedback/pr8172-evidence/README.md b/docs/work_history/repo/review_feedback/pr8172-evidence/README.md
+index 32735c6335..04aa075561 100644
+--- a/docs/work_history/repo/review_feedback/pr8172-evidence/README.md
++++ b/docs/work_history/repo/review_feedback/pr8172-evidence/README.md
+@@ -4,7 +4,7 @@ All material here is historical or explicitly deferred science, not current clai
+ 
+ [The manifest](archive-manifest.json) records all 24 original paths, modes, Git blobs and raw SHA256 values. Gzip payloads decode to exact originals, including final newlines; they were not normalized. [The inherited inventory](complete-packet-inventory.json) records all 79 original campaign entries, each recoverable at its original path by decoding [the exact inherited tar](complete-inherited-packet.tar.gz). The original tar headers use group-writable permissions (for example 0664), while the inventory preserves the original Git modes (for example 100644). After extraction, restore each file mode from its inventory entry; the original tar bytes are unchanged. This archive does not overwrite the shared campaign, adopt any historical certificate or restore generated audit topology.
+ 
+-[Corrected deferred-science and protocol reading](DEFERRED_SCIENCE.md) explains what remains open. The complete original note and programs remain readable below; historical transcripts retain their original claims and errors rather than being retrospectively edited.
++[Corrected deferred-science and protocol reading](pr8172-deferred-science.md) explains what remains open. The complete original note and programs remain readable below; historical transcripts retain their original claims and errors rather than being retrospectively edited.
+ 
+ ## Original files
+ 
+diff --git a/docs/work_history/repo/review_feedback/pr8172-evidence/DEFERRED_SCIENCE.md b/docs/work_history/repo/review_feedback/pr8172-evidence/pr8172-deferred-science.md
+similarity index 100%
+rename from docs/work_history/repo/review_feedback/pr8172-evidence/DEFERRED_SCIENCE.md
+rename to docs/work_history/repo/review_feedback/pr8172-evidence/pr8172-deferred-science.md

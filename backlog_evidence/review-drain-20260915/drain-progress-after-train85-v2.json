@@ -1,0 +1,20 @@
+{
+  "main": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+  "closed_since_expanded_scope": 49,
+  "inventory": "backlog-inventory-wave30.json",
+  "open": 108,
+  "draft": 18,
+  "active": {
+    "8172": "Final independent PASS; final cache receipt running",
+    "8173": "Same-session cold review",
+    "8174": "Same-session affected-source review",
+    "8175": "Original independent review"
+  },
+  "model_comparison": "Completed/published; Astra low remains default",
+  "skill_parity": "review-loop-remote-parity-train85.json",
+  "supersedes": {
+    "path": "drain-progress-after-train85.json",
+    "sha256": "eda0f5c87c8a07216a1192c3c413446cce8af93ed8d1a13cdf3d7ec7f269f0d5",
+    "reason": "Prior local summary mistakenly counted the non-draft-only topology rows; inventory top-level open/draft counts govern."
+  }
+}

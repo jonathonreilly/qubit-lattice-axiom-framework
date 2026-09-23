@@ -1,0 +1,12 @@
+== (1)+(2)+(5): the witnesses by disjoint machinery
+W1: numpy rule agrees with the runner's automaton on all 112 sites: True; from the edge list: tree=True ones=True geometry=True E=16 |A|=10 (amp arrows 10) |S|=1 F=0; ratio=8/5; block30 budget True; sharper budget False
+   W1 marks == tree's seed+amplified: True
+W2: numpy rule agrees with the runner's automaton on all 112 sites: True; from the edge list: tree=True ones=True geometry=True E=20 |A|=12 (amp arrows 12) |S|=1 F=0; ratio=5/3; block30 budget True; sharper budget False
+W3: numpy rule agrees with the runner's automaton on all 225 sites: True; from the edge list: tree=True ones=True geometry=True E=23 |A|=12 (amp arrows 12) |S|=2 F=1; ratio=5/3; block30 budget True; sharper budget False
+== (3): the per-refinement accounting enumerated (fork-free)
+max over admissible (b, a, e) of (e - 3 r)/a = 2 attained at [(1, 1, 2), (2, 2, 1), (3, 3, 0)]
+(b, a, e) where e <= 3 r + a FAILS: [(1, 1, 2), (2, 2, 0), (2, 2, 1), (3, 3, 0)]
+(b, a, e) where e <= 3 r + 2a fails: []
+== (4): simulated annealing in a 4x4x8 window (independent search; 150 s)
+simulated annealing best ratio: 8/5 = 1.6
+== verdict: the witnesses are reproduced by disjoint machinery; the accounting's maximum per refinement is 2; the note's c >= 5/3 is consistent with the independent search

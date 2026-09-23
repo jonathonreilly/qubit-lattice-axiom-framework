@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/private/tmp/review-drain-20260915/check8175/independent.py", line 3, in <module>
+    resource.setrlimit(resource.RLIMIT_CPU,(20,20)); resource.setrlimit(resource.RLIMIT_AS,(1024**3,1024**3))
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: current limit exceeds maximum limit

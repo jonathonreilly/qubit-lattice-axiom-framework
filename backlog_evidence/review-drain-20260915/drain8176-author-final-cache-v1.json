@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8176",
+  "tree": "25f8c6d333407b5243d8120f53c4a2f1326dc21e",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/MARKED_TREE_SINGLE_SEED_DYNAMIC_PROGRAM_AND_FINITE_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-17.md",
+      "claim_id": "marked_tree_single_seed_dynamic_program_and_finite_rational_certificates_bounded_theorem_note_2026-09-17",
+      "primary_runner": "scripts/marked_tree_single_seed_dynamic_program_finite_rational_certificates_check_2026_09_17.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/work_history/review_loop/pr8176/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8770,
+      "misses": 4537
+    },
+    "packet_imports": {
+      "hits": 8760,
+      "misses": 4535
+    },
+    "declared_inputs": {
+      "hits": 8801,
+      "misses": 4690
+    }
+  },
+  "record_sha256": "bf4973cb01a88c16b900942529704d8d218b6b5dcd81d0d01ccb48564f5d7280",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

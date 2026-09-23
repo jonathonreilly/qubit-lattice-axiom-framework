@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8032",
+  "tree": "38e1a479e07b02c89a1fa17046bac100c8c6739a",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "claim_id": "gauge_wilson_finite_pw_static_source_energy_upper_bound_bounded_theorem_note_2026-09-07",
+      "primary_runner": "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py",
+      "helpers": [
+        "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py"
+      ],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/work_history/repo/review_feedback/pr8032-evidence/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8770,
+      "misses": 4537
+    },
+    "packet_imports": {
+      "hits": 8760,
+      "misses": 4535
+    },
+    "declared_inputs": {
+      "hits": 8802,
+      "misses": 4691
+    }
+  },
+  "record_sha256": "7c7eddd83575f549bc2b552ab7271d1b8fbf9056fd7fc02df10d6a602a6b362b",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

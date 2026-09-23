@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+  "fetched_ref": "refs/review-loop/fetched/8178-dfb2bf4d0aa1417481277bfe3e65e47c",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block34-sphere-formation-law-torus-memory-time-zero-mode-rate-and-stationary-modes-20260917",
+    "headRefOid": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+    "isDraft": false,
+    "number": 8178,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

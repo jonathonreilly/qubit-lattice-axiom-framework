@@ -1,0 +1,28 @@
+{
+  "status": "PROPOSED EXTERNAL ADAPTERS; syntax and source guards inspected only, never executed",
+  "builder": {
+    "path": "/private/tmp/review-drain-20260915/drain8033-build-staged-draft-v1.py",
+    "sha256": "fc5d275af312ee510c0aef7c2bdfd004b6a4b6c702c1ebc9dcc3a93492441b35"
+  },
+  "capture": {
+    "path": "/private/tmp/review-drain-20260915/drain8033-capture-v1.py",
+    "sha256": "82e669bc4efb5367a09aa149a3892ce2a390f9e319b4ab37b5fc129aa74cf33b"
+  },
+  "early_review": {
+    "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+    "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+  },
+  "source_freeze": {
+    "path": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source-freeze.json",
+    "sha256": "488698c6912ecf689fc068bb894df145dbcf357c9147ec4d58c5c47764c6e944"
+  },
+  "cold_binding": null,
+  "parent_guard": "Exact canonical parent af043363... must be present in actual expected main Git tree and working source; all five literal inputs and all intended citations resolved by actual APIs before staging.",
+  "tooling": "All five required repository preflight APIs plus both authority registries bound up front.",
+  "capture_contract": "One invocation; external sidecar, raw execute_runner return before cache post-checks, exact hash/stat identity, exclusive once-only marker,180 seconds/256MiB sampled aggregate RSS. No --json rerun.",
+  "dual_main": "Frozen source base/tree and explicit current origin/main checked separately. Any bound non-owned input/context/tooling byte that differs on current main rejects capture; no hypothetical cold clearance or automatic rebase.",
+  "source_files_unchanged": 81,
+  "science_executions": 0,
+  "staging": 0,
+  "gate_runs": 0
+}

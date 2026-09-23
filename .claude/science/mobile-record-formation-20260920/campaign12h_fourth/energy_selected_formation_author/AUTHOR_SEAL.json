@@ -1,0 +1,119 @@
+{
+  "created_utc": "2026-09-23T20:59:09.938611+00:00",
+  "status": "Root conditional theorem and author controls, independently being reconstructed; no audit or publication status",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/finite_spin_post_birth_author/PREPARED_FLAT_SECTOR_WITH_ELECTRIC_DYNAMICS_AND_FORMATION.md",
+      "sha256": "94cef6093e754d59cf11ca07c1124f6ee8becd944c07865af21b1c6dd05ec2a9",
+      "bytes": 15839
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/finite_spin_post_birth_author/AUTHOR_SEAL.json",
+      "sha256": "dfc55f6eac748bb11130fe3a8e5544194c6babd810c0c06d45e177c56c72df7e",
+      "bytes": 11867
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/post_birth_ring_spectrum_author/EXACT_FAST_SPECTRUM_AND_FORMATION_OUTPUTS_ON_RINGS.md",
+      "sha256": "b9c30d8418cb4d4c577ea193dee8482d2d0c92125823593feb2a7c01b8310bf5",
+      "bytes": 14532
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_author/AUTHOR_SEAL.json",
+      "sha256": "b99a0a0b243c9ecfaade581acbb2450d4e3d53d95967bb7096ed9388558f2665",
+      "bytes": 5341
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_unprepared_author/AUTHOR_SEAL.json",
+      "sha256": "ed066b95b18992f86718fe960ed6624c163854d142d0f90a742a4c85377159f4",
+      "bytes": 4786
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/finite_spin_post_birth_author/finite_spin_dynamics_check.py",
+      "sha256": "5030a960accba4a654b27de92fcc7bdd074f179b207930ae0aa1b97af20ca3df",
+      "bytes": 8788
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/finite_spin_post_birth_author/flat_band_spin_correction_probe.py",
+      "sha256": "50df6b9c1a41db285fc0be25830a9a4a94dc8915106cd6ef036f52fba08e4e3b",
+      "bytes": 4711
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/finite_spin_post_birth_author/FLAT_COMPRESSED_OPERATORS_RESULTS.json",
+      "sha256": "7736b485e3704701f4b513ab2d94440f8bfe86b0bee8622285e861ed0a9a6fbe",
+      "bytes": 6880
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/energy_selected_formation_author/ANALYTIC_DRAFT_SEAL.json",
+      "sha256": "0856d36c112eac22c72f011b33d7047071a396ecfea8e47d9b2f07795ea9a44d",
+      "bytes": 2580
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/energy_selected_formation_author/CONTROL_RESULTS_AND_INTERPRETATION.md",
+      "sha256": "f9150065abb82ebfddb8dbbcd538d9fe04c4ebb59fadc5cd1078c77184ff32ea",
+      "bytes": 3490
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/energy_selected_formation_author/ENERGY_FILTERS_AND_ACTUAL_REPEATED_FORMATION.md",
+      "sha256": "ecf6f39f0632d0f5fd7d4526ec66d39437019985655566cc9ad724837c7495c8",
+      "bytes": 13223
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/energy_selected_formation_author/ENERGY_FILTER_RESULTS.json",
+      "sha256": "60cae00d53dfc144d0080fec6164466032639d97d7293ed2c77139b0f191adf4",
+      "bytes": 10049
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/energy_selected_formation_author/FILTER_CONTROL.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/energy_selected_formation_author/FILTER_CONTROL.stdout.log",
+      "sha256": "245a6943723861e11d2beddf766ffa56d49a5943dbc2d760491d493c16c56f8d",
+      "bytes": 13415
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/energy_selected_formation_author/FILTER_CONTROL_RUN_RECEIPT.json",
+      "sha256": "325177512d522ff5b0b7985f1951d02b32116058cf44a907b860db530683af1a",
+      "bytes": 687
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/energy_selected_formation_author/energy_filter_check.py",
+      "sha256": "4c74c94032c4ab642d1ae1bfae32f2d72d7b1de73d924e51a15570744831ec8d",
+      "bytes": 10607
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/energy_selected_formation_author/first_control_run/ENERGY_FILTER_RESULTS.json",
+      "sha256": "169ac6d4f1ffb2b4fa74555e0fec7c39fd3f091d0b6715362d573936377c30cf",
+      "bytes": 9630
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/energy_selected_formation_author/first_control_run/FILTER_CONTROL.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/energy_selected_formation_author/first_control_run/FILTER_CONTROL.stdout.log",
+      "sha256": "4d594938365d7293172b980c33da8613028597955d4ae4fa904d232f22964c0f",
+      "bytes": 12996
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/energy_selected_formation_author/first_control_run/FILTER_CONTROL_RUN_RECEIPT.json",
+      "sha256": "c97e5c4620f42b1609ac4d25c81e6a1bb2553198015dec22bbdf6f193a5137dc",
+      "bytes": 645
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/energy_selected_formation_author/first_control_run/READOUT_QUALIFICATION.md",
+      "sha256": "d15977aa940185a9e756c9458b515385718a869b9d6018d9ae9d4511f76972df",
+      "bytes": 656
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/energy_selected_formation_author/first_control_run/energy_filter_check.py",
+      "sha256": "5dbc6b465c0a32294d41fba1a2dfa8f7f290034012f54e48c49e22096ff1a658",
+      "bytes": 9766
+    }
+  ],
+  "limits": "Original Hamiltonian with explicitly changed first instrument; deterministic target only. The prior numerical truncation-label issue is preserved and corrected; no physical or theorem change."
+}

@@ -1,0 +1,125 @@
+{
+  "source_sha256": "11d40f6d7f605e3fd012c46a9983aea7e8c1adde2576f5e29efe6ab5fa4046ec",
+  "first_hamiltonian_checks": [
+    {
+      "S": 1,
+      "f": -1,
+      "H2_exact": "-4",
+      "rotor_H4": 24
+    },
+    {
+      "S": 1,
+      "f": 0,
+      "H2_exact": "-8",
+      "rotor_H4": 24
+    },
+    {
+      "S": 1,
+      "f": 1,
+      "H2_exact": "-4",
+      "rotor_H4": 24
+    },
+    {
+      "S": 2,
+      "f": -2,
+      "H2_exact": "-8/3",
+      "rotor_H4": 24
+    },
+    {
+      "S": 2,
+      "f": -1,
+      "H2_exact": "-20/3",
+      "rotor_H4": 24
+    },
+    {
+      "S": 2,
+      "f": 0,
+      "H2_exact": "-8",
+      "rotor_H4": 24
+    },
+    {
+      "S": 2,
+      "f": 1,
+      "H2_exact": "-20/3",
+      "rotor_H4": 24
+    },
+    {
+      "S": 2,
+      "f": 2,
+      "H2_exact": "-8/3",
+      "rotor_H4": 24
+    },
+    {
+      "S": 4,
+      "f": -4,
+      "H2_exact": "-8/5",
+      "rotor_H4": 24
+    },
+    {
+      "S": 4,
+      "f": -3,
+      "H2_exact": "-22/5",
+      "rotor_H4": 24
+    },
+    {
+      "S": 4,
+      "f": -2,
+      "H2_exact": "-32/5",
+      "rotor_H4": 24
+    },
+    {
+      "S": 4,
+      "f": -1,
+      "H2_exact": "-38/5",
+      "rotor_H4": 24
+    },
+    {
+      "S": 4,
+      "f": 0,
+      "H2_exact": "-8",
+      "rotor_H4": 24
+    },
+    {
+      "S": 4,
+      "f": 1,
+      "H2_exact": "-38/5",
+      "rotor_H4": 24
+    },
+    {
+      "S": 4,
+      "f": 2,
+      "H2_exact": "-32/5",
+      "rotor_H4": 24
+    },
+    {
+      "S": 4,
+      "f": 3,
+      "H2_exact": "-22/5",
+      "rotor_H4": 24
+    },
+    {
+      "S": 4,
+      "f": 4,
+      "H2_exact": "-8/5",
+      "rotor_H4": 24
+    }
+  ],
+  "spin1_dimension": 48,
+  "spin1_parameters": {
+    "K": 1,
+    "delta": 1,
+    "eta": 2
+  },
+  "exact_shifted_Hamiltonian_factors": [
+    {
+      "factor": "x**5 - 50*x**4 + 978*x**3 - 9345*x**2 + 43587*x - 79407",
+      "multiplicity": 4,
+      "degree": 5
+    },
+    {
+      "factor": "x**7 - 74*x**6 + 2298*x**5 - 38805*x**4 + 384759*x**3 - 2240211*x**2 + 7094556*x - 9433440",
+      "multiplicity": 4,
+      "degree": 7
+    }
+  ]
+}

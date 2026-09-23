@@ -1,0 +1,41 @@
+--- preserved_first_run
++++ current_author_runner
+@@ -3,7 +3,7 @@
+ The physical finite-spin builder and compact flat basis are reused at explicit
+ source identities. This is not an independent reconstruction. No finite field
+ cutoff is imposed on the finite-spin model. Only the infinite flat reference
+-is truncated, with an a posteriori resolvent residual bound and a Dyson bound.
++is truncated, with an analytic resolvent-series bound and a Dyson bound.
+ """
+ from pathlib import Path
+ from collections import defaultdict
+@@ -128,9 +128,16 @@
+         for target, col, value in boundary:
+             residual[target] += value * x[col]
+         residuals.append(float(np.sqrt(sum(abs(v)**2 for v in residual.values()))))
+-    # The full selfadjoint reference resolvent has norm <=1/width. Multiplying
+-    # its two residual errors by width/2 gives this norm bound for g(h)phi.
+-    reference_error_bound = sum(residuals)/2
++    # Split h into its real electric/H4 diagonal and off-diagonal B. The latter
++    # has norm <=4 delta=14/5, while either diagonal resolvent has norm <=1/16.
++    # The Neumann terms agree before cut-max|f_initial|+1 translation steps.
++    # Bounding both tails and combining the two resolvents gives this exact
++    # rational truncation bound; it is not a floating-point certification.
++    n0 = cut
++    ratio = Fraction(7, 40)
++    reference_error_bound = math.nextafter(float(2*ratio**n0/(1-ratio)), math.inf)
++    interior_residuals = [float(np.linalg.norm((h-1j*smooth_width*eye(h.shape[0]))@rm-flat_seed)),
++                          float(np.linalg.norm((h+1j*smooth_width*eye(h.shape[0]))@rp-flat_seed))]
+     times = np.array([-.4, 0., .4])
+     prepared = flat_seed * np.sqrt(2)
+     ref_motion = expm_multiply(-1j*h, prepared, start=-.4, stop=.4, num=3,
+@@ -188,6 +195,9 @@
+     return {'parameters': {'K': m.K, 'delta': m.delta, 'kappa_in_unitary_control': m.kappa},
+             'smooth_filter': 'g(x)=16^2/(x^2+16^2)', 'flat_reference_cut': cut,
+             'flat_reference_filter_error_norm_bound': reference_error_bound,
++            'flat_reference_filter_bound_scope': 'Analytic truncation bound; floating-point solve and roundoff errors are separate diagnostics, not interval certified.',
++            'reference_numerical_interior_resolvent_residual_norms': interior_residuals,
++            'reference_numerical_omitted_boundary_residual_norms': residuals,
+             'flat_reference_motion_Dyson_tail_norm_bound': motion_tail,
+             'sharp_width_sequence': '2 sqrt(eta); this is expanding and subfast asymptotically',
+             'rows': rows,

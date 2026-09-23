@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/energy_selected_formation_independent/exact_instrument_control.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/energy_selected_formation_independent",
+  "started_unix": 1790196981.655104,
+  "elapsed_seconds": 0.6634581089019775,
+  "exit_code": 0,
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "script_sha256": "11d40f6d7f605e3fd012c46a9983aea7e8c1adde2576f5e29efe6ab5fa4046ec",
+  "stdout_sha256": "fd65a5d54bc5bdf51d5341832dbbf4dc9c453e3822cf6b8c0df35827f30784aa",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

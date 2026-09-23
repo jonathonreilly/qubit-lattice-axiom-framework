@@ -1,0 +1,1 @@
+The mathematics completed, but JSON encoding rejected a SymPy Integer in the factor metadata. Preserve EXACT_INSTRUMENT.stdout, .stderr and _RECEIPT.json in the packet root. Convert metadata degree and multiplicity to Python int; do not change any matrix or mathematical assertion.

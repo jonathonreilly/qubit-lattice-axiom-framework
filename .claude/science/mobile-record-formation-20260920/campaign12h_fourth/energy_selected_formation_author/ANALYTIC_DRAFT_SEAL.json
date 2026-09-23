@@ -1,0 +1,51 @@
+{
+  "utc": "2026-09-23T20:45:05.509581+00:00",
+  "status": "root analytic draft before new controls and independent reconstruction; no retention claim",
+  "artifact": {
+    "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/energy_selected_formation_author/ENERGY_FILTERS_AND_ACTUAL_REPEATED_FORMATION.md",
+    "sha256": "ecf6f39f0632d0f5fd7d4526ec66d39437019985655566cc9ad724837c7495c8",
+    "bytes": 13223
+  },
+  "sources": [
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/finite_spin_post_birth_author/PREPARED_FLAT_SECTOR_WITH_ELECTRIC_DYNAMICS_AND_FORMATION.md",
+      "sha256": "94cef6093e754d59cf11ca07c1124f6ee8becd944c07865af21b1c6dd05ec2a9",
+      "bytes": 15839
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/finite_spin_post_birth_author/AUTHOR_SEAL.json",
+      "sha256": "dfc55f6eac748bb11130fe3a8e5544194c6babd810c0c06d45e177c56c72df7e",
+      "bytes": 11867
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/post_birth_ring_spectrum_author/EXACT_FAST_SPECTRUM_AND_FORMATION_OUTPUTS_ON_RINGS.md",
+      "sha256": "b9c30d8418cb4d4c577ea193dee8482d2d0c92125823593feb2a7c01b8310bf5",
+      "bytes": 14532
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_author/AUTHOR_SEAL.json",
+      "sha256": "b99a0a0b243c9ecfaade581acbb2450d4e3d53d95967bb7096ed9388558f2665",
+      "bytes": 5341
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_unprepared_author/AUTHOR_SEAL.json",
+      "sha256": "ed066b95b18992f86718fe960ed6624c163854d142d0f90a742a4c85377159f4",
+      "bytes": 4786
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/finite_spin_post_birth_author/finite_spin_dynamics_check.py",
+      "sha256": "5030a960accba4a654b27de92fcc7bdd074f179b207930ae0aa1b97af20ca3df",
+      "bytes": 8788
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/finite_spin_post_birth_author/flat_band_spin_correction_probe.py",
+      "sha256": "50df6b9c1a41db285fc0be25830a9a4a94dc8915106cd6ef036f52fba08e4e3b",
+      "bytes": 4711
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/finite_spin_post_birth_author/FLAT_COMPRESSED_OPERATORS_RESULTS.json",
+      "sha256": "7736b485e3704701f4b513ab2d94440f8bfe86b0bee8622285e861ed0a9a6fbe",
+      "bytes": 6880
+    }
+  ]
+}

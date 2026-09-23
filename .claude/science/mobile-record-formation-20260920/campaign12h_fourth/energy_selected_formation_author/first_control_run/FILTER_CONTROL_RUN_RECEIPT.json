@@ -1,0 +1,12 @@
+{
+  "start_utc": "2026-09-23T20:49:22.909394+00:00",
+  "end_utc": "2026-09-23T20:49:25.877860+00:00",
+  "elapsed_seconds": 2.968317416962236,
+  "exit_code": 0,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/energy_selected_formation_author/energy_filter_check.py"
+  ],
+  "runner_sha256": "5dbc6b465c0a32294d41fba1a2dfa8f7f290034012f54e48c49e22096ff1a658",
+  "scope": "Root author controls, with declared source reuse; no independent reconstruction or full filtered count simulation."
+}

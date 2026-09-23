@@ -1,0 +1,331 @@
+{"S": 4, "eta": 8.0, "physical_dimension": 264, "sharp_width": 5.656854249492381, "sharp_width_over_eta": 0.7071067811865476, "selected_eigenvalue_count": 44, "eigen_residual_Frobenius": 1.4338279493386463e-13, "accepted_norm_squared": 0.1670516182981191, "selected_vector_error_to_F_first_output": 0.8092422800740389, "selected_bright_norm_squared": 0.15526076710764047, "flat_rejection_norm_squared": 0.4996123007517887, "smooth_filter_vector_error_to_reference": 0.5256784518948276, "pure_Hamiltonian_motion": [{"t": -0.4, "state_norm_error": 0.1079875188900708, "finite_norm_squared": 1.0000000000000007}, {"t": 0.0, "state_norm_error": 0.0, "finite_norm_squared": 1.0000000000000007}, {"t": 0.4, "state_norm_error": 0.10798751889002042, "finite_norm_squared": 1.0000000000000009}], "elapsed_seconds": 0.03405691706575453}
+{"S": 8, "eta": 28.8, "physical_dimension": 552, "sharp_width": 10.73312629199899, "sharp_width_over_eta": 0.37267799624996495, "selected_eigenvalue_count": 64, "eigen_residual_Frobenius": 9.369363754079032e-13, "accepted_norm_squared": 0.43722901340385056, "selected_vector_error_to_F_first_output": 0.37648072124029097, "selected_bright_norm_squared": 0.04546633898372861, "flat_rejection_norm_squared": 0.09627139448188123, "smooth_filter_vector_error_to_reference": 0.23751935197679477, "pure_Hamiltonian_motion": [{"t": -0.4, "state_norm_error": 0.049495224481784034, "finite_norm_squared": 1.0000000000000004}, {"t": 0.0, "state_norm_error": 0.0, "finite_norm_squared": 1.0000000000000018}, {"t": 0.4, "state_norm_error": 0.049495224481748146, "finite_norm_squared": 1.0000000000000018}], "elapsed_seconds": 0.06865191692486405}
+{"S": 16, "eta": 108.80000000000001, "physical_dimension": 1128, "sharp_width": 20.861447696648476, "sharp_width_over_eta": 0.1917412472118426, "selected_eigenvalue_count": 104, "eigen_residual_Frobenius": 6.746239890502127e-12, "accepted_norm_squared": 0.5258173655337246, "selected_vector_error_to_F_first_output": 0.15995908704589518, "selected_bright_norm_squared": 0.025580044611291965, "flat_rejection_norm_squared": 6.8649172643244704e-06, "smooth_filter_vector_error_to_reference": 0.11612385702106155, "pure_Hamiltonian_motion": [{"t": -0.4, "state_norm_error": 0.024263095755240736, "finite_norm_squared": 1.0000000000000002}, {"t": 0.0, "state_norm_error": 0.0, "finite_norm_squared": 1.0000000000000018}, {"t": 0.4, "state_norm_error": 0.024263095755217855, "finite_norm_squared": 0.9999999999999937}], "elapsed_seconds": 0.2754750419408083}
+{"S": 32, "eta": 422.40000000000003, "physical_dimension": 2280, "sharp_width": 41.10474425172841, "sharp_width_over_eta": 0.09731236802019036, "selected_eigenvalue_count": 144, "eigen_residual_Frobenius": 4.447300435432095e-11, "accepted_norm_squared": 0.510425434360156, "selected_vector_error_to_F_first_output": 0.10194039304701573, "selected_bright_norm_squared": 0.010390765455290897, "flat_rejection_norm_squared": 1.0782792889640081e-06, "smooth_filter_vector_error_to_reference": 0.0558534289990162, "pure_Hamiltonian_motion": [{"t": -0.4, "state_norm_error": 0.012905510461670319, "finite_norm_squared": 1.000000000000004}, {"t": 0.0, "state_norm_error": 0.0, "finite_norm_squared": 0.9999999999999956}, {"t": 0.4, "state_norm_error": 0.012905510461644511, "finite_norm_squared": 0.9999999999999876}], "elapsed_seconds": 1.952254083007574}
+{
+  "source_sha256": "5dbc6b465c0a32294d41fba1a2dfa8f7f290034012f54e48c49e22096ff1a658",
+  "reused_sources": {
+    "finite_spin_dynamics_check.py": "5030a960accba4a654b27de92fcc7bdd074f179b207930ae0aa1b97af20ca3df",
+    "flat_band_spin_correction_probe.py": "50df6b9c1a41db285fc0be25830a9a4a94dc8915106cd6ef036f52fba08e4e3b",
+    "FLAT_COMPRESSED_OPERATORS_RESULTS.json": "7736b485e3704701f4b513ab2d94440f8bfe86b0bee8622285e861ed0a9a6fbe"
+  },
+  "exact": {
+    "exact_Laurent_Grams_all_24_marks": [
+      {
+        "edge": 0,
+        "sign": -1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 0,
+        "sign": 1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 0,
+        "sign": null,
+        "unfiltered_Gram": 2,
+        "filtered_Gram": "1",
+        "projected_output_terms": 4
+      },
+      {
+        "edge": 1,
+        "sign": -1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 1,
+        "sign": 1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 1,
+        "sign": null,
+        "unfiltered_Gram": 2,
+        "filtered_Gram": "1",
+        "projected_output_terms": 4
+      },
+      {
+        "edge": 2,
+        "sign": -1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 2,
+        "sign": 1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 2,
+        "sign": null,
+        "unfiltered_Gram": 2,
+        "filtered_Gram": "1",
+        "projected_output_terms": 4
+      },
+      {
+        "edge": 3,
+        "sign": -1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 3,
+        "sign": 1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 3,
+        "sign": null,
+        "unfiltered_Gram": 2,
+        "filtered_Gram": "1",
+        "projected_output_terms": 4
+      },
+      {
+        "edge": 4,
+        "sign": -1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 4,
+        "sign": 1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 4,
+        "sign": null,
+        "unfiltered_Gram": 2,
+        "filtered_Gram": "1",
+        "projected_output_terms": 4
+      },
+      {
+        "edge": 5,
+        "sign": -1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 5,
+        "sign": 1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 5,
+        "sign": null,
+        "unfiltered_Gram": 2,
+        "filtered_Gram": "1",
+        "projected_output_terms": 4
+      },
+      {
+        "edge": 6,
+        "sign": -1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 6,
+        "sign": 1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 6,
+        "sign": null,
+        "unfiltered_Gram": 2,
+        "filtered_Gram": "1",
+        "projected_output_terms": 4
+      },
+      {
+        "edge": 7,
+        "sign": -1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 7,
+        "sign": 1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 7,
+        "sign": null,
+        "unfiltered_Gram": 2,
+        "filtered_Gram": "1",
+        "projected_output_terms": 4
+      }
+    ],
+    "resolved_first_total": 8,
+    "coherent_first_total": 8,
+    "opposite_sign_projected_cross_Grams_vanish": true,
+    "scope": "Translation-covariant physical field operator identities, not one-flux norms."
+  },
+  "numerical": {
+    "parameters": {
+      "K": 0.4,
+      "delta": 0.7,
+      "kappa_in_unitary_control": 0.0
+    },
+    "smooth_filter": "g(x)=16^2/(x^2+16^2)",
+    "flat_reference_cut": 24,
+    "flat_reference_filter_error_norm_bound": 1.2140371989325218e-153,
+    "flat_reference_motion_Dyson_tail_norm_bound": 5.878362905564118e-17,
+    "sharp_width_sequence": "2 sqrt(eta); this is expanding and subfast asymptotically",
+    "rows": [
+      {
+        "S": 4,
+        "eta": 8.0,
+        "physical_dimension": 264,
+        "sharp_width": 5.656854249492381,
+        "sharp_width_over_eta": 0.7071067811865476,
+        "selected_eigenvalue_count": 44,
+        "eigen_residual_Frobenius": 1.4338279493386463e-13,
+        "accepted_norm_squared": 0.1670516182981191,
+        "selected_vector_error_to_F_first_output": 0.8092422800740389,
+        "selected_bright_norm_squared": 0.15526076710764047,
+        "flat_rejection_norm_squared": 0.4996123007517887,
+        "smooth_filter_vector_error_to_reference": 0.5256784518948276,
+        "pure_Hamiltonian_motion": [
+          {
+            "t": -0.4,
+            "state_norm_error": 0.1079875188900708,
+            "finite_norm_squared": 1.0000000000000007
+          },
+          {
+            "t": 0.0,
+            "state_norm_error": 0.0,
+            "finite_norm_squared": 1.0000000000000007
+          },
+          {
+            "t": 0.4,
+            "state_norm_error": 0.10798751889002042,
+            "finite_norm_squared": 1.0000000000000009
+          }
+        ],
+        "elapsed_seconds": 0.03405691706575453
+      },
+      {
+        "S": 8,
+        "eta": 28.8,
+        "physical_dimension": 552,
+        "sharp_width": 10.73312629199899,
+        "sharp_width_over_eta": 0.37267799624996495,
+        "selected_eigenvalue_count": 64,
+        "eigen_residual_Frobenius": 9.369363754079032e-13,
+        "accepted_norm_squared": 0.43722901340385056,
+        "selected_vector_error_to_F_first_output": 0.37648072124029097,
+        "selected_bright_norm_squared": 0.04546633898372861,
+        "flat_rejection_norm_squared": 0.09627139448188123,
+        "smooth_filter_vector_error_to_reference": 0.23751935197679477,
+        "pure_Hamiltonian_motion": [
+          {
+            "t": -0.4,
+            "state_norm_error": 0.049495224481784034,
+            "finite_norm_squared": 1.0000000000000004
+          },
+          {
+            "t": 0.0,
+            "state_norm_error": 0.0,
+            "finite_norm_squared": 1.0000000000000018
+          },
+          {
+            "t": 0.4,
+            "state_norm_error": 0.049495224481748146,
+            "finite_norm_squared": 1.0000000000000018
+          }
+        ],
+        "elapsed_seconds": 0.06865191692486405
+      },
+      {
+        "S": 16,
+        "eta": 108.80000000000001,
+        "physical_dimension": 1128,
+        "sharp_width": 20.861447696648476,
+        "sharp_width_over_eta": 0.1917412472118426,
+        "selected_eigenvalue_count": 104,
+        "eigen_residual_Frobenius": 6.746239890502127e-12,
+        "accepted_norm_squared": 0.5258173655337246,
+        "selected_vector_error_to_F_first_output": 0.15995908704589518,
+        "selected_bright_norm_squared": 0.025580044611291965,
+        "flat_rejection_norm_squared": 6.8649172643244704e-06,
+        "smooth_filter_vector_error_to_reference": 0.11612385702106155,
+        "pure_Hamiltonian_motion": [
+          {
+            "t": -0.4,
+            "state_norm_error": 0.024263095755240736,
+            "finite_norm_squared": 1.0000000000000002
+          },
+          {
+            "t": 0.0,
+            "state_norm_error": 0.0,
+            "finite_norm_squared": 1.0000000000000018
+          },
+          {
+            "t": 0.4,
+            "state_norm_error": 0.024263095755217855,
+            "finite_norm_squared": 0.9999999999999937
+          }
+        ],
+        "elapsed_seconds": 0.2754750419408083
+      },
+      {
+        "S": 32,
+        "eta": 422.40000000000003,
+        "physical_dimension": 2280,
+        "sharp_width": 41.10474425172841,
+        "sharp_width_over_eta": 0.09731236802019036,
+        "selected_eigenvalue_count": 144,
+        "eigen_residual_Frobenius": 4.447300435432095e-11,
+        "accepted_norm_squared": 0.510425434360156,
+        "selected_vector_error_to_F_first_output": 0.10194039304701573,
+        "selected_bright_norm_squared": 0.010390765455290897,
+        "flat_rejection_norm_squared": 1.0782792889640081e-06,
+        "smooth_filter_vector_error_to_reference": 0.0558534289990162,
+        "pure_Hamiltonian_motion": [
+          {
+            "t": -0.4,
+            "state_norm_error": 0.012905510461670319,
+            "finite_norm_squared": 1.000000000000004
+          },
+          {
+            "t": 0.0,
+            "state_norm_error": 0.0,
+            "finite_norm_squared": 0.9999999999999956
+          },
+          {
+            "t": 0.4,
+            "state_norm_error": 0.012905510461644511,
+            "finite_norm_squared": 0.9999999999999876
+          }
+        ],
+        "elapsed_seconds": 1.952254083007574
+      }
+    ],
+    "limitations": "Finite sizes corroborate the ring claims; no cube propagation, full filtered finite-spin count process, or convergence rate is inferred."
+  }
+}

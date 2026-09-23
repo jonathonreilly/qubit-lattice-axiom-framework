@@ -1,0 +1,195 @@
+{"S": 2, "P6_dimension": 120, "eta": 2.4000000000000004, "sharp_half_width": 1.5491933384829668, "width_over_eta": 0.6454972243679027, "selected_rank": 24, "flat_sharp_projection_error": 0.9998203949722543, "continuous_input_selected_norm": 0.6193659248758019, "max_zero_field_first_source_vector_error": 0.8308778110619824, "smooth_flat_functional_calculus_error": 0.007402926516722838, "zero_field_selected_first_rate_resolved_without_kappa": 3.27845954217967, "zero_field_selected_first_rate_coherent_without_kappa": 3.27845954217967, "sharp_total_coherent_resolved_loss_difference_norm": 0.3816454084088308, "sharp_fixed_edge_cross_gram_max_norm": 0.037106635800735414, "smooth_fixed_edge_cross_gram_max_norm": 0.032572029671348424, "finite_spin_original_first_loss_norm": 16.0}
+{"S": 4, "P6_dimension": 264, "eta": 8.0, "sharp_half_width": 2.8284271247461903, "width_over_eta": 0.3535533905932738, "selected_rank": 24, "flat_sharp_projection_error": 0.675758457073206, "continuous_input_selected_norm": 0.31709494247522896, "max_zero_field_first_source_vector_error": 0.6681950059243412, "smooth_flat_functional_calculus_error": 0.007655475975683756, "zero_field_selected_first_rate_resolved_without_kappa": 3.7000458215298897, "zero_field_selected_first_rate_coherent_without_kappa": 3.700045821529888, "sharp_total_coherent_resolved_loss_difference_norm": 0.14058273497806928, "sharp_fixed_edge_cross_gram_max_norm": 0.0402758715429903, "smooth_fixed_edge_cross_gram_max_norm": 0.009834321022335354, "finite_spin_original_first_loss_norm": 16.0}
+{"S": 8, "P6_dimension": 552, "eta": 28.8, "sharp_half_width": 5.366563145999495, "width_over_eta": 0.18633899812498247, "selected_rank": 44, "flat_sharp_projection_error": 0.004035504611718077, "continuous_input_selected_norm": 0.2034247730769951, "max_zero_field_first_source_vector_error": 0.1445977888301468, "smooth_flat_functional_calculus_error": 0.0029843444793701385, "zero_field_selected_first_rate_resolved_without_kappa": 8.338322838696515, "zero_field_selected_first_rate_coherent_without_kappa": 8.338322838696516, "sharp_total_coherent_resolved_loss_difference_norm": 0.32635731374975624, "sharp_fixed_edge_cross_gram_max_norm": 0.032528765065831446, "smooth_fixed_edge_cross_gram_max_norm": 0.009921860933215744, "finite_spin_original_first_loss_norm": 16.0}
+{"S": 16, "P6_dimension": 1128, "eta": 108.80000000000001, "sharp_half_width": 10.430723848324238, "width_over_eta": 0.0958706236059213, "selected_rank": 68, "flat_sharp_projection_error": 0.0002980124872329083, "continuous_input_selected_norm": 0.14338405951416613, "max_zero_field_first_source_vector_error": 0.10146399233104805, "smooth_flat_functional_calculus_error": 0.0009038448599850286, "zero_field_selected_first_rate_resolved_without_kappa": 8.164694057583382, "zero_field_selected_first_rate_coherent_without_kappa": 8.164694057583382, "sharp_total_coherent_resolved_loss_difference_norm": 0.34636565134999836, "sharp_fixed_edge_cross_gram_max_norm": 0.029711051211601596, "smooth_fixed_edge_cross_gram_max_norm": 0.009991172429031948, "finite_spin_original_first_loss_norm": 16.0}
+{
+  "source_sha256": "d34bda455f5e610120938557313fe321e4b9b3b21e4af018ea7f2b88295b098a",
+  "reused_independent_builder_hashes": {
+    "physical_builder.py": "1cbc6dcb8a994c5f7fc4ec178c586b3aefcede49fd6a30906b0446bf332c9dc2",
+    "flat_probe.py": "ba04c00080143a8f0b9bfe3ed6b249139c1201a691f23584d911a78ebf237fd6"
+  },
+  "projected_first_grams": {
+    "fields": [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ],
+    "resolved_channels": 16,
+    "coherent_channels": 8,
+    "resolved_channel_gram": "I/2",
+    "fixed_edge_cross_gram": 0,
+    "maximum_exact_residual": 0.0,
+    "rows": [
+      {
+        "f": -2,
+        "resolved_selected_rate_without_kappa": 8.0,
+        "coherent_selected_rate_without_kappa": 8.0
+      },
+      {
+        "f": -1,
+        "resolved_selected_rate_without_kappa": 8.0,
+        "coherent_selected_rate_without_kappa": 8.0
+      },
+      {
+        "f": 0,
+        "resolved_selected_rate_without_kappa": 8.0,
+        "coherent_selected_rate_without_kappa": 8.0
+      },
+      {
+        "f": 1,
+        "resolved_selected_rate_without_kappa": 8.0,
+        "coherent_selected_rate_without_kappa": 8.0
+      },
+      {
+        "f": 2,
+        "resolved_selected_rate_without_kappa": 8.0,
+        "coherent_selected_rate_without_kappa": 8.0
+      }
+    ],
+    "wrong_unchanged_first_rate16_rejected_by": 8,
+    "all_field_extension": "Rotor paths and the compact projector commute with common circulation translation; distinct input f have distinct outputs within each fixed B-occupancy block."
+  },
+  "finite_filters": {
+    "parameters": {
+      "K": 0.4,
+      "delta": 0.25
+    },
+    "reference": {
+      "filter": "g(x)=1/(1+x^2)",
+      "flat_mode": [
+        0,
+        2,
+        0
+      ],
+      "reference_flux_cut": 8,
+      "resolvent_residual_norms": {
+        "-1": 2.243579948885413e-16,
+        "1": 2.243579948885413e-16
+      },
+      "full_reference_norm_error_bound_from_residuals": 2.243579948885413e-16,
+      "roundoff_limit": "Floating residual, not an interval-arithmetic certificate."
+    },
+    "rows": [
+      {
+        "S": 2,
+        "P6_dimension": 120,
+        "eta": 2.4000000000000004,
+        "sharp_half_width": 1.5491933384829668,
+        "width_over_eta": 0.6454972243679027,
+        "selected_rank": 24,
+        "flat_sharp_projection_error": 0.9998203949722543,
+        "continuous_input_selected_norm": 0.6193659248758019,
+        "max_zero_field_first_source_vector_error": 0.8308778110619824,
+        "smooth_flat_functional_calculus_error": 0.007402926516722838,
+        "zero_field_selected_first_rate_resolved_without_kappa": 3.27845954217967,
+        "zero_field_selected_first_rate_coherent_without_kappa": 3.27845954217967,
+        "sharp_total_coherent_resolved_loss_difference_norm": 0.3816454084088308,
+        "sharp_fixed_edge_cross_gram_max_norm": 0.037106635800735414,
+        "smooth_fixed_edge_cross_gram_max_norm": 0.032572029671348424,
+        "finite_spin_original_first_loss_norm": 16.0
+      },
+      {
+        "S": 4,
+        "P6_dimension": 264,
+        "eta": 8.0,
+        "sharp_half_width": 2.8284271247461903,
+        "width_over_eta": 0.3535533905932738,
+        "selected_rank": 24,
+        "flat_sharp_projection_error": 0.675758457073206,
+        "continuous_input_selected_norm": 0.31709494247522896,
+        "max_zero_field_first_source_vector_error": 0.6681950059243412,
+        "smooth_flat_functional_calculus_error": 0.007655475975683756,
+        "zero_field_selected_first_rate_resolved_without_kappa": 3.7000458215298897,
+        "zero_field_selected_first_rate_coherent_without_kappa": 3.700045821529888,
+        "sharp_total_coherent_resolved_loss_difference_norm": 0.14058273497806928,
+        "sharp_fixed_edge_cross_gram_max_norm": 0.0402758715429903,
+        "smooth_fixed_edge_cross_gram_max_norm": 0.009834321022335354,
+        "finite_spin_original_first_loss_norm": 16.0
+      },
+      {
+        "S": 8,
+        "P6_dimension": 552,
+        "eta": 28.8,
+        "sharp_half_width": 5.366563145999495,
+        "width_over_eta": 0.18633899812498247,
+        "selected_rank": 44,
+        "flat_sharp_projection_error": 0.004035504611718077,
+        "continuous_input_selected_norm": 0.2034247730769951,
+        "max_zero_field_first_source_vector_error": 0.1445977888301468,
+        "smooth_flat_functional_calculus_error": 0.0029843444793701385,
+        "zero_field_selected_first_rate_resolved_without_kappa": 8.338322838696515,
+        "zero_field_selected_first_rate_coherent_without_kappa": 8.338322838696516,
+        "sharp_total_coherent_resolved_loss_difference_norm": 0.32635731374975624,
+        "sharp_fixed_edge_cross_gram_max_norm": 0.032528765065831446,
+        "smooth_fixed_edge_cross_gram_max_norm": 0.009921860933215744,
+        "finite_spin_original_first_loss_norm": 16.0
+      },
+      {
+        "S": 16,
+        "P6_dimension": 1128,
+        "eta": 108.80000000000001,
+        "sharp_half_width": 10.430723848324238,
+        "width_over_eta": 0.0958706236059213,
+        "selected_rank": 68,
+        "flat_sharp_projection_error": 0.0002980124872329083,
+        "continuous_input_selected_norm": 0.14338405951416613,
+        "max_zero_field_first_source_vector_error": 0.10146399233104805,
+        "smooth_flat_functional_calculus_error": 0.0009038448599850286,
+        "zero_field_selected_first_rate_resolved_without_kappa": 8.164694057583382,
+        "zero_field_selected_first_rate_coherent_without_kappa": 8.164694057583382,
+        "sharp_total_coherent_resolved_loss_difference_norm": 0.34636565134999836,
+        "sharp_fixed_edge_cross_gram_max_norm": 0.029711051211601596,
+        "smooth_fixed_edge_cross_gram_max_norm": 0.009991172429031948,
+        "finite_spin_original_first_loss_norm": 16.0
+      }
+    ],
+    "status": "Complete physical finite-spin matrices; finite-size values are corroboration, not the analytic convergence proof."
+  },
+  "counterexamples_and_counts": {
+    "noncompact_input_family_counterexample": [
+      {
+        "N": 8,
+        "window_scaled_half_width": 0.041666666666666664,
+        "constant_input_probability": 0.125,
+        "cell_normalized_input_probability": 1,
+        "operator_norm_window_projection": 1,
+        "operator_approximation_error_bound": 0.0625
+      },
+      {
+        "N": 32,
+        "window_scaled_half_width": 0.010416666666666666,
+        "constant_input_probability": 0.03125,
+        "cell_normalized_input_probability": 1,
+        "operator_norm_window_projection": 1,
+        "operator_approximation_error_bound": 0.015625
+      },
+      {
+        "N": 128,
+        "window_scaled_half_width": 0.0026041666666666665,
+        "constant_input_probability": 0.0078125,
+        "cell_normalized_input_probability": 1,
+        "operator_norm_window_projection": 1,
+        "operator_approximation_error_bound": 0.00390625
+      }
+    ],
+    "order_eta_width_counterexample": "H=multiplication by x on [0,1], psi=1, window center eta/2 and half-width eta/4 has probability1/2.",
+    "changed_ring_probabilities": [
+      "exp(-8*k*t)",
+      "2*exp(-4*k*t) - 2*exp(-8*k*t)",
+      "(1 - exp(-4*k*t))**2"
+    ],
+    "changed_rates_without_kappa": [
+      8,
+      4
+    ],
+    "ODE_and_conservation_residuals": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "wrong_original_first_clock_rejected": "Using16 instead of the independently computed selected first rate8 violates the first population derivative at t=0 by8 kappa."
+  }
+}

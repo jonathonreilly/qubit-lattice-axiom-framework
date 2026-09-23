@@ -1,0 +1,54 @@
+{
+  "source_sha256": "469e05b1f5877ce329a30d7accebecf0d345b4a17719ef9d025b792615c2afac",
+  "S": 1,
+  "K": 1,
+  "delta": 1,
+  "eta": 2,
+  "dimension": 48,
+  "filter": "g(A)=(I+A^2)^(-1), A=H6,S+4 eta I",
+  "fixed_edge0_opposite_orientation_cross_gram": [
+    [
+      "0",
+      "-71329283816438226197657/2369423620318651328793755524",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "coherent_minus_resolved_loss_without_kappa": [
+    {
+      "row_f": -1,
+      "column_f": 0,
+      "exact": "-71329283816438226197657/592355905079662832198438881",
+      "decimal": -0.00012041626192085571
+    },
+    {
+      "row_f": 0,
+      "column_f": -1,
+      "exact": "-71329283816438226197657/592355905079662832198438881",
+      "decimal": -0.00012041626192085571
+    },
+    {
+      "row_f": 0,
+      "column_f": 1,
+      "exact": "-71329283816438226197657/592355905079662832198438881",
+      "decimal": -0.00012041626192085571
+    },
+    {
+      "row_f": 1,
+      "column_f": 0,
+      "exact": "-71329283816438226197657/592355905079662832198438881",
+      "decimal": -0.00012041626192085571
+    }
+  ],
+  "unfiltered_coherent_minus_resolved_loss_exactly_zero": true,
+  "sharp_window_consequence": "g(x)^2=integral_0^infinity [4r/(1+r^2)^3] 1_(|x|<=r) dr. The exact nonzero filtered-loss difference therefore forces a nonzero difference for at least one centered sharp-window radius at this spin. This is an existence counterexample, not an exact identification of the S2 floating control radius."
+}

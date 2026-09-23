@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_frame_orbit_spectral_measure_and_rayleigh_census_cycle718_2026_08_02",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_frame_orbit_spectral_measure_and_rayleigh_census_cycle718_2026_08_02.py",
+ "seed": 33759,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d0317746",
+ "started_utc": "20260923T032239Z",
+ "elapsed_s": 5.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=82 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ee4e1d6d390a880740e31a0115aac91a5ca2e6cdd339b25d11ffbae1e6521bb8",
+ "stdout_tail": "robe.seed7181.translated_spectral_measure.L4 measure L1 max=1.955e-10, Rayleigh spread=1.266e-11\nPASS probe.seed7181.individual_weight_basis_witness.L4 individual-weight L1=0.762812, rotation range=0.450735; eigenspace measure max=1.955e-10\nPASS probe.seed7181.nonregular_contrast.L4 translates=24, measure L1 max=1.469382, Rayleigh spread=0.293054\nPASS census.fibre_representative.L4 maximum single-slot within-fibre residual=7.639e-10\nPASS census.classifier_margin.L4 close max=3.185e-10, separated min=1.826e-04\nPASS census.partition_count.L4 slots=279, patterns=15/15\nPASS census.finest_count.L4 finest-pattern slots=48\nPASS census.constant_slots.L4 constant slots=19, classes={5: 4, 9: 4, 11: 4, 13: 7}\nPASS census.deterministic_gaussian_sample.L4 finest=20/20, minimum pair gap=1.394e-03\nTOTAL: PASS=82 FAIL=0\n\n[stderr]\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet\n  sign, logdet = _umath_linalg.slogdet(a, signature=signature)\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet\n  sign, logdet = _umath_linalg.slogdet(a, signature=signature)\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet\n  sign, logdet = _umath_linalg.slogdet(a, signature=signature)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T032244Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_frame_orbit_spectral_measure_and_rayleigh_census_cycle718_2026_08_02.txt against the .txt beside this log"
+  ]
+ }
+}

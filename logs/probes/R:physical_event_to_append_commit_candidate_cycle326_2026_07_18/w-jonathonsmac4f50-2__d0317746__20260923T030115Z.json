@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_event_to_append_commit_candidate_cycle326_2026_07_18",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_event_to_append_commit_candidate_cycle326_2026_07_18.py",
+ "seed": 32475,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d0317746",
+ "started_utc": "20260923T030115Z",
+ "elapsed_s": 2.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f0669096446fcfb23f18c7aa291fd13d37f4f39e7a7a614f5f8ae70e910764e3",
+ "stdout_tail": "': {'INIT': 0, 'WRITE': 0, 'ARCHIVE': 0, 'RESET': 0, 'LAUNCH': 0}, 'fresh_target_collision_rejected': True, 'inverse_restores_blank': True, 'schedule_outputs': 1}\nDATA DAG {'candidate': CommitCandidate(identity=EventIdentity(stable_label=('edge', 8, (8, 45)), support=frozenset({4, 132, 8, 79, 17, 22, 150, 26, 27, 97, 35, 40, 45, 114, 53, 61}), predecessors=(('coin', 0, (0, 0, 0)), ('coin', 1, (0, 0, 1)), ('coin', 13, (1, 1, 1)))), route='typed-DAG', cell=0, lawful_close=True), 'topological_orders': 15, 'terminal_sets': 1, 'rank_signatures': 1, 'maximum_dependency_rank_not_time': 5, 'edge_deletions': [(('actual_event', 'close'), True, True), (('close', 'commit_candidate'), True, True), (('dependency_ready', 'close'), True, True), (('event_ready', 'actual_event'), True, True), (('event_ready', 'support_match'), True, True), (('fresh_ready', 'close'), True, True), (('support_match', 'dependency_ready'), True, True)], 'semantic_deletions': {'event_ready': ('fresh_ready',), 'support_match': ('actual_event', 'event_ready', 'fresh_ready'), 'dependency_ready': ('actual_event', 'event_ready', 'fresh_ready', 'support_match'), 'fresh_ready': ('actual_event', 'dependency_ready', 'event_ready', 'support_match'), 'actual_event': ('dependency_ready', 'event_ready', 'fresh_ready', 'support_match'), 'close': ('actual_event', 'dependency_ready', 'event_ready', 'fresh_ready', 'support_match')}, 'Record_node_present': False}\nSUMMARY PASS 11 FAIL 0\nRESULT CYCLE326_EVENT_TO_COMMIT_CANDIDATE_GREEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T030117Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

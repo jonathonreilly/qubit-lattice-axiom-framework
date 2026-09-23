@@ -1,0 +1,32 @@
+{
+ "task": "R:physical_four_case_pivot_router_cycle152_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_four_case_pivot_router_cycle152_2026_07_15.py",
+ "seed": 32569,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d0317746",
+ "started_utc": "20260923T030249Z",
+ "elapsed_s": 676.4,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d84f854f1703545a89aebce41222b81141000396fe46d2653fc9e03ece213e16",
+ "stdout_tail": "y branch socket :: ('LAUNCH_A', 4)\n\nLAW MERGE\nPASS 192 physical row-copy contexts cover all selected rows :: Counter({5: 192})\nPASS 204 canonical router rows expand to 4,896 proper-cubic rows :: (204, 4896)\nPASS router merges into 82,316 rows without conflict :: (77420, 4896, 82316)\nPASS all wrong selectors remain inert at every typed branch socket :: (1024, ())\nPASS deleting any direct router parent suppresses its intended output :: (1004, ())\n\nEXHAUSTIVE CAUSAL GRAPHS\nPASS all 10,800 bases/outcomes have the exact finite causal graph :: (Counter({(1, 0): 2880, (0, 1): 2880, (1, 1): 2880, (0, 0): 2160}), [])\nPASS all 43,200 rotated canonical-basis graphs are exact :: []\nPASS combined graph census is 54,000 with all four pivot cases present :: 54000\n\nMIXED-DEVICE CLOSURE\nPASS router rows preserve all 86,640 prior unified histories :: []\nPASS Cycle-144 terminal retains exactly its two priced fronts :: {(-9, -1, 0): frozenset({'B1'}), (-11, 1, 2): frozenset({'R_B21'})}\n\nSCOPE\nFAIL note contains: physical four-case pivot router :: \nFAIL note contains: supplied commutation bits :: \nFAIL note contains: supplied product row :: \nFAIL note contains: case-dependent output sites :: \nFAIL note contains: deterministic membership remains open :: \nFAIL note contains: does not derive occurrence or equal weights :: \nFAIL note contains: no axiom addition follows :: \nFAIL note contains: n1 \u2014 alternative routes :: \nFAIL note contains: n8 \u2014 cross-cycle echo :: \n\nTOTAL\nPASS 16 FAIL 10\nRESULT FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T031406Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

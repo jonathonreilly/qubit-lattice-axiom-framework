@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_four_case_pivot_router_probe_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_four_case_pivot_router_probe_2026_07_15.py",
+ "seed": 33246,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d0317746",
+ "started_utc": "20260923T031406Z",
+ "elapsed_s": 512.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ebe47fe53bc0800a1cf7a39f8b89a19cb66994632804e0647a40880efe2405b1",
+ "stdout_tail": "ROLES {(0, 0): 'L10', (0, 1): 'L11', (1, 0): 'L12', (1, 1): 'L2'} {(0, 0): ('L3', 'L5'), (0, 1): ('L3', 'L6'), (1, 0): ('L4', 'L5'), (1, 1): ('L4', 'L7')} {'L3': 'l1_g1', 'L4': 'l1_p', 'L5': 'l2_g2', 'L6': 'l2_p', 'L7': 'l2_product'}\nTABLE 4 8 192 204 4896 82316 0\nGRAPHS 54000 0\nRESULT PHYSICAL_FOUR_CASE_PIVOT_ROUTER\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T032239Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

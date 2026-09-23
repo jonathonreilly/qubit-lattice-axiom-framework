@@ -1,0 +1,32 @@
+FAIL the Cycle-323 note exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/PHYSICAL_FIXED_PROGRAM_CARRIER_TWO_USE_CYCLE323_NOTE_2026-07-18.md
+PASS the program carrier retains the accepted same-number physical contact seam and one-particle mass fixture through held L=6 :: {'rows': [{'L': 3, 'held': False, 'Gram': 3.1401849173675503e-16, 'contact': 0.0, 'constraint': 0.0}, {'L': 6, 'held': True, 'Gram': 3.1401849173675503e-16, 'contact': 0.0, 'constraint': 0.0}], 'one_particle_mass_relative_residual': 2.220446049250313e-16}
+PASS one fixed three-M2-program controlled isometry stores and coherently applies all six apparatus blocks without a host program branch query :: {'program_code_Gram_residual': 0.0, 'full_three_M2_program_basis_dimension': 8, 'lawful_program_code_dimension': 6, 'fixed_update_isometry_residual': 7.067914495996612e-16, 'controlled_block_recovery_residual': 0.0, 'off_diagonal_program_write_residual': 0.0, 'coherent_superposition_residual': 1.104397092722181e-16, 'application_source': 'def apply_fixed_update(update: np.ndarray, state: np.ndarray) -> np.ndarray: return update @ state'}
+PASS the identical fixed controlled update composes twice with fresh pointers and no program rewrite or dispatch :: {'fixed_twice_vs_direct_Kraus_product_residual': 2.9430767325530396e-16, 'two_use_isometry_residual': 1.2036261092400732e-15, 'two_use_program_write_residual': 0.0, 'fresh_pointer_M2': 6}
+PASS the ray-refinement coarse-CP quotient remains exact after two fixed-carrier uses while its fine two-pointer transcript remains visible :: {'two_use_coarse_effect_residual': 5.551115123125783e-17, 'two_use_coarse_instrument_Choi_residual': 4.5828752110238735e-17, 'two_use_pointer_erased_Choi_residual': 1.4942185976338478e-16, 'two_use_held_future_witness': 1.5633741644789526e-16, 'two_use_fine_transcript_Choi_residual': 0.9329539020600226}
+PASS the equal-effect axis pair remains process-distinguishable after two fixed-carrier uses even though its coarse outcome effects still agree :: {'two_use_coarse_effect_residual': 4.0139454598052745e-16, 'two_use_coarse_instrument_Choi_residual': 0.2202543031572249, 'two_use_pointer_erased_Choi_residual': 0.8810172126288998, 'two_use_held_future_witness': 0.30378505054543903, 'two_use_fine_transcript_Choi_residual': 0.6930384560671023}
+PASS the fixed program carrier and its two-use products have bounded physical M2 support and zero inherited leakage through held L=6 :: [{'L': 3, 'held': False, 'logical_to_physical_carrier_residual': 0.0, 'physical_carrier_isometry_residual': 9.897852146643402e-16, 'one_and_two_use_leakage': 2.235378631944539e-16, 'role_constraint_residual': 0.0, 'matrix_unit_pairs': 16, 'matter_transition_union_M2': 20, 'maximum_matter_transition_M2': 20, 'maximum_one_use_controlled_M2': 26, 'maximum_two_use_controlled_M2': 29, 'one_use_patch_M2': 62, 'two_use_patch_M2': 65, 'two_use_installed_overhead_M2_per_cell': 32, 'port_constraint_failures': 0, 'local_check_or_Wilson_failures': 0}, {'L': 6, 'held': True, 'logical_to_physical_carrier_residual': 0.0, 'physical_carrier_isometry_residual': 9.897852146643402e-16, 'one_and_two_use_leakage': 2.235378631944539e-16, 'role_constraint_residual': 0.0, 'matrix_unit_pairs': 16, 'matter_transition_union_M2': 20, 'maximum_matter_transition_M2': 20, 'maximum_one_use_controlled_M2': 26, 'maximum_two_use_controlled_M2': 29, 'one_use_patch_M2': 62, 'two_use_patch_M2': 65, 'two_use_installed_overhead_M2_per_cell': 32, 'port_constraint_failures': 0, 'local_check_or_Wilson_failures': 0}]
+PASS the fixed controlled carrier and two-use composition have carried covariance under all 24 proper-cubic frames :: {'frames': 24, 'branch_failures': 0, 'maximum_one_use_carrier_residual': 0.0, 'maximum_two_use_carrier_residual': 0.0}
+PASS the one- and two-use fixed carriers remain actually dependent on the Cycle-230 contact :: {'one_use_fixed_update_contact_deletion_residual': 0.9011502941949178, 'two_use_fixed_update_contact_deletion_residual': 1.661328617277677, 'selected_ray_effect_contact_deletion_residual': 0.15868520630479252, 'physical_contact_intertwiner': 0.0}
+PASS deleting one refinement branch or one complete program-control block breaks the fixed-carrier isometry :: {'refinement_branch_deletion_isometry_defect': 0.3843000000000001, 'program_control_block_deletion_isometry_defect': 1.0}
+PASS the lawful domain rejects wrong program counts, duplicate/nonexhaustive blocks, invalid program states, nonblank pointers, and malformed updates :: {'rejected': 8, 'attempted': 8}
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_fixed_program_carrier_two_use_cycle323_2026_07_18.py", line 1162, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_fixed_program_carrier_two_use_cycle323_2026_07_18.py", line 1128, in main
+    semantic_firewall_controls()
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_fixed_program_carrier_two_use_cycle323_2026_07_18.py", line 905, in semantic_firewall_controls
+    text = normalized(NOTE)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_fixed_program_carrier_two_use_cycle323_2026_07_18.py", line 92, in normalized
+    body = path.read_text(encoding="utf-8").lower()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/PHYSICAL_FIXED_PROGRAM_CARRIER_TWO_USE_CYCLE323_NOTE_2026-07-18.md'

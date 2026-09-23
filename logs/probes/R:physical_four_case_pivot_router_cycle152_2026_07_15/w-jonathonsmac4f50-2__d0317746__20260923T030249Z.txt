@@ -1,0 +1,41 @@
+AUTHORITY AND PREDECESSOR
+FAIL review note exists :: 
+PASS Cycle-151 commutation and multiplication law remains conflict-free :: 77420
+PASS router uses the established 32-role signed-row alphabet :: 
+
+FOUR-CASE CONTROLLER
+PASS four case rows encode every commutation-bit pair :: {(0, 0): 'L10', (0, 1): 'L11', (1, 0): 'L12', (1, 1): 'L2'}
+PASS eight lane rows select exactly two outputs per case :: {(0, 0): ('L3', 'L5'), (0, 1): ('L3', 'L6'), (1, 0): ('L4', 'L5'), (1, 1): ('L4', 'L7')}
+PASS five selector roles cover the two first-row and three second-row sources :: {'L3': 'l1_g1', 'L4': 'l1_p', 'L5': 'l2_g2', 'L6': 'l2_p', 'L7': 'l2_product'}
+PASS one shared existing marker role types every branch socket :: ('LAUNCH_A', 4)
+
+LAW MERGE
+PASS 192 physical row-copy contexts cover all selected rows :: Counter({5: 192})
+PASS 204 canonical router rows expand to 4,896 proper-cubic rows :: (204, 4896)
+PASS router merges into 82,316 rows without conflict :: (77420, 4896, 82316)
+PASS all wrong selectors remain inert at every typed branch socket :: (1024, ())
+PASS deleting any direct router parent suppresses its intended output :: (1004, ())
+
+EXHAUSTIVE CAUSAL GRAPHS
+PASS all 10,800 bases/outcomes have the exact finite causal graph :: (Counter({(1, 0): 2880, (0, 1): 2880, (1, 1): 2880, (0, 0): 2160}), [])
+PASS all 43,200 rotated canonical-basis graphs are exact :: []
+PASS combined graph census is 54,000 with all four pivot cases present :: 54000
+
+MIXED-DEVICE CLOSURE
+PASS router rows preserve all 86,640 prior unified histories :: []
+PASS Cycle-144 terminal retains exactly its two priced fronts :: {(-9, -1, 0): frozenset({'B1'}), (-11, 1, 2): frozenset({'R_B21'})}
+
+SCOPE
+FAIL note contains: physical four-case pivot router :: 
+FAIL note contains: supplied commutation bits :: 
+FAIL note contains: supplied product row :: 
+FAIL note contains: case-dependent output sites :: 
+FAIL note contains: deterministic membership remains open :: 
+FAIL note contains: does not derive occurrence or equal weights :: 
+FAIL note contains: no axiom addition follows :: 
+FAIL note contains: n1 — alternative routes :: 
+FAIL note contains: n8 — cross-cycle echo :: 
+
+TOTAL
+PASS 16 FAIL 10
+RESULT FAIL

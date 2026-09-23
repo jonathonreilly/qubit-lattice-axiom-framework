@@ -1,0 +1,21 @@
+FAIL the Cycle-334 note exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/PHYSICAL_ENVIRONMENT_EXPORT_REALIZED_MEMBER_BRIDGE_CYCLE334_NOTE_2026-07-18.md
+FAIL the recorded N1-N8 methodology commit remains in origin/main and the primitive reference is explicit :: {'recorded': 'df24c9086f485a284a8c103c7c7a1e2dccc0d7bd', 'current_ref': 'origin/main'}
+PASS the approved realized-state primitive is chain-satisfying and content-free at the registered source :: {'current_path': 'docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md', 'aliased_paths': ['docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md'], 'legacy_claim_ids': [], 'note': "Explicitly approved framework primitive for the realized-state interface: the axioms select no state; a physical history fixes one law-admissible realized state, and derivations may evaluate at it POINTWISE only. Supplies the slot, never the content: no state, state-selection rule, measure, typicality/genericity assumption, weighting, probability rule, preferred/default state, or state-contingent value. Policing clauses: no averaging over alternatives; 'typical'/'generic' banned as specialization predicates; the counterfactual test (a quoted number must be invariant over the law-admissible family, else it is registered data); law admissibility. The past hypothesis is explicitly NOT housed here (a strictly stronger specialness input; anchored at the arrow note). Dependencies on this primitive chain-satisfy without bounding downstream rows; the primitive itself carries no contingent content, and rows quoting data of a particular realized state remain conditional on that supplied data as supplied inputs always are."}
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_environment_export_realized_member_bridge_cycle334_2026_07_18.py", line 911, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_environment_export_realized_member_bridge_cycle334_2026_07_18.py", line 866, in main
+    no_go_contract_control()
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_environment_export_realized_member_bridge_cycle334_2026_07_18.py", line 136, in no_go_contract_control
+    note = NOTE.read_text(encoding="utf-8")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/PHYSICAL_ENVIRONMENT_EXPORT_REALIZED_MEMBER_BRIDGE_CYCLE334_NOTE_2026-07-18.md'

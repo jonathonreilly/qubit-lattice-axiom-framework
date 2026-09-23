@@ -1,0 +1,24 @@
+CYCLE576 PHYSICAL DYNAMICAL METRIC/SOURCE-LAW BRIDGE TOURNAMENT
+authority none audit unset
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py", line 744, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py", line 595, in main
+    dependencies = dependency_controls()
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py", line 109, in dependency_controls
+    observed = {name: file_sha(ROOT / name) for name in DEPENDENCIES}
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_dynamical_metric_source_law_bridge_tournament_cycle576_2026_07_22.py", line 105, in file_sha
+    return sha256(path.read_bytes()).hexdigest()
+                  ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/FINITE_SOURCE_INSERTION_ALGEBRA_CARRIER_LABEL_SUPPORT_CYCLE572_BOUNDED_THEOREM_NOTE_2026-07-22.md'

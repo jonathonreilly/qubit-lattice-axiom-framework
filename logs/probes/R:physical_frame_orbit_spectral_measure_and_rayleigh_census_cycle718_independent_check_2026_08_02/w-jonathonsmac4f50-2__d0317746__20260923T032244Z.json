@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_frame_orbit_spectral_measure_and_rayleigh_census_cycle718_independent_check_2026_08_02",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_frame_orbit_spectral_measure_and_rayleigh_census_cycle718_independent_check_2026_08_02.py",
+ "seed": 33764,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d0317746",
+ "started_utc": "20260923T032244Z",
+ "elapsed_s": 5.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=26 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d86fa1ef24c23dc788054481075623aca0e65078915e1d17bd5bd05ad075476f",
+ "stdout_tail": "s=0.825577\nPASS independent.regular_coset.seed7181.L3 distance=0.976595, measure=1.029e-10, Rayleigh=1.822e-12\nPASS independent.basis_witness.seed7181.L3 individual-weight rotation range=0.456923\nPASS independent.census.L3 patterns=14, finest=0, classes={1: 2, 3: 2, 7: 2}, gaps=2.392e-11/4.287e-05\nPASS independent.spectral_mutation.L3 rank-one mutation shift=1.597e-04\nPASS independent.action.L4 anti-action=576/576, reversed=120/576\nPASS independent.conjugator.L4 correct=0.000e+00, reversed witness=4.000000\nPASS independent.matrix_fibres.L4 within=1.243e-10, cross minimum=4.000000\nPASS independent.eigenspaces.L4 clusters=187, doublets=92, internal=3.553e-14, external=4.669e-03\nPASS independent.orbit_measure.seed7180.L4 within=2.976e-10, cross=0.867442\nPASS independent.regular_coset.seed7180.L4 distance=1.098451, measure=1.425e-10, Rayleigh=6.583e-11\nPASS independent.basis_witness.seed7180.L4 individual-weight rotation range=0.419737\nPASS independent.orbit_measure.seed7181.L4 within=3.074e-10, cross=0.883554\nPASS independent.regular_coset.seed7181.L4 distance=1.390780, measure=1.955e-10, Rayleigh=1.266e-11\nPASS independent.basis_witness.seed7181.L4 individual-weight rotation range=0.450735\nPASS independent.census.L4 patterns=15, finest=48, classes={5: 4, 9: 4, 11: 4, 13: 7}, gaps=3.185e-10/1.826e-04\nPASS independent.spectral_mutation.L4 rank-one mutation shift=8.321e-05\nPASS independent.primary_receipt independent results agree with primary finite anchors\nTOTAL: PASS=26 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T032249Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_frame_orbit_spectral_measure_and_rayleigh_census_cycle718_independent_check_2026_08_02.txt against the .txt beside this log"
+  ]
+ }
+}

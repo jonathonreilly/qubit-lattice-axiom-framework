@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_facet_charge_tick_mixed_split_cycle726_independent_check_2026_08_04",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_facet_charge_tick_mixed_split_cycle726_independent_check_2026_08_04.py",
+ "seed": 32484,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d0317746",
+ "started_utc": "20260923T030124Z",
+ "elapsed_s": 1.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4114493bc945e20f3b12c5916c95db2a019a1c4ba92ba73668dab256d5f7337f",
+ "stdout_tail": "PASS independent minimal-cell census                  cells 2672\nPASS independent denominator-two certificate          samples 2672, support 411, weight 170, least slack 0\nPASS independent attaining witness                    pieces 24, normalized volume 24, facet charge 85\nPASS independent facet triangulation census           unit tetrahedra 56, compatibility six-cliques 180\nPASS independent tick spectrum                        {18: 16, 19: 72, 20: 84, 21: 8}\nPASS independent mixed spectrum                       {8: 12, 9: 64, 10: 104}\nPASS independent diagonal-pattern census              realizable 58, absent [22, 25, 26, 37, 38, 41]\nPASS independent functional-law split                 pattern collisions tick 0 mixed 36; parity tick [0] mixed [0, 1]\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T030126Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

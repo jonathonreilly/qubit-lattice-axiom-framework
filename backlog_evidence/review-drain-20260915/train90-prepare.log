@@ -1,0 +1,52 @@
+[detached HEAD 8791ad13fe] Preserve independently reviewed source unit PR8176
+ Date: Wed Sep 23 01:31:24 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 36 files changed, 1475 insertions(+)
+ create mode 100644 docs/MARKED_TREE_SINGLE_SEED_DYNAMIC_PROGRAM_AND_FINITE_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-17.md
+ create mode 100644 docs/work_history/review_loop/pr8176/README.md
+ create mode 100644 docs/work_history/review_loop/pr8176/originals/pr8176-01-APPROACH_REGISTRY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/originals/pr8176-02-CHECKER_block32_findings.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/originals/pr8176-03-CLAIM_STATUS_CERTIFICATE_block32.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/originals/pr8176-04-GOAL_block32.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/originals/pr8176-05-HANDOFF.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/originals/pr8176-06-NO_GO_LEDGER.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/originals/pr8176-07-OPPORTUNITY_QUEUE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/originals/pr8176-08-RESULTS_block32.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/originals/pr8176-09-REVIEW_HISTORY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/originals/pr8176-10-STATE.yaml.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/originals/pr8176-11-TRACE_GATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/originals/pr8176-12-supervisor_control_block32_climb.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/originals/pr8176-13-supervisor_control_block32_climb.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/originals/pr8176-14-supervisor_control_block32_climb_seeded.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/originals/pr8176-15-supervisor_control_block32_climb_seeded.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/originals/pr8176-16-supervisor_control_block32_crosscheck.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/originals/pr8176-17-supervisor_control_block32_crosscheck.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/originals/pr8176-18-supervisor_control_block32_mintree.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/originals/pr8176-19-supervisor_control_block32_mintree.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/originals/pr8176-20-supervisor_control_block32_refuter.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/originals/pr8176-21-supervisor_control_block32_refuter.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/originals/pr8176-22-supervisor_control_block32_ssdp.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/originals/pr8176-23-supervisor_control_block32_ssdp.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/originals/pr8176-24-supervisor_control_block32_treedp.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/originals/pr8176-25-supervisor_control_block32_treedp.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/originals/pr8176-26-ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_MINIMAL_MARKED_TREE_THE_COUNTED_FAMILYS_CONSTANT_IS_AT_LEAST_ONE_EXACT_CERTIFICATES_AND_THE_TREE_ROUTES_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-17.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/originals/pr8176-27-citation_graph_manifest.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/originals/pr8176-28-admissibility_rule_six_axis_formation_threshold_minimal_marked_tree_family_constant_at_least_one_exact_certificates_and_the_tree_route_floor_2026_09_17.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/originals/pr8176-29-admissibility_rule_six_axis_formation_threshold_minimal_marked_tree_family_constant_at_least_one_exact_certificates_and_the_tree_route_floor_2026_09_17.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/pr8176-deferred-science.txt
+ create mode 100644 docs/work_history/review_loop/pr8176/pr8176-original-delta.patch.gz
+ create mode 100644 docs/work_history/review_loop/pr8176/pr8176-original-manifest.json
+ create mode 100644 logs/runner-cache/marked_tree_single_seed_dynamic_program_finite_rational_certificates_check_2026_09_17.txt
+ create mode 100644 scripts/marked_tree_single_seed_dynamic_program_finite_rational_certificates_check_2026_09_17.py
+FROZEN 8791ad13feb1201ce2ee72c6c50dec5656d63a68 sources 36 inputs 63 notes 1

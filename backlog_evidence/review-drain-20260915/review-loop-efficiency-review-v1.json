@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "unit_id": "review-loop-efficiency-docs-v1",
+  "verdict": "ACCEPTED_FOR_STAGING",
+  "reviewer": {
+    "session": "/root/review_efficiency_methodology",
+    "same_session": true,
+    "role": "independent MethodologySkillReviewer"
+  },
+  "comparison_main": "64f53dd443cd02997394e1a8bef16e2baf9f9d39",
+  "observed_current_main": "eadad252feffba1891b5b774822da85b92842578",
+  "source_hashes": [
+    {
+      "path": "references/REVIEW_UNITS.md",
+      "before_sha256": "cfcb43f40791d8e8772e86fd2b53fb11008c5075e416f8cf4eb84bd18ab71773",
+      "after_sha256": "03a9bf84e4efaf7d0d3b9efd8b2b9027c9005fd91be7862f3de1f58fd0b6a18f",
+      "before_bytes": 10211,
+      "after_bytes": 11698,
+      "remote_at_comparison_main_matches_before": true
+    },
+    {
+      "path": "references/OPERATIONS.md",
+      "before_sha256": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096",
+      "after_sha256": "749a19389fbab3042479b32e2499ae95ff04e1590e3edb0cee60ad267f57c0af",
+      "before_bytes": 6185,
+      "after_bytes": 6575,
+      "remote_at_comparison_main_matches_before": true
+    },
+    {
+      "path": "references/FIXES_AND_REPORTING.md",
+      "before_sha256": "bbdb794f3925b1a473db22a94eeaa4d0b6be5e302f6dc1463c27306738b731b3",
+      "after_sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "before_bytes": 6707,
+      "after_bytes": 7554,
+      "remote_at_comparison_main_matches_before": true
+    },
+    {
+      "path": "references/UNIT_RECEIPT.md",
+      "before_sha256": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d",
+      "after_sha256": "6ab026a472ce9a601385796eea6dcd32658d048cb14f3fdffad1bd51ee409666",
+      "before_bytes": 14219,
+      "after_bytes": 14592,
+      "remote_at_comparison_main_matches_before": true
+    }
+  ],
+  "patch": {
+    "path": "/private/tmp/review-drain-20260915/review-loop-efficiency-proposal-v1/proposal.patch",
+    "sha256": "a9e9899332d59c462fd9be9e302c305f3577973c4a23948a513e4b0e27181877"
+  },
+  "findings": [],
+  "iterations": 1,
+  "applicable_lenses": {
+    "MethodologySkillReviewer": "PASS",
+    "RepoGovernanceReviewer": "PASS",
+    "science_lenses": "not applicable: methodology documentation only"
+  },
+  "review_scope": "Complete baseline entry and relevant setup, units, fixes, operations, receipt and lenses, exact four-file patch and proposal; actual checker/tooling requirements, raw cache API order, IO emitter and capture guards; representative recovery and collision evidence. No scientific claim adjudication.",
+  "conclusions": [
+    "Frozen capture retains separate exact base/tree and actual reviewed main; ancestry, all-category overlap, before/after freshness and same-session semantic confirmation remain mandatory. This is no waiver of exact-current-main integration validation.",
+    "Compact recovery permits omission only of unrelated whole-main diff material. Original delta, deleted/inherited source, complete proofs and actual inputs remain covered; verified real original path inventory and endpoint snapshots against immutable Git objects.",
+    "Repeated default and JSON output must work with canonical evidence present. Unique sidecars and raw result interception avoid duplicate scientific execution while preserving collisions and later identity failures. No new attempt is authorized.",
+    "Tooling category requirement is confirmed by actual review_receipt.py required_tools subset check; source ownership alone cannot satisfy it. Matching verified discovery can be reused without scientific reruns.",
+    "Archive basename preparation matches actual tracked docs Markdown invariant and README.md/SKILL.md exceptions; timing prevents invalidating an already frozen run.",
+    "No changes to Astra low default, xhigh escalation, independent reviewer provenance, full-source preservation, audit boundary, no-new-PR or no-approval policy. Added wording is bounded and operationally supported."
+  ],
+  "independent_checks": {
+    "primary_controls": 49,
+    "additional_controls": [
+      "existing attempt marker exclusive recreation fails with prior bytes intact",
+      "actual collect_docs finds historical PROOF.md collision; README.md remains exception",
+      "three text scenarios cover deleted/inherited recovery, changed integration base and disjoint semantic interaction"
+    ],
+    "science_executions": 0,
+    "pipeline_executions": 0,
+    "audit_executions": 0,
+    "owned_worktree_edits": 0
+  },
+  "limitations": [
+    "AST-isolated synthetic controls test IO and guard behavior only; they do not execute or validate science.",
+    "Mechanical path disjointness alone does not verify semantic independence; proposed same-session human review is essential.",
+    "Acceptance covers exact proposed source for staging; final staged/current-main identities and integration gate remain pending. No prospective approval of later main advances."
+  ],
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/review-loop-efficiency-proposal-v1/manifest.json",
+      "sha256": "0bbedf9128373615ab314c5ee2222133271ba8ea52239703251c423efeaf6fcc"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-loop-efficiency-proposal-v1/evidence.json",
+      "sha256": "baf6023e8b665d67d9eef7886532bb514d71cbd3fa0b0c23de2e15785882a858"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-loop-efficiency-proposal-v1/rationale.md",
+      "sha256": "7d971a44250c35c4e5d52ea0d6feee7807d54b5641a98652b6e698b2de667939"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-loop-efficiency-proposal-v1/validation.json",
+      "sha256": "abe0b0faa4dbf6b3e67e37f4270722678c155e65ebc690f6586aae26773d5755"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-loop-efficiency-independent-controls-v1.py",
+      "sha256": "e01ae3fd45f63b8d8c821e4689c0c2a54baa2368a11f572a58cc43f13cf8dbe8"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-loop-efficiency-independent-controls-v1.json",
+      "sha256": "a293ad68a7ff882dbffe3517ddd561afa14000c73b9044a8b76f17a3350ef5aa"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-loop-efficiency-supplemental-controls-v1.json",
+      "sha256": "60ff9e148343f662734ade5416d73613025d352068cb42a17289353292032f30"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-loop-efficiency-current-main-source-check-v1.json",
+      "sha256": "a0af8589fc167f72fb4249c5a291996c683e38b3da3c4a2243ba81632386ca5a"
+    }
+  ],
+  "future_confirmation": "Keep this same independent reviewer session for affected changes, staged identities and actual-current-main preservation confirmation."
+}

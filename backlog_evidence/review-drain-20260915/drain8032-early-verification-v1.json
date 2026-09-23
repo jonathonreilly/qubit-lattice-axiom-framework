@@ -1,0 +1,12 @@
+{
+  "second_emit": "FileExistsError as predicted",
+  "raw_traceback": "Traceback (most recent call last):\n  File \"/private/tmp/review-drain-20260915/check8032/early_verify.py\", line 38, in <module>\n    try:ns['_emit'](fake.copy(),1,scopes)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/review-drain-20260915/review-meta-slot/scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py\", line 41, in _emit\n    with _result_path.open('x') as _result_file:\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1013, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: [Errno 17] File exists: '/private/tmp/review-drain-20260915/check8032/io-v1/logs/runner-cache/synthetic_emit.json'\n",
+  "source_count": 82,
+  "original_roundtrips": 84,
+  "context_pins": 19,
+  "registry_proposals_preserve_existing": true,
+  "science_AST_unchanged": true,
+  "primary_runs": 0,
+  "helper_runs": 0,
+  "base": "3dca18ddd0082dc23bb12c7ca38939b901c28736"
+}

@@ -1,0 +1,261 @@
+--- original/docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md
++++ prepared/docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md
+@@ -4,7 +4,7 @@
+ bodyType: bounded_theorem
+ runner: scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py
+ upstream_dependencies:
+-  - gauge_wilson_finite_transporter_unitarity_pw_defect_bounded_theorem_note_2026-09-07
++  - gauge_wilson_pw_compression_shell_and_energy_path_bounds_bounded_theorem_note_2026-09-07
+   - gauge_wilson_electric_dominated_volume_uniform_gap_bounded_theorem_note_2026-09-07
+ claim_scope: "Actual finite-PW charged path trial has an explicit ambient-volume-independent energy upper bound converging to4d/a for fixed distinct-link path and full physical ground premise."
+ ---
+@@ -24,17 +24,17 @@
+ 
+ For the actual full-irrep finite Peter–Weyl Hamiltonian, a compressed charged path applied to its full neutral physical ground has a volume-independent energy bound, not merely a state-norm estimate. The bound tends to the full-unitary trial cost4d/a as the cutoff grows for each fixed path. It requires a nonzero acceptance budget and uses the ground of the finite Hamiltonian itself.
+ 
+-The [transporter defect theorem](GAUGE_WILSON_FINITE_TRANSPORTER_UNITARITY_PW_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-07.md) provides the exact shell leakage and distinct-link projection identity. Its explicitly open kinetic-energy bridge is repaired here by estimating the actual kinetic commutator. The [uniform weak-window theorem](GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md) supplies a unique physical FULL tensor-carrier ground in the stated regime; outside it that full-ground premise remains conditional. The mixed replacement trial need not be gauge invariant, so minimization only inside a constrained singlet space would not suffice.
+-
+-The [exact support helper](../scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py) performs40 geometry, shell-energy, compression-identity and premise controls. Its abstract3-dimensional compression fixture is explicitly not a SU3 ground simulation. The [durable packet](../.claude/science/physics-loops/finite-pw-charged-upper-20260907/PROOF_REVIEW.md) retains both complete derivations, prospective contracts, the corrected root generator normalization, original and strengthened restricted-minimum control, independent reviews and identical-payload port receipt.
++The [compression, shell and path theorem](GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md) provides the exact shell leakage and distinct-link projection identity. Its positive compression and path identities are sufficient here; its broader negative certification remains deferred. The present energy estimate supplies the additional kinetic commutator bound. The [uniform weak-window theorem](GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md) supplies a unique physical FULL tensor-carrier ground in the stated regime; outside it that full-ground premise remains conditional. The mixed replacement trial need not be gauge invariant, so minimization only inside a constrained singlet space would not suffice.
++
++The [exact support helper](../scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py) performs40 geometry, shell-energy, compression-identity and premise controls. Its abstract3-dimensional compression fixture is explicitly not a SU3 ground simulation. The [exact historical recovery](work_history/repo/review_feedback/pr8032-evidence/README.md) retains every original derivation, prospective contract, normalization correction, restricted-minimum control and historical review/output. Both complete positive energy derivations appear below. Historical reviews and outputs confer no current execution or audit authority.
+ 
+ The [actual R1 helper](../scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py) independently computes22 exact Haar-contraction and charged-energy controls on one four-link plaquette. Its full proof is appended. The fixed fixture has a projected trial excess strictly between4 and4.01 at a=1: the full-unitary exact-four identity fails. The sharper local-energy theorem succeeds while its optional worst-case replacement-budget condition fails; no parameter was retuned. This finite fixture does not establish the general theorem by sampling.
+ 
+-The complete analytical proof follows. The candidate formula was shared before independently frozen writeups. A displayed root generator convention was corrected from Tr(T_A T_B)=2delta_AB to delta_AB; the Casimir and every subsequent formula already used the latter. No cutoff or physical parameter was fitted. The result supplies no new lower confinement theorem, infinite-volume charged-minimum convergence or implementation of the nonunitary trial preparation.
++The complete analytical proof follows. The generator convention is Tr(T_A T_B)=delta_AB; the exact earlier normalization error and its correction remain in the historical recovery. No cutoff or physical parameter was fitted. The result supplies no new lower confinement theorem, infinite-volume charged-minimum convergence or implementation of the nonunitary trial preparation.
+ 
+ # Volume-uniform finite-PW charged trial upper bound
+ 
+-2026-09-07. Root's proposed formula was exposed before the prospective contract. This derivation was written without reading a completed root proof. It repairs the specific missing form-energy bridge in block41, for the supplied finite Peter–Weyl Hamiltonian; it does not derive a hardware compiler or a physical coupling.
++This derivation supplies the form-energy estimate for the supplied finite Peter–Weyl Hamiltonian. Here a>0 is the supplied temporal-scaling kinetic parameter, not a derived spatial lattice spacing. The Wilson dynamics, cutoff, v and ground-state premise remain explicit model inputs; no hardware compiler or physical coupling is derived.
+ 
+ ## 1. Model and the necessary full-carrier ground premise
+ 
+@@ -54,7 +54,7 @@
+ 
+ ## 2. Accepted charged trial and exact Rayleigh commutator
+ 
+-Let W be the ordered full fundamental transporter along a path with d distinct links, with inverse factors for reverse orientations. Regard W Omega as a matrix-valued function with Hilbert–Schmidt color norm Tr/3; this is the standard normalized external-source singlet contraction. Define C=P W P. Block41's exact distinct-link projection identity identifies C with the product of the compressed link transporters. Its exact endpoint covariance makes C Omega a vector in the external fundamental/antifundamental charged sector.
++Let W be the ordered full fundamental transporter along a path with d distinct links, with inverse factors for reverse orientations. Regard W Omega as a matrix-valued function with Hilbert–Schmidt color norm Tr/3; this is the standard normalized external-source singlet contraction. Define C=P W P. The compression and path theorem’s exact distinct-link projection identity identifies C with the product of the compressed link transporters. Its exact endpoint covariance makes C Omega a vector in the external fundamental/antifundamental charged sector.
+ 
+ For e_R=[R^2-floor(R^2/4)+3R]/a, define
+ 
+@@ -150,11 +150,9 @@
+ The charged sector is nonempty when the trial is nonzero. The weak-regime full neutral ground premise implies a nonnegative charged excess, but no new charged lower bound is derived here. Unused-qubit sectors, a physical implementation of C, repeated-link paths, time evolution or infinite-volume convergence of charged minima remain separate questions. The input is the actual full finite ground, not the projection of an assumed untruncated ground. The result therefore repairs precisely the missing finite-carrier upper-trial bridge while retaining the model and preparation assumptions.
+ 
+ 
+-# Exact actual R1 charged-energy supplement
+-
+-# Exact actual one-plaquette R1 charged-energy fixture
+-
+-2026-09-07. This fixture was fixed prospectively before the exact Haar-contraction checker ran. All22 checks passed on the first execution. It corroborates a particular finite case of42; it does not prove the general volume-uniform bound by sampling.
++# Exact one-plaquette cutoff-R=1 charged-energy fixture
++
++This prospectively fixed fixture has 22 exact finite predicates. Historical executions are retained in the recovery archive; a current source-bound execution is separate. The fixture corroborates a particular finite case of the local-energy estimate; it does not prove the general volume-uniform bound by sampling.
+ 
+ ## Actual neutral full-carrier ground
+ 
+@@ -194,8 +192,133 @@
+ 
+ The exact excess Etrial-E0 is strictly greater than4 but less than4.01. This supplies an adverse example to simply copying the full-unitary exact4 energy identity into the finite carrier. It does not imply that this trial minimizes the full charged sector.
+ 
+-The actual local kinetic budgets are E_path=8t^2/N and E_face=32t^2/N, with e_R=4. The norm loss is14t^2/(9N), bounded by theta=E_path/e_R. The checker verifies the42 estimate using rational upper enclosures sqrt(theta)<=1/50, sqrt(E_path)<=3/100, and sqrt(E_face/e_R)<=3/100, each certified by squaring positive rational numbers. There is one touching face. Thus the exact trial excess is below the certified rational bound
++The actual local kinetic budgets are E_path=8t^2/N and E_face=32t^2/N, with e_R=4. The norm loss is14t^2/(9N), bounded by theta=E_path/e_R. The checker verifies the local-energy estimate using rational upper enclosures sqrt(theta)<=1/50, sqrt(E_path)<=3/100, and sqrt(E_face/e_R)<=3/100, each certified by squaring positive rational numbers. There is one touching face. Thus the exact trial excess is below the certified rational bound
+ 
+  [4+(1/50)(4+4(3/100))+2v(3/100+1/50)]/(1-theta).
+ 
+ For this fixed prospective v, the cruder geometry-independent theta_bar=8v/e_R is GREATER than1. The fully explicit sufficient estimate based only on v therefore does not apply to this particular R1 fixture, while the sharper actual-energy version does. The fixture was not retuned to hide this limitation. It validates the useful local-energy theorem and demonstrates the conservatism of its optional worst-case replacement budget.
++
++
++# Appendix: full alternative local energy-form derivation
++
++This complete alternative derivation uses the same supplied compact Hamiltonian and explicit temporal-scaling kinetic parameter a. Its historical writing and correction provenance is retained in the exact recovery.
++
++## 1. Model, ground-state premise and local energy budget
++
++Let G be a finite cubic link graph with a subset of its elementary plaquettes. Every link belongs to at most4 retained faces. On the full tensor product of actual complete-irrep PW link cutoffs p+q<=R, R>=1, define
++
++ H_R=K_R+sum_f P V_f P, K=sum_e K_e,
++ K_e=-3 Delta_e/(2a), V_f=v(1-ReTr(U_f)/3), a>0,v>=0.
++
++Here P is the product cutoff. All V_f are bounded scalar multiplication operators with 0<=V_f<=2v before and after compression. No projection to boundary singlets is included in the carrier definition.
++
++Let Omega_R be a normalized gauge-invariant eigenvector at the lowest energy E0_R of this FULL tensor-carrier Hamiltonian. In particular the existing uniform weak-window theorem supplies a unique such full ground, and its exact gauge covariance plus absence of nontrivial one-dimensional SU3 characters makes it physical. One must not replace this full-carrier premise by an arbitrary minimum solely over the gauge-singlet sector: the replacement trial below need not be gauge invariant. Outside the proven weak window, existence of the required full ground with the stipulated gauge transformation remains an explicit premise.
++
++Write rho=|Omega_R><Omega_R|. Replace one link e by its normalized Haar vacuum while retaining the reduced density on every other link: sigma_e=|1_e><1_e| tensor Tr_e rho. This is an admissible mixed trial in the full cutoff tensor carrier. Every kinetic term other than K_e and every face not containing e has exactly unchanged expectation. The new K_e expectation is0. For an incident face the new potential expectation is at most2v while the old is nonnegative. The variational principle for mixed trials therefore gives
++
++ E_e:=<Omega_R,K_e Omega_R><=2v n_e<=8v.       (1)
++
++This estimate is independent of R and ambient volume; its use of an unrestricted mixed trial is essential. For a d-link path define E_path=sum_path E_e<=8vd. For a face define E_f=sum_(e in f)E_e<=32v. Boundary omissions only decrease these bounds.
++
++## 2. Actual charged trial and its normalization
++
++Take any oriented simple path of d distinct links from x to y. Let W be its full unitary3-by3 transporter matrix, and C=P W P its compression, acting entrywise. Since all individual link cutoffs commute with other-link matrices, C equals the product of compressed distinct-link transporters. Work with matrix-valued functions in Hilbert–Schmidt norm divided by3, so ||W Omega_R||=1. Equivalently this is the9-component static-source vector with entries W_ab Omega_R/sqrt3. Gauge invariance of Omega_R and covariance of P and W put both W Omega_R and C Omega_R in the correct fundamental/antifundamental source sector.
++
++The exact top-shell threshold is e_R=[ceil(3R^2/4)+3R]/a. Let
++
++ theta=E_path/e_R, q=||C Omega_R||^2.
++
++The compression and path theorem’s actual fusion/projector estimate gives 1-q<=theta. Suppose theta<1, so q>0 and the normalized charged trial exists. The stronger actual q may be used; replacing it by1-theta is only a sufficient estimate. The upper bound here concerns the charged sector of the same finite-cutoff Hamiltonian, relative to its own neutral ground E0_R.
++
++Because H_R Omega_R=E0_R Omega_R entrywise, its unnormalized excess-energy numerator is exactly
++
++ N=<C Omega_R,(H_R-E0_R)C Omega_R>
++   =<C Omega_R,[H_R,C]Omega_R>.                (2)
++
++This subtracts the vacuum energy BEFORE estimating and avoids an ambient-volume E0_R normalization error. N>=0 since E0_R is the full tensor-carrier minimum. The normalized trial has excess N/q.
++
++## 3. Kinetic commutator in an actual Sobolev norm
++
++Let D_eA be invariant first derivatives with the generator normalization Tr(T_A T_B)=delta_AB and sum_A T_A^2=(8/3)I. Then sum_(e,A)||D_eA Omega_R||^2=(2a/3)E_path when the sum is restricted to path links. Each derivative of W on a path link is a product of unitary prefix and suffix matrices with one generator insertion. Consequently the operator row formed by these insertions satisfies
++
++ sum_(e,A)(D_eA W)(D_eA W)^*=(8d/3)I.
++
++The product rule for K gives a zeroth-order term (4d/a)W and a first-derivative term with coefficient3/a. The row-operator Cauchy–Schwarz estimate therefore proves
++
++ ||[K,W]Omega_R||
++ <=4d/a+(3/a)sqrt(8d/3)sqrt((2a/3)E_path)
++ =4d/a+4sqrt(d E_path/a)=:B_K.                (3)
++
++The result is a form/derivative calculation, not an inference from vector-norm convergence. PW ground states on the finite graph are finite sums of smooth matrix coefficients, so all derivatives and products used here lie in the relevant operator domains without a limiting-domain argument.
++
++In the same matrix Hilbert–Schmidt inner product, the exact SU3 trace identity gives
++
++ <W Omega_R,[K,W]Omega_R>=4d/a.               (4)
++
++Indeed W is pointwise unitary, the potential is scalar, and Tr(W^* D_eA W)=0 because the inserted generator is traceless. Every cross term containing a derivative of Omega_R vanishes after color trace, with no reality assumption on Omega_R. This is the full-unitary trial identity for the supplied full-unitary static-source trial, now combined with an independent derivative-norm estimate.
++
++Since K commutes with P, [K_R,C]Omega_R=P[K,W]Omega_R. Put Q=I-P. Equations(3)–(4) then imply
++
++ |<C Omega_R,[K_R,C]Omega_R>-4d/a|
++ =|<Q W Omega_R,Q[K,W]Omega_R>|
++ <=sqrt(theta) B_K.                           (5)
++
++The discarded vector is paired with an explicitly bounded derivative vector. This is the missing energy-form control that norm closeness alone did not provide.
++
++## 4. Only touching face commutators contribute
++
++A compressed face operator whose link set is disjoint from the path commutes with C EXACTLY: their link tensor supports are disjoint and the face operator is a scalar on the source color. Thus only N_touch<=4d faces occur in the potential part of(2).
++
++For any such face, full multiplication satisfies [V_f,W]=0, so the exact compression identity is
++
++ [P V_f P,P W P]=P W Q V_f P-P V_f Q W P.     (6)
++
++Multiplication by a face fundamental or antifundamental character changes each face link label by a single fundamental fusion step. Therefore Q V_f P annihilates the subspace in which all four face links have p+q<=R-1. If B_f is the union projector onto their top shells, then Q V_f P=Q V_f P B_f. The commuting shell union bound and the shell kinetic lower bound give
++
++ ||Q V_f Omega_R||<=2v ||B_f Omega_R||
++ <=2v sqrt(E_f/e_R).
++
++Using ||Q W Omega_R||<=sqrt(theta), equation(6) yields
++
++ ||[P V_f P,C]Omega_R||
++ <=2v(sqrt(E_f/e_R)+sqrt(theta)).             (7)
++
++In(2) the left vector has norm sqrt(q)<=1, so the absolute potential contribution is no greater than the sum of these bounds. There is no sum over distant faces, no volume-sized potential norm, and no hidden factor of the9 source components: the single normalized Hilbert–Schmidt norm already includes them.
++
++## 5. Result and uniformity statement
++
++Let E_xy,R be the infimum of H_R in the source sector. Combining the charged trial with(2),(5),(7) gives the explicit bound
++
++ 0<=E_xy,R-E0_R
++ <=[4d/a+sqrt(theta)(4d/a+4sqrt(d E_path/a))
++       +sum_(f touches path)2v(sqrt(E_f/e_R)+sqrt(theta))]/(1-theta),  (8)
++
++provided theta=E_path/e_R<1. In particular set theta_bar=8vd/e_R. When theta_bar<1, a fully geometry-independent sufficient bound is
++
++ E_xy,R-E0_R
++ <=[4d/a+sqrt(theta_bar)(4d/a+4d sqrt(8v/a))
++       +8vd(sqrt(32v/e_R)+sqrt(theta_bar))]/(1-theta_bar).           (9)
++
++For fixed a,v,d, the right side tends to4d/a as R tends to infinity, uniformly over every ambient cubic graph satisfying the full-ground premise. The error is O_(a,v,d)(R^-1); the displayed bound, rather than an unspecified asymptotic constant, is available. It is not uniform in arbitrary d at fixed R: the sufficient normalization budget itself requires e_R>8vd. At v=0, theta_bar=0, the actual vacuum trial lies exactly inside R>=1, and the bound is exactly4d/a for every cutoff.
++
++This repairs a specific model-to-cutoff energy argument. It does not implement C as a deterministic unitary circuit, select R or a physical coupling from the axioms, identify a continuum static potential, establish convergence of infinite-volume charged minima, or remove the weak-window/full-ground premise. A separate sector-resolvent theorem would be needed to claim a new uniform finite-cutoff lower confinement bound; none is silently inferred here.
++
++## Evidence resolution and applicability
++
++The primary runner retains 40 mathematical predicates: 20 shell minima, 9 finite-box incidence/path checks, 6 abstract compression checks, 3 scalar acceptance checks, one 2-by-2 restricted-minimum adverse example and one generator-convention discriminator. The helper retains 22 exact one-plaquette and scalar predicates. Neither executes arbitrary-volume dynamics. Resource and input guards are not counted as mathematical checks.
++
++N1: This is a positive conditional energy theorem with finite adverse examples, not an exhaustive negative classification. Parent negative certification remains deferred; no fifth route or negative-certification PASS is asserted.
++
++N2: The full carrier, distinct-link path, acceptance condition and local-face hypotheses are related proof premises, not independently counted obstructions.
++
++N3: The supplied Haar Wilson operator, kinetic parameter a, coupling v, cutoff and neutral full-ground premise are explicit. Framework axioms and registered primitives do not select these model inputs.
++
++N4: The positive compression and path source is the actual dependency. The finite extra-energy example concerns this trial, not the charged-sector minimum.
++
++N5: Five resolution labels in each runner describe only their listed actual predicates. Per-site dynamics and lattice-wide execution are checked and not executed; their analytic statements rely on the written proof. The exact finite cubic graph enumeration is separately identified under finite blocks.
++
++N6: The historical generator-normalization error and initially weak restricted-ground predicate are retained exactly; the corrected conventions and stronger matrix control remain live.
++
++N7: Better trials, repeated-link arguments, preparation, arbitrary-coupling neutral ground and charged-minimum limits are separate open questions. No impossibility is inferred for those tasks.
++
++N8: Historical review and finite checks do not replace current independent source confirmation or confer audit authority.
+--- original/scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py
++++ prepared/scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py
+@@ -4,6 +4,11 @@
+ from pathlib import Path
+ AUDIT_TIMEOUT_SEC = 180
+ AUDIT_RSS_LIMIT_MIB = 180
++AUDIT_INPUT_PATHS = ['docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md', 'docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md', 'docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md']
++EXPECTED_INPUT_SHA256 = {'docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md': 'af043363c9ff1bb69829cb991c2ddd7f5bcde0ae9d57fc550ac55f58fccd71c6', 'docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md': '1bec26d34646291914bd8a2b980103bf7ca5bf07815a10f76b945c97fb4ecade', 'docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md': 'a5df21b019b0ec35fce30bccced5c85862595235c1c9aa28779a3574fdc979f3'}
++_REPO_ROOT = Path(__file__).resolve().parents[1]
++_input_sha256 = {p: hashlib.sha256((_REPO_ROOT / p).read_bytes()).hexdigest() for p in AUDIT_INPUT_PATHS}
++assert _input_sha256 == EXPECTED_INPUT_SHA256, "Declared scientific input drift"
+ _started = time.monotonic()
+ for _name in ('OPENBLAS_NUM_THREADS','OMP_NUM_THREADS','MKL_NUM_THREADS'):
+     os.environ[_name] = '1'
+@@ -29,7 +34,13 @@
+     assert sum(v['checks'] for v in scopes.values()) == expected
+     out['N5_scopes'] = scopes
+     out['resource_limits'] = {'seconds': AUDIT_TIMEOUT_SEC, 'rss_MiB': AUDIT_RSS_LIMIT_MIB}
++    out['input_sha256'] = _input_sha256
+     _finite(out)
++    _result_path = _REPO_ROOT / 'logs/runner-cache' / (Path(__file__).stem + '.json')
++    _result_path.parent.mkdir(parents=True, exist_ok=True)
++    with _result_path.open('x') as _result_file:
++        json.dump(out, _result_file, sort_keys=True, indent=2, allow_nan=False)
++        _result_file.write('\n')
+     if sys.argv[1:] == ['--json']:
+         print(json.dumps(out, sort_keys=True, indent=2, allow_nan=False))
+     else:
+@@ -92,4 +103,4 @@
+ ck('generator_normalization_discriminator',8*1==3*F(8,3) and 8*2!=3*F(8,3))
+ result={'TOTAL':len(checks),'checks':checks,'geometry':details,'shell_energies_R1_to20':energies,'compression_commutator':[[str(x) for x in comm.row(i)] for i in range(3)],'theta_R10_a_v_d1':str(theta),'scope':'Exact geometry, shell, budget and abstract compression controls; not a SU3 spectral trial or proof of the analytical bound.','source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'seconds':time.monotonic()-t0,'rss_MiB':_rss()}
+ 
+-_emit(result,40,{'per_element': {'checks': 20, 'scope': 'exact shell minimum for each R=1..20'}, 'per_site': {'checks': 9, 'scope': 'actual three cubic boxes: incidence, touching faces and distinct paths'}, 'per_mode': {'checks': 6, 'scope': 'exact nonzero compression commutator and sign/naive commutation adverse'}, 'per_block': {'checks': 3, 'scope': 'sufficient and insufficient normalization budgets, positive denominator'}, 'lattice_wide': {'checks': 2, 'scope': 'restricted-ground premise adverse and generator convention discriminator; no numerical SU3 spectral validation'}})
++_emit(result, 40, {'per_element': {'checks': 21, 'scope': '20 exact shell minima for R=1..20 and one scalar generator-normalization discriminator; no site dynamics'}, 'per_site': {'checks': 0, 'scope': 'checked and not executed — no site-resolved state or dynamical measurement; finite graph incidence is classified per_block'}, 'per_mode': {'checks': 7, 'scope': 'six exact abstract 3-by-3 compression predicates and one 2-by-2 restricted-ground Rayleigh adverse example; not an SU3 spectrum'}, 'per_block': {'checks': 12, 'scope': 'nine finite cubic-box n=2,3,4 incidence/touching/distinct-path predicates and three scalar acceptance/denominator predicates'}, 'lattice_wide': {'checks': 0, 'scope': 'checked and not executed — finite boxes and scalar controls do not execute arbitrary-volume Hamiltonian energy bounds; the written proof supplies uniformity'}})
+--- original/scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py
++++ prepared/scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py
+@@ -4,6 +4,11 @@
+ from pathlib import Path
+ AUDIT_TIMEOUT_SEC = 180
+ AUDIT_RSS_LIMIT_MIB = 180
++AUDIT_INPUT_PATHS = ['docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md', 'docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md', 'docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md']
++EXPECTED_INPUT_SHA256 = {'docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md': 'af043363c9ff1bb69829cb991c2ddd7f5bcde0ae9d57fc550ac55f58fccd71c6', 'docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md': '1bec26d34646291914bd8a2b980103bf7ca5bf07815a10f76b945c97fb4ecade', 'docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md': 'a5df21b019b0ec35fce30bccced5c85862595235c1c9aa28779a3574fdc979f3'}
++_REPO_ROOT = Path(__file__).resolve().parents[1]
++_input_sha256 = {p: hashlib.sha256((_REPO_ROOT / p).read_bytes()).hexdigest() for p in AUDIT_INPUT_PATHS}
++assert _input_sha256 == EXPECTED_INPUT_SHA256, "Declared scientific input drift"
+ _started = time.monotonic()
+ for _name in ('OPENBLAS_NUM_THREADS','OMP_NUM_THREADS','MKL_NUM_THREADS'):
+     os.environ[_name] = '1'
+@@ -29,7 +34,13 @@
+     assert sum(v['checks'] for v in scopes.values()) == expected
+     out['N5_scopes'] = scopes
+     out['resource_limits'] = {'seconds': AUDIT_TIMEOUT_SEC, 'rss_MiB': AUDIT_RSS_LIMIT_MIB}
++    out['input_sha256'] = _input_sha256
+     _finite(out)
++    _result_path = _REPO_ROOT / 'logs/runner-cache' / (Path(__file__).stem + '.json')
++    _result_path.parent.mkdir(parents=True, exist_ok=True)
++    with _result_path.open('x') as _result_file:
++        json.dump(out, _result_file, sort_keys=True, indent=2, allow_nan=False)
++        _result_file.write('\n')
+     if sys.argv[1:] == ['--json']:
+         print(json.dumps(out, sort_keys=True, indent=2, allow_nan=False))
+     else:
+@@ -162,4 +173,4 @@
+         'limitation':'one exact finite fixture; crude global sufficient theta bound fails here, actual local-energy version passes'}
+ 
+ result.update({'TOTAL':result['check_count'],'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'seconds':time.monotonic()-_started,'rss_MiB':_rss()})
+-_emit(result,22,{'per_element': {'checks': 5, 'scope': 'actual Haar Gram/magnetic entries and source-normalization/isometry adverse controls'}, 'per_site': {'checks': 5, 'scope': 'actual neutral character matrices and full-carrier ground identification'}, 'per_mode': {'checks': 5, 'scope': 'accepted norm, shell/local budgets and strict finite excess'}, 'per_block': {'checks': 4, 'scope': 'three exact rational radical enclosures and local energy theorem comparison'}, 'lattice_wide': {'checks': 3, 'scope': 'failed crude sufficient budget, failed exact-four transfer and distant vacuum normalization adverse; one plaquette only'}})
++_emit(result, 22, {'per_element': {'checks': 5, 'scope': 'five exact Haar Gram/magnetic and source-normalization/isometry predicates on the single supplied plaquette'}, 'per_site': {'checks': 0, 'scope': 'checked and not executed — neutral 3-by-3 spectral algebra is a representation block calculation, not a site-resolved measurement'}, 'per_mode': {'checks': 5, 'scope': 'two neutral character-matrix identities and three exact neutral/full-carrier ground predicates for this plaquette'}, 'per_block': {'checks': 12, 'scope': 'five accepted-norm/local-budget/finite-excess predicates, four radical-enclosure/local-bound predicates, and three scalar adverse predicates for this fixture; distant-volume arithmetic is not volume execution'}, 'lattice_wide': {'checks': 0, 'scope': 'checked and not executed — one plaquette and artificial distant-vacuum arithmetic do not execute a lattice-wide Hamiltonian or the analytic uniform bound'}})

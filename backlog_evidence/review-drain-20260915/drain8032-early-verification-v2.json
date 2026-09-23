@@ -1,0 +1,13 @@
+{
+  "source_count": 82,
+  "changed_paths": [
+    "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py",
+    "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py"
+  ],
+  "non_emit_AST_unchanged": true,
+  "verified_author_synthetic_IO_cases": 18,
+  "source_base": "3dca18ddd0082dc23bb12c7ca38939b901c28736",
+  "primary_runs": 0,
+  "helper_runs": 0,
+  "remaining": "integrate exact registry proposals, freeze actual input/API closure and capture wrapper for cold confirmation"
+}

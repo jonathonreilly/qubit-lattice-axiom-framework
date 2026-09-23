@@ -1,0 +1,112 @@
+{
+  "source_checks": [
+    {
+      "path": "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py",
+      "original_sha256": "2007377e37c26a7e2903332fe1c48388b6ac124bc95e7e71e3f9d6fcfb436433",
+      "prepared_sha256": "8457e1c7adff154addaa9a476cabcb1b087d3d46a7a16e581a5f1f0b91d7625f",
+      "scientific_ast_equal": true,
+      "comparison": "All top-level statements from fractions import through final result, excluding only final _emit scope declaration; no execution",
+      "checks_preserved": 40,
+      "scope_counts": {
+        "per_element": {
+          "checks": 21,
+          "scope": "20 exact shell minima for R=1..20 and one scalar generator-normalization discriminator; no site dynamics"
+        },
+        "per_site": {
+          "checks": 0,
+          "scope": "checked and not executed \u2014 no site-resolved state or dynamical measurement; finite graph incidence is classified per_block"
+        },
+        "per_mode": {
+          "checks": 7,
+          "scope": "six exact abstract 3-by-3 compression predicates and one 2-by-2 restricted-ground Rayleigh adverse example; not an SU3 spectrum"
+        },
+        "per_block": {
+          "checks": 12,
+          "scope": "nine finite cubic-box n=2,3,4 incidence/touching/distinct-path predicates and three scalar acceptance/denominator predicates"
+        },
+        "lattice_wide": {
+          "checks": 0,
+          "scope": "checked and not executed \u2014 finite boxes and scalar controls do not execute arbitrary-volume Hamiltonian energy bounds; the written proof supplies uniformity"
+        }
+      }
+    },
+    {
+      "path": "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py",
+      "original_sha256": "9d43e55cc41384e4f98398cc599655d881bfdfb2cba545781b501fa9024bdf70",
+      "prepared_sha256": "d64149ff67bde3f8965c70d5319bc11ef3ee003392298b5ed5d771de32994309",
+      "scientific_ast_equal": true,
+      "comparison": "All top-level statements from fractions import through final result, excluding only final _emit scope declaration; no execution",
+      "checks_preserved": 22,
+      "scope_counts": {
+        "per_element": {
+          "checks": 5,
+          "scope": "five exact Haar Gram/magnetic and source-normalization/isometry predicates on the single supplied plaquette"
+        },
+        "per_site": {
+          "checks": 0,
+          "scope": "checked and not executed \u2014 neutral 3-by-3 spectral algebra is a representation block calculation, not a site-resolved measurement"
+        },
+        "per_mode": {
+          "checks": 5,
+          "scope": "two neutral character-matrix identities and three exact neutral/full-carrier ground predicates for this plaquette"
+        },
+        "per_block": {
+          "checks": 12,
+          "scope": "five accepted-norm/local-budget/finite-excess predicates, four radical-enclosure/local-bound predicates, and three scalar adverse predicates for this fixture; distant-volume arithmetic is not volume execution"
+        },
+        "lattice_wide": {
+          "checks": 0,
+          "scope": "checked and not executed \u2014 one plaquette and artificial distant-vacuum arithmetic do not execute a lattice-wide Hamiltonian or the analytic uniform bound"
+        }
+      }
+    },
+    {
+      "source": "canonical",
+      "formula_lines": 40,
+      "all_formula_lines_literal": true
+    },
+    {
+      "source": "alternative",
+      "formula_lines": 25,
+      "all_formula_lines_literal": true
+    }
+  ],
+  "formula_changes": 0,
+  "science_executions": 0,
+  "basenames": {
+    "casefold_checked": true,
+    "collisions": []
+  },
+  "original_paths": 84,
+  "unique_archived_payloads": 76,
+  "registry_proposals": [
+    {
+      "path": "docs/audit/scripts/build_citation_graph.py",
+      "current_sha256": "b2117b565aa795e67cd62d0f49f89cf2ed83a14d9d3447c1600ee0bf9c0ba8c5",
+      "proposed": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-proposed-registries-v1/docs/audit/scripts/build_citation_graph.py",
+        "sha256": "e092f800d2c2d5671f24e248e7fee48edac683bf70f8641d2b596896acd5fab1"
+      },
+      "change": {
+        "gauge_wilson_finite_pw_static_source_energy_upper_bound_bounded_theorem_note_2026-09-07": [
+          "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py"
+        ]
+      },
+      "all_existing_entries_preserved": true
+    },
+    {
+      "path": "scripts/audit_packet_script_deps.py",
+      "current_sha256": "38210e23dbe9d703552c0381a3719b2a9a1551004028e0d64714da1bee3ddd8d",
+      "proposed": {
+        "path": "/private/tmp/review-drain-20260915/drain8032-proposed-registries-v1/scripts/audit_packet_script_deps.py",
+        "sha256": "40d448bf1b6f0bc9777731c88aed1a0972719ee5969ee60b2c472d11c302c12e"
+      },
+      "change": {
+        "gauge_wilson_finite_pw_static_source_energy_upper_bound_bounded_theorem_note_2026-09-07": [
+          "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py"
+        ]
+      },
+      "all_existing_entries_preserved": true
+    }
+  ]
+}

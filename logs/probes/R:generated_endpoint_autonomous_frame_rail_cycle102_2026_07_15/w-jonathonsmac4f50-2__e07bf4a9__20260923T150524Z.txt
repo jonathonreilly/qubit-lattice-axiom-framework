@@ -1,0 +1,43 @@
+
+===============================================================================
+A - Exact generated rail seed and mixed table
+===============================================================================
+PASS A01 source is the exact 254-record generated endpoint
+PASS A02 transformed Cycle-52 seed is literally present
+PASS A03 transformed seed has twelve slice roles and one backstop
+PASS A04 seed transform is a proper cubic rotation
+PASS A05 macroblock and rail raw domains are disjoint :: ()
+PASS A06 mixed raw table has the exact union size
+PASS A07 every mixed raw input is single-valued
+
+===============================================================================
+B - Complete asynchronous code/rail product
+===============================================================================
+PASS B01 all 143 product states have exactly the two lawful fronts :: []
+PASS B02 product contains every code/rail interleaving prefix
+PASS B03 code front remains the exact R_B11 to VALID to READY sequence
+PASS B04 first rail slice remains the exact twelve-write Cycle-52 sweep
+PASS B05 bounded product exposes only the next lawful rail write
+
+===============================================================================
+C - Longer renewal, old debris, and covariance
+===============================================================================
+PASS C01 all 96 rail appends have a singleton mixed frontier :: []
+PASS C02 eight complete slices expose exactly the ninth-slice start
+PASS C03 old endpoint, code, and seven prior slices stay permanently present
+PASS C04 all 96 mixed checkpoint rotations preserve the frontier :: []
+PASS C05 Cycle-52 supplies an exact period-four unbounded renewal induction
+
+===============================================================================
+D - Exact scope and constitutional disposition
+===============================================================================
+FAIL D01 note exists and carries authority none
+FAIL D02 note names the closed bounded interface
+FAIL D03 note names the exact remaining bind
+FAIL D04 note contains N1-N8
+FAIL D05 note denies foundation and axiom effects
+
+SOURCE=254 CODE_APPENDS=10 RAIL_APPENDS=96
+MACROBLOCK_RAW=5444 RAIL_RAW=1080 MIXED_RAW=6524
+PRODUCT_STATES=143
+SUMMARY: 17 PASS / 5 FAIL

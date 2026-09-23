@@ -1,0 +1,32 @@
+{
+ "task": "R:generated_endpoint_autonomous_frame_rail_cycle102_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "generated",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/generated_endpoint_autonomous_frame_rail_cycle102_2026_07_15.py",
+ "seed": 75924,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e07bf4a9",
+ "started_utc": "20260923T150524Z",
+ "elapsed_s": 1.7,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0243767a96c818daae3bc8761fec12bc5045fbe4a5878e3f89594f6612731ca6",
+ "stdout_tail": "======================\nPASS B01 all 143 product states have exactly the two lawful fronts :: []\nPASS B02 product contains every code/rail interleaving prefix\nPASS B03 code front remains the exact R_B11 to VALID to READY sequence\nPASS B04 first rail slice remains the exact twelve-write Cycle-52 sweep\nPASS B05 bounded product exposes only the next lawful rail write\n\n===============================================================================\nC - Longer renewal, old debris, and covariance\n===============================================================================\nPASS C01 all 96 rail appends have a singleton mixed frontier :: []\nPASS C02 eight complete slices expose exactly the ninth-slice start\nPASS C03 old endpoint, code, and seven prior slices stay permanently present\nPASS C04 all 96 mixed checkpoint rotations preserve the frontier :: []\nPASS C05 Cycle-52 supplies an exact period-four unbounded renewal induction\n\n===============================================================================\nD - Exact scope and constitutional disposition\n===============================================================================\nFAIL D01 note exists and carries authority none\nFAIL D02 note names the closed bounded interface\nFAIL D03 note names the exact remaining bind\nFAIL D04 note contains N1-N8\nFAIL D05 note denies foundation and axiom effects\n\nSOURCE=254 CODE_APPENDS=10 RAIL_APPENDS=96\nMACROBLOCK_RAW=5444 RAIL_RAW=1080 MIXED_RAW=6524\nPRODUCT_STATES=143\nSUMMARY: 17 PASS / 5 FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T150526Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

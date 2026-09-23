@@ -1,0 +1,99 @@
+[detached HEAD d7f9aee3dc] Preserve independently reviewed source unit PR8028
+ Date: Tue Sep 22 20:04:11 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 86 files changed, 1317 insertions(+), 1 deletion(-)
+ create mode 100644 docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_000_ARTIFACT_PLAN.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_001_ASSUMPTIONS_AND_IMPORTS.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_002_CLAIM_STATUS_CERTIFICATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_003_FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_004_FINAL_MAIN66_LOCK_RELEASE.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_005_FINAL_MAIN66_READINESS.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_006_FINAL_MAIN66_STRICT.log.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_007_FINAL_MAIN66_SYNC_RECEIPT.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_008_FINAL_MAIN66_VALIDATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_009_FINAL_VALIDATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_010_FINAL_VOCAB_LINT.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_011_FROZEN_PORT_RECEIPT.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_012_FULL_PIPELINE.log.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_013_GOAL.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_014_HANDOFF.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_015_LITERATURE_BRIDGES.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_016_LOCK_RELEASE.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_017_NO_GO_DISCIPLINE_CHECKLIST.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_018_NO_GO_LEDGER.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_019_OPPORTUNITY_QUEUE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_020_PACK_INDEX.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_021_PARENT_VALIDATION_METADATA_CATCHUP.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_022_PORT_RECEIPT.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_023_PROOF_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_024_PR_BACKLOG.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_025_PR_BODY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_026_PUBLICATION_RECEIPT.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_027_REVIEWED_UPSTREAM_SYNC_20260907.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_028_REVIEW_HISTORY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_029_ROOT_CANONICAL_PORT_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_030_ROUTE_PORTFOLIO.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_031_SCOPED_VALIDATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_032_STAGING_VALIDATION.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_033_STATE.yaml.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_034_STRICT_LINT.log.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_035_TRACE_GATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_036_UPSTREAM_SYNC_PIPELINE.log.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_037_UPSTREAM_SYNC_READINESS.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_038_UPSTREAM_SYNC_STRICT.log.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_039_UPSTREAM_SYNC_VALIDATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_040_PRIMARY_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_041_DERIVATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_042_FINITE_CONTROLS_PREREGISTRATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_043_PORT_RECEIPT.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_044_PREREGISTRATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_045_ROOT_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_046_SUPPLEMENT_TIMING.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_047_check.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_048_native_canonical_result.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_049_native_canonical_stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_050_result.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_051_root_canonical_result.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_052_root_canonical_stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_053_FINITE_CONTROLS_PREREGISTRATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_054_PREREGISTRATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_055_ROOT_DERIVATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_056_ROOT_NATIVE_REVIEW.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_057_SYNTAX_FAILURE.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_058_UPPER_BOUND_PREREGISTRATION.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_059_check.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_060_check_before_syntax_repair.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_061_result.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_062_native_canonical_result.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_063_native_canonical_stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_064_root_canonical_result.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_065_root_canonical_stdout.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_066_validated_claims_before_generated_cleanup.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_067_validated_readiness_before_generated_cleanup.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_068_GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_069_citation_graph_manifest.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_070_build_citation_graph.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_071_gauge_wilson_static_source_dirichlet_controls_2026_09_07.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_072_gauge_wilson_static_source_sector_controls_2026_09_07.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_073_audit_packet_script_deps.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_074_gauge_wilson_static_source_dirichlet_controls_2026_09_07.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/8028_075_gauge_wilson_static_source_sector_controls_2026_09_07.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8028/README.md
+ create mode 100644 docs/work_history/review_loop/pr8028/original-manifest.json
+ create mode 100644 logs/runner-cache/gauge_wilson_static_source_dirichlet_controls_2026_09_07.txt
+ create mode 100644 logs/runner-cache/gauge_wilson_static_source_sector_controls_2026_09_07.txt
+ create mode 100644 scripts/gauge_wilson_static_source_dirichlet_controls_2026_09_07.py
+ create mode 100644 scripts/gauge_wilson_static_source_sector_controls_2026_09_07.py
+FROZEN d7f9aee3dc7e2295f99df1e4cdd85c7bf9a8ef98 sources 86 inputs 99 notes 1

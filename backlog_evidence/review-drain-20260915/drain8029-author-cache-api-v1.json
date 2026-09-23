@@ -1,0 +1,27 @@
+[
+  {
+    "primary": "scripts/gauge_wilson_selected_infinite_static_source_sector_2026_09_07.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    ],
+    "runtime_closure": [
+      {
+        "path": "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "0621d2e82146934a4dc126f464b9966aa578fab4e99ddbbf5ef34d67ccdf8d72"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "ea01dd24fe7ab4432c0f8c09ae1d3273c02b09ff11c51757440807921ae0df4f"
+      },
+      {
+        "path": "scripts/gauge_wilson_selected_infinite_static_source_sector_2026_09_07.py",
+        "sha256": "3c4d34c6f97a37884bf81c6872c215e02d3e95680c6cbfb47ccbd5a581c7c71c"
+      }
+    ],
+    "declared_input_fingerprint": "5c4ead3577a5c03f44ed7f25b4a10e9fdcff95f3c599fe09b455f6f5829943b3",
+    "cache_status": "missing",
+    "packet_transitive_helpers": []
+  }
+]

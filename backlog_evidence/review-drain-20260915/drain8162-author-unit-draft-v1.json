@@ -1,0 +1,554 @@
+{
+  "schema_version": 2,
+  "unit_id": "PR8162",
+  "constituents": [
+    {
+      "id": "PR8162",
+      "head": "0f02dc5127416f347e231bbd8aa7c2a8b58a02fa",
+      "delta_base": "e0ef7cf4633034a8c1e6d57f5812cc4275bf1349",
+      "dispositions": {
+        "path": "/private/tmp/review-drain-20260915/drain8162-author-source-handoff-v1.json",
+        "sha256": "f0e3815318bcf59aac6057c1f1bd27813c4c650f79056396c9f7aa17069aab6a",
+        "json_pointer": "/original_dispositions"
+      }
+    }
+  ],
+  "source": {
+    "base": "48334d7f83137d5a18ffd4962623a32a6778a637",
+    "commit": "48334d7f83137d5a18ffd4962623a32a6778a637",
+    "tree": "ea7cbc568ec763167e0582bf76b3edb98a0015c0",
+    "paths": [
+      {
+        "path": "docs/CLOCK_ALL_MODE_COERCIVITY_FINITE_GRAPH_STATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "89169a9dcd5e3cb2f79fed9735c0f5785a4781ee325deae57fb67fa1008fa537"
+      },
+      {
+        "path": "docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "1fe6bcf7e075621b48cb5751b6037096cfb2aba55c7abced6df95ba809d38b21"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/README.md",
+        "sha256": "13f170add021d1baff3c5a9b7e57f7405afc53a8ab68d88249a184d36307214d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/manifest.json",
+        "sha256": "f6d4eddea6fcbe16cccc51fa0d74ea259098b5e3f6bc477a890692b1c711066a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/001-CLAIM_STATUS_CERTIFICATE.md.gz",
+        "sha256": "37cc462c4b8aabf3c83e7632016b1e553a6bc9e8a036a9df80eb472828821e8b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/002-GOAL.md.gz",
+        "sha256": "75c6ff8e9f01196f693e2f922e208765fe8e80c8f8758d9f72320520d5e83135"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/003-HANDOFF.md.gz",
+        "sha256": "e00cecfad2ba7b03c10caf609631012c74f373f896bc68eddfa3d889bb8f6376"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/004-MANIFEST.sha256.gz",
+        "sha256": "31f96b7bfc028806faa4279614e64b2969e1231df9a5f8f011537accf68ff20e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/005-OPPORTUNITY_QUEUE.md.gz",
+        "sha256": "947c7ef7ad2b0a75a0e7b318ae7dced88f8955f9d052dda067e49d9c21368e38"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/006-READING_LEDGER.md.gz",
+        "sha256": "4e4f98a2678b4e3160172165af171e02d222dc858324e71514b47b8e918bb0f6"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/007-README.md.gz",
+        "sha256": "80b9a172d0fedc8179560ad630d014cbb41558bba6c633796583d65a8ca8d04d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/008-STATE.yaml.gz",
+        "sha256": "24b5a3b4dd140c407f2b612a29eeffac8c35e30a083ac577d9f0711e8760dc8c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/009-BLOCK02_CALIBRATED_TRANSFER_ATTEMPT1.stderr.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/010-BLOCK02_CALIBRATED_TRANSFER_ATTEMPT1.stdout.txt.gz",
+        "sha256": "783ff39cebc67df0007a5902f9216e42d56f3e690414bd1cb09cb2b08a041b65"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/011-BLOCK02_CALIBRATED_TRANSFER_ATTEMPT2.stderr.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/012-BLOCK02_CALIBRATED_TRANSFER_ATTEMPT2.stdout.txt.gz",
+        "sha256": "acc34acb9ba5d86d944dc3e6a3b1b573440b41a1500c0ce91a8cf1cce64bc56a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/013-BLOCK03_ALL_MODE_STATES_ATTEMPT1.stderr.txt.gz",
+        "sha256": "382bbd69279f79d3850497267f3b6b84c99417d9e86eb8b2644cef25d2fcc120"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/014-BLOCK03_ALL_MODE_STATES_ATTEMPT1.stdout.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/015-BLOCK03_ALL_MODE_STATES_ATTEMPT2.stderr.txt.gz",
+        "sha256": "441613debf1d0cbcf9ad2f235fbf9996358ef40235a99a414ff821fae2a04afa"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/016-BLOCK03_ALL_MODE_STATES_ATTEMPT2.stdout.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/017-BLOCK03_ALL_MODE_STATES_ATTEMPT3.stderr.txt.gz",
+        "sha256": "8648ab70e2cd451f65cceb04edaf457157b1c0b11714c1a5dc6109152d5d2b92"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/018-BLOCK03_ALL_MODE_STATES_ATTEMPT3.stdout.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/019-BLOCK03_ALL_MODE_STATES_ATTEMPT4.stderr.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/020-BLOCK03_ALL_MODE_STATES_ATTEMPT4.stdout.txt.gz",
+        "sha256": "c7d23d2f954edc293ccdb46fe5a13025b249bf1874eb29ed015bdc0be091e58d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/021-BLOCK03_COMMUTATOR_DIAGNOSTIC.stderr.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/022-BLOCK03_COMMUTATOR_DIAGNOSTIC.stdout.txt.gz",
+        "sha256": "9912a88cd1c0a264676b8219e355ed58ecf01bb6418013d179d0f9efedc5bf41"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/023-BLOCK03_RESOLUTION_DIAGNOSTIC.stderr.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/024-BLOCK03_RESOLUTION_DIAGNOSTIC.stdout.txt.gz",
+        "sha256": "4ca8d660cd3c1879c5bc9de2d33879479231233bfe5bc3b2ba2168fa13bef88c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/025-FORMULA_MUTATIONS_ATTEMPT1.stderr.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/026-FORMULA_MUTATIONS_ATTEMPT1.stdout.txt.gz",
+        "sha256": "c4b4fb7246da34b7a9fdf15f5610fb54932cc82314f3eaa8302d2dad16eac846"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/027-block02_calibrated_transfer_check.py.gz",
+        "sha256": "25aa69541034110a8cad15cfc89a8139b547d83eff99ca5aaed626f85b8aad2f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/028-block03_all_mode_and_states_check.py.gz",
+        "sha256": "c14de09c185eab45650fe698ca62f025bab0b57e96060b695d17156ca0d530dc"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/029-BLOCK01_WORKING_TRANSFER_MATCHING.md.gz",
+        "sha256": "0acf2745bba4c13bb38f86e3dba3bbf0b7d66277f501eb9297daa563152691d1"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/030-BLOCK02_CALIBRATED_CLOCK_ROTOR_TRANSFER_THEOREM.md.gz",
+        "sha256": "543a18d0fbe9f5236d7112de6fa560e09ae9207164f666debfb0216ea5e69df2"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/031-BLOCK02_VARIANCE_CALIBRATED_TEMPORAL_TRANSFER_WORKING.md.gz",
+        "sha256": "d817a2f98db25db89cfa7f0d7147252bb39695b8f4e0da69f58c9413446dc54b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/032-BLOCK03_ALL_MODE_COERCIVITY_AND_FINITE_VOLUME_STATES.md.gz",
+        "sha256": "ef432211928ff9969eec423e8e900b630fc9ec354c9fe4fc7f34aad012167050"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/033-BLOCK03_CHARGED_RING_CHECK_CONVENTIONS.md.gz",
+        "sha256": "f405e2dddc2b85eec34746410cd9a907f2947b6d61a4e759feb59871486bb82a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/034-FOCUSED_VERIFICATION.json.gz",
+        "sha256": "831805bc14a65a73c0f7aa73c64844ac52964dec6e86c51d43792c7d3124ea19"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/035-FOCUSED_VOCAB.stderr.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/036-FOCUSED_VOCAB.stdout.txt.gz",
+        "sha256": "45fdaa4ec4a9ea261de13d66fa9fa74577fcccd9a3bc9bb6636b7e02f260eafe"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/037-NUMERICAL_HISTORY.md.gz",
+        "sha256": "4b8be595a7fd06369834d979f8029823d3a29708d6cd649be106bc53f86e91b2"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/038-OPEN_PR_SOURCE_SNAPSHOT.json.gz",
+        "sha256": "85ed684f48ea0aec74260c3566c2818da466f9f7015dda16a68a4486976a1b63"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/039-PERSONAL_PROOF_REVIEW.md.gz",
+        "sha256": "282b193fcef05451ff7e11baa03cbb387041fb9d915494b18b119e0fde9cfb5d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/040-PREMISES_AND_BOUNDARIES.md.gz",
+        "sha256": "d6f1d3620f997cee78abfef75d59056b3b515e720fdd2a84e722d4bbf40bf533"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/041-block02_calibrated_transfer_attempt1_source.py.gz",
+        "sha256": "e9da401dd7acb7927006e373c59f8462289cb7a45f73616cc89f9cbbe8bbdec9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/042-block03_all_mode_states_attempt1_source.py.gz",
+        "sha256": "c35c44f992ab775db0397ad662cefa845b05a1e8924db757cd58f086c3655bd8"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/043-block03_all_mode_states_attempt2_source.py.gz",
+        "sha256": "5beb0e53bf8bf443d0a4a3c05d28fd7f068f063c655261bcd3f2dcac24ef960c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/044-block03_all_mode_states_attempt3_source.py.gz",
+        "sha256": "e0b37aeb21654c65472749f0002a256f9393c78be0961280508413f5573307bf"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/045-block03_commutator_diagnostic.py.gz",
+        "sha256": "6a48aa99e1ef3fdd7a1c8b804d410e66d8c483c0568db962d7eaa4f689892226"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/046-block03_resolution_diagnostic.py.gz",
+        "sha256": "c1711a48e77db7780720ab8cdce9f96b14ebb4efd040eb0718aaa4185db65fbc"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/047-02_alias_normalization.py.gz",
+        "sha256": "bea1c86211218feecf1aad2b268206c4c9aadec401026e67ca5a60869415587b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/048-02_alias_normalization.stderr.txt.gz",
+        "sha256": "ffe7b839e5eda18e7cd9509d20ccb304083462962ce42f60e47c7a80683f4528"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/049-02_alias_normalization.stdout.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/050-02_four_links_as_one.py.gz",
+        "sha256": "6851a6d21c730a51cd12244b8c8e98df2755b956bae0efbbc7a7a209ae500632"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/051-02_four_links_as_one.stderr.txt.gz",
+        "sha256": "119edecb15deb9171859226a2d762aa46b2f2a849104c645044c2d93a83790f5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/052-02_four_links_as_one.stdout.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/053-02_gauss_basis_normalization.py.gz",
+        "sha256": "d23295714cebf368b191d79c53bd9e1fc2c4bbf4e2d602e9ea09237c5f0d01aa"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/054-02_gauss_basis_normalization.stderr.txt.gz",
+        "sha256": "eb63e5eda2db21c33ef75f9299ced3edb6c53fb46317085c315cae13f2c3b517"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/055-02_gauss_basis_normalization.stdout.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/056-02_poisson_variance_factor.py.gz",
+        "sha256": "f81267af7536c3af48fcae932664b44633e6f780e9a0ec9c5f527215d09581dd"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/057-02_poisson_variance_factor.stderr.txt.gz",
+        "sha256": "193a57089cc5a2dd13e7bd6151633b5079dbbd5f570255797dbda9e24e48e785"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/058-02_poisson_variance_factor.stdout.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/059-02_restore_tiny_gap_roundoff.py.gz",
+        "sha256": "9fee12c65725100bdb217426de5692c3ea5df4c06b4cf00fa063821916963048"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/060-02_restore_tiny_gap_roundoff.stderr.txt.gz",
+        "sha256": "5f4b9e7d7eee68850bca6e2370cf43ed55b050c67b06cae156d8a8bebce8f64a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/061-02_restore_tiny_gap_roundoff.stdout.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/062-02_spatial_factor.py.gz",
+        "sha256": "3869e51f1cd9aa6c7cb47c4fbfa4c2baa1a429ccfb6e69965bd7f587790cfe6b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/063-02_spatial_factor.stderr.txt.gz",
+        "sha256": "c532b1a45467c7516ac71b8200d868889d9592df3e709e336df9b456c8c9e266"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/064-02_spatial_factor.stdout.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/065-02_variance_factor.py.gz",
+        "sha256": "b1775966985ea8dbdef79eaa68e002d42400f23d8956927c4c164b0cb93666e7"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/066-02_variance_factor.stderr.txt.gz",
+        "sha256": "a5a2d1b78f16870f9ecc3a4fac5bb473dfea9ff7fc90b65e03ff7e17d6536cc5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/067-02_variance_factor.stdout.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/068-03_false_strong_floor.py.gz",
+        "sha256": "e54bf67b9e6a83e4ce3c3d6017b0e7bbba94c6fe47eecf82ff3cd9c3657b72cf"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/069-03_false_strong_floor.stderr.txt.gz",
+        "sha256": "d9d91cb3146897c91b9e9db48bcdeb3032153148c674ff6f0f0656e66b42851e"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/070-03_false_strong_floor.stdout.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/071-03_missing_gibbs_normalization.py.gz",
+        "sha256": "a5c0dc34fd4e18a417832393c2a83e66b5efff7ff4b25aa203aa9de2787dff09"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/072-03_missing_gibbs_normalization.stderr.txt.gz",
+        "sha256": "591065b0e134a7f6d55dfd6986f7e8f1ac22cf3378bc96508e146e1eee69a516"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/073-03_missing_gibbs_normalization.stdout.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/074-03_product_factor.py.gz",
+        "sha256": "a65f12092b8c44d7f763aa28ad7cfedf1ae88bd0f6916e805070f0116714b5d3"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/075-03_product_factor.stderr.txt.gz",
+        "sha256": "a7baab27c61166a84e746992746ddfa5c02755113a4f2ab52cfb0b29bae420bb"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/076-03_product_factor.stdout.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/077-03_reversed_charge_offset.py.gz",
+        "sha256": "46ba883d5678ba9cf8f990a14d8fd413f1d1f0da21900c84099993c9ecea0e2f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/078-03_reversed_charge_offset.stderr.txt.gz",
+        "sha256": "83286b9570fb1c22aa428dc7dfcd5a32418bdd49d6913f3d22ea61be593292d0"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/079-03_reversed_charge_offset.stdout.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/080-03_reversed_winding_hop.py.gz",
+        "sha256": "c7333749d0dd66508f9489fe191e0f1f7c1bd966890afba60763ba3a6e80d275"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/081-03_reversed_winding_hop.stderr.txt.gz",
+        "sha256": "beb705c85b4151c262aec2116f1b4d831705181d3a95399c4c29195d66b4774d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/082-03_reversed_winding_hop.stdout.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/083-03_unsandwiched_transfer.py.gz",
+        "sha256": "ad7318a14bf885f527364d152071b7a6269f89381fe44275c283f793e675a0d9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/084-03_unsandwiched_transfer.stderr.txt.gz",
+        "sha256": "c7a243c8040f50790bf7189eb6dcbe5b4fac02188dd867282e4f81da81ccce78"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/085-03_unsandwiched_transfer.stdout.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/086-03_wrong_gauss_charge.py.gz",
+        "sha256": "56fee8d8699cca953d3d267646bc8cd1605ca94d0dd8f7bc62781521557e7405"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/087-03_wrong_gauss_charge.stderr.txt.gz",
+        "sha256": "864d3f414bd32f91ee85c393191cbfca299b1183fd260b9b300a68b64cb5d805"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/088-03_wrong_gauss_charge.stdout.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/089-RESULTS.json.gz",
+        "sha256": "c4b4fb7246da34b7a9fdf15f5610fb54932cc82314f3eaa8302d2dad16eac846"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/originals/090-run_formula_mutations.py.gz",
+        "sha256": "22dddc30c2b9dff2bbd7ac01711871d96474b71261f3699fd201d0364be606b6"
+      },
+      {
+        "path": "scripts/clock_all_mode_finite_graph_states_check_2026_09_16.py",
+        "sha256": "1799524caef26768d4f266842fb9db98a9e1c177b47cb12dd7b2f07f3d097221"
+      },
+      {
+        "path": "scripts/clock_variance_calibrated_transfer_check_2026_09_16.py",
+        "sha256": "dc4066706bb237f5e4fa6e516f0af8c8b88e34a9d53d0e6c8c283f2c5584dfaa"
+      }
+    ],
+    "deleted_paths": []
+  },
+  "inputs": {
+    "runtime": [
+      {
+        "path": "docs/CLOCK_ALL_MODE_COERCIVITY_FINITE_GRAPH_STATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "89169a9dcd5e3cb2f79fed9735c0f5785a4781ee325deae57fb67fa1008fa537"
+      },
+      {
+        "path": "docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "1fe6bcf7e075621b48cb5751b6037096cfb2aba55c7abced6df95ba809d38b21"
+      },
+      {
+        "path": "scripts/clock_all_mode_finite_graph_states_check_2026_09_16.py",
+        "sha256": "1799524caef26768d4f266842fb9db98a9e1c177b47cb12dd7b2f07f3d097221"
+      },
+      {
+        "path": "scripts/clock_variance_calibrated_transfer_check_2026_09_16.py",
+        "sha256": "dc4066706bb237f5e4fa6e516f0af8c8b88e34a9d53d0e6c8c283f2c5584dfaa"
+      }
+    ],
+    "helpers": [],
+    "parents": [
+      {
+        "path": "docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "1fe6bcf7e075621b48cb5751b6037096cfb2aba55c7abced6df95ba809d38b21"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/CLOCK_ALL_MODE_COERCIVITY_FINITE_GRAPH_STATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "89169a9dcd5e3cb2f79fed9735c0f5785a4781ee325deae57fb67fa1008fa537"
+      },
+      {
+        "path": "docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "1fe6bcf7e075621b48cb5751b6037096cfb2aba55c7abced6df95ba809d38b21"
+      },
+      {
+        "path": "docs/COMPACT_DETERMINANT_CURRENTS_SIGNED_SECTORS_AND_FINITE_CYCLIC_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+        "sha256": "507b922e5a73265ba410807be15e3664262320d13bdfae2ea8450fc2f9d66605"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8162/README.md",
+        "sha256": "13f170add021d1baff3c5a9b7e57f7405afc53a8ab68d88249a184d36307214d"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "a7cc92e284646e8e499408df34d89f7a89d80be04b7641a3a4f63163de4f467a"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "3d283188b8a1919a869eab92b425a1022eed1b16e544d03419be23666c07463f"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "reviewer": {
+    "session": "/root/review_8161; final source confirmation pending",
+    "report": {
+      "path": "/private/tmp/review-drain-20260915/drain8162-original-review.json",
+      "sha256": "46071cba24b9f04d807b6244e3784a691ba0758b684074f5ffc6724bd61fe668"
+    },
+    "references": [
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8162-author-prepared-v3.json",
+        "sha256": "ab1bd1eb32f3442ff2d5fd7c1fc97972cd3ed662e2f57014183c7e6b0900532c"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8162-author-cache-api-v1.json",
+        "sha256": "f5d01a2fd6a88788707339c14ce7006e7dbf136becafd3117f117a62868eb6af"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8162-author-checks-v2.json",
+        "sha256": "b2b0c6808b0468e4ae5b126a410f8e44c9bd506d8206e42271ce7d449ddeec0b"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8162-author-checks-v3.json",
+        "sha256": "5fc2d35897b263a4a480d7e756a366786fe8420e1c830a21f92745ef7dfdab9d"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8162-author-source-handoff-v1.json",
+        "sha256": "f0e3815318bcf59aac6057c1f1bd27813c4c650f79056396c9f7aa17069aab6a"
+      }
+    ]
+  },
+  "notes": [
+    {
+      "path": "docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "clock_variance_calibrated_joint_rotor_transfer_bounded_theorem_note_2026-09-16",
+      "declared_claim_id": "clock_variance_calibrated_joint_rotor_transfer_bounded_theorem_note_2026-09-16",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/clock_variance_calibrated_transfer_check_2026_09_16.py",
+      "helpers": [],
+      "citations": [
+        "docs/work_history/review_loop/pr8162/README.md"
+      ],
+      "repository_dependencies": [],
+      "dependency_rationale": "Exactly the linked mathematical parent; other history and context do not supply premises."
+    },
+    {
+      "path": "docs/CLOCK_ALL_MODE_COERCIVITY_FINITE_GRAPH_STATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "clock_all_mode_coercivity_finite_graph_states_bounded_theorem_note_2026-09-16",
+      "declared_claim_id": "clock_all_mode_coercivity_finite_graph_states_bounded_theorem_note_2026-09-16",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/clock_all_mode_finite_graph_states_check_2026_09_16.py",
+      "helpers": [],
+      "citations": [
+        "docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/work_history/review_loop/pr8162/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+      ],
+      "dependency_rationale": "Exactly the linked mathematical parent; other history and context do not supply premises."
+    }
+  ],
+  "supporting_proofs": [],
+  "non_science_notes": [
+    {
+      "path": "docs/work_history/review_loop/pr8162/README.md",
+      "rationale": "Exact original recovery only.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8162-original-review.json",
+        "sha256": "46071cba24b9f04d807b6244e3784a691ba0758b684074f5ffc6724bd61fe668"
+      }
+    }
+  ]
+}

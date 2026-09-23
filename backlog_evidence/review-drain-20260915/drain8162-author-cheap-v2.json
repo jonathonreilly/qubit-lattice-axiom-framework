@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8162",
+  "tree": "ea7cbc568ec763167e0582bf76b3edb98a0015c0",
+  "cache_checked": false,
+  "notes": [
+    {
+      "path": "docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "clock_variance_calibrated_joint_rotor_transfer_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/clock_variance_calibrated_transfer_check_2026_09_16.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/work_history/review_loop/pr8162/README.md"
+      ]
+    },
+    {
+      "path": "docs/CLOCK_ALL_MODE_COERCIVITY_FINITE_GRAPH_STATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "clock_all_mode_coercivity_finite_graph_states_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/clock_all_mode_finite_graph_states_check_2026_09_16.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/work_history/review_loop/pr8162/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8764,
+      "misses": 4472
+    },
+    "packet_imports": {
+      "hits": 8753,
+      "misses": 4470
+    },
+    "declared_inputs": {
+      "hits": 8789,
+      "misses": 4608
+    }
+  },
+  "record_sha256": "9b5d46219bb899ea6a6eef0f4f651178fffd2600932c8537f9a68030e76036d5",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

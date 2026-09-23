@@ -1,0 +1,24 @@
+{
+  "status": "static author preparation checks only; no scientific execution",
+  "prepared_sha256": "b27f96d46eabcd0d5bc5d0a293163666df29d3374ee8b3e7e5b4bf5d420058aa",
+  "owned_files": 61,
+  "decoded_originals": 57,
+  "scientific_calculation_segment_byteidentical": true,
+  "declared_inputs": [
+    "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+  ],
+  "timeout_seconds": 180,
+  "transitive_helpers": [],
+  "parent_pending": {
+    "path": "docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "source_commit": "ada534009f57600495176fa85d327592d4a20abc",
+    "sha256": "ea01dd24fe7ab4432c0f8c09ae1d3273c02b09ff11c51757440807921ae0df4f",
+    "pending_landing": true,
+    "external_read_snapshot": "/private/tmp/review-drain-20260915/drain8029-reviewed-parent-source.md"
+  },
+  "vocab_violations": 0,
+  "tracked_changes": 0,
+  "staged_changes": 0,
+  "other_unit_PR8160_101_hashes_unchanged": true
+}

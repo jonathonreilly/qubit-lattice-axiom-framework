@@ -1,0 +1,47 @@
+[
+  {
+    "primary": "scripts/clock_variance_calibrated_transfer_check_2026_09_16.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "runtime_closure": [
+      {
+        "path": "docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "1fe6bcf7e075621b48cb5751b6037096cfb2aba55c7abced6df95ba809d38b21"
+      },
+      {
+        "path": "scripts/clock_variance_calibrated_transfer_check_2026_09_16.py",
+        "sha256": "dc4066706bb237f5e4fa6e516f0af8c8b88e34a9d53d0e6c8c283f2c5584dfaa"
+      }
+    ],
+    "declared_input_fingerprint": "54643bdc6d4e626df81a4104c866e8b6d79bffd0f72bc54e9139addc949aa0ea",
+    "cache_status": "missing",
+    "packet_transitive_helpers": []
+  },
+  {
+    "primary": "scripts/clock_all_mode_finite_graph_states_check_2026_09_16.py",
+    "timeout": 180,
+    "declared_inputs": [
+      "docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/CLOCK_ALL_MODE_COERCIVITY_FINITE_GRAPH_STATES_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "runtime_closure": [
+      {
+        "path": "docs/CLOCK_ALL_MODE_COERCIVITY_FINITE_GRAPH_STATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "89169a9dcd5e3cb2f79fed9735c0f5785a4781ee325deae57fb67fa1008fa537"
+      },
+      {
+        "path": "docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "1fe6bcf7e075621b48cb5751b6037096cfb2aba55c7abced6df95ba809d38b21"
+      },
+      {
+        "path": "scripts/clock_all_mode_finite_graph_states_check_2026_09_16.py",
+        "sha256": "1799524caef26768d4f266842fb9db98a9e1c177b47cb12dd7b2f07f3d097221"
+      }
+    ],
+    "declared_input_fingerprint": "2a0036a0fa314966ade6631fa8f33ef6e8270b9ab5ef48ce0d9457c9a98e65a4",
+    "cache_status": "missing",
+    "packet_transitive_helpers": []
+  }
+]

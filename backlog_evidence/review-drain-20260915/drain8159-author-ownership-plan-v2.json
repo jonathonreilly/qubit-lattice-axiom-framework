@@ -1,0 +1,2249 @@
+{
+  "status": "AUTHOR OWNERSHIP/RUNTIME PROPOSAL ONLY; ORIGINAL REVIEWER CONFIRMATION REQUIRED BEFORE CANONICAL REWRITE",
+  "base": "48334d7f83137d5a18ffd4962623a32a6778a637",
+  "original_head": "ccca36e505a4cc5d0cd4735b377c15d69042fc41",
+  "original_delta_base": "6ad6a2184b7c2067e597528e0964753874493b4a",
+  "archive_count": 366,
+  "archive_owned_paths": 368,
+  "canonical_notes_planned": 25,
+  "active_evidence_programs": [
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block10_local_spectrum_check.py",
+      "sha256": "06dea89cfb0b73182c7bfa72a9f35f3518b93d93cc9c935660c61e1447781fb6",
+      "canonical_runner": "scripts/local_spectrum_check_2026_09_15.py",
+      "owner": 10,
+      "local_helpers": [
+        "scripts/polarized_word_check_2026_09_15.py"
+      ],
+      "source_dependency_lines": [
+        {
+          "line": 25,
+          "text": "source=root/'evidence/block9_polarized_word_check.py'"
+        },
+        {
+          "line": 26,
+          "text": "module=ast.parse(source.read_text()); selected=[]"
+        },
+        {
+          "line": 231,
+          "text": "        'sha256':{str(f.relative_to(root)):hashlib.sha256(f.read_bytes()).hexdigest() for f in"
+        },
+        {
+          "line": 233,
+          "text": "output=json.dumps(result,indent=2);Path(__file__).with_suffix('.json').write_text(output+'\\n');print(output)"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {
+        "seconds": 0.4357468329835683
+      },
+      "proposed_cap_seconds": 180,
+      "proposed_memory_bytes": 536870912,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": [
+        "scripts/polarized_word_check_2026_09_15.py"
+      ],
+      "dependency_mechanism": "AST-selected imports and nine native function definitions from actual Block9 source, not full primary execution"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block11_quartet_metric_check.py",
+      "sha256": "88df4a71cc376722579575378cace794c676c5be8ce641fc1df53fd038a1a2c8",
+      "canonical_runner": "scripts/quartet_metric_check_2026_09_15.py",
+      "owner": 11,
+      "local_helpers": [],
+      "source_dependency_lines": [
+        {
+          "line": 164,
+          "text": "        'sha256':{str(f.relative_to(root)):hashlib.sha256(f.read_bytes()).hexdigest() for f in"
+        },
+        {
+          "line": 166,
+          "text": "out=json.dumps(result,indent=2);Path(__file__).with_suffix('.json').write_text(out+'\\n');print(out)"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {
+        "seconds": 0.4407860420178622
+      },
+      "proposed_cap_seconds": 180,
+      "proposed_memory_bytes": 536870912,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": []
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block12_ground_cutoff_check.py",
+      "sha256": "ab702b2e95d5ba4269b7703d617d8bca7520e284b8ad26a15648fe4b18d10ecc",
+      "canonical_runner": "scripts/ground_cutoff_check_2026_09_15.py",
+      "owner": 12,
+      "local_helpers": [],
+      "source_dependency_lines": [
+        {
+          "line": 176,
+          "text": "'sha256':{str(f.relative_to(root)):hashlib.sha256(f.read_bytes()).hexdigest() for f in [Path(__file__).resolve(),root/'notes/BLOCK12_GROUND_STATE_CUTOFF_COMPACTNESS.md']}}"
+        },
+        {
+          "line": 177,
+          "text": "out=json.dumps(result,indent=2);Path(__file__).with_suffix('.json').write_text(out+'\\n');print(out)"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {
+        "seconds": 0.19204804208129644
+      },
+      "proposed_cap_seconds": 180,
+      "proposed_memory_bytes": 536870912,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/FIXED_COUPLING_ROTOR_GROUND_CUTOFF_COMPACTNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": []
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block13_quadratic_coframe_check.py",
+      "sha256": "67358d628834300d42cc1ff99b4f8431ac149ddde41142f5ede52c880540702e",
+      "canonical_runner": "scripts/quadratic_coframe_check_2026_09_15.py",
+      "owner": 13,
+      "local_helpers": [],
+      "source_dependency_lines": [
+        {
+          "line": 124,
+          "text": "'sha256':{str(f.relative_to(root)):hashlib.sha256(f.read_bytes()).hexdigest() for f in files}}"
+        },
+        {
+          "line": 125,
+          "text": "out=json.dumps(result,indent=2);Path(__file__).with_suffix('.json').write_text(out+'\\n');print(out)"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {
+        "seconds": 1.7666948330588639
+      },
+      "proposed_cap_seconds": 180,
+      "proposed_memory_bytes": 536870912,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/SUPPLIED_QUARTET_QUADRATIC_BACKREACTION_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": []
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block14_decay_check.py",
+      "sha256": "44d253afb88ab26cd58bbf88998544cb284f5a396e899432d11e4d03bc03b210",
+      "canonical_runner": "scripts/decay_check_2026_09_15.py",
+      "owner": 14,
+      "local_helpers": [],
+      "source_dependency_lines": [
+        {
+          "line": 166,
+          "text": "'sha256':{str(f.relative_to(root)):hashlib.sha256(f.read_bytes()).hexdigest() for f in files}}"
+        },
+        {
+          "line": 167,
+          "text": "out=json.dumps(result,indent=2);Path(__file__).with_suffix('.json').write_text(out+'\\n');print(out)"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {
+        "seconds": 4.678268167073838
+      },
+      "proposed_cap_seconds": 180,
+      "proposed_memory_bytes": 536870912,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/SUPPLIED_QUARTET_LEADING_DECAY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": []
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block15_mixed_history_check.py",
+      "sha256": "c125b42bafa009d3261d1fbe8f52324bfcea40c3329fba31e26e03d079fd7094",
+      "canonical_runner": "scripts/mixed_history_check_2026_09_15.py",
+      "owner": 15,
+      "local_helpers": [],
+      "source_dependency_lines": [
+        {
+          "line": 169,
+          "text": "result={'status':'PASS_personal_structural_and_normalization_controls','checks':dict(checks),'native_history_census':census,'cocycle':{'word_error':word_error,'decoupled_word_error':decoupled_word_error,'decoupled_factor_error':decoupled_factor_error,'coupled_factor_error':coupled_error,'duhamel':duhamel},'graded_cross_family':{'kernel_norm':norm(cross),'bound':math.sqrt(JA*JB)},'singleton_elimination_error':singleton_error,'diagnostic_bloch':diagnostic,'seconds':time.monotonic()-start,'limits':['no native mixed resolvent spectrum is evaluated','finite CAR matrices challenge identities, not the infinite locality theorem','Bloch remainder is an explicit diagnostic, not a fitted physical kernel','uniform flux stiffness and positive native amplitude are inherited conditional sources','same author, no independent audit'],'sha256':{str(f.relative_to(root)):hashlib.sha256(f.read_bytes()).hexdigest() for f in files}}"
+        },
+        {
+          "line": 170,
+          "text": "out=json.dumps(result,indent=2);Path(__file__).with_suffix('.json').write_text(out+'\\n');print(out)"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {
+        "seconds": 2.1435908750863746
+      },
+      "proposed_cap_seconds": 180,
+      "proposed_memory_bytes": 536870912,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/NATIVE_MIXED_SIXTH_ORDER_COEFFICIENT_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": []
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block16_cyclic_equilibrium_check.py",
+      "sha256": "f662d1aa523462d7374f4ee3e79c252e4806bd0720330cc40bfccd55bef835a8",
+      "canonical_runner": "scripts/cyclic_equilibrium_check_2026_09_15.py",
+      "owner": 16,
+      "local_helpers": [],
+      "source_dependency_lines": [
+        {
+          "line": 245,
+          "text": "    (HERE/'block16_cyclic_equilibrium_check.json').write_text(output+'\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 180,
+      "proposed_memory_bytes": 536870912,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": []
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block17_cyclic_scaling_check.py",
+      "sha256": "fa1be725a3f310444d0384a762060d4c5955875b5779c8f9d18b230f861fedb7",
+      "canonical_runner": "scripts/cyclic_scaling_check_2026_09_15.py",
+      "owner": 17,
+      "local_helpers": [
+        "scripts/cyclic_equilibrium_check_2026_09_15.py"
+      ],
+      "source_dependency_lines": [
+        {
+          "line": 126,
+          "text": "    spec = importlib.util.spec_from_file_location('block16', HERE/'block16_cyclic_equilibrium_check.py')"
+        },
+        {
+          "line": 127,
+          "text": "    m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m)"
+        },
+        {
+          "line": 294,
+          "text": "    (HERE/'block17_cyclic_scaling_check.json').write_text(output+'\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 300,
+      "proposed_memory_bytes": 1073741824,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/FINITE_GRAPH_CYCLIC_WEAK_COUPLING_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": [
+        "scripts/cyclic_equilibrium_check_2026_09_15.py"
+      ]
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block18_positive_generator_check.py",
+      "sha256": "e64458e7c987b5ace92e4191ab2d9039846a4660e7d71a9df23c7b5301162efb",
+      "canonical_runner": "scripts/positive_generator_check_2026_09_15.py",
+      "owner": 18,
+      "local_helpers": [],
+      "source_dependency_lines": [
+        {
+          "line": 113,
+          "text": "    (HERE/'block18_positive_generator_check.json').write_text(out+'\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 180,
+      "proposed_memory_bytes": 536870912,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/POSITIVE_ELECTRIC_GENERATOR_CONE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": []
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block19_charged_ring_check.py",
+      "sha256": "36b033ea82f48b9337e35fa8902df1592fa1d954d4fddf2d4cc6498c4212dbf9",
+      "canonical_runner": "scripts/charged_ring_check_2026_09_15.py",
+      "owner": 19,
+      "local_helpers": [],
+      "source_dependency_lines": [
+        {
+          "line": 188,
+          "text": "    (HERE/'block19_charged_ring_check.json').write_text(out+'\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 300,
+      "proposed_memory_bytes": 1073741824,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/CHARGED_RING_SLOW_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": []
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block1_hybrid_curvature_check.py",
+      "sha256": "559376e8605befbfe4d7ba9b5852f8dc6c2352f9675c0bab025c52b07c3105e2",
+      "canonical_runner": "scripts/hybrid_curvature_check_2026_09_15.py",
+      "owner": 1,
+      "local_helpers": [],
+      "source_dependency_lines": [
+        {
+          "line": 148,
+          "text": "    Path(__file__).with_suffix('.json').write_text(json.dumps(out,indent=2)+'\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 180,
+      "proposed_memory_bytes": 536870912,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": []
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block1_hybrid_generator_check.py",
+      "sha256": "2f12fa7be53742b085ccadf09ca2b64542fed3fa27f5e79662ec97538c45aaaf",
+      "canonical_runner": "scripts/hybrid_generator_check_2026_09_15.py",
+      "owner": 1,
+      "local_helpers": [],
+      "source_dependency_lines": [
+        {
+          "line": 136,
+          "text": "    out.write_text(json.dumps(result, indent=2)+'\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 180,
+      "proposed_memory_bytes": 536870912,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": []
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block1_integrated_rate_check.py",
+      "sha256": "c9ad818b8188242a99914467d59f1ea211be07a24c29c7ded3afd8aef032bb5f",
+      "canonical_runner": "scripts/integrated_rate_check_2026_09_15.py",
+      "owner": 1,
+      "local_helpers": [
+        "scripts/hybrid_generator_check_2026_09_15.py"
+      ],
+      "source_dependency_lines": [
+        {
+          "line": 11,
+          "text": "from block1_hybrid_generator_check import PhysicalSource"
+        },
+        {
+          "line": 70,
+          "text": "    Path(__file__).with_suffix('.json').write_text(json.dumps(result,indent=2)+'\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 180,
+      "proposed_memory_bytes": 536870912,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": [
+        "scripts/hybrid_generator_check_2026_09_15.py"
+      ]
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block20_holonomy_check.py",
+      "sha256": "70414572435bddda43cfbc6e4277f107d9410f0ac0a1e118d0538704bea224fa",
+      "canonical_runner": "scripts/holonomy_check_2026_09_15.py",
+      "owner": 20,
+      "local_helpers": [],
+      "source_dependency_lines": [
+        {
+          "line": 149,
+          "text": "    s=json.dumps(out,indent=2); Path(__file__).with_suffix('.json').write_text(s+'\\n');print(s)"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 180,
+      "proposed_memory_bytes": 536870912,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": []
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block21_slow_fast_check.py",
+      "sha256": "d73fc24eee2cc1afb330ec5b8692328506ae710ae20d0cbae232d663978c770c",
+      "canonical_runner": "scripts/slow_fast_check_2026_09_15.py",
+      "owner": 21,
+      "local_helpers": [],
+      "source_dependency_lines": [
+        {
+          "line": 98,
+          "text": "    Path(__file__).with_suffix('.json').write_text(json.dumps(out,indent=2)+'\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 300,
+      "proposed_memory_bytes": 1073741824,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": []
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block22_physical_probe_check.py",
+      "sha256": "b216b8e28d5feddc38c5069ae4f3f8bc9e8336464cc5b934638150add930be34",
+      "canonical_runner": "scripts/physical_probe_check_2026_09_15.py",
+      "owner": 22,
+      "local_helpers": [
+        "scripts/slow_fast_check_2026_09_15.py"
+      ],
+      "source_dependency_lines": [
+        {
+          "line": 8,
+          "text": "p=Path(__file__).with_name('block21_slow_fast_check.py')"
+        },
+        {
+          "line": 9,
+          "text": "spec=importlib.util.spec_from_file_location('block21',p)"
+        },
+        {
+          "line": 10,
+          "text": "b21=importlib.util.module_from_spec(spec);spec.loader.exec_module(b21)"
+        },
+        {
+          "line": 100,
+          "text": "    Path(__file__).with_suffix('.json').write_text(json.dumps(out,indent=2)+'\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 300,
+      "proposed_memory_bytes": 1073741824,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/ITERATED_LOCAL_MAXWELL_MATTER_STATE_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": [
+        "scripts/slow_fast_check_2026_09_15.py"
+      ]
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block23_matched_cone_check.py",
+      "sha256": "a9ef499ba1dc59906d2477ed6d4a534206bb068f86d98a72835710e97b60133e",
+      "canonical_runner": "scripts/matched_cone_check_2026_09_15.py",
+      "owner": 23,
+      "local_helpers": [],
+      "source_dependency_lines": [
+        {
+          "line": 109,
+          "text": "    result['runner_sha256']=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()"
+        },
+        {
+          "line": 111,
+          "text": "    Path(__file__).with_suffix('.json').write_text(output+'\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 180,
+      "proposed_memory_bytes": 536870912,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/SUPPLIED_MATCHED_FREE_CONE_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": []
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block24_response_identity_check.py",
+      "sha256": "096359cb31c02d554679cdb681ac2d5f3b475cc37d041ec66770784b77e09f6b",
+      "canonical_runner": "scripts/response_identity_check_2026_09_15.py",
+      "owner": 24,
+      "local_helpers": [],
+      "source_dependency_lines": [
+        {
+          "line": 149,
+          "text": "            'runner_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}"
+        },
+        {
+          "line": 151,
+          "text": "    Path(__file__).with_suffix('.json').write_text(output+'\\n');print(output)"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 180,
+      "proposed_memory_bytes": 536870912,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/EXACT_GAUGE_WARD_RESPONSE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": []
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block25_visible_threshold_check.py",
+      "sha256": "cebba632c3975013b31ddd090c409557b0fd6f08cf63038344bb3e21d24aed9e",
+      "canonical_runner": "scripts/visible_threshold_check_2026_09_15.py",
+      "owner": 25,
+      "local_helpers": [],
+      "source_dependency_lines": [
+        {
+          "line": 100,
+          "text": "            'runner_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}"
+        },
+        {
+          "line": 101,
+          "text": "    out=json.dumps(result,indent=2);Path(__file__).with_suffix('.json').write_text(out+'\\n');print(out)"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 180,
+      "proposed_memory_bytes": 536870912,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/REAL_OVERLAP_LOCAL_SOURCE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": []
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_cofactor_cyclic_check.py",
+      "sha256": "15443bca5f8224de92d9f93916d14c4fa1e0e55bf76805216ab9977e9ffd9e33",
+      "canonical_runner": "scripts/cofactor_cyclic_check_2026_09_15.py",
+      "owner": 2,
+      "local_helpers": [
+        "scripts/determinant_exclusion_check_2026_09_15.py"
+      ],
+      "source_dependency_lines": [
+        {
+          "line": 11,
+          "text": "from block2_determinant_exclusion_check import creators"
+        },
+        {
+          "line": 157,
+          "text": "    Path(__file__).with_suffix('.json').write_text(json.dumps(result, indent=2)+'\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 300,
+      "proposed_memory_bytes": 1073741824,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": [
+        "scripts/determinant_exclusion_check_2026_09_15.py",
+        "scripts/forest_interpolation_check_2026_09_15.py"
+      ]
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_contact_register_check.py",
+      "sha256": "3e33d454e6ce1794da86835cd55b19a162b5294a42a0d0e91a9038d231978721",
+      "canonical_runner": "scripts/contact_register_check_2026_09_15.py",
+      "owner": 2,
+      "local_helpers": [
+        "scripts/cofactor_cyclic_check_2026_09_15.py"
+      ],
+      "source_dependency_lines": [
+        {
+          "line": 13,
+          "text": "from block2_cofactor_cyclic_check import parity, compositions"
+        },
+        {
+          "line": 168,
+          "text": "    Path(__file__).with_suffix('.json').write_text(json.dumps(result,indent=2)+'\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 300,
+      "proposed_memory_bytes": 1073741824,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": [
+        "scripts/cofactor_cyclic_check_2026_09_15.py",
+        "scripts/determinant_exclusion_check_2026_09_15.py",
+        "scripts/forest_interpolation_check_2026_09_15.py"
+      ]
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_cut_completion_check.py",
+      "sha256": "ecfb69a5d083eb21cd1fa233ba20e922fe8775fc0f93c6278c497bfb18e10ffc",
+      "canonical_runner": "scripts/cut_completion_check_2026_09_15.py",
+      "owner": 2,
+      "local_helpers": [
+        "scripts/forest_interpolation_check_2026_09_15.py"
+      ],
+      "source_dependency_lines": [
+        {
+          "line": 14,
+          "text": "from block2_forest_interpolation_check import cochains, tree_paths"
+        },
+        {
+          "line": 184,
+          "text": "    Path(__file__).with_suffix('.json').write_text(json.dumps(result,indent=2)+'\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 300,
+      "proposed_memory_bytes": 1073741824,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": [
+        "scripts/forest_interpolation_check_2026_09_15.py"
+      ]
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_determinant_exclusion_check.py",
+      "sha256": "91c0b79837240858034bed4b254b65685e659b93c72314920280b776bbd94cdf",
+      "canonical_runner": "scripts/determinant_exclusion_check_2026_09_15.py",
+      "owner": 2,
+      "local_helpers": [
+        "scripts/forest_interpolation_check_2026_09_15.py"
+      ],
+      "source_dependency_lines": [
+        {
+          "line": 14,
+          "text": "from block2_forest_interpolation_check import cochains, partitions"
+        },
+        {
+          "line": 214,
+          "text": "    Path(__file__).with_suffix('.json').write_text(json.dumps(result, indent=2)+'\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 300,
+      "proposed_memory_bytes": 1073741824,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": [
+        "scripts/forest_interpolation_check_2026_09_15.py"
+      ]
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_forest_interpolation_check.py",
+      "sha256": "0847dcd937b4edb107ada5dd114498bce5ab0659b1d329fd5a741fcf903ca42d",
+      "canonical_runner": "scripts/forest_interpolation_check_2026_09_15.py",
+      "owner": 2,
+      "local_helpers": [],
+      "source_dependency_lines": [
+        {
+          "line": 248,
+          "text": "    Path(__file__).with_suffix('.json').write_text(json.dumps(result, indent=2)+'\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 300,
+      "proposed_memory_bytes": 1073741824,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": []
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_gaussian_cycle_check.py",
+      "sha256": "0fae6e9fe635947a42c0bc0ea435fb58975ab5c145b0d7553fde6bd7ed9819a4",
+      "canonical_runner": "scripts/gaussian_cycle_check_2026_09_15.py",
+      "owner": 2,
+      "local_helpers": [
+        "scripts/forest_interpolation_check_2026_09_15.py"
+      ],
+      "source_dependency_lines": [
+        {
+          "line": 15,
+          "text": "from block2_forest_interpolation_check import cochains"
+        },
+        {
+          "line": 232,
+          "text": "    Path(__file__).with_suffix('.json').write_text(json.dumps(result, indent=2)+'\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 300,
+      "proposed_memory_bytes": 1073741824,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": [
+        "scripts/forest_interpolation_check_2026_09_15.py"
+      ]
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_graph_source_check.py",
+      "sha256": "0380279420099a6f3577ff79a072d42bc54b304bd0a88c5d54befab8d8bb0809",
+      "canonical_runner": "scripts/graph_source_check_2026_09_15.py",
+      "owner": 2,
+      "local_helpers": [
+        "scripts/forest_interpolation_check_2026_09_15.py"
+      ],
+      "source_dependency_lines": [
+        {
+          "line": 16,
+          "text": "from block2_forest_interpolation_check import cochains, partitions"
+        },
+        {
+          "line": 224,
+          "text": "    Path(__file__).with_suffix('.json').write_text(json.dumps(result, indent=2)+'\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 300,
+      "proposed_memory_bytes": 1073741824,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": [
+        "scripts/forest_interpolation_check_2026_09_15.py"
+      ]
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_hard_core_cycle_check.py",
+      "sha256": "0fb87aba27390f2b9b5dbf07e433c3a72b049ec9999ef99d5184709ff21c9abb",
+      "canonical_runner": "scripts/hard_core_cycle_check_2026_09_15.py",
+      "owner": 2,
+      "local_helpers": [
+        "scripts/forest_interpolation_check_2026_09_15.py",
+        "scripts/gaussian_cycle_check_2026_09_15.py"
+      ],
+      "source_dependency_lines": [
+        {
+          "line": 14,
+          "text": "from block2_forest_interpolation_check import cochains"
+        },
+        {
+          "line": 15,
+          "text": "from block2_gaussian_cycle_check import compositions"
+        },
+        {
+          "line": 204,
+          "text": "    Path(__file__).with_suffix('.json').write_text(json.dumps(result, indent=2)+'\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 300,
+      "proposed_memory_bytes": 1073741824,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": [
+        "scripts/forest_interpolation_check_2026_09_15.py",
+        "scripts/gaussian_cycle_check_2026_09_15.py"
+      ]
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_operator_source_check.py",
+      "sha256": "ebcd92463c80a8cbc7e8b0cac43fb4e71e08167575bb2ab6d06991bf89028bc0",
+      "canonical_runner": "scripts/operator_source_check_2026_09_15.py",
+      "owner": 2,
+      "local_helpers": [],
+      "source_dependency_lines": [
+        {
+          "line": 113,
+          "text": "    Path(__file__).with_suffix('.json').write_text(json.dumps(out,indent=2)+'\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 300,
+      "proposed_memory_bytes": 1073741824,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": []
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_partition_exclusion_check.py",
+      "sha256": "353113fcb8100aebbaf0bd4ed249ed8fcaae26b7afcf4a0c5d627db445566c18",
+      "canonical_runner": "scripts/partition_exclusion_check_2026_09_15.py",
+      "owner": 2,
+      "local_helpers": [
+        "scripts/forest_interpolation_check_2026_09_15.py"
+      ],
+      "source_dependency_lines": [
+        {
+          "line": 15,
+          "text": "from block2_forest_interpolation_check import cochains, partitions"
+        },
+        {
+          "line": 160,
+          "text": "    Path(__file__).with_suffix('.json').write_text(json.dumps(result, indent=2)+'\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 300,
+      "proposed_memory_bytes": 1073741824,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": [
+        "scripts/forest_interpolation_check_2026_09_15.py"
+      ]
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block2_phase_energy_check.py",
+      "sha256": "fc84c6a69842c10c2eb4fb56a2406c6a9ce1c5b47c366b426a5eca42ab8afde3",
+      "canonical_runner": "scripts/phase_energy_check_2026_09_15.py",
+      "owner": 2,
+      "local_helpers": [],
+      "source_dependency_lines": [
+        {
+          "line": 161,
+          "text": "    Path(__file__).with_suffix('.json').write_text(json.dumps(out,indent=2)+'\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 300,
+      "proposed_memory_bytes": 1073741824,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": []
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block3_general_order_check.py",
+      "sha256": "f2bf8cd03beb300bed675129a5eb416b129e78191e70cf42855a215ff3b72695",
+      "canonical_runner": "scripts/general_order_check_2026_09_15.py",
+      "owner": 3,
+      "local_helpers": [
+        "scripts/record_pair_check_2026_09_15.py"
+      ],
+      "source_dependency_lines": [
+        {
+          "line": 8,
+          "text": "from block3_record_pair_check import joint"
+        },
+        {
+          "line": 67,
+          "text": "    Path(__file__).with_suffix('.json').write_text(json.dumps(result,indent=2)+'\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 180,
+      "proposed_memory_bytes": 536870912,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": [
+        "scripts/record_pair_check_2026_09_15.py"
+      ]
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block3_record_pair_check.py",
+      "sha256": "1773bb397872aa2ff185ef76cc06ad143401ff85dee40ade82ff1c27686cfe93",
+      "canonical_runner": "scripts/record_pair_check_2026_09_15.py",
+      "owner": 3,
+      "local_helpers": [],
+      "source_dependency_lines": [
+        {
+          "line": 138,
+          "text": "    Path(__file__).with_suffix('.json').write_text(json.dumps(result,indent=2)+'\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 180,
+      "proposed_memory_bytes": 536870912,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": []
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block4_fourier_gaussian_register_check.py",
+      "sha256": "c7b801465c0abcc9a000077ec3a8d2b496f41ab6b8b69f2c4c88c6178f604d26",
+      "canonical_runner": "scripts/fourier_gaussian_register_check_2026_09_15.py",
+      "owner": 4,
+      "local_helpers": [
+        "scripts/cofactor_cyclic_check_2026_09_15.py",
+        "scripts/contact_register_check_2026_09_15.py"
+      ],
+      "source_dependency_lines": [
+        {
+          "line": 13,
+          "text": "from block2_contact_register_check import direct_jet, jet_product"
+        },
+        {
+          "line": 14,
+          "text": "from block2_cofactor_cyclic_check import compositions"
+        },
+        {
+          "line": 233,
+          "text": "    Path(__file__).with_suffix('.json').write_text(json.dumps(result,indent=2)+'\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 300,
+      "proposed_memory_bytes": 1073741824,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/CUBIC_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": [
+        "scripts/cofactor_cyclic_check_2026_09_15.py",
+        "scripts/contact_register_check_2026_09_15.py",
+        "scripts/determinant_exclusion_check_2026_09_15.py",
+        "scripts/forest_interpolation_check_2026_09_15.py"
+      ]
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block4_tree_count_check.py",
+      "sha256": "28297887e230ef56a214122949ec173e242555a8d1dd19211adc512d5c06d6f8",
+      "canonical_runner": "scripts/tree_count_check_2026_09_15.py",
+      "owner": 4,
+      "local_helpers": [],
+      "source_dependency_lines": [
+        {
+          "line": 68,
+          "text": "    Path(__file__).with_suffix('.json').write_text(json.dumps(result,indent=2)+'\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 300,
+      "proposed_memory_bytes": 1073741824,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/CUBIC_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": []
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block5_algebra_naturality_check.py",
+      "sha256": "9e9317c9eb3784db36f66d7a8b769633e89d387e51a7a7a56a306c39462ca08c",
+      "canonical_runner": "scripts/algebra_naturality_check_2026_09_15.py",
+      "owner": 5,
+      "local_helpers": [],
+      "source_dependency_lines": [
+        {
+          "line": 156,
+          "text": "    Path(__file__).with_suffix('.json').write_text(json.dumps(result,indent=2)+'\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 180,
+      "proposed_memory_bytes": 536870912,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": []
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block5_inverse_corner_support_check.py",
+      "sha256": "dfcd91bb844b790e6cb8b3707b15dde13096ef2ef6e655fb31bf3ae3b39af4b6",
+      "canonical_runner": "scripts/inverse_corner_support_check_2026_09_15.py",
+      "owner": 5,
+      "local_helpers": [
+        "scripts/algebra_naturality_check_2026_09_15.py"
+      ],
+      "source_dependency_lines": [
+        {
+          "line": 10,
+          "text": "from block5_algebra_naturality_check import I,A,B,E12,E21,zero,real_vector,real_action,covariance,algebra_rank"
+        },
+        {
+          "line": 102,
+          "text": "    Path(__file__).with_suffix('.json').write_text(json.dumps(result,indent=2)+'\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 180,
+      "proposed_memory_bytes": 536870912,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": [
+        "scripts/algebra_naturality_check_2026_09_15.py"
+      ]
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block6_positive_auxiliary_check.py",
+      "sha256": "161420b8dc0efe2f43a9908b903d234b73ebea2e3b79a08bfff3cb1a58b21b41",
+      "canonical_runner": "scripts/positive_auxiliary_check_2026_09_15.py",
+      "owner": 6,
+      "local_helpers": [],
+      "source_dependency_lines": [
+        {
+          "line": 352,
+          "text": "    Path(__file__).with_suffix('.json').write_text(json.dumps(result,indent=2)+'\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 300,
+      "proposed_memory_bytes": 1073741824,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/POSITIVE_AUXILIARY_CURRENT_LAW_AND_REGULATOR_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": []
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block7_native_motion_check.py",
+      "sha256": "5f134dcf2ab4e5a262c461e1a1c16a7d14abfd0f2a6dc32d087219c0ec017407",
+      "canonical_runner": "scripts/native_motion_check_2026_09_15.py",
+      "owner": 7,
+      "local_helpers": [],
+      "source_dependency_lines": [
+        {
+          "line": 393,
+          "text": "    'sha256': {str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest()"
+        },
+        {
+          "line": 398,
+          "text": "Path(__file__).with_suffix('.json').write_text(text + '\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {
+        "seconds": 0.4762797079747543
+      },
+      "proposed_cap_seconds": 180,
+      "proposed_memory_bytes": 536870912,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": []
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block8_native_twist_check.py",
+      "sha256": "3fc01b8d9be0ff71f868e8c571e8d9ee69407eedea7e5e7e0f1238c86a604f27",
+      "canonical_runner": "scripts/native_twist_check_2026_09_15.py",
+      "owner": 8,
+      "local_helpers": [],
+      "source_dependency_lines": [
+        {
+          "line": 250,
+          "text": "          'sha256': {str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest()"
+        },
+        {
+          "line": 254,
+          "text": "Path(__file__).with_suffix('.json').write_text(output + '\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {
+        "seconds": 0.1411934170173481
+      },
+      "proposed_cap_seconds": 180,
+      "proposed_memory_bytes": 536870912,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/FINITE_NATIVE_WINDING_CURVATURE_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": []
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/block9_polarized_word_check.py",
+      "sha256": "54909232c5038ec45348ea64b098754901c4bba898193c2da45206fb40b2ca4c",
+      "canonical_runner": "scripts/polarized_word_check_2026_09_15.py",
+      "owner": 9,
+      "local_helpers": [],
+      "source_dependency_lines": [
+        {
+          "line": 347,
+          "text": "          'sha256': {str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest()"
+        },
+        {
+          "line": 350,
+          "text": "Path(__file__).with_suffix('.json').write_text(output + '\\n')"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {
+        "seconds": 0.7341202090028673
+      },
+      "proposed_cap_seconds": 180,
+      "proposed_memory_bytes": 536870912,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": []
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/evidence/review_harmonic_metric_check.py",
+      "sha256": "7e7cdede565a3d33787a520e99a85a8e5c2bdb568a63216ee0051cfdb4a409f0",
+      "canonical_runner": "scripts/review_harmonic_metric_check_2026_09_15.py",
+      "owner": 21,
+      "local_helpers": [],
+      "source_dependency_lines": [
+        {
+          "line": 48,
+          "text": "s=json.dumps(d,indent=2);Path(__file__).with_suffix('.json').write_text(s+'\\n');print(s)"
+        }
+      ],
+      "declared_timeout": null,
+      "historical_timing_fields": {},
+      "proposed_cap_seconds": 300,
+      "proposed_memory_bytes": 1073741824,
+      "resource_status": "Planning ceiling only, not execution authorization or measured current resource usage; full per-program cost confirmation before cold/capture",
+      "sidecars": "Original program writes same-stem JSON. Preserve complete structured output at canonical logs/runner-cache location; declare output separately, never treat as scientific input.",
+      "science_input_plan": [
+        "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+      ],
+      "fixtures": "Inline deterministic source fixtures; original source dependency lines above require final literal input closure.",
+      "transitive_helpers": []
+    }
+  ],
+  "historical_python": [
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block14_initial_boundary_quadrature_failure/block14_decay_check.py",
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block14_initial_phase_space_failure/block14_decay_check.py",
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block17_initial_charged_multiplicity_failure/block17_cyclic_scaling_check.py",
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block17_initial_near_degenerate_solver_failure/block17_cyclic_scaling_check.py",
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block20_initial_check_failure/block20_holonomy_check.py",
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block21_initial_fourier_convention/block21_slow_fast_check.py",
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block21_literal_check_initial_dtype_failure/block21_slow_fast_check.py",
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block2_determinant_initial/block2_determinant_exclusion_check.py",
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block4_initial_fixture_failure/block4_fourier_gaussian_register_check.py",
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block5_initial_symbolic_failure/block5_algebra_naturality_check.py",
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block5_inverse_initial_symbolic_failure/block5_inverse_corner_support_check.py",
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block6_initial_symbolic_failure/block6_positive_auxiliary_check.py",
+    ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/block9_initial_radial_failure/block9_initial.py"
+  ],
+  "owners": {
+    "1": {
+      "logical_owner": "F5 hybrid-generator and curvature lemmas",
+      "canonical_note": "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "full_owned_appendices": [
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_BOUNDED_RATE_ALTERNATIVE.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_CURVATURE_TEST_DESIGN.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_INTEGRATED_IDENTITIES_AND_RATE_MOMENTS.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_POINTWISE_CURVATURE_WITNESS.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_POSITIVE_HYBRID_GENERATOR.md"
+      ],
+      "programs": [
+        "scripts/hybrid_curvature_check_2026_09_15.py",
+        "scripts/hybrid_generator_check_2026_09_15.py",
+        "scripts/integrated_rate_check_2026_09_15.py"
+      ],
+      "primary_runner": "scripts/hybrid_generator_check_2026_09_15.py",
+      "additional_evidence_runners": [
+        "scripts/hybrid_curvature_check_2026_09_15.py",
+        "scripts/integrated_rate_check_2026_09_15.py"
+      ],
+      "registry_helpers": [
+        "scripts/hybrid_curvature_check_2026_09_15.py",
+        "scripts/integrated_rate_check_2026_09_15.py"
+      ],
+      "ownership_rationale": "One bounded claim owner; every reviewed full derivation/route proof is an owned appendix. No reciprocal autonomous proof rows.",
+      "actual_source_reference_occurrences": [
+        {
+          "source": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_BOUNDED_RATE_ALTERNATIVE.md",
+          "line": 4,
+          "literal": "BLOCK1_POSITIVE_HYBRID_GENERATOR.md"
+        },
+        {
+          "source": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_CURVATURE_TEST_DESIGN.md",
+          "line": 5,
+          "literal": "BLOCK1_POSITIVE_HYBRID_GENERATOR.md"
+        },
+        {
+          "source": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_INTEGRATED_IDENTITIES_AND_RATE_MOMENTS.md",
+          "line": 6,
+          "literal": "BLOCK1_POSITIVE_HYBRID_GENERATOR.md"
+        },
+        {
+          "source": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_POINTWISE_CURVATURE_WITNESS.md",
+          "line": 4,
+          "literal": "BLOCK1_POSITIVE_HYBRID_GENERATOR.md"
+        }
+      ],
+      "dependency_status": "Exact source references retained for reviewer mapping; do not auto-promote context mentions or whole-family parents into load-bearing edges. Block12 independent; Block21 owns harmonic metric."
+    },
+    "2": {
+      "logical_owner": "F5 fixed-order signed forests and restricted loop/cofactor appendices",
+      "canonical_note": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "full_owned_appendices": [
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_ASSUMPTIONS_AND_ROUTE_REFRAME.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_COFACTOR_CYCLIC_REALIZATIONS.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_COMPATIBLE_LOOP_QUADRATIC_LIMIT.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_CONTACT_REGISTER_SUM.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_DETERMINANT_EXCLUSION_AND_LOCAL_DERIVATIVES.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_FRONTIER_REASSESSMENT.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_GAUSSIAN_DRESSED_CYCLE_SOURCE_SUM.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_GRAPH_HOLDER_SOURCE_REMAINDER.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_HARD_CORE_GAUSSIAN_CYCLE_SOURCE_SUM.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_MACROSCOPIC_COMPONENT_SOURCE_BOUND.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_ORDER_GROWTH_AND_SUMMATION_OBLIGATION.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_PHASE_PRESERVING_FOREST_INTERPOLATION.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_RANDOM_PARTITION_EXCLUSION_INTERPOLATION.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_SIGNED_SINE_OPERATOR_AND_CYCLES.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_STABLE_CUT_COMPLETION_ALL_FIXED_ORDERS.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_TWO_ROOT_PHASE_ENERGY_BOUND.md"
+      ],
+      "programs": [
+        "scripts/cofactor_cyclic_check_2026_09_15.py",
+        "scripts/contact_register_check_2026_09_15.py",
+        "scripts/cut_completion_check_2026_09_15.py",
+        "scripts/determinant_exclusion_check_2026_09_15.py",
+        "scripts/forest_interpolation_check_2026_09_15.py",
+        "scripts/gaussian_cycle_check_2026_09_15.py",
+        "scripts/graph_source_check_2026_09_15.py",
+        "scripts/hard_core_cycle_check_2026_09_15.py",
+        "scripts/operator_source_check_2026_09_15.py",
+        "scripts/partition_exclusion_check_2026_09_15.py",
+        "scripts/phase_energy_check_2026_09_15.py"
+      ],
+      "primary_runner": "scripts/phase_energy_check_2026_09_15.py",
+      "additional_evidence_runners": [
+        "scripts/cofactor_cyclic_check_2026_09_15.py",
+        "scripts/contact_register_check_2026_09_15.py",
+        "scripts/cut_completion_check_2026_09_15.py",
+        "scripts/determinant_exclusion_check_2026_09_15.py",
+        "scripts/forest_interpolation_check_2026_09_15.py",
+        "scripts/gaussian_cycle_check_2026_09_15.py",
+        "scripts/graph_source_check_2026_09_15.py",
+        "scripts/hard_core_cycle_check_2026_09_15.py",
+        "scripts/operator_source_check_2026_09_15.py",
+        "scripts/partition_exclusion_check_2026_09_15.py"
+      ],
+      "registry_helpers": [
+        "scripts/cofactor_cyclic_check_2026_09_15.py",
+        "scripts/contact_register_check_2026_09_15.py",
+        "scripts/cut_completion_check_2026_09_15.py",
+        "scripts/determinant_exclusion_check_2026_09_15.py",
+        "scripts/forest_interpolation_check_2026_09_15.py",
+        "scripts/gaussian_cycle_check_2026_09_15.py",
+        "scripts/graph_source_check_2026_09_15.py",
+        "scripts/hard_core_cycle_check_2026_09_15.py",
+        "scripts/operator_source_check_2026_09_15.py",
+        "scripts/partition_exclusion_check_2026_09_15.py"
+      ],
+      "ownership_rationale": "One bounded claim owner; every reviewed full derivation/route proof is an owned appendix. No reciprocal autonomous proof rows.",
+      "actual_source_reference_occurrences": [
+        {
+          "source": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_TWO_ROOT_PHASE_ENERGY_BOUND.md",
+          "line": 73,
+          "literal": "BLOCK27_ALL_COMPONENT_MIXED_COEFFICIENT.md"
+        }
+      ],
+      "dependency_status": "Exact source references retained for reviewer mapping; do not auto-promote context mentions or whole-family parents into load-bearing edges. Block12 independent; Block21 owns harmonic metric."
+    },
+    "3": {
+      "logical_owner": "F5 supplied record laws and order-independence lemmas",
+      "canonical_note": "docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "full_owned_appendices": [
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK3_FULL_DOMAIN_RECORD_MODEL_PAIR.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK3_GENERAL_ALPHABET_ORDER_INDEPENDENCE.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK3_NO_GO_DISCIPLINE_CHECKLIST.md"
+      ],
+      "programs": [
+        "scripts/general_order_check_2026_09_15.py",
+        "scripts/record_pair_check_2026_09_15.py"
+      ],
+      "primary_runner": "scripts/record_pair_check_2026_09_15.py",
+      "additional_evidence_runners": [
+        "scripts/general_order_check_2026_09_15.py"
+      ],
+      "registry_helpers": [
+        "scripts/general_order_check_2026_09_15.py"
+      ],
+      "ownership_rationale": "One bounded claim owner; every reviewed full derivation/route proof is an owned appendix. No reciprocal autonomous proof rows.",
+      "actual_source_reference_occurrences": [
+        {
+          "source": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK3_FULL_DOMAIN_RECORD_MODEL_PAIR.md",
+          "line": 179,
+          "literal": "BLOCK3_NO_GO_DISCIPLINE_CHECKLIST.md"
+        },
+        {
+          "source": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK3_GENERAL_ALPHABET_ORDER_INDEPENDENCE.md",
+          "line": 133,
+          "literal": "BLOCK3_NO_GO_DISCIPLINE_CHECKLIST.md"
+        }
+      ],
+      "dependency_status": "Exact source references retained for reviewer mapping; do not auto-promote context mentions or whole-family parents into load-bearing edges. Block12 independent; Block21 owns harmonic metric."
+    },
+    "4": {
+      "logical_owner": "F5 Fourier energy and Gaussian register lemmas",
+      "canonical_note": "docs/CUBIC_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "full_owned_appendices": [
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK4_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK4_TREE_COUNT_AND_DECORATED_CYCLE_NORMALIZATION.md"
+      ],
+      "programs": [
+        "scripts/fourier_gaussian_register_check_2026_09_15.py",
+        "scripts/tree_count_check_2026_09_15.py"
+      ],
+      "primary_runner": "scripts/fourier_gaussian_register_check_2026_09_15.py",
+      "additional_evidence_runners": [
+        "scripts/tree_count_check_2026_09_15.py"
+      ],
+      "registry_helpers": [
+        "scripts/cofactor_cyclic_check_2026_09_15.py",
+        "scripts/contact_register_check_2026_09_15.py",
+        "scripts/determinant_exclusion_check_2026_09_15.py",
+        "scripts/forest_interpolation_check_2026_09_15.py",
+        "scripts/tree_count_check_2026_09_15.py"
+      ],
+      "ownership_rationale": "One bounded claim owner; every reviewed full derivation/route proof is an owned appendix. No reciprocal autonomous proof rows.",
+      "actual_source_reference_occurrences": [],
+      "dependency_status": "Exact source references retained for reviewer mapping; do not auto-promote context mentions or whole-family parents into load-bearing edges. Block12 independent; Block21 owns harmonic metric."
+    },
+    "5": {
+      "logical_owner": "F5 supplied-action kernel/naturality lemmas",
+      "canonical_note": "docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "full_owned_appendices": [
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK5_CONTINUOUS_AND_BOREL_KERNEL_SUPPORT.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK5_FULL_ALGEBRA_NATURALITY_AND_CENTRAL_SUPPORT.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK5_RECORD_GENERATED_GAUSSIAN_KERNEL.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK5_SCOPE_AND_NO_GO_REVIEW.md"
+      ],
+      "programs": [
+        "scripts/algebra_naturality_check_2026_09_15.py",
+        "scripts/inverse_corner_support_check_2026_09_15.py"
+      ],
+      "primary_runner": "scripts/algebra_naturality_check_2026_09_15.py",
+      "additional_evidence_runners": [
+        "scripts/inverse_corner_support_check_2026_09_15.py"
+      ],
+      "registry_helpers": [
+        "scripts/inverse_corner_support_check_2026_09_15.py"
+      ],
+      "ownership_rationale": "One bounded claim owner; every reviewed full derivation/route proof is an owned appendix. No reciprocal autonomous proof rows.",
+      "actual_source_reference_occurrences": [
+        {
+          "source": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK5_FULL_ALGEBRA_NATURALITY_AND_CENTRAL_SUPPORT.md",
+          "line": 113,
+          "literal": "BLOCK5_SCOPE_AND_NO_GO_REVIEW.md"
+        }
+      ],
+      "dependency_status": "Exact source references retained for reviewer mapping; do not auto-promote context mentions or whole-family parents into load-bearing edges. Block12 independent; Block21 owns harmonic metric."
+    },
+    "6": {
+      "logical_owner": "F5 auxiliary positive law and regulator counterexample",
+      "canonical_note": "docs/POSITIVE_AUXILIARY_CURRENT_LAW_AND_REGULATOR_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "full_owned_appendices": [
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK6_PLANAR_LOOP_AND_QUADRATIC_REGULATOR_TEST.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK6_POSITIVE_AUXILIARY_CURRENT_REPRESENTATION.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK6_ROUTE_AND_NO_GO_REVIEW.md"
+      ],
+      "programs": [
+        "scripts/positive_auxiliary_check_2026_09_15.py"
+      ],
+      "primary_runner": "scripts/positive_auxiliary_check_2026_09_15.py",
+      "additional_evidence_runners": [],
+      "registry_helpers": [],
+      "ownership_rationale": "One bounded claim owner; every reviewed full derivation/route proof is an owned appendix. No reciprocal autonomous proof rows.",
+      "actual_source_reference_occurrences": [],
+      "dependency_status": "Exact source references retained for reviewer mapping; do not auto-promote context mentions or whole-family parents into load-bearing edges. Block12 independent; Block21 owns harmonic metric."
+    },
+    "7": {
+      "logical_owner": "F4 native motion and spectral-weight bounds",
+      "canonical_note": "docs/NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "full_owned_appendices": [
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK7_NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT.md"
+      ],
+      "programs": [
+        "scripts/native_motion_check_2026_09_15.py"
+      ],
+      "primary_runner": "scripts/native_motion_check_2026_09_15.py",
+      "additional_evidence_runners": [],
+      "registry_helpers": [],
+      "ownership_rationale": "One bounded claim owner; every reviewed full derivation/route proof is an owned appendix. No reciprocal autonomous proof rows.",
+      "actual_source_reference_occurrences": [],
+      "dependency_status": "Exact source references retained for reviewer mapping; do not auto-promote context mentions or whole-family parents into load-bearing edges. Block12 independent; Block21 owns harmonic metric."
+    },
+    "8": {
+      "logical_owner": "F4 finite winding curvature",
+      "canonical_note": "docs/FINITE_NATIVE_WINDING_CURVATURE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "full_owned_appendices": [
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK8_NATIVE_TWISTS_AND_WINDING_CONDUCTANCE.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK8_ROUTE_AND_NO_GO_REVIEW.md"
+      ],
+      "programs": [
+        "scripts/native_twist_check_2026_09_15.py"
+      ],
+      "primary_runner": "scripts/native_twist_check_2026_09_15.py",
+      "additional_evidence_runners": [],
+      "registry_helpers": [],
+      "ownership_rationale": "One bounded claim owner; every reviewed full derivation/route proof is an owned appendix. No reciprocal autonomous proof rows.",
+      "actual_source_reference_occurrences": [
+        {
+          "source": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK8_NATIVE_TWISTS_AND_WINDING_CONDUCTANCE.md",
+          "line": 239,
+          "literal": "BLOCK8_ROUTE_AND_NO_GO_REVIEW.md"
+        },
+        {
+          "source": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK8_ROUTE_AND_NO_GO_REVIEW.md",
+          "line": 4,
+          "literal": "BLOCK8_NATIVE_TWISTS_AND_WINDING_CONDUCTANCE.md"
+        }
+      ],
+      "dependency_status": "Exact source references retained for reviewer mapping; do not auto-promote context mentions or whole-family parents into load-bearing edges. Block12 independent; Block21 owns harmonic metric."
+    },
+    "9": {
+      "logical_owner": "F4 polarized word representation and essential floor",
+      "canonical_note": "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "full_owned_appendices": [
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK9_POLARIZED_CHARGED_SECTOR_AND_FLAT_THRESHOLD.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK9_ROUTE_AND_NO_GO_REVIEW.md"
+      ],
+      "programs": [
+        "scripts/polarized_word_check_2026_09_15.py"
+      ],
+      "primary_runner": "scripts/polarized_word_check_2026_09_15.py",
+      "additional_evidence_runners": [],
+      "registry_helpers": [],
+      "ownership_rationale": "One bounded claim owner; every reviewed full derivation/route proof is an owned appendix. No reciprocal autonomous proof rows.",
+      "actual_source_reference_occurrences": [
+        {
+          "source": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK9_POLARIZED_CHARGED_SECTOR_AND_FLAT_THRESHOLD.md",
+          "line": 281,
+          "literal": "BLOCK9_ROUTE_AND_NO_GO_REVIEW.md"
+        },
+        {
+          "source": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK9_ROUTE_AND_NO_GO_REVIEW.md",
+          "line": 3,
+          "literal": "BLOCK9_POLARIZED_CHARGED_SECTOR_AND_FLAT_THRESHOLD.md"
+        }
+      ],
+      "dependency_status": "Exact source references retained for reviewer mapping; do not auto-promote context mentions or whole-family parents into load-bearing edges. Block12 independent; Block21 owns harmonic metric."
+    },
+    "10": {
+      "logical_owner": "F4 local-source diagonal spectroscopy",
+      "canonical_note": "docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "full_owned_appendices": [
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK10_LOCAL_SOURCE_SPECTRA_AND_DARK_THRESHOLD.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK10_ROUTE_AND_NO_GO_REVIEW.md"
+      ],
+      "programs": [
+        "scripts/local_spectrum_check_2026_09_15.py"
+      ],
+      "primary_runner": "scripts/local_spectrum_check_2026_09_15.py",
+      "additional_evidence_runners": [],
+      "registry_helpers": [
+        "scripts/polarized_word_check_2026_09_15.py"
+      ],
+      "ownership_rationale": "One bounded claim owner; every reviewed full derivation/route proof is an owned appendix. No reciprocal autonomous proof rows.",
+      "actual_source_reference_occurrences": [
+        {
+          "source": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK10_LOCAL_SOURCE_SPECTRA_AND_DARK_THRESHOLD.md",
+          "line": 5,
+          "literal": "BLOCK9_POLARIZED_CHARGED_SECTOR_AND_FLAT_THRESHOLD.md"
+        },
+        {
+          "source": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK10_LOCAL_SOURCE_SPECTRA_AND_DARK_THRESHOLD.md",
+          "line": 234,
+          "literal": "BLOCK10_ROUTE_AND_NO_GO_REVIEW.md"
+        },
+        {
+          "source": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK10_ROUTE_AND_NO_GO_REVIEW.md",
+          "line": 3,
+          "literal": "BLOCK10_LOCAL_SOURCE_SPECTRA_AND_DARK_THRESHOLD.md"
+        }
+      ],
+      "dependency_status": "Exact source references retained for reviewer mapping; do not auto-promote context mentions or whole-family parents into load-bearing edges. Block12 independent; Block21 owns harmonic metric."
+    },
+    "11": {
+      "logical_owner": "F6 conditional continuum metric flow",
+      "canonical_note": "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "full_owned_appendices": [
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK11_QUARTET_METRIC_FLOW_AND_POLARIZATION.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK11_ROUTE_AND_NO_GO_REVIEW.md"
+      ],
+      "programs": [
+        "scripts/quartet_metric_check_2026_09_15.py"
+      ],
+      "primary_runner": "scripts/quartet_metric_check_2026_09_15.py",
+      "additional_evidence_runners": [],
+      "registry_helpers": [],
+      "ownership_rationale": "One bounded claim owner; every reviewed full derivation/route proof is an owned appendix. No reciprocal autonomous proof rows.",
+      "actual_source_reference_occurrences": [
+        {
+          "source": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK11_QUARTET_METRIC_FLOW_AND_POLARIZATION.md",
+          "line": 263,
+          "literal": "BLOCK11_ROUTE_AND_NO_GO_REVIEW.md"
+        },
+        {
+          "source": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK11_ROUTE_AND_NO_GO_REVIEW.md",
+          "line": 3,
+          "literal": "BLOCK11_QUARTET_METRIC_FLOW_AND_POLARIZATION.md"
+        }
+      ],
+      "dependency_status": "Exact source references retained for reviewer mapping; do not auto-promote context mentions or whole-family parents into load-bearing edges. Block12 independent; Block21 owns harmonic metric."
+    },
+    "12": {
+      "logical_owner": "independent rotor ground-cutoff compactness",
+      "canonical_note": "docs/FIXED_COUPLING_ROTOR_GROUND_CUTOFF_COMPACTNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "full_owned_appendices": [
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK12_GROUND_STATE_CUTOFF_COMPACTNESS.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK12_ROUTE_AND_NO_GO_REVIEW.md"
+      ],
+      "programs": [
+        "scripts/ground_cutoff_check_2026_09_15.py"
+      ],
+      "primary_runner": "scripts/ground_cutoff_check_2026_09_15.py",
+      "additional_evidence_runners": [],
+      "registry_helpers": [],
+      "ownership_rationale": "One bounded claim owner; every reviewed full derivation/route proof is an owned appendix. No reciprocal autonomous proof rows.",
+      "actual_source_reference_occurrences": [
+        {
+          "source": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK12_GROUND_STATE_CUTOFF_COMPACTNESS.md",
+          "line": 276,
+          "literal": "BLOCK12_ROUTE_AND_NO_GO_REVIEW.md"
+        }
+      ],
+      "dependency_status": "Exact source references retained for reviewer mapping; do not auto-promote context mentions or whole-family parents into load-bearing edges. Block12 independent; Block21 owns harmonic metric."
+    },
+    "13": {
+      "logical_owner": "F6 conditional quadratic backreaction",
+      "canonical_note": "docs/SUPPLIED_QUARTET_QUADRATIC_BACKREACTION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "full_owned_appendices": [
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK13_QUARTET_QUADRATIC_BACKREACTION.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK13_ROUTE_AND_NO_GO_REVIEW.md"
+      ],
+      "programs": [
+        "scripts/quadratic_coframe_check_2026_09_15.py"
+      ],
+      "primary_runner": "scripts/quadratic_coframe_check_2026_09_15.py",
+      "additional_evidence_runners": [],
+      "registry_helpers": [],
+      "ownership_rationale": "One bounded claim owner; every reviewed full derivation/route proof is an owned appendix. No reciprocal autonomous proof rows.",
+      "actual_source_reference_occurrences": [
+        {
+          "source": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK13_QUARTET_QUADRATIC_BACKREACTION.md",
+          "line": 196,
+          "literal": "BLOCK13_ROUTE_AND_NO_GO_REVIEW.md"
+        }
+      ],
+      "dependency_status": "Exact source references retained for reviewer mapping; do not auto-promote context mentions or whole-family parents into load-bearing edges. Block12 independent; Block21 owns harmonic metric."
+    },
+    "14": {
+      "logical_owner": "F6 conditional on-shell decay",
+      "canonical_note": "docs/SUPPLIED_QUARTET_LEADING_DECAY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "full_owned_appendices": [
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK14_QUARTET_DECAY_AND_CONE_STABILITY.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK14_ROUTE_AND_NO_GO_REVIEW.md"
+      ],
+      "programs": [
+        "scripts/decay_check_2026_09_15.py"
+      ],
+      "primary_runner": "scripts/decay_check_2026_09_15.py",
+      "additional_evidence_runners": [],
+      "registry_helpers": [],
+      "ownership_rationale": "One bounded claim owner; every reviewed full derivation/route proof is an owned appendix. No reciprocal autonomous proof rows.",
+      "actual_source_reference_occurrences": [],
+      "dependency_status": "Exact source references retained for reviewer mapping; do not auto-promote context mentions or whole-family parents into load-bearing edges. Block12 independent; Block21 owns harmonic metric."
+    },
+    "15": {
+      "logical_owner": "F2 native mixed sixth-order coefficient",
+      "canonical_note": "docs/NATIVE_MIXED_SIXTH_ORDER_COEFFICIENT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "full_owned_appendices": [
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK15_MIXED_HISTORY_BOUNDEDNESS_AND_SIXTH_POLE.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK15_ROUTE_AND_NO_GO_REVIEW.md"
+      ],
+      "programs": [
+        "scripts/mixed_history_check_2026_09_15.py"
+      ],
+      "primary_runner": "scripts/mixed_history_check_2026_09_15.py",
+      "additional_evidence_runners": [],
+      "registry_helpers": [],
+      "ownership_rationale": "One bounded claim owner; every reviewed full derivation/route proof is an owned appendix. No reciprocal autonomous proof rows.",
+      "actual_source_reference_occurrences": [],
+      "dependency_status": "Exact source references retained for reviewer mapping; do not auto-promote context mentions or whole-family parents into load-bearing edges. Block12 independent; Block21 owns harmonic metric."
+    },
+    "16": {
+      "logical_owner": "F1 cyclic equilibrium and integer Gauss limit",
+      "canonical_note": "docs/CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "full_owned_appendices": [
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK16_CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK16_ROUTE_AND_NO_GO_REVIEW.md"
+      ],
+      "programs": [
+        "scripts/cyclic_equilibrium_check_2026_09_15.py"
+      ],
+      "primary_runner": "scripts/cyclic_equilibrium_check_2026_09_15.py",
+      "additional_evidence_runners": [],
+      "registry_helpers": [],
+      "ownership_rationale": "One bounded claim owner; every reviewed full derivation/route proof is an owned appendix. No reciprocal autonomous proof rows.",
+      "actual_source_reference_occurrences": [],
+      "dependency_status": "Exact source references retained for reviewer mapping; do not auto-promote context mentions or whole-family parents into load-bearing edges. Block12 independent; Block21 owns harmonic metric."
+    },
+    "17": {
+      "logical_owner": "F3 finite-graph cyclic weak-coupling limits",
+      "canonical_note": "docs/FINITE_GRAPH_CYCLIC_WEAK_COUPLING_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "full_owned_appendices": [
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK17_CYCLIC_WEAK_COUPLING_SPECTRAL_LIMITS.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK17_ROUTE_AND_NO_GO_REVIEW.md"
+      ],
+      "programs": [
+        "scripts/cyclic_scaling_check_2026_09_15.py"
+      ],
+      "primary_runner": "scripts/cyclic_scaling_check_2026_09_15.py",
+      "additional_evidence_runners": [],
+      "registry_helpers": [
+        "scripts/cyclic_equilibrium_check_2026_09_15.py"
+      ],
+      "ownership_rationale": "One bounded claim owner; every reviewed full derivation/route proof is an owned appendix. No reciprocal autonomous proof rows.",
+      "actual_source_reference_occurrences": [],
+      "dependency_status": "Exact source references retained for reviewer mapping; do not auto-promote context mentions or whole-family parents into load-bearing edges. Block12 independent; Block21 owns harmonic metric."
+    },
+    "18": {
+      "logical_owner": "F3 positive electric generator cone",
+      "canonical_note": "docs/POSITIVE_ELECTRIC_GENERATOR_CONE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "full_owned_appendices": [
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK18_POSITIVE_ELECTRIC_GENERATOR_ACCURACY.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK18_ROUTE_AND_NO_GO_REVIEW.md"
+      ],
+      "programs": [
+        "scripts/positive_generator_check_2026_09_15.py"
+      ],
+      "primary_runner": "scripts/positive_generator_check_2026_09_15.py",
+      "additional_evidence_runners": [],
+      "registry_helpers": [],
+      "ownership_rationale": "One bounded claim owner; every reviewed full derivation/route proof is an owned appendix. No reciprocal autonomous proof rows.",
+      "actual_source_reference_occurrences": [],
+      "dependency_status": "Exact source references retained for reviewer mapping; do not auto-promote context mentions or whole-family parents into load-bearing edges. Block12 independent; Block21 owns harmonic metric."
+    },
+    "19": {
+      "logical_owner": "F1 charged-ring slow spectrum",
+      "canonical_note": "docs/CHARGED_RING_SLOW_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "full_owned_appendices": [
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK19_CHARGED_RING_SLOW_SPECTRUM.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK19_ROUTE_AND_NO_GO_REVIEW.md"
+      ],
+      "programs": [
+        "scripts/charged_ring_check_2026_09_15.py"
+      ],
+      "primary_runner": "scripts/charged_ring_check_2026_09_15.py",
+      "additional_evidence_runners": [],
+      "registry_helpers": [],
+      "ownership_rationale": "One bounded claim owner; every reviewed full derivation/route proof is an owned appendix. No reciprocal autonomous proof rows.",
+      "actual_source_reference_occurrences": [],
+      "dependency_status": "Exact source references retained for reviewer mapping; do not auto-promote context mentions or whole-family parents into load-bearing edges. Block12 independent; Block21 owns harmonic metric."
+    },
+    "20": {
+      "logical_owner": "F1 free Weyl holonomy selection",
+      "canonical_note": "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "full_owned_appendices": [
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK20_ROUTE_AND_NO_GO_REVIEW.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK20_WEYL_HOLONOMY_CASIMIR_SELECTION.md"
+      ],
+      "programs": [
+        "scripts/holonomy_check_2026_09_15.py"
+      ],
+      "primary_runner": "scripts/holonomy_check_2026_09_15.py",
+      "additional_evidence_runners": [],
+      "registry_helpers": [],
+      "ownership_rationale": "One bounded claim owner; every reviewed full derivation/route proof is an owned appendix. No reciprocal autonomous proof rows.",
+      "actual_source_reference_occurrences": [],
+      "dependency_status": "Exact source references retained for reviewer mapping; do not auto-promote context mentions or whole-family parents into load-bearing edges. Block12 independent; Block21 owns harmonic metric."
+    },
+    "21": {
+      "logical_owner": "F1 fixed-box slow spectrum and harmonic metric",
+      "canonical_note": "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "full_owned_appendices": [
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK21_FIXED_BOX_SLOW_HOLONOMY_THEOREM.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK21_ROUTE_AND_NO_GO_REVIEW.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/REVIEW_PERIODIC_HARMONIC_METRIC.md"
+      ],
+      "programs": [
+        "scripts/slow_fast_check_2026_09_15.py",
+        "scripts/review_harmonic_metric_check_2026_09_15.py"
+      ],
+      "primary_runner": "scripts/slow_fast_check_2026_09_15.py",
+      "additional_evidence_runners": [
+        "scripts/review_harmonic_metric_check_2026_09_15.py"
+      ],
+      "registry_helpers": [
+        "scripts/review_harmonic_metric_check_2026_09_15.py"
+      ],
+      "ownership_rationale": "One bounded claim owner; every reviewed full derivation/route proof is an owned appendix. No reciprocal autonomous proof rows.",
+      "actual_source_reference_occurrences": [],
+      "dependency_status": "Exact source references retained for reviewer mapping; do not auto-promote context mentions or whole-family parents into load-bearing edges. Block12 independent; Block21 owns harmonic metric."
+    },
+    "22": {
+      "logical_owner": "F1 iterated local Maxwell-matter comparator",
+      "canonical_note": "docs/ITERATED_LOCAL_MAXWELL_MATTER_STATE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "full_owned_appendices": [
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK22_ITERATED_PHYSICAL_MAXWELL_MATTER_STATE.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK22_ROUTE_AND_NO_GO_REVIEW.md"
+      ],
+      "programs": [
+        "scripts/physical_probe_check_2026_09_15.py"
+      ],
+      "primary_runner": "scripts/physical_probe_check_2026_09_15.py",
+      "additional_evidence_runners": [],
+      "registry_helpers": [
+        "scripts/slow_fast_check_2026_09_15.py"
+      ],
+      "ownership_rationale": "One bounded claim owner; every reviewed full derivation/route proof is an owned appendix. No reciprocal autonomous proof rows.",
+      "actual_source_reference_occurrences": [],
+      "dependency_status": "Exact source references retained for reviewer mapping; do not auto-promote context mentions or whole-family parents into load-bearing edges. Block12 independent; Block21 owns harmonic metric."
+    },
+    "23": {
+      "logical_owner": "F1 chosen matched free cone",
+      "canonical_note": "docs/SUPPLIED_MATCHED_FREE_CONE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "full_owned_appendices": [
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK23_MATCHED_FREE_CONE_WITH_POSITIVE_WEIGHTS.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK23_ROUTE_AND_NO_GO_REVIEW.md"
+      ],
+      "programs": [
+        "scripts/matched_cone_check_2026_09_15.py"
+      ],
+      "primary_runner": "scripts/matched_cone_check_2026_09_15.py",
+      "additional_evidence_runners": [],
+      "registry_helpers": [],
+      "ownership_rationale": "One bounded claim owner; every reviewed full derivation/route proof is an owned appendix. No reciprocal autonomous proof rows.",
+      "actual_source_reference_occurrences": [],
+      "dependency_status": "Exact source references retained for reviewer mapping; do not auto-promote context mentions or whole-family parents into load-bearing edges. Block12 independent; Block21 owns harmonic metric."
+    },
+    "24": {
+      "logical_owner": "F1 exact Ward response and conditional phase test",
+      "canonical_note": "docs/EXACT_GAUGE_WARD_RESPONSE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "full_owned_appendices": [
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK24_EXACT_RESPONSE_IDENTITIES_AND_PHASE_TEST.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK24_ROUTE_AND_NO_GO_REVIEW.md"
+      ],
+      "programs": [
+        "scripts/response_identity_check_2026_09_15.py"
+      ],
+      "primary_runner": "scripts/response_identity_check_2026_09_15.py",
+      "additional_evidence_runners": [],
+      "registry_helpers": [],
+      "ownership_rationale": "One bounded claim owner; every reviewed full derivation/route proof is an owned appendix. No reciprocal autonomous proof rows.",
+      "actual_source_reference_occurrences": [
+        {
+          "source": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK24_ROUTE_AND_NO_GO_REVIEW.md",
+          "line": 50,
+          "literal": "BLOCK24_PREFLIGHT_SOURCE.md"
+        }
+      ],
+      "dependency_status": "Exact source references retained for reviewer mapping; do not auto-promote context mentions or whole-family parents into load-bearing edges. Block12 independent; Block21 owns harmonic metric."
+    },
+    "25": {
+      "logical_owner": "F4 same-source real-overlap threshold",
+      "canonical_note": "docs/REAL_OVERLAP_LOCAL_SOURCE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "full_owned_appendices": [
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK25_ROUTE_AND_NO_GO_REVIEW.md",
+        ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK25_VISIBLE_THRESHOLD_ON_REAL_OVERLAP_MOMENTA.md"
+      ],
+      "programs": [
+        "scripts/visible_threshold_check_2026_09_15.py"
+      ],
+      "primary_runner": "scripts/visible_threshold_check_2026_09_15.py",
+      "additional_evidence_runners": [],
+      "registry_helpers": [],
+      "ownership_rationale": "One bounded claim owner; every reviewed full derivation/route proof is an owned appendix. No reciprocal autonomous proof rows.",
+      "actual_source_reference_occurrences": [],
+      "dependency_status": "Exact source references retained for reviewer mapping; do not auto-promote context mentions or whole-family parents into load-bearing edges. Block12 independent; Block21 owns harmonic metric."
+    }
+  },
+  "reviewed_parent_identities": [
+    {
+      "family": 1,
+      "path": "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "reviewed_sha256": "41d6b505e1afa88345a92caf3f33b4f0021101c30bb6ec9e23daa818204525f5",
+      "current_sha256": "41d6b505e1afa88345a92caf3f33b4f0021101c30bb6ec9e23daa818204525f5",
+      "matches": true,
+      "review_identity": "/private/tmp/review-drain-20260915/drain8159-family1-parent-identities.json",
+      "read_scope": null,
+      "historical_revision": null
+    },
+    {
+      "family": 1,
+      "path": "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "reviewed_sha256": "e00414f51b7a7ece4a9f107092e92877a296c66282133f6d35c62939fc3ed268",
+      "current_sha256": "e00414f51b7a7ece4a9f107092e92877a296c66282133f6d35c62939fc3ed268",
+      "matches": true,
+      "review_identity": "/private/tmp/review-drain-20260915/drain8159-family1-parent-identities.json",
+      "read_scope": null,
+      "historical_revision": null
+    },
+    {
+      "family": 2,
+      "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      "reviewed_sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+      "current_sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+      "matches": true,
+      "review_identity": "/private/tmp/review-drain-20260915/drain8159-family2-parent-identities.json",
+      "read_scope": null,
+      "historical_revision": null
+    },
+    {
+      "family": 2,
+      "path": "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+      "reviewed_sha256": "787948c0e58c794371fc0839d99a9eae15f49abed523b0eba9b001d010578ada",
+      "current_sha256": "787948c0e58c794371fc0839d99a9eae15f49abed523b0eba9b001d010578ada",
+      "matches": true,
+      "review_identity": "/private/tmp/review-drain-20260915/drain8159-family2-parent-identities.json",
+      "read_scope": null,
+      "historical_revision": null
+    },
+    {
+      "family": 2,
+      "path": "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+      "reviewed_sha256": "0c6c768b4fb0416067c5de3dd159596a0367e8c9c77c10f0c5700936ff6aa2f0",
+      "current_sha256": "0c6c768b4fb0416067c5de3dd159596a0367e8c9c77c10f0c5700936ff6aa2f0",
+      "matches": true,
+      "review_identity": "/private/tmp/review-drain-20260915/drain8159-family2-parent-identities.json",
+      "read_scope": null,
+      "historical_revision": null
+    },
+    {
+      "family": 2,
+      "path": "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+      "reviewed_sha256": "1557d48a8e3d5fcc17a01982484bffa6f27e0be16a42c88062eadb455dada226",
+      "current_sha256": "1557d48a8e3d5fcc17a01982484bffa6f27e0be16a42c88062eadb455dada226",
+      "matches": true,
+      "review_identity": "/private/tmp/review-drain-20260915/drain8159-family2-parent-identities.json",
+      "read_scope": null,
+      "historical_revision": null
+    },
+    {
+      "family": 2,
+      "path": "docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md",
+      "reviewed_sha256": "5ab56a41ae9524c433a50ee79889f29bf33cab7059f88f7dccd2449f8b6bdb2f",
+      "current_sha256": "5ab56a41ae9524c433a50ee79889f29bf33cab7059f88f7dccd2449f8b6bdb2f",
+      "matches": true,
+      "review_identity": "/private/tmp/review-drain-20260915/drain8159-family2-parent-identities.json",
+      "read_scope": null,
+      "historical_revision": null
+    },
+    {
+      "family": 2,
+      "path": "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "reviewed_sha256": "c0360ad1ec65a78ca63b6d6cbd24dd387e455197c87e54441424550e145c5a9f",
+      "current_sha256": "c0360ad1ec65a78ca63b6d6cbd24dd387e455197c87e54441424550e145c5a9f",
+      "matches": true,
+      "review_identity": "/private/tmp/review-drain-20260915/drain8159-family2-parent-identities.json",
+      "read_scope": null,
+      "historical_revision": null
+    },
+    {
+      "family": 2,
+      "path": "docs/NATIVE_STAR_INFRARED_SPECTRAL_DOMINANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "reviewed_sha256": "d6c7c21b65e36beecd1293a5782902019d214a782297137aa8e437ef3479ba9c",
+      "current_sha256": "d6c7c21b65e36beecd1293a5782902019d214a782297137aa8e437ef3479ba9c",
+      "matches": true,
+      "review_identity": "/private/tmp/review-drain-20260915/drain8159-family2-parent-identities.json",
+      "read_scope": null,
+      "historical_revision": null
+    },
+    {
+      "family": 2,
+      "path": "docs/NATIVE_WEAK_ELECTRIC_SPECTATOR_GAP_NOTE_2026-09-08.md",
+      "reviewed_sha256": "0f0a62aff6c9841a42b4850f3e5e4b8c9c9f613d37d755ca8f74f05f60d52270",
+      "current_sha256": "0f0a62aff6c9841a42b4850f3e5e4b8c9c9f613d37d755ca8f74f05f60d52270",
+      "matches": true,
+      "review_identity": "/private/tmp/review-drain-20260915/drain8159-family2-parent-identities.json",
+      "read_scope": null,
+      "historical_revision": null
+    },
+    {
+      "family": 2,
+      "path": "docs/NATIVE_THIRD_ORDER_STAR_VERTEX_NOTE_2026-09-08.md",
+      "reviewed_sha256": "c3ca9084907eab9f220886bd9e5d9c35654b0f27009d0cbbfb973ec30a8445e1",
+      "current_sha256": "c3ca9084907eab9f220886bd9e5d9c35654b0f27009d0cbbfb973ec30a8445e1",
+      "matches": true,
+      "review_identity": "/private/tmp/review-drain-20260915/drain8159-family2-parent-identities.json",
+      "read_scope": null,
+      "historical_revision": null
+    },
+    {
+      "family": 3,
+      "path": "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "reviewed_sha256": "41d6b505e1afa88345a92caf3f33b4f0021101c30bb6ec9e23daa818204525f5",
+      "current_sha256": "41d6b505e1afa88345a92caf3f33b4f0021101c30bb6ec9e23daa818204525f5",
+      "matches": true,
+      "review_identity": "/private/tmp/review-drain-20260915/drain8159-family3-parent-identities.json",
+      "read_scope": null,
+      "historical_revision": null
+    },
+    {
+      "family": 3,
+      "path": "docs/EXACT_GAUSS_REDUCTION_AND_FIXED_VOLUME_WEAK_COUPLING_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "reviewed_sha256": "4f9c085195ba1b769949dc121778b3012479bc28eb6e1108e81e7a6c1848ceba",
+      "current_sha256": "4f9c085195ba1b769949dc121778b3012479bc28eb6e1108e81e7a6c1848ceba",
+      "matches": true,
+      "review_identity": "/private/tmp/review-drain-20260915/drain8159-family3-parent-identities.json",
+      "read_scope": null,
+      "historical_revision": null
+    },
+    {
+      "family": 3,
+      "path": "docs/FINITE_INTEGER_LINK_WEAK_COUPLING_PAYLOAD_AND_MONOPOLE_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "reviewed_sha256": "2a6d5c79513cb92334e64d780d5b8490b6f4e9b781ad24adaafc33e1288d6851",
+      "current_sha256": "2a6d5c79513cb92334e64d780d5b8490b6f4e9b781ad24adaafc33e1288d6851",
+      "matches": true,
+      "review_identity": "/private/tmp/review-drain-20260915/drain8159-family3-parent-identities.json",
+      "read_scope": null,
+      "historical_revision": null
+    },
+    {
+      "family": 4,
+      "path": "docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md",
+      "reviewed_sha256": "46d531814d55b1a9c4e00b10ddce9cee30a673e0f93d925d83242425c95f1cd9",
+      "current_sha256": "46d531814d55b1a9c4e00b10ddce9cee30a673e0f93d925d83242425c95f1cd9",
+      "matches": true,
+      "review_identity": "/private/tmp/review-drain-20260915/drain8159-family4-parent-identities.json",
+      "read_scope": null,
+      "historical_revision": null
+    },
+    {
+      "family": 4,
+      "path": "docs/NATIVE_GLOBAL_CHARGE_CONNECTIVITY_AND_EXCHANGE_NOTE_2026-09-08.md",
+      "reviewed_sha256": "e57d84de87b131384b2be7c6f33bedd41449cb5c36e37d8fab5c4751e57e55a5",
+      "current_sha256": "e57d84de87b131384b2be7c6f33bedd41449cb5c36e37d8fab5c4751e57e55a5",
+      "matches": true,
+      "review_identity": "/private/tmp/review-drain-20260915/drain8159-family4-parent-identities.json",
+      "read_scope": null,
+      "historical_revision": null
+    },
+    {
+      "family": 4,
+      "path": "docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md",
+      "reviewed_sha256": "586b895c89eabe67c4ac6c93b5f83f9bfd9118483c4265a652f6f4e822b75583",
+      "current_sha256": "586b895c89eabe67c4ac6c93b5f83f9bfd9118483c4265a652f6f4e822b75583",
+      "matches": true,
+      "review_identity": "/private/tmp/review-drain-20260915/drain8159-family4-parent-identities.json",
+      "read_scope": null,
+      "historical_revision": null
+    },
+    {
+      "family": 4,
+      "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      "reviewed_sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+      "current_sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+      "matches": true,
+      "review_identity": "/private/tmp/review-drain-20260915/drain8159-family4-parent-identities.json",
+      "read_scope": null,
+      "historical_revision": null
+    },
+    {
+      "family": 5,
+      "path": "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "reviewed_sha256": "938df6cf9b527c050ff2aa79e55cca8d310bdaf2d129d50ef9b62d53993704a2",
+      "current_sha256": "938df6cf9b527c050ff2aa79e55cca8d310bdaf2d129d50ef9b62d53993704a2",
+      "matches": true,
+      "review_identity": "/private/tmp/review-drain-20260915/drain8159-family5-input-identities.json",
+      "read_scope": "complete source, including real C3 extension, carrier and centered MGF",
+      "historical_revision": null
+    },
+    {
+      "family": 5,
+      "path": "docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "reviewed_sha256": "01b1d213957dc1c85a520cabb6dab6ef7f6daf0b5631205f76d66d001861c8ca",
+      "current_sha256": "01b1d213957dc1c85a520cabb6dab6ef7f6daf0b5631205f76d66d001861c8ca",
+      "matches": true,
+      "review_identity": "/private/tmp/review-drain-20260915/drain8159-family5-input-identities.json",
+      "read_scope": "complete source, including exterior repair and supplied iid-priority boundary",
+      "historical_revision": null
+    },
+    {
+      "family": 5,
+      "path": "docs/FORMATION_ORDER_COVARIANCE_AND_ISOTROPIC_BINARY_ORDER_BLIND_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "reviewed_sha256": "42cbbd5ceaea95533d670fe4f3e527f566cca4cb14b826b9d98cc1ab2168c008",
+      "current_sha256": "42cbbd5ceaea95533d670fe4f3e527f566cca4cb14b826b9d98cc1ab2168c008",
+      "matches": true,
+      "review_identity": "/private/tmp/review-drain-20260915/drain8159-family5-input-identities.json",
+      "read_scope": "complete source; initial truncated opening recovered separately",
+      "historical_revision": null
+    },
+    {
+      "family": 5,
+      "path": "docs/FINITE_CLOCK_SCORE_GAUSSIAN_MAXWELL_SCALING_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "reviewed_sha256": "0a5b8736767660f7b9600516224a8c40e1477cb0b309282e3dedbbb848095c48",
+      "current_sha256": "0a5b8736767660f7b9600516224a8c40e1477cb0b309282e3dedbbb848095c48",
+      "matches": true,
+      "review_identity": "/private/tmp/review-drain-20260915/drain8159-family5-input-identities.json",
+      "read_scope": "lines110-220 exact lattice law, Poisson covariance, centered MGF and all-source distinction only",
+      "historical_revision": null
+    },
+    {
+      "family": 5,
+      "path": "docs/FIXED_CLOCK_TRANSVERSE_SPECTRAL_CONCENTRATION_AND_LINEAR_ENERGY_BAND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "reviewed_sha256": "a5bef84a859722aac5e96f679190870f936947f9df58eacc56c305320f112550",
+      "current_sha256": "a5bef84a859722aac5e96f679190870f936947f9df58eacc56c305320f112550",
+      "matches": true,
+      "review_identity": "/private/tmp/review-drain-20260915/drain8159-family5-input-identities.json",
+      "read_scope": "lines80-245 source, centered MGF, contact covariance and spectral scope only; no full-source acceptance",
+      "historical_revision": null
+    },
+    {
+      "family": 5,
+      "path": "docs/FIXED_COUPLING_HAAR_VILLAIN_FULL_SCORE_GAUSSIAN_MAXWELL_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "reviewed_sha256": "94b10473ca1b6bd24774efaceb78b93707825f739a2b1c89d2cbc52da81dcdc1",
+      "current_sha256": "94b10473ca1b6bd24774efaceb78b93707825f739a2b1c89d2cbc52da81dcdc1",
+      "matches": true,
+      "review_identity": "/private/tmp/review-drain-20260915/drain8159-family5-input-identities.json",
+      "read_scope": "lines1-240 actual free-box flux unfolding and real auxiliary tilt identity; no full Haar infrared-proof acceptance",
+      "historical_revision": null
+    },
+    {
+      "family": 5,
+      "path": ".claude/science/physics-loops/toe-phase-selection-20260914/BLOCK27_ALL_COMPONENT_MIXED_COEFFICIENT.md",
+      "reviewed_sha256": "7a0a953deb6b02a4b4c2f78a941013d30a61ad61ef6e5c0c278489c149c1c647",
+      "current_sha256": null,
+      "matches": false,
+      "review_identity": "/private/tmp/review-drain-20260915/drain8159-family5-input-identities.json",
+      "read_scope": "complete historical mathematical premise; anchored moments/fillings/support graph independently examined, not current retained authority",
+      "historical_revision": "e3fc0b7707dce894ef98e7981a9feaf6041708f8"
+    },
+    {
+      "family": 6,
+      "path": "docs/LOCAL_HALL_FREE_MIXED_WEYL_QUARTET_AND_COMMON_METRIC_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "reviewed_sha256": "9318215ebc71ad93aa9dbe8117f68122bfa3f6a3d2cc4967560d740d8ba2c6db",
+      "current_sha256": "9318215ebc71ad93aa9dbe8117f68122bfa3f6a3d2cc4967560d740d8ba2c6db",
+      "matches": true,
+      "review_identity": "/private/tmp/review-drain-20260915/drain8159-family6-parent-identities.json",
+      "read_scope": null,
+      "historical_revision": null
+    },
+    {
+      "family": 6,
+      "path": "docs/NATIVE_WEYL_GAUGE_HALL_AND_CONE_FLOW_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "reviewed_sha256": "9a4e3ec1310fde85e4d5f34dd1af9b8999629df7b9988a7d54d040c0f8b7fb7d",
+      "current_sha256": "9a4e3ec1310fde85e4d5f34dd1af9b8999629df7b9988a7d54d040c0f8b7fb7d",
+      "matches": true,
+      "review_identity": "/private/tmp/review-drain-20260915/drain8159-family6-parent-identities.json",
+      "read_scope": null,
+      "historical_revision": null
+    },
+    {
+      "family": 6,
+      "path": "docs/CHARGED_FINITE_LINK_LOCAL_DYNAMICS_AND_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "reviewed_sha256": "eb2e9d2e5377af13af94df558d9ac4bf07e499ccae512444251be86bc305d8a4",
+      "current_sha256": "eb2e9d2e5377af13af94df558d9ac4bf07e499ccae512444251be86bc305d8a4",
+      "matches": true,
+      "review_identity": "/private/tmp/review-drain-20260915/drain8159-family6-parent-identities.json",
+      "read_scope": null,
+      "historical_revision": null
+    }
+  ],
+  "registry_plan": {
+    "hybrid_generators_integrated_rates_and_curvature_witness_bounded_theorem_note_2026-09-15": [
+      "scripts/hybrid_curvature_check_2026_09_15.py",
+      "scripts/integrated_rate_check_2026_09_15.py"
+    ],
+    "signed_forest_fixed_order_remainders_and_restricted_loop_sums_bounded_theorem_note_2026-09-15": [
+      "scripts/cofactor_cyclic_check_2026_09_15.py",
+      "scripts/contact_register_check_2026_09_15.py",
+      "scripts/cut_completion_check_2026_09_15.py",
+      "scripts/determinant_exclusion_check_2026_09_15.py",
+      "scripts/forest_interpolation_check_2026_09_15.py",
+      "scripts/gaussian_cycle_check_2026_09_15.py",
+      "scripts/graph_source_check_2026_09_15.py",
+      "scripts/hard_core_cycle_check_2026_09_15.py",
+      "scripts/operator_source_check_2026_09_15.py",
+      "scripts/partition_exclusion_check_2026_09_15.py"
+    ],
+    "supplied_record_laws_and_common_order_kernels_bounded_theorem_note_2026-09-15": [
+      "scripts/general_order_check_2026_09_15.py"
+    ],
+    "cubic_fourier_energy_and_gaussian_registers_bounded_theorem_note_2026-09-15": [
+      "scripts/cofactor_cyclic_check_2026_09_15.py",
+      "scripts/contact_register_check_2026_09_15.py",
+      "scripts/determinant_exclusion_check_2026_09_15.py",
+      "scripts/forest_interpolation_check_2026_09_15.py",
+      "scripts/tree_count_check_2026_09_15.py"
+    ],
+    "supplied_algebra_action_and_kernel_support_bounded_theorem_note_2026-09-15": [
+      "scripts/inverse_corner_support_check_2026_09_15.py"
+    ],
+    "local_source_diagonal_spectral_bounds_bounded_theorem_note_2026-09-15": [
+      "scripts/polarized_word_check_2026_09_15.py"
+    ],
+    "finite_graph_cyclic_weak_coupling_limits_bounded_theorem_note_2026-09-15": [
+      "scripts/cyclic_equilibrium_check_2026_09_15.py"
+    ],
+    "fixed_box_slow_spectrum_and_harmonic_metric_bounded_theorem_note_2026-09-15": [
+      "scripts/review_harmonic_metric_check_2026_09_15.py"
+    ],
+    "iterated_local_maxwell_matter_state_bounded_theorem_note_2026-09-15": [
+      "scripts/slow_fast_check_2026_09_15.py"
+    ]
+  },
+  "registry_targets": [
+    "scripts/audit_packet_script_deps.py",
+    "docs/audit/scripts/build_citation_graph.py"
+  ],
+  "unproved_targets": [
+    "Full fixed-clock interacting characteristic-functional/state limit at fixed finite payload and finite beta",
+    "Full-foundation nonselection satisfying kinetic primitive carrier, matching and interpretation",
+    "Selected internal action/kernel/common fiber rather than supplied conventions",
+    "Positive-g native phase identification and uniform interacting infrared estimate",
+    "Joint g(L)/payload/a continuum rates absent from fixed-box and iterated limits",
+    "Interacting particle pole/residue, thermodynamic transport stiffness and generic source edge exponent"
+  ],
+  "remaining": [
+    "Original reviewer confirm primary/auxiliary assignments and full appendix destinations",
+    "Read full canonical-bound source and resolve per-owner mathematical parent edges; historical BLOCK27 premise needs explicit bounded owned proof destination or independently confirmed canonical equivalent, never opaque live personal input",
+    "Before cold source freeze make literal owner/parent/helper input reads and actual cache/API/helper closure; retain exact arithmetic and tolerances",
+    "Confirm each proposed resource ceiling against complete source cost; enforce PYTHONOPTIMIZE=0, sequential execution, no untraced numeric credit",
+    "Root guarded FF before any maps/staging; no primary executed"
+  ],
+  "archive_manifest_sha256": "3c3e11b79c35b8d426442c627ef149c8d18dc9bfd68dfe1d52ca858bd5d16ec0",
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8159-final366-original-dispositions.json",
+      "sha256": "23492a5e1cbaadc9239ae801f98a734ae479bc266e4b90b04b0dfa4885916547"
+    },
+    {
+      "family": 1,
+      "json": "/private/tmp/review-drain-20260915/drain8159-family1-original-review.json",
+      "sha256": "19bf2fa40a93e34f505140c54be3ef3e441124a8859ab2d3b355595d43dc7e64",
+      "markdown": "/private/tmp/review-drain-20260915/drain8159-family1-original-review.md"
+    },
+    {
+      "family": 2,
+      "json": "/private/tmp/review-drain-20260915/drain8159-family2-original-review.json",
+      "sha256": "f6b01519816cfcbcd08889ec203e1a8f68aeb80c311e4c4d687179243a7d14b3",
+      "markdown": "/private/tmp/review-drain-20260915/drain8159-family2-original-review.md"
+    },
+    {
+      "family": 3,
+      "json": "/private/tmp/review-drain-20260915/drain8159-family3-original-review.json",
+      "sha256": "41a112b43860493288757c3a893d4745403162685be3bfe1115d0da9da5062f7",
+      "markdown": "/private/tmp/review-drain-20260915/drain8159-family3-original-review.md"
+    },
+    {
+      "family": 4,
+      "json": "/private/tmp/review-drain-20260915/drain8159-family4-original-review.json",
+      "sha256": "c3b1f0cf711b5b2a763038c63fa4a1af57fe1613f909fc8e92bae9c0e171aee0",
+      "markdown": "/private/tmp/review-drain-20260915/drain8159-family4-original-review.md"
+    },
+    {
+      "family": 5,
+      "json": "/private/tmp/review-drain-20260915/drain8159-family5-original-review.json",
+      "sha256": "2404b874f01ad69327b6f6028247b2fdfa4425769977f0e82c7f50010e0a3f8e",
+      "markdown": "/private/tmp/review-drain-20260915/drain8159-family5-original-review.md"
+    },
+    {
+      "family": 6,
+      "json": "/private/tmp/review-drain-20260915/drain8159-family6-original-review.json",
+      "sha256": "325ed1b6634e13a8857602259984ea7601b40dc35390fb2295c4d0bfe46e78b5",
+      "markdown": "/private/tmp/review-drain-20260915/drain8159-family6-original-review.md"
+    }
+  ],
+  "supersedes": "drain8159-author-ownership-plan-v1.json",
+  "correction": "Explicit Block10 AST helper edge recovered from actual source; primary excluded from own auxiliary registry entries.",
+  "proposed_path_collisions": []
+}

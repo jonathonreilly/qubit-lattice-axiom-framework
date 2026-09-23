@@ -1,0 +1,92 @@
+{
+  "current_main": "0ea56ccd19205c66ccfb664fb391ed4de39fa415",
+  "parents": [
+    {
+      "path": "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "revision": "0ea56ccd19205c66ccfb664fb391ed4de39fa415",
+      "blob": "937af5a02fbc00ebd13657ee7b10538ee824364b",
+      "sha256": "938df6cf9b527c050ff2aa79e55cca8d310bdaf2d129d50ef9b62d53993704a2",
+      "read_scope": "complete source, including real C3 extension, carrier and centered MGF",
+      "same_as_delta_base": true
+    },
+    {
+      "path": "docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "revision": "0ea56ccd19205c66ccfb664fb391ed4de39fa415",
+      "blob": "2306b037c6104b90572895e4762355c58e14ea0e",
+      "sha256": "01b1d213957dc1c85a520cabb6dab6ef7f6daf0b5631205f76d66d001861c8ca",
+      "read_scope": "complete source, including exterior repair and supplied iid-priority boundary",
+      "same_as_delta_base": true
+    },
+    {
+      "path": "docs/FORMATION_ORDER_COVARIANCE_AND_ISOTROPIC_BINARY_ORDER_BLIND_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "revision": "0ea56ccd19205c66ccfb664fb391ed4de39fa415",
+      "blob": "dbeb1bb5cdb706b6eee47c360457c1b790e23790",
+      "sha256": "42cbbd5ceaea95533d670fe4f3e527f566cca4cb14b826b9d98cc1ab2168c008",
+      "read_scope": "complete source; initial truncated opening recovered separately",
+      "same_as_delta_base": null
+    },
+    {
+      "path": "docs/FINITE_CLOCK_SCORE_GAUSSIAN_MAXWELL_SCALING_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "revision": "0ea56ccd19205c66ccfb664fb391ed4de39fa415",
+      "blob": "6bebf7102a130eb3e3b649d53e25480293a9b1bd",
+      "sha256": "0a5b8736767660f7b9600516224a8c40e1477cb0b309282e3dedbbb848095c48",
+      "read_scope": "lines110-220 exact lattice law, Poisson covariance, centered MGF and all-source distinction only",
+      "same_as_delta_base": true
+    },
+    {
+      "path": "docs/FIXED_CLOCK_TRANSVERSE_SPECTRAL_CONCENTRATION_AND_LINEAR_ENERGY_BAND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "revision": "0ea56ccd19205c66ccfb664fb391ed4de39fa415",
+      "blob": "1e9da2d7f99ad0aa4f044146c2d27d50c53c800a",
+      "sha256": "a5bef84a859722aac5e96f679190870f936947f9df58eacc56c305320f112550",
+      "read_scope": "lines80-245 source, centered MGF, contact covariance and spectral scope only; no full-source acceptance",
+      "same_as_delta_base": true
+    },
+    {
+      "path": "docs/FIXED_COUPLING_HAAR_VILLAIN_FULL_SCORE_GAUSSIAN_MAXWELL_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "revision": "0ea56ccd19205c66ccfb664fb391ed4de39fa415",
+      "blob": "61bdaf8dd87c4332a0f0df4f75ece822f128ae0f",
+      "sha256": "94b10473ca1b6bd24774efaceb78b93707825f739a2b1c89d2cbc52da81dcdc1",
+      "read_scope": "lines1-240 actual free-box flux unfolding and real auxiliary tilt identity; no full Haar infrared-proof acceptance",
+      "same_as_delta_base": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-phase-selection-20260914/BLOCK27_ALL_COMPONENT_MIXED_COEFFICIENT.md",
+      "revision": "e3fc0b7707dce894ef98e7981a9feaf6041708f8",
+      "blob": "7447f92da36367b135b2b761c02b91cf3980cfd7",
+      "sha256": "7a0a953deb6b02a4b4c2f78a941013d30a61ad61ef6e5c0c278489c149c1c647",
+      "read_scope": "complete historical mathematical premise; anchored moments/fillings/support graph independently examined, not current retained authority"
+    }
+  ],
+  "authorities_reused_after_exact_hash_check": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "same_bytes_as_full_prior_read": true,
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "same_bytes_as_full_prior_read": true,
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "same_bytes_as_full_prior_read": true,
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "same_bytes_as_full_prior_read": true,
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "same_bytes_as_full_prior_read": true,
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "same_bytes_as_full_prior_read": true,
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    }
+  ]
+}

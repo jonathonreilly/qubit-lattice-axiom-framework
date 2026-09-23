@@ -1,0 +1,32 @@
+{
+  "source_sha256": "15a12e2b1839d5f6259bbd9d56a41f67fb77e2d1bba64cdc21ba85779f9d5191",
+  "status": "PASS",
+  "checks": [
+    "high precision independent Poisson versus Jacobi product and floor",
+    "fourth moment bound",
+    "exhaustive N3/4/5 charged modular Gauss spaces and hopping",
+    "scalar product and logarithmic-resolvent endpoints"
+  ],
+  "rows": [
+    {
+      "c": "0.03",
+      "fourth_ratio": "2.830188679245283018867924528301886792452830188679245283018867924528302"
+    },
+    {
+      "c": "0.3",
+      "fourth_ratio": "1.875000000027423410213493559923550181584677244648071851748824840363446"
+    },
+    {
+      "c": "1.0",
+      "fourth_ratio": "1.012104486751935763755589043456267020554915339488408214528750127230862"
+    },
+    {
+      "c": "3.0",
+      "fourth_ratio": "0.9182831053613940867569081988290425355814864939098713859203456519329632"
+    },
+    {
+      "c": "30.0",
+      "fourth_ratio": "0.9999999999998128475406232665599877849113071085269895695409781289296799"
+    }
+  ]
+}

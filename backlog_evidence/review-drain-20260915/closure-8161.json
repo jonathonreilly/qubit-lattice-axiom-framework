@@ -1,0 +1,19 @@
+{
+  "pr": 8161,
+  "original_head": "392e70e8a1c68385533705e01692e954d70ca7bd",
+  "branch": "physics-loop/toe-infrared-leverage-20260916",
+  "landing": "0b79324946912feca6063851b2b842539b503820",
+  "dependent_base_maintenance": [],
+  "lease_deleted": true,
+  "immediate_state": {
+    "baseRefName": "main",
+    "closedAt": null,
+    "headRefName": "physics-loop/toe-infrared-leverage-20260916",
+    "headRefOid": "392e70e8a1c68385533705e01692e954d70ca7bd",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8161,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8161"
+  }
+}

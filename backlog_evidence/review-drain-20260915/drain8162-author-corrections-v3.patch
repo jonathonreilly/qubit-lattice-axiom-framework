@@ -1,0 +1,53 @@
+--- docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md v2
++++ docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md v3
+@@ -23,7 +23,7 @@
+ 
+ This is a conditional mathematical result for fixed supplied g>0, external time, a finite spatial graph and finite-dimensional gauge-compatible matter. No spatial-volume or varying-coupling uniformity is asserted.
+ 
+-Contextual prior art: [compact currents and finite cyclic transfer, Part III](COMPACT_DETERMINANT_CURRENTS_SIGNED_SECTORS_AND_FINITE_CYCLIC_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-14.md); the complete argument used here is given below.
++Contextual prior art: `COMPACT_DETERMINANT_CURRENTS_SIGNED_SECTORS_AND_FINITE_CYCLIC_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-14.md`, Part III (context only); the complete argument used here is given below.
+ 
+ ## 1. Exact clock kernel and a crossover that must be priced
+ 
+@@ -385,4 +385,4 @@
+ - N7: The principal finite-graph objection is modular high-mode spectral escape; the explicit theta floor and compactness argument address it only under the stated assumptions.
+ - N8: Prior fixed-clock and spatial matching are contextual prior art; no earlier result is promoted to a thermodynamic phase. No native clock, coupling, physical phase or axiom update follows.
+ 
+-[Canonical program](../scripts/clock_variance_calibrated_transfer_check_2026_09_16.py) · [Current cache](../scripts/clock_variance_calibrated_transfer_check_2026_09_16.cache.txt) · [Exact original recovery](work_history/review_loop/pr8162/README.md).
++[Canonical program](../scripts/clock_variance_calibrated_transfer_check_2026_09_16.py) · [Current cache](../logs/runner-cache/clock_variance_calibrated_transfer_check_2026_09_16.txt) · [Exact original recovery](work_history/review_loop/pr8162/README.md).
+--- docs/CLOCK_ALL_MODE_COERCIVITY_FINITE_GRAPH_STATES_BOUNDED_THEOREM_NOTE_2026-09-16.md v2
++++ docs/CLOCK_ALL_MODE_COERCIVITY_FINITE_GRAPH_STATES_BOUNDED_THEOREM_NOTE_2026-09-16.md v3
+@@ -203,4 +203,4 @@
+ - N7: The principal finite-graph objection is modular high-mode spectral escape; the explicit theta floor and compactness argument address it only under the stated assumptions.
+ - N8: Prior fixed-clock and spatial matching are contextual prior art; no earlier result is promoted to a thermodynamic phase. No native clock, coupling, physical phase or axiom update follows.
+ 
+-[Canonical program](../scripts/clock_all_mode_finite_graph_states_check_2026_09_16.py) · [Current cache](../scripts/clock_all_mode_finite_graph_states_check_2026_09_16.cache.txt) · [Exact original recovery](work_history/review_loop/pr8162/README.md).
++[Canonical program](../scripts/clock_all_mode_finite_graph_states_check_2026_09_16.py) · [Current cache](../logs/runner-cache/clock_all_mode_finite_graph_states_check_2026_09_16.txt) · [Exact original recovery](work_history/review_loop/pr8162/README.md).
+--- scripts/clock_variance_calibrated_transfer_check_2026_09_16.py v2
++++ scripts/clock_variance_calibrated_transfer_check_2026_09_16.py v3
+@@ -156,9 +156,10 @@
+     physical=[full_ring_angle_check(N,.7,.03) for N in [3,5]]
+     print(json.dumps({'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'integer_gaussian_moments':moment_rows,'uncalibrated_crossover':crossover,'calibrated_low_modes':low,'physical_ring_checks':physical,'joint_ring_paths':ring_paths(),'seconds':time.time()-started},indent=2))
+     print("TOTAL: PASS=5 FAIL=0")
++    print("N5 per_element: finite integer-Gaussian and Fourier-character values checked; see JSON parameter rows")
+     print("N5 per_site: finite four-link ring configurations and explicit Gauss labels checked")
++    print("N5 per_mode: only the finite sampled mode sets checked; analytical all-mode bounds are not executed")
+     print("N5 per_block: finite mode/parameter families completed; see JSON rows")
+-    print("N5 whole_lattice: supplied finite ring only; no infinite-lattice execution")
+     print("N5 lattice_wide: analytical joint-limit proof not executed; floating cutoffs are diagnostics")
+ 
+ 
+--- scripts/clock_all_mode_finite_graph_states_check_2026_09_16.py v2
++++ scripts/clock_all_mode_finite_graph_states_check_2026_09_16.py v3
+@@ -189,9 +189,10 @@
+     start=time.time();theta=theta_checks();physical=[full_physical_check(N,.7,.23,.03) for N in [3,4]];states=charged_paths()
+     print(json.dumps({'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'theta_product_checks':theta,'full_physical_checks':physical,'charged_ring_states':states,'seconds':time.time()-start},indent=2))
+     print("TOTAL: PASS=3 FAIL=0")
++    print("N5 per_element: finite integer-Gaussian and Fourier-character values checked; see JSON parameter rows")
+     print("N5 per_site: finite four-link ring configurations and explicit Gauss labels checked")
++    print("N5 per_mode: only the finite sampled mode sets checked; analytical all-mode bounds are not executed")
+     print("N5 per_block: finite mode/parameter families completed; see JSON rows")
+-    print("N5 whole_lattice: supplied finite ring only; no infinite-lattice execution")
+     print("N5 lattice_wide: analytical joint-limit proof not executed; floating cutoffs are diagnostics")
+ 
+ 

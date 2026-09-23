@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "0f02dc5127416f347e231bbd8aa7c2a8b58a02fa",
+  "fetched_ref": "refs/review-loop/fetched/8162-f52517148fe64a01af7a35d37c04c900",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/toe-continuous-time-bridge-20260916",
+    "headRefOid": "0f02dc5127416f347e231bbd8aa7c2a8b58a02fa",
+    "isDraft": false,
+    "number": 8162,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,29 @@
+{
+  "gaussian_rate_moment_recurrence": "exact; m2=1, m4=exp(q), mean=exp(-q/8)",
+  "bounded_residual_control": {
+    "signed": 4,
+    "absolute": 16,
+    "positive_indicator": 10
+  },
+  "indirect_contact_tree_cancellation": [
+    "1/3",
+    "-2/3",
+    "1/3"
+  ],
+  "gram_scope_and_contact": {
+    "mixed_derivative": "2b",
+    "non_psd_cube_determinant": -1
+  },
+  "record_controls": {
+    "local_parent_probability": "1/7",
+    "covariance_gap": "1/28",
+    "nonreversible_square_projection_escape": true
+  },
+  "naturality_controls": {
+    "both_shear_fixed_space": "complex scalar matrices",
+    "inverse_corner": "E21/t; non-tight Gaussian corner variance t^-2"
+  },
+  "auxiliary_resolvent_identity": "A T=G, B* T A T B=R-P, RP=P exactly",
+  "self_dual_nongaussian_fourth_cumulant": "3/8",
+  "status": "PASS_bounded_independent_math_controls_only"
+}

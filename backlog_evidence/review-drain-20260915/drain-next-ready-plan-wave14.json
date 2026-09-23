@@ -1,0 +1,11 @@
+{
+  "after_train74a_lands": [
+    "Guarded fast-forward PR8029 author-draft-slot and PR8162 review-meta-slot preserving61/96 owned additions, to exact fresh landed main.",
+    "Run prepared builders (no helper-map changes), cheap preflights, original cold confirmations, bounded captures, same-session final confirmations and cache preflights.",
+    "Combine8029 and8162 into one next gate if both ready when integration slot is free; no intentional wait for an unready unit. Preserve separate unit records and original reviewers.",
+    "Only then stage PR8160 helper maps against the resulting current main to avoid rebasing waiting units over global registry edits.",
+    "Continue complete PR8159 preservation and canonical preparation after original366 disposition reconciliation."
+  ],
+  "reason": "PR8029 and8162 need no registry edits and have disjoint source paths; PR8160 changes shared helper registries. This reduces avoidable tooling-identity churn without reducing review or freshness checks.",
+  "boundary": "No primary execution or source acceptance granted by scheduling plan; each original reviewer and exact current-parent binding remain mandatory."
+}

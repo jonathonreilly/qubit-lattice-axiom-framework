@@ -1,0 +1,277 @@
+{
+  "schema": "original-shared-review-v1",
+  "pr": 8159,
+  "head": "ccca36e505a4cc5d0cd4735b377c15d69042fc41",
+  "delta_base": "6ad6a2184b7c2067e597528e0964753874493b4a",
+  "current_main": "0b79324946912feca6063851b2b842539b503820",
+  "inventory_sha256": "7224412c3bf7dfd424b13a256b21752fdd261218bbb877202eaad841d14cb18a",
+  "verdict": "shared15 fully read and reconciled; original review complete with six family reports; not canonical PASS",
+  "path_dispositions": [
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/APPROACH_REGISTRY.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "51ffae2bcc32ff2da9250b87650676c832b5fb2d",
+      "sha256": "22589beae2fa372016c498a463f6cfeebddc7c527e1573406e352890906db0de",
+      "bytes": 25717,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/APPROACH_REGISTRY.md",
+      "read_scope": "complete text read and cross-family scientific claims reconciled",
+      "disposition": "preserve exact shared historical original; canonical navigation/scope may be derived with findings corrected, no independent proof authority",
+      "canonical_owner": "shared campaign provenance and navigation",
+      "not_deferred_science": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/GOAL.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "20950519deca00600e979468db0b33141b3e1022",
+      "sha256": "eb07cd7ad8e81e4d07195f2a577a32ed92bb7cf824fd27469dac6105489aa469",
+      "bytes": 1788,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/GOAL.md",
+      "read_scope": "complete text read and cross-family scientific claims reconciled",
+      "disposition": "preserve exact shared historical original; canonical navigation/scope may be derived with findings corrected, no independent proof authority",
+      "canonical_owner": "shared campaign provenance and navigation",
+      "not_deferred_science": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/HANDOFF.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "b8bdca98e83d66e7f282fb660bdfc1597eba35d9",
+      "sha256": "58742226a01223e84ca218ab7fcbbfccfe5d8b1434fb60f06a2b2c47dcfd8670",
+      "bytes": 51148,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/HANDOFF.md",
+      "read_scope": "complete text read and cross-family scientific claims reconciled",
+      "disposition": "preserve exact shared historical original; canonical navigation/scope may be derived with findings corrected, no independent proof authority",
+      "canonical_owner": "shared campaign provenance and navigation",
+      "not_deferred_science": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/NO_GO_LEDGER.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "c89cf7d952b8ae3e00d38cbc3f0f023b69ce3ca8",
+      "sha256": "9141da39fc59f710e95811633d650108a42cb4b2799ae4352b302a5ac232b1d8",
+      "bytes": 5053,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/NO_GO_LEDGER.md",
+      "read_scope": "complete text read and cross-family scientific claims reconciled",
+      "disposition": "preserve exact shared historical original; canonical navigation/scope may be derived with findings corrected, no independent proof authority",
+      "canonical_owner": "shared campaign provenance and navigation",
+      "not_deferred_science": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/OPPORTUNITY_QUEUE.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "afc24ff5eaeec81801bc7d0a841985dfc9e81d52",
+      "sha256": "de1100e4829f3040d206824d0dcf2eadd9850fb3427a1bf03e610715ca2fddea",
+      "bytes": 3970,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/OPPORTUNITY_QUEUE.md",
+      "read_scope": "complete text read and cross-family scientific claims reconciled",
+      "disposition": "preserve exact shared historical original; canonical navigation/scope may be derived with findings corrected, no independent proof authority",
+      "canonical_owner": "shared campaign provenance and navigation",
+      "not_deferred_science": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/READING_LEDGER.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "243eed21af3077e29f7d715e8de44c4c6cc7cf70",
+      "sha256": "6aad24eaafe2f49372fa7313d1522eddb1fe0969479629879a6aa44f055375e8",
+      "bytes": 30589,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/READING_LEDGER.md",
+      "read_scope": "complete text read and cross-family scientific claims reconciled",
+      "disposition": "preserve exact shared historical original; canonical navigation/scope may be derived with findings corrected, no independent proof authority",
+      "canonical_owner": "shared campaign provenance and navigation",
+      "not_deferred_science": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/README.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "c66d7263ad232e838c619ad8ee8f6694190f8d60",
+      "sha256": "737307eb2ad529ad5bef4261ba91067558239790d89eb071e2fa9509748effc5",
+      "bytes": 11618,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/README.md",
+      "read_scope": "complete text read and cross-family scientific claims reconciled",
+      "disposition": "preserve exact shared historical original; canonical navigation/scope may be derived with findings corrected, no independent proof authority",
+      "canonical_owner": "shared campaign provenance and navigation",
+      "not_deferred_science": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/STATE.yaml",
+      "change": "A",
+      "mode": "100644",
+      "blob": "16e05eb47178ec0366671efa2261601f0d27a745",
+      "sha256": "3159023263a670587efc7c61a474c0c8d058fcceea8a69109bd9e77017d5297a",
+      "bytes": 869,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/STATE.yaml",
+      "read_scope": "complete text read and cross-family scientific claims reconciled",
+      "disposition": "preserve exact shared historical original; canonical navigation/scope may be derived with findings corrected, no independent proof authority",
+      "canonical_owner": "shared campaign provenance and navigation",
+      "not_deferred_science": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/TRACE_GATE.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "16af700f1527d950af71b60d6d2d2aae48286ac0",
+      "sha256": "f87156851387fe825b43d0b251fc0b7f218862cf62559f1bbcf6f5edfc96c085",
+      "bytes": 1306,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/TRACE_GATE.md",
+      "read_scope": "complete text read and cross-family scientific claims reconciled",
+      "disposition": "preserve exact shared historical original; canonical navigation/scope may be derived with findings corrected, no independent proof authority",
+      "canonical_owner": "shared campaign provenance and navigation",
+      "not_deferred_science": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/END_STAGE_NEW_MAIN_READING.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "2170b1360df35336a14027ee7236ff0df7db7452",
+      "sha256": "a4a4bf9483d076753093923cbb58d2cea97fb5c483b07805890662dd9ffa5abc",
+      "bytes": 1477,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/review/END_STAGE_NEW_MAIN_READING.json",
+      "read_scope": "complete text read and cross-family scientific claims reconciled",
+      "disposition": "preserve exact shared historical original; canonical navigation/scope may be derived with findings corrected, no independent proof authority",
+      "canonical_owner": "shared campaign provenance and navigation",
+      "not_deferred_science": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/END_STAGE_VOCAB.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "a7a5ff59f978c9fd9dc659702f5317e2038479ff",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "bytes": 153,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/review/END_STAGE_VOCAB.json",
+      "read_scope": "complete text read and cross-family scientific claims reconciled",
+      "disposition": "preserve exact shared historical original; canonical navigation/scope may be derived with findings corrected, no independent proof authority",
+      "canonical_owner": "shared campaign provenance and navigation",
+      "not_deferred_science": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/MILESTONE_MANIFEST.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "75fe36b348447e2a95855c5a2ef297e83d9cc6f7",
+      "sha256": "d43358e037012dd9b60500205fc2c19fff9c3a11e831dc04740db1817ab36404",
+      "bytes": 88603,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/review/MILESTONE_MANIFEST.json",
+      "read_scope": "complete decoded JSON; independently inspected/verified every 365 file record, 169 receipt-input record and 26 README-link record",
+      "disposition": "preserve exact shared historical original; canonical navigation/scope may be derived with findings corrected, no independent proof authority",
+      "canonical_owner": "shared campaign provenance and navigation",
+      "not_deferred_science": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/MILESTONE_PERSONAL_REVIEW.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "a0fb5ce6e51a853b97b53ec6d2015b83abae3a2f",
+      "sha256": "9c31a000736d216335628bb6bb3f7a2b8469df6837f2d213947c3c5e88351523",
+      "bytes": 1228,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/review/MILESTONE_PERSONAL_REVIEW.json",
+      "read_scope": "complete text read and cross-family scientific claims reconciled",
+      "disposition": "preserve exact shared historical original; canonical navigation/scope may be derived with findings corrected, no independent proof authority",
+      "canonical_owner": "shared campaign provenance and navigation",
+      "not_deferred_science": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/MILESTONE_PERSONAL_REVIEW.md",
+      "change": "A",
+      "mode": "100644",
+      "blob": "621dfd925879968de0c2fe015cf0f01c1b4361e9",
+      "sha256": "0a8b2a06dca5db755a0e89621200f86286234cff936c80908f37e97d5a62b93a",
+      "bytes": 7729,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/review/MILESTONE_PERSONAL_REVIEW.md",
+      "read_scope": "complete text read and cross-family scientific claims reconciled",
+      "disposition": "preserve exact shared historical original; canonical navigation/scope may be derived with findings corrected, no independent proof authority",
+      "canonical_owner": "shared campaign provenance and navigation",
+      "not_deferred_science": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/review/USER_EXTENSION_20260916.json",
+      "change": "A",
+      "mode": "100644",
+      "blob": "afdbd2357238a639d5fcb6cea2b7e43ea2313c05",
+      "sha256": "96aa30d7101a6dcdfc38327705f045d10223d5879f3634a3aae387c677a3d671",
+      "bytes": 375,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8159-originals/.claude/science/physics-loops/toe-fixed-clock-field-20260915/review/USER_EXTENSION_20260916.json",
+      "read_scope": "complete text read and cross-family scientific claims reconciled",
+      "disposition": "preserve exact shared historical original; canonical navigation/scope may be derived with findings corrected, no independent proof authority",
+      "canonical_owner": "shared campaign provenance and navigation",
+      "not_deferred_science": true
+    }
+  ],
+  "family_reports": [
+    {
+      "family": 1,
+      "json": "/private/tmp/review-drain-20260915/drain8159-family1-original-review.json",
+      "sha256": "19bf2fa40a93e34f505140c54be3ef3e441124a8859ab2d3b355595d43dc7e64",
+      "markdown": "/private/tmp/review-drain-20260915/drain8159-family1-original-review.md"
+    },
+    {
+      "family": 2,
+      "json": "/private/tmp/review-drain-20260915/drain8159-family2-original-review.json",
+      "sha256": "f6b01519816cfcbcd08889ec203e1a8f68aeb80c311e4c4d687179243a7d14b3",
+      "markdown": "/private/tmp/review-drain-20260915/drain8159-family2-original-review.md"
+    },
+    {
+      "family": 3,
+      "json": "/private/tmp/review-drain-20260915/drain8159-family3-original-review.json",
+      "sha256": "41a112b43860493288757c3a893d4745403162685be3bfe1115d0da9da5062f7",
+      "markdown": "/private/tmp/review-drain-20260915/drain8159-family3-original-review.md"
+    },
+    {
+      "family": 4,
+      "json": "/private/tmp/review-drain-20260915/drain8159-family4-original-review.json",
+      "sha256": "c3b1f0cf711b5b2a763038c63fa4a1af57fe1613f909fc8e92bae9c0e171aee0",
+      "markdown": "/private/tmp/review-drain-20260915/drain8159-family4-original-review.md"
+    },
+    {
+      "family": 5,
+      "json": "/private/tmp/review-drain-20260915/drain8159-family5-original-review.json",
+      "sha256": "2404b874f01ad69327b6f6028247b2fdfa4425769977f0e82c7f50010e0a3f8e",
+      "markdown": "/private/tmp/review-drain-20260915/drain8159-family5-original-review.md"
+    },
+    {
+      "family": 6,
+      "json": "/private/tmp/review-drain-20260915/drain8159-family6-original-review.json",
+      "sha256": "325ed1b6634e13a8857602259984ea7601b40dc35390fb2295c4d0bfe46e78b5",
+      "markdown": "/private/tmp/review-drain-20260915/drain8159-family6-original-review.md"
+    }
+  ],
+  "findings": [
+    {
+      "id": "SHARED-E1",
+      "kind": "evidence qualification, not proof failure",
+      "paths": [
+        "README.md",
+        "HANDOFF.md",
+        "APPROACH_REGISTRY.md"
+      ],
+      "finding": "README blanket claim that every claimed finite execution has source/output exceeds identifiable evidence for Block16 separate three-level searches and Block17 separate full-dense corroboration. The final recorded runners/results and analytical proofs remain separately reviewed. Preserve these assertions as unverified historical ancillary narrative unless exact source/output is recovered; canonical evidence summary must qualify them. See F1-E1 and F3-E1."
+    },
+    {
+      "id": "SHARED-R1",
+      "kind": "salvage completeness",
+      "paths": [
+        "README.md"
+      ],
+      "finding": "README six-family navigation omits explicit Block12 placement. Its cutoff/volume ground-state compactness is a separately proved positive supplied-model result. Give it an independent owner and finite-time parent; do not discard it or use it as a continuum-phase premise."
+    }
+  ],
+  "reconciliations": [
+    "Original full fixed finite-N finite-beta joint-defect characteristic/state target stays OPEN. Fixed-order cancellations, restricted loop sums, auxiliary duality and iterated rotor limit do not complete it.",
+    "Full-foundation record-model nonselection stays FAIL/unproved: full-M2 domain and covariance-distinct global record laws do not meet kinetic carrier/matching/interpretation obligations. Their bounded constructions and common-kernel order/naturality lemmas remain positive salvage.",
+    "Block16 fixed positive couplings and joint volume/regulator/cooling limits coexist with Block17 g->0 alias persistence; their quantifiers differ.",
+    "Block20 internal holonomy free minimization differs from Block24 removable external flat charge twist. Ward cancellation is not phase existence. Block21-23 limits take g->0 at each fixed L first, then L->infinity, fixed a.",
+    "Block9 all-momentum essential floor is compatible with Block10 source-dependent diagonal dark intervals and Block25 same-source visible threshold on real-overlap momentum slices. No atom or generic edge exponent follows.",
+    "Block11/13/14 supplied continuum phase and action are not constructed by Block12 ground-state existence, Block15 vacuum-only fixed-order singularity, or Block22 free iterated comparator. Perturbative relative widths do not establish interacting poles.",
+    "STATE, deadlines, user-extension and handoff instructions are historical records, not present execution instructions. Personal review and byte-integrity receipts do not become independent audit or retained canonical certification.",
+    "All original failed controls, intermediate source snapshots and route boundaries are preserved. N1 proof components are not five independent failures; missing explicit N5 records require honest canonical scope rather than fictitious primary recapture."
+  ],
+  "manifest_verification": "/private/tmp/review-drain-20260915/drain8159-shared15-manifest-verification.json",
+  "current_premise_identity_verification": "/private/tmp/review-drain-20260915/drain8159-final-current-premise-identities.json",
+  "execution_scope": "No primary run, full pipeline, audit, source mutation or GitHub mutation. Independent byte/identity verification only in this supplemental pass."
+}

@@ -22,11 +22,18 @@
  "stdout_tail": " 1/8, 1/16, 1/32\nok P4: six-axis rejection, 4-site path, all 24 orders (runner: 1): one sub-law, completion 125/216 = (5/6)^3, agreement (1/6)(1 + 5(-1/5)^d) = 1, 0, 1/5, 4/25 for d = 0..3\nok P5: soft rule on the 2x2x2 cube (12 bonds, four-cycles), all 40320 orders: one sub-law = prod r0 prod_bonds K atom by atom, completion 18225/524288; the pair-form converse of Theorem 2 holds off trees\nok P6: soft rule over all 127 neighbour value lists: a sub-probability everywhere (the note's claim holds); total mass max 1 (no formed neighbour), max 3/4 with a formed neighbour, min 1/8 at three +1 and three -1 (one-step hole 7/8); 65/128 occurs only at six equal values, the max over six-neighbour lists\nthe sampled order statements: all hold over complete order sets\nSUMMARY: pattern (e) sampled evidence: every order statement the runner backs with samples (8-site path soft and rejection, forcing completed law on the cross, six-axis 4-site path) holds exactly over the complete order sets, and pair-form order-blindness holds on the cube with cycles; the single-condition 'worst case 65/128' is not an extremum over every neighbour condition\nHIT: PR #8664 result 4 labels 65/128 the worst case of the soft pair rule K = (3/4)(1 + ab/3) on every neighbour condition, but over every condition its total mass runs from 1/8 (three formed neighbours at +1, three at -1: one-step hole 7/8) to 1 (none formed), 3/4 with one formed neighbour; 65/128 is the largest total among six-neighbour conditions only\n",
  "checked": {
   "by": "w-macbookpro90c72-j60e2",
-  "at_utc": "20260923T103851Z",
+  "at_utc": "20260923T103946Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 5d762b1f differs from the current HEAD 11a7b68e (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science, narrow: PR #8664 result 4 calls 65/128 the worst case of the soft pair rule K = (3/4)(1 + ab/3) on every neighbour condition. Over all 127 unsoldered value lists (0 to 6 formed neighbours) the total mass runs from 1/8 (three formed neighbours at +1, three at -1; one-step hole 7/8) to 1 (none formed), 3/4 at most once a neighbour is formed; 65/128 is the largest total among six-neighbour lists only. The sub-probability statement itself holds, and no theorem uses the label. Every order statement the runner backs with samples (soft and rejection on the 8-site path, the forcing completed law on the cross, six-axis rejection on the 4-site path) holds exactly over the complete order sets, and pair-form order-blindness also holds on the 2x2x2 cube, which has cycles.",
+  "by": "w-macbookpro90c72-j60e2",
+  "at_utc": "20260923T103946Z"
  }
 }

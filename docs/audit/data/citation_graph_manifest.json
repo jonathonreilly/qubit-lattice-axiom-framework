@@ -1,6 +1,6 @@
 {
- "edge_count": 13954,
- "node_count": 6407,
+ "edge_count": 13969,
+ "node_count": 6420,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -17382,6 +17382,10 @@
    "deps_hash": "d0400b13fd93",
    "out_degree": 3
   },
+  "six_axis_two_level_domination_extended_explanation_tree_and_four_rational_certificates_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "1da6b10d4602",
+   "out_degree": 4
+  },
   "sixth_family_complex_boundary_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -24772,6 +24776,54 @@
   },
   "work_history.repo.review_feedback.pr8172-evidence.readme": {
    "deps_hash": "138a622bc4e5",
+   "out_degree": 11
+  },
+  "work_history.repo.review_feedback.pr8174-evidence.kept.admissibility_rule_six_axis_formation_threshold_lifted_by_a_two_level_domination_seeds_and_amplified-c9850d47e436dea7": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8174-evidence.kept.approach_registry-a24d7a0fbd69f46c": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8174-evidence.kept.checker_block30_findings-df0ff512f1767b7f": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8174-evidence.kept.claim_status_certificate_block30-3b47da9614abb913": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8174-evidence.kept.goal_block30-eed3c47d058abe9c": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8174-evidence.kept.handoff-3daf21b65f4e73be": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8174-evidence.kept.opportunity_queue-d3108acdf7a1cb18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8174-evidence.kept.results_block30-5242365320da46ae": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8174-evidence.kept.review_history-e3346d7d91b61912": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8174-evidence.kept.trace_gate-b7388c63cc0a04c5": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8174-evidence.pr8174-deferred-science": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8174-evidence.readme": {
+   "deps_hash": "452a3324ec67",
    "out_degree": 11
   },
   "work_history.repo.review_feedback.preterminal_context_quantum_process_cycle189_note_2026-07-16": {

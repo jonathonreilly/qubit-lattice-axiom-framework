@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle703_local_gauss_reference_adversary_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle703_local_gauss_reference_adversary_2026_07_25.py",
+ "seed": 37392,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aeb05721",
+ "started_utc": "20260923T042312Z",
+ "elapsed_s": 5.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e2b969c1d64d406be5a15cb05f936586b57e5e4b2c8dd5e531f1ef0fe1ef1002",
+ "stdout_tail": "2, \"minimum_D_Pauli_weight\": 12, \"periodic\": true, \"phase_failures\": 0, \"product_D_is_fixed_even_identity\": true}, {\"D_delete_one_increment\": 124, \"D_delete_two_increment\": 123, \"D_increment\": 124, \"L\": 5, \"Wilson_increment\": 3, \"cells\": 125, \"code_exponent_after_Wilson_fix\": 750, \"code_exponent_before_Wilson_fix\": 753, \"commutator_failures\": 0, \"edge_M2\": 3000, \"expected_D_rank\": 124, \"expected_Wilson_rank\": 3, \"local_loop_rank\": 2123, \"maximum_D_Pauli_weight\": 12, \"minimum_D_Pauli_weight\": 12, \"periodic\": true, \"phase_failures\": 0, \"product_D_is_fixed_even_identity\": true}]}, \"scope\": {\"bounded_radius_BKSF_state_encoder_constructed\": false, \"broad_no_go_gate\": \"FAIL\", \"common_E_physical_intertwiner_executed\": false, \"finite_state_isometry_exists_after_Wilson_fix\": true, \"fixed_Wilson_character_supplied\": true, \"full_graded_CAR_odd_fields_locally_represented\": false, \"local_incidence_order_gauge_supplied\": true, \"runtime_global_order_service_used\": false, \"runtime_global_parity_query_used\": false}, \"terminal\": \"LOCAL_GAUSS_ALGEBRA_AND_FOCK_ISOMETRY_POSITIVE_BKSF_COMMON_E_OPEN\", \"tests_failed\": 0, \"tests_passed\": 8, \"two_cell_extended_Fock\": {\"BKSF_edge_qubit_common_E_executed\": false, \"all_36_directed_port_FSWAPs_exact\": true, \"all_36_directed_port_hops_exact\": true, \"extended_Fock_common_E_nonzeros\": 4096, \"extended_Fock_common_E_shape\": [16384, 4096], \"full_off_code_FSWAP_involution_executed\": true}}\nRESULT LOCAL_GAUSS_ALGEBRA_AND_FOCK_ISOMETRY_POSITIVE_BKSF_COMMON_E_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T042317Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

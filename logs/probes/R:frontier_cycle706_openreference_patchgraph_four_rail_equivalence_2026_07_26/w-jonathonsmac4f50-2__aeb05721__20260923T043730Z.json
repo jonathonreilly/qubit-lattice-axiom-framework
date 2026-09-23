@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py",
+ "seed": 38250,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aeb05721",
+ "started_utc": "20260923T043730Z",
+ "elapsed_s": 6.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f55191a1c62b01a5b3f00e703ff015d0b265437a8a285382e63f224a48f6e81b",
+ "stdout_tail": "e\": 4,\n          \"positive\": 51\n        },\n        \"cross_commutator_failures\": 10,\n        \"target_rank\": 56,\n        \"union_rank\": 60\n      }\n    }\n  },\n  \"signed_clifford_candidate\": {\n    \"bond_sign_mutations_detected\": 4,\n    \"deletion_ranks\": {\n      \"edge_map_any_generator_deleted\": [\n        159\n      ],\n      \"source_bond_loop\": [\n        79\n      ],\n      \"target_rail_Z\": [\n        79\n      ]\n    },\n    \"edge_generator_images\": 160,\n    \"edge_image_rank\": 160,\n    \"image_weight_census\": {\n      \"1\": 126,\n      \"2\": 20,\n      \"3\": 10,\n      \"9\": 1,\n      \"10\": 1,\n      \"14\": 1,\n      \"15\": 1\n    },\n    \"inverse_failures\": 0,\n    \"logical_qubits\": 24,\n    \"maximum_image_cell_diameter\": 2,\n    \"maximum_image_weight\": 15,\n    \"multiplication_failures\": 0,\n    \"ordered_generator_pair_products\": 25600,\n    \"patch_fundamental_loop_count\": 49,\n    \"patch_fundamental_signed_status\": {\n      \"positive\": 49\n    },\n    \"qubits\": 80,\n    \"semantic_map_failures\": {\n      \"bond_to_rail_Z\": 0,\n      \"local_D\": 0,\n      \"logical_X\": 0,\n      \"logical_Z\": 0,\n      \"shared_loops\": 0\n    },\n    \"source_canonical_failures\": 0,\n    \"source_full_W_rank\": 80,\n    \"source_stabilizer_phase_failures\": 0,\n    \"target_canonical_failures\": 0,\n    \"target_full_W_rank\": 80,\n    \"target_stabilizer_phase_failures\": 0\n  },\n  \"unlawful_domain\": {\n    \"cases\": [\n      \"empty\",\n      \"duplicate\",\n      \"disconnected\"\n    ],\n    \"invalid_cases\": 3,\n    \"invalid_rejections\": 3\n  }\n}\nSUMMARY pass=8 fail=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T043737Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

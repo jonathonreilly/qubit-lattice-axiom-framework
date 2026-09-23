@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle708_physical_endpoint_cube_2026_07_26",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle708_physical_endpoint_cube_2026_07_26.py",
+ "seed": 38257,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aeb05721",
+ "started_utc": "20260923T043737Z",
+ "elapsed_s": 34.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a44d2731444b4fbb68355406546d93a0e02cba341bfafd26bde409949cdf575a",
+ "stdout_tail": "enbit\": 1, \"n_u\": 1, \"n_u_xor_n_v\": 1, \"n_v\": 0}, {\"B_u_B_v_eigenvalue\": 1, \"P_B\": 0, \"extracted_eigenbit\": 0, \"n_u\": 1, \"n_u_xor_n_v\": 0, \"n_v\": 1}], \"map_boundary\": \"T is the supplied abstract/dense signed tableau map; Cycle708 executes only V after the state is already in the literal PatchGraph/repetition code\", \"projector_relation_residual\": 0.0, \"superposition_semantics\": \"V sum_q Pi_q|psi>|0> = sum_q Pi_q|psi>|q>; mixed-parity superpositions become coherently entangled with the pointer\", \"truth_relation_failures\": 0, \"unitarity_residual\": 0.0}, \"held\": [{\"cells\": 8, \"coarse_rows\": 6, \"dropped_coarse_rows\": 1, \"endpoint_failures\": 0, \"endpoint_rows\": 36, \"open_edges\": 168, \"parameters_refit\": 0, \"patch_edges\": 156, \"rails\": 12, \"shape\": [2, 2, 2], \"source_canonical_failures\": 0, \"split\": \"direct\", \"target_canonical_failures\": 0}, {\"cells\": 12, \"coarse_rows\": 11, \"dropped_coarse_rows\": 2, \"endpoint_failures\": 0, \"endpoint_rows\": 60, \"open_edges\": 256, \"parameters_refit\": 0, \"patch_edges\": 236, \"rails\": 20, \"shape\": [3, 2, 2], \"source_canonical_failures\": 0, \"split\": \"held-no-refit\", \"target_canonical_failures\": 0}], \"unlawful\": {\"cases\": [\"empty\", \"duplicate\", \"disconnected\", \"unknown_drop\", \"under_drop\", \"over_drop\", \"non_ten_support\", \"occupied_pointer\"], \"failures\": [], \"rejected\": [\"empty\", \"duplicate\", \"disconnected\", \"unknown_drop\", \"under_drop\", \"over_drop\", \"non_ten_support\", \"occupied_pointer\"]}}\nSUMMARY PASS 18 FAIL 0\nCYCLE708_PHYSICAL_ENDPOINT_CUBE_CERTIFICATE\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T043812Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

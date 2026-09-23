@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle703_open_bksf_stabilizer_preparation_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle703_open_bksf_stabilizer_preparation_2026_07_25.py",
+ "seed": 37397,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aeb05721",
+ "started_utc": "20260923T042317Z",
+ "elapsed_s": 14.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7f27928e7503bf94cc0d8332b900eb057743e8b963d2bd4afbe4af330146a8b5",
+ "stdout_tail": "edges\": 144, \"explicit_boundary_path_failures\": 0, \"explicit_maximum_feedforward_radius\": 3, \"independent_plaquette_syndromes\": 64, \"isolated_deepest_plaquette_boundary_lower_bound\": 3, \"isolated_single_plaquette_outcome_lawful\": true, \"lower_bound_saturated\": true}], \"proper_cubic_and_boundary_scope\": {\"decoder_tie_breaking_covariant\": false, \"local_check_family\": \"the Cycle232 proper-cubic BKSF family\", \"logical_chart_change_failures\": 0, \"logical_chart_change_frames\": 24, \"open_boundary_and_origin_supplied\": true, \"periodic_fixed_Wilson_preparation_tested\": false}, \"protocol\": {\"D_behavior\": \"all corrections are Z type, so every B_v and D_x remains +1\", \"initial_state\": \"|0> on every BKSF edge M2\", \"prepared_state\": \"unique all-B-positive BKSF vacuum stabilizer state\", \"schedule_counter_is_physical_time\": false, \"stage_1\": \"measure cell triangles; fixed intra-cell Z correction table\", \"stage_2\": \"measure coarse plaquettes; open-boundary Z decoder on matter-stream edges\", \"stage_3\": \"measure bond rectangles; Z on the unique reference-bond edge\"}, \"status\": \"open-BKSF-state-encoder-positive-feedforward-range-grows\", \"supplied\": [\"the open cell set and boundary\", \"the Cycle232 incidence order and proper-cubic coframe\", \"one measurement ancilla per simultaneously measured check\", \"classical feedforward paths or Gaussian decoder table\", \"a future Z3 placement/routing of graph edges, ancillas, and work qubits\"]}\nCYCLE703_OPEN_BKSF_STATE_ENCODER_LOCAL_FEEDFORWARD_NOT_FIXED_DEPTH\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T042332Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

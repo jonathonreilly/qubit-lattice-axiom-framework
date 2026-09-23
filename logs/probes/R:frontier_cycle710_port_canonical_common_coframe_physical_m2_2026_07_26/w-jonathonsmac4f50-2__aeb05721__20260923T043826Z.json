@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle710_port_canonical_common_coframe_physical_m2_2026_07_26",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle710_port_canonical_common_coframe_physical_m2_2026_07_26.py",
+ "seed": 38306,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aeb05721",
+ "started_utc": "20260923T043826Z",
+ "elapsed_s": 227.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ae7dfd713b19020b59e2202114e4bc38d41fd88269ac305cc90012dc15c671f8",
+ "stdout_tail": "d one-seam factor family; this primary word is not rebuilt on 24 rotated canonical tuples\", \"literal_M2\": 276, \"maximum_route_distance\": 24, \"non_NN_failures\": 0, \"operand_order_failures\": 0, \"overlap\": {\"cube_overlap_M2\": 84, \"cube_union_M2\": 276, \"cube_union_equals_primary\": true, \"left_cube_M2\": 180, \"left_to_primary_address_failures\": 0, \"primary_M2\": 276, \"right_cube_M2\": 180, \"right_to_primary_address_failures\": 0, \"shared_address_count\": 80, \"shared_cube_address_failures\": 0}, \"physical_factor_rows\": 80, \"physical_schedule_boundary\": \"a supplied serial Manhattan micro-schedule routes the exact bounded word; collision-free constant-depth parallel routing and an autonomous controller remain open\", \"placement_collisions\": 0, \"primitive_gate_count\": 1265, \"repetition_stabilizer_failures\": 0, \"route_return_failures\": 0, \"routed_gate_count\": 22635, \"routed_kind_census\": {\"basis_H\": 360, \"basis_S\": 20, \"basis_Sdg\": 20, \"cleanup_CZ_CNOT\": 11, \"cleanup_CZ_H\": 22, \"cleanup_outer_H\": 40, \"parity_CNOT\": 712, \"phase_S\": 40, \"phase_Sdg\": 40, \"route_swap\": 21370}, \"routed_word_sha256\": \"673932d45609b52da0c07495e93dd6d13fa5ef0afe323c8113448e63f5744f6d\", \"same_colour_abstract_support_collisions\": 0, \"seam_colour_layers\": 6, \"seams\": 20, \"signed_abstract_compiler_failures\": false}, \"returncode\": 0, \"stderr\": \"\", \"stdout_sha256\": \"8efe4a924dc651697bc5a4212299582cca9197d603fbbd9e30a2dc64d05e1382\", \"terminal_present\": true}}\nCYCLE710_PORT_CANONICAL_COMMON_COFRAME_PHYSICAL_M2_COMPILER_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T044214Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle710_port_canonical_order_gauge_core_2026_07_26",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle710_port_canonical_order_gauge_core_2026_07_26.py",
+ "seed": 38534,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aeb05721",
+ "started_utc": "20260923T044214Z",
+ "elapsed_s": 94.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2349aaf05faf70eeb2a218ce081cf295f80e8b76f07013edc7afc9f3d726aa1d",
+ "stdout_tail": "6 signed A/B operator convention and OpenReference source sector\"]}, \"legacy_local_match\": {\"fixtures\": 10, \"incident_order_failures\": 0, \"oriented_A_failures\": 0}, \"local_feature_factoring\": {\"open\": {\"Z_feature_collisions\": 0, \"Z_features\": 576, \"legacy_local_pair_features\": 156, \"legacy_local_pair_order_collisions\": 0, \"legacy_local_phase_collisions\": 0, \"legacy_local_phase_features\": 24, \"pair_feature_collisions\": 0, \"pair_features\": 3744}, \"patch\": {\"Z_feature_collisions\": 0, \"Z_features\": 504, \"legacy_local_pair_features\": 105, \"legacy_local_pair_order_collisions\": 0, \"legacy_local_phase_collisions\": 0, \"legacy_local_phase_features\": 21, \"pair_feature_collisions\": 0, \"pair_features\": 2520}}, \"pass\": 7, \"shared_ports\": {\"graph_A_failures\": 0, \"independent_order_transition_terms\": 0, \"independently_shuffled_cube_views\": 2, \"rows\": [{\"graph_A_failures\": 0, \"open_CZ\": 0, \"open_Z\": 0, \"patch_CZ\": 0, \"patch_Z\": 0}, {\"graph_A_failures\": 0, \"open_CZ\": 0, \"open_Z\": 0, \"patch_CZ\": 0, \"patch_Z\": 0}], \"shared_augmented_addresses\": 80, \"shared_patch_edge_addresses\": 76, \"shared_rail_addresses\": 4}, \"shuffled\": {\"centralizer_span_failures\": 0, \"fixtures\": 20, \"locality_failures\": 0, \"rank_table\": [[[2, 2, 2], 120, 216], [[3, 2, 2], 184, 328], [[4, 2, 2], 248, 440], [[3, 3, 2], 282, 498], [[3, 3, 3], 432, 756]], \"semantic_failure_sum\": 0, \"transition_term_sum\": 0}, \"terminal\": \"CYCLE710_PORT_CANONICAL_COMMON_COFRAME_COMPILER_PASS\"}\nCYCLE710_PORT_CANONICAL_COMMON_COFRAME_COMPILER_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T044348Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

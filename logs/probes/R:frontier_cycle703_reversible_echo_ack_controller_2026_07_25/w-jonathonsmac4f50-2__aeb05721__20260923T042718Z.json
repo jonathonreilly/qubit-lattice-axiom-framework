@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle703_reversible_echo_ack_controller_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle703_reversible_echo_ack_controller_2026_07_25.py",
+ "seed": 37638,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aeb05721",
+ "started_utc": "20260923T042718Z",
+ "elapsed_s": 37.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "78a5be57fc7e9bcea2bb7798e012a60ccc11803449b3e64162b76ef45d1ce5de",
+ "stdout_tail": ": 4, \"proper_cubic_frames\": 24, \"scope\": \"coframe, port order, roots, and boundary corner transported\", \"translations\": 2, \"transport_cases\": 6912, \"transport_failures\": 0}, \"status\": \"reversible-local-echo-ack-and-one-time-syndrome-bank-factor-positive\", \"supplied\": [\"the open boundary, transported coframe, and local port order\", \"one fresh/spent preparation epoch state per dependency root\", \"coherently extracted or measured local syndrome bits\", \"bounded blank token/value work qubits per dependency node\", \"a future collision-free Z3 placement/routing of graph edges and controller work qubits\", \"one invocation of the preparation isometry E\"], \"syndrome_bank_decoupling_and_reuse\": {\"coherent_fixed_syndrome_bank_reset_status\": \"a unitary exists because the factorized syndrome bank is one fixed pure stabilizer state, but no uniform local inverse-syndrome-bank encoder is constructed\", \"dephased_reset_scope\": \"without exporting the syndrome entropy to another retained register\", \"dephased_syndrome_bank_unitary_reset_collision_count_L2\": \"2^113-1\", \"later_logical_loader_touches_syndrome_bank\": false, \"one_time_E_requires_syndrome_bank_reset\": false, \"recurrent_edge_qubit_update_touches_syndrome_bank\": false, \"reuse_as_blank_without_reset_constructed\": false, \"spent_sector_immutable_failures\": 0, \"spent_sector_truth_rows\": [[0, 1, 0, 1], [1, 1, 1, 1]], \"syndrome_bank_can_remain_bounded_local_inert_auxiliary\": true}}\nCYCLE703_ECHO_WORK_RETURNED_SYNDROME_BANK_FACTORS_AND_STAYS_INERT\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T042756Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

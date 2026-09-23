@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle705_cycle269_carrier_role_support_localization_2026_07_26",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle705_cycle269_carrier_role_support_localization_2026_07_26.py",
+ "seed": 37682,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aeb05721",
+ "started_utc": "20260923T042802Z",
+ "elapsed_s": 18.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b03a89ca4c43f4fa087ebebf20a21730c0ced9e733f61d01165130563f085605",
+ "stdout_tail": "t M2 per cell with B_v Z_port(v)=+1\",\n      \"one stream-role flag f per cell\",\n      \"one gauge companion r per cell\",\n      \"Cycle-311 C_role=K_exchange X_r=+1 shell constraint\",\n      \"carrier superpositions over unoccupied directions in odd sectors\"\n    ],\n    \"compiler_structure\": [\n      \"a fixed cell multiplication order and its explicit reverse audit\",\n      \"the Cycle-219 beta=-0.3 coin fixture\",\n      \"the Cycle-230 coupling g and contact convention\",\n      \"the Cycle-655 38-factor decoded target word only\",\n      \"periodic hosts L=5 for train patches and L=6 for held 3x3\"\n    ],\n    \"not_supplied\": [\n      \"no global Jordan-Wigner parity string\",\n      \"no nonlocal parity service\",\n      \"no Cycle-655 K7 physical encoder\",\n      \"no host-side branch selection\",\n      \"no physical-time interpretation of factor order\"\n    ],\n    \"physical_substrate\": [\n      \"Cycle-269 periodic proper-cubic square-pyramid dual graph\",\n      \"six matter vertices and fifteen face M2 per coarse cell\",\n      \"eight triangle plus three octagon local checks per coarse cell\",\n      \"three fixed Wilson signs for the reference-ray reducer\"\n    ]\n  },\n  \"unlawful_domain\": {\n    \"invalid_domain_calls\": 5,\n    \"invalid_domain_rejections\": 5,\n    \"role_constrained_shell_rank\": 127,\n    \"role_shell_rank_without_C_role\": 254,\n    \"single_port_constraint_deletion_ranks\": [\n      5,\n      5,\n      5,\n      5,\n      5,\n      5\n    ],\n    \"six_local_port_constraint_rank\": 6\n  }\n}\nSUMMARY pass=21 fail=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T042820Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

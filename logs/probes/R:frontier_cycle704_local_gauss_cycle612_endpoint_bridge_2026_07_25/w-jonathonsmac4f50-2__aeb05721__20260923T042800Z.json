@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py",
+ "seed": 37680,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aeb05721",
+ "started_utc": "20260923T042800Z",
+ "elapsed_s": 1.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2057d7e31885bb1da3c4574c6ec9811b236ee0f48dfef22e3d64135be6821886",
+ "stdout_tail": "rsible predecessor/interval software adapter\", \"Cycle610 projection/intertwiner and unchanged Cycle612 order harness\"], \"interface_equations\": [\"Pi_610 A_packet(P_B, supplied_tokens) = A_610 Pi_610\", \"D_packet = D_610 Pi_610 on the lawful predecessor domain\", \"J_612 Pi_610(packet identities) preserves JointOrder admission/refusal\"], \"open\": [\"objective occurrence and an autonomous admission law\", \"Record permanence (the packet inverse remains accessible)\", \"empirical interval unit or identification with duration\", \"composition with the BKSF edge-qubit common E/preparation and a Z3 physical-site placement\", \"endpoints for diagonal-phase-only or general superposed coin dynamics\", \"a bit-level reversible M2 address, freshness, append/unappend, and bank-selection circuit\"], \"pass\": true, \"resources\": {\"certificate_sha256\": \"0a846522112a7fdca315d38c5570bc8316d48a666e66b022f30e07ed0e8e1649\", \"elapsed_seconds\": 1.0102005419903435, \"peak_rss_mb\": 96.515625}, \"status\": \"conditional-local-Gauss-Cycle612-endpoint-bridge\", \"supplied\": [\"local-D BKSF code and exact dressed FSWAP\", \"blank endpoint/payload values and address selection in the software model\", \"actuality, admissibility, law-domain, and co-registration ports\", \"Cycle610 K16 packet convention and Cycle612 cross-order rule\"], \"terminal\": \"LOCAL_GAUSS_ENDPOINT_SOFTWARE_PACKET_INTERFACE_CLOSED_PHYSICAL_BANK_OPEN\", \"tests_failed\": 0, \"tests_passed\": 6}\nRESULT LOCAL_GAUSS_ENDPOINT_SOFTWARE_PACKET_INTERFACE_CLOSED_PHYSICAL_BANK_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T042801Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle703_recurrent_endpoint_incidence_package_acceptance_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle703_recurrent_endpoint_incidence_package_acceptance_2026_07_25.py",
+ "seed": 37412,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aeb05721",
+ "started_utc": "20260923T042332Z",
+ "elapsed_s": 225.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7ef85acca5eca7de07a5363b745c8c321c41cf0e82ee5ce2a6e16aca67dbb5fe",
+ "stdout_tail": "ncode\": 0, \"source_sha256\": \"a324dfadc0f6269d738539dca84fbe43bd2b596700235839f712207198ff8586\", \"stderr\": \"\", \"terminal_present\": true}, {\"fail_lines\": [], \"name\": \"finite_common_E\", \"path\": \"scripts/frontier_common_e_gauge_corrected_physical_rom_composition_2026_07_25.py\", \"returncode\": 0, \"source_sha256\": \"45be1df3bb00f76bae77278bc1aea242df8af82b1828630e7f7a1132f2ad162e\", \"stderr\": \"\", \"terminal_present\": true}, {\"fail_lines\": [], \"name\": \"returned_work_preparation\", \"path\": \"scripts/frontier_cycle703_reversible_echo_ack_controller_2026_07_25.py\", \"returncode\": 0, \"source_sha256\": \"5dab64cd17ead6cb5062eab9266b9206d74bb608dcc22f3a1132ee1f1af3e9a9\", \"stderr\": \"\", \"terminal_present\": true}, {\"fail_lines\": [], \"name\": \"scaled_local_Gauss\", \"path\": \"scripts/frontier_cycle703_bksf_patch_tableau_covariance_2026_07_25.py\", \"returncode\": 0, \"source_sha256\": \"8240ab7d3cd27f3058a7b44c1cfe35dda638cf011fbdd12ccecc1bc8054043c9\", \"stderr\": \"\", \"terminal_present\": true}, {\"fail_lines\": [], \"name\": \"conditional_Cycle612_bridge\", \"path\": \"scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py\", \"returncode\": 0, \"source_sha256\": \"4d0049dbcb231301e0b0b110bc1933dfb2bda1aea2628e5e30bc5c1cee97d66a\", \"stderr\": \"\", \"terminal_present\": true}], \"claim_scope\": \"Cycle703/704 package acceptance; no new physics claim\", \"fail\": 0, \"pass\": 14, \"terminal\": \"CYCLE703_RECURRENT_ENDPOINT_INCIDENCE_PACKAGE_ACCEPTANCE_CLOSED\"}\nCYCLE703_RECURRENT_ENDPOINT_INCIDENCE_PACKAGE_ACCEPTANCE_CLOSED\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T042718Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle705_direct_reference_edge_support_localization_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle705_direct_reference_edge_support_localization_2026_07_25.py",
+ "seed": 37701,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aeb05721",
+ "started_utc": "20260923T042821Z",
+ "elapsed_s": 160.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "21e07b2b7ef15335a1eec692ee401d1f365c0a0e0ec08c2f3430bb0e106d8c3f",
+ "stdout_tail": "ge has no independent logical or propagating mode after rectangle enforcement\", \"the tested direct incidence has larger support than the retained path grammar\"], \"equations\": [\"A(r_x,r_y) = path_A(r_x,u,v,r_y) L_rectangle on the full Pauli algebra\", \"E_tableau G_coarse = G_direct E_tableau on every tested summand\", \"E_direct_sum: H_matter tensor C^8_gauge -> H_local_code\", \"G_direct E_direct_sum = E_direct_sum (G_matter tensor I_8)\"], \"open\": [\"bounded-depth or recurrent preparation of the common-E vacuum and returned ancillas\", \"autonomous selection or preparation of a matter-only Wilson gauge vector\", \"fault-tolerant enforcement of rectangle, loop and D projectors\"], \"pass\": true, \"resources\": {\"certificate_sha256\": \"38bb3c575af41e3816a49a6325b8d6578402a330b6b25dd83b299d07b2315dd1\", \"elapsed_seconds\": 160.24388349999208, \"peak_rss_mb\": 134.109375}, \"status\": \"direct-reference-edge-common-E-positive-support-localization-route-negative\", \"supplied\": [\"one scalar reference fermion per cell and local D_x law\", \"one reference-stream graph-edge qubit per matter bond in a typed two-channel bond fiber\", \"one bounded rectangle projector per added reference edge\", \"BKSF incidence/order gauge and supplied periodic Wilson gauge input\", \"Cycle219 coin, Cycle230 contact and stream schedule\"], \"terminal\": \"DIRECT_REFERENCE_EDGE_COMMON_E_EXACT_PATH_SUPPORT_ADVANTAGE_RETAINED\", \"tests_failed\": 0, \"tests_passed\": 9}\nRESULT DIRECT_REFERENCE_EDGE_COMMON_E_EXACT_PATH_SUPPORT_ADVANTAGE_RETAINED\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T043101Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

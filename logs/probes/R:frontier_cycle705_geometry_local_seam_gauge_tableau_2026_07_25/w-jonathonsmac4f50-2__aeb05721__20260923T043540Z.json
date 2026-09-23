@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle705_geometry_local_seam_gauge_tableau_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle705_geometry_local_seam_gauge_tableau_2026_07_25.py",
+ "seed": 38140,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aeb05721",
+ "started_utc": "20260923T043540Z",
+ "elapsed_s": 110.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bfbd91fe0f942b1f214a6fa024fb7d51b3b9051f4674c1cf80362ad1ee014af6",
+ "stdout_tail": ", \"logical_matter_qubits\": 384, \"name\": \"hold_periodic_L4\", \"schedule\": {\"code_preservation_failures\": 0, \"collisions\": 0, \"colors\": 36, \"complete_seam_factor_deletion_active\": true, \"edge_schedule_sha256\": \"fabf18b69675f60cbd3ec80330703eb219a96e5b63f13881cfcff0fde1c61498\", \"factor_counts\": {\"directed_seam\": 192, \"onsite_coin\": 768, \"onsite_contact\": 960}, \"factors\": 1920, \"individual_G_summand_max_cell_diameter\": 2, \"individual_G_summand_max_weight\": 17, \"inverse_tableau_failures\": 0, \"localization_reconstruction_failures\": 0, \"localized_seam_max_cell_diameter\": 2, \"localized_seam_max_weight\": 17, \"maximum_localization_basis_rows\": 4, \"raw_seam_max_weight\": 18, \"seam_target_failures\": 132, \"target_schedule_factor_failures\": 132}, \"seam_gauge_edge_qubits\": 192, \"structural_failures\": 0, \"tableau_rows\": 3072, \"tableau_sha256\": \"3ee2d974dca7a2793f97330f9eeed4a70f0e9dfcfbdda2e264478b176143c4ec\", \"target_schedule_failures\": 132, \"total_edge_qubits\": 1536}}, \"route_specific_negative\": {\"broad_no_go\": false, \"frozen_one_face_rule_held_failures\": [5, 55, 132], \"live_routes\": [\"radius-two or cube-supported stabilizer copy\", \"multiple face channels\", \"non-diagonal Gauss constraints\", \"recurrent local gauge dynamics\", \"different state chart without a Hamiltonian path\"]}, \"terminal\": \"CYCLE705_FACE_GAUGE_COMMON_E_FREEZE_EXACT_HELD_SEAM_COSETS_5_55_132_ROUTE_OPEN\", \"tests_failed\": 0, \"tests_passed\": 7}\nRESULT CYCLE705_FACE_GAUGE_COMMON_E_FREEZE_EXACT_HELD_SEAM_COSETS_5_55_132_ROUTE_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T043730Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle703_coframe_corner_loop_dictionary_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle703_coframe_corner_loop_dictionary_2026_07_25.py",
+ "seed": 36887,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aeb05721",
+ "started_utc": "20260923T041447Z",
+ "elapsed_s": 5.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0863251d1c5bb9d95451c7300b115302e9369aadba1d14881e29767c152aa759",
+ "stdout_tail": "position_failures\": 0, \"edge_frame_covariance_cases\": 3456, \"edge_frame_covariance_failures\": 0, \"edge_word_composition_failures\": 0, \"four_state_edge_chart_range_failures\": 0, \"frame_group_closure_failures\": 0, \"ordered_frame_products\": 576, \"proper_cubic_frames\": 24}, \"status\": \"training-L-closed-held-coframe-corner-dictionary-falsified\", \"supplied\": [\"the finite adjacent and L exterior targets used to extract H and K\", \"one homogeneous proper-cubic coframe sector and its genesis\", \"the bounded 27-color chart and transported color origin\", \"the fixed color-stage ordering and local direction-mode labels\", \"one reusable dirty loop M2 and finite parity masks for H and K\"], \"translation_and_periodic_color\": {\"periodic_holonomy_result\": \"the declared 27-color schedule fails the L5 torus seams and closes on L6; a size-independent periodic scheduler remains open\", \"rows\": [{\"periodic_Z3_positive_seam_constraint_violations_per_sector\": 75, \"side\": 5, \"translations\": 125, \"transported_origin_color_failures\": 0, \"transported_word_failures\": 0, \"wrapped_support_collision_translations\": 0}, {\"periodic_Z3_positive_seam_constraint_violations_per_sector\": 0, \"side\": 6, \"translations\": 216, \"transported_origin_color_failures\": 0, \"transported_word_failures\": 0, \"wrapped_support_collision_translations\": 0}], \"translation_behavior\": \"the coframe/color origin is transported with the finite fixture; a fixed absolute origin is not claimed\"}}\nCYCLE703_L_EXACT_SQUARE72_HELD502_HK_DICTIONARY_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T041452Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

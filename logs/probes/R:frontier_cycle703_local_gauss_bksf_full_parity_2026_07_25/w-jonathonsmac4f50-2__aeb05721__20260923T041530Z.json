@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle703_local_gauss_bksf_full_parity_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle703_local_gauss_bksf_full_parity_2026_07_25.py",
+ "seed": 36930,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aeb05721",
+ "started_utc": "20260923T041530Z",
+ "elapsed_s": 461.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4ca9d2b4c6f2f1fe01d6ae31e155999f952d8d8e0db1888f710175335dfb511a",
+ "stdout_tail": " operator-algebra compiler, not a completed physical-site state compiler, until a BKSF edge-qubit common E and supplied-Wilson preparation are executed.\", \"cycle\": 703, \"derived\": [\"same target-independent onsite grammar on every L/2x2/3x3 cell\", \"same spectator-dressed stream grammar on both orientations of every held-patch bond\", \"bounded r_x-u-v-r_y reference path removes the parallel reference-stream M2\", \"mass/contact preservation and actual held-patch 24/576 covariance\"], \"exact_seam_dependency\": \"frontier_cycle703_local_gauss_reference_adversary_2026_07_25.py\", \"open\": [\"explicit BKSF edge-qubit common E and its physical intertwiner residual\", \"bounded autonomous loop-code and periodic Wilson-sector preparation\", \"transformed common-E covariance rather than operator-family covariance\", \"fault tolerance and recurrent projector enforcement\"], \"pass\": true, \"resources\": {\"certificate_sha256\": \"1c1aa58c255d263e2926c6cdc3e8cbc5f198e77dc36733371ab3606b7a97d5d8\", \"elapsed_seconds\": 460.78717558301287, \"peak_rss_mb\": 109.71875}, \"status\": \"local-Gauss-held-patch-gate-grammar-addendum\", \"supplied\": [\"one scalar reference fermion per cell and local D_x law\", \"BKSF incidence ordering plus local CZ/Z port gauge\", \"three periodic Wilson-sector characters\", \"Cycle219 coin and Cycle230 contact/factor schedule\"], \"terminal\": \"LOCAL_GAUSS_HELD_PATCH_GRAMMAR_CLOSED_BKSF_COMMON_E_OPEN\", \"tests_failed\": 0, \"tests_passed\": 7}\nRESULT LOCAL_GAUSS_HELD_PATCH_GRAMMAR_CLOSED_BKSF_COMMON_E_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T042312Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

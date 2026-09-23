@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle703_two_frame_colored_rephase_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle703_two_frame_colored_rephase_2026_07_25.py",
+ "seed": 37676,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aeb05721",
+ "started_utc": "20260923T042756Z",
+ "elapsed_s": 4.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "148bd6a6feb1aee262a57bc0ecf90de24d6f06c36fc705c3662ff0414aca5971",
+ "stdout_tail": "ry_training_solution\": 251, \"held_equations_forced_by_training_row_space\": 20020, \"held_equations_underdetermined_by_training\": 7241, \"target_pairs\": 942}, {\"canonical_mismatch_alternating_GF2_rank\": 54, \"canonical_mismatch_pairs\": 906, \"canonical_predicted_pairs\": 250, \"fixture\": \"two-by-two-by-two-cube\", \"forced_target_conflicts_for_every_training_solution\": 224, \"held_equations_forced_by_training_row_space\": 13041, \"held_equations_underdetermined_by_training\": 5295, \"target_pairs\": 1136}], \"mass_and_domain\": {\"autonomous_two_frame_clock_constructed\": false, \"occupation_scope\": \"vacuum plus one- and two-particle sign words\", \"one_particle_mass_fixture_preserved\": true, \"physical_code_space_leakage_norm\": \"not defined\", \"physical_common_E_constructed\": false, \"quadratic_phases_identity_on_vacuum_and_one_particle\": true}, \"not_claimed\": [\"a target-independent derivation of the 280 active coefficients\", \"a held-predictive two-frame law\", \"an L5-periodic color schedule or autonomous clock\", \"a physical common-E intertwiner or leakage result\", \"a route-independent obstruction, minimum content, or axiom pressure\"], \"status\": \"two-frame-colored-training-fit-held-prediction-falsified\", \"supplied\": [\"the bounded 27-color chart, coframe, and transported origin\", \"separate input/output phase slots\", \"the adjacent/L/square residuals used as training right-hand sides\", \"the lexicographic free-zero solution selector\"]}\nCYCLE703_TWO_FRAME_TRAIN_EXACT_HELD_714_906_FORCED_CONFLICTS_251_224\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T042800Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

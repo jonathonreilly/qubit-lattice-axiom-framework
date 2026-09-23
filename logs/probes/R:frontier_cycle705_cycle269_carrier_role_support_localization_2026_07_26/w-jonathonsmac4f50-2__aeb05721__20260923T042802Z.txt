@@ -1,0 +1,1122 @@
+CYCLE 705 ACTUAL CYCLE-269 CARRIER/ROLE SUPPORT-LOCALIZATION ATTACK
+PASS the actual Cycle-269 graph has six matter vertices, fifteen face M2, eleven local checks, and rank 9N-2 per cell volume :: [{'L': 3, 'cells': 27, 'matter_vertices': 162, 'face_M2': 405, 'internal_triangle_faces': 324, 'outer_square_faces': 81, 'triangle_checks': 216, 'octagon_checks': 81, 'local_check_count': 297, 'local_check_rank': 241, 'local_phase_bad': [], 'fixed_rank': 244, 'fixed_phase_bad': [], 'fixed_reference_exponent': 161, 'fixed_plus_B_rank': 405, 'fixed_plus_B_phase_bad': [], 'fixed_plus_B_reference_exponent': 0, 'installed_face_port_flag_r_M2_per_cell': 23}, {'L': 6, 'cells': 216, 'matter_vertices': 1296, 'face_M2': 3240, 'internal_triangle_faces': 2592, 'outer_square_faces': 648, 'triangle_checks': 1728, 'octagon_checks': 648, 'local_check_count': 2376, 'local_check_rank': 1942, 'local_phase_bad': [], 'fixed_rank': 1945, 'fixed_phase_bad': [], 'fixed_reference_exponent': 1295, 'fixed_plus_B_rank': 3240, 'fixed_plus_B_phase_bad': [], 'fixed_plus_B_reference_exponent': 0, 'installed_face_port_flag_r_M2_per_cell': 23}]
+PASS the actual Cycle-311 carrier/port/flag/r shell locally enforces its six port constraints and relational role constraint :: {'fock_input_rank': 64, 'seam_dimension': 127, 'flagged_microsectors': 255, 'role_gauge_microsectors': 510, 'role_constraint_involution': 0.0, 'role_constraint_eigen_residual': 0.0, 'constrained_gram_residual': 2.3498992183808826e-15, 'local_port_constraints': 6, 'port_constraint_inherited_commutator_failures': 0}
+PASS Cycle 655 contributes only its 38-factor decoded target word, never its K7 physical encoder :: {'decoded_target_factors': 38, 'factor_counts': {'coin_phase': 1, 'coin_givens': 10, 'reverse_fswap': 3, 'seam_fswap': 9, 'contact_phase': 15}, 'Cycle655_K7_physical_encoder_used': False}
+PASS the raw phase-aware common E is an isometry on the acyclic L triomino and first fails on the closed 2x2 plaquette :: [{'shape': 'L-triomino', 'cells': 3, 'logical_dimension_total_n_le_2': 172, 'physical_rows': 43741, 'encoding_nonzeros': 43741, 'gram_raw_maximum': 1.0436096431476471e-14, 'gram_frobenius': 1.0851542702846547e-13, 'shared_physical_rows': 0, 'collision_pairs': 0, 'maximum_branch_support_M2': 34}, {'shape': '2x2', 'cells': 4, 'logical_dimension_total_n_le_2': 301, 'physical_rows': 87115, 'encoding_nonzeros': 87121, 'gram_raw_maximum': 0.0024999999999999974, 'gram_frobenius': 0.008660254037844378, 'shared_physical_rows': 6, 'collision_pairs': 6, 'maximum_branch_support_M2': 34}]
+PASS the held 3x3 raw E repeats exactly six pairing overlaps on each of four elementary plaquettes :: {'shape': 'held-3x3', 'cells': 9, 'logical_dimension_total_n_le_2': 1486, 'physical_rows': 519997, 'encoding_nonzeros': 520021, 'gram_raw_maximum': 0.0024999999999999974, 'gram_frobenius': 0.017320508075688756, 'shared_physical_rows': 24, 'collision_pairs': 24, 'maximum_branch_support_M2': 34, 'collision_magnitudes': [0.0025], 'collision_signs': {1: 16, -1: 8}, 'plaquette_collision_multiplicities': {(0, 1, 3, 4): 6, (1, 2, 4, 5): 6, (3, 4, 6, 7): 6, (4, 5, 7, 8): 6}}
+PASS a 24-block target-fit whitener repairs the held Gram matrix but is classified diagnostic-only :: {'collision_components': 24, 'collision_component_sizes': (2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2), 'collided_logical_columns': 48, 'minimum_raw_collision_block_eigenvalue': 0.9974999999999896, 'maximum_raw_collision_block_eigenvalue': 1.0024999999999895, 'whitener_nonzeros': 1534, 'repaired_gram_raw_maximum': 1.554312234475219e-14}
+PASS reversing the supplied cell multiplication order does not remove the held plaquette collision :: {'forward_collision_pairs': 24, 'reverse_collision_pairs': 24, 'pair_set_equal': True, 'reverse_gram_raw_maximum': 0.0024999999999999974}
+PASS deleting one nonzero carrier coefficient is detected by the train-patch Gram control :: {'deleted_column': 1, 'deleted_row': 1, 'deleted_amplitude': -0.2236067977499789j, 'Gram_raw_maximum': 0.05000000000000071}
+PASS every internal and outer-edge Ahat/B FSWAP summand has bounded support and preserves all local port constraints :: {'tested_physical_edges': 405, 'maximum_summand_support_M2': 11, 'maximum_by_face_kind': {'internal_triangle': 10, 'outer_square': 11}, 'port_constraint_commutator_failures': 0}
+PASS the bounded Ahat/B candidate commutes with every inherited port constraint and preserves, but does not correctly update, the raw even-number direct sectors :: {'port_constraint_commutator_failures': 0, 'even_sector_rows': {0: {'columns': 1, 'leaky_columns': 0, 'maximum_leakage_probability': 0.0, 'target_intertwiner_frobenius': 0.0}, 2: {'columns': 15, 'leaky_columns': 0, 'maximum_leakage_probability': 0.0, 'target_intertwiner_frobenius': 4.898979485566356}, 4: {'columns': 15, 'leaky_columns': 0, 'maximum_leakage_probability': 0.0, 'target_intertwiner_frobenius': 4.898979485566356}, 6: {'columns': 1, 'leaky_columns': 0, 'maximum_leakage_probability': 0.0, 'target_intertwiner_frobenius': 0.0}}}
+PASS the same bounded word fails the actual odd carrier representatives and the constrained role-gauge common E :: {'raw_carrier': {'physical_rows': 160, 'encoding_nonzeros': 128, 'encoding_gram_raw_maximum': 2.220446049250313e-16, 'physical_output_norm_residual': 2.220446049250313e-16, 'target_intertwiner_frobenius': 9.465727652959385, 'sectors': {0: {'columns': 1, 'leaky_columns': 0, 'maximum_leakage_probability': 0.0, 'target_intertwiner_frobenius': 0.0}, 1: {'columns': 6, 'leaky_columns': 2, 'maximum_leakage_probability': 0.8400000000000001, 'target_intertwiner_frobenius': 2.3664319132398464}, 2: {'columns': 15, 'leaky_columns': 0, 'maximum_leakage_probability': 0.0, 'target_intertwiner_frobenius': 4.898979485566356}, 3: {'columns': 20, 'leaky_columns': 12, 'maximum_leakage_probability': 1.0000000000000002, 'target_intertwiner_frobenius': 5.656854249492381}, 4: {'columns': 15, 'leaky_columns': 0, 'maximum_leakage_probability': 0.0, 'target_intertwiner_frobenius': 4.898979485566356}, 5: {'columns': 6, 'leaky_columns': 2, 'maximum_leakage_probability': 1.0, 'target_intertwiner_frobenius': 2.0}, 6: {'columns': 1, 'leaky_columns': 0, 'maximum_leakage_probability': 0.0, 'target_intertwiner_frobenius': 0.0}}}, 'constrained_role_gauge': {'physical_rows': 400, 'encoding_nonzeros': 256, 'encoding_gram_raw_maximum': 3.3306690738754696e-16, 'physical_output_norm_residual': 3.3306690738754696e-16, 'target_intertwiner_frobenius': 10.73312629199899, 'sectors': {0: {'columns': 1, 'leaky_columns': 0, 'maximum_leakage_probability': 2.220446049250313e-16, 'target_intertwiner_frobenius': 0.0}, 1: {'columns': 6, 'leaky_columns': 6, 'maximum_leakage_probability': 0.7999999999999997, 'target_intertwiner_frobenius': 2.6832815729997472}, 2: {'columns': 15, 'leaky_columns': 9, 'maximum_leakage_probability': 0.9999999999999998, 'target_intertwiner_frobenius': 4.690415759823429}, 3: {'columns': 20, 'leaky_columns': 20, 'maximum_leakage_probability': 1.0, 'target_intertwiner_frobenius': 6.32455532033676}, 4: {'columns': 15, 'leaky_columns': 14, 'maximum_leakage_probability': 0.9999999999999998, 'target_intertwiner_frobenius': 5.65685424949238}, 5: {'columns': 6, 'leaky_columns': 6, 'maximum_leakage_probability': 0.9999999999999998, 'target_intertwiner_frobenius': 3.4641016151377544}, 6: {'columns': 1, 'leaky_columns': 1, 'maximum_leakage_probability': 0.9999999999999998, 'target_intertwiner_frobenius': 1.414213562373095}}}}
+PASS all four phase/orientation conventions for Ahat fail the constrained carrier-role target :: {'+1': {'target_intertwiner_frobenius': 10.73312629199899, 'leaky_columns': 56, 'maximum_leakage_probability': 1.0}, '-1': {'target_intertwiner_frobenius': 9.237604307034012, 'leaky_columns': 52, 'maximum_leakage_probability': 1.0}, '+i': {'target_intertwiner_frobenius': 10.01332445627658, 'leaky_columns': 56, 'maximum_leakage_probability': 1.0}, '-i': {'target_intertwiner_frobenius': 10.01332445627658, 'leaky_columns': 56, 'maximum_leakage_probability': 1.0}}
+PASS the bare bounded outer-edge FSWAP also fails the actual two-cell role-gauge seam code at total n<=2 :: {'logical_dimension_total_n_le_2': 79, 'physical_rows': 7848, 'encoding_gram_raw_maximum': 7.771561172376096e-16, 'intertwiner_frobenius': 8.246211251235282, 'leaky_columns': 58, 'maximum_leakage_probability': 0.9999999999999998}
+PASS the local Cycle-230 contact is exactly reproduced on every actual carrier branch and through the role-gauge lift :: {'contact_intertwiner_raw_maximum': 0.0, 'carrier_branch_phase_failures': 0, 'coupling': 0.37}
+PASS E F E-dagger plus the complement is exact only as a dense target-fit diagnostic :: {'logical_dimension': 64, 'physical_ray_rows': 400, 'encoding_gram_raw_maximum': 3.3306690738754696e-16, 'logical_target_unitarity_raw_maximum': 0.0, 'projector_completion_intertwiner': 0.0, 'classification': 'dense target-fit diagnostic only'}
+PASS deleting one B-Ahat summand breaks the physical factor norm control :: 0.75
+PASS the actual carrier/role graph supports the complete two-cell 2^12 Fock space, not only n<=2 :: {'dimension': 4096, 'encoding_shape': (63488, 4096), 'encoding_nonzeros': 65536, 'Gram_raw_maximum': 1.7763568394002505e-15, 'sector_dimensions': {0: 1, 1: 12, 2: 66, 3: 220, 4: 495, 5: 792, 6: 924, 7: 792, 8: 495, 9: 220, 10: 66, 11: 12, 12: 1}}
+PASS the supplied one-cell common E is phase-aware under all 24 frames, all 576 products, and all L=3 translations :: {'proper_frames': 24, 'group_compositions': 576, 'group_failures': 0, 'frame_branch_failures': 0, 'maximum_flagged_E_residual': 0.0, 'maximum_constrained_E_residual': 0.0, 'translations': 27, 'translation_branch_tests': 6885, 'translation_failures': 0}
+PASS the one-particle mass fixture is unchanged and the Cycle-230 contact first becomes nontrivial at n=2 :: {'beta': -0.3, 'Cycle219_rest_mass': 0.4534056541748851, 'uniform_coin_eigen_residual': 3.8894960744499713e-16, 'rest_phase': 0.15113521805829502, 'mass_from_scalar_phase': 0.4534056541748851, 'contact_coupling': 0.37, 'one_particle_contact_phase': (1+0j), 'two_particle_colocated_contact_phase': (0.9323273456060345+0.361615431964962j)}
+PASS the runner inventories every supplied carrier, gauge, reference, ordering, target, and host choice :: {'physical_substrate': ['Cycle-269 periodic proper-cubic square-pyramid dual graph', 'six matter vertices and fifteen face M2 per coarse cell', 'eight triangle plus three octagon local checks per coarse cell', 'three fixed Wilson signs for the reference-ray reducer'], 'auxiliary_structure': ['six collision-safe port M2 per cell with B_v Z_port(v)=+1', 'one stream-role flag f per cell', 'one gauge companion r per cell', 'Cycle-311 C_role=K_exchange X_r=+1 shell constraint', 'carrier superpositions over unoccupied directions in odd sectors'], 'compiler_structure': ['a fixed cell multiplication order and its explicit reverse audit', 'the Cycle-219 beta=-0.3 coin fixture', 'the Cycle-230 coupling g and contact convention', 'the Cycle-655 38-factor decoded target word only', 'periodic hosts L=5 for train patches and L=6 for held 3x3'], 'not_supplied': ['no global Jordan-Wigner parity string', 'no nonlocal parity service', 'no Cycle-655 K7 physical encoder', 'no host-side branch selection', 'no physical-time interpretation of factor order']}
+PASS unlawful number/slice/host inputs are rejected and deleting either local constraint family enlarges the admitted shell :: {'six_local_port_constraint_rank': 6, 'single_port_constraint_deletion_ranks': (5, 5, 5, 5, 5, 5), 'role_constrained_shell_rank': 127, 'role_shell_rank_without_C_role': 254, 'invalid_domain_calls': 5, 'invalid_domain_rejections': 5}
+
+CYCLE705_REPORT_JSON
+{
+  "bounded_even_word": {
+    "Ahat_phase_orientation_scan": {
+      "+1": {
+        "leaky_columns": 56,
+        "maximum_leakage_probability": 1.0,
+        "target_intertwiner_frobenius": 10.73312629199899
+      },
+      "+i": {
+        "leaky_columns": 56,
+        "maximum_leakage_probability": 1.0,
+        "target_intertwiner_frobenius": 10.01332445627658
+      },
+      "-1": {
+        "leaky_columns": 52,
+        "maximum_leakage_probability": 1.0,
+        "target_intertwiner_frobenius": 9.237604307034012
+      },
+      "-i": {
+        "leaky_columns": 56,
+        "maximum_leakage_probability": 1.0,
+        "target_intertwiner_frobenius": 10.01332445627658
+      }
+    },
+    "Ahat_support_M2": 4,
+    "all_edge_maximum_FSWAP_summand_support_M2": 11,
+    "all_edge_maximum_by_face_kind": {
+      "internal_triangle": 10,
+      "outer_square": 11
+    },
+    "all_edge_port_constraint_commutator_failures": 0,
+    "internal_edge": 4,
+    "local_contact": {
+      "carrier_branch_phase_failures": 0,
+      "intertwiner_raw_maximum": 0.0
+    },
+    "maximum_FSWAP_summand_support_M2": 8,
+    "modes": [
+      1,
+      2
+    ],
+    "outer_seam_total_n_le_2": {
+      "encoding_gram_raw_maximum": 7.771561172376096e-16,
+      "intertwiner_frobenius": 8.246211251235282,
+      "leaky_columns": 58,
+      "logical_dimension_total_n_le_2": 79,
+      "maximum_leakage_probability": 0.9999999999999998,
+      "physical_rows": 7848
+    },
+    "port_constraint_commutator_failures": 0,
+    "route_rows": {
+      "constrained_role_gauge": {
+        "encoding_gram_raw_maximum": 3.3306690738754696e-16,
+        "encoding_nonzeros": 256,
+        "physical_output_norm_residual": 3.3306690738754696e-16,
+        "physical_rows": 400,
+        "sectors": {
+          "0": {
+            "columns": 1,
+            "leaky_columns": 0,
+            "maximum_leakage_probability": 2.220446049250313e-16,
+            "target_intertwiner_frobenius": 0.0
+          },
+          "1": {
+            "columns": 6,
+            "leaky_columns": 6,
+            "maximum_leakage_probability": 0.7999999999999997,
+            "target_intertwiner_frobenius": 2.6832815729997472
+          },
+          "2": {
+            "columns": 15,
+            "leaky_columns": 9,
+            "maximum_leakage_probability": 0.9999999999999998,
+            "target_intertwiner_frobenius": 4.690415759823429
+          },
+          "3": {
+            "columns": 20,
+            "leaky_columns": 20,
+            "maximum_leakage_probability": 1.0,
+            "target_intertwiner_frobenius": 6.32455532033676
+          },
+          "4": {
+            "columns": 15,
+            "leaky_columns": 14,
+            "maximum_leakage_probability": 0.9999999999999998,
+            "target_intertwiner_frobenius": 5.65685424949238
+          },
+          "5": {
+            "columns": 6,
+            "leaky_columns": 6,
+            "maximum_leakage_probability": 0.9999999999999998,
+            "target_intertwiner_frobenius": 3.4641016151377544
+          },
+          "6": {
+            "columns": 1,
+            "leaky_columns": 1,
+            "maximum_leakage_probability": 0.9999999999999998,
+            "target_intertwiner_frobenius": 1.414213562373095
+          }
+        },
+        "target_intertwiner_frobenius": 10.73312629199899
+      },
+      "raw_carrier": {
+        "encoding_gram_raw_maximum": 2.220446049250313e-16,
+        "encoding_nonzeros": 128,
+        "physical_output_norm_residual": 2.220446049250313e-16,
+        "physical_rows": 160,
+        "sectors": {
+          "0": {
+            "columns": 1,
+            "leaky_columns": 0,
+            "maximum_leakage_probability": 0.0,
+            "target_intertwiner_frobenius": 0.0
+          },
+          "1": {
+            "columns": 6,
+            "leaky_columns": 2,
+            "maximum_leakage_probability": 0.8400000000000001,
+            "target_intertwiner_frobenius": 2.3664319132398464
+          },
+          "2": {
+            "columns": 15,
+            "leaky_columns": 0,
+            "maximum_leakage_probability": 0.0,
+            "target_intertwiner_frobenius": 4.898979485566356
+          },
+          "3": {
+            "columns": 20,
+            "leaky_columns": 12,
+            "maximum_leakage_probability": 1.0000000000000002,
+            "target_intertwiner_frobenius": 5.656854249492381
+          },
+          "4": {
+            "columns": 15,
+            "leaky_columns": 0,
+            "maximum_leakage_probability": 0.0,
+            "target_intertwiner_frobenius": 4.898979485566356
+          },
+          "5": {
+            "columns": 6,
+            "leaky_columns": 2,
+            "maximum_leakage_probability": 1.0,
+            "target_intertwiner_frobenius": 2.0
+          },
+          "6": {
+            "columns": 1,
+            "leaky_columns": 0,
+            "maximum_leakage_probability": 0.0,
+            "target_intertwiner_frobenius": 0.0
+          }
+        },
+        "target_intertwiner_frobenius": 9.465727652959385
+      }
+    },
+    "summand_deletion_norm_residual": 0.75,
+    "target_fit_diagnostic": {
+      "classification": "dense target-fit diagnostic only",
+      "encoding_gram_raw_maximum": 3.3306690738754696e-16,
+      "logical_dimension": 64,
+      "logical_target_unitarity_raw_maximum": 0.0,
+      "physical_ray_rows": 400,
+      "projector_completion_intertwiner": 0.0
+    }
+  },
+  "checks": {
+    "fail": 0,
+    "pass": 21
+  },
+  "full_fock_covariance_mass_contact": {
+    "covariance": {
+      "frame_branch_failures": 0,
+      "group_compositions": 576,
+      "group_failures": 0,
+      "maximum_constrained_E_residual": 0.0,
+      "maximum_flagged_E_residual": 0.0,
+      "proper_frames": 24,
+      "translation_branch_tests": 6885,
+      "translation_failures": 0,
+      "translations": 27
+    },
+    "mass_contact": {
+      "Cycle219_rest_mass": 0.4534056541748851,
+      "beta": -0.3,
+      "contact_coupling": 0.37,
+      "mass_from_scalar_phase": 0.4534056541748851,
+      "one_particle_contact_phase": {
+        "imag": 0.0,
+        "real": 1.0
+      },
+      "rest_phase": 0.15113521805829502,
+      "two_particle_colocated_contact_phase": {
+        "imag": 0.361615431964962,
+        "real": 0.9323273456060345
+      },
+      "uniform_coin_eigen_residual": 3.8894960744499713e-16
+    },
+    "two_cell_full_fock": {
+      "Gram_raw_maximum": 1.7763568394002505e-15,
+      "dimension": 4096,
+      "encoding_nonzeros": 65536,
+      "encoding_shape": [
+        63488,
+        4096
+      ],
+      "sector_dimensions": {
+        "0": 1,
+        "1": 12,
+        "2": 66,
+        "3": 220,
+        "4": 495,
+        "5": 792,
+        "6": 924,
+        "7": 792,
+        "8": 495,
+        "9": 220,
+        "10": 66,
+        "11": 12,
+        "12": 1
+      }
+    }
+  },
+  "patch_common_E": {
+    "coefficient_deletion_residual": 0.05000000000000071,
+    "held_collision_cell_pairs": [
+      [
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          4
+        ],
+        {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        }
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        }
+      ],
+      [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          3
+        ],
+        {
+          "imag": 0.0,
+          "real": -0.0024999999999999974
+        }
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          4
+        ],
+        {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        }
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        }
+      ],
+      [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          3
+        ],
+        {
+          "imag": 0.0,
+          "real": -0.0024999999999999974
+        }
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          5
+        ],
+        {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        }
+      ],
+      [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        }
+      ],
+      [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        {
+          "imag": 0.0,
+          "real": -0.0024999999999999974
+        }
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          5
+        ],
+        {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        }
+      ],
+      [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        }
+      ],
+      [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        {
+          "imag": 0.0,
+          "real": -0.0024999999999999974
+        }
+      ],
+      [
+        [
+          3,
+          4
+        ],
+        [
+          6,
+          7
+        ],
+        {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        }
+      ],
+      [
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        }
+      ],
+      [
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        {
+          "imag": 0.0,
+          "real": -0.0024999999999999974
+        }
+      ],
+      [
+        [
+          3,
+          4
+        ],
+        [
+          6,
+          7
+        ],
+        {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        }
+      ],
+      [
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        }
+      ],
+      [
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        {
+          "imag": 0.0,
+          "real": -0.0024999999999999974
+        }
+      ],
+      [
+        [
+          4,
+          5
+        ],
+        [
+          7,
+          8
+        ],
+        {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        }
+      ],
+      [
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        }
+      ],
+      [
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        {
+          "imag": 0.0,
+          "real": -0.0024999999999999974
+        }
+      ],
+      [
+        [
+          4,
+          5
+        ],
+        [
+          7,
+          8
+        ],
+        {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        }
+      ],
+      [
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        }
+      ],
+      [
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        {
+          "imag": 0.0,
+          "real": -0.0024999999999999974
+        }
+      ]
+    ],
+    "held_collision_labels": [
+      {
+        "left": [
+          0,
+          8
+        ],
+        "overlap": {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        },
+        "right": [
+          21,
+          25
+        ]
+      },
+      {
+        "left": [
+          0,
+          21
+        ],
+        "overlap": {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        },
+        "right": [
+          8,
+          25
+        ]
+      },
+      {
+        "left": [
+          0,
+          25
+        ],
+        "overlap": {
+          "imag": 0.0,
+          "real": -0.0024999999999999974
+        },
+        "right": [
+          8,
+          21
+        ]
+      },
+      {
+        "left": [
+          2,
+          7
+        ],
+        "overlap": {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        },
+        "right": [
+          18,
+          27
+        ]
+      },
+      {
+        "left": [
+          2,
+          18
+        ],
+        "overlap": {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        },
+        "right": [
+          7,
+          27
+        ]
+      },
+      {
+        "left": [
+          2,
+          27
+        ],
+        "overlap": {
+          "imag": 0.0,
+          "real": -0.0024999999999999974
+        },
+        "right": [
+          7,
+          18
+        ]
+      },
+      {
+        "left": [
+          6,
+          14
+        ],
+        "overlap": {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        },
+        "right": [
+          27,
+          31
+        ]
+      },
+      {
+        "left": [
+          6,
+          27
+        ],
+        "overlap": {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        },
+        "right": [
+          14,
+          31
+        ]
+      },
+      {
+        "left": [
+          6,
+          31
+        ],
+        "overlap": {
+          "imag": 0.0,
+          "real": -0.0024999999999999974
+        },
+        "right": [
+          14,
+          27
+        ]
+      },
+      {
+        "left": [
+          8,
+          13
+        ],
+        "overlap": {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        },
+        "right": [
+          24,
+          33
+        ]
+      },
+      {
+        "left": [
+          8,
+          24
+        ],
+        "overlap": {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        },
+        "right": [
+          13,
+          33
+        ]
+      },
+      {
+        "left": [
+          8,
+          33
+        ],
+        "overlap": {
+          "imag": 0.0,
+          "real": -0.0024999999999999974
+        },
+        "right": [
+          13,
+          24
+        ]
+      },
+      {
+        "left": [
+          18,
+          26
+        ],
+        "overlap": {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        },
+        "right": [
+          39,
+          43
+        ]
+      },
+      {
+        "left": [
+          18,
+          39
+        ],
+        "overlap": {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        },
+        "right": [
+          26,
+          43
+        ]
+      },
+      {
+        "left": [
+          18,
+          43
+        ],
+        "overlap": {
+          "imag": 0.0,
+          "real": -0.0024999999999999974
+        },
+        "right": [
+          26,
+          39
+        ]
+      },
+      {
+        "left": [
+          20,
+          25
+        ],
+        "overlap": {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        },
+        "right": [
+          36,
+          45
+        ]
+      },
+      {
+        "left": [
+          20,
+          36
+        ],
+        "overlap": {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        },
+        "right": [
+          25,
+          45
+        ]
+      },
+      {
+        "left": [
+          20,
+          45
+        ],
+        "overlap": {
+          "imag": 0.0,
+          "real": -0.0024999999999999974
+        },
+        "right": [
+          25,
+          36
+        ]
+      },
+      {
+        "left": [
+          24,
+          32
+        ],
+        "overlap": {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        },
+        "right": [
+          45,
+          49
+        ]
+      },
+      {
+        "left": [
+          24,
+          45
+        ],
+        "overlap": {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        },
+        "right": [
+          32,
+          49
+        ]
+      },
+      {
+        "left": [
+          24,
+          49
+        ],
+        "overlap": {
+          "imag": 0.0,
+          "real": -0.0024999999999999974
+        },
+        "right": [
+          32,
+          45
+        ]
+      },
+      {
+        "left": [
+          26,
+          31
+        ],
+        "overlap": {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        },
+        "right": [
+          42,
+          51
+        ]
+      },
+      {
+        "left": [
+          26,
+          42
+        ],
+        "overlap": {
+          "imag": 0.0,
+          "real": 0.0024999999999999974
+        },
+        "right": [
+          31,
+          51
+        ]
+      },
+      {
+        "left": [
+          26,
+          51
+        ],
+        "overlap": {
+          "imag": 0.0,
+          "real": -0.0024999999999999974
+        },
+        "right": [
+          31,
+          42
+        ]
+      }
+    ],
+    "ordering_control": {
+      "forward_collision_pairs": 24,
+      "pair_set_equal": true,
+      "reverse_collision_pairs": 24,
+      "reverse_gram_raw_maximum": 0.0024999999999999974
+    },
+    "shape_rows": [
+      {
+        "cells": 3,
+        "collision_pairs": 0,
+        "encoding_nonzeros": 43741,
+        "gram_frobenius": 1.0851542702846547e-13,
+        "gram_raw_maximum": 1.0436096431476471e-14,
+        "logical_dimension_total_n_le_2": 172,
+        "maximum_branch_support_M2": 34,
+        "physical_rows": 43741,
+        "shape": "L-triomino",
+        "shared_physical_rows": 0
+      },
+      {
+        "cells": 4,
+        "collision_pairs": 6,
+        "encoding_nonzeros": 87121,
+        "gram_frobenius": 0.008660254037844378,
+        "gram_raw_maximum": 0.0024999999999999974,
+        "logical_dimension_total_n_le_2": 301,
+        "maximum_branch_support_M2": 34,
+        "physical_rows": 87115,
+        "shape": "2x2",
+        "shared_physical_rows": 6
+      },
+      {
+        "cells": 9,
+        "collision_pairs": 24,
+        "encoding_nonzeros": 520021,
+        "gram_frobenius": 0.017320508075688756,
+        "gram_raw_maximum": 0.0024999999999999974,
+        "logical_dimension_total_n_le_2": 1486,
+        "maximum_branch_support_M2": 34,
+        "physical_rows": 519997,
+        "shape": "held-3x3",
+        "shared_physical_rows": 24
+      }
+    ],
+    "whitening_diagnostic": {
+      "collided_logical_columns": 48,
+      "collision_component_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "collision_components": 24,
+      "maximum_raw_collision_block_eigenvalue": 1.0024999999999895,
+      "minimum_raw_collision_block_eigenvalue": 0.9974999999999896,
+      "residual": 1.554312234475219e-14,
+      "whitener_nonzeros": 1534
+    }
+  },
+  "status": {
+    "audit": "unset",
+    "authority": "none",
+    "axiom_pressure": false,
+    "broad_negative": "blocked",
+    "scoped_failure": "raw common E collides on the first closed 2x2 plaquette and held 3x3, while the bare bounded Ahat/B FSWAP does not preserve the actual carrier/role code",
+    "strongest_constructive_result": "actual phase-aware carrier/role E is exact on the L-shaped tree at total n<=2; the actual graph also has exact full one-cell and two-cell Fock capacity"
+  },
+  "substrate": {
+    "rank_rows": [
+      {
+        "L": 3,
+        "cells": 27,
+        "face_M2": 405,
+        "fixed_phase_bad": [],
+        "fixed_plus_B_phase_bad": [],
+        "fixed_plus_B_rank": 405,
+        "fixed_plus_B_reference_exponent": 0,
+        "fixed_rank": 244,
+        "fixed_reference_exponent": 161,
+        "installed_face_port_flag_r_M2_per_cell": 23,
+        "internal_triangle_faces": 324,
+        "local_check_count": 297,
+        "local_check_rank": 241,
+        "local_phase_bad": [],
+        "matter_vertices": 162,
+        "octagon_checks": 81,
+        "outer_square_faces": 81,
+        "triangle_checks": 216
+      },
+      {
+        "L": 6,
+        "cells": 216,
+        "face_M2": 3240,
+        "fixed_phase_bad": [],
+        "fixed_plus_B_phase_bad": [],
+        "fixed_plus_B_rank": 3240,
+        "fixed_plus_B_reference_exponent": 0,
+        "fixed_rank": 1945,
+        "fixed_reference_exponent": 1295,
+        "installed_face_port_flag_r_M2_per_cell": 23,
+        "internal_triangle_faces": 2592,
+        "local_check_count": 2376,
+        "local_check_rank": 1942,
+        "local_phase_bad": [],
+        "matter_vertices": 1296,
+        "octagon_checks": 648,
+        "outer_square_faces": 648,
+        "triangle_checks": 1728
+      }
+    ],
+    "role_shell": {
+      "constrained_gram_residual": 2.3498992183808826e-15,
+      "flagged_microsectors": 255,
+      "fock_input_rank": 64,
+      "local_port_constraints": 6,
+      "port_constraint_inherited_commutator_failures": 0,
+      "role_constraint_eigen_residual": 0.0,
+      "role_constraint_involution": 0.0,
+      "role_gauge_microsectors": 510,
+      "seam_dimension": 127
+    },
+    "target_word": {
+      "Cycle655_K7_physical_encoder_used": false,
+      "decoded_target_factors": 38,
+      "factor_counts": {
+        "coin_givens": 10,
+        "coin_phase": 1,
+        "contact_phase": 15,
+        "reverse_fswap": 3,
+        "seam_fswap": 9
+      }
+    }
+  },
+  "supplied_structure": {
+    "auxiliary_structure": [
+      "six collision-safe port M2 per cell with B_v Z_port(v)=+1",
+      "one stream-role flag f per cell",
+      "one gauge companion r per cell",
+      "Cycle-311 C_role=K_exchange X_r=+1 shell constraint",
+      "carrier superpositions over unoccupied directions in odd sectors"
+    ],
+    "compiler_structure": [
+      "a fixed cell multiplication order and its explicit reverse audit",
+      "the Cycle-219 beta=-0.3 coin fixture",
+      "the Cycle-230 coupling g and contact convention",
+      "the Cycle-655 38-factor decoded target word only",
+      "periodic hosts L=5 for train patches and L=6 for held 3x3"
+    ],
+    "not_supplied": [
+      "no global Jordan-Wigner parity string",
+      "no nonlocal parity service",
+      "no Cycle-655 K7 physical encoder",
+      "no host-side branch selection",
+      "no physical-time interpretation of factor order"
+    ],
+    "physical_substrate": [
+      "Cycle-269 periodic proper-cubic square-pyramid dual graph",
+      "six matter vertices and fifteen face M2 per coarse cell",
+      "eight triangle plus three octagon local checks per coarse cell",
+      "three fixed Wilson signs for the reference-ray reducer"
+    ]
+  },
+  "unlawful_domain": {
+    "invalid_domain_calls": 5,
+    "invalid_domain_rejections": 5,
+    "role_constrained_shell_rank": 127,
+    "role_shell_rank_without_C_role": 254,
+    "single_port_constraint_deletion_ranks": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "six_local_port_constraint_rank": 6
+  }
+}
+SUMMARY pass=21 fail=0

@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle709_local_seam_clifford_2026_07_26",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle709_local_seam_clifford_2026_07_26.py",
+ "seed": 38292,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aeb05721",
+ "started_utc": "20260923T043812Z",
+ "elapsed_s": 14.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8efe4a924dc651697bc5a4212299582cca9197d603fbbd9e30a2dc64d05e1382",
+ "stdout_tail": "2, 2]}, {\"cells\": 16, \"constant_bound_27N\": 432, \"formula_18N_plus_3M\": 372, \"literal_M2\": 372, \"parameters_refit\": 0, \"placement_collisions\": 0, \"seams\": 28, \"shape\": [4, 2, 2]}, {\"cells\": 18, \"constant_bound_27N\": 486, \"formula_18N_plus_3M\": 423, \"literal_M2\": 423, \"parameters_refit\": 0, \"placement_collisions\": 0, \"seams\": 33, \"shape\": [3, 3, 2]}, {\"cells\": 27, \"constant_bound_27N\": 729, \"formula_18N_plus_3M\": 648, \"literal_M2\": 648, \"parameters_refit\": 0, \"placement_collisions\": 0, \"seams\": 54, \"shape\": [3, 3, 3]}], \"reference\": {\"constructed_transvection_depth\": 4, \"delete_factor_failures\": [13, 12, 1, 14], \"depth_le_three_hits\": {\"1\": false, \"2\": false, \"3\": false}, \"depth_search_axis_class\": \"all nonzero axes in im(S-I)\", \"factor_phases\": [0, 0, 0, 1], \"factor_weights\": [13, 12, 1, 1], \"hermitian_failures\": 0, \"qubits\": 38, \"rank_S_minus_I\": 3, \"rotation_signs\": [1, -1, -1, 1], \"signed_mismatches\": {\"exact\": 0, \"phase_only\": 0, \"symplectic\": 0}}, \"terminal\": \"CYCLE709_LOCAL_SEAM_PHYSICAL_M2_BOUNDED_COMPILER_PASS\", \"translations\": {\"colour_origin\": \"supplied and translated with the chart\", \"omit_translated_colour_origin_changes_cleanup\": 0, \"parity_residue_translations\": 8, \"translated_semantic_failures\": 0}, \"unlawful\": {\"accepted_domain\": \"translated rectangular boxes in supplied canonical product order\", \"disconnected_box_rejected\": true, \"duplicate_cell_rejected\": true, \"shuffled_cell_path_order_rejected\": true}}\nCYCLE709_LOCAL_SEAM_PHYSICAL_M2_BOUNDED_COMPILER_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T043826Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

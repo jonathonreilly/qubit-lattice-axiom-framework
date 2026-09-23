@@ -1,0 +1,44 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "axiom_pressure": false,
+  "checks": {
+    "all_children_exit_zero": true,
+    "all_children_stderr_empty": true,
+    "all_three_sources_pinned": true,
+    "expected_total_checks": true
+  },
+  "cycle": 705,
+  "failures": [],
+  "route_independent_obstruction": false,
+  "routes": [
+    {
+      "name": "direct_reference_edge",
+      "returncode": 0,
+      "source_sha256": "fe16008972dd77bfcea789ba530dc744bf6a8bf4777a06744032e372cdbce32e",
+      "stderr_bytes": 0,
+      "terminal": "DIRECT_REFERENCE_EDGE_COMMON_E_EXACT_PATH_SUPPORT_ADVANTAGE_RETAINED",
+      "tests_failed": 0,
+      "tests_passed": 9
+    },
+    {
+      "name": "geometry_local_seam_gauge",
+      "returncode": 0,
+      "source_sha256": "bc61e5f93e47f18117064243d9d9a6b34bbe6bfdc07bda27c953b78880ef6d00",
+      "stderr_bytes": 0,
+      "terminal": "CYCLE705_FACE_GAUGE_COMMON_E_FREEZE_EXACT_HELD_SEAM_COSETS_5_55_132_ROUTE_OPEN",
+      "tests_failed": 0,
+      "tests_passed": 7
+    },
+    {
+      "name": "cycle269_carrier_role",
+      "returncode": 0,
+      "source_sha256": "92191de04731fee6a9fb5ecdeea2d32b38d688825e464dbc5ce3d6b7d6ee1a28",
+      "stderr_bytes": 0,
+      "terminal": "SUMMARY pass=21 fail=0",
+      "terminal_count": 1
+    }
+  ],
+  "terminal": "CYCLE705_ENDPOINT_LOCALIZATION_THREE_ROUTE_ACCEPTANCE_CLOSED"
+}
+CYCLE705_ENDPOINT_LOCALIZATION_THREE_ROUTE_ACCEPTANCE_CLOSED

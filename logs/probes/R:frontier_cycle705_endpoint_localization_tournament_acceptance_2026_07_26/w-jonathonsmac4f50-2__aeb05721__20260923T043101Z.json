@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle705_endpoint_localization_tournament_acceptance_2026_07_26",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle705_endpoint_localization_tournament_acceptance_2026_07_26.py",
+ "seed": 37861,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aeb05721",
+ "started_utc": "20260923T043101Z",
+ "elapsed_s": 278.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a489d9f9cbc26bb6407f24f352bf1ecd5b39271e1275d38d4363432f9b13ea90",
+ "stdout_tail": "{\n  \"audit\": \"unset\",\n  \"authority\": \"none\",\n  \"axiom_pressure\": false,\n  \"checks\": {\n    \"all_children_exit_zero\": true,\n    \"all_children_stderr_empty\": true,\n    \"all_three_sources_pinned\": true,\n    \"expected_total_checks\": true\n  },\n  \"cycle\": 705,\n  \"failures\": [],\n  \"route_independent_obstruction\": false,\n  \"routes\": [\n    {\n      \"name\": \"direct_reference_edge\",\n      \"returncode\": 0,\n      \"source_sha256\": \"fe16008972dd77bfcea789ba530dc744bf6a8bf4777a06744032e372cdbce32e\",\n      \"stderr_bytes\": 0,\n      \"terminal\": \"DIRECT_REFERENCE_EDGE_COMMON_E_EXACT_PATH_SUPPORT_ADVANTAGE_RETAINED\",\n      \"tests_failed\": 0,\n      \"tests_passed\": 9\n    },\n    {\n      \"name\": \"geometry_local_seam_gauge\",\n      \"returncode\": 0,\n      \"source_sha256\": \"bc61e5f93e47f18117064243d9d9a6b34bbe6bfdc07bda27c953b78880ef6d00\",\n      \"stderr_bytes\": 0,\n      \"terminal\": \"CYCLE705_FACE_GAUGE_COMMON_E_FREEZE_EXACT_HELD_SEAM_COSETS_5_55_132_ROUTE_OPEN\",\n      \"tests_failed\": 0,\n      \"tests_passed\": 7\n    },\n    {\n      \"name\": \"cycle269_carrier_role\",\n      \"returncode\": 0,\n      \"source_sha256\": \"92191de04731fee6a9fb5ecdeea2d32b38d688825e464dbc5ce3d6b7d6ee1a28\",\n      \"stderr_bytes\": 0,\n      \"terminal\": \"SUMMARY pass=21 fail=0\",\n      \"terminal_count\": 1\n    }\n  ],\n  \"terminal\": \"CYCLE705_ENDPOINT_LOCALIZATION_THREE_ROUTE_ACCEPTANCE_CLOSED\"\n}\nCYCLE705_ENDPOINT_LOCALIZATION_THREE_ROUTE_ACCEPTANCE_CLOSED\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T043540Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

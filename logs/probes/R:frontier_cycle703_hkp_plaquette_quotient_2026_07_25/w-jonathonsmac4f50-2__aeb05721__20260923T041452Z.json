@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle703_hkp_plaquette_quotient_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle703_hkp_plaquette_quotient_2026_07_25.py",
+ "seed": 36892,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aeb05721",
+ "started_utc": "20260923T041452Z",
+ "elapsed_s": 1.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "79a8765eaadf582c9b3d55ebf225bf9a3204e1e3636522665903351d9bf95667",
+ "stdout_tail": "ysical common-E intertwiner, leakage bound, or autonomous clock\", \"a route-independent obstruction, minimum content, or axiom pressure\"], \"out_of_plane_corner\": {\"P_terms\": 0, \"centers\": [[0, 0, 0], [1, 0, 0], [0, 0, 1]], \"interpretation\": \"geometric H/K/P transport closes the transported target; the separately recomputed target retains the preferred exterior-order gauge, whose physical frame action is not compiled\", \"recomputed_fixed_exterior_target_pairs\": 210, \"recomputed_target_mismatch_pairs\": 150, \"recomputed_target_mismatch_rank\": 14, \"transported_target_mismatch_pairs\": 0, \"transported_target_mismatch_rank\": 0, \"transported_target_pairs\": 178, \"wrong_identity_coframe_recomputed_target_mismatch_pairs\": 124, \"wrong_identity_coframe_recomputed_target_mismatch_rank\": 10}, \"proper_cubic_covariance\": {\"P_word_composition_failures\": 0, \"fixture_candidate_frame_cases\": 72, \"fixture_candidate_rebuild_failures\": 0, \"ordered_frame_products\": 576, \"plaquette_frame_covariance_cases\": 1728, \"plaquette_frame_covariance_failures\": 0, \"proper_cubic_frames\": 24, \"scope\": \"site-word geometry; no physical common-E matrices rebuilt\"}, \"status\": \"H-K-P-training-square-closed-held-quotient-open\", \"supplied\": [\"the adjacent, L, and square finite exterior target oracles\", \"the H/K/P masks extracted from those targets\", \"the homogeneous coframe sector and bounded 27-color chart/origin\", \"the fixed color stages and local direction-mode labels\"]}\nCYCLE703_HKP_CLOSES_SQUARE_HELD_3X3_482_CUBE_680\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T041454Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

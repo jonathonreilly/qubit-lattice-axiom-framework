@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle703_local_encoding_rephase_cohomology_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle703_local_encoding_rephase_cohomology_2026_07_25.py",
+ "seed": 36923,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aeb05721",
+ "started_utc": "20260923T041523Z",
+ "elapsed_s": 7.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "141362713b19dc2ad5e66a48fc1ab13d17e536f4d309d65d707bb46221def0fc",
+ "stdout_tail": "rank\": 8023, \"delta_S_unrestricted_quadratic_rank\": 8022, \"exact_same_register_diagonal_rephase_exists\": false, \"fixed_pair_orbits\": 11217, \"fixture\": \"three-by-three-centers\", \"minimum_pair_mismatch_in_unrestricted_quadratic_image\": 100, \"modes\": 234, \"odd_residual_pair_orbits\": 100, \"quadratic_pair_dimension\": 27261, \"representative_odd_orbits\": [[[6, 30], [49, 97], 0, 1], [[6, 32], [49, 51], 0, 1], [[6, 51], [32, 49], 1, 0], [[6, 97], [30, 49], 1, 0], [[12, 48], [67, 115], 0, 1], [[12, 50], [67, 69], 0, 1], [[12, 69], [50, 67], 1, 0], [[12, 115], [48, 67], 1, 0]], \"residual_pairs\": 942, \"stream_involution_failures\": 0, \"two_pair_orbits\": 8022, \"two_particle_configuration_symmetry_failures\": 200}, {\"cells\": 32, \"delta_S_augmented_rank\": 5581, \"delta_S_unrestricted_quadratic_rank\": 5580, \"exact_same_register_diagonal_rephase_exists\": false, \"fixed_pair_orbits\": 7176, \"fixture\": \"two-by-two-by-two-cube\", \"minimum_pair_mismatch_in_unrestricted_quadratic_image\": 156, \"modes\": 192, \"odd_residual_pair_orbits\": 156, \"quadratic_pair_dimension\": 18336, \"representative_odd_orbits\": [[[6, 42], [49, 115], 0, 1], [[6, 44], [49, 69], 0, 1], [[6, 46], [49, 53], 0, 1], [[6, 53], [46, 49], 1, 0], [[6, 69], [44, 49], 1, 0], [[6, 115], [42, 49], 1, 0], [[12, 42], [67, 115], 0, 1], [[12, 44], [67, 69], 0, 1]], \"residual_pairs\": 1136, \"stream_involution_failures\": 0, \"two_pair_orbits\": 5580, \"two_particle_configuration_symmetry_failures\": 312}]}\nCYCLE703_REPHASE_ODD_ORBITS_4_22_34_HELD_100_156\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T041530Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

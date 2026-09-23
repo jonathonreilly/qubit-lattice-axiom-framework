@@ -1,0 +1,3618 @@
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_BOUNDED_RATE_ALTERNATIVE.md
++++ docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+@@ -1,4 +1,4 @@
+-# A bounded-rate alternative and the response it still needs
++### A bounded-rate alternative and the response it still needs
+ 
+ Personal derivation, 2026-09-15. Keep the same actual filtered clock measure
+ and the same exact-fiber diffusion as in BLOCK1_POSITIVE_HYBRID_GENERATOR.md.
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_CURVATURE_TEST_DESIGN.md
++++ docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+@@ -1,4 +1,4 @@
+-# Test the actual hybrid curvature before using it
++### Test the actual hybrid curvature before using it
+ 
+ Personal continuation of block 1. The proposed mechanism is a pointwise
+ Bakry-Emery estimate Gamma2(f)>=k Gamma(f), k>0, for the exact hybrid
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_INTEGRATED_IDENTITIES_AND_RATE_MOMENTS.md
++++ docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-3
+@@ -1,4 +1,4 @@
+-# Integrated identities and exact non-small rate fluctuations
++### Integrated identities and exact non-small rate fluctuations
+ 
+ Personal derivation, 2026-09-15; exploratory support for the fixed-clock
+ campaign. These identities do not prove a spectral gap or a Gaussian limit.
+@@ -7,7 +7,7 @@
+ Write q_v=v.A v and a_vw=v.A w. Expectations below are under the actual
+ centered filtered clock law, not the unrestricted Gaussian reference.
+ 
+-## 1. Exact rate moments
++#### 1. Exact rate moments
+ 
+ For any real k, let m_k(v)=E[c_v^k]. The Gaussian tails and bounded periodic
+ potential in a fixed box ensure finiteness. The exact carrier translation
+@@ -48,7 +48,7 @@
+ points, E[c_v f^2]/E[f^2] can be arbitrarily large. This rejects only a
+ specific unweighted perturbation estimate. A weighted argument remains open.
+ 
+-## 2. Mixed diffusion/jump identity
++#### 2. Mixed diffusion/jump identity
+ 
+ Let g=P grad f. For smooth compactly supported tests on the carrier,
+ integration by parts in the exact fibers and jump detailed balance give
+@@ -68,7 +68,7 @@
+ The full integrated identity E Gamma2(f)=E(Lf)^2>=0 still holds; a positive
+ lower bound by E Gamma(f) is the separate spectral-gap obligation.
+ 
+-## 3. An admissible jump-pair weight
++#### 3. An admissible jump-pair weight
+ 
+ For two moves define r(v,w)=exp[-a_vw/4] and
+ 
+@@ -100,7 +100,7 @@
+ so the cross term cancels exactly. Equation (7) does not bound the
+ same weight multiplied by arbitrary squared derivatives of f.
+ 
+-## 4. Literature match and next obligation
++#### 4. Literature match and next obligation
+ 
+ Dai Pra and Posta, *Entropy Decay for interacting systems via the
+ Bochner-Bakry-Emery approach*, arXiv:1205.4599v3,
+@@ -117,7 +117,7 @@
+ Merely assuming that response, or replacing weighted expectations by
+ products of separate means, would reintroduce the original hard problem.
+ 
+-## Finite source challenge
++#### Finite source challenge
+ 
+ The companion `../evidence/block1_integrated_rate_check.py` checks the exact
+ second/third/fourth rate moments, moment reflection, the admissible pair-weight
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_POINTWISE_CURVATURE_WITNESS.md
++++ docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-4
+@@ -1,4 +1,4 @@
+-# A negative pointwise-curvature witness for the actual hybrid generator
++### A negative pointwise-curvature witness for the actual hybrid generator
+ 
+ Personal derivation and finite check, 2026-09-15. This rejects one sufficient
+ proof criterion for the generator in BLOCK1_POSITIVE_HYBRID_GENERATOR.md.
+@@ -6,7 +6,7 @@
+ field limit, another dynamics, the clock model, or the framework axioms.
+ No public no-go or independently reviewed theorem is being submitted here.
+ 
+-## Geometry and test function
++#### Geometry and test function
+ 
+ Take the single free four-dimensional unit cube: 32 edges, 24 faces, and
+ rank(D)=17. Its signed coordinate symmetries act transitively on faces,
+@@ -40,7 +40,7 @@
+ 
+     Gamma(f)=p0 a0^2 + mu/2.                            (2)
+ 
+-## Direct scalar reduction with V_e=0
++#### Direct scalar reduction with V_e=0
+ 
+ Write L=L_c+L_j and Gamma=Gamma_c+Gamma_j. For the Gaussian reference,
+ the continuous contribution to Gamma2=(L Gamma)/2-Gamma(f,Lf) is
+@@ -84,7 +84,7 @@
+ quadratic action does not give a positive pointwise curvature bound for
+ this sum of diffusion and jump generators.
+ 
+-## Keep the actual finite-clock correction
++#### Keep the actual finite-clock correction
+ 
+ The exact electric extension is even and h Z^faces-periodic. Its gradient
+ therefore vanishes at z0 and all one- and two-jump points used above.
+@@ -113,7 +113,7 @@
+ is unavailable in the intended small-electric-correction range, including
+ arbitrarily large fixed beta with sufficiently large fixed N.
+ 
+-## Independent calculation path and the preserved numerical issue
++#### Independent calculation path and the preserved numerical issue
+ 
+ `../evidence/block1_hybrid_curvature_check.py` builds the full four-cube D
+ and P, then evaluates L Gamma and Gamma(f,Lf) using their vector/tensor
+@@ -134,7 +134,7 @@
+ extension theorem, certify all infinite-volume claims, or establish the
+ absence of other functional inequalities.
+ 
+-## Consequence for the campaign
++#### Consequence for the campaign
+ 
+ Keep the positive generator and its mean-rate identity. Drop only the
+ unqualified pointwise positive-curvature route. A rare high-energy point
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_POSITIVE_HYBRID_GENERATOR.md
++++ docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-5
+@@ -1,9 +1,9 @@
+-# A positive dynamics that keeps the magnetic carrier
++### A positive dynamics that keeps the magnetic carrier
+ 
+ Personal derivation, 2026-09-15. Provisional research; no independent review,
+ full-field limit, native law, or axiom amendment is claimed.
+ 
+-## Exact starting measure
++#### Exact starting measure
+ 
+ Use the finite free-cube smoothing identity on main
+ 6ad6a2184b7c2067e597528e0964753874493b4a, with D=d1, B=d2,
+@@ -26,7 +26,7 @@
+ at any fixed tau>0 for which this exact periodic extension is used.
+ The sign of h Z is immaterial because the integer group is symmetric.
+ 
+-## A candidate reversible generator
++#### A candidate reversible generator
+ 
+ For each oriented face p put v_p=h e_p. Define
+ 
+@@ -64,7 +64,7 @@
+ finite conservative realization is supplied below. A volume-uniform
+ mixing or parameter-response theorem remains open.
+ 
+-## A uniform bound on stationary jump intensity
++#### A uniform bound on stationary jump intensity
+ 
+ The original centered clock flux X has E exp(t.X)<=exp(||t||^2/2).
+ The exact coupling z=K(X+sqrt(beta)D xi), with independent edge Gaussian
+@@ -86,7 +86,7 @@
+ The expected total jump intensity in a finite box is finite, bounded
+ by its number of faces times (7). This is not a mixing bound.
+ 
+-## Finite-volume nonexplosion, without a uniform response claim
++#### Finite-volume nonexplosion, without a uniform response claim
+ 
+ The drift in (2) is globally Lipschitz on each fiber, since Hess V_e is
+ bounded. The jump rates are locally bounded and smooth. Construct the
+@@ -117,7 +117,7 @@
+ from this Lyapunov estimate: its upper constant scales with volume and
+ can grow rapidly with beta. No infinite-volume process has yet been constructed.
+ 
+-## Diffuse-source jump remainder
++#### Diffuse-source jump remainder
+ 
+ For a real face test t, apply the jump part of (2) to exp(i t.z) and
+ divide by that exponential. Its linear and quadratic terms are
+@@ -137,7 +137,7 @@
+ This is a statement about the generator expression, not about the third
+ cumulant of the stationary field.
+ 
+-## Exact residual and next discriminator
++#### Exact residual and next discriminator
+ 
+ The potential advantage of (2) is that it keeps a positive law and the
+ actual quantized support, while placing the electric correction in a small
+@@ -164,7 +164,7 @@
+ coupling or Dirichlet estimate on actual magnetic fibers. If it fails, preserve
+ the concrete failure and try a materially different estimate.
+ 
+-## Finite source challenge
++#### Finite source challenge
+ 
+ `../evidence/block1_hybrid_generator_check.py` enumerates 32, 243 and 1024
+ tree-gauge clock configurations on a free three-cube for (N,beta) equal to
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_ASSUMPTIONS_AND_ROUTE_REFRAME.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+@@ -1,11 +1,11 @@
+-# Reassessing the fixed-clock physical field proof
++### Reassessing the fixed-clock physical field proof
+ 
+ Personal exercise, 2026-09-15. This is an attack map and assumption ledger,
+ not an audit or a theorem about the minimal axioms. The exercise skill is
+ read at current main 5aca149c42debb7b0adaa2e9d1a374af4c5d4b78; its bytes
+ match the installed source. Execution remains personal without subagents.
+ 
+-## Exact target and present wall
++#### Exact target and present wall
+ 
+ For the supplied four-dimensional finite-clock Villain law, prove the full
+ physical flux/score characteristic-functional scaling at fixed finite N and
+@@ -31,7 +31,7 @@
+ matching-premise inconsistency or independence result; this supplied-law
+ campaign alone cannot establish that conclusion.
+ 
+-## Assumptions from the foundation to this calculation
++#### Assumptions from the foundation to this calculation
+ 
+ Confidence below refers to the stated use, not empirical truth. The minimal
+ axiom memo, complete premise registry, primitive classification procedure,
+@@ -60,7 +60,7 @@
+ | Uniform source response | Open obligation | Higher connected responses vanish for diffuse tests | Explicit open | Campaign target | Full Gaussian limit | Uncontrolled many-body response remains | Target merely renamed | Derive a source-specific estimate | New mechanism required | Unproved |
+ | Finite diagnostics | Evidence | Exact incidence, controlled floating evaluations | Explicit | Runner source/logs | Challenge signs and factors | Numerical agreement is not theorem proof | PASS inflation | Separate symbolic identities from numerics | Preserve failures and mutations | Limited as stated |
+ 
+-## Reduction and the smallest useful tests
++#### Reduction and the smallest useful tests
+ 
+ The physical requirement is a diffuse-source limit. A global all-tilt
+ Hessian, global pointwise curvature, or absolute row bound for every kernel
+@@ -81,7 +81,7 @@
+ component shapes. Next test the surviving signed networks, rather than
+ automating a component expansion whose central estimate is missing.
+ 
+-## Primary proof patterns and hypothesis checks
++#### Primary proof patterns and hypothesis checks
+ 
+ | Source | Solves / premises | Proof skeleton | Mapping and mismatch | Translation / import risk |
+ |---|---|---|---|---|
+@@ -94,7 +94,7 @@
+ derived from exact phase periodicity and frame inequalities here, not quoted
+ from any of these papers.
+ 
+-## Mathematics sector scan
++#### Mathematics sector scan
+ 
+ | Sector | Concrete reframe / tool | Minimal toy | Attack on wall | Falsifier / first artifact |
+ |---|---|---|---|---|
+@@ -114,7 +114,7 @@
+ index theory, and noncommutative geometry offer no identified extra invariant
+ for this local analytic obstacle; naming them would add no mechanism.
+ 
+-## Reframes and ranked next actions
++#### Reframes and ranked next actions
+ 
+ | Rank | Family / reframe | What moves and simplifies | What remains hard | Terminal strength / status | Next artifact and stop condition |
+ |---|---|---|---|---|---|
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_COFACTOR_CYCLIC_REALIZATIONS.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+@@ -1,4 +1,4 @@
+-# Local cofactor signs and cyclic operator realizations
++### Local cofactor signs and cyclic operator realizations
+ 
+ Personal proof candidate, 2026-09-15. This addresses a specified oriented
+ resource assignment in a determinant exclusion derivative. Finite sign and
+@@ -95,7 +95,7 @@
+ or field-scaling claim is made here.
+ 
+ 
+-## Author challenges
++#### Author challenges
+ 
+ The runner compares determinant permutation coefficients with the local-sign
+ CAR realization over 1,920 footprint/assignment/order cases, including
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_COMPATIBLE_LOOP_QUADRATIC_LIMIT.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-3
+@@ -1,4 +1,4 @@
+-# The compatible dressed loop functional has a quadratic macroscopic limit
++### The compatible dressed loop functional has a quadratic macroscopic limit
+ 
+ Personal derivation candidate, 2026-09-15. This completes the source limit
+ of the restricted loop functional from the hard-core note. It does not
+@@ -6,7 +6,7 @@
+ function. The absent mixed residual factors and branching networks remain
+ necessary for the actual clock law.
+ 
+-## 1. Two-source version of the trace bound
++#### 1. Two-source version of the trace bound
+ 
+ The commuting-contraction trace proof works with any positive integer
+ number K of source insertions: put all K at one vertex, split |L|^(K/2)
+@@ -29,7 +29,7 @@
+ and |<F,u>|^2<=||F||_1 sum_y |F(y)||u(y)|^2. The required weighted
+ anchored moment is order four. No macroscopic source shape is used in (1.2).
+ 
+-## 2. Quadratic coefficient operators at each length
++#### 2. Quadratic coefficient operators at each length
+ 
+ Denote by B_l(u_e,u_m) the quadratic coefficient of the length-l compatible
+ Gaussian-dressed loop source. Its weight includes all l sine bonds and
+@@ -72,7 +72,7 @@
+ existence and continuity of each individual Fourier symbol; the different
+ signed bound (2.2) will control the sum of their operator norms.
+ 
+-## 3. The full length sum has a continuous symbol
++#### 3. The full length sum has a continuous symbol
+ 
+ Prescribe for each length a replica correlation matrix independent of
+ component labels and positions, or any normalized average of such matrices.
+@@ -102,7 +102,7 @@
+ inferred from a single sine loop. These are coefficients of the restricted
+ functional, not yet physical dielectric constants or field covariances.
+ 
+-## 4. Macroscopic source limit
++#### 4. Macroscopic source limit
+ 
+ For h_a=a^2 f(a midpoint), use u_e=P h_a, u_m=Q h_a. Smooth-source Fourier
+ concentration, the continuum Hodge-symbol limit, and continuity (3.2) give
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_CONTACT_REGISTER_SUM.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-4
+@@ -1,4 +1,4 @@
+-# Summing local cofactor contacts with bounded registers
++### Summing local cofactor contacts with bounded registers
+ 
+ Personal proof candidate, 2026-09-15. The finite sign, derivative, operator
+ block and source checks pass. This extends the preceding fixed-assignment
+@@ -13,7 +13,7 @@
+ one resource vanish. Retain the full local footprint A_i and CAR Hilbert
+ space of the determinant note. Fix any total vertex order O.
+ 
+-## 1. Local registers implement the entire resource assignment sum
++#### 1. Local registers implement the entire resource assignment sum
+ 
+ For each edge e, introduce H_e=C|vac> direct-sum l2(resources). The edge
+ register is inactive outside the interval between its endpoints in O and
+@@ -31,7 +31,7 @@
+ at their common endpoint; their matrix block is zero. All nonzero base
+ CAR blocks are contractions.
+ 
+-## 2. Both kinds of cofactor signs can be evaluated while registers are live
++#### 2. Both kinds of cofactor signs can be evaluated while registers are live
+ 
+ The position-parity sign in the preceding note factors by vertices. For
+ one edge, its two endpoints contribute an even count before its first
+@@ -67,7 +67,7 @@
+ 
+ The product includes the position and matching signs just described.
+ 
+-## 3. A volume-independent norm bound
++#### 3. A volume-independent norm bound
+ 
+ Let s_i and t_i count edges starting and ending at i in O, so s_i+t_i=d_i.
+ In each local block matrix, a fixed left register row has at most
+@@ -97,7 +97,7 @@
+ vertex order, although the local blocks change. The earlier cyclic-realization
+ source proof therefore applies without assuming these blocks commute.
+ 
+-## 4. Absorb degrees with one exponential footprint reserve per vertex
++#### 4. Absorb degrees with one exponential footprint reserve per vertex
+ 
+ Choose epsilon>0. For integer d>=1 and a>=0,
+ 
+@@ -147,7 +147,7 @@
+ exponential in loop length. Residual mixed phases remain another obligation.
+ 
+ 
+-## Author challenges and remaining count
++#### Author challenges and remaining count
+ 
+ A direct determinant-jet comparator multiplies the original determinant
+ permutation polynomials and extracts the prescribed derivative. Separately,
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_DETERMINANT_EXCLUSION_AND_LOCAL_DERIVATIVES.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-5
+@@ -1,4 +1,4 @@
+-# Determinant exclusion with local derivatives and protected loop bounds
++### Determinant exclusion with local derivatives and protected loop bounds
+ 
+ Personal proof candidate, 2026-09-15. Finite CAR/Gram and BKAR author
+ challenges pass, with the implementation failure preserved separately. This
+@@ -96,7 +96,7 @@
+ idea at present. Residual mixed phases and branching remain open either way.
+ 
+ 
+-## Finite verification and theorem hypotheses
++#### Finite verification and theorem hypotheses
+ 
+ The author runner verifies 240 creation-word Gram identities and 1,392
+ cross-minor identities up to five replica vectors, including degenerate
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_FRONTIER_REASSESSMENT.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-6
+@@ -1,4 +1,4 @@
+-# Frontier reassessment after the exclusion and cofactor mechanisms
++### Frontier reassessment after the exclusion and cofactor mechanisms
+ 
+ Personal working assessment, 2026-09-15. No axiom verdict or physical
+ field-scaling conclusion follows from this checkpoint.
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_GAUSSIAN_DRESSED_CYCLE_SOURCE_SUM.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-7
+@@ -1,4 +1,4 @@
+-# Gaussian dressing preserves signed loop bounds and their source remainder
++### Gaussian dressing preserves signed loop bounds and their source remainder
+ 
+ Personal derivation candidate, 2026-09-15. This controls an explicitly
+ restricted family of unrestricted alternating loops at all lengths. The
+@@ -7,7 +7,7 @@
+ the functional defined here. Thus this is a partial resummation mechanism,
+ not the physical activity-one partition function or a field-limit theorem.
+ 
+-## 1. Reserve local activity and keep the Gaussian interaction
++#### 1. Reserve local activity and keep the Gaussian interaction
+ 
+ Use the marked infinite-cubic components and physical fillings from the
+ preceding notes. For a species with x=g^2 or b^2, use local weight
+@@ -40,7 +40,7 @@
+ loop length and interpolation parameters; positivity is all that is used.
+ Repeated and overlapping component labels are allowed by this extension.
+ 
+-## 2. Signed trace bound survives this dressing
++#### 2. Signed trace bound survives this dressing
+ 
+ In finite component restrictions put
+ 
+@@ -61,7 +61,7 @@
+ spatial norm, Taylor expansion of the same-species Gaussian, or claim
+ that a signed trace is positive has entered this argument.
+ 
+-## 3. A four-source trace inequality includes coincident insertions
++#### 3. A four-source trace inequality includes coincident insertions
+ 
+ Let L be any diagonal complex source amplitude on the two component
+ spaces. If k_i are nonnegative integers with sum k_i=4 and ||M_i||<=1
+@@ -94,7 +94,7 @@
+ the outer trace exponent is one. No complex matrix is treated as positive.
+ The complex diagonal phase is removed by Holder before that application.
+ 
+-## 4. Physical sources make S4 small without a volume factor
++#### 4. Physical sources make S4 small without a volume factor
+ 
+ Take the same macroscopic h_a as earlier and
+ 
+@@ -148,7 +148,7 @@
+ linfinity bounds: ||P h_a||_2,||Q h_a||_2=O(1) and their linfinity norms
+ are O(a^2). No finite-free-boundary projection estimate is imported here.
+ 
+-## 5. Every loop length can now be summed for this restricted functional
++#### 5. Every loop length can now be summed for this restricted functional
+ 
+ Define C_l(z), l=2r>=4, by the alternating loop integral of the product
+ of its l sine bonds, all local weights (1.1), G_sigma, and
+@@ -182,7 +182,7 @@
+ source remainder; it does not give arbitrary absolute spatial summability
+ of the unsubtracted loop or of its quadratic term.
+ 
+-## 6. What remains before this can control the physical law
++#### 6. What remains before this can control the physical law
+ 
+ The representation (1.4) shows that the full same-species stable Gaussian
+ does not by itself destroy the signed trace cancellation. This removes
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_GRAPH_HOLDER_SOURCE_REMAINDER.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-8
+@@ -1,4 +1,4 @@
+-# A source remainder bound for the full two-electric, two-magnetic coefficient
++### A source remainder bound for the full two-electric, two-magnetic coefficient
+ 
+ Personal proof candidate, 2026-09-15. The objects here use the infinite
+ cubic Hodge kernels and all finite closed component shapes. This treats
+@@ -7,7 +7,7 @@
+ an infinite-volume state, establish a quadratic coefficient limit, or
+ identify arbitrary finite-free-boundary limits.
+ 
+-## 1. A graph version of Holder proved directly from trees
++#### 1. A graph version of Holder proved directly from trees
+ 
+ Let H be a finite connected multigraph on vertices 0,...,v, with no loops.
+ Fix x_0=0 in Z^4. Give edge e=ij a nonnegative function f_e(x_i-x_j).
+@@ -35,7 +35,7 @@
+ can be extended to a tree, and deleting a nonbridge leaves a connected
+ graph. No tree-packing theorem is imported.
+ 
+-## 2. Source parity supplies the missing strict exponents
++#### 2. Source parity supplies the missing strict exponents
+ 
+ Let G be a connected multigraph on the four defect vertices. Attach
+ k_i source edges from vertex i to a new fixed vertex 0, and let
+@@ -77,7 +77,7 @@
+ K=4 gives O(a^3). If source parity is removed, an unmarked side of a
+ one-edge cut can force p=1 and this proof no longer applies.
+ 
+-## 3. Actual component bonds and the needed spatial majorant
++#### 3. Actual component bonds and the needed spatial majorant
+ 
+ Use the odd, normalized cubic marked filling rules and measures of
+ the previous all-component note at e3fc0b7707dce894ef98e7981a9feaf6041708f8.
+@@ -140,7 +140,7 @@
+ selected bond term in this four-component calculation. It is not an
+ estimate for the absolute Mayer graphs of arbitrary particle number.
+ 
+-## 4. The subtracted physical source coefficient
++#### 4. The subtracted physical source coefficient
+ 
+ Let h_a(p)=a^2 f(a midpoint(p)) for smooth compactly supported real f.
+ Write the actual source amplitudes as L_i=-g<S_i,Ph_a> for electric
+@@ -198,7 +198,7 @@
+ The bound passes to arbitrary increasing component restrictions of this
+ subtracted infinite-kernel functional by dominated convergence.
+ 
+-## 5. What this resolves and what it leaves
++#### 5. What this resolves and what it leaves
+ 
+ The non-quadratic source remainder at the first two-by-two mixed coefficient
+ vanishes, with all finite component shapes, the surviving odd cycles,
+@@ -215,7 +215,7 @@
+ open. The four-component energy reserve in section 3 must not be reused
+ for arbitrary absolute Mayer graphs without a new stability argument.
+ 
+-## 6. Finite author verification
++#### 6. Finite author verification
+ 
+ The checker enumerates all 624 connected absent/even/odd bond patterns on
+ four labels and all 23,556 parity-matched Taylor remainder choices. It
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_HARD_CORE_GAUSSIAN_CYCLE_SOURCE_SUM.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-9
+@@ -1,4 +1,4 @@
+-# Exact support exclusion preserves a Gaussian-dressed loop source sum
++### Exact support exclusion preserves a Gaussian-dressed loop source sum
+ 
+ Personal proof candidate, 2026-09-15. This extends the preceding restricted
+ loop result to the actual support-compatibility rule. It retains every
+@@ -7,7 +7,7 @@
+ outside the result. No physical pressure identity or full field limit is
+ asserted. Verification is personal, without independent review.
+ 
+-## 1. The exclusion rule has a local footprint
++#### 1. The exclusion rule has a local footprint
+ 
+ Work on the infinite four-dimensional cubic lattice with the component
+ definition pinned in prior block27: electric occupied edges are adjacent
+@@ -33,7 +33,7 @@
+ does not change the footprint. Take one representative from each sign pair
+ and average its separate orientation sign as in the preceding loop note.
+ 
+-## 2. Exclusion is an exact matrix element of local contractions
++#### 2. Exclusion is an exact matrix element of local contractions
+ 
+ For each resource u use C^2, unit vector v_u=(1,1)/sqrt(2), and lowering
+ operator a_u=|0><1|. It has norm one and square zero. Different resources
+@@ -54,7 +54,7 @@
+ summation identity; they are not additional physical degrees of freedom
+ or a change to the model's microscopic state.
+ 
+-## 3. A trace estimate with operator-valued vertex factors
++#### 3. A trace estimate with operator-valued vertex factors
+ 
+ Let J be a finite selfadjoint scalar matrix on component space H, let
+ rho=||J||, and let M_i be diagonal operators on H tensor K. Suppose each
+@@ -115,7 +115,7 @@
+ on the strip, so the usual bounded three-lines theorem applies. Take
+ z_i=k_i/4 and then epsilon down to zero. This proves (3.2).
+ 
+-## 4. Apply the lemma to the complete hard core and Gaussian dressing
++#### 4. Apply the lemma to the complete hard core and Gaussian dressing
+ 
+ Use the local activity w_i=(2/384)exp[-x_i||current_i||_2^2/64] and the
+ same-species stable Gaussian G_sigma from the preceding loop note. Its
+@@ -176,7 +176,7 @@
+ proved infinite-lattice smooth-source l2 and linfinity bounds. All arbitrary
+ finite component shapes and all normalized marks are included.
+ 
+-## 5. The restricted source remainder sums over every loop length
++#### 5. The restricted source remainder sums over every loop length
+ 
+ Let C_l^HC(z), l=2r>=4, be the loop functional just defined, with all
+ same-species hard-core pairs present at full strength. The same-species
+@@ -209,7 +209,7 @@
+ asserted separately convergent here. The coefficient 1/r defines this loop
+ sum; it has not been identified with the physical connected-expansion weight.
+ 
+-## 6. Finite challenges and exact remaining scope
++#### 6. Finite challenges and exact remaining scope
+ 
+ The runner checks the exclusion matrix element against direct set exclusion,
+ then compares auxiliary operator loop traces with original scalar sums in
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_MACROSCOPIC_COMPONENT_SOURCE_BOUND.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-10
+@@ -1,10 +1,10 @@
+-# A macroscopic physical source costs only a vanishing fraction of self-energy
++### A macroscopic physical source costs only a vanishing fraction of self-energy
+ 
+ Personal derivation, 2026-09-15. This concerns individual component source
+ weights in the exact two-defect representation on Z^4. It supplies no
+ all-order connected response or physical state theorem by itself.
+ 
+-## 1. Source potentials on the infinite lattice
++#### 1. Source potentials on the infinite lattice
+ 
+ Let f be a smooth compactly supported real continuum two-form, and use
+ h_a(p)=a^2 f(a midpoint(p)), with 0<a<=1. Write
+@@ -41,7 +41,7 @@
+ summed contribution by O(a^4) in either integral. Fourier inversion proves
+ (1.1). No value is assigned to the single zero-frequency multiplier point.
+ 
+-## 2. Closure improves the small-component bound
++#### 2. Closure improves the small-component bound
+ 
+ For a finite conserved integer electric component j, let m=||j||_1.
+ Every oriented total sum vanishes:
+@@ -71,7 +71,7 @@
+ alone would grow quadratically in arbitrarily large component mass. The
+ am estimate is what keeps the complete component sum controlled.
+ 
+-## 3. Exact self-weight reserve for bounded complex physical sources
++#### 3. Exact self-weight reserve for bounded complex physical sources
+ 
+ Let U_j=g<j,u_e>, V_q=b<q,u_m>, with g=N/sqrt(beta), b=2pi sqrt(beta).
+ The single component twists in the physical characteristic identity are
+@@ -109,7 +109,7 @@
+ and O(a^4). Formula (3.2) permits the same conclusion with a bounded
+ complex z twist, using half-self-weight moments.
+ 
+-## 4. Boundaries and the unresolved connected estimate
++#### 4. Boundaries and the unresolved connected estimate
+ 
+ This proof is on the infinite lattice. A finite free box may have magnetic
+ components meeting its boundary whose dual current is relative rather
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_ORDER_GROWTH_AND_SUMMATION_OBLIGATION.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-11
+@@ -1,11 +1,11 @@
+-# What the fixed-order construction costs as the order grows
++### What the fixed-order construction costs as the order grows
+ 
+ Personal growth accounting, 2026-09-15. The estimates below are deliberately
+ loose upper bounds for the stable cut-completion construction. They do not
+ show that the actual coefficient series diverges or that another summation
+ method fails.
+ 
+-## 1. A coarse explicit growth class
++#### 1. A coarse explicit growth class
+ 
+ Fix parameters satisfying g^2/128,b^2/128>log393, a smooth macroscopic
+ source f and a bounded complex source disk |z|<=R. All constants below
+@@ -68,7 +68,7 @@
+ finite normalizations, establishing (1.1). No fitted constant or computed
+ coefficient is used in this growth accounting.
+ 
+-## 2. Why this still does not sum the physical law
++#### 2. Why this still does not sum the physical law
+ 
+ The majorant in (1.1) is not summable in n at any fixed nonzero activity.
+ This is a limitation of that majorant, not a proof of divergence of the
+@@ -96,7 +96,7 @@
+ have the same variance. This is an abstract counterexample to an invalid
+ interchange of quantifiers; it is not a counterexample to the clock model.
+ 
+-## 3. Next work selected by this accounting
++#### 3. Next work selected by this accounting
+ 
+ The high cost comes from taking absolute spatial norms after cut completion
+ and from broad filling-moment bounds. The earlier signed sine operator
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_PHASE_PRESERVING_FOREST_INTERPOLATION.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-12
+@@ -1,10 +1,10 @@
+-# A phase-preserving stable forest interpolation
++### A phase-preserving stable forest interpolation
+ 
+ Personal derivation, 2026-09-15. This gives a finite connected-weight
+ identity and an undifferentiated stability bound. It does not yet bound
+ the complete differentiated tree sum over component positions and shapes.
+ 
+-## 1. Why interpolating the raw phase loses a useful identity
++#### 1. Why interpolating the raw phase loses a useful identity
+ 
+ For integer fillings and fixed integer N, the two representatives
+ theta_P=2pi N<n,PS> and theta_Q=-2pi N<Qn,S> differ by an integer
+@@ -23,7 +23,7 @@
+ physical pair factor at s=1. Its derivative contains the full original
+ sine and cosine difference. No sine of a fraction of the phase occurs.
+ 
+-## 2. A stable extension through incompatible configurations
++#### 2. A stable extension through incompatible configurations
+ 
+ Let component i have current j_i (electric) or q_i (magnetic), with
+ x_e=g^2, x_m=b^2. The relevant cubic Hodge Laplacians have spectrum at
+@@ -58,7 +58,7 @@
+ opposite overlapping currents can cancel. The modified extension is
+ what permits the following positive Gram argument even at overlaps.
+ 
+-## 3. The finite interpolation and its uniform mass reserve
++#### 3. The finite interpolation and its uniform mass reserve
+ 
+ For a fixed finite list of occupied components and their signs, set
+ s_ii=1 and
+@@ -94,7 +94,7 @@
+ fixed x_i this consumes at most half the displayed mass reserve.
+ This is a bound on W, not its logarithm or its normalized response.
+ 
+-## 4. Exact connected-weight forest identity
++#### 4. Exact connected-weight forest identity
+ 
+ Let W_A(s) be the uniform orientation average for any subset A of the
+ component labels, and W_empty=1. Define its connected weight by partitions,
+@@ -127,7 +127,7 @@
+ absolute values of every odd linear edge at this point, however, would
+ discard the spatial cancellations needed for a massless problem.
+ 
+-## 5. A useful matrix fact with a limited scope
++#### 5. A useful matrix fact with a limited scope
+ 
+ If S is positive semidefinite with diagonal one, its Schur multiplier
+ is an operator-norm contraction: ||S composed A||<=||A||. Write S_ij
+@@ -149,7 +149,7 @@
+ identity and stable mass reserve specify a candidate starting point;
+ they are not a proof that this last task can be completed.
+ 
+-## 6. Finite author challenge
++#### 6. Finite author challenge
+ 
+ The accompanying checker independently assembles floating cubical
+ incidences on a free chain of four four-cubes and cross-checks four
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_RANDOM_PARTITION_EXCLUSION_INTERPOLATION.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-13
+@@ -1,4 +1,4 @@
+-# A random-partition hard-core interpolation and its derivative geometry
++### A random-partition hard-core interpolation and its derivative geometry
+ 
+ Personal derivation candidate, 2026-09-15. This is a new interpolation, not
+ an identity equating the old pairwise-affine hard core with a partition
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_SIGNED_SINE_OPERATOR_AND_CYCLES.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-14
+@@ -1,9 +1,9 @@
+-# A bounded signed sine operator and the restricted-cycle issue
++### A bounded signed sine operator and the restricted-cycle issue
+ 
+ Personal derivation, 2026-09-15. This is a new operator estimate for the
+ component representation. It is not the complete cluster expansion.
+ 
+-## 1. Component-space operator, including the nonlinear sine
++#### 1. Component-space operator, including the nonlinear sine
+ 
+ Use the infinite-lattice marked component measures nu_e,nu_m and fillings
+ S,n of the two-root note. Put H_e=L2(nu_e), H_m=L2(nu_m). Assume their
+@@ -50,7 +50,7 @@
+ remainder obeys the same truncation prescription. Arbitrary scalar orders
+ of conditionally convergent multiple sums are not asserted equivalent.
+ 
+-## 2. An explicit small norm with an energy reserve
++#### 2. An explicit small norm with an energy reserve
+ 
+ Use the half-self-weight measures of the two-root note. With x_e=g^2,
+ x_m=b^2, its anchored count gives, for r=2 or 6,
+@@ -75,7 +75,7 @@
+ It does not establish a physical phase there. For example beta=256,N=2048
+ satisfies both inequalities with fixed finite parameters.
+ 
+-## 3. Every unrestricted alternating closed walk is controlled
++#### 3. Every unrestricted alternating closed walk is controlled
+ 
+ First take finite component families and let rho=||T||<1. A length-2r
+ alternating closed-walk sum, permitting repeated component labels, is
+@@ -108,7 +108,7 @@
+ Thus (3.3) has a controlled extensive bound under these finite cutoffs.
+ No thermodynamic pressure identity is assumed.
+ 
+-## 4. Distinct labels and physical support compatibility
++#### 4. Distinct labels and physical support compatibility
+ 
+ Orientation graphs in the physical gas use distinct compatible components.
+ One cannot infer positivity of their cycle sums from (3.1). The finite
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_STABLE_CUT_COMPLETION_ALL_FIXED_ORDERS.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-15
+@@ -1,4 +1,4 @@
+-# Stable cut completion controls the source remainder at every fixed activity order
++### Stable cut completion controls the source remainder at every fixed activity order
+ 
+ Personal proof candidate, 2026-09-15. This combines the stable forest
+ interpolation with a new cut-flip identity and the graph Holder estimate.
+@@ -6,7 +6,7 @@
+ number. It supplies no bound uniform in that particle number and therefore
+ no evaluation of the activity expansion at its physical value one.
+ 
+-## 1. Fixed coefficient and source subtraction
++#### 1. Fixed coefficient and source subtraction
+ 
+ Use the all-shape infinite-cubic component representation from the earlier
+ notes. For n_e+n_m=n>=1, let C_(n_e,n_m),a(z) denote the connected formal
+@@ -43,7 +43,7 @@
+ the residual weight and use the unweighted shape/translation/mark counting
+ measures outside it. Each self-weight occurs exactly once.
+ 
+-## 2. The residual family stays stable under a cut flip
++#### 2. The residual family stays stable under a cut flip
+ 
+ Let s=s^T be the fixed forest correlation matrix. Keep original diagonal
+ self-weights, and the modified positive Gram matrix J' of the forest note.
+@@ -82,7 +82,7 @@
+ not change its positivity. This holds for arbitrary repeated or overlapping
+ component lists, not only compatible endpoint configurations.
+ 
+-## 3. One exact operation removes a troublesome bridge
++#### 3. One exact operation removes a troublesome bridge
+ 
+ For a term produced so far, its explicit prefactor is a mass/position
+ amplitude times the sign monomial M_sigma represented by its selected
+@@ -134,7 +134,7 @@
+ estimates. Merely covering all initially odd vertices with another edge
+ would not guarantee the absence of an unmarked bridge.
+ 
+-## 4. Summation after completion
++#### 4. Summation after completion
+ 
+ Now take absolute values. The modified same-species kernel J' has the
+ same kappa(x)=(1+|x|_1)^(-4) spatial majorant as the original Coulomb
+@@ -183,7 +183,7 @@
+ quadratic pieces. The graph summation and all-shape domination justify
+ passage of this subtracted object through increasing restrictions.
+ 
+-## 5. The remaining all-order issue is explicit
++#### 5. The remaining all-order issue is explicit
+ 
+ The containing/avoiding-tree construction allows spatial exponents close
+ to one as n grows. For the displayed construction their distance from
+@@ -199,7 +199,7 @@
+ separate tasks. This cut operation is a new mechanism toward the response
+ problem; it is neither a TOE result nor a model or axiom obstruction.
+ 
+-## 6. Finite challenge and personal review
++#### 6. Finite challenge and personal review
+ 
+ The finite checker exercises 840 initial graphs with 2-8 component vertices
+ and all 4,100 possible next crossing-edge choices encountered along sampled
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_TWO_ROOT_PHASE_ENERGY_BOUND.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-16
+@@ -1,4 +1,4 @@
+-# Two choices of the mixed phase give physical-energy bounds at both roots
++### Two choices of the mixed phase give physical-energy bounds at both roots
+ 
+ Personal derivation, 2026-09-15. Provisional mathematical support for the
+ fixed-clock coupled-defect campaign. No independent review, all-order gas
+@@ -10,7 +10,7 @@
+ repairs a large-component loss in the even mixed bond. It does not remove
+ the odd orientation cycles or same-species interactions of the actual law.
+ 
+-## 1. Objects and exact periodicity
++#### 1. Objects and exact periodicity
+ 
+ Use either a finite free cubical complex with integer H1=H2=0, or finite
+ integer fillings on Z^4. Let D=d_1, B=d_2, P the orthogonal projection onto
+@@ -35,7 +35,7 @@
+ contact. On a torus an additional harmonic term must be kept; that case
+ is outside this note.
+ 
+-## 2. Root estimates for an arbitrary positive filling measure
++#### 2. Root estimates for an arbitrary positive filling measure
+ 
+ Let nu_e and nu_m be positive marked measures on the integer fillings,
+ including any desired self-weights and nonnegative mark normalization.
+@@ -66,7 +66,7 @@
+ Changing the entire marked filling measure can change its frame norm;
+ no uniform statement over arbitrarily bad filling rules is intended.
+ 
+-## 3. A quantitative energy reserve for all finite component shapes
++#### 3. A quantitative energy reserve for all finite component shapes
+ 
+ For this section use exactly the infinite-lattice component measures and
+ odd, signed-cubic averaged filling rules in prior campaign
+@@ -123,7 +123,7 @@
+ gives b^2>2048 and g^2=4096. These are fixed finite parameters. No
+ optimization or assertion about the complete model's phase window follows.
+ 
+-## 4. What the orientation average actually contains
++#### 4. What the orientation average actually contains
+ 
+ For a finite set of electric and magnetic components, with signs sigma_i,
+ the mixed-only orientation factor is exactly
+@@ -145,7 +145,7 @@
+ c<n,S>; one cannot use (1.1) to switch that remainder without recording
+ the contact. The two root bounds here control the even bond only.
+ 
+-## 5. Next decisive obligation
++#### 5. Next decisive obligation
+ 
+ Retain the linear signed kernels and derive a summation bound for connected
+ orientation-even networks with the actual same-species energies and
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK3_FULL_DOMAIN_RECORD_MODEL_PAIR.md
++++ docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+@@ -1,11 +1,11 @@
+-# Full-algebra record laws with different finished-record correlations
++### Full-algebra record laws with different finished-record correlations
+ 
+ Personal proof candidate, 2026-09-15. This is a declared model pair,
+ not an axiom-update verdict. The compatibility check with the approved
+ kinetic-isotropy primitive remains open and must not be replaced by attaching
+ an unrelated quadratic form. No full-foundation witness is claimed yet.
+ 
+-## Exact target and declared interpretation
++#### Exact target and declared interpretation
+ 
+ Here K is the content law conditional on formation and the already readable
+ neighbour records. A static Gibbs conditional given a completed neighbourhood
+@@ -45,7 +45,7 @@
+ as the physical law. The construction is not claimed to recover known matter,
+ Born measurements, Maxwell fields, gravity, or any empirical observation.
+ 
+-## Global formation with exact local odds
++#### Global formation with exact local odds
+ 
+ Supply independent Exp(1) activation times T_x, uniform parent-selection marks,
+ Bernoulli(p) copy marks C_x, and fair independent bits Z_x at all lattice
+@@ -82,7 +82,7 @@
+ full-domain kernel and a finished-record statistical discriminator are the
+ new targets here.
+ 
+-## Exact infinite-lattice discriminator in the declared process
++#### Exact infinite-lattice discriminator in the declared process
+ 
+ Fix the activation times and all parent-selection marks, disregarding copy
+ and innovation bits. Each site has a finite decreasing parent chain ending
+@@ -117,7 +117,7 @@
+ statistics at a shared supplied initial condition; a realized bit or measured
+ frequency is still state data.
+ 
+-## Discharged checks and remaining foundation obligations
++#### Discharged checks and remaining foundation obligations
+ 
+ * Full Qubit domain versus constant proper support: the current axiom does
+   not say full-support or noncentral records, but the intended algebraic
+@@ -147,7 +147,7 @@
+   consequence requires the committed N1-N8 packet and exact premise scope.
+ 
+ 
+-## Reachable support and finite checks
++#### Reachable support and finite checks
+ 
+ For any finite set F and prescribed 0/I pattern, the event that each site
+ in F has C_x=0 and the prescribed innovation bit forces that final pattern,
+@@ -174,7 +174,7 @@
+ The infinite existence and coalescence arguments are analytic. No simulation
+ or assertion count replaces them, and there is no independent review.
+ 
+-## No-Go Discipline Gate
++#### No-Go Discipline Gate
+ 
+ See the committed companion BLOCK3_NO_GO_DISCIPLINE_CHECKLIST.md. The
+ intended all-foundation nonselection claim is not complete: primitive
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK3_GENERAL_ALPHABET_ORDER_INDEPENDENCE.md
++++ docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+@@ -1,4 +1,4 @@
+-# Order independence on a general possibility alphabet
++### Order independence on a general possibility alphabet
+ 
+ Personal proof candidate, 2026-09-15. This extends the finite
+ binary path/star argument to standard Borel alphabets using reversible
+@@ -49,7 +49,7 @@
+ almost surely. Conversely those a.e. kernel identities give product laws
+ in every supplied order by the same induction.
+ 
+-## From almost everywhere to pointwise needs regularity
++#### From almost everywhere to pointwise needs regularity
+ 
+ If X is Polish, pi has full topological support on S, and the restrictions
+ R_m:S^m -> Probability(X) are weakly continuous, then the a.e. equality
+@@ -69,7 +69,7 @@
+ positive-probability observable variation. An axiom's pointwise variation
+ wording cannot silently be replaced by an a.e. or continuity requirement.
+ 
+-## Why the two-site hypothesis matters
++#### Why the two-site hypothesis matters
+ 
+ The endpoint condition K^2=Pi alone is insufficient. On three labels with
+ uniform pi, let u=(1,-1,0)^T, v=(1,1,-2)^T and
+@@ -82,7 +82,7 @@
+ may discard the two-site measure symmetry and infer K=Pi merely by taking
+ a square root of a nonsymmetric stochastic matrix.
+ 
+-## Scope of the model-pair application
++#### Scope of the model-pair application
+ 
+ The preceding full-algebra K_p has positive-probability variation on its
+ 0/I support for every p>0. It therefore cannot be independent of every
+@@ -97,7 +97,7 @@
+ unresolved, and no axiom-update conclusion is asserted.
+ 
+ 
+-## A direction-sensitive escape, outside the common-K hypothesis
++#### A direction-sensitive escape, outside the common-K hypothesis
+ 
+ On a one-dimensional path, let each site's possibility label be two bits
+ (l,r). For each edge independently draw the adjacent ports (r_x,l_(x+1))
+@@ -119,7 +119,7 @@
+ but doing that alone would not prove the full-domain/cubic extension.
+ 
+ 
+-## Author checks and negative-claim scope
++#### Author checks and negative-claim scope
+ 
+ The exact runner verifies the nonreversible positive three-label example,
+ its failed detailed balance and exact K^2=Pi identity. Reversible controls
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK3_NO_GO_DISCIPLINE_CHECKLIST.md
++++ docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-3
+@@ -1,4 +1,4 @@
+-# Block3 adversarial scope record — no all-foundation negative verdict
++### Block3 adversarial scope record — no all-foundation negative verdict
+ 
+ Personal N1-N8 review, 2026-09-15. Governing no-go skill pinned at main
+ 2ed54cb83a4cb6b336e7053e19c8010d5d2930d8, SHA256
+@@ -13,7 +13,7 @@
+ results are retained provisionally. This is a scope/search record, not an
+ independent audit or a proof that a full-foundation pair is impossible.
+ 
+-## N1 — distinct attempted mechanisms and surviving routes
++#### N1 — distinct attempted mechanisms and surviving routes
+ 
+ | family and primary object | attempted mechanism and actual outcome | exact status/source |
+ |---|---|---|
+@@ -30,7 +30,7 @@
+ physical completion. The unfinished kinetic extension prevents the intended
+ all-foundation negative conclusion regardless of the route count.
+ 
+-## N2 — relation of the unresolved obligations
++#### N2 — relation of the unresolved obligations
+ 
+ The full-domain/process interpretation and kinetic compatibility are distinct
+ checks, but no mathematical independence theorem between them is claimed.
+@@ -41,7 +41,7 @@
+ lemmas are actual discharged obligations in the declared process, not new
+ walls named for each paragraph.
+ 
+-## N3 — hidden-condition scan
++#### N3 — hidden-condition scan
+ 
+ The model uses a standard Borel full-algebra domain, support {0,I}, a
+ formation-conditional probability reading, iid clocks, independent marks,
+@@ -55,7 +55,7 @@
+ are defined by the algebra and fixed by every automorphism; a basis entry
+ would be an extra choice and fails the actual conjugation control.
+ 
+-## N4 — prior residual matching
++#### N4 — prior residual matching
+ 
+ | source read | its actual residual | present use and match |
+ |---|---|---|
+@@ -68,7 +68,7 @@
+ No prior negative is counted as a proof of the current all-foundation claim.
+ Source-note audit language is not an imported audit verdict.
+ 
+-## N5 — resolutions actually exercised
++#### N5 — resolutions actually exercised
+ 
+ The cached stdout of both primary runners carries the five resolution lines.
+ Element and site checks cover exact kernel values, matrix controls and the
+@@ -79,7 +79,7 @@
+ an execution of an infinite lattice. The proper-support law is not described
+ as full support merely because its domain is the full algebra.
+ 
+-## N6 — primitive and possible repair routes
++#### N6 — primitive and possible repair routes
+ 
+ Read the full current registry and all three primitive source notes, plus the
+ kinetic primitive's June9 approval and July10 route-progress policy entries.
+@@ -97,7 +97,7 @@
+ choose a conditional law rather than demand its selection from the four
+ axioms. No repair clause is adopted, and no proposed primitive is used.
+ 
+-## N7 — strongest objection
++#### N7 — strongest objection
+ 
+ You have built a coherent classical record process, not yet a complete model
+ of every supplied foundation premise. Its support is central and its time is
+@@ -114,7 +114,7 @@
+ conditional classification. The objection does not refute those mathematical
+ results or prove the extension impossible.
+ 
+-## N8 — cross-cycle echoes
++#### N8 — cross-cycle echoes
+ 
+ The repository already contains local kernel comparisons, finite-menu
+ formation constructions and conditional clock results. The July10 kinetic
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK4_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS.md
++++ docs/CUBIC_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+@@ -1,11 +1,11 @@
+-# Fourier energy and prescribed Gaussian/contact derivatives
++### Fourier energy and prescribed Gaussian/contact derivatives
+ 
+ Personal proof candidate, 2026-09-15. This extends the prescribed-contact
+ source estimate to derivatives of its complete Gaussian dressing. The scope
+ is a specified decorated signed loop on the infinite cubic kernel. Physical
+ connected graph summation and the full characteristic law remain open.
+ 
+-## 1. A direct cochain energy estimate
++#### 1. A direct cochain energy estimate
+ 
+ Use ordinary counting inner products on oriented cubic r-cells of Z^4,
+ one positive representative per orientation. In a site-based Fourier gauge,
+@@ -60,7 +60,7 @@
+ finite free-boundary relative cochains or torus zero modes. A finite Fourier
+ sum below is a discretization check only; no boundary matching is inferred.
+ 
+-## 2. Gaussian derivatives as feature-register contractions
++#### 2. Gaussian derivatives as feature-register contractions
+ 
+ Retain D(S)=product_u det S[I_u,I_u] and the complete Gaussian
+ 
+@@ -102,7 +102,7 @@
+ therefore be used for the different coincident-source boundaries of the
+ scalar three-lines proof. No commutation of one-sided maps is asserted.
+ 
+-## 3. One activity reserve absorbs all vertex degrees
++#### 3. One activity reserve absorbs all vertex degrees
+ 
+ For integer currents |A_i|<=3m_i and r_i^2>=m_i. Choose the positive
+ weight, independent of the prescribed derivative graph,
+@@ -136,7 +136,7 @@
+ therefore apply to this NEW weight as upper bounds. No limit of x or N
+ with a is taken.
+ 
+-## 4. The precise prescribed-graph source consequence
++#### 4. The precise prescribed-graph source consequence
+ 
+ Put q into the same scalar sine matrix J and let l be the protected loop
+ length. For fixed E_H,E_G and any placement of four source powers, the
+@@ -171,7 +171,7 @@
+ multiplicities and selected-state matching, is still required.
+ 
+ 
+-## Author verification and personal review scope
++#### Author verification and personal review scope
+ 
+ The cochain wedge/contraction symbols match lambda I with maximum matrix
+ error 3.79e-15. The Fourier grids reproduce the exact single-plaquette
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK4_TREE_COUNT_AND_DECORATED_CYCLE_NORMALIZATION.md
++++ docs/CUBIC_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+@@ -1,11 +1,11 @@
+-# The tree gain and the normalization it does not supply
++### The tree gain and the normalization it does not supply
+ 
+ Personal derivation, 2026-09-15. This checks how the new degree estimate
+ interacts with combinatorics. It gives an honest positive tree estimate
+ and identifies a divergent series of proposed diagram MAJORANTS. It does
+ not prove that the physical diagram series diverges, or rule out a regrouping.
+ 
+-## A tree sum can absorb the three-quarter degree factorial
++#### A tree sum can absorb the three-quarter degree factorial
+ 
+ For labelled trees on n>=2 vertices, put
+ 
+@@ -36,7 +36,7 @@
+ the single labelled-tree normalization 1/n! is actually available. This
+ is a combinatorial statement; it does not provide a physical tree expansion.
+ 
+-## A separately enumerated spanning cycle has already spent that factor
++#### A separately enumerated spanning cycle has already spent that factor
+ 
+ Fix r electric and r magnetic labelled vertices. The number of undirected
+ alternating Hamiltonian cycles is r!(r-1)!/2 for r>=2. Dividing by the
+@@ -78,7 +78,7 @@
+ normalization at the level of a valid block expansion, but supplies no such
+ block construction by itself.
+ 
+-## Verification scope
++#### Verification scope
+ 
+ The runner enumerates Prufer words and independently extracts the generating
+ series coefficient through n=7. It separately enumerates alternating cycles
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK5_CONTINUOUS_AND_BOREL_KERNEL_SUPPORT.md
++++ docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+@@ -1,4 +1,4 @@
+-# Continuous and merely Borel natural kernels have different maximal supports
++### Continuous and merely Borel natural kernels have different maximal supports
+ 
+ Personal conditional theorem, 2026-09-15. Fix a recorded-slot subset and
+ identify its inputs and output with one M2(C), acted on by simultaneous
+@@ -12,7 +12,7 @@
+ continuous and has support exactly A(eta). The following proves that this
+ support is maximal among all weakly continuous equivariant kernels.
+ 
+-## 1. Continuous natural kernels stay in the generated algebra
++#### 1. Continuous natural kernels stay in the generated algebra
+ 
+ If all inputs are central, the full-inner invariant-probability theorem
+ forces central output. If the inputs commute and one is noncentral A,
+@@ -55,7 +55,7 @@
+ the displayed support inclusion. The word Gaussian attains equality at
+ every profile; this is a sharp maximal-support result in the stated class.
+ 
+-## 2. A merely Borel kernel can escape at a triangular profile
++#### 2. A merely Borel kernel can escape at a triangular profile
+ 
+ Take A with distinct eigenvalues lambda,mu and spectral idempotents
+ P_lambda,P_mu. For another input B set T=P_lambda B P_mu. If T is nonzero,
+@@ -103,7 +103,7 @@
+ a divergent second moment. At t=0 the kernel is instead supported on
+ the diagonal algebra. Weak continuity is therefore genuinely lost.
+ 
+-## 3. Record support and scope of the escape
++#### 3. Record support and scope of the escape
+ 
+ Every old word and inverse-corner feature remains present when a new
+ neighbor record is appended. Supports are nested. K_plus therefore has
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK5_FULL_ALGEBRA_NATURALITY_AND_CENTRAL_SUPPORT.md
++++ docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+@@ -1,18 +1,18 @@
+-# Full algebraic naturality and the support of a probability law
++### Full algebraic naturality and the support of a probability law
+ 
+ Personal conditional derivation, 2026-09-15. The chosen naturality group is
+ an explicit hypothesis, not a new interpretation adopted for the axioms.
+ These statements concern ordinary Borel probability measures on the algebra
+ M2(C), not density matrices, quantum instruments, or a selected physical law.
+ 
+-## 1. A finite invariant measure cannot follow an escaping polynomial orbit
++#### 1. A finite invariant measure cannot follow an escaping polynomial orbit
+ 
+ Let T be a unipotent linear map on a finite-dimensional real vector space.
+ For every v outside Fix(T), T^n v is a vector-valued polynomial in n with
+ a nonzero positive-degree leading coefficient, so ||T^n v|| tends to infinity.
+ If a probability measure mu is invariant under T, then for every ball B_R,
+ 
+-    mu(B_R)=integral 1[B_R](T^n v) mu(dv).
++    mu(B_R)=integral 1B_R (`T^n v`) mu(dv).
+ 
+ Dominated convergence gives mu(B_R)=mu(B_R intersect Fix(T)). Increasing
+ R to infinity proves mu(Fix(T))=1. No moment, density or bounded-support
+@@ -43,7 +43,7 @@
+ located by search. This proof specializes the mechanism directly to two
+ explicit matrices and imports no general homogeneous-space theorem.
+ 
+-## 2. A one-input equivariant kernel stays in the input-generated algebra
++#### 2. A one-input equivariant kernel stays in the input-generated algebra
+ 
+ Suppose K(A,dB) obeys simultaneous inner-conjugation covariance. Fix A.
+ Then K(A,.) is invariant under every invertible matrix commuting with A.
+@@ -68,7 +68,7 @@
+ all kernels or a claim about two noncommuting inputs. Similarity/Jordan
+ coordinates only prove a coordinate-independent conclusion.
+ 
+-## 3. Independent fibers and shared fibers are different hypotheses
++#### 3. Independent fibers and shared fibers are different hypotheses
+ 
+ If a forming site's algebra can be relabeled independently of ALL its
+ neighbour algebras, its relabeling fixes the input profile. An equivariant
+@@ -92,7 +92,7 @@
+ graph. This conclusion does not assume that every possible initial state
+ is empty or central; the companion compatible-seed example escapes it.
+ 
+-## 4. Concrete controls on overbroad readings
++#### 4. Concrete controls on overbroad readings
+ 
+ Replacing all inner automorphisms by unitary conjugations changes the
+ answer: independent circular complex Gaussian matrix entries define a
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK5_RECORD_GENERATED_GAUSSIAN_KERNEL.md
++++ docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-3
+@@ -1,4 +1,4 @@
+-# A record-generated full-domain kernel with growing support
++### A record-generated full-domain kernel with growing support
+ 
+ Personal positive construction, 2026-09-15. Supply identifications of all
+ local possibility algebras with a common M2(C). Under a change of that
+@@ -7,7 +7,7 @@
+ priority process are declared model inputs. No physical matter/kinetic
+ identification, Born rule, or all-foundation witness is claimed.
+ 
+-## 1. Define the measure without a selected matrix basis or star
++#### 1. Define the measure without a selected matrix basis or star
+ 
+ For a partial six-neighbour record profile eta, take every ordered word w
+ of lengths0,1,2,3 in its recorded contents, with repetitions allowed.
+@@ -37,7 +37,7 @@
+ 1+1/4+1/16+1/64=85/64. Both laws are normalized probabilities; full support
+ on the entire algebra is not required at these central profiles.
+ 
+-## 2. Its support is exactly the algebra generated by the inputs
++#### 2. Its support is exactly the algebra generated by the inputs
+ 
+ Let W_l be the complex span of words of length at most l. If W_l=W_(l+1),
+ right multiplication by any input preserves W_l, so every longer word is
+@@ -55,7 +55,7 @@
+ incorrect-dimensional carrier is asserted. Adding records enlarges the
+ input algebra, so support grows monotonically under record append.
+ 
+-## 3. Global irreversible realization and an actual noncentral seed
++#### 3. Global irreversible realization and an actual noncentral seed
+ 
+ Use independent exponential activation times at blank sites, and at every
+ site independent Gaussian marks for all259 possible slot words. At its
+@@ -105,7 +105,7 @@
+ by a lattice symmetry and a common algebra automorphism transforms its
+ process law accordingly; no fixed seed is claimed invariant.
+ 
+-## Scope
++#### Scope
+ 
+ The independent-fiber hypothesis of the companion theorem does not apply
+ to this construction. Products of neighboring contents consume the supplied
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK5_SCOPE_AND_NO_GO_REVIEW.md
++++ docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-4
+@@ -1,4 +1,4 @@
+-# Block5 scope and adversarial no-go review
++### Block5 scope and adversarial no-go review
+ 
+ Personal N1-N8 review, 2026-09-15, under the previously pinned no-go skill
+ SHA256 9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc,
+@@ -10,7 +10,7 @@
+ is not selected by the current axiom wording, a common-algebra/seed escape
+ is explicitly constructed, and the physical kinetic realization is open.
+ 
+-## N1 — actual mechanisms and outcomes
++#### N1 — actual mechanisms and outcomes
+ 
+ | mechanism | object and intervention | outcome |
+ |---|---|---|
+@@ -26,7 +26,7 @@
+ independent physical walls. No finite route census is called exhaustive of
+ all axiom-compatible physical constructions.
+ 
+-## N2 — hypothesis relations
++#### N2 — hypothesis relations
+ 
+ Independent-fiber naturality is stronger than simultaneous naturality and
+ cannot be treated as a second independent obstruction. The compact-group
+@@ -36,7 +36,7 @@
+ both positive constructions but does not imply continuity. None of these
+ relations proves that a physical kinetic realization exists or fails.
+ 
+-## N3 — hidden-condition scan
++#### N3 — hidden-condition scan
+ 
+ All laws are Borel probabilities on algebra ELEMENTS interpreted as recorded
+ classical labels. They are not CPTP operations on unknown quantum states.
+@@ -48,7 +48,7 @@
+ degenerate profiles of each fixed occupancy stratum. The Borel escape has
+ an explicit non-tight degeneration, so no continuity is silently retained.
+ 
+-## N4 — prior-result matching
++#### N4 — prior-result matching
+ 
+ The main possibility-covariance note uses supplied compact SO(3)/O(3) or
+ cubic actions and prepared vector/menu structures. Its recorded inverse
+@@ -69,7 +69,7 @@
+ compatibility has been supplied. The existing priority-formation argument
+ provides the global method, not the kernel, seed, rate or physical carrier.
+ 
+-## N5 — resolutions exercised
++#### N5 — resolutions exercised
+ 
+ Both exact runner stdout files contain the required five resolution lines.
+ Element checks cover exact shears, matrix words and partial-inverse equations.
+@@ -80,7 +80,7 @@
+ analytic proofs, not a finite-lattice census. Initial symbolic comparison
+ failures are preserved with their exact-zero diagnoses and narrow fixes.
+ 
+-## N6 — foundation and possible repair routes
++#### N6 — foundation and possible repair routes
+ 
+ The full current minimal axioms and kinetic primitive were re-read in this
+ block; all primitive and registry sources were fully read in Block3. The
+@@ -97,7 +97,7 @@
+ escapes prevent any inference that this support analysis uniquely selects
+ a repair clause or forces a new primitive.
+ 
+-## N7 — strongest hostile reading
++#### N7 — strongest hostile reading
+ 
+ You have chosen an internal naturality group and a classical label-kernel
+ interpretation. The current framework does not explicitly impose the
+@@ -110,7 +110,7 @@
+ This objection is accepted. The claim is the exact conditional support
+ classification and the positive constructions, not a framework no-go.
+ 
+-## N8 — cross-cycle and novelty checks
++#### N8 — cross-cycle and novelty checks
+ 
+ Earlier compact-group menu and affine-channel classifications are not
+ automatically full-algebra probability classifications. Conversely the
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK6_PLANAR_LOOP_AND_QUADRATIC_REGULATOR_TEST.md
++++ docs/POSITIVE_AUXILIARY_CURRENT_LAW_AND_REGULATOR_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+@@ -1,10 +1,10 @@
+-# Planar loops test a fixed Gaussian regulator
++### Planar loops test a fixed Gaussian regulator
+ 
+ Personal conditional mathematical derivation, 2026-09-15. This rejects
+ one proposed uniform auxiliary-activity bound. It does not prove failure
+ of a field limit, of renormalization methods, or of the framework axioms.
+ 
+-## 1. Area and energy can have different orders
++#### 1. Area and energy can have different orders
+ 
+ In Z^4 let S_L be the unit integer sheet of L^2 faces in a coordinate
+ two-plane, with square side L. Its boundary current j_L=D*S_L has
+@@ -41,7 +41,7 @@
+ linearly. It is stronger for this family than the general l1-l2 energy
+ bound from Block4.
+ 
+-## 2. Match the free finite boxes, instead of importing an infinite bound
++#### 2. Match the free finite boxes, instead of importing an infinite bound
+ 
+ For a fixed finite sheet S, exhaust Z^4 by free contractible cubes
+ containing its support. Let P_R be their exact face projections, and
+@@ -66,7 +66,7 @@
+ is enough to challenge a constant asserted uniform in all free volumes.
+ No torus harmonic mode has been dropped in this argument.
+ 
+-## 3. The tested activity and the precise regulator contract
++#### 3. The tested activity and the precise regulator contract
+ 
+ Use A0,T,R from the positive auxiliary note in such a finite cube. For
+ the pair of orientations of one electric current define
+@@ -113,7 +113,7 @@
+ set of terms. Nor does it say that all polymer norms used in the
+ literature have exactly the form (3).
+ 
+-## 4. Constructive escape retained
++#### 4. Constructive escape retained
+ 
+ The exact translation eta -> xi=eta+gGBS in the companion note replaces
+ F_S by exp[-g^2 E_S/2] times a shifted bounded positive theta function.
+@@ -124,7 +124,7 @@
+ is not a wall on the physical model. The full coupled source estimate
+ remains to be supplied.
+ 
+-## 5. A separate duality-to-Gaussianity control
++#### 5. A separate duality-to-Gaussianity control
+ 
+ Even a self-dual scalar source relation need not force Gaussianity.
+ Let sigma^2=1/2, He4(z)=z^4-6z^2+3, and epsilon=1/16. The density
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK6_POSITIVE_AUXILIARY_CURRENT_REPRESENTATION.md
++++ docs/POSITIVE_AUXILIARY_CURRENT_LAW_AND_REGULATOR_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+@@ -1,4 +1,4 @@
+-# A positive auxiliary field with both clock defect sectors
++### A positive auxiliary field with both clock defect sectors
+ 
+ Personal derivation, 2026-09-15. Conditional on the supplied finite-clock
+ Villain law, this is an exact finite-volume representation. It does not
+@@ -7,7 +7,7 @@
+ main; the delta here is its resolved Gaussian/current representation,
+ including the full physical source and an explicit filling-change check.
+ 
+-## 1. Finite free complex and normalization
++#### 1. Finite free complex and normalization
+ 
+ Use the contractible free cubic complex with D=d1, B=d2, and C=d3.
+ Counting inner products and positive cell orientations are understood.
+@@ -44,7 +44,7 @@
+ gives Z_m. No assertion that its potential is uniformly convex is needed
+ for the representation.
+ 
+-## 2. Haar source identity, derived on the same finite complex
++#### 2. Haar source identity, derived on the same finite complex
+ 
+ The continuous Haar link/image flux decomposes as
+ 
+@@ -73,7 +73,7 @@
+ generating function. It is not a convolution of two real independent
+ random fields with covariances of opposite sign.
+ 
+-## 3. Impose the actual clock through conserved currents
++#### 3. Impose the actual clock through conserved currents
+ 
+ Let J={j in Z^edges:d0*j=0}. For each j choose any integer face filling
+ S_j with D*S_j=j. Fourier expansion of the link clock comb, followed by
+@@ -114,7 +114,7 @@
+ small. They are consistent with the general positive dual-lattice formula
+ already present in the repository.
+ 
+-## 4. Translate the Gaussian instead of paying a filling-area factor
++#### 4. Translate the Gaussian instead of paying a filling-area factor
+ 
+ In (6) set xi=eta+g G B S_j. Completing the square, using (1), gives
+ 
+@@ -161,7 +161,7 @@
+ proved extension and locality bounds. Its argument contains P S_j;
+ the current/field coupling has not become a local independent product.
+ 
+-## 5. Identify the resulting field: a smoothed dual clock lattice
++#### 5. Identify the resulting field: a smoothed dual clock lattice
+ 
+ The positive representation should not be mistaken for an easier theory
+ merely because its variables look different. It can be identified exactly.
+@@ -214,7 +214,7 @@
+ infrared analysis. This is a useful exact route comparison rather than
+ a new proof of Gaussianity.
+ 
+-## 6. What the representation changes and what it leaves
++#### 6. What the representation changes and what it leaves
+ 
+ The real-tilt form (6) is a candidate entry to an auxiliary Gaussian
+ expansion. The translated form (9) avoids its explicit large real tilt,
+@@ -231,7 +231,7 @@
+ steps. No new axiom, phase assertion, or independent retained grade is
+ introduced here.
+ 
+-## Finite author checks
++#### Finite author checks
+ 
+ The checker constructs a free three-cube, with its five independent
+ integer current coordinates, as a finite cochain normalization challenge.
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK6_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/POSITIVE_AUXILIARY_CURRENT_LAW_AND_REGULATOR_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-3
+@@ -1,11 +1,11 @@
+-# Block6 route comparison and scoped negative review
++### Block6 route comparison and scoped negative review
+ 
+ Personal review only, 2026-09-15. The two mathematical notes and their
+ runner were read in full. No independent audit or effective retained
+ grade is represented. The broad claim that the model or axioms cannot
+ work is **FAIL**. The narrow fixed-regulator counterexample remains.
+ 
+-## N1 — Materially different mechanisms considered
++#### N1 — Materially different mechanisms considered
+ 
+ | Mechanism | Work actually done | Disposition |
+ |---|---|---|
+@@ -21,7 +21,7 @@
+ The literature route is not described as an executed finite-clock proof.
+ No route has been marked ruled out by prior retained authority.
+ 
+-## N2 — Dependence and wall count
++#### N2 — Dependence and wall count
+ 
+ The real-tilt regulator failure and the successful current-dependent
+ translation concern the same representation. The latter removes the
+@@ -29,7 +29,7 @@
+ negative claim. The dual identification is an exact algebraic consequence,
+ not a second obstruction. Asserted independent physical-wall count: zero.
+ 
+-## N3 — Hidden premises
++#### N3 — Hidden premises
+ 
+ Finite free contractible complex, counting metric, specified Villain law,
+ integer N, full image lattice, matched inverse on ran B, c<1/16 and the
+@@ -38,7 +38,7 @@
+ boundary data on the dual are retained. The auxiliary Gaussian is not an
+ assumed physical carrier or physical clock. No axiom is amended.
+ 
+-## N4 — Residual matching
++#### N4 — Residual matching
+ 
+ The source check compares actual finite clock/image sums with a positive
+ Gaussian/current integral and with an independently enumerated dual lattice.
+@@ -54,7 +54,7 @@
+ non-Gaussianity. The scalar self-duality example refutes only a proposed
+ logical implication, not a gauge theory.
+ 
+-## N5 — Resolution and rhetoric
++#### N5 — Resolution and rhetoric
+ 
+ The runner prints per_element, per_site, per_mode, per_block and lattice_wide
+ scope lines. Initial finite cube calculations passed before a structural
+@@ -67,7 +67,7 @@
+ the dual lattice and its independent-noise law. Its source, covariance and
+ fourth-cumulant identities pass. No result is labeled an infinite simulation.
+ 
+-## N6 — Partial closure and positive escapes
++#### N6 — Partial closure and positive escapes
+ 
+ The translated positive representation is explicit and survives. A
+ current-dependent regulator, blocked renormalization, a suitable operator
+@@ -77,7 +77,7 @@
+ Further work should resolve one of these remaining mechanisms or turn to
+ another physical bottleneck, rather than recount Poisson duality as progress.
+ 
+-## N7 — Strongest objection
++#### N7 — Strongest objection
+ 
+ A reviewer could correctly object that Gaussian smoothing and duality were
+ already known, and that a poor fixed regulator says nothing decisive about
+@@ -86,7 +86,7 @@
+ translation, the identification with dual smoothing, and a genuine planar
+ counterexample to the tested norm. No axiom-level wall is inferred.
+ 
+-## N8 — Prior comparison
++#### N8 — Prior comparison
+ 
+ Main's clock smoothing and exact dual covariance sources were re-read at
+ the current source checkout; remote main remains2ed54cb83a4cb6b336e7053e19c8010d5d2930d8.
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK7_NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT.md
++++ docs/NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+@@ -1,4 +1,4 @@
+-# Native charge motion and long-wavelength spectral weight
++### Native charge motion and long-wavelength spectral weight
+ 
+ Personal derivation, 2026-09-15. Status: proposed conditional finite-volume
+ theorems, with explicit uniform constants. The Hamiltonian, low-charge
+@@ -6,7 +6,7 @@
+ Hamiltonian from the minimal axioms, an independently audited result, a
+ physical mass, or a long-time transport theorem.
+ 
+-## 1. Scope and inputs
++#### 1. Scope and inputs
+ 
+ Use an even periodic cubic graph with each extent at least four. On edge
+ bits n_e, let G_v=sum_(e incident v)n_e-3, epsilon_v=(-1)^sum(v),
+@@ -39,7 +39,7 @@
+ None of the arguments below needs a proof that the entire hopping graph
+ is connected, or uniqueness of its lowest eigenvector.
+ 
+-## 2. An exact local escape coefficient
++#### 2. An exact local escape coefficient
+ 
+ Let Pi_x project onto p=x. For any unit vector phi with Pi_x phi=phi,
+ including arbitrary coherent superpositions of negative positions and
+@@ -61,7 +61,7 @@
+ remainder using ||H_ring|| would grow with the volume. The next step avoids
+ that problem through the actual native commutation relations.
+ 
+-## 3. A volume-independent commutator bound
++#### 3. A volume-independent commutator bound
+ 
+ In this sector,
+ 
+@@ -124,7 +124,7 @@
+ has been established. Equation (4) does not imply motion at arbitrarily
+ late times or at distances growing without bound.
+ 
+-## 4. A symmetric nonnegative ground state without connectivity
++#### 4. A symmetric nonnegative ground state without connectivity
+ 
+ For the rest of this note take an L by L by L torus, even L>=4, and
+ uniform J_p=J>=0. In the signed-hole frame H has real nonpositive
+@@ -157,7 +157,7 @@
+ Ordinary bit permutations are not asserted to preserve all native ordered
+ Pauli phases by themselves.
+ 
+-## 5. Ground-state hopping strength
++#### 5. Ground-state hopping strength
+ 
+ For completeness the parent uniform trial bound has a short counting proof.
+ Let A0 be configurations where the adjacent charges share an eligible
+@@ -186,7 +186,7 @@
+ 
+     18/5 <= c_+ <=4.                                (7)
+ 
+-## 6. Exact momentum trial and its spectral measure
++#### 6. Exact momentum trial and its spectral measure
+ 
+ For k in (2pi/L) Z_L^3, k not zero modulo 2pi, put
+ 
+@@ -232,7 +232,7 @@
+ pole, or a nonzero curvature of the lowest band. In particular the LOWER
+ bound in (9) is a lower bound on a spectral MEAN, not on E2(k)-E2.
+ 
+-## 7. A propagation upper bound independent of the ring coupling
++#### 7. A propagation upper bound independent of the ring coupling
+ 
+ For any initial positive position x, let R(n) be graph distance from x to
+ p(n) on the torus. Every allowed positive hop changes R by at most one;
+@@ -269,7 +269,7 @@
+ J_p, as in Sections2-3. The signed-hole frame is diagonal and therefore
+ preserves every charge-position probability in the native representation.
+ 
+-## 8. Outstanding matter obligations
++#### 8. Outstanding matter obligations
+ 
+ The supplied model has unavoidable short-time charge motion and a
+ controlled long-wavelength spectral trial. The next substantive question
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK8_NATIVE_TWISTS_AND_WINDING_CONDUCTANCE.md
++++ docs/FINITE_NATIVE_WINDING_CURVATURE_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+@@ -1,4 +1,4 @@
+-# Which boundary twist measures native pair motion?
++### Which boundary twist measures native pair motion?
+ 
+ Personal derivation, 2026-09-15. Proposed conditional finite-volume
+ identities for the same supplied native low-charge Hamiltonian as Block7.
+@@ -6,7 +6,7 @@
+ a physical mass or an obstruction to mobile matter. Independent review
+ is pending. No new action, axiom or native physical identification is used.
+ 
+-## 1. Electric polarization is a configuration observable
++#### 1. Electric polarization is a configuration observable
+ 
+ Give each cubic edge the positive-coordinate orientation v->v+e_a and put
+ 
+@@ -29,7 +29,7 @@
+ commutes with P_a. These assertions use the alternating gate. They are
+ not made for arbitrary ungated face-bit flips.
+ 
+-## 2. Full two-species twist identity
++#### 2. Full two-species twist identity
+ 
+ Fix one axis of length L. Define H(phi_+,phi_-) by multiplying a positive
+ charge hop of physical step sigma by exp(i phi_+ sigma/L), and a negative
+@@ -56,7 +56,7 @@
+ Taking this flat finite-volume energy as a proof of immobility would be an
+ incorrect physical inference.
+ 
+-## 3. An explicit full-configuration winding cycle
++#### 3. An explicit full-configuration winding cycle
+ 
+ The sum twist has a different behavior. Start with the polarized ice
+ configuration E_(v,b)=+1 on every positive-coordinate edge, all axes b.
+@@ -87,7 +87,7 @@
+ the configuration graph. This construction applies to every even L>=4;
+ it is not a path in a truncated or auxiliary particle graph.
+ 
+-## 4. Strict finite-volume response to the sum twist
++#### 4. Strict finite-volume response to the sum twist
+ 
+ For this section use the conditional full D=2 connectivity theorem in
+ NATIVE_GLOBAL_CHARGE_CONNECTIVITY_AND_EXCHANGE_NOTE_2026-09-08.md, together
+@@ -111,7 +111,7 @@
+ holds there. This identifies the exact finite-volume minima, without a
+ continuum dispersion claim.
+ 
+-## 5. Curvature as a weighted configuration-graph problem
++#### 5. Curvature as a weighted configuration-graph problem
+ 
+ Orient each unordered off-diagonal configuration edge e=(x,y) arbitrarily.
+ Write -a_e for its untwisted matrix element, a_e>0, and define
+@@ -173,7 +173,7 @@
+ the response. Treating this Hessian as two independent free-particle
+ masses would therefore be unjustified even though D_L>0.
+ 
+-## 6. Exact interpretation through the ground-state Markov process
++#### 6. Exact interpretation through the ground-state Markov process
+ 
+ This section concerns an auxiliary imaginary-time process, not a new
+ physical stochastic dynamics. Its transition rates are
+@@ -223,7 +223,7 @@
+ remain uniform when infinite volume is taken before long time. The order
+ of limits is a substantive transport obligation.
+ 
+-## 7. What the next proof would have to control
++#### 7. What the next proof would have to control
+ 
+ The sharpened transport question is whether the weighted problem (7) has
+ a volume-uniform lower bound after multiplying by L^2, and whether its
+@@ -236,4 +236,4 @@
+ The exact flat difference twist removes one misleading mass diagnostic.
+ The nontrivial sum twist and Block7 motion bounds are explicit surviving
+ routes. No model-wide or axiom-level negative conclusion follows.
+-See the committed [route and negative-claim review](BLOCK8_ROUTE_AND_NO_GO_REVIEW.md).
++See the committed route and negative-claim review (`BLOCK8_ROUTE_AND_NO_GO_REVIEW.md`).
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK8_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/FINITE_NATIVE_WINDING_CURVATURE_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+@@ -1,12 +1,12 @@
+-# Native-motion route review and negative-claim discipline
++### Native-motion route review and negative-claim discipline
+ 
+ Personal review, 2026-09-15. Read with
+-[the twist derivation](BLOCK8_NATIVE_TWISTS_AND_WINDING_CONDUCTANCE.md).
++the twist derivation (`BLOCK8_NATIVE_TWISTS_AND_WINDING_CONDUCTANCE.md`).
+ Broad conclusion that native charges cannot move or the axioms must change:
+ **FAIL**. The exact flatness of one supplied twist is a finite operator
+ identity with explicit positive alternatives, not a physical no-go.
+ 
+-## N1 — Actual alternatives and their outcomes
++#### N1 — Actual alternatives and their outcomes
+ 
+ | Route | Mechanism and work performed | Honest disposition |
+ |---|---|---|
+@@ -22,7 +22,7 @@
+ authority. The five-family procedural count supplies no exhaustiveness
+ argument. Positive surviving routes defeat the proposed broad negative.
+ 
+-## N2 — Dependence
++#### N2 — Dependence
+ 
+ Flat signed-current twist, bounded electric polarization, and vanishing
+ fixed-volume difference-winding variance are consequences of the same
+@@ -31,7 +31,7 @@
+ not asserted to be independent conditions; their implication relations
+ remain unresolved. Independent physical-wall count: zero.
+ 
+-## N3 — Premises and hidden-condition scan
++#### N3 — Premises and hidden-condition scan
+ 
+ The low-charge gate, alternating rings, supplied couplings and full native
+ carrier are explicit. Finite twist flatness does not need Perron positivity.
+@@ -42,7 +42,7 @@
+ unknown ground vector, not a uniform surrogate. Its time is not identified
+ with formation time or the real-time unitary motion.
+ 
+-## N4 — Matching
++#### N4 — Matching
+ 
+ No prior no-go is cited as a witness. The native closed tapes and the
+ polarization increment address exactly the phases in the displayed
+@@ -51,7 +51,7 @@
+ counterexample. Block7's short-time theorem concerns the same supplied
+ Hamiltonian and explicitly survives.
+ 
+-## N5 — Resolution
++#### N5 — Resolution
+ 
+ Per hop: the signed polarization increment is checked on108 actual native
+ hops. Per site/configuration: every global degree equation is checked
+@@ -64,7 +64,7 @@
+ tapes cover L4,L6,L8. No infinite-volume stiffness is executed or inferred.
+ The runner records these same scope distinctions.
+ 
+-## N6 — Partial closure
++#### N6 — Partial closure
+ 
+ Sum-flux curvature, charge-position spectral measures, distributed winding
+ flows, and a correctly ordered infinite-volume response remain viable.
+@@ -72,7 +72,7 @@
+ appropriate observable; this requires no axiom change. The approved
+ structural kinetic-isotropy primitive is not declared absent or refuted.
+ 
+-## N7 — Strongest objection
++#### N7 — Strongest objection
+ 
+ Finite systems often have gauge-removable twists, so zero curvature need
+ not reveal new physics. Correct: the useful result here is identifying
+@@ -81,7 +81,7 @@
+ The positive curvature has no uniform lower bound yet. Neither fact is
+ promoted to a particle mass or a mobility obstruction.
+ 
+-## N8 — Prior comparison
++#### N8 — Prior comparison
+ 
+ The September8 native notes already establish support, phase structure,
+ energy bounds and connectivity. Searches of those notes find no existing
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK9_POLARIZED_CHARGED_SECTOR_AND_FLAT_THRESHOLD.md
++++ docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+@@ -1,4 +1,4 @@
+-# An exact polarized charged sector and its spectral threshold
++### An exact polarized charged sector and its spectral threshold
+ 
+ Personal derivation, 2026-09-15. PROVISIONAL; personal derivation and bounded checks completed.
+ No independent scientific review or retained-status decision.
+@@ -14,7 +14,7 @@
+ positive pair-creation energy and actual charge motion do not, by themselves,
+ identify an ordinary massive lowest particle band in this representation.
+ 
+-## 1. The boundary representation and complete configuration classification
++#### 1. The boundary representation and complete configuration classification
+ 
+ On Z^3 use positive-coordinate edges and
+ 
+@@ -47,7 +47,7 @@
+ edges. The three letters encode existing physical edges, not an added
+ three-state site degree of freedom.
+ 
+-## 2. Native phases and the exact word Hamiltonian
++#### 2. Native phases and the exact word Hamiltonian
+ 
+ A positive charge can append any letter at the right end, or delete the
+ last letter when n>=2. A negative charge can prepend any letter i at the
+@@ -98,7 +98,7 @@
+ The reference background has no flippable faces, so no infinite background
+ ring-energy subtraction has been hidden.
+ 
+-## 3. Exact spectral floor and absence of a threshold eigenvector
++#### 3. Exact spectral floor and absence of a threshold eigenvector
+ 
+ Orthogonality of the first/last-letter ranges gives
+ 
+@@ -131,7 +131,7 @@
+ every individual ring term annihilates the uniform word vector at fixed
+ anchor and length. Momentum statements below use uniform J.
+ 
+-## 4. Momentum fibers and an exact J=0 reducing subspace
++#### 4. Momentum fibers and an exact J=0 reducing subspace
+ 
+ Fourier transform the anchor with convention sum_m exp(-ik.m)f(m).
+ Then
+@@ -161,7 +161,7 @@
+ the norm bound, this is the entire spectrum of A(k), for every k, at J=0.
+ This subspace need not reduce K; the next argument is required for J>0.
+ 
+-## 5. A slow word texture proves the same threshold for every fixed J
++#### 5. A slow word texture proves the same threshold for every fixed J
+ 
+ Use the same u,v,w and define a unit curve z:[0,1]->C^3 by
+ 
+@@ -221,7 +221,7 @@
+ criterion, show the threshold lies in essential spectrum. No infinite
+ matrix truncation is used to establish (16).
+ 
+-## 6. Physical scope and comparison with periodic ground energies
++#### 6. Physical scope and comparison with periodic ground energies
+ 
+ For U>2sqrt(3)lambda this boundary sector has positive pair energy above
+ the zero-energy polarized neutral reference, despite its flat momentum
+@@ -251,7 +251,7 @@
+ law, or the framework axioms.
+ 
+ 
+-## 7. Provenance, checks and negative-claim discipline
++#### 7. Provenance, checks and negative-claim discipline
+ 
+ The conditional native inputs are the September8 RK charge stability,
+ global charge connectivity/exchange, low-charge U1 dictionary and dynamical
+@@ -278,6 +278,6 @@
+ analytic formula was weakened. A nonhorizontal phase curve is explicitly
+ rejected: its creation overlap stays a fixed distance from1.
+ 
+-See [the N1-N8 scope review](BLOCK9_ROUTE_AND_NO_GO_REVIEW.md).
++See the N1-N8 scope review (`BLOCK9_ROUTE_AND_NO_GO_REVIEW.md`).
+ The only excluded object is an eigenvector at the stated sector's spectral
+ threshold. All-vacuum, all-law and axiom-level negative conclusions fail.
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK9_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+@@ -1,11 +1,11 @@
+-# Polarized-sector result: personal N1-N8 scope review
++### Polarized-sector result: personal N1-N8 scope review
+ 
+-Read with [the word-sector derivation](BLOCK9_POLARIZED_CHARGED_SECTOR_AND_FLAT_THRESHOLD.md).
++Read with the word-sector derivation (`BLOCK9_POLARIZED_CHARGED_SECTOR_AND_FLAT_THRESHOLD.md`).
+ The theorem excludes a threshold eigenvector for one explicit representation.
+ A broad claim that the framework cannot support particles is **FAIL**.
+ This is an author review, not independent validation or an audit verdict.
+ 
+-## N1 — Real routes examined
++#### N1 — Real routes examined
+ 
+ | Route family | Actual work | Disposition |
+ |---|---|---|
+@@ -20,7 +20,7 @@
+ and trial arguments are complementary proof components, not independent
+ physical walls. The route count does not prove an exhaustive physical no-go.
+ 
+-## N2 — Dependence
++#### N2 — Dependence
+ 
+ The flat floor, long-string minimizing sequence and absence of a bottom
+ particle eigenvector concern one operator. They are not three walls.
+@@ -30,7 +30,7 @@
+ have no proved implication in either direction here; relation unresolved.
+ Independent axiom-wall count: zero.
+ 
+-## N3 — Hidden assumptions
++#### N3 — Hidden assumptions
+ 
+ Background means the explicitly supplied all-positive electric reference,
+ not a selected vacuum. Finite excitation means finitely many changed edges.
+@@ -41,7 +41,7 @@
+ provisional signed-hole parent; no infinite filled CAR product is assumed.
+ No physical time normalization or kinetic-isotropy closure is supplied.
+ 
+-## N4 — Exact witness matching
++#### N4 — Exact witness matching
+ 
+ | Input | Used residual | Match |
+ |---|---|---|
+@@ -51,7 +51,7 @@
+ 
+ No literature no-go is used as a substitute for the displayed proof.
+ 
+-## N5 — Resolution audit
++#### N5 — Resolution audit
+ 
+ Per edge: actual bit flip and native phase checked, including all incident
+ stars. Per configuration: analytic classification covers all finite changes;
+@@ -63,7 +63,7 @@
+ periodic local limits, a full interacting field theory or axioms. The runner's
+ limits state these distinctions and no absence of all spectral poles is claimed.
+ 
+-## N6 — Surviving partial closure
++#### N6 — Surviving partial closure
+ 
+ A cyclic subspace selected by a local pair source can have a different
+ spectral edge or internal eigenvalues. Periodic and nonpolarized neutral
+@@ -71,7 +71,7 @@
+ response is legitimate conditional science, not automatically an axiom
+ revision. Existing approved primitives have not been invalidated.
+ 
+-## N7 — Strongest objection
++#### N7 — Strongest objection
+ 
+ A hostile reviewer should object that the polarized state is an extreme
+ boundary choice and that an essential threshold need not be visible to a
+@@ -82,7 +82,7 @@
+ backgrounds. The note therefore makes no claim against all physical
+ particles or against the framework.
+ 
+-## N8 — Prior comparison and novelty
++#### N8 — Prior comparison and novelty
+ 
+ The native parent notes establish gap bounds and finite connectivity, not
+ the complete polarized word representation with positive-ring slow textures.
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK10_LOCAL_SOURCE_SPECTRA_AND_DARK_THRESHOLD.md
++++ docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+@@ -1,14 +1,14 @@
+-# Local pair spectroscopy and a threshold invisible to finite strings
++### Local pair spectroscopy and a threshold invisible to finite strings
+ 
+ Personal derivation, 2026-09-15. PROVISIONAL; personal analytic review and bounded checks completed.
+ No independent scientific audit or retained-status decision.
+-This extends [the exact polarized word sector](BLOCK9_POLARIZED_CHARGED_SECTOR_AND_FLAT_THRESHOLD.md)
++This extends the exact polarized word sector (`BLOCK9_POLARIZED_CHARGED_SECTOR_AND_FLAT_THRESHOLD.md`)
+ for the same supplied native Hamiltonian and boundary representation.
+ No physical vacuum or new primitive is selected. Put lambda=|t|>0,
+ a=sqrt(3)lambda and E_pol=2U-4a. The result concerns actual local sources,
+ not only the infimum of the entire charged Hilbert space.
+ 
+-## 1. An explicit phase frame and a local translation-covariant source
++#### 1. An explicit phase frame and a local translation-covariant source
+ 
+ With lexicographic vertex ordering, the native phase frame in Block9 has
+ the particularly simple closed form
+@@ -60,7 +60,7 @@
+ The bit complement and Z action are essential; a naive bare permutation
+ of the native Pauli variables is not substituted for (3).
+ 
+-## 2. A conserved internal count on a diagonal momentum line
++#### 2. A conserved internal count on a diagonal momentum line
+ 
+ At k=(theta,theta,theta), the left creation vector is e^(i theta)u.
+ Choose any orthonormal w1,w2 spanning u-perp and rotate each word factor
+@@ -87,7 +87,7 @@
+ bound. There is no added physical marker degree of freedom: this is a
+ unitary change of basis within the existing word space.
+ 
+-## 3. A uniform lower bound within every finite-M sector
++#### 3. A uniform lower bound within every finite-M sector
+ 
+ Write f(x) for the coefficients of a finite-support vector in (5), and
+ let I_j x mean inserting one extra u in run j. The positive isometry
+@@ -122,7 +122,7 @@
+ used in (8). The bound is uniform in word length at each fixed M, but
+ tends to zero as M tends to infinity, in agreement with Block9.
+ 
+-## 4. Exact local symmetric-source spectrum
++#### 4. Exact local symmetric-source spectrum
+ 
+ The M=0 subspace is spanned by |n>=u^(tensor n), n>=1. Every ring term
+ annihilates it. Its Hamiltonian, for every uniform J>=0, is
+@@ -158,7 +158,7 @@
+ exactly from the native cubic RK operator, without their perturbative
+ Hamiltonian or a string-tension term.
+ 
+-## 5. Every bounded-length source misses an interval above the full floor
++#### 5. Every bounded-length source misses an interval above the full floor
+ 
+ Let psi_theta be any fiber vector supported on word lengths1,...,N.
+ Its M components lie in0,...,N. Since delta_M decreases with M, equations
+@@ -181,7 +181,7 @@
+ union of finite-word source vectors is dense, which is fully compatible
+ with these source-dependent gaps.
+ 
+-## 6. Zero-ring control and near-line leakage
++#### 6. Zero-ring control and near-line leakage
+ 
+ At J=0, a one-letter w in u-perp generates the reducing two-half-line
+ space u^r w u^s. The left phase can be gauged away. Its source spectral
+@@ -201,7 +201,7 @@
+     eta=2lambda sqrt(sum_i |e^(ik_i)-e^(i theta)|^2).
+ 
+ Only left creation changes, so ||H(k)-H(k0)||<=eta. Put delta=delta_N
+-and Q=1_[E_pol,E_pol+delta/2](H(k)). For P=1_(M<=N), the spectra of
++and Q=1_E_pol,E_pol+delta/2 (`H(k`)). For P=1_(M<=N), the spectra of
+ H(k0)|_P and H(k)|_Q are separated by at least delta/2. The Sylvester
+ identity for X=PQ has right side -P[H(k)-H(k0)]Q. Its convergent Laplace
+ integral gives ||PQ||<=2eta/delta. Consequently for psi=Ppsi,
+@@ -212,7 +212,7 @@
+ gap for the whole fiber. It requires theta not0 and J>0 so delta>0.
+ No analytic continuation of an isolated particle pole is asserted.
+ 
+-## 7. Scope and remaining work
++#### 7. Scope and remaining work
+ 
+ The native background, J,lambda and translation symmetry are supplied.
+ Spectral measure, spectral infimum, a momentum-special atom and an isolated
+@@ -231,4 +231,4 @@
+ sine-quadrature controls. Native local operator definitions are explicitly
+ reused from Block9, so this is not an independent implementation or review.
+ No numerical extrapolation establishes the infinite statements.
+-See [the N1-N8 review](BLOCK10_ROUTE_AND_NO_GO_REVIEW.md).
++See the N1-N8 review (`BLOCK10_ROUTE_AND_NO_GO_REVIEW.md`).
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK10_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+@@ -1,11 +1,11 @@
+-# Local-source spectroscopy: N1-N8 personal review
++### Local-source spectroscopy: N1-N8 personal review
+ 
+-Companion to [the exact source derivation](BLOCK10_LOCAL_SOURCE_SPECTRA_AND_DARK_THRESHOLD.md).
++Companion to the exact source derivation (`BLOCK10_LOCAL_SOURCE_SPECTRA_AND_DARK_THRESHOLD.md`).
+ The negative statement is a source-specific spectral interval in one
+ boundary representation on a specified momentum line. A general claim
+ that there are no measurable excitations or no particles is **FAIL**.
+ 
+-## N1 — Real mechanisms examined
++#### N1 — Real mechanisms examined
+ 
+ | Family | Work performed | Status |
+ |---|---|---|
+@@ -20,7 +20,7 @@
+ not establish a universal no-go. None is declared ruled out by retained
+ authority; the broad claim fails because positive alternatives survive.
+ 
+-## N2 — Dependence and scope
++#### N2 — Dependence and scope
+ 
+ Finite-M gap, finite-source dark interval and growing color count are
+ consequences of the same telescoping bound. They are one mechanism, not
+@@ -28,7 +28,7 @@
+ subspace result. The broad vacuum-selection and full-field obligations
+ have unresolved implications; no independent physical-wall count is made.
+ 
+-## N3 — Hidden hypotheses
++#### N3 — Hidden hypotheses
+ 
+ Polarized finite excitation is supplied. J>0, lambda>0 and nonzero diagonal
+ momentum are explicit for the dark interval. The bound depends on source
+@@ -39,7 +39,7 @@
+ new physical particle species. No approved primitive or physical clock is
+ replaced by this conditional Hamiltonian analysis.
+ 
+-## N4 — Witness matching
++#### N4 — Witness matching
+ 
+ Block9 supplies the exact word Hamiltonian and its whole-fiber infimum.
+ The present native parity calculation makes its phase frame local-source
+@@ -47,7 +47,7 @@
+ against local spectral response. The2012 string paper supplies context,
+ not a theorem imported onto this carrier. No mismatched no-go is cited.
+ 
+-## N5 — Resolution audit
++#### N5 — Resolution audit
+ 
+ Per edge:5760 native endpoint amplitudes checked against the parity formula.
+ Per source: a literal three-edge operator is matched to |1>; arbitrary
+@@ -61,7 +61,7 @@
+ atom. The claim is not extended to all momenta, all sources uniformly,
+ all vacua or all physical particles.
+ 
+-## N6 — Surviving closure paths
++#### N6 — Surviving closure paths
+ 
+ At theta=0 the symmetric source reaches the full threshold. At J=0 an
+ orthogonal local source reaches it at every diagonal momentum. At positive
+@@ -70,7 +70,7 @@
+ backgrounds and periodic states remain untouched. None of these requires
+ an axiom revision; deriving a physical vacuum is a distinct task.
+ 
+-## N7 — Strongest objection
++#### N7 — Strongest objection
+ 
+ The apparent invisibility may just be a symmetry selection rule in an
+ extreme boundary state, so it cannot diagnose a failed particle theory.
+@@ -81,7 +81,7 @@
+ should be used to reject unqualified inference from a whole-sector floor,
+ not to reject the framework.
+ 
+-## N8 — Prior comparison
++#### N8 — Prior comparison
+ 
+ Block9 established the all-momentum full-sector threshold but explicitly
+ left local-source weight open. This block settles a local channel exactly
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK11_QUARTET_METRIC_FLOW_AND_POLARIZATION.md
++++ docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+@@ -1,4 +1,4 @@
+-# Metric contrasts and photon polarization in the supplied Weyl quartet
++### Metric contrasts and photon polarization in the supplied Weyl quartet
+ 
+ Personal derivation, 2026-09-15. PROVISIONAL; personal analytic review and bounded checks completed.
+ No independent scientific audit or retained-status decision.
+@@ -7,7 +7,7 @@
+ coefficients newly present on main083a58b4e7faca5839a7b31fab553f6fa1f2c254.
+ It does not assume that equality of bare metrics is protected by T and Mz.
+ 
+-## 1. Exact inputs and the question being answered
++#### 1. Exact inputs and the question being answered
+ 
+ The supplied free carrier is
+  docs/LOCAL_HALL_FREE_MIXED_WEYL_QUARTET_AND_COMMON_METRIC_BOUNDED_THEOREM_NOTE_2026-09-13.md.
+@@ -53,7 +53,7 @@
+ coframe tensor is det(E)^(-1)(E^T E) wedge(E^T E). Those two ingredients
+ fix the remaining coefficients, including normalization.
+ 
+-## 2. Count the actual Weyl nodes instead of doubling every self-energy
++#### 2. Count the actual Weyl nodes instead of doubling every self-energy
+ 
+ Let i label two-component cones, and let n_i=1/2 for each such cone.
+ For an optional general Dirac block n_i=1. Its charge is e q_i. The
+@@ -85,7 +85,7 @@
+ Thus summing the four small-momentum annuli gives(3); hard finite terms are
+ not set to zero by this argument. The domain stays away from a node merger.
+ 
+-## 3. Exact consensus statement for these linear equations
++#### 3. Exact consensus statement for these linear equations
+ 
+ Let N=sum_i n_i, e0^2>0, and take every q_i nonzero. Define
+ 
+@@ -130,7 +130,7 @@
+ A single-metric initial simplification would erase precisely these slow modes.
+ The source's one-Dirac result is recovered at N=1 with no contrasts.
+ 
+-## 4. Photon polarization records the variance of matter metrics
++#### 4. Photon polarization records the variance of matter metrics
+ 
+ Now restrict the initial relative coframes to small real trace-free shears,
+ with common initial photon metric set to zero by one coordinate choice.
+@@ -165,7 +165,7 @@
+ where V_Delta=N^(-1)sum n_i Delta_i0^2. The initial photon has weight1
+ and C=0. Substitution into(8) gives
+ 
+- W = [2N/(N+4)](S0^2)_tf [z^-1-z^(-(2+4/N))]
++ W = 2N/(N+4) (`S0^2`)_tf [z^-1-z^(-(2+4/N))]
+        +2(V_Delta)_tf z^-1 int_1^z t^(-4/N)dt
+        +O(C^3).                                   (9)
+ 
+@@ -188,7 +188,7 @@
+  dW/dz=-W/z+2[R^2+N^(-1)sum n_i Delta_i^2]_tf/z.
+ This is a second derivation of the variance result, not independent science.
+ 
+-## 5. Match the specific allowed mixing-angle perturbation
++#### 5. Match the specific allowed mixing-angle perturbation
+ 
+ Use the quartet parent's parameters0<b<pi/2,1/2<zeta<1,
+ 0<mu^2<1-zeta^2. Set R_b=sqrt(1-mu^2),
+@@ -228,7 +228,7 @@
+ The same formal flow tends toward a common metric as z grows, but the
+ birefringent transient decays only as1/z and cannot simply be omitted.
+ 
+-## 6. What this does and does not accomplish
++#### 6. What this does and does not accomplish
+ 
+ The actual quartet's bare metric mismatch is not, by itself, an axiom wall:
+ its stated parity-even one-loop equations have attractive inter-node modes.
+@@ -245,7 +245,7 @@
+ contrast and its second-order photon variance to the supplied loop action.
+ 
+ 
+-## 7. Verification and scope review
++#### 7. Verification and scope review
+ 
+ The paired checker recomputes the parameter coefficients, the Weyl/Dirac
+ trace count, a24-cell angular control of the vanishing linear W insertion,
+@@ -260,4 +260,4 @@
+ A neutral cone and an isotropic contrast-variance multiplet are explicit
+ exceptions. These are finite checks of a formal derivation, not simulations
+ of a quantum gauge ground state or independent scientific review.
+-See [the N1-N8 scope review](BLOCK11_ROUTE_AND_NO_GO_REVIEW.md).
++See the N1-N8 scope review (`BLOCK11_ROUTE_AND_NO_GO_REVIEW.md`).
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK11_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+@@ -1,11 +1,11 @@
+-# Quartet metric flow: personal N1-N8 scope review
++### Quartet metric flow: personal N1-N8 scope review
+ 
+-Read with [the formal derivation](BLOCK11_QUARTET_METRIC_FLOW_AND_POLARIZATION.md).
++Read with the formal derivation (`BLOCK11_QUARTET_METRIC_FLOW_AND_POLARIZATION.md`).
+ Broad claims that the framework forces unequal speeds, or already proves a
+ physical common light cone, both fail. The claim is the displayed formal
+ one-loop flow for a supplied Hall-free action and its specified tensor sector.
+ 
+-## N1 — Routes actually examined
++#### N1 — Routes actually examined
+ 
+ | Family | Actual work | Disposition |
+ |---|---|---|
+@@ -19,7 +19,7 @@
+ No family is declared a universal failed route. Their count is not an
+ exhaustiveness theorem, and no retained-authority no-go is inherited.
+ 
+-## N2 — Dependence
++#### N2 — Dependence
+ 
+ Mean attraction, contrast attraction and photon normalization share one
+ supplied loop action. They are not independent physical walls. Generated
+@@ -28,7 +28,7 @@
+ calculation; their exact implication structure is not proved here. No
+ independent axiom deficit is counted.
+ 
+-## N3 — Premises
++#### N3 — Premises
+ 
+ Supplied CAR, Hamiltonian time, filling, nonmerging quartet, unbroken T,
+ noncompact massless photon, weak coupling, gauge-preserving prescription,
+@@ -40,7 +40,7 @@
+ No hard finite matching term or additional marginal operator is discarded
+ as a physical fact. e0=0 and zero charges are stated exceptions.
+ 
+-## N4 — Matching source claims
++#### N4 — Matching source claims
+ 
+ The June18 exchange note proves a supplied two-speed matrix, not the actual
+ quartet coefficients. The new Hall/cone source provides the explicit
+@@ -50,7 +50,7 @@
+ Coulomb phase. The Anber-Donoghue paper is context and a coefficient
+ comparator, not an all-orders or finite-qubit theorem.
+ 
+-## N5 — Resolution
++#### N5 — Resolution
+ 
+ Per matrix entry: Clifford and parameter coefficients are checked. Per node:
+ the actual four-band velocities are projected at all four nodes. Per sector:
+@@ -62,7 +62,7 @@
+ formulas solve the truncated equations only; omitted terms have no uniform
+ all-orders remainder certificate.
+ 
+-## N6 — Surviving routes
++#### N6 — Surviving routes
+ 
+ Exact bare alignment, additional symmetries, isotropic contrast variance,
+ nonperturbative phase control and other interactions all remain possible.
+@@ -71,7 +71,7 @@
+ sufficiency unresolved. Existing approved kinetic isotropy is neither
+ replaced nor promoted into a complete interacting Lorentz theorem.
+ 
+-## N7 — Strongest objection
++#### N7 — Strongest objection
+ 
+ A reviewer should object that a formal RG flow can be invalidated by a
+ missing phase, an allowed mass/order, hard matching, or neglected marginal
+@@ -80,7 +80,7 @@
+ The present result identifies the slow contrast and polarization modes
+ that such a theorem must control; it cannot substitute for that theorem.
+ 
+-## N8 — Prior comparison
++#### N8 — Prior comparison
+ 
+ Interaction-driven limiting-speed equality and logarithmic suppression are
+ established prior mechanisms. The new main sources already derive a
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK12_GROUND_STATE_CUTOFF_COMPACTNESS.md
++++ docs/FIXED_COUPLING_ROTOR_GROUND_CUTOFF_COMPACTNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+@@ -1,11 +1,11 @@
+-# Ground states, electric tightness and removal of the link cutoff
++### Ground states, electric tightness and removal of the link cutoff
+ 
+ Personal derivation, 2026-09-15. PROVISIONAL; personal review and bounded checks completed.
+ No independent scientific audit or retained-status decision.
+ This is a state-construction result for a supplied Hamiltonian. It does not
+ establish a Coulomb phase or identify the formed physical vacuum.
+ 
+-## 1. Target and precise hypotheses
++#### 1. Target and precise hypotheses
+ 
+ Use the homogeneous charged Hamiltonian of the fully read source
+ `docs/CHARGED_FINITE_LINK_LOCAL_DYNAMICS_AND_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-13.md`
+@@ -41,7 +41,7 @@
+ The order or relative rates of these two limits need not be prescribed.
+ There is no assertion that different subsequences select the same state.
+ 
+-## 2. A volume-independent electric moment from an actual physical trial
++#### 2. A volume-independent electric moment from an actual physical trial
+ 
+ The eigenvalues of h_on are +/-epsilon_+ and +/-epsilon_-, where
+  epsilon_eta=sqrt(m1^2+(B0+eta m3)^2).
+@@ -92,7 +92,7 @@
+ matrices are taken in the ambient matter/link tensor product (or its even
+ CAR equivalent), then the local Gauss conditions are imposed.
+ 
+-## 3. Local compactness and preservation of Gauss law
++#### 3. Local compactness and preservation of Gauss law
+ 
+ The projection P_(X,M) has finite rank on the finite region, including its
+ finite-dimensional matter factors. The positive reduced density matrices
+@@ -122,7 +122,7 @@
+ This argument establishes subsequence compactness. It supplies no rate
+ at which a chosen ground state approaches a particular limiting state.
+ 
+-## 4. Ground-state inequalities survive exactly on a local core
++#### 4. Ground-state inequalities survive exactly on a local core
+ 
+ Let A be an even, gauge-invariant operator supported in a fixed finite
+ region X, with finite electric support on every link in X:
+@@ -154,7 +154,7 @@
+ removed on the test operator, not by applying a global cutoff to a
+ thermodynamic state. In particular, no many-body spectral gap is used.
+ 
+-## 5. Dynamics comparison for these actual ground states
++#### 5. Dynamics comparison for these actual ground states
+ 
+ The source's bounded-shift and Lieb-Robinson proof gives constants C_X,v,nu
+ independent of L,S for a bounded even local observable A. Let B_R be a
+@@ -185,7 +185,7 @@
+ dynamics. Choosing M=floor(S/2) also makes the two cutoff errors vanish
+ at fixed R,t; this does not control t->infinity at fixed S.
+ 
+-## 6. Spectral ground-state condition, not only stationarity
++#### 6. Spectral ground-state condition, not only stationarity
+ 
+ For finite-electric-support physical A as in section4, define
+ 
+@@ -228,7 +228,7 @@
+ physical B. The local vectors are dense by the GNS construction. In this
+ precise physical-observable sense omega is a rotor ground state.
+ 
+-## 7. What the construction leaves open
++#### 7. What the construction leaves open
+ 
+ These are genuine ground states of a supplied rotor Hamiltonian, obtained
+ as local limits of exact finite-link physical ground states. The argument
+@@ -253,7 +253,7 @@
+ not remove the gap hypothesis from their polylogarithmic-precision theorem.
+ No general novelty is claimed for compactness of ground-state limits.
+ 
+-## 8. Bounded verification and limits
++#### 8. Bounded verification and limits
+ 
+ The companion constructs the actual four-orbital onsite and CAR matrices.
+ A noncubic two-cell/two-link charged loop is built twice: once directly in
+@@ -273,4 +273,4 @@
+ remains the analytic locality and tail argument, not a fit to that data.
+ No finite fixture establishes compactness or the infinite-volume phase.
+ 
+-See the personal [N1-N8 review](BLOCK12_ROUTE_AND_NO_GO_REVIEW.md).
++See the personal N1-N8 review (`BLOCK12_ROUTE_AND_NO_GO_REVIEW.md`).
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK12_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/FIXED_COUPLING_ROTOR_GROUND_CUTOFF_COMPACTNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+@@ -1,9 +1,9 @@
+-# Ground-state cutoff construction: personal N1-N8 review
++### Ground-state cutoff construction: personal N1-N8 review
+ 
+ The claim is positive and conditional on a supplied Hamiltonian. No
+ finite-link, gapless-ground-state or axiom no-go is claimed.
+ 
+-## N1 — Actual routes
++#### N1 — Actual routes
+ 
+ | Route family | Work done | Disposition |
+ |---|---|---|
+@@ -17,7 +17,7 @@
+ These are constructive steps, not a count of independent failed theories.
+ A fixed-S charged photon phase remains a different unresolved target.
+ 
+-## N2 — Dependencies
++#### N2 — Dependencies
+ 
+ Compactness, the core inequality and the spectral limit all use the same
+ electric moment. The spectral route also uses the finite-time parent.
+@@ -25,7 +25,7 @@
+ independent phase evidence. The stronger fixed-S phase target cannot be
+ inferred from local limits with S growing.
+ 
+-## N3 — Premises and hidden assumptions
++#### N3 — Premises and hidden assumptions
+ 
+ CAR, graph, positive electric coefficients, bounded finite-range shifts,
+ Hamiltonian time, couplings and physical Gauss sector are supplied.
+@@ -36,7 +36,7 @@
+ projection probabilities are never substituted for local tightness.
+ The off-cutoff part of Hpsi is not set to zero.
+ 
+-## N4 — Source match
++#### N4 — Source match
+ 
+ The finite-link parent gives bounded-shift propagation for prescribed
+ low-flux states. This note derives local moment control from actual
+@@ -45,7 +45,7 @@
+ stronger quantitative tail; this note neither imports nor removes that
+ hypothesis. No earlier fixed-S phase result is treated as available.
+ 
+-## N5 — Resolution
++#### N5 — Resolution
+ 
+ Per site: actual onsite four-band spectrum and N=2 trial. Per link:
+ electric second moment, high-flux tail and compression. Per finite block:
+@@ -56,14 +56,14 @@
+ The nine dynamics fixtures give only one nontrivial numerical error bound;
+ this limitation is recorded in the note and is not hidden by PASS counts.
+ 
+-## N6 — Surviving partial paths
++#### N6 — Surviving partial paths
+ 
+ A fixed finite S with a directly controlled charged Coulomb phase remains
+ live. Uniform long-distance correlation estimates could strengthen these
+ state limits. Pure phases, symmetry selection, the formed vacuum and a
+ native kinetic identification remain open. No added axiom is requested.
+ 
+-## N7 — Steelman
++#### N7 — Steelman
+ 
+ A critic can accept every displayed compactness step and still correctly
+ object that the limiting state may be confining or symmetry mixed. The
+@@ -72,7 +72,7 @@
+ state which extra long-distance estimate is missing. It is not evidence
+ that the desired phase already exists at any fixed cutoff.
+ 
+-## N8 — Prior comparison
++#### N8 — Prior comparison
+ 
+ The current source distinguished low-flux dynamics from ground states.
+ The new delta is the explicit actual-carrier variational moment and the
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK13_QUARTET_QUADRATIC_BACKREACTION.md
++++ docs/SUPPLIED_QUARTET_QUADRATIC_BACKREACTION_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+@@ -1,11 +1,11 @@
+-# Quadratic coframe drift and a resonance in the supplied quartet flow
++### Quadratic coframe drift and a resonance in the supplied quartet flow
+ 
+ Personal derivation, 2026-09-15. PROVISIONAL; personal analytic review and bounded checks completed.
+ No independent scientific audit or retained-status decision.
+ This remains a one-loop weak-coupling calculation for the supplied Hall-free
+ massless phase. It does not prove that phase or control all loop orders.
+ 
+-## 1. Why the linear mean mode needs another look
++#### 1. Why the linear mean mode needs another look
+ 
+ Block11 derives two different linear powers for the actual four-Weyl-node
+ quartet. Writing z=1+2 kappa e0^2 L and kappa=1/(6pi^2), inter-node coframe
+@@ -27,7 +27,7 @@
+ second-order mean mismatch and common metric are allowed and are displayed
+ below. An independent birefringent initial tensor is at most second order.
+ 
+-## 2. Derive the quadratic self-energy coefficient from the full integral
++#### 2. Derive the quadratic self-energy coefficient from the full integral
+ 
+ The source's four-dimensional coframe integral, with E=I4+C and C00=0, is
+ 
+@@ -76,7 +76,7 @@
+ when the photon speed is held at one. This checks both temporal subtraction
+ and the quadratic sign; the coupled photon flow is a different term.
+ 
+-## 3. The photon metric receives its own quadratic source
++#### 3. The photon metric receives its own quadratic source
+ 
+ For a positive symmetric spatial coframe E_i=I+C_i, the metric Maxwell
+ constitutive tensors are
+@@ -116,7 +116,7 @@
+ The remainders in(4)-(7) are coefficient-expansion notation. Uniform
+ control of their integral for arbitrarily large L is not asserted.
+ 
+-## 4. Solve the resonant mean and the common drift
++#### 4. Solve the resonant mean and the common drift
+ 
+ Let R=Cbar-C_g and C_*=(N Cbar+2C_g)/(N+2). At quadratic order,
+ 
+@@ -151,7 +151,7 @@
+ Delta_i(z)=Delta_i0/z, recovers C_g in(11). This supplies a second algebraic
+ route to the photon backreaction; it is not independent scientific review.
+ 
+-## 5. Apply the actual native quartet contrast
++#### 5. Apply the actual native quartet contrast
+ 
+ For the small mixing-angle perturbation in Block11,
+ 
+@@ -179,7 +179,7 @@
+ that an eventual controlled interacting-flow theorem must reproduce.
+ They are not a nonperturbative attraction proof or a photon-phase theorem.
+ 
+-## 6. Verification and review
++#### 6. Verification and review
+ 
+ The checker derives the full quadratic coefficient twice, first by the
+ Feynman parameter formula and then by the unshifted angular integral with
+@@ -193,4 +193,4 @@
+ full positive constitutive mixtures challenge the common drift and the
+ unchanged polarization coefficient; errors decrease at fourth order in
+ the reflected shear amplitude. No numerical phase or higher-loop theorem
+-is inferred. See the [personal N1-N8 review](BLOCK13_ROUTE_AND_NO_GO_REVIEW.md).
++is inferred. See the personal N1-N8 review (`BLOCK13_ROUTE_AND_NO_GO_REVIEW.md`).
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK13_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/SUPPLIED_QUARTET_QUADRATIC_BACKREACTION_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+@@ -1,9 +1,9 @@
+-# Quadratic quartet backreaction: personal N1-N8 review
++### Quadratic quartet backreaction: personal N1-N8 review
+ 
+ No broad negative claim is made. The linear conserved mean and pure power
+ law are corrected within a specified second-order one-loop expansion.
+ 
+-## N1 — Routes actually checked
++#### N1 — Routes actually checked
+ 
+ | Family | Work | Disposition |
+ |---|---|---|
+@@ -16,13 +16,13 @@
+ 
+ These are checks of one formal calculation, not independent phase routes.
+ 
+-## N2 — Dependencies
++#### N2 — Dependencies
+ 
+ The real coframe drift, mean resonance and polarization use one supplied
+ massless Hall-free loop action. They do not count as separate axiom walls.
+ The direct history calculation checks the same coefficient expansion.
+ 
+-## N3 — Premises
++#### N3 — Premises
+ 
+ Unit charges, the correct Weyl bubble count, a gauge-preserving weak-coupling
+ prescription, nonmerging nodes, untilted spatial coframes and trace-free
+@@ -32,7 +32,7 @@
+ set a physical speed. The initial coframe square variance is unnormalized
+ by its trace and the full relative correction includes an isotropic part.
+ 
+-## N4 — Source match
++#### N4 — Source match
+ 
+ The full parameter integral and scalar comparator are directly supplied in
+ the current Hall/cone source. Block11 supplies the actual quartet contrast
+@@ -40,7 +40,7 @@
+ metrics, so this second-order common drift does not alter that coefficient.
+ No short-range Weyl theorem or all-order QED construction is imported.
+ 
+-## N5 — Resolution
++#### N5 — Resolution
+ 
+ Per tensor component: exact eigenvalue polynomial and independent angular
+ moments. Per normalization: temporal wavefunction subtraction and scalar
+@@ -49,7 +49,7 @@
+ positive finite constitutive tensors. Lattice-wide: no interacting
+ thermodynamic phase or uniform remainder estimate is computed.
+ 
+-## N6 — Partial closure
++#### N6 — Partial closure
+ 
+ The corrected truncated flow still approaches a common metric. The mean
+ correction is log(z)/z², while the contrasts and polarization have slower
+@@ -57,14 +57,14 @@
+ A genuine full-flow theorem would need bounds on omitted terms, plus the
+ actual phase. Nothing here rules out either task or requires a new axiom.
+ 
+-## N7 — Steelman
++#### N7 — Steelman
+ 
+ A critic can correctly reject an all-orders attraction claim: finitely many
+ beta coefficients and an exact solution of their truncation do not control
+ the full physical flow. The note makes no such claim. Its deliverable is a
+ specific nonzero quadratic term that a stronger theory must retain.
+ 
+-## N8 — Prior comparison
++#### N8 — Prior comparison
+ 
+ The current parent gave the linear coframe flow and a quadratic nonmetric
+ photon source. Block11 added quartet contrasts. The present delta is the
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK14_QUARTET_DECAY_AND_CONE_STABILITY.md
++++ docs/SUPPLIED_QUARTET_LEADING_DECAY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+@@ -1,11 +1,11 @@
+-# On-shell decay channels in the supplied Hall-free quartet
++### On-shell decay channels in the supplied Hall-free quartet
+ 
+ Personal derivation, 2026-09-15. PROVISIONAL; personal derivation and challenge checks, not an independent audit.
+ These are leading-order rates in a supplied massless weak-coupling phase.
+ They do not prove its existence, an isolated charged pole or an empirical
+ prediction of the minimal framework.
+ 
+-## 1. What real coframe running leaves unanswered
++#### 1. What real coframe running leaves unanswered
+ 
+ Blocks11 and13 compute real velocity and constitutive coefficients. Unequal
+ cones also permit emission and pair creation. Their rates are a separate
+@@ -30,7 +30,7 @@
+ are used as a comparator. Their photon/charge conventions differ away from
+ the equal-speed point. No historical experimental bound is imported here.
+ 
+-## 2. Exact kinematic tests for a positive anisotropic coframe
++#### 2. Exact kinematic tests for a positive anisotropic coframe
+ 
+ Let G=V^2 and E(p)=sqrt(p^T Gp), p!=0. The electron group velocity is
+ v_g=Gp/E(p). Convexity gives
+@@ -62,7 +62,7 @@
+  a_m=m^T Gm-1, b_m=m dot Gp-E(p),
+  k_m=2b_m/a_m, q=p-k_m m, E_q=E(p)-k_m,
+  n_p=Vp/E(p), K_m=V(I-mm^T)V,
+- T_m=[tr K_m/2](E_q-Vq dot n_p)+(Vq)^T K_m n_p.
++ T_m=tr K_m/2 (`E_q-Vq dot n_p`)+(Vq)^T K_m n_p.
+ 
+ Then, with the two photon polarizations summed,
+ 
+@@ -78,13 +78,13 @@
+ It provides a direct finite integral for a general positive coframe,
+ without replacing it by an isotropic speed.
+ 
+-## 3. Massless isotropic fermion: derive the full Cherenkov rate
++#### 3. Massless isotropic fermion: derive the full Cherenkov rate
+ 
+ First V=vI, v>1. Put p=|p|, photon magnitude k, q=|p-k| and let c be the
+ angle cosine between p and k. Energy conservation gives
+ 
+  q=p-k/v,
+- c=1/v+[k/(2p)](1-1/v^2),
++ c=1/v+k/(2p) (`1-1/v^2`),
+  0<k<2pv/(v+1).                                  (3)
+ 
+ With P_n=(I+sigma dot n)/2, the transverse spin sum is
+@@ -128,7 +128,7 @@
+ Both leading coefficients agree with the cited massless small-deformation
+ limits after matching the relative speed and leading charge normalization.
+ 
+-## 4. Exact anisotropic photon-decay tensor at leading coupling order
++#### 4. Exact anisotropic photon-decay tensor at leading coupling order
+ 
+ For one Weyl cone, choose real orthonormal transverse photon polarizations
+ e_a dot k=0, a=1,2, and write omega=|k| and
+@@ -181,7 +181,7 @@
+ source equation21. The full relative-speed beta function is not beta_v.
+ This comparison is specific to these displayed leading-order formulas.
+ 
+-## 5. Small anisotropy and the actual quartet
++#### 5. Small anisotropy and the actual quartet
+ 
+ Let V=I+C, C=O(delta), and fix a unit direction n with n^T Cn bounded
+ away from zero as a fraction of delta. Put u(n)=n^T Cn. Equations(1)-(2)
+@@ -279,7 +279,7 @@
+ spectral measure and a full interacting phase remain separate obligations.
+ No physical energy hierarchy or experimental number is fitted.
+ 
+-## 6. Scope and verification
++#### 6. Scope and verification
+ 
+ The exact formulas(6)-(10) are tree-level decay rates, corresponding to
+ imaginary one-loop self-energies, for the supplied continuum action.
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK14_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/SUPPLIED_QUARTET_LEADING_DECAY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+@@ -1,9 +1,9 @@
+-# Quartet decay: personal N1–N8 scope review
++### Quartet decay: personal N1–N8 scope review
+ 
+ No broad obstruction or axiom update is established. A supplied continuum
+ phase has calculable leading-order decay channels when its cones differ.
+ 
+-## N1 — Routes actually tested
++#### N1 — Routes actually tested
+ 
+ | Family | Work performed | Disposition |
+ |---|---|---|
+@@ -18,14 +18,14 @@
+ These are derivations and challenges within one specified action, not seven
+ independent proofs that the microscopic interacting phase exists.
+ 
+-## N2 — Dependence
++#### N2 — Dependence
+ 
+ All rates rely on the same supplied massless cone and Maxwell action. The
+ quartet application also relies on Blocks11–13. Hall cancellation, metric
+ attraction and a small decay rate cannot be counted as independent evidence
+ for a selected physical phase or an isolated charged pole.
+ 
+-## N3 — Premises and thresholds
++#### N3 — Premises and thresholds
+ 
+ Zero density, a filled negative band, canonically normalized transverse
+ photons, separated untilted Weyl cones and leading coupling order are explicit.
+@@ -34,7 +34,7 @@
+ linear asymptotic. The exact shear boundary example is a supplied coframe;
+ the actual quartet needs its second-order photon metric and polarization there.
+ 
+-## N4 — Source match
++#### N4 — Source match
+ 
+ The current native coframe and Hall-free quartet sources supply the action,
+ node count and real beta-function comparators. Their continuum matching does
+@@ -42,7 +42,7 @@
+ paper uses different finite-deformation conventions; only the matched leading
+ massless coefficients are compared. No empirical number is used.
+ 
+-## N5 — Resolution and failures
++#### N5 — Resolution and failures
+ 
+ Exact symbolic scalar integrals, actual Pauli matrix traces, a separate full
+ photon phase-space integration, cap refinement and an analytic boundary
+@@ -51,21 +51,21 @@
+ Construction and resolution were corrected without loosening tolerances.
+ Quadrature-node PASS counts are not scientific evidence beyond these checks.
+ 
+-## N6 — Partial closure and escapes
++#### N6 — Partial closure and escapes
+ 
+ The permitted widths become small relative to energy in the formal running
+ approximation. This leaves soft-photon dressing, a possible infraparticle,
+ higher-order resummation and a microscopic phase open. Coincident cones,
+ forbidden directions and zero coupling escape the displayed decay mechanism.
+ 
+-## N7 — Steelman
++#### N7 — Steelman
+ 
+ A criticism that a vanishing relative width proves no isolated pole is correct.
+ Likewise a real velocity beta function alone is insufficient for stability.
+ The note computes an additional necessary diagnostic and makes neither claim.
+ No universal particle-instability conclusion survives these restrictions.
+ 
+-## N8 — Prior comparison
++#### N8 — Prior comparison
+ 
+ Vacuum Cherenkov emission and photon decay are established. The local delta
+ is their explicit canonical anisotropic tensor/cap application to this quartet,
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK15_MIXED_HISTORY_BOUNDEDNESS_AND_SIXTH_POLE.md
++++ docs/NATIVE_MIXED_SIXTH_ORDER_COEFFICIENT_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+@@ -1,9 +1,9 @@
+-# Separating the mixed histories from the sixth-order infrared singularity
++### Separating the mixed histories from the sixth-order infrared singularity
+ 
+ Personal derivation, 2026-09-15. PROVISIONAL. Structural and normalization
+ checks passed; personal scope review is in the companion. No independent audit.
+ 
+-## 1. Target and dependencies
++#### 1. Target and dependencies
+ 
+ This note concerns the supplied zero-electric-penalty native pi-flux model,
+ its canonical pure Gaussian active reference and the actual electric
+@@ -47,7 +47,7 @@
+ that those terms cannot cancel the singleton channel's 1/omega singularity.
+ No sign of an individual mixed coefficient is assumed.
+ 
+-## 2. Which sixth histories can matter at separated centers
++#### 2. Which sixth histories can matter at separated centers
+ 
+ Each insertion toggles two distinct incident edges. A returning word has
+ total toggle delta S, and its gauge closure supplies one active and one
+@@ -115,7 +115,7 @@
+ filtered-inverse construction below. A finite-distance change of a kernel
+ adds a bounded trigonometric polynomial to its multiplier.
+ 
+-## 3. A filtered five-inverse word admits two separated odd factors
++#### 3. A filtered five-inverse word admits two separated odd factors
+ 
+ Choose the same smooth inverse filter at every volume: f(x)=-1/x for
+ x>=delta, with a smooth cutoff near zero. Its Fourier kernel w obeys
+@@ -193,7 +193,7 @@
+ satisfies its hypotheses. No ground-state spectral-gap stability theorem
+ from that paper is imported into this gapless reference.
+ 
+-## 4. Graded locality bounds the remaining two-point multiplier
++#### 4. Graded locality bounds the remaining two-point multiplier
+ 
+ For fixed times the odd families in(5) have effective localization radius
+ O(1+S). Truncating their unitary generators on balls preserves parity and
+@@ -240,7 +240,7 @@
+ operator is thereby obtained in infinite volume. Entrywise bounds alone
+ would not have proved(9); the odd-family bound(8) is the decisive step.
+ 
+-## 5. The singleton normalization and its surviving singularity
++#### 5. The singleton normalization and its surviving singularity
+ 
+ The complete singleton-middle family is precisely second-order elimination
+ of the actual third-order vertices -i O_v beta_v through odd active states.
+@@ -290,7 +290,7 @@
+ magnitudes4 alpha^2/omega and bounded additive errors. Since alpha>0,
+ no bounded mixed remainder can cancel this singularity.
+ 
+-## 6. Finite-volume consequence and the actual remaining problem
++#### 6. Finite-volume consequence and the actual remaining problem
+ 
+ The parent coefficient matrices C_L converge with every fixed derivative
+ to C, while the mixed bounds and higher-odd summable bounds are uniform.
+@@ -333,7 +333,7 @@
+ No axiom update is forced. No fixed-coupling phase, selected vacuum,
+ Hamiltonian-selection theorem or all-order expansion has been proved.
+ 
+-## 7. Verification and limits
++#### 7. Verification and limits
+ 
+ The companion exhausts the complete162000 separated-star histories in each
+ of four actual cubic relative geometries, retaining all five prefixes.
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK15_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/NATIVE_MIXED_SIXTH_ORDER_COEFFICIENT_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+@@ -1,10 +1,10 @@
+-# Mixed-history noncancellation: personal N1–N8 review
++### Mixed-history noncancellation: personal N1–N8 review
+ 
+ The negative statement is narrow: the specified mixed sixth histories
+ cannot cancel a nonzero1/omega singularity by a bounded multiplier.
+ Framework-wide or physical-phase impossibility FAILS this review.
+ 
+-## N1 — Distinct routes and actual work
++#### N1 — Distinct routes and actual work
+ 
+ | Family | Work performed | Disposition |
+ |---|---|---|
+@@ -19,14 +19,14 @@
+ These are not seven independent phase proofs. The first six establish one
+ conditional coefficient result; the last identifies why it is not an axiom wall.
+ 
+-## N2 — Dependency and wall independence
++#### N2 — Dependency and wall independence
+ 
+ The node coefficient, conical inverse and history bound share the supplied
+ Gaussian native model and reference. The finite-volume growth and infinite
+ multiplier singularity are two expressions of that same mechanism. They
+ must not be reported as independent failures of the axioms.
+ 
+-## N3 — Hidden assumptions tested
++#### N3 — Hidden assumptions tested
+ 
+ Every mixed prefix must have a wrong LOCAL flux; a pure winding or singleton
+ return cannot be assigned its gap. Both active parities use the same original
+@@ -36,7 +36,7 @@
+ Odd rather than even center factors are essential for the summable graded
+ bound. All magnetic cell types and native closure phases are retained.
+ 
+-## N4 — Matching and possible omitted counterterms
++#### N4 — Matching and possible omitted counterterms
+ 
+ The previous finite star coefficient covers only singleton-middle orders.
+ This note includes every mixed interleaving at separated centers and retains
+@@ -47,7 +47,7 @@
+ read; no sign is inferred from a selected history. The full higher-odd return
+ is inherited from its proved summable-row argument.
+ 
+-## N5 — Resolution certificate
++#### N5 — Resolution certificate
+ 
+ History resolution: all90 ordered partitions at each of two stars and all20
+ interleavings, with all five intermediate flux masks. Geometry: the general
+@@ -57,7 +57,7 @@
+ no fixed particle-number truncation enters that proof. Thermodynamic scope:
+ conditional kernel limits and multiplier bounds, not a fixed-u state or phase.
+ 
+-## N6 — Partial closure and surviving routes
++#### N6 — Partial closure and surviving routes
+ 
+ The complete sixth coefficient has a nonzero infrared singularity under the
+ stated dependencies. Its rows and local susceptibilities can nevertheless be
+@@ -66,7 +66,7 @@
+ Different supplied Hamiltonians, flux laws or node structures are outside
+ this result. None is excluded by the coefficient calculation.
+ 
+-## N7 — Steelman
++#### N7 — Steelman
+ 
+ The strongest objection is that bounded individual history amplitudes do not
+ give a bounded convolution operator. The proof explicitly adds separated
+@@ -77,7 +77,7 @@
+ Independent review must examine that new factorization argument, rather than
+ treat the finite census or CAR checks as its proof.
+ 
+-## N8 — Difference from earlier campaigns
++#### N8 — Difference from earlier campaigns
+ 
+ The scalar sign, free-reference spectral dominance, local low-energy star
+ linearization and diagnostic two-channel spectrum already exist. The new
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK16_CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT.md
++++ docs/CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+@@ -1,10 +1,10 @@
+-# Cyclic equilibrium states, disappearing Gauss aliases and rotor limits
++### Cyclic equilibrium states, disappearing Gauss aliases and rotor limits
+ 
+ Personal derivation, 2026-09-15. PROVISIONAL. Personal checks and review complete.
+ No independent audit. This is a regulator/state theorem for a supplied model,
+ not a photon, Weyl, Coulomb or symmetry-breaking phase theorem.
+ 
+-## 1. Fixed model and the missing state bridge
++#### 1. Fixed model and the missing state bridge
+ 
+ Use the full model in main revision e0ef7cf4633034a8c1e6d57f5812cc4275bf1349,
+ POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION,
+@@ -48,7 +48,7 @@
+ bound may be used in(2). Finite cell periodicity can be treated with finitely
+ many types; no arbitrary inhomogeneous pointwise moment bound is asserted.
+ 
+-## 2. Uniform electric moments for exact cyclic ground and Gibbs states
++#### 2. Uniform electric moments for exact cyclic ground and Gibbs states
+ 
+ Concavity of sine on[0,pi/2] gives, for all centered representatives,
+ 
+@@ -102,7 +102,7 @@
+ for ground states or(7) with beta0 for the Gibbs family. Constants depend
+ on the fixed couplings and beta0; they need not remain bounded as g->0.
+ 
+-## 3. Modular aliases disappear locally
++#### 3. Modular aliases disappear locally
+ 
+ Embed every cyclic link into the rotor basis using its centered representative.
+ On a modular physical basis vector, the integer operator G_x has eigenvalues
+@@ -124,7 +124,7 @@
+ L and N. The local conclusion does not. In particular finite total-charge
+ aliases need not be deleted by hand from the projected trace.
+ 
+-## 4. Local normal compactness in simultaneous limits
++#### 4. Local normal compactness in simultaneous limits
+ 
+ For a finite carrier region R with n_R links, let P_(R,M) project every
+ such electric number to |E_l|<=M and retain all its finite matter space.
+@@ -158,7 +158,7 @@
+ coercive cyclic energy, entropy bound and modular-to-integer estimate above
+ are the regulator-specific inputs to this direct proof.
+ 
+-## 5. Finite-time convergence now applies to these equilibrium states
++#### 5. Finite-time convergence now applies to these equilibrium states
+ 
+ The current cyclic parent provides an ambient-volume-independent locality
+ bound and an explicit finite-region comparison epsilon_(N,R)(t,M) for
+@@ -203,7 +203,7 @@
+ makes A_M Omega->A Omega and A_M^* Omega->A^* Omega. Stationarity bounds
+ the resulting correlation error uniformly in real t.
+ 
+-## 6. Cooling the cyclic Gibbs states yields actual rotor ground states
++#### 6. Cooling the cyclic Gibbs states yields actual rotor ground states
+ 
+ Suppose also beta->infinity, with arbitrary joint rates relative to L,N.
+ For finite physical Gibbs matrices and a physical observable A, write
+@@ -247,7 +247,7 @@
+ continuous representation, not a claim of norm-continuous rotor dynamics
+ on every bounded local operator.
+ 
+-## 7. Fixed-volume spectral comparison and positive-history provenance
++#### 7. Fixed-volume spectral comparison and positive-history provenance
+ 
+ At a FIXED finite graph, the same coercive bound gives global trace
+ compactness of cyclic ground states. Any finite-energy physical rotor
+@@ -281,7 +281,7 @@
+ In particular this N->infinity theorem proves no phase for a fixed finite
+ link payload and makes no simultaneous g->0 claim. No axiom update is forced.
+ 
+-## 8. Personal verification and its limits
++#### 8. Personal verification and its limits
+ 
+ The accompanying checker constructs a four-edge charged cycle with two
+ opposite-charge CAR modes per vertex. It is a noncubic fixture. For N=3,
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK16_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+@@ -1,4 +1,4 @@
+-# Block16 route and no-go review
++### Block16 route and no-go review
+ 
+ PROVISIONAL personal review. No independent audit and no axiom update.
+ 
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK17_CYCLIC_WEAK_COUPLING_SPECTRAL_LIMITS.md
++++ docs/FINITE_GRAPH_CYCLIC_WEAK_COUPLING_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+@@ -1,10 +1,10 @@
+-# Cyclic weak-coupling limits and what a small plaquette deficit misses
++### Cyclic weak-coupling limits and what a small plaquette deficit misses
+ 
+ Personal derivation, 2026-09-15. PROVISIONAL; personal checks and review complete.
+ No independent review or axiom update. Fixed-volume spectral limits below
+ are distinct from an infinite-volume photon theorem.
+ 
+-## 1. Question, parents and exact domain
++#### 1. Question, parents and exact domain
+ 
+ Main e0ef7cf4633034a8c1e6d57f5812cc4275bf1349 contains three relevant supplied
+ results, all read in full: the positive cyclic gauge/history construction,
+@@ -63,7 +63,7 @@
+ All other coefficients and the graph stay fixed. Both g->0 and N->infinity
+ are assumed for the three-limit statement unless fixed N is explicitly named.
+ 
+-## 2. Finite ell: a periodic Schrödinger operator
++#### 2. Finite ell: a periodic Schrödinger operator
+ 
+ If ell_g->ell in(0,infinity), the limiting gauge configuration space is
+ the c-dimensional torus of side ell, with coordinate x=g n modulo ell.
+@@ -100,7 +100,7 @@
+ eigenvalue and each isolated spectral cluster to(4). Degenerate clusters
+ do not supply a preferred eigenvector basis.
+ 
+-## 3. Infinite ell: the full oscillator is recovered
++#### 3. Infinite ell: the full oscillator is recovered
+ 
+ If ell_g->infinity, center every chord coordinate x_j in[-ell_g/2,ell_g/2).
+ Since R has zero chord rows and C_chord=I, chord contributions alone give
+@@ -128,7 +128,7 @@
+ Its frequencies are sqrt(eig(A^(1/2) K A^(1/2)))/a. All compactness constants
+ can depend on this fixed graph; no growing-volume spectral conclusion follows.
+ 
+-## 4. Vanishing ell: finite-energy gauge oscillators disappear
++#### 4. Vanishing ell: finite-energy gauge oscillators disappear
+ 
+ If ell_g->0, the electric operator norm is bounded by
+ 
+@@ -161,7 +161,7 @@
+ but the matter space is the modular-neutral space M_N and can contain total
+ charge aliases. Neither version supplies a Maxwell oscillator spectrum.
+ 
+-### Integer Gauss aliases can persist in this different limit
++##### Integer Gauss aliases can persist in this different limit
+ 
+ Take two adjacent plaquettes, no matter, and chord coordinates n1,n2 in
+ [-S,S], N=2S+1. Orient their circulation so that their shared edge carries
+@@ -193,7 +193,7 @@
+ deficit and a nonzero integer-alias probability coexist in the same supplied
+ pure-gauge model; no charged-phase inference is needed for the counterexample.
+ 
+-## 5. A one-plaquette discriminator and checked normalization
++#### 5. A one-plaquette discriminator and checked normalization
+ 
+ For a=1, unit weights and a single neutral plaquette, C=(1,1,1,1)^T and
+ A=1. The finite matrix and its finite-ell limit are
+@@ -248,7 +248,7 @@
+ error estimate in finite g,N. Magnetic finite-difference errors also remain
+ before the continuum limit.
+ 
+-## 6. Small plaquette deficit is compatible with the wrong spectral limit
++#### 6. Small plaquette deficit is compatible with the wrong spectral limit
+ 
+ Return here to the periodic cubic cyclic model of the positive-history
+ parent, with V cells and D=(1/V)sum_p w_p<1-Re U_p>. The following bound
+@@ -278,7 +278,7 @@
+ contradiction of it. A small plaquette deficit therefore cannot establish
+ the oscillator/Gaussian limit, let alone a charged Coulomb phase.
+ 
+-## 7. Remaining obligations and checks
++#### 7. Remaining obligations and checks
+ 
+ The statements are fixed-volume spectral limits and a separate volume-uniform
+ one-point ground-state bound. They do not exchange those limits, prove a
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK17_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/FINITE_GRAPH_CYCLIC_WEAK_COUPLING_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+@@ -1,4 +1,4 @@
+-# Block17 route and no-go review
++### Block17 route and no-go review
+ 
+ PROVISIONAL personal review; independent retention pending.
+ 
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK18_POSITIVE_ELECTRIC_GENERATOR_ACCURACY.md
++++ docs/POSITIVE_ELECTRIC_GENERATOR_CONE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+@@ -1,10 +1,10 @@
+-# Positive cyclic electric generators and an accuracy tradeoff
++### Positive cyclic electric generators and an accuracy tradeoff
+ 
+ Personal derivation, 2026-09-15. PROVISIONAL; personal checks and review complete. No independent
+ audit. This is a full-class statement for a specified local electric
+ generator, not a no-go for positive histories, finite spins or the TOE.
+ 
+-## 1. Precisely which positivity is required
++#### 1. Precisely which positivity is required
+ 
+ On one odd cyclic link N=2S+1, require a translation-invariant Hermitian
+ electric Hamiltonian H_E in the CLOCK-PHASE basis, with
+@@ -39,7 +39,7 @@
+ small N it is not equivalent to fitting its value at the first nonzero
+ electric level; changing that calibration is outside the comparison.
+ 
+-## 2. Nearest-neighbor jumps maximize the whole calibrated dispersion
++#### 2. Nearest-neighbor jumps maximize the whole calibrated dispersion
+ 
+ The finite geometric series gives, for every real theta and integer j>=1,
+ 
+@@ -84,7 +84,7 @@
+ claim about a particle gap. Block17's Gaussian support and alias tests
+ provide separate state-level discriminators. No photon exclusion follows.
+ 
+-## 3. A concrete escape: a positive Hamiltonian with signed phase jumps
++#### 3. A concrete escape: a positive Hamiltonian with signed phase jumps
+ 
+ Drop the all-small-time entrywise requirement but keep Hermiticity,
+ translation invariance, quadratic calibration and nonnegative energy.
+@@ -118,7 +118,7 @@
+ specific decomposition. Summing histories still yields a positive operator
+ trace; no contradiction with a valid Hamiltonian is involved.
+ 
+-## 4. The improvement survives the one-plaquette spectral test
++#### 4. The improvement survives the one-plaquette spectral test
+ 
+ The finite-ell limit of(8) on the one-plaquette model is the periodic
+ Schrödinger operator -.5 d^2/dx^2+V_imp,ell(x), where
+@@ -184,7 +184,7 @@
+ order-ell^-2 error at the cost of(1). Finite-g magnetic difference errors
+ are additional; no joint finite-g,N rate is inferred from(14).
+ 
+-## 5. What the wall does and does not require
++#### 5. What the wall does and does not require
+ 
+ Within this translation-invariant single-link, all-time nonnegative phase
+ kernel and fixed-curvature class, the nearest-neighbor electric dispersion
+@@ -205,7 +205,7 @@
+ must exist. The physical Hamiltonian and representation assumptions remain
+ explicit supplied choices.
+ 
+-## 6. Personal verification
++#### 6. Personal verification
+ 
+ Fifteen dense positive-rate fixtures at prime and composite N=5,7,9,15,31
+ obey the exact all-character envelope. Direct phase matrices and Fourier
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK18_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/POSITIVE_ELECTRIC_GENERATOR_CONE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+@@ -1,4 +1,4 @@
+-# Block18 route and no-go review
++### Block18 route and no-go review
+ 
+ PROVISIONAL personal review. The narrow full-cone statement is not a
+ universal no-go or a basis for an axiom update.
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK19_CHARGED_RING_SLOW_SPECTRUM.md
++++ docs/CHARGED_RING_SLOW_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+@@ -1,10 +1,10 @@
+-# The charged ring: proved slow levels and the Gauss-connection correction
++### The charged ring: proved slow levels and the Gauss-connection correction
+ 
+ Personal derivation, 2026-09-15. PROVISIONAL; personal checks and review complete.
+ No independent audit. This closes a finite-ring asymptotic obligation,
+ not the periodic three-dimensional charged phase.
+ 
+-## 1. Exact model and result
++#### 1. Exact model and result
+ 
+ Use the four-site, two-spinless-fermion ring from main revision
+ e0ef7cf4633034a8c1e6d57f5812cc4275bf1349,
+@@ -49,7 +49,7 @@
+ epsilon>0. Constants may depend on j,epsilon. Merely S sqrt(g)->infinity
+ does not by itself supply a g^2-accurate cutoff error.
+ 
+-## 2. An exact local change of frame removes derivative band coupling
++#### 2. An exact local change of frame removes derivative band coupling
+ 
+ Complete the electric square with the diagonal six-state matrices
+ 
+@@ -102,7 +102,7 @@
+ zero component into the other matter bands. Thus there is no additional
+ derivative Born-Huang term hidden in(8).
+ 
+-## 3. Leading spectral stability before extracting higher coefficients
++#### 3. Leading spectral stability before extracting higher coefficients
+ 
+ The global pointwise matter lower bound is H_m(theta)>=e(theta)I>=e_*I,
+ and the electric form is positive. A localized ground-band Hermite trial
+@@ -132,7 +132,7 @@
+ These estimates suffice for the leading compactness argument; an exponentially
+ small global boundary error is not needed for the higher-order proof below.
+ 
+-## 4. Higher coefficients from controlled quasimodes
++#### 4. Higher coefficients from controlled quasimodes
+ 
+ Expand the actual ground-band energy, with a uniform Taylor remainder on
+ the fixed chart:
+@@ -184,7 +184,7 @@
+ q=-32sqrt2/g^2 and energy factor g^2/32. Global periodicity of that auxiliary
+ problem is not identified with the original matter bundle.
+ 
+-## 5. Why the hard cutoff scales as g^(-1/2) for this slow mode
++#### 5. Why the hard cutoff scales as g^(-1/2) for this slow mode
+ 
+ The leading ground band in angle space is U(delta)u times a width-sqrt(g)
+ envelope. In electric space this means a shifted common envelope in
+@@ -237,7 +237,7 @@
+ necessity is distinct from a complete classification of finite-support
+ spectral limits, which is not claimed here.
+ 
+-## 6. Observable meaning and scope
++#### 6. Observable meaning and scope
+ 
+ For the untruncated ground state, the scaled angle and flux distributions
+ converge to the ground oscillator in(9). Convergence of the positive kinetic
+@@ -261,7 +261,7 @@
+ regulator requirement. The supplied Hamiltonian and reference charges remain
+ conditional choices, and no axiom update is forced.
+ 
+-## 7. Personal verification
++#### 7. Personal verification
+ 
+ Exact six-state CAR algebra verifies the whole Laurent-polynomial frame
+ identity U^-1 H_m U=z F+z^-1 F^T, z=exp(i delta/4), and [F,F^T]=0.
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK19_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/CHARGED_RING_SLOW_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+@@ -1,4 +1,4 @@
+-# Block19 route and no-go review
++### Block19 route and no-go review
+ 
+ PROVISIONAL personal review; no independent audit or axiom update.
+ 
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK20_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+@@ -1,4 +1,4 @@
+-# Block20 route and no-go review
++### Block20 route and no-go review
+ 
+ Provisional author review; no independent audit.
+ 
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK20_WEYL_HOLONOMY_CASIMIR_SELECTION.md
++++ docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+@@ -1,4 +1,4 @@
+-# Free Weyl holonomy selection, volume arithmetic, and the remaining dynamical step
++### Free Weyl holonomy selection, volume arithmetic, and the remaining dynamical step
+ 
+ Status: proposed analytic results for a declared free-band comparator, with author
+ checks; no independent audit and no interacting phase theorem. All energies below
+@@ -7,7 +7,7 @@
+ It is not the mixed four-orbital model used in Blocks11–14. A flat link background
+ is prescribed here, not obtained by integrating fluctuating gauge links.
+ 
+-## 1. Hypotheses and Fourier coefficient
++#### 1. Hypotheses and Fourier coefficient
+ 
+ Let e(k) be the occupied-band trace of a periodic analytic finite Bloch matrix
+ on the three-torus. Assume constant occupied rank away from finitely many isolated
+@@ -29,14 +29,14 @@
+       [pi^2 sqrt(det G_nu) (R^T G_nu^-1 R)^2] + O(|R|^-5).          (1)
+ 
+ The normalization and sign follow directly from Delta_p |p|=2/|p| and
+-FT[1/|p|](R)=1/(2pi^2 |R|^2), hence FT[-|p|]=1/(pi^2 |R|^4) away R=0.
++FT1/|p| (`R`)=1/(2pi^2 |R|^2), hence FT[-|p|]=1/(pi^2 |R|^4) away R=0.
+ Changing variables u=V p gives the stated anisotropic factor. A smooth cutoff
+ around each node changes the principal homogeneous transform only by a rapidly
+ decreasing term. For the remainder, a dyadic shell of radius r contributes at most
+ C_M r^5(1+r|R|)^-M; summing shells with M>5 proves the O(|R|^-5) bound. Applying
+ the same argument to r_3 gives O(|R|^-6). These bounds are uniform in direction.
+ 
+-## 2. The finite-size energy and its node-avoidance property
++#### 2. The finite-size energy and its node-avoidance property
+ 
+ For a charged block sample k=(2pi n+q phi)/L and sum its occupied energies.
+ Absolute convergence of the Fourier coefficients justifies the exact grid identity.
+@@ -79,7 +79,7 @@
+ uses a nearest grid point to a node; the lower bound uses d_* and ellipticity,
+ with spectator bands separated. It is not a nonzero bulk gap.
+ 
+-## 3. Derivatives away from nodes
++#### 3. Derivatives away from nodes
+ 
+ Retain the degree-two term a_2 in the shell expansion. Its Fourier principal part
+ defines a periodic function J_Theta whose local singularities are the corresponding
+@@ -93,7 +93,7 @@
+ In particular the Hessian converges uniformly there. This extra argument is needed:
+ uniform convergence of energies alone would not control minimizing curvatures.
+ 
+-## 4. An exact alternating choice in the supplied paired Wilson family
++#### 4. An exact alternating choice in the supplied paired Wilson family
+ 
+ Take b=kappa=pi/3, zeta=cos(kappa)=1/2, and
+ 
+@@ -152,7 +152,7 @@
+ fixed-support free observable. The special arithmetic choice b=kappa=pi/3 is
+ declared, not asserted for a generic or axiom-selected parameter.
+ 
+-## 5. Meaningful companion checks
++#### 5. Meaningful companion checks
+ 
+ The companion runner compares (8) with the literal finite Bloch sum (6), analytic
+ finite-band Hessians with heat-integral Hessians, and the exact doubled energy with
+@@ -161,7 +161,7 @@
+ checks their overlap. Large-volume samples test convergence; the proof of the
+ global minimum is the positive product plus (5), not sampled minimization.
+ 
+-## 6. Conditional slow holonomy dynamics and the unresolved step
++#### 6. Conditional slow holonomy dynamics and the unresolved step
+ 
+ For a cubic box of side L, a harmonic connection is A_i=phi_i/L on every i-link,
+ and its conjugate uniform flux is E_i=n_i/L^2. Summing E dA over L^3 links gives
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK21_FIXED_BOX_SLOW_HOLONOMY_THEOREM.md
++++ docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+@@ -1,11 +1,11 @@
+-# Fixed-box slow holonomy levels with the fast gauge modes retained
++### Fixed-box slow holonomy levels with the fast gauge modes retained
+ 
+ Provisional author derivation, 2026-09-16 UTC. No independent audit. This supplies
+ a fixed-volume leading slow spectrum under explicit isolated-minimum hypotheses.
+ Its constants depend on the box. It does not supply an interacting thermodynamic
+ phase, a joint volume/coupling limit, or a fixed finite-payload theorem.
+ 
+-## 1. Exact model and hypotheses
++#### 1. Exact model and hypotheses
+ 
+ Start with the exact integer-Gauss representation in the periodic-holonomy parent
+ on main e0ef7cf4633034a8c1e6d57f5812cc4275bf1349, reread in full. On a fixed finite
+@@ -54,7 +54,7 @@
+ square root of an eigenvalue of S^(1/2) B S^(1/2), divided by a. Degenerate
+ slow levels are permitted; no preferred basis or higher series is asserted.
+ 
+-## 2. Exact local connection and the even normal well
++#### 2. Exact local connection and the even normal well
+ 
+ Complete the electric square: A_f=K^-1 C^T W_E E0(f), with a nonnegative
+ longitudinal remainder. The connection components are diagonal in occupations
+@@ -91,7 +91,7 @@
+ Using the EXACT normal ground avoids a coarse O(delta^2) floor error that would
+ overwhelm the order-g term. This is essential in this two-scale problem.
+ 
+-## 3. Normal matter coupling costs order g^2 in energy
++#### 3. Normal matter coupling costs order g^2 in energy
+ 
+ Use h(q,t) for the locally transformed/sheared matrix. Uniformly in a fixed chart,
+ 
+@@ -120,7 +120,7 @@
+ has a positive minimum. States of excess energy O(g) therefore concentrate near
+ that chart and in P.
+ 
+-## 4. Slow min-max convergence with the matter connection retained
++#### 4. Slow min-max convergence with the matter connection retained
+ 
+ Near t_* choose a smooth normalized ground eigenvector u(t). Decompose the P
+ component as u(t) f(t)+eta(t), with u^*eta=0. The local matter gap controls eta.
+@@ -157,7 +157,7 @@
+ Localized functions have Dirichlet normal boundary values. Upper trials stay
+ inside the single minimizing chart. The global bundle need not be trivialized.
+ 
+-## 5. Paired Wilson application and the iterated limit
++#### 5. Paired Wilson application and the iterated limit
+ 
+ For positive electric weights W_E=diag(w1,w2,w3) by direction on an L^3 cube,
+ a harmonic connection is A_(x,i)=phi_i/L and conjugate uniform flux is
+@@ -199,7 +199,7 @@
+ version remains substantive. The slow global gap can coexist with a local
+ phase whose existence and nature have not been established.
+ 
+-## 6. Companion discriminator and inherited status
++#### 6. Companion discriminator and inherited status
+ 
+ A two-coordinate matrix fixture retains a fast cosine well, rotating two-state
+ matter eigenvectors, noncommuting normal coupling, and diagonal charge connections.
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK21_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+@@ -1,4 +1,4 @@
+-# Block21 route and no-go review
++### Block21 route and no-go review
+ 
+ Provisional personal review only. No independent audit.
+ 
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/REVIEW_PERIODIC_HARMONIC_METRIC.md
++++ docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-3
+@@ -1,4 +1,4 @@
+-# Review cross-check: the harmonic electric metric in integer cycle coordinates
++### Review cross-check: the harmonic electric metric in integer cycle coordinates
+ 
+ Personal additional check of Block21, without a new claim status. For a periodic
+ L^3 cubic graph, let C be ANY integer fundamental-cycle matrix with identity
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK22_ITERATED_PHYSICAL_MAXWELL_MATTER_STATE.md
++++ docs/ITERATED_LOCAL_MAXWELL_MATTER_STATE_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+@@ -1,4 +1,4 @@
+-# Physical local observables in the iterated zero-coupling state
++### Physical local observables in the iterated zero-coupling state
+ 
+ Provisional personal derivation, 2026-09-16 UTC. No independent audit. This note
+ uses the fixed-box state convergence of Block21 and the declared paired Wilson
+@@ -6,7 +6,7 @@
+ limit g->0 at each fixed L, followed by L->infinity. The lattice spacing a is fixed.
+ It is not a theorem about the phase at any fixed positive g or a->0.
+ 
+-## 1. Model, state and probes
++#### 1. Model, state and probes
+ 
+ Use untruncated integer U(1) rotors, exact Gauss law div E=Q, the two conjugate
+ number-conserving Wilson species with charges +/-1, and no extra Q^2 interaction.
+@@ -43,7 +43,7 @@
+ operators. Local neutral pairs are also allowed on the full neutral matter
+ space. Paths are fixed as L grows and do not wind around the box.
+ 
+-## 2. The fixed-L state and the Gaussian field law
++#### 2. The fixed-L state and the Gaussian field law
+ 
+ Block21's leading min-max proof gives more than eigenvalue convergence for the
+ ground state. Its normal excited component and excited matter-band component
+@@ -97,7 +97,7 @@
+ This is factorization of these limiting physical probes. It is not a tensor
+ factorization of the original Gauss-constrained microscopic Hilbert space.
+ 
+-## 3. Fixed-time correlation functions, not only static moments
++#### 3. Fixed-time correlation functions, not only static moments
+ 
+ The fixed-L state comparison also has a real-time version for these probes,
+ uniform for time in any fixed compact interval. In the local chart rescale
+@@ -146,7 +146,7 @@
+ characteristic functions (6)-(7) are the main convergence statement; arbitrary
+ unbounded microscopic moment sequences are not inferred solely from them.
+ 
+-## 4. Infinite volume after g->0
++#### 4. Infinite volume after g->0
+ 
+ For unit weights and nonzero lattice momentum k, put
+ d_i(k)=exp(i k_i)-1, omega(k)=sqrt(sum_i |d_i(k)|^2). In the link-base Fourier
+@@ -183,7 +183,7 @@
+ been obtained in this zero-coupling limit. Blocks11–14 considered a different,
+ conditional positive-coupling infrared flow and cannot be substituted here.
+ 
+-## 5. What is resolved, and what is still missing
++#### 5. What is resolved, and what is still missing
+ 
+ The output is an observable-level comparator reached from ground states of the
+ full supplied Gauss-constrained Hamiltonian in a specified order of limits.
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK22_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/ITERATED_LOCAL_MAXWELL_MATTER_STATE_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+@@ -1,4 +1,4 @@
+-# Block22 route and no-go review
++### Block22 route and no-go review
+ 
+ Provisional personal review. No independent audit or axiom change.
+ 
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK23_MATCHED_FREE_CONE_WITH_POSITIVE_WEIGHTS.md
++++ docs/SUPPLIED_MATCHED_FREE_CONE_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+@@ -1,11 +1,11 @@
+-# Matching the free photon and Weyl cones with positive direction weights
++### Matching the free photon and Weyl cones with positive direction weights
+ 
+ Provisional personal derivation, 2026-09-16 UTC. This is a construction within
+ the already supplied weighted rotor family, not a selection theorem or an
+ interacting Lorentz-symmetry theorem. Blocks20--22 remain premises pending
+ independent review. The simple constitutive calculation below is self-contained.
+ 
+-## 1. The mismatch and the allowed change
++#### 1. The mismatch and the allowed change
+ 
+ Block22 kept unit electric and magnetic weights. Its photons therefore had
+ small-momentum metric I while the paired Wilson cones had
+@@ -30,7 +30,7 @@
+ the zero set of the magnetic potential and the flat free matter energy
+ unchanged. It changes the normal zero-point energy and the slow electric metric.
+ 
+-## 2. An exact lattice criterion for equal photon polarizations
++#### 2. An exact lattice criterion for equal photon polarizations
+ 
+ Use link and plaquette CENTERED Fourier phases. Curl is then i[s(k)]_cross,
+ where
+@@ -77,7 +77,7 @@
+ the weights makes every nonzero-momentum frequency positive. Nothing in this
+ calculation addresses photon poles at nonzero coupling.
+ 
+-## 3. Matching any prescribed positive diagonal Weyl metric
++#### 3. Matching any prescribed positive diagonal Weyl metric
+ 
+ Given a prescribed positive diagonal G and any eta>0, choose
+ 
+@@ -105,7 +105,7 @@
+ coordinates. Their full lattice dispersions are not equal. This construction
+ does not change the positions or number of Weyl nodes.
+ 
+-## 4. Compatibility with the observable limit and positive parent
++#### 4. Compatibility with the observable limit and positive parent
+ 
+ Block21's fixed-box proof uses positive normal Hessians and a finite normal
+ gap; it does not require equal unit direction weights. The unique flat-matter
+@@ -140,7 +140,7 @@
+ compatibility does NOT allow exchanging the fixed-g regulator limit of Block16
+ with the g->0 limit here, and does not supply a volume-uniform regulator size.
+ 
+-## 5. What the construction does and does not decide
++#### 5. What the construction does and does not decide
+ 
+ The unit-weight cone mismatch is removable within the supplied Hamiltonian
+ family. It is not by itself a wall forcing a new framework axiom. Conversely,
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK23_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/SUPPLIED_MATCHED_FREE_CONE_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+@@ -1,4 +1,4 @@
+-# Personal route and scope review: matched free cones
++### Personal route and scope review: matched free cones
+ 
+ 2026-09-16 UTC. Same author as the derivation. No independent review or audit.
+ 
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK24_EXACT_RESPONSE_IDENTITIES_AND_PHASE_TEST.md
++++ docs/EXACT_GAUGE_WARD_RESPONSE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+@@ -1,11 +1,11 @@
+-# Exact response identities and the remaining charged-phase test
++### Exact response identities and the remaining charged-phase test
+ 
+ Personal derivation, 2026-09-16 UTC. PROVISIONAL; no independent audit.
+ These are finite-volume identities for the same integer-rotor Hamiltonian.
+ They specify what a positive-coupling phase argument must still control.
+ They do not establish that phase or amend the framework axioms.
+ 
+-## 1. Hamiltonian and physical operators
++#### 1. Hamiltonian and physical operators
+ 
+ On a fixed periodic cubic box use exact div E=Q and
+ 
+@@ -42,7 +42,7 @@
+ The proof is the spectral theorem applied to <F(H-E0)F>, followed by
+ H Omega=E0 Omega. Zero-energy degeneracy does not affect the identity.
+ 
+-## 2. Electric f-sum: an explicit charged contribution remains
++#### 2. Electric f-sum: an explicit charged contribution remains
+ 
+ Using [E_l,U_l^q]=q U_l^q and the curl incidence signs gives exactly
+ 
+@@ -73,7 +73,7 @@
+ same total first moment, so isolating a photon may require a controlled
+ frequency filter and an estimate of the remaining current response.
+ 
+-## 3. Magnetic f-sum: compact nonlinearities remain
++#### 3. Magnetic f-sum: compact nonlinearities remain
+ 
+ F_B commutes with the magnetic and matter terms because it is a function
+ of link angles. The electric kinetic form gives
+@@ -100,7 +100,7 @@
+ by a globally unwrapped angle is not a domain-preserving shortcut: the
+ branch discontinuity is outside this smooth commutator calculation.
+ 
+-## 4. A flat external charge twist is exactly screened by a dynamical link shift
++#### 4. A flat external charge twist is exactly screened by a dynamical link shift
+ 
+ Let v be any real closed link one-form, Cv=0, including a harmonic constant
+ direction on a periodic cube. Apply an EXTERNAL charge twist only to matter:
+@@ -145,7 +145,7 @@
+ in (8). With that probe the holonomy wavefunction can translate, and the
+ entire energy spectrum stays unchanged. No contradiction is involved.
+ 
+-## 5. A decisive diagnostic: static screening is compatible with a massive mode
++#### 5. A decisive diagnostic: static screening is compatible with a massive mode
+ 
+ Consider the explicitly separate quadratic transverse comparator at one
+ nonzero real wave number k, with canonical [A,P]=i,
+@@ -181,7 +181,7 @@
+ identity (9). Even (12) by itself gives weight, not an isolated pole or a
+ sharp dispersion.
+ 
+-## 6. Next derivation contract
++#### 6. Next derivation contract
+ 
+ For the SAME paired Wilson/compact rotor model at some fixed g>0, target a
+ volume-uniform estimate on a specified physical transverse spectral measure
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK24_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/EXACT_GAUGE_WARD_RESPONSE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+@@ -1,4 +1,4 @@
+-# Personal review: which response could certify a photon
++### Personal review: which response could certify a photon
+ 
+ 2026-09-16 UTC. Same author, not independent review.
+ 
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK25_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/REAL_OVERLAP_LOCAL_SOURCE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+@@ -1,4 +1,4 @@
+-# Personal route review: visible threshold on real-overlap momenta
++### Personal route review: visible threshold on real-overlap momenta
+ 
+ 2026-09-16 UTC. Author review only, not independent review or audit.
+ 
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK25_VISIBLE_THRESHOLD_ON_REAL_OVERLAP_MOMENTA.md
++++ docs/REAL_OVERLAP_LOCAL_SOURCE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+@@ -1,10 +1,10 @@
+-# A local source reaches the polarized threshold on a different momentum slice
++### A local source reaches the polarized threshold on a different momentum slice
+ 
+ Personal derivation, 2026-09-16 UTC. PROVISIONAL, no independent audit.
+ Same supplied native Hamiltonian and polarized boundary representation as
+ Blocks9--10. This does not select a physical vacuum or prove a particle pole.
+ 
+-## 1. The remaining source question
++#### 1. The remaining source question
+ 
+ Block9 gives the full fiber floor E_pol=2U-4sqrt(3)|t| at every momentum,
+ with no eigenvector at that floor. Block10 shows that at diagonal momentum
+@@ -33,7 +33,7 @@
+ (E_pol,E_pol+delta) for every delta>0, and has no atom at E_pol.
+ No edge-density exponent or uniform lower weight is claimed.
+ 
+-## 2. A reducing two-letter carrier with nonpositive off-diagonal entries
++#### 2. A reducing two-letter carrier with nonpositive off-diagonal entries
+ 
+ Let s=sqrt(1-c^2)>0 and w=(v-cu)/s. Then u,w are orthonormal and
+ 
+@@ -62,7 +62,7 @@
+ that final u on the right. The intermediate word remains nonempty.
+ This also works at c=0; left u creation is unnecessary.
+ 
+-## 3. The threshold already occurs in this smaller carrier
++#### 3. The threshold already occurs in this smaller carrier
+ 
+ Set alpha=arccos c in (0,pi/2] and choose the real unit curve
+ 
+@@ -94,7 +94,7 @@
+ Thus its floor is exactly E_pol. The pure-length-raising isometry argument
+ from Block9 excludes a normalizable vector at that floor here as well.
+ 
+-## 4. Positivity transfers the floor to the fixed local source
++#### 4. Positivity transfers the floor to the fixed local source
+ 
+ This step does not assume that the source is an algebraically cyclic vector.
+ The positive heat semigroup is enough. Write H=2U+JK-B with B the bounded
+@@ -131,7 +131,7 @@
+ that C_f or the spectral weight is bounded uniformly as the threshold
+ is approached.
+ 
+-## 5. Scope and significance
++#### 5. Scope and significance
+ 
+ The local symmetric source cannot see the full threshold on the nonzero
+ diagonal momentum line of Block10, yet it DOES reach that threshold on

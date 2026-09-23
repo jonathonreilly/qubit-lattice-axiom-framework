@@ -1,0 +1,574 @@
+--- scripts/local_spectrum_check_2026_09_15.py v1
++++ scripts/local_spectrum_check_2026_09_15.py v2
+@@ -245,8 +245,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: shared native-hop definitions and local-source identities')
++    print('per_site: finite polarized word fixtures')
++    print('per_mode: finite source spectral and response fixtures; support-dependent bounds remain analytical')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/quartet_metric_check_2026_09_15.py v1
++++ scripts/quartet_metric_check_2026_09_15.py v2
+@@ -178,8 +178,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: quartet gamma/metric and polarization identities')
++    print('per_site: not executed: continuum matrix and quadrature fixtures')
++    print('per_mode: finite angular/matrix quadrature, not a constructed interacting phase')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/ground_cutoff_check_2026_09_15.py v1
++++ scripts/ground_cutoff_check_2026_09_15.py v2
+@@ -189,8 +189,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: charged Gauss and electric cutoff identities')
++    print('per_site: finite charged loop and four-edge plaquette')
++    print('per_mode: finite cutoff spectra and finite-time matrix evolution')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/quadratic_coframe_check_2026_09_15.py v1
++++ scripts/quadratic_coframe_check_2026_09_15.py v2
+@@ -137,8 +137,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: coframe coefficients and constitutive identities')
++    print('per_site: not executed: supplied continuum matrix fixtures')
++    print('per_mode: finite rational/angular quadrature and flow solutions')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/decay_check_2026_09_15.py v1
++++ scripts/decay_check_2026_09_15.py v2
+@@ -179,8 +179,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: leading kinematic and polarization fixtures')
++    print('per_site: not executed: continuum phase-space fixtures')
++    print('per_mode: finite angular quadrature and momentum-direction samples')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/mixed_history_check_2026_09_15.py v1
++++ scripts/mixed_history_check_2026_09_15.py v2
+@@ -182,8 +182,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: native star histories, CAR signs and finite cocycle identities')
++    print('per_site: finite star-support patterns and CAR matrices')
++    print('per_mode: diagnostic Bloch values only; no native mixed-resolvent spectrum executed')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/cyclic_equilibrium_check_2026_09_15.py v1
++++ scripts/cyclic_equilibrium_check_2026_09_15.py v2
+@@ -262,8 +262,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: cyclic coercivity, CAR and Gauss identities')
++    print('per_site: finite four-edge charged-cycle configurations')
++    print('per_mode: recorded k=1 ground searches and finite thermal spectra only; no untraced three-level credit')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/cyclic_scaling_check_2026_09_15.py v1
++++ scripts/cyclic_scaling_check_2026_09_15.py v2
+@@ -311,8 +311,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: exact Gauss coordinates and oscillator coefficients')
++    print('per_site: finite one/two-plaquette and charged-cycle fixtures')
++    print('per_mode: finite conserved-sector spectra with multiplicities and Fourier refinements; untraced dense ancillary run excluded')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/positive_generator_check_2026_09_15.py v1
++++ scripts/positive_generator_check_2026_09_15.py v2
+@@ -130,8 +130,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: cyclic jump rates and signed-stencil moments')
++    print('per_site: finite one-link generator fixtures')
++    print('per_mode: finite clock-mode spectra and oscillator comparisons in the specified cone')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/charged_ring_check_2026_09_15.py v1
++++ scripts/charged_ring_check_2026_09_15.py v2
+@@ -204,8 +204,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: six-state Gauss frame and symbolic ladder identities')
++    print('per_site: four-site charged ring only')
++    print('per_mode: finite hard-cutoff ring spectra and adverse offset fixture')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/hybrid_curvature_check_2026_09_15.py v1
++++ scripts/hybrid_curvature_check_2026_09_15.py v2
+@@ -165,8 +165,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: finite move rates, detailed balance and source identities')
++    print('per_site: finite cube carrier and curvature fixtures')
++    print('per_mode: finite source directions only; no spectral limit execution')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/hybrid_generator_check_2026_09_15.py v1
++++ scripts/hybrid_generator_check_2026_09_15.py v2
+@@ -153,8 +153,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: finite move rates, detailed balance and source identities')
++    print('per_site: finite cube carrier and curvature fixtures')
++    print('per_mode: finite source directions only; no spectral limit execution')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/integrated_rate_check_2026_09_15.py v1
++++ scripts/integrated_rate_check_2026_09_15.py v2
+@@ -86,8 +86,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: finite move rates, detailed balance and source identities')
++    print('per_site: finite cube carrier and curvature fixtures')
++    print('per_mode: finite source directions only; no spectral limit execution')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/holonomy_check_2026_09_15.py v1
++++ scripts/holonomy_check_2026_09_15.py v2
+@@ -163,8 +163,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: theta/Fourier identities and Hessian controls')
++    print('per_site: finite free-band torus sums only')
++    print('per_mode: finite twist/momentum samples; no fluctuating gauge-field integration')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/slow_fast_check_2026_09_15.py v1
++++ scripts/slow_fast_check_2026_09_15.py v2
+@@ -112,8 +112,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: integer cycle/harmonic metric or local matrix identities')
++    print('per_site: finite periodic cycle coordinates and two-coordinate fixture')
++    print('per_mode: finite sparse slow spectra and cutoff refinement, not cubic interacting phase')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/physical_probe_check_2026_09_15.py v1
++++ scripts/physical_probe_check_2026_09_15.py v2
+@@ -115,8 +115,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: curl covariance and probe identities')
++    print('per_site: finite curl matrices and two-coordinate fixture')
++    print('per_mode: finite sparse probe spectra and matrix evolution; iterated theorem not executed')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/matched_cone_check_2026_09_15.py v1
++++ scripts/matched_cone_check_2026_09_15.py v2
+@@ -127,8 +127,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: positive-weight cone identities')
++    print('per_site: finite periodic curl fixtures')
++    print('per_mode: finite Bloch derivatives and weighted polarization checks')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/response_identity_check_2026_09_15.py v1
++++ scripts/response_identity_check_2026_09_15.py v2
+@@ -166,8 +166,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: charged f-sum and Ward identities')
++    print('per_site: finite charged-ring configurations')
++    print('per_mode: finite matrix spectral/response controls; no pole or phase inference')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/visible_threshold_check_2026_09_15.py v1
++++ scripts/visible_threshold_check_2026_09_15.py v2
+@@ -116,8 +116,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: same-source overlap and reducing-carrier identities')
++    print('per_site: finite word fixtures only')
++    print('per_mode: finite truncated threshold comparisons; no generic edge exponent')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/cofactor_cyclic_check_2026_09_15.py v1
++++ scripts/cofactor_cyclic_check_2026_09_15.py v2
+@@ -174,8 +174,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: finite cochain, signed phase, partition and derivative fixtures')
++    print('per_site: finite source-support configurations only')
++    print('per_mode: finite matrix/operator directions; no all-order or infinite-kernel execution')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/contact_register_check_2026_09_15.py v1
++++ scripts/contact_register_check_2026_09_15.py v2
+@@ -185,8 +185,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: finite cochain, signed phase, partition and derivative fixtures')
++    print('per_site: finite source-support configurations only')
++    print('per_mode: finite matrix/operator directions; no all-order or infinite-kernel execution')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/cut_completion_check_2026_09_15.py v1
++++ scripts/cut_completion_check_2026_09_15.py v2
+@@ -201,8 +201,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: finite cochain, signed phase, partition and derivative fixtures')
++    print('per_site: finite source-support configurations only')
++    print('per_mode: finite matrix/operator directions; no all-order or infinite-kernel execution')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/determinant_exclusion_check_2026_09_15.py v1
++++ scripts/determinant_exclusion_check_2026_09_15.py v2
+@@ -231,8 +231,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: finite cochain, signed phase, partition and derivative fixtures')
++    print('per_site: finite source-support configurations only')
++    print('per_mode: finite matrix/operator directions; no all-order or infinite-kernel execution')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/forest_interpolation_check_2026_09_15.py v1
++++ scripts/forest_interpolation_check_2026_09_15.py v2
+@@ -265,8 +265,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: finite cochain, signed phase, partition and derivative fixtures')
++    print('per_site: finite source-support configurations only')
++    print('per_mode: finite matrix/operator directions; no all-order or infinite-kernel execution')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/gaussian_cycle_check_2026_09_15.py v1
++++ scripts/gaussian_cycle_check_2026_09_15.py v2
+@@ -249,8 +249,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: finite cochain, signed phase, partition and derivative fixtures')
++    print('per_site: finite source-support configurations only')
++    print('per_mode: finite matrix/operator directions; no all-order or infinite-kernel execution')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/graph_source_check_2026_09_15.py v1
++++ scripts/graph_source_check_2026_09_15.py v2
+@@ -241,8 +241,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: finite cochain, signed phase, partition and derivative fixtures')
++    print('per_site: finite source-support configurations only')
++    print('per_mode: finite matrix/operator directions; no all-order or infinite-kernel execution')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/hard_core_cycle_check_2026_09_15.py v1
++++ scripts/hard_core_cycle_check_2026_09_15.py v2
+@@ -221,8 +221,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: finite cochain, signed phase, partition and derivative fixtures')
++    print('per_site: finite source-support configurations only')
++    print('per_mode: finite matrix/operator directions; no all-order or infinite-kernel execution')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/operator_source_check_2026_09_15.py v1
++++ scripts/operator_source_check_2026_09_15.py v2
+@@ -132,8 +132,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: finite cochain, signed phase, partition and derivative fixtures')
++    print('per_site: finite source-support configurations only')
++    print('per_mode: finite matrix/operator directions; no all-order or infinite-kernel execution')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/partition_exclusion_check_2026_09_15.py v1
++++ scripts/partition_exclusion_check_2026_09_15.py v2
+@@ -177,8 +177,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: finite cochain, signed phase, partition and derivative fixtures')
++    print('per_site: finite source-support configurations only')
++    print('per_mode: finite matrix/operator directions; no all-order or infinite-kernel execution')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/phase_energy_check_2026_09_15.py v1
++++ scripts/phase_energy_check_2026_09_15.py v2
+@@ -178,8 +178,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: finite cochain, signed phase, partition and derivative fixtures')
++    print('per_site: finite source-support configurations only')
++    print('per_mode: finite matrix/operator directions; no all-order or infinite-kernel execution')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/general_order_check_2026_09_15.py v1
++++ scripts/general_order_check_2026_09_15.py v2
+@@ -89,8 +89,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: exact finite alphabet and matrix-record identities')
++    print('per_site: finite partial-record and order fixtures')
++    print('per_mode: not executed: no spectral or Fourier calculation is claimed')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/record_pair_check_2026_09_15.py v1
++++ scripts/record_pair_check_2026_09_15.py v2
+@@ -160,8 +160,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: exact finite alphabet and matrix-record identities')
++    print('per_site: finite partial-record and order fixtures')
++    print('per_mode: not executed: no spectral or Fourier calculation is claimed')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/fourier_gaussian_register_check_2026_09_15.py v1
++++ scripts/fourier_gaussian_register_check_2026_09_15.py v2
+@@ -249,8 +249,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: cubic cochain symbols and Gaussian derivative registers')
++    print('per_site: finite support/grid fixtures')
++    print('per_mode: finite Fourier grids and finite register degrees; no infinite-lattice execution')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/tree_count_check_2026_09_15.py v1
++++ scripts/tree_count_check_2026_09_15.py v2
+@@ -84,8 +84,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: cubic cochain symbols and Gaussian derivative registers')
++    print('per_site: finite support/grid fixtures')
++    print('per_mode: finite Fourier grids and finite register degrees; no infinite-lattice execution')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/algebra_naturality_check_2026_09_15.py v1
++++ scripts/algebra_naturality_check_2026_09_15.py v2
+@@ -177,8 +177,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: finite M2 algebra actions and support witnesses')
++    print('per_site: not executed: matrix-profile fixtures are not a spatial lattice')
++    print('per_mode: not executed: symbolic matrix support tests, not a spectral field')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/inverse_corner_support_check_2026_09_15.py v1
++++ scripts/inverse_corner_support_check_2026_09_15.py v2
+@@ -123,8 +123,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: finite M2 algebra actions and support witnesses')
++    print('per_site: not executed: matrix-profile fixtures are not a spatial lattice')
++    print('per_mode: not executed: symbolic matrix support tests, not a spectral field')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/positive_auxiliary_check_2026_09_15.py v1
++++ scripts/positive_auxiliary_check_2026_09_15.py v2
+@@ -373,8 +373,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: cochain, filling and positive auxiliary source identities')
++    print('per_site: actual finite cube configurations')
++    print('per_mode: finite image sums, quadrature and planar Fourier discretizations')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/native_motion_check_2026_09_15.py v1
++++ scripts/native_motion_check_2026_09_15.py v2
+@@ -411,8 +411,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: native gate and signed-hop identities')
++    print('per_site: explicit finite edge-bit configurations')
++    print('per_mode: finite spectral moment and escape diagnostics, not an infinite dispersion')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/native_twist_check_2026_09_15.py v1
++++ scripts/native_twist_check_2026_09_15.py v2
+@@ -267,8 +267,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: signed polarization increments and winding identities')
++    print('per_site: finite native winding configurations')
++    print('per_mode: finite twist/curvature controls, not thermodynamic stiffness')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/polarized_word_check_2026_09_15.py v1
++++ scripts/polarized_word_check_2026_09_15.py v2
+@@ -363,8 +363,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: word/native-hop and radial identities')
++    print('per_site: finite polarized words and edge configurations')
++    print('per_mode: finite truncated word spectra and radial moments')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
+--- scripts/review_harmonic_metric_check_2026_09_15.py v1
++++ scripts/review_harmonic_metric_check_2026_09_15.py v2
+@@ -60,8 +60,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: only the literal finite algebraic/numerical elements in this companion were executed')
+-    print('per_site: only the explicitly enumerated finite configurations; no additional spatial domain checked')
+-    print('per_mode: only the finite spectral/Fourier fixtures in this companion; no uniform-mode execution claim')
++    print('per_element: integer cycle/harmonic metric or local matrix identities')
++    print('per_site: finite periodic cycle coordinates and two-coordinate fixture')
++    print('per_mode: finite sparse slow spectra and cutoff refinement, not cubic interacting phase')
+     print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+     print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')

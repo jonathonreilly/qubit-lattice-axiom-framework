@@ -1,0 +1,16 @@
+{
+  "status": "capture_error",
+  "error": "RunnerIdentityChangedError(\"runner or declared input changed during execution: scripts/rotor_uniform_compact_response_check_2026_09_16.py; before=ExecutionIdentity(content=RunnerIdentity(runner_sha256='bbea0009b470124793dfe432dcb1ad6fb7e06b9e57d5b7376ab049c32052474b', input_fingerprint_sha256='a5b21ad594f9e7979dd202b7bfa7bbaa5a476e01faff1322b36395061a7c11e4'), source_stat_tokens=(('scripts', 16877, 16777231, 243481424, 208096, 1790123484162481558, 1790123484162481558), ('scripts/rotor_uniform_compact_response_check_2026_09_16.py', 33188, 16777231, 247330746, 13651, 1790120057801416838, 1790120057801416838), ('docs', 16877, 16777231, 243427625, 133152, 1790123484110982867, 1790123484110982867), ('docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md', 33188, 16777231, 247330740, 18103, 1790120057799321344, 1790120057799321344))); after=ExecutionIdentity(content=RunnerIdentity(runner_sha256='bbea0009b470124793dfe432dcb1ad6fb7e06b9e57d5b7376ab049c32052474b', input_fingerprint_sha256='a5b21ad594f9e7979dd202b7bfa7bbaa5a476e01faff1322b36395061a7c11e4'), source_stat_tokens=(('scripts', 16877, 16777231, 243481424, 208128, 1790123767717851713, 1790123767717851713), ('scripts/rotor_uniform_compact_response_check_2026_09_16.py', 33188, 16777231, 247330746, 13651, 1790120057801416838, 1790120057801416838), ('docs', 16877, 16777231, 243427625, 133152, 1790123484110982867, 1790123484110982867), ('docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md', 33188, 16777231, 247330740, 18103, 1790120057799321344, 1790120057799321344)))\")",
+  "whole_tree_watchdog": {
+    "limit_bytes": 536870912,
+    "interval_sec": 0.02,
+    "root_pid": 49679,
+    "samples": 8,
+    "peak_tree_rss_bytes": 93913088,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "execution_result_unavailable": true,
+  "capture_script": "/private/tmp/review-drain-20260915/drain8160-capture.py",
+  "capture_script_sha256": "10167fa371629800d21a171add6a66cde6a0f181b49f06222953e12e816a528d"
+}

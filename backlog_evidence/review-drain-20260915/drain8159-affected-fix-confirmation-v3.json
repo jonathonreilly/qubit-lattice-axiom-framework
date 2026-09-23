@@ -1,0 +1,3088 @@
+{
+  "status": "CONFIRMED: V3 NARROW AFFECTED FIXES RESOLVE EARLY-P1/P2/P3; NOT FINAL FREEZE OR LANDING PASS",
+  "draft": {
+    "path": "/private/tmp/review-drain-20260915/drain8159-author-canonical-draft-v3.json",
+    "sha256": "69b509fe13c1041666810b0b30eeb27ab29b8ad0148e093f9d6edc48c2c6a803"
+  },
+  "fix_receipt": {
+    "path": "/private/tmp/review-drain-20260915/drain8159-review-fixes-v3.json",
+    "sha256": "cb07b17c1e97e7952560e7d02b548085f9adb60b41e340911faf7ce734ca9eb4"
+  },
+  "scope": "Same-session affected-fix comparison only. Read full seven-source correction patch and both binding scripts. Independently reconstructed all72 complete proof bodies from exact originals/historical Block27 with only heading depth and actual file-target link presentation. No broad scientific rereview, primary execution, stage, maps, commit, pipeline or audit.",
+  "checks": {
+    "436_current_source_hashes_match": true,
+    "exactly_seven_source_paths_changed": [
+      "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/SUPPLIED_QUARTET_LEADING_DECAY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "scripts/review_harmonic_metric_check_2026_09_15.py",
+      "scripts/tree_count_check_2026_09_15.py"
+    ],
+    "all72_full_proof_bodies_preserved": true,
+    "six_formulas_exactly_restored": true,
+    "two_program_computational_prefixes_identical": [
+      {
+        "path": "scripts/review_harmonic_metric_check_2026_09_15.py",
+        "original_computational_prefix_identical": true
+      },
+      {
+        "path": "scripts/tree_count_check_2026_09_15.py",
+        "original_computational_prefix_identical": true
+      }
+    ],
+    "two_program_N5": [
+      {
+        "path": "scripts/tree_count_check_2026_09_15.py",
+        "all_five_exact_requested_scope_lines": true
+      },
+      {
+        "path": "scripts/review_harmonic_metric_check_2026_09_15.py",
+        "all_five_exact_requested_scope_lines": true
+      }
+    ],
+    "25_mathematical_owner_closures_independently_recomputed_and_hashed": true,
+    "41_actual_runtime_closures_membership_unchanged_and_hashes_fresh": true,
+    "runtime_vs_math_distinction": "Nine prior differences are cited mathematical parents, not actual file-read omissions. Separate mathematical_premise_closure records now bind them, without fabricating execution or runtime reads.",
+    "cost_basis_only_changes": "tree_count and harmonic_metric now describe their actual combinatorial and small dense integer programs. Both time/RSS caps unchanged; other cost records unchanged.",
+    "historical_failure_preserved": "V2 false blanket proof-preservation assertion explicitly superseded. Initial binding-script KeyError occurred after source fixes/proof check; continuation completes metadata only. Old source copies and both scripts retained."
+  },
+  "findings": [],
+  "resource_limit": "Prior tentative operational-ceiling assessment remains:22110-row sparse factor workspace is unmeasured;1GiB is not a proved peak bound. Any eventual bounded capture must preserve cap failures without weakening fixtures/tolerances.",
+  "pending": [
+    "root guarded current-main advance and any necessary affected identity reconciliation",
+    "nine additive map entries and actual dual discovery/cheap preflight",
+    "cold exact-tree confirmation before any capture",
+    "eventual bounded primary evidence and final source/evidence review"
+  ],
+  "controls": {
+    "path": "/private/tmp/review-drain-20260915/drain8159-affected-fix-confirmation-v3-controls.json",
+    "sha256": "ce7f3834596daee5ba804507a11ee5d46b33c01290ae3f78fd07842da5de86da"
+  },
+  "inspected_source_identities": [
+    {
+      "path": "docs/CHARGED_RING_SLOW_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "cbbcbb346f725448b936df560904842eb6390b0751585d31616a2c63b2ca6b98",
+      "matches": true
+    },
+    {
+      "path": "docs/CUBIC_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "7d446318b8dbc204b2c1cef233f901078cdd6829bb325db2cb7e0100633fb8ca",
+      "matches": true
+    },
+    {
+      "path": "docs/CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "d13c0d208e8915fcf4c7398dcc144536f1305046a57cbe9245088bfd04f7bc2f",
+      "matches": true
+    },
+    {
+      "path": "docs/EXACT_GAUGE_WARD_RESPONSE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "7a460381594eb146002105566995fb328d827051ddaa4eed28936e202e81f72e",
+      "matches": true
+    },
+    {
+      "path": "docs/FINITE_GRAPH_CYCLIC_WEAK_COUPLING_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "aa4b2dc8acbe9bfade778ceb1b9d6b2d711721a76fde517c8c690cc5ce863218",
+      "matches": true
+    },
+    {
+      "path": "docs/FINITE_NATIVE_WINDING_CURVATURE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "bfbbb45f3ec7ca59b0d32d9482f209d0da16098f1b4cafe39882d903077236e9",
+      "matches": true
+    },
+    {
+      "path": "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "84d8eecde04a7fe9f60014a36fe265a413ba779c1487b416115c15f472d7d2f1",
+      "matches": true
+    },
+    {
+      "path": "docs/FIXED_COUPLING_ROTOR_GROUND_CUTOFF_COMPACTNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "fce8dfa118325552e93dec94089c9c76b3b5ed52e0c31f9742372297a47f97b4",
+      "matches": true
+    },
+    {
+      "path": "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "3c22468d38ee7733013b0d663507f9d2a5bcba75460f4700e02d949a8768b823",
+      "matches": true
+    },
+    {
+      "path": "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "58b714ec8df5a67efc65037caa1721178e1400c55d0bc743fd5a1227448ae542",
+      "matches": true
+    },
+    {
+      "path": "docs/ITERATED_LOCAL_MAXWELL_MATTER_STATE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "a8f99cf9b8e30031a85ff0b4e24cbddb38351a8ba0c01fa4a9d8c8cbfae9d111",
+      "matches": true
+    },
+    {
+      "path": "docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "a3a855d8f48556d991537d5bd5aefe2d9d9a9fd9a0b561311c2d2921ee9c07a1",
+      "matches": true
+    },
+    {
+      "path": "docs/NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "69299818ff8e463e4a246044f4b160a7a22867e7205bcb55f56cdeb802149192",
+      "matches": true
+    },
+    {
+      "path": "docs/NATIVE_MIXED_SIXTH_ORDER_COEFFICIENT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "6aa00d3bbba0927f92f1dbd4da52b83e0b15f21a5c03816c04bd7f4699f23392",
+      "matches": true
+    },
+    {
+      "path": "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "5c4482c4a0531be707f64ffeb07b705659d6aa19478b3be2878929f5b39a794a",
+      "matches": true
+    },
+    {
+      "path": "docs/POSITIVE_AUXILIARY_CURRENT_LAW_AND_REGULATOR_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "5e89b910f645b5ad9545185389c2d45d6eac22c92c2003f6db465250fcb08571",
+      "matches": true
+    },
+    {
+      "path": "docs/POSITIVE_ELECTRIC_GENERATOR_CONE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "6e96b8182ce7725fb42ecf2ffa3e7380e773773cabb751e6eedf32b67cd55a1c",
+      "matches": true
+    },
+    {
+      "path": "docs/REAL_OVERLAP_LOCAL_SOURCE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "b55c574197329d931e39ced4cb34063ebe1438dcf654c7d049d76340d60e8c23",
+      "matches": true
+    },
+    {
+      "path": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440",
+      "matches": true
+    },
+    {
+      "path": "docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "5bc92988ff07bd2767970a7ae0f9f3c6f2ba31589ee6866c72899608331f5cc8",
+      "matches": true
+    },
+    {
+      "path": "docs/SUPPLIED_MATCHED_FREE_CONE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "24dbc17e78cb932f240f6b0bdbec62663795b3cfccb1030a5ca8f1b7ff1cdfab",
+      "matches": true
+    },
+    {
+      "path": "docs/SUPPLIED_QUARTET_LEADING_DECAY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "8979b78cb9939242eefccc2dfc321a0ff8ea63c61b4da07590b2941a68d7a61c",
+      "matches": true
+    },
+    {
+      "path": "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "0d103102a710ebde79af54b2b63e811d2381abf80874c4a203eb76d04d2853af",
+      "matches": true
+    },
+    {
+      "path": "docs/SUPPLIED_QUARTET_QUADRATIC_BACKREACTION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "3f5b18314e2d2aec6288db338bc157c2fbdbce5a7a4ced534179dc39de612f1a",
+      "matches": true
+    },
+    {
+      "path": "docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "1350f7749db4bb61e69d93740b9eda9d76fbf2fc11fa0b76cb3e4bf2639aaf32",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/README.md",
+      "sha256": "8e281fd13162ebd8d8d424fbb2337083898bdba9eddc72937e4897bd5e3371ca",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/imports/BLOCK27_ALL_COMPONENT_MIXED_COEFFICIENT.md.gz",
+      "sha256": "9e2bfe6c1d29cbf09805922f3a13e3ea33da0960883bae568b19033383079002",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/imports/manifest.json",
+      "sha256": "d53fff78d69c66f110b72e809968af9f2a4ce35b87afbfffe8ca582b60a889da",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/manifest.json",
+      "sha256": "3c3e11b79c35b8d426442c627ef149c8d18dc9bfd68dfe1d52ca858bd5d16ec0",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/001-APPROACH_REGISTRY.md.gz",
+      "sha256": "459a27482180ec2ebb47380840d9ccac5aa9b275cdf7a798103a388f5a0638c6",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/002-GOAL.md.gz",
+      "sha256": "4b1bbdc0bf352a426afdcf039fb431e69b89d3d310c2aaa313013a9794c617f1",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/003-HANDOFF.md.gz",
+      "sha256": "94f3c599f4ead53e6546d6651af42b53b4a1461468638e474c5b7a6903b0d523",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/004-NO_GO_LEDGER.md.gz",
+      "sha256": "4358f1324f4259638aca683bb1a2f0264abdc1b2f219dbaaf9c6174813f07269",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/005-OPPORTUNITY_QUEUE.md.gz",
+      "sha256": "602058418f61b91fb829736cb9b9e4f60c41c87f699eb45c25aae9e5142fc316",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/006-READING_LEDGER.md.gz",
+      "sha256": "9778a5aba3729ef557e9974b75ffea426512dd50cedd020b08d2281df8d54e2e",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/007-README.md.gz",
+      "sha256": "e2d74ed0ef6799b8bcab13145ce938ea3ddd58d235fa4ce99fad5941d54894eb",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/008-STATE.yaml.gz",
+      "sha256": "8d82a32149f14812cc57227aace0262247a49dfd4090cc651f54e4252a41745d",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/009-TRACE_GATE.md.gz",
+      "sha256": "a10beda957b1f8de28d2f7a73af124124c1c9c8e430473e2bdff6abf1706953a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/010-block10_local_spectrum_check.json.gz",
+      "sha256": "39508079ff613273475c822632f7fcead1a1ef461936617dce14917a0abfd9dc",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/011-block10_local_spectrum_check.py.gz",
+      "sha256": "927be7cb5f625670320dfe0bc76ed36b77d77ee5d66ef63c69b210d475204895",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/012-block10_local_spectrum_check.txt.gz",
+      "sha256": "39508079ff613273475c822632f7fcead1a1ef461936617dce14917a0abfd9dc",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/013-block11_quartet_metric_check.json.gz",
+      "sha256": "034791ae920009e5e6b411872413faf100e06eab7fef4aa8eb425973c6a299fa",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/014-block11_quartet_metric_check.py.gz",
+      "sha256": "bd72d2530059d031d3083c1208b0800707f7c09961ef59f8f2adc4146958bda0",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/015-block11_quartet_metric_check.txt.gz",
+      "sha256": "034791ae920009e5e6b411872413faf100e06eab7fef4aa8eb425973c6a299fa",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/016-block12_ground_cutoff_check.json.gz",
+      "sha256": "b1f44000ecdd9a2dc27e21db9d43e13b534d84fb5e1b5787d23a2741334f91b9",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/017-block12_ground_cutoff_check.py.gz",
+      "sha256": "bb02646fd2d554fedc8f4568f5085b04354225f97bc16a87dfa07190482d021c",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/018-block12_ground_cutoff_check.txt.gz",
+      "sha256": "b1f44000ecdd9a2dc27e21db9d43e13b534d84fb5e1b5787d23a2741334f91b9",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/019-block13_quadratic_coframe_check.json.gz",
+      "sha256": "bdb451af64e27f151f2c95c1f897c025ebd5220597e314bb11dc1dd785734973",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/020-block13_quadratic_coframe_check.py.gz",
+      "sha256": "ec831436a7d828164eb7731651639a6810e19451f7a58182bbd4c22c025a5890",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/021-block13_quadratic_coframe_check.txt.gz",
+      "sha256": "bdb451af64e27f151f2c95c1f897c025ebd5220597e314bb11dc1dd785734973",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/022-block14_decay_check.json.gz",
+      "sha256": "75c0ce60c30e9dd737f23e74baaf2d1a29897399348cbb51855d6a8e40d73b68",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/023-block14_decay_check.py.gz",
+      "sha256": "ecd755e2898717ad554d7ea6657df28ffa0c21409690a30b7b8a36c70339b08d",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/024-block14_decay_check.txt.gz",
+      "sha256": "75c0ce60c30e9dd737f23e74baaf2d1a29897399348cbb51855d6a8e40d73b68",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/025-block15_mixed_history_check.json.gz",
+      "sha256": "ec70322eca3c7a21863dbeb3c5208983b9816423fbae9a3d39202492b4ff2653",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/026-block15_mixed_history_check.py.gz",
+      "sha256": "3013f73ab5b48d92361d6c789f8eb63daf392916f465b4d56343dc26e07ab608",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/027-block15_mixed_history_check.txt.gz",
+      "sha256": "ec70322eca3c7a21863dbeb3c5208983b9816423fbae9a3d39202492b4ff2653",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/028-block16_cyclic_equilibrium_check.json.gz",
+      "sha256": "5e464c2fcbd2884296379d12a1b371be969682b85f8fbe680e2eeea66da36030",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/029-block16_cyclic_equilibrium_check.py.gz",
+      "sha256": "b3eee32bbfadd26380effb4debc73c932818bf932d37cccae16746a7006db97a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/030-block16_cyclic_equilibrium_check.stderr.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/031-block16_cyclic_equilibrium_check.txt.gz",
+      "sha256": "5e464c2fcbd2884296379d12a1b371be969682b85f8fbe680e2eeea66da36030",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/032-block17_cyclic_scaling_check.json.gz",
+      "sha256": "ebf6c2ba92870737b111ed1575fada9f4b6a4f15113be5719d3c696f0a7ac25e",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/033-block17_cyclic_scaling_check.py.gz",
+      "sha256": "a6fd95751a123bbed5445e3cd9c67851ddd351bf97d73c03950f35ad0c471a09",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/034-block17_cyclic_scaling_check.stderr.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/035-block17_cyclic_scaling_check.txt.gz",
+      "sha256": "ebf6c2ba92870737b111ed1575fada9f4b6a4f15113be5719d3c696f0a7ac25e",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/036-block18_positive_generator_check.json.gz",
+      "sha256": "9c69c3603868704cded6c209dc78bb11583d9305ecaae972ee556572d738d129",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/037-block18_positive_generator_check.py.gz",
+      "sha256": "d8a1aa28f6e1594e5bc455691c5a9345fe7bcbf786f77188c0aea82702c4e1df",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/038-block18_positive_generator_check.stderr.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/039-block18_positive_generator_check.txt.gz",
+      "sha256": "9c69c3603868704cded6c209dc78bb11583d9305ecaae972ee556572d738d129",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/040-block19_charged_ring_check.json.gz",
+      "sha256": "6e87c2c01f9b363138f1eae346217f86051e971e7904449ab0c7736aaa20c9ac",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/041-block19_charged_ring_check.py.gz",
+      "sha256": "ce425068efcc7177d37a6b0b7d68def331b1d7e01147df474bc508fea230d8f2",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/042-block19_charged_ring_check.stderr.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/043-block19_charged_ring_check.txt.gz",
+      "sha256": "6e87c2c01f9b363138f1eae346217f86051e971e7904449ab0c7736aaa20c9ac",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/044-block1_hybrid_curvature_check.json.gz",
+      "sha256": "16c589f80607a5d4d8158e33e156031977b5f0907d8044355b08fed6c7476a55",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/045-block1_hybrid_curvature_check.py.gz",
+      "sha256": "331a7f181bf114c366809d7fb8807ffd419a996caf85356da23d1067975f53ff",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/046-block1_hybrid_generator_check.json.gz",
+      "sha256": "07e3a917bc8319d2e50e1219d7552050d0581fc950a386a7cb8a6a816ac82958",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/047-block1_hybrid_generator_check.py.gz",
+      "sha256": "124e9ee9221b51edc88cd956998a099b159b7ba1e7d5dbace949e0f9dfb08e80",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/048-block1_integrated_rate_check.json.gz",
+      "sha256": "fcf205e5a00619395d5c689e0701d01927ec259e4ef5e7ed9eba05492cafaad3",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/049-block1_integrated_rate_check.py.gz",
+      "sha256": "cf9017c3df82729adc7b20c978429762952fad884ee5c2734806a37d7a508c07",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/050-block20_holonomy_check.json.gz",
+      "sha256": "cf6bd5007613fe92c6185358fd304c62e149aa2c72b16c05093493ec41e8c835",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/051-block20_holonomy_check.py.gz",
+      "sha256": "6d675f8c6afb4060c37fb417f173c1626fcb3f56fff9ca3573f1c8790713c65d",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/052-block20_holonomy_check.stderr.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/053-block20_holonomy_check.txt.gz",
+      "sha256": "cf6bd5007613fe92c6185358fd304c62e149aa2c72b16c05093493ec41e8c835",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/054-block21_slow_fast_check.json.gz",
+      "sha256": "8c1bb5f429f9ae8e7668371133a36a818f0bb087116fe36b8202e7a7f52d4237",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/055-block21_slow_fast_check.py.gz",
+      "sha256": "e7c56ed47c69d775ea82c0b2775fc6d1db00ac7f8a8815c4aea26d65433452b5",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/056-block21_slow_fast_check.stderr.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/057-block21_slow_fast_check.txt.gz",
+      "sha256": "bad99634e4ef4f1f9da5d3b9a6a8b5ee7651d485eb09488fd32501c7db5c7dd0",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/058-block22_physical_probe_check.json.gz",
+      "sha256": "03d9d0305284e65c69356198ea18f3b61d4caad828c9248d91e6acae5cefc30b",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/059-block22_physical_probe_check.py.gz",
+      "sha256": "08239d0d1de1b324fbe123fd1bf964aaa4a3304ad14c7b875a5cc39ad257a870",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/060-block22_physical_probe_check.stderr.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/061-block22_physical_probe_check.txt.gz",
+      "sha256": "ccf83054eb5bed303448a36b9228d2472a559a1176f6cad7fe1c59c9ca5c7305",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/062-block23_matched_cone_check.json.gz",
+      "sha256": "72285911f73d2369a5bdc73a5eb6c853e951699af9370c845c61a4cdb97544bd",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/063-block23_matched_cone_check.py.gz",
+      "sha256": "c0872fdc79340b6eef354f9efce0326a81a7c7cd7b686f41455173468ef58ac7",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/064-block23_matched_cone_check.stderr.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/065-block23_matched_cone_check.txt.gz",
+      "sha256": "72285911f73d2369a5bdc73a5eb6c853e951699af9370c845c61a4cdb97544bd",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/066-block24_response_identity_check.json.gz",
+      "sha256": "0859dd776ecad019d32936c1ac1bd8c36d2eeece1b40afd71dc6aa14a55577d7",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/067-block24_response_identity_check.py.gz",
+      "sha256": "19dfa84ac182e177ddfc16d2ed020851234d600c47cf3718cc00d799a935d4e1",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/068-block24_response_identity_check.stderr.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/069-block24_response_identity_check.txt.gz",
+      "sha256": "0859dd776ecad019d32936c1ac1bd8c36d2eeece1b40afd71dc6aa14a55577d7",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/070-block25_visible_threshold_check.json.gz",
+      "sha256": "ee0eb46562340a551af201fe86308168bcb4f56c9b841350e4dc518ad5272a26",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/071-block25_visible_threshold_check.py.gz",
+      "sha256": "c950520e7c2e3e8d982c3aaefdda18ffb074d8faa2c3e1e68a06724e5b732716",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/072-block25_visible_threshold_check.stderr.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/073-block25_visible_threshold_check.txt.gz",
+      "sha256": "ee0eb46562340a551af201fe86308168bcb4f56c9b841350e4dc518ad5272a26",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/074-block2_cofactor_cyclic_check.json.gz",
+      "sha256": "46783bbb33fe5dec820f4d47a0309d17cab8d78f958487bab33cd70ba0f6d709",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/075-block2_cofactor_cyclic_check.py.gz",
+      "sha256": "47abcbbd31035998c1150d4afdb9c7cde0a84346f36f9a06cffc4a56532e9277",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/076-block2_contact_register_check.json.gz",
+      "sha256": "ed7aaa64f9941764279074e4131cf4e442f0d5e015fbf2664d68f659bb41ae35",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/077-block2_contact_register_check.py.gz",
+      "sha256": "05383da95abde9f62c0568047af6ddee88871b823ab907bd9ed8a16585cbf6f0",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/078-block2_cut_completion_check.json.gz",
+      "sha256": "a32a6774653b04caf957523a7fc4685fda6483d3eac6775160c144b1d7988cf0",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/079-block2_cut_completion_check.py.gz",
+      "sha256": "db30fa8511b9fdee037b7817706f7ea9cb7730ce7aae4a0e98b0e094d4c1489c",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/080-block2_determinant_exclusion_check.json.gz",
+      "sha256": "56dfb99c70d1757756a56db7c18ec53fb58e5e80b9c711bab0bfcafb3f6dd33e",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/081-block2_determinant_exclusion_check.py.gz",
+      "sha256": "a73fedf728e949578c1f51df971ccd44a635cc83c00b4db5b070c7d234909af7",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/082-block2_forest_interpolation_check.json.gz",
+      "sha256": "e849d8cc0b4777ec9e578f9ca8e04aa085b815a43a90016a45eeca25531ed64f",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/083-block2_forest_interpolation_check.py.gz",
+      "sha256": "63ddc2dcd5536cdca036d6b4c012dcfd14400a180be58dbe1a196a6c774957f5",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/084-block2_gaussian_cycle_check.json.gz",
+      "sha256": "25f9cc3cfaeed4527f3a693e5fe0ca3a09d74081771a16c9f6d0a1a9a402614c",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/085-block2_gaussian_cycle_check.py.gz",
+      "sha256": "7777b6462ef0f84a78931a678ccc13db982ef874a6360c8bdbef12e91e53ca57",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/086-block2_graph_source_check.json.gz",
+      "sha256": "c7b7c7188aaaea7e2528c8e18a81e541cc5a1026f7178abf899a0165503495f1",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/087-block2_graph_source_check.py.gz",
+      "sha256": "4b52fc044bf659af9958998fc38a96cc2d6e6aa41da58bdd10a087044a2963d7",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/088-block2_hard_core_cycle_check.json.gz",
+      "sha256": "8c6dc9676aa795ead9c94f99e4181c0c37f8f6f6626904318304472123c60911",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/089-block2_hard_core_cycle_check.py.gz",
+      "sha256": "67d6f4ae40641871dee7a27c3bd7d40d71ba99b8c2f61e2f3a169f98e8cae2e8",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/090-block2_operator_source_check.json.gz",
+      "sha256": "0d0c7643554f5de6c768efdd2d3fbf62eeb8a1c6fe62e27e611b2369f4ad5d9b",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/091-block2_operator_source_check.py.gz",
+      "sha256": "ccc6fec201e142859c6487ba4c749531f5263597ac4d161f275f162e8c33a956",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/092-block2_partition_exclusion_check.json.gz",
+      "sha256": "2015347a3d3cd360f39fcf951080c6bdaaf7de1003c69b9fd43613909857038e",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/093-block2_partition_exclusion_check.py.gz",
+      "sha256": "25fc42cf7cfdb660e4e5ca7fdcb683c0f93f230ed32ac9135ee481ceb1975a5d",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/094-block2_phase_energy_check.json.gz",
+      "sha256": "7ba4a947e265135c0d836dee14f834cf32e619acf4ecbd66b4a1387314d81caa",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/095-block2_phase_energy_check.py.gz",
+      "sha256": "3bcde1e906fa964fd450fea5fcb4fb71791185ef13b7dd7f423a63e36da9af46",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/096-block3_general_order_check.json.gz",
+      "sha256": "c29e90b27988a72bd7a31815eb41060018c0f83b02f873439b3b0c2e84945915",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/097-block3_general_order_check.py.gz",
+      "sha256": "2d2099ea7b09f84142da722041c1ffe2fcaca105baf9add56ce6ae0bf23dc4e4",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/098-block3_general_order_check.txt.gz",
+      "sha256": "06220242d83ff54fc7103e109752f32174add82e8284d1cf845f112f62923315",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/099-block3_record_pair_check.json.gz",
+      "sha256": "21be01b5e3df5b6a49a6999b3049e87c6a3806a0ad658e9c8fadb1db82a0a66c",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/100-block3_record_pair_check.py.gz",
+      "sha256": "f251dbe6615cb6b3269bd7e03ef15bfc877ece2b20a5df3047666c0d0ecc1677",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/101-block3_record_pair_check.txt.gz",
+      "sha256": "57e02613669904a7864b2f6769af66bde27cd10f55de0590a01a7fe4250fd129",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/102-block4_fourier_gaussian_register_check.json.gz",
+      "sha256": "507a3cb359fe2790506c4f70d0fff23ee959d111309a54edfbf526aff6b65ece",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/103-block4_fourier_gaussian_register_check.py.gz",
+      "sha256": "551a7e10ca6915c9d274c50ebe37e0360d5c3cef4e1750f21dbaba7bd9eb86fd",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/104-block4_fourier_gaussian_register_check.txt.gz",
+      "sha256": "507a3cb359fe2790506c4f70d0fff23ee959d111309a54edfbf526aff6b65ece",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/105-block4_tree_count_check.json.gz",
+      "sha256": "2b007de62be928b4156be1c0366787f8bb1e7aa2ce545e1169ca3ce4467d9bab",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/106-block4_tree_count_check.py.gz",
+      "sha256": "e62e103cc7dcce8b554c697804f7a15996eca56663e5fba22a2cb820ad73c03b",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/107-block5_algebra_naturality_check.json.gz",
+      "sha256": "709cf5af89e30e09e1ab7e7e66f6196cb727d179bb83896dd1ebd82ce4d87685",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/108-block5_algebra_naturality_check.py.gz",
+      "sha256": "cf65557dbf739fc60e3f3956c56d6f4408dd3d0dba72da6ee2dcabbc38116c84",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/109-block5_algebra_naturality_check.txt.gz",
+      "sha256": "729e8d76ae1e099fcb0435a8da0bbd5534fc0346cdb41873b22f99acf41860bb",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/110-block5_inverse_corner_support_check.json.gz",
+      "sha256": "ba3089afca7c1ae48e09fc67a42a275c388fd2dae8aa414d9844accd184b6088",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/111-block5_inverse_corner_support_check.py.gz",
+      "sha256": "6884eaf6e523c741a4a58c31800cc86ac331a77122f661f4baeb81438a425943",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/112-block5_inverse_corner_support_check.txt.gz",
+      "sha256": "dd67fbb3ddfd9f3b31f971850aac90795eeeb6f78e09cfa5b0d2d52e1309cc35",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/113-block6_positive_auxiliary_check.json.gz",
+      "sha256": "0a588849a7f0cf9e70c53458b98bc41ffe98903b44f398597ba0ca49ace7fc3e",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/114-block6_positive_auxiliary_check.py.gz",
+      "sha256": "b63d8cd53e308d5ae8d84b4622f87d00476454b9c51bc56d0fd9e9e40d0ae706",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/115-block6_positive_auxiliary_check.txt.gz",
+      "sha256": "ade2289d848dc83347f487bfda7e2f8501cbbaa24aa0fa97d3826ed156f43069",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/116-block7_native_motion_check.json.gz",
+      "sha256": "212626dfaa7fe8362814eef4f4d17de1f91e166088ea13f5665c46c28efa2cac",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/117-block7_native_motion_check.py.gz",
+      "sha256": "ee50d5ba02420d714c3dfa7c034f3c54b60c8ff85854bd13ae22617595151926",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/118-block7_native_motion_check.txt.gz",
+      "sha256": "212626dfaa7fe8362814eef4f4d17de1f91e166088ea13f5665c46c28efa2cac",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/119-block8_native_twist_check.json.gz",
+      "sha256": "b54ac17d97d17cefe71742f9628b3724440fc84d187cb73a1ea3b18eec60b717",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/120-block8_native_twist_check.py.gz",
+      "sha256": "e4b3618833d562c081ccb17807a0f9bf4b9a9d34753cd8d9a9b24d622d9e9ed6",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/121-block8_native_twist_check.txt.gz",
+      "sha256": "b54ac17d97d17cefe71742f9628b3724440fc84d187cb73a1ea3b18eec60b717",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/122-block9_polarized_word_check.json.gz",
+      "sha256": "4c7258700811aecfda6af0027921bca02342ffd61640bb9725becd59396a9209",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/123-block9_polarized_word_check.py.gz",
+      "sha256": "13fa3bd92dae385f3963eb491e79045a70dc9b6a6efae43bd2166632e60fd3ee",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/124-block9_polarized_word_check.txt.gz",
+      "sha256": "4c7258700811aecfda6af0027921bca02342ffd61640bb9725becd59396a9209",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/125-review_harmonic_metric_check.json.gz",
+      "sha256": "734ab4625f32115d51e474a931115afeecadf60efdf3f5ed15b8b18106cc1cbe",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/126-review_harmonic_metric_check.py.gz",
+      "sha256": "80819acea1c046f868e6ba90ceb95aa6cb20c98851d8c7a110bc00cfeada7efa",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/127-review_harmonic_metric_check.stderr.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/128-review_harmonic_metric_check.txt.gz",
+      "sha256": "734ab4625f32115d51e474a931115afeecadf60efdf3f5ed15b8b18106cc1cbe",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/129-BLOCK10_LOCAL_SOURCE_SPECTRA_AND_DARK_THRESHOLD.md.gz",
+      "sha256": "581ae12d7268f27840145d8de00e5ca24c798dbb1ec044b3cf88424782c390d7",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/130-BLOCK10_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "sha256": "b57163f9e0574668915d412753b53f814c6e50cd179d4c687555874550711fe4",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/131-BLOCK11_QUARTET_METRIC_FLOW_AND_POLARIZATION.md.gz",
+      "sha256": "87f871e6719e9b069e7d426973cd93be6f709d96f6e856edd5ace82e38eb02a9",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/132-BLOCK11_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "sha256": "e98a09899523d05792f7c7f9c17e32118317c7ddcfc3ab06416aba8f6ca282d6",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/133-BLOCK12_GROUND_STATE_CUTOFF_COMPACTNESS.md.gz",
+      "sha256": "96a76723935841a1a338c544e0277e1c58b9313091a538cf67e668c9b629dbc4",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/134-BLOCK12_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "sha256": "b0318f9219fb71873f28fda24a7e3a10dd674cf4734105b11d93dc1b38eb73b2",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/135-BLOCK13_QUARTET_QUADRATIC_BACKREACTION.md.gz",
+      "sha256": "11d5eeca7c30884f9b15e9cf0a3bfe81b21fc71a7e9e8697fa94d8c97000d782",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/136-BLOCK13_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "sha256": "81b04259d4ccc2d3689db545ecc6b938147dbd50c05129e6c68e8ee50b103770",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/137-BLOCK14_QUARTET_DECAY_AND_CONE_STABILITY.md.gz",
+      "sha256": "d22782e8209b3352c84b334f85ff668892e16536cd546b0b88ec45802f296f96",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/138-BLOCK14_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "sha256": "be21a164c7e024f4146c870952cfe5752e6942904a40227b9aac7d73f97ab67b",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/139-BLOCK15_MIXED_HISTORY_BOUNDEDNESS_AND_SIXTH_POLE.md.gz",
+      "sha256": "4d8e11755ad3659eafb629245957eec83febd8a35a7397d6120eb91118650e27",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/140-BLOCK15_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "sha256": "73d399a2b0e4e7fc3119840d73de15beccc4eaf3dc96760b63f86351ddc640b9",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/141-BLOCK16_CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT.md.gz",
+      "sha256": "3dd9a8a6ef9cad43c8a2667925c9a7cb77ab547dc5487dd9906b18ebfcaa4e6b",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/142-BLOCK16_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "sha256": "9b2b6825e3fbc7849dd598f3282135b09f856e114f347a220999a0ad35da1455",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/143-BLOCK17_CYCLIC_WEAK_COUPLING_SPECTRAL_LIMITS.md.gz",
+      "sha256": "829bf42d17383da128614d43ce66b3cb87f49d96c8438c60b9319804cc941a5f",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/144-BLOCK17_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "sha256": "bd94cdd192d028c7f21de0fb9e72f074f2a9f4e2097f3838c79454c2a02bf0c3",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/145-BLOCK18_POSITIVE_ELECTRIC_GENERATOR_ACCURACY.md.gz",
+      "sha256": "c3c0c959510061b399c0e7b579174bee93662b8276661ec1ffb9469ef0a7d7e3",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/146-BLOCK18_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "sha256": "0efd81bb0ed91b62e77cf2280197fd6e73c0d2c7d761a2f8c34638239e2cc6e5",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/147-BLOCK19_CHARGED_RING_SLOW_SPECTRUM.md.gz",
+      "sha256": "fab034accb1c4a9ff1e004bcb07652563bebc06bab591fd7f705ce3f77240f1a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/148-BLOCK19_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "sha256": "7efafa3728b52756ffe9323347ac72ffb3b80a500b9e0e8a814ab1b34d8623d6",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/149-BLOCK1_BOUNDED_RATE_ALTERNATIVE.md.gz",
+      "sha256": "a3063f522c4636b05163cffbd36f2f4feadd3d18e7b7bf112dd193656051467a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/150-BLOCK1_CURVATURE_TEST_DESIGN.md.gz",
+      "sha256": "24b6f79c74fe0fbd48164fea3d6015d32d5762739ac19c72d68c12b5e0fd79f9",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/151-BLOCK1_INTEGRATED_IDENTITIES_AND_RATE_MOMENTS.md.gz",
+      "sha256": "3cc39cb36d58e45ad832c97d83a145ca765cdceb75e0d5330202d464643cc851",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/152-BLOCK1_POINTWISE_CURVATURE_WITNESS.md.gz",
+      "sha256": "414d9820b3ecd766e7f8ab2c4586e18023deedeb5f244598d03dc7e63e9d2ca3",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/153-BLOCK1_POSITIVE_HYBRID_GENERATOR.md.gz",
+      "sha256": "879b05c50f84b9ed1fec12a4a8240ff519f1b7391bab50b4f0ed08c19f46835b",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/154-BLOCK20_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "sha256": "7e160aa38dc9926aa4f503df699b7d0fc31d7fd1e5d760a48ffe2790e3c31f17",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/155-BLOCK20_WEYL_HOLONOMY_CASIMIR_SELECTION.md.gz",
+      "sha256": "9ea9d2dd6bbe524d14e65cdb6d9810122354c315c36ffc74ff0b5c371ad476f8",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/156-BLOCK21_FIXED_BOX_SLOW_HOLONOMY_THEOREM.md.gz",
+      "sha256": "0d7146c40a26ef13dfe257ee2d58918cf503aea05441da857f1e2d8933ff52f4",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/157-BLOCK21_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "sha256": "6354eb0fd7ad4e7bf0a5e924cb9464571064fab720a347dc595c3251507bec42",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/158-BLOCK22_ITERATED_PHYSICAL_MAXWELL_MATTER_STATE.md.gz",
+      "sha256": "5faae02f00f1c87e0ff1379a6c1407e1c755f2edde312233d6de113fb3cb941d",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/159-BLOCK22_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "sha256": "bc6403ea4fb542159e05f1d7572632ee1315733eaa4709476002cb7352eca65b",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/160-BLOCK23_MATCHED_FREE_CONE_WITH_POSITIVE_WEIGHTS.md.gz",
+      "sha256": "91e99c9e0fb8f74293edc7e555b0b346ef03291c68bae9713c9a3c60758895f7",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/161-BLOCK23_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "sha256": "725214d10605da1cb80c55a68610dfcc5606f89654fb8d61ee49da64d9a117fa",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/162-BLOCK24_EXACT_RESPONSE_IDENTITIES_AND_PHASE_TEST.md.gz",
+      "sha256": "7efa9b575a9dfad4ccf4118f69f8459b1e957e69adfa41ff479e3f495529b0c5",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/163-BLOCK24_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "sha256": "e1a3c9206f2a3b867f8a2524313d967c3ef8ca21eb92184b7544ab2b0030be1f",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/164-BLOCK25_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "sha256": "99b5517b4643cf5a113d6c6b74cb570c2190493f67542304d5f52e56d2d65b4b",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/165-BLOCK25_VISIBLE_THRESHOLD_ON_REAL_OVERLAP_MOMENTA.md.gz",
+      "sha256": "eed2935a3ebb078db682a355e3896da5b4cc7fc0d50d1d6a488b78af6ffc7b90",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/166-BLOCK2_ASSUMPTIONS_AND_ROUTE_REFRAME.md.gz",
+      "sha256": "0fed1153793a5b8b0ede4771860a7b9f28513974465fc9cfe5aae23f25d4216e",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/167-BLOCK2_COFACTOR_CYCLIC_REALIZATIONS.md.gz",
+      "sha256": "dc7a92a585fe1dc4695353ab8b3771e10a9feefe30ed1262bcc6236f63b88fa7",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/168-BLOCK2_COMPATIBLE_LOOP_QUADRATIC_LIMIT.md.gz",
+      "sha256": "4a6976a1e0f3c557abf0ab9753e6d501322f53511606d2e4d5fce8eb27fdbcfd",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/169-BLOCK2_CONTACT_REGISTER_SUM.md.gz",
+      "sha256": "80b9cc8704a15e921d34f4321ad9a031398fbb24d19a386ced8bc6f5966070cb",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/170-BLOCK2_DETERMINANT_EXCLUSION_AND_LOCAL_DERIVATIVES.md.gz",
+      "sha256": "dc50da53b1a3d655f29d684f9fa99f4f297bbf78a91f54ff602d42edef3dde36",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/171-BLOCK2_FRONTIER_REASSESSMENT.md.gz",
+      "sha256": "92359287299a0c9598ae31358c48eb2db7c93fc403f08c3bf57e4dbcb16dfac7",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/172-BLOCK2_GAUSSIAN_DRESSED_CYCLE_SOURCE_SUM.md.gz",
+      "sha256": "ed81f3fdca25d3b20d6e027ce5a67f7853f89d5b1588901894907fa382e7e528",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/173-BLOCK2_GRAPH_HOLDER_SOURCE_REMAINDER.md.gz",
+      "sha256": "cd0f250cafea47c2ea5b538533cc5fcf3ddc27706495a2d09853d7f1cbe65c0a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/174-BLOCK2_HARD_CORE_GAUSSIAN_CYCLE_SOURCE_SUM.md.gz",
+      "sha256": "56c4730b381c7059c0d7d720c7019ed38b01d5e95f0477dafd6539c746b1b24b",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/175-BLOCK2_MACROSCOPIC_COMPONENT_SOURCE_BOUND.md.gz",
+      "sha256": "9202bdcacdbb9cebc78ed977729bb571879a8a85073a4409ec0bbea4510dfd27",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/176-BLOCK2_ORDER_GROWTH_AND_SUMMATION_OBLIGATION.md.gz",
+      "sha256": "92f0c8893d4bc3f29b5096d7f3fceb150fc25f92c11bbe951c847d932f345375",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/177-BLOCK2_PHASE_PRESERVING_FOREST_INTERPOLATION.md.gz",
+      "sha256": "2271d688f072a727f149af41a70536348b5496e16e9671e4f40d6577cca15485",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/178-BLOCK2_RANDOM_PARTITION_EXCLUSION_INTERPOLATION.md.gz",
+      "sha256": "fd57d4dd9705b1a8a2e8a815c094a126ef792c06347db4abbec5ab5a7d6a1713",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/179-BLOCK2_SIGNED_SINE_OPERATOR_AND_CYCLES.md.gz",
+      "sha256": "732220b9e9a4abae4982f02d2518f0d47b19c479773ed455f5170c22bcc2d9a3",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/180-BLOCK2_STABLE_CUT_COMPLETION_ALL_FIXED_ORDERS.md.gz",
+      "sha256": "4d7f3d3760e7be13942f422469f8700fd54b582e567b5bd1662dd716aac096a5",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/181-BLOCK2_TWO_ROOT_PHASE_ENERGY_BOUND.md.gz",
+      "sha256": "fee116d5d9ea2cf7d8903ccbc46b1c75a3732f91905a1691af0dab48da29be18",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/182-BLOCK3_FULL_DOMAIN_RECORD_MODEL_PAIR.md.gz",
+      "sha256": "952cb3dc615fa60297f22d75a1a786bed2de10c534b514f8e2c6b9041dd995b0",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/183-BLOCK3_GENERAL_ALPHABET_ORDER_INDEPENDENCE.md.gz",
+      "sha256": "c00287b667da84e1e30d68a66d7bdcf6ae1360368cf56372861d9e370800b90e",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/184-BLOCK3_NO_GO_DISCIPLINE_CHECKLIST.md.gz",
+      "sha256": "a6f8ed353c4f33ee74c7ba93c9dd276283cd6465f2f3749445c80e49228a583c",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/185-BLOCK4_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS.md.gz",
+      "sha256": "e4ba875203ffecea551691508581ecd00d9d17dc093c344d15cc116b5a1d0863",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/186-BLOCK4_TREE_COUNT_AND_DECORATED_CYCLE_NORMALIZATION.md.gz",
+      "sha256": "1e29f43ad2acb1e1d20022d2787a40cf1ad5ba39c3cec6a7cc033935ca06c8ce",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/187-BLOCK5_CONTINUOUS_AND_BOREL_KERNEL_SUPPORT.md.gz",
+      "sha256": "d1954a3a8ce046593a72ceaf3dc4bd8c8c844369321847779d2932614153f076",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/188-BLOCK5_FULL_ALGEBRA_NATURALITY_AND_CENTRAL_SUPPORT.md.gz",
+      "sha256": "7eeed04e6621cad2fa9f0fe95666a03481f27593063842f1258f5b6f29682b79",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/189-BLOCK5_RECORD_GENERATED_GAUSSIAN_KERNEL.md.gz",
+      "sha256": "b8dad8c7fa9b163f4919ac2af1a3f029230fbd92d35a2eb6678c07a640b4c9fe",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/190-BLOCK5_SCOPE_AND_NO_GO_REVIEW.md.gz",
+      "sha256": "2283656b0b446f5737b1855132d9b600238ae45b05bcf79e1f85ae2f92b16cd9",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/191-BLOCK6_PLANAR_LOOP_AND_QUADRATIC_REGULATOR_TEST.md.gz",
+      "sha256": "03492196af3e00ca303b9fc37bfdf8c7c72733aed9466be4478dab20e06a8f00",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/192-BLOCK6_POSITIVE_AUXILIARY_CURRENT_REPRESENTATION.md.gz",
+      "sha256": "ba3ad271fb34cd671e7753b768cb7ee386274f44be1e8ff6602151992080c564",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/193-BLOCK6_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "sha256": "a9c79d456a72ec854798fb3b5025d68cc5ffe0b3d6c01e980afadf1e49e46638",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/194-BLOCK7_NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT.md.gz",
+      "sha256": "8cd56eb5d071365b1079c5f49fa92f5a49eb29fa3b9326e1754a13b2a657cc8b",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/195-BLOCK8_NATIVE_TWISTS_AND_WINDING_CONDUCTANCE.md.gz",
+      "sha256": "c6123522a5cb8e113811e7568f5a63fcdeecfa3cab7e6345df5a2147727e55d5",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/196-BLOCK8_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "sha256": "9bf9549c7a773d2eb7c044e34a66cab0f8d91ee834eac171092957b385db90fe",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/197-BLOCK9_POLARIZED_CHARGED_SECTOR_AND_FLAT_THRESHOLD.md.gz",
+      "sha256": "81b74700d9c0c094075dae9dd63bfdae162b35965a6070a52ee4462db6710355",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/198-BLOCK9_ROUTE_AND_NO_GO_REVIEW.md.gz",
+      "sha256": "c823fe1a2d237e1f8b9a64f5b287847302bb09f2ecdc233c3501016e89524545",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/199-REVIEW_PERIODIC_HARMONIC_METRIC.md.gz",
+      "sha256": "5a1018b04a124ed933cd6162c30621675d464d7eace39aef0264983fe9a27a47",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/200-BLOCK10_PERSONAL_REVIEW.json.gz",
+      "sha256": "3596dbac451400cd787854d8f14a9a93403f9c3ffd3a40aaab4df92554d6b197",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/201-BLOCK11_PERSONAL_REVIEW.json.gz",
+      "sha256": "62e5b8913b965a9b560a8de177e53623b2263c226852b3150dd7f7473818d3ae",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/202-BLOCK12_PERSONAL_REVIEW.json.gz",
+      "sha256": "507f876a14ff20ac0efe3a637e339515a89a5b45501e8a56d9061251a15ef4d5",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/203-BLOCK13_PERSONAL_REVIEW.json.gz",
+      "sha256": "77e95877e9ff1570312ecac1d008eb4215b765855ed6fe95efcf0aab1c0b4aa6",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/204-BLOCK14_PERSONAL_REVIEW.json.gz",
+      "sha256": "278c87397f95830d974c9cfbbbf58a2c0bd5d71846d5df222d723e2b2a8e9744",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/205-BLOCK14_VOCAB.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/206-BLOCK15_PARENT_REVISIONS.json.gz",
+      "sha256": "d1ac2a1bd78f58229d7044355e69c5e4885682a8b9663e6cbb031ff52de6f765",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/207-BLOCK15_PERSONAL_REVIEW.json.gz",
+      "sha256": "5a6d58981c27f3c9542a5ce3220ce355e4614d9dbd9eaf64ef3cc667408be108",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/208-BLOCK15_PREFLIGHT.json.gz",
+      "sha256": "1c7eb30c49325f45de3ba33a133f5507a27180e8452130ef1b12194f051730e3",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/209-BLOCK15_VOCAB.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/210-BLOCK16_PARENT_REVISIONS.json.gz",
+      "sha256": "978d8592f5e4cb4b26f0f1b63103a3b7c5d64e8ee6a7d79e047887ed93179388",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/211-BLOCK16_PERSONAL_REVIEW.json.gz",
+      "sha256": "48f63c7d9120db5e71eae7af93cf91ce6f366798be6adf3e2e718bec7fb9327d",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/212-BLOCK16_VOCAB.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/213-BLOCK17_PARENT_REVISIONS.json.gz",
+      "sha256": "c974f362e605bcbdce4afc5ac9fa509feb786fd4299a65b9f1f6dd450b4950c1",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/214-BLOCK17_PERSONAL_REVIEW.json.gz",
+      "sha256": "1bc7d8d1de2386cc469743a57441e5d76f24751e430fde7d3dffe9e2aee8dd40",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/215-BLOCK17_PREFLIGHT.json.gz",
+      "sha256": "048c8990055fed9ad5edcae142711761ce746511938b1a6764d0cc7f395790cd",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/216-BLOCK17_VOCAB.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/217-BLOCK18_PERSONAL_REVIEW.json.gz",
+      "sha256": "19092c746d256576f14d0c8576a782d59685ea3c466443f7a4e0cc7ed8fbb1f9",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/218-BLOCK18_PREFLIGHT.json.gz",
+      "sha256": "dc756dbb5fc5719de431e7b4fa95ad20667196f4af3ef0ba3263d2eaecf02903",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/219-BLOCK18_VOCAB.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/220-BLOCK19_PARENT_REVISIONS.json.gz",
+      "sha256": "f647886da26f250742c7aa6104a930e49bd3f801f1422d213f8478f053fa7e8b",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/221-BLOCK19_PERSONAL_REVIEW.json.gz",
+      "sha256": "9be977605dda95f7c382ae31db7ec601665963b73da34dd4588a8d85bdd01181",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/222-BLOCK19_PREFLIGHT.json.gz",
+      "sha256": "6f97e28921dc758052c13c7f8387f0f1a5c85d855f53fbb18f1afd302fcf2e76",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/223-BLOCK19_VOCAB.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/224-BLOCK1_CHECKPOINT_SOURCE_HASHES.json.gz",
+      "sha256": "112f101be0c609cf6c253f5eca43fcd25c86193d67dd8397f0a161e42adee45c",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/225-BLOCK20_PARENT_REVISIONS.json.gz",
+      "sha256": "35a3a679a2a61af4255e517217d301a39117beb1d51f2378790995a35891d149",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/226-BLOCK20_PERSONAL_REVIEW.json.gz",
+      "sha256": "85deec1cf9df6eea3bb1b9732041c989ba27475d3ca1688962925045d6b03d20",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/227-BLOCK20_PREFLIGHT.json.gz",
+      "sha256": "ddc72418d00991f0274073952f1c46b64f9f5aa263339513474be5ce488558ff",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/228-BLOCK20_VOCAB.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/229-BLOCK21_PERSONAL_REVIEW.json.gz",
+      "sha256": "62ac4219bef613132dc1cfd240a236758b0f15063130fcde1b8d3f7735afe39f",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/230-BLOCK21_PREFLIGHT.json.gz",
+      "sha256": "dcb659fd211052e7d2aabf5054ed596390ea8f38712a41bb59ed04b963ee5e9e",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/231-BLOCK21_VOCAB.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/232-BLOCK22_PERSONAL_REVIEW.json.gz",
+      "sha256": "38bd34a074b9f6d47b62d058c75dbce48e808bf1bdf369eb5448b3df682255a6",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/233-BLOCK22_PREFLIGHT.json.gz",
+      "sha256": "e402d631e2ceb4d5bda82da55257dbb21388f1aff8d7fe68d3695143badb3a63",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/234-BLOCK22_VOCAB.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/235-BLOCK23_PERSONAL_REVIEW.json.gz",
+      "sha256": "858d46e6313823439414b00ddfb37bd2796ef86bb24290f2f50c5d03f7f41d32",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/236-BLOCK23_PREFLIGHT.json.gz",
+      "sha256": "30ba61195aae70b763955dd05ff3cc7d32dfa35ca31e33eb7f763130861f3e66",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/237-BLOCK23_VOCAB.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/238-BLOCK24_PERSONAL_REVIEW.json.gz",
+      "sha256": "88d92f870b8fb7466bf940c54bea0b671856c4726f366ebfdcf75cce80caa746",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/239-BLOCK24_PREFLIGHT.json.gz",
+      "sha256": "1de71ede782c0088a6f0cfbe15303c17101daff10aa1538240eeb243d6acc967",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/240-BLOCK24_PREFLIGHT_SOURCE.md.gz",
+      "sha256": "b335b345bec18a1ff3cec2207c265d2038f499b6ce7bd9a6e86d7eb6fd02a2f7",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/241-BLOCK24_VOCAB.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/242-BLOCK25_PERSONAL_REVIEW.json.gz",
+      "sha256": "a6873843fcdfa35a9c5d5a3c285354a65b50240b959289a8fd334b40e43d2473",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/243-BLOCK25_PREFLIGHT.json.gz",
+      "sha256": "da779704c5e55bcded088e145017ff7c921098390f4854227ea15079749172f9",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/244-BLOCK25_VOCAB.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/245-BLOCK2_CONTACT_REGISTER_PERSONAL_REVIEW.json.gz",
+      "sha256": "f1f1825c0fec773fb6739ae342dff210c4e62bf2214cfed294207d21c863e480",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/246-BLOCK2_DRESSED_CYCLE_PERSONAL_REVIEW.json.gz",
+      "sha256": "fd61551adffcb0f34d3a7b9d5de86f9dcd99436a56e120593fa2fed66e984565",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/247-BLOCK2_FOREST_EXCLUSION_PERSONAL_REVIEW.json.gz",
+      "sha256": "62f82adf296fe996e5f60c8f1da9ae44debc589b743e4cf895a41a806375d98d",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/248-BLOCK2_HARD_CORE_LOOP_PERSONAL_REVIEW.json.gz",
+      "sha256": "d82f83d54e17e99b5d06c1498542a52d1afc75f2967480075a526d8357ad60f1",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/249-BLOCK2_SOURCE_PERSONAL_REVIEW.json.gz",
+      "sha256": "83566ebf642a424508e16fd100fb214f08dd7ee488721fe124518862831aeac2",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/250-BLOCK3_PERSONAL_REVIEW.json.gz",
+      "sha256": "417410135162b4ef117c6a6f1e556eb6746a2d25c5a7538f8bd93664b1e43307",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/251-BLOCK4_PERSONAL_REVIEW.json.gz",
+      "sha256": "d888de391d189c80be7e220f226a670f757f19f8fea7b0d0d1e8dff3e5423b9d",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/252-BLOCK5_PERSONAL_REVIEW.json.gz",
+      "sha256": "44dcd5530d4642797a289b29bd3ec77b3d8be06b205a299e0d68715267bfc736",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/253-BLOCK6_LITERATURE_READING.json.gz",
+      "sha256": "b267a1352e4b5d5c1aa92a385fea52b0a9ad67d8a4dad110c195075098d2c441",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/254-BLOCK6_PERSONAL_REVIEW.json.gz",
+      "sha256": "398a9b44690d5f0f77d64b78eeaffd8ffa18ee270a9365aec31ecc215dbcd772",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/255-BLOCK7_PERSONAL_REVIEW.json.gz",
+      "sha256": "3acbf0ba0560eaebc717ea67bff145e8e90a39bd29d8e3111a3cc1b869d8ad41",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/256-BLOCK8_PERSONAL_REVIEW.json.gz",
+      "sha256": "daf9ae785f28e0426fb8c36468aa4587a295676ccc07b8c7c1bcee1dadc5c7fb",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/257-BLOCK9_PERSONAL_REVIEW.json.gz",
+      "sha256": "98d47dee0c3b98489403c6ca588947c071cceea80576941ea8fe3ca93f2eb5a4",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/258-END_STAGE_NEW_MAIN_READING.json.gz",
+      "sha256": "3a3b4135dfcb46c6d74a4272e029bb33f7ac3c95ef4eafc3835b5820c92d752b",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/259-END_STAGE_VOCAB.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/260-MILESTONE_MANIFEST.json.gz",
+      "sha256": "5e0d164d9823fe058b99ccfdf711ddda7ecacdd3d0d92898a909fd91bdfdc0e2",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/261-MILESTONE_PERSONAL_REVIEW.json.gz",
+      "sha256": "0bee7a9c78fe8cb232a573173df6ac1879c3357288d82ac3f3076f93b3ce80c1",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/262-MILESTONE_PERSONAL_REVIEW.md.gz",
+      "sha256": "7228b76c1a57975a5c1e247c290a8c6958e57b29afd2254e2a8de171df8518a0",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/263-USER_EXTENSION_20260916.json.gz",
+      "sha256": "8e089052a48110720b75c14325ffd6eb01a286d135ec63b38631ffc64e958245",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/264-block11_vocab.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/265-block12_vocab.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/266-block13_vocab.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/267-BLOCK14_QUARTET_DECAY_AND_CONE_STABILITY.md.gz",
+      "sha256": "4368d377294ad8bb2b4ac70526b6700886cf317cfcd284b507e55e87cbda2bcd",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/268-DISPOSITION.json.gz",
+      "sha256": "c9ab1cfda160859bd5fcbd137715332c5eb84f89f3888936d1e180100d510bfe",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/269-STATUS.json.gz",
+      "sha256": "1964003713a01880775c447f1902889c15fa75203100d741e1e8ea63a8d716bc",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/270-block14_decay_check.py.gz",
+      "sha256": "12f3f47274af107729dcf210e8dac756c095b7d790f98de5511cadf371944785",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/271-diagnostic.json.gz",
+      "sha256": "7ce2bc48c5d0bf559ec421cc8f12aa703166ec8fc1a28b5c9502e96b3674b043",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/272-stderr.txt.gz",
+      "sha256": "41ad25f9dd51b6b20d07a232952b85fc7c338821f934f8c5a86a72a34b0acdc0",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/273-stdout.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/274-BLOCK14_QUARTET_DECAY_AND_CONE_STABILITY.md.gz",
+      "sha256": "4368d377294ad8bb2b4ac70526b6700886cf317cfcd284b507e55e87cbda2bcd",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/275-DISPOSITION.json.gz",
+      "sha256": "e2cd6c591a84a7e6fdbe91fd7ab2a6a1aa1b708682809b2abdb9867e36ca45a2",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/276-STATUS.json.gz",
+      "sha256": "f39ba657ef69176ac79c5205c4ea818daca41bbcedf727e77d9f245de54d77c1",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/277-block14_decay_check.py.gz",
+      "sha256": "22db7c58527c3d3987556e0f49268af408d4b7fc0ea1778276eab3511839173c",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/278-diagnostic.json.gz",
+      "sha256": "bf62025a657f19c9f9cb6c07a5417b238721638e16ef5413adada253845e5b3e",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/279-stderr.txt.gz",
+      "sha256": "dae2390bf6290fba6d69c885a049892eed96c55cbed99bc571acd9016b96dccb",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/280-stdout.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/281-BLOCK17_CYCLIC_WEAK_COUPLING_SPECTRAL_LIMITS.md.gz",
+      "sha256": "dfa1ea0c547c86b9e5239a21ddf1ef38cbaad6f3525f4b61c53e8d3276256521",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/282-PROVENANCE.json.gz",
+      "sha256": "c45f389cc28b70869e6f16c38788b65ff9f204ee06b07bccaa3f037b3b40376f",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/283-block17_cyclic_scaling_check.json.gz",
+      "sha256": "f8999e8c7b014ea9096b55c479a4f3b44044c8628de346a896a09d29b711355c",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/284-block17_cyclic_scaling_check.py.gz",
+      "sha256": "466e4915c76bfeb8b7354a2b059396d6d88883e585101eb7adb90f8c81644b3f",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/285-block17_cyclic_scaling_check.stderr.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/286-block17_cyclic_scaling_check.txt.gz",
+      "sha256": "f8999e8c7b014ea9096b55c479a4f3b44044c8628de346a896a09d29b711355c",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/287-BLOCK17_CYCLIC_WEAK_COUPLING_SPECTRAL_LIMITS.md.gz",
+      "sha256": "dfa1ea0c547c86b9e5239a21ddf1ef38cbaad6f3525f4b61c53e8d3276256521",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/288-BLOCK17_PREFLIGHT.json.gz",
+      "sha256": "048c8990055fed9ad5edcae142711761ce746511938b1a6764d0cc7f395790cd",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/289-PROVENANCE.json.gz",
+      "sha256": "a0c62bb1e5ed6ff985eaabaaa48f528da6b063421230a7f4090f1d71e2d9a0e4",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/290-block17_cyclic_scaling_check.py.gz",
+      "sha256": "d92a55096e44159b0645ccde9ee612ba0d518e2c125f42cb7fb9b8cc71722d3b",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/291-block17_cyclic_scaling_check.stderr.gz",
+      "sha256": "86f4a89d7d8c5b0c00726d3d128fc26110064c6e1baa473cc165e3fe07f34012",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/292-block17_cyclic_scaling_check.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/293-block1_checkpoint2_vocab.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/294-RECEIPT.json.gz",
+      "sha256": "4a523c07c5d427b27b62e17e33291e99559b663231a11686700c01409699ed25",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/295-source.py.gz.gz",
+      "sha256": "1cd2d6477abe6f594550652eec64de2facbb1837aaac27526bc9e927b7191f74",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/296-stderr.txt.gz",
+      "sha256": "7a6d8e1a2ee88b0aaee9844d71ea7f6f430e2949d93abe8f5c2922afe0fa4341",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/297-stdout.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/298-RESULTS.json.gz",
+      "sha256": "aebe8faa5e93f62e24bef73b8e999c72ae422276551e619d251a8837a30330c1",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/299-missing_smoothing_noise.py.gz.gz",
+      "sha256": "fc287cde900ca8e15d68040f40202ddf3ff3b4b6d2c39360b2a383b8c8379183",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/300-missing_smoothing_noise.stderr.gz",
+      "sha256": "dfb968d080ec3821d656aada94ff8f5be6e08f1ca8d51827eda6a88bc3194a78",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/301-wrong_rate_energy.py.gz.gz",
+      "sha256": "f1e970a1b3e9dabd24e5bebe3ccd71eebf2979295a70926e0f2f0b4913c3fe17",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/302-wrong_rate_energy.stderr.gz",
+      "sha256": "f9c197ce05d64a8df828da758791c40ee144611428eb2949913a96c7e3365c76",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/303-wrong_shift_phase.py.gz.gz",
+      "sha256": "a6c21f5961516bda3fc45b812d41a9c43f99e4491928e6483adc8047cb5e857a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/304-wrong_shift_phase.stderr.gz",
+      "sha256": "d2e1a0c63275e688a81fb07e45261907cbc72892403800f518d260dbebbb1ab8",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/305-BLOCK20_WEYL_HOLONOMY_CASIMIR_SELECTION.md.gz",
+      "sha256": "9ea9d2dd6bbe524d14e65cdb6d9810122354c315c36ffc74ff0b5c371ad476f8",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/306-block20_holonomy_check.py.gz",
+      "sha256": "07b3223c2aa877a113af58652da06204f4f6649f19bd9589967c09e061f28eba",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/307-block20_holonomy_check.stderr.gz",
+      "sha256": "143ec219b80bccc273a99f4c38897e7c677f3de8382f6588a2d496a177bb7f6e",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/308-block20_holonomy_check.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/309-block21_slow_fast_check.json.gz",
+      "sha256": "7bf11f6dc0ec2a809ade490aeee1994a381f6a26ea72f2df7808cd23e5a471e5",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/310-block21_slow_fast_check.py.gz",
+      "sha256": "785fbe3fba07c6d57458c5e5b9f52218eb4fb5bd2371b76fb318fb0666298a11",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/311-block21_slow_fast_check.stderr.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/312-block21_slow_fast_check.txt.gz",
+      "sha256": "85e5b1d4ce976f1a6d7db43f6e5faf83737a8ae35f622f27f24b2190cacd30cb",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/313-BLOCK21_FIXED_BOX_SLOW_HOLONOMY_THEOREM.md.gz",
+      "sha256": "0d7146c40a26ef13dfe257ee2d58918cf503aea05441da857f1e2d8933ff52f4",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/314-block21_slow_fast_check.py.gz",
+      "sha256": "8c4dae297d195b5ebe3c28ee3d2783dab17c65f03f1cfa6d47d33c4612562201",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/315-block21_slow_fast_check.stderr.gz",
+      "sha256": "f35be996f6282fca4616f45248364ba214748e3559c171a48bb5f00e729608ea",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/316-block21_slow_fast_check.txt.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/317-block2_checkpoint4_vocab.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/318-block2_checkpoint_vocab.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/319-block2_contact_register_vocab.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/320-block2_cut_completion_vocab.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/321-RECEIPT.json.gz",
+      "sha256": "57b9ae0cfe17bc62d4b673d8b9ed2ec48d39e15800d4df139586cf5e42135b85",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/322-source.py.gz.gz",
+      "sha256": "2efdb828d86a06d94621ed2cf22856fbce3b0c3f5cc4ca2ae16b1aad20e70c6a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/323-block2_determinant_exclusion_vocab.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/324-block2_determinant_exclusion_check.py.gz",
+      "sha256": "cc90348890af51915e59ad02e9f09e5039b1b51441dbc3055157ceaad359af11",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/325-failure.json.gz",
+      "sha256": "ef47cf5c7ece348294d2c9be8851d34407a9e3748cbd7ee9864deb7efba0ef71",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/326-block2_dressed_cycle_vocab.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/327-INTERRUPTION.md.gz",
+      "sha256": "d2c9648781870e4228313479dd051214805e15cd928d7ec2418b62013a4387bf",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/328-RECEIPT.json.gz",
+      "sha256": "5f977f68d81497f7517e5e7897d937c2db5df4e24977eae2ffe11d0bfc9c14fd",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/329-source.py.gz.gz",
+      "sha256": "456086902a7b8efac98ef5c83673f234b4f1d11ca5d68a01b43af36c95ab2cff",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/330-block2_graph_source_vocab.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/331-block2_growth_vocab.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/332-block2_hard_core_cycle_vocab.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/333-INTERRUPTION.md.gz",
+      "sha256": "54a78499fac392a161f9b7c5c5976d27aa0713737c864e0cb046eb6632879027",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/334-RECEIPT.json.gz",
+      "sha256": "7eb825812e1378421840cd6fbcab2ff30f168195ba2e567ab58ae6ad099bc305",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/335-source.py.gz.gz",
+      "sha256": "5d2da9539b2705433c6b5877abc677e9eff2c8152cddd3c85c181bdf74263b5f",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/336-block2_loop_quadratic_vocab.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/337-block2_partition_exclusion_vocab.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/338-block2_source_checkpoint_vocab.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/339-RESULTS.json.gz",
+      "sha256": "e8e0dfd0dca66e04abdbb82de3e46b4cd44a2219ef6e6b9f003a47068ee84b99",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/340-cut_missing_mixed.py.gz.gz",
+      "sha256": "ef0063241e2516f5a26286278d2631186b75d7d74fbff540e84aec841543da88",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/341-cut_missing_mixed.stderr.gz",
+      "sha256": "03554e4907dae0eef40bea9c7d9f77927d3bc6a300dc2ca3a28ee740d233c2b1",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/342-cut_missing_mixed.stdout.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/343-cut_missing_same.py.gz.gz",
+      "sha256": "472e89ba338f1d681ae82f677224c4fc5a0af6e9c66f1544d466960841113847",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/344-cut_missing_same.stderr.gz",
+      "sha256": "fcc5a1e68e3a27803d5c0f6636cfdcc4fe372f48d9ce0478d85884fa9c29e7a3",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/345-cut_missing_same.stdout.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/346-cut_missing_source.py.gz.gz",
+      "sha256": "e1db3a4d7b22eb38c4ca677f75bbce3665ea5d85aa17ec3462a01cecd19fdb08",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/347-cut_missing_source.stderr.gz",
+      "sha256": "8364c245235c26ac93f3b86d522d5527facde1d5371ed3e3370a388ea9dea7c7",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/348-cut_missing_source.stdout.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/349-source_missing_phase_i.py.gz.gz",
+      "sha256": "0391f4879c5d9bf5286658f76c1a5d6b1e7b7ec43157796be1c3b0239492e901",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/350-source_missing_phase_i.stderr.gz",
+      "sha256": "dc7ab48a3fbf542ec6fc7fa0b9bf6dcbcc9de0f39cdc01b1a1388fae5aba058a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/351-source_missing_phase_i.stdout.gz",
+      "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/352-block3_record_pair_vocab.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/353-block4_fourier_gaussian_register_check.py.gz",
+      "sha256": "674a3549e91feb9f98ddc81643fadbbad191226b5dd7aa7eacf9bec6b0377b83",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/354-failure.json.gz",
+      "sha256": "9581f90b85c3b373d4003db73ea32c6922f1042cf839305238327e6ad5d6037f",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/355-block4_vocab.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/356-block5_algebra_naturality_check.py.gz",
+      "sha256": "d2d92c333f4656a32d5467b1064ea4f5d119a6ab4c702926c242160b34cf0f88",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/357-failure.json.gz",
+      "sha256": "9315af30955a8f21490a8d35eff03f088c3b392fc6422a6d26d9388141df7d51",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/358-block5_inverse_corner_support_check.py.gz",
+      "sha256": "634f2f13ea2a15d26858bfa896311b66a6a161378a9bf3db4469aab2a2de0372",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/359-failure.json.gz",
+      "sha256": "7bcc30567214a8412020a45fef675db927ce7ac522c6b1080f82685a4af0f532",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/360-block5_vocab.json.gz",
+      "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/361-block6_positive_auxiliary_check.py.gz",
+      "sha256": "71244760b20abb7b6a43d70674d62af4fda29666ba2d5b273fd4fb3a1eb26691",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/362-block6_positive_auxiliary_check.txt.gz",
+      "sha256": "89d3ce535bbcb712dae0e9d7d5d01f04cf42b921c65343dbca87dc62bb569885",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/363-diagnosis.json.gz",
+      "sha256": "30a05d41d0e10d7f3766b2bbc1262072f580ac6ed022ae7d3a1fd0a00473259c",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/364-block9_initial.py.gz",
+      "sha256": "bac0059a685e518278cb3b8ed1133d2196bef1cb254989053e75f8a0b9465476",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/365-block9_initial.txt.gz",
+      "sha256": "f9b3b25c78a5384c4a0baca18f0f83f1022711a3ccd63ea53d781a5477942504",
+      "matches": true
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8159/originals/366-diagnosis.json.gz",
+      "sha256": "3a5ede84ee7e83d97141645573fc7be955056d077761f8d23c978fd0a46d4302",
+      "matches": true
+    },
+    {
+      "path": "scripts/algebra_naturality_check_2026_09_15.py",
+      "sha256": "791ab9cbae504bc6d65bdef7e82b36a2b10592492240903bf65d6555799a3676",
+      "matches": true
+    },
+    {
+      "path": "scripts/charged_ring_check_2026_09_15.py",
+      "sha256": "d7dd992cc5fd3af51fde72cb54a5e8cb05bf3d822d1defd879d22d0ee916cddc",
+      "matches": true
+    },
+    {
+      "path": "scripts/cofactor_cyclic_check_2026_09_15.py",
+      "sha256": "6ca04bfd0d28da2a74b161688a954054bb7887defb9cc01b2d4bee61f7579111",
+      "matches": true
+    },
+    {
+      "path": "scripts/contact_register_check_2026_09_15.py",
+      "sha256": "ea4cbe01dc77a3053e61072368b0ecc9f99f620a0c424982d68f8da272c232b8",
+      "matches": true
+    },
+    {
+      "path": "scripts/cut_completion_check_2026_09_15.py",
+      "sha256": "f75b0f367e03d980f928a5431a463395f4d67c4024d620b275bf6a31d9eaa7e0",
+      "matches": true
+    },
+    {
+      "path": "scripts/cyclic_equilibrium_check_2026_09_15.py",
+      "sha256": "bcbcb17302e6cc9fcc6819831bf810b4060acb6aa0ad61b6149ee4014402fc6c",
+      "matches": true
+    },
+    {
+      "path": "scripts/cyclic_scaling_check_2026_09_15.py",
+      "sha256": "0646a64e80a67ffe562140513c84884346df560d113d9c8fa9fce707ecfca2ba",
+      "matches": true
+    },
+    {
+      "path": "scripts/decay_check_2026_09_15.py",
+      "sha256": "99c62cc75d82d781ac1606649f4bd871ca542fbc30d56c0ff001d85863db7494",
+      "matches": true
+    },
+    {
+      "path": "scripts/determinant_exclusion_check_2026_09_15.py",
+      "sha256": "ff2370755fafd6c162b0d286114deea1fc1b5fa7a2bca87be091c1a123534564",
+      "matches": true
+    },
+    {
+      "path": "scripts/forest_interpolation_check_2026_09_15.py",
+      "sha256": "01d07bd14e50bf594703df38e7a359965969b56dfbb71ed6f33098103b510021",
+      "matches": true
+    },
+    {
+      "path": "scripts/fourier_gaussian_register_check_2026_09_15.py",
+      "sha256": "4e1aae5a7a14e2b149dfcae9fa19daa1128ceacc3b327761f3c142b0a05bba93",
+      "matches": true
+    },
+    {
+      "path": "scripts/gaussian_cycle_check_2026_09_15.py",
+      "sha256": "1fb8088a9a72ef13cf1a7240f6a04d79c9149f2210649761b056a85a11a2f762",
+      "matches": true
+    },
+    {
+      "path": "scripts/general_order_check_2026_09_15.py",
+      "sha256": "620f99cd7f3cd42b91efcb22cbfa5c5a79fb668b812a128180404d049a18d7d7",
+      "matches": true
+    },
+    {
+      "path": "scripts/graph_source_check_2026_09_15.py",
+      "sha256": "18089ffce3b2b57e98f0f27223c69cef442feaeb7db271fe9a9801fbd74b8eca",
+      "matches": true
+    },
+    {
+      "path": "scripts/ground_cutoff_check_2026_09_15.py",
+      "sha256": "b8b78409a0bcd4e9ca472f65e1fc66c053e4b6f61bd8f576ebb61df3d7a4f3c4",
+      "matches": true
+    },
+    {
+      "path": "scripts/hard_core_cycle_check_2026_09_15.py",
+      "sha256": "ae301d5dcd5a3a934cf62e1609be59e11e4c4aaa01fce92e1cbca968c781e71e",
+      "matches": true
+    },
+    {
+      "path": "scripts/holonomy_check_2026_09_15.py",
+      "sha256": "f11ffd70fd35b9ca48996e175311b1309ca0a514f1d48f6dc9c594da1142fa17",
+      "matches": true
+    },
+    {
+      "path": "scripts/hybrid_curvature_check_2026_09_15.py",
+      "sha256": "3d615c284ecc2cdb64c547d9306daea2f856d3c66a81af5f2677c4bdd668ae52",
+      "matches": true
+    },
+    {
+      "path": "scripts/hybrid_generator_check_2026_09_15.py",
+      "sha256": "5d4e0f87d6d048c2e038dca2b85a8d1d2cf9592926cbcfe9ccad74e284f31cee",
+      "matches": true
+    },
+    {
+      "path": "scripts/integrated_rate_check_2026_09_15.py",
+      "sha256": "9b93c4d78523b8363e44ac4c48c32b9e53606760fd067cc96e3c6250800aa993",
+      "matches": true
+    },
+    {
+      "path": "scripts/inverse_corner_support_check_2026_09_15.py",
+      "sha256": "e845a9e8e92b2b0dae8364450724fed592cbcea8cd0814516fa65a8ddfc794b3",
+      "matches": true
+    },
+    {
+      "path": "scripts/local_spectrum_check_2026_09_15.py",
+      "sha256": "26b293b3657e49c0abb2286dea59f424da2141fa930e78573d25db959837bfc1",
+      "matches": true
+    },
+    {
+      "path": "scripts/matched_cone_check_2026_09_15.py",
+      "sha256": "7589f3815af40612c1e0e49098b8b3af29049d241f6fd54653c5523913b4e279",
+      "matches": true
+    },
+    {
+      "path": "scripts/mixed_history_check_2026_09_15.py",
+      "sha256": "b8853d66e555f78e3ba28b165f9aead8c60cbd7bfc2c1ce6573bb6404a50cfa5",
+      "matches": true
+    },
+    {
+      "path": "scripts/native_motion_check_2026_09_15.py",
+      "sha256": "e11214c3ad4a87efd3847e6ee2a9a736b48bc8799373218505febd20bd53d3da",
+      "matches": true
+    },
+    {
+      "path": "scripts/native_twist_check_2026_09_15.py",
+      "sha256": "671a19dcda0285447aa4b162ef7e9860340c3729e3a2b26485279d51e9294d82",
+      "matches": true
+    },
+    {
+      "path": "scripts/operator_source_check_2026_09_15.py",
+      "sha256": "f2d3502d44f5b81d6fbf1a567ebe405e85a0e9c32980cec7083b48788a1c7eb9",
+      "matches": true
+    },
+    {
+      "path": "scripts/partition_exclusion_check_2026_09_15.py",
+      "sha256": "6aa97c6f6a9a142f0be87c26c668befddc97432a05cb9ef999d751575c03659d",
+      "matches": true
+    },
+    {
+      "path": "scripts/phase_energy_check_2026_09_15.py",
+      "sha256": "307e0e4e066d9a9db3d6f10ee0e81baa9287b5fa7730f6702cbdd278095a6673",
+      "matches": true
+    },
+    {
+      "path": "scripts/physical_probe_check_2026_09_15.py",
+      "sha256": "ca40da09ce8e1d9b8b147187c4c995e2ded3c28429c909403fc309e41d23869f",
+      "matches": true
+    },
+    {
+      "path": "scripts/polarized_word_check_2026_09_15.py",
+      "sha256": "0227179a994d587740dea92b182d7b98467dceb10c1512b636655bcb73888362",
+      "matches": true
+    },
+    {
+      "path": "scripts/positive_auxiliary_check_2026_09_15.py",
+      "sha256": "b5288ba2ff203248fd5a5f9b768562a43b1eaddda76c3b60e526bb380318fc13",
+      "matches": true
+    },
+    {
+      "path": "scripts/positive_generator_check_2026_09_15.py",
+      "sha256": "6279f4f85cb4ac6d148117167d7a4be32abb51a90389e966a60e9145d34a4cb7",
+      "matches": true
+    },
+    {
+      "path": "scripts/quadratic_coframe_check_2026_09_15.py",
+      "sha256": "180cb705df6de9e4ace402e4561508f67d51d6e7094de9ef635ec38e0df3b993",
+      "matches": true
+    },
+    {
+      "path": "scripts/quartet_metric_check_2026_09_15.py",
+      "sha256": "39f256955fd28a0090de564a8ae0d4a6ad0af07e03dbaf04abcdde28f2ec820c",
+      "matches": true
+    },
+    {
+      "path": "scripts/record_pair_check_2026_09_15.py",
+      "sha256": "5afaa1492afa3e2da5195776cb07a931cb41667e777edd1c34910175ef97ee76",
+      "matches": true
+    },
+    {
+      "path": "scripts/response_identity_check_2026_09_15.py",
+      "sha256": "b81caeeb31f9580a4794b8d474793c27964d30ab112689fc63ecf632fd8763c7",
+      "matches": true
+    },
+    {
+      "path": "scripts/review_harmonic_metric_check_2026_09_15.py",
+      "sha256": "e024c209365025b24e46b9312309683753cb63d6b314094a82a5957b18b26737",
+      "matches": true
+    },
+    {
+      "path": "scripts/slow_fast_check_2026_09_15.py",
+      "sha256": "f6b6e5b0427b88edd4b08a1dc5253e4b068c26fba7e474821d06b97f5f1df88f",
+      "matches": true
+    },
+    {
+      "path": "scripts/tree_count_check_2026_09_15.py",
+      "sha256": "53c6fa0c46be0e08f9690422ae7a33cea500a0fd963c74036ca5b9f2a41070be",
+      "matches": true
+    },
+    {
+      "path": "scripts/visible_threshold_check_2026_09_15.py",
+      "sha256": "32decf8bbe185badac69af2635218b17812d3fdaaea3fbbc845b0a63581d7993",
+      "matches": true
+    }
+  ],
+  "proof_identities": [
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_BOUNDED_RATE_ALTERNATIVE.md",
+      "canonical": "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "32f74af9c9cb030231a3158e7b20ac074628c2a64a1a116fe60cb69053334e11"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_CURVATURE_TEST_DESIGN.md",
+      "canonical": "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "72315d547b58430c84862b9981ebb40bafbc565fc71e8e32710d6fd54feb87fd"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_INTEGRATED_IDENTITIES_AND_RATE_MOMENTS.md",
+      "canonical": "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "9ddc5ff1fbce696a70fee766eec53198536791d8fc7f996648a48d6d279ffe4d"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_POINTWISE_CURVATURE_WITNESS.md",
+      "canonical": "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "486e8e53d063d29f729b1623b3866514b3d75a641061591aca69b115230c8c47"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_POSITIVE_HYBRID_GENERATOR.md",
+      "canonical": "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "a366ce7f45a590980e1203156d2b5279b90737d6481884b179b4496b06de39d0"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_ASSUMPTIONS_AND_ROUTE_REFRAME.md",
+      "canonical": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "7a91ec12aafe19ec43ffddb867aa2baa23a6f07708f5ffa1c6979292d2712263"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_COFACTOR_CYCLIC_REALIZATIONS.md",
+      "canonical": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "78c15260053f7df654fe8480124f7c573f7f10c507da4e7c2aec359d656bc804"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_COMPATIBLE_LOOP_QUADRATIC_LIMIT.md",
+      "canonical": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "15895fa3fe83222d1c9939618f22c3201eec3e57ef278e585b6d1e25c7b51b8b"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_CONTACT_REGISTER_SUM.md",
+      "canonical": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "372d4f4341b1b8f0a7a78529b8d868977c4cc8bcaecb06ea132fe6b36165afa8"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_DETERMINANT_EXCLUSION_AND_LOCAL_DERIVATIVES.md",
+      "canonical": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "10a670f0dd6ad162cced89784dbc8249e81cb9361f6f6777ae9d220fa1283732"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_FRONTIER_REASSESSMENT.md",
+      "canonical": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "bab4a822af310a37d1969eebbfe841ff79375e0bf907d67385fa091ac48d437f"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_GAUSSIAN_DRESSED_CYCLE_SOURCE_SUM.md",
+      "canonical": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "3f9b9c001cc125193a6dfd266add0a0c3f79adffc0e1665024436a574d5d30ff"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_GRAPH_HOLDER_SOURCE_REMAINDER.md",
+      "canonical": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "983482c1f51384bd7157b4273505030553caddfa913ae6c480099052adaf7966"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_HARD_CORE_GAUSSIAN_CYCLE_SOURCE_SUM.md",
+      "canonical": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "3a2203dbfec9cb4ea3dbadbf477eab4ad7dc1e3ddce8bc7501a060f684d09e0c"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_MACROSCOPIC_COMPONENT_SOURCE_BOUND.md",
+      "canonical": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "551164ede9ff1c20c92053b4cd4f574c9fca92ad0f7aacad029de02178b224d2"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_ORDER_GROWTH_AND_SUMMATION_OBLIGATION.md",
+      "canonical": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "52cfe8958c107958de9d7d5a1f8ab5ea0b5fec51a7da07fd0463e3be5819afab"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_PHASE_PRESERVING_FOREST_INTERPOLATION.md",
+      "canonical": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "3675a59f333ffbe262899e4e4cc67f9a5451c0b30f459a6aa39d811deaee9c91"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_RANDOM_PARTITION_EXCLUSION_INTERPOLATION.md",
+      "canonical": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "2a1e26d5294f6374e71d03ae004ac25c795b4a19da3a40f177a42c4ddf263a91"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_SIGNED_SINE_OPERATOR_AND_CYCLES.md",
+      "canonical": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "0c4d25d7aa1a025914eda7f7f5d342fde243389637d2d0b3d3e3c2e70ad85c5c"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_STABLE_CUT_COMPLETION_ALL_FIXED_ORDERS.md",
+      "canonical": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "fe9f7a15c9335ba96a595a53b7cb4a556c40072429f9650c39f34dcafe8dc42f"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_TWO_ROOT_PHASE_ENERGY_BOUND.md",
+      "canonical": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "aaeb7901f08c76b85b084ae62e0e03be236f5ad917440e270b699ab0e97f48e9"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK3_FULL_DOMAIN_RECORD_MODEL_PAIR.md",
+      "canonical": "docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "275109ca1118b50958354bf746cdf005558269059372297f1912da706d6d257d"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK3_GENERAL_ALPHABET_ORDER_INDEPENDENCE.md",
+      "canonical": "docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "c5ff21288e949528a11c8a8cc61607e23553711baae7aa910d11d1d2d8ec224f"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK3_NO_GO_DISCIPLINE_CHECKLIST.md",
+      "canonical": "docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "340ec0883be93741f6e1a9c06fbc968c80b7e3769c39f815a62851bef83ab378"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK4_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS.md",
+      "canonical": "docs/CUBIC_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "a4c0e74c9891b5390deb5ece9ae5701991123338d2d0ca83fd7f11f9d222cac2"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK4_TREE_COUNT_AND_DECORATED_CYCLE_NORMALIZATION.md",
+      "canonical": "docs/CUBIC_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "561171885d63752de8a7dd8e8992ae54655e75432543f7b4b3fcf56367418459"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK5_CONTINUOUS_AND_BOREL_KERNEL_SUPPORT.md",
+      "canonical": "docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "e2391fa15d0fd4b6a016d07c9d09fb877fbe376bef96f49a76e9e77837884f99"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK5_FULL_ALGEBRA_NATURALITY_AND_CENTRAL_SUPPORT.md",
+      "canonical": "docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "0cfe33bb5cc963dd6e53dc5ff3c7aab47d7b899441ec4b44c725f52c6a5709ec"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK5_RECORD_GENERATED_GAUSSIAN_KERNEL.md",
+      "canonical": "docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "d0fc4c73da0f553142bdab278538ce8af2ecc36913916ba3b39a3c8be928ad75"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK5_SCOPE_AND_NO_GO_REVIEW.md",
+      "canonical": "docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "87a707b84a4f615d3aa697a3413c10f5f86405b6f1366df458b21c88552c08e8"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK6_PLANAR_LOOP_AND_QUADRATIC_REGULATOR_TEST.md",
+      "canonical": "docs/POSITIVE_AUXILIARY_CURRENT_LAW_AND_REGULATOR_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "582e551535e184e2a131dc695f4abf4f068be8fc409debbb22235248d635ed38"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK6_POSITIVE_AUXILIARY_CURRENT_REPRESENTATION.md",
+      "canonical": "docs/POSITIVE_AUXILIARY_CURRENT_LAW_AND_REGULATOR_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "3c2274e82880117321dca282ba283d94ea0ee36fa4894908b5c70dabb22c8d97"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK6_ROUTE_AND_NO_GO_REVIEW.md",
+      "canonical": "docs/POSITIVE_AUXILIARY_CURRENT_LAW_AND_REGULATOR_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "496c42b40927ef434889cb2446a6086e912985d8c988e85080d5455961389517"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK7_NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT.md",
+      "canonical": "docs/NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "25b3a755ab264a374f8f751c6f4b66c7bda1722c2556dee359604e7a876a63b6"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK8_NATIVE_TWISTS_AND_WINDING_CONDUCTANCE.md",
+      "canonical": "docs/FINITE_NATIVE_WINDING_CURVATURE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "a2845fc45e979db353d5cbe5435003b4e89d39196c3b1efadee5feedb5ab1551"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK8_ROUTE_AND_NO_GO_REVIEW.md",
+      "canonical": "docs/FINITE_NATIVE_WINDING_CURVATURE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "3f6c3aac3d5cb088609f896f34295daba2016cee9afb5b36be06d6e0d53c227f"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK9_POLARIZED_CHARGED_SECTOR_AND_FLAT_THRESHOLD.md",
+      "canonical": "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "1763753e1b29ecbe748f13eac56b5efb8f0c7620448a57c8027b7399283e7578"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK9_ROUTE_AND_NO_GO_REVIEW.md",
+      "canonical": "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "b6cbe641149524e74995c519b2b8de9f252277f7aab3a84afedd505eea4a7f7d"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK10_LOCAL_SOURCE_SPECTRA_AND_DARK_THRESHOLD.md",
+      "canonical": "docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "010e1298f66cae771d41818375ea1df8b4cc4581edd72626f9576f20b0c4f815"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK10_ROUTE_AND_NO_GO_REVIEW.md",
+      "canonical": "docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "f9fedbef5e21c64d63709a19b9ea86bf7e0588a77ac549c66370c06efbfa3358"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK11_QUARTET_METRIC_FLOW_AND_POLARIZATION.md",
+      "canonical": "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "c0ce7419f5d779adff10e559deb2b9885d8dab3cea0f14ebd02104ac14c27a27"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK11_ROUTE_AND_NO_GO_REVIEW.md",
+      "canonical": "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "7cdea713b19841fce2a23b55ba918e19dfda9a121538ffe60244def1eefc8200"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK12_GROUND_STATE_CUTOFF_COMPACTNESS.md",
+      "canonical": "docs/FIXED_COUPLING_ROTOR_GROUND_CUTOFF_COMPACTNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "fa130db6629e0a12ce9f2023625808bd3de37a1da2c0fc7cd2cf87a1304f0d5d"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK12_ROUTE_AND_NO_GO_REVIEW.md",
+      "canonical": "docs/FIXED_COUPLING_ROTOR_GROUND_CUTOFF_COMPACTNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "1446f296968f984cfc64fad7a473ff55551d46745f96797852bd259cba7bf3a4"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK13_QUARTET_QUADRATIC_BACKREACTION.md",
+      "canonical": "docs/SUPPLIED_QUARTET_QUADRATIC_BACKREACTION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "c674d7dd743104c12d5b91a8f183cf443cbb7a5039b364765b25624bb09701c6"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK13_ROUTE_AND_NO_GO_REVIEW.md",
+      "canonical": "docs/SUPPLIED_QUARTET_QUADRATIC_BACKREACTION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "2765f26e44b85e134cd564c1aebff7f648946926cbc2dfeb1f856cfa6610bdc5"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK14_QUARTET_DECAY_AND_CONE_STABILITY.md",
+      "canonical": "docs/SUPPLIED_QUARTET_LEADING_DECAY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "985ed59dc2e8579a175fbd1218d154a81a3f29ed6a9b68bb56a5c17c57432010"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK14_ROUTE_AND_NO_GO_REVIEW.md",
+      "canonical": "docs/SUPPLIED_QUARTET_LEADING_DECAY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "ec1b907564d0307611dcad25c94067ced586383bd488b27fbfc36c60c8783c7a"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK15_MIXED_HISTORY_BOUNDEDNESS_AND_SIXTH_POLE.md",
+      "canonical": "docs/NATIVE_MIXED_SIXTH_ORDER_COEFFICIENT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "711bc8459c5f33331b62dde2af1e490d13bc7855bcf4a2fb320f216515437bad"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK15_ROUTE_AND_NO_GO_REVIEW.md",
+      "canonical": "docs/NATIVE_MIXED_SIXTH_ORDER_COEFFICIENT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "08a452c2521296840b4d7396cc96b5618c22fc9fa159ea78f918cee999c3652d"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK16_CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT.md",
+      "canonical": "docs/CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "ffe8584433a7279cca6db8d4910cc7c6f0a5bb16d15f8be712db60416a4f85bb"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK16_ROUTE_AND_NO_GO_REVIEW.md",
+      "canonical": "docs/CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "d66fa09dfdba4e04b6595418b39335998127d5b0ded1413060020efc2d00ddde"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK17_CYCLIC_WEAK_COUPLING_SPECTRAL_LIMITS.md",
+      "canonical": "docs/FINITE_GRAPH_CYCLIC_WEAK_COUPLING_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "fecc835db4807104826361befd0d7a673dbbb1f28761240b06b9162645c44fc9"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK17_ROUTE_AND_NO_GO_REVIEW.md",
+      "canonical": "docs/FINITE_GRAPH_CYCLIC_WEAK_COUPLING_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "492d7dc5fb8e82842e1d73ccf77eba3567d55c05b0d45e87089acce90558ee7c"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK18_POSITIVE_ELECTRIC_GENERATOR_ACCURACY.md",
+      "canonical": "docs/POSITIVE_ELECTRIC_GENERATOR_CONE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "b5c68413f0d6b027a564e0d8f878f7c0b25733bdc7bfaf731f37a857453efb51"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK18_ROUTE_AND_NO_GO_REVIEW.md",
+      "canonical": "docs/POSITIVE_ELECTRIC_GENERATOR_CONE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "5a483aa1e9b6b8c8fc6f3a40250858cd67647e51a209e4036e766e48594b6df2"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK19_CHARGED_RING_SLOW_SPECTRUM.md",
+      "canonical": "docs/CHARGED_RING_SLOW_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "16bf9baa926f45335d4302a3610c6e9010382aa36281ebc69854af3c24665533"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK19_ROUTE_AND_NO_GO_REVIEW.md",
+      "canonical": "docs/CHARGED_RING_SLOW_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "108cb1a57fb29d040dbe16004e19284a7c077344a2a3732d8de142e5336f3288"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK20_ROUTE_AND_NO_GO_REVIEW.md",
+      "canonical": "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "501c432916c8ff969302eac8c562707d4623c56c8a4804c574789c30601ce59a"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK20_WEYL_HOLONOMY_CASIMIR_SELECTION.md",
+      "canonical": "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "a3cdb015d9efcfc65940e865e376f4a548ab335deab1a5ca683d22cc836fa107"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK21_FIXED_BOX_SLOW_HOLONOMY_THEOREM.md",
+      "canonical": "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "e03004c08ce0347a1479b7ee07b7248aa8cdcd7697ee3b9ab271dadfba67effc"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK21_ROUTE_AND_NO_GO_REVIEW.md",
+      "canonical": "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "6b2613877adb15793705998cb2a5d6f411a293d88504dcf67aaddff8f47bfe22"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/REVIEW_PERIODIC_HARMONIC_METRIC.md",
+      "canonical": "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "39aaf134dc18572a4183dc5b3cbee9e0603dc9c0b1542214d0da13a61b1789a0"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK22_ITERATED_PHYSICAL_MAXWELL_MATTER_STATE.md",
+      "canonical": "docs/ITERATED_LOCAL_MAXWELL_MATTER_STATE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "088242e916d8664caa557c10aeefb72a1747c8c454ab3acaaee29975fd9ac99a"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK22_ROUTE_AND_NO_GO_REVIEW.md",
+      "canonical": "docs/ITERATED_LOCAL_MAXWELL_MATTER_STATE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "ecebf14137d0380386cde79578254aa34cfa7198871d64a2adccef6f306e6809"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK23_MATCHED_FREE_CONE_WITH_POSITIVE_WEIGHTS.md",
+      "canonical": "docs/SUPPLIED_MATCHED_FREE_CONE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "b7c8b0b143072246cd8d93dd68335a2c2c0f4cb2b175b9e575e67da0f6f68bf7"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK23_ROUTE_AND_NO_GO_REVIEW.md",
+      "canonical": "docs/SUPPLIED_MATCHED_FREE_CONE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "ef340fca8c06615a5bb86e979e4263f718d98192ad95efe2e1dd8a12eed8c61d"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK24_EXACT_RESPONSE_IDENTITIES_AND_PHASE_TEST.md",
+      "canonical": "docs/EXACT_GAUGE_WARD_RESPONSE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "802a4346efb3cba02d525ed3eacdca77e3785675e0c3b9efdfc8d0aa9576efd6"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK24_ROUTE_AND_NO_GO_REVIEW.md",
+      "canonical": "docs/EXACT_GAUGE_WARD_RESPONSE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "5ab98a029b66cdf87e1c96616df549b46675a1c467a6fe1477f8fe613727fc07"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK25_ROUTE_AND_NO_GO_REVIEW.md",
+      "canonical": "docs/REAL_OVERLAP_LOCAL_SOURCE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "5a3e6a9723ff748a99ab83ab866804e019ca2ece4bde13a420f0658fb3725010"
+    },
+    {
+      "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK25_VISIBLE_THRESHOLD_ON_REAL_OVERLAP_MOMENTA.md",
+      "canonical": "docs/REAL_OVERLAP_LOCAL_SOURCE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "5da3986d85c36fc2b352d98f6fb48f86ff1fe5145c80e56a5ce9ee62beb17375"
+    },
+    {
+      "original": "EXTRA_BLOCK27",
+      "canonical": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "original_hash_matches": true,
+      "complete_body_present": true,
+      "body_sha256": "493ef3f8f5e393db70d1a8bea305e5de6e32ce808e980551807da94a98a4b8d1"
+    }
+  ],
+  "input_bindings": {
+    "runtime": [
+      {
+        "runner": "scripts/local_spectrum_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/quartet_metric_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/ground_cutoff_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/quadratic_coframe_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/decay_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/mixed_history_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/cyclic_equilibrium_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/cyclic_scaling_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/positive_generator_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/charged_ring_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/hybrid_curvature_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/hybrid_generator_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/integrated_rate_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/holonomy_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/slow_fast_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/physical_probe_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/matched_cone_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/response_identity_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/visible_threshold_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/cofactor_cyclic_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/contact_register_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/cut_completion_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/determinant_exclusion_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/forest_interpolation_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/gaussian_cycle_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/graph_source_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/hard_core_cycle_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/operator_source_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/partition_exclusion_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/phase_energy_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/general_order_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/record_pair_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/fourier_gaussian_register_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/tree_count_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/algebra_naturality_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/inverse_corner_support_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/positive_auxiliary_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/native_motion_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/native_twist_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/polarized_word_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      },
+      {
+        "runner": "scripts/review_harmonic_metric_check_2026_09_15.py",
+        "membership_unchanged": true,
+        "hashes_match": true
+      }
+    ],
+    "mathematical": [
+      {
+        "owner": "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "membership_matches": true,
+        "hashes_match": true
+      },
+      {
+        "owner": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "membership_matches": true,
+        "hashes_match": true
+      },
+      {
+        "owner": "docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "membership_matches": true,
+        "hashes_match": true
+      },
+      {
+        "owner": "docs/CUBIC_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "membership_matches": true,
+        "hashes_match": true
+      },
+      {
+        "owner": "docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "membership_matches": true,
+        "hashes_match": true
+      },
+      {
+        "owner": "docs/POSITIVE_AUXILIARY_CURRENT_LAW_AND_REGULATOR_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "membership_matches": true,
+        "hashes_match": true
+      },
+      {
+        "owner": "docs/NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "membership_matches": true,
+        "hashes_match": true
+      },
+      {
+        "owner": "docs/FINITE_NATIVE_WINDING_CURVATURE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "membership_matches": true,
+        "hashes_match": true
+      },
+      {
+        "owner": "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "membership_matches": true,
+        "hashes_match": true
+      },
+      {
+        "owner": "docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "membership_matches": true,
+        "hashes_match": true
+      },
+      {
+        "owner": "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "membership_matches": true,
+        "hashes_match": true
+      },
+      {
+        "owner": "docs/FIXED_COUPLING_ROTOR_GROUND_CUTOFF_COMPACTNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "membership_matches": true,
+        "hashes_match": true
+      },
+      {
+        "owner": "docs/SUPPLIED_QUARTET_QUADRATIC_BACKREACTION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "membership_matches": true,
+        "hashes_match": true
+      },
+      {
+        "owner": "docs/SUPPLIED_QUARTET_LEADING_DECAY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "membership_matches": true,
+        "hashes_match": true
+      },
+      {
+        "owner": "docs/NATIVE_MIXED_SIXTH_ORDER_COEFFICIENT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "membership_matches": true,
+        "hashes_match": true
+      },
+      {
+        "owner": "docs/CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "membership_matches": true,
+        "hashes_match": true
+      },
+      {
+        "owner": "docs/FINITE_GRAPH_CYCLIC_WEAK_COUPLING_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "membership_matches": true,
+        "hashes_match": true
+      },
+      {
+        "owner": "docs/POSITIVE_ELECTRIC_GENERATOR_CONE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "membership_matches": true,
+        "hashes_match": true
+      },
+      {
+        "owner": "docs/CHARGED_RING_SLOW_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "membership_matches": true,
+        "hashes_match": true
+      },
+      {
+        "owner": "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "membership_matches": true,
+        "hashes_match": true
+      },
+      {
+        "owner": "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "membership_matches": true,
+        "hashes_match": true
+      },
+      {
+        "owner": "docs/ITERATED_LOCAL_MAXWELL_MATTER_STATE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "membership_matches": true,
+        "hashes_match": true
+      },
+      {
+        "owner": "docs/SUPPLIED_MATCHED_FREE_CONE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "membership_matches": true,
+        "hashes_match": true
+      },
+      {
+        "owner": "docs/EXACT_GAUGE_WARD_RESPONSE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "membership_matches": true,
+        "hashes_match": true
+      },
+      {
+        "owner": "docs/REAL_OVERLAP_LOCAL_SOURCE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "membership_matches": true,
+        "hashes_match": true
+      }
+    ]
+  },
+  "prior_review": "/private/tmp/review-drain-20260915/drain8159-early-affected-review-v1.json"
+}

@@ -1,0 +1,220 @@
+{
+  "source_paths": 436,
+  "original_archives": 366,
+  "extra_import": "complete Block27 exact7a0a953d... proof plus gzip/manifest",
+  "complete_owned_original_proofs": 71,
+  "complete_program_AST_checks": [
+    {
+      "runner": "scripts/local_spectrum_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 0
+    },
+    {
+      "runner": "scripts/quartet_metric_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 0
+    },
+    {
+      "runner": "scripts/ground_cutoff_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 0
+    },
+    {
+      "runner": "scripts/quadratic_coframe_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 0
+    },
+    {
+      "runner": "scripts/decay_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 0
+    },
+    {
+      "runner": "scripts/mixed_history_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 0
+    },
+    {
+      "runner": "scripts/cyclic_equilibrium_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 11
+    },
+    {
+      "runner": "scripts/cyclic_scaling_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 22
+    },
+    {
+      "runner": "scripts/positive_generator_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 15
+    },
+    {
+      "runner": "scripts/charged_ring_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 14
+    },
+    {
+      "runner": "scripts/hybrid_curvature_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 13
+    },
+    {
+      "runner": "scripts/hybrid_generator_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 11
+    },
+    {
+      "runner": "scripts/integrated_rate_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 7
+    },
+    {
+      "runner": "scripts/holonomy_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 16
+    },
+    {
+      "runner": "scripts/slow_fast_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 8
+    },
+    {
+      "runner": "scripts/physical_probe_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 7
+    },
+    {
+      "runner": "scripts/matched_cone_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 5
+    },
+    {
+      "runner": "scripts/response_identity_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 10
+    },
+    {
+      "runner": "scripts/visible_threshold_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 7
+    },
+    {
+      "runner": "scripts/cofactor_cyclic_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 5
+    },
+    {
+      "runner": "scripts/contact_register_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 6
+    },
+    {
+      "runner": "scripts/cut_completion_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 11
+    },
+    {
+      "runner": "scripts/determinant_exclusion_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 11
+    },
+    {
+      "runner": "scripts/forest_interpolation_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 18
+    },
+    {
+      "runner": "scripts/gaussian_cycle_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 12
+    },
+    {
+      "runner": "scripts/graph_source_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 14
+    },
+    {
+      "runner": "scripts/hard_core_cycle_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 11
+    },
+    {
+      "runner": "scripts/operator_source_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 12
+    },
+    {
+      "runner": "scripts/partition_exclusion_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 9
+    },
+    {
+      "runner": "scripts/phase_energy_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 22
+    },
+    {
+      "runner": "scripts/general_order_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 11
+    },
+    {
+      "runner": "scripts/record_pair_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 15
+    },
+    {
+      "runner": "scripts/fourier_gaussian_register_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 10
+    },
+    {
+      "runner": "scripts/tree_count_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 9
+    },
+    {
+      "runner": "scripts/algebra_naturality_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 21
+    },
+    {
+      "runner": "scripts/inverse_corner_support_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 12
+    },
+    {
+      "runner": "scripts/positive_auxiliary_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 26
+    },
+    {
+      "runner": "scripts/native_motion_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 0
+    },
+    {
+      "runner": "scripts/native_twist_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 0
+    },
+    {
+      "runner": "scripts/polarized_word_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 0
+    },
+    {
+      "runner": "scripts/review_harmonic_metric_check_2026_09_15.py",
+      "entire_original_program_AST_preserved_after_only_literal_IO_import_path_adaptation": true,
+      "assertion_count_preserved": 10
+    }
+  ],
+  "all_frozen_hashes_match": true,
+  "original_math_preservation": "Every original proof text survives, except heading depth and internal Markdown links rendered as textual provenance. Entire original program AST survives after literal IO/import path adaptation; added input/output metadata and N5/one completed-program TOTAL only.",
+  "review_scope": "Complete transformation rules and source-specific changed lines reviewed; independent original scientific reports remain authoritative for unchanged full proof bodies; no new author mathematical acceptance claimed.",
+  "vocabulary": "zero violations",
+  "pending": "Original reviewer complete affected-source confirmation; root fresh guarded FF and9 additive registry entries; dual discovery/cheap preflight; bounded captures and final source/evidence check",
+  "no_primary_execution": true,
+  "tracked_index_unchanged": true
+}

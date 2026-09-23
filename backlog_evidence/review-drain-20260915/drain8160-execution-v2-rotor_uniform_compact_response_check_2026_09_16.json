@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/rotor_uniform_compact_response_check_2026_09_16.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "Discrete Gaussian, Wilson hopping, wavepacket, compact mode, and spectral challenges completed.\nper_element: executed \u2014 direct/dual Gaussian sums and literal CAR matrices at unchanged tolerances\nper_site: executed \u2014 finite cubic wave packets R=3,4,7,12 and translated ensembles L=3,4,5,6\nper_mode: executed \u2014 selected transverse sine/cosine modes and finite spectral measures\nper_block: executed \u2014 rank-two cycles, 16-dimensional CAR and degenerate-ground fixtures\nlattice_wide: checked and not executed \u2014 uniform bounds and joint-limit/time arguments are written proofs; finite fixtures do not execute an infinite lattice\nTOTAL: PASS=62 FAIL=0\n",
+  "stderr": "",
+  "elapsed_sec": 0.24720096588134766,
+  "timeout_sec": 120,
+  "live_log": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/.in-progress/rotor_uniform_compact_response_check_2026_09_16.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/rotor_uniform_compact_response_check_2026_09_16.json",
+    "sha256": "e29be601ffc2bb10fab998a77bc38cf59ec02403b3f8ed6c8459ae8a99652933"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 536870912,
+    "interval_sec": 0.02,
+    "root_pid": 50936,
+    "samples": 6,
+    "peak_tree_rss_bytes": 96796672,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8160-capture-v2.py",
+  "capture_script_sha256": "b9fc33718b65d21eea16b9b6f9d0be42a7b86999eb1c9a56f46fe72fe3699d6d"
+}

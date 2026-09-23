@@ -1,0 +1,38 @@
+[
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK5_FULL_ALGEBRA_NATURALITY_AND_CENTRAL_SUPPORT.md",
+    "owner": "docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "matched": "[B_R](T^n v)",
+    "target": "T^n v"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK10_LOCAL_SOURCE_SPECTRA_AND_DARK_THRESHOLD.md",
+    "owner": "docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "matched": "[E_pol,E_pol+delta/2](H(k)",
+    "target": "H(k"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK11_QUARTET_METRIC_FLOW_AND_POLARIZATION.md",
+    "owner": "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "matched": "[2N/(N+4)](S0^2)",
+    "target": "S0^2"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK14_QUARTET_DECAY_AND_CONE_STABILITY.md",
+    "owner": "docs/SUPPLIED_QUARTET_LEADING_DECAY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "matched": "[tr K_m/2](E_q-Vq dot n_p)",
+    "target": "E_q-Vq dot n_p"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK14_QUARTET_DECAY_AND_CONE_STABILITY.md",
+    "owner": "docs/SUPPLIED_QUARTET_LEADING_DECAY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "matched": "[k/(2p)](1-1/v^2)",
+    "target": "1-1/v^2"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK20_WEYL_HOLONOMY_CASIMIR_SELECTION.md",
+    "owner": "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "matched": "[1/|p|](R)",
+    "target": "R"
+  }
+]

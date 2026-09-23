@@ -1,0 +1,636 @@
+{
+  "status": "COLD SOURCE CONFIRMED AFTER NARROW OUTPUT FIX; ELIGIBLE FOR BOUNDED CAPTURES ONLY",
+  "unit_id": "PR8160",
+  "reviewer_session": "/root/review_8160",
+  "source": {
+    "base": "6b9c6183f24c01651d5a98394061bd88a52aef63",
+    "commit": "6b9c6183f24c01651d5a98394061bd88a52aef63",
+    "tree": "92cadc7c22a31c69e1575c0509a42c53530163c7",
+    "paths": [
+      {
+        "path": "docs/ROTOR_JOINT_BOUNDED_NEUTRAL_MATTER_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "005acc4364e654c3d32a94c8105552f3a515e497757a48f912d7f7a05ec9d47c"
+      },
+      {
+        "path": "docs/ROTOR_JOINT_EQUAL_TIME_WEYL_CAR_STATE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "dbe37676ec9b449ee2ea55d4375406cd0aa01d2f50b9f9d9b72538945c30dbdb"
+      },
+      {
+        "path": "docs/ROTOR_JOINT_GROUND_ENERGY_OSCILLATOR_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "80685ca04b4f8ace7e94f4f43455531715d914eb38803c3737118f9fab3e0ebc"
+      },
+      {
+        "path": "docs/ROTOR_JOINT_LOCAL_GAUGE_CHARACTERISTIC_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "5c9b27943612061c6953794af93f60bbb0dfe2783e123a09c6e70b7b5fb45820"
+      },
+      {
+        "path": "docs/ROTOR_JOINT_REAL_TIME_GAUGE_TWO_POINT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "7b945b5d7556745396e8bddda9776f7ef1cfb2aba812df4dacc15ec3595e27b0"
+      },
+      {
+        "path": "docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "8b881cfe2fe736dfea1bca01227f90f782d79daa00833dbac05d3b27b0c8498f"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "b83ef173efe855bba53e5ad0c98b46707181f0a7b08694b28e8c2490dd5c7218"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_000_APPROACH_REGISTRY.md.gz",
+        "sha256": "88a6660674e41081e249e6b5e1bf850a92e1f23a0e8498d621d3f4f005e5fb1c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_001_CLAIM_STATUS_CERTIFICATE.md.gz",
+        "sha256": "51b8b2817450a223d11974fc9bca3d970abb0a582d3b321c2b97b77b9d8aea83"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_002_GOAL.md.gz",
+        "sha256": "a38863cd78eff4935b0925bc653fb95906fd977ec14ff15565b8a9a80fa35536"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_003_HANDOFF.md.gz",
+        "sha256": "0f6b29ae685fe6c70a0720ba379aab144d411f3add81a3934bd9a485170f3722"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_004_MANIFEST.json.gz",
+        "sha256": "6a1e9408d8d8f43b429c848ee4d46a29271bad7ab660d9a9336f4587036b66f4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_005_NO_GO_LEDGER.md.gz",
+        "sha256": "79d5ef428c5913fa8da25a7d965661bd0bdf19db21201f7cb5f3534c8061c388"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_006_READING_LEDGER.md.gz",
+        "sha256": "d3bb52e3465d0457f96fbcc1fe2dda53ee68174d5bb54af0940eae0a7be14320"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_007_README.md.gz",
+        "sha256": "89aca965fb8bd0b6e180e99a61ebcb85e27e531a713db6ba930ed0008882c70d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_008_STATE.yaml.gz",
+        "sha256": "a7bfb5fc02efeec8ab9b6c986ab14f93ee12dcf15bf509f0b5cfc5c9b230a015"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_009_TRACE_GATE.md.gz",
+        "sha256": "55f51c332c69b06bb9685d40b934611c8998e29fcf69d2503b57adbd275e351a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_010_block01_uniform_response_check.json.gz",
+        "sha256": "4eb36622395474ee0117557ca2752c9e4e41d6a7d68adbfe723d10ac4d9137de"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_011_block01_uniform_response_check.py.gz",
+        "sha256": "49753c8eba0826f765f536c5c6aef476ff0971d2d423d25ffa21b759f9df29e3"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_012_block01_uniform_response_check.stderr.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_013_block01_uniform_response_check.txt.gz",
+        "sha256": "c67eef333659a7dd308cf2b4118f9c9ad37f8ca1c1de2caad3cb1ac7c49d6968"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_014_block02_integer_gaussian_square_check.json.gz",
+        "sha256": "48a72ebb424a7d59c5ae096b1d3e766c80bf224fea01a63ff65a01a1d9ef1909"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_015_block02_integer_gaussian_square_check.py.gz",
+        "sha256": "69283536cc47abc5af255a1a9f3b001fc0c3b8c24b7062a61510ac7d9daff342"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_016_block02_integer_gaussian_square_check.stderr.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_017_block02_integer_gaussian_square_check.txt.gz",
+        "sha256": "008d46459a71969b3ae580fd445deb53e13a16c6d0a51750fcf50273ccb518c9"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_018_block02_tree_slater_check.json.gz",
+        "sha256": "dac5553ceb6ac304132003a67274177a9e234127aaf89c7f07c0eba06db138bb"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_019_block02_tree_slater_check.py.gz",
+        "sha256": "2d8bd5b8acda0d82ba886a6b5c9d0f6c2a8ce54a4d5be1d466fef20479ee7cc0"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_020_block02_tree_slater_check.stderr.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_021_block02_tree_slater_check.txt.gz",
+        "sha256": "538e65bdbdd514503062ed2d7b87aa754c61bdb6e3581b385fb07a62c5825436"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_022_block03_characteristic_check.json.gz",
+        "sha256": "d52807802b324c78939d242cf8bda45065723a3d18e94176556bca2748515c38"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_023_block03_characteristic_check.py.gz",
+        "sha256": "0d209cf99c49470938ffbb8f14a17faf695dd298d4ef3a4d2e5ec2e373ddd18d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_024_block03_characteristic_check.stderr.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_025_block03_characteristic_check.txt.gz",
+        "sha256": "721f33d251a409fd688d71329064c1fcfc3b35496885b061359380955dce3f77"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_026_block04_weyl_zero_mode_check.json.gz",
+        "sha256": "c342736eca058c48f07a67b8d3dd58e65e69cf6ba4b453b1e3205cb0ad39367c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_027_block04_weyl_zero_mode_check.py.gz",
+        "sha256": "b7a1b75ad975a9ffef0b66fcb4ca15430f08c30cbc31c7957e82205948981474"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_028_block04_weyl_zero_mode_check.stderr.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_029_block04_weyl_zero_mode_check.txt.gz",
+        "sha256": "d97123157b292a117934aebae0689c80f6a7b923ed08552fac4370dc12fdb78d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_030_block05_generator_propagation_check.json.gz",
+        "sha256": "6a5bfea5ca568f42a0e73facfbb34b0ce26e7aa0dc3cd3fa78197d1624c6a7af"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_031_block05_generator_propagation_check.py.gz",
+        "sha256": "c3d6a4cb9bcf492a178d98100d362ded19cb1ddb622c214b99003bf7009697e6"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_032_block05_generator_propagation_check.stderr.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_033_block05_generator_propagation_check.txt.gz",
+        "sha256": "98e53d5de567237c68bbfbb6843426281f9f2a2c5182997697f21f4d82f4f85f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_034_block06_rooted_matter_check.json.gz",
+        "sha256": "6c7650687d52416a98c1ece300fc408686e3957576bdd000773b748a51c2a0bc"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_035_block06_rooted_matter_check.py.gz",
+        "sha256": "99054f27f35a8bc43acca994a1de7bebbd51c6edf53667f2758f7749ba3a57eb"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_036_block06_rooted_matter_check.stderr.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_037_block06_rooted_matter_check.txt.gz",
+        "sha256": "fcf653a7a799473cc0ceed644cccce459d8eff65628c2e40e5c85b5887e5a1b3"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_038_BLOCK01_UNIFORM_COMPACT_FIELD_AND_SOFT_RESPONSE.md.gz",
+        "sha256": "fc5e7bae46721c6d6b0c6417b4fb290a0f56b56991f5f2a43bc49c8467ec2b41"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_039_BLOCK01_WORKING_DERIVATION.md.gz",
+        "sha256": "1baf56cb5d26713dddafa8e5b4d1433dd83d0274c53710e093c6434152f3f5cb"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_040_BLOCK02_UNIFORM_GROUND_ENERGY_AND_OSCILLATOR_DEFECT.md.gz",
+        "sha256": "b0179d585659d3382ae3ac35269fcf00685a33ae987e71857cc9434c8114d817"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_041_BLOCK02_WORKING_JOINT_LIMIT.md.gz",
+        "sha256": "4f311b2ced8ecabc44f3ae0a81892a31d416bbb317f2ca748cb8cf5d85c126e4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_042_BLOCK03_JOINT_EQUAL_TIME_GAUGE_LIMIT.md.gz",
+        "sha256": "0c443b69c27f82ec85cb64bbeb63045c5d876b038a033144d3be5bb70e894cce"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_043_BLOCK04_JOINT_GAUGE_AND_MATTER_STATE.md.gz",
+        "sha256": "295cb9299d16ff2b501d9d934250e5a433ac68c483e01bf65d92a8deda2eda0f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_044_BLOCK04_WORKING_MIXED_STATE.md.gz",
+        "sha256": "ac09ae00f3a15e47c7e35105a8b49f9494ce874cbfb9807201d5687e696e9d1a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_045_BLOCK05_JOINT_REAL_TIME_GAUGE_TWO_POINT.md.gz",
+        "sha256": "0e02d942c9c270437d3dd60d9c81b5e5fad31b6f8407b5dd3be890c9cd997394"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_046_BLOCK05_WORKING_REAL_TIME_ELECTRIC.md.gz",
+        "sha256": "8f5e290d301f16fa431cb530739d470f910a64e7504adfb7b39df02a6a396486"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_047_BLOCK06_JOINT_BOUNDED_MATTER_DYNAMICS.md.gz",
+        "sha256": "27675a77a43b171e7bdff3f33bd40565e85b75f9242e68e8be6cd19ba526c648"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_048_BLOCK06_WORKING_BOUNDED_MATTER_DYNAMICS.md.gz",
+        "sha256": "fe1ad35f4a47357d6c119a753e9d981f8409ee497f29821b3e42722af58e8afe"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_049_BLOCK01_AUTHOR_REVIEW_INPUTS.json.gz",
+        "sha256": "6125da401664d593896e75fae03f593784e9f8492107ce378b2429dd4aeb5c51"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_050_BLOCK01_FINAL_SOURCE_HASHES.json.gz",
+        "sha256": "782e41eba3989f56c6f7fdae11ca47cfdff681ebbf152e4ae00c79c971351202"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_051_BLOCK01_PERSONAL_REVIEW.md.gz",
+        "sha256": "cb4de653c06586afcd6a6ee233270316adf3b719706421830cf8cad081306b40"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_052_BLOCK01_PREFLIGHT_OUTPUT.json.gz",
+        "sha256": "58a40759de4fb2681107a8df7735036998ebf5ee81ba58290a55f911fb0a5910"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_053_BLOCK01_PREFLIGHT_RUNNER.py.gz",
+        "sha256": "1817fd1ab741d06b2e8d628091e73c8d439a80d91e4e1189028aeaefb23cafc5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_054_BLOCK01_PREFLIGHT_SOURCE.md.gz",
+        "sha256": "40f4413590135904a913b4dd871ac3da53d6e6195f9097ea1a376f01a0015eed"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_055_BLOCK01_VOCAB.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_056_BLOCK02_03_PERSONAL_REVIEW.md.gz",
+        "sha256": "e8479458d3596438511d98f26633802ff8fd45efac7cf86ea8765bacce4f56bd"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_057_BLOCK02_03_SOURCE_HASHES.json.gz",
+        "sha256": "bba5d17518c0a869a9e41c60bca4b27b7d3d465092a2c3ba18b8520cecaf1891"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_058_BLOCK02_03_VOCAB.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_059_BLOCK04_PERSONAL_REVIEW.md.gz",
+        "sha256": "1746db70cc35192a01e78babcc9ea73a212b318acb17f34918e4362009e06635"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_060_BLOCK04_SOURCE_HASHES.json.gz",
+        "sha256": "7230b9c347d2391689abe235abbcc8d7545f2116006ea0a4823289692a508765"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_061_BLOCK04_VOCAB.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_062_RECORD.json.gz",
+        "sha256": "80373f84be7f77e8991ff0bf7cd3ad6f09eb65c0aaa01c188cdcda72df2082d3"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_063_block05_generator_propagation_check.py.gz",
+        "sha256": "2f10010099cebda537212f7c71a881cd270b3d2f7986190e210b4d705fcc1e6b"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_064_block05_generator_propagation_check.stderr.gz",
+        "sha256": "e1e9e5d9ba17f57ac2aac9521e152971a6ea4da26c6d7b022e99a1d201d6dc47"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_065_block05_generator_propagation_check.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_066_DIAGNOSTIC.json.gz",
+        "sha256": "a56f07c98fc1a16d05fe356e581fa909ca97726504bccd0335babfa7836382d2"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_067_RECORD.json.gz",
+        "sha256": "eccc8b874644d390040ebc936b350a3c497793d6b860e9396bf7deabb574ddb5"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_068_block05_generator_propagation_check.py.gz",
+        "sha256": "56c37eccffb11a42721aa99c05b7083d6cceff18cc8185d0ab57ea76484d780d"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_069_block05_generator_propagation_check.stderr.gz",
+        "sha256": "81905a10376f66cbea6147d79b64c859fd399550e71828f59aba4baef8c88a2f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_070_block05_generator_propagation_check.txt.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_071_BLOCK05_PERSONAL_REVIEW.md.gz",
+        "sha256": "313ccca700fe070c9b0ff161e17ca10b0e93726e1291938d957918535d978173"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_072_BLOCK05_SOURCE_HASHES.json.gz",
+        "sha256": "a8f1a1317a129ddfa5dcfadffab63703fe98097a1f6dc1aa0de6aa29cfc188dc"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_073_BLOCK05_VOCAB.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_074_BLOCK06_PERSONAL_REVIEW.md.gz",
+        "sha256": "d0a5998a71e6fb9618afe2f5501a3dea91d9ce15c9b059ab864223a6a9461cb3"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_075_BLOCK06_SOURCE_HASHES.json.gz",
+        "sha256": "722b748ac91dd7a26cd152730ec40c471b2123e3827cfbede692c1c5c4e23776"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_076_MILESTONE_DISK_SWEEP.json.gz",
+        "sha256": "ce77c882501a5447e7f8ef861f2eb917b2bb7fc0615df993991a3812d0a58f76"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_077_MILESTONE_PERSONAL_REVIEW.md.gz",
+        "sha256": "143b87b22956d12a84629f9c9ce44c349c08e4b2dfba7a7a7063ddeea8a0b144"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_078_MILESTONE_VALIDATION.json.gz",
+        "sha256": "d5908f1409a899a1e4fe64714ee798c226f0f4126f9c3f7d70341d9f43b5af97"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_079_MILESTONE_VOCAB.json.gz",
+        "sha256": "e0eca3b7cc602c79c4236e5b697d97a6d821379394f6d0f82077de5a7057b65a"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_080_OPEN_PR_HEADS.json.gz",
+        "sha256": "89ed7605895a5a75370b5cc8d2726f703955cdbbe464de8922da2c92d05e9086"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_081_PRIOR_MILESTONE_INPUTS.json.gz",
+        "sha256": "de29af167627789c8612bd2327d8c149f9535234ff0efb5c960d11519cb3a37c"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_082_milestone_mutation_checks.json.gz",
+        "sha256": "d86337bf23e9e4829b9f48a7386f642b78d8da06878beae3c453090694297a80"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_083_milestone_mutation_checks.py.gz",
+        "sha256": "ff86b9a0accbdae7540d14ade024e495164016a8bae68538613bd534a9cfc0a4"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_084_milestone_mutation_checks.stderr.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/8160_085_milestone_mutation_checks.txt.gz",
+        "sha256": "01c7bff262faa81e3266f2165c558559f2dff9afe8bc84a2e4d76948d5391614"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/README.md",
+        "sha256": "95115e029a0be04f2d4abdd83535b431a6fae3a0ce539a1eb16917a38830acde"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/original-manifest.json",
+        "sha256": "249cdd9a76bcf82a6f88f51995b4281e9f9f3ba15789d94c983b747e57d555d1"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "30b5d9c5ab1eeae92cd3fb3291fafe4211003b7e9c0acf5dec5d93238629a6c7"
+      },
+      {
+        "path": "scripts/rotor_integer_gaussian_positive_square_check_2026_09_16.py",
+        "sha256": "28c122c6b6704ecce38da4768fa23767bbafb3ade2cd10d71589c70167e55b18"
+      },
+      {
+        "path": "scripts/rotor_joint_characteristic_check_2026_09_16.py",
+        "sha256": "98deb7a0b06c820ad1f4656386095286ea16751c411e4aeff8564a5dfb27dc1e"
+      },
+      {
+        "path": "scripts/rotor_joint_gauge_propagation_check_2026_09_16.py",
+        "sha256": "8a603e8c4f8bac8cd14f1d3208802468d2389fbd5d8de4a12bc729c96efea997"
+      },
+      {
+        "path": "scripts/rotor_joint_rooted_matter_dynamics_check_2026_09_16.py",
+        "sha256": "13e8b74ef6ed229d9447cd976c1ef5c34531d0cbe5e7f6979d1bb56c860e3ef6"
+      },
+      {
+        "path": "scripts/rotor_joint_weyl_car_state_check_2026_09_16.py",
+        "sha256": "3ce6b6ed861be1ea0719254ae0b4d902c69409fa5223c4161f2b725c4a2e9a41"
+      },
+      {
+        "path": "scripts/rotor_tree_slater_dressing_check_2026_09_16.py",
+        "sha256": "5fa26d25f7842abfd09f6d6b5587ab47595643848bf7fa9def067b51f15b8e0a"
+      },
+      {
+        "path": "scripts/rotor_uniform_compact_response_check_2026_09_16.py",
+        "sha256": "d85a1827f56d8440e57c7a8aa0ccb524cfda547263750529b8ae7c2bc1d609a9"
+      }
+    ],
+    "deleted_paths": []
+  },
+  "inputs": {
+    "runtime": [
+      {
+        "path": "docs/ROTOR_JOINT_BOUNDED_NEUTRAL_MATTER_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "005acc4364e654c3d32a94c8105552f3a515e497757a48f912d7f7a05ec9d47c"
+      },
+      {
+        "path": "docs/ROTOR_JOINT_EQUAL_TIME_WEYL_CAR_STATE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "dbe37676ec9b449ee2ea55d4375406cd0aa01d2f50b9f9d9b72538945c30dbdb"
+      },
+      {
+        "path": "docs/ROTOR_JOINT_GROUND_ENERGY_OSCILLATOR_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "80685ca04b4f8ace7e94f4f43455531715d914eb38803c3737118f9fab3e0ebc"
+      },
+      {
+        "path": "docs/ROTOR_JOINT_LOCAL_GAUGE_CHARACTERISTIC_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "5c9b27943612061c6953794af93f60bbb0dfe2783e123a09c6e70b7b5fb45820"
+      },
+      {
+        "path": "docs/ROTOR_JOINT_REAL_TIME_GAUGE_TWO_POINT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "7b945b5d7556745396e8bddda9776f7ef1cfb2aba812df4dacc15ec3595e27b0"
+      },
+      {
+        "path": "docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "8b881cfe2fe736dfea1bca01227f90f782d79daa00833dbac05d3b27b0c8498f"
+      },
+      {
+        "path": "scripts/rotor_integer_gaussian_positive_square_check_2026_09_16.py",
+        "sha256": "28c122c6b6704ecce38da4768fa23767bbafb3ade2cd10d71589c70167e55b18"
+      },
+      {
+        "path": "scripts/rotor_joint_characteristic_check_2026_09_16.py",
+        "sha256": "98deb7a0b06c820ad1f4656386095286ea16751c411e4aeff8564a5dfb27dc1e"
+      },
+      {
+        "path": "scripts/rotor_joint_gauge_propagation_check_2026_09_16.py",
+        "sha256": "8a603e8c4f8bac8cd14f1d3208802468d2389fbd5d8de4a12bc729c96efea997"
+      },
+      {
+        "path": "scripts/rotor_joint_rooted_matter_dynamics_check_2026_09_16.py",
+        "sha256": "13e8b74ef6ed229d9447cd976c1ef5c34531d0cbe5e7f6979d1bb56c860e3ef6"
+      },
+      {
+        "path": "scripts/rotor_joint_weyl_car_state_check_2026_09_16.py",
+        "sha256": "3ce6b6ed861be1ea0719254ae0b4d902c69409fa5223c4161f2b725c4a2e9a41"
+      },
+      {
+        "path": "scripts/rotor_tree_slater_dressing_check_2026_09_16.py",
+        "sha256": "5fa26d25f7842abfd09f6d6b5587ab47595643848bf7fa9def067b51f15b8e0a"
+      },
+      {
+        "path": "scripts/rotor_uniform_compact_response_check_2026_09_16.py",
+        "sha256": "d85a1827f56d8440e57c7a8aa0ccb524cfda547263750529b8ae7c2bc1d609a9"
+      }
+    ],
+    "helpers": [
+      {
+        "path": "scripts/rotor_integer_gaussian_positive_square_check_2026_09_16.py",
+        "sha256": "28c122c6b6704ecce38da4768fa23767bbafb3ade2cd10d71589c70167e55b18"
+      },
+      {
+        "path": "scripts/rotor_joint_gauge_propagation_check_2026_09_16.py",
+        "sha256": "8a603e8c4f8bac8cd14f1d3208802468d2389fbd5d8de4a12bc729c96efea997"
+      },
+      {
+        "path": "scripts/rotor_tree_slater_dressing_check_2026_09_16.py",
+        "sha256": "5fa26d25f7842abfd09f6d6b5587ab47595643848bf7fa9def067b51f15b8e0a"
+      }
+    ],
+    "parents": [
+      {
+        "path": "docs/ROTOR_JOINT_EQUAL_TIME_WEYL_CAR_STATE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "dbe37676ec9b449ee2ea55d4375406cd0aa01d2f50b9f9d9b72538945c30dbdb"
+      },
+      {
+        "path": "docs/ROTOR_JOINT_GROUND_ENERGY_OSCILLATOR_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "80685ca04b4f8ace7e94f4f43455531715d914eb38803c3737118f9fab3e0ebc"
+      },
+      {
+        "path": "docs/ROTOR_JOINT_LOCAL_GAUGE_CHARACTERISTIC_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "5c9b27943612061c6953794af93f60bbb0dfe2783e123a09c6e70b7b5fb45820"
+      },
+      {
+        "path": "docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "8b881cfe2fe736dfea1bca01227f90f782d79daa00833dbac05d3b27b0c8498f"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/ROTOR_JOINT_BOUNDED_NEUTRAL_MATTER_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "005acc4364e654c3d32a94c8105552f3a515e497757a48f912d7f7a05ec9d47c"
+      },
+      {
+        "path": "docs/ROTOR_JOINT_EQUAL_TIME_WEYL_CAR_STATE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "dbe37676ec9b449ee2ea55d4375406cd0aa01d2f50b9f9d9b72538945c30dbdb"
+      },
+      {
+        "path": "docs/ROTOR_JOINT_GROUND_ENERGY_OSCILLATOR_DEFECT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "80685ca04b4f8ace7e94f4f43455531715d914eb38803c3737118f9fab3e0ebc"
+      },
+      {
+        "path": "docs/ROTOR_JOINT_LOCAL_GAUGE_CHARACTERISTIC_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "5c9b27943612061c6953794af93f60bbb0dfe2783e123a09c6e70b7b5fb45820"
+      },
+      {
+        "path": "docs/ROTOR_JOINT_REAL_TIME_GAUGE_TWO_POINT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "7b945b5d7556745396e8bddda9776f7ef1cfb2aba812df4dacc15ec3595e27b0"
+      },
+      {
+        "path": "docs/ROTOR_UNIFORM_COMPACT_FIELD_SOFT_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "8b881cfe2fe736dfea1bca01227f90f782d79daa00833dbac05d3b27b0c8498f"
+      },
+      {
+        "path": "docs/work_history/review_loop/pr8160/README.md",
+        "sha256": "95115e029a0be04f2d4abdd83535b431a6fae3a0ce539a1eb16917a38830acde"
+      },
+      {
+        "path": "scripts/rotor_integer_gaussian_positive_square_check_2026_09_16.py",
+        "sha256": "28c122c6b6704ecce38da4768fa23767bbafb3ade2cd10d71589c70167e55b18"
+      },
+      {
+        "path": "scripts/rotor_joint_gauge_propagation_check_2026_09_16.py",
+        "sha256": "8a603e8c4f8bac8cd14f1d3208802468d2389fbd5d8de4a12bc729c96efea997"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "b83ef173efe855bba53e5ad0c98b46707181f0a7b08694b28e8c2490dd5c7218"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "30b5d9c5ab1eeae92cd3fb3291fafe4211003b7e9c0acf5dec5d93238629a6c7"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "draft_record_sha256": "1e2a43317fcfaf79b86bc090e2d6e85bd61e0baf5fe0bec0b28b737a0bb4f67e",
+  "cheap_preflight": {
+    "path": "/private/tmp/review-drain-20260915/drain8160-author-cheap-v2.json",
+    "sha256": "82e6b5a0c81f1c3c7d2eaa4b80dce56d2f0edb421a1c0ba40273cecd3f8a05c7",
+    "mechanical_status": "ok",
+    "cache_checked": false
+  },
+  "supersedes": "cold-confirmation-v1 only as to seven output path expressions and affected dependent hashes; original proof findings unchanged",
+  "diagnosis": "Failed first capture had identical before/after runner/input content hashes and leaf tokens, but scripts directory size/mtime/ctime changed. Sibling JSON creation explains identity failure. No ABA guard weakened. Old stdout/exit result unavailable; no PASS inferred.",
+  "failed_receipt": {
+    "path": "/private/tmp/review-drain-20260915/drain8160-execution-rotor_uniform_compact_response_check_2026_09_16.json",
+    "sha256": "ffb1697c407501197d058c3675cd5937b3408195b9f218c7f7c83697b251662e"
+  },
+  "preserved_failed_raw_output": {
+    "path": "/private/tmp/review-drain-20260915/drain8160-failed-run1-structured-output.json",
+    "sha256": "0612e8222191a109e8f2b36a15f75fcfe8ee92d15987a1427225d042b073704b"
+  },
+  "output_path_fix_receipt": {
+    "path": "/private/tmp/review-drain-20260915/drain8160-output-path-fix-v2.json",
+    "sha256": "11296cd90c5f15c9f24ec866f4124d14b67d0e5aa81f83bf97424f17b153fb20"
+  },
+  "actual_checks": [
+    "Exactly one output expression changed per seven runners; reconstruction equals each frozen original byte-for-byte",
+    "All seven scripts compile without executing",
+    "All103 staged/disk source hashes and all input hashes match revised draft",
+    "Entire index mode/blob/path map equals recorded tree read-only",
+    "86 original archive/canonical disposition endpoints match revised handoff",
+    "Existing output directory logs/runner-cache is outside guarded source ancestors",
+    "Completed cheap-v2 exactdraft/tree mechanical ok/cachefalse"
+  ],
+  "findings": [],
+  "capture_scope": {
+    "unique_programs": 7,
+    "concurrency": 1,
+    "timeout_each_seconds": 120,
+    "sampled_process_tree_rss_limit_bytes": 536870912,
+    "output_paths": [
+      "logs/runner-cache/rotor_uniform_compact_response_check_2026_09_16.json",
+      "logs/runner-cache/rotor_integer_gaussian_positive_square_check_2026_09_16.json",
+      "logs/runner-cache/rotor_tree_slater_dressing_check_2026_09_16.json",
+      "logs/runner-cache/rotor_joint_characteristic_check_2026_09_16.json",
+      "logs/runner-cache/rotor_joint_weyl_car_state_check_2026_09_16.json",
+      "logs/runner-cache/rotor_joint_gauge_propagation_check_2026_09_16.json",
+      "logs/runner-cache/rotor_joint_rooted_matter_dynamics_check_2026_09_16.json"
+    ],
+    "first_program": "fresh capture required for corrected source; previous attempt remains capture_error",
+    "other_six": "first captures only",
+    "binding_requirement": "New capture supervisor must bind revised draft, this cold receipt, revised full source/input union and revised output destinations before and after each execution. Keep bytecode disabled. Old capture plan/script remain historical and must not run unchanged."
+  },
+  "limitations": [
+    "No new primary execution by reviewer",
+    "No fresh PASS or resource success claimed",
+    "Final source/evidence confirmation and cache preflight remain pending",
+    "Sampled RSS cap is not a continuous hard-limit proof"
+  ]
+}

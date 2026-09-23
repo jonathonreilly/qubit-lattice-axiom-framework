@@ -1,0 +1,97 @@
+{
+  "source_changes": [
+    {
+      "path": "scripts/rotor_uniform_compact_response_check_2026_09_16.py",
+      "before_sha256": "bbea0009b470124793dfe432dcb1ad6fb7e06b9e57d5b7376ab049c32052474b",
+      "after_sha256": "d85a1827f56d8440e57c7a8aa0ccb524cfda547263750529b8ae7c2bc1d609a9",
+      "output": "logs/runner-cache/rotor_uniform_compact_response_check_2026_09_16.json",
+      "original_copy": {
+        "path": "/private/tmp/review-drain-20260915/drain8160-output-fix-originals/rotor_uniform_compact_response_check_2026_09_16.py",
+        "sha256": "bbea0009b470124793dfe432dcb1ad6fb7e06b9e57d5b7376ab049c32052474b"
+      },
+      "change": "One exact output destination expression only; all computation and fixtures byte-identical."
+    },
+    {
+      "path": "scripts/rotor_integer_gaussian_positive_square_check_2026_09_16.py",
+      "before_sha256": "e9286f50fc2af8c8803c3fc172d97ea9ccbb682bbc32d99adbb6ac6e497e14fd",
+      "after_sha256": "28c122c6b6704ecce38da4768fa23767bbafb3ade2cd10d71589c70167e55b18",
+      "output": "logs/runner-cache/rotor_integer_gaussian_positive_square_check_2026_09_16.json",
+      "original_copy": {
+        "path": "/private/tmp/review-drain-20260915/drain8160-output-fix-originals/rotor_integer_gaussian_positive_square_check_2026_09_16.py",
+        "sha256": "e9286f50fc2af8c8803c3fc172d97ea9ccbb682bbc32d99adbb6ac6e497e14fd"
+      },
+      "change": "One exact output destination expression only; all computation and fixtures byte-identical."
+    },
+    {
+      "path": "scripts/rotor_tree_slater_dressing_check_2026_09_16.py",
+      "before_sha256": "5f5e073427161a942cf5256a11c40d861772373d14ed668282ee4fd6909a5bdc",
+      "after_sha256": "5fa26d25f7842abfd09f6d6b5587ab47595643848bf7fa9def067b51f15b8e0a",
+      "output": "logs/runner-cache/rotor_tree_slater_dressing_check_2026_09_16.json",
+      "original_copy": {
+        "path": "/private/tmp/review-drain-20260915/drain8160-output-fix-originals/rotor_tree_slater_dressing_check_2026_09_16.py",
+        "sha256": "5f5e073427161a942cf5256a11c40d861772373d14ed668282ee4fd6909a5bdc"
+      },
+      "change": "One exact output destination expression only; all computation and fixtures byte-identical."
+    },
+    {
+      "path": "scripts/rotor_joint_characteristic_check_2026_09_16.py",
+      "before_sha256": "399a452145b644c5412e6888b9504e9b4552c4636347a1e34590ee1be8ddb5ac",
+      "after_sha256": "98deb7a0b06c820ad1f4656386095286ea16751c411e4aeff8564a5dfb27dc1e",
+      "output": "logs/runner-cache/rotor_joint_characteristic_check_2026_09_16.json",
+      "original_copy": {
+        "path": "/private/tmp/review-drain-20260915/drain8160-output-fix-originals/rotor_joint_characteristic_check_2026_09_16.py",
+        "sha256": "399a452145b644c5412e6888b9504e9b4552c4636347a1e34590ee1be8ddb5ac"
+      },
+      "change": "One exact output destination expression only; all computation and fixtures byte-identical."
+    },
+    {
+      "path": "scripts/rotor_joint_weyl_car_state_check_2026_09_16.py",
+      "before_sha256": "358181787e9e2a78e1ed6d6c4c1a1aaec50b50e1a678ac42a6dddcdbd6660474",
+      "after_sha256": "3ce6b6ed861be1ea0719254ae0b4d902c69409fa5223c4161f2b725c4a2e9a41",
+      "output": "logs/runner-cache/rotor_joint_weyl_car_state_check_2026_09_16.json",
+      "original_copy": {
+        "path": "/private/tmp/review-drain-20260915/drain8160-output-fix-originals/rotor_joint_weyl_car_state_check_2026_09_16.py",
+        "sha256": "358181787e9e2a78e1ed6d6c4c1a1aaec50b50e1a678ac42a6dddcdbd6660474"
+      },
+      "change": "One exact output destination expression only; all computation and fixtures byte-identical."
+    },
+    {
+      "path": "scripts/rotor_joint_gauge_propagation_check_2026_09_16.py",
+      "before_sha256": "a89a760d3696807477410df0fa689beaa494fc5acc67328be2d42f5122909e82",
+      "after_sha256": "8a603e8c4f8bac8cd14f1d3208802468d2389fbd5d8de4a12bc729c96efea997",
+      "output": "logs/runner-cache/rotor_joint_gauge_propagation_check_2026_09_16.json",
+      "original_copy": {
+        "path": "/private/tmp/review-drain-20260915/drain8160-output-fix-originals/rotor_joint_gauge_propagation_check_2026_09_16.py",
+        "sha256": "a89a760d3696807477410df0fa689beaa494fc5acc67328be2d42f5122909e82"
+      },
+      "change": "One exact output destination expression only; all computation and fixtures byte-identical."
+    },
+    {
+      "path": "scripts/rotor_joint_rooted_matter_dynamics_check_2026_09_16.py",
+      "before_sha256": "9523a26e3e8b60027dc9141af4dbe7e5c324ed6e5c8058f23173b595aea3f24a",
+      "after_sha256": "13e8b74ef6ed229d9447cd976c1ef5c34531d0cbe5e7f6979d1bb56c860e3ef6",
+      "output": "logs/runner-cache/rotor_joint_rooted_matter_dynamics_check_2026_09_16.json",
+      "original_copy": {
+        "path": "/private/tmp/review-drain-20260915/drain8160-output-fix-originals/rotor_joint_rooted_matter_dynamics_check_2026_09_16.py",
+        "sha256": "9523a26e3e8b60027dc9141af4dbe7e5c324ed6e5c8058f23173b595aea3f24a"
+      },
+      "change": "One exact output destination expression only; all computation and fixtures byte-identical."
+    }
+  ],
+  "patch": {
+    "path": "/private/tmp/review-drain-20260915/drain8160-output-path-fix-v2.patch",
+    "sha256": "6e6870e93ad9cd7cb168f84996ab4dfbfe1d533402136a9a242475897d591237"
+  },
+  "failure": {
+    "path": "/private/tmp/review-drain-20260915/drain8160-execution-rotor_uniform_compact_response_check_2026_09_16.json",
+    "sha256": "ffb1697c407501197d058c3675cd5937b3408195b9f218c7f7c83697b251662e"
+  },
+  "preserved_structured_output": {
+    "path": "/private/tmp/review-drain-20260915/drain8160-failed-run1-structured-output.json",
+    "sha256": "0612e8222191a109e8f2b36a15f75fcfe8ee92d15987a1427225d042b073704b"
+  },
+  "diagnosis": "Only scripts directory generation token changed when child wrote sibling JSON; source/input content and leaf tokens unchanged. Output moved away from guarded source ancestors; ABA guard unchanged.",
+  "attempt_scope": "One attempted primary only, remaining six not run. runner_cache deleted live stdout on identity error; no stdout/exit result or PASS fabricated. Structured JSON and sampled watchdog preserved.",
+  "source_tree": "92cadc7c22a31c69e1575c0509a42c53530163c7",
+  "new_execution_needed": "Corrected source requires one fresh capture for first program and first captures for other six; unchanged caps120s512MiB."
+}

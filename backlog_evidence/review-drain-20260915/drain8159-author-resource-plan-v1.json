@@ -1,0 +1,1862 @@
+[
+  {
+    "runner": "scripts/local_spectrum_check_2026_09_15.py",
+    "original_sha256": "06dea89cfb0b73182c7bfa72a9f35f3518b93d93cc9c935660c61e1447781fb6",
+    "time_cap_seconds": 180,
+    "process_tree_rss_cap_bytes": 536870912,
+    "basis": "Finite deterministic fixtures with source operation inventory below; numerical/symbolic library overhead included. No empirical peak-RSS claim.",
+    "actual_operations": [
+      {
+        "line": 41,
+        "expression": "product((-1,0),repeat=3)"
+      },
+      {
+        "line": 101,
+        "expression": "np.zeros((N,N),complex)"
+      },
+      {
+        "line": 43,
+        "expression": "product(range(3),repeat=n)"
+      },
+      {
+        "line": 67,
+        "expression": "product(range(3),repeat=n)"
+      },
+      {
+        "line": 87,
+        "expression": "np.kron(b,color)"
+      },
+      {
+        "line": 195,
+        "expression": "np.zeros(dim,complex)"
+      },
+      {
+        "line": 117,
+        "expression": "product(range(3),repeat=n)"
+      },
+      {
+        "line": 184,
+        "expression": "eigsh(T,k=1,which='SA',return_eigenvectors=False,tol=1e-11)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {
+      "seconds": 0.4357468329835683
+    },
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/quartet_metric_check_2026_09_15.py",
+    "original_sha256": "88df4a71cc376722579575378cace794c676c5be8ce641fc1df53fd038a1a2c8",
+    "time_cap_seconds": 180,
+    "process_tree_rss_cap_bytes": 536870912,
+    "basis": "Finite deterministic fixtures with source operation inventory below; numerical/symbolic library overhead included. No empirical peak-RSS claim.",
+    "actual_operations": [
+      {
+        "line": 29,
+        "expression": "product(range(4),repeat=4)"
+      },
+      {
+        "line": 41,
+        "expression": "product(range(4),repeat=4)"
+      },
+      {
+        "line": 45,
+        "expression": "np.zeros((4,4,4),complex)"
+      },
+      {
+        "line": 60,
+        "expression": "sp.zeros(5)"
+      },
+      {
+        "line": 92,
+        "expression": "np.kron(sx,I2)"
+      },
+      {
+        "line": 92,
+        "expression": "np.kron(sz,I2)"
+      },
+      {
+        "line": 48,
+        "expression": "np.zeros((4,4))"
+      },
+      {
+        "line": 91,
+        "expression": "np.kron(I2,s)"
+      },
+      {
+        "line": 107,
+        "expression": "np.linalg.eigh(H)"
+      },
+      {
+        "line": 116,
+        "expression": "product((-1,1),repeat=2)"
+      },
+      {
+        "line": 25,
+        "expression": "np.kron(sz,I2)"
+      },
+      {
+        "line": 25,
+        "expression": "np.kron(sx,a)"
+      },
+      {
+        "line": 37,
+        "expression": "np.zeros(4)"
+      },
+      {
+        "line": 66,
+        "expression": "sp.zeros(5,1)"
+      },
+      {
+        "line": 38,
+        "expression": "product((-1,1),repeat=4)"
+      },
+      {
+        "line": 130,
+        "expression": "leggauss(degree)"
+      },
+      {
+        "line": 53,
+        "expression": "product(range(4),repeat=2)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {
+      "seconds": 0.4407860420178622
+    },
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/ground_cutoff_check_2026_09_15.py",
+    "original_sha256": "ab702b2e95d5ba4269b7703d617d8bca7520e284b8ad26a15648fe4b18d10ecc",
+    "time_cap_seconds": 180,
+    "process_tree_rss_cap_bytes": 536870912,
+    "basis": "Finite deterministic fixtures with source operation inventory below; numerical/symbolic library overhead included. No empirical peak-RSS claim.",
+    "actual_operations": [
+      {
+        "line": 17,
+        "expression": "np.kron(sx,I)"
+      },
+      {
+        "line": 17,
+        "expression": "np.kron(sz,I)"
+      },
+      {
+        "line": 154,
+        "expression": "np.zeros(5)"
+      },
+      {
+        "line": 17,
+        "expression": "np.kron(I,s)"
+      },
+      {
+        "line": 91,
+        "expression": "sparse.kron(El,Id)"
+      },
+      {
+        "line": 91,
+        "expression": "sparse.kron(Id,El)"
+      },
+      {
+        "line": 91,
+        "expression": "sparse.kron(Ul,Id)"
+      },
+      {
+        "line": 91,
+        "expression": "sparse.kron(Id,Ul)"
+      },
+      {
+        "line": 95,
+        "expression": "sparse.kron(sparse.eye(256),U1@U2)"
+      },
+      {
+        "line": 111,
+        "expression": "eigsh(H,k=1,which='SA',tol=1e-12,v0=np.ones(len(states)))"
+      },
+      {
+        "line": 141,
+        "expression": "eigh(H)"
+      },
+      {
+        "line": 161,
+        "expression": "eigh(HS)"
+      },
+      {
+        "line": 162,
+        "expression": "np.zeros(2*K+1)"
+      },
+      {
+        "line": 42,
+        "expression": "product(range(4),repeat=2)"
+      },
+      {
+        "line": 145,
+        "expression": "np.zeros(2*K+1)"
+      },
+      {
+        "line": 165,
+        "expression": "expm_multiply(-1j*tt*HK,initial)"
+      },
+      {
+        "line": 21,
+        "expression": "product((-1,1),repeat=2)"
+      },
+      {
+        "line": 73,
+        "expression": "product(range(4),repeat=2)"
+      },
+      {
+        "line": 78,
+        "expression": "product(range(4),repeat=2)"
+      },
+      {
+        "line": 92,
+        "expression": "sparse.kron(On,sparse.eye(d*d))"
+      },
+      {
+        "line": 92,
+        "expression": "sparse.kron(sparse.eye(256),E1@E1+E2@E2)"
+      },
+      {
+        "line": 94,
+        "expression": "sparse.kron(hop,U)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {
+      "seconds": 0.19204804208129644
+    },
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/quadratic_coframe_check_2026_09_15.py",
+    "original_sha256": "67358d628834300d42cc1ff99b4f8431ac149ddde41142f5ede52c880540702e",
+    "time_cap_seconds": 180,
+    "process_tree_rss_cap_bytes": 536870912,
+    "basis": "Finite deterministic fixtures with source operation inventory below; numerical/symbolic library overhead included. No empirical peak-RSS claim.",
+    "actual_operations": [
+      {
+        "line": 59,
+        "expression": "leggauss(degree)"
+      },
+      {
+        "line": 59,
+        "expression": "np.zeros((4,4))"
+      },
+      {
+        "line": 99,
+        "expression": "leggauss(degree)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {
+      "seconds": 1.7666948330588639
+    },
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/decay_check_2026_09_15.py",
+    "original_sha256": "44d253afb88ab26cd58bbf88998544cb284f5a396e899432d11e4d03bc03b210",
+    "time_cap_seconds": 180,
+    "process_tree_rss_cap_bytes": 536870912,
+    "basis": "Finite deterministic fixtures with source operation inventory below; numerical/symbolic library overhead included. No empirical peak-RSS claim.",
+    "actual_operations": [
+      {
+        "line": 157,
+        "expression": "np.linalg.eigh(Gedge)"
+      },
+      {
+        "line": 52,
+        "expression": "leggauss(degree)"
+      },
+      {
+        "line": 82,
+        "expression": "leggauss(degree)"
+      },
+      {
+        "line": 83,
+        "expression": "np.zeros((2,2),complex)"
+      },
+      {
+        "line": 76,
+        "expression": "np.zeros((2,2))"
+      },
+      {
+        "line": 81,
+        "expression": "np.zeros((2,2),complex)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {
+      "seconds": 4.678268167073838
+    },
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/mixed_history_check_2026_09_15.py",
+    "original_sha256": "c125b42bafa009d3261d1fbe8f52324bfcea40c3329fba31e26e03d079fd7094",
+    "time_cap_seconds": 180,
+    "process_tree_rss_cap_bytes": 536870912,
+    "basis": "Finite deterministic fixtures with source operation inventory below; numerical/symbolic library overhead included. No empirical peak-RSS claim.",
+    "actual_operations": [
+      {
+        "line": 73,
+        "expression": "product(range(8),repeat=2)"
+      },
+      {
+        "line": 78,
+        "expression": "np.zeros((8,8))"
+      },
+      {
+        "line": 80,
+        "expression": "np.linalg.eigh(Hraw)"
+      },
+      {
+        "line": 104,
+        "expression": "np.linalg.eigh(Hd0)"
+      },
+      {
+        "line": 133,
+        "expression": "np.zeros(16)"
+      },
+      {
+        "line": 135,
+        "expression": "np.zeros((4,4))"
+      },
+      {
+        "line": 135,
+        "expression": "np.zeros((4,4))"
+      },
+      {
+        "line": 42,
+        "expression": "product(parts,repeat=2)"
+      },
+      {
+        "line": 81,
+        "expression": "np.zeros((16,16))"
+      },
+      {
+        "line": 82,
+        "expression": "np.zeros((16,16))"
+      },
+      {
+        "line": 154,
+        "expression": "np.kron(np.kron(a,b),c)"
+      },
+      {
+        "line": 155,
+        "expression": "kron3(X,I,I)"
+      },
+      {
+        "line": 155,
+        "expression": "kron3(Z,X,I)"
+      },
+      {
+        "line": 155,
+        "expression": "kron3(Z,Z,X)"
+      },
+      {
+        "line": 156,
+        "expression": "kron3(Z,Z,Z)"
+      },
+      {
+        "line": 65,
+        "expression": "np.zeros((dim,dim),complex)"
+      },
+      {
+        "line": 85,
+        "expression": "expm(-1j*t*(H+B))"
+      },
+      {
+        "line": 85,
+        "expression": "expm(1j*t*H)"
+      },
+      {
+        "line": 86,
+        "expression": "expm(1j*t*H)"
+      },
+      {
+        "line": 154,
+        "expression": "np.kron(a,b)"
+      },
+      {
+        "line": 86,
+        "expression": "expm(-1j*t*H)"
+      },
+      {
+        "line": 89,
+        "expression": "expm(-1j*t*(H+Vs[a]+Ws[b]))"
+      },
+      {
+        "line": 142,
+        "expression": "product(range(4),repeat=2)"
+      },
+      {
+        "line": 76,
+        "expression": "product(range(8),repeat=2)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {
+      "seconds": 2.1435908750863746
+    },
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/cyclic_equilibrium_check_2026_09_15.py",
+    "original_sha256": "f662d1aa523462d7374f4ee3e79c252e4806bd0720330cc40bfccd55bef835a8",
+    "time_cap_seconds": 180,
+    "process_tree_rss_cap_bytes": 536870912,
+    "basis": "Finite deterministic fixtures with source operation inventory below; numerical/symbolic library overhead included. No empirical peak-RSS claim.",
+    "actual_operations": [
+      {
+        "line": 124,
+        "expression": "np.zeros((len(basis), len(basis)), dtype=complex)"
+      },
+      {
+        "line": 150,
+        "expression": "np.linalg.eigh(h.toarray())"
+      },
+      {
+        "line": 159,
+        "expression": "np.zeros(h.shape, complex)"
+      },
+      {
+        "line": 113,
+        "expression": "np.zeros((256, 256))"
+      },
+      {
+        "line": 108,
+        "expression": "product(range(-1, 2), repeat=4)"
+      },
+      {
+        "line": 225,
+        "expression": "eigsh(h, k=1, which='SA', tol=1e-12, v0=start)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/cyclic_scaling_check_2026_09_15.py",
+    "original_sha256": "fa1be725a3f310444d0384a762060d4c5955875b5779c8f9d18b230f861fedb7",
+    "time_cap_seconds": 300,
+    "process_tree_rss_cap_bytes": 1073741824,
+    "basis": "Charged sector dense maximum1188 (complex matrix22MiB); full retained sector<=2310; Fourier625 matrix3MiB,513\u00b2 density2MiB; eigh workspace multiple matrices, sequential fixtures.",
+    "actual_operations": [
+      {
+        "line": 22,
+        "expression": "eigh_tridiagonal(diag, off, select='i', select_range=(0, levels-1))"
+      },
+      {
+        "line": 34,
+        "expression": "eigh(h, subset_by_index=(0, levels-1))"
+      },
+      {
+        "line": 41,
+        "expression": "np.zeros((6, 7), int)"
+      },
+      {
+        "line": 47,
+        "expression": "np.zeros((7, 6), int)"
+      },
+      {
+        "line": 106,
+        "expression": "eigh(h.toarray(), subset_by_index=(0, 2))"
+      },
+      {
+        "line": 131,
+        "expression": "np.zeros((len(masks), len(masks)), complex)"
+      },
+      {
+        "line": 145,
+        "expression": "np.zeros((len(basis), len(masks)), complex)"
+      },
+      {
+        "line": 203,
+        "expression": "np.zeros((len(coords), len(coords)))"
+      },
+      {
+        "line": 212,
+        "expression": "eigh(h, subset_by_index=(0, 2))"
+      },
+      {
+        "line": 225,
+        "expression": "sp.zeros(10)"
+      },
+      {
+        "line": 52,
+        "expression": "np.zeros((6, 2), int)"
+      },
+      {
+        "line": 92,
+        "expression": "itertools.product(range(n), repeat=2)"
+      },
+      {
+        "line": 201,
+        "expression": "itertools.product(range(-modes, modes+1), repeat=2)"
+      },
+      {
+        "line": 67,
+        "expression": "itertools.product(range(-(n//2), n//2+1), repeat=2)"
+      },
+      {
+        "line": 68,
+        "expression": "np.zeros(6, int)"
+      },
+      {
+        "line": 177,
+        "expression": "np.zeros_like(psi)"
+      },
+      {
+        "line": 167,
+        "expression": "eigh(block, subset_by_index=(0, 3))"
+      },
+      {
+        "line": 169,
+        "expression": "np.zeros(len(basis), complex)"
+      },
+      {
+        "line": 74,
+        "expression": "itertools.product(range(-1, 2), repeat=7)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/positive_generator_check_2026_09_15.py",
+    "original_sha256": "e64458e7c987b5ace92e4191ab2d9039846a4660e7d71a9df23c7b5301162efb",
+    "time_cap_seconds": 180,
+    "process_tree_rss_cap_bytes": 536870912,
+    "basis": "Finite deterministic fixtures with source operation inventory below; numerical/symbolic library overhead included. No empirical peak-RSS claim.",
+    "actual_operations": [
+      {
+        "line": 13,
+        "expression": "np.zeros((n, n))"
+      },
+      {
+        "line": 33,
+        "expression": "eigh(h, subset_by_index=(0, 2))"
+      },
+      {
+        "line": 75,
+        "expression": "np.zeros(s)"
+      },
+      {
+        "line": 81,
+        "expression": "expm(-time*h)"
+      },
+      {
+        "line": 67,
+        "expression": "expm(-time*h)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/charged_ring_check_2026_09_15.py",
+    "original_sha256": "36b033ea82f48b9337e35fa8902df1592fa1d954d4fddf2d4cc6498c4212dbf9",
+    "time_cap_seconds": 300,
+    "process_tree_rss_cap_bytes": 1073741824,
+    "basis": "Six occupation masks times105 flux labels gives upper630 real dense matrix3.1MiB; symbolic12x12 ladder; sequential eigh and adverse comparisons.",
+    "actual_operations": [
+      {
+        "line": 37,
+        "expression": "np.zeros((len(basis), len(basis)))"
+      },
+      {
+        "line": 65,
+        "expression": "np.zeros((len(basis), len(basis)))"
+      },
+      {
+        "line": 80,
+        "expression": "sp.zeros(6)"
+      },
+      {
+        "line": 80,
+        "expression": "sp.zeros(6)"
+      },
+      {
+        "line": 104,
+        "expression": "sp.zeros(12)"
+      },
+      {
+        "line": 55,
+        "expression": "np.zeros((16, 16))"
+      },
+      {
+        "line": 99,
+        "expression": "sp.zeros(6, 1)"
+      },
+      {
+        "line": 123,
+        "expression": "eigh(h, subset_by_index=(0, 3))"
+      },
+      {
+        "line": 131,
+        "expression": "np.zeros_like(psi)"
+      },
+      {
+        "line": 62,
+        "expression": "itertools.product(range(-cut, cut+1), repeat=4)"
+      },
+      {
+        "line": 162,
+        "expression": "eigh(h, subset_by_index=(0, 0), eigvals_only=True)"
+      },
+      {
+        "line": 172,
+        "expression": "eigh(h, subset_by_index=(0, 0), eigvals_only=True)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/hybrid_curvature_check_2026_09_15.py",
+    "original_sha256": "559376e8605befbfe4d7ba9b5852f8dc6c2352f9675c0bab025c52b07c3105e2",
+    "time_cap_seconds": 180,
+    "process_tree_rss_cap_bytes": 536870912,
+    "basis": "Finite deterministic fixtures with source operation inventory below; numerical/symbolic library overhead included. No empirical peak-RSS claim.",
+    "actual_operations": [
+      {
+        "line": 21,
+        "expression": "np.zeros((len(faces), len(edges)))"
+      },
+      {
+        "line": 16,
+        "expression": "itertools.product(range(2), repeat=4)"
+      },
+      {
+        "line": 59,
+        "expression": "np.zeros((24,24))"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/hybrid_generator_check_2026_09_15.py",
+    "original_sha256": "2f12fa7be53742b085ccadf09ca2b64542fed3fa27f5e79662ec97538c45aaaf",
+    "time_cap_seconds": 180,
+    "process_tree_rss_cap_bytes": 536870912,
+    "basis": "Finite deterministic fixtures with source operation inventory below; numerical/symbolic library overhead included. No empirical peak-RSS claim.",
+    "actual_operations": [
+      {
+        "line": 23,
+        "expression": "np.zeros((6, 12), dtype=int)"
+      },
+      {
+        "line": 17,
+        "expression": "itertools.product(range(2), repeat=3)"
+      },
+      {
+        "line": 55,
+        "expression": "itertools.product(range(N), repeat=5)"
+      },
+      {
+        "line": 86,
+        "expression": "np.zeros(6)"
+      },
+      {
+        "line": 109,
+        "expression": "np.expm1(1j*u)"
+      },
+      {
+        "line": 110,
+        "expression": "np.expm1(-1j*u)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/integrated_rate_check_2026_09_15.py",
+    "original_sha256": "c9ad818b8188242a99914467d59f1ea211be07a24c29c7ded3afd8aef032bb5f",
+    "time_cap_seconds": 180,
+    "process_tree_rss_cap_bytes": 536870912,
+    "basis": "Finite deterministic fixtures with source operation inventory below; numerical/symbolic library overhead included. No empirical peak-RSS claim.",
+    "actual_operations": [
+      {
+        "line": 48,
+        "expression": "np.expm1(1j*(moves@(scale*source)))"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/holonomy_check_2026_09_15.py",
+    "original_sha256": "70414572435bddda43cfbc6e4277f107d9410f0ac0a1e118d0538704bea224fa",
+    "time_cap_seconds": 180,
+    "process_tree_rss_cap_bytes": 536870912,
+    "basis": "Finite deterministic fixtures with source operation inventory below; numerical/symbolic library overhead included. No empirical peak-RSS claim.",
+    "actual_operations": [
+      {
+        "line": 54,
+        "expression": "np.zeros_like(r)"
+      },
+      {
+        "line": 127,
+        "expression": "np.zeros((3,3))"
+      },
+      {
+        "line": 94,
+        "expression": "np.zeros(3)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/slow_fast_check_2026_09_15.py",
+    "original_sha256": "d73fc24eee2cc1afb330ec5b8692328506ae710ae20d0cbae232d663978c770c",
+    "time_cap_seconds": 300,
+    "process_tree_rss_cap_bytes": 1073741824,
+    "basis": "At g=.05, nq100,nt27:2*201*55=22110 complex sparse rows; local stencil; sparse LU fill-in may dominate. Full dense literal check only30x30.1GiB operational ceiling is not a proved fill-in bound.",
+    "actual_operations": [
+      {
+        "line": 18,
+        "expression": "kron(diags(np.ones(dq-1),-1),eye(dt),format='csr')"
+      },
+      {
+        "line": 19,
+        "expression": "kron(eye(dq),diags(np.ones(dt-1),-1),format='csr')"
+      },
+      {
+        "line": 20,
+        "expression": "np.meshgrid(np.arange(-nq,nq+1),np.arange(-nt,nt+1),indexing='ij')"
+      },
+      {
+        "line": 45,
+        "expression": "eigsh(H,k=4,sigma=-4.,which='LM',tol=2e-11,v0=start)"
+      },
+      {
+        "line": 70,
+        "expression": "np.zeros((len(modes)*2,len(modes)*2),complex)"
+      },
+      {
+        "line": 24,
+        "expression": "kron((eye(dq*dt)-.5*(tq+tq.T))/g**2,id2)"
+      },
+      {
+        "line": 25,
+        "expression": "kron(eye(dq*dt),v/2*sz)"
+      },
+      {
+        "line": 28,
+        "expression": "kron(tt.T,block1.conj().T)"
+      },
+      {
+        "line": 29,
+        "expression": "kron(tt.T@tt.T,block2.conj().T)"
+      },
+      {
+        "line": 31,
+        "expression": "kron(tq.T,bq.conj().T)"
+      },
+      {
+        "line": 28,
+        "expression": "kron(tt,block1)"
+      },
+      {
+        "line": 29,
+        "expression": "kron(tt@tt,block2)"
+      },
+      {
+        "line": 31,
+        "expression": "kron(tq,bq)"
+      },
+      {
+        "line": 75,
+        "expression": "np.kron(np.outer(ph.conj(),ph),pot)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/physical_probe_check_2026_09_15.py",
+    "original_sha256": "b216b8e28d5feddc38c5069ae4f3f8bc9e8336464cc5b934638150add930be34",
+    "time_cap_seconds": 300,
+    "process_tree_rss_cap_bytes": 1073741824,
+    "basis": "Imports21 builder; same22110 sparse rows; shift-invert plus expm_multiply vectors,192x192 curl matrices;1GiB cap includes sparse-factor workspace, not a proved peak.",
+    "actual_operations": [
+      {
+        "line": 15,
+        "expression": "np.zeros((3*V,3*V))"
+      },
+      {
+        "line": 15,
+        "expression": "np.zeros((3*V,V))"
+      },
+      {
+        "line": 28,
+        "expression": "np.linalg.eigh(C.T@C)"
+      },
+      {
+        "line": 33,
+        "expression": "np.zeros_like(Om,dtype=complex)"
+      },
+      {
+        "line": 59,
+        "expression": "eigsh(H,k=1,sigma=-4.,which='LM',tol=1e-12,v0=v0)"
+      },
+      {
+        "line": 65,
+        "expression": "kron(kron(diags(np.ones(dq-1),-1),eye(dt)),eye(2),format='csr')"
+      },
+      {
+        "line": 70,
+        "expression": "expm_multiply(1j*v*magnetic,right,traceA=0)"
+      },
+      {
+        "line": 75,
+        "expression": "expm_multiply(-1j*t*(H-E0*eye(dim)),eb,traceA=-1j*t*(H.diagonal().sum()-E0*dim))"
+      },
+      {
+        "line": 38,
+        "expression": "np.zeros((3,3),complex)"
+      },
+      {
+        "line": 42,
+        "expression": "np.kron(spatial,w*P)"
+      },
+      {
+        "line": 43,
+        "expression": "np.kron(spatial,ck@ck.conj().T/w)"
+      },
+      {
+        "line": 65,
+        "expression": "kron(diags(np.ones(dq-1),-1),eye(dt))"
+      },
+      {
+        "line": 72,
+        "expression": "expm_multiply(1j*v*magnetic,right*spin,traceA=0)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/matched_cone_check_2026_09_15.py",
+    "original_sha256": "a9ef499ba1dc59906d2477ed6d4a534206bb068f86d98a72835710e97b60133e",
+    "time_cap_seconds": 180,
+    "process_tree_rss_cap_bytes": 536870912,
+    "basis": "Finite deterministic fixtures with source operation inventory below; numerical/symbolic library overhead included. No empirical peak-RSS claim.",
+    "actual_operations": [
+      {
+        "line": 29,
+        "expression": "np.zeros((3*L**3,3*L**3))"
+      },
+      {
+        "line": 51,
+        "expression": "itertools.product(range(L),repeat=3)"
+      },
+      {
+        "line": 24,
+        "expression": "itertools.product(range(L), repeat=3)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/response_identity_check_2026_09_15.py",
+    "original_sha256": "096359cb31c02d554679cdb681ac2d5f3b475cc37d041ec66770784b77e09f6b",
+    "time_cap_seconds": 180,
+    "process_tree_rss_cap_bytes": 536870912,
+    "basis": "Finite deterministic fixtures with source operation inventory below; numerical/symbolic library overhead included. No empirical peak-RSS claim.",
+    "actual_operations": [
+      {
+        "line": 106,
+        "expression": "la.eigh(H0)"
+      },
+      {
+        "line": 52,
+        "expression": "np.zeros(4)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/visible_threshold_check_2026_09_15.py",
+    "original_sha256": "cebba632c3975013b31ddd090c409557b0fd6f08cf63038344bb3e21d24aed9e",
+    "time_cap_seconds": 180,
+    "process_tree_rss_cap_bytes": 536870912,
+    "basis": "Finite deterministic fixtures with source operation inventory below; numerical/symbolic library overhead included. No empirical peak-RSS claim.",
+    "actual_operations": [
+      {
+        "line": 47,
+        "expression": "np.zeros((len(ws3),len(ws2)),dtype=complex)"
+      },
+      {
+        "line": 54,
+        "expression": "np.zeros(len(ws3),dtype=complex)"
+      },
+      {
+        "line": 67,
+        "expression": "la.eigh(H2)"
+      },
+      {
+        "line": 34,
+        "expression": "np.kron(x,f)"
+      },
+      {
+        "line": 12,
+        "expression": "itertools.product(range(q),repeat=n)"
+      },
+      {
+        "line": 75,
+        "expression": "np.kron(v,xi)"
+      },
+      {
+        "line": 75,
+        "expression": "np.kron(xi,u)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/cofactor_cyclic_check_2026_09_15.py",
+    "original_sha256": "15443bca5f8224de92d9f93916d14c4fa1e0e55bf76805216ab9977e9ffd9e33",
+    "time_cap_seconds": 300,
+    "process_tree_rss_cap_bytes": 1073741824,
+    "basis": "Finite partition/permutation/contact-register and cochain fixtures; SymPy/mpmath and dense Kronecker work. Combinatorial runtime is bounded by literal source loops, not asymptotic lattice claims.",
+    "actual_operations": [
+      {
+        "line": 86,
+        "expression": "itertools.product([0, 1], repeat=n)"
+      },
+      {
+        "line": 99,
+        "expression": "itertools.product(range(len(footprints)), repeat=n)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/contact_register_check_2026_09_15.py",
+    "original_sha256": "3e33d454e6ce1794da86835cd55b19a162b5294a42a0d0e91a9038d231978721",
+    "time_cap_seconds": 300,
+    "process_tree_rss_cap_bytes": 1073741824,
+    "basis": "Finite partition/permutation/contact-register and cochain fixtures; SymPy/mpmath and dense Kronecker work. Combinatorial runtime is bounded by literal source loops, not asymptotic lattice claims.",
+    "actual_operations": [
+      {
+        "line": 17,
+        "expression": "np.zeros_like(a)"
+      },
+      {
+        "line": 27,
+        "expression": "np.zeros(size)"
+      },
+      {
+        "line": 88,
+        "expression": "itertools.product([0, 1], repeat=len(edges))"
+      },
+      {
+        "line": 31,
+        "expression": "np.zeros(size)"
+      },
+      {
+        "line": 41,
+        "expression": "jet_product(result, det)"
+      },
+      {
+        "line": 90,
+        "expression": "itertools.product(universe, repeat=len(edges))"
+      },
+      {
+        "line": 99,
+        "expression": "np.zeros((rows*dimension, cols*dimension))"
+      },
+      {
+        "line": 33,
+        "expression": "np.zeros(size)"
+      },
+      {
+        "line": 135,
+        "expression": "itertools.product(range(4), repeat=n)"
+      },
+      {
+        "line": 35,
+        "expression": "np.zeros(size)"
+      },
+      {
+        "line": 39,
+        "expression": "jet_product(term, factor)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/cut_completion_check_2026_09_15.py",
+    "original_sha256": "ecfb69a5d083eb21cd1fa233ba20e922fe8775fc0f93c6278c497bfb18e10ffc",
+    "time_cap_seconds": 300,
+    "process_tree_rss_cap_bytes": 1073741824,
+    "basis": "Finite partition/permutation/contact-register and cochain fixtures; SymPy/mpmath and dense Kronecker work. Combinatorial runtime is bounded by literal source loops, not asymptotic lattice claims.",
+    "actual_operations": [
+      {
+        "line": 79,
+        "expression": "np.zeros((4, 4))"
+      },
+      {
+        "line": 105,
+        "expression": "itertools.product([-1, 1], repeat=4)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/determinant_exclusion_check_2026_09_15.py",
+    "original_sha256": "91c0b79837240858034bed4b254b65685e659b93c72314920280b776bbd94cdf",
+    "time_cap_seconds": 300,
+    "process_tree_rss_cap_bytes": 1073741824,
+    "basis": "Finite partition/permutation/contact-register and cochain fixtures; SymPy/mpmath and dense Kronecker work. Combinatorial runtime is bounded by literal source loops, not asymptotic lattice claims.",
+    "actual_operations": [
+      {
+        "line": 18,
+        "expression": "itertools.product([0, 1], repeat=len(items))"
+      },
+      {
+        "line": 25,
+        "expression": "np.zeros((2**n, 2**n))"
+      },
+      {
+        "line": 165,
+        "expression": "np.zeros_like(gaussian)"
+      },
+      {
+        "line": 182,
+        "expression": "leggauss(order)"
+      },
+      {
+        "line": 71,
+        "expression": "np.linalg.eigh(s)"
+      },
+      {
+        "line": 85,
+        "expression": "itertools.product(words, repeat=2)"
+      },
+      {
+        "line": 93,
+        "expression": "itertools.product(c, repeat=2)"
+      },
+      {
+        "line": 154,
+        "expression": "itertools.product([-1., 1.], repeat=3)"
+      },
+      {
+        "line": 179,
+        "expression": "weight(s)"
+      },
+      {
+        "line": 184,
+        "expression": "itertools.product(nodes, repeat=2)"
+      },
+      {
+        "line": 190,
+        "expression": "np.zeros((len(grid), 3))"
+      },
+      {
+        "line": 194,
+        "expression": "weight(s, tree)"
+      },
+      {
+        "line": 185,
+        "expression": "itertools.product(weights, repeat=2)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/forest_interpolation_check_2026_09_15.py",
+    "original_sha256": "0847dcd937b4edb107ada5dd114498bce5ab0659b1d329fd5a741fcf903ca42d",
+    "time_cap_seconds": 300,
+    "process_tree_rss_cap_bytes": 1073741824,
+    "basis": "Finite partition/permutation/contact-register and cochain fixtures; SymPy/mpmath and dense Kronecker work. Combinatorial runtime is bounded by literal source loops, not asymptotic lattice claims.",
+    "actual_operations": [
+      {
+        "line": 126,
+        "expression": "leggauss(order)"
+      },
+      {
+        "line": 17,
+        "expression": "itertools.product(*(range(w+1) for w in width))"
+      },
+      {
+        "line": 24,
+        "expression": "np.zeros((len(cells[degree]), len(cells[degree-1])))"
+      },
+      {
+        "line": 50,
+        "expression": "itertools.product([-1., 1.], repeat=4)"
+      },
+      {
+        "line": 68,
+        "expression": "neighbors[i].append((j, index))"
+      },
+      {
+        "line": 69,
+        "expression": "neighbors[j].append((i, index))"
+      },
+      {
+        "line": 169,
+        "expression": "np.zeros(6)"
+      },
+      {
+        "line": 170,
+        "expression": "np.zeros(6)"
+      },
+      {
+        "line": 171,
+        "expression": "np.zeros(6)"
+      },
+      {
+        "line": 172,
+        "expression": "np.zeros(6)"
+      },
+      {
+        "line": 173,
+        "expression": "np.zeros((4, 4))"
+      },
+      {
+        "line": 128,
+        "expression": "itertools.product(points, repeat=3)"
+      },
+      {
+        "line": 136,
+        "expression": "np.zeros_like(grid)"
+      },
+      {
+        "line": 193,
+        "expression": "pair_product(np.ones((1, 6)), same, J, chi, theta)"
+      },
+      {
+        "line": 194,
+        "expression": "pair_product(np.ones((1, 6)), same, original_J, chi, theta)"
+      },
+      {
+        "line": 120,
+        "expression": "pair_product(\n            s, same, J, chi, theta)"
+      },
+      {
+        "line": 129,
+        "expression": "itertools.product(weights, repeat=3)"
+      },
+      {
+        "line": 139,
+        "expression": "pair_product(s, same, J, chi, theta, differentiated)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/gaussian_cycle_check_2026_09_15.py",
+    "original_sha256": "0fae6e9fe635947a42c0bc0ea435fb58975ab5c145b0d7553fde6bd7ed9819a4",
+    "time_cap_seconds": 300,
+    "process_tree_rss_cap_bytes": 1073741824,
+    "basis": "Finite partition/permutation/contact-register and cochain fixtures; SymPy/mpmath and dense Kronecker work. Combinatorial runtime is bounded by literal source loops, not asymptotic lattice claims.",
+    "actual_operations": [
+      {
+        "line": 19,
+        "expression": "np.linalg.eigh(a)"
+      },
+      {
+        "line": 25,
+        "expression": "np.linalg.eigh(a)"
+      },
+      {
+        "line": 129,
+        "expression": "hermgauss(22)"
+      },
+      {
+        "line": 76,
+        "expression": "trace_product(j, [np.ones(2)]*4)"
+      },
+      {
+        "line": 99,
+        "expression": "itertools.product([-1., 1.], repeat=4)"
+      },
+      {
+        "line": 100,
+        "expression": "itertools.product(range(2), repeat=4)"
+      },
+      {
+        "line": 116,
+        "expression": "trace_product(j, multipliers)"
+      },
+      {
+        "line": 135,
+        "expression": "np.zeros((4, 4))"
+      },
+      {
+        "line": 170,
+        "expression": "np.zeros((4, 4))"
+      },
+      {
+        "line": 105,
+        "expression": "np.kron(s, k)"
+      },
+      {
+        "line": 113,
+        "expression": "np.zeros(4, dtype=complex)"
+      },
+      {
+        "line": 130,
+        "expression": "itertools.product(nodes*np.sqrt(2), repeat=4)"
+      },
+      {
+        "line": 201,
+        "expression": "itertools.product(range(4), repeat=4)"
+      },
+      {
+        "line": 65,
+        "expression": "trace_product(j, [phases[i]*source**k for i, k in enumerate(ks)])"
+      },
+      {
+        "line": 97,
+        "expression": "np.zeros((2, 2))"
+      },
+      {
+        "line": 97,
+        "expression": "np.zeros((2, 2))"
+      },
+      {
+        "line": 131,
+        "expression": "itertools.product(quadrature/np.sqrt(np.pi), repeat=4)"
+      },
+      {
+        "line": 164,
+        "expression": "np.zeros((2, 2))"
+      },
+      {
+        "line": 165,
+        "expression": "np.zeros((2, 2))"
+      },
+      {
+        "line": 53,
+        "expression": "np.zeros((4, 4))"
+      },
+      {
+        "line": 53,
+        "expression": "np.zeros((5, 5))"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/graph_source_check_2026_09_15.py",
+    "original_sha256": "0380279420099a6f3577ff79a072d42bc54b304bd0a88c5d54befab8d8bb0809",
+    "time_cap_seconds": 300,
+    "process_tree_rss_cap_bytes": 1073741824,
+    "basis": "Finite partition/permutation/contact-register and cochain fixtures; SymPy/mpmath and dense Kronecker work. Combinatorial runtime is bounded by literal source loops, not asymptotic lattice claims.",
+    "actual_operations": [
+      {
+        "line": 53,
+        "expression": "np.zeros(M)"
+      },
+      {
+        "line": 62,
+        "expression": "np.zeros(M)"
+      },
+      {
+        "line": 81,
+        "expression": "itertools.product(range(3), repeat=6)"
+      },
+      {
+        "line": 94,
+        "expression": "itertools.product(*choices)"
+      },
+      {
+        "line": 149,
+        "expression": "itertools.product([-1, 1], repeat=4)"
+      },
+      {
+        "line": 123,
+        "expression": "itertools.product(range(group), repeat=4)"
+      },
+      {
+        "line": 124,
+        "expression": "np.zeros(len(points), dtype=int)"
+      },
+      {
+        "line": 137,
+        "expression": "product.sum()"
+      },
+      {
+        "line": 151,
+        "expression": "itertools.product([0, 1, 2], repeat=6)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/hard_core_cycle_check_2026_09_15.py",
+    "original_sha256": "0fb87aba27390f2b9b5dbf07e433c3a72b049ec9999ef99d5184709ff21c9abb",
+    "time_cap_seconds": 300,
+    "process_tree_rss_cap_bytes": 1073741824,
+    "basis": "Finite partition/permutation/contact-register and cochain fixtures; SymPy/mpmath and dense Kronecker work. Combinatorial runtime is bounded by literal source loops, not asymptotic lattice claims.",
+    "actual_operations": [
+      {
+        "line": 91,
+        "expression": "np.kron(j, np.eye(dimension))"
+      },
+      {
+        "line": 92,
+        "expression": "np.kron(np.eye(count), v[:, None])"
+      },
+      {
+        "line": 36,
+        "expression": "np.kron(v, state)"
+      },
+      {
+        "line": 59,
+        "expression": "itertools.product(range(6), repeat=length)"
+      },
+      {
+        "line": 113,
+        "expression": "itertools.product(range(count), repeat=length)"
+      },
+      {
+        "line": 152,
+        "expression": "itertools.product(range(len(p)), repeat=2)"
+      },
+      {
+        "line": 38,
+        "expression": "np.kron(operators[i], lower if i in members else np.eye(2))"
+      },
+      {
+        "line": 106,
+        "expression": "np.zeros_like(matrix)"
+      },
+      {
+        "line": 88,
+        "expression": "np.zeros((ne, ne))"
+      },
+      {
+        "line": 88,
+        "expression": "np.zeros((nm, nm))"
+      },
+      {
+        "line": 89,
+        "expression": "np.zeros((ne, ne))"
+      },
+      {
+        "line": 89,
+        "expression": "np.zeros((nm, nm))"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/operator_source_check_2026_09_15.py",
+    "original_sha256": "ebcd92463c80a8cbc7e8b0cac43fb4e71e08167575bb2ab6d06991bf89028bc0",
+    "time_cap_seconds": 300,
+    "process_tree_rss_cap_bytes": 1073741824,
+    "basis": "Finite partition/permutation/contact-register and cochain fixtures; SymPy/mpmath and dense Kronecker work. Combinatorial runtime is bounded by literal source loops, not asymptotic lattice claims.",
+    "actual_operations": [],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/partition_exclusion_check_2026_09_15.py",
+    "original_sha256": "353113fcb8100aebbaf0bd4ed249ed8fcaae26b7afcf4a0c5d627db445566c18",
+    "time_cap_seconds": 300,
+    "process_tree_rss_cap_bytes": 1073741824,
+    "basis": "Finite partition/permutation/contact-register and cochain fixtures; SymPy/mpmath and dense Kronecker work. Combinatorial runtime is bounded by literal source loops, not asymptotic lattice claims.",
+    "actual_operations": [
+      {
+        "line": 35,
+        "expression": "np.zeros(len(s))"
+      },
+      {
+        "line": 36,
+        "expression": "itertools.product([0, 1], repeat=3)"
+      },
+      {
+        "line": 48,
+        "expression": "itertools.product([0, 1], repeat=len(items))"
+      },
+      {
+        "line": 55,
+        "expression": "np.zeros_like(gaussian, dtype=complex)"
+      },
+      {
+        "line": 75,
+        "expression": "leggauss(order)"
+      },
+      {
+        "line": 102,
+        "expression": "itertools.product([0, 1], repeat=3)"
+      },
+      {
+        "line": 19,
+        "expression": "itertools.product([-1., 1.], repeat=3)"
+      },
+      {
+        "line": 34,
+        "expression": "np.zeros(len(s))"
+      },
+      {
+        "line": 77,
+        "expression": "itertools.product(nodes, repeat=2)"
+      },
+      {
+        "line": 83,
+        "expression": "np.zeros((len(grid), 3))"
+      },
+      {
+        "line": 70,
+        "expression": "weight(s, chi, coupling, source, self_factor)"
+      },
+      {
+        "line": 87,
+        "expression": "weight(s, chi, coupling, source, self_factor, tree, wrong_contact)"
+      },
+      {
+        "line": 78,
+        "expression": "itertools.product(weights, repeat=2)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/phase_energy_check_2026_09_15.py",
+    "original_sha256": "fc84c6a69842c10c2eb4fb56a2406c6a9ce1c5b47c366b426a5eca42ab8afde3",
+    "time_cap_seconds": 300,
+    "process_tree_rss_cap_bytes": 1073741824,
+    "basis": "Finite partition/permutation/contact-register and cochain fixtures; SymPy/mpmath and dense Kronecker work. Combinatorial runtime is bounded by literal source loops, not asymptotic lattice claims.",
+    "actual_operations": [
+      {
+        "line": 127,
+        "expression": "itertools.product([-1,1], repeat=4)"
+      },
+      {
+        "line": 18,
+        "expression": "itertools.product(*(range(w+1) for w in width))"
+      },
+      {
+        "line": 25,
+        "expression": "sp.zeros(len(cells[degree]), len(cells[degree-1]))"
+      },
+      {
+        "line": 44,
+        "expression": "sp.zeros(B.rows, D.rows)"
+      },
+      {
+        "line": 45,
+        "expression": "sp.zeros(D.cols, D.rows)"
+      },
+      {
+        "line": 35,
+        "expression": "sp.zeros(Cnext.rows, C.cols)"
+      },
+      {
+        "line": 43,
+        "expression": "sp.zeros(D.rows)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/general_order_check_2026_09_15.py",
+    "original_sha256": "f2bf8cd03beb300bed675129a5eb416b129e78191e70cf42855a215ff3b72695",
+    "time_cap_seconds": 180,
+    "process_tree_rss_cap_bytes": 536870912,
+    "basis": "Finite deterministic fixtures with source operation inventory below; numerical/symbolic library overhead included. No empirical peak-RSS claim.",
+    "actual_operations": [
+      {
+        "line": 40,
+        "expression": "itertools.product(labels,repeat=3)"
+      },
+      {
+        "line": 35,
+        "expression": "itertools.product([0,1],repeat=2)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/record_pair_check_2026_09_15.py",
+    "original_sha256": "1773bb397872aa2ff185ef76cc06ad143401ff85dee40ade82ff1c27686cfe93",
+    "time_cap_seconds": 180,
+    "process_tree_rss_cap_bytes": 536870912,
+    "basis": "Finite deterministic fixtures with source operation inventory below; numerical/symbolic library overhead included. No empirical peak-RSS claim.",
+    "actual_operations": [
+      {
+        "line": 46,
+        "expression": "itertools.product(*choices)"
+      },
+      {
+        "line": 76,
+        "expression": "sp.zeros(2)"
+      },
+      {
+        "line": 22,
+        "expression": "itertools.product([0,1],repeat=n)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/fourier_gaussian_register_check_2026_09_15.py",
+    "original_sha256": "c7b801465c0abcc9a000077ec3a8d2b496f41ab6b8b69f2c4c88c6178f604d26",
+    "time_cap_seconds": 300,
+    "process_tree_rss_cap_bytes": 1073741824,
+    "basis": "4D grids up to28^4 with four complex component registers (about39MiB per four-component complex field); multiple FFT/intermediate arrays and imported contact/cofactor work priced at1GiB.",
+    "actual_operations": [
+      {
+        "line": 23,
+        "expression": "np.zeros((len(target), len(source)), dtype=complex)"
+      },
+      {
+        "line": 84,
+        "expression": "np.zeros(dimension**len(edges))"
+      },
+      {
+        "line": 60,
+        "expression": "np.zeros((4,)+(size,)*4)"
+      },
+      {
+        "line": 67,
+        "expression": "np.zeros_like(lam)"
+      },
+      {
+        "line": 99,
+        "expression": "np.kron(local,factor)"
+      },
+      {
+        "line": 153,
+        "expression": "itertools.product(range(count),repeat=length)"
+      },
+      {
+        "line": 70,
+        "expression": "np.fft.fftn(component)"
+      },
+      {
+        "line": 94,
+        "expression": "np.zeros((dimension,dimension))"
+      },
+      {
+        "line": 175,
+        "expression": "jet_product(dj,gj)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/tree_count_check_2026_09_15.py",
+    "original_sha256": "28297887e230ef56a214122949ec173e242555a8d1dd19211adc512d5c06d6f8",
+    "time_cap_seconds": 300,
+    "process_tree_rss_cap_bytes": 1073741824,
+    "basis": "4D grids up to28^4 with four complex component registers (about39MiB per four-component complex field); multiple FFT/intermediate arrays and imported contact/cofactor work priced at1GiB.",
+    "actual_operations": [
+      {
+        "line": 22,
+        "expression": "itertools.product(range(n),repeat=n-2)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/algebra_naturality_check_2026_09_15.py",
+    "original_sha256": "9e9317c9eb3784db36f66d7a8b769633e89d387e51a7a7a56a306c39462ca08c",
+    "time_cap_seconds": 180,
+    "process_tree_rss_cap_bytes": 536870912,
+    "basis": "Finite deterministic fixtures with source operation inventory below; numerical/symbolic library overhead included. No empirical peak-RSS claim.",
+    "actual_operations": [
+      {
+        "line": 12,
+        "expression": "s.zeros(2)"
+      },
+      {
+        "line": 43,
+        "expression": "s.zeros(8)"
+      },
+      {
+        "line": 35,
+        "expression": "itertools.product(range(len(profile)),repeat=length)"
+      },
+      {
+        "line": 61,
+        "expression": "s.zeros(8)"
+      },
+      {
+        "line": 62,
+        "expression": "s.zeros(8)"
+      },
+      {
+        "line": 26,
+        "expression": "s.zeros(2)"
+      },
+      {
+        "line": 126,
+        "expression": "neighbors(first)"
+      },
+      {
+        "line": 130,
+        "expression": "neighbors(second)"
+      },
+      {
+        "line": 120,
+        "expression": "neighbors(point)"
+      },
+      {
+        "line": 124,
+        "expression": "neighbors(first)"
+      },
+      {
+        "line": 124,
+        "expression": "neighbors(second)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/inverse_corner_support_check_2026_09_15.py",
+    "original_sha256": "dfcd91bb844b790e6cb8b3707b15dde13096ef2ef6e655fb31bf3ae3b39af4b6",
+    "time_cap_seconds": 180,
+    "process_tree_rss_cap_bytes": 536870912,
+    "basis": "Finite deterministic fixtures with source operation inventory below; numerical/symbolic library overhead included. No empirical peak-RSS claim.",
+    "actual_operations": [
+      {
+        "line": 68,
+        "expression": "s.zeros(8)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/positive_auxiliary_check_2026_09_15.py",
+    "original_sha256": "161420b8dc0efe2f43a9908b903d234b73ebea2e3b79a08bfff3cb1a58b21b41",
+    "time_cap_seconds": 300,
+    "process_tree_rss_cap_bytes": 1073741824,
+    "basis": "Finite cube N^5 configurations, Gaussian/image arrays and 160-node auxiliary quadrature; symbolic cochains small; no infinite-lattice execution.",
+    "actual_operations": [
+      {
+        "line": 74,
+        "expression": "np.zeros((N**5, len(cells[1])))"
+      },
+      {
+        "line": 80,
+        "expression": "weights.sum(axis=-1)"
+      },
+      {
+        "line": 115,
+        "expression": "roots_hermitenorm(order)"
+      },
+      {
+        "line": 119,
+        "expression": "np.zeros(((2*cutoff+1)**5, 6))"
+      },
+      {
+        "line": 136,
+        "expression": "np.zeros((6,6))"
+      },
+      {
+        "line": 175,
+        "expression": "weights.sum()"
+      },
+      {
+        "line": 30,
+        "expression": "sp.zeros(len(cells[degree + 1]), len(cells[degree]))"
+      },
+      {
+        "line": 204,
+        "expression": "sp.zeros(12,1)"
+      },
+      {
+        "line": 237,
+        "expression": "np.zeros_like(s)"
+      },
+      {
+        "line": 23,
+        "expression": "it.product(range(2), repeat=3)"
+      },
+      {
+        "line": 120,
+        "expression": "it.product(range(-cutoff, cutoff+1), repeat=5)"
+      },
+      {
+        "line": 172,
+        "expression": "it.product(range(-cutoff,cutoff+1),repeat=6)"
+      },
+      {
+        "line": 189,
+        "expression": "sp.zeros(6,8)"
+      },
+      {
+        "line": 189,
+        "expression": "sp.zeros(1,12)"
+      },
+      {
+        "line": 241,
+        "expression": "np.divide(top,den,out=np.zeros_like(den),\n                                             where=den>0).mean(axis=1)"
+      },
+      {
+        "line": 75,
+        "expression": "it.product(range(N), repeat=5)"
+      },
+      {
+        "line": 241,
+        "expression": "np.zeros_like(den)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/native_motion_check_2026_09_15.py",
+    "original_sha256": "5f134dcf2ab4e5a262c461e1a1c16a7d14abfd0f2a6dc32d087219c0ec017407",
+    "time_cap_seconds": 180,
+    "process_tree_rss_cap_bytes": 536870912,
+    "basis": "Finite deterministic fixtures with source operation inventory below; numerical/symbolic library overhead included. No empirical peak-RSS claim.",
+    "actual_operations": [
+      {
+        "line": 359,
+        "expression": "np.linalg.eigh(hamiltonian)"
+      },
+      {
+        "line": 29,
+        "expression": "product(range(L), repeat=3)"
+      },
+      {
+        "line": 236,
+        "expression": "commutator_nonzeros.append(len(col))"
+      },
+      {
+        "line": 349,
+        "expression": "weights.copy()"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {
+      "seconds": 0.4762797079747543
+    },
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/native_twist_check_2026_09_15.py",
+    "original_sha256": "3fc01b8d9be0ff71f868e8c571e8d9ee69407eedea7e5e7e0f1238c86a604f27",
+    "time_cap_seconds": 180,
+    "process_tree_rss_cap_bytes": 536870912,
+    "basis": "Finite deterministic fixtures with source operation inventory below; numerical/symbolic library overhead included. No empirical peak-RSS claim.",
+    "actual_operations": [
+      {
+        "line": 158,
+        "expression": "sp.zeros(len(graph_edges), n)"
+      },
+      {
+        "line": 159,
+        "expression": "sp.zeros(n)"
+      },
+      {
+        "line": 27,
+        "expression": "product(range(length), repeat=3)"
+      },
+      {
+        "line": 165,
+        "expression": "sp.zeros(n, 1)"
+      },
+      {
+        "line": 184,
+        "expression": "sp.zeros(n)"
+      },
+      {
+        "line": 184,
+        "expression": "sp.zeros(n)"
+      },
+      {
+        "line": 189,
+        "expression": "sp.zeros(1)"
+      },
+      {
+        "line": 190,
+        "expression": "sp.zeros(1, 1)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {
+      "seconds": 0.1411934170173481
+    },
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/polarized_word_check_2026_09_15.py",
+    "original_sha256": "54909232c5038ec45348ea64b098754901c4bba898193c2da45206fb40b2ca4c",
+    "time_cap_seconds": 180,
+    "process_tree_rss_cap_bytes": 536870912,
+    "basis": "Finite deterministic fixtures with source operation inventory below; numerical/symbolic library overhead included. No empirical peak-RSS claim.",
+    "actual_operations": [
+      {
+        "line": 236,
+        "expression": "np.zeros(DIM, complex)"
+      },
+      {
+        "line": 66,
+        "expression": "neighbors(vertex)"
+      },
+      {
+        "line": 153,
+        "expression": "product(range(3), repeat=n)"
+      },
+      {
+        "line": 205,
+        "expression": "product(range(3), repeat=n)"
+      },
+      {
+        "line": 230,
+        "expression": "np.kron(result, factor)"
+      },
+      {
+        "line": 59,
+        "expression": "neighbors(v)"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {
+      "seconds": 0.7341202090028673
+    },
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  },
+  {
+    "runner": "scripts/review_harmonic_metric_check_2026_09_15.py",
+    "original_sha256": "7e7cdede565a3d33787a520e99a85a8e5c2bdb568a63216ee0051cfdb4a409f0",
+    "time_cap_seconds": 300,
+    "process_tree_rss_cap_bytes": 1073741824,
+    "basis": "At g=.05, nq100,nt27:2*201*55=22110 complex sparse rows; local stencil; sparse LU fill-in may dominate. Full dense literal check only30x30.1GiB operational ceiling is not a proved fill-in bound.",
+    "actual_operations": [
+      {
+        "line": 6,
+        "expression": "np.zeros((V,E),dtype=np.int64)"
+      },
+      {
+        "line": 12,
+        "expression": "np.zeros((E,V),dtype=np.int64)"
+      },
+      {
+        "line": 25,
+        "expression": "np.zeros((E,3*V),dtype=np.int64)"
+      },
+      {
+        "line": 44,
+        "expression": "weights.tolist()"
+      }
+    ],
+    "historical_seconds_not_new_measurement": {},
+    "failure_policy": "One bounded sequential capture only after source/cheap gate; preserve cap failure and diagnostics; do not reduce fixtures or tolerances."
+  }
+]

@@ -1,0 +1,116 @@
+{
+  "supplements": "drain8159-early-affected-review-v1.json",
+  "closure_classification": {
+    "actual_read_omissions_found": [],
+    "nine_rows": "All nine differences are category (b): recursively cited mathematical note parents, not omitted actual file reads by these programs/helpers. The omitted paths are already present in the aggregate direct-parent union and match currentmain. Do not fabricate extra runtime reads. Bind the required mathematical union as unit source/input provenance and label runtime_closure as actual program/helper read closure; freeze/API verification remains pending.",
+    "rows": [
+      {
+        "runner": "scripts/quadratic_coframe_check_2026_09_15.py",
+        "matches_independent_closure": false,
+        "missing": [
+          "docs/LOCAL_HALL_FREE_MIXED_WEYL_QUARTET_AND_COMMON_METRIC_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+        ],
+        "extra": [],
+        "all_hashes_match": true
+      },
+      {
+        "runner": "scripts/decay_check_2026_09_15.py",
+        "matches_independent_closure": false,
+        "missing": [
+          "docs/LOCAL_HALL_FREE_MIXED_WEYL_QUARTET_AND_COMMON_METRIC_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+          "docs/NATIVE_WEYL_GAUGE_HALL_AND_CONE_FLOW_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+        ],
+        "extra": [],
+        "all_hashes_match": true
+      },
+      {
+        "runner": "scripts/positive_generator_check_2026_09_15.py",
+        "matches_independent_closure": false,
+        "missing": [
+          "docs/EXACT_GAUSS_REDUCTION_AND_FIXED_VOLUME_WEAK_COUPLING_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+          "docs/FINITE_INTEGER_LINK_WEAK_COUPLING_PAYLOAD_AND_MONOPOLE_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+          "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+        ],
+        "extra": [],
+        "all_hashes_match": true
+      },
+      {
+        "runner": "scripts/slow_fast_check_2026_09_15.py",
+        "matches_independent_closure": false,
+        "missing": [
+          "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+        ],
+        "extra": [],
+        "all_hashes_match": true
+      },
+      {
+        "runner": "scripts/physical_probe_check_2026_09_15.py",
+        "matches_independent_closure": false,
+        "missing": [
+          "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+        ],
+        "extra": [],
+        "all_hashes_match": true
+      },
+      {
+        "runner": "scripts/matched_cone_check_2026_09_15.py",
+        "matches_independent_closure": false,
+        "missing": [
+          "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+          "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+        ],
+        "extra": [],
+        "all_hashes_match": true
+      },
+      {
+        "runner": "scripts/visible_threshold_check_2026_09_15.py",
+        "matches_independent_closure": false,
+        "missing": [
+          "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+          "docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md",
+          "docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md"
+        ],
+        "extra": [],
+        "all_hashes_match": true
+      },
+      {
+        "runner": "scripts/native_twist_check_2026_09_15.py",
+        "matches_independent_closure": false,
+        "missing": [
+          "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+          "docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md",
+          "docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md"
+        ],
+        "extra": [],
+        "all_hashes_match": true
+      },
+      {
+        "runner": "scripts/review_harmonic_metric_check_2026_09_15.py",
+        "matches_independent_closure": false,
+        "missing": [
+          "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+        ],
+        "extra": [],
+        "all_hashes_match": true
+      }
+    ]
+  },
+  "replacement_scope": {
+    "tree_count_check_2026_09_15.py": {
+      "per_element": "Exact degree-factorial weights, rational series bounds and cycle/path normalization identities.",
+      "per_site": "Not executed: labeled combinatorial vertices, not a spatial lattice.",
+      "per_mode": "Not executed: no Fourier or spectral computation.",
+      "per_block": "Pruefer words for n=2..7 and theta=0,1/2,3/4; sixteen rational coefficient bounds; alternating cycles/decorating paths for r=2..5.",
+      "lattice_wide": "Not executed: series estimates and their physical-scope limitation use the written proof.",
+      "cost": "Largest Pruefer enumeration7^5=16807 words, consumed sequentially into a degree histogram; at r=5,4!*5!=2880 raw alternating cycle candidates before reversal quotient, plus5!=120 path candidates. Small60-digit mpmath convolutions and sixteen exact rational bounds. No28^4 arrays, FFT or Gaussian registers. A300s/1GiB cap is conservative rather than an estimate of actual use."
+    },
+    "review_harmonic_metric_check_2026_09_15.py": {
+      "per_element": "Exact integer incidence, cycle-basis, plaquette and weighted harmonic-metric identities.",
+      "per_site": "Periodic cubic coordinate fixtures L=3,4,5.",
+      "per_mode": "Three harmonic directions and complete finite cycle-coordinate identities; no spectral solver or slow-spectrum/cutoff-refinement run.",
+      "per_block": "Three exact integer normalization fixtures with electric weights2,3,5.",
+      "lattice_wide": "Not executed: the all-L metric theorem relies on the written proof.",
+      "cost": "At L=5,V=125,E=375,cycle dimension E-V+1=251. Largest face/incidence arrays are at most375x375 int64 (~1.1MiB each), with dense integer products including375x251 and251x251 intermediates. Three sequential fixtures. No22110-row sparse matrix or LU fill-in. A300s/1GiB cap is conservative rather than a sparse-workspace estimate."
+    }
+  }
+}

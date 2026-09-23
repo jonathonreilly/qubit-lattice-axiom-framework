@@ -1,0 +1,446 @@
+{
+  "status": "PARTIAL SALVAGE AUTHOR PREPARATION; ORIGINAL REVIEWER COLD CONFIRMATION PENDING",
+  "base": "6b9c6183f24c01651d5a98394061bd88a52aef63",
+  "note": "docs/GAUGE_WILSON_WEAK_WINDOW_QUANTITATIVE_BOUNDS_AND_HAAR_CONTACT_FDD_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+  "runners": [
+    "scripts/gauge_wilson_uniform_weak_scaling_controls_2026_09_07.py",
+    "scripts/gauge_wilson_haar_contact_fdd_controls_2026_09_07.py"
+  ],
+  "parents": [
+    {
+      "path": "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "f4f54f9795280f8d3d799fbca71964d13ed224432c3cf183bcc0c5779731eb69"
+    },
+    {
+      "path": "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "a5df21b019b0ec35fce30bccced5c85862595235c1c9aa28779a3574fdc979f3"
+    },
+    {
+      "path": "docs/GAUGE_WILSON_LOCAL_OBSERVABLE_FINITE_REGION_PW_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "56aea52d08696383ec41d3f87a093c77b26290d078496579f9e603c26f123147"
+    },
+    {
+      "path": "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "0621d2e82146934a4dc126f464b9966aa578fab4e99ddbbf5ef34d67ccdf8d72"
+    }
+  ],
+  "inputs": [
+    "docs/GAUGE_WILSON_WEAK_WINDOW_QUANTITATIVE_BOUNDS_AND_HAAR_CONTACT_FDD_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "docs/GAUGE_WILSON_LOCAL_OBSERVABLE_FINITE_REGION_PW_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+  ],
+  "helper_map_plan": {
+    "gauge_wilson_weak_window_quantitative_bounds_and_haar_contact_fdd_bounded_theorem_note_2026-09-07": [
+      "scripts/gauge_wilson_haar_contact_fdd_controls_2026_09_07.py"
+    ]
+  },
+  "original_count": 89,
+  "history_count": 81,
+  "branch_preservation_required": true,
+  "accepted_scope": "Quantitative decay/smearing estimates; actual positive Haar contact FDD; conditional gap/LR ratio; complete optional Haar moments and skew proof.",
+  "deferred_scope": "Original separated-field negative classification certification under unmet N1; no negative PASS or relabeled positive exclusion.",
+  "math_verification": "All indented mathematical lines of retained source sections match independently counted literal original lines; entire scientific runner calculations byte-identical. No generic Markdown regex applied.",
+  "resource_plan": {
+    "seconds_each": 180,
+    "process_tree_rss_MiB_each": 180,
+    "captures_after_cold": 2,
+    "totals": [
+      18,
+      13
+    ],
+    "count_scope": "18includes1resource;13allscientific withseparateresourceguard",
+    "reviewer_primary_execution": false
+  },
+  "files": [
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/000-ARCHIVE_WHITESPACE_RECEIPT.md.gz",
+      "sha256": "ad9646f577fb6eddd32d3c1622062902e44b5873b1703379fd9c92c1aa9504bd"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/001-ARTIFACT_PLAN.md.gz",
+      "sha256": "8cf7c9db0c9cfa2171e27be57ef4ed303d74a755fcd99ec1961a16e418b7fc77"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/002-ASSUMPTIONS_AND_IMPORTS.md.gz",
+      "sha256": "f7db3c41090cd1ff0108f390888df0e411551427be56d98da77a6a50a2234b18"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/003-CLAIM_STATUS_CERTIFICATE.md.gz",
+      "sha256": "33e72e9861664d6e72fe70d42c358538a831e3e801f1e0b5151b60e793b1c336"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/004-FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json.gz",
+      "sha256": "73c41e771aa53d1cefd3d0a9cd18ca6cb326e7d2d8989876dace3bd68db9631a"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/005-FINAL_MAIN66_LOCK_RELEASE.json.gz",
+      "sha256": "0a445a4ae9d5fbc8d2df2fc7273981ac62aff507d68a3d14010e8f2dda395ac4"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/006-FINAL_MAIN66_READINESS.json.gz",
+      "sha256": "67e404f062810e27317d538af12e1f814887425ad44a2ab4cbc5b04a2b71cae1"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/007-FINAL_MAIN66_STRICT.log.gz",
+      "sha256": "920eefdb581353ba012150b575d649136d3d0991622d978afc4d6bfc625a0aad"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/008-FINAL_MAIN66_SYNC_RECEIPT.json.gz",
+      "sha256": "2f8e4143f38a6f5f987162ba553365adf30134c9434333d97c386f3985e798ff"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/009-FINAL_MAIN66_VALIDATION.md.gz",
+      "sha256": "6e90edcaa5c5387644a702e399156b7c41efe11d2d4c6bff2f6453e6e4af65ec"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/010-FINAL_VALIDATION.md.gz",
+      "sha256": "c0bdb56f6581a3fb58cb58578d2d7fc0d39617bb5859e8d8b9698d31ab946fb6"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/011-FINAL_VOCAB_LINT.txt.gz",
+      "sha256": "45fdaa4ec4a9ea261de13d66fa9fa74577fcccd9a3bc9bb6636b7e02f260eafe"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/012-FROZEN_PORT_RECEIPT.json.gz",
+      "sha256": "6a90334f3c498c543462edc88e25afdf6b1420eca04ec29acf4445f5f1e6c7fb"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/013-FULL_PIPELINE.log.gz",
+      "sha256": "fb8bb9dc642fe70dab7d88c9ab83d48797924c5bf6def1c5d704a37aab10ebe4"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/014-GOAL.md.gz",
+      "sha256": "5f77a9776ceb86974b0367d195c29c3b8cd7f385031b2f1d1b8a9bb9bbb77b84"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/015-HANDOFF.md.gz",
+      "sha256": "8a85a25d24435fd1d6071439082aebafad7a7c8fa7dbb86f756c0bf794f4e06f"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/016-LITERATURE_BRIDGES.md.gz",
+      "sha256": "c238967c9290d19bf9e94ad3dcee9f394cd2287b5bce43175bf3542dd793cf8e"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/017-LOCK_RELEASE.json.gz",
+      "sha256": "0a445a4ae9d5fbc8d2df2fc7273981ac62aff507d68a3d14010e8f2dda395ac4"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/018-NO_GO_DISCIPLINE_CHECKLIST.md.gz",
+      "sha256": "b1646168d75edad38353802923b969b1b185b9d95dd4fe23be4099b0b95b1566"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/019-NO_GO_LEDGER.md.gz",
+      "sha256": "bcda51b59b62c0f190577eb207b5bf17af1d3ab9c22720aae9e8e7e01abd2339"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/020-OPPORTUNITY_QUEUE.md.gz",
+      "sha256": "006b6e73d8a050b836f674b70145b773b213f14cbcbe0acf7264236a4f0ea886"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/021-PACK_INDEX.json.gz",
+      "sha256": "d425e34349d06be2786ba395d3efe1f7ae06e2f1dc10cf88a8e2ef910bd74004"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/022-PARENT_VALIDATION_METADATA_CATCHUP.md.gz",
+      "sha256": "d726dec3a90299a1c3bfa3f4102e623b54116503b03dd566478c78ad28dc14d8"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/023-PORT_RECEIPT.json.gz",
+      "sha256": "b556cb3f87a5aeb43a77824f5b11a478e64e46d1a16271ae7a6213fdbab6a677"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/024-PORT_VOCAB_LINT.txt.gz",
+      "sha256": "45fdaa4ec4a9ea261de13d66fa9fa74577fcccd9a3bc9bb6636b7e02f260eafe"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/025-PROOF_REVIEW.md.gz",
+      "sha256": "af5c422d5a114ce141694e5d3596cdd0ce8c9c13ba63ac7c1816a25bc20e4102"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/026-PR_BACKLOG.md.gz",
+      "sha256": "1d3015b67d08396b957c7f6b65e05c796044d007e97f9c764627d6be6743b5c6"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/027-PR_BODY.md.gz",
+      "sha256": "21659ce6fbef07b900ae2321ba7ab9ef91aa306e02d5dc824bd356a8c47383be"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/028-PUBLICATION_RECEIPT.json.gz",
+      "sha256": "c934c99777f9e48e718674d071a0e3b9eb3f123c09b266281e514067c41a83d1"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/029-REVIEWED_UPSTREAM_SYNC_20260907.json.gz",
+      "sha256": "34b3f888da4d4472ddc91c9bc123f42ba8be4747c22a9082f5c67de3164b51a1"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/030-REVIEW_HISTORY.md.gz",
+      "sha256": "ce85fa4b738d023cc869859e76a1cab3c793e375b6c488adaeb4d978714b4f6f"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/031-ROOT_CANONICAL_PORT_REVIEW.md.gz",
+      "sha256": "cbe8d8516525d3c59fadeb3d9b32fbcdbb44de3276a978a97941c7364663ba94"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/032-ROOT_CANONICAL_PORT_REVIEW_TIMESTAMP_CORRECTED.md.gz",
+      "sha256": "694ff55ce60f1d3db44ba56fdf0f275d2d2c614bbdc1f5df2e81c71fb4a6a8d1"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/033-ROOT_REVIEW_TIMESTAMP_CORRECTION.md.gz",
+      "sha256": "5e811c5d0c7e64145206c23ca52c09f779305cd132734d723f8ec4e650a87816"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/034-ROUTE_PORTFOLIO.md.gz",
+      "sha256": "6ad25c4f5517734901e62990d61a4b2dc158b7ea5458aa3e0f5da138d05b61ba"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/035-SCOPED_VALIDATION.md.gz",
+      "sha256": "a3ce562049be1012665f0f314faa4e1ac6ac79c91df58cdeea0cbcf4c99cc2a3"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/036-STAGING_VALIDATION.json.gz",
+      "sha256": "8b1ad77838ce1199021e17eb7c84b22cefe9df386f4df6ed9585aea282052edd"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/037-STATE.yaml.gz",
+      "sha256": "2da1fc0f1a6dfe7e70c48ab7e99beda396152c02ae916ed81f29b93473696aff"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/038-STRICT_LINT.log.gz",
+      "sha256": "29086d9d1bc7de340b24b4aeb0debfe10709535ff8ce895c63601cfffad19bad"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/039-TRACE_GATE.md.gz",
+      "sha256": "d4e1dbeb282a4ba7457874e9a166cc47a669fb1ec26ed9b747203545caf23a12"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/040-UPSTREAM_SYNC_PIPELINE.log.gz",
+      "sha256": "aba0d0debc58df0010ef7bec27ed67c9ac554a5fe7c1a0f00037f49069ff4994"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/041-UPSTREAM_SYNC_READINESS.json.gz",
+      "sha256": "39d8017b75a62ebefb4b7a31b7ad4babe0684bba9df39e89785a9630e380da37"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/042-UPSTREAM_SYNC_STRICT.log.gz",
+      "sha256": "15fffaaae01b8c88df9ed6377f0af5f2208a8511d0a9f668850032c8a42b20b6"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/043-UPSTREAM_SYNC_VALIDATION.md.gz",
+      "sha256": "63e297a9bde8c84bf1630d635c90288256f443be6516d16f4c470e357943df7d"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/044-CONTACT_REVIEW.md.gz",
+      "sha256": "73ef9155db48b54c69a43e0c87e9eb5f7f9dc4c08dbd5bdf97961ddab1715cdd"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/045-DERIVATION.md.gz",
+      "sha256": "ccd7f03068a82a8de3eb38a85eaeb22dce1e44337155d0f76fc62046947c9567"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/046-DERIVATION_BEFORE_FDD_SCOPE_CLARIFICATION_0e93e579.md.gz",
+      "sha256": "e9dcb13a89d00653336a68e7cd2c0ee1da07e175cc8f065e5231a3f418275361"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/047-FDD_SCOPE_CLARIFICATION.md.gz",
+      "sha256": "11d3e6a87092161664ca94513dcece176bf43d980d6fc7fc7d93ca07453c6532"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/048-FDD_SCOPE_CLARIFICATION.original.base64.gz",
+      "sha256": "35ef79a2765c6622da34e2c1cdbc4d151cce1be146fb4a4144ef05c9e65a9059"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/049-FINITE_CONTROLS_PREREGISTRATION.md.gz",
+      "sha256": "31d8446fd69c2504cc56c0fe0448ad95d1edd86eaa00e3e9d7ae6e155c05c809"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/050-PORT_RECEIPT.json.gz",
+      "sha256": "b556cb3f87a5aeb43a77824f5b11a478e64e46d1a16271ae7a6213fdbab6a677"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/051-PREREGISTRATION.md.gz",
+      "sha256": "4f81e931fc9e21e65f479921a47f14bea4b701b337dd9e05bb191b39404c3fe1"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/052-ROOT_REVIEW.md.gz",
+      "sha256": "49ad45bdf2508d6a4fb67803c6fcd91f5abeb6b46640e411e670b82a923c9de4"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/053-check.py.gz",
+      "sha256": "1ccf2949509e9ec4c2e4476c8b2c228470924956cbf94347e4f8265cd770bbdf"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/054-native_canonical_result.json.gz",
+      "sha256": "813eb1458da6ac3026dd6576a678422166dda6c60bef16c6e692c7462571384f"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/055-native_canonical_stdout.txt.gz",
+      "sha256": "159db36213396071d6db1414a791d78378d9ce6dfb795f5f168549363d88ec57"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/056-primary_canonical_result.json.gz",
+      "sha256": "808c02a5a48ff4b353504dfe514b0b79faf33780591f3183cd99e66d3ec5e3e1"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/057-primary_canonical_stdout.txt.gz",
+      "sha256": "00cf734df3f23c23b6fecc333d8020f2c09c77279ab06519d24a4af9f0657061"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/058-result.json.gz",
+      "sha256": "5efced6d2d4c4e4bc62686d4636e399abc12dc2275bcc2fb62d3061653900b4d"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/059-DERIVATION.md.gz",
+      "sha256": "1679264c5bc0f48a7331346d38ba45e760fb27bd1ebf0667b83d6f0ef820671f"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/060-PREREGISTRATION.md.gz",
+      "sha256": "48d6ad8133c9e0baa5c456d6f4fd38318b68b66a6490b1faf0351d67ff4e9463"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/061-check.py.gz",
+      "sha256": "8979b9f0c3cb62519615a323b44d90473535406efc5a56be5fe52b045863aea6"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/062-result.json.gz",
+      "sha256": "04e8f8426bb99d6a2d79b05e7e03d9401138d9b89f3c12c2f544c08912106f1f"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/063-NATIVE_AND_CONTACT_REVIEW.md.gz",
+      "sha256": "82cad692a025301120d2a24be452ae079ccd009b05ab06d601a3d64e482a3ffd"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/064-NATIVE_SCOPE_DELTA_REVIEW.md.gz",
+      "sha256": "56018132884443df250fb968c5ce71da4ac513da2af238ae33d45cf67a440309"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/065-ROOT_REVIEW.md.gz",
+      "sha256": "79c4f71ad1d96497ab43a5241a700d6c46aabb05cd6e527685cb6167a21bb492"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/066-BOUNDARY_SOURCE_ALIGNMENT.md.gz",
+      "sha256": "398a0044a733429e284538eb521b30586ab39450a4ca49baa23c76207f17a149"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/067-PREREGISTRATION.md.gz",
+      "sha256": "5429b5f2800a60e074ef6b8c7bd0021e1e42dbbbd123a0c08a1ee7baeb30b228"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/068-ROOT_DERIVATION.md.gz",
+      "sha256": "fd02cf430074b035378eec4c708f390372ff177689fea401cc40c120e0cd1a4f"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/069-ROOT_DERIVATION_BEFORE_BOUNDARY_SOURCE_ALIGNMENT_97fe162b.md.gz",
+      "sha256": "3b16b1b7059fc4b941d2e72f6746b2fd200bec0b424c50fac078445f3dc40edb"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/070-ROOT_NATIVE_REVIEW.md.gz",
+      "sha256": "d87cf6692b0e51ad962784644486a9307c47af65859ec8cd06d11fbc5ba81345"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/071-PREREGISTRATION.md.gz",
+      "sha256": "f24b831fee352ea7b08a28cf6c43657361086b29b0842fee963e259d9ca1ef96"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/072-ROOT_DERIVATION.md.gz",
+      "sha256": "ffed32e4145d047a596c4d90a4511a666ea441f03507ddbe28b067c659333a78"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/073-gauge_wilson_haar_contact_fdd_controls_2026_09_07.py.live.json.gz",
+      "sha256": "5760cdd17467a3ebb09547a4d52ccaa2470853d99285282a8fc3703a9215a7c1"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/074-gauge_wilson_uniform_weak_scaling_controls_2026_09_07.py.live.json.gz",
+      "sha256": "f5444dec1c6ced946c4f72a3dbf099b5f2e5d9264c2ee48abbd1a7bbf871d624"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/075-native_canonical_result.json.gz",
+      "sha256": "813eb1458da6ac3026dd6576a678422166dda6c60bef16c6e692c7462571384f"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/076-native_canonical_stdout.txt.gz",
+      "sha256": "159db36213396071d6db1414a791d78378d9ce6dfb795f5f168549363d88ec57"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/077-primary_canonical_result.json.gz",
+      "sha256": "808c02a5a48ff4b353504dfe514b0b79faf33780591f3183cd99e66d3ec5e3e1"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/078-primary_canonical_stdout.txt.gz",
+      "sha256": "00cf734df3f23c23b6fecc333d8020f2c09c77279ab06519d24a4af9f0657061"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/079-validated_claims_before_generated_cleanup.json.gz",
+      "sha256": "a92cb2bb6576d9101e53e6a93429a0e8839ebd2a4cc8ce1daad89247cf5d587e"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/080-validated_readiness_before_generated_cleanup.json.gz",
+      "sha256": "7cd975964a3fa79e350ae5d05d74c1f1e529cce64960e0eab40bbb50d60a7a5f"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/081-GAUGE_WILSON_UNIFORM_WEAK_CONTINUUM_CORRELATION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-07.md.gz",
+      "sha256": "99c75fe028e0ed91d758795eac524acfe65dda6c8c9d5ca0500179e88cf1fd15"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/082-citation_graph_manifest.json.gz",
+      "sha256": "cd89686eb458a28f6bd9a9f7f8f9ade64886651200bed0dbd9978f3ddfc97366"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/083-build_citation_graph.py.gz",
+      "sha256": "7c72a303a304c634b465574b256dc1688cc21a2304bc1f6e0e619b41ffb2fa17"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/084-gauge_wilson_haar_contact_fdd_controls_2026_09_07.txt.gz",
+      "sha256": "3a5a547d71ed4f16fa7897692b9b968de05de6b33374a29845907ec4f9e3b836"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/085-gauge_wilson_uniform_weak_scaling_controls_2026_09_07.txt.gz",
+      "sha256": "49bf09a0f6fc6bb59204eaec1e1330ce33ca5af5b2fbfeeefa77e48c56beb3df"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/086-audit_packet_script_deps.py.gz",
+      "sha256": "0cc79a111fc461b749c9666bc97dda49d03afea763763fe78e808390e1cc23c0"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/087-gauge_wilson_haar_contact_fdd_controls_2026_09_07.py.gz",
+      "sha256": "80c1301dc1797ff3b3ae1819d22bb61a964494c2aa29900f80632dd968a87f96"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/originals/088-gauge_wilson_uniform_weak_scaling_controls_2026_09_07.py.gz",
+      "sha256": "079ff9f6a0a04c30d08226d64e589597765a6cd1adfc20a0906cc7bbd510a655"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/manifest.json",
+      "sha256": "22560b3f2305e797e4fca5b21d92b77cf6f54bd8d625940906130c4de8fc5778"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8030/README.md",
+      "sha256": "236997396886d1d5521375424e21f213e3d1c95a1ecab985e76d89fb452f89f2"
+    },
+    {
+      "path": "docs/GAUGE_WILSON_WEAK_WINDOW_QUANTITATIVE_BOUNDS_AND_HAAR_CONTACT_FDD_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "ea9c1aec1cefc30938c6fbe9f8e88564bf25c961080319971d2fb37ba7c01fef"
+    },
+    {
+      "path": "scripts/gauge_wilson_uniform_weak_scaling_controls_2026_09_07.py",
+      "sha256": "a5bd37b25bb607390765714efad1f41a5cbcfba8446163becb43a9fd88186466"
+    },
+    {
+      "path": "scripts/gauge_wilson_haar_contact_fdd_controls_2026_09_07.py",
+      "sha256": "7fc63dbba4190fbd34ae55482834cdf521c5521b4a4b8d07152a6cf6f79e009b"
+    }
+  ],
+  "claim_mapping": {
+    "original_main_sections1_to5": "quantitative mathematics retained; two exclusion-promotion sentences replaced by explicit deferral",
+    "original_main_section6": "full exact negative conclusion retained in original gzip recovery only; certification deferred",
+    "primary_contact": "complete proof and constants retained",
+    "root_contact": "complete moment/FDD/skew proof before original negative-summary section retained",
+    "all_other_originals": "exact89-original archive, no current authority/cache claim"
+  },
+  "remaining": [
+    "Original reviewer confirms accepted/deferred scope",
+    "Root guarded freshbase advance if needed, two additive helper-map unions, stagedschema2 and cheap check",
+    "Two sequential bounded captures and original reviewer finalsource/evidence confirmation; branch remains"
+  ]
+}

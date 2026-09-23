@@ -1,0 +1,32 @@
+{
+  "draft": {
+    "path": "/private/tmp/review-drain-20260915/drain8159-author-canonical-draft-v4.json",
+    "sha256": "d5104ade42349c641bb2ef39de5ff23f65c2e9d6aa78cd35bea4275d86537554"
+  },
+  "patch": {
+    "path": "/private/tmp/review-drain-20260915/drain8159-partial-salvage-scope-v4.patch",
+    "sha256": "6d1b755ced8b6ff46f359afc5dcc945c967e2923c836d67c14b98e8df686d3b6"
+  },
+  "fullproofs": {
+    "path": "/private/tmp/review-drain-20260915/drain8159-author-full-proof-map-v4.json",
+    "sha256": "8038972a62394af72da542193bd2ff223754e8e7d9ce5ee4aabfa4a7f134133e"
+  },
+  "discovery": {
+    "path": "/private/tmp/review-drain-20260915/drain8159-author-input-discovery-v4.json",
+    "sha256": "b7da2c9ab85b40b7ee84f707b6129eab6bae91960dc0f91a8d09bcc7a993c3b1"
+  },
+  "changed_paths": [
+    "docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "docs/POSITIVE_AUXILIARY_CURRENT_LAW_AND_REGULATOR_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "docs/POSITIVE_ELECTRIC_GENERATOR_CONE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "docs/work_history/review_loop/pr8159/README.md"
+  ],
+  "source_basis": {
+    "path": "/private/tmp/review-drain-20260915/drain8159-negative-certification-disposition-v1.json",
+    "sha256": "4333279b51bab32fcc9c69a6010b7e9dc9dc595562aac48ae08bbaba9a9011a4"
+  },
+  "preserved": "All72 full original/imported bodies unchanged from correctedv3; all41programs unchanged. Only four owner wrappers and historical README changed.",
+  "source_runs": 0,
+  "required": "Same-session affected scope confirmation; future full staged cold and capture gates."
+}

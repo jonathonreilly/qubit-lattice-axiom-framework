@@ -1,0 +1,37 @@
+--- prepared-v1/docs/GAUGE_WILSON_WEAK_WINDOW_QUANTITATIVE_BOUNDS_AND_HAAR_CONTACT_FDD_BOUNDED_THEOREM_NOTE_2026-09-07.md
++++ prepared-v2/docs/GAUGE_WILSON_WEAK_WINDOW_QUANTITATIVE_BOUNDS_AND_HAAR_CONTACT_FDD_BOUNDED_THEOREM_NOTE_2026-09-07.md
+@@ -102,7 +102,7 @@
+ 
+ Two carefully conditional consequences follow. First, if the ACTUAL rescaled gap is additionally bounded above by a finite M, then G_ell<=M and V_ell<=16e u_* M ell tends to zero. For fixed physical separation and fixed finite laboratory time, the same polynomially norm-bounded local commutators consequently vanish faster than every power: their LR exponent is at most −r/(2ell)+O(1). This conclusion uses the extra upper bound on the actual gap; the uniform-gap lower bound alone does not supply it.
+ 
+-Second, for this LR upper parameter even to remain at least some fixed V_0>0, (3) forces G_ell>=V_0/(16e u_* ell), hence a diverging actual gap lower bound. Equivalently, a demonstrably nonzero propagation speed bounded by this LR parameter could not coexist with a bounded gap in this uniformly weak scaling window. We do not infer such a speed from the estimate itself. If a_ell b_ell stays bounded below, V_ell already tends to zero directly. If a_ell b_ell is of order ell, the LR upper parameter may stay finite while the gap lower diverges; no contradiction occurs.
++Second, for this LR upper parameter even to remain at least some fixed V_0>0, (3) forces G_ell>=V_0/(16e u_* ell), hence a diverging actual gap lower bound. The original propagation/bounded-gap noncoexistence certification is also explicitly deferred under N1. The preceding quantitative implication is retained with its stated hypotheses; it is not promoted here into a certified negative classification. We do not infer such a speed from the estimate itself. If a_ell b_ell stays bounded below, V_ell already tends to zero directly. If a_ell b_ell is of order ell, the LR upper parameter may stay finite while the gap lower diverges; no contradiction occurs.
+ 
+ No equation a_ell=ell has been introduced. Clock rescaling changes both quantities together and cannot change ratio(3). Energy shifts by the vacuum scalar do not alter the gap; more elaborate sector-dependent subtractions or changed dynamics are outside this simple rescaling statement.
+ 
+@@ -206,9 +206,24 @@
+ The remainder is O(h³) for fixedq, while the cubic term is O(h^(3/2)); the mesh covariance is retained exactly rather than replacing its Riemann-sum error by an unjustified rate for arbitrary continuousq. This correction is analytical and not fitted from samples.
+ 
+ 
++## No-Go Discipline Gate: DEFERRED N1–N8 applicability record
++
++Both the separated-field exclusion certification and the propagation/bounded-gap noncoexistence certification remain **DEFERRED**. The following applicability record identifies existing mathematics and controls; it does not declare a negative-claim PASS or claim five independent failed in-domain routes.
++
++| Item | Applicability and evidence boundary |
++| --- | --- |
++| N1 — alternative routes | DEFERRED: the required route coverage is not established. Uniform versus pointwise clustering, pairwise smearing versus applying a support-union prefactor, wrong exponential-series degree, clock direction, the extra actual-gap upper premise, and contact/repeated-plaquette/FDD scope are inference controls, not five failed in-domain mechanisms. |
++| N2 — independence of the obstruction | DEFERRED: equation (1) explicitly imports a uniform clustering estimate for the selected state in one sufficiently small fixed window. No claim that this premise is independent of every proposed alternative mechanism is certified. |
++| N3 — hidden assumptions | DEFERRED: support sizes, operator norms, positive separation, coefficient budgets, supplied mesh and clock, and the additional actual-gap upper bound are explicit hypotheses. Removing them has not been exhausted. |
++| N4 — residual matching | DEFERRED: the positive contact FDD is retained, with overlapping/contact supports distinct from positively separated supports. It does not furnish a physical dynamical limit or certify the residual alternatives exhaustively. |
++| N5 — resolution and execution | DEFERRED for negative certification. The scaling program specifies exact series-degree, weighted-budget and clock-ratio arithmetic and adverse checks; uniformity and support-union applicability are analytical checks in the proof. The contact program specifies moment normalization, 27 actual plaquette link sets, repeated-plaquette adversity, and Taylor/logarithm constants and mesh exponent. Its per-element, per-site, per-mode and per-block classes refer only to those finite fixtures; lattice-wide labels do not mean the clustering theorem or FDD limit was executed. These unchanged programs have historical evidence; no new capture has been performed for this draft. Scaling TOTAL18 includes one resource predicate; contact TOTAL13 has a separate resource guard. |
++| N6 — partial closure | DEFERRED: the retained bounds and constructive Haar FDD require no new axiom. Changing norm/support assumptions, coupling window, dynamics or the supplied time/mesh relationship would require a separately justified statement, not a convention silently inserted here. |
++| N7 — strongest alternative | DEFERRED: the actual contact FDD is a constructive alternative to conflating all statistical limits with separated-field dynamics. It does not exhaust alternatives involving changed hypotheses or interacting/dynamical limits. |
++| N8 — prior-cycle consistency | DEFERRED: complete original arguments, controls and failures remain in the exact recovery archive. Their repetition or historical review does not establish the missing current route coverage. |
++
+ ## Accepted scope and deferred certification
+ 
+-Retained: equations (1)–(3), the weighted pairwise smearing bound with every stated hypothesis, actual u=0 Haar contact FDD and its explicit logarithmic remainder, and the conditional gap/LR scale comparison. No tightness, dynamics, physical speed or coupling selection follows. The original separated-field negative classification remains procedurally deferred; the listed scope controls are not five independent failed in-domain mechanisms.
++Retained: equations (1)–(3), the weighted pairwise smearing bound with every stated hypothesis, actual u=0 Haar contact FDD and its explicit logarithmic remainder, and the conditional gap/LR scale comparison. No tightness, dynamics, physical speed or coupling selection follows. The original separated-field and propagation/bounded-gap noncoexistence certifications remain procedurally deferred; the listed scope controls are not five independent failed in-domain mechanisms.
+ 
+ The two programs execute finite exact arithmetic and actual finite plaquette-disjointness controls. Analytical clustering, asymptotic estimates and FDD convergence are not numerical executions. Scaling TOTAL18 includes one resource predicate; contact TOTAL13 counts scientific controls, with a separate resource guard.
+ 

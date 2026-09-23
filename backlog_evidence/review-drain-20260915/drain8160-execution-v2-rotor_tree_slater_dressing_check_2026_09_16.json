@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/rotor_tree_slater_dressing_check_2026_09_16.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: divide by zero encountered in det\n  r = _umath_linalg.det(a, signature=signature)\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: overflow encountered in det\n  r = _umath_linalg.det(a, signature=signature)\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: invalid value encountered in det\n  r = _umath_linalg.det(a, signature=signature)\nLiteral axial tree, charge dressing, and Slater curvature challenges completed.\nWrong dressing sign discrepancy: 4.29346\nR=2: summed charge variance=0.936274, analytic upper=48\nR=3: summed charge variance=7.72686, analytic upper=324\nR=4: summed charge variance=30.404, analytic upper=1152\nper_element: executed \u2014 integer paths, signed loop fillings and Slater determinant curvature\nper_site: executed \u2014 open cubic blocks R=2,3,4 with explicit subtree charges\nper_mode: executed \u2014 occupied open-Wilson eigenvectors and particle-hole symmetry\nper_block: executed \u2014 64-state charged dressing and paired Slater variances\nlattice_wide: checked and not executed \u2014 uniform bounds and joint-limit/time arguments are written proofs; finite fixtures do not execute an infinite lattice\nTOTAL: PASS=348 FAIL=0\n",
+  "stderr": "",
+  "elapsed_sec": 0.13308310508728027,
+  "timeout_sec": 120,
+  "live_log": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/.in-progress/rotor_tree_slater_dressing_check_2026_09_16.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/rotor_tree_slater_dressing_check_2026_09_16.json",
+    "sha256": "fbbacc5ad2965746066ae6bca4459f9ad237a60a92c06b4be5343135415fd410"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 536870912,
+    "interval_sec": 0.02,
+    "root_pid": 50936,
+    "samples": 4,
+    "peak_tree_rss_bytes": 82853888,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8160-capture-v2.py",
+  "capture_script_sha256": "b9fc33718b65d21eea16b9b6f9d0be42a7b86999eb1c9a56f46fe72fe3699d6d"
+}

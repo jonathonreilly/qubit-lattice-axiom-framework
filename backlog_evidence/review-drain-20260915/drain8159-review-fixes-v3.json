@@ -1,0 +1,66 @@
+{
+  "changed_paths": [
+    {
+      "path": "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "3c22468d38ee7733013b0d663507f9d2a5bcba75460f4700e02d949a8768b823"
+    },
+    {
+      "path": "docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "a3a855d8f48556d991537d5bd5aefe2d9d9a9fd9a0b561311c2d2921ee9c07a1"
+    },
+    {
+      "path": "docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "5bc92988ff07bd2767970a7ae0f9f3c6f2ba31589ee6866c72899608331f5cc8"
+    },
+    {
+      "path": "docs/SUPPLIED_QUARTET_LEADING_DECAY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "8979b78cb9939242eefccc2dfc321a0ff8ea63c61b4da07590b2941a68d7a61c"
+    },
+    {
+      "path": "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "0d103102a710ebde79af54b2b63e811d2381abf80874c4a203eb76d04d2853af"
+    },
+    {
+      "path": "scripts/review_harmonic_metric_check_2026_09_15.py",
+      "sha256": "e024c209365025b24e46b9312309683753cb63d6b314094a82a5957b18b26737"
+    },
+    {
+      "path": "scripts/tree_count_check_2026_09_15.py",
+      "sha256": "53c6fa0c46be0e08f9690422ae7a33cea500a0fd963c74036ca5b9f2a41070be"
+    }
+  ],
+  "draft": {
+    "path": "/private/tmp/review-drain-20260915/drain8159-author-canonical-draft-v3.json",
+    "sha256": "69b509fe13c1041666810b0b30eeb27ab29b8ad0148e093f9d6edc48c2c6a803"
+  },
+  "patch": {
+    "path": "/private/tmp/review-drain-20260915/drain8159-review-fixes-v3.patch",
+    "sha256": "7d2c457be10ea792b3a926446d922ccfe164ebd21c7e3051e0b276de5d553806"
+  },
+  "full_proofs": {
+    "path": "/private/tmp/review-drain-20260915/drain8159-author-full-proof-map-v3.json",
+    "sha256": "02363953973cb6d8689b96f7b5fae2e123f0670c0a5b97845cf3af023b2428b4"
+  },
+  "resource_plan": {
+    "path": "/private/tmp/review-drain-20260915/drain8159-author-resource-plan-v3.json",
+    "sha256": "2d164e9655218853d1b94eba383df040e8efc7b71b49bb659bef54c171afa357"
+  },
+  "input_discovery": {
+    "path": "/private/tmp/review-drain-20260915/drain8159-author-input-discovery-v3.json",
+    "sha256": "94ee68e7525d01b156e40806aaa4a15e8c025e93ad4166b100f8885a673788c6"
+  },
+  "supersedes": "v2 blanket mathematical preservation assertion was false for six expressions; previous reports and exact affected source copies retained. No primary executed.",
+  "binding_script_failure": "Initial fix script restored source and verified all72 bodies, then KeyError because dependencies was indexed by owner number rather than note path. This continuation only completes metadata with explicit numeric-owner mapping; no source change/re-execution. Initial script preserved unchanged.",
+  "negative_claim_boundary": "No scientific scope change. Six exact original formulas restored and two companion reporting/cost scopes corrected.",
+  "executions": 0,
+  "scripts": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8159-fix-review-findings-v3.py",
+      "sha256": "9f45cbbee3ebcec1a7f8c8ef6c12cc923f441c29ad4f80c1341ae2c46d0b9e5f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8159-finish-review-fix-bindings-v3.py",
+      "sha256": "90cb70df26f67df16307f31071eb18b13fab99892539dfa5daad539fdc26ad41"
+    }
+  ]
+}

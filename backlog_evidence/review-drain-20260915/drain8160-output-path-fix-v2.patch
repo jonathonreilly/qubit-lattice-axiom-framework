@@ -1,0 +1,77 @@
+--- scripts/rotor_uniform_compact_response_check_2026_09_16.py cold-v1
++++ scripts/rotor_uniform_compact_response_check_2026_09_16.py output-fix-v2
+@@ -277,7 +277,7 @@
+     results["tolerance"] = TOL
+     results["runner_sha256"] = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+     results["checks"] = checks
+-    output = Path(__file__).with_suffix(".json")
++    output = (_REPO / 'logs/runner-cache/rotor_uniform_compact_response_check_2026_09_16.json')
+     output.write_text(json.dumps(results, indent=2)+"\n")
+     print("Discrete Gaussian, Wilson hopping, wavepacket, compact mode, and spectral challenges completed.")
+     print('per_element: executed — direct/dual Gaussian sums and literal CAR matrices at unchanged tolerances')
+--- scripts/rotor_integer_gaussian_positive_square_check_2026_09_16.py cold-v1
++++ scripts/rotor_integer_gaussian_positive_square_check_2026_09_16.py output-fix-v2
+@@ -235,7 +235,7 @@
+     out["tolerance"] = TOL
+     out["runner_sha256"] = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+     out["checks"] = checks
+-    target = Path(__file__).with_suffix(".json")
++    target = (_REPO / 'logs/runner-cache/rotor_integer_gaussian_positive_square_check_2026_09_16.json')
+     target.write_text(json.dumps(out, indent=2)+"\n")
+     print("Integer boundary lattice, weighted Gaussian, and positive-square challenges completed.")
+     print(f"Full hard-cutoff discrepancy (expected): {out['positive_square']['full_cutoff_discrepancy']:.6g}")
+--- scripts/rotor_tree_slater_dressing_check_2026_09_16.py cold-v1
++++ scripts/rotor_tree_slater_dressing_check_2026_09_16.py output-fix-v2
+@@ -201,7 +201,7 @@
+     report["tolerance"] = TOL
+     report["runner_sha256"] = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+     report["checks"] = checks
+-    Path(__file__).with_suffix(".json").write_text(json.dumps(report, indent=2)+"\n")
++    (_REPO / 'logs/runner-cache/rotor_tree_slater_dressing_check_2026_09_16.json').write_text(json.dumps(report, indent=2)+"\n")
+     print("Literal axial tree, charge dressing, and Slater curvature challenges completed.")
+     print(f"Wrong dressing sign discrepancy: {report['literal_charged_dressing']['wrong_sign_discrepancy']:.6g}")
+     for row in report["half_filled_wilson_blocks"]:
+--- scripts/rotor_joint_characteristic_check_2026_09_16.py cold-v1
++++ scripts/rotor_joint_characteristic_check_2026_09_16.py output-fix-v2
+@@ -198,7 +198,7 @@
+     dependency = Path(__file__).with_name("rotor_integer_gaussian_positive_square_check_2026_09_16.py")
+     data["geometry_helper_sha256"] = hashlib.sha256(dependency.read_bytes()).hexdigest()
+     data["checks"] = checks
+-    Path(__file__).with_suffix(".json").write_text(json.dumps(data, indent=2)+"\n")
++    (_REPO / 'logs/runner-cache/rotor_joint_characteristic_check_2026_09_16.json').write_text(json.dumps(data, indent=2)+"\n")
+     print("Weighted cubic commutator, Fourier normalization, and single-rotor characteristic challenge completed.")
+     for row in data["single_rotor_ground_challenge"]:
+         print(f"g={row['g']:.2f}: characteristic error={row['characteristic_error']:.6g}, ODE residual={row['ode_residual']:.6g}")
+--- scripts/rotor_joint_weyl_car_state_check_2026_09_16.py cold-v1
++++ scripts/rotor_joint_weyl_car_state_check_2026_09_16.py output-fix-v2
+@@ -135,7 +135,7 @@
+     report["tolerance"] = TOL
+     report["runner_sha256"] = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+     report["checks"] = checks
+-    Path(__file__).with_suffix(".json").write_text(json.dumps(report, indent=2)+"\n")
++    (_REPO / 'logs/runner-cache/rotor_joint_weyl_car_state_check_2026_09_16.json').write_text(json.dumps(report, indent=2)+"\n")
+     for row in report["compact_weyl_products"]:
+         print(f"g={row['g']:.2f}: Weyl error={row['root_error']:.6g}, wrong-sign error={row['wrong_sign_error']:.6g}")
+     for row in report["finite_zero_mode_ambiguity"]:
+--- scripts/rotor_joint_gauge_propagation_check_2026_09_16.py cold-v1
++++ scripts/rotor_joint_gauge_propagation_check_2026_09_16.py output-fix-v2
+@@ -237,7 +237,7 @@
+     report["tolerance"]=TOL
+     report["runner_sha256"]=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+     report["checks"]=checks
+-    Path(__file__).with_suffix(".json").write_text(json.dumps(report,indent=2)+"\n")
++    (_REPO / 'logs/runner-cache/rotor_joint_gauge_propagation_check_2026_09_16.json').write_text(json.dumps(report,indent=2)+"\n")
+     print('per_element: executed — charged flux increments, current signs and residual identities')
+     print('per_site: executed — four-site charged ring at g=0.6,0.4,0.25')
+     print('per_mode: executed — weighted symbols on grids L=5,8,12 and three small radii; finite norms are diagnostic')
+--- scripts/rotor_joint_rooted_matter_dynamics_check_2026_09_16.py cold-v1
++++ scripts/rotor_joint_rooted_matter_dynamics_check_2026_09_16.py output-fix-v2
+@@ -157,7 +157,7 @@
+     helper=Path(__file__).with_name('rotor_joint_gauge_propagation_check_2026_09_16.py')
+     report["car_helper_sha256"]=hashlib.sha256(helper.read_bytes()).hexdigest()
+     report["checks"]=checks
+-    Path(__file__).with_suffix('.json').write_text(json.dumps(report,indent=2)+'\n')
++    (_REPO / 'logs/runner-cache/rotor_joint_rooted_matter_dynamics_check_2026_09_16.json').write_text(json.dumps(report,indent=2)+'\n')
+     for row in report["charged_rooted_matter"]:
+         print(f"g={row['g']:.2f}: rooted residual={row['total_residual_norm']:.6g}, t=1.4 error={row['dynamics'][-1]['error']:.6g}")
+     print('per_element: executed — CAR signs, quadratic path term and residual decomposition')

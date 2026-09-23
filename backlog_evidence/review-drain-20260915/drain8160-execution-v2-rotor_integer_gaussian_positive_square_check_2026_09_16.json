@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/rotor_integer_gaussian_positive_square_check_2026_09_16.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "Integer boundary lattice, weighted Gaussian, and positive-square challenges completed.\nFull hard-cutoff discrepancy (expected): 17.0293\nWrong divergence sign discrepancy: 24.1079\nper_element: executed \u2014 integer Smith invariants, weighted metrics and parity sums\nper_site: executed \u2014 literal periodic 3-cube incidence and plaquette boundaries\nper_mode: executed \u2014 positive-range matrix calculus and finite Fourier cutoff7\nper_block: executed \u2014 padded-core square identity with full-cutoff discrepancy retained\nlattice_wide: checked and not executed \u2014 uniform bounds and joint-limit/time arguments are written proofs; finite fixtures do not execute an infinite lattice\nTOTAL: PASS=37 FAIL=0\n",
+  "stderr": "",
+  "elapsed_sec": 0.5416350364685059,
+  "timeout_sec": 120,
+  "live_log": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/.in-progress/rotor_integer_gaussian_positive_square_check_2026_09_16.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/rotor_integer_gaussian_positive_square_check_2026_09_16.json",
+    "sha256": "2ff363199e72233615a9f471537362b1425ccaaa438448de0d46c6bfa0ddba77"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 536870912,
+    "interval_sec": 0.02,
+    "root_pid": 50936,
+    "samples": 12,
+    "peak_tree_rss_bytes": 137773056,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8160-capture-v2.py",
+  "capture_script_sha256": "b9fc33718b65d21eea16b9b6f9d0be42a7b86999eb1c9a56f46fe72fe3699d6d"
+}

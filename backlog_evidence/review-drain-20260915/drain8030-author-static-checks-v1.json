@@ -1,0 +1,45 @@
+{
+  "status": "STATIC AUTHOR PREPARATION CHECKS COMPLETE; INDEPENDENT COLD REVIEW PENDING",
+  "prepared_sha256": "047a23d36bb895b567319111bdedfb47ad148719c3f1df5c9103f0a30b65e739",
+  "owned_files_verified": 94,
+  "decoded_originals_verified": 89,
+  "runtime": [
+    {
+      "path": "scripts/gauge_wilson_uniform_weak_scaling_controls_2026_09_07.py",
+      "compile": true,
+      "input_paths": [
+        "docs/GAUGE_WILSON_WEAK_WINDOW_QUANTITATIVE_BOUNDS_AND_HAAR_CONTACT_FDD_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_LOCAL_OBSERVABLE_FINITE_REGION_PW_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+      ],
+      "literal_pins": 6,
+      "timeout_seconds": 180,
+      "primary_executed": false
+    },
+    {
+      "path": "scripts/gauge_wilson_haar_contact_fdd_controls_2026_09_07.py",
+      "compile": true,
+      "input_paths": [
+        "docs/GAUGE_WILSON_WEAK_WINDOW_QUANTITATIVE_BOUNDS_AND_HAAR_CONTACT_FDD_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_LOCAL_OBSERVABLE_FINITE_REGION_PW_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+      ],
+      "literal_pins": 6,
+      "timeout_seconds": 180,
+      "primary_executed": false
+    }
+  ],
+  "tracked_and_index_unchanged": true,
+  "execution": false,
+  "correction_diff_read_complete": true,
+  "prerequisites": [
+    "Independent reviewer confirms retained/deferred scope and full proof preservation.",
+    "Root dispatches additive helper maps and staged schema2/source preflight on current parent context.",
+    "Only after cold confirmation and cheap preflight, root captures each runner once at180s/180MiB.",
+    "Original negative classification certification remains deferred; original branch retained."
+  ]
+}

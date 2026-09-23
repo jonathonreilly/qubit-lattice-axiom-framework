@@ -1,0 +1,342 @@
+{
+  "status": "UNTRACKED AUTHOR PREPARATION COMPLETE; ORIGINAL REVIEWER AFFECTED SOURCE CONFIRMATION REQUIRED",
+  "base": "48334d7f83137d5a18ffd4962623a32a6778a637",
+  "owner": "PR8159-author",
+  "source_paths": 436,
+  "notes": 25,
+  "active_unique_programs": 41,
+  "historical_programs": 13,
+  "exact_originals": 366,
+  "extra_proof_import": "Block27 complete owned appendix with exact supplementary recovery",
+  "capture_plan": [
+    {
+      "runner": "scripts/local_spectrum_check_2026_09_15.py",
+      "seconds": 180,
+      "memory_bytes": 536870912,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 4
+    },
+    {
+      "runner": "scripts/quartet_metric_check_2026_09_15.py",
+      "seconds": 180,
+      "memory_bytes": 536870912,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 1
+    },
+    {
+      "runner": "scripts/ground_cutoff_check_2026_09_15.py",
+      "seconds": 180,
+      "memory_bytes": 536870912,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 8
+    },
+    {
+      "runner": "scripts/quadratic_coframe_check_2026_09_15.py",
+      "seconds": 180,
+      "memory_bytes": 536870912,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 1
+    },
+    {
+      "runner": "scripts/decay_check_2026_09_15.py",
+      "seconds": 180,
+      "memory_bytes": 536870912,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 0
+    },
+    {
+      "runner": "scripts/mixed_history_check_2026_09_15.py",
+      "seconds": 180,
+      "memory_bytes": 536870912,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 0
+    },
+    {
+      "runner": "scripts/cyclic_equilibrium_check_2026_09_15.py",
+      "seconds": 180,
+      "memory_bytes": 536870912,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 12
+    },
+    {
+      "runner": "scripts/cyclic_scaling_check_2026_09_15.py",
+      "seconds": 300,
+      "memory_bytes": 1073741824,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 17
+    },
+    {
+      "runner": "scripts/positive_generator_check_2026_09_15.py",
+      "seconds": 180,
+      "memory_bytes": 536870912,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 0
+    },
+    {
+      "runner": "scripts/charged_ring_check_2026_09_15.py",
+      "seconds": 300,
+      "memory_bytes": 1073741824,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 18
+    },
+    {
+      "runner": "scripts/hybrid_curvature_check_2026_09_15.py",
+      "seconds": 180,
+      "memory_bytes": 536870912,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 0
+    },
+    {
+      "runner": "scripts/hybrid_generator_check_2026_09_15.py",
+      "seconds": 180,
+      "memory_bytes": 536870912,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 3
+    },
+    {
+      "runner": "scripts/integrated_rate_check_2026_09_15.py",
+      "seconds": 180,
+      "memory_bytes": 536870912,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 0
+    },
+    {
+      "runner": "scripts/holonomy_check_2026_09_15.py",
+      "seconds": 180,
+      "memory_bytes": 536870912,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 0
+    },
+    {
+      "runner": "scripts/slow_fast_check_2026_09_15.py",
+      "seconds": 300,
+      "memory_bytes": 1073741824,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 13
+    },
+    {
+      "runner": "scripts/physical_probe_check_2026_09_15.py",
+      "seconds": 300,
+      "memory_bytes": 1073741824,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 3
+    },
+    {
+      "runner": "scripts/matched_cone_check_2026_09_15.py",
+      "seconds": 180,
+      "memory_bytes": 536870912,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 0
+    },
+    {
+      "runner": "scripts/response_identity_check_2026_09_15.py",
+      "seconds": 180,
+      "memory_bytes": 536870912,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 1
+    },
+    {
+      "runner": "scripts/visible_threshold_check_2026_09_15.py",
+      "seconds": 180,
+      "memory_bytes": 536870912,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 6
+    },
+    {
+      "runner": "scripts/cofactor_cyclic_check_2026_09_15.py",
+      "seconds": 300,
+      "memory_bytes": 1073741824,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 0
+    },
+    {
+      "runner": "scripts/contact_register_check_2026_09_15.py",
+      "seconds": 300,
+      "memory_bytes": 1073741824,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 0
+    },
+    {
+      "runner": "scripts/cut_completion_check_2026_09_15.py",
+      "seconds": 300,
+      "memory_bytes": 1073741824,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 0
+    },
+    {
+      "runner": "scripts/determinant_exclusion_check_2026_09_15.py",
+      "seconds": 300,
+      "memory_bytes": 1073741824,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 0
+    },
+    {
+      "runner": "scripts/forest_interpolation_check_2026_09_15.py",
+      "seconds": 300,
+      "memory_bytes": 1073741824,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 0
+    },
+    {
+      "runner": "scripts/gaussian_cycle_check_2026_09_15.py",
+      "seconds": 300,
+      "memory_bytes": 1073741824,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 0
+    },
+    {
+      "runner": "scripts/graph_source_check_2026_09_15.py",
+      "seconds": 300,
+      "memory_bytes": 1073741824,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 0
+    },
+    {
+      "runner": "scripts/hard_core_cycle_check_2026_09_15.py",
+      "seconds": 300,
+      "memory_bytes": 1073741824,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 3
+    },
+    {
+      "runner": "scripts/operator_source_check_2026_09_15.py",
+      "seconds": 300,
+      "memory_bytes": 1073741824,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 0
+    },
+    {
+      "runner": "scripts/partition_exclusion_check_2026_09_15.py",
+      "seconds": 300,
+      "memory_bytes": 1073741824,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 0
+    },
+    {
+      "runner": "scripts/phase_energy_check_2026_09_15.py",
+      "seconds": 300,
+      "memory_bytes": 1073741824,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 0
+    },
+    {
+      "runner": "scripts/general_order_check_2026_09_15.py",
+      "seconds": 180,
+      "memory_bytes": 536870912,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 0
+    },
+    {
+      "runner": "scripts/record_pair_check_2026_09_15.py",
+      "seconds": 180,
+      "memory_bytes": 536870912,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 0
+    },
+    {
+      "runner": "scripts/fourier_gaussian_register_check_2026_09_15.py",
+      "seconds": 300,
+      "memory_bytes": 1073741824,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 9
+    },
+    {
+      "runner": "scripts/tree_count_check_2026_09_15.py",
+      "seconds": 300,
+      "memory_bytes": 1073741824,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 0
+    },
+    {
+      "runner": "scripts/algebra_naturality_check_2026_09_15.py",
+      "seconds": 180,
+      "memory_bytes": 536870912,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 18
+    },
+    {
+      "runner": "scripts/inverse_corner_support_check_2026_09_15.py",
+      "seconds": 180,
+      "memory_bytes": 536870912,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 8
+    },
+    {
+      "runner": "scripts/positive_auxiliary_check_2026_09_15.py",
+      "seconds": 300,
+      "memory_bytes": 1073741824,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 27
+    },
+    {
+      "runner": "scripts/native_motion_check_2026_09_15.py",
+      "seconds": 180,
+      "memory_bytes": 536870912,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 0
+    },
+    {
+      "runner": "scripts/native_twist_check_2026_09_15.py",
+      "seconds": 180,
+      "memory_bytes": 536870912,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 0
+    },
+    {
+      "runner": "scripts/polarized_word_check_2026_09_15.py",
+      "seconds": 180,
+      "memory_bytes": 536870912,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 3
+    },
+    {
+      "runner": "scripts/review_harmonic_metric_check_2026_09_15.py",
+      "seconds": 300,
+      "memory_bytes": 1073741824,
+      "original_assertions_required": true,
+      "historical_dimension_fields": 6
+    }
+  ],
+  "source_review_limits": "Mechanical packaging and complete proof/program preservation checked. Original full scientific review remains the original reviewer\u2019s work; this is not self-certification. Caps are source-cost planning estimates, subject to actual bounded supervisor failure preservation.",
+  "source_metadata_references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8159-author-canonical-draft-v2.json",
+      "sha256": "00e4993547f1fed3d9a43889661ce46c70948fcfeffdb2bfd07f3d91979f2f1b"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8159-author-full-proof-map-v2.json",
+      "sha256": "1424fe2b5ddb76b1605b67c98087eb5291337c4f047d8ef43f50dacdbe0bef53"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8159-author-preservation-checks-v2.json",
+      "sha256": "8c9956a2027c943bf3283a3b0eba51379294d60d9723b63dadf6f41a88628e88"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8159-author-resource-plan-v2.json",
+      "sha256": "c9d811304f4e5413237f8ac028d8e67625641ce37fca8b485d0da351b8b15c73"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8159-author-input-discovery-v2.json",
+      "sha256": "066f8871c87acc0ad162d32e0cd31892ee8e97295ac402fe9f49da1fccfe2d25"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8159-author-note-corrections-v2.patch",
+      "sha256": "d04e64439767edff510528c097adffffcc236725b9fc0afa64c6ceccd09b7142"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8159-author-runtime-corrections-v1.patch",
+      "sha256": "8a188ab5d15c19c7dc3b7f00d10c33d2e7716dac19ec81b27151973aee3e198d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8159-author-resolution-corrections-v2.patch",
+      "sha256": "4fec56080ad85a8191b4cd4ebdbf3ad447a444417d68439ee6522c9b8b4c6de4"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8159-block27-import-recovery-v1.json",
+      "sha256": "d53fff78d69c66f110b72e809968af9f2a4ce35b87afbfffe8ca582b60a889da"
+    }
+  ],
+  "discovery_next": "After guarded FF, insert exactly nine additive owner helper entries in both maps, preserving currentmain; stage owned files; bind schema2 source/inputs with full transitive helper note reads and all current parent hashes; one cheap preflight then original reviewer exacttree confirmation before any execution.",
+  "no_mutations_outside_owned_untracked_source": true,
+  "no_primary_execution": true
+}

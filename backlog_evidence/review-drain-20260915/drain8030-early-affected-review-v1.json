@@ -1,0 +1,41 @@
+{
+  "status": "EARLY AFFECTED REVIEW COMPLETE; TWO SCOPE REPAIRS PENDING; NOT FINAL COLD",
+  "reviewer": "/root/review_8012",
+  "prepared_reference": "/private/tmp/review-drain-20260915/drain8030-author-prepared-v1.json",
+  "prepared_sha256": "047a23d36bb895b567319111bdedfb47ad148719c3f1df5c9103f0a30b65e739",
+  "source_hashes": {
+    "docs/GAUGE_WILSON_WEAK_WINDOW_QUANTITATIVE_BOUNDS_AND_HAAR_CONTACT_FDD_BOUNDED_THEOREM_NOTE_2026-09-07.md": "ea9c1aec1cefc30938c6fbe9f8e88564bf25c961080319971d2fb37ba7c01fef",
+    "scripts/gauge_wilson_uniform_weak_scaling_controls_2026_09_07.py": "a5bd37b25bb607390765714efad1f41a5cbcfba8446163becb43a9fd88186466",
+    "scripts/gauge_wilson_haar_contact_fdd_controls_2026_09_07.py": "7fc63dbba4190fbd34ae55482834cdf521c5521b4a4b8d07152a6cf6f79e009b"
+  },
+  "accepted_assessment": "Quantitative estimates withfullhypotheses andproof, actualHaarFDD inbothmeshconventions, Taylor/logconstants, exactmoments/skewsupplement andconditionalratio preservedsound. Originalmathematicalexclusion remainsvalid; proceduralnegativecertification explicitlydeferred, notdisproved or renamedpassingpositive.",
+  "proof_preservation": "All89exactarchive payloads decoded/hash/mode/blobchecked. EntireprimarycontactTaylor proof androotmoment/skewproof retainedlive; earlierfullnegativeproofs preservedexact. Bothscientificrunnerregions unchanged; ASTvalid.",
+  "findings": [
+    {
+      "id": "A1",
+      "path": "docs/GAUGE_WILSON_WEAK_WINDOW_QUANTITATIVE_BOUNDS_AND_HAAR_CONTACT_FDD_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "section": "5, second conditional consequence",
+      "text": "Equivalently, a demonstrably nonzero propagation speed bounded by this LR parameter could not coexist with a bounded gap ...",
+      "repair": "Explicitlydefer thisnoncoexistence certification also, orretaininterpretive sentence onlyinexactarchive. KeepvalidprecedingV>=V0=>Glowerinequality/currentquantitativemath; no mathematicalfalsehood asserted."
+    },
+    {
+      "id": "A2",
+      "path": "docs/GAUGE_WILSON_WEAK_WINDOW_QUANTITATIVE_BOUNDS_AND_HAAR_CONTACT_FDD_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "section": "No-Go Discipline Gate missing",
+      "repair": "Add honestN1\u2013N8DEFERRED applicability record. Nameactual inferencecontrols (uniformity, supportunion, degree, clock, extraactualgapupperpremise, contact/repeatedplaquette/FDD); do notcount as5independentfailedin-domainroutes orassertPASS. Statebothseparatedfieldandpropagationnoncoexistencecertificationdeferred."
+    }
+  ],
+  "resource_and_output_plan": {
+    "seconds_each": 180,
+    "process_tree_RSS_MiB_each": 180,
+    "totals": [
+      18,
+      13
+    ],
+    "counts": "Scaling18includes1resource;contact13scientific,separateresourceguard",
+    "output_generation_review": "Actualrunner_cache lexicaltokens observe scripts/docs inputancestors, notexistinglogs/runner-cache. NewJSONwrites there do notmutateobservedancestor entries. Earlier genericplaceholder suggestion unnecessary for thislayout; no placeholdersrequired.",
+    "capture_authorized_now": false
+  },
+  "branch_preservation_required": true,
+  "next": "Authorfixes thenstagedcurrentparent/helpermapping/API/preflight andsame-sessionformal cold. Noprimaryexecution."
+}

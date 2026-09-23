@@ -1,0 +1,96 @@
+--- docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md v2
++++ docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md v3
+@@ -172,7 +172,7 @@
+ a nonzero positive-degree leading coefficient, so ||T^n v|| tends to infinity.
+ If a probability measure mu is invariant under T, then for every ball B_R,
+ 
+-    mu(B_R)=integral 1B_R (`T^n v`) mu(dv).
++    mu(B_R)=integral 1[B_R](T^n v) mu(dv).
+ 
+ Dominated convergence gives mu(B_R)=mu(B_R intersect Fix(T)). Increasing
+ R to infinity proves mu(Fix(T))=1. No moment, density or bounded-support
+--- docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md v2
++++ docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md v3
+@@ -237,7 +237,7 @@
+     eta=2lambda sqrt(sum_i |e^(ik_i)-e^(i theta)|^2).
+ 
+ Only left creation changes, so ||H(k)-H(k0)||<=eta. Put delta=delta_N
+-and Q=1_E_pol,E_pol+delta/2 (`H(k`)). For P=1_(M<=N), the spectra of
++and Q=1_[E_pol,E_pol+delta/2](H(k)). For P=1_(M<=N), the spectra of
+ H(k0)|_P and H(k)|_Q are separated by at least delta/2. The Sylvester
+ identity for X=PQ has right side -P[H(k)-H(k0)]Q. Its convergent Laplace
+ integral gives ||PQ||<=2eta/delta. Consequently for psi=Ppsi,
+--- docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md v2
++++ docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md v3
+@@ -202,7 +202,7 @@
+ where V_Delta=N^(-1)sum n_i Delta_i0^2. The initial photon has weight1
+ and C=0. Substitution into(8) gives
+ 
+- W = 2N/(N+4) (`S0^2`)_tf [z^-1-z^(-(2+4/N))]
++ W = [2N/(N+4)](S0^2)_tf [z^-1-z^(-(2+4/N))]
+        +2(V_Delta)_tf z^-1 int_1^z t^(-4/N)dt
+        +O(C^3).                                   (9)
+ 
+--- docs/SUPPLIED_QUARTET_LEADING_DECAY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md v2
++++ docs/SUPPLIED_QUARTET_LEADING_DECAY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md v3
+@@ -99,7 +99,7 @@
+  a_m=m^T Gm-1, b_m=m dot Gp-E(p),
+  k_m=2b_m/a_m, q=p-k_m m, E_q=E(p)-k_m,
+  n_p=Vp/E(p), K_m=V(I-mm^T)V,
+- T_m=tr K_m/2 (`E_q-Vq dot n_p`)+(Vq)^T K_m n_p.
++ T_m=[tr K_m/2](E_q-Vq dot n_p)+(Vq)^T K_m n_p.
+ 
+ Then, with the two photon polarizations summed,
+ 
+@@ -121,7 +121,7 @@
+ angle cosine between p and k. Energy conservation gives
+ 
+  q=p-k/v,
+- c=1/v+k/(2p) (`1-1/v^2`),
++ c=1/v+[k/(2p)](1-1/v^2),
+  0<k<2pv/(v+1).                                  (3)
+ 
+ With P_n=(I+sigma dot n)/2, the transverse spin sum is
+--- docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md v2
++++ docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md v3
+@@ -131,7 +131,7 @@
+       [pi^2 sqrt(det G_nu) (R^T G_nu^-1 R)^2] + O(|R|^-5).          (1)
+ 
+ The normalization and sign follow directly from Delta_p |p|=2/|p| and
+-FT1/|p| (`R`)=1/(2pi^2 |R|^2), hence FT[-|p|]=1/(pi^2 |R|^4) away R=0.
++FT[1/|p|](R)=1/(2pi^2 |R|^2), hence FT[-|p|]=1/(pi^2 |R|^4) away R=0.
+ Changing variables u=V p gives the stated anisotropic factor. A smooth cutoff
+ around each node changes the principal homogeneous transform only by a rapidly
+ decreasing term. For the remainder, a dyadic shell of radius r contributes at most
+--- scripts/tree_count_check_2026_09_15.py v2
++++ scripts/tree_count_check_2026_09_15.py v3
+@@ -84,8 +84,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: cubic cochain symbols and Gaussian derivative registers')
+-    print('per_site: finite support/grid fixtures')
+-    print('per_mode: finite Fourier grids and finite register degrees; no infinite-lattice execution')
+-    print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+-    print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
++    print('per_element: Exact degree-factorial weights, rational series bounds and cycle/path normalization identities.')
++    print('per_site: Not executed: labeled combinatorial vertices, not a spatial lattice.')
++    print('per_mode: Not executed: no Fourier or spectral computation.')
++    print('per_block: Pruefer words for n=2..7 and theta=0,1/2,3/4; sixteen rational coefficient bounds; alternating cycles/decorating paths for r=2..5.')
++    print('lattice_wide: Not executed: series estimates and their physical-scope limitation use the written proof.')
+--- scripts/review_harmonic_metric_check_2026_09_15.py v2
++++ scripts/review_harmonic_metric_check_2026_09_15.py v3
+@@ -60,8 +60,8 @@
+ if __name__ == '__main__':
+     print('TOTAL: PASS=1 FAIL=0')
+     print('Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON')
+-    print('per_element: integer cycle/harmonic metric or local matrix identities')
+-    print('per_site: finite periodic cycle coordinates and two-coordinate fixture')
+-    print('per_mode: finite sparse slow spectra and cutoff refinement, not cubic interacting phase')
+-    print('per_block: one complete companion family; imported helpers are shared implementation, not independent evidence')
+-    print('lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here')
++    print('per_element: Exact integer incidence, cycle-basis, plaquette and weighted harmonic-metric identities.')
++    print('per_site: Periodic cubic coordinate fixtures L=3,4,5.')
++    print('per_mode: Three harmonic directions and complete finite cycle-coordinate identities; no spectral solver or slow-spectrum/cutoff-refinement run.')
++    print('per_block: Three exact integer normalization fixtures with electric weights2,3,5.')
++    print('lattice_wide: Not executed: the all-L metric theorem relies on the written proof.')

@@ -1,0 +1,429 @@
+{
+  "runtime": [
+    {
+      "runner": "scripts/local_spectrum_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/quartet_metric_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/ground_cutoff_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/quadratic_coframe_check_2026_09_15.py",
+      "matches_independent_closure": false,
+      "missing": [
+        "docs/LOCAL_HALL_FREE_MIXED_WEYL_QUARTET_AND_COMMON_METRIC_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+      ],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/decay_check_2026_09_15.py",
+      "matches_independent_closure": false,
+      "missing": [
+        "docs/LOCAL_HALL_FREE_MIXED_WEYL_QUARTET_AND_COMMON_METRIC_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/NATIVE_WEYL_GAUGE_HALL_AND_CONE_FLOW_BOUNDED_THEOREM_NOTE_2026-09-13.md"
+      ],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/mixed_history_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/cyclic_equilibrium_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/cyclic_scaling_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/positive_generator_check_2026_09_15.py",
+      "matches_independent_closure": false,
+      "missing": [
+        "docs/EXACT_GAUSS_REDUCTION_AND_FIXED_VOLUME_WEAK_COUPLING_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/FINITE_INTEGER_LINK_WEAK_COUPLING_PAYLOAD_AND_MONOPOLE_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+      ],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/charged_ring_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/hybrid_curvature_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/hybrid_generator_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/integrated_rate_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/holonomy_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/slow_fast_check_2026_09_15.py",
+      "matches_independent_closure": false,
+      "missing": [
+        "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+      ],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/physical_probe_check_2026_09_15.py",
+      "matches_independent_closure": false,
+      "missing": [
+        "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+      ],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/matched_cone_check_2026_09_15.py",
+      "matches_independent_closure": false,
+      "missing": [
+        "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+        "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+      ],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/response_identity_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/visible_threshold_check_2026_09_15.py",
+      "matches_independent_closure": false,
+      "missing": [
+        "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md"
+      ],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/cofactor_cyclic_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/contact_register_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/cut_completion_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/determinant_exclusion_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/forest_interpolation_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/gaussian_cycle_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/graph_source_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/hard_core_cycle_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/operator_source_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/partition_exclusion_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/phase_energy_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/general_order_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/record_pair_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/fourier_gaussian_register_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/tree_count_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/algebra_naturality_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/inverse_corner_support_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/positive_auxiliary_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/native_motion_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/native_twist_check_2026_09_15.py",
+      "matches_independent_closure": false,
+      "missing": [
+        "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md",
+        "docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md"
+      ],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/polarized_word_check_2026_09_15.py",
+      "matches_independent_closure": true,
+      "missing": [],
+      "extra": [],
+      "all_hashes_match": true
+    },
+    {
+      "runner": "scripts/review_harmonic_metric_check_2026_09_15.py",
+      "matches_independent_closure": false,
+      "missing": [
+        "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md"
+      ],
+      "extra": [],
+      "all_hashes_match": true
+    }
+  ],
+  "current_main_parents": [
+    {
+      "path": "docs/CHARGED_FINITE_LINK_LOCAL_DYNAMICS_AND_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "eb2e9d2e5377af13af94df558d9ac4bf07e499ccae512444251be86bc305d8a4",
+      "same_as_draft_parent": true
+    },
+    {
+      "path": "docs/EXACT_GAUSS_REDUCTION_AND_FIXED_VOLUME_WEAK_COUPLING_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "4f9c085195ba1b769949dc121778b3012479bc28eb6e1108e81e7a6c1848ceba",
+      "same_as_draft_parent": true
+    },
+    {
+      "path": "docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "938df6cf9b527c050ff2aa79e55cca8d310bdaf2d129d50ef9b62d53993704a2",
+      "same_as_draft_parent": true
+    },
+    {
+      "path": "docs/FINITE_INTEGER_LINK_WEAK_COUPLING_PAYLOAD_AND_MONOPOLE_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "2a6d5c79513cb92334e64d780d5b8490b6f4e9b781ad24adaafc33e1288d6851",
+      "same_as_draft_parent": true
+    },
+    {
+      "path": "docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "e00414f51b7a7ece4a9f107092e92877a296c66282133f6d35c62939fc3ed268",
+      "same_as_draft_parent": true
+    },
+    {
+      "path": "docs/FORMATION_ORDER_COVARIANCE_AND_ISOTROPIC_BINARY_ORDER_BLIND_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "42cbbd5ceaea95533d670fe4f3e527f566cca4cb14b826b9d98cc1ab2168c008",
+      "same_as_draft_parent": true
+    },
+    {
+      "path": "docs/LOCAL_HALL_FREE_MIXED_WEYL_QUARTET_AND_COMMON_METRIC_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "9318215ebc71ad93aa9dbe8117f68122bfa3f6a3d2cc4967560d740d8ba2c6db",
+      "same_as_draft_parent": true
+    },
+    {
+      "path": "docs/NATIVE_DYNAMICAL_CYCLE_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md",
+      "sha256": "277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70",
+      "same_as_draft_parent": true
+    },
+    {
+      "path": "docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md",
+      "sha256": "5ab56a41ae9524c433a50ee79889f29bf33cab7059f88f7dccd2449f8b6bdb2f",
+      "same_as_draft_parent": true
+    },
+    {
+      "path": "docs/NATIVE_GLOBAL_CHARGE_CONNECTIVITY_AND_EXCHANGE_NOTE_2026-09-08.md",
+      "sha256": "e57d84de87b131384b2be7c6f33bedd41449cb5c36e37d8fab5c4751e57e55a5",
+      "same_as_draft_parent": true
+    },
+    {
+      "path": "docs/NATIVE_LOW_CHARGE_U1_DICTIONARY_NOTE_2026-09-08.md",
+      "sha256": "586b895c89eabe67c4ac6c93b5f83f9bfd9118483c4265a652f6f4e822b75583",
+      "same_as_draft_parent": true
+    },
+    {
+      "path": "docs/NATIVE_POSITIVE_WARD_SCALAR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "c0360ad1ec65a78ca63b6d6cbd24dd387e455197c87e54441424550e145c5a9f",
+      "same_as_draft_parent": true
+    },
+    {
+      "path": "docs/NATIVE_RECORD_SUPPORT_PRESERVING_PRIORITY_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "01b1d213957dc1c85a520cabb6dab6ef7f6daf0b5631205f76d66d001861c8ca",
+      "same_as_draft_parent": true
+    },
+    {
+      "path": "docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md",
+      "sha256": "46d531814d55b1a9c4e00b10ddce9cee30a673e0f93d925d83242425c95f1cd9",
+      "same_as_draft_parent": true
+    },
+    {
+      "path": "docs/NATIVE_STAR_INFRARED_SPECTRAL_DOMINANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "d6c7c21b65e36beecd1293a5782902019d214a782297137aa8e437ef3479ba9c",
+      "same_as_draft_parent": true
+    },
+    {
+      "path": "docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md",
+      "sha256": "1557d48a8e3d5fcc17a01982484bffa6f27e0be16a42c88062eadb455dada226",
+      "same_as_draft_parent": true
+    },
+    {
+      "path": "docs/NATIVE_THIRD_ORDER_STAR_VERTEX_NOTE_2026-09-08.md",
+      "sha256": "c3ca9084907eab9f220886bd9e5d9c35654b0f27009d0cbbfb973ec30a8445e1",
+      "same_as_draft_parent": true
+    },
+    {
+      "path": "docs/NATIVE_UNIFORM_CUBIC_FLUX_DEFECT_STIFFNESS_NOTE_2026-09-08.md",
+      "sha256": "787948c0e58c794371fc0839d99a9eae15f49abed523b0eba9b001d010578ada",
+      "same_as_draft_parent": true
+    },
+    {
+      "path": "docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md",
+      "sha256": "0c6c768b4fb0416067c5de3dd159596a0367e8c9c77c10f0c5700936ff6aa2f0",
+      "same_as_draft_parent": true
+    },
+    {
+      "path": "docs/NATIVE_WEAK_ELECTRIC_SPECTATOR_GAP_NOTE_2026-09-08.md",
+      "sha256": "0f0a62aff6c9841a42b4850f3e5e4b8c9c9f613d37d755ca8f74f05f60d52270",
+      "same_as_draft_parent": true
+    },
+    {
+      "path": "docs/NATIVE_WEYL_GAUGE_HALL_AND_CONE_FLOW_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "9a4e3ec1310fde85e4d5f34dd1af9b8999629df7b9988a7d54d040c0f8b7fb7d",
+      "same_as_draft_parent": true
+    },
+    {
+      "path": "docs/POSITIVE_FINITE_CYCLIC_GAUGE_HISTORIES_AND_LOCAL_CHARGED_ROTOR_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "sha256": "41d6b505e1afa88345a92caf3f33b4f0021101c30bb6ec9e23daa818204525f5",
+      "same_as_draft_parent": true
+    }
+  ]
+}

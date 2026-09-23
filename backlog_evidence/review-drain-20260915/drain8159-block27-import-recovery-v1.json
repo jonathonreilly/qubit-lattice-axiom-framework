@@ -1,0 +1,13 @@
+{
+  "role": "complete actual mathematical import to be reproduced as full Block2 owned appendix",
+  "original_commit": "e3fc0b7707dce894ef98e7981a9feaf6041708f8",
+  "original_path": ".claude/science/physics-loops/toe-phase-selection-20260914/BLOCK27_ALL_COMPONENT_MIXED_COEFFICIENT.md",
+  "mode": "100644",
+  "blob": "7447f92da36367b135b2b761c02b91cf3980cfd7",
+  "sha256": "7a0a953deb6b02a4b4c2f78a941013d30a61ad61ef6e5c0c278489c149c1c647",
+  "archive": "docs/work_history/review_loop/pr8159/imports/BLOCK27_ALL_COMPONENT_MIXED_COEFFICIENT.md.gz",
+  "archive_sha256": "9e2bfe6c1d29cbf09805922f3a13e3ea33da0960883bae568b19033383079002",
+  "complete_author_read": true,
+  "canonical_destination": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+  "scope": "Anchored moments, integer fillings, support graph, defined signed mixed functional and coefficient limit; no full-pressure or all-order activity claim."
+}

@@ -1,0 +1,11 @@
+{
+  "prior_receipt": "closure-8162.json",
+  "verified": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-23T00:33:37Z",
+    "headRefName": "physics-loop/toe-continuous-time-bridge-20260916",
+    "headRefOid": "0f02dc5127416f347e231bbd8aa7c2a8b58a02fa",
+    "number": 8162,
+    "state": "CLOSED"
+  }
+}

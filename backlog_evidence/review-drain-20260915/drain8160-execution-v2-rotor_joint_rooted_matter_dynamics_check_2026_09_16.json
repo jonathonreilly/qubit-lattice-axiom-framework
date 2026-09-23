@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/rotor_joint_rooted_matter_dynamics_check_2026_09_16.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "g=0.60: rooted residual=0.434465, t=1.4 error=0.155876\ng=0.40: rooted residual=0.292878, t=1.4 error=0.0892913\ng=0.25: rooted residual=0.184176, t=1.4 error=0.0515645\nper_element: executed \u2014 CAR signs, quadratic path term and residual decomposition\nper_site: executed \u2014 four-site charged ring in a 36-configuration fixed-number sector\nper_mode: executed \u2014 three finite flux cutoffs with original 1e-16 tail threshold\nper_block: executed \u2014 bounded matter propagation at times0.7 and1.4 with sign discriminator\nlattice_wide: checked and not executed \u2014 uniform bounds and joint-limit/time arguments are written proofs; finite fixtures do not execute an infinite lattice\nTOTAL: PASS=33 FAIL=0\n",
+  "stderr": "",
+  "elapsed_sec": 0.6377878189086914,
+  "timeout_sec": 120,
+  "live_log": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/.in-progress/rotor_joint_rooted_matter_dynamics_check_2026_09_16.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/rotor_joint_rooted_matter_dynamics_check_2026_09_16.json",
+    "sha256": "b88ad480955cb3e403cdc79b2df1a960de45ed2048031da2f87016ad1226efbd"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 536870912,
+    "interval_sec": 0.02,
+    "root_pid": 50936,
+    "samples": 13,
+    "peak_tree_rss_bytes": 134234112,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8160-capture-v2.py",
+  "capture_script_sha256": "b9fc33718b65d21eea16b9b6f9d0be42a7b86999eb1c9a56f46fe72fe3699d6d"
+}

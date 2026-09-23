@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/rotor_joint_weyl_car_state_check_2026_09_16.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "g=0.60: Weyl error=0.0477977, wrong-sign error=0.583474\ng=0.40: Weyl error=0.0215688, wrong-sign error=0.598011\ng=0.25: Weyl error=0.00848626, wrong-sign error=0.605337\ng=0.16: Weyl error=0.00348531, wrong-sign error=0.608151\nL=8: local zero-mode ambiguity=0.25, global norm=1\nL=16: local zero-mode ambiguity=0.125, global norm=1\nL=32: local zero-mode ambiguity=0.0625, global norm=1\nL=64: local zero-mode ambiguity=0.03125, global norm=1\nper_element: executed \u2014 Weyl signs and nonprojection covariance discriminator\nper_site: executed \u2014 local versus global covariance on finite rings L=8,16,32,64\nper_mode: executed \u2014 single-rotor Fourier cutoffs and exact auxiliary zero momenta\nper_block: executed \u2014 ground and excited rotor vectors, two-band and four-state fixtures\nlattice_wide: checked and not executed \u2014 uniform bounds and joint-limit/time arguments are written proofs; finite fixtures do not execute an infinite lattice\nTOTAL: PASS=46 FAIL=0\n",
+  "stderr": "",
+  "elapsed_sec": 0.3167989253997803,
+  "timeout_sec": 120,
+  "live_log": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/.in-progress/rotor_joint_weyl_car_state_check_2026_09_16.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/rotor_joint_weyl_car_state_check_2026_09_16.json",
+    "sha256": "1bae7b7571e570b5eefbaa05c1f7a12bdcf8850f95fc2df1caeeb4d9cd8c6582"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 536870912,
+    "interval_sec": 0.02,
+    "root_pid": 50936,
+    "samples": 7,
+    "peak_tree_rss_bytes": 106889216,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8160-capture-v2.py",
+  "capture_script_sha256": "b9fc33718b65d21eea16b9b6f9d0be42a7b86999eb1c9a56f46fe72fe3699d6d"
+}

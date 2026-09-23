@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "f950bab266a2c2c82321b49d94e21f0f8d2bcf61",
+  "fetched_ref": "refs/review-loop/fetched/8163-b38ddb8dca464904821228598bed3a97",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/toe-temporal-fermion-resummation-20260916",
+    "headRefOid": "f950bab266a2c2c82321b49d94e21f0f8d2bcf61",
+    "isDraft": false,
+    "number": 8163,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

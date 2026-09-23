@@ -1,0 +1,134 @@
+{
+  "tree": "0c3edfb7ce70b3ecea925de6d0146496f57cf540",
+  "sources_verified": 117,
+  "cold_sources_unchanged": 103,
+  "dispositions_verified": 86,
+  "executions": [
+    {
+      "runner": "scripts/rotor_uniform_compact_response_check_2026_09_16.py",
+      "assertion_invocations": 62,
+      "elapsed_seconds": 0.24720096588134766,
+      "sampled_peak_rss_bytes": 96796672,
+      "receipt": {
+        "pr": "rotor_uniform_compact_response_check_2026_09_16",
+        "receipt": "/private/tmp/review-drain-20260915/drain8160-execution-v2-rotor_uniform_compact_response_check_2026_09_16.json",
+        "sha256": "e55c7ae3780789bd36a1241f9eff94a298ed81fd4901c3df221c6f8c4355b09e"
+      },
+      "cache_sha256": "5983530e0edb67f38860144a930aa92d2f0b7b9e1369528c201367fe79630729",
+      "raw": {
+        "path": "logs/runner-cache/rotor_uniform_compact_response_check_2026_09_16.json",
+        "sha256": "e29be601ffc2bb10fab998a77bc38cf59ec02403b3f8ed6c8459ae8a99652933"
+      },
+      "input_fingerprint": "a5b21ad594f9e7979dd202b7bfa7bbaa5a476e01faff1322b36395061a7c11e4",
+      "runtime_warning_present": false
+    },
+    {
+      "runner": "scripts/rotor_integer_gaussian_positive_square_check_2026_09_16.py",
+      "assertion_invocations": 37,
+      "elapsed_seconds": 0.5416350364685059,
+      "sampled_peak_rss_bytes": 137773056,
+      "receipt": {
+        "pr": "rotor_integer_gaussian_positive_square_check_2026_09_16",
+        "receipt": "/private/tmp/review-drain-20260915/drain8160-execution-v2-rotor_integer_gaussian_positive_square_check_2026_09_16.json",
+        "sha256": "7bec637ffd9901d52104b05794b26032df164e953fbfa1e9c73289de3234f5ab"
+      },
+      "cache_sha256": "45b1e5baa3be88d103fd8664b0e578c4bcf8a7a36322469f57de8330eb74ee43",
+      "raw": {
+        "path": "logs/runner-cache/rotor_integer_gaussian_positive_square_check_2026_09_16.json",
+        "sha256": "2ff363199e72233615a9f471537362b1425ccaaa438448de0d46c6bfa0ddba77"
+      },
+      "input_fingerprint": "9943b43fd7f3fdad73dd30897cdf8302ac287668c06ff4213a80f597d5c85026",
+      "runtime_warning_present": false
+    },
+    {
+      "runner": "scripts/rotor_tree_slater_dressing_check_2026_09_16.py",
+      "assertion_invocations": 348,
+      "elapsed_seconds": 0.13308310508728027,
+      "sampled_peak_rss_bytes": 82853888,
+      "receipt": {
+        "pr": "rotor_tree_slater_dressing_check_2026_09_16",
+        "receipt": "/private/tmp/review-drain-20260915/drain8160-execution-v2-rotor_tree_slater_dressing_check_2026_09_16.json",
+        "sha256": "5fb3875f046769e1fbee6f097b0ac36a70cbf40f0786860643e25b037eb056a6"
+      },
+      "cache_sha256": "403af5b4851348738d91d0801469c0874feb3e7f6a449be7296717ee6ad114c2",
+      "raw": {
+        "path": "logs/runner-cache/rotor_tree_slater_dressing_check_2026_09_16.json",
+        "sha256": "fbbacc5ad2965746066ae6bca4459f9ad237a60a92c06b4be5343135415fd410"
+      },
+      "input_fingerprint": "9943b43fd7f3fdad73dd30897cdf8302ac287668c06ff4213a80f597d5c85026",
+      "runtime_warning_present": true
+    },
+    {
+      "runner": "scripts/rotor_joint_characteristic_check_2026_09_16.py",
+      "assertion_invocations": 22,
+      "elapsed_seconds": 0.4826951026916504,
+      "sampled_peak_rss_bytes": 143310848,
+      "receipt": {
+        "pr": "rotor_joint_characteristic_check_2026_09_16",
+        "receipt": "/private/tmp/review-drain-20260915/drain8160-execution-v2-rotor_joint_characteristic_check_2026_09_16.json",
+        "sha256": "09c377e19c9dc29c29db9abd9d53e0af06b7c1deb777b701cc40214737eb8af7"
+      },
+      "cache_sha256": "76011c86b1fbaa57ef30a5e401048456c15dc6adbae5a5e517ef276548643e43",
+      "raw": {
+        "path": "logs/runner-cache/rotor_joint_characteristic_check_2026_09_16.json",
+        "sha256": "529900019a6e8bf792edd99081f5df78bb888ca237e834ec9d223af487a94cc4"
+      },
+      "input_fingerprint": "e4b7fc0994be22722bada7dcf4ad60102e968eb4c3f3f22dfdeb3be56a0fefec",
+      "runtime_warning_present": false
+    },
+    {
+      "runner": "scripts/rotor_joint_weyl_car_state_check_2026_09_16.py",
+      "assertion_invocations": 46,
+      "elapsed_seconds": 0.3167989253997803,
+      "sampled_peak_rss_bytes": 106889216,
+      "receipt": {
+        "pr": "rotor_joint_weyl_car_state_check_2026_09_16",
+        "receipt": "/private/tmp/review-drain-20260915/drain8160-execution-v2-rotor_joint_weyl_car_state_check_2026_09_16.json",
+        "sha256": "92c5613bf3b43b29e42f59c83156db8229cab7adc9e6173342a17be852f50022"
+      },
+      "cache_sha256": "ab608430b3c25581b5fc1464c8cd5d3e94c86f969d8ff35bf097779687be1b45",
+      "raw": {
+        "path": "logs/runner-cache/rotor_joint_weyl_car_state_check_2026_09_16.json",
+        "sha256": "1bae7b7571e570b5eefbaa05c1f7a12bdcf8850f95fc2df1caeeb4d9cd8c6582"
+      },
+      "input_fingerprint": "33489ccaae08c96ede32d5213540d52bdd64a8451149e09fbb7721d207bfcedd",
+      "runtime_warning_present": false
+    },
+    {
+      "runner": "scripts/rotor_joint_gauge_propagation_check_2026_09_16.py",
+      "assertion_invocations": 17776,
+      "elapsed_seconds": 0.6660962104797363,
+      "sampled_peak_rss_bytes": 127074304,
+      "receipt": {
+        "pr": "rotor_joint_gauge_propagation_check_2026_09_16",
+        "receipt": "/private/tmp/review-drain-20260915/drain8160-execution-v2-rotor_joint_gauge_propagation_check_2026_09_16.json",
+        "sha256": "38d58a597eeaf93b8f98b76dc8dfef7cd8259a544cd6e26a4ad3627a08ec771b"
+      },
+      "cache_sha256": "8101bb0b36ece1e72cb998c4b23e66ad89a2055b4b7236523c9b59d0959c688d",
+      "raw": {
+        "path": "logs/runner-cache/rotor_joint_gauge_propagation_check_2026_09_16.json",
+        "sha256": "5e06bebb06f5cbad0f86948ca309d74583122b55d9f42159a3c1ba79293f94ce"
+      },
+      "input_fingerprint": "4e8a079569e0143bd971f084a38239fc8c47733e080d67d8e6b5890bf0302f13",
+      "runtime_warning_present": false
+    },
+    {
+      "runner": "scripts/rotor_joint_rooted_matter_dynamics_check_2026_09_16.py",
+      "assertion_invocations": 33,
+      "elapsed_seconds": 0.6377878189086914,
+      "sampled_peak_rss_bytes": 134234112,
+      "receipt": {
+        "pr": "rotor_joint_rooted_matter_dynamics_check_2026_09_16",
+        "receipt": "/private/tmp/review-drain-20260915/drain8160-execution-v2-rotor_joint_rooted_matter_dynamics_check_2026_09_16.json",
+        "sha256": "ddae3357b83760fb631e9f16e03c98e54f7ac25eb4da310cf1f2ca39eeec58f9"
+      },
+      "cache_sha256": "593b9900f6879fd45026cd93cff62b877a6a4837e9b8f0e9077b8fa5e7bcd69f",
+      "raw": {
+        "path": "logs/runner-cache/rotor_joint_rooted_matter_dynamics_check_2026_09_16.json",
+        "sha256": "b88ad480955cb3e403cdc79b2df1a960de45ed2048031da2f87016ad1226efbd"
+      },
+      "input_fingerprint": "3063e87f184d4aaa57aa3f9d14a3dd938734e330878ce12827f008f973f7c813",
+      "runtime_warning_present": false
+    }
+  ]
+}

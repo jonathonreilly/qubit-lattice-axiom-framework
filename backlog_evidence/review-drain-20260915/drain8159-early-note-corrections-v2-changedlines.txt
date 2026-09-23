@@ -1,0 +1,176 @@
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_BOUNDED_RATE_ALTERNATIVE.md
++++ docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_CURVATURE_TEST_DESIGN.md
++++ docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_INTEGRATED_IDENTITIES_AND_RATE_MOMENTS.md
++++ docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-3
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_POINTWISE_CURVATURE_WITNESS.md
++++ docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-4
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_POSITIVE_HYBRID_GENERATOR.md
++++ docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-5
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_ASSUMPTIONS_AND_ROUTE_REFRAME.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_COFACTOR_CYCLIC_REALIZATIONS.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_COMPATIBLE_LOOP_QUADRATIC_LIMIT.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-3
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_CONTACT_REGISTER_SUM.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-4
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_DETERMINANT_EXCLUSION_AND_LOCAL_DERIVATIVES.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-5
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_FRONTIER_REASSESSMENT.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-6
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_GAUSSIAN_DRESSED_CYCLE_SOURCE_SUM.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-7
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_GRAPH_HOLDER_SOURCE_REMAINDER.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-8
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_HARD_CORE_GAUSSIAN_CYCLE_SOURCE_SUM.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-9
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_MACROSCOPIC_COMPONENT_SOURCE_BOUND.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-10
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_ORDER_GROWTH_AND_SUMMATION_OBLIGATION.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-11
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_PHASE_PRESERVING_FOREST_INTERPOLATION.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-12
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_RANDOM_PARTITION_EXCLUSION_INTERPOLATION.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-13
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_SIGNED_SINE_OPERATOR_AND_CYCLES.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-14
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_STABLE_CUT_COMPLETION_ALL_FIXED_ORDERS.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-15
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_TWO_ROOT_PHASE_ENERGY_BOUND.md
++++ docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-16
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK3_FULL_DOMAIN_RECORD_MODEL_PAIR.md
++++ docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK3_GENERAL_ALPHABET_ORDER_INDEPENDENCE.md
++++ docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK3_NO_GO_DISCIPLINE_CHECKLIST.md
++++ docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-3
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK4_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS.md
++++ docs/CUBIC_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK4_TREE_COUNT_AND_DECORATED_CYCLE_NORMALIZATION.md
++++ docs/CUBIC_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK5_CONTINUOUS_AND_BOREL_KERNEL_SUPPORT.md
++++ docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK5_FULL_ALGEBRA_NATURALITY_AND_CENTRAL_SUPPORT.md
++++ docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+-    mu(B_R)=integral 1[B_R](T^n v) mu(dv).
++    mu(B_R)=integral 1B_R (`T^n v`) mu(dv).
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK5_RECORD_GENERATED_GAUSSIAN_KERNEL.md
++++ docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-3
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK5_SCOPE_AND_NO_GO_REVIEW.md
++++ docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-4
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK6_PLANAR_LOOP_AND_QUADRATIC_REGULATOR_TEST.md
++++ docs/POSITIVE_AUXILIARY_CURRENT_LAW_AND_REGULATOR_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK6_POSITIVE_AUXILIARY_CURRENT_REPRESENTATION.md
++++ docs/POSITIVE_AUXILIARY_CURRENT_LAW_AND_REGULATOR_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK6_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/POSITIVE_AUXILIARY_CURRENT_LAW_AND_REGULATOR_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-3
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK7_NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT.md
++++ docs/NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK8_NATIVE_TWISTS_AND_WINDING_CONDUCTANCE.md
++++ docs/FINITE_NATIVE_WINDING_CURVATURE_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+-See the committed [route and negative-claim review](BLOCK8_ROUTE_AND_NO_GO_REVIEW.md).
++See the committed route and negative-claim review (`BLOCK8_ROUTE_AND_NO_GO_REVIEW.md`).
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK8_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/FINITE_NATIVE_WINDING_CURVATURE_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+-[the twist derivation](BLOCK8_NATIVE_TWISTS_AND_WINDING_CONDUCTANCE.md).
++the twist derivation (`BLOCK8_NATIVE_TWISTS_AND_WINDING_CONDUCTANCE.md`).
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK9_POLARIZED_CHARGED_SECTOR_AND_FLAT_THRESHOLD.md
++++ docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+-See [the N1-N8 scope review](BLOCK9_ROUTE_AND_NO_GO_REVIEW.md).
++See the N1-N8 scope review (`BLOCK9_ROUTE_AND_NO_GO_REVIEW.md`).
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK9_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+-Read with [the word-sector derivation](BLOCK9_POLARIZED_CHARGED_SECTOR_AND_FLAT_THRESHOLD.md).
++Read with the word-sector derivation (`BLOCK9_POLARIZED_CHARGED_SECTOR_AND_FLAT_THRESHOLD.md`).
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK10_LOCAL_SOURCE_SPECTRA_AND_DARK_THRESHOLD.md
++++ docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+-This extends [the exact polarized word sector](BLOCK9_POLARIZED_CHARGED_SECTOR_AND_FLAT_THRESHOLD.md)
++This extends the exact polarized word sector (`BLOCK9_POLARIZED_CHARGED_SECTOR_AND_FLAT_THRESHOLD.md`)
+-and Q=1_[E_pol,E_pol+delta/2](H(k)). For P=1_(M<=N), the spectra of
++and Q=1_E_pol,E_pol+delta/2 (`H(k`)). For P=1_(M<=N), the spectra of
+-See [the N1-N8 review](BLOCK10_ROUTE_AND_NO_GO_REVIEW.md).
++See the N1-N8 review (`BLOCK10_ROUTE_AND_NO_GO_REVIEW.md`).
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK10_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+-Companion to [the exact source derivation](BLOCK10_LOCAL_SOURCE_SPECTRA_AND_DARK_THRESHOLD.md).
++Companion to the exact source derivation (`BLOCK10_LOCAL_SOURCE_SPECTRA_AND_DARK_THRESHOLD.md`).
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK11_QUARTET_METRIC_FLOW_AND_POLARIZATION.md
++++ docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+- W = [2N/(N+4)](S0^2)_tf [z^-1-z^(-(2+4/N))]
++ W = 2N/(N+4) (`S0^2`)_tf [z^-1-z^(-(2+4/N))]
+-See [the N1-N8 scope review](BLOCK11_ROUTE_AND_NO_GO_REVIEW.md).
++See the N1-N8 scope review (`BLOCK11_ROUTE_AND_NO_GO_REVIEW.md`).
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK11_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+-Read with [the formal derivation](BLOCK11_QUARTET_METRIC_FLOW_AND_POLARIZATION.md).
++Read with the formal derivation (`BLOCK11_QUARTET_METRIC_FLOW_AND_POLARIZATION.md`).
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK12_GROUND_STATE_CUTOFF_COMPACTNESS.md
++++ docs/FIXED_COUPLING_ROTOR_GROUND_CUTOFF_COMPACTNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+-See the personal [N1-N8 review](BLOCK12_ROUTE_AND_NO_GO_REVIEW.md).
++See the personal N1-N8 review (`BLOCK12_ROUTE_AND_NO_GO_REVIEW.md`).
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK12_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/FIXED_COUPLING_ROTOR_GROUND_CUTOFF_COMPACTNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK13_QUARTET_QUADRATIC_BACKREACTION.md
++++ docs/SUPPLIED_QUARTET_QUADRATIC_BACKREACTION_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+-is inferred. See the [personal N1-N8 review](BLOCK13_ROUTE_AND_NO_GO_REVIEW.md).
++is inferred. See the personal N1-N8 review (`BLOCK13_ROUTE_AND_NO_GO_REVIEW.md`).
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK13_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/SUPPLIED_QUARTET_QUADRATIC_BACKREACTION_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK14_QUARTET_DECAY_AND_CONE_STABILITY.md
++++ docs/SUPPLIED_QUARTET_LEADING_DECAY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+- T_m=[tr K_m/2](E_q-Vq dot n_p)+(Vq)^T K_m n_p.
++ T_m=tr K_m/2 (`E_q-Vq dot n_p`)+(Vq)^T K_m n_p.
+- c=1/v+[k/(2p)](1-1/v^2),
++ c=1/v+k/(2p) (`1-1/v^2`),
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK14_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/SUPPLIED_QUARTET_LEADING_DECAY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK15_MIXED_HISTORY_BOUNDEDNESS_AND_SIXTH_POLE.md
++++ docs/NATIVE_MIXED_SIXTH_ORDER_COEFFICIENT_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK15_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/NATIVE_MIXED_SIXTH_ORDER_COEFFICIENT_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK16_CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT.md
++++ docs/CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK16_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK17_CYCLIC_WEAK_COUPLING_SPECTRAL_LIMITS.md
++++ docs/FINITE_GRAPH_CYCLIC_WEAK_COUPLING_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK17_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/FINITE_GRAPH_CYCLIC_WEAK_COUPLING_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK18_POSITIVE_ELECTRIC_GENERATOR_ACCURACY.md
++++ docs/POSITIVE_ELECTRIC_GENERATOR_CONE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK18_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/POSITIVE_ELECTRIC_GENERATOR_CONE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK19_CHARGED_RING_SLOW_SPECTRUM.md
++++ docs/CHARGED_RING_SLOW_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK19_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/CHARGED_RING_SLOW_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK20_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK20_WEYL_HOLONOMY_CASIMIR_SELECTION.md
++++ docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+-FT[1/|p|](R)=1/(2pi^2 |R|^2), hence FT[-|p|]=1/(pi^2 |R|^4) away R=0.
++FT1/|p| (`R`)=1/(2pi^2 |R|^2), hence FT[-|p|]=1/(pi^2 |R|^4) away R=0.
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK21_FIXED_BOX_SLOW_HOLONOMY_THEOREM.md
++++ docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK21_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/REVIEW_PERIODIC_HARMONIC_METRIC.md
++++ docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-3
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK22_ITERATED_PHYSICAL_MAXWELL_MATTER_STATE.md
++++ docs/ITERATED_LOCAL_MAXWELL_MATTER_STATE_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK22_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/ITERATED_LOCAL_MAXWELL_MATTER_STATE_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK23_MATCHED_FREE_CONE_WITH_POSITIVE_WEIGHTS.md
++++ docs/SUPPLIED_MATCHED_FREE_CONE_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK23_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/SUPPLIED_MATCHED_FREE_CONE_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK24_EXACT_RESPONSE_IDENTITIES_AND_PHASE_TEST.md
++++ docs/EXACT_GAUGE_WARD_RESPONSE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK24_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/EXACT_GAUGE_WARD_RESPONSE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK25_ROUTE_AND_NO_GO_REVIEW.md
++++ docs/REAL_OVERLAP_LOCAL_SOURCE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-1
+--- .claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK25_VISIBLE_THRESHOLD_ON_REAL_OVERLAP_MOMENTA.md
++++ docs/REAL_OVERLAP_LOCAL_SOURCE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md#owned-argument-2

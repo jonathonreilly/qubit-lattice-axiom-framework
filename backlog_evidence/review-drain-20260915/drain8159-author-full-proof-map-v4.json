@@ -1,0 +1,648 @@
+[
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_BOUNDED_RATE_ALTERNATIVE.md",
+    "original_sha256": "a639062f7de8e28d219a017a4d24362b33d585313340fda037b2199c67d3047c",
+    "canonical_owner": "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-1",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "32f74af9c9cb030231a3158e7b20ac074628c2a64a1a116fe60cb69053334e11",
+    "canonical_owner_sha256": "58b714ec8df5a67efc65037caa1721178e1400c55d0bc743fd5a1227448ae542"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_CURVATURE_TEST_DESIGN.md",
+    "original_sha256": "c386868d87dbf4b22a477cd0815e4e158022f2a058956ad10980394f55be328a",
+    "canonical_owner": "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-2",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "72315d547b58430c84862b9981ebb40bafbc565fc71e8e32710d6fd54feb87fd",
+    "canonical_owner_sha256": "58b714ec8df5a67efc65037caa1721178e1400c55d0bc743fd5a1227448ae542"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_INTEGRATED_IDENTITIES_AND_RATE_MOMENTS.md",
+    "original_sha256": "b4f80bc6cf838f8cf619ae59702f026ae3f5398a7489e098fdbef93d23fa1724",
+    "canonical_owner": "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-3",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "9ddc5ff1fbce696a70fee766eec53198536791d8fc7f996648a48d6d279ffe4d",
+    "canonical_owner_sha256": "58b714ec8df5a67efc65037caa1721178e1400c55d0bc743fd5a1227448ae542"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_POINTWISE_CURVATURE_WITNESS.md",
+    "original_sha256": "d2048fd734c88c25c6a6e4a211e38d818016e12a56ff332167b27524753f45d3",
+    "canonical_owner": "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-4",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "486e8e53d063d29f729b1623b3866514b3d75a641061591aca69b115230c8c47",
+    "canonical_owner_sha256": "58b714ec8df5a67efc65037caa1721178e1400c55d0bc743fd5a1227448ae542"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK1_POSITIVE_HYBRID_GENERATOR.md",
+    "original_sha256": "2e7b7f7d142d2e6828becdcf82cb31456cba8f49feb1cd2d4dd9d58d89579535",
+    "canonical_owner": "docs/HYBRID_GENERATORS_INTEGRATED_RATES_AND_CURVATURE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-5",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "a366ce7f45a590980e1203156d2b5279b90737d6481884b179b4496b06de39d0",
+    "canonical_owner_sha256": "58b714ec8df5a67efc65037caa1721178e1400c55d0bc743fd5a1227448ae542"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_ASSUMPTIONS_AND_ROUTE_REFRAME.md",
+    "original_sha256": "cb34321191569e48e6c58d568a1b77dc63fd421960cc94ff79ea6ed69f20f03e",
+    "canonical_owner": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-1",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "7a91ec12aafe19ec43ffddb867aa2baa23a6f07708f5ffa1c6979292d2712263",
+    "canonical_owner_sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_COFACTOR_CYCLIC_REALIZATIONS.md",
+    "original_sha256": "0e1056fc6324a5f791e682535b13acddff293817e0decf12b4ff92c4b29b847a",
+    "canonical_owner": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-2",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "78c15260053f7df654fe8480124f7c573f7f10c507da4e7c2aec359d656bc804",
+    "canonical_owner_sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_COMPATIBLE_LOOP_QUADRATIC_LIMIT.md",
+    "original_sha256": "af7c4c31b458592270de30f45a0eb959721c960e639aa3c6a0792604de63d5c6",
+    "canonical_owner": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-3",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "15895fa3fe83222d1c9939618f22c3201eec3e57ef278e585b6d1e25c7b51b8b",
+    "canonical_owner_sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_CONTACT_REGISTER_SUM.md",
+    "original_sha256": "56b56e185658ae4fceb179cc5c11edaf8ebdb04f6a3b8496d1f0dd5b9d833350",
+    "canonical_owner": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-4",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "372d4f4341b1b8f0a7a78529b8d868977c4cc8bcaecb06ea132fe6b36165afa8",
+    "canonical_owner_sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_DETERMINANT_EXCLUSION_AND_LOCAL_DERIVATIVES.md",
+    "original_sha256": "5f325c4e7248d324890c437496536592b9531b56638fe7844275482f36f5f99c",
+    "canonical_owner": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-5",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "10a670f0dd6ad162cced89784dbc8249e81cb9361f6f6777ae9d220fa1283732",
+    "canonical_owner_sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_FRONTIER_REASSESSMENT.md",
+    "original_sha256": "15a3f41bc47fb223f9042fde7459a497122ac6e190886f1ff2b51beaf7bd4861",
+    "canonical_owner": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-6",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "bab4a822af310a37d1969eebbfe841ff79375e0bf907d67385fa091ac48d437f",
+    "canonical_owner_sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_GAUSSIAN_DRESSED_CYCLE_SOURCE_SUM.md",
+    "original_sha256": "367baafcb812f1ce37f88135d75f0084266cb7d63efa2d146bed581da1cf8a98",
+    "canonical_owner": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-7",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "3f9b9c001cc125193a6dfd266add0a0c3f79adffc0e1665024436a574d5d30ff",
+    "canonical_owner_sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_GRAPH_HOLDER_SOURCE_REMAINDER.md",
+    "original_sha256": "41c82b14a0f157dd022b48935a86e8f81d81b5e5cb9dfa6bdfa4748df68a80a7",
+    "canonical_owner": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-8",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "983482c1f51384bd7157b4273505030553caddfa913ae6c480099052adaf7966",
+    "canonical_owner_sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_HARD_CORE_GAUSSIAN_CYCLE_SOURCE_SUM.md",
+    "original_sha256": "5b1b49c2262d447c74970a97cb55f51230ecd8ad4d30620a523fd9b1f6bc0f3e",
+    "canonical_owner": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-9",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "3a2203dbfec9cb4ea3dbadbf477eab4ad7dc1e3ddce8bc7501a060f684d09e0c",
+    "canonical_owner_sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_MACROSCOPIC_COMPONENT_SOURCE_BOUND.md",
+    "original_sha256": "f20f3ebf5277c2f31667c9c261e9be14fc4839fe04b17f5fcf70e3e874effa1d",
+    "canonical_owner": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-10",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "551164ede9ff1c20c92053b4cd4f574c9fca92ad0f7aacad029de02178b224d2",
+    "canonical_owner_sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_ORDER_GROWTH_AND_SUMMATION_OBLIGATION.md",
+    "original_sha256": "60b089f85bc330bbd6b2d5510526677028a7e66c8087a68201307488dafe3e04",
+    "canonical_owner": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-11",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "52cfe8958c107958de9d7d5a1f8ab5ea0b5fec51a7da07fd0463e3be5819afab",
+    "canonical_owner_sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_PHASE_PRESERVING_FOREST_INTERPOLATION.md",
+    "original_sha256": "7f8d7ede6a11e546fe33f32ca96812037d1fd4781e2cd375e703a5d2ee3cbeb7",
+    "canonical_owner": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-12",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "3675a59f333ffbe262899e4e4cc67f9a5451c0b30f459a6aa39d811deaee9c91",
+    "canonical_owner_sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_RANDOM_PARTITION_EXCLUSION_INTERPOLATION.md",
+    "original_sha256": "93044ba5cc3c7421c72627c3f27ea9790283616d17a82f75aad51e1493025dbc",
+    "canonical_owner": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-13",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "2a1e26d5294f6374e71d03ae004ac25c795b4a19da3a40f177a42c4ddf263a91",
+    "canonical_owner_sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_SIGNED_SINE_OPERATOR_AND_CYCLES.md",
+    "original_sha256": "ec3961beb43a5b87d3beffd9d1289a3468a95efc5869866f5e8bf1fa7f527a6a",
+    "canonical_owner": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-14",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "0c4d25d7aa1a025914eda7f7f5d342fde243389637d2d0b3d3e3c2e70ad85c5c",
+    "canonical_owner_sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_STABLE_CUT_COMPLETION_ALL_FIXED_ORDERS.md",
+    "original_sha256": "2923d79bd6147cc7fcbb91136658c35b93003ff85356211145df6f25a2538afd",
+    "canonical_owner": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-15",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "fe9f7a15c9335ba96a595a53b7cb4a556c40072429f9650c39f34dcafe8dc42f",
+    "canonical_owner_sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK2_TWO_ROOT_PHASE_ENERGY_BOUND.md",
+    "original_sha256": "eedd28d81fb1ee53f9c6cd438b4d73468389ae861c90f49f1c2d364445691165",
+    "canonical_owner": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-16",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "aaeb7901f08c76b85b084ae62e0e03be236f5ad917440e270b699ab0e97f48e9",
+    "canonical_owner_sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK3_FULL_DOMAIN_RECORD_MODEL_PAIR.md",
+    "original_sha256": "98bbc343a8a2a9c12c667f43fc648288388f4b6f4a69c7567817c955604579da",
+    "canonical_owner": "docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-1",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "275109ca1118b50958354bf746cdf005558269059372297f1912da706d6d257d",
+    "canonical_owner_sha256": "750bdd27065ef957228c7316996d6a9cfcb5af19a5407309e532e9c1edc6fce0"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK3_GENERAL_ALPHABET_ORDER_INDEPENDENCE.md",
+    "original_sha256": "09316b9328d0d9027a5d3573a85d8977021c619c15296607e6a371e078b55824",
+    "canonical_owner": "docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-2",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "c5ff21288e949528a11c8a8cc61607e23553711baae7aa910d11d1d2d8ec224f",
+    "canonical_owner_sha256": "750bdd27065ef957228c7316996d6a9cfcb5af19a5407309e532e9c1edc6fce0"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK3_NO_GO_DISCIPLINE_CHECKLIST.md",
+    "original_sha256": "6f2d582a4f82106c9d06c4cc887e019758c7d50643fd2b35a05fc0416d259adf",
+    "canonical_owner": "docs/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-3",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "340ec0883be93741f6e1a9c06fbc968c80b7e3769c39f815a62851bef83ab378",
+    "canonical_owner_sha256": "750bdd27065ef957228c7316996d6a9cfcb5af19a5407309e532e9c1edc6fce0"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK4_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS.md",
+    "original_sha256": "ad0c667546fd02f159ce668981af1ac74e683b92bb4e389d6f2c9d3a035b8126",
+    "canonical_owner": "docs/CUBIC_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-1",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "a4c0e74c9891b5390deb5ece9ae5701991123338d2d0ca83fd7f11f9d222cac2",
+    "canonical_owner_sha256": "7d446318b8dbc204b2c1cef233f901078cdd6829bb325db2cb7e0100633fb8ca"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK4_TREE_COUNT_AND_DECORATED_CYCLE_NORMALIZATION.md",
+    "original_sha256": "6b6d61addfaa4047d93f300c0063b326055763bbb2c6c596ad633899248ef66b",
+    "canonical_owner": "docs/CUBIC_FOURIER_ENERGY_AND_GAUSSIAN_REGISTERS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-2",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "561171885d63752de8a7dd8e8992ae54655e75432543f7b4b3fcf56367418459",
+    "canonical_owner_sha256": "7d446318b8dbc204b2c1cef233f901078cdd6829bb325db2cb7e0100633fb8ca"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK5_CONTINUOUS_AND_BOREL_KERNEL_SUPPORT.md",
+    "original_sha256": "10b872adcd85e72cb4b81e5e046ae007a12b2f46e2aeefbd8bfd8ded34b5900e",
+    "canonical_owner": "docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-1",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "e2391fa15d0fd4b6a016d07c9d09fb877fbe376bef96f49a76e9e77837884f99",
+    "canonical_owner_sha256": "6c2affb5dde329a00bb495bf3ddeefb8a6bcdbf187f1e32f991033a3a4b3a236"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK5_FULL_ALGEBRA_NATURALITY_AND_CENTRAL_SUPPORT.md",
+    "original_sha256": "33d3137c879536034245e39668001ea040b2531aed5849e0cddac5472956dbdf",
+    "canonical_owner": "docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-2",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "0cfe33bb5cc963dd6e53dc5ff3c7aab47d7b899441ec4b44c725f52c6a5709ec",
+    "canonical_owner_sha256": "6c2affb5dde329a00bb495bf3ddeefb8a6bcdbf187f1e32f991033a3a4b3a236"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK5_RECORD_GENERATED_GAUSSIAN_KERNEL.md",
+    "original_sha256": "22faf1ff221176d1a0f0c97da731f26866223439e184a0fa16553d4c8ef04e2e",
+    "canonical_owner": "docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-3",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "d0fc4c73da0f553142bdab278538ce8af2ecc36913916ba3b39a3c8be928ad75",
+    "canonical_owner_sha256": "6c2affb5dde329a00bb495bf3ddeefb8a6bcdbf187f1e32f991033a3a4b3a236"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK5_SCOPE_AND_NO_GO_REVIEW.md",
+    "original_sha256": "c953a423fc2fc5eb63e4a7583d6f4874840c705aef99f863f32efd95aa0f5698",
+    "canonical_owner": "docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-4",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "87a707b84a4f615d3aa697a3413c10f5f86405b6f1366df458b21c88552c08e8",
+    "canonical_owner_sha256": "6c2affb5dde329a00bb495bf3ddeefb8a6bcdbf187f1e32f991033a3a4b3a236"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK6_PLANAR_LOOP_AND_QUADRATIC_REGULATOR_TEST.md",
+    "original_sha256": "6c78af85c320beabfa182f7aa81c14eb00ebc0b2cc6e837c6bc692c249078fe2",
+    "canonical_owner": "docs/POSITIVE_AUXILIARY_CURRENT_LAW_AND_REGULATOR_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-1",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "582e551535e184e2a131dc695f4abf4f068be8fc409debbb22235248d635ed38",
+    "canonical_owner_sha256": "94f3be3f568d3391a56d35ec98bb3dc8a0cdf1de38c36ab50eaffca8b44d75e9"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK6_POSITIVE_AUXILIARY_CURRENT_REPRESENTATION.md",
+    "original_sha256": "92efb24ac59edb39b9c44db1292ca7d08b51c86a5c140158c3341e6b6b89b7f5",
+    "canonical_owner": "docs/POSITIVE_AUXILIARY_CURRENT_LAW_AND_REGULATOR_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-2",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "3c2274e82880117321dca282ba283d94ea0ee36fa4894908b5c70dabb22c8d97",
+    "canonical_owner_sha256": "94f3be3f568d3391a56d35ec98bb3dc8a0cdf1de38c36ab50eaffca8b44d75e9"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK6_ROUTE_AND_NO_GO_REVIEW.md",
+    "original_sha256": "78d0122491c82aa978fafcbc689d16f94d40944e66ae45ca983ccda0edf135a5",
+    "canonical_owner": "docs/POSITIVE_AUXILIARY_CURRENT_LAW_AND_REGULATOR_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-3",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "496c42b40927ef434889cb2446a6086e912985d8c988e85080d5455961389517",
+    "canonical_owner_sha256": "94f3be3f568d3391a56d35ec98bb3dc8a0cdf1de38c36ab50eaffca8b44d75e9"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK7_NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT.md",
+    "original_sha256": "3ad0d8e593d6c471e315afa9de17e2dad1388a52a1d29800dc9e7c5c140942f6",
+    "canonical_owner": "docs/NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-1",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "25b3a755ab264a374f8f751c6f4b66c7bda1722c2556dee359604e7a876a63b6",
+    "canonical_owner_sha256": "69299818ff8e463e4a246044f4b160a7a22867e7205bcb55f56cdeb802149192"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK8_NATIVE_TWISTS_AND_WINDING_CONDUCTANCE.md",
+    "original_sha256": "858fabc0f01a50499f7a661236145696e57a0cc61b0ecd2fec5fc84c46ab4d03",
+    "canonical_owner": "docs/FINITE_NATIVE_WINDING_CURVATURE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-1",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "a2845fc45e979db353d5cbe5435003b4e89d39196c3b1efadee5feedb5ab1551",
+    "canonical_owner_sha256": "bfbbb45f3ec7ca59b0d32d9482f209d0da16098f1b4cafe39882d903077236e9"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK8_ROUTE_AND_NO_GO_REVIEW.md",
+    "original_sha256": "32ac1e5a4a88fe46daa5544259091aa0b80b9413fb951930415197e10e4b5417",
+    "canonical_owner": "docs/FINITE_NATIVE_WINDING_CURVATURE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-2",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "3f6c3aac3d5cb088609f896f34295daba2016cee9afb5b36be06d6e0d53c227f",
+    "canonical_owner_sha256": "bfbbb45f3ec7ca59b0d32d9482f209d0da16098f1b4cafe39882d903077236e9"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK9_POLARIZED_CHARGED_SECTOR_AND_FLAT_THRESHOLD.md",
+    "original_sha256": "feebc8e55721f08825e05cad1e6e243e81fdb9f049c1d18e7422707773b091c5",
+    "canonical_owner": "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-1",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "1763753e1b29ecbe748f13eac56b5efb8f0c7620448a57c8027b7399283e7578",
+    "canonical_owner_sha256": "5c4482c4a0531be707f64ffeb07b705659d6aa19478b3be2878929f5b39a794a"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK9_ROUTE_AND_NO_GO_REVIEW.md",
+    "original_sha256": "4589fa8ef04027a819dd1322258a85e1065ca352bc34e0cc8f812892e7e8b57d",
+    "canonical_owner": "docs/POLARIZED_WORD_CARRIER_AND_ESSENTIAL_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-2",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "b6cbe641149524e74995c519b2b8de9f252277f7aab3a84afedd505eea4a7f7d",
+    "canonical_owner_sha256": "5c4482c4a0531be707f64ffeb07b705659d6aa19478b3be2878929f5b39a794a"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK10_LOCAL_SOURCE_SPECTRA_AND_DARK_THRESHOLD.md",
+    "original_sha256": "19424f17dc8f76c223b53ddf729cb6fca83412f8dfb87fd5afc451a7da10d317",
+    "canonical_owner": "docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-1",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "010e1298f66cae771d41818375ea1df8b4cc4581edd72626f9576f20b0c4f815",
+    "canonical_owner_sha256": "a3a855d8f48556d991537d5bd5aefe2d9d9a9fd9a0b561311c2d2921ee9c07a1"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK10_ROUTE_AND_NO_GO_REVIEW.md",
+    "original_sha256": "0b86faaa03e20f63c150c07c81457788d73ff4f1be79d8098fa64b1520bcba65",
+    "canonical_owner": "docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-2",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "f9fedbef5e21c64d63709a19b9ea86bf7e0588a77ac549c66370c06efbfa3358",
+    "canonical_owner_sha256": "a3a855d8f48556d991537d5bd5aefe2d9d9a9fd9a0b561311c2d2921ee9c07a1"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK11_QUARTET_METRIC_FLOW_AND_POLARIZATION.md",
+    "original_sha256": "2e94b2852b71956822239767aa451b04f3251374545d9e9bf9164606c6c717c0",
+    "canonical_owner": "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-1",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "c0ce7419f5d779adff10e559deb2b9885d8dab3cea0f14ebd02104ac14c27a27",
+    "canonical_owner_sha256": "0d103102a710ebde79af54b2b63e811d2381abf80874c4a203eb76d04d2853af"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK11_ROUTE_AND_NO_GO_REVIEW.md",
+    "original_sha256": "0b56900fd5803c100f6ca8a365bfe3e0fcfd1bd9f1e32e2bb6783ac5515c5890",
+    "canonical_owner": "docs/SUPPLIED_QUARTET_LINEAR_METRIC_FLOW_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-2",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "7cdea713b19841fce2a23b55ba918e19dfda9a121538ffe60244def1eefc8200",
+    "canonical_owner_sha256": "0d103102a710ebde79af54b2b63e811d2381abf80874c4a203eb76d04d2853af"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK12_GROUND_STATE_CUTOFF_COMPACTNESS.md",
+    "original_sha256": "15c5caffb98556395b6a6aa2bbc4b794355a4914d9fa1b81e73e9fdeac649f6b",
+    "canonical_owner": "docs/FIXED_COUPLING_ROTOR_GROUND_CUTOFF_COMPACTNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-1",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "fa130db6629e0a12ce9f2023625808bd3de37a1da2c0fc7cd2cf87a1304f0d5d",
+    "canonical_owner_sha256": "fce8dfa118325552e93dec94089c9c76b3b5ed52e0c31f9742372297a47f97b4"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK12_ROUTE_AND_NO_GO_REVIEW.md",
+    "original_sha256": "b33ec2ad916518b2e5556fa7adee7d7ac9f5bd343276d7a7eb657320990834f1",
+    "canonical_owner": "docs/FIXED_COUPLING_ROTOR_GROUND_CUTOFF_COMPACTNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-2",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "1446f296968f984cfc64fad7a473ff55551d46745f96797852bd259cba7bf3a4",
+    "canonical_owner_sha256": "fce8dfa118325552e93dec94089c9c76b3b5ed52e0c31f9742372297a47f97b4"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK13_QUARTET_QUADRATIC_BACKREACTION.md",
+    "original_sha256": "3158c18451fef988b12c5ff6e9d463ee895748c8e67238626d24ede9df48bbe2",
+    "canonical_owner": "docs/SUPPLIED_QUARTET_QUADRATIC_BACKREACTION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-1",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "c674d7dd743104c12d5b91a8f183cf443cbb7a5039b364765b25624bb09701c6",
+    "canonical_owner_sha256": "3f5b18314e2d2aec6288db338bc157c2fbdbce5a7a4ced534179dc39de612f1a"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK13_ROUTE_AND_NO_GO_REVIEW.md",
+    "original_sha256": "d9f7562e83fd8d71bb0d8ca8bdbbb36dd80e7852527daae635ea2afcc1fe7539",
+    "canonical_owner": "docs/SUPPLIED_QUARTET_QUADRATIC_BACKREACTION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-2",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "2765f26e44b85e134cd564c1aebff7f648946926cbc2dfeb1f856cfa6610bdc5",
+    "canonical_owner_sha256": "3f5b18314e2d2aec6288db338bc157c2fbdbce5a7a4ced534179dc39de612f1a"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK14_QUARTET_DECAY_AND_CONE_STABILITY.md",
+    "original_sha256": "39f8bcb1dab63a3c0dcaab82efd39258d0f846f9c0aecf784fc92a4e52c20c4d",
+    "canonical_owner": "docs/SUPPLIED_QUARTET_LEADING_DECAY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-1",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "985ed59dc2e8579a175fbd1218d154a81a3f29ed6a9b68bb56a5c17c57432010",
+    "canonical_owner_sha256": "8979b78cb9939242eefccc2dfc321a0ff8ea63c61b4da07590b2941a68d7a61c"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK14_ROUTE_AND_NO_GO_REVIEW.md",
+    "original_sha256": "9ab6e2df6c4b952cd4820a6098a5f8fd78de0ffc9b3e213279f898eef31eac89",
+    "canonical_owner": "docs/SUPPLIED_QUARTET_LEADING_DECAY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-2",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "ec1b907564d0307611dcad25c94067ced586383bd488b27fbfc36c60c8783c7a",
+    "canonical_owner_sha256": "8979b78cb9939242eefccc2dfc321a0ff8ea63c61b4da07590b2941a68d7a61c"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK15_MIXED_HISTORY_BOUNDEDNESS_AND_SIXTH_POLE.md",
+    "original_sha256": "5c4619f904c5206e571e6e2241a73e191378fb20d376c0d9658a94ac12118528",
+    "canonical_owner": "docs/NATIVE_MIXED_SIXTH_ORDER_COEFFICIENT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-1",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "711bc8459c5f33331b62dde2af1e490d13bc7855bcf4a2fb320f216515437bad",
+    "canonical_owner_sha256": "6aa00d3bbba0927f92f1dbd4da52b83e0b15f21a5c03816c04bd7f4699f23392"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK15_ROUTE_AND_NO_GO_REVIEW.md",
+    "original_sha256": "f59587d36650768b63954cd22df68fd814c5478cb8271386d826c758e5f55f6a",
+    "canonical_owner": "docs/NATIVE_MIXED_SIXTH_ORDER_COEFFICIENT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-2",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "08a452c2521296840b4d7396cc96b5618c22fc9fa159ea78f918cee999c3652d",
+    "canonical_owner_sha256": "6aa00d3bbba0927f92f1dbd4da52b83e0b15f21a5c03816c04bd7f4699f23392"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK16_CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT.md",
+    "original_sha256": "1a94fed13d6f42c62828886c46966f1c397c70f792916afe73a2793722a3c323",
+    "canonical_owner": "docs/CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-1",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "ffe8584433a7279cca6db8d4910cc7c6f0a5bb16d15f8be712db60416a4f85bb",
+    "canonical_owner_sha256": "d13c0d208e8915fcf4c7398dcc144536f1305046a57cbe9245088bfd04f7bc2f"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK16_ROUTE_AND_NO_GO_REVIEW.md",
+    "original_sha256": "1d7541fdfb1e057736301edd05fa2e2603d6759641b17feb7e65ab3313090fde",
+    "canonical_owner": "docs/CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-2",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "d66fa09dfdba4e04b6595418b39335998127d5b0ded1413060020efc2d00ddde",
+    "canonical_owner_sha256": "d13c0d208e8915fcf4c7398dcc144536f1305046a57cbe9245088bfd04f7bc2f"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK17_CYCLIC_WEAK_COUPLING_SPECTRAL_LIMITS.md",
+    "original_sha256": "9956416f2f3a7c9957d353d1a82280252aa9296d3258304382c05306d908128a",
+    "canonical_owner": "docs/FINITE_GRAPH_CYCLIC_WEAK_COUPLING_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-1",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "fecc835db4807104826361befd0d7a673dbbb1f28761240b06b9162645c44fc9",
+    "canonical_owner_sha256": "aa4b2dc8acbe9bfade778ceb1b9d6b2d711721a76fde517c8c690cc5ce863218"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK17_ROUTE_AND_NO_GO_REVIEW.md",
+    "original_sha256": "afa4450f794042d19f8882c125acf3629941d0911410688e8740d6e391434959",
+    "canonical_owner": "docs/FINITE_GRAPH_CYCLIC_WEAK_COUPLING_LIMITS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-2",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "492d7dc5fb8e82842e1d73ccf77eba3567d55c05b0d45e87089acce90558ee7c",
+    "canonical_owner_sha256": "aa4b2dc8acbe9bfade778ceb1b9d6b2d711721a76fde517c8c690cc5ce863218"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK18_POSITIVE_ELECTRIC_GENERATOR_ACCURACY.md",
+    "original_sha256": "8080de9f3f24ae737756e3df6bff1d98421bc477c84f8610e42efe361cd7b7b5",
+    "canonical_owner": "docs/POSITIVE_ELECTRIC_GENERATOR_CONE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-1",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "b5c68413f0d6b027a564e0d8f878f7c0b25733bdc7bfaf731f37a857453efb51",
+    "canonical_owner_sha256": "cb90dfc9747c088b6a429699388c6d38462613095b8fc421bcb015d10accbbbd"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK18_ROUTE_AND_NO_GO_REVIEW.md",
+    "original_sha256": "191fa4d719ee8b5ec4b32257213b823faa7220ceea8ce9254de0381d77af5658",
+    "canonical_owner": "docs/POSITIVE_ELECTRIC_GENERATOR_CONE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-2",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "5a483aa1e9b6b8c8fc6f3a40250858cd67647e51a209e4036e766e48594b6df2",
+    "canonical_owner_sha256": "cb90dfc9747c088b6a429699388c6d38462613095b8fc421bcb015d10accbbbd"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK19_CHARGED_RING_SLOW_SPECTRUM.md",
+    "original_sha256": "8ab522f6af53291843a3222c38f86ca8559987ebe67f62132056964766d744f6",
+    "canonical_owner": "docs/CHARGED_RING_SLOW_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-1",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "16bf9baa926f45335d4302a3610c6e9010382aa36281ebc69854af3c24665533",
+    "canonical_owner_sha256": "cbbcbb346f725448b936df560904842eb6390b0751585d31616a2c63b2ca6b98"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK19_ROUTE_AND_NO_GO_REVIEW.md",
+    "original_sha256": "950c864f92a487309ddd4153bbaefc047b045fead887a69436c86c57414f1c71",
+    "canonical_owner": "docs/CHARGED_RING_SLOW_SPECTRUM_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-2",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "108cb1a57fb29d040dbe16004e19284a7c077344a2a3732d8de142e5336f3288",
+    "canonical_owner_sha256": "cbbcbb346f725448b936df560904842eb6390b0751585d31616a2c63b2ca6b98"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK20_ROUTE_AND_NO_GO_REVIEW.md",
+    "original_sha256": "43f00a6d8bc92c3070c3fd6508f6ecc457e172576069dade281fa100bef7898f",
+    "canonical_owner": "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-1",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "501c432916c8ff969302eac8c562707d4623c56c8a4804c574789c30601ce59a",
+    "canonical_owner_sha256": "3c22468d38ee7733013b0d663507f9d2a5bcba75460f4700e02d949a8768b823"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK20_WEYL_HOLONOMY_CASIMIR_SELECTION.md",
+    "original_sha256": "58fc632b9c56ffb127b2fc38a4d81be5c2c0b2aa688b90a2717285b262e7675c",
+    "canonical_owner": "docs/FREE_WEYL_HOLONOMY_MINIMIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-2",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "a3cdb015d9efcfc65940e865e376f4a548ab335deab1a5ca683d22cc836fa107",
+    "canonical_owner_sha256": "3c22468d38ee7733013b0d663507f9d2a5bcba75460f4700e02d949a8768b823"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK21_FIXED_BOX_SLOW_HOLONOMY_THEOREM.md",
+    "original_sha256": "a8add7399b6fba2370056230299378887c2dda0a8473b3961903c226bf261ed2",
+    "canonical_owner": "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-1",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "e03004c08ce0347a1479b7ee07b7248aa8cdcd7697ee3b9ab271dadfba67effc",
+    "canonical_owner_sha256": "84d8eecde04a7fe9f60014a36fe265a413ba779c1487b416115c15f472d7d2f1"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK21_ROUTE_AND_NO_GO_REVIEW.md",
+    "original_sha256": "7b0c2492f27f5038cb319f0e730f56102740354d4c22e7917f2a467f15929145",
+    "canonical_owner": "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-2",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "6b2613877adb15793705998cb2a5d6f411a293d88504dcf67aaddff8f47bfe22",
+    "canonical_owner_sha256": "84d8eecde04a7fe9f60014a36fe265a413ba779c1487b416115c15f472d7d2f1"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/REVIEW_PERIODIC_HARMONIC_METRIC.md",
+    "original_sha256": "8bb2d202b0d74248392e57a7235b9e6b91ebf67dac12a01d8788873c66706cfc",
+    "canonical_owner": "docs/FIXED_BOX_SLOW_SPECTRUM_AND_HARMONIC_METRIC_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-3",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "39aaf134dc18572a4183dc5b3cbee9e0603dc9c0b1542214d0da13a61b1789a0",
+    "canonical_owner_sha256": "84d8eecde04a7fe9f60014a36fe265a413ba779c1487b416115c15f472d7d2f1"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK22_ITERATED_PHYSICAL_MAXWELL_MATTER_STATE.md",
+    "original_sha256": "b404e997eae301a5e5ef91917dc55686c69bc6c4d77db3dc5007977ac927967f",
+    "canonical_owner": "docs/ITERATED_LOCAL_MAXWELL_MATTER_STATE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-1",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "088242e916d8664caa557c10aeefb72a1747c8c454ab3acaaee29975fd9ac99a",
+    "canonical_owner_sha256": "a8f99cf9b8e30031a85ff0b4e24cbddb38351a8ba0c01fa4a9d8c8cbfae9d111"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK22_ROUTE_AND_NO_GO_REVIEW.md",
+    "original_sha256": "0ebdd04b3445596bc99ac7a723edc0e87600f9a8974c06a79be154eb024392bf",
+    "canonical_owner": "docs/ITERATED_LOCAL_MAXWELL_MATTER_STATE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-2",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "ecebf14137d0380386cde79578254aa34cfa7198871d64a2adccef6f306e6809",
+    "canonical_owner_sha256": "a8f99cf9b8e30031a85ff0b4e24cbddb38351a8ba0c01fa4a9d8c8cbfae9d111"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK23_MATCHED_FREE_CONE_WITH_POSITIVE_WEIGHTS.md",
+    "original_sha256": "445359d13dc7d1076e4363bc359152e503e732425a78485a785fe90ce8969c38",
+    "canonical_owner": "docs/SUPPLIED_MATCHED_FREE_CONE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-1",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "b7c8b0b143072246cd8d93dd68335a2c2c0f4cb2b175b9e575e67da0f6f68bf7",
+    "canonical_owner_sha256": "24dbc17e78cb932f240f6b0bdbec62663795b3cfccb1030a5ca8f1b7ff1cdfab"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK23_ROUTE_AND_NO_GO_REVIEW.md",
+    "original_sha256": "49917884714c8022edd74ceb14f9ec71452a6d63466ae15ad2164a9379b0d196",
+    "canonical_owner": "docs/SUPPLIED_MATCHED_FREE_CONE_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-2",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "ef340fca8c06615a5bb86e979e4263f718d98192ad95efe2e1dd8a12eed8c61d",
+    "canonical_owner_sha256": "24dbc17e78cb932f240f6b0bdbec62663795b3cfccb1030a5ca8f1b7ff1cdfab"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK24_EXACT_RESPONSE_IDENTITIES_AND_PHASE_TEST.md",
+    "original_sha256": "3a8acd9549cdde98091abb9efd9fd17e1ec13d9dd7ee9ea1b76fbcf0ab5218fd",
+    "canonical_owner": "docs/EXACT_GAUGE_WARD_RESPONSE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-1",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "802a4346efb3cba02d525ed3eacdca77e3785675e0c3b9efdfc8d0aa9576efd6",
+    "canonical_owner_sha256": "7a460381594eb146002105566995fb328d827051ddaa4eed28936e202e81f72e"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK24_ROUTE_AND_NO_GO_REVIEW.md",
+    "original_sha256": "b5faf47e36cd6a63844c73df4bda89b1e6cee82ae5b0e12a2b2d0fbae7b41fa1",
+    "canonical_owner": "docs/EXACT_GAUGE_WARD_RESPONSE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-2",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "5ab98a029b66cdf87e1c96616df549b46675a1c467a6fe1477f8fe613727fc07",
+    "canonical_owner_sha256": "7a460381594eb146002105566995fb328d827051ddaa4eed28936e202e81f72e"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK25_ROUTE_AND_NO_GO_REVIEW.md",
+    "original_sha256": "14f09388247ac3b8c4548bfc36e9dfcd6952b8c53e96f31e293507412da88500",
+    "canonical_owner": "docs/REAL_OVERLAP_LOCAL_SOURCE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-1",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "5a3e6a9723ff748a99ab83ab866804e019ca2ece4bde13a420f0658fb3725010",
+    "canonical_owner_sha256": "b55c574197329d931e39ced4cb34063ebe1438dcf654c7d049d76340d60e8c23"
+  },
+  {
+    "original": ".claude/science/physics-loops/toe-fixed-clock-field-20260915/notes/BLOCK25_VISIBLE_THRESHOLD_ON_REAL_OVERLAP_MOMENTA.md",
+    "original_sha256": "c7f61997953db00a0e2aabc8f6e9936234443d95cbc86a57d9ef2ebf7e0fc7ba",
+    "canonical_owner": "docs/REAL_OVERLAP_LOCAL_SOURCE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "anchor": "owned-argument-2",
+    "proof_preservation": "Complete text; heading-depth/internal link presentation only. All original bytes separately archived.",
+    "verified_complete_body_sha256": "5da3986d85c36fc2b352d98f6fb48f86ff1fe5145c80e56a5ce9ee62beb17375",
+    "canonical_owner_sha256": "b55c574197329d931e39ced4cb34063ebe1438dcf654c7d049d76340d60e8c23"
+  },
+  {
+    "original": "EXTRA_BLOCK27",
+    "canonical_owner": "docs/SIGNED_FOREST_FIXED_ORDER_REMAINDERS_AND_RESTRICTED_LOOP_SUMS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+    "original_sha256": "7a0a953deb6b02a4b4c2f78a941013d30a61ad61ef6e5c0c278489c149c1c647",
+    "verified_complete_body_sha256": "493ef3f8f5e393db70d1a8bea305e5de6e32ce808e980551807da94a98a4b8d1",
+    "canonical_owner_sha256": "cbeaf54f59bd86bff8b50c20854973bb5641d5f1ba083129f7ca7a3a6ee2e440"
+  }
+]

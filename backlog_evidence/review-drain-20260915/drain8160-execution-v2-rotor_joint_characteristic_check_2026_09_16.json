@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/rotor_joint_characteristic_check_2026_09_16.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "Weighted cubic commutator, Fourier normalization, and single-rotor characteristic challenge completed.\ng=0.60: characteristic error=0.00758392, ODE residual=0.0194424\ng=0.40: characteristic error=0.00337154, ODE residual=0.00860415\ng=0.25: characteristic error=0.00131736, ODE residual=0.00335366\ng=0.16: characteristic error=0.000539649, ODE residual=0.00137248\nper_element: executed \u2014 differentiated commutators, Fourier normalization and Duhamel quadrature\nper_site: executed \u2014 3-cube geometry and seven-site two-component covariance fixture\nper_mode: executed \u2014 four single-rotor cutoffs at g=0.6,0.4,0.25,0.16\nper_block: executed \u2014 finite weighted matrices, translated defects and rotor exponentials\nlattice_wide: checked and not executed \u2014 uniform bounds and joint-limit/time arguments are written proofs; finite fixtures do not execute an infinite lattice\nTOTAL: PASS=22 FAIL=0\n",
+  "stderr": "",
+  "elapsed_sec": 0.4826951026916504,
+  "timeout_sec": 120,
+  "live_log": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/.in-progress/rotor_joint_characteristic_check_2026_09_16.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/rotor_joint_characteristic_check_2026_09_16.json",
+    "sha256": "529900019a6e8bf792edd99081f5df78bb888ca237e834ec9d223af487a94cc4"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 536870912,
+    "interval_sec": 0.02,
+    "root_pid": 50936,
+    "samples": 12,
+    "peak_tree_rss_bytes": 143310848,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8160-capture-v2.py",
+  "capture_script_sha256": "b9fc33718b65d21eea16b9b6f9d0be42a7b86999eb1c9a56f46fe72fe3699d6d"
+}

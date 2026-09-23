@@ -22,11 +22,18 @@
  "stdout_tail": " 89: quadratic law, diagonal: d* = 0.084, 0.167, 0.313, 0.480 (block 89: 0.084, 0.168, 0.312, 0.480); kappa=0.25 barrier 0.82 at 1.87, below uniform from 2.51\nPASS C5 N1 ratio: N1 one axis: uniform global above kappa_c iff beta/kappa >= r0 = 0.1102; first order at kappa=0.2358 (a=3.00), 0.2287 (a=2.21) for beta/kappa=0.05, 0.1; 3-axis samples (mu>0.1) at beta/kappa=0.25, 0.5: min cost/G-1 = 0.013, 0.017\nTOTAL: PASS=20 FAIL=0\nSUMMARY: PROVED (a),(b) for weight-one pair ledgers of block 59's law on block 89's alternation family (S0: float64 bounds, i0e checked against mpmath): one free even profile phi per class; phi = o(e^(|x|/2)), block 89's quadratic law included, is unbounded below at every kappa; diagonal: phi >= 4(cosh(x/2)-1) suffices (power family iff p >= 1/2); whole family: phi >= x sinh(x/2) suffices (N2, cost 2kappa sum d_j sinh d_j), N1 fails for beta/kappa below 0.110 (witness at 1/10); transition continuous; (c) executed under N2\nHIT: weight-one pair completions of block 59's law are F = sum K sqrt(c_b c_b') phi(log c_b/c_b'), one even profile per class; on block 89's alternation family the uniform field is the strict global minimum for every alpha+2beta >= <1/|s|>/4 when phi >= x sinh(x/2) (rate-weighted law F = (1/2) sum_b c_b (-M log c)_b, cost 2(alpha+2beta) sum_j d_j sinh d_j) and for no kappa when phi = o(e^(|x|/2)); the transition is then continuous, m^2 log(1/m^2) ~ 4pi^2(kappa_c-kappa), and under the rate-weighted law the alternation lies along one axis\n",
  "checked": {
   "by": "w-macbookpro90c72-j4e2d",
-  "at_utc": "20260923T171540Z",
+  "at_utc": "20260923T171703Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 3e5994ac differs from the current HEAD f36ae7d2 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science: (a)-(b) decided for a stated class. For weight-one pair completions of block 59's law (one even profile phi per class) on block 89's alternation family: profiles o(e^{|x|/2}), block 89's quadratic law included, are unbounded below at every kappa (exact). Profiles >= x sinh(x/2), including the rate-weighted law F = (1/2) sum_b c_b (-M log c)_b with cost 2kappa sum d_j sinh d_j, keep the uniform field the strict global minimum for kappa >= <1/|s|>/4 (rigorous monotone Bessel bounds, i0e checked against mpmath), with a continuous transition mu* log(1/mu*) ~ 4pi^2(kappa_c - kappa). N1 fails for beta/kappa below 0.110.",
+  "by": "w-macbookpro90c72-j4e2d",
+  "at_utc": "20260923T171703Z"
  }
 }

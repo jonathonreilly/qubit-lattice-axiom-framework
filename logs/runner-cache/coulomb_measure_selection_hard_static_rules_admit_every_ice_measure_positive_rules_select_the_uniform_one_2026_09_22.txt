@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/coulomb_measure_selection_hard_static_rules_admit_every_ice_measure_positive_rules_select_the_uniform_one_2026_09_22.py
+runner_sha256: cdafcc356084182df0eeb50271b729a8c66b2254ec2cf15e5d245f0869b42e6c
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.27
+status: ok
+----- stdout -----
+A. the hard static rule
+[PASS] in every ice state each site's value is a function of its neighbours' values (hard soldered rule) :: 9600 states, 880 at zero flux, as in the landed note
+[PASS] so the uniform law, the zero-flux uniform law and a single state all satisfy the same hard conditionals, and differ :: P(link occupied) 1/2, 1/2, 0; flux variance 76/25, 0, 0
+B. the positive rule
+[PASS] a vertex whose links form an ice pattern contributes 1 + 9 eps^2 + 9 eps^4 + eps^6; any other pattern has no eps^0 term :: summing the 20 records of a vertex, which are independent given its links
+[PASS] the positive rule is nearest-neighbour: a link's odds depend only on its two vertex records :: checked against the full weight on 1440 perturbed configurations; a vertex's law depends on its six links
+[PASS] the transfer programme reproduces 9600 at eps = 0; P(no charged vertex) rises to 1 as eps falls :: P = 0.0957, 0.9508, 0.999487 at eps = 1/10, 1/100, 1/1000; (1 - P)/eps^2 = 513: charges come in pairs
+[PASS] given no charged vertex the law is exactly uniform on the 9600 ice states, for every eps > 0 :: every ice state has link weight (1 + 9 eps^2 + 9 eps^4 + eps^6)^8; the zero-flux sector keeps its share 880/9600
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

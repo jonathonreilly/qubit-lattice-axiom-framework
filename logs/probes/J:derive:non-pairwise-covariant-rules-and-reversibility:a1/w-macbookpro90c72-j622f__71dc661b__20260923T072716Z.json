@@ -1,0 +1,32 @@
+{
+ "task": "J:derive:non-pairwise-covariant-rules-and-reversibility:a1",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-j622f",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/non-pairwise-covariant-rules-and-reversibility/w-macbookpro90c72-j622f/check.py",
+ "seed": 48436,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "71dc661b",
+ "started_utc": "20260923T072716Z",
+ "elapsed_s": 1.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PROVED a positive nearest-neighbour formation rule gives a reversible level chain iff its log-law is a sum of two-body terms symmetric under exchange with the offset reversed (plus terms of one record or of the past alone); block 19's rule is one member, so pairwise-linear is not the only reversible covariant class, and rules with three-body terms are not reversible"
+ },
+ "review": "Exact: Kolmogorov's criterion for the level chain reduces to a gradient condition linear in the log-law F (the Z's cancel around cycles); on rings with past {x-1, x, x+1} and every positive F (no symmetry assumed) the exact integer nullspace equals the two-body exchange-symmetric family (menu 2 ring 4: 11 = 11; menu 3 ring 4: 36 = 36; menu 2 ring 5: 11 = 11); on the 3^3 torus with the six-axes menu and the seven-record past, exact cycle sums vanish for block 19's rule and for the covariant nematic two-body rule (even in s', so not block 19's), and are -4 gamma for beta s'.h + gamma (s'.h)^2 and a nonzero surd sum (~2.79 beta) for beta s'.h/|h|. The general theorem (mixed differences force two-body structure; exchange symmetry up to one-record terms; sufficiency by reindexing over a symmetric past) is proved in ATTEMPT.md.",
+ "what": "DERIVATION, independent attempt 1 of 2: Covariant formation rules that are not pairwise: are any of them reversible?. SETTING (the formation lane of the admissibility induced-law campaign, under the owner's reading that records FORM: open PRs #8678 (block 89) #8692 (block 90) #8696 (block 91) #8703 (block 92) and block 93 'covariance forces a reversible formation law' when opened; decision record #8572 (eighth addendum); blocks 19 (#8153), 20 (#8154, closed and archived), 26-28 (#8170, #8172); ALL clauses supplied, nothing adopted; read the relevant notes on their PR branches before starting - git fetch origin <branch>; git show origin/<branch>:<note>). TASK: block 93: in the 3+1 reading every covariant nearest-neighbour past is symmetric, and under block 19's PAIRWISE rule exp(beta s'.sum_d w_d s_(x+d)) every symmetric past is reversible. A covariant rule need not be pairwise: e.g. exp(beta s'.h + gamma (s'.h)^2) or exp(beta |h| s'.h/|h|) with h the weighted sum. (a) Characterize the covariant nearest-neighbour rules (one record's law given its seven predecessors) for which the level chain is reversible (Kolmogorov's cycle criterion on small rings or tori; exact on finite menus); (b) is pairwise the only reversible class? HIT: (a) with a proof, or an exact counterexample to (b). DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/non-pairwise-covariant-rules-and-reversibility/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/non-pairwise-covariant-rules-and-reversibility/<name>/check.py\"",
+ "stdout_sha256": "cd4fe7261d9e005ddfcacb0a65f05dc2f394b198998c95efe606a54b5f5dfc2f",
+ "stdout_tail": "exact cycle sums over random triples of levels: zero for block 19's rule and for the covariant two-body rule gamma sum_d w_d (s'.s_{x+d})^2 (reversible, even in s', so not of block 19's form); -4*gamma for beta s'.h + gamma (s'.h)^2 and beta*(-19448*sqrt(5) - 7480*sqrt(13) - 2210*sqrt(11) + 2145*sqrt(17) + 24310*sqrt(3) + 60775)/12155 ~ 2.7922 beta for beta s'.h/|h|: both irreversible\nruntime 1 s\nSUMMARY: PROVED a positive nearest-neighbour formation rule gives a reversible level chain iff its log-law is a sum of two-body terms symmetric under exchange with the offset reversed (plus terms of one record or of the past alone); block 19's rule is one member, so pairwise-linear is not the only reversible covariant class, and rules with three-body terms are not reversible\nHIT: (a) the level chain K(s -> s') = prod_x exp F(s'_x; eta_x(s))/Z is reversible iff F(s'; eta) = sum_d phi_d(s', eta_d) + psi(s') + c(eta) with phi_{-d}(b, a) = phi_d(a, b) modulo one-record terms (mixed differences in s'_x and s_y must not see the other predecessors); then pi(s) = prod_x Z(eta_x(s)) exp(sum_x psi(s_x)); the reversible dimension equals the two-body family exactly on rings (menus 2 and 3).\nHIT: (b) covariant and reversible but not block 19's rule: gamma sum_d w_d (s'.s_{x+d})^2 (zero cycle sums, even in s'); covariant and irreversible: beta s'.h + gamma (s'.h)^2 (its three-body part leaves a cycle sum proportional to gamma) and beta s'.h/|h|, both exact on the 3^3 torus with the six-axes menu.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j622f",
+  "at_utc": "20260923T072718Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

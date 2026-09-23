@@ -1,6 +1,6 @@
 {
- "edge_count": 13789,
- "node_count": 6293,
+ "edge_count": 13794,
+ "node_count": 6295,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6609,6 +6609,10 @@
   "gauge_wilson_uniform_static_source_energy_bounds_bounded_theorem_note_2026-09-07": {
    "deps_hash": "becf85893f46",
    "out_degree": 4
+  },
+  "gauge_wilson_weak_window_quantitative_bounds_and_haar_contact_fdd_bounded_theorem_note_2026-09-07": {
+   "deps_hash": "03a7334ca20a",
+   "out_degree": 5
   },
   "gauged_log_transfer_quasilocality_combes_thomas_narrow_theorem_note_2026-06-13": {
    "deps_hash": "b48fd9e48b4d",
@@ -24475,6 +24479,10 @@
    "out_degree": 0
   },
   "work_history.review_loop.pr8029.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8030.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

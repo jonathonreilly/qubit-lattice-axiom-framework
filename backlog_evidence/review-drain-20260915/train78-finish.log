@@ -1,0 +1,54 @@
+charged_ring_slow_spectrum_bounded_theorem_note_2026-09-15 bounded_theorem unaudited []
+cubic_fourier_energy_and_gaussian_registers_bounded_theorem_note_2026-09-15 bounded_theorem unaudited ['scripts/cofactor_cyclic_check_2026_09_15.py', 'scripts/contact_register_check_2026_09_15.py', 'scripts/determinant_exclusion_check_2026_09_15.py', 'scripts/forest_interpolation_check_2026_09_15.py', 'scripts/tree_count_check_2026_09_15.py']
+cyclic_equilibrium_and_integer_gauss_limit_bounded_theorem_note_2026-09-15 bounded_theorem unaudited []
+exact_gauge_ward_response_identities_bounded_theorem_note_2026-09-15 bounded_theorem unaudited []
+finite_graph_cyclic_weak_coupling_limits_bounded_theorem_note_2026-09-15 bounded_theorem unaudited ['scripts/cyclic_equilibrium_check_2026_09_15.py']
+finite_native_winding_curvature_bounded_theorem_note_2026-09-15 bounded_theorem unaudited []
+fixed_box_slow_spectrum_and_harmonic_metric_bounded_theorem_note_2026-09-15 bounded_theorem unaudited ['scripts/review_harmonic_metric_check_2026_09_15.py']
+fixed_coupling_rotor_ground_cutoff_compactness_bounded_theorem_note_2026-09-15 bounded_theorem unaudited []
+free_weyl_holonomy_minimization_bounded_theorem_note_2026-09-15 bounded_theorem unaudited []
+hybrid_generators_integrated_rates_and_curvature_witness_bounded_theorem_note_2026-09-15 bounded_theorem unaudited ['scripts/hybrid_curvature_check_2026_09_15.py', 'scripts/integrated_rate_check_2026_09_15.py']
+iterated_local_maxwell_matter_state_bounded_theorem_note_2026-09-15 bounded_theorem unaudited ['scripts/slow_fast_check_2026_09_15.py']
+local_source_diagonal_spectral_bounds_bounded_theorem_note_2026-09-15 bounded_theorem unaudited ['scripts/polarized_word_check_2026_09_15.py']
+native_charge_motion_and_spectral_weight_bounds_bounded_theorem_note_2026-09-15 bounded_theorem unaudited []
+native_mixed_sixth_order_coefficient_bounded_theorem_note_2026-09-15 bounded_theorem unaudited []
+polarized_word_carrier_and_essential_threshold_bounded_theorem_note_2026-09-15 bounded_theorem unaudited []
+positive_auxiliary_current_law_and_regulator_witness_bounded_theorem_note_2026-09-15 bounded_theorem unaudited []
+positive_electric_generator_cone_bounds_bounded_theorem_note_2026-09-15 bounded_theorem unaudited []
+real_overlap_local_source_threshold_bounded_theorem_note_2026-09-15 bounded_theorem unaudited []
+signed_forest_fixed_order_remainders_and_restricted_loop_sums_bounded_theorem_note_2026-09-15 bounded_theorem unaudited ['scripts/cofactor_cyclic_check_2026_09_15.py', 'scripts/contact_register_check_2026_09_15.py', 'scripts/cut_completion_check_2026_09_15.py', 'scripts/determinant_exclusion_check_2026_09_15.py', 'scripts/forest_interpolation_check_2026_09_15.py', 'scripts/gaussian_cycle_check_2026_09_15.py', 'scripts/graph_source_check_2026_09_15.py', 'scripts/hard_core_cycle_check_2026_09_15.py', 'scripts/operator_source_check_2026_09_15.py', 'scripts/partition_exclusion_check_2026_09_15.py']
+supplied_algebra_action_and_kernel_support_bounded_theorem_note_2026-09-15 bounded_theorem unaudited ['scripts/inverse_corner_support_check_2026_09_15.py']
+supplied_matched_free_cone_bounded_theorem_note_2026-09-15 bounded_theorem unaudited []
+supplied_quartet_leading_decay_bounds_bounded_theorem_note_2026-09-15 bounded_theorem unaudited []
+supplied_quartet_linear_metric_flow_bounded_theorem_note_2026-09-15 bounded_theorem unaudited []
+supplied_quartet_quadratic_backreaction_bounded_theorem_note_2026-09-15 bounded_theorem unaudited []
+supplied_record_laws_and_common_order_kernels_bounded_theorem_note_2026-09-15 bounded_theorem unaudited ['scripts/general_order_check_2026_09_15.py']
+docs/audit/data/citation_graph_manifest.json | 108 ++++++++++++++++++++++++++-
+ 1 file changed, 106 insertions(+), 2 deletions(-)
+[detached HEAD ea403fe1c5] Acknowledge reviewed source topology for train78
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 106 insertions(+), 2 deletions(-)
+From https://github.com/jonathonreilly/cl3-lattice-framework
+ * branch                  main       -> FETCH_HEAD
+remote: This repository moved. Please use the new location:        
+remote:   https://github.com/jonathonreilly/qubit-lattice-axiom-framework.git        
+remote: Bypassed rule violations for refs/heads/main:        
+remote: 
+remote: - Changes must be made through a pull request.        
+remote: 
+To https://github.com/jonathonreilly/cl3-lattice-framework.git
+   631d6b36cd..ea403fe1c5  HEAD -> main
+From https://github.com/jonathonreilly/cl3-lattice-framework
+ * branch                  main       -> FETCH_HEAD
+LANDED ea403fe1c5e71418c95b976e72a11df375c0a655

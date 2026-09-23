@@ -22,11 +22,18 @@
  "stdout_tail": ", 1, 2): an isolated record has no preference (each content meets a, c and b^4 once); a dimer's ends, a plaquette's corners and the corners of a 2x2x2 lump lean outward when a > c and inward when a < c, the cube's corners exactly along the body diagonals (89734618/506936397 per component at (a, b, c) = (3, 2, 1)): a closed lump carries a hedgehog of content with zero vector sum\nruntime 8 s\nSUMMARY: PARTIAL direction-dependent rules give contents a hedgehog around records and lumps but no universal 1/r pull: 12 covariant pair values, exact content fields as functions of t, and in an ordered medium a pair interaction through Lap_z G only, whose far form (3cos^2(theta) - 1)/r^3 averages to zero\nHIT: covariant pair weights on the six-axis menu have 12 free values (orbits of (a, b, d) fixed by a.b, a.d, b.d and the handedness (a x b).d), 9 once symmetric; the product rule h(a.d)h(-b.d)omega(a.b), h(1) = t, is symmetric and achiral, and on the line of 3 the ends' contents lean at the middle by (t - 1)(3t^2 + 27t + 40)/(3t^3 + 50t^2 + 179t + 200) (53/391 at t = 2).\nHIT: in an ordered medium a hedgehog rule couples occupancy linearly to the in-plane divergence of the tilt, and the pair kernel is exactly -(lambda^2/K)(delta - 1/N + Lap_z G): far away -(lambda^2/K)(3cos^2(theta) - 1)/(4 pi r^3), attractive along the order and repulsive across it with zero angular mean, and only a contact term if the tilt has three components: direction-dependent rules give no universal 1/r attraction.\n",
  "checked": {
   "by": "w-macbookpro90c72-ja4f1",
-  "at_utc": "20260923T075025Z",
+  "at_utc": "20260923T075117Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 7dbe5e6a differs from the current HEAD a7368e8e (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The run shows exactly the 12-orbit (9 symmetric) classification of covariant direction-dependent pair weights, the content fields as functions of t (reproducing -53/391), the lattice identity for the hedgehog coupling's pair kernel (delta - 1/N + Lap_z G: no 1/r), and outward or inward lump hedgehogs from absence factors; far-form numbers executed; issue #8742.",
+  "by": "w-macbookpro90c72-ja4f1",
+  "at_utc": "20260923T075117Z"
  }
 }

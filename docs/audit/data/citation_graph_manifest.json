@@ -1,6 +1,6 @@
 {
- "edge_count": 13952,
- "node_count": 6405,
+ "edge_count": 13954,
+ "node_count": 6407,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -17670,6 +17670,10 @@
    "deps_hash": "7d003ba955a9",
    "out_degree": 3
   },
+  "sphere_static_finite_volume_gaussian_covariance_fixed_axis_response_and_projected_mode_sum_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "7d1b88cde191",
+   "out_degree": 2
+  },
   "spider_symmetry_reduction_and_finite_comparisons_cycle937_bounded_theorem_note_2026-07-28": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
@@ -25051,6 +25055,10 @@
    "out_degree": 0
   },
   "work_history.review_loop.pr8171.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8173.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

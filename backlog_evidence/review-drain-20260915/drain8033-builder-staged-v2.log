@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/private/tmp/review-drain-20260915/drain8033-build-staged-draft-v1.py", line 43, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/tmp/review-drain-20260915/drain8033-build-staged-draft-v1.py", line 22, in main
+    for e in old['context']:assert h(W/e['path'])==e['sha256'],'Changed context requires affected review'
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Changed context requires affected review

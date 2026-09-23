@@ -1,0 +1,35 @@
+{
+  "status": "Author-only current context rebinding; original reviewer actual cold confirmation still required before execution",
+  "source_changes": false,
+  "main": "f947216c6ec62d6c663b9c73ef180b1f4f8b622f",
+  "changed_context": [
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "before_sha256": "bbdb794f3925b1a473db22a94eeaa4d0b6be5e302f6dc1463c27306738b731b3",
+      "after_sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+      "before_sha256": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096",
+      "after_sha256": "749a19389fbab3042479b32e2499ae95ff04e1590e3edb0cee60ad267f57c0af"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "before_sha256": "cfcb43f40791d8e8772e86fd2b53fb11008c5075e416f8cf4eb84bd18ab71773",
+      "after_sha256": "03a9bf84e4efaf7d0d3b9efd8b2b9027c9005fd91be7862f3de1f58fd0b6a18f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "before_sha256": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d",
+      "after_sha256": "6ab026a472ce9a601385796eea6dcd32658d048cb14f3fdffad1bd51ee409666"
+    }
+  ],
+  "accepted_methodology_review": {
+    "path": "/private/tmp/review-drain-20260915/review-loop-efficiency-final-review-v1.json",
+    "sha256": "613f6aa650248d99ee4cd1c58db2427270dcc19f6bb93d19a454e71da6bec4b5"
+  },
+  "landing": {
+    "path": "/private/tmp/review-drain-20260915/train92-landing.json",
+    "sha256": "f7b847622944359558c96d527e23a189a1e7c24943bf240fd4ebf49aa498117b"
+  }
+}

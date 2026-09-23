@@ -1,0 +1,23 @@
+{
+  "science_executions": 0,
+  "source_math_changes": false,
+  "failures": [
+    {
+      "artifact": "drain8033-builder-staged-v1.log",
+      "sha256": "85bf0d3de3efc54b2e9723f14730215f686a0dceddf69b706d35e5bb784f6ee9"
+    },
+    {
+      "artifact": "drain8033-builder-staged-v2.log",
+      "sha256": "68e3652f0e5ad91b449d56f31818a721052943449a99ed50a8843ad19aff4d0e"
+    },
+    {
+      "artifact": "drain8178-author-cheap-v1.json",
+      "sha256": "636ecd4ff20d66ca75d0b2882d17f73ad88c5bffd4cf90641ee94ab5a844c6c0"
+    }
+  ],
+  "resolution": [
+    "PR8033 first invocation omitted required positional main argument; preserved before any staging.",
+    "PR8033 expected frozen old skill context; author adapterv2 binds exactly independently landed four-file delta for original cold confirmation. No premise/source byte changed.",
+    "PR8178 first receipt invocation named nonexistent draft; rerun corrected actual staged-v1 filename, preserving invalid receipt. No science execution."
+  ]
+}

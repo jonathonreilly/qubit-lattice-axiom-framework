@@ -1,0 +1,13 @@
+{
+  "passed": 15,
+  "failed": 1,
+  "failed_families": [
+    "F"
+  ],
+  "mutation": "synthetic_failure",
+  "expected_mutation_family": "F",
+  "input_sha256": {
+    "input.txt": "d13b1e67138dbe2252f2075bbb815c9e5d8dea30fdb9dbbf6b0801dbe0b69a1f"
+  },
+  "scope": "finite auxiliary checks; not universal execution or nonlinear proof"
+}

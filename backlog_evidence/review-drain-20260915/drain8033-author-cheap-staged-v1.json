@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8033",
+  "tree": "7442e4223a6383ce8ff811a271f12c4edd39d0f5",
+  "cache_checked": false,
+  "notes": [
+    {
+      "path": "docs/GAUGE_WILSON_FINITE_PW_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "claim_id": "gauge_wilson_finite_pw_uniform_static_source_energy_bounds_bounded_theorem_note_2026-09-07",
+      "primary_runner": "scripts/gauge_wilson_finite_pw_static_energy_lower_controls_2026_09_07.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/work_history/repo/review_feedback/pr8033-evidence/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8770,
+      "misses": 4541
+    },
+    "packet_imports": {
+      "hits": 8760,
+      "misses": 4539
+    },
+    "declared_inputs": {
+      "hits": 8800,
+      "misses": 4695
+    }
+  },
+  "record_sha256": "f987e008ada77803e1f26a7151950ec9e38b99bcbceb8bb5dadfcaee5591df03",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

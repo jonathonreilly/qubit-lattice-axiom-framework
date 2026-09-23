@@ -1,0 +1,47 @@
+{
+  "binding": {
+    "path": "/private/tmp/review-drain-20260915/drain8177-cold-review-v1.json",
+    "sha256": "22ee3b6b11230ef129346b1ef2861a4a6b4b94af84c6318df567703856245b22",
+    "same_session_provenance": "/root/review_8177",
+    "verdict_pointer": "/verdict",
+    "verdict_value": "COLD_SOURCE_CLEAR_CAPTURE_ADAPTERS_REQUIRE_ACTUAL_BINDING",
+    "tree_pointer": "/source/tree",
+    "tree": "1e57403f90d485ec56e91efa283fa31aee5368e7",
+    "frozen_base": "f947216c6ec62d6c663b9c73ef180b1f4f8b622f",
+    "reviewed_main": "f947216c6ec62d6c663b9c73ef180b1f4f8b622f",
+    "required_predicates": {
+      "/reviewer_session": "/root/review_8177",
+      "/source/frozen_base": "f947216c6ec62d6c663b9c73ef180b1f4f8b622f",
+      "/source/reviewed_main": "f947216c6ec62d6c663b9c73ef180b1f4f8b622f",
+      "/clearance/same_session_original_reviewer": true,
+      "/clearance/source_and_input_closure_confirmed": true,
+      "/clearance/current_main_interactions_confirmed": true,
+      "/clearance/all_original_dispositions_confirmed": true,
+      "/clearance/primary_capture_cleared": true,
+      "/clearance/targeted_mutation_capture_cleared": true
+    }
+  },
+  "adapters": [
+    {
+      "old": "drain8177-capture-v1.py",
+      "old_sha256": "61d9fd24f265ae2d4e9a55c3b9d38357d6908f63877f35231220eef08ec94a9d",
+      "path": "/private/tmp/review-drain-20260915/drain8177-capture-v2.py",
+      "sha256": "b8b3938974e795c3549c9abc4fba8276c089d138ad2e5d107c77db8c0cc2bd63",
+      "diff": {
+        "path": "/private/tmp/review-drain-20260915/drain8177-capture-v2.py.binding.diff",
+        "sha256": "c687cbbbce5e44454404b3ce8d72ee243c6146b9733a950b58a723ed6cb36a4b"
+      }
+    },
+    {
+      "old": "drain8177-mutation-capture-v2.py",
+      "old_sha256": "9bbb4ecb5372b21ce63f05a09a0dde8578cfa4abc126d7e28f0a1b6f39e604ce",
+      "path": "/private/tmp/review-drain-20260915/drain8177-mutation-capture-v3.py",
+      "sha256": "1036577ec56b7cba50d41ea5e358a8d42d291002c6ccc6201f6ef3ffc123c64e",
+      "diff": {
+        "path": "/private/tmp/review-drain-20260915/drain8177-mutation-capture-v3.py.binding.diff",
+        "sha256": "472e6dff254488b79765a44e7b2c59090d2a83d20d3c5b125b7a6705c079087d"
+      }
+    }
+  ],
+  "change": "Only None replaced by exact actual cold-report binding; no logic/resource/source changes; not executed"
+}

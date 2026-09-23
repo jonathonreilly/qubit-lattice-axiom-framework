@@ -1,0 +1,9 @@
+usage: drain8177-mutation-capture-v3.py [-h] --record RECORD --record-sha256
+                                        RECORD_SHA256 --cold COLD
+                                        --cold-sha256 COLD_SHA256
+                                        --primary-receipt PRIMARY_RECEIPT
+                                        --primary-receipt-sha256
+                                        PRIMARY_RECEIPT_SHA256 --expected-base
+                                        EXPECTED_BASE --mutation MUTATION
+                                        --capture-authorized
+drain8177-mutation-capture-v3.py: error: the following arguments are required: --capture-authorized

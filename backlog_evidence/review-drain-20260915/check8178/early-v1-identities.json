@@ -1,0 +1,24 @@
+{
+  "status": "identities verified only; no science execution or gate",
+  "source_count": 43,
+  "recovered_states": 37,
+  "original_paths": 21,
+  "unchanged_function_ast": [
+    "mut",
+    "normalize_text",
+    "exp_bounds",
+    "A_bounds",
+    "pi_bounds",
+    "cos_exact",
+    "u_mode",
+    "site_variance_modes",
+    "V_exact",
+    "shift_matrix",
+    "covariance_recursion",
+    "lattice_sum",
+    "family_c",
+    "family_g"
+  ],
+  "parent_sha256": "bd7968234832dcd13368f4208b2081a69aaf9674b1e9b24b65f44ee986f26b0a",
+  "handoff_sha256": "5947a729c010796ac94f840ea02b37bde2835e793df67759b3b985c494bdb541"
+}

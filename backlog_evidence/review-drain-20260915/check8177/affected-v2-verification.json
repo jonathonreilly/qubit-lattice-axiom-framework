@@ -1,0 +1,27 @@
+{
+  "frozen_sources": 56,
+  "original_payloads_verified": 50,
+  "delta_verified": true,
+  "literal_input_pins_verified": {
+    "docs/ROOTED_MARKED_TREE_EXTENSION_SEED_INDUCTION_AND_RELAXED_LIFTED_TREE_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-17.md": "24be34b472e47cafd59a15dd5125bfad54a1270fb4712002d9bf29d145029559",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+    "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md": "5642877329c141c39394936173c35c82c5cd18bb8f9a408c17fad0497cef647e"
+  },
+  "authority_unchanged": true,
+  "unchanged_math_functions": [
+    "run_automaton",
+    "single_seed_min",
+    "single_seed_min_capped",
+    "brute_min",
+    "brute_rooted",
+    "tiny_realizations",
+    "family_b",
+    "deviations",
+    "upf",
+    "rhs"
+  ],
+  "eight_certificates_unchanged": true,
+  "primary_executed": false,
+  "science_executed": false
+}

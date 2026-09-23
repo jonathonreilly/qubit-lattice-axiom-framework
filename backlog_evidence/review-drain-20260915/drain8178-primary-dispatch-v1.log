@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/private/tmp/review-drain-20260915/drain8178-capture-v3.py", line 104, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/tmp/review-drain-20260915/drain8178-capture-v3.py", line 102, in main
+    if error:raise RuntimeError('Failed capture preserved at '+str(receipt))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Failed capture preserved at /private/tmp/review-drain-20260915/drain8178-capture-supplied_torus_auxiliary_field_mode_variance_finite_bracket_2026_09_17-v2.receipt.json

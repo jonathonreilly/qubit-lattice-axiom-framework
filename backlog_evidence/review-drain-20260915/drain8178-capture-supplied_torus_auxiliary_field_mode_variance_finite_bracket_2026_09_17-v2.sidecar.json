@@ -1,0 +1,14 @@
+{
+  "passed": 15,
+  "failed": 1,
+  "failed_families": [
+    "F"
+  ],
+  "mutation": null,
+  "expected_mutation_family": null,
+  "input_sha256": {
+    "docs/SUPPLIED_TORUS_AUXILIARY_FIELD_MODE_VARIANCE_AND_FINITE_BRACKET_BOUNDED_THEOREM_NOTE_2026-09-17.md": "370797903fc72eeebdf06499193e8a2b7fd4363e5f58493d6efd85b60603b2a0",
+    "docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md": "bd7968234832dcd13368f4208b2081a69aaf9674b1e9b24b65f44ee986f26b0a"
+  },
+  "scope": "finite auxiliary checks; not universal execution or nonlinear proof"
+}

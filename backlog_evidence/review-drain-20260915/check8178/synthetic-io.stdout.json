@@ -1,0 +1,50 @@
+{
+  "status": "PASS isolated exact emitter IO controls",
+  "source_sha256": "e5b1c1f3917c1e5cc39fc37080560b97e455f60649bdfdfe0d3e00cc744c1b66",
+  "extracted_ast": "Module(body=[FunctionDef(name='emit_only', args=arguments(posonlyargs=[], args=[], kwonlyargs=[], kw_defaults=[], defaults=[]), body=[Assign(targets=[Name(id='sidecar', ctx=Store())], value=Call(func=Attribute(value=Attribute(value=Name(id='os', ctx=Load()), attr='environ', ctx=Load()), attr='get', ctx=Load()), args=[Constant(value='AUDIT_RESULT_SIDECAR')], keywords=[])), If(test=Name(id='sidecar', ctx=Load()), body=[Assign(targets=[Name(id='destination', ctx=Store())], value=Call(func=Name(id='Path', ctx=Load()), args=[Name(id='sidecar', ctx=Load())], keywords=[])), If(test=BoolOp(op=Or(), values=[UnaryOp(op=Not(), operand=Call(func=Attribute(value=Name(id='destination', ctx=Load()), attr='is_absolute', ctx=Load()), args=[], keywords=[])), Call(func=Attribute(value=Call(func=Attribute(value=Name(id='destination', ctx=Load()), attr='resolve', ctx=Load()), args=[], keywords=[]), attr='is_relative_to', ctx=Load()), args=[Call(func=Attribute(value=Name(id='ROOT', ctx=Load()), attr='resolve', ctx=Load()), args=[], keywords=[])], keywords=[])]), body=[Raise(exc=Call(func=Name(id='ValueError', ctx=Load()), args=[Constant(value='AUDIT_RESULT_SIDECAR must be an absolute external per-attempt path')], keywords=[]))], orelse=[]), With(items=[withitem(context_expr=Call(func=Attribute(value=Name(id='destination', ctx=Load()), attr='open', ctx=Load()), args=[Constant(value='x')], keywords=[keyword(arg='encoding', value=Constant(value='utf-8'))]), optional_vars=Name(id='f', ctx=Store()))], body=[Expr(value=Call(func=Attribute(value=Name(id='json', ctx=Load()), attr='dump', ctx=Load()), args=[Dict(keys=[Constant(value='passed'), Constant(value='failed'), Constant(value='failed_families'), Constant(value='mutation'), Constant(value='expected_mutation_family'), Constant(value='input_sha256'), Constant(value='scope')], values=[Attribute(value=Name(id='checks', ctx=Load()), attr='passed', ctx=Load()), Attribute(value=Name(id='checks', ctx=Load()), attr='failed', ctx=Load()), Call(func=Name(id='sorted', ctx=Load()), args=[Attribute(value=Name(id='checks', ctx=Load()), attr='failed_families', ctx=Load())], keywords=[]), Name(id='ACTIVE_MUTATION', ctx=Load()), Call(func=Attribute(value=Name(id='MUTATION_GATE', ctx=Load()), attr='get', ctx=Load()), args=[Name(id='ACTIVE_MUTATION', ctx=Load())], keywords=[]), DictComp(key=Name(id='p', ctx=Load()), value=Call(func=Attribute(value=Call(func=Attribute(value=Name(id='hashlib', ctx=Load()), attr='sha256', ctx=Load()), args=[Call(func=Attribute(value=BinOp(left=Name(id='ROOT', ctx=Load()), op=Div(), right=Name(id='p', ctx=Load())), attr='read_bytes', ctx=Load()), args=[], keywords=[])], keywords=[]), attr='hexdigest', ctx=Load()), args=[], keywords=[]), generators=[comprehension(target=Name(id='p', ctx=Store()), iter=Name(id='AUDIT_INPUT_PATHS', ctx=Load()), ifs=[], is_async=0)]), Constant(value='finite auxiliary checks; not universal execution or nonlinear proof')]), Name(id='f', ctx=Load())], keywords=[keyword(arg='indent', value=Constant(value=2))])), Expr(value=Call(func=Attribute(value=Name(id='f', ctx=Load()), attr='write', ctx=Load()), args=[Constant(value='\\n')], keywords=[]))])], orelse=[]), Return(value=IfExp(test=Compare(left=Attribute(value=Name(id='checks', ctx=Load()), attr='failed', ctx=Load()), ops=[Eq()], comparators=[Constant(value=0)]), body=Constant(value=0), orelse=Constant(value=1)))], decorator_list=[])], type_ignores=[])",
+  "observations": [
+    {
+      "case": "ordinary",
+      "exit_code": 1,
+      "writes": 0
+    },
+    {
+      "case": "ordinary",
+      "exit_code": 1,
+      "writes": 0
+    },
+    {
+      "case": "--json is not a supported emitter option",
+      "exit_code": 1,
+      "writes": 0
+    },
+    {
+      "case": "--json is not a supported emitter option",
+      "exit_code": 1,
+      "writes": 0
+    },
+    {
+      "case": "unique external sidecar preserves fake failure",
+      "exit_code": 1,
+      "sha256": "d93a451218f3fff735e1fc39576c1621499a133471e1215ebb2c064f525d4df9"
+    },
+    {
+      "case": "sidecar collision",
+      "exception": "FileExistsError(17, 'File exists')",
+      "prior_bytes_unchanged": true
+    },
+    {
+      "case": "invalid sidecar path",
+      "path": "relative.json",
+      "exception": "ValueError('AUDIT_RESULT_SIDECAR must be an absolute external per-attempt path')"
+    },
+    {
+      "case": "invalid sidecar path",
+      "path": "/private/tmp/review-drain-20260915/check8178/synthetic-io-fixture/fake-repo/inside.json",
+      "exception": "ValueError('AUDIT_RESULT_SIDECAR must be an absolute external per-attempt path')"
+    }
+  ],
+  "production_main_executions": 0,
+  "scientific_checks": 0,
+  "json_contract": "No --json branch exists; isolated emission unchanged with repeated flag. Only explicitly requested sidecar writes."
+}

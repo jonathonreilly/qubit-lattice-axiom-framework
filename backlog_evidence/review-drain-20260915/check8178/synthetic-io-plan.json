@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/usr/local/bin/python3",
+    "/private/tmp/review-drain-20260915/check8178/synthetic-io.py"
+  ],
+  "wall_limit_seconds": 30,
+  "rss_limit_bytes": 201326592,
+  "poll_seconds": 0.02,
+  "scope": "supervisor and child process tree sampled RSS; enforce by kill group",
+  "simulation_runs": 0
+}

@@ -1,0 +1,963 @@
+{
+  "schema_version": 2,
+  "unit_id": "PR8033",
+  "constituents": [
+    {
+      "id": "PR8033",
+      "head": "d041b83a507226feae9713662767dd34d2ffb4a8",
+      "delta_base": "91daeb27ebe4e840b1b0457ea30acfc3e333bd09",
+      "dispositions": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-author-source-handoff-staged-v1.json",
+        "sha256": "c8c812e66459212c70dfdf2a7a52a052a788d2fa2a258736d09c062a60536826",
+        "json_pointer": "/original_dispositions"
+      }
+    }
+  ],
+  "source": {
+    "base": "f947216c6ec62d6c663b9c73ef180b1f4f8b622f",
+    "commit": "f947216c6ec62d6c663b9c73ef180b1f4f8b622f",
+    "tree": "7442e4223a6383ce8ff811a271f12c4edd39d0f5",
+    "paths": [
+      {
+        "path": "docs/GAUGE_WILSON_FINITE_PW_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "87b32515257c0c3363b6f47845ff8eafada3d1b79e02dff075ea8bb905c696d6"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/README.md",
+        "sha256": "0837dd3190da10338913e450d87a071d434dbe1bdfdaca930a993b0a3e66bea5"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ARTIFACT_PLAN-53b1136cea2552f5.md",
+        "sha256": "53b1136cea2552f58efc2a6c7bc34a2792d697fd3dc598e37341178c449cc527"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ASSUMPTIONS_AND_IMPORTS-0a0aaa5360cb8283.md",
+        "sha256": "0a0aaa5360cb8283d1372b3e9497ea70c7a6c4343519ffe6edb15943e3343d7f"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-CAMPAIGN_REPORT-4d93b09ecc9cc035.md",
+        "sha256": "4d93b09ecc9cc0357aafe372689dcb9e639c9c0a20dc56503210f7b5c95be23b"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-CAMPAIGN_REPORT_REVIEW-7550739be2ef42a8.md",
+        "sha256": "7550739be2ef42a8e2f399f7b022b67b4404f968eacf30de59ccfb78022649fd"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-CANONICAL_RESULT-114adcd393fdaec6.json.gz",
+        "sha256": "e4c5ea9f5f21afe2e66da97b782e2cd8727605f98c6b48977725183286536eca"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-CANONICAL_STDOUT-bb144330eff41f1e.txt.gz",
+        "sha256": "ae3a9e53577328e4670fd542a32c2040b722d0b7641d6fd0451aef91ae412f58"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-CLAIM_ROWS_BEFORE_CLEANUP-19948b7cf438fc70.json.gz",
+        "sha256": "1c2aa90d1f85b48d53a15a7ff82650f7bc03a3cbdda7e0aa4923967c37797787"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-CLAIM_STATUS_CERTIFICATE-d1157c49ba9da70b.md",
+        "sha256": "d1157c49ba9da70b9e0d37ba1db609096c93ab82bd6ba370022c0c4a1dee0637"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-CONTROLS_PREREGISTRATION-6cbf80a5ca28caa1.md",
+        "sha256": "6cbf80a5ca28caa117dbefe3d5c51d57a95fbbf8228ce736f83b2d90bba35f69"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-DELIVERY_RECEIPT-e4a43678cd42a912.md",
+        "sha256": "e4a43678cd42a9123aa6507ebaab1c6fd44eb3226c52648b32bcb117ba5bf932"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-DELIVERY_RECEIPT-fc5b771191eb47ae.md",
+        "sha256": "fc5b771191eb47ae12771a8db918d6855031ca0c272eb2db7123982183465cb9"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-DERIVATION-2037554d8fffef48.md",
+        "sha256": "2037554d8fffef48606b1d866567e007ea28446d068723e43f0f6f12ab028c05"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FAILED_SYNTAX-b334a0b1725b8b39.md",
+        "sha256": "b334a0b1725b8b398a3dece659140ff1628befce356b122ac53eb2d08f2c723d"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FAILED_SYNTAX_check-9cf20117d64bf4e8.py",
+        "sha256": "9cf20117d64bf4e81b68b483f2eeb4a8f012ca34614d815c2bb1d42bb9d0d239"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_DELIVERY_METADATA_INVARIANT-1dc70317c0c024cf.json.gz",
+        "sha256": "5a06dab039f1303820972c22e94aadcb2c56e46b0ca6b5ffc5af36d21e35ea31"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_MAIN66_DESCENDANT_PUBLICATION_SNAPSHOT-fb9eec3c6ce7de26.json.gz",
+        "sha256": "81e92503a252694726b2a42e94aafdd8a8ffa777caf051b9785108725b99d143"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION-df75f344212ce1b5.json.gz",
+        "sha256": "277ad84cd8887f67a53f1f46033869451d903a29204d36ea9daaf5ddfd7edd6b"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_MAIN66_LOCK_RELEASE-25f09ffc3fa01b87.json.gz",
+        "sha256": "0a445a4ae9d5fbc8d2df2fc7273981ac62aff507d68a3d14010e8f2dda395ac4"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_MAIN66_READINESS-7b963328759b4782.json.gz",
+        "sha256": "9b4bf20a1dd3ab4a6cc66df63d9c7e3a25c96bbdd49b705191e95abfaabc4aa6"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_MAIN66_STRICT-55389a4b84c5d946.log.gz",
+        "sha256": "12bc72da6d3b62a00cc2168d8bc3acd7272714790e14c811686f7701cc15ca99"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_MAIN66_SYNC_RECEIPT-208ed5a422d4e13f.json.gz",
+        "sha256": "17c5477639a9c586871829ad458271091ea6e4ee909f08504672f6a0d7be608b"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_MAIN66_VALIDATION-c9fe766c44bae973.md",
+        "sha256": "c9fe766c44bae9734a5bbf059f0626505542e25089157b1ada9d61291efe3cc2"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_PIPELINE_PENDING-e6f17060672c4875.md",
+        "sha256": "e6f17060672c48750335afa20ae93d6260b8909ddb32d24ea0b86de0b19326a5"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_PUBLICATION_SNAPSHOT-28355d84935da4b0.json.gz",
+        "sha256": "147dacc687156b56090ecec0dd4b25e6f79123569ef6bc1f2317833d79d78f62"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_REPORT_COPY_RECEIPT-534a669e900c19f3.json.gz",
+        "sha256": "ae3da7ba6df7c6d8d53911a80b904383bf46fed2d6888d2b94c68ed628f20b93"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_VALIDATION-776713e9220c654c.md",
+        "sha256": "776713e9220c654ce097e7796253b1fb0b93155ac857158e5d26c695a5eed7a4"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_VOCAB_LINT-75d6a064729cbe1e.txt.gz",
+        "sha256": "45fdaa4ec4a9ea261de13d66fa9fa74577fcccd9a3bc9bb6636b7e02f260eafe"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FROZEN_PORT_RECEIPT-012e6ec021546ec8.json.gz",
+        "sha256": "5f17302b9c4227d2ba7c4baac04688c6d6dd8b0fa375f4b37dc1fc13dd6e5d59"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FULL_PIPELINE-5740b9dc80b466bd.log.gz",
+        "sha256": "8ded28d35542a345cacaeab804c42992772ee29afeebcef2886830def5b753d8"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FULL_PIPELINE-946b10f2a4266f42.log.gz",
+        "sha256": "3ee720f84f2b6f3783f6c9e0966c9d839a10ebd2d3378a773a99ea2c6b441203"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-GAUGE_WILSON_FINITE_PW_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_-3a50603a272e1149.md",
+        "sha256": "3a50603a272e1149dfa24bc0437c9272ad6d9f0975f2627e9e418ee6a3ebb325"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-GOAL-ae6497d8902c465f.md",
+        "sha256": "ae6497d8902c465fa8015da30f32e0bf681cff237c79fff630f8cc2b70745a71"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-HANDOFF-9c0ab795ede81c9f.md",
+        "sha256": "9c0ab795ede81c9f93b7122a12cd83699b9f4eec55b654b02d83ecfc29b74a60"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-INHERITED_BOTH_REGISTRY_CHECK-e265fd9eca3c063b.json.gz",
+        "sha256": "9c3353eaf46bfa722bc73701ecaf66e4820be90eabfe8db5d7d3e3b7f17e3382"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-LITERATURE_BRIDGES-afd4b3dc89374f1f.md",
+        "sha256": "afd4b3dc89374f1ff1f1f53ed20cf3b2bf4311afe44283d587b67c32b43950bd"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-LIVE_PORT_RESULT-6a6bce0e49d6ce26.json.gz",
+        "sha256": "ac47f53588efa36a6f0cfea377f5d20fa1aaea4bb178d948e7d46cfdc8fb862f"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-MERGEABILITY_SNAPSHOT-5f9f09a5b424a88a.json.gz",
+        "sha256": "9a34b2fa612427041e1458fb67c4e9dbf9995b423049278a114199b0bf21a1d0"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-NATIVE_REVIEW-4cc3d74846f88e1b.md",
+        "sha256": "4cc3d74846f88e1bdfc645755f185b79a253ef35b85b59d44e161eaae88a2264"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-NEXT_CAMPAIGN_BRIEF_REVIEW-5595f1d44fb1cb82.md",
+        "sha256": "5595f1d44fb1cb827c631e9544e18e62de91d69e0a318438c8fc55b19dca25ef"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-NEXT_NATIVE_BRIDGE_CAMPAIGN-1825debe48e14a60.md",
+        "sha256": "1825debe48e14a60cc6ad0183661470aaa7d226485cf668c940c345e2c72712e"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-NO_GO_DISCIPLINE_CHECKLIST-324a7c07744e7f0c.md",
+        "sha256": "324a7c07744e7f0c3ffa51c5e786a34f36a07035c51e096947f56595f8098dbe"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-NO_GO_LEDGER-6dce5c1e8c391666.md",
+        "sha256": "6dce5c1e8c391666b0641489215a91274bd643ac5a8192856bb18a46783aaedf"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-OPPORTUNITY_QUEUE-749a057bf7129b97.md",
+        "sha256": "749a057bf7129b9706512e903c2d5b24c9a74b712befedb9cbee732fa58295f8"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PACK_INDEX-2d7addcea67fbd58.json.gz",
+        "sha256": "ce18e069e47ea35ce58aaf6b20b48e81fb10bb0c17de2fd813484ded00e8ed78"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PARENT_VALIDATION_METADATA_CATCHUP-e19fe79e1b1fc0c6.md",
+        "sha256": "e19fe79e1b1fc0c6dd9a60a9bf9e97dbeb7ac14aa8defe732f2d324c0f0af358"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PORT_RECEIPT-e74d4a49ae5399f8.json.gz",
+        "sha256": "30352a2249724e4376c948abc5544b50c1619edf81803b3daab3f1242a284da2"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PREREGISTRATION-802636e4f63a2bb4.md",
+        "sha256": "802636e4f63a2bb439c96f41be8e6facbd8c0acf13304a6ca327682a660101ca"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PREREGISTRATION-ffd3b1e79159b8eb.md",
+        "sha256": "ffd3b1e79159b8ebb94abfd1ed5e996e7ce7c62a9fc90ac135c7c163e7fa702d"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PROOF_REVIEW-afbe0037e110fb92.md",
+        "sha256": "afbe0037e110fb929f8c9aabde61f84ff7e25f123d2e31f26c500a7ccf1b9eb9"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PR_BACKLOG-356efbf84e1da86a.md",
+        "sha256": "356efbf84e1da86ad4b5a7c4c78aa82e8877e42ec69a06f50f1e9b223f35fdcb"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PR_BODY-43fb92e7296b72bc.md",
+        "sha256": "43fb92e7296b72bcb123ffa01246360ac7875a3374c31e9451e5fcb6a1ed6319"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PR_INVENTORY-c81d5916a37c8b12.md",
+        "sha256": "c81d5916a37c8b121ed9fa10e1a172d928de3709cb13a7ac33cf59ae3794c977"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PUBLICATION_RECEIPT-aff08d03508853b7.json.gz",
+        "sha256": "31d6a8bfcd554b16a7bec56a63a1897504fad8ad33e2a24bc6c786c2a496fb3b"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-READINESS_BEFORE_CLEANUP-b94a89be79434e64.json.gz",
+        "sha256": "5707f194f330be6d63a631ef6fcd7f6e93f722e6bc96233d793ae0b3b65ba45a"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-REVIEW_HISTORY-18d0a861bec1bbba.md",
+        "sha256": "18d0a861bec1bbbacd2662d7d95d6f2bda391542ce5955162165014e5139ee10"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ROOT_CANONICAL_PORT_REVIEW-e12cd862be85a4cb.md",
+        "sha256": "e12cd862be85a4cb4920fd7d43c5d675d60afb74c7dede7c0dd88f8f75ca0aa6"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ROOT_DERIVATION-593c0cf58c849b6b.md",
+        "sha256": "593c0cf58c849b6b3c368d748522a2df193fe387735aee75229f5d9f316b4260"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ROOT_NATIVE_REVIEW-f233708b2774f04a.md",
+        "sha256": "f233708b2774f04aca896813b9dc6ca99741cc525e47d693f952e1099bff5748"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ROOT_REVIEW-ef7eea3a64a0bc18.md",
+        "sha256": "ef7eea3a64a0bc1823597bab20ee524da780b879bce9798ee13a18aee2dde17c"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ROOT_REVIEW-fb0ff14bcc894ed4.md",
+        "sha256": "fb0ff14bcc894ed401cd7dbde9ddc19cf844153ad94f2d87f7a4c092ceb285d6"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ROUTE_PORTFOLIO-1a5b31d04209c7cd.md",
+        "sha256": "1a5b31d04209c7cdc808635f37f7168f2cb5afeef3cbe95093d0a01c22db1d9b"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-SCOPED_VALIDATION-4c5ef802f8a9e25c.md",
+        "sha256": "4c5ef802f8a9e25c9804b4a20f6e10ed2446cfc7c55ea16dcb413c121a6ad406"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-STAGING_VALIDATION-2ecd1be1b76df9ca.json.gz",
+        "sha256": "91e5d7430b17d31562e68df02bcf9a6583896d25097c9bd50d23d7570bfce9dc"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-STATE-af31f30f4d7ab531.yaml.gz",
+        "sha256": "dddeeb2b910cb6d395185b56820cb60a7406190d244780281265a8d4196b0bef"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-STATUS-851eb7fba5546863.json.gz",
+        "sha256": "dca499ea2fb2bf0e0d7529b9b79125bb2969d18a903014c3e9ad0505b6b93fcd"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-STRICT_LINT-208df6c7af272993.log.gz",
+        "sha256": "3bdc68a5f7ab31bbd12c29d7c7a7ce36ca54637c5186fc4a965075a14f823bc9"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-STRICT_LINT-97778d4e4d289958.log.gz",
+        "sha256": "f8cf99a2df681b2559469451e7f84434a58c91cf3830f63cfa7310d631bf4ba6"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-TOP_FIVE_MAIN66_VALIDATION-3c9635d6a3c76563.md",
+        "sha256": "3c9635d6a3c76563bbae7e2e360cc46ca72e8e8d31ecc2d53f1f142d7b501bd0"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-TRACE_GATE-5b5922cfbedb2267.md",
+        "sha256": "5b5922cfbedb22677f864e5443b05816ac865fcd1110a063468d61cb756c3a03"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-check-5c9f2cc5139b5928.py",
+        "sha256": "5c9f2cc5139b5928b7a666293a0f547782669cf28dfd301bdfc3a4e145c97b8a"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-citation_graph_manifest-bd5be9c83fc7275c.json.gz",
+        "sha256": "4101eec340f183057d17314ecda8e03a7703af7827e486ef33832307eb7a81cd"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-gauge_wilson_finite_pw_static_energy_lower_controls_2026_09_07-47cb4fb7eef2ef35.py",
+        "sha256": "47cb4fb7eef2ef35774dc1a7a2b327c34bd44ba1768cf146aebaa9bf1aec0b82"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-gauge_wilson_finite_pw_static_energy_lower_controls_2026_09_07-8ffdaa5eef97e1ef.txt.gz",
+        "sha256": "d9967ccbaa6627cff991e90ffea551c3b695912ec3ffcb6c5523701ef43f5476"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-result-37ff13f4bde23384.json.gz",
+        "sha256": "17c8ed6d96d1304c6e1796614601484b1f5eda1ee35fe13a320c07145b301519"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-toe_main66_five_STATUS-421393f8bba61259.json.gz",
+        "sha256": "4feab6f92e42c0e088c1a754f422809a9557459843b3d2460038191d1ffa1ee5"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-validated_readiness_before_generated_cleanup-716bc4b683e8877b.json.gz",
+        "sha256": "71b5e6cd116f0261040b237940909d1a6da3ffacecb6d2bf8e3e2e2a368d1dfa"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/pr8033-archive-manifest.json",
+        "sha256": "59e67cb9ab774dbd1f4214de7addd9e3766ab17fff58a36f032452d9a0da372b"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/pr8033-original.delta.gz",
+        "sha256": "ab5b7139ba87cdd63ddd03050ecea335b8da21ec179518aee56ccb09b91d4bdd"
+      },
+      {
+        "path": "scripts/gauge_wilson_finite_pw_static_energy_lower_controls_2026_09_07.py",
+        "sha256": "dd230084337c5204fee69a9040702d9a94288a0f251f875109dea3a7a6567b6e"
+      }
+    ],
+    "deleted_paths": []
+  },
+  "inputs": {
+    "runtime": [
+      {
+        "path": "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "a5df21b019b0ec35fce30bccced5c85862595235c1c9aa28779a3574fdc979f3"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "af043363c9ff1bb69829cb991c2ddd7f5bcde0ae9d57fc550ac55f58fccd71c6"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_FINITE_PW_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "87b32515257c0c3363b6f47845ff8eafada3d1b79e02dff075ea8bb905c696d6"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "0621d2e82146934a4dc126f464b9966aa578fab4e99ddbbf5ef34d67ccdf8d72"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "ea01dd24fe7ab4432c0f8c09ae1d3273c02b09ff11c51757440807921ae0df4f"
+      },
+      {
+        "path": "scripts/gauge_wilson_finite_pw_static_energy_lower_controls_2026_09_07.py",
+        "sha256": "dd230084337c5204fee69a9040702d9a94288a0f251f875109dea3a7a6567b6e"
+      }
+    ],
+    "helpers": [],
+    "parents": [
+      {
+        "path": "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "a5df21b019b0ec35fce30bccced5c85862595235c1c9aa28779a3574fdc979f3"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "af043363c9ff1bb69829cb991c2ddd7f5bcde0ae9d57fc550ac55f58fccd71c6"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "0621d2e82146934a4dc126f464b9966aa578fab4e99ddbbf5ef34d67ccdf8d72"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "ea01dd24fe7ab4432c0f8c09ae1d3273c02b09ff11c51757440807921ae0df4f"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/CANONICAL_HARNESS_INDEX.md",
+        "sha256": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "a5df21b019b0ec35fce30bccced5c85862595235c1c9aa28779a3574fdc979f3"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "af043363c9ff1bb69829cb991c2ddd7f5bcde0ae9d57fc550ac55f58fccd71c6"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "0621d2e82146934a4dc126f464b9966aa578fab4e99ddbbf5ef34d67ccdf8d72"
+      },
+      {
+        "path": "docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "sha256": "ea01dd24fe7ab4432c0f8c09ae1d3273c02b09ff11c51757440807921ae0df4f"
+      },
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      },
+      {
+        "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+        "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+      },
+      {
+        "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+        "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+      },
+      {
+        "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+        "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+        "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+        "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md",
+        "sha256": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+        "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/LANDING.md",
+        "sha256": "827032765af31a2f4ef64b3e595173c7e81e2f56b713793aba336228411a4624"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+        "sha256": "749a19389fbab3042479b32e2499ae95ff04e1590e3edb0cee60ad267f57c0af"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+        "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+        "sha256": "03a9bf84e4efaf7d0d3b9efd8b2b9027c9005fd91be7862f3de1f58fd0b6a18f"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/SALVAGE.md",
+        "sha256": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+        "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+        "sha256": "6ab026a472ce9a601385796eea6dcd32658d048cb14f3fdffad1bd51ee409666"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+        "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+      },
+      {
+        "path": "docs/audit/README.md",
+        "sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f"
+      },
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/premise_decision_history.json",
+        "sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113"
+      },
+      {
+        "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+        "sha256": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8"
+      },
+      {
+        "path": "docs/repo/CONTROLLED_VOCABULARY.md",
+        "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca"
+      },
+      {
+        "path": "docs/repo/DEFERRED_DECISIONS.md",
+        "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e"
+      },
+      {
+        "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+        "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8033-evidence/README.md",
+        "sha256": "0837dd3190da10338913e450d87a071d434dbe1bdfdaca930a993b0a3e66bea5"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "e092f800d2c2d5671f24e248e7fee48edac683bf70f8641d2b596896acd5fab1"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "40d448bf1b6f0bc9777731c88aed1a0972719ee5969ee60b2c472d11c302c12e"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "reviewer": {
+    "session": "/root/review_8033; actual cold and final confirmation pending",
+    "report": {
+      "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+      "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+    },
+    "references": [
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8033-author-prepared-v1.json",
+        "sha256": "b6bb3c0f2e3e7c1c16b211a633e57ee8bf5d15dc37984109f0eccdd555ad0403"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8033-prepared-v1-source-freeze.json",
+        "sha256": "488698c6912ecf689fc068bb894df145dbcf357c9147ec4d58c5c47764c6e944"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8033-author-handoff-v1.json",
+        "sha256": "4d4a47b4d19fbc068adf5cad36741130acbded59e19c58396dda9870f40818ff"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8033-author-full-mapping-v1.json",
+        "sha256": "1c638a3064e5fd7b468dc21ea9b5c3d871afe5e7dc1e9507dfa59da5e662948c"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8033-build-staged-draft-v2.py",
+        "sha256": "ee9a6ece40ce09725f8b406eb9a898387264cdc1a2757cf6db537e3ef6550925"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8033-context-refresh-v1.json",
+        "sha256": "96f70e603190665fbe59d78f616efabfdcd2489a9353e862a0dfa05d36d11991"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8033-author-source-handoff-staged-v1.json",
+        "sha256": "c8c812e66459212c70dfdf2a7a52a052a788d2fa2a258736d09c062a60536826"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8033-author-cache-api-staged-v1.json",
+        "sha256": "b1fae79d5c10f8c18e994f8f774aaefc9b9eacd83bcf27cf321e3128f67033b7"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8033-author-resource-plan-staged-v1.json",
+        "sha256": "6f6bd87cd51c95511ce9c338c2834167559bb661bea2f6f7575eb74ee6fdac64"
+      }
+    ]
+  },
+  "notes": [
+    {
+      "path": "docs/GAUGE_WILSON_FINITE_PW_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "claim_id": "gauge_wilson_finite_pw_uniform_static_source_energy_bounds_bounded_theorem_note_2026-09-07",
+      "declared_claim_id": "gauge_wilson_finite_pw_uniform_static_source_energy_bounds_bounded_theorem_note_2026-09-07",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/gauge_wilson_finite_pw_static_energy_lower_controls_2026_09_07.py",
+      "helpers": [],
+      "citations": [
+        "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/work_history/repo/review_feedback/pr8033-evidence/README.md"
+      ],
+      "repository_dependencies": [
+        "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+        "docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+      ],
+      "dependency_rationale": "Complete main and alternative proofs live inline; positive cutoff/equivariant creation-log/resolvent/ghost arguments rely on actual linked uniform-gap and charged-coordinate sources; optional fixed-R selected sector uses linked selected-GNS proof and explicit Yarotsky theorem. Finite-energy upper envelope prospectively depends on actual PR8032 full proof, currently absent here. No predecessor review verdict or parent8031 deferred negative certification is theorem authority."
+    }
+  ],
+  "supporting_proofs": [],
+  "non_science_notes": [
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/README.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ARTIFACT_PLAN-53b1136cea2552f5.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ASSUMPTIONS_AND_IMPORTS-0a0aaa5360cb8283.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-CAMPAIGN_REPORT-4d93b09ecc9cc035.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-CAMPAIGN_REPORT_REVIEW-7550739be2ef42a8.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-CLAIM_STATUS_CERTIFICATE-d1157c49ba9da70b.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-CONTROLS_PREREGISTRATION-6cbf80a5ca28caa1.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-DELIVERY_RECEIPT-e4a43678cd42a912.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-DELIVERY_RECEIPT-fc5b771191eb47ae.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-DERIVATION-2037554d8fffef48.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FAILED_SYNTAX-b334a0b1725b8b39.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_MAIN66_VALIDATION-c9fe766c44bae973.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_PIPELINE_PENDING-e6f17060672c4875.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-FINAL_VALIDATION-776713e9220c654c.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-GAUGE_WILSON_FINITE_PW_UNIFORM_STATIC_SOURCE_ENERGY_BOUNDS_BOUNDED_THEOREM_-3a50603a272e1149.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-GOAL-ae6497d8902c465f.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-HANDOFF-9c0ab795ede81c9f.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-LITERATURE_BRIDGES-afd4b3dc89374f1f.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-NATIVE_REVIEW-4cc3d74846f88e1b.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-NEXT_CAMPAIGN_BRIEF_REVIEW-5595f1d44fb1cb82.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-NEXT_NATIVE_BRIDGE_CAMPAIGN-1825debe48e14a60.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-NO_GO_DISCIPLINE_CHECKLIST-324a7c07744e7f0c.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-NO_GO_LEDGER-6dce5c1e8c391666.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-OPPORTUNITY_QUEUE-749a057bf7129b97.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PARENT_VALIDATION_METADATA_CATCHUP-e19fe79e1b1fc0c6.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PREREGISTRATION-802636e4f63a2bb4.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PREREGISTRATION-ffd3b1e79159b8eb.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PROOF_REVIEW-afbe0037e110fb92.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PR_BACKLOG-356efbf84e1da86a.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PR_BODY-43fb92e7296b72bc.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-PR_INVENTORY-c81d5916a37c8b12.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-REVIEW_HISTORY-18d0a861bec1bbba.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ROOT_CANONICAL_PORT_REVIEW-e12cd862be85a4cb.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ROOT_DERIVATION-593c0cf58c849b6b.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ROOT_NATIVE_REVIEW-f233708b2774f04a.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ROOT_REVIEW-ef7eea3a64a0bc18.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ROOT_REVIEW-fb0ff14bcc894ed4.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-ROUTE_PORTFOLIO-1a5b31d04209c7cd.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-SCOPED_VALIDATION-4c5ef802f8a9e25c.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-TOP_FIVE_MAIN66_VALIDATION-3c9635d6a3c76563.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/pr8033-evidence/kept/pr8033-TRACE_GATE-5b5922cfbedb2267.md",
+      "rationale": "Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8033-early-review-v1.json",
+        "sha256": "c6f42cecc763967deec0e6e0e4e9522d3382225b2255d61442741023a0ab50e4"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1412 @@
+{
+  "status": "CAPTURED; no scientific verdict or staging",
+  "error": null,
+  "whole_tree_watchdog": {
+    "limit_seconds": 120,
+    "limit_bytes": 402653184,
+    "sampling_interval_seconds": 0.02,
+    "samples": 43,
+    "peak_tree_rss_bytes": 143032320,
+    "violations": [],
+    "scope": "External supervisor plus worker process group and descendants; sampled RSS, not an OS hard-memory reservation"
+  },
+  "elapsed_seconds": 2.1649060000199825,
+  "before": {
+    "docs/ROOTED_MARKED_TREE_EXTENSION_SEED_INDUCTION_AND_RELAXED_LIFTED_TREE_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-17.md": {
+      "sha256": "24be34b472e47cafd59a15dd5125bfad54a1270fb4712002d9bf29d145029559",
+      "device": 16777231,
+      "inode": 252658490,
+      "size": 21144,
+      "mtime_ns": 1790141820756298478,
+      "ctime_ns": 1790141820756298478
+    },
+    "docs/work_history/review_loop/pr8177/README.md": {
+      "sha256": "20ba8efdb15e3e2a17214a2e7e537f8e6049f21c293584e659e108466a5a762d",
+      "device": 16777231,
+      "inode": 252658199,
+      "size": 919,
+      "mtime_ns": 1790141719055316087,
+      "ctime_ns": 1790141719055331337
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-01-APPROACH_REGISTRY.md.gz": {
+      "sha256": "af92ca6399a4b99cc6d44aab5bb102fd72419716322bbdd57b90bfa8dc58add7",
+      "device": 16777231,
+      "inode": 252658146,
+      "size": 1165,
+      "mtime_ns": 1790141717910900535,
+      "ctime_ns": 1790141717910932826
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-02-CHECKER_block33_findings.md.gz": {
+      "sha256": "591c0969fcc9346ceabaf92401cb5abd9f1998e22342fb5d54ef319e68832bdd",
+      "device": 16777231,
+      "inode": 252658147,
+      "size": 1250,
+      "mtime_ns": 1790141717930964247,
+      "ctime_ns": 1790141717930994747
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-03-CLAIM_STATUS_CERTIFICATE_block33.md.gz": {
+      "sha256": "9f287c201ddb8b8e77f611fabe61e82dad7f15240130f8930aedeb74b9e67553",
+      "device": 16777231,
+      "inode": 252658148,
+      "size": 1344,
+      "mtime_ns": 1790141717950487459,
+      "ctime_ns": 1790141717950511667
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-04-GOAL_block33.md.gz": {
+      "sha256": "521c2e6ebe8893c8e4ea6e498480af20f3d27f7b406cf7691e098ea89edf45f2",
+      "device": 16777231,
+      "inode": 252658149,
+      "size": 1039,
+      "mtime_ns": 1790141717970752421,
+      "ctime_ns": 1790141717970781213
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-05-HANDOFF.md.gz": {
+      "sha256": "72407fbae9ba80b236f0eb6ade0801fe2e5586fea3738ad7d5abe1bb7e5ed2b2",
+      "device": 16777231,
+      "inode": 252658150,
+      "size": 4330,
+      "mtime_ns": 1790141717995147051,
+      "ctime_ns": 1790141717995229884
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-06-NO_GO_LEDGER.md.gz": {
+      "sha256": "15213bc6408443f3ee71021dd7fddccb88021c09c8e31d4714a93faf30eb7ceb",
+      "device": 16777231,
+      "inode": 252658151,
+      "size": 1263,
+      "mtime_ns": 1790141718016383846,
+      "ctime_ns": 1790141718016410388
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-07-OPPORTUNITY_QUEUE.md.gz": {
+      "sha256": "851f17e08556a5f636bb50d2b1b2600ead7e959f29b15bbdd4fca09e9d8f5536",
+      "device": 16777231,
+      "inode": 252658152,
+      "size": 4964,
+      "mtime_ns": 1790141718038798975,
+      "ctime_ns": 1790141718038825517
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-08-RESULTS_block33.md.gz": {
+      "sha256": "cee92027a01abe3da0d42d552445fa1317e89cb49e826706a1ad563c727286a3",
+      "device": 16777231,
+      "inode": 252658153,
+      "size": 2987,
+      "mtime_ns": 1790141718058970646,
+      "ctime_ns": 1790141718058995813
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-09-REVIEW_HISTORY.md.gz": {
+      "sha256": "a92b7563166b6c0bfb461373db447ff6d1cd3aeff4d00e11b8c369bafbcb6603",
+      "device": 16777231,
+      "inode": 252658154,
+      "size": 19601,
+      "mtime_ns": 1790141718083278109,
+      "ctime_ns": 1790141718083308442
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-10-STATE.yaml.gz": {
+      "sha256": "b8646937d7930163f69a33e2262d843d11b77202712c89daf795bc5e2e6e482e",
+      "device": 16777231,
+      "inode": 252658155,
+      "size": 6238,
+      "mtime_ns": 1790141718103077654,
+      "ctime_ns": 1790141718103108113
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-11-TRACE_GATE.md.gz": {
+      "sha256": "f3497bb2ab4f94d3d8c97d0fe95f2ce5b5355ea89de8f3c62975d5789ec0a62b",
+      "device": 16777231,
+      "inode": 252658156,
+      "size": 1699,
+      "mtime_ns": 1790141718126333242,
+      "ctime_ns": 1790141718126389659
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-12-supervisor_control_block33_certify33.out.txt.gz": {
+      "sha256": "da5ab6368306aace6be3fa406d9c7eb87c1c90443482f009c494430376014db4",
+      "device": 16777231,
+      "inode": 252658157,
+      "size": 573,
+      "mtime_ns": 1790141718148995330,
+      "ctime_ns": 1790141718149020497
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-13-supervisor_control_block33_certify33.py.gz": {
+      "sha256": "c1a61f3e163ae885fdc53f07d3b8a1c588de2022bb5140119b7038fad9d1456d",
+      "device": 16777231,
+      "inode": 252658158,
+      "size": 1482,
+      "mtime_ns": 1790141718167930459,
+      "ctime_ns": 1790141718167965959
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-14-supervisor_control_block33_core30.py.gz": {
+      "sha256": "f84b5c2b7090bdf146079018c7d0b56317110e4702595cef6a6f329c72aad98f",
+      "device": 16777231,
+      "inode": 252658159,
+      "size": 3800,
+      "mtime_ns": 1790141718189707171,
+      "ctime_ns": 1790141718189742129
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-15-supervisor_control_block33_diag.out.txt.gz": {
+      "sha256": "74b1d81f1e8ccc5f4218784105e7dad490ffa86b748075136b95c0a727b0e7e4",
+      "device": 16777231,
+      "inode": 252658160,
+      "size": 272,
+      "mtime_ns": 1790141718215956884,
+      "ctime_ns": 1790141718215986718
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-16-supervisor_control_block33_diag.py.gz": {
+      "sha256": "ad490fb120e95c849ef4202c27a1b489bfa1515fe0dd726caa167739cfb30d63",
+      "device": 16777231,
+      "inode": 252658161,
+      "size": 732,
+      "mtime_ns": 1790141718243494098,
+      "ctime_ns": 1790141718243525723
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-17-supervisor_control_block33_doublechild.out.txt.gz": {
+      "sha256": "8c5fa7e6df4f9e596e31e829ec2386bb47c7dee36865f832c4dae785a2c61a6d",
+      "device": 16777231,
+      "inode": 252658162,
+      "size": 604,
+      "mtime_ns": 1790141718270089520,
+      "ctime_ns": 1790141718270123686
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-18-supervisor_control_block33_doublechild2.py.gz": {
+      "sha256": "219f69ac6a6ababd99061a6bcfa7d6fa86391f758b17a2f6c84eb6005fe6ba33",
+      "device": 16777231,
+      "inode": 252658163,
+      "size": 1156,
+      "mtime_ns": 1790141718298942150,
+      "ctime_ns": 1790141718298972234
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-19-supervisor_control_block33_doublekind.py.gz": {
+      "sha256": "7675571e35c3ed4769a5723bd8877a612f6f01c8d8cd9862495e0461d55bedfa",
+      "device": 16777231,
+      "inode": 252658164,
+      "size": 620,
+      "mtime_ns": 1790141718323442780,
+      "ctime_ns": 1790141718323536155
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-20-supervisor_control_block33_kind_certs.out.txt.gz": {
+      "sha256": "35fa2d29dbda2d020c044c819b2bdf46425ea5a05a437bcb607227c8aee2b8e6",
+      "device": 16777231,
+      "inode": 252658165,
+      "size": 137,
+      "mtime_ns": 1790141718348517993,
+      "ctime_ns": 1790141718348542243
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-21-supervisor_control_block33_kind_certs.py.gz": {
+      "sha256": "5ee9937f9172a08c429491b8a7eb055fa1c5ae81b4a6a48859f0da502f856ce3",
+      "device": 16777231,
+      "inode": 252658166,
+      "size": 1702,
+      "mtime_ns": 1790141718372136873,
+      "ctime_ns": 1790141718372164998
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-22-supervisor_control_block33_lemmas.out.txt.gz": {
+      "sha256": "d692118561c835bca496897d18e6edfc961b31629c0a631c059297809260bb3e",
+      "device": 16777231,
+      "inode": 252658167,
+      "size": 944,
+      "mtime_ns": 1790141718392388127,
+      "ctime_ns": 1790141718392448876
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-23-supervisor_control_block33_lemmas.py.gz": {
+      "sha256": "3a82d272967d2fd80c15c7328ff50262a78efdb860f4ebb23a48de5b271567ec",
+      "device": 16777231,
+      "inode": 252658168,
+      "size": 1051,
+      "mtime_ns": 1790141718416501714,
+      "ctime_ns": 1790141718416531881
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-24-supervisor_control_block33_mintree.py.gz": {
+      "sha256": "c7390f21771ccb4f760995d3f2fc9605e2f576e48fba8b4f9112c1f647dcd1fb",
+      "device": 16777231,
+      "inode": 252658169,
+      "size": 3653,
+      "mtime_ns": 1790141718440202386,
+      "ctime_ns": 1790141718440259094
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-25-supervisor_control_block33_overlap.out.txt.gz": {
+      "sha256": "3454257034cb3114aa2ec0ab99ab03e56209a515eb3ff6e344f192cc442f86ab",
+      "device": 16777231,
+      "inode": 252658170,
+      "size": 308,
+      "mtime_ns": 1790141718461660681,
+      "ctime_ns": 1790141718461695806
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-26-supervisor_control_block33_overlap.py.gz": {
+      "sha256": "57a0a06c28fb0baa32797381ce8596ffadcfaf188d793311057862a4a5df629b",
+      "device": 16777231,
+      "inode": 252658171,
+      "size": 841,
+      "mtime_ns": 1790141718485024728,
+      "ctime_ns": 1790141718485092727
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-27-supervisor_control_block33_refuter.out.txt.gz": {
+      "sha256": "5cfd1c08d7384091a597bb52ac4721098f5c66130b6f20226701c2fe703b50c0",
+      "device": 16777231,
+      "inode": 252658172,
+      "size": 458,
+      "mtime_ns": 1790141718509433149,
+      "ctime_ns": 1790141718509472440
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-28-supervisor_control_block33_refuter.py.gz": {
+      "sha256": "87df766395256be51095ce4f0de6940db2654e898257064ef9fff145968ebe3a",
+      "device": 16777231,
+      "inode": 252658173,
+      "size": 3263,
+      "mtime_ns": 1790141718532114070,
+      "ctime_ns": 1790141718532139070
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-29-supervisor_control_block33_restricted_count.out.txt.gz": {
+      "sha256": "6c535b7abb3cedca734e7346b4d8fdcdef441577d4d8c0fafec429470efea229",
+      "device": 16777231,
+      "inode": 252658174,
+      "size": 350,
+      "mtime_ns": 1790141718557307825,
+      "ctime_ns": 1790141718557369491
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-30-supervisor_control_block33_restricted_count.py.gz": {
+      "sha256": "119d9ad94bdaa5703c68914b1a137bfeaf19e4f13ff4124274208bd490d79083",
+      "device": 16777231,
+      "inode": 252658175,
+      "size": 1804,
+      "mtime_ns": 1790141718576246370,
+      "ctime_ns": 1790141718576333912
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-31-supervisor_control_block33_rooted.out.txt.gz": {
+      "sha256": "49d549561a2830e0ad47df3489550d13488ec4859355c38e5cdad9556a191099",
+      "device": 16777231,
+      "inode": 252658176,
+      "size": 414,
+      "mtime_ns": 1790141718599330374,
+      "ctime_ns": 1790141718599394041
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-32-supervisor_control_block33_rooted.py.gz": {
+      "sha256": "7f5b60f6273c9c3e8f33a93114374c8758a2877180fb2c392368b83b07b56819",
+      "device": 16777231,
+      "inode": 252658177,
+      "size": 2124,
+      "mtime_ns": 1790141718623952504,
+      "ctime_ns": 1790141718624031921
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-33-supervisor_control_block33_shape.out.txt.gz": {
+      "sha256": "01ed560ba5252bd9c107bebf8c71f5ee3f64deca1820ff2c2460d083fdd22aa2",
+      "device": 16777231,
+      "inode": 252658178,
+      "size": 360,
+      "mtime_ns": 1790141718647097009,
+      "ctime_ns": 1790141718647145300
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-34-supervisor_control_block33_shape.py.gz": {
+      "sha256": "fd7b1708d1ae18f504bba4cd30bea1f496d1c32196212ee79c111a7cb9561eac",
+      "device": 16777231,
+      "inode": 252658179,
+      "size": 1844,
+      "mtime_ns": 1790141718668825929,
+      "ctime_ns": 1790141718668855846
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-35-supervisor_control_block33_shape2.out.txt.gz": {
+      "sha256": "a88f21d9513353385e69344daec7ef883340d41a4ee0e893bda353e29501eb70",
+      "device": 16777231,
+      "inode": 252658180,
+      "size": 439,
+      "mtime_ns": 1790141718688108766,
+      "ctime_ns": 1790141718688137808
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-36-supervisor_control_block33_shape2.py.gz": {
+      "sha256": "6dc13ec789e837eaff10db39673d447cf1b49f3591ca32c526d2d51f6fb8a1ae",
+      "device": 16777231,
+      "inode": 252658181,
+      "size": 824,
+      "mtime_ns": 1790141718711207937,
+      "ctime_ns": 1790141718711296896
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-37-supervisor_control_block33_structural.out.txt.gz": {
+      "sha256": "85eac03984b24e95c26be51891a1490fe70b04519b529f4ab52f8b3f79ea5a78",
+      "device": 16777231,
+      "inode": 252658182,
+      "size": 232,
+      "mtime_ns": 1790141718733774900,
+      "ctime_ns": 1790141718733803275
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-38-supervisor_control_block33_structural.py.gz": {
+      "sha256": "739547da96ac1525aa94f925b85352039f257b7674319875a90a916fd90e79a6",
+      "device": 16777231,
+      "inode": 252658183,
+      "size": 1301,
+      "mtime_ns": 1790141718751842820,
+      "ctime_ns": 1790141718751873028
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-39-supervisor_control_block33_tight.out.txt.gz": {
+      "sha256": "d7551367d6a9f875d7a39ac7c5d4a601949a49f0dde41e26306415475a302c73",
+      "device": 16777231,
+      "inode": 252658184,
+      "size": 231,
+      "mtime_ns": 1790141718771155824,
+      "ctime_ns": 1790141718771185907
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-40-supervisor_control_block33_tight.py.gz": {
+      "sha256": "90432879118df823e56fd5f3b4fe96425f1b328889dea0fbf9a43c9c0758c403",
+      "device": 16777231,
+      "inode": 252658185,
+      "size": 1756,
+      "mtime_ns": 1790141718792574161,
+      "ctime_ns": 1790141718792602620
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-41-supervisor_control_block33_tightpairs.out.txt.gz": {
+      "sha256": "dd03b22173a828d8fb03c07c1554ba08ccadeb553b41a8e7056cf8e6136dd036",
+      "device": 16777231,
+      "inode": 252658186,
+      "size": 1183,
+      "mtime_ns": 1790141718818544750,
+      "ctime_ns": 1790141718818601833
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-42-supervisor_control_block33_tightpairs.py.gz": {
+      "sha256": "e35c0a131ad0e869f45464b4bc83e7f20bf774378c05470f7e0867c6181341bc",
+      "device": 16777231,
+      "inode": 252658187,
+      "size": 1076,
+      "mtime_ns": 1790141718842275212,
+      "ctime_ns": 1790141718842333796
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-43-supervisor_control_block33_violate.out.txt.gz": {
+      "sha256": "7e2024a992d30c9a045a3860c6aa4e1718bf351c8eb263145d41ab68cc08b620",
+      "device": 16777231,
+      "inode": 252658188,
+      "size": 367,
+      "mtime_ns": 1790141718865991967,
+      "ctime_ns": 1790141718866023467
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-44-supervisor_control_block33_violate.py.gz": {
+      "sha256": "de5ab135d509ac109996ec591e6d5e1328f3d8c1032323df7460b5f1fcf11512",
+      "device": 16777231,
+      "inode": 252658189,
+      "size": 1010,
+      "mtime_ns": 1790141718888286096,
+      "ctime_ns": 1790141718888315763
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-45-supervisor_control_block33_vprofile.out.txt.gz": {
+      "sha256": "777cb0c942053ba2d3df3c7ea3f8615aad99126551c0c272550b5bce2e87d831",
+      "device": 16777231,
+      "inode": 252658190,
+      "size": 487,
+      "mtime_ns": 1790141718913033268,
+      "ctime_ns": 1790141718913063893
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-46-supervisor_control_block33_vprofile.py.gz": {
+      "sha256": "6f81017fe35d5091563f01fb9d6713a159f0bff7db3002b6acb32ea932c1aae5",
+      "device": 16777231,
+      "inode": 252658191,
+      "size": 727,
+      "mtime_ns": 1790141718933828355,
+      "ctime_ns": 1790141718933858980
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-47-ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_ROOTED_INEQUALITY_REDUCES_THE_UNIT_BUDGET_TO_THE_TIGHT_SIBLING_LEMMA_AND_THE_ONE_PROCESSED_CHILD_COUNT_BOUNDED_THEOREM_NOTE_2026-09-17.md.gz": {
+      "sha256": "b0606265a271036d573efa2185f195c123dc28297c9fe04b4084656c760101b0",
+      "device": 16777231,
+      "inode": 252658192,
+      "size": 9815,
+      "mtime_ns": 1790141718951764817,
+      "ctime_ns": 1790141718951851983
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-48-citation_graph_manifest.json.gz": {
+      "sha256": "0bbc27fa1d64fb2485733a27cb9d8d3e0813e802d4f632666473e75e3f5d3740",
+      "device": 16777231,
+      "inode": 252658193,
+      "size": 128211,
+      "mtime_ns": 1790141719001160618,
+      "ctime_ns": 1790141719001200326
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-49-admissibility_rule_six_axis_formation_threshold_rooted_inequality_reduces_the_unit_budget_to_the_tight_sibling_lemma_and_the_one_processed_child_count_2026_09_17.txt.gz": {
+      "sha256": "9d1af4a2c1ccaaffc46fbc3523e9bdd971d2b7049ccd49777fbc987c999d54cf",
+      "device": 16777231,
+      "inode": 252658194,
+      "size": 2086,
+      "mtime_ns": 1790141719022768455,
+      "ctime_ns": 1790141719022798122
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-50-admissibility_rule_six_axis_formation_threshold_rooted_inequality_reduces_the_unit_budget_to_the_tight_sibling_lemma_and_the_one_processed_child_count_2026_09_17.py.gz": {
+      "sha256": "1f49b8c3414dde35754db92d0789928ffd84e220922e7cf7f49069f63d71b7c6",
+      "device": 16777231,
+      "inode": 252658195,
+      "size": 10589,
+      "mtime_ns": 1790141719045879418,
+      "ctime_ns": 1790141719045964710
+    },
+    "docs/work_history/review_loop/pr8177/pr8177-deferred-science-and-history.txt": {
+      "sha256": "5278a87b8d71f9da372d2fe9f7f9691dcc79400a21711cd4494abd5de2ea929a",
+      "device": 16777231,
+      "inode": 252658198,
+      "size": 32493,
+      "mtime_ns": 1790141719055232587,
+      "ctime_ns": 1790141719055247753
+    },
+    "docs/work_history/review_loop/pr8177/pr8177-original-delta.patch.gz": {
+      "sha256": "16b76114e7797f9d2de52358c3a625657dee411e05272fecfbae7eae2cb9e352",
+      "device": 16777231,
+      "inode": 252658196,
+      "size": 58312,
+      "mtime_ns": 1790141719054572128,
+      "ctime_ns": 1790141719054599878
+    },
+    "docs/work_history/review_loop/pr8177/pr8177-original-manifest.json": {
+      "sha256": "39ec4c7abd886df5508b43c786f87b3127ed1cac9a78e0e6d795b08a1d7e65a3",
+      "device": 16777231,
+      "inode": 252658197,
+      "size": 44053,
+      "mtime_ns": 1790141719055122961,
+      "ctime_ns": 1790141719055142086
+    },
+    "scripts/rooted_marked_tree_extension_seed_induction_relaxed_lifted_certificates_check_2026_09_17.py": {
+      "sha256": "58202cb8f1e613b4661c538e3c5678b9cdf4f47a8a4fbed8bbf226660e325100",
+      "device": 16777231,
+      "inode": 252658491,
+      "size": 35441,
+      "mtime_ns": 1790141820756562853,
+      "ctime_ns": 1790141820756562853
+    },
+    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md": {
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "device": 16777231,
+      "inode": 243427797,
+      "size": 45923,
+      "mtime_ns": 1790108668945355435,
+      "ctime_ns": 1790108668945355435
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "device": 16777231,
+      "inode": 243429907,
+      "size": 11333,
+      "mtime_ns": 1790108669195469850,
+      "ctime_ns": 1790108669195469850
+    },
+    "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md": {
+      "sha256": "5642877329c141c39394936173c35c82c5cd18bb8f9a408c17fad0497cef647e",
+      "device": 16777231,
+      "inode": 252645810,
+      "size": 29586,
+      "mtime_ns": 1790141391985435713,
+      "ctime_ns": 1790141391985435713
+    },
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": {
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "device": 16777231,
+      "inode": 243429435,
+      "size": 4770,
+      "mtime_ns": 1790108669134824097,
+      "ctime_ns": 1790108669134824097
+    },
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "device": 16777231,
+      "inode": 243430690,
+      "size": 5313,
+      "mtime_ns": 1790108669333460157,
+      "ctime_ns": 1790108669333460157
+    },
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": {
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "device": 16777231,
+      "inode": 243430871,
+      "size": 2581,
+      "mtime_ns": 1790108669350972830,
+      "ctime_ns": 1790108669350972830
+    },
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": {
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "device": 16777231,
+      "inode": 243431819,
+      "size": 6427,
+      "mtime_ns": 1790108669458304698,
+      "ctime_ns": 1790108669458304698
+    },
+    "docs/ai_methodology/skills/review-loop/PREFLIGHT.md": {
+      "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb",
+      "device": 16777231,
+      "inode": 243431864,
+      "size": 8247,
+      "mtime_ns": 1790108669462053399,
+      "ctime_ns": 1790108669462053399
+    },
+    "docs/ai_methodology/skills/review-loop/SKILL.md": {
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+      "device": 16777231,
+      "inode": 252645829,
+      "size": 19430,
+      "mtime_ns": 1790141391989512547,
+      "ctime_ns": 1790141391989512547
+    },
+    "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md": {
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "device": 16777231,
+      "inode": 252645830,
+      "size": 23216,
+      "mtime_ns": 1790141391989631881,
+      "ctime_ns": 1790141391989631881
+    },
+    "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md": {
+      "sha256": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4",
+      "device": 16777231,
+      "inode": 252645831,
+      "size": 3829,
+      "mtime_ns": 1790141391989692422,
+      "ctime_ns": 1790141391989692422
+    },
+    "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md": {
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "device": 16777231,
+      "inode": 252756493,
+      "size": 7554,
+      "mtime_ns": 1790143957388465555,
+      "ctime_ns": 1790143957388465555
+    },
+    "docs/ai_methodology/skills/review-loop/references/LANDING.md": {
+      "sha256": "827032765af31a2f4ef64b3e595173c7e81e2f56b713793aba336228411a4624",
+      "device": 16777231,
+      "inode": 252645833,
+      "size": 28160,
+      "mtime_ns": 1790141391989875172,
+      "ctime_ns": 1790141391989875172
+    },
+    "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md": {
+      "sha256": "749a19389fbab3042479b32e2499ae95ff04e1590e3edb0cee60ad267f57c0af",
+      "device": 16777231,
+      "inode": 252756495,
+      "size": 6575,
+      "mtime_ns": 1790143957388644054,
+      "ctime_ns": 1790143957388644054
+    },
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md": {
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "device": 16777231,
+      "inode": 252645835,
+      "size": 5188,
+      "mtime_ns": 1790141391990043547,
+      "ctime_ns": 1790141391990043547
+    },
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md": {
+      "sha256": "03a9bf84e4efaf7d0d3b9efd8b2b9027c9005fd91be7862f3de1f58fd0b6a18f",
+      "device": 16777231,
+      "inode": 252756499,
+      "size": 11698,
+      "mtime_ns": 1790143957389036636,
+      "ctime_ns": 1790143957389036636
+    },
+    "docs/ai_methodology/skills/review-loop/references/SALVAGE.md": {
+      "sha256": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee",
+      "device": 16777231,
+      "inode": 252645837,
+      "size": 5009,
+      "mtime_ns": 1790141391990170089,
+      "ctime_ns": 1790141391990170089
+    },
+    "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md": {
+      "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7",
+      "device": 16777231,
+      "inode": 252645838,
+      "size": 12918,
+      "mtime_ns": 1790141391990253089,
+      "ctime_ns": 1790141391990253089
+    },
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": {
+      "sha256": "6ab026a472ce9a601385796eea6dcd32658d048cb14f3fdffad1bd51ee409666",
+      "device": 16777231,
+      "inode": 252756503,
+      "size": 14592,
+      "mtime_ns": 1790143957389386676,
+      "ctime_ns": 1790143957389386676
+    },
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": {
+      "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc",
+      "device": 16777231,
+      "inode": 252645840,
+      "size": 24983,
+      "mtime_ns": 1790141391990991672,
+      "ctime_ns": 1790141391990991672
+    },
+    "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py": {
+      "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494",
+      "device": 16777231,
+      "inode": 243431881,
+      "size": 15405,
+      "mtime_ns": 1790108669466342891,
+      "ctime_ns": 1790108669466342891
+    },
+    "docs/audit/data/axiom_premise_nodes.json": {
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "device": 16777231,
+      "inode": 243431932,
+      "size": 6416,
+      "mtime_ns": 1790108669485160144,
+      "ctime_ns": 1790108669485160144
+    },
+    "docs/audit/data/doc_authority_registry.json": {
+      "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173",
+      "device": 16777231,
+      "inode": 243431948,
+      "size": 6052,
+      "mtime_ns": 1790108669497710203,
+      "ctime_ns": 1790108669497710203
+    },
+    "docs/audit/scripts/build_citation_graph.py": {
+      "sha256": "e092f800d2c2d5671f24e248e7fee48edac683bf70f8641d2b596896acd5fab1",
+      "device": 16777231,
+      "inode": 252756506,
+      "size": 74561,
+      "mtime_ns": 1790143957392230037,
+      "ctime_ns": 1790143957392230037
+    },
+    "docs/audit/scripts/ledger_io.py": {
+      "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+      "device": 16777231,
+      "inode": 243437117,
+      "size": 12227,
+      "mtime_ns": 1790108670257678346,
+      "ctime_ns": 1790108670257678346
+    },
+    "docs/audit/scripts/static_pipeline_checkpoint.py": {
+      "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+      "device": 16777231,
+      "inode": 243437139,
+      "size": 28870,
+      "mtime_ns": 1790108670269135489,
+      "ctime_ns": 1790108670269135489
+    },
+    "scripts/audit_packet_script_deps.py": {
+      "sha256": "40d448bf1b6f0bc9777731c88aed1a0972719ee5969ee60b2c472d11c302c12e",
+      "device": 16777231,
+      "inode": 252756708,
+      "size": 39672,
+      "mtime_ns": 1790143957424101886,
+      "ctime_ns": 1790143957424101886
+    },
+    "scripts/runner_cache.py": {
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "device": 16777231,
+      "inode": 243487404,
+      "size": 24941,
+      "mtime_ns": 1790108676934937623,
+      "ctime_ns": 1790108676934937623
+    }
+  },
+  "after": {
+    "docs/ROOTED_MARKED_TREE_EXTENSION_SEED_INDUCTION_AND_RELAXED_LIFTED_TREE_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-17.md": {
+      "sha256": "24be34b472e47cafd59a15dd5125bfad54a1270fb4712002d9bf29d145029559",
+      "device": 16777231,
+      "inode": 252658490,
+      "size": 21144,
+      "mtime_ns": 1790141820756298478,
+      "ctime_ns": 1790141820756298478
+    },
+    "docs/work_history/review_loop/pr8177/README.md": {
+      "sha256": "20ba8efdb15e3e2a17214a2e7e537f8e6049f21c293584e659e108466a5a762d",
+      "device": 16777231,
+      "inode": 252658199,
+      "size": 919,
+      "mtime_ns": 1790141719055316087,
+      "ctime_ns": 1790141719055331337
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-01-APPROACH_REGISTRY.md.gz": {
+      "sha256": "af92ca6399a4b99cc6d44aab5bb102fd72419716322bbdd57b90bfa8dc58add7",
+      "device": 16777231,
+      "inode": 252658146,
+      "size": 1165,
+      "mtime_ns": 1790141717910900535,
+      "ctime_ns": 1790141717910932826
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-02-CHECKER_block33_findings.md.gz": {
+      "sha256": "591c0969fcc9346ceabaf92401cb5abd9f1998e22342fb5d54ef319e68832bdd",
+      "device": 16777231,
+      "inode": 252658147,
+      "size": 1250,
+      "mtime_ns": 1790141717930964247,
+      "ctime_ns": 1790141717930994747
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-03-CLAIM_STATUS_CERTIFICATE_block33.md.gz": {
+      "sha256": "9f287c201ddb8b8e77f611fabe61e82dad7f15240130f8930aedeb74b9e67553",
+      "device": 16777231,
+      "inode": 252658148,
+      "size": 1344,
+      "mtime_ns": 1790141717950487459,
+      "ctime_ns": 1790141717950511667
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-04-GOAL_block33.md.gz": {
+      "sha256": "521c2e6ebe8893c8e4ea6e498480af20f3d27f7b406cf7691e098ea89edf45f2",
+      "device": 16777231,
+      "inode": 252658149,
+      "size": 1039,
+      "mtime_ns": 1790141717970752421,
+      "ctime_ns": 1790141717970781213
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-05-HANDOFF.md.gz": {
+      "sha256": "72407fbae9ba80b236f0eb6ade0801fe2e5586fea3738ad7d5abe1bb7e5ed2b2",
+      "device": 16777231,
+      "inode": 252658150,
+      "size": 4330,
+      "mtime_ns": 1790141717995147051,
+      "ctime_ns": 1790141717995229884
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-06-NO_GO_LEDGER.md.gz": {
+      "sha256": "15213bc6408443f3ee71021dd7fddccb88021c09c8e31d4714a93faf30eb7ceb",
+      "device": 16777231,
+      "inode": 252658151,
+      "size": 1263,
+      "mtime_ns": 1790141718016383846,
+      "ctime_ns": 1790141718016410388
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-07-OPPORTUNITY_QUEUE.md.gz": {
+      "sha256": "851f17e08556a5f636bb50d2b1b2600ead7e959f29b15bbdd4fca09e9d8f5536",
+      "device": 16777231,
+      "inode": 252658152,
+      "size": 4964,
+      "mtime_ns": 1790141718038798975,
+      "ctime_ns": 1790141718038825517
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-08-RESULTS_block33.md.gz": {
+      "sha256": "cee92027a01abe3da0d42d552445fa1317e89cb49e826706a1ad563c727286a3",
+      "device": 16777231,
+      "inode": 252658153,
+      "size": 2987,
+      "mtime_ns": 1790141718058970646,
+      "ctime_ns": 1790141718058995813
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-09-REVIEW_HISTORY.md.gz": {
+      "sha256": "a92b7563166b6c0bfb461373db447ff6d1cd3aeff4d00e11b8c369bafbcb6603",
+      "device": 16777231,
+      "inode": 252658154,
+      "size": 19601,
+      "mtime_ns": 1790141718083278109,
+      "ctime_ns": 1790141718083308442
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-10-STATE.yaml.gz": {
+      "sha256": "b8646937d7930163f69a33e2262d843d11b77202712c89daf795bc5e2e6e482e",
+      "device": 16777231,
+      "inode": 252658155,
+      "size": 6238,
+      "mtime_ns": 1790141718103077654,
+      "ctime_ns": 1790141718103108113
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-11-TRACE_GATE.md.gz": {
+      "sha256": "f3497bb2ab4f94d3d8c97d0fe95f2ce5b5355ea89de8f3c62975d5789ec0a62b",
+      "device": 16777231,
+      "inode": 252658156,
+      "size": 1699,
+      "mtime_ns": 1790141718126333242,
+      "ctime_ns": 1790141718126389659
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-12-supervisor_control_block33_certify33.out.txt.gz": {
+      "sha256": "da5ab6368306aace6be3fa406d9c7eb87c1c90443482f009c494430376014db4",
+      "device": 16777231,
+      "inode": 252658157,
+      "size": 573,
+      "mtime_ns": 1790141718148995330,
+      "ctime_ns": 1790141718149020497
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-13-supervisor_control_block33_certify33.py.gz": {
+      "sha256": "c1a61f3e163ae885fdc53f07d3b8a1c588de2022bb5140119b7038fad9d1456d",
+      "device": 16777231,
+      "inode": 252658158,
+      "size": 1482,
+      "mtime_ns": 1790141718167930459,
+      "ctime_ns": 1790141718167965959
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-14-supervisor_control_block33_core30.py.gz": {
+      "sha256": "f84b5c2b7090bdf146079018c7d0b56317110e4702595cef6a6f329c72aad98f",
+      "device": 16777231,
+      "inode": 252658159,
+      "size": 3800,
+      "mtime_ns": 1790141718189707171,
+      "ctime_ns": 1790141718189742129
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-15-supervisor_control_block33_diag.out.txt.gz": {
+      "sha256": "74b1d81f1e8ccc5f4218784105e7dad490ffa86b748075136b95c0a727b0e7e4",
+      "device": 16777231,
+      "inode": 252658160,
+      "size": 272,
+      "mtime_ns": 1790141718215956884,
+      "ctime_ns": 1790141718215986718
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-16-supervisor_control_block33_diag.py.gz": {
+      "sha256": "ad490fb120e95c849ef4202c27a1b489bfa1515fe0dd726caa167739cfb30d63",
+      "device": 16777231,
+      "inode": 252658161,
+      "size": 732,
+      "mtime_ns": 1790141718243494098,
+      "ctime_ns": 1790141718243525723
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-17-supervisor_control_block33_doublechild.out.txt.gz": {
+      "sha256": "8c5fa7e6df4f9e596e31e829ec2386bb47c7dee36865f832c4dae785a2c61a6d",
+      "device": 16777231,
+      "inode": 252658162,
+      "size": 604,
+      "mtime_ns": 1790141718270089520,
+      "ctime_ns": 1790141718270123686
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-18-supervisor_control_block33_doublechild2.py.gz": {
+      "sha256": "219f69ac6a6ababd99061a6bcfa7d6fa86391f758b17a2f6c84eb6005fe6ba33",
+      "device": 16777231,
+      "inode": 252658163,
+      "size": 1156,
+      "mtime_ns": 1790141718298942150,
+      "ctime_ns": 1790141718298972234
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-19-supervisor_control_block33_doublekind.py.gz": {
+      "sha256": "7675571e35c3ed4769a5723bd8877a612f6f01c8d8cd9862495e0461d55bedfa",
+      "device": 16777231,
+      "inode": 252658164,
+      "size": 620,
+      "mtime_ns": 1790141718323442780,
+      "ctime_ns": 1790141718323536155
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-20-supervisor_control_block33_kind_certs.out.txt.gz": {
+      "sha256": "35fa2d29dbda2d020c044c819b2bdf46425ea5a05a437bcb607227c8aee2b8e6",
+      "device": 16777231,
+      "inode": 252658165,
+      "size": 137,
+      "mtime_ns": 1790141718348517993,
+      "ctime_ns": 1790141718348542243
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-21-supervisor_control_block33_kind_certs.py.gz": {
+      "sha256": "5ee9937f9172a08c429491b8a7eb055fa1c5ae81b4a6a48859f0da502f856ce3",
+      "device": 16777231,
+      "inode": 252658166,
+      "size": 1702,
+      "mtime_ns": 1790141718372136873,
+      "ctime_ns": 1790141718372164998
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-22-supervisor_control_block33_lemmas.out.txt.gz": {
+      "sha256": "d692118561c835bca496897d18e6edfc961b31629c0a631c059297809260bb3e",
+      "device": 16777231,
+      "inode": 252658167,
+      "size": 944,
+      "mtime_ns": 1790141718392388127,
+      "ctime_ns": 1790141718392448876
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-23-supervisor_control_block33_lemmas.py.gz": {
+      "sha256": "3a82d272967d2fd80c15c7328ff50262a78efdb860f4ebb23a48de5b271567ec",
+      "device": 16777231,
+      "inode": 252658168,
+      "size": 1051,
+      "mtime_ns": 1790141718416501714,
+      "ctime_ns": 1790141718416531881
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-24-supervisor_control_block33_mintree.py.gz": {
+      "sha256": "c7390f21771ccb4f760995d3f2fc9605e2f576e48fba8b4f9112c1f647dcd1fb",
+      "device": 16777231,
+      "inode": 252658169,
+      "size": 3653,
+      "mtime_ns": 1790141718440202386,
+      "ctime_ns": 1790141718440259094
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-25-supervisor_control_block33_overlap.out.txt.gz": {
+      "sha256": "3454257034cb3114aa2ec0ab99ab03e56209a515eb3ff6e344f192cc442f86ab",
+      "device": 16777231,
+      "inode": 252658170,
+      "size": 308,
+      "mtime_ns": 1790141718461660681,
+      "ctime_ns": 1790141718461695806
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-26-supervisor_control_block33_overlap.py.gz": {
+      "sha256": "57a0a06c28fb0baa32797381ce8596ffadcfaf188d793311057862a4a5df629b",
+      "device": 16777231,
+      "inode": 252658171,
+      "size": 841,
+      "mtime_ns": 1790141718485024728,
+      "ctime_ns": 1790141718485092727
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-27-supervisor_control_block33_refuter.out.txt.gz": {
+      "sha256": "5cfd1c08d7384091a597bb52ac4721098f5c66130b6f20226701c2fe703b50c0",
+      "device": 16777231,
+      "inode": 252658172,
+      "size": 458,
+      "mtime_ns": 1790141718509433149,
+      "ctime_ns": 1790141718509472440
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-28-supervisor_control_block33_refuter.py.gz": {
+      "sha256": "87df766395256be51095ce4f0de6940db2654e898257064ef9fff145968ebe3a",
+      "device": 16777231,
+      "inode": 252658173,
+      "size": 3263,
+      "mtime_ns": 1790141718532114070,
+      "ctime_ns": 1790141718532139070
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-29-supervisor_control_block33_restricted_count.out.txt.gz": {
+      "sha256": "6c535b7abb3cedca734e7346b4d8fdcdef441577d4d8c0fafec429470efea229",
+      "device": 16777231,
+      "inode": 252658174,
+      "size": 350,
+      "mtime_ns": 1790141718557307825,
+      "ctime_ns": 1790141718557369491
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-30-supervisor_control_block33_restricted_count.py.gz": {
+      "sha256": "119d9ad94bdaa5703c68914b1a137bfeaf19e4f13ff4124274208bd490d79083",
+      "device": 16777231,
+      "inode": 252658175,
+      "size": 1804,
+      "mtime_ns": 1790141718576246370,
+      "ctime_ns": 1790141718576333912
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-31-supervisor_control_block33_rooted.out.txt.gz": {
+      "sha256": "49d549561a2830e0ad47df3489550d13488ec4859355c38e5cdad9556a191099",
+      "device": 16777231,
+      "inode": 252658176,
+      "size": 414,
+      "mtime_ns": 1790141718599330374,
+      "ctime_ns": 1790141718599394041
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-32-supervisor_control_block33_rooted.py.gz": {
+      "sha256": "7f5b60f6273c9c3e8f33a93114374c8758a2877180fb2c392368b83b07b56819",
+      "device": 16777231,
+      "inode": 252658177,
+      "size": 2124,
+      "mtime_ns": 1790141718623952504,
+      "ctime_ns": 1790141718624031921
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-33-supervisor_control_block33_shape.out.txt.gz": {
+      "sha256": "01ed560ba5252bd9c107bebf8c71f5ee3f64deca1820ff2c2460d083fdd22aa2",
+      "device": 16777231,
+      "inode": 252658178,
+      "size": 360,
+      "mtime_ns": 1790141718647097009,
+      "ctime_ns": 1790141718647145300
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-34-supervisor_control_block33_shape.py.gz": {
+      "sha256": "fd7b1708d1ae18f504bba4cd30bea1f496d1c32196212ee79c111a7cb9561eac",
+      "device": 16777231,
+      "inode": 252658179,
+      "size": 1844,
+      "mtime_ns": 1790141718668825929,
+      "ctime_ns": 1790141718668855846
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-35-supervisor_control_block33_shape2.out.txt.gz": {
+      "sha256": "a88f21d9513353385e69344daec7ef883340d41a4ee0e893bda353e29501eb70",
+      "device": 16777231,
+      "inode": 252658180,
+      "size": 439,
+      "mtime_ns": 1790141718688108766,
+      "ctime_ns": 1790141718688137808
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-36-supervisor_control_block33_shape2.py.gz": {
+      "sha256": "6dc13ec789e837eaff10db39673d447cf1b49f3591ca32c526d2d51f6fb8a1ae",
+      "device": 16777231,
+      "inode": 252658181,
+      "size": 824,
+      "mtime_ns": 1790141718711207937,
+      "ctime_ns": 1790141718711296896
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-37-supervisor_control_block33_structural.out.txt.gz": {
+      "sha256": "85eac03984b24e95c26be51891a1490fe70b04519b529f4ab52f8b3f79ea5a78",
+      "device": 16777231,
+      "inode": 252658182,
+      "size": 232,
+      "mtime_ns": 1790141718733774900,
+      "ctime_ns": 1790141718733803275
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-38-supervisor_control_block33_structural.py.gz": {
+      "sha256": "739547da96ac1525aa94f925b85352039f257b7674319875a90a916fd90e79a6",
+      "device": 16777231,
+      "inode": 252658183,
+      "size": 1301,
+      "mtime_ns": 1790141718751842820,
+      "ctime_ns": 1790141718751873028
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-39-supervisor_control_block33_tight.out.txt.gz": {
+      "sha256": "d7551367d6a9f875d7a39ac7c5d4a601949a49f0dde41e26306415475a302c73",
+      "device": 16777231,
+      "inode": 252658184,
+      "size": 231,
+      "mtime_ns": 1790141718771155824,
+      "ctime_ns": 1790141718771185907
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-40-supervisor_control_block33_tight.py.gz": {
+      "sha256": "90432879118df823e56fd5f3b4fe96425f1b328889dea0fbf9a43c9c0758c403",
+      "device": 16777231,
+      "inode": 252658185,
+      "size": 1756,
+      "mtime_ns": 1790141718792574161,
+      "ctime_ns": 1790141718792602620
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-41-supervisor_control_block33_tightpairs.out.txt.gz": {
+      "sha256": "dd03b22173a828d8fb03c07c1554ba08ccadeb553b41a8e7056cf8e6136dd036",
+      "device": 16777231,
+      "inode": 252658186,
+      "size": 1183,
+      "mtime_ns": 1790141718818544750,
+      "ctime_ns": 1790141718818601833
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-42-supervisor_control_block33_tightpairs.py.gz": {
+      "sha256": "e35c0a131ad0e869f45464b4bc83e7f20bf774378c05470f7e0867c6181341bc",
+      "device": 16777231,
+      "inode": 252658187,
+      "size": 1076,
+      "mtime_ns": 1790141718842275212,
+      "ctime_ns": 1790141718842333796
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-43-supervisor_control_block33_violate.out.txt.gz": {
+      "sha256": "7e2024a992d30c9a045a3860c6aa4e1718bf351c8eb263145d41ab68cc08b620",
+      "device": 16777231,
+      "inode": 252658188,
+      "size": 367,
+      "mtime_ns": 1790141718865991967,
+      "ctime_ns": 1790141718866023467
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-44-supervisor_control_block33_violate.py.gz": {
+      "sha256": "de5ab135d509ac109996ec591e6d5e1328f3d8c1032323df7460b5f1fcf11512",
+      "device": 16777231,
+      "inode": 252658189,
+      "size": 1010,
+      "mtime_ns": 1790141718888286096,
+      "ctime_ns": 1790141718888315763
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-45-supervisor_control_block33_vprofile.out.txt.gz": {
+      "sha256": "777cb0c942053ba2d3df3c7ea3f8615aad99126551c0c272550b5bce2e87d831",
+      "device": 16777231,
+      "inode": 252658190,
+      "size": 487,
+      "mtime_ns": 1790141718913033268,
+      "ctime_ns": 1790141718913063893
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-46-supervisor_control_block33_vprofile.py.gz": {
+      "sha256": "6f81017fe35d5091563f01fb9d6713a159f0bff7db3002b6acb32ea932c1aae5",
+      "device": 16777231,
+      "inode": 252658191,
+      "size": 727,
+      "mtime_ns": 1790141718933828355,
+      "ctime_ns": 1790141718933858980
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-47-ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_THE_ROOTED_INEQUALITY_REDUCES_THE_UNIT_BUDGET_TO_THE_TIGHT_SIBLING_LEMMA_AND_THE_ONE_PROCESSED_CHILD_COUNT_BOUNDED_THEOREM_NOTE_2026-09-17.md.gz": {
+      "sha256": "b0606265a271036d573efa2185f195c123dc28297c9fe04b4084656c760101b0",
+      "device": 16777231,
+      "inode": 252658192,
+      "size": 9815,
+      "mtime_ns": 1790141718951764817,
+      "ctime_ns": 1790141718951851983
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-48-citation_graph_manifest.json.gz": {
+      "sha256": "0bbc27fa1d64fb2485733a27cb9d8d3e0813e802d4f632666473e75e3f5d3740",
+      "device": 16777231,
+      "inode": 252658193,
+      "size": 128211,
+      "mtime_ns": 1790141719001160618,
+      "ctime_ns": 1790141719001200326
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-49-admissibility_rule_six_axis_formation_threshold_rooted_inequality_reduces_the_unit_budget_to_the_tight_sibling_lemma_and_the_one_processed_child_count_2026_09_17.txt.gz": {
+      "sha256": "9d1af4a2c1ccaaffc46fbc3523e9bdd971d2b7049ccd49777fbc987c999d54cf",
+      "device": 16777231,
+      "inode": 252658194,
+      "size": 2086,
+      "mtime_ns": 1790141719022768455,
+      "ctime_ns": 1790141719022798122
+    },
+    "docs/work_history/review_loop/pr8177/originals/pr8177-50-admissibility_rule_six_axis_formation_threshold_rooted_inequality_reduces_the_unit_budget_to_the_tight_sibling_lemma_and_the_one_processed_child_count_2026_09_17.py.gz": {
+      "sha256": "1f49b8c3414dde35754db92d0789928ffd84e220922e7cf7f49069f63d71b7c6",
+      "device": 16777231,
+      "inode": 252658195,
+      "size": 10589,
+      "mtime_ns": 1790141719045879418,
+      "ctime_ns": 1790141719045964710
+    },
+    "docs/work_history/review_loop/pr8177/pr8177-deferred-science-and-history.txt": {
+      "sha256": "5278a87b8d71f9da372d2fe9f7f9691dcc79400a21711cd4494abd5de2ea929a",
+      "device": 16777231,
+      "inode": 252658198,
+      "size": 32493,
+      "mtime_ns": 1790141719055232587,
+      "ctime_ns": 1790141719055247753
+    },
+    "docs/work_history/review_loop/pr8177/pr8177-original-delta.patch.gz": {
+      "sha256": "16b76114e7797f9d2de52358c3a625657dee411e05272fecfbae7eae2cb9e352",
+      "device": 16777231,
+      "inode": 252658196,
+      "size": 58312,
+      "mtime_ns": 1790141719054572128,
+      "ctime_ns": 1790141719054599878
+    },
+    "docs/work_history/review_loop/pr8177/pr8177-original-manifest.json": {
+      "sha256": "39ec4c7abd886df5508b43c786f87b3127ed1cac9a78e0e6d795b08a1d7e65a3",
+      "device": 16777231,
+      "inode": 252658197,
+      "size": 44053,
+      "mtime_ns": 1790141719055122961,
+      "ctime_ns": 1790141719055142086
+    },
+    "scripts/rooted_marked_tree_extension_seed_induction_relaxed_lifted_certificates_check_2026_09_17.py": {
+      "sha256": "58202cb8f1e613b4661c538e3c5678b9cdf4f47a8a4fbed8bbf226660e325100",
+      "device": 16777231,
+      "inode": 252658491,
+      "size": 35441,
+      "mtime_ns": 1790141820756562853,
+      "ctime_ns": 1790141820756562853
+    },
+    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md": {
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "device": 16777231,
+      "inode": 243427797,
+      "size": 45923,
+      "mtime_ns": 1790108668945355435,
+      "ctime_ns": 1790108668945355435
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "device": 16777231,
+      "inode": 243429907,
+      "size": 11333,
+      "mtime_ns": 1790108669195469850,
+      "ctime_ns": 1790108669195469850
+    },
+    "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md": {
+      "sha256": "5642877329c141c39394936173c35c82c5cd18bb8f9a408c17fad0497cef647e",
+      "device": 16777231,
+      "inode": 252645810,
+      "size": 29586,
+      "mtime_ns": 1790141391985435713,
+      "ctime_ns": 1790141391985435713
+    },
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": {
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "device": 16777231,
+      "inode": 243429435,
+      "size": 4770,
+      "mtime_ns": 1790108669134824097,
+      "ctime_ns": 1790108669134824097
+    },
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "device": 16777231,
+      "inode": 243430690,
+      "size": 5313,
+      "mtime_ns": 1790108669333460157,
+      "ctime_ns": 1790108669333460157
+    },
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": {
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "device": 16777231,
+      "inode": 243430871,
+      "size": 2581,
+      "mtime_ns": 1790108669350972830,
+      "ctime_ns": 1790108669350972830
+    },
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": {
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "device": 16777231,
+      "inode": 243431819,
+      "size": 6427,
+      "mtime_ns": 1790108669458304698,
+      "ctime_ns": 1790108669458304698
+    },
+    "docs/ai_methodology/skills/review-loop/PREFLIGHT.md": {
+      "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb",
+      "device": 16777231,
+      "inode": 243431864,
+      "size": 8247,
+      "mtime_ns": 1790108669462053399,
+      "ctime_ns": 1790108669462053399
+    },
+    "docs/ai_methodology/skills/review-loop/SKILL.md": {
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+      "device": 16777231,
+      "inode": 252645829,
+      "size": 19430,
+      "mtime_ns": 1790141391989512547,
+      "ctime_ns": 1790141391989512547
+    },
+    "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md": {
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "device": 16777231,
+      "inode": 252645830,
+      "size": 23216,
+      "mtime_ns": 1790141391989631881,
+      "ctime_ns": 1790141391989631881
+    },
+    "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md": {
+      "sha256": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4",
+      "device": 16777231,
+      "inode": 252645831,
+      "size": 3829,
+      "mtime_ns": 1790141391989692422,
+      "ctime_ns": 1790141391989692422
+    },
+    "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md": {
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "device": 16777231,
+      "inode": 252756493,
+      "size": 7554,
+      "mtime_ns": 1790143957388465555,
+      "ctime_ns": 1790143957388465555
+    },
+    "docs/ai_methodology/skills/review-loop/references/LANDING.md": {
+      "sha256": "827032765af31a2f4ef64b3e595173c7e81e2f56b713793aba336228411a4624",
+      "device": 16777231,
+      "inode": 252645833,
+      "size": 28160,
+      "mtime_ns": 1790141391989875172,
+      "ctime_ns": 1790141391989875172
+    },
+    "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md": {
+      "sha256": "749a19389fbab3042479b32e2499ae95ff04e1590e3edb0cee60ad267f57c0af",
+      "device": 16777231,
+      "inode": 252756495,
+      "size": 6575,
+      "mtime_ns": 1790143957388644054,
+      "ctime_ns": 1790143957388644054
+    },
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md": {
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "device": 16777231,
+      "inode": 252645835,
+      "size": 5188,
+      "mtime_ns": 1790141391990043547,
+      "ctime_ns": 1790141391990043547
+    },
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md": {
+      "sha256": "03a9bf84e4efaf7d0d3b9efd8b2b9027c9005fd91be7862f3de1f58fd0b6a18f",
+      "device": 16777231,
+      "inode": 252756499,
+      "size": 11698,
+      "mtime_ns": 1790143957389036636,
+      "ctime_ns": 1790143957389036636
+    },
+    "docs/ai_methodology/skills/review-loop/references/SALVAGE.md": {
+      "sha256": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee",
+      "device": 16777231,
+      "inode": 252645837,
+      "size": 5009,
+      "mtime_ns": 1790141391990170089,
+      "ctime_ns": 1790141391990170089
+    },
+    "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md": {
+      "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7",
+      "device": 16777231,
+      "inode": 252645838,
+      "size": 12918,
+      "mtime_ns": 1790141391990253089,
+      "ctime_ns": 1790141391990253089
+    },
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": {
+      "sha256": "6ab026a472ce9a601385796eea6dcd32658d048cb14f3fdffad1bd51ee409666",
+      "device": 16777231,
+      "inode": 252756503,
+      "size": 14592,
+      "mtime_ns": 1790143957389386676,
+      "ctime_ns": 1790143957389386676
+    },
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": {
+      "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc",
+      "device": 16777231,
+      "inode": 252645840,
+      "size": 24983,
+      "mtime_ns": 1790141391990991672,
+      "ctime_ns": 1790141391990991672
+    },
+    "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py": {
+      "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494",
+      "device": 16777231,
+      "inode": 243431881,
+      "size": 15405,
+      "mtime_ns": 1790108669466342891,
+      "ctime_ns": 1790108669466342891
+    },
+    "docs/audit/data/axiom_premise_nodes.json": {
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "device": 16777231,
+      "inode": 243431932,
+      "size": 6416,
+      "mtime_ns": 1790108669485160144,
+      "ctime_ns": 1790108669485160144
+    },
+    "docs/audit/data/doc_authority_registry.json": {
+      "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173",
+      "device": 16777231,
+      "inode": 243431948,
+      "size": 6052,
+      "mtime_ns": 1790108669497710203,
+      "ctime_ns": 1790108669497710203
+    },
+    "docs/audit/scripts/build_citation_graph.py": {
+      "sha256": "e092f800d2c2d5671f24e248e7fee48edac683bf70f8641d2b596896acd5fab1",
+      "device": 16777231,
+      "inode": 252756506,
+      "size": 74561,
+      "mtime_ns": 1790143957392230037,
+      "ctime_ns": 1790143957392230037
+    },
+    "docs/audit/scripts/ledger_io.py": {
+      "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+      "device": 16777231,
+      "inode": 243437117,
+      "size": 12227,
+      "mtime_ns": 1790108670257678346,
+      "ctime_ns": 1790108670257678346
+    },
+    "docs/audit/scripts/static_pipeline_checkpoint.py": {
+      "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+      "device": 16777231,
+      "inode": 243437139,
+      "size": 28870,
+      "mtime_ns": 1790108670269135489,
+      "ctime_ns": 1790108670269135489
+    },
+    "scripts/audit_packet_script_deps.py": {
+      "sha256": "40d448bf1b6f0bc9777731c88aed1a0972719ee5969ee60b2c472d11c302c12e",
+      "device": 16777231,
+      "inode": 252756708,
+      "size": 39672,
+      "mtime_ns": 1790143957424101886,
+      "ctime_ns": 1790143957424101886
+    },
+    "scripts/runner_cache.py": {
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "device": 16777231,
+      "inode": 243487404,
+      "size": 24941,
+      "mtime_ns": 1790108676934937623,
+      "ctime_ns": 1790108676934937623
+    }
+  },
+  "result": {
+    "result": {
+      "runner": "scripts/rooted_marked_tree_extension_seed_induction_relaxed_lifted_certificates_check_2026_09_17.py",
+      "status": "ok",
+      "exit_code": 0,
+      "stdout": "AUDIT_INPUT_PATHS:\n  docs/ROOTED_MARKED_TREE_EXTENSION_SEED_INDUCTION_AND_RELAXED_LIFTED_TREE_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-17.md\n  docs/MINIMAL_AXIOMS_2026-06-29.md\n  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md\n  docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md\nPASS: A1 the note carries its claim_id once\nPASS: A2 the axioms memo carries the four sentences quoted under Premises\nPASS: A3 the linked product-law parent carries its claim_id and the rule's product form\nPASS: A4 all four proof/model source inputs match literal SHA-256 pins\nB-diagnostics: ext_ok=True seed_ok=True ineq_ok=True n_ext=357 n_amp=121 n_seed1=15 n_seed2=78 n_sites=788 n_hard=0\nPASS: B1 T1 (extension lemma, instances): on 140 tiny realizations, v(z) <= 1 + v(u) for every 1-predecessor u of every non-seed site (357 pairs) and v(z) <= -1 + v(u) at every amplified site (121); exact rooted brute force\nPASS: B2 T1 (seed lemma, instances): a processed site with one seed 1-predecessor and another 1-predecessor has v <= -1 (15 cases), with two seed 1-predecessors v <= -2 (78 cases)\nPASS: B3 T1 (the rooted inequality, executed): v <= 0 at seeds, v <= -1 at amplified and v <= 0 at processed sites on all 788 sites; processed sites whose 1-predecessors are all tight processed sites (the one case the lemmas leave open): 0\nPASS: C1 T2: on Z_A and Z_B the root is tight (rooted value 0, exact single-seed program with a level cap) with exact processed-predecessor profiles ZA[-1,-1,-1], ZB[-1,-1,0]: neither tested root is a tight-sibling case; Z_A: v(root) = 0, the three processed 1-predecessors have v = ['-1', '-1', '-1']; Z_B: v(root) = 0, the three processed 1-predecessors have v = ['-1', '-1', '0']\nPASS: C2 T2: Z_B's second tight site (4,4,3) has rooted value 0 with 1-predecessors at ['-1', '-1', '-1']; a tight site may be a predecessor of a tight site, in these tested profiles not all predecessors are tight; no universal absence asserted\nPASS: D1 T3: the remaining-slot up-factor of the relaxed upper count, (1 + x_A U)^n + n x_P U (1 + x_A U)^(n-1), is the sum over the successor configurations with at most one processed child, for n = 2 and 3 (symbolic)\nPASS: D2 T3: the rational triples are exact super-solutions of the relaxed upper recursion at (2921,1,2), (1464,1,1), (5841,2,4), (4380,1,3) with c = 2 and at (405,1,2), (208,1,1), (810,2,4), (605,1,3) with c = 1, each with epsilon_1 R-bar < 10^-5\nPASS: D3 T3: with the full up-factor the same code is the linked full-slot polynomial and its certificate at (4165,1,2) passes it; the same triple also dominates the restricted recursion (the relaxed remaining-slot upper sum is termwise smaller)\nPASS: E1 T4 (executed): on 60 tiny realizations at c = 1 and 2, whenever a tree with the budget exists (120 cases) a tree with at most one processed child per node and the budget exists too; the restricted minimum equals the unrestricted one in 120 cases and differs in 0\nPASS: F1 the note carries the three fence sentences verbatim\nPASS: F2 the note contains no forbidden phrase (0 hits)\nPASS: F3 runner source: no floating-point literal or conversion call (0 hits)\nPASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)\nper_element: executed \u2014 extension and seed instances on140 tiny realizations by exact rooted enumeration and remaining-slot identity; universal statements use written proofs\nper_site: executed \u2014 the fixed tiny sample and exact capped profiles ZA[-1,-1,-1], ZB[-1,-1,0], second tight site[-1,-1,-1]; no global absence claim\nper_mode: checked and not executed \u2014 no spectral decomposition is present; finite parameter cases and rooted subsets are not spectral modes\nper_block: executed \u2014 eight rational relaxed-upper-sum certificates, one full-slot comparison and120 equal minima/zero differences on60 fixed sampled realizations\nlattice_wide: checked and not executed \u2014 no infinite simulation or universal restricted-admissibility test; finite-domain lemmas and relaxed injection have written proofs\nPASS: G1 the five N5 resolution lines are printed\nTOTAL: PASS=18 FAIL=0\n",
+      "stderr": "",
+      "elapsed_sec": 1.8702929019927979,
+      "timeout_sec": 120,
+      "live_log": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/.in-progress/rooted_marked_tree_extension_seed_induction_relaxed_lifted_certificates_check_2026_09_17.txt"
+    },
+    "cache": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/rooted_marked_tree_extension_seed_induction_relaxed_lifted_certificates_check_2026_09_17.txt"
+  },
+  "artifacts": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/rooted_marked_tree_extension_seed_induction_relaxed_lifted_certificates_check_2026_09_17.txt",
+      "sha256": "43e62ede1bce86f66cd308322ddc5b5f3c731fc270c8f9dcde8dc1da07353ca5"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8177-worker-v1.json",
+      "sha256": "6095d9c89ab7d66b725caee4e32258ee7822e359da4d7bc6c0fd9a183026dae4"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8177-supervisor-v1.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8177-raw-result-v1.json",
+      "sha256": "a10f4b35a538c5fd8e8644f28929ca380321b38b277182a042bfdcf1f1509c00"
+    }
+  ],
+  "record": {
+    "path": "/private/tmp/review-drain-20260915/drain8177-author-unit-draft-v1.json",
+    "sha256": "980d24bcaf1a41da7d625bdaf6f69c100c5130dd718e363f9403f719fc1632d3"
+  },
+  "cheap": {
+    "path": "/private/tmp/review-drain-20260915/drain8177-author-cheap-v1.json",
+    "sha256": "e5abac24cd0027e1b00d4d00cce3ed0dc80b1cbd6c30b8b4c2a46a769ce89dba"
+  },
+  "cold": {
+    "path": "/private/tmp/review-drain-20260915/drain8177-cold-review-v1.json",
+    "sha256": "22ee3b6b11230ef129346b1ef2861a4a6b4b94af84c6318df567703856245b22"
+  },
+  "adapter": {
+    "path": "/private/tmp/review-drain-20260915/drain8177-capture-v2.py",
+    "sha256": "b8b3938974e795c3549c9abc4fba8276c089d138ad2e5d107c77db8c0cc2bd63"
+  },
+  "primary_runs_attempted": 1,
+  "mutation_runs": 0,
+  "simulation_runs": 0
+}

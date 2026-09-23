@@ -1,0 +1,11 @@
+--- drain8177-mutation-capture-v2.py
++++ drain8177-mutation-capture-v3.py
+@@ -19,7 +19,7 @@
+ # Deliberately unbound: a new immutable adapter version must bind the ACTUAL
+ # original-reviewer cold report path/hash, exact verdict pointer/value and tree.
+ # Early source clearance is insufficient. No hypothetical verdict is accepted.
+-COLD_CLEARANCE_BINDING = None
++COLD_CLEARANCE_BINDING = {'path': '/private/tmp/review-drain-20260915/drain8177-cold-review-v1.json', 'sha256': '22ee3b6b11230ef129346b1ef2861a4a6b4b94af84c6318df567703856245b22', 'same_session_provenance': '/root/review_8177', 'verdict_pointer': '/verdict', 'verdict_value': 'COLD_SOURCE_CLEAR_CAPTURE_ADAPTERS_REQUIRE_ACTUAL_BINDING', 'tree_pointer': '/source/tree', 'tree': '1e57403f90d485ec56e91efa283fa31aee5368e7', 'frozen_base': 'f947216c6ec62d6c663b9c73ef180b1f4f8b622f', 'reviewed_main': 'f947216c6ec62d6c663b9c73ef180b1f4f8b622f', 'required_predicates': {'/reviewer_session': '/root/review_8177', '/source/frozen_base': 'f947216c6ec62d6c663b9c73ef180b1f4f8b622f', '/source/reviewed_main': 'f947216c6ec62d6c663b9c73ef180b1f4f8b622f', '/clearance/same_session_original_reviewer': True, '/clearance/source_and_input_closure_confirmed': True, '/clearance/current_main_interactions_confirmed': True, '/clearance/all_original_dispositions_confirmed': True, '/clearance/primary_capture_cleared': True, '/clearance/targeted_mutation_capture_cleared': True}}
+ def confirm_cold(cp,cold,tree):
+     b=COLD_CLEARANCE_BINDING
+     assert isinstance(b,dict), 'BLOCKED: actual same-session cold report schema/clearance has not yet been bound; root must prepare a new immutable adapter version'

@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "kind": "proposed-root-owned-capture-and-mathematical-control-plan-not-executed",
+  "primary": "scripts/rooted_marked_tree_extension_seed_induction_relaxed_lifted_certificates_check_2026_09_17.py",
+  "primary_sha256": "58202cb8f1e613b4661c538e3c5678b9cdf4f47a8a4fbed8bbf226660e325100",
+  "runtime_inputs": [
+    {
+      "path": "docs/ROOTED_MARKED_TREE_EXTENSION_SEED_INDUCTION_AND_RELAXED_LIFTED_TREE_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-17.md",
+      "sha256": "24be34b472e47cafd59a15dd5125bfad54a1270fb4712002d9bf29d145029559",
+      "role": "proof source"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "framework authority"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "role": "explicit product-model/comparison parent; finite proof self-contained"
+    },
+    {
+      "path": "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "5642877329c141c39394936173c35c82c5cd18bb8f9a408c17fad0497cef647e",
+      "role": "explicit product-model/comparison parent; finite proof self-contained"
+    }
+  ],
+  "input_fingerprint": "2335d6fc69e839b4b8ebdc9f9ae0b5caaed6c9883dd325abc5260072d99cd787",
+  "helpers": [],
+  "cache_destination": "logs/runner-cache/rooted_marked_tree_extension_seed_induction_relaxed_lifted_certificates_check_2026_09_17.txt",
+  "stdout_only": true,
+  "json_outputs": [],
+  "primary_output_writes": [],
+  "runner_cache_result_contract": "Original API merges primary stderr into stdout; result.stderr is empty by design. Raw result is serialized before original source/input generation comparison, unchanged return identity.",
+  "primary_limits": {
+    "wall_seconds": 120,
+    "memory_bytes": 402653184,
+    "enforcement": "External sampled aggregate process-tree RSS including supervisor, worker and descendants; interval .02s plus ps overhead; not an OS hard reservation; kills process group and recorded descendants on violation."
+  },
+  "completed_check_count": 18,
+  "primary_invocations": 1,
+  "all_mutation_definitions": {
+    "extension_lemma_wrong": "B",
+    "seed_lemma_wrong": "B",
+    "tightness_wrong": "C",
+    "predecessor_profile_wrong": "C",
+    "certificate_wrong": "D",
+    "upfactor_wrong": "D",
+    "claim_transition_injected": "F",
+    "claim_classical_name_in_theorem": "F"
+  },
+  "mathematical_controls": {
+    "predecessor_profile_wrong": {
+      "expected_family": "C",
+      "expected_failed_tags": [
+        "C1"
+      ],
+      "expected_exit_code": 1,
+      "expected_total": {
+        "passed": 17,
+        "failed": 1
+      },
+      "mechanism": "Demand ZA profile[-1,-1,-1] at ZB instead of actual[-1,-1,0], preserving all coordinates and DP mathematics."
+    }
+  },
+  "mutation_limits": {
+    "wall_seconds_each": 120,
+    "memory_bytes_each": 402653184,
+    "sequence": "Only predecessor_profile_wrong once after preserved baseline; no baseline repeat, retry or cap increase."
+  },
+  "not_proposed_packaging_mutations": [
+    "extension_lemma_wrong",
+    "seed_lemma_wrong",
+    "tightness_wrong",
+    "certificate_wrong",
+    "upfactor_wrong",
+    "claim_transition_injected",
+    "claim_classical_name_in_theorem"
+  ],
+  "scientific_scope": "Finite rooted lemmas and relaxed lifted-tree upper sum. Unchanged140/60tiny-fixture batches remain primary fixtures; no historical MILP/search.",
+  "required_before_execution": [
+    "Exact staged schema2 source and input record",
+    "Cheap mechanical preflight tied to that record/tree",
+    "Original same-session actual cold report clearance, explicitly bound in a new immutable adapter version; v1 deliberately refuses execution",
+    "Root explicit capture dispatch"
+  ],
+  "failure_policy": "Preserve markers, raw result, live merged stream, supervisor log, mutation stdout/stderr, receipt and source/input generations. No automatic retry, baseline repeat, cap increase, evidence replacement or fabricated JSON.",
+  "source_resource_plan": {
+    "path": "/private/tmp/review-drain-20260915/drain8177-resource-plan-v2.json",
+    "sha256": "26bb0b3314847f6e5e6d4f0e5050d73aedf86ed0a1e6c46df7d3f86b2be26436"
+  },
+  "limits_measured": false,
+  "recovery_and_source_counts": {
+    "source_paths": 56,
+    "original_payloads": 50,
+    "full_original_delta": true
+  },
+  "canonical_evidence_binding": "Canonical cache is owned by source unit at cache_destination; final unit must bind its bytes. No extra mutable checkout cache path is added to reviewer references. External preserved raw capture is execution provenance only.",
+  "not_proposed_other_mutations_reason": "Original same-session reviewer cleared only new exact-profile corruption; unchanged mathematical controls reused.",
+  "dual_base_guard": "Staging requires explicit expected-base==HEAD==origin/main. Capture requires HEAD==record.source.base==cold.frozen_base, origin/main==cold.reviewed_main, ancestral advance and no changed bound source/input path; actual original reviewer must bind semantic current-main clearance. Any methodology/tooling overlap blocks capture for fresh record/review, never silently accepted."
+}

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/private/tmp/review-drain-20260915/drain8033-build-staged-draft-v1.py", line 43, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/tmp/review-drain-20260915/drain8033-build-staged-draft-v1.py", line 8, in main
+    base=sys.argv[1];assert re.fullmatch('[0-9a-f]{40}',base);assert git('rev-parse','HEAD')==base==git('rev-parse','origin/main');assert json.loads((R/'author-draft-slot.json').read_text())['owner']=='PR8033-author'
+         ~~~~~~~~^^^
+IndexError: list index out of range

@@ -1,0 +1,24 @@
+--- builder-v1
++++ builder-v2
+@@ -19,7 +19,12 @@
+  N=d['note']['path'];P=d['runner']['path'];body=(W/N).read_text();cid=g.claim_id_from_path(W/N);assert g.extract_runner(body,N)==P;assert g.helper_runner_paths_for_claim(cid,P)==a.helper_runner_paths_for_claim(cid,Path(P).stem)==[] and not g.resolve_helper_runner_paths(P) and not a.transitive_helpers(Path(P).stem)
+  assert list(c.declared_input_paths(W/P))==[e['path'] for e in d['ordered_inputs']];fingerprint=c.declared_input_fingerprint(W/P);assert fingerprint and c.declared_timeout_for(W/P)==180
+  old=json.loads((R/'drain8033-author-discovery-v1.json').read_text());cites=sorted(p.relative_to(W).as_posix() for p in g.extract_citations(body,W/N));assert cites==old['intended_citations'];parents=[e['path'] for e in d['ordered_inputs']][1:]
+- for e in old['context']:assert h(W/e['path'])==e['sha256'],'Changed context requires affected review'
++ refresh=R/'drain8033-context-refresh-v1.json';assert h(refresh)=='96f70e603190665fbe59d78f616efabfdcd2489a9353e862a0dfa05d36d11991'
++ refresh_data=json.loads(refresh.read_text());assert refresh_data['main']==base
++ refreshed={e['path']:e for e in refresh_data['changed_context']}
++ for e in old['context']:
++  expected=refreshed.get(e['path'],{}).get('after_sha256',e['sha256'])
++  assert h(W/e['path'])==expected,'Unexpected context change requires fresh affected review'
+  existing=git('ls-tree','-r','--name-only',base,'--','docs').splitlines()
+  for e in f:
+   if e['path'].endswith('.md') and Path(e['path']).name not in ['README.md','SKILL.md']:assert not any(Path(p).name.casefold()==Path(e['path']).name.casefold() for p in existing)
+@@ -38,6 +43,7 @@
+  for e in plan['ordered_inputs']:e['state']='present on actual frozen candidate'
+  pp=save('resource-plan',plan)
+  history=[p for p in paths if p.endswith('.md') and p!=N];context={e['path'] for e in old['context']}|set(cites)|{'docs/ai_methodology/skills/review-loop/scripts/review_receipt.py'}
++ refs.append(ref(refresh))
+  record=dict(schema_version=2,unit_id='PR8033',constituents=[dict(id='PR8033',head=d['original_head'],delta_base=d['original_base'],dispositions=dict(ref(sp),json_pointer='/original_dispositions'))],source=dict(base=base,commit=base,tree=tree,paths=bind(paths),deleted_paths=[]),inputs=dict(runtime=bind([e['path'] for e in d['ordered_inputs']]+[P]),helpers=[],parents=bind(parents),context=bind(context),tooling=toolpins),reviewer=dict(session='/root/review_8033; actual cold and final confirmation pending',report=ref(rp),references=refs+[ref(sp),ref(ap),ref(pp)]),notes=[dict(path=N,claim_id=cid,declared_claim_id=re.search(r'^claim_id: (.+)$',body,re.M)[1],claim_type='bounded_theorem',primary_runner=P,helpers=[],citations=cites,repository_dependencies=parents,dependency_rationale=plan['mathematical_closure'])],supporting_proofs=[],non_science_notes=[dict(path=p,rationale='Exact historical packet recovery, including failures and prospective planning; both accepted complete proofs are inline in current canonical note, no historical review/audit authority adopted.',review_reference=ref(rp)) for p in history])
+  p=save('unit-draft',record);print(json.dumps(ref(p)))
+ if __name__=='__main__':main()

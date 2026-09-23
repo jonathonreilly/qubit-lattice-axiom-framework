@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8178",
+  "tree": "f43989dbe522bf381dc13f6c9225dcfd5bfc2550",
+  "cache_checked": false,
+  "notes": [
+    {
+      "path": "docs/SUPPLIED_TORUS_AUXILIARY_FIELD_MODE_VARIANCE_AND_FINITE_BRACKET_BOUNDED_THEOREM_NOTE_2026-09-17.md",
+      "claim_id": "supplied_torus_auxiliary_field_mode_variance_and_finite_bracket_bounded_theorem_note_2026-09-17",
+      "primary_runner": "scripts/supplied_torus_auxiliary_field_mode_variance_finite_bracket_2026_09_17.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/history/pr8178-torus-auxiliary-recovery/README.md",
+        "docs/history/pr8178-torus-auxiliary-recovery/pr8178-deferred-science.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8770,
+      "misses": 4541
+    },
+    "packet_imports": {
+      "hits": 8760,
+      "misses": 4539
+    },
+    "declared_inputs": {
+      "hits": 8800,
+      "misses": 4695
+    }
+  },
+  "record_sha256": "fa502ce48627a80fff2e30ef50c248a44be4f4f1b1afa7c04e4924bc953e1bc6",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

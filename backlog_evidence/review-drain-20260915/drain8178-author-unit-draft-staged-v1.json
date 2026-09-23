@@ -1,0 +1,502 @@
+{
+  "schema_version": 2,
+  "unit_id": "PR8178",
+  "constituents": [
+    {
+      "id": "PR8178",
+      "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+      "delta_base": "9a3ffc8d913c6f09d822ef19975073d93df0f8ee",
+      "dispositions": {
+        "path": "/private/tmp/review-drain-20260915/drain8178-author-source-handoff-staged-v1.json",
+        "sha256": "991de175b5ce64953865d17289e047d2c66e153faa84f75338d34bbc484441ef",
+        "json_pointer": "/original_dispositions"
+      }
+    }
+  ],
+  "source": {
+    "base": "f947216c6ec62d6c663b9c73ef180b1f4f8b622f",
+    "commit": "f947216c6ec62d6c663b9c73ef180b1f4f8b622f",
+    "tree": "f43989dbe522bf381dc13f6c9225dcfd5bfc2550",
+    "paths": [
+      {
+        "path": "docs/SUPPLIED_TORUS_AUXILIARY_FIELD_MODE_VARIANCE_AND_FINITE_BRACKET_BOUNDED_THEOREM_NOTE_2026-09-17.md",
+        "sha256": "370797903fc72eeebdf06499193e8a2b7fd4363e5f58493d6efd85b60603b2a0"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/README.md",
+        "sha256": "76688eb9529ea3e929052c5d8f444bdef1becc58b308172e6cf5fd5005609bcd"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-07943770ffcc-a3dcc3d90687.gz",
+        "sha256": "ae14760a1852ed969209fa12af6812207ca06808acd0ea85d15dce3e1e0c25da"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-327ac6e1ca83-3cc64ad72621.gz",
+        "sha256": "d0ecd2701d918abf5025ee343087b429092aaa6c00b5b12ad0ad34647c7740e9"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-66f933a1bad5-e52898452cca.gz",
+        "sha256": "593d137d582ab71380032bb61ee2b7bf5166f9b6168aeb1cd935493fab622ddb"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-944b13dd7067-b02b4a93b36e.gz",
+        "sha256": "2e68a5fe865730b2d6c8f6fff3f844aee88ff2adadc61775d9b7fcad1e9e67d3"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-b529ca506df9-6b14211f9f8f.gz",
+        "sha256": "94b8b6f185fcec1e0788734d17049078ff8d0cc63d640ef11f1ce74e5d8bc7bb"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-df964d1a6d40-2b955f847d5c.gz",
+        "sha256": "d2c628b347cb82546480126984bdd633ad6dfabe6837b13af0ae5bd759669172"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-ec902e2beec6-7beef809b0e4.gz",
+        "sha256": "118548284c2ba330407e85d69a1c864ecfdc834979377ea397bb71918a003e55"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-fe3e1b4225dc-c6e70a8f3682.gz",
+        "sha256": "125741d8d3a253ffa442bb8d51b7938fc0202fb9980c9ccbbdb84e8cd3b2510f"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-07943770ffcc-bc65a62a7bea.gz",
+        "sha256": "c1248ff0037fdf68ab00b1dbd4e2e93eb998e0a39da1d1dfcddded687887fd08"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-0aad5cea1cef-764089c4e4e6.gz",
+        "sha256": "a6e899331d2c9b8e5d98d6be17743d5c4af96b16eaf70dbb8f7c39bbe6415343"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-0d3b66ad3efd-b3dfd4bc1e2a.gz",
+        "sha256": "bdac2450b5f202dc420e84373b2716d45699b55e5093efc42b43bda7c23424d6"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-12930a8a236a-f7659e34a120.gz",
+        "sha256": "4cd927cb663c47bee377f0ec57bd86d63b20de8e6e2334614e8becb9dce5b247"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-29a2730701e8-280a758f5aa0.gz",
+        "sha256": "7a351d2ab3c4eacd184dfdb7097681a6e0e04fd09b02b4ff771bc01a09e634ba"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-327ac6e1ca83-7048634d28f7.gz",
+        "sha256": "6c34948a2e2ed8b07303e5f5dce2ee5be972adba2d16ab3e78fdd293fba8037c"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-41504c399763-845be5ac8b9e.gz",
+        "sha256": "9d58634debea631df3333a7d4a9734f39b036b0402b552da508bcee943cd7a2c"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-5a4858fc810f-625683367666.gz",
+        "sha256": "46a377621dffeeb8f6e7e32e3e711a10d39d72e1dc6dfe6cdce6daceb973af82"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-66f933a1bad5-534a7e59a4c1.gz",
+        "sha256": "73c85df9717c2c414e39802ea0082d6aee4102fcedda1fccfe502a767d26db89"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-81876a79ec51-4084ce1a458a.gz",
+        "sha256": "dcf0c43a8d30af4864c6339e1bf158440569e42c0743e6e8f3cf1c843761fb34"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-8452648c4627-187759c1edb5.gz",
+        "sha256": "e94534adeaf788e1e81e12eca953a573978be3c5cda5d5b325f1712a165e2ad2"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-878770ece116-71a0e1986f00.gz",
+        "sha256": "60f21576a0ac9ba66da93fa82eab44e66b3c6fb618cea514fa304ecbc768a94c"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-8a18505b1789-eb6bb80f1b71.gz",
+        "sha256": "dab423374181d69048fde987b8e1f934d33ec8c12520135ff087d0b241a35e59"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-944b13dd7067-96c984c8fe0a.gz",
+        "sha256": "d8641100635474404cdedb3858cf11689561d646da974b96543c10b9818cba17"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-977007e33649-f4429ff85f6a.gz",
+        "sha256": "00986fe4612d78b87ef64a24801e99b158e96b9f98663586e15ab3ab800f9e48"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-a436302a2998-2cf183e8f203.gz",
+        "sha256": "52ee829b6e00d9bd1a17b8da457c867d4a0c6d9d2b7ffe16ff9085407889bc18"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-b529ca506df9-f083183e7038.gz",
+        "sha256": "8e8ee6699446ba199d0da347fd5a8c907eaf89808830500ebf2146986de5a407"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-bf5cc536ccd1-fc228750e334.gz",
+        "sha256": "a5cde9a3288f9ce5430fe058e81f3b727a9450ac8179740c8fc00e224446f988"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-df964d1a6d40-caa284104520.gz",
+        "sha256": "7086c4024ac56dcd89c6ed99e594afdcfefaaa2ef23cd43168ed617370c64490"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-ec902e2beec6-26f6207b889a.gz",
+        "sha256": "2cca0df5e547f2bc59aec1a171db9006f2857b6a9d13d07910b06aa46a5a4f05"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-fe3e1b4225dc-fb80ce345957.gz",
+        "sha256": "f4897edd39ffd25b1ce85c188783c7f7e42b65c62619ee7fded444ffac835c41"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-07943770ffcc-65c646580c16.gz",
+        "sha256": "773cc9fa2e3c5c4e2277b69eca6408998fe575678c46c6ee577aef721eec87ea"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-327ac6e1ca83-3cc64ad72621.gz",
+        "sha256": "d0ecd2701d918abf5025ee343087b429092aaa6c00b5b12ad0ad34647c7740e9"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-66f933a1bad5-e52898452cca.gz",
+        "sha256": "593d137d582ab71380032bb61ee2b7bf5166f9b6168aeb1cd935493fab622ddb"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-944b13dd7067-b02b4a93b36e.gz",
+        "sha256": "2e68a5fe865730b2d6c8f6fff3f844aee88ff2adadc61775d9b7fcad1e9e67d3"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-b529ca506df9-6b14211f9f8f.gz",
+        "sha256": "94b8b6f185fcec1e0788734d17049078ff8d0cc63d640ef11f1ce74e5d8bc7bb"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-df964d1a6d40-2b955f847d5c.gz",
+        "sha256": "d2c628b347cb82546480126984bdd633ad6dfabe6837b13af0ae5bd759669172"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-ec902e2beec6-7beef809b0e4.gz",
+        "sha256": "118548284c2ba330407e85d69a1c864ecfdc834979377ea397bb71918a003e55"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-fe3e1b4225dc-c6e70a8f3682.gz",
+        "sha256": "125741d8d3a253ffa442bb8d51b7938fc0202fb9980c9ccbbdb84e8cd3b2510f"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/pr8178-deferred-science.md",
+        "sha256": "9f3c962bfe5913dab6258a9e1c81c30a0c9a206980a82a830724f544be47759c"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/pr8178-original-identities.json",
+        "sha256": "147c5d2ced934327aa1614f395456eba203f054ca35df342dc425b464442d4de"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/pr8178-original.delta.gz",
+        "sha256": "8778b3574cd115065c73fb1d025358586ca7dfb81e499afa7a7322a35fe45aa7"
+      },
+      {
+        "path": "scripts/supplied_torus_auxiliary_field_mode_variance_finite_bracket_2026_09_17.py",
+        "sha256": "e5b1c1f3917c1e5cc39fc37080560b97e455f60649bdfdfe0d3e00cc744c1b66"
+      }
+    ],
+    "deleted_paths": []
+  },
+  "inputs": {
+    "runtime": [
+      {
+        "path": "docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "bd7968234832dcd13368f4208b2081a69aaf9674b1e9b24b65f44ee986f26b0a"
+      },
+      {
+        "path": "docs/SUPPLIED_TORUS_AUXILIARY_FIELD_MODE_VARIANCE_AND_FINITE_BRACKET_BOUNDED_THEOREM_NOTE_2026-09-17.md",
+        "sha256": "370797903fc72eeebdf06499193e8a2b7fd4363e5f58493d6efd85b60603b2a0"
+      },
+      {
+        "path": "scripts/supplied_torus_auxiliary_field_mode_variance_finite_bracket_2026_09_17.py",
+        "sha256": "e5b1c1f3917c1e5cc39fc37080560b97e455f60649bdfdfe0d3e00cc744c1b66"
+      }
+    ],
+    "helpers": [],
+    "parents": [
+      {
+        "path": "docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "bd7968234832dcd13368f4208b2081a69aaf9674b1e9b24b65f44ee986f26b0a"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+      },
+      {
+        "path": "docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "bd7968234832dcd13368f4208b2081a69aaf9674b1e9b24b65f44ee986f26b0a"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/PREFLIGHT.md",
+        "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+        "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+        "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md",
+        "sha256": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+        "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/LANDING.md",
+        "sha256": "827032765af31a2f4ef64b3e595173c7e81e2f56b713793aba336228411a4624"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+        "sha256": "749a19389fbab3042479b32e2499ae95ff04e1590e3edb0cee60ad267f57c0af"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+        "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+        "sha256": "03a9bf84e4efaf7d0d3b9efd8b2b9027c9005fd91be7862f3de1f58fd0b6a18f"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/SALVAGE.md",
+        "sha256": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+        "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+        "sha256": "6ab026a472ce9a601385796eea6dcd32658d048cb14f3fdffad1bd51ee409666"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+        "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+      },
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/README.md",
+        "sha256": "76688eb9529ea3e929052c5d8f444bdef1becc58b308172e6cf5fd5005609bcd"
+      },
+      {
+        "path": "docs/history/pr8178-torus-auxiliary-recovery/pr8178-deferred-science.md",
+        "sha256": "9f3c962bfe5913dab6258a9e1c81c30a0c9a206980a82a830724f544be47759c"
+      },
+      {
+        "path": "docs/repo/controlled_vocabulary.yaml",
+        "sha256": "e5c9ff6759418ca0605bf7f5fb5321f4b0ead19d52f61447e695b99959090d15"
+      },
+      {
+        "path": "scripts/vocab_lint.py",
+        "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "e092f800d2c2d5671f24e248e7fee48edac683bf70f8641d2b596896acd5fab1"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "40d448bf1b6f0bc9777731c88aed1a0972719ee5969ee60b2c472d11c302c12e"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "reviewer": {
+    "session": "/root/review_8178; actual cold and final confirmation pending",
+    "report": {
+      "path": "/private/tmp/review-drain-20260915/drain8178-early-review-v2.json",
+      "sha256": "2825826d31bbec8a97dbdc62f0833993087be14d22c49d9c4f268cf7efdafb0f"
+    },
+    "references": [
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8178-early-review-v2.json",
+        "sha256": "2825826d31bbec8a97dbdc62f0833993087be14d22c49d9c4f268cf7efdafb0f"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8178-author-prepared-v2.json",
+        "sha256": "cc775343be72cc2d20828846ccc05887f8b2248bdeea743502836fec3e952fb7"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8178-prepared-v2-source-freeze.json",
+        "sha256": "ae109a49dbcbe6705ecbc1008f9d03a0ab75ca6a711f0cb07083c6891c73d3c1"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8178-author-handoff-v2.json",
+        "sha256": "36970f1be22879c07dbc7984c114b75ad460cbadb8f2f12e47d5a5b2d115d852"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8178-vocab-verification-v2.json",
+        "sha256": "b02d5856d575b3d70b66fd5a52080986f9732a993eabd547b25031ffe5937b53"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8178-author-prepared-v1.json",
+        "sha256": "6568c4bd41ef5ea3d40e35e051d550e7e4a5c2af38017e4dc369988f63c42708"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8178-prepared-v1-source-freeze.json",
+        "sha256": "a9d9f14db29c7a5c51d76bffba4b669b6082d6dccc4c9e09da77c3cfcc17e75e"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8178-author-full-mapping-v1.json",
+        "sha256": "f0274c573607b3c9d347c5b7f3501dad998c0efeed017d24e4a0f6a3b3017a6b"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8178-author-preservation-v1.json",
+        "sha256": "e1da9acfa167746876bc22c43e932d717fc4ea29a7f5e4952c4b614bd6643f8a"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8178-author-correction-v1.diff",
+        "sha256": "95fd40fe25a6a7f323d128f7c6f01c5c413dc82c04b5f84b6696d7250b13c663"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8178-author-discovery-v1.json",
+        "sha256": "54062c335ff74d99d29e7806bc016aab9534da69b243e8814e6e45a8f88712ac"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8178-author-input-resource-plan-v1.json",
+        "sha256": "f9d1b99d4135b80a7df3e93dfcde005db6f722a077d23069620154a72501267d"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8178-author-finding-dispositions-v1.json",
+        "sha256": "804a8f83d0ced8f981dd6d435c56abb61c31a7c9277f906636fe09c0abe4a292"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8178-review-original.json",
+        "sha256": "b01afd62cdb927b10f6688c4ae70696fb0955d9f90c7be1f015f3b146c2ab459"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8178-review-original.md",
+        "sha256": "f000d6ff401c175e0bf14f7d6fe28ba08f1048edb8cdcd53b78bffc7d99fa630"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8178-prepared-v2-source-freeze.json",
+        "sha256": "ae109a49dbcbe6705ecbc1008f9d03a0ab75ca6a711f0cb07083c6891c73d3c1"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8178-author-prepared-v2.json",
+        "sha256": "cc775343be72cc2d20828846ccc05887f8b2248bdeea743502836fec3e952fb7"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8178-vocab-verification-v2.json",
+        "sha256": "b02d5856d575b3d70b66fd5a52080986f9732a993eabd547b25031ffe5937b53"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8178-author-v1-to-v2.diff",
+        "sha256": "5af740fc97ab0cc6d41b9def0cae6566b21728f08ea0ac3f691b72c5d6aa39d2"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8178-author-discovery-v2.json",
+        "sha256": "84df636ba99263cd6d2256a2c7b0d13b68d1912bb544a1339669c85af2d0f1aa"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8178-author-input-resource-plan-v2.json",
+        "sha256": "5b3f2bd8460a8d74a0bdd5308438c7ec17042a25c55b065c357239f0307f1a4a"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8178-early-review-v2.json",
+        "sha256": "2825826d31bbec8a97dbdc62f0833993087be14d22c49d9c4f268cf7efdafb0f"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8178-build-staged-draft-v3.py",
+        "sha256": "a869931442e316216627d8254b7ff41914341c147522cd1dfa6bb7175a664712"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8178-author-source-handoff-staged-v1.json",
+        "sha256": "991de175b5ce64953865d17289e047d2c66e153faa84f75338d34bbc484441ef"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8178-author-cache-api-staged-v1.json",
+        "sha256": "a221cf1b97dd1645cec97448068a90e87b7a6835e3962ebfdd44dc249c897444"
+      },
+      {
+        "path": "/private/tmp/review-drain-20260915/drain8178-author-resource-plan-staged-v1.json",
+        "sha256": "e3353a077991fce70bdf07e96b2611958ce12e0216ca71854c8cbeb9b217951f"
+      }
+    ]
+  },
+  "notes": [
+    {
+      "path": "docs/SUPPLIED_TORUS_AUXILIARY_FIELD_MODE_VARIANCE_AND_FINITE_BRACKET_BOUNDED_THEOREM_NOTE_2026-09-17.md",
+      "claim_id": "supplied_torus_auxiliary_field_mode_variance_and_finite_bracket_bounded_theorem_note_2026-09-17",
+      "declared_claim_id": "supplied_torus_auxiliary_field_mode_variance_and_finite_bracket_bounded_theorem_note_2026-09-17",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/supplied_torus_auxiliary_field_mode_variance_finite_bracket_2026_09_17.py",
+      "helpers": [],
+      "citations": [
+        "docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/history/pr8178-torus-auxiliary-recovery/README.md",
+        "docs/history/pr8178-torus-auxiliary-recovery/pr8178-deferred-science.md"
+      ],
+      "repository_dependencies": [
+        "docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+      ],
+      "dependency_rationale": "Complete finite recurrence, covariance, stationary-limit, residual, integer-crossing and finite-bracket proofs inline. Supplied L>=1, sigma2>0, gain-one P, iid real centered site/time noise with covariance sigma2 I and zero initial condition. Actual corrected sphere-kernel source supplies optional A(3beta)/(3beta) parameter and nonlinear observable distinction, not an exact gain-one nonlinear recursion. No simulations, static8173 result, archival claims, audit verdicts or new primitives are premises."
+    }
+  ],
+  "supporting_proofs": [],
+  "non_science_notes": [
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/README.md",
+      "rationale": "Historical full original argument and recovery mapping; corrected/deferred explicitly, not current theorem or audit authority.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8178-early-review-v2.json",
+        "sha256": "2825826d31bbec8a97dbdc62f0833993087be14d22c49d9c4f268cf7efdafb0f"
+      }
+    },
+    {
+      "path": "docs/history/pr8178-torus-auxiliary-recovery/pr8178-deferred-science.md",
+      "rationale": "Historical full original argument and recovery mapping; corrected/deferred explicitly, not current theorem or audit authority.",
+      "review_reference": {
+        "path": "/private/tmp/review-drain-20260915/drain8178-early-review-v2.json",
+        "sha256": "2825826d31bbec8a97dbdc62f0833993087be14d22c49d9c4f268cf7efdafb0f"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1212 @@
+{
+  "status": "FAILED; preserve evidence, no retry or cap increase",
+  "runner": "scripts/supplied_torus_auxiliary_field_mode_variance_finite_bracket_2026_09_17.py",
+  "error": {
+    "error": "AssertionError()",
+    "traceback": "Traceback (most recent call last):\n  File \"/private/tmp/review-drain-20260915/drain8178-capture-v3.py\", line 79, in main\n    assert watch['samples'] and not watch['violations'] and time.monotonic()-started<=60;result=json.loads(workerout.read_text());rr=result['result'];assert rr==json.loads(raw.read_text()) and rr['status']=='ok' and rr['exit_code']==0\n                                                                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+  },
+  "result": {
+    "result": {
+      "runner": "scripts/supplied_torus_auxiliary_field_mode_variance_finite_bracket_2026_09_17.py",
+      "status": "nonzero_exit",
+      "exit_code": 1,
+      "stdout": "AUDIT_INPUT_PATHS:\n  docs/SUPPLIED_TORUS_AUXILIARY_FIELD_MODE_VARIANCE_AND_FINITE_BRACKET_BOUNDED_THEOREM_NOTE_2026-09-17.md\n  docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md\nPASS: A1 one declared claim identity (metadata)\nPASS: A2 actual corrected sphere-kernel input hash (metadata)\nPASS: A3 direct mathematical parent link present (metadata)\nPASS: A4 all literal declared inputs exist (metadata)\nPASS: B1 T1: 1 - |phi(k)|^2 = (4/9)[sin^2(k1/2) + sin^2(k2/2) + sin^2((k1 - k2)/2)] for phi = (1 + e^{-i k1} + e^{-i k2})/3 (symbolic), so 0 <= |phi|^2 <= 1 with equality only at the zero mode; e.g. |phi(pi, 0)|^2 = 1/9\nPASS: B2 T1: a mode with |phi|^2 = u < 1 driven by white noise of variance sigma^2 has variance sigma^2 (1 - u^t)/(1 - u) after t levels (the geometric sum), the zero mode sigma^2 t, and the plane average sigma^2 t / L^2 per component\nPASS: C1 T2: on the tori L = 2, 3, 4 the exact rational covariance recursion Sigma_{t+1} = P Sigma_t P^T + I reproduces the mode formula (1/L^2)[t + sum_{k != 0} (1 - u_k^t)/(1 - u_k)] for the site variance and t/L^2 for the plane average at every level tested; L=2: v_12 = 40206982624/10460353203; L=3: v_12 = 1358126/531441; L=4: v_8 = 3139072/1594323\nPASS: C2 T2: on the tori L = 2, 3, 4 the exact V_L = (1/L^2) sum_{k != 0} 1/(1 - u_k) lies in [3/(4 pi^2), 9/16] S_L with the rational lattice sum S_L (the bracket of T3.2 checked where V_L is rational)\nPASS: D1 T3.1: the supplied real variance-one scale tau_L = 3 beta L^2 / A(3 beta) enclosed exactly (width < 1/10) at beta = 6, 12, 24, 48 and L = 16, 32, 64, e.g. beta=6 L=16: tau in [4879, 4880]; beta=6 L=32: tau in [19516, 19517]; beta=6 L=64: tau in [78064, 78065]; beta=12 L=16: tau in [9479, 9480] ...; the rate sigma^2/L^2 = A(3 beta)/(3 beta L^2) positive\nPASS: D2 T3.2: M = (1/9)[[2,-1],[-1,2]] has eigenvalues 1/9 and 1/3; sin^2(x/2) <= x^2/4 and sin(x/2) >= x/pi on [0, pi] (exact Taylor enclosures on a grid); hence 3/|k|^2 <= 1/(1 - u(k)) <= (9 pi^2/4)/|k|^2 on the square and V_L in [3/(4 pi^2), 9/16] sigma^2 S_L, verified on the tiny tori\nPASS: D3 T3.2: the rational lattice sums S_16, S_32, S_64 increase (16, 20, 25 to the integer part) and consecutive differences lie within 1 of 2 pi log 2 (finite fixtures only; no logarithmic asymptotic proved by this check)\nFAIL: F1 negative-character convention verified by exact real-space transform at L=4\nPASS: F2 Hermitian covariance diagonal; real-field pseudo-covariance pairs opposite modes\nPASS: F3 zero-start residual equals finite tail and is bounded by rho^t V on exact tiny tori\nPASS: F4 first integer variance-one crossing uses ceiling, including noninteger real scales\nper_element: this run checks symbolic multiplier/geometric identities, eigenvalues and exact sine-grid fixtures; outcomes above\nper_site: this run checks exact L=2,3 through t=12 and L=4 through t=8 covariance fixtures; outcomes above\nper_mode: this run checks tiny-torus finite brackets, L=4 real conjugacy and finite residual fixtures; outcomes above\nper_block: this run encloses twelve supplied real variance-one scales and checks integer-crossing fixtures; outcomes above\nlattice_wide: conditional finite-L proof is in the note; no simulation, nonlinear memory or sharp logarithmic asymptotic tested\nPASS: G1 the five N5 resolution lines are printed\nTOTAL: PASS=15 FAIL=1\n",
+      "stderr": "",
+      "elapsed_sec": 1.0133697986602783,
+      "timeout_sec": 60,
+      "live_log": "/private/tmp/review-drain-20260915/review-draft-slot/logs/runner-cache/.in-progress/supplied_torus_auxiliary_field_mode_variance_finite_bracket_2026_09_17.txt"
+    },
+    "cache": "/private/tmp/review-drain-20260915/review-draft-slot/logs/runner-cache/supplied_torus_auxiliary_field_mode_variance_finite_bracket_2026_09_17.txt"
+  },
+  "before": {
+    "docs/SUPPLIED_TORUS_AUXILIARY_FIELD_MODE_VARIANCE_AND_FINITE_BRACKET_BOUNDED_THEOREM_NOTE_2026-09-17.md": {
+      "sha256": "370797903fc72eeebdf06499193e8a2b7fd4363e5f58493d6efd85b60603b2a0",
+      "device": 16777231,
+      "inode": 252673099,
+      "size": 10368,
+      "mtime_ns": 1790143572871299621,
+      "ctime_ns": 1790143572871299621
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/README.md": {
+      "sha256": "76688eb9529ea3e929052c5d8f444bdef1becc58b308172e6cf5fd5005609bcd",
+      "device": 16777231,
+      "inode": 252673102,
+      "size": 5457,
+      "mtime_ns": 1790142709395999573,
+      "ctime_ns": 1790142709395999573
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-07943770ffcc-a3dcc3d90687.gz": {
+      "sha256": "ae14760a1852ed969209fa12af6812207ca06808acd0ea85d15dce3e1e0c25da",
+      "device": 16777231,
+      "inode": 252673092,
+      "size": 128143,
+      "mtime_ns": 1790142709348409680,
+      "ctime_ns": 1790142709348409680
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-327ac6e1ca83-3cc64ad72621.gz": {
+      "sha256": "d0ecd2701d918abf5025ee343087b429092aaa6c00b5b12ad0ad34647c7740e9",
+      "device": 16777231,
+      "inode": 252673082,
+      "size": 1412,
+      "mtime_ns": 1790142709328275444,
+      "ctime_ns": 1790142709328275444
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-66f933a1bad5-e52898452cca.gz": {
+      "sha256": "593d137d582ab71380032bb61ee2b7bf5166f9b6168aeb1cd935493fab622ddb",
+      "device": 16777231,
+      "inode": 252673066,
+      "size": 3348,
+      "mtime_ns": 1790142709315639048,
+      "ctime_ns": 1790142709315639048
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-944b13dd7067-b02b4a93b36e.gz": {
+      "sha256": "2e68a5fe865730b2d6c8f6fff3f844aee88ff2adadc61775d9b7fcad1e9e67d3",
+      "device": 16777231,
+      "inode": 252673060,
+      "size": 539,
+      "mtime_ns": 1790142709313055269,
+      "ctime_ns": 1790142709313055269
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-b529ca506df9-6b14211f9f8f.gz": {
+      "sha256": "94b8b6f185fcec1e0788734d17049078ff8d0cc63d640ef11f1ce74e5d8bc7bb",
+      "device": 16777231,
+      "inode": 252673069,
+      "size": 959,
+      "mtime_ns": 1790142709317260331,
+      "ctime_ns": 1790142709317260331
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-df964d1a6d40-2b955f847d5c.gz": {
+      "sha256": "d2c628b347cb82546480126984bdd633ad6dfabe6837b13af0ae5bd759669172",
+      "device": 16777231,
+      "inode": 252673079,
+      "size": 5392,
+      "mtime_ns": 1790142709327048076,
+      "ctime_ns": 1790142709327048076
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-ec902e2beec6-7beef809b0e4.gz": {
+      "sha256": "118548284c2ba330407e85d69a1c864ecfdc834979377ea397bb71918a003e55",
+      "device": 16777231,
+      "inode": 252673076,
+      "size": 18695,
+      "mtime_ns": 1790142709322496639,
+      "ctime_ns": 1790142709322496639
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-fe3e1b4225dc-c6e70a8f3682.gz": {
+      "sha256": "125741d8d3a253ffa442bb8d51b7938fc0202fb9980c9ccbbdb84e8cd3b2510f",
+      "device": 16777231,
+      "inode": 252673072,
+      "size": 4298,
+      "mtime_ns": 1790142709318312993,
+      "ctime_ns": 1790142709318312993
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-07943770ffcc-bc65a62a7bea.gz": {
+      "sha256": "c1248ff0037fdf68ab00b1dbd4e2e93eb998e0a39da1d1dfcddded687887fd08",
+      "device": 16777231,
+      "inode": 252673093,
+      "size": 128212,
+      "mtime_ns": 1790142709368295458,
+      "ctime_ns": 1790142709368295458
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-0aad5cea1cef-764089c4e4e6.gz": {
+      "sha256": "a6e899331d2c9b8e5d98d6be17743d5c4af96b16eaf70dbb8f7c39bbe6415343",
+      "device": 16777231,
+      "inode": 252673075,
+      "size": 1902,
+      "mtime_ns": 1790142709320862564,
+      "ctime_ns": 1790142709320862564
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-0d3b66ad3efd-b3dfd4bc1e2a.gz": {
+      "sha256": "bdac2450b5f202dc420e84373b2716d45699b55e5093efc42b43bda7c23424d6",
+      "device": 16777231,
+      "inode": 252673087,
+      "size": 1248,
+      "mtime_ns": 1790142709329793687,
+      "ctime_ns": 1790142709329793687
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-12930a8a236a-f7659e34a120.gz": {
+      "sha256": "4cd927cb663c47bee377f0ec57bd86d63b20de8e6e2334614e8becb9dce5b247",
+      "device": 16777231,
+      "inode": 252673091,
+      "size": 9545,
+      "mtime_ns": 1790142709331703470,
+      "ctime_ns": 1790142709331703470
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-29a2730701e8-280a758f5aa0.gz": {
+      "sha256": "7a351d2ab3c4eacd184dfdb7097681a6e0e04fd09b02b4ff771bc01a09e634ba",
+      "device": 16777231,
+      "inode": 252673063,
+      "size": 1195,
+      "mtime_ns": 1790142709314244263,
+      "ctime_ns": 1790142709314244263
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-327ac6e1ca83-7048634d28f7.gz": {
+      "sha256": "6c34948a2e2ed8b07303e5f5dce2ee5be972adba2d16ab3e78fdd293fba8037c",
+      "device": 16777231,
+      "inode": 252673083,
+      "size": 1674,
+      "mtime_ns": 1790142709328589485,
+      "ctime_ns": 1790142709328589485
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-41504c399763-845be5ac8b9e.gz": {
+      "sha256": "9d58634debea631df3333a7d4a9734f39b036b0402b552da508bcee943cd7a2c",
+      "device": 16777231,
+      "inode": 252673088,
+      "size": 1331,
+      "mtime_ns": 1790142709330089936,
+      "ctime_ns": 1790142709330089936
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-5a4858fc810f-625683367666.gz": {
+      "sha256": "46a377621dffeeb8f6e7e32e3e711a10d39d72e1dc6dfe6cdce6daceb973af82",
+      "device": 16777231,
+      "inode": 252673064,
+      "size": 1236,
+      "mtime_ns": 1790142709314957009,
+      "ctime_ns": 1790142709314957009
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-66f933a1bad5-534a7e59a4c1.gz": {
+      "sha256": "73c85df9717c2c414e39802ea0082d6aee4102fcedda1fccfe502a767d26db89",
+      "device": 16777231,
+      "inode": 252673067,
+      "size": 4365,
+      "mtime_ns": 1790142709316290586,
+      "ctime_ns": 1790142709316290586
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-81876a79ec51-4084ce1a458a.gz": {
+      "sha256": "dcf0c43a8d30af4864c6339e1bf158440569e42c0743e6e8f3cf1c843761fb34",
+      "device": 16777231,
+      "inode": 252673090,
+      "size": 1677,
+      "mtime_ns": 1790142709331045848,
+      "ctime_ns": 1790142709331045848
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-8452648c4627-187759c1edb5.gz": {
+      "sha256": "e94534adeaf788e1e81e12eca953a573978be3c5cda5d5b325f1712a165e2ad2",
+      "device": 16777231,
+      "inode": 252673095,
+      "size": 2088,
+      "mtime_ns": 1790142709388909983,
+      "ctime_ns": 1790142709388909983
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-878770ece116-71a0e1986f00.gz": {
+      "sha256": "60f21576a0ac9ba66da93fa82eab44e66b3c6fb618cea514fa304ecbc768a94c",
+      "device": 16777231,
+      "inode": 252673085,
+      "size": 712,
+      "mtime_ns": 1790142709329204607,
+      "ctime_ns": 1790142709329204607
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-8a18505b1789-eb6bb80f1b71.gz": {
+      "sha256": "dab423374181d69048fde987b8e1f934d33ec8c12520135ff087d0b241a35e59",
+      "device": 16777231,
+      "inode": 252673086,
+      "size": 2369,
+      "mtime_ns": 1790142709329504272,
+      "ctime_ns": 1790142709329504272
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-944b13dd7067-96c984c8fe0a.gz": {
+      "sha256": "d8641100635474404cdedb3858cf11689561d646da974b96543c10b9818cba17",
+      "device": 16777231,
+      "inode": 252673061,
+      "size": 1230,
+      "mtime_ns": 1790142709313569016,
+      "ctime_ns": 1790142709313569016
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-977007e33649-f4429ff85f6a.gz": {
+      "sha256": "00986fe4612d78b87ef64a24801e99b158e96b9f98663586e15ab3ab800f9e48",
+      "device": 16777231,
+      "inode": 252673096,
+      "size": 7601,
+      "mtime_ns": 1790142709389620313,
+      "ctime_ns": 1790142709389620313
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-a436302a2998-2cf183e8f203.gz": {
+      "sha256": "52ee829b6e00d9bd1a17b8da457c867d4a0c6d9d2b7ffe16ff9085407889bc18",
+      "device": 16777231,
+      "inode": 252673089,
+      "size": 2065,
+      "mtime_ns": 1790142709330780557,
+      "ctime_ns": 1790142709330780557
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-b529ca506df9-f083183e7038.gz": {
+      "sha256": "8e8ee6699446ba199d0da347fd5a8c907eaf89808830500ebf2146986de5a407",
+      "device": 16777231,
+      "inode": 252673070,
+      "size": 1271,
+      "mtime_ns": 1790142709317474830,
+      "ctime_ns": 1790142709317474830
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-bf5cc536ccd1-fc228750e334.gz": {
+      "sha256": "a5cde9a3288f9ce5430fe058e81f3b727a9450ac8179740c8fc00e224446f988",
+      "device": 16777231,
+      "inode": 252673065,
+      "size": 1127,
+      "mtime_ns": 1790142709315250050,
+      "ctime_ns": 1790142709315250050
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-df964d1a6d40-caa284104520.gz": {
+      "sha256": "7086c4024ac56dcd89c6ed99e594afdcfefaaa2ef23cd43168ed617370c64490",
+      "device": 16777231,
+      "inode": 252673080,
+      "size": 6146,
+      "mtime_ns": 1790142709327550406,
+      "ctime_ns": 1790142709327550406
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-ec902e2beec6-26f6207b889a.gz": {
+      "sha256": "2cca0df5e547f2bc59aec1a171db9006f2857b6a9d13d07910b06aa46a5a4f05",
+      "device": 16777231,
+      "inode": 252673077,
+      "size": 19374,
+      "mtime_ns": 1790142709324186006,
+      "ctime_ns": 1790142709324186006
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-fe3e1b4225dc-fb80ce345957.gz": {
+      "sha256": "f4897edd39ffd25b1ce85c188783c7f7e42b65c62619ee7fded444ffac835c41",
+      "device": 16777231,
+      "inode": 252673073,
+      "size": 4697,
+      "mtime_ns": 1790142709319681986,
+      "ctime_ns": 1790142709319681986
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-07943770ffcc-65c646580c16.gz": {
+      "sha256": "773cc9fa2e3c5c4e2277b69eca6408998fe575678c46c6ee577aef721eec87ea",
+      "device": 16777231,
+      "inode": 252673094,
+      "size": 135347,
+      "mtime_ns": 1790142709387806697,
+      "ctime_ns": 1790142709387806697
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-327ac6e1ca83-3cc64ad72621.gz": {
+      "sha256": "d0ecd2701d918abf5025ee343087b429092aaa6c00b5b12ad0ad34647c7740e9",
+      "device": 16777231,
+      "inode": 252673084,
+      "size": 1412,
+      "mtime_ns": 1790142709328908566,
+      "ctime_ns": 1790142709328908566
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-66f933a1bad5-e52898452cca.gz": {
+      "sha256": "593d137d582ab71380032bb61ee2b7bf5166f9b6168aeb1cd935493fab622ddb",
+      "device": 16777231,
+      "inode": 252673068,
+      "size": 3348,
+      "mtime_ns": 1790142709316997374,
+      "ctime_ns": 1790142709316997374
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-944b13dd7067-b02b4a93b36e.gz": {
+      "sha256": "2e68a5fe865730b2d6c8f6fff3f844aee88ff2adadc61775d9b7fcad1e9e67d3",
+      "device": 16777231,
+      "inode": 252673062,
+      "size": 539,
+      "mtime_ns": 1790142709313957097,
+      "ctime_ns": 1790142709313957097
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-b529ca506df9-6b14211f9f8f.gz": {
+      "sha256": "94b8b6f185fcec1e0788734d17049078ff8d0cc63d640ef11f1ce74e5d8bc7bb",
+      "device": 16777231,
+      "inode": 252673071,
+      "size": 959,
+      "mtime_ns": 1790142709317838079,
+      "ctime_ns": 1790142709317838079
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-df964d1a6d40-2b955f847d5c.gz": {
+      "sha256": "d2c628b347cb82546480126984bdd633ad6dfabe6837b13af0ae5bd759669172",
+      "device": 16777231,
+      "inode": 252673081,
+      "size": 5392,
+      "mtime_ns": 1790142709327969488,
+      "ctime_ns": 1790142709327969488
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-ec902e2beec6-7beef809b0e4.gz": {
+      "sha256": "118548284c2ba330407e85d69a1c864ecfdc834979377ea397bb71918a003e55",
+      "device": 16777231,
+      "inode": 252673078,
+      "size": 18695,
+      "mtime_ns": 1790142709326482120,
+      "ctime_ns": 1790142709326482120
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-fe3e1b4225dc-c6e70a8f3682.gz": {
+      "sha256": "125741d8d3a253ffa442bb8d51b7938fc0202fb9980c9ccbbdb84e8cd3b2510f",
+      "device": 16777231,
+      "inode": 252673074,
+      "size": 4298,
+      "mtime_ns": 1790142709320432691,
+      "ctime_ns": 1790142709320432691
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/pr8178-deferred-science.md": {
+      "sha256": "9f3c962bfe5913dab6258a9e1c81c30a0c9a206980a82a830724f544be47759c",
+      "device": 16777231,
+      "inode": 252673101,
+      "size": 28366,
+      "mtime_ns": 1790142709395855449,
+      "ctime_ns": 1790142709395855449
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/pr8178-original-identities.json": {
+      "sha256": "147c5d2ced934327aa1614f395456eba203f054ca35df342dc425b464442d4de",
+      "device": 16777231,
+      "inode": 252673098,
+      "size": 51431,
+      "mtime_ns": 1790142709392962838,
+      "ctime_ns": 1790142709392962838
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/pr8178-original.delta.gz": {
+      "sha256": "8778b3574cd115065c73fb1d025358586ca7dfb81e499afa7a7322a35fe45aa7",
+      "device": 16777231,
+      "inode": 252673097,
+      "size": 33033,
+      "mtime_ns": 1790142709392400466,
+      "ctime_ns": 1790142709392400466
+    },
+    "scripts/supplied_torus_auxiliary_field_mode_variance_finite_bracket_2026_09_17.py": {
+      "sha256": "e5b1c1f3917c1e5cc39fc37080560b97e455f60649bdfdfe0d3e00cc744c1b66",
+      "device": 16777231,
+      "inode": 252673100,
+      "size": 18742,
+      "mtime_ns": 1790142709395758575,
+      "ctime_ns": 1790142709395758575
+    },
+    "docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md": {
+      "sha256": "bd7968234832dcd13368f4208b2081a69aaf9674b1e9b24b65f44ee986f26b0a",
+      "device": 16777231,
+      "inode": 252660853,
+      "size": 19956,
+      "mtime_ns": 1790142150307915596,
+      "ctime_ns": 1790142150307915596
+    },
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": {
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "device": 16777231,
+      "inode": 244190111,
+      "size": 4770,
+      "mtime_ns": 1790110816450341213,
+      "ctime_ns": 1790110816450341213
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "device": 16777231,
+      "inode": 244190583,
+      "size": 11333,
+      "mtime_ns": 1790110816510588403,
+      "ctime_ns": 1790110816510588403
+    },
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "device": 16777231,
+      "inode": 244191366,
+      "size": 5313,
+      "mtime_ns": 1790110816613163842,
+      "ctime_ns": 1790110816613163842
+    },
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": {
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "device": 16777231,
+      "inode": 244191547,
+      "size": 2581,
+      "mtime_ns": 1790110816635067945,
+      "ctime_ns": 1790110816635067945
+    },
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": {
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "device": 16777231,
+      "inode": 244192495,
+      "size": 6427,
+      "mtime_ns": 1790110816767776936,
+      "ctime_ns": 1790110816767776936
+    },
+    "docs/ai_methodology/skills/review-loop/PREFLIGHT.md": {
+      "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb",
+      "device": 16777231,
+      "inode": 244192540,
+      "size": 8247,
+      "mtime_ns": 1790110816774010556,
+      "ctime_ns": 1790110816774010556
+    },
+    "docs/ai_methodology/skills/review-loop/SKILL.md": {
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+      "device": 16777231,
+      "inode": 252660870,
+      "size": 19430,
+      "mtime_ns": 1790142150313264766,
+      "ctime_ns": 1790142150313264766
+    },
+    "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md": {
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "device": 16777231,
+      "inode": 252660871,
+      "size": 23216,
+      "mtime_ns": 1790142150313550801,
+      "ctime_ns": 1790142150313550801
+    },
+    "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md": {
+      "sha256": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4",
+      "device": 16777231,
+      "inode": 252660872,
+      "size": 3829,
+      "mtime_ns": 1790142150313616133,
+      "ctime_ns": 1790142150313616133
+    },
+    "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md": {
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "device": 16777231,
+      "inode": 252756345,
+      "size": 7554,
+      "mtime_ns": 1790143957359194945,
+      "ctime_ns": 1790143957359194945
+    },
+    "docs/ai_methodology/skills/review-loop/references/LANDING.md": {
+      "sha256": "827032765af31a2f4ef64b3e595173c7e81e2f56b713793aba336228411a4624",
+      "device": 16777231,
+      "inode": 252660874,
+      "size": 28160,
+      "mtime_ns": 1790142150313788754,
+      "ctime_ns": 1790142150313788754
+    },
+    "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md": {
+      "sha256": "749a19389fbab3042479b32e2499ae95ff04e1590e3edb0cee60ad267f57c0af",
+      "device": 16777231,
+      "inode": 252756346,
+      "size": 6575,
+      "mtime_ns": 1790143957360996770,
+      "ctime_ns": 1790143957360996770
+    },
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md": {
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "device": 16777231,
+      "inode": 252660876,
+      "size": 5188,
+      "mtime_ns": 1790142150313976084,
+      "ctime_ns": 1790142150313976084
+    },
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md": {
+      "sha256": "03a9bf84e4efaf7d0d3b9efd8b2b9027c9005fd91be7862f3de1f58fd0b6a18f",
+      "device": 16777231,
+      "inode": 252756347,
+      "size": 11698,
+      "mtime_ns": 1790143957361979348,
+      "ctime_ns": 1790143957361979348
+    },
+    "docs/ai_methodology/skills/review-loop/references/SALVAGE.md": {
+      "sha256": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee",
+      "device": 16777231,
+      "inode": 252660878,
+      "size": 5009,
+      "mtime_ns": 1790142150314120705,
+      "ctime_ns": 1790142150314120705
+    },
+    "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md": {
+      "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7",
+      "device": 16777231,
+      "inode": 252660879,
+      "size": 12918,
+      "mtime_ns": 1790142150314207162,
+      "ctime_ns": 1790142150314207162
+    },
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": {
+      "sha256": "6ab026a472ce9a601385796eea6dcd32658d048cb14f3fdffad1bd51ee409666",
+      "device": 16777231,
+      "inode": 252756349,
+      "size": 14592,
+      "mtime_ns": 1790143957363088801,
+      "ctime_ns": 1790143957363088801
+    },
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": {
+      "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc",
+      "device": 16777231,
+      "inode": 252660881,
+      "size": 24983,
+      "mtime_ns": 1790142150315934998,
+      "ctime_ns": 1790142150315934998
+    },
+    "docs/audit/data/axiom_premise_nodes.json": {
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "device": 16777231,
+      "inode": 244192608,
+      "size": 6416,
+      "mtime_ns": 1790110816790503081,
+      "ctime_ns": 1790110816790503081
+    },
+    "docs/audit/data/doc_authority_registry.json": {
+      "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173",
+      "device": 16777231,
+      "inode": 244192624,
+      "size": 6052,
+      "mtime_ns": 1790110816804886900,
+      "ctime_ns": 1790110816804886900
+    },
+    "docs/repo/controlled_vocabulary.yaml": {
+      "sha256": "e5c9ff6759418ca0605bf7f5fb5321f4b0ead19d52f61447e695b99959090d15",
+      "device": 16777231,
+      "inode": 244198701,
+      "size": 53269,
+      "mtime_ns": 1790110817833065493,
+      "ctime_ns": 1790110817833065493
+    },
+    "scripts/vocab_lint.py": {
+      "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "device": 16777231,
+      "inode": 244248075,
+      "size": 14183,
+      "mtime_ns": 1790110825528976395,
+      "ctime_ns": 1790110825528976395
+    },
+    "docs/audit/scripts/build_citation_graph.py": {
+      "sha256": "e092f800d2c2d5671f24e248e7fee48edac683bf70f8641d2b596896acd5fab1",
+      "device": 16777231,
+      "inode": 252756356,
+      "size": 74561,
+      "mtime_ns": 1790143957367534738,
+      "ctime_ns": 1790143957367534738
+    },
+    "docs/audit/scripts/ledger_io.py": {
+      "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+      "device": 16777231,
+      "inode": 244197792,
+      "size": 12227,
+      "mtime_ns": 1790110817723780436,
+      "ctime_ns": 1790110817723780436
+    },
+    "docs/audit/scripts/static_pipeline_checkpoint.py": {
+      "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+      "device": 16777231,
+      "inode": 244197814,
+      "size": 28870,
+      "mtime_ns": 1790110817730902429,
+      "ctime_ns": 1790110817730902429
+    },
+    "scripts/audit_packet_script_deps.py": {
+      "sha256": "40d448bf1b6f0bc9777731c88aed1a0972719ee5969ee60b2c472d11c302c12e",
+      "device": 16777231,
+      "inode": 252756623,
+      "size": 39672,
+      "mtime_ns": 1790143957405065768,
+      "ctime_ns": 1790143957405065768
+    },
+    "scripts/runner_cache.py": {
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "device": 16777231,
+      "inode": 244247644,
+      "size": 24941,
+      "mtime_ns": 1790110825405943560,
+      "ctime_ns": 1790110825405943560
+    }
+  },
+  "after": {
+    "docs/SUPPLIED_TORUS_AUXILIARY_FIELD_MODE_VARIANCE_AND_FINITE_BRACKET_BOUNDED_THEOREM_NOTE_2026-09-17.md": {
+      "sha256": "370797903fc72eeebdf06499193e8a2b7fd4363e5f58493d6efd85b60603b2a0",
+      "device": 16777231,
+      "inode": 252673099,
+      "size": 10368,
+      "mtime_ns": 1790143572871299621,
+      "ctime_ns": 1790143572871299621
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/README.md": {
+      "sha256": "76688eb9529ea3e929052c5d8f444bdef1becc58b308172e6cf5fd5005609bcd",
+      "device": 16777231,
+      "inode": 252673102,
+      "size": 5457,
+      "mtime_ns": 1790142709395999573,
+      "ctime_ns": 1790142709395999573
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-07943770ffcc-a3dcc3d90687.gz": {
+      "sha256": "ae14760a1852ed969209fa12af6812207ca06808acd0ea85d15dce3e1e0c25da",
+      "device": 16777231,
+      "inode": 252673092,
+      "size": 128143,
+      "mtime_ns": 1790142709348409680,
+      "ctime_ns": 1790142709348409680
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-327ac6e1ca83-3cc64ad72621.gz": {
+      "sha256": "d0ecd2701d918abf5025ee343087b429092aaa6c00b5b12ad0ad34647c7740e9",
+      "device": 16777231,
+      "inode": 252673082,
+      "size": 1412,
+      "mtime_ns": 1790142709328275444,
+      "ctime_ns": 1790142709328275444
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-66f933a1bad5-e52898452cca.gz": {
+      "sha256": "593d137d582ab71380032bb61ee2b7bf5166f9b6168aeb1cd935493fab622ddb",
+      "device": 16777231,
+      "inode": 252673066,
+      "size": 3348,
+      "mtime_ns": 1790142709315639048,
+      "ctime_ns": 1790142709315639048
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-944b13dd7067-b02b4a93b36e.gz": {
+      "sha256": "2e68a5fe865730b2d6c8f6fff3f844aee88ff2adadc61775d9b7fcad1e9e67d3",
+      "device": 16777231,
+      "inode": 252673060,
+      "size": 539,
+      "mtime_ns": 1790142709313055269,
+      "ctime_ns": 1790142709313055269
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-b529ca506df9-6b14211f9f8f.gz": {
+      "sha256": "94b8b6f185fcec1e0788734d17049078ff8d0cc63d640ef11f1ce74e5d8bc7bb",
+      "device": 16777231,
+      "inode": 252673069,
+      "size": 959,
+      "mtime_ns": 1790142709317260331,
+      "ctime_ns": 1790142709317260331
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-df964d1a6d40-2b955f847d5c.gz": {
+      "sha256": "d2c628b347cb82546480126984bdd633ad6dfabe6837b13af0ae5bd759669172",
+      "device": 16777231,
+      "inode": 252673079,
+      "size": 5392,
+      "mtime_ns": 1790142709327048076,
+      "ctime_ns": 1790142709327048076
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-ec902e2beec6-7beef809b0e4.gz": {
+      "sha256": "118548284c2ba330407e85d69a1c864ecfdc834979377ea397bb71918a003e55",
+      "device": 16777231,
+      "inode": 252673076,
+      "size": 18695,
+      "mtime_ns": 1790142709322496639,
+      "ctime_ns": 1790142709322496639
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-base-fe3e1b4225dc-c6e70a8f3682.gz": {
+      "sha256": "125741d8d3a253ffa442bb8d51b7938fc0202fb9980c9ccbbdb84e8cd3b2510f",
+      "device": 16777231,
+      "inode": 252673072,
+      "size": 4298,
+      "mtime_ns": 1790142709318312993,
+      "ctime_ns": 1790142709318312993
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-07943770ffcc-bc65a62a7bea.gz": {
+      "sha256": "c1248ff0037fdf68ab00b1dbd4e2e93eb998e0a39da1d1dfcddded687887fd08",
+      "device": 16777231,
+      "inode": 252673093,
+      "size": 128212,
+      "mtime_ns": 1790142709368295458,
+      "ctime_ns": 1790142709368295458
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-0aad5cea1cef-764089c4e4e6.gz": {
+      "sha256": "a6e899331d2c9b8e5d98d6be17743d5c4af96b16eaf70dbb8f7c39bbe6415343",
+      "device": 16777231,
+      "inode": 252673075,
+      "size": 1902,
+      "mtime_ns": 1790142709320862564,
+      "ctime_ns": 1790142709320862564
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-0d3b66ad3efd-b3dfd4bc1e2a.gz": {
+      "sha256": "bdac2450b5f202dc420e84373b2716d45699b55e5093efc42b43bda7c23424d6",
+      "device": 16777231,
+      "inode": 252673087,
+      "size": 1248,
+      "mtime_ns": 1790142709329793687,
+      "ctime_ns": 1790142709329793687
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-12930a8a236a-f7659e34a120.gz": {
+      "sha256": "4cd927cb663c47bee377f0ec57bd86d63b20de8e6e2334614e8becb9dce5b247",
+      "device": 16777231,
+      "inode": 252673091,
+      "size": 9545,
+      "mtime_ns": 1790142709331703470,
+      "ctime_ns": 1790142709331703470
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-29a2730701e8-280a758f5aa0.gz": {
+      "sha256": "7a351d2ab3c4eacd184dfdb7097681a6e0e04fd09b02b4ff771bc01a09e634ba",
+      "device": 16777231,
+      "inode": 252673063,
+      "size": 1195,
+      "mtime_ns": 1790142709314244263,
+      "ctime_ns": 1790142709314244263
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-327ac6e1ca83-7048634d28f7.gz": {
+      "sha256": "6c34948a2e2ed8b07303e5f5dce2ee5be972adba2d16ab3e78fdd293fba8037c",
+      "device": 16777231,
+      "inode": 252673083,
+      "size": 1674,
+      "mtime_ns": 1790142709328589485,
+      "ctime_ns": 1790142709328589485
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-41504c399763-845be5ac8b9e.gz": {
+      "sha256": "9d58634debea631df3333a7d4a9734f39b036b0402b552da508bcee943cd7a2c",
+      "device": 16777231,
+      "inode": 252673088,
+      "size": 1331,
+      "mtime_ns": 1790142709330089936,
+      "ctime_ns": 1790142709330089936
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-5a4858fc810f-625683367666.gz": {
+      "sha256": "46a377621dffeeb8f6e7e32e3e711a10d39d72e1dc6dfe6cdce6daceb973af82",
+      "device": 16777231,
+      "inode": 252673064,
+      "size": 1236,
+      "mtime_ns": 1790142709314957009,
+      "ctime_ns": 1790142709314957009
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-66f933a1bad5-534a7e59a4c1.gz": {
+      "sha256": "73c85df9717c2c414e39802ea0082d6aee4102fcedda1fccfe502a767d26db89",
+      "device": 16777231,
+      "inode": 252673067,
+      "size": 4365,
+      "mtime_ns": 1790142709316290586,
+      "ctime_ns": 1790142709316290586
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-81876a79ec51-4084ce1a458a.gz": {
+      "sha256": "dcf0c43a8d30af4864c6339e1bf158440569e42c0743e6e8f3cf1c843761fb34",
+      "device": 16777231,
+      "inode": 252673090,
+      "size": 1677,
+      "mtime_ns": 1790142709331045848,
+      "ctime_ns": 1790142709331045848
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-8452648c4627-187759c1edb5.gz": {
+      "sha256": "e94534adeaf788e1e81e12eca953a573978be3c5cda5d5b325f1712a165e2ad2",
+      "device": 16777231,
+      "inode": 252673095,
+      "size": 2088,
+      "mtime_ns": 1790142709388909983,
+      "ctime_ns": 1790142709388909983
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-878770ece116-71a0e1986f00.gz": {
+      "sha256": "60f21576a0ac9ba66da93fa82eab44e66b3c6fb618cea514fa304ecbc768a94c",
+      "device": 16777231,
+      "inode": 252673085,
+      "size": 712,
+      "mtime_ns": 1790142709329204607,
+      "ctime_ns": 1790142709329204607
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-8a18505b1789-eb6bb80f1b71.gz": {
+      "sha256": "dab423374181d69048fde987b8e1f934d33ec8c12520135ff087d0b241a35e59",
+      "device": 16777231,
+      "inode": 252673086,
+      "size": 2369,
+      "mtime_ns": 1790142709329504272,
+      "ctime_ns": 1790142709329504272
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-944b13dd7067-96c984c8fe0a.gz": {
+      "sha256": "d8641100635474404cdedb3858cf11689561d646da974b96543c10b9818cba17",
+      "device": 16777231,
+      "inode": 252673061,
+      "size": 1230,
+      "mtime_ns": 1790142709313569016,
+      "ctime_ns": 1790142709313569016
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-977007e33649-f4429ff85f6a.gz": {
+      "sha256": "00986fe4612d78b87ef64a24801e99b158e96b9f98663586e15ab3ab800f9e48",
+      "device": 16777231,
+      "inode": 252673096,
+      "size": 7601,
+      "mtime_ns": 1790142709389620313,
+      "ctime_ns": 1790142709389620313
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-a436302a2998-2cf183e8f203.gz": {
+      "sha256": "52ee829b6e00d9bd1a17b8da457c867d4a0c6d9d2b7ffe16ff9085407889bc18",
+      "device": 16777231,
+      "inode": 252673089,
+      "size": 2065,
+      "mtime_ns": 1790142709330780557,
+      "ctime_ns": 1790142709330780557
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-b529ca506df9-f083183e7038.gz": {
+      "sha256": "8e8ee6699446ba199d0da347fd5a8c907eaf89808830500ebf2146986de5a407",
+      "device": 16777231,
+      "inode": 252673070,
+      "size": 1271,
+      "mtime_ns": 1790142709317474830,
+      "ctime_ns": 1790142709317474830
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-bf5cc536ccd1-fc228750e334.gz": {
+      "sha256": "a5cde9a3288f9ce5430fe058e81f3b727a9450ac8179740c8fc00e224446f988",
+      "device": 16777231,
+      "inode": 252673065,
+      "size": 1127,
+      "mtime_ns": 1790142709315250050,
+      "ctime_ns": 1790142709315250050
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-df964d1a6d40-caa284104520.gz": {
+      "sha256": "7086c4024ac56dcd89c6ed99e594afdcfefaaa2ef23cd43168ed617370c64490",
+      "device": 16777231,
+      "inode": 252673080,
+      "size": 6146,
+      "mtime_ns": 1790142709327550406,
+      "ctime_ns": 1790142709327550406
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-ec902e2beec6-26f6207b889a.gz": {
+      "sha256": "2cca0df5e547f2bc59aec1a171db9006f2857b6a9d13d07910b06aa46a5a4f05",
+      "device": 16777231,
+      "inode": 252673077,
+      "size": 19374,
+      "mtime_ns": 1790142709324186006,
+      "ctime_ns": 1790142709324186006
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-head-fe3e1b4225dc-fb80ce345957.gz": {
+      "sha256": "f4897edd39ffd25b1ce85c188783c7f7e42b65c62619ee7fded444ffac835c41",
+      "device": 16777231,
+      "inode": 252673073,
+      "size": 4697,
+      "mtime_ns": 1790142709319681986,
+      "ctime_ns": 1790142709319681986
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-07943770ffcc-65c646580c16.gz": {
+      "sha256": "773cc9fa2e3c5c4e2277b69eca6408998fe575678c46c6ee577aef721eec87ea",
+      "device": 16777231,
+      "inode": 252673094,
+      "size": 135347,
+      "mtime_ns": 1790142709387806697,
+      "ctime_ns": 1790142709387806697
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-327ac6e1ca83-3cc64ad72621.gz": {
+      "sha256": "d0ecd2701d918abf5025ee343087b429092aaa6c00b5b12ad0ad34647c7740e9",
+      "device": 16777231,
+      "inode": 252673084,
+      "size": 1412,
+      "mtime_ns": 1790142709328908566,
+      "ctime_ns": 1790142709328908566
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-66f933a1bad5-e52898452cca.gz": {
+      "sha256": "593d137d582ab71380032bb61ee2b7bf5166f9b6168aeb1cd935493fab622ddb",
+      "device": 16777231,
+      "inode": 252673068,
+      "size": 3348,
+      "mtime_ns": 1790142709316997374,
+      "ctime_ns": 1790142709316997374
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-944b13dd7067-b02b4a93b36e.gz": {
+      "sha256": "2e68a5fe865730b2d6c8f6fff3f844aee88ff2adadc61775d9b7fcad1e9e67d3",
+      "device": 16777231,
+      "inode": 252673062,
+      "size": 539,
+      "mtime_ns": 1790142709313957097,
+      "ctime_ns": 1790142709313957097
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-b529ca506df9-6b14211f9f8f.gz": {
+      "sha256": "94b8b6f185fcec1e0788734d17049078ff8d0cc63d640ef11f1ce74e5d8bc7bb",
+      "device": 16777231,
+      "inode": 252673071,
+      "size": 959,
+      "mtime_ns": 1790142709317838079,
+      "ctime_ns": 1790142709317838079
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-df964d1a6d40-2b955f847d5c.gz": {
+      "sha256": "d2c628b347cb82546480126984bdd633ad6dfabe6837b13af0ae5bd759669172",
+      "device": 16777231,
+      "inode": 252673081,
+      "size": 5392,
+      "mtime_ns": 1790142709327969488,
+      "ctime_ns": 1790142709327969488
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-ec902e2beec6-7beef809b0e4.gz": {
+      "sha256": "118548284c2ba330407e85d69a1c864ecfdc834979377ea397bb71918a003e55",
+      "device": 16777231,
+      "inode": 252673078,
+      "size": 18695,
+      "mtime_ns": 1790142709326482120,
+      "ctime_ns": 1790142709326482120
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/payloads/pr8178-main-fe3e1b4225dc-c6e70a8f3682.gz": {
+      "sha256": "125741d8d3a253ffa442bb8d51b7938fc0202fb9980c9ccbbdb84e8cd3b2510f",
+      "device": 16777231,
+      "inode": 252673074,
+      "size": 4298,
+      "mtime_ns": 1790142709320432691,
+      "ctime_ns": 1790142709320432691
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/pr8178-deferred-science.md": {
+      "sha256": "9f3c962bfe5913dab6258a9e1c81c30a0c9a206980a82a830724f544be47759c",
+      "device": 16777231,
+      "inode": 252673101,
+      "size": 28366,
+      "mtime_ns": 1790142709395855449,
+      "ctime_ns": 1790142709395855449
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/pr8178-original-identities.json": {
+      "sha256": "147c5d2ced934327aa1614f395456eba203f054ca35df342dc425b464442d4de",
+      "device": 16777231,
+      "inode": 252673098,
+      "size": 51431,
+      "mtime_ns": 1790142709392962838,
+      "ctime_ns": 1790142709392962838
+    },
+    "docs/history/pr8178-torus-auxiliary-recovery/pr8178-original.delta.gz": {
+      "sha256": "8778b3574cd115065c73fb1d025358586ca7dfb81e499afa7a7322a35fe45aa7",
+      "device": 16777231,
+      "inode": 252673097,
+      "size": 33033,
+      "mtime_ns": 1790142709392400466,
+      "ctime_ns": 1790142709392400466
+    },
+    "scripts/supplied_torus_auxiliary_field_mode_variance_finite_bracket_2026_09_17.py": {
+      "sha256": "e5b1c1f3917c1e5cc39fc37080560b97e455f60649bdfdfe0d3e00cc744c1b66",
+      "device": 16777231,
+      "inode": 252673100,
+      "size": 18742,
+      "mtime_ns": 1790142709395758575,
+      "ctime_ns": 1790142709395758575
+    },
+    "docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md": {
+      "sha256": "bd7968234832dcd13368f4208b2081a69aaf9674b1e9b24b65f44ee986f26b0a",
+      "device": 16777231,
+      "inode": 252660853,
+      "size": 19956,
+      "mtime_ns": 1790142150307915596,
+      "ctime_ns": 1790142150307915596
+    },
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": {
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "device": 16777231,
+      "inode": 244190111,
+      "size": 4770,
+      "mtime_ns": 1790110816450341213,
+      "ctime_ns": 1790110816450341213
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "device": 16777231,
+      "inode": 244190583,
+      "size": 11333,
+      "mtime_ns": 1790110816510588403,
+      "ctime_ns": 1790110816510588403
+    },
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "device": 16777231,
+      "inode": 244191366,
+      "size": 5313,
+      "mtime_ns": 1790110816613163842,
+      "ctime_ns": 1790110816613163842
+    },
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": {
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "device": 16777231,
+      "inode": 244191547,
+      "size": 2581,
+      "mtime_ns": 1790110816635067945,
+      "ctime_ns": 1790110816635067945
+    },
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": {
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "device": 16777231,
+      "inode": 244192495,
+      "size": 6427,
+      "mtime_ns": 1790110816767776936,
+      "ctime_ns": 1790110816767776936
+    },
+    "docs/ai_methodology/skills/review-loop/PREFLIGHT.md": {
+      "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb",
+      "device": 16777231,
+      "inode": 244192540,
+      "size": 8247,
+      "mtime_ns": 1790110816774010556,
+      "ctime_ns": 1790110816774010556
+    },
+    "docs/ai_methodology/skills/review-loop/SKILL.md": {
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+      "device": 16777231,
+      "inode": 252660870,
+      "size": 19430,
+      "mtime_ns": 1790142150313264766,
+      "ctime_ns": 1790142150313264766
+    },
+    "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md": {
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "device": 16777231,
+      "inode": 252660871,
+      "size": 23216,
+      "mtime_ns": 1790142150313550801,
+      "ctime_ns": 1790142150313550801
+    },
+    "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md": {
+      "sha256": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4",
+      "device": 16777231,
+      "inode": 252660872,
+      "size": 3829,
+      "mtime_ns": 1790142150313616133,
+      "ctime_ns": 1790142150313616133
+    },
+    "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md": {
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "device": 16777231,
+      "inode": 252756345,
+      "size": 7554,
+      "mtime_ns": 1790143957359194945,
+      "ctime_ns": 1790143957359194945
+    },
+    "docs/ai_methodology/skills/review-loop/references/LANDING.md": {
+      "sha256": "827032765af31a2f4ef64b3e595173c7e81e2f56b713793aba336228411a4624",
+      "device": 16777231,
+      "inode": 252660874,
+      "size": 28160,
+      "mtime_ns": 1790142150313788754,
+      "ctime_ns": 1790142150313788754
+    },
+    "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md": {
+      "sha256": "749a19389fbab3042479b32e2499ae95ff04e1590e3edb0cee60ad267f57c0af",
+      "device": 16777231,
+      "inode": 252756346,
+      "size": 6575,
+      "mtime_ns": 1790143957360996770,
+      "ctime_ns": 1790143957360996770
+    },
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md": {
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "device": 16777231,
+      "inode": 252660876,
+      "size": 5188,
+      "mtime_ns": 1790142150313976084,
+      "ctime_ns": 1790142150313976084
+    },
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md": {
+      "sha256": "03a9bf84e4efaf7d0d3b9efd8b2b9027c9005fd91be7862f3de1f58fd0b6a18f",
+      "device": 16777231,
+      "inode": 252756347,
+      "size": 11698,
+      "mtime_ns": 1790143957361979348,
+      "ctime_ns": 1790143957361979348
+    },
+    "docs/ai_methodology/skills/review-loop/references/SALVAGE.md": {
+      "sha256": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee",
+      "device": 16777231,
+      "inode": 252660878,
+      "size": 5009,
+      "mtime_ns": 1790142150314120705,
+      "ctime_ns": 1790142150314120705
+    },
+    "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md": {
+      "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7",
+      "device": 16777231,
+      "inode": 252660879,
+      "size": 12918,
+      "mtime_ns": 1790142150314207162,
+      "ctime_ns": 1790142150314207162
+    },
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": {
+      "sha256": "6ab026a472ce9a601385796eea6dcd32658d048cb14f3fdffad1bd51ee409666",
+      "device": 16777231,
+      "inode": 252756349,
+      "size": 14592,
+      "mtime_ns": 1790143957363088801,
+      "ctime_ns": 1790143957363088801
+    },
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": {
+      "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc",
+      "device": 16777231,
+      "inode": 252660881,
+      "size": 24983,
+      "mtime_ns": 1790142150315934998,
+      "ctime_ns": 1790142150315934998
+    },
+    "docs/audit/data/axiom_premise_nodes.json": {
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "device": 16777231,
+      "inode": 244192608,
+      "size": 6416,
+      "mtime_ns": 1790110816790503081,
+      "ctime_ns": 1790110816790503081
+    },
+    "docs/audit/data/doc_authority_registry.json": {
+      "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173",
+      "device": 16777231,
+      "inode": 244192624,
+      "size": 6052,
+      "mtime_ns": 1790110816804886900,
+      "ctime_ns": 1790110816804886900
+    },
+    "docs/repo/controlled_vocabulary.yaml": {
+      "sha256": "e5c9ff6759418ca0605bf7f5fb5321f4b0ead19d52f61447e695b99959090d15",
+      "device": 16777231,
+      "inode": 244198701,
+      "size": 53269,
+      "mtime_ns": 1790110817833065493,
+      "ctime_ns": 1790110817833065493
+    },
+    "scripts/vocab_lint.py": {
+      "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "device": 16777231,
+      "inode": 244248075,
+      "size": 14183,
+      "mtime_ns": 1790110825528976395,
+      "ctime_ns": 1790110825528976395
+    },
+    "docs/audit/scripts/build_citation_graph.py": {
+      "sha256": "e092f800d2c2d5671f24e248e7fee48edac683bf70f8641d2b596896acd5fab1",
+      "device": 16777231,
+      "inode": 252756356,
+      "size": 74561,
+      "mtime_ns": 1790143957367534738,
+      "ctime_ns": 1790143957367534738
+    },
+    "docs/audit/scripts/ledger_io.py": {
+      "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+      "device": 16777231,
+      "inode": 244197792,
+      "size": 12227,
+      "mtime_ns": 1790110817723780436,
+      "ctime_ns": 1790110817723780436
+    },
+    "docs/audit/scripts/static_pipeline_checkpoint.py": {
+      "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+      "device": 16777231,
+      "inode": 244197814,
+      "size": 28870,
+      "mtime_ns": 1790110817730902429,
+      "ctime_ns": 1790110817730902429
+    },
+    "scripts/audit_packet_script_deps.py": {
+      "sha256": "40d448bf1b6f0bc9777731c88aed1a0972719ee5969ee60b2c472d11c302c12e",
+      "device": 16777231,
+      "inode": 252756623,
+      "size": 39672,
+      "mtime_ns": 1790143957405065768,
+      "ctime_ns": 1790143957405065768
+    },
+    "scripts/runner_cache.py": {
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "device": 16777231,
+      "inode": 244247644,
+      "size": 24941,
+      "mtime_ns": 1790110825405943560,
+      "ctime_ns": 1790110825405943560
+    }
+  },
+  "whole_tree_watchdog": {
+    "limit_seconds": 60,
+    "limit_bytes": 402653184,
+    "sampling_interval_seconds": 0.02,
+    "samples": 24,
+    "peak_tree_rss_bytes": 126894080,
+    "violations": [],
+    "scope": "Sampled aggregate supervisor, worker and descendants RSS; not OS hard allocation cap"
+  },
+  "elapsed_seconds": 1.132490832998883,
+  "artifacts": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8178-capture-supplied_torus_auxiliary_field_mode_variance_finite_bracket_2026_09_17-v2.sidecar.json",
+      "sha256": "8b2dbef1a1ba86e123ad01ccc57f07df2f03a54118b811df0367d7b452c0d59e"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8178-capture-supplied_torus_auxiliary_field_mode_variance_finite_bracket_2026_09_17-v2.raw-result.json",
+      "sha256": "161c29af88fe6aaa35fd8ff9b091b844384330a79ff5c24e931062332dcdcc32"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8178-capture-supplied_torus_auxiliary_field_mode_variance_finite_bracket_2026_09_17-v2.worker.json",
+      "sha256": "3465b5b48b8b3f0f5ca2ca531ec4c93f18a0eab420d8d9bc2973bb3eadfb1a78"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8178-capture-supplied_torus_auxiliary_field_mode_variance_finite_bracket_2026_09_17-v2.supervisor.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/review-draft-slot/logs/runner-cache/supplied_torus_auxiliary_field_mode_variance_finite_bracket_2026_09_17.txt",
+      "sha256": "c2b4b0664f3969bf5066fe79d1cce578c2b7afee042ffb57086f257ad22ce3c3"
+    }
+  ],
+  "record": {
+    "path": "/private/tmp/review-drain-20260915/drain8178-author-unit-draft-staged-v1.json",
+    "sha256": "fa502ce48627a80fff2e30ef50c248a44be4f4f1b1afa7c04e4924bc953e1bc6"
+  },
+  "cheap": {
+    "path": "/private/tmp/review-drain-20260915/drain8178-author-cheap-staged-v2.json",
+    "sha256": "3ebd65bb4ddb5672826b0ac9fb5b70f442ef96c7b27933b8bf899e74bbbc6b51"
+  },
+  "cold": {
+    "path": "/private/tmp/review-drain-20260915/drain8178-cold-review-v1.json",
+    "sha256": "7f4dadf80fadcb1525ef1cd25e5afb1c09dfe8efd41e197469a7a025293b1694"
+  },
+  "adapter": {
+    "path": "/private/tmp/review-drain-20260915/drain8178-capture-v3.py",
+    "sha256": "4751a4dafc90dc214db475b9d89ee1e6009a93284d1e71cd0b420ec75c8f9c1d"
+  },
+  "program_attempts": 1,
+  "json_reruns": 0,
+  "mutation_runs": 0
+}

@@ -1,0 +1,12 @@
+{
+  "collection": "train93-collected-units.json",
+  "sha256": "eaeb17884fce54f2505591dccfea177e35e5da4806cbae6b1cd0426bc821e26a",
+  "evidence_files": 60,
+  "verified_canonical_references": [
+    "logs/runner-cache/rooted_marked_tree_extension_seed_induction_relaxed_lifted_certificates_check_2026_09_17.txt"
+  ],
+  "historical_local_recovery": {
+    "path": "/private/tmp/review-drain-20260915/review-loop-efficiency-local-before-recovery-v1.json",
+    "sha256": "4c2cf9ad40bf7a385a6673351cd9d3d2f4988025bb2581948e6e71e6e40d363d"
+  }
+}

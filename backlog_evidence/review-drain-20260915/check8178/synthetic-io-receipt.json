@@ -1,0 +1,19 @@
+{
+  "plan": {
+    "command": [
+      "/usr/local/bin/python3",
+      "/private/tmp/review-drain-20260915/check8178/synthetic-io.py"
+    ],
+    "wall_limit_seconds": 30,
+    "rss_limit_bytes": 201326592,
+    "poll_seconds": 0.02,
+    "scope": "supervisor and child process tree sampled RSS; enforce by kill group",
+    "simulation_runs": 0
+  },
+  "exit_code": 0,
+  "failure": null,
+  "elapsed": 0.05250604200409725,
+  "peak_rss_bytes": 25624576,
+  "samples": 1,
+  "script_sha256": "ceae519f36e68ce31fd08d6ca4baed74ecd33256b2a18ecc14fe54b113b751ac"
+}

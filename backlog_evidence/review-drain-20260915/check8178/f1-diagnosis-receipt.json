@@ -1,0 +1,19 @@
+{
+  "plan": {
+    "command": [
+      "/usr/local/bin/python3",
+      "/private/tmp/review-drain-20260915/check8178/f1-diagnosis.py"
+    ],
+    "wall_limit_seconds": 30,
+    "rss_limit_bytes": 201326592,
+    "poll_seconds": 0.02,
+    "scope": "supervisor and child process tree sampled RSS; enforce by kill group",
+    "simulation_runs": 0
+  },
+  "exit_code": 0,
+  "failure": null,
+  "elapsed": 0.3059979999670759,
+  "peak_rss_bytes": 80379904,
+  "samples": 6,
+  "script_sha256": "12dde24ae64a6d7b07fa82a62b10b515d90e29c2e23a7ae56d9d05775e3249ed"
+}

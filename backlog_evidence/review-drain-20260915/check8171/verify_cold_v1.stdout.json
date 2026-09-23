@@ -1,0 +1,16 @@
+{
+  "source_tree": "6630433b9aa6b17b66a64466a7484563b4fb61ef",
+  "source_paths": 23,
+  "source_modes_match_prepared": true,
+  "all_inputs_match_disk_and_index": true,
+  "unstaged_changes": false,
+  "source_changes_since_early": false,
+  "candidate_commit": "a0f8dbe92d402e4aacfa523023690a10c2c6770d",
+  "candidate_tree": "2ab5e0ff2f8a8188572ffe402f0ded5f9433b214",
+  "candidate_changed_paths": 46,
+  "source_overlap": [],
+  "input_overlap": [],
+  "candidate_sphere_context_sha256": "bd7968234832dcd13368f4208b2081a69aaf9674b1e9b24b65f44ee986f26b0a",
+  "cheap_receipt_read": false,
+  "primary_executed": false
+}

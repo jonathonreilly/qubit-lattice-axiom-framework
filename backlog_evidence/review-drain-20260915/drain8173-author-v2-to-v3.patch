@@ -1,0 +1,22 @@
+--- docs/SPHERE_STATIC_FINITE_VOLUME_GAUSSIAN_COVARIANCE_FIXED_AXIS_RESPONSE_AND_PROJECTED_MODE_SUM_BOUNDED_THEOREM_NOTE_2026-09-16.md@v2
++++ docs/SPHERE_STATIC_FINITE_VOLUME_GAUSSIAN_COVARIANCE_FIXED_AXIS_RESPONSE_AND_PROJECTED_MODE_SUM_BOUNDED_THEOREM_NOTE_2026-09-16.md@v3
+@@ -243,7 +243,7 @@
+   not by numerical execution. Historical samplers are not primary evidence.
+ - **N6 — Partial closure.** Retain complete finite proofs and exact history.
+   Broader normalization, asymptotic and physical conclusions stay deferred;
+-  preserve the original branch on partial closure. No primitive selects them.
++  preserve the original branch on partial closure. No primitive supplies those choices.
+ - **N7 — Strong objection.** Finite estimates of a sample-dependent
+   projection do not identify an infinite fixed-component response. This is
+   accepted as a scope limitation; no error bars or equilibration guarantee
+--- scripts/sphere_static_finite_volume_covariance_response_projected_mode_sum_check_2026_09_16.py@v2
++++ scripts/sphere_static_finite_volume_covariance_response_projected_mode_sum_check_2026_09_16.py@v3
+@@ -24,7 +24,7 @@
+     "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+ )
+-INPUT_SHA256 = {'docs/SPHERE_STATIC_FINITE_VOLUME_GAUSSIAN_COVARIANCE_FIXED_AXIS_RESPONSE_AND_PROJECTED_MODE_SUM_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'd9101bfd4e13359be9e478788f0c1ac79b88be32403878968c90cb300c49dded', 'docs/MINIMAL_AXIOMS_2026-06-29.md': '93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753', 'docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md': 'cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97'}
++INPUT_SHA256 = {'docs/SPHERE_STATIC_FINITE_VOLUME_GAUSSIAN_COVARIANCE_FIXED_AXIS_RESPONSE_AND_PROJECTED_MODE_SUM_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'a73ca20d57b4d738084d43748f476da9c353d3f65d56d846ea7525bc93104f05', 'docs/MINIMAL_AXIOMS_2026-06-29.md': '93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753', 'docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md': 'cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97'}
+ ROOT = Path(__file__).resolve().parents[1]
+ CLAIM_ID = "sphere_static_finite_volume_gaussian_covariance_fixed_axis_response_and_projected_mode_sum_bounded_theorem_note_2026-09-16"
+ BLOCK01_CLAIM_ID = "admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06"

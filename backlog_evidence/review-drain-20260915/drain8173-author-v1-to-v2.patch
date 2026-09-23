@@ -1,0 +1,35 @@
+--- docs/SPHERE_STATIC_FINITE_VOLUME_GAUSSIAN_COVARIANCE_FIXED_AXIS_RESPONSE_AND_PROJECTED_MODE_SUM_BOUNDED_THEOREM_NOTE_2026-09-16.md@v1
++++ docs/SPHERE_STATIC_FINITE_VOLUME_GAUSSIAN_COVARIANCE_FIXED_AXIS_RESPONSE_AND_PROJECTED_MODE_SUM_BOUNDED_THEOREM_NOTE_2026-09-16.md@v2
+@@ -38,10 +38,10 @@
+ ```yaml
+ actual_current_surface_status: bounded-support
+ target_claim_type: bounded_theorem
+-trace_class: frontier_discovery
++trace_class: upstream_support
+ target_claim_id: null
+ target_blocker_text: "finite supplied-law covariance, rotation response and projected mode sum"
+-source_of_blocker_text: author_source
++source_of_blocker_text: handoff
+ reachability_to_target: supports
+ artifact_role: theorem_plus_decisive_artifact
+ next_trace_action: "independent affected-source confirmation and exact-source finite evidence; broader interpretation deferred"
+@@ -233,7 +233,7 @@
+   finite proofs; this is not a negative-certification PASS.
+ - **N3 — Hidden premises.** Finite volume, beta positivity, surface measure,
+   field, bond convention and Gaussian reference are explicit supplies. No
+-  physical order, coupling or infinite-volume state is inferred.
++  order or coupling is selected as physical, and no infinite-volume state is inferred.
+ - **N4 — Citation roles.** The axioms are framework context. Product-law and
+   zero-field Fourier/return-sum notes are context only, not proof imports.
+   The finite Fourier, Gaussian and rotation calculations are supplied in full.
+--- scripts/sphere_static_finite_volume_covariance_response_projected_mode_sum_check_2026_09_16.py@v1
++++ scripts/sphere_static_finite_volume_covariance_response_projected_mode_sum_check_2026_09_16.py@v2
+@@ -24,7 +24,7 @@
+     "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+ )
+-INPUT_SHA256 = {'docs/SPHERE_STATIC_FINITE_VOLUME_GAUSSIAN_COVARIANCE_FIXED_AXIS_RESPONSE_AND_PROJECTED_MODE_SUM_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'c83031955757e75b0ca9ea67430cc1a45ac8b02e9f412eb5ae05865139274527', 'docs/MINIMAL_AXIOMS_2026-06-29.md': '93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753', 'docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md': 'cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97'}
++INPUT_SHA256 = {'docs/SPHERE_STATIC_FINITE_VOLUME_GAUSSIAN_COVARIANCE_FIXED_AXIS_RESPONSE_AND_PROJECTED_MODE_SUM_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'd9101bfd4e13359be9e478788f0c1ac79b88be32403878968c90cb300c49dded', 'docs/MINIMAL_AXIOMS_2026-06-29.md': '93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753', 'docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md': 'cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97'}
+ ROOT = Path(__file__).resolve().parents[1]
+ CLAIM_ID = "sphere_static_finite_volume_gaussian_covariance_fixed_axis_response_and_projected_mode_sum_bounded_theorem_note_2026-09-16"
+ BLOCK01_CLAIM_ID = "admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06"

@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "cc7662e14ebf17010a0c60fdb8e7e634b176ce99",
+  "fetched_ref": "refs/review-loop/fetched/8174-d9efb321d52a41d2bb79384bdbb444c2",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/admissibility-induced-law-block30-six-axis-threshold-two-level-domination-amplified-nodes-20260916",
+    "headRefOid": "cc7662e14ebf17010a0c60fdb8e7e634b176ce99",
+    "isDraft": false,
+    "number": 8174,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

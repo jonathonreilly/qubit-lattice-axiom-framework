@@ -1,0 +1,142 @@
+{
+  "status": "verified",
+  "source_tree": "34b9ca6dcaabb2033921494a778af4dedf3d1242",
+  "source_paths": 24,
+  "original_dispositions": 18,
+  "adapter_binding_only": true,
+  "execution_receipts": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-execution-v2.json",
+      "sha256": "65d06860468f2419c6737ea9e342ddde8ae29095e07560cb72cb904c4890e26c",
+      "elapsed": 0.9830726250074804,
+      "peak_rss": 124485632
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-mutation-variance_identity_wrong-v1.json",
+      "sha256": "a953013da7a864530227af58252a2217756868b3c61e106c9e9109b6df32b392",
+      "elapsed": 1.0539277080097236,
+      "peak_rss": 99368960
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-mutation-directional_moment_wrong-v1.json",
+      "sha256": "4cfab979fb338074f36c78381665ba38f885455bdc52b49d89e3daa20204b502",
+      "elapsed": 0.9015212919912301,
+      "peak_rss": 100827136
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-mutation-sign_lemma_wrong-v1.json",
+      "sha256": "1890461a72d56e79fd28b69ebb6fafc55d0cb69a2069a59a420aa22897be1580",
+      "elapsed": 1.1485971250222065,
+      "peak_rss": 99893248
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-mutation-sensitivity_bound_wrong-v1.json",
+      "sha256": "ddc6802b09f66080c395a0463fd32edc5ae05a5de48738eaf79aff2040455949",
+      "elapsed": 1.0110199579503387,
+      "peak_rss": 100302848
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-mutation-contraction_constant_wrong-v1.json",
+      "sha256": "6368b8ef60b797b27d8b5cc09abcfff0757ef28a2a91b10195a5771952d673a3",
+      "elapsed": 0.8573886250378564,
+      "peak_rss": 100679680
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-mutation-one_site_rate_wrong-v1.json",
+      "sha256": "2774e01328c7f1beb8f8960a53922f74528d5a5af1f284450e7df537b7dfc346",
+      "elapsed": 0.8398572090081871,
+      "peak_rss": 100368384
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-mutation-reach_wrong-v1.json",
+      "sha256": "5e93da14608a756999348998513c3a92735799c01e100d5035e1ea97babaa2a4",
+      "elapsed": 0.8476517500239424,
+      "peak_rss": 100679680
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-mutation-reach_upper_wrong-v1.json",
+      "sha256": "960147aa18bffbee3f34373d8ebb617100eb1ab2174e04923538cba2bb14a10e",
+      "elapsed": 0.8851568340323865,
+      "peak_rss": 100220928
+    }
+  ],
+  "external_raw_artifacts": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-worker-v2.json",
+      "sha256": "a2976d28ea3fa3a58e1b6e6bbe248843fda43c67a1a147287ec3d685199bea70"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-supervisor-v2.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-raw-result-v2.json",
+      "sha256": "9fbf2b98e64686ee616bc987db0245af4a9095b5b771b71b112958fe4e404002"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-mutation-variance_identity_wrong-v1.stdout.txt",
+      "sha256": "d16d556f8a09ea6250253771bc8b5782500b7cc3dc4518a1432bb9571715bbd0"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-mutation-variance_identity_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-mutation-directional_moment_wrong-v1.stdout.txt",
+      "sha256": "887df501c4e1ec02f7285c830180a01a1bab6042024ca958e8f9c132ee5d45be"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-mutation-directional_moment_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-mutation-sign_lemma_wrong-v1.stdout.txt",
+      "sha256": "09f9b588a34811cd77aed40fda12b89bc8a7360a928df2d8f251a2a332fff458"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-mutation-sign_lemma_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-mutation-sensitivity_bound_wrong-v1.stdout.txt",
+      "sha256": "bd5f28e9b1a55d7a3ef180b1442ed564b7f058c16db2fe35c5fe1b712f7f6e1a"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-mutation-sensitivity_bound_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-mutation-contraction_constant_wrong-v1.stdout.txt",
+      "sha256": "d3405f33bf2272f198fe25f06096968fb3b88a5429f67898760547f52db1163c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-mutation-contraction_constant_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-mutation-one_site_rate_wrong-v1.stdout.txt",
+      "sha256": "9199e377e687ffc8db74c32064a6607e3804a47db9a58ea9b8ef8965de9d38aa"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-mutation-one_site_rate_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-mutation-reach_wrong-v1.stdout.txt",
+      "sha256": "fa978666d2e6142d6089daca21b321b9f762db0a57de7d7241dbceaf6cc0d64d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-mutation-reach_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-mutation-reach_upper_wrong-v1.stdout.txt",
+      "sha256": "fa978666d2e6142d6089daca21b321b9f762db0a57de7d7241dbceaf6cc0d64d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-mutation-reach_upper_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "science_runs_performed_by_verifier": 0
+}

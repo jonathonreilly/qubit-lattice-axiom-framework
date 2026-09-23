@@ -1,0 +1,83 @@
+{
+  "status": "PROPOSED ONLY; no adapter executed",
+  "adapters": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-build-staged-draft-v1.py",
+      "sha256": "edb2f456664f2e8b3f09cac31551cc10569527d0478ca8e66760144dddb0f965"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-capture-v1.py",
+      "sha256": "5d94b0dc44b9deafbc902dc0bb1a7ca448654b91cdab08d3ac38427f186d975c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-mutation-capture-v1.py",
+      "sha256": "dee4e2a68fe4d7fa8e1e57806135b23946763ba6b0d1b9f27d7aa24264176042"
+    }
+  ],
+  "early_review": {
+    "path": "/private/tmp/review-drain-20260915/drain8172-early-review-v1.json",
+    "sha256": "fe87a74880688bbfcc113cb932943ee206dd7aa069882397e0b2c0abfa0ea503"
+  },
+  "source_freeze": {
+    "path": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source-freeze.json",
+    "sha256": "bcd077e753b3f398a414fe0a463dd568e05fbf1921d6b68d676d4e37186264b8"
+  },
+  "resource_plan": {
+    "path": "/private/tmp/review-drain-20260915/drain8172-author-input-resource-plan-v1.json",
+    "sha256": "8a6c0b8da6c3575158a8c6a5728c977275afce0dbe85083144858404c76ef7a7"
+  },
+  "baseline_runs": 1,
+  "mutation_runs": 8,
+  "simulation_runs": 0,
+  "limits_per_program": {
+    "seconds": 900,
+    "aggregate_rss_bytes": 805306368,
+    "sampling_seconds": 0.02,
+    "scope": "External supervisor and observed process descendants; sampled RSS, not an OS hard reservation"
+  },
+  "output_contract": {
+    "primary_json": "logs/runner-cache/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16.json",
+    "primary_stdout_cache": "logs/runner-cache/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16.txt",
+    "mutation_json_pattern": "logs/runner-cache/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16--<mutation>.json",
+    "checks": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "B1",
+      "B2",
+      "B3",
+      "C1",
+      "C2",
+      "C3",
+      "D1"
+    ],
+    "mutations": {
+      "criterion_bracket_wrong": "B",
+      "threshold_p0_wrong": "B",
+      "eroder_bound_wrong": "C",
+      "region_count_wrong": "C",
+      "polynomial_wrong": "C",
+      "influence_wrong": "D",
+      "translation_origin_wrong": "C",
+      "third_coordinate_wrong": "C"
+    },
+    "successful_baseline": "exit0 and TOTAL: PASS=11 FAIL=0 with exact structured input/source identities",
+    "successful_mutation": "exit1 and failed>0, eleven checks total and expected target family failure; stdout and JSON agree"
+  },
+  "ordering": [
+    "Root guarded advance and inspect builder; actual expected HEAD must equal origin/main",
+    "Root explicitly dispatch builder with pinned actual early review; exact source and all recovery checks precede staging",
+    "Actual cheap receipt and same-session cold/new-main review required",
+    "Create new immutable capture and mutation adapter revisions with exact actual cold report path/hash/tree/verdict keys and accepted wording; proposed v1 deliberately refuses dispatch",
+    "One baseline capture through actual execute_and_write_cache; wrapper saves execute_runner result unchanged before API identity checks",
+    "Eight serial mutation invocations, each exactly once, reuse successful unchanged baseline receipt; no baseline rerun",
+    "Only after all captures may root stage canonical cache and proceed to final review"
+  ],
+  "raw_preservation": "Primary full execute_runner result persisted in exclusive ROOT/drain8172-raw-result-<version>.json before coordinator identity checks; mutation stdout/stderr streamed directly to exclusive ROOT files before post-run rejection. Preserve all partial structured outputs, errors, survivors and limit failures.",
+  "retry_policy": "Exclusive baseline and per-name mutation markers; no automatic retry, cap increase or overwritten evidence",
+  "scratch": "None; actual CLI emits distinct mutation JSON paths, retained in original checkout. No generated split inputs.",
+  "evidence_policy": "Immutable ROOT review/binding/raw-result artifacts; canonical cache covered by source/input identity, not treated as mutable external review authority.",
+  "registry_edits_needed": false,
+  "science_executions_this_task": 0
+}

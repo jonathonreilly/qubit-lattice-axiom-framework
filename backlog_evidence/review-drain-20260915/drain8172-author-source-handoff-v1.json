@@ -1,0 +1,1187 @@
+{
+  "status": "AUTHOR MAPPING; ORIGINAL REVIEWER CURRENT-BASE COLD AND FINAL CONFIRMATION REQUIRED",
+  "original_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "original_mode": "100644",
+      "original_blob": "f296aef8bec769dd5d6dba8e92fd68299d49a1f3",
+      "original_sha256": "573f5ed6133f2f043568aa62f69a38e5d9bc2733899f806ea7f985e37d6dbb42",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/APPROACH_REGISTRY-f296aef8bec769dd.md",
+      "recovery_encoding": "identity",
+      "disposition": "Historical/deferred exact recovery; no active authority; generated topology superseded where applicable",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block28_findings.md",
+      "original_mode": "100644",
+      "original_blob": "6fdbdf7ac1bd8d16a773dc45b7432b933c5d3eb1",
+      "original_sha256": "338982c97dbeea3f1474f8f43da993eea5d67fbf3350255dc6965f998e953762",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/CHECKER_block28_findings-6fdbdf7ac1bd8d16.md",
+      "recovery_encoding": "identity",
+      "disposition": "Historical/deferred exact recovery; no active authority; generated topology superseded where applicable",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block28.md",
+      "original_mode": "100644",
+      "original_blob": "bb508f195a32e2e9acea2512dec239051639fee1",
+      "original_sha256": "f4f745e8a159f63162b930a7e5e6c8604ce8c213967009ef3de2b3ae0c42aa72",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/CLAIM_STATUS_CERTIFICATE_block28-bb508f195a32e2e9.md",
+      "recovery_encoding": "identity",
+      "disposition": "Historical/deferred exact recovery; no active authority; generated topology superseded where applicable",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block28.md",
+      "original_mode": "100644",
+      "original_blob": "90d0882134e9ee53709577a521373ddc4102144a",
+      "original_sha256": "44feba3aa88bdcd1d6dafeef4979eae970eb71c5cd1e2f3ef223d7c590f14400",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/GOAL_block28-90d0882134e9ee53.md",
+      "recovery_encoding": "identity",
+      "disposition": "Historical/deferred exact recovery; no active authority; generated topology superseded where applicable",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "original_mode": "100644",
+      "original_blob": "44c009a7729b873dcd3449ca5faeb95cfef42c94",
+      "original_sha256": "36e775394dcead762a03cb6a113e0debd4f7962a5c67d9136a39cdd7db2c62ff",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/HANDOFF-44c009a7729b873d.md",
+      "recovery_encoding": "identity",
+      "disposition": "Historical/deferred exact recovery; no active authority; generated topology superseded where applicable",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "original_mode": "100644",
+      "original_blob": "da597e8270234a2746514d2155cb635591db91a6",
+      "original_sha256": "86693056ebc7d831ee15d66876bcdde4e714030f43abc6f883416e887e474f2f",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/OPPORTUNITY_QUEUE-da597e8270234a27.md",
+      "recovery_encoding": "identity",
+      "disposition": "Historical/deferred exact recovery; no active authority; generated topology superseded where applicable",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block28.md",
+      "original_mode": "100644",
+      "original_blob": "94bec5337188678b2cdd50ca681476563b00356f",
+      "original_sha256": "57e7a5d363cb0796d6a8b846c6dd89ce8cca6c30825761c81560a9b866d17a2c",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/RESULTS_block28-94bec5337188678b.md",
+      "recovery_encoding": "identity",
+      "disposition": "Historical/deferred exact recovery; no active authority; generated topology superseded where applicable",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "original_mode": "100644",
+      "original_blob": "5de1f2362d5592b4d55a29c44398c969c652b6a2",
+      "original_sha256": "2bb63d9a67822fdd6a7e902a3a419a690a0f5d0609ff93468581be008602e0e0",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/REVIEW_HISTORY-5de1f2362d5592b4.md",
+      "recovery_encoding": "identity",
+      "disposition": "Historical/deferred exact recovery; no active authority; generated topology superseded where applicable",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "original_mode": "100644",
+      "original_blob": "4e45eff3b361f6e35b4084fc13c6f125a6c7e986",
+      "original_sha256": "42c7d658468ed8f305a075ba44afb666472a984d4c9bbf1f7a5e1d148949b5b2",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/STATE-4e45eff3b361f6e3.yaml",
+      "recovery_encoding": "identity",
+      "disposition": "Historical/deferred exact recovery; no active authority; generated topology superseded where applicable",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "original_mode": "100644",
+      "original_blob": "e0b88a0cc15db463a77777d9e7b58547225facae",
+      "original_sha256": "b49e62bb70fc7cc6d565d67e141f85dc5fa73465e21f12afa92c5ade05f1aab2",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/TRACE_GATE-e0b88a0cc15db463.md",
+      "recovery_encoding": "identity",
+      "disposition": "Historical/deferred exact recovery; no active authority; generated topology superseded where applicable",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_exact.out.txt",
+      "original_mode": "100644",
+      "original_blob": "82cb36c9ecb8ead2545ba0c48bbb581cb869092e",
+      "original_sha256": "1d5b1c151f83c671b8a6892043e5b01738f8d891002ee2a5ca977d43a0b4e71a",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_exact.out-82cb36c9ecb8ead2.txt.gz",
+      "recovery_encoding": "gzip",
+      "disposition": "Historical/deferred exact recovery; no active authority; generated topology superseded where applicable",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_exact.py",
+      "original_mode": "100644",
+      "original_blob": "841cfedbb1c9c00ad93f2b43eb09210c6fdecacc",
+      "original_sha256": "d2f006d612617e5a7766a2cd65bd3782792ffc2e5aee3f92256139c6d9a5a324",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_exact-841cfedbb1c9c00a.py",
+      "recovery_encoding": "identity",
+      "disposition": "Historical/deferred exact recovery; no active authority; generated topology superseded where applicable",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_refuter.out.txt",
+      "original_mode": "100644",
+      "original_blob": "4785cb7bd1bc89bc91e834354aded507af0d3a7a",
+      "original_sha256": "6e81342b8c7d17609bfc13c6f240463ff8b505f18ddd59d5b32b994d71508085",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_refuter.out-4785cb7bd1bc89bc.txt.gz",
+      "recovery_encoding": "gzip",
+      "disposition": "Historical/deferred exact recovery; no active authority; generated topology superseded where applicable",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_refuter.py",
+      "original_mode": "100644",
+      "original_blob": "be8a580c8a49dcc46f5db33351f95329c022ec39",
+      "original_sha256": "384bd0c38378dff80e6882de3822ce127fbf6120b43ceea3f38db507b0eef15c",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_refuter-be8a580c8a49dcc4.py",
+      "recovery_encoding": "identity",
+      "disposition": "Historical/deferred exact recovery; no active authority; generated topology superseded where applicable",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_formation_sixaxis.out.txt",
+      "original_mode": "100644",
+      "original_blob": "24388d69821ab568a0be12727f843d641f76324f",
+      "original_sha256": "9541ed8d2a57689f14c05fc906fe4398baef050ff9a797067f6d89edc86031fa",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_formation_sixaxis.out-24388d69821ab568.txt.gz",
+      "recovery_encoding": "gzip",
+      "disposition": "Historical/deferred exact recovery; no active authority; generated topology superseded where applicable",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_formation_sixaxis.py",
+      "original_mode": "100644",
+      "original_blob": "c7293f468d6cffac9a56408846d9d64d76490dba",
+      "original_sha256": "06c9db295dc6cae60c0585c23116b47b409c55ab8729bb2f18e8dc094bef80e5",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_formation_sixaxis-c7293f468d6cffac.py",
+      "recovery_encoding": "identity",
+      "disposition": "Historical/deferred exact recovery; no active authority; generated topology superseded where applicable",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sixaxis.out.txt",
+      "original_mode": "100644",
+      "original_blob": "bac7f37e8a0ea271730c5f83918b34f119cd5c5e",
+      "original_sha256": "8d901726502f29589f7b266b86c952f83dbcdc7a87fb4609813f8127a6caa718",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_static_sixaxis.out-bac7f37e8a0ea271.txt.gz",
+      "recovery_encoding": "gzip",
+      "disposition": "Historical/deferred exact recovery; no active authority; generated topology superseded where applicable",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sixaxis.py",
+      "original_mode": "100644",
+      "original_blob": "3356d4221aa94000d73a4008943ff5c8dcbd283a",
+      "original_sha256": "6ab23de4f0290d0473c57e1c0abbdbd9b1758b309fa7d6f219c3c0072d80da21",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_static_sixaxis-3356d4221aa94000.py",
+      "recovery_encoding": "identity",
+      "disposition": "Historical/deferred exact recovery; no active authority; generated topology superseded where applicable",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sphere.out.txt",
+      "original_mode": "100644",
+      "original_blob": "19a5299c46cab3eecc496fecae70078821d41edc",
+      "original_sha256": "5cd24d1b6ee3c8990d9fa7246848828c56eb61fa2da27a514fab3d50e7bf91c5",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_static_sphere.out-19a5299c46cab3ee.txt.gz",
+      "recovery_encoding": "gzip",
+      "disposition": "Historical/deferred exact recovery; no active authority; generated topology superseded where applicable",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sphere.py",
+      "original_mode": "100644",
+      "original_blob": "45845b8cb7ae5b023c84f788376981be1678b63c",
+      "original_sha256": "e609ad1a105c4495e1aed06138b832b2860a7554c5572abb9782a3d0771e439e",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_static_sphere-45845b8cb7ae5b02.py",
+      "recovery_encoding": "identity",
+      "disposition": "Historical/deferred exact recovery; no active authority; generated topology superseded where applicable",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": "docs/ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "original_mode": "100644",
+      "original_blob": "f2af9a93a1c168a8905cfbab33f08ea85454dc4c",
+      "original_sha256": "b1a4a11040a1dbadbdc5a800960c56df6d59851635006087940bcef7b5809990",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16-f2af9a93a1c168a8.md",
+      "recovery_encoding": "identity",
+      "disposition": "Narrowed and corrected positive science; full original exact recovery",
+      "final_path": "docs/SIX_AXIS_POINT_SENSITIVITIES_FINITE_ISLAND_HEALING_AND_DIRECTED_RECURRENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "final_sha256": "db64c52383eb094eee873e1f99a7e14643f6f8486c8fb14cc9e9aaf5c7bcf86b"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_mode": "100644",
+      "original_blob": "3c45f083d588d6d8e048f2510a2d8240ced0d61b",
+      "original_sha256": "0d30ac700152b3dfbacc7354da368cc5fe31ca1effec5e1d7092862ad013029f",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/citation_graph_manifest-3c45f083d588d6d8.json.gz",
+      "recovery_encoding": "gzip",
+      "disposition": "Historical/deferred exact recovery; no active authority; generated topology superseded where applicable",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": "logs/runner-cache/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16.txt",
+      "original_mode": "100644",
+      "original_blob": "5d81f2535f3c684039d893266dbbdec01bf3251d",
+      "original_sha256": "69c15b5b2b288e6a9fd8ff35671ec2505eef0d7dac3db9c250f400f488fcc59e",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16-5d81f2535f3c6840.txt.gz",
+      "recovery_encoding": "gzip",
+      "disposition": "Historical/deferred exact recovery; no active authority; generated topology superseded where applicable",
+      "final_path": null,
+      "final_sha256": null
+    },
+    {
+      "original_path": "scripts/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16.py",
+      "original_mode": "100755",
+      "original_blob": "6411552d4900e6e069df500cd6ac25163688a044",
+      "original_sha256": "cdb2b7e3b0ffce085650a92498dc24f2797360a81e2b9ed38ef1d6f1de5013f6",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/kept/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16-6411552d4900e6e0.py",
+      "recovery_encoding": "identity",
+      "disposition": "Narrowed and corrected positive science; full original exact recovery",
+      "final_path": "scripts/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16.py",
+      "final_sha256": "1c7cec640e3a24f704d5c3f38989d7237c9d8838171ae682f127ed5fdcb7f640"
+    }
+  ],
+  "claim_dispositions": [
+    {
+      "claim": "point arithmetic",
+      "disposition": "corrected live"
+    },
+    {
+      "claim": "finite healing",
+      "disposition": "corrected full proof live"
+    },
+    {
+      "claim": "recurrence",
+      "disposition": "supplied-coefficient full proof live"
+    },
+    {
+      "claim": "sphere coupling application",
+      "disposition": "deferred full original recovery"
+    },
+    {
+      "claim": "asymptotic thresholds and broad negatives",
+      "disposition": "deferred full original and raw protocol recovery"
+    },
+    {
+      "claim": "historical inherited packet",
+      "disposition": "all79 exact paths retained; no new scientific adoption"
+    }
+  ],
+  "base": "6332b12b59c83c5b08cc7b4ad90898cb6666050d",
+  "tree": "12b15627de59706ffa788e1014db4ed435029667",
+  "mathematical_closure": "Full exact finite conditional enumeration and majority deviations; full eroder/noise coupling with explicit recenter and original complete polynomial count; full supplied nonnegative recurrence comparison. Standard finite counting, induction and union bound only. No simulation data or unlanded sphere contraction premise.",
+  "runtime_scope": "One SymPy/standard-library primary plus three literal proof inputs; historical simulations and all79 inherited entries remain recovery only",
+  "branch_retention_required": true,
+  "inherited_dispositions": [
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "mode": "100644",
+      "blob": "f296aef8bec769dd5d6dba8e92fd68299d49a1f3",
+      "sha256": "573f5ed6133f2f043568aa62f69a38e5d9bc2733899f806ea7f985e37d6dbb42",
+      "bytes": 1763,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ARTIFACT_PLAN.md",
+      "mode": "100644",
+      "blob": "22710ddfc2129e014c01be119bac4df9a88b9bdc",
+      "sha256": "11b18212ac1f0f6061e1b06129f5600e65b171fdd09aff4137e619fd9a1fda62",
+      "bytes": 758,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/ARTIFACT_PLAN.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md",
+      "mode": "100644",
+      "blob": "e99dd0e244c2753522fc80b26960d1979642339c",
+      "sha256": "846820cca4ad70f5bedd07987abb8631aa7c1426b70eaf1a3d686cfe7041db34",
+      "bytes": 3250,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block01_findings.md",
+      "mode": "100644",
+      "blob": "46df0209138bcbde247dbc1d5e075c3628084710",
+      "sha256": "2ecf9c948bc9a4242ffb9e2c0f6b122bb3115435e08cfa6826d9369017dd9254",
+      "bytes": 21071,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block01_findings.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block02_findings.md",
+      "mode": "100644",
+      "blob": "55bfec87d3632ec352f419c94cd508b5306f6af7",
+      "sha256": "a0d9647d282f22f8802232a05e7a625355f4daadf4888b21f2bcdc203be4eaa3",
+      "bytes": 25920,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block02_findings.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block03_findings.md",
+      "mode": "100644",
+      "blob": "48b4b6b74f26d721b151029c3257c61c03690446",
+      "sha256": "e153c20672fd64342779533c3f124379e1156d9f03918839a1fc4634993b8cad",
+      "bytes": 21632,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block03_findings.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block04_findings.md",
+      "mode": "100644",
+      "blob": "3e0469887d12ec9df97367569c03ade015931d83",
+      "sha256": "be4e030f8c1db485af36c6e50d36f26a2aede98fd94276f428586ffd84b9181f",
+      "bytes": 23865,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block04_findings.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block05_findings.md",
+      "mode": "100644",
+      "blob": "a188c7353775cd1046d3a7c3c46d7aba0ca7edcc",
+      "sha256": "00c21e773c10d10a452458409bd2bb1e43824119921d2ac3d7050ff0e1572ea7",
+      "bytes": 17668,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block05_findings.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block28_findings.md",
+      "mode": "100644",
+      "blob": "6fdbdf7ac1bd8d16a773dc45b7432b933c5d3eb1",
+      "sha256": "338982c97dbeea3f1474f8f43da993eea5d67fbf3350255dc6965f998e953762",
+      "bytes": 3328,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block28_findings.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE.md",
+      "mode": "100644",
+      "blob": "430275a7d6981641d6704022f0cfc3c768b71f36",
+      "sha256": "124b491d002fc7b383cfb8e66886cc48d6efaa9a7ec822aaaec07cd1fdab648e",
+      "bytes": 2216,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block02.md",
+      "mode": "100644",
+      "blob": "8facf5b1da96f75389594517517093be28fd3e95",
+      "sha256": "839c86c0e10cede52da741cb179f96ccbc7fef4b39323102d544e330b0c7904f",
+      "bytes": 1952,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block02.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block28.md",
+      "mode": "100644",
+      "blob": "bb508f195a32e2e9acea2512dec239051639fee1",
+      "sha256": "f4f745e8a159f63162b930a7e5e6c8604ce8c213967009ef3de2b3ae0c42aa72",
+      "bytes": 2377,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block28.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL.md",
+      "mode": "100644",
+      "blob": "150038c32c0845270180324377b9a96e595690f2",
+      "sha256": "550b385034307da28caf649ce4aa1f82950f358a1fd2388fcc64062a02dc9efe",
+      "bytes": 19895,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/GOAL.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block02.md",
+      "mode": "100644",
+      "blob": "b082907728892d62db9d06d9c71e16d8c75bc05d",
+      "sha256": "c849585b8c81a4a6f7da3bd5068fd0d02aa49b6792c243620124c6dc796d631a",
+      "bytes": 12267,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block02.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block03.md",
+      "mode": "100644",
+      "blob": "9dbf249612f5cee3955137c52ed531132784cd37",
+      "sha256": "bd726a9aa0313878e0caf31d00167580d9ed4f9c9786b8ef3544aa2d318f0e0c",
+      "bytes": 22778,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block03.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block04.md",
+      "mode": "100644",
+      "blob": "da03afa1b754b360def5975b003a591cdfe636d6",
+      "sha256": "55836e2e84abcc3e8550f681bf19c8b30975031afe2815362f0f450a1b63c6fd",
+      "bytes": 6916,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block04.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block05.md",
+      "mode": "100644",
+      "blob": "a514e842da9ee84c0477c5927ef18e9f2a6413c4",
+      "sha256": "a6f55782dfe80d83c2c57e6a655fb60e30fbfd74a8f7fa458a1c4184cc4e0e2b",
+      "bytes": 11970,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block05.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block28.md",
+      "mode": "100644",
+      "blob": "90d0882134e9ee53709577a521373ddc4102144a",
+      "sha256": "44feba3aa88bdcd1d6dafeef4979eae970eb71c5cd1e2f3ef223d7c590f14400",
+      "bytes": 3748,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block28.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "mode": "100644",
+      "blob": "44c009a7729b873dcd3449ca5faeb95cfef42c94",
+      "sha256": "36e775394dcead762a03cb6a113e0debd4f7962a5c67d9136a39cdd7db2c62ff",
+      "bytes": 9924,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md",
+      "mode": "100644",
+      "blob": "9ccaee75bb420ef215668df8c5bf9b8a5f8fca7f",
+      "sha256": "4bc466e4075f1f9173b2ee5ab83d3113c309ff91f57cb56ef7ce506ed47b54de",
+      "bytes": 2067,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+      "mode": "100644",
+      "blob": "2977b7f9903b58f95963491e44cb244ee894ab84",
+      "sha256": "6b14211f9f8f1f284602d74b61136b60dca0bc01b508176a309a4bc1d3dd848c",
+      "bytes": 1652,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "mode": "100644",
+      "blob": "da597e8270234a2746514d2155cb635591db91a6",
+      "sha256": "86693056ebc7d831ee15d66876bcdde4e714030f43abc6f883416e887e474f2f",
+      "bytes": 11861,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/PROBES_gravity_consumer_20260907.md",
+      "mode": "100644",
+      "blob": "25499feff349d93fc728695a7f6063a153716c7f",
+      "sha256": "300f6f0019a45393d07d4cc664b604a3459f26713b8eb3c4f2dc7adde676052a",
+      "bytes": 4853,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/PROBES_gravity_consumer_20260907.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/PR_BACKLOG.md",
+      "mode": "100644",
+      "blob": "eb572200f320a1747927f72837a6122d639a2e05",
+      "sha256": "049b592eccd6e94dc399a22b32c17b2501bc39875deb0f66a1da019ed93a1182",
+      "bytes": 137,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/PR_BACKLOG.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS.md",
+      "mode": "100644",
+      "blob": "9541a31d0c1496ada6216ba40cc0e2978efa6584",
+      "sha256": "8b49d9937edb34a58d901d21c265c83a7997f11746307ebcb5a9904bf5a26b9b",
+      "bytes": 16998,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block02.md",
+      "mode": "100644",
+      "blob": "2725773b70863c94d23b3ce9601f5749b6ff9d20",
+      "sha256": "97c96e25e979b57672fc6bec06afee3f5f673db6f0c4c7296cbc0283a1b18c81",
+      "bytes": 24385,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block02.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block03.md",
+      "mode": "100644",
+      "blob": "547c0e31cc5f671c0f84f6acb7e7e9dbca900c80",
+      "sha256": "8509f55a26674ef81d8d09b542a8842562dd0b68a27033356eddc9da7f5ea100",
+      "bytes": 36838,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block03.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block04.md",
+      "mode": "100644",
+      "blob": "3d89a3d8af0849eda076fefaa8739050f6586902",
+      "sha256": "353bf63bcc4c29c493dd484b9dc0bc01e545fe7e1087ba75c5bbb63556d28746",
+      "bytes": 9220,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block04.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block05.md",
+      "mode": "100644",
+      "blob": "e1cb457c88d5f61f1b360a7b1039ac01895bc9b4",
+      "sha256": "5e61bada96df46060f80acd0855bb1eb380171e48c16ffcb2f451142544d1d83",
+      "bytes": 14118,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block05.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block28.md",
+      "mode": "100644",
+      "blob": "94bec5337188678b2cdd50ca681476563b00356f",
+      "sha256": "57e7a5d363cb0796d6a8b846c6dd89ce8cca6c30825761c81560a9b866d17a2c",
+      "bytes": 4612,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block28.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "mode": "100644",
+      "blob": "5de1f2362d5592b4d55a29c44398c969c652b6a2",
+      "sha256": "2bb63d9a67822fdd6a7e902a3a419a690a0f5d0609ff93468581be008602e0e0",
+      "bytes": 56969,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md",
+      "mode": "100644",
+      "blob": "9b1cd3a27f32295eccf43bf396e38697cba33b16",
+      "sha256": "4bd21d080062000a8bc5d3c20ef213f3bf705b606e53c75f69719f5b64efe64a",
+      "bytes": 10431,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "mode": "100644",
+      "blob": "4e45eff3b361f6e35b4084fc13c6f125a6c7e986",
+      "sha256": "42c7d658468ed8f305a075ba44afb666472a984d4c9bbf1f7a5e1d148949b5b2",
+      "bytes": 16549,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "mode": "100644",
+      "blob": "e0b88a0cc15db463a77777d9e7b58547225facae",
+      "sha256": "b49e62bb70fc7cc6d565d67e141f85dc5fa73465e21f12afa92c5ade05f1aab2",
+      "bytes": 5121,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/checker.md",
+      "mode": "100644",
+      "blob": "5247bea1ffcfeff4a89ea873509902be188c54d9",
+      "sha256": "4ee4804562b45f3cfa4435bef10be17a89127201bfa3ffd7101119d7b860ccb5",
+      "bytes": 7253,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/checker.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/checker_block02.md",
+      "mode": "100644",
+      "blob": "7370f2cc6056b24f967a53c49266a39ca843ecc5",
+      "sha256": "3247369b7cbf4acfdc6e66455fe78af2a985487b766d8d2dd4a2c32722cb6e01",
+      "bytes": 6618,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/checker_block02.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/panel_L1_mrf_rigor.md",
+      "mode": "100644",
+      "blob": "300005abea54ee0294360aa76dd7a9b04e54e52f",
+      "sha256": "5d41a0123f000012e57f645e05a4f98719595cd97d72a9eeb750f8d119e218e9",
+      "bytes": 25176,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/panel_L1_mrf_rigor.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/panel_L2_foundations.md",
+      "mode": "100644",
+      "blob": "efb46c9313e55789694061aa53a546b57c0ab025",
+      "sha256": "1768d59488f15dbcab5c0b8d3df8b68bd6e1489d98501d71b19252cea14003cd",
+      "bytes": 21289,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/panel_L2_foundations.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/panel_L3_strategy.md",
+      "mode": "100644",
+      "blob": "6bf74ae434d327cd4f6e2f42dad97508010661d5",
+      "sha256": "1f03475ef00890fbac0d9c956ca076225ec857145de6c1834678658ce2ffb0c0",
+      "bytes": 22265,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/panel_L3_strategy.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/panel_L4_refuter.md",
+      "mode": "100644",
+      "blob": "4cd634b58eaf7b5cd02a43ae620da4cad8007c91",
+      "sha256": "cfeefdd6a31c8019c4e8af39d5ede516ebb3ba9d4898cc9d81538605f7f10ce5",
+      "bytes": 19495,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/panel_L4_refuter.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/panel_block02_L4_contract_refuter.md",
+      "mode": "100644",
+      "blob": "891bbd9f1a88356eab3833c22c8b82c550fa3829",
+      "sha256": "b4ad0d7e38c39ea1018db731a2be8dec50e945383df9fdb7e4e29348aaef891f",
+      "bytes": 18034,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/panel_block02_L4_contract_refuter.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/panel_dossier.md",
+      "mode": "100644",
+      "blob": "8f3df811df7638ddc17f52acaa660e5ac1d727a0",
+      "sha256": "bc6b451f640d472f70f4386d0ee0ad3f9c78e2f26fc5fac24610f651660935e7",
+      "bytes": 12326,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/panel_dossier.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/primary.md",
+      "mode": "100644",
+      "blob": "f3fc160bc4f424be3df758a4fb30f57802c5fa7b",
+      "sha256": "63a5a37fa1d2e1a09a4d67c009238132f788e72cc81f528ff3bf243034f3908f",
+      "bytes": 24422,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/primary.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/primary_block02.md",
+      "mode": "100644",
+      "blob": "759c3578d410e6f2e23961aa5c76037a61093fc0",
+      "sha256": "73fe1b3022f33466e7703a4691997926a382275b44dc8603f768bc841d8531c8",
+      "bytes": 16916,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/primary_block02.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/primary_block03.md",
+      "mode": "100644",
+      "blob": "be5eee7c6b8938368b54c6fb3aa509e86cb2e92d",
+      "sha256": "acee77791d09461961ba62b91fac49598ba80fd374b759f1da37b636c849220b",
+      "bytes": 16483,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/primary_block03.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/primary_block05.md",
+      "mode": "100644",
+      "blob": "f150574bb35b05e740ae4f94d4056c7f3a772383",
+      "sha256": "789ad54676c6221bd47d37ba26f120d7b7a5e0f5fb41e405097cbf268afbab1e",
+      "bytes": 11714,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/primary_block05.md",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block02_dobrushin_strip.py",
+      "mode": "100644",
+      "blob": "580b4de87259709e4df152444ba9d454cbf49816",
+      "sha256": "abf0c4212a40e7a85dad604fafd2629e8eef8456fff1b8691c6aee23420cbe48",
+      "bytes": 5040,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block02_dobrushin_strip.py",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block02_enclosure.py",
+      "mode": "100644",
+      "blob": "f093727e59c56947edad4049c93c563f852fc912",
+      "sha256": "4f0e6ccdbd26f509748de4e9889c8eac9247cdb07638aac7d061c17bddd91a14",
+      "bytes": 5185,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block02_enclosure.py",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block02_enclosure_output.txt",
+      "mode": "100644",
+      "blob": "557900be6d627044906c2abb6a4eedb3e132f5e4",
+      "sha256": "d0859c7d8b26a4bae750130aec65638bfe1eb36c70219c25a81fb0cb996f9f2a",
+      "bytes": 2748,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block02_enclosure_output.txt",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block02_strip_invariance.py",
+      "mode": "100644",
+      "blob": "20af5a32bdd4299f03508595fe46071ed45214a1",
+      "sha256": "c02eef6cfefedbd23a780c1976f8403eb496148dbbb91abd2fa21fe03dcc3538",
+      "bytes": 4643,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block02_strip_invariance.py",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block02_strip_output.txt",
+      "mode": "100644",
+      "blob": "0602f35186525045a1d6d2f39e5d5deaec4bf7eb",
+      "sha256": "1f3e0540829f44c3fed11420c503f6acd9dcdcae1e6179049325f9ced7b8dd0a",
+      "bytes": 1145,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block02_strip_output.txt",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block03_after_lens.out.txt",
+      "mode": "100644",
+      "blob": "2478629d19b1524bd6757274aca7a4d1594c3472",
+      "sha256": "0e5aec9ca3a3b38f7f2fc052c091ff3b016294acc6c3f6054244048a7a8dd547",
+      "bytes": 5612,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block03_after_lens.out.txt",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block03_after_lens.py",
+      "mode": "100644",
+      "blob": "ee6bfde9d871cae4f61f149ce298f3aec5da4aa4",
+      "sha256": "9de10a1d7504974035df747c5fc69ed7efc474862da033ba048b7d4fc5e3577d",
+      "bytes": 8794,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block03_after_lens.py",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block03_certificates.py",
+      "mode": "100644",
+      "blob": "3b5b368bedf01080cd1e429622ebf289bf6c9bab",
+      "sha256": "99ba8bd7c44351a3a293dd710587cabfad5f1232d01f79ec9bcdf7e4659f728c",
+      "bytes": 1351,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block03_certificates.py",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block03_certificates_base.py",
+      "mode": "100644",
+      "blob": "ca28326cacaf8ff0c3ce8b31cb9c34faad9a0c47",
+      "sha256": "9b4fc05c85eb0590f9e0658a5f02e1c55f8dd2621333c1c4bdc99bddffa84f63",
+      "bytes": 6173,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block03_certificates_base.py",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block03_grid.py",
+      "mode": "100644",
+      "blob": "1fe18fffc0793f4728872cfc745d8a9130585e49",
+      "sha256": "a5504cf7cce2a0d21b610fd069e036476e525bb1b79307da22f9f23d8d11461f",
+      "bytes": 6247,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block03_grid.py",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block03_plaquette.out.txt",
+      "mode": "100644",
+      "blob": "ec711c8044506c9343a12e25861d5ebe27985247",
+      "sha256": "1688ba1aaa6cabb6248b1e17b0075cd2f1a271ffd98492a2d0fba8e369e34dce",
+      "bytes": 843,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block03_plaquette.out.txt",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block03_plaquette.py",
+      "mode": "100644",
+      "blob": "43d9c11e6617268b484a2a410a7005c5de95b9b0",
+      "sha256": "cf96b1275593aa36b2991ef28605ee5334b34b382b6246adb3d6104be77d592d",
+      "bytes": 2872,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block03_plaquette.py",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block03_thresholds_window.py",
+      "mode": "100644",
+      "blob": "5e65cddb38ae6ad302046ae1079edc8fc3385382",
+      "sha256": "35b0a82b753fcbad14b7b735807bad2fb77ca0dfb491a9ad87b5d5a8ab376e74",
+      "bytes": 5336,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block03_thresholds_window.py",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block04_after_checker.py",
+      "mode": "100644",
+      "blob": "4b3cf18b39b258f918464fb4f62b35b724011fa5",
+      "sha256": "f42db9efa997b0505a8128535a0fc1a0be0acd841bd75f4856764cfc7d96b4a5",
+      "bytes": 4679,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block04_after_checker.py",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block04_lines.py",
+      "mode": "100644",
+      "blob": "73e16c7db8bbae076279979933f960da77816b8e",
+      "sha256": "b75c3e4bd59830a5f63c942b7e5049bbb184d43e4a399b79fb182d72e59dda69",
+      "bytes": 2277,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block04_lines.py",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block04_two_site.py",
+      "mode": "100644",
+      "blob": "1b511e3e401d284ad5bc55635b9cb168eb5d4226",
+      "sha256": "8d477a6ddf992d355c45a06b5a3491430272d34ceae275f89d6ea8789638f6a1",
+      "bytes": 2891,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block04_two_site.py",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block05_after_lens.py",
+      "mode": "100644",
+      "blob": "969f05617cf2d488c21b6deeb365c2c6279bf858",
+      "sha256": "11a17e3e72759c097f00eccb6e4bc995ecc0ade2d20b223dde90fd5d36ad6a77",
+      "bytes": 717,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block05_after_lens.py",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block05_monotone.py",
+      "mode": "100644",
+      "blob": "d024fc252426cc41e1814adb62c3e07969da35f4",
+      "sha256": "e8209a85ee104d377493caf562c0f31821bfc15812dbebbcf7af8d387d7cecd6",
+      "bytes": 6183,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block05_monotone.py",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block05_snake.py",
+      "mode": "100644",
+      "blob": "d35a0cf9e7dea8b601d7f94d4f2f9823541af033",
+      "sha256": "58a62f1e206aac96bb05e9709ceec83b722561f5e48aa4afaf1a165f5fa4b090",
+      "bytes": 2698,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block05_snake.py",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_exact.out.txt",
+      "mode": "100644",
+      "blob": "82cb36c9ecb8ead2545ba0c48bbb581cb869092e",
+      "sha256": "1d5b1c151f83c671b8a6892043e5b01738f8d891002ee2a5ca977d43a0b4e71a",
+      "bytes": 416,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_exact.out.txt",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_exact.py",
+      "mode": "100644",
+      "blob": "841cfedbb1c9c00ad93f2b43eb09210c6fdecacc",
+      "sha256": "d2f006d612617e5a7766a2cd65bd3782792ffc2e5aee3f92256139c6d9a5a324",
+      "bytes": 3921,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_exact.py",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_refuter.out.txt",
+      "mode": "100644",
+      "blob": "4785cb7bd1bc89bc91e834354aded507af0d3a7a",
+      "sha256": "6e81342b8c7d17609bfc13c6f240463ff8b505f18ddd59d5b32b994d71508085",
+      "bytes": 1510,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_refuter.out.txt",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_refuter.py",
+      "mode": "100644",
+      "blob": "be8a580c8a49dcc46f5db33351f95329c022ec39",
+      "sha256": "384bd0c38378dff80e6882de3822ce127fbf6120b43ceea3f38db507b0eef15c",
+      "bytes": 5036,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_refuter.py",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_formation_sixaxis.out.txt",
+      "mode": "100644",
+      "blob": "24388d69821ab568a0be12727f843d641f76324f",
+      "sha256": "9541ed8d2a57689f14c05fc906fe4398baef050ff9a797067f6d89edc86031fa",
+      "bytes": 1990,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_formation_sixaxis.out.txt",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_formation_sixaxis.py",
+      "mode": "100644",
+      "blob": "c7293f468d6cffac9a56408846d9d64d76490dba",
+      "sha256": "06c9db295dc6cae60c0585c23116b47b409c55ab8729bb2f18e8dc094bef80e5",
+      "bytes": 1004,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_formation_sixaxis.py",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sixaxis.out.txt",
+      "mode": "100644",
+      "blob": "bac7f37e8a0ea271730c5f83918b34f119cd5c5e",
+      "sha256": "8d901726502f29589f7b266b86c952f83dbcdc7a87fb4609813f8127a6caa718",
+      "bytes": 1926,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sixaxis.out.txt",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sixaxis.py",
+      "mode": "100644",
+      "blob": "3356d4221aa94000d73a4008943ff5c8dcbd283a",
+      "sha256": "6ab23de4f0290d0473c57e1c0abbdbd9b1758b309fa7d6f219c3c0072d80da21",
+      "bytes": 1579,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sixaxis.py",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sphere.out.txt",
+      "mode": "100644",
+      "blob": "19a5299c46cab3eecc496fecae70078821d41edc",
+      "sha256": "5cd24d1b6ee3c8990d9fa7246848828c56eb61fa2da27a514fab3d50e7bf91c5",
+      "bytes": 839,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sphere.out.txt",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sphere.py",
+      "mode": "100644",
+      "blob": "45845b8cb7ae5b023c84f788376981be1678b63c",
+      "sha256": "e609ad1a105c4495e1aed06138b832b2860a7554c5572abb9782a3d0771e439e",
+      "bytes": 1819,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sphere.py",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_verify_core.py",
+      "mode": "100644",
+      "blob": "b10b390b7cd5b1e8214dfc9898486c61ca955eee",
+      "sha256": "4ae883be8e90d7c54476a18fdf59aecec1163a3984749f3838e48ce48a489c66",
+      "bytes": 4875,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_verify_core.py",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_verify_lemma.py",
+      "mode": "100644",
+      "blob": "2e28cb5bab3c7adf27daa5cb5fd153526a8ff475",
+      "sha256": "8e50381c58eca314783d6e64372f0271f1861ccd4083d3324e1037786f86297d",
+      "bytes": 3625,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_verify_lemma.py",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_fold_block02_note_patch.py",
+      "mode": "100644",
+      "blob": "5915357ecdbdd809850ddc49a2c14dce75ba12fc",
+      "sha256": "ead5de475c576e44b73aaa767c8f9713162c4c862e9b18951ca71424e59bd0f7",
+      "bytes": 8933,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_fold_block02_note_patch.py",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_fold_block02_runner_patch.py",
+      "mode": "100644",
+      "blob": "eaa8d69fdbe50dc22a462dc4833e27eb93250205",
+      "sha256": "bb445fa4cc81d36e13325dedeac350b3f5af06490c2865cd5c3c193de703020a",
+      "bytes": 4632,
+      "disposition": "historical recovery, no new scientific adoption",
+      "recovery": "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz member .claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_fold_block02_runner_patch.py",
+      "mode_recovery": "Restore original Git mode from pinned inventory"
+    }
+  ],
+  "registry_changes": [],
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-review-original.json",
+      "sha256": "1bbb13fa8d435c9fe654f76f0b53d2c0f28275e9ef2439ae36bbc17b0d351afa"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-review-original.md",
+      "sha256": "33a69ae71589dcd7979610a6aef20473946f6b5689e424e0df6610b7778b0442"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-author-prepared-v1.json",
+      "sha256": "054d528262327a60f6727e6cca999f6c0a40e14c781ec7cac3491242d351c202"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source-freeze.json",
+      "sha256": "bcd077e753b3f398a414fe0a463dd568e05fbf1921d6b68d676d4e37186264b8"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-author-full-mapping-v2.json",
+      "sha256": "19f51285bbb29be145dc0d1fa6893ce58b5b87872c86f4ffd9ff4d16fa373962"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-author-input-resource-plan-v1.json",
+      "sha256": "8a6c0b8da6c3575158a8c6a5728c977275afce0dbe85083144858404c76ef7a7"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-author-discovery-v1.json",
+      "sha256": "a929694e73b0952a6603ee036c592e0f58ee5c4cb0e9b052b5f69f6082ec77a7"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-author-preservation-v1.json",
+      "sha256": "623b6629a000594d6661a1764194fb6806823bf5d3b7adb3bf0caab265278ca8"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-author-finding-dispositions-v1.json",
+      "sha256": "f64e71ad436e69108cca146b38c4fc907bfbd58291cdc2c4809849612390dd79"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-author-correction-v2.diff",
+      "sha256": "e85676d1388344077b9aeb1701130964a2b88c0a177ab7e57102250aac7c9574"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-original/inventory.json",
+      "sha256": "6200f626acac435ad76d69ad05fa244732b1bbf0e0feae4b5714fcf76b167878"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-original/complete-packet-inventory.json",
+      "sha256": "45f6b2e57e9a612415f34328b391bcab04f0c3a6dcf88c89c1002b188cfe3619"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-original/complete-inherited-packet.tar",
+      "sha256": "47193e42af4893425222fa2c8a8771580bda659e1ee3422cb736cca947670900"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-early-review-v1.json",
+      "sha256": "fe87a74880688bbfcc113cb932943ee206dd7aa069882397e0b2c0abfa0ea503"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-early-review-v1.md",
+      "sha256": "0c027f39704afc2406f46bf86b2ab9c1ec762ee72c1814a295e67e166b991663"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-author-handoff-v1.json",
+      "sha256": "f8d2b559198e14560627ff6b0b76afb3a77eb3278ce72640ff11172007dcc47c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8172/early_verify_v1.py",
+      "sha256": "28ec1daae9a05d45a5113a644d4e50bb9d7f3103501081913253b46cb8217087"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8172/early_verify_v1.json",
+      "sha256": "30060e2314b0bd3f519df005b067ba697fb561e92cc7da3ab9cf1af6866a219d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8172/early_verify_v1.stdout",
+      "sha256": "5355e170b2891df70503415b3d9069b56578acd74da96e8c095f725a34b76f38"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8172/early_verify_v1.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8172/independent.py",
+      "sha256": "28edcddd63e07c65128528c73185fc7e33f9a70a157a4148473f4a35b59dca0f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8172/independent.out.json",
+      "sha256": "057ea5d6ee51c40d8951bb22fa561db8eb051d5c21309d191648fc87c2a57642"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-early-review-v1.json",
+      "sha256": "fe87a74880688bbfcc113cb932943ee206dd7aa069882397e0b2c0abfa0ea503"
+    }
+  ]
+}

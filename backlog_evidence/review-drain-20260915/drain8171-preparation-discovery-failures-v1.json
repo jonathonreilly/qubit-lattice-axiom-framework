@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "failures": [
+    {
+      "stage": "metadata discovery after completed v2 snapshot",
+      "error": "graph claim_id_from_path was passed str, requires Path",
+      "source_affected": false
+    },
+    {
+      "stage": "external failure-record writer",
+      "error": "NameError json not imported",
+      "source_affected": false
+    }
+  ],
+  "recovery": "Continuation used Path and completed read-only API discovery; no primary executed."
+}

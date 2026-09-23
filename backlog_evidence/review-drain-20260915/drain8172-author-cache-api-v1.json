@@ -1,0 +1,39 @@
+{
+  "status": "ACTUAL METADATA APIS ONLY; NO SCIENCE EXECUTION",
+  "claim_id": "six_axis_point_sensitivities_finite_island_healing_and_directed_recurrence_bounds_bounded_theorem_note_2026-09-16",
+  "note": "docs/SIX_AXIS_POINT_SENSITIVITIES_FINITE_ISLAND_HEALING_AND_DIRECTED_RECURRENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+  "runner": "scripts/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16.py",
+  "helpers": [],
+  "packet_helpers": [],
+  "transitive_helpers": [],
+  "resolved_helpers": [],
+  "citations": [
+    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/work_history/repo/review_feedback/pr8172-evidence/README.md"
+  ],
+  "ordered_inputs": [
+    {
+      "path": "docs/SIX_AXIS_POINT_SENSITIVITIES_FINITE_ISLAND_HEALING_AND_DIRECTED_RECURRENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "db64c52383eb094eee873e1f99a7e14643f6f8486c8fb14cc9e9aaf5c7bcf86b"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+    }
+  ],
+  "parents": [
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md"
+  ],
+  "timeout": 900,
+  "memory_mb": 768,
+  "input_fingerprint": "da24d8528aaed4d7c4012a1c7523c77035d5f9a2108e075354c100e3ff586d3f",
+  "registry_edits_needed": false,
+  "actual_current_base": "6332b12b59c83c5b08cc7b4ad90898cb6666050d",
+  "source_tree": "12b15627de59706ffa788e1014db4ed435029667"
+}

@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "base": "8bf464953779b8ada8415208e89a656411f9f525",
+  "source": [
+    {
+      "path": "docs/SPHERE_FORMATION_KERNEL_SENSITIVITY_AND_LEVEL_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "mode": "100644",
+      "sha256": "bcbad1f04d60ba345906cf1d83dc45691bb92516ddd85b2af2318f738f96f54c"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8171/README.md",
+      "mode": "100644",
+      "sha256": "a55890710f7479551690bcad8f64e1c4e2bd7ade604777e262aa903d20a5aa3c"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8171/originals/01-APPROACH_REGISTRY.md.gz",
+      "mode": "100644",
+      "sha256": "76d3c20b414c2314d6963f6dccedd124b2f6401c5cce2aebb6996b269c5fa83a"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8171/originals/02-CHECKER_block27_findings.md.gz",
+      "mode": "100644",
+      "sha256": "c590bd81bcde21d0c5ceb18e3f4fb7b090d569510d28251887dc9047d1af76cd"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8171/originals/03-CLAIM_STATUS_CERTIFICATE_block27.md.gz",
+      "mode": "100644",
+      "sha256": "1c883f383f39e3b034c00305181e48aad04e753a4f0a914a538ba8f70fabb455"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8171/originals/04-GOAL_block27.md.gz",
+      "mode": "100644",
+      "sha256": "d8740bec7ffcbbb3a0d65415e8cf242cf94280118a66d70c4ec431ec712bd43e"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8171/originals/05-HANDOFF.md.gz",
+      "mode": "100644",
+      "sha256": "2be7dd11fad72922e9e9b098dac2b442c085f130c9ff0ab280f7cc6697c10882"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8171/originals/06-OPPORTUNITY_QUEUE.md.gz",
+      "mode": "100644",
+      "sha256": "3f80ec7582f2890657884ebc63af41a759a8eb11222f873ddee5ba0dc12957a9"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8171/originals/07-RESULTS_block27.md.gz",
+      "mode": "100644",
+      "sha256": "f27db4a8c985984b7089337fd3608955419ac9cc5dd709b54357ee6c461fb6fe"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8171/originals/08-REVIEW_HISTORY.md.gz",
+      "mode": "100644",
+      "sha256": "97dbea02b8e795f59ecef875c19f595a7d6372e79449b00e60b5184298bb8519"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8171/originals/09-STATE.yaml.gz",
+      "mode": "100644",
+      "sha256": "54e4ee7b2d3999965b7e09ad1ddf6031f92b91ebf378db750af96fceeed36730"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8171/originals/10-TRACE_GATE.md.gz",
+      "mode": "100644",
+      "sha256": "343a0d405f721d9ca7ad42093733ea1b1e320f9d31d8d8e754b34928fae0dda0"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8171/originals/11-supervisor_control_block27.out.txt.gz",
+      "mode": "100644",
+      "sha256": "389affd2a090dd2a783552c023964ad54629e29505e98cc50f1063015a0bd53c"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8171/originals/12-supervisor_control_block27.py.gz",
+      "mode": "100644",
+      "sha256": "b37c158af52e70bae80b15aa5663ee7e9fb7cc609c8fc86a93bda2888c2c24fe"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8171/originals/13-supervisor_control_block27_refuter.out.txt.gz",
+      "mode": "100644",
+      "sha256": "8eaf088e9a75d878da0f1329dff595691999f6cc167557407f89c4461b2b6008"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8171/originals/14-supervisor_control_block27_refuter.py.gz",
+      "mode": "100644",
+      "sha256": "da711a65d142aa462d4fca5429c99b6209e691f612a7078ffd1cd3f7c5aad3dd"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8171/originals/15-ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_WEAK_COUPLING_THE_CAUSAL_COUPLING_CONTRACTS_ONE_INVARIANT_LAW_AND_EXPONENTIAL_LOSS_OF_MEMORY_BELOW_ONE_OVER_ROOT_THREE_BOUNDED_THEOREM_NOTE_2026-09-16.md.gz",
+      "mode": "100644",
+      "sha256": "f33ea4789634912f5dc3a6347749b6772c0e2eb2d2adf73c6965127cd6e5b225"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8171/originals/16-citation_graph_manifest.json.gz",
+      "mode": "100644",
+      "sha256": "72d7529e5648010f74b592973f3844f94282708d1fc1878733f59cd19191e66d"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8171/originals/17-admissibility_rule_unsoldered_formation_law_weak_coupling_causal_coupling_contracts_one_invariant_law_2026_09_16.txt.gz",
+      "mode": "100644",
+      "sha256": "a68938a16818bbadb7ed22def3e6125fde346b598ce8428aa0e4ba6cb2871449"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8171/originals/18-admissibility_rule_unsoldered_formation_law_weak_coupling_causal_coupling_contracts_one_invariant_law_2026_09_16.py.gz",
+      "mode": "100644",
+      "sha256": "0eb4d35b386713c451d47cf66d396d42bb9d043c361d857a6efffafe8d149fe2"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8171/pr8171-deferred-uniform-route-ceiling.txt",
+      "mode": "100644",
+      "sha256": "0e7c9b8672863b87fcb42fb30fd01bc0eb5b0982d5158f96b08fa0bb4ed16bf2"
+    },
+    {
+      "path": "docs/work_history/review_loop/pr8171/pr8171-original-manifest.json",
+      "mode": "100644",
+      "sha256": "d4fef893d5fe167a4ae8af8e357fe30081fec2b8270b972e6db26733f278f300"
+    },
+    {
+      "path": "scripts/sphere_formation_kernel_sensitivity_level_contraction_check_2026_09_16.py",
+      "mode": "100755",
+      "sha256": "e889b37d917e35c63b7a4cc6c439f9a011e870e67ccf66a2b8d42f667c5bd946"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8171",
+  "tree": "34b9ca6dcaabb2033921494a778af4dedf3d1242",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/SPHERE_FORMATION_KERNEL_SENSITIVITY_AND_LEVEL_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "sphere_formation_kernel_sensitivity_and_level_contraction_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/sphere_formation_kernel_sensitivity_level_contraction_check_2026_09_16.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/work_history/review_loop/pr8171/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8770,
+      "misses": 4534
+    },
+    "packet_imports": {
+      "hits": 8760,
+      "misses": 4532
+    },
+    "declared_inputs": {
+      "hits": 8801,
+      "misses": 4687
+    }
+  },
+  "record_sha256": "2a21ae47e2c98182cae31267147c5dc6bbeb8897c2bb79cf3b43eed7dd86b823",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

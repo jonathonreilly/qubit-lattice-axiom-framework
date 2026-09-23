@@ -1,0 +1,9 @@
+variance_identity_wrong ['B1'] 1.0539277080097236 99368960
+directional_moment_wrong ['B2'] 0.9015212919912301 100827136
+sign_lemma_wrong ['B3'] 1.1485971250222065 99893248
+sensitivity_bound_wrong ['B4'] 1.0110199579503387 100302848
+contraction_constant_wrong ['C1'] 0.8573886250378564 100679680
+one_site_rate_wrong ['C2'] 0.8398572090081871 100368384
+reach_wrong ['D1'] 0.8476517500239424 100679680
+reach_upper_wrong ['D1'] 0.8851568340323865 100220928
+All final source, input, archive and nine execution receipts verified.

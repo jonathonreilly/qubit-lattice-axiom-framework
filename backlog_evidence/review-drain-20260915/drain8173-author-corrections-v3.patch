@@ -1,0 +1,576 @@
+--- docs/ADMISSIBILITY_RULE_TRANSVERSE_KERNEL_NORMALIZATION_IN_THE_ORDERED_SPHERE_STATIC_LAW_MEASURED_BETWEEN_THE_BOUNDS_WITH_THE_TRANSVERSE_SUM_RULE_AND_THE_SPIN_WAVE_REFERENCE_BOUNDED_THEOREM_NOTE_2026-09-16.md
++++ docs/SPHERE_STATIC_FINITE_VOLUME_GAUSSIAN_COVARIANCE_FIXED_AXIS_RESPONSE_AND_PROJECTED_MODE_SUM_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,64 +1,51 @@
+ ---
+-claim_id: admissibility_rule_transverse_kernel_normalization_in_the_ordered_sphere_static_law_measured_between_the_bounds_with_the_transverse_sum_rule_and_the_spin_wave_reference_bounded_theorem_note_2026-09-16
++claim_id: sphere_static_finite_volume_gaussian_covariance_fixed_axis_response_and_projected_mode_sum_bounded_theorem_note_2026-09-16
+ claim_type: bounded_theorem
+-claim_scope: "For the static law of the covariant rule on the unsoldered sphere menu with weight e^{beta s.s'} on the periodic cubic lattice: (T1) the quadratic transverse model H = (beta/2) sum_bonds |theta_x - theta_y|^2 has k-mode variance exactly 1/(beta E(k)) per component for k != 0, E(k) = 2 sum_j (1 - cos k_j), so beta E(k) <|theta_hat(k)|^2> = 1 is the spin-wave value of the transverse kernel's normalization (proved; the plane-wave eigenvalues and the ring modes symbolic); (T2) for the sphere static law with a field h > 0 along e_3 on any finite torus, beta h N <(m_hat^1)^2> = <m_hat^3> exactly (integration by parts on the sphere), so the transverse response at k = 0 is <m_hat^3>/(beta h) (proved; the one-site instance and the generator's action symbolic); (T3) the mode sum: N^{-1} sum_k <|s_hat^perp(k)|^2> = <|s_x^perp|^2> per component (proved). Executed, not proved: the normalization c(beta, k) = beta E(k) S_perp(k) of the transverse structure factor in the ordered regime, measured on 16^3, 24^3, 32^3 at beta = 0.8, 1, 1.5, 2, 3 for k along an axis, lies at 0.86-0.98 for the modes n >= 2 (the longest mode n = 1 scattering more), rising toward the spin-wave value 1 as beta grows, against block 19's bounds (m^2/3)^2 (0.008-0.08) and 1: the infrared bound is the kernel up to about a tenth; the real-space transverse correlation tracks the torus Green function with the same constant (refuter). No menu, reading, order or coupling is selected as physical; exact arithmetic throughout the runner."
++claim_scope: "For beta>0 and integer L>=3 with each forward nearest-neighbor bond counted once: full Gaussian covariance on the zero-mean subspace, fixed laboratory-axis finite-volume rotation response, and vector Fourier mode-sum identity for the instantaneous-magnetization projection. Supplied finite laws only. Historical numerical estimates and broader negative or asymptotic conclusions are excluded from this claim."
+ upstream_dependencies:
+   - minimal_axioms
+-  - admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06
+-runner: scripts/admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.py
++runner: scripts/sphere_static_finite_volume_covariance_response_projected_mode_sum_check_2026_09_16.py
+ ---
+ 
+-# The transverse kernel's normalization in the ordered sphere static law: measured between the bounds, with the transverse sum rule and the spin-wave reference
++# Finite-volume Gaussian covariance, fixed-axis sphere response and projected mode sum
+ 
+ **Date:** 2026-09-16
+-**Type:** bounded_theorem (T1–T3); frontier discovery for the measured normalization
+-**Status:** bounded-support (exact; conditional on the named supplied readings; the normalization measured on finite lattices, not proved; unaudited)
++**Type:** bounded_theorem
++**Status:** bounded-support; supplied-model finite theorem, unaudited.
++**Primary runner:** [exact finite checks](../scripts/sphere_static_finite_volume_covariance_response_projected_mode_sum_check_2026_09_16.py).
++**Execution evidence:** [exact-source cache](../logs/runner-cache/sphere_static_finite_volume_covariance_response_projected_mode_sum_check_2026_09_16.txt).
++**Recovery:** [original proofs, controls and raw discrepancies](work_history/review_loop/pr8173/README.md).
+ 
+ ## Result up front
+ 
+-Blocks 19–23 placed the gravity node's Green-function kernel in the transverse
+-channel of the ordered sphere static law: for `β > 76/100` and every fixed
+-`k ≠ 0`, the transverse structure factor lies between `(M²/3)²/(βE(k))` and
+-`1/(βE(k))` (block 19's G5 with block 22's threshold) — a window of a factor
+-nine or more, since `M² ≤ 1`. The queue's item "the kernel's normalization on
+-`Z³`" is hard as a theorem and cheap to measure. This note measures it: the
+-number `c(β, k) = βE(k)·S_⊥(k)` on lattices of `16³`, `24³` and `32³` sites at
+-`β = 0.8, 1, 1.5, 2, 3`, for wavevectors along an axis, comes out between
+-`0.86` and `0.98` for every mode but the longest, rising toward `1` as `β`
+-grows; the lower bound `(m²/3)²` is `0.008`–`0.08` at the same couplings. So
+-the infrared bound is the kernel up to about a tenth, the lower bound is loose
+-by a factor ten to a hundred, and the spin-wave value `1` — which this note
+-proves exactly for the quadratic transverse model (T1) — is the large-`β`
+-limit. Two exact anchors: the transverse sum rule in a field (T2), which fixes
+-the kernel's `k = 0` response at `⟨m̂³⟩/(βh)` and makes the soft mode a
+-theorem on any finite torus, and the mode sum (T3), which ties the structure
+-factor's average to the local transverse moment.
+-
+-In plain words: in the settled arrangement of sphere-valued records at strong
+-preference, the sideways wiggles of the records are carried across the lattice
+-by the same law as a Coulomb-type potential, and this note pins the strength of
+-that carrying: within ten percent of the largest value the general theorem
+-allows, and closer the stronger the preference. The gravity lane, should it
+-use this channel, has its number; whether it should is not decided here.
+-
+-Exactly: the spin-wave reference (T1); the transverse sum rule (T2); the mode sum
+-(T3). Executed with exact arithmetic: 14 checks, 7 mutations; the measurement
+-in the control spec, a second estimator, a second chain and the sum rule in a
+-field in the refuting spec.
++The quadratic two-component field has covariance `(beta Delta)^(-1)` on the
++zero-mean subspace: each scalar nonzero Fourier component has mean-square
++`1/(beta E(k))`, while the two-component norm has mean-square `2/(beta E(k))`.
++The supplied finite sphere law in a field has the fixed-axis identity
++`beta h N E[(m^1)^2]=E[m^3]`. Separately, the vector projection perpendicular
++to each sample's own magnetization obeys the unitary Fourier mode-sum identity;
++its zero mode vanishes samplewise. These are three complete finite proofs.
++They do not identify the two sphere observables or a physical normalization.
++
++The primary contains 14 checks: four source checks, five finite mathematical
++checks, four packaging checks and one five-line resolution-report check.
++No primary or historical simulator was executed during author preparation.
++The written proofs provide the arbitrary finite-volume statements; finite
++fixtures are not executions at every lattice size or an infinite-volume test.
+ 
+ ## Machine status and trace
+ 
+ ```yaml
+ actual_current_surface_status: bounded-support
+ target_claim_type: bounded_theorem
+-trace_class: frontier_discovery
++trace_class: upstream_support
+ target_claim_id: null
+-target_blocker_text: "the campaign queue's item 'the kernel's normalization on Z^3' (blocks 19-23 placed the transverse channel's kernel between (M^2/3)^2/(beta E(k)) and 1/(beta E(k)))"
++target_blocker_text: "finite supplied-law covariance, rotation response and projected mode sum"
+ source_of_blocker_text: handoff
+ reachability_to_target: supports
+ artifact_role: theorem_plus_decisive_artifact
+-next_trace_action: "the normalization measured: c(beta, k) in 0.86-0.98 for k along an axis (modes n >= 2) at beta = 0.8-3, rising toward the spin-wave value 1; the infrared bound is the kernel up to a tenth. Open: a proof that c(beta, k) -> 1 as beta -> infinity at fixed k (spin-wave theory as a theorem); the longest mode's finite-size behaviour. Consumers: the gravity lane's kernel question (blocks 19-23); the campaign's decision record"
+-conditional_surface_status: "T1-T3 proved as stated under the records-only reading, positivity, the sphere menu and the static reading as supplied conditions; the normalization measured on periodic lattices (16^3, 24^3, 32^3), not proved; two standard mathematical imports named at definition level"
++next_trace_action: "independent affected-source confirmation and exact-source finite evidence; broader interpretation deferred"
++conditional_surface_status: "complete finite-law identities under the explicit domains and bond convention; historical estimates excluded"
+ hypothetical_axiom_status: null
+ admitted_observation_status: null
+ audit_required_before_effective_retained: true
+@@ -66,140 +53,247 @@
+ 
+ ## Premises and declared objects
+ 
+-The axioms memo (`docs/MINIMAL_AXIOMS_2026-06-29.md`) is used through the sentences "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.", "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.", "Records form.", and "Only records are readable.". Block 01 (`docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md`, on `main`) supplies the rule's product form and its one-site conditional given a recorded set; the sphere menu and the static reading are declared below (blocks 18, 19, 21, 22, 28 — open PRs #8152, #8153, #8155, #8156, #8172 — are referenced as evidence addresses only). All proposed and unaudited.
+-
+-Declared objects.
+-- **The sphere static law.** Values `s_x ∈ S²` on the periodic lattice `T_L = (Z/LZ)³`, `N = L³`; the law `μ_{L,β}(ds) ∝ Π_{⟨xy⟩} e^{β s_x·s_y} Π_x dσ(s_x)`; with a field `h ≥ 0` along `e_3`, the extra factor `Π_x e^{βh s_x^3}`. Its single-site conditional given the six neighbours is the exponential-overlap law with concentration `β|Σ_{y∼x} s_y + h e_3|`.
+-- **Fourier conventions.** `ŝ^a(k) = N^{−1/2} Σ_x e^{−ik·x} s_x^a`, `k ∈ (2π/L)Z³`; `E(k) = 2Σ_j (1 − cos k_j)`; the graph Laplacian `Δ` with `(Δf)_x = Σ_{y∼x}(f_x − f_y)`, whose plane-wave eigenvalues are `E(k)`.
+-- **The magnetization and the transverse components.** `m̂ = N^{−1}Σ_x s_x`; for a configuration with `m̂ ≠ 0`, `û = m̂/|m̂|` and `s_x^⊥ = s_x − (s_x·û)û` (two components); the **transverse structure factor** `S_⊥(k) = ⟨|ŝ^⊥(k)|²⟩/2` per component (the average over the two transverse components in the instantaneous frame); the **normalization** `c(β, k) = βE(k) S_⊥(k)`; the **real-space transverse correlation** `T(r) = ⟨s_0^⊥·s_{re_1}^⊥⟩/2`.
+-- **The quadratic transverse model.** `θ_x ∈ R²` on `T_L` with density `∝ e^{−(β/2)Σ_{⟨xy⟩}|θ_x − θ_y|²}` on the subspace of zero-sum fields (the `k = 0` mode is a free translation and is removed); `θ̂(k)` as above.
+-- **The torus Green function.** `G_L(r) = N^{−1}Σ_{k≠0} e^{ik·r}/E(k)`.
+-- **The rotation generator.** For a smooth function `F` on `(S²)^N` and a site `x`, `L_x F = d/da F(…, R_a s_x, …)|_{a=0}` with `R_a` the rotation by `a` about `e_2` in the `(1, 3)` plane; `L_x s_x^1 = s_x^3`, `L_x s_x^3 = −s_x^1`.
+-
+-## Prior art and what is new
+-
+-The infrared bound and the Bogoliubov-type lower bound for the transverse channel of the classical Heisenberg model are the Fröhlich–Simon–Spencer and Dyson–Lieb–Simon route, carried for this lane in block 19; the linear spin-wave theory of the ordered phase and the transverse sum rule (a Ward identity of the rotation symmetry) are textbook; Parseval is Parseval. None is used as authority: T1–T3 are proved here at scope, and the measurement uses the campaign's own sampler. What is new: (i) the measured normalization `c(β, k)` of the kernel that blocks 19–23 located, placed between the bounds — the infrared bound is the kernel up to a tenth, the lower bound loose by ten to a hundred; (ii) the spin-wave value proved as the exact normalization of the quadratic model (T1), which the measurement approaches from below; (iii) the sum rule in a field as the exact `k = 0` anchor of the kernel on every finite torus (T2).
++The [axioms memo](MINIMAL_AXIOMS_2026-06-29.md) provides framework context:
++“There is one fixed nearest-neighbor admissibility rule, covariant under lattice
++translations and proper cubic rotations.”; “For each site, the probability
++distribution over the possibilities is determined by, and varies with, the
++nearest-neighbor conditions.”; “Records form.”; “Only records are readable.”
++These sentences do not select the sphere menu, static reading, product
++surface measure, Gaussian reference or beta. All are supplied below. The
++finite identities use their explicit definitions, not a theorem asserting
++that a physical system adopts them.
++
++The context-only source
++`docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md`
++is read and pinned by the primary for product-law provenance; no theorem from
++it is required to prove these identities. The current-main context sources
++`docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_ZERO_FIELD_COMPONENT_FOURIER_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md`
++and
++`docs/ADMISSIBILITY_RULE_CUBIC_WALK_RETURN_SUM_AND_SPHERE_STATIC_MAGNETIZATION_SUFFICIENT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md`
++have distinct hypotheses and fixed-component conclusions. They are not
++mathematical premises here, and supply no instantaneous-frame transverse
++bound. No unpublished sibling result supplies an ordered state.
++
++- **Finite graph.** `T_L=(Z/LZ)^3`, integer `L>=3`, `N=L^3`. Sum once over
++  each forward bond `(x,x+e_j)`, `j=1,2,3`, including the periodic seam.
++  There are `3N` undirected bonds, and each vertex has six neighbors. This
++  convention avoids the side-two parallel-bond ambiguity.
++- **Sphere law.** `s_x in S^2`, normalized uniform surface measure `sigma`,
++  `beta>0`, `h>=0`, and density
++  `w/Z=exp(beta sum_bonds s_x dot s_y + beta h sum_x s_x^3)/Z`
++  relative to the product surface measure. The positive smooth finite density
++  exists by compactness. Its single-site conditional is proportional to
++  `exp(beta s_x dot (sum_neighbors s_y+h e_3))`.
++- **Fourier convention.** For a scalar or vector field,
++  `fhat(k)=N^(-1/2) sum_x exp(-ik dot x) f_x`,
++  `k=2pi n/L`, `n in {0,...,L-1}^3`. The graph Laplacian is
++  `(Delta f)_x=sum_neighbors(f_x-f_y)` and `E(k)=2 sum_j(1-cos k_j)`.
++- **Two frames.** `m=N^(-1)sum_x s_x`. A fixed lab component `s_x^1` is
++  perpendicular to the applied field direction `e_3`, independent of the
++  sample. For `m!=0`, set `u=m/|m|`, `P=I-u u^T`, `s_x^perp=P s_x`.
++  Set `u=e_3` when `m=0`; this defines a measurable projection everywhere.
++  The exceptional event has product-surface measure zero: conditional on all
++  but one spin, zero total spin requires that remaining spin equal one specified
++  point (or an impossible vector); a sphere singleton has measure zero.
++  Absolute continuity gives zero probability under the supplied finite law.
++  The convention is translation invariant, and even on that event
++  `sum_x P s_x=P N m=0`.
++- **Projected observables.** `S_perp(k)=E[|shat^perp(k)|^2]/2`, the average
++  over the two-dimensional transverse subspace, computed using the full
++  three-vector norm. Set `c(beta,k)=beta E(k) S_perp(k)` as notation only,
++  and `T(r)=E[s_0^perp dot s_(r e_1)^perp]/2`.
++- **Gaussian reference.** `theta_x in R^2`, `sum_x theta_x=0`, density
++  proportional to `exp(-(beta/2)sum_bonds |theta_x-theta_y|^2)` with respect
++  to Lebesgue measure on that subspace. The removed constant mode is a free
++  translation. `G_L(r)=N^(-1)sum_(k!=0) exp(ik dot r)/E(k)`.
++- **Rotation.** `L_x F=d/da F(...,R_a s_x,...)|_(a=0)` for rotation about
++  `e_2` with `L_x s_x^1=s_x^3`, `L_x s_x^3=-s_x^1`.
+ 
+ ## Exact target and obligation graph
+ 
+-| Obligation | Statement | Route | Runner family |
+-|---|---|---|---|
+-| T1 | `⟨|θ̂(k)|²⟩ = 1/(βE(k))`; `βE(k)⟨|θ̂(k)|²⟩ = 1` | plane waves diagonalize `Δ`; Gaussian modes | B |
+-| T2 | `βh·N⟨(m̂¹)²⟩ = ⟨m̂³⟩` | integration by parts on the sphere | C |
+-| T3 | `N^{−1}Σ_k⟨|ŝ^⊥(k)|²⟩ = ⟨|s^⊥|²⟩` | the mode-sum identity | D |
+-| executed | `c(β, k)` on three lattices at five couplings | simulation (control, refuter) | — (specs) |
+-
+-## Theorem T1 — the spin-wave reference
+-
+-**Statement.** For the quadratic transverse model on `T_L` and `k ≠ 0`, `⟨|θ̂(k)|²⟩ = 1/(βE(k))` per component; hence `βE(k)⟨|θ̂(k)|²⟩ = 1` for every `k ≠ 0`, and `⟨θ_0·θ_r⟩ = 2G_L(r)/β`.
+-
+-**Proof.** `Σ_{⟨xy⟩}|θ_x − θ_y|² = Σ_x θ_x·(Δθ)_x` per component, and `Δ e^{ik·x} = E(k) e^{ik·x}` (B1, on the `4³` lattice symbolically; the identity `Σ_{y∼x}(e^{ik·x} − e^{ik·y}) = e^{ik·x}Σ_j(2 − e^{ik_j} − e^{−ik_j})` holds on every `L`). In the plane-wave basis the density factorizes into independent Gaussians with variances `1/(βE(k))` per component and mode (B2, the ring modes explicitly); the real-space correlation is the inverse transform. ∎
+-
+-*Reading.* Linearizing the sphere law about its ordered direction gives this model with `θ` the transverse coordinates, so `c = 1` is the spin-wave prediction; the nonlinearity and the finite magnetization reduce it, by an amount the measurement fixes.
+-
+-## Theorem T2 — the transverse sum rule in a field
+-
+-**Statement.** For the sphere static law on any finite torus with field `h > 0` along `e_3`, `βh · N ⟨(m̂¹)²⟩ = ⟨m̂³⟩`. In particular the transverse response at `k = 0`, `N⟨(m̂¹)²⟩`, equals `⟨m̂³⟩/(βh)` and grows without bound as `h ↓ 0` whenever `⟨m̂³⟩` stays bounded away from zero.
+-
+-**Proof.** For every `x`, the surface measure is invariant under `R_a`, so `∫ L_x F dσ(s_x) = 0` for smooth `F` (C2: the generator's action on `s^1, s^3` and the vanishing of `∫ L(s^1 s^3) dσ`). With the density `w = e^{βΣ_{⟨xy⟩} s_x·s_y + βhΣ_x s_x^3}`, `⟨L_x F⟩ = −⟨F · L_x log w⟩`. Take `F = Σ_y s_y^1` and sum over `x`: `Σ_x L_x F = Σ_x s_x^3 = N m̂³`, while `Σ_x L_x log w = Σ_x [β Σ_{y∼x} (s_x^3 s_y^1 − s_x^1 s_y^3) + βh (−s_x^1)]`; the bond terms cancel in pairs (each bond contributes `s_x^3 s_y^1 − s_x^1 s_y^3` from `x` and its negative from `y`), leaving `−βh Σ_x s_x^1 = −βh N m̂¹`. Hence `⟨N m̂³⟩ = βh ⟨N m̂¹ · N m̂¹⟩/N`, i.e. `βh N⟨(m̂¹)²⟩ = ⟨m̂³⟩`. The one-site instance is `κ E[(s^1)²] = E[s^3]` for the exponential law with concentration `κ = βh` (C1). ∎
+-
+-*Reading.* At `k = 0` the transverse kernel's normalization is not measured but fixed: `⟨m̂³⟩/(βh)`, the magnetization over the field. This is the exact end of the kernel at long wavelength.
+-
+-## Theorem T3 — the mode sum
+-
+-**Statement.** `N^{−1}Σ_k ⟨|ŝ^⊥(k)|²⟩ = ⟨|s_x^⊥|²⟩` (per component, in the instantaneous frame), so `N^{−1}Σ_k S_⊥(k) = ⟨1 − (s_x·û)²⟩/2`.
+-
+-**Proof.** the mode-sum identity of the discrete Fourier transform (the transform is unitary) on `T_L` (D1, on a ring with rational data), applied to each transverse component and averaged. ∎
+-
+-*Reading.* With block 19's upper bound this is that block's sum rule; here it is the check that the measured structure factor integrates to the measured local transverse moment.
+-
+-## Executed: the normalization measured (frontier discovery, not proved)
+-
+-Control `specs/supervisor_control_block29_kernel.py` (heat-bath checkerboard sweeps with the exact conditional from an aligned start; every second sweep after thermalisation: `m̂`, the transverse components in the instantaneous frame, the structure factor by FFT for `k = (2πn/L, 0, 0)`, and `T(r)` along an axis); refuting spec `specs/supervisor_control_block29_refuter.py` (the normalization from the real-space correlation against the torus Green function computed by FFT; a single-site proposal chain; the sum rule in a field). Outputs in `.out.txt`.
+-
+-| `L` | `β` | `m` | `(m²/3)²` | `c(β, k)` for `n = 1 … 8` (`k = 2πn/L`) |
+-|---|---|---|---|---|
+-| `16` | `0.8` | `0.537` | `0.009` | `0.77 0.92 0.92 0.92 0.91 0.95 0.90 0.89` |
+-| `16` | `1.0` | `0.688` | `0.025` | `0.86 0.87 0.93 0.91 0.92 0.92 0.89 0.95` |
+-| `16` | `1.5` | `0.817` | `0.049` | `0.93 0.96 0.93 0.99 0.94 0.96 0.92 1.01` |
+-| `16` | `2.0` | `0.868` | `0.063` | `0.95 0.96 0.97 0.96 0.91 0.97 0.93 0.98` |
+-| `16` | `3.0` | `0.915` | `0.078` | `0.96 0.95 0.94 0.99 0.98 1.00 0.99 0.98` |
+-| `24` | `0.8` | `0.525` | `0.008` | `0.92 0.86 0.91 0.91 0.90 0.90 0.90 0.93` |
+-| `24` | `1.0` | `0.681` | `0.024` | `0.98 0.86 0.89 0.91 0.89 0.88 0.90 0.94` |
+-| `24` | `1.5` | `0.813` | `0.049` | `1.05 0.90 0.92 0.91 0.95 0.94 0.92 0.96` |
+-| `24` | `2.0` | `0.866` | `0.062` | `0.97 0.94 0.92 1.01 0.98 0.98 0.94 0.92` |
+-| `32` | `1.0` | `0.678` | `0.024` | `0.65 0.88 0.97 0.93 0.96 0.90 0.91 0.94` |
+-| `32` | `1.5` | `0.811` | `0.048` | `0.92 0.97 0.88 0.88 0.96 0.93 0.93 0.98` |
+-
+-Refuting spec on `16³`: from the real-space correlation against the torus Green function, `c = T(r)·β/G_L(r)` for `r = 1 … 4` is `0.91, 0.91, 0.91, 0.94` at `β = 1`, `0.96, 0.96, 0.97, 1.00` at `1.5`, `0.96, 0.95, 0.94, 0.91` at `2`; a single-site proposal chain at `β = 1.5` gives `c = 0.80, 1.08, 0.94, 0.94, 1.01, 0.99` for `n = 1 … 6`; the sum rule in a field at `β = 1.5` gives `βh·N⟨(m̂¹)²⟩ = 1.01, 0.71, 0.96` against `⟨m̂³⟩ = 0.82, 0.83, 0.84` at `h = 0.05, 0.1, 0.2` — the `k = 0` transverse mode is the slowest and its `2000`-sweep average carries a scatter of about `±20 %` around the exact value.
+-
+-What the runs say. (i) For the modes `n ≥ 2` the normalization lies between `0.86` and `1.01` at every lattice size and coupling, with no trend in `k`; the averages over `n = 2 … 8` are about `0.91` at `β = 0.8`–`1`, `0.94` at `1.5`–`2` and `0.97` at `3`: the kernel is the infrared bound up to about a tenth and approaches the spin-wave value from below as `β` grows. (ii) The longest mode `n = 1` scatters more (`0.65`–`1.05`): it is the slowest mode of the chain and the one most exposed to the finite lattice; its scatter grows with `L` at fixed sweeps. (iii) The lower bound `(m²/3)²` is a factor `12` (at `β = 3`) to `110` (at `β = 0.8`) below the measured values. (iv) The real-space transverse correlation gives the same constant (`0.91` at `β = 1`, `0.96`–`1.00` at `1.5`, `0.91`–`0.96` at `2`), a second chain agrees, and the sum rule in a field is met to within the large scatter of the slowest mode (refuter). **The measured normalization (executed):** `c(β) ≈ 0.9` at `β ∈ [0.8, 1]`, `≈ 0.94` at `β ∈ [1.5, 2]`, `≈ 0.97` at `β = 3`, against the bounds `(m²/3)²` and `1` and the spin-wave value `1`.
+-
+-## No-Go Discipline Gate
+-
+-The executed sentence measures a constant; its escapes are named.
+-
+-### N1 — Routes by which the measurement could mislead
+-1. *The instantaneous frame.* The transverse components are taken orthogonal to the sample's own magnetization; on a finite lattice the direction wanders slowly, and the frame follows it; the structure factor at `k ≠ 0` is insensitive to a rigid rotation.
+-2. *The longest mode.* Its statistics are the poorest (autocorrelation, finite size); the summary uses the modes `n ≥ 2` and states the `n = 1` scatter.
+-3. *Equilibration and the aligned start.* Thermalisation of a third of the sweeps; the refuter's single-site chain and the field runs agree.
+-4. *The bounds' hypotheses.* Block 19's bounds are infinite-volume statements at fixed `k` (`L → ∞`); the measurement is at `L = 16, 24, 32`, whose modes `n ≥ 2` show no size dependence beyond the scatter.
+-
+-### N2 — Wall-independence audit
+-No no-go wall of the repository is used.
+-
+-### N3 — Hidden-wall scan
+-No hidden dependence: the inputs are the axioms' sentences, block 01's rule, the sphere menu and the static reading as declared.
+-
+-### N4 — Per-citation table
+-| Citation | Role | Load-bearing? |
++| Obligation | Statement | Proof and finite check |
+ |---|---|---|
+-| `minimal_axioms` | the four sentences under Premises | yes (premise) |
+-| block 01 (`main`) | the rule and its one-site conditional | yes (premise, proposed) |
+-| blocks 19, 22 (open PRs) | the bounds and the threshold the measurement is placed against | placement only (evidence addresses; re-quoted) |
+-| blocks 18, 21, 28 (open PRs) | the menu; the uniqueness region; the located strength | placement only |
+-
+-### N5 — Resolution audit
+-| Claim | per_element | per_site | per_mode | per_block | lattice_wide |
+-|---|---|---|---|---|---|
+-| "the transverse kernel's normalization is about nine tenths of the infrared bound" | executed: the plane-wave eigenvalues; the one-site sum rule; the generator's action | executed: the ring modes' variances; the vanishing surface integral | executed: the mode sum; `c(β, k)` for eight modes on three lattices (control), a second estimator and chain (refuter) | executed: the placement between `(m²/3)²` and `1` at five couplings; the sum rule in a field | T1–T3 proved as stated; the normalization measured, not proved |
+-
+-### N6 — Partial-closure paths and primitive scan
+-The registered primitives supply no coupling or menu; none is a wall.
+-
+-### N7 — Steelman
+-Hostile reviewer: "Spin-wave theory says `c ≈ 1` and the simulation says `c ≈ 0.9`; nothing here is a theorem about the sphere law's kernel." Reply: the number is what the lane's consumers need and it was unknown to within a factor nine; the exact parts are the two anchors (the spin-wave value and the `k = 0` sum rule) between which the measurement sits; the statement is labelled measured. Conceded: `c(β) → 1` as `β → ∞` is not proved; the longest mode is not resolved.
+-
+-### N8 — Cross-cycle echo
+-Block 19's G2 (the infrared bound) and G4 (the lower bound) are the two sides of the window; block 22's `76/100` and block 28's located strength `β ∈ (0.66, 0.72)` place the couplings used inside the ordered regime; block 13's contrast (the formation reading's kernel is a heat kernel, not a Green function) is the other half of the gravity lane's question.
+-
+-## Falsifiers
+-- A plane wave that is not an eigenvector of `Δ` with eigenvalue `2Σ(1 − cos k_j)`, or a ring mode with variance other than `1/(βE(k))` (B1–B2).
+-- `κ E[(s^1)²] ≠ E[s^3]` on one site, a generator sending `s^1, s^3` elsewhere than `s^3, −s^1`, or a non-vanishing surface integral of `L(s^1 s^3)` (C1–C2).
+-- A mode-sum failure on rational data (D1).
+-- For the measurement: a normalization outside `[(m²/3)², 1]` beyond its scatter, a sum-rule violation in a field beyond the statistical error, or a real-space constant differing from the structure-factor constant.
++| Gaussian covariance | `E[|thetahat^a(k)|^2]=1/(beta E(k))`, `a=1,2`, `k!=0` | real eigenbasis and Fourier covariance; four cubic waves and two ring modes |
++| Fixed-axis response | `beta h N E[(m^1)^2]=E[m^3]` | global rotation and bond cancellation; one-site moments and rotation integral |
++| Projected mode sum | `N^(-1)sum_k S_perp(k)=E[|s_x^perp|^2]/2` | vector Fourier orthogonality and translation invariance; rational ring data |
++
++## Theorem T1 — complete Gaussian covariance
++
++**Statement.** For the supplied Gaussian law and every nonzero `k`, each
++scalar component `a=1,2` satisfies `E[|thetahat^a(k)|^2]=1/(beta E(k))`.
++Thus `beta E(k) E[|thetahat^a(k)|^2]=1`,
++`E[|thetahat(k)|^2]=2/(beta E(k))`, and
++`E[theta_0 dot theta_r]=2G_L(r)/beta`.
++
++**Proof.** Each undirected bond contributes
++`(theta_x-theta_y)^2` to the scalar quadratic energy, hence
++`sum_bonds(theta_x-theta_y)^2=sum_x theta_x(Delta theta)_x`.
++For a plane wave,
++`sum_neighbors(exp(ik dot x)-exp(ik dot y))`
++`=exp(ik dot x) sum_j(2-exp(ik_j)-exp(-ik_j))`
++`=E(k)exp(ik dot x)`. This calculation holds for every stated `L`;
++the primary checks four waves on the `4^3` graph. The connected graph has
++one constant zero eigenvector, and its real symmetric Laplacian has a real
++orthonormal eigenbasis with positive eigenvalues `lambda_r` on the zero-mean
++subspace. Writing `theta^a=sum_r q_(r,a) v_r` gives independent real scalar
++coordinates with density proportional to
++`product_(r,a) exp(-beta lambda_r q_(r,a)^2/2)`.
++The one-dimensional Gaussian integral, scaled by `sqrt(beta lambda_r)`,
++gives variance `1/(beta lambda_r)`. Consequently
++`Cov(theta^a)=(beta Delta)^(-1)` on this subspace and the two components
++are independent copies. Transforming this covariance by the unitary Fourier
++matrix gives `E[thetahat^a(k) conjugate(thetahat^a(l))]`
++`=delta_(k,l)/(beta E(k))` for nonzero modes. The coordinates at `k` and
++`-k` are complex conjugates for a real field; they are not separate independent
++complex Gaussians. Self-conjugate modes are real. The covariance formula
++covers both cases without an extra factor. Inverse transforming yields
++`E[theta_0^a theta_r^a]=G_L(r)/beta`; summing the two components gives the
++stated factor two. The primary separately verifies the inverse eigenvalues
++on a four-site ring. This completes the proof. ∎
++
++This is an exact reference law. Approximating the nonlinear sphere law by
++it, or taking an ordered-state or large-beta limit, would require additional
++error estimates not supplied here.
++
++## Theorem T2 — complete fixed-axis response identity
++
++**Statement.** On the supplied finite sphere torus, for `h>0`,
++`beta h N E[(m^1)^2]=E[m^3]`. Therefore the fixed lab-axis zero-mode
++mean-square is `E[|shat^1(0)|^2]=N E[(m^1)^2]=E[m^3]/(beta h)`.
++At `h=0` the undivided identity also holds; division by `h` is not used.
++
++**Proof.** Surface measure is invariant under `R_a`, so for smooth `F`,
++`integral L_x F d sigma(s_x)=0`. Applying this to `Fw` and dividing by the
++partition function gives `E[L_x F]=-E[F L_x log w]`. Take
++`F=sum_y s_y^1=N m^1` and sum over `x`. The left side is
++`E[sum_x L_x F]=E[sum_x s_x^3]=N E[m^3]`. On the right,
++`sum_x L_x log w`
++`=beta sum_x sum_(y~x)(s_x^3 s_y^1-s_x^1 s_y^3)-beta h sum_x s_x^1`.
++For each bond its contribution from `x` is the negative of that from `y`;
++all bond terms cancel exactly, leaving `-beta h F`. Hence
++`N E[m^3]=beta h E[F^2]=beta h N^2 E[(m^1)^2]`.
++Dividing by `N` yields the identity. The original extra `/N` in this
++penultimate step is corrected. The one-site instance follows also by
++integrating the exponential density: `kappa E[(s^1)^2]=E[s^3]` for
++`kappa=beta h`. The primary evaluates those moments and checks the generator
++and the zero surface integral of `L(s^1 s^3)=(s^3)^2-(s^1)^2`. ∎
++
++At fixed finite `N`, inversion `s->-s` at zero field gives `E_0[m^3]=0`.
++The bounded finite integrands make partition function and numerator analytic
++in real `h` near zero, with positive denominator. Thus `E_h[m^3]=O(h)`.
++More explicitly, differentiating at zero gives
++`d E_h[m^3]/dh|_0=beta N E_0[(m^3)^2]`; rotational invariance gives
++`E_0[(m^3)^2]=E_0[(m^1)^2]<=1/3` because `|m|<=1`.
++The ratio in the statement has finite limit `N E_0[(m^1)^2]<=N/3`.
++No divergent finite-volume response or thermodynamic order of limits is
++asserted. This response is not the instantaneous-frame zero mode below.
++
++## Theorem T3 — complete projected vector mode sum
++
++**Statement.** For the supplied translation-invariant finite sphere law,
++`N^(-1)sum_k S_perp(k)=E[|s_x^perp|^2]/2`
++`=E[1-(s_x dot u)^2]/2` for every site `x`. Moreover
++`shat^perp(0)=0` for every configuration under the defined convention.
++
++**Proof.** Finite Fourier orthogonality says
++`sum_k exp(ik dot (y-x))=N delta_(x,y)`: each coordinate sum is `L` when
++the coordinate difference is zero modulo `L` and otherwise is the geometric
++sum of nontrivial roots of unity, equal to zero. For any vector field `v`,
++expand the squared transformed norm:
++`sum_k |vhat(k)|^2`
++`=N^(-1)sum_(x,y) v_x dot v_y sum_k exp(ik dot (y-x))`
++`=sum_x |v_x|^2`.
++Apply this samplewise to `v_x=P s_x`, take expectations, and divide by `2N`.
++The projection is measurable and `|P s_x|<=1`, so all finite averages exist.
++Translation leaves `m`, `u` and `P` unchanged and permutes the sites; the
++supplied law is translation invariant. Thus each expected local norm is the
++same, giving the claimed site-independent right side. Since `|s_x|=|u|=1`,
++`|P s_x|^2=1-(s_x dot u)^2`. Finally
++`sum_x s_x^perp=P sum_x s_x=P N m=0`, both for nonzero `m` and by the
++chosen convention for `m=0`; its Fourier zero mode therefore vanishes.
++The primary's four-site rational test uses an unnormalized transform and
++checks the equivalent identity `sum_k |F(k)|^2/N=sum_x |f_x|^2`. ∎
++
++A rigid rotation preserves scalar products and squared projected norms, but
++it does not replace this configuration-dependent projection by a fixed
++laboratory component. No comparison bound is inferred from such a rotation.
++
++## No-Go Discipline Gate — DEFERRED applicability record
++
++This live row contains the three positive finite identities. The original
++four concerns and broader conclusions are fully recoverable in history;
++they do not constitute five closed route families. No negative or exhaustive
++certification is claimed.
++
++- **N1 — DEFERRED.** Frame choice, longest mode, equilibration/aligned start,
++  and bounds' hypotheses are the four recorded concerns. Their original
++  replies do not close the observable and uncertainty gaps. No fifth route
++  is invented.
++- **N2 — Wall independence.** No repository no-go wall is used in the three
++  finite proofs; this is not a negative-certification PASS.
++- **N3 — Hidden premises.** Finite volume, beta positivity, surface measure,
++  field, bond convention and Gaussian reference are explicit supplies. No
++  order or coupling is selected as physical, and no infinite-volume state is inferred.
++- **N4 — Citation roles.** The axioms are framework context. Product-law and
++  zero-field Fourier/return-sum notes are context only, not proof imports.
++  The finite Fourier, Gaussian and rotation calculations are supplied in full.
++- **N5 — Resolution.** The runner checks finite matrix elements, one-site
++  moments, four cubic waves, two ring modes, one rational ring mode sum and
++  a surface integral. Arbitrary finite tori are covered by written proofs,
++  not by numerical execution. Historical samplers are not primary evidence.
++- **N6 — Partial closure.** Retain complete finite proofs and exact history.
++  Broader normalization, asymptotic and physical conclusions stay deferred;
++  preserve the original branch on partial closure. No primitive supplies those choices.
++- **N7 — Strong objection.** Finite estimates of a sample-dependent
++  projection do not identify an infinite fixed-component response. This is
++  accepted as a scope limitation; no error bars or equilibration guarantee
++  are supplied to answer it.
++- **N8 — Earlier work.** The current-main fixed-component results do not
++  restore the withdrawn transverse identification. Historical numerical
++  agreements and disagreements remain history, without cross-cycle promotion.
+ 
+ ## Boundaries and non-claims
+-This note proves the spin-wave reference `βE(k)⟨|θ̂(k)|²⟩ = 1` for the quadratic transverse model, the transverse sum rule `βh·N⟨(m̂¹)²⟩ = ⟨m̂³⟩` for the sphere static law in a field on any finite torus, and the mode sum's identity for the transverse structure factor; the normalization `c(β, k) = βE(k)S_⊥(k)` of the transverse kernel in the ordered sphere static law is measured by simulation on finite lattices and placed between block 19's bounds, not proved; it does not select a menu, reading, order or coupling as physical, and adopts no clause. No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision. No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.
+-
+-Further: whether the transverse channel is what the gravity lane should use is not claimed; the large-`β` limit `c → 1` is not proved; the longest mode's finite-size behaviour is not resolved.
++
++This note proves finite-volume identities for explicitly supplied sphere and Gaussian laws; it selects no physical menu, reading, order, coupling or normalization.
++
++The instantaneous-magnetization projection is distinct from the fixed laboratory components; no fixed-component bound is transferred to that projection.
++
++Historical numerical estimates are recovery records only; formal negative certification and infinite-volume or asymptotic conclusions remain deferred.
++
++## Falsifiers and evidence targets
++
++An incorrect forward-bond eigenvalue or scalar inverse covariance contradicts
++the Gaussian formula. A failure of global rotation bond cancellation or the
++one-site identity contradicts the response derivation. A failure of finite
++Fourier orthogonality contradicts the mode sum. The projected zero-mode
++cancellation distinguishes the two frames. The existing primary's five
++mathematical checks address the listed finite fixtures; global bond and
++projected-zero-mode decisive controls should be bound separately before any
++new evidence is called complete. They were independently checked in the
++original review, not executed by this primary during preparation.
+ 
+ ## Imports
+-- `minimal_axioms`: the sentences quoted under Premises.
+-- Block 01 (on `main`): the rule and its conditional; proposed, unaudited. PRs #8152, #8153, #8155, #8156, #8172 (open) referenced as evidence addresses for the menu, the bounds, the uniqueness region, the threshold and the located strength.
+-- Re-proved at scope: the Gaussian mode variances of the quadratic model; the integration by parts on the sphere and the cancellation of the bond terms; Parseval on the torus.
+-- Named standard imports at definition level (never as authority for physics): the discrete Fourier transform on the torus; the heat-bath (Gibbs sampler) and single-site-proposal (Metropolis) chains as samplers of the law on finite lattices.
+-- Reference only (named, not used): the infrared bound (Fröhlich–Simon–Spencer) and the Bogoliubov-type lower bound (Dyson–Lieb–Simon) as carried in block 19; linear spin-wave theory; the Ward identity of rotation symmetry.
+-
+-## Review record
+-Supervisor-run block (owner directive 2026-09-16: keep the campaign running twelve more hours). After block 28 the remaining queue items were hard as theorems; the kernel's normalization was the one with a cheap decisive measurement and two exact anchors. The control ran the sampler on `16³` (`3000` sweeps), `24³` (`3000`) and `32³` (`2400`) at five couplings, measuring the structure factor by FFT in the instantaneous transverse frame; the exact control verified the plane-wave eigenvalues, the one-site sum rule and Parseval. The lens pass is in `GOAL_block29.md`. Facts settled while executing: the normalization is within a tenth of the infrared bound already at `β = 0.8`, just above the located strength, so the lower bound of block 19 is the loose side of the window; the longest mode is the only one with visible finite-size scatter. The refuting pass (`CHECKER_block29_findings.md`) extracted the constant from the real-space correlation against the torus Green function, ran a single-site proposal chain, and tested the sum rule in a field.
++
++Finite-dimensional real spectral theorem, Gaussian integration, invariance
++of sphere surface measure under rotations, differentiation of bounded
++finite-volume integrals, and finite Fourier orthogonality are the only
++mathematical tools. The covariance, cancellation and mode-sum calculations
++are written above. No phase, selected-state, infinite-volume or physical
++normalization theorem is imported. Historical heat-bath and proposal chains
++are not part of the proof or runtime closure.
+ 
+ ## Verification
+ 
++The primary has 14 check invocations and seven mutation definitions. Its five
++mathematical checks use exact symbolic/integer/rational calculations; four
++source checks, four packaging checks and one resolution-line check complete
++the total. Expected successful output is `TOTAL: PASS=14 FAIL=0`; this is an
++expectation, not a new execution receipt. The original cache is archived and
++must not be relabelled as evidence for these corrected bytes. The primary
++writes stdout only and no JSON or simulation output.
++
+ ```bash
+-python3 scripts/admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.py
+-python3 scripts/admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.py --list-mutations
+-python3 scripts/admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.py --mutation sum_rule_wrong
++python3 scripts/sphere_static_finite_volume_covariance_response_projected_mode_sum_check_2026_09_16.py
++python3 scripts/sphere_static_finite_volume_covariance_response_projected_mode_sum_check_2026_09_16.py --list-mutations
++python3 scripts/sphere_static_finite_volume_covariance_response_projected_mode_sum_check_2026_09_16.py --mutation sum_rule_wrong
+ ```
+-
+-Families: A authority and inputs; B the spin-wave reference; C the sum rule; D the mode sum; F fences, forbidden phrases, the floating-point self-scan, the placement of the classical names; G the resolution lines. Each of the 7 declared mutations fails in exactly one family. Expected final line: `TOTAL: PASS=14 FAIL=0`.
+--- scripts/admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.py
++++ scripts/sphere_static_finite_volume_covariance_response_projected_mode_sum_check_2026_09_16.py
+@@ -1,17 +1,15 @@
+ #!/usr/bin/env python3
+-"""Exact checks: the normalization of the transverse kernel in the ordered sphere static law — the spin-wave reference, the transverse
+-sum rule in a field, and Parseval.
+-
+-Scope.  T1: on the periodic 4^3 lattice the plane waves are eigenvectors of the Laplacian with eigenvalue E(k) = 2 sum_j (1 - cos k_j)
+-(symbolic), so the Gaussian transverse model with precision beta Lap has k-mode variance 1/(beta E(k)) per component and the
+-normalization beta E(k) <|theta_hat(k)|^2> = 1.  T2: the single-site transverse sum rule kappa E[(s^1)^2] = E[s^3] for the exponential
+-law with concentration kappa = beta h (symbolic), the integration-by-parts identity behind the general sum rule on a torus, and the
+-sum rule's two-site instance by exact quadrature in the cosines.  T3: Parseval on rational data.  Exact arithmetic only (integers,
+-Fractions and sympy); the runner scans its own source for floating-point literals.
++"""Exact finite checks for the supplied Gaussian covariance, fixed-axis sphere
++response and projected-field mode-sum proof. Four cubic plane waves, two ring
++inverse eigenvalues, one-site exponential moments, a rotation surface integral
++and rational ring Fourier data are checked symbolically. No two-site quadrature,
++sampler or empirical normalization is executed. Arbitrary-volume statements
++and the distinction between frames are written proofs, not simulation results.
+ """
+ 
+ from __future__ import annotations
+ 
++import hashlib
+ import itertools
+ import re
+ import sys
+@@ -20,14 +18,15 @@
+ 
+ import sympy as sp
+ 
+-AUDIT_TIMEOUT_SEC = 900
++AUDIT_TIMEOUT_SEC = 60
+ AUDIT_INPUT_PATHS = (
+-    "docs/ADMISSIBILITY_RULE_TRANSVERSE_KERNEL_NORMALIZATION_IN_THE_ORDERED_SPHERE_STATIC_LAW_MEASURED_BETWEEN_THE_BOUNDS_WITH_THE_TRANSVERSE_SUM_RULE_AND_THE_SPIN_WAVE_REFERENCE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
++    "docs/SPHERE_STATIC_FINITE_VOLUME_GAUSSIAN_COVARIANCE_FIXED_AXIS_RESPONSE_AND_PROJECTED_MODE_SUM_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+     "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+ )
++INPUT_SHA256 = {'docs/SPHERE_STATIC_FINITE_VOLUME_GAUSSIAN_COVARIANCE_FIXED_AXIS_RESPONSE_AND_PROJECTED_MODE_SUM_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'a73ca20d57b4d738084d43748f476da9c353d3f65d56d846ea7525bc93104f05', 'docs/MINIMAL_AXIOMS_2026-06-29.md': '93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753', 'docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md': 'cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97'}
+ ROOT = Path(__file__).resolve().parents[1]
+-CLAIM_ID = "admissibility_rule_transverse_kernel_normalization_in_the_ordered_sphere_static_law_measured_between_the_bounds_with_the_transverse_sum_rule_and_the_spin_wave_reference_bounded_theorem_note_2026-09-16"
++CLAIM_ID = "sphere_static_finite_volume_gaussian_covariance_fixed_axis_response_and_projected_mode_sum_bounded_theorem_note_2026-09-16"
+ BLOCK01_CLAIM_ID = "admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06"
+ BLOCK01_FRAGMENT = "the static law of a product rule"
+ AXIOM_NEEDLES = (
+@@ -80,8 +79,8 @@
+     note, axioms, block01 = texts
+     checks.check("A1", CLAIM_ID in note and len(re.findall(r"^claim_id:", note, flags=re.M)) == 1, "the note carries its claim_id once")
+     checks.check("A2", all(n in normalize_text(axioms) for n in AXIOM_NEEDLES), "the axioms memo carries the four sentences quoted under Premises")
+-    checks.check("A3", BLOCK01_CLAIM_ID in block01 and BLOCK01_FRAGMENT in block01.lower(), "block 01's note (on main) carries its claim_id and the rule's product form")
+-    checks.check("A4", all(Path(ROOT, p).exists() for p in AUDIT_INPUT_PATHS), "all declared inputs exist")
++    checks.check("A3", BLOCK01_CLAIM_ID in block01 and BLOCK01_FRAGMENT in block01.lower(), "the context-only finite-menu note carries its identity and product-law heading; no sphere bound is imported")
++    checks.check("A4", all(Path(ROOT, p).is_file() and hashlib.sha256(Path(ROOT, p).read_bytes()).hexdigest() == INPUT_SHA256[p] for p in AUDIT_INPUT_PATHS), "all three declared source/context inputs match literal SHA-256 pins")
+ 
+ 
+ # ============================================================================================ family B
+@@ -139,8 +138,8 @@
+     checks.check("C1", ok1, "T2: single site in a field: kappa E[(s^1)^2] = E[s^3] for the exponential law with concentration kappa = beta h (the transverse sum rule's one-site instance, symbolic)")
+     # integration by parts on the sphere: for the rotation generator L = s^3 d/ds^1 - s^1 d/ds^3 (about e_2) and smooth G, the surface
+     # integral of L G vanishes; hence <L G> = -<G L log w> for the law w dsigma. With G = s^1 and w = e^{kappa s^3} (single site):
+-    # L s^1 = s^3, L log w = -kappa s^1: <s^3> = kappa <(s^1)^2>. Check L in spherical coordinates: L = -d/dtheta for the polar angle
+-    # measured from e_3 in the (1,3) plane, and the surface measure's invariance under this rotation.
++    # L s^1 = s^3, L log w = -kappa s^1: <s^3> = kappa <(s^1)^2>. Check the specified rotation directly in Cartesian components and check
++    # the surface measure's invariance; no global polar-angle derivative formula is assumed.
+     th, ph = sp.symbols("theta phi", real=True)
+     s1, s3 = sp.sin(th) * sp.cos(ph), sp.cos(th)
+     G = sp.Function("G")
+@@ -171,22 +170,18 @@
+     rhs = sum((fx * fx for fx in f), Fraction(0))
+     if mut("parseval_wrong"):
+         rhs = rhs * 2
+-    checks.check("D1", sp.simplify(lhs - sp.Rational(rhs.numerator, rhs.denominator)) == 0, "T3: Parseval on a 4-site ring with rational data: N^{-1} sum_k |f_hat(k)|^2 = sum_x f_x^2, so the transverse structure factor's average is the local transverse moment")
++    checks.check("D1", sp.simplify(lhs - sp.Rational(rhs.numerator, rhs.denominator)) == 0, "T3: the unnormalized 4-site rational ring transform obeys sum_k |F(k)|^2/N = sum_x f_x^2; the vector projection and translation steps are written proofs")
+ 
+ 
+ # ============================================================================================ family F
+-FENCES = (
+-    "This note proves the spin-wave reference `βE(k)⟨|θ̂(k)|²⟩ = 1` for the quadratic transverse model, the transverse sum rule `βh·N⟨(m̂¹)²⟩ = ⟨m̂³⟩` for the sphere static law in a field on any finite torus, and the mode sum's identity for the transverse structure factor; the normalization `c(β, k) = βE(k)S_⊥(k)` of the transverse kernel in the ordered sphere static law is measured by simulation on finite lattices and placed between block 19's bounds, not proved; it does not select a menu, reading, order or coupling as physical, and adopts no clause.",
+-    "No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
+-    "No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.",
+-)
++FENCES = ('This note proves finite-volume identities for explicitly supplied sphere and Gaussian laws; it selects no physical menu, reading, order, coupling or normalization.', 'The instantaneous-magnetization projection is distinct from the fixed laboratory components; no fixed-component bound is transferred to that projection.', 'Historical numerical estimates are recovery records only; formal negative certification and infinite-volume or asymptotic conclusions remain deferred.')
+ FORBIDDEN = (
+     "the physical order", "the physical rule", "the physical coupling", "the physical dimension", "the physical reading", "the physical menu", "for every coupling", "selects the", "fires wake condition",
+-    "the Bridge weights", "the Bridge conjecture", "certified", "converge", "emergent", "phase transition", "critical", "washes out", "toward the plane", "the trend",
++    "the Bridge weights", "the Bridge conjecture", "certified", "emergent", "phase transition", "critical", "washes out", "toward the plane", "the trend",
+     "sharp threshold", "the transition point", "Goldstone", "spontaneous symmetry breaking", "is the source of gravity", "the gravity node's kernel is",
+ )
+ CLAIM_INJECTIONS = {"claim_source_injected": "Hence the transverse channel is the source of gravity."}
+-CLASSICAL_NAMES = ("Heisenberg", "Bogoliubov", "Mermin", "Wagner", "Fröhlich", "Simon", "Spencer", "Dyson", "Lieb", "Parseval", "Ward", "Metropolis")
++CLASSICAL_NAMES = ("Heisenberg", "Bogoliubov", "Mermin", "Wagner", "Fröhlich", "Simon", "Spencer", "Dyson", "Lieb", "Metropolis")
+ ALLOWED_NAME_SECTIONS = ("Prior art and what is new", "Imports", "Premises and declared objects", "Review record")
+ SCAN_MARKER = "float-scan-marker-line"
+ 
+@@ -220,13 +215,7 @@
+ 
+ 
+ # ============================================================================================ family G
+-N5_LINES = (
+-    "per_element: executed — the Laplacian's plane-wave eigenvalues on the 4^3 lattice; the single-site sum rule symbolically; the rotation generator's action",
+-    "per_site: executed — the 4-ring Gaussian modes' variances 1/(beta E(k)); the vanishing surface integral behind the integration by parts",
+-    "per_mode: executed — Parseval on rational data; the measured normalization c(beta, k) for k along an axis on 16^3, 24^3, 32^3 (control), by a second estimator and in a field (refuter)",
+-    "per_block: executed — the placement of c(beta, k) between (m^2/3)^2 and 1 at beta = 0.8, 1, 1.5, 2, 3 (control and refuter outputs)",
+-    "lattice_wide: T1-T3 proved as stated; the normalization is measured on finite lattices, not proved",
+-)
++N5_LINES = ('per_element: executed — exact 64-by-64 Laplacian entries and four plane-wave identities; scalar covariance factors checked on a ring', 'per_site: executed — one-site exponential moments and the rotation surface integral; no stochastic spin updates or field-chain estimates', 'per_mode: executed — four selected cubic waves, two selected ring inverse eigenvalues and four rational Fourier coefficients; no all-mode numerical sweep', 'per_block: executed — one finite cubic matrix and finite ring fixtures; no sampled spatial blocks, measured normalization or simulation output', 'lattice_wide: checked and not executed — arbitrary finite-volume covariance, global rotation cancellation and projected vector mode sum are written proofs')
+ 
+ 
+ def family_g(checks: Checks) -> None:

@@ -1,0 +1,41 @@
+{
+  "status": "STATIC SYNTAX AND METADATA ONLY",
+  "artifacts": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-build-staged-draft-v1.py",
+      "sha256": "edb2f456664f2e8b3f09cac31551cc10569527d0478ca8e66760144dddb0f965"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-capture-v1.py",
+      "sha256": "5d94b0dc44b9deafbc902dc0bb1a7ca448654b91cdab08d3ac38427f186d975c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-mutation-capture-v1.py",
+      "sha256": "dee4e2a68fe4d7fa8e1e57806135b23946763ba6b0d1b9f27d7aa24264176042"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-capture-plan-v1.json",
+      "sha256": "f7350b0318aab41dcadd07454273d3709ee58869d4a6ef4fa4def8e867f41ba7"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8172-builder-bindings-v1.json",
+      "sha256": "849643a316435ba1b5c22f5ab2a63eaba02e74b12e7b8a077245c28f96874473"
+    }
+  ],
+  "source_files_verified": 31,
+  "exact_owned_untracked": true,
+  "tracked_and_index_clean": true,
+  "slot_head": "8bf464953779b8ada8415208e89a656411f9f525",
+  "actual_input_api_verified": true,
+  "input_fingerprint": "da24d8528aaed4d7c4012a1c7523c77035d5f9a2108e075354c100e3ff586d3f",
+  "actual_helpers": [],
+  "registry_edits_needed": false,
+  "cold_binding": null,
+  "dispatchable_captures": false,
+  "primary_executions": 0,
+  "mutation_executions": 0,
+  "simulation_executions": 0,
+  "builder_executions": 0,
+  "source_edits": 0,
+  "limitations": "Fresh main interaction and actual cold report still required. No synthetic control rerun; raw-preservation wrapper inherited from independently controlled PR8170 v2."
+}

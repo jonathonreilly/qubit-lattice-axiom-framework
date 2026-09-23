@@ -1,0 +1,13 @@
+PR #8678: physics-loop: admissibility induced-law block 89 - the unit of rate decides the alternation's thresholds: in log rates an exact mass, a convexity term, and no global minimum under a quadratic law
+branch physics-loop/admissibility-induced-law-block89-the-unit-of-rate-decides-the-alternations-thresholds-20260923 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_the_unit_of_rate_decides_the_alternations_thresholds_in_log_rates_exact_mass_convexity_term_no_global_minimum_2026_09_23.py: rc=0 PASS=17 FAIL=0
+   mutation log_mass_depends_on_momentum: expected B observed B ok
+   mutation no_jensen_term: expected C observed C ok
+   mutation threshold_is_chi_over_12: expected C observed C ok
+   mutation anisotropy_log_equals_linear: expected D observed D ok
+   mutation anisotropy_threshold_unchanged: expected D observed D ok
+   mutation uniform_is_the_global_minimum: expected E observed E ok
+   mutation log_crossing_at_delta_equals_2a: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

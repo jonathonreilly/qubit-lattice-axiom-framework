@@ -1,0 +1,36 @@
+{
+ "task": "P:8686",
+ "type": "pr-reexecution",
+ "lane": "uniform-ice-loop-obstruction-20260922",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8686",
+ "pr": 8686,
+ "branch": "claude/uniform-ice-loop-obstruction-20260922",
+ "git_sha": "239248cb",
+ "started_utc": "20260923T034753Z",
+ "elapsed_s": 15.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/uniform_ice_by_formation_square_loop_obstruction_plaquette_coordinator_and_plans_2026_09_22.py",
+    "returncode": 0,
+    "total": "PASS=9 FAIL=0"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "2fb946ede8815fd32e9f2564b5d1240224265ab2458240aa8c5a9c2fe5630119",
+ "stdout_tail": "PR #8686: docs(campaign): uniform ice by formation needs a coordinator\nbranch claude/uniform-ice-loop-obstruction-20260922 (base main)\nrunners in the PR: 1\n== scripts/uniform_ice_by_formation_square_loop_obstruction_plaquette_coordinator_and_plans_2026_09_22.py: rc=0 PASS=9 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T034809Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

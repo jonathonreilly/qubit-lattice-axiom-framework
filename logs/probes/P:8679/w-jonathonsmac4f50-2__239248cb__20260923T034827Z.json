@@ -1,0 +1,36 @@
+{
+ "task": "P:8679",
+ "type": "pr-reexecution",
+ "lane": "static-ice-frame-source-20260922",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8679",
+ "pr": 8679,
+ "branch": "claude/static-ice-frame-source-20260922",
+ "git_sha": "239248cb",
+ "started_utc": "20260923T034827Z",
+ "elapsed_s": 72.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/static_ice_measure_nearest_neighbour_admissibility_needs_a_frame_source_2026_09_22.py",
+    "returncode": 0,
+    "total": "PASS=13 FAIL=0"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "cc1b03e58e6f470c5ae588c223c09004ce1376364f2490a17eec8807d1675d6e",
+ "stdout_tail": "PR #8679: docs(campaign): static ice measure needs a frame source\nbranch claude/static-ice-frame-source-20260922 (base main)\nrunners in the PR: 1\n== scripts/static_ice_measure_nearest_neighbour_admissibility_needs_a_frame_source_2026_09_22.py: rc=0 PASS=13 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T034939Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

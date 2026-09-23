@@ -1,0 +1,37 @@
+{
+ "task": "P:8678",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block89-the-un",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8678",
+ "pr": 8678,
+ "branch": "physics-loop/admissibility-induced-law-block89-the-unit-of-rate-decides-the-alternations-thresholds-20260923",
+ "git_sha": "ea2f269a",
+ "started_utc": "20260923T034526Z",
+ "elapsed_s": 32.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_the_unit_of_rate_decides_the_alternations_thresholds_in_log_rates_exact_mass_convexity_term_no_global_minimum_2026_09_23.py",
+    "returncode": 0,
+    "total": "PASS=17 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "c2db18535f4b5042d9625e6b3f404a252cf667c2e4c42f8a31c968e68716814a",
+ "stdout_tail": "PR #8678: physics-loop: admissibility induced-law block 89 - the unit of rate decides the alternation's thresholds: in log rates an exact mass, a convexity term, and no global minimum under a quadratic law\nbranch physics-loop/admissibility-induced-law-block89-the-unit-of-rate-decides-the-alternations-thresholds-20260923 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_the_unit_of_rate_decides_the_alternations_thresholds_in_log_rates_exact_mass_convexity_term_no_global_minimum_2026_09_23.py: rc=0 PASS=17 FAIL=0\n   mutation log_mass_depends_on_momentum: expected B observed B ok\n   mutation no_jensen_term: expected C observed C ok\n   mutation threshold_is_chi_over_12: expected C observed C ok\n   mutation anisotropy_log_equals_linear: expected D observed D ok\n   mutation anisotropy_threshold_unchanged: expected D observed D ok\n   mutation uniform_is_the_global_minimum: expected E observed E ok\n   mutation log_crossing_at_delta_equals_2a: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T034558Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,11 @@
+PR #8703: physics-loop: admissibility induced-law block 92 - the zero-field bound on the formation bilayer: a held source's kernel without a field in 3+1, and no memory on planes
+branch physics-loop/admissibility-induced-law-block92-zero-field-bound-on-the-formation-bilayer-20260923 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_zero_field_bound_on_the_formation_bilayer_held_source_kernel_in_3plus1_no_memory_on_planes_2026_09_23.py: rc=0 PASS=17 FAIL=0
+   mutation quadratic_step_sign_flipped: expected B observed B ok
+   mutation response_is_twice_beta_u: expected C observed C ok
+   mutation shell_count_doubled: expected D observed D ok
+   mutation plane_stiffness_counts_rungs: expected D observed D ok
+   mutation level_mean_without_the_staggered_term: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

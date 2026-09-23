@@ -1,0 +1,4 @@
+PR #8686: docs(campaign): uniform ice by formation needs a coordinator
+branch claude/uniform-ice-loop-obstruction-20260922 (base main)
+runners in the PR: 1
+== scripts/uniform_ice_by_formation_square_loop_obstruction_plaquette_coordinator_and_plans_2026_09_22.py: rc=0 PASS=9 FAIL=0

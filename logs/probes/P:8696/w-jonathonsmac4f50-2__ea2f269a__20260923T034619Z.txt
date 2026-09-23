@@ -1,0 +1,12 @@
+PR #8696: physics-loop: admissibility induced-law block 91 - a held source under light-cone formation is answered by the inverse lattice Laplacian within a factor between m² and one
+branch physics-loop/admissibility-induced-law-block91-a-held-source-under-light-cone-formation-20260923 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_pinned_source_under_light_cone_formation_inverse_lattice_laplacian_within_m_squared_and_one_2026_09_23.py: rc=0 PASS=17 FAIL=0
+   mutation source_on_one_level_only: expected B observed B ok
+   mutation response_from_one_level: expected C observed C ok
+   mutation antisymmetric_branch_unshifted: expected C observed C ok
+   mutation gaussian_weight_reversed: expected D observed D ok
+   mutation stiffness_sum_without_factor_two: expected E observed E ok
+   mutation lower_bound_linear_in_m: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

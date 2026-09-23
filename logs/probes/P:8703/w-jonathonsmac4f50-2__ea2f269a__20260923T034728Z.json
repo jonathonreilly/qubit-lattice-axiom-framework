@@ -1,0 +1,37 @@
+{
+ "task": "P:8703",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block92-zero-f",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8703",
+ "pr": 8703,
+ "branch": "physics-loop/admissibility-induced-law-block92-zero-field-bound-on-the-formation-bilayer-20260923",
+ "git_sha": "ea2f269a",
+ "started_utc": "20260923T034728Z",
+ "elapsed_s": 7.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_zero_field_bound_on_the_formation_bilayer_held_source_kernel_in_3plus1_no_memory_on_planes_2026_09_23.py",
+    "returncode": 0,
+    "total": "PASS=17 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "29d4646b90d14e679c97907c2988c96c35bce979627240fc265209c8f73ebbab",
+ "stdout_tail": "PR #8703: physics-loop: admissibility induced-law block 92 - the zero-field bound on the formation bilayer: a held source's kernel without a field in 3+1, and no memory on planes\nbranch physics-loop/admissibility-induced-law-block92-zero-field-bound-on-the-formation-bilayer-20260923 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_zero_field_bound_on_the_formation_bilayer_held_source_kernel_in_3plus1_no_memory_on_planes_2026_09_23.py: rc=0 PASS=17 FAIL=0\n   mutation quadratic_step_sign_flipped: expected B observed B ok\n   mutation response_is_twice_beta_u: expected C observed C ok\n   mutation shell_count_doubled: expected D observed D ok\n   mutation plane_stiffness_counts_rungs: expected D observed D ok\n   mutation level_mean_without_the_staggered_term: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T034736Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

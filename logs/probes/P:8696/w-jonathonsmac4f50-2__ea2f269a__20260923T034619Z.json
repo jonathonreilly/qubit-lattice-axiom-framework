@@ -1,0 +1,37 @@
+{
+ "task": "P:8696",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block91-a-held",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8696",
+ "pr": 8696,
+ "branch": "physics-loop/admissibility-induced-law-block91-a-held-source-under-light-cone-formation-20260923",
+ "git_sha": "ea2f269a",
+ "started_utc": "20260923T034619Z",
+ "elapsed_s": 38.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_pinned_source_under_light_cone_formation_inverse_lattice_laplacian_within_m_squared_and_one_2026_09_23.py",
+    "returncode": 0,
+    "total": "PASS=17 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "5faee655d866bf1b0895deb9a46ff721786dabdd3a0072583bbe4dd848b112bc",
+ "stdout_tail": "PR #8696: physics-loop: admissibility induced-law block 91 - a held source under light-cone formation is answered by the inverse lattice Laplacian within a factor between m\u00b2 and one\nbranch physics-loop/admissibility-induced-law-block91-a-held-source-under-light-cone-formation-20260923 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_pinned_source_under_light_cone_formation_inverse_lattice_laplacian_within_m_squared_and_one_2026_09_23.py: rc=0 PASS=17 FAIL=0\n   mutation source_on_one_level_only: expected B observed B ok\n   mutation response_from_one_level: expected C observed C ok\n   mutation antisymmetric_branch_unshifted: expected C observed C ok\n   mutation gaussian_weight_reversed: expected D observed D ok\n   mutation stiffness_sum_without_factor_two: expected E observed E ok\n   mutation lower_bound_linear_in_m: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T034658Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

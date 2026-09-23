@@ -1,0 +1,4 @@
+PR #8679: docs(campaign): static ice measure needs a frame source
+branch claude/static-ice-frame-source-20260922 (base main)
+runners in the PR: 1
+== scripts/static_ice_measure_nearest_neighbour_admissibility_needs_a_frame_source_2026_09_22.py: rc=0 PASS=13 FAIL=0

@@ -1,0 +1,36 @@
+{
+ "task": "R:matter_law_ticks_realise_menus_in_one_frame_only_check_2026_09_04",
+ "type": "runner-reexecution",
+ "lane": "matter",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/matter_law_ticks_realise_menus_in_one_frame_only_check_2026_09_04.py",
+ "seed": 64101,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6283b3fe",
+ "started_utc": "20260923T114821Z",
+ "elapsed_s": 67.5,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=60 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4293f04f331cc00768f2dc525eb5a2c130ccad5e8c458e21629e2c500945ebe9",
+ "stdout_tail": "nu one-menu families (site k <= 7, torus T0) are consistent, sum pinned\nPASS: T5-rogue uniform differs from the prescribed sea on126/129 site and1324/1329 star odds classes; it remains Born for P_M/|M|\nPASS: M1-other-Born-state actual nonuniform site odds differ from the positive trace1 uniform diagonal density\nPASS: T5-effects each menu's odds live on its support and sum to 1; menus cover the basis\nPASS: T5-arity no menu has three outcomes at any unit; minimum sizes 4 / 19 / 5 / 7\nPASS: T5-killing the site realises only {P0},{P1},{P0,P1}; the 8 four-outcome menus pair up\nPASS: T5-fibre-172 PR #7931: 9969 conditions, 82116 pairs, 164232 checks, 172 phase-blind keyed groups (9-decimal rounding)\nPASS: T5-fibre-menu Lemma 2 on site 0 (175419 conditions) and star(0) (19619): 635/1499 full-state keys rounded9decimals; none has2menus\nFAIL: T5-fibre-born Lemma 3, float: p(w|n) = <w|sigma(n)|w> to 1.2e-14: the specified-state diagonal identity\nPASS: M4-static-dwell supplied H=X control: unequal static odds become1/2 at tau=pi/4; eigenstate remains fixed\nPASS: gate-axioms TEXT ONLY: Admissibility and Record quotes match MINIMAL_AXIOMS_2026-06-29.md\nPASS: gate-title TEXT ONLY: corrected static title and absence of old promotion phrases\nPASS: gate-quoted TEXT ONLY: historical full-census numbers occur in disclosure; no comparison is executed\nPASS: gate-surface TEXT ONLY: conditional surface and independent-audit boundary\nrecorded_arguments: 1 printed, none counted\nTOTAL: PASS=60 FAIL=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T114929Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=60 FAIL=1' vs cache 'TOTAL: PASS=61 FAIL=0'"
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "task": "R:matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "matter",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/matter_above_the_half_filled_sea_odd_and_even_densities_check_2026_09_03.py",
+ "seed": 64101,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6283b3fe",
+ "started_utc": "20260923T114821Z",
+ "elapsed_s": 0.3,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=27 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f9d1b420c8ca4ce74504ff195762e442e4c5ae786f33755394769a80274a3c4c",
+ "stdout_tail": "chiral identity] conjugated empty orbital is in occupied shell (1.000000000000), energy negated (0e+00); bulk holonomies stay fixed, while an independently defined APS label remains untested\nPASS R1 [actual even alternative] adding two empty orbitals gives deltaN=2.000000000000, even total N34, projector residual 4.4e-16\nPASS R2 [readout counterexample] identical fixed-Z probabilities, offdiagonal energies 1.000000000000 / -1.000000000000\nPASS R3 [domain counterexample] complex pair gives max imaginary row 0.335410 while total imaginary 1.1e-16; original source restricted to real states\nPASS R4 [actual full gauge] all 3072 directed edge equations, matrix residual 0e+00 and real energy translation 5.6e-17; twist seam included\nSUMMARY: supplied real fixed-N source comparisons; charged even and full-covariance alternatives remain. No physical readout, gravity or APS theorem.\nper_element: checked finite source sums and exact stated scalar identities; physical interpretation is not supplied\nper_site: checked declared coordinate/record/source dictionaries on finite sites; no fine-site formation mechanism follows\nper_mode: checked the stated one-particle or Fourier modes only; no unexecuted interacting or APS boundary spectrum\nper_block: checked named finite preparations, response boxes or sign-field families at their stated tolerances\nlattice_wide: checked and not executed \u2014 no physical infinite-volume formation law or numerical limit error bound is certified\nTOTAL: PASS=27 FAIL=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T114821Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=27 FAIL=1' vs cache 'TOTAL: PASS=28 FAIL=0'"
+  ]
+ }
+}

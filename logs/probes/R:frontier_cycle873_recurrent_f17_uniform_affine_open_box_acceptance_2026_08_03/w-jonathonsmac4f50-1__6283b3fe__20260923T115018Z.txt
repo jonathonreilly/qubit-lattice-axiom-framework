@@ -1,0 +1,20 @@
+{
+  "base_commit": "c73a11d1ea7ddd564c48aa2a5a459a43d94262ef",
+  "base_is_ancestor_of_head": false,
+  "cycle873_unused_on_base": true,
+  "failures": [
+    "recorded base is not an ancestor of HEAD",
+    "upstream citation hash drift",
+    "primary cold return code",
+    "primary cold stdout drift",
+    "primary cold receipt drift",
+    "independent cold return code",
+    "independent cold stdout drift",
+    "independent cold receipt drift"
+  ],
+  "independent_cold_receipt_match": false,
+  "package_file_count": 33,
+  "primary_cold_receipt_match": false,
+  "receipt": "outputs/cycle873_recurrent_f17_uniform_affine_open_box_package_acceptance_receipt_2026_08_03.json",
+  "status": "fail"
+}

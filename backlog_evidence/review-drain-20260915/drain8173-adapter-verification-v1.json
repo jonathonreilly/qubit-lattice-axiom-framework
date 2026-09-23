@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "kind": "static-adapter-preparation-not-execution",
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-build-staged-draft-v1.py",
+      "sha256": "72ce28cba7434db29b79a540c936c383d5e8f830d5c103fd4f804c35d97cd824"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-capture-v1.py",
+      "sha256": "53a1d0d1ea346032c8a9855653dc303906cc561553335a2ffbc0921bca047ce5"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-mutation-capture-v1.py",
+      "sha256": "3677d329364868e58eccde538d72ed5444d2cea806dadad34488ece912609007"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-capture-plan-v1.json",
+      "sha256": "dc092c64d06b5edeaa973c8b8637ded7faa8e320bfd3d13b0181e45eb2e2de1e"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-adapter-bindings-v1.json",
+      "sha256": "0271fe78f57c9a602b3626b238d0e0f5eb42d6a045b354217466b8a2cc5fd597"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8173-adapter-authority-v1.json",
+      "sha256": "9cd8decb20c4912cf2930d39e5ede9ed483fe2b0eb6017e0d58813e92d12e95f"
+    }
+  ],
+  "frozen_source_count": 25,
+  "original_recovery_count": 20,
+  "primary_functions_imported": false,
+  "primary_runs": 0,
+  "mutation_runs": 0,
+  "simulation_runs": 0,
+  "builder_executed": false,
+  "staging": false,
+  "preflight": false,
+  "registry_changes": false,
+  "source_unchanged": true,
+  "capture_block": "COLD_CLEARANCE_BINDING=None; requires actual cold report predicates and tree in new immutable version before marker reservation",
+  "actual_api": {
+    "execute_runner_signature": "(runner_path: str, timeout_sec: int) -> dict",
+    "execute_and_write_cache": "Original before/after source/input generation equality remains enforced; wrapper writes actual execute_runner result then returns same object before the comparison",
+    "stderr_contract": "Primary stderr merged into stdout by original API; mutation streams kept separately",
+    "helpers": [],
+    "runtime_inputs": 3,
+    "primary_stdout_total": 14,
+    "math_mutations": 5,
+    "mutation_expected_pass": 13,
+    "mutation_expected_fail": 1,
+    "source_derived_unmeasured_limits": {
+      "seconds": 60,
+      "bytes": 402653184
+    }
+  },
+  "canonical_cache_scope": "Final source-owned unit binds canonical cache; no duplicate mutable-pool reviewer reference required"
+}

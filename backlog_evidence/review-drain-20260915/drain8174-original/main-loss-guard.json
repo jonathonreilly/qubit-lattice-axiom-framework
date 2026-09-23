@@ -1,0 +1,74 @@
+{
+  "main": "6332b12b59c83c5b08cc7b4ad90898cb6666050d",
+  "conflicting_existing_paths": [
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "main": "100644 blob 8f9c496033ee3e37e4ad73433151a79224a60814\t.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "head": "100644 blob d3b3a8174d0f5ee1d8d3464a579b23e5319ab0f8\t.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "action": "preserve current-main bytes; never replace whole path with stale original head",
+      "delta_sha256": "87f5f98c8d05da68cdc1559e8dd3ffc221c8d8bc9daa2cea96f9c0a30f67299d"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "main": "100644 blob 6dfc9de13838b8fe1d6d593b83d0d31cd0763b93\t.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "head": "100644 blob a83db595a5a234f53501c98ca01ada1110ada636\t.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "action": "preserve current-main bytes; never replace whole path with stale original head",
+      "delta_sha256": "b88f3cb77a040b0a583487f693cb61d6519aeeb0e44a79bef213f821deb97fc5"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "main": "100644 blob 74d2f60bae1b3e2de1ca2cf7ade91cf9e93da3b7\t.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "head": "100644 blob af4651b37ce70f162f9dc3f3b59818b95f667699\t.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "action": "preserve current-main bytes; never replace whole path with stale original head",
+      "delta_sha256": "d807c70c446bca5adfb5c18440600569f570a7fd4ef8939b1144f1bfd0d2b27d"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "main": "100644 blob 08d17f0940e3756c94ff724c8ff531adc9e029ce\t.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "head": "100644 blob 92af697037a1fdc351eea3837f7111883a89e160\t.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "action": "preserve current-main bytes; never replace whole path with stale original head",
+      "delta_sha256": "d4ff69a4f0b1cd5aa79d0463df2d3e612ff12bd18502ec537eca9d34e10a5f71"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "main": "100644 blob e16642020759d3d57935cd6d037d382fc6573bf0\t.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "head": "100644 blob 0790f2734962a73a00e4295a84182750e019854e\t.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "action": "preserve current-main bytes; never replace whole path with stale original head",
+      "delta_sha256": "6139ce46dc260d23c32af06a537c308dee629ba84e69a49b1406ded1ab2d8437"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "main": "100644 blob 8f432e2cd2631c0cc6a5121f932b305f16d3a023\t.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "head": "100644 blob 6de7296445a54b5dae952ab3187cae3eb6f8e41d\t.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "action": "preserve current-main bytes; never replace whole path with stale original head",
+      "delta_sha256": "280b2c57b7e4a14b3d72be1335054879f54b2062e563a4eee7dcfb51a6611801"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "main": "100644 blob a295f13a99207a78d0f0191ee9514df901213261\tdocs/audit/data/citation_graph_manifest.json",
+      "head": "100644 blob 8363c01307e8cb60d835a44ce2f41903c13cc814\tdocs/audit/data/citation_graph_manifest.json",
+      "action": "preserve current-main bytes; never replace whole path with stale original head",
+      "delta_sha256": "2ba2b16b7ebe89eec6cf13bf5a41c03c4e2959916ad0adae5a09a76a75f46391"
+    }
+  ],
+  "new_paths": [
+    ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block30_findings.md",
+    ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block30.md",
+    ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block30.md",
+    ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block30.md",
+    ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_budget.out.txt",
+    ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_budget.py",
+    ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_certify.out.txt",
+    ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_certify.py",
+    ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_construction.out.txt",
+    ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_construction.py",
+    ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_core.py",
+    ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_refuter.out.txt",
+    ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_refuter.py",
+    ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_scan.out.txt",
+    ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_scan.py",
+    "docs/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED_NODES_IN_THE_EXPLANATION_TREE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "logs/runner-cache/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_09_16.txt",
+    "scripts/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_09_16.py"
+  ]
+}

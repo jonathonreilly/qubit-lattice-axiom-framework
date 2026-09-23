@@ -1,0 +1,1899 @@
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+index 8f9c496033..d3b3a8174d 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md
+@@ -8,3 +8,9 @@
+ | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
+ | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
+ | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
++| F30.1 the two-level domination | block 12's coupling refined by the predecessors' state | seed `d_1`, amplification `max(d_2, d_3)` | none | exact | candidate-complete | T1 (B1–B2) | — |
++| F30.2 the extended explanation tree | amplified nodes inside clusters; an amplified pole's excuse is its predecessor; bad pairs; bad poles kept | `forks = |S| − 1`, `E ≤ 3(|S| − 1) + 2|A|` | the sharper budget `+|A|` (executed `2/3`) | exact | candidate-complete | T2 (C1–C4) | — |
++| F30.3 the count and the region | amplification arrows in the arrow slots; `(ε₂/t²)^{|A|}` | `P ≤ ε₁ R(t + ε₂/t², ε₁/t³)`; certificates at four couplings | the cluster count for the amplification part | exact; factor `69` | candidate-complete | T3–T4 (D1–D3) | — |
++| F30.4 the ceiling | tangency of `U = (1 + xU)³` at `4/27`; the maximum of `t²(4/27 − t)` | `ε₂ < 256/531441`; `p > 4150` on `(p, 1, 2)` | — | exact | closed (ceiling stated) | T5 (E1–E2) | — |
++| F30.5 amplified nodes as leaves | pay `ε₂` per leaf | forks charged at `ε₂/t³` | — | the region empties | closed-negative | Review record | — |
++| F30.6 the tree of trees | fresh trees under amplified leaves, weight `ε₂`, no bad pairs | `p ≈ 200` if overlap-free | overlaps between sub-trees | blocked | open-negative | N1 | — |
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block30_findings.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block30_findings.md
+new file mode 100644
+index 0000000000..13c14ece59
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block30_findings.md
+@@ -0,0 +1,15 @@
++# Refuting pass — block 30 (supervisor-run, disjoint machinery; 2026-09-16)
++
++Routes compared (controls `specs/supervisor_control_block30_core.py`, `..._construction.py`, `..._scan.py`, `..._certify.py`, `..._budget.py`; refuting pass `specs/supervisor_control_block30_refuter.py`; outputs in `.out.txt`):
++
++| item | runner's / control's route | refuting route | result |
++|---|---|---|---|
++| the two-level domination (T1) | the coupling inequality at all `216` triples at five weight triples, exact | the six-axis law and the two-level automaton run with the same uniforms on a `128²` plane for `1500` levels at `p = 12, 30, 200`; `ξ ≤ η'` tested at every site and level | `0` violations in `2.5·10⁷` site updates |
++| what the domination costs | — | the dissent densities: six-axis `0.067` against automaton `1.0` at `p = 12`; `1.59·10⁻³` against `1.61·10⁻³` at `30`; `4.4·10⁻⁶` against `4.4·10⁻⁶` at `200`; the estimate `ε₁/(1 − 3ε₂)` gives `1.56·10⁻³`, `4.3·10⁻⁶` | the domination is tight at strong preference and loose near the transition (the automaton disorders at `p = 12` where the law keeps `93 %` of its plane) — the two-level worst case `ε₂ = 0.23` at `p = 12` overstates the amplification |
++| the extended construction (T2) | the embedded construction with its own tree check on `4290` configurations | an independent graph implementation (numpy predecessor and sibling tests, union-find for cycles) on `443` random trees, `352` with amplified nodes | passes throughout |
++| the certificates (T4) | exact super-solution inequalities | the fixed points by floating-point iteration and the exact margins | margins `10⁻⁸`–`7·10⁻⁸` in `D` and `F`, `10⁻¹¹` in `U`, all positive; the float iteration at spectral radius `0.99`–`0.998` is not resolved to `10⁻⁶`, so only the exact inequalities decide |
++| the ceiling (T5) | `max (v − 1)/v³ = 4/27` symbolically | the domain edge at `y = 0` by bisection on the iteration | `0.148148 = 4/27` |
++
++Findings: none against the theorems. One tooling slip folded: the mutation of the spanning identity first crashed the runner (an assertion inside the construction) instead of failing a check; the construction's assertions are now caught and reported as a failed check. One measurement recorded: the two-level automaton disorders at `p = 12` while the six-axis law does not, so the domination itself — not only the count — is loose by a large factor near the located strength; the automaton's own strength is not measured here.
++
++Attempts to refute (nothing refuted): whether an amplified node could be left as a leaf (computed: its fork would cost `ε₂/t³`, the region empties); whether bad pairs could be avoided by choosing charges (the charges are the coordinate directions; no freedom); whether the sharper budget `E ≤ 3(|S| − 1) + |A|` fails on some executed tree (never: the worst is `2/3`); whether the tree-of-trees route avoids overlaps (it does not: a fresh tree under an amplified leaf can share nodes with the structure, and every cycle so created contains a fork whose removal costs three excuse arrows in the accounting). Verdict of this pass: PASS-NO-BLOCKER at the supervisor's own standard, pending the owner's independent review.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block30.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block30.md
+new file mode 100644
+index 0000000000..c3b2b9146d
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block30.md
+@@ -0,0 +1,15 @@
++# Claim status certificate — block 30 (close, 2026-09-16)
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: upstream_support
++reachability_to_target: supports
++conditional_surface_status: "T1-T5 proved for every positive weight triple: the two-level domination (seed d_1, amplification max(d_2, d_3)); the extended explanation tree with forks = |S| - 1 and E <= 3(|S| - 1) + 2|A|; P(eta'_x = 1) <= epsilon_1 R(t + epsilon_2/t^2, epsilon_1/t^3); the ordered phase with six invariant laws for p >= 4165 at (p,1,2), 2085 at (p,1,1), 8330 at (p,2,4), 6247 at (p,1,3) by exact super-solutions; the ceiling epsilon_2 < 256/531441 (p > 4150 on (p,1,2)). The construction executed exhaustively on the depth-2 cone and all depth-3 configurations with at most four noise sites plus random cones. Conditional on the records-only reading, positivity, the six-axis menu and the monotone order as supplied conditions; three standard mathematical imports named at definition level"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++claim_type_reason: "a monotone coupling refined by the predecessors' state; a contour construction with an exact span accounting extended by amplified poles and bad pairs; the generating-function count with two kinds of arrow in the arrow slots; exact rational super-solutions; one-variable maxima symbolically"
++dependency_classes: "one premise node (minimal_axioms); block 01 (on main; proposed, unaudited); blocks 12, 25 (open PRs) re-proved in extended form; block 28 (open PR) as the evidence address for the located strength"
++open_imports: "the records-only reading; positivity; the six-axis menu; the monotone order with corner (+,+,+); the three standard mathematical imports"
++review_loop_disposition: pending (supervisor-run block; author checks only)
++independence_class: "single seat (Fable, supervisor): controls (the extended construction implemented and run exhaustively; the scan; the certificates; the budget measurement), contract with a lens pass, primary, refuting pass by shared-uniform coupled simulation, an independent graph implementation, floating-point fixed points with exact margins and the bisected domain edge, fold (one tooling slip in a mutation fixed)"
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block30.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block30.md
+new file mode 100644
+index 0000000000..f15dbd7853
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block30.md
+@@ -0,0 +1,17 @@
++# GOAL — block 30: the six-axis formation threshold lifted by a two-level domination — seeds and amplified nodes in the explanation tree; `p ≥ 4165` at `(p, 1, 2)` (from `285718`); the route's ceiling `ε₂ < 256/531441` (2026-09-16)
++
++**Directive.** Owner 2026-09-16 (evening): "keep going, take the six-axis threshold next." Block 25 (sharpened) proves the six-axis formation law keeps its plane for `ε(p, q, r) ≤ 7/10⁶`, i.e. `p ≥ 285718` at `(p, 1, 2)`; block 28 locates the actual strength at `p ∈ (10.5, 11)`. Block 25's tree count sits at its own edge, so the lever is the domination step (block 12's S3): it uses the worst-case noise `ε = max(d_1, d_2, d_3) ≈ 2/p`, while in the ordered state almost every site sees three agreeing predecessors and dissents only with probability `d_1 ≈ 33/p³`.
++
++**Exact target (claim type `bounded_theorem`).**
++- T1 (two-level domination): from the all-`a` plane the coarse-grained dissent `ξ_x = 1{v_x ≠ a}` is dominated by the two-level noisy majority automaton `η'`: `η'_x = 1` if at least two predecessors are `1`; otherwise `η'_x = 1{U_x < ε₂}` if exactly one predecessor is `1` and `1{U_x < ε₁}` if none, with `ε₁ = d_1`, `ε₂ = max(d_2, d_3)` and i.i.d. uniforms `U`.
++- T2 (the extended explanation tree): every `1` of `η'` at `x` has a subtree of `G` through `1`-sites with at most one arrow to a predecessor per node, whose nodes without such an arrow (the seeds `S`) have no `1`-predecessor, whose amplified nodes `A` have exactly one (their arrow's end), and whose other nodes have two; with `forks = |S| − 1` and excuse arrows `E ≤ 3(|S| − 1) + 2|A|`. (Block 25's construction with the amplified nodes inside the clusters; an amplified pole's excuse is its single predecessor; the charge equal to that predecessor's direction loses one unit of span — a bad pair — and bad amplified poles are kept; the potential accounting.)
++- T3 (the count and the bound): `P(η'_x = 1) ≤ ε₁·R(t + ε₂/t², ε₁/t³)` for every `t ∈ (0, 1]` with the point in the recursion's domain (`R` block 25's recursion; the amplified arrows share the arrow slots; the budget turns `ε₂^{|A|}` into `(ε₂/t²)^{|A|}`).
++- T4 (the region): exact rational super-solutions at `p = 4165` on `(p, 1, 2)`, `2085` on `(p, 1, 1)`, `8330` on `(p, 2, 4)`, `6247` on `(p, 1, 3)`; six invariant laws there (block 25's T7 route restated).
++- T5 (the ceiling): the recursion's domain at `y → 0` is `x < 4/27` (tangency of `U = (1 + xU)³`), so the route needs `ε₂ < max_t t²(4/27 − t) = 256/531441 ≈ 4.8·10⁻⁴`; on `(p, 1, 2)` this is `p > 4150` whatever `ε₁`: the route is at its ceiling; the remaining gap to the located `11` is a factor `380`, attributed to the bad-pair accounting (`2` excuse arrows per amplified pole; the executed trees use at most `2/3`) and to the count's overcounting of sub-structures.
++- Executed: the extended construction on every configuration of the depth-2 cone, all depth-3 configurations with `≤ 4` noise sites and random cones (tree, classification, budgets, the potential accounting); the certificates exactly; the brackets `p₀ − 1` fail.
++
++**Falsifiers.** A configuration where the extended construction fails or a budget is exceeded; a certificate inequality failing; `ε(p₀ − 1)` admitted; a domain point beyond `4/27` at `y = 0`.
++
++**Lens pass.** *"Why not the count?"* It is at its edge (block 25 sharpened); the domination is the loose step by `10⁴` at the located strength. *"Is the amplified node a noise node?"* It is a `1` with one `1`-predecessor, so its uniform is below `ε₂` — paid `ε₂`; treating it as a leaf would charge its fork at `ε₂/t³` and lose everything; putting it inside the cluster costs the bad pairs. *"The tree-of-trees alternative (fresh trees under amplified leaves, weight `ε₂` with no bad pairs) would reach `p ≈ 200`."* Its sub-trees overlap the structure and the overlaps break the budgets; recorded under N1 as the next obstacle. *"Names."* Only in the allowed sections.
++
++**Forbidden phrases:** the standing list plus "converge", "critical", "certified", "phase transition", "sharp threshold".
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+index 6dfc9de138..a83db595a5 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md
+@@ -25,3 +25,9 @@ Stacked on #8000 → #7999 → #7998 → main; all hand-offs. Block 04 = the two
+ Stacked on #8002 → #8000 → #7999 → #7998 → main; all hand-offs. Block 05 = the monotone-order class: one formation law for every linear extension of the product order (every rule); rows and columns path chains; the 2×2 corner law with corner independence; no right/down turning staircase is first-order Markov in its site values (proved for every nonconstant positive orbit triple under the declared product-rule monotone law); opposite corner classes give the same finite-rectangle law, with two distinct laws only at the executed 2×3 triples; the snake keeps rows and can lose column chains (column 0 survives on 3×3; on the executed 4×3 no column is a chain). Lens before the primary caught the supervisor's own wrong snake control. Historical checker: FIX FIRST on one forbidden mechanism sentence (false; deleted), nothing refuted in the theorems. Lock released.
+ 
+ Current source review found five further P2 groups, corrected in the canonical note and runner with their disposition in REVIEW_HISTORY.md. Same-session confirmation is pending; this appendix records an open review handoff.
++
++## 2026-09-16 block 30 opened for review (supervisor; owner: "take the six-axis threshold next")
++Independent PR against `main` (`6dda46fc1a`); parent on `main`: block 01. Block 30 = the six-axis formation threshold lifted by a two-level domination: seed noise `d_1` when no predecessor dissents, amplification noise `max(d_2, d_3)` when exactly one does (T1); block 25's explanation tree extended with amplified nodes inside the clusters (an arrow to their single dissenting predecessor; bad pairs cost one unit of span; bad amplified poles kept), `forks = |S| − 1`, `E ≤ 3(|S| − 1) + 2|A|` (T2, executed on `4290` configurations, worst use `2/3`); the count with amplification arrows in the arrow slots, `P ≤ ε₁ R(t + ε₂/t², ε₁/t³)` (T3); exact certificates: `p ≥ 4165` at `(p, 1, 2)`, `2085` at `(p, 1, 1)`, `8330` at `(p, 2, 4)`, `6247` at `(p, 1, 3)` — a factor `69` below block 25 on every line (T4); the route's ceiling `ε₂ < 256/531441` reached (`p > 4150` on `(p, 1, 2)`) (T5). Remaining factor `380` to the located `11`: the bad-pair allowance (a proof of `E ≤ 3(|S| − 1) + |A|` would give `p ≈ 500`), the union bound's overcounting of amplification sub-structures (`4/27` against `1/3`), the tree-of-trees route blocked by overlaps. Runner 20 checks, 11 mutations in-family, exact. Refuting pass: coupled simulation with shared uniforms (no violation in `2.5·10⁷` updates; the domination loose near the transition — the automaton disorders at `p = 12` where the law keeps `93 %`), an independent graph implementation, the certificates' exact margins, the domain edge bisected. Gates: pipeline ×2, changed-evidence, `audit_lint --strict`, `git diff --check`, vocabulary lint clean. Next: the queue refresh at block 30 opening.
++
++## 2026-09-16 block 30 opened for review as PR #8174 (supervisor)
++PR #8174 (base `main`, independent). Records: `RESULTS_block30.md`, `CHECKER_block30_findings.md`, `CLAIM_STATUS_CERTIFICATE_block30.md`, `GOAL_block30.md`; specs with outputs. Campaign PRs open: blocks 12–30 (#8146–#8158, #8168, #8170–#8174), none merged, none commented. The queue at block 30 opening holds the sharper bad-pair budget (`p ≈ 500`), the overlap-free tree of trees (`p ≈ 200`) and the cluster count for the amplification part; each needs more than the window's remaining hours and none has a route in hand.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+index 74d2f60bae..af4651b37c 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md
+@@ -78,3 +78,12 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
+ 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
+ 4. **The silent triples by a non-criterion route** (unchanged; heavy).
+ 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
++
++## Refresh at block 30 opening (2026-09-16)
++
++Block 30 opened for review (independent PR against main): the six-axis formation threshold lifted by a factor `69` on every line (`p ≥ 4165` at `(p, 1, 2)`) through the two-level domination, and the route's ceiling reached. The remaining factor `380` to the located strength is now attributed to named steps. Ranked next:
++
++1. **The sharper bad-pair budget `E ≤ 3(|S| − 1) + |A|`** — executed worst `2/3`; a proof needs a refinement with a bad amplified pole to keep at most one other pole, or a finer potential; would give `p ≈ 500` — medium-hard.
++2. **The overlap-free tree of trees** — fresh explanation trees under amplified leaves with weight `ε₂` and no bad pairs; the obstacle is overlaps between sub-trees (cycles through forks); would give `p ≈ 200` — medium-hard.
++3. **Counting the amplification part by clusters** — the union bound over sub-structures caps the amplification at `ε₂ < 4/27` while the branching dies out below `1/3`; a cluster-expansion-type count would move the ceiling — hard.
++4. **A proof of the loss of memory at strong coupling for the sphere formation law; spin-wave theory as a theorem; the torus memory time** — hard; unchanged.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block30.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block30.md
+new file mode 100644
+index 0000000000..e52c569c4a
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block30.md
+@@ -0,0 +1,17 @@
++# RESULTS — block 30: the six-axis formation threshold lifted by a two-level domination — seeds and amplified nodes in the explanation tree; `p ≥ 4165` at `(p, 1, 2)` from `285718`; the route's ceiling (2026-09-16)
++
++**Deliverables (branch `physics-loop/admissibility-induced-law-block30-six-axis-threshold-two-level-domination-amplified-nodes-20260916`, independent PR against `main` at `6dda46fc1a`; parent on `main`: block 01):** the note `docs/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED_NODES_IN_THE_EXPLANATION_TREE_BOUNDED_THEOREM_NOTE_2026-09-16.md`; the runner `scripts/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_09_16.py` (20 checks, 11 mutations, exact, two seconds; the extended construction embedded and executed exhaustively on small cones); the pinned cache; the controls (`specs/supervisor_control_block30_core.py` — the extended construction — `..._construction.py`, `..._scan.py`, `..._certify.py`, `..._budget.py`) and the refuting pass (`specs/supervisor_control_block30_refuter.py`) with outputs; `GOAL_block30.md`; `CHECKER_block30_findings.md`; this record. Blocks 06–29 remain open as PRs #8034, #8035, #8138–#8142, #8146–#8158, #8168, #8170–#8173.
++
++**Why this block.** The owner (2026-09-16, evening): "take the six-axis threshold next." Block 25 proves `p ≥ 285718` at `(p, 1, 2)`; block 28 locates the strength at `p ∈ (10.5, 11)`. Block 25's count is at its own edge; the domination step (block 12's worst-case noise `≈ 2/p`) is the loose one, since in the ordered state a site with three agreeing predecessors dissents only with probability `d_1 ≈ 33/p³`.
++
++## Result, in one paragraph
++The formation law's dissent from the all-`a` plane is dominated by a two-level noisy majority automaton: seed noise `ε₁ = d_1` when no predecessor dissents, amplification noise `ε₂ = max(d_2, d_3)` when exactly one does, majority otherwise (T1). Block 25's explanation tree extends to carry amplified nodes inside its clusters, each with an arrow to its single dissenting predecessor; the potential loses one unit whenever an amplified node is a pole for the charge along its own arrow (a bad pair), and the accounting closes with `forks = |S| − 1`, `E ≤ 3(|S| − 1) + 2|A|` (T2; executed on `4290` configurations, the executed worst use of the allowance being `2/3` of an excuse arrow per amplified node). The same generating-function count applies with the amplification arrows in the arrow slots: `P(η'_x = 1) ≤ ε₁ R(t + ε₂/t², ε₁/t³)` (T3), and exact rational super-solutions give the ordered phase for `p ≥ 4165` at `(p, 1, 2)`, `2085` at `(p, 1, 1)`, `8330` at `(p, 2, 4)`, `6247` at `(p, 1, 3)` — a factor `69` below block 25 on every line (T4). The route's ceiling is exact: the recursion's domain ends at `x = 4/27`, so it needs `ε₂ < 256/531441`, which on `(p, 1, 2)` fails for `p ≤ 4150` (T5). The remaining factor `380` to the located strength sits in the bad-pair allowance (`2` excuse arrows per amplified pole against an executed `2/3`; a proof of `1` would give `p ≈ 500`) and in the union bound's overcounting of sub-structures (the amplification part is finite only below `4/27` while its branching dies out below `1/3`); the tree-of-trees route to `p ≈ 200` is blocked by overlaps.
++
++## Certificate
++- Runner: `TOTAL: PASS=20 FAIL=0`; 11 mutations each in its family; no floating-point literal or conversion; authors' names only in the allowed sections.
++- Controls: the extended construction on `4290` configurations with every budget; the scan finding the region's edge at `4166` on `(p, 1, 2)` and its coincidence with the ceiling; the certificates found along the Jacobian's dominant eigenvector at spectral radius `0.99`–`0.998` and verified exactly (margins `10⁻⁸`–`10⁻⁷`); the budget measurement.
++- Refuting pass (`CHECKER_block30_findings.md`): the six-axis law and the two-level automaton coupled through shared uniforms on a `128²` plane for `1500` levels at `p = 12, 30, 200`: no violation of `ξ ≤ η'` in `2.5·10⁷` site updates; the dissent densities `1.6·10⁻³` and `4.4·10⁻⁶` at `p = 30, 200` against the seed-plus-branching estimate `ε₁/(1 − 3ε₂)` (`1.56·10⁻³`, `4.3·10⁻⁶`), and at `p = 12` the six-axis law's `0.067` against the automaton's `1.0` (the domination is loose near the transition); an independent graph implementation passing all tree checks on `443` random trees; the certificates' fixed points in floating point and the exact margins; the domain edge `0.148148 = 4/27` by bisection.
++- Claim type `bounded_theorem`; status `bounded-support`; trace `upstream_support`; audit required.
++
++## Not claimed
++The true strength (located `p ∈ (10.5, 11)`); the sharper bad-pair budget `E ≤ 3(|S| − 1) + |A|` (executed, not proved); the tree-of-trees route; other menus or orders; any reading, rule or coupling as physical.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+index 08d17f0940..92af697037 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md
+@@ -199,3 +199,16 @@ executed against the four declared inputs on current main. The original
+ 23-mutation census and historical pipeline receipts are not claimed as
+ fresh checks. Original-reviewer confirmation is pending; no audit status is
+ applied, and only the coordinator may perform authorized integration.
++
++## block 30 — V1-V5 (supervisor, 2026-09-16)
++- V1: the owner's direction ("take the six-axis threshold next"); the queue's first item; the gap `285718` proved against `11` located at `(p, 1, 2)`.
++- V2: the lens pass in `GOAL_block30.md` ("why not the count" — at its edge; the domination is loose by `10⁴` at the located strength; "is the amplified node a noise node" — paid `ε₂` inside the cluster, never a leaf; "the tree-of-trees alternative" — blocked by overlaps, recorded; names in the allowed sections).
++- V3: T1–T5 proved; the skeleton executed exactly (20 checks, 11 mutations); the refuting pass agreed on five routes; one tooling slip folded.
++- V4: no reading, rule or coupling selected; the true strength not claimed; the sharper budget and the tree of trees marked open with their obstacles.
++- V5: consumers named — the campaign's decision record (the six-axis formation region); #8093's assembly; the queue.
++
++## block 30 — supervisor controls, primary, refuting pass and fold (2026-09-16)
++Analysis: at `p = 11` the worst-case noise map is `0.26` while the aligned-triple deviation is `0.024`, so the domination, not the count, holds the slack. Controls: block 25's construction extended with amplified nodes (`supervisor_control_block30_core.py`) and run on `4290` configurations with every budget (`..._construction.py`; executed worst `(E − 3(|S| − 1))/|A| = 2/3`, `..._budget.py`); the region's edge scanned (`4166` on `(p, 1, 2)`, `..._scan.py`) and found to coincide with the ceiling `4/27`; the certificates along the Jacobian's dominant eigenvector at spectral radius `0.99`–`0.998`, verified exactly (`..._certify.py`). Primary: the note and the runner (20 checks, 11 mutations; "certified", "convergent", "converges" and "subcritical" removed from the theorem text at the scan). Refuting pass (`CHECKER_block30_findings.md`): the coupled simulation with shared uniforms, the independent graph implementation, the exact margins, the bisected edge — no findings against the theorems; the domination's looseness near the transition measured. Author checks only; independent review pending.
++
++## block 30 — conformance gate (REVIEW_LOOP_PR_CONFORMANCE_SPEC sections 1-12, author pass, 2026-09-16)
++1 self-containment: PASS — inputs: this note, the axioms memo, block 01's note, all on `main` at `6dda46fc1a`; the construction restated and re-proved in extended form; blocks 12, 25, 28 evidence addresses. 2 cache/execution: PASS. 3 claim-scope honesty: PASS — the ceiling stated as the route's; the true strength not claimed; the open budgets named with their obstacles. 4 N-gate: PASS (N1–N8; N5 lines in the runner). 5–7: PASS. 8: run at the gates. 9–11: PASS. 12: run before the PR.
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+index e166420207..0790f27349 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml
+@@ -105,3 +105,13 @@ source_review_correction:
+ # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
+ # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
+ # audit_status: "unset; no audit invoked or verdict applied by this source correction"
++# ---------------------------------------------------------------- block 30 close (2026-09-16)
++# block: 30
++# branch: physics-loop/admissibility-induced-law-block30-six-axis-threshold-two-level-domination-amplified-nodes-20260916 (independent; base origin/main 6dda46fc1a; blocks 06-29 are open PRs #8034, #8035, #8138-#8142, #8146-#8158, #8168, #8170-#8173)
++# pr_status: opened for review — PR #8174 (base = main; https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8174); hand-off; never merged by the campaign; not a main landing
++# final_certificate: "TOTAL: PASS=20 FAIL=0; 11 mutations, census 11/11 in-family; refuting pass consistent on five routes; gates: see HANDOFF.md"
++# seats: "supervisor-run: analysis of the loose step (the domination, not the count) -> controls (the extended construction on 4290 configurations; the scan; the certificates; the budget) -> contract with a lens pass -> primary (T1-T5, runner) -> refuting pass (coupled simulation with shared uniforms; independent graph checks; exact margins; bisected edge) -> fold (a crashing mutation made to fail a check)"
++# review_findings: "two-level domination (seed d_1, amplification max(d_2,d_3)); extended explanation tree with amplified nodes, forks = |S|-1, E <= 3(|S|-1) + 2|A|; P <= eps1 R(t + eps2/t^2, eps1/t^3); p >= 4165 at (p,1,2) (was 285718), 2085/8330/6247 on the other lines; ceiling eps2 < 256/531441 reached; remaining factor 380 to the located 11 attributed to the bad-pair allowance and the union bound's overcounting"
++# strongest_unresolved_proof_obligation: "E <= 3(|S|-1) + |A| (executed worst 2/3; would give p ~ 500); the tree-of-trees route without overlaps (p ~ 200); a count by clusters rather than sub-structures for the amplification part (branching threshold 1/3 against 4/27)"
++# next_exact_action: "queue refresh 2026-09-16 (block 30 opening): the sharper bad-pair budget; the overlap-free tree of trees; the strong-coupling proof for the sphere formation law; spin-wave theory as a theorem; the torus memory time"
++# lock: held (owner: keep going, the six-axis threshold next)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+index 8f432e2cd2..6de7296445 100644
+--- a/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md
+@@ -63,3 +63,14 @@ reachability_to_target: supports
+ artifact_role: theorem
+ next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
+ ```
++
++# Trace gate — block 30, at PR opening (2026-09-16)
++```yaml
++trace_class: upstream_support
++target_claim_id: null
++target_blocker_text: "the campaign queue's first item after block 28: the six-axis order threshold toward the located strength"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem
++next_trace_action: "p >= 4165 at (p,1,2) (factor 69 on every line) by the two-level domination; the route's ceiling reached. Next: the sharper bad-pair budget (p ~ 500); the overlap-free tree of trees (p ~ 200); a cluster count for the amplification part. Consumers: the campaign's decision record; #8093's assembly"
++```
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_budget.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_budget.out.txt
+new file mode 100644
+index 0000000000..68058cff6a
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_budget.out.txt
+@@ -0,0 +1 @@
++trees with A-nodes: 2067; worst (E - 3(|S|-1))/|A| = 2/3 = 0.667 (the proved budget allows 2); by |A|: {1: 0.0, 2: 0.5, 3: 0.6666666666666666, 4: 0.5, 5: 0.2, 6: 0.0, 7: 0.2857142857142857, 8: 0.25, 9: 0.0, 10: -0.4, 11: -0.36363636363636365, 12: -0.4166666666666667, 13: -1.0, 14: -1.6428571428571428}
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_budget.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_budget.py
+new file mode 100644
+index 0000000000..cad7b8eba3
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_budget.py
+@@ -0,0 +1,17 @@
++import sys, os, random
++sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
++import supervisor_control_block30_core as core
++from itertools import product, combinations
++from fractions import Fraction as F
++x = (0,0,0); random.seed(31); worst = F(-10); cnt = 0; hist = {}
++sites2 = core.cone(x, 2); configs = [({z: b for z, b in zip(sites2, bits) if b}, sites2) for bits in product((0,1), repeat=len(sites2))]
++for t in range(2500):
++    d = random.choice((4,5,6,7,8,9,10)); dens = random.choice((10,20,35,50)); s = core.cone(x, d); configs.append(({z: 1 for z in s if random.randrange(100) < dens}, s))
++for zeta, sites in configs:
++    eta = core.run_automaton(sites, zeta)
++    if eta[x] != 1: continue
++    ex = core.Explainer(eta, zeta); nodes, edges, S, A, refs, bad = ex.explain(x)
++    E = sum(1 for k in edges.values() if k == "arrow"); nS, nA = len(S), len(A)
++    if nA > 0:
++        cnt += 1; excess = E - 3*(nS - 1); worst = max(worst, F(excess, nA)); hist[nA] = max(hist.get(nA, F(-10)), F(excess, nA))
++print(f"trees with A-nodes: {cnt}; worst (E - 3(|S|-1))/|A| = {worst} = {float(worst):.3f} (the proved budget allows 2); by |A|: { {k: float(v) for k, v in sorted(hist.items())} }")
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_certify.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_certify.out.txt
+new file mode 100644
+index 0000000000..233a899e35
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_certify.out.txt
+@@ -0,0 +1,9 @@
++(p,1,2): least certified p = 4165: t = 99/1000, x = 0.14804, y = 4.707e-07, spectral radius 0.998, R-bar = 168.4428, bound eps1 R-bar = 7.693e-08; eps1 = 33/72251192158 , eps2 = 8341/17355566
++    certificate D,U,F = 56694252249173/500000000000, 3279872914431/1000000000000, 168429466648591/1000000000000
++(p,1,1): least certified p = 2085: t = 49/500, x = 0.14801, y = 5.861e-07, spectral radius 0.993, R-bar = 131.3215, bound eps1 R-bar = 7.244e-08; eps1 = 1/1812792826 , eps2 = 2089/4349314
++    certificate D,U,F = 88632394933177/1000000000000, 3254100818939/1000000000000, 131311435970231/1000000000000
++(p,2,4): least certified p = 8330: t = 99/1000, x = 0.14804, y = 4.707e-07, spectral radius 0.998, R-bar = 168.4428, bound eps1 R-bar = 7.693e-08; eps1 = 33/72251192158 , eps2 = 8341/17355566
++    certificate D,U,F = 56694252249173/500000000000, 3279872914431/1000000000000, 168429466648591/1000000000000
++(p,1,3): least certified p = 6247: t = 99/1000, x = 0.14803, y = 4.608e-07, spectral radius 0.994, R-bar = 145.0395, bound eps1 R-bar = 6.485e-08; eps1 = 109/243789231332 , eps2 = 18763/39043772
++    certificate D,U,F = 24445325573453/250000000000, 3264868815393/1000000000000, 9064364177089/62500000000
++ceiling: max over v >= 1 of (v-1)/v^3 = 4/27 = 4/27; max_t t^2(4/27 - t) = 256/531441 = 0.0004817091643286837
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_certify.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_certify.py
+new file mode 100644
+index 0000000000..a3cf6c4003
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_certify.py
+@@ -0,0 +1,48 @@
++# Exact certificates for the two-level route: at (p, q, r) with eps1 = d1, eps2 = max(d2, d3) (exact rationals), choose rational t;
++# x = t + eps2/t^2, y = eps1/t^3; find a rational super-solution (D, U, F) of the recursion along the Perron direction; report the least
++# integer p at which a certificate is found, with R-bar and the bound eps1 * R-bar.  Also: the empirical budget (E - 3(|S|-1))/|A|.
++import numpy as np, sys, os
++from fractions import Fraction as F
++sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
++def devs(p, q, r):
++    p, q, r = F(p), F(q), F(r)
++    return (1 - p**3/(p**3 + q**3 + 4*r**3), 1 - p**2*q/(p*q*(p+q) + 4*r**3), 1 - p**2*r/(r*(p**2+q**2) + r**2*(p+q) + 2*r**3))
++def rhs(x, y, D, U, Fv):
++    return ((1+x*U)**2*(1+3*x*D)*(1+y*Fv)**6, (1+x*U)**3*(1+y*Fv)**6, (1+x*U)**3*(1+3*x*D)*(1+y*Fv)**5)
++def certificate(x, y):
++    xf, yf = float(x), float(y); D = U = Fv = 1.0
++    for i in range(20000):
++        D2, U2, F2 = (1+xf*U)**2*(1+3*xf*D)*(1+yf*Fv)**6, (1+xf*U)**3*(1+yf*Fv)**6, (1+xf*U)**3*(1+3*xf*D)*(1+yf*Fv)**5
++        if max(D2, U2, F2) > 1e9: return None
++        if abs(D2-D) + abs(U2-U) + abs(F2-Fv) < 1e-14: D, U, Fv = D2, U2, F2; break
++        D, U, Fv = D2, U2, F2
++    v = np.array([D, U, Fv]); h = 1e-7; J = np.zeros((3, 3))
++    def rf(w): return np.array([(1+xf*w[1])**2*(1+3*xf*w[0])*(1+yf*w[2])**6, (1+xf*w[1])**3*(1+yf*w[2])**6, (1+xf*w[1])**3*(1+3*xf*w[0])*(1+yf*w[2])**5])
++    for j in range(3):
++        e = np.zeros(3); e[j] = h; J[:, j] = (rf(v+e) - rf(v-e))/(2*h)
++    w, V = np.linalg.eig(J); k = np.argmax(w.real); vec = np.abs(V[:, k].real); vec /= vec.max()
++    for dl in (1e-5, 3e-5, 1e-4, 3e-4, 1e-3, 3e-3, 1e-2, 3e-2):
++        cand = v + dl*vec; Db, Ub, Fb = (F(round(c*10**12), 10**12) for c in cand)
++        r = rhs(x, y, Db, Ub, Fb)
++        if Db >= r[0] and Ub >= r[1] and Fb >= r[2]:
++            Rbar = (1+x*Ub)**3*(1+3*x*Db)*(1+y*Fb)**6; return (Db, Ub, Fb, Rbar, w.real[k])
++    return None
++def best_cert(p, q, r):
++    d1, d2, d3 = devs(p, q, r); e1, e2 = d1, max(d2, d3)
++    for tn in range(60, 140):
++        t = F(tn, 1000); x = t + e2/t**2; y = e1/t**3
++        if x >= F(4, 27): continue
++        c = certificate(x, y)
++        if c: return t, x, y, c
++    return None
++for (q, r) in ((1, 2), (1, 1), (2, 4), (1, 3)):
++    lo, hi = 1000, 20000
++    while lo < hi:
++        mid = (lo+hi)//2
++        if best_cert(mid, q, r): hi = mid
++        else: lo = mid + 1
++    t, x, y, (Db, Ub, Fb, Rbar, rho) = best_cert(lo, q, r); d1, d2, d3 = devs(lo, q, r)
++    print(f"(p,{q},{r}): least certified p = {lo}: t = {t}, x = {float(x):.5f}, y = {float(y):.3e}, spectral radius {rho:.3f}, R-bar = {float(Rbar):.4f}, bound eps1 R-bar = {float(d1*Rbar):.3e}; eps1 = {d1} , eps2 = {max(d2,d3)}")
++    print(f"    certificate D,U,F = {Db}, {Ub}, {Fb}")
++import sympy as sp
++v = sp.symbols("v", positive=True); print("ceiling: max over v >= 1 of (v-1)/v^3 =", sp.maximum((v-1)/v**3, v, sp.Interval(1, sp.oo)), "= 4/27; max_t t^2(4/27 - t) =", sp.maximum(sp.Symbol('t')**2*(sp.Rational(4,27)-sp.Symbol('t')), sp.Symbol('t'), sp.Interval(0, sp.Rational(4,27))), "=", float(F(256, 531441)))
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_construction.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_construction.out.txt
+new file mode 100644
+index 0000000000..c6e6dae36c
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_construction.out.txt
+@@ -0,0 +1 @@
++4290 explained configurations (exhaustive depth-2, depth-3 with <= 4 noise, 1500 random): all checks pass: True; trees with A-nodes: 2692; max |A| = 13; total bad pairs 4622; worst (E - 2|A|)/(|S| - 1) = 4/3 = 1.333 (budget 3)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_construction.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_construction.py
+new file mode 100644
+index 0000000000..418e4bf45a
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_construction.py
+@@ -0,0 +1,42 @@
++"""Control, block 30: the extended explanation tree with amplified nodes, executed exhaustively on the depth-2 cone, on all depth-3
++configurations with <= 4 noise sites and on random cones; checks: tree; S-nodes are seeds (0 one-preds), A-nodes have exactly one
++1-pred; <= 1 down-arrow per node; forks = |S| - 1; refinements <= |S| - 1 + bad_total; bad_total <= |A|; E <= 3(|S| - 1) + 2|A|."""
++import sys, os, random
++sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
++import supervisor_control_block30_core as core
++from itertools import product, combinations
++from fractions import Fraction as F
++x = (0, 0, 0)
++def check(zeta, sites):
++    eta = core.run_automaton(sites, zeta)
++    if eta[x] != 1: return None
++    ex = core.Explainer(eta, zeta)
++    nodes, edges, S, A, refs, bad = ex.explain(x)
++    ok = core.check_tree(nodes, edges, x, ex)
++    downs = {v: 0 for v in nodes}; E = Fk = Am = 0
++    for e, kind in edges.items():
++        a, b = tuple(e)
++        if kind == "fork": Fk += 1; continue
++        upper = a if b in core.preds(a) else b; downs[upper] += 1
++        if kind == "arrow": E += 1
++        else: Am += 1
++    nS, nA = len(S), len(A)
++    ok = ok and all(z in ex.noise for z in S) and all(z in ex.amp for z in A) and max(downs.values()) <= 1
++    ok = ok and {v for v in nodes if downs[v] == 0} == S and Am == nA
++    ok = ok and Fk == nS - 1 and refs <= nS - 1 + bad and bad <= nA and E <= 3 * (nS - 1) + 2 * nA
++    return ok, nS, nA, E, Fk, bad, refs
++random.seed(30)
++sites2 = core.cone(x, 2); sites3 = core.cone(x, 3)
++configs = [({z: b for z, b in zip(sites2, bits) if b}, sites2) for bits in product((0, 1), repeat=len(sites2))]
++for k in range(1, 5):
++    for combo in combinations(sites3, k): configs.append(({z: 1 for z in combo}, sites3))
++for t in range(1500):
++    d = random.choice((3, 4, 5, 6, 7, 8)); dens = random.choice((10, 20, 35, 50))
++    s = core.cone(x, d); configs.append(({z: 1 for z in s if random.randrange(100) < dens}, s))
++allok = True; n = 0; maxA = 0; worstE = F(0); withA = 0; badsum = 0
++for zeta, sites in configs:
++    r = check(zeta, sites)
++    if r is None: continue
++    ok, nS, nA, E, Fk, bad, refs = r; n += 1; allok = allok and ok; maxA = max(maxA, nA); withA += (nA > 0); badsum += bad
++    if nS >= 2: worstE = max(worstE, F(E - 2 * nA, nS - 1))
++print(f"{n} explained configurations (exhaustive depth-2, depth-3 with <= 4 noise, 1500 random): all checks pass: {allok}; trees with A-nodes: {withA}; max |A| = {maxA}; total bad pairs {badsum}; worst (E - 2|A|)/(|S| - 1) = {worstE} = {float(worstE):.3f} (budget 3)")
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_core.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_core.py
+new file mode 100644
+index 0000000000..b81523f04d
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_core.py
+@@ -0,0 +1,320 @@
++"""Core: the level automaton (three-predecessor majority with one-sided noise) and the explanation-tree construction
++(clusters, cause graph, spanning lemma, refinement) in Z^3 level time. Exact rationals for the functionals M_k = z_k - tau/3."""
++from fractions import Fraction as F
++from itertools import product, combinations
++from collections import deque
++
++E = [(1, 0, 0), (0, 1, 0), (0, 0, 1)]
++FORK_OFFSETS = [tuple(E[a][i] - E[b][i] for i in range(3)) for a in range(3) for b in range(3) if a != b]
++
++
++def add(a, b):
++    return (a[0] + b[0], a[1] + b[1], a[2] + b[2])
++
++
++def sub(a, b):
++    return (a[0] - b[0], a[1] - b[1], a[2] - b[2])
++
++
++def level(z):
++    return z[0] + z[1] + z[2]
++
++
++def M(k, z):
++    return F(z[k]) - F(level(z), 3)
++
++
++def preds(z):
++    return [sub(z, E[j]) for j in range(3)]
++
++
++def is_fork(u, v):
++    return sub(u, v) in FORK_OFFSETS
++
++
++def cone(x, depth):
++    out = []
++    for d1 in range(depth + 1):
++        for d2 in range(depth + 1 - d1):
++            for d3 in range(depth + 1 - d1 - d2):
++                out.append(sub(x, (d1, d2, d3)))
++    return out
++
++
++def run_automaton(sites, zeta):
++    """sites: list of space-time points closed under predecessors within the window (points outside are 0)."""
++    eta = {}
++    for z in sorted(sites, key=level):
++        ps = [eta.get(p, 0) for p in preds(z)]
++        maj = 1 if sum(ps) >= 2 else 0
++        eta[z] = 1 if (maj or zeta.get(z, 0)) else 0
++    return eta
++
++
++class Explainer:
++    def __init__(self, eta, zeta):
++        self.eta = eta
++        self.zeta = zeta
++        self.ones = {z for z, v in eta.items() if v == 1}
++        npred = {z: sum(eta.get(p, 0) for p in preds(z)) for z in self.ones}
++        self.noise = {z for z in self.ones if npred[z] == 0}          # S-nodes: seeds (no 1-predecessor)
++        self.amp = {z for z in self.ones if npred[z] == 1}            # A-nodes: amplified (exactly one 1-predecessor)
++        assert all(zeta.get(z, 0) == 1 for z in self.noise | self.amp)
++        self.amp_dir = {z: [j for j in range(3) if eta.get(preds(z)[j], 0) == 1][0] for z in self.amp}
++        # excuse pairs for processed ones: lexicographically first pair of indices among 1-predecessors
++        self.exc = {}
++        for z in self.ones:
++            if z in self.noise or z in self.amp:
++                continue
++            idx = [j for j in range(3) if eta.get(preds(z)[j], 0) == 1]
++            assert len(idx) >= 2, (z, idx)
++            self.exc[z] = (idx[0], idx[1])
++        self._cluster_cache = {}
++
++    def excuse_k(self, v, k):
++        """excuse of pole v for charge k: a processed pole's winning-pair member with index != k; an A-pole's single 1-predecessor."""
++        if v in self.amp:
++            w = preds(v)[self.amp_dir[v]]
++            assert M(k, w) - M(k, v) == (F(1, 3) if self.amp_dir[v] != k else F(-2, 3))
++            return w
++        i, j = self.exc[v]
++        cand = [a for a in (i, j) if a != k]
++        a = min(cand)
++        w = preds(v)[a]
++        assert M(k, w) - M(k, v) == F(1, 3)
++        return w
++
++    def is_bad(self, v, k):
++        return v in self.amp and self.amp_dir[v] == k
++
++    def arrows_down(self, z):
++        """arrows of the extended arrow graph: a processed or amplified 1-site to its 1-predecessors (all of them; one for an A-node)."""
++        if z in self.noise or z not in self.ones:
++            return []
++        return [p for p in preds(z) if p in self.ones]
++
++    def clusters_at(self, s):
++        """clusters at level s: components of the arrow graph on 1-sites with levels <= s, restricted to level s."""
++        if s in self._cluster_cache:
++            return self._cluster_cache[s]
++        pts = [z for z in self.ones if level(z) <= s]
++        parent = {z: z for z in pts}
++
++        def find(a):
++            while parent[a] != a:
++                parent[a] = parent[parent[a]]
++                a = parent[a]
++            return a
++
++        for z in pts:
++            for p in self.arrows_down(z):
++                ra, rb = find(z), find(p)
++                if ra != rb:
++                    parent[ra] = rb
++        comp = {}
++        for z in pts:
++            if level(z) == s:
++                comp.setdefault(find(z), set()).add(z)
++        cl = {}
++        for members in comp.values():
++            fs = frozenset(members)
++            for z in members:
++                cl[z] = fs
++        self._cluster_cache[s] = cl
++        return cl
++
++    def explain(self, root):
++        """Build the extended explanation tree of a 1-site root. Returns (nodes, edges, seed_nodes, amp_nodes, n_refinements, bad_total).
++        edges: frozenset -> 'arrow' (excuse), 'amp' (amplification arrow), 'fork'."""
++        assert root in self.ones
++        edges = {}
++        processed = set()
++        amp_nodes = set()
++        unproc = [(frozenset([root]), (root, root, root))]
++        refinements = 0
++        bad_total = 0
++        if root in self.noise:
++            return {root}, edges, {root}, set(), 0, 0
++
++        def incident(pt):
++            return any(pt in e for e in edges)
++
++        while True:
++            active = [(K, poles) for (K, poles) in unproc if not all(v in self.noise for v in poles)]
++            if not active:
++                break
++            K, poles = active[0]
++            unproc.remove((K, poles))
++            assert all(v not in self.noise for v in poles), "cluster with mixed noise poles"
++            s = level(next(iter(K)))
++            u = [self.excuse_k(poles[j], j) for j in range(3)]
++            bad = sum(1 for j in range(3) if self.is_bad(poles[j], j))
++            bad_total += bad
++            cl = self.clusters_at(s - 1)
++            V_K = []
++            for z in K:
++                for p in self.arrows_down(z):
++                    c = cl[p]
++                    if c not in V_K:
++                        V_K.append(c)
++            # fork edges between distinct clusters of V_K (one representative fork each)
++            fam = [("cluster", c) for c in V_K]
++            for a, b in combinations(range(len(V_K)), 2):
++                found = None
++                for w in sorted(V_K[a]):
++                    for off in FORK_OFFSETS:
++                        w2 = add(w, off)
++                        if w2 in V_K[b]:
++                            found = frozenset([w, w2])
++                            break
++                    if found:
++                        break
++                if found:
++                    fam.append(("fork", found))
++            # intersection graph on fam
++            n = len(fam)
++            adj = {i: set() for i in range(n)}
++            for i, j in combinations(range(n), 2):
++                if fam[i][0] != fam[j][0] and (fam[i][1] & fam[j][1]):   # bipartite: clusters adjacent to the forks that touch them
++                    adj[i].add(j); adj[j].add(i)
++            term = []
++            for j in range(3):
++                ti = [i for i in range(n) if fam[i][0] == "cluster" and u[j] in fam[i][1]]
++                assert len(ti) == 1, (u[j], ti)
++                term.append(ti[0])
++            # minimal tree connecting the three terminals: shortest paths then prune
++            def bfs_path(src, dsts):
++                prev = {src: None}
++                dq = deque([src])
++                while dq:
++                    a = dq.popleft()
++                    if a in dsts:
++                        path = []
++                        while a is not None:
++                            path.append(a); a = prev[a]
++                        return path[::-1]
++                    for b in adj[a]:
++                        if b not in prev:
++                            prev[b] = a; dq.append(b)
++                raise AssertionError("cause graph not connected")
++            p12 = bfs_path(term[0], {term[1]})
++            tree_nodes = set(p12)
++            p3 = bfs_path(term[2], tree_nodes)
++            tree_nodes |= set(p3)
++            tedges = set()
++            for path in (p12, p3):
++                for a, b in zip(path, path[1:]):
++                    tedges.add(frozenset([a, b]))
++            # prune non-terminal leaves
++            changed = True
++            while changed:
++                changed = False
++                for i in list(tree_nodes):
++                    deg = sum(1 for e in tedges if i in e)
++                    if deg <= 1 and i not in term:
++                        tree_nodes.discard(i)
++                        tedges = {e for e in tedges if i not in e}
++                        changed = True
++            tnbr = {i: set() for i in tree_nodes}
++            for e in tedges:
++                a, b = tuple(e)
++                tnbr[a].add(b); tnbr[b].add(a)
++            # reduced point sets and pole assignment
++            def inter_point(i, j):
++                return min(fam[i][1] & fam[j][1])
++            reduced = {}
++            for i in tree_nodes:
++                pts = set()
++                for j in range(3):
++                    if term[j] == i:
++                        pts.add(u[j])
++                for nb in tnbr[i]:
++                    pts.add(inter_point(i, nb))
++                reduced[i] = pts
++            # direction from i toward terminal term[j] within the tree
++            def next_toward(i, target):
++                if i == target:
++                    return None
++                prev = {i: None}
++                dq = deque([i])
++                while dq:
++                    a = dq.popleft()
++                    if a == target:
++                        b = a
++                        while prev[b] != i:
++                            b = prev[b]
++                        return b
++                    for b in tnbr[a]:
++                        if b not in prev:
++                            prev[b] = a; dq.append(b)
++                raise AssertionError
++            pole_of = {}
++            for i in tree_nodes:
++                pl = []
++                for j in range(3):
++                    if u[j] in reduced[i]:
++                        pl.append(u[j])
++                    else:
++                        nb = next_toward(i, term[j])
++                        pl.append(inter_point(i, nb))
++                pole_of[i] = tuple(pl)
++                assert all(pt in reduced[i] for pt in pl)
++            total = sum(M(j, pole_of[i][j]) for i in tree_nodes for j in range(3))
++            expected = sum(M(j, u[j]) for j in range(3))
++            assert total == expected, ("spanning lemma failed", total, expected)
++            assert expected == sum(M(j, poles[j]) for j in range(3)) + 1 - bad
++            # new clusters and forks
++            for i in tree_nodes:
++                if fam[i][0] == "cluster":
++                    unproc.append((fam[i][1], pole_of[i]))
++                else:
++                    a, b = tuple(fam[i][1])
++                    edges[frozenset([a, b])] = "fork"
++            # kept poles: incident ones, bad A-poles (forced), or the first pole if none
++            kept = {}
++            for j in range(3):
++                v = poles[j]
++                if (incident(v) or self.is_bad(v, j)) and v not in kept:
++                    kept[v] = j
++            if not kept:
++                kept[poles[0]] = 0
++            for v, j in kept.items():
++                if v in self.amp:
++                    edges[frozenset([v, preds(v)[self.amp_dir[v]]])] = "amp"
++                    amp_nodes.add(v)
++                else:
++                    edges[frozenset([v, u[j]])] = "arrow"
++                    processed.add(v)
++            refinements += 1
++        noise_nodes = set()
++        for (K, poles) in unproc:
++            assert len(K) == 1 and all(v in self.noise for v in poles)
++            noise_nodes |= set(K)
++        nodes = set(processed) | amp_nodes | noise_nodes
++        for e in edges:
++            nodes |= set(e)
++        return nodes, edges, noise_nodes, amp_nodes, refinements, bad_total
++
++
++def check_tree(nodes, edges, root, explainer):
++    """the point graph must be a tree, contain the root, use only arrows/forks of G, noise nodes are noise sites."""
++    ok = root in nodes
++    ok = ok and len(edges) == len(nodes) - 1
++    # connectivity
++    nb = {v: set() for v in nodes}
++    for e, kind in edges.items():
++        a, b = tuple(e)
++        nb[a].add(b); nb[b].add(a)
++        if kind in ("arrow", "amp"):
++            ok = ok and (b in preds(a) or a in preds(b))
++        else:
++            ok = ok and is_fork(a, b)
++    seen = {root}; dq = deque([root])
++    while dq:
++        a = dq.popleft()
++        for b in nb[a]:
++            if b not in seen:
++                seen.add(b); dq.append(b)
++    ok = ok and seen == nodes
++    ok = ok and all(z in explainer.ones for z in nodes)
++    return ok
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_refuter.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_refuter.out.txt
+new file mode 100644
+index 0000000000..024eade15f
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_refuter.out.txt
+@@ -0,0 +1,15 @@
++(a)/(b) coupled runs at (p,1,2): the six-axis law (values 0..5, aligned start 0) and the two-level automaton eta' with the SAME uniforms; L=128, T=1500
++  p=12: eps1=1.874e-02 eps2=2.340e-01; domination violations 0 of 24576000; dissent density xi 6.715e-02, eta' 1.000e+00, eps1/(1-3 eps2) = 6.291e-02   (1s)
++  p=30: eps1=1.221e-03 eps2=7.312e-02; domination violations 0 of 24576000; dissent density xi 1.594e-03, eta' 1.609e-03, eps1/(1-3 eps2) = 1.564e-03   (1s)
++  p=200: eps1=4.125e-06 eps2=1.017e-02; domination violations 0 of 24576000; dissent density xi 4.395e-06, eta' 4.395e-06, eps1/(1-3 eps2) = 4.255e-06   (1s)
++(c) independent graph checks of the extended trees on random cones
++  443 explained trees (352 with amplified nodes): independent checks pass: True
++(d) certificates' fixed points by floating-point iteration, and the domain edge at y = 0
++  (p,1,2)=4165: x=0.14804 y=4.707e-07: fixed point (113.3885, 3.2799, 168.4295); certificate minus fixed point ('7.1e-06', '5.5e-09', '1.1e-05') (the exact inequalities are the runner's; a difference of order 1e-5 or below is the displacement or rounding)
++  (p,1,1)=2085: x=0.14801 y=5.861e-07: fixed point (88.6324, 3.2541, 131.3114); certificate minus fixed point ('-2.5e-06', '-5.9e-09', '-3.8e-06') (the exact inequalities are the runner's; a difference of order 1e-5 or below is the displacement or rounding)
++  (p,1,3)=6247: x=0.14803 y=4.608e-07: fixed point (97.7813, 3.2649, 145.0298); certificate minus fixed point ('-5.4e-06', '-7.9e-09', '-8.1e-06') (the exact inequalities are the runner's; a difference of order 1e-5 or below is the displacement or rounding)
++  exact margins at (4165,1,2): D 1.01e-08, U 7.85e-12, F 1.52e-08 (all positive: the certificate dominates the least fixed point exactly; the float iteration near spectral radius 0.99 is not resolved to 1e-6)
++  exact margins at (2085,1,1): D 4.78e-08, U 4.64e-11, F 7.15e-08 (all positive: the certificate dominates the least fixed point exactly; the float iteration near spectral radius 0.99 is not resolved to 1e-6)
++  exact margins at (8330,2,4): D 1.01e-08, U 7.85e-12, F 1.52e-08 (all positive: the certificate dominates the least fixed point exactly; the float iteration near spectral radius 0.99 is not resolved to 1e-6)
++  exact margins at (6247,1,3): D 4.07e-08, U 3.34e-11, F 6.08e-08 (all positive: the certificate dominates the least fixed point exactly; the float iteration near spectral radius 0.99 is not resolved to 1e-6)
++  domain edge at y = 0 by bisection: 0.148148 (4/27 = 0.148148)
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_refuter.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_refuter.py
+new file mode 100644
+index 0000000000..a9570b128d
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_refuter.py
+@@ -0,0 +1,99 @@
++"""Refuting pass, block 30 (independent machinery): (a) the two-level automaton eta' and the six-axis level automaton at (p, 1, 2)
++coupled through shared uniforms on a periodic plane: the domination xi <= eta' checked pointwise at every level (p = 12, 30, 200);
++(b) the dissent densities of both far below the proved region, against epsilon_1/(1 - 3 epsilon_2) (the seed-plus-branching estimate);
++(c) an independent graph implementation (numpy predecessor and sibling tests) re-checking the extended trees on random cones: arrows to
++predecessors, forks to siblings, one arrow to a predecessor per node, seeds/amplified classification, forks = |S| - 1, E <= 3(|S|-1)+2|A|;
++(d) the certificates' fixed points re-derived by floating-point iteration; the domain edge at y = 0 by bisection against 4/27."""
++import numpy as np, sys, os, random, time
++sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
++import supervisor_control_block30_core as core
++rng = np.random.default_rng(30)
++def devs(p, q, r):
++    return (1 - p**3/(p**3+q**3+4*r**3), 1 - p**2*q/(p*q*(p+q)+4*r**3), 1 - p**2*r/(r*(p**2+q**2)+r**2*(p+q)+2*r**3))
++print("(a)/(b) coupled runs at (p,1,2): the six-axis law (values 0..5, aligned start 0) and the two-level automaton eta' with the SAME uniforms; L=128, T=1500")
++for p in (12, 30, 200):
++    q, r = 1.0, 2.0; d1, d2, d3 = devs(p, q, r); e1, e2 = d1, max(d2, d3)
++    phi = np.full((6, 6), r)
++    for v in range(6): phi[v, v] = p; phi[v, v ^ 1] = q
++    L, T = 128, 1500; s = np.zeros((L, L), dtype=np.int64); eta = np.zeros((L, L), dtype=np.int64); viol = 0; dens_xi = []; dens_eta = []; t0 = time.time()
++    for t in range(1, T + 1):
++        p1, p2, p3 = s, np.roll(s, 1, 0), np.roll(s, 1, 1)
++        W = phi[:, p1] * phi[:, p2] * phi[:, p3]; W = W / W.sum(0, keepdims=True)
++        # draw the six-axis record with the uniform U so that "not a" happens iff U < 1 - W[0] (put value a = 0 at the top of the cumulative)
++        U = rng.random((L, L))
++        order = [0, 1, 2, 3, 4, 5]
++        C = np.cumsum(W, axis=0)          # C[0] = P(a); "not a" iff U >= C[0]... use U' = 1 - U for monotone coupling: xi = 1 iff U < 1 - W[0]
++        new = np.minimum(((1 - U)[None] > C).sum(0), 5)
++        xi_new = (new != 0).astype(np.int64)
++        n1 = eta + np.roll(eta, 1, 0) + np.roll(eta, 1, 1)
++        eta_new = np.where(n1 >= 2, 1, np.where(n1 == 1, (U < e2).astype(np.int64), (U < e1).astype(np.int64)))
++        viol += int((xi_new > eta_new).sum())
++        s, eta = new, eta_new
++        if t > T // 2: dens_xi.append(xi_new.mean()); dens_eta.append(eta_new.mean())
++    print(f"  p={p}: eps1={e1:.3e} eps2={e2:.3e}; domination violations {viol} of {L*L*T}; dissent density xi {np.mean(dens_xi):.3e}, eta' {np.mean(dens_eta):.3e}, eps1/(1-3 eps2) = {e1/(1-3*e2) if 3*e2 < 1 else float('inf'):.3e}   ({time.time()-t0:.0f}s)")
++print("(c) independent graph checks of the extended trees on random cones")
++E3 = np.array(core.E); FORK = np.array(core.FORK_OFFSETS)
++def is_pred(a, b): return any((np.array(a) - np.array(b) == e).all() for e in E3)
++def is_sib(a, b): return any((np.array(a) - np.array(b) == f).all() for f in FORK)
++random.seed(77); ok = True; n = 0; withA = 0
++x = (0, 0, 0)
++for trial in range(600):
++    d = random.choice((3, 4, 5, 6, 7)); dens = random.choice((15, 30, 50)); sites = core.cone(x, d)
++    zeta = {z: 1 for z in sites if random.randrange(100) < dens}
++    eta = core.run_automaton(sites, zeta)
++    if eta[x] != 1: continue
++    ex = core.Explainer(eta, zeta); nodes, edges, S, A, refs, bad = ex.explain(x); n += 1; withA += (len(A) > 0)
++    # tree: connected with |edges| = |nodes| - 1 via union-find
++    parent = {v: v for v in nodes}
++    def find(a):
++        while parent[a] != a: parent[a] = parent[parent[a]]; a = parent[a]
++        return a
++    cyc = False
++    for e, kind in edges.items():
++        a, b = tuple(e)
++        if kind == "fork": ok = ok and is_sib(a, b)
++        else: ok = ok and (is_pred(a, b) or is_pred(b, a))
++        ra, rb = find(a), find(b)
++        if ra == rb: cyc = True
++        parent[ra] = rb
++    ok = ok and (not cyc) and len(edges) == len(nodes) - 1 and len({find(v) for v in nodes}) == 1
++    downs = {v: 0 for v in nodes}; E_ = Fk = 0
++    for e, kind in edges.items():
++        a, b = tuple(e)
++        if kind == "fork": Fk += 1; continue
++        upper = a if is_pred(a, b) else b; downs[upper] += 1; E_ += (kind == "arrow")
++    def npred1(v): return sum(1 for e in E3 if eta.get(tuple(np.array(v) - e), 0) == 1)
++    ok = ok and all(npred1(v) == 0 for v in S) and all(npred1(v) == 1 for v in A) and all(npred1(v) >= 2 for v in nodes if v not in S and v not in A)
++    ok = ok and max(downs.values()) <= 1 and Fk == len(S) - 1 and E_ <= 3*(len(S)-1) + 2*len(A)
++print(f"  {n} explained trees ({withA} with amplified nodes): independent checks pass: {ok}")
++print("(d) certificates' fixed points by floating-point iteration, and the domain edge at y = 0")
++def fixed(x, y):
++    D = U = Fv = 1.0
++    for i in range(50000):
++        D2, U2, F2 = (1+x*U)**2*(1+3*x*D)*(1+y*Fv)**6, (1+x*U)**3*(1+y*Fv)**6, (1+x*U)**3*(1+3*x*D)*(1+y*Fv)**5
++        if max(D2, U2, F2) > 1e9: return None
++        if abs(D2-D)+abs(U2-U)+abs(F2-Fv) < 1e-13: return (D2, U2, F2)
++        D, U, Fv = D2, U2, F2
++    return (D, U, Fv)
++for (p, q, r, t, cert) in ((4165,1,2,0.099,(113.388504498346, 3.279872914431, 168.429466648591)), (2085,1,1,0.098,(88.632394933177, 3.254100818939, 131.311435970231)), (6247,1,3,0.099,(97.781302293812, 3.264868815393, 145.029826833424))):
++    d1, d2, d3 = devs(p, q, r); e1, e2 = d1, max(d2, d3); x, y = t + e2/t**2, e1/t**3; fp = fixed(x, y)
++    diffs = tuple(c - f for c, f in zip(cert, fp)) if fp else None
++    print(f"  (p,{q},{r})={p}: x={x:.5f} y={y:.3e}: fixed point {tuple(round(v,4) for v in fp) if fp else None}; certificate minus fixed point {tuple(f'{d:.1e}' for d in diffs) if diffs else None} (the exact inequalities are the runner's; a difference of order 1e-5 or below is the displacement or rounding)")
++from fractions import Fraction as Fr
++def devs_exact(p, q, r):
++    p, q, r = Fr(p), Fr(q), Fr(r)
++    return (1 - p**3/(p**3+q**3+4*r**3), 1 - p**2*q/(p*q*(p+q)+4*r**3), 1 - p**2*r/(r*(p**2+q**2)+r**2*(p+q)+2*r**3))
++certs_exact = {(4165,1,2): (Fr(99,1000), Fr(56694252249173,500000000000), Fr(3279872914431,1000000000000), Fr(168429466648591,1000000000000)),
++               (2085,1,1): (Fr(49,500), Fr(88632394933177,1000000000000), Fr(3254100818939,1000000000000), Fr(131311435970231,1000000000000)),
++               (8330,2,4): (Fr(99,1000), Fr(56694252249173,500000000000), Fr(3279872914431,1000000000000), Fr(168429466648591,1000000000000)),
++               (6247,1,3): (Fr(99,1000), Fr(24445325573453,250000000000), Fr(3264868815393,1000000000000), Fr(9064364177089,62500000000))}
++for (p,q,r), (t, Db, Ub, Fb) in certs_exact.items():
++    d1, d2, d3 = devs_exact(p,q,r); e1, e2 = d1, max(d2,d3); x, y = t + e2/t**2, e1/t**3
++    rD = (1+x*Ub)**2*(1+3*x*Db)*(1+y*Fb)**6; rU = (1+x*Ub)**3*(1+y*Fb)**6; rF = (1+x*Ub)**3*(1+3*x*Db)*(1+y*Fb)**5
++    print(f"  exact margins at ({p},{q},{r}): D {float(Db-rD):.2e}, U {float(Ub-rU):.2e}, F {float(Fb-rF):.2e} (all positive: the certificate dominates the least fixed point exactly; the float iteration near spectral radius 0.99 is not resolved to 1e-6)")
++lo, hi = 0.1, 0.2
++for _ in range(40):
++    mid = (lo+hi)/2
++    if fixed(mid, 0.0) is not None: lo = mid
++    else: hi = mid
++print(f"  domain edge at y = 0 by bisection: {lo:.6f} (4/27 = {4/27:.6f})")
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_scan.out.txt b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_scan.out.txt
+new file mode 100644
+index 0000000000..08b938be6a
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_scan.out.txt
+@@ -0,0 +1,5 @@
++route ceiling (eps1 -> 0): need eps2 < max_t t^2 (x_c - t) with x_c(y=0) = 4/27: 0.0004817090739027511
++(p,1,2): new p0 ~ 4166 (was 285718; factor 69); eps1 = 4.564e-10, eps2 = 4.805e-04 (d2 2.418e-04, d3 4.805e-04); a feasible t = 0.0984 -> x = 0.1480, y = 4.792e-07
++(p,1,1): new p0 ~ 2085 (was 142861; factor 69); eps1 = 5.516e-10, eps2 = 4.803e-04 (d2 4.803e-04, d3 4.803e-04); a feasible t = 0.0984 -> x = 0.1480, y = 5.792e-07
++(p,2,4): new p0 ~ 8331 (was 571436; factor 69); eps1 = 4.566e-10, eps2 = 4.805e-04 (d2 2.419e-04, d3 4.805e-04); a feasible t = 0.0984 -> x = 0.1480, y = 4.794e-07
++(p,1,3): new p0 ~ 6247 (was 428576; factor 69); eps1 = 4.471e-10, eps2 = 4.806e-04 (d2 1.628e-04, d3 4.806e-04); a feasible t = 0.0984 -> x = 0.1480, y = 4.695e-07
+diff --git a/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_scan.py b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_scan.py
+new file mode 100644
+index 0000000000..7c4f7df11b
+--- /dev/null
++++ b/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_scan.py
+@@ -0,0 +1,28 @@
++# Exploration (floats): the two-level route's region. Need t in (0,1] with (x, y) = (t + eps2/t^2, eps1/t^3) inside the domain of
++# D = (1+xU)^2 (1+3xD)(1+yF)^6, U = (1+xU)^3 (1+yF)^6, F = (1+xU)^3 (1+3xD)(1+yF)^5.  eps1 = d1, eps2 = max(d2, d3) at (p, q, r).
++import numpy as np
++def converges(x, y, nit=3000):
++    D = U = Fv = 1.0
++    for i in range(nit):
++        D2 = (1+x*U)**2*(1+3*x*D)*(1+y*Fv)**6; U2 = (1+x*U)**3*(1+y*Fv)**6; F2 = (1+x*U)**3*(1+3*x*D)*(1+y*Fv)**5
++        if max(D2, U2, F2) > 1e8: return False
++        if abs(D2-D) < 1e-13 and abs(U2-U) < 1e-13 and abs(F2-Fv) < 1e-13: return True
++        D, U, Fv = D2, U2, F2
++    return True
++def devs(p, q, r):
++    d1 = 1 - p**3/(p**3 + q**3 + 4*r**3); d2 = 1 - p**2*q/(p*q*(p+q) + 4*r**3); d3 = 1 - p**2*r/(r*(p**2+q**2) + r**2*(p+q) + 2*r**3)
++    return d1, d2, d3
++def feasible(p, q, r):
++    d1, d2, d3 = devs(p, q, r); e1, e2 = d1, max(d2, d3)
++    for t in np.linspace(0.02, 0.148, 130):
++        if converges(t + e2/t**2, e1/t**3): return True, t
++    return False, None
++print("route ceiling (eps1 -> 0): need eps2 < max_t t^2 (x_c - t) with x_c(y=0) = 4/27:", max(t*t*(4/27 - t) for t in np.linspace(0, 4/27, 2000)))
++for (q, r), old in (((1, 2), 285718), ((1, 1), 142861), ((2, 4), 571436), ((1, 3), 428576)):
++    lo, hi = 10, 400000
++    while lo < hi:
++        mid = (lo + hi)//2
++        if feasible(mid, q, r)[0]: hi = mid
++        else: lo = mid + 1
++    d1, d2, d3 = devs(lo, q, r); tt = feasible(lo, q, r)[1]
++    print(f"(p,{q},{r}): new p0 ~ {lo} (was {old}; factor {old/lo:.0f}); eps1 = {d1:.3e}, eps2 = {max(d2,d3):.3e} (d2 {d2:.3e}, d3 {d3:.3e}); a feasible t = {tt:.4f} -> x = {tt + max(d2,d3)/tt**2:.4f}, y = {d1/tt**3:.3e}")
+diff --git a/docs/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED_NODES_IN_THE_EXPLANATION_TREE_BOUNDED_THEOREM_NOTE_2026-09-16.md b/docs/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED_NODES_IN_THE_EXPLANATION_TREE_BOUNDED_THEOREM_NOTE_2026-09-16.md
+new file mode 100644
+index 0000000000..2d3d6774dd
+--- /dev/null
++++ b/docs/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED_NODES_IN_THE_EXPLANATION_TREE_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -0,0 +1,213 @@
++---
++claim_id: admissibility_rule_six_axis_formation_threshold_lifted_by_a_two_level_domination_seeds_and_amplified_nodes_in_the_explanation_tree_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++claim_scope: "For the three-dimensional monotone formation law of the covariant product rule on the six-axis menu with positive orbit weights (p, q, r), read as the level automaton on Z^2, started from the all-a plane, with the three deviations d_1 = 1 - p^3/(p^3 + q^3 + 4 r^3), d_2 = 1 - p^2 q/(p q (p + q) + 4 r^3), d_3 = 1 - p^2 r/(r (p^2 + q^2) + r^2 (p + q) + 2 r^3): (T1) the dissent indicator is dominated by the two-level noisy majority automaton eta' — a site with at least two 1-predecessors is 1, a site with exactly one is 1 with probability epsilon_2 = max(d_2, d_3), a site with none with probability epsilon_1 = d_1, through i.i.d. uniforms (proved; the closed forms and the monotonicity in p re-checked); (T2) every 1 of eta' at x has an extended explanation tree: a subtree of G through 1-sites with at most one arrow to a predecessor per node, seeds S (no arrow to a predecessor; no 1-predecessor), amplified nodes A (an amplification arrow to their single 1-predecessor), processed nodes (an excuse arrow), with forks = |S| - 1 and excuse arrows E <= 3(|S| - 1) + 2|A| (proved; executed on every configuration of the depth-2 cone, every depth-3 configuration with at most four noise sites and random cones); (T3) P(eta'_x = 1) <= epsilon_1 R(t + epsilon_2/t^2, epsilon_1/t^3) for every t in (0, 1] with the point in the domain of the recursion D = (1+xU)^2(1+3xD)(1+yF)^6, U = (1+xU)^3(1+yF)^6, F = (1+xU)^3(1+3xD)(1+yF)^5, R = (1+xU)^3(1+3xD)(1+yF)^6 (proved); (T4) with exact rational super-solutions, the formation law keeps its plane and its level automaton has at least six invariant laws for p >= 4165 at (p, 1, 2), p >= 2085 at (p, 1, 1), p >= 8330 at (p, 2, 4), p >= 6247 at (p, 1, 3) — a factor 69 below block 25's 285718, 142861, 571436, 428576 (proved; the certificates exact); (T5) the recursion's domain at y = 0 is x < 4/27, so this route needs epsilon_2 < 256/531441, which on (p, 1, 2) fails for every p <= 4150: the route is at its ceiling (proved). Not claimed: the location of the true strength (block 28 locates it at p in (10.5, 11) on (p, 1, 2)); the tree-of-trees refinement that would reach p of order 200 (its overlaps break the budgets; named). No reading, rule or coupling is selected as physical; exact arithmetic throughout the runner."
++upstream_dependencies:
++  - minimal_axioms
++  - admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06
++runner: scripts/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_09_16.py
++---
++
++# The six-axis formation threshold lifted by a two-level domination: seeds and amplified nodes in the explanation tree, `p ≥ 4165` at `(p, 1, 2)` from `285718`, and the route's ceiling
++
++**Date:** 2026-09-16
++**Type:** bounded_theorem
++**Status:** bounded-support (exact; conditional on the named supplied readings; unaudited)
++
++## Result up front
++
++Block 25 proves that the six-axis formation law keeps a plane of identical
++records once the rule's preference for agreement is strong enough, with the
++region `p ≥ 285718` at weights `(p, 1, 2)`; block 28 locates the actual
++strength at `p ∈ (10.5, 11)`. Block 25's count of explanation trees is at its
++own edge, so the slack is elsewhere: in the step that dominates the formation
++law by a majority automaton with noise. That step uses the worst case over all
++predecessor triples with two agreeing records — a dissent probability of order
++`2/p` — while in the ordered state almost every site sees three agreeing
++predecessors and dissents with probability only `d_1 ≈ 33/p³`.
++
++This note replaces the single noise level by two. A site whose three
++predecessors all agree is a *seed* of dissent with probability `ε₁ = d_1`; a
++site with exactly one dissenting predecessor is *amplified* with probability
++`ε₂ = max(d_2, d_3)`; a site with two dissenting predecessors dissents by
++majority. The explanation tree of block 25 is extended to carry both: seeds
++are its leaves, amplified nodes sit inside its clusters with an arrow to their
++single dissenting predecessor, and the potential that drives the construction
++loses one unit whenever an amplified node is a pole for the charge along its
++own arrow. The accounting closes with `forks = |S| − 1` and
++`E ≤ 3(|S| − 1) + 2|A|`, the same generating-function count applies with the
++amplification arrows sharing the arrow slots, and the ordered phase follows
++wherever `(t + ε₂/t², ε₁/t³)` lies in the recursion's domain. With exact
++certificates this gives `p ≥ 4165` at `(p, 1, 2)` — a factor `69` below block
++25 on every line of weights. The route's ceiling is also exact: the domain
++ends at `x = 4/27`, so it needs `ε₂ < 256/531441`, which on `(p, 1, 2)` fails
++for `p ≤ 4150`. What remains between `4165` and the located `11` is a factor
++`380`, and the note names the two places it sits: the two excuse arrows an
++amplified pole may cost (the executed trees never use more than two thirds of
++one), and the overcounting of sub-structures inherent in the union bound.
++
++In plain words: the earlier proof treated every record as if it could be
++tempted to dissent by the worst company it might keep; the new proof charges
++each dissent by the company it actually keeps — a dissent among three
++agreeing neighbours is rare, and only a dissent next to an existing dissent is
++cheap. That brings the proved strength from three hundred thousand to four
++thousand, while the truth is eleven.
++
++Exactly: the two-level domination (T1); the extended tree with its budgets
++(T2); the bound (T3); the certificates at four weight pairs (T4); the ceiling
++(T5). Executed with exact arithmetic: 20 checks, 11 mutations; the construction
++run on `4290` configurations.
++
++## Machine status and trace
++
++```yaml
++actual_current_surface_status: bounded-support
++target_claim_type: bounded_theorem
++trace_class: upstream_support
++target_claim_id: null
++target_blocker_text: "the campaign queue's first item after block 28: the six-axis order threshold toward the located strength (285718 proved against 11 located at (p, 1, 2))"
++source_of_blocker_text: handoff
++reachability_to_target: supports
++artifact_role: theorem
++next_trace_action: "the threshold lifted to p >= 4165 at (p, 1, 2) (2085, 8330, 6247 on the other lines) by the two-level domination; the route's ceiling reached (epsilon_2 < 256/531441). Open: the bad-pair accounting (2 excuse arrows per amplified pole, executed at most 2/3) — a proof of E <= 3(|S| - 1) + |A| would give p of order 500; the tree-of-trees refinement (weight epsilon_2 with no bad pairs, p of order 200) blocked by overlaps; the count's overcounting of sub-structures. Consumers: the campaign's decision record; #8093's assembly"
++conditional_surface_status: "T1-T5 proved for every positive weight triple (T4 with content on the four lines at the stated couplings); the construction executed exhaustively on the depth-2 cone and on all depth-3 configurations with at most four noise sites plus random cones; conditional on the records-only reading, positivity, the six-axis menu and the monotone order as supplied conditions; three standard mathematical imports named at definition level"
++hypothetical_axiom_status: null
++admitted_observation_status: null
++audit_required_before_effective_retained: true
++```
++
++## Premises and declared objects
++
++The axioms memo (`docs/MINIMAL_AXIOMS_2026-06-29.md`) is used through the sentences "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.", "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.", "Records form.", and "Only records are readable.". Block 01 (`docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md`, on `main`) supplies the rule and its one-site conditional given a recorded set; the monotone formation order, its level reading, the coarse-graining and the explanation-tree construction are declared and re-proved below (blocks 05, 08, 12, 25, 28 — open PRs #8003, #8138, #8146, #8168, #8172 — are referenced as evidence addresses only). All proposed and unaudited.
++
++Declared objects.
++- **The rule, level time, the level automaton, the coarse-graining, the deviations.** As in block 25 (PR #8168), restated: the six-axis menu with `φ(v, v') = p, q, r` for equal, antipodal, orthogonal pairs; sites `x ∈ Z³`, level `τ(x) = x_1 + x_2 + x_3`, predecessors `x − e_j`, siblings `x ± (e_i − e_j)`; records form level by level from `K(· | v_{x−e_1}, v_{x−e_2}, v_{x−e_3}) ∝ Π_j φ(v, v_{x−e_j})`, level `0` all equal to `a`; `ξ_x = 1{v_x ≠ a}`; `d_1 = 1 − K(a | a, a, a)`, `d_2 = 1 − K(a | a, a, −a)`, `d_3 = 1 − K(a | a, a, b)` for `b ⊥ a`, in the closed forms of the front matter; `ε₁ := d_1`, `ε₂ := max(d_2, d_3)`.
++- **The two-level noisy majority automaton `η'`.** With i.i.d. uniforms `U_x` on levels `≥ 1` and `η' ≡ 0` on levels `≤ 0`: `η'_x = 1` if at least two of `η'_{x−e_j}` are `1`; `η'_x = 1{U_x < ε₂}` if exactly one is `1`; `η'_x = 1{U_x < ε₁}` if none is. A **1-site** has `η'_x = 1`; a **seed** is a 1-site with no 1-predecessor; an **amplified site** is a 1-site with exactly one 1-predecessor (its **amplification direction** `j` is the index of that predecessor); a **processed-type site** has at least two, and its **winning pair** is the pair of 1-predecessors with the two smallest indices.
++- **The graph `G`, the functionals, spanned sets, the excuse.** As in block 25: arrows `{x, x − e_j}`, forks `{x, x ± (e_i − e_j)}`, degree `12`; `M_k(z) = z_k − τ(z)/3`; `Span(P, v_1, v_2, v_3) = Σ_k M_k(v_k)`; for a processed-type `v`, `Excuse_k(v)` is the winning-pair member with index `≠ k` (the smaller if both), with `M_k(Excuse_k(v)) = M_k(v) + 1/3`; for an amplified `v` with direction `j`, `Excuse_k(v) := v − e_j` for every `k`, with `M_k(v − e_j) − M_k(v) = 1/3 − δ_{jk}`; the pair `(v, k)` is **bad** if `v` is amplified with direction `k`.
++- **The extended arrow graph and clusters.** At level `s`, vertices the 1-sites of levels `≤ s`, an edge from every processed-type or amplified site to each of its 1-predecessors; a **cluster at level `s`** is the intersection with level `s` of a connected component. A seed is a singleton cluster.
++- **Extended explanation trees.** Subtrees `T` of `G` containing `x` with at most one arrow to a predecessor at each node; `S(T)` the nodes without such an arrow, `A(T)` the nodes whose arrow to a predecessor is labelled an amplification arrow, `E(T)` the number of excuse arrows, `F(T)` the number of forks; `𝓔` the family with `F = |S| − 1` and `E ≤ 3(|S| − 1) + 2|A|`.
++- **The recursion and its domain.** `D = (1 + xU)²(1 + 3xD)(1 + yF)⁶`, `U = (1 + xU)³(1 + yF)⁶`, `F = (1 + xU)³(1 + 3xD)(1 + yF)⁵`, `R = (1 + xU)³(1 + 3xD)(1 + yF)⁶` (block 25's count, restated in T3); its **domain** `𝒟` is the set of `(x, y) ≥ 0` at which the iteration from `(1, 1, 1)` stays bounded; a **super-solution** at `(x, y)` is a triple `(D̄, Ū, F̄) ≥ 1` dominating its own right sides.
++
++## Prior art and what is new
++
++Toom's stability theorem for eroders under small noise, in Gács's exposition of the Berman–Simon proof, is the route block 25 carried in level-time coordinates with an explicit threshold; block 12 supplied the domination of the formation law by the noisy majority automaton at the worst-case noise, and block 25 sharpened the count to its edge. None is used as authority: the construction is restated and re-proved here in its extended form. What is new: (i) the two-level domination (T1), which separates seeding from amplification; (ii) the extended explanation tree with amplified nodes inside the clusters, the bad pairs, and the closed accounting `forks = |S| − 1`, `E ≤ 3(|S| − 1) + 2|A|` (T2); (iii) the bound with the amplification arrows in the arrow slots (T3) and the region with exact certificates, a factor `69` below block 25 on every line (T4); (iv) the route's exact ceiling `ε₂ < 256/531441` with the two named places where the remaining factor `380` to the located strength sits (T5, N1).
++
++## Exact target and obligation graph
++
++| Obligation | Statement | Route | Runner family |
++|---|---|---|---|
++| T1 | `ξ ≤ η'` from the all-`a` plane; `ε₁ = d_1`, `ε₂ = max(d_2, d_3)`, decreasing in `p` | block 12's coupling, refined by the predecessors' state | B |
++| T2 | the extended tree: `F = |S| − 1`, `E ≤ 3(|S| − 1) + 2|A|` | block 25's construction with amplified poles; bad pairs; the potential | C |
++| T3 | `P(η'_x = 1) ≤ ε₁·R(t + ε₂/t², ε₁/t³)` | the lift to the typed tree; the budget in the exponent | D |
++| T4 | the region on four lines; six invariant laws | exact super-solutions; monotonicity; the Cesàro route | D |
++| T5 | the ceiling `x < 4/27`, `ε₂ < 256/531441`; `p > 4150` on `(p, 1, 2)` | tangency of `U = (1 + xU)³`; a one-variable maximum | E |
++
++## Theorem T1 — the two-level domination
++
++**Statement.** (a) `d_1, d_2, d_3` have the closed forms of the front matter and are strictly decreasing in `p > 0` at fixed `q, r > 0`; `d_1 ≤ max(d_2, d_3)`. (b) There is a coupling of the formation law from the all-`a` plane with `η'` such that `ξ_x ≤ η'_x` at every site; hence `P(v_x ≠ a) ≤ P(η'_x = 1)`.
++
++**Proof.** (a) Block 25's T0(a)–(b), re-executed (B1–B2); `d_1 ≤ d_3` because `K(a | a, a, a) ≥ K(a | a, a, b)` (the normalizer with three factors `p` is smaller relative to `p³` than that with `p, p, r` relative to `p²r`: both are `1 − (ratio)` with the aligned triple's dissent mass `q³ + 4r³` over `p³` against `(rq² + r²(p + q) + 2r³)/(p²r) ≥ 4r³/p³` — executed at the four lines, B2). (b) Build both processes level by level given the previous level with `ξ ≤ η'`. At `x`: if at least two `η'`-predecessors are `1`, set `η'_x = 1 ≥ ξ_x`. If exactly one is `1`, at most one `ξ`-predecessor is `1`, so at least two of `v`'s predecessors equal `a` and `P(ξ_x = 1 | past) = 1 − K(a | preds) ≤ max(d_1, d_2, d_3) = ε₂`; draw `ξ_x` and `η'_x = 1{U_x < ε₂}` monotonically from one uniform. If none is `1`, all three of `v`'s predecessors equal `a` and `P(ξ_x = 1 | past) = d_1 = ε₁`; couple with `1{U_x < ε₁}`. Sites of a level are drawn independently given the previous level in both processes. ∎
++
++## Theorem T2 — the extended explanation tree
++
++**Statement.** Let `η'_x = 1`. Then there is `T ∈ 𝓔` rooted at `x` all of whose nodes are 1-sites, such that every node of `S(T)` is a seed, every node of `A(T)` is an amplified site whose amplification arrow ends at its single 1-predecessor, and every other node is processed-type with its excuse arrow to a 1-predecessor.
++
++**Proof.** The construction is block 25's with three changes: the arrow graph links amplified sites to their single 1-predecessor, so they lie inside clusters; the excuse of an amplified pole is that predecessor, for every charge; and bad amplified poles are always kept. The ingredients, restated.
++*(T2.1, clusters and the cause graph.)* For a cluster `K` at level `s` with no seed, let `V_K` be the clusters at level `s − 1` containing a 1-predecessor of a point of `K`, two of them adjacent if a fork joins a point of one to a point of the other; this graph is connected and every `Excuse_k(v)`, `v ∈ K`, lies in a cluster of `V_K`. Proof: two points of `K` are joined by a path through 1-sites of levels `≤ s`; cut it at its visits to level `s`; between visits it stays below and its end predecessors are in one cluster of level `s − 1`; at a visit `k` it arrives from a 1-predecessor `r` and leaves to a 1-predecessor `r'` (equal if `k` is amplified), and `r, r'` are siblings or equal, hence forked or in one cluster; any cluster of `V_K` contains a predecessor of some `k ∈ K`, a sibling of the one the path uses. The excuse of a point is one of its 1-predecessors.
++*(T2.2, the excuse identity.)* For a spanned set `(P, v_1, v_2, v_3)` with no seed pole, `Σ_k M_k(Excuse_k(v_k)) = Span + 1 − b`, where `b` is the number of bad pairs `(v_k, k)`: each processed-type pole contributes `+1/3` for its charge, an amplified pole `+1/3` for the charges other than its direction and `−2/3` for its direction (C1). A fork pair has `Size = 1`, so a spanned set on it has `Span ≤ 1` (block 25's T2(b)).
++*(T2.3, the spanning lemma.)* Block 25's T3 verbatim: for a spanned set `(L, u_1, u_2, u_3)`, disjoint clusters `𝓒`, forks `𝓕` between distinct clusters with the bipartite cluster–fork graph connected and `u_k ∈ C_k ∈ 𝓒`, there is a minimal subtree `𝒯` through `C_1, C_2, C_3` and poles `u_{X,k} ∈ X' ⊂ X` for `X ∈ 𝒯` with `Σ_{X∈𝒯} Σ_k M_k(u_{X,k}) = Σ_k M_k(u_k)`, `X'` the transported poles and meeting points, every point of `X'` a pole of `X`, `X' = X` for a fork. (Its proof — shortest paths, pruning, the transport of poles toward the terminals, and the count `#{X ∈ I(v) : u_{X,k} = v} = |I(v)| − 1 + [v = u_k]` — does not use the nature of the poles and is unchanged; it is asserted at every refinement executed, C2–C4.)
++*(T2.4, refinement and accounting.)* A partial tree: unprocessed spanned clusters `𝒰`, processed points, and edges (excuse arrows, amplification arrows, forks) whose cluster-contracted graph is a tree; potential `Φ = Σ_𝒰 Span + #forks`. Start with `({x}, x, x, x)`, `Φ = 0`. While an unprocessed cluster `(K, v)` has a non-seed pole (then `K` has no seed, a seed being a singleton): put `u_k = Excuse_k(v_k)`, `b` the number of bad pairs; apply T2.3 to `(∪V_K, u_1, u_2, u_3)` with the clusters of `V_K` and one fork per adjacent pair; add the clusters of `𝒯` with their poles to `𝒰` and the forks of `𝒯` as edges; the *kept poles* are the distinct points among `v_1, v_2, v_3` that are incident to an existing edge or are bad amplified poles (if none, `v_1`); for a kept processed-type `w` add the excuse arrow `{w, u_{k(w)}}`, `k(w)` the least `k` with `v_k = w`; for a kept amplified `w` add the amplification arrow `{w, w − e_j}` to its predecessor; delete `(K, v)`. *Tree property:* as in block 25 — `K` is replaced by `𝒯` with the kept points attached by one arrow each; a cluster at level `s − 1` has all its level-`s` parents in one cluster, now also for amplified parents (they are linked to their predecessor), so no cluster is added twice; kept points are processed once. *The potential:* by T2.2 and T2.3, `Σ_{X∈𝒯} Span(X) = Span(K) + 1 − b`, and each fork counts `1` against a span of at most `1`, so `Φ` rises by at least `1 − b`. *Termination:* levels descend; every 1-site at level `1` is a seed. *The count:* let `S` be the seeds left as singleton clusters, `A` the kept amplified points, `B = Σ b` over refinements. `Φ` ends at `#forks` and rose by at least `1 − b` per refinement from `0`, so `#refinements ≤ #forks + B`. Contract every arrow of either kind into its lower point: each processed point and each amplified point merges, along its own arrow and the arrows below, into a seed; the forks then form a tree on the seeds, so `#forks = |S| − 1`. A bad pair is an amplified pole in its own direction; a point is a pole of at most one refined cluster (its own) and is bad for at most one charge, and bad amplified poles are kept, so `B ≤ |A|`. Arrows number at most three per refinement (one per kept pole) and every kept amplified pole carries an amplification arrow, so `E + |A| ≤ 3(|S| − 1 + B) ≤ 3(|S| − 1) + 3|A|`, i.e. `E ≤ 3(|S| − 1) + 2|A|`. Every node has at most one arrow to a predecessor (its own), the nodes without one are the seeds, and the amplified nodes' arrows end at their single 1-predecessor. ∎
++
++Executed (C2–C4): on every noise configuration of the depth-2 backward cone (`932` explained), on every depth-3 configuration with at most four noise sites (`2321`), and on random cones of depth `3`–`8`, the extended construction never fails, the identity `Σ_X Span(X) = Span(K) + 1 − b` holds at every refinement, the point graph is a tree of arrows and forks through 1-sites, seeds have no 1-predecessor, amplified nodes have exactly one at their arrow's end, `#forks = |S| − 1`, `#refinements ≤ |S| − 1 + B`, `B ≤ |A|`, and `E ≤ 3(|S| − 1) + 2|A|`; the largest executed value of `(E − 3(|S| − 1))/|A|` is `2/3`.
++
++## Theorem T3 — the count and the bound
++
++**Statement.** For every site `x` and every `t ∈ (0, 1]` with `(t + ε₂/t², ε₁/t³) ∈ 𝒟`,
++```
++P(η'_x = 1) ≤ ε₁ · R(t + ε₂/t², ε₁/t³).
++```
++
++**Proof.** By T2 and independence of the uniforms at distinct sites, `P(η'_x = 1) ≤ Σ_{T∈𝓔} ε₁^{|S(T)|} ε₂^{|A(T)|}` (a seed has `U < ε₁`, an amplified node `U < ε₂`). For `T ∈ 𝓔`, `|S| = F + 1` and `E ≤ 3F + 2|A|`, so with `t ≤ 1`: `ε₁^{|S|} ε₂^{|A|} = ε₁·ε₁^{F}·ε₂^{|A|} ≤ ε₁ · t^{E}·(ε₁/t³)^{F}·(ε₂/t²)^{|A|}`. The right side is the weight of `T` with `t` per excuse arrow, `ε₂/t²` per amplification arrow and `ε₁/t³` per fork; both kinds of arrow are arrows of `G` (an edge to a predecessor), so in the lift of `T` to the typed regular tree (block 25's lift: the words of edge types along root paths, injective, with at most one *down* child per vertex and none after an *up* letter) an arrow slot carries the total weight `t + ε₂/t²`. The weight sum over all admissible subtrees of the typed tree is `lim_h R_h(x, y)` with `x = t + ε₂/t²`, `y = ε₁/t³`, where `R_h` are the recursion's height-`h` truncations from `(1, 1, 1)`; a super-solution bounds every `R_h` by induction (the right sides are increasing), so the sum is at most `R̄`, and `(x, y) ∈ 𝒟` is exactly the existence of a bounded iteration. ∎ (D1: the lift's slot structure re-executed on the enumerated subtrees with `≤ 4` edges as in block 25; D2: the certificates.)
++
++## Theorem T4 — the region
++
++**Statement.** With `ε₁ = d_1`, `ε₂ = max(d_2, d_3)`: the formation law from the all-`a` plane satisfies `P(v_x ≠ a) ≤ ε₁ R̄ < 10⁻⁷` at every later site, and its level automaton has at least six pairwise distinct translation-invariant invariant laws, for every integer `p ≥ 4165` at `(p, 1, 2)`, `p ≥ 2085` at `(p, 1, 1)`, `p ≥ 8330` at `(p, 2, 4)`, `p ≥ 6247` at `(p, 1, 3)`.
++
++**Proof.** At `p = 4165, q = 1, r = 2`: `t = 99/1000`, `x = t + ε₂/t² = 0.14804…`, `y = ε₁/t³ = 4.7·10⁻⁷`, and the rational triple `(D̄, Ū, F̄)` of the runner is a super-solution with `R̄ = 168.44…`, so `P(v_x ≠ a) ≤ ε₁ R̄ = 7.7·10⁻⁸` (D2); the other three lines likewise (`t = 49/500`, `99/1000`, `99/1000`; `R̄ = 131.3, 168.4, 145.0`; bounds `7.2, 7.7, 6.5 × 10⁻⁸`). For larger `p` on a line, `ε₁` and `ε₂` decrease (T1a), the recursion's right sides are increasing in `x, y`, so the same triple is a super-solution and the same bound holds. The six laws: block 25's T7 route — the kernel is Feller and translation-covariant, Cesàro averages of the levels from the all-`a` plane have subsequences with weak limits `μ_a` are invariant, `μ_a(v_y ≠ a) ≤ 10⁻⁷ < 1/2`, so the six are distinct, and by the extremal decomposition at least six extremal laws exist. ∎ (D2–D3.)
++
++## Theorem T5 — the ceiling of the route
++
++**Statement.** `(x, 0) ∈ 𝒟` if and only if `x ≤ 4/27`. Hence T3 can apply only if `ε₂ < max_{0<t<4/27} t²(4/27 − t) = 256/531441`, and on `(p, 1, 2)` this fails for every `p ≤ 4150` (`d_3(4150) = 16622/34461622 > 256/531441`).
++
++**Proof.** At `y = 0` the recursion for `U` is `U = (1 + xU)³`; with `v = 1 + xU ≥ 1` this reads `x = (v − 1)/v³`, whose maximum over `v ≥ 1` is `4/27` at `v = 3/2` (E1); for `x > 4/27` the iteration from `1` has no fixed point and diverges, for `x ≤ 4/27` it is bounded by the least fixed point. Since `x = t + ε₂/t² ≤ 4/27` needs `ε₂ ≤ t²(4/27 − t)`, whose maximum over `t` is at `t = 8/81` with value `256/531441` (E1), the route needs `ε₂ < 256/531441`. `d_3` is decreasing in `p`, and its value at `p = 4150` exceeds `256/531441` (E2). ∎
++
++*Reading.* The route is at its ceiling on every line (`p = 4165` against `4150`): the seed noise plays no role there, only the amplification. Two places hold the remaining factor `380` to the located strength `11`. First, the bad-pair accounting charges two excuse arrows per amplified pole (`E ≤ 3(|S| − 1) + 2|A|`), which enters the exponent as `ε₂/t²`; the executed trees never exceed `2/3` of an excuse arrow per amplified node, and a proof of `E ≤ 3(|S| − 1) + |A|` would put the ceiling at `ε₂ < max_t t(4/27 − t) = 4/729` and the region near `p ≈ 500`. Second, the union bound counts every sub-structure of an amplification cluster separately, so the amplification part is finite only for `ε₂ < 4/27` where the branching itself dies out for every `3ε₂ < 1`: the same gap as between lattice-animal and branching-process thresholds. A tree-of-trees construction (fresh trees under amplified leaves, weight `ε₂` with no bad pairs) would reach `p ≈ 200` if its sub-trees did not overlap; they do, and overlaps break the budgets (N1).
++
++## No-Go Discipline Gate
++
++This note's sentence is positive (an ordered region); its escapes are named for the route by which it could fail.
++
++### N1 — Routes by which T4 could fail, and the routes tried beyond it
++1. *The extended construction failing on some configuration or exceeding a budget* — closed on `4290` configurations (C2–C4) and by the proof (T2).
++2. *The amplified node treated as a noise leaf* — would charge its fork at `ε₂/t³` and give nothing; the construction puts it inside the clusters instead, at the price of the bad pairs.
++3. *Bad pairs not kept* — a bad amplified pole that is not a tree node would lose span without paying `ε₂`; hence bad poles are always kept (T2.4).
++4. *The tree-of-trees route* — fresh block-25 trees under amplified leaves would give weight `ε₂` per amplified node with `E ≤ 3(|S| − 1)`; the sub-trees can share nodes with the existing structure, the union then has cycles, and breaking them by dropping forks or arrows breaks the budgets (each dropped fork costs three excuse arrows in the accounting); recorded as the obstacle to `p ≈ 200`.
++5. *The sharper bad-pair budget* — `E ≤ 3(|S| − 1) + |A|` holds on every executed tree (`2/3` at most) but is not proved: a refinement with a bad amplified pole may keep two other poles.
++6. *The domination* — re-proved (T1) at the level of the predecessors' state.
++
++### N2 — Wall-independence audit
++No no-go wall of the repository is used.
++
++### N3 — Hidden-wall scan
++No hidden dependence: the inputs are the axioms' sentences, block 01's rule, and the monotone order as declared.
++
++### N4 — Per-citation table
++| Citation | Role | Load-bearing? |
++|---|---|---|
++| `minimal_axioms` | the four sentences under Premises | yes (premise) |
++| block 01 (`main`) | the rule and its one-site conditional | yes (premise, proposed) |
++| blocks 12, 25 (open PRs) | the coupling and the construction, re-proved here in extended form | re-proved at scope (T1, T2, T3) |
++| block 28 (open PR) | the located strength `p ∈ (10.5, 11)` | placement only (evidence address) |
++
++### N5 — Resolution audit
++| Claim | per_element | per_site | per_mode | per_block | lattice_wide |
++|---|---|---|---|---|---|
++| "the formation law keeps its plane for `p ≥ 4165` at `(p, 1, 2)`" | executed: the deviations' closed forms and monotonicity; `d_1 ≤ max(d_2, d_3)`; the increments of an amplified excuse | executed: the two-level coupling's inequality at every predecessor state; the ceiling's crossing at `4150` | executed: the extended construction on `4290` configurations with all budgets; the lift's slot structure on subtrees with `≤ 4` edges | executed: the four super-solution certificates; the bounds; the one-variable maxima | proved for every `p` above the stated couplings on the four lines (T1–T5); the true strength not claimed |
++
++### N6 — Partial-closure paths and primitive scan
++The registered primitives supply no coupling or order; none is a wall.
++
++### N7 — Steelman
++Hostile reviewer: "A factor `69` when the truth is `26000` times below." Reply: the factor is the whole reach of this route, proved as such (T5); the two places holding the rest are named with the executed evidence (`2/3` against `2`) and the obstacle (overlaps). Conceded: the true strength is not located by a proof; `4165` is not close to `11`.
++
++### N8 — Cross-cycle echo
++Block 12's domination is refined; block 25's construction is extended and its count reused at its edge; block 28's located strength is the target the region is measured against; block 26's tree-of-trees obstacle (overlaps) is the same kind of obstacle met here.
++
++## Falsifiers
++- A deviation differing from its closed form, non-decreasing in `p`, or `d_1 > max(d_2, d_3)` at some tested line; a failure of the two-level coupling's inequality at some predecessor state (B1–B3).
++- An increment of an amplified excuse other than `1/3 − δ_{jk}`; a configuration of the tested cones on which the extended construction fails, the identity `Span + 1 − b` fails, the point graph is not a tree, a seed has a 1-predecessor, an amplified node's arrow does not end at its single 1-predecessor, `#forks ≠ |S| − 1`, `#refinements > |S| − 1 + B`, `B > |A|`, or `E > 3(|S| − 1) + 2|A|` (C1–C4).
++- A lifted subtree count above the recursion's coefficient; a super-solution inequality failing at one of the four points; `ε₁ R̄ ≥ 10⁻⁷` (D1–D3).
++- `(v − 1)/v³ > 4/27` for some `v ≥ 1`, `t²(4/27 − t) > 256/531441` for some `t`, or `d_3(4150) ≤ 256/531441` (E1–E2).
++
++## Boundaries and non-claims
++This note proves, for the six-axis formation law in level time, that its dissent from the all-`a` plane is dominated by the two-level noisy majority automaton with seed noise `d_1` and amplification noise `max(d_2, d_3)`, that this automaton's ones have extended explanation trees with `forks = |S| − 1` and `E ≤ 3(|S| − 1) + 2|A|`, that its density of ones is at most `ε₁ R(t + ε₂/t², ε₁/t³)`, and hence that the formation law keeps its plane with at least six invariant laws for `p ≥ 4165` at `(p, 1, 2)`, `p ≥ 2085` at `(p, 1, 1)`, `p ≥ 8330` at `(p, 2, 4)`, `p ≥ 6247` at `(p, 1, 3)`, with the route's ceiling `ε₂ < 256/531441`; it does not locate the true strength, does not prove the sharper bad-pair budget, does not treat other menus or orders, does not select a reading, rule or coupling as physical, and adopts no clause. No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision. No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.
++
++## Imports
++- `minimal_axioms`: the sentences quoted under Premises.
++- Block 01 (on `main`): the rule and its conditional; proposed, unaudited. PRs #8003, #8138, #8146, #8168, #8172 (open) referenced as evidence addresses for the monotone class, the uniqueness region, the level-time reading, the construction and the located strength.
++- Re-proved at scope: block 12's domination (refined to two levels); block 25's construction (extended) and count; the Cesàro construction of invariant laws and the distinctness (block 25's T7).
++- Named standard imports at definition level (never as authority for physics): the union bound and independence of the uniforms; weak compactness of laws on a compact product space (the Krylov–Bogolyubov construction for Feller kernels); the extremal decomposition of invariant laws (Choquet).
++- Reference only (named, not used): Toom (1980); Berman–Simon (1988); Gács (2021); Swart–Szabó–Toninelli (2022).
++
++## Review record
++Supervisor-run block (owner directive 2026-09-16, evening: "take the six-axis threshold next"). The lens found the domination step, not the count, to be the loose one at the located strength (`ε ≈ 0.26` worst case against `d_1 ≈ 0.024` and `d_3 ≈ 0.21` at `p = 11`). The control (`specs/supervisor_control_block30_core.py`, `..._construction.py`) extended block 25's construction with amplified nodes and ran it on `4290` configurations with every budget checked; the scan (`..._scan.py`) found the region's edge at `p = 4166` on `(p, 1, 2)` and its coincidence with the ceiling `4/27`; the certificates (`..._certify.py`) were found along the Jacobian's dominant eigenvector at spectral radius `0.99` and verified exactly; the budget measurement (`..._budget.py`) found the executed maximum `2/3` of the allowed `2` excuse arrows per amplified node. Facts settled while executing: the tree-of-trees route (fresh trees under amplified leaves) was worked out to the point of its obstacle — the overlaps — and dropped; the alternative of leaving amplified nodes as leaves was computed to give nothing; the route's ceiling is reached on every line within one unit of `p`. The refuting pass (`CHECKER_block30_findings.md`) simulated the two-level automaton and the six-axis law coupled through shared uniforms far below the proved region, checked the domination pointwise, re-ran the tree checks with an independent graph implementation, and re-derived the certificates' fixed points in floating point.
++
++## Verification
++
++```bash
++python3 scripts/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_09_16.py
++python3 scripts/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_09_16.py --list-mutations
++python3 scripts/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_09_16.py --mutation budget_amplified_dropped
++```
++
++Families: A authority and inputs; B the deviations, the domination; C the extended construction executed; D the lift, the certificates, the bounds; E the ceiling; F fences, forbidden phrases, the floating-point self-scan, the placement of the classical names; G the resolution lines. Each of the 11 declared mutations fails in exactly one family. Expected final line: `TOTAL: PASS=20 FAIL=0`.
+diff --git a/docs/audit/data/citation_graph_manifest.json b/docs/audit/data/citation_graph_manifest.json
+index 9c5ee54886..8363c01307 100644
+--- a/docs/audit/data/citation_graph_manifest.json
++++ b/docs/audit/data/citation_graph_manifest.json
+@@ -1,6 +1,6 @@
+ {
+  "edge_count": 13568,
+- "node_count": 6014,
++ "node_count": 6015,
+  "nodes": {
+   "3d_correction_master_note": {
+    "deps_hash": "e3b0c44298fc",
+@@ -746,6 +746,10 @@
+    "deps_hash": "1b3132f0c69b",
+    "out_degree": 3
+   },
++  "admissibility_rule_six_axis_formation_threshold_lifted_by_a_two_level_domination_seeds_and_amplified_nodes_in_the_explanation_tree_bounded_theorem_note_2026-09-16": {
++   "deps_hash": "e3b0c44298fc",
++   "out_degree": 0
++  },
+   "admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_bounded_theorem_note_2026-09-07": {
+    "deps_hash": "8188f46b334d",
+    "out_degree": 2
+diff --git a/logs/runner-cache/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_09_16.txt b/logs/runner-cache/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_09_16.txt
+new file mode 100644
+index 0000000000..9d49573289
+--- /dev/null
++++ b/logs/runner-cache/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_09_16.txt
+@@ -0,0 +1,42 @@
++===== runner cache v1 =====
++runner: scripts/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_09_16.py
++runner_sha256: 99299e47dc478c701b901bda2c32c20bdae77fd5b9f815ec3f0b816b37aa1c4d
++input_fingerprint_sha256: 8b8023a36b850c123a1849435876f48099a7d6d87c8e23a03cc825ad19b68833
++timeout_sec: 900
++exit_code: 0
++elapsed_sec: 1.54
++status: ok
++----- stdout -----
++AUDIT_INPUT_PATHS:
++  docs/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED_NODES_IN_THE_EXPLANATION_TREE_BOUNDED_THEOREM_NOTE_2026-09-16.md
++  docs/MINIMAL_AXIOMS_2026-06-29.md
++  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
++PASS: A1 the note carries its claim_id once
++PASS: A2 the axioms memo carries the four sentences quoted under Premises
++PASS: A3 block 01's note (on main) carries its claim_id and the rule's product form
++PASS: A4 all declared inputs exist
++PASS: B1 T1(a): d_1 = 1 - K(a|a,a,a), d_2 = 1 - K(a|a,a,-a), d_3 = 1 - K(a|a,a,b) in closed form (checked against the conditional at four weight triples); d_2's derivative in p has numerator -(q^3 p^2 + 8 q r^3 p) < 0 (d_1, d_3 as in block 25)
++PASS: B2 T1(b): at the four thresholds and at (11, 1, 2): d_1 <= max(d_2, d_3); a site whose three predecessors equal a dissents with probability at most epsilon_1 and one with exactly two equal to a with probability at most epsilon_2 (all 216 triples)
++PASS: C1 T2.2: an amplified site's excuse (its single predecessor v - e_j) raises the charges k != j by 1/3 and lowers the charge j by 2/3, so a bad pair costs exactly one unit of span
++PASS: C2 T2: on all 1024 noise configurations of the depth-2 cone (932 explained, 438 with amplified nodes) the extended construction builds a tree through 1-sites with seeds without 1-predecessors and amplified nodes with exactly one, the identity Span + 1 - b holds at every refinement, forks = |S| - 1, refinements <= |S| - 1 + B, B <= |A| and E <= 3(|S| - 1) + 2|A|
++PASS: C3 T2: every depth-3 configuration with at most four noise sites (2321 explained) and 1200 random cones of depth 3-8 (843 explained, 699 with amplified nodes) pass the same checks
++PASS: C4 T2: the largest executed value of (E - 3(|S| - 1))/|A| over trees with amplified nodes is 2/3 (the proved budget allows 2)
++PASS: D1 T3: the 66103 subtrees of G with at most four edges and at most one arrow to a predecessor per node, by (arrows, forks), are each at most the recursion's coefficient — the lift with both kinds of arrow in the arrow slots
++PASS: D2 T3-T4: at (4165,1,2), (2085,1,1), (8330,2,4), (6247,1,3) with t = 99/1000, 49/500, 99/1000, 99/1000 the rational triples are super-solutions at (t + epsilon_2/t^2, epsilon_1/t^3) (three exact inequalities each, entries >= 1, x < 4/27), and epsilon_1 R-bar < 10^-7 at each
++PASS: D3 T4: the certified couplings are at least 68 times below block 25's on every line, and the bounds are below 1/2 (the distinctness of the six laws)
++PASS: E1 T5: max_{v >= 1} (v - 1)/v^3 = 4/27 (at v = 3/2), so the recursion's domain at y = 0 is x <= 4/27; max_t t^2 (4/27 - t) = 256/531441 (at t = 8/81)
++PASS: E2 T5: d_3(4150, 1, 2) = 8311/17230811 exceeds 256/531441 while d_3(4165, 1, 2) = 8341/17355566 is below it: the route's ceiling on (p, 1, 2) lies between 4150 and 4165
++PASS: F1 the note carries the three fence sentences verbatim
++PASS: F2 the note contains no forbidden phrase (0 hits)
++PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
++PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
++per_element: executed — the deviations' closed forms at four weight triples; d_2's derivative; the increments of an amplified excuse
++per_site: executed — the two-level coupling's inequality at all 216 triples at five weight triples; the ceiling's crossing between 4150 and 4165 on (p,1,2)
++per_mode: executed — the extended construction on 932 + 2321 exhaustive configurations and 1200 random cones with every budget; the lifted subtree counts against the recursion's coefficients
++per_block: executed — the four super-solution certificates with epsilon_1 R-bar < 10^-7; the one-variable maxima 4/27 and 256/531441 symbolically
++lattice_wide: T1-T5 proved for every positive weight triple, T4 with content on the four lines above the stated couplings; the true strength not claimed
++PASS: G1 the five N5 resolution lines are printed
++TOTAL: PASS=20 FAIL=0
++
++----- stderr -----
++
+diff --git a/scripts/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_09_16.py b/scripts/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_09_16.py
+new file mode 100755
+index 0000000000..8f622f974e
+--- /dev/null
++++ b/scripts/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_09_16.py
+@@ -0,0 +1,761 @@
++#!/usr/bin/env python3
++"""Exact checks: the six-axis formation threshold lifted by a two-level domination — seeds and amplified nodes in the explanation tree.
++
++Scope.  T1: the three deviations' closed forms, their monotonicity in p, d_1 <= max(d_2, d_3), and the two-level coupling inequality
++at every predecessor state.  T2: the extended construction (amplified sites inside clusters; an amplified pole's excuse is its single
++predecessor; bad pairs; bad amplified poles kept) executed on every configuration of the depth-2 cone, every depth-3 configuration with
++at most four noise sites and random cones, with the tree, the classification, the identity Span + 1 - b at every refinement,
++forks = |S| - 1, refinements <= |S| - 1 + B, B <= |A| and E <= 3(|S| - 1) + 2|A|.  T3: the lift's slot structure on subtrees with
++<= 4 edges (counts against the recursion's coefficients).  T4: the four super-solution certificates and the bounds.  T5: the ceiling
++4/27 and 256/531441 symbolically, and d_3(4150) > 256/531441.  Exact arithmetic only (integers, Fractions and sympy); the runner scans
++its own source for floating-point literals.
++"""
++
++from __future__ import annotations
++
++import random
++import re
++import sys
++from collections import deque
++from fractions import Fraction
++from fractions import Fraction as F
++from itertools import combinations, product
++from pathlib import Path
++
++import sympy as sp
++
++AUDIT_TIMEOUT_SEC = 900
++AUDIT_INPUT_PATHS = (
++    "docs/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED_NODES_IN_THE_EXPLANATION_TREE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
++    "docs/MINIMAL_AXIOMS_2026-06-29.md",
++    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
++)
++ROOT = Path(__file__).resolve().parents[1]
++CLAIM_ID = "admissibility_rule_six_axis_formation_threshold_lifted_by_a_two_level_domination_seeds_and_amplified_nodes_in_the_explanation_tree_bounded_theorem_note_2026-09-16"
++BLOCK01_CLAIM_ID = "admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06"
++BLOCK01_FRAGMENT = "the static law of a product rule"
++AXIOM_NEEDLES = (
++    "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.",
++    "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.",
++    "Records form.",
++    "Only records are readable.",
++)
++
++MUTATION_GATE = {
++    "deviation_closed_form_wrong": "B",
++    "domination_state_wrong": "B",
++    "spanning_identity_wrong": "C",
++    "budget_amplified_dropped": "C",
++    "bad_pairs_wrong": "C",
++    "forks_identity_wrong": "C",
++    "subtree_bound_wrong": "D",
++    "certificate_wrong": "D",
++    "ceiling_wrong": "E",
++    "claim_transition_injected": "F",
++    "claim_classical_name_in_theorem": "F",
++}
++ACTIVE_MUTATION: str | None = None
++
++
++def mut(name: str) -> bool:
++    if name not in MUTATION_GATE:
++        raise KeyError(name)
++    return ACTIVE_MUTATION == name
++
++
++class Checks:
++    def __init__(self) -> None:
++        self.passed = 0
++        self.failed = 0
++        self.failed_families: set[str] = set()
++
++    def check(self, tag: str, ok: bool, msg: str) -> None:
++        if ok:
++            self.passed += 1
++            print(f"PASS: {tag} {msg}")
++        else:
++            self.failed += 1
++            self.failed_families.add(tag[0])
++            print(f"FAIL: {tag} {msg}")
++
++
++def normalize_text(text: str) -> str:
++    return re.sub(r"\s+", " ", text)
++
++
++# ============================================================================================ the extended construction (T2)
++E = [(1, 0, 0), (0, 1, 0), (0, 0, 1)]
++FORK_OFFSETS = [tuple(E[a][i] - E[b][i] for i in range(3)) for a in range(3) for b in range(3) if a != b]
++
++
++def add(a, b):
++    return (a[0] + b[0], a[1] + b[1], a[2] + b[2])
++
++
++def sub(a, b):
++    return (a[0] - b[0], a[1] - b[1], a[2] - b[2])
++
++
++def level(z):
++    return z[0] + z[1] + z[2]
++
++
++def M(k, z):
++    return F(z[k]) - F(level(z), 3)
++
++
++def preds(z):
++    return [sub(z, E[j]) for j in range(3)]
++
++
++def is_fork(u, v):
++    return sub(u, v) in FORK_OFFSETS
++
++
++def cone(x, depth):
++    out = []
++    for d1 in range(depth + 1):
++        for d2 in range(depth + 1 - d1):
++            for d3 in range(depth + 1 - d1 - d2):
++                out.append(sub(x, (d1, d2, d3)))
++    return out
++
++
++def run_automaton(sites, zeta):
++    """sites: list of space-time points closed under predecessors within the window (points outside are 0)."""
++    eta = {}
++    for z in sorted(sites, key=level):
++        ps = [eta.get(p, 0) for p in preds(z)]
++        maj = 1 if sum(ps) >= 2 else 0
++        eta[z] = 1 if (maj or zeta.get(z, 0)) else 0
++    return eta
++
++
++class Explainer:
++    def __init__(self, eta, zeta):
++        self.eta = eta
++        self.zeta = zeta
++        self.ones = {z for z, v in eta.items() if v == 1}
++        npred = {z: sum(eta.get(p, 0) for p in preds(z)) for z in self.ones}
++        self.noise = {z for z in self.ones if npred[z] == 0}          # S-nodes: seeds (no 1-predecessor)
++        self.amp = {z for z in self.ones if npred[z] == 1}            # A-nodes: amplified (exactly one 1-predecessor)
++        assert all(zeta.get(z, 0) == 1 for z in self.noise | self.amp)
++        self.amp_dir = {z: [j for j in range(3) if eta.get(preds(z)[j], 0) == 1][0] for z in self.amp}
++        # excuse pairs for processed ones: lexicographically first pair of indices among 1-predecessors
++        self.exc = {}
++        for z in self.ones:
++            if z in self.noise or z in self.amp:
++                continue
++            idx = [j for j in range(3) if eta.get(preds(z)[j], 0) == 1]
++            assert len(idx) >= 2, (z, idx)
++            self.exc[z] = (idx[0], idx[1])
++        self._cluster_cache = {}
++
++    def excuse_k(self, v, k):
++        """excuse of pole v for charge k: a processed pole's winning-pair member with index != k; an A-pole's single 1-predecessor."""
++        if v in self.amp:
++            w = preds(v)[self.amp_dir[v]]
++            assert M(k, w) - M(k, v) == (F(1, 3) if self.amp_dir[v] != k else F(-2, 3))
++            return w
++        i, j = self.exc[v]
++        cand = [a for a in (i, j) if a != k]
++        a = min(cand)
++        w = preds(v)[a]
++        assert M(k, w) - M(k, v) == F(1, 3)
++        return w
++
++    def is_bad(self, v, k):
++        return v in self.amp and self.amp_dir[v] == k
++
++    def arrows_down(self, z):
++        """arrows of the extended arrow graph: a processed or amplified 1-site to its 1-predecessors (all of them; one for an A-node)."""
++        if z in self.noise or z not in self.ones:
++            return []
++        return [p for p in preds(z) if p in self.ones]
++
++    def clusters_at(self, s):
++        """clusters at level s: components of the arrow graph on 1-sites with levels <= s, restricted to level s."""
++        if s in self._cluster_cache:
++            return self._cluster_cache[s]
++        pts = [z for z in self.ones if level(z) <= s]
++        parent = {z: z for z in pts}
++
++        def find(a):
++            while parent[a] != a:
++                parent[a] = parent[parent[a]]
++                a = parent[a]
++            return a
++
++        for z in pts:
++            for p in self.arrows_down(z):
++                ra, rb = find(z), find(p)
++                if ra != rb:
++                    parent[ra] = rb
++        comp = {}
++        for z in pts:
++            if level(z) == s:
++                comp.setdefault(find(z), set()).add(z)
++        cl = {}
++        for members in comp.values():
++            fs = frozenset(members)
++            for z in members:
++                cl[z] = fs
++        self._cluster_cache[s] = cl
++        return cl
++
++    def explain(self, root):
++        """Build the extended explanation tree of a 1-site root. Returns (nodes, edges, seed_nodes, amp_nodes, n_refinements, bad_total).
++        edges: frozenset -> 'arrow' (excuse), 'amp' (amplification arrow), 'fork'."""
++        assert root in self.ones
++        edges = {}
++        processed = set()
++        amp_nodes = set()
++        unproc = [(frozenset([root]), (root, root, root))]
++        refinements = 0
++        bad_total = 0
++        if root in self.noise:
++            return {root}, edges, {root}, set(), 0, 0
++
++        def incident(pt):
++            return any(pt in e for e in edges)
++
++        while True:
++            active = [(K, poles) for (K, poles) in unproc if not all(v in self.noise for v in poles)]
++            if not active:
++                break
++            K, poles = active[0]
++            unproc.remove((K, poles))
++            assert all(v not in self.noise for v in poles), "cluster with mixed noise poles"
++            s = level(next(iter(K)))
++            u = [self.excuse_k(poles[j], j) for j in range(3)]
++            bad = sum(1 for j in range(3) if self.is_bad(poles[j], j))
++            bad_total += bad
++            cl = self.clusters_at(s - 1)
++            V_K = []
++            for z in K:
++                for p in self.arrows_down(z):
++                    c = cl[p]
++                    if c not in V_K:
++                        V_K.append(c)
++            # fork edges between distinct clusters of V_K (one representative fork each)
++            fam = [("cluster", c) for c in V_K]
++            for a, b in combinations(range(len(V_K)), 2):
++                found = None
++                for w in sorted(V_K[a]):
++                    for off in FORK_OFFSETS:
++                        w2 = add(w, off)
++                        if w2 in V_K[b]:
++                            found = frozenset([w, w2])
++                            break
++                    if found:
++                        break
++                if found:
++                    fam.append(("fork", found))
++            # intersection graph on fam
++            n = len(fam)
++            adj = {i: set() for i in range(n)}
++            for i, j in combinations(range(n), 2):
++                if fam[i][0] != fam[j][0] and (fam[i][1] & fam[j][1]):   # bipartite: clusters adjacent to the forks that touch them
++                    adj[i].add(j); adj[j].add(i)
++            term = []
++            for j in range(3):
++                ti = [i for i in range(n) if fam[i][0] == "cluster" and u[j] in fam[i][1]]
++                assert len(ti) == 1, (u[j], ti)
++                term.append(ti[0])
++            # minimal tree connecting the three terminals: shortest paths then prune
++            def bfs_path(src, dsts):
++                prev = {src: None}
++                dq = deque([src])
++                while dq:
++                    a = dq.popleft()
++                    if a in dsts:
++                        path = []
++                        while a is not None:
++                            path.append(a); a = prev[a]
++                        return path[::-1]
++                    for b in adj[a]:
++                        if b not in prev:
++                            prev[b] = a; dq.append(b)
++                raise AssertionError("cause graph not connected")
++            p12 = bfs_path(term[0], {term[1]})
++            tree_nodes = set(p12)
++            p3 = bfs_path(term[2], tree_nodes)
++            tree_nodes |= set(p3)
++            tedges = set()
++            for path in (p12, p3):
++                for a, b in zip(path, path[1:]):
++                    tedges.add(frozenset([a, b]))
++            # prune non-terminal leaves
++            changed = True
++            while changed:
++                changed = False
++                for i in list(tree_nodes):
++                    deg = sum(1 for e in tedges if i in e)
++                    if deg <= 1 and i not in term:
++                        tree_nodes.discard(i)
++                        tedges = {e for e in tedges if i not in e}
++                        changed = True
++            tnbr = {i: set() for i in tree_nodes}
++            for e in tedges:
++                a, b = tuple(e)
++                tnbr[a].add(b); tnbr[b].add(a)
++            # reduced point sets and pole assignment
++            def inter_point(i, j):
++                return min(fam[i][1] & fam[j][1])
++            reduced = {}
++            for i in tree_nodes:
++                pts = set()
++                for j in range(3):
++                    if term[j] == i:
++                        pts.add(u[j])
++                for nb in tnbr[i]:
++                    pts.add(inter_point(i, nb))
++                reduced[i] = pts
++            # direction from i toward terminal term[j] within the tree
++            def next_toward(i, target):
++                if i == target:
++                    return None
++                prev = {i: None}
++                dq = deque([i])
++                while dq:
++                    a = dq.popleft()
++                    if a == target:
++                        b = a
++                        while prev[b] != i:
++                            b = prev[b]
++                        return b
++                    for b in tnbr[a]:
++                        if b not in prev:
++                            prev[b] = a; dq.append(b)
++                raise AssertionError
++            pole_of = {}
++            for i in tree_nodes:
++                pl = []
++                for j in range(3):
++                    if u[j] in reduced[i]:
++                        pl.append(u[j])
++                    else:
++                        nb = next_toward(i, term[j])
++                        pl.append(inter_point(i, nb))
++                pole_of[i] = tuple(pl)
++                assert all(pt in reduced[i] for pt in pl)
++            total = sum(M(j, pole_of[i][j]) for i in tree_nodes for j in range(3))
++            expected = sum(M(j, u[j]) for j in range(3))
++            assert total == expected, ("spanning lemma failed", total, expected)
++            assert expected == sum(M(j, poles[j]) for j in range(3)) + 1 - bad + (1 if mut("spanning_identity_wrong") and bad > 0 else 0)
++            # new clusters and forks
++            for i in tree_nodes:
++                if fam[i][0] == "cluster":
++                    unproc.append((fam[i][1], pole_of[i]))
++                else:
++                    a, b = tuple(fam[i][1])
++                    edges[frozenset([a, b])] = "fork"
++            # kept poles: incident ones, bad A-poles (forced), or the first pole if none
++            kept = {}
++            for j in range(3):
++                v = poles[j]
++                if (incident(v) or self.is_bad(v, j)) and v not in kept:
++                    kept[v] = j
++            if not kept:
++                kept[poles[0]] = 0
++            for v, j in kept.items():
++                if v in self.amp:
++                    edges[frozenset([v, preds(v)[self.amp_dir[v]]])] = "amp"
++                    amp_nodes.add(v)
++                else:
++                    edges[frozenset([v, u[j]])] = "arrow"
++                    processed.add(v)
++            refinements += 1
++        noise_nodes = set()
++        for (K, poles) in unproc:
++            assert len(K) == 1 and all(v in self.noise for v in poles)
++            noise_nodes |= set(K)
++        nodes = set(processed) | amp_nodes | noise_nodes
++        for e in edges:
++            nodes |= set(e)
++        return nodes, edges, noise_nodes, amp_nodes, refinements, bad_total
++
++
++def check_tree(nodes, edges, root, explainer):
++    """the point graph must be a tree, contain the root, use only arrows/forks of G, noise nodes are noise sites."""
++    ok = root in nodes
++    ok = ok and len(edges) == len(nodes) - 1
++    # connectivity
++    nb = {v: set() for v in nodes}
++    for e, kind in edges.items():
++        a, b = tuple(e)
++        nb[a].add(b); nb[b].add(a)
++        if kind in ("arrow", "amp"):
++            ok = ok and (b in preds(a) or a in preds(b))
++        else:
++            ok = ok and is_fork(a, b)
++    seen = {root}; dq = deque([root])
++    while dq:
++        a = dq.popleft()
++        for b in nb[a]:
++            if b not in seen:
++                seen.add(b); dq.append(b)
++    ok = ok and seen == nodes
++    ok = ok and all(z in explainer.ones for z in nodes)
++    return ok
++
++
++# ============================================================================================ family A
++def family_a(checks: Checks, texts) -> None:
++    note, axioms, block01 = texts
++    checks.check("A1", CLAIM_ID in note and len(re.findall(r"^claim_id:", note, flags=re.M)) == 1, "the note carries its claim_id once")
++    checks.check("A2", all(n in normalize_text(axioms) for n in AXIOM_NEEDLES), "the axioms memo carries the four sentences quoted under Premises")
++    checks.check("A3", BLOCK01_CLAIM_ID in block01 and BLOCK01_FRAGMENT in block01.lower(), "block 01's note (on main) carries its claim_id and the rule's product form")
++    checks.check("A4", all(Path(ROOT, p).exists() for p in AUDIT_INPUT_PATHS), "all declared inputs exist")
++
++
++# ============================================================================================ family B
++def phi_of(v, w, p, q, r):
++    if v == w:
++        return p
++    if v == (w ^ 1):
++        return q
++    return r
++
++
++def conditional(a, triple, p, q, r):
++    ws = [phi_of(v, triple[0], p, q, r) * phi_of(v, triple[1], p, q, r) * phi_of(v, triple[2], p, q, r) for v in range(6)]
++    return ws[a] / sum(ws)
++
++
++def deviations(p, q, r):
++    p, q, r = Fraction(p), Fraction(q), Fraction(r)
++    d1 = 1 - p ** 3 / (p ** 3 + q ** 3 + 4 * r ** 3)
++    d2 = 1 - p ** 2 * q / (p * q * (p + q) + 4 * r ** 3)
++    d3 = 1 - p ** 2 * r / (r * (p ** 2 + q ** 2) + r ** 2 * (p + q) + 2 * r ** 3)
++    return d1, d2, d3
++
++
++def family_b(checks: Checks) -> None:
++    p, q, r = sp.symbols("p q r", positive=True)
++    d1 = 1 - p ** 3 / (p ** 3 + q ** 3 + 4 * r ** 3)
++    d2 = 1 - p ** 2 * q / (p * q * (p + q) + 4 * r ** 3)
++    if mut("deviation_closed_form_wrong"):
++        d2 = 1 - p ** 2 * q / (p * q * (p + q) + 2 * r ** 3)
++    d3 = 1 - p ** 2 * r / (r * (p ** 2 + q ** 2) + r ** 2 * (p + q) + 2 * r ** 3)
++    ok = True
++    for (pv, qv, rv) in ((3, 1, 2), (10, 1, 2), (30, 1, 2), (7, 3, 5)):
++        subs = {p: pv, q: qv, r: rv}
++        c1 = conditional(0, (0, 0, 0), Fraction(pv), Fraction(qv), Fraction(rv))
++        c2 = conditional(0, (0, 0, 1), Fraction(pv), Fraction(qv), Fraction(rv))
++        c3 = conditional(0, (0, 0, 2), Fraction(pv), Fraction(qv), Fraction(rv))
++        ok = ok and sp.Rational(1) - sp.Rational(c1.numerator, c1.denominator) == d1.subs(subs) and sp.Rational(1) - sp.Rational(c2.numerator, c2.denominator) == d2.subs(subs) and sp.Rational(1) - sp.Rational(c3.numerator, c3.denominator) == d3.subs(subs)
++    der_ok = all(sp.simplify(sp.together(sp.diff(d, p)) * (-1)).as_numer_denom()[0].is_positive is not False for d in (d1, d3))
++    n2 = sp.expand(sp.numer(sp.together(sp.diff(d2, p))))
++    der2 = sp.simplify(n2 + (q ** 3 * p ** 2 + 8 * q * r ** 3 * p)) == 0
++    checks.check("B1", ok and der2, "T1(a): d_1 = 1 - K(a|a,a,a), d_2 = 1 - K(a|a,a,-a), d_3 = 1 - K(a|a,a,b) in closed form (checked against the conditional at four weight triples); d_2's derivative in p has numerator -(q^3 p^2 + 8 q r^3 p) < 0 (d_1, d_3 as in block 25)")
++    # d_1 <= max(d_2, d_3) and the two-level coupling inequality at every predecessor state, at the four lines' thresholds and at (11, 1, 2)
++    ok2 = True
++    for (pv, qv, rv) in ((4165, 1, 2), (2085, 1, 1), (8330, 2, 4), (6247, 1, 3), (11, 1, 2)):
++        e1, e2 = deviations(pv, qv, rv)[0], max(deviations(pv, qv, rv)[1:])
++        ok2 = ok2 and e1 <= e2
++        for triple in product(range(6), repeat=3):
++            n_a = sum(1 for v in triple if v == 0)
++            dev = 1 - conditional(0, triple, Fraction(pv), Fraction(qv), Fraction(rv))
++            if n_a == 3:
++                ok2 = ok2 and dev <= e1
++            elif n_a == 2:
++                bound = e2 if not mut("domination_state_wrong") else e1
++                ok2 = ok2 and dev <= bound
++    checks.check("B2", ok2, "T1(b): at the four thresholds and at (11, 1, 2): d_1 <= max(d_2, d_3); a site whose three predecessors equal a dissents with probability at most epsilon_1 and one with exactly two equal to a with probability at most epsilon_2 (all 216 triples)")
++
++
++# ============================================================================================ family C
++def test_config(x, sites, zeta, stats):
++    eta = run_automaton(sites, zeta)
++    if eta[x] != 1:
++        return True
++    ex = Explainer(eta, zeta)
++    try:
++        nodes, edges, S, A, refs, bad = ex.explain(x)
++    except AssertionError:
++        return False
++    ok = check_tree(nodes, edges, x, ex)
++    downs = {v: 0 for v in nodes}
++    E = Fk = Am = 0
++    for e, kind in edges.items():
++        a, b = tuple(e)
++        if kind == "fork":
++            Fk += 1
++            continue
++        upper = a if b in preds(a) else b
++        downs[upper] += 1
++        if kind == "arrow":
++            E += 1
++        else:
++            Am += 1
++    nS, nA = len(S), len(A)
++    ok = ok and all(z in ex.noise for z in S) and all(z in ex.amp for z in A) and max(downs.values()) <= 1
++    ok = ok and {v for v in nodes if downs[v] == 0} == S and Am == nA
++    forks_target = nS - 1 if not mut("forks_identity_wrong") else nS
++    ok = ok and Fk == forks_target and refs <= nS - 1 + bad
++    ok = ok and (bad <= nA if not mut("bad_pairs_wrong") else bad == 0)
++    slack = 2 if not mut("budget_amplified_dropped") else 0
++    ok = ok and E <= 3 * (nS - 1) + slack * nA
++    stats["cases"] += 1
++    stats["withA"] += (nA > 0)
++    if nA > 0:
++        stats["worst"] = max(stats["worst"], Fraction(E - 3 * (nS - 1), nA))
++    return ok
++
++
++def family_c(checks: Checks) -> None:
++    x = (0, 0, 0)
++    # C1: increments of an amplified excuse
++    k, j = 1, 1
++    v = (2, -1, -1)
++    w = sub(v, E[j])
++    inc = [M(kk, w) - M(kk, v) for kk in range(3)]
++    checks.check("C1", inc == [Fraction(1, 3), Fraction(-2, 3), Fraction(1, 3)], "T2.2: an amplified site's excuse (its single predecessor v - e_j) raises the charges k != j by 1/3 and lowers the charge j by 2/3, so a bad pair costs exactly one unit of span")
++    stats = {"cases": 0, "withA": 0, "worst": Fraction(-100)}
++    sites2 = cone(x, 2)
++    ok1 = True
++    for bits in product((0, 1), repeat=len(sites2)):
++        zeta = {z: b for z, b in zip(sites2, bits) if b}
++        ok1 = ok1 and test_config(x, sites2, zeta, stats)
++    checks.check("C2", ok1 and stats["cases"] == 932, f"T2: on all 1024 noise configurations of the depth-2 cone ({stats['cases']} explained, {stats['withA']} with amplified nodes) the extended construction builds a tree through 1-sites with seeds without 1-predecessors and amplified nodes with exactly one, the identity Span + 1 - b holds at every refinement, forks = |S| - 1, refinements <= |S| - 1 + B, B <= |A| and E <= 3(|S| - 1) + 2|A|")
++    stats3 = {"cases": 0, "withA": 0, "worst": Fraction(-100)}
++    sites3 = cone(x, 3)
++    ok2 = True
++    for kk in range(1, 5):
++        for combo in combinations(sites3, kk):
++            ok2 = ok2 and test_config(x, sites3, {z: 1 for z in combo}, stats3)
++    random.seed(30)
++    stats4 = {"cases": 0, "withA": 0, "worst": Fraction(-100)}
++    for trial in range(1200):
++        depth = 3 + trial % 6
++        dens = (10, 20, 35, 50)[trial % 4]
++        sites = cone(x, depth)
++        zeta = {z: 1 for z in sites if random.randrange(100) < dens}
++        ok2 = ok2 and test_config(x, sites, zeta, stats4)
++    checks.check("C3", ok2 and stats3["cases"] == 2321 and stats4["cases"] > 400, f"T2: every depth-3 configuration with at most four noise sites ({stats3['cases']} explained) and 1200 random cones of depth 3-8 ({stats4['cases']} explained, {stats4['withA']} with amplified nodes) pass the same checks")
++    worst = max(stats["worst"], stats3["worst"], stats4["worst"])
++    checks.check("C4", worst <= Fraction(2, 3), f"T2: the largest executed value of (E - 3(|S| - 1))/|A| over trees with amplified nodes is {worst} (the proved budget allows 2)")
++
++
++# ============================================================================================ family D
++TYPES = [("down", j) for j in range(3)] + [("up", j) for j in range(3)] + [("fork", (i, j)) for i in range(3) for j in range(3) if i != j]
++
++
++def step(v, ty):
++    kind, d = ty
++    if kind == "down":
++        return sub(v, E[d])
++    if kind == "up":
++        return add(v, E[d])
++    return add(sub(v, E[d[1]]), E[d[0]])
++
++
++def gf_coefficients(A, FM, up_slots=3):
++    def pmul(P, Q):
++        R = {}
++        for (a1, f1), c1 in P.items():
++            for (a2, f2), c2 in Q.items():
++                if a1 + a2 <= A and f1 + f2 <= FM:
++                    R[(a1 + a2, f1 + f2)] = R.get((a1 + a2, f1 + f2), 0) + c1 * c2
++        return R
++
++    def ppow(P, n):
++        R = {(0, 0): 1}
++        for _ in range(n):
++            R = pmul(R, P)
++        return R
++
++    def one_plus(P, c, da, df):
++        R = {(0, 0): 1}
++        for (a, f), v in P.items():
++            if a + da <= A and f + df <= FM:
++                R[(a + da, f + df)] = R.get((a + da, f + df), 0) + c * v
++        return R
++
++    D = U = Fp = {(0, 0): 1}
++    for _ in range(A + FM + 1):
++        xU, xD3, yF = one_plus(U, 1, 1, 0), one_plus(D, 3, 1, 0), one_plus(Fp, 1, 0, 1)
++        D, U, Fp = pmul(pmul(ppow(xU, 2), xD3), ppow(yF, 6)), pmul(ppow(xU, up_slots), ppow(yF, 6)), pmul(pmul(ppow(xU, 3), xD3), ppow(yF, 5))
++    xU, xD3, yF = one_plus(U, 1, 1, 0), one_plus(D, 3, 1, 0), one_plus(Fp, 1, 0, 1)
++    return pmul(pmul(ppow(xU, 3), xD3), ppow(yF, 6))
++
++
++def exp_bounds(x: Fraction, terms=None):
++    n = terms if terms is not None else 2 * (int(x) + 1) + 40
++    lo = Fraction(0)
++    term = Fraction(1)
++    for k in range(n + 1):
++        lo += term
++        term = term * x / (k + 1)
++    return lo, lo + term / (1 - x / (n + 2))
++
++
++def family_d(checks: Checks) -> None:
++    x = (0, 0, 0)
++    trees = {frozenset()}
++    counts = {(0, 0): 1}
++    for _ in range(4):
++        nxt = set()
++        for T in trees:
++            nodes = {x} | {c for (_p, c, _t) in T}
++            downs = {v: 0 for v in nodes}
++            for (p, c, ty) in T:
++                if ty[0] == "down":
++                    downs[p] += 1
++                if ty[0] == "up":
++                    downs[c] += 1
++            for v in nodes:
++                for ty in TYPES:
++                    w = step(v, ty)
++                    if w in nodes or (ty[0] == "down" and downs[v] >= 1):
++                        continue
++                    nxt.add(T | {(v, w, ty)})
++        trees = nxt
++        for T in trees:
++            a = sum(1 for e in T if e[2][0] != "fork")
++            counts[(a, len(T) - a)] = counts.get((a, len(T) - a), 0) + 1
++    coeff = gf_coefficients(5, 5, up_slots=2 if mut("subtree_bound_wrong") else 3)
++    within = all(c <= coeff.get(k, 0) for k, c in counts.items())
++    checks.check("D1", sum(counts.values()) == 66103 and within, f"T3: the {sum(counts.values())} subtrees of G with at most four edges and at most one arrow to a predecessor per node, by (arrows, forks), are each at most the recursion's coefficient — the lift with both kinds of arrow in the arrow slots")
++    certs = {
++        (4165, 1, 2): (Fraction(99, 1000), Fraction(56694252249173, 500000000000), Fraction(3279872914431, 1000000000000), Fraction(168429466648591, 1000000000000)),
++        (2085, 1, 1): (Fraction(49, 500), Fraction(88632394933177, 1000000000000), Fraction(3254100818939, 1000000000000), Fraction(131311435970231, 1000000000000)),
++        (8330, 2, 4): (Fraction(99, 1000), Fraction(56694252249173, 500000000000), Fraction(3279872914431, 1000000000000), Fraction(168429466648591, 1000000000000)),
++        (6247, 1, 3): (Fraction(99, 1000), Fraction(24445325573453, 250000000000), Fraction(3264868815393, 1000000000000), Fraction(9064364177089, 62500000000)),
++    }
++    ok = True
++    bounds = {}
++    for (pv, qv, rv), (t, Db, Ub, Fb) in certs.items():
++        d1, d2, d3 = deviations(pv, qv, rv)
++        e1, e2 = d1, max(d2, d3)
++        if mut("certificate_wrong"):
++            e2 = e2 * Fraction(11, 10)
++        xx, yy = t + e2 / t ** 2, e1 / t ** 3
++        rD = (1 + xx * Ub) ** 2 * (1 + 3 * xx * Db) * (1 + yy * Fb) ** 6
++        rU = (1 + xx * Ub) ** 3 * (1 + yy * Fb) ** 6
++        rF = (1 + xx * Ub) ** 3 * (1 + 3 * xx * Db) * (1 + yy * Fb) ** 5
++        Rbar = (1 + xx * Ub) ** 3 * (1 + 3 * xx * Db) * (1 + yy * Fb) ** 6
++        ok = ok and Db >= rD and Ub >= rU and Fb >= rF and min(Db, Ub, Fb) >= 1 and t <= 1 and xx < Fraction(4, 27)
++        bounds[(pv, qv, rv)] = e1 * Rbar
++        ok = ok and e1 * Rbar < Fraction(1, 10 ** 7)
++    checks.check("D2", ok, "T3-T4: at (4165,1,2), (2085,1,1), (8330,2,4), (6247,1,3) with t = 99/1000, 49/500, 99/1000, 99/1000 the rational triples are super-solutions at (t + epsilon_2/t^2, epsilon_1/t^3) (three exact inequalities each, entries >= 1, x < 4/27), and epsilon_1 R-bar < 10^-7 at each")
++    # D3: the previous thresholds' factor and the distinctness arithmetic
++    old = {(1, 2): 285718, (1, 1): 142861, (2, 4): 571436, (1, 3): 428576}
++    new = {(1, 2): 4165, (1, 1): 2085, (2, 4): 8330, (1, 3): 6247}
++    ok3 = all(Fraction(old[k], new[k]) >= 68 for k in old) and all(b < Fraction(1, 2) for b in bounds.values())
++    checks.check("D3", ok3, "T4: the certified couplings are at least 68 times below block 25's on every line, and the bounds are below 1/2 (the distinctness of the six laws)")
++
++
++# ============================================================================================ family E
++def family_e(checks: Checks) -> None:
++    v, t = sp.symbols("v t", positive=True)
++    top = sp.Rational(4, 27)
++    if mut("ceiling_wrong"):
++        top = sp.Rational(5, 27)
++    m1 = sp.maximum((v - 1) / v ** 3, v, sp.Interval(1, sp.oo))
++    m2 = sp.maximum(t ** 2 * (sp.Rational(4, 27) - t), t, sp.Interval(0, sp.Rational(4, 27)))
++    ok = sp.simplify(m1 - top) == 0 and sp.simplify(m2 - sp.Rational(256, 531441)) == 0
++    # the tangency point and the maximiser
++    ok = ok and sp.simplify(((v - 1) / v ** 3).subs(v, sp.Rational(3, 2)) - sp.Rational(4, 27)) == 0 and sp.simplify((t ** 2 * (sp.Rational(4, 27) - t)).subs(t, sp.Rational(8, 81)) - sp.Rational(256, 531441)) == 0
++    checks.check("E1", ok, "T5: max_{v >= 1} (v - 1)/v^3 = 4/27 (at v = 3/2), so the recursion's domain at y = 0 is x <= 4/27; max_t t^2 (4/27 - t) = 256/531441 (at t = 8/81)")
++    d3 = deviations(4150, 1, 2)[2]
++    d3b = deviations(4165, 1, 2)[2]
++    checks.check("E2", d3 > Fraction(256, 531441) > d3b, f"T5: d_3(4150, 1, 2) = {d3} exceeds 256/531441 while d_3(4165, 1, 2) = {d3b} is below it: the route's ceiling on (p, 1, 2) lies between 4150 and 4165")
++
++
++# ============================================================================================ family F
++FENCES = (
++    "This note proves, for the six-axis formation law in level time, that its dissent from the all-`a` plane is dominated by the two-level noisy majority automaton with seed noise `d_1` and amplification noise `max(d_2, d_3)`, that this automaton's ones have extended explanation trees with `forks = |S| − 1` and `E ≤ 3(|S| − 1) + 2|A|`, that its density of ones is at most `ε₁ R(t + ε₂/t², ε₁/t³)`, and hence that the formation law keeps its plane with at least six invariant laws for `p ≥ 4165` at `(p, 1, 2)`, `p ≥ 2085` at `(p, 1, 1)`, `p ≥ 8330` at `(p, 2, 4)`, `p ≥ 6247` at `(p, 1, 3)`, with the route's ceiling `ε₂ < 256/531441`; it does not locate the true strength, does not prove the sharper bad-pair budget, does not treat other menus or orders, does not select a reading, rule or coupling as physical, and adopts no clause.",
++    "No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
++    "No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.",
++)
++FORBIDDEN = (
++    "the physical order", "the physical rule", "the physical coupling", "the physical dimension", "the physical reading", "for every coupling", "selects the", "fires wake condition",
++    "the Bridge weights", "the Bridge conjecture", "certified", "converge", "emergent", "phase transition", "critical", "washes out", "toward the plane", "the trend",
++    "sharp threshold", "the transition point", "the ordered phase begins at",
++)
++CLAIM_INJECTIONS = {"claim_transition_injected": "Hence the ordered phase begins at p = 4165."}
++CLASSICAL_NAMES = ("Toom", "Berman", "Simon", "Gács", "Swart", "Szabó", "Toninelli", "Bramson", "Gray", "Krylov", "Bogolyubov", "Choquet", "Peierls", "Dobrushin")
++ALLOWED_NAME_SECTIONS = ("Prior art and what is new", "Imports", "Premises and declared objects", "Review record")
++SCAN_MARKER = "float-scan-marker-line"
++
++
++def family_f(checks: Checks, note_text: str) -> None:
++    text = note_text
++    for name, phrase in CLAIM_INJECTIONS.items():
++        if mut(name):
++            text = text.replace("## Theorem T5", phrase + "\n\n## Theorem T5", 1)
++    if mut("claim_classical_name_in_theorem"):
++        text = text.replace("## Theorem T2", "## Theorem T2 (after Toom)", 1)
++    norm = normalize_text(text)
++    checks.check("F1", all(normalize_text(f) in norm for f in FENCES), "the note carries the three fence sentences verbatim")
++    hits = [p for p in FORBIDDEN if p in text]
++    checks.check("F2", not hits, f"the note contains no forbidden phrase ({len(hits)} hits)")
++    src = Path(__file__).read_text(encoding="utf-8")
++    body = src.split(SCAN_MARKER)[0]
++    float_hits = re.findall(r"(?<![\w.])\d+\.\d+(?![\w.])|\bfloat\(|\.evalf\(|\bN\(", body)
++    checks.check("F3", not float_hits, f"runner source: no floating-point literal or conversion call ({len(float_hits)} hits)")
++    sections = re.split(r"^## ", text, flags=re.M)
++    offenders = []
++    for sec in sections[1:]:
++        title = sec.split("\n", 1)[0].strip()
++        if any(title.startswith(a) for a in ALLOWED_NAME_SECTIONS):
++            continue
++        for nm in CLASSICAL_NAMES:
++            if nm in sec:
++                offenders.append((title[:40], nm))
++    offenders += [("front matter", nm) for nm in CLASSICAL_NAMES if nm in sections[0]]
++    checks.check("F4", not offenders, f"the authors' names appear only under Prior art, Imports, the Premises and the Review record ({len(offenders)} offenders)")
++
++
++# ============================================================================================ family G
++N5_LINES = (
++    "per_element: executed — the deviations' closed forms at four weight triples; d_2's derivative; the increments of an amplified excuse",
++    "per_site: executed — the two-level coupling's inequality at all 216 triples at five weight triples; the ceiling's crossing between 4150 and 4165 on (p,1,2)",
++    "per_mode: executed — the extended construction on 932 + 2321 exhaustive configurations and 1200 random cones with every budget; the lifted subtree counts against the recursion's coefficients",
++    "per_block: executed — the four super-solution certificates with epsilon_1 R-bar < 10^-7; the one-variable maxima 4/27 and 256/531441 symbolically",
++    "lattice_wide: T1-T5 proved for every positive weight triple, T4 with content on the four lines above the stated couplings; the true strength not claimed",
++)
++
++
++def family_g(checks: Checks) -> None:
++    for line in N5_LINES:
++        print(line)
++    checks.check("G1", len(N5_LINES) == 5, "the five N5 resolution lines are printed")
++
++
++# ============================================================================================ main
++def main(argv) -> int:
++    global ACTIVE_MUTATION
++    if "--list-mutations" in argv:
++        for name, fam in MUTATION_GATE.items():
++            print(f"{name} {fam}")
++        return 0
++    if "--mutation" in argv:
++        ACTIVE_MUTATION = argv[argv.index("--mutation") + 1]
++        if ACTIVE_MUTATION not in MUTATION_GATE:
++            print(f"unknown mutation {ACTIVE_MUTATION}")
++            return 2
++    print("AUDIT_INPUT_PATHS:")
++    for p in AUDIT_INPUT_PATHS:
++        print(f"  {p}")
++    texts = [Path(ROOT, p).read_text(encoding="utf-8") if Path(ROOT, p).exists() else "" for p in AUDIT_INPUT_PATHS]
++    checks = Checks()
++    family_a(checks, texts)
++    family_b(checks)
++    family_c(checks)
++    family_d(checks)
++    family_e(checks)
++    family_f(checks, texts[0])
++    family_g(checks)
++    if ACTIVE_MUTATION:
++        print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
++        print(f"mutation_family_observed: {''.join(sorted(checks.failed_families)) or '-'}")
++    print(f"TOTAL: PASS={checks.passed} FAIL={checks.failed}")
++    return 0 if checks.failed == 0 else 1
++
++
++if __name__ == "__main__":
++    sys.exit(main(sys.argv[1:]))
++# float-scan-marker-line

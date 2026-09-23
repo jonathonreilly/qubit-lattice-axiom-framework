@@ -1,0 +1,40 @@
+[detached HEAD a4328b4377] Preserve independently reviewed source unit PR8171
+ Date: Wed Sep 23 00:09:28 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 24 files changed, 957 insertions(+)
+ create mode 100644 docs/SPHERE_FORMATION_KERNEL_SENSITIVITY_AND_LEVEL_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-09-16.md
+ create mode 100644 docs/work_history/review_loop/pr8171/README.md
+ create mode 100644 docs/work_history/review_loop/pr8171/originals/01-APPROACH_REGISTRY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8171/originals/02-CHECKER_block27_findings.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8171/originals/03-CLAIM_STATUS_CERTIFICATE_block27.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8171/originals/04-GOAL_block27.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8171/originals/05-HANDOFF.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8171/originals/06-OPPORTUNITY_QUEUE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8171/originals/07-RESULTS_block27.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8171/originals/08-REVIEW_HISTORY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8171/originals/09-STATE.yaml.gz
+ create mode 100644 docs/work_history/review_loop/pr8171/originals/10-TRACE_GATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8171/originals/11-supervisor_control_block27.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8171/originals/12-supervisor_control_block27.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8171/originals/13-supervisor_control_block27_refuter.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8171/originals/14-supervisor_control_block27_refuter.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8171/originals/15-ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_WEAK_COUPLING_THE_CAUSAL_COUPLING_CONTRACTS_ONE_INVARIANT_LAW_AND_EXPONENTIAL_LOSS_OF_MEMORY_BELOW_ONE_OVER_ROOT_THREE_BOUNDED_THEOREM_NOTE_2026-09-16.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8171/originals/16-citation_graph_manifest.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8171/originals/17-admissibility_rule_unsoldered_formation_law_weak_coupling_causal_coupling_contracts_one_invariant_law_2026_09_16.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8171/originals/18-admissibility_rule_unsoldered_formation_law_weak_coupling_causal_coupling_contracts_one_invariant_law_2026_09_16.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8171/pr8171-deferred-uniform-route-ceiling.txt
+ create mode 100644 docs/work_history/review_loop/pr8171/pr8171-original-manifest.json
+ create mode 100644 logs/runner-cache/sphere_formation_kernel_sensitivity_level_contraction_check_2026_09_16.txt
+ create mode 100755 scripts/sphere_formation_kernel_sensitivity_level_contraction_check_2026_09_16.py
+FROZEN a4328b4377c2f160818bd1f1be6be467fadeeb43 sources 24 inputs 51 notes 1

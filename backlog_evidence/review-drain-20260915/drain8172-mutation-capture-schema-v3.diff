@@ -1,0 +1,11 @@
+--- drain8172-mutation-capture-v2.py
++++ drain8172-mutation-capture-v3.py
+@@ -24,7 +24,7 @@
+     ap.add_argument('--capture-authorized',action='store_true',required=True);a=ap.parse_args();assert a.capture_authorized
+     rp,record=load(a.record,a.record_sha256);cp,cold=load(a.cold,a.cold_sha256);pp,primary=load(a.primary_receipt,a.primary_receipt_sha256)
+     assert record['schema_version']==2 and record['unit_id']=='PR8172'
+-    assert cold['reviewer_session']=='/root/review_8172' and cold['tree']==record['source']['tree']
++    assert cold['reviewer']=='/root/review_8172' and cold['tree']==record['source']['tree']
+     assert COLD_REPORT_BINDING==dict(path=str(cp),sha256=sha(cp),tree=cold['tree'],verdict_pointer=a.cold_verdict_pointer,verdict=pointer(cold,a.cold_verdict_pointer))
+     assert pointer(cold,a.cold_verdict_pointer) in {'CAPTURE_ELIGIBLE','CAPTURE_ELIGIBLE on exact frozen source and inputs; no material source blocker. Not final evidence or landing PASS.'},'Unknown cold verdict requires new reviewed adapter, never inferred approval'
+     assert primary['status']=='CAPTURED; no scientific verdict or staging' and primary['error'] is None

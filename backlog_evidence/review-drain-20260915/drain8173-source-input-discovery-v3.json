@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "kind": "read-only-source-discovery-not-execution",
+  "base": "8bf464953779b8ada8415208e89a656411f9f525",
+  "primary": "scripts/sphere_static_finite_volume_covariance_response_projected_mode_sum_check_2026_09_16.py",
+  "primary_sha256": "54441f119d85ebc62de0127366305e8b9871592b33f064f0c0f4d633fdb13682",
+  "runtime_inputs": [
+    {
+      "path": "docs/SPHERE_STATIC_FINITE_VOLUME_GAUSSIAN_COVARIANCE_FIXED_AXIS_RESPONSE_AND_PROJECTED_MODE_SUM_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "a73ca20d57b4d738084d43748f476da9c353d3f65d56d846ea7525bc93104f05",
+      "role": "proof source"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "framework authority"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "role": "context only, not mathematical premise"
+    }
+  ],
+  "input_fingerprint": "742f91bda706c9fdb27044ed67900f1a16ec3b28cc2f198a4f337c3465a96f14",
+  "declared_timeout": 60,
+  "packet_transitive_helpers": [],
+  "graph_helpers": [],
+  "citations": [
+    "docs/work_history/review_loop/pr8173/README.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md"
+  ],
+  "graph_primary": "scripts/sphere_static_finite_volume_covariance_response_projected_mode_sum_check_2026_09_16.py",
+  "framework_dependencies": [
+    "docs/MINIMAL_AXIOMS_2026-06-29.md"
+  ],
+  "mathematical_premise_notes": [],
+  "context_parents": [
+    {
+      "path": "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_ZERO_FIELD_COMPONENT_FOURIER_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "dfac044b35160d3c5a1cb1bd5a20707f0ae9695623d0b8641f099060420a421b",
+      "role": "current-main boundary context only; no bound imported and no runtime read"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_CUBIC_WALK_RETURN_SUM_AND_SPHERE_STATIC_MAGNETIZATION_SUFFICIENT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "4007d47a15efe7ba10159ea268cbae4ddd1b5420c6b5fcbd6a88e6917aba2ac2",
+      "role": "current-main boundary context only; no bound imported and no runtime read"
+    }
+  ],
+  "mathematical_imports": [
+    "finite-dimensional real spectral theorem",
+    "one-dimensional Gaussian integral and scaling",
+    "rotation-invariant sphere surface measure and finite-dimensional differentiation under integral",
+    "finite Fourier geometric-sum orthogonality"
+  ],
+  "registry_changes_required": false,
+  "primary_imported": false,
+  "primary_executed": false,
+  "static_compile": true,
+  "original_archives_verified": 20,
+  "tracked_and_index_clean": true
+}

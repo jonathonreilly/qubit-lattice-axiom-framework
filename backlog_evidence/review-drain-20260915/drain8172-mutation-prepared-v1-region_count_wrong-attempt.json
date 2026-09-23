@@ -1,0 +1,20 @@
+{
+  "status": "RESERVED; exactly one invocation for this name, no automatic retry",
+  "mutation": "region_count_wrong",
+  "record": {
+    "path": "/private/tmp/review-drain-20260915/drain8172-author-unit-draft-v1.json",
+    "sha256": "283dd6901f4783eaa3b46e0ea4ced0339831330c20b045dfc61452be9d1770ad"
+  },
+  "primary_receipt": {
+    "path": "/private/tmp/review-drain-20260915/drain8172-execution-v3.json",
+    "sha256": "7b40b36034a29c9f940289692f9af48466eaee0f92975dc01fd50ca9bea00614"
+  },
+  "cold": {
+    "path": "/private/tmp/review-drain-20260915/drain8172-cold-review-v1.json",
+    "sha256": "cd4c748cbf39fc4743d470c4ef912833ab98722f6891598ec33c9d47b6fa3835"
+  },
+  "adapter": {
+    "path": "/private/tmp/review-drain-20260915/drain8172-mutation-capture-v3.py",
+    "sha256": "5aaa72a08d00ea75a52a509eebedd0010c6359e9663e818e17c2c5f26ce013c3"
+  }
+}

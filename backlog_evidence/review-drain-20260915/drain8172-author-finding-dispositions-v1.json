@@ -1,0 +1,73 @@
+{
+  "status": "AUTHOR CORRECTIONS; INDEPENDENT AFFECTED CONFIRMATION PENDING",
+  "findings": [
+    {
+      "id": "8172-R1",
+      "correction": "Two sensitivity points and two epsilon integer evaluations only; full formulas and finite enumeration retained, explicit p=1/10 counterexample. No connected interval or uniqueness inference."
+    },
+    {
+      "id": "8172-R2",
+      "correction": "Full original eroder/noise coupling/count proof retained with explicit level-zero recenter, nonempty domain, true t-a-b coordinate, exact translated examples and min(1,bound). Original polynomial and fixtures retained."
+    },
+    {
+      "id": "8172-R3",
+      "correction": "Full comparison-recursion proof with supplied g>=0 and D0<=2delta; g=beta/sqrt3 algebraic only, no unlanded model coupling."
+    },
+    {
+      "id": "8172-R4",
+      "correction": "Full raw finite observations and original stronger prose preserved in recovery; actual threshold/never/ratio promotion deferred, branch retained."
+    },
+    {
+      "id": "8172-R5",
+      "correction": "Precise saved scan parameters/seeds/observables listed; L16 and algorithm coverage corrected, rectangle healing event distinguished from cone, vacuous probability bounds identified."
+    },
+    {
+      "id": "8172-R6",
+      "correction": "Current static dissemination gap and sufficient conditional sphere bound preserved as context only; no old phase table adopted."
+    },
+    {
+      "id": "8172-R7",
+      "correction": "Actual literal three input pins, native links, empty helper closure; truthful five N5 lines, JSON logs output, no historical simulations executed by primary."
+    },
+    {
+      "id": "8172-R8",
+      "correction": "Four original route categories retained historically; formal broad negative certification deferred, no fabricated fifth or independence assertion."
+    },
+    {
+      "id": "8172-R9",
+      "correction": "Canonical name/note/runner; exact24 recovery and inherited79 tar with Git modes mapped separately, no shared campaign/source/map overwrite."
+    }
+  ],
+  "formula_independence": "Original reviewer controls retained unchanged: different dot-product conditional/positive-mass TV implementation; independent forward/backward region construction; exhaustive path strings through8. New recenter equivalence and comparison proof supplied for original reviewer confirmation. No author science execution.",
+  "archive_diagnostic": {
+    "path": "/private/tmp/review-drain-20260915/drain8172-author-archive-check-failure-v1.json",
+    "sha256": "90166d487f8e4572b5caae5daefb2027bfe54dba7413a5014e93b3c95f5a030b"
+  },
+  "archive_diagnostic_resolution": "Original git tar uses group-write mode headers; raw members and executable bits match. Canonical inventory records authoritative original Git modes, and README instructs restoring them after extraction. Original tar untouched.",
+  "claims": [
+    {
+      "claim": "point arithmetic",
+      "disposition": "corrected live"
+    },
+    {
+      "claim": "finite healing",
+      "disposition": "corrected full proof live"
+    },
+    {
+      "claim": "recurrence",
+      "disposition": "supplied-coefficient full proof live"
+    },
+    {
+      "claim": "sphere coupling application",
+      "disposition": "deferred full original recovery"
+    },
+    {
+      "claim": "asymptotic thresholds and broad negatives",
+      "disposition": "deferred full original and raw protocol recovery"
+    },
+    {
+      "claim": "historical inherited packet",
+      "disposition": "all79 exact paths retained; no new scientific adoption"
+    }
+  ]
+}

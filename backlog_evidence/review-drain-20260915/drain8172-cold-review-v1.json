@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "reviewer": "/root/review_8172",
+  "unit_id": "PR8172",
+  "verdict": "CAPTURE_ELIGIBLE",
+  "decision": "Cold source and bounded capture-plan clearance only, not final PASS or landing clearance.",
+  "tree": "12b15627de59706ffa788e1014db4ed435029667",
+  "source_tree": "12b15627de59706ffa788e1014db4ed435029667",
+  "base": "6332b12b59c83c5b08cc7b4ad90898cb6666050d",
+  "findings": [],
+  "references": {
+    "drain8172-review-original.json": {
+      "path": "/private/tmp/review-drain-20260915/drain8172-review-original.json",
+      "sha256": "1bbb13fa8d435c9fe654f76f0b53d2c0f28275e9ef2439ae36bbc17b0d351afa"
+    },
+    "drain8172-early-review-v1.json": {
+      "path": "/private/tmp/review-drain-20260915/drain8172-early-review-v1.json",
+      "sha256": "fe87a74880688bbfcc113cb932943ee206dd7aa069882397e0b2c0abfa0ea503"
+    },
+    "drain8172-author-unit-draft-v1.json": {
+      "path": "/private/tmp/review-drain-20260915/drain8172-author-unit-draft-v1.json",
+      "sha256": "283dd6901f4783eaa3b46e0ea4ced0339831330c20b045dfc61452be9d1770ad"
+    },
+    "drain8172-author-cheap-v1.json": {
+      "path": "/private/tmp/review-drain-20260915/drain8172-author-cheap-v1.json",
+      "sha256": "8d058c79ee858c0662aa29a2eaf12a320bb42656a51bd584bb6730642b64c494"
+    },
+    "drain8172-prepared-v1-source-freeze.json": {
+      "path": "/private/tmp/review-drain-20260915/drain8172-prepared-v1-source-freeze.json",
+      "sha256": "bcd077e753b3f398a414fe0a463dd568e05fbf1921d6b68d676d4e37186264b8"
+    },
+    "drain8172-author-full-mapping-v2.json": {
+      "path": "/private/tmp/review-drain-20260915/drain8172-author-full-mapping-v2.json",
+      "sha256": "19f51285bbb29be145dc0d1fa6893ce58b5b87872c86f4ffd9ff4d16fa373962"
+    },
+    "drain8172-advance-train84.json": {
+      "path": "/private/tmp/review-drain-20260915/drain8172-advance-train84.json",
+      "sha256": "9822e0a2c10a76eb984e24304606e8e1ba7396f79d24add90b738aeb1f71bc2a"
+    },
+    "drain8172-capture-plan-v1.json": {
+      "path": "/private/tmp/review-drain-20260915/drain8172-capture-plan-v1.json",
+      "sha256": "f7350b0318aab41dcadd07454273d3709ee58869d4a6ef4fa4def8e867f41ba7"
+    },
+    "drain8172-capture-v1.py": {
+      "path": "/private/tmp/review-drain-20260915/drain8172-capture-v1.py",
+      "sha256": "5d94b0dc44b9deafbc902dc0bb1a7ca448654b91cdab08d3ac38427f186d975c"
+    },
+    "drain8172-mutation-capture-v1.py": {
+      "path": "/private/tmp/review-drain-20260915/drain8172-mutation-capture-v1.py",
+      "sha256": "dee4e2a68fe4d7fa8e1e57806135b23946763ba6b0d1b9f27d7aa24264176042"
+    },
+    "check8172/early_verify_v1.json": {
+      "path": "/private/tmp/review-drain-20260915/check8172/early_verify_v1.json",
+      "sha256": "30060e2314b0bd3f519df005b067ba697fb561e92cc7da3ab9cf1af6866a219d"
+    }
+  },
+  "verification": {
+    "source": "All 31 index paths equal working bytes and immutable prepared copies. Modes match freeze: two executable 100755 scripts and 29 files 100644. Complete index path/mode/blob map equals exact source tree. No unstaged tracked differences.",
+    "inputs": "All draft runtime, parent, context and tooling SHA256 checked. Runner plus three declared inputs, no helpers. Completed cheap receipt mechanical_status ok, cache_checked false, exact tree/draft verified.",
+    "main_advance": "No changed main path intersects source or recorded inputs. Current review methodology and runner-cache unchanged.",
+    "new_context": {
+      "path": "docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "bd7968234832dcd13368f4208b2081a69aaf9674b1e9b24b65f44ee986f26b0a",
+      "assessment": "Complete note read. PR8170 supplied sphere moments, finite-plane mixing and auxiliary linear recursions do not establish the nonlinear sphere coupling withheld by PR8172. Supplied-g lemma imports none of these as a premise; no contradiction. Unlanded PR8171 is not authority."
+    }
+  },
+  "science_assessment": "Same-session complete corrected proofs/code review remains valid byte-for-byte. All nine original findings addressed by exact-point scope, full recentered capped healing with true t-a-b coordinate, supplied recurrence with D0 <= 2delta, precise historical protocols and deferred broad claims. Original 300/120 fixtures retained. No new blocker.",
+  "source_loss_guard": {
+    "status": "preserved",
+    "original_recoveries": 24,
+    "inherited_entries": 79,
+    "basis": "Same-session full payload/Git-blob verification and inventory-mode restoration in early_verify_v1 reused against unchanged indexed endpoints. Historical tar 0664 headers remain unchanged; authoritative inventory modes explicitly restore and were independently tested. Complete proofs, originals, raw scans and failure history retained. Branch retention and deferred negative certification remain required."
+  },
+  "capture_clearance": {
+    "baseline_runs": 1,
+    "checks": 11,
+    "mutation_runs": 8,
+    "simulation_runs": 0,
+    "seconds_per_program": 900,
+    "aggregate_rss_bytes": 805306368,
+    "resource_assessment": "Conservative unmeasured ceilings credible for finite scalar loops and symbolic polynomial checks. External watchdog samples supervisor and observed descendants every 0.02 seconds, not an OS hard reservation. Retain actual elapsed and peak observed RSS.",
+    "ordering": "One baseline then eight sequential mutations, no baseline rerun, retry, cap increase or evidence overwrite.",
+    "raw_evidence": "Actual runner_cache functions inspected. Adapter persists complete execute_runner return before identity rejection may delete live log. Cache truncation does not discard external raw result. Errors preserve existing partial raw/live/structured outputs and supervisor evidence; mutations preserve external stdout/stderr and per-name JSON.",
+    "binding_only_revision_allowed": "Immutable adapter revisions may bind this actual report path/hash, /tree and /verdict CAPTURE_ELIGIBLE, plus version-specific immutable output names. Preserve control flow, identities, limits, checks and once-only semantics; root verifies binding-only diff. v1 absent binding deliberately blocks.",
+    "freshness": "Clearance binds exact base/tree. Recheck later main advance and candidate interactions; no blanket acceptance of future source or input."
+  },
+  "executions_this_review": {
+    "primary": 0,
+    "mutations": 0,
+    "simulations": 0,
+    "gates": 0,
+    "scratch_math": 0
+  },
+  "verification_attempts": "An initial read-only check incorrectly assumed all staged paths were 100644 and stopped. Inspection showed two deliberately executable scripts, matching freeze. Corrected check validated exact recorded modes; no source change or execution occurred.",
+  "limitations": [
+    "No measured runtime success or resource sufficiency asserted.",
+    "No original map-of-memory claims restored.",
+    "No N1-N5 negative certification or branch closure.",
+    "No final science PASS, audit verdict or landing clearance."
+  ]
+}

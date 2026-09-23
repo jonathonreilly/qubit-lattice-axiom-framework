@@ -1,0 +1,11 @@
+--- drain8172-capture-v2.py
++++ drain8172-capture-v3.py
+@@ -26,7 +26,7 @@
+     rp,record=load_checked(a.record,a.record_sha256);pp,pre=load_checked(a.cheap,a.cheap_sha256);cp,cold=load_checked(a.cold,a.cold_sha256)
+     assert record['unit_id']=='PR8172' and record['schema_version']==2
+     assert pre['mechanical_status']=='ok' and pre['tree']==record['source']['tree'] and pre['record_sha256']==sha(rp) and not pre['cache_checked']
+-    assert cold['reviewer_session']=='/root/review_8172' and cold['tree']==record['source']['tree']
++    assert cold['reviewer']=='/root/review_8172' and cold['tree']==record['source']['tree']
+     assert COLD_REPORT_BINDING==dict(path=str(cp),sha256=sha(cp),tree=cold['tree'],verdict_pointer=a.cold_verdict_pointer,verdict=at(cold,a.cold_verdict_pointer))
+     assert at(cold,a.cold_verdict_pointer) in {'CAPTURE_ELIGIBLE','CAPTURE_ELIGIBLE on exact frozen source and inputs; no material source blocker. Not final evidence or landing PASS.'},'Unrecognized cold verdict: adapt to actual independent report in new version, never infer approval'
+     assert git('rev-parse','HEAD')==a.expected_base==record['source']['base']==git('rev-parse','origin/main') and git('write-tree')==record['source']['tree']

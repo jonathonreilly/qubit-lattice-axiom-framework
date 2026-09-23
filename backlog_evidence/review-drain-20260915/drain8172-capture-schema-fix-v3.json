@@ -1,0 +1,37 @@
+{
+  "reason": "Actual unchanged cold report names exact original session in reviewer, not reviewer_session; required identity unchanged.",
+  "actual_reviewer": "/root/review_8172",
+  "cold_report": {
+    "path": "/private/tmp/review-drain-20260915/drain8172-cold-review-v1.json",
+    "sha256": "cd4c748cbf39fc4743d470c4ef912833ab98722f6891598ec33c9d47b6fa3835"
+  },
+  "failed_setup_log": {
+    "path": "/private/tmp/review-drain-20260915/drain8172-capture-v2.log",
+    "sha256": "d456730a5100d136daf708cbd2e3f8e60af4abb19dbca53b2ec5ac53f3a15a51"
+  },
+  "science_executions_in_failed_setup": 0,
+  "attempt_marker_absent_before_fix": true,
+  "adapters": [
+    {
+      "old": {
+        "path": "/private/tmp/review-drain-20260915/drain8172-capture-v2.py",
+        "sha256": "c4e95d1203bd8cf8fe99dd4ce900dbc92b149c239d234bb7b7a91fb71391e6ac"
+      },
+      "new": {
+        "path": "/private/tmp/review-drain-20260915/drain8172-capture-v3.py",
+        "sha256": "6852f58c1c1af3a68a6ec692b8f77515687c8b9c0b84b8c59204d6c252b19751"
+      }
+    },
+    {
+      "old": {
+        "path": "/private/tmp/review-drain-20260915/drain8172-mutation-capture-v2.py",
+        "sha256": "398845461213c13dd6404de1fd91f48a4fc4a6c34b25aa636052e15e187be280"
+      },
+      "new": {
+        "path": "/private/tmp/review-drain-20260915/drain8172-mutation-capture-v3.py",
+        "sha256": "5aaa72a08d00ea75a52a509eebedd0010c6359e9663e818e17c2c5f26ce013c3"
+      }
+    }
+  ],
+  "source_and_execution_logic_unchanged": true
+}

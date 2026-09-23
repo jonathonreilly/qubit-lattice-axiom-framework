@@ -1,0 +1,32 @@
+{
+  "binding": {
+    "path": "/private/tmp/review-drain-20260915/drain8172-cold-review-v1.json",
+    "sha256": "cd4c748cbf39fc4743d470c4ef912833ab98722f6891598ec33c9d47b6fa3835",
+    "tree": "12b15627de59706ffa788e1014db4ed435029667",
+    "verdict_pointer": "/verdict",
+    "verdict": "CAPTURE_ELIGIBLE"
+  },
+  "adapters": [
+    {
+      "prior": {
+        "path": "/private/tmp/review-drain-20260915/drain8172-capture-v1.py",
+        "sha256": "5d94b0dc44b9deafbc902dc0bb1a7ca448654b91cdab08d3ac38427f186d975c"
+      },
+      "actual": {
+        "path": "/private/tmp/review-drain-20260915/drain8172-capture-v2.py",
+        "sha256": "c4e95d1203bd8cf8fe99dd4ce900dbc92b149c239d234bb7b7a91fb71391e6ac"
+      }
+    },
+    {
+      "prior": {
+        "path": "/private/tmp/review-drain-20260915/drain8172-mutation-capture-v1.py",
+        "sha256": "dee4e2a68fe4d7fa8e1e57806135b23946763ba6b0d1b9f27d7aa24264176042"
+      },
+      "actual": {
+        "path": "/private/tmp/review-drain-20260915/drain8172-mutation-capture-v2.py",
+        "sha256": "398845461213c13dd6404de1fd91f48a4fc4a6c34b25aa636052e15e187be280"
+      }
+    }
+  ],
+  "change": "Only actual accepted cold report identity bound; execution logic unchanged"
+}

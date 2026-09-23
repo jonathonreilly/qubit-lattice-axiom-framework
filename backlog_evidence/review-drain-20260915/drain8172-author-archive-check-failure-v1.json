@@ -1,0 +1,476 @@
+[
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ARTIFACT_PLAN.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ASSUMPTIONS_AND_IMPORTS.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block01_findings.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block02_findings.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block03_findings.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block04_findings.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block05_findings.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block28_findings.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block02.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block28.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block02.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block03.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block04.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block05.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block28.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/LITERATURE_BRIDGES.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/PROBES_gravity_consumer_20260907.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/PR_BACKLOG.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block02.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block03.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block04.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block05.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block28.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/ROUTE_PORTFOLIO.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/checker.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/checker_block02.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/panel_L1_mrf_rigor.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/panel_L2_foundations.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/panel_L3_strategy.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/panel_L4_refuter.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/panel_block02_L4_contract_refuter.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/panel_dossier.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/primary.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/primary_block02.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/primary_block03.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/primary_block05.md",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block02_dobrushin_strip.py",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block02_enclosure.py",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block02_enclosure_output.txt",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block02_strip_invariance.py",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block02_strip_output.txt",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block03_after_lens.out.txt",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block03_after_lens.py",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block03_certificates.py",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block03_certificates_base.py",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block03_grid.py",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block03_plaquette.out.txt",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block03_plaquette.py",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block03_thresholds_window.py",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block04_after_checker.py",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block04_lines.py",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block04_two_site.py",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block05_after_lens.py",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block05_monotone.py",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block05_snake.py",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_exact.out.txt",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_exact.py",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_refuter.out.txt",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_refuter.py",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_formation_sixaxis.out.txt",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_formation_sixaxis.py",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sixaxis.out.txt",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sixaxis.py",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sphere.out.txt",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block28_scan_static_sphere.py",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_verify_core.py",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_verify_lemma.py",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_fold_block02_note_patch.py",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  },
+  {
+    "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_fold_block02_runner_patch.py",
+    "tar_mode": "0o664",
+    "git_mode": "100644",
+    "bytes_match": true
+  }
+]

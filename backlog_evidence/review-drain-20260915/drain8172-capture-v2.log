@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/private/tmp/review-drain-20260915/drain8172-capture-v2.py", line 100, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/tmp/review-drain-20260915/drain8172-capture-v2.py", line 29, in main
+    assert cold['reviewer_session']=='/root/review_8172' and cold['tree']==record['source']['tree']
+           ~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'reviewer_session'

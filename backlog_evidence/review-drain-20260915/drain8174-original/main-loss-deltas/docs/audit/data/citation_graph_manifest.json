@@ -1,0 +1,2025 @@
+diff --git a/docs/audit/data/citation_graph_manifest.json b/docs/audit/data/citation_graph_manifest.json
+index a295f13a99..8363c01307 100644
+--- a/docs/audit/data/citation_graph_manifest.json
++++ b/docs/audit/data/citation_graph_manifest.json
+@@ -1,6 +1,6 @@
+ {
+- "edge_count": 13936,
+- "node_count": 6390,
++ "edge_count": 13568,
++ "node_count": 6015,
+  "nodes": {
+   "3d_correction_master_note": {
+    "deps_hash": "e3b0c44298fc",
+@@ -726,42 +726,14 @@
+    "deps_hash": "2b42b09047b0",
+    "out_degree": 4
+   },
+-  "admissibility_rule_covariant_frame_constructions_cube_orbits_and_antipodal_kernel_propagation_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "d0249e15a42a",
+-   "out_degree": 2
+-  },
+-  "admissibility_rule_cubic_walk_return_sum_and_sphere_static_magnetization_sufficient_bound_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "0dcde35e339b",
+-   "out_degree": 4
+-  },
+-  "admissibility_rule_directed_gaussian_propagator_overlap_covariance_gain_bounds_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "dd8925c4e04e",
+-   "out_degree": 2
+-  },
+   "admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_bounded_theorem_note_2026-09-06": {
+    "deps_hash": "1b3132f0c69b",
+    "out_degree": 3
+   },
+-  "admissibility_rule_finite_unrecorded_component_factorization_and_attachment_factors_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "971b1e1951b0",
+-   "out_degree": 4
+-  },
+-  "admissibility_rule_formation_law_flip_identities_and_finite_mixture_witnesses_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "a95e40c6cf02",
+-   "out_degree": 3
+-  },
+   "admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06": {
+    "deps_hash": "e54933eecd76",
+    "out_degree": 2
+   },
+-  "admissibility_rule_formation_rate_identities_and_finite_window_witnesses_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "a95e40c6cf02",
+-   "out_degree": 3
+-  },
+-  "admissibility_rule_formation_unit_conditional_identities_and_finite_witnesses_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "a95e40c6cf02",
+-   "out_degree": 3
+-  },
+   "admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_bounded_theorem_note_2026-09-07": {
+    "deps_hash": "1badd550395b",
+    "out_degree": 3
+@@ -774,54 +746,14 @@
+    "deps_hash": "1b3132f0c69b",
+    "out_degree": 3
+   },
+-  "admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "903559348f92",
+-   "out_degree": 3
+-  },
+-  "admissibility_rule_sphere_static_law_finite_torus_magnetization_bounds_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "1443a5e7b08d",
+-   "out_degree": 3
+-  },
+-  "admissibility_rule_sphere_static_law_planar_complex_rotation_correlation_upper_bounds_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "1443a5e7b08d",
+-   "out_degree": 3
+-  },
+-  "admissibility_rule_sphere_static_law_weak_coupling_comparison_and_correlation_bounds_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "545ddc41ba3e",
+-   "out_degree": 4
+-  },
+-  "admissibility_rule_sphere_static_law_zero_field_component_fourier_bounds_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "d0249e15a42a",
+-   "out_degree": 2
+-  },
+-  "admissibility_rule_static_six_axis_reflection_identities_and_conditional_contour_bounds_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "8ae058a5c524",
+-   "out_degree": 2
++  "admissibility_rule_six_axis_formation_threshold_lifted_by_a_two_level_domination_seeds_and_amplified_nodes_in_the_explanation_tree_bounded_theorem_note_2026-09-16": {
++   "deps_hash": "e3b0c44298fc",
++   "out_degree": 0
+   },
+   "admissibility_rule_static_strip_widths_4_5_rigorous_enclosure_separation_bounded_theorem_note_2026-09-07": {
+    "deps_hash": "8188f46b334d",
+    "out_degree": 2
+   },
+-  "admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_ordered_phase_obligation_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "f1c14f0e732c",
+-   "out_degree": 5
+-  },
+-  "admissibility_rule_three_body_term_exceptional_locus_exact_classification_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "4837d2020a34",
+-   "out_degree": 4
+-  },
+-  "admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "14e84bc7fc5a",
+-   "out_degree": 4
+-  },
+-  "admissibility_rule_three_dimensional_formation_law_ordered_phase_stability_of_the_noisy_level_automaton_explicit_threshold_six_invariant_laws_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "4dfc4c6b5d5e",
+-   "out_degree": 4
+-  },
+-  "admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "68507e789d0e",
+-   "out_degree": 4
+-  },
+   "admissibility_rule_two_site_block_criterion_exact_and_silent_for_every_coupling_bounded_theorem_note_2026-09-07": {
+    "deps_hash": "8ae058a5c524",
+    "out_degree": 2
+@@ -1206,22 +1138,6 @@
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "ai_methodology.skills.physics-loop.references.campaign": {
+-   "deps_hash": "01053aeb8404",
+-   "out_degree": 1
+-  },
+-  "ai_methodology.skills.physics-loop.references.claim_status": {
+-   "deps_hash": "9b89d5f13d7d",
+-   "out_degree": 1
+-  },
+-  "ai_methodology.skills.physics-loop.references.delivery": {
+-   "deps_hash": "ccffc2e9b618",
+-   "out_degree": 2
+-  },
+-  "ai_methodology.skills.physics-loop.references.discovery": {
+-   "deps_hash": "5fab0f18dcd0",
+-   "out_degree": 6
+-  },
+   "ai_methodology.skills.physics-loop.references.literature-bridge-protocol": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+@@ -1239,8 +1155,8 @@
+    "out_degree": 1
+   },
+   "ai_methodology.skills.physics-loop.skill": {
+-   "deps_hash": "c84110eb27c5",
+-   "out_degree": 5
++   "deps_hash": "87d01f37c89e",
++   "out_degree": 9
+   },
+   "ai_methodology.skills.primitive_registry_check": {
+    "deps_hash": "e3b0c44298fc",
+@@ -1250,49 +1166,17 @@
+    "deps_hash": "0cc007ced687",
+    "out_degree": 1
+   },
+-  "ai_methodology.skills.review-loop.references.audit_compatibility": {
+-   "deps_hash": "15add152a3c6",
+-   "out_degree": 3
+-  },
+-  "ai_methodology.skills.review-loop.references.combined_validation": {
+-   "deps_hash": "e81d698d2221",
+-   "out_degree": 2
+-  },
+-  "ai_methodology.skills.review-loop.references.fixes_and_reporting": {
+-   "deps_hash": "bb03d78d4851",
+-   "out_degree": 1
+-  },
+-  "ai_methodology.skills.review-loop.references.landing": {
+-   "deps_hash": "09028c267f6e",
+-   "out_degree": 8
+-  },
+   "ai_methodology.skills.review-loop.references.operations": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "ai_methodology.skills.review-loop.references.review_setup": {
+-   "deps_hash": "40505cd12fd1",
+-   "out_degree": 3
+-  },
+-  "ai_methodology.skills.review-loop.references.review_units": {
+-   "deps_hash": "d30de492ee29",
+-   "out_degree": 3
+-  },
+-  "ai_methodology.skills.review-loop.references.salvage": {
+-   "deps_hash": "1db460fa419a",
+-   "out_degree": 2
+-  },
+-  "ai_methodology.skills.review-loop.references.science_lenses": {
+-   "deps_hash": "a0a7701d5b27",
+-   "out_degree": 3
+-  },
+   "ai_methodology.skills.review-loop.references.unit_receipt": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+   "ai_methodology.skills.review-loop.skill": {
+-   "deps_hash": "43460544c3d5",
+-   "out_degree": 11
++   "deps_hash": "17c1a6867e99",
++   "out_degree": 4
+   },
+   "ai_methodology.skills.reviewer-backpressure-integrator.skill": {
+    "deps_hash": "e3b0c44298fc",
+@@ -2354,10 +2238,6 @@
+    "deps_hash": "a7f22af043f4",
+    "out_degree": 7
+   },
+-  "charged_ring_slow_spectrum_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "2b126dc35e8a",
+-   "out_degree": 2
+-  },
+   "chart_erased_fixed_program_physical_m2_compiler_cycle711_bounded_theorem_note_2026-07-26": {
+    "deps_hash": "efb7ed4b144b",
+    "out_degree": 3
+@@ -2774,18 +2654,10 @@
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "clock_all_mode_coercivity_finite_graph_states_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "19a59dfa7d56",
+-   "out_degree": 2
+-  },
+   "clock_penalty_local_normal_form_and_simultaneous_ground_state_limit_bounded_theorem_note_2026-09-14": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "clock_variance_calibrated_joint_rotor_transfer_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "0181264194bd",
+-   "out_degree": 1
+-  },
+   "closure_c_bb_canonical_mass_coupling_note_2026-05-10_cbb": {
+    "deps_hash": "2d20f59c98da",
+    "out_degree": 2
+@@ -2942,50 +2814,6 @@
+    "deps_hash": "aa5ce5e499a9",
+    "out_degree": 2
+   },
+-  "compact_rotor_bridge_cubic_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "f1ce1c3e25b9",
+-   "out_degree": 1
+-  },
+-  "compact_rotor_convex_carrier_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "47ee50d822ff",
+-   "out_degree": 2
+-  },
+-  "compact_rotor_cover_source_identities_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "5c5744845f3f",
+-   "out_degree": 1
+-  },
+-  "compact_rotor_ground_correlation_comparison_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "2fcf27dbac88",
+-   "out_degree": 1
+-  },
+-  "compact_rotor_integer_filling_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "1ddd42e2e109",
+-   "out_degree": 6
+-  },
+-  "compact_rotor_magnetic_covariance_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "0d23e8eb0dcf",
+-   "out_degree": 4
+-  },
+-  "compact_rotor_magnetic_excursion_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "c2a5b3aaa801",
+-   "out_degree": 2
+-  },
+-  "compact_rotor_sampled_magnetic_event_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "5b20d62d46aa",
+-   "out_degree": 1
+-  },
+-  "compact_rotor_sine_score_static_curl_limit_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "5c5744845f3f",
+-   "out_degree": 1
+-  },
+-  "compact_rotor_spatial_ground_path_limit_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "b3c5322b5b92",
+-   "out_degree": 3
+-  },
+-  "compact_rotor_temporal_oscillation_coarse_current_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "924ef67349c9",
+-   "out_degree": 4
+-  },
+   "compact_u1_quadratic_basin_source_free_maxwell_universality_bounded_theorem_note_2026-09-03": {
+    "deps_hash": "ba3fd22e4d7e",
+    "out_degree": 1
+@@ -3302,10 +3130,6 @@
+    "deps_hash": "11bd292c9d93",
+    "out_degree": 1
+   },
+-  "cubic_fourier_energy_and_gaussian_registers_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "7abbc6a8f4ab",
+-   "out_degree": 2
+-  },
+   "cubic_ice_relaxed_magnetic_response_graph_flows_and_sheet_winding_bounded_theorem_note_2026-09-14": {
+    "deps_hash": "ebc2136e3686",
+    "out_degree": 1
+@@ -3370,10 +3194,6 @@
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "cyclic_equilibrium_and_integer_gauss_limit_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "31a84a7a7413",
+-   "out_degree": 2
+-  },
+   "cyclic_projector_compression_narrow_theorem_note_2026-05-02": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+@@ -5054,10 +4874,6 @@
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "exact_gauge_ward_response_identities_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "dfca8fa6ea7e",
+-   "out_degree": 2
+-  },
+   "exact_gauss_reduction_and_fixed_volume_weak_coupling_spectrum_bounded_theorem_note_2026-09-13": {
+    "deps_hash": "9c83fb5042d9",
+    "out_degree": 3
+@@ -5166,10 +4982,6 @@
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "finite_box_electric_offset_response_and_tail_bounds_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "36684f455cab",
+-   "out_degree": 2
+-  },
+   "finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+@@ -5186,18 +4998,10 @@
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "finite_clock_field_history_reconstruction_and_charge_sector_hamiltonian_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "6e596061f61c",
+-   "out_degree": 3
+-  },
+   "finite_clock_gaussian_smoothing_positive_local_electric_extension_and_flux_scaling_equivalence_bounded_theorem_note_2026-09-15": {
+    "deps_hash": "718efe9ea279",
+    "out_degree": 1
+   },
+-  "finite_clock_ginibre_free_state_and_static_charge_bound_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "a15dec29692f",
+-   "out_degree": 3
+-  },
+   "finite_clock_image_noise_current_sector_and_positive_time_os_equivalence_bounded_theorem_note_2026-09-14": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+@@ -5218,10 +5022,6 @@
+    "deps_hash": "3ff62434e691",
+    "out_degree": 1
+   },
+-  "finite_clock_static_charge_transfer_hamiltonian_and_path_comparison_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "de868c3b6a72",
+-   "out_degree": 2
+-  },
+   "finite_clock_transfer_disorder_and_spectral_gap_perimeter_bounded_theorem_note_2026-09-14": {
+    "deps_hash": "cbfdfa9b6409",
+    "out_degree": 2
+@@ -5246,18 +5046,10 @@
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "finite_graph_cyclic_weak_coupling_limits_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "dcddb9da6de9",
+-   "out_degree": 4
+-  },
+   "finite_integer_link_weak_coupling_payload_and_monopole_density_bounded_theorem_note_2026-09-13": {
+    "deps_hash": "9c83fb5042d9",
+    "out_degree": 3
+   },
+-  "finite_native_winding_curvature_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "07be8fcbc3ba",
+-   "out_degree": 3
+-  },
+   "finite_rank_gravity_residual_helper_note_2026-04-14": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+@@ -5274,10 +5066,6 @@
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "fixed_box_slow_spectrum_and_harmonic_metric_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "be287aabb9f6",
+-   "out_degree": 3
+-  },
+   "fixed_clock_transverse_spectral_concentration_and_linear_energy_band_bounded_theorem_note_2026-09-15": {
+    "deps_hash": "57fff9abdf25",
+    "out_degree": 2
+@@ -5286,10 +5074,6 @@
+    "deps_hash": "12c4ea741dd8",
+    "out_degree": 4
+   },
+-  "fixed_coupling_rotor_ground_cutoff_compactness_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "d69ff4a91229",
+-   "out_degree": 2
+-  },
+   "fixed_field_complex_grown_basin_v2_note": {
+    "deps_hash": "9b334c2c3616",
+    "out_degree": 1
+@@ -5674,10 +5458,6 @@
+    "deps_hash": "915b05f426fd",
+    "out_degree": 2
+   },
+-  "frame_attached_menu_exchange_covariant_probabilities_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "524486279bd8",
+-   "out_degree": 3
+-  },
+   "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+@@ -5742,10 +5522,6 @@
+    "deps_hash": "d1da2f9855ac",
+    "out_degree": 2
+   },
+-  "free_weyl_holonomy_minimization_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "31a84a7a7413",
+-   "out_degree": 2
+-  },
+   "frontier_extension_lane_b_protects_lane_a_joint_composition_narrow_note_2026-05-17": {
+    "deps_hash": "1229febd4144",
+    "out_degree": 5
+@@ -5802,10 +5578,6 @@
+    "deps_hash": "39bd4d637769",
+    "out_degree": 2
+   },
+-  "full_domain_matrix_kernel_and_autonomous_projective_record_corridor_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "f18f4cefcd73",
+-   "out_degree": 2
+-  },
+   "full_fock_unit_weight_source_support_note_2026-07-28": {
+    "deps_hash": "c8eee4235fc9",
+    "out_degree": 1
+@@ -6610,14 +6382,6 @@
+    "deps_hash": "e00a49e2d6f2",
+    "out_degree": 2
+   },
+-  "gauge_wilson_compact_cube_finite_qubit_cutoff_bounded_theorem_note_2026-09-07": {
+-   "deps_hash": "2820c02a4284",
+-   "out_degree": 1
+-  },
+-  "gauge_wilson_compact_cube_galerkin_spectral_enclosures_bounded_theorem_note_2026-09-07": {
+-   "deps_hash": "cdc26203a7fc",
+-   "out_degree": 2
+-  },
+   "gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_bounded_theorem_note_2026-09-07": {
+    "deps_hash": "2820c02a4284",
+    "out_degree": 1
+@@ -6654,10 +6418,6 @@
+    "deps_hash": "6c1f1762b6be",
+    "out_degree": 3
+   },
+-  "gauge_wilson_electric_dominated_volume_uniform_gap_bounded_theorem_note_2026-09-07": {
+-   "deps_hash": "1e65f050bf30",
+-   "out_degree": 4
+-  },
+   "gauge_wilson_full_cube_compact_interacting_hamiltonian_limit_bounded_theorem_note_2026-09-07": {
+    "deps_hash": "2ccb2e4b384d",
+    "out_degree": 1
+@@ -6678,38 +6438,10 @@
+    "deps_hash": "586931b6ddf4",
+    "out_degree": 2
+   },
+-  "gauge_wilson_local_observable_finite_region_pw_approximation_bounded_theorem_note_2026-09-07": {
+-   "deps_hash": "3082e5eb18d6",
+-   "out_degree": 3
+-  },
+-  "gauge_wilson_pw_compression_shell_and_energy_path_bounds_bounded_theorem_note_2026-09-07": {
+-   "deps_hash": "399ee213d817",
+-   "out_degree": 2
+-  },
+-  "gauge_wilson_selected_infinite_static_source_sector_bounded_theorem_note_2026-09-07": {
+-   "deps_hash": "3013f159bb7a",
+-   "out_degree": 2
+-  },
+-  "gauge_wilson_spatial_loop_area_suppression_bounded_theorem_note_2026-09-07": {
+-   "deps_hash": "205cf1d98d21",
+-   "out_degree": 3
+-  },
+-  "gauge_wilson_static_source_geodesic_perturbation_bounded_theorem_note_2026-09-07": {
+-   "deps_hash": "7bf5bc0d0b09",
+-   "out_degree": 2
+-  },
+   "gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "gauge_wilson_uniform_static_source_energy_bounds_bounded_theorem_note_2026-09-07": {
+-   "deps_hash": "becf85893f46",
+-   "out_degree": 4
+-  },
+-  "gauge_wilson_weak_window_quantitative_bounds_and_haar_contact_fdd_bounded_theorem_note_2026-09-07": {
+-   "deps_hash": "03a7334ca20a",
+-   "out_degree": 5
+-  },
+   "gauged_log_transfer_quasilocality_combes_thomas_narrow_theorem_note_2026-06-13": {
+    "deps_hash": "b48fd9e48b4d",
+    "out_degree": 6
+@@ -10802,10 +10534,6 @@
+    "deps_hash": "46111474d8b7",
+    "out_degree": 3
+   },
+-  "hybrid_generators_integrated_rates_and_curvature_witness_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "16404916beb0",
+-   "out_degree": 2
+-  },
+   "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02": {
+    "deps_hash": "e8e0cb837a09",
+    "out_degree": 3
+@@ -10942,10 +10670,6 @@
+    "deps_hash": "9679402e3cd2",
+    "out_degree": 2
+   },
+-  "iterated_local_maxwell_matter_state_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "9398b27b4688",
+-   "out_degree": 3
+-  },
+   "j_landed_invariant_identification_cycle981_bounded_theorem_note_2026-08-11": {
+    "deps_hash": "8c46c011aa91",
+    "out_degree": 8
+@@ -12714,18 +12438,10 @@
+    "deps_hash": "86fee23e1c7d",
+    "out_degree": 1
+   },
+-  "local_rotor_density_and_finite_template_bounds_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "adca3560d1b4",
+-   "out_degree": 3
+-  },
+   "local_seam_signed_clifford_physical_m2_compiler_cycle709_bounded_theorem_note_2026-07-26": {
+    "deps_hash": "4a5e2b7df738",
+    "out_degree": 4
+   },
+-  "local_source_diagonal_spectral_bounds_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "3cd3d4b43739",
+-   "out_degree": 2
+-  },
+   "local_token_row_enforcement_cycle724_bounded_theorem_note_2026-07-28": {
+    "deps_hash": "c8adae60b92d",
+    "out_degree": 4
+@@ -13194,10 +12910,6 @@
+    "deps_hash": "522c75ee011c",
+    "out_degree": 4
+   },
+-  "native_charge_motion_and_spectral_weight_bounds_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "6e5209b9fa1f",
+-   "out_degree": 5
+-  },
+   "native_charged_record_histories_note_2026-09-09": {
+    "deps_hash": "5bd92167bfd1",
+    "out_degree": 3
+@@ -13210,10 +12922,6 @@
+    "deps_hash": "e135cb65f69a",
+    "out_degree": 3
+   },
+-  "native_correlated_ward_certificates_note_2026-09-10": {
+-   "deps_hash": "dcc61d26d786",
+-   "out_degree": 2
+-  },
+   "native_dynamical_cycle_fermion_z2_dictionary_note_2026-09-08": {
+    "deps_hash": "6d8ee4864489",
+    "out_degree": 4
+@@ -13286,10 +12994,6 @@
+    "deps_hash": "bd0f06d38bc7",
+    "out_degree": 5
+   },
+-  "native_finite_moment_ward_note_2026-09-10": {
+-   "deps_hash": "8f0cb25a6495",
+-   "out_degree": 4
+-  },
+   "native_flux_defect_comparison_and_winding_gap_note_2026-09-08": {
+    "deps_hash": "07c7d22c3d12",
+    "out_degree": 4
+@@ -13438,10 +13142,6 @@
+    "deps_hash": "f292f1416726",
+    "out_degree": 3
+   },
+-  "native_gaussian_moment_jet_note_2026-09-10": {
+-   "deps_hash": "71efb47565f1",
+-   "out_degree": 2
+-  },
+   "native_generalized_action_boundary_note_2026-09-09": {
+    "deps_hash": "5546c07bf1e3",
+    "out_degree": 5
+@@ -13450,10 +13150,6 @@
+    "deps_hash": "eaf9417d1828",
+    "out_degree": 3
+   },
+-  "native_global_projector_certificate_note_2026-09-10": {
+-   "deps_hash": "51d0e0f274bd",
+-   "out_degree": 10
+-  },
+   "native_growing_formation_current_bounded_theorem_note_2026-09-13": {
+    "deps_hash": "d4a1bc27cca4",
+    "out_degree": 5
+@@ -13506,10 +13202,6 @@
+    "deps_hash": "444603b9eb3f",
+    "out_degree": 3
+   },
+-  "native_mixed_sixth_order_coefficient_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "482afd0a38f7",
+-   "out_degree": 10
+-  },
+   "native_pair_vacuum_chart_note_2026-09-09": {
+    "deps_hash": "99abfde38abe",
+    "out_degree": 4
+@@ -13526,10 +13218,6 @@
+    "deps_hash": "17833c2062d3",
+    "out_degree": 2
+   },
+-  "native_quartic_ward_note_2026-09-10": {
+-   "deps_hash": "50d187f0044e",
+-   "out_degree": 2
+-  },
+   "native_record_support_preserving_priority_formation_bounded_theorem_note_2026-09-07": {
+    "deps_hash": "1badd550395b",
+    "out_degree": 3
+@@ -13566,10 +13254,6 @@
+    "deps_hash": "a5940e8607f3",
+    "out_degree": 5
+   },
+-  "native_stronger_ward_estimators_note_2026-09-10": {
+-   "deps_hash": "17bc5a3da2a5",
+-   "out_degree": 1
+-  },
+   "native_third_order_star_vertex_note_2026-09-08": {
+    "deps_hash": "9b33929562fe",
+    "out_degree": 5
+@@ -13590,10 +13274,6 @@
+    "deps_hash": "5c958ba514c0",
+    "out_degree": 3
+   },
+-  "native_ward_direct_overlap_note_2026-09-10": {
+-   "deps_hash": "6d7ca52f4032",
+-   "out_degree": 5
+-  },
+   "native_weak_electric_defect_density_note_2026-09-08": {
+    "deps_hash": "dd92dd1a5f46",
+    "out_degree": 3
+@@ -14294,10 +13974,6 @@
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "open_boundary_wilson_fock_model_match_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "f06210ef0b59",
+-   "out_degree": 2
+-  },
+   "open_koide_flavor_cluster_consolidation_map_2026-06-02": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+@@ -14306,10 +13982,6 @@
+    "deps_hash": "5ed0add88d9d",
+    "out_degree": 4
+   },
+-  "open_wilson_gauge_matter_fixed_graph_state_join_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "5bb11fdfb458",
+-   "out_degree": 5
+-  },
+   "openreference_all_seam_spatial_direction_packet_epoch_cycle872_bounded_theorem_note_2026-08-03": {
+    "deps_hash": "533273c5cb6f",
+    "out_degree": 2
+@@ -15442,10 +15114,6 @@
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "polarized_word_carrier_and_essential_threshold_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "6a55dd0468f8",
+-   "out_degree": 4
+-  },
+   "port_canonical_common_coframe_physical_m2_compiler_cycle710_bounded_theorem_note_2026-07-26": {
+    "deps_hash": "4fe8cb39513a",
+    "out_degree": 2
+@@ -15454,22 +15122,10 @@
+    "deps_hash": "4692e4ec0e97",
+    "out_degree": 5
+   },
+-  "positive_auxiliary_current_law_and_regulator_witness_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "16404916beb0",
+-   "out_degree": 2
+-  },
+-  "positive_electric_generator_cone_bounds_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "6743f1bd7de4",
+-   "out_degree": 2
+-  },
+   "positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_bounded_theorem_note_2026-09-14": {
+    "deps_hash": "f0a2bcb0bbbf",
+    "out_degree": 4
+   },
+-  "positive_wilson_villain_mixture_and_weak_region_bounds_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "2fcf27dbac88",
+-   "out_degree": 1
+-  },
+   "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23": {
+    "deps_hash": "0c13e845db90",
+    "out_degree": 3
+@@ -15690,10 +15346,6 @@
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "principal_link_raw_curl_witness_and_mass_bound_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "2fcf27dbac88",
+-   "out_degree": 1
+-  },
+   "probability_readout_underdetermination_cycle912_bounded_theorem_note_2026-07-28": {
+    "deps_hash": "7b707271a9a8",
+    "out_degree": 2
+@@ -16182,10 +15834,6 @@
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "real_overlap_local_source_threshold_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "d80ec1818362",
+-   "out_degree": 3
+-  },
+   "realization_row_sigma_reconciliation_bounded_theorem_note_2026-06-11": {
+    "deps_hash": "b77b49964f00",
+    "out_degree": 7
+@@ -16714,46 +16362,6 @@
+    "deps_hash": "249b8e8adb93",
+    "out_degree": 6
+   },
+-  "rotor_coupled_free_vacuum_resolvent_densities_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "f015d82dc5d6",
+-   "out_degree": 1
+-  },
+-  "rotor_global_gauss_dressing_coulomb_variational_compression_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "f015d82dc5d6",
+-   "out_degree": 1
+-  },
+-  "rotor_joint_bounded_neutral_matter_dynamics_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "5fea79029341",
+-   "out_degree": 3
+-  },
+-  "rotor_joint_equal_time_weyl_car_state_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "20ebe2a5ff8e",
+-   "out_degree": 4
+-  },
+-  "rotor_joint_ground_energy_oscillator_defect_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "5ab50842bad9",
+-   "out_degree": 2
+-  },
+-  "rotor_joint_local_gauge_characteristic_limit_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "44f4e1882858",
+-   "out_degree": 3
+-  },
+-  "rotor_joint_real_time_gauge_two_point_limit_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "20ebe2a5ff8e",
+-   "out_degree": 4
+-  },
+-  "rotor_orthogonal_transverse_reference_current_vertex_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "e00146c2daf3",
+-   "out_degree": 2
+-  },
+-  "rotor_reference_vertex_infrared_weighted_norms_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "85572dc97c5c",
+-   "out_degree": 3
+-  },
+-  "rotor_uniform_compact_field_soft_response_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "e535a9ace557",
+-   "out_degree": 1
+-  },
+   "route_a_fixed_type_atlas_correction_cycle822_bounded_theorem_note_2026-07-30": {
+    "deps_hash": "20e02c11a8d5",
+    "out_degree": 4
+@@ -17066,10 +16674,6 @@
+    "deps_hash": "e703930afc75",
+    "out_degree": 6
+   },
+-  "sequential_formation_path_and_star_identities_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "7b707271a9a8",
+-   "out_degree": 2
+-  },
+   "session_synthesis_2026-04-10_final": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+@@ -17122,10 +16726,6 @@
+    "deps_hash": "c8eee4235fc9",
+    "out_degree": 1
+   },
+-  "short_time_rotor_bridge_and_endpoint_hessian_bounds_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "2fcf27dbac88",
+-   "out_degree": 1
+-  },
+   "sigma_hier_uniqueness_theorem_note_2026-04-19": {
+    "deps_hash": "94aa2d15c272",
+    "out_degree": 1
+@@ -17154,10 +16754,6 @@
+    "deps_hash": "52e6227652fe",
+    "out_degree": 7
+   },
+-  "signed_forest_fixed_order_remainders_and_restricted_loop_sums_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "9ae213819916",
+-   "out_degree": 1
+-  },
+   "signed_gravity_aps_action_origin_superselection_stability_note": {
+    "deps_hash": "87f31c211962",
+    "out_degree": 4
+@@ -17658,10 +17254,6 @@
+    "deps_hash": "7a3ee4490765",
+    "out_degree": 2
+   },
+-  "sphere_level_kernel_moments_walk_local_limit_and_finite_plane_mixing_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "7d003ba955a9",
+-   "out_degree": 3
+-  },
+   "spider_symmetry_reduction_and_finite_comparisons_cycle937_bounded_theorem_note_2026-07-28": {
+    "deps_hash": "c8eee4235fc9",
+    "out_degree": 1
+@@ -18314,30 +17906,6 @@
+    "deps_hash": "77faa5483fd2",
+    "out_degree": 6
+   },
+-  "supplied_algebra_action_and_kernel_support_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "9ae213819916",
+-   "out_degree": 1
+-  },
+-  "supplied_matched_free_cone_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "9d281ffae983",
+-   "out_degree": 4
+-  },
+-  "supplied_quartet_leading_decay_bounds_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "4173dbfb81a8",
+-   "out_degree": 3
+-  },
+-  "supplied_quartet_linear_metric_flow_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "3b1ff0635ec8",
+-   "out_degree": 3
+-  },
+-  "supplied_quartet_quadratic_backreaction_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "8732e7decdde",
+-   "out_degree": 3
+-  },
+-  "supplied_record_laws_and_common_order_kernels_bounded_theorem_note_2026-09-15": {
+-   "deps_hash": "007e9cc84a79",
+-   "out_degree": 3
+-  },
+   "support_conditions_confine_groups_of_shifting_records_energy_costs_do_not_bounded_theorem_note_2026-09-03": {
+    "deps_hash": "c8eee4235fc9",
+    "out_degree": 1
+@@ -18574,10 +18142,6 @@
+    "deps_hash": "2741c1000ba9",
+    "out_degree": 5
+   },
+-  "temporal_wilson_resummation_physical_curl_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "a83fe722994f",
+-   "out_degree": 1
+-  },
+   "tensor_block_closure_test_note": {
+    "deps_hash": "671cfa77fd77",
+    "out_degree": 6
+@@ -19710,14 +19274,6 @@
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "weighted_gaussian_damping_and_integer_time_blocking_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "2fcf27dbac88",
+-   "out_degree": 1
+-  },
+-  "weighted_phase_corrector_and_magnetic_gram_certificates_bounded_theorem_note_2026-09-16": {
+-   "deps_hash": "0fcac2790cd0",
+-   "out_degree": 2
+-  },
+   "weighting_exact_algebra_cycle905_support_note_2026-08-08": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+@@ -23202,787 +22758,71 @@
+    "deps_hash": "373a73c42070",
+    "out_degree": 21
+   },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-a_only_review-4a2ba4925dd50891": {
++  "work_history.repo.review_feedback.pr8084-native-feedback-evidence.pr8084-claim_status_certificate": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-activation_review-86f505c728a48253": {
++  "work_history.repo.review_feedback.pr8084-native-feedback-evidence.pr8084-handoff": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-activation_review-cb4d66cbad2eac94": {
++  "work_history.repo.review_feedback.pr8084-native-feedback-evidence.pr8084-no_go_discipline_checklist": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-artifact_plan-5a8a2b441ec1dded": {
++  "work_history.repo.review_feedback.pr8084-native-feedback-evidence.pr8084-review_history": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-assumptions_and_imports-04947ad72d106df1": {
++  "work_history.repo.review_feedback.pr8084-native-feedback-evidence.pr8084-trace_gate": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-claim_status_certificate-4a3d4f79e164376b": {
++  "work_history.repo.review_feedback.pr8084-native-feedback-evidence.readme": {
++   "deps_hash": "702ca2032b3f",
++   "out_degree": 6
++  },
++  "work_history.repo.review_feedback.pr8085-regge-positive-transfer-evidence.pr8085-claim_status_certificate": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-delivery_review-a70a576883bc78bc": {
++  "work_history.repo.review_feedback.pr8085-regge-positive-transfer-evidence.pr8085-handoff": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-derivation-0c6763218d7734e0": {
++  "work_history.repo.review_feedback.pr8085-regge-positive-transfer-evidence.pr8085-no_go_discipline_checklist": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-derivation-159d5c30808e1081": {
++  "work_history.repo.review_feedback.pr8085-regge-positive-transfer-evidence.pr8085-review_history": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-derivation-33ba8583384f11ed": {
++  "work_history.repo.review_feedback.pr8085-regge-positive-transfer-evidence.pr8085-trace_gate": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-derivation-62709e00b4615a48": {
++  "work_history.repo.review_feedback.pr8085-regge-positive-transfer-evidence.readme": {
++   "deps_hash": "a811438131a8",
++   "out_degree": 6
++  },
++  "work_history.repo.review_feedback.pr8086-operator-evidence.kept.pr8086-operator-no_go_discipline_checklist-af3647a217d8dd77": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-derivation-8c91a53ccd862d1b": {
++  "work_history.repo.review_feedback.pr8086-operator-evidence.readme": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-first_fixture_failure-7a9c7136600efbe0": {
++  "work_history.repo.review_feedback.pr8086-spectral-evidence.kept.pr8086-spectral-no_go_discipline_checklist-af3647a217d8dd77": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-goal-525566f7a8b7cb8d": {
++  "work_history.repo.review_feedback.pr8086-spectral-evidence.readme": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-handoff-9ef67db77ea9ef6f": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-initial_compact_failure-b64c27ced389297c": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-initial_review-3acd7afef4b788fc": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-literature_bridges-ae1d413e72d87337": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-no_go_ledger-47d6880ce44b1ce7": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-opportunity_queue-ccb74c0b7866140d": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-parent_source_review-841d62bd2592c3a9": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-pr_backlog-b978f18b90eeb9e7": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-review-281ca1a78a5f44f6": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-review-7bc21b85e4219998": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-review-9eb580b6eb41f705": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-review-a050bc114cdca307": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-review-ced60f66502ab4dd": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-review-f61e60d9fc9a4fdd": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-review_history-3f4cb79c836849bf": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-root_review-ab0d47185b27fc31": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-route_portfolio-026cc4e1e794b8fa": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-runtime_weight_review-5109a1710d018446": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-serialization_delta-a105c34b391275d5": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-status-6c33a39439907887": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8077-evidence.kept.pr8077-trace_gate-f67515f6cce5b41d": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8077-evidence.readme": {
+-   "deps_hash": "043fa750d53f",
+-   "out_degree": 35
+-  },
+-  "work_history.repo.review_feedback.pr8077-forensic-evidence.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8078-evidence.kept.pr8078-handoff-9ef67db77ea9ef6f": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8078-evidence.kept.pr8078-review_history-3f4cb79c836849bf": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8078-evidence.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-8083-scientific-recovery.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-affected_runner_review-6eb645e3daeb76dd": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-all_q-b5fcbf94a3fe3ed1": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-allq_protocol-f1ac83cd51decd26": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-assumptions_and_imports-04947ad72d106df1": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-claim_status_certificate-4a3d4f79e164376b": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-degree10-bf797a38935a935a": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-degree10_protocol-a8ffb06c8b1f1137": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-degree11-78b50a3d9968445f": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-degree20-d9a35db2e6dedcb7": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-final_parent_delivery_review-633f80ac774a2ce6": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-handoff-9ef67db77ea9ef6f": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-hierarchy-3d2cbcb326f3df28": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-native-allq-saved-screen-cold-review_review-fd47ef8891cee0eb": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-native-degree10-ward-cold-review_review-fda53fc9013cea0c": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-native-degree10-ward-runtime-cold-review_guard_delta-6e5338cba9d0a716": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-native-degree10-ward-runtime-cold-review_initial_review-991c46668a03cb0c": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-native-degree11-independent-review_review-5a285395cf2662e7": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-native-degree20-independent-review_review-2a4e5fd308464992": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-native-finite-moment-ward-cold-review_review-ab31061d93476750": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-native-omega5-independent-review_affected_confirmation-5e4be8c1378d3a80": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-native-omega5-independent-review_review-a2e124a8b288736c": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-native-omega5-math-cold-review_review-6b09cddf826677e9": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-native-omega5-root-independent-review_affected_pass-2f192c9b1855ef42": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-native-omega5-root-independent-review_review-5f9bcabfec0fbfbe": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-no_go_ledger-47d6880ce44b1ce7": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-omega5-76a67ca0725fbb2a": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-omega5_protocol-74b28361b99b6643": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-recovery-23a7a88823d021c5": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-review_history-3f4cb79c836849bf": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.kept.pr8079-trace_gate-f67515f6cce5b41d": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8079-evidence.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8080-evidence.kept.pr8080-adaptive_root_review-7b4cd2f90babf578": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8080-evidence.kept.pr8080-assumptions_and_imports-04947ad72d106df1": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8080-evidence.kept.pr8080-checker_scope-eed671510599ca90": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8080-evidence.kept.pr8080-claim_status_certificate-4a3d4f79e164376b": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8080-evidence.kept.pr8080-degree20_proof-f907f1e576dda429": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8080-evidence.kept.pr8080-final_parent_delivery_review-633f80ac774a2ce6": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8080-evidence.kept.pr8080-handoff-5b02cb31e196b807": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8080-evidence.kept.pr8080-handoff-9ef67db77ea9ef6f": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8080-evidence.kept.pr8080-independent_metadata_review-3156d5af527a400d": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8080-evidence.kept.pr8080-independent_source_review-3646c0ec25967358": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8080-evidence.kept.pr8080-no_go_ledger-47d6880ce44b1ce7": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8080-evidence.kept.pr8080-note-c17a9fa8eff6485e": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8080-evidence.kept.pr8080-optimal_tau_proof-09eb97a8ed9389d0": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8080-evidence.kept.pr8080-posterior_proof-14283ce5208bb12a": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8080-evidence.kept.pr8080-posterior_review-e9dfe60cde12356c": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8080-evidence.kept.pr8080-recovery-23a7a88823d021c5": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8080-evidence.kept.pr8080-review_history-3f4cb79c836849bf": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8080-evidence.kept.pr8080-spectral_proof-609108ad6244c8e3": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8080-evidence.kept.pr8080-spectral_proof_review-5ed1b0cd4ef314d0": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8080-evidence.kept.pr8080-trace_gate-f67515f6cce5b41d": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8080-evidence.kept.pr8080-verification-6773e473e5c30314": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8080-evidence.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8081-evidence.kept.pr8081-artifact_plan-5a8a2b441ec1dded": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8081-evidence.kept.pr8081-assumptions_and_imports-04947ad72d106df1": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8081-evidence.kept.pr8081-claim_status_certificate-4a3d4f79e164376b": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8081-evidence.kept.pr8081-final_metadata_review-6b3104d9f9afb52f": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8081-evidence.kept.pr8081-goal-525566f7a8b7cb8d": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8081-evidence.kept.pr8081-handoff-5b02cb31e196b807": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8081-evidence.kept.pr8081-handoff-9ef67db77ea9ef6f": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8081-evidence.kept.pr8081-literature_bridges-ae1d413e72d87337": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8081-evidence.kept.pr8081-no_go_ledger-47d6880ce44b1ce7": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8081-evidence.kept.pr8081-note-c17a9fa8eff6485e": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8081-evidence.kept.pr8081-opportunity_queue-ccb74c0b7866140d": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8081-evidence.kept.pr8081-pr_backlog-b978f18b90eeb9e7": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8081-evidence.kept.pr8081-readme-734f9a2defb70059": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8081-evidence.kept.pr8081-recovery-23a7a88823d021c5": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8081-evidence.kept.pr8081-reduced-297c5d810e20b6c0": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8081-evidence.kept.pr8081-reduced-ffc3ecc6a8b0de80": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8081-evidence.kept.pr8081-review-7d90a9d3596cd2cd": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8081-evidence.kept.pr8081-review_history-3f4cb79c836849bf": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8081-evidence.kept.pr8081-root-e47f87890d59d735": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8081-evidence.kept.pr8081-route_portfolio-026cc4e1e794b8fa": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8081-evidence.kept.pr8081-runtime-733deffea65e19b7": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8081-evidence.kept.pr8081-scale-3b497563aec60a1f": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8081-evidence.kept.pr8081-sharp-09b6460d28755543": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8081-evidence.kept.pr8081-sharp-7a6ea3a6ec25de47": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8081-evidence.kept.pr8081-trace_gate-f67515f6cce5b41d": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8081-evidence.kept.pr8081-zero-c6760e75557c789f": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8081-evidence.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8082-evidence.kept.pr8082-artifact_plan-5a8a2b441ec1dded": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8082-evidence.kept.pr8082-assumptions_and_imports-04947ad72d106df1": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8082-evidence.kept.pr8082-canonical-review-readme-6d373254b5a00bf5": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8082-evidence.kept.pr8082-canonical-review-review-4210651e4c41315f": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8082-evidence.kept.pr8082-claim_status_certificate-4a3d4f79e164376b": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8082-evidence.kept.pr8082-draft-review-review-366a97284f4fd728": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8082-evidence.kept.pr8082-final_metadata_review-6b3104d9f9afb52f": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8082-evidence.kept.pr8082-goal-525566f7a8b7cb8d": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8082-evidence.kept.pr8082-handoff-9ef67db77ea9ef6f": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8082-evidence.kept.pr8082-literature_bridges-ae1d413e72d87337": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8082-evidence.kept.pr8082-native-gaussian-high-moment-parent-review-review-f052d6f81f30f6d0": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8082-evidence.kept.pr8082-native-gaussian-high-moment-runtime-design-protocol-4bd635a4fa599bfa": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8082-evidence.kept.pr8082-native-gaussian-jet-degree-cold-review-derivation-981c4a3b471adce6": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8082-evidence.kept.pr8082-native-gaussian-jet-root-cold-review-review-5bf86ae196c3b991": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8082-evidence.kept.pr8082-native-gaussian-moment-jet-cold-review-review-a2bb960eff72d75e": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8082-evidence.kept.pr8082-native-gaussian-moment-jet-parent-synthesis-review-a47dbfa67a870e84": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8082-evidence.kept.pr8082-native-gaussian-moment-jet-stretch-derivation-0e7bc42dc08458ce": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8082-evidence.kept.pr8082-native-omega79-catalog-supplier-design-derivation-0ec9b9774c05c5d0": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8082-evidence.kept.pr8082-native-omega79-root-cold-review-review-305150d91fadc76e": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8082-evidence.kept.pr8082-no_go_ledger-47d6880ce44b1ce7": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8082-evidence.kept.pr8082-note-c17a9fa8eff6485e": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8082-evidence.kept.pr8082-opportunity_queue-ccb74c0b7866140d": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8082-evidence.kept.pr8082-pr_backlog-b978f18b90eeb9e7": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8082-evidence.kept.pr8082-recovery-23a7a88823d021c5": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8082-evidence.kept.pr8082-review_history-3f4cb79c836849bf": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8082-evidence.kept.pr8082-route_portfolio-026cc4e1e794b8fa": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8082-evidence.kept.pr8082-trace_gate-f67515f6cce5b41d": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8082-evidence.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.kept.pr8083-artifact_plan-5a8a2b441ec1dded": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.kept.pr8083-assumptions_and_imports-04947ad72d106df1": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.kept.pr8083-canonical-review-readme-6d373254b5a00bf5": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.kept.pr8083-canonical-review-review-4210651e4c41315f": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.kept.pr8083-claim_status_certificate-4a3d4f79e164376b": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.kept.pr8083-draft-review-format_affected_review-33c6e1ff74850e17": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.kept.pr8083-draft-review-readme-066aff5e6f7baff9": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.kept.pr8083-draft-review-review-366a97284f4fd728": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.kept.pr8083-final_metadata_review-6b3104d9f9afb52f": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.kept.pr8083-goal-525566f7a8b7cb8d": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.kept.pr8083-handoff-9ef67db77ea9ef6f": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.kept.pr8083-literature_bridges-ae1d413e72d87337": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.kept.pr8083-native-posterior-ward-error-stretch-derivation-4ab3d6cdb143a227": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.kept.pr8083-native-posterior-ward-independent-review-review-48175ef391878937": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.kept.pr8083-native-quartic-activation-cold-review-review-979b1ab95b699c6e": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.kept.pr8083-native-quartic-core-cold-review-review-c9a208eeb5a82851": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.kept.pr8083-native-quartic-estimator-root-cold-review-review-4864af9907632d16": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.kept.pr8083-native-quartic-inverse-majorant-parent-stretch-derivation-da7873b3424ef270": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.kept.pr8083-native-quartic-inverse-majorant-stretch-derivation-ce578da2e2d28bcb": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.kept.pr8083-native-quartic-spectral-estimator-design-protocol-c308632b5adc3cd9": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.kept.pr8083-native-quartic-worker-parent-review-review-126dc4ff827d4683": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.kept.pr8083-no_go_ledger-47d6880ce44b1ce7": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.kept.pr8083-note-c17a9fa8eff6485e": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.kept.pr8083-opportunity_queue-ccb74c0b7866140d": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.kept.pr8083-pr_backlog-b978f18b90eeb9e7": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.kept.pr8083-recovery-23a7a88823d021c5": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.kept.pr8083-review_history-3f4cb79c836849bf": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.kept.pr8083-route_portfolio-026cc4e1e794b8fa": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.kept.pr8083-trace_gate-f67515f6cce5b41d": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8083-evidence.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8084-native-feedback-evidence.pr8084-claim_status_certificate": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8084-native-feedback-evidence.pr8084-handoff": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8084-native-feedback-evidence.pr8084-no_go_discipline_checklist": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8084-native-feedback-evidence.pr8084-review_history": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8084-native-feedback-evidence.pr8084-trace_gate": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8084-native-feedback-evidence.readme": {
+-   "deps_hash": "702ca2032b3f",
+-   "out_degree": 6
+-  },
+-  "work_history.repo.review_feedback.pr8085-regge-positive-transfer-evidence.pr8085-claim_status_certificate": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8085-regge-positive-transfer-evidence.pr8085-handoff": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8085-regge-positive-transfer-evidence.pr8085-no_go_discipline_checklist": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8085-regge-positive-transfer-evidence.pr8085-review_history": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8085-regge-positive-transfer-evidence.pr8085-trace_gate": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8085-regge-positive-transfer-evidence.readme": {
+-   "deps_hash": "a811438131a8",
+-   "out_degree": 6
+-  },
+-  "work_history.repo.review_feedback.pr8086-operator-evidence.kept.pr8086-operator-no_go_discipline_checklist-af3647a217d8dd77": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8086-operator-evidence.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8086-spectral-evidence.kept.pr8086-spectral-no_go_discipline_checklist-af3647a217d8dd77": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8086-spectral-evidence.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8086-ward-evidence.kept.pr8086-ward-no_go_discipline_checklist-af3647a217d8dd77": {
++  "work_history.repo.review_feedback.pr8086-ward-evidence.kept.pr8086-ward-no_go_discipline_checklist-af3647a217d8dd77": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+@@ -24554,166 +23394,6 @@
+    "deps_hash": "2439f6d0ebe5",
+    "out_degree": 8
+   },
+-  "work_history.repo.review_feedback.pr8163-evidence.kept.pr8163-block01_working_temporal_run_resummation-698b0cf37b333c5c": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8163-evidence.kept.pr8163-block03_working_open_boundary_hamiltonian_match-46b5468c3becdba7": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8163-evidence.kept.pr8163-block04_working_dynamical_gauge_join-543b580df0740fc3": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8163-evidence.kept.pr8163-numerical_history-1c3e1a7e988edc37": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8163-evidence.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8165-evidence.kept.pr8165-block01_sampled_magnetic_event_bound-fa7db7f42105ca0c": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8165-evidence.kept.pr8165-block02_continuous_time_magnetic_excursions-56497292afc9234a": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8165-evidence.kept.pr8165-block03_spatial_path_limit-6a9138fe6c8076f9": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8165-evidence.kept.pr8165-block04_temporal_oscillations_and_coarse_currents-f5168c9355bb47a5": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8165-evidence.kept.pr8165-claim_status_certificate-4a3d4f79e164376b": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8165-evidence.kept.pr8165-no_go_discipline_checklist-af3647a217d8dd77": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8165-evidence.kept.pr8165-personal_review-e1afd875db174ddc": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8165-evidence.kept.pr8165-review_history-3f4cb79c836849bf": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8165-evidence.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8167-evidence.kept.pr8167-compact_sine_score_domination_and_static_curl_limit-6b845da826f6bcc6": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8167-evidence.kept.pr8167-exact_compact_cover_and_source_identities-3443f691b71f300d": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8167-evidence.kept.pr8167-no_go_discipline_checklist-af3647a217d8dd77": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8167-evidence.kept.pr8167-review_history-3f4cb79c836849bf": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8167-evidence.kept.pr8167-sparse_loops_with_nongaussian_filling_fluctuations-e810456f880739f8": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8167-evidence.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8169-evidence.deferred_corrected_endpoint_proof": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8169-evidence.kept.admissibility_rule_frame_attached_four_point_menu_covariant_weights_gibbs_linear_family_and_sequential_support_obstruction_bounded_theorem_note_2026-09-16-9744b717438183f6": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8169-evidence.kept.claim_status_certificate-2e1efea5ebfa174e": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8169-evidence.kept.handoff-2588781386ad583a": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8169-evidence.kept.opportunity_queue-8e0fa176acb36723": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8169-evidence.kept.trace_gate-b16d8ada36906b74": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8169-evidence.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8170-evidence.deferred_science": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8170-evidence.kept.admissibility_rule_unsoldered_formation_law_in_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_and_the_simulated_algebraic_decay_of_the_initial_plane_memory_bounded_theorem_note_2026-09-16-e50aaf4b6686e647": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8170-evidence.kept.approach_registry-4e9fef47b9eac07d": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8170-evidence.kept.checker_block26_findings-c0a6cd25f43f3f2c": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8170-evidence.kept.claim_status_certificate_block26-315a8231a89a61c4": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8170-evidence.kept.goal_block26-083903adfde6cc31": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8170-evidence.kept.handoff-2061d1bff2a70397": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8170-evidence.kept.no_go_ledger-05cc24d6760014de": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8170-evidence.kept.opportunity_queue-72e985a42c72b74e": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8170-evidence.kept.results_block26-0263fa9278e61353": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8170-evidence.kept.review_history-5eeaa28fca70564a": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8170-evidence.kept.trace_gate-151b6bec86e6fa6b": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.repo.review_feedback.pr8170-evidence.readme": {
+-   "deps_hash": "0df75e196ccf",
+-   "out_degree": 12
+-  },
+   "work_history.repo.review_feedback.preterminal_context_quantum_process_cycle189_note_2026-07-16": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+@@ -24814,186 +23494,6 @@
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0
+   },
+-  "work_history.review_loop.pr8023.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8024.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8025.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8026.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8027.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8028.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8029.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8030.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8031.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8137.pr8137_approach_registry": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8137.pr8137_assumptions_and_imports": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8137.pr8137_claim_status_certificate": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8137.pr8137_goal": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8137.pr8137_handoff": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8137.pr8137_opportunity_queue": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8137.pr8137_review_history": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8137.pr8137_route_portfolio": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8137.pr8137_trace_gate": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8137.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8143.pr8143_conformance": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8143.pr8143_handoff": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8143.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8145.8140-clock-static-charge-20260915-conformance": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8145.8140-clock-static-charge-20260915-handoff": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8145.8140-clock-static-charge-20260915-trace_gate": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8145.8144-static-charge-transfer-sector-20260915-conformance": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8145.8144-static-charge-transfer-sector-20260915-handoff": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8145.8145-clock-history-field-20260915-conformance": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8145.8145-clock-history-field-20260915-handoff": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8145.readme": {
+-   "deps_hash": "8948536da7f0",
+-   "out_degree": 7
+-  },
+-  "work_history.review_loop.pr8146.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8147.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8150.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8151.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8152.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8153.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8154.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8158.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8159.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8160.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8161.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8162.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8164.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8166.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+-  "work_history.review_loop.pr8168.readme": {
+-   "deps_hash": "e3b0c44298fc",
+-   "out_degree": 0
+-  },
+   "work_history.yt.yt_explicit_systematic_reduction_options_2026-04-15": {
+    "deps_hash": "e3b0c44298fc",
+    "out_degree": 0

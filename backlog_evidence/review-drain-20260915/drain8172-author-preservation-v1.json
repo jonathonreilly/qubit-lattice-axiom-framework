@@ -1,0 +1,33 @@
+{
+  "original_files": 24,
+  "inherited_files": 79,
+  "exact_originals_verified": true,
+  "exact_inherited_tar_and_members_verified": true,
+  "unchanged_function_asts": [
+    "mut",
+    "normalize_text",
+    "conditional",
+    "sensitivity",
+    "deviations",
+    "erode",
+    "p_t"
+  ],
+  "preserved_full_healing_proof": "Original full proof with explicit nonempty domain, level-zero recenter insertion and capped probability; no formula stripping",
+  "formula_changes": [
+    "True third coordinate t-a-b",
+    "Explicit recenter before original complete region box",
+    "Exact point equalities and p=1/10 counterexample",
+    "Supplied nonnegative recurrence with initial <=2 delta; no model coupling import"
+  ],
+  "historical_mutations": 8,
+  "current_math_mutations": 8,
+  "retired_prose_mutations": [
+    "claim_reading_injected",
+    "claim_classical_name_in_theorem"
+  ],
+  "new_correction_mutations": [
+    "translation_origin_wrong",
+    "third_coordinate_wrong"
+  ],
+  "primary_executions": 0
+}

@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "kind": "proposed-root-owned-capture-and-mathematical-control-plan-not-executed",
+  "primary": "scripts/sphere_static_finite_volume_covariance_response_projected_mode_sum_check_2026_09_16.py",
+  "primary_sha256": "54441f119d85ebc62de0127366305e8b9871592b33f064f0c0f4d633fdb13682",
+  "runtime_inputs": [
+    {
+      "path": "docs/SPHERE_STATIC_FINITE_VOLUME_GAUSSIAN_COVARIANCE_FIXED_AXIS_RESPONSE_AND_PROJECTED_MODE_SUM_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "a73ca20d57b4d738084d43748f476da9c353d3f65d56d846ea7525bc93104f05",
+      "role": "proof source"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "framework authority"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "role": "context only, not mathematical premise"
+    }
+  ],
+  "input_fingerprint": "742f91bda706c9fdb27044ed67900f1a16ec3b28cc2f198a4f337c3465a96f14",
+  "helpers": [],
+  "cache_destination": "logs/runner-cache/sphere_static_finite_volume_covariance_response_projected_mode_sum_check_2026_09_16.txt",
+  "stdout_only": true,
+  "json_outputs": [],
+  "primary_output_writes": [],
+  "runner_cache_result_contract": "Original API merges primary stderr into stdout; result.stderr is empty by design. Raw result is serialized before original source/input generation comparison, unchanged return identity.",
+  "primary_limits": {
+    "wall_seconds": 60,
+    "memory_bytes": 402653184,
+    "enforcement": "External sampled aggregate process-tree RSS including supervisor, worker and descendants; interval .02s plus ps overhead; not an OS hard reservation; kills process group and recorded descendants on violation."
+  },
+  "completed_check_count": 14,
+  "primary_invocations": 1,
+  "all_mutation_definitions": {
+    "eigenvalue_wrong": "B",
+    "spin_wave_normalization_wrong": "B",
+    "sum_rule_wrong": "C",
+    "integration_by_parts_wrong": "C",
+    "parseval_wrong": "D",
+    "claim_source_injected": "F",
+    "claim_classical_name_in_theorem": "F"
+  },
+  "mathematical_controls": {
+    "eigenvalue_wrong": {
+      "expected_family": "B",
+      "expected_failed_tags": [
+        "B1"
+      ],
+      "expected_exit_code": 1,
+      "expected_total": {
+        "passed": 13,
+        "failed": 1
+      },
+      "mechanism": "Replace eigenvalue coefficient2 by1 on the same four64-site plane waves; exact matrix residual must fail."
+    },
+    "spin_wave_normalization_wrong": {
+      "expected_family": "B",
+      "expected_failed_tags": [
+        "B2"
+      ],
+      "expected_exit_code": 1,
+      "expected_total": {
+        "passed": 13,
+        "failed": 1
+      },
+      "mechanism": "Replace first ring variance1/(2beta) by1/(4beta); same inverse eigenvalue equation must fail."
+    },
+    "sum_rule_wrong": {
+      "expected_family": "C",
+      "expected_failed_tags": [
+        "C1"
+      ],
+      "expected_exit_code": 1,
+      "expected_total": {
+        "passed": 13,
+        "failed": 1
+      },
+      "mechanism": "Double kappa times the unchanged single-site transverse moment; exact response identity must fail."
+    },
+    "integration_by_parts_wrong": {
+      "expected_family": "C",
+      "expected_failed_tags": [
+        "C2"
+      ],
+      "expected_exit_code": 1,
+      "expected_total": {
+        "passed": 13,
+        "failed": 1
+      },
+      "mechanism": "Reverse the target sign of the generator action on s3, leaving derivative and surface integration unchanged."
+    },
+    "parseval_wrong": {
+      "expected_family": "D",
+      "expected_failed_tags": [
+        "D1"
+      ],
+      "expected_exit_code": 1,
+      "expected_total": {
+        "passed": 13,
+        "failed": 1
+      },
+      "mechanism": "Double the exact rational real-space squared norm while keeping all four Fourier coefficients unchanged."
+    }
+  },
+  "mutation_limits": {
+    "wall_seconds_each": 60,
+    "memory_bytes_each": 402653184,
+    "sequence": "Serial individual invocations of --mutation <name>, after preserved primary receipt; no baseline invocation; once-only marker per name; abort on unexpected result, no retry."
+  },
+  "not_proposed_packaging_mutations": [
+    "claim_source_injected",
+    "claim_classical_name_in_theorem"
+  ],
+  "scientific_scope": "Five existing finite mathematical corruption routes only; no global, asymptotic, empirical or negative-certification PASS. Original independent bond-cancellation/frame controls are reused without rerun; original samplers stay unexecuted.",
+  "required_before_execution": [
+    "Exact staged schema2 source and input record",
+    "Cheap mechanical preflight tied to that record/tree",
+    "Original same-session actual cold report clearance, explicitly bound in a new immutable adapter version; v1 deliberately refuses execution",
+    "Root explicit capture dispatch"
+  ],
+  "failure_policy": "Preserve markers, raw result, live merged stream, supervisor log, mutation stdout/stderr, receipt and source/input generations. No automatic retry, baseline repeat, cap increase, evidence replacement or fabricated JSON.",
+  "source_resource_plan": {
+    "path": "/private/tmp/review-drain-20260915/drain8173-resource-plan-v3.json",
+    "sha256": "bc4163835037339cd2a058efbac1cc0c4e0049259e93d731ba0f491bcff38133"
+  },
+  "limits_measured": false,
+  "recovery_and_source_counts": {
+    "source_paths": 25,
+    "original_payloads": 20
+  },
+  "canonical_evidence_binding": "Canonical cache is owned by source unit at cache_destination; final unit must bind its bytes. No extra mutable checkout cache path is added to reviewer references. External preserved raw capture is execution provenance only."
+}

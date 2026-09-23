@@ -1,0 +1,753 @@
+{
+  "method": "exact incidence distances and local electric-support union; no author imports",
+  "rows": [
+    {
+      "d": 2,
+      "A_neighbors_sharing_B": 8,
+      "jump_original_diameter": 4,
+      "jump_enlarged_diameter": 8,
+      "maximum_pair_enlarged_diameter": 12,
+      "all_pair_rows": [
+        {
+          "c": [
+            -2,
+            0
+          ],
+          "common_B": 1,
+          "original_factors": 17,
+          "enlarged_factors": 49,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            -1,
+            -1
+          ],
+          "common_B": 2,
+          "original_factors": 16,
+          "enlarged_factors": 42,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            -1,
+            1
+          ],
+          "common_B": 2,
+          "original_factors": 16,
+          "enlarged_factors": 42,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            0,
+            -2
+          ],
+          "common_B": 1,
+          "original_factors": 17,
+          "enlarged_factors": 49,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            0,
+            2
+          ],
+          "common_B": 1,
+          "original_factors": 17,
+          "enlarged_factors": 49,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            1,
+            -1
+          ],
+          "common_B": 2,
+          "original_factors": 16,
+          "enlarged_factors": 42,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            1,
+            1
+          ],
+          "common_B": 2,
+          "original_factors": 16,
+          "enlarged_factors": 42,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            2,
+            0
+          ],
+          "common_B": 1,
+          "original_factors": 17,
+          "enlarged_factors": 49,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        }
+      ]
+    },
+    {
+      "d": 3,
+      "A_neighbors_sharing_B": 18,
+      "jump_original_diameter": 4,
+      "jump_enlarged_diameter": 8,
+      "maximum_pair_enlarged_diameter": 12,
+      "all_pair_rows": [
+        {
+          "c": [
+            -2,
+            0,
+            0
+          ],
+          "common_B": 1,
+          "original_factors": 25,
+          "enlarged_factors": 109,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            -1,
+            -1,
+            0
+          ],
+          "common_B": 2,
+          "original_factors": 24,
+          "enlarged_factors": 98,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            -1,
+            0,
+            -1
+          ],
+          "common_B": 2,
+          "original_factors": 24,
+          "enlarged_factors": 98,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            -1,
+            0,
+            1
+          ],
+          "common_B": 2,
+          "original_factors": 24,
+          "enlarged_factors": 98,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            -1,
+            1,
+            0
+          ],
+          "common_B": 2,
+          "original_factors": 24,
+          "enlarged_factors": 98,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            0,
+            -2,
+            0
+          ],
+          "common_B": 1,
+          "original_factors": 25,
+          "enlarged_factors": 109,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            0,
+            -1,
+            -1
+          ],
+          "common_B": 2,
+          "original_factors": 24,
+          "enlarged_factors": 98,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            0,
+            -1,
+            1
+          ],
+          "common_B": 2,
+          "original_factors": 24,
+          "enlarged_factors": 98,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            0,
+            0,
+            -2
+          ],
+          "common_B": 1,
+          "original_factors": 25,
+          "enlarged_factors": 109,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            0,
+            0,
+            2
+          ],
+          "common_B": 1,
+          "original_factors": 25,
+          "enlarged_factors": 109,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            0,
+            1,
+            -1
+          ],
+          "common_B": 2,
+          "original_factors": 24,
+          "enlarged_factors": 98,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            0,
+            1,
+            1
+          ],
+          "common_B": 2,
+          "original_factors": 24,
+          "enlarged_factors": 98,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            0,
+            2,
+            0
+          ],
+          "common_B": 1,
+          "original_factors": 25,
+          "enlarged_factors": 109,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            1,
+            -1,
+            0
+          ],
+          "common_B": 2,
+          "original_factors": 24,
+          "enlarged_factors": 98,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            1,
+            0,
+            -1
+          ],
+          "common_B": 2,
+          "original_factors": 24,
+          "enlarged_factors": 98,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            1,
+            0,
+            1
+          ],
+          "common_B": 2,
+          "original_factors": 24,
+          "enlarged_factors": 98,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            1,
+            1,
+            0
+          ],
+          "common_B": 2,
+          "original_factors": 24,
+          "enlarged_factors": 98,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            2,
+            0,
+            0
+          ],
+          "common_B": 1,
+          "original_factors": 25,
+          "enlarged_factors": 109,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        }
+      ]
+    },
+    {
+      "d": 4,
+      "A_neighbors_sharing_B": 32,
+      "jump_original_diameter": 4,
+      "jump_enlarged_diameter": 8,
+      "maximum_pair_enlarged_diameter": 12,
+      "all_pair_rows": [
+        {
+          "c": [
+            -2,
+            0,
+            0,
+            0
+          ],
+          "common_B": 1,
+          "original_factors": 33,
+          "enlarged_factors": 193,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            -1,
+            -1,
+            0,
+            0
+          ],
+          "common_B": 2,
+          "original_factors": 32,
+          "enlarged_factors": 178,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            -1,
+            0,
+            -1,
+            0
+          ],
+          "common_B": 2,
+          "original_factors": 32,
+          "enlarged_factors": 178,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            -1,
+            0,
+            0,
+            -1
+          ],
+          "common_B": 2,
+          "original_factors": 32,
+          "enlarged_factors": 178,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            -1,
+            0,
+            0,
+            1
+          ],
+          "common_B": 2,
+          "original_factors": 32,
+          "enlarged_factors": 178,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            -1,
+            0,
+            1,
+            0
+          ],
+          "common_B": 2,
+          "original_factors": 32,
+          "enlarged_factors": 178,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            -1,
+            1,
+            0,
+            0
+          ],
+          "common_B": 2,
+          "original_factors": 32,
+          "enlarged_factors": 178,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            0,
+            -2,
+            0,
+            0
+          ],
+          "common_B": 1,
+          "original_factors": 33,
+          "enlarged_factors": 193,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            0,
+            -1,
+            -1,
+            0
+          ],
+          "common_B": 2,
+          "original_factors": 32,
+          "enlarged_factors": 178,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            0,
+            -1,
+            0,
+            -1
+          ],
+          "common_B": 2,
+          "original_factors": 32,
+          "enlarged_factors": 178,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            0,
+            -1,
+            0,
+            1
+          ],
+          "common_B": 2,
+          "original_factors": 32,
+          "enlarged_factors": 178,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            0,
+            -1,
+            1,
+            0
+          ],
+          "common_B": 2,
+          "original_factors": 32,
+          "enlarged_factors": 178,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            0,
+            0,
+            -2,
+            0
+          ],
+          "common_B": 1,
+          "original_factors": 33,
+          "enlarged_factors": 193,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            0,
+            0,
+            -1,
+            -1
+          ],
+          "common_B": 2,
+          "original_factors": 32,
+          "enlarged_factors": 178,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            0,
+            0,
+            -1,
+            1
+          ],
+          "common_B": 2,
+          "original_factors": 32,
+          "enlarged_factors": 178,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            0,
+            0,
+            0,
+            -2
+          ],
+          "common_B": 1,
+          "original_factors": 33,
+          "enlarged_factors": 193,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "common_B": 1,
+          "original_factors": 33,
+          "enlarged_factors": 193,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            0,
+            0,
+            1,
+            -1
+          ],
+          "common_B": 2,
+          "original_factors": 32,
+          "enlarged_factors": 178,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "common_B": 2,
+          "original_factors": 32,
+          "enlarged_factors": 178,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            0,
+            0,
+            2,
+            0
+          ],
+          "common_B": 1,
+          "original_factors": 33,
+          "enlarged_factors": 193,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            0,
+            1,
+            -1,
+            0
+          ],
+          "common_B": 2,
+          "original_factors": 32,
+          "enlarged_factors": 178,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            0,
+            1,
+            0,
+            -1
+          ],
+          "common_B": 2,
+          "original_factors": 32,
+          "enlarged_factors": 178,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "common_B": 2,
+          "original_factors": 32,
+          "enlarged_factors": 178,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "common_B": 2,
+          "original_factors": 32,
+          "enlarged_factors": 178,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            0,
+            2,
+            0,
+            0
+          ],
+          "common_B": 1,
+          "original_factors": 33,
+          "enlarged_factors": 193,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            1,
+            -1,
+            0,
+            0
+          ],
+          "common_B": 2,
+          "original_factors": 32,
+          "enlarged_factors": 178,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            1,
+            0,
+            -1,
+            0
+          ],
+          "common_B": 2,
+          "original_factors": 32,
+          "enlarged_factors": 178,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            1,
+            0,
+            0,
+            -1
+          ],
+          "common_B": 2,
+          "original_factors": 32,
+          "enlarged_factors": 178,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "common_B": 2,
+          "original_factors": 32,
+          "enlarged_factors": 178,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "common_B": 2,
+          "original_factors": 32,
+          "enlarged_factors": 178,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "common_B": 2,
+          "original_factors": 32,
+          "enlarged_factors": 178,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        },
+        {
+          "c": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "common_B": 1,
+          "original_factors": 33,
+          "enlarged_factors": 193,
+          "original_incidence_diameter": 8,
+          "enlarged_incidence_diameter": 12
+        }
+      ]
+    }
+  ],
+  "proof_boundary": "Commutativity, not iterative support expansion, proves that only one enlargement is needed."
+}

@@ -1,0 +1,883 @@
+{
+  "source_sha256": "95bbec165a6fac41874567c2285c52e848c1fcb7fe1fb84d9316bae7177a9e42",
+  "support_geometry": [
+    {
+      "d": 2,
+      "side_length": 4,
+      "vertices": 16,
+      "edges": 24,
+      "pair_terms": 17,
+      "birth_edge_terms": 24,
+      "max_actual_term_overlap": 41,
+      "proved_coarse_overlap_bound": 91625968976,
+      "support_rows": {
+        "pair": {
+          "maximum_original_cells": 16,
+          "maximum_dressed_cells": 34,
+          "maximum_dressed_incidence_diameter": 12
+        },
+        "birth": {
+          "maximum_original_cells": 9,
+          "maximum_dressed_cells": 25,
+          "maximum_dressed_incidence_diameter": 8
+        }
+      }
+    },
+    {
+      "d": 2,
+      "side_length": 6,
+      "vertices": 36,
+      "edges": 60,
+      "pair_terms": 49,
+      "birth_edge_terms": 60,
+      "max_actual_term_overlap": 109,
+      "proved_coarse_overlap_bound": 91625968976,
+      "support_rows": {
+        "pair": {
+          "maximum_original_cells": 17,
+          "maximum_dressed_cells": 47,
+          "maximum_dressed_incidence_diameter": 12
+        },
+        "birth": {
+          "maximum_original_cells": 9,
+          "maximum_dressed_cells": 29,
+          "maximum_dressed_incidence_diameter": 8
+        }
+      }
+    },
+    {
+      "d": 2,
+      "side_length": 8,
+      "vertices": 64,
+      "edges": 112,
+      "pair_terms": 97,
+      "birth_edge_terms": 112,
+      "max_actual_term_overlap": 198,
+      "proved_coarse_overlap_bound": 91625968976,
+      "support_rows": {
+        "pair": {
+          "maximum_original_cells": 17,
+          "maximum_dressed_cells": 49,
+          "maximum_dressed_incidence_diameter": 12
+        },
+        "birth": {
+          "maximum_original_cells": 9,
+          "maximum_dressed_cells": 29,
+          "maximum_dressed_incidence_diameter": 8
+        }
+      }
+    },
+    {
+      "d": 3,
+      "side_length": 4,
+      "vertices": 64,
+      "edges": 144,
+      "pair_terms": 156,
+      "birth_edge_terms": 144,
+      "max_actual_term_overlap": 300,
+      "proved_coarse_overlap_bound": 121871948002092,
+      "support_rows": {
+        "pair": {
+          "maximum_original_cells": 24,
+          "maximum_dressed_cells": 86,
+          "maximum_dressed_incidence_diameter": 12
+        },
+        "birth": {
+          "maximum_original_cells": 13,
+          "maximum_dressed_cells": 55,
+          "maximum_dressed_incidence_diameter": 8
+        }
+      }
+    },
+    {
+      "d": 3,
+      "side_length": 6,
+      "vertices": 216,
+      "edges": 540,
+      "pair_terms": 666,
+      "birth_edge_terms": 540,
+      "max_actual_term_overlap": 1073,
+      "proved_coarse_overlap_bound": 121871948002092,
+      "support_rows": {
+        "pair": {
+          "maximum_original_cells": 25,
+          "maximum_dressed_cells": 107,
+          "maximum_dressed_incidence_diameter": 12
+        },
+        "birth": {
+          "maximum_original_cells": 13,
+          "maximum_dressed_cells": 61,
+          "maximum_dressed_incidence_diameter": 8
+        }
+      }
+    }
+  ],
+  "electric_phase_controls": {
+    "one_shell_enlargement_is_needed": {
+      "initial_D": "4*n**2",
+      "after_same_birth_D": "2*n**2",
+      "birth_electric_phase_difference": "-2*n**2",
+      "external_cycle": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "original_star_inputs_identical": true,
+      "all_original_and_output_words_Gauss_compatible": true,
+      "changed_external_D_edges_are_in_one_dressed_shell": true
+    },
+    "norm_time_continuity_counterexample": {
+      "plaquette_D": "4*n**2",
+      "plaquette_translation_energy_difference_over_K": "8*n + 4",
+      "times": "pi/[K(8n+4)], n->infinity",
+      "exact_norm_difference_at_these_times": 2,
+      "scope": "State maximizing the norm changes with n; each fixed normal-state expectation remains continuous."
+    }
+  },
+  "local_initial_formation": [
+    {
+      "d": 2,
+      "z": 4,
+      "local_B_site": [
+        1,
+        0
+      ],
+      "rate_into_B_by_newborn_without_kappa": 24,
+      "rate_into_B_by_old_record_transfer_without_kappa": 24,
+      "local_B_occupation_initial_derivative_without_kappa": 48,
+      "record_density_per_vertex_initial_derivative_without_kappa": 24,
+      "single_edge_initial_count_rate_without_kappa": 6,
+      "resolved_and_coherent_agree_at_initial_instant": true,
+      "physical_channels_checked": [
+        {
+          "a": [
+            0,
+            0
+          ],
+          "b": [
+            -1,
+            0
+          ],
+          "resolved_Gram": 3,
+          "coherent_Gram": 6
+        },
+        {
+          "a": [
+            0,
+            0
+          ],
+          "b": [
+            0,
+            -1
+          ],
+          "resolved_Gram": 3,
+          "coherent_Gram": 6
+        },
+        {
+          "a": [
+            0,
+            0
+          ],
+          "b": [
+            1,
+            0
+          ],
+          "resolved_Gram": 3,
+          "coherent_Gram": 6
+        },
+        {
+          "a": [
+            0,
+            0
+          ],
+          "b": [
+            0,
+            1
+          ],
+          "resolved_Gram": 3,
+          "coherent_Gram": 6
+        },
+        {
+          "a": [
+            1,
+            -1
+          ],
+          "b": [
+            0,
+            -1
+          ],
+          "resolved_Gram": 3,
+          "coherent_Gram": 6
+        },
+        {
+          "a": [
+            1,
+            -1
+          ],
+          "b": [
+            1,
+            -2
+          ],
+          "resolved_Gram": 3,
+          "coherent_Gram": 6
+        },
+        {
+          "a": [
+            1,
+            -1
+          ],
+          "b": [
+            2,
+            -1
+          ],
+          "resolved_Gram": 3,
+          "coherent_Gram": 6
+        },
+        {
+          "a": [
+            1,
+            -1
+          ],
+          "b": [
+            1,
+            0
+          ],
+          "resolved_Gram": 3,
+          "coherent_Gram": 6
+        },
+        {
+          "a": [
+            2,
+            0
+          ],
+          "b": [
+            1,
+            0
+          ],
+          "resolved_Gram": 3,
+          "coherent_Gram": 6
+        },
+        {
+          "a": [
+            2,
+            0
+          ],
+          "b": [
+            2,
+            -1
+          ],
+          "resolved_Gram": 3,
+          "coherent_Gram": 6
+        },
+        {
+          "a": [
+            2,
+            0
+          ],
+          "b": [
+            3,
+            0
+          ],
+          "resolved_Gram": 3,
+          "coherent_Gram": 6
+        },
+        {
+          "a": [
+            2,
+            0
+          ],
+          "b": [
+            2,
+            1
+          ],
+          "resolved_Gram": 3,
+          "coherent_Gram": 6
+        },
+        {
+          "a": [
+            1,
+            1
+          ],
+          "b": [
+            0,
+            1
+          ],
+          "resolved_Gram": 3,
+          "coherent_Gram": 6
+        },
+        {
+          "a": [
+            1,
+            1
+          ],
+          "b": [
+            1,
+            0
+          ],
+          "resolved_Gram": 3,
+          "coherent_Gram": 6
+        },
+        {
+          "a": [
+            1,
+            1
+          ],
+          "b": [
+            2,
+            1
+          ],
+          "resolved_Gram": 3,
+          "coherent_Gram": 6
+        },
+        {
+          "a": [
+            1,
+            1
+          ],
+          "b": [
+            1,
+            2
+          ],
+          "resolved_Gram": 3,
+          "coherent_Gram": 6
+        }
+      ]
+    },
+    {
+      "d": 3,
+      "z": 6,
+      "local_B_site": [
+        1,
+        0,
+        0
+      ],
+      "rate_into_B_by_newborn_without_kappa": 60,
+      "rate_into_B_by_old_record_transfer_without_kappa": 60,
+      "local_B_occupation_initial_derivative_without_kappa": 120,
+      "record_density_per_vertex_initial_derivative_without_kappa": 60,
+      "single_edge_initial_count_rate_without_kappa": 10,
+      "resolved_and_coherent_agree_at_initial_instant": true,
+      "physical_channels_checked": [
+        {
+          "a": [
+            0,
+            0,
+            0
+          ],
+          "b": [
+            -1,
+            0,
+            0
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            0,
+            0,
+            0
+          ],
+          "b": [
+            0,
+            -1,
+            0
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            0,
+            0,
+            0
+          ],
+          "b": [
+            0,
+            0,
+            -1
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            0,
+            0,
+            0
+          ],
+          "b": [
+            1,
+            0,
+            0
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            0,
+            0,
+            0
+          ],
+          "b": [
+            0,
+            1,
+            0
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            0,
+            0,
+            0
+          ],
+          "b": [
+            0,
+            0,
+            1
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            1,
+            -1,
+            0
+          ],
+          "b": [
+            0,
+            -1,
+            0
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            1,
+            -1,
+            0
+          ],
+          "b": [
+            1,
+            -2,
+            0
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            1,
+            -1,
+            0
+          ],
+          "b": [
+            1,
+            -1,
+            -1
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            1,
+            -1,
+            0
+          ],
+          "b": [
+            2,
+            -1,
+            0
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            1,
+            -1,
+            0
+          ],
+          "b": [
+            1,
+            0,
+            0
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            1,
+            -1,
+            0
+          ],
+          "b": [
+            1,
+            -1,
+            1
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            1,
+            0,
+            -1
+          ],
+          "b": [
+            0,
+            0,
+            -1
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            1,
+            0,
+            -1
+          ],
+          "b": [
+            1,
+            -1,
+            -1
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            1,
+            0,
+            -1
+          ],
+          "b": [
+            1,
+            0,
+            -2
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            1,
+            0,
+            -1
+          ],
+          "b": [
+            2,
+            0,
+            -1
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            1,
+            0,
+            -1
+          ],
+          "b": [
+            1,
+            1,
+            -1
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            1,
+            0,
+            -1
+          ],
+          "b": [
+            1,
+            0,
+            0
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            2,
+            0,
+            0
+          ],
+          "b": [
+            1,
+            0,
+            0
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            2,
+            0,
+            0
+          ],
+          "b": [
+            2,
+            -1,
+            0
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            2,
+            0,
+            0
+          ],
+          "b": [
+            2,
+            0,
+            -1
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            2,
+            0,
+            0
+          ],
+          "b": [
+            3,
+            0,
+            0
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            2,
+            0,
+            0
+          ],
+          "b": [
+            2,
+            1,
+            0
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            2,
+            0,
+            0
+          ],
+          "b": [
+            2,
+            0,
+            1
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            1,
+            1,
+            0
+          ],
+          "b": [
+            0,
+            1,
+            0
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            1,
+            1,
+            0
+          ],
+          "b": [
+            1,
+            0,
+            0
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            1,
+            1,
+            0
+          ],
+          "b": [
+            1,
+            1,
+            -1
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            1,
+            1,
+            0
+          ],
+          "b": [
+            2,
+            1,
+            0
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            1,
+            1,
+            0
+          ],
+          "b": [
+            1,
+            2,
+            0
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            1,
+            1,
+            0
+          ],
+          "b": [
+            1,
+            1,
+            1
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            1,
+            0,
+            1
+          ],
+          "b": [
+            0,
+            0,
+            1
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            1,
+            0,
+            1
+          ],
+          "b": [
+            1,
+            -1,
+            1
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            1,
+            0,
+            1
+          ],
+          "b": [
+            1,
+            0,
+            0
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            1,
+            0,
+            1
+          ],
+          "b": [
+            2,
+            0,
+            1
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            1,
+            0,
+            1
+          ],
+          "b": [
+            1,
+            1,
+            1
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        },
+        {
+          "a": [
+            1,
+            0,
+            1
+          ],
+          "b": [
+            1,
+            0,
+            2
+          ],
+          "resolved_Gram": 5,
+          "coherent_Gram": 10
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 0.49695804179646075,
+  "scope": "Exact finite geometry and physical polynomial/rate controls. No evolution fit, thermodynamic numerical proof, source derivation or volume-uniform microscopic bound."
+}

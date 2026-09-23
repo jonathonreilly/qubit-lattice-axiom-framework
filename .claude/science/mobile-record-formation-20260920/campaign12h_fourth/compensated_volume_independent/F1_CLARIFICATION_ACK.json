@@ -1,0 +1,37 @@
+{
+  "created_utc": "2026-09-23T21:44:52.815890+00:00",
+  "finding": "F1: the original Section 5 representation alternative could wrongly suggest restoration of norm time continuity.",
+  "disposition": "Resolved by the separately supplied clarification, read together with the frozen note.",
+  "reason": "It explicitly reserves norm continuity for a separately constructed and checked invariant regular algebra, and distinguishes strong/weak statewise continuity in locally normal representations.",
+  "original_author_note_and_seal_unchanged": true,
+  "author_scientific_runner_and_results_unchanged": true,
+  "PRE_artifacts_modified": false,
+  "mathematical_replay_for_clarification": false,
+  "bindings": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_author/AUTHOR_SEAL.json",
+      "bytes": 5798,
+      "sha256": "5da6ab8a81e7f6442a3c63ece190e9119b3c2cdd00c9960465bc01cc963d1f7f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_author/LOCAL_VOLUME_DYNAMICS_WITH_COMMUTING_ELECTRIC_TERMS.md",
+      "bytes": 16819,
+      "sha256": "a0c1389773766c47b41300329cf6b945a8f5e584c2c46853fe34064a9c331bd6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_author/ROOT_TIME_TOPOLOGY_CLARIFICATION.md",
+      "bytes": 1278,
+      "sha256": "256c6243b7f0c4d7208dd8b2ced8971b9f843bb8a9a715e36be05ce10e932fdd"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_author/local_support_and_birth_check.py",
+      "bytes": 10038,
+      "sha256": "95bbec165a6fac41874567c2285c52e848c1fcb7fe1fb84d9316bae7177a9e42"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_author/LOCAL_SUPPORT_BIRTH_RESULTS.json",
+      "bytes": 16734,
+      "sha256": "2c279d3b2e4525c53a5cae7a54ed285d428621a661f698449e040ebe9d2ec915"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "dimensions": [
+    2,
+    3,
+    4
+  ],
+  "pair_diameter_after_one_electric_enlargement": 12,
+  "jump_diameter_after_one_electric_enlargement": 8,
+  "output": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_independent/SUPPORT_RESULTS.json"
+}

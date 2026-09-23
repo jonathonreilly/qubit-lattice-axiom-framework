@@ -1,0 +1,74 @@
+{
+  "created_utc": "2026-09-23T21:22:08.490356+00:00",
+  "fixed_dependencies": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "bytes": 11637,
+      "sha256": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4",
+      "role": "previously fully checked fixed dependency; not a new author volume source"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_locality_author/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS.md",
+      "bytes": 7985,
+      "sha256": "5539bbe3171ba21933aa42c4cc191b787029e5f5c9220dc8c3ee255e4906f582",
+      "role": "previously fully checked fixed dependency; not a new author volume source"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/REPORT.md",
+      "bytes": 20449,
+      "sha256": "bb92e2a7367db959390d29c3ee9724fdafd25a200ea7ad6a66ac3f2433ae0312",
+      "role": "previously fully checked fixed dependency; not a new author volume source"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/COMPARISON.md",
+      "bytes": 17445,
+      "sha256": "9d383919f5edc32ba827bef8155c1c1878744d3c5171fcd8a71f776b957c81da",
+      "role": "previously fully checked fixed dependency; not a new author volume source"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/FINAL_SEAL.json",
+      "bytes": 26454,
+      "sha256": "1686e2d2eb412524644552abf02726d7d3f65c862ba2d541801e96397f60ea09",
+      "role": "previously fully checked fixed dependency; not a new author volume source"
+    }
+  ],
+  "primary_literature": [
+    {
+      "version": "1111.4210v2",
+      "title": "Barthel and Kliesch: Quasi-locality and efficient simulation of Markovian quantum dynamics",
+      "requested_url": "https://arxiv.org/html/1111.4210v2",
+      "resolved_url": "https://arxiv.org/html/1111.4210v2",
+      "http_status": 200,
+      "retrieved_utc": "2026-09-23T21:22:08.185291+00:00",
+      "bytes": 334857,
+      "retrieved_html_sha256": "abdeedde2be6d39e29f766e860d90e54783f9a384c3dbf1e75244769a07e84a7",
+      "read_sections": [
+        "II",
+        "III",
+        "V",
+        "Appendix B"
+      ],
+      "read_scope": "Read these sections via arXiv HTML; use the bounded-generator path argument after electric cutoff. No blanket invocation for strongly continuous unbounded-rotor coefficients.",
+      "full_html_saved_or_redistributed": false
+    },
+    {
+      "version": "1103.1122v2",
+      "title": "Nachtergaele, Vershynina and Zagrebnov: Lieb-Robinson Bounds and Existence of the Thermodynamic Limit for a Class of Irreversible Quantum Dynamics",
+      "requested_url": "https://arxiv.org/html/1103.1122v2",
+      "resolved_url": "https://arxiv.org/html/1103.1122v2",
+      "http_status": 200,
+      "retrieved_utc": "2026-09-23T21:22:08.354314+00:00",
+      "bytes": 387485,
+      "retrieved_html_sha256": "e5745565e581ee699beb17fa1587786e2972a1360e48a669527cb09dfb7e5e59",
+      "read_sections": [
+        "Section 2 setup",
+        "Assumption 1",
+        "Theorems 1, 2, 3"
+      ],
+      "read_scope": "Checked cb-norm setup and explicit norm-continuity hypothesis. Theorems are not applied directly to the uncapped electric interaction picture.",
+      "full_html_saved_or_redistributed": false
+    }
+  ],
+  "forbidden_new_author_volume_sources_opened": false,
+  "other_new_frontier_or_checkpoint_accessed": false
+}

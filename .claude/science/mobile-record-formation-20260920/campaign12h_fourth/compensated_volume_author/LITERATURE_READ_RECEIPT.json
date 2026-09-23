@@ -1,0 +1,21 @@
+{
+  "utc": "2026-09-23T21:04:56.537287+00:00",
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/pdf/1111.4210v2",
+      "private_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-23-fourth/local_volume_literature/Barthel_Kliesch_1111.4210v2.pdf",
+      "sha256": "8ba41b87f829585840fc0f2547d702ab044783b0b1a5997e77cccab589f81c4d",
+      "bytes": 497703,
+      "read_scope": "Web PDF text read: sections II,III,V and Appendix B; finite-range bounded Liouvillian locality, support-path proof and contractivity. No norm-continuity extension imported."
+    },
+    {
+      "url": "https://arxiv.org/pdf/1103.1122v2",
+      "private_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-23-fourth/local_volume_literature/Nachtergaele_Vershynina_Zagrebnov_1103.1122v2.pdf",
+      "sha256": "f637520e39519c3a8b6b8557bb5c07b387d30028a8ffd78e4ef19fc3bfd1a0e5",
+      "bytes": 226178,
+      "read_scope": "Web PDF text read through setup, Assumption1 and Theorems1-3. Assumption1 explicitly requires norm-continuous finite-volume generators; not directly applicable to the rotor interaction picture."
+    }
+  ],
+  "not_used": "Lemm-Wessel2411.19241 search/abstract lead only; not a theorem premise. Prior spin-half slow-birth local-normal-form note was read for scope comparison, not imported into the new fixed-rate rotor limit.",
+  "publication_policy": "Keep downloaded PDFs in EXT; publish citations and new arguments only."
+}

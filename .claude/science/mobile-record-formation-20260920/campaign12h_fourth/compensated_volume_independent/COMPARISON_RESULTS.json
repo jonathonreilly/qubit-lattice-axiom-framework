@@ -1,0 +1,259 @@
+{
+  "authentication": {
+    "author_seal": {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_author/AUTHOR_SEAL.json",
+      "bytes": 5798,
+      "sha256": "5da6ab8a81e7f6442a3c63ece190e9119b3c2cdd00c9960465bc01cc963d1f7f"
+    },
+    "author_seal_rows_verified": 16,
+    "author_unique_row_paths": 15,
+    "analytic_seal": {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_author/ANALYTIC_DRAFT_SEAL.json",
+      "bytes": 2935,
+      "sha256": "9bf97a03a214e614a74f4d3d556253542d77505f2dc8d2bfeb933b42ecce26ad"
+    },
+    "analytic_bindings_verified": 8,
+    "PRE": {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_independent/PRE_COMPARISON_SEAL.json",
+      "bytes": 9136,
+      "sha256": "6e8bae143d8ee1e0c77c57461c8025143b660709ff89e42c5c072a38d2164d0f"
+    },
+    "PRE_bindings_verified": 24,
+    "author_stdout_equals_results": true,
+    "author_stderr_empty": true,
+    "author_command_receipt_present": true,
+    "source_rows": [
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/LOCAL_CONSTRUCTION_AUTHOR_SEAL.json",
+        "bytes": 8203,
+        "sha256": "88d002cd35fb4b71859bc23efe2f41d465dd2ac5c33a0826db596934189f70b3"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+        "bytes": 11637,
+        "sha256": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_locality_author/AUTHOR_SEAL.json",
+        "bytes": 3519,
+        "sha256": "b275ae727810f32fe3c2721e2c3d294a8dfc9873f5a4a97344590217ffe76413"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_locality_author/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS.md",
+        "bytes": 7985,
+        "sha256": "5539bbe3171ba21933aa42c4cc191b787029e5f5c9220dc8c3ee255e4906f582"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/FINAL_SEAL.json",
+        "bytes": 26454,
+        "sha256": "1686e2d2eb412524644552abf02726d7d3f65c862ba2d541801e96397f60ea09"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION.md",
+        "bytes": 17686,
+        "sha256": "e03793ab0cc06bcc0d536db5b846addf3a999733c6dc25cc4d08ae457263e16e"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_author/LITERATURE_READ_RECEIPT.json",
+        "bytes": 1452,
+        "sha256": "8c422b64e5b50b03b2f1c4938369b9c66f4e5f67f05a3ef11eecabd5d5dce132"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_author/ANALYTIC_DRAFT_SEAL.json",
+        "bytes": 2935,
+        "sha256": "9bf97a03a214e614a74f4d3d556253542d77505f2dc8d2bfeb933b42ecce26ad"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_author/CONTROL_INTERPRETATION.md",
+        "bytes": 3572,
+        "sha256": "c72901b861892fbb9ea493c2f6d4f8b4e3eb7d5912efbe47b948ff150062daf4"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_author/LITERATURE_READ_RECEIPT.json",
+        "bytes": 1452,
+        "sha256": "8c422b64e5b50b03b2f1c4938369b9c66f4e5f67f05a3ef11eecabd5d5dce132"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_author/LOCAL_CONTROL.stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_author/LOCAL_CONTROL.stdout.log",
+        "bytes": 16734,
+        "sha256": "2c279d3b2e4525c53a5cae7a54ed285d428621a661f698449e040ebe9d2ec915"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_author/LOCAL_CONTROL_RECEIPT.json",
+        "bytes": 642,
+        "sha256": "b192c6716a72b9832bd7e1c849536c9c309a3fe5e8d0f212d12a80b479b5de75"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_author/LOCAL_SUPPORT_BIRTH_RESULTS.json",
+        "bytes": 16734,
+        "sha256": "2c279d3b2e4525c53a5cae7a54ed285d428621a661f698449e040ebe9d2ec915"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_author/LOCAL_VOLUME_DYNAMICS_WITH_COMMUTING_ELECTRIC_TERMS.md",
+        "bytes": 16819,
+        "sha256": "a0c1389773766c47b41300329cf6b945a8f5e584c2c46853fe34064a9c331bd6"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_author/local_support_and_birth_check.py",
+        "bytes": 10038,
+        "sha256": "95bbec165a6fac41874567c2285c52e848c1fcb7fe1fb84d9316bae7177a9e42"
+      }
+    ]
+  },
+  "new_external_phase_and_Gram_control": {
+    "orientation": "all links A to B",
+    "external_cycle": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "same_original_star_input_data_for_all_m": true,
+    "phase_rows": [
+      {
+        "sigma": -1,
+        "input_D": "4*m**2",
+        "output_D": "2*m**2",
+        "interaction_picture_phase_exponent_divided_by_iKt": "-2*m**2"
+      },
+      {
+        "sigma": 1,
+        "input_D": "4*m**2",
+        "output_D": "2*m**2",
+        "interaction_picture_phase_exponent_divided_by_iKt": "-2*m**2"
+      }
+    ],
+    "tested_normalizable_field_basis_circulations": [
+      -2,
+      0,
+      1,
+      3
+    ],
+    "resolved_Gram": [
+      [
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        3
+      ]
+    ],
+    "coherent_Gram": [
+      [
+        6,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        6,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        6,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        6
+      ]
+    ],
+    "plus_minus_cross_Gram": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "operator_scope": "The full initial-sector identity follows analytically from distinct occupied B destinations and unit rotor translations; this matrix tests off-diagonal field inputs."
+  },
+  "selected_independent_overlap_reconstructions": [
+    {
+      "d": 2,
+      "side": 4,
+      "pair_terms": 17,
+      "birth_edge_terms": 24,
+      "maximum_indexed_term_overlap": 41,
+      "agrees_with_author_selected_case": true
+    },
+    {
+      "d": 3,
+      "side": 4,
+      "pair_terms": 156,
+      "birth_edge_terms": 144,
+      "maximum_indexed_term_overlap": 300,
+      "agrees_with_author_selected_case": true
+    }
+  ],
+  "fixed_perturbation_time_topology": {
+    "proof": "For fixed terminal A_t=alpha_t(A), V(0,t)A_t-A_t=int_0^t V(0,s) L_I(s) A_t ds. Only terms meeting its uniformly finite support contribute. Thus ||T_t(A)-alpha_t(A)|| <= t ||A|| sum_(Z meeting Xplus) sup_s||ell_Z(s)||cb, uniformly in volume. No global perturbation norm or norm-continuous rotor coefficients are used.",
+    "consequence": "The Wilson-loop norm lower bound is 2-C_W t_m for every fixed bounded local Hamiltonian/birth perturbation, so the obstruction remains.",
+    "method": "analytic reconstruction, not a finite matrix simulation"
+  },
+  "F1": {
+    "scope": "Section 5 final topology paragraph",
+    "finding": "A locally normal representation does not restore norm time continuity on the same full local algebra.",
+    "requested_change": "Separate the possible smaller invariant regular algebra for norm continuity from locally normal representations for strong/weak statewise continuity."
+  },
+  "author_runner_executed": false,
+  "new_author_or_prior_scientific_files_changed": false
+}

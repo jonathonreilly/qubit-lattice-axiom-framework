@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "author_bindings_verified": 16,
+  "PRE_bindings_verified": 24,
+  "selected_overlap_counts": [
+    41,
+    300
+  ],
+  "phase_shift_over_iKt": "-2*m**2",
+  "required_scope_correction": "F1",
+  "output": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_independent/COMPARISON_RESULTS.json"
+}

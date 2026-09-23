@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "d_and_central_B_derivative_over_kappa": [
+    [
+      2,
+      48
+    ],
+    [
+      3,
+      120
+    ],
+    [
+      4,
+      224
+    ]
+  ],
+  "results": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_independent/EXACT_RESULTS.json",
+  "norm_discontinuity_exact": true,
+  "coherent_and_resolved_post_states_differ": true
+}

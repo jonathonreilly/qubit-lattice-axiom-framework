@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_column_family_parity_law_forced_orbits_cycle733_2026_08_04",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_column_family_parity_law_forced_orbits_cycle733_2026_08_04.py",
+ "seed": 33924,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1a269638",
+ "started_utc": "20260923T032524Z",
+ "elapsed_s": 21.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=44 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e1e9cd10e31364001dfabe4436c37d4fceeb1be527aa1e3af9e36b8d28c24e79",
+ "stdout_tail": "a71153c23998100d04aa8e9\",\"outputs/physical_cost_identity_indicator_certificate_cycle731_2026_08_04_receipt_2026-08-04.json\":\"970702f44703f53d26a9087c4a5a907509baf5ce646a7a21f248a0ddb5874fd7\",\"outputs/physical_exact_adjacency_dissection_bracket_cycle725_2026_08_03_receipt_2026-08-03.json\":\"56d0bc3763f02b3a15d52d961c7bec8ab482cdd7670f351e9098c17802dbde5b\",\"scripts/physical_cost_identity_indicator_certificate_cycle731_2026_08_04.py\":\"898db66b8aaabcdf76a8503fbab3e2bb4cf1a16aa1c90e9779ebfa6ad65d889a\",\"scripts/physical_exact_adjacency_dissection_bracket_cycle725_2026_08_03.py\":\"8e5d4f99373ee3a36bb03ee176de1eda6299c34878474764745efefe25d2f43e\"},\"minimum\":{\"dissection_cost\":144,\"dissection_orbits\":391,\"dissections\":15800,\"exact_cover_nodes\":502838,\"excluded_pieces\":208,\"geometric_pair_checks\":107916,\"geometric_representatives\":391,\"holes\":379200,\"least_pieces\":400,\"piece_cost\":6,\"used_piece_orbits\":[8,11,18,28],\"used_pieces\":192},\"no_go_discipline\":{\"checklist\":\"No-Go Discipline Gate section in the Cycle 733 note\",\"n5_certificate\":\"five resolution lines in primary stdout and canonical cache\",\"negative_assertion_class\":\"derived_no_go_boundary\",\"status\":\"PASS\"},\"separation\":{\"excluded_vectors\":13,\"intersection\":0,\"kept_vectors\":12},\"supplied_model\":\"corner 4-simplex pieces of one lattice cell carried through one tick, all ten vertex pairs graded by spatial L1 separation; the piece/dissection structure is supplied here, not derived from the Lattice axiom\",\"totals\":{\"fail\":0,\"pass\":44}}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T032546Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_column_family_parity_law_forced_orbits_cycle733_2026_08_04.txt against the .txt beside this log"
+  ]
+ }
+}

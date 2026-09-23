@@ -1,0 +1,32 @@
+{
+ "task": "R:physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py",
+ "seed": 34657,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1a269638",
+ "started_utc": "20260923T033737Z",
+ "elapsed_s": 107.4,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0873a7c9827520ab0c2152520908932ff7e16e05584cf1c0eb22cdeb6e6eede7",
+ "stdout_tail": "e, a hostile reviewer must reject an ordinary spectral-gap or Combes\u2013Thomas proof until a continuous contact-cyclic cancellation stable under exponential weighting is proved. The finite T2 cross term and exact three-CAR quotient keep constructive second-mode routes open, while held localization/Krylov thresholds presently do not certify them.', 'N8_cross_cycle_echo': ('Cycle219 supplied the massive proper-cubic one-particle walk', 'Cycle230 supplied intrinsic CAR and local even contact but no physical-site compiler', 'Cycles563/569 retained the physical-M2 mass/contact/seam fixtures', 'Cycle578 found a finite contact-bound dispersive A2 dimer branch', 'Cycle583 exposes its exact finite-rank contact resolvent and the precise full-spectrum-touch boundary, while scouting rather than excluding internal multiplicity'), 'negative_claim_shipped': False, 'shared_substrate_obstruction': False, 'axiom_pressure': False}\nPASS the frozen Cycle583 tournament remains below the 360-second and 3-GiB internal maximum-RSS caps :: {'elapsed_seconds': 106.81148200004827, 'maximum_RSS_bytes': 2080997376}\nSUMMARY_JSON {\"axiom_pressure\": false, \"elapsed_seconds\": 106.81148200004827, \"maximum_RSS_bytes\": 2080997376, \"route_A_full_spectrum_distance\": 1.8529835144581194e-15, \"route_A_max_BS_residual\": 1.9555493987582955e-14, \"route_B_second_mode_certified\": false, \"route_C_second_mode_certified\": false, \"shared_substrate_obstruction\": false, \"tests_failed\": 1, \"tests_passed\": 14}\nRESULT pass=14 fail=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T033924Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

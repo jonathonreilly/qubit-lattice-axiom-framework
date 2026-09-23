@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_column_family_parity_law_forced_orbits_cycle733_independent_check_2026_08_04",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_column_family_parity_law_forced_orbits_cycle733_independent_check_2026_08_04.py",
+ "seed": 33946,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1a269638",
+ "started_utc": "20260923T032546Z",
+ "elapsed_s": 10.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=24 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "da5ff77bb011626a66306c2457c6c4eab7942468e4313529f47cd3a03d2d8058",
+ "stdout_tail": "he bound Cycle 731 support\nPASS single-piece holes are rigid                   2672 distinct interior footprints imply 15800*24 unique single-piece refills\nPASS full-family support separation                 12 kept vectors and 13 excluded vectors are disjoint\nPASS hostile full-cost mutation rejected            dropping the tick destroys the four-piece odd obstruction\nPASS hostile dual substitution rejected             no single-piece replacement preserves the even cover with odd total\nPASS sample-cover geometry hostile control          sample-disjoint simplices can overlap, so the separate geometry gate is load-bearing\nPASS hostile Cycle 731 weight mutation rejected     a one-unit floor-certificate mutation violates nonnegative slack\nPASS receipt summary matches reconstruction         generated primary receipt is consistent with the independent route\n\nper_element: checked all 2672 minimal pieces, ten proper parity systems, the full dual obstruction, and both 192/208 least-cost support classes\nper_site: checked and not executed \u2014 this supplied one-cell theorem has no lattice-site field beyond its finite corner coordinates\nper_mode: checked and not executed \u2014 no modal or spectral statement is made\nper_block: checked the complete one-cell by one-tick box and independently enumerated all 15800 minimum exact covers with 391 geometric orbit checks\nlattice_wide: checked and not executed \u2014 no arbitrary-size, multi-cell, boundary, or continuum result is claimed\nTOTAL: PASS=24 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T032556Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

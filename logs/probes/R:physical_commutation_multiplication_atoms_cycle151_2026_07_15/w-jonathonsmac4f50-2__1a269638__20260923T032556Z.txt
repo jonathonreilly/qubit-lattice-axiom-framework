@@ -1,0 +1,34 @@
+AUTHORITY AND PREDECESSOR
+FAIL review note exists :: 
+PASS literal commutation atom remains exact and conflict-free :: 
+PASS row alphabet covers all 32 signed Paulis :: 
+
+COMMUTING MULTIPLICATION TABLE
+PASS exact ordered commuting-pair census is 544 :: 544
+PASS commutativity quotient gives 288 five-parent canonical rows :: Counter({5: 288})
+PASS 6,528 raw multiplication rows merge without conflict :: (70892, 6528, 77420)
+PASS canonical outputs equal signed commuting multiplication :: 
+
+ALL PAIRS AND ROTATIONS
+PASS all 13,056 rotated commuting products form exactly once :: ({29}, [])
+PASS deleting any direct multiplication parent suppresses its output :: (1440, ())
+
+ALGEBRAIC PIVOT SUFFICIENCY
+PASS commutation/multiply/pivot algebra reconstructs all 1,800 branches :: []
+
+MIXED-DEVICE CLOSURE
+PASS multiplication rows preserve all 86,640 unified histories :: []
+PASS Cycle-144 terminal retains exactly its two priced fronts :: {(-9, -1, 0): frozenset({'B1'}), (-11, 1, 2): frozenset({'R_B21'})}
+
+SCOPE
+FAIL note contains: physical commutation and multiplication atoms :: 
+FAIL note contains: pivot controller remains open :: 
+FAIL note contains: multiplication is still role-level :: 
+FAIL note contains: does not derive occurrence or equal weights :: 
+FAIL note contains: no axiom addition follows :: 
+FAIL note contains: n1 — alternative routes :: 
+FAIL note contains: n8 — cross-cycle echo :: 
+
+TOTAL
+PASS 11 FAIL 8
+RESULT FAIL

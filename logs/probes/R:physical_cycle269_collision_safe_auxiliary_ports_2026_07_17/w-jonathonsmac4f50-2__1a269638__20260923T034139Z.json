@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_cycle269_collision_safe_auxiliary_ports_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cycle269_collision_safe_auxiliary_ports_2026_07_17.py",
+ "seed": 34899,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1a269638",
+ "started_utc": "20260923T034139Z",
+ "elapsed_s": 13.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "334fb90ffd838d4a807401f0afb4a3e5c972a296812ede1a965fe70e28a98028",
+ "stdout_tail": "are rejected :: {'single_cell_tag_order_outputs': ((1, 0, 0), (0, 1, 0)), 'rejected_port_fixtures': 4, 'L2_rejected': True, 'meaning': 'the six-port resource is load-bearing for this construction'}\n\nSCOPE / SUPPLIED STRUCTURE / OPEN ROUTES\nPASS the result is a collision-safe bounded catch-up word on a declared auxiliary port-code space, not a bounded state or full-Fock compiler :: {'derived': ('six port auxiliaries per cell', 'weight-eight B_u B_v XOR control', 'ten-M2 conditional port swap', 'commuting order-free outer-edge product', 'multiparticle decoded action and inverse through held L=6', 'local-check/Wilson preservation, independent local port-constraint rank, and all-frame/all-translation covariance'), 'supplied': ('Cycle-269 B/A dictionary and outer FSWAP', 'local constraints B_v Z_port(v)=+1', 'prepared total-even port-code input', 'six auxiliary port M2 per coarse cell', 'stream then catch-up macrostep convention'), 'open': ('bounded physical state encoder into the port-code space', 'local joint matter-coin/port-routing update', 'full-Fock compiled macrostep', 'whether a smaller frame-covariant auxiliary or color schedule closes', 'same-code contact seam'), 'not_physical_time': 'the commuting gate enumeration and any compiler colors are substep schedule only', 'decoded_constraint_preservation_only': True, 'assembled_encoded_stream_catchup_operator': False, 'authority': 'none', 'audit': 'unset', 'no_go': False, 'axiom_pressure': False}\n\nSUMMARY: 10 passed, 0 failed\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T034153Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

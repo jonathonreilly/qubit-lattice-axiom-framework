@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_complete_averaging_set_frame_blindness_classification_cycle716_2026_08_02",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_complete_averaging_set_frame_blindness_classification_cycle716_2026_08_02.py",
+ "seed": 34270,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1a269638",
+ "started_utc": "20260923T033110Z",
+ "elapsed_s": 386.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=55 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2f87b0a8809fbe5df1063824634ecaec0f3171a1bbd9ce1cd73ea22220e46f02",
+ "stdout_tail": "7161_size_census counts by size [(1, 0), (2, 0), (3, 0), (4, 24), (5, 0), (6, 0), (7, 0), (8, 51), (9, 0), (10, 0), (11, 0), (12, 80), (13, 0), (14, 0), (15, 0), (16, 51), (17, 0), (18, 0), (19, 0), (20, 24), (21, 0), (22, 0), (23, 0), (24, 1)]\nPASS g5_L4_seeded-normal-base-7161_all_24_acceptance all 231 screen acceptances retested on all 24 frames; worst spread 1.1e-10\nPASS g6_L4_sextet_spread_witness the sextet spread is 1.4e+00 at this input\nPASS g6_L4_non_subgroup_subset_spread_witness subset [1, 4, 9, 23] spread is 1.1e+00 at this input\nPASS g6_L4_noncovering_coset_spread_witness 72 cosets of 3 noncovering order-4 subgroups, least spread 2.3e-01\n-- boundary (structured sources) --\nPASS g7_L3_unit-slot0_additional_blind_witnesses 153 blind of 1271625 at size at most 8, family contributes 75, counts by occupied sizes [4, 8], counts below size 4 []\nPASS g7_L3_unit-slot7_additional_blind_witnesses 723 blind of 1271625 at size at most 8, family contributes 75, counts by occupied sizes [2, 4, 6, 8], counts below size 4 [(2, 24)]\nPASS g7_L3_all_ones_orbit_is_one_point orbit diameter 0.0e+00 blind on all 1271625 collections\nPASS g7_L3_boundary_ordering structured blind counts 723 and 153 against family 75\nPASS g7_L3_size_two_blind_witness unit-slot7 has 24 blind collections below size 4 in this scan; unit-slot0 has 0\n-- zero-average domain witness --\nPASS g8_zero_average_domain_is_nonpassing nonzero e0-e35 input, full-group average norm 0.0e+00, spread nan\nTOTAL: PASS=55 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T033737Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

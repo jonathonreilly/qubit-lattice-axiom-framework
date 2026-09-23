@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_wall_instance_uniqueness_cycle793_2026_08_15",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cell_cutting_wall_instance_uniqueness_cycle793_2026_08_15.py",
+ "seed": 33909,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1a269638",
+ "started_utc": "20260923T032509Z",
+ "elapsed_s": 14.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "83bf50bc93c1549d4d61e26c193de1d3dbd2d99446c0258b998bd9c508e6cef9",
+ "stdout_tail": " 40}, 1 distinct value each\nPASS G6 the block invariants of the 14 held cuttings take 1 distinct value over the 48 fibers: total incidence 168 on 40 coordinates\nG6 detail: the per-coordinate cover profile is {1: 6, 2: 10, 3: 2, 4: 7, 6: 9, 8: 3, 10: 3}, and 168 is 14 times 12\nG6 detail: the pairwise support-intersection census over the 91 pairs is {0: 12, 1: 6, 2: 10, 3: 14, 4: 4, 5: 14, 6: 4, 7: 5, 8: 10, 9: 1, 10: 11}\nPASS G7 at 48 of 48 fibers the span of the 13 differences equals the kernel as a set of 256, and the affine hull of the 14 is the coset\nG7 detail: the coset census takes 1 value, and its weight-12 members are exactly the 14 blocks at all 48 fibers\nPASS G8 a relabelling of the 40 coordinates is found at 47 of the 47 other fibers, each verified on kernel, blocks and coset\nG8 detail: explicit images verify 47 kernel sets of 256, 47 block sets of 14, and 47 coset sets of 256\nPASS G9 exactly 2 block-bijection classes and 42467328 coordinate relabellings at the sample and each of 47 targets\nG9 detail: each block bijection has 21233664 coordinate lifts; pattern-class multiplicities are {1: 6, 2: 10, 3: 2, 4: 2}\nG9 detail: the nontrivial block symmetry exchanges the two quotient classes at 47 of 47 targets\nPASS G10 the control target moves one coordinate out of one block and another in; the same search entry point returns NOT FOUND, 0 found\nG10 detail: coordinate 3 leaves the first block and coordinate 0 enters it, the block staying at weight 12\nTOTAL: PASS=10 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T032524Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

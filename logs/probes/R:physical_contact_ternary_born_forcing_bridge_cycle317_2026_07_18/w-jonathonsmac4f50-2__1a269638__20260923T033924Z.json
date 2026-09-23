@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_contact_ternary_born_forcing_bridge_cycle317_2026_07_18",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_contact_ternary_born_forcing_bridge_cycle317_2026_07_18.py",
+ "seed": 34764,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1a269638",
+ "started_utc": "20260923T033924Z",
+ "elapsed_s": 2.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c5e35923c1e3fbfb94db745b58d0e8d12e3d65d79c0a7af08d95c6c8ea29f0dc",
+ "stdout_tail": "077866773595e-18, 'right_normalization': 8.020953172301632e-16}, {'left_mass': np.float64(1.0), 'left_fine': 8, 'right_fine': 4, 'left_half_I': 5.769096710182792e-17, 'right_half_I': 4.0137767731650484e-16, 'presentation_equality': 4.481432399156047e-16, 'left_normalization': 2.6985964133627383e-17, 'right_normalization': 8.020953172301632e-16}, {'left_mass': np.float64(1.0), 'left_fine': 8, 'right_fine': 4, 'left_half_I': 1.391243901732968e-16, 'right_half_I': 4.0137767731650484e-16, 'presentation_equality': 3.5571561302006606e-16, 'left_normalization': 2.2398766718569015e-16, 'right_normalization': 8.020953172301632e-16}], 'representations': [{'eigenvalues': (0.83, 0.21), 'fine_labels': 4, 'effect_residual': 1.3668035872266426e-16, 'complement_residual': 2.37549462997806e-16, 'normalization': 4.996003610813204e-16}, {'eigenvalues': (0.91, 0.64), 'fine_labels': 4, 'effect_residual': 1.594436429147036e-16, 'complement_residual': 1.2566871346510768e-16, 'normalization': 3.1463121132764933e-16}, {'eigenvalues': (0.47, 0.02), 'fine_labels': 4, 'effect_residual': 6.359601310784502e-17, 'complement_residual': 1.642041997679149e-16, 'normalization': 3.925231146709438e-17}], 'forcing_sufficiency': {'same_direction_splits': True, 'coin_refinements': True, 'projective_complements': True, 'four_component_axis_identity': True, 'every_qubit_effect_at_most_three_components': True, 'maximum_fine_labels': 8}}\nSUMMARY PASS 15 FAIL 0\nRESULT CYCLE317_PHYSICAL_CONTACT_TERNARY_BORN_BRIDGE_GREEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T033927Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

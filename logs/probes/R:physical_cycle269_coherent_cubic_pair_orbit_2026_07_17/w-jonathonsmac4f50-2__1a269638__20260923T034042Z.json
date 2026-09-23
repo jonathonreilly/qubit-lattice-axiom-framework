@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_cycle269_coherent_cubic_pair_orbit_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cycle269_coherent_cubic_pair_orbit_2026_07_17.py",
+ "seed": 34842,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1a269638",
+ "started_utc": "20260923T034042Z",
+ "elapsed_s": 49.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7503eb8f4f4e9f130abc090e82f33031a48dbdfe573311be2a01c794aeb0a8ed",
+ "stdout_tail": "ge proper-cubic representation common to both slices', 'common minus under source/carrier role reversal for the identical pair', '42--54-M2 relative-state orbit-union support'), 'supplied': ('one global fixed +++ Wilson, all-B=+1 face-code reference vacuum', 'one coarse-cell anchor x and the six physical direction labels', 'the antisymmetric CAR wedge address convention and graph edge orientation', 'six auxiliary port M2 per cell initialized to zero', 'Cycle-269 A/B/FSWAP dictionary and collision-safe catch-up product', 'Cycle-230 real contact coupling g=0.37', 'the Cycle-230 stream-then-contact order and reverse-order comparator'), 'open': ('bounded preparation of the global reference vacuum', 'preparation or autonomous decoding of an arbitrary address superposition', 'coherence across a volume-growing set of cell anchors', 'independent source/carrier species and a role register', 'the six-mode coin and joint coin/port router', 'odd states, larger even sectors, and a full-Fock compiler', 'full-Hilbert physical matrices for the global products'), 'not_claimed': ('physical time for compiler substeps', 'physical energy or a rate', 'gravity or a source law', 'Record or probability semantics'), 'overhead': '15 face + 6 port = 21 M2/cell inherited; one orbit has at most 54 relative-state-union M2, while complete stream/contact product unions are extensive 21 L^3 / 15 L^3', 'authority': 'none', 'audit': 'unset', 'no_go': False, 'axiom_pressure': False}\n\nSUMMARY: 9 passed, 0 failed\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T034131Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

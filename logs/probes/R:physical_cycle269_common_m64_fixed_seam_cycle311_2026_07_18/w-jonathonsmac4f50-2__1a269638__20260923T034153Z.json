@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_cycle269_common_m64_fixed_seam_cycle311_2026_07_18",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cycle269_common_m64_fixed_seam_cycle311_2026_07_18.py",
+ "seed": 34913,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1a269638",
+ "started_utc": "20260923T034153Z",
+ "elapsed_s": 51.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e3d59ca4fee9fbe3a3ded3d92ebc8df757dcc26fa88cea76d39eb26d7e7f0098",
+ "stdout_tail": ", and 1 complement branches for n=1,3,5', 'direct even rays for n=0,2,4,6', 'locally enforced role gauge and relational body-parity number role', 'physical coin, stream/catch-up, binomial contact, DSK, frames, translations, held size, and deletions'), 'supplied': ('fixed +++ Wilson and all-B=+1 reference ray', 'one body anchor, six directions, Hodge/insertion/edge orientations, and framing repair', 'six zero-initialized collision-safe port M2 per cell', 'one flag M2 and one r gauge-companion M2 per cell', 'Cycle-219 coin, Cycle-230 g=0.37, and the coin-stream-contact order', 'dense local matrix-unit coefficients and initial lawful code state'), 'open': ('absolute reference, role-gauge, carrier, and arbitrary coherent-position preparation', 'actual separated-cell recurrent onsite coin', 'overlapping simultaneous shells and collision arrivals', 'number-changing interactions and a common sea-state compiler', 'one- and two-M2 autonomous primitive dynamics'), 'not_claimed': ('full physical Hilbert-space equivalence', 'physical time, rate, or energy from compiler phases/substeps', 'mass from contact or higher exterior powers', 'source, gravity, Record, occurrence, or Born probability'), 'support_max_M2': 56, 'installed_overhead_M2_per_cell': 23, 'global_Jordan_Wigner_order': False, 'global_parity_service': False, 'free_sector_label': False, 'host_side_control': False, 'authority': 'none', 'audit': 'unset', 'broad_no_go': False, 'axiom_pressure': False}\nSUMMARY: 11 passed, 0 failed\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T034245Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

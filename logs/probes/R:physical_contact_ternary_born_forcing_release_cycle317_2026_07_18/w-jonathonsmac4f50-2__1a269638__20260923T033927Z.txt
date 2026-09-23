@@ -1,0 +1,30 @@
+STRICT PASS the Cycle-317 science certificate reruns cold :: {'returncode': 0, 'observed': (15, 0)}
+STRICT FAIL the recorded no-go methodology commit remains an ancestor of origin/main :: {'recorded': '17cb0c5c32e753ef1297b185fbd1e8c6d41920c2', 'current_ref': 'origin/main'}
+STRICT PASS the release note carries the accepted Cycle-315/318 and conservative Cycle-317 planning baseline :: ()
+STRICT PASS N1 uses only exact bold honesty markers on eight distinct routes :: {'markers': {'fixed actual-contact trine': 'ATTEMPTED', 'apparatus-only quarter coin': 'ATTEMPTED', 'bounded mixed-projective compiler': 'ATTEMPTED', 'literal arbitrary-finite X1 in one fixed pointer': 'ATTEMPTED', 'sequential/time-multiplexed arbitrary X1': 'OPEN / UNTESTED', 'autonomous programmable apparatus': 'OPEN / UNTESTED', 'occurrence-first numerical law': 'OPEN / UNTESTED', 'process-functional/global-history route': 'OPEN / UNTESTED'}, 'malformed': [], 'all_bold': ('ATTEMPTED', 'ATTEMPTED', 'ATTEMPTED', 'ATTEMPTED', 'OPEN / UNTESTED', 'OPEN / UNTESTED', 'OPEN / UNTESTED', 'OPEN / UNTESTED')}
+STRICT PASS N2 validates both closure directions for the complete ten-pair collapsed wall table :: [('W_prog', 'W_grade', ('no', 'no', 'yes')), ('W_prog', 'W_occ', ('no', 'no', 'yes')), ('W_prog', 'W_record', ('no', 'no', 'yes')), ('W_prog', 'W_global', ('no', 'no', 'yes')), ('W_grade', 'W_occ', ('no', 'no', 'yes')), ('W_grade', 'W_record', ('no', 'no', 'yes')), ('W_grade', 'W_global', ('no', 'no', 'yes')), ('W_occ', 'W_record', ('no', 'no', 'yes')), ('W_occ', 'W_global', ('no', 'no', 'yes')), ('W_record', 'W_global', ('no', 'no', 'yes'))]
+STRICT PASS N3 literal hidden-condition procedure scan has zero hits on every release path :: [{'path': 'scripts/physical_contact_ternary_born_forcing_bridge_cycle317_2026_07_18.py', 'hits': ()}, {'path': 'docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_TERNARY_BORN_FORCING_BRIDGE_CYCLE317_NOTE_2026-07-18.md', 'hits': ()}, {'path': 'scripts/physical_contact_ternary_born_forcing_release_cycle317_2026_07_18.py', 'hits': ()}]
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_contact_ternary_born_forcing_release_cycle317_2026_07_18.py", line 392, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_contact_ternary_born_forcing_release_cycle317_2026_07_18.py", line 379, in main
+    n4_controls(note)
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_contact_ternary_born_forcing_release_cycle317_2026_07_18.py", line 232, in n4_controls
+    local_rows = tuple(
+                 ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_contact_ternary_born_forcing_release_cycle317_2026_07_18.py", line 237, in <genexpr>
+    line_has(path, line_number, fragment),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_contact_ternary_born_forcing_release_cycle317_2026_07_18.py", line 68, in line_has
+    rows = path.read_text(encoding="utf-8").splitlines()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/CONTACT_CLOSE_TYPED_RECORD_DAG_CYCLE287_NOTE_2026-07-17.md'

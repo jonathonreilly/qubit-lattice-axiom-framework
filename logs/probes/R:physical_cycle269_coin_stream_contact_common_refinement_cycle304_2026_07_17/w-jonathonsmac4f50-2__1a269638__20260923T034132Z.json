@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_cycle269_coin_stream_contact_common_refinement_cycle304_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cycle269_coin_stream_contact_common_refinement_cycle304_2026_07_17.py",
+ "seed": 34892,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1a269638",
+ "started_utc": "20260923T034132Z",
+ "elapsed_s": 7.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "acb566ddbb4497efd368b9f85c57f97c128280ad1e67fcece836219eb55b142f",
+ "stdout_tail": "bic frames :: {'state_ray_tests': 58320, 'encoding_representation_residual': 0.0, 'operator_commutator_residual': 0.0, 'n1_state_failures': 0, 'n2_state_failures': 0, 'tag_failures': 0, 'phase_flag_permutation_failures': 0}\nPASS all ninety physical microsectors are covariant under all 27 L=3 translations :: {'state_ray_tests': 2430, 'failures': 0}\nPASS coin deletion is exact and contact deletion returns the compiled free step :: \nPASS opposite-wedge, phase-flag, and schedule deletions are all detected :: {'perpendicular_to_opposite_coin_leakage': 0.9428090415820635, 'deleted_flag_role_leakage': 0.9797958971132714, 'contact_stream_order_residual': 0.36789306705608243}\nPASS a held coherent vector across n=1, n=2, both slices, and all directions stays in the common code :: \nPASS lawful-domain controls reject repeated-mode, non-port, and aliased-size inputs :: 4\nPASS the common-refinement supplied structure is explicit :: {'inherited': 'fixed +++ Wilson vacuum, Cycle-269 A/B/FSWAP, six constrained ports', 'coin': 'Cycle-219 C and its exact two-particle exterior lift', 'contact': 'Cycle-230 g=0.37 onsite pair phase', 'refinement': 'three opposite wedges plus one supplied, unconstrained phase M2 per cell', 'schedule': 'coin, then stream/catch-up and phase flip, then contact', 'derived': '42-column E, 90-sector matrix-unit completion, exact G intertwiner', 'excluded': 'global ordering, parity service, copied tag; local role enforcement remains open'}\nSUMMARY {'pass': 24, 'fail': 0}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T034139Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

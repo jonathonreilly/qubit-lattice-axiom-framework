@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_content_pair_kernel_channel_census_cycle699_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_content_pair_kernel_channel_census_cycle699_2026_07_25.py",
+ "seed": 34769,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1a269638",
+ "started_utc": "20260923T033929Z",
+ "elapsed_s": 3.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d9f555695e8b322f3102195759d528933c28a79bd00e95e43a76020f89ab9768",
+ "stdout_tail": " \"none\", \"channel_census\": {\"density_density\": 1, \"density_spin\": 1, \"mixed_after_exchange\": 1, \"spin_density\": 1, \"spin_spin_exchange_symmetric\": 3}, \"conclusion\": \"Carrying qubit content through the cycle-698 classification, the nearest-neighbor two-body kernel has exactly 6 covariant parameters out of 96, and 5 once record exchange is imposed. The content-blind density-density channel contributes exactly one, recovering cycle 698. The remainder is the exact budget of spin-carrying couplings permitted by the supplied trivial-plus-vector proper-cubic action at this order and range; none of them is selected here.\", \"covariant_exchange_symmetric_dimension\": 5, \"covariant_pair_kernel_dimension\": 6, \"cycle\": 699, \"cycle_claim\": null, \"fail_count\": 0, \"firewalls\": {\"carrier_identified\": false, \"coupling_values_selected\": false, \"dynamics_or_measurement_claimed\": false, \"lane_status_changed\": false, \"new_axiom_or_primitive_proposed\": false, \"source_action_adopted\": false}, \"labelled_axial_counterfactual\": {\"full_cubic_exchange_symmetric_dimension\": 3, \"lost_channels\": [\"mixed density-spin\", \"chiral v.(S x S')\"], \"proper_exchange_symmetric_dimension\": 5}, \"pass\": true, \"pass_count\": 7, \"resources\": {\"elapsed_seconds\": 3.1333299999823794}, \"runner_sha256\": \"7f9e8bf563440494608e9736bdfcd355c003d99187f51d7c48e041500e511bb0\", \"spin_spin_basis\": [\"isotropic S.S'\", \"bond-axis (S.v)(S'.v)\", \"chiral v.(S x S')\"]}\nRESULT 7 0 elapsed 3.13 s\nRESULT CONTENT_PAIR_KERNEL_CHANNEL_CENSUS_COMPLETE\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T033933Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

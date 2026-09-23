@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_commuting_row_multiplication_probe_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_commuting_row_multiplication_probe_2026_07_15.py",
+ "seed": 34191,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1a269638",
+ "started_utc": "20260923T032951Z",
+ "elapsed_s": 79.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "aa73f9509987ca36fd66128227c32a3db57c19e7cc2783a22123df8032bb1cf4",
+ "stdout_tail": "TABLE 544 288 6528 77420 0\nINSTANCES 13056 [29] 0\nRESULT PHYSICAL_COMMUTING_ROW_MULTIPLICATION\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T033110Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

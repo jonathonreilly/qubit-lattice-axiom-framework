@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/relational_letters_in_alternating_pairs_record_the_role_pattern_under_the_static_reading_2026_09_23.py
+runner_sha256: fa08129d5a68392dffdb84a8c92a11b4f5db6f605b3b4a93933f400601c12498
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 49.24
+status: ok
+----- stdout -----
+== A. The letters ==
+[PASS] m = 16, pairs (1,7), (2,10), (3,5): the twelve signed angles are distinct and nonzero, so every difference decodes :: steps of 22.5 degrees; pair sums 180, 270, 180 degrees
+[PASS] conditions (D) and (E) hold, and (U): no two allowed stars share their six neighbours :: 96 stars at a centre; so every site is a function of its six neighbours
+[PASS] the (U) test is not vacuous: m = 13, pairs (1,2), (3,4), (7,8) decodes but has 24 stars that a shift of the centre turns into others
+[PASS] no angle, and no difference of angles from different pairs, is 0 or 180 degrees :: the separations the one-great-circle step of open PR #8743 uses
+[PASS] records can wrap on the side-L torus only for 8 | L (alternation needs L even, and (L/2)(alpha + beta) = 0 on every pair) :: L up to 32: [8, 16, 24, 32]
+
+== B. The square lemma ==
+[PASS] every solution of the square relation is straight: the same pair and type on opposite sides :: 24 straight, 0 bent
+
+== C. Complete search on cores ==
+[PASS] cores of side 2, 3, 4 (one core value fixed): exactly the 96 alternating spirals, each with one completion on the faces :: side 2: 96 records; side 3: 96 records; side 4: 96 records = 6 frames x 2 senses x 8 phases
+
+== D. Tori ==
+[PASS] tori of side 2 to 8: static records exist only for L = 8, and they are the 96 spirals :: L=2: 0, L=3: 0, L=4: 0, L=5: 0, L=6: 0, L=7: 0, L=8: 96
+
+== E. Roles on the side-8 torus ==
+[PASS] every site reads the same frame (which line carries which pair) and sense from its forward differences :: 96 records x 512 sites
+[PASS] the type readout is the parity vector x mod 2 in the pair frame plus one global phase; all 8 phases occur :: role weights V/L/P/C per record: [64, 192, 192, 64]
+[PASS] the readout is unchanged by every rotation of the circle, shifts and reflections :: 8 records x 16 shifts x 2
+[PASS] given its six neighbours, the pair rule admits exactly one value at every site of every record :: each site is a function of its nearest neighbours
+
+== F. The landed ice torus (side 4) ==
+[PASS] every decoding pair set that can wrap on the side-4 torus has pair sums of 180 degrees and fails (U) :: moduli 3 to 24: 240 sets, all fail (U)
+[PASS] m = 20, pairs (1,9), (2,8), (4,6): (D) and (E) hold, and the side-4 torus has exactly the 96 spirals as records
+[PASS] there every site admits exactly its value and its antipode given its neighbours, and moving one parity class by 180 degrees gives another record :: so a site is not a function of its six neighbours on the landed torus
+
+== G. Contrasts on the side-4 letters ==
+[PASS] without complementary types: 2592 records, and the readout misses the role pattern on all but the 96 spirals :: 12 frames and senses x 6^3 type orders
+[PASS] with one octant per site (a sense per line), the side-4 torus has 9216 records, of which 96 are spirals :: rigidity uses the reading's global octant
+
+[PASS] budget: every search stayed under its node cap :: 823641 nodes, 49 s
+
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

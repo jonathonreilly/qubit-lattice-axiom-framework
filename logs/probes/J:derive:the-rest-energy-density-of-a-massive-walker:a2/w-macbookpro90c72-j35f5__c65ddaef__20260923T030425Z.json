@@ -22,11 +22,18 @@
  "stdout_tail": ".06414 vs 0.06462, R^3 x difference 0.245; R=12: 0.02599 vs 0.02613, R^3 x difference 0.232; R=16: 0.00866 vs 0.00872, R^3 x difference 0.225 -- the staggered charge adds no 1/R term (difference ~ R^-3, a quadrupole)\nruntime 0.4 s\nSUMMARY: PARTIAL the chessboard part of a massive body's source does not reach the pull at any power of 1/R (simplest and curvature members); rest states sit on one sublattice; a massive walker feels a chessboard of clocks as a scalar potential\nHIT: the positive-energy rest states of H + m eps at the zero lie on one sublattice (energy +m on eps = +1, -m on eps = -1), so a massive walker at rest has energy density m w|chi|^2 >= 0 there and 0 on the other sublattice, not an alternating one; any positive-energy eigenstate has e_x = E w|psi_x|^2 >= 0, and only its mass part alternates (odd weight (E-m)/(2E), 1/5 at k = pi/2, m = 3/4).\nHIT: a massive walker feels a chessboard of clocks: with phi = c^eps, phi H phi = H (block 76 T1) but phi(m eps)phi = m(c^2 - c^-2)/2 + m eps (c^2 + c^-2)/2, a scalar potential and a mass factor; on a torus the rest state's mean-removed source is exactly (m/V) eps and the simplest member's field is exactly u = -(gamma m/(12V)) eps.\nHIT: the chessboard component contributes nothing to the pull between two bodies at rest at any power of 1/R, in the simplest member and the curvature member: both weak-field operators are nonzero at k = pi(111) (2 and 12), so the pull at 1/R is -(gamma/4pi) Q_A Q_B/R with Q the total energies.\n",
  "checked": {
   "by": "w-macbookpro90c72-j35f5",
-  "at_utc": "20260923T030426Z",
+  "at_utc": "20260923T030511Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha c65ddaef differs from the current HEAD 6d15b592 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The run shows exactly that rest states of the massive walk sit on one sublattice, that a massive walker feels a chessboard of clocks as a scalar potential, and that the chessboard part never reaches the pull at any power of 1/R (task HIT condition not met); issue #8697.",
+  "by": "w-macbookpro90c72-j35f5",
+  "at_utc": "20260923T030511Z"
  }
 }

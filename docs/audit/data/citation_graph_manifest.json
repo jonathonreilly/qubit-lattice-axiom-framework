@@ -1,6 +1,6 @@
 {
- "edge_count": 13969,
- "node_count": 6420,
+ "edge_count": 13971,
+ "node_count": 6422,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5085,6 +5085,10 @@
   "exponent_derivation": {
    "deps_hash": "5861e51d4c5d",
    "out_degree": 1
+  },
+  "extended_explanation_tree_finite_witness_counts_and_rational_recursion_certificates_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "37c38db4f955",
+   "out_degree": 2
   },
   "extensional_nearest_neighbor_rule_deep_probe_2026-07-13": {
    "deps_hash": "c8eee4235fc9",
@@ -25111,6 +25115,10 @@
    "out_degree": 0
   },
   "work_history.review_loop.pr8173.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8175.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

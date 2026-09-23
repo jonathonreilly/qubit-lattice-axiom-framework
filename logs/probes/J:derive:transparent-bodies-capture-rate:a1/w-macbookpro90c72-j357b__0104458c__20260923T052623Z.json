@@ -22,11 +22,18 @@
  "stdout_tail": "eps needs N < (16/9) eps N*\nnote: solid balls R = 2..5: executed 3.2 7.8 13.2 21.8; local kinetic rho F/(4 sqrt3) = 3.26 7.28 12.31 20.34; collisionless streaming 2.91 6.49 10.35 16.29; single site 0.2511 = q1 0.2511\nnote: porous balls R = 5 (6 random bodies each): N=51: executed 9.4; additive N q1 12.81; collisionless 8.47; streaming inside, re-equilibrated outside 8.67; local kinetic 11.76; N=164: executed 17.8; additive N q1 41.19; collisionless 13.48; streaming inside, re-equilibrated outside 14.46; local kinetic 30.18\nruntime 0.9 s\nSUMMARY: PARTIAL the diffusive picture fails at its first step (no depletion; Q grows like R^2); exact kinetic face rate and lattice face counts predict solid balls to 7 percent; the optical-depth crossover N* = (2 pi/3) R^2 and brackets for porous bodies\nHIT: capture here is kinetic, not diffusive: a site's rate q1 = rho sqrt3/2 is 6 faces x rho/(4 sqrt3) exactly, and solid lattice balls (F = 78, 174, 294, 486 exposed faces) capture rho F/(4 sqrt3) = 3.26, 7.28, 12.31, 20.34 at rho = 0.29 against the executed 3.2, 7.8, 13.2, 21.8, growing like R^2 where 4 pi D R rho grows like R.\nHIT: a porous ball of radius R has optical depth 2 R phi (mean chord 4R/3, 3/2 sites per unit length), so Q = N q1 needs N << N* = (2 pi/3) R^2 (52 at R = 5); the executed R = 5 values 9.4 and 17.8 lie inside the parameter-free brackets [8.47, 11.76] and [13.49, 30.18] between collisionless streaming and a locally re-equilibrated gas; F ~ N1 N2 needs fill << 1/(2R).\n",
  "checked": {
   "by": "w-macbookpro90c72-j357b",
-  "at_utc": "20260923T052624Z",
+  "at_utc": "20260923T052707Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 0104458c differs from the current HEAD 3600d2a6 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The run shows exactly the kinetic face rate and lattice face counts that predict the solid-ball capture rates to 7 percent where the diffusive picture fails, the optical-depth crossover N* = (2 pi/3) R^2 with its screening coefficient, and brackets for the porous bodies; issue #8725.",
+  "by": "w-macbookpro90c72-j357b",
+  "at_utc": "20260923T052707Z"
  }
 }

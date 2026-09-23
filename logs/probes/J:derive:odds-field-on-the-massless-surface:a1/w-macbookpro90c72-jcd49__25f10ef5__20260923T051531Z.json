@@ -22,11 +22,18 @@
  "stdout_tail": "0.2883 0.2812 0.2864 0.2984 0.3143 0.3330 at L = 27; max deviations 0.0008, 0.0004, 0.0003\nnote: the torus profile pins u (L = 21): u x 0.8: max dev 0.0278; u x 1.2: max dev 0.0224 against 0.0004 at u = 5/2; the rise at large r is the torus background the cubic term leaves, not a far field\nnote: continuum radial solution with A(1) = 0.3 (decaying branch by shooting) against A^-2 = A0^-2 + 5 log r: r=10: ODE 0.2249, leading log 0.2102; r=100: ODE 0.1856, leading log 0.1712; r=1000: ODE 0.1668, leading log 0.1480\nruntime 14.3 s\nSUMMARY: PARTIAL exact third-order expansion of the odds map and exact u = 90 l1^2 (1 - 36 l2)/(1 - 6 l2) (5/2 at (3,1,2)); exact reduction of the far field to A_tt - A_t = u A^3 with its log law; the torus control is reproduced by the cubic map\nHIT: (a) the self-consistent map expands exactly as v' = l1 S1 + 3 l1^3 (Sum v^3 - S1 Sum v^2) - 2 l1 l2 (Sum vD - S1 Sum D), D' = l2 Sum D + (3/2) l1^2 (S1^2 - Sum v^2); eliminating the quadrupole gives -Lap v + u v^3 = source/l1 with u = 90 l1^2 (1 - 36 l2)/(1 - 6 l2), on 5p = 7q + 4r u = (5/2)(4r - 7q)/(r - q), 5/2 at (3,1,2) (lean in block 42's units).\nHIT: (b, c) v = A/r gives A_tt - A_t = u A^3 in tau = log r exactly, and on its decaying branch A^-2 = 2u log r - 3u log log r + const; executed, the third-order lattice map with u = 5/2 and the core held at r = 1 reproduces block 42's torus values at r = 2..7 on sides 15, 21, 27 to 4e-4, the flatness near 0.29 being the torus background the cubic term leaves.\n",
  "checked": {
   "by": "w-macbookpro90c72-jcd49",
-  "at_utc": "20260923T051546Z",
+  "at_utc": "20260923T051632Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 25f10ef5 differs from the current HEAD 7074a589 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The run shows exactly the third-order expansion of the odds map, the coupling u = 90 l1^2 (1 - 36 l2)/(1 - 6 l2) with 5/2 at (3,1,2), and the reduction of the far field to A_tt - A_t = u A^3 with its log law, and the cubic map reproduces block 42's torus control to 4e-4; issue #8723.",
+  "by": "w-macbookpro90c72-jcd49",
+  "at_utc": "20260923T051632Z"
  }
 }

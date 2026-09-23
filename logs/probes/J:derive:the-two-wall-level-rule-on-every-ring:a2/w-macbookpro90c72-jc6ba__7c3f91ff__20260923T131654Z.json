@@ -1,0 +1,32 @@
+{
+ "task": "J:derive:the-two-wall-level-rule-on-every-ring:a2",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro90c72-jc6ba",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/the-two-wall-level-rule-on-every-ring/w-macbookpro90c72-jc6ba/check.py",
+ "seed": 69414,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7c3f91ff",
+ "started_utc": "20260923T131654Z",
+ "elapsed_s": 5.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PROVED on every ring whose length is a multiple of 4 (on L = 2 mod 4 the rule cannot hold: no level 1, block 87's walls are both strong-strong, every level moves): h^2 = J_even (+) J_odd, isospectral; the walls are defects +-eta at antipodal sites of J_odd; tr(B^(n-1)(B + eps E11)B^(n-1)(B - eps E11)) - 2 = U_(n-1)^2 (4(z^2 - 1) - eps^2), so only the band edges z = +-1 move, to lam = 0 and 2D; walls r apart, 2n walls and t = e^(+-delta) follow from the same trace"
+ },
+ "review": "Own plan formed before reading anything (no earlier attempt had files). Sublattice reduction h^2 = J_even (+) J_odd, walls as antipodal diagonal defects for 4 | L, ring determinant lemma via matchings, Chebyshev trace identity; all finite claims exact in sympy except the labelled float wall-pair energy and log-parametrisation ring checks. L = 2 mod 4 counterexample to the 'every even ring' wording. Overlap disclosed: my earlier #8754 used the same operator for a different question. Same model family as block 87; needs a cross-family referee.",
+ "what": "DERIVATION, independent attempt 2 of 2: Block 87's level rule: two sharp walls move exactly four levels, on every even ring?. SETTING (source-link direction, blocks 53-89 of the admissibility induced-law campaign: open PRs #8568 #8570 #8571 #8573 #8578 #8579 #8581 #8590 #8591 #8592 #8593 #8595 #8596 #8597 #8598 #8599 #8601 #8602 #8603 #8605 #8606 #8607 #8608 #8611 #8612 #8613 #8614 #8615 #8626 #8628 #8632 #8652 #8657 #8660 #8662 #8665 and block 89 'the unit of rate decides the alternation's thresholds' when opened; decision record #8572 with FORK_PROBE_source_link_20260922.md; the moving-records reading of blocks 39-52; ALL supplied clauses, nothing adopted; read the relevant notes on their PR branches before starting - git fetch origin <branch>; git show origin/<branch>:<note>; the 2026-09-23 harvest's issues #8616-#8673 carry the worker results this problem builds on). TASK: block 87 T1 (#8662): on the rings of 4, 8, 12 (exact) and 16-256 (executed), two sharp walls in the alternation t_x = 1 + delta s_x (-1)^x (one weak-weak, one strong-strong) replace exactly the levels +-delta, +-1 of the one-axis operator by 0, 0, +-sqrt(1 + delta^2). (a) Prove it on every even ring (the two sublattice chains as partners; transfer matrices). (b) Walls at any separation, and 2n walls: the general replacement rule. (c) The same for the log parametrisation t = e^{+-delta} (block 89): levels +-sinh delta, +-cosh delta -> 0, 0, +-sqrt(cosh 2 delta). HIT: a proof of (a). DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/the-two-wall-level-rule-on-every-ring/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/the-two-wall-level-rule-on-every-ring/<name>/check.py\"",
+ "stdout_sha256": "814844f91b4de73ff84f04459e211b9c4bf1bd159643934aea4fba3064c83468",
+ "stdout_tail": "10 (float)\nok A5: L = 6, 10, 14, 18, 22 (L = 2 mod 4), exact: the wall-free ring has no level 1 (k = pi is not on the odd sublattice ring), block 87's s_x gives two strong-strong walls L/2 apart (the bonds have period L/2), zero modes exist (prod t_even = prod t_odd) and no squared level of the wall-free ring survives (block 87's matrix to L = 14); L = 6 loses {9/100: 2, 309/400: 4} and gains {387/400: 4, 0: 2}\nSUMMARY: PROVED on every ring whose length is a multiple of 4 (on L = 2 mod 4 the rule cannot hold: no level 1, block 87's walls are both strong-strong, every level moves): h^2 = J_even (+) J_odd, isospectral; the walls are defects +-eta at antipodal sites of J_odd; tr(B^(n-1)(B + eps E11)B^(n-1)(B - eps E11)) - 2 = U_(n-1)^2 (4(z^2 - 1) - eps^2), so only the band edges z = +-1 move, to lam = 0 and 2D; walls r apart, 2n walls and t = e^(+-delta) follow from the same trace\nHIT: on every ring with 4 | L, block 87's one-axis operator with bonds t_s, t_w and two antipodal walls (strong-strong, weak-weak) has the wall-free squared spectrum with (t_s - t_w)^2/4 and (t_s + t_w)^2/4 (twice each) replaced by 0 and (t_s^2 + t_w^2)/2 (twice each): delta^2, 1 -> 0, 1 + delta^2 for t = 1 +- delta and sinh^2, cosh^2 -> 0, cosh 2 delta for t = e^(+-delta); walls r apart on one sublattice give (T_M - 1) - (eta^2/2C^2) U_(r-1) U_(M-r-1), keeping a degenerate level exactly when M | 2rj; exact zero modes iff the strong bonds are equally many on the two sublattices (two walls: antipodal)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jc6ba",
+  "at_utc": "20260923T131704Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

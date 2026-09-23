@@ -1,6 +1,6 @@
 {
  "edge_count": 13901,
- "node_count": 6361,
+ "node_count": 6362,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -805,6 +805,10 @@
   "admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_ordered_phase_obligation_bounded_theorem_note_2026-09-15": {
    "deps_hash": "f1c14f0e732c",
    "out_degree": 5
+  },
+  "admissibility_rule_the_zero_field_bound_on_the_formation_bilayer_a_held_sources_kernel_without_a_field_in_3plus1_and_no_memory_on_planes_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_three_body_term_exceptional_locus_exact_classification_bounded_theorem_note_2026-09-15": {
    "deps_hash": "4837d2020a34",

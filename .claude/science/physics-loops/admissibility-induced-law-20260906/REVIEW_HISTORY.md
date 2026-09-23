@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-23 block 92 — author checks (not a review PASS)
+Written lens pass by the supervisor (Claude Opus 5.5). Block 20's zero-field step re-derived on the bilayer; the quadratic step made an exact identity (simpler than block 20's case split); block 90's thresholds recomputed exactly; the plane's shell count checked for every even side to 24 on the grid `k = 2πn/L`; the plane bound's qualitative reach stated with the size at which it bites; a name in a theorem section and a misnamed mutation fixed before gates. Census 7/7 in family.

@@ -1,0 +1,15 @@
+W1: light-cone formation on planes, plateau |m| (aligned start, second half of T = 2000 levels)
+  beta=1.0: L=16: 0.3926; L=32: 0.2890; L=64: 0.1065; L=128: 0.0731
+  beta=2.0: L=16: 0.8093; L=32: 0.7770; L=64: 0.7509; L=128: 0.7287
+  beta=4.0: L=16: 0.9101; L=32: 0.8966; L=64: 0.8866; L=128: 0.8776
+W2: zero-field floors ((1 - beta_0/beta)/3)^2 in 3+1 against block 91's measured R^(k)E(k) (0.94, 0.96, 0.98 at beta = 1, 2, 3)
+  beta=1: floor 0.01863
+  beta=2: floor 0.05519
+  beta=3: floor 0.07168
+  beta=6: floor 0.09032
+  beta=1e+09: floor 0.11111
+W3: the plane bound M^4 <= (6 pi^2 beta + 1/2)/H_(L/2 - 1) bites (right side < 1) only when H_(L/2 - 1) > 6 pi^2 beta + 1/2:
+  beta=0.1: needs H > 6.42, i.e. L/2 of order exp(5.8) = 345
+  beta=1.0: needs H > 59.72, i.e. L/2 of order exp(59.1) = 4.83e+25
+  beta=2.0: needs H > 118.94, i.e. L/2 of order exp(118.4) = 2.52e+51
+CONTROL exit=0

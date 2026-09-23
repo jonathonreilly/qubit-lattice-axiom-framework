@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+## Block 92 (2026-09-23)
+```yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: "block 90's open question (light-cone formation on planes) and block 91's conditions (field, infinite volume, named passage to a spontaneous direction)"
+source_of_blocker_text: blocks 90 and 91
+reachability_to_target: advances
+artifact_role: theorem
+next_trace_action: "zero-field window in 3+1 in every finite volume; no common direction on planes; next: the two-source interaction; the small-k limit; a sharper zero-field floor; the level-ordered law"
+```

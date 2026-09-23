@@ -1,0 +1,35 @@
+{
+ "task": "R:higgs_tree_level_mean_field_runner_2026_05_03",
+ "type": "runner-reexecution",
+ "lane": "higgs",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/higgs_tree_level_mean_field_runner_2026_05_03.py",
+ "seed": 41139,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6ffe065c",
+ "started_utc": "20260923T052539Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=31 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "16e496cb6e29fc4ed5412daa84e3d9f0c714f57b4fdd9097ed67f7a06c29f37f",
+ "stdout_tail": "e tuning exists and none is claimed  (<P>_needed = 0.93787, rel offset = +0.581)\n\n--- [B] cross-note inputs and parent-note hygiene ---\n  [PASS][B] B1 matches canonical helper: CANONICAL_PLAQUETTE = 0.5934\n  [PASS][B] u_0 = <P>^(1/4) = 0.877681381 matches CANONICAL_U0  (u_0 = 0.877681381)\n  [PASS][B] plaquette license present: 0.5934 'admitted comparison/reuse number' language on disk\n  [PASS][B] staircase dependency on disk with (1,4,6,4,1) multiplicities\n  [PASS][B] parent note primary label is m_curv_tree with explicit demotion narrative (no Higgs-pole claim)\n  [PASS][B] stale 'correct identification is m_H^2 = (1/chi_H)...' phrasing absent\n  [PASS][B] B2 declared honestly: 246.22 GeV is not attributed to the bounded hierarchy formula\n  [PASS][B] all markdown-linked note citations resolve on disk  (all resolve)\n  [PASS][B] fenced class-D comparator section present in parent note\n\n--- [D] fenced comparators (PDG; quarantined, never load-bearing) ---\n  [PASS][D] comparator: m_curv_tree = 140.3 GeV sits +12.1% ABOVE the PDG Higgs pole 125.10 GeV (separation report, not a match claim)  (separation = +12.12%)\n  [PASS][D] comparator: hierarchy-lane bounded v = 246.2828 GeV vs PDG v_obs = 246.22 GeV differ by +0.0255% (context only; neither derived here)  (rel = +0.0255%)\n\n==============================================================================\n Breakdown: A=6 B=9 C=14 D=2\n TOTAL: PASS=31 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T052539Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,50 @@
+==============================================================================
+ higgs_tree_level_mean_field_runner_2026_05_03.py
+ (2026-06-11 restructure: T1 computed from primitives;
+  D1 declared definition; C1 bounded readout; comparators fenced)
+ Parent note: docs/HIGGS_MASS_FROM_AXIOM_NOTE.md
+==============================================================================
+
+--- [C] T1 first-principles compute (operator -> spectrum -> determinant -> curvature) ---
+  [PASS][C] Clifford algebra {gamma_mu, gamma_nu} = 2 delta_mu_nu (exact, built from Pauli kron)
+  [PASS][C] taste-block Clifford identity (sum_mu gamma_mu)^2 = 4 I (eigenvalue magnitude 2, i.e. |lambda| = 2 u_0 after mean-field scaling)
+  [PASS][C] eta-phase staggered operator on 2^4 block (all-direction antiperiodic wrap): D real antisymmetric
+  [PASS][C] D^2 = -4 I exactly (unit links; so D^2 = -4 u_0^2 I at mean field)  (exact Fraction matrix arithmetic)
+  [PASS][C] char poly of D/u_0 is (lambda^2 + 4)^8 — 16 taste eigenvalues +/- 2i, multiplicity 8 each  (Faddeev-LeVerrier, exact)
+  [PASS][C] N_taste = 16 recomputed from the BZ-corner set {0,1}^4 with Hamming staircase (1,4,6,4,1); W(hw) = 2 r hw -> all degenerate at r = 0
+  [PASS][C] det(u_0 D + m) = (m^2 + 4 u_0^2)^8 per color — exact at 3 rational (u_0, m) test points
+  [PASS][C] color factorization: det_48x48 = [det_taste]^3 at N_c = 3 (exact)
+  [PASS][C] V_taste''(0) = -N_taste/(4 u_0^2) = -4/u_0^2 from the computed determinant (finite difference vs analytic)  (fd = -5.192616470, analytic = -5.192616157)
+  [PASS][C] V_taste'(0) = 0 (symmetric point is an extremum; tachyonic maximum since V'' < 0)  (V'(0) fd = 0.00e+00)
+  [PASS][C] exact N_c cancellation: per-color curvature identical at N_c in {1,2,3,4} (computed)  (spread = 0.00e+00)
+  [PASS][C] falsification leg F1: time-only antiperiodic wrap gives D^2 = -I and det = (m^2 + u_0^2)^8 != (m^2 + 4 u_0^2)^8 — the all-direction B4 declaration is load-bearing
+  [PASS][C] Step 5(c) susceptibility: W''(0) = N_c N_taste/(4 u_0^2) from the computed determinant (finite difference vs analytic)  (fd = 15.577849410, analytic = 15.577848471)
+  [PASS][C] Step 5(c) per-color per-channel W''(0)/(N_c N_taste) = 1/(4 u_0^2) — equals the Step-4 per-channel curvature magnitude (same algebra; no double N_taste division)  (per-color per-channel = 0.324538529, 1/(4 u_0^2) = 0.324538510)
+
+--- [A] D1/C1 readout algebra over declared boundary inputs ---
+  [PASS][A] two routes agree: v*sqrt((4/u_0^2)/N_taste) == v/(2 u_0)  (140.2673027333 vs 140.2673027333)
+  [PASS][A] readout identity residual |2 u_0 m_curv_tree - v| ~ 0  (residual = 2.84e-14)
+  [PASS][A] C1 headline: m_curv_tree = 140.3 GeV at (B1, B2) (rounded to 0.1 GeV)  (m_curv_tree = 140.2673 GeV)
+  [PASS][A] B2 insensitivity: v = 246.22 and v = 246.2828 both give m_curv_tree = 140.3 at 0.1 GeV precision  (140.2673 vs 140.3031, dv/v = 2.55e-04)
+  [PASS][A] analytic sensitivity d m_curv/d<P> = -m_curv/(4<P>) = -59.09 GeV (1% in <P> -> 0.25% in m_curv), fd-verified  (fd = -59.094752, analytic = -59.094752)
+  [PASS][A] falsification leg F2 (anti-tuning): hitting 125.10 GeV would need <P> = 0.9379, +58% off the licensed 0.5934 — no admissible tuning exists and none is claimed  (<P>_needed = 0.93787, rel offset = +0.581)
+
+--- [B] cross-note inputs and parent-note hygiene ---
+  [PASS][B] B1 matches canonical helper: CANONICAL_PLAQUETTE = 0.5934
+  [PASS][B] u_0 = <P>^(1/4) = 0.877681381 matches CANONICAL_U0  (u_0 = 0.877681381)
+  [PASS][B] plaquette license present: 0.5934 'admitted comparison/reuse number' language on disk
+  [PASS][B] staircase dependency on disk with (1,4,6,4,1) multiplicities
+  [PASS][B] parent note primary label is m_curv_tree with explicit demotion narrative (no Higgs-pole claim)
+  [PASS][B] stale 'correct identification is m_H^2 = (1/chi_H)...' phrasing absent
+  [PASS][B] B2 declared honestly: 246.22 GeV is not attributed to the bounded hierarchy formula
+  [PASS][B] all markdown-linked note citations resolve on disk  (all resolve)
+  [PASS][B] fenced class-D comparator section present in parent note
+
+--- [D] fenced comparators (PDG; quarantined, never load-bearing) ---
+  [PASS][D] comparator: m_curv_tree = 140.3 GeV sits +12.1% ABOVE the PDG Higgs pole 125.10 GeV (separation report, not a match claim)  (separation = +12.12%)
+  [PASS][D] comparator: hierarchy-lane bounded v = 246.2828 GeV vs PDG v_obs = 246.22 GeV differ by +0.0255% (context only; neither derived here)  (rel = +0.0255%)
+
+==============================================================================
+ Breakdown: A=6 B=9 C=14 D=2
+ TOTAL: PASS=31 FAIL=0
+==============================================================================

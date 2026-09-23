@@ -1,0 +1,7 @@
+PASS A_primary_identity: primary cache is bound to the current primary source
+PASS B_independent_diagonal_calculus: direct diagonal roots give (1-u^2)I/4 without importing primary definitions
+PASS C_spectral_inequivalence: sharp and half-sharp spectra differ: {1: (1, 0), 1/2: (3/4, 1/4)}
+PASS D_domain_and_bound: the supplied final rational is exactly below the supplied gap; this check does not reconstruct the resolvents
+INDEPENDENT: active=24; diagonal_root=true; parent_cubic_recomputed=false.
+MUTATION_CREDIT: none claimed; no mutation sweep executed.
+TOTAL: PASS=4 FAIL=0

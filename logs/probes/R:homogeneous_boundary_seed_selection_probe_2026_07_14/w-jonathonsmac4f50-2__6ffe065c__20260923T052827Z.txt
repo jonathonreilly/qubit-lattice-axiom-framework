@@ -1,0 +1,50 @@
+PASS side 3 has one branch per possible anchor
+PASS side 3 one-anchor law normalizes
+PASS side 3 every realization has exactly one anchor
+PASS side 3 one-anchor mixture is exactly translation invariant
+PASS side 3 gives every site equal anchor probability 1/volume
+PASS side 5 has one branch per possible anchor
+PASS side 5 one-anchor law normalizes
+PASS side 5 every realization has exactly one anchor
+PASS side 5 one-anchor mixture is exactly translation invariant
+PASS side 5 gives every site equal anchor probability 1/volume
+PASS side 7 has one branch per possible anchor
+PASS side 7 one-anchor law normalizes
+PASS side 7 every realization has exactly one anchor
+PASS side 7 one-anchor mixture is exactly translation invariant
+PASS side 7 gives every site equal anchor probability 1/volume
+PASS radius-one comparison window has 27 sites
+PASS side 5 exact local one-anchor probability is volume ratio
+PASS side 7 exact local one-anchor probability is volume ratio
+PASS side 9 exact local one-anchor probability is volume ratio
+PASS side 13 exact local one-anchor probability is volume ratio
+PASS side 21 exact local one-anchor probability is volume ratio
+PASS fixed-window anchor probability decreases with volume
+PASS one-anchor mass escapes every tested fixed local window
+PASS uniform k=1 fixed-anchor hit probability decreases
+PASS uniform k=1 local mass tends to zero at the exact union-bound scale
+PASS uniform k=2 fixed-anchor hit probability decreases
+PASS uniform k=2 local mass tends to zero at the exact union-bound scale
+PASS uniform k=5 fixed-anchor hit probability decreases
+PASS uniform k=5 local mass tends to zero at the exact union-bound scale
+PASS side 3 Bernoulli local window law is volume independent
+PASS side 5 Bernoulli local window law is volume independent
+PASS side 9 Bernoulli local window law is volume independent
+PASS side 17 Bernoulli local window law is volume independent
+PASS positive-density seed field almost surely hits the 27-site window with high probability
+PASS positive-density field has extensive expected seed count
+PASS one finite anchor needs unbounded location information as volume grows
+PASS a 24-frame orientation label has fixed finite capacity
+PASS origin selection dominates fixed orientation selection in large volume
+PASS zero singleton mass cannot give a one-anchor union probability
+PASS positive invariant singleton mass violates normalization on a finite subset
+PASS countable additivity excludes a translation-invariant exactly-one-anchor law on Z3
+PASS program zero has one exact deterministic transcript
+PASS program one has a different exact deterministic transcript
+PASS one fixed rule does not select its physical program record
+PASS two program-boundary measures normalize
+PASS same allowed boundary class admits different unconditional transcript laws
+PASS uniform one-anchor weights solve every finite translation equation
+PASS finite transitivity forces equal one-anchor weights
+PASS one-anchor support is the full translation orbit
+RESULT PASS=49 FAIL=0

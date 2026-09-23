@@ -1,0 +1,35 @@
+{
+ "task": "R:i1_native_quadratic_static_source_normalization_bridge_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "i1",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/i1_native_quadratic_static_source_normalization_bridge_2026_06_08.py",
+ "seed": 41309,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6ffe065c",
+ "started_utc": "20260923T052829Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "813647057ffcad2a21a5fa8e2a47e8c38fcfb4225a1bd618323db21370ea4931",
+ "stdout_tail": "e contains: does not derive the physical source-coupling normalization\nPASS: bridge note contains: S_eff[J] = -(g^2/2) <J, L^+ J>\nPASS: bridge note contains: V_cross(r) = -g^2 s_1 s_2 G(r)\nPASS: I1 parent note links the complete-square bridge\nPASS: I1 parent keeps the energy-readout bridge open\n--- Section A: finite-lattice complete square ---\nPASS: stationary equation is L phi = g^2 J on the zero-mean lattice  (max_residual=4.441e-15)\nPASS: completed-square minimum equals -(g^2/2)<J,L^+J>  (actual=-4.454742323034e+01, predicted=-4.454742323034e+01)\nPASS: first variation vanishes at the completed-square solution  (slope=1.421e-09)\n--- Section B: two-source cross term normalization ---\nPASS: separation-dependent cross term is -g^2 s1 s2 G(r)  (cross=-1.339529842601e-02, expected=-1.339529842601e-02)\nPASS: source amplitude scaling is quadratic for lambda=0.5  (ratio=0.250000)\nPASS: source amplitude scaling is quadratic for lambda=2.0  (ratio=4.000000)\nPASS: coupling dependence is exactly g^2 for g=0.6  (ratio=0.434730)\nPASS: coupling dependence is exactly g^2 for g=1.4  (ratio=2.366864)\n--- Section C: graph-Laplacian small-k normalization ---\nPASS: one-axis lattice symbol/k^2 tends to 1 at k=0.04909  (ratio=0.999799219)\nPASS: one-axis lattice symbol/k^2 tends to 1 at k=0.02454  (ratio=0.999949802)\nPASS: one-axis lattice symbol/k^2 tends to 1 at k=0.01227  (ratio=0.999987450)\nPASS: native inverse-Laplacian coefficient is 1/(4 pi)  (coeff=0.079577471545948)\nTOTAL: PASS=18 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T052829Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

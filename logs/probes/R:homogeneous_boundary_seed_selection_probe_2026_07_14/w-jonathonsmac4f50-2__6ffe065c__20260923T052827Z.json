@@ -1,0 +1,31 @@
+{
+ "task": "R:homogeneous_boundary_seed_selection_probe_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "homogeneous",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/homogeneous_boundary_seed_selection_probe_2026_07_14.py",
+ "seed": 41307,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6ffe065c",
+ "started_utc": "20260923T052827Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "221f20b8a650d268ccf4becac75f27b9d5dedf9a1d7b1bdd85ef2ac200b5c58d",
+ "stdout_tail": " scale\nPASS uniform k=5 fixed-anchor hit probability decreases\nPASS uniform k=5 local mass tends to zero at the exact union-bound scale\nPASS side 3 Bernoulli local window law is volume independent\nPASS side 5 Bernoulli local window law is volume independent\nPASS side 9 Bernoulli local window law is volume independent\nPASS side 17 Bernoulli local window law is volume independent\nPASS positive-density seed field almost surely hits the 27-site window with high probability\nPASS positive-density field has extensive expected seed count\nPASS one finite anchor needs unbounded location information as volume grows\nPASS a 24-frame orientation label has fixed finite capacity\nPASS origin selection dominates fixed orientation selection in large volume\nPASS zero singleton mass cannot give a one-anchor union probability\nPASS positive invariant singleton mass violates normalization on a finite subset\nPASS countable additivity excludes a translation-invariant exactly-one-anchor law on Z3\nPASS program zero has one exact deterministic transcript\nPASS program one has a different exact deterministic transcript\nPASS one fixed rule does not select its physical program record\nPASS two program-boundary measures normalize\nPASS same allowed boundary class admits different unconditional transcript laws\nPASS uniform one-anchor weights solve every finite translation equation\nPASS finite transitivity forces equal one-anchor weights\nPASS one-anchor support is the full translation orbit\nRESULT PASS=49 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T052827Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

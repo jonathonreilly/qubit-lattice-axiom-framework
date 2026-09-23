@@ -1,0 +1,35 @@
+{
+ "task": "R:higgs_lambda_m_pl_bounded_interval_diagnostic_2026_05_10",
+ "type": "runner-reexecution",
+ "lane": "higgs",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/higgs_lambda_m_pl_bounded_interval_diagnostic_2026_05_10.py",
+ "seed": 41138,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6ffe065c",
+ "started_utc": "20260923T052538Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3d7a7c606fcefee35f9733d9bca49d6873fc273b4b17b56165b328acc9f0b271",
+ "stdout_tail": "Higgs lambda(M_Pl) matching-sign open-gate diagnostic\n\n[PASS] SU(2) one-loop size is O(10^-4)  (g2^4/(16pi^2) = 4.184e-04)\n[PASS] all-gauge one-loop envelope is O(10^-3)  (sum g_i^4/(16pi^2) = 1.079e-03)\n[PASS] top-Yukawa one-loop envelope is subleading at M_Pl  (yt^4/(16pi^2) = 1.348e-04)\n[PASS] positive finite part fits the magnitude envelope  (delta_lambda = +4.0e-04)\n[PASS] negative finite part also fits the same magnitude envelope  (delta_lambda = -4.0e-04)\n[PASS] magnitude envelope alone does not imply lambda_eff >= 0  (sign remains an independent matching calculation)\n[PASS] |lambda| <= 1e-3 gives Delta m_H <= 0.312 GeV  (Delta m_H cap = 0.312 GeV)\n[PASS] central 4e-4 shift is about 0.125 GeV  (Delta m_H central = 0.125 GeV)\n[PASS] 1e-3 boundary uncertainty is below inherited Higgs-chain systematic  (0.312 GeV < 3.17 GeV)\n[PASS] positive-side framework band would be disjoint from literature 1-sigma band if sign were derived  (0 - (-0.006) = +0.006)\n[PASS] but current diagnostic classifies that sign discriminator as open  (negative matching counterexample remains allowed by size bound)\n\nTOTAL: PASS=11 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T052539Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:half_filling_kinetic_energy_selects_the_staggered_flux_sector_check_2026_09_02",
+ "type": "runner-reexecution",
+ "lane": "half",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/half_filling_kinetic_energy_selects_the_staggered_flux_sector_check_2026_09_02.py",
+ "seed": 40918,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6ffe065c",
+ "started_utc": "20260923T052158Z",
+ "elapsed_s": 24.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=22 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e8fdefc4ca06477cbf1b5fc3f730e47b8faee4cac61e1b3b730992eb00b1f580",
+ "stdout_tail": "by at least 0.426844 (4^3) and 0.365352 (4x4x6)\n   L=4..96 e(+)1/2: -0.93750 -0.98937 -1.00075 -1.00217 -1.00238 -1.00240\n           e(-)1/2: -1.12184 -1.19015 -1.19359 -1.19379 -1.19380 -1.19380\nPASS F1 [numerical, 1e-9] exact Bloch formulas at L = 4..96 (above): at half filling staggered is lower at every listed L, with L=96 e(-) = -1.19380096 vs e(+) = -1.00240220; at quarter filling higher at every L, by +0.07909 per site\nPASS F2 [numerical finite quadrature; no certified error] the BZ integrals of |2 sum cos q| and sqrt(6 + 2 sum cos q) on reduced grids M = 600, 1200, 2400 estimate e(+) = -1.00241973, e(-) = -1.19380112 at half filling; difference -0.19138139 |t| per site\nPASS R3 [finite interpolation] displayed L=96 crossing solves its actual two-point equation; no limit-error certificate\n   discrete first-negative N*/V by L: 4:0.3594 8:0.3340 32:0.3394 96:0.3397\nPASS F3 [finite L=96 interpolation, no limit accuracy] crossing n* is 0.339659 (above), the window ending at the mirror 1 - n* = 0.660341; no universal one-third threshold follows\nSUMMARY: for the declared free Hamiltonian, all-(-1) has lower supplied half-filled energy on tested even graphs; odd-N entries are abstract Fock data; no physical selection law or limiting crossing is derived.\nPASS R1 [exact] product of actual edge stars is identity; fixed-loop cube code128 equals even Fock128, not full256\nPASS R2 [exact] actual spanning-tree minus field is diagonally sign-gauge conjugate to KS\nTOTAL: PASS=22 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T052222Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/half_filling_kinetic_energy_selects_the_staggered_flux_sector_check_2026_09_02.txt against the .txt beside this log"
+  ]
+ }
+}

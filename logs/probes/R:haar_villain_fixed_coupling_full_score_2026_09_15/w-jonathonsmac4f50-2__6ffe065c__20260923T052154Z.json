@@ -1,0 +1,35 @@
+{
+ "task": "R:haar_villain_fixed_coupling_full_score_2026_09_15",
+ "type": "runner-reexecution",
+ "lane": "haar",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/haar_villain_fixed_coupling_full_score_2026_09_15.py",
+ "seed": 40914,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6ffe065c",
+ "started_utc": "20260923T052154Z",
+ "elapsed_s": 1.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f2a6a3597b468d9ad9c026831ec0dd026e1db47703d3dac1ee4a48ca6eb0ea75",
+ "stdout_tail": "flection\": [\n      {\n        \"momentum\": [\n          1,\n          0,\n          0\n        ],\n        \"energy\": \"1\",\n        \"rank\": 2,\n        \"conserved_reflection_form_exact\": true\n      },\n      {\n        \"momentum\": [\n          1,\n          2,\n          2\n        ],\n        \"energy\": \"3\",\n        \"rank\": 2,\n        \"conserved_reflection_form_exact\": true\n      },\n      {\n        \"momentum\": [\n          2,\n          -3,\n          6\n        ],\n        \"energy\": \"7\",\n        \"rank\": 2,\n        \"conserved_reflection_form_exact\": true\n      }\n    ]\n  }\n}\nper_element: executed exact integer cochain reflection and Hodge identities, plus scalar image-score and conditional-variance normalization challenges.\nper_site: executed a wrong closed-charge zero-extension control and fixed-site image kernels; uniform carrier tails are checked and not executed, using the written mass bounds.\nper_mode: executed Bloch-fiber versus real-space matrices, independent Gaussian precision inversion, exact signed-permutation commutants and rank-two conserved reflection forms.\nper_block: executed positive finite-measure cumulants, real auxiliary MGF versus original magnetic and Poisson sums, and collective/nonergodic comparison controls.\nlattice_wide: checked and not executed: the all-box Riesz bound, noise-factor state matching, two-replica concentration, spectral limit and fixed-beta full-score continuum theorem depend on the written analytic proofs, awaiting independent review.\nTOTAL: PASS=13 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T052156Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/haar_villain_fixed_coupling_full_score_2026_09_15.txt against the .txt beside this log"
+  ]
+ }
+}

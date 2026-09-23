@@ -1,0 +1,35 @@
+{
+ "task": "R:independent_action_transfer_record_hazard_crosscal_2026_09_02",
+ "type": "runner-reexecution",
+ "lane": "independent",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/independent_action_transfer_record_hazard_crosscal_2026_09_02.py",
+ "seed": 41317,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6ffe065c",
+ "started_utc": "20260923T052837Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "215f0abff2770dc9f93e9c52be4243ec0c2f6b537605bfeed74de091c8fd8789",
+ "stdout_tail": "PASS: current_input_binding | declared=2 note+current-minimal-memo hashes match\nPASS: moment_and_tomography_domains | zero mean gives half trace; six effects rank=4; +/-z rank=2 misses explicit coherence\nPASS: constant_determinant_rate_biconditional | det W=alpha^2(1-|r|^2); positive alpha selects the positive root; witness=5/4\nPASS: same_qubit_first_step | gamma=3/2>0 domain holds; six-axis weights exact; no-jump=(4/17, 13/17)\nPASS: positive_rate_and_scalar_null_cases | nonscalar mixture variance is positive; W=cI is exponential; gamma=0 has no event\nPASS: route_b_full_matrix_channel | 9/9 units obey block formula/semigroup; 4/4 Record units fixed; complete phase mutant rejected\nPASS: narrow_carrier_and_parity_escape | two Record rays span the append carrier; fixed-parity dimensions=(2,4)\nPASS: two_site_race_discriminator | P_B(1)=4/9; P_Q(1)=1/2; r2=3/5; positive common rate cancels\nPASS: conditional_record_filtration_scope | Bernoulli centering only after candidate probabilities are supplied; no empirical or audit claim\nper_element: exact positive qubit transfers, spanning effects, and determinant identities\nper_site: one same-qubit stopped filter and one full 3x3 blank/Record channel\nper_mode: six resolved marks and a finite fixed-parity embedding; no menu uniqueness claim\nper_block: the conditional two-site 4/9 versus 1/2 race fixture\nlattice_wide: not executed; physical source, allocation, collisions, and empirical realization remain open\nTOTAL: PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T052837Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

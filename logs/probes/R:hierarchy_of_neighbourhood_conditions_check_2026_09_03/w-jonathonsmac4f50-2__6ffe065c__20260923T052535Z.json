@@ -1,0 +1,35 @@
+{
+ "task": "R:hierarchy_of_neighbourhood_conditions_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "hierarchy",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/hierarchy_of_neighbourhood_conditions_check_2026_09_03.py",
+ "seed": 41135,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6ffe065c",
+ "started_utc": "20260923T052535Z",
+ "elapsed_s": 2.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=28 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "56a16a30af82d02a313119d911f4a60609ba8419cf82a9fdeab9d2605bf94b49",
+ "stdout_tail": " memberships equal oriented nonzero hopping support only\nPASS D7 [exact] link-only face-cycle alternative preserves Gauss; full ring-exchange support is not exhausted by the same-edge paired hop census\nPARENT_SUPPORT_MAP {\"edge_permutation\": [0, 3, 5, 7, 1, 4, 8, 10, 2, 6, 9, 11], \"face_witness\": [3425, 600, 360], \"hopping_cases\": 172800, \"link_inversion\": 4095, \"mismatches\": 0, \"states\": 14400}\nPASS D5 [exact] a needed CLARIFICATION: there is no one-charge configuration on the cube -- the Gauss sector is exactly half filled, so all 14400 patterns carry 4 corners at rho_v = +1/2 and 4 at -1/2, total charge 0; 'one charge' is read as one corner at +1/2\nPASS E2 [exact argument/numerical1e-12] declared unbiased qKB+(1-q)BR has 6D=q+(1-q)6D_BR, not glued q; q=.5,g=0 actual two-step trace\nMIXED_BR_TRACE {\"actual\": 0.6247553816046965, \"formula\": 0.6247553816046967, \"g\": 0, \"q\": 0.5}\nPASS E1 [exact] THE HIERARCHY in one table: GLUED gives D = 0 under single ticks, D = D_1 under its supplied torus block tick, preserving its supplied support; Gauss block motion is uncomputed. BREAKABLE BR gives bounded intact centroid, mean lifetime (6/5) e^{g}, transport only by breaking; FREE gives D_free(2) = D_1/4 (0.998)\nSUMMARY: the declared nearest-neighbour glued dimer/trimer are caged; their supplied block tick has D_1. BR dimer mean lifetime is (6/5)e^g; its long-range transport requires breaks. In the finite Gauss relation no single record change is admissible at all.\nTOTAL: PASS=28 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T052538Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

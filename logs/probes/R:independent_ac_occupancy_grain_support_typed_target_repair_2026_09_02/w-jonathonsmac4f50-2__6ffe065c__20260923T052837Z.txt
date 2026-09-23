@@ -1,0 +1,18 @@
+CHECK current source/own-note binding: PASS
+CHECK orbit census: PASS
+CHECK global power neutral: PASS
+CHECK sector-local copy active: PASS
+CHECK increment identity (1, 1) (1, 1): PASS
+CHECK increment identity (2, 3) (4, 6): PASS
+CHECK increment identity (1, 1) (0, 1): PASS
+CHECK exact Gaussian-integer realification: PASS
+CHECK exact Gaussian-integer realification: PASS
+CHECK odds exponent one: PASS
+CHECK odds exponent two: PASS
+CHECK realification sign mutation detected: PASS
+CHECK nonunit Jacobian cancellation: PASS
+CHECK omitted Jacobian detected: PASS
+CHECK support boundary (0, 0): PASS
+CHECK support boundary (1, 0): PASS
+CHECK support boundary (0, 1): PASS
+TOTAL: PASS=17 FAIL=0

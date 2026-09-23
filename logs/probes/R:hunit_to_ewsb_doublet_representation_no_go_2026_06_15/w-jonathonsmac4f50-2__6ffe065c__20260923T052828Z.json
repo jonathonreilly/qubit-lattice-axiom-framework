@@ -1,0 +1,34 @@
+{
+ "task": "R:hunit_to_ewsb_doublet_representation_no_go_2026_06_15",
+ "type": "runner-reexecution",
+ "lane": "hunit",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/hunit_to_ewsb_doublet_representation_no_go_2026_06_15.py",
+ "seed": 41308,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6ffe065c",
+ "started_utc": "20260923T052828Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=39 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "da857198d0e60519be94aa9d7176d502af420d329d42ebfa6e3b9f89690e0a33",
+ "stdout_tail": "s no spatial degree of freedom for the representation obstruction to be resolved against.\nper_mode: checked \u2014 the two weight components of the SU(2) fundamental are resolved separately and both are eliminated: solving the equivariance equations for a general v = (a, b) forces a = 0 and b = 0, the stacked generator constraint has rank 2 with empty nullspace, and the resolution P_+ + P_- = I_2 separates the charged component from the neutral one, with Q = T_3 + Y annihilating only the latter. No individual component survives as an invariant direction.\nper_block: checked \u2014 H_unit is examined as an operator on the whole Q_L block rather than on a chosen sub-piece: it is exactly the identity of that block scaled to unit Hilbert-Schmidt norm, 1/sqrt(6) times I_2 tensor I_3, so it is constant across the isospin factor and the colour factor alike and carries no block-internal direction that could single out a doublet component. Choosing any nonzero ray inside the block, such as (1, 0), immediately breaks the equivariance.\nlattice_wide: checked and not executed \u2014 no lattice-wide, thermal, or field-theoretic computation is performed; the high-temperature census in Part 5 is an integer comparison of real degrees of freedom, 4 for one complex doublet against 1 for a neutral radial ray or a scalar singlet, not a partition-function or free-energy evaluation, and the note is explicit that this does not close R-HIGGS positively and adds no axiom or approved primitive.\n\nTOTAL: PASS=39 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T052828Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

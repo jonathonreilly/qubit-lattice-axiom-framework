@@ -1,0 +1,15 @@
+PASS: current_input_binding | declared=2 note+current-minimal-memo hashes match
+PASS: moment_and_tomography_domains | zero mean gives half trace; six effects rank=4; +/-z rank=2 misses explicit coherence
+PASS: constant_determinant_rate_biconditional | det W=alpha^2(1-|r|^2); positive alpha selects the positive root; witness=5/4
+PASS: same_qubit_first_step | gamma=3/2>0 domain holds; six-axis weights exact; no-jump=(4/17, 13/17)
+PASS: positive_rate_and_scalar_null_cases | nonscalar mixture variance is positive; W=cI is exponential; gamma=0 has no event
+PASS: route_b_full_matrix_channel | 9/9 units obey block formula/semigroup; 4/4 Record units fixed; complete phase mutant rejected
+PASS: narrow_carrier_and_parity_escape | two Record rays span the append carrier; fixed-parity dimensions=(2,4)
+PASS: two_site_race_discriminator | P_B(1)=4/9; P_Q(1)=1/2; r2=3/5; positive common rate cancels
+PASS: conditional_record_filtration_scope | Bernoulli centering only after candidate probabilities are supplied; no empirical or audit claim
+per_element: exact positive qubit transfers, spanning effects, and determinant identities
+per_site: one same-qubit stopped filter and one full 3x3 blank/Record channel
+per_mode: six resolved marks and a finite fixed-parity embedding; no menu uniqueness claim
+per_block: the conditional two-site 4/9 versus 1/2 race fixture
+lattice_wide: not executed; physical source, allocation, collisions, and empirical realization remain open
+TOTAL: PASS=9 FAIL=0

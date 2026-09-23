@@ -1,0 +1,27 @@
+{
+  "original_note": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/first_event_instrument_history/before_zero_total_rate_qualification/FIRST_EVENT_INSTRUMENT_COROLLARY_DRAFT.md",
+    "bytes": 2896,
+    "sha256": "3f3794aa3473ae9442de9d48b7bccbbd0e000c6ae1a00c262975efa7ed6bca29"
+  },
+  "intermediate_note": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/first_event_instrument_history/before_erasure_scope_qualification/FIRST_EVENT_INSTRUMENT_COROLLARY_DRAFT.md",
+    "bytes": 3230,
+    "sha256": "8e9b0fa908b3b8c32256a019e72ad7ae2a163102768d048a83c7e6a2ea13c5d7"
+  },
+  "current_note": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FIRST_EVENT_INSTRUMENT_COROLLARY_DRAFT.md",
+    "bytes": 3667,
+    "sha256": "4b9dc935444bdfb3c01835c0c21e2d6cf420f5ea09cc1a5b2f52795cb00492ac"
+  },
+  "current_author_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FIRST_EVENT_INSTRUMENT_AUTHOR_SEAL.json",
+    "bytes": 3350,
+    "sha256": "2c446eb379dafa054df99ecb872e25ba0a9799d0f4801398132506bf0f2c48da"
+  },
+  "F1": "Resolved: r>0 is explicit for first-mark probabilities and normalized joint output; r=0 has no first event.",
+  "F2": "Resolved: removes the unjustified matter-erasure loss assertion and states the orthogonal field-divergence qualification.",
+  "core_Gram_and_full_output_recovery": "Unchanged; independently verified on degree-three cyclic K2,3.",
+  "historical_authentication": "Original three and intermediate six binding seals recover through their archived same-basename notes; all other exact dependencies unchanged.",
+  "verdict_scope": "Narrow scientific correction acknowledgment; no formal audit or publication status."
+}

@@ -1,0 +1,29 @@
+--- before
++++ after
+@@ -23,12 +23,14 @@
+ by their coefficient c_mu. For c_mu>0, V_mu=B_mu/sqrt(c_mu) is an isometry
+ from the initial field sector into the full post-event matter/field space.
+ The rate of each first mark is kappa c_mu, independent of the initial field
+-state. In the rotor limit, first time and mark thus factor: time is exponential
+-with r=kappa sum_mu c_mu, and mark probability is kappa c_mu/r. This statement
++state. Write r=kappa sum_mu c_mu. For r>0, first time and mark in the rotor
++limit factor: time is exponential with rate r, and mark probability is
++kappa c_mu/r. If r=0, no first event occurs in this limit and no normalized
++first-mark distribution is defined. This statement
+ concerns these supplied instruments in the initially vacant-B sector only.
+ It gives no such occupation-only law after the first event.
+ 
+-For a specified pre-event density rho, retaining the mark produces the joint
++When r>0, for a specified pre-event density rho, retaining the mark produces the joint
+ state with classical blocks p_mu V_mu rho V_mu^dagger. On the known image of
+ a mark, V_mu^dagger recovers rho. A trace-preserving mathematical recovery
+ on the whole marked output space can be obtained by sending the orthogonal
+@@ -45,4 +47,7 @@
+ No claim about all-mark erasure correction, later births, thermodynamic
+ information capacity, finite resources or a physical measurement postulate
+ is implied. An independent check of the individual-channel identities and
+-an explicit cyclic-sector Gram calculation remain before publication.
++an explicit cyclic-sector Gram calculation remain before publication. The
++initial review found a missing r=0 qualification; its original note and seal
++are preserved under first_event_instrument_history, and this revision makes
++the positive-rate normalization condition explicit.

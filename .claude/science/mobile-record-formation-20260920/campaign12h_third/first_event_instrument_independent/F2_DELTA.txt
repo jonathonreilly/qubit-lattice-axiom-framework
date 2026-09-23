@@ -1,0 +1,24 @@
+--- before
++++ after
+@@ -38,8 +38,10 @@
+ not destroy the quantum field information when the complete joint output
+ and its mark are retained. This is logical recoverability, not an authorized
+ physical reversal: the recovery need not respect permanent-record number or
+-be a local operation available in the model. Tracing out matter, discarding
+-the mark or forgetting the event time can lose information. Recovering the
++be a local operation available in the model. Recoverability after partial-output, mark or time erasure requires its own
++analysis. No loss of input recoverability from tracing matter alone is
++asserted: with all links retained, the distinct charge branches can instead
++be distinguished through their orthogonal field-divergence sectors. Recovering the
+ initial field rather than the immediately pre-event field also requires
+ undoing its known intervening Hamiltonian evolution.
+ 
+@@ -50,4 +52,7 @@
+ an explicit cyclic-sector Gram calculation remain before publication. The
+ initial review found a missing r=0 qualification; its original note and seal
+ are preserved under first_event_instrument_history, and this revision makes
+-the positive-rate normalization condition explicit.
++the positive-rate normalization condition explicit. A second review finding
++removed an overbroad matter-erasure loss statement; its intermediate source
++and seal are also preserved. Neither repair changes the individual-channel
++Gram identities or the retained-mark full-output recovery map.

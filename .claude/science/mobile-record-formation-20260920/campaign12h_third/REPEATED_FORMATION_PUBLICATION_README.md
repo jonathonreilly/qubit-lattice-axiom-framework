@@ -35,13 +35,24 @@ births. Its pure-field limit is established before the first formation event.
   an infinite path. The vacancy is back at its original site with probability
   [1+2 J0(2sqrt(3)u)]/3. This sector cannot form another pair.
 
+- [First-event information](FIRST_EVENT_INSTRUMENT_COROLLARY_DRAFT.md)
+  establishes individual-channel isometries and field-independent first-mark
+  probabilities in the unit-rotor initial sector. Retaining the mark and
+  complete output permits logical recovery of the pre-event input. This is
+  not a supplied physical inverse of permanent record formation. The historical
+  draft filename and sealed status text are retained; its completed review
+  and correction acknowledgment determine current coverage.
+
 The first two notes have a separate-context [blind reconstruction](finite_formation_independent/REPORT.md)
 and [subsequent source comparison](finite_formation_independent/COMPARISON.md),
 with no required correction. The third has a completed [source-informed
 independent review](fast_matter_formation_independent/REPORT.md), also with no
 required correction; it is not described as blind. The fast-motion result has
 its own [source-informed review](post_birth_fast_motion_independent/REPORT.md),
-which also found no required correction. Root verification receipts
+which also found no required correction. The [first-instrument review](first_event_instrument_independent/REPORT.md)
+required two narrow repairs: handling zero total event rate, and removing an
+overly broad matter-erasure loss claim. Both were corrected and independently
+acknowledged. Root verification receipts
 bind the actual read and check scope. These are scientific checks, not formal
 retained/audit status.
 
@@ -51,7 +62,9 @@ spectral weights and 144 effective count rows. Two independently evolved
 microscopic endpoints agree within 7e-14. The higher-scale checks independently
 reconstruct every stored H2/H4 matrix, exact cyclic coefficients and first-loss
 formulas, and complete matrix-unit discrepancy/correction maps. An independently
-assembled first-event endpoint agrees within 4.4e-15. The post-event check independently reconstructs the physical charge/field
+assembled first-event endpoint agrees within 4.4e-15. The first-instrument check uses exact Gram and recovery maps on all eighteen
+channels of a degree-three cyclic graph, including a zero-rate countercontrol.
+The post-event check independently reconstructs the physical charge/field
 graph, complete spin-one, -two and -four sectors, and a separate path
 exponential. Full author trajectory grids were not rerun; finite floating
 controls corroborate the explicit proofs.
@@ -90,6 +103,6 @@ python3 .claude/science/mobile-record-formation-20260920/campaign12h_third/verif
 
 Historical receipt paths resolve to archived versions where sources changed,
 as documented by their recovery maps and history diagnoses. The sealed locality
-note retains one blank line at end of file; the sealed historical unified diff
-retains two single-space context lines. Default git whitespace checking flags
+note retains one blank line at end of file; sealed historical source diffs
+retain their single-space context lines. Default git whitespace checking flags
 these exact historical bytes. They are preserved and explicitly accounted for.

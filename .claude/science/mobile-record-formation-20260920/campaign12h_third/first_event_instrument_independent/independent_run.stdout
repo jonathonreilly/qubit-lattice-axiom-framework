@@ -1,0 +1,341 @@
+{
+  "graph": "K_{2,3}, A={0,1}, B={2,3,4}, all edges oriented A to B; two independent electric cycles",
+  "exact_input_fluxes": [
+    [
+      -1,
+      -1,
+      2,
+      1,
+      1,
+      -2
+    ],
+    [
+      -1,
+      0,
+      1,
+      1,
+      0,
+      -1
+    ],
+    [
+      -1,
+      1,
+      0,
+      1,
+      -1,
+      0
+    ],
+    [
+      0,
+      -1,
+      1,
+      0,
+      1,
+      -1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      -1,
+      0,
+      -1,
+      1
+    ],
+    [
+      1,
+      -1,
+      0,
+      -1,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      -1,
+      -1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      -2,
+      -1,
+      -1,
+      2
+    ]
+  ],
+  "channel_rows": [
+    {
+      "instrument": "resolved",
+      "edge": 0,
+      "charges": [
+        1
+      ],
+      "c": 2,
+      "input_dimension": 9,
+      "output_dimension": 18,
+      "matter_charge_branches": 2,
+      "Gram_exact": true,
+      "full_recovery_exact": true,
+      "matter_erasure_recovery_exact": true
+    },
+    {
+      "instrument": "resolved",
+      "edge": 0,
+      "charges": [
+        -1
+      ],
+      "c": 2,
+      "input_dimension": 9,
+      "output_dimension": 18,
+      "matter_charge_branches": 2,
+      "Gram_exact": true,
+      "full_recovery_exact": true,
+      "matter_erasure_recovery_exact": true
+    },
+    {
+      "instrument": "resolved",
+      "edge": 1,
+      "charges": [
+        1
+      ],
+      "c": 2,
+      "input_dimension": 9,
+      "output_dimension": 18,
+      "matter_charge_branches": 2,
+      "Gram_exact": true,
+      "full_recovery_exact": true,
+      "matter_erasure_recovery_exact": true
+    },
+    {
+      "instrument": "resolved",
+      "edge": 1,
+      "charges": [
+        -1
+      ],
+      "c": 2,
+      "input_dimension": 9,
+      "output_dimension": 18,
+      "matter_charge_branches": 2,
+      "Gram_exact": true,
+      "full_recovery_exact": true,
+      "matter_erasure_recovery_exact": true
+    },
+    {
+      "instrument": "resolved",
+      "edge": 2,
+      "charges": [
+        1
+      ],
+      "c": 2,
+      "input_dimension": 9,
+      "output_dimension": 18,
+      "matter_charge_branches": 2,
+      "Gram_exact": true,
+      "full_recovery_exact": true,
+      "matter_erasure_recovery_exact": true
+    },
+    {
+      "instrument": "resolved",
+      "edge": 2,
+      "charges": [
+        -1
+      ],
+      "c": 2,
+      "input_dimension": 9,
+      "output_dimension": 18,
+      "matter_charge_branches": 2,
+      "Gram_exact": true,
+      "full_recovery_exact": true,
+      "matter_erasure_recovery_exact": true
+    },
+    {
+      "instrument": "resolved",
+      "edge": 3,
+      "charges": [
+        1
+      ],
+      "c": 2,
+      "input_dimension": 9,
+      "output_dimension": 18,
+      "matter_charge_branches": 2,
+      "Gram_exact": true,
+      "full_recovery_exact": true,
+      "matter_erasure_recovery_exact": true
+    },
+    {
+      "instrument": "resolved",
+      "edge": 3,
+      "charges": [
+        -1
+      ],
+      "c": 2,
+      "input_dimension": 9,
+      "output_dimension": 18,
+      "matter_charge_branches": 2,
+      "Gram_exact": true,
+      "full_recovery_exact": true,
+      "matter_erasure_recovery_exact": true
+    },
+    {
+      "instrument": "resolved",
+      "edge": 4,
+      "charges": [
+        1
+      ],
+      "c": 2,
+      "input_dimension": 9,
+      "output_dimension": 18,
+      "matter_charge_branches": 2,
+      "Gram_exact": true,
+      "full_recovery_exact": true,
+      "matter_erasure_recovery_exact": true
+    },
+    {
+      "instrument": "resolved",
+      "edge": 4,
+      "charges": [
+        -1
+      ],
+      "c": 2,
+      "input_dimension": 9,
+      "output_dimension": 18,
+      "matter_charge_branches": 2,
+      "Gram_exact": true,
+      "full_recovery_exact": true,
+      "matter_erasure_recovery_exact": true
+    },
+    {
+      "instrument": "resolved",
+      "edge": 5,
+      "charges": [
+        1
+      ],
+      "c": 2,
+      "input_dimension": 9,
+      "output_dimension": 18,
+      "matter_charge_branches": 2,
+      "Gram_exact": true,
+      "full_recovery_exact": true,
+      "matter_erasure_recovery_exact": true
+    },
+    {
+      "instrument": "resolved",
+      "edge": 5,
+      "charges": [
+        -1
+      ],
+      "c": 2,
+      "input_dimension": 9,
+      "output_dimension": 18,
+      "matter_charge_branches": 2,
+      "Gram_exact": true,
+      "full_recovery_exact": true,
+      "matter_erasure_recovery_exact": true
+    },
+    {
+      "instrument": "coherent",
+      "edge": 0,
+      "charges": [
+        1,
+        -1
+      ],
+      "c": 4,
+      "input_dimension": 9,
+      "output_dimension": 36,
+      "matter_charge_branches": 4,
+      "Gram_exact": true,
+      "full_recovery_exact": true,
+      "matter_erasure_recovery_exact": true
+    },
+    {
+      "instrument": "coherent",
+      "edge": 1,
+      "charges": [
+        1,
+        -1
+      ],
+      "c": 4,
+      "input_dimension": 9,
+      "output_dimension": 36,
+      "matter_charge_branches": 4,
+      "Gram_exact": true,
+      "full_recovery_exact": true,
+      "matter_erasure_recovery_exact": true
+    },
+    {
+      "instrument": "coherent",
+      "edge": 2,
+      "charges": [
+        1,
+        -1
+      ],
+      "c": 4,
+      "input_dimension": 9,
+      "output_dimension": 36,
+      "matter_charge_branches": 4,
+      "Gram_exact": true,
+      "full_recovery_exact": true,
+      "matter_erasure_recovery_exact": true
+    },
+    {
+      "instrument": "coherent",
+      "edge": 3,
+      "charges": [
+        1,
+        -1
+      ],
+      "c": 4,
+      "input_dimension": 9,
+      "output_dimension": 36,
+      "matter_charge_branches": 4,
+      "Gram_exact": true,
+      "full_recovery_exact": true,
+      "matter_erasure_recovery_exact": true
+    },
+    {
+      "instrument": "coherent",
+      "edge": 4,
+      "charges": [
+        1,
+        -1
+      ],
+      "c": 4,
+      "input_dimension": 9,
+      "output_dimension": 36,
+      "matter_charge_branches": 4,
+      "Gram_exact": true,
+      "full_recovery_exact": true,
+      "matter_erasure_recovery_exact": true
+    },
+    {
+      "instrument": "coherent",
+      "edge": 5,
+      "charges": [
+        1,
+        -1
+      ],
+      "c": 4,
+      "input_dimension": 9,
+      "output_dimension": 36,
+      "matter_charge_branches": 4,
+      "Gram_exact": true,
+      "full_recovery_exact": true,
+      "matter_erasure_recovery_exact": true
+    }
+  ],
+  "total_rate_over_kappa_resolved": 24,
+  "total_rate_over_kappa_coherent": 24,
+  "zero_rate_countercontrol": "One A--B edge has c_plus=c_minus=0, no first event, and no normalized mark distribution.",
+  "method": "Independent legal rotor hops and insertions with exact integer/SymPy Gram and recovery checks; no author builder."
+}

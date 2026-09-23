@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-09-23T01:08:33.393399+00:00",
+  "source": "Independent source-informed reviewer identified an omitted zero-total-rate case before publication.",
+  "counterexamples": [
+    "A single A-B edge",
+    "A-B-A path with both A degrees one"
+  ],
+  "repair": "First-time/mark and normalized marked-recovery formulas explicitly require r>0; r=0 has no first event and no normalized mark distribution. Individual Gram identities and all nonzero-rate formulas unchanged.",
+  "recovery": "The archived old author seal binds the archived old note at its original recorded path; its other two theorem-note dependencies are unchanged."
+}

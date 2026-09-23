@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/order_laws_nucleation_density_and_sweep_laws_2026_09_22.py
+runner_sha256: a2f956aec1179030319629fbdd9c47457ac5e3c5e73844575e5797f9b01152a7
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.92
+status: ok
+----- stdout -----
+== 1. Independent clocks nucleate at density 1/(1 + degree) ==
+[PASS] uniform race on the 5-site path: exact E[k] over all 5! orders equals sum 1/(1 + deg) :: E[k] = 2
+[PASS] uniform race on the 3x3 plane: exact E[k] over all 9! orders equals sum 1/(1 + deg) :: E[k] = 38/15
+[PASS] uniform race on the 2x2x2 cube: exact E[k] over all 8! orders equals sum 1/(1 + deg) :: E[k] = 2
+[PASS] antipodal cube corners have disjoint closed neighbourhoods: both nucleate in exactly 1/16 of orders :: independent events of probability 1/4 each, the ingredient of the decay bound below
+[PASS] on Z^3 (p = 1/7) the soldered skeleton completes with probability <= 8(7/8)^m - 7(6/7)^m -> 0 :: m sites spaced 3 apart in a window of volume ~27m; the cube instance 121/128 bounds the exact 599/2048
+
+== 2. Sweep order laws: no nucleation, no first formation, certain completion ==
+[PASS] 48 signed frames give 48 distinct lexicographic sweeps of the cube, each with exactly one nucleation
+[PASS] the uniform law over the 48 sweeps is invariant under all 24 proper rotations of the cube :: a covariant order law none of whose realisations is rotation-invariant
+[PASS] under every sweep the skeleton completes with certainty, uniform over its 8 phases
+[PASS] and the completed law is the same for all 48 sweeps: the frame is realised but not recorded
+[PASS] on Z^3 each lexicographic sweep is translation-invariant and every site has an earlier neighbour :: checked on a 5x5x5 box: no nucleation and no first formation, every formation preceded by a neighbour's
+
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

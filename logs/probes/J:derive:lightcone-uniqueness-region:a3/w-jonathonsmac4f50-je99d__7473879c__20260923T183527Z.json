@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:lightcone-uniqueness-region:a3",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-jonathonsmac4f50-je99d",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/lightcone-uniqueness-region/w-jonathonsmac4f50-je99d/check.py",
+ "seed": 88527,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7473879c",
+ "started_utc": "20260923T183527Z",
+ "elapsed_s": 6.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PROVED the directional lemma: for the vMF kernel, sup over V in R^3, unit u and chordal-1-Lipschitz f of Cov_V(f, u.s) equals 1/3 (attained at V = 0 by f = u.s); hence the light-cone formation chain (7 predecessors) contracts at rate 7*beta/3 and forgets its initial level for every beta < 3/7, with W1 region 3/7 > TV ceiling ln(4/3)"
+ },
+ "review": "Own route (harmonic extension to the ball + Cauchy-Schwarz + Dirichlet energy as a quadratic form in the direction) closes the directional lemma a1/a2 left open: the chordal W1 influence of the vMF kernel is exactly 1/3 at every V in every direction (attained at V=0), so light-cone formation forgets for beta < 3/7; exact sympy/Fraction checks of the closed forms, the reduction identities and every Taylor coefficient (tail by dominance); TV ceiling ln(4/3); numerical LP/Legendre cross-checks labelled. Same model family as a1/a2 (Claude Opus, different version).",
+ "what": "DERIVATION, independent attempt 3 of 3: The no-memory region under light-cone formation with the true influence constant. GIVEN: two attempts claimed uniqueness for beta < 3/7 from ||Cov_vMF|| <= 1/3; the referee showed the step FAILS: the covariance bound makes the MEAN map (beta/3)-Lipschitz, but the Dobrushin/Wasserstein influence of one predecessor is the W1-Lipschitz constant of S -> vMF(beta S) (the sup over 1-Lipschitz f of Cov(f, u.s)), which the covariance does not control. Block 27 (PR #8171) has the total-variation sensitivity |V - V'|/(2 sqrt 3). TASK: the correct region. (a) Compute or bound the W1 influence of the vMF kernel exactly (at V = 0 the law is uniform: the optimal transport between vMF(V) and vMF(V') is explicit to first order); (b) give the uniqueness region for 7 predecessors by total variation (block 27: 7 beta/sqrt 3 < 1?) and by W1, and say which is larger; (c) compare with the executed onset of memory (between beta = 0.6 and 0.75 on 32^3 planes). Exact finite checks of every constant. ROUND 2: the first round's attempts and referee reports are under probes/work/derive/<problem>/ and logs/probes/J:derive:*/ and logs/probes/J:confirm:J-derive-*/ (python3 probes/harvest.py lists them); what survived refereeing is stated below as GIVEN, what failed is stated as the gap. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/lightcone-uniqueness-region/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/lightcone-uniqueness-region/<name>/check.py\"",
+ "stdout_sha256": "8c64ab9a43b16484f5c82fe4be0c634c0c3a59672f450b3e0f2ad86c2369647a",
+ "stdout_tail": "0=0.8822 B_par/D0=0.8827 D_perp/D0=0.9841 B_perp/D0=0.9845\n   k=1.5 D_par/D0=0.6050 B_par/D0=0.6125 D_perp/D0=0.9337 B_perp/D0=0.9404\n   k=3.0 D_par/D0=0.2581 B_par/D0=0.2898 D_perp/D0=0.8049 B_perp/D0=0.8537\n   k=6.0 D_par/D0=0.0832 B_par/D0=0.1284 D_perp/D0=0.6086 B_perp/D0=0.7743\nPASS N1 NUMERICAL: Legendre-series Dirichlet energies <= truncated B <= D0 at k in {0.2,0.7,1.5,3,6}\n   LP chordal W1 of the derivative at k=0.5, angle 1.047: 0.3260\n   LP chordal W1 of the derivative at k=1.0, angle 0.785: 0.2982\n   LP chordal W1 of the derivative at k=2.0, angle 0.785: 0.2322\nPASS N2 NUMERICAL: discretised optimal-transport value in mixed directions stays below 1/3\n\nSUMMARY: PROVED the directional lemma: for the vMF kernel, sup over V in R^3, unit u and chordal-1-Lipschitz f of Cov_V(f, u.s) equals 1/3 (attained at V = 0 by f = u.s); hence the light-cone formation chain (7 predecessors) contracts at rate 7*beta/3 and forgets its initial level for every beta < 3/7, with W1 region 3/7 > TV ceiling ln(4/3)\nHIT: the chordal W1 influence of the vMF kernel is exactly 1/3 in every direction at every V (the directional lemma left open by a1/a2), proved by harmonic extension to the ball, Cauchy-Schwarz and the Dirichlet energy bound D(u) <= max(B_par, B_perp) <= 1/(12 pi) (exponential polynomials with nonnegative Taylor coefficients); so light-cone formation has no memory for beta < 3/7 = 0.428..., above the TV-Dobrushin ceiling ln(4/3) = 0.2877 and below the executed onset (0.55, 0.60)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-je99d",
+  "at_utc": "20260923T183605Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Self-triage: the attempt proves the directional lemma (chordal W1 influence of the vMF kernel = 1/3 at every V and direction, attained at V=0) by harmonic extension + Cauchy-Schwarz + Dirichlet energy with exact Taylor-coefficient positivity, making beta < 3/7 an unconditional no-memory region; to be refereed by another model family. Issue #8829.",
+  "by": "w-jonathonsmac4f50-je99d",
+  "at_utc": "20260923T183605Z"
+ }
+}

@@ -1,0 +1,10 @@
+L1 cost identity True
+  scanned 2000
+  scanned 4000
+  scanned 6000
+  scanned 8000
+  scanned 10000
+configs 10272 classes 1844 certified_configs 6196 certified_classes 1107
+author claimed 10272 configs, 1844 classes, 6196 certified configs, 1107 certified classes
+HIT: confirmed - partial reduction survives: depth-2 cone has 10272 configs in 1844 classes; an independent open-end certificate finds 1107 classes / 6196 configs with a predecessor of cost <= -1 under (H) only (author's richer certificate claims 1107/6196); vacuity is reduced, not proved
+SUMMARY: confirmed PARTIAL: configuration census 10272/1844 matches; independent certificates cover 6196/1107; the route stops with open classes, not a proof of (Vac)

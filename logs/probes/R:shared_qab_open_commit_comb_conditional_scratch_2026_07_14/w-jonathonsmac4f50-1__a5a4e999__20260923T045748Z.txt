@@ -1,0 +1,59 @@
+
+===============================================================================
+A - Conditional boundary and exact static table
+===============================================================================
+FAIL A note exists
+PASS A source is completed Cycle57 plus exactly eight rail slices
+PASS A static table has thirty-five canonical inputs
+PASS A declared conditional footprint has fifty-two additions
+PASS A q/a/b OPEN records are role-distinct
+PASS A q/a/b COMMIT records are role-distinct
+PASS A every proper-cubic raw input is single-valued
+PASS A table has no raw Cycle52 input collision
+PASS A table has no raw Cycle57-builder input collision
+
+===============================================================================
+B - Support, target, and commit geometry
+===============================================================================
+PASS B only designated q/a/b writes occupy official support
+PASS B c remains open
+PASS B auxiliary footprint avoids thirty-two rail slices
+PASS B q OPEN is adjacent to target
+PASS B q COMMIT is adjacent to target
+PASS B q target input contains its OPEN
+PASS B q target input contains its COMMIT
+PASS B a OPEN is adjacent to target
+PASS B a COMMIT is adjacent to target
+PASS B a target input contains its OPEN
+PASS B a target input contains its COMMIT
+PASS B b OPEN is adjacent to target
+PASS B b COMMIT is adjacent to target
+PASS B b target input contains its OPEN
+PASS B b target input contains its COMMIT
+
+===============================================================================
+C - Exhaustive asynchronous graph
+===============================================================================
+PASS C graph has exact reachable-state census :: 71425
+PASS C graph has exact directed-edge census :: 405708
+PASS C every schedule joins one complete terminal :: Counter({52: 1})
+PASS C graph has no parasite write :: []
+PASS C graph has no output conflict
+PASS C q VALUE never precedes OPEN or COMMIT
+PASS C a VALUE never precedes OPEN or COMMIT
+PASS C b VALUE never precedes OPEN or COMMIT
+
+===============================================================================
+D - Quiescence, recurrence, and the state-zero blocker
+===============================================================================
+PASS D conditional terminal is quiescent under its own table
+PASS D no reservation-rule recurrence through 108 more rail writes
+PASS D state-zero installation has the exact two known support leaks :: [((1, 0, 2), 'START'), ((1, 2, 0), 'START')]
+PASS D conditional table is therefore not a live state-zero closure
+
+===============================================================================
+TOTAL
+===============================================================================
+PASS=35 FAIL=1
+RESULT: FAIL
+BOUNDARY: q/a/b OPEN--COMMIT--VALUE is schedule-safe only after Cycle57 plus eight rail slices; a state-zero completion gate and c remain open

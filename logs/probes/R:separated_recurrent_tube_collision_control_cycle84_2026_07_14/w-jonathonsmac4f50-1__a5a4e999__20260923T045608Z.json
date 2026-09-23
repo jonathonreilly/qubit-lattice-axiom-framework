@@ -1,0 +1,32 @@
+{
+ "task": "R:separated_recurrent_tube_collision_control_cycle84_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "separated",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/separated_recurrent_tube_collision_control_cycle84_2026_07_14.py",
+ "seed": 39368,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5a4e999",
+ "started_utc": "20260923T045608Z",
+ "elapsed_s": 29.4,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1390e63ea7a715ba4e2892d0b477ad9610e0ffcf962eb9aad84bba23433c139e",
+ "stdout_tail": ":: (5408, 52, 52)\nPASS B (0, 0, 5)/h3 exposes exactly the two next seeds :: [((4, 1, 1), 'R_B11'), ((4, 1, 6), 'R_B11')]\nPASS B (0, 0, 5)/h3 has no conflict or hidden dead terminal :: (frozenset(), ())\nPASS B (0, 0, 5)/h6 supports are disjoint at strict-NN distance two\nPASS B (0, 0, 5)/h6 condition set is the disjoint union :: (338, 169, 169)\nPASS B (0, 0, 5)/h6 reachable graph is the exact Cartesian product :: (10609, 10609)\nPASS B (0, 0, 5)/h6 append-edge count factorizes :: (21218, 103, 103)\nPASS B (0, 0, 5)/h6 exposes exactly the two next seeds :: [((7, 1, 1), 'R_B11'), ((7, 1, 6), 'R_B11')]\nPASS B (0, 0, 5)/h6 has no conflict or hidden dead terminal :: (frozenset(), ())\nPASS B (0, 0, 5)/h9 supports are disjoint at strict-NN distance two\nPASS B (0, 0, 5)/h9 condition set is the disjoint union :: (532, 266, 266)\nPASS B (0, 0, 5)/h9 reachable graph is the exact Cartesian product :: (23716, 23716)\nPASS B (0, 0, 5)/h9 append-edge count factorizes :: (47432, 154, 154)\nPASS B (0, 0, 5)/h9 exposes exactly the two next seeds :: [((10, 1, 1), 'R_B11'), ((10, 1, 6), 'R_B11')]\nPASS B (0, 0, 5)/h9 has no conflict or hidden dead terminal :: (frozenset(), ())\nPASS C01 all 24 proper-cubic images preserve the product graph :: []\nFAIL D01 note exists and carries no authority\nFAIL D02 note identifies a positive separation control\nFAIL D03 note does not claim adjacent collision resolution\nFAIL D04 note denies an axiom consequence\n\nOFFSETS=2 HORIZONS=3 ROTATIONS=24\nSUMMARY: 39 PASS / 4 FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T045638Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

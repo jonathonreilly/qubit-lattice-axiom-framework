@@ -1,0 +1,32 @@
+{
+ "task": "R:weyl_pair_physical_equivalence_combined_intersection_probe_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "weyl",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/weyl_pair_physical_equivalence_combined_intersection_probe_2026_07_14.py",
+ "seed": 39585,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5a4e999",
+ "started_utc": "20260923T045945Z",
+ "elapsed_s": 8.8,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "524452dc41c84fc716456d905439bc811f1d92acb84e21f4246c9d1ea89bd688",
+ "stdout_tail": "rd sector receives a blank state :: tested=72\nPASS G exact A\u2020B=0 block equation forces blank-to-record block B=0 :: [{b11: 0, b12: 0, b21: 0, b22: 0}]\nPASS G record block A is invertible\n\n===============================================================================\nH - Note, source, premise-price, and combined-intersection contracts\n===============================================================================\nFAIL H companion note exists :: /Users/jonBridger/.probe-workers/probes-view/slot-1/docs/work_history/repo/review_feedback/WEYL_PAIR_PHYSICAL_EQUIVALENCE_AND_COMBINED_INTERSECTION_NOTE_2026-07-14.md\n\n===============================================================================\nI - N1-N8 discipline contract\n===============================================================================\nFAIL I companion note required\n\n===============================================================================\nJ - Independent recomputations\n===============================================================================\nPASS J direct character h1\nPASS J direct character h2\nPASS J exact separator arithmetic plus\nPASS J exact separator arithmetic minus\nPASS J Pauli triple orientation\nPASS J mirror Pauli triple orientation\nPASS J four-site torus phase closes\nPASS J three-site torus phase does not close\n\n===============================================================================\nSUMMARY\n===============================================================================\nPASS=107\nFAIL=2\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T045954Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

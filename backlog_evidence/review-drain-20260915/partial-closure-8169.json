@@ -1,0 +1,21 @@
+{
+  "pr": 8169,
+  "original_head": "7e268bd96edda8819250318a3cbdaa1b20e90f35",
+  "branch": "physics-loop/frame-attached-four-point-weights-born-and-support-obstruction-20260916",
+  "landing": "8bf464953779b8ada8415208e89a656411f9f525",
+  "source_verified_at": "8bf464953779b8ada8415208e89a656411f9f525",
+  "lease_deleted": false,
+  "recovery_branch_preserved": true,
+  "reason_report": "drain8169-landing-report.md",
+  "closed": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-23T03:33:55Z",
+    "headRefName": "physics-loop/frame-attached-four-point-weights-born-and-support-obstruction-20260916",
+    "headRefOid": "7e268bd96edda8819250318a3cbdaa1b20e90f35",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8169,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8169"
+  }
+}

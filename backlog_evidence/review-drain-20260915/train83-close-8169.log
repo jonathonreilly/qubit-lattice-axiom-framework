@@ -1,0 +1,5 @@
+From https://github.com/jonathonreilly/cl3-lattice-framework
+ * branch                  main       -> FETCH_HEAD
+ * branch                  ai/execution -> FETCH_HEAD
+✓ Closed pull request jonathonreilly/qubit-lattice-axiom-framework#8169 ([physics-loop] frame-attached four-point weights: Born is not a four-point law; sequential supports 2 vs 4)
+{"pr": 8169, "state": "CLOSED", "recovery_branch_preserved": true}

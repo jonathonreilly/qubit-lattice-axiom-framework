@@ -1,0 +1,21 @@
+{
+  "pr": 8166,
+  "original_head": "02bfa4eb99fce8329619a476775299567f735d4b",
+  "branch": "physics-loop/toe-compact-response-20260916",
+  "landing": "8bf464953779b8ada8415208e89a656411f9f525",
+  "source_verified_at": "8bf464953779b8ada8415208e89a656411f9f525",
+  "lease_deleted": false,
+  "recovery_branch_preserved": true,
+  "reason_report": "drain8166-landing-report.md",
+  "closed": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-23T03:33:48Z",
+    "headRefName": "physics-loop/toe-compact-response-20260916",
+    "headRefOid": "02bfa4eb99fce8329619a476775299567f735d4b",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8166,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8166"
+  }
+}

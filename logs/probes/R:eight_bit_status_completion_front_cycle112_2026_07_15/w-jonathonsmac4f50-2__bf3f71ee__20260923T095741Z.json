@@ -1,0 +1,32 @@
+{
+ "task": "R:eight_bit_status_completion_front_cycle112_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "eight",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/eight_bit_status_completion_front_cycle112_2026_07_15.py",
+ "seed": 57461,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "bf3f71ee",
+ "started_utc": "20260923T095741Z",
+ "elapsed_s": 57.4,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c8bdf159b44ea464edc3054c642212ebe9768268e86c7d9c7ffd3f400571cba2",
+ "stdout_tail": "flips plus wrong VALID/READY stop before the writer :: []\nPASS D02 corrupt graph census is executable and pinned :: [(1080, 3522, (30,)), (920, 2938, (29,)), (760, 2354, (28,)), (520, 1438, (27,)), (120, 238, (20,)), (200, 490, (20,)), (80, 152, (18,)), (60, 109, (17,)), (40, 66, (16,)), (20, 23, (15,))]\nPASS D03 all ten corrupt terminals retain 96 exact rail appends :: []\nPASS D04 H0 control retains exact STATUS->AUX->A_0_0 reject projection :: []\nPASS D05 exhausted H0 control has two exact partial terminals and no completion :: states=44 edges=97 sizes=(6, 7) bad=()\n\n===============================================================================\nE - Proper-cubic covariance and bounded scope\n===============================================================================\nPASS E01 all 193,152 proper-cubic raw images preserve output :: []\nPASS E02 correct/corrupt/H0 terminal corpora expose only rotated next rail :: []\nFAIL E03 note names selected output/payload writer\nFAIL E04 note names STREAM_COMPLETION_TO_REUSABLE_CONE seam\nFAIL E05 note states Cycle 114 contributes zero rows\nFAIL E06 note carries the remote N1-N8 discipline\nFAIL E07 note makes no generic addressability claim\nFAIL E08 note makes no axiom addition\nPASS E09 Cycle 112 writes only runner and review note\n\nWRITER_CANONICAL=13 WRITER_RAW=312 COMPLETION_CANONICAL=4 COMPLETION_RAW=96\nGROWN=69 UNION_RAW=8048 LOCAL_STATES=73656 LOCAL_EDGES=430754\nPRODUCT_STATES=7144632 PRODUCT_EDGES=48854114\nPASS=25 FAIL=7\nRESULT=FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T095838Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

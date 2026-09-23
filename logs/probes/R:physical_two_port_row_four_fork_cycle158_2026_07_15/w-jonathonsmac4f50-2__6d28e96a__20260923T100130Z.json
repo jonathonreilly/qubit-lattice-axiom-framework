@@ -1,0 +1,32 @@
+{
+ "task": "R:physical_two_port_row_four_fork_cycle158_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_two_port_row_four_fork_cycle158_2026_07_15.py",
+ "seed": 57690,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6d28e96a",
+ "started_utc": "20260923T100130Z",
+ "elapsed_s": 679.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ef86706b026a91f02ad6e203ea9fd1b3a3ce5c6eaf104ba6a3fe1be9d3db119f",
+ "stdout_tail": "s by four symplectic positions :: Counter({4: 128})\nPASS every canonical output is the exact indexed row bit :: \nPASS 3,072 two-port rows are disjoint from the Cycle-155 law :: 3072\nPASS the enlarged 89,516-row law is deterministic :: 89516\nPASS deleting any direct two-port parent suppresses its intended bit :: (512, ())\n\nTWO-PORT FOUR-FORK\nPASS all 768 row-orientation four-fork graphs are exact :: ({97}, [])\nPASS one row and no supplied bits drive eight fresh endpoints :: []\nPASS deleting the row source suppresses all derived bits :: []\n\nPREDECESSOR COEXISTENCE\nPASS all 768 one-port row fanout graphs survive the two-port rows :: []\nPASS all 48 supplied-bit fork graphs survive the two-port rows :: []\nPASS all 1,024 Cycle-156 row-pair schedule proofs survive :: (Counter({5006: 1024}), [])\nPASS all 54,000 Cycle-152 router graphs survive the two-port rows :: []\nPASS the enlarged law preserves all 86,640 prior unified histories :: []\nPASS Cycle-144 terminal retains exactly its two priced fronts :: {(-9, -1, 0): frozenset({'B1'}), (-11, 1, 2): frozenset({'R_B21'})}\n\nSCOPE\nFAIL note contains: physical two-port row four-fork :: \nFAIL note contains: four recorded parents :: \nFAIL note contains: 89,516 :: \nFAIL note contains: no no-go is shipped :: \nFAIL note contains: compiler content :: \nFAIL note contains: does not derive occurrence or equal weights :: \nFAIL note contains: no axiom addition follows :: \nFAIL note contains: n8 \u2014 cross-cycle echo :: \n\nTOTAL\nPASS 14 FAIL 9\nRESULT FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T101249Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

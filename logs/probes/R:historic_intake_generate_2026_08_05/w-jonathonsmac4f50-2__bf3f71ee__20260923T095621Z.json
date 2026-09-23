@@ -1,0 +1,32 @@
+{
+ "task": "R:historic_intake_generate_2026_08_05",
+ "type": "runner-reexecution",
+ "lane": "historic",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/historic_intake_generate_2026_08_05.py",
+ "seed": 57381,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "bf3f71ee",
+ "started_utc": "20260923T095621Z",
+ "elapsed_s": 0.0,
+ "returncode": 2,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bc3553dd69c27684f4467ce13d701aa56fa3d1de5c11b1666da4ccedb13c0a0d",
+ "stdout_tail": "\n[stderr]\nusage: historic_intake_generate_2026_08_05.py [-h] [--triage TRIAGE]\n                                              [--census CENSUS]\n                                              {check,build}\nhistoric_intake_generate_2026_08_05.py: error: the following arguments are required: mode\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T095621Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 2 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,23 @@
+PASS: M1 symbolic modulus is multiplicative across blocks
+PASS: M2 exponential and logarithmic bridges are exact on positive domains
+PASS: M3 a power-family instance has G(u)=s*u
+PASS: T1a multiplicative-to-additive direction on strictly positive values
+PASS: T1b additive-to-multiplicative direction through exp
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/theta_post_erasure_odd_side_log_equivalence_and_additivity_incompatibility_2026_07_18.py", line 267, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/theta_post_erasure_odd_side_log_equivalence_and_additivity_incompatibility_2026_07_18.py", line 91, in main
+    checks.needle(
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/theta_post_erasure_odd_side_log_equivalence_and_additivity_incompatibility_2026_07_18.py", line 36, in needle
+    haystack = normalized_whitespace(path.read_text(encoding="utf-8"))
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/THETA_POST_ERASURE_ODD_SIDE_LOG_EQUIVALENCE_AND_ADDITIVITY_INCOMPATIBILITY_BOUNDED_THEOREM_NOTE_2026-07-18.md'

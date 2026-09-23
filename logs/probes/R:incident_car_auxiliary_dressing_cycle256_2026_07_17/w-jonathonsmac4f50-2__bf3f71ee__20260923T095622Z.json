@@ -1,0 +1,32 @@
+{
+ "task": "R:incident_car_auxiliary_dressing_cycle256_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "incident",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/incident_car_auxiliary_dressing_cycle256_2026_07_17.py",
+ "seed": 57382,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "bf3f71ee",
+ "started_utc": "20260923T095622Z",
+ "elapsed_s": 7.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4608a88ff6aa4cfd4eaa587ad13d055987e2e70abb346d77c3222fc8fcc2efe0",
+ "stdout_tail": "2), 'unquotiented_family_exponent': 36}, {'L': 6, 'columns': (128, 162), 'affine_dimensions': (24, 12), 'unquotiented_family_exponent': 36}]\nPASS the best retained family has an explicit local symplectic witness rather than a solver-only negative :: {'best_total_failures': 972, 'best_incident_failures': 972, 'best_disjoint_failures': 0, 'first_failure': {'edges': (0, 1), 'kinds': ('internal_triangle', 'internal_triangle'), 'shared_endpoints': 1, 'required_anticommutator_bit': 1, 'actual_anticommutator_bit': 0}}\nPASS deleting one independent local-code commutator equation enlarges the raw dressing grammar by one binary direction :: {'maximum_rank_loss': 1, 'silent_constraint_deletion': False}\nPASS the fixed Cycle-230 parameters and predecessor fixtures are retained but gate synthesis is withheld without a CAR family :: {'beta': -0.3, 'g': 0.37, 'rest_mass_predecessor': 0.4534056541748851, 'principal_sea_rank_predecessor': 73, 'coin_A_B_FSWAP_contact_synthesis': 'not reached', 'three_topological_joins': 'remain separate', 'mass_seam_intertwining': 'not claimed'}\nPASS the bounded search schedule is not physical time and the grammar negative is not a universal no-go :: {'compiler_layers_are_not_physical_time': True, 'radius_1_endpoint_star': 'exhausted', 'radius_2': 'not exhausted; affine seed dimensions are a next-route diagnostic only', 'Clifford_conjugations_outside_Pauli_endpoint_star': 'not exhausted', 'universal_no_go': False, 'axiom_pressure': False}\nSUMMARY PASS 9 FAIL 1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T095629Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

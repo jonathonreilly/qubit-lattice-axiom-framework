@@ -1,0 +1,44 @@
+{
+ "task": "R:theta_g3_phase_insertion_current_surface_no_go_2026_07_04",
+ "type": "runner-reexecution",
+ "lane": "theta",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/theta_g3_phase_insertion_current_surface_no_go_2026_07_04.py",
+ "seed": 57535,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6d28e96a",
+ "started_utc": "20260923T095855Z",
+ "elapsed_s": 0.2,
+ "returncode": 1,
+ "hit": false,
+ "summary": {
+  "expected_ok": false,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "22d671948f51793688b95efc63c873ad5e6cce98a4325c4cfaa596dc35323c4e",
+ "stdout_tail": "theta G3 phase-insertion current-surface no-go verifier\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/theta_g3_phase_insertion_current_surface_no_go_2026_07_04.py\", line 407, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/theta_g3_phase_insertion_current_surface_no_go_2026_07_04.py\", line 108, in main\n    texts = {path: read(path) for path in paths}\n                   ^^^^^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/theta_g3_phase_insertion_current_surface_no_go_2026_07_04.py\", line 63, in read\n    return path.read_text(encoding=\"utf-8\")\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1027, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1013, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/THETA_G3_PHASE_INSERTION_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md'\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T095855Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (False)",
+   "FAIL: parse field 'total' found nothing in the stdout: the run may not have reached its summary",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: the pinned cache ends with the verdict 'TOTAL: PASS=180 FAIL=0' and this run printed none",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/theta_g3_phase_insertion_current_surface_no_go_2026_07_04.txt against the .txt beside this log"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "automatic: the runner reads /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/THETA_G3_PHASE_INSERTION_CURRENT_SURFACE_NO_GO_NOTE_2026-07-04.md, which is not in the tree at that path",
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T095855Z"
+ }
+}

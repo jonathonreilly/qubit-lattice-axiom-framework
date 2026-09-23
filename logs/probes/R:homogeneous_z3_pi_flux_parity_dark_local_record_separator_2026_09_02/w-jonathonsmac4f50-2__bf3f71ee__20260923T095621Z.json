@@ -1,0 +1,36 @@
+{
+ "task": "R:homogeneous_z3_pi_flux_parity_dark_local_record_separator_2026_09_02",
+ "type": "runner-reexecution",
+ "lane": "homogeneous",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/homogeneous_z3_pi_flux_parity_dark_local_record_separator_2026_09_02.py",
+ "seed": 57381,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "bf3f71ee",
+ "started_utc": "20260923T095621Z",
+ "elapsed_s": 0.6,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=8 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4bbf7471275b06747fbbf321337c37aaeaf7248681ef17c1f2f057168d554da0",
+ "stdout_tail": "True; unequal_weights=True\nPASS the simultaneous H1 propagator is dark at parity distance two or three for all time :: 8 sectors: Q_preserves=True, H1_flips_one=True; powers 0..9=True\nPASS the uniform walk reaches the body diagonal with a strict fixed-time Bessel bound :: Z3 counts=(6, 180, 5040, 143640, 4199580); J1 endpoints derived=7/16,169/384; at t=1/2, (7/16)^6 < p0 < (1/2)^6\nPASS the supplied common local occupation-Record protocol keeps every exterior bond active :: common=True; PVM_idempotent=True; exterior=True; [H,n*]!=0 prewrite=True; gated permanence=True\nPASS magnetic translations are exact; a finite box checks the note's global cubic gauge proof :: bare symmetries=(False,False,True); magnetic=True; finite_rotation_witnesses=24\nPASS ordered direction pulses escape the static-simultaneous darkness theorem :: ordered=-1; swapped=1; simultaneous=0; nonscalar onsite n6=-32\nPASS N1-N8 headings and zero-closure claim custody are present for postexecution audit :: homogeneity trade only; I-4 and Record-process ownership remain open\nper_element: link signs, face flux, and shift/parity relations certified\nper_site: one local target occupation effect and exterior bonds certified\nper_mode: one-particle signed adjacency checked; strict-free lift is explicitly supplied\nper_block: common supplied source/cadence/PVM/writer/gate declarations scope-checked\nlattice_wide: infinite-Z3 parity theorem exact; finite rotation witness supports the global note proof\nTOTAL: PASS=8 FAIL=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T095622Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=8 FAIL=1' vs cache 'TOTAL: PASS=9 FAIL=0'"
+  ]
+ }
+}

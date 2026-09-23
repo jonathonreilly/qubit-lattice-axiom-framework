@@ -1,0 +1,32 @@
+{
+ "task": "R:physical_two_row_commutation_bind_cycle156_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_two_row_commutation_bind_cycle156_2026_07_15.py",
+ "seed": 58369,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6d28e96a",
+ "started_utc": "20260923T101249Z",
+ "elapsed_s": 140.8,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "01f9b5512fe1bc41a8f8e06499b5ed0dde24cea4a9018d0ad056ea4d760a2113",
+ "stdout_tail": "upplied :: (4540, 409, 409)\nPASS one complete causal schedule reaches only the physical commutation bit :: (410, 1872, 8, 4540, 409)\n\nEXHAUSTIVE VALUES AND SCHEDULES\nPASS all 1,024 row pairs pass the local all-schedule proof :: (Counter({5006: 1024}), [])\nPASS the final record has the exact symplectic truth distribution :: Counter({'H0': 544, 'H1': 480})\nPASS 5,126,144 realizable local histories contain no parasitic write :: 5126144\nPASS the composed proof survives all 24 proper-cubic orientations :: (Counter({5006: 24}), [])\n\nCAUSAL CONTROLS\nPASS deleting the left row suppresses exactly its four first writes :: {(0, 1, -40): frozenset({'H0'}), (0, -1, -40): frozenset({'H0'}), (1, 0, -40): frozenset({'H1'}), (-1, 0, -40): frozenset({'H1'})}\nPASS deleting the right row suppresses exactly its four first writes :: {(-1, 0, 40): frozenset({'H0'}), (0, -1, 40): frozenset({'H1'}), (0, 1, 40): frozenset({'H1'}), (1, 0, 40): frozenset({'H0'})}\nPASS the parity record depends on four products and every product on two cables :: \n\nSCOPE\nFAIL note contains: two row records to one physical commutation record :: \nFAIL note contains: no transition row is added :: \nFAIL note contains: 5,126,144 :: \nFAIL note contains: supplied guide/frame harness :: \nFAIL note contains: does not derive occurrence or equal weights :: \nFAIL note contains: no axiom addition follows :: \nFAIL note contains: n1 \u2014 alternative routes :: \nFAIL note contains: n8 \u2014 cross-cycle echo :: \n\nTOTAL\nPASS 14 FAIL 9\nRESULT FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T101510Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

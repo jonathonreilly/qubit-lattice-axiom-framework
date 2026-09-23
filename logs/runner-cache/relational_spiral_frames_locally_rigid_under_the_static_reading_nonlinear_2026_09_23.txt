@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/relational_spiral_frames_locally_rigid_under_the_static_reading_nonlinear_2026_09_23.py
+runner_sha256: 26a0bda599d572259a945f67de5428932f4ef78b29e512486b19b9fd9587a90f
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.88
+status: ok
+----- stdout -----
+A. the full static system, linearised at the spiral
+[PASS] nullity exactly 5 on 4- and 5-boxes: phase, two tilts, and the two corner-axis turns :: L=4: 144 unknowns, 208 equations, nullity 5 = rank of 5 exact kernel vectors 5; L=5: 405 unknowns, 675 equations, nullity 5 = rank of 5 exact kernel vectors 5
+B. exact nonlinear families through the spiral
+[PASS] rotations of the whole record and turns of either corner axis are exact nonlinear solutions :: rotations by (3/5, 4/5) about x, y and z; corner axes turned by (5/13, 12/13), each moving exactly the corner's three outer neighbours; exact on the 4- and 5-boxes
+C. local rigidity
+[PASS] the families' tangent vectors at the spiral are the five kernel vectors, so the family fills the kernel :: a corner-axis turn moves the axis by b x z and each outer neighbour by d s_i z (first-order Rodrigues); rotations move values and axes by w x b and w x z; with the linearisation of rank n - 5 the implicit function theorem makes the nearby solution set a 5-dimensional manifold, which the family fills
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

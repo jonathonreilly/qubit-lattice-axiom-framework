@@ -1,0 +1,375 @@
+{
+  "delta": 0.7,
+  "kappa": 0.4,
+  "full_Hilbert_dimension": 9,
+  "P_dimension": 5,
+  "residual_norm_convention": "Euclidean induced norm of vectorized matrices (Hilbert--Schmidt), a finite control only; the proof uses dimension-free trace-norm estimates.",
+  "initial_state_0": "Pure N=0 superposition of the first two P states with relative phase i.",
+  "initial_state_1": "Pure P superposition across N=0,2,4 with amplitudes proportional to (1,i,1/2,-i/3,1/4).",
+  "residual_controls": [
+    {
+      "epsilon": 0.125,
+      "off_discrepancy_HS_norm": 20.429448450456313,
+      "epsilon_times_off_discrepancy": 2.553681056307039,
+      "diagonal_discrepancy_HS_norm": 3.387354983702948,
+      "diagonal_discrepancy_over_epsilon": 27.098839869623585,
+      "corrector_HS_norm": 0.0071076877663181276,
+      "corrector_over_epsilon3": 3.6391361363548813,
+      "corrected_residual_HS_norm": 3.9857559627169223,
+      "corrected_residual_over_epsilon": 31.88604770173538,
+      "rest_generator_norm_times_epsilon2": 8.618986942124979,
+      "target_generator_norm_times_epsilon2": 5.725480922792249,
+      "residual_identity_error": 2.320997546279753e-14,
+      "corrector_hermiticity_error": 3.6758835571425706e-17,
+      "effective_jump_error": 0.4402202229180504,
+      "excited_jump_leakage_over_epsilon2": 5.444902389366414,
+      "corrected_embedding_minimum_eigenvalue": -0.00018807424220538998
+    },
+    {
+      "epsilon": 0.0625,
+      "off_discrepancy_HS_norm": 44.604265919820186,
+      "epsilon_times_off_discrepancy": 2.7877666199887616,
+      "diagonal_discrepancy_HS_norm": 0.9855148554320489,
+      "diagonal_discrepancy_over_epsilon": 15.768237686912782,
+      "corrector_HS_norm": 0.0009715997576659137,
+      "corrector_over_epsilon3": 3.9796726073995825,
+      "corrected_residual_HS_norm": 1.7998823726085602,
+      "corrected_residual_over_epsilon": 28.798117961736963,
+      "rest_generator_norm_times_epsilon2": 8.949907905924213,
+      "target_generator_norm_times_epsilon2": 5.928709190073551,
+      "residual_identity_error": 1.1176481242959849e-13,
+      "corrector_hermiticity_error": 1.568052697275199e-17,
+      "effective_jump_error": 0.12788450869093673,
+      "excited_jump_leakage_over_epsilon2": 6.203331609965536,
+      "corrected_embedding_minimum_eigenvalue": -7.272051502797501e-06
+    },
+    {
+      "epsilon": 0.03125,
+      "off_discrepancy_HS_norm": 91.54155326168078,
+      "epsilon_times_off_discrepancy": 2.8606735394275242,
+      "diagonal_discrepancy_HS_norm": 0.25713125649385804,
+      "diagonal_discrepancy_over_epsilon": 8.228200207803457,
+      "corrector_HS_norm": 0.00012469229859907418,
+      "corrector_over_epsilon3": 4.085917240494463,
+      "corrected_residual_HS_norm": 0.876873620143694,
+      "corrected_residual_over_epsilon": 28.059955844598207,
+      "rest_generator_norm_times_epsilon2": 9.046442123717092,
+      "target_generator_norm_times_epsilon2": 5.980030997135671,
+      "residual_identity_error": 4.553825848918071e-13,
+      "corrector_hermiticity_error": 6.863653402491994e-18,
+      "effective_jump_error": 0.033363762091773705,
+      "excited_jump_leakage_over_epsilon2": 6.436525944749353,
+      "corrected_embedding_minimum_eigenvalue": -2.4146963807987326e-07
+    },
+    {
+      "epsilon": 0.015625,
+      "off_discrepancy_HS_norm": 184.32482574710588,
+      "epsilon_times_off_discrepancy": 2.8800754022985293,
+      "diagonal_discrepancy_HS_norm": 0.0649964114991241,
+      "diagonal_discrepancy_over_epsilon": 4.159770335943942,
+      "corrector_HS_norm": 1.5694429607651115e-05,
+      "corrector_over_epsilon3": 4.114200555068094,
+      "corrected_residual_HS_norm": 0.4353675009670554,
+      "corrected_residual_over_epsilon": 27.863520061891546,
+      "rest_generator_norm_times_epsilon2": 9.071625614852215,
+      "target_generator_norm_times_epsilon2": 5.992892046572217,
+      "residual_identity_error": 1.8670442796791335e-12,
+      "corrector_hermiticity_error": 2.2336512315821238e-18,
+      "effective_jump_error": 0.008433573886260856,
+      "excited_jump_leakage_over_epsilon2": 6.498286369191753,
+      "corrected_embedding_minimum_eigenvalue": -7.665616814591998e-09
+    }
+  ],
+  "density_controls": [
+    {
+      "epsilon": 0.125,
+      "time": 0.0,
+      "initial_state": 0,
+      "trace_distance_norm": 0.0,
+      "trace_error_over_epsilon": 0.0,
+      "exact_density_trace_error": 2.220446049250313e-16,
+      "exact_density_minimum_eigenvalue": 0.0
+    },
+    {
+      "epsilon": 0.125,
+      "time": 0.0,
+      "initial_state": 1,
+      "trace_distance_norm": 0.0,
+      "trace_error_over_epsilon": 0.0,
+      "exact_density_trace_error": 2.220446049250313e-16,
+      "exact_density_minimum_eigenvalue": -1.4636113025052578e-16
+    },
+    {
+      "epsilon": 0.125,
+      "time": 0.03,
+      "initial_state": 0,
+      "trace_distance_norm": 0.3708921020068409,
+      "trace_error_over_epsilon": 2.9671368160547273,
+      "exact_density_trace_error": 4.774036474840326e-15,
+      "exact_density_minimum_eigenvalue": -3.3828795443603264e-15
+    },
+    {
+      "epsilon": 0.125,
+      "time": 0.03,
+      "initial_state": 1,
+      "trace_distance_norm": 0.39238818265625247,
+      "trace_error_over_epsilon": 3.1391054612500198,
+      "exact_density_trace_error": 3.2214827979366506e-15,
+      "exact_density_minimum_eigenvalue": -2.770168842836728e-15
+    },
+    {
+      "epsilon": 0.125,
+      "time": 0.12,
+      "initial_state": 0,
+      "trace_distance_norm": 0.33230239149073554,
+      "trace_error_over_epsilon": 2.6584191319258843,
+      "exact_density_trace_error": 1.3593677512867808e-14,
+      "exact_density_minimum_eigenvalue": -7.753408795195968e-15
+    },
+    {
+      "epsilon": 0.125,
+      "time": 0.12,
+      "initial_state": 1,
+      "trace_distance_norm": 0.3318042380520282,
+      "trace_error_over_epsilon": 2.6544339044162255,
+      "exact_density_trace_error": 8.539471164544324e-15,
+      "exact_density_minimum_eigenvalue": -6.4411740476260025e-15
+    },
+    {
+      "epsilon": 0.125,
+      "time": 0.35,
+      "initial_state": 0,
+      "trace_distance_norm": 0.3291783362090863,
+      "trace_error_over_epsilon": 2.6334266896726906,
+      "exact_density_trace_error": 5.808070026837507e-14,
+      "exact_density_minimum_eigenvalue": -6.504956680463862e-15
+    },
+    {
+      "epsilon": 0.125,
+      "time": 0.35,
+      "initial_state": 1,
+      "trace_distance_norm": 0.3417446992790989,
+      "trace_error_over_epsilon": 2.733957594232791,
+      "exact_density_trace_error": 3.4876338819378256e-14,
+      "exact_density_minimum_eigenvalue": -5.369891658608307e-15
+    },
+    {
+      "epsilon": 0.0625,
+      "time": 0.0,
+      "initial_state": 0,
+      "trace_distance_norm": 0.0,
+      "trace_error_over_epsilon": 0.0,
+      "exact_density_trace_error": 2.220446049250313e-16,
+      "exact_density_minimum_eigenvalue": 0.0
+    },
+    {
+      "epsilon": 0.0625,
+      "time": 0.0,
+      "initial_state": 1,
+      "trace_distance_norm": 0.0,
+      "trace_error_over_epsilon": 0.0,
+      "exact_density_trace_error": 2.220446049250313e-16,
+      "exact_density_minimum_eigenvalue": -1.4636113025052578e-16
+    },
+    {
+      "epsilon": 0.0625,
+      "time": 0.03,
+      "initial_state": 0,
+      "trace_distance_norm": 0.15135912349604752,
+      "trace_error_over_epsilon": 2.4217459759367603,
+      "exact_density_trace_error": 6.018698912904441e-15,
+      "exact_density_minimum_eigenvalue": -1.7691210130833736e-16
+    },
+    {
+      "epsilon": 0.0625,
+      "time": 0.03,
+      "initial_state": 1,
+      "trace_distance_norm": 0.14871571108619527,
+      "trace_error_over_epsilon": 2.3794513773791244,
+      "exact_density_trace_error": 1.2295261634885467e-14,
+      "exact_density_minimum_eigenvalue": -1.4951926366556082e-16
+    },
+    {
+      "epsilon": 0.0625,
+      "time": 0.12,
+      "initial_state": 0,
+      "trace_distance_norm": 0.14802429887021162,
+      "trace_error_over_epsilon": 2.368388781923386,
+      "exact_density_trace_error": 7.497919641060004e-15,
+      "exact_density_minimum_eigenvalue": -1.2164005463841087e-16
+    },
+    {
+      "epsilon": 0.0625,
+      "time": 0.12,
+      "initial_state": 1,
+      "trace_distance_norm": 0.14637490821069907,
+      "trace_error_over_epsilon": 2.341998531371185,
+      "exact_density_trace_error": 3.498570807997148e-14,
+      "exact_density_minimum_eigenvalue": -9.625470142130711e-17
+    },
+    {
+      "epsilon": 0.0625,
+      "time": 0.35,
+      "initial_state": 0,
+      "trace_distance_norm": 0.11917257124178848,
+      "trace_error_over_epsilon": 1.9067611398686157,
+      "exact_density_trace_error": 1.478186280936551e-13,
+      "exact_density_minimum_eigenvalue": -5.335836945779873e-14
+    },
+    {
+      "epsilon": 0.0625,
+      "time": 0.35,
+      "initial_state": 1,
+      "trace_distance_norm": 0.12094515572259595,
+      "trace_error_over_epsilon": 1.9351224915615353,
+      "exact_density_trace_error": 6.50337705375863e-14,
+      "exact_density_minimum_eigenvalue": -4.405550666519123e-14
+    },
+    {
+      "epsilon": 0.03125,
+      "time": 0.0,
+      "initial_state": 0,
+      "trace_distance_norm": 0.0,
+      "trace_error_over_epsilon": 0.0,
+      "exact_density_trace_error": 2.220446049250313e-16,
+      "exact_density_minimum_eigenvalue": 0.0
+    },
+    {
+      "epsilon": 0.03125,
+      "time": 0.0,
+      "initial_state": 1,
+      "trace_distance_norm": 0.0,
+      "trace_error_over_epsilon": 0.0,
+      "exact_density_trace_error": 2.220446049250313e-16,
+      "exact_density_minimum_eigenvalue": -1.4636113025052578e-16
+    },
+    {
+      "epsilon": 0.03125,
+      "time": 0.03,
+      "initial_state": 0,
+      "trace_distance_norm": 0.11084852961294679,
+      "trace_error_over_epsilon": 3.5471529476142973,
+      "exact_density_trace_error": 5.164197286214516e-13,
+      "exact_density_minimum_eigenvalue": 2.9935575873390905e-19
+    },
+    {
+      "epsilon": 0.03125,
+      "time": 0.03,
+      "initial_state": 1,
+      "trace_distance_norm": 0.10610156277661222,
+      "trace_error_over_epsilon": 3.395250008851591,
+      "exact_density_trace_error": 4.89264722489118e-13,
+      "exact_density_minimum_eigenvalue": 7.915901965121829e-19
+    },
+    {
+      "epsilon": 0.03125,
+      "time": 0.12,
+      "initial_state": 0,
+      "trace_distance_norm": 0.06272965965060918,
+      "trace_error_over_epsilon": 2.007349108819494,
+      "exact_density_trace_error": 1.2205519614327959e-12,
+      "exact_density_minimum_eigenvalue": -1.2334060203340184e-19
+    },
+    {
+      "epsilon": 0.03125,
+      "time": 0.12,
+      "initial_state": 1,
+      "trace_distance_norm": 0.0633137976844193,
+      "trace_error_over_epsilon": 2.0260415259014177,
+      "exact_density_trace_error": 1.2565681683848241e-12,
+      "exact_density_minimum_eigenvalue": 3.0634609963243616e-18
+    },
+    {
+      "epsilon": 0.03125,
+      "time": 0.35,
+      "initial_state": 0,
+      "trace_distance_norm": 0.06136504986705105,
+      "trace_error_over_epsilon": 1.9636815957456335,
+      "exact_density_trace_error": 8.846301727379316e-12,
+      "exact_density_minimum_eigenvalue": -5.278078862461182e-17
+    },
+    {
+      "epsilon": 0.03125,
+      "time": 0.35,
+      "initial_state": 1,
+      "trace_distance_norm": 0.06055969237595583,
+      "trace_error_over_epsilon": 1.9379101560305865,
+      "exact_density_trace_error": 7.929217739948555e-12,
+      "exact_density_minimum_eigenvalue": -7.87852923988829e-17
+    },
+    {
+      "epsilon": 0.015625,
+      "time": 0.0,
+      "initial_state": 0,
+      "trace_distance_norm": 0.0,
+      "trace_error_over_epsilon": 0.0,
+      "exact_density_trace_error": 2.220446049250313e-16,
+      "exact_density_minimum_eigenvalue": 0.0
+    },
+    {
+      "epsilon": 0.015625,
+      "time": 0.0,
+      "initial_state": 1,
+      "trace_distance_norm": 0.0,
+      "trace_error_over_epsilon": 0.0,
+      "exact_density_trace_error": 2.220446049250313e-16,
+      "exact_density_minimum_eigenvalue": -1.4636113025052578e-16
+    },
+    {
+      "epsilon": 0.015625,
+      "time": 0.03,
+      "initial_state": 0,
+      "trace_distance_norm": 0.05089411809006353,
+      "trace_error_over_epsilon": 3.257223557764066,
+      "exact_density_trace_error": 7.572006659764217e-12,
+      "exact_density_minimum_eigenvalue": -2.0793502716249017e-12
+    },
+    {
+      "epsilon": 0.015625,
+      "time": 0.03,
+      "initial_state": 1,
+      "trace_distance_norm": 0.049107984658153574,
+      "trace_error_over_epsilon": 3.1429110181218287,
+      "exact_density_trace_error": 8.433246987773483e-12,
+      "exact_density_minimum_eigenvalue": -1.7158702770418558e-12
+    },
+    {
+      "epsilon": 0.015625,
+      "time": 0.12,
+      "initial_state": 0,
+      "trace_distance_norm": 0.03774359911682649,
+      "trace_error_over_epsilon": 2.4155903434768953,
+      "exact_density_trace_error": 2.7366348144105923e-11,
+      "exact_density_minimum_eigenvalue": -5.016156647306526e-12
+    },
+    {
+      "epsilon": 0.015625,
+      "time": 0.12,
+      "initial_state": 1,
+      "trace_distance_norm": 0.03676489936322135,
+      "trace_error_over_epsilon": 2.3529535592461666,
+      "exact_density_trace_error": 3.1376320344930193e-11,
+      "exact_density_minimum_eigenvalue": -4.139263452906068e-12
+    },
+    {
+      "epsilon": 0.015625,
+      "time": 0.35,
+      "initial_state": 0,
+      "trace_distance_norm": 0.022415773881003815,
+      "trace_error_over_epsilon": 1.4346095283842442,
+      "exact_density_trace_error": 1.5527306234973436e-10,
+      "exact_density_minimum_eigenvalue": -5.590795495841785e-20
+    },
+    {
+      "epsilon": 0.015625,
+      "time": 0.35,
+      "initial_state": 1,
+      "trace_distance_norm": 0.022344710527689646,
+      "trace_error_over_epsilon": 1.4300614737721373,
+      "exact_density_trace_error": 1.5771340557371457e-10,
+      "exact_density_minimum_eigenvalue": -2.322612014635678e-17
+    }
+  ],
+  "maximum_trace_error_over_epsilon": 3.5471529476142973,
+  "proof_limit": "These floating finite-block comparisons corroborate the analytic estimate; no interval certificate or spin/volume-uniform numerical assertion."
+}

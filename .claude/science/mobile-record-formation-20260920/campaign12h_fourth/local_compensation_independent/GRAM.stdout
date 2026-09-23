@@ -1,0 +1,155 @@
+{
+  "cube_formation_Grams": [
+    {
+      "first_charge": 1,
+      "first_norm_squared": 2,
+      "pulled_back_total_second_loss_over_kappa": [
+        {
+          "shift": [
+            0,
+            -1,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "1"
+        },
+        {
+          "shift": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "8"
+        },
+        {
+          "shift": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "expectation_on_delta0": 8,
+      "expectation_on_equal_plus_pair": 9,
+      "expectation_on_equal_minus_pair": 7
+    },
+    {
+      "first_charge": null,
+      "first_norm_squared": 4,
+      "pulled_back_total_second_loss_over_kappa": [
+        {
+          "shift": [
+            0,
+            -1,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "1"
+        },
+        {
+          "shift": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "8"
+        },
+        {
+          "shift": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "expectation_on_delta0": 8,
+      "expectation_on_equal_plus_pair": 9,
+      "expectation_on_equal_minus_pair": 7
+    }
+  ],
+  "finite_spin_local_weight_checks": [
+    {
+      "S": 1,
+      "all_local_values_checked": 6
+    },
+    {
+      "S": 2,
+      "all_local_values_checked": 10
+    },
+    {
+      "S": 3,
+      "all_local_values_checked": 14
+    },
+    {
+      "S": 4,
+      "all_local_values_checked": 18
+    },
+    {
+      "S": 5,
+      "all_local_values_checked": 22
+    },
+    {
+      "S": 6,
+      "all_local_values_checked": 26
+    },
+    {
+      "S": 7,
+      "all_local_values_checked": 30
+    }
+  ],
+  "interpretation": "Immediate post-first-event hazard is field dependent; this does not determine its later survival law. The explicit two-mark isometry remains valid."
+}

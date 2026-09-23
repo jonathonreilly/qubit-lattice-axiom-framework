@@ -1,0 +1,32 @@
+{
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+    "bytes": 17730,
+    "sha256": "002119d5a3f9bec171c3678cb15afdb91f7a763311ca38e6e4458ce10865572e"
+  },
+  "execution_receipts": [
+    {
+      "receipt": "BLOCK_RECEIPT.json",
+      "source_and_builder_and_streams_verified": true
+    },
+    {
+      "receipt": "DENSITY_RECEIPT.json",
+      "source_and_builder_and_streams_verified": true
+    }
+  ],
+  "exact_and_density_result_internal_checks": true,
+  "failed_executions": 0,
+  "countercontrols_preserved": [
+    "Raw graph fourth coefficient is non-Hermitian in canonical coordinates.",
+    "Omitting C1 leaves a nonzero fourth-coefficient discrepancy.",
+    "The off-block generator discrepancy diverges although the corrected density approximation converges.",
+    "The proof corrector is not a positive preparation."
+  ],
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0"
+  },
+  "read_boundary": "Only the single pinned parent model source; no new author compensation or other packet accessed."
+}

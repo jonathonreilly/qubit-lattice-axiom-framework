@@ -1,0 +1,50 @@
+{
+  "source_bindings_verified": 9,
+  "scientific_runs_authenticated": [
+    {
+      "label": "ROTOR",
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/ROTOR_RECEIPT.json",
+        "bytes": 1878,
+        "sha256": "5d9d9acc66200e1bff234999c6aa35b3d40753ff5daa2478d6aaa56655601214"
+      },
+      "result": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/ROTOR_RESULTS.json",
+        "bytes": 8691,
+        "sha256": "da4781c98f8275bc873ff0e9a99e5c735616445c007510f0b73a30bee1802157"
+      },
+      "empty_stderr": true
+    },
+    {
+      "label": "GRAM",
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/GRAM_RECEIPT.json",
+        "bytes": 1873,
+        "sha256": "0ebd98531204ab0583527138966f33e75b0be11da79a4cb9385a2c9834aab36e"
+      },
+      "result": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/GRAM_RESULTS.json",
+        "bytes": 2783,
+        "sha256": "9b2c1e2e34ea02c6e9d5ae92eb32159e954b297bbef30e9f96b001a2efbdf08b"
+      },
+      "empty_stderr": true
+    },
+    {
+      "label": "SPIN",
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/SPIN_RECEIPT.json",
+        "bytes": 1886,
+        "sha256": "6f48b256514b194a12b0e797bdbcc07b6e8050b1d154e0e22393aca5ef69e7f7"
+      },
+      "result": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/SPIN_RESULTS.json",
+        "bytes": 3536,
+        "sha256": "94006a7dc4bff3ca0a0beb9289d06e793193da4541843b2a72108e9218852cc8"
+      },
+      "empty_stderr": true
+    }
+  ],
+  "preserved_failures": "No failed executions. Ungated zero-fourth-order and field-dependent hazard countercontrols preserved.",
+  "proof_vs_controls": "Report contains the proof. Finite Gaussian-integer/path and finite floating generator controls corroborate it without author-builder imports.",
+  "prior_evidence_unchanged": true
+}

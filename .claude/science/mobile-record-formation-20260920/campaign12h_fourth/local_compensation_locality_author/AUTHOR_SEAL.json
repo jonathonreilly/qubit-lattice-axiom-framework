@@ -1,0 +1,51 @@
+{
+  "created_utc": "2026-09-23T20:25:38.739440+00:00",
+  "status": "Root general-graph analytic extension with exact controls; specific source comparison pending.",
+  "science_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/LOCAL_CONSTRUCTION_AUTHOR_SEAL.json",
+      "bytes": 8203,
+      "sha256": "88d002cd35fb4b71859bc23efe2f41d465dd2ac5c33a0826db596934189f70b3"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_locality_author/ANALYTIC_DRAFT_SEAL.json",
+      "bytes": 606,
+      "sha256": "417150798db6e426bdea2f326d31e70d11072a2d7cf294d03cd30146de6cbf53"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_locality_author/GENERAL_GRAPH_LOCALITY_RESULTS.json",
+      "bytes": 15846,
+      "sha256": "a507eb1bd126658738235441e6f2980a32b2a8a63ae3517c5f2b2019b090dce0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_locality_author/LOCALITY.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_locality_author/LOCALITY.stdout.log",
+      "bytes": 16533,
+      "sha256": "f649861fc5f12ebeab06c6aff411a498dbb4bde83983058e563660c6d89294b7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_locality_author/LOCALITY_RUN_RECEIPT.json",
+      "bytes": 721,
+      "sha256": "995e9d3220a4f4103c13b018e50bd498f9dd8018757a1e166f1b667cd6144b42"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_locality_author/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS.md",
+      "bytes": 7985,
+      "sha256": "5539bbe3171ba21933aa42c4cc191b787029e5f5c9220dc8c3ee255e4906f582"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_locality_author/general_graph_locality_check.py",
+      "bytes": 9005,
+      "sha256": "7319cca1eb71df39145d5cc9b353df61f45f8a18a10b5453ea6186a8a172b85d"
+    }
+  ],
+  "independence_timeline": "Analytic draft sealed20:11:23UTC; exact 9-graph,45-seed controls executed20:13:52UTC. The blind local-construction checker subsequently reported the same local-pair formula in progress; its PRE is not yet read. That progress message did not inform the preceding draft or controls.",
+  "result": "Rotor fourth coefficient is a sum over overlapping A-star pairs. First-sector electric and four-cycle magnetic dynamics match the original law up to a scalar for every fixed simple bipartite graph.",
+  "limits": "No thermodynamic dynamics, uniform microscopic volume approximation, native selection or phase theorem."
+}

@@ -1,0 +1,133 @@
+{
+  "environment": {
+    "numpy": "2.4.4",
+    "scipy": "1.17.1"
+  },
+  "complete_cyclic_controls": [
+    {
+      "S": 1,
+      "complete_physical_dimension": 19,
+      "P_dimension": 9,
+      "grade_counts": {
+        "0": 9,
+        "1": 8,
+        "2": 2
+      },
+      "P_number_counts": {
+        "2": 3,
+        "4": 6
+      },
+      "K2_diagonal_identity_max_error": 0.0,
+      "C_operator_norm": 4.0,
+      "C_min_eigenvalue": 0.0,
+      "C1_norm": 0.0
+    },
+    {
+      "S": 2,
+      "complete_physical_dimension": 39,
+      "P_dimension": 19,
+      "grade_counts": {
+        "0": 19,
+        "1": 16,
+        "2": 4
+      },
+      "P_number_counts": {
+        "2": 5,
+        "4": 14
+      },
+      "K2_diagonal_identity_max_error": 4.440892098500626e-16,
+      "C_operator_norm": 4.0,
+      "C_min_eigenvalue": 0.0,
+      "C1_norm": 0.0
+    }
+  ],
+  "eight_site_tree_recycling_control": {
+    "complete_physical_dimension": 266,
+    "P_dimension": 65,
+    "grade_counts": {
+      "0": 65,
+      "1": 112,
+      "2": 72,
+      "3": 16,
+      "4": 1
+    },
+    "P_number_counts": {
+      "4": 1,
+      "6": 36,
+      "8": 28
+    },
+    "maximum_physical_link_absolute_value": 3,
+    "rotor_C1_norm": 14.628738838327793,
+    "parameters": {
+      "delta": 0.7,
+      "K": 0.4,
+      "kappa": 0.2,
+      "times": [
+        0,
+        0.2,
+        0.6
+      ]
+    },
+    "spin_rows": [
+      {
+        "S": 4,
+        "epsilon": 0.2958039891549808,
+        "K2_diagonal_identity_max_error": 2.7755575615628914e-16,
+        "C1_norm": 14.562280041257276,
+        "H4_operator_norm_error": 0.9556685061541257,
+        "maximum_jump_operator_norm_error": 0.29999999999999993,
+        "full_target_density_trace_errors": [
+          0.0,
+          0.0015912491072007037,
+          0.01761725789943711
+        ]
+      },
+      {
+        "S": 8,
+        "epsilon": 0.15590239111558088,
+        "K2_diagonal_identity_max_error": 2.914335439641036e-16,
+        "C1_norm": 14.609896442962013,
+        "H4_operator_norm_error": 0.3105160788571994,
+        "maximum_jump_operator_norm_error": 0.08333333333333337,
+        "full_target_density_trace_errors": [
+          0.0,
+          0.00044669980953234757,
+          0.004942358140445966
+        ]
+      },
+      {
+        "S": 16,
+        "epsilon": 0.08021111848996848,
+        "K2_diagonal_identity_max_error": 1.5959455978986625e-16,
+        "C1_norm": 14.623722698784132,
+        "H4_operator_norm_error": 0.08567333436563693,
+        "maximum_jump_operator_norm_error": 0.022058823529411797,
+        "full_target_density_trace_errors": [
+          0.0,
+          0.00011859677245954728,
+          0.001311784243096625
+        ]
+      },
+      {
+        "S": 32,
+        "epsilon": 0.0407086842049331,
+        "K2_diagonal_identity_max_error": 3.226585665316861e-16,
+        "C1_norm": 14.627444846389261,
+        "H4_operator_norm_error": 0.022308473565996908,
+        "maximum_jump_operator_norm_error": 0.005681818181818121,
+        "full_target_density_trace_errors": [
+          0.0,
+          3.057196431462783e-05,
+          0.00033812271870433823
+        ]
+      }
+    ],
+    "rotor_number_probabilities_at_final_time": {
+      "4": 0.2369277586821218,
+      "6": 0.6495665145599325,
+      "8": 0.11350572675794586
+    }
+  },
+  "scope": "Finite floating full-target checks with all reachable numbers; not a microscopic-generator replay or proof of convergence rate. Analytic identities and general target theorem supply the proof.",
+  "elapsed_seconds": 0.1652596250642091
+}

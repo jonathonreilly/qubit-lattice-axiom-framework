@@ -1,0 +1,44 @@
+{
+  "pre_bindings_unchanged": 34,
+  "author_seals_verified": 2,
+  "author_seal_rows_verified": 28,
+  "author_recorded_results_authenticated": [
+    {
+      "result": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/LOCAL_COMPENSATION_CONTROLS.json",
+        "bytes": 5405,
+        "sha256": "119ce678926609a2a471ff9f91002caaebbe18f1d1227bc40133bae48b4a0f3a"
+      },
+      "stdout_contains_exact_result_suffix": true,
+      "empty_stderr": true,
+      "successful_actual_receipt": true
+    },
+    {
+      "result": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/MECHANISM_CONTROLS.json",
+        "bytes": 22379,
+        "sha256": "9ee6aa126eb7ac231e89553b7a04c2bee11a82c1c870e6d29523e3132f010608"
+      },
+      "stdout_contains_exact_result_suffix": true,
+      "empty_stderr": true,
+      "successful_actual_receipt": true
+    },
+    {
+      "result": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_locality_author/GENERAL_GRAPH_LOCALITY_RESULTS.json",
+        "bytes": 15846,
+        "sha256": "a507eb1bd126658738235441e6f2980a32b2a8a63ae3517c5f2b2019b090dce0"
+      },
+      "stdout_contains_exact_result_suffix": true,
+      "empty_stderr": true,
+      "successful_actual_receipt": true
+    }
+  ],
+  "author_graph_control_count": {
+    "graphs": 9,
+    "seeds": 45
+  },
+  "new_independent_control_passed": true,
+  "material_findings": [],
+  "failure_history": "No new failure or repaired threshold. PRE countercontrols remain unchanged."
+}

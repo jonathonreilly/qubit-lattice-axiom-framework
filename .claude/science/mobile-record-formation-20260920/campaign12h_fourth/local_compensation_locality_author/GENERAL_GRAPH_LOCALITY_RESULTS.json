@@ -1,0 +1,840 @@
+{
+  "created_utc": "2026-09-23T20:13:54.898120+00:00",
+  "runner_sha256": "7319cca1eb71df39145d5cc9b353df61f45f8a18a10b5453ea6186a8a172b85d",
+  "elapsed_seconds": 2.370435583870858,
+  "graphs": [
+    {
+      "graph": "ring8",
+      "vertices": 8,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "A": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "square_count": 0,
+      "initial_compensated_scalar": -24,
+      "initial_original_scalar": 24,
+      "initial_four_cycle_formula_exact": true,
+      "checks": [
+        {
+          "seed": "initial",
+          "input_support": 1,
+          "output_support": 1,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(0, -1)",
+          "input_support": 1,
+          "output_support": 5,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(0, 1)",
+          "input_support": 1,
+          "output_support": 5,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(4, -1)",
+          "input_support": 1,
+          "output_support": 5,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(7, 1)",
+          "input_support": 1,
+          "output_support": 5,
+          "canonical_equals_local_pair_form_exactly": true
+        }
+      ]
+    },
+    {
+      "graph": "path8",
+      "vertices": 8,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "A": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "square_count": 0,
+      "initial_compensated_scalar": -14,
+      "initial_original_scalar": 19,
+      "initial_four_cycle_formula_exact": true,
+      "checks": [
+        {
+          "seed": "initial",
+          "input_support": 1,
+          "output_support": 1,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(1, -1)",
+          "input_support": 1,
+          "output_support": 3,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(1, 1)",
+          "input_support": 1,
+          "output_support": 3,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(4, -1)",
+          "input_support": 1,
+          "output_support": 0,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(6, 1)",
+          "input_support": 1,
+          "output_support": 3,
+          "canonical_equals_local_pair_form_exactly": true
+        }
+      ]
+    },
+    {
+      "graph": "disjoint_two_stars",
+      "vertices": 6,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "A": [
+        0,
+        3
+      ],
+      "square_count": 0,
+      "initial_compensated_scalar": 0,
+      "initial_original_scalar": 8,
+      "initial_four_cycle_formula_exact": true,
+      "checks": [
+        {
+          "seed": "initial",
+          "input_support": 1,
+          "output_support": 0,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(0, -1)",
+          "input_support": 1,
+          "output_support": 0,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(0, 1)",
+          "input_support": 1,
+          "output_support": 0,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(2, -1)",
+          "input_support": 1,
+          "output_support": 0,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(3, 1)",
+          "input_support": 1,
+          "output_support": 0,
+          "canonical_equals_local_pair_form_exactly": true
+        }
+      ]
+    },
+    {
+      "graph": "complete_bipartite_2_3",
+      "vertices": 5,
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "A": [
+        0,
+        1
+      ],
+      "square_count": 3,
+      "initial_compensated_scalar": -12,
+      "initial_original_scalar": 24,
+      "initial_four_cycle_formula_exact": true,
+      "checks": [
+        {
+          "seed": "initial",
+          "input_support": 1,
+          "output_support": 7,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(0, -1)",
+          "input_support": 2,
+          "output_support": 0,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(0, 1)",
+          "input_support": 2,
+          "output_support": 0,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(3, -1)",
+          "input_support": 2,
+          "output_support": 0,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(5, 1)",
+          "input_support": 2,
+          "output_support": 0,
+          "canonical_equals_local_pair_form_exactly": true
+        }
+      ]
+    },
+    {
+      "graph": "complete_bipartite_3_3",
+      "vertices": 6,
+      "edges": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "square_count": 9,
+      "initial_compensated_scalar": -36,
+      "initial_original_scalar": 45,
+      "initial_four_cycle_formula_exact": true,
+      "checks": [
+        {
+          "seed": "initial",
+          "input_support": 1,
+          "output_support": 19,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(0, -1)",
+          "input_support": 2,
+          "output_support": 0,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(0, 1)",
+          "input_support": 2,
+          "output_support": 0,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(4, 1)",
+          "input_support": 2,
+          "output_support": 0,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(8, 1)",
+          "input_support": 2,
+          "output_support": 0,
+          "canonical_equals_local_pair_form_exactly": true
+        }
+      ]
+    },
+    {
+      "graph": "open_grid_2_4",
+      "vertices": 8,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "A": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "square_count": 3,
+      "initial_compensated_scalar": -50,
+      "initial_original_scalar": 42,
+      "initial_four_cycle_formula_exact": true,
+      "checks": [
+        {
+          "seed": "initial",
+          "input_support": 1,
+          "output_support": 7,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(0, -1)",
+          "input_support": 1,
+          "output_support": 14,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(0, 1)",
+          "input_support": 1,
+          "output_support": 14,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(5, -1)",
+          "input_support": 2,
+          "output_support": 25,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(9, 1)",
+          "input_support": 1,
+          "output_support": 14,
+          "canonical_equals_local_pair_form_exactly": true
+        }
+      ]
+    },
+    {
+      "graph": "open_grid_3_3",
+      "vertices": 9,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ]
+      ],
+      "A": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ],
+      "square_count": 4,
+      "initial_compensated_scalar": -72,
+      "initial_original_scalar": 56,
+      "initial_four_cycle_formula_exact": true,
+      "checks": [
+        {
+          "seed": "initial",
+          "input_support": 1,
+          "output_support": 9,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(0, -1)",
+          "input_support": 1,
+          "output_support": 19,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(0, 1)",
+          "input_support": 1,
+          "output_support": 19,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(6, -1)",
+          "input_support": 1,
+          "output_support": 19,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(11, 1)",
+          "input_support": 1,
+          "output_support": 19,
+          "canonical_equals_local_pair_form_exactly": true
+        }
+      ]
+    },
+    {
+      "graph": "hypercube_3",
+      "vertices": 8,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "A": [
+        0,
+        3,
+        5,
+        6
+      ],
+      "square_count": 6,
+      "initial_compensated_scalar": -84,
+      "initial_original_scalar": 60,
+      "initial_four_cycle_formula_exact": true,
+      "checks": [
+        {
+          "seed": "initial",
+          "input_support": 1,
+          "output_support": 13,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(0, -1)",
+          "input_support": 2,
+          "output_support": 62,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(0, 1)",
+          "input_support": 2,
+          "output_support": 47,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(6, -1)",
+          "input_support": 2,
+          "output_support": 47,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(11, 1)",
+          "input_support": 2,
+          "output_support": 47,
+          "canonical_equals_local_pair_form_exactly": true
+        }
+      ]
+    },
+    {
+      "graph": "hypercube_4",
+      "vertices": 16,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          3,
+          11
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          13
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          7,
+          15
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          9,
+          13
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          10,
+          14
+        ],
+        [
+          11,
+          15
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          13,
+          15
+        ],
+        [
+          14,
+          15
+        ]
+      ],
+      "A": [
+        0,
+        3,
+        5,
+        6,
+        9,
+        10,
+        12,
+        15
+      ],
+      "square_count": 24,
+      "initial_compensated_scalar": -672,
+      "initial_original_scalar": 224,
+      "initial_four_cycle_formula_exact": true,
+      "checks": [
+        {
+          "seed": "initial",
+          "input_support": 1,
+          "output_support": 49,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(0, -1)",
+          "input_support": 3,
+          "output_support": 693,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(0, 1)",
+          "input_support": 3,
+          "output_support": 591,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(16, -1)",
+          "input_support": 3,
+          "output_support": 693,
+          "canonical_equals_local_pair_form_exactly": true
+        },
+        {
+          "seed": "first_(31, 1)",
+          "input_support": 3,
+          "output_support": 693,
+          "canonical_equals_local_pair_form_exactly": true
+        }
+      ]
+    }
+  ],
+  "scope": "Exact integer rotor path controls for finite graph families; analytic identities and any volume theorem require their separate arguments."
+}

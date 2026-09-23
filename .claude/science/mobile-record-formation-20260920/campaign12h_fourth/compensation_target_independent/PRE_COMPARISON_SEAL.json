@@ -1,0 +1,122 @@
+{
+  "created_utc": "2026-09-23T19:51:06.460321+00:00",
+  "status": "Independent bounded-perturbation reconstruction complete before new author-source access.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "bytes": 17730,
+      "sha256": "002119d5a3f9bec171c3678cb15afdb91f7a763311ca38e6e4458ce10865572e"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/BLOCK.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/BLOCK.stdout",
+      "bytes": 10128,
+      "sha256": "ad57093272a5bf6ff3e1c184056a3a1b6cb0507045cd5c49f39375ad7354dd97"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/BLOCK_RECEIPT.json",
+      "bytes": 924,
+      "sha256": "da3cd41f2c395c1f1f92ff64d4f988c15a5efa7cc9f39412c2428b38876760c4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/BLOCK_RESULTS.json",
+      "bytes": 10128,
+      "sha256": "ad57093272a5bf6ff3e1c184056a3a1b6cb0507045cd5c49f39375ad7354dd97"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/DENSITY.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/DENSITY.stdout",
+      "bytes": 14075,
+      "sha256": "ff2be1fb00e9df48802d926120745d99c7fdf753f311740b52c7cdca65428eb6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/DENSITY_RECEIPT.json",
+      "bytes": 925,
+      "sha256": "ed8eb14c7e717f4db4ab76642a6fadecdae0f31bc891a4d5f262201329a34532"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/DENSITY_RESULTS.json",
+      "bytes": 14075,
+      "sha256": "ff2be1fb00e9df48802d926120745d99c7fdf753f311740b52c7cdca65428eb6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/REPORT.md",
+      "bytes": 18268,
+      "sha256": "dcd02298d9a27ea9eadfb387a81f9f1336c66f681fb84933ee48cac225ed5401"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/VERIFY.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/VERIFY.stdout",
+      "bytes": 1233,
+      "sha256": "de1aa701203a14b1769490d2f32ec76db04607b6cc499cf6078f7806b1261ac8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/VERIFY_RECEIPT.json",
+      "bytes": 918,
+      "sha256": "3943597e01718042ca3c5b810bb882a9f526d0bd8b3444babf73a4c59753a3ae"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/VERIFY_RESULTS.json",
+      "bytes": 1233,
+      "sha256": "de1aa701203a14b1769490d2f32ec76db04607b6cc499cf6078f7806b1261ac8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/block_expansion_check.py",
+      "bytes": 4371,
+      "sha256": "33ac85e5ed1658ae094667d60a27d8a2d69c62aa1d19e8cc128089d4f9188594"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/density_residual_check.py",
+      "bytes": 5189,
+      "sha256": "a384d87f56c64724db1e3b998390c4105af7da8e7a9df9c9eb8ba6447ed07c07"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/finite_blocks.py",
+      "bytes": 2014,
+      "sha256": "63420338e81e4b4f83b3e8aa6a146e76d98d9c848440259259959997b00e76f3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/run_logged.py",
+      "bytes": 1336,
+      "sha256": "91da8087e531a5e621577be7df9b78746adf9aabb2c2bf6bb939a34d5138ed6f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/verify_evidence.py",
+      "bytes": 2551,
+      "sha256": "3277067b68813595a5cc4329cebedc37b143da1019d960dca7a45d4b1cf4205a"
+    }
+  ],
+  "source_read_coverage": "The sole allowed parent source was reread completely. Its bounded supplied-model conventions are reused; all C-dependent coefficients and proof changes were independently derived.",
+  "result": "Canonical K2=C0-M; K4=M^2-Zdagger Z/2+Adagger C1 A-(M C0+C0 M)/2. Leading B_j=-P j Pi1 T P unchanged. A full-W-cluster rotation and an O(epsilon^3) off-block proof correction give uniform fixed-graph compact-time O(epsilon) trace-norm error under stated uniform boundedness.",
+  "independent_method": "Operator Riccati/positive-overlap derivation; full-cluster analytic parity; dimension-free trace-class residual proof; new exact nine-state graded model and full finite Lindblad controls with recycling and number-sector coherences. No author builder imported.",
+  "read_boundary": "No local_compensation_author, LOCAL_COUNTERTERM_PROPOSAL.md, cube_unprepared or other new author packet, campaign plan/checkpoint/registry, or Git/publication/audit surface read.",
+  "actual_execution_receipts": [
+    "BLOCK_RECEIPT.json",
+    "DENSITY_RECEIPT.json",
+    "VERIFY_RECEIPT.json"
+  ],
+  "failed_executions": [],
+  "countercontrols": [
+    "Non-Hermitian raw graph fourth coefficient versus canonical coefficient.",
+    "Nonzero excited C1 contribution.",
+    "Scalar-C cancellation and grade-two-only effect beyond fourth order.",
+    "Divergent off-block generator residual versus corrected density estimate.",
+    "Nonpositive proof corrector."
+  ],
+  "limits": "General bounded perturbation lemma only. No specific microscopic C implementation/locality, volume-uniform estimate, growing-time estimate, unbounded-C extension, or joint spin/epsilon target limit is asserted.",
+  "next_action": "Await explicit authorization and frozen identities for source-bound comparison."
+}

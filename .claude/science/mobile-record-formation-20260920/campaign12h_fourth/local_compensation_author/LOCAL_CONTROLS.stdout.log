@@ -1,0 +1,205 @@
+{"S": 1, "N": 4, "P_dimension": 69, "direct_local_C_minus_M_minus_D_over_C_max_error": 0.0, "direct_C_Hermiticity_error": 0.0, "D_range": [0, 8], "outside_P_site_gate_checks": 276}
+{"S": 1, "N": 6, "P_dimension": 1308, "direct_local_C_minus_M_minus_D_over_C_max_error": 0.0, "direct_C_Hermiticity_error": 0.0, "D_range": [0, 4], "outside_P_site_gate_checks": 528}
+{"S": 1, "N": 8, "P_dimension": 672, "direct_local_C_minus_M_minus_D_over_C_max_error": 0.0, "direct_C_Hermiticity_error": 0.0, "D_range": [0, 0], "outside_P_site_gate_checks": 0}
+{"S": 2, "N": 4, "P_dimension": 767, "direct_local_C_minus_M_minus_D_over_C_max_error": 2.4424906541753444e-15, "direct_C_Hermiticity_error": 0.0, "D_range": [0, 32], "outside_P_site_gate_checks": 276}
+{"S": 2, "N": 6, "P_dimension": 22092, "direct_local_C_minus_M_minus_D_over_C_max_error": 8.881784197001252e-16, "direct_C_Hermiticity_error": 0.0, "D_range": [0, 20], "outside_P_site_gate_checks": 528}
+{"S": 2, "N": 8, "P_dimension": 14964, "direct_local_C_minus_M_minus_D_over_C_max_error": 0.0, "direct_C_Hermiticity_error": 0.0, "D_range": [0, 0], "outside_P_site_gate_checks": 0}
+per_element: Local spin weights and compensating two-hop coefficients were explicitly executed.
+per_site: All four A stars and all cube occupation gates were included in complete physical controls.
+per_mode: checked and not executed — no individual spectral-band preparation is used or claimed.
+per_block: Four-, six-, and eight-record physical blocks and all first/second mark types were checked.
+lattice_wide: The complete finite cube was executed; larger graphs enter only the separate proof.
+{
+  "source_sha256": "6c8abe653492d44369ab94e9aa07af2d7215eb13f0d96a8c7e97ba446fb8485a",
+  "finite_complete_physical_identities": [
+    {
+      "S": 1,
+      "N": 4,
+      "P_dimension": 69,
+      "direct_local_C_minus_M_minus_D_over_C_max_error": 0.0,
+      "direct_C_Hermiticity_error": 0.0,
+      "D_range": [
+        0,
+        8
+      ],
+      "outside_P_site_gate_checks": 276
+    },
+    {
+      "S": 1,
+      "N": 6,
+      "P_dimension": 1308,
+      "direct_local_C_minus_M_minus_D_over_C_max_error": 0.0,
+      "direct_C_Hermiticity_error": 0.0,
+      "D_range": [
+        0,
+        4
+      ],
+      "outside_P_site_gate_checks": 528
+    },
+    {
+      "S": 1,
+      "N": 8,
+      "P_dimension": 672,
+      "direct_local_C_minus_M_minus_D_over_C_max_error": 0.0,
+      "direct_C_Hermiticity_error": 0.0,
+      "D_range": [
+        0,
+        0
+      ],
+      "outside_P_site_gate_checks": 0
+    },
+    {
+      "S": 2,
+      "N": 4,
+      "P_dimension": 767,
+      "direct_local_C_minus_M_minus_D_over_C_max_error": 2.4424906541753444e-15,
+      "direct_C_Hermiticity_error": 0.0,
+      "D_range": [
+        0,
+        32
+      ],
+      "outside_P_site_gate_checks": 276
+    },
+    {
+      "S": 2,
+      "N": 6,
+      "P_dimension": 22092,
+      "direct_local_C_minus_M_minus_D_over_C_max_error": 8.881784197001252e-16,
+      "direct_C_Hermiticity_error": 0.0,
+      "D_range": [
+        0,
+        20
+      ],
+      "outside_P_site_gate_checks": 528
+    },
+    {
+      "S": 2,
+      "N": 8,
+      "P_dimension": 14964,
+      "direct_local_C_minus_M_minus_D_over_C_max_error": 0.0,
+      "direct_C_Hermiticity_error": 0.0,
+      "D_range": [
+        0,
+        0
+      ],
+      "outside_P_site_gate_checks": 0
+    }
+  ],
+  "naive_failure_and_gated_core_controls": {
+    "seed_controls": [
+      {
+        "seed": "initial_four",
+        "naive_C1_cancels_magnetic_H4_exact_error": 0.0,
+        "gated_H4_limit_action_norm": 84.2852300228219,
+        "finite_spin_core_rows": [
+          {
+            "S": 2,
+            "compensated_H4_core_error": 0.0,
+            "C_times_core_error": 0.0
+          },
+          {
+            "S": 4,
+            "compensated_H4_core_error": 0.0,
+            "C_times_core_error": 0.0
+          },
+          {
+            "S": 8,
+            "compensated_H4_core_error": 0.0,
+            "C_times_core_error": 0.0
+          },
+          {
+            "S": 16,
+            "compensated_H4_core_error": 0.0,
+            "C_times_core_error": 0.0
+          },
+          {
+            "S": 32,
+            "compensated_H4_core_error": 0.0,
+            "C_times_core_error": 0.0
+          },
+          {
+            "S": 64,
+            "compensated_H4_core_error": 0.0,
+            "C_times_core_error": 0.0
+          }
+        ]
+      },
+      {
+        "seed": "actual_resolved_first_unnormalized",
+        "naive_C1_cancels_magnetic_H4_exact_error": 0.0,
+        "gated_H4_limit_action_norm": 39.7994974842648,
+        "finite_spin_core_rows": [
+          {
+            "S": 2,
+            "compensated_H4_core_error": 0.408248290463863,
+            "C_times_core_error": 2.449489742783178
+          },
+          {
+            "S": 4,
+            "compensated_H4_core_error": 0.1224744871391592,
+            "C_times_core_error": 2.449489742783184
+          },
+          {
+            "S": 8,
+            "compensated_H4_core_error": 0.03402069087198955,
+            "C_times_core_error": 2.4494897427832476
+          },
+          {
+            "S": 16,
+            "compensated_H4_core_error": 0.009005476995526902,
+            "C_times_core_error": 2.4494897427833173
+          },
+          {
+            "S": 32,
+            "compensated_H4_core_error": 0.002319592559453108,
+            "C_times_core_error": 2.449489742782482
+          },
+          {
+            "S": 64,
+            "compensated_H4_core_error": 0.0005888196497076286,
+            "C_times_core_error": 2.4494897427837348
+          }
+        ]
+      }
+    ],
+    "initial_compensated_scalar": -84,
+    "initial_original_scalar": 60,
+    "oriented_face_terms": 12,
+    "oriented_face_coefficient": -2
+  },
+  "actual_two_birth_controls": [
+    {
+      "coherent_first": false,
+      "coherent_second": false,
+      "summed_first_norm_squared": 48.00000000000001,
+      "summed_two_birth_norm_squared": 384.0,
+      "small_time_N8_coefficient_over_kappa_squared": 192.0,
+      "nonzero_two_mark_channels": 336
+    },
+    {
+      "coherent_first": false,
+      "coherent_second": true,
+      "summed_first_norm_squared": 48.00000000000001,
+      "summed_two_birth_norm_squared": 384.0,
+      "small_time_N8_coefficient_over_kappa_squared": 192.0,
+      "nonzero_two_mark_channels": 168
+    },
+    {
+      "coherent_first": true,
+      "coherent_second": false,
+      "summed_first_norm_squared": 48.0,
+      "summed_two_birth_norm_squared": 384.0,
+      "small_time_N8_coefficient_over_kappa_squared": 192.0,
+      "nonzero_two_mark_channels": 168
+    },
+    {
+      "coherent_first": true,
+      "coherent_second": true,
+      "summed_first_norm_squared": 48.0,
+      "summed_two_birth_norm_squared": 384.0,
+      "small_time_N8_coefficient_over_kappa_squared": 192.0,
+      "nonzero_two_mark_channels": 84
+    }
+  ],
+  "status": "Author controls for an explicitly modified supplied Hamiltonian; analytic limit and microscopic derivation require their stated proof and independent checks."
+}

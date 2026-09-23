@@ -1,0 +1,19 @@
+{
+  "sealed_utc": "2026-09-23T19:36:29.089328+00:00",
+  "status": "Root analytic generalization before independent reconstruction request; numerical controls are not yet claimed.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "bytes": 17730,
+      "sha256": "002119d5a3f9bec171c3678cb15afdb91f7a763311ca38e6e4458ce10865572e"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "bytes": 6721,
+      "sha256": "9bc691a07fd70c1a813852aa0cac55832065b3c95cf3d50e5528845f6613e0b0"
+    }
+  ],
+  "scope": "Bounded self-adjoint C commuting with W, h=W+epsilon T+epsilon^2 C; canonical H2/H4 and uniform fixed-graph microscopic target. Explicitly changed supplied law."
+}

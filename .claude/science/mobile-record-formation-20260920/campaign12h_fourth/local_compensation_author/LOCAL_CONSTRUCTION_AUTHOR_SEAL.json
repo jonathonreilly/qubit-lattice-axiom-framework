@@ -1,0 +1,121 @@
+{
+  "created_utc": "2026-09-23T20:02:38.542479+00:00",
+  "status": "Root conditional local construction; exact author controls completed, general target independent PRE completed and narrow wording correction accepted; specific local-construction independent check pending.",
+  "claim_scope": "Explicit new radius-two Hamiltonian interaction in the fixed-graph supplied quantum model. Complete compact-time joint-spin trace-density limit including actual births; cube electric/magnetic first-sector dynamics and second-formation witness. No native selection, resource completion, large-volume limit, or TOE claim.",
+  "independence_timeline": "Root local construction/proofs and both controls were completed before checker access. Root has read the independent general target PRE and received its narrow wording correction. No specific local-construction independent result has been read. Prior original-model commutant/local-escape results are separate and are not changed by this construction.",
+  "science_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_unprepared_author/cube_physical_controls.py",
+      "bytes": 8243,
+      "sha256": "20f0a6abf4066098cf719b74af22f9826d803b6ee51d9d772ed9ab56e104ce80"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_author/second_event_probe.py",
+      "bytes": 12643,
+      "sha256": "4827171a51e018b306302b0fac315c000c63bb7311e69fcab18ad666916f1f25"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "bytes": 17730,
+      "sha256": "002119d5a3f9bec171c3678cb15afdb91f7a763311ca38e6e4458ce10865572e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/PRE_COMPARISON_SEAL.json",
+      "bytes": 8031,
+      "sha256": "0504a3fc90cca1b0f9b7bab3a1aa346b11e0889bc25abf55bd65966965375a46"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/REPORT.md",
+      "bytes": 18268,
+      "sha256": "dcd02298d9a27ea9eadfb387a81f9f1336c66f681fb84933ee48cac225ed5401"
+    }
+  ],
+  "author_artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "bytes": 6721,
+      "sha256": "9bc691a07fd70c1a813852aa0cac55832065b3c95cf3d50e5528845f6613e0b0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/GENERAL_TARGET_AUTHOR_SEAL.json",
+      "bytes": 1061,
+      "sha256": "630f063e8fd546c844dba720943198070c49573d9de1c3870531ec40791e373f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "bytes": 11637,
+      "sha256": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/LOCAL_COMPENSATION_CONTROLS.json",
+      "bytes": 5405,
+      "sha256": "119ce678926609a2a471ff9f91002caaebbe18f1d1227bc40133bae48b4a0f3a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/LOCAL_CONTROLS.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/LOCAL_CONTROLS.stdout.log",
+      "bytes": 7034,
+      "sha256": "ea95d335094bf29a212728a79528719b5e376fe9ef3ddd43cc8a214d4669abeb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/LOCAL_CONTROLS_RUN_RECEIPT.json",
+      "bytes": 468,
+      "sha256": "aea731ac0f22984ae34899a40bdc3dbc19a9c5096e5434ba62b0bf72833c7d3a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/MECHANISM.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/MECHANISM.stdout.log",
+      "bytes": 22379,
+      "sha256": "9ee6aa126eb7ac231e89553b7a04c2bee11a82c1c870e6d29523e3132f010608"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/MECHANISM_CONTROLS.json",
+      "bytes": 22379,
+      "sha256": "9ee6aa126eb7ac231e89553b7a04c2bee11a82c1c870e6d29523e3132f010608"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/MECHANISM_RUN_RECEIPT.json",
+      "bytes": 459,
+      "sha256": "73d254a17d0377d0bd68803031e998cf15ab18fe0cc8c08da81f364c4254abc3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/ROOT_GENERAL_TARGET_CORRECTION.md",
+      "bytes": 1289,
+      "sha256": "c906ed162db678fc2f10bc67afd2af22d929be3fe97fd3a1658cfe12ecd339a9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/UNGATED_SUM_OF_SQUARES_AND_TUNING.md",
+      "bytes": 5560,
+      "sha256": "d67499010fcd7659b7e245bb05c33f64069db1691f57446477506cfcad11fa16"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/local_compensation_check.py",
+      "bytes": 9181,
+      "sha256": "6c8abe653492d44369ab94e9aa07af2d7215eb13f0d96a8c7e97ba446fb8485a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/mechanism_check.py",
+      "bytes": 5337,
+      "sha256": "b6ceb181073e509bf41af2602b85c90327d3e694d6f60e7e40145416252a7d1e"
+    }
+  ],
+  "scope_obligations": [
+    "Independent reconstruction of local construction and full limit, including the unbounded diagonal operator domain.",
+    "Physical selection and coefficient tolerance are explicit additional modeling premises.",
+    "Any general-graph plaquette simplification beyond the stated bounded formula remains open."
+  ],
+  "failed_routes_preserved": [
+    "Ungated compensation has an exactly flat low band and erases magnetic dynamics.",
+    "Rotor-only rather than spin-weighted compensation leaves a harder unbounded matrix-valued leading correction.",
+    "Fixed fractional detuning fails the restricted all-state uniform-at-zero objective."
+  ],
+  "mutable_exclusions": []
+}

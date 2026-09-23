@@ -1,0 +1,518 @@
+{
+  "created_utc": "2026-09-23T20:54:57.158311+00:00",
+  "unit": "Local compensation retaining actual field and record dynamics",
+  "original_source_root": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920",
+  "base_commit": "8ccef7097deb77fe79f0d9406eef7d5c6e4962bd",
+  "base_branch": "codex/mobile-record-actual-field-limits-20260923",
+  "selected_identity_records": {
+    "local_compensation_author/LOCAL_CONSTRUCTION_AUTHOR_SEAL.json": "88d002cd35fb4b71859bc23efe2f41d465dd2ac5c33a0826db596934189f70b3",
+    "local_compensation_author/GENERAL_TARGET_AUTHOR_SEAL.json": "630f063e8fd546c844dba720943198070c49573d9de1c3870531ec40791e373f",
+    "local_compensation_locality_author/ANALYTIC_DRAFT_SEAL.json": "417150798db6e426bdea2f326d31e70d11072a2d7cf294d03cd30146de6cbf53",
+    "local_compensation_locality_author/AUTHOR_SEAL.json": "b275ae727810f32fe3c2721e2c3d294a8dfc9873f5a4a97344590217ffe76413",
+    "compensation_target_independent/FINAL_SEAL.json": "d29e5a9e335bce98e5cd405318beb2373e84ffdd116768637147f5c13fed2854",
+    "compensation_target_independent/PRE_COMPARISON_SEAL.json": "0504a3fc90cca1b0f9b7bab3a1aa346b11e0889bc25abf55bd65966965375a46",
+    "compensation_target_independent/correction_ack/ACK_SEAL.json": "9aa5e1d41b8e6021dfa22d80ad497d3c8d6fd568c7528b2a41688ef0aa2e5b7a",
+    "local_compensation_independent/FINAL_SEAL.json": "1686e2d2eb412524644552abf02726d7d3f65c862ba2d541801e96397f60ea09",
+    "local_compensation_independent/PRE_COMPARISON_SEAL.json": "bc1f83597d26466a02d2a1375fea91624b3adb99dcac25f7902262935a9feeb2",
+    "local_compensation_review/ROOT_REVIEW.json": "9de386569d909b6eacb07dffc54a8171432ee855ed73a63d0fbcd08beceb0c3e"
+  },
+  "artifact_count": 99,
+  "artifacts": [
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/BLOCK.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/BLOCK.stdout",
+      "bytes": 10128,
+      "sha256": "ad57093272a5bf6ff3e1c184056a3a1b6cb0507045cd5c49f39375ad7354dd97"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/BLOCK_RECEIPT.json",
+      "bytes": 924,
+      "sha256": "da3cd41f2c395c1f1f92ff64d4f988c15a5efa7cc9f39412c2428b38876760c4"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/BLOCK_RESULTS.json",
+      "bytes": 10128,
+      "sha256": "ad57093272a5bf6ff3e1c184056a3a1b6cb0507045cd5c49f39375ad7354dd97"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/COMPARISON.md",
+      "bytes": 8645,
+      "sha256": "fba9bda81cf6a5a4c7c06a5eb23c8482f2a75a16dcb4749b3b7232782bf0e6a5"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/COMPARISON.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/COMPARISON.stdout",
+      "bytes": 1468,
+      "sha256": "6ecdb37da2949d8e4b08b596c6c60d490fab69eeec2eb2dcd36981252f479275"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/COMPARISON_RECEIPT.json",
+      "bytes": 919,
+      "sha256": "279b87d5b24871958802e4b0f6743e8cbbdcbc80b77af8be6062e76bee808dc5"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/COMPARISON_RESULTS.json",
+      "bytes": 1468,
+      "sha256": "6ecdb37da2949d8e4b08b596c6c60d490fab69eeec2eb2dcd36981252f479275"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/DENSITY.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/DENSITY.stdout",
+      "bytes": 14075,
+      "sha256": "ff2be1fb00e9df48802d926120745d99c7fdf753f311740b52c7cdca65428eb6"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/DENSITY_RECEIPT.json",
+      "bytes": 925,
+      "sha256": "ed8eb14c7e717f4db4ab76642a6fadecdae0f31bc891a4d5f262201329a34532"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/DENSITY_RESULTS.json",
+      "bytes": 14075,
+      "sha256": "ff2be1fb00e9df48802d926120745d99c7fdf753f311740b52c7cdca65428eb6"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/FINAL_SEAL.json",
+      "bytes": 11581,
+      "sha256": "d29e5a9e335bce98e5cd405318beb2373e84ffdd116768637147f5c13fed2854"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/PRE_COMPARISON_SEAL.json",
+      "bytes": 8031,
+      "sha256": "0504a3fc90cca1b0f9b7bab3a1aa346b11e0889bc25abf55bd65966965375a46"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/REPORT.md",
+      "bytes": 18268,
+      "sha256": "dcd02298d9a27ea9eadfb387a81f9f1336c66f681fb84933ee48cac225ed5401"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/VERIFY.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/VERIFY.stdout",
+      "bytes": 1233,
+      "sha256": "de1aa701203a14b1769490d2f32ec76db04607b6cc499cf6078f7806b1261ac8"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/VERIFY_RECEIPT.json",
+      "bytes": 918,
+      "sha256": "3943597e01718042ca3c5b810bb882a9f526d0bd8b3444babf73a4c59753a3ae"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/VERIFY_RESULTS.json",
+      "bytes": 1233,
+      "sha256": "de1aa701203a14b1769490d2f32ec76db04607b6cc499cf6078f7806b1261ac8"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/block_expansion_check.py",
+      "bytes": 4371,
+      "sha256": "33ac85e5ed1658ae094667d60a27d8a2d69c62aa1d19e8cc128089d4f9188594"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/comparison_check.py",
+      "bytes": 3747,
+      "sha256": "705fc48b0d5ea159d25472426912926b4eb89459048545a760c2510bf503971a"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/correction_ack/ACK_SEAL.json",
+      "bytes": 2552,
+      "sha256": "9aa5e1d41b8e6021dfa22d80ad497d3c8d6fd568c7528b2a41688ef0aa2e5b7a"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/correction_ack/F1_ACK.json",
+      "bytes": 2754,
+      "sha256": "a2347caff2ae4c09d9066a0a359ee9af60e43c66e3bd1e9dd27908b207160d6a"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/density_residual_check.py",
+      "bytes": 5189,
+      "sha256": "a384d87f56c64724db1e3b998390c4105af7da8e7a9df9c9eb8ba6447ed07c07"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/finite_blocks.py",
+      "bytes": 2014,
+      "sha256": "63420338e81e4b4f83b3e8aa6a146e76d98d9c848440259259959997b00e76f3"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/run_logged.py",
+      "bytes": 1336,
+      "sha256": "91da8087e531a5e621577be7df9b78746adf9aabb2c2bf6bb939a34d5138ed6f"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/verify_evidence.py",
+      "bytes": 2551,
+      "sha256": "3277067b68813595a5cc4329cebedc37b143da1019d960dca7a45d4b1cf4205a"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "bytes": 6721,
+      "sha256": "9bc691a07fd70c1a813852aa0cac55832065b3c95cf3d50e5528845f6613e0b0"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/GENERAL_TARGET_AUTHOR_SEAL.json",
+      "bytes": 1061,
+      "sha256": "630f063e8fd546c844dba720943198070c49573d9de1c3870531ec40791e373f"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "bytes": 11637,
+      "sha256": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/LOCAL_COMPENSATION_CONTROLS.json",
+      "bytes": 5405,
+      "sha256": "119ce678926609a2a471ff9f91002caaebbe18f1d1227bc40133bae48b4a0f3a"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/LOCAL_CONSTRUCTION_AUTHOR_SEAL.json",
+      "bytes": 8203,
+      "sha256": "88d002cd35fb4b71859bc23efe2f41d465dd2ac5c33a0826db596934189f70b3"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/LOCAL_CONTROLS.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/LOCAL_CONTROLS.stdout.log",
+      "bytes": 7034,
+      "sha256": "ea95d335094bf29a212728a79528719b5e376fe9ef3ddd43cc8a214d4669abeb"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/LOCAL_CONTROLS_RUN_RECEIPT.json",
+      "bytes": 468,
+      "sha256": "aea731ac0f22984ae34899a40bdc3dbc19a9c5096e5434ba62b0bf72833c7d3a"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/MECHANISM.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/MECHANISM.stdout.log",
+      "bytes": 22379,
+      "sha256": "9ee6aa126eb7ac231e89553b7a04c2bee11a82c1c870e6d29523e3132f010608"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/MECHANISM_CONTROLS.json",
+      "bytes": 22379,
+      "sha256": "9ee6aa126eb7ac231e89553b7a04c2bee11a82c1c870e6d29523e3132f010608"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/MECHANISM_RUN_RECEIPT.json",
+      "bytes": 459,
+      "sha256": "73d254a17d0377d0bd68803031e998cf15ab18fe0cc8c08da81f364c4254abc3"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/ROOT_GENERAL_TARGET_CORRECTION.md",
+      "bytes": 1289,
+      "sha256": "c906ed162db678fc2f10bc67afd2af22d929be3fe97fd3a1658cfe12ecd339a9"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/UNGATED_SUM_OF_SQUARES_AND_TUNING.md",
+      "bytes": 5560,
+      "sha256": "d67499010fcd7659b7e245bb05c33f64069db1691f57446477506cfcad11fa16"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/local_compensation_check.py",
+      "bytes": 9181,
+      "sha256": "6c8abe653492d44369ab94e9aa07af2d7215eb13f0d96a8c7e97ba446fb8485a"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/mechanism_check.py",
+      "bytes": 5337,
+      "sha256": "b6ceb181073e509bf41af2602b85c90327d3e694d6f60e7e40145416252a7d1e"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/COMPARISON.md",
+      "bytes": 17445,
+      "sha256": "9d383919f5edc32ba827bef8155c1c1878744d3c5171fcd8a71f776b957c81da"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/COMPARISON_AUTH.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/COMPARISON_AUTH.stdout",
+      "bytes": 12133,
+      "sha256": "10370d485d552105c984df75083c7c97399536849ac216d0b7f8608e773e3b37"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/COMPARISON_AUTH_RECEIPT.json",
+      "bytes": 1923,
+      "sha256": "435a6d82d519a232488c81dd4f1c8da0a0f96f0c0cf66d9c3b0ca538f23ee82d"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/COMPARISON_AUTH_RESULTS.json",
+      "bytes": 12133,
+      "sha256": "10370d485d552105c984df75083c7c97399536849ac216d0b7f8608e773e3b37"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/COMPARISON_CHECK.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/COMPARISON_CHECK.stdout",
+      "bytes": 6373,
+      "sha256": "156b4958b6947d06713a106902096c81f897cd9a7640f54b348710d2f2fcd5ee"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/COMPARISON_CHECK_RECEIPT.json",
+      "bytes": 1909,
+      "sha256": "fc55931ad2ff9107a5a9200cfcd713781a8d90bd3de9e233219b40f3e480542d"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/COMPARISON_CHECK_RESULTS.json",
+      "bytes": 6373,
+      "sha256": "156b4958b6947d06713a106902096c81f897cd9a7640f54b348710d2f2fcd5ee"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/COMPARISON_SOURCE_BINDINGS.json",
+      "bytes": 10140,
+      "sha256": "89e4d8d2c230476d1b71999842cdcd481f37e9fbcec06884e3fb5f3fbe671d91"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/COMPARISON_VALIDATION.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/COMPARISON_VALIDATION.stdout",
+      "bytes": 1832,
+      "sha256": "b40d13a202301347e933a870da6b8a6faad0dd99e7d18e21e20da8050144e3f9"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/COMPARISON_VALIDATION_RECEIPT.json",
+      "bytes": 1926,
+      "sha256": "e2a969b5b20e6383e30ad28f4940342833c3deb85373c5b30cf8187780b16d33"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/FINAL_SEAL.json",
+      "bytes": 26454,
+      "sha256": "1686e2d2eb412524644552abf02726d7d3f65c862ba2d541801e96397f60ea09"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/GRAM.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/GRAM.stdout",
+      "bytes": 2783,
+      "sha256": "9b2c1e2e34ea02c6e9d5ae92eb32159e954b297bbef30e9f96b001a2efbdf08b"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/GRAM_RECEIPT.json",
+      "bytes": 1873,
+      "sha256": "0ebd98531204ab0583527138966f33e75b0be11da79a4cb9385a2c9834aab36e"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/GRAM_RESULTS.json",
+      "bytes": 2783,
+      "sha256": "9b2c1e2e34ea02c6e9d5ae92eb32159e954b297bbef30e9f96b001a2efbdf08b"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/INPUT_BRIEF.md",
+      "bytes": 1756,
+      "sha256": "95bac2381a11b35668e6a4938fdfdc2dd3d2b2eb339785710c3c5af57bd30aec"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/PRE_COMPARISON_SEAL.json",
+      "bytes": 12257,
+      "sha256": "bc1f83597d26466a02d2a1375fea91624b3adb99dcac25f7902262935a9feeb2"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/REPORT.md",
+      "bytes": 20449,
+      "sha256": "bb92e2a7367db959390d29c3ee9724fdafd25a200ea7ad6a66ac3f2433ae0312"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/ROTOR.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/ROTOR.stdout",
+      "bytes": 8691,
+      "sha256": "da4781c98f8275bc873ff0e9a99e5c735616445c007510f0b73a30bee1802157"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/ROTOR_RECEIPT.json",
+      "bytes": 1878,
+      "sha256": "5d9d9acc66200e1bff234999c6aa35b3d40753ff5daa2478d6aaa56655601214"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/ROTOR_RESULTS.json",
+      "bytes": 8691,
+      "sha256": "da4781c98f8275bc873ff0e9a99e5c735616445c007510f0b73a30bee1802157"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/SOURCE_BINDINGS.json",
+      "bytes": 3789,
+      "sha256": "f464e56dcd589b9966bbc791473eb83ab08b9cb34599217ca66e00e80c017e90"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/SPIN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/SPIN.stdout",
+      "bytes": 3536,
+      "sha256": "94006a7dc4bff3ca0a0beb9289d06e793193da4541843b2a72108e9218852cc8"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/SPIN_RECEIPT.json",
+      "bytes": 1886,
+      "sha256": "6f48b256514b194a12b0e797bdbcc07b6e8050b1d154e0e22393aca5ef69e7f7"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/SPIN_RESULTS.json",
+      "bytes": 3536,
+      "sha256": "94006a7dc4bff3ca0a0beb9289d06e793193da4541843b2a72108e9218852cc8"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/VALIDATION.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/VALIDATION.stdout",
+      "bytes": 2627,
+      "sha256": "4500b18e993c9b8e55ff2a2e183a9ee2500d7e244eaef9618bc9f6e6d770ab43"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/VALIDATION_RECEIPT.json",
+      "bytes": 1901,
+      "sha256": "c09b1bbb16a1c6d32b24b1d91db39fd2a9c2d35752e264007c1aa6a5f8a9ef0b"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/comparison_authenticate.py",
+      "bytes": 1435,
+      "sha256": "bef62ecf526c6f313459680122ff16d74af3ebaa04ed07d50db13d2360530bbe"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/comparison_check.py",
+      "bytes": 8675,
+      "sha256": "647975ab74846834ad0bd8af26958c7fc9727e5d9641adf3f174a832f9d39cb0"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/finite_spin_check.py",
+      "bytes": 6505,
+      "sha256": "4c44b0d2569e942d19f86ee756a1a2a4a9c06a6df11538aeebd5b3ac5393bd78"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/gram_check.py",
+      "bytes": 1998,
+      "sha256": "80440b5cf5add1b0f8b5461294a966fa86f3e4e082695fb238b4532502675a86"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/model.py",
+      "bytes": 4258,
+      "sha256": "686529f4cd3dd5d73e3373f2604e56615c83228b5813a3848f2a194db00ae128"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/rotor_check.py",
+      "bytes": 4600,
+      "sha256": "e3721ee5db2ffd8c13aa76a6d3527c70e1c2a02f726f84a0cd5acf978b3a0712"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/run_logged.py",
+      "bytes": 1236,
+      "sha256": "5f8921098ece971e95d728fb0ad3339f8e788e68bb4eb6877d143061237ccd6e"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/seal_comparison.py",
+      "bytes": 1973,
+      "sha256": "7e166bded0324d8c2a23eec1ffae05d17d819e32861e2305f1c8cc9693da68e4"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/seal_packet.py",
+      "bytes": 1568,
+      "sha256": "17b4cc09ff509b38ce1ea7bb70638113a9661c1fe2f195bd14ea53671084d78a"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/validate_comparison.py",
+      "bytes": 3516,
+      "sha256": "4fef5529566664bb7785c6594cb7e8e8c575c0d0fafd681194f682a07ff0dc5f"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/validate_evidence.py",
+      "bytes": 3884,
+      "sha256": "3ed52e29bef7c97476f541705a7056d77186c7caccc9f95aed44856f6025388c"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_locality_author/ANALYTIC_DRAFT_SEAL.json",
+      "bytes": 606,
+      "sha256": "417150798db6e426bdea2f326d31e70d11072a2d7cf294d03cd30146de6cbf53"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_locality_author/AUTHOR_SEAL.json",
+      "bytes": 3519,
+      "sha256": "b275ae727810f32fe3c2721e2c3d294a8dfc9873f5a4a97344590217ffe76413"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_locality_author/GENERAL_GRAPH_LOCALITY_RESULTS.json",
+      "bytes": 15846,
+      "sha256": "a507eb1bd126658738235441e6f2980a32b2a8a63ae3517c5f2b2019b090dce0"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_locality_author/LOCALITY.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_locality_author/LOCALITY.stdout.log",
+      "bytes": 16533,
+      "sha256": "f649861fc5f12ebeab06c6aff411a498dbb4bde83983058e563660c6d89294b7"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_locality_author/LOCALITY_RUN_RECEIPT.json",
+      "bytes": 721,
+      "sha256": "995e9d3220a4f4103c13b018e50bd498f9dd8018757a1e166f1b667cd6144b42"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_locality_author/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS.md",
+      "bytes": 7985,
+      "sha256": "5539bbe3171ba21933aa42c4cc191b787029e5f5c9220dc8c3ee255e4906f582"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_locality_author/general_graph_locality_check.py",
+      "bytes": 9005,
+      "sha256": "7319cca1eb71df39145d5cc9b353df61f45f8a18a10b5453ea6186a8a172b85d"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_review/ROOT_REVIEW.json",
+      "bytes": 5604,
+      "sha256": "9de386569d909b6eacb07dffc54a8171432ee855ed73a63d0fbcd08beceb0c3e"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_review/SCOPE_CHALLENGES.md",
+      "bytes": 3253,
+      "sha256": "112dc500ec1d64e0bfd10c8d7985219aed8ad969eff25d9ac95d92410cdafbad"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_review/SYNTHESIS.md",
+      "bytes": 8318,
+      "sha256": "4f034f1460ee92aee5d6a45dfdf892bbeca5eb90cd4184c1d71e8c41a74e6a4c"
+    }
+  ],
+  "scope": "Byte-identical selected evidence and root synthesis; required general-note wording correction accompanies its frozen original. Conditional fixed-graph research only."
+}

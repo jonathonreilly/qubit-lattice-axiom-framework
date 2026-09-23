@@ -1,0 +1,59 @@
+{
+  "read_boundary": "No specific author construction accessed; independent precomparison stage",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "bytes": 17730,
+      "sha256": "002119d5a3f9bec171c3678cb15afdb91f7a763311ca38e6e4458ce10865572e",
+      "reuse_or_read_scope": "Complete parent definition and bounded target proof, reread"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/REPORT.md",
+      "bytes": 18268,
+      "sha256": "dcd02298d9a27ea9eadfb387a81f9f1336c66f681fb84933ee48cac225ed5401",
+      "reuse_or_read_scope": "Reused independently checked general compensation theorem; relevant derivation reread"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/PRE_COMPARISON_SEAL.json",
+      "bytes": 8031,
+      "sha256": "0504a3fc90cca1b0f9b7bab3a1aa346b11e0889bc25abf55bd65966965375a46",
+      "reuse_or_read_scope": "Unchanged independent provenance"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/FINAL_SEAL.json",
+      "bytes": 11581,
+      "sha256": "d29e5a9e335bce98e5cd405318beb2373e84ffdd116768637147f5c13fed2854",
+      "reuse_or_read_scope": "Unchanged comparison provenance"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/ROOT_GENERAL_TARGET_CORRECTION.md",
+      "bytes": 1289,
+      "sha256": "c906ed162db678fc2f10bc67afd2af22d929be3fe97fd3a1658cfe12ecd339a9",
+      "reuse_or_read_scope": "Only newly authorized author read; narrow self-adjointness qualification"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/correction_ack/F1_ACK.json",
+      "bytes": 2754,
+      "sha256": "a2347caff2ae4c09d9066a0a359ee9af60e43c66e3bd1e9dd27908b207160d6a",
+      "reuse_or_read_scope": "Separate completed correction acknowledgment"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/correction_ack/ACK_SEAL.json",
+      "bytes": 2552,
+      "sha256": "9aa5e1d41b8e6021dfa22d80ad497d3c8d6fd568c7528b2a41688ef0aa2e5b7a",
+      "reuse_or_read_scope": "Separate acknowledgment identity"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/cube_point_check.py",
+      "bytes": 11793,
+      "sha256": "f25ade25a98715a142f53c11c64df730d51dbfb242a3ae4550a8e0f66b8c2265",
+      "reuse_or_read_scope": "Own earlier cube physical-coordinate builder, reread; not imported"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_independent/operators.py",
+      "bytes": 4141,
+      "sha256": "a152167dff2cfff397397fcc56121cd9b2d79d7f412eb2e134f2f9cbbfa54c95",
+      "reuse_or_read_scope": "Own earlier legal-hop/formation conventions, reread; not imported"
+    }
+  ]
+}

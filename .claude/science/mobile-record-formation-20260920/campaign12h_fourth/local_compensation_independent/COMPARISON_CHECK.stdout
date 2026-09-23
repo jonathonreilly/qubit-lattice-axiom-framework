@@ -1,0 +1,369 @@
+{
+  "scope": "Post-source independent additions; PRE controls are unchanged. No author builder imported or run.",
+  "sum_of_squares": {
+    "geometry": "complete physical four-cycle, spin 1, total charge 2, populations 2 and 4",
+    "dimension": 19,
+    "epsilon": "2/5",
+    "sum_of_squares_exact": true,
+    "full_similarity_constraint_identity_exact": true,
+    "dressing_determinant": "1",
+    "P_rank": 9,
+    "exact_H_kernel_dimension": 9,
+    "all_physical_P_vectors_checked": true
+  },
+  "all_mark_second_event": {
+    "all_instrument_combinations": [
+      {
+        "coherent_first": false,
+        "coherent_second": false,
+        "first_total": 48,
+        "two_mark_zero_flux_norm_squared": 384,
+        "small_time_population8_coefficient_over_kappa_squared": 192,
+        "nonzero_two_mark_channels": 336
+      },
+      {
+        "coherent_first": false,
+        "coherent_second": true,
+        "first_total": 48,
+        "two_mark_zero_flux_norm_squared": 384,
+        "small_time_population8_coefficient_over_kappa_squared": 192,
+        "nonzero_two_mark_channels": 168
+      },
+      {
+        "coherent_first": true,
+        "coherent_second": false,
+        "first_total": 48,
+        "two_mark_zero_flux_norm_squared": 384,
+        "small_time_population8_coefficient_over_kappa_squared": 192,
+        "nonzero_two_mark_channels": 168
+      },
+      {
+        "coherent_first": true,
+        "coherent_second": true,
+        "first_total": 48,
+        "two_mark_zero_flux_norm_squared": 384,
+        "small_time_population8_coefficient_over_kappa_squared": 192,
+        "nonzero_two_mark_channels": 84
+      }
+    ],
+    "all_36_author_first_mark_polynomials_independently_matched": true,
+    "total_Gram_terms": [
+      {
+        "shift": [
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "coefficient": 8
+      },
+      {
+        "shift": [
+          -1,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": 8
+      },
+      {
+        "shift": [
+          0,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "coefficient": 8
+      },
+      {
+        "shift": [
+          0,
+          0,
+          0,
+          -1,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "coefficient": 8
+      },
+      {
+        "shift": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "coefficient": 8
+      },
+      {
+        "shift": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          -1,
+          1
+        ],
+        "coefficient": 8
+      },
+      {
+        "shift": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": 384
+      },
+      {
+        "shift": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "coefficient": 8
+      },
+      {
+        "shift": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          -1
+        ],
+        "coefficient": 8
+      },
+      {
+        "shift": [
+          0,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0
+        ],
+        "coefficient": 8
+      },
+      {
+        "shift": [
+          0,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0
+        ],
+        "coefficient": 8
+      },
+      {
+        "shift": [
+          1,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "coefficient": 8
+      },
+      {
+        "shift": [
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0
+        ],
+        "coefficient": 8
+      }
+    ],
+    "total_Gram_identity": "384 I + 8 sum_six_faces(W_p+W_p^dagger)",
+    "coefficient_bounds_over_kappa_squared": [
+      144,
+      240
+    ]
+  },
+  "general_graph_first_sector": {
+    "vertices": 9,
+    "A": [
+      0,
+      2,
+      5,
+      8
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        8
+      ]
+    ],
+    "scope": "Irregular disconnected graph; one A pair has three common neighbors and another has two",
+    "square_count": 4,
+    "compensated_scalar": -40,
+    "original_scalar": 42,
+    "exact_initial_operator_action_terms": 9,
+    "canonical_and_cycle_formula_exact": true,
+    "post_first_local_pair_identity_exact": true
+  },
+  "detuning_non_scalar_countercontrol": {
+    "state": "One physical basis component of the actual first (0,1), plus-at-zero output",
+    "q": [
+      1,
+      -1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "E": [
+      1,
+      0,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "mean_M": 6.0,
+    "norm_squared_Mpsi": 44.0,
+    "variance_M": 8.0,
+    "interpretation": "M is non-scalar already on a permitted fixed-N physical block. A fixed fractional compensation error therefore violates the stated all-state uniform-at-zero criterion."
+  },
+  "elapsed_seconds": 0.06780229206196964
+}

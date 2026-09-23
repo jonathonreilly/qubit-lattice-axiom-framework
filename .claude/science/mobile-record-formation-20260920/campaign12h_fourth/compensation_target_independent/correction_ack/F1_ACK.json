@@ -1,0 +1,46 @@
+{
+  "created_utc": "2026-09-23T20:09:04.721548+00:00",
+  "scope": "Narrow F1 wording correction only; no unchanged mathematical reruns",
+  "finding": "The blanket self-adjointness sentence includes raw graph coefficients and formation jumps that need not be self-adjoint.",
+  "replacement": "Both Hamiltonian coefficients H2^C and H4^C are self-adjoint.",
+  "resolved": true,
+  "qualification": "The correction is a separately sealed mandatory companion; the original note and all prior evidence remain unchanged. No formula, proof, assumptions, or effective generator changed. No formal audit status.",
+  "bindings": [
+    {
+      "role": "correction",
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/ROOT_GENERAL_TARGET_CORRECTION.md",
+      "bytes": 1289,
+      "sha256": "c906ed162db678fc2f10bc67afd2af22d929be3fe97fd3a1658cfe12ecd339a9"
+    },
+    {
+      "role": "original_note",
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "bytes": 6721,
+      "sha256": "9bc691a07fd70c1a813852aa0cac55832065b3c95cf3d50e5528845f6613e0b0"
+    },
+    {
+      "role": "original_author_seal",
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/GENERAL_TARGET_AUTHOR_SEAL.json",
+      "bytes": 1061,
+      "sha256": "630f063e8fd546c844dba720943198070c49573d9de1c3870531ec40791e373f"
+    },
+    {
+      "role": "comparison",
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/COMPARISON.md",
+      "bytes": 8645,
+      "sha256": "fba9bda81cf6a5a4c7c06a5eb23c8482f2a75a16dcb4749b3b7232782bf0e6a5"
+    },
+    {
+      "role": "final_seal",
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/FINAL_SEAL.json",
+      "bytes": 11581,
+      "sha256": "d29e5a9e335bce98e5cd405318beb2373e84ffdd116768637147f5c13fed2854"
+    },
+    {
+      "role": "pre_seal",
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/PRE_COMPARISON_SEAL.json",
+      "bytes": 8031,
+      "sha256": "0504a3fc90cca1b0f9b7bab3a1aa346b11e0889bc25abf55bd65966965375a46"
+    }
+  ]
+}

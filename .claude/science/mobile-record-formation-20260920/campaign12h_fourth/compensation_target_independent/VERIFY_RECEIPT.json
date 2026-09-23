@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/verify_evidence.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent",
+  "started_utc": "2026-09-23T19:50:36.533290+00:00",
+  "finished_utc": "2026-09-23T19:50:36.889056+00:00",
+  "exit_code": 0,
+  "script_sha256": "3277067b68813595a5cc4329cebedc37b143da1019d960dca7a45d4b1cf4205a",
+  "builder_sha256": "63420338e81e4b4f83b3e8aa6a146e76d98d9c848440259259959997b00e76f3",
+  "stdout_sha256": "de1aa701203a14b1769490d2f32ec76db04607b6cc499cf6078f7806b1261ac8",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

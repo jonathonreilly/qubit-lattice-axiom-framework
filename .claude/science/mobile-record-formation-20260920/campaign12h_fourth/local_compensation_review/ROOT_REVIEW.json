@@ -1,0 +1,72 @@
+{
+  "created_utc": "2026-09-23T20:54:06.079470+00:00",
+  "source_raw_head_before_this_packet": "3d89ef3f057c47ac16441e4f0cd31c09f5ac21a5",
+  "publication_base_commit": "8ccef7097deb77fe79f0d9406eef7d5c6e4962bd",
+  "disposition": "Ready for a regular conditional-research milestone PR; no merge, formal audit verdict, retained status or native selection.",
+  "source_records": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/GENERAL_TARGET_AUTHOR_SEAL.json",
+      "sha256": "630f063e8fd546c844dba720943198070c49573d9de1c3870531ec40791e373f",
+      "bytes": 1061
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/LOCAL_CONSTRUCTION_AUTHOR_SEAL.json",
+      "sha256": "88d002cd35fb4b71859bc23efe2f41d465dd2ac5c33a0826db596934189f70b3",
+      "bytes": 8203
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_locality_author/AUTHOR_SEAL.json",
+      "sha256": "b275ae727810f32fe3c2721e2c3d294a8dfc9873f5a4a97344590217ffe76413",
+      "bytes": 3519
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/FINAL_SEAL.json",
+      "sha256": "d29e5a9e335bce98e5cd405318beb2373e84ffdd116768637147f5c13fed2854",
+      "bytes": 11581
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/correction_ack/ACK_SEAL.json",
+      "sha256": "9aa5e1d41b8e6021dfa22d80ad497d3c8d6fd568c7528b2a41688ef0aa2e5b7a",
+      "bytes": 2552
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/FINAL_SEAL.json",
+      "sha256": "1686e2d2eb412524644552abf02726d7d3f65c862ba2d541801e96397f60ea09",
+      "bytes": 26454
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/ROOT_GENERAL_TARGET_CORRECTION.md",
+      "sha256": "c906ed162db678fc2f10bc67afd2af22d929be3fe97fd3a1658cfe12ecd339a9",
+      "bytes": 1289
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/COMPARISON.md",
+      "sha256": "9d383919f5edc32ba827bef8155c1c1878744d3c5171fcd8a71f776b957c81da",
+      "bytes": 17445
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_independent/comparison_check.py",
+      "sha256": "647975ab74846834ad0bd8af26958c7fc9727e5d9641adf3f174a832f9d39cb0",
+      "bytes": 8675
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_review/SYNTHESIS.md",
+      "sha256": "4f034f1460ee92aee5d6a45dfdf892bbeca5eb90cd4184c1d71e8c41a74e6a4c",
+      "bytes": 8318
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_review/SCOPE_CHALLENGES.md",
+      "sha256": "112dc500ec1d64e0bfd10c8d7985219aed8ad969eff25d9ac95d92410cdafbad",
+      "bytes": 3253
+    }
+  ],
+  "authenticated_unique_binding_count": 100,
+  "review": {
+    "complete_arguments": "Root read the full general/local/locality author arguments, author controls, both independent REPORTs and scientific controls, all new comparison arguments and comparison_check.py. Earlier exact source reads reused unchanged at pinned hashes.",
+    "new_local_comparison": "Final hash1686e2d2\u2026 authenticated 80 occurrences and 77 unique identities; complete COMPARISON.md and new independent mathematical control read. The tool-truncated metadata listing was replaced by full programmatic binding authentication, not treated as an argument review.",
+    "accepted_correction": "Only the general note wording about selfadjointness required repair: both Hamiltonian coefficients are selfadjoint; arbitrary displayed operators need not be. Frozen original plus explicit correction and independent acknowledgement are included. No formula changes.",
+    "independence": "Independent source reconstruction sealed before source comparison; source-informed all-mark and irregular-graph controls are separately attributed. Root did not count source-bound author reruns or numerous controls as additional independence.",
+    "execution_limits": "Root read and authenticated independently executed evidence; no new independent physical run is claimed by publication verification. Finite-spin controls are finite fixtures; proofs carry statewise/domain claims.",
+    "scope": "Changed positive local interaction; fixed finite graphs; supplied quantum/Gauss/bath model; full density/register limit statewise. No all-input uniform rotor rate, volume theorem, source resource model, field phase or TOE identification."
+  }
+}

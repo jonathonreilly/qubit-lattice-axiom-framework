@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "general_graph_locality_check.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_locality_author",
+  "started_utc": "2026-09-23T20:13:52.504702+00:00",
+  "finished_utc": "2026-09-23T20:13:54.901954+00:00",
+  "elapsed_seconds": 2.397024624980986,
+  "returncode": 0,
+  "runner_sha256": "7319cca1eb71df39145d5cc9b353df61f45f8a18a10b5453ea6186a8a172b85d",
+  "stdout_sha256": "f649861fc5f12ebeab06c6aff411a498dbb4bde83983058e563660c6d89294b7",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

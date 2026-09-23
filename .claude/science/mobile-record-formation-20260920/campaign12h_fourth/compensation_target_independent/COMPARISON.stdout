@@ -1,0 +1,34 @@
+{
+  "PRE_sha256": "0504a3fc90cca1b0f9b7bab3a1aa346b11e0889bc25abf55bd65966965375a46",
+  "PRE_bindings_unchanged": {
+    "sources": 1,
+    "artifacts": 18
+  },
+  "author_seal_sha256": "630f063e8fd546c844dba720943198070c49573d9de1c3870531ec40791e373f",
+  "author_bindings_verified": {
+    "sources": 1,
+    "artifacts": 1
+  },
+  "author_note_sha256": "9bc691a07fd70c1a813852aa0cac55832065b3c95cf3d50e5528845f6613e0b0",
+  "author_equation_2_matches_exact_independent_coefficients_and_jumps": true,
+  "both_canonical_Hamiltonian_coefficients_self_adjoint": true,
+  "finding": {
+    "id": "F1",
+    "type": "Narrow overbroad self-adjointness sentence; equations and theorem unchanged.",
+    "line": 97,
+    "quote": "All displayed operators are self-adjoint.",
+    "raw_graph_fourth_antihermitian_frobenius_squared": "202",
+    "formation_jump_antihermitian_frobenius_squared": [
+      "46",
+      "29/2"
+    ],
+    "requested_replacement": "Both Hamiltonian coefficients H2^C and H4^C are self-adjoint."
+  },
+  "comparison_limits": {
+    "full_author_note_read": true,
+    "other_author_files_read": false,
+    "new_scientific_execution": "Exact coefficient identity and sentence countercontrol only; no repeated propagation.",
+    "stronger_PRE_diagonal_discrepancy_bound": "O(epsilon^2), versus the sufficient author O(epsilon); not a discrepancy.",
+    "excluded_scope": "No particular local compensation construction or physical completion was read or checked."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent/block_expansion_check.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensation_target_independent",
+  "started_utc": "2026-09-23T19:41:53.193306+00:00",
+  "finished_utc": "2026-09-23T19:41:53.426155+00:00",
+  "exit_code": 0,
+  "script_sha256": "33ac85e5ed1658ae094667d60a27d8a2d69c62aa1d19e8cc128089d4f9188594",
+  "builder_sha256": "63420338e81e4b4f83b3e8aa6a146e76d98d9c848440259259959997b00e76f3",
+  "stdout_sha256": "ad57093272a5bf6ff3e1c184056a3a1b6cb0507045cd5c49f39375ad7354dd97",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

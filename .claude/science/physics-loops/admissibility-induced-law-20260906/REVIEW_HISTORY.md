@@ -202,3 +202,6 @@ applied, and only the coordinator may perform authorized integration.
 
 ## 2026-09-22 block 84 — author checks (not a review PASS)
 Written lens pass by the supervisor. Independent-`δ_j` identity re-derived before use; block 59's matrix evaluated symbolically; threshold derived; `χ`'s convergence shown; the size of the rest energy declared underived; sea and minimisation named as comparator premises. Census 7/7 in family.
+
+## 2026-09-23 block 84 — corrigendum (supervisor, Claude Opus 5.5)
+Thresholds qualified: rates linear in block 59's variable at fixed arithmetic mean; the law's own unit (mean log rate) gives `0.228` and an exact mass (block 89). Text-only.

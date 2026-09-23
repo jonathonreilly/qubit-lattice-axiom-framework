@@ -22,15 +22,22 @@
  "stdout_sha256": "69e9f4c6bff5ffd10001aa26506367ec970d482875903279d036a59ec9300336",
  "stdout_tail": "translation  exactly one of four regular order-eight subgroups is normal\nPASS independent.affine  split affine action has plane stabilizer 24 and joint stabilizer 6\nPASS independent.matrix_census  complete 3-by-3 matrix census matches both stabilizers\nFAIL independent.primary_contract  primary receipt pins current sources and the independently rebuilt headline\nPASS hostile.automorphism  transposing two map images breaks incidence preservation\nPASS hostile.omitted_generator  omitting the second extra generator collapses 384 to 96\nPASS hostile.partition  moving one column breaks the eight-by-24 partition\nPASS hostile.primary_status  a failing primary receipt cannot satisfy the consumer contract\nPASS hostile.group_order  a mutated group order cannot satisfy the consumer contract\nper_element: checked -- all 192 support columns enter the independent incidence, group, block, and affine checks\nper_site: checked and not executed -- one supplied coordinate four-cube only; no framework cell or site is identified\nper_mode: checked and not executed -- the finite permutation action has no field or momentum-mode decomposition\nper_block: checked -- complete eight-block action, four regular subgroups, and all seven label planes\nlattice_wide: checked and not executed -- no multi-cell, arbitrary-domain, boundary, thermodynamic, or continuum result\nRECEIPT outputs/physical_cell_cutting_hidden_three_bit_geometry_cycle743_independent_check_2026_08_05_receipt_2026-08-05.json\nTOTAL: PASS=17 FAIL=2\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T091450Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T181647Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha da25a1f4 differs from the current HEAD 609f4254 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=17 FAIL=2' vs cache 'TOTAL: PASS=19 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main, cell-cutting pin class (#8289): the Cycle 742 and 743 receipts pin MINIMAL_AXIOMS at its 2026-08-05 bytes (changed 2026-08-13) and pin requirements-release.txt at e153eea3 (2026-08-12); main has 7756c108 since f6f861e8f0 (2026-09-07); the 742 receipts also pin Cycle 741/737 receipts re-emitted on 2026-08-14. Issue #8821.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T181647Z"
  }
 }

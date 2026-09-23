@@ -19,14 +19,21 @@
  "stdout_sha256": "301bad01291a272ef01856fb490112163fb8d65a31ba7e72688fda3997a060ec",
  "stdout_tail": "ss rows for s=-1, and no 5:4 anywhere :: {'hit_3_4': [(1, 1)]}\nPASS pi-ceiling corollary: |R| <= pi/|theta0| = 1.0556 for every uniform-field modulation on the full W=16 and W=64 lattices; the 5:4 advance word (|R| = 1.25) is unreachable by any uniform-field rate shift, while the declared A-count convention has a 3:4-class row :: {'ceiling': 1.0557935731446526, 'max_ratio_found': 1.045600047967765}\nFAIL matched-ray certification: the Cycle-611 P-A (m=16, k=4) prepared state certifies through its own rays (frozen prediction), while the raw-ray control on the same state stays uncertified \u2014 certification is a property of the (ray, state) pair :: {'matched': {'rate': -0.3125, 'predicted': -0.47357742338851666, 'locked': False, 'convention_independent': False}, 'raw_control_certified': False, 'cumulative_success': 0.00695871364018185}\nPASS causal-order bridge: consistent sequential co-registrations are admitted and the joint predecessor relation is acyclic :: {'s1': 'admitted', 's2': 'admitted', 'acyclic': True}\nPASS inverted registration: the locally checkable cross-order rule refuses a shared event that would precede an earlier shared event in one device (no silent cycle admission) :: {'first': 'admitted', 'attempt_after_forced_inversion': 'refused_inverted'}\nPASS adversary witness: forcing inverted identifications past the rule creates a cyclic joint relation, which the acyclicity decoder detects (undefined, never a lawful order) :: {'acyclic': False}\nRESULT 5 2 elapsed 4.91 s\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T073917Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T181647Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 21f123d5 differs from the current HEAD 609f4254 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Slot state, not main: this log has two FAILs, but on a clean main checkout the runner gives RESULT 6 1 with only the designed matched-ray FAIL that the committed cold run and receipt record (pass_count 6, fail_count 1). The extra byte-pin FAIL ('the Cycle-610 and Cycle-611 runners and the consumed Cycle-610 receipt are byte-pinned and unchanged') passes on the clean checkout; in the slot, runners executed earlier in the same shard rewrite receipts under outputs/.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T181647Z"
  }
 }

@@ -22,15 +22,22 @@
  "stdout_sha256": "45a21b5b1731ce101f5809440d4425173481206d7b4b0fcbd310e37998c5401d",
  "stdout_tail": " 140 per odd quarter reading, its 2562 splits distinct\nPASS G26  no intermediate or final table in any of the searches reached the cap of 30000000 entries\nPASS G27  all 64967 recorded sets at fourteen recompute to their own reading, have weight 14, and are distinct\nPASS G28  each of the five planted fourteen piece sets is found by a search blind to it, including the two whose profile cuts one quarter and the one that cuts two\nPASS G29  the sets found at fourteen fall into orbits of the symmetries that fix their reading, of sizes dividing 48\nPASS G30  the synthetic reading outside the column space is carried by no set at any size searched\nPASS G31  none of the six nonconstant readings is carried by any set of exactly fourteen pieces\nPASS G32  the searches at every even size to fourteen are complete and empty for the six, and each forces an even total, barring every odd size: the six readings need at least sixteen pieces\nelapsed under 500 s peak memory under 2500 MB\nFAIL G33  the whole runner finishes under 900 seconds inside the printed 2500 MB\nN5 per_element: checked -- all 192 columns\nN5 per_site: checked -- one supplied coordinate cell\nN5 per_mode: checked, not executed -- no modes\nN5 per_block: checked -- all 15800 rows and licensed cells\nN5 lattice_wide: checked, not executed -- no limit claim\nPASS G34  the complete output stays under 6000 characters\nRECEIPT outputs/physical_cell_cutting_fourteen_frontier_cycle741_2026_08_05_receipt_2026-08-05.json\n\nTOTAL: PASS=33 FAIL=2\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T075111Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T181646Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 7dbe5e6a differs from the current HEAD 609f4254 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=33 FAIL=2' vs cache 'TOTAL: PASS=35 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main, cell-cutting pin class (#8289): D01 fails because both Cycle 739 receipts pin requirements-release.txt at e153eea3 (2026-08-12); main has 7756c108 since f6f861e8f0 (2026-09-07); the G33 FAIL is the peak-RSS half of the 900 s / 2500 MB gate on this machine (environment). Issue #8816.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T181646Z"
  }
 }

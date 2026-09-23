@@ -22,15 +22,22 @@
  "stdout_sha256": "c0be157cab7b972ae4f56eb335c035d21f8010b8a66223dba887c1367fe4754d",
  "stdout_tail": "eir own and both are symmetries in the group already, the other 102 missing by as much as 12738\nPASS G27  a four-for-four exchange has 192 signed images, every one blind against all 15800 cuttings, and they span 60 of the 104 blind dimensions, leaving 44\nPASS G28  those images span a part of the blind space that every symmetry carries into itself, of dimension 60, holding no constant weighting\na least exchange reaches 60 of the 104 blind dimensions; averaged squares for that part 13, for the rest 8, across 6, with the seen space 11\nPASS G29  the part and the rest rebuild the blind count 33, which follows from its premise, the measured content being that every average came out a whole number, as a wrong trace would not\nper_element: checked -- all 192 piece coordinates enter the exact invariant-kernel and character checks\nper_site: checked and not executed -- the theorem concerns one supplied coordinate four-cube only\nper_mode: checked -- exact characters resolve multiplicity overlap between the seen and blind modules\nper_block: checked -- blind, seen, exchange-orbit, and complementary blocks are tested explicitly\nlattice_wide: checked and not executed -- no multicell, infinite-lattice, causal, or continuum claim\n\nelapsed under 100 s peak memory under 2500 MB\nPASS G30  inside its time and memory allowance\nPASS G31  its output stays under 6000 characters\n\nRECEIPT outputs/physical_cell_cutting_blind_space_symmetry_cycle755_2026_08_09_receipt_2026-08-09.json\nTOTAL: PASS=33 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T104251Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T181646Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 1adc8349 differs from the current HEAD 609f4254 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=33 FAIL=1' vs cache 'TOTAL: PASS=34 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main, cell-cutting pin class (#8289): dependency.cycle754 fails because both Cycle 754 receipts pin requirements-release.txt at e153eea3 (2026-08-12); main has 7756c108 since f6f861e8f0 (2026-09-07). Issue #8813.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T181646Z"
  }
 }

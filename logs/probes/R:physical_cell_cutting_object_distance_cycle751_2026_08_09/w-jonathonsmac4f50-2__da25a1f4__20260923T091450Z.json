@@ -22,11 +22,12 @@
  "stdout_sha256": "979cde220e381b6d6361a8b007e3633160d6da65f4af6475b7f655c4dc9e736d",
  "stdout_tail": "FAIL dependency.cycle749  current primary and independent Cycle 749 certificates bind all rows and 132 carriers\nFAIL dependency.cycle750  current primary and independent Cycle 750 certificates bind both carrier graph types\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_cell_cutting_object_distance_cycle751_2026_08_09.py\", line 210, in <module>\n    bad_c749[\"family_separator\"][\"family_sizes\"] = [12, 12, 12, 24, 25, 47]\n    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^\nKeyError: 'family_separator'\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T091450Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T181647Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha da25a1f4 differs from the current HEAD 609f4254 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: parse field 'total' found nothing in the stdout: the run may not have reached its summary",
@@ -34,5 +35,11 @@
    "FAIL: the pinned cache ends with the verdict 'TOTAL: PASS=49 FAIL=0' and this run printed none",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_cell_cutting_object_distance_cycle751_2026_08_09.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main, cell-cutting pin class (#8289): dependency.cycle749/750 fail because all four Cycle 749/750 receipts pin requirements-release.txt at e153eea3 (2026-08-12); main has 7756c108 since f6f861e8f0 (2026-09-07). Issue #8822.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T181647Z"
  }
 }

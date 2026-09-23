@@ -22,11 +22,12 @@
  "stdout_sha256": "c63a4337682c5227fa44a923120753007c0880af6220849b3e7768ae1c2b61f3",
  "stdout_tail": "750 primary and independent certificates bind both carrier graph types\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_cell_cutting_object_distance_cycle751_independent_check_2026_08_09.py\", line 205, in <module>\n    predecessor = runpy.run_path(\n                  ^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 287, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_cell_cutting_carrier_cube_metric_cycle750_independent_check_2026_08_09.py\", line 172, in <module>\n    predecessor = runpy.run_path(\n                  ^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 287, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_cell_cutting_family_separator_cycle749_independent_check_2026_08_08.py\", line 513, in <module>\n    group = closure(generators)\n            ^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/physical_cell_cutting_family_separator_cycle749_independent_check_2026_08_08.py\", line 465, in closure\n    product = tuple(int(value) for value in generator[element_array])\n                                            ~~~~~~~~~^^^^^^^^^^^^^^^\nIndexError: index 0 is out of bounds for axis 0 with size 0\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T091452Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T181647Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha da25a1f4 differs from the current HEAD 609f4254 (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: parse field 'total' found nothing in the stdout: the run may not have reached its summary",
@@ -34,5 +35,11 @@
    "FAIL: the pinned cache ends with the verdict 'TOTAL: PASS=16 FAIL=0' and this run printed none",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_cell_cutting_object_distance_cycle751_independent_check_2026_08_09.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main, cell-cutting pin class (#8289): the Cycle 749/750 contracts fail on the requirements-release.txt pin (e153eea3 vs 7756c108 since 2026-09-07); on a clean main checkout the live predecessor replay and the Cycle 751 primary contract fail too (PASS=12 FAIL=4) - this log shows fewer FAILs because the 751 primary had rewritten its receipt earlier in the same shard. Issue #8823.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T181647Z"
  }
 }

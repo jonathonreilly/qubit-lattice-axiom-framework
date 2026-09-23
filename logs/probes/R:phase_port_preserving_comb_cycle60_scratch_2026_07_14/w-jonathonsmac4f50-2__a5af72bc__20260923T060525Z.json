@@ -1,0 +1,32 @@
+{
+ "task": "R:phase_port_preserving_comb_cycle60_scratch_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "phase",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/phase_port_preserving_comb_cycle60_scratch_2026_07_14.py",
+ "seed": 43525,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5af72bc",
+ "started_utc": "20260923T060525Z",
+ "elapsed_s": 2.3,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5c2396caf4d6eb0b27e8bc7a5be49f4ceddf3c4b56a76cb36e7d84e7de736dfc",
+ "stdout_tail": "FAIL A01 note exists\nPASS A02 base is completed Cycle 57\nPASS A03 table has 21 canonical rows\nPASS A04 table is single-valued under all rotations\nPASS A05 construction has 52 additions\nPASS B PAIR orbit is exact :: ((1, -2, -3), (2, -2, -2), (2, -1, -3))\nPASS B ALL orbit is exact :: ((2, -2, -3),)\nPASS B R1 orbit is exact :: ((2, -3, -3), (2, -2, -4), (3, -2, -3))\nPASS B R2 orbit is exact :: ((1, -3, -3), (1, -2, -4), (2, -3, -2), (2, -1, -4), (3, -2, -2), (3, -1, -3))\nPASS B MARK orbit is exact :: ((1, -3, -2), (1, -1, -4), (3, -1, -2))\nPASS B S8 orbit is exact :: ((0, -3, -2), (0, -1, -4), (1, -3, -1), (1, 0, -4), (3, -1, -1), (3, 0, -2))\nPASS B phase port remains open\nPASS B phase port is adjacent to b\nPASS B additions avoid official support\nPASS B q/a/b/c remain open\nPASS B q/a/b/c certificates are exact\nPASS C compiled condition count is exact :: 80\nPASS C reachable-state count is exact :: 242,033\nPASS C edge count is exact :: 1,650,121\nPASS C has one complete terminal\nPASS C has no incomplete terminal\nPASS C has no output conflict\nPASS C has no parasite :: []\nPASS C OPEN_C never precedes q/a/b certificates\nPASS C OPEN_B never precedes q/a certificates\n\nSUMMARY: 24 PASS / 1 FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T060527Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

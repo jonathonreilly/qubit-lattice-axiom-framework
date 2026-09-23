@@ -1,0 +1,98 @@
+
+===============================================================================
+A - Source and authority boundary
+===============================================================================
+PASS A source exists: RECORD_ONLY_STATE_BELL_LAW_TYPE_DICHOTOMY_CYCLE29_NOTE_2026-07-14.md
+PASS A source exists: MINIMAL_AXIOMS_2026-06-29.md
+PASS A source exists: axiom_premise_nodes.json
+PASS A note is authority-free
+PASS A note does not amend an axiom
+PASS A exact state sentence is quoted
+PASS A live source says state is records
+PASS A live source denies dynamics
+PASS A no state edit is authorized
+PASS A global and enlarged-state routes both remain live
+
+===============================================================================
+B - Exact Bell-local record-response polytope
+===============================================================================
+PASS B four deterministic response maps per wing
+PASS B sixteen deterministic local vertices
+PASS B every deterministic local vertex has abs CHSH two
+PASS B an arbitrary displayed local convex mixture stays bounded :: S=0
+PASS B local convexity proof uses normalized positive weights
+
+===============================================================================
+C - Exact no-signalling quantum transcript table
+===============================================================================
+PASS C context (0, 0) normalizes
+PASS C context (0, 0) is strictly positive
+PASS C Alice marginal one-half at (0, 0) x=-1
+PASS C Alice marginal one-half at (0, 0) x=1
+PASS C Bob marginal one-half at (0, 0) y=-1
+PASS C Bob marginal one-half at (0, 0) y=1
+PASS C context (0, 0) recovers its correlation
+PASS C context (0, 1) normalizes
+PASS C context (0, 1) is strictly positive
+PASS C Alice marginal one-half at (0, 1) x=-1
+PASS C Alice marginal one-half at (0, 1) x=1
+PASS C Bob marginal one-half at (0, 1) y=-1
+PASS C Bob marginal one-half at (0, 1) y=1
+PASS C context (0, 1) recovers its correlation
+PASS C context (1, 0) normalizes
+PASS C context (1, 0) is strictly positive
+PASS C Alice marginal one-half at (1, 0) x=-1
+PASS C Alice marginal one-half at (1, 0) x=1
+PASS C Bob marginal one-half at (1, 0) y=-1
+PASS C Bob marginal one-half at (1, 0) y=1
+PASS C context (1, 0) recovers its correlation
+PASS C context (1, 1) normalizes
+PASS C context (1, 1) is strictly positive
+PASS C Alice marginal one-half at (1, 1) x=-1
+PASS C Alice marginal one-half at (1, 1) x=1
+PASS C Bob marginal one-half at (1, 1) y=-1
+PASS C Bob marginal one-half at (1, 1) y=1
+PASS C context (1, 1) recovers its correlation
+PASS C exact quantum abs CHSH is two-root-two :: S=-2*sqrt(2)
+PASS C quantum table exceeds Bell-local bound
+
+===============================================================================
+D - Record-state and law-type separations
+===============================================================================
+PASS D same current record can have different legal futures
+PASS D current-record Markov sufficiency requires lumpability
+PASS D one transcript signature admits distinct exact laws
+PASS D global table is context indexed without signalling
+
+===============================================================================
+E - Type gate and constitutional consequence
+===============================================================================
+PASS E note contains bell-local factorization
+PASS E note contains chsh <= 2
+PASS E note contains 2 sqrt(2)
+PASS E note contains state is a configuration of records
+PASS E note contains record-fibre strong lumpability
+PASS E note contains global history weights
+PASS E note contains measurement-dependent boundary
+PASS E note contains persistent preparation record
+PASS E note contains separate law placement
+PASS E note contains qualification would need revision
+PASS E note contains no record clause is forced
+PASS E global route preserves current state ontology
+PASS E process-state route is explicitly conditional
+PASS E exact law identity remains the common residue
+PASS E N1 section exists
+PASS E N2 section exists
+PASS E N3 section exists
+PASS E N4 section exists
+PASS E N5 section exists
+PASS E N6 section exists
+PASS E N7 section exists
+PASS E N8 section exists
+
+===============================================================================
+TOTAL
+===============================================================================
+PASS=71 FAIL=0
+RESULT: PASS
+TYPE_GATE: record-only ontology admits a global history law; a local ontic quantum carrier would require an explicit state-language change

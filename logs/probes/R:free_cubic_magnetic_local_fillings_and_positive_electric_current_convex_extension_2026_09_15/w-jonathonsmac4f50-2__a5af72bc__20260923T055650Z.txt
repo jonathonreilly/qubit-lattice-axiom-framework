@@ -1,0 +1,491 @@
+{
+  "relative_homotopies": [
+    {
+      "kinds": [
+        "both",
+        "both",
+        "both"
+      ],
+      "m": 2,
+      "degrees": [
+        {
+          "degree": 0,
+          "dimension": 8,
+          "projection_rank": 0,
+          "max_homotopy_entry": 1
+        },
+        {
+          "degree": 1,
+          "dimension": 36,
+          "projection_rank": 0,
+          "max_homotopy_entry": 1
+        },
+        {
+          "degree": 2,
+          "dimension": 54,
+          "projection_rank": 0,
+          "max_homotopy_entry": 1
+        },
+        {
+          "degree": 3,
+          "dimension": 27,
+          "projection_rank": 1,
+          "max_homotopy_entry": null
+        }
+      ],
+      "anisotropic_control": {}
+    },
+    {
+      "kinds": [
+        "both",
+        "both",
+        "both",
+        "both"
+      ],
+      "m": 1,
+      "degrees": [
+        {
+          "degree": 0,
+          "dimension": 1,
+          "projection_rank": 0,
+          "max_homotopy_entry": 1
+        },
+        {
+          "degree": 1,
+          "dimension": 8,
+          "projection_rank": 0,
+          "max_homotopy_entry": 1
+        },
+        {
+          "degree": 2,
+          "dimension": 24,
+          "projection_rank": 0,
+          "max_homotopy_entry": 1
+        },
+        {
+          "degree": 3,
+          "dimension": 32,
+          "projection_rank": 0,
+          "max_homotopy_entry": 1
+        },
+        {
+          "degree": 4,
+          "dimension": 16,
+          "projection_rank": 1,
+          "max_homotopy_entry": null
+        }
+      ],
+      "anisotropic_control": {}
+    },
+    {
+      "kinds": [
+        "left",
+        "absolute",
+        "absolute"
+      ],
+      "m": 2,
+      "degrees": [
+        {
+          "degree": 0,
+          "dimension": 18,
+          "projection_rank": 0,
+          "max_homotopy_entry": 1
+        },
+        {
+          "degree": 1,
+          "dimension": 42,
+          "projection_rank": 0,
+          "max_homotopy_entry": 1
+        },
+        {
+          "degree": 2,
+          "dimension": 32,
+          "projection_rank": 0,
+          "max_homotopy_entry": 1
+        },
+        {
+          "degree": 3,
+          "dimension": 8,
+          "projection_rank": 0,
+          "max_homotopy_entry": null
+        }
+      ],
+      "anisotropic_control": {}
+    },
+    {
+      "kinds": [
+        "absolute",
+        "absolute",
+        "absolute"
+      ],
+      "m": 2,
+      "degrees": [
+        {
+          "degree": 0,
+          "dimension": 27,
+          "projection_rank": 1,
+          "max_homotopy_entry": 1
+        },
+        {
+          "degree": 1,
+          "dimension": 54,
+          "projection_rank": 0,
+          "max_homotopy_entry": 1
+        },
+        {
+          "degree": 2,
+          "dimension": 36,
+          "projection_rank": 0,
+          "max_homotopy_entry": 1
+        },
+        {
+          "degree": 3,
+          "dimension": 8,
+          "projection_rank": 0,
+          "max_homotopy_entry": null
+        }
+      ],
+      "anisotropic_control": {}
+    }
+  ],
+  "boundary_controls": {
+    "top_degree": [
+      {
+        "interior_vertices": 3,
+        "top_degree_charge_mass": 1,
+        "least_filling_cells": 2
+      },
+      {
+        "interior_vertices": 7,
+        "top_degree_charge_mass": 1,
+        "least_filling_cells": 4
+      },
+      {
+        "interior_vertices": 11,
+        "top_degree_charge_mass": 1,
+        "least_filling_cells": 6
+      }
+    ],
+    "anisotropic": [
+      {
+        "kinds": [
+          "both",
+          "both"
+        ],
+        "m": [
+          1,
+          3
+        ],
+        "degrees": [
+          {
+            "degree": 0,
+            "dimension": 3,
+            "projection_rank": 0,
+            "max_homotopy_entry": 1
+          },
+          {
+            "degree": 1,
+            "dimension": 10,
+            "projection_rank": 0,
+            "max_homotopy_entry": 1
+          },
+          {
+            "degree": 2,
+            "dimension": 8,
+            "projection_rank": 1,
+            "max_homotopy_entry": null
+          }
+        ],
+        "anisotropic_control": {
+          "carrier_mass": 2,
+          "least_filling_cells": 4,
+          "required_long_direction_extent": 2
+        }
+      },
+      {
+        "kinds": [
+          "both",
+          "both"
+        ],
+        "m": [
+          1,
+          7
+        ],
+        "degrees": [
+          {
+            "degree": 0,
+            "dimension": 7,
+            "projection_rank": 0,
+            "max_homotopy_entry": 1
+          },
+          {
+            "degree": 1,
+            "dimension": 22,
+            "projection_rank": 0,
+            "max_homotopy_entry": 1
+          },
+          {
+            "degree": 2,
+            "dimension": 16,
+            "projection_rank": 1,
+            "max_homotopy_entry": null
+          }
+        ],
+        "anisotropic_control": {
+          "carrier_mass": 2,
+          "least_filling_cells": 8,
+          "required_long_direction_extent": 4
+        }
+      },
+      {
+        "kinds": [
+          "both",
+          "both"
+        ],
+        "m": [
+          1,
+          11
+        ],
+        "degrees": [
+          {
+            "degree": 0,
+            "dimension": 11,
+            "projection_rank": 0,
+            "max_homotopy_entry": 1
+          },
+          {
+            "degree": 1,
+            "dimension": 34,
+            "projection_rank": 0,
+            "max_homotopy_entry": 1
+          },
+          {
+            "degree": 2,
+            "dimension": 24,
+            "projection_rank": 1,
+            "max_homotopy_entry": null
+          }
+        ],
+        "anisotropic_control": {
+          "carrier_mass": 2,
+          "least_filling_cells": 12,
+          "required_long_direction_extent": 6
+        }
+      }
+    ]
+  },
+  "hodge_and_source": [
+    {
+      "d": 3,
+      "spectra": [
+        {
+          "p": 1,
+          "spectrum": {
+            "2": 3,
+            "4": 6,
+            "6": 3
+          }
+        },
+        {
+          "p": 2,
+          "spectrum": {
+            "4": 3,
+            "6": 3
+          }
+        },
+        {
+          "p": 3,
+          "spectrum": {
+            "6": 1
+          }
+        }
+      ],
+      "current_energy": "5/6",
+      "magnetic_energy": "1/6",
+      "integer_phase_shift": 1,
+      "half_current_phase_ratio": "-1"
+    },
+    {
+      "d": 4,
+      "spectra": [
+        {
+          "p": 1,
+          "spectrum": {
+            "2": 4,
+            "4": 12,
+            "6": 12,
+            "8": 4
+          }
+        },
+        {
+          "p": 2,
+          "spectrum": {
+            "4": 6,
+            "6": 12,
+            "8": 6
+          }
+        },
+        {
+          "p": 3,
+          "spectrum": {
+            "6": 4,
+            "8": 4
+          }
+        },
+        {
+          "p": 4,
+          "spectrum": {
+            "8": 1
+          }
+        }
+      ],
+      "current_energy": "17/24",
+      "magnetic_energy": "7/24",
+      "integer_phase_shift": 1,
+      "half_current_phase_ratio": "-1"
+    }
+  ],
+  "electric_extension": [
+    {
+      "beta": 2.0,
+      "x": -0.7,
+      "hessian": 3.7519020054843937,
+      "lower": 2.9233478907635906,
+      "upper": 4.57665210923641,
+      "finite_difference_error": 1.5631940186722204e-13,
+      "beta_delta": 0.2204405624630426
+    },
+    {
+      "beta": 2.0,
+      "x": -0.19,
+      "hessian": 3.071563602367992,
+      "lower": 2.9233478907635906,
+      "upper": 4.57665210923641,
+      "finite_difference_error": 1.4062084829902233e-11,
+      "beta_delta": 0.2204405624630426
+    },
+    {
+      "beta": 2.0,
+      "x": 0.0,
+      "hessian": 4.4331600840935925,
+      "lower": 2.9233478907635906,
+      "upper": 4.57665210923641,
+      "finite_difference_error": 1.3930190334576764e-11,
+      "beta_delta": 0.2204405624630426
+    },
+    {
+      "beta": 2.0,
+      "x": 0.23,
+      "hessian": 3.138490132201237,
+      "lower": 2.9233478907635906,
+      "upper": 4.57665210923641,
+      "finite_difference_error": 1.2642775715221433e-11,
+      "beta_delta": 0.2204405624630426
+    },
+    {
+      "beta": 2.0,
+      "x": 0.61,
+      "hessian": 3.071563602367992,
+      "lower": 2.9233478907635906,
+      "upper": 4.57665210923641,
+      "finite_difference_error": 1.4062084829902233e-11,
+      "beta_delta": 0.2204405624630426
+    },
+    {
+      "beta": 3.0,
+      "x": -0.7,
+      "hessian": 2.500002640403399,
+      "lower": 2.4693644188766206,
+      "upper": 2.530635581123379,
+      "finite_difference_error": 4.440892098500626e-16,
+      "beta_delta": 0.012254232449351681
+    },
+    {
+      "beta": 3.0,
+      "x": -0.19,
+      "hessian": 2.474787366608836,
+      "lower": 2.4693644188766206,
+      "upper": 2.530635581123379,
+      "finite_difference_error": 5.182521078950231e-13,
+      "beta_delta": 0.012254232449351681
+    },
+    {
+      "beta": 3.0,
+      "x": 0.0,
+      "hessian": 2.5255217291794883,
+      "lower": 2.4693644188766206,
+      "upper": 2.530635581123379,
+      "finite_difference_error": 5.24469356832924e-13,
+      "beta_delta": 0.012254232449351681
+    },
+    {
+      "beta": 3.0,
+      "x": 0.23,
+      "hessian": 2.4772560683361258,
+      "lower": 2.4693644188766206,
+      "upper": 2.530635581123379,
+      "finite_difference_error": 4.68070027181966e-13,
+      "beta_delta": 0.012254232449351681
+    },
+    {
+      "beta": 3.0,
+      "x": 0.61,
+      "hessian": 2.474787366608836,
+      "lower": 2.4693644188766206,
+      "upper": 2.530635581123379,
+      "finite_difference_error": 5.182521078950231e-13,
+      "beta_delta": 0.012254232449351681
+    },
+    {
+      "beta": 4.0,
+      "x": -0.7,
+      "hessian": 1.8750000036654486,
+      "lower": 1.8738587835137148,
+      "upper": 1.876141216486285,
+      "finite_difference_error": 0.0,
+      "beta_delta": 0.0006086487926853883
+    },
+    {
+      "beta": 4.0,
+      "x": -0.19,
+      "hessian": 1.8740606985732895,
+      "lower": 1.8738587835137148,
+      "upper": 1.876141216486285,
+      "finite_difference_error": 1.9317880628477724e-14,
+      "beta_delta": 0.0006086487926853883
+    },
+    {
+      "beta": 4.0,
+      "x": 0.0,
+      "hessian": 1.8759510027421968,
+      "lower": 1.8738587835137148,
+      "upper": 1.876141216486285,
+      "finite_difference_error": 1.9539925233402755e-14,
+      "beta_delta": 0.0006086487926853883
+    },
+    {
+      "beta": 4.0,
+      "x": 0.23,
+      "hessian": 1.874152644931754,
+      "lower": 1.8738587835137148,
+      "upper": 1.876141216486285,
+      "finite_difference_error": 1.7541523789077473e-14,
+      "beta_delta": 0.0006086487926853883
+    },
+    {
+      "beta": 4.0,
+      "x": 0.61,
+      "hessian": 1.8740606985732895,
+      "lower": 1.8738587835137148,
+      "upper": 1.876141216486285,
+      "finite_difference_error": 1.9317880628477724e-14,
+      "beta_delta": 0.0006086487926853883
+    }
+  ]
+}
+TOTAL: PASS=4 FAIL=0
+per_element: executed exact integer interval/tensor homotopies with absolute, one-face-relative and full-relative boundaries.
+per_site: executed top-degree unit-charge and thin-rectangle mass2 controls whose least fillings grow beyond a fixed local carrier.
+per_mode: executed exact three/four-cube Hodge spectra, conserved-current source norms and integer versus half-current phase shifts.
+per_block: executed fifteen exact one-mode magnetic quotient Hessians and multiprecision finite differences for real electric-current extensions.
+lattice_wide: checked and not executed: cubic local filling, source-curvature and exact positive-marginal convexity rely on the stated proofs; the integer-current infrared limit remains open.

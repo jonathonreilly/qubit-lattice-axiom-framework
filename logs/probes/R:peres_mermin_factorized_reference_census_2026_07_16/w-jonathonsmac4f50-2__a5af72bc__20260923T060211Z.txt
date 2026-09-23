@@ -1,0 +1,108 @@
+STATIC AND DYNAMIC FIREWALL
+PASS factorized functions contain no direct forbidden oracle calls or direct host bit operators :: ()
+PASS factorized public signature contains rows and tables only :: ('initial_basis', 'ordered_unsigned_rows', 'ordered_signed_rows', 'tables')
+PASS host enumerates 60 states and 360 ordered bases :: (60, 360)
+
+PHYSICAL-TABLE CACHE BUILD
+PASS cache assembly makes zero direct forbidden oracle calls after component import :: ((120, 60, 0, 0, 0), (120, 60, 0, 0, 0))
+PASS factorized cache sizes are exact :: (32, 1024, 1024, 1024, 544, 10800, 288)
+PASS all physical primitive kinds are exercised :: {'alu': 8, 'status': 8, 'reader': 160, 'parity': 1024, 'multiply': 544, 'case': 10800, 'selector': 21600, 'gate': 21600}
+
+SINGLE-STAGE PREFLIGHT
+PASS all 10,800 factorized stages match the tableau oracle :: ({'attempt': 10800, 'reject': 1080, 'commuting': 2160, 'opposite': 1080, 'support': 9720, 'member': 1080, 'anticommuting': 8640}, [])
+
+CHECKER PREFLIGHT
+PASS all 288 independent checker cases have corrected semantics :: {'attempt': 288, 'parity_different': 144, 'full_minus': 144, 'parity_equal': 144, 'full_plus': 144, 'unsigned_plus': 30, 'unsigned_minus': 6}
+
+FULL 103,680-TRANSCRIPT CENSUS
+PASS global support, parity, product, and weight census is exact :: {'attempt': 103680, 'supported': 38880, 'rejected': 64800, "('first_reject', 1)": 10368, "('first_reject', 2)": 15552, "('first_reject', 3)": 38880, 'q_equal_u': 51840, 'q_different_u': 51840, 'q_equal_u_supported': 38880, 'q_equal_u_rejected': 12960, 'q_different_u_supported': 0, 'unsigned_plus': 86400, 'unsigned_minus': 17280, 'full_plus': 51840, 'full_minus': 51840, 'terminal_h1': 38880, 'supported_unsigned_plus': 32400, 'supported_unsigned_minus': 6480, 'supported_full_plus': 38880, 'supported_full_minus': 0, 'third_deterministic': 38880, "('weight', Fraction(1, 4))": 27648, "('weight', Fraction(1, 2))": 10368, "('weight', Fraction(1, 1))": 864}
+PASS each of six contexts has the exact same support census :: []
+PASS all 36 context-order cells have 2,880/1,080/1,800 :: []
+
+INVARIANCE, SHAPES, AND FIREWALL CLOSE
+PASS basis invariance has 17,280 classes and 86,400 comparisons :: (86400, [])
+PASS order invariance has 17,280 classes and 86,400 comparisons :: (86400, [])
+PASS 38 stage shapes and 76 future-geometry representative keys are exposed :: (38, 76)
+PASS no transcript mismatch crossed the physical/oracle boundary :: {'totals': {}, 'samples': {}}
+PASS old host-supplied membership path was never called :: {'tableau.symplectic': 1802712, 'tableau.multiply_commuting': 848796, 'tableau.tableau_measure': 285552}
+REPRESENTATIVE_COUNT 76
+REPRESENTATIVE (('A01', 'A10', 'D+'), 0, 1, 1) (0, 0, 0, 0, (0, 0, 1))
+REPRESENTATIVE (('A01', 'A10', 'D+'), 1, 1, 1) (4, 0, 5, 2, (0, 0, 0))
+REPRESENTATIVE (('A01', 'A10', 'D-'), 0, 0, 0) (0, 0, 0, 0, (0, 0, 0))
+REPRESENTATIVE (('A01', 'A10', 'D-'), 1, 0, 0) (4, 0, 5, 2, (0, 0, 1))
+REPRESENTATIVE (('A01', 'D+', 'D+'), 0, 1, 1) (0, 0, 3, 0, (0, 1, 0))
+REPRESENTATIVE (('A01', 'D+', 'D+'), 1, 1, 1) (0, 4, 5, 0, (0, 1, 1))
+REPRESENTATIVE (('A01', 'D+', 'D-'), 0, 0, 0) (0, 0, 3, 0, (0, 1, 1))
+REPRESENTATIVE (('A01', 'D+', 'D-'), 1, 0, 0) (0, 4, 5, 0, (0, 1, 0))
+REPRESENTATIVE (('A01', 'D-', 'D+'), 0, 0, 0) (0, 0, 3, 0, (0, 0, 0))
+REPRESENTATIVE (('A01', 'D-', 'D+'), 1, 0, 0) (0, 4, 5, 0, (0, 0, 1))
+REPRESENTATIVE (('A01', 'D-', 'D-'), 0, 1, 0) (0, 0, 3, 0, (0, 0, 1))
+REPRESENTATIVE (('A01', 'D-', 'D-'), 1, 1, 0) (0, 4, 5, 0, (0, 0, 0))
+REPRESENTATIVE (('A10', 'A01', 'D+'), 0, 1, 1) (0, 0, 0, 2, (0, 0, 1))
+REPRESENTATIVE (('A10', 'A01', 'D+'), 1, 1, 1) (4, 0, 5, 4, (0, 0, 0))
+REPRESENTATIVE (('A10', 'A01', 'D-'), 0, 0, 0) (0, 0, 0, 2, (0, 0, 0))
+REPRESENTATIVE (('A10', 'A01', 'D-'), 1, 0, 0) (4, 0, 5, 4, (0, 0, 1))
+REPRESENTATIVE (('A10', 'D+', 'D+'), 0, 1, 1) (0, 0, 4, 0, (0, 1, 0))
+REPRESENTATIVE (('A10', 'D+', 'D+'), 1, 1, 1) (0, 1, 5, 0, (0, 1, 1))
+REPRESENTATIVE (('A10', 'D+', 'D-'), 0, 0, 0) (0, 0, 4, 0, (0, 1, 1))
+REPRESENTATIVE (('A10', 'D+', 'D-'), 1, 0, 0) (0, 1, 5, 0, (0, 1, 0))
+REPRESENTATIVE (('A10', 'D-', 'D+'), 0, 0, 0) (0, 0, 4, 0, (0, 0, 0))
+REPRESENTATIVE (('A10', 'D-', 'D+'), 1, 0, 0) (0, 1, 5, 0, (0, 0, 1))
+REPRESENTATIVE (('A10', 'D-', 'D-'), 0, 1, 0) (0, 0, 4, 0, (0, 0, 1))
+REPRESENTATIVE (('A10', 'D-', 'D-'), 1, 1, 0) (0, 1, 5, 0, (0, 0, 0))
+REPRESENTATIVE (('A11', 'A01', 'D+'), 0, 1, 1) (0, 0, 0, 4, (0, 0, 1))
+REPRESENTATIVE (('A11', 'A01', 'D+'), 1, 1, 1) (4, 0, 5, 0, (0, 0, 0))
+REPRESENTATIVE (('A11', 'A01', 'D-'), 0, 0, 0) (0, 0, 0, 4, (0, 0, 0))
+REPRESENTATIVE (('A11', 'A01', 'D-'), 1, 0, 0) (4, 0, 5, 0, (0, 0, 1))
+REPRESENTATIVE (('A11', 'D+', 'D+'), 0, 1, 1) (0, 1, 4, 0, (0, 1, 0))
+REPRESENTATIVE (('A11', 'D+', 'D+'), 1, 1, 1) (0, 0, 5, 0, (0, 1, 1))
+REPRESENTATIVE (('A11', 'D+', 'D-'), 0, 0, 0) (0, 1, 4, 0, (0, 1, 1))
+REPRESENTATIVE (('A11', 'D+', 'D-'), 1, 0, 0) (0, 0, 5, 0, (0, 1, 0))
+REPRESENTATIVE (('A11', 'D-', 'D+'), 0, 0, 0) (0, 1, 4, 0, (0, 0, 0))
+REPRESENTATIVE (('A11', 'D-', 'D+'), 1, 0, 0) (0, 0, 5, 0, (0, 0, 1))
+REPRESENTATIVE (('A11', 'D-', 'D-'), 0, 1, 0) (0, 1, 4, 0, (0, 0, 1))
+REPRESENTATIVE (('A11', 'D-', 'D-'), 1, 1, 0) (0, 0, 5, 0, (0, 0, 0))
+REPRESENTATIVE (('D+', 'A01', 'D+'), 0, 1, 1) (0, 0, 3, 2, (0, 1, 0))
+REPRESENTATIVE (('D+', 'A01', 'D+'), 1, 1, 1) (0, 4, 5, 2, (0, 1, 1))
+REPRESENTATIVE (('D+', 'A01', 'D-'), 0, 0, 0) (0, 0, 3, 2, (0, 1, 1))
+REPRESENTATIVE (('D+', 'A01', 'D-'), 1, 0, 0) (0, 4, 5, 2, (0, 1, 0))
+REPRESENTATIVE (('D+', 'A10', 'D+'), 0, 1, 1) (0, 0, 4, 2, (0, 1, 0))
+REPRESENTATIVE (('D+', 'A10', 'D+'), 1, 1, 1) (0, 1, 5, 2, (0, 1, 1))
+REPRESENTATIVE (('D+', 'A10', 'D-'), 0, 0, 0) (0, 0, 4, 2, (0, 1, 1))
+REPRESENTATIVE (('D+', 'A10', 'D-'), 1, 0, 0) (0, 1, 5, 2, (0, 1, 0))
+REPRESENTATIVE (('D+', 'A11', 'D+'), 0, 1, 1) (0, 1, 4, 2, (0, 1, 0))
+REPRESENTATIVE (('D+', 'A11', 'D+'), 1, 1, 1) (0, 0, 5, 2, (0, 1, 1))
+REPRESENTATIVE (('D+', 'A11', 'D-'), 0, 0, 0) (0, 1, 4, 2, (0, 1, 1))
+REPRESENTATIVE (('D+', 'A11', 'D-'), 1, 0, 0) (0, 0, 5, 2, (0, 1, 0))
+REPRESENTATIVE (('D+', 'D+', 'D+'), 0, 1, 1) (0, 0, 1, 0, (1, 1, 1))
+REPRESENTATIVE (('D+', 'D+', 'D+'), 1, 1, 1) (36, 0, 5, 0, (0, 1, 1))
+REPRESENTATIVE (('D+', 'D+', 'D-'), 0, 0, 0) (0, 0, 1, 0, (1, 1, 0))
+REPRESENTATIVE (('D+', 'D+', 'D-'), 1, 0, 0) (36, 0, 5, 0, (0, 1, 0))
+REPRESENTATIVE (('D+', 'D-', 'D+'), 0, 0, 0) (0, 0, 1, 0, (1, 0, 1))
+REPRESENTATIVE (('D+', 'D-', 'D+'), 1, 0, 0) (36, 0, 5, 0, (0, 0, 1))
+REPRESENTATIVE (('D+', 'D-', 'D-'), 0, 1, 0) (0, 0, 1, 0, (1, 0, 0))
+REPRESENTATIVE (('D+', 'D-', 'D-'), 1, 1, 0) (36, 0, 5, 0, (0, 0, 0))
+REPRESENTATIVE (('D-', 'A01', 'D+'), 0, 0, 0) (0, 0, 3, 2, (0, 0, 0))
+REPRESENTATIVE (('D-', 'A01', 'D+'), 1, 0, 0) (0, 4, 5, 2, (0, 0, 1))
+REPRESENTATIVE (('D-', 'A01', 'D-'), 0, 1, 0) (0, 0, 3, 2, (0, 0, 1))
+REPRESENTATIVE (('D-', 'A01', 'D-'), 1, 1, 0) (0, 4, 5, 2, (0, 0, 0))
+REPRESENTATIVE (('D-', 'A10', 'D+'), 0, 0, 0) (0, 0, 4, 2, (0, 0, 0))
+REPRESENTATIVE (('D-', 'A10', 'D+'), 1, 0, 0) (0, 1, 5, 2, (0, 0, 1))
+REPRESENTATIVE (('D-', 'A10', 'D-'), 0, 1, 0) (0, 0, 4, 2, (0, 0, 1))
+REPRESENTATIVE (('D-', 'A10', 'D-'), 1, 1, 0) (0, 1, 5, 2, (0, 0, 0))
+REPRESENTATIVE (('D-', 'A11', 'D+'), 0, 0, 0) (0, 1, 4, 2, (0, 0, 0))
+REPRESENTATIVE (('D-', 'A11', 'D+'), 1, 0, 0) (0, 0, 5, 2, (0, 0, 1))
+REPRESENTATIVE (('D-', 'A11', 'D-'), 0, 1, 0) (0, 1, 4, 2, (0, 0, 1))
+REPRESENTATIVE (('D-', 'A11', 'D-'), 1, 1, 0) (0, 0, 5, 2, (0, 0, 0))
+REPRESENTATIVE (('D-', 'D+', 'D+'), 0, 0, 0) (0, 0, 1, 0, (0, 1, 1))
+REPRESENTATIVE (('D-', 'D+', 'D+'), 1, 0, 0) (36, 0, 5, 0, (1, 1, 1))
+REPRESENTATIVE (('D-', 'D+', 'D-'), 0, 1, 0) (0, 0, 1, 0, (0, 1, 0))
+REPRESENTATIVE (('D-', 'D+', 'D-'), 1, 1, 0) (36, 0, 5, 0, (1, 1, 0))
+REPRESENTATIVE (('D-', 'D-', 'D+'), 0, 1, 0) (0, 0, 1, 0, (0, 0, 1))
+REPRESENTATIVE (('D-', 'D-', 'D+'), 1, 1, 0) (36, 0, 5, 0, (1, 0, 1))
+REPRESENTATIVE (('D-', 'D-', 'D-'), 0, 0, 0) (0, 0, 1, 0, (0, 0, 0))
+REPRESENTATIVE (('D-', 'D-', 'D-'), 1, 0, 0) (36, 0, 5, 0, (1, 0, 0))
+
+TOTAL
+PASS 16 FAIL 0
+RESULT PERES_MERMIN_FACTORIZED_REFERENCE_CENSUS

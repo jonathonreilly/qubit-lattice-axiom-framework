@@ -1,0 +1,474 @@
+{
+  "codec": {
+    "frame_orbit": 24,
+    "role_frame_group_cases": 1728,
+    "frame_min_separation_squared": 6,
+    "inverse_error": 1.0281327922224125e-12,
+    "covariance_error": 8.071195399871655e-15,
+    "algebra_automorphism_error": 4.930190325141863e-15,
+    "jacobians": [
+      {
+        "norm_squared": 0.1012513292506011,
+        "determinant": 9.420801213064647e-06,
+        "analytic_determinant": 9.420801241710547e-06,
+        "relative_error": 3.040707463597414e-09
+      },
+      {
+        "norm_squared": 1.8815101619701105,
+        "determinant": 7.681026999436356e-08,
+        "analytic_determinant": 7.681027001908352e-08,
+        "relative_error": 3.218313393560379e-10
+      },
+      {
+        "norm_squared": 18.76553065492988,
+        "determinant": 5.057986619519149e-12,
+        "analytic_determinant": 5.057986625226462e-12,
+        "relative_error": 1.128376392323105e-09
+      }
+    ]
+  },
+  "measure": {
+    "normalized_mass": 0.9999999999999993,
+    "wrong_constant_jacobian_mass": 0.0032405732667141122,
+    "mean_squared_inverse_differential": 3087.999999999998,
+    "boundary_layer_probabilities": [
+      {
+        "boundary_distance": 0.05,
+        "mass": 0.8948354728334882,
+        "gamma_tail": 0.8948354728334882
+      },
+      {
+        "boundary_distance": 0.02,
+        "mass": 0.2005215455371664,
+        "gamma_tail": 0.20052154553716614
+      },
+      {
+        "boundary_distance": 0.01,
+        "mass": 0.0027673922131834137,
+        "gamma_tail": 0.0027673922131833915
+      }
+    ],
+    "support_boundary": "zero_probability_but_in_measure_support; no finite inverse"
+  },
+  "closed_support_codec": {
+    "exact_radial_cases": [
+      {
+        "radius": "0",
+        "image": "0",
+        "inverse": "0"
+      },
+      {
+        "radius": "1",
+        "image": "1/4",
+        "inverse": "1"
+      },
+      {
+        "radius": "2",
+        "image": "sqrt(2)/8",
+        "inverse": "2"
+      },
+      {
+        "radius": "3",
+        "image": "sqrt(5)/10",
+        "inverse": "3"
+      },
+      {
+        "radius": "4",
+        "image": "3*sqrt(10)/40",
+        "inverse": "4"
+      },
+      {
+        "radius": "5",
+        "image": "sqrt(17)/17",
+        "inverse": "5"
+      },
+      {
+        "radius": "6",
+        "image": "5*sqrt(26)/104",
+        "inverse": "6"
+      },
+      {
+        "radius": "7",
+        "image": "3*sqrt(37)/74",
+        "inverse": "7"
+      },
+      {
+        "radius": "8",
+        "image": "7*sqrt(2)/40",
+        "inverse": "8"
+      },
+      {
+        "radius": "9",
+        "image": "2*sqrt(65)/65",
+        "inverse": "9"
+      },
+      {
+        "radius": "10",
+        "image": "9*sqrt(82)/328",
+        "inverse": "10"
+      },
+      {
+        "radius": "11",
+        "image": "5*sqrt(101)/202",
+        "inverse": "11"
+      },
+      {
+        "radius": "sqrt(2)",
+        "image": "sqrt(6)/12",
+        "inverse": "sqrt(2)"
+      },
+      {
+        "radius": "7/3",
+        "image": "7*sqrt(58)/232",
+        "inverse": "7/3"
+      },
+      {
+        "radius": "1/100",
+        "image": "sqrt(10001)/40004",
+        "inverse": "1/100"
+      }
+    ],
+    "all_eight_coordinates": true,
+    "boundary_inverse_radius": "1",
+    "jump_at_radius_one": "1/4 - sqrt(2)/8",
+    "measure_argument": "maps differ only on countably many Lebesgue-null spheres",
+    "scope": "Borel equivariant bijection to closed chart; not continuous or finite-precision stable"
+  },
+  "exact_relay": {
+    "complex_edge": "2/5 + 3*I/7",
+    "cases": [
+      {
+        "path_edges": 2,
+        "hidden_determinant": "1",
+        "recovered_precision": [
+          [
+            "3",
+            "2/5 + 3*I/7"
+          ],
+          [
+            "2/5 - 3*I/7",
+            "2"
+          ]
+        ],
+        "full_determinant": "6929/1225"
+      },
+      {
+        "path_edges": 3,
+        "hidden_determinant": "1",
+        "recovered_precision": [
+          [
+            "3",
+            "2/5 + 3*I/7"
+          ],
+          [
+            "2/5 - 3*I/7",
+            "2"
+          ]
+        ],
+        "full_determinant": "6929/1225"
+      },
+      {
+        "path_edges": 4,
+        "hidden_determinant": "1",
+        "recovered_precision": [
+          [
+            "3",
+            "2/5 + 3*I/7"
+          ],
+          [
+            "2/5 - 3*I/7",
+            "2"
+          ]
+        ],
+        "full_determinant": "6929/1225"
+      },
+      {
+        "path_edges": 5,
+        "hidden_determinant": "1",
+        "recovered_precision": [
+          [
+            "3",
+            "2/5 + 3*I/7"
+          ],
+          [
+            "2/5 - 3*I/7",
+            "2"
+          ]
+        ],
+        "full_determinant": "6929/1225"
+      },
+      {
+        "path_edges": 6,
+        "hidden_determinant": "1",
+        "recovered_precision": [
+          [
+            "3",
+            "2/5 + 3*I/7"
+          ],
+          [
+            "2/5 - 3*I/7",
+            "2"
+          ]
+        ],
+        "full_determinant": "6929/1225"
+      },
+      {
+        "path_edges": 7,
+        "hidden_determinant": "1",
+        "recovered_precision": [
+          [
+            "3",
+            "2/5 + 3*I/7"
+          ],
+          [
+            "2/5 - 3*I/7",
+            "2"
+          ]
+        ],
+        "full_determinant": "6929/1225"
+      },
+      {
+        "path_edges": 8,
+        "hidden_determinant": "1",
+        "recovered_precision": [
+          [
+            "3",
+            "2/5 + 3*I/7"
+          ],
+          [
+            "2/5 - 3*I/7",
+            "2"
+          ]
+        ],
+        "full_determinant": "6929/1225"
+      },
+      {
+        "path_edges": 9,
+        "hidden_determinant": "1",
+        "recovered_precision": [
+          [
+            "3",
+            "2/5 + 3*I/7"
+          ],
+          [
+            "2/5 - 3*I/7",
+            "2"
+          ]
+        ],
+        "full_determinant": "6929/1225"
+      },
+      {
+        "path_edges": 10,
+        "hidden_determinant": "1",
+        "recovered_precision": [
+          [
+            "3",
+            "2/5 + 3*I/7"
+          ],
+          [
+            "2/5 - 3*I/7",
+            "2"
+          ]
+        ],
+        "full_determinant": "6929/1225"
+      }
+    ]
+  },
+  "periodic_map": {
+    "period": 4,
+    "microcell_side": 296,
+    "edge_types": 4,
+    "home_types": 1,
+    "external_endpoints": 8,
+    "fundamental": {
+      "cover": [
+        4,
+        4,
+        4
+      ],
+      "coarse_cells": 64,
+      "active_sites": 196288,
+      "hidden_variables": 196864,
+      "maximum_payload_load": 4,
+      "ordinary_maximum": 2,
+      "path_edges_min": 366,
+      "path_edges_max": 1522,
+      "wrap_steps": 96,
+      "coordinate_sha256": "9175291daa2dfb1cbb74990c609c9400bc095c3e331985849853c5c91a488384"
+    },
+    "doubled": {
+      "cover": [
+        8,
+        4,
+        4
+      ],
+      "coarse_cells": 128,
+      "active_sites": 392576,
+      "hidden_variables": 393728,
+      "maximum_payload_load": 4,
+      "ordinary_maximum": 2,
+      "path_edges_min": 366,
+      "path_edges_max": 1522,
+      "wrap_steps": 160,
+      "coordinate_sha256": "721c558079758f0c37d65bedf5dfdfc69f9d7cf46339ec83351027564676c03c"
+    },
+    "finite_route_site_roles": 196224,
+    "translated_vertices_checked": 28152,
+    "whole_graph_energy": {
+      "hidden_variables": 196864,
+      "compiled_action": 827559.4773815112,
+      "visible_plus_unit_residual_action": 827559.4773815109,
+      "relative_error": 4.220191720670725e-16,
+      "maximum_path_error": 4.547473508864641e-12,
+      "source_diagonal_dominance_margin": 4.154523166106599,
+      "status": "finite full routed action identity; Gaussian integral follows from proved unit triangular Jacobian"
+    },
+    "covariance": {
+      "rotations": 24,
+      "rotated_vertices": 225216,
+      "carrier_error": 3.8586592426327e-12,
+      "source_representation": "decoded scalar labels fixed; frame and spatial graph co-rotate"
+    },
+    "scope": "generic connected periodic grouped graph; DK matching and Record star remain open"
+  },
+  "routing_stress": {
+    "cases": [
+      {
+        "cover": [
+          4,
+          4,
+          4
+        ],
+        "coarse_cells": 64,
+        "active_sites": 265401,
+        "hidden_variables": 266600,
+        "maximum_payload_load": 4,
+        "ordinary_maximum": 2,
+        "path_edges_min": 374,
+        "path_edges_max": 1816,
+        "wrap_steps": 96,
+        "coordinate_sha256": "3533db04472f33edae97b9cc18f492bf54625a6ce3d9fdd64bc6adf4d4f68944",
+        "microcell_side": 360,
+        "source_radius": 1,
+        "home_payloads": [
+          4,
+          3
+        ],
+        "edge_types": 5
+      },
+      {
+        "cover": [
+          6,
+          6,
+          6
+        ],
+        "coarse_cells": 216,
+        "active_sites": 414245,
+        "hidden_variables": 414720,
+        "maximum_payload_load": 2,
+        "ordinary_maximum": 2,
+        "path_edges_min": 1526,
+        "path_edges_max": 2232,
+        "wrap_steps": 180,
+        "coordinate_sha256": "ae1b2e3714fdb3106e518c44b739132083bff4d395dfb7ca73e1a0efc3763688",
+        "microcell_side": 336,
+        "source_radius": 2,
+        "home_payloads": [
+          1
+        ],
+        "edge_types": 1
+      }
+    ],
+    "scope": "additional exact-coordinate finite falsifiers; not a proof by sampling"
+  },
+  "protected_cluster": {
+    "template": "supplied finite Record cluster",
+    "ports": [
+      8,
+      1,
+      1
+    ],
+    "cluster_payloads": [
+      4,
+      3,
+      2,
+      3
+    ],
+    "blank_neighbors_preserved": true,
+    "microcell_side": 360,
+    "fundamental": {
+      "cover": [
+        4,
+        4,
+        4
+      ],
+      "coarse_cells": 64,
+      "active_sites": 289424,
+      "hidden_variables": 290464,
+      "maximum_payload_load": 4,
+      "ordinary_maximum": 3,
+      "path_edges_min": 424,
+      "path_edges_max": 1520,
+      "wrap_steps": 112,
+      "coordinate_sha256": "7a02a6c97e449ffdf1036bb988a8c179a475e6da0637fa0cfd1855c2b668cc07"
+    },
+    "doubled": {
+      "cover": [
+        8,
+        4,
+        4
+      ],
+      "coarse_cells": 128,
+      "active_sites": 578848,
+      "hidden_variables": 580928,
+      "maximum_payload_load": 4,
+      "ordinary_maximum": 3,
+      "path_edges_min": 424,
+      "path_edges_max": 1520,
+      "wrap_steps": 192,
+      "coordinate_sha256": "340956dc562735692453fb8f2c7738d93241eae61aa8217a65597705a67052d0"
+    },
+    "scope": "supplied protected cluster geometry; no periodic DK source-family claim"
+  },
+  "massive_spectral_bounds": {
+    "cases": [
+      {
+        "source_mass": 0.01,
+        "b_bound": 2.642459731703227,
+        "lower_bound": 1.9144619141375594e-05,
+        "actual_minimum": 0.0009261606353562154,
+        "upper_bound": 31.837351823892448,
+        "actual_maximum": 4.6001372299579595,
+        "schur_error": 3.3306690738754696e-16
+      },
+      {
+        "source_mass": 0.3,
+        "b_bound": 2.642459731703227,
+        "lower_bound": 0.0005743385742412678,
+        "actual_minimum": 0.015912699960021856,
+        "upper_bound": 38.53340502034905,
+        "actual_maximum": 4.79566536069064,
+        "schur_error": 2.2591401799415137e-16
+      },
+      {
+        "source_mass": 2.0,
+        "b_bound": 2.642459731703227,
+        "lower_bound": 0.0019144619141375596,
+        "actual_minimum": 0.0455002099448217,
+        "upper_bound": 92.65690312096628,
+        "actual_maximum": 6.127923806072593,
+        "schur_error": 8.881784197001252e-16
+      }
+    ],
+    "hidden_variables": 21,
+    "status": "finite matrix congruence, norm, spectrum and Schur checks; all-volume bounds are proved separately"
+  },
+  "status": "author_checked_finite_witnesses; independent_review_pending",
+  "open": "source/action/measure selection, periodic DK family and autonomous formation"
+}
+per_element: exact complex relay/Schur coefficients, full eight-real-variable matrix Jacobian and Borel radius inverses checked.
+per_site: complete active-site/slot routing on declared finite covers, including protected blanks and maximum load four.
+per_mode: finite massive precision/congruence/spectrum checks only; no physical spinor, photon or massless-mode result.
+per_block: complete 4x4x4 and 8x4x4 grouped routes, negative/range-two/multihome rosters and protected template.
+lattice_wide: checked and not executed — general periodic seam/occupancy and uniformly massive inverse claims use written proofs; no infinite matrix or formation sampler executed.
+TOTAL: PASS=8 FAIL=0

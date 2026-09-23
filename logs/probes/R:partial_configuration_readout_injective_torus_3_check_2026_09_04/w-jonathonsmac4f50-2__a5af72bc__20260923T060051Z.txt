@@ -1,0 +1,18 @@
+external_scientific_inputs: finite support scaffold and declared witnesses; physical access remains unsupplied
+integrity_reads: axioms, deep probe, law pair, history-index note
+construction: finite static target decisions require complete solvers; declared witnesses and pool checked
+negative_scope: required finite target/centered-box solver decisions; no global geometry or pool-negative inference
+AUDIT_INPUT_PATHS:
+  docs/THE_PARTIAL_CONFIGURATION_READOUT_IS_INJECTIVE_ON_THE_3_TORUS_EVERY_LAW_IS_VISIBLE_TO_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-04.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/EXTENSIONAL_NEAREST_NEIGHBOR_RULE_DEEP_PROBE_2026-07-13.md
+  docs/ADMISSIBILITY_COVARIANT_Q8_CONDITIONAL_LAW_PAIR_BOUNDED_THEOREM_NOTE_2026-08-13.md
+  docs/TIME_AXIS_IS_THE_HISTORY_INDEX_RECORD_MONOTONE_DIRECTION_BOUNDED_NOTE_2026-07-03.md
+AUDIT_TIMEOUT_SEC: 300
+cache_write: false
+scientific_dependency: minimal_axioms Admissibility and Record clauses
+declared_math: cubic rotations, ternary support tables, 48-bit demand masks
+solver_mode: required CaDiCaL, Glucose and MiniSat; emitted DRUP lengths are not proof checking
+FAIL: required-solver-engines all required actual engines pass positive/negative calibration
+  residual: {'completed': [], 'error': "ModuleNotFoundError: No module named 'pysat'"}
+TOTAL: PASS=0 FAIL=1

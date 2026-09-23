@@ -1,0 +1,35 @@
+{
+ "task": "R:partially_recorded_regions_make_most_of_law_visible_check_2026_09_04",
+ "type": "runner-reexecution",
+ "lane": "partially",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/partially_recorded_regions_make_most_of_law_visible_check_2026_09_04.py",
+ "seed": 43251,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5af72bc",
+ "started_utc": "20260923T060051Z",
+ "elapsed_s": 72.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=45 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f4ce23c968554f8ee93257437db849a4d4f53d9e7609e57abc96a425b79377e7",
+ "stdout_tail": "|A| = 151489 / 152137 and |R| = 194905 / 196201\nPASS: T4-containment every admissible configuration is reachable for 5 of 6 tables\nPASS: T4-containment-not-universal not universal: one declared table has 1350 admissible configurations no order reaches\nPASS: T4-counterexample the smallest witness carries 3 records, stands, and no order builds it\nPASS: T4-converse converse fails: 43416 reachable under majority are not admissible as they stand\nconverse_witness: .......................0.10\nPASS: T4-reachable-readout the bare reachable set answers 5 of 48 single-digit restrictions: 3 of 24 digits at k <= 4, 2 at k <= 3\nPASS: note-phrases all 15 required counts and boundary phrases appear\nPASS: note-open-question the original unseparated pairs and later joint scope are distinguished\nPASS: note-scope-hygiene the note claims no law selection and no injectivity\nPASS: note-vocabulary the note avoids process, closure and site-rewriting vocabulary\nPASS: note-length the note stays under 330 lines\nPASS: note-registry-id the note declares its registry id\nper_element: all 729 profiles, 48 demand bits and 44 declared witnesses classified exactly\nper_site: each of the 27 sites evaluated in both mask paths\nper_mode: checked and not executed - no spectral or normal-mode decomposition here\nper_block: 24 flip-pairs, six declared tables, 48 single-digit restrictions\nlattice_wide: one 3^3 torus; site-0/value-0 sweep complete to 8 records with mask-preserving symmetry reduction\nTOTAL: PASS=45 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T060204Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_acphilambda_occupancy_realized_state_reduction_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_acphilambda_occupancy_realized_state_reduction_2026_06_11.py",
+ "seed": 43173,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5af72bc",
+ "started_utc": "20260923T055933Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=25 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8d3e30f3965f61573737a0746971b6f53d3faedbccae2f2292a082fb71de6f30",
+ "stdout_tail": "xed points {0, 1/2}; r=1/2 UNSTABLE (|f'(1/2)| = 2 > 1), r=0 stable -- separatrix fact\nPASS: S6.2 2-sector entropy S(p), p = 1/(1+2r): maximized exactly at r=1/2 (p=1/2) -- the thermalizing-arrow attractor fact\nPASS: S6.3 dial geometry is sharp: fixed points of r->2r^2 on [0,inf) are exactly {0, 1/2}; the interior entropy maximum is unique (single sign change of dS/dr on the scanned dial)\nPASS: S7.1 live 06-29 Qualification clauses present verbatim (named primitive content only; non-fixed choices remain open; laws privilege no states and give one answer on their supplied domain)\nPASS: S7.1h historical 06-05 Record non-supply clause present as corroboration only (incl. 'weighting, normalization, probability' and 'occupancy rule')\nPASS: S7.2 realized-state primitive note clauses present: 'The laws do not pick the state', pointwise evaluation, no typical/generic, counterfactual test ('registered data, not derivation output')\nPASS: S7.3 primitive register item 4 already houses the G3 discipline: per-sector weight patterns registered, dial settings 'r = 0, 1/2, 1' named sector data, never forced\nPASS: S7.4 authority: realized_state_primitive is accepted while the physical occupancy grain is an open gate with no premise weight\nPASS: S8.1 BOTH grain models (sector 2pi/g; orbit pi/g) satisfy every checked constraint -- the measure-side binary survives as a named derivation frontier; the reduction moves the VALUE face only (independence-by-exhibition reproduced)\nTOTAL: PASS=25 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T055933Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

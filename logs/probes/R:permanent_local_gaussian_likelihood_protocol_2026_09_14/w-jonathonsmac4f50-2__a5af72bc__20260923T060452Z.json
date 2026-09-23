@@ -1,0 +1,35 @@
+{
+ "task": "R:permanent_local_gaussian_likelihood_protocol_2026_09_14",
+ "type": "runner-reexecution",
+ "lane": "permanent",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/permanent_local_gaussian_likelihood_protocol_2026_09_14.py",
+ "seed": 43492,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5af72bc",
+ "started_utc": "20260923T060452Z",
+ "elapsed_s": 32.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "933d2cda03a1a40543493413decaa71005f7ff8df7db3394767f66ce205493e8",
+ "stdout_tail": "rogram/schedule selection, typical phase, original native Record-star weights, quantum or fermion identification\"\n}\nper_element: complex carrier/linear coefficients, posterior precision and exact determinant formulas checked.\nper_site: complete integer wire/control collision checks on declared finite covers and a twelve-role local-rule example.\nper_mode: finite supplied massive DK matrices and coercivity only; no fermion, quantum or massless identification.\nper_block: three-axis, negative and doubled small-DAG routes and the common logical 768-node DK circuit; full DK physical coordinate roster not executed.\nlattice_wide: checked and not executed \u2014 periodic routing, finite-ancestor and coercivity generality use the written proofs; no infinite observation-conditioned sampler executed.\nTOTAL: PASS=4 FAIL=0\n\n[stderr]\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet\n  sign, logdet = _umath_linalg.slogdet(a, signature=signature)\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet\n  sign, logdet = _umath_linalg.slogdet(a, signature=signature)\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet\n  sign, logdet = _umath_linalg.slogdet(a, signature=signature)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T060525Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/permanent_local_gaussian_likelihood_protocol_2026_09_14.txt against the .txt beside this log"
+  ]
+ }
+}

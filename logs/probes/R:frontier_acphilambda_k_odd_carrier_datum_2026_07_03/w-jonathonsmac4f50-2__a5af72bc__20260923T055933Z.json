@@ -1,0 +1,37 @@
+{
+ "task": "R:frontier_acphilambda_k_odd_carrier_datum_2026_07_03",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_acphilambda_k_odd_carrier_datum_2026_07_03.py",
+ "seed": 43173,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5af72bc",
+ "started_utc": "20260923T055933Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=28 FAIL=0",
+   "PASS=28 FAIL=0"
+  ],
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "89796a37fcace97ce704a6b92f7c36ff0cfffd45a3c7ffedba78171f9b533dcf",
+ "stdout_tail": " sectors k = 1, 2, 3 are each carried separately: Candidate 1 holds the Z6 torsion phases {1: -1/6, 2: -1/3, 3: 1/2} and {1: 1/6, 2: 1/3, 3: 1/2}, and Candidate 2's real cut is computed sector by sector as {1: 0, 2: 0, 3: 0}, so the K-odd cancellation is located in each individual sector and not merely in their sum.\nper_block: checked - two block structures are resolved: the plus and minus holonomy branches accumulate independently to {P_plus: 0, P_minus: 0}, and the parent fixed locus is split into the j = 1, 2 blocks {1: 1/9, 2: 1/9} summing to 2/9, against which candidate decompositions are matched blockwise, with a separate guard rejecting any total-only accidental agreement.\nlattice_wide: checked and not executed - no lattice, volume or orbit count is built anywhere; the parent value 2/9 enters as a given fixed-locus decomposition rather than being computed from a lattice, so this runner certifies only that the three candidate carriers fail to reproduce it exactly, and offers no whole-lattice derivation of the target.\nTOTAL: PASS=28 FAIL=0\nSUMMARY files: docs/ACPHILAMBDA_K_ODD_CARRIER_REGISTERED_DATUM_TEST_BOUNDED_NOTE_2026-07-03.md; scripts/frontier_acphilambda_k_odd_carrier_datum_2026_07_03.py\nSUMMARY checks: PASS=28 FAIL=0\nSUMMARY candidates: C1=NO-MATCH; C2=NO-MATCH; C3=NO-MATCH\nSUMMARY period-matches: none under period-1 full-turn or period-2pi full-turn; A2 not imported\nSUMMARY uncertainties: record-content occurrence map absent; no fixed-locus decomposition match\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T055933Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

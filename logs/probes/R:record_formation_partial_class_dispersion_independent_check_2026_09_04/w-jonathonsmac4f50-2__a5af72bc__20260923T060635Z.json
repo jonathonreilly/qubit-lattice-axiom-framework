@@ -1,0 +1,35 @@
+{
+ "task": "R:record_formation_partial_class_dispersion_independent_check_2026_09_04",
+ "type": "runner-reexecution",
+ "lane": "record",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/record_formation_partial_class_dispersion_independent_check_2026_09_04.py",
+ "seed": 43595,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5af72bc",
+ "started_utc": "20260923T060635Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ab9c878229634ec6fc2ff74178834ce9f7da00abdede45b9b2a5d246f307e5cf",
+ "stdout_tail": "a_projector_maxerr=1.524e-15 rank_maxerr=2.331e-15\nFOCK_CONTROLS wrong_sign_density_gap=1.247219e+00 wrong_h_bond=(1, 3) wrong_h_commutator=1.632993e+00\nPASS single physical-bond sign twist changes the spectrum\nMUTATION L=6 R=000 bond=(0,1,1)-(1,1,1) changed_entries=2 max_spectral_distance=6.980787124e-01 fourth_moment_change=64.000000\nPASS omitting generic zero branches fails spectral cardinality\nOMITTED_ZERO L=6 N=3 nodes=0 live_dimension=189 wrong_count=162 missing=27\nPASS L=6 conditioned even-site propagation and zero-space control\nPROP_SETUP L=6 R=000 initial=(0,1,1) N=3 exact_nodes=0 zero_dim=27 zero_projection=3.901e-31 degree=6 kernel_per_neighbor=1.0 graph_max_distance=9 exact_krylov_sites=108 max_occupied_distance=7\nPROP t=0.2 norm_error=5.551e-16 outside_probability=2.207156346e-01 nearest_probability=2.184556440e-01 nearest_over_t2=5.461391099e+00 max_distance_probability=1.077973494e-14\nPROP t=0.5 norm_error=4.441e-16 outside_probability=8.757575024e-01 nearest_probability=8.115824305e-01 nearest_over_t2=3.246329722e+00 max_distance_probability=3.365646009e-09\nPROP t=1.0 norm_error=0.000e+00 outside_probability=5.841317326e-01 nearest_probability=2.623770138e-01 nearest_over_t2=2.623770138e-01 max_distance_probability=2.874624092e-05\nPASS resource limits\nRESOURCES seconds=0.159 peak_MiB=48.1 global_spectrum_max_error=3.997e-14\nSCOPE finite tori and cube; supplied hopping/deletion/occupation instrument; physical record mapping and clock open\nTOTAL: PASS=13 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T060635Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/record_formation_partial_class_dispersion_independent_check_2026_09_04.txt against the .txt beside this log"
+  ]
+ }
+}

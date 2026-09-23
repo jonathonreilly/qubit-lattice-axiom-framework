@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_acphilambda_hw_complement_reading_registration_equivalence_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_acphilambda_hw_complement_reading_registration_equivalence_2026_06_12.py",
+ "seed": 43171,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5af72bc",
+ "started_utc": "20260923T055931Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ca834ca9884e78466c9cbc2b26a49c896259a0a6e22e462c198a1fe2ba7a5624",
+ "stdout_tail": "tric functions -- hw1 orbit=[(1, 0, 0), (0, 1, 0), (0, 0, 1)]; hw2 orbit (rotation-built)=[(0, 1, 1), (1, 0, 1), (1, 1, 0)]\n  [PASS] A11: frame-dependent component x1 is not constant on the supplied C3 frame orbit -- x1 - x2 nonzero as a polynomial; witness at slots (2,-1,-1): x1=2, rotated x1=-1\n\n----------------------------------------------------------------------------------------\nB12-B15: note consistency checks\n----------------------------------------------------------------------------------------\n  [PASS] B12: note stipulates the supplied slot model and the H(delta) formula in-note\n  [PASS] B13: note carries firewall, Status authority, and No-promotion statement boundaries\n  [PASS] B14: hw support note and staggered gate appear only as context names, not markdown deps\n  [PASS] B15: note .md link inventory is exactly the three load-bearing deps (2026-06-29 memo; KCPT T1 supplied-context bridge; additive/even registrable surface) and all resolve -- md_links=['KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md', 'MINIMAL_AXIOMS_2026-06-29.md', 'KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md', 'REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md']\n\n========================================================================================\nSUMMARY: PASS=17 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T055932Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

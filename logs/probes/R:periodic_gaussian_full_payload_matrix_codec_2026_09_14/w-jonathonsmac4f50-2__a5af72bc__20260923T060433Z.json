@@ -1,0 +1,35 @@
+{
+ "task": "R:periodic_gaussian_full_payload_matrix_codec_2026_09_14",
+ "type": "runner-reexecution",
+ "lane": "periodic",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/periodic_gaussian_full_payload_matrix_codec_2026_09_14.py",
+ "seed": 43473,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5af72bc",
+ "started_utc": "20260923T060433Z",
+ "elapsed_s": 12.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c171721401b3903f4d0903eb08780c582d5fe24f965666fd01875a036e8427c2",
+ "stdout_tail": "        \"actual_minimum\": 0.015912699960021856,\n        \"upper_bound\": 38.53340502034905,\n        \"actual_maximum\": 4.79566536069064,\n        \"schur_error\": 2.2591401799415137e-16\n      },\n      {\n        \"source_mass\": 2.0,\n        \"b_bound\": 2.642459731703227,\n        \"lower_bound\": 0.0019144619141375596,\n        \"actual_minimum\": 0.0455002099448217,\n        \"upper_bound\": 92.65690312096628,\n        \"actual_maximum\": 6.127923806072593,\n        \"schur_error\": 8.881784197001252e-16\n      }\n    ],\n    \"hidden_variables\": 21,\n    \"status\": \"finite matrix congruence, norm, spectrum and Schur checks; all-volume bounds are proved separately\"\n  },\n  \"status\": \"author_checked_finite_witnesses; independent_review_pending\",\n  \"open\": \"source/action/measure selection, periodic DK family and autonomous formation\"\n}\nper_element: exact complex relay/Schur coefficients, full eight-real-variable matrix Jacobian and Borel radius inverses checked.\nper_site: complete active-site/slot routing on declared finite covers, including protected blanks and maximum load four.\nper_mode: finite massive precision/congruence/spectrum checks only; no physical spinor, photon or massless-mode result.\nper_block: complete 4x4x4 and 8x4x4 grouped routes, negative/range-two/multihome rosters and protected template.\nlattice_wide: checked and not executed \u2014 general periodic seam/occupancy and uniformly massive inverse claims use written proofs; no infinite matrix or formation sampler executed.\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T060445Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:record_readable_gauge_invariant_algebra_colour_blind_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "record",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/record_readable_gauge_invariant_algebra_colour_blind_check_2026_09_03.py",
+ "seed": 43603,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5af72bc",
+ "started_utc": "20260923T060643Z",
+ "elapsed_s": 2.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=32 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "92e526a5f3260646998d972da082544d368a0403396c1bf25cc518bc45fa88ef",
+ "stdout_tail": "s Gauss-sector block vanishes identically -- max |P_G G_v^3 P_G| = 0.0, exactly zero because the sector sits inside the cut G_v^3 = 0. The intersection excludes precisely the frame-dependent readouts, retiring the frame-artefact worry of the parent note's section 4\nper_element: checked exact sparse generator entries and nonzero supports on this supplied finite carrier\nper_site: checked local matter/link factors in the supplied model; physical site encoding and formation not derived\nper_mode: checked eight declared Jordan-Wigner modes; no universal claim about alternative mode or readout encodings\nper_block: checked one four-corner plaquette and its specified Gauss/readable algebra; numerical cuts labelled separately\nlattice_wide: checked and not executed \u2014 no larger-block, infinite-lattice, SU(3), continuum or confinement claim tested\nSUMMARY: R n I is exactly the 1296-dim algebra of functions of the abelian charges Q_v and the link-end electric Casimirs -- colour-blind, and on the 82-dim Gauss sector a complete commuting set of 82 rank-one projectors. The raw record pattern separates colour-rotated states at total-variation distance 1; no record-readable AND gauge-invariant observable separates them within the declared tolerances. These82 atoms resolve basis populations, not coherences. The specified aligned Q_v abelian representation has R n I = R. A trace-preserving CP component expectation exists. No physical Record or confinement bridge is derived.\nTOTAL: PASS=32 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T060646Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/record_readable_gauge_invariant_algebra_colour_blind_check_2026_09_03.txt against the .txt beside this log"
+  ]
+ }
+}

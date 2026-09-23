@@ -1,0 +1,35 @@
+{
+ "task": "R:free_staggered_two_step_dispersion_d_dimensional_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "free",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/free_staggered_two_step_dispersion_d_dimensional_2026_06_12.py",
+ "seed": 43169,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5af72bc",
+ "started_utc": "20260923T055929Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "dd55c253c07cc5aab1fc0240c65248220b6fe91e96e54194c1c0cb70b9297e61",
+ "stdout_tail": "FREE STAGGERED TWO-STEP DISPERSION IN D DIMENSIONS\nDeterministic checks; no random inputs.\nPASS: source note has audit-authority guardrail, one-hop links, positive-rate/sign boundary, and no status/stale-LR tokens (8/8 text guards satisfied)\nPASS: two-site-cell staggered phase matrices satisfy Gamma_mu^2=I and anticommutation (d=2: max Clifford residual 0.0e+00; d=3: max Clifford residual 0.0e+00)\nPASS: folded spatial hop has scalar square -sum_mu sin^2(k_mu) in each cell-momentum sector (d=2: max ||A(k)^2 + |sin k|^2 I||_inf 3.1e-17; d=3: max ||A(k)^2 + |sin k|^2 I||_inf 2.8e-16)\nPASS: position-space blocked T_odd T_even decaying spectrum equals exp(-2E(p)) on d=2 and d=3 tori (d=2,L=4: count 16/16, max residual 1.2e-15, max imag 5.7e-16; d=2,L=6: count 36/36, max residual 4.0e-15, max imag 8.6e-16; d=3,L=4: count 64/64, max residual 4.8e-15, max imag 1.8e-15)\nPASS: kernel support is on even spatial offsets after two-step blocking (d=2: max odd-offset |h| 1.1e-17; d=3: max odd-offset |h| 1.5e-17)\nPASS: axis kernel decay rate matches arcsinh(m) on d=2 and d=3 resolved blocks (d=2: rate 0.296138 vs arcsinh(m) 0.295673, rel 0.157%, prefactor 1.96; d=3: rate 0.296667 vs arcsinh(m) 0.295673, rel 0.336%, prefactor 2.42)\nPASS: all-direction contour bound is respected; it gives an explicit positive l1 rate arcsinh(m)/(2d) (d=2: max ratio 0.103, concrete l1 rate r_d=arcsinh(m)/(2d)=0.073918; d=3: max ratio 0.062, concrete l1 rate r_d=arcsinh(m)/(2d)=0.049279)\nTOTAL: PASS=7, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T055930Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/free_staggered_two_step_dispersion_d_dimensional_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

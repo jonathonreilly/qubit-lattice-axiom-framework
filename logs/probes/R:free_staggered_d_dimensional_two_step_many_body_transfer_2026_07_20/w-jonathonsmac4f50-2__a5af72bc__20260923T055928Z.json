@@ -1,0 +1,44 @@
+{
+ "task": "R:free_staggered_d_dimensional_two_step_many_body_transfer_2026_07_20",
+ "type": "runner-reexecution",
+ "lane": "free",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/free_staggered_d_dimensional_two_step_many_body_transfer_2026_07_20.py",
+ "seed": 43168,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5af72bc",
+ "started_utc": "20260923T055928Z",
+ "elapsed_s": 0.6,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "expected_ok": false,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "42b5f178e10ac5ce8a4fe17485e11626d4e53c64cdb1c14fc8a5ed5af2fc148c",
+ "stdout_tail": "e conditional to general d)\nPASS: N4 axiom memo supplies no dynamics\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/free_staggered_d_dimensional_two_step_many_body_transfer_2026_07_20.py\", line 670, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/free_staggered_d_dimensional_two_step_many_body_transfer_2026_07_20.py\", line 627, in main\n    checks.needle(\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/free_staggered_d_dimensional_two_step_many_body_transfer_2026_07_20.py\", line 82, in needle\n    haystack = normalized_whitespace(path.read_text(encoding=\"utf-8\"))\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1027, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1013, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/FREE_STAGGERED_D_DIMENSIONAL_TWO_STEP_MANY_BODY_TRANSFER_IDENTITY_NOTE_2026-07-20.md'\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T055929Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: parse field 'total' found nothing in the stdout: the run may not have reached its summary",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: the pinned cache ends with the verdict 'TOTAL: PASS=15 FAIL=0' and this run printed none",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/free_staggered_d_dimensional_two_step_many_body_transfer_2026_07_20.txt against the .txt beside this log"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "automatic: the runner reads /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/FREE_STAGGERED_D_DIMENSIONAL_TWO_STEP_MANY_BODY_TRANSFER_IDENTITY_NOTE_2026-07-20.md, which is not in the tree at that path",
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T055929Z"
+ }
+}

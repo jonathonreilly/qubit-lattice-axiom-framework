@@ -1,0 +1,34 @@
+{
+ "task": "R:p_flux_selection_check_2026_06_10",
+ "type": "runner-reexecution",
+ "lane": "p",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/p_flux_selection_check_2026_06_10.py",
+ "seed": 43250,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5af72bc",
+ "started_utc": "20260923T060050Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=36 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b4f6b8a7892384b2819b083b863c3d79034ac4202ef76bbd4ccd76d88520396e",
+ "stdout_tail": "is this note's reading of the retained package and not itself a retained requirement, and the two separating observables found are the same kinetic-order datum already named by B-BIT - no new wall is introduced here.\n  scope: zero modes are identified by the numerical threshold |eigenvalue| < 1e-9 rather than by an exact kernel computation, which is doing real work at 512 modes; and the Klein-cube identification is existential over base lines, trying each kernel index until a dressing phase succeeds, so the predicate certifies that some dressing works, with uniqueness supplied separately by the embedded-cube census.\n  scope: only the three even volumes L = 4, 6 and 8 are exercised; odd L is never tested and the cube census returns zero there by construction. The runner is fully deterministic - no RNG stream and no optimizer anywhere.\n\nTOTAL: PASS=36 FAIL=0\nVERDICT: the existing matter-content/observable package (substep-3 cube combinatorics, substep-4 commuting-triple\n         characters, hw=1 distinct characters, M_3(C) no-proper-quotient, count = 3, Z2 grading, non-per-site\n         chirality), instantiated as the kernel-sector realization predicate G, is satisfied by BOTH kinetic\n         classes: K0 (flux +1) carries a canonical exact copy of the full generation carrier in its zero-mode\n         sector. The matter-content route does NOT select phi = -1 on this surface. The only separating\n         observables found are the extra kinetic-order data already named by B-BIT.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T060050Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

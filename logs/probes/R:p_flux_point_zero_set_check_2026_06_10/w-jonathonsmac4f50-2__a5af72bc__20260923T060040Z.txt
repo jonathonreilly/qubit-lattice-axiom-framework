@@ -1,0 +1,26 @@
+========================================================================
+[A] branch construction + zero-set geometry + comparator
+========================================================================
+[PASS]  1. [A] both branches Hermitian; frame-invariant uniform flux K0 phi=+1, K1 phi=-1 (licensed two-class surface, re-derived)
+[PASS]  2. [A] zero-mode counts: K0 (L=4,8,12) = (20,68,140); K1 = (8,8,8)
+[PASS]  3. [A] K0 kernel = lattice trace of the codimension-1 symbol surface sum_mu cos p_mu = 0 (symbol count matches eigencount at L=4,8,12)
+[PASS]  4. [A] zero-set geometry separator (computed): K0 growth exponent 1.78 (extensive, surface-like); K1 count L-independent = 8 (point-like)
+[PASS]  5. [A] comparator (scalar NN + on-site -6, declared OFF the two-class surface): point-like zero set (1,1,1) — 'point-like zero set' is non-vacuous and NOT synonymous with first-order kinetic order
+
+========================================================================
+[B] escape (i): spectral/clustering candidates are
+    branch-neutral on the licensed surface
+========================================================================
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/p_flux_point_zero_set_check_2026_06_10.py", line 641, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/p_flux_point_zero_set_check_2026_06_10.py", line 378, in main
+    st_cluster = ledger_status(
+                 ^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/p_flux_point_zero_set_check_2026_06_10.py", line 306, in ledger_status
+    with open(os.path.join(REPO, "docs/audit/data/audit_ledger.json"),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/audit/data/audit_ledger.json'

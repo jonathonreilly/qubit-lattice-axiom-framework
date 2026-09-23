@@ -1,0 +1,35 @@
+{
+ "task": "R:periodic_finite_clock_villain_covariance_and_masslessness_2026_09_14",
+ "type": "runner-reexecution",
+ "lane": "periodic",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/periodic_finite_clock_villain_covariance_and_masslessness_2026_09_14.py",
+ "seed": 43471,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5af72bc",
+ "started_utc": "20260923T060431Z",
+ "elapsed_s": 2.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "edca8583c7ab4e455b7353b8049f59d7b6ca52bf5a28e2fae7bff57c0bfc1f18",
+ "stdout_tail": "tance\": 10,\n        \"spatial_covariance\": 0.003642430214986305,\n        \"temporal_covariance\": 2.1722913121858727e-06\n      },\n      {\n        \"distance\": 30,\n        \"spatial_covariance\": 0.0004083013503872068,\n        \"temporal_covariance\": 7.5743114617135e-17\n      }\n    ],\n    \"centered_invariant_vector_detected\": true,\n    \"multiplier_axis_values\": [\n      [\n        1.0,\n        1.0,\n        0.0,\n        0.0\n      ],\n      [\n        1.0,\n        1.0,\n        0.0,\n        0.0\n      ],\n      [\n        1.0,\n        1.0,\n        0.0,\n        0.0\n      ]\n    ],\n    \"shell_sum\": 446.6296296296296\n  }\n}\nper_element: scalar theta derivatives, cosine factors and exact finite clock Fourier weights are checked; no single factor is treated as a phase proof.\nper_site: finite cochain incidence, gauge constraints, edge coloring and the 107-edge geometric neighborhood are checked in their stated domains.\nper_mode: finite Fourier projectors, exact dual covariance matrices and transfer spectral identities are checked; continuum dispersion is not inferred.\nper_block: exact cube duality, full square Fejer expansions, the even side-four torus and finite physical transfer blocks are checked personally.\nlattice_wide: checked and not executed \u2014 the infinite-volume covariance and masslessness statements rest on the uniform written proof, not finite samples.\nTOTAL: PASS=15 FAIL=0\nscope: finite identities and explicit counterexamples only; independent proof review and formal audit remain pending.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T060433Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/periodic_finite_clock_villain_covariance_and_masslessness_2026_09_14.txt against the .txt beside this log"
+  ]
+ }
+}

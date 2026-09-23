@@ -1,0 +1,32 @@
+{
+ "task": "R:zero_binary_source_endpoint_macroblock_bind_cycle100_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "zero",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/zero_binary_source_endpoint_macroblock_bind_cycle100_2026_07_15.py",
+ "seed": 43181,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5af72bc",
+ "started_utc": "20260923T055941Z",
+ "elapsed_s": 10.5,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "10287cd63b4a40aa7650487c3f7cc0a71faa39d9992628e219d6173b12384c0b",
+ "stdout_tail": "contents and H0/H1\nPASS B03 every encoder raw input is single-valued\nPASS B04 encoder has no exact raw-input overlap with lifted live law :: ()\nPASS B05 complete lifted union is output-single-valued\nPASS B06 all eleven states have the exact singleton/quiet frontier :: []\nPASS B07 execution is ten forced permanent appends\n\n===============================================================================\nC - Decoder, causal validation, blockers, and covariance\n===============================================================================\nPASS C01 first eight records decode exactly to R_B11\nPASS C02 word completes before VALID and READY\nPASS C03 VALID forms ninth and READY tenth\nPASS C04 every one-bit causal corruption stops before the next certificate :: []\nPASS C05 every tested extra-neighbour record blocks the exact next write :: []\nPASS C06 all 264 rotated stages have the exact transformed frontier :: []\n\n===============================================================================\nD - Scope, N1-N8, and constitutional disposition\n===============================================================================\nFAIL D01 note exists and carries authority none\nFAIL D02 note pins zero added binary source records\nFAIL D03 note names exact next residual\nFAIL D04 note contains N1-N8\nFAIL D05 note denies foundation and axiom effects\n\nSOURCE=254 CODE_BITS=8 VALID=1 READY=1 APPENDS=10\nENCODER_CANONICAL=9 ENCODER_RAW=204 UNION_RAW=5444\nWORD=10010100 ROLE=R_B11\nSUMMARY: 19 PASS / 5 FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T055952Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_abj_phy_retained_bounded_supplier_wiring_2026_06_18.py",
+ "seed": 43170,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5af72bc",
+ "started_utc": "20260923T055930Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0af93a1dacadb01b14559a33b59acc8585ab53ad2dcf9183bc2dbff5556c09aa",
+ "stdout_tail": "ABJ FORMAL LEFT-HANDED TRACE ARITHMETIC\nPASS: [A] Tr[y] is zero (0)\nPASS: [A] Tr[y^3] is -16/9 (-16/9)\nPASS: [A] Tr[C2*y] is 1/3 (1/3)\nPASS: [A] Tr[W2*y] is zero (0)\nPASS: [A] Tr[C3] is 2 (2)\nPASS: [A] reversing the supplied cubic index reverses its trace contribution\nPASS: [A] a changed y packet is rejected (multiplicity, eigenvalue, or index packet changed)\nPASS: [A] a physical hypercharge inference is rejected (formal traces (Fraction(0, 1), Fraction(-16, 9), Fraction(1, 3), Fraction(0, 1), Fraction(2, 1)) do not identify a physical U(1)_Y readout)\nTOTAL: PASS=8 FAIL=0\nVERDICT: supplied formal trace packet verified; no physical P-HY or hypercharge readout inferred.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T055930Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

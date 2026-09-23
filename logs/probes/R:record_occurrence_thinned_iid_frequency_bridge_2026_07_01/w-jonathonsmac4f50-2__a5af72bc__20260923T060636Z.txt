@@ -1,0 +1,56 @@
+Record occurrence thinned-IID frequency bridge
+TRACE: bounded_sparse_frequency_normal_form
+
+PART 1: one-attempt thinned kernel
+PASS: q(bot)=3/4
+PASS: q(0)=3/20
+PASS: q(1)=1/10
+PASS: kernel normalizes
+PASS: activation recovered from non-bot mass
+PASS: conditional p recovered from q/a
+PASS: bot mass is explicit no-record mass
+
+PART 2: exact finite-history enumeration
+PASS: all histories enumerated
+PASS: history weights normalize
+PASS: E[F_bot]=1-a
+PASS: E[F_0]=a p0
+PASS: E[F_1]=a p1
+PASS: E[M/N]=a
+PASS: Var(F_bot)=a(1-a)/N
+PASS: Var(F_0)=q0(1-q0)/N
+PASS: Var(F_1)=q1(1-q1)/N
+PASS: Var(M/N)=a(1-a)/N
+
+PART 3: multinomial and zero-record laws
+PASS: enumerated count probability matches multinomial
+PASS: P(M=0)=(1-a)^N
+PASS: record-count law is binomial
+
+PART 4: recorded-only conditional frequencies
+PASS: E[G_0 | M=1]=p0
+PASS: Var(G_0 | M=1)=p0(1-p0)/m
+PASS: E[G_0 | M=2]=p0
+PASS: Var(G_0 | M=2)=p0(1-p0)/m
+PASS: E[G_0 | M=3]=p0
+PASS: Var(G_0 | M=3)=p0(1-p0)/m
+PASS: E[G_0 | M=4]=p0
+PASS: Var(G_0 | M=4)=p0(1-p0)/m
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/record_occurrence_thinned_iid_frequency_bridge_2026_07_01.py", line 272, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/record_occurrence_thinned_iid_frequency_bridge_2026_07_01.py", line 259, in main
+    part4_recorded_only_conditionals(histories, p)
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/record_occurrence_thinned_iid_frequency_bridge_2026_07_01.py", line 185, in part4_recorded_only_conditionals
+    check("recorded-only statistic is intentionally undefined at M=0", "M>0" in NOTE.read_text(encoding="utf-8"))
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/RECORD_OCCURRENCE_THINNED_IID_FREQUENCY_BRIDGE_2026-07-01.md'

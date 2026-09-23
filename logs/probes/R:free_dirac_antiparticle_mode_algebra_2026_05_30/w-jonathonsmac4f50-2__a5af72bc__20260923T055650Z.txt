@@ -1,0 +1,6 @@
+[PASS] C1_inverse_and_pole_continuation
+[PASS] C2_dirac_spectrum_pmE_double
+[PASS] C3_uv_completeness_norms_relative_sign
+[PASS] C4_car_positive_fock_relabeling
+[PASS] C5_raw_negative_branch_diagnostic
+SCORECARD PASS=5 FAIL=0

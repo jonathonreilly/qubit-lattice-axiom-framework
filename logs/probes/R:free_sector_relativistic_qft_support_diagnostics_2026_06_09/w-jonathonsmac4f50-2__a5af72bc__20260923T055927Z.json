@@ -1,0 +1,35 @@
+{
+ "task": "R:free_sector_relativistic_qft_support_diagnostics_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "free",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/free_sector_relativistic_qft_support_diagnostics_2026_06_09.py",
+ "seed": 43167,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5af72bc",
+ "started_utc": "20260923T055927Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "576e56aa827b675ddbb3077a7ae96e77393e6710edeedfb18c4012740341a2b3",
+ "stdout_tail": "H|) is positive-definite\n\n----------------------------------------------------------------------------------------\nPart C: equal-time spacelike parity diagnostic for statistics route\n----------------------------------------------------------------------------------------\n  equal-time r=1.3: |antisymmetric|=0.000e+00, |symmetric|=4.980e-02\n  [PASS] antisymmetric two-point combination vanishes in the sampled equal-time spacelike check\n  [PASS] symmetric two-point combination is nonzero in the sampled equal-time spacelike check\n  [PASS] diagnostic supplies input for a spin-statistics route but does not select statistics by itself  --  requires the separate relativistic reconstruction/locality theorem\n\n----------------------------------------------------------------------------------------\nPart D: one-loop symmetric-surface anisotropy diagnostic\n----------------------------------------------------------------------------------------\n  [PASS] sampled one-loop velocity coefficient is time/space symmetric on the supplied symmetric surface  --  |z_t - z_s|=1.04e-17; support only, not an all-orders theorem\n  [PASS] non-perturbative interacting continuum existence remains outside this diagnostic  --  explicit boundary\n\n========================================================================================\nTOTAL: PASS=8 FAIL=0\nBoundary: support diagnostics only; no domino closure or audit verdict.\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T055928Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

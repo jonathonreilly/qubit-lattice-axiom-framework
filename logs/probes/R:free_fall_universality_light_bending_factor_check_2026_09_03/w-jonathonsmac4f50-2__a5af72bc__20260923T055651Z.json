@@ -1,0 +1,35 @@
+{
+ "task": "R:free_fall_universality_light_bending_factor_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "free",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/free_fall_universality_light_bending_factor_check_2026_09_03.py",
+ "seed": 43011,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5af72bc",
+ "started_utc": "20260923T055651Z",
+ "elapsed_s": 156.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=20 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d04b676bee9b7ad47362120b13ca38b16e183f506290aff60324b91fe6b15464",
+ "stdout_tail": "amics] (d<H0>/dt)/g is -0.8034/-1.3482/-1.6746/-0.9502 versus -E v_x -0.8023/-1.3481/-1.6751/-0.9497, relative difference 0.14 percent; acceleration coefficients +0.3431/+2.4076/+2.5794/-2.0680 track the packet-symbol comparison within 0.7 percent. This does not derive a physical test-body law.\nPASS D1 [finite energy fork] Hop weight is E0^2/E; chi=E0^2/E^2 is not actual speed squared. At m=2, measured v/c 0.010, hop-only coefficient -0.0282 versus total-energy -3.9906 near the Dirac rest point.\nPASS D2 [operator identity] At m=0, hop and total-energy operators coincide, residual 0.0e+00; the supplied mass term otherwise distinguishes their densities.\nPASS E1 [finite transverse comparison] Low measured v/c 0.002 and further coefficients -3.9352/-3.9574/-3.9879 at speeds +0.002/+0.578/+0.665 give ratios +0.9839/+0.9894/+0.9970 to the scalar-symbol value. The exact transverse symbol is speed independent; finite rays also involve v_y^2.\nPASS E2 [finite longitudinal comparison] Coefficients -2.8583/+0.1515/+2.6691 at measured speeds +0.358/+0.677/+0.778 versus exact lattice-symbol targets -2.8310/+0.2056/+2.6828. Sign threshold is cos(p_x)=2 sin^2(p_x)/E^2; the 1/sqrt(2) speed threshold is only a small-momentum limit.\nSUMMARY: exact nonzero-energy scalar-band identities and finite packet diagnostics for a supplied total-energy coupling. Momentum, speed, acceleration ratio and ray curvature remain distinct; source/readout/clock and physical gravity are open.\nTOTAL: PASS=20 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T055927Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

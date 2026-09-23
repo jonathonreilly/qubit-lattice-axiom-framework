@@ -1,0 +1,35 @@
+{
+ "task": "R:free_bilinear_quasilocal_lr_bridge_2026_06_10",
+ "type": "runner-reexecution",
+ "lane": "free",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/free_bilinear_quasilocal_lr_bridge_2026_06_10.py",
+ "seed": 43010,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5af72bc",
+ "started_utc": "20260923T055650Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8d030a5eca7440b4708ab4e6f3310398b05d78f55913c730202a0c2766550332",
+ "stdout_tail": "FREE BILINEAR EXACT-LOG QUASILOCAL LR BRIDGE\n========================================================================\nScope: U=1 bilinear two-step sector; exact H=-log(T_hat^2)/(2 a_tau).\n\n[PASS] Q1: d=1 weighted overlap W_mu is finite and below the cited strip-bound shell sum\n       eta=0.236538, mu=0.118269, W_mu=1.165050, shell_bound=18.132017\n[PASS] Q2: Z^3 weighted overlap W_mu is finite when 3*mu < eta < arcsinh(m)\n       eta=0.236538, mu=0.017740, W_mu(64^3)=1.810509, shell_bound=13841.615873\n[PASS] Q3: weighted convolution path bound holds for sampled path lengths\n       worst sampled path/bound ratio=0.187571\n[PASS] Q4: finite hard-core bilinear matrix witness obeys the quasilocal LR envelope\n       L=7, finite local weight=1.017695, theorem W_mu=1.165050, worst measured/bound=2.323882e-02\n[PASS] Q5: long-range-tailed positive comparator does not have the stable exponential weighted norm\n       W_bad(100)=1.254e+00, W_bad(300)=4.643e+07\n\nRESULT: for any mu with 0 < d*mu < eta < arcsinh(m), W_mu < infinity and\n        ||[alpha_t(A_x), B_y]|| <= 2||A||||B|| exp(-mu d(x,y) + 4 W_mu |t|).\nTOTAL: PASS=5 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T055650Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

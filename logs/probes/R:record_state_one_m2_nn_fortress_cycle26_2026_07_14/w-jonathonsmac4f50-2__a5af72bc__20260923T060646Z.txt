@@ -1,0 +1,22 @@
+
+===============================================================================
+A - Foundation, predecessors, authority, and N1-N8 contract
+===============================================================================
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/record_state_one_m2_nn_fortress_cycle26_2026_07_14.py", line 580, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/record_state_one_m2_nn_fortress_cycle26_2026_07_14.py", line 565, in main
+    source_contract()
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/record_state_one_m2_nn_fortress_cycle26_2026_07_14.py", line 135, in source_contract
+    cycle17 = CYCLE17_NOTE.read_text(encoding="utf-8").lower()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/AUTONOMOUS_SELF_CLOSING_DIAMOND_CYCLE17_NOTE_2026-07-14.md'

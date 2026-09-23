@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_abj_pcomp_scale_free_singlet_completion_classification_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_abj_pcomp_scale_free_singlet_completion_classification_2026_06_18.py",
+ "seed": 43170,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5af72bc",
+ "started_utc": "20260923T055930Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=72 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a827a2597d2e2f1957c3ccfcda46886f4a0602805bdf17a391a60f27c81071b5",
+ "stdout_tail": "0)\nPASS: A-class branch 1 satisfies supplied equation 2 (0)\nPASS: A-class branch 1 satisfies supplied equation 3 (0)\nPASS: A-class branch 1 satisfies supplied equation 4 (0)\nPASS: A-class branch 2 satisfies supplied equation 1 (0)\nPASS: A-class branch 2 satisfies supplied equation 2 (0)\nPASS: A-class branch 2 satisfies supplied equation 3 (0)\nPASS: A-class branch 2 satisfies supplied equation 4 (0)\nPASS: A-class wrong sign z=+6a is rejected by E_lin (-12*a)\nPASS: A-class wrong x,y sign is rejected by E_mix (-2*a)\nPASS: A-class wrong root pair is rejected by E_cub (90*a**3)\n\n== Part 4: A-class exact rational sample checks ==\nPASS: A-class a=1/3, branch 1: all supplied residuals vanish ((Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)))\nPASS: A-class a=1/3, branch 2: all supplied residuals vanish ((Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)))\nPASS: A-class a=2/5, branch 1: all supplied residuals vanish ((Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)))\nPASS: A-class a=2/5, branch 2: all supplied residuals vanish ((Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)))\nPASS: A-class a=-1/2, branch 1: all supplied residuals vanish ((Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)))\nPASS: A-class a=-1/2, branch 2: all supplied residuals vanish ((Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)))\n\nTOTAL: PASS=72 FAIL=0\nVERDICT: exact positive theorem over the supplied finite algebraic system.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T055930Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

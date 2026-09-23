@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_full128_25site_nn_supplied_schedule_2026_07_24",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_full128_25site_nn_supplied_schedule_2026_07_24.py",
+ "seed": 43206,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5af72bc",
+ "started_utc": "20260923T060006Z",
+ "elapsed_s": 22.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6f752d3e1f8498f3dd873e921591e1cd760266a69c7b6c5e4a805823e42da19e",
+ "stdout_tail": " scheduling of A is not', 'one_hot_clock': {'coordinate_rule': 'serpentine prefix in plane y=R', 'count': 504, 'first': (-11, 11, -11), 'last': (-9, 11, 10), 'coordinates_sha256': '396050238f14bd9e07a8e39e03c7d3e0897c96c83b3a7fb17bc24a4c047afae2'}, 'controller_relay': (0, 9, 11), 'controller_bypass_work': ((0, 10, 11), (1, 10, 11))}, 'genesis_supplied': ('100 inner-cube routing blanks', 'all remaining cube work blanks', 'three outer mirror repetition blanks', 'fifteen cycle |+> auxiliaries', 'local reference-parity convention', 'one-hot clock token at c0', 'fixed ordered program word', 'controller circuit A', 'beta/contact fixture', 'bounded decoded proper-cubic occupied-pair sign action'), 'not_claimed': ('recurrent or two-cell full-M64 neighborhood', 'shared-port recurrent lattice compiler', 'preparation theorem', 'physical clock or rate', 'historical rank-73 seam block', 'optimal overhead', 'genesis derivation', 'global no-go or minimum claim', 'bare coordinate-only invariance of one fixed controller A', 'the separate 61-site antisymmetry-register W_A extension (no executable map/word imported)')}\nSUMMARY {\"elapsed_seconds\": 22.03057004098082, \"fail_count\": 0, \"pass_count\": 12, \"result_boundary\": \"Constructive bounded NN circuit compiler for the full local six-mode M64 tensor one seam-port M2 Fock space. Controller macro A, its transformed frame family and decoded frame-sign action remain supplied; this is not a recurrent or two-cell full-M64 compiler.\", \"status\": \"PASS\"}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T060029Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run 'SUMMARY {\"elapsed_seconds\": 22.03057004098082, \"fail_count\": 0, \"pass_count\": 12' vs cache 'SUMMARY {\"elapsed_seconds\": 27.304051874903962, \"fail_count\": 0, \"pass_count\": 1'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_full128_25site_nn_supplied_schedule_2026_07_24.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:record_formation_partial_class_dispersion_2026_09_04",
+ "type": "runner-reexecution",
+ "lane": "record",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/record_formation_partial_class_dispersion_2026_09_04.py",
+ "seed": 43594,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5af72bc",
+ "started_utc": "20260923T060634Z",
+ "elapsed_s": 1.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "20ecd4a7899d8bb92681e990a2b1ea7528f7ae0af87b6b2a827b285db57829d6",
+ "stdout_tail": "vg=(-0.7674,-0.7674,-0.7674) d1=(-0.7671,-0.7671,-0.7671) e1=4.679e-04 d2=(-1.5341,-1.5341,-1.5341) e2=1.177e-03 wrap=7.168e-04\nPK N=12 r=1 pol=011 normerr<2.0e-12 zero=2.268e-32 vg=(-0.7674,-0.7674,-0.7674) d1=(-0.7671,-0.7671,-0.7671) e1=4.679e-04 d2=(-1.5341,-1.5341,-1.5341) e2=1.177e-03 wrap=7.168e-04\nPK N=12 r=2 pol=101 normerr<2.0e-12 zero=1.689e-32 vg=(-0.7674,-0.7674,-0.7674) d1=(-0.7671,-0.7671,-0.7671) e1=4.679e-04 d2=(-1.5341,-1.5341,-1.5341) e2=1.177e-03 wrap=7.168e-04\nPK N=12 r=3 pol=110 normerr<2.0e-12 zero=2.071e-32 vg=(-0.7674,-0.7674,-0.7674) d1=(-0.7671,-0.7671,-0.7671) e1=4.679e-04 d2=(-1.5341,-1.5341,-1.5341) e2=1.177e-03 wrap=7.168e-04\nPK N=16 r=0 pol=000 normerr<2.0e-12 zero=3.020e-32 vg=(-0.7674,-0.7674,-0.7674) d1=(-0.7674,-0.7674,-0.7674) e1=1.192e-07 d2=(-1.5348,-1.5348,-1.5348) e2=9.458e-07 wrap=1.675e-06\nPK N=16 r=1 pol=011 normerr<2.0e-12 zero=3.047e-32 vg=(-0.7674,-0.7674,-0.7674) d1=(-0.7674,-0.7674,-0.7674) e1=1.192e-07 d2=(-1.5348,-1.5348,-1.5348) e2=9.458e-07 wrap=1.675e-06\nPK N=16 r=2 pol=101 normerr<2.0e-12 zero=3.200e-32 vg=(-0.7674,-0.7674,-0.7674) d1=(-0.7674,-0.7674,-0.7674) e1=1.192e-07 d2=(-1.5348,-1.5348,-1.5348) e2=9.458e-07 wrap=1.675e-06\nPK N=16 r=3 pol=110 normerr<2.0e-12 zero=2.854e-32 vg=(-0.7674,-0.7674,-0.7674) d1=(-0.7674,-0.7674,-0.7674) e1=1.192e-07 d2=(-1.5348,-1.5348,-1.5348) e2=9.458e-07 wrap=1.675e-06\nPASS runtime under 60 seconds\nPASS peak memory under 1 GiB\nRESOURCES seconds=0.787 peak_MiB=85.3\nTOTAL: PASS=17 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T060635Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/record_formation_partial_class_dispersion_2026_09_04.txt against the .txt beside this log"
+  ]
+ }
+}

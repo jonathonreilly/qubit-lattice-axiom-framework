@@ -1,0 +1,20 @@
+FREE STAGGERED 3+1 REFLECTED GRAM / CAR-FOCK REPRESENTATION
+Infinite temporal lattice, finite even 3D spatial torus, free supplied CAR/Grassmann branch.
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/free_staggered_3plus1_reflected_gram_car_fock_representation_2026_07_12.py", line 559, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/free_staggered_3plus1_reflected_gram_car_fock_representation_2026_07_12.py", line 542, in main
+    test_note_guardrails()
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/free_staggered_3plus1_reflected_gram_car_fock_representation_2026_07_12.py", line 201, in test_note_guardrails
+    raw = NOTE.read_text(encoding="utf-8").replace("`", "").replace("*", "")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/FREE_STAGGERED_3PLUS1_REFLECTED_GRAM_CAR_FOCK_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-07-12.md'

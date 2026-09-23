@@ -1,0 +1,36 @@
+{
+ "task": "R:record_function_finite_sector_algebra_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "record",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/record_function_finite_sector_algebra_2026_06_05.py",
+ "seed": 43595,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5af72bc",
+ "started_utc": "20260923T060635Z",
+ "elapsed_s": 0.8,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=31 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a4c1b3872bc3edb2b6bf45f69de9773b180db665e57c2578379eaa4c32c984f6",
+ "stdout_tail": "ct identity and swap updates preserve the same additive readout rule\n[PASS] R6.0 omega is the exact primitive cube root exp(2 pi i/3)\n[PASS] R6.1 both cited authority notes exist at their exact docs/ paths\n[PASS] R6.2 this note carries a markdown link to each authority\n       link targets, not backticks, are what create the ledger edge\n[FAIL] R6.3 live sharded ledger statuses remain dependency-eligible\n       pipeline compatibility only; read from shards: ['unaudited', 'unaudited']\n[PASS] R6.4 every lambda_k is real for a real, b complex\n       lambda=[a_s + 2*x_s, a_s - x_s - sqrt(3)*y_s, a_s - x_s + sqrt(3)*y_s]\n[PASS] R6.5 lambda_k has polar form for R>=0, with phase arbitrary at R=0\n[PASS] R6.6 characters are orthonormal and the isotypic split is 3a^2 : 6|b|^2\n       singlet=3*a_s**2; doublet=6*x_s**2 + 6*y_s**2\n[PASS] R6.7 power sums are sum lambda_k = 3a and sum lambda_k^2 = 3a^2 + 6|b|^2\n[PASS] R6.8 sum lambda_k^2 = 3 (singlet + doublet) for singlet=a^2, doublet=2|b|^2\n       the note's displayed sector powers are the isotypic split, not a posit\n[PASS] R6.9 Q = (sum lambda_k^2)/(sum lambda_k)^2 = 1/3 + (2/3)r exactly\n       Q=(a_s**2 + 2*x_s**2 + 2*y_s**2)/(3*a_s**2)\n[PASS] R6.10 REJECTOR: wrong split is nonidentical and degenerates at b=0\n       residual=3*x_s**2 + 3*y_s**2; b!=0 witness rejects, b=0 coincides\n\nSCORECARD PASS=31 FAIL=1\nFINDING: Record supplies finite additive readout-vector algebra;\n         probability, weighting, and dynamics remain separate gates.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T060636Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'SCORECARD PASS=31 FAIL=1' vs cache 'SCORECARD PASS=32 FAIL=0'"
+  ]
+ }
+}

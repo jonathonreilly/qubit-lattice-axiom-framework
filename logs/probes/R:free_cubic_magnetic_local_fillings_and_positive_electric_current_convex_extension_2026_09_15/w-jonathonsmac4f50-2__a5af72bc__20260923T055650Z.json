@@ -1,0 +1,35 @@
+{
+ "task": "R:free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15",
+ "type": "runner-reexecution",
+ "lane": "free",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/free_cubic_magnetic_local_fillings_and_positive_electric_current_convex_extension_2026_09_15.py",
+ "seed": 43010,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5af72bc",
+ "started_utc": "20260923T055650Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "dc6bbbe3efa71d53f7e0348a76cef172c5b20c5c94033122efa67b19f4771339",
+ "stdout_tail": "ta\": 4.0,\n      \"x\": 0.0,\n      \"hessian\": 1.8759510027421968,\n      \"lower\": 1.8738587835137148,\n      \"upper\": 1.876141216486285,\n      \"finite_difference_error\": 1.9539925233402755e-14,\n      \"beta_delta\": 0.0006086487926853883\n    },\n    {\n      \"beta\": 4.0,\n      \"x\": 0.23,\n      \"hessian\": 1.874152644931754,\n      \"lower\": 1.8738587835137148,\n      \"upper\": 1.876141216486285,\n      \"finite_difference_error\": 1.7541523789077473e-14,\n      \"beta_delta\": 0.0006086487926853883\n    },\n    {\n      \"beta\": 4.0,\n      \"x\": 0.61,\n      \"hessian\": 1.8740606985732895,\n      \"lower\": 1.8738587835137148,\n      \"upper\": 1.876141216486285,\n      \"finite_difference_error\": 1.9317880628477724e-14,\n      \"beta_delta\": 0.0006086487926853883\n    }\n  ]\n}\nTOTAL: PASS=4 FAIL=0\nper_element: executed exact integer interval/tensor homotopies with absolute, one-face-relative and full-relative boundaries.\nper_site: executed top-degree unit-charge and thin-rectangle mass2 controls whose least fillings grow beyond a fixed local carrier.\nper_mode: executed exact three/four-cube Hodge spectra, conserved-current source norms and integer versus half-current phase shifts.\nper_block: executed fifteen exact one-mode magnetic quotient Hessians and multiprecision finite differences for real electric-current extensions.\nlattice_wide: checked and not executed: cubic local filling, source-curvature and exact positive-marginal convexity rely on the stated proofs; the integer-current infrared limit remains open.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T055650Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

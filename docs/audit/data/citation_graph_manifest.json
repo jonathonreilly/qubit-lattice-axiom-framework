@@ -1,6 +1,6 @@
 {
- "edge_count": 13936,
- "node_count": 6390,
+ "edge_count": 13938,
+ "node_count": 6392,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -17658,6 +17658,10 @@
    "deps_hash": "7a3ee4490765",
    "out_degree": 2
   },
+  "sphere_formation_kernel_sensitivity_and_level_contraction_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "2efa2a79ef91",
+   "out_degree": 2
+  },
   "sphere_level_kernel_moments_walk_local_limit_and_finite_plane_mixing_bounded_theorem_note_2026-09-16": {
    "deps_hash": "7d003ba955a9",
    "out_degree": 3
@@ -24991,6 +24995,10 @@
    "out_degree": 0
   },
   "work_history.review_loop.pr8168.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8171.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

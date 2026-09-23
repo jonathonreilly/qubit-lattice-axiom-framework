@@ -1,0 +1,34 @@
+{
+ "task": "R:kcpt_chiral_parity_common_sign_orbit_2026_07_19",
+ "type": "runner-reexecution",
+ "lane": "kcpt",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/kcpt_chiral_parity_common_sign_orbit_2026_07_19.py",
+ "seed": 54924,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9c3fda63",
+ "started_utc": "20260923T091524Z",
+ "elapsed_s": 22.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=45 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b6bcf5e461d6f26f0c7cbfcafc7fa49a6688eabf83a620f5413902dcd0422cb3",
+ "stdout_tail": "plementation)\n[B4.6] PASS - sign(S^c) == -sign(S) for all 8 corner subsets\n[B5.1] PASS - S_eps A_m S_eps == -A_m for m=1,2,3 (every bulk carrier flipped)\n[B5.2] PASS - rejector: S_eps does NOT fix A_1\n[B6.1] PASS - EXACT: every additive piece of J_full flips (J_ker and each A_m) => S_eps J_full S_eps = -J_full\n[B6.2] PASS - [FLOAT SANITY][STRUCTURAL] antilinear K conjugates i (iI -> -iI); linear S_eps preserves it (iI -> +iI); opposite action\n[B6.3] PASS - [FLOAT SANITY] S_eps J_full S_eps == -J_full and S_eps J_alt S_eps == -J_alt (res 0.0e+00,0.0e+00)\n[B7.1] PASS - S_eps NOT in G_amb (anticommutes with D2; excluded from the D2-commutant)\n[B7.2] PASS - S_eps normalizes G_amb: S_eps g S_eps in G_amb for all 768 g\n[B7.3] PASS - <G_amb,S_eps> = G_amb u S_eps.G_amb, disjoint, order 1536 == 1536\n[B7.4] PASS - SIGN-LOCK: every h locks kernel-sign == bulk-sign (both in {+1,-1})\n[B7.5] PASS - census: 768 fix J_full (G_amb), 768 send J_full->-J_full (S_eps coset)\n[B8.1] PASS - EXACT: -J_full != J_alt  (since -J_full - J_alt = -2 J_ker, and J_ker != 0)\n[B8.2] PASS - EXACT: J_full != J_alt  (since J_full - J_alt = 2 J_bulk, and B_1 != 0)\n[B8.3] PASS - EXACT: H coefficient image is the common sign only; orbit_H(J_full)={+-J_full}, excluding J_alt\n[B8.4] PASS - EXACT: 16 sign tuples modulo common sign give 8 relative classes, represented by (ek*e1,ek*e2,ek*e3)\n[B8.5] PASS - [FLOAT SANITY] all 16 sign-members square to -I; the exact common-sign orbit reaches 2 of 16\nTOTAL: PASS=45 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T091546Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

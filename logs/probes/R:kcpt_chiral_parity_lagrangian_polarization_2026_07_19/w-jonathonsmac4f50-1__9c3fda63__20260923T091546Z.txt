@@ -1,0 +1,28 @@
+PASS parity-involution - S_eps real orthogonal involution: S^2=I, S^T S=I, trace=0, entries +/-1
+PASS parity-plane-dimensions - dim L_+ = dim L_- = 32 and the planes partition the 64 basis sites
+PASS staggered-parity-definition - S_eps uses +1 on even and -1 on odd staggered-parity sites
+PASS complex-structure-representative-signs - J_full is the supplied common-positive bulk-shell representative
+PASS chiral-sign-reversal - S_eps J_full S_eps = -J_full within the declared numerical tolerance
+PASS lagrangian-diagonal-blocks - omega vanishes on both diagonal parity blocks
+PASS off-diagonal-nonzero-rejector - off-diagonal L_+ x L_- block is nonzero; vanishing is block-specific
+PASS symplectic-structural-inverse - omega J_full = I, so omega is nondegenerate without a rounded determinant
+PASS complex-structure-anticommutation - J_full anticommutes with S_eps: ||S_eps J_full + J_full S_eps|| < 1e-12
+PASS commutator-nonzero-rejector - commutator is nonzero; anticommutation is not a both-zero coincidence
+PASS complex-structure-parity-blocks - J_full diagonal parity blocks vanish: J(L_+) subset L_-, J(L_-) subset L_+
+PASS plane-exchange-rank - J_full: L_+ -> L_- is a rank-32 isomorphism (expected 32)
+PASS antisymplectic-action - ANTISYMPLECTIC: ||S_eps^T omega S_eps + omega|| < 1e-12
+PASS reality-form-action - REALITY: S_eps^T h S_eps = conjugate(h) = g - i omega
+PASS conjugation-nontrivial-rejector - h differs from its conjugate because omega is nonzero
+PASS eigenspace-swap - +i eigenspace dim 32; S_eps sends it to the -i eigenspace
+PASS ambient-group-centralizer-count - |G_amb| = 768 == 768 and |C_G_amb(S_eps)| = 384 == 384
+PASS ambient-grading-classification - preserve 384, swap 384, neither 0; kernel is centralizer
+PASS orientation-sibling-sign-reversal - S_eps J_alt S_eps = -J_alt
+PASS orientation-sibling-parity-blocks - J_alt also exchanges the same parity planes
+PASS orientation-sibling-nontrivial-rejector - J_full - J_alt = 2 J_bulk and is nonzero
+PASS complex-structure-squares - J_full^2 = J_alt^2 = -I within the declared numerical tolerance
+PASS counting-metric-definition - g is exactly the fixed counting metric I_64
+PASS symplectic-form-definition - omega = J_full^T g = -J_full
+PASS hermitian-form-definition - h = g + i omega
+PASS hermitian-holomorphic-positivity - h is positive on the +i plane; the wrong g-i omega sign collapses there
+PASS kahler-compatibility - h Hermitian; g is ambient-invariant, J_full-compatible, and positive definite
+TOTAL: PASS=27 FAIL=0

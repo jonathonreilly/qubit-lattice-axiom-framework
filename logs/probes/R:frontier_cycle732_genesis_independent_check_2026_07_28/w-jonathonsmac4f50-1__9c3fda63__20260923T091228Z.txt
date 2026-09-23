@@ -1,0 +1,8 @@
+PASS recursive input closure :: 83/83 inputs
+PASS primary boundary alignment :: current-parent APIs
+PASS independent logical genesis :: 27 gates
+PASS actual current-parent composition :: 123293 gates
+PASS enumerated mutations :: 27/27 deletions; 23/23 flips
+PASS scope countercontrols :: accepted data flip; non-global-parity witness
+PASS independence discipline :: primary inert; separate X/CNOT/TOF evaluator
+SUMMARY 7/7 ALL_PASS runtime=2.753882s

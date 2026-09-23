@@ -1,0 +1,46 @@
+B1.1 PASS anticommutation e1e2 + e2e1 = 0 and nilpotency e1^2 = 0
+B1.2 PASS product-formula exp == power-series exp (n=2 symbolic)
+B1.3 PASS n=1 integral = det M = m (pinned ordering, computed sign +1)
+B1.4 PASS n=2 generic integral = det M (pinned ordering)
+B1.5 PASS n=3 generic integral = det M (pinned ordering)
+B1.6 PASS reversed measure ordering = (-1)^n det M at n=1,2,3
+B1.7 PASS disjoint-copy factorization: joint integral = det M * det N
+B1.8 PASS det W = a^3+b^3+c^3-3abc = lam0*lam1*lam2 (generic symbolic)
+B1.9 PASS K-copy identity det3(conj entries) = conj(det3) (generic)
+B2.1 PASS entrywise-real: lam2 = conj(lam1) and lam0 real (license re-derived)
+B2.2 PASS channel association W P_(w^k) = lam_k P_(w^k), k=0,1,2 (generic)
+B2.3 PASS count-once integral = det3 = lam0*|lam1|^2 on real triples
+B2.4 PASS count-twice = |det3|^2 = lam0^2*|lam1|^4 via K-partner copy; partner coincides with original on the real locus
+B2.5 PASS direct 12-generator joint integral = |det3|^2 at witness (2,1+i,-i)
+B2.6 PASS direct symbolic 12-generator joint integral = det3^2 on the entrywise-real locus
+B2.7 PASS r-neutral doubling: exponent pairs (1,1)->(2,2) together; count_twice = count_once * det3 identically (multiplier det3, not a constant; quotient reading valid only on det3 != 0)
+B3.1 PASS generator-count bookkeeping: horn m uses 6m generators, read off the constructed integration orders (m=1: 6; m=2: 12)
+B4.1 PASS diagonal rescale: integral -> (d1 d2 c1 c2) * det M (n=2 symbolic)
+B4.2 PASS constant block-preserving kernel substitution M -> B^T M A at held measure: integral = det(B) det(A) det(M) (n=2 symbolic scalar action; diagonal B4.1 is an instance)
+B4.3 PASS no constant kappa with kappa*det3 = det3^2: witness kappas clash [kappa witnesses 1 vs 8]
+B4.4 PASS uniform rescale: once -> rho*once with rho = u^3, twice -> |rho|^2*twice (horns split, neither converted; instance of B4.2)
+B4.5 PASS coupling-dependent conversion witness A(W) = W, B = I at held measure: kernel route det(W*W) = det3^2 = count-twice on the real locus; generator-substitution route theta -> W theta agrees
+B4.6 PASS generic constant odd-linear substitution on four generators acts on the zero-source integral by det(S) at held measure
+B4.7 PASS constant odd-mixing substitution (fixed integer S mixing barred/unbarred, det S = 3) acts by det(S) at held measure; block-form substitution reproduces the B4.2 kernel value
+B4.8 PASS constant cross-copy mixing on the 12-generator joint (swap generators 0 and 6 across copies, scale generator 1 by 2; det S = -2) acts by det(S) at held measure
+B5.1 PASS Hermitian real-intersection control: lam1 = lam2 = a - b, det3 = lam0 * lam1^2 (all real)
+B5.2 PASS off-locus (1,i,0): gap = sqrt(3) - i, det3 = 1 - i, grouped form differs from det3
+B5.3 PASS pairing-without-reality (i,1+i,i): count-once integral = 1 + 3i, not real
+B5.4 PASS neither horn forced at (3,1,1): Berezin once = 20, 12-generator twice = 400, both nonzero
+B5.5 PASS endpoint arithmetic: cell law (r,Q) = (1/2, 2/3); mode law (r,Q) = (1, 1); both conditional on supplied laws
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/kcpt_coupling_triple_berezin_count_binary_measure_collapse_2026_07_17.py", line 553, in <module>
+    NOTE_GROUPS = quote_groups(NOTE)
+                  ^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/kcpt_coupling_triple_berezin_count_binary_measure_collapse_2026_07_17.py", line 115, in quote_groups
+    for line in (ROOT / rel).read_text(encoding="utf-8").splitlines():
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-1/docs/KCPT_COUPLING_TRIPLE_BEREZIN_COUNT_BINARY_MEASURE_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-07-17.md'

@@ -1,0 +1,11 @@
+PASS extraction: primary literal input manifest is complete :: ok
+PASS blocklist: Cycle-727 primary/core were not imported :: ok
+PASS sector recount: independent stabilizer/operator/Gram ranks give full and fixed-sector exponents :: ok
+PASS sector recount: frozen exponent pairs agree exactly :: ok
+PASS dimension lemma: full register is twice one fixed sector :: ok
+PASS dictionary recount: all four primary frozen dictionary digests agree :: ok
+PASS pullback spot: full seam family on (2,2,2) has exact signed C/target/M pairs :: ok
+PASS discipline: primary/core do not mutate imported parent modules :: ok
+PASS discipline: frozen sector/dictionary/supply tables are literal data :: ok
+FINAL_JSON
+{"checks_passed":9,"checks_total":9,"dictionary_sha256":{"2x2x2":"dadb2087ae6604e877d8c406c056fb0d88ed31fceb772daf4093e685fed1797e","3x2x2":"c55deffa417b236dc8d98cc55848b4a934d65b4b669f4d43fe44a0aa9e5dfb5f","3x3x2":"8214b0b177946978e3093caff08deec409eab384ea1a096d50da0fa5d90ecd89","5x3x2":"d3d60bdd877d6f8b1d4fe35be6c7ea9fcbf2ee9a203564fe0fd0654f46e7ccf2"},"pass":true,"runtime_seconds":0.24600874999305233,"scope":"partial AST/census/digest/full-seam spot check; not a full independent pullback proof","seam_spot":{"mismatches":0,"rows":12,"shape":[2,2,2]},"sector_exponents":{"2x2x2":[48,47],"3x2x2":[72,71],"3x3x2":[108,107],"5x3x2":[180,179]}}

@@ -1,0 +1,35 @@
+{
+ "task": "R:kcpt_d2_commutant_closed_form_lifts_lattice_size_independence_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "kcpt",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/kcpt_d2_commutant_closed_form_lifts_lattice_size_independence_2026_07_25.py",
+ "seed": 55004,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9c3fda63",
+ "started_utc": "20260923T091644Z",
+ "elapsed_s": 43.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=65 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4387d3dbbc11c678c47df2e3602e1b300c5d8dabcb3e07f72dbaf9549e06f02f",
+ "stdout_tail": "ask {mu : mu > nu} commutes 3/3\n  PASS  G7_B3_L12              all 48 B_3 matrices lift by consistent sign propagation 48/48, 48 distinct permutation parts; connected support graph -> exactly two lifts +- each\n  PASS  G8_SHEAR_L12           shear [[1,1,0],[0,1,0],[0,0,1]] det=1, lattice bijection, not a signed permutation: propagation inconsistent -> NOT liftable\n  PASS  G9_COUNTS_L12          constructed 82944 distinct fingerprints x 2 signs = 165888 = 96N: this is a LOWER BOUND |Comm(D2)| >= 96N (no enumeration run at L=12)\n\n[SUMMARY]\n    L     N   constr      nComm    nLift    nStab     nAut  q=-I set\n    4    64     6144       6144     3072      720    46080  empty\n    6   216    20736      20736    10368       48    10368  [(0, 1, 1), (1, 0, 1), (1, 1, 0), (1, 1, 1)]\n    8   512    49152      49152    24576       48    24576  empty\n   10  1000    96000      96000    48000       48    48000  [(0, 1, 1), (1, 0, 1), (1, 1, 0), (1, 1, 1)]\n   12  1728   165888  >= 165888        -        -        -  empty\n\n[CROSS-L]\n  PASS  XL_96N                 constructed count = 96N at every L in (4, 6, 8, 10, 12)\n  PASS  XL_ENUM_EQ             enumerated nComm = 96N and nLift = 48N at every L in (4, 6, 8, 10) (equality with the construction is anchored ONLY here)\n  PASS  XL_DICHOTOMY           2-torsion dichotomy holds at every L: q trivial for L=0 mod 4, q=-I on exactly 4 points for L=2 mod 4\n\n========================================================================\nTOTAL: PASS=65 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T091728Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

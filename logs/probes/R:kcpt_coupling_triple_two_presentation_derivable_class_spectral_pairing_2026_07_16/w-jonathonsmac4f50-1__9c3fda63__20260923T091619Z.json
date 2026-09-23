@@ -1,0 +1,35 @@
+{
+ "task": "R:kcpt_coupling_triple_two_presentation_derivable_class_spectral_pairing_2026_07_16",
+ "type": "runner-reexecution",
+ "lane": "kcpt",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/kcpt_coupling_triple_two_presentation_derivable_class_spectral_pairing_2026_07_16.py",
+ "seed": 54979,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9c3fda63",
+ "started_utc": "20260923T091619Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=152 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6db48dc4f8ff8d7239f7922429e0275ee088e52db6f0be476dbd70554d520fdc",
+ "stdout_tail": "RD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md\nV9.55 PASS non-citation context handle is backticked and unlinked: AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md\nV9.56 PASS non-citation context handle is backticked and unlinked: ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md\nV9.57 PASS non-citation context handle is backticked and unlinked: ACPHILAMBDA_FERMIONIC_REALIFICATION_PFAFFIAN_POWER_IDENTITY_NARROW_THEOREM_NOTE_2026-07-12.md\nV9.58 PASS non-citation context handle is backticked and unlinked: LEPTON_BRANNEN_BAE_DELTA_TWO_NINTHS_OPEN_GATE_NOTE_2026-05-26.md\nV9.59 PASS non-citation context handle is backticked and unlinked: RECORDS_ONLY_OS_RECONSTRUCTION_UNTIED_FIRST_ORDER_MEASURE_BOUNDED_THEOREM_NOTE_2026-07-11.md\nPATH note=docs/KCPT_COUPLING_TRIPLE_TWO_PRESENTATION_DERIVABLE_CLASS_SPECTRAL_PAIRING_BOUNDED_THEOREM_NOTE_2026-07-16.md\nPATH runner=scripts/kcpt_coupling_triple_two_presentation_derivable_class_spectral_pairing_2026_07_16.py\nPATH cache=logs/runner-cache/kcpt_coupling_triple_two_presentation_derivable_class_spectral_pairing_2026_07_16.txt\nTOTAL: PASS=152 FAIL=0\nFLAGS: R1c supplied corner surface; R2c consumed mechanism reading; R4c declared coupling-slot extension; T2 conditional on the compound R2c-to-R4c hierarchy; V6 assumes epsilon>0 and both endpoints remain conditional on their granularity laws; r remains a dial (0, 1/2, 1); delta=2/9 is a support-only trial bare-radian comparator, not derived\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T091620Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

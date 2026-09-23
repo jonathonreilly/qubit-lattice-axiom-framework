@@ -1,0 +1,35 @@
+{
+ "task": "R:joint_formation_corner_record_set_keeps_sea_zeros_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "joint",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/joint_formation_corner_record_set_keeps_sea_zeros_check_2026_09_03.py",
+ "seed": 54780,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9c3fda63",
+ "started_utc": "20260923T091300Z",
+ "elapsed_s": 64.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=25 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6f7850209cad25da48cebd3ba1ce4ad9b636dfcd18ba05a960eab59e327fe5cd",
+ "stdout_tail": "rner2', 2), ('corner1', 1)), 'MR', 0.5, 1.0, 0.0), ((('corner0', 7), ('corner3', 168), ('corner5', 1296), ('corner6', 2624)), 'MR', 0.5, 1.0000000000000002, 0.0), ((('corner0', 7), ('corner7', 3200), ('corner1', 24), ('corner6', 576), ('corner2', 32), ('corner5', 256)), 'MR', 0.5, 1.0, 0.0), ((('face0', 43), ('face1', 3840), ('face2', 20), ('face3', 192)), 'MR', 0.5, 1.0, 0.0), ((('face5', 1176), ('face4', 582), ('face3', 2080), ('face2', 257)), 'MR', 0.5, 1.0, 0.0), ((('face0', 43), ('face2', 276), ('face4', 576), ('face1', 3072), ('face3', 128)), 'MR', 0.5, 1.0, 0.0), ((('face3', 2272), ('face0', 11), ('face5', 1040), ('face2', 260), ('face1', 512)), 'MR', 0.5, 0.9999999999999998, 0.0), ((('cstar0', 895), ('cstar1', 1152), ('cstar2', 2048)), 'MR', 0.5, 0.9999999999999998, 3.2998476267496053e-32), ((('cstar7', 4088), ('cstar6', 6), ('cstar5', 1)), 'MR', 0.5, 1.0, 1.9309055795153601e-32), ((('cstar0', 895), ('cstar7', 3200)), 'MR', 0.5, 0.9999999999999997, 3.2998476267496053e-32), ((('cstar0', 895), ('cstar1', 1152), ('cstar3', 2048)), 'MR', 0.5, 0.9999999999999998, 3.2998476267496053e-32), ((('all12', 4095),), 'MR', 0.5, 1.0, 1.4170603357087788e-31)]\nSUMMARY: U2 keeps all 256 zeros in three of four declared orders; the two named schedules match the sea at the four tested dwell times. Exact all-time equality requires the eigenvector premise at every reachable node. Proper-unit relaxation failures concern only the declared menus; pruned mass is reported.\nTOTAL: PASS=25 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T091405Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/joint_formation_corner_record_set_keeps_sea_zeros_check_2026_09_03.txt against the .txt beside this log"
+  ]
+ }
+}

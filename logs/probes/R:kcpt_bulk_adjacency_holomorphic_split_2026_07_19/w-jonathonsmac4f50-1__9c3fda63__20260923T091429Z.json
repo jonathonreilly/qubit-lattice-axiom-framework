@@ -1,0 +1,35 @@
+{
+ "task": "R:kcpt_bulk_adjacency_holomorphic_split_2026_07_19",
+ "type": "runner-reexecution",
+ "lane": "kcpt",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/kcpt_bulk_adjacency_holomorphic_split_2026_07_19.py",
+ "seed": 54869,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9c3fda63",
+ "started_utc": "20260923T091429Z",
+ "elapsed_s": 30.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=46 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b01cd5b67f3fa9a68f03a5ea62ea9bf319333bb4d666c6ac43f582d45ba0d61e",
+ "stdout_tail": "t3.3a] PASS - stratum m=3: A_m v(+) = +2 i sqrt(m) v(+)\n[t3.3b] PASS - stratum m=3: A_m v(-) = -2 i sqrt(m) v(-)\n[t3.3c] PASS - stratum m=3: entrywise conjugation sends v(+) to v(-)\n[t3.3d] PASS - stratum m=3: v(+) is nonzero and distinct from v(-)\n[t3g1] PASS - 56 bulk momenta organize into 28 conjugate momentum pairs\n[t3g2] PASS - conjugation of each bulk plane wave equals the k -> -k partner\n[t3g3] PASS - each bulk plane wave has unit modulus at every site\n[t4a] PASS - adjacency face: A_0 is exactly the zero matrix\n[t4b] PASS - kernel-basis face: D2 V8 is exactly the zero matrix\n[t5a] PASS - J_bulk^2 = -P_bulk on the bulk\n[t5b] PASS - J_bulk is real and orthogonal on the bulk\n[t5c] PASS - J_bulk carries 28 holomorphic degrees of freedom\n[w1] PASS - reject: A_1^2 is NOT -8 P_1 (correct eigenvalue is -4)\n[w2] PASS - reject: A_2^2 is NOT -12 P_2 (correct eigenvalue is -8)\n[w3] PASS - reject: stratum m=1 eigenvalue is NOT +2 i sqrt(2)\n[w4] PASS - reject: A_1 + A_2 alone does NOT reassemble D2 (A_3 is required)\n[w5] PASS - reject: stratum multiplicities are NOT [8, 24, 24, 9]\n[v1] PASS - delivery note carries the verbatim rank-56 sentence\n[v2] PASS - Unit-2 kernel note carries the verbatim conjugation-fixes sentence\n[v3] PASS - Unit-5 ambient note carries the verbatim zero-registration sentence\n[v4] PASS - minimal-axioms note carries the verbatim K/CPT boundary sentence\n[v5] PASS - Unit-6 stratification note carries the verbatim stratum-dimension sentence\nTOTAL: PASS=46 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T091500Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

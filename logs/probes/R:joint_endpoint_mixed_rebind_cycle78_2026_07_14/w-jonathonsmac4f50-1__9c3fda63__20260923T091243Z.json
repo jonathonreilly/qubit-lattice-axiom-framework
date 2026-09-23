@@ -1,0 +1,31 @@
+{
+ "task": "R:joint_endpoint_mixed_rebind_cycle78_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "joint",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/joint_endpoint_mixed_rebind_cycle78_2026_07_14.py",
+ "seed": 54763,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9c3fda63",
+ "started_utc": "20260923T091243Z",
+ "elapsed_s": 16.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "446f095719d6ab9011efb94d288109e0dec94977565cc3b5681335e7af9414d9",
+ "stdout_tail": ", 1, 1): 'B1', (3, 0, 2): 'H0', (3, 2, 0): 'H0', (3, 3, 0): 'H1', (4, 1, 1): 'H1'}\nPASS C02 no non-B/D/H addition occupies current official support\nPASS C03 all additions avoid next-only support\nPASS D01 conditional graph has 72 conditions :: 72\nPASS D02 conditional graph has 10,568 states :: 10,568\nPASS D03 conditional graph has 49,142 edges :: 49,142\nPASS D04 every conditional schedule reaches one complete terminal\nPASS D05 conditional graph has no parasite/conflict\nPASS E01 every B record has both endpoint records as mandatory ancestors\nPASS E02 all 242,033 Cycle-60 states are retained :: 242,033\nPASS E03 mixed histories collapse to 15 downstream-availability masks :: 15\nPASS E04 mixed interface is 456 candidates / 218 retained :: (456, 218)\nPASS E05 strong over-approximation exhausts 96,617 local contexts :: 96,617\nPASS E06 all 891 apparent wrong contexts have first-bad ancestry witnesses :: (891, 51)\nPASS E07 no feasible wrong/off-footprint write remains :: ()\nPASS E08 no feasible raw conflict remains\nPASS E09 no feasible Cycle-60 or Cycle-67 blocker remains\nPASS F01 B5 remains the last B in every conditional schedule\nPASS F02 translated next header is complete\nPASS F03 translated preparation interface is ready\nPASS F04 next q/a/b/c remain open\nPASS F05 terminal decodes exactly current and translated programs\n\nNEW_ROWS=39 UNION_ROWS=159 ADDITIONS=47\nCONDITIONS=72 STATES=10568 EDGES=49142\nMIXED_CONTEXTS=96617 CERTIFIED_WRONG=891 FEASIBLE_WRONG=0\nSUMMARY: 35 PASS / 0 FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T091300Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

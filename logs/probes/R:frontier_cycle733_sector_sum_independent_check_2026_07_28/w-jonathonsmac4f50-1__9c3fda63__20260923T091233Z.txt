@@ -1,0 +1,11 @@
+SCOPE independent current-fixture reconstruction; finite parity census; conditional block algebra only
+PASS current five-family dictionary independently reconstructed :: "ok"
+PASS all signed target/reference/companion phases retained :: "ok"
+PASS all 936 independently reconstructed representatives preserve parity :: "ok"
+PASS signed-phase corruption changes frozen dictionary :: "ok"
+PASS parity-flip corruption detected :: "ok"
+PASS conditional block-support algebra independently exact :: "ok"
+PASS missing premises and relative phase remain open :: "ok"
+PASS independent runner excludes primary import :: "ok"
+FINAL_JSON
+{"boundary":{"coherent_channel_constructed":false,"cycle727_analysis_imported":false,"primary_imported":false,"relative_phase_selected":false,"sector_maps_constructed":false},"conditional_algebra":{"bv_support":[["even","even"],["odd","odd"]],"conditional_identity_exact":true,"gram_support":[["even","even"],["odd","odd"]],"off_diagonal_mutation_detected":true,"relative_phase_selected":false,"sector_intertwining_premise_discharged_here":false,"sector_isometry_premise_discharged_here":false,"three_qubit_parity_flipping":32,"three_qubit_parity_preserving":32,"three_qubit_pauli_words":64,"toy_parity_split_exact":true,"va_support":[["even","even"],["odd","odd"]]},"controls":{"off_diagonal_mutation_detected":true,"parity_flip_detected":true,"signed_phase_corruption_detected":true},"dictionary_sha256":"dadb2087ae6604e877d8c406c056fb0d88ed31fceb772daf4093e685fed1797e","family_counts":{"coin":120,"contact":120,"free":48,"reverse":12,"seam":12},"generator_rows":312,"named_checks_passed":8,"named_checks_total":8,"parity_certificate":{"all_preserve_total_matter_parity":true,"failures":[],"representatives_tested":936},"pass":true,"report_sha256":"3f5447577f5a70f17b3bb4ef522f6daf5f3a9858bdfa5e33d17b4c86256ae3cc","runtime_seconds":0.0046380829880945385,"shape":[2,2,2],"signed_relation_sha256":"c1bd52a612ccef8bdd082ad6f9e8f99e19ee20807c17841c57ee6f433c1a9bc1","status":"CYCLE733_INDEPENDENT_CONDITIONAL_LEMMA_PASS"}

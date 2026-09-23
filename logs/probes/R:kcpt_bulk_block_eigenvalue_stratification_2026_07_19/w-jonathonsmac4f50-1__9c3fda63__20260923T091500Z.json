@@ -1,0 +1,35 @@
+{
+ "task": "R:kcpt_bulk_block_eigenvalue_stratification_2026_07_19",
+ "type": "runner-reexecution",
+ "lane": "kcpt",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/kcpt_bulk_block_eigenvalue_stratification_2026_07_19.py",
+ "seed": 54900,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9c3fda63",
+ "started_utc": "20260923T091500Z",
+ "elapsed_s": 23.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=69 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d860cd029f377647862d26e1152c563e98f73b400c0a6c2a2ca385cd5e50a504",
+ "stdout_tail": "n span(D2 Q_1) (invariant axis restored)\n[B9.9] PASS - shell 3 is adjacency-pinned: a_3 == 1 and D2 Q_3 is a nonzero invariant axis\n[B9.10] PASS - shell 2 not adjacency-rigid: a_2 == 2, a second invariant antisym axis off span(D2 Q_2)\n[B9.11] PASS - complex-structure sign: (D2 Q_m)^2 == -4 m N_m^2 P_m is a negative multiple of the idempotent P_m = Q_m/N_m on every bulk shell, though raw -4 m N_m = (0,512,-1024,4608) is not uniformly negative\n[B10.1] PASS - v = Q_1[:,0] is a nonzero stratum-1 vector: M v == -4 v\n[B10.2] PASS - doublet: D2 A == -2 B and D2 B == 2 A (so J_1 = D2/2 gives J_1 w == i w)\n[B10.3] PASS - doublet norm |w|^2 == A.A + B.B == 8 |v|^2 (|v|^2 = 6144, |w|^2 = 49152)\n[B10.4] PASS - K-odd separator i(D2 Q_1): opposite nonzero values (12582912, -12582912)\n[B10.5] PASS - projector pair one-zero with K swap: 2Q_1-i(D2Q_1)->(-25165824,0), 2Q_1+i(D2Q_1)->(0,-25165824)\n[B10.6] PASS - K-real symmetric face Q_1: SAME value on the conjugate pair (-6291456, -6291456)\n[info] m=1 value tables: |v|^2=6144, |w|^2=49152, i(D2Q1) on (w, conj w)=(12582912, -12582912), projector 2Q1-i(D2Q1) on (w, conj w)=(-25165824, 0), Q1 face=(-6291456, -6291456)\n[B11.1] PASS - forbidden substrings absent from the note (none)\n[B11.2] PASS - required verbatim strings present (all present)\n[B11.3] PASS - all five dependency links present as markdown links and the deps exist\n[B11.4] PASS - note carries the bounded_theorem front matter, claim boundary, and Boundary section\nTOTAL: PASS=69 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T091524Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

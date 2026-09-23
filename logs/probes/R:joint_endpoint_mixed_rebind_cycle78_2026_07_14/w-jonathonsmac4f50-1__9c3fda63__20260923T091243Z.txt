@@ -1,0 +1,40 @@
+PASS A01 note exists
+PASS A02 source is exactly the Cycle-67 terminal
+PASS A03 exact Y2 pair
+PASS A04 exact YG0 pair
+PASS A05 exact GY pair
+PASS A06 H_y/D_y/B_y are singleton causal join stages
+PASS A07 TJ pair is one off-support guide plus the retained TJ tail site
+PASS A08 post-join J/M/TZ export stages are singleton
+PASS A09 construction has 47 append-only additions
+PASS B01 new table is 39 canonical / 870 raw rows :: (39, 870)
+PASS B02 union is 159 canonical / 3,464 raw rows :: (159, 3464)
+PASS B03 component raw domains are pairwise disjoint
+PASS B04 every raw union input is single-valued
+PASS C01 official map is exact Cycle-14 B/D/H :: {(3, 1, 0): 'H1', (2, 1, 0): 'D1', (1, 1, 0): 'B1', (1, 2, 0): 'B0', (2, 2, 0): 'D0', (1, 3, 0): 'B1', (2, 3, 0): 'D1', (3, 1, 1): 'D1', (3, 0, 1): 'H1', (2, 0, 1): 'D1', (1, 0, 1): 'B1', (1, 0, 2): 'B0', (2, 0, 2): 'D0', (2, 1, 1): 'B1', (3, 0, 2): 'H0', (3, 2, 0): 'H0', (3, 3, 0): 'H1', (4, 1, 1): 'H1'}
+PASS C02 no non-B/D/H addition occupies current official support
+PASS C03 all additions avoid next-only support
+PASS D01 conditional graph has 72 conditions :: 72
+PASS D02 conditional graph has 10,568 states :: 10,568
+PASS D03 conditional graph has 49,142 edges :: 49,142
+PASS D04 every conditional schedule reaches one complete terminal
+PASS D05 conditional graph has no parasite/conflict
+PASS E01 every B record has both endpoint records as mandatory ancestors
+PASS E02 all 242,033 Cycle-60 states are retained :: 242,033
+PASS E03 mixed histories collapse to 15 downstream-availability masks :: 15
+PASS E04 mixed interface is 456 candidates / 218 retained :: (456, 218)
+PASS E05 strong over-approximation exhausts 96,617 local contexts :: 96,617
+PASS E06 all 891 apparent wrong contexts have first-bad ancestry witnesses :: (891, 51)
+PASS E07 no feasible wrong/off-footprint write remains :: ()
+PASS E08 no feasible raw conflict remains
+PASS E09 no feasible Cycle-60 or Cycle-67 blocker remains
+PASS F01 B5 remains the last B in every conditional schedule
+PASS F02 translated next header is complete
+PASS F03 translated preparation interface is ready
+PASS F04 next q/a/b/c remain open
+PASS F05 terminal decodes exactly current and translated programs
+
+NEW_ROWS=39 UNION_ROWS=159 ADDITIONS=47
+CONDITIONS=72 STATES=10568 EDGES=49142
+MIXED_CONTEXTS=96617 CERTIFIED_WRONG=891 FEASIBLE_WRONG=0
+SUMMARY: 35 PASS / 0 FAIL

@@ -1,0 +1,35 @@
+{
+ "task": "R:kcpt_d2_commutant_double_cover_bicommutant_structure_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "kcpt",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/kcpt_d2_commutant_double_cover_bicommutant_structure_2026_07_25.py",
+ "seed": 55048,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9c3fda63",
+ "started_utc": "20260923T091728Z",
+ "elapsed_s": 18.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=50 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "db213949aa44c89ca20850f57ecd30c893103a350c2d14694303b28bc01be176",
+ "stdout_tail": "   |pi([Comm,Comm])|=1296 (anchor 6N=1296)\n  PASS  EVENSUB_L6                 pi(D) cap T = even sublattice size 108 (anchor N/2=108), set-eq True\n  PASS  A4IMAGE_L6                 B3-image(D) order 12 spectrum {3: 8, 2: 3, 1: 1} dets {1}\n  PASS  MINPOLY_L6                 D2*prod(M+cI)=0 True, drop-one nonzero [True, True, True, True], deg 7 cs [3, 6, 9]\n  PASS  ENDCOMM_CD2_L6             exact char sum 145152/20736=7 rem 0; deg minpoly=7 == dim C[D2]; commute-sample 506/506\n  PASS  KERDIM_L6                  dim ker D2 = 8 (anchor 8)\n  PASS  EIGDIMS_L6                 eigenspace dims [32, 48, 24, 8, 24, 48, 32] (anchor [32, 48, 24, 8, 24, 48, 32]), sum 216\n  PASS  CHARNORM_L6                7 chars norm 1 (max dev 4.44e-16), cross max 6.58e-17\n  PASS  HCAPCOMM_L6                |H cap Comm|=2592 (anchor 12N=2592), |D cap (H cap Comm)|=648 (anchor 3N=648), D!=HcapC True\n  PASS  D3_L6                      coords(H cap Comm) order 6 spectrum {2: 3, 3: 2, 1: 1} dets {1} bodydiag-eq True\n  PASS  AR4_L6                     A_r4 == [[0,1,0],[-1,0,0],[0,0,1]] True, in B3 True, det 1\n  PASS  OCLOSURE_L6                <D3,A_r4> order 24 spectrum {1: 1, 2: 9, 3: 8, 4: 6} dets {1} O-eq True\n\n[PHASE B] cross-L gates\n  PASS  CROSSL_B3                  A-set(L4)==A-set(L6)==B3 (48 matrices)\n  PASS  CROSSL_D3                  coords(H cap Comm) same 6 matrices at L=4 and L=6\n\n========================================================================\nTOTAL: PASS=50 FAIL=0\nwall-clock: 18.0s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T091746Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/kcpt_d2_commutant_double_cover_bicommutant_structure_2026_07_25.txt against the .txt beside this log"
+  ]
+ }
+}

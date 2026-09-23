@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle733_sector_sum_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle733_sector_sum_independent_check_2026_07_28.py",
+ "seed": 54753,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9c3fda63",
+ "started_utc": "20260923T091233Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c80801c43de4e003a3ca7b0732fcf8572b39768844411ee523db82d05daae5f7",
+ "stdout_tail": "en :: \"ok\"\nPASS independent runner excludes primary import :: \"ok\"\nFINAL_JSON\n{\"boundary\":{\"coherent_channel_constructed\":false,\"cycle727_analysis_imported\":false,\"primary_imported\":false,\"relative_phase_selected\":false,\"sector_maps_constructed\":false},\"conditional_algebra\":{\"bv_support\":[[\"even\",\"even\"],[\"odd\",\"odd\"]],\"conditional_identity_exact\":true,\"gram_support\":[[\"even\",\"even\"],[\"odd\",\"odd\"]],\"off_diagonal_mutation_detected\":true,\"relative_phase_selected\":false,\"sector_intertwining_premise_discharged_here\":false,\"sector_isometry_premise_discharged_here\":false,\"three_qubit_parity_flipping\":32,\"three_qubit_parity_preserving\":32,\"three_qubit_pauli_words\":64,\"toy_parity_split_exact\":true,\"va_support\":[[\"even\",\"even\"],[\"odd\",\"odd\"]]},\"controls\":{\"off_diagonal_mutation_detected\":true,\"parity_flip_detected\":true,\"signed_phase_corruption_detected\":true},\"dictionary_sha256\":\"dadb2087ae6604e877d8c406c056fb0d88ed31fceb772daf4093e685fed1797e\",\"family_counts\":{\"coin\":120,\"contact\":120,\"free\":48,\"reverse\":12,\"seam\":12},\"generator_rows\":312,\"named_checks_passed\":8,\"named_checks_total\":8,\"parity_certificate\":{\"all_preserve_total_matter_parity\":true,\"failures\":[],\"representatives_tested\":936},\"pass\":true,\"report_sha256\":\"3f5447577f5a70f17b3bb4ef522f6daf5f3a9858bdfa5e33d17b4c86256ae3cc\",\"runtime_seconds\":0.0046380829880945385,\"shape\":[2,2,2],\"signed_relation_sha256\":\"c1bd52a612ccef8bdd082ad6f9e8f99e19ee20807c17841c57ee6f433c1a9bc1\",\"status\":\"CYCLE733_INDEPENDENT_CONDITIONAL_LEMMA_PASS\"}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T091233Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run '{\"boundary\":{\"coherent_channel_constructed\":false,\"cycle727_analysis_imported\":f' vs cache '{\"boundary\":{\"coherent_channel_constructed\":false,\"cycle727_analysis_imported\":f'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle733_sector_sum_independent_check_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

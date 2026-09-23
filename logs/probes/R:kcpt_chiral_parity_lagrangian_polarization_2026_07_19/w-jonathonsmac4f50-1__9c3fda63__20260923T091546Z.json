@@ -1,0 +1,35 @@
+{
+ "task": "R:kcpt_chiral_parity_lagrangian_polarization_2026_07_19",
+ "type": "runner-reexecution",
+ "lane": "kcpt",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/kcpt_chiral_parity_lagrangian_polarization_2026_07_19.py",
+ "seed": 54946,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9c3fda63",
+ "started_utc": "20260923T091546Z",
+ "elapsed_s": 21.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=27 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9d169fcfafd24725d11f2da25fe576f6678c6f9a80912bfb56fd5451777f7ae1",
+ "stdout_tail": "nce\nPASS complex-structure-parity-blocks - J_full diagonal parity blocks vanish: J(L_+) subset L_-, J(L_-) subset L_+\nPASS plane-exchange-rank - J_full: L_+ -> L_- is a rank-32 isomorphism (expected 32)\nPASS antisymplectic-action - ANTISYMPLECTIC: ||S_eps^T omega S_eps + omega|| < 1e-12\nPASS reality-form-action - REALITY: S_eps^T h S_eps = conjugate(h) = g - i omega\nPASS conjugation-nontrivial-rejector - h differs from its conjugate because omega is nonzero\nPASS eigenspace-swap - +i eigenspace dim 32; S_eps sends it to the -i eigenspace\nPASS ambient-group-centralizer-count - |G_amb| = 768 == 768 and |C_G_amb(S_eps)| = 384 == 384\nPASS ambient-grading-classification - preserve 384, swap 384, neither 0; kernel is centralizer\nPASS orientation-sibling-sign-reversal - S_eps J_alt S_eps = -J_alt\nPASS orientation-sibling-parity-blocks - J_alt also exchanges the same parity planes\nPASS orientation-sibling-nontrivial-rejector - J_full - J_alt = 2 J_bulk and is nonzero\nPASS complex-structure-squares - J_full^2 = J_alt^2 = -I within the declared numerical tolerance\nPASS counting-metric-definition - g is exactly the fixed counting metric I_64\nPASS symplectic-form-definition - omega = J_full^T g = -J_full\nPASS hermitian-form-definition - h = g + i omega\nPASS hermitian-holomorphic-positivity - h is positive on the +i plane; the wrong g-i omega sign collapses there\nPASS kahler-compatibility - h Hermitian; g is ambient-invariant, J_full-compatible, and positive definite\nTOTAL: PASS=27 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T091608Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

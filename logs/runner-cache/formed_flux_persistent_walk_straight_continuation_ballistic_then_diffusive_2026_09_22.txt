@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/formed_flux_persistent_walk_straight_continuation_ballistic_then_diffusive_2026_09_22.py
+runner_sha256: ee36d581aa15561c95bbb87c36dede003189fb59e8c776dd8dabbd88c4285d2f
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.49
+status: ok
+----- stdout -----
+A. the straight-continuation rule
+[PASS] R_p keeps the ice rule exactly and each forward arrow has mean p b_i + (1 - p) B/3 :: p = 0, 1/3, 1/2, 1; all 8 back patterns
+[PASS] R_p is covariant under the six axis permutations that preserve the sweep's octant (soldered: straight pairs axes)
+B. the persistent walk
+[PASS] the flux's direction kernel K = p I + (1 - p) J/3 has eigenvalues 1, p, p: memory relaxes by p per layer :: a unit of flux keeps its axis with probability (1 + 2p)/3
+[PASS] each layer carries flux 1; at p = 1 the flux runs straight along its axis; at p = 0 it is the multinomial walk :: p = 0 reproduces the multinomial walk of open PR 8687 at all 2925 sites
+C. spreading
+[PASS] the spread along the source axis equals the Markov occupation variance and grows at rate (2/9)(1+p)/(1-p) :: p = 1/2: rate 2/3, three times the rate 2/9 at p = 0; finite error bound checked at p=1/2
+[PASS] at p = 1 the spread is 0 in every layer; at p = 0 it is 2n/9
+D. exact covariances on a box
+[PASS] for p = 1/2 and 3/4 the covariance stays causal: back sums have variance 3, same-layer arrows are uncorrelated :: and the covariance with an inflow arrow is the persistent-walk kernel, on a 4x4x4 box
+per_element: Integer configurations, weights and conditional cross-products are exact within the stated finite alphabets; floating spectral estimates are labelled.
+per_site: Site and unit tests use the declared records, neighbour graph, boundary conditions and fixed formation orders only.
+per_mode: Transfer and walk modes refer to supplied finite matrices; numerical estimates do not establish untested physical or infinite-cross-section limits.
+per_block: This bounded support result retains its explicit controls, parameter values and search caps; alternative rules and records remain outside scope.
+lattice_wide: Finite windows do not establish universal formation impossibility; infinite-height statements apply only to the specified fixed-cross-section transfer model.
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/soldering_menu_four_cubic_actions_on_qubit_possibilities_and_formation_bounds_2026_09_22.py
+runner_sha256: ccc6713d28a2688941f2c10e9afafaf5bb3bcee54db6f51cf0b30b9ac787027b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.43
+status: ok
+----- stdout -----
+== 1. Exactly four actions of the proper cubic rotations on possibilities ==
+[PASS] the four maps are homomorphisms O -> SO(3): orthogonal, determinant 1, multiplicative on all 576 pairs
+[PASS] character table of O = S4: class sizes 1,6,3,8,6 and the five irreducible characters are orthonormal
+[PASS] real 3-dimensional representations of S4: 8 decompositions, exactly 4 of determinant 1 :: 3A1 (trivial), A1+2A2 (sign twist), A2+E (axis), T1 (full); A1+E, T2 and the odd sign sums have determinant -1
+[PASS] the constructed actions have exactly those decompositions, so they are pairwise inequivalent :: characters trivial (3, 3, 3, 3, 3); sign twist (3, -1, 3, 3, -1); axis (3, -1, 3, 0, -1); full (3, 1, -1, 0, -1)
+[PASS] the excluded T2 = sign x full has determinant -1 on a quarter-turn: not an automorphism of the qubit
+
+== 2. Kernels and their orbits on the six bond directions ==
+[PASS] kernel orders 24, 12, 4, 1; orbits on the six directions 1, 1, 3, 6 :: axis soldering's kernel is the three axis half-turns: orbits {+x,-x}, {+y,-y}, {+z,-z}
+
+== 3. What a site can broadcast to neighbours formed after it ==
+[PASS] ice count (3 of 6 occupied) broadcast bound: 5/16 unsoldered and sign twist, 1/2 axis, 1 full :: paired probabilities give an even-power parity product and an odd-count upper bound
+[PASS] six singleton orbits permit relaxed ice assignment: occupy three chosen directions with certainty (mass exactly 1)
+[PASS] odd Gauss parity broadcast bound: 1/2 unsoldered, sign twist and axis; six singleton orbits allow relaxed certainty :: six links at p = 1/4 are odd with probability 63/128; full soldering sets one link and is odd with certainty
+[PASS] parity-role link profile: impossible to dictate unsoldered or twisted (one orbit), relaxed feasibility with axis or full :: one orbit: the union of the three V-pair events bounds the full profile
+
+[PASS] correlated escape: equal marginals do not imply the product-law bound :: uniform three-subsets have marginal 1/2 and ice probability one; independence is required
+per_element: checked all 24 group elements and all 576 multiplication pairs for the four explicit actions
+per_site: checked kernel partitions of one six-neighbour star and finite rational product-law controls
+per_mode: checked and not executed — no Fourier modes or continuum spectral claims are part of this runner
+per_block: checked and not executed — simultaneous compatibility of multiple stars is not computed
+lattice_wide: checked and not executed — no infinite-lattice formation or physical realization is established
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

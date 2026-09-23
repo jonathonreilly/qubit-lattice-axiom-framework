@@ -1,0 +1,70 @@
+===== runner cache v1 =====
+runner: scripts/response_identity_check_2026_09_15.py
+runner_sha256: b81caeeb31f9580a4794b8d474793c27964d30ab112689fc63ecf632fd8763c7
+input_fingerprint_sha256: 3b1805d20c53e78f79a7e5616b49582b9e08a660fae0073a895d0b6f4e20341b
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.42
+status: ok
+----- stdout -----
+{
+  "status": "PASS",
+  "scope": "finite response identities, no cubic phase theorem",
+  "charged_ring": {
+    "dimension": 540,
+    "CAR_Gauss_transitions": 1416,
+    "electric_double_commutator_error": 4.440892098500626e-15,
+    "magnetic_interior_error": 1.8207657603852567e-14,
+    "magnetic_hard_boundary_discrepancy_retained": 24.14285714285715,
+    "flat_twist_unitary_error": 1.4876885792002277e-14,
+    "diamagnetic": 0.31981617573350324,
+    "paramagnetic": 0.31981617573350346,
+    "ward_error": 2.220446049250313e-16,
+    "ground_degeneracy": 1,
+    "spectral_first_moment": 0.057566911632030426,
+    "sum_rule_error": 1.5265566588595902e-16
+  },
+  "massive_screening_example": {
+    "rho": 1.7,
+    "g": 0.4,
+    "rows": [
+      {
+        "k": 0.4,
+        "frequency": 0.6572670690061995,
+        "static_curvature": 0.6296296296296298
+      },
+      {
+        "k": 0.1,
+        "frequency": 0.5310367218940701,
+        "static_curvature": 0.06028368794326244
+      },
+      {
+        "k": 0.02,
+        "frequency": 0.5219195340279955,
+        "static_curvature": 0.0024963289280470757
+      },
+      {
+        "k": 0.004,
+        "frequency": 0.5215515314904176,
+        "static_curvature": 9.999411799310742e-05
+      },
+      {
+        "k": 0.0,
+        "frequency": 0.521536192416212,
+        "static_curvature": 0.0
+      }
+    ],
+    "scope": "distinct quadratic discriminator"
+  },
+  "runner_sha256": "b81caeeb31f9580a4794b8d474793c27964d30ab112689fc63ecf632fd8763c7"
+}
+TOTAL: PASS=1 FAIL=0
+Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON
+per_element: charged f-sum and Ward identities
+per_site: finite charged-ring configurations
+per_mode: finite matrix spectral/response controls; no pole or phase inference
+per_block: one complete companion family; imported helpers are shared implementation, not independent evidence
+lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here
+
+----- stderr -----
+

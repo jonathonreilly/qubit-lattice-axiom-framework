@@ -31,7 +31,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.024,
+  "load_bearing_score": 5.407,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -52,6 +52,6 @@
   },
   "runner_path": "scripts/wilson_staggered_raw_constrained_action_hessian_decay_2026_07_12.py",
   "title": "Raw constrained-action response and exponentially local Hessian",
-  "transitive_descendants": 22,
+  "transitive_descendants": 29,
   "verdict_rationale": null
 }

@@ -23,6 +23,13 @@ blocks unit confirmation. Verify original constituent deltas and the final
 current-main delta independently; neither PR titles nor file counts prove
 content coverage.
 
+For stale branches, a compact recovery packet can retain the complete original
+binary delta and full snapshots of every original path at its base, head and
+reviewed current main, recording absent paths explicitly. Include all necessary
+proofs, premises, inputs and interacting context; omit only unrelated whole-main
+diff material. This does not trim the scientific read or the final candidate's
+current-main loss check.
+
 Run every applicable reviewer lens on the complete final unit and its
 interactions. Preserve theorem, proof-obligation, import, independent-math,
 no-go, labeling, and governance standards without exception for batch size.
@@ -33,6 +40,22 @@ with that session's final source verdict. A changed PR head fails the provenance
 gate even if source bytes look identical. A changed premise, input, source byte,
 or semantic interaction reopens the affected conclusion even if a PR head did
 not change. Both require renewed frozen provenance and same-session confirmation.
+
+### Preserve frozen source across unrelated main advances
+
+A unit already staged on a frozen base need not be rebased for bounded capture
+when main advances outside its complete source/input closure. Bind the frozen
+checkout base/tree and the actual reviewed main commit separately in immutable
+review evidence. The original reviewer must inspect that actual main advance
+for preservation and semantic interactions in the same session; hypothetical
+approval of future main states is insufficient. Before and after each capture,
+check the exact frozen HEAD/tree and reviewed main, require the frozen base to
+be an ancestor of reviewed main, and reject any main delta overlapping bound
+source or any input category, alongside existing file hash/stat guards. Movement,
+overlap or changed interactions holds the affected operation for renewed review.
+Keep successful science evidence with its original identities; do not rerun it
+solely to rebase. Integration still builds on actual current main and needs the
+fresh combined gate when the validated base/tree changes.
 
 ### Overlap repairs and review without changing acceptance
 

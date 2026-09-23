@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "revision": "7e268bd96edda8819250318a3cbdaa1b20e90f35",
+  "entries": [
+    {
+      "original_path": ".claude/science/physics-loops/frame-attached-four-point-weights-20260916/CLAIM_STATUS_CERTIFICATE.md",
+      "original_mode": "100644",
+      "git_blob": "2e1efea5ebfa174ee6ff2d0d73f989be2e5f1c27",
+      "raw_sha256": "5c8ca22ef22459780e7b2c8f20a522e307546a7b6a212f1e83a77809b9f44074",
+      "encoding": "identity",
+      "stored_path": "kept/CLAIM_STATUS_CERTIFICATE-2e1efea5ebfa174e.md",
+      "stored_sha256": "5c8ca22ef22459780e7b2c8f20a522e307546a7b6a212f1e83a77809b9f44074"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/frame-attached-four-point-weights-20260916/HANDOFF.md",
+      "original_mode": "100644",
+      "git_blob": "2588781386ad583a427de3b60579aea86c06f0ea",
+      "raw_sha256": "ff892d37f027e372a732af407a4912e3f2f01313f95c14c16e0b8e3640712e34",
+      "encoding": "identity",
+      "stored_path": "kept/HANDOFF-2588781386ad583a.md",
+      "stored_sha256": "ff892d37f027e372a732af407a4912e3f2f01313f95c14c16e0b8e3640712e34"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/frame-attached-four-point-weights-20260916/OPPORTUNITY_QUEUE.md",
+      "original_mode": "100644",
+      "git_blob": "8e0fa176acb3672320135deef09c1cb869eb53d9",
+      "raw_sha256": "9ac9e684f62ff643e4a7519bbb5d6e942300644f1b3324937d1eb889cc1797f5",
+      "encoding": "identity",
+      "stored_path": "kept/OPPORTUNITY_QUEUE-8e0fa176acb36723.md",
+      "stored_sha256": "9ac9e684f62ff643e4a7519bbb5d6e942300644f1b3324937d1eb889cc1797f5"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/frame-attached-four-point-weights-20260916/TRACE_GATE.md",
+      "original_mode": "100644",
+      "git_blob": "b16d8ada36906b74b6f28e0ec3307bcd0711b3b1",
+      "raw_sha256": "41d08bab8e18b31700a50b44e82bac2ddcd0f4ffe060b15cea1a963e9f08585d",
+      "encoding": "identity",
+      "stored_path": "kept/TRACE_GATE-b16d8ada36906b74.md",
+      "stored_sha256": "41d08bab8e18b31700a50b44e82bac2ddcd0f4ffe060b15cea1a963e9f08585d"
+    },
+    {
+      "original_path": "docs/ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "original_mode": "100644",
+      "git_blob": "9744b717438183f6ebc4e40a0c5f868673977250",
+      "raw_sha256": "ec915e66d82cd8c8b01eb4e0b582f414301b47af234895c2ca4ce494a5828225",
+      "encoding": "identity",
+      "stored_path": "kept/ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16-9744b717438183f6.md",
+      "stored_sha256": "ec915e66d82cd8c8b01eb4e0b582f414301b47af234895c2ca4ce494a5828225"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_mode": "100644",
+      "git_blob": "6a6622bf983c983605f7c1fd1e6a7d9986f4143e",
+      "raw_sha256": "01b0ed5a1f65ede1eefa99c96b78ede7a7bf130883eb8674ac6ef452fc4b0b08",
+      "encoding": "identity",
+      "stored_path": "kept/citation_graph_manifest-6a6622bf983c9836.json",
+      "stored_sha256": "01b0ed5a1f65ede1eefa99c96b78ede7a7bf130883eb8674ac6ef452fc4b0b08"
+    },
+    {
+      "original_path": "logs/runner-cache/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16.txt",
+      "original_mode": "100644",
+      "git_blob": "719bfa0c25e7665f0bd166e71fece9dd57b8502f",
+      "raw_sha256": "c7b1ff2af5d1335d5eed15e3bc5d007a10f85b04d9c5830c2f4d8d8e67fb7fff",
+      "encoding": "gzip",
+      "stored_path": "kept/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16-719bfa0c25e7665f.txt.gz",
+      "stored_sha256": "a380dc5cd8bbc627fed45a18e619a1dfbbbdc25438b9353e7964232b7721d598"
+    },
+    {
+      "original_path": "scripts/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16.py",
+      "original_mode": "100644",
+      "git_blob": "4c34d2777f1fd27b78ead525a78a7165ca9c3b18",
+      "raw_sha256": "5379c584efe47c3787de95bffd6a7c54b5d784540f5b9b380217ad566268fbf1",
+      "encoding": "identity",
+      "stored_path": "kept/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16-4c34d2777f1fd27b.py",
+      "stored_sha256": "5379c584efe47c3787de95bffd6a7c54b5d784540f5b9b380217ad566268fbf1"
+    }
+  ]
+}

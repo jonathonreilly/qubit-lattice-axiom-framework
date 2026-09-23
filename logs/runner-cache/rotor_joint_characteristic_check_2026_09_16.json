@@ -1,0 +1,115 @@
+{
+  "weighted_cubic_commutator": {
+    "L": 3,
+    "kappa": 2.339089514424022,
+    "exact_real": 1.0675435788682663,
+    "exact_imaginary": 0.09797766697251888,
+    "perpendicular_smear_norm": 0.4695986963781581,
+    "directional_rows": [
+      {
+        "h": 0.01,
+        "real": 1.0675474979691126,
+        "imaginary": 0.09797211971372416,
+        "error": 6.792012336486584e-06
+      },
+      {
+        "h": 0.005,
+        "real": 1.0675445586353707,
+        "imaginary": 0.09797628017087191,
+        "error": 1.6979877463514667e-06
+      },
+      {
+        "h": 0.0025,
+        "real": 1.067543823809528,
+        "imaginary": 0.09797732027294125,
+        "error": 4.244959585448276e-07
+      }
+    ],
+    "convergence_ratios": [
+      4.000036131639259,
+      4.000009216040995
+    ],
+    "extrapolation_error": 1.3066503667943674e-12,
+    "wrong_perpendicular_sign_error": 0.19595533394503775,
+    "translated_defect_change": 0.2136860242090292,
+    "lipschitz_bound": 1.2349813271754633
+  },
+  "positive_covariance": {
+    "sites": 7,
+    "direct": 4.357285858497885,
+    "spectral": 4.357285858497886,
+    "trace_density": 9.743864984900863,
+    "upper": 11.936946615558782
+  },
+  "single_rotor_ground_challenge": [
+    {
+      "g": 0.6,
+      "cutoff": 19,
+      "ground_energy": 0.48847783641190534,
+      "plaquette_defect": 0.09005282715756519,
+      "annihilator_norm": 0.04320353564042986,
+      "characteristic_real": 0.8952851864614337,
+      "characteristic_imaginary": 4.5102810375396984e-17,
+      "gaussian": 0.8877012702178191,
+      "characteristic_error": 0.007583916243614652,
+      "commutator_error": 2.631954563432281e-15,
+      "ode_residual": 0.019442368320118586,
+      "analytic_ode_upper": 0.2217610103719419,
+      "duhamel_error": 4.958256049381215e-13,
+      "boundary_mass": 1.3800993754054807e-34
+    },
+    {
+      "g": 0.4,
+      "cutoff": 28,
+      "ground_energy": 0.49494842976915554,
+      "plaquette_defect": 0.040004257197164564,
+      "annihilator_norm": 0.019254262847613307,
+      "characteristic_real": 0.8910728064613507,
+      "characteristic_imaginary": 1.5612511283791264e-17,
+      "gaussian": 0.8877012702178191,
+      "characteristic_error": 0.003371536243531592,
+      "commutator_error": 5.485220867312013e-15,
+      "ode_residual": 0.008604148158028069,
+      "analytic_ode_upper": 0.1382723448295508,
+      "duhamel_error": 1.0286216655031638e-13,
+      "boundary_mass": 4.701461467295623e-40
+    },
+    {
+      "g": 0.25,
+      "cutoff": 44,
+      "ground_energy": 0.4980391546213345,
+      "plaquette_defect": 0.01562524415548741,
+      "annihilator_norm": 0.0075306926005268395,
+      "characteristic_real": 0.8890186256360004,
+      "characteristic_imaginary": -4.888396545194018e-17,
+      "gaussian": 0.8877012702178191,
+      "characteristic_error": 0.001317355418181343,
+      "commutator_error": 9.726973055372628e-15,
+      "ode_residual": 0.0033536640637096826,
+      "analytic_ode_upper": 0.08191460376532608,
+      "duhamel_error": 1.6042736567918248e-14,
+      "boundary_mass": 1.0235183721747837e-44
+    },
+    {
+      "g": 0.16,
+      "cutoff": 69,
+      "ground_energy": 0.49919871381217684,
+      "plaquette_defect": 0.006400016542973871,
+      "annihilator_norm": 0.0030860136192080584,
+      "characteristic_real": 0.8882409191820786,
+      "characteristic_imaginary": -1.20850803701577e-16,
+      "gaussian": 0.8877012702178191,
+      "characteristic_error": 0.0005396489642595093,
+      "commutator_error": 2.445970238781071e-14,
+      "ode_residual": 0.0013724835766877885,
+      "analytic_ode_upper": 0.05069149707365496,
+      "duhamel_error": 2.6092502780407246e-15,
+      "boundary_mass": 5.333954829300153e-49
+    }
+  ],
+  "scope": "Author finite algebra and one-rotor challenges, not a charged-volume simulation or independent review.",
+  "tolerance": 2e-08,
+  "runner_sha256": "98deb7a0b06c820ad1f4656386095286ea16751c411e4aeff8564a5dfb27dc1e",
+  "geometry_helper_sha256": "28c122c6b6704ecce38da4768fa23767bbafb3ade2cd10d71589c70167e55b18",
+  "checks": 22
+}

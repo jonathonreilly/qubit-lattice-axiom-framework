@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/rotor_uniform_compact_response_check_2026_09_16.py
+runner_sha256: d85a1827f56d8440e57c7a8aa0ccb524cfda547263750529b8ae7c2bc1d609a9
+input_fingerprint_sha256: a5b21ad594f9e7979dd202b7bfa7bbaa5a476e01faff1322b36395061a7c11e4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.25
+status: ok
+----- stdout -----
+Discrete Gaussian, Wilson hopping, wavepacket, compact mode, and spectral challenges completed.
+per_element: executed — direct/dual Gaussian sums and literal CAR matrices at unchanged tolerances
+per_site: executed — finite cubic wave packets R=3,4,7,12 and translated ensembles L=3,4,5,6
+per_mode: executed — selected transverse sine/cosine modes and finite spectral measures
+per_block: executed — rank-two cycles, 16-dimensional CAR and degenerate-ground fixtures
+lattice_wide: checked and not executed — uniform bounds and joint-limit/time arguments are written proofs; finite fixtures do not execute an infinite lattice
+TOTAL: PASS=62 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/gauge_wilson_static_source_sector_controls_2026_09_07.py
+runner_sha256: 436817eaf370cbca3e8e197154ed8b05c8ac6af19e81ccace2e8fdea058d8476
+input_fingerprint_sha256: b984e39092bd1ae3125960ac8cd24ad1449c5b5acf61e0a53f8e3250855ad94a
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+PASS gauge_wilson_static_source_sector_controls_2026_09_07.py
+per_element: PASS 1 checks; actual unit cube geometry
+per_site: PASS 6 checks; boundary Gauss and ghost-shortcut controls
+per_mode: PASS 5 checks; nine-source norm inequality controls
+per_block: PASS 12 checks; three complete affine cube source-flow censuses
+lattice_wide: checked and not executed — imported coordinate/domain theorem and uniform estimate remain analytical; 8 finite toy/resource controls only; seven explicit resolvent/sector toys and resources; no imported-theorem proof
+TOTAL: PASS=32 FAIL=0
+seconds: 0.013029374997131526; rss_MiB: 22.125
+source_sha256: 436817eaf370cbca3e8e197154ed8b05c8ac6af19e81ccace2e8fdea058d8476
+
+----- stderr -----
+

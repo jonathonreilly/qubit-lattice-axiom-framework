@@ -1,0 +1,203 @@
+===== runner cache v1 =====
+runner: scripts/open_wilson_dynamical_gauge_join_check_2026_09_16.py
+runner_sha256: f04b76f92f325e302e99e59648b1ad4fb4bed535922580bc65eb6746ca0d2749
+input_fingerprint_sha256: f40b1d849781fe29171a8460c658093289b8b463e1903a2b4a69045b21ccd234
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.50
+status: ok
+----- stdout -----
+{
+  "source_sha256": "f04b76f92f325e302e99e59648b1ad4fb4bed535922580bc65eb6746ca0d2749",
+  "physical_invariant_sector_dimension": 1296,
+  "electric_charge_range": [
+    -4,
+    4
+  ],
+  "exact_finite_path_check": {
+    "N": 3,
+    "time_slices": 3,
+    "delta": 0.08,
+    "histories": 27,
+    "direct_four_component_path_sum": 1.0016056500616617,
+    "physical_fock_transfer_amplitude": 1.0016056500616752,
+    "difference": 1.354472090042691e-14,
+    "maximum_spin_reduction_error": 5.10702591327572e-15,
+    "amplitude_without_endpoint_factors": 1.0006494537589783,
+    "endpoint_error": 0.0009561963026969433,
+    "calibrated_c": 5.131952458643825
+  },
+  "continuum_hamiltonian_nonzeros": 15119,
+  "independent_generator_checks": [
+    {
+      "N": 64,
+      "delta": 2.44140625e-07,
+      "generator_vector_error": 0.00436664247498207,
+      "hamiltonian_vector_norm": 50.48040620802536
+    },
+    {
+      "N": 128,
+      "delta": 6.103515625e-08,
+      "generator_vector_error": 0.001094066660120875,
+      "hamiltonian_vector_norm": 50.48040620802536
+    },
+    {
+      "N": 256,
+      "delta": 1.52587890625e-08,
+      "generator_vector_error": 0.00027359053574748586,
+      "hamiltonian_vector_norm": 50.48040620802536
+    }
+  ],
+  "joint_refinements": [
+    {
+      "joint_path_power": 1,
+      "values": [
+        {
+          "N": 3,
+          "Nt": 3,
+          "delta": 0.16666666666666666,
+          "calibrated_c": 4.3851135664618015,
+          "actual_boundary_amplitude": 1.001875851568098,
+          "continuum_boundary_amplitude": 1.017145428324306,
+          "absolute_error": 0.015269576756207881
+        },
+        {
+          "N": 5,
+          "Nt": 5,
+          "delta": 0.1,
+          "calibrated_c": 3.857563917177291,
+          "actual_boundary_amplitude": 1.0040729771997978,
+          "continuum_boundary_amplitude": 1.017145428324306,
+          "absolute_error": 0.013072451124508166
+        },
+        {
+          "N": 9,
+          "Nt": 9,
+          "delta": 0.05555555555555555,
+          "calibrated_c": 3.235619684855463,
+          "actual_boundary_amplitude": 1.0072966397556546,
+          "continuum_boundary_amplitude": 1.017145428324306,
+          "absolute_error": 0.009848788568651345
+        },
+        {
+          "N": 17,
+          "Nt": 17,
+          "delta": 0.029411764705882353,
+          "calibrated_c": 2.5291256083056917,
+          "actual_boundary_amplitude": 1.010673041653022,
+          "continuum_boundary_amplitude": 1.017145428324306,
+          "absolute_error": 0.006472386671283914
+        },
+        {
+          "N": 33,
+          "Nt": 33,
+          "delta": 0.015151515151515152,
+          "calibrated_c": 1.7286708624149878,
+          "actual_boundary_amplitude": 1.0133365469999525,
+          "continuum_boundary_amplitude": 1.017145428324306,
+          "absolute_error": 0.0038088813243535302
+        }
+      ]
+    },
+    {
+      "joint_path_power": 2,
+      "values": [
+        {
+          "N": 3,
+          "Nt": 9,
+          "delta": 0.05555555555555555,
+          "calibrated_c": 5.500197146660297,
+          "actual_boundary_amplitude": 1.0073644632396712,
+          "continuum_boundary_amplitude": 1.017145428324306,
+          "absolute_error": 0.009780965084634774
+        },
+        {
+          "N": 5,
+          "Nt": 25,
+          "delta": 0.02,
+          "calibrated_c": 5.500197146660297,
+          "actual_boundary_amplitude": 1.0123843607341987,
+          "continuum_boundary_amplitude": 1.017145428324306,
+          "absolute_error": 0.004761067590107304
+        },
+        {
+          "N": 9,
+          "Nt": 81,
+          "delta": 0.006172839506172839,
+          "calibrated_c": 5.500197146660297,
+          "actual_boundary_amplitude": 1.015460628134842,
+          "continuum_boundary_amplitude": 1.017145428324306,
+          "absolute_error": 0.0016848001894640419
+        },
+        {
+          "N": 17,
+          "Nt": 289,
+          "delta": 0.0017301038062283738,
+          "calibrated_c": 5.500197146660297,
+          "actual_boundary_amplitude": 1.01665061531956,
+          "continuum_boundary_amplitude": 1.017145428324306,
+          "absolute_error": 0.0004948130047459642
+        }
+      ]
+    },
+    {
+      "joint_path_power": 3,
+      "values": [
+        {
+          "N": 3,
+          "Nt": 27,
+          "delta": 0.018518518518518517,
+          "calibrated_c": 6.604242340252273,
+          "actual_boundary_amplitude": 1.0127386565767171,
+          "continuum_boundary_amplitude": 1.017145428324306,
+          "absolute_error": 0.004406771747588856
+        },
+        {
+          "N": 5,
+          "Nt": 125,
+          "delta": 0.004,
+          "calibrated_c": 7.116151056738452,
+          "actual_boundary_amplitude": 1.0160637111846174,
+          "continuum_boundary_amplitude": 1.017145428324306,
+          "absolute_error": 0.0010817171396886316
+        },
+        {
+          "N": 9,
+          "Nt": 729,
+          "delta": 0.0006858710562414266,
+          "calibrated_c": 7.704659135712891,
+          "actual_boundary_amplitude": 1.0169599430866345,
+          "continuum_boundary_amplitude": 1.017145428324306,
+          "absolute_error": 0.00018548523767147884
+        },
+        {
+          "N": 17,
+          "Nt": 4913,
+          "delta": 0.0001017708121310808,
+          "calibrated_c": 8.34107202139951,
+          "actual_boundary_amplitude": 1.017119697785957,
+          "continuum_boundary_amplitude": 1.017145428324306,
+          "absolute_error": 2.5730538349089116e-05
+        }
+      ]
+    }
+  ],
+  "seconds": 1.1040029525756836,
+  "input_sha256": {
+    "docs/OPEN_WILSON_GAUGE_MATTER_FIXED_GRAPH_STATE_JOIN_BOUNDED_THEOREM_NOTE_2026-09-16.md": "8a7c81cd5aa2f4337a17cc7f67c5574fad744eadabfce83354b7918ceb5a63b7",
+    "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md": "49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07",
+    "docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md": "9a38fa37ab055b1938cd833e0e22f3cc64b8f88893d6409ad91d6099a78434a8",
+    "docs/CLOCK_VARIANCE_CALIBRATED_JOINT_ROTOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-16.md": "1fe6bcf7e075621b48cb5751b6037096cfb2aba55c7abced6df95ba809d38b21",
+    "docs/CLOCK_ALL_MODE_COERCIVITY_FINITE_GRAPH_STATES_BOUNDED_THEOREM_NOTE_2026-09-16.md": "89169a9dcd5e3cb2f79fed9735c0f5785a4781ee325deae57fb67fa1008fa537"
+  },
+  "completed_diagnostic_families": 1
+}
+TOTAL: PASS=1 FAIL=0
+per_element: 27 three-slice clock histories versus an independently assembled transfer.
+per_site: one spatial edge; no magnetic plaquette or propagating photon.
+per_mode: 1296-dimensional physical invariant sector with exact electric-charge energy.
+per_block: three joint-refinement paths and arbitrary-vector generator controls.
+lattice_wide: finite-graph diagnostics only; no volume-uniform phase or global ground-state selection.
+
+----- stderr -----
+

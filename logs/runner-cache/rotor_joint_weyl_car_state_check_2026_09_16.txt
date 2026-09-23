@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/rotor_joint_weyl_car_state_check_2026_09_16.py
+runner_sha256: 3ce6b6ed861be1ea0719254ae0b4d902c69409fa5223c4161f2b725c4a2e9a41
+input_fingerprint_sha256: 33489ccaae08c96ede32d5213540d52bdd64a8451149e09fbb7721d207bfcedd
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.32
+status: ok
+----- stdout -----
+g=0.60: Weyl error=0.0477977, wrong-sign error=0.583474
+g=0.40: Weyl error=0.0215688, wrong-sign error=0.598011
+g=0.25: Weyl error=0.00848626, wrong-sign error=0.605337
+g=0.16: Weyl error=0.00348531, wrong-sign error=0.608151
+L=8: local zero-mode ambiguity=0.25, global norm=1
+L=16: local zero-mode ambiguity=0.125, global norm=1
+L=32: local zero-mode ambiguity=0.0625, global norm=1
+L=64: local zero-mode ambiguity=0.03125, global norm=1
+per_element: executed — Weyl signs and nonprojection covariance discriminator
+per_site: executed — local versus global covariance on finite rings L=8,16,32,64
+per_mode: executed — single-rotor Fourier cutoffs and exact auxiliary zero momenta
+per_block: executed — ground and excited rotor vectors, two-band and four-state fixtures
+lattice_wide: checked and not executed — uniform bounds and joint-limit/time arguments are written proofs; finite fixtures do not execute an infinite lattice
+TOTAL: PASS=46 FAIL=0
+
+----- stderr -----
+

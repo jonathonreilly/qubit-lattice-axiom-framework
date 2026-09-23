@@ -29,13 +29,13 @@
     "admissibility_rule_monotone_order_formation_law_rows_columns_chains_corner_law_bounded_theorem_note_2026-09-07",
     "admissibility_covariant_q8_conditional_law_pair_bounded_theorem_note_2026-08-13"
   ],
-  "direct_in_degree": 0,
+  "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 0.0,
+  "load_bearing_score": 1.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -56,6 +56,6 @@
   },
   "runner_path": "scripts/formation_order_covariance_and_isotropic_binary_order_blind_classification_2026_09_13.py",
   "title": "Sequential formation has no proper-cubic-invariant total order, and isotropic binary order-blind rules are independent",
-  "transitive_descendants": 0,
+  "transitive_descendants": 1,
   "verdict_rationale": null
 }

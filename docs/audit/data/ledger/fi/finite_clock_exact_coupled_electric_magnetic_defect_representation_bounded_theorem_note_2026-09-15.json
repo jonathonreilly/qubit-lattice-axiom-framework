@@ -29,7 +29,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 3.807,
+  "load_bearing_score": 4.459,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -50,6 +50,6 @@
   },
   "runner_path": "scripts/finite_clock_exact_coupled_electric_magnetic_defect_representation_2026_09_15.py",
   "title": "Exact finite-clock coupled electric and magnetic defect law",
-  "transitive_descendants": 6,
+  "transitive_descendants": 10,
   "verdict_rationale": null
 }

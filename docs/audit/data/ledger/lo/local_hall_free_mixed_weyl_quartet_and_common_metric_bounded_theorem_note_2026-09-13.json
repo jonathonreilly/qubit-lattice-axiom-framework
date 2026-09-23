@@ -27,13 +27,13 @@
     "native_edge_record_matter_instrument_and_energy_ledger_bounded_theorem_note_2026-09-05",
     "discrete_symmetries_p_t_and_cpt_of_the_emergent_fermion_bounded_theorem_note_2026-09-03"
   ],
-  "direct_in_degree": 0,
+  "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 0.0,
+  "load_bearing_score": 2.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/local_hall_free_mixed_weyl_quartet_and_common_metric_2026_09_13.py",
   "title": "A mixed Weyl quartet with zero Hall response and an explicit common metric",
-  "transitive_descendants": 0,
+  "transitive_descendants": 3,
   "verdict_rationale": null
 }

@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/gauge_wilson_haar_contact_fdd_controls_2026_09_07.py
+runner_sha256: 7fc63dbba4190fbd34ae55482834cdf521c5521b4a4b8d07152a6cf6f79e009b
+input_fingerprint_sha256: a9c3774799396f4a78f5ba39847084709e9fad7d4ee5ca55b678fda1d770e757
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+PASS gauge_wilson_haar_contact_fdd_controls_2026_09_07.py
+per_element: 4 checks; supplied Haar character moments and normalization
+per_site: 3 checks; actual27-plaquette disjointness and repeated-plaquette adverse
+per_mode: 2 checks; small-argument threshold and Taylor deviation
+per_block: 3 checks; exact logarithmic remainder constants
+lattice_wide: 1 checks; mesh remainder exponent only; analytical FDD limit not executed; resource/interface guards excluded from scientific count
+TOTAL: PASS=13 FAIL=0
+seconds: 0.003375957952812314; rss_MiB: 21.109375
+source_sha256: 7fc63dbba4190fbd34ae55482834cdf521c5521b4a4b8d07152a6cf6f79e009b
+
+----- stderr -----
+

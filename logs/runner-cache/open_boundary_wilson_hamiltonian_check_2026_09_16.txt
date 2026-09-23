@@ -1,0 +1,113 @@
+===== runner cache v1 =====
+runner: scripts/open_boundary_wilson_hamiltonian_check_2026_09_16.py
+runner_sha256: 5679b000903a07cd478622fd42d58430d7f7bfbb40f7eb72012a97cfce0215ad
+input_fingerprint_sha256: a4808769c5b1fc9fe2f902e29e2b29ba1b1bdb3bc1df96b3372a6943907c11f8
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.57
+status: ok
+----- stdout -----
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+{
+  "source_sha256": "5679b000903a07cd478622fd42d58430d7f7bfbb40f7eb72012a97cfce0215ad",
+  "continuum_fock_amplitude": [
+    1.0087133391373564,
+    3.0570293396496245e-20
+  ],
+  "one_particle_vs_fock_amplitude_error": 3.2121638682270076e-11,
+  "finite_fock_check": [
+    {
+      "Nt": 4,
+      "fock_dimension": 70,
+      "amplitude_error": 1.3322678173976917e-15,
+      "minimum_slice_transfer_eigenvalue": 0.011346791564032694
+    }
+  ],
+  "joint_open_boundary_checks": [
+    {
+      "Nt": 4,
+      "delta": 0.125,
+      "full_matrix_dimension": 32,
+      "normalized_log_determinant": 0.0015581313837742528,
+      "schur_error": 3.552713678800501e-15,
+      "complementary_minor_error": 7.105427357601002e-15,
+      "noncommuting_slice_norm": 0.011291442398908814,
+      "paired_boundary_weight": 1.0031211233620185,
+      "continuum_paired_weight": 1.0175026005536354,
+      "paired_weight_error": 0.014381477191616865,
+      "scalar_log_prefactor": -8.956404034192982
+    },
+    {
+      "Nt": 8,
+      "delta": 0.0625,
+      "full_matrix_dimension": 64,
+      "normalized_log_determinant": 0.003408141858344038,
+      "schur_error": 7.105427357601002e-15,
+      "complementary_minor_error": 0.0,
+      "noncommuting_slice_norm": 0.003852735530821588,
+      "paired_boundary_weight": 1.0068395674513246,
+      "continuum_paired_weight": 1.0175026005536354,
+      "paired_weight_error": 0.01066303310231076,
+      "scalar_log_prefactor": -10.192585644908137
+    },
+    {
+      "Nt": 16,
+      "delta": 0.03125,
+      "full_matrix_dimension": 128,
+      "normalized_log_determinant": 0.005300059440152438,
+      "schur_error": 7.105427357601002e-15,
+      "complementary_minor_error": 3.552713678800501e-15,
+      "noncommuting_slice_norm": 0.001178104426052259,
+      "paired_boundary_weight": 1.0106564991769615,
+      "continuum_paired_weight": 1.0175026005536354,
+      "paired_weight_error": 0.006846101376673852,
+      "scalar_log_prefactor": -10.99980151483236
+    },
+    {
+      "Nt": 32,
+      "delta": 0.015625,
+      "full_matrix_dimension": 256,
+      "normalized_log_determinant": 0.00672986073613302,
+      "schur_error": 1.0658141036401503e-14,
+      "complementary_minor_error": 1.0658141036401503e-14,
+      "noncommuting_slice_norm": 0.0003313938954311055,
+      "paired_boundary_weight": 1.0135507112975883,
+      "continuum_paired_weight": 1.0175026005536354,
+      "paired_weight_error": 0.003951889256047059,
+      "scalar_log_prefactor": -11.471172644016784
+    },
+    {
+      "Nt": 64,
+      "delta": 0.0078125,
+      "full_matrix_dimension": 512,
+      "normalized_log_determinant": 0.007625275750747562,
+      "schur_error": 6.394884621840902e-14,
+      "complementary_minor_error": 1.2079226507921703e-13,
+      "noncommuting_slice_norm": 8.834815763441372e-05,
+      "paired_boundary_weight": 1.0153674345833037,
+      "continuum_paired_weight": 1.0175026005536354,
+      "paired_weight_error": 0.0021351659703316983,
+      "scalar_log_prefactor": -11.72768675831309
+    }
+  ],
+  "seconds": 0.14374089241027832,
+  "input_sha256": {
+    "docs/OPEN_BOUNDARY_WILSON_FOCK_MODEL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-16.md": "9a38fa37ab055b1938cd833e0e22f3cc64b8f88893d6409ad91d6099a78434a8",
+    "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md": "49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07"
+  },
+  "completed_diagnostic_families": 1
+}
+TOTAL: PASS=1 FAIL=0
+per_element: full time-Dirac determinants, Schur and complementary minors.
+per_site: noncommuting two-site external histories.
+per_mode: 70-state CAR sector and exterior-power comparison.
+per_block: five time resolutions with original ODE tolerances.
+lattice_wide: fixed-graph boundary amplitude only; no thermal or global ground-state identification.
+
+----- stderr -----
+

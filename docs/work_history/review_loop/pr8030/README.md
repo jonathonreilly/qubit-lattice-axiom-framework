@@ -1,0 +1,5 @@
+# PR8030 partial mathematical salvage and exact recovery
+
+The [manifest](manifest.json) records all 89 originals, including 81 historical paths, their modes, blobs and decoded SHA256 identities. Every gzip payload preserves exact source bytes, including original negative arguments, earlier source-alignment/FDD wording, base64 differences, failed paths and raw outputs. The manifest and archived payloads preserve original source independently of branch retention.
+
+The canonical note retains quantitative estimates, actual Haar contact finite-dimensional distributions, the conditional gap/locality ratio and the complete optional moment/skew argument. Certification of the original separated-field exclusion remains deferred because the current N1 attack requirement was not met. This is not a mathematical disproof and is not a relabeled positive exclusion. Historical reviews, timing and claims of independence are historical only; original outputs are not fresh canonical evidence. The coordinator must preserve the original branch for this partial salvage.

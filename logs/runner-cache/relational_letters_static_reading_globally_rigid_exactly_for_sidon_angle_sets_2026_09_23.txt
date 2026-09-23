@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/relational_letters_static_reading_globally_rigid_exactly_for_sidon_angle_sets_2026_09_23.py
+runner_sha256: eb8a471d66502a17090a34edb1125f5914177218ed594915071df065f940ef4e
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 64.85
+status: ok
+----- stdout -----
+A. the Sidon property is conditions (a) and (c)
+[PASS] over every triple of distinct angle multiples modulo m = 5 to 12, the angles are Sidon exactly when (a) and (c) hold :: 494 triples, 252 Sidon; the seven letters and 30, 60, 150 degrees are Sidon with six distinct signed angles; (1, 3, 5) mod 12 and (1, 2, 3) mod 7 break (c): 1 + 5 = 3 + 3 and 1 + 3 = 2 + 2
+B. the plaquette lemma
+[PASS] with Sidon angles every elementary square is straight or folded; the contrast sets have other squares :: seven letters (1, 2, 4) mod 7: 12 straight, 12 folded, 0 other; 30, 60, 150 degrees (1, 2, 5) mod 12: 12 straight, 12 folded, 0 other; contrast (1, 3, 5) mod 12: 12 straight, 12 folded, 16 other; contrast (1, 2, 3) mod 7: 12 straight, 12 folded, 16 other
+C. every static record is a spiral on its core, for Sidon angles
+[PASS] cores of side 2, 3, 4: Sidon angles give exactly the 12 spirals; the contrast sets give 48, 384, 3072 records :: seven letters: 12, 12, 12; 30, 60, 150 degrees: 12, 12, 12; contrast (1, 3, 5) mod 12: 48, 384, 3072; contrast (1, 2, 3) mod 7: 48, 384, 3072; one core value fixed, 12 = six angle assignments times two senses
+D. the sweep reading is flexible
+[PASS] with back neighbours only, the same Sidon angles admit records on the core of side 2 that are not spirals :: seven letters: 336 records, 12 spirals; 30, 60, 150 degrees: 24 records, 12 spirals; the forward completions are what fix the frame
+E. spirals are static records with unique completions
+[PASS] every spiral is the unique completion of its back and of its forward neighbours at every core site :: 648 core sites over the 12 spirals of both Sidon sets on the side-5 box; so the core restrictions are exactly the spirals, up to a global rotation
+F. cross-check with face values included
+[PASS] a full search on the side-4 box, face values included, finds the same core records :: seven letters 12 cores, contrast (1, 3, 5) mod 12 48 cores
+G. on a torus the frame must wrap consistently
+[PASS] on the cubic torus of side L the seven letters have static records only for L = 7 among L = 2 to 7, exactly the 12 spirals; none on the side-2 or side-4 torus for either set :: seven letters, records for L = 2..7: 0, 0, 0, 0, 0, 12; 30, 60, 150 degrees, L = 2, 3, 4: none; every site is a core site, a spiral wraps consistently only if L d = 0 mod m
+H. the record carries the frame and nothing positional
+[PASS] complete spiral extensions have one relative view, so the invariant scalar readout cannot carry varying roles :: one view per spiral at all 64 core sites of the side-6 box, while the parity vector takes 8 values; even with the global rotation fixed, sites of different parity share a value (seven letters: x and x + (1, 1, 1), as 1 + 2 + 4 = 7)
+I. the rigidity uses the reading's octant
+[PASS] if each core site may use its own octant, the seven letters are not rigid: the fixed octant carries the rigidity :: core of side 2: 15024 records, 48 of them spirals (six assignments, eight sign patterns); with the octant fixed, 12
+per_element: Exact arithmetic tests the declared angle, star or linear-system objects; no physical qubit encoding is inferred.
+per_site: Site checks cover only the explicit finite boxes, tori and samples printed above; boundary freedoms remain as stated in the note.
+per_mode: Analytic mode or symmetry arguments are conditional source proofs; finite runner cases alone do not prove untested universality.
+per_block: This is one bounded support result in a supplied relational record model, with the controls and counts declared above.
+lattice_wide: No physical infinite-volume conclusion is inferred; any whole-lattice or all-size statement is limited to the explicit source theorem hypotheses.
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

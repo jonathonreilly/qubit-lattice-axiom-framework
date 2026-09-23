@@ -1,0 +1,48 @@
+{
+  "status": "negative_pointwise_curvature_witness_checked",
+  "rows": [
+    {
+      "beta": 1.0,
+      "N": 256,
+      "q": 41.94581870462977,
+      "mean_reference_not_used": true,
+      "gamma": 8973401360.009935,
+      "direct_gamma2": -9444334817.251295,
+      "scalar_gamma2": -9444334817.251291,
+      "relative_error": 4.039138107066011e-16,
+      "curvature_ratio": -1.0524810423993827,
+      "electric_hessian_bound": 1.83895820475033e-12,
+      "electric_correction_upper": 0.016501677113409368,
+      "actual_clock_gamma2_upper": -9444334817.234789
+    },
+    {
+      "beta": 2.0,
+      "N": 363,
+      "q": 83.89163740925954,
+      "mean_reference_not_used": true,
+      "gamma": 2.303589143360119e+19,
+      "direct_gamma2": -2.4656583543610724e+19,
+      "scalar_gamma2": -2.465658354361072e+19,
+      "relative_error": 1.6612196060152867e-16,
+      "curvature_ratio": -1.070355085440519,
+      "electric_hessian_bound": 1.3154394416476595e-12,
+      "electric_correction_upper": 30302320.16442823,
+      "actual_clock_gamma2_upper": -2.465658354358042e+19
+    },
+    {
+      "beta": 4.0,
+      "N": 512,
+      "q": 167.7832748185191,
+      "mean_reference_not_used": true,
+      "gamma": 7.59053908826228e+37,
+      "direct_gamma2": -8.192432325028999e+37,
+      "scalar_gamma2": -8.1924323250289985e+37,
+      "relative_error": 1.1528606634789455e-16,
+      "curvature_ratio": -1.0792951896786178,
+      "electric_hessian_bound": 1.83895820475033e-12,
+      "electric_correction_upper": 1.3958684134838013e+26,
+      "actual_clock_gamma2_upper": -8.19243232501504e+37
+    }
+  ],
+  "scope": "Finite free four-cube; fixed-clock correction uses the cited uniform electric-extension theorem. No gap, phase, or axiom no-go."
+}

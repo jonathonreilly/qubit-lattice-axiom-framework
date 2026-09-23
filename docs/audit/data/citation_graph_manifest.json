@@ -1,6 +1,6 @@
 {
- "edge_count": 13750,
- "node_count": 6270,
+ "edge_count": 14080,
+ "node_count": 6500,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -742,6 +742,10 @@
    "deps_hash": "1b3132f0c69b",
    "out_degree": 3
   },
+  "admissibility_rule_finite_unrecorded_component_factorization_and_attachment_factors_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "971b1e1951b0",
+   "out_degree": 4
+  },
   "admissibility_rule_formation_law_flip_identities_and_finite_mixture_witnesses_bounded_theorem_note_2026-09-15": {
    "deps_hash": "a95e40c6cf02",
    "out_degree": 3
@@ -808,6 +812,10 @@
   },
   "admissibility_rule_three_dimensional_formation_law_markov_graph_eight_corner_laws_sweep_imprint_bounded_theorem_note_2026-09-15": {
    "deps_hash": "14e84bc7fc5a",
+   "out_degree": 4
+  },
+  "admissibility_rule_three_dimensional_formation_law_ordered_phase_stability_of_the_noisy_level_automaton_explicit_threshold_six_invariant_laws_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "4dfc4c6b5d5e",
    "out_degree": 4
   },
   "admissibility_rule_three_dimensional_monotone_formation_law_plane_chain_coupling_region_bounded_theorem_note_2026-09-15": {
@@ -2346,6 +2354,10 @@
    "deps_hash": "a7f22af043f4",
    "out_degree": 7
   },
+  "charged_ring_slow_spectrum_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "2b126dc35e8a",
+   "out_degree": 2
+  },
   "chart_erased_fixed_program_physical_m2_compiler_cycle711_bounded_theorem_note_2026-07-26": {
    "deps_hash": "efb7ed4b144b",
    "out_degree": 3
@@ -2762,9 +2774,17 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "clock_all_mode_coercivity_finite_graph_states_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "19a59dfa7d56",
+   "out_degree": 2
+  },
   "clock_penalty_local_normal_form_and_simultaneous_ground_state_limit_bounded_theorem_note_2026-09-14": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "clock_variance_calibrated_joint_rotor_transfer_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "0181264194bd",
+   "out_degree": 1
   },
   "closure_c_bb_canonical_mass_coupling_note_2026-05-10_cbb": {
    "deps_hash": "2d20f59c98da",
@@ -2921,6 +2941,50 @@
   "compact_determinant_currents_signed_sectors_and_finite_cyclic_transfer_bounded_theorem_note_2026-09-14": {
    "deps_hash": "aa5ce5e499a9",
    "out_degree": 2
+  },
+  "compact_rotor_bridge_cubic_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "f1ce1c3e25b9",
+   "out_degree": 1
+  },
+  "compact_rotor_convex_carrier_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "47ee50d822ff",
+   "out_degree": 2
+  },
+  "compact_rotor_cover_source_identities_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "5c5744845f3f",
+   "out_degree": 1
+  },
+  "compact_rotor_ground_correlation_comparison_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "2fcf27dbac88",
+   "out_degree": 1
+  },
+  "compact_rotor_integer_filling_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "1ddd42e2e109",
+   "out_degree": 6
+  },
+  "compact_rotor_magnetic_covariance_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "0d23e8eb0dcf",
+   "out_degree": 4
+  },
+  "compact_rotor_magnetic_excursion_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "c2a5b3aaa801",
+   "out_degree": 2
+  },
+  "compact_rotor_sampled_magnetic_event_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "5b20d62d46aa",
+   "out_degree": 1
+  },
+  "compact_rotor_sine_score_static_curl_limit_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "5c5744845f3f",
+   "out_degree": 1
+  },
+  "compact_rotor_spatial_ground_path_limit_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "b3c5322b5b92",
+   "out_degree": 3
+  },
+  "compact_rotor_temporal_oscillation_coarse_current_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "924ef67349c9",
+   "out_degree": 4
   },
   "compact_u1_quadratic_basin_source_free_maxwell_universality_bounded_theorem_note_2026-09-03": {
    "deps_hash": "ba3fd22e4d7e",
@@ -3122,6 +3186,10 @@
    "deps_hash": "14400756f044",
    "out_degree": 4
   },
+  "coulomb_measure_selection_hard_static_ice_rules_admit_every_ice_measure_positive_rules_select_the_uniform_one_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "ac0c2e0a9b26",
+   "out_degree": 2
+  },
   "coulomb_stability_upper_bound_support_note_2026-05-20": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -3238,6 +3306,10 @@
    "deps_hash": "11bd292c9d93",
    "out_degree": 1
   },
+  "cubic_fourier_energy_and_gaussian_registers_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "7abbc6a8f4ab",
+   "out_degree": 2
+  },
   "cubic_ice_relaxed_magnetic_response_graph_flows_and_sheet_winding_bounded_theorem_note_2026-09-14": {
    "deps_hash": "ebc2136e3686",
    "out_degree": 1
@@ -3301,6 +3373,10 @@
   "cyclic_dft_uniform_magnitude_bounded_note_2026-05-26": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "cyclic_equilibrium_and_integer_gauss_limit_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "31a84a7a7413",
+   "out_degree": 2
   },
   "cyclic_projector_compression_narrow_theorem_note_2026-05-02": {
    "deps_hash": "e3b0c44298fc",
@@ -3585,6 +3661,10 @@
   "dirac_weyl_fermion_dof_from_lorentz_and_chirality_admission_bridge_note_2026-05-28": {
    "deps_hash": "42db6a056a96",
    "out_degree": 2
+  },
+  "directed_ice_sweep_formation_makes_ice_correlations_causal_flux_propagates_as_a_directed_random_walk_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "directional_b_density_stencil_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4982,6 +5062,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "exact_gauge_ward_response_identities_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "dfca8fa6ea7e",
+   "out_degree": 2
+  },
   "exact_gauss_reduction_and_fixed_volume_weak_coupling_spectrum_bounded_theorem_note_2026-09-13": {
    "deps_hash": "9c83fb5042d9",
    "out_degree": 3
@@ -5009,6 +5093,10 @@
   "exponent_derivation": {
    "deps_hash": "5861e51d4c5d",
    "out_degree": 1
+  },
+  "extended_explanation_tree_finite_witness_counts_and_rational_recursion_certificates_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "37c38db4f955",
+   "out_degree": 2
   },
   "extensional_nearest_neighbor_rule_deep_probe_2026-07-13": {
    "deps_hash": "c8eee4235fc9",
@@ -5090,6 +5178,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "finite_box_electric_offset_response_and_tail_bounds_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "36684f455cab",
+   "out_degree": 2
+  },
   "finite_cell_two_band_closed_form_bounded_theorem_note_2026-06-13": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -5166,8 +5258,16 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "finite_graph_cyclic_weak_coupling_limits_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "dcddb9da6de9",
+   "out_degree": 4
+  },
   "finite_integer_link_weak_coupling_payload_and_monopole_density_bounded_theorem_note_2026-09-13": {
    "deps_hash": "9c83fb5042d9",
+   "out_degree": 3
+  },
+  "finite_native_winding_curvature_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "07be8fcbc3ba",
    "out_degree": 3
   },
   "finite_rank_gravity_residual_helper_note_2026-04-14": {
@@ -5186,6 +5286,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "fixed_box_slow_spectrum_and_harmonic_metric_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "be287aabb9f6",
+   "out_degree": 3
+  },
   "fixed_clock_transverse_spectral_concentration_and_linear_energy_band_bounded_theorem_note_2026-09-15": {
    "deps_hash": "57fff9abdf25",
    "out_degree": 2
@@ -5193,6 +5297,10 @@
   "fixed_coupling_haar_villain_full_score_gaussian_maxwell_limit_bounded_theorem_note_2026-09-15": {
    "deps_hash": "12c4ea741dd8",
    "out_degree": 4
+  },
+  "fixed_coupling_rotor_ground_cutoff_compactness_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "d69ff4a91229",
+   "out_degree": 2
   },
   "fixed_field_complex_grown_basin_v2_note": {
    "deps_hash": "9b334c2c3616",
@@ -5530,9 +5638,21 @@
    "deps_hash": "8a36f31932c1",
    "out_degree": 5
   },
+  "formation_unit_sequential_vs_joint_covariant_sets_block_chain_equality_product_fill_visibility_and_glued_unit_hole_dissolution_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
   "formation_weight_energy_dictionary_underdetermination_bounded_theorem_note_2026-08-13": {
    "deps_hash": "35b37fce2461",
    "out_degree": 3
+  },
+  "formed_flux_as_a_persistent_walk_straight_continuation_gives_ballistic_then_diffusive_transport_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "de51ba5042c2",
+   "out_degree": 2
+  },
+  "formed_flux_transport_for_every_linear_ice_sweep_rule_is_a_markov_walk_damped_or_rigid_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "8e38fd32691d",
+   "out_degree": 2
   },
   "four_cube_cutting_fixed_point_orbit_floor_note_2026-08-11": {
    "deps_hash": "e3b0c44298fc",
@@ -5577,6 +5697,10 @@
   "fractional_instanton_dilute_gas_condensate_external_narrow_theorem_note_2026-05-16": {
    "deps_hash": "915b05f426fd",
    "out_degree": 2
+  },
+  "frame_attached_menu_exchange_covariant_probabilities_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "524486279bd8",
+   "out_degree": 3
   },
   "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30": {
    "deps_hash": "e3b0c44298fc",
@@ -5640,6 +5764,10 @@
   },
   "free_staggered_two_step_dispersion_d_dimensional_narrow_theorem_note_2026-06-12": {
    "deps_hash": "d1da2f9855ac",
+   "out_degree": 2
+  },
+  "free_weyl_holonomy_minimization_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "31a84a7a7413",
    "out_degree": 2
   },
   "frontier_extension_lane_b_protects_lane_a_joint_composition_narrow_note_2026-05-17": {
@@ -6554,6 +6682,10 @@
    "deps_hash": "1e65f050bf30",
    "out_degree": 4
   },
+  "gauge_wilson_finite_pw_static_source_energy_upper_bound_bounded_theorem_note_2026-09-07": {
+   "deps_hash": "54642007c92f",
+   "out_degree": 3
+  },
   "gauge_wilson_full_cube_compact_interacting_hamiltonian_limit_bounded_theorem_note_2026-09-07": {
    "deps_hash": "2ccb2e4b384d",
    "out_degree": 1
@@ -6578,13 +6710,33 @@
    "deps_hash": "3082e5eb18d6",
    "out_degree": 3
   },
+  "gauge_wilson_pw_compression_shell_and_energy_path_bounds_bounded_theorem_note_2026-09-07": {
+   "deps_hash": "399ee213d817",
+   "out_degree": 2
+  },
+  "gauge_wilson_selected_infinite_static_source_sector_bounded_theorem_note_2026-09-07": {
+   "deps_hash": "3013f159bb7a",
+   "out_degree": 2
+  },
   "gauge_wilson_spatial_loop_area_suppression_bounded_theorem_note_2026-09-07": {
    "deps_hash": "205cf1d98d21",
    "out_degree": 3
   },
+  "gauge_wilson_static_source_geodesic_perturbation_bounded_theorem_note_2026-09-07": {
+   "deps_hash": "7bf5bc0d0b09",
+   "out_degree": 2
+  },
   "gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "gauge_wilson_uniform_static_source_energy_bounds_bounded_theorem_note_2026-09-07": {
+   "deps_hash": "becf85893f46",
+   "out_degree": 4
+  },
+  "gauge_wilson_weak_window_quantitative_bounds_and_haar_contact_fdd_bounded_theorem_note_2026-09-07": {
+   "deps_hash": "03a7334ca20a",
+   "out_degree": 5
   },
   "gauged_log_transfer_quasilocality_combes_thomas_narrow_theorem_note_2026-06-13": {
    "deps_hash": "b48fd9e48b4d",
@@ -10558,6 +10710,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "holes_as_unrecorded_sites_unsoldered_order_blind_rules_are_constant_and_the_formation_order_is_visible_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
   "holographic_probe_note_2026-04-11": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -10678,6 +10834,10 @@
    "deps_hash": "46111474d8b7",
    "out_degree": 3
   },
+  "hybrid_generators_integrated_rates_and_curvature_witness_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "16404916beb0",
+   "out_degree": 2
+  },
   "hydrogen_helium_atomic_lattice_kinetic_dependency_narrow_repair_note_2026-06-02": {
    "deps_hash": "e8e0cb837a09",
    "out_degree": 3
@@ -10713,6 +10873,10 @@
   "i3_zero_exact_theorem_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "ice_support_under_nearest_neighbour_formation_vertex_bound_soldered_vertex_records_order_dependent_defects_and_uniform_ice_only_by_conditioning_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "impact_parameter_lensing_note": {
    "deps_hash": "bbfa07daa875",
@@ -10813,6 +10977,10 @@
   "irregular_sign_core_packet_gate_note": {
    "deps_hash": "9679402e3cd2",
    "out_degree": 2
+  },
+  "iterated_local_maxwell_matter_state_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "9398b27b4688",
+   "out_degree": 3
   },
   "j_landed_invariant_identification_cycle981_bounded_theorem_note_2026-08-11": {
    "deps_hash": "8c46c011aa91",
@@ -12582,9 +12750,17 @@
    "deps_hash": "86fee23e1c7d",
    "out_degree": 1
   },
+  "local_rotor_density_and_finite_template_bounds_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "adca3560d1b4",
+   "out_degree": 3
+  },
   "local_seam_signed_clifford_physical_m2_compiler_cycle709_bounded_theorem_note_2026-07-26": {
    "deps_hash": "4a5e2b7df738",
    "out_degree": 4
+  },
+  "local_source_diagonal_spectral_bounds_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "3cd3d4b43739",
+   "out_degree": 2
   },
   "local_token_row_enforcement_cycle724_bounded_theorem_note_2026-07-28": {
    "deps_hash": "c8adae60b92d",
@@ -12693,6 +12869,10 @@
   "main_open_cubic_validation_2026-04-11": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "marked_tree_single_seed_dynamic_program_and_finite_rational_certificates_bounded_theorem_note_2026-09-17": {
+   "deps_hash": "b810717681ab",
+   "out_degree": 2
   },
   "mass_mixing_subspace_disjointness_theorem_note": {
    "deps_hash": "6f1d48b0b059",
@@ -13054,6 +13234,10 @@
    "deps_hash": "522c75ee011c",
    "out_degree": 4
   },
+  "native_charge_motion_and_spectral_weight_bounds_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "6e5209b9fa1f",
+   "out_degree": 5
+  },
   "native_charged_record_histories_note_2026-09-09": {
    "deps_hash": "5bd92167bfd1",
    "out_degree": 3
@@ -13361,6 +13545,10 @@
   "native_mixed_gaussian_transition_note_2026-09-09": {
    "deps_hash": "444603b9eb3f",
    "out_degree": 3
+  },
+  "native_mixed_sixth_order_coefficient_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "482afd0a38f7",
+   "out_degree": 10
   },
   "native_pair_vacuum_chart_note_2026-09-09": {
    "deps_hash": "99abfde38abe",
@@ -14146,6 +14334,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "open_boundary_wilson_fock_model_match_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "f06210ef0b59",
+   "out_degree": 2
+  },
   "open_koide_flavor_cluster_consolidation_map_2026-06-02": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -14153,6 +14345,10 @@
   "open_shell_invariant_locus_conditional_neutrality_no_derived_selector_bounded_theorem_note_2026-06-10": {
    "deps_hash": "5ed0add88d9d",
    "out_degree": 4
+  },
+  "open_wilson_gauge_matter_fixed_graph_state_join_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "5bb11fdfb458",
+   "out_degree": 5
   },
   "openreference_all_seam_spatial_direction_packet_epoch_cycle872_bounded_theorem_note_2026-08-03": {
    "deps_hash": "533273c5cb6f",
@@ -14181,6 +14377,18 @@
   "orbit_occupancy_neutrino_out_of_sample_program_note_2026-06-09": {
    "deps_hash": "e6b42e44866e",
    "out_degree": 3
+  },
+  "order_blind_formation_with_zeros_and_holes_never_failing_unsoldered_rules_are_constant_and_hole_rules_have_pair_form_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
+  "order_blind_nearest_neighbour_formation_independence_beyond_neighbours_unsoldered_constancy_and_soldered_escape_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
+  "order_laws_for_extended_soldered_supports_independent_clocks_nucleate_at_positive_density_and_sweeps_have_no_first_formation_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "ordered_lattice_packet_reidentification_note": {
    "deps_hash": "e0d84bfa17f7",
@@ -15286,6 +15494,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "polarized_word_carrier_and_essential_threshold_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "6a55dd0468f8",
+   "out_degree": 4
+  },
   "port_canonical_common_coframe_physical_m2_compiler_cycle710_bounded_theorem_note_2026-07-26": {
    "deps_hash": "4fe8cb39513a",
    "out_degree": 2
@@ -15294,9 +15506,21 @@
    "deps_hash": "4692e4ec0e97",
    "out_degree": 5
   },
+  "positive_auxiliary_current_law_and_regulator_witness_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "16404916beb0",
+   "out_degree": 2
+  },
+  "positive_electric_generator_cone_bounds_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "6743f1bd7de4",
+   "out_degree": 2
+  },
   "positive_finite_cyclic_gauge_histories_and_local_charged_rotor_approximation_bounded_theorem_note_2026-09-14": {
    "deps_hash": "f0a2bcb0bbbf",
    "out_degree": 4
+  },
+  "positive_wilson_villain_mixture_and_weak_region_bounds_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "2fcf27dbac88",
+   "out_degree": 1
   },
   "positivity_bridge_requires_orientation_sign_narrow_theorem_note_2026-05-23": {
    "deps_hash": "0c13e845db90",
@@ -15517,6 +15741,10 @@
   "principal_flux_positive_gaussian_transfer_and_extensive_hamiltonian_limit_bounded_theorem_note_2026-09-14": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "principal_link_raw_curl_witness_and_mass_bound_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "2fcf27dbac88",
+   "out_degree": 1
   },
   "probability_readout_underdetermination_cycle912_bounded_theorem_note_2026-07-28": {
    "deps_hash": "7b707271a9a8",
@@ -16006,6 +16234,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "real_overlap_local_source_threshold_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "d80ec1818362",
+   "out_degree": 3
+  },
   "realization_row_sigma_reconciliation_bounded_theorem_note_2026-06-11": {
    "deps_hash": "b77b49964f00",
    "out_degree": 7
@@ -16386,6 +16618,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "registered_frames_coordinate_labels_sweep_rigidity_corner_price_and_soldered_emulation_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
   "registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10": {
    "deps_hash": "28f13d4d9ca8",
    "out_degree": 7
@@ -16397,6 +16633,50 @@
   "registration_reinstates_chirality_no_go_note_2026-06-07": {
    "deps_hash": "44506016e46e",
    "out_degree": 3
+  },
+  "relational_cycle_letters_record_their_octant_under_the_rotation_covariant_static_rule_on_the_landed_ice_torus_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
+  "relational_cycle_letters_under_the_sweep_reading_record_no_role_pattern_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "cf81749ee5be",
+   "out_degree": 2
+  },
+  "relational_frames_in_one_qubit_spiral_records_under_possibility_covariance_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
+  "relational_letters_formed_by_multi_qubit_units_every_single_face_attachment_is_at_best_a_fair_coin_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "388507ed6b64",
+   "out_degree": 3
+  },
+  "relational_letters_in_alternating_pairs_record_the_role_pattern_under_the_static_reading_but_not_on_the_side_four_torus_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "1bf1655acf73",
+   "out_degree": 3
+  },
+  "relational_letters_in_four_angle_cycles_record_the_role_pattern_on_the_landed_ice_torus_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "bd6990460606",
+   "out_degree": 4
+  },
+  "relational_letters_static_rigidity_needs_a_global_octant_site_and_line_orientations_leave_the_letters_flexible_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "20ffd5f73984",
+   "out_degree": 2
+  },
+  "relational_letters_under_the_static_reading_are_globally_rigid_exactly_for_sidon_angle_sets_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "388507ed6b64",
+   "out_degree": 3
+  },
+  "relational_spiral_frames_are_locally_rigid_under_the_static_reading_nonlinear_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "3c0e9767daa4",
+   "out_degree": 3
+  },
+  "relational_spiral_frames_are_rigid_on_the_lattice_and_under_the_static_reading_but_flexible_and_amplified_under_the_sweep_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "fa4b33dba396",
+   "out_degree": 2
+  },
+  "relational_spiral_letters_with_finitely_many_values_seven_suffice_and_are_the_fewest_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "fa4b33dba396",
+   "out_degree": 2
   },
   "relative_orientation_fusion_state_selection_pointer_frame_one_vacuous_quotient_bounded_theorem_note_2026-06-10": {
    "deps_hash": "790b6a424aff",
@@ -16533,6 +16813,50 @@
   "ring_monodromy_does_not_force_car_note_2026-06-04": {
    "deps_hash": "249b8e8adb93",
    "out_degree": 6
+  },
+  "rooted_marked_tree_extension_seed_induction_and_relaxed_lifted_tree_certificates_bounded_theorem_note_2026-09-17": {
+   "deps_hash": "4b1f4f4b0e8b",
+   "out_degree": 4
+  },
+  "rotor_coupled_free_vacuum_resolvent_densities_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "f015d82dc5d6",
+   "out_degree": 1
+  },
+  "rotor_global_gauss_dressing_coulomb_variational_compression_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "f015d82dc5d6",
+   "out_degree": 1
+  },
+  "rotor_joint_bounded_neutral_matter_dynamics_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "5fea79029341",
+   "out_degree": 3
+  },
+  "rotor_joint_equal_time_weyl_car_state_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "20ebe2a5ff8e",
+   "out_degree": 4
+  },
+  "rotor_joint_ground_energy_oscillator_defect_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "5ab50842bad9",
+   "out_degree": 2
+  },
+  "rotor_joint_local_gauge_characteristic_limit_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "44f4e1882858",
+   "out_degree": 3
+  },
+  "rotor_joint_real_time_gauge_two_point_limit_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "20ebe2a5ff8e",
+   "out_degree": 4
+  },
+  "rotor_orthogonal_transverse_reference_current_vertex_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "e00146c2daf3",
+   "out_degree": 2
+  },
+  "rotor_reference_vertex_infrared_weighted_norms_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "85572dc97c5c",
+   "out_degree": 3
+  },
+  "rotor_uniform_compact_field_soft_response_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "e535a9ace557",
+   "out_degree": 1
   },
   "route_a_fixed_type_atlas_correction_cycle822_bounded_theorem_note_2026-07-30": {
    "deps_hash": "20e02c11a8d5",
@@ -16902,6 +17226,10 @@
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
   },
+  "short_time_rotor_bridge_and_endpoint_hessian_bounds_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "2fcf27dbac88",
+   "out_degree": 1
+  },
   "sigma_hier_uniqueness_theorem_note_2026-04-19": {
    "deps_hash": "94aa2d15c272",
    "out_degree": 1
@@ -16929,6 +17257,10 @@
   "sign_portability_invariant_note": {
    "deps_hash": "52e6227652fe",
    "out_degree": 7
+  },
+  "signed_forest_fixed_order_remainders_and_restricted_loop_sums_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "9ae213819916",
+   "out_degree": 1
   },
   "signed_gravity_aps_action_origin_superselection_stability_note": {
    "deps_hash": "87f31c211962",
@@ -17149,6 +17481,14 @@
   "site_phase_cube_shift_intertwiner_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "six_axis_point_sensitivities_finite_island_healing_and_directed_recurrence_bounds_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "d0400b13fd93",
+   "out_degree": 3
+  },
+  "six_axis_two_level_domination_extended_explanation_tree_and_four_rational_certificates_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "1da6b10d4602",
+   "out_degree": 4
   },
   "sixth_family_complex_boundary_note": {
    "deps_hash": "e3b0c44298fc",
@@ -17428,6 +17768,18 @@
   },
   "sphaleron_coefficient_28_79_from_sm_like_content_admission_bridge_note_2026-05-28": {
    "deps_hash": "7a3ee4490765",
+   "out_degree": 2
+  },
+  "sphere_formation_kernel_sensitivity_and_level_contraction_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "2efa2a79ef91",
+   "out_degree": 2
+  },
+  "sphere_level_kernel_moments_walk_local_limit_and_finite_plane_mixing_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "7d003ba955a9",
+   "out_degree": 3
+  },
+  "sphere_static_finite_volume_gaussian_covariance_fixed_axis_response_and_projected_mode_sum_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "7d1b88cde191",
    "out_degree": 2
   },
   "spider_symmetry_reduction_and_finite_comparisons_cycle937_bounded_theorem_note_2026-07-28": {
@@ -17822,6 +18174,10 @@
    "deps_hash": "72ebcb79c7d3",
    "out_degree": 7
   },
+  "star_constraints_under_nearest_neighbour_formation_unsoldered_broadcast_bounds_and_soldered_registration_of_the_parity_role_skeleton_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
   "star_supported_bridge_class_note": {
    "deps_hash": "b77af84c23c5",
    "out_degree": 2
@@ -17829,6 +18185,10 @@
   "start_here": {
    "deps_hash": "ac6bfb491704",
    "out_degree": 4
+  },
+  "static_ice_measure_nearest_neighbour_admissibility_needs_a_frame_source_soldered_vertex_records_or_coordinate_letters_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "static_source_readout_i1_accepted_premise_bridge_bounded_note_2026-05-27": {
    "deps_hash": "63a3ca8f58cf",
@@ -17901,6 +18261,14 @@
   "strong_cp_theta_zero_note": {
    "deps_hash": "6311da330cc6",
    "out_degree": 4
+  },
+  "strong_cycle_letters_are_generic_every_obstruction_is_a_nontrivial_angle_relation_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "36bcdfc35f69",
+   "out_degree": 2
+  },
+  "strong_cycle_letters_record_frame_and_roles_under_the_rotation_covariant_rule_on_every_window_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "dee067d51f16",
+   "out_degree": 2
   },
   "structural_no_go_survey_note": {
    "deps_hash": "e7df0adc06f6",
@@ -18081,6 +18449,30 @@
   "supertrace_index_holomorphic_route_to_koide_r_half_open_lead_note_2026-06-04": {
    "deps_hash": "77faa5483fd2",
    "out_degree": 6
+  },
+  "supplied_algebra_action_and_kernel_support_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "9ae213819916",
+   "out_degree": 1
+  },
+  "supplied_matched_free_cone_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "9d281ffae983",
+   "out_degree": 4
+  },
+  "supplied_quartet_leading_decay_bounds_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "4173dbfb81a8",
+   "out_degree": 3
+  },
+  "supplied_quartet_linear_metric_flow_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "3b1ff0635ec8",
+   "out_degree": 3
+  },
+  "supplied_quartet_quadratic_backreaction_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "8732e7decdde",
+   "out_degree": 3
+  },
+  "supplied_record_laws_and_common_order_kernels_bounded_theorem_note_2026-09-15": {
+   "deps_hash": "007e9cc84a79",
+   "out_degree": 3
   },
   "support_conditions_confine_groups_of_shifting_records_energy_costs_do_not_bounded_theorem_note_2026-09-03": {
    "deps_hash": "c8eee4235fc9",
@@ -18318,6 +18710,10 @@
    "deps_hash": "2741c1000ba9",
    "out_degree": 5
   },
+  "temporal_wilson_resummation_physical_curl_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "a83fe722994f",
+   "out_degree": 1
+  },
   "tensor_block_closure_test_note": {
    "deps_hash": "671cfa77fd77",
    "out_degree": 6
@@ -18418,6 +18814,10 @@
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
   },
+  "the_landed_torus_uniform_ice_measure_admits_no_local_formation_order_even_with_every_coordinator_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "2a338d61d68b",
+   "out_degree": 3
+  },
   "the_link_models_pair_update_conserves_plaquette_parity_and_the_2x2x2_gauss_sector_splits_into_937_winding_components_bounded_theorem_note_2026-09-04": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
@@ -18465,6 +18865,10 @@
   "the_small_mixing_angles_theta_c_and_theta_13_are_c3_breaking_order_parameters_unification_narrow_theorem_note_2026-06-08": {
    "deps_hash": "74d2131f5218",
    "out_degree": 4
+  },
+  "the_soldering_menu_four_actions_of_the_proper_cubic_rotations_on_qubit_possibilities_and_what_each_lets_formation_build_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "the_spatial_half_of_the_metric_is_one_declared_weight_on_the_hop_term_free_fall_and_light_bending_at_factor_two_bounded_theorem_note_2026-09-03": {
    "deps_hash": "ff037768e63b",
@@ -18897,6 +19301,34 @@
   "unified_program_note": {
    "deps_hash": "dd9fd64aa659",
    "out_degree": 22
+  },
+  "uniform_ice_by_formation_the_square_loop_obstruction_the_plaquette_coordinator_and_plans_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
+  "uniform_ice_by_formation_two_adjacent_cubes_admit_no_local_order_even_with_both_cube_sites_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "d16b2736e8e2",
+   "out_degree": 2
+  },
+  "uniform_ice_by_formation_two_planar_squares_admit_no_local_order_and_one_cube_needs_its_cube_site_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "65e604ef558e",
+   "out_degree": 2
+  },
+  "uniform_ice_by_joint_cell_units_rows_yes_the_two_by_two_block_no_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "d16b2736e8e2",
+   "out_degree": 2
+  },
+  "uniform_ice_by_layer_units_on_infinite_prisms_is_exact_in_the_zero_flux_sector_that_long_prisms_select_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
+  "uniform_ice_by_single_sites_no_planar_window_of_two_to_five_squares_admits_a_local_formation_order_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "2a338d61d68b",
+   "out_degree": 3
+  },
+  "uniform_ice_layer_transfer_flux_sectors_carry_a_gaussian_stiffness_inverse_in_the_cross_section_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "0a5a23d65830",
+   "out_degree": 2
   },
   "unit_conversion_is_the_accepted_non_bounding_ruler_reconciliation_note_2026-06-08": {
    "deps_hash": "d292eab310f2",
@@ -19449,6 +19881,14 @@
   "weak_coupling_sign_sensitivity_note_2026-04-11": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "weighted_gaussian_damping_and_integer_time_blocking_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "2fcf27dbac88",
+   "out_degree": 1
+  },
+  "weighted_phase_corrector_and_magnetic_gram_certificates_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "0fcac2790cd0",
+   "out_degree": 2
   },
   "weighting_exact_algebra_cycle905_support_note_2026-08-08": {
    "deps_hash": "e3b0c44298fc",
@@ -20585,6 +21025,158 @@
   "work_history.repo.review_feedback.pr8020-8022-compact-cube-evidence.readme": {
    "deps_hash": "c174245ba2ae",
    "out_degree": 54
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-actual_r1_derivation-ddcf0e7425c1c81c": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-actual_r1_preregistration-bc048351d5b6482d": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-actual_r1_review-b68626a8cd92c405": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-actual_r1_review-e6e33c9855fac926": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-artifact_plan-88fe929b75c29baa": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-assumptions_and_imports-6fde2a74731cdfd0": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-claim_status_certificate-d197fcba0e77ca60": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-controls_preregistration-70f3c106c801b133": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-derivation-55f5a4e94d945cc3": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-final_main66_validation-7924df3dfd482e60": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-final_validation-61c13e5cae19471f": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-gauge_wilson_finite_pw_static_source_energy_upper_bound_bounded_theorem_not-cbddff81440b3c19": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-generator_normalization_correction-3677fe3c989a4b82": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-goal-ba656aa86e9d2ae9": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-handoff-8c0cffd89510f74a": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-literature_bridges-ae5f5c8723a6a117": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-no_go_discipline_checklist-dc918699e447b583": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-no_go_ledger-e50f67e1d0650414": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-opportunity_queue-2f31dcb0a1a1195c": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-parent_validation_metadata_catchup-af13a255467d5eb8": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-pr_backlog-fe013018afe4be5d": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-pr_body-ff8f204868c63144": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-preregistration-39a046d3644d7ade": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-preregistration-ab4d5238c7ab1ad3": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-proof_review-e640563f3b04a488": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-restricted_matrix_strengthening-5e080b3fcf704c51": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-review-818868bd22c7c6c1": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-review_history-68ab8fd6caeaa94e": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-root_canonical_port_review-086a49565d6feb83": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-root_correction_review-e914a5c4ee6056e3": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-root_derivation-9ef44bb2da9d373c": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-root_derivation_before_generator_normalization_224fa648-224fa648db011ab7": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-root_native_review-4f94cd015b61b7bd": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-root_review-007283ac7cbe03a3": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-route_portfolio-9f34935b612d6b7a": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-scoped_validation-3a3215bf937b2b30": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.kept.pr8032-trace_gate-f6854afb6c690994": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8032-evidence.readme": {
+   "deps_hash": "0b2e6afe4f09",
+   "out_degree": 37
   },
   "work_history.repo.review_feedback.pr8038-native-cycle-evidence.evidence.canonical-cold-review.pr8038-evidence-canonical-cold-review-final_delta_confirmation": {
    "deps_hash": "e3b0c44298fc",
@@ -24286,6 +24878,262 @@
    "deps_hash": "2439f6d0ebe5",
    "out_degree": 8
   },
+  "work_history.repo.review_feedback.pr8163-evidence.kept.pr8163-block01_working_temporal_run_resummation-698b0cf37b333c5c": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8163-evidence.kept.pr8163-block03_working_open_boundary_hamiltonian_match-46b5468c3becdba7": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8163-evidence.kept.pr8163-block04_working_dynamical_gauge_join-543b580df0740fc3": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8163-evidence.kept.pr8163-numerical_history-1c3e1a7e988edc37": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8163-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8165-evidence.kept.pr8165-block01_sampled_magnetic_event_bound-fa7db7f42105ca0c": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8165-evidence.kept.pr8165-block02_continuous_time_magnetic_excursions-56497292afc9234a": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8165-evidence.kept.pr8165-block03_spatial_path_limit-6a9138fe6c8076f9": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8165-evidence.kept.pr8165-block04_temporal_oscillations_and_coarse_currents-f5168c9355bb47a5": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8165-evidence.kept.pr8165-claim_status_certificate-4a3d4f79e164376b": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8165-evidence.kept.pr8165-no_go_discipline_checklist-af3647a217d8dd77": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8165-evidence.kept.pr8165-personal_review-e1afd875db174ddc": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8165-evidence.kept.pr8165-review_history-3f4cb79c836849bf": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8165-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8167-evidence.kept.pr8167-compact_sine_score_domination_and_static_curl_limit-6b845da826f6bcc6": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8167-evidence.kept.pr8167-exact_compact_cover_and_source_identities-3443f691b71f300d": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8167-evidence.kept.pr8167-no_go_discipline_checklist-af3647a217d8dd77": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8167-evidence.kept.pr8167-review_history-3f4cb79c836849bf": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8167-evidence.kept.pr8167-sparse_loops_with_nongaussian_filling_fluctuations-e810456f880739f8": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8167-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8169-evidence.deferred_corrected_endpoint_proof": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8169-evidence.kept.admissibility_rule_frame_attached_four_point_menu_covariant_weights_gibbs_linear_family_and_sequential_support_obstruction_bounded_theorem_note_2026-09-16-9744b717438183f6": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8169-evidence.kept.claim_status_certificate-2e1efea5ebfa174e": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8169-evidence.kept.handoff-2588781386ad583a": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8169-evidence.kept.opportunity_queue-8e0fa176acb36723": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8169-evidence.kept.trace_gate-b16d8ada36906b74": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8169-evidence.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8170-evidence.deferred_science": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8170-evidence.kept.admissibility_rule_unsoldered_formation_law_in_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_and_the_simulated_algebraic_decay_of_the_initial_plane_memory_bounded_theorem_note_2026-09-16-e50aaf4b6686e647": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8170-evidence.kept.approach_registry-4e9fef47b9eac07d": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8170-evidence.kept.checker_block26_findings-c0a6cd25f43f3f2c": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8170-evidence.kept.claim_status_certificate_block26-315a8231a89a61c4": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8170-evidence.kept.goal_block26-083903adfde6cc31": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8170-evidence.kept.handoff-2061d1bff2a70397": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8170-evidence.kept.no_go_ledger-05cc24d6760014de": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8170-evidence.kept.opportunity_queue-72e985a42c72b74e": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8170-evidence.kept.results_block26-0263fa9278e61353": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8170-evidence.kept.review_history-5eeaa28fca70564a": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8170-evidence.kept.trace_gate-151b6bec86e6fa6b": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8170-evidence.readme": {
+   "deps_hash": "0df75e196ccf",
+   "out_degree": 12
+  },
+  "work_history.repo.review_feedback.pr8172-evidence.kept.admissibility_rule_map_of_memory_where_each_of_the_four_laws_keeps_its_plane_located_against_the_proved_regions_with_the_healing_and_influence_bounds_bounded_theorem_note_2026-09-16-f2af9a93a1c168a8": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8172-evidence.kept.approach_registry-f296aef8bec769dd": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8172-evidence.kept.checker_block28_findings-6fdbdf7ac1bd8d16": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8172-evidence.kept.claim_status_certificate_block28-bb508f195a32e2e9": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8172-evidence.kept.goal_block28-90d0882134e9ee53": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8172-evidence.kept.handoff-44c009a7729b873d": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8172-evidence.kept.opportunity_queue-da597e8270234a27": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8172-evidence.kept.results_block28-94bec5337188678b": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8172-evidence.kept.review_history-5de1f2362d5592b4": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8172-evidence.kept.trace_gate-e0b88a0cc15db463": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8172-evidence.pr8172-deferred-science": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8172-evidence.readme": {
+   "deps_hash": "138a622bc4e5",
+   "out_degree": 11
+  },
+  "work_history.repo.review_feedback.pr8174-evidence.kept.admissibility_rule_six_axis_formation_threshold_lifted_by_a_two_level_domination_seeds_and_amplified-c9850d47e436dea7": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8174-evidence.kept.approach_registry-a24d7a0fbd69f46c": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8174-evidence.kept.checker_block30_findings-df0ff512f1767b7f": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8174-evidence.kept.claim_status_certificate_block30-3b47da9614abb913": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8174-evidence.kept.goal_block30-eed3c47d058abe9c": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8174-evidence.kept.handoff-3daf21b65f4e73be": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8174-evidence.kept.opportunity_queue-d3108acdf7a1cb18": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8174-evidence.kept.results_block30-5242365320da46ae": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8174-evidence.kept.review_history-e3346d7d91b61912": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8174-evidence.kept.trace_gate-b7388c63cc0a04c5": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8174-evidence.pr8174-deferred-science": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8174-evidence.readme": {
+   "deps_hash": "452a3324ec67",
+   "out_degree": 11
+  },
   "work_history.repo.review_feedback.preterminal_context_quantum_process_cycle189_note_2026-07-16": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -24402,6 +25250,26 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "work_history.review_loop.pr8027.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8028.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8029.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8030.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8031.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "work_history.review_loop.pr8137.pr8137_approach_registry": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -24511,6 +25379,58 @@
    "out_degree": 0
   },
   "work_history.review_loop.pr8154.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8158.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8159.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8160.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8161.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8162.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8164.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8166.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8168.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8171.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8173.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8175.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8176.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8177.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

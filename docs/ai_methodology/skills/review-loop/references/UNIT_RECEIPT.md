@@ -113,7 +113,12 @@ replace every placeholder and include complete file/input lists.
   Mechanical validity does not prove semantic completeness of that inventory.
 - Tooling includes `docs/audit/scripts/build_citation_graph.py`,
   `docs/audit/scripts/static_pipeline_checkpoint.py` , `scripts/runner_cache.py`, `scripts/audit_packet_script_deps.py` and its
-  imported `docs/audit/scripts/ledger_io.py`. The ledger API is imported only;
+  imported `docs/audit/scripts/ledger_io.py`. These API script paths must appear
+  in `inputs.tooling` even when an edited helper map is already in `source.paths`;
+  source ownership alone does not satisfy the checker's tooling category. Use
+  the actual checker schema when assembling the record and reuse matching
+  verified discovery rather than repeating scans or scientific review to repair
+  a category omission. The ledger API is imported only;
   no ledger materialization or audit command is called.
   When present, `docs/audit/data/axiom_premise_nodes.json` and
   `docs/audit/data/doc_authority_registry.json` are also bound because the actual

@@ -83,6 +83,18 @@ After fixes, run the smallest relevant checks:
   [combined candidate stage](COMBINED_VALIDATION.md) when claim notes or governance/publication surfaces
   changed; this bullet does not require an additional per-unit full run.
 
+Normal runner and `--json` output must remain reproducible when canonical output
+files already exist. Exclusive creation belongs to a unique evidence-attempt
+path, not a canonical output opened exclusively on every default invocation.
+When both stdout and JSON are needed from one authorized run, an explicitly
+requested unique external sidecar can preserve same-run JSON without a second
+science execution. Check changed output handling with isolated synthetic IO
+controls, including repeated default output and sidecar collision preservation.
+For captures using `runner_cache`, preserve the raw `execute_runner` return
+externally before later cache/API identity checks can discard it; retain failure
+and partial-output artifacts separately from any success receipt. This does not
+relax a once-only attempt limit or authorize another execution.
+
 If a runner is long, stochastic, or requires unavailable data, do not fake the
 check. Report it as not run with the reason.
 

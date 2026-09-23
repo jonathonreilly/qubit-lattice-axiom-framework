@@ -1,0 +1,345 @@
+===== runner cache v1 =====
+runner: scripts/cyclic_equilibrium_check_2026_09_15.py
+runner_sha256: bcbcb17302e6cc9fcc6819831bf810b4060acb6aa0ad61b6149ee4014402fc6c
+input_fingerprint_sha256: a0f0361826f76b87424fe20c5a2f10ffafd77ba8565f43ff7f5a95b61bbaf8f1
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.13
+status: ok
+----- stdout -----
+{
+  "status": "personal_finite_checks_pass_no_phase_or_independent_audit",
+  "model": "four-edge charged cycle, two conjugate CAR modes per vertex",
+  "constants": {
+    "cE": 0.4052847345693511,
+    "kE": 0.605,
+    "kB": 0.4,
+    "hop": 0.18,
+    "phase": 0.23,
+    "repulsion": 0.7,
+    "B_total": 3.28
+  },
+  "independent_projected_matrix_error": 0.0,
+  "coercivity": [
+    {
+      "N": 3,
+      "minimum_ratio": 0.6839179895857801
+    },
+    {
+      "N": 5,
+      "minimum_ratio": 0.5727866971849187
+    },
+    {
+      "N": 7,
+      "minimum_ratio": 0.5243229095773494
+    },
+    {
+      "N": 17,
+      "minimum_ratio": 0.45363332406067763
+    },
+    {
+      "N": 101,
+      "minimum_ratio": 0.41333096579654693
+    },
+    {
+      "N": 1001,
+      "minimum_ratio": 0.4060947093240452
+    }
+  ],
+  "thermal": [
+    {
+      "N": 3,
+      "dimension": 258,
+      "ground_energy": 0.035044459828806315,
+      "ground_electric_square": 0.3666731707081464,
+      "ground_bound": 13.376984477509543,
+      "alias_basis_states": 106,
+      "thermal": [
+        {
+          "beta": 0.5,
+          "electric_square": 2.2932891976353025,
+          "electric_square_bound": 254.18915792313743,
+          "entropy": 5.46226711246478,
+          "entropy_bound": 14.082198601084801,
+          "any_integer_alias_probability": 0.3018251844145875,
+          "maximal_vertex_alias_probability": 0.11644265767997225,
+          "minimal_vertex_alias_bound": 0.7155481996058841,
+          "detailed_balance_max_error": 4.336808689942018e-19,
+          "negative_energy_mass": 0.24198389267382914,
+          "negative_energy_bound": 0.8187307530779818
+        },
+        {
+          "beta": 1.5,
+          "electric_square": 1.2813978812223166,
+          "electric_square_bound": 92.48659450723011,
+          "entropy": 4.633200257382295,
+          "entropy_bound": 12.323741417463152,
+          "any_integer_alias_probability": 0.11020015366296808,
+          "maximal_vertex_alias_probability": 0.0413614731322997,
+          "minimal_vertex_alias_bound": 0.546899646870386,
+          "detailed_balance_max_error": 8.673617379884035e-19,
+          "negative_energy_mass": 0.09945935260234433,
+          "negative_energy_bound": 0.5488116360940264
+        },
+        {
+          "beta": 5.0,
+          "electric_square": 0.28249180563973075,
+          "electric_square_bound": 43.518925986457745,
+          "entropy": 2.733645197444461,
+          "entropy_bound": 10.449969550242612,
+          "any_integer_alias_probability": 0.003685560209327806,
+          "maximal_vertex_alias_probability": 0.0018141449831867579,
+          "minimal_vertex_alias_bound": 0.3804153009399552,
+          "detailed_balance_max_error": 5.082197683525802e-20,
+          "negative_energy_mass": 0.000666209474118552,
+          "negative_energy_bound": 0.1353352832366127
+        },
+        {
+          "beta": 15.0,
+          "electric_square": 0.32599053445661186,
+          "electric_square_bound": 31.58764238895421,
+          "entropy": 1.8346790701965872,
+          "entropy_bound": 9.488516177606234,
+          "any_integer_alias_probability": 0.004359967099749188,
+          "maximal_vertex_alias_probability": 0.0021991617491697764,
+          "minimal_vertex_alias_bound": 0.387665089076102,
+          "detailed_balance_max_error": 4.342698215903395e-24,
+          "negative_energy_mass": 1.7681627976335553e-08,
+          "negative_energy_bound": 0.0024787521766663585
+        }
+      ]
+    },
+    {
+      "N": 5,
+      "dimension": 350,
+      "ground_energy": 0.07735625355052737,
+      "ground_electric_square": 0.26190476838960863,
+      "ground_bound": 13.376984477509543,
+      "alias_basis_states": 58,
+      "thermal": [
+        {
+          "beta": 0.5,
+          "electric_square": 3.4917837164707173,
+          "electric_square_bound": 254.18915792313743,
+          "entropy": 5.451486513227135,
+          "entropy_bound": 14.155665495443342,
+          "any_integer_alias_probability": 0.029643985303968584,
+          "maximal_vertex_alias_probability": 0.015187898919429767,
+          "minimal_vertex_alias_bound": 0.329507022988243,
+          "detailed_balance_max_error": 8.673617379884035e-19,
+          "negative_energy_mass": 0.2365031089127329,
+          "negative_energy_bound": 0.8187307530779818
+        },
+        {
+          "beta": 1.5,
+          "electric_square": 0.8589139512391979,
+          "electric_square_bound": 92.48659450723011,
+          "entropy": 4.1401492200952585,
+          "entropy_bound": 12.246047489544955,
+          "any_integer_alias_probability": 0.0002554977124039026,
+          "maximal_vertex_alias_probability": 0.00012957576230331595,
+          "minimal_vertex_alias_bound": 0.171534837074352,
+          "detailed_balance_max_error": 4.336808689942018e-19,
+          "negative_energy_mass": 0.05121558026435719,
+          "negative_energy_bound": 0.5488116360940264
+        },
+        {
+          "beta": 5.0,
+          "electric_square": 0.17423690809992032,
+          "electric_square_bound": 43.518925986457745,
+          "entropy": 2.7117064674644635,
+          "entropy_bound": 10.38361003840204,
+          "any_integer_alias_probability": 1.2749331247094131e-06,
+          "maximal_vertex_alias_probability": 6.403718112279465e-07,
+          "minimal_vertex_alias_bound": 0.1304542144859952,
+          "detailed_balance_max_error": 2.541098841762901e-21,
+          "negative_energy_mass": 8.04402790965644e-05,
+          "negative_energy_bound": 0.1353352832366127
+        },
+        {
+          "beta": 15.0,
+          "electric_square": 0.2174393718288368,
+          "electric_square_bound": 31.58764238895421,
+          "entropy": 1.9496058343420342,
+          "entropy_bound": 9.28889281666619,
+          "any_integer_alias_probability": 1.797282299563143e-06,
+          "maximal_vertex_alias_probability": 9.032733032378893e-07,
+          "minimal_vertex_alias_bound": 0.13304636230973022,
+          "detailed_balance_max_error": 5.169878828456423e-26,
+          "negative_energy_mass": 4.756165711313782e-10,
+          "negative_energy_bound": 0.0024787521766663585
+        }
+      ]
+    },
+    {
+      "N": 7,
+      "dimension": 490,
+      "ground_energy": 0.08681469267107181,
+      "ground_electric_square": 0.24302847137348438,
+      "ground_bound": 13.376984477509543,
+      "alias_basis_states": 58,
+      "thermal": [
+        {
+          "beta": 0.5,
+          "electric_square": 2.918203335462173,
+          "electric_square_bound": 254.18915792313743,
+          "entropy": 5.318668618700141,
+          "entropy_bound": 14.120505410357067,
+          "any_integer_alias_probability": 0.0017740654994359275,
+          "maximal_vertex_alias_probability": 0.0009086542412254511,
+          "minimal_vertex_alias_bound": 0.15055724496312772,
+          "detailed_balance_max_error": 8.673617379884035e-19,
+          "negative_energy_mass": 0.20019663230911897,
+          "negative_energy_bound": 0.8187307530779818
+        },
+        {
+          "beta": 1.5,
+          "electric_square": 0.7444746095041386,
+          "electric_square_bound": 92.48659450723011,
+          "entropy": 4.046886782266402,
+          "entropy_bound": 12.225002329393833,
+          "any_integer_alias_probability": 5.1185582902160874e-08,
+          "maximal_vertex_alias_probability": 2.5911598325017935e-08,
+          "minimal_vertex_alias_bound": 0.08401452886237154,
+          "detailed_balance_max_error": 5.421010862427522e-19,
+          "negative_energy_mass": 0.042859170966342126,
+          "negative_energy_bound": 0.5488116360940264
+        },
+        {
+          "beta": 5.0,
+          "electric_square": 0.1577308711560485,
+          "electric_square_bound": 43.518925986457745,
+          "entropy": 2.7104041612989116,
+          "entropy_bound": 10.373491950639636,
+          "any_integer_alias_probability": 1.307122656195235e-10,
+          "maximal_vertex_alias_probability": 6.556462000259537e-11,
+          "minimal_vertex_alias_bound": 0.06605298585171576,
+          "detailed_balance_max_error": 2.117582368135751e-21,
+          "negative_energy_mass": 4.827462342329426e-05,
+          "negative_energy_bound": 0.1353352832366127
+        },
+        {
+          "beta": 15.0,
+          "electric_square": 0.19896663038033166,
+          "electric_square_bound": 31.58764238895421,
+          "entropy": 1.9822933414649233,
+          "entropy_bound": 9.254921824145622,
+          "any_integer_alias_probability": 1.8867052861996378e-10,
+          "maximal_vertex_alias_probability": 9.468134836737802e-11,
+          "minimal_vertex_alias_bound": 0.0673153050116428,
+          "detailed_balance_max_error": 7.674038885990003e-27,
+          "negative_energy_mass": 1.9016322725694494e-10,
+          "negative_energy_bound": 0.0024787521766663585
+        }
+      ]
+    }
+  ],
+  "ground_comparisons": [
+    {
+      "regulator": "hard_integer",
+      "cut": 2,
+      "N": 5,
+      "dimension": 292,
+      "ground_energy": 0.09642856079311068,
+      "residual": 6.269781398376851e-15,
+      "electric_square": 0.22557225871134545,
+      "alias_probability": 0.0
+    },
+    {
+      "regulator": "hard_integer",
+      "cut": 4,
+      "N": 9,
+      "dimension": 572,
+      "ground_energy": 0.0964258280337594,
+      "residual": 7.298113542922052e-14,
+      "electric_square": 0.22558954193323483,
+      "alias_probability": 0.0
+    },
+    {
+      "regulator": "hard_integer",
+      "cut": 8,
+      "N": 17,
+      "dimension": 1132,
+      "ground_energy": 0.09642582803373503,
+      "residual": 6.59360095777151e-14,
+      "electric_square": 0.22558954193341565,
+      "alias_probability": 0.0
+    },
+    {
+      "regulator": "hard_integer",
+      "cut": 12,
+      "N": 25,
+      "dimension": 1692,
+      "ground_energy": 0.09642582803373878,
+      "residual": 1.473720108102066e-13,
+      "electric_square": 0.22558954193341693,
+      "alias_probability": 0.0
+    },
+    {
+      "regulator": "cyclic",
+      "cut": 4,
+      "N": 9,
+      "dimension": 630,
+      "ground_energy": 0.09063938917633058,
+      "residual": 2.168724722297928e-14,
+      "electric_square": 0.23590030593542477,
+      "alias_probability": 9.377424922278631e-15
+    },
+    {
+      "regulator": "cyclic",
+      "cut": 6,
+      "N": 13,
+      "dimension": 910,
+      "ground_energy": 0.0936628184526676,
+      "residual": 4.471610273496939e-14,
+      "electric_square": 0.23044511396709438,
+      "alias_probability": 1.2312775425256452e-24
+    },
+    {
+      "regulator": "cyclic",
+      "cut": 8,
+      "N": 17,
+      "dimension": 1190,
+      "ground_energy": 0.09481237886151689,
+      "residual": 3.604106798239155e-14,
+      "electric_square": 0.228410309915415,
+      "alias_probability": 4.0863216902868787e-32
+    },
+    {
+      "regulator": "cyclic",
+      "cut": 12,
+      "N": 25,
+      "dimension": 1750,
+      "ground_energy": 0.09568056617517498,
+      "residual": 9.960404425525852e-14,
+      "electric_square": 0.22688743903863035,
+      "alias_probability": 7.642160107381086e-32
+    },
+    {
+      "regulator": "cyclic",
+      "cut": 16,
+      "N": 33,
+      "dimension": 2310,
+      "ground_energy": 0.09599827365108766,
+      "residual": 9.839197993471946e-14,
+      "electric_square": 0.22633309331067075,
+      "alias_probability": 1.46228937963696e-32
+    }
+  ],
+  "limits": [
+    "Noncubic finite fixtures do not prove cubic thermodynamic claims.",
+    "Hard cutoff 12 is a finite comparator, not an exact infinite rotor.",
+    "The analytic proof, not eigenvalue convergence plots, establishes existence.",
+    "No positive estimator for arbitrary observables was checked."
+  ]
+}
+TOTAL: PASS=1 FAIL=0
+Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON
+per_element: cyclic coercivity, CAR and Gauss identities
+per_site: finite four-edge charged-cycle configurations
+per_mode: recorded k=1 ground searches and finite thermal spectra only; no untraced three-level credit
+per_block: one complete companion family; imported helpers are shared implementation, not independent evidence
+lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here
+
+----- stderr -----
+

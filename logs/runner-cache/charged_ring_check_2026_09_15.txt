@@ -1,0 +1,341 @@
+===== runner cache v1 =====
+runner: scripts/charged_ring_check_2026_09_15.py
+runner_sha256: d7dd992cc5fd3af51fde72cb54a5e8cb05bf3d822d1defd879d22d0ee916cddc
+input_fingerprint_sha256: 1dfce0899065b747ed4b04cb17939eea2dbabbca108671aae5c5732645f7e8ab
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.66
+status: ok
+----- stdout -----
+{
+  "status": "personal_checks_pass_no_independent_audit",
+  "symbolic": {
+    "offsets": [
+      [
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0,
+        0
+      ]
+    ],
+    "A": [
+      "3/4",
+      "1/2",
+      "1/4",
+      "1/4",
+      "0",
+      "-1/4"
+    ],
+    "C": [
+      "3/8",
+      "1/2",
+      "3/8",
+      "3/8",
+      "0",
+      "3/8"
+    ],
+    "C_ground": "5/16",
+    "ordinary_derivative_term_if_offsets_deleted": "3/16",
+    "exact_c2": [
+      "39/128",
+      "35/128",
+      "27/128",
+      "15/128"
+    ],
+    "frame_identity": "U^-1 H(pi+delta) U=z F+z^-1 F^T, [F,F^T]=0"
+  },
+  "independent_physical_matrices": [
+    {
+      "cutoff": 1,
+      "dimension": 13,
+      "matrix_error": 0.0
+    },
+    {
+      "cutoff": 2,
+      "dimension": 25,
+      "matrix_error": 0.0
+    }
+  ],
+  "physical_spectra": [
+    {
+      "g": 0.16,
+      "cutoff": 15,
+      "dimension": 181,
+      "energies": [
+        -2.753364022001607,
+        -2.6196256191033633,
+        -2.48670503321342,
+        -2.3545535417623427
+      ],
+      "residual": 8.386777145899532e-15,
+      "two_term_c2": [
+        0.30435115329242185,
+        0.27290492116935433,
+        0.2095127121595438,
+        0.11607775163154435
+      ],
+      "remainder_over_g3": [
+        -0.002102166922414612,
+        -0.003328617691590943,
+        -0.008904924002827925,
+        -0.0069359273028755586
+      ],
+      "gap_over_g": 0.8358650181140237,
+      "gap_g2_coefficient": -0.031446232123068026,
+      "loop_expectation": -0.8258170217992205,
+      "loop_scaled": 1.088643613754872,
+      "electric_scaled_per_link": [
+        0.12943331705733888,
+        0.1294333170573394,
+        0.12943331705733888,
+        0.12943331705733938
+      ]
+    },
+    {
+      "g": 0.08,
+      "cutoff": 20,
+      "dimension": 241,
+      "energies": [
+        -2.792841832376225,
+        -2.725770737137572,
+        -2.658901000666744,
+        -2.592233542557743
+      ],
+      "residual": 5.762167449056762e-15,
+      "two_term_c2": [
+        0.3045993374713662,
+        0.273252777839442,
+        0.2104439107348784,
+        0.11602904959488736
+      ],
+      "remainder_over_g3": [
+        -0.0011020316074625278,
+        -0.002309027006923425,
+        -0.006169865813566987,
+        -0.01448063006396355
+      ],
+      "gap_over_g": 0.8383886904831606,
+      "gap_g2_coefficient": -0.03134655963192524,
+      "loop_expectation": -0.90899425243966,
+      "loop_scaled": 1.1375718445042495,
+      "electric_scaled_per_link": [
+        0.1172927021544459,
+        0.11729270215444462,
+        0.11729270215444591,
+        0.11729270215444462
+      ]
+    },
+    {
+      "g": 0.04,
+      "cutoff": 27,
+      "dimension": 325,
+      "energies": [
+        -2.8111217360698744,
+        -2.777535954623988,
+        -2.744000341573753,
+        -2.7105150100921604
+      ],
+      "residual": 9.919005873099628e-15,
+      "two_term_c2": [
+        0.3046627320260208,
+        0.27336575436203225,
+        0.2107135294161181,
+        0.11663532406863686
+      ],
+      "remainder_over_g3": [
+        -0.0006191993515147763,
+        -0.0017936409441032806,
+        -0.005599264600586461,
+        -0.013804398284189555
+      ],
+      "gap_over_g": 0.839644536147155,
+      "gap_g2_coefficient": -0.031296977663990665,
+      "loop_expectation": -0.9534782801056436,
+      "loop_scaled": 1.1630429973589096,
+      "electric_scaled_per_link": [
+        0.1112048675466706,
+        0.11120486754667082,
+        0.1112048675466706,
+        0.11120486754667078
+      ]
+    },
+    {
+      "g": 0.02,
+      "cutoff": 38,
+      "dimension": 457,
+      "energies": [
+        -2.819896288642705,
+        -2.803090869663068,
+        -2.7862979716581826,
+        -2.769517608668405
+      ],
+      "residual": 7.069660207017127e-15,
+      "two_term_c2": [
+        0.3046798773708456,
+        0.2734065637774799,
+        0.2108308133049082,
+        0.11691752506315378
+      ],
+      "remainder_over_g3": [
+        -0.0003811314597257364,
+        -0.0015468111236316415,
+        -0.005334334751694313,
+        -0.013498746787021785
+      ],
+      "gap_over_g": 0.8402709489818472,
+      "gap_g2_coefficient": -0.031273313593370086,
+      "loop_expectation": -0.9764792532949969,
+      "loop_scaled": 1.1760373352501574,
+      "electric_scaled_per_link": [
+        0.10815878886721296,
+        0.10815878886721249,
+        0.10815878886721296,
+        0.10815878886721256
+      ]
+    },
+    {
+      "g": 0.01,
+      "cutoff": 52,
+      "dimension": 625,
+      "energies": [
+        -2.824192174182814,
+        -2.8157863361932565,
+        -2.8073836258210894,
+        -2.7989840448148127
+      ],
+      "residual": 7.05530036669316e-15,
+      "two_term_c2": [
+        0.3046848710773226,
+        0.27342324128105944,
+        0.2108854375807226,
+        0.11705397497618897
+      ],
+      "remainder_over_g3": [
+        -0.00026289237453624986,
+        -0.0014258718650239641,
+        -0.005206242104094371,
+        -0.013352502659103037
+      ],
+      "gap_over_g": 0.8405837989557519,
+      "gap_g2_coefficient": -0.03126162979627187,
+      "loop_expectation": -0.9881739984559208,
+      "loop_scaled": 1.18260015440792,
+      "electric_scaled_per_link": [
+        0.10663546674030801,
+        0.10663546674030949,
+        0.10663546674030801,
+        0.1066354667403095
+      ]
+    }
+  ],
+  "insufficient_cutoff": [
+    {
+      "g": 0.01,
+      "cutoff": 4,
+      "scaled_payload": 0.4,
+      "ground_excess": 0.012565793520842305,
+      "exact_lower_bound": 0.008652067305647557,
+      "excess_over_g": 1.2565793520842305
+    },
+    {
+      "g": 0.001,
+      "cutoff": 6,
+      "scaled_payload": 0.18973665961010275,
+      "ground_excess": 0.005591774388191695,
+      "exact_lower_bound": 0.004432160828684288,
+      "excess_over_g": 5.591774388191695
+    },
+    {
+      "g": 0.0001,
+      "cutoff": 10,
+      "scaled_payload": 0.1,
+      "ground_excess": 0.002075831153738772,
+      "exact_lower_bound": 0.0017993318671734725,
+      "excess_over_g": 20.75831153738772
+    },
+    {
+      "g": 1e-05,
+      "cutoff": 18,
+      "scaled_payload": 0.05692099788303083,
+      "ground_excess": 0.000654784016283827,
+      "exact_lower_bound": 0.0006037820390434569,
+      "excess_over_g": 65.4784016283827
+    }
+  ],
+  "omitted_offsets_adverse": [
+    {
+      "g": 0.08,
+      "ground_energy": -2.7936709455654007,
+      "c2_estimate": 0.1750504016626508,
+      "wrong_model_coefficient": 0.1796875,
+      "actual_model_coefficient": 0.3046875
+    },
+    {
+      "g": 0.04,
+      "ground_energy": -2.811325338305781,
+      "c2_estimate": 0.17741133458450173,
+      "wrong_model_coefficient": 0.1796875,
+      "actual_model_coefficient": 0.3046875
+    },
+    {
+      "g": 0.02,
+      "ground_energy": -2.819946736725804,
+      "c2_estimate": 0.17855966962235323,
+      "wrong_model_coefficient": 0.1796875,
+      "actual_model_coefficient": 0.3046875
+    },
+    {
+      "g": 0.01,
+      "ground_energy": -2.8242047300590607,
+      "c2_estimate": 0.17912610861020756,
+      "wrong_model_coefficient": 0.1796875,
+      "actual_model_coefficient": 0.3046875
+    }
+  ],
+  "limits": [
+    "Four-site global holonomy mode, not a bulk photon.",
+    "Finite large cutoffs are checks, not exact infinite matrices.",
+    "O(g^3) is established by the quasimode proof, not curve fitting.",
+    "No three-dimensional charged phase or axiom selection."
+  ]
+}
+TOTAL: PASS=1 FAIL=0
+Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON
+per_element: six-state Gauss frame and symbolic ladder identities
+per_site: four-site charged ring only
+per_mode: finite hard-cutoff ring spectra and adverse offset fixture
+per_block: one complete companion family; imported helpers are shared implementation, not independent evidence
+lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here
+
+----- stderr -----
+

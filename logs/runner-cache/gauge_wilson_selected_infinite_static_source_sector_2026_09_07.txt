@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/gauge_wilson_selected_infinite_static_source_sector_2026_09_07.py
+runner_sha256: 3c4d34c6f97a37884bf81c6872c215e02d3e95680c6cbfb47ccbd5a581c7c71c
+input_fingerprint_sha256: 5c4ead3577a5c03f44ed7f25b4a10e9fdcff95f3c599fe09b455f6f5829943b3
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+PASS: 15 exact scientific controls; 1 separate resource guard
+per_element: 3 exact rational spectral-measure cases
+per_site: 3 finite Z3 charge labels, explicitly a toy
+per_mode: 2 fixed local resolvent modes
+per_block: 3 distinct adverse-control families
+lattice_wide: checked and not executed — local normality, selected GNS sector and resolvent/form bounds are analytical; no numerical infinite-volume simulation
+resources: 0.010586s / 180s; 20.969MiB / 180MiB
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

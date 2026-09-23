@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/holes_as_unrecorded_sites_unsoldered_order_blind_rules_constant_2026_09_22.py
+runner_sha256: 4dd53d8ba471d9319e3a332952335fdbfdefc5c13aec65bd35442502288b418b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+== 1. Two sites: order-blindness forces a constant hole rate and a full domain ==
+[PASS] deficit rejection, holes unrecorded: the hole sits at the later site, so the two orders differ :: P(x = a, y = h) = r0(a) delta(a) in one order and delta0 r0(a) in the other: order-blind forces delta(a) = delta0
+[PASS] hole rates: rejection has delta(a) = 1/2, soft pair delta(a) = 1/4, against delta0 = 0 at an empty condition :: any gap delta(a) != delta0 is a difference between the two orders of an adjacent pair
+[PASS] the same rule under the drop convention is order-blind on the pair: the escape lives in the convention
+[PASS] binary exclusion normalised on its domain has no hole on the pair: every one-neighbour condition admits a value
+
+== 2. The bent path, star and cross: the listed varying rules show the order ==
+[PASS] binary exclusion on its domain, bent path: 2 distinct finished-state laws; the centre is unrecorded w.p. 1/2 or 0 :: leaves first: they disagree half the time and the centre then has no admissible value
+[PASS] deficit rejection on the 7-site cross, centre formed k-th (k = 1..7): distinct laws, unrecorded-site 7 :: under the drop convention: 1 law(s)
+[PASS] soft pair on the 7-site cross, centre formed k-th (k = 1..7): distinct laws, unrecorded-site 7 :: under the drop convention: 1 law(s)
+[PASS] domain exclusion on the 7-site cross, centre formed k-th (k = 1..7): distinct laws, unrecorded-site 6 :: under the drop convention: 6 law(s)
+[PASS] six-axis exclusion on its domain, 4-site star: order-sensitive (the domain is never left, the values show it)
+[PASS] constant erasure (delta0 = 1/3, values fair) is order-blind on all 24 star orders, and it does not vary :: the only order-blind unsoldered rules under the supplied unrecorded-site convention: constant values, constant hole rate
+
+per_element: checked the finite configurations and arithmetic controls explicitly enumerated above
+per_site: checked the declared finite-window local rules under their supplied sampling conventions
+per_mode: checked and not executed — no infinite-volume Fourier or spectral mode computation is performed
+per_block: checked only the listed finite windows and orders; proofs beyond those runs are source arguments
+lattice_wide: checked and not executed — no infinite-lattice formation process or physical completion is simulated
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

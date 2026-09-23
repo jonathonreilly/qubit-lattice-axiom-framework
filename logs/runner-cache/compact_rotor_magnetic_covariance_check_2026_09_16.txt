@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/compact_rotor_magnetic_covariance_check_2026_09_16.py
+runner_sha256: d993841fdc671fadd1e0df97c911b6f040a15b476057dea42cf05a0235222c79
+input_fingerprint_sha256: 9f72bedee076e2b20ec5b68623b897e09bd60e6642f26f3a8f12179a5345cf3d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.69
+status: ok
+----- stdout -----
+per_element: finite matrix covariance entries and static response comparisons
+per_site: finite periodic spatial side4 fixture with declared time slices
+per_mode: finite temporal/spatial Fourier modes and replicated factors
+per_block: three completed finite diagnostic families; no exhaustive theorem execution
+lattice_wide: not executed; Gaussian subsequences/Riesz uniformity use written proofs
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

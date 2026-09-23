@@ -1,0 +1,150 @@
+{
+  "charged_ring": [
+    {
+      "g": 0.6,
+      "cutoff": 14,
+      "dimension": 1044,
+      "ground_energy": -2.4329043310785075,
+      "eigen_residual": 1.163164200169155e-13,
+      "electric_equation_error": 6.49852335106921e-14,
+      "wrong_current_sign_error": 50.33342803346487,
+      "generator_residual": 0.5729251027585711,
+      "residual_identity_error": 6.947788945385875e-13,
+      "total_annihilator_square": 0.29165482102916207,
+      "boundary_mass": 4.181943067505521e-30,
+      "dynamics": [
+        {
+          "t": 0.7,
+          "error": 0.3656193908938147,
+          "upper": 2.961321906075625
+        },
+        {
+          "t": 1.4,
+          "error": 0.5658321036229418,
+          "upper": 5.92264381215125
+        }
+      ]
+    },
+    {
+      "g": 0.4,
+      "cutoff": 20,
+      "dimension": 1476,
+      "ground_energy": -2.444137848156398,
+      "eigen_residual": 3.7278850671206293e-13,
+      "electric_equation_error": 1.2175096426413e-13,
+      "wrong_current_sign_error": 40.02209949515414,
+      "generator_residual": 0.36084584551604965,
+      "residual_identity_error": 2.357470667354354e-12,
+      "total_annihilator_square": 0.12556277293500834,
+      "boundary_mass": 3.290056812222072e-30,
+      "dynamics": [
+        {
+          "t": 0.7,
+          "error": 0.23398506568106522,
+          "upper": 1.9624035799141355
+        },
+        {
+          "t": 1.4,
+          "error": 0.3764904288819055,
+          "upper": 3.924807159828271
+        }
+      ]
+    },
+    {
+      "g": 0.25,
+      "cutoff": 32,
+      "dimension": 2340,
+      "ground_energy": -2.4532759137866935,
+      "eigen_residual": 3.078485016134051e-13,
+      "electric_equation_error": 4.949055621088139e-13,
+      "wrong_current_sign_error": 31.58165416820358,
+      "generator_residual": 0.2204698023052271,
+      "residual_identity_error": 1.5717361686763197e-12,
+      "total_annihilator_square": 0.04823029386267238,
+      "boundary_mass": 1.035431075850388e-30,
+      "dynamics": [
+        {
+          "t": 0.7,
+          "error": 0.14436609919212312,
+          "upper": 1.2226511985648583
+        },
+        {
+          "t": 1.4,
+          "error": 0.23705919128697872,
+          "upper": 2.4453023971297165
+        }
+      ]
+    }
+  ],
+  "weighted_square_root_symbol": {
+    "formula_errors": [
+      2.020286042593981e-15,
+      2.0247179035697927e-15,
+      1.065554862412757e-15,
+      2.248370808707408e-15,
+      2.033316597472364e-15,
+      3.033891275772631e-15,
+      3.779976379260805e-15,
+      1.8465624823965718e-15
+    ],
+    "scaled_second_derivatives": [
+      {
+        "radius": 0.1,
+        "scaled_second_derivative": 2.0942790333533794
+      },
+      {
+        "radius": 0.025,
+        "scaled_second_derivative": 2.0893106584019576
+      },
+      {
+        "radius": 0.00625,
+        "scaled_second_derivative": 2.0889997239941027
+      }
+    ],
+    "finite_kernel_norms": [
+      {
+        "L": 5,
+        "l1_upper": 14.690087858084087
+      },
+      {
+        "L": 8,
+        "l1_upper": 15.543049139165031
+      },
+      {
+        "L": 12,
+        "l1_upper": 15.937196581119625
+      }
+    ],
+    "scope": "Finite challenges only; the H2/summability proof is analytic."
+  },
+  "first_moment_counterexample": [
+    {
+      "high_scale": 10.0,
+      "low_eigenvalue": 0.6163538211700881,
+      "first_moment": 1.0,
+      "generator_norm_residual": 1.8973665961010275,
+      "shifted_limit_error": 0.08445300525520925,
+      "naive_unit_frequency_error": 0.3875126209970294
+    },
+    {
+      "high_scale": 100.0,
+      "low_eigenvalue": 0.6376895842160158,
+      "first_moment": 1.0,
+      "generator_norm_residual": 6.0,
+      "shifted_limit_error": 0.005057281689390083,
+      "naive_unit_frequency_error": 0.36271322090683017
+    },
+    {
+      "high_scale": 1000.0,
+      "low_eigenvalue": 0.6397695355230604,
+      "first_moment": 1.0,
+      "generator_norm_residual": 18.973665961010276,
+      "shifted_limit_error": 8.33196457293706e-05,
+      "naive_unit_frequency_error": 0.3580442121055565
+    }
+  ],
+  "scope": "Selective author checks, not a cubic thermodynamic phase computation.",
+  "tolerance": 3e-08,
+  "runner_sha256": "8a603e8c4f8bac8cd14f1d3208802468d2389fbd5d8de4a12bc729c96efea997",
+  "checks": 17776
+}

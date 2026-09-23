@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/compact_rotor_bridge_cubic_check_2026_09_16.py
+runner_sha256: 3b3f41b0e78883c901e15a63c9c47751cd117a81f115465854553dc9a22e307b
+input_fingerprint_sha256: 7008bdd0d0c9741bac6d5d871c2f629fd5e53cccc5a9ff813969753632ef036c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.64
+status: ok
+----- stdout -----
+per_element: finite positive precision and cubic coefficients
+per_site: one-face and two-adjacent-face finite bridge fixtures only
+per_mode: Hermite/Bessel resolutions and finite grids
+per_block: three completed finite diagnostic families; no exhaustive theorem execution
+lattice_wide: not executed; all-volume and continuous-time claims are written proofs
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

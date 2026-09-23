@@ -1,0 +1,166 @@
+===== runner cache v1 =====
+runner: scripts/tree_count_check_2026_09_15.py
+runner_sha256: 53c6fa0c46be0e08f9690422ae7a33cea500a0fd963c74036ca5b9f2a41070be
+input_fingerprint_sha256: 329980e333727537d3f83fcd23725054c52f8db9c286c2f5cc65de4167c00efd
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+{
+  "status": "finite_author_checks_passed",
+  "independent_review": false,
+  "weighted_tree_checks": [
+    {
+      "n": 2,
+      "theta": "0.0",
+      "weighted_count": "1.0"
+    },
+    {
+      "n": 2,
+      "theta": "0.5",
+      "weighted_count": "1.0"
+    },
+    {
+      "n": 2,
+      "theta": "0.75",
+      "weighted_count": "1.0"
+    },
+    {
+      "n": 3,
+      "theta": "0.0",
+      "weighted_count": "3.0"
+    },
+    {
+      "n": 3,
+      "theta": "0.5",
+      "weighted_count": "4.242640687119285146405066"
+    },
+    {
+      "n": 3,
+      "theta": "0.75",
+      "weighted_count": "5.045378491522287258186753"
+    },
+    {
+      "n": 4,
+      "theta": "0.0",
+      "weighted_count": "16.0"
+    },
+    {
+      "n": 4,
+      "theta": "0.5",
+      "weighted_count": "33.79795897113271239278914"
+    },
+    {
+      "n": 4,
+      "theta": "0.75",
+      "weighted_count": "49.27575999886482059176891"
+    },
+    {
+      "n": 5,
+      "theta": "0.0",
+      "weighted_count": "125.0"
+    },
+    {
+      "n": 5,
+      "theta": "0.5",
+      "weighted_count": "402.046621820868462061469"
+    },
+    {
+      "n": 5,
+      "theta": "0.75",
+      "weighted_count": "726.4710032737188369691348"
+    },
+    {
+      "n": 6,
+      "theta": "0.0",
+      "weighted_count": "1296.0"
+    },
+    {
+      "n": 6,
+      "theta": "0.5",
+      "weighted_count": "6404.3763241414574959121"
+    },
+    {
+      "n": 6,
+      "theta": "0.75",
+      "weighted_count": "14415.71157557824936342176"
+    },
+    {
+      "n": 7,
+      "theta": "0.0",
+      "weighted_count": "16807.0"
+    },
+    {
+      "n": 7,
+      "theta": "0.5",
+      "weighted_count": "128237.6657321894801197013"
+    },
+    {
+      "n": 7,
+      "theta": "0.75",
+      "weighted_count": "360589.4634675368651348326"
+    }
+  ],
+  "maximum_relative_identity_error": "1.7681729e-61",
+  "exact_series_upper_bound": "79781/7000",
+  "first_sixteen_upper_coefficients": [
+    "1",
+    "841/500",
+    "1917/1000",
+    "226/125",
+    "1511/1000",
+    "1159/1000",
+    "831/1000",
+    "113/200",
+    "367/1000",
+    "23/100",
+    "139/1000",
+    "41/500",
+    "47/1000",
+    "13/500",
+    "3/200",
+    "1/125"
+  ],
+  "direct_cycle_path_counts": [
+    {
+      "r": 2,
+      "cycles": 1,
+      "paths_per_species": 1,
+      "normalized_path_decorations": "1/4"
+    },
+    {
+      "r": 3,
+      "cycles": 6,
+      "paths_per_species": 3,
+      "normalized_path_decorations": "3/2"
+    },
+    {
+      "r": 4,
+      "cycles": 72,
+      "paths_per_species": 12,
+      "normalized_path_decorations": "18"
+    },
+    {
+      "r": 5,
+      "cycles": 1440,
+      "paths_per_species": 60,
+      "normalized_path_decorations": "360"
+    }
+  ],
+  "limitations": [
+    "counts concern specified combinatorial objects, not an identified physical expansion",
+    "divergence is of the stated series of common upper bounds, not of physical coefficients",
+    "no second factorial normalization is introduced"
+  ]
+}
+TOTAL: PASS=1 FAIL=0
+Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON
+per_element: Exact degree-factorial weights, rational series bounds and cycle/path normalization identities.
+per_site: Not executed: labeled combinatorial vertices, not a spatial lattice.
+per_mode: Not executed: no Fourier or spectral computation.
+per_block: Pruefer words for n=2..7 and theta=0,1/2,3/4; sixteen rational coefficient bounds; alternating cycles/decorating paths for r=2..5.
+lattice_wide: Not executed: series estimates and their physical-scope limitation use the written proof.
+
+----- stderr -----
+

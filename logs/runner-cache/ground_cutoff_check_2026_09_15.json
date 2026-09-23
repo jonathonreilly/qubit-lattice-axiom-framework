@@ -1,0 +1,181 @@
+{
+  "status": "PASS_personal_ground_cutoff_challenges",
+  "checks": {
+    "actual onsite four-band eigenvalues": 1,
+    "full onsite Fock minimum occurs at exactly two occupied levels": 1,
+    "actual charged hopping respects nuclear-norm bound": 2,
+    "physical loop Hamiltonian Hermitian": 8,
+    "ambient charged link and loop preserve first Gauss operator": 2,
+    "ambient charged link and loop preserve second Gauss operator": 2,
+    "independent ambient compression matches direct physical-state construction": 2,
+    "charged fixture ground eigenpair residual": 6,
+    "physical onsite N2 zero-flux variational comparison": 6,
+    "electric energy bounded by charged and Wilson shift budget": 6,
+    "every reduced-basis state satisfies both charged Gauss constraints": 2866,
+    "local union tail follows from actual electric second moment": 25,
+    "subnormalized gentle projection bound": 25,
+    "actual pure-gauge plaquette variational moment bound": 7,
+    "finite-electric-support full-rotor commutator equals compressed ground form": 6,
+    "finite-electric-support physical ground form nonnegative": 6,
+    "uncut shift invalidates an exact compressed-core identity at S0": 1,
+    "same-state dynamics comparison with derived ground-state tail": 9
+  },
+  "charged_two_cell_loop": [
+    {
+      "S": 0,
+      "dimension": 36,
+      "ground_energy": -3.230111804547198,
+      "electric_energy": 0.0,
+      "residual": 1.0686670399836359e-15
+    },
+    {
+      "S": 1,
+      "dimension": 174,
+      "ground_energy": -4.120152884000544,
+      "electric_energy": 0.17797290604286528,
+      "residual": 9.231580258523822e-15
+    },
+    {
+      "S": 2,
+      "dimension": 314,
+      "ground_energy": -4.215525568689898,
+      "electric_energy": 0.2512021421915141,
+      "residual": 4.720391493088575e-13
+    },
+    {
+      "S": 3,
+      "dimension": 454,
+      "ground_energy": -4.220514709189538,
+      "electric_energy": 0.26084630062220804,
+      "residual": 1.038953402199172e-14
+    },
+    {
+      "S": 5,
+      "dimension": 734,
+      "ground_energy": -4.220617217111249,
+      "electric_energy": 0.26119116682495447,
+      "residual": 3.3602877416692535e-13
+    },
+    {
+      "S": 8,
+      "dimension": 1154,
+      "ground_energy": -4.22061722126465,
+      "electric_energy": 0.26119119379753725,
+      "residual": 2.3088423996614206e-13
+    }
+  ],
+  "pure_gauge_four_edge_plaquette": [
+    {
+      "S": 0,
+      "energy": 0.0,
+      "one_link_second_moment": 0.0
+    },
+    {
+      "S": 1,
+      "energy": -3.191282035114688,
+      "one_link_second_moment": 0.4904711612256798
+    },
+    {
+      "S": 2,
+      "energy": -3.845620533131931,
+      "one_link_second_moment": 1.063384360071487
+    },
+    {
+      "S": 3,
+      "energy": -4.022450170971544,
+      "one_link_second_moment": 1.6188714370119424
+    },
+    {
+      "S": 5,
+      "energy": -4.072923924191846,
+      "one_link_second_moment": 2.0669863556140102
+    },
+    {
+      "S": 8,
+      "energy": -4.07382640620094,
+      "one_link_second_moment": 2.089439511344251
+    },
+    {
+      "S": 12,
+      "energy": -4.073826509540691,
+      "one_link_second_moment": 2.08944542509133
+    }
+  ],
+  "same_state_dynamics": [
+    {
+      "S": 2,
+      "t": 0.2,
+      "observed_change": 0.0008785618820942309,
+      "safe_bound": 2,
+      "tail_probability": 0.14059859593804525
+    },
+    {
+      "S": 2,
+      "t": 1.0,
+      "observed_change": 0.18549087009262438,
+      "safe_bound": 2,
+      "tail_probability": 0.14059859593804525
+    },
+    {
+      "S": 2,
+      "t": 2.0,
+      "observed_change": 0.1587769056278833,
+      "safe_bound": 2,
+      "tail_probability": 0.14059859593804525
+    },
+    {
+      "S": 4,
+      "t": 0.2,
+      "observed_change": 1.1120014766774489e-06,
+      "safe_bound": 2,
+      "tail_probability": 0.06841044119737281
+    },
+    {
+      "S": 4,
+      "t": 1.0,
+      "observed_change": 0.003876323294558448,
+      "safe_bound": 2,
+      "tail_probability": 0.06841044119737281
+    },
+    {
+      "S": 4,
+      "t": 2.0,
+      "observed_change": 0.008692822835185132,
+      "safe_bound": 2,
+      "tail_probability": 0.06841044119737281
+    },
+    {
+      "S": 6,
+      "t": 0.2,
+      "observed_change": 3.32092353616531e-10,
+      "safe_bound": 1.550766997502999,
+      "tail_probability": 0.013833302633445062
+    },
+    {
+      "S": 6,
+      "t": 1.0,
+      "observed_change": 8.594993115818017e-05,
+      "safe_bound": 2,
+      "tail_probability": 0.013833302633445062
+    },
+    {
+      "S": 6,
+      "t": 2.0,
+      "observed_change": 0.00010938776000929407,
+      "safe_bound": 2,
+      "tail_probability": 0.013833302633445062
+    }
+  ],
+  "seconds": 0.16290991700952873,
+  "limits": [
+    "two-cell charged loop is a noncubic algebra fixture",
+    "four-edge plaquette is finite, not a bulk phase",
+    "larger time-evolution cutoff is a numerical comparator, not infinite-rotor certification",
+    "analytic compactness and ground-state passage are not established by finite diagonalizations",
+    "no fixed-S Coulomb phase or independently audited status"
+  ],
+  "sha256": {
+    "scripts/ground_cutoff_check_2026_09_15.py": "b8b78409a0bcd4e9ca472f65e1fc66c053e4b6f61bd8f576ebb61df3d7a4f3c4",
+    "docs/FIXED_COUPLING_ROTOR_GROUND_CUTOFF_COMPACTNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md": "fce8dfa118325552e93dec94089c9c76b3b5ed52e0c31f9742372297a47f97b4"
+  }
+}

@@ -1,0 +1,906 @@
+{
+  "original_head": "0f02dc5127416f347e231bbd8aa7c2a8b58a02fa",
+  "original_delta_base": "e0ef7cf4633034a8c1e6d57f5812cc4275bf1349",
+  "paths": [
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/CLAIM_STATUS_CERTIFICATE.md",
+      "mode": "100644",
+      "blob": "3b6767297279f07f7c0d6cca28bd7e2d5f99c38a",
+      "sha256": "513635bd53306b1a7ac7d274b71856192ca5e2a6244490098452d9c903a7e7f9",
+      "bytes": 1853,
+      "archive": "docs/work_history/review_loop/pr8162/originals/001-CLAIM_STATUS_CERTIFICATE.md.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/GOAL.md",
+      "mode": "100644",
+      "blob": "2911219c912eb583ab0639d8e1a930e7771ea82f",
+      "sha256": "998ff605b75263ad2dae17698c17447119c466c401a03e569fcd106db241cf6f",
+      "bytes": 1828,
+      "archive": "docs/work_history/review_loop/pr8162/originals/002-GOAL.md.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/HANDOFF.md",
+      "mode": "100644",
+      "blob": "b7c6c57421dfff4a80b73ca7aafd1303c10c2250",
+      "sha256": "388c5765035bbcf1cc31f413fad0c3e36eb7b5f29e6ff2fad44bbf2260f8a551",
+      "bytes": 3606,
+      "archive": "docs/work_history/review_loop/pr8162/originals/003-HANDOFF.md.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/MANIFEST.sha256",
+      "mode": "100644",
+      "blob": "36ab1618dfd67c03d1746b58e97f96b9888f274f",
+      "sha256": "d049c28a6cc5e8e9bdf18f6a9f078d546cc0eedfe7e4a1553449cf3faac9e4f6",
+      "bytes": 10275,
+      "archive": "docs/work_history/review_loop/pr8162/originals/004-MANIFEST.sha256.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/OPPORTUNITY_QUEUE.md",
+      "mode": "100644",
+      "blob": "c91af43f73025243e28f21e35aea71fd136376ee",
+      "sha256": "9ed71e0d1636f8685e9fc58ac74926eaf37faf9d95e110f12a3c6b4d67e073a7",
+      "bytes": 965,
+      "archive": "docs/work_history/review_loop/pr8162/originals/005-OPPORTUNITY_QUEUE.md.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/READING_LEDGER.md",
+      "mode": "100644",
+      "blob": "cb827f13e8051ee196a4f462247ffb856ae8c1e9",
+      "sha256": "6c1d269b81bc4ae134b5cd5340e563296e2e73c742fe4c2b098705ad9df7a0ec",
+      "bytes": 6074,
+      "archive": "docs/work_history/review_loop/pr8162/originals/006-READING_LEDGER.md.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/README.md",
+      "mode": "100644",
+      "blob": "f63536a52f2625e6c1a0d7c2b18bf80b877832c1",
+      "sha256": "a69fb93276b4f279cf080826bd0e4c1ece19cda8bb87d6a8807d09a68daac7cf",
+      "bytes": 2306,
+      "archive": "docs/work_history/review_loop/pr8162/originals/007-README.md.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/STATE.yaml",
+      "mode": "100644",
+      "blob": "2be0b182ab3ba72d0dd235257af952946c036e60",
+      "sha256": "b04a447ea0f7af0f97e0a8ec017d2461415bfb8f7b01fa056e96cd6109f4ebc9",
+      "bytes": 1206,
+      "archive": "docs/work_history/review_loop/pr8162/originals/008-STATE.yaml.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/evidence/BLOCK02_CALIBRATED_TRANSFER_ATTEMPT1.stderr.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive": "docs/work_history/review_loop/pr8162/originals/009-BLOCK02_CALIBRATED_TRANSFER_ATTEMPT1.stderr.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/evidence/BLOCK02_CALIBRATED_TRANSFER_ATTEMPT1.stdout.txt",
+      "mode": "100644",
+      "blob": "bd47c5e96740a148586def9bb4c2bf7bc4e33267",
+      "sha256": "1b41686194828bbf57b426bd3d8c19dca4145056b1ec73437732a4ebd0c3cb40",
+      "bytes": 17693,
+      "archive": "docs/work_history/review_loop/pr8162/originals/010-BLOCK02_CALIBRATED_TRANSFER_ATTEMPT1.stdout.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/evidence/BLOCK02_CALIBRATED_TRANSFER_ATTEMPT2.stderr.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive": "docs/work_history/review_loop/pr8162/originals/011-BLOCK02_CALIBRATED_TRANSFER_ATTEMPT2.stderr.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/evidence/BLOCK02_CALIBRATED_TRANSFER_ATTEMPT2.stdout.txt",
+      "mode": "100644",
+      "blob": "769bacb52e5cc85f4afcbf53200a472f23924799",
+      "sha256": "c623e6505c1178fef9bc6c711907c6f3d4ab0df49ca86b04038dbdd7891ec243",
+      "bytes": 17658,
+      "archive": "docs/work_history/review_loop/pr8162/originals/012-BLOCK02_CALIBRATED_TRANSFER_ATTEMPT2.stdout.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/evidence/BLOCK03_ALL_MODE_STATES_ATTEMPT1.stderr.txt",
+      "mode": "100644",
+      "blob": "b87f64d051dbb9bf71418fc74ab96c244bc842ee",
+      "sha256": "ef7220f4e738803b7e5d95dca603617883b6033b3f48f2edcd79870ebd890619",
+      "bytes": 943,
+      "archive": "docs/work_history/review_loop/pr8162/originals/013-BLOCK03_ALL_MODE_STATES_ATTEMPT1.stderr.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/evidence/BLOCK03_ALL_MODE_STATES_ATTEMPT1.stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive": "docs/work_history/review_loop/pr8162/originals/014-BLOCK03_ALL_MODE_STATES_ATTEMPT1.stdout.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/evidence/BLOCK03_ALL_MODE_STATES_ATTEMPT2.stderr.txt",
+      "mode": "100644",
+      "blob": "623b48de73e7b026feed1ce51cf7c25003acb7dd",
+      "sha256": "b5e5c3e68096358b3e5b7213b91d87e3a8ed690f53db8da12c90c7bc08a8e0d9",
+      "bytes": 1251,
+      "archive": "docs/work_history/review_loop/pr8162/originals/015-BLOCK03_ALL_MODE_STATES_ATTEMPT2.stderr.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/evidence/BLOCK03_ALL_MODE_STATES_ATTEMPT2.stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive": "docs/work_history/review_loop/pr8162/originals/016-BLOCK03_ALL_MODE_STATES_ATTEMPT2.stdout.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/evidence/BLOCK03_ALL_MODE_STATES_ATTEMPT3.stderr.txt",
+      "mode": "100644",
+      "blob": "b7760f3fd33512dcac026e72454bd41fb62fb326",
+      "sha256": "f548f5cd8acc0db494c28ebf5e1aba8fb1d4b55972dbfc323ca4ee060fd04b8b",
+      "bytes": 1346,
+      "archive": "docs/work_history/review_loop/pr8162/originals/017-BLOCK03_ALL_MODE_STATES_ATTEMPT3.stderr.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/evidence/BLOCK03_ALL_MODE_STATES_ATTEMPT3.stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive": "docs/work_history/review_loop/pr8162/originals/018-BLOCK03_ALL_MODE_STATES_ATTEMPT3.stdout.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/evidence/BLOCK03_ALL_MODE_STATES_ATTEMPT4.stderr.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive": "docs/work_history/review_loop/pr8162/originals/019-BLOCK03_ALL_MODE_STATES_ATTEMPT4.stderr.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/evidence/BLOCK03_ALL_MODE_STATES_ATTEMPT4.stdout.txt",
+      "mode": "100644",
+      "blob": "ac3edef595ddeef1b5d224c86ccc9854dbff9ef6",
+      "sha256": "bd5281ba005b7c54148a66368590e1b0da72812efc5f42dd6d907260af282a78",
+      "bytes": 18497,
+      "archive": "docs/work_history/review_loop/pr8162/originals/020-BLOCK03_ALL_MODE_STATES_ATTEMPT4.stdout.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/evidence/BLOCK03_COMMUTATOR_DIAGNOSTIC.stderr.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive": "docs/work_history/review_loop/pr8162/originals/021-BLOCK03_COMMUTATOR_DIAGNOSTIC.stderr.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/evidence/BLOCK03_COMMUTATOR_DIAGNOSTIC.stdout.txt",
+      "mode": "100644",
+      "blob": "4de8feed54e4c3893ca0b8cd3dc7edc9428193f7",
+      "sha256": "c23d2f32a898fc86f6f94edd85f5542bf4cee868e908bb4931f1eed42f110842",
+      "bytes": 20191,
+      "archive": "docs/work_history/review_loop/pr8162/originals/022-BLOCK03_COMMUTATOR_DIAGNOSTIC.stdout.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/evidence/BLOCK03_RESOLUTION_DIAGNOSTIC.stderr.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive": "docs/work_history/review_loop/pr8162/originals/023-BLOCK03_RESOLUTION_DIAGNOSTIC.stderr.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/evidence/BLOCK03_RESOLUTION_DIAGNOSTIC.stdout.txt",
+      "mode": "100644",
+      "blob": "31bd73b040746e8f55d60ff7ee37824658fd5ba6",
+      "sha256": "b17a2418c36972097fe6918725f535604fe30a4615567cdac1dcc9b4df59e802",
+      "bytes": 16671,
+      "archive": "docs/work_history/review_loop/pr8162/originals/024-BLOCK03_RESOLUTION_DIAGNOSTIC.stdout.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/evidence/FORMULA_MUTATIONS_ATTEMPT1.stderr.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive": "docs/work_history/review_loop/pr8162/originals/025-FORMULA_MUTATIONS_ATTEMPT1.stderr.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/evidence/FORMULA_MUTATIONS_ATTEMPT1.stdout.txt",
+      "mode": "100644",
+      "blob": "4e28f724cd49134d8f15e90bd3c8f257c5293952",
+      "sha256": "e212e10d67d39b689230157926e37a05867b5697b1c2e5463442a2effd28ee21",
+      "bytes": 5803,
+      "archive": "docs/work_history/review_loop/pr8162/originals/026-FORMULA_MUTATIONS_ATTEMPT1.stdout.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/evidence/block02_calibrated_transfer_check.py",
+      "mode": "100644",
+      "blob": "fa3afeec042b9677a5700652f934597ac0209ecf",
+      "sha256": "7a485d900562de13d45502eab7c8670a2ed674f703c2869955e4f8efe6fcef1b",
+      "bytes": 7244,
+      "archive": "docs/work_history/review_loop/pr8162/originals/027-block02_calibrated_transfer_check.py.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Canonicalize active independent runner with literal actual note input pins, integrity read, completed-family TOTAL and honest N5; retain numerical domain/tolerances and original exact history."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/evidence/block03_all_mode_and_states_check.py",
+      "mode": "100644",
+      "blob": "f7a48652fee258920eb901a0833aa3cda4d26e11",
+      "sha256": "eb8506e11d1fa57705977b8081ccceb7c0eaede88c15caa2bb827cb08a1cdfb5",
+      "bytes": 8231,
+      "archive": "docs/work_history/review_loop/pr8162/originals/028-block03_all_mode_and_states_check.py.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Canonicalize active independent runner with literal actual note input pins, integrity read, completed-family TOTAL and honest N5; retain numerical domain/tolerances and original exact history."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/notes/BLOCK01_WORKING_TRANSFER_MATCHING.md",
+      "mode": "100644",
+      "blob": "1e523e6ffa81f378f3acd139caef651604fd3caf",
+      "sha256": "2647fd6426a0070aaca87105843eeb5a49c04271097609d1aa9fcf0818f360a5",
+      "bytes": 3857,
+      "archive": "docs/work_history/review_loop/pr8162/originals/029-BLOCK01_WORKING_TRANSFER_MATCHING.md.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Working lemmas are contained in complete final calibrated transfer proof; preserve original exact history and explicit correspondence."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/notes/BLOCK02_CALIBRATED_CLOCK_ROTOR_TRANSFER_THEOREM.md",
+      "mode": "100644",
+      "blob": "eca06a1f95eb59dd07be791b17562806f0258336",
+      "sha256": "96a36ae2df98ae234f8a79bddd88dcfb1f75c4a9b909077b3e15c9c04b0764a2",
+      "bytes": 14642,
+      "archive": "docs/work_history/review_loop/pr8162/originals/030-BLOCK02_CALIBRATED_CLOCK_ROTOR_TRANSFER_THEOREM.md.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Canonicalize complete calibrated transfer proof, supplied-model scope and all estimates unchanged."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/notes/BLOCK02_VARIANCE_CALIBRATED_TEMPORAL_TRANSFER_WORKING.md",
+      "mode": "100644",
+      "blob": "f6ef1bde617d17c6254709a19527c7269966bf3c",
+      "sha256": "b31cc922f253fdc395eb24f4499a56711d4442e18e8fc352094907e5531059ef",
+      "bytes": 7321,
+      "archive": "docs/work_history/review_loop/pr8162/originals/031-BLOCK02_VARIANCE_CALIBRATED_TEMPORAL_TRANSFER_WORKING.md.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Working lemmas are contained in complete final calibrated transfer proof; preserve original exact history and explicit correspondence."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/notes/BLOCK03_ALL_MODE_COERCIVITY_AND_FINITE_VOLUME_STATES.md",
+      "mode": "100644",
+      "blob": "719db4d6fec7ea958d36b97e5e3b29810929ae11",
+      "sha256": "57ee88346bf99d751bc84b2e5e637424e4e62b44e2702cf8ed295dc5dbb9cd03",
+      "bytes": 10560,
+      "archive": "docs/work_history/review_loop/pr8162/originals/032-BLOCK03_ALL_MODE_COERCIVITY_AND_FINITE_VOLUME_STATES.md.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Canonicalize complete all-mode, compactness, resolvent, spectral and thermal proof; explicit dependency on calibrated transfer."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/notes/BLOCK03_CHARGED_RING_CHECK_CONVENTIONS.md",
+      "mode": "100644",
+      "blob": "14b5cc69a03ce03680c5fcf614611e3a03c16e57",
+      "sha256": "4575911e52c856beff2494dff920e5728fc407c0658e1cffbaa5c218d05004b8",
+      "bytes": 2686,
+      "archive": "docs/work_history/review_loop/pr8162/originals/033-BLOCK03_CHARGED_RING_CHECK_CONVENTIONS.md.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve complete active charged-ring conventions as appendix of all-mode/state owner note; do not discard as historical-only."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/FOCUSED_VERIFICATION.json",
+      "mode": "100644",
+      "blob": "0c655c10543b7e9ab8bc644868f1e075d229768a",
+      "sha256": "43119fad85e53c57a0c20fd20a4363df278afe949101df1a3ace030d5c73f02e",
+      "bytes": 4783,
+      "archive": "docs/work_history/review_loop/pr8162/originals/034-FOCUSED_VERIFICATION.json.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/FOCUSED_VOCAB.stderr.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive": "docs/work_history/review_loop/pr8162/originals/035-FOCUSED_VOCAB.stderr.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/FOCUSED_VOCAB.stdout.txt",
+      "mode": "100644",
+      "blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "bytes": 81,
+      "archive": "docs/work_history/review_loop/pr8162/originals/036-FOCUSED_VOCAB.stdout.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/NUMERICAL_HISTORY.md",
+      "mode": "100644",
+      "blob": "5a03998f1cd288093486a166d4cfef2770f7e275",
+      "sha256": "e4330970306d24490d30b6887b3d170d7f751388eee5c0ec2b2beb0e1e7eeec4",
+      "bytes": 3304,
+      "archive": "docs/work_history/review_loop/pr8162/originals/037-NUMERICAL_HISTORY.md.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/OPEN_PR_SOURCE_SNAPSHOT.json",
+      "mode": "100644",
+      "blob": "4548982cc19413e188399e613b15cbeabed45db8",
+      "sha256": "aafc8f6c514e6dba01c08c510626027bd03b268fc6af0c8d92dccf444598d62e",
+      "bytes": 19300,
+      "archive": "docs/work_history/review_loop/pr8162/originals/038-OPEN_PR_SOURCE_SNAPSHOT.json.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/PERSONAL_PROOF_REVIEW.md",
+      "mode": "100644",
+      "blob": "ba9cdcc48db71d8597cb440afefcee0150d2fd38",
+      "sha256": "9942d12037b0bede437028e01726c54cadf00719caef86ff6416611ea2e2b842",
+      "bytes": 4888,
+      "archive": "docs/work_history/review_loop/pr8162/originals/039-PERSONAL_PROOF_REVIEW.md.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/PREMISES_AND_BOUNDARIES.md",
+      "mode": "100644",
+      "blob": "f3e76ee8c98da8d6ddf28fc2d8852e8c3f4fc832",
+      "sha256": "41dcb9ab4f8a30ce90f45cefc873ed0e1e9213ec68c0bb31de062276b026aed3",
+      "bytes": 4765,
+      "archive": "docs/work_history/review_loop/pr8162/originals/040-PREMISES_AND_BOUNDARIES.md.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/block02_calibrated_transfer_attempt1_source.py",
+      "mode": "100644",
+      "blob": "affd51810696560daca3c374838b46f5886c8b62",
+      "sha256": "27089a7fa2fb27e5b9f637f0f1519f84e3ef22b6ae44b1d50a39b7ffa3708c6f",
+      "bytes": 6937,
+      "archive": "docs/work_history/review_loop/pr8162/originals/041-block02_calibrated_transfer_attempt1_source.py.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/block03_all_mode_states_attempt1_source.py",
+      "mode": "100644",
+      "blob": "e5fd180db5aacbfa9ea746a2c765330b5a2d8a9e",
+      "sha256": "2c9a22ed0eb2a9fa380e8e6f4810e0f0860cfe0261478154adfccf2b5676ccb7",
+      "bytes": 6063,
+      "archive": "docs/work_history/review_loop/pr8162/originals/042-block03_all_mode_states_attempt1_source.py.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/block03_all_mode_states_attempt2_source.py",
+      "mode": "100644",
+      "blob": "105fa2ff4b287245b935858009a4d4a91b7a0a01",
+      "sha256": "b0515c4c806cec2527b5413352857dd6e6e5c675706adcfde3bd444c2b2f9b0b",
+      "bytes": 6066,
+      "archive": "docs/work_history/review_loop/pr8162/originals/043-block03_all_mode_states_attempt2_source.py.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/block03_all_mode_states_attempt3_source.py",
+      "mode": "100644",
+      "blob": "ed3e38fa7965905af9041429b254d9c41615d6a9",
+      "sha256": "cc909e5b3c743ceb5509ab399c9a49a6b6d0a9dc92e75c820da2fb26a5d5d88d",
+      "bytes": 8104,
+      "archive": "docs/work_history/review_loop/pr8162/originals/044-block03_all_mode_states_attempt3_source.py.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/block03_commutator_diagnostic.py",
+      "mode": "100644",
+      "blob": "40c4d97c2ae27e6cbbc870e4dbac31a920e2aae3",
+      "sha256": "ca68c8c4a96e12161d1742a4d56991e69802a0de786191707d5e5e568fa304e6",
+      "bytes": 6176,
+      "archive": "docs/work_history/review_loop/pr8162/originals/045-block03_commutator_diagnostic.py.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/block03_resolution_diagnostic.py",
+      "mode": "100644",
+      "blob": "2d7de3fc3a60631b2479ea97d0673cfc0a84a49a",
+      "sha256": "0dc1b2f0588c756ac938d7d448af193218c9365a46b746a032ab155b7f282ad2",
+      "bytes": 6125,
+      "archive": "docs/work_history/review_loop/pr8162/originals/046-block03_resolution_diagnostic.py.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_alias_normalization.py",
+      "mode": "100644",
+      "blob": "d9016236dc5f1686bc65e15c06a139fdcc0a24f0",
+      "sha256": "6af17b010954c4c67f0bd7c80b09e5e33b4ec6efbd482c86d545bf8c6343db1e",
+      "bytes": 7248,
+      "archive": "docs/work_history/review_loop/pr8162/originals/047-02_alias_normalization.py.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_alias_normalization.stderr.txt",
+      "mode": "100644",
+      "blob": "2850480d5b533db94d961b51c2d00bd378ee0b75",
+      "sha256": "327d1a8cb0b1148f2378dfd473ec2dcb68fec4c332aae36172e0dc4260f45f30",
+      "bytes": 989,
+      "archive": "docs/work_history/review_loop/pr8162/originals/048-02_alias_normalization.stderr.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_alias_normalization.stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive": "docs/work_history/review_loop/pr8162/originals/049-02_alias_normalization.stdout.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_four_links_as_one.py",
+      "mode": "100644",
+      "blob": "274f87248651191d71779c0e12f7214acf13c595",
+      "sha256": "993cb29828d7a8aee6b8dd591ab6ae1ac80fa63d3a17726b92c6973712098b25",
+      "bytes": 7241,
+      "archive": "docs/work_history/review_loop/pr8162/originals/050-02_four_links_as_one.py.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_four_links_as_one.stderr.txt",
+      "mode": "100644",
+      "blob": "0a3288e3d92450b5b7affef0f615844dac5a2f77",
+      "sha256": "6783e43ea23eb51a4fe02bc0d4df7406ca384e67e456e007932b46d94a74210c",
+      "bytes": 923,
+      "archive": "docs/work_history/review_loop/pr8162/originals/051-02_four_links_as_one.stderr.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_four_links_as_one.stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive": "docs/work_history/review_loop/pr8162/originals/052-02_four_links_as_one.stdout.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_gauss_basis_normalization.py",
+      "mode": "100644",
+      "blob": "991b9fc5d379600015146b92da134a7700e8a947",
+      "sha256": "9566e7c668870b2c3116b6182108b9ea8303b310e9480a4d4beba314bd8dc4fc",
+      "bytes": 7242,
+      "archive": "docs/work_history/review_loop/pr8162/originals/053-02_gauss_basis_normalization.py.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_gauss_basis_normalization.stderr.txt",
+      "mode": "100644",
+      "blob": "1df0c51c27ee9338ef38775fe9de572e7719ff1f",
+      "sha256": "23300416aabb07258b8dbdc1bf90ce69228bc57de2f1a470575ba6468ac8a75a",
+      "bytes": 1025,
+      "archive": "docs/work_history/review_loop/pr8162/originals/054-02_gauss_basis_normalization.stderr.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_gauss_basis_normalization.stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive": "docs/work_history/review_loop/pr8162/originals/055-02_gauss_basis_normalization.stdout.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_poisson_variance_factor.py",
+      "mode": "100644",
+      "blob": "af48ab1171cf6e2fc4b7ee2c7ddfde86c0d47550",
+      "sha256": "b5d5486f3b8abfebffb2d6db208de200d3559b4d8726a5064d35778b957c9ac8",
+      "bytes": 7242,
+      "archive": "docs/work_history/review_loop/pr8162/originals/056-02_poisson_variance_factor.py.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_poisson_variance_factor.stderr.txt",
+      "mode": "100644",
+      "blob": "a77fcd1e0b31cc6eccfa7b78738f6764ff7a267c",
+      "sha256": "59fa3f93ea91e646d63c9f24bc4a2150b7cab3260abf826074b87deca9c98816",
+      "bytes": 657,
+      "archive": "docs/work_history/review_loop/pr8162/originals/057-02_poisson_variance_factor.stderr.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_poisson_variance_factor.stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive": "docs/work_history/review_loop/pr8162/originals/058-02_poisson_variance_factor.stdout.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_restore_tiny_gap_roundoff.py",
+      "mode": "100644",
+      "blob": "068e7c2a487704a0af8678e6aa04b198c771a351",
+      "sha256": "ff38e3d0428b2c57aaed707027f57095a10d8461ca8c9a6a1fc2dcf22a3652f1",
+      "bytes": 7259,
+      "archive": "docs/work_history/review_loop/pr8162/originals/059-02_restore_tiny_gap_roundoff.py.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_restore_tiny_gap_roundoff.stderr.txt",
+      "mode": "100644",
+      "blob": "ceffd8aa0b58eee105945fede6b97972a21f5712",
+      "sha256": "0f0a83c856fd2b8fb0d847afd242c9434dfa0181f99ae89c962f56ca4945d6a1",
+      "bytes": 631,
+      "archive": "docs/work_history/review_loop/pr8162/originals/060-02_restore_tiny_gap_roundoff.stderr.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_restore_tiny_gap_roundoff.stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive": "docs/work_history/review_loop/pr8162/originals/061-02_restore_tiny_gap_roundoff.stdout.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_spatial_factor.py",
+      "mode": "100644",
+      "blob": "f5e88e504af40472c7960a07394ffd91773d588b",
+      "sha256": "07683408ee87aeb7d0c72f8a00d07dad82879d6261a6b8fa54ec60f9ed93146a",
+      "bytes": 7242,
+      "archive": "docs/work_history/review_loop/pr8162/originals/062-02_spatial_factor.py.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_spatial_factor.stderr.txt",
+      "mode": "100644",
+      "blob": "1c913d31c4969b7007f41e707f767ee1f6923280",
+      "sha256": "787f4e53587cd71c92962bc6fb4a60a9565926898b3d81e364ed1f18c56bfb07",
+      "bytes": 914,
+      "archive": "docs/work_history/review_loop/pr8162/originals/063-02_spatial_factor.stderr.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_spatial_factor.stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive": "docs/work_history/review_loop/pr8162/originals/064-02_spatial_factor.stdout.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_variance_factor.py",
+      "mode": "100644",
+      "blob": "55ddd2862eb93067c56a3621dda44d27d0d54587",
+      "sha256": "b321b8f994e57780be0133bd0921a05c57d0e4cb131ddc4666fe86629e00f1c2",
+      "bytes": 7244,
+      "archive": "docs/work_history/review_loop/pr8162/originals/065-02_variance_factor.py.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_variance_factor.stderr.txt",
+      "mode": "100644",
+      "blob": "28bf8e1d1e9c0042e99a6ff64a37af3ebc93ed6a",
+      "sha256": "5dd7a9a6b7b952cbdea67db8e88e86cc0e47ced749721520015b68431a7a6544",
+      "bytes": 737,
+      "archive": "docs/work_history/review_loop/pr8162/originals/066-02_variance_factor.stderr.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/02_variance_factor.stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive": "docs/work_history/review_loop/pr8162/originals/067-02_variance_factor.stdout.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/03_false_strong_floor.py",
+      "mode": "100644",
+      "blob": "ebd1fd0722637cffc7671055b80f038e6d6dff4b",
+      "sha256": "88bd64a233876974c63cc0e756c4100b2818e084ab15c722c9cad0bd2530fe97",
+      "bytes": 8216,
+      "archive": "docs/work_history/review_loop/pr8162/originals/068-03_false_strong_floor.py.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/03_false_strong_floor.stderr.txt",
+      "mode": "100644",
+      "blob": "5fa9d4ab2b6ca547f3267a087d37f4f786baafa0",
+      "sha256": "d6738c688d6aa32f79e43e806ca68a8fbfccbfc2c34acdf65195b1ef031d3142",
+      "bytes": 1010,
+      "archive": "docs/work_history/review_loop/pr8162/originals/069-03_false_strong_floor.stderr.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/03_false_strong_floor.stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive": "docs/work_history/review_loop/pr8162/originals/070-03_false_strong_floor.stdout.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/03_missing_gibbs_normalization.py",
+      "mode": "100644",
+      "blob": "b178ba35bd881e684ad8b1e983d9149a62485953",
+      "sha256": "640229fee765dc892bd859198a00423063df96be3c5e30a8ac51a52207ddf44e",
+      "bytes": 8229,
+      "archive": "docs/work_history/review_loop/pr8162/originals/071-03_missing_gibbs_normalization.py.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/03_missing_gibbs_normalization.stderr.txt",
+      "mode": "100644",
+      "blob": "37aad1f07678b57e3f6cfb30d38967bfb7058830",
+      "sha256": "2e4f62e45276f35d7e8a04b626037be540efe037be81265ba286cf41f8a41ec4",
+      "bytes": 1116,
+      "archive": "docs/work_history/review_loop/pr8162/originals/072-03_missing_gibbs_normalization.stderr.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/03_missing_gibbs_normalization.stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive": "docs/work_history/review_loop/pr8162/originals/073-03_missing_gibbs_normalization.stdout.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/03_product_factor.py",
+      "mode": "100644",
+      "blob": "3117d506333e7b373b706f9316d0ae03c29d636c",
+      "sha256": "4ca3c1472bb84502ccaf8d94967c29d51f182ca706c283d49866288d761f0a24",
+      "bytes": 8231,
+      "archive": "docs/work_history/review_loop/pr8162/originals/074-03_product_factor.py.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/03_product_factor.stderr.txt",
+      "mode": "100644",
+      "blob": "d506af17a92966bc02f362dc35828aceec372fd2",
+      "sha256": "dfa1852d39ee5dfd0249262a1b1c94490db5617b29f70322546d6d7d800741d3",
+      "bytes": 984,
+      "archive": "docs/work_history/review_loop/pr8162/originals/075-03_product_factor.stderr.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/03_product_factor.stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive": "docs/work_history/review_loop/pr8162/originals/076-03_product_factor.stdout.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/03_reversed_charge_offset.py",
+      "mode": "100644",
+      "blob": "05aa02c0c76201e9c8aff88ef0974c61a0b8219a",
+      "sha256": "1de1a355820900505178501cf8a561cb56e4651720e08b3ba224a4e1d8fc439f",
+      "bytes": 8231,
+      "archive": "docs/work_history/review_loop/pr8162/originals/077-03_reversed_charge_offset.py.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/03_reversed_charge_offset.stderr.txt",
+      "mode": "100644",
+      "blob": "dd246e6c0912f7f160dd018092d374c6621e716a",
+      "sha256": "c7279ae47cdd4e407c246ba0b9decfee7b2477eee59dd3ccf1a8e1fe0021270d",
+      "bytes": 1128,
+      "archive": "docs/work_history/review_loop/pr8162/originals/078-03_reversed_charge_offset.stderr.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/03_reversed_charge_offset.stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive": "docs/work_history/review_loop/pr8162/originals/079-03_reversed_charge_offset.stdout.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/03_reversed_winding_hop.py",
+      "mode": "100644",
+      "blob": "f6d39337a3728452cb841ed0215461823a756827",
+      "sha256": "7c4d9a0137d039bf0b4965c2f3773298cf8b28afd46c9082f6fa48a9d8fb6719",
+      "bytes": 8230,
+      "archive": "docs/work_history/review_loop/pr8162/originals/080-03_reversed_winding_hop.py.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/03_reversed_winding_hop.stderr.txt",
+      "mode": "100644",
+      "blob": "0791976443345883301cd64bc3c585014e93c499",
+      "sha256": "c5cb96497f76f4c10df91ecda323fdb107c8c5f6c02a080daff87b0937a526e1",
+      "bytes": 1122,
+      "archive": "docs/work_history/review_loop/pr8162/originals/081-03_reversed_winding_hop.stderr.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/03_reversed_winding_hop.stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive": "docs/work_history/review_loop/pr8162/originals/082-03_reversed_winding_hop.stdout.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/03_unsandwiched_transfer.py",
+      "mode": "100644",
+      "blob": "71a0881d88cadd721190acfb4388a9504a3c494a",
+      "sha256": "abd33ceddf0c5dc0a24c8757e923a3d5c052f66957e1ebb964f0eab993ccd686",
+      "bytes": 8229,
+      "archive": "docs/work_history/review_loop/pr8162/originals/083-03_unsandwiched_transfer.py.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/03_unsandwiched_transfer.stderr.txt",
+      "mode": "100644",
+      "blob": "c37888d402c5e3cdb5508f092d5c466da9180232",
+      "sha256": "9ec749ee2cb7314856519d3ca814dc2321c96316ff6313f68c08d42018d97fc9",
+      "bytes": 1410,
+      "archive": "docs/work_history/review_loop/pr8162/originals/084-03_unsandwiched_transfer.stderr.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/03_unsandwiched_transfer.stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive": "docs/work_history/review_loop/pr8162/originals/085-03_unsandwiched_transfer.stdout.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/03_wrong_gauss_charge.py",
+      "mode": "100644",
+      "blob": "28f22b331b246e075109c9e1dbdd6171ec532763",
+      "sha256": "5606f39ac27244565bed7209ef1d09dde8b7bfeb607f025fa782bb563343027a",
+      "bytes": 8231,
+      "archive": "docs/work_history/review_loop/pr8162/originals/086-03_wrong_gauss_charge.py.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/03_wrong_gauss_charge.stderr.txt",
+      "mode": "100644",
+      "blob": "052f96cfba59792212fa2ba44cb41f0813e7268b",
+      "sha256": "2ab6820e1b0f933a5c44fa387568fe9801813f40c63310fbd5e3b44cb5d9cefe",
+      "bytes": 1064,
+      "archive": "docs/work_history/review_loop/pr8162/originals/087-03_wrong_gauss_charge.stderr.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/03_wrong_gauss_charge.stdout.txt",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive": "docs/work_history/review_loop/pr8162/originals/088-03_wrong_gauss_charge.stdout.txt.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/formula_mutations/RESULTS.json",
+      "mode": "100644",
+      "blob": "4e28f724cd49134d8f15e90bd3c8f257c5293952",
+      "sha256": "e212e10d67d39b689230157926e37a05867b5697b1c2e5463442a2effd28ee21",
+      "bytes": 5803,
+      "archive": "docs/work_history/review_loop/pr8162/originals/089-RESULTS.json.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-continuous-time-bridge-20260916/review/run_formula_mutations.py",
+      "mode": "100644",
+      "blob": "5703f4920f1b71576cc101e35dd33f6f2b38409d",
+      "sha256": "43accb9e8013131bb5f82544b88972cb16018bb6d6c32cce021ae9e5ca529967",
+      "bytes": 3347,
+      "archive": "docs/work_history/review_loop/pr8162/originals/090-run_formula_mutations.py.gz",
+      "encoding": "gzip; decoded bytes exact",
+      "disposition": "Preserve exact original as non-authoritative historical payload, including failed attempts, diagnostic changes, mutations, outputs and provisional personal claims; no audit/status promotion."
+    }
+  ]
+}

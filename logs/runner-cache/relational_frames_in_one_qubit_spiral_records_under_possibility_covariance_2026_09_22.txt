@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/relational_frames_in_one_qubit_spiral_records_under_possibility_covariance_2026_09_22.py
+runner_sha256: ace419a8585aefe97999730e0f722cfbee65c0356256dde3a659d40f7af4d6a9
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.25
+status: ok
+----- stdout -----
+A. the angles
+[PASS] three Pythagorean rotations: six distinct signed angles, and the plaquette lemma for the positive ones :: e(a) e(b) = e(c) e(d) only for {a,b} = {c,d}; 81 cases
+B. spiral records in a sweep
+[PASS] every site with three back-neighbours equals the spiral rule's unique output, for a spiral and a rotated spiral :: 27 sites each; the rule tries all assignments and both orientations
+[PASS] the rule does not care which back-neighbour is which (unsoldered), and commutes with rotating the sphere
+C. what the record carries
+[PASS] each site reads every neighbour's direction from the rotation that takes its value to the neighbour's :: the six signed angles label the six bond directions; decoding uses a supplied common normal and does not determine roles or an ice measure
+[PASS] under the static reading each core site is the unique covariant completion of its neighbours :: forward neighbours determine it too (the rule applied with the angles reversed)
+D. first formations
+[PASS] a lone child's value is fixed only up to rotation about its parent: two stationary spirals agree at the parent, differ at the child :: a covariant lone-child law is symmetric about the parent; its only atoms are the two poles
+[PASS] spiral steps are nonpolar; a later lone child misses a previously fixed finite target set :: zero probability also uses the source conditional-locality and fixed-target premises
+per_element: Exact arithmetic tests the declared angle, star or linear-system objects; no physical qubit encoding is inferred.
+per_site: Site checks cover only the explicit finite boxes, tori and samples printed above; boundary freedoms remain as stated in the note.
+per_mode: Analytic mode or symmetry arguments are conditional source proofs; finite runner cases alone do not prove untested universality.
+per_block: This is one bounded support result in a supplied relational record model, with the controls and counts declared above.
+lattice_wide: No physical infinite-volume conclusion is inferred; any whole-lattice or all-size statement is limited to the explicit source theorem hypotheses.
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

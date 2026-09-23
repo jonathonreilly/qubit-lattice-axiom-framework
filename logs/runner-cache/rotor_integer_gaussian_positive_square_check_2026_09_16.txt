@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/rotor_integer_gaussian_positive_square_check_2026_09_16.py
+runner_sha256: 28c122c6b6704ecce38da4768fa23767bbafb3ade2cd10d71589c70167e55b18
+input_fingerprint_sha256: 9943b43fd7f3fdad73dd30897cdf8302ac287668c06ff4213a80f597d5c85026
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.54
+status: ok
+----- stdout -----
+Integer boundary lattice, weighted Gaussian, and positive-square challenges completed.
+Full hard-cutoff discrepancy (expected): 17.0293
+Wrong divergence sign discrepancy: 24.1079
+per_element: executed — integer Smith invariants, weighted metrics and parity sums
+per_site: executed — literal periodic 3-cube incidence and plaquette boundaries
+per_mode: executed — positive-range matrix calculus and finite Fourier cutoff7
+per_block: executed — padded-core square identity with full-cutoff discrepancy retained
+lattice_wide: checked and not executed — uniform bounds and joint-limit/time arguments are written proofs; finite fixtures do not execute an infinite lattice
+TOTAL: PASS=37 FAIL=0
+
+----- stderr -----
+

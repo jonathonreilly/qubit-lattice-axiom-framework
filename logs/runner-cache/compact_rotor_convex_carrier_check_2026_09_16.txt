@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/compact_rotor_convex_carrier_check_2026_09_16.py
+runner_sha256: 0b8d9317f12bd47ab3d538002856cffa0a34377025591abfea2ce2e40d873d4b
+input_fingerprint_sha256: d7028784354f0527511c97504be0c1917ceea0503045f0ba98124ddad9960319
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.86
+status: ok
+----- stdout -----
+per_element: finite scalar clipped-extension derivative and matching checks
+per_site: declared finite adjacent-face bridge fixtures only
+per_mode: finite time Fourier carrier identities on the declared slice counts
+per_block: three completed finite diagnostic families; no exhaustive theorem execution
+lattice_wide: not executed; global comparison estimates are written proofs
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

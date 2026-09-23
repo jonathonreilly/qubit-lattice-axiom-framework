@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/ice_support_formation_nn_rules_vertex_bound_soldered_vertex_records_and_conditioning_2026_09_22.py
+runner_sha256: 86e143e96adb85ad2cce304590cb1fee3a6a94705180ef58f9797be61e8aa30d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+== 1. One vertex: independent identical link draws have a 5/16 ice bound ==
+[PASS] P(exactly 3 of 6 independent links occupied) = 20 p^3 (1-p)^3 <= 5/16, attained at p = 1/2 (grid of 65 p) :: link-first order: every link forms with no formed neighbour, the model stipulates independent identical draws
+[PASS] unsoldered, vertex-first: given the vertex record the six links are exchangeable, so again P(ice) <= 5/16 :: example p = 1/4 or 3/4 gives 135/1024; the maximum over 729 two-record rules is 5/16
+[PASS] soldered vertex records: the vertex is unrecorded with probability 0,0,0,0,1/8,3/8,11/16 when k = 0..6 links form first :: vertex-first the links copy and the ice rule always holds; the order decides the defect probability
+
+== 2. Two vertices sharing a link: defects move with the order ==
+[PASS] vertex-first: the shared link is unrecorded exactly when the two vertex records disagree on it, 1/2 :: the 200 agreeing record pairs are exactly the 200 ice configurations of the 11-link window
+[PASS] link-first: both vertices recorded (both stars ice) with probability 25/256 = (5/16)^2
+[PASS] conditional on no unrecorded site, both orders give the uniform law 1/200 on the window's ice configurations :: vertex-first: uniform on agreeing pairs; link-first: independent fair links conditioned on ice
+
+== 3. A plaquette of four vertices: a sweep avoids defects but not bias ==
+[PASS] sweep order (each vertex after the links of its earlier neighbours): no unrecorded site, total mass 1 :: every one of the 10016 ice configurations of the 20-link plaquette is reached
+[PASS] but the sweep law is not uniform: masses 1/8000 and 1/12000 against the uniform 1/10016 :: the closing vertex has 4 or 6 consistent records, so its choice weights the configurations unevenly
+[PASS] a record statistic separates them: P(the two plaquette links at V4 agree) differs, sweep against uniform :: sweep 62/125, uniform ice 124/313
+
+per_element: checked the finite configurations and arithmetic controls explicitly enumerated above
+per_site: checked the declared finite-window local rules under their supplied sampling conventions
+per_mode: checked and not executed — no infinite-volume Fourier or spectral mode computation is performed
+per_block: checked only the listed finite windows and orders; proofs beyond those runs are source arguments
+lattice_wide: checked and not executed — no infinite-lattice formation process or physical completion is simulated
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

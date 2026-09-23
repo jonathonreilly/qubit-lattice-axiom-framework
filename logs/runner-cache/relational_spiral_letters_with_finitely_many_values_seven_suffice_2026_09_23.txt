@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/relational_spiral_letters_with_finitely_many_values_seven_suffice_2026_09_23.py
+runner_sha256: 80666368990fc306ba781f40e8f68c1bc6d885227a9cbd15171dc9a2d6771ae2
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.43
+status: ok
+----- stdout -----
+A. the conditions on the angles
+[PASS] (30, 60, 150) degrees meet the three uniqueness conditions; (30, 90, 150) breaks the third :: distinct modulo 180, no equal shift under a 3-cycle, no angle the mean of the other two; six signed angles distinct
+B. the twelve-point spiral is stationary under the rule
+[PASS] on the 4-box every site with three back-neighbours is the rule's unique output; the record takes 12 values :: 27 sites, one output each; values are the 12 multiples of 30 degrees on the equator, in Q(sqrt 3)
+C. covariance and the frame reading
+[PASS] the rule commutes with a quarter turn of the sphere, and each core site reads its six bond directions :: a quarter turn about x maps the equator spiral to a spiral on another great circle and the outputs follow; the rotation to each neighbour is one of the six distinct signed angles
+D. the contrast
+[PASS] with (30, 90, 150) degrees the rule has a second output at the first site :: 30 + 150 = 2 x 90: reversing the orientation with the outer angles swapped also fits
+E. the fewest values
+[PASS] a spiral with m values needs m >= 7; the angles (1, 2, 4) x 360/7 meet every condition :: m with a valid triple up to 12: [7, 9, 10, 11, 12]; six distinct nonzero signed angles need m >= 7
+F. seven values, by the planar reduction
+[PASS] seven values suffice: the planar reduction matches the exact rule at twelve values and gives unique outputs at seven :: twelve-value box: planar and Q(sqrt 3) outputs agree at all 27 sites; seven-value 5-box: 64 sites, one output each, 7 values, six distinct signed angles for the frame reading
+per_element: Exact arithmetic tests the declared angle, star or linear-system objects; no physical qubit encoding is inferred.
+per_site: Site checks cover only the explicit finite boxes, tori and samples printed above; boundary freedoms remain as stated in the note.
+per_mode: Analytic mode or symmetry arguments are conditional source proofs; finite runner cases alone do not prove untested universality.
+per_block: This is one bounded support result in a supplied relational record model, with the controls and counts declared above.
+lattice_wide: No physical infinite-volume conclusion is inferred; any whole-lattice or all-size statement is limited to the explicit source theorem hypotheses.
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

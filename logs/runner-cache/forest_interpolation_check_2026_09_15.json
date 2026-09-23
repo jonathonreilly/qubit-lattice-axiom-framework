@@ -1,0 +1,101 @@
+{
+  "status": "finite_forest_checks_passed",
+  "N": 3,
+  "beta": 0.5,
+  "source": "independently assembled finite incidences within author check",
+  "raw_phase_interpolation_gauge_failure": 2.0,
+  "affine_phase_interpolation_gauge_error": 1.2658490090568385e-15,
+  "cases": [
+    {
+      "case": "compatible",
+      "chi": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "self_energy": 18.589333288823255,
+      "local_reserve": 3.48370055013617,
+      "normalized_connected": 6.182224375549606,
+      "imaginary_residual": 0.0,
+      "quadrature": {
+        "10": {
+          "real": 6.182224375549593,
+          "imag": 0.0,
+          "error": 1.3322676295501878e-14
+        },
+        "16": {
+          "real": 6.182224375549605,
+          "imag": 0.0,
+          "error": 8.881784197001252e-16
+        }
+      },
+      "minimum_interpolated_gram_eigenvalue": 4.0176393433882325,
+      "maximum_modulus_to_local_reserve_ratio": 3.3909453258602263e-06,
+      "maximum_tested_schur_contraction_ratio": 0.8656426765899907
+    },
+    {
+      "case": "overlapping_electric",
+      "chi": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "self_energy": 18.58933328882326,
+      "local_reserve": 3.48370055013617,
+      "normalized_connected": 1.0761295731204958,
+      "imaginary_residual": 0.0,
+      "quadrature": {
+        "10": {
+          "real": 1.0761343083733586,
+          "imag": 0.0,
+          "error": 4.735252862708705e-06
+        },
+        "16": {
+          "real": 1.076129573120491,
+          "imag": 0.0,
+          "error": 4.884981308350689e-15
+        }
+      },
+      "minimum_interpolated_gram_eigenvalue": 0.7960943163003884,
+      "maximum_modulus_to_local_reserve_ratio": 0.0004790956333242937,
+      "maximum_tested_schur_contraction_ratio": 0.8918599553152396
+    },
+    {
+      "case": "overlapping_both",
+      "chi": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "self_energy": 18.519309304954763,
+      "local_reserve": 3.48370055013617,
+      "normalized_connected": -0.9131954743347395,
+      "imaginary_residual": 0.0,
+      "quadrature": {
+        "10": {
+          "real": -0.9164906660987171,
+          "imag": 0.0,
+          "error": 0.003295191763977634
+        },
+        "16": {
+          "real": -0.9131954743371224,
+          "imag": 0.0,
+          "error": 2.382982700055436e-12
+        }
+      },
+      "minimum_interpolated_gram_eigenvalue": 0.18414625115851369,
+      "maximum_modulus_to_local_reserve_ratio": 0.0023382717916191733,
+      "maximum_tested_schur_contraction_ratio": 0.930977368066666
+    }
+  ],
+  "scope": "Finite floating checks and two quadrature orders. No interval certification, full gas estimate, physical scaling theorem, or independent review."
+}

@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/cut_completion_check_2026_09_15.py
+runner_sha256: f75b0f367e03d980f928a5431a463395f4d67c4024d620b275bf6a31d9eaa7e0
+input_fingerprint_sha256: 6fbd9978003c74edd28ddbe2f744ed4f792373bd129bc1a4e20251d77275a9fd
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 1.16
+status: ok
+----- stdout -----
+{
+  "status": "finite_cut_completion_checks_passed",
+  "combinatorics": {
+    "initial_graphs": 840,
+    "individual_possible_edge_additions": 4100,
+    "maximum_observed_steps": 4,
+    "maximum_observed_edges": 18,
+    "maximum_observed_source_legs": 6
+  },
+  "cut_identity": {
+    "sign_flip_endpoint_error": "0.0",
+    "analytic_derivative_max_error": "8.67644685175585598296650197715054057846712311e-53",
+    "average_identity_endpoint_error": "4.61408703862863358529855808028552676204009545e-55",
+    "integrated_cut_identity_error": "2.06532043255691234066807255514596471573001067e-54",
+    "left_real": "0.00000000201552045279952395447792948442481653706074835",
+    "left_imag": "0.0000000000377412074479138114709966514078192399641868469",
+    "maximum_tested_stability_ratio": 8.031240428683046e-08,
+    "zero_mixed_factor_derivative_included": true,
+    "prior_negative_cut_parameter": -0.4,
+    "scope": "45-digit identities at floating cochain entries, not 45-digit certification of those entries."
+  },
+  "scope": "Finite author checks; no all-order summation, interval arithmetic, infinite-volume physical state or independent review."
+}
+TOTAL: PASS=1 FAIL=0
+Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON
+per_element: finite cochain, signed phase, partition and derivative fixtures
+per_site: finite source-support configurations only
+per_mode: finite matrix/operator directions; no all-order or infinite-kernel execution
+per_block: one complete companion family; imported helpers are shared implementation, not independent evidence
+lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here
+
+----- stderr -----
+

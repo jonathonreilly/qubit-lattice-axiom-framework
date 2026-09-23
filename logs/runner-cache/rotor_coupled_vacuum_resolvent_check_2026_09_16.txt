@@ -1,0 +1,83 @@
+===== runner cache v1 =====
+runner: scripts/rotor_coupled_vacuum_resolvent_check_2026_09_16.py
+runner_sha256: 55e854cb746208a38162bd77945c938c73340468a23ace1d228db9e43b3fae13
+input_fingerprint_sha256: eba243d6365438c16b9e5567d555ad0da4882b9ddbec088053240932625fa234
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 2.42
+status: ok
+----- stdout -----
+{
+  "source_sha256": "55e854cb746208a38162bd77945c938c73340468a23ace1d228db9e43b3fae13",
+  "real_space_CAR_vs_momentum": {
+    "L": 3,
+    "fermion_modes": 54,
+    "occupied_modes": 27,
+    "one_photon_particle_hole_basis_entries": 37908,
+    "physical_current_band_matrix_error": 4.126162952233366e-16,
+    "vacuum_current_trace_error": 7.507862052449958e-16,
+    "paired_direct_CAR_norm_density": 0.005304443526256934,
+    "paired_momentum_norm_density": 0.005304443526256925,
+    "difference": 8.673617379884035e-18
+  },
+  "finite_reference_coefficients": [
+    {
+      "L": 4,
+      "volume": 64,
+      "paired_first_correction_norm_density": 0.0056577375543437735,
+      "paired_second_energy_coefficient_magnitude": 0.038618198538765476,
+      "photon_frequency_below_one_norm_density": 0.0,
+      "exact_node_count": 0,
+      "ward_max_error": 8.881784197001252e-16
+    },
+    {
+      "L": 6,
+      "volume": 216,
+      "paired_first_correction_norm_density": 0.00604012627951545,
+      "paired_second_energy_coefficient_magnitude": 0.04030210200699285,
+      "photon_frequency_below_one_norm_density": 0.0008529175801781833,
+      "exact_node_count": 2,
+      "ward_max_error": 2.7241126021806753e-15
+    },
+    {
+      "L": 8,
+      "volume": 512,
+      "paired_first_correction_norm_density": 0.006063992618211095,
+      "paired_second_energy_coefficient_magnitude": 0.040577694005953,
+      "photon_frequency_below_one_norm_density": 0.0005386579610557097,
+      "exact_node_count": 0,
+      "ward_max_error": 3.552713678800501e-15
+    },
+    {
+      "L": 10,
+      "volume": 1000,
+      "paired_first_correction_norm_density": 0.0061767868671155565,
+      "paired_second_energy_coefficient_magnitude": 0.04103547769848116,
+      "photon_frequency_below_one_norm_density": 0.0008171224310859141,
+      "exact_node_count": 0,
+      "ward_max_error": 1.7763568394002505e-15
+    },
+    {
+      "L": 12,
+      "volume": 1728,
+      "paired_first_correction_norm_density": 0.006256693946153074,
+      "paired_second_energy_coefficient_magnitude": 0.041305748383124875,
+      "photon_frequency_below_one_norm_density": 0.0008907064906669946,
+      "exact_node_count": 2,
+      "ward_max_error": 3.552713678800501e-15
+    }
+  ],
+  "seconds": 2.107771873474121
+}
+PASS: direct L3 real-space CAR versus momentum calculation
+PASS: five finite reference coefficient grids
+PASS: exact finite-node counts at L6 and L12
+per_element: executed — direct L3 real-space CAR versus momentum calculation
+per_site: executed — finite supplied-reference configurations at declared cutoffs
+per_mode: executed — finite matrices or Fourier grids described in the JSON evidence
+per_block: executed — exact finite-node counts at L6 and L12
+lattice_wide: checked and not executed — written uniform bounds and limit proofs; no actual interacting infinite-volume state executed
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

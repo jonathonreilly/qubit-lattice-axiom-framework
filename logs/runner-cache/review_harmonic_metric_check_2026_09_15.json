@@ -1,0 +1,60 @@
+{
+  "status": "exact_integer_normalization_checks",
+  "rows": [
+    {
+      "L": 3,
+      "vertices": 27,
+      "links": 81,
+      "cycle_dimension": 55,
+      "harmonic_dimension": 3,
+      "integer_identities": "exact",
+      "electric_weights": [
+        2,
+        3,
+        5
+      ],
+      "tangent_metric": [
+        "2/3",
+        "3/3",
+        "5/3"
+      ]
+    },
+    {
+      "L": 4,
+      "vertices": 64,
+      "links": 192,
+      "cycle_dimension": 129,
+      "harmonic_dimension": 3,
+      "integer_identities": "exact",
+      "electric_weights": [
+        2,
+        3,
+        5
+      ],
+      "tangent_metric": [
+        "2/4",
+        "3/4",
+        "5/4"
+      ]
+    },
+    {
+      "L": 5,
+      "vertices": 125,
+      "links": 375,
+      "cycle_dimension": 251,
+      "harmonic_dimension": 3,
+      "integer_identities": "exact",
+      "electric_weights": [
+        2,
+        3,
+        5
+      ],
+      "tangent_metric": [
+        "2/5",
+        "3/5",
+        "5/5"
+      ]
+    }
+  ],
+  "scope": "author cross-check; no independent audit"
+}

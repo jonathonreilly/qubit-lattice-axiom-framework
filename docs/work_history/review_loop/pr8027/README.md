@@ -1,0 +1,3 @@
+# PR8027 original recovery
+
+All 73 original path versions, including the complete 65-file campaign packet, are preserved byte-exact as deterministic gzip payloads. The manifest records original path, Git mode/blob/head, original SHA-256 and stored archive SHA-256. Decode gzip and verify the original SHA-256. Original full root and primary derivations, controls, failed attempts, raw outputs and timing/review records are historical evidence, not new executions or present review authority. The manifest and archived payloads preserve original source independently of branch retention. Live source surfaces preserve the complete geodesic argument and the primary planar next-branch corollary.

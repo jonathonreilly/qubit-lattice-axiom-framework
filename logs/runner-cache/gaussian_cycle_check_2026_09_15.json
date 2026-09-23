@@ -1,0 +1,58 @@
+{
+  "status": "finite_author_checks_passed",
+  "independent_review": false,
+  "source_trace": {
+    "random": [
+      {
+        "trial": 0,
+        "insertions": 491,
+        "maximum_ratio": 0.034948686348688786
+      },
+      {
+        "trial": 1,
+        "insertions": 491,
+        "maximum_ratio": 0.18205300371252423
+      },
+      {
+        "trial": 2,
+        "insertions": 491,
+        "maximum_ratio": 0.015548748985157082
+      },
+      {
+        "trial": 3,
+        "insertions": 491,
+        "maximum_ratio": 0.04621072625470316
+      }
+    ],
+    "sharp_value": 0.003200000000000001,
+    "sharp_bound": 0.0032000000000000006,
+    "wrong_rho_power_rejected": true
+  },
+  "actual_cochain_fixture": {
+    "fixture_beta": 0.5,
+    "fixture_N": 3,
+    "normalized_marks_replicated": false,
+    "fixed_field_trace_error": 1.9160647057153807e-17,
+    "fixed_field_bound_maximum_ratio": 0.7924748336848265,
+    "gaussian_quadrature_order": 22,
+    "diagnostic_covariance_scale": 0.04,
+    "gaussian_characteristic_error": 4.107829973248212e-15,
+    "missing_gaussian_diagonal_difference": 0.6126959118971752,
+    "full_unscaled_covariance_source_remainder": "0.00000000000019650569803338958150213621741823377763276872277402083",
+    "full_source_trace_bound": 3.4789659006528126e-07,
+    "source_scope": "fixed finite cochain h, not a macroscopic sequence"
+  },
+  "residual_negative_control": {
+    "signed": 4.0,
+    "absolute_sum": 16.0,
+    "positive_indicator_residual": 10.0,
+    "arbitrary_bounded_residual_extension_rejected": true
+  },
+  "fixed_parameter_operator_bound": {
+    "symmetric_endpoint_x": "16384.0",
+    "rho_upper": "4.82675048881779607622220717267834356437720000297232566931148e-34",
+    "example_beta": 512,
+    "example_N": 4096,
+    "claim_scope": "operator and restricted loop bound only"
+  }
+}

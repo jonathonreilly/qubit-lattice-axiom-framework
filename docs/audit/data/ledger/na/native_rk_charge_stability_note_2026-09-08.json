@@ -25,7 +25,7 @@
   "deps": [
     "native_dynamical_cycle_fermion_z2_dictionary_note_2026-09-08"
   ],
-  "direct_in_degree": 2,
+  "direct_in_degree": 4,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
@@ -36,7 +36,7 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 3.0,
+  "load_bearing_score": 5.17,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -57,6 +57,6 @@
   },
   "runner_path": "scripts/native_rk_charge_stability_2026_09_08.py",
   "title": "Static signed-pair support and stability under native hopping",
-  "transitive_descendants": 3,
+  "transitive_descendants": 8,
   "verdict_rationale": null
 }

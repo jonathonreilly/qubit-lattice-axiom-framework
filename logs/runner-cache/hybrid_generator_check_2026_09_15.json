@@ -1,0 +1,147 @@
+{
+  "status": "finite_checks_passed",
+  "families": [
+    {
+      "N": 2,
+      "beta": 0.25,
+      "tau": 0.015625,
+      "clock_configurations": 32,
+      "cutoff_comparison": 6.26353821250292e-138,
+      "max_quasiperiod_error": 1.9108507442221083e-15,
+      "max_stationary_jump_source_error": 3.0301396384806476e-17,
+      "rates": [
+        0.26939134680809096,
+        0.26939134680809096,
+        0.26939134680809096,
+        0.2693913468080908,
+        0.2693913468080908,
+        0.2693913468080908
+      ],
+      "rate_bounds": [
+        0.2696024440494707,
+        0.2696024440494707,
+        0.2696024440494707,
+        0.2696024440494707,
+        0.2696024440494707,
+        0.2696024440494707
+      ],
+      "taylor": [
+        {
+          "scale": 1,
+          "integrated_absolute_bound": 0.18227781039428226,
+          "cubic_bound": 0.18605622257282464
+        },
+        {
+          "scale": 0.5,
+          "integrated_absolute_bound": 0.023124279284086502,
+          "cubic_bound": 0.02325702782160308
+        },
+        {
+          "scale": 0.25,
+          "integrated_absolute_bound": 0.0029012649138791292,
+          "cubic_bound": 0.002907128477700385
+        },
+        {
+          "scale": 0.125,
+          "integrated_absolute_bound": 0.0003629943610689594,
+          "cubic_bound": 0.00036339105971254813
+        }
+      ]
+    },
+    {
+      "N": 3,
+      "beta": 0.5,
+      "tau": 0.015625,
+      "clock_configurations": 243,
+      "cutoff_comparison": 0.0,
+      "max_quasiperiod_error": 4.24672712674833e-15,
+      "max_stationary_jump_source_error": 2.649650572714409e-17,
+      "rates": [
+        0.07173838492160871,
+        0.0717383849216087,
+        0.07173838492160868,
+        0.07173838492160861,
+        0.07173838492160851,
+        0.07173838492160853
+      ],
+      "rate_bounds": [
+        0.07268547783744798,
+        0.07268547783744798,
+        0.07268547783744798,
+        0.07268547783744798,
+        0.07268547783744798,
+        0.07268547783744798
+      ],
+      "taylor": [
+        {
+          "scale": 1,
+          "integrated_absolute_bound": 0.03364011080286077,
+          "cubic_bound": 0.03451923081381763
+        },
+        {
+          "scale": 0.5,
+          "integrated_absolute_bound": 0.0042451924889338015,
+          "cubic_bound": 0.004314903851727204
+        },
+        {
+          "scale": 0.25,
+          "integrated_absolute_bound": 0.0005319130107797189,
+          "cubic_bound": 0.0005393629814659005
+        },
+        {
+          "scale": 0.125,
+          "integrated_absolute_bound": 6.652869034006473e-05,
+          "cubic_bound": 6.742037268323756e-05
+        }
+      ]
+    },
+    {
+      "N": 4,
+      "beta": 0.8,
+      "tau": 0.015625,
+      "clock_configurations": 1024,
+      "cutoff_comparison": 0.0,
+      "max_quasiperiod_error": 1.2676965517960968e-14,
+      "max_stationary_jump_source_error": 1.5530153940622712e-17,
+      "rates": [
+        0.013670107618775611,
+        0.013670107618775632,
+        0.01367010761877561,
+        0.013670107618775594,
+        0.013670107618775573,
+        0.013670107618775573
+      ],
+      "rate_bounds": [
+        0.015077045302267366,
+        0.015077045302267366,
+        0.015077045302267366,
+        0.015077045302267366,
+        0.015077045302267366,
+        0.015077045302267366
+      ],
+      "taylor": [
+        {
+          "scale": 1,
+          "integrated_absolute_bound": 0.07133036608648585,
+          "cubic_bound": 0.08339918835051649
+        },
+        {
+          "scale": 0.5,
+          "integrated_absolute_bound": 0.009314816948698585,
+          "cubic_bound": 0.010424898543814561
+        },
+        {
+          "scale": 0.25,
+          "integrated_absolute_bound": 0.0011771945417875188,
+          "cubic_bound": 0.0013031123179768202
+        },
+        {
+          "scale": 0.125,
+          "integrated_absolute_bound": 0.0001475537222103159,
+          "cubic_bound": 0.00016288903974710252
+        }
+      ]
+    }
+  ],
+  "scope": "Three finite free three-cubes; no infinite-volume or mixing claim, interval certificate, or independent review."
+}

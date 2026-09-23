@@ -1,0 +1,87 @@
+===== runner cache v1 =====
+runner: scripts/operator_source_check_2026_09_15.py
+runner_sha256: f2d3502d44f5b81d6fbf1a567ebe405e85a0e9c32980cec7083b48788a1c7eb9
+input_fingerprint_sha256: cef25be0c188ddcfff9d358e588185c41e1af5bafdd230b5918859c9e212ebbd
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+{
+  "status": "finite_cycle_and_source_checks_passed",
+  "cycles": {
+    "matrix_rows": [
+      {
+        "shape": [
+          2,
+          2
+        ],
+        "distinct_cycle": 0.0006757898849404484,
+        "trace_four": 0.008752310235878009,
+        "logdet_sum": 0.004143009711985245,
+        "majorant": 0.005713534524781652
+      },
+      {
+        "shape": [
+          3,
+          4
+        ],
+        "distinct_cycle": -0.0023133224190129147,
+        "trace_four": 0.012948667615181335,
+        "logdet_sum": 0.006140643501328894,
+        "majorant": 0.008162198579389263
+      },
+      {
+        "shape": [
+          5,
+          6
+        ],
+        "distinct_cycle": 0.0008059070626487901,
+        "trace_four": 0.011967547678751122,
+        "logdet_sum": 0.005700938215401135,
+        "majorant": 0.009629328631886737
+      }
+    ],
+    "compatible_distinct_cycle": -0.3754651225367022,
+    "compatible_unrestricted_trace": 1.2661941297744947,
+    "repeated_label_positivity_negative_control": true,
+    "half_measure_rho_upper": "0.0000000235121163383395000975367881170832722589356952988929446757864395228776",
+    "orientation_included_upper": "0.00000004702423267667900019507357623416654451787139059778588935157287904575519"
+  },
+  "source_scales": [
+    [
+      32,
+      0.28636790022586445,
+      0.5690627605083896,
+      1.4584597396413765
+    ],
+    [
+      64,
+      0.2858780747295203,
+      0.5708381338035411,
+      2.9119301577470345
+    ],
+    [
+      128,
+      0.2857552568690056,
+      0.5712810254912946,
+      5.821358290585155
+    ],
+    [
+      256,
+      0.2857245299938775,
+      0.5713916889114424,
+      11.641464655650331
+    ]
+  ]
+}
+TOTAL: PASS=1 FAIL=0
+Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON
+per_element: finite cochain, signed phase, partition and derivative fixtures
+per_site: finite source-support configurations only
+per_mode: finite matrix/operator directions; no all-order or infinite-kernel execution
+per_block: one complete companion family; imported helpers are shared implementation, not independent evidence
+lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here
+
+----- stderr -----
+

@@ -1,0 +1,71 @@
+===== runner cache v1 =====
+runner: scripts/graph_source_check_2026_09_15.py
+runner_sha256: 18089ffce3b2b57e98f0f27223c69cef442feaeb7db271fe9a9801fbd74b8eca
+input_fingerprint_sha256: 6fbd9978003c74edd28ddbe2f744ed4f792373bd129bc1a4e20251d77275a9fd
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 2.83
+status: ok
+----- stdout -----
+{
+  "status": "finite_graph_source_checks_passed",
+  "patterns": {
+    "connected_bond_state_patterns": 624,
+    "parity_matched_remainder_patterns": 23556,
+    "maximum_augmented_edges": 28,
+    "minimum_spatial_one_minus_alpha": 0.00033333333333340764,
+    "minimum_actual_source_power": 3.928571428571429,
+    "unmarked_bridge_negative_control": true
+  },
+  "finite_group_holder": [
+    {
+      "group_order": 5,
+      "graph_edges": 10,
+      "actual": 0.9070277462346402,
+      "bound": 5.763564351048295
+    },
+    {
+      "group_order": 5,
+      "graph_edges": 10,
+      "actual": 0.22338057774508885,
+      "bound": 1.5616776644096708
+    },
+    {
+      "group_order": 5,
+      "graph_edges": 10,
+      "actual": 1.8627686893485502,
+      "bound": 8.252718883398817
+    }
+  ],
+  "physical_bond_source_identities": [
+    {
+      "case": "compatible",
+      "subtracted_real": "0.0000086022765984591953686233032991853372109424952690889979218819",
+      "subtracted_imag": "0.0000178682225172177665154516992304211506419863939720768866712081",
+      "parity_expansion_error": "1.5943287432287185219378889765419914704306309299472034900353e-60"
+    },
+    {
+      "case": "electric_overlap",
+      "subtracted_real": "0.000172664755985437844854132520266320929861121794790933051001801",
+      "subtracted_imag": "0.000353142809648120766369524230961694343966914824747022729686723",
+      "parity_expansion_error": "3.85188592194234153525292580876315531805230783408772528090549e-62"
+    },
+    {
+      "case": "double_overlap",
+      "subtracted_real": "0.000130851247670164780134896683767787774148779677779512133665638",
+      "subtracted_imag": "0.00026644385178873583775136242152538997118588936444494358389831",
+      "parity_expansion_error": "4.14357505564478046797668574138756436199195840655331412778351e-62"
+    }
+  ],
+  "scope": "Exhaustive four-label parity bookkeeping, finite tree mixtures and source identities. No infinite-volume numerical limit, all-order coefficient bound, interval arithmetic or independent review."
+}
+TOTAL: PASS=1 FAIL=0
+Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON
+per_element: finite cochain, signed phase, partition and derivative fixtures
+per_site: finite source-support configurations only
+per_mode: finite matrix/operator directions; no all-order or infinite-kernel execution
+per_block: one complete companion family; imported helpers are shared implementation, not independent evidence
+lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here
+
+----- stderr -----
+

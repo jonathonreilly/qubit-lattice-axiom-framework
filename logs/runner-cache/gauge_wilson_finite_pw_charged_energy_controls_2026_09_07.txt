@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py
+runner_sha256: 21ebc8258ba0db6b39f502261bfa416e89ee28d882d46f45aae4ecb0f677e8d7
+input_fingerprint_sha256: f82c11ca64ceb68df734371f18e5e483d249c78c4c2555e1a085aac832ad7a7c
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.31
+status: ok
+----- stdout -----
+PASS gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py
+per_element: 21 checks; 20 exact shell minima for R=1..20 and one scalar generator-normalization discriminator; no site dynamics
+per_site: 0 checks; checked and not executed — no site-resolved state or dynamical measurement; finite graph incidence is classified per_block
+per_mode: 7 checks; six exact abstract 3-by-3 compression predicates and one 2-by-2 restricted-ground Rayleigh adverse example; not an SU3 spectrum
+per_block: 12 checks; nine finite cubic-box n=2,3,4 incidence/touching/distinct-path predicates and three scalar acceptance/denominator predicates
+lattice_wide: 0 checks; checked and not executed — finite boxes and scalar controls do not execute arbitrary-volume Hamiltonian energy bounds; the written proof supplies uniformity
+TOTAL: 40
+seconds: 0.2277942500077188; rss_MiB: 60.609375
+source_sha256: 21ebc8258ba0db6b39f502261bfa416e89ee28d882d46f45aae4ecb0f677e8d7
+
+----- stderr -----
+

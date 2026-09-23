@@ -32,7 +32,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 8.907,
+  "load_bearing_score": 9.476,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -53,6 +53,6 @@
   },
   "runner_path": "scripts/fermion_u1_quantum_links_gauss_law_support_condition_check_2026_09_03.py",
   "title": "The fermion's `U(1)` coupled to quantum links: Gauss's law as a support condition among records",
-  "transitive_descendants": 59,
+  "transitive_descendants": 88,
   "verdict_rationale": null
 }

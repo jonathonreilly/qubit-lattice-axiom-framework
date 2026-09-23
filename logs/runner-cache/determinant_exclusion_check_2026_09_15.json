@@ -1,0 +1,50 @@
+{
+  "status": "finite_author_checks_passed",
+  "independent_review": false,
+  "gram_trace_cases": 240,
+  "gram_trace_error": 8.326672684688674e-16,
+  "cross_minor_cases": 1392,
+  "cross_minor_trace_error": 8.326672684688674e-16,
+  "commuting_map_error": 6.661338147750939e-16,
+  "derivative_point_checks": 7488,
+  "maximum_derivative_bound_ratio": 1.0,
+  "non_psd_cube_determinant": -1.0,
+  "physical_cochain_triple": [
+    0,
+    6,
+    1
+  ],
+  "shared_resource_counts": [
+    0,
+    3,
+    0
+  ],
+  "physical_connected_reference": {
+    "real": -2.4152690339152275e-08,
+    "imag": -9.899838659532824e-12
+  },
+  "bkar_quadrature": [
+    {
+      "order": 12,
+      "absolute_error": 3.309353478762453e-24
+    },
+    {
+      "order": 20,
+      "absolute_error": 9.926337743129382e-24
+    },
+    {
+      "order": 28,
+      "absolute_error": 6.300789822181265e-26
+    }
+  ],
+  "normalization_control": {
+    "single_resource_without_boost": 0.5,
+    "unnormalized_trace_identity_at_n3": 8.0
+  },
+  "limitations": [
+    "finite identities only",
+    "shared float cochain fixture",
+    "no derivative operator source theorem",
+    "no physical all-order convergence"
+  ]
+}

@@ -1,0 +1,380 @@
+===== runner cache v1 =====
+runner: scripts/local_spectrum_check_2026_09_15.py
+runner_sha256: 26b293b3657e49c0abb2286dea59f424da2141fa930e78573d25db959837bfc1
+input_fingerprint_sha256: 50a12e38efc1c9ae1827158bc66b79c901aa38662624a09a68f22a853d26a615
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.90
+status: ok
+----- stdout -----
+{
+  "status": "PASS_personal_bounded_source_and_form_challenges",
+  "native_forward_moves": 5760,
+  "rotation_checks": [
+    {
+      "theta": 0.0,
+      "commutator_max": 5.385614148491578e-15,
+      "radial_error": 1.3322676295501878e-14
+    },
+    {
+      "theta": 0.7,
+      "commutator_max": 5.385614148491578e-15,
+      "radial_error": 1.541571755377705e-14
+    },
+    {
+      "theta": 3.141592653589793,
+      "commutator_max": 5.385614148491578e-15,
+      "radial_error": 2.2204460492503146e-16
+    }
+  ],
+  "fixed_marker_form_checks": [
+    {
+      "M": 0,
+      "dimension": 7,
+      "theta": 0.9,
+      "J": 1.7,
+      "form_error": 1.2490009027033011e-15,
+      "unique_swap_edges": 0,
+      "bottom_above_full_threshold": 1.1645987609096047,
+      "analytic_lower": 0.6553907600328087
+    },
+    {
+      "M": 1,
+      "dimension": 56,
+      "theta": 0.9,
+      "J": 1.7,
+      "form_error": 2.6645352591003757e-15,
+      "unique_swap_edges": 42,
+      "bottom_above_full_threshold": 1.5481253308337464,
+      "analytic_lower": 0.434198465226641
+    },
+    {
+      "M": 2,
+      "dimension": 224,
+      "theta": 0.9,
+      "J": 1.7,
+      "form_error": 8.881784197001252e-15,
+      "unique_swap_edges": 280,
+      "bottom_above_full_threshold": 1.997937096632325,
+      "analytic_lower": 0.3246351393163095
+    },
+    {
+      "M": 3,
+      "dimension": 560,
+      "theta": 0.9,
+      "J": 1.7,
+      "form_error": 9.769962616701378e-15,
+      "unique_swap_edges": 840,
+      "bottom_above_full_threshold": 2.5038827016922167,
+      "analytic_lower": 0.2592239498017098
+    }
+  ],
+  "source_moments": [
+    {
+      "theta": 0.0,
+      "channel": "symmetric",
+      "power": 0,
+      "actual": 1.0000000000000002,
+      "expected": 1.0
+    },
+    {
+      "theta": 0.0,
+      "channel": "symmetric",
+      "power": 2,
+      "actual": 12.000000000000004,
+      "expected": 12.0
+    },
+    {
+      "theta": 0.0,
+      "channel": "symmetric",
+      "power": 4,
+      "actual": 288.00000000000017,
+      "expected": 288.0
+    },
+    {
+      "theta": 0.0,
+      "channel": "symmetric",
+      "power": 6,
+      "actual": 8640.000000000004,
+      "expected": 8640.0
+    },
+    {
+      "theta": 0.0,
+      "channel": "symmetric",
+      "power": 8,
+      "actual": 290304.0000000001,
+      "expected": 290304.0
+    },
+    {
+      "theta": 0.0,
+      "channel": "orthogonal",
+      "power": 0,
+      "actual": 0.9999999999999998,
+      "expected": 1
+    },
+    {
+      "theta": 0.0,
+      "channel": "orthogonal",
+      "power": 2,
+      "actual": 5.999999999999999,
+      "expected": 6
+    },
+    {
+      "theta": 0.0,
+      "channel": "orthogonal",
+      "power": 4,
+      "actual": 89.99999999999997,
+      "expected": 90
+    },
+    {
+      "theta": 0.0,
+      "channel": "orthogonal",
+      "power": 6,
+      "actual": 1889.999999999999,
+      "expected": 1890
+    },
+    {
+      "theta": 0.0,
+      "channel": "orthogonal",
+      "power": 8,
+      "actual": 47628.0,
+      "expected": 47628
+    },
+    {
+      "theta": 0.7,
+      "channel": "symmetric",
+      "power": 0,
+      "actual": 1.0000000000000002,
+      "expected": 1.0
+    },
+    {
+      "theta": 0.7,
+      "channel": "symmetric",
+      "power": 2,
+      "actual": 10.589053123706936,
+      "expected": 10.58905312370693
+    },
+    {
+      "theta": 0.7,
+      "channel": "symmetric",
+      "power": 4,
+      "actual": 224.25609211337513,
+      "expected": 224.25609211337502
+    },
+    {
+      "theta": 0.7,
+      "channel": "symmetric",
+      "power": 6,
+      "actual": 5936.64918175861,
+      "expected": 5936.6491817586075
+    },
+    {
+      "theta": 0.7,
+      "channel": "symmetric",
+      "power": 8,
+      "actual": 176017.78197486897,
+      "expected": 176017.7819748689
+    },
+    {
+      "theta": 0.7,
+      "channel": "orthogonal",
+      "power": 0,
+      "actual": 0.9999999999999998,
+      "expected": 1
+    },
+    {
+      "theta": 0.7,
+      "channel": "orthogonal",
+      "power": 2,
+      "actual": 6.0,
+      "expected": 6
+    },
+    {
+      "theta": 0.7,
+      "channel": "orthogonal",
+      "power": 4,
+      "actual": 90.0,
+      "expected": 90
+    },
+    {
+      "theta": 0.7,
+      "channel": "orthogonal",
+      "power": 6,
+      "actual": 1890.0,
+      "expected": 1890
+    },
+    {
+      "theta": 0.7,
+      "channel": "orthogonal",
+      "power": 8,
+      "actual": 47628.0,
+      "expected": 47628
+    },
+    {
+      "theta": 3.141592653589793,
+      "channel": "symmetric",
+      "power": 0,
+      "actual": 1.0000000000000002,
+      "expected": 1.0
+    },
+    {
+      "theta": 3.141592653589793,
+      "channel": "symmetric",
+      "power": 2,
+      "actual": 4.4992793479855745e-32,
+      "expected": 4.499279347985573e-32
+    },
+    {
+      "theta": 3.141592653589793,
+      "channel": "symmetric",
+      "power": 4,
+      "actual": 4.0487029302418976e-63,
+      "expected": 4.0487029302418965e-63
+    },
+    {
+      "theta": 3.141592653589793,
+      "channel": "symmetric",
+      "power": 6,
+      "actual": 4.554061370041509e-94,
+      "expected": 4.554061370041509e-94
+    },
+    {
+      "theta": 3.141592653589793,
+      "channel": "symmetric",
+      "power": 8,
+      "actual": 5.737198396072262e-125,
+      "expected": 5.737198396072261e-125
+    },
+    {
+      "theta": 3.141592653589793,
+      "channel": "orthogonal",
+      "power": 0,
+      "actual": 0.9999999999999998,
+      "expected": 1
+    },
+    {
+      "theta": 3.141592653589793,
+      "channel": "orthogonal",
+      "power": 2,
+      "actual": 5.999999999999999,
+      "expected": 6
+    },
+    {
+      "theta": 3.141592653589793,
+      "channel": "orthogonal",
+      "power": 4,
+      "actual": 90.0,
+      "expected": 90
+    },
+    {
+      "theta": 3.141592653589793,
+      "channel": "orthogonal",
+      "power": 6,
+      "actual": 1890.0,
+      "expected": 1890
+    },
+    {
+      "theta": 3.141592653589793,
+      "channel": "orthogonal",
+      "power": 8,
+      "actual": 47628.0,
+      "expected": 47628
+    }
+  ],
+  "response_integrals": [
+    {
+      "h": 0.0,
+      "time": 0.1,
+      "error": 0.0
+    },
+    {
+      "h": 0.0,
+      "time": 1.0,
+      "error": 0.0
+    },
+    {
+      "h": 0.0,
+      "time": 3.0,
+      "error": 0.0
+    },
+    {
+      "h": 0.8,
+      "time": 0.1,
+      "error": 3.3306690738754696e-16
+    },
+    {
+      "h": 0.8,
+      "time": 1.0,
+      "error": 2.2887833992611187e-16
+    },
+    {
+      "h": 0.8,
+      "time": 3.0,
+      "error": 3.1031676915590914e-17
+    },
+    {
+      "h": 3.4641016151377544,
+      "time": 0.1,
+      "error": 1.1102230246251565e-16
+    },
+    {
+      "h": 3.4641016151377544,
+      "time": 1.0,
+      "error": 2.5257955065251657e-17
+    },
+    {
+      "h": 3.4641016151377544,
+      "time": 3.0,
+      "error": 8.341116186757555e-17
+    }
+  ],
+  "checks": {
+    "word transition flips exactly one actual edge": 5760,
+    "physical nearest-neighbor edge": 207360,
+    "native hopping factor nonzero": 5760,
+    "native hop exact edge image": 5760,
+    "native hop unit modulus": 5760,
+    "literal full-background endpoint charge": 17280,
+    "literal native endpoint amplitude has closed parity formula": 5760,
+    "explicit closed frame gives negative hopping": 5760,
+    "physical translated-complemented Z action becomes anchor translation": 2880,
+    "three-edge staggered local source maps to uniform color": 24,
+    "full word tensor color rotation is unitary": 1,
+    "actual axis word Hamiltonian conserves rotated color count on diagonal": 3,
+    "actual word matrix radial action equals exact half-line": 3,
+    "symmetric local source is a reducing radial channel": 3,
+    "off-line momentum breaks the color conservation used by the theorem": 1,
+    "coefficient-level telescope including color sequence": 847,
+    "weighted telescoping Cauchy inequality": 847,
+    "complete endpoint boundary and swap form equals actual matrix": 4,
+    "summed telescoping forms use each allowed energy edge at most once": 4,
+    "every u-marker swap edge recovered exactly once by insertion base": 4,
+    "finite full marker sector obeys analytic uniform lower bound": 4,
+    "untruncated closed-walk moment agrees with source spectral formula": 30,
+    "sine spectral integral agrees with Bessel response": 9
+  },
+  "seconds": 0.5439267909969203,
+  "limits": [
+    "same author; reused Block9 native operator definitions identified explicitly",
+    "finite matrix checks challenge analytic infinite-sector bounds",
+    "uniform M-sector lower bound is from injective edge counting and Cauchy-Schwarz",
+    "local-source spectral invisibility only on specified diagonal line and background",
+    "near-line Sylvester leakage bound analytic, no numerical certificate",
+    "no physical vacuum selection or independent audit"
+  ],
+  "sha256": {
+    "scripts/local_spectrum_check_2026_09_15.py": "26b293b3657e49c0abb2286dea59f424da2141fa930e78573d25db959837bfc1",
+    "scripts/polarized_word_check_2026_09_15.py": "0227179a994d587740dea92b182d7b98467dceb10c1512b636655bcb73888362",
+    "docs/LOCAL_SOURCE_DIAGONAL_SPECTRAL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md": "a3a855d8f48556d991537d5bd5aefe2d9d9a9fd9a0b561311c2d2921ee9c07a1"
+  }
+}
+TOTAL: PASS=1 FAIL=0
+Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON
+per_element: shared native-hop definitions and local-source identities
+per_site: finite polarized word fixtures
+per_mode: finite source spectral and response fixtures; support-dependent bounds remain analytical
+per_block: one complete companion family; imported helpers are shared implementation, not independent evidence
+lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here
+
+----- stderr -----
+

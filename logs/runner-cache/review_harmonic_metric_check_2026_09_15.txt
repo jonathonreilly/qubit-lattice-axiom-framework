@@ -1,0 +1,79 @@
+===== runner cache v1 =====
+runner: scripts/review_harmonic_metric_check_2026_09_15.py
+runner_sha256: e024c209365025b24e46b9312309683753cb63d6b314094a82a5957b18b26737
+input_fingerprint_sha256: 3ebb5f823f2dfa0884eec45812cb034f7839875abaff33e2c89aa4807efa2df6
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+{
+  "status": "exact_integer_normalization_checks",
+  "rows": [
+    {
+      "L": 3,
+      "vertices": 27,
+      "links": 81,
+      "cycle_dimension": 55,
+      "harmonic_dimension": 3,
+      "integer_identities": "exact",
+      "electric_weights": [
+        2,
+        3,
+        5
+      ],
+      "tangent_metric": [
+        "2/3",
+        "3/3",
+        "5/3"
+      ]
+    },
+    {
+      "L": 4,
+      "vertices": 64,
+      "links": 192,
+      "cycle_dimension": 129,
+      "harmonic_dimension": 3,
+      "integer_identities": "exact",
+      "electric_weights": [
+        2,
+        3,
+        5
+      ],
+      "tangent_metric": [
+        "2/4",
+        "3/4",
+        "5/4"
+      ]
+    },
+    {
+      "L": 5,
+      "vertices": 125,
+      "links": 375,
+      "cycle_dimension": 251,
+      "harmonic_dimension": 3,
+      "integer_identities": "exact",
+      "electric_weights": [
+        2,
+        3,
+        5
+      ],
+      "tangent_metric": [
+        "2/5",
+        "3/5",
+        "5/5"
+      ]
+    }
+  ],
+  "scope": "author cross-check; no independent audit"
+}
+TOTAL: PASS=1 FAIL=0
+Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON
+per_element: Exact integer incidence, cycle-basis, plaquette and weighted harmonic-metric identities.
+per_site: Periodic cubic coordinate fixtures L=3,4,5.
+per_mode: Three harmonic directions and complete finite cycle-coordinate identities; no spectral solver or slow-spectrum/cutoff-refinement run.
+per_block: Three exact integer normalization fixtures with electric weights2,3,5.
+lattice_wide: Not executed: the all-L metric theorem relies on the written proof.
+
+----- stderr -----
+

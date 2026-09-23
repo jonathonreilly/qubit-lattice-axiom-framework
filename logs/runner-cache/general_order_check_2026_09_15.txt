@@ -1,0 +1,82 @@
+===== runner cache v1 =====
+runner: scripts/general_order_check_2026_09_15.py
+runner_sha256: 620f99cd7f3cd42b91efcb22cbfa5c5a79fb668b812a128180404d049a18d7d7
+input_fingerprint_sha256: 92df30cce046ad7e0325cea01a36f74df3fcba2e3f5907842ef7bb7b26453f26
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+{
+  "status": "finite_author_checks_passed",
+  "independent_review": false,
+  "nonreversible_positive_matrix": [
+    [
+      "5/12",
+      "5/12",
+      "1/6"
+    ],
+    [
+      "1/4",
+      "1/4",
+      "1/2"
+    ],
+    [
+      "1/3",
+      "1/3",
+      "1/3"
+    ]
+  ],
+  "exact_square_is_independent": true,
+  "two_site_reversibility_defect": "1/6",
+  "reversible_controls": [
+    {
+      "lam": "-1/4",
+      "square_projection_residual_squared_norm": "1/128"
+    },
+    {
+      "lam": "0",
+      "square_projection_residual_squared_norm": "0"
+    },
+    {
+      "lam": "1/4",
+      "square_projection_residual_squared_norm": "1/128"
+    },
+    {
+      "lam": "3/4",
+      "square_projection_residual_squared_norm": "81/128"
+    }
+  ],
+  "priority_mixture_controls": [
+    {
+      "copy_probability": "1/4",
+      "mixture_endpoint_covariance": "1/96"
+    },
+    {
+      "copy_probability": "3/4",
+      "mixture_endpoint_covariance": "3/32"
+    }
+  ],
+  "direction_sensitive_order_blind_checks": 384,
+  "limitations": [
+    "standard-Borel generalization uses written Markov-operator proof",
+    "null-set exception and Feller upgrade are not numerically certified",
+    "two-port escape is a supplied path model, not a cubic full-domain embedding",
+    "no order-independent physical-law or full-foundation conclusion"
+  ]
+}
+per_element: checked an exact positive nonsymmetric stochastic matrix whose square is the independent kernel
+per_site: checked two-site detailed balance failure and reversible square-projection controls
+per_mode: checked and not executed — no kinetic or quantum mode is identified by this conditional theorem
+per_block: checked exact path-three mixtures and a direction-sensitive two-port order-independent escape
+lattice_wide: checked and not executed — general Borel and supported-profile statements rely on the analytic proof
+TOTAL: PASS=1 FAIL=0
+Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON
+per_element: exact finite alphabet and matrix-record identities
+per_site: finite partial-record and order fixtures
+per_mode: not executed: no spectral or Fourier calculation is claimed
+per_block: one complete companion family; imported helpers are shared implementation, not independent evidence
+lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here
+
+----- stderr -----
+

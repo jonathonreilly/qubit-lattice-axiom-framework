@@ -1,0 +1,144 @@
+===== runner cache v1 =====
+runner: scripts/algebra_naturality_check_2026_09_15.py
+runner_sha256: 791ab9cbae504bc6d65bdef7e82b36a2b10592492240903bf65d6555799a3676
+input_fingerprint_sha256: f4b9b4ee91f061bc20d59e0dfd41baebd6ee9dd57b29784477565a31d2a3e3d3
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.47
+status: ok
+----- stdout -----
+{
+  "status": "exact_author_checks_passed",
+  "independent_review": false,
+  "upper_shear_fixed_real_dimension": 4,
+  "both_shears_fixed_real_dimension": 2,
+  "support_ranks": [
+    {
+      "profile": "empty",
+      "words": 1,
+      "complex_algebra_dimension": 1,
+      "real_covariance_rank": 2
+    },
+    {
+      "profile": "sole_zero",
+      "words": 4,
+      "complex_algebra_dimension": 1,
+      "real_covariance_rank": 2
+    },
+    {
+      "profile": "sole_identity",
+      "words": 4,
+      "complex_algebra_dimension": 1,
+      "real_covariance_rank": 2
+    },
+    {
+      "profile": "diagonal",
+      "words": 4,
+      "complex_algebra_dimension": 2,
+      "real_covariance_rank": 4
+    },
+    {
+      "profile": "jordan",
+      "words": 4,
+      "complex_algebra_dimension": 2,
+      "real_covariance_rank": 4
+    },
+    {
+      "profile": "triangular",
+      "words": 15,
+      "complex_algebra_dimension": 3,
+      "real_covariance_rank": 6
+    },
+    {
+      "profile": "full_pair",
+      "words": 15,
+      "complex_algebra_dimension": 4,
+      "real_covariance_rank": 8
+    },
+    {
+      "profile": "complex_pair",
+      "words": 15,
+      "complex_algebra_dimension": 4,
+      "real_covariance_rank": 8
+    },
+    {
+      "profile": "commuting_pair",
+      "words": 15,
+      "complex_algebra_dimension": 2,
+      "real_covariance_rank": 4
+    },
+    {
+      "profile": "six_slots",
+      "words": 259,
+      "complex_algebra_dimension": 4,
+      "real_covariance_rank": 8
+    }
+  ],
+  "exact_real_automorphism_cases": 100,
+  "exact_slot_permutations": 4,
+  "zero_vs_identity_variance_ratio": "85/64",
+  "seed_checks": [
+    {
+      "site": [
+        0,
+        0,
+        0
+      ],
+      "neighbor_algebra_dimension": 4
+    },
+    {
+      "site": [
+        1,
+        0,
+        0
+      ],
+      "neighbor_algebra_dimension": 4
+    },
+    {
+      "site": [
+        0,
+        1,
+        0
+      ],
+      "neighbor_algebra_dimension": 4
+    },
+    {
+      "site": [
+        1,
+        1,
+        0
+      ],
+      "neighbor_algebra_dimension": 4
+    }
+  ],
+  "seed_prefix_full_algebra": true,
+  "restricted_additional_clocks": 8,
+  "analytic_positive_clock_event": "exp(-17)*(1-exp(-1))^2",
+  "first_seed_extension_noncentral_variance": "17/64",
+  "rejected_full_support_from_noncommutativity_alone_dimension": 3,
+  "rejected_length1_word_span_dimension": 3,
+  "rejected_frobenius_full_inner_invariance_variance_ratio": 16,
+  "rejected_independent_output_relabeling_gap": "105/32",
+  "limitations": [
+    "initial unsimplified symbolic-equality failure and exact-zero diagnostic are preserved under review/",
+    "invariant probability and infinite ancestor conclusions rely on analytic proofs",
+    "finite covariance display coordinates do not define the intrinsic kernel",
+    "common algebra identification and compatible seed are supplied inputs",
+    "no quantum channel, kinetic realization or all-foundation claim"
+  ]
+}
+per_element: checked exact shear identities, fixed spaces, word products and Gaussian covariance transformations
+per_site: checked all named one-input and multi-input algebra support dimensions and a supplied compatible seed
+per_mode: checked and not executed — no matter kinetic or quantum mode is supplied by a matrix-label kernel
+per_block: checked slot permutations and a support-valid noncentral two-step prefix
+lattice_wide: checked and not executed — the global process uses the analytic finite-ancestor proof, not a finite-lattice extrapolation
+TOTAL: PASS=1 FAIL=0
+Completed family: complete finite companion program; individual checks and diagnostics remain in structured JSON
+per_element: finite M2 algebra actions and support witnesses
+per_site: not executed: matrix-profile fixtures are not a spatial lattice
+per_mode: not executed: symbolic matrix support tests, not a spectral field
+per_block: one complete companion family; imported helpers are shared implementation, not independent evidence
+lattice_wide: analytical claims and infinite/iterated limits checked in written proof, not executed here
+
+----- stderr -----
+

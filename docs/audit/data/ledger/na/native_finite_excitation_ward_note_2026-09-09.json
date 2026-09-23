@@ -28,7 +28,7 @@
     "native_dynamical_cycle_fermion_z2_dictionary_note_2026-09-08",
     "native_zero_penalty_optimal_flux_dispersion_note_2026-09-08"
   ],
-  "direct_in_degree": 5,
+  "direct_in_degree": 8,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
@@ -36,7 +36,7 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.5,
+  "load_bearing_score": 7.907,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -57,6 +57,6 @@
   },
   "runner_path": "scripts/native_finite_excitation_ward_2026_09_09.py",
   "title": "Finite-excitation approximation of the native Ward node target",
-  "transitive_descendants": 7,
+  "transitive_descendants": 14,
   "verdict_rationale": null
 }

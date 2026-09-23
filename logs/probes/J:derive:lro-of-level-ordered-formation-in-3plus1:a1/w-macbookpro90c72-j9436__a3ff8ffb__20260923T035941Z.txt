@@ -1,0 +1,20 @@
+ok   G.diamond: level-ordered doubled graph (L=4,6): 4-regular, girth 6, onto the staggered bilayer by (x,a)->(x,a+|x|); embedding A e_j=v0-v_j has bond vectors (1,1,1),(1,-1,-1),(-1,1,-1),(-1,-1,1) on the FCC lattice; a subgraph of the light-cone doubled graph (7-regular, girth 4)
+ok   G.spacetime: (t,x)->(t-|x|,x) sends the level-ordered predecessors to the four negative unit vectors of Z^4
+ok   R.bilinear: B(i s, i s') = B(s', s) and B(s', s) = sum_y s_y.Sfwd_y(s') for random rational records (L=3,4,5)
+ok   R.cycle: 3-cycle (aligned; e_x at 0; e_y at e1): sum of B(next,prev)-B(prev,next) = 1 for N4, L=3..6 (Kolmogorov ratio e^beta), 0 for N7 and for L=2
+ok   M.counts: records -e_z on {0,-e1,-e2}: backward |S|^2 {4:10, 16:N-10}, forward {0:3, 4:6, 16:N-9}, sum |S|^4 differs by 192 (L=3..8)
+ok   M.ratio: rho(i s)/rho(s) = Z(4b)Z(0)^3/Z(2b)^4 = u^3 cosh u / sinh^3 u with u = 2 beta, Z(q) = sinh q / q
+ok   M.lazarevic: sinh^3 x - x^3 cosh x = sum_{n odd} [(3^n-3)/4 - n(n-1)(n-2)] x^n/n!: zero for n=3,5, positive for 7<=n<=199, induction step 8n^3-30n^2+16n+6 > 0 on n>=7; so the ratio is < 1 for every beta > 0
+ok   M.gauss: sum_x |S_x|^2 = sum_x |Sfwd_x|^2 for all records (random rational, L=3,4,5): rho and rho o i agree at order beta^2; at the flip configuration log ratio = -16 beta^4/15 + O(beta^6)
+ok   C.aff: affine symmetries of the stencil: 24 for N4, 48 for N7; every one of the 2|Aff|L^3 layer-keeping/swapping maps is an automorphism
+ok   C.reflections: fixed-point-free affine involutions with halves crossed only by mirror pairs: light-cone 7 of 621 (L=4), 10 of 1392 (L=6), covering every edge; level-ordered: 0 of 191 (L=4), 0 of 475 (L=6) pass even the necessary condition for a PSD crossing matrix (involutions with fixed vertices: 73, 145)
+ok   K.concave: A = (log Z)' has A'' = 2(k^3 cosh k - sinh^3 k)/(k^3 sinh^3 k) < 0; predecessors u,u,u,u vs u,u,w,w with equal z-components (3/5) give mean z A(4b)(3/5) < A(12b/5)
+ok   L.fcc: 1 - |phi(k)|^2 = (3/4)(1 - lambda_FCC(k)), phi = (1 + sum e^{ik_j})/4; N4 - N4 = 4 x {0} + the 12 FCC vectors
+ok   T.twist: static twist u_{k+4} = -u_k on L=8 (rational ring, steps with cos >= 3/5): m = 0 exactly; s.S = 3 + cos, |S|^2 = 10 + 6 cos at every site
+note: W_L = (1/N) sum_{k!=0} 1/(1-|phi|^2) = 1.70158 (L=16), 1.74726 (L=32), 1.77008 (L=64); (4/3) G_FCC(0) = 12 Gamma(1/3)^6/(2^(14/3) pi^4) = 1.792882; L (W_inf - W_L) = 1.461, 1.460, 1.459
+note: linear plateau 1 - sigma^2 W_inf, sigma^2 = A(4b)/(4b): 0.8039 (b=2), 0.8630 (b=3) vs executed 0.732, 0.835; linear 1/L slope sigma^2 x 1.4595 = 0.160, 0.111 vs executed about 0.19, 0.12 (L=16..96)
+runtime 2.3 s
+SUMMARY: PARTIAL K = (reversible Q with the diamond-lattice marginal rho_L) then inversion; rho_L is not inversion-symmetric for any beta > 0, so each of the four routes fails at an identified exact step (no proof of long-range order)
+HIT: the level-ordered law K is Q followed by the inversion x -> -x, where Q is reversible with stationary law rho_L(s) ~ prod_x Z(beta|S_x(s)|), the layer marginal of the Heisenberg model on the level-ordered doubled graph, which is the diamond lattice; the alternating law (K, then its mirror image) is Q.Q, local and reversible for rho_L.
+HIT: for every beta > 0 and L >= 3, rho_L differs from its mirror image (three flipped records; density ratio u^3 cosh u/sinh^3 u < 1, u = 2 beta); so K has no inversion-symmetric stationary law, its stationary law is not rho_L, and the 3-cycle ratio is e^beta.
+HIT: route obstructions: no fixed-point-free affine involution of the diamond doubled graph (L = 4, 6) has halves with a PSD crossing matrix (the light-cone graph has 7, 10), so the light-cone route to Gaussian domination, and to the infrared bound that would turn the linear theory's 1/L into a bound, has no reflection to use; the linear theory is the lazy FCC walk and is inversion-symmetric; zero-noise tilted islands spread and never erode.

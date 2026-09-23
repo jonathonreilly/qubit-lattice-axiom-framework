@@ -1,0 +1,14 @@
+{
+  "boundary": "Read-only head freeze; no review or acceptance of this PR.",
+  "commit": "c228dbcfc0a6b71639316915f460c32dbf479723",
+  "fetched_ref": "refs/review-loop/fetched/8165-acbcf246bff94cce95de8c72ccddd283",
+  "metadata": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/toe-compact-ground-path-20260916",
+    "headRefOid": "c228dbcfc0a6b71639316915f460c32dbf479723",
+    "isDraft": false,
+    "number": 8165,
+    "state": "OPEN"
+  },
+  "schema_version": 1
+}

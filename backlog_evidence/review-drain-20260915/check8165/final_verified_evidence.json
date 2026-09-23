@@ -1,0 +1,35 @@
+[
+  {
+    "runner": "scripts/compact_rotor_geometry_and_heat_check_2026_09_16.py",
+    "elapsed_sec": 1.7900218963623047,
+    "sampled_peak_bytes": 120340480,
+    "watch_samples": 34,
+    "raw_sha256": "1d169cf1b903ca0329a54b1f2c5d32739d07cdd7b1b60d8297f459b9ff10aa16",
+    "cache_sha256": "25e43d9fb74819aa7fe5aba667a44f2f3e312917e22fc8f0e3085fab3efaae74",
+    "stdout_sha256": "1e6ed5176cbce20ef01a117479fe6f0726362caa8b90cc0a86316d2783605c1a",
+    "families": 3,
+    "static_assert_statements": 27
+  },
+  {
+    "runner": "scripts/compact_rotor_reflection_and_path_check_2026_09_16.py",
+    "elapsed_sec": 0.3114171028137207,
+    "sampled_peak_bytes": 112574464,
+    "watch_samples": 8,
+    "raw_sha256": "bbe0d63477108b05f33bb375fb036275adf870e9bce8e3d51956f096c2544273",
+    "cache_sha256": "9098e5782b9f6e1144931a08d95d5ecc9146d244fb47448fd2d43d98f8d10abe",
+    "stdout_sha256": "af333a87fade4286a2d83cd071d9f8d6679ba846c1c3771dfbd058086b077844",
+    "families": 3,
+    "static_assert_statements": 15
+  },
+  {
+    "runner": "scripts/compact_rotor_coarse_current_check_2026_09_16.py",
+    "elapsed_sec": 0.18147516250610352,
+    "sampled_peak_bytes": 68452352,
+    "watch_samples": 5,
+    "raw_sha256": "ba01abc8c35ead72565a314cc827297a3165be273a584fbad3827e600223f030",
+    "cache_sha256": "99ad010d7b90dc0672d4f82165e60b5df50570898e18cbc704eaed42767ed632",
+    "stdout_sha256": "39ed2dd21bfa48560baf7f6b71dea75dccd7f7ae4cd7833acd3bc36401390f03",
+    "families": 3,
+    "static_assert_statements": 15
+  }
+]

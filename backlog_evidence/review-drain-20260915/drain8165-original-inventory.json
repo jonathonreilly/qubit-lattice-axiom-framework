@@ -1,0 +1,799 @@
+{
+  "head": "c228dbcfc0a6b71639316915f460c32dbf479723",
+  "merge_base": "e0ef7cf4633034a8c1e6d57f5812cc4275bf1349",
+  "current_main": "16574d8f023c06a3ef86fe6d8993a257e0936c81",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/APPROACH_REGISTRY.md",
+      "status": "A",
+      "mode": "100644",
+      "blob": "3378c0b88a05d2c772ac3c81fb31135e09ad5cc3",
+      "sha256": "9f95637e93c88e4d330e3e562a6ac0739a8de9735f614cce2fb46965dd2b989c",
+      "bytes": 1563,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/APPROACH_REGISTRY.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/ARTIFACT_PLAN.md",
+      "status": "A",
+      "mode": "100644",
+      "blob": "4b3a291ab6e3e1b9eee2fbdfd0634f354fdde434",
+      "sha256": "7341c801e57c14bba03494bf28e7250572e69bf50e0e7e4364fe7e44ae3222ed",
+      "bytes": 1022,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/ARTIFACT_PLAN.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/ASSUMPTIONS_AND_IMPORTS.md",
+      "status": "A",
+      "mode": "100644",
+      "blob": "75f3741d7d50586aa5ff6013dba02cc26981e38a",
+      "sha256": "da1082de65a28b8685c98f7521f1dfca47c1000c5be6a6adaf9ec4d2fb54484c",
+      "bytes": 2757,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/CLAIM_STATUS_CERTIFICATE.md",
+      "status": "A",
+      "mode": "100644",
+      "blob": "ee45389fcc37274e9ddacd6549e2ea70ea42db79",
+      "sha256": "f0884324968298f5ba7cf3ac2fc434a82b009a68b14e821f9dfcc50ae4119a0a",
+      "bytes": 1739,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/GOAL.md",
+      "status": "A",
+      "mode": "100644",
+      "blob": "852813e2f77c381ae15059a47a85787e80d23634",
+      "sha256": "2c511d612cdf8929cbd8f7312e73be0c893d6b0432d03b407e854660fffb2b6e",
+      "bytes": 1338,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/GOAL.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/HANDOFF.md",
+      "status": "A",
+      "mode": "100644",
+      "blob": "bcba85faabf7723289bc06e7e5b64a24738e169f",
+      "sha256": "372e72a07d80c30fa6e2820965e96ca0d8c3661682b017345613944704cf3a94",
+      "bytes": 3604,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/HANDOFF.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/LITERATURE_BRIDGES.md",
+      "status": "A",
+      "mode": "100644",
+      "blob": "640e44e6f55e37810ff0175268ad8f45fc0cab27",
+      "sha256": "02d1dd2246c73706fae6c10ae581adaaf360cf8fdf5eb862e66477f8f837486a",
+      "bytes": 920,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/LITERATURE_BRIDGES.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/MANIFEST.json",
+      "status": "A",
+      "mode": "100644",
+      "blob": "6902e9f0378e3a6054dd71d85757e8452e4d12be",
+      "sha256": "ace32cdccb717b3e523fa077491a48cd9018fc00e8e4e28d833fc6551f8bdb04",
+      "bytes": 15818,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/MANIFEST.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "status": "A",
+      "mode": "100644",
+      "blob": "f4f774580675ec9f1a89f9acb458e0b7df901b81",
+      "sha256": "673367281f043fefa245c92e85a85b0f525c1c81b317febe8249319319e2fdf5",
+      "bytes": 3595,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/NO_GO_DISCIPLINE_CHECKLIST.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/NO_GO_LEDGER.md",
+      "status": "A",
+      "mode": "100644",
+      "blob": "16ba2e98a0bf851308418d5b30fbdb78436b170b",
+      "sha256": "b3fb434c6fa27da95a7fadecd410b90eae161657d81a3facb67ae9057b12a5bc",
+      "bytes": 736,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/NO_GO_LEDGER.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/OPPORTUNITY_QUEUE.md",
+      "status": "A",
+      "mode": "100644",
+      "blob": "5098a40d676444eb62f19f1435c5880e92298852",
+      "sha256": "09adb8548246941bb006d9e5d4888aa40b779125760b2295cdc07c275a8a3d59",
+      "bytes": 1479,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/OPPORTUNITY_QUEUE.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/READING_LEDGER.md",
+      "status": "A",
+      "mode": "100644",
+      "blob": "10771af692671c63a2dccf68ba267b3168f51151",
+      "sha256": "b2b6017eba5f398b9b34c7950532b65cf72215579ec61c382660a49589dcc853",
+      "bytes": 2181,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/READING_LEDGER.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/README.md",
+      "status": "A",
+      "mode": "100644",
+      "blob": "1faf9729e3ad84556930c39b64d7d737c5252902",
+      "sha256": "ec265f6394feebb4218161c721cf67fe2def92259e3a2d0afac42ba2d046039d",
+      "bytes": 2445,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/README.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/REVIEW_HISTORY.md",
+      "status": "A",
+      "mode": "100644",
+      "blob": "ca99e2b5ff33f8dc01f898221c64951ec6a1c674",
+      "sha256": "cf345833a81be279379fd4f474b5cbd3f29c6b05c5afde7697c8428a5ef93ac3",
+      "bytes": 3606,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/REVIEW_HISTORY.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/ROUTE_PORTFOLIO.md",
+      "status": "A",
+      "mode": "100644",
+      "blob": "c9351ba4c0e45a4329b7eef3832c1bce1372e32c",
+      "sha256": "21f5388874e3bf927bacab79ac80816267ed7173d2b2c3c748b0ecf6c50c6c2d",
+      "bytes": 572,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/ROUTE_PORTFOLIO.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/STATE.yaml",
+      "status": "A",
+      "mode": "100644",
+      "blob": "694687a4a3ea1062dca5a29626d7c04078255e3d",
+      "sha256": "c67815d72b78418a1553e8f0150ea60212171925e4b007e5022901c2956a7e6f",
+      "bytes": 1196,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/STATE.yaml"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/TRACE_GATE.md",
+      "status": "A",
+      "mode": "100644",
+      "blob": "33eef6fa95b3fb37f796847bab4ccd810fcd24b4",
+      "sha256": "ad2a3692c8370bfc3815bdf50b43b8141995730ad9aff614e68010110b66fd83",
+      "bytes": 1236,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/TRACE_GATE.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block01_geometry_and_rotor_check.ATTEMPT1.stderr.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "cc82c377ad94633d3e41d20093e8820a4a600fb6",
+      "sha256": "253d570d95edf91e61a5de6f0d61a42131001cd3ae9cbf1a40caa8875541313d",
+      "bytes": 913,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block01_geometry_and_rotor_check.ATTEMPT1.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block01_geometry_and_rotor_check.ATTEMPT1.stdout.json",
+      "status": "A",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block01_geometry_and_rotor_check.ATTEMPT1.stdout.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block01_geometry_and_rotor_check.ATTEMPT1_DIAGNOSTIC.json",
+      "status": "A",
+      "mode": "100644",
+      "blob": "290c48a7032ec704dcb2e98acb95146cfed54945",
+      "sha256": "2453a5b9ca6852a117206a361115f4c23305db8ea936b0451479b346257bbe95",
+      "bytes": 1677,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block01_geometry_and_rotor_check.ATTEMPT1_DIAGNOSTIC.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block01_geometry_and_rotor_check.ATTEMPT1_SOURCE.py",
+      "status": "A",
+      "mode": "100644",
+      "blob": "7cf0361e59facf0ff4bfe830cc5926d1427bf47a",
+      "sha256": "8ba76c83b25dd16f805e593e1b4438943bc952c7bf7355f55fe5f8619fcdd1a7",
+      "bytes": 10232,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block01_geometry_and_rotor_check.ATTEMPT1_SOURCE.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block01_geometry_and_rotor_check.ATTEMPT2.stderr.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block01_geometry_and_rotor_check.ATTEMPT2.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block01_geometry_and_rotor_check.ATTEMPT2.stdout.json",
+      "status": "A",
+      "mode": "100644",
+      "blob": "a2b6fd76dd138195b17c8dfb230d02365975f5a7",
+      "sha256": "45a43a494afb018d064b1df467b826ec4c622f4515e04aec2ebd68c73f2f89c6",
+      "bytes": 12085,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block01_geometry_and_rotor_check.ATTEMPT2.stdout.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block01_geometry_and_rotor_check.BEFORE_TIMEOUT_METADATA.py",
+      "status": "A",
+      "mode": "100644",
+      "blob": "74793b7a3e9d23490b2ef3c6cdc18f8a671707b2",
+      "sha256": "a87936df4e6bb1ef95e3df535d0e80c236a4212bcb6d7967700b598008555a81",
+      "bytes": 10306,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block01_geometry_and_rotor_check.BEFORE_TIMEOUT_METADATA.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block01_geometry_and_rotor_check.FINAL.stderr.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block01_geometry_and_rotor_check.FINAL.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block01_geometry_and_rotor_check.FINAL.stdout.json",
+      "status": "A",
+      "mode": "100644",
+      "blob": "1a7231ed344f48cf1c56df70a38dcb55d9be5a38",
+      "sha256": "899cd7312f79045e152afe1505077b94d89bdb983badd768e6fe35785b3b0c4a",
+      "bytes": 12085,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block01_geometry_and_rotor_check.FINAL.stdout.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block01_geometry_and_rotor_check.py",
+      "status": "A",
+      "mode": "100644",
+      "blob": "66dcc6b5c42c6b71af2187b7d9738d63fbb119d0",
+      "sha256": "8e81fb84f5aa9b7a3ca2769e53c175a3bd688ce513c99f2796d906b6cb31c2be",
+      "bytes": 10478,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block01_geometry_and_rotor_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block02_reflection_and_path_check.ATTEMPT1.stderr.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block02_reflection_and_path_check.ATTEMPT1.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block02_reflection_and_path_check.ATTEMPT1.stdout.json",
+      "status": "A",
+      "mode": "100644",
+      "blob": "a51129409d49102eb6969cbf183771490e117547",
+      "sha256": "e19706f9b7ebfd8e89c4fe17bba6f6fa81d91d3f44ca17ad3df0df0ea91b2a04",
+      "bytes": 7781,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block02_reflection_and_path_check.ATTEMPT1.stdout.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block02_reflection_and_path_check.BEFORE_TIMEOUT_METADATA.py",
+      "status": "A",
+      "mode": "100644",
+      "blob": "8f83e07658b3403ef4c922222a1f564da3f6e28d",
+      "sha256": "0a75dbec9e63ebfae36cc629b6ca308ab46abd194cdefbe8a6238ae51ca2aa04",
+      "bytes": 7469,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block02_reflection_and_path_check.BEFORE_TIMEOUT_METADATA.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block02_reflection_and_path_check.FINAL.stderr.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block02_reflection_and_path_check.FINAL.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block02_reflection_and_path_check.FINAL.stdout.json",
+      "status": "A",
+      "mode": "100644",
+      "blob": "eed4d2682518605d1bbfc49a7b4db73f8e60466e",
+      "sha256": "02c3efa883f51a21470d02a1585e716632bc4e4dc1847f89cf9835964311ddad",
+      "bytes": 7781,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block02_reflection_and_path_check.FINAL.stdout.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block02_reflection_and_path_check.py",
+      "status": "A",
+      "mode": "100644",
+      "blob": "39e113429687761a421f6e0e91891dec07e64e61",
+      "sha256": "451e2765cfc3072d3e166a44598b4912757475483325cf7462e2d6bb72d2a149",
+      "bytes": 7641,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block02_reflection_and_path_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block03_coarse_current_check.ATTEMPT1.stderr.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block03_coarse_current_check.ATTEMPT1.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block03_coarse_current_check.ATTEMPT1.stdout.json",
+      "status": "A",
+      "mode": "100644",
+      "blob": "faea414ca9017f4bf235d86f0a6225272bca14f2",
+      "sha256": "18c37c079db9dca3890b76a382357b9ea09b26fb75a8a0555568b502c075eb92",
+      "bytes": 12071,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block03_coarse_current_check.ATTEMPT1.stdout.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block03_coarse_current_check.BEFORE_TIMEOUT_METADATA.py",
+      "status": "A",
+      "mode": "100644",
+      "blob": "cffd5dd18c5677f5db55ae567678e30d0ffb7a87",
+      "sha256": "4fa86a80ce8023597c52511d6042fad5485770e853db7a0d20f7b8d6117a5ed1",
+      "bytes": 7080,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block03_coarse_current_check.BEFORE_TIMEOUT_METADATA.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block03_coarse_current_check.FINAL.stderr.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block03_coarse_current_check.FINAL.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block03_coarse_current_check.FINAL.stdout.json",
+      "status": "A",
+      "mode": "100644",
+      "blob": "eb90cf865deba479372c58ec63a4281c8db8e044",
+      "sha256": "93a176f344c2ef8339aad66bf710768c77ea116a7de9bb3bce660dc8802c9d40",
+      "bytes": 12118,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block03_coarse_current_check.FINAL.stdout.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block03_coarse_current_check.py",
+      "status": "A",
+      "mode": "100644",
+      "blob": "f233640f6797acecafbb4ef54abc1601676ec536",
+      "sha256": "21ac6c020136e057ee9212741818d2349313e3c07475a2adfbc657436e812d1e",
+      "bytes": 7825,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/block03_coarse_current_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/challenge_formula_faults.ATTEMPT1.stderr.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/challenge_formula_faults.ATTEMPT1.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/challenge_formula_faults.ATTEMPT1.stdout.json",
+      "status": "A",
+      "mode": "100644",
+      "blob": "f4e21c4c45b9b5a745b1d20a77683d02165a66f3",
+      "sha256": "f273d8d3498ff9e36c74b788d77be9d6c14824be1d6c91072da0c3dc32dfd820",
+      "bytes": 5211,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/challenge_formula_faults.ATTEMPT1.stdout.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/challenge_formula_faults.py",
+      "status": "A",
+      "mode": "100644",
+      "blob": "907a2092493eb04cb3110050b46d0cd8b9156b9d",
+      "sha256": "4d97ffd69f2e6db2024c130412fca3fc73df8124c1ee72f1dc59690bf821c995",
+      "bytes": 3438,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/challenge_formula_faults.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/binary_clock_tail_coefficient.py",
+      "status": "A",
+      "mode": "100644",
+      "blob": "eddf7c779e2ab059cd05a9db9c1d557142f775a0",
+      "sha256": "94f74fdec6e7b2f25c5ba1efc394b6a2044a4752cdc47a8e4f5cc7360fb64e18",
+      "bytes": 7641,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/binary_clock_tail_coefficient.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/binary_clock_tail_coefficient.stderr.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "4f3eb9cb2db40fc8773adff116f0b3610784bfa1",
+      "sha256": "c07f4d781b0097b80aa39b72aba40078c032af98cb764213032117118cf803b8",
+      "bytes": 912,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/binary_clock_tail_coefficient.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/binary_clock_tail_coefficient.stdout.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/binary_clock_tail_coefficient.stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/cochain_boundary_sign.py",
+      "status": "A",
+      "mode": "100644",
+      "blob": "e469517d8a4ef3c95b4290936b015610b348b3eb",
+      "sha256": "87b066c3fda489fb96ee09ae945849162970128973610818c8641cba1ffe4d3b",
+      "bytes": 7824,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/cochain_boundary_sign.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/cochain_boundary_sign.stderr.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "9909f10e755c3386ba59d57046381e8d4e984112",
+      "sha256": "6e216ab20fb40803dcd8a482b2cb95fab8c79d524b21c0e581b2c9c2c8ed830f",
+      "bytes": 963,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/cochain_boundary_sign.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/cochain_boundary_sign.stdout.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/cochain_boundary_sign.stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/constrained_path_kernel.py",
+      "status": "A",
+      "mode": "100644",
+      "blob": "ce46d8a627ab23cee4acc0bb0e9fbe9687a5f754",
+      "sha256": "73dce18ca7e71bfa0b0300b54b638fdfc416d1447376caffdde14877dab4c43c",
+      "bytes": 7644,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/constrained_path_kernel.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/constrained_path_kernel.stderr.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "9a72a7974f35050fe0c1a915efcb8866af079933",
+      "sha256": "dda53601ee42404c03af75b85b6afe3334171d979387e2a4a82216c311d2fc15",
+      "bytes": 961,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/constrained_path_kernel.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/constrained_path_kernel.stdout.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/constrained_path_kernel.stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/current_witness_exponent.py",
+      "status": "A",
+      "mode": "100644",
+      "blob": "2b1d3a5de81de2c53b0148187c4c3c3a41093fcf",
+      "sha256": "9b6b04a295b7eb49f2dabec77b85c94976d2e6afee98f4c2a41f5358ace1a462",
+      "bytes": 7825,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/current_witness_exponent.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/current_witness_exponent.stderr.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "ec9667b6c2b1c602d3bef02b4b32c0fca6acb8e6",
+      "sha256": "ca5eab7f36fee8a84bf65a2a917e346a1d760ea1e53d02db50793a280ddc60bf",
+      "bytes": 670,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/current_witness_exponent.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/current_witness_exponent.stdout.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/current_witness_exponent.stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/dual_current_Hodge_sign.py",
+      "status": "A",
+      "mode": "100644",
+      "blob": "5cd61c3b414ef4f8a25e22e154011fc4327bc37f",
+      "sha256": "bf2ae053043cf36a113b990fdb19a64ca580acad20597496541da69e53e0dec3",
+      "bytes": 7824,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/dual_current_Hodge_sign.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/dual_current_Hodge_sign.stderr.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "8343f7a6739944c7e0591abf8c5e5f0ccb2443f7",
+      "sha256": "609386e8c24b041b3fdf20eb5220f2a34dd1a54fd7d2df1e61a2b7ffb4d23059",
+      "bytes": 945,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/dual_current_Hodge_sign.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/dual_current_Hodge_sign.stdout.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/dual_current_Hodge_sign.stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/ground_path_diffusivity.py",
+      "status": "A",
+      "mode": "100644",
+      "blob": "dee84686754cf1097c73fe19589a662537680afb",
+      "sha256": "8dc9fe3fec4afdd67ee133ff7fdf8f44f3ccdc7d5533926648319f89f1e23e3f",
+      "bytes": 7641,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/ground_path_diffusivity.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/ground_path_diffusivity.stderr.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "8298e53d6e0e1954927f1b1a96fd728715dc3dc3",
+      "sha256": "0b2c741adb86384b1ddb6cf76e858aa78d82a4bbb3d1c4fb0dc9ae74fae2a699",
+      "bytes": 874,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/ground_path_diffusivity.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/ground_path_diffusivity.stdout.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/ground_path_diffusivity.stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/plaquette_diffusivity.py",
+      "status": "A",
+      "mode": "100644",
+      "blob": "a8e420980248bae8eabf5ade9cd166f31b766935",
+      "sha256": "c3fbde7e9384a5d2b2345807de0c5dbd8bef8591aff3d31e287bc1967d23e150",
+      "bytes": 10479,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/plaquette_diffusivity.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/plaquette_diffusivity.stderr.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "dd59192133a1866aa2ae683899395520765262f6",
+      "sha256": "9045a080777015cc5028be145ac14815930eb45c8f9185db30ff3f6aef60c179",
+      "bytes": 929,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/plaquette_diffusivity.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/plaquette_diffusivity.stdout.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/plaquette_diffusivity.stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/reduced_clock_edge_count.py",
+      "status": "A",
+      "mode": "100644",
+      "blob": "146405c740b77b6f161ef5e69758321151549e09",
+      "sha256": "3aa721dec478fb344314f63041c6398f7e03393c87a5843ca55b782c319ee522",
+      "bytes": 7639,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/reduced_clock_edge_count.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/reduced_clock_edge_count.stderr.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "7ba81cbda061da85b455d264f64f7e13b42c58d2",
+      "sha256": "16b9abc3d43a0662261abfdc19f340404cdcbdb89066f04ca2b8fedff7a4b3de",
+      "bytes": 892,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/reduced_clock_edge_count.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/reduced_clock_edge_count.stdout.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/reduced_clock_edge_count.stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/reflected_face_orientation.py",
+      "status": "A",
+      "mode": "100644",
+      "blob": "6b7177f3f8d6361468f7e2d83dc579aef9a2584e",
+      "sha256": "5a7a65ed2dc9c1b5414b4e3e29942338ca4bee2417e3ba2589000ebf6ccd9197",
+      "bytes": 10478,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/reflected_face_orientation.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/reflected_face_orientation.stderr.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "0bc863f0536d365c196dc64c5332b01796bf0fd9",
+      "sha256": "b50f5cc395ece5856c467c1e616111575692c8af5bbcd0cffafc9bfd202c80fc",
+      "bytes": 1036,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/reflected_face_orientation.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/reflected_face_orientation.stdout.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/reflected_face_orientation.stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/shared_boundary_reflection.py",
+      "status": "A",
+      "mode": "100644",
+      "blob": "b6ec87ae23ffd2b262205c37179776267fadc100",
+      "sha256": "880a769522242a1b26074736c0e711c6e57e76dd3d47abb9351a331113f7245d",
+      "bytes": 7641,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/shared_boundary_reflection.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/shared_boundary_reflection.stderr.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "2f3b34a8bca8cc8f1f4c69a081b734bc5029e0cb",
+      "sha256": "fa9244af8cf5ddc2427b4962dee711a92a4a4eff529df7c3c44be95c97653cf3",
+      "bytes": 904,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/shared_boundary_reflection.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/shared_boundary_reflection.stdout.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/shared_boundary_reflection.stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/trial_variance.py",
+      "status": "A",
+      "mode": "100644",
+      "blob": "53b9d2e933433fd1a010ff8c4c89da974bfd00da",
+      "sha256": "bed0759221a0755831cb5042fa7a18bda3a8040e75b9939ddda30f83729e3ada",
+      "bytes": 10478,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/trial_variance.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/trial_variance.stderr.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "56a975e558b0888005b2863da159031443641d5e",
+      "sha256": "6c4ff5e804da6b380e5f257d66dabc1b952d929c2916910c232665c2014f3b86",
+      "bytes": 913,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/trial_variance.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/trial_variance.stdout.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/evidence/formula_faults/trial_variance.stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/notes/BLOCK01_SAMPLED_MAGNETIC_EVENT_BOUND.md",
+      "status": "A",
+      "mode": "100644",
+      "blob": "9bb078cc953121fab5e12dd9857e099056868404",
+      "sha256": "9c9026340a5b231f7575580b7628ec2e2552d9905bc5f6cbe76591f545173fe1",
+      "bytes": 17638,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/notes/BLOCK01_SAMPLED_MAGNETIC_EVENT_BOUND.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/notes/BLOCK02_CONTINUOUS_TIME_MAGNETIC_EXCURSIONS.md",
+      "status": "A",
+      "mode": "100644",
+      "blob": "d293b713e49d0804a5fc28e9e21e094e98ffe4d9",
+      "sha256": "be9addb59fb1c12b6e33b8cafbd4c57a37fb3d46d8197f7f01e8dbd93f040013",
+      "bytes": 9181,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/notes/BLOCK02_CONTINUOUS_TIME_MAGNETIC_EXCURSIONS.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/notes/BLOCK03_SPATIAL_PATH_LIMIT.md",
+      "status": "A",
+      "mode": "100644",
+      "blob": "8adc44d5a4110fe55da5b9146e55f0b499be7c32",
+      "sha256": "c6e2c8313b9243a4d953918fd56b9afd7838bedb522bee93bfbd95fdea417fda",
+      "bytes": 9595,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/notes/BLOCK03_SPATIAL_PATH_LIMIT.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/notes/BLOCK04_TEMPORAL_OSCILLATIONS_AND_COARSE_CURRENTS.md",
+      "status": "A",
+      "mode": "100644",
+      "blob": "3d3f9c97d7b0b2b07e52d5c9fffbc52bb58a446c",
+      "sha256": "4749e1743a8a5e274cc484d71c66187afb0c7ed10fd2ad34bead79120a498200",
+      "bytes": 9441,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/notes/BLOCK04_TEMPORAL_OSCILLATIONS_AND_COARSE_CURRENTS.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/review/FOCUSED_VERIFY.json",
+      "status": "A",
+      "mode": "100644",
+      "blob": "cf16f5c4b15dfb6456215cf465ff4296c8e9a513",
+      "sha256": "444b1ff05c431de5f90f9f3c53531d77ba9466ba49f6df2178a8a23de95ef963",
+      "bytes": 3723,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/review/FOCUSED_VERIFY.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/review/PERSONAL_REVIEW.md",
+      "status": "A",
+      "mode": "100644",
+      "blob": "be85a9649fc8785254e9da6aa316638ed875953d",
+      "sha256": "6b02f18a3dcbd99507b778dba07cde301fa88f3eb18af472604d0c12029c6776",
+      "bytes": 6878,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/review/PERSONAL_REVIEW.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/review/focused_verify.py",
+      "status": "A",
+      "mode": "100644",
+      "blob": "09a64a533b0afabf03b73597e5b55938400a07ec",
+      "sha256": "6b4c1d0dae8a96acf835fc99ae632668b5e39f336f0190c9df55791b7b77cf09",
+      "bytes": 3193,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/review/focused_verify.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/review/focused_verify.stderr.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/review/focused_verify.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/review/focused_verify.stdout.json",
+      "status": "A",
+      "mode": "100644",
+      "blob": "cf16f5c4b15dfb6456215cf465ff4296c8e9a513",
+      "sha256": "444b1ff05c431de5f90f9f3c53531d77ba9466ba49f6df2178a8a23de95ef963",
+      "bytes": 3723,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/review/focused_verify.stdout.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/review/vocab_fix.stderr.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/review/vocab_fix.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/review/vocab_fix.stdout.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "bytes": 81,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/review/vocab_fix.stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/review/vocab_report-only.stderr.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/review/vocab_report-only.stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-compact-ground-path-20260916/review/vocab_report-only.stdout.txt",
+      "status": "A",
+      "mode": "100644",
+      "blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "bytes": 81,
+      "recovery_path": "/private/tmp/review-drain-20260915/drain8165-originals/.claude/science/physics-loops/toe-compact-ground-path-20260916/review/vocab_report-only.stdout.txt"
+    }
+  ]
+}

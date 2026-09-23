@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8164",
+  "tree": "672fc49167bd4653e1da96b2ab3e8bef223d9d9e",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/WEIGHTED_GAUSSIAN_DAMPING_AND_INTEGER_TIME_BLOCKING_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "weighted_gaussian_damping_and_integer_time_blocking_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/weighted_gaussian_damping_and_integer_time_blocking_check_2026_09_16.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/work_history/review_loop/pr8164/README.md"
+      ]
+    },
+    {
+      "path": "docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "finite_box_electric_offset_response_and_tail_bounds_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/WEIGHTED_GAUSSIAN_DAMPING_AND_INTEGER_TIME_BLOCKING_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/work_history/review_loop/pr8164/README.md"
+      ]
+    },
+    {
+      "path": "docs/WEIGHTED_PHASE_CORRECTOR_AND_MAGNETIC_GRAM_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "weighted_phase_corrector_and_magnetic_gram_certificates_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/weighted_phase_corrector_and_magnetic_gram_certificates_check_2026_09_16.py",
+      "helpers": [
+        "scripts/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.py"
+      ],
+      "citations": [
+        "docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/work_history/review_loop/pr8164/README.md"
+      ]
+    },
+    {
+      "path": "docs/LOCAL_ROTOR_DENSITY_AND_FINITE_TEMPLATE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "local_rotor_density_and_finite_template_bounds_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/local_rotor_density_and_finite_template_bounds_check_2026_09_16.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/WEIGHTED_PHASE_CORRECTOR_AND_MAGNETIC_GRAM_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/work_history/review_loop/pr8164/README.md"
+      ]
+    },
+    {
+      "path": "docs/COMPACT_ROTOR_GROUND_CORRELATION_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "compact_rotor_ground_correlation_comparison_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/compact_rotor_ground_correlation_comparison_check_2026_09_16.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/work_history/review_loop/pr8164/README.md"
+      ]
+    },
+    {
+      "path": "docs/PRINCIPAL_LINK_RAW_CURL_WITNESS_AND_MASS_BOUND_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "principal_link_raw_curl_witness_and_mass_bound_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/principal_link_raw_curl_witness_and_mass_bound_check_2026_09_16.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/work_history/review_loop/pr8164/README.md"
+      ]
+    },
+    {
+      "path": "docs/POSITIVE_WILSON_VILLAIN_MIXTURE_AND_WEAK_REGION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "positive_wilson_villain_mixture_and_weak_region_bounds_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/positive_wilson_villain_mixture_and_weak_region_bounds_check_2026_09_16.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/work_history/review_loop/pr8164/README.md"
+      ]
+    },
+    {
+      "path": "docs/SHORT_TIME_ROTOR_BRIDGE_AND_ENDPOINT_HESSIAN_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "short_time_rotor_bridge_and_endpoint_hessian_bounds_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/short_time_rotor_bridge_and_endpoint_hessian_bounds_check_2026_09_16.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/work_history/review_loop/pr8164/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8776,
+      "misses": 4520
+    },
+    "packet_imports": {
+      "hits": 8758,
+      "misses": 4518
+    },
+    "declared_inputs": {
+      "hits": 8814,
+      "misses": 4673
+    }
+  },
+  "record_sha256": "7fb6cb1296bb9b51232981907905a95b25a2a46a39cc1bb278b8ad49d6570c67",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

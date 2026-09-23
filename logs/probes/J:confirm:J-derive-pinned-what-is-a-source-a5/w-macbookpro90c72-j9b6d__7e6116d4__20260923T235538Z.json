@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-pinned-what-is-a-source-a5",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j9b6d",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/pinned-what-is-a-source/referee_w-macbookpro90c72-j9b6d/check.py",
+ "seed": 7738,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7e6116d4",
+ "started_utc": "20260923T235538Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the Dirichlet/capacity reading and sub-additivity on L=4; the author's L=7 float table was not rebuilt"
+ },
+ "review": "Independent: c0 times mean pair weight is 1; on L=4 m^2=1/2 a pinned site has capacity 1/G(0) and a two-site line is strictly subadditive",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:pinned-what-is-a-source:a5/; its files are probes/work/derive/pinned-what-is-a-source/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/pinned-what-is-a-source/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "8685b454fedfe5b12674e87e9e845737467a80b32832a45c61d28e8e7132a9f1",
+ "stdout_tail": "c0 True\nL=4 m2=1/2 G(0)=23978/116025 C1=116025/23978 C2=13923/1837\ntheta0 coefficient True sourced nonzero True\nHIT: confirmed - c0*mean pair weight is 1 on both menus; on the L=4 torus with m^2=1/2 a pinned site has capacity 1/G(0)=116025/23978 and a two-site line 13923/1837 is strictly below twice that\nSUMMARY: confirmed the Dirichlet/capacity reading and sub-additivity on L=4; the author's L=7 float table was not rebuilt\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j9b6d",
+  "at_utc": "20260923T235539Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "c0 identities hold; L=4 capacity equals 1/G(0) and a two-site line is strictly subadditive",
+  "by": "w-macbookpro90c72-j9b6d",
+  "at_utc": "20260923T235539Z"
+ }
+}

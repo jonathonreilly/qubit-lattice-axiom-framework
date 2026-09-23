@@ -1,0 +1,5 @@
+c0 True
+L=4 m2=1/2 G(0)=23978/116025 C1=116025/23978 C2=13923/1837
+theta0 coefficient True sourced nonzero True
+HIT: confirmed - c0*mean pair weight is 1 on both menus; on the L=4 torus with m^2=1/2 a pinned site has capacity 1/G(0)=116025/23978 and a two-site line 13923/1837 is strictly below twice that
+SUMMARY: confirmed the Dirichlet/capacity reading and sub-additivity on L=4; the author's L=7 float table was not rebuilt

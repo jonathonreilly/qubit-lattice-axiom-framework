@@ -1,0 +1,4 @@
+PR #8671: docs(campaign): the soldering menu, four cubic actions on qubits
+branch claude/soldering-menu-four-actions-20260922 (base main)
+runners in the PR: 1
+== scripts/soldering_menu_four_cubic_actions_on_qubit_possibilities_and_formation_bounds_2026_09_22.py: rc=0 PASS=10 FAIL=0

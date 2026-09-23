@@ -1,0 +1,3 @@
+PR #8661: Physics: mobile charged records and their field response
+branch codex/mobile-record-homogeneous-charged-20260922 (base codex/mobile-record-rotor-waves-20260922)
+runners in the PR: 0

@@ -1,0 +1,37 @@
+{
+ "task": "P:8657",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block85-the-cr",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8657",
+ "pr": 8657,
+ "branch": "physics-loop/admissibility-induced-law-block85-the-crowd-under-exclusion-also-gains-from-the-alternation-20260922",
+ "git_sha": "5c2648b5",
+ "started_utc": "20260923T014758Z",
+ "elapsed_s": 7.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_the_crowd_under_exclusion_also_gains_from_an_alternation_of_the_bond_rates_ground_energy_never_rises_jam_blind_2026_09_22.py",
+    "returncode": 0,
+    "total": "PASS=13 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "1cf7b6b32e5c45ccb5f28ac515b1b6e356d1b05de420f775c7ca55f0bfd183da",
+ "stdout_tail": "PR #8657: physics-loop: admissibility induced-law block 85 - the crowd under exclusion also gains from an alternation of the bond rates: its ground energy never rises, and the jam is blind\nbranch physics-loop/admissibility-induced-law-block85-the-crowd-under-exclusion-also-gains-from-the-alternation-20260922 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_the_crowd_under_exclusion_also_gains_from_an_alternation_of_the_bond_rates_ground_energy_never_rises_jam_blind_2026_09_22.py: rc=0 PASS=13 FAIL=0\n   mutation crowd_energy_odd_in_delta: expected B observed B ok\n   mutation jam_feels_the_alternation: expected C observed C ok\n   mutation sea_filling_below_every_site: expected C observed C ok\n   mutation one_record_ground_energy_falls: expected D observed D ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T014805Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

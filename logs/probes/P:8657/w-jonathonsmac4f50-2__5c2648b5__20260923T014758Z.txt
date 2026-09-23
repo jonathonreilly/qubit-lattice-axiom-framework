@@ -1,0 +1,10 @@
+PR #8657: physics-loop: admissibility induced-law block 85 - the crowd under exclusion also gains from an alternation of the bond rates: its ground energy never rises, and the jam is blind
+branch physics-loop/admissibility-induced-law-block85-the-crowd-under-exclusion-also-gains-from-the-alternation-20260922 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_the_crowd_under_exclusion_also_gains_from_an_alternation_of_the_bond_rates_ground_energy_never_rises_jam_blind_2026_09_22.py: rc=0 PASS=13 FAIL=0
+   mutation crowd_energy_odd_in_delta: expected B observed B ok
+   mutation jam_feels_the_alternation: expected C observed C ok
+   mutation sea_filling_below_every_site: expected C observed C ok
+   mutation one_record_ground_energy_falls: expected D observed D ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

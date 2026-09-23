@@ -1,0 +1,4 @@
+PR #8641: docs(campaign): clock-and-rate races, invisibility, and hole mass
+branch claude/clock-and-rate-witness-20260922 (base main)
+runners in the PR: 1
+== scripts/clock_and_rate_covariant_race_order_laws_record_visibility_and_hole_mass_2026_09_22.py: rc=0 PASS=22 FAIL=0

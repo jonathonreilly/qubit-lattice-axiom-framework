@@ -1,0 +1,36 @@
+{
+ "task": "P:8676",
+ "type": "pr-reexecution",
+ "lane": "registered-frames-unsoldered-front-20260",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8676",
+ "pr": 8676,
+ "branch": "claude/registered-frames-unsoldered-front-20260922",
+ "git_sha": "5c2648b5",
+ "started_utc": "20260923T014717Z",
+ "elapsed_s": 6.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/registered_frames_coordinate_labels_sweep_rigidity_corner_price_and_soldered_emulation_2026_09_22.py",
+    "returncode": 0,
+    "total": "PASS=16 FAIL=0"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "b5286df10aa97fcd9145f9a811dc81ceb139d0a123e4df2a5044fe9d389de8ea",
+ "stdout_tail": "PR #8676: docs(campaign): registered frames carry the lattice frame unsoldered\nbranch claude/registered-frames-unsoldered-front-20260922 (base main)\nrunners in the PR: 1\n== scripts/registered_frames_coordinate_labels_sweep_rigidity_corner_price_and_soldered_emulation_2026_09_22.py: rc=0 PASS=16 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T014723Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

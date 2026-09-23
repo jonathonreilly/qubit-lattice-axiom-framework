@@ -1,0 +1,36 @@
+{
+ "task": "P:8671",
+ "type": "pr-reexecution",
+ "lane": "soldering-menu-four-actions-20260922",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8671",
+ "pr": 8671,
+ "branch": "claude/soldering-menu-four-actions-20260922",
+ "git_sha": "5c2648b5",
+ "started_utc": "20260923T014843Z",
+ "elapsed_s": 5.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/soldering_menu_four_cubic_actions_on_qubit_possibilities_and_formation_bounds_2026_09_22.py",
+    "returncode": 0,
+    "total": "PASS=10 FAIL=0"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "e970961c515ca562ccf47aa47d3a6721ed742cfd84dc0893dd0aac452bfc93b1",
+ "stdout_tail": "PR #8671: docs(campaign): the soldering menu, four cubic actions on qubits\nbranch claude/soldering-menu-four-actions-20260922 (base main)\nrunners in the PR: 1\n== scripts/soldering_menu_four_cubic_actions_on_qubit_possibilities_and_formation_bounds_2026_09_22.py: rc=0 PASS=10 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T014848Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

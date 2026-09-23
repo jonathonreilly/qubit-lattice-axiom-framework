@@ -1,0 +1,4 @@
+PR #8676: docs(campaign): registered frames carry the lattice frame unsoldered
+branch claude/registered-frames-unsoldered-front-20260922 (base main)
+runners in the PR: 1
+== scripts/registered_frames_coordinate_labels_sweep_rigidity_corner_price_and_soldered_emulation_2026_09_22.py: rc=0 PASS=16 FAIL=0

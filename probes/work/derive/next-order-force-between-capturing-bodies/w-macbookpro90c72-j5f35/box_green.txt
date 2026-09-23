@@ -1,0 +1,5 @@
+free-space continuum Stokeslet on the axis at r = 16: G_xx = 1/(4 pi r) = 0.004974 (nu = 1)
+periodic side 96: G_xx = 0.003488 (0.701 of free); lattice free-space value (side 192 + Hasimoto): 0.004993 (1.004 of free); periodic 96 with Hasimoto's term alone: 0.685 of free
+walls at 1.5, 93.5 (D = 92, image box 184): G_xx at body 2 = 0.004593 (0.923 of free, 0.920 of the lattice free-space value)
+walls at 0.5, 94.5 (D = 94, image box 188): G_xx at body 2 = 0.004602 (0.925 of free, 0.922 of the lattice free-space value)
+walls at 2.5, 92.5 (D = 90, image box 180): G_xx at body 2 = 0.004584 (0.922 of free, 0.918 of the lattice free-space value)

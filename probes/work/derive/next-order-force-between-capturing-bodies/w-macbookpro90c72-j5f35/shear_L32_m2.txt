@@ -1,0 +1,2 @@
+side 32, rho 0.3, gamma 1.0, mode 2 (k = 0.3927), 16 runs x 60 ticks, seed 12: A(t) every 6 ticks: 0.985 0.733 0.540 0.394 0.285 0.203 0.154 0.116 0.085 0.059 0.038
+   fit window t = 5..36: nu_T = 0.3408 +- 0.0109  (4 s)

@@ -1,0 +1,2 @@
+side 48, rho 0.3, gamma 1.0, mode 1 (k = 0.1851), eps 0.3, diagonal, 8 runs x 250 ticks, seed 21: A(t) every 25 ticks: 0.998 0.710 0.500 0.346 0.245 0.167 0.114 0.084 0.065 0.048 0.029
+   fit window t = 5..131: nu_T = 0.4172 +- 0.0054  (47 s)

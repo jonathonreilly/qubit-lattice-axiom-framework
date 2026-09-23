@@ -1,0 +1,2 @@
+side 64, rho 0.3, gamma 1.0, mode 1 (k = 0.1388), eps 0.3, diagonal, 8 runs x 400 ticks, seed 22: A(t) every 40 ticks: 1.000 0.734 0.535 0.384 0.284 0.207 0.148 0.112 0.080 0.061 0.043
+   fit window t = 5..238: nu_T = 0.4112 +- 0.0024  (183 s)

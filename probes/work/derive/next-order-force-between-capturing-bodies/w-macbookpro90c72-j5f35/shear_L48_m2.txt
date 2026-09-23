@@ -1,0 +1,2 @@
+side 48, rho 0.3, gamma 1.0, mode 2 (k = 0.2618), eps 0.3, 8 runs x 100 ticks, seed 14: A(t) every 10 ticks: 0.996 0.793 0.628 0.489 0.384 0.306 0.237 0.181 0.144 0.121 0.100
+   fit window t = 5..79: nu_T = 0.3554 +- 0.0037  (15 s)

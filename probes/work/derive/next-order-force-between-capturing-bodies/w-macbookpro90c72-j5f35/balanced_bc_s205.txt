@@ -1,0 +1,1 @@
+modes bc seed 205 sep=16 rho=0.3 gamma=1.0 | body1 (123 sites): captures 7.204, emits 7.204, net +0.000, store 38, F1=+0.0815+-0.0163 | body2 (123 sites): captures 7.862, emits 0.000, net +7.862, store 0, F2=-0.0372+-0.0139 | reference K0 Q1 Q2/r^2 with gross captures = 0.1452; 4 ticks/s

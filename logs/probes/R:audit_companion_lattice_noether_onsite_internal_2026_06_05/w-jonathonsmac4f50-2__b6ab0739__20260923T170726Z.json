@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_lattice_noether_onsite_internal_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_lattice_noether_onsite_internal_2026_06_05.py",
+ "seed": 83246,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b6ab0739",
+ "started_utc": "20260923T170726Z",
+ "elapsed_s": 0.4,
+ "returncode": 1,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0c9e6f06ca69a315ad48f274066e5874e6757167b40c2c0a89c13dabe993a5b5",
+ "stdout_tail": "xing)\n  [PASS] D2 two-site shift is a symmetry but SITE-MIXING (named open item, out of scope)\n\n==========================================================================\n SUMMARY\n==========================================================================\n   PASS  B0 bilinear commutator identity (B) holds exactly on CAR Fock space\n   PASS  A1 [H,Q]=0 for arbitrary symbolic bilinear (onsite-internal U(1))\n   PASS  A2 i[H,rho_p] = net inflow (operator continuity, arbitrary c_ij)\n   PASS  A3 d rho_p/dt = -(div^L j)_p with sign-fixed current (arbitrary c_ij)\n   PASS  A4 sum_p d rho_p/dt = 0 => dQ/dt = 0 (arbitrary c_ij)\n   PASS  A5 pair current has exactly the Hamiltonian coefficient support envelope\n   PASS  B1 onsite/internal generator commutes with every lattice shift\n   PASS  B2 onsite U(1): current is local bilateral nn bond current (exact symbolic)\n   PASS  C1 U(1) symmetry condition [T_U1, M] = 0 on staggered carrier\n   PASS  C2 formula-(4) U(1) current is divergence-free on shell (ground state)\n   PASS  C3 continuity fixes the sign: formula (4) sign satisfies d rho/dt + div j = 0\n   PASS  C3b flipped sign VIOLATES continuity (U(1) sign is determined, not convention)\n   PASS  D1 one-site (site-mixing) shift is NOT a plain symmetry of staggered M\n   PASS  D2 two-site shift is a symmetry but SITE-MIXING (named open item, out of scope)\n\nTOTAL: 14 PASS / 0 FAIL\nBOUNDARY GUARD: FAIL retained abstract authority is cited; finite exhibit is not promoted and no gate edge is present\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T170726Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run 'BOUNDARY GUARD: FAIL retained abstract authority is cited; finite exhibit is not' vs cache 'BOUNDARY GUARD: PASS retained abstract authority is cited; finite exhibit is not'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_companion_lattice_noether_onsite_internal_2026_06_05.txt against the .txt beside this log"
+  ]
+ }
+}

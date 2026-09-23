@@ -1,0 +1,6 @@
+
+[stderr]
+usage: historic_intake_generate_2026_08_05.py [-h] [--triage TRIAGE]
+                                              [--census CENSUS]
+                                              {check,build}
+historic_intake_generate_2026_08_05.py: error: the following arguments are required: mode

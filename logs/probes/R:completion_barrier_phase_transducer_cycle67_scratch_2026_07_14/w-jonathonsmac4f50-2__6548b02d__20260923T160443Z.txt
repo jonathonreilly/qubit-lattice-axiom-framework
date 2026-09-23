@@ -1,0 +1,28 @@
+FAIL A01 note exists
+PASS A02 proper cubic group has 24 rotations
+PASS A03 six F records pair into three FP records
+PASS A04 completion convergence is 3 FP / 3 I1 / 3 I2 / 1 DONE
+PASS A05 q-return cable leaves all four phase relays fresh
+PASS A06 all declared sites are role-disjoint :: 91
+PASS A07 official phase contents are exact
+PASS A08 auxiliaries avoid current official support
+PASS A09 auxiliaries avoid next official support
+PASS A10 next q/a/b/c remain open
+PASS B01 canonical table is nonempty :: 99
+PASS B02 every rotated input is single-valued :: 2218
+PASS C01 arbitrary-subset scan exposes 47 apparent bad conditions :: 47
+PASS C02 apparent bad conditions span 34 target/output classes :: 34
+PASS C03 apparent bad split is 15 off-footprint / 32 wrong-role
+PASS C04 all apparent bad conditions have absent-ancestor witnesses :: 47/47
+PASS C05 must-ancestor fixed point converges :: 17
+PASS C06 table has 308 correct compiled conditions :: 308
+PASS C07 every declared target has a correct compiled condition
+PASS C08 every apparent first bad write contradicts its own prefix
+PASS D01 every target has at least one parent-valid local subset
+PASS D02 all within-rank prefix subsets retain every missing write :: 30240 tests
+PASS D03 causal safety plus rank closure proves one complete terminal
+PASS D04 official order is C before X before endpoint Z
+PASS D05 endpoints are nonadjacent commuting peers
+
+ADDITIONS=91 ROWS=99 RAW=2,218 CONDITIONS=355
+SUMMARY: 24 PASS / 1 FAIL

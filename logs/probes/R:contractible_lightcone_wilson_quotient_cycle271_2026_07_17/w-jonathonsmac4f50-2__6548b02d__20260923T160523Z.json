@@ -1,0 +1,32 @@
+{
+ "task": "R:contractible_lightcone_wilson_quotient_cycle271_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "contractible",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/contractible_lightcone_wilson_quotient_cycle271_2026_07_17.py",
+ "seed": 79523,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6548b02d",
+ "started_utc": "20260923T160523Z",
+ "elapsed_s": 1.1,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8335280deb10523986fe9b88b679a0b326ecc20e50dfc91309fc6c3203b8c843",
+ "stdout_tail": "ctors': 8, 'sector_exponent': 1295}]\nPASS the mapped even update algebra has zero local-check leakage and zero Wilson transitions without turning Wilson into a Record :: {'local_check_commutator_failures': 0, 'Wilson_transition_failures': 0, 'Wilson_status': 'central sector label, not a Record'}\nPASS redundant physical-check deletion is tolerated, while independent-basis deletion adds one spurious logical :: {'physical_rows': 297, 'rank': 241, 'physical_single_deletion_losses': [0], 'basis_deletion_loss': 1}\n\nSTATE / PREPARATION / LAWFUL-DOMAIN LIMITS\nPASS the theorem is an even local-observable quotient, not preparation of one common state across Wilson sectors :: {'basis_diagonal_face_string_lengths': [3, 6, 6, 9], 'Cycle230_principal_sea_rank': 73, 'one_particle_and_rank73_sea': 'odd and absent from the fixed total-even code', 'expectation_values': 'require matched local reduced states under the sector identifications', 'arbitrary_sector_state_equivalence': False}\nPASS the lawful domain excludes Wilson/membrane observables and stops exactly when the declared cone contains a paired noncontractible cycle :: {'domain': 'even observables supported in the declared full-cell patch and its finite gate cone', 'excluded': 'Wilson loops, conjugate membranes, unmatched sector states, odd one-particle states', 'compiler_iteration_is_physical_time': False, 'Wilson_label_is_Record': False, 'shared_obstruction': False, 'axiom_pressure': False}\nSUMMARY PASS 15 FAIL 1\nRESULT CYCLE271_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T160524Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

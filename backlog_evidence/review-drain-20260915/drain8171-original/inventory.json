@@ -1,0 +1,148 @@
+{
+  "head": "15b6e402b902964ada51ffdd8e8c88fb4e472013",
+  "main": "012c276a64c80cf5256d68fa7dbb06939586153b",
+  "merge_base": "6dda46fc1af02827e9c6b64b2f7d05c381a3ce07",
+  "declared_base": "main",
+  "paths": [
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "base_tree": "100644 blob 8f9c496033ee3e37e4ad73433151a79224a60814\t.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "base_sha256": "b02b4a93b36ef5177c8727f1a3d6932ba32dbcb1f4debb3da7f454b6dba566af",
+      "head_tree": "100644 blob 6379de354c31917117e279797814dd436c83276d\t.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "head_sha256": "1cba020fb9defc25a84e2d923a0078b3d0efd420e15ddfdc18601e588f9641da",
+      "main_tree": "100644 blob 8f9c496033ee3e37e4ad73433151a79224a60814\t.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "main_sha256": "b02b4a93b36ef5177c8727f1a3d6932ba32dbcb1f4debb3da7f454b6dba566af"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block27_findings.md",
+      "base_tree": "",
+      "head_tree": "100644 blob 5f4c20b9a028812decc862c52d7689ee383a6462\t.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block27_findings.md",
+      "head_sha256": "096b3cad75462d1a15da6da1dbe6df6cb46c86e042122c82fe9bfc9ffa31467e",
+      "main_tree": ""
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block27.md",
+      "base_tree": "",
+      "head_tree": "100644 blob c12ba9e2af1ed4e48c3d15b331d4f4b4d30794fc\t.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block27.md",
+      "head_sha256": "ce141f669b8b48436f391668aa0492d7baa425c5c23ff49de4c145d26fc91203",
+      "main_tree": ""
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block27.md",
+      "base_tree": "",
+      "head_tree": "100644 blob 5b1cc332ccd80c78e0927f0277bd276bb5e84cf8\t.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block27.md",
+      "head_sha256": "1b18eadfdd80151305aa0285587d106fdad95382577d969e0f31cd821066432a",
+      "main_tree": ""
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "base_tree": "100644 blob 6dfc9de13838b8fe1d6d593b83d0d31cd0763b93\t.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "base_sha256": "e52898452cca1ed4e5065f0f8c2e27a7a9afd018a8e8d5867e991d7adf4ba59f",
+      "head_tree": "100644 blob 1059935133621d61dc22542e858712bac8b1092a\t.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "head_sha256": "abedf5313e49a608c1b161b94caf883beba4fb08ec1f84e15ef0ce89d0a321ee",
+      "main_tree": "100644 blob 6dfc9de13838b8fe1d6d593b83d0d31cd0763b93\t.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "main_sha256": "e52898452cca1ed4e5065f0f8c2e27a7a9afd018a8e8d5867e991d7adf4ba59f"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "base_tree": "100644 blob 74d2f60bae1b3e2de1ca2cf7ade91cf9e93da3b7\t.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "base_sha256": "c6e70a8f36829082ff26280dfb350c8232111a23fcf3c076c70d45e7ae27df19",
+      "head_tree": "100644 blob c9f49e1e5545cb3928b70605e4e7f62afd7e1abb\t.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "head_sha256": "56f4b0082fc00feccac113631ce447a62b0df197eb0b4ee9c6aa3163eb42568d",
+      "main_tree": "100644 blob 74d2f60bae1b3e2de1ca2cf7ade91cf9e93da3b7\t.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "main_sha256": "c6e70a8f36829082ff26280dfb350c8232111a23fcf3c076c70d45e7ae27df19"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block27.md",
+      "base_tree": "",
+      "head_tree": "100644 blob ab767ff736bed506a60348042f4c891ddca5fab3\t.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block27.md",
+      "head_sha256": "aa4f29441bd688a3288dfff1f58a366975c817f79c75ae1ebc3537512815d56c",
+      "main_tree": ""
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "base_tree": "100644 blob 08d17f0940e3756c94ff724c8ff531adc9e029ce\t.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "base_sha256": "7beef809b0e4e0b1bc815e3f44f271f80cf951b3b4789d09e7e588819f22b8d7",
+      "head_tree": "100644 blob 9142ce1859fce10d27e3cdd14095bf0084bd47ed\t.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "head_sha256": "4b3a2eb05a36db5dc4f639f2d9afbbc686459023cc8a350150a2e1c58667a7fd",
+      "main_tree": "100644 blob 08d17f0940e3756c94ff724c8ff531adc9e029ce\t.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "main_sha256": "7beef809b0e4e0b1bc815e3f44f271f80cf951b3b4789d09e7e588819f22b8d7"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "base_tree": "100644 blob e16642020759d3d57935cd6d037d382fc6573bf0\t.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "base_sha256": "2b955f847d5c0f6e7e6325cbdcc51aeb9bbd0197832d23195b34c5cb969d08a3",
+      "head_tree": "100644 blob 08e9e9e7480f0fe2b86452f29dc17121409cc676\t.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "head_sha256": "e06eef8f18fb5f278626fe325d35052b19abf9c2acf04c9acc1af8771ae0fa1c",
+      "main_tree": "100644 blob e16642020759d3d57935cd6d037d382fc6573bf0\t.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "main_sha256": "2b955f847d5c0f6e7e6325cbdcc51aeb9bbd0197832d23195b34c5cb969d08a3"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "base_tree": "100644 blob 8f432e2cd2631c0cc6a5121f932b305f16d3a023\t.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "base_sha256": "3cc64ad72621aef21a26cc7948950a42b27a0b4cf63518039dab916261938fe3",
+      "head_tree": "100644 blob c3683c2a71a3346d852945f2b6cfa2c35c0ea2fc\t.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "head_sha256": "909f3831d7460571e94f4d1fa59c4d2747d2c80fa18f96164a0790a3cbbd6b01",
+      "main_tree": "100644 blob 8f432e2cd2631c0cc6a5121f932b305f16d3a023\t.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "main_sha256": "3cc64ad72621aef21a26cc7948950a42b27a0b4cf63518039dab916261938fe3"
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block27.out.txt",
+      "base_tree": "",
+      "head_tree": "100644 blob d225c019c7e4841d7624318286c691ae62f0b83f\t.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block27.out.txt",
+      "head_sha256": "2514c2dac0d5ff0dc7d8ac659766ab24e6b5986bb0b6d1fd6620e0cdf8b5342d",
+      "main_tree": ""
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block27.py",
+      "base_tree": "",
+      "head_tree": "100644 blob cfb9c6421e60e44df767de70383894ee2c92fbc2\t.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block27.py",
+      "head_sha256": "e02dc8c42d276a1b056ff8298e6fde74607e76a878efafae1652140f266260ee",
+      "main_tree": ""
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block27_refuter.out.txt",
+      "base_tree": "",
+      "head_tree": "100644 blob 8b55c28f290f0259e01f2923044987690194f465\t.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block27_refuter.out.txt",
+      "head_sha256": "d21836a14544a5b3d52f808f03acd5a90a8a07be22491e75e7db851d83d1e91e",
+      "main_tree": ""
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block27_refuter.py",
+      "base_tree": "",
+      "head_tree": "100644 blob 568ba988217ba978b62f5eab0e64b4d0dd96e242\t.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block27_refuter.py",
+      "head_sha256": "da128df339d508035a45c665531bba25496baa45a67f095e458f9157188718bd",
+      "main_tree": ""
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_WEAK_COUPLING_THE_CAUSAL_COUPLING_CONTRACTS_ONE_INVARIANT_LAW_AND_EXPONENTIAL_LOSS_OF_MEMORY_BELOW_ONE_OVER_ROOT_THREE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "base_tree": "",
+      "head_tree": "100644 blob 23fbc7d7f7342963d58ae608671d6c9ae9c30361\tdocs/ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_WEAK_COUPLING_THE_CAUSAL_COUPLING_CONTRACTS_ONE_INVARIANT_LAW_AND_EXPONENTIAL_LOSS_OF_MEMORY_BELOW_ONE_OVER_ROOT_THREE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "head_sha256": "12574c05171d7f0971b970fe02dfe7b9aa63d8ff12a6d1c1c82c623115e42504",
+      "main_tree": ""
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "base_tree": "100644 blob 9c5ee548861f53d42bff5d600652e7391b769f17\tdocs/audit/data/citation_graph_manifest.json",
+      "base_sha256": "a3dcc3d90687ae261e65dc02caec57008d018c514d8ef6cd6fcbfb0d2806f5fb",
+      "head_tree": "100644 blob e08e42491b1ca7698c4777076e852c1f3906e066\tdocs/audit/data/citation_graph_manifest.json",
+      "head_sha256": "b9376abac9365831d961031139e8e1d554d809ec2d18066ca2d76120954fab74",
+      "main_tree": "100644 blob 87e0e9e9ad6aeb6a34de2e16533344adbd8f090b\tdocs/audit/data/citation_graph_manifest.json",
+      "main_sha256": "aa9f014639362822730e90c8de4214f8f5fb74af8754baee8d111e888b18af65"
+    },
+    {
+      "path": "logs/runner-cache/admissibility_rule_unsoldered_formation_law_weak_coupling_causal_coupling_contracts_one_invariant_law_2026_09_16.txt",
+      "base_tree": "",
+      "head_tree": "100644 blob 68bf43df18d86bdec08e0a9a8de4162dd74a8d10\tlogs/runner-cache/admissibility_rule_unsoldered_formation_law_weak_coupling_causal_coupling_contracts_one_invariant_law_2026_09_16.txt",
+      "head_sha256": "3197ef4430778d265c4879759328d34cb64455d93accd24bfdc5a2d5aa4eb924",
+      "main_tree": ""
+    },
+    {
+      "path": "scripts/admissibility_rule_unsoldered_formation_law_weak_coupling_causal_coupling_contracts_one_invariant_law_2026_09_16.py",
+      "base_tree": "",
+      "head_tree": "100755 blob 3718df36a9c5a4654b0b01a7d36c1aa66d1bfeb9\tscripts/admissibility_rule_unsoldered_formation_law_weak_coupling_causal_coupling_contracts_one_invariant_law_2026_09_16.py",
+      "head_sha256": "3eddbf6f41112473174e50c0bb7aacf6b7e65a96fcf1c022cb4bdbc7140d4eff",
+      "main_tree": ""
+    }
+  ]
+}

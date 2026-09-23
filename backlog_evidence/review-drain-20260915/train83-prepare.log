@@ -1,0 +1,187 @@
+[detached HEAD 247972ac75] Preserve independently reviewed source unit PR8166
+ Date: Tue Sep 22 23:18:53 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 141 files changed, 4455 insertions(+)
+ create mode 100644 docs/COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md
+ create mode 100644 docs/COMPACT_ROTOR_CONVEX_CARRIER_BOUNDED_THEOREM_NOTE_2026-09-16.md
+ create mode 100644 docs/COMPACT_ROTOR_INTEGER_FILLING_BOUNDED_THEOREM_NOTE_2026-09-16.md
+ create mode 100644 docs/COMPACT_ROTOR_MAGNETIC_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-16.md
+ create mode 100644 docs/work_history/review_loop/pr8166/README.md
+ create mode 100644 docs/work_history/review_loop/pr8166/manifest.json
+ create mode 100644 docs/work_history/review_loop/pr8166/original-001-6562caa121f9.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-002-283a05a59106.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-003-ca3d0117622e.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-004-f6ad8467c821.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-005-3af220693f82.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-006-eb3b35daa1b4.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-007-25f90cc8d6b3.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-008-55253012a825.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-009-4d1ed36b2638.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-010-ff73e9fb39e1.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-011-916c2b632c56.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-012-caf3b020219a.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-013-6506ef47bc3b.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-014-48fe68cdf576.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-015-b94cf44a471e.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-016-92170260a002.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-017-8a5c1a1ad196.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-018-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-019-a4b8c4bf08a9.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-020-8588c80b9dba.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-021-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-022-069eb44dd404.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-023-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-024-069eb44dd404.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-025-021f3f7c7828.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-026-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-027-d931d7151015.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-028-57bc0c3ac04b.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-029-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-030-e052c1e426b5.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-031-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-032-e052c1e426b5.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-033-3feabc811783.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-034-021f3f7c7828.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-035-b1a379f3b8fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-036-b85840289cb6.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-037-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-038-6676782ecc75.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-039-27aa9b7c41a9.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-040-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-041-312126cf2a93.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-042-0d7e93fd7ea0.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-043-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-044-a2e119b5a9dd.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-045-1496e8982164.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-046-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-047-b5dfb4a76a22.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-048-6d2be5a50b11.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-049-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-050-24518a299094.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-051-f16ba82b8c4e.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-052-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-053-576645698a03.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-054-7307a9ea5d1e.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-055-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-056-adee36433ee8.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-057-e8847795cbe1.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-058-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-059-99510f540022.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-060-796b1a4371dc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-061-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-062-bc3e2730af03.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-063-41d81036e193.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-064-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-065-46c9294b0ad0.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-066-990164ee6474.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-067-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-068-21ca32e387b9.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-069-2cef650e60e3.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-070-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-071-b1a379f3b8fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-072-b85840289cb6.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-073-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-074-6676782ecc75.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-075-27aa9b7c41a9.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-076-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-077-312126cf2a93.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-078-0d7e93fd7ea0.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-079-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-080-a2e119b5a9dd.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-081-1496e8982164.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-082-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-083-24518a299094.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-084-df468a67033f.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-085-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-086-86810f48d66a.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-087-984e14340210.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-088-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-089-add23751eb93.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-090-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-091-c11acf09576f.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-092-c0eab74be777.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-093-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-094-7a92b965578f.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-095-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-096-7a92b965578f.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-097-ebb2df536ebc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-098-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-099-f141c798d5ca.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-100-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-101-f141c798d5ca.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-102-7158fcae794b.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-103-9ba08d32bf12.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-104-f0f617e85da6.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-105-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-106-438207465cdf.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-107-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-108-56eb27c5e27d.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-109-e75459d7a5aa.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-110-766887281d34.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-111-80aac9c8caae.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-112-092c0676ed47.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-113-2fabcbe48157.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-114-197457f2db6f.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-115-c30494fada52.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-116-36a055293c30.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-117-524bc0022a11.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-118-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-119-197457f2db6f.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-120-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-121-75d6a064729c.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-122-e3b0c44298fc.gz
+ create mode 100644 docs/work_history/review_loop/pr8166/original-123-75d6a064729c.gz
+ create mode 100644 logs/runner-cache/compact_rotor_bridge_cubic_check_2026_09_16.json
+ create mode 100644 logs/runner-cache/compact_rotor_bridge_cubic_check_2026_09_16.txt
+ create mode 100644 logs/runner-cache/compact_rotor_convex_carrier_check_2026_09_16.json
+ create mode 100644 logs/runner-cache/compact_rotor_convex_carrier_check_2026_09_16.txt
+ create mode 100644 logs/runner-cache/compact_rotor_integer_filling_check_2026_09_16.json
+ create mode 100644 logs/runner-cache/compact_rotor_integer_filling_check_2026_09_16.txt
+ create mode 100644 logs/runner-cache/compact_rotor_magnetic_covariance_check_2026_09_16.json
+ create mode 100644 logs/runner-cache/compact_rotor_magnetic_covariance_check_2026_09_16.txt
+ create mode 100644 scripts/compact_rotor_bridge_cubic_check_2026_09_16.py
+ create mode 100644 scripts/compact_rotor_convex_carrier_check_2026_09_16.py
+ create mode 100644 scripts/compact_rotor_integer_filling_check_2026_09_16.py
+ create mode 100644 scripts/compact_rotor_magnetic_covariance_check_2026_09_16.py
+[detached HEAD c5e3312940] Preserve independently reviewed source unit PR8169
+ Date: Tue Sep 22 23:12:05 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 15 files changed, 25544 insertions(+)
+ create mode 100644 docs/FRAME_ATTACHED_MENU_EXCHANGE_COVARIANT_PROBABILITIES_BOUNDED_THEOREM_NOTE_2026-09-16.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8169-evidence/DEFERRED_CORRECTED_ENDPOINT_PROOF.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8169-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8169-evidence/archive-manifest.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8169-evidence/kept/ADMISSIBILITY_RULE_FRAME_ATTACHED_FOUR_POINT_MENU_COVARIANT_WEIGHTS_GIBBS_LINEAR_FAMILY_AND_SEQUENTIAL_SUPPORT_OBSTRUCTION_BOUNDED_THEOREM_NOTE_2026-09-16-9744b717438183f6.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8169-evidence/kept/CLAIM_STATUS_CERTIFICATE-2e1efea5ebfa174e.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8169-evidence/kept/HANDOFF-2588781386ad583a.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8169-evidence/kept/OPPORTUNITY_QUEUE-8e0fa176acb36723.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8169-evidence/kept/TRACE_GATE-b16d8ada36906b74.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8169-evidence/kept/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16-4c34d2777f1fd27b.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8169-evidence/kept/admissibility_rule_frame_attached_four_point_menu_weights_gibbs_and_sequential_support_2026_09_16-719bfa0c25e7665f.txt.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8169-evidence/kept/citation_graph_manifest-6a6622bf983c9836.json
+ create mode 100644 logs/runner-cache/frame_attached_menu_exchange_probabilities_2026_09_16.json
+ create mode 100644 logs/runner-cache/frame_attached_menu_exchange_probabilities_2026_09_16.txt
+ create mode 100644 scripts/frame_attached_menu_exchange_probabilities_2026_09_16.py
+FROZEN c5e3312940a3893217169c5499dea49480f2f9a3 sources 156 inputs 189 notes 5

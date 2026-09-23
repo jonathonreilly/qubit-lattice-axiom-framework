@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/private/tmp/review-drain-20260915/check8171/independent_control.py", line 7, in <module>
+    resource.setrlimit(resource.RLIMIT_AS,(512*1024**2,512*1024**2))
+ValueError: current limit exceeds maximum limit

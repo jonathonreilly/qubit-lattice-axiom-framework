@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "kind": "original_independent_review_not_landing_receipt",
+  "pr": 8171,
+  "reviewer_session": "/root/review_8171",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "low",
+  "original_head": "15b6e402b902964ada51ffdd8e8c88fb4e472013",
+  "authority_main": "012c276a64c80cf5256d68fa7dbb06939586153b",
+  "declared_base": "main",
+  "merge_base": "6dda46fc1af02827e9c6b64b2f7d05c381a3ce07",
+  "status": "FIX_REQUIRED",
+  "landing_pass": false,
+  "finding_ids": [
+    "R8171-1",
+    "R8171-2",
+    "R8171-3",
+    "R8171-4",
+    "R8171-5",
+    "R8171-6"
+  ],
+  "findings_fixed": 0,
+  "source_edits": 0,
+  "primary_runs": 0,
+  "simulation_runs": 0,
+  "combined_gates": 0,
+  "commits": [],
+  "report": {
+    "path": "/private/tmp/review-drain-20260915/drain8171-review-original.md",
+    "sha256": "b7cfdf78c9c31453eec2b80e79262b469ae713e1dc82d2b77be48501959bd86a"
+  },
+  "inventory": {
+    "path": "/private/tmp/review-drain-20260915/drain8171-original/inventory.json",
+    "sha256": "5455c7b2f4b44fffceff093a2a80986b862196813659bfab4dfed8ae504136a8"
+  },
+  "payload_manifest": {
+    "path": "/private/tmp/review-drain-20260915/drain8171-original/payload-manifest.json",
+    "sha256": "1f8149af10f6d2c9f76865b1ae3ed902693516d6f13e7cecd371ad57ad9021e8"
+  },
+  "disposition": {
+    "path": "/private/tmp/review-drain-20260915/drain8171-disposition-original.json",
+    "sha256": "605be9fe8a2a8c81f999144371bdb9b73008dd6c0169b4dbd95d9488293d0658"
+  },
+  "controls": [
+    {
+      "path": "/private/tmp/review-drain-20260915/check8171/independent_control.py",
+      "sha256": "0174a2e1b029153d7ed731e908b7c375d80b6a68c3a48c0c0f59af9b9c70bc2a"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8171/independent_control.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8171/independent_control.stdout.json",
+      "sha256": "2d0251879332d91a7048bc28eacbb3b2a67c60fd7f36096b9853f4c9849ca196"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8171/independent_control_v1_failed.py",
+      "sha256": "3cbcb64c586d936a987b197767fd243262ef076e56ae1bf8690fe24a33f1e30e"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8171/independent_control_v1_failed.stderr.txt",
+      "sha256": "f41c599be31a98a3cce5d94ba12a9b61e5ef34f81ad956e3b5b9e6716f4e6e22"
+    }
+  ],
+  "control_scope": "44 finite controls; exact series derivations also manually verified; no original primary or simulations",
+  "actual_limits": {
+    "cpu_seconds": 20,
+    "quadrature_points_per_parameter": 20001,
+    "parameter_count": 6,
+    "hard_memory_limit": null,
+    "memory_strategy": "constant-memory scalar quadrature; macOS rejected initial 512MiB RLIMIT_AS setup before scientific execution; failure preserved"
+  },
+  "same_session_confirmation_required": true,
+  "slot_status": "",
+  "slot_head": "15b6e402b902964ada51ffdd8e8c88fb4e472013"
+}

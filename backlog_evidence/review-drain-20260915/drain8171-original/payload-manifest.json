@@ -1,0 +1,357 @@
+[
+  {
+    "path": "authority/docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+    "bytes": 45923,
+    "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+  },
+  {
+    "path": "authority/docs/CANONICAL_HARNESS_INDEX.md",
+    "bytes": 109354,
+    "sha256": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5"
+  },
+  {
+    "path": "authority/docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "bytes": 4770,
+    "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+  },
+  {
+    "path": "authority/docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "bytes": 11333,
+    "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+  },
+  {
+    "path": "authority/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+    "bytes": 5313,
+    "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+  },
+  {
+    "path": "authority/docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+    "bytes": 2581,
+    "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+  },
+  {
+    "path": "authority/docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+    "bytes": 34639,
+    "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1"
+  },
+  {
+    "path": "authority/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+    "bytes": 6427,
+    "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+  },
+  {
+    "path": "authority/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+    "bytes": 2180,
+    "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+  },
+  {
+    "path": "authority/docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+    "bytes": 16941,
+    "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+  },
+  {
+    "path": "authority/docs/ai_methodology/skills/no-go-discipline/references/case-studies.md",
+    "bytes": 10169,
+    "sha256": "bcd62b9f19e0df5557d6a9b034dd3fa294f942da26f66a19f9e88513b708c3e7"
+  },
+  {
+    "path": "authority/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+    "bytes": 4975,
+    "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+  },
+  {
+    "path": "authority/docs/ai_methodology/skills/review-loop/PREFLIGHT.md",
+    "bytes": 8247,
+    "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb"
+  },
+  {
+    "path": "authority/docs/ai_methodology/skills/review-loop/SKILL.md",
+    "bytes": 19430,
+    "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0"
+  },
+  {
+    "path": "authority/docs/ai_methodology/skills/review-loop/agents/openai.yaml",
+    "bytes": 307,
+    "sha256": "0a1806c7afd1d71fbe50c098a664f66162b33d1bc845721a5dc7c320a32d4d50"
+  },
+  {
+    "path": "authority/docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+    "bytes": 23216,
+    "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7"
+  },
+  {
+    "path": "authority/docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md",
+    "bytes": 3829,
+    "sha256": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4"
+  },
+  {
+    "path": "authority/docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+    "bytes": 6707,
+    "sha256": "bbdb794f3925b1a473db22a94eeaa4d0b6be5e302f6dc1463c27306738b731b3"
+  },
+  {
+    "path": "authority/docs/ai_methodology/skills/review-loop/references/LANDING.md",
+    "bytes": 28160,
+    "sha256": "827032765af31a2f4ef64b3e595173c7e81e2f56b713793aba336228411a4624"
+  },
+  {
+    "path": "authority/docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+    "bytes": 6185,
+    "sha256": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096"
+  },
+  {
+    "path": "authority/docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+    "bytes": 5188,
+    "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482"
+  },
+  {
+    "path": "authority/docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+    "bytes": 10211,
+    "sha256": "cfcb43f40791d8e8772e86fd2b53fb11008c5075e416f8cf4eb84bd18ab71773"
+  },
+  {
+    "path": "authority/docs/ai_methodology/skills/review-loop/references/SALVAGE.md",
+    "bytes": 5009,
+    "sha256": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee"
+  },
+  {
+    "path": "authority/docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+    "bytes": 12918,
+    "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7"
+  },
+  {
+    "path": "authority/docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+    "bytes": 14219,
+    "sha256": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d"
+  },
+  {
+    "path": "authority/docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+    "bytes": 24983,
+    "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+  },
+  {
+    "path": "authority/docs/ai_methodology/skills/review-loop/scripts/review_workspace.py",
+    "bytes": 15405,
+    "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494"
+  },
+  {
+    "path": "authority/docs/audit/README.md",
+    "bytes": 35690,
+    "sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f"
+  },
+  {
+    "path": "authority/docs/audit/data/axiom_premise_nodes.json",
+    "bytes": 6416,
+    "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+  },
+  {
+    "path": "authority/docs/audit/data/ledger/ad/admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06.json",
+    "bytes": 2181,
+    "sha256": "e97db4f7288e611027e3b401e750d3d525e74a9f8c2b1bb2d73db8d5e08445bd"
+  },
+  {
+    "path": "authority/docs/audit/data/premise_decision_history.json",
+    "bytes": 11572,
+    "sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113"
+  },
+  {
+    "path": "authority/docs/repo/ACTIVE_REVIEW_QUEUE.md",
+    "bytes": 20824,
+    "sha256": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8"
+  },
+  {
+    "path": "authority/docs/repo/CONTROLLED_VOCABULARY.md",
+    "bytes": 39977,
+    "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca"
+  },
+  {
+    "path": "authority/docs/repo/DEFERRED_DECISIONS.md",
+    "bytes": 10595,
+    "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e"
+  },
+  {
+    "path": "authority/docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+    "bytes": 3694,
+    "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf"
+  },
+  {
+    "path": "base/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+    "bytes": 879,
+    "sha256": "b02b4a93b36ef5177c8727f1a3d6932ba32dbcb1f4debb3da7f454b6dba566af"
+  },
+  {
+    "path": "base/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+    "bytes": 8140,
+    "sha256": "e52898452cca1ed4e5065f0f8c2e27a7a9afd018a8e8d5867e991d7adf4ba59f"
+  },
+  {
+    "path": "base/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+    "bytes": 10878,
+    "sha256": "c6e70a8f36829082ff26280dfb350c8232111a23fcf3c076c70d45e7ae27df19"
+  },
+  {
+    "path": "base/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+    "bytes": 54405,
+    "sha256": "7beef809b0e4e0b1bc815e3f44f271f80cf951b3b4789d09e7e588819f22b8d7"
+  },
+  {
+    "path": "base/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+    "bytes": 14595,
+    "sha256": "2b955f847d5c0f6e7e6325cbdcc51aeb9bbd0197832d23195b34c5cb969d08a3"
+  },
+  {
+    "path": "base/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+    "bytes": 4403,
+    "sha256": "3cc64ad72621aef21a26cc7948950a42b27a0b4cf63518039dab916261938fe3"
+  },
+  {
+    "path": "base/docs/audit/data/citation_graph_manifest.json",
+    "bytes": 834602,
+    "sha256": "a3dcc3d90687ae261e65dc02caec57008d018c514d8ef6cd6fcbfb0d2806f5fb"
+  },
+  {
+    "path": "head/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+    "bytes": 1881,
+    "sha256": "1cba020fb9defc25a84e2d923a0078b3d0efd420e15ddfdc18601e588f9641da"
+  },
+  {
+    "path": "head/.claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block27_findings.md",
+    "bytes": 2691,
+    "sha256": "096b3cad75462d1a15da6da1dbe6df6cb46c86e042122c82fe9bfc9ffa31467e"
+  },
+  {
+    "path": "head/.claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block27.md",
+    "bytes": 2110,
+    "sha256": "ce141f669b8b48436f391668aa0492d7baa425c5c23ff49de4c145d26fc91203"
+  },
+  {
+    "path": "head/.claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block27.md",
+    "bytes": 3161,
+    "sha256": "1b18eadfdd80151305aa0285587d106fdad95382577d969e0f31cd821066432a"
+  },
+  {
+    "path": "head/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+    "bytes": 9734,
+    "sha256": "abedf5313e49a608c1b161b94caf883beba4fb08ec1f84e15ef0ce89d0a321ee"
+  },
+  {
+    "path": "head/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+    "bytes": 11839,
+    "sha256": "56f4b0082fc00feccac113631ce447a62b0df197eb0b4ee9c6aa3163eb42568d"
+  },
+  {
+    "path": "head/.claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block27.md",
+    "bytes": 4321,
+    "sha256": "aa4f29441bd688a3288dfff1f58a366975c817f79c75ae1ebc3537512815d56c"
+  },
+  {
+    "path": "head/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+    "bytes": 56955,
+    "sha256": "4b3a2eb05a36db5dc4f639f2d9afbbc686459023cc8a350150a2e1c58667a7fd"
+  },
+  {
+    "path": "head/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+    "bytes": 16335,
+    "sha256": "e06eef8f18fb5f278626fe325d35052b19abf9c2acf04c9acc1af8771ae0fa1c"
+  },
+  {
+    "path": "head/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+    "bytes": 5087,
+    "sha256": "909f3831d7460571e94f4d1fa59c4d2747d2c80fa18f96164a0790a3cbbd6b01"
+  },
+  {
+    "path": "head/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block27.out.txt",
+    "bytes": 1226,
+    "sha256": "2514c2dac0d5ff0dc7d8ac659766ab24e6b5986bb0b6d1fd6620e0cdf8b5342d"
+  },
+  {
+    "path": "head/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block27.py",
+    "bytes": 3410,
+    "sha256": "e02dc8c42d276a1b056ff8298e6fde74607e76a878efafae1652140f266260ee"
+  },
+  {
+    "path": "head/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block27_refuter.out.txt",
+    "bytes": 2052,
+    "sha256": "d21836a14544a5b3d52f808f03acd5a90a8a07be22491e75e7db851d83d1e91e"
+  },
+  {
+    "path": "head/.claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block27_refuter.py",
+    "bytes": 4422,
+    "sha256": "da128df339d508035a45c665531bba25496baa45a67f095e458f9157188718bd"
+  },
+  {
+    "path": "head/docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+    "bytes": 45923,
+    "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+  },
+  {
+    "path": "head/docs/ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_WEAK_COUPLING_THE_CAUSAL_COUPLING_CONTRACTS_ONE_INVARIANT_LAW_AND_EXPONENTIAL_LOSS_OF_MEMORY_BELOW_ONE_OVER_ROOT_THREE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "bytes": 25110,
+    "sha256": "12574c05171d7f0971b970fe02dfe7b9aa63d8ff12a6d1c1c82c623115e42504"
+  },
+  {
+    "path": "head/docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "bytes": 11333,
+    "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+  },
+  {
+    "path": "head/docs/audit/data/citation_graph_manifest.json",
+    "bytes": 834860,
+    "sha256": "b9376abac9365831d961031139e8e1d554d809ec2d18066ca2d76120954fab74"
+  },
+  {
+    "path": "head/logs/runner-cache/admissibility_rule_unsoldered_formation_law_weak_coupling_causal_coupling_contracts_one_invariant_law_2026_09_16.txt",
+    "bytes": 3487,
+    "sha256": "3197ef4430778d265c4879759328d34cb64455d93accd24bfdc5a2d5aa4eb924"
+  },
+  {
+    "path": "head/scripts/admissibility_rule_unsoldered_formation_law_weak_coupling_causal_coupling_contracts_one_invariant_law_2026_09_16.py",
+    "bytes": 16979,
+    "sha256": "3eddbf6f41112473174e50c0bb7aacf6b7e65a96fcf1c022cb4bdbc7140d4eff"
+  },
+  {
+    "path": "inventory.json",
+    "bytes": 11148,
+    "sha256": "5455c7b2f4b44fffceff093a2a80986b862196813659bfab4dfed8ae504136a8"
+  },
+  {
+    "path": "main/.claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+    "bytes": 879,
+    "sha256": "b02b4a93b36ef5177c8727f1a3d6932ba32dbcb1f4debb3da7f454b6dba566af"
+  },
+  {
+    "path": "main/.claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+    "bytes": 8140,
+    "sha256": "e52898452cca1ed4e5065f0f8c2e27a7a9afd018a8e8d5867e991d7adf4ba59f"
+  },
+  {
+    "path": "main/.claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+    "bytes": 10878,
+    "sha256": "c6e70a8f36829082ff26280dfb350c8232111a23fcf3c076c70d45e7ae27df19"
+  },
+  {
+    "path": "main/.claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+    "bytes": 54405,
+    "sha256": "7beef809b0e4e0b1bc815e3f44f271f80cf951b3b4789d09e7e588819f22b8d7"
+  },
+  {
+    "path": "main/.claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+    "bytes": 14595,
+    "sha256": "2b955f847d5c0f6e7e6325cbdcc51aeb9bbd0197832d23195b34c5cb969d08a3"
+  },
+  {
+    "path": "main/.claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+    "bytes": 4403,
+    "sha256": "3cc64ad72621aef21a26cc7948950a42b27a0b4cf63518039dab916261938fe3"
+  },
+  {
+    "path": "main/docs/audit/data/citation_graph_manifest.json",
+    "bytes": 886804,
+    "sha256": "aa9f014639362822730e90c8de4214f8f5fb74af8754baee8d111e888b18af65"
+  },
+  {
+    "path": "original.diff",
+    "bytes": 90366,
+    "sha256": "fb01ded926f497f1c25ccfdf3781e9425a5ef80c02749b220c62c0a988db5f24"
+  }
+]

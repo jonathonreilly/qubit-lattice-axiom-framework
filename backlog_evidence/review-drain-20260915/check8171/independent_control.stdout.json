@@ -1,0 +1,98 @@
+{
+  "checks": {
+    "sign_coefficient_1": true,
+    "sign_coefficient_2": true,
+    "sign_coefficient_3": true,
+    "sign_coefficient_4": true,
+    "sign_coefficient_5": true,
+    "sign_coefficient_6": true,
+    "sign_coefficient_7": true,
+    "sign_coefficient_8": true,
+    "sign_coefficient_9": true,
+    "sign_coefficient_10": true,
+    "sign_coefficient_11": true,
+    "sign_coefficient_12": true,
+    "sign_coefficient_13": true,
+    "sign_coefficient_14": true,
+    "sign_coefficient_15": true,
+    "lower_bound_coefficient_1": true,
+    "lower_bound_coefficient_2": true,
+    "lower_bound_coefficient_3": true,
+    "lower_bound_coefficient_4": true,
+    "lower_bound_coefficient_5": true,
+    "lower_bound_coefficient_6": true,
+    "lower_bound_coefficient_7": true,
+    "lower_bound_coefficient_8": true,
+    "lower_bound_coefficient_9": true,
+    "lower_bound_coefficient_10": true,
+    "lower_bound_coefficient_11": true,
+    "lower_bound_coefficient_12": true,
+    "lower_bound_coefficient_13": true,
+    "lower_bound_coefficient_14": true,
+    "lower_bound_coefficient_15": true,
+    "covariance_0": true,
+    "covariance_0.01": true,
+    "moment_0.01": true,
+    "covariance_0.2": true,
+    "moment_0.2": true,
+    "covariance_1": true,
+    "moment_1": true,
+    "covariance_3": true,
+    "moment_3": true,
+    "covariance_10": true,
+    "moment_10": true,
+    "attainable_mean_derivative": true,
+    "wrong_uniform_variance_detected": true,
+    "wrong_mean_slope_detected": true
+  },
+  "quadrature": [
+    {
+      "kappa": 0,
+      "mean": -9.281464485866308e-18,
+      "longitudinal": 0.3333333333333339,
+      "transverse": 0.33333333333333304
+    },
+    {
+      "kappa": 0.01,
+      "mean": 0.0033333111113228787,
+      "longitudinal": 0.3333266667724814,
+      "transverse": 0.33333111113227687
+    },
+    {
+      "kappa": 0.2,
+      "mean": 0.06648956343947354,
+      "longitudinal": 0.3306835035589028,
+      "transverse": 0.3324478171973627
+    },
+    {
+      "kappa": 1,
+      "mean": 0.3130352854993302,
+      "longitudinal": 0.2759383390336911,
+      "transverse": 0.3130352854993309
+    },
+    {
+      "kappa": 3,
+      "mean": 0.671636489980356,
+      "longitudinal": 0.1011467653399643,
+      "transverse": 0.22387882999345143
+    },
+    {
+      "kappa": 10,
+      "mean": 0.9000000041223114,
+      "longitudinal": 0.009999991755384685,
+      "transverse": 0.09000000041222739
+    }
+  ],
+  "attainable_ratios": [
+    [
+      0.01,
+      0.33333111115031777
+    ],
+    [
+      0.001,
+      0.3333333111377157
+    ]
+  ],
+  "elapsed": 0.07420795899815857,
+  "scope": "finite independent controls; all-parameter conclusions require prose series and compactness proof"
+}

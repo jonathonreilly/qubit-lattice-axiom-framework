@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_unsoldered_formation_law_weak_coupling_causal_coupling_contracts_one_invariant_law_2026_09_16.py
+runner_sha256: 3eddbf6f41112473174e50c0bb7aacf6b7e65a96fcf1c022cb4bdbc7140d4eff
+input_fingerprint_sha256: 6636257da744631deed29bb99a64354c5f54d3f7e2422c72a2a12f4888414967
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.55
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_WEAK_COUPLING_THE_CAUSAL_COUPLING_CONTRACTS_ONE_INVARIANT_LAW_AND_EXPONENTIAL_LOSS_OF_MEMORY_BELOW_ONE_OVER_ROOT_THREE_BOUNDED_THEOREM_NOTE_2026-09-16.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
+PASS: A1 the note carries its claim_id once
+PASS: A2 the axioms memo carries the four sentences quoted under Premises
+PASS: A3 block 01's note (on main) carries its claim_id and the rule's product form
+PASS: A4 all declared inputs exist
+PASS: B1 T1(a): Var(w) = A'(kappa) = 1/kappa^2 - 1/sinh^2 kappa for the cosine law proportional to e^{kappa w} on [-1, 1]
+PASS: B2 T1(b): E[((s - A u).d)^2] = A/kappa + (1 - 3A/kappa - A^2) c^2 with c = u.d, from E[s] = A u and E[s s^T] = (A/kappa) I + (1 - 3A/kappa) u u^T
+PASS: B3 T1(c): 1 - 3A/kappa - A^2 = (kappa A' - A)/kappa, and (kappa/2) sinh 2kappa + kappa^2 - 2 sinh^2 kappa = sum_{m>=2} (2^{2m}/(2m)!)(m/2 - 1) kappa^{2m} with the kappa^2 terms cancelling: A(kappa)/kappa is decreasing
+PASS: B4 T1(d): d/dV log f_V = s - A(|V|) V/|V| (symbolic); A(kappa) < kappa/3 at ten rational points by exact enclosure, so the directional second moment is at most A/kappa <= 1/3 and TV(K_V, K_V') <= |V - V'|/(2 sqrt3), W_1 <= |V - V'|/sqrt3
+PASS: C1 T2: the contraction factor is 3 (beta/sqrt3) = sqrt3 beta; it is below 1 at beta = 5773/10^4 and above 1 at beta = 5774/10^4 (sqrt3 enclosed rationally), so the region beta < 1/sqrt3 is the route's
+PASS: C2 T3: A(3 beta) < beta at beta = 1/10, 3/10, 1/2, 577/1000, 1, 3 by exact enclosure, so the one-site rate A(3 beta)^t is below beta^t and the antipodal comparison gives m_t <= (sqrt3 beta)^t for beta < 1/sqrt3
+PASS: D1 T4: A(delta)/delta = 1/3 - delta^2/45 + 2 delta^4/945 - ... and 1/3 - delta^2/45 <= A(delta)/delta < 1/3 at delta = 1/10, 1/4, 1/2, 1, 2 by exact enclosure: the mean map moves by at least a third of a small change, so no coupling of this kind contracts for beta >= 1
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — Var(w) = A'; the directional second moment; the sign lemma's series coefficients; the log-derivative of the density
+per_site: executed — A(3 beta) < beta at six rational points; the reach series and its bounds at five points
+per_mode: executed — the total-variation bound against quadrature (control); the coupled contraction of two runs (refuter)
+per_block: executed — the contraction factor sqrt3 beta and its crossing of 1 between 5773/10^4 and 5774/10^4 by exact enclosure
+lattice_wide: T1-T4 proved for every beta > 0; the region beta < 1/sqrt3 is the route's, not a threshold
+PASS: G1 the five N5 resolution lines are printed
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,67 @@
+# PR 8171 original independent review
+
+Reviewer session: /root/review_8171, configured gpt-6-astra / low. Original review only; no landing PASS, no audit verdict. One iteration; no source edits, commits, primary executions, simulations, or full gates.
+
+## Frozen scope and authority
+
+- Original head: `15b6e402b902964ada51ffdd8e8c88fb4e472013`; declared base `main`; actual merge base with frozen current main: `6dda46fc1af02827e9c6b64b2f7d05c381a3ce07`.
+- Current-main authority: `012c276a64c80cf5256d68fa7dbb06939586153b`. Skill and applicable references, current axiom memo, registry/procedure and all three primitive sources were read from immutable blobs at this same revision. Installed entrypoint agrees with the selected main source. No registered primitive supplies this chosen kernel, sphere menu, records-only reading or level order. These remain explicit mathematical conditions; the framework axioms are not bounded imports.
+- Original two commits comprise the science addition and PR-state closeout. Eighteen changed paths, no deleted original-delta paths. Full paths/modes/Git blobs/base-head-main identities: `drain8171-original/inventory.json`, SHA256 `5455c7b2f4b44fffceff093a2a80986b862196813659bfab4dfed8ae504136a8`.
+- Full binary original delta and full changed files at base/head/main are outside the reusable slot. Payload manifest `drain8171-original/payload-manifest.json`, SHA256 `1f8149af10f6d2c9f76865b1ae3ed902693516d6f13e7cecd371ad57ad9021e8`.
+- Complete original disposition map: `drain8171-disposition-original.json`, SHA256 `605be9fe8a2a8c81f999144371bdb9b73008dd6c0169b4dbd95d9488293d0658`.
+- Complete changed note, primary, controls, refuter, raw outputs, cache, changed campaign additions and manifest delta read. Parent formation/static note inspected for actual definitions and boundary; identical head/current-main bytes. Its current shard is unaudited and grants no derived authority. Its finite-menu classification is not required to prove this explicitly supplied sphere kernel's contraction. The original source's all-parameter moments need a self-contained derivation, not an open sibling's label.
+
+## Material findings (all pending)
+
+### R8171-1 — PROOF_OBLIGATION: existence and measurable coupling (note lines 104–108)
+
+The proof establishes at most one invariant law, then couples to an invariant law without establishing existence. The compact countable product `(S²)^{Z²}` and local continuous kernel allow a narrow repair: show the transition is Feller (first on continuous cylinder functions, then uniform approximation), take Cesàro averages of iterates, extract a weakly convergent subsequence and show its limit invariant. The present near-optimal couplings should also be explicitly measurable in predecessor configurations. A simpler constructive repair keeps the exact proof: use the common-density/maximal coupling with residual independent draws, which is measurable and achieves expected chordal cost ≤ 2 TV. No stronger theorem or physical premise is needed. Clarify D as the cost under a chosen joint coupling, with a corresponding infimum metric when comparing laws. Antipodal comparison gives `|m_t| ≤ q^t`, so avoid the unproved equality `2m_t = |...|` when sign is not established.
+
+### R8171-2 — PROOF_OBLIGATION: all-parameter sphere facts not actually re-proved at scope (note lines 96–100; primary B2/B4/C2)
+
+B2 assumes the second-moment matrix, and B4/C2 check the bound at finitely many rational arguments. The note cites open block 26 for those facts while calling them re-proved. Preserve and complete the argument at scope: integrate `w e^{κw}` and `w² e^{κw}` on [-1,1], use rotational symmetry for transverse moments, and obtain `A/κ ≤ 1/3` directly from the already-proved decrease of `A/κ` and its limit 1/3 at zero. Include κ=0 by continuity. Re-derive the one-site recursion from the mean and conditional expectation. The claimed elementary identities themselves passed independent checks; the defect is proof closure and evidence wording, not a counterexample.
+
+### R8171-3 — PROOF_OBLIGATION / NO_GO_OVERCLAIM: route ceiling and global lower bound (note lines 118–126)
+
+The all-δ lower bound is justified by a small-δ alternating series and five samples, which do not prove its all-δ quantifier. The proof also uses arbitrary vectors near V=0 without exhibiting predecessor unit triples that realize them, and treats β=1 only implicitly as a limit. Narrow correction preserving the entire result is available: multiply the inequality by δ sinh δ. The coefficient of δ^(2n+1) in `δ cosh δ − (1 + δ²/3 − δ⁴/45)sinh δ` is `16n(n−1)(n−2)(n+2)/(45(2n+1)!)` for n≥1: zero at n=1,2, positive thereafter. This entire-series comparison proves the global bound. Three coplanar unit vectors at 120 degrees sum to zero; vary the first on a unit-sphere tangent curve while holding the other two fixed. This makes the small-change mean derivative β/3 admissible. Define the uniform one-predecessor chordal-Wasserstein Lipschitz coefficient explicitly; its supremum is ≥β/3, so the particular criterion `3c<1` cannot hold at β≥1, including β=1 by the limit. This is not a no-go for block, multi-step, state-restricted or different-metric couplings. Likewise the TV limit 1/4 proves only a ceiling 2/3 for the `2 TV`-then-triangle route; the assertion that the uniform TV sensitivity never exceeds 1/4 is numerical only, not a proved sufficient region. Remove the placeholder `(something bounded)`.
+
+### R8171-4 — AUDIT_COMPATIBILITY / REPO_GOVERNANCE: missing dependency links and branch-local claims (note lines 69–81, 172–180)
+
+The source has frontmatter dependency IDs but no Markdown dependency links. The submitted manifest explicitly records out_degree=0. Link the minimal axiom authority and any parent actually used, and declare the exact limited role of each. A self-contained kernel theorem can describe the finite-menu parent as context rather than importing its finite-menu conclusion. Convert live campaign/block/PR table-completion rhetoric to scientific names and narrowly sourced comparisons; do not turn sibling finite simulations into a statement about every coupling or a physical transition. Preserve all unique historical material separately. Regenerate the final topology acknowledgment from current main, never replay this stale manifest wholesale.
+
+### R8171-5 — MISSING_ARTIFACT / BUG: primary evidence overstates execution (primary lines 250–261; note N5 and verification)
+
+The primary prints that quadrature and coupled simulations were executed, but does not invoke either control, declare either as an input/helper, or validate their outputs. `G1` merely checks that there are five strings. Its finite coefficient/sample tests and crossing arithmetic do not execute an infinite-plane uniqueness proof. Use honest primary N5 lines specifying symbolic/finite checks and proof-only or not-executed scopes. Preserve original controls and outputs as historical observations; if made live helpers they require proper discovery/input binding, fail-closed assertions and a separately budgeted execution. Do not rerun them implicitly. The refuter's 200-attempt rejection cap silently retains the common draw at unresolved sites and only prints the final level's unresolved count; any exhaustion at any prior level invalidates its marginal claim. Archive this limitation or repair the live refuter to fail immediately. Its printed ratios also do not establish an all-parameter coupling bound.
+
+### R8171-6 — NO_GO_OVERCLAIM: N1/N5/N7 packet incomplete (note lines 128–162)
+
+The negative route-ceiling claim triggers the gate. N1 has only four entries and they mostly defend positive T2; the mandatory five genuinely distinct route-family packet is absent. N5 misstates primary execution as above. N7 is a novelty defense rather than a concrete strongest counter-route to the claimed ceiling. N2 correctly names no primitive walls; N3 must include actual supplied kernel/menu/order and mathematical existence conditions; N4 must distinguish the finite one-site and broader simulations from the exact uniform coefficient claim; N6 correctly leaves approved primitives out of walls; N8 names related routes but must retain their distinct scopes. Repair with real, honestly classified route challenges scoped to the one-step uniform coefficient criterion. Do not invent five routes or treat the packet defect as mathematical disproof. The broader coupling methods remain outside the ceiling's scope.
+
+## Independent mathematics and executed controls
+
+Manual checks reconstructed the exact obligation chain: exponential sphere density → moments/covariance → longitudinal variance ≤ transverse variance → TV sensitivity → measurable site coupling and triangle inequality → finite-marginal contraction → compact-Feller existence plus uniqueness → rotation invariance and antipodal/one-site bounds. This is conditional on the supplied kernel and level automaton, not a derivation of physical dynamics.
+
+`check8171/independent_control.py` uses only the standard library, no author import: exact convolution coefficients for the sign lemma; a separately derived entire-series coefficient formula for the lower bound; direct streamed Simpson integration of normalized density moments at κ=0,.01,.2,1,3,10; an admissible zero-sum predecessor path; wrong variance and slope controls. All 44 Boolean controls passed, elapsed about 0.074 s. Finite numerics are support, not universal proof. Source, stdout JSON and stderr are retained. Actual CPU hard cap was 20 seconds; streaming constant-memory loop (20,001 points, scalar accumulation), no successful hard memory cap. Initial RLIMIT_AS=512 MiB setup was rejected by macOS before any science ran; original script/error preserved as `independent_control_v1_failed.py` and `.stderr.txt`. Recovery removed that unsupported limit and ran the bounded scalar checks once. No author mutation census was executed; final repaired primary needs adversarial decisive-formula checks under its separately authorized limits.
+
+## Source preservation and resource/input plan
+
+Keep every original path/blob in the disposition map. Canonical note and primary are narrow-repair candidates, preserving all four full proofs, not replacing them with summaries. The historical control, refuter, raw outputs and sampler-zero recovery are useful evidence and must remain recoverable, with the rejection-cap limitation. The naive shared-uniform/rotated-frame negative attempt is historical, not a proved no-go. Campaign certificates/state/handoffs are non-authoritative history; do not overwrite current-main campaign files with the stale versions or drop unique block-27 additions. No original deletion is needed. The original cache is historical, to be superseded only by a fresh final-source receipt.
+
+Current-main note/primary paths are absent at the frozen main; shared historical files and the manifest differ and require append-only/archive handling and regeneration. The broad head-vs-main diff is stale ancestry, not authorization to delete thousands of newer main files. Integration must start from current main, preserve every existing source byte except explicitly reviewed additions/changes, and recheck semantic interactions against its exact final base. No current-main source has been edited here.
+
+Final primary is small symbolic/rational work; freeze the final note, runner, actual axiom and parent inputs before one bounded run plus meaningful mutation controls. Original timeout 900 seconds is author metadata, not an authorization or a need to use 900 seconds. A 60-second wall / bounded-memory run should be ample subject to coordinator's actual plan. Controls/refuter simulations are not needed to establish the repaired theorem and are not authorized implicitly by archive preservation. Any later execution must have explicit actual limits and retain failures/partial output. Combined pipeline/lint/evidence occurs once at coordinator integration, not here. Formal audit remains deferred.
+
+## Lens summary and disposition
+
+- Code/Runner: FIX; primary mathematics plausible but proof/execution claims and refuter cap need correction or archival limitation.
+- Physics/Imports: BOUNDED / DISCLOSED after explicit kernel/menu/order/reading and standard compactness/coupling inputs; no physical selection, empirical input, ruler or new primitive.
+- Proof: CONDITIONAL core; stated original proof incomplete at the identified narrow steps. No target-equivalent terminal science gap found.
+- Nature retention: BOUNDED candidate only; not retained or Nature-ready.
+- No-Go: FAIL original N1/N5/N7 packet; narrow route ceiling salvageable.
+- Labeling: PASS; substantive algebra/probability, not a naming convention.
+- Governance/Audit compatibility: FIX; no author verdicts may land. Proposed claim ID remains the original note's ID, subject only to independent audit later.
+- Methodology: not applicable to science source; historical author methodology claims grant no standing.
+
+Six material finding groups, none fixed in this review. Narrow honest salvage recommended; original source is not ready for enrollment. Same reviewer session must inspect all repairs, complete final original/current-main dispositions, declared inputs and cold final source before source confirmation. Full gates, commits, landing and PR/branch maintenance remain coordinator-owned.
+
+FINAL ORIGINAL REVIEW: FIX REQUIRED — salvage all four proof surfaces with narrow corrections; NO LANDING PASS.

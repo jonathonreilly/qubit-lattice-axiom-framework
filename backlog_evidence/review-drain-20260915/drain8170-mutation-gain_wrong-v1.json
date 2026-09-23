@@ -1,0 +1,1103 @@
+{
+  "status": "EXPECTED_MUTATION_REJECTION_OBSERVED; finite diagnostic only, not universal proof",
+  "mutation": "gain_wrong",
+  "expected_family": "C",
+  "command": [
+    "/usr/local/bin/python3",
+    "-u",
+    "/private/tmp/review-drain-20260915/drain-author-slot/scripts/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.py",
+    "--mutation",
+    "gain_wrong"
+  ],
+  "exit_code": 1,
+  "error": null,
+  "elapsed_seconds": 4.032976709015202,
+  "whole_tree_watchdog": {
+    "limit_seconds": 900,
+    "limit_bytes": 805306368,
+    "sampling_interval_seconds": 0.02,
+    "samples": 79,
+    "peak_tree_rss_bytes": 104054784,
+    "violations": [],
+    "scope": "External supervisor plus runner and descendants; sampled aggregate RSS, not OS hard reservation"
+  },
+  "before": {
+    "docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md": {
+      "sha256": "bd7968234832dcd13368f4208b2081a69aaf9674b1e9b24b65f44ee986f26b0a",
+      "device": 16777231,
+      "inode": 251013825,
+      "size": 19956,
+      "mtime_ns": 1790133587489624738,
+      "ctime_ns": 1790133587489624738
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/DEFERRED_SCIENCE.md": {
+      "sha256": "d84528a412c74cc2e9a5e8bb59c8fff49ba04ae58e5ee766a65641c248405db2",
+      "device": 16777231,
+      "inode": 251013826,
+      "size": 3804,
+      "mtime_ns": 1790133587489798028,
+      "ctime_ns": 1790133587489798028
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/README.md": {
+      "sha256": "618fd4f90d72f42aa428258ae0a44019c22f8acfd88f3573a4eedfeeb8b7f39f",
+      "device": 16777231,
+      "inode": 251013827,
+      "size": 6192,
+      "mtime_ns": 1790133587490064274,
+      "ctime_ns": 1790133587490064274
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/archive-manifest.json": {
+      "sha256": "20b3d0e8675e742dbb95f6929c5cdb63f5358ff826a334955ae22935b6d1f251",
+      "device": 16777231,
+      "inode": 251013824,
+      "size": 13522,
+      "mtime_ns": 1790133587489360283,
+      "ctime_ns": 1790133587489360283
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_IN_LEVEL_TIME_GAIN_ONE_SPIN_WAVES_LOCAL_LIMIT_CONSTANT_FINITE_PLANES_FORGET_AND_THE_SIMULATED_ALGEBRAIC_DECAY_OF_THE_INITIAL_PLANE_MEMORY_BOUNDED_THEOREM_NOTE_2026-09-16-e50aaf4b6686e647.md": {
+      "sha256": "8495f04ed691512ec1830f870965c3a149b7e77330f2a9ed0d40e6fa46887578",
+      "device": 16777231,
+      "inode": 251013820,
+      "size": 37044,
+      "mtime_ns": 1790133587462536762,
+      "ctime_ns": 1790133587462554554
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/APPROACH_REGISTRY-4e9fef47b9eac07d.md": {
+      "sha256": "24ea06f9384ee6eb4becbad9cf8132d32a753e821c0f8488a1308e9fcf685ecf",
+      "device": 16777231,
+      "inode": 251013799,
+      "size": 2177,
+      "mtime_ns": 1790133587452554087,
+      "ctime_ns": 1790133587452631086
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/CHECKER_block26_findings-c0a6cd25f43f3f2c.md": {
+      "sha256": "6c7d0f099effdd8349bb75de1adbaa85a54aaf0822ea429e6a66fca4e8896b74",
+      "device": 16777231,
+      "inode": 251013800,
+      "size": 3732,
+      "mtime_ns": 1790133587453150122,
+      "ctime_ns": 1790133587453178413
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/CLAIM_STATUS_CERTIFICATE_block26-315a8231a89a61c4.md": {
+      "sha256": "ebf19ceedb084cdc1a8e6ccc865d8dd5f06ba58f8b6dc50ac5a9045db9bb580a",
+      "device": 16777231,
+      "inode": 251013801,
+      "size": 2557,
+      "mtime_ns": 1790133587453661408,
+      "ctime_ns": 1790133587453690699
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/GOAL_block26-083903adfde6cc31.md": {
+      "sha256": "8d5d40f4796993afc416746d092b6385ba93378ab247a955797afaedad05d151",
+      "device": 16777231,
+      "inode": 251013802,
+      "size": 6059,
+      "mtime_ns": 1790133587454233401,
+      "ctime_ns": 1790133587454253526
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/HANDOFF-2061d1bff2a70397.md": {
+      "sha256": "b85c9887abf8f9af60f2974d02d8c1a036ea3db4c969895237c29fc6f46f90ed",
+      "device": 16777231,
+      "inode": 251013803,
+      "size": 10387,
+      "mtime_ns": 1790133587454564689,
+      "ctime_ns": 1790133587454581647
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/NO_GO_LEDGER-05cc24d6760014de.md": {
+      "sha256": "9d9d9077de70a3e446bb15eb57d148c418d4f8a7b868753c7016dfe7aedf0d8f",
+      "device": 16777231,
+      "inode": 251013804,
+      "size": 2462,
+      "mtime_ns": 1790133587454728729,
+      "ctime_ns": 1790133587454743770
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/OPPORTUNITY_QUEUE-72e985a42c72b74e.md": {
+      "sha256": "1776ff224ff72af33f15155d54dd9d157d476102cf4bf80e62d9ab0471846dd3",
+      "device": 16777231,
+      "inode": 251013805,
+      "size": 12186,
+      "mtime_ns": 1790133587455136682,
+      "ctime_ns": 1790133587455153848
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/RESULTS_block26-0263fa9278e61353.md": {
+      "sha256": "800fb7d3beb194b60b4447d9c723f9e226aa6421730ac807054747f6923aabd8",
+      "device": 16777231,
+      "inode": 251013806,
+      "size": 6532,
+      "mtime_ns": 1790133587455824341,
+      "ctime_ns": 1790133587455854424
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/REVIEW_HISTORY-5eeaa28fca70564a.md": {
+      "sha256": "5b780ecf7ed43201a33effef1feb629e96679b9f4c009f0f1f745e4bd15fd638",
+      "device": 16777231,
+      "inode": 251013807,
+      "size": 57587,
+      "mtime_ns": 1790133587456449292,
+      "ctime_ns": 1790133587456474250
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/STATE-829e293fc3eb28c8.yaml": {
+      "sha256": "d2966b891d3b55d236ef97cd65fd608c892963248b808bb2903d040f2771ca64",
+      "device": 16777231,
+      "inode": 251013808,
+      "size": 16765,
+      "mtime_ns": 1790133587457464863,
+      "ctime_ns": 1790133587457482196
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/TRACE_GATE-151b6bec86e6fa6b.md": {
+      "sha256": "fc93de23a14a7ea7705c6d21045aae9e5a89da4456613519de1104a52437d3f6",
+      "device": 16777231,
+      "inode": 251013809,
+      "size": 5244,
+      "mtime_ns": 1790133587457952774,
+      "ctime_ns": 1790133587457978732
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16-7a6b13bd8dc79184.py": {
+      "sha256": "94d81cac39baf54ef7ae701a8436b3bd891652dc8cae1471e0f3c1d7379006f0",
+      "device": 16777231,
+      "inode": 251013823,
+      "size": 27909,
+      "mtime_ns": 1790133587489053453,
+      "ctime_ns": 1790133587489085536
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16-e85af41ebb5f3988.txt.gz": {
+      "sha256": "48cf7c7fedc99a9063348915102a0c519d657dac72780285a21950064ea91ac9",
+      "device": 16777231,
+      "inode": 251013822,
+      "size": 2568,
+      "mtime_ns": 1790133587488570459,
+      "ctime_ns": 1790133587488621916
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/citation_graph_manifest-c62d06ab535f0231.json.gz": {
+      "sha256": "76107dad032c1759fa09a95cf7aac56f984c1dc18ef6ea86d7609c311ce870ca",
+      "device": 16777231,
+      "inode": 251013821,
+      "size": 128222,
+      "mtime_ns": 1790133587486987019,
+      "ctime_ns": 1790133587487037268
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_exact-0e078d3e64a7b76c.py": {
+      "sha256": "a8f7a98bfe52150682ee4f1258feaf4a981f1667dbc8636969bb711e41aa4869",
+      "device": 16777231,
+      "inode": 251013811,
+      "size": 2768,
+      "mtime_ns": 1790133587458609767,
+      "ctime_ns": 1790133587458626808
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_exact.out-891d6f3da2690316.txt.gz": {
+      "sha256": "46d6a4bfcc3cc34bda23fc4a1b44bb95162a463334c31daa69edfcbed09ac693",
+      "device": 16777231,
+      "inode": 251013810,
+      "size": 390,
+      "mtime_ns": 1790133587458283020,
+      "ctime_ns": 1790133587458308353
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_fit-75dc4ad65a2006b6.py": {
+      "sha256": "e3e747a96d357aa924633cdd2fc787328928f70ab365786e87af02d59be62a82",
+      "device": 16777231,
+      "inode": 251013813,
+      "size": 2345,
+      "mtime_ns": 1790133587459019970,
+      "ctime_ns": 1790133587459034220
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_fit.out-e65f9660e918cddf.txt.gz": {
+      "sha256": "2e6dd197db579e5d16da975ed6572c0db1f4d4b312348fcffc0057ea5c39a53e",
+      "device": 16777231,
+      "inode": 251013812,
+      "size": 764,
+      "mtime_ns": 1790133587458838597,
+      "ctime_ns": 1790133587458853264
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_refuter-eb0b609f3f34e516.py": {
+      "sha256": "a45d93a50107988710e370ea8fcfd3e5c02c9d9acc021c7d4c7d65389b4b8474",
+      "device": 16777231,
+      "inode": 251013815,
+      "size": 5660,
+      "mtime_ns": 1790133587460214123,
+      "ctime_ns": 1790133587460282080
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_refuter.out-6369a7bd268aca02.txt.gz": {
+      "sha256": "b2002e8f3ea785e0d5a36f37ce85a2a3be1a102c3374f4c66b4281e1600c2e01",
+      "device": 16777231,
+      "inode": 251013814,
+      "size": 2779,
+      "mtime_ns": 1790133587459752253,
+      "ctime_ns": 1790133587459767295
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_sixaxis_sim-42e69bc4a408b08b.py": {
+      "sha256": "1ff3e186c5eb7c7777ac0ccbafe3555724305e892a9e7f381f37c497472458ea",
+      "device": 16777231,
+      "inode": 251013817,
+      "size": 1108,
+      "mtime_ns": 1790133587461594982,
+      "ctime_ns": 1790133587461612898
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_sixaxis_sim.out-69da2aaa54f4ba02.txt.gz": {
+      "sha256": "2168ab947944e6583ef7e504febc0a58e85f0712c1553709efe44290db2be474",
+      "device": 16777231,
+      "inode": 251013816,
+      "size": 574,
+      "mtime_ns": 1790133587460966739,
+      "ctime_ns": 1790133587460985072
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_sphere_sim-fa0bc7e4e8db6745.py": {
+      "sha256": "d1a2a10be02d8c4aacb3922a8b619ed1e98b8a44c2b5a08f5a252a66327d233e",
+      "device": 16777231,
+      "inode": 251013819,
+      "size": 1817,
+      "mtime_ns": 1790133587462353389,
+      "ctime_ns": 1790133587462370389
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_sphere_sim.out-d6fb9c6074f0412b.txt.gz": {
+      "sha256": "c46a7ee8fd505a3126d4a4f74bae7f412378a7dfa969fe24914acc4293d81051",
+      "device": 16777231,
+      "inode": 251013818,
+      "size": 1851,
+      "mtime_ns": 1790133587462080268,
+      "ctime_ns": 1790133587462096517
+    },
+    "scripts/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.py": {
+      "sha256": "3bcc5fd69299c8c176321bd95ae46416a3325e4a0ed1f9916ff820baf7236cca",
+      "device": 16777231,
+      "inode": 251013828,
+      "size": 24549,
+      "mtime_ns": 1790133713000468966,
+      "ctime_ns": 1790133713000494091
+    },
+    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md": {
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "device": 16777231,
+      "inode": 243427797,
+      "size": 45923,
+      "mtime_ns": 1790108668945355435,
+      "ctime_ns": 1790108668945355435
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "device": 16777231,
+      "inode": 243429907,
+      "size": 11333,
+      "mtime_ns": 1790108669195469850,
+      "ctime_ns": 1790108669195469850
+    },
+    "docs/ADMISSIBILITY_RULE_CUBIC_WALK_RETURN_SUM_AND_SPHERE_STATIC_MAGNETIZATION_SUFFICIENT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "sha256": "4007d47a15efe7ba10159ea268cbae4ddd1b5420c6b5fcbd6a88e6917aba2ac2",
+      "device": 16777231,
+      "inode": 246706442,
+      "size": 14900,
+      "mtime_ns": 1790117193169651720,
+      "ctime_ns": 1790117193169651720
+    },
+    "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_FINITE_TORUS_MAGNETIZATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "sha256": "1ead528308a21cded343d0790dd9de2715eeacdc47d6d1b4922a3358dbcbe179",
+      "device": 16777231,
+      "inode": 246706443,
+      "size": 17238,
+      "mtime_ns": 1790117193170748134,
+      "ctime_ns": 1790117193170748134
+    },
+    "docs/ADMISSIBILITY_RULE_STATIC_SIX_AXIS_REFLECTION_IDENTITIES_AND_CONDITIONAL_CONTOUR_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "sha256": "9632e807157b58cbbbac39d9632f2806b49ec221a664c3dda5f941106833bd16",
+      "device": 16777231,
+      "inode": 245460925,
+      "size": 23369,
+      "mtime_ns": 1790114113779944645,
+      "ctime_ns": 1790114113779944645
+    },
+    "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md": {
+      "sha256": "01b4ca057540b1f84b261f5b7ce4328540b7efa9ca845a95c14e9952a75006e2",
+      "device": 16777231,
+      "inode": 250732974,
+      "size": 42255,
+      "mtime_ns": 1790131590995943282,
+      "ctime_ns": 1790131590995943282
+    },
+    "docs/ai_methodology/skills/review-loop/PREFLIGHT.md": {
+      "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb",
+      "device": 16777231,
+      "inode": 243431864,
+      "size": 8247,
+      "mtime_ns": 1790108669462053399,
+      "ctime_ns": 1790108669462053399
+    },
+    "docs/ai_methodology/skills/review-loop/SKILL.md": {
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+      "device": 16777231,
+      "inode": 243431865,
+      "size": 19430,
+      "mtime_ns": 1790108669462907356,
+      "ctime_ns": 1790108669462907356
+    },
+    "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md": {
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "device": 16777231,
+      "inode": 243431869,
+      "size": 23216,
+      "mtime_ns": 1790108669463918979,
+      "ctime_ns": 1790108669463918979
+    },
+    "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md": {
+      "sha256": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4",
+      "device": 16777231,
+      "inode": 243431870,
+      "size": 3829,
+      "mtime_ns": 1790108669464022562,
+      "ctime_ns": 1790108669464022562
+    },
+    "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md": {
+      "sha256": "bbdb794f3925b1a473db22a94eeaa4d0b6be5e302f6dc1463c27306738b731b3",
+      "device": 16777231,
+      "inode": 243431871,
+      "size": 6707,
+      "mtime_ns": 1790108669464386686,
+      "ctime_ns": 1790108669464386686
+    },
+    "docs/ai_methodology/skills/review-loop/references/LANDING.md": {
+      "sha256": "827032765af31a2f4ef64b3e595173c7e81e2f56b713793aba336228411a4624",
+      "device": 16777231,
+      "inode": 243431872,
+      "size": 28160,
+      "mtime_ns": 1790108669464756310,
+      "ctime_ns": 1790108669464756310
+    },
+    "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md": {
+      "sha256": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096",
+      "device": 16777231,
+      "inode": 243431873,
+      "size": 6185,
+      "mtime_ns": 1790108669464945643,
+      "ctime_ns": 1790108669464945643
+    },
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md": {
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "device": 16777231,
+      "inode": 243431874,
+      "size": 5188,
+      "mtime_ns": 1790108669465040518,
+      "ctime_ns": 1790108669465040518
+    },
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md": {
+      "sha256": "cfcb43f40791d8e8772e86fd2b53fb11008c5075e416f8cf4eb84bd18ab71773",
+      "device": 16777231,
+      "inode": 243431875,
+      "size": 10211,
+      "mtime_ns": 1790108669465259018,
+      "ctime_ns": 1790108669465259018
+    },
+    "docs/ai_methodology/skills/review-loop/references/SALVAGE.md": {
+      "sha256": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee",
+      "device": 16777231,
+      "inode": 243431876,
+      "size": 5009,
+      "mtime_ns": 1790108669465444976,
+      "ctime_ns": 1790108669465444976
+    },
+    "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md": {
+      "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7",
+      "device": 16777231,
+      "inode": 243431877,
+      "size": 12918,
+      "mtime_ns": 1790108669465629517,
+      "ctime_ns": 1790108669465629517
+    },
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": {
+      "sha256": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d",
+      "device": 16777231,
+      "inode": 243431878,
+      "size": 14219,
+      "mtime_ns": 1790108669465806142,
+      "ctime_ns": 1790108669465806142
+    },
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": {
+      "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc",
+      "device": 16777231,
+      "inode": 243431880,
+      "size": 24983,
+      "mtime_ns": 1790108669466229974,
+      "ctime_ns": 1790108669466229974
+    },
+    "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py": {
+      "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494",
+      "device": 16777231,
+      "inode": 243431881,
+      "size": 15405,
+      "mtime_ns": 1790108669466342891,
+      "ctime_ns": 1790108669466342891
+    },
+    "docs/audit/data/axiom_premise_nodes.json": {
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "device": 16777231,
+      "inode": 243431932,
+      "size": 6416,
+      "mtime_ns": 1790108669485160144,
+      "ctime_ns": 1790108669485160144
+    },
+    "docs/audit/data/doc_authority_registry.json": {
+      "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173",
+      "device": 16777231,
+      "inode": 243431948,
+      "size": 6052,
+      "mtime_ns": 1790108669497710203,
+      "ctime_ns": 1790108669497710203
+    },
+    "docs/audit/scripts/build_citation_graph.py": {
+      "sha256": "b2117b565aa795e67cd62d0f49f89cf2ed83a14d9d3447c1600ee0bf9c0ba8c5",
+      "device": 16777231,
+      "inode": 250453995,
+      "size": 74385,
+      "mtime_ns": 1790130277864422415,
+      "ctime_ns": 1790130277864422415
+    },
+    "docs/audit/scripts/ledger_io.py": {
+      "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+      "device": 16777231,
+      "inode": 243437117,
+      "size": 12227,
+      "mtime_ns": 1790108670257678346,
+      "ctime_ns": 1790108670257678346
+    },
+    "docs/audit/scripts/static_pipeline_checkpoint.py": {
+      "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+      "device": 16777231,
+      "inode": 243437139,
+      "size": 28870,
+      "mtime_ns": 1790108670269135489,
+      "ctime_ns": 1790108670269135489
+    },
+    "scripts/audit_packet_script_deps.py": {
+      "sha256": "38210e23dbe9d703552c0381a3719b2a9a1551004028e0d64714da1bee3ddd8d",
+      "device": 16777231,
+      "inode": 250454675,
+      "size": 39496,
+      "mtime_ns": 1790130277976851664,
+      "ctime_ns": 1790130277976851664
+    },
+    "scripts/runner_cache.py": {
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "device": 16777231,
+      "inode": 243487404,
+      "size": 24941,
+      "mtime_ns": 1790108676934937623,
+      "ctime_ns": 1790108676934937623
+    },
+    "logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.json": {
+      "sha256": "a0fe2c7586344abff18c783f0ef7920998ac8da3c802e1f43af53a79edf84b4e",
+      "device": 16777231,
+      "inode": 251609064,
+      "size": 5077,
+      "mtime_ns": 1790134948770554164,
+      "ctime_ns": 1790134948770554164
+    },
+    "logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.txt": {
+      "sha256": "dc7e5fd12c14d6b4d5e8d87657b6c3c4bc9fd9ddacf0b5ed0049d02a7be7f30f",
+      "device": 16777231,
+      "inode": 251609066,
+      "size": 4694,
+      "mtime_ns": 1790134948862895886,
+      "ctime_ns": 1790134948862895886
+    }
+  },
+  "after": {
+    "docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md": {
+      "sha256": "bd7968234832dcd13368f4208b2081a69aaf9674b1e9b24b65f44ee986f26b0a",
+      "device": 16777231,
+      "inode": 251013825,
+      "size": 19956,
+      "mtime_ns": 1790133587489624738,
+      "ctime_ns": 1790133587489624738
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/DEFERRED_SCIENCE.md": {
+      "sha256": "d84528a412c74cc2e9a5e8bb59c8fff49ba04ae58e5ee766a65641c248405db2",
+      "device": 16777231,
+      "inode": 251013826,
+      "size": 3804,
+      "mtime_ns": 1790133587489798028,
+      "ctime_ns": 1790133587489798028
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/README.md": {
+      "sha256": "618fd4f90d72f42aa428258ae0a44019c22f8acfd88f3573a4eedfeeb8b7f39f",
+      "device": 16777231,
+      "inode": 251013827,
+      "size": 6192,
+      "mtime_ns": 1790133587490064274,
+      "ctime_ns": 1790133587490064274
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/archive-manifest.json": {
+      "sha256": "20b3d0e8675e742dbb95f6929c5cdb63f5358ff826a334955ae22935b6d1f251",
+      "device": 16777231,
+      "inode": 251013824,
+      "size": 13522,
+      "mtime_ns": 1790133587489360283,
+      "ctime_ns": 1790133587489360283
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_IN_LEVEL_TIME_GAIN_ONE_SPIN_WAVES_LOCAL_LIMIT_CONSTANT_FINITE_PLANES_FORGET_AND_THE_SIMULATED_ALGEBRAIC_DECAY_OF_THE_INITIAL_PLANE_MEMORY_BOUNDED_THEOREM_NOTE_2026-09-16-e50aaf4b6686e647.md": {
+      "sha256": "8495f04ed691512ec1830f870965c3a149b7e77330f2a9ed0d40e6fa46887578",
+      "device": 16777231,
+      "inode": 251013820,
+      "size": 37044,
+      "mtime_ns": 1790133587462536762,
+      "ctime_ns": 1790133587462554554
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/APPROACH_REGISTRY-4e9fef47b9eac07d.md": {
+      "sha256": "24ea06f9384ee6eb4becbad9cf8132d32a753e821c0f8488a1308e9fcf685ecf",
+      "device": 16777231,
+      "inode": 251013799,
+      "size": 2177,
+      "mtime_ns": 1790133587452554087,
+      "ctime_ns": 1790133587452631086
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/CHECKER_block26_findings-c0a6cd25f43f3f2c.md": {
+      "sha256": "6c7d0f099effdd8349bb75de1adbaa85a54aaf0822ea429e6a66fca4e8896b74",
+      "device": 16777231,
+      "inode": 251013800,
+      "size": 3732,
+      "mtime_ns": 1790133587453150122,
+      "ctime_ns": 1790133587453178413
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/CLAIM_STATUS_CERTIFICATE_block26-315a8231a89a61c4.md": {
+      "sha256": "ebf19ceedb084cdc1a8e6ccc865d8dd5f06ba58f8b6dc50ac5a9045db9bb580a",
+      "device": 16777231,
+      "inode": 251013801,
+      "size": 2557,
+      "mtime_ns": 1790133587453661408,
+      "ctime_ns": 1790133587453690699
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/GOAL_block26-083903adfde6cc31.md": {
+      "sha256": "8d5d40f4796993afc416746d092b6385ba93378ab247a955797afaedad05d151",
+      "device": 16777231,
+      "inode": 251013802,
+      "size": 6059,
+      "mtime_ns": 1790133587454233401,
+      "ctime_ns": 1790133587454253526
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/HANDOFF-2061d1bff2a70397.md": {
+      "sha256": "b85c9887abf8f9af60f2974d02d8c1a036ea3db4c969895237c29fc6f46f90ed",
+      "device": 16777231,
+      "inode": 251013803,
+      "size": 10387,
+      "mtime_ns": 1790133587454564689,
+      "ctime_ns": 1790133587454581647
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/NO_GO_LEDGER-05cc24d6760014de.md": {
+      "sha256": "9d9d9077de70a3e446bb15eb57d148c418d4f8a7b868753c7016dfe7aedf0d8f",
+      "device": 16777231,
+      "inode": 251013804,
+      "size": 2462,
+      "mtime_ns": 1790133587454728729,
+      "ctime_ns": 1790133587454743770
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/OPPORTUNITY_QUEUE-72e985a42c72b74e.md": {
+      "sha256": "1776ff224ff72af33f15155d54dd9d157d476102cf4bf80e62d9ab0471846dd3",
+      "device": 16777231,
+      "inode": 251013805,
+      "size": 12186,
+      "mtime_ns": 1790133587455136682,
+      "ctime_ns": 1790133587455153848
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/RESULTS_block26-0263fa9278e61353.md": {
+      "sha256": "800fb7d3beb194b60b4447d9c723f9e226aa6421730ac807054747f6923aabd8",
+      "device": 16777231,
+      "inode": 251013806,
+      "size": 6532,
+      "mtime_ns": 1790133587455824341,
+      "ctime_ns": 1790133587455854424
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/REVIEW_HISTORY-5eeaa28fca70564a.md": {
+      "sha256": "5b780ecf7ed43201a33effef1feb629e96679b9f4c009f0f1f745e4bd15fd638",
+      "device": 16777231,
+      "inode": 251013807,
+      "size": 57587,
+      "mtime_ns": 1790133587456449292,
+      "ctime_ns": 1790133587456474250
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/STATE-829e293fc3eb28c8.yaml": {
+      "sha256": "d2966b891d3b55d236ef97cd65fd608c892963248b808bb2903d040f2771ca64",
+      "device": 16777231,
+      "inode": 251013808,
+      "size": 16765,
+      "mtime_ns": 1790133587457464863,
+      "ctime_ns": 1790133587457482196
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/TRACE_GATE-151b6bec86e6fa6b.md": {
+      "sha256": "fc93de23a14a7ea7705c6d21045aae9e5a89da4456613519de1104a52437d3f6",
+      "device": 16777231,
+      "inode": 251013809,
+      "size": 5244,
+      "mtime_ns": 1790133587457952774,
+      "ctime_ns": 1790133587457978732
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16-7a6b13bd8dc79184.py": {
+      "sha256": "94d81cac39baf54ef7ae701a8436b3bd891652dc8cae1471e0f3c1d7379006f0",
+      "device": 16777231,
+      "inode": 251013823,
+      "size": 27909,
+      "mtime_ns": 1790133587489053453,
+      "ctime_ns": 1790133587489085536
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16-e85af41ebb5f3988.txt.gz": {
+      "sha256": "48cf7c7fedc99a9063348915102a0c519d657dac72780285a21950064ea91ac9",
+      "device": 16777231,
+      "inode": 251013822,
+      "size": 2568,
+      "mtime_ns": 1790133587488570459,
+      "ctime_ns": 1790133587488621916
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/citation_graph_manifest-c62d06ab535f0231.json.gz": {
+      "sha256": "76107dad032c1759fa09a95cf7aac56f984c1dc18ef6ea86d7609c311ce870ca",
+      "device": 16777231,
+      "inode": 251013821,
+      "size": 128222,
+      "mtime_ns": 1790133587486987019,
+      "ctime_ns": 1790133587487037268
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_exact-0e078d3e64a7b76c.py": {
+      "sha256": "a8f7a98bfe52150682ee4f1258feaf4a981f1667dbc8636969bb711e41aa4869",
+      "device": 16777231,
+      "inode": 251013811,
+      "size": 2768,
+      "mtime_ns": 1790133587458609767,
+      "ctime_ns": 1790133587458626808
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_exact.out-891d6f3da2690316.txt.gz": {
+      "sha256": "46d6a4bfcc3cc34bda23fc4a1b44bb95162a463334c31daa69edfcbed09ac693",
+      "device": 16777231,
+      "inode": 251013810,
+      "size": 390,
+      "mtime_ns": 1790133587458283020,
+      "ctime_ns": 1790133587458308353
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_fit-75dc4ad65a2006b6.py": {
+      "sha256": "e3e747a96d357aa924633cdd2fc787328928f70ab365786e87af02d59be62a82",
+      "device": 16777231,
+      "inode": 251013813,
+      "size": 2345,
+      "mtime_ns": 1790133587459019970,
+      "ctime_ns": 1790133587459034220
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_fit.out-e65f9660e918cddf.txt.gz": {
+      "sha256": "2e6dd197db579e5d16da975ed6572c0db1f4d4b312348fcffc0057ea5c39a53e",
+      "device": 16777231,
+      "inode": 251013812,
+      "size": 764,
+      "mtime_ns": 1790133587458838597,
+      "ctime_ns": 1790133587458853264
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_refuter-eb0b609f3f34e516.py": {
+      "sha256": "a45d93a50107988710e370ea8fcfd3e5c02c9d9acc021c7d4c7d65389b4b8474",
+      "device": 16777231,
+      "inode": 251013815,
+      "size": 5660,
+      "mtime_ns": 1790133587460214123,
+      "ctime_ns": 1790133587460282080
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_refuter.out-6369a7bd268aca02.txt.gz": {
+      "sha256": "b2002e8f3ea785e0d5a36f37ce85a2a3be1a102c3374f4c66b4281e1600c2e01",
+      "device": 16777231,
+      "inode": 251013814,
+      "size": 2779,
+      "mtime_ns": 1790133587459752253,
+      "ctime_ns": 1790133587459767295
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_sixaxis_sim-42e69bc4a408b08b.py": {
+      "sha256": "1ff3e186c5eb7c7777ac0ccbafe3555724305e892a9e7f381f37c497472458ea",
+      "device": 16777231,
+      "inode": 251013817,
+      "size": 1108,
+      "mtime_ns": 1790133587461594982,
+      "ctime_ns": 1790133587461612898
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_sixaxis_sim.out-69da2aaa54f4ba02.txt.gz": {
+      "sha256": "2168ab947944e6583ef7e504febc0a58e85f0712c1553709efe44290db2be474",
+      "device": 16777231,
+      "inode": 251013816,
+      "size": 574,
+      "mtime_ns": 1790133587460966739,
+      "ctime_ns": 1790133587460985072
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_sphere_sim-fa0bc7e4e8db6745.py": {
+      "sha256": "d1a2a10be02d8c4aacb3922a8b619ed1e98b8a44c2b5a08f5a252a66327d233e",
+      "device": 16777231,
+      "inode": 251013819,
+      "size": 1817,
+      "mtime_ns": 1790133587462353389,
+      "ctime_ns": 1790133587462370389
+    },
+    "docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_sphere_sim.out-d6fb9c6074f0412b.txt.gz": {
+      "sha256": "c46a7ee8fd505a3126d4a4f74bae7f412378a7dfa969fe24914acc4293d81051",
+      "device": 16777231,
+      "inode": 251013818,
+      "size": 1851,
+      "mtime_ns": 1790133587462080268,
+      "ctime_ns": 1790133587462096517
+    },
+    "scripts/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.py": {
+      "sha256": "3bcc5fd69299c8c176321bd95ae46416a3325e4a0ed1f9916ff820baf7236cca",
+      "device": 16777231,
+      "inode": 251013828,
+      "size": 24549,
+      "mtime_ns": 1790133713000468966,
+      "ctime_ns": 1790133713000494091
+    },
+    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md": {
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "device": 16777231,
+      "inode": 243427797,
+      "size": 45923,
+      "mtime_ns": 1790108668945355435,
+      "ctime_ns": 1790108668945355435
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "device": 16777231,
+      "inode": 243429907,
+      "size": 11333,
+      "mtime_ns": 1790108669195469850,
+      "ctime_ns": 1790108669195469850
+    },
+    "docs/ADMISSIBILITY_RULE_CUBIC_WALK_RETURN_SUM_AND_SPHERE_STATIC_MAGNETIZATION_SUFFICIENT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "sha256": "4007d47a15efe7ba10159ea268cbae4ddd1b5420c6b5fcbd6a88e6917aba2ac2",
+      "device": 16777231,
+      "inode": 246706442,
+      "size": 14900,
+      "mtime_ns": 1790117193169651720,
+      "ctime_ns": 1790117193169651720
+    },
+    "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_FINITE_TORUS_MAGNETIZATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "sha256": "1ead528308a21cded343d0790dd9de2715eeacdc47d6d1b4922a3358dbcbe179",
+      "device": 16777231,
+      "inode": 246706443,
+      "size": 17238,
+      "mtime_ns": 1790117193170748134,
+      "ctime_ns": 1790117193170748134
+    },
+    "docs/ADMISSIBILITY_RULE_STATIC_SIX_AXIS_REFLECTION_IDENTITIES_AND_CONDITIONAL_CONTOUR_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md": {
+      "sha256": "9632e807157b58cbbbac39d9632f2806b49ec221a664c3dda5f941106833bd16",
+      "device": 16777231,
+      "inode": 245460925,
+      "size": 23369,
+      "mtime_ns": 1790114113779944645,
+      "ctime_ns": 1790114113779944645
+    },
+    "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md": {
+      "sha256": "01b4ca057540b1f84b261f5b7ce4328540b7efa9ca845a95c14e9952a75006e2",
+      "device": 16777231,
+      "inode": 250732974,
+      "size": 42255,
+      "mtime_ns": 1790131590995943282,
+      "ctime_ns": 1790131590995943282
+    },
+    "docs/ai_methodology/skills/review-loop/PREFLIGHT.md": {
+      "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb",
+      "device": 16777231,
+      "inode": 243431864,
+      "size": 8247,
+      "mtime_ns": 1790108669462053399,
+      "ctime_ns": 1790108669462053399
+    },
+    "docs/ai_methodology/skills/review-loop/SKILL.md": {
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+      "device": 16777231,
+      "inode": 243431865,
+      "size": 19430,
+      "mtime_ns": 1790108669462907356,
+      "ctime_ns": 1790108669462907356
+    },
+    "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md": {
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "device": 16777231,
+      "inode": 243431869,
+      "size": 23216,
+      "mtime_ns": 1790108669463918979,
+      "ctime_ns": 1790108669463918979
+    },
+    "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md": {
+      "sha256": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4",
+      "device": 16777231,
+      "inode": 243431870,
+      "size": 3829,
+      "mtime_ns": 1790108669464022562,
+      "ctime_ns": 1790108669464022562
+    },
+    "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md": {
+      "sha256": "bbdb794f3925b1a473db22a94eeaa4d0b6be5e302f6dc1463c27306738b731b3",
+      "device": 16777231,
+      "inode": 243431871,
+      "size": 6707,
+      "mtime_ns": 1790108669464386686,
+      "ctime_ns": 1790108669464386686
+    },
+    "docs/ai_methodology/skills/review-loop/references/LANDING.md": {
+      "sha256": "827032765af31a2f4ef64b3e595173c7e81e2f56b713793aba336228411a4624",
+      "device": 16777231,
+      "inode": 243431872,
+      "size": 28160,
+      "mtime_ns": 1790108669464756310,
+      "ctime_ns": 1790108669464756310
+    },
+    "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md": {
+      "sha256": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096",
+      "device": 16777231,
+      "inode": 243431873,
+      "size": 6185,
+      "mtime_ns": 1790108669464945643,
+      "ctime_ns": 1790108669464945643
+    },
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md": {
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "device": 16777231,
+      "inode": 243431874,
+      "size": 5188,
+      "mtime_ns": 1790108669465040518,
+      "ctime_ns": 1790108669465040518
+    },
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md": {
+      "sha256": "cfcb43f40791d8e8772e86fd2b53fb11008c5075e416f8cf4eb84bd18ab71773",
+      "device": 16777231,
+      "inode": 243431875,
+      "size": 10211,
+      "mtime_ns": 1790108669465259018,
+      "ctime_ns": 1790108669465259018
+    },
+    "docs/ai_methodology/skills/review-loop/references/SALVAGE.md": {
+      "sha256": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee",
+      "device": 16777231,
+      "inode": 243431876,
+      "size": 5009,
+      "mtime_ns": 1790108669465444976,
+      "ctime_ns": 1790108669465444976
+    },
+    "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md": {
+      "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7",
+      "device": 16777231,
+      "inode": 243431877,
+      "size": 12918,
+      "mtime_ns": 1790108669465629517,
+      "ctime_ns": 1790108669465629517
+    },
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": {
+      "sha256": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d",
+      "device": 16777231,
+      "inode": 243431878,
+      "size": 14219,
+      "mtime_ns": 1790108669465806142,
+      "ctime_ns": 1790108669465806142
+    },
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": {
+      "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc",
+      "device": 16777231,
+      "inode": 243431880,
+      "size": 24983,
+      "mtime_ns": 1790108669466229974,
+      "ctime_ns": 1790108669466229974
+    },
+    "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py": {
+      "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494",
+      "device": 16777231,
+      "inode": 243431881,
+      "size": 15405,
+      "mtime_ns": 1790108669466342891,
+      "ctime_ns": 1790108669466342891
+    },
+    "docs/audit/data/axiom_premise_nodes.json": {
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "device": 16777231,
+      "inode": 243431932,
+      "size": 6416,
+      "mtime_ns": 1790108669485160144,
+      "ctime_ns": 1790108669485160144
+    },
+    "docs/audit/data/doc_authority_registry.json": {
+      "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173",
+      "device": 16777231,
+      "inode": 243431948,
+      "size": 6052,
+      "mtime_ns": 1790108669497710203,
+      "ctime_ns": 1790108669497710203
+    },
+    "docs/audit/scripts/build_citation_graph.py": {
+      "sha256": "b2117b565aa795e67cd62d0f49f89cf2ed83a14d9d3447c1600ee0bf9c0ba8c5",
+      "device": 16777231,
+      "inode": 250453995,
+      "size": 74385,
+      "mtime_ns": 1790130277864422415,
+      "ctime_ns": 1790130277864422415
+    },
+    "docs/audit/scripts/ledger_io.py": {
+      "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+      "device": 16777231,
+      "inode": 243437117,
+      "size": 12227,
+      "mtime_ns": 1790108670257678346,
+      "ctime_ns": 1790108670257678346
+    },
+    "docs/audit/scripts/static_pipeline_checkpoint.py": {
+      "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+      "device": 16777231,
+      "inode": 243437139,
+      "size": 28870,
+      "mtime_ns": 1790108670269135489,
+      "ctime_ns": 1790108670269135489
+    },
+    "scripts/audit_packet_script_deps.py": {
+      "sha256": "38210e23dbe9d703552c0381a3719b2a9a1551004028e0d64714da1bee3ddd8d",
+      "device": 16777231,
+      "inode": 250454675,
+      "size": 39496,
+      "mtime_ns": 1790130277976851664,
+      "ctime_ns": 1790130277976851664
+    },
+    "scripts/runner_cache.py": {
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "device": 16777231,
+      "inode": 243487404,
+      "size": 24941,
+      "mtime_ns": 1790108676934937623,
+      "ctime_ns": 1790108676934937623
+    },
+    "logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.json": {
+      "sha256": "a0fe2c7586344abff18c783f0ef7920998ac8da3c802e1f43af53a79edf84b4e",
+      "device": 16777231,
+      "inode": 251609064,
+      "size": 5077,
+      "mtime_ns": 1790134948770554164,
+      "ctime_ns": 1790134948770554164
+    },
+    "logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.txt": {
+      "sha256": "dc7e5fd12c14d6b4d5e8d87657b6c3c4bc9fd9ddacf0b5ed0049d02a7be7f30f",
+      "device": 16777231,
+      "inode": 251609066,
+      "size": 4694,
+      "mtime_ns": 1790134948862895886,
+      "ctime_ns": 1790134948862895886
+    }
+  },
+  "structured_result": {
+    "checks": [
+      {
+        "tag": "A1",
+        "passed": true,
+        "detail": "the note carries its claim_id once"
+      },
+      {
+        "tag": "A2",
+        "passed": true,
+        "detail": "the axioms memo carries the four sentences quoted under Premises"
+      },
+      {
+        "tag": "A3",
+        "passed": true,
+        "detail": "block 01's note (on main) carries its claim_id and the rule's product form"
+      },
+      {
+        "tag": "A4",
+        "passed": true,
+        "detail": "all three declared inputs match exact source/parent pins"
+      },
+      {
+        "tag": "B1",
+        "passed": true,
+        "detail": "T1: for the sphere kernel with concentration kappa, E[w] = coth kappa - 1/kappa =: A(kappa) and E[w^2] = 1 - 2A/kappa (w the cosine to the mean direction), so E[s|S] = A u and E[s s^T|S] = (A/kappa) I + (1 - 3A/kappa) u u^T; the density against the uniform law on the sphere is (kappa/sinh kappa) e^{kappa s.u}"
+      },
+      {
+        "tag": "B2",
+        "passed": true,
+        "detail": "Positive-series coefficient 4n(n-1)/(2n+1)! proves f>0 for k>0 and A<k/3; ten original rational enclosure fixtures retained"
+      },
+      {
+        "tag": "B4",
+        "passed": true,
+        "detail": "At k=1, sinh^2(1)>62/45>4/3 gives A_prime(1)>1/4; historical derivative upper bound rejected"
+      },
+      {
+        "tag": "B3",
+        "passed": true,
+        "detail": "T1: the one-step magnetization from the aligned plane is A(3 beta): in [8888, 8889]/10^4 at beta = 3, [9444, 9445]/10^4 at 6, [9722, 9723]/10^4 at 12, [9861, 9862]/10^4 at 24 (exact enclosures); the one-step transverse second moment is 2A(3 beta)/(3 beta)"
+      },
+      {
+        "tag": "C1",
+        "passed": false,
+        "detail": "T2: beta s.(s_1 + s_2 + s_3) = 3 beta - (beta/2) sum_i |theta - theta_i|^2 + O(4) in transverse coordinates; the maximum is the average of the three (mode gain one, not exact mean gain) with Hessian -3 beta I; the exact one-step transverse variance is A(3 beta)/(3 beta) per component"
+      },
+      {
+        "tag": "C2",
+        "passed": true,
+        "detail": "Exact common-rotation mean gain A(3 beta), Jacobian A(3 beta)/3 times transverse predecessor sum; gain-one auxiliary model is separate"
+      },
+      {
+        "tag": "D1",
+        "passed": true,
+        "detail": "T3: p_k(-a, -b) = k!/(a! b! (k-a-b)!)/3^k by direct enumeration of the 3^k paths for k <= 6, and P_k = sum_y p_k(y)^2 (the return sum)"
+      },
+      {
+        "tag": "D2",
+        "passed": true,
+        "detail": "T3: for k <= 150 the exact return sums satisfy 3 sqrt3/(4 pi k) - 1/k^2 - (5/(2k)) e^{-k/4} <= P_k <= 3 sqrt3/(4 pi k) + 27/k^2 + e^{-sqrt(k)/7}, with sqrt3, pi and the exponentials enclosed rationally; k^2 |P_k - 3 sqrt3/(4 pi k)| stays below 1"
+      },
+      {
+        "tag": "D3",
+        "passed": true,
+        "detail": "T3: 1 - u = (4/9)[sin^2(theta1/2) + sin^2(theta2/2) + sin^2((theta1 - theta2)/2)], the quadratic part is theta^T M theta with det M = 1/27, the Gaussian integrals are 3 sqrt3 pi/k, (3 sqrt3 pi/k)(2/k^2) and 1458 pi/k^3; sum_{k<=t} P_k >= (3 sqrt3/(4 pi)) H_t - 6/25 for t <= 150 exactly and the tail beyond 150 costs at most 1/100, giving the constant 1/4 for every t; the upper sum including P0 is 1 + 27 pi^2/6 + 98 < 150"
+      },
+      {
+        "tag": "E1",
+        "passed": true,
+        "detail": "T4: on the one-site periodic plane the chain s_{t+1} ~ K_beta(.|3 s_t) has E[s_{t+1}.e | s_t] = A(3 beta)(s_t.e), so m_t = A(3 beta)^t exactly"
+      },
+      {
+        "tag": "E2",
+        "passed": true,
+        "detail": "T4: the kernel's density against the uniform law on the sphere is at least 2 kappa/(e^{2 kappa} - 1) >= 2 kappa e^{-2 kappa}, decreasing in kappa; on an L x L plane the level kernel has density at least (6 beta/(e^{6 beta} - 1))^{L^2}, a uniform minorization"
+      },
+      {
+        "tag": "E3",
+        "passed": true,
+        "detail": "T5: gamma(beta) = (3 sqrt3/(4 pi)) A(3 beta)/(3 beta) lies in [408, 409]/10^4 at beta = 3, [216, 217]/10^4 at 6, [1116, 1117]/10^5 at 12, [566, 567]/10^5 at 24 (exact enclosures)"
+      },
+      {
+        "tag": "E4",
+        "passed": true,
+        "detail": "side-by-side: at the six-axis weights (e^beta, e^-beta, 1) the three deviations are (e^{-3 beta} + 4)/(e^{3 beta} + e^{-3 beta} + 4), (e^{-beta} + 4)/(e^{beta} + e^{-beta} + 4), (e^{-2 beta} + e^{beta} + e^{-beta} + 2)/(e^{2 beta} + e^{-2 beta} + e^{beta} + e^{-beta} + 2); the aligned-triple deviation is below 1/1600 at beta = 3 and below 1/10^7 at beta = 6"
+      }
+    ],
+    "passed": 16,
+    "failed": 1,
+    "source_sha256": "3bcc5fd69299c8c176321bd95ae46416a3325e4a0ed1f9916ff820baf7236cca",
+    "input_sha256": {
+      "docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md": "bd7968234832dcd13368f4208b2081a69aaf9674b1e9b24b65f44ee986f26b0a",
+      "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+    },
+    "mutation": "gain_wrong"
+  },
+  "artifacts": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-gain_wrong-v1.stdout.txt",
+      "sha256": "084743a3ebe4957eb50b9856613eb5eef78dd5bf1682d02bcc70d0583427ae1b"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-gain_wrong-v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain-author-slot/logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--gain_wrong.json",
+      "sha256": "9f7b6e0c215282bd7195ec82d25f54e24112349950899e34f51a5dd0ba90e717"
+    }
+  ],
+  "primary_receipt": {
+    "path": "/private/tmp/review-drain-20260915/drain8170-execution-v2.json",
+    "sha256": "2e1c3b552c2f124359f1ba5477b2ada78510272e124bea3eae44b340c070831b"
+  },
+  "record": {
+    "path": "/private/tmp/review-drain-20260915/drain8170-author-unit-draft-v1.json",
+    "sha256": "c06333ca7a1f24fe9f4cbdbe38d37063188a23c8353f0ff80ef6c804bd8f2677"
+  },
+  "cold": {
+    "path": "/private/tmp/review-drain-20260915/drain8170-cold-adapter-confirmation-v2.json",
+    "sha256": "4c1b862894176eb5079b3ffd81d30490e0862a741fcbe773dd5bd14b3078d625"
+  },
+  "adapter": {
+    "path": "/private/tmp/review-drain-20260915/drain8170-mutation-capture-v1.py",
+    "sha256": "54d4a4d1974e7295b5b1a7ad38d353bc74d0bb3dbbfe86a253b29a1831aa849e"
+  },
+  "baseline_runs": 0,
+  "mutation_attempts": 1,
+  "simulation_runs": 0
+}

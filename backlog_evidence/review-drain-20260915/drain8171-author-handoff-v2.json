@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "kind": "author-preparation-handoff-not-independent-verdict",
+  "pr": 8171,
+  "owner": "PR8171-author",
+  "base": "8bf464953779b8ada8415208e89a656411f9f525",
+  "original_head": "15b6e402b902964ada51ffdd8e8c88fb4e472013",
+  "source_count": 23,
+  "archive_entries": 18,
+  "canonical_note_count": 1,
+  "primary_count": 1,
+  "readable_deferred_science_count": 1,
+  "source_revision": 2,
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-review-original.json",
+      "sha256": "4bccd0d13a9ee51daca545fbdfeca8acd72126d1896cad6312aa3fb80599bf0a"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-review-original.md",
+      "sha256": "b7cfdf78c9c31453eec2b80e79262b469ae713e1dc82d2b77be48501959bd86a"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-disposition-original.json",
+      "sha256": "605be9fe8a2a8c81f999144371bdb9b73008dd6c0169b4dbd95d9488293d0658"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-author-prepared-v1.json",
+      "sha256": "49a30294f03b39e731ca6a5763d34c6845b3770612d810f896e379f809ca2f58"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-author-prepared-v2.json",
+      "sha256": "70b6331cf48a0da2b64ff88a8f4279758fa48ef8e299b6b3d48ff469f79f75d5"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-source-freeze-v2.json",
+      "sha256": "8e64c2032b8e37f5b24d4c33414d5ece9a1394284605b3c52646202d45e35ced"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-author-dispositions-v1.json",
+      "sha256": "f648a2f9ccc78dbab982be3853c986ac5ddf34e08a2e623d7439a3f91c534c80"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-author-corrections-v2.patch",
+      "sha256": "67e78c861a7f8fb38552de458ba78927eca135c86f45add79aba76a07b76c56e"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-source-input-discovery-v2.json",
+      "sha256": "38103e9bf7c1b25d0645f517b06fd0ff29cab51f3bc5c1bd677b0010d6aa0aea"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-resource-plan-v2.json",
+      "sha256": "7ac5e32c604a0fa248fa9f6f6efeadd0c6cf076b4204f2bda218cd528e408350"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-preparation-discovery-failures-v1.json",
+      "sha256": "5cf4b23dabbb417fa915ba3741b4f431dfb2dce6c155ccf7cd893498c309867a"
+    }
+  ],
+  "authority": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "revision": "8bf464953779b8ada8415208e89a656411f9f525"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "revision": "8bf464953779b8ada8415208e89a656411f9f525"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "revision": "8bf464953779b8ada8415208e89a656411f9f525"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "revision": "8bf464953779b8ada8415208e89a656411f9f525"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "revision": "8bf464953779b8ada8415208e89a656411f9f525"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "revision": "8bf464953779b8ada8415208e89a656411f9f525"
+    }
+  ],
+  "findings": [
+    {
+      "id": "R8171-1",
+      "author_disposition": "Measurable common-density/residual coupling, compact-Feller Cesaro existence, chosen-cost versus infimum distinction, absolute antipodal bound."
+    },
+    {
+      "id": "R8171-2",
+      "author_disposition": "Direct moments, transverse symmetry, zero limit and strict decrease, direct conditional one-site recursion; full original T1 algebra retained."
+    },
+    {
+      "id": "R8171-3",
+      "author_disposition": "Entire-series global bound and full admissible predecessor/ceiling proof; positive inequalities live, corrected negative implication in readable deferred-science recovery."
+    },
+    {
+      "id": "R8171-4",
+      "author_disposition": "One real axiom link; finite-menu source context-only and runtime-bound; native prose; stale campaign and graph manifest exact archive only."
+    },
+    {
+      "id": "R8171-5",
+      "author_disposition": "Honest symbolic/finite five-class N5; stdout-only; original controls/refuter never imported; rejection-cap and missing all-level report limitation explicit."
+    },
+    {
+      "id": "R8171-6",
+      "author_disposition": "Explicit deferred N1/N5/N7 status; no fabricated fifth attack; actionable multistep/block counterroute and proper residual scope."
+    }
+  ],
+  "checks": {
+    "static_compile": true,
+    "computational_ast_equal_after_report_string_normalization": [
+      "exp_bounds",
+      "A_bounds",
+      "sqrt_bounds",
+      "family_b",
+      "family_c",
+      "family_d"
+    ],
+    "all_source_hashes_and_modes_frozen": true,
+    "archives_verified_against_original_git_blobs": 18,
+    "source_input_API": true,
+    "tracked_changes": 0,
+    "index_changes": 0,
+    "primary_runs": 0,
+    "simulation_runs": 0,
+    "mutation_runs": 0,
+    "gate_runs": 0
+  },
+  "pending": [
+    "Root-dispatched original same-session early affected review",
+    "Fresh-main guarded staging and canonical schema2 receipt only when root authorizes",
+    "Cheap preflight and original cold confirmation before root-owned bounded evidence capture",
+    "Meaningful decisive-formula mutation confirmation under separate root dispatch",
+    "Current-main interaction and combined gate"
+  ],
+  "branch_preservation_required": true
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "kind": "proposed-resource-and-execution-contract-not-execution",
+  "primary": "scripts/sphere_formation_kernel_sensitivity_level_contraction_check_2026_09_16.py",
+  "timeout_seconds": 60,
+  "memory_limit_bytes": 402653184,
+  "limits_status": "proposed unmeasured for corrected source; requires original reviewer confirmation and root dispatch",
+  "historical_measurement": {
+    "original_timeout_seconds": 900,
+    "elapsed_seconds": 0.55,
+    "source": "original archived cache; original runner and original inputs only",
+    "peak_memory_bytes": null
+  },
+  "cost": {
+    "symbolic": "Three one-dimensional exponential integrals, derivatives/simplifications in at most six symbolic scalar variables, 3x3 matrices, one power series to order26 and one to order8.",
+    "rational": "10+6+5 finite scalar enclosures; largest exponential argument144, default Taylor n=330; linear scalar Fraction accumulation, no exponential-size arrays.",
+    "imports": "SymPy imported once; no local helper or simulator imports; top-level sqrt enclosure only.",
+    "memory": "No large arrays or lattice configurations; interpreter and symbolic expression management dominate. 384MiB watchdog is proposed, not measured peak or proven bound."
+  },
+  "expected_completed_checks": 16,
+  "count_scope": "A4+B4+C2+D1+F4+G1; finite symbolic/rational and packaging checks, not infinite-plane execution",
+  "stdout": true,
+  "json_outputs": [],
+  "other_output_writes": [],
+  "cache_destination": "logs/runner-cache/sphere_formation_kernel_sensitivity_level_contraction_check_2026_09_16.txt",
+  "mutations": "10 existing mutation routes available; historical census only; any future mutation dispatch is root-owned",
+  "no_primary_run": true
+}

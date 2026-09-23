@@ -1,0 +1,20 @@
+{
+  "status": "RESERVED; exactly one invocation for this name, no automatic retry",
+  "mutation": "exponent_wrong",
+  "record": {
+    "path": "/private/tmp/review-drain-20260915/drain8170-author-unit-draft-v1.json",
+    "sha256": "c06333ca7a1f24fe9f4cbdbe38d37063188a23c8353f0ff80ef6c804bd8f2677"
+  },
+  "primary_receipt": {
+    "path": "/private/tmp/review-drain-20260915/drain8170-execution-v2.json",
+    "sha256": "2e1c3b552c2f124359f1ba5477b2ada78510272e124bea3eae44b340c070831b"
+  },
+  "cold": {
+    "path": "/private/tmp/review-drain-20260915/drain8170-cold-adapter-confirmation-v2.json",
+    "sha256": "4c1b862894176eb5079b3ffd81d30490e0862a741fcbe773dd5bd14b3078d625"
+  },
+  "adapter": {
+    "path": "/private/tmp/review-drain-20260915/drain8170-mutation-capture-v1.py",
+    "sha256": "54d4a4d1974e7295b5b1a7ad38d353bc74d0bb3dbbfe86a253b29a1831aa849e"
+  }
+}

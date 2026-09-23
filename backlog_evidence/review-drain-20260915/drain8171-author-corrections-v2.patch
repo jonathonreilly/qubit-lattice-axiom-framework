@@ -1,0 +1,524 @@
+--- docs/ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_WEAK_COUPLING_THE_CAUSAL_COUPLING_CONTRACTS_ONE_INVARIANT_LAW_AND_EXPONENTIAL_LOSS_OF_MEMORY_BELOW_ONE_OVER_ROOT_THREE_BOUNDED_THEOREM_NOTE_2026-09-16.md
++++ docs/SPHERE_FORMATION_KERNEL_SENSITIVITY_AND_LEVEL_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,52 +1,34 @@
+ ---
+-claim_id: admissibility_rule_unsoldered_formation_law_weak_coupling_the_causal_coupling_contracts_one_invariant_law_and_exponential_loss_of_memory_below_one_over_root_three_bounded_theorem_note_2026-09-16
++claim_id: sphere_formation_kernel_sensitivity_and_level_contraction_bounded_theorem_note_2026-09-16
+ claim_type: bounded_theorem
+-claim_scope: "For the unsoldered (sphere) formation law of the covariant rule with overlap weight e^{beta s.s'} on Z^3 in level order — the record at x drawn from K_beta(s | s_{x-e_1}, s_{x-e_2}, s_{x-e_3}) proportional to e^{beta s.S}, S the sum of the three recorded predecessors, read as the synchronous level automaton on Z^2: (T1) the kernel K_V(ds) = (|V|/(4 pi sinh|V|)) e^{V.s} dsigma has total-variation sensitivity TV(K_V, K_V') <= |V - V'|/(2 sqrt3) and Wasserstein sensitivity W_1(K_V, K_V') <= |V - V'|/sqrt3 for the chordal distance, through the exponential-family identity Var(w) = A'(kappa), the directional second moment E[((s - A u).d)^2] = A/kappa + (1 - 3A/kappa - A^2)(u.d)^2, the sign lemma 1 - 3A/kappa - A^2 <= 0 (A(kappa)/kappa decreasing, proved by a term-by-term series comparison) and A/kappa <= 1/3 (proved; symbolic and exact); (T2) the causal coupling of two initial planes contracts the per-site expected chordal distance by sqrt3 beta per level, so for beta < 1/sqrt3 the level automaton has exactly one invariant law, invariant under all rotations, and the law of any level from any initial plane is within 2 (sqrt3 beta)^t of it per site (proved); (T3) from the aligned plane the magnetization obeys m_t <= (sqrt3 beta)^t for beta < 1/sqrt3, and on the one-site plane m_t = A(3 beta)^t with A(3 beta) <= beta (proved); (T4) no coupling argument of this kind proves contraction beyond beta = 1, since W_1(K_V, K_V') >= |F(V) - F(V')| with F(V) = A(|V|) V/|V| and A(delta)/delta >= 1/3 - delta^2/45 (proved); the total-variation sensitivity is numerically 1/4 per unit at small |V| (route reach 2/3), the proved constant 1/(2 sqrt3) sits between. The constant 1/sqrt3 is the route's, not a threshold (block 26 executes the loss of memory at every coupling tried); no menu, reading, order or coupling is selected as physical; exact arithmetic throughout the runner."
++claim_scope: "For the supplied sphere exponential kernel, records-only reading and three-predecessor synchronous level order: all-parameter moment and sensitivity bounds; measurable causal contraction q=sqrt(3) beta; compact-Feller invariant-law existence and uniqueness for 0<=beta<1/sqrt(3); finite-marginal exponential approach and absolute aligned magnetization bound; exact one-site recursion and positive mean-map inequalities. Formal negative route certification is deferred outside this row. No physical kernel, menu, order or threshold is selected."
+ upstream_dependencies:
+   - minimal_axioms
+-  - admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06
+-runner: scripts/admissibility_rule_unsoldered_formation_law_weak_coupling_causal_coupling_contracts_one_invariant_law_2026_09_16.py
++runner: scripts/sphere_formation_kernel_sensitivity_level_contraction_check_2026_09_16.py
+ ---
+ 
+-# The unsoldered formation law at weak coupling: the causal coupling contracts, one invariant law, and exponential loss of memory below `1/√3`
++# Sphere-kernel sensitivity and contraction of the supplied level law
+ 
+ **Date:** 2026-09-16
+ **Type:** bounded_theorem
+-**Status:** bounded-support (exact; conditional on the named supplied readings; unaudited)
++**Status:** bounded-support; supplied-model theorem, unaudited.
++**Primary runner:** [exact finite checks](../scripts/sphere_formation_kernel_sensitivity_level_contraction_check_2026_09_16.py).
++**Cache destination:** [source-bound stdout](../logs/runner-cache/sphere_formation_kernel_sensitivity_level_contraction_check_2026_09_16.txt).
+ 
+ ## Result up front
+ 
+-Block 26 ran the sphere formation law at strong coupling and watched the
+-memory of its initial plane fade algebraically, without a proof. This note
+-proves the weak-coupling side, where the loss is exponential and the proof is
+-a contraction: change one of a record's three predecessors and its law moves,
+-in total variation, by at most `1/(2√3)` times `β` times the size of the
+-change. Coupling two runs from different initial planes site by site, the
+-expected distance between corresponding records shrinks by the factor `√3β`
+-at every level. Below `β = 1/√3` this makes every initial plane forgotten
+-exponentially fast, leaves exactly one invariant law, invariant under all
+-rotations, and bounds the aligned plane's magnetization by `(√3β)^t`. The
+-constant comes from a sign lemma about the sphere kernel — its variance along
+-the axis never exceeds its variance across it — which is a one-line series
+-comparison once written as `A(κ)/κ` decreasing. The route cannot reach past
+-`β = 1` (the kernel's mean alone moves by a third of the change), and its
+-total-variation version would stop at `2/3`; block 26's runs say the memory
+-is lost at every coupling, so `1/√3` is a route constant, not a threshold.
+-
+-This completes the campaign's four-way table of explicit weak-coupling
+-uniqueness regions: six-axis static (block 03), six-axis formation (block 08,
+-`3c < 1`), sphere static (block 21, `β < √3/6`), sphere formation (here,
+-`β < 1/√3`). In plain words: when the rule's preference for agreement is
+-weak, every arrangement of records loses its memory of where it started,
+-whichever menu and whichever reading; the two readings differ only in how
+-much preference it takes to keep a memory, and — for the sphere — in whether
+-any amount does (block 19 against block 26).
+-
+-Exactly: the sensitivity bounds (T1); the contraction, uniqueness and
+-the exponential approach to the one law (T2); `m_t ≤ (√3β)^t` and the one-site rate `A(3β)^t`
+-(T3); the reach of the route (T4). Executed with exact arithmetic: 16 checks,
+-10 mutations; the total-variation bound against quadrature and the
+-magnetization against its bound in the control and refuter specs.
++For the supplied kernel and synchronous level order below, the total-variation
++sensitivity is at most `|V−V'|/(2√3)`. A measurable causal coupling contracts
++expected chordal distance per site by `q=√3β` per level. For `0≤β<1/√3`,
++compactness and the Feller property give an invariant law, the contraction
++makes it unique and rotation invariant, and every initial law approaches it
++in finite marginals with the stated explicit bound. The aligned magnetization
++satisfies `|m_t|≤q^t`. The one-site periodic law has exact rate `A(3β)^t`.
++All four original argument surfaces survive: sensitivity, invariant-law
++contraction, magnetization/one-site recursion, and mean-map bounds. The
++complete corrected uniform-route ceiling is readable deferred science in
++[recovery](work_history/review_loop/pr8171/README.md), not a conclusion of this
++bounded row. Finite symbolic controls do not execute an infinite level plane.
+ 
+ ## Machine status and trace
+ 
+@@ -55,39 +37,71 @@
+ target_claim_type: bounded_theorem
+ trace_class: upstream_support
+ target_claim_id: null
+-target_blocker_text: "the campaign's table of explicit uniqueness regions across readings and menus (blocks 03, 08, 21); the weak-coupling side of the sphere formation law after block 26's strong-coupling runs"
++target_blocker_text: "Behavior outside the supplied contraction region and physical selection of kernel, menu and order remain open."
+ source_of_blocker_text: handoff
+ reachability_to_target: supports
+ artifact_role: theorem
+-next_trace_action: "the fourth cell of the table filled: the sphere formation law is ergodic with an explicit rate for beta < 1/sqrt3. Open: the band between 1/sqrt3 and the executed loss of memory at every coupling (block 26); a proof at strong coupling. Consumers: the campaign's decision record; #8093's assembly"
+-conditional_surface_status: "T1-T4 proved for every beta > 0 (T2-T3 with content for beta < 1/sqrt3) under the records-only reading, positivity of the overlap weight, the sphere menu and the monotone level order as supplied conditions; two standard mathematical imports named at definition level"
++next_trace_action: "Study larger-coupling behavior using an explicitly defined coupling or finite-block mechanism."
++conditional_surface_status: "Supplied sphere kernel, records-only reading and synchronous three-predecessor level order; standard compact probability imports stated below."
+ hypothetical_axiom_status: null
+ admitted_observation_status: null
+ audit_required_before_effective_retained: true
++bare_retained_allowed: false
+ ```
+ 
+ ## Premises and declared objects
+ 
+-The axioms memo (`docs/MINIMAL_AXIOMS_2026-06-29.md`) is used through the sentences "There is one fixed nearest-neighbor admissibility rule, covariant under lattice translations and proper cubic rotations.", "For each site, the probability distribution over the possibilities is determined by, and varies with, the nearest-neighbor conditions.", "Records form.", and "Only records are readable.". Block 01 (`docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md`, on `main`) supplies the rule's product form and its one-site conditional given a recorded set; the unsoldered menu, the monotone level order and its level reading are declared below (blocks 05, 08, 18, 21, 26 — open PRs #8003, #8138, #8152, #8155, #8170 — are referenced as evidence addresses only). All proposed and unaudited.
+-
+-Declared objects.
+-- **The unsoldered menu and rule; level time; the level automaton; the sphere kernel `K_β(·|S)`; `A(κ) = coth κ − 1/κ`; the magnetization `m_t` from the aligned plane** — as declared in block 26 (PR #8170), restated: values are unit vectors `s ∈ S²`; the record at `x` is drawn from `K_β(· | S)`, `S = s_{x−e_1} + s_{x−e_2} + s_{x−e_3}`, independently across a level given the previous one; `K_V(ds) = (|V|/(4π sinh|V|)) e^{V·s} dσ(s)` for `V ∈ R³` (uniform when `V = 0`), so `K_β(·|S) = K_{βS}`; `κ = |V|`, `û = V/|V|`, `w = s·û`; the level automaton is the Markov chain of level configurations on `(S²)^{Z²}`.
+-- **Distances.** The chordal distance `|s − s'|` on `S²` (diameter `2`); for laws on `S²`, `TV(μ, ν) = (1/2)∫|f_μ − f_ν| dσ` and `W_1(μ, ν) = inf E|s − s'|` over couplings; for laws on the level plane, the per-site distance `D = sup_x E|s_x − s'_x|` under a coupling.
+-- **The causal coupling.** Given two initial planes, two runs coupled level by level: at each site of the new level, the pair `(s_x, s'_x)` is drawn from a coupling of `K_β(·|S_x)` and `K_β(·|S'_x)` (`S_x, S'_x` the coupled predecessor sums) that attains `E|s_x − s'_x| ≤ W_1(K_β(·|S_x), K_β(·|S'_x)) + η` for a fixed `η > 0` (an optimal coupling exists on the compact sphere; the `η` is dropped at the end), independently across the sites of the level given the previous level.
+-- **The mean map.** `F(V) = E_{K_V}[s] = A(|V|) û`.
+-
+-## Prior art and what is new
+-
+-The contraction of a causal coupling as a uniqueness criterion for probabilistic cellular automata is the Dobrushin-type route that block 08 (PR #8138) carried for the six-axis formation law with total-variation sensitivities (`3c < 1`); the total-variation-to-Wasserstein step and the exponential-family identity `Var(w) = A'(κ)` are standard. What is new: (i) the sensitivity of the exponential-overlap kernel on the sphere to its predecessor sum, `TV ≤ |V − V'|/(2√3)`, through the sign lemma `A(κ)/κ` decreasing (a series comparison) and the directional second moment; (ii) the resulting ergodicity region `β < 1/√3` with the explicit rate `√3β` and the bound `m_t ≤ (√3β)^t`; (iii) the reach of the route (`β = 1` at most, `2/3` for the total-variation version), placed against block 26's executed loss of memory at every coupling; (iv) the fourth cell of the campaign's uniqueness table.
++The [current axiom memo](MINIMAL_AXIOMS_2026-06-29.md) supplies the framework
++boundary: "There is one fixed nearest-neighbor admissibility rule, covariant
++under lattice translations and proper cubic rotations.", "For each site, the
++probability distribution over the possibilities is determined by, and varies
++with, the nearest-neighbor conditions.", "Records form.", and "Only records
++are readable." The following kernel, menu, reading and order are additional
++supplied mathematical conditions, not selected by those sentences.
++
++The current finite-menu formation/static note
++`ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md`
++is context for the terminology only. No classification or static-law theorem
++is imported from it; the sphere proof below is self-contained. The primary
++checks that historical context identity and binds its current bytes as a
++context input, which is not a mathematical dependency edge.
++
++- Values are unit vectors `s∈S²`; `β≥0` is supplied. Write `κ=|V|`,
++  `û=V/|V|` for V≠0, `A(κ)=cothκ−1/κ`, `A(0)=0`, and
++  `K_V(ds)=(κ/(4π sinhκ)) exp(V·s)dσ(s)`, uniform at V=0.
++  Here dσ is sphere area measure; `F(V)=E[s]=A(κ)û`, F(0)=0.
++- A level is `X=(S²)^{Z²}`. The new spin at coordinate `(i,j)` has law
++  `K_{βS}`, where `S=s_(i,j)+s_(i−1,j)+s_(i,j−1)` from the preceding
++  level. Sites draw independently conditional on that level. These are the
++  three predecessors `x−e_j` in the supplied monotone level order on `Z³`.
++- Chordal distance is `|s−s'|≤2`. `TV=(1/2)∫|f−g|dσ`, and
++  `W_1=inf E|s−s'|` on the sphere. For a specified joint level coupling γ,
++  `D(γ)=sup_x E_γ|s_x−s'_x|`; for laws define
++  `d_∞(μ,ν)=inf_γ D(γ)`. Bounds below construct couplings, without assuming
++  the infimum is attained. Finite marginal metrics use the sum of chordal
++  distances over the specified finite set.
++- For a fixed unit e, the aligned initial plane is identically e and
++  `m_t=E[s_x·e]`. Translation invariance makes this independent of x.
++
++## Imports
++
++Standard mathematical imports are the existence of countable product
++probability measures and iterated kernels on standard Borel spaces; compactness
++of countable products of compact metric spaces; weak sequential compactness
++of probability measures on a compact metric space; uniform density of continuous
++cylinder functions; and determination of a countable-product law by its finite
++marginals. Every use and its hypotheses appear below. No external theorem
++supplies the kernel, order or physical interpretation. The finite-menu context
++is not needed for these imports. No primitive supplies a state-selection rule.
+ 
+ ## Exact target and obligation graph
+ 
+-| Obligation | Statement | Route | Runner family |
+-|---|---|---|---|
+-| T1 | `TV(K_V, K_{V'}) ≤ |V − V'|/(2√3)`; `W_1 ≤ |V − V'|/√3` | `Var(w) = A'`; the directional moment; the sign lemma; `A/κ ≤ 1/3` | B |
+-| T2 | `D_{t+1} ≤ √3β D_t`; one rotation-invariant invariant law for `β < 1/√3`; every initial plane forgotten exponentially | the causal coupling; the triangle inequality in `S` | C |
+-| T3 | `m_t ≤ (√3β)^t`; one site: `A(3β)^t`, `A(3β) ≤ β` | the antipodal comparison | C |
+-| T4 | the reach: `W_1 ≥ |F(V) − F(V')|`, `A(δ)/δ ≥ 1/3 − δ²/45` | the dual lower bound with a linear test function | D |
++| Argument | Claim and proof obligation | Finite primary coverage |
++|---|---|---|
++| Sphere sensitivity (T1) | direct moments, entire-series sign and continuity at zero | symbolic identities, 12 coefficients, ten rational enclosures |
++| Level contraction (T2) | measurable common-density coupling, compact-Feller existence, finite-marginal uniqueness | contraction factor and two boundary enclosures |
++| Magnetization (T3) | antipodal absolute-value inequality and conditional-mean recursion | six one-site rate enclosures |
++| Mean-map bounds (T4) | linear test function and global entire-series lower bound | series through degree six and five rational enclosures |
+ 
+ ## Theorem T1 — the sensitivity of the sphere kernel
+ 
+@@ -97,94 +111,171 @@
+ (c) `1 − 3A/κ − A² ≤ 0` for every `κ > 0`, i.e. `A(κ)/κ` is decreasing; and `A/κ ≤ 1/3`;
+ (d) `TV(K_V, K_{V'}) ≤ |V − V'|/(2√3)` and `W_1(K_V, K_{V'}) ≤ |V − V'|/√3`.
+ 
+-**Proof.** (a) The law of `w` has density `∝ e^{κw}` on `[−1, 1]`, an exponential family in `κ` with log-normalizer `log(2 sinh κ/κ)`, whose first and second derivatives are the mean `A(κ)` and the variance; `A' = 1/κ² − 1/sinh² κ` (B1, symbolically). (b) By block 26's T1(a), `E[s] = Aû` and `E[ssᵀ] = (A/κ)I + (1 − 3A/κ)ûûᵀ`; expand `E[((s − Aû)·d)²] = dᵀE[ssᵀ]d − 2A c (Aû·d) + A²c² = A/κ + (1 − 3A/κ)c² − A²c²` (B2). (c) `1 − 3A/κ − A² ≤ 0 ⇔ κ(1 − A²) ≤ 3A`; since `1 − A²` and `A` are what they are, use instead the equivalent form through (a): the claim is `κ A'(κ) ≤ A(κ)` (indeed `κA' = 1/κ − κ/sinh² κ` and `A = coth κ − 1/κ`, and `1 − 3A/κ − A² = (κA' − A)/κ` because `A² = coth² κ − 2coth κ/κ + 1/κ² = 1 + 1/sinh² κ − 2coth κ/κ + 1/κ²`, so `1 − 3A/κ − A² = −1/sinh² κ − 1/κ² + 2coth κ/κ − 3coth κ/κ + 3/κ² = 2/κ² − 1/sinh² κ − coth κ/κ`, and `(κA' − A)/κ = (1/κ − κ/sinh² κ − coth κ + 1/κ)/κ = 2/κ² − 1/sinh² κ − coth κ/κ`). Multiplying `κA' ≤ A` by `κ sinh² κ`: `sinh² κ − κ² ≤ κ sinh κ cosh κ − sinh² κ`, i.e. `2 sinh² κ ≤ (κ/2) sinh 2κ + κ²`. Both sides are power series with `2 sinh² κ = cosh 2κ − 1 = Σ_{m≥1} (2κ)^{2m}/(2m)!` and `(κ/2) sinh 2κ = Σ_{m≥1} (2κ)^{2m} (m/2)/(2m)!`; the difference is `κ² − κ² + Σ_{m≥2} (2^{2m}/(2m)!)(m/2 − 1) κ^{2m} ≥ 0` (B3: the coefficients `0, 0, 2/45, 2/315, …`). Finally `A/κ ≤ 1/3` is block 26's bound `A(κ) < κ/3` (`A' ≤ 1/(3 + κ²)`), re-checked (B4). (d) `f_V(s) = (κ/(4π sinh κ)) e^{V·s}` is smooth in `V` including `V = 0`, with `∂_V log f_V = s − A(κ)û` (as `∂_V log(κ/sinh κ) = (1/κ − coth κ) û = −Aû`). With `δ = V' − V` and `V_t = V + tδ`, `f_{V'} − f_V = ∫_0^1 f_{V_t} (s − A_t û_t)·δ dt`, so `TV(K_V, K_{V'}) ≤ (1/2) ∫_0^1 E_{K_{V_t}}|(s − A_t û_t)·δ| dt ≤ (|δ|/2) sup_t (E[((s − A_t û_t)·δ̂)²])^{1/2} ≤ (|δ|/2) sup_t (A_t/κ_t)^{1/2} ≤ |δ|/(2√3)`, using (b) with (c) (the coefficient of `c²` is non-positive, so the maximum over the angle is at `c = 0`) and `A/κ ≤ 1/3`. Since the chordal distance is at most `2`, the coupling that agrees off the total-variation part gives `W_1 ≤ 2·TV ≤ |δ|/√3`. ∎ (B1–B4.)
++**Proof.** (a) The law of `w` has density `∝ e^{κw}` on `[−1, 1]`, an exponential family in `κ` with log-normalizer `log(2 sinh κ/κ)`, whose first and second derivatives are the mean `A(κ)` and the variance; `A' = 1/κ² − 1/sinh² κ` (B1, symbolically). (b) Direct integration gives `Z(κ)=∫_{−1}^1 e^{κw}dw=2 sinhκ/κ`, `E[w]=Z'/Z=A`, and `E[w²]=Z''/Z=1−2A/κ`. Axial rotation symmetry gives zero transverse means and cross moments; each transverse second moment is `(1−E[w²])/2=A/κ`. Thus `E[s] = Aû` and `E[ssᵀ] = (A/κ)I + (1 − 3A/κ)ûûᵀ`; expand `E[((s − Aû)·d)²] = dᵀE[ssᵀ]d − 2A c (Aû·d) + A²c² = A/κ + (1 − 3A/κ)c² − A²c²` (B2). (c) `1 − 3A/κ − A² ≤ 0 ⇔ κ(1 − A²) ≤ 3A`; since `1 − A²` and `A` are what they are, use instead the equivalent form through (a): the claim is `κ A'(κ) ≤ A(κ)` (indeed `κA' = 1/κ − κ/sinh² κ` and `A = coth κ − 1/κ`, and `1 − 3A/κ − A² = (κA' − A)/κ` because `A² = coth² κ − 2coth κ/κ + 1/κ² = 1 + 1/sinh² κ − 2coth κ/κ + 1/κ²`, so `1 − 3A/κ − A² = −1/sinh² κ − 1/κ² + 2coth κ/κ − 3coth κ/κ + 3/κ² = 2/κ² − 1/sinh² κ − coth κ/κ`, and `(κA' − A)/κ = (1/κ − κ/sinh² κ − coth κ + 1/κ)/κ = 2/κ² − 1/sinh² κ − coth κ/κ`). Multiplying `κA' ≤ A` by `κ sinh² κ`: `sinh² κ − κ² ≤ κ sinh κ cosh κ − sinh² κ`, i.e. `2 sinh² κ ≤ (κ/2) sinh 2κ + κ²`. Both sides are power series with `2 sinh² κ = cosh 2κ − 1 = Σ_{m≥1} (2κ)^{2m}/(2m)!` and `(κ/2) sinh 2κ = Σ_{m≥1} (2κ)^{2m} (m/2)/(2m)!`; the difference is `κ² − κ² + Σ_{m≥2} (2^{2m}/(2m)!)(m/2 − 1) κ^{2m} ≥ 0` (B3: the coefficients `0, 0, 2/45, 2/315, …`). Finally the expansions `sinhκ=κ+κ³/6+O(κ⁵)` and `coshκ=1+κ²/2+O(κ⁴)` give `lim_{κ→0} A(κ)/κ=1/3`. The proved decrease gives `A/κ≤1/3`, strictly for κ>0 because the m=3 coefficient is positive. At κ=0 the uniform law has mean zero and covariance `I/3`, so the directional bound extends continuously. B4 checks ten rational points; the all-parameter bound is this written proof. (d) `f_V(s) = (κ/(4π sinh κ)) e^{V·s}` is smooth in `V` including `V = 0`, with `∂_V log f_V = s − A(κ)û` (as `∂_V log(κ/sinh κ) = (1/κ − coth κ) û = −Aû`). With `δ = V' − V` and `V_t = V + tδ`, `f_{V'} − f_V = ∫_0^1 f_{V_t} (s − A_t û_t)·δ dt`, so `TV(K_V, K_{V'}) ≤ (1/2) ∫_0^1 E_{K_{V_t}}|(s − A_t û_t)·δ| dt ≤ (|δ|/2) sup_t (E[((s − A_t û_t)·δ̂)²])^{1/2} ≤ (|δ|/2) sup_t (A_t/κ_t)^{1/2} ≤ |δ|/(2√3)`, using (b) with (c) (the coefficient of `c²` is non-positive, so the maximum over the angle is at `c = 0`) and `A/κ ≤ 1/3`. Since the chordal distance is at most `2`, the coupling that agrees off the total-variation part gives `W_1 ≤ 2·TV ≤ |δ|/√3`. ∎ (B1–B4.)
+ 
+ *Reading.* The number `1/√3` is the square root of the transverse variance per component of the uniform law; the bound is tight in the direction of the argument only at `V = 0`, where the exact sensitivity is `1/4` (the uniform law's mean absolute cosine is `1/2`).
+ 
+ ## Theorem T2 — the causal coupling contracts
+ 
+-**Statement.** Under the causal coupling, `D_{t+1} ≤ √3β D_t` (with `η → 0`). Hence for `β < 1/√3`: the level automaton has exactly one invariant law `μ_β`; `μ_β` is invariant under every rotation of `S²`; and for every initial plane the law of level `t` is within `2(√3β)^t` of `μ_β` in the per-site distance, so the magnetization from any initial plane tends to `0` exponentially.
+-
+-**Proof.** At a site `x` of level `t + 1`, `E[|s_x − s'_x| | level t] ≤ W_1(K_{βS_x}, K_{βS'_x}) + η ≤ (β/√3)|S_x − S'_x| + η ≤ (β/√3) Σ_j |s_{x−e_j} − s'_{x−e_j}| + η` (T1d and the triangle inequality); take expectations and the supremum over `x`: `D_{t+1} ≤ √3β D_t + η`, and `η` is arbitrary. With `D_0 ≤ 2` this gives `D_t ≤ 2(√3β)^t`. *Uniqueness.* Let `μ, μ'` be invariant laws; couple them as initial planes (any coupling) and run the causal coupling: the level-`t` laws are `μ` and `μ'` again, and for every finite set `Λ` of sites the Wasserstein distance of the `Λ`-marginals for the metric `Σ_{x∈Λ}|s_x − s'_x|` is at most `2|Λ|(√3β)^t → 0`; so the marginals coincide, and `μ = μ'`. *Rotation invariance.* The kernel commutes with the simultaneous rotation of all records (`K_β(R·|RS) = K_β(·|S)` pushed forward), so `μ_β ∘ R^{−1}` is invariant, hence equals `μ_β`. *The approach.* Couple the given initial plane with a `μ_β`-distributed plane; the level-`t` law of the second run is `μ_β`. ∎ (C1: the factor `√3β` and its position relative to `1` at `β = 5773/10⁴` and `5774/10⁴`, exact enclosures.)
+-
+-## Theorem T3 — exponential loss of memory
+-
+-**Statement.** For `β < 1/√3`, from the aligned plane `e`, `m_t ≤ (√3β)^t`. On the one-site periodic plane, from `e`, `m_t = A(3β)^t` exactly, and `A(3β) ≤ β`.
+-
+-**Proof.** Run the causal coupling from the planes `e` and `−e` (`D_0 = 2`). By covariance under the rotation by `π` about an axis orthogonal to `e`, the second run's magnetization along `e` is `−m_t`. So `2m_t = |E[s_x·e] − E[s'_x·e]| ≤ E|s_x − s'_x| ≤ 2(√3β)^t`. The one-site rate is block 26's T4 (`E[s_{t+1}·e | s_t] = A(3β)(s_t·e)`), and `A(3β) ≤ β` is `A(κ) < κ/3`. ∎ (C2: `A(3β) < β` at rational `β` by exact enclosure.)
+-
+-*Reading.* At `β = 0.3, 0.5` the simulated magnetization on a `256 × 256` plane falls below `10^{−2}` within `4` and `7` levels, close to `β^t` and well inside `(√3β)^t` (control, refuter).
+-
+-## Theorem T4 — the reach of the route
+-
+-**Statement.** For all `V, V'`, `W_1(K_V, K_{V'}) ≥ |F(V) − F(V')|`; and `A(δ)/δ ≥ 1/3 − δ²/45` for `δ > 0`, with `A(δ)/δ < 1/3`. Hence the Wasserstein sensitivity of the kernel to its predecessor sum is at least `(β/3)(1 − 3β²·(something bounded))` at small `|S − S'|`, so a contraction `3c < 1` of the causal coupling with `c` the per-predecessor Wasserstein sensitivity is impossible for `β ≥ 1`.
+-
+-**Proof.** For any coupling and any unit `d`, `|(E s − E s')·d| ≤ E|s − s'|`; take `d` along `F(V) − F(V')` and the infimum over couplings. With `V = 0` and `V' = δ d`: `|F(V') − F(V)| = A(δ)`, and `A(δ) = δ/3 − δ³/45 + 2δ⁵/945 − …` is an alternating series with decreasing terms for small `δ`; the runner checks the series and the bounds `1/3 − δ²/45 ≤ A(δ)/δ < 1/3` at rational points (D1). For the last sentence: changing one predecessor by `s_1 − s'_1` changes `V = βS` by `β(s_1 − s'_1)`, so `c ≥ (β/3)(1 − β²|s_1 − s'_1|²/15)`, which exceeds `1/3` for `β > 1` and small changes. ∎
+-
+-*Reading.* The total-variation version of the route stops at `β = 2/3` (the sensitivity `TV/|V − V'|` is `1/4` at small `|V|` and, by quadrature, never larger — executed, not proved); the proved `1/(2√3)` sits between `1/4` and the crude `1/2`. Block 26's runs lose the memory at every `β` tried; the region here is what the coupling proves, not where memory ends.
++**Measurable coupling.** Given densities f=f_V and g=f_V', set h=min(f,g)
++and α=∫h dσ. With probability α draw a common point with density h/α;
++with probability 1−α draw the two points independently from
++`(f−h)/(1−α)` and `(g−h)/(1−α)`. At α=0 or 1 use just the nonzero branch.
++This is a measurable probability kernel in (V,V'): the densities and their
++integrals are Borel functions, and normalized integrals on each nonzero branch
++are measurable. Its marginals are f and g; its expected chordal cost is at
++most `2(1−α)=2TV≤|V−V'|/√3`. Countable products give independent site pairs
++conditional on the preceding coupled levels. This avoids any measurable
++selection of optimal transport plans and needs no additive η error.
++
++**Statement and contraction.** For that coupling, `D_(t+1)≤√3β D_t`.
++Indeed at x, condition on the coupled preceding level:
++`E[|s_x−s'_x||previous]≤(β/√3)|S_x−S'_x|≤(β/√3)Σ_(j=1)^3 |s_(x−e_j)−s'_(x−e_j)|`.
++Take expectations and the supremum over x. Thus `D_t≤2q^t` for `q=√3β`.
++At β=0 all new-site laws are uniform and one common draw couples them exactly;
++the bound for t≥1 is zero, while the initial bound is D_0≤2.
++
++**Existence.** The countable product X is compact metrizable. The transition
++P sends a continuous cylinder function to a continuous cylinder function:
++only finitely many predecessor coordinates enter, and their sphere densities
++vary continuously, uniformly on compact parameter sets. Dominated integration
++gives continuity. Continuous cylinders are uniformly dense in C(X), and P
++is a sup-norm contraction, so P maps all C(X) to C(X): it is Feller.
++For any initial law ν, take `ν_N=N^(-1)Σ_(t=0)^(N−1)νP^t`.
++Compactness of probability laws on X gives a weakly convergent subsequence.
++For f∈C(X), `(ν_NP−ν_N)(f)=(νP^N(f)−ν(f))/N→0`.
++The Feller property lets the subsequential limit pass through Pf, hence the
++limit μ is invariant. This existence argument works at every finite β;
++the uniqueness and rate below require q<1.
++
++**Uniqueness.** Let μ,μ' be invariant laws, couple their initial planes
++arbitrarily and apply the measurable causal coupling. At each t their marginals
++remain μ,μ'. For any finite Λ, the Wasserstein distance of their Λ marginals
++for `Σ_(x∈Λ)|s_x−s'_x|` is at most `2|Λ|q^t→0`. Thus every finite marginal
++coincides, and μ=μ'. Simultaneous rotations commute with P, so every rotated
++μ is invariant and uniqueness makes μ rotation invariant. Couple any initial
++law with μ to get `d_∞(νP^t,μ)≤2q^t` and the same finite-marginal bound.
++Rotation invariance gives zero one-site mean, hence exponential decay of
++one-site magnetization from any initial law. ∎
++
++## Theorem T3 — exponential loss of aligned magnetization
++
++For `0≤β<1/√3`, the aligned plane obeys `|m_t|≤(√3β)^t`.
++Run the coupling from e and −e. Rotation by π about an axis perpendicular
++to e maps the first marginal process to the second, so their projected means
++are m_t and −m_t. Therefore
++`2|m_t|=|E[s_x·e]−E[s'_x·e]|≤E|s_x−s'_x|≤2(√3β)^t`.
++This uses no unproved nonnegativity of m_t.
++
++On the one-site periodic plane the three predecessors are the same unit spin,
++so the T1 mean identity gives
++`E[s_(t+1)·e|s_t]=A(3β)(s_t·e)`.
++Conditional expectation and m_0=1 give `m_t=A(3β)^t` exactly.
++T1 gives `A(3β)≤β`, strictly for β>0. At β=0 the rate is zero after the
++first update. These exact one-site conclusions do not assert equality of
++one-site and infinite-plane rates. ∎
++
++## Theorem T4 — positive mean-map bounds
++
++For every V,V', `W_1(K_V,K_V')≥|F(V)−F(V')|`. Indeed for any coupling and
++unit d, `|(E s−E s')·d|≤E|s−s'|`. Choose d parallel to the mean difference
++(the zero case is immediate), then take the infimum over couplings.
++For V=0,V'=δd with δ>0, the mean difference is A(δ).
++
++The global bound is `1/3−δ²/45≤A(δ)/δ<1/3` for δ>0.
++For the lower bound multiply by the positive number δ² sinhδ. The resulting
++expression is
++`H(δ)=δ coshδ−(1+δ²/3−δ⁴/45)sinhδ`.
++Its coefficient of δ^(2n+1), for n≥1, is
++`16n(n−1)(n−2)(n+2)/(45(2n+1)!)`; the n=0 coefficient is zero.
++To verify it, combine `2n/(2n+1)!−1/[3(2n−1)!]`
++with `1/[45(2n−3)!]` when n≥2. The n=1,2 coefficients vanish and all n≥3
++are positive. Entire-series convergence gives H(δ)≥0 for every δ>0.
++The upper bound follows from the strict decrease proved in T1.
++The series `A(δ)/δ=1/3−δ²/45+2δ⁴/945−δ⁶/4725+…` and five rational
++checks are finite corroboration, not the all-δ proof. ∎
+ 
+ ## No-Go Discipline Gate
+ 
+-This note's sentence is positive (uniqueness with a rate); its escapes are named for the route by which it could fail.
+-
+-### N1 — Routes by which T2 could fail
+-1. *The sensitivity constant.* T1 is proved; executed against quadrature (`0.2499 ≤ 0.2887` per unit over `300` random pairs).
+-2. *The coupling's independence structure.* The sites of a level are coupled independently given the previous level, as the automaton draws them; the per-site bound uses only the predecessors' distances (T2's first line).
+-3. *Uniqueness from per-site approach.* Finite-dimensional marginals determine the law on the product space; the sum metric on `Λ` is a Wasserstein metric for the product topology (T2).
+-4. *The region.* `1/√3` is the route's; T4 bounds what any coupling of this kind can give (`β < 1`).
+-
+-### N2 — Wall-independence audit
+-No no-go wall of the repository is used.
+-
+-### N3 — Hidden-wall scan
+-No hidden dependence: the inputs are the axioms' sentences, block 01's rule, the sphere menu and the level order as declared (restated from block 26, an open PR, evidence address).
+-
+-### N4 — Per-citation table
+-| Citation | Role | Load-bearing? |
+-|---|---|---|
+-| `minimal_axioms` | the four sentences under Premises | yes (premise) |
+-| block 01 (`main`) | the rule and its one-site conditional | yes (premise, proposed) |
+-| block 26 (PR #8170) | the declared objects; `A(κ) < κ/3`; the one-site rate | restated / re-checked at scope (B4, C2) |
+-| blocks 03, 08, 21 (open PRs) | the other three cells of the uniqueness table | placement only (evidence addresses) |
+-
+-### N5 — Resolution audit
+-| Claim | per_element | per_site | per_mode | per_block | lattice_wide |
+-|---|---|---|---|---|---|
+-| "the sphere formation law is ergodic below `1/√3`" | executed: `Var(w) = A'`; the directional moment; the sign lemma's series coefficients; the log-derivative | executed: `A(3β) < β` and the one-site rate; the reach series | executed: the total-variation bound against quadrature (control); the coupled contraction (refuter) | executed: the contraction factor and its position relative to `1` at the boundary by exact enclosure | T1–T4 proved for every `β > 0`; the region `β < 1/√3` is the route's |
+-
+-### N6 — Partial-closure paths and primitive scan
+-The registered primitives supply no coupling, menu or order; none is a wall.
+-
+-### N7 — Steelman
+-Hostile reviewer: "Block 08's argument with a different kernel; the constant is arbitrary." Reply: the kernel's sensitivity is the whole content and it needed the sign lemma, which is new; the constant is placed between the exact small-`|V|` value and the route's ceiling, both stated; the cell it fills was empty. Conceded: `1/√3` is not a threshold, and the interesting regime (block 26's) is untouched by this route.
+-
+-### N8 — Cross-cycle echo
+-Block 21's `√3/6` for the static sphere law and this note's `1/√3` for the formation law are both route constants of the same coupling family; block 26's T4 (`A(3β)^t` on one site) is the `L = 1` instance of T3; block 08's `3c < 1` is the discrete counterpart.
+-
+-## Falsifiers
+-- `Var(w) ≠ A'(κ)`, a directional second moment differing from `A/κ + (1 − 3A/κ − A²)c²`, a negative series coefficient in `(κ/2) sinh 2κ + κ² − 2 sinh² κ`, `A(κ) ≥ κ/3` at some `κ`, or `∂_V log f_V ≠ s − Aû` (B1–B4).
+-- A contraction factor other than `√3β`, or `√3β` not crossing `1` between `5773/10⁴` and `5774/10⁴`; `A(3β) ≥ β` at some `β > 0` (C1–C2).
+-- `A(δ)/δ` outside `[1/3 − δ²/45, 1/3)` at some `δ > 0` (D1).
++### N1 — Deferred negative certification
++The historical packet names four items: sensitivity, coupling independence,
++finite-marginal uniqueness and region. These are mostly proof obligations for
++the positive theorem, not five distinct attacks against the uniform-route
++ceiling. No fifth route is invented and no negative packet PASS is claimed.
++The full corrected negative implication is deferred in recovery; the live
++mean-map inequalities remain affirmative mathematical bounds.
++
++### N2 — Wall relationships
++No independent-wall count is asserted. Kernel, menu and order are joint
++supplied hypotheses; their absence is not a proved physical obstruction.
++
++### N3 — Explicit hypotheses
++Sphere area measure, exponential kernel, records-only reading, synchronous
++three-predecessor order and standard compact-probability imports are named.
++The rotation symmetry used here is a property of the supplied kernel.
++
++### N4 — Citation and residual matching
++The axiom memo fixes the framework boundary only. The finite-menu note is
++context, not authority for sphere moments or infinite-volume uniqueness.
++No sibling static-law result or historical simulation closes a residual here.
++
++### N5 — Actual primary resolutions
++- per_element: symbolic variance/directional identities, twelve sign coefficients,
++  log-density derivatives and finite exact rational bounds.
++- per_site: six rational one-site rate checks and five mean-map bound checks;
++  no stochastic one-site chains are executed by this primary.
++- per_mode: checked and not executed — no spectral decomposition, quadrature,
++  Monte Carlo or mode-resolved simulation is called by this primary.
++- per_block: the contraction-factor arithmetic and two boundary enclosures;
++  no finite block sampler is called.
++- lattice_wide: checked and not executed — compactness, measurable coupling and
++  infinite-plane uniqueness are written proofs, not finite runner executions.
++
++### N6 — Partial closure and primitives
++The accepted surface is the positive supplied-model proof. The deferred
++negative argument and every original remain recoverable, with branch retention
++required for partial closure. No additional axiom or primitive is adopted.
++
++### N7 — Concrete strongest counter-route
++A multistep block coupling could exploit correlations and cancellations lost
++by the one-site triangle estimate. Its terminal task is a strict expected block
++cost bound for a specified joint transition. State-restricted or alternative
++transport costs also remain open. The present positive region is compatible
++with success of those routes at larger beta; the deferred ceiling concerns
++only the explicitly defined uniform single-predecessor criterion.
++
++### N8 — Historical comparison
++The original finite-menu causal-contraction and sphere static-law campaign
++comparisons are preserved in recovery. They concern different kernels or
++transition/specification objects and supply no additional route closure here.
++Historical finite strong-coupling memory plots do not settle an infinite-plane
++threshold. No claim of a completed cross-menu phase classification survives.
+ 
+ ## Boundaries and non-claims
+-This note proves, for the unsoldered formation law `K_β(s | s_1, s_2, s_3) ∝ e^{β s·(s_1 + s_2 + s_3)}` in level time, that the kernel's total-variation sensitivity to its predecessor sum is at most `1/(2√3)` per unit, that the causal coupling of two initial planes contracts the per-site chordal distance by `√3β` per level, and hence that for `β < 1/√3` the level automaton has one invariant law, rotation-invariant, reached exponentially fast from every initial plane, with the aligned plane's magnetization at most `(√3β)^t`; the constant `1/√3` is the route's, not a threshold; it does not select a menu, reading, order or coupling as physical, and adopts no clause. No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision. No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.
+-
+-## Imports
+-- `minimal_axioms`: the sentences quoted under Premises.
+-- Block 01 (on `main`): the rule and its conditional; proposed, unaudited. PRs #8000, #8138, #8155, #8170 (open) referenced as evidence addresses for the other cells of the table and the declared objects.
+-- Re-proved at scope: the moments of the exponential-overlap law and the bound on `A(κ)` (block 26); the exponential-family variance identity; the causal-coupling contraction (block 08's route for the six-axis law).
+-- Named standard imports at definition level (never as authority for physics): the existence of an optimal coupling for the Wasserstein distance on a compact space (Kantorovich); the coupling inequality `W_1 ≤ diam · TV`.
+-- Reference only (named, not used): Dobrushin's uniqueness criterion and its Wasserstein forms for probabilistic cellular automata.
++
++The sphere kernel, records-only reading and level order are supplied conditions; the theorem makes no physical selection.
++
++The constant `1/√3` is a sufficient contraction bound, not a physical threshold.
++
++Formal negative route certification is deferred; the full corrected argument is preserved as readable recovery science.
+ 
+ ## Review record
+-Supervisor-run block (owner directive 2026-09-16: keep the campaign running twelve more hours). After block 26 the weak-coupling side of the sphere formation law was the proof-shaped remainder and the fourth empty cell of the campaign's uniqueness table. Exploration: the naive coupling (shared uniforms, rotated frames) has sensitivity of order one because nearly cancelling predecessors make the mean direction unstable; the total-variation route removes the direction from the estimate. The control (`specs/supervisor_control_block27.py`) verified the series coefficients, the identities, the total-variation bound against quadrature (`0.2499` per unit, maximum over `300` random pairs, against `0.2887`) and the magnetization at `β = 0.3, 0.5` against `(√3β)^t`. The lens pass is in `GOAL_block27.md`. Facts settled while executing: the sign lemma is exactly `A(κ)/κ` decreasing and reduces to a series comparison whose `κ²` terms cancel; the total-variation sensitivity is `1/4` at `V = 0` and numerically never larger, so the exact version of the route would reach `2/3`; the mean map's Lipschitz constant `1/3` caps every coupling argument at `β = 1`. The refuting pass (`CHECKER_block27_findings.md`) coupled two runs from antipodal planes with the total-variation-maximal coupling per site and measured the contraction of the per-site distance, estimated the sensitivity by Monte Carlo, and checked the one-site rate.
++
++[Exact history and limitations](work_history/review_loop/pr8171/README.md)
++contains all original proof/source/cache/control/refuter versions. Historical
++numerical and mutation results remain historical; no corrected-source primary,
++simulation or mutation was executed during author preparation. In particular,
++the refuter's capped residual-rejection routine can retain unresolved common
++draws, and its printed last-level zero does not verify all preceding levels.
++Its observed ratios are not promoted as valid exact-marginal coupling evidence.
++The primary performs symbolic/rational checks only. The original zero-parameter
++sampler failure and historical correction remain available in the archive.
+ 
+ ## Verification
+ 
+-```bash
+-python3 scripts/admissibility_rule_unsoldered_formation_law_weak_coupling_causal_coupling_contracts_one_invariant_law_2026_09_16.py
+-python3 scripts/admissibility_rule_unsoldered_formation_law_weak_coupling_causal_coupling_contracts_one_invariant_law_2026_09_16.py --list-mutations
+-python3 scripts/admissibility_rule_unsoldered_formation_law_weak_coupling_causal_coupling_contracts_one_invariant_law_2026_09_16.py --mutation sign_lemma_wrong
+-```
+-
+-Families: A authority and inputs; B the kernel's sensitivity (identities, the sign lemma, the bound); C the contraction, the boundary, the one-site rate; D the reach; F fences, forbidden phrases, the floating-point self-scan, the placement of the classical names; G the resolution lines. Each of the 10 declared mutations fails in exactly one family. Expected final line: `TOTAL: PASS=16 FAIL=0`.
++The primary's intended completed count is 16: four source checks, four kernel
++checks, two contraction/rate checks, one mean-map check, four packaging checks
++and one N5 printing check. Ten existing mutations remain available; their old
++census is not fresh evidence. The primary emits stdout only, with no JSON
++output, simulation or external helper invocation. Written compactness and
++all-parameter proofs are separately reviewed mathematical content.
+--- scripts/admissibility_rule_unsoldered_formation_law_weak_coupling_causal_coupling_contracts_one_invariant_law_2026_09_16.py
++++ scripts/sphere_formation_kernel_sensitivity_level_contraction_check_2026_09_16.py
+@@ -1,6 +1,6 @@
+ #!/usr/bin/env python3
+ """Exact checks: the unsoldered formation law at weak coupling — the sphere kernel's sensitivity, the contraction of the causal coupling,
+-one invariant law and exponential loss of memory for beta < 1/sqrt3, and the reach of the route.
++one invariant law and exponential loss of memory for beta < 1/sqrt3, and positive mean-map bounds; negative route certification remains deferred.
+ 
+ Scope.  T1: Var(w) = A'(kappa) (symbolic); the directional second moment E[((s - A u).d)^2] = A/kappa + (1 - 3A/kappa - A^2) c^2
+ (symbolic); the sign lemma as a term-by-term series comparison, (kappa/2) sinh 2kappa + kappa^2 - 2 sinh^2 kappa has coefficients
+@@ -13,6 +13,7 @@
+ from __future__ import annotations
+ 
+ import re
++import hashlib
+ import sys
+ from fractions import Fraction
+ from math import factorial, isqrt
+@@ -20,14 +21,15 @@
+ 
+ import sympy as sp
+ 
+-AUDIT_TIMEOUT_SEC = 900
++AUDIT_TIMEOUT_SEC = 60
+ AUDIT_INPUT_PATHS = (
+-    "docs/ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_WEAK_COUPLING_THE_CAUSAL_COUPLING_CONTRACTS_ONE_INVARIANT_LAW_AND_EXPONENTIAL_LOSS_OF_MEMORY_BELOW_ONE_OVER_ROOT_THREE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
++    "docs/SPHERE_FORMATION_KERNEL_SENSITIVITY_AND_LEVEL_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+     "docs/MINIMAL_AXIOMS_2026-06-29.md",
+     "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+ )
++INPUT_SHA256 = {'docs/SPHERE_FORMATION_KERNEL_SENSITIVITY_AND_LEVEL_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'bcbad1f04d60ba345906cf1d83dc45691bb92516ddd85b2af2318f738f96f54c', 'docs/MINIMAL_AXIOMS_2026-06-29.md': '93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753', 'docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md': 'cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97'}
+ ROOT = Path(__file__).resolve().parents[1]
+-CLAIM_ID = "admissibility_rule_unsoldered_formation_law_weak_coupling_the_causal_coupling_contracts_one_invariant_law_and_exponential_loss_of_memory_below_one_over_root_three_bounded_theorem_note_2026-09-16"
++CLAIM_ID = "sphere_formation_kernel_sensitivity_and_level_contraction_bounded_theorem_note_2026-09-16"
+ BLOCK01_CLAIM_ID = "admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06"
+ BLOCK01_FRAGMENT = "the static law of a product rule"
+ AXIOM_NEEDLES = (
+@@ -112,8 +114,8 @@
+     note, axioms, block01 = texts
+     checks.check("A1", CLAIM_ID in note and len(re.findall(r"^claim_id:", note, flags=re.M)) == 1, "the note carries its claim_id once")
+     checks.check("A2", all(n in normalize_text(axioms) for n in AXIOM_NEEDLES), "the axioms memo carries the four sentences quoted under Premises")
+-    checks.check("A3", BLOCK01_CLAIM_ID in block01 and BLOCK01_FRAGMENT in block01.lower(), "block 01's note (on main) carries its claim_id and the rule's product form")
+-    checks.check("A4", all(Path(ROOT, p).exists() for p in AUDIT_INPUT_PATHS), "all declared inputs exist")
++    checks.check("A3", BLOCK01_CLAIM_ID in block01 and BLOCK01_FRAGMENT in block01.lower(), "the context-only finite-menu note carries its identity and product-form heading; no sphere theorem is imported")
++    checks.check("A4", all(Path(ROOT, p).is_file() and hashlib.sha256(Path(ROOT, p).read_bytes()).hexdigest() == INPUT_SHA256[p] for p in AUDIT_INPUT_PATHS), "all three declared source/context inputs match literal SHA-256 pins")
+ 
+ 
+ # ============================================================================================ family B
+@@ -160,7 +162,7 @@
+     grad = [sp.diff(logf, v) for v in (V1, V2, V3)]
+     Anrm = sp.coth(nrm) - 1 / nrm
+     logder = all(sp.simplify(g - (sv - Anrm * v / nrm)) == 0 for g, sv, v in zip(grad, (s1, s2, s3), (V1, V2, V3)))
+-    checks.check("B4", below and logder, "T1(d): d/dV log f_V = s - A(|V|) V/|V| (symbolic); A(kappa) < kappa/3 at ten rational points by exact enclosure, so the directional second moment is at most A/kappa <= 1/3 and TV(K_V, K_V') <= |V - V'|/(2 sqrt3), W_1 <= |V - V'|/sqrt3")
++    checks.check("B4", below and logder, "T1(d): d/dV log f_V = s - A(|V|) V/|V| (symbolic); A(kappa) < kappa/3 at ten rational points by exact enclosure; the written proof supplies the all-parameter variance and sensitivity bounds")
+ 
+ 
+ # ============================================================================================ family C
+@@ -177,7 +179,7 @@
+         rate_slope = Fraction(1, 2)
+     pts = [Fraction(1, 10), Fraction(3, 10), Fraction(1, 2), Fraction(577, 1000), Fraction(1), Fraction(3)]
+     ok2 = all(A_bounds(3 * b)[1] < rate_slope * b for b in pts)
+-    checks.check("C2", ok2, "T3: A(3 beta) < beta at beta = 1/10, 3/10, 1/2, 577/1000, 1, 3 by exact enclosure, so the one-site rate A(3 beta)^t is below beta^t and the antipodal comparison gives m_t <= (sqrt3 beta)^t for beta < 1/sqrt3")
++    checks.check("C2", ok2, "T3: A(3 beta) < beta at beta = 1/10, 3/10, 1/2, 577/1000, 1, 3 by exact enclosure; the written conditional-mean recursion and absolute antipodal comparison give the rate bounds")
+ 
+ 
+ # ============================================================================================ family D
+@@ -198,15 +200,11 @@
+         a_lo, a_hi = A_bounds(p)
+         lo_val = Fraction(1, 3) - p ** 2 / 45 if not mut("reach_wrong") else Fraction(1, 3)
+         ok = ok and (lo_val <= a_lo / p) and (a_hi / p < upper_slope)
+-    checks.check("D1", ok, "T4: A(delta)/delta = 1/3 - delta^2/45 + 2 delta^4/945 - ... and 1/3 - delta^2/45 <= A(delta)/delta < 1/3 at delta = 1/10, 1/4, 1/2, 1, 2 by exact enclosure: the mean map moves by at least a third of a small change, so no coupling of this kind contracts for beta >= 1")
++    checks.check("D1", ok, "T4: A(delta)/delta = 1/3 - delta^2/45 + 2 delta^4/945 - ... and 1/3 - delta^2/45 <= A(delta)/delta < 1/3 at delta = 1/10, 1/4, 1/2, 1, 2 by exact enclosure; these finite checks do not certify a global negative route claim")
+ 
+ 
+ # ============================================================================================ family F
+-FENCES = (
+-    "This note proves, for the unsoldered formation law `K_β(s | s_1, s_2, s_3) ∝ e^{β s·(s_1 + s_2 + s_3)}` in level time, that the kernel's total-variation sensitivity to its predecessor sum is at most `1/(2√3)` per unit, that the causal coupling of two initial planes contracts the per-site chordal distance by `√3β` per level, and hence that for `β < 1/√3` the level automaton has one invariant law, rotation-invariant, reached exponentially fast from every initial plane, with the aligned plane's magnetization at most `(√3β)^t`; the constant `1/√3` is the route's, not a threshold; it does not select a menu, reading, order or coupling as physical, and adopts no clause.",
+-    "No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
+-    "No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.",
+-)
++FENCES = ('The sphere kernel, records-only reading and level order are supplied conditions; the theorem makes no physical selection.', 'The constant `1/√3` is a sufficient contraction bound, not a physical threshold.', 'Formal negative route certification is deferred; the full corrected argument is preserved as readable recovery science.')
+ FORBIDDEN = (
+     "the physical order", "the physical rule", "the physical coupling", "the physical dimension", "for every coupling", "selects the", "fires wake condition",
+     "the Bridge weights", "the Bridge conjecture", "certified", "converge", "emergent", "phase transition", "critical", "washes out", "toward the plane", "the trend",
+@@ -247,13 +245,7 @@
+ 
+ 
+ # ============================================================================================ family G
+-N5_LINES = (
+-    "per_element: executed — Var(w) = A'; the directional second moment; the sign lemma's series coefficients; the log-derivative of the density",
+-    "per_site: executed — A(3 beta) < beta at six rational points; the reach series and its bounds at five points",
+-    "per_mode: executed — the total-variation bound against quadrature (control); the coupled contraction of two runs (refuter)",
+-    "per_block: executed — the contraction factor sqrt3 beta and its crossing of 1 between 5773/10^4 and 5774/10^4 by exact enclosure",
+-    "lattice_wide: T1-T4 proved for every beta > 0; the region beta < 1/sqrt3 is the route's, not a threshold",
+-)
++N5_LINES = ('per_element: executed — symbolic variance and directional moments, twelve sign coefficients, log-density derivatives and ten rational enclosures', 'per_site: executed — six rational one-site rate bounds and five rational mean-map bounds; no stochastic site chains', 'per_mode: checked and not executed — no spectral decomposition, quadrature or Monte Carlo is invoked by this symbolic primary', 'per_block: executed — contraction-factor arithmetic and its exact boundary enclosures at two rational beta values; no block sampler', 'lattice_wide: checked and not executed — infinite-plane compactness, measurable coupling and invariant-law uniqueness are written proofs')
+ 
+ 
+ def family_g(checks: Checks) -> None:
+--- prepared-v1/scripts/sphere_formation_kernel_sensitivity_level_contraction_check_2026_09_16.py
++++ prepared-v2/scripts/sphere_formation_kernel_sensitivity_level_contraction_check_2026_09_16.py
+@@ -207,7 +207,7 @@
+ FENCES = ('The sphere kernel, records-only reading and level order are supplied conditions; the theorem makes no physical selection.', 'The constant `1/√3` is a sufficient contraction bound, not a physical threshold.', 'Formal negative route certification is deferred; the full corrected argument is preserved as readable recovery science.')
+ FORBIDDEN = (
+     "the physical order", "the physical rule", "the physical coupling", "the physical dimension", "for every coupling", "selects the", "fires wake condition",
+-    "the Bridge weights", "the Bridge conjecture", "certified", "converge", "emergent", "phase transition", "critical", "washes out", "toward the plane", "the trend",
++    "the Bridge weights", "the Bridge conjecture", "certified", "emergent", "phase transition", "critical", "washes out", "toward the plane", "the trend",
+     "sharp threshold", "the transition point", "has no ordered phase", "does not order", "is the threshold",
+ )
+ CLAIM_INJECTIONS = {"claim_transition_injected": "Hence β = 1/√3 is the transition point."}

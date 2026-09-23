@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "reviewer_session": "/root/review_8170",
+  "same_original_session": true,
+  "pr": 8170,
+  "created_utc": "2026-09-23T03:41:55.804059+00:00",
+  "tree": "3ec7c92b81e9ec8ff85d79af9c982faff5b07aa2",
+  "base": "8bf464953779b8ada8415208e89a656411f9f525",
+  "decision": "CAPTURE_ELIGIBLE",
+  "scope": "Exact cold source, input and bounded capture resource plan only. No final evidence certification or landing PASS.",
+  "blockers": [],
+  "resolved": [
+    {
+      "id": "8170-cold-1",
+      "assessment": "Separate v2 wraps actual execute_runner exactly once, writes its full result externally before untouched post-run identity/cache checks, and returns the same result. Drift rejection and no-cache publication remain intact. The v1 report and blocker are preserved unchanged.",
+      "synthetic_control": "Read actual control and raw fake result; exact embedded worker equals control worker file. Extracted wrapper AST hash 2306d002bac2497912d49c5eff848dff384967c0a7bb46816f067aa2329299fd matches control. Actual cache coordinator rejects synthetic identity drift and deletes live output while external fake raw result remains; one fake call, zero cache publications and zero science calls. This is a preservation control, not scientific evidence."
+    }
+  ],
+  "source_confirmation": {
+    "unchanged": true,
+    "head": "8bf464953779b8ada8415208e89a656411f9f525",
+    "tree": "3ec7c92b81e9ec8ff85d79af9c982faff5b07aa2",
+    "unstaged": "",
+    "source_and_input_hashes": "All draft relative path/SHA256 pairs rechecked against current bytes; cached index compared to exact accepted tree with no differences.",
+    "input_groups": {
+      "runtime": 4,
+      "helpers": 0,
+      "parents": 2,
+      "context": 23,
+      "tooling": 7
+    },
+    "science_acceptance": "Prior same-session full source, 25-original recovery, 30-path disposition and train83/8168 premise confirmation remain bound to immutable cold-v1; no science reopened or promoted."
+  },
+  "mutation_plan_assessment": "Fourteen source-derived named mutations, each dispatched at most once with exclusive markers after successful bound primary. Each requires exit 1, 17 checks, positive failed count and its designated failed family with consistent stdout/JSON. Raw stdout, stderr and available JSON are retained on failures; source/input generation drift is rejected. No baseline rerun and no automatic retry. Success of these future executions remains unproved.",
+  "resource_plan": {
+    "timeout_seconds_per_invocation": 900,
+    "sampled_process_tree_rss_limit_bytes": 805306368,
+    "measurement_status": "Proposed and unmeasured, not benchmark evidence.",
+    "assessment": "Supervisor, worker and descendants are monitored with polling and ps overhead; this is sampled enforcement, not an OS memory reservation or exact sampling guarantee. Breach kills the process group/known descendants and preserves available evidence. No cap extension or retry authorized by this review."
+  },
+  "executions_by_reviewer": {
+    "science": 0,
+    "primary": 0,
+    "mutations": 0,
+    "simulations": 0,
+    "formal_gates": 0,
+    "synthetic_control_reruns": 0
+  },
+  "source_edits": 0,
+  "staging": 0,
+  "commits": 0,
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-cold-review-v1.json",
+      "sha256": "253a8279b493e547f26b67b6c1133d9fad2f5c30c0dc7ec146a52c28d4cdb3e2"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-cold-review-v1.md",
+      "sha256": "9ed75c35f0782cc56ec7858e0efe3677ddc95e881433e39550d19ed04d539925"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-author-cheap-v1.json",
+      "sha256": "284f9f2acbc5fda7e5b0352ab031e3a0563901ea83c0723f4520884639601c42"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-author-unit-draft-v1.json",
+      "sha256": "c06333ca7a1f24fe9f4cbdbe38d37063188a23c8353f0ff80ef6c804bd8f2677"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-capture-v2.py",
+      "sha256": "dff1c5e96b79a8267aa856865b7d158dc2bc342a7587698ded1bca8182303379"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-capture-v2-worker.py.txt",
+      "sha256": "e0fa0e9547aa7a0fc22fdadd12e9ed570a6adf07590de4922f0676d599ca0a6c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-capture-preservation-control-v2.json",
+      "sha256": "a4328471bed78386347af4117e4e316ca0d9032127ef92491e0f2fbab1cfcc3c"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-capture-preservation-control-v2.py",
+      "sha256": "4c0adee8bb187f1a8354bf6066e14c985f8dafa6ddc09b2b62a985148b0377fc"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-synthetic-raw-result-v2.json",
+      "sha256": "ad3668a0c32a3e8f1adc390f7ebb22a6cafaefd04939554756b818e68a5ca2d3"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-capture-v1.py",
+      "sha256": "54d4a4d1974e7295b5b1a7ad38d353bc74d0bb3dbbfe86a253b29a1831aa849e"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-mutation-plan-v1.json",
+      "sha256": "8560f3cf1e71ce578feb6ff15b6a32ff13777fce09f937df6faff141f756b6ed"
+    }
+  ],
+  "remaining": "Actual once-only primary and mutation captures, their evidence review, same-session final confirmation, and integrated gate remain required."
+}

@@ -1,0 +1,64 @@
+DEFERRED SCIENCE — corrected uniform single-predecessor route ceiling
+
+This is the full corrected fourth proof surface of original PR8171. It is
+retained for scientific recovery, not promoted as a live bounded/no-go row.
+Formal negative certification remains DEFERRED: fewer than five qualified
+attack families were supplied. This procedural limitation does not refute
+this mathematical argument. The original branch must survive partial closure.
+
+## Theorem T4 — positive mean-map bounds
+
+For every V,V', `W_1(K_V,K_V')≥|F(V)−F(V')|`. Indeed for any coupling and
+unit d, `|(E s−E s')·d|≤E|s−s'|`. Choose d parallel to the mean difference
+(the zero case is immediate), then take the infimum over couplings.
+For V=0,V'=δd with δ>0, the mean difference is A(δ).
+
+The global bound is `1/3−δ²/45≤A(δ)/δ<1/3` for δ>0.
+For the lower bound multiply by the positive number δ² sinhδ. The resulting
+expression is
+`H(δ)=δ coshδ−(1+δ²/3−δ⁴/45)sinhδ`.
+Its coefficient of δ^(2n+1), for n≥1, is
+`16n(n−1)(n−2)(n+2)/(45(2n+1)!)`; the n=0 coefficient is zero.
+To verify it, combine `2n/(2n+1)!−1/[3(2n−1)!]`
+with `1/[45(2n−3)!]` when n≥2. The n=1,2 coefficients vanish and all n≥3
+are positive. Entire-series convergence gives H(δ)≥0 for every δ>0.
+The upper bound follows from the strict decrease proved in T1.
+The series `A(δ)/δ=1/3−δ²/45+2δ⁴/945−δ⁶/4725+…` and five rational
+checks are finite corroboration, not the all-δ proof. ∎
+
+Scoped ceiling argument (not a physical threshold).
+
+Fix beta>=0. Let c_beta be the supremum of
+W_1(K_{beta(s1+s2+s3)}, K_{beta(s1'+s2+s3)}) / |s1-s1'|
+over all unit s1,s1',s2,s3 with s1!=s1', with chordal transport cost.
+This is a uniform one-predecessor Lipschitz sensitivity over the full supplied
+domain. A one-step sum-of-three-sensitivities criterion asks 3c_beta<1.
+
+Take s1=(1,0,0), s2=(-1/2,sqrt(3)/2,0), s3=(-1/2,-sqrt(3)/2,0).
+Their sum is zero. Replace only s1 by s1'(theta)=(cos(theta),0,sin(theta));
+each predecessor remains a unit vector, while h=|s1'-s1| tends to zero.
+The positive mean-map lower bound above gives a ratio at least
+A(beta h)/h >= beta/3-beta^3 h^2/45.
+For beta=0 this is zero; for beta>0 the limit as theta->0 is beta/3.
+Hence c_beta>=beta/3, including the supremum limit. For beta>=1 the strict
+criterion 3c_beta<1 cannot hold; equality beta=1 is covered by the limit.
+This excludes only that uniform one-step chordal-Wasserstein criterion.
+It says nothing against block, multistep, state-restricted or different-metric
+couplings, or against actual loss of memory at any larger coupling.
+
+For the particular 2*TV triangle-bound route, at V=0 a displacement delta*d
+has TV/|delta| -> (1/2) E_uniform |s.d| = 1/4, since w=s.d is uniform on[-1,1].
+The same admissible predecessors therefore force its uniform one-slot
+2*TV coefficient to be at least beta/2. Its 3c<1 sufficient criterion is
+silent at beta>=2/3. This lower bound does not prove a global TV sensitivity
+upper bound of 1/4, and does not supply a contraction region beta<2/3.
+The historical quadrature maximum is a finite sample only.
+
+Strong counter-route: a multistep/block transport coupling may use correlations
+and state-dependent cancellation inaccessible to the uniform one-site
+triangle bound. Its terminal obligation is a controlled strict block cost
+contraction for a specified time step and admissible joint law. It remains
+open and is outside the theorem's narrow criterion domain.
+
+Original proof, including its small-delta alternating-series shortcut and
+placeholder bound, remains exact in the adjacent 18-entry gzip manifest.

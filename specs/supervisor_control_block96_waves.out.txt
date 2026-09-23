@@ -1,0 +1,11 @@
+W1: largest |Im| of the generator's eigenvalues, clocked record motion (log kappa = -1)
+  3 record(s) on a ring of 10, a = 1.0: in detailed balance 0.0e+00; with a circulation 1.110 (states: 120)
+  3 record(s) on a ring of 10, a = 0.5: in detailed balance 0.0e+00; with a circulation 1.782 (states: 120)
+  3 record(s) on a ring of 10, a = 0.0: in detailed balance 0.0e+00; with a circulation 2.884 (states: 120)
+  2 record(s) on 4^3, a = 1.0: in detailed balance 1.7e-15; with a circulation 0.668 (states: 2016)
+  2 record(s) on 4^3, a = 0.5: in detailed balance 3.0e-15; with a circulation 1.095 (states: 2016)
+  2 record(s) on 4^3, a = 0.0: in detailed balance 5.9e-15; with a circulation 1.793 (states: 2016)
+W2: a record with direction memory in three dimensions, 24^3 grid of wave vectors
+  p = 0.50: leading multiplier's largest |Im| at |k| < 0.8: 1.3e-15 (over the whole zone: 0.63); smallest |k| with a non-real leading multiplier 0.907 (line: arcsin((1 - p)/p) = 1.571); wave vectors with some non-real multiplier 0.999; non-real multipliers at |k| < 0.3 have modulus at most 0.4052 (k = 0 value (6p - 1)/5 = 0.4000)
+  p = 0.90: leading multiplier's largest |Im| at |k| < 0.8: 4.5e-01 (over the whole zone: 0.94); smallest |k| with a non-real leading multiplier 0.453 (line: arcsin((1 - p)/p) = 0.111); wave vectors with some non-real multiplier 0.999; non-real multipliers at |k| < 0.3 have modulus at most 0.8970 (k = 0 value (6p - 1)/5 = 0.8800)
+  p = 0.99: leading multiplier's largest |Im| at |k| < 0.8: 5.0e-01 (over the whole zone: 0.99); smallest |k| with a non-real leading multiplier 0.453 (line: arcsin((1 - p)/p) = 0.010); wave vectors with some non-real multiplier 0.999; non-real multipliers at |k| < 0.3 have modulus at most 0.9900 (k = 0 value (6p - 1)/5 = 0.9880)

@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-23 block 96 — author checks (not a review PASS)
+Own-prior-art check (block 94 T5, blocks 44, 54, 57) and the mobile-record lane's #8600/#8650 read for their mechanisms; a planned 3D claim (density branch real at every k) withdrawn after the control; textbook ingredients named as such. Census 8/8 in family.

@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+## Block 96 (2026-09-23)
+```yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: "the owner's request: the moving-records column's cells not filled by records alone (waves); block 94's scorecard"
+source_of_blocker_text: owner, 2026-09-23
+reachability_to_target: advances
+artifact_role: theorem
+next_trace_action: "waves cell mapped (a coupling odd under time reversal; four routes); next: one geometry for records and waves; the delayed clock law; formation with the clock"
+```

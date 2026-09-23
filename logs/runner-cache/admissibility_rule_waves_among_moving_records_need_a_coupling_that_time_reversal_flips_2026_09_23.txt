@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_waves_among_moving_records_need_a_coupling_that_time_reversal_flips_2026_09_23.py
+runner_sha256: 3a723cc399b218c97d201cada02860b8c4dc3f00e421809e13341338de1e8756
+input_fingerprint_sha256: 9bc92d04ee8176560bd0300c778335d602cba06310fe8d90a5964b6cf3f6b878
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.65
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_WAVES_AMONG_MOVING_RECORDS_NEED_A_COUPLING_THAT_TIME_REVERSAL_FLIPS_CLOCKED_RECORD_MOTION_NEVER_OSCILLATES_BOUNDED_THEOREM_NOTE_2026-09-23.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and records are permanent (contents never change)
+PASS: B1 T1: records on a ring of six with the clock field slaved to them (base 4, block 95's kernel), two and three records, hops timed by the site left (a = 1), the bond (a = 1/2) and the site entered (a = 0): every one of the 360 moves satisfies pi(C) rate(C -> C') = pi(C') rate(C' -> C) with block 95's pair law, exactly; the generator is therefore self-adjoint in L^2(pi): real, non-positive spectrum, every autocorrelation a nonnegative mixture of decaying exponentials - no oscillation at any wavelength, no orbit of one record about another
+PASS: B2 T1's contrast: one record on a ring of six hopping at equal rates both ways has real mode rates 2 cos(pi j/3) - 2; hopping at 2 one way and 1 the other (a circulation, not in detailed balance), the mode rates 2 omega^j + omega^-j - 3 have imaginary parts (sqrt(3)/2 at j = 1): the density wave travels round the ring
+PASS: C1 T2 on a line: a record that keeps its last direction with probability p and reverses otherwise has mode multipliers mu with mu^2 - 2p cos(k) mu + (2p - 1) = 0; at k = 0 they are 1 and 2p - 1 (real); the density branch is 1 - (p/(2(1 - p))) k^2 + ... (at p = 3/4: 1 - (3/2) k^2, diffusive); the branches are complex only where p^2 cos^2 k < 2p - 1 (at p = 3/4, k = pi/2 the discriminant is -1/2): short waves oscillate, long waves do not
+PASS: C2 T2 in three dimensions (continue with p = 9/10, else turn to one of the other five directions): the mode matrix M(k) = E(k)T satisfies conj(M(k)) = Pi M(k) Pi (Pi the inversion), so its spectrum is closed under conjugation; at k = 0 the multipliers are 1 and (6p - 1)/5 (five times); at k = (pi/2, 0, 0) the characteristic polynomial has real coefficients, exactly one root in (9/10, 1) (the density branch, real) and 2 non-real roots (direction modes that oscillate while decaying)
+PASS: D1 T3: the three routes in the repository give long waves by coupling two conserved things antisymmetrically at first order in k: records with a direction that collisions exchange (density and momentum; block 44): characteristic polynomial mu^2 (mu^2 + c^2 |k|^2), rates +-i c|k|; record pairs with a chiral exchange rate (colour moments X, Y; the mobile-record lane, #8600): mu^2 (mu^2 + ab|k|^2)^2, rates +-i sqrt(ab)|k| with ab = gamma^2 rho_A rho_B/3; possibility's own qubit moving reversibly (the walk; block 54): H^2 = beta^2 sum sin^2 k_j, frequencies +-beta|sin k| -> +-beta|k|; made symmetric, the coupling gives real rates (growth and decay), not waves
+PASS: E1 T3 for content-blind records: the average of the 24 proper cubic rotations is the zero matrix (no vector is invariant, so a covariant rule gives the record density no drift), and the average of R (x) R projects onto delta_ij (the only invariant second-rank form): with one conserved number the long-wave current is -D grad(rho), and the mode is diffusive under every covariant rule, reversible or not
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - detailed balance at every move of two and three records on a ring of six for three timings; the line and three-dimensional mode matrices of a record with direction memory
+per_site: executed - the clock field at every site of the ring from block 95's kernel; the inversion relation of the three-dimensional mode matrix
+per_mode: executed - mode rates of one record on a ring with and without circulation; characteristic polynomials of the three wave routes at general k; control: spectra of larger clocked chains and of the direction-memory record
+per_block: executed - averages of the 24 rotations on vectors and rank-2 forms
+lattice_wide: T1 for every finite chain in detailed balance (proof), checked on the ring; T2 exact on the line, at k = 0 and one k in three dimensions; T3 for the three linear systems at every k and for every covariant rule on content-blind records at the level of the long-wave current; the routes' own clauses are supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: waves among moving records - clocked record motion in detailed balance never oscillates (real spectrum, no fronts, no orbits); direction memory alone gives only decaying oscillations of short waves; long waves need two conserved things coupled by a term time reversal flips: momentum passed between records, a chiral pair exchange, possibility moving reversibly, link memory; nothing adopted
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_g_bare_forced_via_ward_substitution_exact_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_g_bare_forced_via_ward_substitution_exact_2026_05_17.py",
+ "seed": 46252,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5d3cdef4",
+ "started_utc": "20260923T065052Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=27, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1b1486b74aa00033258e754d5d7dbca15c5b9dddd8b3f0c573751c15aa12ad98",
+ "stdout_tail": "----------------------------\n  [PASS (A)] load-bearing residual R(g_bare, 3) reduces to (1 - g_bare^2) / 6  (R(g_bare, 3) = 1/6 - g_bare**2/6, claimed = 1/6 - g_bare**2/6)\n  [PASS (A)] load-bearing residual R(1, 3) = 0 exactly (the closure point)  (R(1, 3) = 0)\n  [PASS (A)] load-bearing residual R(2, 3) = -1/2 != 0 (off-surface confirmation)  (R(2, 3) = -1/2)\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at exact sympy precision:\n    (W1) g_bare-flatness of F_Htt^(0) across grid of g_bare values\n    (T1) substitution closure at N_c = 3 forces g_bare^2 = 1\n    (T1 alt) abstract narrow (AN) at (N, c0) = (3, 1/6) yields g^2 = 1\n    (T2) positive bare-coupling branch yields unique g_bare = 1\n    (T3) counterfactual N_c = 2 forces g_bare^2 = 2/3 (not 1)\n    (T3) counterfactual N_c = 4 forces g_bare^2 = 4/3 (not 1)\n    (T3) counterfactual N_c = 5 forces g_bare^2 = 5/3 (not 1)\n    (AN) abstract forcing identity solve(c0 = g^2/(2N)) yields g^2 = 2 N c0\n    (W1) and (W2) consistency at (g_bare, N_c) = (1, 3)\n    (W1)/(W2) off-surface inconsistency at (g_bare, N_c) = (2, 3)\n    load-bearing residual reduces to (1 - g_bare^2)/6 at N_c = 3\n\n========================================================================================\nTOTAL: PASS=27, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T065053Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

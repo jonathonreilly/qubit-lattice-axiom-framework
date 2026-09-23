@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_assembly_defect_isospectrality_and_source_pairing_cycle714_2026_08_02",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_assembly_defect_isospectrality_and_source_pairing_cycle714_2026_08_02.py",
+ "seed": 46300,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5d3cdef4",
+ "started_utc": "20260923T065140Z",
+ "elapsed_s": 6.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=47 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "71ebfded9777296d8a2c84809a56626d5439d1601d1c83e576d072da23a8d85f",
+ "stdout_tail": " 0.1271 0.1454 0.1596 0.1709 0.1802\n[PASS] pairing transfers to the relabelled source at L = 3 | 24 frames, worst deviation 8.3e-17\n[PASS] pairing transfers to the relabelled source at L = 4 | 24 frames, worst deviation 2.4e-14\n[PASS] a transported source reproduces the reference solution | worst relative deviation 4.8e-14\n[PASS] the seeded fixed source changes on each tested mixed frame | 3 frames; minimum relative deviation 1.5316\n[PASS] frame spread of the pairing stays order one | spread over reference 1.6928 7.3335 10.5157\n[PASS] constant-sign frames form a subgroup | order 6, traces [-1, -1, -1, 0, 0, 3]\n[PASS] the subgroup has four right cosets | sizes 6 6 6 6\n[PASS] reassembled operators form four numerical right-coset clusters | all frames at L=3..6; worst entrywise variation 1.2e-10\n[PASS] the seeded pairing is constant within each numerical right-coset cluster | one seed at L=3..6; worst within-cluster variation 6.2e-10\n[PASS] the four seeded cluster values are separated | one seed at L=3..6; nearest pair 0.0027 apart\n[PASS] the seeded 24-frame scan takes four numerical values | seed 714; distinct values at L = 3,4,5,6: 4 4 4 4\n[PASS] the fully group-averaged seeded source is frame-invariant | spread over 24 frames 2.2e-16\n[PASS] rejector: averaging over the subgroup alone does not suffice | smallest remaining spread 0.0176\nreceipt: outputs/physical_assembly_defect_isospectrality_and_source_pairing_cycle714_2026_08_02_receipt_2026-08-02.json\n\nTOTAL: PASS=47 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T065146Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_assembly_defect_isospectrality_and_source_pairing_cycle714_2026_08_02.txt against the .txt beside this log"
+  ]
+ }
+}

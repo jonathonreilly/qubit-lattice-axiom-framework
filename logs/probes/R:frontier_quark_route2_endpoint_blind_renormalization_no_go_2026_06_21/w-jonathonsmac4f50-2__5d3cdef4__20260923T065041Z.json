@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_quark_route2_endpoint_blind_renormalization_no_go_2026_06_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_quark_route2_endpoint_blind_renormalization_no_go_2026_06_21.py",
+ "seed": 46241,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5d3cdef4",
+ "started_utc": "20260923T065041Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "03a1d6bead7b122bdf96b72f174a9c373775f26a37381205cb713fe328b81fd1",
+ "stdout_tail": "d shell in their own channel, which leaves lambda=q_E/q_T exactly invariant, and that single mode-ratio invariance is the entire no-go; the parsed table then keeps q_T and q_E as separate columns for all 8 boxes so the two modes are never averaged together.\nper_block: the boxes are split into the N=15 pinning row and a 5-row bulk block, and each block is judged against its own named threshold -- exactly one row lies within 0.02 of 9/4, every bulk row sits further than 1.0 away, every bulk row fails the fix-q_T repair by more than 1.0 and the fix-q_E repair by more than 0.25, and the counterterm block spreads by more than 0.25 while staying more than 0.45 away from unity throughout.\nlattice_wide: executed at finite volume only, and certified as exactly that -- the evidence spans 8 boxes up to N=29, read from a stored upstream scan rather than recomputed here, and no thermodynamic or infinite-volume limit is taken anywhere in this file; the boundary proved is algebraic and holds box by box, and the rescue it leaves open, a nonseparable E-specific center/shell counterterm, is the missing readout primitive restated.\n\nVerdict:\nEndpoint-blind/separable finite-box renormalizations cannot rescue the Route-2 endpoint triple. They preserve lambda=q_E/q_T, and the live bulk lambda rows miss 9/4.  A rescue therefore needs a nonseparable E-specific center/shell counterterm, which is the missing E-center readout datum rather than a harmless size-stable normalization.\n\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T065041Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

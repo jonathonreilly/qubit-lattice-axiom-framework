@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_fs_rotation_exchange_record_axiom_invariance_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_fs_rotation_exchange_record_axiom_invariance_2026_06_04.py",
+ "seed": 46250,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5d3cdef4",
+ "started_utc": "20260923T065050Z",
+ "elapsed_s": 1.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "53bcd9317d70d0739fdd9199737bb0640647d9021f5b87d0e95f55d7782358b9",
+ "stdout_tail": ":: on-site 2pi acts as -1 on both sectors; P is non-scalar\n  PASS R2_algebraic_generation_of_P_fails :: on-site algebra dim = 1; P non-scalar\n  PASS R3_R4_only_discrete_Z2_realized_by_on_site_rotation :: on-site 2pi powers realize only scalars in {1, -1}\n  PASS R5_retained_locality_is_ungraded_bosonic :: [a0, a1] = 0 (commute) and {a0, a1} != 0 (NOT CAR)\n  PASS R6_hcb_passes_all_three_premises_yet_bosonic :: spin-1/2 + 2pi=-1 + nilpotent + [a0,a1]=0 -> bosonic\n\n========================================================================\nTOTAL PASS: 84\nTOTAL FAIL: 0\n========================================================================\n\nCompanion conclusion (audit-friendly evidence only):\n  The load-bearing finite-dimensional facts (F1)-(F5) of the parent\n  no-go use ONLY Quantum + Lattice axiom content plus standard\n  finite-dimensional complex linear algebra (Pauli, tensor\n  products, Jordan-Wigner, swap, M_4(C) dimension count).\n  The Record axiom (additive scalar record-readout functional)\n  is neither used nor invoked. All symbolic outputs are identical\n  under both 'Record axiom asserted' and 'Record axiom not\n  asserted' outer scopes. The parent's N1 walls R1-R6 remain\n  valid on the verified facts alone. This runner does not\n  re-apply any prior audit treatment; it records that the\n  arithmetic checked here is unchanged by the 2026-06-04\n  axiom-set adoption.\n\nThe audit lane decides whether to honor or re-test the parent\ntreatment on the new minimal_axioms premise hash.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T065051Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_companion_fs_rotation_exchange_record_axiom_invariance_2026_06_04.txt against the .txt beside this log"
+  ]
+ }
+}

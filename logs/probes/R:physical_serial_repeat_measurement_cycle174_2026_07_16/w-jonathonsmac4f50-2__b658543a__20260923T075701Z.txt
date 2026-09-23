@@ -1,0 +1,30 @@
+POSITIVE TWO-WITNESS LAW
+PASS one generic schema covers all 32 signed rows :: 32
+PASS proper-cubic closure is exactly 96 raw rows :: 96
+PASS the 96 ingress rows are disjoint from and deterministic with Cycle 169 :: {'base': 101708, 'ingress': 96, 'merged': 101804, 'conflicts': 0}
+PASS the ingress schema adds no onsite role :: set()
+
+STOCK P TWO-PORT INTERFACE
+PASS the stock measured-row interface fixes the lower source face :: {'lower_role': 'MARK', 'lower_ports': ((1, 0, -1), (-1, 0, -1), (0, 1, -1), (0, -1, -1))}
+PASS all four lower fork departures consume that face as a local guard :: (((0, 1, -181), (0, 1, -182), (0, 0, -182), 'MARK'), ((1, 0, -181), (1, 0, -182), (0, 0, -182), 'MARK'), ((0, -1, -181), (0, -1, -182), (0, 0, -182), 'MARK'), ((-1, 0, -181), (-1, 0, -182), (0, 0, -182), 'P0'))
+PASS protecting the lower line for a row witness empties forty cable domains :: {'kind': 'no-guide-option-against-fixed-records', 'empty_domains': 40, 'sample': ((((0, 1, -181), 1, (0, 1, -182), (0, 1, -181), (0, 1, -183)), 0), (((0, 1, -181), 2, (0, 1, -183), (0, 1, -182), (0, 1, -184)), 0))}
+
+ALTERNATIVE INTERFACES
+PASS the unguarded orthogonal-pair shortcut is not a deterministic merge :: {'raw': 384, 'overlap': 12, 'conflicts': 12}
+PASS a marked opposite-pair compiler interface remains a clean live route :: {'raw': 384, 'conflicts': 0}
+PASS serial composition still requires visible nonzero transport :: (2695700, 2906400)
+
+SCOPE AND NO-GO DISCIPLINE
+FAIL note contains: partial exact interface result :: 
+FAIL note contains: positive 96-row two-witness ingress :: 
+FAIL note contains: stock p two-port/mark line :: 
+FAIL note contains: not a serial-composition no-go :: 
+FAIL note contains: exterior row-decoder/fanout :: 
+FAIL note contains: n1 — alternative route enumeration :: 
+FAIL note contains: n8 — cross-cycle echo :: 
+FAIL note contains: status: fail for a broad no-go :: 
+FAIL note contains: no axiom, primitive, registry, policy, or audit edit follows :: 
+
+TOTAL
+PASS 10 FAIL 9
+RESULT FAIL

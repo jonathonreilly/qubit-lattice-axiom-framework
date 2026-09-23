@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_assembly_defect_cocycle_and_mixed_frame_comparator_cycle710_2026_08_02",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_assembly_defect_cocycle_and_mixed_frame_comparator_cycle710_2026_08_02.py",
+ "seed": 46296,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5d3cdef4",
+ "started_utc": "20260923T065136Z",
+ "elapsed_s": 4.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=55 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "700c85aca5b470aa5d4af5a10fee4a2dd62d088ee35f97e0694905d7a835c8fb",
+ "stdout_tail": "1\nok   c4.floor.L3 minus floor relative spread 6.2e-05\nok   c4.resid.L7.g1 minus law residual 5.5e-04\nok   c4.resid.L7.g4 minus law residual 4.8e-04\nok   c4.resid.L7.g9 minus law residual 5.1e-04\nok   c4.cos.L7 worst minus alignment gap 1.4e-07\nok   c4.reject.L7 plus-branch rejector residual 9.8e-01\nok   c4.floor.L7 minus floor relative spread 1.4e-04\n== C5 finite mixed-frame comparator census and one response-law witness ==\nok   c5.uniform.L3 comparator bit-identical across all 18 non-sextet frames\nok   c5.value.L3 comparator 4.0e+00 within 1.3e-08 of 4\nok   c5.sep.L3 comparator separation 3.2e+10\nok   c5.reject.L3 first-order law fails at mixed frame 0, residual 3.8e+00\nok   c5.uniform.L7 comparator bit-identical across all 18 non-sextet frames\nok   c5.value.L7 comparator 4.0e+00 within 1.3e-08 of 4\nok   c5.sep.L7 comparator separation 3.2e+10\nok   c5.reject.L7 first-order law fails at mixed frame 0, residual 2.0e+02\nok   c5.carrier body-diagonal class carries the obstruction at all 18 frames\nok   c5.equiv zero mixed classes iff constant-sign sextet, over all 24\n== C6 census cross-checks against the landed cycle-700 identification ==\nok   c6.list constant-sign list [1, 4, 9, 15, 18, 23]\nok   c6.nflip nflip census [(0, 3), (1, 9), (2, 9), (3, 3)]\nok   c6.orders sextet element orders [(1, 2), (4, 2), (9, 2), (15, 3), (18, 3), (23, 1)]\nRECEIPT: outputs/physical_assembly_defect_cocycle_and_mixed_frame_comparator_cycle710_2026_08_02_receipt_2026-08-02.json\nTOTAL: PASS=55 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T065140Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_assembly_defect_cocycle_and_mixed_frame_comparator_cycle710_2026_08_02.txt against the .txt beside this log"
+  ]
+ }
+}

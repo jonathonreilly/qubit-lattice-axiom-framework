@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_block_cost_interval_lift_obstruction_cycle729_independent_check_2026_08_04",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_block_cost_interval_lift_obstruction_cycle729_independent_check_2026_08_04.py",
+ "seed": 46390,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5d3cdef4",
+ "started_utc": "20260923T065310Z",
+ "elapsed_s": 6.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f55f3b764ae79ec89a4dd45a48823967ec421e847f9e9bf5ff440f6244621041",
+ "stdout_tail": "PASS independent Cycle 728 witness binding                Cycle 729 PRIOR equals Cycle 728 BLOCK_HI entry by entry\nPASS independent block cell census                        subsets 42504; unit cells 17280; spectrum [(0, 13152), (1, 17280), (2, 9840), (3, 1472), (4, 680), (5, 64), (6, 16)]\nPASS independent charge spectrum                          [(3, 128), (4, 768), (5, 2816), (6, 4928), (7, 5760), (8, 2608), (9, 272)]\nPASS independent supplied block symmetry                  group order 16\nPASS independent piece-orbit census                       orbits 1080; sizes [16]\nPASS independent generic sample family                    points 17280; orbit multiplicity 16\nPASS independent exact floor certificate                  least slack 0; tight pieces 480; numerator 110144/512\nPASS independent exact ceiling certificate                least slack 0; tight pieces 848; numerator 15728/49\nPASS independent exact witness covers and costs           {'stencil': (48, 48, 216, 1128), 'cycle728': (48, 48, 318, 1128), 'cost320': (48, 48, 320, 1128)}\nPASS independent regular comparator heights               stencil (16, 912); Cycle 728 witness (32, 912)\nPASS independent non-face-to-face obstruction             {'stencil': 0, 'cycle728': 0, 'cost320': 16}\nPASS hostile certificate mutations are rejected           floor least -1; ceiling least -1\nPASS hostile witness mutation is rejected                 separated pairs 1116/1128\nTOTAL: PASS=13 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T065317Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

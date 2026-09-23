@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_bit_router_patricia_selector_cycle87_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_bit_router_patricia_selector_cycle87_2026_07_14.py",
+ "seed": 46384,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5d3cdef4",
+ "started_utc": "20260923T065304Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1f65a62591a41e92cd64fa6c7b425ae3e058a6d68a4e3d69869bce026b864f3e",
+ "stdout_tail": " prefix and Patricia selectors\n===============================================================================\nPASS B01 program bank contains 198 distinct 48-bit leaves\nPASS B02 explicit prefix trie has 6,785 nodes and 6,784 edges\nPASS B03 explicit trie has 197 branch and 6,390 unary nodes :: Counter({1: 6390, 2: 197})\nPASS B04 exact maximum trie width is 198 at depths 46-48\nPASS B05 compressed Patricia trie has 395 nodes and 394 edges\nPASS B06 compressed edge labels total 6,784 bits\nPASS B07 longest compressed edge label is 42 bits\nPASS B08 every exact program classifies to its unique selected row\nPASS B09 every selected leaf retains its exact output association\nPASS B10 all 9,504 one-bit perturbations classify exactly or reject\nPASS B11 exactly 30 directed one-bit flips land on another valid row\n\n===============================================================================\nC - Positive partial selector and exact physical residual\n===============================================================================\nPASS C01 note exists and carries authority none\nPASS C02 note states every gate input/cage is supplied\nPASS C03 note names candidate-bit bus residual\nPASS C04 note names physical trie embedding residual\nPASS C05 note does not call the selector seed-grown\nPASS C06 note denies foundation and axiom effects\n\nGATE_SOURCE=12 GATE_CANONICAL=4 GATE_RAW=51 PHYSICAL_UNION_RAW=4651\nPREFIX_NODES=6785 PATRICIA_NODES=395 PATRICIA_EDGES=394 LABEL_BITS=6784\nSUMMARY: 26 PASS / 0 FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T065305Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_case_role_isolation_cable_probe_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_case_role_isolation_cable_probe_2026_07_15.py",
+ "seed": 46613,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5d3cdef4",
+ "started_utc": "20260923T065653Z",
+ "elapsed_s": 63.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "49e12a183411bc1084e01ba47fd409a59392d83b99a585f96374b36c6e4b207d",
+ "stdout_tail": "TABLE 8 192 89708 0\nGRAPHS 96 [121] 0\nDELETION 0\nRESULT PHYSICAL_CASE_ROLE_ISOLATION_CABLE\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T065756Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

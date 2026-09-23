@@ -1,0 +1,32 @@
+{
+ "task": "R:physical_signed_row_egress_cycle167_2026_07_16",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_signed_row_egress_cycle167_2026_07_16.py",
+ "seed": 50284,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b658543a",
+ "started_utc": "20260923T075804Z",
+ "elapsed_s": 88.8,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3484e985c2249cd7617c0b1c9e0c10ef7c0b958ff7455b09e70a8bad6ec894b5",
+ "stdout_tail": "inistic :: 0\nPASS all 768 standalone readers survive the unified law :: ([], ())\nPASS all 768 tap-sign-cable histories survive the unified law :: ([(6, 5, 1, 92, 'H0', ()), (6, 5, 1, 92, 'H1', ())], [], ())\n\nFACTORIZED MEMBERSHIP BOUNDARY\nLAW 97388 6 144 8 192 0 0\nLANES 1024 6144 5120 0 [(6, 5, 1, 79, 5, False, 'H0'), (6, 5, 1, 79, 5, True, 'H1')]\nROTATIONS 147456 0\nDOMAIN 360 2160 1080 1080 (360, 360, 360) 0 0\nXOR_ROTATIONS 0\nDELETIONS 0\nANCESTRY supplied-five-bit-literals host-product-enumeration factorized-xor-inputs\nRESULT FACTORIZED_COMMUTING_SIGNED_MEMBERSHIP\nPASS the supplied-literal membership component remains green :: \n\nSCOPE AND NO-GO DISCIPLINE\nFAIL note contains: two exact zero-delta attempts fail :: \nFAIL note contains: those are exclusions of two specified interfaces, not a sign-egress no-go :: \nFAIL note contains: 101,420 :: \nFAIL note contains: literal-input component certificate :: \nFAIL note contains: status: fail for a general no-go :: \nFAIL note contains: n1 \u2014 alternative routes :: \nFAIL note contains: n2 \u2014 wall independence :: \nFAIL note contains: n3 \u2014 hidden-condition scan :: \nFAIL note contains: n4 \u2014 residual matching :: \nFAIL note contains: n5 \u2014 rhetoric audit :: \nFAIL note contains: n6 \u2014 partial closure and axiom classification :: \nFAIL note contains: n7 \u2014 strongest hostile steelman :: \nFAIL note contains: n8 \u2014 cross-cycle echo :: \nFAIL note contains: no axiom, primitive, registry, policy, or audit edit follows :: \n\nTOTAL\nPASS 11 FAIL 15\nRESULT FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T075933Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "R:physical_row_role_literal_fanout_cycle153_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_row_role_literal_fanout_cycle153_2026_07_15.py",
+ "seed": 48512,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b658543a",
+ "started_utc": "20260923T072832Z",
+ "elapsed_s": 571.9,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "472cdc0cb5d418ce336b66912afa5a8dd9fbf3ee54f27923b0d1b35696c08d14",
+ "stdout_tail": " 32 rows by five bit positions :: Counter({6: 160})\nPASS every canonical output is the indexed literal bit :: \nPASS 960 proper-cubic rows are disjoint from the Cycle-152 law :: (960, 82316)\nPASS fanout merges into 83,276 rows without conflict :: 83276\nPASS apparatus supplies one row record and no literal input bits :: \nPASS deleting any direct fanout parent suppresses its intended bit :: (960, ())\n\nALL ROWS, SCHEDULES, AND ROTATIONS\nPASS all 768 fanout graphs realize the full five-write causal cube :: []\nPASS deleting any index token removes only that bit across all rotations :: (3840, ())\nPASS deleting the sole row source suppresses every bit in every orientation :: []\n\nPREDECESSOR COEXISTENCE\nPASS all 54,000 Cycle-152 router graphs survive the fanout rows :: []\nPASS fanout rows preserve all 86,640 prior unified histories :: []\nPASS Cycle-144 terminal retains exactly its two priced fronts :: {(-9, -1, 0): frozenset({'B1'}), (-11, 1, 2): frozenset({'R_B21'})}\n\nSCOPE\nFAIL note contains: one row record to five literal bits :: \nFAIL note contains: no literal input bits :: \nFAIL note contains: representation mismatch :: \nFAIL note contains: bit transport and duplicate use remain open :: \nFAIL note contains: finite role-level adapter :: \nFAIL note contains: does not derive occurrence or equal weights :: \nFAIL note contains: no axiom addition follows :: \nFAIL note contains: n1 \u2014 alternative routes :: \nFAIL note contains: n8 \u2014 cross-cycle echo :: \n\nTOTAL\nPASS 15 FAIL 10\nRESULT FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T073804Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

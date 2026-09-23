@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_adjacency_admissible_assembly_trade_cycle723_2026_08_03",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_adjacency_admissible_assembly_trade_cycle723_2026_08_03.py",
+ "seed": 46278,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5d3cdef4",
+ "started_utc": "20260923T065118Z",
+ "elapsed_s": 7.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=36 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "33e652002af8b563177a67e5fa429c1a4ef4d3a509d9483477b8079ad42a2558",
+ "stdout_tail": "wide: unresolved; no arbitrary-L, multi-cell, refined-cell, nonsimplicial, boundary-free, or continuum obstruction is claimed\nRECEIPT {\"assembled_form_past_cell_entry\": \"0.000000e+00\", \"cutoff_reduced_form_past_cell_entry\": \"6.318\", \"cutoff_reduced_share_by_range\": {\"L3\": {\"0\": \"0.400\", \"1\": \"0.886\", \"2\": \"0.235\"}, \"L4\": {\"0\": \"0.428\", \"1\": \"0.836\", \"2\": \"0.160\", \"3\": \"0.304\"}}, \"deletion_discarded_share\": {\"L3\": \"0.529\", \"L4\": \"0.547\"}, \"discarded_mode_gradient_max\": \"1.333344e-06\", \"discarded_mode_gradient_norm\": \"3.147189e-06\", \"distinct_slots_by_footprint_weight\": [8, 36, 18, 3], \"exceeding_floor_by_tick_split\": [3, 3, 3, 3], \"facet_corner_dissections\": 182, \"facet_corner_tetrahedra\": 58, \"facet_dissection_exceeding_floor\": 18, \"flat_directions\": {\"L3_LT2\": 16, \"L3_LT3\": 24, \"L4_LT2\": 54}, \"gates\": {\"fail\": 0, \"pass\": 36}, \"live_condition_number\": {\"L3_LT2\": \"1.83e+02\", \"L3_LT3\": \"1.83e+02\", \"L4_LT2\": \"6.00e+02\"}, \"nondegenerate_corner_4_simplices\": 3008, \"quadratic_identity_relative_deviation\": \"1.332e-15\", \"shifted_reduction_rejector_deviation\": \"8.608e-04\", \"slot_uses_by_footprint_weight\": [24, 108, 72, 36], \"softest_live_eigenvalue\": {\"L3_LT2\": \"1.5900e-01\", \"L3_LT3\": \"1.5900e-01\", \"L4_LT2\": \"4.8367e-02\"}, \"spatial_axis_face_body\": [72, 36, 12], \"spatial_floor_by_tick_split\": [3, 1, 1, 3], \"stencil_exceeding_by_tick_split\": [5, 4, 4, 5], \"symmetry_members_and_frame_blocks\": {\"L3\": [12, 8], \"L4\": [12, 8]}, \"unit_cell_corner_dissection_floor\": 48}\nTOTAL: PASS=36 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T065126Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_adjacency_admissible_assembly_trade_cycle723_2026_08_03.txt against the .txt beside this log"
+  ]
+ }
+}

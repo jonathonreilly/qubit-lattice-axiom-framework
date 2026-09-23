@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_heat_kernel_native_rp_plane_character_positivity_2026_07_09",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_heat_kernel_native_rp_plane_character_positivity_2026_07_09.py",
+ "seed": 46256,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5d3cdef4",
+ "started_utc": "20260923T065056Z",
+ "elapsed_s": 10.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=27 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "dcdf6471b3829612a61f145cc14dbce406d25855b386e7667343c192ae94c668",
+ "stdout_tail": "max dev=1.3e-15)\n  [PASS] D4: SU(3) adjoint: real, orthogonal, homomorphism, trace = |TrU|^2-1 = s_(1,1)  (im=5.6e-17, orth=6.7e-16, hom=3.4e-16, tr=2.8e-16, schur=5.1e-16)\n  [PASS] D5: SU(3) factorization, fundamental and adjoint  (fund=1.1e-16, adj=6.7e-16)\n\n----------------------------------------------------------------------------------------\nPart E -- H3: integrated reflected Gram PSD with the HK weight\n----------------------------------------------------------------------------------------\n  [PASS] E1: Z_N exact Gram PSD (N in {2,3,4,5}, t in {0.3,1.0,2.5})  (Z_2(t=0.3): min=-5.4e-16; Z_2(t=1.0): min=-5.3e-17; Z_2(t=2.5): min=-2.3e-18; Z_5(t=0.3): min=+1.1e-02 ...)\n  [PASS] E2: dropped-conjugation control is NOT PSD (Z_4)  (min eig=-1.7253)\n  [PASS] E3: manifest factorization G = W diag(kappa) W^dag, kappa >= 0 (Z_4, t=1.0)  (match dev=1.4e-13, kappa_min=+2.9e-01)\n  [PASS] E4: U(1) quadrature Gram PSD (24-point grid, t in {0.5,1.5})  (t=0.5: min=+4.6e-03; t=1.5: min=+4.3e-02)\n  [PASS] E5: SU(2) MC Gram PSD within MC tolerance (t=3.0, n=200k, seed 0)  (min eig=+3.45e-02, tol=3.5e-02, herm=1.2e-02, w_min=1.49e-04, ESS=38756)\n  [PASS] E6: SU(3) MC Gram PSD within MC tolerance (t=3.0, n=400k, seed 1)  (min eig=+1.43e-02, tol=2.2e-02, herm=7.3e-03, w_min=1.25e-02, ESS=114246)\n\n========================================================================================\nTOTAL: PASS=27 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T065106Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_companion_heat_kernel_native_rp_plane_character_positivity_2026_07_09.txt against the .txt beside this log"
+  ]
+ }
+}

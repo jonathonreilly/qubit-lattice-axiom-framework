@@ -1,0 +1,32 @@
+{
+ "task": "R:physical_r_b01_recurrent_root_bind_cycle144_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_r_b01_recurrent_root_bind_cycle144_2026_07_15.py",
+ "seed": 47865,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b658543a",
+ "started_utc": "20260923T071745Z",
+ "elapsed_s": 58.9,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5d8a52a8a9f600d5e64b3ce7d48f932d41c37ce5f00cc7ee16fca0d4af93b72c",
+ "stdout_tail": "-independent terminal :: (68736, 330024, 9, 686970)\nPASS terminal exposes only next rail and next sidecar fronts :: {(-9, -1, 0): frozenset({'B1'}), (-11, 1, 2): frozenset({'R_B21'})}\nPASS first root requires physical seed, JOINT, and every adapter record :: ((5, 2, -3), (-1, 2, -2), (-1, 1, -2), (-1, 0, -2), (-1, 0, -1), (-1, -1, -1), (-2, -1, -1), (-2, -2, -1), (-3, -2, -1), (-3, -1, -1), (-2, -1, 0), (-3, -1, 0), (-4, -1, 0))\nPASS second root requires first root and the carried sidecar :: ((-4, 0, 0), (-5, -1, 0), (-6, -1, 0), (-7, -1, 0), (-8, -1, 0))\nPASS both roots consume the same three-parent guarded local row :: ((((0, -1, 0), 'R_A22'), ((0, 1, 0), 'R_C23'), ((1, 0, 0), 'B0')), (((0, -1, 0), 'R_A22'), ((0, 1, 0), 'R_C23'), ((1, 0, 0), 'B0')))\n\nPHYSICAL PREHISTORY FIREWALL\nPASS 249,192 physical histories preserve byte, port, and launch barriers :: (249192, 1596534, (), (), {(4, 4, -3)})\nPASS extension rows cannot rewrite a physical-prefix target :: ()\nPASS every reachable prehistory extension front is declared and typed :: (1188, 3, 2, ())\n\nMUTATION AND COVARIANCE CONTROLS\nPASS all 918 direct root-parent mutations suppress R_B01 :: ((), ())\nPASS alternate typed fronts never contain the intended root value :: (0, 0)\nPASS all 236,064 proper-cubic raw images preserve output :: []\nFAIL review note carries N1-N8 discipline and no axiom edit :: \n\nACCOUNTING\nPHYSICAL_STATES 249192\nFACTOR_STATES 68736\nFACTOR_EDGES 330024\nFINAL_RAW 9836\nPASS 14 FAIL 2\nRESULT CYCLE144_REJECTED\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T071844Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

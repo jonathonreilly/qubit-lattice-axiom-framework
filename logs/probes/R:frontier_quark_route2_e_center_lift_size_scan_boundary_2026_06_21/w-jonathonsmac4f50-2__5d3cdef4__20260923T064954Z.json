@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_quark_route2_e_center_lift_size_scan_boundary_2026_06_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_quark_route2_e_center_lift_size_scan_boundary_2026_06_21.py",
+ "seed": 46194,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5d3cdef4",
+ "started_utc": "20260923T064954Z",
+ "elapsed_s": 46.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6665f13c58b1d937a270a8e924970fc099b4516d8aca8a9c5ded04c3a7302942",
+ "stdout_tail": "ded 15^3 calibration cache\n    gamma_E(center) abs diff=1.377e-17; gamma_E(shell) abs diff=1.824e-17; gamma_T(center) abs diff=3.426e-17; gamma_T(shell) abs diff=4.434e-17\n[NO-GO] PASS: the neighboring executable boxes do not sit in the target envelope\n    N=11: q_E gap=0.549, shell gap=2.1; N=13: q_E gap=1.02, shell gap=3.69; N=17: q_E gap=4.11, shell gap=2.96\n[NO-GO] PASS: the neighboring executable boxes include sign/orientation conflicts with the target chain\n    N=11: q_E=+0.846134, shell T/E=+2.203976; N=13: q_E=-0.038870, shell T/E=+5.382863; N=17: q_E=-5.837000, shell T/E=+3.921155\n[BOUNDARY] PASS: the checked finite-box sequence is not monotone convergence evidence for q_E -> 15/8\n    q_E sequence = N=11: +0.846134, abs gap=1.028866, N=13: -0.038870, abs gap=1.913870, N=15: +1.876246, abs gap=0.001246, N=17: -5.837000, abs gap=7.712000\n[EXACT] PASS: the exact endpoint algebra remains coherent if a future theorem supplies q_E=15/8\n    q_T=5/6, q_E=15/8, q_E/q_T=9/4, center T/E=-8/9, rho_E=21/4\n[FIREWALL] PASS: the paired note carries the branch-local claim-status firewall\n    required boundary phrases present\n\nVerdict:\nThe current executable size-parameterized replay reproduces the landed 15^3 E-center calibration, but the checked neighboring boxes do not support the naive finite-size extrapolation route.  This is a boundary/no-go for citing the 15^3 match as convergence evidence, not a refutation of a future size-stable infinite-volume theorem.\n\nTOTAL: PASS=7 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T065040Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_quark_route2_e_center_lift_size_scan_boundary_2026_06_21.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+CONSTRUCTION
+FAIL review note exists :: 
+PASS direct two-parent recurrent root orbit is absent :: 24
+PASS 32 canonical additions compile to a 9,836-row single-valued law :: (32, 9836)
+PASS adapter and recurrent outputs have no wrong-value collision :: ()
+
+EXACT POST-PREFIX GRAPH
+PASS all 172 writes reach one schedule-independent terminal :: (68736, 330024, 9, 686970)
+PASS terminal exposes only next rail and next sidecar fronts :: {(-9, -1, 0): frozenset({'B1'}), (-11, 1, 2): frozenset({'R_B21'})}
+PASS first root requires physical seed, JOINT, and every adapter record :: ((5, 2, -3), (-1, 2, -2), (-1, 1, -2), (-1, 0, -2), (-1, 0, -1), (-1, -1, -1), (-2, -1, -1), (-2, -2, -1), (-3, -2, -1), (-3, -1, -1), (-2, -1, 0), (-3, -1, 0), (-4, -1, 0))
+PASS second root requires first root and the carried sidecar :: ((-4, 0, 0), (-5, -1, 0), (-6, -1, 0), (-7, -1, 0), (-8, -1, 0))
+PASS both roots consume the same three-parent guarded local row :: ((((0, -1, 0), 'R_A22'), ((0, 1, 0), 'R_C23'), ((1, 0, 0), 'B0')), (((0, -1, 0), 'R_A22'), ((0, 1, 0), 'R_C23'), ((1, 0, 0), 'B0')))
+
+PHYSICAL PREHISTORY FIREWALL
+PASS 249,192 physical histories preserve byte, port, and launch barriers :: (249192, 1596534, (), (), {(4, 4, -3)})
+PASS extension rows cannot rewrite a physical-prefix target :: ()
+PASS every reachable prehistory extension front is declared and typed :: (1188, 3, 2, ())
+
+MUTATION AND COVARIANCE CONTROLS
+PASS all 918 direct root-parent mutations suppress R_B01 :: ((), ())
+PASS alternate typed fronts never contain the intended root value :: (0, 0)
+PASS all 236,064 proper-cubic raw images preserve output :: []
+FAIL review note carries N1-N8 discipline and no axiom edit :: 
+
+ACCOUNTING
+PHYSICAL_STATES 249192
+FACTOR_STATES 68736
+FACTOR_EDGES 330024
+FINAL_RAW 9836
+PASS 14 FAIL 2
+RESULT CYCLE144_REJECTED

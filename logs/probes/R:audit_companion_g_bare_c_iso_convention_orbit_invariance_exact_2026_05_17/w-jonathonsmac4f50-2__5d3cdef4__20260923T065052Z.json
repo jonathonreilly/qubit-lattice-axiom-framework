@@ -1,0 +1,38 @@
+{
+ "task": "R:audit_companion_g_bare_c_iso_convention_orbit_invariance_exact_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_g_bare_c_iso_convention_orbit_invariance_exact_2026_05_17.py",
+ "seed": 46252,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5d3cdef4",
+ "started_utc": "20260923T065052Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS = 183, FAIL = 0",
+   "PASS = 183, FAIL = 0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e66ca04c027cb7582ce73710a523b11e83eb597d68a8256e9adc006801820ddb",
+ "stdout_tail": "^2_back - g^2| = 0.0)\n  [PASS (A)]   mpmath round-trip xi^2 to 50 dps  (|xi^2_back - xi^2| = 0.0)\n  [PASS (A)] mpmath @ (g=0.5, xi=64.0, N_c=3): gm = 2 N/g^2 to 50 dps  (|gm - beta_iso| = 0.0)\n  [PASS (A)]   mpmath round-trip g^2 to 50 dps  (|g^2_back - g^2| = 0.0)\n  [PASS (A)]   mpmath round-trip xi^2 to 50 dps  (|xi^2_back - xi^2| = 0.0)\n  [PASS (A)] mpmath @ (g=1.0, xi=64.0, N_c=3): gm = 2 N/g^2 to 50 dps  (|gm - beta_iso| = 0.0)\n  [PASS (A)]   mpmath round-trip g^2 to 50 dps  (|g^2_back - g^2| = 0.0)\n  [PASS (A)]   mpmath round-trip xi^2 to 50 dps  (|xi^2_back - xi^2| = 0.0)\n  [PASS (A)] mpmath @ (g=1.7320508, xi=64.0, N_c=3): gm = 2 N/g^2 to 50 dps  (|gm - beta_iso| = 0.0)\n  [PASS (A)]   mpmath round-trip g^2 to 50 dps  (|g^2_back - g^2| = 0.0)\n  [PASS (A)]   mpmath round-trip xi^2 to 50 dps  (|xi^2_back - xi^2| = 0.0)\n  [PASS (A)] mpmath @ (g=3.14159, xi=64.0, N_c=3): gm = 2 N/g^2 to 50 dps  (|gm - beta_iso| = 0.0)\n  [PASS (A)]   mpmath round-trip g^2 to 50 dps  (|g^2_back - g^2| = 0.0)\n  [PASS (A)]   mpmath round-trip xi^2 to 50 dps  (|xi^2_back - xi^2| = 0.0)\n\n----------------------------------------------------------------------------------------\nSCORECARD\n----------------------------------------------------------------------------------------\n  TOTAL  : PASS = 183, FAIL = 0\n\nPASS = 183, FAIL = 0 (expected PASS >= 65). Runner closes the\nC-iso convention-orbit invariance for g_bare on the canonical LO\nTrotter dictionary. Status authority: independent audit lane only.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T065052Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_companion_g_bare_c_iso_convention_orbit_invariance_exact_2026_05_17.txt against the .txt beside this log"
+  ]
+ }
+}

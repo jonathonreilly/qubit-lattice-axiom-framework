@@ -1,0 +1,62 @@
+AUTHORITY AND LOCAL LAW
+FAIL Cycle-167 review note exists :: 
+PASS the collision and positive reader use the same 32-row signed domain :: 
+PASS the two positive sign-reader presentations are one covariant raw family :: 768
+PASS the sign family adds no onsite role :: set()
+
+EXACT ZERO-DELTA INTERFACE EXCLUSIONS
+TERMINAL 32 0 all-six-neighbors-occupied
+OPEN_PORT_IDENTITY 32 0 equals-whole-row-tap
+LAW 97388 32 768 768 768 0
+OUTPUT_PAIRS 32 [('ARM', 'H0'), ('AUXY', 'H1'), ('AUXZ', 'H0'), ('A_0_1', 'H1'), ('A_0_2', 'H0'), ('A_1_0', 'H1'), ('A_1_2', 'H0'), ('A_2_0', 'H1')]
+RESULT PHYSICAL_SIGNED_ROW_EGRESS_COLLISION
+PASS the narrow collision probe is green :: 
+
+POSITIVE SIGN EGRESS
+LAW 97388 32 768 0 98156 0
+GRAPHS 768 [(2, 1, 1, 23, ())] 0
+DELETIONS 160 0
+RESULT PHYSICAL_PORTED_SIGN_READER
+PASS the standalone ported sign reader is green :: 
+LAW 97388 32 768 0 98156 0
+GRAPHS 768 [(6, 5, 1, 92, 'H0', ()), (6, 5, 1, 92, 'H1', ())] 0
+DELETIONS 320 0
+RESULT PHYSICAL_DOWNSTREAM_SIGNED_ROW_DECODER
+PASS the tap-to-sign-to-cable composition is green :: 
+
+UNIFIED CYCLE-166 LAW
+PASS the sign family is a disjoint 768-row extension of Cycle 166 :: (100652, 0, 101420)
+PASS the 101,420-row unified law remains deterministic :: 0
+PASS all 768 standalone readers survive the unified law :: ([], ())
+PASS all 768 tap-sign-cable histories survive the unified law :: ([(6, 5, 1, 92, 'H0', ()), (6, 5, 1, 92, 'H1', ())], [], ())
+
+FACTORIZED MEMBERSHIP BOUNDARY
+LAW 97388 6 144 8 192 0 0
+LANES 1024 6144 5120 0 [(6, 5, 1, 79, 5, False, 'H0'), (6, 5, 1, 79, 5, True, 'H1')]
+ROTATIONS 147456 0
+DOMAIN 360 2160 1080 1080 (360, 360, 360) 0 0
+XOR_ROTATIONS 0
+DELETIONS 0
+ANCESTRY supplied-five-bit-literals host-product-enumeration factorized-xor-inputs
+RESULT FACTORIZED_COMMUTING_SIGNED_MEMBERSHIP
+PASS the supplied-literal membership component remains green :: 
+
+SCOPE AND NO-GO DISCIPLINE
+FAIL note contains: two exact zero-delta attempts fail :: 
+FAIL note contains: those are exclusions of two specified interfaces, not a sign-egress no-go :: 
+FAIL note contains: 101,420 :: 
+FAIL note contains: literal-input component certificate :: 
+FAIL note contains: status: fail for a general no-go :: 
+FAIL note contains: n1 — alternative routes :: 
+FAIL note contains: n2 — wall independence :: 
+FAIL note contains: n3 — hidden-condition scan :: 
+FAIL note contains: n4 — residual matching :: 
+FAIL note contains: n5 — rhetoric audit :: 
+FAIL note contains: n6 — partial closure and axiom classification :: 
+FAIL note contains: n7 — strongest hostile steelman :: 
+FAIL note contains: n8 — cross-cycle echo :: 
+FAIL note contains: no axiom, primitive, registry, policy, or audit edit follows :: 
+
+TOTAL
+PASS 11 FAIL 15
+RESULT FAIL

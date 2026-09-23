@@ -1,0 +1,12 @@
+PASS the Cycle-610 runner is consumed byte-pinned and unchanged :: 36fcb1655bbdcd75
+PASS the position-representation engine reproduces the Cycle-610 word and the raw source bound weight :: {'rep_defect': 5.162537501411147e-14, 'raw_bound_weight': 0.2626773191935403, 'eig_residual': 2.1331798302301967e-12}
+PASS no-op control reproduces the Cycle-610 falsification: locked but convention-dependent and uncertified :: {'rate_T1': 0.049899193548387094, 'rate_T2': 0.049899193548387094, 'locked': True, 'convention_independent': False, 'certified': False}
+PASS lawful-domain: a non-antisymmetric input is detected outside the declared domain :: {'antisym_defect': 0.14142135623730953}
+PASS the radius-1 conditioning window is proper-cubic invariant (all 24 frames) :: {'max_mask_defect': 0}
+FAIL P-B prior: the window-conditioning cascade certifies within k <= 12 at m = 16 (raw source in, certified clock out) :: {'first_certified': None}
+PASS conditioning deletion: pure evolution leaves the bound weight at the raw value and uncertified :: {'weight': 0.2626773191931021}
+PASS P-A prior: the minus-port filter raises the bound-weight diagnostic monotonically over the certification grid :: {'8': [0.5122, 0.6887, 0.8103], '16': [0.8929, 0.909, 0.909]}
+PASS port-swap control: the plus port does not purify (the minus port is load-bearing) :: {'plus_port_weight': 0.03173352762619215, 'raw': 0.2626773191935403}
+FAIL P-C frozen prior: bound weight improves monotonically with ramp length (certification outcome separately reported) :: {'weights': [0.0196, 0.0041, 0.0003], 'certified': [False, False, False]}
+FAIL held transfer: no certified P-B configuration to transfer :: P-B never certified
+RESULT 8 3 elapsed 16.47 s

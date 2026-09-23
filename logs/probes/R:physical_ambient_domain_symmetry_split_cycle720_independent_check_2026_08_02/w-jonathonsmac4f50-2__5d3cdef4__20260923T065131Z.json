@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_ambient_domain_symmetry_split_cycle720_independent_check_2026_08_02",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_ambient_domain_symmetry_split_cycle720_independent_check_2026_08_02.py",
+ "seed": 46291,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5d3cdef4",
+ "started_utc": "20260923T065131Z",
+ "elapsed_s": 4.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=26 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6cd3e23dcdac4d91c1aa4e97e6ad964df871bbad239ad06ca619a0d9416658a2",
+ "stdout_tail": "i06_row_L3_full sym 12=6+6 levels/orbits 13 frames [6, 6, 6, 6]\nPASS i06_row_L3_corner2 sym 6=3+3 levels/orbits 4 frames [6, 6, 6, 6]\nPASS i06_row_L3_corner3 sym 6=3+3 levels/orbits 10 frames [6, 6, 6, 6]\nPASS i06_row_L3_corner4 sym 6=3+3 levels/orbits 17 frames [6, 6, 6, 6]\nPASS i06_row_L3_slab sym 2=1+1 levels/orbits 33 frames [6, 6, 6, 6]\nPASS i03_endpoint_maps_L4 endpoint construction is bijective and site-compatible\nPASS i04_ambient_L4 within 1.243e-10 reflection 1.243e-10 outside 4.000e+00\nPASS i06_row_L4_full sym 12=6+6 levels/orbits 34 frames [6, 6, 6, 6]\nPASS i06_row_L4_corner2 sym 6=3+3 levels/orbits 4 frames [6, 6, 6, 6]\nPASS i06_row_L4_corner3 sym 6=3+3 levels/orbits 11 frames [6, 6, 6, 6]\nPASS i06_row_L4_corner4 sym 6=3+3 levels/orbits 21 frames [6, 6, 6, 6]\nPASS i06_row_L4_slab sym 2=1+1 levels/orbits 64 frames [6, 6, 6, 6]\nPASS i03_endpoint_maps_L5 endpoint construction is bijective and site-compatible\nPASS i04_ambient_L5 within 1.243e-10 reflection 1.243e-10 outside 4.000e+00\nPASS i06_row_L5_full sym 12=6+6 levels/orbits 66 frames [6, 6, 6, 6]\nPASS i06_row_L5_corner2 sym 6=3+3 levels/orbits 4 frames [6, 6, 6, 6]\nPASS i06_row_L5_corner3 sym 6=3+3 levels/orbits 11 frames [6, 6, 6, 6]\nPASS i06_row_L5_corner4 sym 6=3+3 levels/orbits 22 frames [6, 6, 6, 6]\nPASS i06_row_L5_slab sym 2=1+1 levels/orbits 105 frames [6, 6, 6, 6]\nPASS i07_hostile_bump single diagonal mutation leaves 2 of 6 symmetries\nPASS i08_row_count independently checked 15 rows\nTOTAL: PASS=26 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T065136Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

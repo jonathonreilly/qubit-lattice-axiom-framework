@@ -1,0 +1,84 @@
+========================================================================================
+HERMITIAN_LIFT_THETA_H_PK_BOUNDED_NARROW_THEOREM audit companion
+========================================================================================
+Verifies (L1)-(L4) on the framework's specific staggered C, P
+and H = iD construction at exact sympy precision (1-d slice)
+and exact numpy precision (3-d L = 4 and L = 6).
+Out-of-scope marker (Item 10): does NOT verify the SME bilinear
+operator dictionary; that is the parent bridge's open conditional.
+
+----------------------------------------------------------------------------------------
+Item 1-7 [3-d numpy at L=4]: D real anti-Hermitian, H Hermitian, framework C, P-on-D identities, Theta_H = P K preserves H, H_odd = 0, H_{mu,odd} = 0.
+----------------------------------------------------------------------------------------
+  [PASS (A)] L=4: D has only real entries (Im D == 0)
+  [PASS (A)] L=4: D entries in {0, +/- 1/2} (max |D| <= 1/2)
+  [PASS (A)] L=4: D^T = -D (anti-Hermitian)
+  [PASS (A)] L=4: H = iD Hermitian (H = H^dagger)
+  [PASS (A)] L=4: (D1) C D C^{-1} = -D  (parent cpt_exact_note item 1)
+  [PASS (A)] L=4: (D2) P D P^{-1} = -D  (parent cpt_exact_note item 2)
+  [PASS (A)] L=4: (D3) K D K^{-1} = D  (D real)
+  [PASS (A)] L=4: C^2 = I_lat
+  [PASS (A)] L=4: P^2 = I_lat
+  [PASS (A)] L=4: (L1) Theta_H^2 acts trivially on operators (Theta_H is involutive)
+  [PASS (A)] L=4: (L2) Theta_H H Theta_H^{-1} = H  (exact)
+  [PASS (A)] L=4: (L3) H_odd matrix entrywise = 0  (||H_odd||_F = 0 exact)
+  [PASS (A)] L=4: (L3) ||H_odd||_F = 0 numeric  (got 0.000e+00)
+  [PASS (A)] L=4: (L4) H_{mu=1, odd} matrix entrywise = 0
+  [PASS (A)] L=4: (L4) H_{mu=2, odd} matrix entrywise = 0
+  [PASS (A)] L=4: (L4) H_{mu=3, odd} matrix entrywise = 0
+  [PASS (A)] L=4: H = sum_mu H_mu (direction decomposition consistency)
+
+----------------------------------------------------------------------------------------
+Item 1-7 [3-d numpy at L=6]: D real anti-Hermitian, H Hermitian, framework C, P-on-D identities, Theta_H = P K preserves H, H_odd = 0, H_{mu,odd} = 0.
+----------------------------------------------------------------------------------------
+  [PASS (A)] L=6: D has only real entries (Im D == 0)
+  [PASS (A)] L=6: D entries in {0, +/- 1/2} (max |D| <= 1/2)
+  [PASS (A)] L=6: D^T = -D (anti-Hermitian)
+  [PASS (A)] L=6: H = iD Hermitian (H = H^dagger)
+  [PASS (A)] L=6: (D1) C D C^{-1} = -D  (parent cpt_exact_note item 1)
+  [PASS (A)] L=6: (D2) P D P^{-1} = -D  (parent cpt_exact_note item 2)
+  [PASS (A)] L=6: (D3) K D K^{-1} = D  (D real)
+  [PASS (A)] L=6: C^2 = I_lat
+  [PASS (A)] L=6: P^2 = I_lat
+  [PASS (A)] L=6: (L1) Theta_H^2 acts trivially on operators (Theta_H is involutive)
+  [PASS (A)] L=6: (L2) Theta_H H Theta_H^{-1} = H  (exact)
+  [PASS (A)] L=6: (L3) H_odd matrix entrywise = 0  (||H_odd||_F = 0 exact)
+  [PASS (A)] L=6: (L3) ||H_odd||_F = 0 numeric  (got 0.000e+00)
+  [PASS (A)] L=6: (L4) H_{mu=1, odd} matrix entrywise = 0
+  [PASS (A)] L=6: (L4) H_{mu=2, odd} matrix entrywise = 0
+  [PASS (A)] L=6: (L4) H_{mu=3, odd} matrix entrywise = 0
+  [PASS (A)] L=6: H = sum_mu H_mu (direction decomposition consistency)
+
+----------------------------------------------------------------------------------------
+Item 8 [1-d sympy at L=4]: symbolic certainty for (L1)-(L3) on a 1-d staggered slice.
+----------------------------------------------------------------------------------------
+  [PASS (A)] L=4 (sympy 1-d): D^T = -D
+  [PASS (A)] L=4 (sympy 1-d): H = iD Hermitian (H = H^dagger)
+  [PASS (A)] L=4 (sympy 1-d): P D P^{-1} = -D
+  [PASS (A)] L=4 (sympy 1-d): (L1) Theta_H^2 acts trivially (M -> P (P M^* P)^* P = M)
+  [PASS (A)] L=4 (sympy 1-d): (L2) Theta_H H Theta_H^{-1} = H  (sympy exact)
+  [PASS (A)] L=4 (sympy 1-d): (L3) H_odd entrywise = 0  (sympy exact)
+
+----------------------------------------------------------------------------------------
+Item 9 [counterfactual at L=4]: the *naive* lift CP K does NOT preserve H — confirms (L2) requires Theta_H = P K specifically, not Theta_naive = CP K.
+----------------------------------------------------------------------------------------
+  [PASS (A)] L=4: counterfactual — (CP K) H (CP K)^{-1} = -H  (naive lift flips sign, NOT a symmetry of H)
+  [PASS (A)] L=4: counterfactual sanity — Theta_H = P K  preserves H  (correct lift)
+
+----------------------------------------------------------------------------------------
+Item 10 [out-of-scope marker, NOT a check]: SME bilinear operator dictionary, basis completeness, and exclusion of CPT-odd bilinear structures outside the direction-resolved hopping proxy.
+----------------------------------------------------------------------------------------
+  [SKIP] No SME bilinear operator dictionary verified here.
+         Per the bridge note's 2026-05-16 audit verdict, the
+         SME bilinear basis-completeness assertion is the open
+         conditional of the parent bridge.
+         The present narrow theorem explicitly does NOT claim it,
+         and the present runner explicitly does NOT verify it.
+         The SME-zero conclusion of the parent bridge remains
+         audited_conditional until the SME operator dictionary
+         derivation is supplied by separate authority.
+
+========================================================================================
+Summary: PASS=42  FAIL=0
+Verdict: PASS.
+========================================================================================

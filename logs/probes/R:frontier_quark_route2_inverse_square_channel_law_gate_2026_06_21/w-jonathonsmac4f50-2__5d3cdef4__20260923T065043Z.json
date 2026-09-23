@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_quark_route2_inverse_square_channel_law_gate_2026_06_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_quark_route2_inverse_square_channel_law_gate_2026_06_21.py",
+ "seed": 46243,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5d3cdef4",
+ "started_utc": "20260923T065043Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=20, FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5002042656b3315cad0336df3ab2fb0366d53be42f8bf8dc08852cbc7a7209aa",
+ "stdout_tail": "nel modes and every tabulated row is a ratio C_E/C_T1 of one mode against the other, so the target lambda=9/4 is a pure mode-content statement rather than a magnitude one; the native/simple laws return mode ratios 3/2, 1, 2/3 and 4/9, and each one misses.\nper_block: the exponent grid is partitioned into the single target rung p=-2 and the 4-rung native/simple block, and the named-principle block of 4 current-bank readings is swept as a block against lambda!=9/4; what gets resolved at this granularity is block membership and block count only -- no field amplitude is evaluated for any block.\nlattice_wide: checked and not executed, and deliberately so -- the object that is missing is precisely a global derivation of C_X proportional to w_X^-2 from Route-2 readout primitives, so supplying one inside this runner would not test the gate but would instead be the very theorem the note reports as absent; the four authority notes are read only for string-level assertions about what the bank does not derive.\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\nTOTAL: PASS=20, FAIL=0\nVERDICT: exact exponent gate. In the scale-free Route-2 channel-weight grammar C_X~w_X^p, the endpoint requires p=-2 exactly. Current native or simple powers p=-1,0,1,2 miss the target, and the checked authority bank does not derive the second-dual inverse-square readout law.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T065043Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

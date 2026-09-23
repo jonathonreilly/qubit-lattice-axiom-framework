@@ -1,0 +1,36 @@
+{
+ "task": "R:audit_companion_gauge_vacuum_plaquette_adjacent_word_scorecard_freshness_2026_06_16",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_gauge_vacuum_plaquette_adjacent_word_scorecard_freshness_2026_06_16.py",
+ "seed": 46253,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5d3cdef4",
+ "started_utc": "20260923T065053Z",
+ "elapsed_s": 1.5,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=8 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c60d7983b60d5c23a6fd20548c4762c1310a8a820f3261b6304387255b12e70e",
+ "stdout_tail": "Gauge vacuum plaquette adjacent-word scorecard freshness companion\n==============================================================================\nPASS: companion is hygiene-only\nFAIL: parent note remains on historical displayed scorecard\nPASS: cache is the current parent-runner all-pass scorecard\n      cache_scorecard=(28, 0)\nPASS: cache is for the adjacent-word parent runner\nPASS: parent runner exits successfully\nPASS: live parent runner emits the current all-pass scorecard\n      live_scorecard=(28, 0)\nPASS: Part R stationarity check is present\nPASS: Part R non-factorization guard is present\nPASS: Part R slice-proportionality check is present\n\nTOTAL: PASS=8 FAIL=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T065055Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=8 FAIL=1' vs cache 'TOTAL: PASS=9 FAIL=0'"
+  ]
+ }
+}

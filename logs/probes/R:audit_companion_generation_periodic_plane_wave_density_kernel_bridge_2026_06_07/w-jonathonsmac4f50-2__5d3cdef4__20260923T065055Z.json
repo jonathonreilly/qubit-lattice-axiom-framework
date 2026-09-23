@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_generation_periodic_plane_wave_density_kernel_bridge_2026_06_07.py",
+ "seed": 46255,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5d3cdef4",
+ "started_utc": "20260923T065055Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=27 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0ab403c8da3ee10a111ef080b863c384b23e451e3aaea702046b36a8e06a5ae4",
+ "stdout_tail": "n, and scaling\n----------------------------------------------------------------------------------------\n[PASS] all hw=1 generation pairs have eps(Delta k)=8 :: [8.0, 8.0, 8.0]\n[PASS] all three pair deltas are equal and negative :: -4.999375e+01, -4.999375e+01, -4.999375e+01\n[PASS] |delta| scales as 1/N with fixed mediator IR data :: |delta|*N=4.999375e+04\n\n----------------------------------------------------------------------------------------\nPart 5: source and downstream markers\n----------------------------------------------------------------------------------------\n[PASS] bridge note marker present: V_L = -G (Delta + mu^2 I)^(-1)\n[PASS] bridge note marker present: delta(k,l) = <rho_k, V_L rho_l>\n[PASS] bridge note marker present: `1/N` factor is not fitted\n[PASS] bridge note marker present: does not pin the physical magnitude\n[PASS] bridge note marker present: No new axiom is introduced\n[PASS] parent note marker present: Generation periodic plane-wave density-kernel bridge\n[PASS] parent note marker present: periodic translation-invariant plane-wave density-density kernel\n[PASS] parent note marker present: bridge packet for independent re-audit\n[PASS] parent note marker present: does not pin `|delta|`\n[PASS] retained bounded mediator note exposes V = -G (L + mu^2 I)^-1 family\n\n========================================================================================\nTOTAL: PASS=27 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T065055Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

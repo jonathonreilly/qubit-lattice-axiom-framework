@@ -1,0 +1,33 @@
+========================================================================================
+ROUTE-2 FIXED-CARRIER SELECTOR EQUATION BOUNDARY
+========================================================================================
+
+A. Authority anchors
+FAIL: QUARK_ROUTE2_FIXED_CARRIER_SELECTOR_EQUATION_BOUNDARY_NOTE_2026-06-21.md exists -- docs/QUARK_ROUTE2_FIXED_CARRIER_SELECTOR_EQUATION_BOUNDARY_NOTE_2026-06-21.md
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md exists -- docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md
+PASS: QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md exists -- docs/QUARK_ROUTE2_EXACT_TIME_COUPLING_NOTE_2026-04-19.md
+PASS: QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md exists -- docs/QUARK_ROUTE2_E_CHANNEL_READOUT_NATURALITY_NO_GO_NOTE_2026-04-28.md
+PASS: QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md exists -- docs/QUARK_ROUTE2_E_CENTER_BLINDNESS_NO_GO_NOTE_2026-06-17.md
+PASS: QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md exists -- docs/QUARK_ROUTE2_SOURCE_DOMAIN_BRIDGE_NO_GO_NOTE_2026-04-28.md
+PASS: MINIMAL_AXIOMS_2026-06-05.md exists -- docs/MINIMAL_AXIOMS_2026-06-05.md
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/frontier_quark_route2_fixed_carrier_selector_equation_boundary_2026_06_21.py", line 321, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/frontier_quark_route2_fixed_carrier_selector_equation_boundary_2026_06_21.py", line 302, in main
+    part1_authority_anchors()
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/frontier_quark_route2_fixed_carrier_selector_equation_boundary_2026_06_21.py", line 136, in part1_authority_anchors
+    note = read(NOTE)
+           ^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/frontier_quark_route2_fixed_carrier_selector_equation_boundary_2026_06_21.py", line 55, in read
+    return path.read_text(encoding="utf-8")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/QUARK_ROUTE2_FIXED_CARRIER_SELECTOR_EQUATION_BOUNDARY_NOTE_2026-06-21.md'

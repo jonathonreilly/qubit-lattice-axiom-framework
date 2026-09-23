@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_body_diagonal_frame_functional_transversal_law_cycle717_2026_08_02",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_body_diagonal_frame_functional_transversal_law_cycle717_2026_08_02.py",
+ "seed": 46397,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5d3cdef4",
+ "started_utc": "20260923T065317Z",
+ "elapsed_s": 5.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=52 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "792a2e697e55198b5301c9faef954b708173cf9b1caae2b8b78300941f32e1d5",
+ "stdout_tail": " 6.0e-02 ratio 6.2e+08\nPASS g5_L4_generic-7170_complement_law complements of the 24 blind are blind at 2.3e-11, the other 1272 spread at least 1.8e-02\nPASS g5_L4_generic-7171_transversal_scan 24 of 1296 transversals blind, exactly the regular cosets, least norm 3.3e+01\nPASS g5_L4_generic-7171_transversal_separation worst blind 1.0e-10 best non-blind 9.5e-02 ratio 9.3e+08\nPASS g5_L4_generic-7171_complement_law complements of the 24 blind are blind at 1.1e-10, the other 1272 spread at least 1.6e-02\nPASS g6_L4_one_fibre_is_not_blind the sextet lies inside one body diagonal and spreads 2.0e-01\nPASS g6_L4_intransitive_cosets_are_not_blind 18 cosets of the three intransitive order-four subgroups, least spread 3.0e-01\nPASS g6_L4_a_non_coset_transversal_is_not_blind the transversal [0, 1, 3, 5] meets each diagonal once yet spreads 4.7e-01\nPASS g7_L4_unit-slot0_finite_count orbit diameter 1.0e+00, measured 24/1296 blind transversals; the 24 regular cosets remain sufficient\nPASS g7_L4_unit-slot1_finite_count orbit diameter 1.0e+00, measured 72/1296 blind transversals; the 24 regular cosets remain sufficient\nPASS g7_L4_unit-slot7_finite_count orbit diameter 1.0e+00, measured 24/1296 blind transversals; the 24 regular cosets remain sufficient\nPASS g7_L4_unit-slot8_finite_count orbit diameter 1.0e+00, measured 24/1296 blind transversals; the 24 regular cosets remain sufficient\nPASS g7_L4_all-ones_orbit_is_one_point orbit diameter 0.0e+00, all 1296 transversals blind\nTOTAL: PASS=52 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T065323Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

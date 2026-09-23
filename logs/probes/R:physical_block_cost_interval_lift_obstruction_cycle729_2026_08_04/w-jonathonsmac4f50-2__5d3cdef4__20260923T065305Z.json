@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_block_cost_interval_lift_obstruction_cycle729_2026_08_04",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_block_cost_interval_lift_obstruction_cycle729_2026_08_04.py",
+ "seed": 46385,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5d3cdef4",
+ "started_utc": "20260923T065305Z",
+ "elapsed_s": 5.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=44 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4f7275ac2dad20b525beac0aca1c0d9851ecf831cd1ca4295bbc47855f81e8f4",
+ "stdout_tail": "ed -- three carried 48-piece witnesses, all 1,128 pairs per witness, both full certificate systems, and the internal-facet obstruction\", \"lattice_wide: checked and not executed -- no arbitrary block, repeated-block, longer-tick, thermodynamic, boundary-limit, or continuum claim is asserted\"], \"status\": \"PASS\"}, \"review_loop\": [{\"date\": \"2026-08-12\", \"disposition\": \"FIX_THEN_PROCEED\", \"fix\": \"demoted the model to supplied finite data; added kinetic-isotropy and Cycle 728 dependency closure; removed unsupported Cycle 728 lift-search and certificate-shape history; tightened exact gates; added a separate exact checker, hostile controls, generated receipt, canonical caches, fail-closed exit, and a landed N1-N8/N5 packet\", \"iteration\": 1, \"reviewer\": \"Codex review-loop\"}], \"schema\": \"physical-block-cost-interval-lift-obstruction-cycle729-v2\", \"status\": \"pass\", \"supplied_model\": {\"charge\": \"vertex pairs with spatial L1 separation greater than one\", \"physical_simplex_and_charge_selection_bridge\": \"open\", \"physical_tick_admissibility_bridge\": \"open\", \"piece_class\": \"five-corner normalized-volume-one simplices\", \"pieces_per_dissection\": 48, \"spatial_shape\": [2, 1, 1], \"tick_extent\": 1}, \"witnesses\": {\"cost320\": {\"cost\": 320, \"pair_separators\": 1128, \"regular\": false, \"unpaired_internal_tetrahedral_facets\": 16}, \"cycle728_carried\": {\"cost\": 318, \"pair_separators\": 1128, \"regular\": true}, \"stacked_monotone\": {\"cost\": 216, \"pair_separators\": 1128, \"regular\": true}}}\nTOTAL: PASS=44 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T065310Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

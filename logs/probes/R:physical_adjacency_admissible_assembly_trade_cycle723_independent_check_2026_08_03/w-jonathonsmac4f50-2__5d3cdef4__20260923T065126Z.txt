@@ -1,0 +1,12 @@
+[PASS] exact_corner_piece_spectrum spectrum [(0, 1360), (1, 2672), (2, 320), (3, 16)]
+[PASS] exact_piece_floor_by_tick_split
+[PASS] exact_middle_piece_volume_ceiling
+[PASS] independent_path_stencil
+[PASS] exact_facet_census
+[PASS] exact_facet_and_cell_floors facet 18, unit-cell 48
+[PASS] primary_source_pin observed 45cc789d0721e329ce6c71c1b78c54490b68ea363ea92d25f675a6eae0800a94
+[PASS] supplied_runtime_closure_pins all 5 declared supplied inputs match
+[PASS] primary_receipt_exact_anchors
+[PASS] primary_receipt_numerical_scope
+INDEPENDENT BOUNDARY: exact one-cell corner-piece/facet enumeration only; numerical Cycle-696 rows remain supplied finite evidence
+TOTAL: PASS=10 FAIL=0

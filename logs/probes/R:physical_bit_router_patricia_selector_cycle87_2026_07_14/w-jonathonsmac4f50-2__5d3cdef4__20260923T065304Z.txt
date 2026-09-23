@@ -1,0 +1,42 @@
+
+===============================================================================
+A - Strict-NN physical one-bit branch gate
+===============================================================================
+PASS A01 each supplied gate source has twelve H0/H1 records
+PASS A02 gate table has exactly four canonical rows
+PASS A03 gate has 51 proper-cubic raw rows
+PASS A04 24 overlaps are safe identical-H1 aliases
+PASS A05 complete physical union has 4,651 raw rows
+PASS A06 complete physical union is output-single-valued
+PASS A07 gate rows consume and write only H0/H1
+PASS A08 both branches have exact three-state/two-edge graphs :: []
+PASS A09 all 144 transformed stage controls are exact
+
+===============================================================================
+B - Exact 198-program prefix and Patricia selectors
+===============================================================================
+PASS B01 program bank contains 198 distinct 48-bit leaves
+PASS B02 explicit prefix trie has 6,785 nodes and 6,784 edges
+PASS B03 explicit trie has 197 branch and 6,390 unary nodes :: Counter({1: 6390, 2: 197})
+PASS B04 exact maximum trie width is 198 at depths 46-48
+PASS B05 compressed Patricia trie has 395 nodes and 394 edges
+PASS B06 compressed edge labels total 6,784 bits
+PASS B07 longest compressed edge label is 42 bits
+PASS B08 every exact program classifies to its unique selected row
+PASS B09 every selected leaf retains its exact output association
+PASS B10 all 9,504 one-bit perturbations classify exactly or reject
+PASS B11 exactly 30 directed one-bit flips land on another valid row
+
+===============================================================================
+C - Positive partial selector and exact physical residual
+===============================================================================
+PASS C01 note exists and carries authority none
+PASS C02 note states every gate input/cage is supplied
+PASS C03 note names candidate-bit bus residual
+PASS C04 note names physical trie embedding residual
+PASS C05 note does not call the selector seed-grown
+PASS C06 note denies foundation and axiom effects
+
+GATE_SOURCE=12 GATE_CANONICAL=4 GATE_RAW=51 PHYSICAL_UNION_RAW=4651
+PREFIX_NODES=6785 PATRICIA_NODES=395 PATRICIA_EDGES=394 LABEL_BITS=6784
+SUMMARY: 26 PASS / 0 FAIL

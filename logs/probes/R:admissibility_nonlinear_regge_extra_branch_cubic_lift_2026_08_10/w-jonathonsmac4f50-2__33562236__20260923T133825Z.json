@@ -1,0 +1,31 @@
+{
+ "task": "R:admissibility_nonlinear_regge_extra_branch_cubic_lift_2026_08_10",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_nonlinear_regge_extra_branch_cubic_lift_2026_08_10.py",
+ "seed": 70705,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "33562236",
+ "started_utc": "20260923T133825Z",
+ "elapsed_s": 41.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a1704168d4f870f34069a749ac246ec526b12a7fd974570ccd9feb1bb60de8a0",
+ "stdout_tail": "nishes in each of the four edge-weight orbits\n[PASS] exact-nonlinear-extra-branch-lift\n       S_R(tg)=-4*sqrt(2)*t^3+(4023/256)*t^4+O(t^5) per translation cell\n[PASS] exact-declared-source-null-covectors\n[PASS] leading-cubic-source-image-boundary\n       the cubic metric-gradient image is span(b); each declared metric source covector is nonparallel\n[PASS] independent-high-precision-action-reconstruction\n       max coefficient error=0.0\n[PASS] actual-periodic-box-action-match\n       S_cell(-0.02)=4.779398893046e-05; S_cell(+0.02)=-4.276061801390e-05\n[PASS] nondegenerate-simplex-domain\n       connected positive-Gram interval around zero is approximately (-0.458860264424,0.340150409120)\n[PASS] theorem-source-surface\n[PASS] no-go-discipline-source-surface\n[PASS] canonical-axiom-nonmutation\nper_element: checked exact Taylor coefficients for all four edge-weight symmetry orbits and both metric-component orbits\nper_site: checked one complete homogeneous translation cell with all fifty triangle classes and all two hundred forty dihedral contributions\nper_mode: checked the compact k=0 eleven-dimensional null sector, its ten metric coordinates, and its independent extra coordinate\nper_block: checked the positive cubic/quartic lift, complete cubic normal form, declared-source comparison, and candidate-axiom boundary\nlattice_wide: checked an actual periodic L=3 box against the uniform-cell action; inhomogeneous and open-boundary nonlinear solutions were not executed\nTOTAL: PASS=16 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T133907Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

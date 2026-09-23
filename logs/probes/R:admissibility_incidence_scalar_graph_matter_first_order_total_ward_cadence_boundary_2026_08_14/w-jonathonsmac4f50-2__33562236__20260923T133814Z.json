@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_incidence_scalar_graph_matter_first_order_total_ward_cadence_boundary_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_incidence_scalar_graph_matter_first_order_total_ward_cadence_boundary_2026_08_14.py",
+ "seed": 70694,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "33562236",
+ "started_utc": "20260923T133814Z",
+ "elapsed_s": 9.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "628708f355853705678ca1c47c8c81389be4bc52adf60bd33e4869563b681c5b",
+ "stdout_tail": "t memo and exact declared file bytes; historical Git identities are provenance only\nper_element: checked \u2014 one Lorentzian half-density scalar symbol, four link generators, ten raw tensor coordinates, and exact source/recoil mixed derivatives\nper_site: checked \u2014 nearest-neighbour scalar action, eight generator monomials, 33 joint stress support points, and the raw staggered tensor/vector placement\nper_mode: checked \u2014 96 generic Ward probes, all 24 proper-cubic frames, time reflection, and 6,354 nontrivial exact massless-shell L=3..8 transfers\nper_block: checked \u2014 first-order field-plus-matter Ward cochain, one 81-mode Hermitian joint-action census, reciprocal recoil, mixed Hessians, and Block78 front-loaded constraint cadence\nlattice_wide: checked and not executed \u2014 positive compact zero-mode completion, order-h phi^2 Ward terms, exact joint stage/work map, nonlinear gravity, Record compilation, selected law, and audit retention remain open\nRESULT: a finite incidence half-density scalar executes the actual Block77 first-order total Ward identity and supplies on-shell sources that pass the Block78 cadence\nPORTFOLIO: next test the common matter-gravity stage/work map and positive-boundary or nonlinear zero-mode completion; do not return to generic carrier counting\nSCOPE: no nonlinear gravity completion, selected physical matter law, Record compiler, axiom amendment, audit verdict, obligation retirement, retained end-to-end theory, or TOE percentage movement\nTOTAL: PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T133824Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

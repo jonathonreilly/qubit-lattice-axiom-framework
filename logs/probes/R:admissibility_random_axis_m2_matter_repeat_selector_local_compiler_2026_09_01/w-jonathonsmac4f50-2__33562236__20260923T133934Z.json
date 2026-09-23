@@ -1,0 +1,31 @@
+{
+ "task": "R:admissibility_random_axis_m2_matter_repeat_selector_local_compiler_2026_09_01",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_random_axis_m2_matter_repeat_selector_local_compiler_2026_09_01.py",
+ "seed": 70774,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "33562236",
+ "started_utc": "20260923T133934Z",
+ "elapsed_s": 48.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a74234597913d9729be2c7924684f50a11b7d22ef74f2096d1a922d1513525b8",
+ "stdout_tail": "pport N=64 is 1153=18N+1\nPASS claim_scope_and_result_note: scope=conditional_selector; conditional selector, axiom, topology, gravity, audit and TOE boundaries are explicit\nPASS hostile_mutation_gate: 18/18 designated gates reject; hardcoded_lambda:rejected;record_relay:rejected;different_lambda:rejected;fresh_axis:rejected;omit_state:rejected;mixed_as_pure:rejected;label_reverse:rejected;six_axis_actual:rejected;singleton_endpoint:rejected;imported_lueders:rejected;hardcoded_repeat:rejected;archive_relay:rejected;answer_defined_m:rejected;host_schedule:rejected;overwrite_collision:rejected;finite_domain:rejected;nonlinear_response:rejected;toe_promotion:rejected\nN5_EXECUTION per_element: exact effects, states, Choi matrices, Haar pushforward, affine class and repeat mass checked\nN5_EXECUTION per_site: every reachable radius-one local row and the first-Record causal firewall checked\nN5_EXECUTION per_mode: randomized/direct complete Bloch formulas and selected/depolarized/reversed controls checked\nN5_EXECUTION per_block: CTMC race confluence, stipulated candidate M2 successor attachment, archive screening and finite-cut induction checked\nN5_EXECUTION lattice_wide: checked and not executed - single-front candidate only; multi-front Z3 totalization remains open\nSUMMARY response_class=affine_dot random_axis=atomless_haar selected_endpoint=lambda_1_kappa_1 status=conditional_support input_sha256=761a19fb78db71fa0be5bb1392c6b5fc3ec2ecedd9a85f2ed7f6298fb4666e6c\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T134022Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

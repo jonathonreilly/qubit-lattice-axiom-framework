@@ -1,0 +1,31 @@
+{
+ "task": "R:admissibility_record_native_state_dependent_born_history_joint_law_candidate_gate_2026_08_12",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_record_native_state_dependent_born_history_joint_law_candidate_gate_2026_08_12.py",
+ "seed": 70851,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "33562236",
+ "started_utc": "20260923T134051Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "630aacc19fe580cbabecfedd6776ea69d987c0c36162deb4b958faaeadb4a972",
+ "stdout_tail": "PASS A-current-source-closure: current axiom, trace-form, and M2 carrier sources are literal; L41 geometry/falsifier algebra is rederived and the historic successor stack is not read\nPASS B-state-dependent-CP-kernel: five fixtures, two menus, CP Choi min=0.000e+00; old rotor biased residuals L1=1.5, Linf=0.5\nPASS C-shared-effect-carrier-covariance: shared E0 mass/codeword, exact head/outcome decoders, and all24 co-transport close\nPASS D-projective-history-law: N=0..5 normalize exactly and all 81 held length-four prefixes marginalize\nPASS E-contingent-one-history-semantics: two realized-state innovation members give distinct positive-weight histories (0, 0, 0, 1, 2, 1)/(2, 2, 2, 1, 1, 0); neither selects the kernel\nPASS F-unbounded-append-and-local-program: 64 events give 1415 permanent Records; translation-residue proof gives arbitrary-N fresh support; program is head-carried; readiness radius is declared three\nPASS G-claim-boundary: bounded radius-three candidate, current dependencies, no historic laundering, no adoption, and N1-N8 are explicit\nMETRICS fixture_pairs=10 covariance=24/24 cylinders_N5=243 records_N64=1415 cp_min=0.000e+00\nBOUNDARY: the fixed state-dependent kernel, exact histories, and unbounded no-overwrite single front pass; radius-three readiness is not the current nearest-neighbor Admissibility attachment, physical law selection remains open, and no percentage moves\nTOTAL: PASS=7 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T134051Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_reflected_curvature_canonical_reduction_schur_pole_tt_spectral_weight_boundary_2026_08_23",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_reflected_curvature_canonical_reduction_schur_pole_tt_spectral_weight_boundary_2026_08_23.py",
+ "seed": 70863,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "33562236",
+ "started_utc": "20260923T134103Z",
+ "elapsed_s": 2.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7f7fe5c840db39b627b983e0adda9cf6f411cd5fc9a191155196eed0109d32b4",
+ "stdout_tail": " root with ne...\n       negative-weight positive roots=1; negative roots=1; target=1; Hankel1=-4.426e-09; Hankel2=-3.297e-07\n[PASS] residue-to-temporal-moment-reconstruction: the coupled pole weights reconstruct the direct TT covariance moments rather than merely...\n       maximum relative first-nine-moment error=9.635e-10\n[PASS] bounded-scope-and-open-routes: the note preserves open routes and makes no atlas, gravity, axiom, audit, or TOE-complet...\nN5_CERTIFICATE: two separately chosen 12-direction stationary sections, one numerically reconstructed 7-by-7 odd gauge border, fourteen finite nonzero roots, and the first nine gated TT moments are resolved\nDOMAIN: one translation-invariant 22-edge reflected unit-cell symbol, two declared real section paths, and one odd-sector temporal polynomial at spatial momentum pi/2\nBOUNDARY: an atlas, physical half-space contour or inner product, source and Record law, symplectic refinement, or improved action remains open\nFINITE_TWO_CHART_RAW_QUOTIENT_RESULT: SUPPORTED\nGRAVITY_VERDICT: OPEN\nTOE_MOVEMENT: no percentage assigned; axioms_amended=0\nCLAIMS_JSON: {\"atlas_exhausted\": false, \"audit_status\": \"unset\", \"claim_type\": \"bounded_theorem\", \"finite_nonzero_roots\": 14, \"gated_reconstructed_moments\": 9, \"inside_unit_disk_roots\": 7, \"one_step_raw_hankel_positive\": false, \"physical_gravity_selected\": false, \"tested_stationary_charts\": 2, \"tt_coupled_inside_roots\": 3, \"two_step_raw_hankel_positive\": false}\nelapsed_sec=0.09\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T134105Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/admissibility_reflected_curvature_canonical_reduction_schur_pole_tt_spectral_weight_boundary_2026_08_23.txt against the .txt beside this log"
+  ]
+ }
+}

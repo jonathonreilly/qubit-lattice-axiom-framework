@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_readability_continuum_alphabet_fisher_rank_2026_09_13",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_readability_continuum_alphabet_fisher_rank_2026_09_13.py",
+ "seed": 70844,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "33562236",
+ "started_utc": "20260923T134044Z",
+ "elapsed_s": 7.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=63 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9a5f5e29c3d052278bc054840eb8fe193321f363b17d38cd3d0d84eed666b951",
+ "stdout_tail": "= 2/27\n[PASS] 2x3: monotone/reversed pair vectors equal <=> product dist^2 = 0\n[PASS] 2x3: monotone/reversed K-multisets equal True\n[PASS] 2x3: additive monotone|reversed dist^2 = apex Gram form 8/27\n[PASS] 2x3 monotone product: series = [1, T_1, closed-form c], normalised\n[PASS] 2x3 monotone additive: series = [1, T_1, closed-form c], normalised\n[PASS] 2x3 reversed product: series = [1, T_1, closed-form c], normalised\n[PASS] 2x3 reversed additive: series = [1, T_1, closed-form c], normalised\n[PASS] 2x2x2: 48 linear extensions, one recorded map (monotone-box)\n[PASS] 2x2x2: monotone-box records x-e_d, reversed records x+e_d\n  2x2x2 static|uniform: product dist^2 = 16/81, additive dist^2 = 32/81\n  2x2x2 static|monotone: product dist^2 = 2/9, additive dist^2 = 2/3\n  2x2x2 monotone|reversed: product dist^2 = 0, additive dist^2 = 8/9\n[PASS] 2x2x2: static|uniform product dist^2 = sum(mult^2)/243 = 16/81\n[PASS] 2x2x2: static|monotone product dist^2 = |m|^2/27 = 2/9\n[PASS] 2x2x2: monotone/reversed pair vectors equal <=> product dist^2 = 0\n[PASS] 2x2x2: monotone/reversed K-multisets differ True\n[PASS] 2x2x2: additive monotone|reversed dist^2 = apex Gram form 8/9\n[PASS] 2x2x2 monotone product: series = [1, T_1, closed-form c], normalised\n[PASS] 2x2x2 monotone additive: series = [1, T_1, closed-form c], normalised\nscope per_element=exact moments; per_site=6/8; per_mode=3 alphabets,2 models; per_block=all-order tangents,named series; lattice_wide=unrun\nelapsed 7.0s\nTOTAL: PASS=63 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T134051Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/admissibility_readability_continuum_alphabet_fisher_rank_2026_09_13.txt against the .txt beside this log"
+  ]
+ }
+}

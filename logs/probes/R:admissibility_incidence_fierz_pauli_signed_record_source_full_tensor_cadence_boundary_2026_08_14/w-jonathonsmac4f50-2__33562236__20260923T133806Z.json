@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_incidence_fierz_pauli_signed_record_source_full_tensor_cadence_boundary_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_incidence_fierz_pauli_signed_record_source_full_tensor_cadence_boundary_2026_08_14.py",
+ "seed": 70686,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "33562236",
+ "started_utc": "20260923T133806Z",
+ "elapsed_s": 8.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e4d4d188d0836fd945ede62bc54ed5143fd4262b0e97858e929f8c32396d84c2",
+ "stdout_tail": "ered tensor components, four gauge/Bianchi columns, 24 cubic frames, all 9^4 modes, 728 spatial TT fibers, and 6528 signed neutral source modes are resolved\nper_element: every one of the ten Frobenius tensor/source coordinates, four gauge/Bianchi columns, raw placement phases, and TT quotient coordinates is checked explicitly\nper_site: each vertex, link, and face carrier in the 33-shift radius-one stencil and each crossed-face signed-source deposition is checked on its local incidence cell\nper_mode: all 9^4 Lorentzian modes, all 728 nonzero L=9 spatial TT fibers, and all 6528 declared L=3 through L=8 neutral signed-source modes are checked\nper_block: raw locality, covariance, gauge/Bianchi rank, ADM constraints, symmetric source, static sign, zero mode, and transfer cadence are checked as separate interfaces\nlattice_wide: checked and not executed \u2014 no open or infinite positive-mean boundary, global Record scheduler, exact Record/M2 gravity-state encoding, or nonlinear gravity law is supplied\nSOURCE: exact local symmetric T00/T0i/Tij deposition passes; compact mean, birth impulse, cadence, coupling, debit, and nonlinear completion remain\nTRANSFER: one-tick 4D law real=176/728; Block53 depth two stable=728/728 but differs by -kappa^4/16 and still needs full constraint/source scheduling\nSCOPE: partial-positive linear nonzero-mode candidate and sharp cadence boundary; no selected L_phys, axiom amendment, audit verdict, obligation retirement, or TOE movement\nTOTAL: PASS=10 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T133814Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

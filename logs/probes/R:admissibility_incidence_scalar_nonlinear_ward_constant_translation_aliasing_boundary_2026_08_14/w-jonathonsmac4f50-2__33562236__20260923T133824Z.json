@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_incidence_scalar_nonlinear_ward_constant_translation_aliasing_boundary_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_incidence_scalar_nonlinear_ward_constant_translation_aliasing_boundary_2026_08_14.py",
+ "seed": 70704,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "33562236",
+ "started_utc": "20260923T133824Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9053275d0dcd071752e73feca040764a509a4250914962e3b6312b88cdcf6077",
+ "stdout_tail": "d file bytes; historical Git identities are provenance only\nper_element: checked \u2014 exact continuum tensor/seagull coefficients and each scalar Ward coefficient in all twenty-four alias pairs\nper_site: checked and not executed \u2014 the Fourier-polynomial witness is bounded-support independent, but no changed-carrier position-space action is built\nper_mode: checked \u2014 exact L=24 modes have zero M0 transfer, identical raw stress coordinates, and opposite nonzero commutators\nper_block: checked \u2014 the complete order-h-phi2 matter subblock eliminates S_g3, S_phi2, regular anti-Hermitian D1, and geometry-only R1 simultaneously\nlattice_wide: checked and not executed \u2014 a changed differential calculus, nonlinear gravity action, full-Z3 control, Record compiler, selection, and retention remain open\nRESULT: the continuum second-order Ward identity has an explicit local tensor-plus-seagull completion, while the fixed Block95 periodic half-density generator has a support-independent constant-parameter alias contradiction\nPORTFOLIO: stop the fixed Block95 nonlinear coefficient census; pivot to typed-event/Record-law confluence, retaining one changed-contract gravity repair as the only justified gravity re-entry\nSCOPE: this is not a gravity no-go or axiom amendment; changed carrier, changed M0/D0/V plus nonlocal/quasilocal representation, geometry-dependent inner product, nonlinear action, Record selection, audit retention, obligation retirement, and TOE movement remain open\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T133825Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

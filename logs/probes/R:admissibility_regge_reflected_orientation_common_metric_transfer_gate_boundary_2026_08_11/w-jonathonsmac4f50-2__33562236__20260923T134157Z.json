@@ -1,0 +1,31 @@
+{
+ "task": "R:admissibility_regge_reflected_orientation_common_metric_transfer_gate_boundary_2026_08_11",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_regge_reflected_orientation_common_metric_transfer_gate_boundary_2026_08_11.py",
+ "seed": 70917,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "33562236",
+ "started_utc": "20260923T134157Z",
+ "elapsed_s": 2.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4013f1026afe2817ce309fd51ccef0d2789755fcce540ed423d85b29dbef7e07",
+ "stdout_tail": "003020203585886, 2.0012076939576495, 2.0048245127916715]\n[PASS] physical-transfer-and-axiom-boundary: the source identifies orientation-shift gluing and decaying-branch/inner-product selecti...\n[PASS] fresh-no-go-discipline-packet: the direct-transfer and separable-reflection negatives pass N1 through N8 while retainin...\nN5_CERTIFICATE: fifteen original edges, fifteen reflected labels, twenty-two union edges, eight shared classes, 133 shifts, ten common metric coordinates, three relative shifts, eight static probes, and eight common-metric pole solves are resolved\nper_element: checked every reflected edge label, every union Laurent coefficient, all ten metric coordinates, and all three relative shifts\nper_site: checked the local original-plus-time-reflected unit-cell union and its exact reflection involution\nper_mode: checked single-orientation complex poles, eight nonzero static union momenta, and two common-metric sectors at four momenta\nper_block: checked the 13-versus-10 constant flat fiber, sampled fifth static branch, common-metric Ward repair, and conditional two-step spectrum\nlattice_wide: no alternating full-Z3 complex, OS half-space form, local physical Hilbert map, nonlinear constraints, or Record-clock update is inferred\nscope_boundary: direct single-orientation positive-transfer obstruction and separable-reflection shift-glue boundary with a conditional common-metric repair; not gravity failure, selected law, axiom adoption, or TOE closure\nTOTAL: PASS=14 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T134200Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "task": "R:admissibility_regge_fixed_average_tick_source_increasing_torus_ward_green_boundary_2026_08_11",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_regge_fixed_average_tick_source_increasing_torus_ward_green_boundary_2026_08_11.py",
+ "seed": 70873,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "33562236",
+ "started_utc": "20260923T134114Z",
+ "elapsed_s": 42.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b9fe45021dc857c3a78555bbfc52e79f765b292ead4105bb5b6cc0a67c6f2b7c",
+ "stdout_tail": "Lorentzian, nonflat, open-bounda...\ninventory L=33: modes=35936 solve=9.685e-13 gap/khat2=0.059087 C8=0.117852344 seconds=0.74\ninventory L=49: modes=117648 solve=1.771e-12 gap/khat2=0.059007 C8=0.149781612 seconds=2.37\ninventory L=65: modes=274624 solve=3.807e-12 gap/khat2=0.059025 C8=0.156112318 seconds=8.05\ninventory L=81: modes=531440 solve=5.047e-12 gap/khat2=0.059004 C8=0.158199084 seconds=10.66\ninventory L=97: modes=912672 solve=8.703e-12 gap/khat2=0.059013 C8=0.159087619 seconds=18.39\nN5_CERTIFICATE: all fifteen edge classes, one unit tick source, 1,872,320 static modes, the complete edge block, and five increasing tori are resolved at their stated scopes\nper_element: checked all fifteen Kuhn/Coxeter edge classes, the coefficient-two tick row, and the ten-metric restriction control\nper_site: checked one localized unit metric source plus the explicitly disclosed uniform fixed-average compensation\nper_mode: checked every nonzero static momentum on L=33,49,65,81,97 and three independent long-wave controls\nper_block: checked the complete repaired fifteen-edge symbol before any metric-only restriction and exposed the restricted false pole\nlattice_wide: checked five finite odd increasing tori only; no all-L, full-Z3, continuous-zone, nonlinear, or Lorentzian theorem is claimed\nscope_boundary: supplied flat linear Regge law with fixed average; action selection, semibounded phase, physical mass/coupling, nonlinear stability, and causal update remain open\nTOTAL: PASS=13 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T134157Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

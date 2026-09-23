@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_raw_graph_ward_compact_pullback_translation_generator_boundary_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_raw_graph_ward_compact_pullback_translation_generator_boundary_2026_08_14.py",
+ "seed": 70839,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "33562236",
+ "started_utc": "20260923T134039Z",
+ "elapsed_s": 5.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "07f1fac6bce164b2fce85471e50d3cae7846edaf124effbb1c25e1ed8800f452",
+ "stdout_tail": "current construction do not select a law, amend axioms, or m...\nSOURCE_AUTHORITY: current memo and exact declared file bytes; historical Git identities are provenance only\nper_element: checked \u2014 scalar translation symbol, compact convolution kernel, cubic B-spline degree ladder, and all six raw tensor coordinates\nper_site: checked \u2014 nineteen stencil shifts, eighteen directed graph edges, nine oriented representatives, and compact radius-two spline support\nper_mode: checked analytically \u2014 periodic finite Laurent symbols cannot equal the nonperiodic logarithm ik; the numerical winding witnesses are 0 versus 1\nper_block: checked \u2014 raw graph continuity and 24-frame Reynolds covariance close; compact same-carrier worldline pullback fails while degree-ladder and graph-matter escapes survive\nlattice_wide: checked and not executed \u2014 no common selected matter-gravity law, live carrier/Record compiler, nonlinear Ward completion, retention, or obligation retirement\nRESULT: the diagonal-path wall is removed by the raw graph current; the existing-carrier compact continuous-worldline pullback is impossible under its exact finite-range same-carrier contract\nPORTFOLIO: stop compact same-carrier interpolation work; test a discrete graph-matter action next, with a degree-ladder carrier or axiom clarification only if graph and lattice-field routes fail\nSCOPE: gravity remains live; no axiom amendment, audit verdict, retained obligation retirement, or TOE percentage movement\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T134044Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "task": "R:admissibility_reflected_plaquette_curvature_record_ricci_source_intertwiner_boundary_2026_08_11",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_reflected_plaquette_curvature_record_ricci_source_intertwiner_boundary_2026_08_11.py",
+ "seed": 70870,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "33562236",
+ "started_utc": "20260923T134110Z",
+ "elapsed_s": 3.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0b396ba9faf37b2213d6ec30dd97f0178a0dc367ab9d96eaa80eac00243597e5",
+ "stdout_tail": "ture/connection equation and tracefree propagation rule as ...\n[PASS] fresh-no-go-discipline-packet: the hard-zero and contracted-source nonselection claims pass N1 through N8 while preserv...\nN5_CERTIFICATE: all 22 reflected-union edge classes, three local plaquette rows, four displacement columns, ten common metric coordinates, three relative h_it modes, eight static momenta, 22 Record rays, 24 proper cubic rotations, and two explicit sectional decoder representatives are resolved\nper_element: checked every edge coefficient in each of the three two-diagonal-minus-four-side plaquette rows and every Record-ray trace-reversed temporal source\nper_site: checked one complete original-plus-reflected local cell with its three space-time parallelograms and zero-momentum paired-metric fiber\nper_mode: checked exact Ward/reflection identities at real and complex momenta, exact line-metric factorization, and eight nonzero static axis controls\nper_block: checked common-carrier repair, positive principal-zone form factor, hard-zero Newtonian falsifier, and the eta=0 versus eta=1 sectional-source fork\nlattice_wide: the operator is finite-range and translation covariant, but no nonlinear holonomy law, full-Z3 phase, physical transfer, causal Record tick, or global boundary state is inferred\nscope_boundary: exact local curvature intertwiner and contracted Record-source boundary; not selected gravity dynamics, a nonlinear Einstein theorem, axiom adoption, or TOE closure\nTOTAL: PASS=13 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T134113Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_m2_effect_label_record_carrier_atomic_born_law_factorization_2026_08_10",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_m2_effect_label_record_carrier_atomic_born_law_factorization_2026_08_10.py",
+ "seed": 70705,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "33562236",
+ "started_utc": "20260923T133825Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=27 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "07aec3d6cb517a8c791be6b169d7a8433c6fda263788fe975999f2c9c691e8dc",
+ "stdout_tail": ", atomic law, pushforward, and exact menu outputs\nPASS: boundary-source-surface the source preserves the algebraic-type, Record-boundary, hypothetical-update, global-negative, governance, and score limits\nPASS: machine-status-contract the source carries the complete bounded upstream-support trace contract\nPASS: canonical-nonmutation the effect-label carrier and atomic Born-law wording are absent from the canonical axiom memo\nPASS: no-go-gate all N1-N8 sections, source matching, primitive scan, steelman acceptance, and global-negative rejection are visible\nper_element: five distinct rational effects, five encoded effect-label pairs, exact inverse maps, and every quantile interval are checked\nper_site: one M_2(C) output site carries one effect plus one real label with fixed algebraic projections and an exact finite atomic distribution; no Record content/readout selection or formation event is asserted\nper_mode: identity, Pauli-X, phase conjugation, two program menus, three preparation centers, and two isotropic extractor members are separated exactly\nper_block: the M2 carrier-to-algebraic-projection-to-atomic-effect-weight-to-Gaussian-quantile factorization is checked through the Record- and local-law-selection residuals\nlattice_wide: checked and not executed \u2014 translation/proper-cubic covariance follows for a co-transported supplied program, while physical Record content/readout, program registration, occurrence, causal order, and histories remain absent\nTOTAL: PASS=27 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T133825Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

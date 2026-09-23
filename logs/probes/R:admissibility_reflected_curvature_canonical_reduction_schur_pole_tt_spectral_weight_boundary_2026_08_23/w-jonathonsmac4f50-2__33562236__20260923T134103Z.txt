@@ -1,0 +1,35 @@
+RESULT: both named stationary metric/nonmetric charts have metric-coupled vertical poles, and the declared odd-TT polynomial has non-positive spectral branches
+INTERPRETATION: this bounds the tested two-chart section and raw-quotient transfer on the reflected action; the distinct nonlinear source-bearing action remains untested
+section_pole: chart=momentum-orthogonal t=0.201689106570438 q=(0.03771324,0.00000000,0.14080556,0.00000000) inertia=(10, 2, 0)->(9, 3, 0) C_rank=11 C_gap=1.196e-15 frame=22/5.536e-01 Q_rank=18 gauge_rank=4 quotient_gap=2.982e-03 mixed=4.572959e-03 fraction=0.167373
+section_pole: chart=fixed-zero-momentum t=0.822296163221998 q=(-2.22520254,-2.29628408,0.57407102,0.00000000) inertia=(10, 2, 0)->(11, 1, 0) C_rank=11 C_gap=2.973e-16 frame=22/3.138e-01 Q_rank=18 gauge_rank=4 quotient_gap=4.015e-03 mixed=1.658019e+00 fraction=0.249033
+laurent: support=(-2, -1, 0, 1, 2) outer_rank=2 odd=6+1 det=-7..7 roots=14 inside=7 reciprocal=7.070e-12 reconstruction=1.115e-14
+spectral_branch: z=-2.454389262199e-05-3.709843278316e-16i weight=+1.517612068542e-04+6.879341743768e-10i couplings=4.946e-05/4.946e-05 edge=3.852e-15 multiplier=5.557e-15 simple=3.144e-12 solver=1 coupled=1
+spectral_branch: z=+2.911690245782e-04+3.090193713021e-16i weight=-2.174507276706e-04-9.008354714479e-14i couplings=7.023e-04/7.023e-04 edge=3.771e-15 multiplier=3.408e-15 simple=6.154e-08 solver=1 coupled=1
+spectral_branch: z=+9.334299386880e-02-8.806793995436e-02i weight=+0.000000000000e+00-0.000000000000e+00i couplings=1.436e-01/0.000e+00 edge=1.915e-16 multiplier=2.406e-15 simple=9.918e-03 solver=1 coupled=0
+spectral_branch: z=+9.334299386880e-02+8.806793995436e-02i weight=-4.222793115179e-16-1.567616976498e-15i couplings=1.349e-15/1.436e-01 edge=1.366e-02 multiplier=1.556e-01 simple=9.918e-03 solver=1 coupled=0
+spectral_branch: z=+2.661717269164e-01-5.985034706116e-16i weight=+5.818848116007e-01+1.219107455928e-15i couplings=4.280e-01/4.280e-01 edge=6.847e-17 multiplier=1.341e-15 simple=5.454e-02 solver=1 coupled=1
+spectral_branch: z=+5.554475414679e-02-5.477141733629e-01i weight=-1.470039790042e-15-6.938374365134e-16i couplings=3.078e-15/1.321e-01 edge=1.814e-02 multiplier=3.367e-01 simple=8.302e-02 solver=1 coupled=0
+spectral_branch: z=+5.554475414679e-02+5.477141733629e-01i weight=-1.395082274660e-15+4.881371507489e-16i couplings=1.321e-01/2.799e-15 edge=5.781e-16 multiplier=9.060e-15 simple=8.302e-02 solver=1 coupled=0
+[PASS] current-source-and-scope-bindings: the finite source closure and the distinction between tested sections and open physical ...
+[PASS] singular-higher-step-laurent-and-ward-structure: the reflected action has a genuine two-step temporal stencil while exact odd-sector Ward...
+       support=(-2, -1, 0, 1, 2); rank A2=2; pair=3.491e-17; leakage=8.154e-17; Ward=3.230e-16
+[PASS] momentum-orthogonal-section-has-metric-coupled-pole: the momentum-orthogonal stationary section becomes singular while the full gauge quotien...
+       t=0.201689106570438; C gap=1.196e-15; Q rank=18; mixed=4.572959e-03
+[PASS] fixed-complement-section-has-distinct-metric-coupled-pole: the fixed zero-momentum complement moves rather than removes the stationary-section pole
+       t=0.822296163221998; C gap=2.973e-16; Q rank=18; mixed=1.658019e+00
+[PASS] declared-odd-bordered-root-certificate: conditioned numerical reconstruction resolves the thresholded odd bordered roots and rej...
+       det=(-7, 7); roots=14/7; coupled=3; separation=3.157e-04; unit-gap=4.495e-01; simple=3.144e-12
+[PASS] coupled-nonpositive-tt-spectral-branches: the full odd TT quotient contains both an alternating branch and a positive root with ne...
+       negative-weight positive roots=1; negative roots=1; target=1; Hankel1=-4.426e-09; Hankel2=-3.297e-07
+[PASS] residue-to-temporal-moment-reconstruction: the coupled pole weights reconstruct the direct TT covariance moments rather than merely...
+       maximum relative first-nine-moment error=9.635e-10
+[PASS] bounded-scope-and-open-routes: the note preserves open routes and makes no atlas, gravity, axiom, audit, or TOE-complet...
+N5_CERTIFICATE: two separately chosen 12-direction stationary sections, one numerically reconstructed 7-by-7 odd gauge border, fourteen finite nonzero roots, and the first nine gated TT moments are resolved
+DOMAIN: one translation-invariant 22-edge reflected unit-cell symbol, two declared real section paths, and one odd-sector temporal polynomial at spatial momentum pi/2
+BOUNDARY: an atlas, physical half-space contour or inner product, source and Record law, symplectic refinement, or improved action remains open
+FINITE_TWO_CHART_RAW_QUOTIENT_RESULT: SUPPORTED
+GRAVITY_VERDICT: OPEN
+TOE_MOVEMENT: no percentage assigned; axioms_amended=0
+CLAIMS_JSON: {"atlas_exhausted": false, "audit_status": "unset", "claim_type": "bounded_theorem", "finite_nonzero_roots": 14, "gated_reconstructed_moments": 9, "inside_unit_disk_roots": 7, "one_step_raw_hankel_positive": false, "physical_gravity_selected": false, "tested_stationary_charts": 2, "tt_coupled_inside_roots": 3, "two_step_raw_hankel_positive": false}
+elapsed_sec=0.09
+TOTAL: PASS=8 FAIL=0

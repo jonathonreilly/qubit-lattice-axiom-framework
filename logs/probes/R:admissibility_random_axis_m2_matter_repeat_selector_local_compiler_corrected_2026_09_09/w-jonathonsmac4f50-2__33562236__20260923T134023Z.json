@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_random_axis_m2_matter_repeat_selector_local_compiler_corrected_2026_09_09",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_random_axis_m2_matter_repeat_selector_local_compiler_corrected_2026_09_09.py",
+ "seed": 70823,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "33562236",
+ "started_utc": "20260923T134023Z",
+ "elapsed_s": 15.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4de787597759df61cc8587aee9dc59ce8edca72b32bad1325b56a8fce872c557",
+ "stdout_tail": "/2, 1/2 - kappa/2, kappa*lambda/4 + kappa/4 + lambda/4 + 1/4, -kappa*lambda/4 + kappa/4 - lambda/4 + 1/4, -kappa*lambda/4 - kappa/4 + lambda/4 + 1/4, kappa*lambda/4 - kappa/4 - lambda/4 + 1/4) with 32 square corners; nonlinear endpoint twin midpoint gap=-3/8\nPASS atomless_haar_factorization_and_M: signed-axis density/norm/mean/Haar-fourth/six-axis-fourth=(lambda*u + 1, 1, lambda/3, 1/5, 1/3); ordinary and joint mixture gaps=(0, 0); actual-axis bind cases=5 (atomless source point binds through F->M->B2 without a first-Record parent)\nPASS matter_attachment_same_kernel_selector: record-faithful pure endpoint has 20 exact structural transcripts; second use reads only M(state,axis) and Q6(protocol); actual_bind_cases=5; atomless source point binds through F->M->B2 without a first-Record parent; same-kernel mismatch=(1-lambda*kappa)/2\nPASS local_generator_confluence_and_covariance: states=652 edges=1075 diamonds=248 diamond_failures=0 deadends=0 terminals=48 geometry_edges=576 row_failures=0 actual_sources=('inherited_parent_gaussian_PIT_selector', 'normalized_Haar_axis') covariance_rows=1248 codec_records=912 occupied_target_proposals=0\nPASS archive_screening_and_finite_induction: two unequal archives have 48 equal next-transcript rows; support N=64 is 1153=18N+1\nSUMMARY response_class=affine_dot random_axis=atomless_haar selected_endpoint=lambda_1_kappa_1 status=conditional_support input_sha256=d5473c2802e593b776af14df415e7c3304716491be0c156c24c9f42a70874ff9\nTOTAL: PASS=6 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T134038Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

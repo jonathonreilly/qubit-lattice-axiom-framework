@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_reflected_curvature_gravity_physical_reconstruction_cut_gate_boundary_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_reflected_curvature_gravity_physical_reconstruction_cut_gate_boundary_2026_08_14.py",
+ "seed": 70865,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "33562236",
+ "started_utc": "20260923T134105Z",
+ "elapsed_s": 4.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=12 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b2eb0dadaa2767d1d0e3e7b1d522990bf9c4dd5e132efe31510f6ef5ed511a2b",
+ "stdout_tail": "site-TT directions map into exact edge gauge at the cubic corner while the metric c...\n       rank(M/F)=(8, 2); gauge residual=1.271e-16; QF=3.587e-15\n[PASS] K-rank-three-connection-rewrite-is-exact-marginal: the exact triangle-connection stencil and rank-three positive auxiliary Schur reduce bac...\n       rank D0=3; Schur=4.965e-16; stencil=2.220e-16\n[PASS] L-physical-boundary-and-no-go-discipline: the current scope record preserves changed-action and changed-quotient alternatives with...\nN5_CERTIFICATE: 22 edges, four exact gauge columns, two axis sectors, twelve nonmetric directions, 12 hostile poles, 728 spatial modes, three mu values, and two TT coordinates are resolved\nper_element: checked every reflected edge, gauge column, metric coordinate, auxiliary row, and local TT observable\nper_site: the supplied translation-invariant reflected Block-74 action and Block-49 line-metric chart are used unchanged\nper_mode: checked the explicit pole-collision sample and all nonzero L=9 spatial momenta at three coefficients\nper_block: checked analytic poles/residues, Dirac ranks, source coupling, full-zone TT Schurs, corner alias, and auxiliary elimination\nlattice_wide: no continuum momentum theorem, nonlinear constraint algebra, selected clock, physical inner product, or complete Record dynamics is inferred\nscope_boundary: route cut for the supplied Q_mu raw-edge marginal and two declared canonical charts; not canonical/connection gravity, axiom, or TOE closure\nTOTAL: PASS=12 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T134110Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/admissibility_reflected_curvature_gravity_physical_reconstruction_cut_gate_boundary_2026_08_14.txt against the .txt beside this log"
+  ]
+ }
+}

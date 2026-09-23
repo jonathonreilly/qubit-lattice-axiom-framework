@@ -1,0 +1,31 @@
+{
+ "task": "R:admissibility_incidence_adm_depth_two_sourced_constraint_record_cadence_boundary_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_incidence_adm_depth_two_sourced_constraint_record_cadence_boundary_2026_08_14.py",
+ "seed": 70664,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "33562236",
+ "started_utc": "20260923T133744Z",
+ "elapsed_s": 22.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1c5b9430613f0b34435b153794914f5a13e738c5145cf6ad24b577d43b2fbf9f",
+ "stdout_tail": "ient is checked; the physical source census injects diagonal ray stress only\nper_site: translation-representative vertex stress, face momentum flux, radius-one Q-to-O_s source hop, transverse head offset, and six-step continuation are checked on local carriers\nper_mode: all 6065 nonzero L=3 through L=12 spatial modes and all 13056 declared L=3 through L=8 two-transverse-axis neutral signed-source modes include even pi corners\nper_block: current-axiom binding, Block77 canonical decomposition, ADM identities, raw locality/covariance, TT stability, source conservation, constraints, coefficient uniqueness, and Cycle713 decoding are checked separately\nlattice_wide: checked and not executed \u2014 no physical same-M2 source compiler, gravity-state Record encoder, positive-mean boundary, exchange/debit law, or nonlinear selected gravity law is supplied\nSCHEDULE: the derived kick-first weights are (2,0); all 13056 source modes propagate four constraints, while equal and late placement fail 11064 modes\nBLOCK77_BRIDGE: cases=12130 residual=2.220e-15; derived normalization Ch/Mpi/first-kick/total-impulse=[1. 2. 2. 1.]\nCYCLE713: Y_n=H_n+u_s keeps the physical source at O_s; Q->O_s is the incoming segment, so no birth impulse is needed on this conditional single front\nSCOPE: partial-positive linear cadence and source-decoder construction; no physical Record typing, coupling/debit, boundary selection, nonlinear completion, retention, obligation retirement, or TOE movement\nTOTAL: PASS=10 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T133806Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

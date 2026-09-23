@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_plane_formation_diagonal_interaction_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_plane_formation_diagonal_interaction_2026_09_08.py",
+ "seed": 70770,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "33562236",
+ "started_utc": "20260923T133930Z",
+ "elapsed_s": 3.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=281 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6437ee6c215529f3b11da5ea5d8c370b75c1865e7d391057f99c97771054138a",
+ "stdout_tail": "\": [\n        true,\n        true,\n        true,\n        true\n      ],\n      \"mirror_TV\": \"0\",\n      \"center_formation\": [\n        \"1/6\",\n        \"1/6\",\n        \"1/6\",\n        \"1/6\",\n        \"1/6\",\n        \"1/6\"\n      ],\n      \"center_static\": [\n        \"1/6\",\n        \"1/6\",\n        \"1/6\",\n        \"1/6\",\n        \"1/6\",\n        \"1/6\"\n      ]\n    }\n  ],\n  \"elimination_schedules\": 96,\n  \"conditional_controls\": 96,\n  \"scope\": \"2x3 full exact marginals at four triples; 96 all-label and mixed-boundary controls; 3x3/3x4 symbolic trimming, not full census\",\n  \"seconds\": 3.7376035829656757,\n  \"peak_MiB\": 52.984375,\n  \"input_sha256\": {\n    \"docs/ADMISSIBILITY_PLANE_FORMATION_DIAGONAL_INTERACTION_NOTE_2026-09-08.md\": \"2b6773657a6f4c5961a8bfca919e91c664ee7bd290c9ae4bec095409f59ef1f7\",\n    \"docs/ADMISSIBILITY_RULE_MONOTONE_ORDER_FORMATION_LAW_ROWS_COLUMNS_CHAINS_CORNER_LAW_BOUNDED_THEOREM_NOTE_2026-09-07.md\": \"d190ba480137f0ef5b03d1b3fee027077b5f71841ecb12133862f627b632f095\"\n  },\n  \"source_sha256\": \"2985cda83daf6c0b18dd6817185cde194bea1a423273d248fbb2f954a59855dc\"\n}\nper_element: exact six-label probabilities and positive center conditioning.\nper_site: all subrectangle positions of the complete2x3 laws.\nper_mode: no continuum or quantum mode claim; four orbit-weight fixtures.\nper_block: complete46656 configuration laws;96 symbolic trimming schedules.\nlattice_wide: plane extension is analytic, not numerically enumerated.\nTOTAL: PASS=281 FAIL=0\nResources: 3.737604s, 52.984MiB; caps180s384MiB.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T133934Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/admissibility_plane_formation_diagonal_interaction_2026_09_08.txt against the .txt beside this log"
+  ]
+ }
+}

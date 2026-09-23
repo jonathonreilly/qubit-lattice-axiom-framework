@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_the_fall_is_owed_by_the_ledger_a_field_energy_per_local_tick_requires_the_contents_stress_gradient_to_equal_its_weight_2026_09_21.py
 runner_sha256: 987feb024ca53b72c34aed0114148c06109057da9416c77b015f057fc15b47d4
-input_fingerprint_sha256: 8ff722fe022433f2610ecd33fb476cc129752fbbeb06025ce972661e907c3488
+input_fingerprint_sha256: 9248b60e6149aef0a874d1471fea78497fde49305dec83774635a27d9009e2c8
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 50.74
+elapsed_sec: 53.40
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

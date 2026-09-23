@@ -1,0 +1,27 @@
+ok A.sameproj same +y projection {100}
+ok A.counterexample (S): the +y content jumps 100 -> 000 (a step -e_x) at rate 1 from A, rate 0 from B: the +y stream is not autonomous and not a TASEP along +y
+ok A.ownblock an attempt of content d is suppressed exactly when the target holds d, otherwise d advances
+ok B.uniform2 (S), 2 records: all 12636 configurations balance
+ok B.product2 (S): the tilted product weights prod_r w_{s_r} (w = 2,3,5,7,11,13) balance on all 12636
+ok C.currents x-currents: +x: r+(1-r+ + r-), -x: -r-(1-r- + r+), transverse d: -r_d g_x
+ok C.mass sum = (1 - rho) g_x (block 44's mass current)
+ok C.xmomflux x-momentum flux = r+ + r- - (r+ - r-)^2: carried by x-movers only
+ok D.eigen linearized x-flux matrix at rho_d = c: char. poly lam^4 (lam^2 - (1-2c)): eigenvalues 0 (x4), +-sqrt(1-2c)
+ok D.solution exact solution of the linearized six-stream system
+ok D.amplitude density amplitude = 2/(3-rho0) + ((1-rho0)/(3-rho0)) cos(sqrt(1-rho0/3) k t)
+ok D.rho03 at rho0 = 3/10: frozen 20/27, oscillating 7/27, speed sqrt(9/10); block 44 with (C): sound speed sqrt(7/30)
+ok E.group
+ok E.orbits covariant content-preserving bond rules = one swap rate per orbit: 10 orbits of (bond, ordered pair of site states)
+ok E.invariants (S) and a generic content-preserving rule change no content: all six N_d are conserved (6 additive invariants, not the 4 of N and P)
+   2 records, 12636 configurations: (unbalanced for uniform, additive invariants) {'S+C': (0, 4), 'S+Copp': (0, 4), 'S+Cmin': (0, 4), 'S+Chead': (486, 4), 'Sstream': (486, 4)}
+ok F.C block 44's (C): uniform stationary, invariants N and P only
+ok F.opp opposite pairs only, bond clock: uniform stationary, invariants N and P only
+ok F.min opposite pairs on the two axes perpendicular to the bond only: same
+ok F.fail head-on (along the bond) re-draw only, or re-draw on the streaming clock: 486 configurations unbalanced
+ok F.three 3 records, 631800 configurations: (S) and (S)+Cmin balance for the uniform measure; Cmin invariants N, P (7 s)
+N.sim NUMERICAL (S) alone, side 64, rho 0.3, 4 runs, 300 ticks: fitted speed 0.950 (linear 0.949; independent-stream reading 0.900), oscillating 0.270 (linear 0.259; reading 0.333), offset 0.698 (linear 0.741 before diffusion; reading 0.667)
+runtime 13.8 s
+SUMMARY: COUNTEREXAMPLE under (S) alone the six contents are not independent exclusion streams: an exchange pushes the other content back; a standing wave keeps 20/27 of its amplitude frozen at rho 0.3; no content-preserving clause thermalizes
+HIT: under (S) alone the six contents are not independent streams: a +x record passing a +y record at 100 moves the +y content to 000 (rate 1), which no +y exclusion stream does; exact product-state x-currents: r+(1-r+ +r-), -r-(1-r- +r+), -r_d g_x for transverse d; every tilted product measure is stationary.
+HIT: the linearized six-stream equations give a standing density wave along x the evolution 2/(3-rho0) + ((1-rho0)/(3-rho0)) cos(sqrt(1-rho0/3) k t): at rho0 = 0.3, 20/27 of the amplitude has zero frequency and the rest oscillates at speed 0.949, not as sound (block 44's (C): 0.483).
+HIT: every covariant clause that never changes a content is a swap process (10 orbit rates) conserving all six content numbers, so none thermalizes momentum; re-drawing only opposite pairs on a bond clock, even only those on the axes perpendicular to the bond, keeps the uniform measure stationary with invariants N and P only; head-on-only or streaming-clock re-drawing breaks it (486 of 12636).

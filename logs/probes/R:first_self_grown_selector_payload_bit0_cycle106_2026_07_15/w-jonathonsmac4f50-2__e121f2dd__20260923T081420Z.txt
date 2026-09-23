@@ -1,0 +1,84 @@
+
+===============================================================================
+A - Exact Cycle-95 first-bit source dependency
+===============================================================================
+PASS A01 Cycle 95's complete apparatus has 943 supplied records
+PASS A02 exact compare kernel is the unique five-record subset :: (5, (('candidate', 'reference', 'previous', 'cage-minus', 'cage-plus'),))
+PASS A03 exact AUX certificate is the unique seven-record subset :: (7, (('candidate', 'reference', 'previous', 'cage-minus', 'cage-plus', 'decision-y', 'decision-z'),))
+PASS A04 exact first launch is the unique nine-record subset :: (9, (('candidate', 'reference', 'previous', 'cage-minus', 'cage-plus', 'decision-y', 'decision-z', 'token-y', 'token-z'),))
+PASS A05 deleting any one of the nine records breaks the full cone :: []
+PASS A06 Cycle 95's whole law is not silently merged into Cycle 108 :: (5240, 6)
+
+===============================================================================
+B - Zero-added-source literal bit-0 payload and exact table
+===============================================================================
+PASS B01 source boundary is exactly the inherited 264-record Cycle-100 terminal
+PASS B02 candidate, reference, arm, cage, status, reject, and launch start open
+PASS B03 bit-0 candidate is the grown Cycle-101 H1 output
+PASS B04 TYPE is inherited CERT-to-R_B21 growth, not a new row
+PASS B05 ten canonical rows compile to 240 disjoint cubic images
+PASS B06 exact union has 7,136 single-valued raw inputs
+PASS B07 complete table remains inside the 153-role onsite alphabet
+PASS B08 reference guard occupies the inherited bit-5 poison site
+
+===============================================================================
+C - All correct schedules, eight rail slices, and H0 control
+===============================================================================
+PASS C01 correct local graph has 982 states and 3,850 edges :: GraphStats(states=982, edges=3850, terminals=1, terminal_sizes=(30,), max_front=7, premature_reject=False, bad=())
+PASS C02 every schedule reaches one complete 30-record grown terminal :: GraphStats(states=982, edges=3850, terminals=1, terminal_sizes=(30,), max_front=7, premature_reject=False, bad=())
+PASS C03 no correct schedule exposes AUX or launch
+PASS C04 local maximum frontier is seven
+PASS C05 payload and eight-slice rail supports are separated by L1 seven :: 7
+PASS C06 no payload row fires in any of 97 rail prefixes :: ()
+PASS C07 exact separated async product has 95,254 states and 467,722 edges :: (95254, 467722)
+PASS C08 H0 fault control is exact at all 97 rail prefixes and four stages :: ()
+
+===============================================================================
+D - Word corruptions and all live typed substitutions
+===============================================================================
+PASS D01 all eight one-bit word corruptions retain the exact stopped census :: ((38, 70, (14,)), (34, 62, (13,)), (30, 54, (12,)), (22, 34, (11,)), (6, 5, (5,)), (10, 13, (5,)), (4, 3, (3,)), (3, 2, (2,)))
+PASS D02 no word corruption reaches candidate or any payload record :: ((), (), (), (), (), (), (), ())
+PASS D03 bit 5 alone writes the inherited poison at the guard coordinate
+PASS D04 every corruption graph is single-terminal and parasite-free
+PASS D05 all 459 GUARD/REFERENCE/STATUS role substitutions are screened :: {'reference': 19, 'status': 19}
+PASS D06 the 19 side-front roles are exactly the inherited unary-input roles
+PASS D07 no typed substitution exposes an illicit AUX or launch :: ()
+
+===============================================================================
+E - Proper-cubic covariance, scope, and documentation
+===============================================================================
+PASS E01 all 171,264 raw proper-cubic images preserve output :: []
+PASS E02 all 24 rotations preserve correct and four H0-control frontiers :: []
+FAIL E03 note says literal bit-0 instance and types H0 as fault injection
+FAIL E04 note pins inherited boundary versus zero added payload source
+FAIL E05 note withholds full-selector and probability claims
+FAIL E06 note contains the full N1-N8 gate
+FAIL E07 note makes no foundation or axiom edit
+PASS E08 Cycle 106 writes only this runner and its review note
+
+===============================================================================
+F - Literal Cycle-105 integration remains open
+===============================================================================
+PASS F01 Cycle 105 occupies both Cycle-106 arm coordinates differently
+PASS F02 both constructions place the same JOINT at the join coordinate
+PASS F03 Cycle 105's unary JOINT cap targets the Cycle-106 reject site
+PASS F04 raw tables merge without hiding the state-level race
+PASS F05 a pre-status C105 cap changes the exact status signature :: (((-1, 0, 0), 'H1'), ((0, -1, 0), 'BACKSTOP'), ((0, 0, -1), 'H1'), ((1, 0, 0), 'R_B11'))
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/first_self_grown_selector_payload_bit0_cycle106_2026_07_15.py", line 819, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/first_self_grown_selector_payload_bit0_cycle106_2026_07_15.py", line 804, in main
+    c105_integration_open_contract()
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/first_self_grown_selector_payload_bit0_cycle106_2026_07_15.py", line 788, in c105_integration_open_contract
+    note = NOTE.read_text(encoding="utf-8").lower()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/FIRST_SELF_GROWN_SELECTOR_PAYLOAD_BIT0_CYCLE106_NOTE_2026-07-15.md'

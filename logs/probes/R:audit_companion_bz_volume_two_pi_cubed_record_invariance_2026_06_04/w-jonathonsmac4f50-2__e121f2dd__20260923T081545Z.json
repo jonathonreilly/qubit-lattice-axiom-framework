@@ -1,0 +1,36 @@
+{
+ "task": "R:audit_companion_bz_volume_two_pi_cubed_record_invariance_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_bz_volume_two_pi_cubed_record_invariance_2026_06_04.py",
+ "seed": 51345,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e121f2dd",
+ "started_utc": "20260923T081545Z",
+ "elapsed_s": 0.7,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=23 FAIL=13",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d32851f4b14542b8f221fb54b6d20da0013217fc1dfdc43ef254f41e0e98a46e",
+ "stdout_tail": "path_expected\nFAIL parent_current_criticality_expected\nFAIL parent_current_load_expected :: load=5.748\nFAIL parent_note_hash_expected\nPASS parent_note_hash_matches_ledger\nFAIL parent_runner_hash_expected\nPASS parent_has_only_minimal_axioms_dep\nPASS minimal_axioms_row_is_meta\nPASS parent_current_row_unresolved\nPASS prior_positive_snapshot_present\nPASS prior_invalidation_was_premise_update\nPASS parent_runner_exit_zero :: returncode=0\nFAIL parent_runner_total_present\nFAIL parent_runner_pass_count_fifty_five\nFAIL parent_runner_fail_count_zero\nFAIL parent_load_bearing_block_present\nFAIL parent_load_bearing_contains_lattice_haar_phrase_0\nFAIL parent_load_bearing_contains_lattice_haar_phrase_1\nFAIL parent_load_bearing_contains_lattice_haar_phrase_2\nFAIL parent_load_bearing_contains_lattice_haar_phrase_3\nFAIL parent_load_bearing_contains_lattice_haar_phrase_4\nPASS parent_load_bearing_omits_record_axiom_terms\nPASS direct_volume_exact\nPASS direct_haar_density_exact\nPASS direct_volume_numeric_expected\nPASS record_marker_does_not_change_volume\nPASS record_marker_does_not_change_density\nPASS record_marker_does_not_change_numeric_volume\nPASS companion_declares_meta_type\nPASS companion_disclaims_new_theorem\nPASS companion_disclaims_verdict_change\nPASS companion_keeps_parent_unclosed\nPASS companion_marks_axioms_not_support\n========================================================================\nSUMMARY: PASS=23 FAIL=13\n========================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T081546Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: PASS=23 FAIL=13' vs cache 'SUMMARY: PASS=36 FAIL=0'"
+  ]
+ }
+}

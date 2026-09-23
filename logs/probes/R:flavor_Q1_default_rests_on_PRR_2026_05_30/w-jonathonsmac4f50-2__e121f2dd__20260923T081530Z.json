@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_Q1_default_rests_on_PRR_2026_05_30",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flavor_Q1_default_rests_on_PRR_2026_05_30.py",
+ "seed": 51330,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e121f2dd",
+ "started_utc": "20260923T081530Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9c962e94aef8c63bc89c925f7e756a3365fa1ee8349aa89ca14099f24bb85431",
+ "stdout_tail": "[PASS] C1/C2 rho_(1:1) is PSD, trace-one, C3-invariant, and has equal block masses\n       eigs=[0.25 0.25 0.5 ]; tau block masses=[0.333 0.667]\n[PASS] C3 full U(3) conjugation preserves trace but not rho_(1:1), so it is a stronger selector than C3\n       U(3) dev: tau=4.8e-16, (1:1)=0.353\n[PASS] C4 displayed Q formula depends on spectral parameter r=|b|^2/a^2, not on rho\n       any bridge from block masses to r is additional structure outside this packet\n[PASS] C5 source boundary guard: no repo-baseline or PRR-status conclusion is promoted by this packet\n       the packet closes only the stipulated-C3 cone no-go\n\nSCORECARD PASS=4 FAIL=0\nVERDICT: bounded-support negative route pruning.\nGiven only the stipulated C3 generation symmetry, the invariant reference-state cone\ncontains both the tracial 1:2 weighting and an admissible non-tracial 1:1 weighting.\nFull U(3) conjugation is a stronger selector, but this runner does not decide its\nrepo-baseline status. The displayed Q formula is a spectral readout and does not use rho.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T081530Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/flavor_Q1_default_rests_on_PRR_2026_05_30.txt against the .txt beside this log"
+  ]
+ }
+}

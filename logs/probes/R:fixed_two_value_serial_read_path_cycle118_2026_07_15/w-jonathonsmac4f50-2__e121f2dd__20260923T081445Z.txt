@@ -1,0 +1,37 @@
+
+===============================================================================
+A - Sources, retained boundary, and primitive registry
+===============================================================================
+FAIL A cycle118_note exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/FIXED_TWO_VALUE_SERIAL_READ_PATH_CYCLE118_NOTE_2026-07-15.md
+PASS A axioms exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS A registry exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/audit/data/axiom_premise_nodes.json
+PASS A scale exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md
+PASS A kinetic exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md
+PASS A realized exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md
+FAIL A cycle112 exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/EIGHT_BIT_STATUS_COMPLETION_FRONT_CYCLE112_NOTE_2026-07-15.md
+FAIL A cycle114 exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/LAWFUL_H0_REFERENCE_FORK_CYCLE114_NOTE_2026-07-15.md
+FAIL A cycle115 exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/FIRST_AUTONOMOUS_SUCCESSOR_ROLE_PORT_CYCLE115_NOTE_2026-07-15.md
+FAIL A cycle116 exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/POST_CYCLE115_ADDRESS_SEMANTICS_AUDIT_CYCLE116_NOTE_2026-07-15.md
+PASS A registry contains only the four canonical premise nodes :: ['kinetic_isotropy_primitive', 'minimal_axioms', 'realized_state_primitive', 'scale_reference_primitive']
+PASS A primitive current paths are consumed literally
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/fixed_two_value_serial_read_path_cycle118_2026_07_15.py", line 785, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/fixed_two_value_serial_read_path_cycle118_2026_07_15.py", line 761, in main
+    source_and_primitive_contract()
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/fixed_two_value_serial_read_path_cycle118_2026_07_15.py", line 297, in source_and_primitive_contract
+    texts = {key: normalized(path) for key, path in SOURCES.items()}
+                  ^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/fixed_two_value_serial_read_path_cycle118_2026_07_15.py", line 76, in normalized
+    text = path.read_text(encoding="utf-8").lower()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/EIGHT_BIT_STATUS_COMPLETION_FRONT_CYCLE112_NOTE_2026-07-15.md'

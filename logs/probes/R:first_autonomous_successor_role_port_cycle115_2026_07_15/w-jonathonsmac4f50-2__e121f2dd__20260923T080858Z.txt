@@ -1,0 +1,53 @@
+
+===============================================================================
+A - Exact two-row successor adapter
+===============================================================================
+FAIL A01 Cycle 115 note exists
+PASS A02 allocator sees exactly D1=H0 and SIGNAL_STATUS=T_G0 :: (((-1, 0, 0), 'H0'), ((0, 0, 1), 'T_G0'))
+PASS A03 successor sees D2=H0, fresh R_A10, and completed R_B11 :: (((-1, 0, 0), 'H0'), ((0, 0, 1), 'R_B11'), ((0, 1, 0), 'R_A10'))
+PASS A04 adapter is two canonical / 48 proper-cubic raw rows :: canonical=2 raw=48
+PASS A05 adapter raw domain is disjoint from Cycle 112 :: ()
+PASS A06 complete 8,096-row union is single-valued and alphabet-closed
+PASS A07 source remains exactly the 264-record Cycle-100 terminal
+
+===============================================================================
+B - Full-history asynchronous exhaustion
+===============================================================================
+PASS B01 variable corpus is 69 inherited plus two successor writes
+PASS B02 every compiled local subset has zero unexpected target :: frozenset()
+PASS B03 all schedules reach one complete 71-write terminal :: states=74264 edges=433682 terminals=1 max=11
+PASS B04 successor never violates the Cycle-112 completion barrier :: ()
+PASS B05 terminal contains fresh R_A10 and the first R_B10 successor role
+PASS B06 completed successor leaves only the repaired-rail frontier :: {(-2, 1, 1): frozenset({'R_C02'})}
+
+===============================================================================
+C - Rail locality, covariance, and rotated terminal
+===============================================================================
+PASS C01 all 96 rail appends remain exact singleton fronts :: []
+PASS C02 successor support is rail-separated with zero 97-prefix aliases :: distance=8 hits=[]
+PASS C03 exact 97-prefix product is 7,203,608 states / 49,196,498 edges :: states=7203608 edges=49196498
+PASS C04 all 194,304 proper-cubic raw images preserve output :: []
+PASS C05 every rotated completed history exposes only the rotated next rail :: []
+
+===============================================================================
+D - Wrong-word and H0-branch controls
+===============================================================================
+PASS D01 all eight flips plus wrong VALID/READY stop before successor :: []
+PASS D02 corrupted graph census remains pinned :: [(1080, 3522, (30,)), (920, 2938, (29,)), (760, 2354, (28,)), (520, 1438, (27,)), (120, 238, (20,)), (200, 490, (20,)), (80, 152, (18,)), (60, 109, (17,)), (40, 66, (16,)), (20, 23, (15,))]
+PASS D03 exhausted H0 reject history never reaches allocator or successor :: states=44 edges=97 sizes=(6, 7) bad=()
+
+===============================================================================
+E - Scope, N1-N8, and constitutional boundary
+===============================================================================
+FAIL E01 note names exact bounded positive
+FAIL E02 note names exact next object
+FAIL E03 note states Cycle 114 contributes zero rows
+FAIL E04 note carries remote N1-N8 discipline
+FAIL E05 note denies generic addressability
+FAIL E06 note makes no axiom addition
+PASS E07 Cycle 115 writes only runner and review note
+
+SUCCESSOR_CANONICAL=2 SUCCESSOR_RAW=48 UNION_RAW=8096
+LOCAL_STATES=74264 LOCAL_EDGES=433682 PRODUCT_STATES=7203608 PRODUCT_EDGES=49196498
+PASS=21 FAIL=7
+RESULT=FAIL

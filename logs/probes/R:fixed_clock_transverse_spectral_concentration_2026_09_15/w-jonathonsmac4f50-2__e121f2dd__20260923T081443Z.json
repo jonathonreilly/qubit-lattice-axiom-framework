@@ -1,0 +1,35 @@
+{
+ "task": "R:fixed_clock_transverse_spectral_concentration_2026_09_15",
+ "type": "runner-reexecution",
+ "lane": "fixed",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/fixed_clock_transverse_spectral_concentration_2026_09_15.py",
+ "seed": 51283,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e121f2dd",
+ "started_utc": "20260923T081443Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "496a722cefd8fefeabdfc2bc8c19a8817d583039e9b80f5ca629cf26cc8d272a",
+ "stdout_tail": "ongaussianity: {\"continuous_uniform_relative_width\": \"0.001\", \"fourth_moment\": \"15/4\", \"global_covariance_error_bound\": \"0.000000049382765432148148197530913580296296345679061728444444493827209876\", \"largest_sampled_error\": \"0.000000049382729218111176433609214503561294692533069505109229896510082029\", \"no_spectral_atoms_by_definition\": true, \"quadrature_error\": \"1.0918163289939096158964320426158584884422341320781699307241596514e-61\", \"scale_mixture_variance\": \"1\"}\nPASS check_parameter_certificate: {\"delta_rational_upper\": \"68478125/4503599627370496\", \"energy_inversion_error\": 1.1102230246251565e-16, \"epsilon_certificate\": \"1/10000000\", \"susceptibility_fraction_lower\": \"3332024/3333333\"}\nper_element: exact rational localization factors and conditional score moments are compared with symbolic algebra and separate finite Fourier/image sums.\nper_site: all paths of a five-state Markov control at separations zero through five are compared with direct transfer powers and spectral moments.\nper_mode: three midpoint magnetic symbols, four Poisson/Stieltjes frequencies and twelve inverse-energy coordinates are checked.\nper_block: noncommuting matrix band weights, spectral endpoint controls, a continuous spectral law and a non-Gaussian moment control are executed.\nlattice_wide: the fixed-clock spectral concentration and two-response-direction statement are checked and not executed; the analytic implication and its upstream uniform phase input await independent review.\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T081444Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

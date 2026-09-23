@@ -1,0 +1,36 @@
+{
+ "task": "R:flavor_asymmetry_identification_principled_not_forced_2026_05_31",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flavor_asymmetry_identification_principled_not_forced_2026_05_31.py",
+ "seed": 51330,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e121f2dd",
+ "started_utc": "20260923T081530Z",
+ "elapsed_s": 0.5,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=7 FAIL=2",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3ba06f76a51348b008cb61b5756ec9fcb076c744ed9ae0c1d06df4f04fe0fbd3",
+ "stdout_tail": "c) is a SUMMAND of (b); promoting contribution->observable needs the (undischarged) generation-space bridge\n       gen space = C3[111] fixed locus reading its local density: load-bearing, undischarged on main\n[PASS] F5 dimensionless 2/9 != CP radian-delta (2/9 rad): (2/9)/(q*pi) irrational (retained radian-bridge separation)\n       not conflated; the radian-bridge no-go is a different surface\n[FAIL] F6 lepton delta=2/9 source packet is audited-clean open_gate, not a phase derivation\n       lepton_brannen_bae_delta_two_ninths_open_gate_note_2026-05-26: audit=unaudited effective=unaudited\n[PASS] F7 downstream note names lepton source packet note, runner, and cache\n       restricted packet includes exact residual note/runner/cache\n[PASS] F8 lepton source packet keeps phase/coefficient/scale open\n       no downstream promotion of the open comparator\n[FAIL] F9 lepton runner cache is SHA-fresh and clean\n       cache runner=scripts/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.py status=ok\n\nSCORECARD PASS=7 FAIL=2\nVERDICT: PRINCIPLED-BUT-NOT-FORCED. Type-filter forces (c) among the three index objects (excludes\neta=0 and the extensive sum) -- not a cherry-pick. But the single-locus density is a CONTRIBUTION,\nnot an invariant; treating it as the observable needs the generation-space bridge (gen space =\nC3[111] fixed locus), UNDISCHARGED on main. So 2/9 = derived-modulo-the-generation-space-bridge:\nNOT a closed prediction, NOT a no-go -- ONE named, well-posed bridge remains.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T081531Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'SCORECARD PASS=7 FAIL=2' vs cache 'SCORECARD PASS=9 FAIL=0'"
+  ]
+ }
+}

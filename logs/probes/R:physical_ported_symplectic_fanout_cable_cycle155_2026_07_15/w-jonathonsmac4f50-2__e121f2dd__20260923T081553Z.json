@@ -1,0 +1,32 @@
+{
+ "task": "R:physical_ported_symplectic_fanout_cable_cycle155_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_ported_symplectic_fanout_cable_cycle155_2026_07_15.py",
+ "seed": 51353,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e121f2dd",
+ "started_utc": "20260923T081553Z",
+ "elapsed_s": 1172.8,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a6d001f9ec0b43d1de3bc1c18d407bbd495c97cda4cf915e335572ca3d843398",
+ "stdout_tail": ": Counter({5: 128})\nPASS every output is the exact indexed row bit and phase is not consumed :: \nPASS 3,072 ported rows are disjoint from Cycle 154 :: 3072\nPASS ported fanout merges into 86,444 rows without conflict :: 86444\nPASS deleting any direct fanout parent suppresses its intended bit :: (640, ())\n\nOPEN PORTS AND CABLE BIND\nPASS all 768 ported four-bit causal cubes are exact :: []\nPASS all 768 fanout-plus-four-cable causal products are exact :: ({193}, [])\nPASS one row record and no literal inputs drive sixteen physical writes :: \nPASS every cable endpoint retains its indexed symplectic bit :: []\n\nPREDECESSOR COEXISTENCE\nPASS all 192 Cycle-154 cable histories survive ported rows :: []\nPASS all 768 Cycle-153 terminal fanout graphs survive ported rows :: []\nPASS all 54,000 Cycle-152 router graphs survive ported rows :: []\nPASS ported rows preserve all 86,640 prior unified histories :: []\nPASS Cycle-144 terminal retains exactly its two priced fronts :: {(-9, -1, 0): frozenset({'B1'}), (-11, 1, 2): frozenset({'R_B21'})}\n\nSCOPE\nFAIL note contains: ported symplectic row fanout :: \nFAIL note contains: four transport-ready bits :: \nFAIL note contains: phase bit remains in the row record :: \nFAIL note contains: core-first, cage-once :: \nFAIL note contains: does not derive occurrence or equal weights :: \nFAIL note contains: no axiom addition follows :: \nFAIL note contains: n1 \u2014 alternative routes :: \nFAIL note contains: n8 \u2014 cross-cycle echo :: \n\nTOTAL\nPASS 16 FAIL 9\nRESULT FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T083526Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

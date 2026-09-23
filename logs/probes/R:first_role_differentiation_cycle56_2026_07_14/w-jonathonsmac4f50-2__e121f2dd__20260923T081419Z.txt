@@ -1,0 +1,30 @@
+
+===============================================================================
+A - Exact source, authority, and simultaneous static tables
+===============================================================================
+FAIL A source exists: FIRST_ROLE_DIFFERENTIATION_CYCLE56_NOTE_2026-07-14.md
+FAIL A source exists: SELF_EXTENDING_FRAME_CAGE_RAIL_CYCLE52_NOTE_2026-07-14.md
+FAIL A source exists: AUXILIARY_PAIR_COMPLETION_GATE_CYCLE54_NOTE_2026-07-14.md
+FAIL A source exists: LAUNCHER_LAST_FIRST_ROLE_DIFFERENTIATION_CYCLE55_NOTE_2026-07-14.md
+PASS A source exists: MINIMAL_AXIOMS_2026-06-29.md
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/first_role_differentiation_cycle56_2026_07_14.py", line 423, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/first_role_differentiation_cycle56_2026_07_14.py", line 406, in main
+    source_and_rule_contract()
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/first_role_differentiation_cycle56_2026_07_14.py", line 240, in source_and_rule_contract
+    note = normalized(NOTE)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/first_role_differentiation_cycle56_2026_07_14.py", line 230, in normalized
+    text = path.read_text(encoding="utf-8").lower()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/FIRST_ROLE_DIFFERENTIATION_CYCLE56_NOTE_2026-07-14.md'

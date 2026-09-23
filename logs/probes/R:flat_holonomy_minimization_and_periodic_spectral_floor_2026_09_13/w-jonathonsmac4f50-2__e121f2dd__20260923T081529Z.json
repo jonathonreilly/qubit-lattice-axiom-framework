@@ -1,0 +1,35 @@
+{
+ "task": "R:flat_holonomy_minimization_and_periodic_spectral_floor_2026_09_13",
+ "type": "runner-reexecution",
+ "lane": "flat",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flat_holonomy_minimization_and_periodic_spectral_floor_2026_09_13.py",
+ "seed": 51329,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e121f2dd",
+ "started_utc": "20260923T081529Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=640 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9be68708b36916cffc73f545c2d34c1503433a469cac3a8535c437d93d808b1d",
+ "stdout_tail": "76309662432167713875347967833/2500000000000000000000000000000000\", \"-3876458763096624321677138753479678311/25000000000000000000000000000000000\"], \"difference_interval\": [\"-72120267482267376028853227437503677/50000000000000000000000000000000000\", \"-180300668705668440072133068593759/125000000000000000000000000000000\"]}\nRING [{\"g\": 0.2, \"S\": 11, \"levels\": [-2.7321712666982165, -2.5652456610474523, -2.399677193029247, -2.234904776844561], \"loop_real\": -0.7869638582135696, \"correction_over_g\": 0.4812792902398688, \"gap_over_g\": 0.834628028253821}, {\"g\": 0.05, \"S\": 27, \"levels\": [-2.80664308799631, -2.7646765398099777, -2.722788446149502, -2.680979028904147], \"loop_real\": -0.9421694537482022, \"correction_over_g\": 0.4356807349976055, \"gap_over_g\": 0.8393309637266455}, {\"g\": 0.01, \"S\": 77, \"levels\": [-2.8241921741828238, -2.8157863361932534, -2.807383625821077, -2.7989840448148047], \"loop_real\": -0.9881739984559235, \"correction_over_g\": 0.4234950563366535, \"gap_over_g\": 0.8405837989570397}]\nper_element: exact radical square-root brackets and flat-link phases checked; no chosen coupling derived\nper_site: direct site matrix and independent finite CAR actions checked\nper_mode: ring energy branches, normal metric coefficient and sampled slow levels checked\nper_block: strict 3-cubed actual-carrier flat-twist comparison certified with integer arithmetic\nlattice_wide: finite-graph localization proof proposed; no uniform growing-volume phase or payload rate established\nTOTAL: PASS=640 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T081530Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/flat_holonomy_minimization_and_periodic_spectral_floor_2026_09_13.txt against the .txt beside this log"
+  ]
+ }
+}

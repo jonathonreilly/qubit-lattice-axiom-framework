@@ -1,0 +1,15 @@
+[PASS] C1/C2 rho_(1:1) is PSD, trace-one, C3-invariant, and has equal block masses
+       eigs=[0.25 0.25 0.5 ]; tau block masses=[0.333 0.667]
+[PASS] C3 full U(3) conjugation preserves trace but not rho_(1:1), so it is a stronger selector than C3
+       U(3) dev: tau=4.8e-16, (1:1)=0.353
+[PASS] C4 displayed Q formula depends on spectral parameter r=|b|^2/a^2, not on rho
+       any bridge from block masses to r is additional structure outside this packet
+[PASS] C5 source boundary guard: no repo-baseline or PRR-status conclusion is promoted by this packet
+       the packet closes only the stipulated-C3 cone no-go
+
+SCORECARD PASS=4 FAIL=0
+VERDICT: bounded-support negative route pruning.
+Given only the stipulated C3 generation symmetry, the invariant reference-state cone
+contains both the tracial 1:2 weighting and an admissible non-tracial 1:1 weighting.
+Full U(3) conjugation is a stronger selector, but this runner does not decide its
+repo-baseline status. The displayed Q formula is a spectral readout and does not use rho.

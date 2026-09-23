@@ -1,0 +1,32 @@
+{
+ "task": "R:first_contact_boundary_diagnostic_cycle199_2026_07_16",
+ "type": "runner-reexecution",
+ "lane": "first",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/first_contact_boundary_diagnostic_cycle199_2026_07_16.py",
+ "seed": 50984,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e121f2dd",
+ "started_utc": "20260923T080944Z",
+ "elapsed_s": 275.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5e2613b8e3b141c76a66736fc00beba8f7593ae4c6538a1deb8d86bb1f1bf6ad",
+ "stdout_tail": "ONE-STEP REQUESTED PLACEMENT\nPASS one step closes the slab gap but not the occupied-support gap :: {'offset': 132, 'contacts': 0, 'minimum_distance': (4, (6, 3, -3), (10, 3, -3)), 'mixed_signatures': ()}\nPASS the requested one-step configuration is transparently exact :: {'ok': True, 'states': 6677, 'edges': 8615}\nFIRST MIXED SIGNATURE\nPASS the exact approach profile is 4, 3, 2, 1 lattice steps :: {132: 4, 131: 3, 130: 2, 129: 1}\nPASS offset 130 has one mixed signature and no acting law row :: (((7, 3, -3), (((-1, 0, 0), 'R_A13'), ((1, 0, 0), 'MARK')), None),)\nPASS the first mixed-signature configuration remains transparently exact :: {'ok': True, 'states': 6677, 'edges': 8615}\nFIRST OCCUPIED CONTACT\nPASS offset 129 is the first occupied-record contact :: frozenset({((6, 3, -3), (7, 3, -3))})\nFAIL the note preserves the diagnostic boundary :: ('bounding-slab contact is not occupied-record contact', 'transparent closure', 'no existing row acts', 'not a no-go', 'draft parking branch')\nPASS 6 FAIL 1\nRESULT CYCLE199_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T081419Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

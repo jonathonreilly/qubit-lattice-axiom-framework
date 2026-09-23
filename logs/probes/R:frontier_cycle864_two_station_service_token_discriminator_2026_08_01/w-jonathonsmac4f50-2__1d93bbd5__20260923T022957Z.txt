@@ -1,0 +1,839 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "claim_scope": "bounded rooted finite two-station service-token construction, conditional on one supplied new local H_dual gate",
+  "conditional_checks": {
+    "P_ext_factorwise": true,
+    "cFSWAP_exact": true,
+    "clean_cSWAP_exact": true,
+    "controller_normalization_matches_original": true,
+    "controls_adjacent": true,
+    "covariant_24_576": true,
+    "deletions_visible": true,
+    "guard_exact_and_returned": true,
+    "lawful_service_exact": true,
+    "local_selected_types_and_rails": true,
+    "new_gate_supply_is_exposed": true,
+    "unlawful_and_dirty_controls_active": true
+  },
+  "controller_and_schedule": {
+    "Cycle719_H_applications_per_service_orbit": 520,
+    "Cycle719_H_applications_per_station_block": 130,
+    "Cycle719_H_orbit_boundary_hosted": true,
+    "Cycle719_expanded_factor_census": {
+      "CNOT": 303942,
+      "H": 96952,
+      "T": 193904,
+      "TD": 145428
+    },
+    "Cycle719_expanded_factor_occurrences_per_service_orbit": 384917520,
+    "Cycle719_expanded_factors_per_H": 740226,
+    "Cycle719_semantic_gate_occurrences_per_service_orbit": 32012240,
+    "Cycle719_semantic_gates_per_H": 61562,
+    "Cycle827_control_order_normalizations": 6,
+    "Cycle827_normalization_equivalence_failures": 0,
+    "Q_applications_per_two_application_service_orbit": 2,
+    "busy_departed_latch_upgrade_assessment": "not implemented or tested: a local busy/departed latch plus the Cycle719 internal A-token-at-station-0 return predicate could mark load versus orbit return, but it still needs a landed one-H-step composition and physical typed-atlas bind",
+    "conditional_exchange_occurrences_per_service_orbit": 1676,
+    "coordinate_colour_or_parity_selector_used": false,
+    "coordinate_modulo_operators_in_probe": 0,
+    "finite_two_station_ring": true,
+    "fixed_schedule": {
+      "Q_station_block_order": [
+        0,
+        1
+      ],
+      "R1_disjoint_SWAPS": [
+        [
+          "A0",
+          "B0"
+        ],
+        [
+          "A1",
+          "B1"
+        ]
+      ],
+      "R2_disjoint_SWAPS": [
+        [
+          "B0",
+          "A1"
+        ],
+        [
+          "B1",
+          "A0"
+        ]
+      ],
+      "application_ordinals_are_physical_time": false,
+      "externally_supplied_application_ordinal_count": 2,
+      "law_word": "A_service = R Q (chronological Q then R)"
+    },
+    "global_lexicographic_edge_dispatch_used": false,
+    "host_two_application_boundary_supplied": true,
+    "normalized_vs_original_full_orbit_endpoint_rows": 4,
+    "normalized_vs_original_full_orbit_failures": 0,
+    "physical_service_token_register": true,
+    "root_and_station_program_order_supplied": true,
+    "runtime_host_edge_dispatch_used": false,
+    "service_register_encoding": "one occupation on A0/A1/B0/B1; local W/S/E refusal registers",
+    "station_blocks_per_Q": 2,
+    "translation_invariant_lattice_recurrence": false
+  },
+  "controller_cache": {
+    "currsize": 39,
+    "hits": 233,
+    "maxsize": null,
+    "misses": 39
+  },
+  "covariance_and_held": {
+    "frame_control_adjacency_failures": 0,
+    "frame_path_failures": 0,
+    "frame_product_anchor_failures": 0,
+    "frame_product_closure_failures": 0,
+    "frame_type_failures": 0,
+    "held_actual_source_translation_failures": 0,
+    "held_embedding_shift": [
+      -16,
+      0,
+      0
+    ],
+    "held_scope": "translated selected local program only; surrounding full atlas not rebound",
+    "held_shape": [
+      5,
+      2,
+      2
+    ],
+    "ordered_frame_products": 576,
+    "proper_cubic_frames": 24,
+    "relative_program_sha256": "ada0e8015297d529fa998c0ca74fd3bc9e54234cb3743ebdb89a52b8ac6efba8",
+    "translation_failures": 0,
+    "translation_trials": 3
+  },
+  "cycle": 864,
+  "geometry": {
+    "Cycle823_shape": [
+      3,
+      2,
+      2
+    ],
+    "actual_sources": [
+      [
+        [
+          -20,
+          -8,
+          -8
+        ],
+        [
+          4,
+          -8,
+          -8
+        ],
+        [
+          -10,
+          -14,
+          -12
+        ]
+      ],
+      [
+        [
+          0,
+          -12,
+          -8
+        ],
+        [
+          0,
+          12,
+          -8
+        ],
+        [
+          -6,
+          -2,
+          -12
+        ]
+      ]
+    ],
+    "charged_coordinates_selected_surface": 185,
+    "conditional_data_exchange_occurrences_per_Q": 838,
+    "conditional_data_exchange_occurrences_two_application_orbit": 1676,
+    "control_taxi_SWAP_occurrences_per_Q": 210200,
+    "control_taxi_SWAP_occurrences_two_application_orbit": 420400,
+    "controlled_core_elementary_factors_two_application_orbit": 5028,
+    "every_control_terminal_adjacent_failures": 0,
+    "maximum_control_taxi_distance": 213,
+    "minimum_control_taxi_distance": 86,
+    "neutral_coordinates_selected_surface": 7589,
+    "neutral_pointer_adapter": [
+      [
+        -6,
+        -2,
+        -12
+      ],
+      [
+        -5,
+        -2,
+        -12
+      ],
+      [
+        -4,
+        -2,
+        -12
+      ],
+      [
+        -4,
+        -2,
+        -13
+      ],
+      [
+        -4,
+        -2,
+        -14
+      ]
+    ],
+    "neutral_pointer_adapter_distance": 4,
+    "owner_centers": [
+      [
+        -16,
+        -8,
+        -8
+      ],
+      [
+        0,
+        -8,
+        -8
+      ]
+    ],
+    "rail_layer_NN_failures": 0,
+    "rail_layer_disjointness_failures": 0,
+    "returned_factor_endpoint_only_census": [
+      110,
+      254
+    ],
+    "same_type_taxi_reuse_coordinates": 2485,
+    "selected_charged_neutral_overlap": 0,
+    "selected_edge_indices": [
+      0,
+      9
+    ],
+    "selected_edges": [
+      [
+        0,
+        4,
+        [
+          0,
+          0,
+          0
+        ],
+        0,
+        1,
+        24
+      ],
+      [
+        4,
+        6,
+        [
+          1,
+          0,
+          0
+        ],
+        1,
+        27,
+        38
+      ]
+    ],
+    "service_register_coordinates": {
+      "A0": [
+        -34,
+        -30,
+        -30
+      ],
+      "A1": [
+        -33,
+        -29,
+        -30
+      ],
+      "B0": [
+        -33,
+        -30,
+        -30
+      ],
+      "B1": [
+        -34,
+        -29,
+        -30
+      ],
+      "E0": [
+        -37,
+        -30,
+        -30
+      ],
+      "E1": [
+        -30,
+        -29,
+        -30
+      ],
+      "S0": [
+        -36,
+        -30,
+        -30
+      ],
+      "S1": [
+        -31,
+        -29,
+        -30
+      ],
+      "W0": [
+        -35,
+        -30,
+        -30
+      ],
+      "W1": [
+        -32,
+        -29,
+        -30
+      ]
+    },
+    "shared_Cycle719_targets": [
+      [
+        -8,
+        -20,
+        -10
+      ],
+      [
+        -12,
+        -18,
+        -8
+      ],
+      [
+        -10,
+        -19,
+        -9
+      ]
+    ],
+    "station_path_distances": [
+      [
+        28,
+        28,
+        8
+      ],
+      [
+        64,
+        64,
+        48
+      ]
+    ],
+    "station_returned_macro_lengths": [
+      [
+        55,
+        55,
+        15
+      ],
+      [
+        127,
+        127,
+        95
+      ]
+    ],
+    "unique_control_taxis": 240,
+    "x_to_y_frame": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "x_to_y_frame_determinant": 1
+  },
+  "guard": {
+    "dirty_B_or_work_refusal_failures": 0,
+    "guard_all_registers_neutral": true,
+    "guard_inverse_cleanup_failures": 0,
+    "guard_truth_failures": 0,
+    "guard_truth_rows": 16,
+    "rows": [
+      {
+        "charged_coordinate_hits": 0,
+        "expanded_factors": 34,
+        "maximum_route_distance": 3,
+        "non_NN_failures": 0,
+        "route_return_failures": 0,
+        "routed_NN_gates": 62,
+        "semantic_gates": 6,
+        "station": 0
+      },
+      {
+        "charged_coordinate_hits": 0,
+        "expanded_factors": 34,
+        "maximum_route_distance": 3,
+        "non_NN_failures": 0,
+        "route_return_failures": 0,
+        "routed_NN_gates": 62,
+        "semantic_gates": 6,
+        "station": 1
+      }
+    ]
+  },
+  "inventory": {
+    "derived": [
+      "one rooted two-station physical service-token register",
+      "exact guarded station refusal and returned neutral control taxis",
+      "exact selected-program two-edge service and inverse on 32 offset rows",
+      "passive selected-program 24-frame/576-product and held-shift covariance"
+    ],
+    "open": [
+      "fixed-opcode synthesis of H_dual",
+      "full Cycle823 plus Cycle827 collision-free atlas bind",
+      "one-H-step busy/departed latch and autonomous orbit termination",
+      "translation-local lattice recurrence, occurrence, capacity, and renewal"
+    ],
+    "supplied": [
+      "one new local H_dual matrix for controlled FSWAP",
+      "root, station labels, coframe, docking chart, and Q/R block order",
+      "two external service-step applications and complete hosted H^130 boundaries",
+      "clean token/controller/route genesis and successful admission"
+    ]
+  },
+  "lawful_service": {
+    "Cycle719_internal_register_return_failures": 0,
+    "controller_target_cleanup_failures": 0,
+    "decoded_history_order_differences": 2,
+    "endpoint_return_failures": 0,
+    "forward_inverse_failures": 0,
+    "history_failures": 0,
+    "lawful_A0_endpoint_rows": 16,
+    "lawful_A1_offset_rows": 16,
+    "order_sensitive_endpoint_cases": 2,
+    "sample_rows": [
+      {
+        "endpoint_bits": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "expected_history": [],
+        "inverse_residual": 0.0,
+        "observed_history": []
+      },
+      {
+        "endpoint_bits": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "expected_history": [
+          1
+        ],
+        "inverse_residual": 0.0,
+        "observed_history": [
+          1
+        ]
+      },
+      {
+        "endpoint_bits": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "expected_history": [
+          -1
+        ],
+        "inverse_residual": 0.0,
+        "observed_history": [
+          -1
+        ]
+      },
+      {
+        "endpoint_bits": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "expected_history": [],
+        "inverse_residual": 0.0,
+        "observed_history": []
+      },
+      {
+        "endpoint_bits": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "expected_history": [
+          1
+        ],
+        "inverse_residual": 0.0,
+        "observed_history": [
+          1
+        ]
+      },
+      {
+        "endpoint_bits": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "expected_history": [
+          1,
+          1
+        ],
+        "inverse_residual": 0.0,
+        "observed_history": [
+          1,
+          1
+        ]
+      },
+      {
+        "endpoint_bits": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "expected_history": [
+          1,
+          -1
+        ],
+        "inverse_residual": 0.0,
+        "observed_history": [
+          1,
+          -1
+        ]
+      },
+      {
+        "endpoint_bits": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "expected_history": [
+          1
+        ],
+        "inverse_residual": 0.0,
+        "observed_history": [
+          1
+        ]
+      },
+      {
+        "endpoint_bits": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "expected_history": [
+          -1
+        ],
+        "inverse_residual": 0.0,
+        "observed_history": [
+          -1
+        ]
+      },
+      {
+        "endpoint_bits": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "expected_history": [
+          -1,
+          1
+        ],
+        "inverse_residual": 0.0,
+        "observed_history": [
+          -1,
+          1
+        ]
+      },
+      {
+        "endpoint_bits": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "expected_history": [
+          -1,
+          -1
+        ],
+        "inverse_residual": 0.0,
+        "observed_history": [
+          -1,
+          -1
+        ]
+      },
+      {
+        "endpoint_bits": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "expected_history": [
+          -1
+        ],
+        "inverse_residual": 0.0,
+        "observed_history": [
+          -1
+        ]
+      },
+      {
+        "endpoint_bits": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "expected_history": [],
+        "inverse_residual": 0.0,
+        "observed_history": []
+      },
+      {
+        "endpoint_bits": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "expected_history": [
+          1
+        ],
+        "inverse_residual": 0.0,
+        "observed_history": [
+          1
+        ]
+      },
+      {
+        "endpoint_bits": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "expected_history": [
+          -1
+        ],
+        "inverse_residual": 0.0,
+        "observed_history": [
+          -1
+        ]
+      },
+      {
+        "endpoint_bits": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "expected_history": [],
+        "inverse_residual": 0.0,
+        "observed_history": []
+      }
+    ],
+    "service_register_return_failures": 0,
+    "source_pointer_cleanup_failures": 0,
+    "unexpected_phase_failures": 0,
+    "whole_state_A0_vs_A1_differences": 16
+  },
+  "matrix": {
+    "CZ_CP_Z_landed_primitive_residual": 0.0,
+    "H_dual_best_single_landed_opcode_residual": 1.0823922002923938,
+    "H_dual_fixed_dictionary_match": false,
+    "H_dual_matrix_arity": 2,
+    "H_dual_requires_supplied_new_local_gate": true,
+    "all_8_cFSWAP_row_residuals": [
+      0.0,
+      0.0,
+      2.231687133607212e-16,
+      2.231687133607212e-16,
+      2.231687133607212e-16,
+      2.231687133607212e-16,
+      0.0,
+      0.0
+    ],
+    "cSWAP_clean_domain_residual": 4.463374267214424e-16,
+    "cSWAP_dirty_11_residual": 2.0,
+    "core_inverse_residual": 8.926748534428849e-16,
+    "elementary_P_ext_commutators": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "maximum_cFSWAP_row_residual": 2.231687133607212e-16
+  },
+  "provenance_and_gaps": {
+    "H_dual_fixed_dictionary_match": false,
+    "autonomous_lattice_recurrence_claimed": false,
+    "full_global_atlas_collision_free_claimed": false,
+    "imports": [
+      "Cycle719 exact 61,562-gate H word, 130-station A/B controller ring, genesis and decoder",
+      "Cycle720 CompanionFixture geometry",
+      "Cycle789 actual centered site placement",
+      "Cycle822 FSWAP/SWAP/CP_Z matrices and 24 proper cubic frames",
+      "Cycle823 axis-dependent endpoint and neutral pointer templates",
+      "Cycle826 independently stated endpoint-to-history orientation rule",
+      "Cycle827 charged-control normalization",
+      "Cycle863 exact x-chart waypoint template (copied byte-for-byte as PORT_WAYPOINTS)"
+    ],
+    "independent_or_external_cross_checks": [
+      "all eight synthesized controlled-gate columns compared with the imported literal Cycle822 FSWAP matrix",
+      "decoded histories compared with Cycle826.expected_orientation",
+      "normalized Cycle827 word compared with the original Cycle719 H word on four full 130-application endpoint rows",
+      "actual Cycle823 sources regenerated from CompanionFixture and centered placement for train and held shapes",
+      "single-factor deletions and unlawful zero/two/offset/dirty sectors compared against undamaged outputs"
+    ],
+    "minimum_or_no_go_claimed": false,
+    "route_specific_gaps": [
+      "H_dual is an exact parity-preserving two-M2 matrix but is not a matched landed Cycle822 opcode; the cFSWAP service law therefore requires a supplied new local gate",
+      "the full Cycle823 seam atlas and full Cycle827 controller atlas were not jointly rebuilt; no global collision-free bind is inferred from receipts",
+      "the externally supplied two-application ordinal is not retired by the physical service token",
+      "each station block hosts a complete externally delimited Cycle719 H^130 orbit; no busy/departed one-H-step latch is landed",
+      "the finite ring has a supplied root, station labels, coframe, docking chart, and block order",
+      "held-size testing is a translated selected-program embedding, not a surrounding-atlas recompile"
+    ],
+    "self_confirming_tests": [
+      "forward followed by the programmatically reversed service word",
+      "matrix unitarity/inverse using the same H_dual definition",
+      "passive frame path checks generated by transforming the same coordinate list"
+    ]
+  },
+  "scope_boundaries": {
+    "autonomous_recurrence": false,
+    "full_global_atlas_bound": false,
+    "host_two_application_boundary_retired": false,
+    "landed_fixed_law_closed": false
+  },
+  "sectors_and_damage": {
+    "deleted_Cycle719_finalizer_station_residual": 1.4142135623730951,
+    "deleted_H_dual_CZ_H_dual_middle_factor_residual": 2.82842712474619,
+    "deleted_guard_OR_Toffoli_residual": 1.4142135623730951,
+    "deleted_station1_pointer_adapter_factor_residual": 1.4142135623730951,
+    "deleted_taxi_return_factor_residual": 1.4142135623730951,
+    "dirty_service_rows": {
+      "B0": {
+        "dirty_bit_returned": true,
+        "history": [],
+        "whole_state_differs_from_lawful": true
+      },
+      "E0": {
+        "dirty_bit_returned": true,
+        "history": [
+          -1,
+          1
+        ],
+        "whole_state_differs_from_lawful": true
+      },
+      "S0": {
+        "dirty_bit_returned": true,
+        "history": [
+          1
+        ],
+        "whole_state_differs_from_lawful": true
+      },
+      "W0": {
+        "dirty_bit_returned": true,
+        "history": [
+          1
+        ],
+        "whole_state_differs_from_lawful": true
+      }
+    },
+    "dirty_taxi_corridor_key": "(0, 0, ((-20, -8, -8), (-19, -8, -8)))",
+    "dirty_taxi_corridor_site": [
+      -19,
+      -16,
+      -52
+    ],
+    "dirty_taxi_corridor_transparency_residual": 0.0,
+    "matrix_reference": {
+      "CZ_CP_Z_landed_primitive_residual": 0.0,
+      "H_dual_best_single_landed_opcode_residual": 1.0823922002923938,
+      "H_dual_fixed_dictionary_match": false,
+      "H_dual_matrix_arity": 2,
+      "H_dual_requires_supplied_new_local_gate": true,
+      "all_8_cFSWAP_row_residuals": [
+        0.0,
+        0.0,
+        2.231687133607212e-16,
+        2.231687133607212e-16,
+        2.231687133607212e-16,
+        2.231687133607212e-16,
+        0.0,
+        0.0
+      ],
+      "cSWAP_clean_domain_residual": 4.463374267214424e-16,
+      "cSWAP_dirty_11_residual": 2.0,
+      "core_inverse_residual": 8.926748534428849e-16,
+      "elementary_P_ext_commutators": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "maximum_cFSWAP_row_residual": 2.231687133607212e-16
+    },
+    "two_token_count_returned": 2,
+    "two_token_history": [
+      -1,
+      1
+    ],
+    "two_token_whole_state_differs_from_lawful": true,
+    "unlawful_controller_target_patterns": 7,
+    "unlawful_controller_target_patterns_detected": 7,
+    "unlawful_controller_target_residuals": [
+      1.4142135623730951,
+      1.4142135623730951,
+      1.4142135623730951,
+      1.4142135623730951,
+      1.4142135623730951,
+      1.4142135623730951,
+      1.4142135623730951
+    ],
+    "zero_token_history": [],
+    "zero_token_service_register": {
+      "A0": 0,
+      "A1": 0,
+      "B0": 0,
+      "B1": 0,
+      "E0": 0,
+      "E1": 0,
+      "S0": 0,
+      "S1": 0,
+      "W0": 0,
+      "W1": 0
+    },
+    "zero_token_source_pointers_retained": [
+      1,
+      1
+    ]
+  },
+  "site_bit_width": 13976,
+  "status": "conditional-rooted-two-station-service-with-supplied-new-H_dual"
+}
+CHECK cFSWAP_exact: PASS
+CHECK clean_cSWAP_exact: PASS
+CHECK P_ext_factorwise: PASS
+CHECK local_selected_types_and_rails: PASS
+CHECK controls_adjacent: PASS
+CHECK guard_exact_and_returned: PASS
+CHECK covariant_24_576: PASS
+CHECK lawful_service_exact: PASS
+CHECK unlawful_and_dirty_controls_active: PASS
+CHECK deletions_visible: PASS
+CHECK controller_normalization_matches_original: PASS
+CHECK new_gate_supply_is_exposed: PASS
+CYCLE864_TWO_STATION_SERVICE_CONDITIONAL_PASS

@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle864_independent_landed_cfswap_142_factor_checker_2026_08_01",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle864_independent_landed_cfswap_142_factor_checker_2026_08_01.py",
+ "seed": 29686,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1d93bbd5",
+ "started_utc": "20260923T021446Z",
+ "elapsed_s": 4.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2ecbeb2e91afdb8fc0208a3481cf133519ab85051f793df3769f2c03e2a0bc9a",
+ "stdout_tail": "       0,\n          1,\n          0\n        ],\n        \"phase\": 1\n      },\n      {\n        \"column\": 3,\n        \"input_cab\": [\n          1,\n          1,\n          0\n        ],\n        \"output_cab\": [\n          1,\n          0,\n          1\n        ],\n        \"phase\": 1\n      },\n      {\n        \"column\": 4,\n        \"input_cab\": [\n          0,\n          0,\n          1\n        ],\n        \"output_cab\": [\n          0,\n          0,\n          1\n        ],\n        \"phase\": 1\n      },\n      {\n        \"column\": 5,\n        \"input_cab\": [\n          1,\n          0,\n          1\n        ],\n        \"output_cab\": [\n          1,\n          1,\n          0\n        ],\n        \"phase\": 1\n      },\n      {\n        \"column\": 6,\n        \"input_cab\": [\n          0,\n          1,\n          1\n        ],\n        \"output_cab\": [\n          0,\n          1,\n          1\n        ],\n        \"phase\": 1\n      },\n      {\n        \"column\": 7,\n        \"input_cab\": [\n          1,\n          1,\n          1\n        ],\n        \"output_cab\": [\n          1,\n          1,\n          1\n        ],\n        \"phase\": -1\n      }\n    ],\n    \"controlled_fswap_matrix_sha256\": \"bb740365ae861806f2565112baf82a1d94657de9750a6a6820d09c5fbc722a92\",\n    \"inverse_residual\": 3.126460347350969e-15,\n    \"literal_fswap_matrix_sha256\": \"e06a37d25124c2fbc865b08f8dc78658f4e3415bad244aae79ebef5685330656\",\n    \"literal_fswap_vs_controlled_swap_residual\": 2.0,\n    \"square_residual\": 3.0991074599820925e-15,\n    \"target_residual\": 1.7248693750302194e-15\n  }\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T021451Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

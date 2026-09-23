@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle869_bounded_two_star_bksf_cycle789_chart_bridge_2026_08_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle869_bounded_two_star_bksf_cycle789_chart_bridge_2026_08_02.py",
+ "seed": 30843,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1d93bbd5",
+ "started_utc": "20260923T023403Z",
+ "elapsed_s": 21.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e167a82af6482ecc80ed1acd963bd7c87c43663755e8a3feecf4fcc7f13481a8",
+ "stdout_tail": "on_relation_rows\": 957, \"decoded_difference_Z_weight_maximum\": 30, \"direct_basis_rows\": 389, \"first_Gram_failures\": [[330, 331], [330, 332], [331, 332], [333, 334], [335, 336], [334, 337], [335, 337], [336, 337], [338, 339], [339, 341], [340, 341], [335, 344]], \"global_JW_edge_weight_maximum\": 36, \"global_JW_edge_weight_minimum\": 6, \"literal_code_and_rail_M2\": 717, \"literal_constant_bound_27N\": 810, \"literal_formula_18N_plus_3M\": 717, \"literal_placement_collisions\": 0, \"seams\": 59, \"shape\": [5, 3, 2]}], \"proper_cubic_covariance\": {\"E_factor_phase_only_frame_failures\": 0, \"E_factor_product_diagram_failures\": 0, \"E_factor_signed_frame_failures\": 0, \"ordered_frame_products\": 576, \"proper_cubic_frames\": 24, \"signed_character_frame_diagram_failures\": 0, \"signed_character_product_diagram_failures\": 0, \"state_scope\": \"canonical 20-site state lift executed separately; 24/576 are exact signed operator diagrams, not dense state executions\"}, \"report_sha256\": \"15c65f747ca6440e90faf03d1f3ee1c857b9e7130d851aa613d516250541e51e\", \"status\": \"PASS\", \"supplied\": [\"Cycle703 OpenReference/local-Gauss BKSF charts and local incidence order\", \"Cycle707 spacing-16 PatchGraph repetition placement and returned router\", \"Cycle709 four signed seam transvections, coframe transport, and cleanup predicate\", \"Cycle789 direct even-CAR tags, global-JW targets, encoded sectors, and finite charts\", \"Cycle720 half-edge companion and cell-edge gauge diagnostics\"]}\nCYCLE869_BOUNDED_TWO_STAR_BKSF_CHART_BRIDGE_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T023425Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle868_sign_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle868_sign_independent_check_2026_07_28.py",
+ "seed": 30784,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1d93bbd5",
+ "started_utc": "20260923T023304Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e7e5d93919db663ff99d27b2fd0690578cdf3ce86c9c8d36c3f0c1efc6ebfe92",
+ "stdout_tail": "te\",\"grading_operator\",\"stipulated_ledger\",\"response_objects\",\"verdict_certificate\"],\"primary_required_AST_markers_present\":true,\"read_cap\":2,\"runtime_limit_seconds\":1400,\"runtime_seconds\":0.936295,\"runtime_under_limit\":true,\"source_rows\":[{\"AST_valid\":true,\"access\":\"TEXT_AST_ONLY_BLOCKLISTED_PRIMARY\",\"exists_worktree_relative\":true,\"git_blob\":\"c155a2dafaccde60c17047303c6de358445711c3\",\"git_blob_exact\":true,\"path\":\"scripts/frontier_cycle868_response_sign_census_2026_07_28.py\",\"sha256\":\"dca6b71b9dec65adbacff348e75085bf2c24fe96f621b949a4c8fb96f74cf89a\",\"sha256_exact\":true},{\"AST_valid\":false,\"access\":\"TEXT_ONLY_PINNED_STDOUT\",\"exists_worktree_relative\":true,\"git_blob\":\"38a0ecf77aaef1b37d1c9fcca49bbd74edd40796\",\"git_blob_exact\":true,\"path\":\"logs/runner-cache/frontier_cycle868_response_sign_census_2026_07_28.txt\",\"sha256\":\"efb45439065ca7c92db20e29a1f261cfeaec71f96ae21d5774e617dfdc295c55\",\"sha256_exact\":true}],\"sources_pass\":true,\"stdout_bytes\":11112,\"stdout_limit_bytes\":150000,\"stdout_under_limit\":true}\nFINAL {\"bookkeeping_complete\":true,\"checker_verdict\":\"EXACT_SUPPORT_SIGN_INVISIBLE_ON_STIPULATED_SURFACE\",\"checks\":{\"CK_A_SOURCES\":true,\"CK_B_PRIMARY_CLAIMS\":true,\"CK_C_REFUTATION_HUNT\":true,\"CK_D_COMPARISON\":true,\"CK_E_ADVERSARY\":true,\"CK_F_CONTROLS\":true},\"claim_disagreements\":[],\"functionals_per_member\":3654,\"runtime_seconds\":0.936295,\"sensitive_members_found\":0,\"sigma_comparisons\":4998672,\"stdout_bytes\":11112,\"terminal\":\"CYCLE868_INDEPENDENT_CHECK_CORROBORATES_BY_EXHAUSTION\"}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T023305Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

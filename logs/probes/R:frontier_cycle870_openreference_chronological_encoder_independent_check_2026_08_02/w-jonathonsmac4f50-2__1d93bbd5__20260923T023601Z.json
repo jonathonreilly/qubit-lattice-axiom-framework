@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle870_openreference_chronological_encoder_independent_check_2026_08_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle870_openreference_chronological_encoder_independent_check_2026_08_02.py",
+ "seed": 30961,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1d93bbd5",
+ "started_utc": "20260923T023601Z",
+ "elapsed_s": 87.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7dccd62b58eae151cae5b9889853475c2b091c44944884568dd5b909390dec09",
+ "stdout_tail": "            \"up\"\n          ]\n        ],\n        [\n          203,\n          \"parent_Toffoli_down\",\n          [\n            \"controller_parent_xor\",\n            \"az\",\n            \"down\"\n          ]\n        ],\n        [\n          219,\n          \"parent_Toffoli_up\",\n          [\n            \"controller_parent_xor\",\n            \"az\",\n            \"up\"\n          ]\n        ],\n        [\n          221,\n          \"parent_Toffoli_down\",\n          [\n            \"controller_parent_xor\",\n            \"az\",\n            \"down\"\n          ]\n        ],\n        [\n          273,\n          \"parent_Toffoli_up\",\n          [\n            \"controller_parent_xor\",\n            \"az\",\n            \"up\"\n          ]\n        ]\n      ]\n    },\n    \"route_deletion_scope\": \"active root/join route checks delete only the first forward SWAP, not every forward/central/reverse gate position\",\n    \"triangle_controlled_Z_deletion_missing\": \"active target counts triangle decoder table entries but has no explicit triangle controlled-Z gate deletion control\",\n    \"unlawful_guard_boundary\": \"unlawful syndrome and spent reapplication are detected adversarially, but no physical admission guard is compiled\"\n  },\n  \"unlawful_domain_controls\": {\n    \"invalid_scalars_rejected\": 5,\n    \"invalid_scalars_tested\": 5,\n    \"noncubes_rejected\": 3,\n    \"noncubes_tested\": 3\n  },\n  \"validation_failures\": [],\n  \"verification_status\": \"pass_with_deletion_and_domain_qualifications\"\n}\nINDEPENDENT_CHRONOLOGICAL_E_EXACTNESS_PASS_WITH_QUALIFICATIONS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T023729Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

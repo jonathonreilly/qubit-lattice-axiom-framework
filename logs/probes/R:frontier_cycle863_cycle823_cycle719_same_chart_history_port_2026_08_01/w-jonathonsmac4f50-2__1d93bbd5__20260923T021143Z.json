@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle863_cycle823_cycle719_same_chart_history_port_2026_08_01",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle863_cycle823_cycle719_same_chart_history_port_2026_08_01.py",
+ "seed": 29503,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1d93bbd5",
+ "started_utc": "20260923T021143Z",
+ "elapsed_s": 163.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a1ad91b2248541ae73bd594304ad1505a5afd812324ae693c04c006474426461",
+ "stdout_tail": "9e8af5\",\n    \"scripts/frontier_cycle827_cycle719_parity_safe_typed_controller_atlas_2026_07_30.py\": \"ee105138368935e9f4d54aa9efeaa01c2b8b8d103058ffd3ce184712f62010e7\",\n    \"scripts/frontier_cycle863_cycle823_cycle719_same_chart_history_port_2026_08_01.py\": \"26fe3c29f64bec9a0e49c79cd28e244d9a94d28d627396a345c777953c1de38c\"\n  },\n  \"stage_manifest\": [\n    \"Cycle823 prefix/prewrite/seam/postwrite-clean\",\n    \"two charged endpoint transfer macros\",\n    \"one neutral pointer transfer macro\",\n    \"normalized Cycle719 H repeated 130 circuit ordinals\",\n    \"two charged endpoint return macros\",\n    \"Cycle823 contact\"\n  ],\n  \"status\": \"cycle863-cycle823-cycle719-same-chart-history-port-bounded-positive\"\n}\nCHECK declared_inputs_are_unique_existing_repo_relative_files: PASS\nCHECK one_edge_joint_atlas_and_three_ports_are_collision_free: PASS\nCHECK fixed_serial_schedule_separates_same_type_workspace_reuse: PASS\nCHECK actual_state_transfer_controller_and_inverse_intertwine: PASS\nCHECK port_route_algebra_and_deletions_are_active: PASS\nCHECK admission_token_and_finalizer_controls_are_active: PASS\nCHECK one_combined_parity_operator_closes_every_elementary_prefix: PASS\nCHECK proper_cubic_transport_and_port_product_checks_are_exact: PASS\nCHECK dense_and_structural_execution_surfaces_are_separated: PASS\nCHECK mass_seam_and_contact_fixture_is_unchanged_before_contact: PASS\nCHECK paired_receipt_is_current_and_all_values_are_pinned: PASS\nCYCLE863_CYCLE823_CYCLE719_SAME_CHART_HISTORY_PORT_BOUNDED_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T021427Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

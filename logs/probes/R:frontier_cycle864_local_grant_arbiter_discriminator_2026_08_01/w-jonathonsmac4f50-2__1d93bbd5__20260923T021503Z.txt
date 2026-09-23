@@ -1,0 +1,1857 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "controller_semantics": {
+    "dense_coherent_controller_inverse_executed": false,
+    "endpoint_restoration_failures": 0,
+    "failures": 0,
+    "formal_linearity_restore_corollary": 0.0,
+    "history_order_failures": 0,
+    "inverse_failures": 0,
+    "lawful_two_ingress_cases": 32,
+    "minus_then_plus_history": [
+      -1,
+      1
+    ],
+    "minus_then_plus_pre_return_sha256": "eaaea91aabc216109841e8b18481692fe401d5b464413bda6e4a196a97d9a0bb",
+    "minus_then_plus_sha256": "0252e5b653822cbd4c48811ede917084cc4b3cae76bfc7d517a91d819059c3e1",
+    "order_sensitive_output_Hamming_distance": 2,
+    "order_sensitive_pre_endpoint_return_Hamming_distance": 4,
+    "plus_then_minus_history": [
+      1,
+      -1
+    ],
+    "plus_then_minus_pre_return_sha256": "36e73d0154256a606fd0fb7a632d7356e54d313d5e9ef4c086b3d633a0ec38f5",
+    "plus_then_minus_sha256": "b6bdc88ae7d73e599945aaffe5b6edebd4f3301127ab61bdc66fe7e89bec563d",
+    "pointer_cleanup_failures": 0,
+    "shared_edge_duplication_Hamming_distance": 21,
+    "shared_edge_once_history": [
+      1
+    ],
+    "shared_edge_twice_history": [
+      1,
+      1
+    ],
+    "simultaneous_pointer_cases": 8,
+    "token_return_failures": 0
+  },
+  "cycle": 864,
+  "geometry": {
+    "adapter_auxiliary_obstacle_collisions": 0,
+    "adapter_endpoint_obstacle_collisions": 0,
+    "adapter_path_pair_intersections": 0,
+    "best_positive_axis_frames": {
+      "0": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "1": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "2": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    "cells": [
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        -1
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ]
+    ],
+    "edges": [
+      {
+        "axis": 0,
+        "coarse_edge": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "du_dv_pointer": [
+          [
+            6,
+            -6,
+            -6
+          ],
+          [
+            6,
+            -6,
+            -5
+          ],
+          [
+            6,
+            -6,
+            -4
+          ]
+        ],
+        "index": 0,
+        "left_endpoint": [
+          -4,
+          0,
+          0
+        ],
+        "left_mode": 1,
+        "owner": [
+          0,
+          0,
+          0
+        ],
+        "pointer_adapter_distance": 0,
+        "pointer_adapter_path": [
+          [
+            6,
+            -6,
+            -4
+          ]
+        ],
+        "pointer_adapter_returned_SWAPS": 0,
+        "right_endpoint": [
+          20,
+          0,
+          0
+        ],
+        "right_mode": 0,
+        "star_views": [
+          [
+            0,
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          [
+            1,
+            [
+              -1,
+              0,
+              0
+            ]
+          ]
+        ],
+        "target": [
+          1,
+          0,
+          0
+        ],
+        "transported_x_pointer": [
+          6,
+          -6,
+          -4
+        ]
+      },
+      {
+        "axis": 0,
+        "coarse_edge": [
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "du_dv_pointer": [
+          [
+            -10,
+            -6,
+            -6
+          ],
+          [
+            -10,
+            -6,
+            -5
+          ],
+          [
+            -10,
+            -6,
+            -4
+          ]
+        ],
+        "index": 1,
+        "left_endpoint": [
+          -20,
+          0,
+          0
+        ],
+        "left_mode": 1,
+        "owner": [
+          -1,
+          0,
+          0
+        ],
+        "pointer_adapter_distance": 0,
+        "pointer_adapter_path": [
+          [
+            -10,
+            -6,
+            -4
+          ]
+        ],
+        "pointer_adapter_returned_SWAPS": 0,
+        "right_endpoint": [
+          4,
+          0,
+          0
+        ],
+        "right_mode": 0,
+        "star_views": [
+          [
+            0,
+            [
+              -1,
+              0,
+              0
+            ]
+          ]
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "transported_x_pointer": [
+          -10,
+          -6,
+          -4
+        ]
+      },
+      {
+        "axis": 1,
+        "coarse_edge": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "du_dv_pointer": [
+          [
+            -6,
+            6,
+            -6
+          ],
+          [
+            -6,
+            6,
+            -5
+          ],
+          [
+            -6,
+            6,
+            -4
+          ]
+        ],
+        "index": 2,
+        "left_endpoint": [
+          0,
+          -4,
+          0
+        ],
+        "left_mode": 3,
+        "owner": [
+          0,
+          0,
+          0
+        ],
+        "pointer_adapter_distance": 4,
+        "pointer_adapter_path": [
+          [
+            -6,
+            6,
+            -4
+          ],
+          [
+            -5,
+            6,
+            -4
+          ],
+          [
+            -4,
+            6,
+            -4
+          ],
+          [
+            -4,
+            6,
+            -5
+          ],
+          [
+            -4,
+            6,
+            -6
+          ]
+        ],
+        "pointer_adapter_returned_SWAPS": 7,
+        "right_endpoint": [
+          0,
+          20,
+          0
+        ],
+        "right_mode": 2,
+        "star_views": [
+          [
+            0,
+            [
+              0,
+              1,
+              0
+            ]
+          ]
+        ],
+        "target": [
+          0,
+          1,
+          0
+        ],
+        "transported_x_pointer": [
+          -4,
+          6,
+          -6
+        ]
+      },
+      {
+        "axis": 1,
+        "coarse_edge": [
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "du_dv_pointer": [
+          [
+            -6,
+            -10,
+            -6
+          ],
+          [
+            -6,
+            -10,
+            -5
+          ],
+          [
+            -6,
+            -10,
+            -4
+          ]
+        ],
+        "index": 3,
+        "left_endpoint": [
+          0,
+          -20,
+          0
+        ],
+        "left_mode": 3,
+        "owner": [
+          0,
+          -1,
+          0
+        ],
+        "pointer_adapter_distance": 4,
+        "pointer_adapter_path": [
+          [
+            -6,
+            -10,
+            -4
+          ],
+          [
+            -5,
+            -10,
+            -4
+          ],
+          [
+            -4,
+            -10,
+            -4
+          ],
+          [
+            -4,
+            -10,
+            -5
+          ],
+          [
+            -4,
+            -10,
+            -6
+          ]
+        ],
+        "pointer_adapter_returned_SWAPS": 7,
+        "right_endpoint": [
+          0,
+          4,
+          0
+        ],
+        "right_mode": 2,
+        "star_views": [
+          [
+            0,
+            [
+              0,
+              -1,
+              0
+            ]
+          ]
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "transported_x_pointer": [
+          -4,
+          -10,
+          -6
+        ]
+      },
+      {
+        "axis": 2,
+        "coarse_edge": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "du_dv_pointer": [
+          [
+            -6,
+            -6,
+            6
+          ],
+          [
+            -5,
+            -6,
+            6
+          ],
+          [
+            -4,
+            -6,
+            6
+          ]
+        ],
+        "index": 4,
+        "left_endpoint": [
+          0,
+          0,
+          -4
+        ],
+        "left_mode": 5,
+        "owner": [
+          0,
+          0,
+          0
+        ],
+        "pointer_adapter_distance": 4,
+        "pointer_adapter_path": [
+          [
+            -4,
+            -6,
+            6
+          ],
+          [
+            -4,
+            -5,
+            6
+          ],
+          [
+            -4,
+            -4,
+            6
+          ],
+          [
+            -5,
+            -4,
+            6
+          ],
+          [
+            -6,
+            -4,
+            6
+          ]
+        ],
+        "pointer_adapter_returned_SWAPS": 7,
+        "right_endpoint": [
+          0,
+          0,
+          20
+        ],
+        "right_mode": 4,
+        "star_views": [
+          [
+            0,
+            [
+              0,
+              0,
+              1
+            ]
+          ]
+        ],
+        "target": [
+          0,
+          0,
+          1
+        ],
+        "transported_x_pointer": [
+          -6,
+          -4,
+          6
+        ]
+      },
+      {
+        "axis": 2,
+        "coarse_edge": [
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "du_dv_pointer": [
+          [
+            -6,
+            -6,
+            -10
+          ],
+          [
+            -5,
+            -6,
+            -10
+          ],
+          [
+            -4,
+            -6,
+            -10
+          ]
+        ],
+        "index": 5,
+        "left_endpoint": [
+          0,
+          0,
+          -20
+        ],
+        "left_mode": 5,
+        "owner": [
+          0,
+          0,
+          -1
+        ],
+        "pointer_adapter_distance": 4,
+        "pointer_adapter_path": [
+          [
+            -4,
+            -6,
+            -10
+          ],
+          [
+            -4,
+            -5,
+            -10
+          ],
+          [
+            -4,
+            -4,
+            -10
+          ],
+          [
+            -5,
+            -4,
+            -10
+          ],
+          [
+            -6,
+            -4,
+            -10
+          ]
+        ],
+        "pointer_adapter_returned_SWAPS": 7,
+        "right_endpoint": [
+          0,
+          0,
+          4
+        ],
+        "right_mode": 4,
+        "star_views": [
+          [
+            0,
+            [
+              0,
+              0,
+              -1
+            ]
+          ]
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "transported_x_pointer": [
+          -6,
+          -4,
+          -10
+        ]
+      },
+      {
+        "axis": 0,
+        "coarse_edge": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0
+          ]
+        ],
+        "du_dv_pointer": [
+          [
+            22,
+            -6,
+            -6
+          ],
+          [
+            22,
+            -6,
+            -5
+          ],
+          [
+            22,
+            -6,
+            -4
+          ]
+        ],
+        "index": 6,
+        "left_endpoint": [
+          12,
+          0,
+          0
+        ],
+        "left_mode": 1,
+        "owner": [
+          1,
+          0,
+          0
+        ],
+        "pointer_adapter_distance": 0,
+        "pointer_adapter_path": [
+          [
+            22,
+            -6,
+            -4
+          ]
+        ],
+        "pointer_adapter_returned_SWAPS": 0,
+        "right_endpoint": [
+          36,
+          0,
+          0
+        ],
+        "right_mode": 0,
+        "star_views": [
+          [
+            1,
+            [
+              1,
+              0,
+              0
+            ]
+          ]
+        ],
+        "target": [
+          2,
+          0,
+          0
+        ],
+        "transported_x_pointer": [
+          22,
+          -6,
+          -4
+        ]
+      },
+      {
+        "axis": 1,
+        "coarse_edge": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        "du_dv_pointer": [
+          [
+            10,
+            6,
+            -6
+          ],
+          [
+            10,
+            6,
+            -5
+          ],
+          [
+            10,
+            6,
+            -4
+          ]
+        ],
+        "index": 7,
+        "left_endpoint": [
+          16,
+          -4,
+          0
+        ],
+        "left_mode": 3,
+        "owner": [
+          1,
+          0,
+          0
+        ],
+        "pointer_adapter_distance": 4,
+        "pointer_adapter_path": [
+          [
+            10,
+            6,
+            -4
+          ],
+          [
+            11,
+            6,
+            -4
+          ],
+          [
+            12,
+            6,
+            -4
+          ],
+          [
+            12,
+            6,
+            -5
+          ],
+          [
+            12,
+            6,
+            -6
+          ]
+        ],
+        "pointer_adapter_returned_SWAPS": 7,
+        "right_endpoint": [
+          16,
+          20,
+          0
+        ],
+        "right_mode": 2,
+        "star_views": [
+          [
+            1,
+            [
+              0,
+              1,
+              0
+            ]
+          ]
+        ],
+        "target": [
+          1,
+          1,
+          0
+        ],
+        "transported_x_pointer": [
+          12,
+          6,
+          -6
+        ]
+      },
+      {
+        "axis": 1,
+        "coarse_edge": [
+          [
+            1,
+            -1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "du_dv_pointer": [
+          [
+            10,
+            -10,
+            -6
+          ],
+          [
+            10,
+            -10,
+            -5
+          ],
+          [
+            10,
+            -10,
+            -4
+          ]
+        ],
+        "index": 8,
+        "left_endpoint": [
+          16,
+          -20,
+          0
+        ],
+        "left_mode": 3,
+        "owner": [
+          1,
+          -1,
+          0
+        ],
+        "pointer_adapter_distance": 4,
+        "pointer_adapter_path": [
+          [
+            10,
+            -10,
+            -4
+          ],
+          [
+            11,
+            -10,
+            -4
+          ],
+          [
+            12,
+            -10,
+            -4
+          ],
+          [
+            12,
+            -10,
+            -5
+          ],
+          [
+            12,
+            -10,
+            -6
+          ]
+        ],
+        "pointer_adapter_returned_SWAPS": 7,
+        "right_endpoint": [
+          16,
+          4,
+          0
+        ],
+        "right_mode": 2,
+        "star_views": [
+          [
+            1,
+            [
+              0,
+              -1,
+              0
+            ]
+          ]
+        ],
+        "target": [
+          1,
+          0,
+          0
+        ],
+        "transported_x_pointer": [
+          12,
+          -10,
+          -6
+        ]
+      },
+      {
+        "axis": 2,
+        "coarse_edge": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "du_dv_pointer": [
+          [
+            10,
+            -6,
+            6
+          ],
+          [
+            11,
+            -6,
+            6
+          ],
+          [
+            12,
+            -6,
+            6
+          ]
+        ],
+        "index": 9,
+        "left_endpoint": [
+          16,
+          0,
+          -4
+        ],
+        "left_mode": 5,
+        "owner": [
+          1,
+          0,
+          0
+        ],
+        "pointer_adapter_distance": 4,
+        "pointer_adapter_path": [
+          [
+            12,
+            -6,
+            6
+          ],
+          [
+            12,
+            -5,
+            6
+          ],
+          [
+            12,
+            -4,
+            6
+          ],
+          [
+            11,
+            -4,
+            6
+          ],
+          [
+            10,
+            -4,
+            6
+          ]
+        ],
+        "pointer_adapter_returned_SWAPS": 7,
+        "right_endpoint": [
+          16,
+          0,
+          20
+        ],
+        "right_mode": 4,
+        "star_views": [
+          [
+            1,
+            [
+              0,
+              0,
+              1
+            ]
+          ]
+        ],
+        "target": [
+          1,
+          0,
+          1
+        ],
+        "transported_x_pointer": [
+          10,
+          -4,
+          6
+        ]
+      },
+      {
+        "axis": 2,
+        "coarse_edge": [
+          [
+            1,
+            0,
+            -1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "du_dv_pointer": [
+          [
+            10,
+            -6,
+            -10
+          ],
+          [
+            11,
+            -6,
+            -10
+          ],
+          [
+            12,
+            -6,
+            -10
+          ]
+        ],
+        "index": 10,
+        "left_endpoint": [
+          16,
+          0,
+          -20
+        ],
+        "left_mode": 5,
+        "owner": [
+          1,
+          0,
+          -1
+        ],
+        "pointer_adapter_distance": 4,
+        "pointer_adapter_path": [
+          [
+            12,
+            -6,
+            -10
+          ],
+          [
+            12,
+            -5,
+            -10
+          ],
+          [
+            12,
+            -4,
+            -10
+          ],
+          [
+            11,
+            -4,
+            -10
+          ],
+          [
+            10,
+            -4,
+            -10
+          ]
+        ],
+        "pointer_adapter_returned_SWAPS": 7,
+        "right_endpoint": [
+          16,
+          0,
+          4
+        ],
+        "right_mode": 4,
+        "star_views": [
+          [
+            1,
+            [
+              0,
+              0,
+              -1
+            ]
+          ]
+        ],
+        "target": [
+          1,
+          0,
+          0
+        ],
+        "transported_x_pointer": [
+          10,
+          -4,
+          -10
+        ]
+      }
+    ],
+    "endpoint_site_collisions": 0,
+    "pointer_adapter_distances": [
+      0,
+      0,
+      4,
+      4,
+      4,
+      4,
+      0,
+      4,
+      4,
+      4,
+      4
+    ],
+    "pointer_site_collisions": 0,
+    "shared_edge": {
+      "axis": 0,
+      "coarse_edge": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "du_dv_pointer": [
+        [
+          6,
+          -6,
+          -6
+        ],
+        [
+          6,
+          -6,
+          -5
+        ],
+        [
+          6,
+          -6,
+          -4
+        ]
+      ],
+      "index": 0,
+      "left_endpoint": [
+        -4,
+        0,
+        0
+      ],
+      "left_mode": 1,
+      "owner": [
+        0,
+        0,
+        0
+      ],
+      "pointer_adapter_distance": 0,
+      "pointer_adapter_path": [
+        [
+          6,
+          -6,
+          -4
+        ]
+      ],
+      "pointer_adapter_returned_SWAPS": 0,
+      "right_endpoint": [
+        20,
+        0,
+        0
+      ],
+      "right_mode": 0,
+      "star_views": [
+        [
+          0,
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        [
+          1,
+          [
+            -1,
+            0,
+            0
+          ]
+        ]
+      ],
+      "target": [
+        1,
+        0,
+        0
+      ],
+      "transported_x_pointer": [
+        6,
+        -6,
+        -4
+      ]
+    },
+    "shared_edge_views": [
+      [
+        0,
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      [
+        1,
+        [
+          -1,
+          0,
+          0
+        ]
+      ]
+    ],
+    "star_centers": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "star_incidences": 12,
+    "transported_pointer_site_collisions": 0,
+    "unique_edges": 11
+  },
+  "imports": {
+    "admission": "SUPPLIED successful BINDER/ACTUAL/ADMISS/LAW sector; the local p=L xor R and shared-claim checks do not derive objective admission",
+    "capacity": "Cycle719 24-packet fresh capacity supplied; this tile uses at most two packets and does not renew the bank",
+    "circuit_order_vs_time": "all ingress, switch, two H calls, inverse calls, and controller station ordinals are circuit order only; no duration/cadence/time variable",
+    "coframe": "SUPPLIED local proper-cubic coframe chooses the positive-axis standardizer; y/z pointer mismatches are physically SWAP-adapted",
+    "genesis": "SUPPLIED Cycle823 clean du/dv/p, blank typed corridors, clean Cycle719 banks/work, and clean local grant rail",
+    "program": {
+      "Cycle719_program": "SUPPLIED 130-station finite oriented word and occurrence",
+      "arbiter_word": "SUPPLIED fixed local switch/slot word; no runtime host branch",
+      "edge_priority": "encoded by the retained local grant, not derived from x-before-y order"
+    },
+    "token": {
+      "Cycle719_source_token": "SUPPLIED unique A0 token; returned after each H orbit",
+      "Cycle724_radius_one_guard": "NOT imported as uniqueness proof",
+      "Cycle731_counter": "NOT imported; it is logical/global and has no physical route theorem",
+      "local_grant_qubit": "SUPPLIED neutral physical arbitration state; transported and returned"
+    }
+  },
+  "inventory": {
+    "derived": [
+      "exact two-ingress controlled packet switch conditional on one supplied Givens",
+      "coherent local p=L xor R refusal word and clean grant return",
+      "one physical shared-edge alias predicate and order-sensitivity witness",
+      "active switch, validator, and controller-order deletion controls"
+    ],
+    "open": [
+      "exact synthesis from the landed fixed opcode dictionary",
+      "a complete routed eleven-edge arbitration network",
+      "proper-cubic covariance of the new grant routes",
+      "autonomous objective admission, occurrence, capacity, and renewal"
+    ],
+    "supplied": [
+      "one new charged pi/4 Givens local gate",
+      "local grant, proper coframe, blank corridors, and fixed ingress order",
+      "Cycle719 token/program/admission/capacity and clean genesis"
+    ]
+  },
+  "local_switch": {
+    "basis_columns_tested": 128,
+    "deletions": {
+      "grant_1a_to_1": {
+        "detected": 64,
+        "max": 1.4142135623730951
+      },
+      "pointer_Fredkin": {
+        "detected": 32,
+        "max": 1.4142135623730951
+      },
+      "right_controlled_FSWAP": {
+        "detected": 48,
+        "max": 2.0
+      }
+    },
+    "endpoint_return_switch_two_site_factors": 14,
+    "forward_arbiter_total_factors": 89,
+    "full_switch_one_site_factors": 27,
+    "full_switch_total_factors": 75,
+    "full_switch_two_site_factors": 48,
+    "grant_rail_cleanliness_failures": 0,
+    "grant_return_failures": 0,
+    "grant_transport_SWAPS_endpoint_switch": 4,
+    "grant_transport_SWAPS_full_switch": 8,
+    "maximum_switch_residual": 4.452147374007132e-16,
+    "staging_coordinates": {
+      "charged_left_pair": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "charged_right_pair": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      "neutral_grant_rail": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          3
+        ],
+        [
+          1,
+          1,
+          4
+        ]
+      ],
+      "neutral_pointer_pair": [
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          1,
+          0,
+          4
+        ]
+      ]
+    }
+  },
+  "mass_contact": {
+    "Cycle219_mass_fixture": 0.4534056541748851,
+    "contact_double_occupation_phase_residual": 0.0,
+    "contact_vacuum_and_one_particle_residual": 0.0,
+    "one_particle_coin_eigen_residual": 2.594441202963249e-16,
+    "one_particle_extended_even_sector_present": true,
+    "one_particle_mass": 0.45340565417488515,
+    "one_particle_mass_residual": 5.551115123125783e-17
+  },
+  "matrix_and_parity": {
+    "Cycle823_Toffoli_decomposition": {
+      "elementary_one_and_two_M2_factors": 15,
+      "maximum_matrix_residual": 7.346882794269506e-16
+    },
+    "Fredkin_square_residual": 0.0,
+    "Fredkin_three_Toffoli_residual": 0.0,
+    "G_equals_FSWAP_times_Givens_residual": 0.0,
+    "actual_FSWAP_factors_per_controlled_FSWAP": 2,
+    "controlled_FSWAP_decomposition_residual": 4.463374267214424e-16,
+    "controlled_FSWAP_parity_commutator_residual": 0.0,
+    "controlled_FSWAP_square_residual": 8.926748534428849e-16,
+    "controlled_FSWAP_two_M2_factors": 5,
+    "landed_direct_opcode_census": {
+      "best_opcode": "G_coin_coin_givens_b45094ee4507a094",
+      "best_projective_residual": 0.213534109861495,
+      "exact_direct_matches": [],
+      "landed_direct_two_M2_opcodes_tested": 22,
+      "scope": "direct opcode membership only; products, clean-ancilla kickback, and approximate synthesis remain live",
+      "short_compositional_synthesis_searched": false
+    },
+    "maximum_elementary_controlled_FSWAP_parity_residual": 0.0,
+    "nearest_neighbour_Toffoli_factors_on_right_angle_triple": 19,
+    "neutral_Fredkin_factors": 57,
+    "new_charged_pi_over_4_Givens_is_supplied": true
+  },
+  "pass": true,
+  "report_sha256": "c33dba9fa682da7b8b4524cf9e2307d9ccefbfa9da6d896a056fcfeb2811112b",
+  "route_specific_gaps": [
+    "the exact charged pi/4 Givens is a supplied new local gate, not a landed direct opcode",
+    "only one two-ingress switch tile is routed/tested, not a complete 11-leaf network",
+    "the custom 12-cell star union is not recompiled through the complete Cycle822/823 offline route atlas",
+    "the end-to-end test composes the separately matrix-certified switch with Cycle719 sparse-basis semantics rather than one monolithic dense unitary",
+    "the full 740226-factor normalized H and 13315498-gate controller route are inherited, not densely rerun twice here",
+    "grant/coframe/program/admission/capacity/genesis remain explicit supplies",
+    "24-frame/576-product transport of the new grant routes is not executed"
+  ],
+  "route_transfer": {
+    "axis_pointer_adapter_maximum_distance": 4,
+    "axis_pointer_adapter_maximum_returned_SWAPS": 7,
+    "maximum_blank_corridor_route_residual": 0.0,
+    "rows": [
+      {
+        "blank_corridor_endpoint_residual": 0.0,
+        "distance": 2,
+        "kind": "FSWAP",
+        "returned_exchange_factors": 3
+      },
+      {
+        "blank_corridor_endpoint_residual": 0.0,
+        "distance": 4,
+        "kind": "FSWAP",
+        "returned_exchange_factors": 7
+      },
+      {
+        "blank_corridor_endpoint_residual": 0.0,
+        "distance": 2,
+        "kind": "SWAP",
+        "returned_exchange_factors": 3
+      },
+      {
+        "blank_corridor_endpoint_residual": 0.0,
+        "distance": 4,
+        "kind": "SWAP",
+        "returned_exchange_factors": 7
+      }
+    ]
+  },
+  "shared_claim_merge": {
+    "Toffoli_deletion_rows_detected": 1,
+    "failures": 0,
+    "interpretation": "the two star-incidence claims meet at one physical edge node; OR is a local request, not two copies of the seam state",
+    "inverse_failures": 0,
+    "truth_rows": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ]
+  },
+  "sparse_local_enforcement": {
+    "deletions": {
+      "compute_effective_grant": {
+        "detected_rows": 4,
+        "maximum_residual": 1.4142135623730951
+      },
+      "right_controlled_FSWAP": {
+        "detected_rows": 2,
+        "maximum_residual": 1.4142135623730951
+      },
+      "validate_pointer_in": {
+        "detected_rows": 8,
+        "maximum_residual": 1.4142135623730951
+      },
+      "validate_pointer_out": {
+        "detected_rows": 6,
+        "maximum_residual": 1.4142135623730951
+      }
+    },
+    "failures": 0,
+    "invalid_refusal_failures": 0,
+    "invalid_request_rows_refused": 4,
+    "lawful_request_rows": 4,
+    "maximum_elementary_fixed_P_ext_commutator_residual": 0.0,
+    "maximum_residual": 4.452147374007132e-16,
+    "scope": "this enforces only the sparse local interface law p=L xor R; it does not derive Cycle719 objective admission or token uniqueness",
+    "staging_coordinates": {
+      "effective_grant_rail": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          3
+        ],
+        [
+          1,
+          1,
+          4
+        ]
+      ],
+      "retained_request": [
+        2,
+        1,
+        0
+      ],
+      "source_L_destination_L": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "source_R_destination_R": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      "source_p_destination_p": [
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          1,
+          0,
+          4
+        ]
+      ],
+      "syndrome": [
+        0,
+        1,
+        0
+      ]
+    },
+    "syndrome_grant_rail_return_failures": 0,
+    "tested_rows": 16,
+    "truth_rows": [
+      {
+        "exchange_enabled": false,
+        "lawful": true,
+        "packet": [
+          0,
+          0,
+          0
+        ],
+        "request": 0,
+        "residual": 0.0
+      },
+      {
+        "exchange_enabled": true,
+        "lawful": true,
+        "packet": [
+          0,
+          0,
+          0
+        ],
+        "request": 1,
+        "residual": 0.0
+      },
+      {
+        "exchange_enabled": false,
+        "lawful": false,
+        "packet": [
+          0,
+          0,
+          1
+        ],
+        "request": 0,
+        "residual": 0.0
+      },
+      {
+        "exchange_enabled": false,
+        "lawful": false,
+        "packet": [
+          0,
+          0,
+          1
+        ],
+        "request": 1,
+        "residual": 0.0
+      },
+      {
+        "exchange_enabled": false,
+        "lawful": false,
+        "packet": [
+          0,
+          1,
+          0
+        ],
+        "request": 0,
+        "residual": 2.231687133607212e-16
+      },
+      {
+        "exchange_enabled": false,
+        "lawful": false,
+        "packet": [
+          0,
+          1,
+          0
+        ],
+        "request": 1,
+        "residual": 2.231687133607212e-16
+      },
+      {
+        "exchange_enabled": false,
+        "lawful": true,
+        "packet": [
+          0,
+          1,
+          1
+        ],
+        "request": 0,
+        "residual": 2.231687133607212e-16
+      },
+      {
+        "exchange_enabled": true,
+        "lawful": true,
+        "packet": [
+          0,
+          1,
+          1
+        ],
+        "request": 1,
+        "residual": 2.231687133607212e-16
+      },
+      {
+        "exchange_enabled": false,
+        "lawful": false,
+        "packet": [
+          1,
+          0,
+          0
+        ],
+        "request": 0,
+        "residual": 2.231687133607212e-16
+      },
+      {
+        "exchange_enabled": false,
+        "lawful": false,
+        "packet": [
+          1,
+          0,
+          0
+        ],
+        "request": 1,
+        "residual": 2.231687133607212e-16
+      },
+      {
+        "exchange_enabled": false,
+        "lawful": true,
+        "packet": [
+          1,
+          0,
+          1
+        ],
+        "request": 0,
+        "residual": 2.231687133607212e-16
+      },
+      {
+        "exchange_enabled": true,
+        "lawful": true,
+        "packet": [
+          1,
+          0,
+          1
+        ],
+        "request": 1,
+        "residual": 2.231687133607212e-16
+      },
+      {
+        "exchange_enabled": false,
+        "lawful": true,
+        "packet": [
+          1,
+          1,
+          0
+        ],
+        "request": 0,
+        "residual": 4.452147374007132e-16
+      },
+      {
+        "exchange_enabled": true,
+        "lawful": true,
+        "packet": [
+          1,
+          1,
+          0
+        ],
+        "request": 1,
+        "residual": 4.452147374007132e-16
+      },
+      {
+        "exchange_enabled": false,
+        "lawful": false,
+        "packet": [
+          1,
+          1,
+          1
+        ],
+        "request": 0,
+        "residual": 4.452147374007132e-16
+      },
+      {
+        "exchange_enabled": false,
+        "lawful": false,
+        "packet": [
+          1,
+          1,
+          1
+        ],
+        "request": 1,
+        "residual": 4.452147374007132e-16
+      }
+    ],
+    "validator_one_site_factors": 22,
+    "validator_plus_packet_switch_one_site_factors": 49,
+    "validator_plus_packet_switch_total_factors": 147,
+    "validator_plus_packet_switch_two_site_factors": 98,
+    "validator_total_factors": 72,
+    "validator_two_site_factors": 50
+  },
+  "status": "conditional-two-ingress-grant-arbiter-with-supplied-new-Givens"
+}
+CYCLE864_LOCAL_GRANT_ARBITER_CONDITIONAL_PASS

@@ -1,0 +1,435 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "checks": {
+    "actual_state_transfer_controller_and_inverse_intertwine": true,
+    "admission_token_and_finalizer_controls_are_active": true,
+    "declared_inputs_are_unique_existing_repo_relative_files": true,
+    "dense_and_structural_execution_surfaces_are_separated": true,
+    "fixed_serial_schedule_separates_same_type_workspace_reuse": true,
+    "mass_seam_and_contact_fixture_is_unchanged_before_contact": true,
+    "one_combined_parity_operator_closes_every_elementary_prefix": true,
+    "one_edge_joint_atlas_and_three_ports_are_collision_free": true,
+    "paired_receipt_is_current_and_all_values_are_pinned": true,
+    "port_route_algebra_and_deletions_are_active": true,
+    "proper_cubic_transport_and_port_product_checks_are_exact": true
+  },
+  "circuit_ordinals_are_physical_time": false,
+  "claim_scope": "one-use one-edge clean-genesis same-chart physical-M2 endpoint and pointer port into one translated finite Cycle719 H^130 controller",
+  "combined_parity": {
+    "combined_prefix_argument": "each elementary factor in the ordered Cycle823; port; H^130; return; contact word commutes with the same combined P_ext",
+    "controller_elementary_failures": 0,
+    "controller_expanded_factors": 740226,
+    "controller_prefix_failures": 0,
+    "controller_route_exchange_prefix_parity_violations": 0,
+    "controller_terminal_parity_return": true,
+    "cycle823_elementary_failures": 0,
+    "cycle823_prefix_failures": 0,
+    "port_type_violations": 0,
+    "port_typed_exchange_factor_occurrences": 235
+  },
+  "controller_sector_controls": {
+    "rejected_acceptance_fields": {
+      "85": {
+        "controller_pointer_pending": true,
+        "different_from_lawful": true
+      },
+      "86": {
+        "controller_pointer_pending": true,
+        "different_from_lawful": true
+      },
+      "87": {
+        "controller_pointer_pending": true,
+        "different_from_lawful": true
+      },
+      "88": {
+        "controller_pointer_pending": true,
+        "different_from_lawful": true
+      }
+    },
+    "rejected_acceptance_fields_detected": 4,
+    "success_finalizer_deletion_detected": true,
+    "success_finalizer_deletion_leaves_pointer_pending": true,
+    "two_token_detected": true,
+    "zero_token_detected": true
+  },
+  "covariance": {
+    "controller_translation_affine_failures": 0,
+    "covariance_scope": "full per-frame transport of one supplied finite joint program plus 576 product checks on all port coordinates; not intrinsic rerouting or execution in independently generated frames",
+    "ordered_frame_products": 576,
+    "port_coordinate_product_failures": 0,
+    "port_coordinate_product_sites_tested": 67,
+    "proper_cubic_frames": 24,
+    "proper_cubic_product_closure_failures": 0,
+    "transported_edge_bijection_failures": 0,
+    "transported_nearest_neighbour_failures": 0,
+    "transported_port_path_order_failures": 0,
+    "transported_type_partition_failures": 0,
+    "unique_joint_route_edges": 29912
+  },
+  "cycle": 863,
+  "execution_scope": {
+    "controller_elementary_dense_execution": false,
+    "controller_elementary_factors_per_H_structural": 740226,
+    "controller_routed_gates_per_H_structural": 13315498,
+    "controller_routed_gates_per_orbit_structural": 1731014740,
+    "execution_boundary": "the 235 new port factors are literal sparse-state execution; the normalized semantic H is executed 130 times on four inputs; the 740226-factor and 1731014740-routed-gate controller surfaces remain the inherited structural compiler certificate",
+    "literal_new_port_factors_executed_on_sparse_state": 235,
+    "new_port_literal_sparse_state_execution": true,
+    "normalized_semantic_gates_per_H": 61562,
+    "routed_controller_dense_execution": false,
+    "semantic_H_applications_per_input": 130,
+    "semantic_controller_execution": true,
+    "semantic_controller_inputs_executed": 4,
+    "semantic_gate_applications_per_input": 8003060,
+    "semantic_gate_applications_total": 32012240
+  },
+  "inventory": {
+    "derived": [
+      "three explicit disjoint same-chart typed port routes",
+      "actual FSWAP/SWAP state transfer without endpoint-bit extraction",
+      "exact 16-signature and two coherent fixed-parity intertwiners",
+      "successful-sector pointer cleanup and exact reversible recreation",
+      "one combined P_ext and passive 24-frame/576-product covariance"
+    ],
+    "open": [
+      "two-, twenty-, and fifty-nine-edge placement and arbitration",
+      "intrinsic local atlas generation, type enforcement, and charged/neutral port-corridor genesis",
+      "autonomous program/token/bank/admission occurrence and renewal",
+      "physical time, inaccessible inverse, permanent Record, Born/history law",
+      "source/gravity response and a no-refit prediction bridge"
+    ],
+    "supplied": [
+      "fixed (2,1,1) single edge and controller translation",
+      "offline joint route atlas, coframe, and blank charged and neutral port corridors",
+      "clean Cycle823 instrument and complete Cycle719 first-use bank genesis",
+      "unique station-zero token and fixed 130-station program occurrence",
+      "successful BINDER/ACTUAL/ADMISS/LAW sector and fresh capacity"
+    ]
+  },
+  "normalization_control_swaps": 6,
+  "normalization_equivalence_failures": 0,
+  "one_particle_mass_fixture": {
+    "Cycle219_mass_fixture": 0.4534056541748851,
+    "contact_double_occupation_phase_residual": 0.0,
+    "contact_vacuum_and_one_particle_residual": 0.0,
+    "one_particle_coin_eigen_residual": 2.594441202963249e-16,
+    "one_particle_extended_even_sector_present": true,
+    "one_particle_mass": 0.45340565417488515,
+    "one_particle_mass_residual": 5.551115123125783e-17
+  },
+  "paired_receipt": {
+    "active_controls": true,
+    "all": true,
+    "artifact": true,
+    "artifact_provenance_sha256": true,
+    "audit": true,
+    "authority": true,
+    "checks_passed": true,
+    "checks_total": true,
+    "claim_scope": true,
+    "execution_scope": true,
+    "intertwiner": true,
+    "mass_contact": true,
+    "no_unpinned_receipt_sections": true,
+    "open_boundary": true,
+    "parity_and_covariance": true,
+    "placement": true,
+    "serial_schedule": true,
+    "status": true
+  },
+  "physical_intertwiner": {
+    "case_rows": [
+      {
+        "family": "physical",
+        "inverse_residual": 0.0,
+        "residual": 0.0,
+        "source_basis": 0
+      },
+      {
+        "family": "physical",
+        "inverse_residual": 0.0,
+        "residual": 0.0,
+        "source_basis": 1
+      },
+      {
+        "family": "physical",
+        "inverse_residual": 0.0,
+        "residual": 0.0,
+        "source_basis": 3
+      },
+      {
+        "family": "physical",
+        "inverse_residual": 0.0,
+        "residual": 0.0,
+        "source_basis": 2
+      },
+      {
+        "family": "physical",
+        "inverse_residual": 0.0,
+        "residual": 0.0,
+        "source_basis": 64
+      },
+      {
+        "family": "physical",
+        "inverse_residual": 0.0,
+        "residual": 0.0,
+        "source_basis": 65
+      },
+      {
+        "family": "physical",
+        "inverse_residual": 0.0,
+        "residual": 0.0,
+        "source_basis": 67
+      },
+      {
+        "family": "physical",
+        "inverse_residual": 0.0,
+        "residual": 0.0,
+        "source_basis": 66
+      },
+      {
+        "family": "target",
+        "inverse_residual": 0.0,
+        "residual": 0.0,
+        "source_basis": 0
+      },
+      {
+        "family": "target",
+        "inverse_residual": 0.0,
+        "residual": 0.0,
+        "source_basis": 4
+      },
+      {
+        "family": "target",
+        "inverse_residual": 0.0,
+        "residual": 0.0,
+        "source_basis": 2
+      },
+      {
+        "family": "target",
+        "inverse_residual": 0.0,
+        "residual": 0.0,
+        "source_basis": 6
+      },
+      {
+        "family": "target",
+        "inverse_residual": 0.0,
+        "residual": 0.0,
+        "source_basis": 64
+      },
+      {
+        "family": "target",
+        "inverse_residual": 0.0,
+        "residual": 0.0,
+        "source_basis": 68
+      },
+      {
+        "family": "target",
+        "inverse_residual": 0.0,
+        "residual": 0.0,
+        "source_basis": 66
+      },
+      {
+        "family": "target",
+        "inverse_residual": 0.0,
+        "residual": 0.0,
+        "source_basis": 70
+      }
+    ],
+    "coherent_fixed_parity_tests": 2,
+    "controller_token_and_work_return_failures": 0,
+    "decoded_expected_sha256": "199282397cac922c7161e0d36982a9150987c7eb5ec4e0861e197129d3ea25a7",
+    "decoded_observed_sha256": "199282397cac922c7161e0d36982a9150987c7eb5ec4e0861e197129d3ea25a7",
+    "distinct_controller_inputs_executed": 4,
+    "endpoint_restoration_failures": 0,
+    "inverse_corridor_cleanliness_failures": 0,
+    "maximum_coherent_intertwiner_residual": 0.0,
+    "maximum_coherent_inverse_residual": 0.0,
+    "maximum_intertwiner_residual": 0.0,
+    "maximum_inverse_residual": 0.0,
+    "physical_signature_cases": 8,
+    "pointer_endpoint_and_scratch_cleanup_failures": 0,
+    "port_in_corridor_cleanliness_failures": 0,
+    "port_out_corridor_cleanliness_failures": 0,
+    "target_signature_cases": 8
+  },
+  "placement": {
+    "combined_charged_coordinates": 582,
+    "combined_charged_neutral_overlap": 0,
+    "combined_neutral_coordinates": 17915,
+    "controller_translation": [
+      6,
+      -10,
+      -2
+    ],
+    "cycle823_controller_persistent_collisions": 0,
+    "cycle823_endpoint_and_pointer_sites": [
+      [
+        -12,
+        0,
+        0
+      ],
+      [
+        12,
+        0,
+        0
+      ],
+      [
+        -2,
+        -6,
+        -4
+      ]
+    ],
+    "edge_index": 0,
+    "forbidden_cross_type_path_hits": [
+      0,
+      0,
+      0
+    ],
+    "forward_port_gate_count": 235,
+    "internal_persistent_hits": [
+      0,
+      0,
+      0
+    ],
+    "nearest_neighbour_failures": [
+      0,
+      0,
+      0
+    ],
+    "new_fixed_coordinates_per_path": [
+      13,
+      14,
+      4
+    ],
+    "path_pair_intersections": [
+      0,
+      0,
+      0
+    ],
+    "path_repeat_failures": [
+      0,
+      0,
+      0
+    ],
+    "port_path_sha256": "a27767ae0a4a0cda45bcfca43582b270024b69d141ff730ce574ccf34567784c",
+    "port_returned_macro_gates": [
+      55,
+      55,
+      15
+    ],
+    "port_route_distances": [
+      28,
+      28,
+      8
+    ],
+    "separate_atlas_cross_type_collisions": [
+      0,
+      0
+    ],
+    "separate_atlas_same_type_collisions": [
+      0,
+      0
+    ],
+    "shape": [
+      2,
+      1,
+      1
+    ],
+    "translated_controller_endpoint_and_pointer_sites": [
+      [
+        0,
+        -12,
+        -2
+      ],
+      [
+        -4,
+        -10,
+        0
+      ],
+      [
+        -2,
+        -11,
+        -1
+      ]
+    ]
+  },
+  "port_algebra_and_controls": {
+    "FSWAP_parity_commutator_residual": 0.0,
+    "FSWAP_square_residual": 0.0,
+    "FSWAP_vs_SWAP_clean_subspace_residual": 0.0,
+    "FSWAP_vs_SWAP_dirty_11_residual": 2.0,
+    "dirty_destination_triples_detected": 7,
+    "dirty_destination_triples_tested": 7,
+    "endpoint_return_deletions_detected": 2,
+    "maximum_blank_corridor_endpoint_exchange_residual": 0.0,
+    "minimum_endpoint_return_deletion_residual": 1.4142135623730951,
+    "minimum_route_deletion_residual": 1.4142135623730951,
+    "route_deletions_detected": 3
+  },
+  "runtime_seconds": 161.76394510269165,
+  "serial_schedule": {
+    "charged_same_type_corridor_reuse": 27,
+    "contact_words": 30,
+    "controller_charged_corridor_persistent_hits": 0,
+    "controller_route_return_failures": 0,
+    "cycle823_stage_colour_slot_collision_edges": 0,
+    "distinct_serial_stage_ordinals": 6,
+    "endpoint_post_precedes_contact": true,
+    "endpoint_post_words": 1,
+    "erased_stage_reuse_coordinates": 30,
+    "manifest": [
+      "Cycle823 prefix/prewrite/seam/postwrite-clean",
+      "two charged endpoint transfer macros",
+      "one neutral pointer transfer macro",
+      "normalized Cycle719 H repeated 130 circuit ordinals",
+      "two charged endpoint return macros",
+      "Cycle823 contact"
+    ],
+    "manifest_sha256": "4180c18db5b70d9a3e59e0c93d67d3a716f62e0ef26f74f04370dbea01867c99",
+    "neutral_same_type_corridor_reuse": 3,
+    "schedule_scope": "supplied serial circuit order separating same-type workspace reuse; no counter or duration variable",
+    "stage_aware_collision_edges": 0,
+    "stage_labels_are_physical_time": false,
+    "top_level_scheduled_resource_rows": 8
+  },
+  "source_sha256": {
+    "docs/COMPANION_ENDPOINT_CYCLE719_HISTORY_INTERFACE_CYCLE826_BOUNDED_THEOREM_NOTE_2026-07-30.md": "75a6e9757178d0d9f42e971b6e2efcdec0e98b359497b2d60571a03b05302d8a",
+    "docs/COMPANION_FULL_SEAM_ENDPOINT_INSTRUMENT_CYCLE823_BOUNDED_THEOREM_NOTE_2026-07-30.md": "8679f0f737a399b024193bb000158f86049ea10932cccfe1965b5d403ca310f4",
+    "docs/CYCLE719_PARITY_SAFE_TYPED_CONTROLLER_ATLAS_CYCLE827_BOUNDED_THEOREM_NOTE_2026-07-30.md": "265f2af2ec4e91958e0bf58e9d8535c06f3f948703683e6eecd388c9573e0ee9",
+    "docs/CYCLE823_CYCLE719_SAME_CHART_HISTORY_PORT_CYCLE863_BOUNDED_THEOREM_NOTE_2026-08-01.md": "9e88aae81826885b2db30a684e6676c1601fdfc8039de4f8ab918c794793429f",
+    "docs/RECURRENT_COMPANION_PHYSICAL_M2_UPDATE_LOCAL_CHOI_PREPARATION_CYCLE720_BOUNDED_THEOREM_NOTE_2026-07-27.md": "fb54e3476dcbf2a8becca1b93fa327bcefd5a17f06f55b2bebcbeea234993b9e",
+    "docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md": "d1b33aa0e892494027a64b4908446bf7f871b899d6de69cd65e0d05a9317e9be",
+    "docs/ROUTEC_STAGGERED_RADIUS_ONE_PARITY_EVEN_TRANSPORT_CYCLE822_BOUNDED_THEOREM_NOTE_2026-07-30.md": "0854139458f823ef6b64bb5bb8ad3f676e913abc859165c0be78dbbd10f6b7ec",
+    "outputs/cycle823_cycle719_same_chart_history_port_cycle863_receipt_2026_08_01.json": "d1b7d6d862ddcf112e23461a0c476e5c6a51366ab9fa1c93f74a5178dbcffa1f",
+    "scripts/frontier_cycle719_recurrent_matter_history_controller_2026_07_26.py": "ef9398b3f27dcbb540446d6c5c165c5803014cffa37da59071751810a7ac9978",
+    "scripts/frontier_cycle720_cell_majorana_companion_geometry_2026_07_27.py": "f2fc664a1d14a2d62562ff58395840a0174d4cc75239ef2c1589c6e0f65ed982",
+    "scripts/frontier_cycle822_routec_staggered_radius_one_parity_even_transport_2026_07_30.py": "17af3e27463c94a1e98f6bfe578b6d7b1a575af50bccd96b472ab0ede44f775c",
+    "scripts/frontier_cycle823_companion_full_seam_endpoint_instrument_2026_07_30.py": "1c70bf782005bbf90608c99417470dcb0f964749644849c8835ef6314c61a737",
+    "scripts/frontier_cycle826_companion_endpoint_cycle719_history_interface_2026_07_30.py": "7132c530e8ff55e9015094b3eaba48b50eabf3ebf85aee31d4b126a5879e8af5",
+    "scripts/frontier_cycle827_cycle719_parity_safe_typed_controller_atlas_2026_07_30.py": "ee105138368935e9f4d54aa9efeaa01c2b8b8d103058ffd3ce184712f62010e7",
+    "scripts/frontier_cycle863_cycle823_cycle719_same_chart_history_port_2026_08_01.py": "26fe3c29f64bec9a0e49c79cd28e244d9a94d28d627396a345c777953c1de38c"
+  },
+  "stage_manifest": [
+    "Cycle823 prefix/prewrite/seam/postwrite-clean",
+    "two charged endpoint transfer macros",
+    "one neutral pointer transfer macro",
+    "normalized Cycle719 H repeated 130 circuit ordinals",
+    "two charged endpoint return macros",
+    "Cycle823 contact"
+  ],
+  "status": "cycle863-cycle823-cycle719-same-chart-history-port-bounded-positive"
+}
+CHECK declared_inputs_are_unique_existing_repo_relative_files: PASS
+CHECK one_edge_joint_atlas_and_three_ports_are_collision_free: PASS
+CHECK fixed_serial_schedule_separates_same_type_workspace_reuse: PASS
+CHECK actual_state_transfer_controller_and_inverse_intertwine: PASS
+CHECK port_route_algebra_and_deletions_are_active: PASS
+CHECK admission_token_and_finalizer_controls_are_active: PASS
+CHECK one_combined_parity_operator_closes_every_elementary_prefix: PASS
+CHECK proper_cubic_transport_and_port_product_checks_are_exact: PASS
+CHECK dense_and_structural_execution_surfaces_are_separated: PASS
+CHECK mass_seam_and_contact_fixture_is_unchanged_before_contact: PASS
+CHECK paired_receipt_is_current_and_all_values_are_pinned: PASS
+CYCLE863_CYCLE823_CYCLE719_SAME_CHART_HISTORY_PORT_BOUNDED_PASS

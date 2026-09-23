@@ -1,0 +1,426 @@
+{
+  "deletion_controls": {
+    "factors_tested": 142,
+    "maximum_deleted_word_residual": 3.2160761419014343,
+    "minimum_deleted_word_residual": 1.530733729460358,
+    "residual_identity": "norm(S G P - S P) = norm(G P - P)",
+    "undetected_deletions": 0
+  },
+  "dictionary": {
+    "census": {
+      "CP_Z": 1,
+      "FSWAP": 12,
+      "PAIR_R_XX_+1": 1,
+      "PAIR_R_XX_-1": 1,
+      "SWAP": 76,
+      "endpoint_CNOT": 24,
+      "endpoint_H": 4,
+      "endpoint_T": 12,
+      "endpoint_Tdg": 11
+    },
+    "membership": {
+      "CP_Z": {
+        "count": 1,
+        "landed_matrix_sha256": "411d2854573bf05718bccb74b2bea00f6180dd0104861c8f112aa0295ea85b45",
+        "matrix_residual": 0.0,
+        "matrix_sha256": "411d2854573bf05718bccb74b2bea00f6180dd0104861c8f112aa0295ea85b45"
+      },
+      "FSWAP": {
+        "count": 12,
+        "landed_matrix_sha256": "e06a37d25124c2fbc865b08f8dc78658f4e3415bad244aae79ebef5685330656",
+        "matrix_residual": 0.0,
+        "matrix_sha256": "e06a37d25124c2fbc865b08f8dc78658f4e3415bad244aae79ebef5685330656"
+      },
+      "PAIR_R_XX_+1": {
+        "count": 1,
+        "landed_matrix_sha256": "608cadc8e200f0622b4e263dcb56d2d0a30e30dde83f98c2dba69774e3df7c2a",
+        "matrix_residual": 0.0,
+        "matrix_sha256": "608cadc8e200f0622b4e263dcb56d2d0a30e30dde83f98c2dba69774e3df7c2a"
+      },
+      "PAIR_R_XX_-1": {
+        "count": 1,
+        "landed_matrix_sha256": "6e1a3e2098141964dd359af680b976cae6583128ccf41660af14f71c9d44a272",
+        "matrix_residual": 0.0,
+        "matrix_sha256": "6e1a3e2098141964dd359af680b976cae6583128ccf41660af14f71c9d44a272"
+      },
+      "SWAP": {
+        "count": 76,
+        "landed_matrix_sha256": "0fe211d0be6e5908155c70589905d5f91f528440f5a2ddcd39a477b25fd7e70d",
+        "matrix_residual": 0.0,
+        "matrix_sha256": "0fe211d0be6e5908155c70589905d5f91f528440f5a2ddcd39a477b25fd7e70d"
+      },
+      "endpoint_CNOT": {
+        "count": 24,
+        "landed_matrix_sha256": "efe9d873b4bed450c4c37844714466e837408d0d575c1ce37124e385aeb75254",
+        "matrix_residual": 0.0,
+        "matrix_sha256": "efe9d873b4bed450c4c37844714466e837408d0d575c1ce37124e385aeb75254"
+      },
+      "endpoint_H": {
+        "count": 4,
+        "landed_matrix_sha256": "eddd78135aab0c586109e3c3ca9ac975e264215209f9138d3a010965bcaf0459",
+        "matrix_residual": 0.0,
+        "matrix_sha256": "eddd78135aab0c586109e3c3ca9ac975e264215209f9138d3a010965bcaf0459"
+      },
+      "endpoint_T": {
+        "count": 12,
+        "landed_matrix_sha256": "f9203f40d54bd38c70ed741465103c917e11691bf88ec6b5df6109d51becd49c",
+        "matrix_residual": 0.0,
+        "matrix_sha256": "f9203f40d54bd38c70ed741465103c917e11691bf88ec6b5df6109d51becd49c"
+      },
+      "endpoint_Tdg": {
+        "count": 11,
+        "landed_matrix_sha256": "317736f557ac17c486224c61ed403396ca3e86e2d1693e3e7c97077d1711cada",
+        "matrix_residual": 0.0,
+        "matrix_sha256": "317736f557ac17c486224c61ed403396ca3e86e2d1693e3e7c97077d1711cada"
+      }
+    },
+    "opcode_dictionary_sha256": "fe71ebf6e5fe525ba3b62a9b414288892b08b3a7d400245c24248fbe49013faa"
+  },
+  "emission": {
+    "layout": {
+      "charged": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "logical": {
+        "a": [
+          0,
+          0,
+          0
+        ],
+        "b": [
+          1,
+          1,
+          0
+        ],
+        "c": [
+          2,
+          0,
+          0
+        ],
+        "q": [
+          1,
+          0,
+          0
+        ],
+        "r": [
+          0,
+          1,
+          0
+        ]
+      },
+      "neutral": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          -1
+        ],
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          1,
+          -1
+        ]
+      ],
+      "paths": {
+        "a_b": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        "c_q": [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "c_r": [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            -1
+          ],
+          [
+            1,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "q_r": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ]
+      }
+    },
+    "layout_sha256": "673b21414d98f84b1a23098862eb9cac779015b85daa76ed14bd27235e2827fc",
+    "logical_factors": 54,
+    "nearest_neighbour_failures": 0,
+    "routed_factors": 142,
+    "sequence_sha256": "4cb9cf8fe1ea9474a9716a79303356120bec4ad53fe2703811f363edbd711298",
+    "untyped_coordinate_uses": 0
+  },
+  "independence_boundary": "landed Cycle821/822/823 sources only; no Cycle864 implementation imported",
+  "maximum_opcode_unitarity_residual": 4.463374267214424e-16,
+  "parity": {
+    "P_ext_coordinate_sha256": "deb42e1cadf3490cbbb28fbc9278cd7d236f9b8d190a40ba5278ae6b78e9f804",
+    "elementary_factors_tested": 142,
+    "factor_commutator_failures": 0,
+    "maximum_factor_commutator_residual": 0.0,
+    "prefix_commutator_failures": 0,
+    "prefixes_certified_by_common_commutant": 142
+  },
+  "receipt_sha256": "e389c18e36f9514681d9f867c0097e72fb1ca5e19bc4e450a86a6c22092e98eb",
+  "returns": {
+    "clean_and_four_column_residual": 5.672215183327909e-16,
+    "maximum_control_value_leakage": 0.0,
+    "maximum_work_and_route_leakage": 1.9712626256507448e-16
+  },
+  "schema": "cycle864_independent_cfswap_142_factor_acceptance_v1",
+  "source_sha256": {
+    "scripts/frontier_cycle821_local_parity_exchange_carrier_recurrent_bell_2026_07_30.py": "e010b4d407e38c7832ff94b8d7886bf5369e06be4eef44c01e35688f56d103bd",
+    "scripts/frontier_cycle822_routec_staggered_radius_one_parity_even_transport_2026_07_30.py": "17af3e27463c94a1e98f6bfe578b6d7b1a575af50bccd96b472ab0ede44f775c",
+    "scripts/frontier_cycle823_companion_full_seam_endpoint_instrument_2026_07_30.py": "1c70bf782005bbf90608c99417470dcb0f964749644849c8835ef6314c61a737",
+    "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py": "e79b733bd3b8e273a2094679e6175b5d1f253ebef1a33b96544519cbdf278e13"
+  },
+  "target": {
+    "basis_order": "little-endian c+2a+4b",
+    "columns": [
+      {
+        "column": 0,
+        "input_cab": [
+          0,
+          0,
+          0
+        ],
+        "output_cab": [
+          0,
+          0,
+          0
+        ],
+        "phase": 1
+      },
+      {
+        "column": 1,
+        "input_cab": [
+          1,
+          0,
+          0
+        ],
+        "output_cab": [
+          1,
+          0,
+          0
+        ],
+        "phase": 1
+      },
+      {
+        "column": 2,
+        "input_cab": [
+          0,
+          1,
+          0
+        ],
+        "output_cab": [
+          0,
+          1,
+          0
+        ],
+        "phase": 1
+      },
+      {
+        "column": 3,
+        "input_cab": [
+          1,
+          1,
+          0
+        ],
+        "output_cab": [
+          1,
+          0,
+          1
+        ],
+        "phase": 1
+      },
+      {
+        "column": 4,
+        "input_cab": [
+          0,
+          0,
+          1
+        ],
+        "output_cab": [
+          0,
+          0,
+          1
+        ],
+        "phase": 1
+      },
+      {
+        "column": 5,
+        "input_cab": [
+          1,
+          0,
+          1
+        ],
+        "output_cab": [
+          1,
+          1,
+          0
+        ],
+        "phase": 1
+      },
+      {
+        "column": 6,
+        "input_cab": [
+          0,
+          1,
+          1
+        ],
+        "output_cab": [
+          0,
+          1,
+          1
+        ],
+        "phase": 1
+      },
+      {
+        "column": 7,
+        "input_cab": [
+          1,
+          1,
+          1
+        ],
+        "output_cab": [
+          1,
+          1,
+          1
+        ],
+        "phase": -1
+      }
+    ],
+    "controlled_fswap_matrix_sha256": "bb740365ae861806f2565112baf82a1d94657de9750a6a6820d09c5fbc722a92",
+    "inverse_residual": 3.126460347350969e-15,
+    "literal_fswap_matrix_sha256": "e06a37d25124c2fbc865b08f8dc78658f4e3415bad244aae79ebef5685330656",
+    "literal_fswap_vs_controlled_swap_residual": 2.0,
+    "square_residual": 3.0991074599820925e-15,
+    "target_residual": 1.7248693750302194e-15
+  }
+}

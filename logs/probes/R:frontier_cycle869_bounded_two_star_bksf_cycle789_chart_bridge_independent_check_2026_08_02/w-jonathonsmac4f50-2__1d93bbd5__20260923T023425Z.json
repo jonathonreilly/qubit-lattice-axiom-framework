@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle869_bounded_two_star_bksf_cycle789_chart_bridge_independent_check_2026_08_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle869_bounded_two_star_bksf_cycle789_chart_bridge_independent_check_2026_08_02.py",
+ "seed": 30865,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1d93bbd5",
+ "started_utc": "20260923T023425Z",
+ "elapsed_s": 9.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "94332eb7db294773eac520c23872f992148537ac123602ce4eec2eacf5876d8e",
+ "stdout_tail": "d169912347aff0591ae\"}, {\"path\": \"scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py\", \"sha256\": \"9ef0fff433bbf1c96c9b13c5ce79530e01fe705f08c6caf6b60316e20359e011\"}], \"loaded_helper_count\": 45, \"match\": true, \"observed_closure_sha256\": \"41bb2d352bea3d43677b574fbf6cc111800590a344366ec4a60e1e708d233530\", \"runner_path_excluded\": \"scripts/frontier_cycle869_bounded_two_star_bksf_cycle789_chart_bridge_independent_check_2026_08_02.py\"}, \"overlap\": {\"deleted_rank\": 119, \"raw\": {\"exact\": 2, \"phase_only\": 0, \"symplectic\": 2}, \"repaired_AB\": {\"exact\": 0, \"phase_only\": 0, \"symplectic\": 0}, \"repaired_BA\": {\"exact\": 0, \"phase_only\": 0, \"symplectic\": 0}, \"shared_M2\": 84, \"shared_addresses\": 80, \"shared_failures\": 0, \"shared_kinds\": {\"edge\": 76, \"rail\": 4}, \"stabilizer_rank\": 120}, \"package_base_commit\": {\"commit_object_exists\": true, \"named_package_base_commit\": \"1900b64260f39f075c59f2e353079c44e8ede031\", \"pass\": true, \"repository_has_git_metadata\": true}, \"primary_Gram\": [152, 11476, 22], \"primary_runner_expected_sha256\": \"61425733dddbfda2ff056639d47bc77a9608b9994382282689bbcc79104c0a2a\", \"primary_runner_observed_sha256\": \"61425733dddbfda2ff056639d47bc77a9608b9994382282689bbcc79104c0a2a\", \"report_sha256\": \"d073cccaf4729f68d107e2da33e2fdbdd89c14be778920cc4ad0d9c8f4d87fd3\", \"scope\": \"independent structural reconstruction; the primary runner separately executes the 20-site dense state/tableau comparison\", \"status\": \"PASS\"}\nCYCLE869_BOUNDED_TWO_STAR_BKSF_CHART_BRIDGE_INDEPENDENT_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T023435Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

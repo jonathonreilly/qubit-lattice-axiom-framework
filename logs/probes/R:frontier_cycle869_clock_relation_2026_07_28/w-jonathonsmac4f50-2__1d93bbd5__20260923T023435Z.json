@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle869_clock_relation_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle869_clock_relation_2026_07_28.py",
+ "seed": 30875,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1d93bbd5",
+ "started_utc": "20260923T023435Z",
+ "elapsed_s": 12.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ff4630391be737e316346c821f90c8201e80d9aad717b771992326582d30d00c",
+ "stdout_tail": "stantive_coverage\":\"1/831\",\"within_key_evidence_split\":{\"PARTIAL\":38,\"SUBSTANTIVE_NO_RELATION\":429,\"SUBSTANTIVE_RELATION\":13,\"THIN_NO_RELATION\":164,\"THIN_RELATION\":2},\"within_key_member_histogram\":{\"F1\":10,\"F3\":5,\"F3P\":38,\"NO_RELATION_IN_F\":593,\"ONE_SIDE_SILENT\":266},\"within_key_pair_clock_verdict\":\"DICTIONARY_SPARSE_WITHIN_KEY\",\"within_key_substantive_nonidentity_full_dictionaries\":1,\"within_key_substantive_nonidentity_partial_matches\":31,\"within_key_substantive_partial_matches\":38,\"within_key_witness_parameters\":{\"F1:c=0\":10,\"F3:L=0,d=-1121\":1,\"F3:L=0,d=0\":4,\"F3P:L=-10,d=102\":15,\"F3P:L=-12,d=98\":1,\"F3P:L=-7,d=102\":15,\"F3P:L=0,d=0\":7}}\nPASS H_CONTROLS :: {\"audit_input_paths_exist\":true,\"audit_input_paths_literal\":[\"scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py\"],\"audit_input_paths_repo_relative\":true,\"corpus_sha256\":\"2a77355e7410c10e2dec13b8213543fb1d750249c205888009975dcefdd37e33\",\"duplicate_clock_stable\":true,\"duplicate_final_state_equal\":true,\"duplicate_lane_clean_mismatches\":0,\"initial_census_sha256\":\"34005ca812cf0e0b2652aeb0d6f6a50089da9fb2f791c40712655f7edd6e02cd\",\"input_shas\":{\"scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py\":\"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4\"},\"runner_sha256\":\"3ff406e5ddb9e4972c52a8e6e7681af04dfbaecf3c2dbc595dcf94ca0f09c4bd\",\"runtime_seconds\":12.198,\"runtime_under_1400s\":true,\"stdout_bytes\":39855,\"stdout_under_150KB\":true}\nCYCLE869_CLOCK_RELATION_MEASUREMENT_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T023448Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle869_clock_relation_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

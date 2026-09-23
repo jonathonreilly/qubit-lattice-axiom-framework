@@ -1,0 +1,242 @@
+{
+  "base": {
+    "cache_digest_matches_reconstruction_pin": true,
+    "cache_mode": "reused",
+    "cache_sha256": "5966321976dceb304d78b53570912beaa458b1009994d413ccd270f9202e5e97",
+    "controller_charged": 96,
+    "controller_neutral": 16558,
+    "controller_wires": 6205,
+    "local_companion_offsets": 66,
+    "old_owner": [
+      -8,
+      0,
+      0
+    ],
+    "source_sha256": {
+      "Cycle822": "17af3e27463c94a1e98f6bfe578b6d7b1a575af50bccd96b472ab0ede44f775c",
+      "Cycle823": "1c70bf782005bbf90608c99417470dcb0f964749644849c8835ef6314c61a737",
+      "Cycle827": "ee105138368935e9f4d54aa9efeaa01c2b8b8d103058ffd3ce184712f62010e7",
+      "Cycle863": "26fe3c29f64bec9a0e49c79cd28e244d9a94d28d627396a345c777953c1de38c"
+    }
+  },
+  "claim_boundary": {
+    "certified_here": "uniformly dilated actual per-cell persistent/source templates, one Cycle827 controller atlas per unordered actual edge, and typed FSWAP/SWAP controller-port corridors",
+    "cycle823_full_typed_update_at_pitch_320": "NOT recompiled; intercell Cycle822/823 seam/update corridors are outside this placement certificate",
+    "mass_contact": "not numerically rerun; preservation is only the conditional semantic conjugation corollary if the dilated Cycle823 update is separately compiled"
+  },
+  "covariance": {
+    "axis_frame_action_failures": 0,
+    "collision_invariance_identity": "for every signed-permutation frame/translation T, injectivity gives T(A) intersect T(B)=T(A intersect B); base-box zero intersections therefore remain exactly zero",
+    "doubled_midpoint_equivariance_failures": 0,
+    "material_colour_frame_failures": 0,
+    "ordered_frame_products": 576,
+    "proper_cubic_closure_failures": 0,
+    "proper_cubic_frames": 24,
+    "proper_cubic_product_failures": 0,
+    "translation_failures": 0,
+    "translation_path_coordinate_failures": 0,
+    "translation_path_coordinate_tests": 1429515,
+    "translation_tests": 3186,
+    "translation_vectors": 27,
+    "transported_anchor_bijection_failures": 0,
+    "transported_path_nearest_neighbour_failures": 0
+  },
+  "pass": true,
+  "report_sha256": "66f109f35822a9ed8988416bf1f386fd79173ff02c3fc7a8eebcaa1e7a158347",
+  "route_a_owner_local_comparison": {
+    "3x1x1": {
+      "cross_type_conflict_pairs": 1,
+      "cross_type_conflict_sites": 26,
+      "global_cross_type_coordinates": 26,
+      "persistent_conflict_pairs": 1,
+      "persistent_conflict_sites": 18
+    },
+    "3x2x2": {
+      "cross_type_conflict_pairs": 66,
+      "cross_type_conflict_sites": 2073,
+      "global_cross_type_coordinates": 1439,
+      "persistent_conflict_pairs": 48,
+      "persistent_conflict_sites": 54246
+    },
+    "5x3x2": {
+      "cross_type_conflict_pairs": 433,
+      "cross_type_conflict_sites": 12967,
+      "global_cross_type_coordinates": 5499,
+      "persistent_conflict_pairs": 309,
+      "persistent_conflict_sites": 269187
+    },
+    "comparison_only_global_rack_not_imported": "Route A slot(i)=(256,256,256)+160*(i mod4, floor(i/4) mod4, floor(i/16))"
+  },
+  "rule": {
+    "blank_typed_corridor_genesis": "SUPPLIED",
+    "cell_pitch": 320,
+    "coframe_genesis": "SUPPLIED proper cubic frame",
+    "colour": "material kappa=sum(owner-colour_origin) mod 8 in the supplied coframe; origin and coframe co-transform",
+    "colour_origin_genesis": "SUPPLIED",
+    "controller_anchor": "physical_origin+160*q",
+    "doubled_midpoint": "q=n_left+n_right=2*canonical_owner+positive_axis_unit; computed from the unordered incident-cell labels",
+    "exact_symmetry_group": "coarse translations 320*Z^3 semidirect proper-cubic 24-frame action on the supplied material coframe; no unit-lattice translation claim",
+    "global_edge_enumeration": false,
+    "half_pitch": 160,
+    "physical_origin_genesis": "SUPPLIED",
+    "uniform_source_embedding": "E_D(cell,local)=physical_origin+320*cell+local"
+  },
+  "shapes": [
+    {
+      "anchor_sha256": "f48bb2adc553447978c6229cc500b3e69c33a91ee48ea4c3aa4e8907496393c5",
+      "axis_counts": {
+        "0": 8,
+        "1": 6,
+        "2": 6
+      },
+      "cells": 12,
+      "charged_FSWAP_routes": 40,
+      "colour_counts": {
+        "0": 3,
+        "1": 7,
+        "2": 7,
+        "3": 3
+      },
+      "colour_local_gradient_failures": 0,
+      "colour_single_cell_flip_detected_edges": 4,
+      "combined_charged_neutral_overlap": 0,
+      "companion_hit_samples": [],
+      "conflict_pairs": {
+        "charged_charged": 0,
+        "charged_neutral": 0,
+        "controller_companion": 0,
+        "neutral_charged": 0,
+        "neutral_neutral": 0,
+        "own_charged_neutral": 0,
+        "own_path_pair": 0,
+        "path_active_deletion_missing": 0,
+        "path_companion_persistent": 0,
+        "path_non_nn": 0,
+        "path_pair": 0,
+        "path_repeat": 0,
+        "path_route_structure": 0,
+        "persistent_wires": 0
+      },
+      "conflict_sites": {
+        "charged_charged": 0,
+        "charged_neutral": 0,
+        "controller_companion": 0,
+        "neutral_charged": 0,
+        "neutral_neutral": 0,
+        "own_charged_neutral": 0,
+        "own_path_pair": 0,
+        "path_companion_persistent": 0,
+        "path_pair": 0,
+        "persistent_wires": 0
+      },
+      "controller_wire_coordinates": 124100,
+      "edges": 20,
+      "endpoint_auxiliary_alias_failures": 0,
+      "endpoint_auxiliary_coordinates": 60,
+      "endpoint_auxiliary_local_persistent_collisions": 0,
+      "incident_label_edge_address_failures": 0,
+      "neutral_SWAP_routes": 20,
+      "own_cross_samples": [],
+      "path_count": 60,
+      "path_distance_maximum": 312,
+      "path_distance_minimum": 236,
+      "path_distance_sum": 16448,
+      "path_sha256": "c5a543f3d745cfe2bf457d961409f9e209c6de7094c29e5c56ee5181ca2dc58b",
+      "returned_exchange_factor_sum": 32836,
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "shared_edge_alias_failures": 0,
+      "uniform_full_source_template_binding_failures": 0,
+      "uniform_source_dilation_binding_failures": 0
+    },
+    {
+      "anchor_sha256": "10a7e7f4524719ab4d1a0322ad2f84fe510f9203eff8c08cd66b49cd237fba3b",
+      "axis_counts": {
+        "0": 24,
+        "1": 20,
+        "2": 15
+      },
+      "cells": 30,
+      "charged_FSWAP_routes": 118,
+      "colour_counts": {
+        "0": 3,
+        "1": 8,
+        "2": 12,
+        "3": 13,
+        "4": 12,
+        "5": 8,
+        "6": 3
+      },
+      "colour_local_gradient_failures": 0,
+      "colour_single_cell_flip_detected_edges": 5,
+      "combined_charged_neutral_overlap": 0,
+      "companion_hit_samples": [],
+      "conflict_pairs": {
+        "charged_charged": 0,
+        "charged_neutral": 0,
+        "controller_companion": 0,
+        "neutral_charged": 0,
+        "neutral_neutral": 0,
+        "own_charged_neutral": 0,
+        "own_path_pair": 0,
+        "path_active_deletion_missing": 0,
+        "path_companion_persistent": 0,
+        "path_non_nn": 0,
+        "path_pair": 0,
+        "path_repeat": 0,
+        "path_route_structure": 0,
+        "persistent_wires": 0
+      },
+      "conflict_sites": {
+        "charged_charged": 0,
+        "charged_neutral": 0,
+        "controller_companion": 0,
+        "neutral_charged": 0,
+        "neutral_neutral": 0,
+        "own_charged_neutral": 0,
+        "own_path_pair": 0,
+        "path_companion_persistent": 0,
+        "path_pair": 0,
+        "persistent_wires": 0
+      },
+      "controller_wire_coordinates": 366095,
+      "edges": 59,
+      "endpoint_auxiliary_alias_failures": 0,
+      "endpoint_auxiliary_coordinates": 177,
+      "endpoint_auxiliary_local_persistent_collisions": 0,
+      "incident_label_edge_address_failures": 0,
+      "neutral_SWAP_routes": 59,
+      "own_cross_samples": [],
+      "path_count": 177,
+      "path_distance_maximum": 360,
+      "path_distance_minimum": 236,
+      "path_distance_sum": 52768,
+      "path_sha256": "bda0f9550eabdd5d762a6e6181093c29b4b9693b35580aed95ab465e211b16f5",
+      "returned_exchange_factor_sum": 105359,
+      "shape": [
+        5,
+        3,
+        2
+      ],
+      "shared_edge_alias_failures": 0,
+      "uniform_full_source_template_binding_failures": 0,
+      "uniform_source_dilation_binding_failures": 0
+    }
+  ],
+  "size_independent_local_bounds": {
+    "finite_template_variants": 24,
+    "maximum_chebyshev_radius_about_edge_midpoint": 164,
+    "maximum_forward_load_return_factors": 3595,
+    "maximum_single_port_distance": 376,
+    "maximum_single_returned_macro_factors": 751,
+    "maximum_three_route_one_pass_factors": 2173,
+    "maximum_typed_support_coordinates_per_edge": 17733,
+    "rows_sha256": "7a918c050de7bc90a3fed7db86945400911fcba19c0523ad30f81e5c5a8ac7d3",
+    "size_independent": true
+  },
+  "status": "cycle864-local-dilated-edge-midpoint-controller-port-placement-pass"
+}
+CYCLE864_LOCAL_DILATED_SERVICE_PASS

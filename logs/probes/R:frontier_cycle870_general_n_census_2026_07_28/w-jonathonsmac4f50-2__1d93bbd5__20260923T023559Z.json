@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle870_general_n_census_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle870_general_n_census_2026_07_28.py",
+ "seed": 30959,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1d93bbd5",
+ "started_utc": "20260923T023559Z",
+ "elapsed_s": 2.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4e8abde84f284d6d104587ef9eca60a601c1938a365b044496b8913fd50f7dc4",
+ "stdout_tail": "with no source artifact; it attributes nothing to any external document.  The supplied phased row 4/4/4/8/96 equals the orbit-MULTIPLICITY table under the supplied free Z_4 phase premise (conditional) and is false read as orbit sizes.\nFINAL :: {\"comparator_declared_scope_matches\":false,\"comparator_phased_row_is_multiplicities\":true,\"comparator_spectrum_matching_scopes\":[\"K_GE_2\"],\"general_law\":\"I(n,k) = (n/k) * C(n-k-1, k-1) = n/(n-k) * C(n-k, k) for 3 <= n and 1 <= k <= floor(n/2); I(n,0) = 1.  Conditional on the supplied phase premise (one global four-valued label attached to the whole placement as a free Cartesian Z_4 factor, independent of the site subset -- supplied, not derived): N(n,k) = 4 * I(n,k) and N(n,0) = 4.\",\"invariant_subset_floor_law\":\"min nonempty C_n-invariant subset of placements has size spf(n); the x4 phase lift is conditional on the supplied Z_4 premise\",\"min_invariant_subset_n12\":2,\"min_invariant_subset_n12_with_phase_conditional\":8,\"n11_k1_extension_is_new_scope_not_landed\":true,\"n11_phased_census\":{\"0\":4,\"1\":44,\"2\":176,\"3\":308,\"4\":220,\"5\":44},\"n11_quoted_subrow_reproduced\":true,\"n12_native_spectra\":{\"ALL_K\":{\"1\":1,\"12\":25,\"2\":1,\"3\":1,\"4\":1,\"6\":2},\"K_EQ_2\":{\"12\":4,\"6\":1},\"K_GE_1\":{\"12\":25,\"2\":1,\"3\":1,\"4\":1,\"6\":2},\"K_GE_2\":{\"12\":24,\"2\":1,\"3\":1,\"4\":1,\"6\":2}},\"n12_phased_census\":{\"0\":4,\"1\":48,\"2\":216,\"3\":448,\"4\":420,\"5\":144,\"6\":8},\"pass\":true,\"phase_values_conditional_on_supplied_premise\":true,\"runtime_seconds\":1.74493}\nCYCLE870_GENERAL_N_CENSUS_LAW_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T023601Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle870_general_n_census_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

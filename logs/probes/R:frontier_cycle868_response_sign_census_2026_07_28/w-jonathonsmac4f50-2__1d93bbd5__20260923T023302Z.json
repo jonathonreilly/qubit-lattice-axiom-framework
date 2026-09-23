@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle868_response_sign_census_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle868_response_sign_census_2026_07_28.py",
+ "seed": 30782,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1d93bbd5",
+ "started_utc": "20260923T023302Z",
+ "elapsed_s": 1.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "34f40e949330d4e76bfbecc3474e631d3e4e49288f55ff4d0717a74bf92d4eeb",
+ "stdout_tail": "repository audit inputs: the ledger, the source family, the grading, and the six response objects are stipulated in-file, and the provenance-only ancestor modules stayed import-blocklisted with zero firewall hits. The full census was recomputed from scratch and reproduced byte-for-byte, and both the runtime and stdout caps were respected.\",\"firewall_hits\":[],\"firewall_hits_after_science\":[],\"literal_path_count\":0,\"pass\":true,\"provenance_only_context\":\"the Cycle-320/322/749/768/812 lineage is non-load-bearing provenance context, not a runner input or audit dependency; its modules stay import-blocklisted as a belt\",\"read_cap\":0,\"runtime_limit_seconds\":1400,\"runtime_seconds\":1.648015,\"runtime_under_limit\":true,\"source_rows\":[],\"sources_pass\":true,\"stdout_bytes\":21347,\"stdout_limit_bytes\":150000,\"stdout_under_limit\":true,\"stipulated_in_file\":\"the recoil ledger (-2d,+d,+d), the declared source family, the sector-trace grading, and the six response objects are stipulated in this file; no repository file is consumed as evidence and no audit input is declared\"}\nFINAL {\"checks\":{\"A_SCOPE\":true,\"B_FAMILY\":true,\"C_RESPONSE_OBJECTS\":true,\"D_SIGN_CENSUS\":true,\"E_MECHANISMS\":true,\"F_CALIBRATION\":true,\"G_VERDICT\":true,\"H_CONTROLS\":true},\"pairs_censused\":8208,\"runtime_seconds\":1.648015,\"sign_blind_pairs\":8208,\"sign_sensitive_pairs\":0,\"stdout_bytes\":21347,\"terminal\":\"CYCLE868_RESPONSE_SIGN_CENSUS_COMPLETE\",\"unattributed_blind\":0,\"verdict\":\"EXACT_SUPPORT_SIGN_INVISIBLE_ON_STIPULATED_SURFACE\"}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T023304Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

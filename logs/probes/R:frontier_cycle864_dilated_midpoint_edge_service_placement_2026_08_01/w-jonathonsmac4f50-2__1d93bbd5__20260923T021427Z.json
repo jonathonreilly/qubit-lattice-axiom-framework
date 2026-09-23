@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle864_dilated_midpoint_edge_service_placement_2026_08_01",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle864_dilated_midpoint_edge_service_placement_2026_08_01.py",
+ "seed": 29667,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1d93bbd5",
+ "started_utc": "20260923T021427Z",
+ "elapsed_s": 19.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "308cda2c749870fcaef1d3fe76dbc6f8c306f3453797c34daba935b1dbd93f2d",
+ "stdout_tail": "nt\": 0,\n        \"path_pair\": 0,\n        \"persistent_wires\": 0\n      },\n      \"controller_wire_coordinates\": 366095,\n      \"edges\": 59,\n      \"endpoint_auxiliary_alias_failures\": 0,\n      \"endpoint_auxiliary_coordinates\": 177,\n      \"endpoint_auxiliary_local_persistent_collisions\": 0,\n      \"incident_label_edge_address_failures\": 0,\n      \"neutral_SWAP_routes\": 59,\n      \"own_cross_samples\": [],\n      \"path_count\": 177,\n      \"path_distance_maximum\": 360,\n      \"path_distance_minimum\": 236,\n      \"path_distance_sum\": 52768,\n      \"path_sha256\": \"bda0f9550eabdd5d762a6e6181093c29b4b9693b35580aed95ab465e211b16f5\",\n      \"returned_exchange_factor_sum\": 105359,\n      \"shape\": [\n        5,\n        3,\n        2\n      ],\n      \"shared_edge_alias_failures\": 0,\n      \"uniform_full_source_template_binding_failures\": 0,\n      \"uniform_source_dilation_binding_failures\": 0\n    }\n  ],\n  \"size_independent_local_bounds\": {\n    \"finite_template_variants\": 24,\n    \"maximum_chebyshev_radius_about_edge_midpoint\": 164,\n    \"maximum_forward_load_return_factors\": 3595,\n    \"maximum_single_port_distance\": 376,\n    \"maximum_single_returned_macro_factors\": 751,\n    \"maximum_three_route_one_pass_factors\": 2173,\n    \"maximum_typed_support_coordinates_per_edge\": 17733,\n    \"rows_sha256\": \"7a918c050de7bc90a3fed7db86945400911fcba19c0523ad30f81e5c5a8ac7d3\",\n    \"size_independent\": true\n  },\n  \"status\": \"cycle864-local-dilated-edge-midpoint-controller-port-placement-pass\"\n}\nCYCLE864_LOCAL_DILATED_SERVICE_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T021446Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

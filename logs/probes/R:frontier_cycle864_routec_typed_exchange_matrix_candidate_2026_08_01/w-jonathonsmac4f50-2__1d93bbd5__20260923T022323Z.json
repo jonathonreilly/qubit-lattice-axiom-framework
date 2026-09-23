@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle864_routec_typed_exchange_matrix_candidate_2026_08_01",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle864_routec_typed_exchange_matrix_candidate_2026_08_01.py",
+ "seed": 30203,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1d93bbd5",
+ "started_utc": "20260923T022323Z",
+ "elapsed_s": 393.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bfb40f326422e3745752419e0f0861c6a6217ec44bd65006f3f293a4d5f204d5",
+ "stdout_tail": "tionary_sha256\": \"f238dc1fdd233c013f6dd31329912d17c5f0bb117bf2c882b9c2c275e1e9e32d\", \"runner_sha256\": \"010367488777b1d522b962f9fdd5d13c1f3c7e069b0d55cb0260645e2598287d\", \"runner_source\": \"scripts/frontier_cycle864_routec_typed_exchange_matrix_candidate_2026_08_01.py\"}, \"status\": \"bounded-selected-two-station-routec-typed-exchange-matrix-candidate\"}\nCHECK charged_matrix_candidate_exact_and_order_sensitive PASS\nCHECK charged_matrix_candidate_preserves_clean_cSWAP_domain PASS\nCHECK charged_matrix_candidate_forward_adjoint_phase_exact PASS\nCHECK charged_matrix_candidate_factor_and_prefix_P_ext PASS\nCHECK candidate_factor_trace_authenticated_and_adverse_boundary_exposed PASS\nCHECK neutral_Fredkin_matrix_candidate_exact_expanded_and_order_sensitive PASS\nCHECK neutral_Fredkin_candidate_kinds_available_and_Cycle827_parity_safe PASS\nCHECK candidate_local_taxis_and_oriented_factor_sites_fit_retyped_palette PASS\nCHECK supplied_singleton_serial_slots_and_returned_labels_fit PASS\nCHECK guard_lawful_and_inverse PASS\nCHECK passive_covariant_24_576_and_held_transport PASS\nCHECK lawful_service_and_full_inverse_exact PASS\nCHECK existing_unlawful_and_dirty_controls_preserved PASS\nCHECK existing_route_guard_controller_deletions_active PASS\nCHECK each_charged_matrix_candidate_factor_deletion_active_in_service PASS\nCHECK each_pointer_Fredkin_physical_factor_deletion_active_on_clean_local_domain PASS\nCHECK controller_normalization_preserved PASS\nCYCLE864_ROUTEC_TYPED_EXCHANGE_MATRIX_CANDIDATE_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T022957Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

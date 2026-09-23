@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle864_multiedge_finite_rack_tournament_2026_08_01",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle864_multiedge_finite_rack_tournament_2026_08_01.py",
+ "seed": 29708,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1d93bbd5",
+ "started_utc": "20260923T021508Z",
+ "elapsed_s": 494.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9cfde64221145b95429fd488c92013920b33edf5cf0cb8b0064e459483f4d634",
+ "stdout_tail": "99,\n        \"local_port_internal_companion_persistent_hits\": 0,\n        \"own_template_charged_neutral_overlaps\": 0,\n        \"pair_conflict_counts\": {\n          \"any_cross_type\": 433,\n          \"any_overlap\": 568,\n          \"charged_charged\": 145,\n          \"controller_persistent\": 309,\n          \"left_charged_right_neutral\": 220,\n          \"left_neutral_right_charged\": 289,\n          \"neutral_neutral\": 364\n        },\n        \"pointer_adapter_charged_hits\": 0,\n        \"pointer_adapter_distance_census\": {\n          \"0\": 24,\n          \"4\": 35\n        },\n        \"pointer_adapter_failures\": 0,\n        \"pointer_adapter_internal_persistent_hits\": 0,\n        \"pointer_target_failures\": 0,\n        \"template_companion_cross_type_pairs\": 59,\n        \"template_companion_cross_type_site_hits\": 12172\n      },\n      \"runtime_seconds\": 254.1617169380188,\n      \"shape\": [\n        5,\n        3,\n        2\n      ]\n    }\n  ],\n  \"status\": \"cycle864-finite-held-multiedge-rack-bounded-positive\"\n}\nCHECK proper_axis_coframes: PASS\nCHECK independent_controller_truth_table: PASS\nCHECK all_held_owner_templates_bound: PASS\nCHECK finite_rack_has_no_fixed_or_persistent_collision: PASS\nCHECK all_routes_are_typed_nearest_neighbour_and_returned: PASS\nCHECK state_level_route_controls_are_active: PASS\nCHECK signature_compositions_match_independent_table: PASS\nCHECK passive_covariance_and_affine_transport: PASS\nCHECK one_particle_mass_and_contact_fixture_preserved: PASS\nCYCLE864_FINITE_MULTIEDGE_RACK_BOUNDED_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T022323Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

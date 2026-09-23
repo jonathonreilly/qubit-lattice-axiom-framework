@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle864_local_grant_arbiter_discriminator_2026_08_01",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle864_local_grant_arbiter_discriminator_2026_08_01.py",
+ "seed": 29703,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1d93bbd5",
+ "started_utc": "20260923T021503Z",
+ "elapsed_s": 4.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "486a8c3ca8895b6c55484c3ca938be5b4ad35c435455a46c7710af1b3f891b29",
+ "stdout_tail": "sidual\": 2.231687133607212e-16\n      },\n      {\n        \"exchange_enabled\": true,\n        \"lawful\": true,\n        \"packet\": [\n          1,\n          0,\n          1\n        ],\n        \"request\": 1,\n        \"residual\": 2.231687133607212e-16\n      },\n      {\n        \"exchange_enabled\": false,\n        \"lawful\": true,\n        \"packet\": [\n          1,\n          1,\n          0\n        ],\n        \"request\": 0,\n        \"residual\": 4.452147374007132e-16\n      },\n      {\n        \"exchange_enabled\": true,\n        \"lawful\": true,\n        \"packet\": [\n          1,\n          1,\n          0\n        ],\n        \"request\": 1,\n        \"residual\": 4.452147374007132e-16\n      },\n      {\n        \"exchange_enabled\": false,\n        \"lawful\": false,\n        \"packet\": [\n          1,\n          1,\n          1\n        ],\n        \"request\": 0,\n        \"residual\": 4.452147374007132e-16\n      },\n      {\n        \"exchange_enabled\": false,\n        \"lawful\": false,\n        \"packet\": [\n          1,\n          1,\n          1\n        ],\n        \"request\": 1,\n        \"residual\": 4.452147374007132e-16\n      }\n    ],\n    \"validator_one_site_factors\": 22,\n    \"validator_plus_packet_switch_one_site_factors\": 49,\n    \"validator_plus_packet_switch_total_factors\": 147,\n    \"validator_plus_packet_switch_two_site_factors\": 98,\n    \"validator_total_factors\": 72,\n    \"validator_two_site_factors\": 50\n  },\n  \"status\": \"conditional-two-ingress-grant-arbiter-with-supplied-new-Givens\"\n}\nCYCLE864_LOCAL_GRANT_ARBITER_CONDITIONAL_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T021508Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

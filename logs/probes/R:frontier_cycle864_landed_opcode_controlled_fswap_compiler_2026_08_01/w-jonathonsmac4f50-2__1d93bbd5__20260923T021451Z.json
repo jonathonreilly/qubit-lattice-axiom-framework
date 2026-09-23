@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle864_landed_opcode_controlled_fswap_compiler_2026_08_01",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle864_landed_opcode_controlled_fswap_compiler_2026_08_01.py",
+ "seed": 29691,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1d93bbd5",
+ "started_utc": "20260923T021451Z",
+ "elapsed_s": 11.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f73ed0e20202ef76809525a170b44c7c14a5007ac0ae7b1c95122d945452fef6",
+ "stdout_tail": "y prefix\", \"uncontrolled_FSWAP_pair_identity\": {\"best_residual_by_depth\": {\"0\": 2.8284271247461903, \"1\": 2.274109248750774, \"2\": 1.9999999999999998, \"3\": 1.530733729460359, \"4\": 1.9999999999999996, \"5\": 1.530733729460359, \"6\": 8.883826581827323e-16}, \"depth_frontiers\": {\"0\": 1, \"1\": 6, \"2\": 23, \"3\": 52, \"4\": 63, \"5\": 38, \"6\": 9}, \"distinct_projective_group_elements_seen\": 192, \"phase_relative_to_FSWAP\": [0.0, -1.0], \"residual_up_to_phase\": 8.883826581827323e-16, \"word\": [\"PAIR_R_XX_+1\", \"PAIR_R_XY_+1\", \"PAIR_R_XX_+1\", \"PAIR_R_YX_-1\", \"PAIR_R_XX_+1\", \"PAIR_R_XY_-1\"]}}\nCHECK only_emitted_pair_opcodes_are_used PASS\nCHECK neutral_T_Tdg_CNOT_are_actually_emitted PASS\nCHECK six_pair_word_is_FSWAP_up_to_an_exact_quarter_phase PASS\nCHECK clean_phase_kickback_synthesis_is_exact_and_returns_work PASS\nCHECK every_factor_and_prefix_commutes_with_same_P_ext PASS\nCHECK every_single_factor_and_controlled_block_deletion_is_active PASS\nCHECK landed_Givens_W_and_W_dagger_are_exact_forward_words PASS\nCHECK eleven_factor_ancilla_free_controlled_FSWAP_matches_all_8_columns PASS\nCHECK direct_route_returns_control_and_unused_ancilla_and_is_self_inverse PASS\nCHECK direct_route_every_factor_is_landed_and_has_local_NN_exemplars PASS\nCHECK direct_route_has_one_fixed_three_site_NN_layout PASS\nCHECK direct_route_every_factor_and_prefix_commutes_with_same_P_ext PASS\nCHECK direct_route_delete_each_of_11_factors_is_active PASS\nACTUAL_LANDED_OPCODE_NEUTRAL_CONTROLLED_CHARGED_FSWAP_DIRECT_AND_CLEAN_WORK_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T021503Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

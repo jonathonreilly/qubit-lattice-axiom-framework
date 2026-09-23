@@ -1,0 +1,685 @@
+SHAPE_DONE (3, 1, 1) 7.701249122619629
+SHAPE_DONE (3, 2, 2) 77.4750280380249
+SHAPE_DONE (5, 3, 2) 254.16172003746033
+{
+  "audit": "unset",
+  "authority": "none",
+  "base": {
+    "axis_frame_determinant_failures": 0,
+    "axis_frame_membership_failures": 0,
+    "axis_frames": [
+      [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ]
+    ],
+    "controller_charged_M2": 96,
+    "controller_neutral_M2": 16558,
+    "controller_persistent_M2": 6205,
+    "controller_targets": [
+      [
+        0,
+        -12,
+        -2
+      ],
+      [
+        -4,
+        -10,
+        0
+      ],
+      [
+        -2,
+        -11,
+        -1
+      ]
+    ],
+    "cycle863_owner_center": [
+      -8,
+      0,
+      0
+    ],
+    "cycle863_port_distances": [
+      28,
+      28,
+      8
+    ]
+  },
+  "checks": {
+    "all_held_owner_templates_bound": true,
+    "all_routes_are_typed_nearest_neighbour_and_returned": true,
+    "finite_rack_has_no_fixed_or_persistent_collision": true,
+    "independent_controller_truth_table": true,
+    "one_particle_mass_and_contact_fixture_preserved": true,
+    "passive_covariance_and_affine_transport": true,
+    "proper_axis_coframes": true,
+    "signature_compositions_match_independent_table": true,
+    "state_level_route_controls_are_active": true
+  },
+  "controller_semantics": {
+    "H_ordinals": 130,
+    "cleanup_failures": 0,
+    "history_failures": 0,
+    "imported_interface_agreement_failures": 0,
+    "inverse_failures": 0,
+    "normalized_semantic_gates_per_H": 61562,
+    "truth_rows": 4
+  },
+  "cycle": 864,
+  "inventory": {
+    "derived": [
+      "axis-dependent endpoint templates and zero/four/four-step pointer adapters",
+      "owner-local collision census on the actual 2/20/59-edge held fixtures",
+      "one collision-free finite rack placement and typed returned routes per held edge",
+      "state-level route transfer, inverse, dirty-sign, and deletion witnesses",
+      "exact sparse signature composition and passive proper-cubic covariance"
+    ],
+    "open": [
+      "local translation-equivariant controller placement and corridor generation",
+      "autonomous arbitration, program/token genesis, occurrence, capacity, and renewal",
+      "dense global multiedge amplitude execution",
+      "physical time, permanent Record, Born/history, source/gravity, and prediction bridges"
+    ],
+    "supplied": [
+      "global edge enumeration and a finite 4x4x4 rack with origin and pitch",
+      "one complete Cycle719 controller replica per edge",
+      "axis coframe, blank typed corridors, and fixed serial circuit order",
+      "clean Cycle823/Cycle719 genesis, unique token, fixed program, and admission"
+    ]
+  },
+  "one_particle_mass_and_contact_fixture": {
+    "Cycle219_mass_fixture": 0.4534056541748851,
+    "contact_double_occupation_phase_residual": 0.0,
+    "contact_vacuum_and_one_particle_residual": 0.0,
+    "one_particle_coin_eigen_residual": 2.594441202963249e-16,
+    "one_particle_extended_even_sector_present": true,
+    "one_particle_mass": 0.45340565417488515,
+    "one_particle_mass_residual": 5.551115123125783e-17
+  },
+  "runtime_seconds": 493.21613788604736,
+  "scope": "direct per-edge Cycle719 replicas over actual Cycle823 held boxes; finite rack and supplied coframe/color/blank corridors/genesis only",
+  "shapes": [
+    {
+      "cells": 3,
+      "composition": {
+        "coherent_fixed_parity_linearity_corollaries": 8,
+        "composition_failures": 0,
+        "dense_coherent_multiedge_execution_performed": false,
+        "hostile_charged_port_role_swap_cases_detected": 16,
+        "hostile_charged_port_role_swap_cases_tested": 32,
+        "hostile_opportunity_phase_twist_cases_detected": 16,
+        "hostile_opportunity_phase_twist_cases_tested": 32,
+        "inverse_failures": 0,
+        "maximum_dictionary_residual": 0.0,
+        "maximum_hostile_charged_port_role_swap_residual": 1.4142135623730945,
+        "maximum_hostile_opportunity_phase_twist_residual": 1.9999999999999993,
+        "physical_signature_cases": 16,
+        "structural_failure_census": {
+          "controller_pointer_law_failures": 0,
+          "controller_role_binding_failures": 0,
+          "endpoint_return_failures": 0,
+          "route_macro_failures": 0
+        },
+        "target_signature_cases": 16,
+        "total_signature_cases": 32
+      },
+      "covariance_and_translation": {
+        "axis_coframe_binding_failures": 0,
+        "ordered_frame_products": 576,
+        "product_coordinate_samples": 512,
+        "proper_cubic_closure_failures": 0,
+        "proper_cubic_frames": 24,
+        "proper_cubic_product_failures": 0,
+        "translation_coordinate_tests": 42176,
+        "translation_failures": 0,
+        "translation_vectors": 8,
+        "transported_path_coordinate_bijection_failures": 0,
+        "transported_path_nearest_neighbour_failures": 0
+      },
+      "cycle823_type_report": {
+        "FSWAP_endpoint_type_failures": 0,
+        "P_ext_coordinate_sha256": "9e439005a6edf8883d55636878c9542d75a940978a93b832b7171222d485cd24",
+        "charged_neutral_coordinate_overlap": 0,
+        "charged_route_atlas_M2": 702,
+        "charged_route_fixed_type_failures": 0,
+        "global_charged_coordinate_count": 702,
+        "global_neutral_coordinate_count": 2068,
+        "neutral_route_atlas_M2": 1901,
+        "neutral_route_fixed_type_failures": 0,
+        "neutral_route_source_type_failures": 0,
+        "persistent_charged_M2": 57,
+        "persistent_neutral_M2": 147,
+        "persistent_type_partition_failures": 0,
+        "reserved_neutral_access_port_M2": 204,
+        "sample_cross_typed_coordinates": []
+      },
+      "edges": 2,
+      "finite_held_rack": {
+        "charged_coordinate_sha256": "cc85c1385bac4d6cf1e35e58bf16cd576f31754ce8585ed928bef8a72c40a0ed",
+        "combined_charged_coordinates": 4130,
+        "combined_charged_neutral_overlap": 0,
+        "combined_neutral_coordinates": 36902,
+        "controller_fixed_M2_per_edge": 16654,
+        "controller_persistent_M2_per_edge": 6205,
+        "fixed_palette_cross_type_coordinates_before_ports": 0,
+        "forward_port_factor_count": 17598,
+        "neutral_coordinate_sha256": "04394ad7c72eae5a9e871ea623b967f8363d46ceeeb36f1151abc5f3f6f257f6",
+        "path_sha256": "500acdecb5a3676726123127d542dd4148dfa5c9cbb17167947518aa539cc118",
+        "persistent_coordinates": 12614,
+        "placement_conflict_pairs": {
+          "charged_charged": 0,
+          "charged_neutral": 0,
+          "neutral_charged": 0,
+          "neutral_neutral": 0,
+          "persistent": 0
+        },
+        "placement_conflict_sites": {
+          "charged_charged": 0,
+          "charged_neutral": 0,
+          "neutral_charged": 0,
+          "neutral_neutral": 0,
+          "persistent": 0
+        },
+        "rack_anchor_bounds": {
+          "maximum": [
+            416,
+            256,
+            256
+          ],
+          "minimum": [
+            256,
+            256,
+            256
+          ]
+        },
+        "rack_side": 4,
+        "rack_spacing": 160,
+        "returned_route_gate_sum_one_pass": 10526,
+        "route_count": 6,
+        "route_distance_maximum": 956,
+        "route_distance_minimum": 792,
+        "route_distance_sum": 5266,
+        "route_failures": {
+          "active_deletion_missing": 0,
+          "charged_path_neutral_hits": 0,
+          "internal_persistent": 0,
+          "neutral_path_charged_hits": 0,
+          "non_nearest_neighbour": 0,
+          "repeated_site": 0,
+          "route_structure": 0,
+          "source_binding": 0,
+          "target_binding": 0
+        },
+        "same_type_serial_reuse": {
+          "charged_route_coordinate_occurrences_minus_unique": 276,
+          "neutral_route_coordinate_occurrences_minus_unique": 2
+        },
+        "state_level_route_controls": {
+          "central_deletion_failures": 0,
+          "central_deletions_detected": 6,
+          "dirty_endpoint_exchange_sign_failures": 0,
+          "literal_inverse_failures": 0,
+          "literal_transfer_failures": 0,
+          "maximum_central_deletion_residual": 1.4142135623730951,
+          "minimum_central_deletion_residual": 1.4142135623730951,
+          "route_cases": 6
+        },
+        "weighted_astar_discoveries": 15137,
+        "weighted_astar_expansions": 2563
+      },
+      "owner_local_templates": {
+        "aggregate_pair_intersection_sites": {
+          "any_cross_type": 26,
+          "any_overlap": 2581,
+          "charged_charged": 10,
+          "controller_persistent": 18,
+          "left_charged_right_neutral": 1,
+          "left_neutral_right_charged": 25,
+          "neutral_neutral": 2545
+        },
+        "axis_counts": {
+          "0": 2
+        },
+        "axis_template_sha256": "8b969a3cd88cfe7d20bb9041f1a385418a02ae756974a44de5c7dff1a50fc7d6",
+        "edges": 2,
+        "endpoint_binding_failures": 0,
+        "global_template_charged_neutral_overlap_coordinates": 26,
+        "local_port_internal_companion_persistent_hits": 0,
+        "own_template_charged_neutral_overlaps": 0,
+        "pair_conflict_counts": {
+          "any_cross_type": 1,
+          "any_overlap": 1,
+          "charged_charged": 1,
+          "controller_persistent": 1,
+          "left_charged_right_neutral": 1,
+          "left_neutral_right_charged": 1,
+          "neutral_neutral": 1
+        },
+        "pointer_adapter_charged_hits": 0,
+        "pointer_adapter_distance_census": {
+          "0": 2
+        },
+        "pointer_adapter_failures": 0,
+        "pointer_adapter_internal_persistent_hits": 0,
+        "pointer_target_failures": 0,
+        "template_companion_cross_type_pairs": 1,
+        "template_companion_cross_type_site_hits": 1
+      },
+      "runtime_seconds": 7.7012481689453125,
+      "shape": [
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "cells": 12,
+      "composition": {
+        "coherent_fixed_parity_linearity_corollaries": 80,
+        "composition_failures": 0,
+        "dense_coherent_multiedge_execution_performed": false,
+        "hostile_charged_port_role_swap_cases_detected": 160,
+        "hostile_charged_port_role_swap_cases_tested": 320,
+        "hostile_opportunity_phase_twist_cases_detected": 160,
+        "hostile_opportunity_phase_twist_cases_tested": 320,
+        "inverse_failures": 0,
+        "maximum_dictionary_residual": 0.0,
+        "maximum_hostile_charged_port_role_swap_residual": 1.4142135623730945,
+        "maximum_hostile_opportunity_phase_twist_residual": 1.9999999999999993,
+        "physical_signature_cases": 160,
+        "structural_failure_census": {
+          "controller_pointer_law_failures": 0,
+          "controller_role_binding_failures": 0,
+          "endpoint_return_failures": 0,
+          "route_macro_failures": 0
+        },
+        "target_signature_cases": 160,
+        "total_signature_cases": 320
+      },
+      "covariance_and_translation": {
+        "axis_coframe_binding_failures": 0,
+        "ordered_frame_products": 576,
+        "product_coordinate_samples": 512,
+        "proper_cubic_closure_failures": 0,
+        "proper_cubic_frames": 24,
+        "proper_cubic_product_failures": 0,
+        "translation_coordinate_tests": 606528,
+        "translation_failures": 0,
+        "translation_vectors": 8,
+        "transported_path_coordinate_bijection_failures": 0,
+        "transported_path_nearest_neighbour_failures": 0
+      },
+      "cycle823_type_report": {
+        "FSWAP_endpoint_type_failures": 0,
+        "P_ext_coordinate_sha256": "270545d934058de3b8454af5174a5dc7fd9e2b0c45e93f6b358be317e7aa1004",
+        "charged_neutral_coordinate_overlap": 0,
+        "charged_route_atlas_M2": 3433,
+        "charged_route_fixed_type_failures": 0,
+        "global_charged_coordinate_count": 3433,
+        "global_neutral_coordinate_count": 13191,
+        "neutral_route_atlas_M2": 12558,
+        "neutral_route_fixed_type_failures": 0,
+        "neutral_route_source_type_failures": 0,
+        "persistent_charged_M2": 228,
+        "persistent_neutral_M2": 624,
+        "persistent_type_partition_failures": 0,
+        "reserved_neutral_access_port_M2": 852,
+        "sample_cross_typed_coordinates": []
+      },
+      "edges": 20,
+      "finite_held_rack": {
+        "charged_coordinate_sha256": "db8d7ca5bb9c096530848062473ba9f0111f2ec7727762be5f429671df150a2d",
+        "combined_charged_coordinates": 48550,
+        "combined_charged_neutral_overlap": 0,
+        "combined_neutral_coordinates": 368327,
+        "controller_fixed_M2_per_edge": 16654,
+        "controller_persistent_M2_per_edge": 6205,
+        "fixed_palette_cross_type_coordinates_before_ports": 0,
+        "forward_port_factor_count": 252972,
+        "neutral_coordinate_sha256": "680a2ce7519538cdbe22acad3fcf37ef8f1b758a8f52b45636d67d2d6e2081be",
+        "path_sha256": "5e7195115687353bf70b22b9299f8c41fc1bece71f76d0af7974dba9f35cc3b0",
+        "persistent_coordinates": 124952,
+        "placement_conflict_pairs": {
+          "charged_charged": 0,
+          "charged_neutral": 0,
+          "neutral_charged": 0,
+          "neutral_neutral": 0,
+          "persistent": 0
+        },
+        "placement_conflict_sites": {
+          "charged_charged": 0,
+          "charged_neutral": 0,
+          "neutral_charged": 0,
+          "neutral_neutral": 0,
+          "persistent": 0
+        },
+        "rack_anchor_bounds": {
+          "maximum": [
+            736,
+            736,
+            416
+          ],
+          "minimum": [
+            256,
+            256,
+            256
+          ]
+        },
+        "rack_side": 4,
+        "rack_spacing": 160,
+        "returned_route_gate_sum_one_pass": 151452,
+        "route_count": 60,
+        "route_distance_maximum": 1742,
+        "route_distance_minimum": 814,
+        "route_distance_sum": 75756,
+        "route_failures": {
+          "active_deletion_missing": 0,
+          "charged_path_neutral_hits": 0,
+          "internal_persistent": 0,
+          "neutral_path_charged_hits": 0,
+          "non_nearest_neighbour": 0,
+          "repeated_site": 0,
+          "route_structure": 0,
+          "source_binding": 0,
+          "target_binding": 0
+        },
+        "same_type_serial_reuse": {
+          "charged_route_coordinate_occurrences_minus_unique": 7136,
+          "neutral_route_coordinate_occurrences_minus_unique": 842
+        },
+        "state_level_route_controls": {
+          "central_deletion_failures": 0,
+          "central_deletions_detected": 60,
+          "dirty_endpoint_exchange_sign_failures": 0,
+          "literal_inverse_failures": 0,
+          "literal_transfer_failures": 0,
+          "maximum_central_deletion_residual": 1.4142135623730951,
+          "minimum_central_deletion_residual": 1.4142135623730951,
+          "route_cases": 60
+        },
+        "weighted_astar_discoveries": 307082,
+        "weighted_astar_expansions": 58920
+      },
+      "owner_local_templates": {
+        "aggregate_pair_intersection_sites": {
+          "any_cross_type": 2073,
+          "any_overlap": 153261,
+          "charged_charged": 70,
+          "controller_persistent": 54246,
+          "left_charged_right_neutral": 595,
+          "left_neutral_right_charged": 1478,
+          "neutral_neutral": 151118
+        },
+        "axis_counts": {
+          "0": 8,
+          "1": 6,
+          "2": 6
+        },
+        "axis_template_sha256": "a9d6e6f20d590c7a97bbcec963252691a1bae2a37d2223210c2efafa6b887ab0",
+        "edges": 20,
+        "endpoint_binding_failures": 0,
+        "global_template_charged_neutral_overlap_coordinates": 1439,
+        "local_port_internal_companion_persistent_hits": 0,
+        "own_template_charged_neutral_overlaps": 0,
+        "pair_conflict_counts": {
+          "any_cross_type": 66,
+          "any_overlap": 96,
+          "charged_charged": 34,
+          "controller_persistent": 48,
+          "left_charged_right_neutral": 43,
+          "left_neutral_right_charged": 39,
+          "neutral_neutral": 52
+        },
+        "pointer_adapter_charged_hits": 0,
+        "pointer_adapter_distance_census": {
+          "0": 8,
+          "4": 12
+        },
+        "pointer_adapter_failures": 0,
+        "pointer_adapter_internal_persistent_hits": 0,
+        "pointer_target_failures": 0,
+        "template_companion_cross_type_pairs": 20,
+        "template_companion_cross_type_site_hits": 2559
+      },
+      "runtime_seconds": 77.47502517700195,
+      "shape": [
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "cells": 30,
+      "composition": {
+        "coherent_fixed_parity_linearity_corollaries": 236,
+        "composition_failures": 0,
+        "dense_coherent_multiedge_execution_performed": false,
+        "hostile_charged_port_role_swap_cases_detected": 472,
+        "hostile_charged_port_role_swap_cases_tested": 944,
+        "hostile_opportunity_phase_twist_cases_detected": 472,
+        "hostile_opportunity_phase_twist_cases_tested": 944,
+        "inverse_failures": 0,
+        "maximum_dictionary_residual": 0.0,
+        "maximum_hostile_charged_port_role_swap_residual": 1.4142135623730945,
+        "maximum_hostile_opportunity_phase_twist_residual": 1.9999999999999993,
+        "physical_signature_cases": 472,
+        "structural_failure_census": {
+          "controller_pointer_law_failures": 0,
+          "controller_role_binding_failures": 0,
+          "endpoint_return_failures": 0,
+          "route_macro_failures": 0
+        },
+        "target_signature_cases": 472,
+        "total_signature_cases": 944
+      },
+      "covariance_and_translation": {
+        "axis_coframe_binding_failures": 0,
+        "ordered_frame_products": 576,
+        "product_coordinate_samples": 512,
+        "proper_cubic_closure_failures": 0,
+        "proper_cubic_frames": 24,
+        "proper_cubic_product_failures": 0,
+        "translation_coordinate_tests": 2092760,
+        "translation_failures": 0,
+        "translation_vectors": 8,
+        "transported_path_coordinate_bijection_failures": 0,
+        "transported_path_nearest_neighbour_failures": 0
+      },
+      "cycle823_type_report": {
+        "FSWAP_endpoint_type_failures": 0,
+        "P_ext_coordinate_sha256": "8844cd75a6e507523439fec776db6cc4c9280bd853b101a2c423a7f733282390",
+        "charged_neutral_coordinate_overlap": 0,
+        "charged_route_atlas_M2": 8985,
+        "charged_route_fixed_type_failures": 0,
+        "global_charged_coordinate_count": 8985,
+        "global_neutral_coordinate_count": 34591,
+        "neutral_route_atlas_M2": 33019,
+        "neutral_route_fixed_type_failures": 0,
+        "neutral_route_source_type_failures": 0,
+        "persistent_charged_M2": 570,
+        "persistent_neutral_M2": 1587,
+        "persistent_type_partition_failures": 0,
+        "reserved_neutral_access_port_M2": 2157,
+        "sample_cross_typed_coordinates": []
+      },
+      "edges": 59,
+      "finite_held_rack": {
+        "charged_coordinate_sha256": "6cac353a7f156ed01255520f8f445baf307a278938e1de0d977d6c4c8cfc1abb",
+        "combined_charged_coordinates": 150116,
+        "combined_charged_neutral_overlap": 0,
+        "combined_neutral_coordinates": 1086823,
+        "controller_fixed_M2_per_edge": 16654,
+        "controller_persistent_M2_per_edge": 6205,
+        "fixed_palette_cross_type_coordinates_before_ports": 0,
+        "forward_port_factor_count": 872689,
+        "neutral_coordinate_sha256": "d1ce1a8165b1247983cecb0d86fd6b34f81cd02a3273eab4824f79fb56e4ed69",
+        "path_sha256": "af00ad96939cb6cb762cd7155a561e87d94080c9c5a86a6ef5650bde06b7f12d",
+        "persistent_coordinates": 368252,
+        "placement_conflict_pairs": {
+          "charged_charged": 0,
+          "charged_neutral": 0,
+          "neutral_charged": 0,
+          "neutral_neutral": 0,
+          "persistent": 0
+        },
+        "placement_conflict_sites": {
+          "charged_charged": 0,
+          "charged_neutral": 0,
+          "neutral_charged": 0,
+          "neutral_neutral": 0,
+          "persistent": 0
+        },
+        "rack_anchor_bounds": {
+          "maximum": [
+            736,
+            736,
+            736
+          ],
+          "minimum": [
+            256,
+            256,
+            256
+          ]
+        },
+        "rack_side": 4,
+        "rack_spacing": 160,
+        "returned_route_gate_sum_one_pass": 522659,
+        "route_count": 177,
+        "route_distance_maximum": 2054,
+        "route_distance_minimum": 836,
+        "route_distance_sum": 261418,
+        "route_failures": {
+          "active_deletion_missing": 0,
+          "charged_path_neutral_hits": 0,
+          "internal_persistent": 0,
+          "neutral_path_charged_hits": 0,
+          "non_nearest_neighbour": 0,
+          "repeated_site": 0,
+          "route_structure": 0,
+          "source_binding": 0,
+          "target_binding": 0
+        },
+        "same_type_serial_reuse": {
+          "charged_route_coordinate_occurrences_minus_unique": 38213,
+          "neutral_route_coordinate_occurrences_minus_unique": 10390
+        },
+        "state_level_route_controls": {
+          "central_deletion_failures": 0,
+          "central_deletions_detected": 177,
+          "dirty_endpoint_exchange_sign_failures": 0,
+          "literal_inverse_failures": 0,
+          "literal_transfer_failures": 0,
+          "maximum_central_deletion_residual": 1.4142135623730951,
+          "minimum_central_deletion_residual": 1.4142135623730951,
+          "route_cases": 177
+        },
+        "weighted_astar_discoveries": 1116079,
+        "weighted_astar_expansions": 217523
+      },
+      "owner_local_templates": {
+        "aggregate_pair_intersection_sites": {
+          "any_cross_type": 12967,
+          "any_overlap": 877396,
+          "charged_charged": 397,
+          "controller_persistent": 269187,
+          "left_charged_right_neutral": 3072,
+          "left_neutral_right_charged": 9895,
+          "neutral_neutral": 864032
+        },
+        "axis_counts": {
+          "0": 24,
+          "1": 20,
+          "2": 15
+        },
+        "axis_template_sha256": "8a54ed1bb965a8ce676ae48fb9cbd310c044e13163dc7e79818d1e2e0fc6891a",
+        "edges": 59,
+        "endpoint_binding_failures": 0,
+        "global_template_charged_neutral_overlap_coordinates": 5499,
+        "local_port_internal_companion_persistent_hits": 0,
+        "own_template_charged_neutral_overlaps": 0,
+        "pair_conflict_counts": {
+          "any_cross_type": 433,
+          "any_overlap": 568,
+          "charged_charged": 145,
+          "controller_persistent": 309,
+          "left_charged_right_neutral": 220,
+          "left_neutral_right_charged": 289,
+          "neutral_neutral": 364
+        },
+        "pointer_adapter_charged_hits": 0,
+        "pointer_adapter_distance_census": {
+          "0": 24,
+          "4": 35
+        },
+        "pointer_adapter_failures": 0,
+        "pointer_adapter_internal_persistent_hits": 0,
+        "pointer_target_failures": 0,
+        "template_companion_cross_type_pairs": 59,
+        "template_companion_cross_type_site_hits": 12172
+      },
+      "runtime_seconds": 254.1617169380188,
+      "shape": [
+        5,
+        3,
+        2
+      ]
+    }
+  ],
+  "status": "cycle864-finite-held-multiedge-rack-bounded-positive"
+}
+CHECK proper_axis_coframes: PASS
+CHECK independent_controller_truth_table: PASS
+CHECK all_held_owner_templates_bound: PASS
+CHECK finite_rack_has_no_fixed_or_persistent_collision: PASS
+CHECK all_routes_are_typed_nearest_neighbour_and_returned: PASS
+CHECK state_level_route_controls_are_active: PASS
+CHECK signature_compositions_match_independent_table: PASS
+CHECK passive_covariance_and_affine_transport: PASS
+CHECK one_particle_mass_and_contact_fixture_preserved: PASS
+CYCLE864_FINITE_MULTIEDGE_RACK_BOUNDED_PASS

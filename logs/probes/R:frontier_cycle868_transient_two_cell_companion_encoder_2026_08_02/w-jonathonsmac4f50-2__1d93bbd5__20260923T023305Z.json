@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle868_transient_two_cell_companion_encoder_2026_08_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle868_transient_two_cell_companion_encoder_2026_08_02.py",
+ "seed": 30785,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1d93bbd5",
+ "started_utc": "20260923T023305Z",
+ "elapsed_s": 57.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "91d7be630e8677baf3d3d48a794bbbea756c9ce2d1dcd28b3dc6570ca7aa2854",
+ "stdout_tail": "axis 0 complete\naxis 1 complete\naxis 2 complete\n{\n  \"receipt\": \"/Users/jonBridger/.probe-workers/probes-view/slot-2/outputs/cycle868_transient_two_cell_companion_encoder_receipt_2026_08_02.json\",\n  \"report_sha256\": \"0a9a60d1ed672fc919b6b374cf94e4b3868303a2a1732e287f52c427aab79f58\",\n  \"runtime_seconds\": 57.06572600000072,\n  \"status\": \"PASS\"\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T023403Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

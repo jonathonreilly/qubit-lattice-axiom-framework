@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle870_census_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle870_census_independent_check_2026_07_28.py",
+ "seed": 30959,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1d93bbd5",
+ "started_utc": "20260923T023559Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "aec932b40647e00690d3ce73a34dc7490298ea018d6b05406be1d84338617c83",
+ "stdout_tail": ": SURVIVED\nREFUTATION_ATTEMPT :: R4_n12_phased_census :: SURVIVED\nREFUTATION_ATTEMPT :: R5_n12_k_eq_2_spectrum :: SURVIVED\nREFUTATION_ATTEMPT :: R6_n12_k_ge_2_spectrum :: SURVIVED\nREFUTATION_ATTEMPT :: R7_comparator_declared_scope_mismatch :: SURVIVED\nREFUTATION_ATTEMPT :: R8_comparator_numbers_are_k_ge_2 :: SURVIVED\nREFUTATION_ATTEMPT :: R9_phased_row_is_multiplicities :: SURVIVED\nMUTANT_PROBE :: M1_n11_row_off_by_one :: REFUTED\nMUTANT_PROBE :: M2_comparator_is_k_eq_2 :: REFUTED\nMUTANT_PROBE :: M3_min_invariant_subset_is_one :: REFUTED\nMUTANT_PROBE :: M4_floor_is_largest_prime_factor :: REFUTED\nMUTANT_PROBE :: M5_phase_factor_is_4_to_the_k :: REFUTED\nMUTANT_PROBE :: M6_counts_are_plain_binomials :: REFUTED\nMUTANT_PROBE :: M7_orbit_sizes_all_equal_n :: REFUTED\nFINAL :: {\"comparator_scope_verdict\":\"MISMATCH_UNDER_DECLARED_K_EQ_2_EXACT_AS_K_GE_2\",\"independent_k_eq_2_spectrum\":{\"12\":4,\"6\":1},\"independent_k_ge_2_spectrum\":{\"12\":24,\"2\":1,\"3\":1,\"4\":1,\"6\":2},\"independent_n11_phased\":{\"0\":4,\"1\":44,\"2\":176,\"3\":308,\"4\":220,\"5\":44},\"independent_n12_phased\":{\"0\":4,\"1\":48,\"2\":216,\"3\":448,\"4\":420,\"5\":144,\"6\":8},\"invariant_subset_floor_law\":\"min nonempty C_n-invariant subset of placements has size spf(n); the x4 phase lift is conditional on the supplied Z_4 premise\",\"mutants_surviving\":[],\"mutants_tested\":7,\"pass\":true,\"phase_values_conditional_on_supplied_premise\":true,\"primary_claims_refuted\":[],\"primary_claims_tested\":16,\"runtime_seconds\":0.101466}\nCYCLE870_CENSUS_INDEPENDENT_CHECK_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T023559Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle870_census_independent_check_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

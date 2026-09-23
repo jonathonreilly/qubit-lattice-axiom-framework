@@ -1,0 +1,9 @@
+axis 0 complete
+axis 1 complete
+axis 2 complete
+{
+  "receipt": "/Users/jonBridger/.probe-workers/probes-view/slot-2/outputs/cycle868_transient_two_cell_companion_encoder_receipt_2026_08_02.json",
+  "report_sha256": "0a9a60d1ed672fc919b6b374cf94e4b3868303a2a1732e287f52c427aab79f58",
+  "runtime_seconds": 57.06572600000072,
+  "status": "PASS"
+}

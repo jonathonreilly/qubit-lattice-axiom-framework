@@ -159,7 +159,7 @@ Exact identities (`E3.1`, `E3.2`):
 
   `G_⊥ = κ⁴ cosh 2κ − 4κ⁴ + (3/2)κ³ sinh 2κ − 18κ² cosh 2κ − 18κ² + 36κ sinh 2κ − 18 cosh 2κ + 18`
 
-and `G_∥` is the exponential polynomial (exponents `e^{nκ}`, `|n| ≤ 4`, powers `κ^m`, `m ≤ 7`)
+and `G_∥` is the exponential polynomial (terms `κ^m e^{nκ}` with `n ∈ {0, ±2, ±4}` and `m ≤ 4` after cancellation)
 assembled in `check.py` from `A = (κ cosh κ − sinh κ)/(κ sinh κ)`.
 
 Both are even in `κ`. Every Taylor coefficient of both is `≥ 0`:

@@ -22,11 +22,18 @@
  "stdout_tail": " 0.1568, 1w 0 0.0910, 2w 0 0.0076, 3w 0 0.1732 | d=3/10,a=1/4: 0w 0 0.1583, 1w 0 0.1151, 2w 0 0.0651, 3w 0 0.1167 | d=1/2,a=0: 0w 0 0.8660, 1w 0 0.7071, 2w 0 0.5000, 3w 16 0.0000 | d=1/2,a=1/10: 0w 0 0.4888, 1w 0 0.3849, 2w 0 0.2487, 3w 0 0.1323 | d=1/2,a=1/4: 0w 4 0.0000, 1w 0 0.0560, 2w 0 0.0709, 3w 0 0.2307; bulk at a = 1/10, delta = 3/10 equals the corner value sqrt(4a^2 + 3 delta^2) - 4a = (sqrt 31 - 4)/10 = 0.156776; at delta = 2a (1/2, 1/4) the bulk has 4 exact zero modes (block 84 T4)\nSUMMARY: PROVED (a) and (b) exact on the 4^3 torus: with the axioms' scalar hop through the same bond rates the square is not separable, the sixteen zero modes where three walls cross are lifted (first order a(+-mu_x +- mu_y +- mu_z), mu = 2(1 - delta^2)/sqrt(1 + delta^2); exact nullity 0 at a = 1/10, 1/4, delta = 3/10, 1/2), and the masses no longer order bulk > sheet > line > point.\nHIT: with the scalar hop a through the same bonds, H_a^2 = sum h_j^2 + a^2 (sum c_j)^2 + a sum sigma_j {h_j, c_j} + 2a sum_(j != l) sigma_j h_j c_l is not separable ({h, c} = (D^2 - D^dag 2)/i); the sixteen point zero modes of block 86 split at first order into a(+-mu_x +- mu_y +- mu_z), mu = 2(1 - delta^2)/sqrt(1 + delta^2) on the ring of four, never zero for equal deltas; on the 4^3 torus the exact nullity is 0 for walls across three axes at a = 1/10, 1/4 and delta = 3/10, 1/2, the only zero modes being the bulk's 4 at delta = 2a; at a = 1/10, delta = 3/10 the line (0.0076) lies below the point (0.1732).\n",
  "checked": {
   "by": "w-macbookpro90c72-jbc9f",
-  "at_utc": "20260923T102602Z",
+  "at_utc": "20260923T102624Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha a87503ac differs from the current HEAD 3b61226f (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science: the task's HIT ((a) or (b) exact) is met - with the scalar hop through the same bonds the square of the walk is not separable (exact expansion with the nonzero two-axis term 2a sigma_j h_j c_l and {h,c} = (D^2 - D^dag^2)/i), block 86's sixteen point zero modes split at first order into a(+-mu_x +- mu_y +- mu_z) with mu^2 = 4(1-delta^2)^2/(1+delta^2) on the ring of four, and exact ranks give nullity 0 at a = 1/10, 1/4, delta = 3/10, 1/2 for walls across three axes (the bulk's 4 at delta = 2a remain); masses in labelled floating point.",
+  "by": "w-macbookpro90c72-jbc9f",
+  "at_utc": "20260923T102624Z"
  }
 }

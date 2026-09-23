@@ -22,11 +22,18 @@
  "stdout_tail": "tion theorem)'; that theorem (L30-31, L38) states 'the axis is a premise, not a derivation' and 'exactly one clock' only 'conditional on (B-AXIS)'; the anomaly bridge (L20-26) gets d_t = 1 only with the declared B-AXIS premise and 'No step defines time via the anomaly': on main no text makes a time direction axiom content\n(main pinned at b8d0017208a2; origin/main here is b8d0017208a2)\nTOTAL: PASS=4 FAIL=0\nSUMMARY: PARTIAL a cited map extending round 1 to the three approved primitives and the causal-time notes: records live on Z^3, once and permanently (L37, L79-80, L166-167), formed from the nearest-neighbor conditions (L60-61) at a site, rate and order not supplied (L68, L183-184); the primitives add only a Z^3 x Z_tau loop regulator (KI L23-24, L31) and a history that picks the state (RS L21); consistent: one-record-per-site orders on Z^3 (2+1 sweeps); excluded as written: a record per site per tick (3+1 level planes, the light cone)\nHIT: on main no text makes a time axis axiom content: the approved kinetic-isotropy primitive calls time 'emergent and derived (the single-clock ... theorem)' (KI L32-33), but that theorem says 'the axis is a premise, not a derivation' and gives one clock only 'conditional on (B-AXIS)' (SC L30-31, L38), and the 3+1 anomaly bridge caps d_t at the declared B-AXIS boundary, 'No step defines time via the anomaly' (AN L20-26); with one permanent record per Z^3 site (L79-80, L166-167) no record lattice with three-dimensional level planes is supplied\n",
  "checked": {
   "by": "w-macbookpro90c72-j59ee",
-  "at_utc": "20260923T205720Z",
+  "at_utc": "20260923T205750Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 28a0cfeb differs from the current HEAD 6873fdea (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science (partial, a reading): round 1 mapped the axioms memo; this adds the three approved primitives (read in full) and the causal-time notes, 69 quotations verbatim at pinned main b8d0017208a2 with an exhaustive keyword scan. Finding: no text on main makes a time axis axiom content. The kinetic-isotropy primitive says time is 'emergent and derived (the single-clock ... theorem)', while that theorem makes the axis a declared premise (B-AXIS) and the 3+1 anomaly bridge caps d_t only at the declared B-AXIS boundary. The primitive's Z^3 x Z_tau is a loop regulator, not a fourth dimension. So with one permanent record per Z^3 site, one-record-per-site orders (2+1 sweeps) are consistent, and per-tick records (3+1 level planes, the light cone) are excluded as written; the per-tick clause needed and its cost are stated.",
+  "by": "w-macbookpro90c72-j59ee",
+  "at_utc": "20260923T205750Z"
  }
 }

@@ -1,0 +1,35 @@
+{
+ "task": "R:acphilambda_ambient_scalar_k_blindness_projective_carrier_2026_07_02",
+ "type": "runner-reexecution",
+ "lane": "acphilambda",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/acphilambda_ambient_scalar_k_blindness_projective_carrier_2026_07_02.py",
+ "seed": 24584,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c47ca2e0",
+ "started_utc": "20260923T004944Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=87 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d167e9f491511483d9d2b3256677655a3954d083ae71add243f9993a7ea4426d",
+ "stdout_tail": "ambda_ambient_scalar_k_blindness_projective_carrier_2026_07_02.py']\n[PASS] axioms memo is not a markdown target\n[PASS] in-flight basename is backticked: ACPHILAMBDA_DEFECT_IDENTITY_\n[PASS] in-flight basename is backticked: ACPHILAMBDA_REGISTRABLE_CYCL\n[PASS] in-flight basename is backticked: ACPHILAMBDA_REAL_HOLONOMY_LO\n[PASS] in-flight basename is backticked: ACPHILAMBDA_CYCLE_FLUX_TRANS\n[PASS] in-flight basename is backticked: ACPHILAMBDA_FLUXED_RING_SPEC\n[PASS] in-flight basename is backticked: ACPHILAMBDA_POINTER_LABELED_\n[PASS] in-flight basename is backticked: ACPHILAMBDA_AMBIENT_EQUIVARI\n[PASS] spec leakage absent: PRESERVE VERBATIM\n[PASS] spec leakage absent: MUST BE ABSENT\n[PASS] spec leakage absent: Acceptance contract\n[PASS] spec leakage absent: ANTI-FABRICATION\n[PASS] spec leakage absent: Files to produce\n[PASS] spec leakage absent: runner greps\n[PASS] spec leakage absent: spec-carrier\n[PASS] note declares canonical claim type\n[PASS] note avoids source-side audit verdict\n[PASS] dependency appears with quoted ledger scope\n[PASS] No-Go gate contains N1:\n[PASS] No-Go gate contains N2:\n[PASS] No-Go gate contains N3:\n[PASS] No-Go gate contains N4:\n[PASS] No-Go gate contains N5:\n[PASS] No-Go gate contains N6:\n[PASS] No-Go gate contains N7:\n[PASS] No-Go gate contains N8:\n[PASS] note contains ## Verification\n[PASS] note contains ## Non-Claims\n[PASS] note contains ## Routing Consequence\n[PASS] verification records measured total placeholder or count\n\nTOTAL: PASS=87 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T004945Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

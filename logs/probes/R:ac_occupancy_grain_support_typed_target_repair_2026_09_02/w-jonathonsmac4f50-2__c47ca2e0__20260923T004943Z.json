@@ -1,0 +1,35 @@
+{
+ "task": "R:ac_occupancy_grain_support_typed_target_repair_2026_09_02",
+ "type": "runner-reexecution",
+ "lane": "ac",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/ac_occupancy_grain_support_typed_target_repair_2026_09_02.py",
+ "seed": 24583,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c47ca2e0",
+ "started_utc": "20260923T004943Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=37 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "894b137b239e52b9e874e0190fdc70c5798ee78f31217163c2cdb2280bfb0de9",
+ "stdout_tail": "inary realification: PASS\nCHECK actual realification sign corruption: PASS\nCHECK skew block and Pfaffian sign: PASS\nCHECK original congruence fixture: PASS\nCHECK nonunit congruence fixture: PASS\nCHECK actual omitted Jacobian control: PASS\nCHECK ordinary realification not this skew kernel: PASS\nCHECK independent conjugate block product: PASS\nCHECK conditional odds exponents: PASS\nCHECK supplied comparator factor arithmetic: PASS\nCHECK independent helper source binding: PASS\nCHECK independent: orbit census: PASS\nCHECK independent: global power neutral: PASS\nCHECK independent: sector-local copy active: PASS\nCHECK independent: increment identity (1, 1) (1, 1): PASS\nCHECK independent: increment identity (2, 3) (4, 6): PASS\nCHECK independent: increment identity (1, 1) (0, 1): PASS\nCHECK independent: exact Gaussian-integer realification: PASS\nCHECK independent: exact Gaussian-integer realification: PASS\nCHECK independent: odds exponent one: PASS\nCHECK independent: odds exponent two: PASS\nCHECK independent: realification sign mutation detected: PASS\nCHECK independent: nonunit Jacobian cancellation: PASS\nCHECK independent: omitted Jacobian detected: PASS\nCHECK independent: support boundary (0, 0): PASS\nCHECK independent: support boundary (1, 0): PASS\nCHECK independent: support boundary (0, 1): PASS\nSCOPE: exact finite supplied algebra and independent arithmetic controls; no physical carrier/action/measure/event selection, graph-status inference, or audit verdict\nTOTAL: PASS=37 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T004943Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

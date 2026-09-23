@@ -1,0 +1,31 @@
+{
+ "task": "R:ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "ROUTE2",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py",
+ "seed": 24577,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c47ca2e0",
+ "started_utc": "20260923T004937Z",
+ "elapsed_s": 4.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "05ed4615bbc717892c89f3c1c3bcd63fabfae103d3c3a72531c4d2500fa47c67",
+ "stdout_tail": "finite modular contact block has the same singular values in all 24 proper-cubic frames :: 1.2947314098277875e-15\nPASS matter-only BKSF representation preserves the Cycle-230 contact seam block :: {'cycle230_subchecks': {'pass': 6, 'fail': 0}, 'singular_values': array([0.49577141, 0.45566605]), 'intertwining_residual': 0.0}\nPASS BKSF images needed by the update and all lawful constraints have bounded support :: {'matter_A': 11, 'all_A': 23, 'B': 12, 'D': 22, 'onsite_matter_union_bound': 24}\nPASS the stream FSWAP has an explicit bounded Hermitian log and exact full-space unitary extension :: {'unitary_residual': 3.6000520121158896e-16, 'log_support_modes': 2}\nPASS interaction deletion g=0 is exactly identity :: \nPASS scalar-reference full-parity code obstructs a bounded-radius locality-preserving state encoding E :: [{'L': 5, 'radius': 0, 'remote_distance': 1, 'same_reduced_product_state_on_ball': True, 'local_expectation_gap': 0.0, 'required_Br_equals_global_parity_gap': 2}, {'L': 7, 'radius': 1, 'remote_distance': 2, 'same_reduced_product_state_on_ball': True, 'local_expectation_gap': 0.0, 'required_Br_equals_global_parity_gap': 2}, {'L': 9, 'radius': 2, 'remote_distance': 3, 'same_reduced_product_state_on_ball': True, 'local_expectation_gap': 0.0, 'required_Br_equals_global_parity_gap': 2}, {'L': 13, 'radius': 4, 'remote_distance': 5, 'same_reduced_product_state_on_ball': True, 'local_expectation_gap': 0.0, 'required_Br_equals_global_parity_gap': 2}]\nSUMMARY PASS 27 FAIL 0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T004941Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

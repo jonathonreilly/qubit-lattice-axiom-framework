@@ -1,0 +1,34 @@
+PASS note preserves the narrowed constructive and N1-N8 contract :: ()
+PASS open L=3 has genuine local cycles and exact ranks :: {'E': 594, 'V': 189, 'local_cycle_rank': 406, 'full_cycle_rank': 406, 'D_rank': 26, 'holonomies': 0, 'boundary_failures': 0}
+PASS periodic L=3 has genuine local cycles and exact ranks :: {'E': 648, 'V': 189, 'local_cycle_rank': 457, 'full_cycle_rank': 460, 'D_rank': 26, 'holonomies': 3, 'boundary_failures': 0}
+PASS periodic L=4 has genuine local cycles and exact ranks :: {'E': 1536, 'V': 448, 'local_cycle_rank': 1086, 'full_cycle_rank': 1089, 'D_rank': 63, 'holonomies': 3, 'boundary_failures': 0}
+PASS periodic L=5 has genuine local cycles and exact ranks :: {'E': 3000, 'V': 875, 'local_cycle_rank': 2123, 'full_cycle_rank': 2126, 'D_rank': 124, 'holonomies': 3, 'boundary_failures': 0}
+PASS periodic L=7 has genuine local cycles and exact ranks :: {'E': 8232, 'V': 2401, 'local_cycle_rank': 5829, 'full_cycle_rank': 5832, 'D_rank': 342, 'holonomies': 3, 'boundary_failures': 0}
+PASS odd L=3,5,7 carry both matter parity blocks while even L=4 fails that lawful-domain contract :: [(3, {-1: -1, 1: 1}), (4, {-1: 1, 1: 1}), (5, {-1: -1, 1: 1}), (7, {-1: -1, 1: 1})]
+PASS actual L=3 Pauli loop and reference constraints commute and have the predicted independent rank :: {'loop_commutator_failures': 0, 'loop_D_failures': 0, 'loop_update_failures': 0, 'D_update_failures': 0, 'combined_rank': 483, 'relation_phase_failures': 0, 'maximum_weight': 36}
+PASS three explicit reference Wilson loops complete the periodic stabilizer rank without disturbing the update :: {'local_plus_D_rank': 483, 'full_plus_D_rank': 486, 'wilson_commutator_failures': 0}
+PASS instantiated BKSF A/B edge images obey the endpoint CAR commutation rules :: {'algebra_failures': 0}
+PASS the non-naive pair-shadow lift closes locally but fails to assemble across a non-contiguous spectator :: {'local_residual': 0.0, 'global_residual': 2.8284271247461903}
+PASS the scalar-reference FSWAP intertwines exactly in reference sector b=0 :: 0.0
+PASS the scalar-reference FSWAP intertwines exactly in reference sector b=1 :: 0.0
+PASS deleting the scalar references returns the single-copy 6N-1 parity deficit :: {'target': 162, 'deleted_reference_code': 161}
+PASS all 24 frames preserve the scalar-reference graph and local constraints :: {'graph_failures': 0, 'constraint_failures': 0}
+PASS raw edge ordering fails while local CZ/Z port gauge repairs every A generator exactly :: {'raw_mismatches': 12948, 'corrected_mismatches': 0}
+PASS the matter coin/contact and scalar reference are proper-cubic covariant :: {'coin_residual': 0.0, 'contact_residual': 0.0}
+PASS explicit spacing-16 cubic layout uses 27 active M2 sites/cell and is invariant in all frames :: {'per_cell_accounting': {'octahedral': 12, 'spokes': 6, 'reference_bond_half_share': 3, 'stream_repetition_half_share': 6, 'total': 27}, 'global_centered_orbit_sites': 36, 'patch_sites': 729, 'patch_expected': 729, 'maximum_blank_path': 11, 'routing_failures': 0, 'frame_failures': 0}
+PASS the two-site matter-stream repetition code exactly carries abstract edge X and Z :: 0.0
+PASS the odd rank-73 sea plus 27 occupied references lies in extended even parity :: {'sea_rank': 73, 'extended_occupation': 100}
+PASS one matter particle plus 27 references lies in extended even parity and the vacuum uses empty references :: 
+PASS inert references and the N<=1 contact identity preserve held-out one-particle mass :: {'rest_mass': 0.5304258513857456, 'curvature_mass': 0.5304258709057169, 'relative_residual': 3.68005641515623e-08}
+PASS the L=3 principal sea contains a momentum-balanced machine-precision modular 2p2h channel :: {'dimensions': {'h1': 2, 'h2': 1, 'p1': 2, 'p2': 2}, 'phase_residual': 0.0}
+PASS the L=3 plane-wave-factor-stripped contact channel is rank two and nonzero independent of degenerate-band basis :: {'singular_values': array([0.49577141, 0.45566605]), 'frobenius': 0.6733653062471184}
+PASS random unitary changes of every degenerate band basis leave the reported contact singular values fixed :: 2.482534153247273e-16
+PASS the direct spatial Slater-Condon sum equals the reduced form factor divided by L^3 :: {'residual': 7.163369603754572e-18, 'raw_generator_norm_over_g': 0.024939455786930305}
+PASS an unbalanced channel with a nonzero internal overlap is exactly removed by translation momentum conservation :: {'internal': 0.8448087187256579, 'spatial': 5.6669667301004826e-18}
+PASS the finite modular contact block has the same singular values in all 24 proper-cubic frames :: 1.2947314098277875e-15
+PASS matter-only BKSF representation preserves the Cycle-230 contact seam block :: {'cycle230_subchecks': {'pass': 6, 'fail': 0}, 'singular_values': array([0.49577141, 0.45566605]), 'intertwining_residual': 0.0}
+PASS BKSF images needed by the update and all lawful constraints have bounded support :: {'matter_A': 11, 'all_A': 23, 'B': 12, 'D': 22, 'onsite_matter_union_bound': 24}
+PASS the stream FSWAP has an explicit bounded Hermitian log and exact full-space unitary extension :: {'unitary_residual': 3.6000520121158896e-16, 'log_support_modes': 2}
+PASS interaction deletion g=0 is exactly identity :: 
+PASS scalar-reference full-parity code obstructs a bounded-radius locality-preserving state encoding E :: [{'L': 5, 'radius': 0, 'remote_distance': 1, 'same_reduced_product_state_on_ball': True, 'local_expectation_gap': 0.0, 'required_Br_equals_global_parity_gap': 2}, {'L': 7, 'radius': 1, 'remote_distance': 2, 'same_reduced_product_state_on_ball': True, 'local_expectation_gap': 0.0, 'required_Br_equals_global_parity_gap': 2}, {'L': 9, 'radius': 2, 'remote_distance': 3, 'same_reduced_product_state_on_ball': True, 'local_expectation_gap': 0.0, 'required_Br_equals_global_parity_gap': 2}, {'L': 13, 'radius': 4, 'remote_distance': 5, 'same_reduced_product_state_on_ball': True, 'local_expectation_gap': 0.0, 'required_Br_equals_global_parity_gap': 2}]
+SUMMARY PASS 27 FAIL 0

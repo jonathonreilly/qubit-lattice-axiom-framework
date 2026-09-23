@@ -1,0 +1,34 @@
+{
+ "task": "R:ac_phi_lambda_c3_equivariance_schur_diagnostic_2026_05_10",
+ "type": "runner-reexecution",
+ "lane": "ac",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/ac_phi_lambda_c3_equivariance_schur_diagnostic_2026_05_10.py",
+ "seed": 24583,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c47ca2e0",
+ "started_utc": "20260923T004943Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS = 61, FAIL = 0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3f52097e569c34390c92f519305841183e2d78fd4f62a1efc959053e5b7eda27",
+ "stdout_tail": "tual diag(1, 2, 3) is read back as the distinct corner values [1, 2, 3].\nper_site: checked and not executed - nothing in this runner carries a site index: Section A works entirely in the regular representation of Z/3Z on C^3, which indexes generations rather than lattice points, and Section B is text auditing of the note and its 10 cited probe files, so no Z^3 position is ever constructed.\nper_mode: checked - the mode content is resolved character by character, the spectrum of U_C3 being verified as the three distinct cube roots {1, omega, omega^2}; the operator H built on them collapses to only the two distinct eigenvalues 4/5 and 29/10 at the tested instance, because b = 7/10 is real and so the omega and omega^2 modes stay degenerate.\nper_block: checked and not executed - exactly one operator block is instantiated, the Type I_3 factor on C^3 that the note names; no second block, no direct sum and no block index appears anywhere, so no quantity is compared from one block to another.\nlattice_wide: checked and not executed - no lattice, volume or limit is built; by the runner's own docstring it is a brief illustrative diagnostic and NOT a load-bearing component of the foreclosure, whose proof is the one-page representation theory recorded in Section 3 of the source note, so no lattice-wide evaluation is offered or claimed here.\n\n================================================================\nPASS = 61, FAIL = 0\n================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T004944Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

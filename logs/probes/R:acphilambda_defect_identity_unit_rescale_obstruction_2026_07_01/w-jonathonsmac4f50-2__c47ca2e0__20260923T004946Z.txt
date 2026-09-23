@@ -1,0 +1,35 @@
+=== AC_phi_lambda defect identity-unit rescale obstruction ===
+
+PART A -- cited sources and boundary text
+[FAIL] docs/ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md exists
+[PASS] docs/MINIMAL_AXIOMS_2026-06-29.md exists
+[PASS] docs/audit/data/axiom_premise_nodes.json exists
+[PASS] docs/audit/data/premise_decision_history.json exists
+[PASS] docs/audit/data/derivation_obligations.json exists
+[PASS] docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md exists
+[PASS] docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md exists
+[PASS] docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md exists
+[PASS] docs/KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md exists
+[PASS] docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md exists
+[PASS] docs/KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md exists
+[PASS] docs/BRANNEN_CIRCULANT_IS_FORCED_C3_COVARIANT_RECORD_PRESERVING_GENERATION_FORM_BOUNDED_THEOREM_NOTE_2026-06-15.md exists
+[PASS] docs/PLANCK_TARGET3_PHASE_UNIT_EDGE_STATISTICS_BOUNDARY_NOTE_2026-04-25.md exists
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/acphilambda_defect_identity_unit_rescale_obstruction_2026_07_01.py", line 491, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/acphilambda_defect_identity_unit_rescale_obstruction_2026_07_01.py", line 77, in main
+    note = read("docs/ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/acphilambda_defect_identity_unit_rescale_obstruction_2026_07_01.py", line 47, in read
+    return (ROOT / rel).read_text(encoding="utf-8")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-2/docs/ACPHILAMBDA_DEFECT_IDENTITY_UNIT_RESCALE_OBSTRUCTION_2026-07-01.md'

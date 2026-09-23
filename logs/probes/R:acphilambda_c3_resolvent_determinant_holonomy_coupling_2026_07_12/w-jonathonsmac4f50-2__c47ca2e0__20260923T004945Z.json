@@ -1,0 +1,35 @@
+{
+ "task": "R:acphilambda_c3_resolvent_determinant_holonomy_coupling_2026_07_12",
+ "type": "runner-reexecution",
+ "lane": "acphilambda",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/acphilambda_c3_resolvent_determinant_holonomy_coupling_2026_07_12.py",
+ "seed": 24585,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c47ca2e0",
+ "started_utc": "20260923T004945Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=34 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d662eb90a72002676222f37200f29548cbe60da1ce81e9bdf9f90815e6c27b09",
+ "stdout_tail": "mes h\nPASS  B is unchanged under generator reversal\n\nPart C: determinant holonomy and symmetric three-step root\nPASS  exp(i beta B) reduces to a scalar unitary\nPASS  det U_beta is exp(2 i beta/3)\nPASS  symmetric edge root cubes to U1\nPASS  cycle determinant phase is 2/3\nPASS  edge determinant phase is h\nPASS  three edge phases add to the cycle phase\nPASS  U1 is unitary\n\nPart D: single sector, conjugate pair, and realification\nPASS  rank-two Pfaffian has the retained raw sign\nPASS  single-sector determinant carries the cycle phase\nPASS  independent conjugate-paired determinant equals one\nPASS  ordinary realification determinant equals one\nPASS  conjugate pairing cancels the determinant phase\nPASS  complex conjugation reverses the single-sector phase\n\nPart E: determinant-character weights and remaining normalization\nPASS  character formula at k=1,beta=1 gives cycle phase 2/3\nPASS  conjugate character k=-1 reverses orientation\nPASS  paired net weight k+(-k) is phase-trivial\nPASS  k=2 character has a nontrivial kernel witness z=-1\nPASS  k=1 is the identity and k=-1 inversion is bijective\nPASS  sample nonfundamental characters have nontrivial root kernels\nPASS  edge determinant character is derived from exp(i k beta B/3)\nPASS  edge lift at k=1,beta=1 equals h\nPASS  beta=2 remains a distinct exact normalization\n\n========================================================================\nSCORECARD: PASS=34 FAIL=0\n========================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T004945Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

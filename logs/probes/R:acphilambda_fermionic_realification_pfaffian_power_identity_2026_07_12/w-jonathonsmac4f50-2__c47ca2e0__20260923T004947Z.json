@@ -1,0 +1,35 @@
+{
+ "task": "R:acphilambda_fermionic_realification_pfaffian_power_identity_2026_07_12",
+ "type": "runner-reexecution",
+ "lane": "acphilambda",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/acphilambda_fermionic_realification_pfaffian_power_identity_2026_07_12.py",
+ "seed": 24587,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c47ca2e0",
+ "started_utc": "20260923T004947Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=32, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e56af506b3b9d15bc0a2278fe6b7050955e02321e87c9912ad6da1d187003db7",
+ "stdout_tail": "es det(M)\n  [PASS] inverse top-form Jacobian cancels congruence factor\n  [PASS] rank-1 negative-exponent Gaussian top sign\n  [PASS] rank-1 oriented Gaussian equals det(K)\n  [PASS] rank-2 negative-exponent Gaussian top sign\n  [PASS] rank-2 oriented Gaussian equals det(K)\n  [PASS] rank-3 negative-exponent Gaussian top sign\n  [PASS] rank-3 oriented Gaussian equals det(K)\n\nPart C: conjugate sector and ordinary realification\n---------------------------------------------------\n  [PASS] single-sector Pfaffian equals z\n  [PASS] conjugate-sector Pfaffian equals conjugate(z)\n  [PASS] direct-sum Pfaffian is the product of sector Pfaffians\n  [PASS] paired Pfaffian is modulus square\n  [PASS] ordinary realification determinant matches paired sectors\n  [PASS] generic rank-2 realification is the conjugate determinant product\n  [PASS] generic rank-2 conjugate direct sum has no residual sign\n  [PASS] single sector retains complex phase\n  [PASS] paired sectors cancel complex phase\n  [PASS] ordinary realification need not be antisymmetric\n  [PASS] singular complex determinant vanishes\n  [PASS] singular block Pfaffian vanishes\n  [PASS] singular realification determinant vanishes\n\nScope guards\n------------\n  [PASS] source states determinant-power preservation under coordinate change\n  [PASS] source limits the theorem to a supplied algebraic domain\n  [PASS] source leaves registered r outside the theorem domain\n\n================================================================\nTOTAL: PASS=32, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T004947Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/relational_frames_in_one_qubit_spiral_records_under_possibility_covariance_2026_09_22.py
+runner_sha256: 763e87a66329f3922f40256feaf9d44969485340f27de3360b41387140680856
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.21
+status: ok
+----- stdout -----
+A. the angles
+[PASS] three Pythagorean rotations: six distinct signed angles, and the plaquette lemma for the positive ones :: e(a) e(b) = e(c) e(d) only for {a,b} = {c,d}; 81 cases
+B. spiral records in a sweep
+[PASS] every site with three back-neighbours equals the spiral rule's unique output, for a spiral and a rotated spiral :: 27 sites each; the rule tries all assignments and both orientations
+[PASS] the rule does not care which back-neighbour is which (unsoldered), and commutes with rotating the sphere
+C. what the record carries
+[PASS] each site reads every neighbour's direction from the rotation that takes its value to the neighbour's :: the six signed angles label the six bond directions; roles and ice follow as in open PR 8676
+[PASS] under the static reading each core site is the unique covariant completion of its neighbours :: forward neighbours determine it too (the rule applied with the angles reversed)
+D. first formations
+[PASS] a lone child's value is fixed only up to rotation about its parent: two stationary spirals agree at the parent, differ at the child :: a covariant lone-child law is symmetric about the parent; its only atoms are the two poles
+[PASS] spiral values are never at the parent's poles, so each lone child hits its spiral value with probability 0 :: registration at a first formation fails almost surely under possibility covariance
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

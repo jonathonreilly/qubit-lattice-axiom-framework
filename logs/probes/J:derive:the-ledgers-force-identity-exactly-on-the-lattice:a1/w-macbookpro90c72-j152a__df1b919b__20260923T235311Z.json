@@ -22,11 +22,18 @@
  "stdout_tail": "ta u_x = -sum_a xi_a(x)(1 - w(x-e_a)/w(x)); its requirement is f_a(x) = e_x (1 - exp(-(u_x - u_{x-e_a}))), linear in e\n     pair of energy-1 plane waves, j = 1, at the origin (same e = 2 = 2): k = (pi/2,0,0): f^(1) = 0, fP^(1) = 5; k = (0,pi/2,0): f^(1) = 2, fP^(1) = -5 (eta differences 1, -5)\nchecks: 13 ok, 0 fail\nSUMMARY: PROVED - (a) exactly, for every state and rate field: f_j(x) = d_j phi(x) eps_j(x) + d_j phi(x-e_j) eps_j(x-e_j), eps the bond cross energy (1/2) Re[psi_y^dag chi_x + psi_x^dag chi_y]; eps = energy-density part - (1/2) Re[(d psi)^dag (d chi)]; no factorisation through the energy density (sublattice state: e = 0, f != 0). (b) curl ledgers keep the rate-free identity under every transport of the rates; a rate-carrying ledger (volume member, exact) requires a force built from e (and J); f is even and e odd under the (111) map. (c) a strain kinetic term makes the mismatch the rate of change of content + strain momentum. (d) reach three: exact two-step bond form; first-order force e cos 2k_j (u(x+2e)-u(x-2e))/4.\nHIT: the walk's lattice force is the bond cross energy times rate differences, not a function of the energy density; every ledger identity from a relabelling that carries the rates requires a force built from e and J with field coefficients, and at first order in the rate gradient the equal-content plane waves k = (pi/2,0,0), (0,pi/2,0) get forces 0 and e(u(x+e1)-u(x-e1))/2 (reach two), opposite forces (reach three): they agree only at long wavelength.\n",
  "checked": {
   "by": "w-macbookpro90c72-j152a",
-  "at_utc": "20260923T235325Z",
+  "at_utc": "20260923T235357Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha df1b919b differs from the current HEAD 5262082a (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Exact lattice force of the clocked walk: f_j(x) = sum over the two bonds at x of (d_j phi) times the bond cross energy, not a function of the energy density (a sublattice state has e = 0 and f != 0). Every ledger identity from a relabelling that carries the rates requires a force built from e and J with field coefficients; curl ledgers keep the rate-free identity under every transport; the volume member carries the rates exactly. At first order in the rate gradient two equal-content plane waves get forces 0 and e(u(x+e1)-u(x-e1))/2 (reach two), opposite forces (reach three): agreement only at long wavelength. Builds past #8644.",
+  "by": "w-macbookpro90c72-j152a",
+  "at_utc": "20260923T235357Z"
  }
 }

@@ -22,11 +22,18 @@
  "stdout_tail": "dger crosses bonds at sqrt(w w')/(chi chi'): flux = <H> + F still, but it moves: rate at t = 0, 1, 2 1.986e-05, -9.704e-05, -1.896e-04 vs i<[G, H_eff]> 1.986e-05, -9.704e-05, -1.896e-04 (worst gap 1e-11); drift 4.0e-04 over t = 0..3, 8e+07 times B1's\nSUMMARY: PROVED in block 60's walled box, for every weight-one ledger and every lengths' kinetic term of weight -1 in the rates, K_lam + <H> + F equals the walls' term on solutions and moves only with the content's explicit label dependence: (a) supplied content: dWt/dt = sum_x w_x drho_x/dt (the supply's work), at first order in velocity the change of the static ledger, -(1/4K) rhodot.g rho at weak field, not zero; (b) a walker with slaved fields keeps the flux of chi exactly; (c) this is block 55's kept ledger with held walls in place of mu, K_lam included\nHIT: in block 60's walled box (walls held at w = l = 1), for every ledger of weight one and every lengths' kinetic term of weight -1 in the rates (c_k l^s lamdot^2/w among them), h = K_lam + <H> + F equals the walls' term sum_W d(<H> + F)/du (8K x the flux of chi into the walls for the curvature member) at every label time on solutions, and dh/dt is the content's explicit label derivative; supplied rest content: dWt/dt = sum_x w_x drho_x/dt exactly, Wt = sum rho - (1/8K)(rho.g rho + 3 rhodot.g^2 rhodot) + O(rho^3) for c_k = -6K; a walker evolved by the ledger's own generator with slaved fields keeps the flux exactly, one evolved by sqrt(w) H sqrt(w) moves it at i<[G, H_eff]>\n",
  "checked": {
   "by": "w-macbookpro90c72-ja303",
-  "at_utc": "20260923T110049Z",
+  "at_utc": "20260923T110126Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 1adc8349 differs from the current HEAD 6b796a27 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science: all three parts of the task are answered. In block 60's walled box, K_lam + <H> + F equals the walls' term on solutions, for every weight-one ledger and every lengths' kinetic term of weight -1 (Euler identity; sympy-exact on the 2^3 box). Its label derivative is the content's explicit one (energy-function identity; exact along polynomial paths). (a) Supplied rest content: dWt/dt = sum w rhodot exactly, the supply's work against block 54's pull. It is not zero: at first order in the speed it is the change of the static ledger, -(1/4K) rhodot.g rho at weak field; Wt = sum rho - (1/8K)(rho.g rho + 3 rhodot.g^2 rhodot) + O(rho^3) for c_k = -6K, exact on a 3^3 interior (+3/952 for a body carried towards the wall, -61/2856 for a body carried towards a fixed one); strong-field envelope matches to 1e-49 at 80 digits. (b) A walker evolved by the ledger's own generator with slaved fields keeps the flux (proof; float evidence 5e-12); with sqrt(w) H sqrt(w) the flux moves at i<[G, H_eff]> (matched to 1e-11). (c) Block 55's mu is replaced by the held walls, and with a lengths' kinetic term the kept quantity includes K_lam. ASSUMED: existence of slaved branches for walkers and with K_lam. Same model family as the blocks; a referee from another family is needed.",
+  "by": "w-macbookpro90c72-ja303",
+  "at_utc": "20260923T110126Z"
  }
 }

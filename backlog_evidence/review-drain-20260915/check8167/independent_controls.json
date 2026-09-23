@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "circle_cubic": "-849.144094776154117849809620172093306934033567544729296739611",
+  "circle_derivative_error": "1.75240110224569750473176843754448298615021501071188066468127e-57",
+  "moment2": "1/6",
+  "moment4": "341/3456",
+  "amplitude_maxerror": 2.220446049250313e-16,
+  "elapsed_seconds": 0.11456983297830448,
+  "scope": "Small independent algebra and finite-law controls; no primary runner rerun; not infinite-volume numeric proof."
+}

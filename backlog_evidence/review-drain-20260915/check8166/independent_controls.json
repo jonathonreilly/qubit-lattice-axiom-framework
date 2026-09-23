@@ -1,0 +1,17 @@
+{
+  "exact_transport_and_transition": "PASS",
+  "conditional_bridge_precision_error": 7.105427357601002e-14,
+  "independent_positive_integral_cubic": {
+    "cubic": "-0.069524531146387996873118102977193374",
+    "bound": "0.17323909414388989399634540054983675"
+  },
+  "temporal_carrier_eigenvalue_error": 1.1102230246251565e-16,
+  "covariance_resolvent": {
+    "max_eigenvalue": 1.0,
+    "factor_error": 2.220446049250313e-16
+  },
+  "box_anchor_count": "Exact inequality, 16 is sufficient for overlap factor; 4096 conservative.",
+  "elapsed_seconds": 2.737771291984245,
+  "source_sha256": "889d6ed0c3489e99bb7c32af27c13d13fb68c340be8416167d236c4e2105110b",
+  "scope": "Independent finite/algebraic controls; no primary rerun, no all-volume simulation."
+}

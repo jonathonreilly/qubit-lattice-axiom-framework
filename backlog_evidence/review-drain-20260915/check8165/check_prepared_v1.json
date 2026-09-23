@@ -1,0 +1,62 @@
+{
+  "frozen_files": 74,
+  "all_originals_recoverable": 88,
+  "complete_proofs_preserved": 4,
+  "calculations": [
+    {
+      "path": "scripts/compact_rotor_geometry_and_heat_check_2026_09_16.py",
+      "metadata": {
+        "AUDIT_TIMEOUT_SEC": 120,
+        "AUDIT_MEMORY_MB": 512,
+        "AUDIT_INPUT_PATHS": [
+          "docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+        ],
+        "EXPECTED_INPUT_SHA256": {
+          "docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md": "aa61782c652fb722b65832dceed9b309e63a8bdae67cb6045830a2a974eb8ccc",
+          "docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md": "c68e64839af884757499eb5223a479f7ad32aba3f339198fc2e2b5845816db7e"
+        }
+      },
+      "scientific_functions_exact": true
+    },
+    {
+      "path": "scripts/compact_rotor_reflection_and_path_check_2026_09_16.py",
+      "metadata": {
+        "AUDIT_TIMEOUT_SEC": 120,
+        "AUDIT_MEMORY_MB": 512,
+        "AUDIT_INPUT_PATHS": [
+          "docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "docs/COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+        ],
+        "EXPECTED_INPUT_SHA256": {
+          "docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md": "aa61782c652fb722b65832dceed9b309e63a8bdae67cb6045830a2a974eb8ccc",
+          "docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md": "c68e64839af884757499eb5223a479f7ad32aba3f339198fc2e2b5845816db7e",
+          "docs/COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md": "679709b4e68b94805eaa3b9fbdc6d16a3a033e15c8e9c22d798f7d796c2255c0"
+        }
+      },
+      "scientific_functions_exact": true
+    },
+    {
+      "path": "scripts/compact_rotor_coarse_current_check_2026_09_16.py",
+      "metadata": {
+        "AUDIT_TIMEOUT_SEC": 120,
+        "AUDIT_MEMORY_MB": 512,
+        "AUDIT_INPUT_PATHS": [
+          "docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "docs/COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+          "docs/COMPACT_ROTOR_TEMPORAL_OSCILLATION_COARSE_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+        ],
+        "EXPECTED_INPUT_SHA256": {
+          "docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md": "aa61782c652fb722b65832dceed9b309e63a8bdae67cb6045830a2a974eb8ccc",
+          "docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md": "c68e64839af884757499eb5223a479f7ad32aba3f339198fc2e2b5845816db7e",
+          "docs/COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md": "679709b4e68b94805eaa3b9fbdc6d16a3a033e15c8e9c22d798f7d796c2255c0",
+          "docs/COMPACT_ROTOR_TEMPORAL_OSCILLATION_COARSE_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-16.md": "0bec7eaaf856d6e48314e15c13468e98b6d5af3d90f52626c853cd5327d52416"
+        }
+      },
+      "scientific_functions_exact": true
+    }
+  ],
+  "archive_manifest_sha256": "98603fb95447fc016cb58b3e1d279106129aa372fb9030ae06f67f303446a7cf"
+}

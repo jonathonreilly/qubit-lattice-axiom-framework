@@ -1,0 +1,142 @@
+[
+  {
+    "original": "notes/BLOCK01_SAMPLED_MAGNETIC_EVENT_BOUND.md",
+    "canonical": "docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "full_proof_body_line_count": 346,
+    "formula_lines_exact": true,
+    "prose_line_transformations": [
+      {
+        "original": "with the cofinal free-box equal-time state of draft PR8164.\n",
+        "canonical": "with the cofinal free-box equal-time state of the contextual PR8164 construction.\n"
+      },
+      {
+        "original": "the constants in (17)-(20); see [the review](../review/PERSONAL_REVIEW.md).\n",
+        "canonical": "the constants in (17)-(20); see the historical personal review preserved in the recovery packet.\n"
+      }
+    ],
+    "original_body_sha256": "4dc53d0a13285e86fc3a357c61bece53fa0ac105356d71bf3341448a7b0feeb3",
+    "canonical_body_sha256": "902ab4f12a0112f74e39a087f7f102b2bf20603227ea2b24e443a36a1363b9e1"
+  },
+  {
+    "original": "notes/BLOCK02_CONTINUOUS_TIME_MAGNETIC_EXCURSIONS.md",
+    "canonical": "docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "full_proof_body_line_count": 183,
+    "formula_lines_exact": true,
+    "prose_line_transformations": [
+      {
+        "original": "be the actual Feynman-Kac transition kernel of (1) in Block01, with\n",
+        "canonical": "be the actual Feynman-Kac transition kernel of (1) in the sampled-event note, with\n"
+      },
+      {
+        "original": "Select the N/4 edge-disjoint checkerboard plaquettes from Block01\n",
+        "canonical": "Select the N/4 edge-disjoint checkerboard plaquettes from the sampled-event note\n"
+      },
+      {
+        "original": "in Block01. Reusing that estimate without this distinction would leave\n",
+        "canonical": "in the sampled-event note. Reusing that estimate without this distinction would leave\n"
+      },
+      {
+        "original": "supremum event. Unlike the endpoint event in Block01, dissemination\n",
+        "canonical": "supremum event. Unlike the endpoint event in the sampled-event note, dissemination\n"
+      },
+      {
+        "original": "the inverse-reflected base face as in Block01. The time-interval event\n",
+        "canonical": "the inverse-reflected base face as in the sampled-event note. The time-interval event\n"
+      },
+      {
+        "original": "Branch values at pi are fixed consistently as in Block01 for the charge\n",
+        "canonical": "Branch values at pi are fixed consistently as in the sampled-event note for the charge\n"
+      },
+      {
+        "original": "The leading negative exponent equals that in Block01(17), while the\n",
+        "canonical": "The leading negative exponent equals that in the sampled-event note(17), while the\n"
+      },
+      {
+        "original": "Known Feynman-Kac, chessboard and Schur tools are credited in Block01.\n",
+        "canonical": "Known Feynman-Kac, chessboard and Schur tools are credited in the sampled-event note.\n"
+      }
+    ],
+    "original_body_sha256": "e4c7892fe2f5c3b9b037cd0bba6a5b1598754b573b1a73d689b1a4f954eb589f",
+    "canonical_body_sha256": "b188354a0d52ca5fa119249540bc7a12330495d0dae7bb0047b0e20a57f02bc8"
+  },
+  {
+    "original": "notes/BLOCK03_SPATIAL_PATH_LIMIT.md",
+    "canonical": "docs/COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "full_proof_body_line_count": 185,
+    "formula_lines_exact": true,
+    "prose_line_transformations": [
+      {
+        "original": "the free-box equal-time limit in draft PR8164.\n",
+        "canonical": "the free-box equal-time limit in the contextual PR8164 construction.\n"
+      },
+      {
+        "original": "Portmanteau and Block02,\n",
+        "canonical": "Portmanteau and the magnetic-excursion note,\n"
+      },
+      {
+        "original": "at threshold pi/3, as in Block02 section5. This cover contains every\n",
+        "canonical": "at threshold pi/3, as in the magnetic-excursion note section5. This cover contains every\n"
+      },
+      {
+        "original": "For the explicit g=0.01, T=0.126439394990932821... values of Block02,\n",
+        "canonical": "For the explicit g=0.01, T=0.126439394990932821... values of the magnetic-excursion note,\n"
+      },
+      {
+        "original": "that original text has not yet been read in this campaign.\n",
+        "canonical": "that original text has not yet been read in the original source review.\n"
+      }
+    ],
+    "original_body_sha256": "e5fb86e4a999e37accecef011115bfdee6b7d05f95b0be673b3e2a24a0754870",
+    "canonical_body_sha256": "db893988763ab00a8c5cd3dd3b62a8172327cd006d8664ee4bcfa957086180c6"
+  },
+  {
+    "original": "notes/BLOCK04_TEMPORAL_OSCILLATIONS_AND_COARSE_CURRENTS.md",
+    "canonical": "docs/COMPACT_ROTOR_TEMPORAL_OSCILLATION_COARSE_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+    "full_proof_body_line_count": 175,
+    "formula_lines_exact": true,
+    "prose_line_transformations": [
+      {
+        "original": "Block02, whether or not K_D is positive semidefinite. The even-power\n",
+        "canonical": "the magnetic-excursion note, whether or not K_D is positive semidefinite. The even-power\n"
+      },
+      {
+        "original": "one orientation and intervals occupy distinct anchor cells. Block03's\n",
+        "canonical": "one orientation and intervals occupy distinct anchor cells. the spatial-path-limit note's\n"
+      },
+      {
+        "original": "dominating path events are distinct. Equations(3) and Block02(3) give\n",
+        "canonical": "dominating path events are distinct. Equations(3) and the magnetic-excursion note(3) give\n"
+      },
+      {
+        "original": "Block02, its magnetic bound behaves as exp[-constant/g^2] at fixed T,\n",
+        "canonical": "the magnetic-excursion note, its magnetic bound behaves as exp[-constant/g^2] at fixed T,\n"
+      }
+    ],
+    "original_body_sha256": "8fb2aeeedb92ae027c31fc82cdb72533cdfa805412cca285721b924b3b9b7423",
+    "canonical_body_sha256": "6f1e13ac519224889a079908e9ffccffdd3857e3b72a2c6c96e84e7d0dc2f424"
+  },
+  {
+    "original": "evidence/block01_geometry_and_rotor_check.py",
+    "canonical": "scripts/compact_rotor_geometry_and_heat_check_2026_09_16.py",
+    "original_computational_function_ASTs_exact": true,
+    "only_main_AST_exception": "final print JSON wrapper replaced by _emit(ans); report and all computations unchanged",
+    "static_assert_statements": 27,
+    "original_fixture_tolerances_and_arithmetic_preserved": true
+  },
+  {
+    "original": "evidence/block02_reflection_and_path_check.py",
+    "canonical": "scripts/compact_rotor_reflection_and_path_check_2026_09_16.py",
+    "original_computational_function_ASTs_exact": true,
+    "only_main_AST_exception": "final print JSON wrapper replaced by _emit(ans); report and all computations unchanged",
+    "static_assert_statements": 15,
+    "original_fixture_tolerances_and_arithmetic_preserved": true
+  },
+  {
+    "original": "evidence/block03_coarse_current_check.py",
+    "canonical": "scripts/compact_rotor_coarse_current_check_2026_09_16.py",
+    "original_computational_function_ASTs_exact": true,
+    "only_main_AST_exception": "final print JSON wrapper replaced by _emit(ans); report and all computations unchanged",
+    "static_assert_statements": 15,
+    "original_fixture_tolerances_and_arithmetic_preserved": true
+  }
+]

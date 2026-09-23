@@ -1,0 +1,86 @@
+{
+  "status": "UNTRACKED_AUTHOR_PREPARED_V1_NOT_REVIEWED_OR_EXECUTED",
+  "base": "631d6b36cd1e9b860763ebcad36e40a2bbe7439c",
+  "worktree": "/private/tmp/review-drain-20260915/author-draft-slot",
+  "owner": "PR8165-author",
+  "notes": [
+    {
+      "path": "docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "aa61782c652fb722b65832dceed9b309e63a8bdae67cb6045830a2a974eb8ccc"
+    },
+    {
+      "path": "docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "c68e64839af884757499eb5223a479f7ad32aba3f339198fc2e2b5845816db7e"
+    },
+    {
+      "path": "docs/COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "679709b4e68b94805eaa3b9fbdc6d16a3a033e15c8e9c22d798f7d796c2255c0"
+    },
+    {
+      "path": "docs/COMPACT_ROTOR_TEMPORAL_OSCILLATION_COARSE_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "0bec7eaaf856d6e48314e15c13468e98b6d5af3d90f52626c853cd5327d52416"
+    }
+  ],
+  "runners": [
+    {
+      "path": "scripts/compact_rotor_geometry_and_heat_check_2026_09_16.py",
+      "sha256": "83bb578cdd010b3c09c532382d19e132b70a8600e4a8b0d30e2c880fb4d59cb3"
+    },
+    {
+      "path": "scripts/compact_rotor_reflection_and_path_check_2026_09_16.py",
+      "sha256": "a48e2b037a49ca350d89213b3a88d931509e44c0d9ebff462c0cc036cb0cbef4"
+    },
+    {
+      "path": "scripts/compact_rotor_coarse_current_check_2026_09_16.py",
+      "sha256": "dbae621b71f1f45a285af5ae6dd1f3ccdc14e86bc962d2369e7dbb65f5370c14"
+    }
+  ],
+  "original_review_sha256": "686b5b035052e7d793a126d7d7b24626dd07c98c03d6613efb87d0c20806ba0d",
+  "archive_manifest": {
+    "path": "docs/work_history/repo/review_feedback/pr8165-evidence/archive-manifest.json",
+    "sha256": "98603fb95447fc016cb58b3e1d279106129aa372fb9030ae06f67f303446a7cf"
+  },
+  "original_dispositions": 88,
+  "negative_certification": "DEFERRED; no five qualifying N1 routes; no broad negative theorem claimed",
+  "resource_assessment": {
+    "primary_timeout_sec": 120,
+    "primary_execution_this_review": false,
+    "actual_sizes": [
+      "Geometry L=4,6,8 and maximum Fourier129 by129 eigensystem; sparse FD1536 with expm_multiply.",
+      "Binary strip4096 states with sparse 12-flip adjacency (~49152 entries), eigsh k=1; dense reduced16 and reflection128 matrices; interacting rotor97.",
+      "Five integer fields on four-dimensional L4 torus:256 vertices,1024 links,1536 faces,1024 three-cells; dictionary arithmetic;80-digit constants."
+    ],
+    "estimate": "All are small bounded CPU/memory jobs by representation; no dense4096 eigensystem. A 512 MiB process cap is a reasonable proposed starting budget including Python/scipy overhead, not measured peak RSS. Preserve 120-second metadata, capture serially, record measured resources if executed.",
+    "observed_historical_seconds": [
+      0.8314646660583094,
+      0.031832374981604517,
+      0.07429316698107868
+    ]
+  },
+  "evidence": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8165-author-preservation-v1.json",
+      "sha256": "f607873a8463e9d39f6dad622fb559d6d976e74e955e42d56d99619c4ced613e"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8165-author-full-mapping-v1.json",
+      "sha256": "e43c6b46a5bb52a77ec07b1e4f7c74ed27b14a6a4f7078b1b3a54bd68fc75b7d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8165-author-input-resource-plan-v1.json",
+      "sha256": "c75830ab22229060e80ab3963926efc20f6b9ec71f2d22da2fd968994f7a82b8"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8165-author-correction-v1.diff",
+      "sha256": "29c19187dcf40cdb74063d38640d56ec4f0ad7f2b2649d06c85085f080adbfd0"
+    }
+  ],
+  "remaining": [
+    "Original reviewer early affected review",
+    "Coordinator exact-current-main and actual metadata discovery",
+    "Cold-source confirmation and resource freeze",
+    "Coordinator three serial captures and combined validation"
+  ],
+  "primary_executions": 0,
+  "staged": false
+}

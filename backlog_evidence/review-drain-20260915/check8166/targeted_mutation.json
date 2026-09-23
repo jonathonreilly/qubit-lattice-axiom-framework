@@ -1,0 +1,16 @@
+{
+  "scope": "Two targeted changed-runner mutations against independently differentiated positive integral; primary main not run.",
+  "baseline_error": 1.3877787807814457e-17,
+  "mutations": [
+    {
+      "change": "+3*covariance(A,B,w)/(g*g)",
+      "independent_target_error": 0.008969791116820572,
+      "rejected": true
+    },
+    {
+      "change": "math.sqrt(2*g*g*T/4)*nodes",
+      "independent_target_error": 0.006342730163551968,
+      "rejected": true
+    }
+  ]
+}

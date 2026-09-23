@@ -1,0 +1,617 @@
+--- original/notes/BLOCK01_SAMPLED_MAGNETIC_EVENT_BOUND.md
++++ docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,10 +1,27 @@
++---
++claim_id: compact_rotor_sampled_magnetic_event_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++runner: scripts/compact_rotor_geometry_and_heat_check_2026_09_16.py
++claim_scope: "Joint sampled magnetic-event bounds for the supplied compact rotor ground law on even spatial tori L>=4 at fixed positive g and T."
++upstream_dependencies: []
++---
++
+ # Joint magnetic event bounds for compact rotor ground paths
+ 
+-Author-proposed bounded theorem, 2026-09-16. Personal proof and challenge
+-checks completed; independent review and retained status are pending.
+-See [the claim scope](../CLAIM_STATUS_CERTIFICATE.md). This is a theorem
+-about the supplied Hamiltonian below, not a
+-derivation of that Hamiltonian from the framework's axioms.
++**Type:** bounded_theorem
++
++```yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++hypothetical_axiom_status: null
++admitted_observation_status: null
++```
++
++Joint sampled magnetic-event bounds for the supplied compact rotor ground law on even spatial tori L>=4 at fixed positive g and T. This is a positive conditional theorem for the explicitly supplied Hamiltonian, geometry and limit order, not a derivation of that Hamiltonian from framework axioms. No audit verdict or retained promotion is asserted.
+ 
+ ## 1. Domain and proposed conclusion
+ 
+@@ -316,7 +333,7 @@
+ This constructs only subsequential stationary sampled-time angle laws.
+ It proves neither their uniqueness nor continuum-path tightness in
+ infinite spatial volume. These torus limits have not been identified
+-with the cofinal free-box equal-time state of draft PR8164.
++with the cofinal free-box equal-time state of the contextual PR8164 construction.
+ 
+ Sparse sampled magnetic defects alone do not prove a Maxwell phase.
+ Small principal plaquette flux does not supply a global real lift with
+@@ -348,7 +365,33 @@
+ Completed personal challenge checks cover actual reflected
+ periodic incidence, face/time multiplicities, disjoint-edge packing,
+ independent trial integrals, Brownian/rotor semigroup comparisons and
+-the constants in (17)-(20); see [the review](../review/PERSONAL_REVIEW.md).
++the constants in (17)-(20); see the historical personal review preserved in the recovery packet.
+ Finite checks cannot establish (10) or a
+ thermodynamic phase. A finite-clock chain has jump paths and is not a
+ valid substitute for the Brownian estimate (11).
++
++## Evidence and execution boundary
++
++Primary runner: `scripts/compact_rotor_geometry_and_heat_check_2026_09_16.py`. The reflection/path runner jointly supports the magnetic-excursion and spatial-path-limit notes.
++
++The three calculations retain every original fixture, arithmetic operation, assertion and tolerance. Each retains a 120-second timeout. A 512 MiB external process cap is proposed from the bounded representations and library overhead; it is not a measured peak or a completed execution. Each runner reads and hash-pins its declared source-note inputs and writes JSON under `logs/runner-cache/`. `TOTAL: PASS=3 FAIL=0` counts three completed diagnostic families, not three assertions or exhaustive theorem coverage. The JSON separately labels the static source assertion count.
++
++The [historical recovery packet](work_history/repo/review_feedback/pr8165-evidence/README.md) preserves all 88 original paths, modes, blobs and byte hashes, all four full working proofs, all three calculations, eleven mutation histories and the failed Fourier attempt. Historical output is not current-source execution evidence. PR8164 is contextual comparison only; no theorem or status is imported from it.
++
++## No-Go Discipline Gate
++
++**N1 — Actual routes.** Formal negative-packet certification is deferred: the source does not supply five qualifying refuted routes. The actual approach registry and finite countercontrols are preserved; no extra routes are invented. This does not negate the positive supplied-model proofs or the exact finite counterexamples.
++
++**N2 — Shared scope.** One supplied Hamiltonian and the stated compact geometry underlie the chain. Reflection/chessboard is a shared mathematical premise; future source-response, harmonic-sector and microscopic-current obligations are not independent walls proved here.
++
++**N3 — Conditions.** Compact Haar angles, the full thermal trace followed by its neutral ground limit, even L>=4, fixed positive g and T, and the oriented principal branch are explicit. No limiting-state uniqueness, positive-semidefinite constrained kernel or finite-clock Brownian behavior is assumed.
++
++**N4 — Credit and failures.** Biskup supplies the matched chessboard theorem; the finite smooth reversible identity is derived and credited. The failed Fourier cutoff attempt, exact subsequent refinement, eleven mutation outcomes and prior source versions remain recoverable without treating them as current captures.
++
++**N5 — Resolution.** Finite geometry, circle/rotor matrices and integer cochains test the stated identities and constants. Volume-uniform bounds, continuous-path tightness and the infinite-volume specification are analytic proofs, not exhaustive numerical runs. The five execution-scope lines report only the program that actually finishes.
++
++**N6 — Partial closure.** Sampled events, full excursions, a continuous-path spatial limit and a fixed-T current construction are successive positive results. No new primitive is proposed.
++
++**N7 — Strongest boundary.** Rare coarse conserved currents do not by themselves give a photon, a native Hamiltonian, a unique vacuum, microscopic T->0 control, exhaustive harmonic sectors or physical electric reconstruction. These are open extensions, not impossibility claims.
++
++**N8 — Reopening.** Smooth-field/current weighting and source-response control may resolve the remaining physical questions. The periodic spatial subsequence is not equated with the contextual free-box state. No broad negative certification is claimed.
+--- original/notes/BLOCK02_CONTINUOUS_TIME_MAGNETIC_EXCURSIONS.md
++++ docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,12 +1,29 @@
++---
++claim_id: compact_rotor_magnetic_excursion_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++runner: scripts/compact_rotor_reflection_and_path_check_2026_09_16.py
++claim_scope: "Whole-interval magnetic-excursion bounds for the same supplied rotor ground law, with volume-uniform constants at fixed positive g and T."
++upstream_dependencies: ["compact_rotor_sampled_magnetic_event_bounded_theorem_note_2026-09-16"]
++---
++
+ # Magnetic excursions throughout time intervals
+ 
+-Author-proposed derivation, 2026-09-16. Personal proof and challenge checks
+-completed; independent review and retained status are pending. See
+-[the claim scope](../CLAIM_STATUS_CERTIFICATE.md). This strengthens the observation
+-type in [the magnetic-event derivation](BLOCK01_SAMPLED_MAGNETIC_EVENT_BOUND.md), for precisely
+-the same supplied compact rotor Hamiltonian and even spatial tori.
+-It uses Block01 sections2-3 (ground energy, ground sector and actual
+-space/time reflection positivity), but does not assume a photon phase.
++**Type:** bounded_theorem
++
++```yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++hypothetical_axiom_status: null
++admitted_observation_status: null
++```
++
++Whole-interval magnetic-excursion bounds for the same supplied rotor ground law, with volume-uniform constants at fixed positive g and T. This is a positive conditional theorem for the explicitly supplied Hamiltonian, geometry and limit order, not a derivation of that Hamiltonian from framework axioms. No audit verdict or retained promotion is asserted.
++
++Load-bearing mathematical parents: [COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md](COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md). These are supplied-model proof dependencies, not retained axioms.
+ 
+ ## 1. Continuous-time events
+ 
+@@ -64,14 +81,14 @@
+ 
+ Fix one orientation and one normal-plane parity, and let D consist of
+ all N/2 plaquettes of that orientation in those planes. Let K_D(T;x,y)
+-be the actual Feynman-Kac transition kernel of (1) in Block01, with
++be the actual Feynman-Kac transition kernel of (1) in the sampled-event note, with
+ the additional event that EVERY plaquette of D has event (1) somewhere
+ in [0,T]. Their bad times can differ. K_D is a nonnegative kernel and
+ is symmetric under time reversal. It obeys pointwise
+ 
+     0<=K_D(T;x,y)<=exp(-TH)(x,y).                            (6)
+ 
+-Select the N/4 edge-disjoint checkerboard plaquettes from Block01
++Select the N/4 edge-disjoint checkerboard plaquettes from the sampled-event note
+ section5. Discard all other event indicators and all other nonnegative
+ plaquette potentials. Free Brownian independence on the selected edge
+ sets, together with (5), proves the row bound
+@@ -91,7 +108,7 @@
+                        <= q_exc^[(N/4)(M-2)] Tr exp(-2TH).  (9)
+ 
+ This replaces the positive-operator estimate for P_A exp(-TH)P_A used
+-in Block01. Reusing that estimate without this distinction would leave
++in the sampled-event note. Reusing that estimate without this distinction would leave
+ an unsupported premise.
+ 
+ ## 4. Chessboard dissemination
+@@ -100,7 +117,7 @@
+ even. An excursion indicator on one normal face of the cube is a cell
+ function. Spatial reflection disseminates it to N/2 distinct faces,
+ each repeated twice. Time reflection preserves the whole-interval
+-supremum event. Unlike the endpoint event in Block01, dissemination
++supremum event. Unlike the endpoint event in the sampled-event note, dissemination
+ now imposes the event in EVERY interval; there is no factor-two temporal
+ duplication. The dense dissemination probability is
+ 
+@@ -129,7 +146,7 @@
+ claim for an indicator discontinuity is needed at this finite L step.
+ 
+ Assign each requested oriented plaquette to its anchor cube and choose
+-the inverse-reflected base face as in Block01. The time-interval event
++the inverse-reflected base face as in the sampled-event note. The time-interval event
+ is itself invariant under reversal. Distinct pairs of one orientation
+ occupy distinct cells, and (11) proves (3). For mixed orientations use
+ the largest orientation subcollection, of size at least ceil(k/3).
+@@ -148,7 +165,7 @@
+ 
+ Occupation is defined by the finite union of continuous-path supremum
+ events, avoiding any need to regard Q_c(s) as a continuous function.
+-Branch values at pi are fixed consistently as in Block01 for the charge
++Branch values at pi are fixed consistently as in the sampled-event note for the charge
+ implication. A cell can be occupied even when its charge stays zero.
+ 
+ On the degree-eight nearest-neighbor graph of spatial cubes and time
+@@ -164,7 +181,7 @@
+     eps_exc <=min(1,17^(1/4) exp[C0 T_alpha-b_alpha/(4g^2)]).
+                                                                (14)
+ 
+-The leading negative exponent equals that in Block01(17), while the
++The leading negative exponent equals that in the sampled-event note(17), while the
+ prefactor is larger. At g=0.01 this expression gives the conservatively
+ rounded bounds eps_exc<1.269e-18, p_exc<0.006243,
+ and64p_exc<0.39954. A separate integral/constant checker
+@@ -187,7 +204,33 @@
+ here; the estimates are uniform finite-volume statements. A spatial
+ path-tightness or direct cylinder-kernel construction is a separate step.
+ 
+-Known Feynman-Kac, chessboard and Schur tools are credited in Block01.
++Known Feynman-Kac, chessboard and Schur tools are credited in the sampled-event note.
+ The theorem is a proposed composition with explicit hypotheses, not a
+ new axiom or a formal audit result. A dilute magnetic-defect regime
+ alone supplies no lower bound on the electric susceptibility target.
++
++## Evidence and execution boundary
++
++Primary runner: `scripts/compact_rotor_reflection_and_path_check_2026_09_16.py`. The reflection/path runner jointly supports the magnetic-excursion and spatial-path-limit notes.
++
++The three calculations retain every original fixture, arithmetic operation, assertion and tolerance. Each retains a 120-second timeout. A 512 MiB external process cap is proposed from the bounded representations and library overhead; it is not a measured peak or a completed execution. Each runner reads and hash-pins its declared source-note inputs and writes JSON under `logs/runner-cache/`. `TOTAL: PASS=3 FAIL=0` counts three completed diagnostic families, not three assertions or exhaustive theorem coverage. The JSON separately labels the static source assertion count.
++
++The [historical recovery packet](work_history/repo/review_feedback/pr8165-evidence/README.md) preserves all 88 original paths, modes, blobs and byte hashes, all four full working proofs, all three calculations, eleven mutation histories and the failed Fourier attempt. Historical output is not current-source execution evidence. PR8164 is contextual comparison only; no theorem or status is imported from it.
++
++## No-Go Discipline Gate
++
++**N1 — Actual routes.** Formal negative-packet certification is deferred: the source does not supply five qualifying refuted routes. The actual approach registry and finite countercontrols are preserved; no extra routes are invented. This does not negate the positive supplied-model proofs or the exact finite counterexamples.
++
++**N2 — Shared scope.** One supplied Hamiltonian and the stated compact geometry underlie the chain. Reflection/chessboard is a shared mathematical premise; future source-response, harmonic-sector and microscopic-current obligations are not independent walls proved here.
++
++**N3 — Conditions.** Compact Haar angles, the full thermal trace followed by its neutral ground limit, even L>=4, fixed positive g and T, and the oriented principal branch are explicit. No limiting-state uniqueness, positive-semidefinite constrained kernel or finite-clock Brownian behavior is assumed.
++
++**N4 — Credit and failures.** Biskup supplies the matched chessboard theorem; the finite smooth reversible identity is derived and credited. The failed Fourier cutoff attempt, exact subsequent refinement, eleven mutation outcomes and prior source versions remain recoverable without treating them as current captures.
++
++**N5 — Resolution.** Finite geometry, circle/rotor matrices and integer cochains test the stated identities and constants. Volume-uniform bounds, continuous-path tightness and the infinite-volume specification are analytic proofs, not exhaustive numerical runs. The five execution-scope lines report only the program that actually finishes.
++
++**N6 — Partial closure.** Sampled events, full excursions, a continuous-path spatial limit and a fixed-T current construction are successive positive results. No new primitive is proposed.
++
++**N7 — Strongest boundary.** Rare coarse conserved currents do not by themselves give a photon, a native Hamiltonian, a unique vacuum, microscopic T->0 control, exhaustive harmonic sectors or physical electric reconstruction. These are open extensions, not impossibility claims.
++
++**N8 — Reopening.** Smooth-field/current weighting and source-response control may resolve the remaining physical questions. The periodic spatial subsequence is not equated with the contextual free-box state. No broad negative certification is claimed.
+--- original/notes/BLOCK03_SPATIAL_PATH_LIMIT.md
++++ docs/COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,12 +1,31 @@
++---
++claim_id: compact_rotor_spatial_ground_path_limit_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++runner: scripts/compact_rotor_reflection_and_path_check_2026_09_16.py
++claim_scope: "Subsequential infinite-volume continuous compact ground paths, their local Brownian-bridge specification and transferred excursion bounds."
++upstream_dependencies: ["compact_rotor_sampled_magnetic_event_bounded_theorem_note_2026-09-16", "compact_rotor_magnetic_excursion_bounded_theorem_note_2026-09-16"]
++---
++
+ # Continuous compact ground paths in infinite spatial volume
+ 
+-Author-proposed bounded derivation, 2026-09-16; personal proof and challenge
+-checks completed. Independent review and retained status are pending.
+-See [the claim scope](../CLAIM_STATUS_CERTIFICATE.md). The supplied Hamiltonian,
+-finite-volume stationary ground process and even-torus sequence are
+-exactly those of [the magnetic-event derivation](BLOCK01_SAMPLED_MAGNETIC_EVENT_BOUND.md).
+-The joint excursion estimate imported below is the provisional result
+-of [the magnetic-excursion derivation](BLOCK02_CONTINUOUS_TIME_MAGNETIC_EXCURSIONS.md).
++**Type:** bounded_theorem
++
++```yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++hypothetical_axiom_status: null
++admitted_observation_status: null
++```
++
++Subsequential infinite-volume continuous compact ground paths, their local Brownian-bridge specification and transferred excursion bounds. This is a positive conditional theorem for the explicitly supplied Hamiltonian, geometry and limit order, not a derivation of that Hamiltonian from framework axioms. No audit verdict or retained promotion is asserted.
++
++Load-bearing mathematical parents: [COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md](COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md), [COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md](COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md). These are supplied-model proof dependencies, not retained axioms.
++
++The complete path-law construction below includes both reversible tightness and the actual compact local Brownian-bridge specification; the latter is part of the result.
+ 
+ ## 1. A reversible diffusion estimate independent of spatial volume
+ 
+@@ -130,7 +149,7 @@
+ This identifies mu as a subsequential Euclidean Gibbs law obtained from
+ the actual finite-volume ground processes. It does not assert uniqueness,
+ purity, a limiting infinite-dimensional SDE drift, or equality with
+-the free-box equal-time limit in draft PR8164.
++the free-box equal-time limit in the contextual PR8164 construction.
+ 
+ ## 4. Excursion and defect-cover estimates survive the spatial limit
+ 
+@@ -141,7 +160,7 @@
+ is continuous in the finite-link uniform path topology. For alpha'<alpha,
+ the closed event of all specified suprema being at least alpha is
+ contained in the OPEN event of all being greater than alpha'. By
+-Portmanteau and Block02,
++Portmanteau and the magnetic-excursion note,
+ 
+     mu(all suprema>=alpha)
+       <=mu(all suprema>alpha')
+@@ -155,14 +174,14 @@
+ closed event.
+ 
+ Define occupied cube/interval cells by the six-face excursion cover
+-at threshold pi/3, as in Block02 section5. This cover contains every
++at threshold pi/3, as in the magnetic-excursion note section5. This cover contains every
+ nonzero principal magnetic cube charge anywhere in the interval.
+ The same deterministic witnesses and tree count give
+ 
+     mu(component at a fixed cell has at least s vertices)
+                        <=8^(2s-2) p_exc^s.                 (10)
+ 
+-For the explicit g=0.01, T=0.126439394990932821... values of Block02,
++For the explicit g=0.01, T=0.126439394990932821... values of the magnetic-excursion note,
+ 64p_exc<0.4. Thus every occupied component is finite mu-almost surely
+ in this specified nearest-neighbor cell graph. The assertion for all
+ cells follows by a countable union over the zero-probability events
+@@ -184,7 +203,7 @@
+ all8 pages extracted and read. The original cited source is T.J.Lyons
+ and W.Zheng, *A crossing estimate for the canonical process on a
+ Dirichlet space and a tightness result*, Asterisque157-158(1988),249-271;
+-that original text has not yet been read in this campaign.
++that original text has not yet been read in the original source review.
+ 
+ Here only the smooth finite-dimensional reversible case is used, and
+ (2)-(4) derive the needed formula and constant explicitly. Separate
+@@ -193,3 +212,29 @@
+ single-rotor ground process. A kinetic normalization fault is rejected;
+ drift cancellation is checked analytically in (2)-(3). This cannot numerically prove
+ tightness or uniqueness of a thermodynamic state.
++
++## Evidence and execution boundary
++
++Primary runner: `scripts/compact_rotor_reflection_and_path_check_2026_09_16.py`. The reflection/path runner jointly supports the magnetic-excursion and spatial-path-limit notes.
++
++The three calculations retain every original fixture, arithmetic operation, assertion and tolerance. Each retains a 120-second timeout. A 512 MiB external process cap is proposed from the bounded representations and library overhead; it is not a measured peak or a completed execution. Each runner reads and hash-pins its declared source-note inputs and writes JSON under `logs/runner-cache/`. `TOTAL: PASS=3 FAIL=0` counts three completed diagnostic families, not three assertions or exhaustive theorem coverage. The JSON separately labels the static source assertion count.
++
++The [historical recovery packet](work_history/repo/review_feedback/pr8165-evidence/README.md) preserves all 88 original paths, modes, blobs and byte hashes, all four full working proofs, all three calculations, eleven mutation histories and the failed Fourier attempt. Historical output is not current-source execution evidence. PR8164 is contextual comparison only; no theorem or status is imported from it.
++
++## No-Go Discipline Gate
++
++**N1 — Actual routes.** Formal negative-packet certification is deferred: the source does not supply five qualifying refuted routes. The actual approach registry and finite countercontrols are preserved; no extra routes are invented. This does not negate the positive supplied-model proofs or the exact finite counterexamples.
++
++**N2 — Shared scope.** One supplied Hamiltonian and the stated compact geometry underlie the chain. Reflection/chessboard is a shared mathematical premise; future source-response, harmonic-sector and microscopic-current obligations are not independent walls proved here.
++
++**N3 — Conditions.** Compact Haar angles, the full thermal trace followed by its neutral ground limit, even L>=4, fixed positive g and T, and the oriented principal branch are explicit. No limiting-state uniqueness, positive-semidefinite constrained kernel or finite-clock Brownian behavior is assumed.
++
++**N4 — Credit and failures.** Biskup supplies the matched chessboard theorem; the finite smooth reversible identity is derived and credited. The failed Fourier cutoff attempt, exact subsequent refinement, eleven mutation outcomes and prior source versions remain recoverable without treating them as current captures.
++
++**N5 — Resolution.** Finite geometry, circle/rotor matrices and integer cochains test the stated identities and constants. Volume-uniform bounds, continuous-path tightness and the infinite-volume specification are analytic proofs, not exhaustive numerical runs. The five execution-scope lines report only the program that actually finishes.
++
++**N6 — Partial closure.** Sampled events, full excursions, a continuous-path spatial limit and a fixed-T current construction are successive positive results. No new primitive is proposed.
++
++**N7 — Strongest boundary.** Rare coarse conserved currents do not by themselves give a photon, a native Hamiltonian, a unique vacuum, microscopic T->0 control, exhaustive harmonic sectors or physical electric reconstruction. These are open extensions, not impossibility claims.
++
++**N8 — Reopening.** Smooth-field/current weighting and source-response control may resolve the remaining physical questions. The periodic spatial subsequence is not equated with the contextual free-box state. No broad negative certification is claimed.
+--- original/notes/BLOCK04_TEMPORAL_OSCILLATIONS_AND_COARSE_CURRENTS.md
++++ docs/COMPACT_ROTOR_TEMPORAL_OSCILLATION_COARSE_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,13 +1,31 @@
++---
++claim_id: compact_rotor_temporal_oscillation_coarse_current_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++runner: scripts/compact_rotor_coarse_current_check_2026_09_16.py
++claim_scope: "Joint temporal oscillations and conserved integer coarse currents of the supplied compact rotor path law at fixed positive time scale T."
++upstream_dependencies: ["compact_rotor_sampled_magnetic_event_bounded_theorem_note_2026-09-16", "compact_rotor_magnetic_excursion_bounded_theorem_note_2026-09-16", "compact_rotor_spatial_ground_path_limit_bounded_theorem_note_2026-09-16"]
++---
++
+ # Temporal oscillations and closed coarse compact currents
+ 
+-Personal derivation, 2026-09-16. Provisional bounded theorem, with
+-personal proof and challenge checks completed and independent review
+-pending. See [the claim scope](../CLAIM_STATUS_CERTIFICATE.md). This note
+-uses [the magnetic-event proof](BLOCK01_SAMPLED_MAGNETIC_EVENT_BOUND.md) for the supplied
+-Hamiltonian, sector and chessboard argument, [the whole-interval proof](BLOCK02_CONTINUOUS_TIME_MAGNETIC_EXCURSIONS.md)
+-for magnetic excursions, and [the spatial path limit](BLOCK03_SPATIAL_PATH_LIMIT.md)
+-for a subsequential infinite-volume continuous-path law. All dependencies
+-are author-proposed results in this packet, not retained axioms.
++**Type:** bounded_theorem
++
++```yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++hypothetical_axiom_status: null
++admitted_observation_status: null
++```
++
++Joint temporal oscillations and conserved integer coarse currents of the supplied compact rotor path law at fixed positive time scale T. This is a positive conditional theorem for the explicitly supplied Hamiltonian, geometry and limit order, not a derivation of that Hamiltonian from framework axioms. No audit verdict or retained promotion is asserted.
++
++Load-bearing mathematical parents: [COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md](COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md), [COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md](COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md), [COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md](COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md). These are supplied-model proof dependencies, not retained axioms.
++
++The infinite-volume application uses the full spatial-path-limit proof, including its local compact path specification, together with the sampled-event and excursion proofs.
+ 
+ ## 1. A joint bound on full temporal oscillations of links
+ 
+@@ -44,7 +62,7 @@
+ plaquette potential. The independent reference link Brownian motions
+ give row sums <=q_E^(N/4). Time reversal makes K_D symmetric. Its
+ Hilbert-Schmidt norm is bounded by that of exp(-TH), just as in
+-Block02, whether or not K_D is positive semidefinite. The even-power
++the magnetic-excursion note, whether or not K_D is positive semidefinite. The even-power
+ trace bound and chessboard exponent therefore give
+ 
+     eps_E(g,T,alpha)=min(1,exp(C0 T) q_E(g,T,alpha)^(1/4)),
+@@ -54,7 +72,7 @@
+ For arbitrary link orientations the exponent becomes ceil(k/3).
+ The inverse-reflected base edge is chosen separately for each event
+ according to its two transverse anchor parities. Distinct links of
+-one orientation and intervals occupy distinct anchor cells. Block03's
++one orientation and intervals occupy distinct anchor cells. the spatial-path-limit note's
+ path convergence and open-threshold argument transfer (3) to the same
+ infinite-volume path law mu.
+ 
+@@ -102,7 +120,7 @@
+ 
+ Among r distinct bad coarse two-cells, at least ceil(r/6) have one of
+ the six fixed spacetime orientations. Within that orientation, the
+-dominating path events are distinct. Equations(3) and Block02(3) give
++dominating path events are distinct. Equations(3) and the magnetic-excursion note(3) give
+ 
+     mu(all r specified |F_p|>=alpha)<=eps_*^ceil(r/6).       (7)
+ 
+@@ -144,7 +162,7 @@
+ of particle trajectories.
+ 
+ The sufficient range is very conservative. At the balanced T of
+-Block02, its magnetic bound behaves as exp[-constant/g^2] at fixed T,
++the magnetic-excursion note, its magnetic bound behaves as exp[-constant/g^2] at fixed T,
+ and (3) has an even stronger negative exponent. Thus196p_J<1 holds
+ for a nonempty interval of fixed positive couplings near zero. The
+ checker evaluates g=0.004, where196p_J<0.02002, and the explicit
+@@ -184,3 +202,29 @@
+ field and of the long-wavelength transverse response. There is no
+ axiom change, retained phase
+ claim or assertion of novelty of integer-current conservation here.
++
++## Evidence and execution boundary
++
++Primary runner: `scripts/compact_rotor_coarse_current_check_2026_09_16.py`. The reflection/path runner jointly supports the magnetic-excursion and spatial-path-limit notes.
++
++The three calculations retain every original fixture, arithmetic operation, assertion and tolerance. Each retains a 120-second timeout. A 512 MiB external process cap is proposed from the bounded representations and library overhead; it is not a measured peak or a completed execution. Each runner reads and hash-pins its declared source-note inputs and writes JSON under `logs/runner-cache/`. `TOTAL: PASS=3 FAIL=0` counts three completed diagnostic families, not three assertions or exhaustive theorem coverage. The JSON separately labels the static source assertion count.
++
++The [historical recovery packet](work_history/repo/review_feedback/pr8165-evidence/README.md) preserves all 88 original paths, modes, blobs and byte hashes, all four full working proofs, all three calculations, eleven mutation histories and the failed Fourier attempt. Historical output is not current-source execution evidence. PR8164 is contextual comparison only; no theorem or status is imported from it.
++
++## No-Go Discipline Gate
++
++**N1 — Actual routes.** Formal negative-packet certification is deferred: the source does not supply five qualifying refuted routes. The actual approach registry and finite countercontrols are preserved; no extra routes are invented. This does not negate the positive supplied-model proofs or the exact finite counterexamples.
++
++**N2 — Shared scope.** One supplied Hamiltonian and the stated compact geometry underlie the chain. Reflection/chessboard is a shared mathematical premise; future source-response, harmonic-sector and microscopic-current obligations are not independent walls proved here.
++
++**N3 — Conditions.** Compact Haar angles, the full thermal trace followed by its neutral ground limit, even L>=4, fixed positive g and T, and the oriented principal branch are explicit. No limiting-state uniqueness, positive-semidefinite constrained kernel or finite-clock Brownian behavior is assumed.
++
++**N4 — Credit and failures.** Biskup supplies the matched chessboard theorem; the finite smooth reversible identity is derived and credited. The failed Fourier cutoff attempt, exact subsequent refinement, eleven mutation outcomes and prior source versions remain recoverable without treating them as current captures.
++
++**N5 — Resolution.** Finite geometry, circle/rotor matrices and integer cochains test the stated identities and constants. Volume-uniform bounds, continuous-path tightness and the infinite-volume specification are analytic proofs, not exhaustive numerical runs. The five execution-scope lines report only the program that actually finishes.
++
++**N6 — Partial closure.** Sampled events, full excursions, a continuous-path spatial limit and a fixed-T current construction are successive positive results. No new primitive is proposed.
++
++**N7 — Strongest boundary.** Rare coarse conserved currents do not by themselves give a photon, a native Hamiltonian, a unique vacuum, microscopic T->0 control, exhaustive harmonic sectors or physical electric reconstruction. These are open extensions, not impossibility claims.
++
++**N8 — Reopening.** Smooth-field/current weighting and source-response control may resolve the remaining physical questions. The periodic spatial subsequence is not equated with the contextual free-box state. No broad negative certification is claimed.
+--- original/evidence/block01_geometry_and_rotor_check.py
++++ scripts/compact_rotor_geometry_and_heat_check_2026_09_16.py
+@@ -1,14 +1,17 @@
+ #!/usr/bin/env python3
+-"""Personal challenges to Blocks01-02, not a phase or chessboard proof.
++"""Finite challenges to sampled magnetic events and excursions, not a phase or chessboard proof.
+ 
+ Geometry is reconstructed from oriented endpoints. The compact single-face
+ heat equation is evaluated independently in Fourier and finite-difference
+ bases. Neither finite-dimensional calculation is the full spatial model.
+ """
+ AUDIT_TIMEOUT_SEC = 120
+-
+-# Scientific inputs are defined below; the only repository integrity read
+-# is this source file for its SHA256. Raw outputs are not audit caches.
++AUDIT_MEMORY_MB = 512
++AUDIT_INPUT_PATHS = ['docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++EXPECTED_INPUT_SHA256 = {'docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'aa61782c652fb722b65832dceed9b309e63a8bdae67cb6045830a2a974eb8ccc', 'docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'c68e64839af884757499eb5223a479f7ad32aba3f339198fc2e2b5845816db7e'}
++
++# Numerical fixtures remain defined below. Declared proof inputs and this
++# source are hash-bound; JSON diagnostics alone are not audit verdicts.
+ 
+ from collections import Counter
+ from itertools import combinations, product
+@@ -237,8 +240,33 @@
+                geometry=geometry(),parameters=trial_and_parameters(),rotor=rotor_checks())
+     ans['elapsed_seconds']=time.monotonic()-started
+     ans['status']='PERSONAL_CHECKS_COMPLETED'
+-    print(json.dumps(ans,indent=2,sort_keys=True))
+-
++    _emit(ans)
++
++
++
++
++def _check_inputs():
++    root = Path(__file__).resolve().parents[1]
++    for name in AUDIT_INPUT_PATHS:
++        if hashlib.sha256((root / name).read_bytes()).hexdigest() != EXPECTED_INPUT_SHA256[name]:
++            raise RuntimeError("input identity mismatch: " + name)
++
++def _emit(report):
++    report["input_sha256"] = dict(EXPECTED_INPUT_SHA256)
++    report["completed_diagnostic_families"] = 3
++    report["total_unit"] = "completed diagnostic families, not dynamic assertions"
++    report["static_source_assert_statements"] = 27
++    output = Path(__file__).resolve().parents[1] / "logs" / "runner-cache" / (Path(__file__).stem + ".json")
++    output.parent.mkdir(parents=True, exist_ok=True)
++    output.write_text(json.dumps(report, indent=2, sort_keys=True) + "\n")
++    print(json.dumps(report, indent=2, sort_keys=True))
++    print("TOTAL: PASS=3 FAIL=0")
++    print('per_element: all original oriented faces, trial integrals and compact one-face heat comparisons.')
++    print('per_site: periodic geometry L=4,6,8 and all original reflection planes.')
++    print('per_mode: Fourier cutoffs48/64 and finite-difference meshes384/768/1536; no rigorous tail enclosure.')
++    print('per_block: sampled and excursion parameter constants at the original fixed couplings.')
++    print('lattice_wide: checked and not executed — full lattice ground law and infinite-volume theorem are analytic, not numerically sampled.')
+ 
+ if __name__ == '__main__':
++    _check_inputs()
+     main()
+--- original/evidence/block02_reflection_and_path_check.py
++++ scripts/compact_rotor_reflection_and_path_check_2026_09_16.py
+@@ -1,5 +1,5 @@
+ #!/usr/bin/env python3
+-"""Independent finite challenges for reflection/path steps in Blocks01-03.
++"""Independent finite challenges for reflection, excursion and spatial-path-limit steps.
+ 
+ The 12-link binary-clock strip tests the reflection/chessboard ALGEBRA only.
+ It cannot validate the Brownian exp(-constant/g^2) estimate. A separate
+@@ -7,9 +7,12 @@
+ checked in a genuine compact single-rotor Schrödinger ground process.
+ """
+ AUDIT_TIMEOUT_SEC = 120
+-
+-# Scientific inputs are defined below; the only repository integrity read
+-# is this source file for its SHA256. Raw outputs are not audit caches.
++AUDIT_MEMORY_MB = 512
++AUDIT_INPUT_PATHS = ['docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++EXPECTED_INPUT_SHA256 = {'docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'aa61782c652fb722b65832dceed9b309e63a8bdae67cb6045830a2a974eb8ccc', 'docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'c68e64839af884757499eb5223a479f7ad32aba3f339198fc2e2b5845816db7e', 'docs/COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md': '679709b4e68b94805eaa3b9fbdc6d16a3a033e15c8e9c22d798f7d796c2255c0'}
++
++# Numerical fixtures remain defined below. Declared proof inputs and this
++# source are hash-bound; JSON diagnostics alone are not audit verdicts.
+ 
+ from itertools import combinations
+ from pathlib import Path
+@@ -166,8 +169,33 @@
+              moments=moments_and_clock_control())
+     ans['elapsed_seconds']=time.monotonic()-start
+     ans['status']='PERSONAL_CHECKS_COMPLETED'
+-    print(json.dumps(ans,indent=2,sort_keys=True))
+-
+-
+-if __name__=='__main__':
++    _emit(ans)
++
++
++
++
++def _check_inputs():
++    root = Path(__file__).resolve().parents[1]
++    for name in AUDIT_INPUT_PATHS:
++        if hashlib.sha256((root / name).read_bytes()).hexdigest() != EXPECTED_INPUT_SHA256[name]:
++            raise RuntimeError("input identity mismatch: " + name)
++
++def _emit(report):
++    report["input_sha256"] = dict(EXPECTED_INPUT_SHA256)
++    report["completed_diagnostic_families"] = 3
++    report["total_unit"] = "completed diagnostic families, not dynamic assertions"
++    report["static_source_assert_statements"] = 15
++    output = Path(__file__).resolve().parents[1] / "logs" / "runner-cache" / (Path(__file__).stem + ".json")
++    output.parent.mkdir(parents=True, exist_ok=True)
++    output.write_text(json.dumps(report, indent=2, sort_keys=True) + "\n")
++    print(json.dumps(report, indent=2, sort_keys=True))
++    print("TOTAL: PASS=3 FAIL=0")
++    print('per_element: all original reflection, indefinite-kernel and moment diagnostics.')
++    print('per_site: 12-link binary strip4096 states; this clock model is only an algebra control.')
++    print('per_mode: reduced16 and reflection128 matrices, rotor cutoffs32/48, original free-circle and clock controls.')
++    print('per_block: three strip parameter pairs, original moment time/coupling grid and even powers2/4/6/10.')
++    print('lattice_wide: checked and not executed — continuous-path tightness and compact infinite-volume specification use the complete proof.')
++
++if __name__ == '__main__':
++    _check_inputs()
+     main()
+--- original/evidence/block03_coarse_current_check.py
++++ scripts/compact_rotor_coarse_current_check_2026_09_16.py
+@@ -6,9 +6,12 @@
+ evaluated with 80-digit arithmetic. No simulated phase is inferred.
+ """
+ AUDIT_TIMEOUT_SEC = 120
+-
+-# Scientific inputs are defined below; the only repository integrity read
+-# is this source file for its SHA256. Raw outputs are not audit caches.
++AUDIT_MEMORY_MB = 512
++AUDIT_INPUT_PATHS = ['docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/COMPACT_ROTOR_TEMPORAL_OSCILLATION_COARSE_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++EXPECTED_INPUT_SHA256 = {'docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'aa61782c652fb722b65832dceed9b309e63a8bdae67cb6045830a2a974eb8ccc', 'docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'c68e64839af884757499eb5223a479f7ad32aba3f339198fc2e2b5845816db7e', 'docs/COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md': '679709b4e68b94805eaa3b9fbdc6d16a3a033e15c8e9c22d798f7d796c2255c0', 'docs/COMPACT_ROTOR_TEMPORAL_OSCILLATION_COARSE_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-16.md': '0bec7eaaf856d6e48314e15c13468e98b6d5af3d90f52626c853cd5327d52416'}
++
++# Numerical fixtures remain defined below. Declared proof inputs and this
++# source are hash-bound; JSON diagnostics alone are not audit verdicts.
+ 
+ from collections import Counter
+ from itertools import combinations,product
+@@ -179,7 +182,33 @@
+     ans['independently_enumerated_witness_loss']=witness_loss
+     ans['elapsed_seconds']=time.monotonic()-start
+     ans['status']='PERSONAL_CHECKS_COMPLETED'
+-    print(json.dumps(ans,indent=2,sort_keys=True))
+-
+-
+-if __name__=='__main__':main()
++    _emit(ans)
++
++
++
++
++def _check_inputs():
++    root = Path(__file__).resolve().parents[1]
++    for name in AUDIT_INPUT_PATHS:
++        if hashlib.sha256((root / name).read_bytes()).hexdigest() != EXPECTED_INPUT_SHA256[name]:
++            raise RuntimeError("input identity mismatch: " + name)
++
++def _emit(report):
++    report["input_sha256"] = dict(EXPECTED_INPUT_SHA256)
++    report["completed_diagnostic_families"] = 3
++    report["total_unit"] = "completed diagnostic families, not dynamic assertions"
++    report["static_source_assert_statements"] = 15
++    output = Path(__file__).resolve().parents[1] / "logs" / "runner-cache" / (Path(__file__).stem + ".json")
++    output.parent.mkdir(parents=True, exist_ok=True)
++    output.write_text(json.dumps(report, indent=2, sort_keys=True) + "\n")
++    print(json.dumps(report, indent=2, sort_keys=True))
++    print("TOTAL: PASS=3 FAIL=0")
++    print('per_element: exact oriented coboundary, integrality, conservation, dual divergence and witnesses.')
++    print('per_site: five seeded integer fields on a four-dimensional L4 torus; not ground-law samples.')
++    print('per_mode: checked and not executed — no physical spectrum is computed by this cochain program.')
++    print('per_block: link dissemination at L4/6/8 and original80-digit fixed-coupling parameter checks.')
++    print('lattice_wide: finite periodic cochain support and degree counts completed; infinite-Z4 current law uses the full spatial-path-limit proof.')
++
++if __name__ == '__main__':
++    _check_inputs()
++    main()

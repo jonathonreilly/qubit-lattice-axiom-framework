@@ -1,0 +1,41 @@
+{
+  "primary": [
+    {
+      "name": "bridge_cubic_check",
+      "hashes": {
+        "bridge_cubic_check.py": "021f3f7c7828a75b4491af53f9873c96a7fad70bb15a50dd8a827051dfa1bde3"
+      },
+      "elapsed": 0.1380992920603603,
+      "output_sha256": "069eb44dd40431dea8e49661d2e87819d12fec1ae8da77aeb4327bed786476ee"
+    },
+    {
+      "name": "convex_carrier_check",
+      "hashes": {
+        "bridge_cubic_check.py": "021f3f7c7828a75b4491af53f9873c96a7fad70bb15a50dd8a827051dfa1bde3",
+        "convex_carrier_check.py": "3feabc811783f391540f24dc7a81b5914f63114aa35e58211b66307fbe5c0126"
+      },
+      "elapsed": 0.08823325007688254,
+      "output_sha256": "e052c1e426b5d3b27e383a01124f75e342da751e323e150444f92f1f46a11fcc"
+    },
+    {
+      "name": "integer_filling_check",
+      "hashes": {
+        "integer_filling_check.py": "ebb2df536ebc1d31ea65980d17a7b8d703566f132ae31552b081ae10ec9eabf5"
+      },
+      "elapsed": 0.07716333400458097,
+      "output_sha256": "7a92b965578f617f37d71e3390d1cb4cc6c37fb7ead5e50a385721f2d9d81b5a"
+    },
+    {
+      "name": "magnetic_covariance_check",
+      "hashes": {
+        "magnetic_covariance_check.py": "7158fcae794beb5da99f60163db99da80d6c045484d545c07b5580147d186153"
+      },
+      "elapsed": 0.35079066699836403,
+      "output_sha256": "f141c798d5cab29ce7d5b9161b20df524b72fc81c17cb9a364c1adfa622109dc"
+    }
+  ],
+  "faults_verified": 12,
+  "historical_fault_elapsed": 3.1587190839927644,
+  "all_python_ast_parsed": 29,
+  "all_json_parsed": 17
+}

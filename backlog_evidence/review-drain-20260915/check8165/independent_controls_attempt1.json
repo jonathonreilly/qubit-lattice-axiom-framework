@@ -1,0 +1,33 @@
+{
+  "two_state_eigenvalues": [
+    -0.08610725103633339,
+    0.8535630931015039
+  ],
+  "trial_second_moment": 0.13069096604865782,
+  "T": 0.12643939499093282,
+  "C0": 3.4188424177881487,
+  "bounds": [
+    {
+      "g": 0.01,
+      "eps_exc": 1.268638340764807e-18,
+      "magnetic_cluster": 0.39953441687230795,
+      "current_cluster": 196
+    },
+    {
+      "g": 0.004,
+      "eps_exc": 0.0,
+      "magnetic_cluster": 0.0,
+      "current_cluster": 0.0
+    }
+  ],
+  "cube_cells": {
+    "0": 16,
+    "1": 32,
+    "2": 24,
+    "3": 8,
+    "4": 1
+  },
+  "nonzero_cube_currents": 4,
+  "Gaussian_chord_fourth": 0.00014614564240463448,
+  "Gaussian_chord_ratio": 2.982564130706826
+}

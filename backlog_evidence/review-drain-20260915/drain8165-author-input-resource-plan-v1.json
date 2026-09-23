@@ -1,0 +1,98 @@
+[
+  {
+    "runner": "scripts/compact_rotor_geometry_and_heat_check_2026_09_16.py",
+    "source_sha256": "83bb578cdd010b3c09c532382d19e132b70a8600e4a8b0d30e2c880fb4d59cb3",
+    "ordered_inputs": [
+      {
+        "path": "docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "aa61782c652fb722b65832dceed9b309e63a8bdae67cb6045830a2a974eb8ccc"
+      },
+      {
+        "path": "docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "c68e64839af884757499eb5223a479f7ad32aba3f339198fc2e2b5845816db7e"
+      }
+    ],
+    "timeout_sec": 120,
+    "proposed_external_process_tree_limit_bytes": 536870912,
+    "resource_status": "source-derived proposal; not measured RSS or execution authorization",
+    "capture_status": "not run",
+    "json_output": "logs/runner-cache/compact_rotor_geometry_and_heat_check_2026_09_16.json",
+    "completed_family_total": 3,
+    "static_assert_statements": 27,
+    "scope": [
+      "all original oriented faces, trial integrals and compact one-face heat comparisons",
+      "periodic geometry L=4,6,8 and all original reflection planes",
+      "Fourier cutoffs48/64 and finite-difference meshes384/768/1536; no rigorous tail enclosure",
+      "sampled and excursion parameter constants at the original fixed couplings",
+      "checked and not executed \u2014 full lattice ground law and infinite-volume theorem are analytic, not numerically sampled"
+    ]
+  },
+  {
+    "runner": "scripts/compact_rotor_reflection_and_path_check_2026_09_16.py",
+    "source_sha256": "a48e2b037a49ca350d89213b3a88d931509e44c0d9ebff462c0cc036cb0cbef4",
+    "ordered_inputs": [
+      {
+        "path": "docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "aa61782c652fb722b65832dceed9b309e63a8bdae67cb6045830a2a974eb8ccc"
+      },
+      {
+        "path": "docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "c68e64839af884757499eb5223a479f7ad32aba3f339198fc2e2b5845816db7e"
+      },
+      {
+        "path": "docs/COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "679709b4e68b94805eaa3b9fbdc6d16a3a033e15c8e9c22d798f7d796c2255c0"
+      }
+    ],
+    "timeout_sec": 120,
+    "proposed_external_process_tree_limit_bytes": 536870912,
+    "resource_status": "source-derived proposal; not measured RSS or execution authorization",
+    "capture_status": "not run",
+    "json_output": "logs/runner-cache/compact_rotor_reflection_and_path_check_2026_09_16.json",
+    "completed_family_total": 3,
+    "static_assert_statements": 15,
+    "scope": [
+      "all original reflection, indefinite-kernel and moment diagnostics",
+      "12-link binary strip4096 states; this clock model is only an algebra control",
+      "reduced16 and reflection128 matrices, rotor cutoffs32/48, original free-circle and clock controls",
+      "three strip parameter pairs, original moment time/coupling grid and even powers2/4/6/10",
+      "checked and not executed \u2014 continuous-path tightness and compact infinite-volume specification use the complete proof"
+    ]
+  },
+  {
+    "runner": "scripts/compact_rotor_coarse_current_check_2026_09_16.py",
+    "source_sha256": "dbae621b71f1f45a285af5ae6dd1f3ccdc14e86bc962d2369e7dbb65f5370c14",
+    "ordered_inputs": [
+      {
+        "path": "docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "aa61782c652fb722b65832dceed9b309e63a8bdae67cb6045830a2a974eb8ccc"
+      },
+      {
+        "path": "docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "c68e64839af884757499eb5223a479f7ad32aba3f339198fc2e2b5845816db7e"
+      },
+      {
+        "path": "docs/COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "679709b4e68b94805eaa3b9fbdc6d16a3a033e15c8e9c22d798f7d796c2255c0"
+      },
+      {
+        "path": "docs/COMPACT_ROTOR_TEMPORAL_OSCILLATION_COARSE_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "0bec7eaaf856d6e48314e15c13468e98b6d5af3d90f52626c853cd5327d52416"
+      }
+    ],
+    "timeout_sec": 120,
+    "proposed_external_process_tree_limit_bytes": 536870912,
+    "resource_status": "source-derived proposal; not measured RSS or execution authorization",
+    "capture_status": "not run",
+    "json_output": "logs/runner-cache/compact_rotor_coarse_current_check_2026_09_16.json",
+    "completed_family_total": 3,
+    "static_assert_statements": 15,
+    "scope": [
+      "exact oriented coboundary, integrality, conservation, dual divergence and witnesses",
+      "five seeded integer fields on a four-dimensional L4 torus; not ground-law samples",
+      "checked and not executed \u2014 no physical spectrum is computed by this cochain program",
+      "link dissemination at L4/6/8 and original80-digit fixed-coupling parameter checks",
+      "finite periodic cochain support and degree counts completed; infinite-Z4 current law uses the full spatial-path-limit proof"
+    ]
+  }
+]

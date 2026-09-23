@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/strong_cycle_letters_are_generic_every_obstruction_is_a_nontrivial_angle_relation_2026_09_23.py
+runner_sha256: 93f89ab37986952415ca0abdb94299932d305b2cd272055c889abae5ab866db3
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 6.19
+status: ok
+----- stdout -----
+== A. Decoding ==
+[PASS] the parametrisation: each cycle's four angle vectors sum to zero, and the free angles are unit vectors
+[PASS] every coincidence of two signed angles, and every vanishing angle, is a nonzero relation :: 135 decoding hyperplanes
+
+== B. Squares ==
+[PASS] every non-straight square is a nonzero relation, and every straight square the zero relation :: 73344 non-straight configurations on 3645 hyperplanes
+
+== C. (U) ==
+[PASS] the 24576 covariant stars have pairwise distinct symbolic neighbour classes :: a collision needs a nonzero relation among the angles
+
+== D. Random letters modulo a prime ==
+[PASS] random cycle sets are strong more often as the prime grows, toward almost always :: strong of 60: 1, 34, 56 at m = 1009, 10007, 100003
+[PASS] at m = 10007 and 100003 the observed bad fraction lies within a factor 4 of H/m :: H = 3780 hyperplanes; bad of 60: 26, 4; H/m = 0.378, 0.038
+
+time 6 s
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

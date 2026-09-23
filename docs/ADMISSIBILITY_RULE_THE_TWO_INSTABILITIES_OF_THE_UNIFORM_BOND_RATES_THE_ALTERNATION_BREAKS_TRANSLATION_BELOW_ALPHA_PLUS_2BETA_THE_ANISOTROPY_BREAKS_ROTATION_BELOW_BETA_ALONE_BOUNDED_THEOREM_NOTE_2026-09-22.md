@@ -23,10 +23,10 @@ Block 84 (PR #8652) found that the uniform bond-rate field gives way to an alter
 
 1. **What the law charges (T1).** Block 59's law charges a single-axis modulation of the bond rates at wave vector `q` along its own axis `α(1 − cos q) + 4β` per bond per unit modulation power: `4β` for a uniform shift of one axis, `2α + 4β` for the alternation. The traceless anisotropy `u = ε(2, −1, −1)` — one axis' rates raised, the other two lowered, the total held — costs exactly `36βε²` per site: `α` and `γ` do not enter.
 2. **What the sea gains (T2).** The sea's energy has no first-order response to the anisotropy (its first derivative's three cyclic images cancel by the cubic symmetry) and the second-order coefficient `χ_a = 9⟨s_x²(s_y² + s_z²)/|s|³⟩ = 1.8827` per `ε²`, pointwise positive; to the alternation it is `χ = 1.5382` (block 84). Per unit power the response to a single-axis modulation rises continuously from `χ_a/9 = 0.209` at `q = 0` to `χ/3 = 0.513` at `q = π` (executed; the jump one sees in the raw response at `π` is only the modulation's power, `1` for the alternation against `½` for a cosine).
-3. **Two thresholds (T3).** The uniform field is unstable to the alternation iff `α + 2β < χ/12 = 0.128` and to the anisotropy iff `β < χ_a/72 = 0.0262` — the second independent of `α`. The alternation breaks one-step translation; the anisotropy breaks the cubic rotations to the group of one axis.
+3. **Two thresholds (T3).** The uniform field is unstable to the alternation iff `α + 2β < χ/12 = 0.128` and to the anisotropy iff `β < χ_a/72 = 0.0262` — the second independent of `α`. The alternation breaks one-step translation; the anisotropy breaks the cubic rotations to the group of one axis. **Corrigendum (2026-09-23, block 89, PR #8678):** these thresholds take the rates linear in the law's variable at fixed arithmetic mean; in block 59's own variable, the log rate, with the mean log rate as the unit of rate, they are `α + 2β < ⟨1/|s|⟩/4 = 0.228` and `β < (χ_a + 2⟨|s|⟩)/72 = 0.059`; the anisotropy's independence of `α` stands.
 4. **Nothing in between (T4, executed).** For a single-axis modulation the balance `χ̃(q)/2 − α(1 − cos q) − 4β` has its maximum at `q = 0` or `q = π` for every `α` tried, never at an intermediate wave vector: the first instability is the alternation or the anisotropy, and the alternation wins the single-axis race iff `α < (χ/3 − χ_a/9)/4 = 0.076`.
 
-So block 59's three numbers draw a map. Where `β > 0.026` and `α + 2β > 0.128` the uniform, isotropic bond rates are a local minimum; below `α + 2β = 0.128` the lattice alternates and every species gains one rest energy (block 84); below `β = 0.026` it goes anisotropic — its clocks tick faster along one axis — whatever `α` is; and where both hold, which comes first is decided by `α` against `0.076`. In plain terms: a lattice whose bonds are stiff enough sideways stays even; make them soft sideways and the lattice picks a favourite direction; make them soft in line and it goes long-short-long-short instead, and then every moving record is heavy.
+So block 59's three numbers draw a map. Where `β > 0.026` and `α + 2β > 0.128` the uniform, isotropic bond rates are a local minimum; below `α + 2β = 0.128` the lattice alternates and every species gains one rest energy (block 84); below `β = 0.026` it goes anisotropic — its clocks tick faster along one axis — whatever `α` is; and where both hold, which comes first is decided by `α` against `0.076` (all with the rates linear in the law's variable; in log rates the lines are `α + 2β = 0.228` and `β = 0.059`, which cross at `α = 0.109`, block 89). In plain terms: a lattice whose bonds are stiff enough sideways stays even; make them soft sideways and the lattice picks a favourite direction; make them soft in line and it goes long-short-long-short instead, and then every moving record is heavy.
 
 ## Machine status and trace
 
@@ -154,7 +154,7 @@ Block 84: the alternation's threshold. Block 87: `α` rewards walls, `β` holds 
 
 ## Boundaries and non-claims
 
-Linear order; single-axis and traceless modes; the endpoint property executed; the sea a comparator; the numbers not fixed. No statistical statement, no gravitational statement, no adoption.
+Linear order with the rates linear in the law's variable at fixed arithmetic mean (block 89 gives the law's own unit: `0.228` and `0.059`); single-axis and traceless modes; the endpoint property executed; the sea a comparator; the numbers not fixed. No statistical statement, no gravitational statement, no adoption.
 
 ## Imports
 - `minimal_axioms`: the Lattice and Qubit axioms. Blocks 59, 76, 78, 84, 87 (open PRs): restated or placed.
@@ -162,6 +162,8 @@ Linear order; single-axis and traceless modes; the endpoint property executed; t
 
 ## Review record
 Supervisor-run block, the thirty-sixth of the source-link direction; the seventh after the rest-energy panel. Lens pass, in writing, by the supervisor: a foundations lens — the anisotropy is defined with the total of the rates held, so that the unit of rate is not mistaken for an instability; a rigour lens — the apparent discontinuity of the raw response at `π` was traced to the modulation's power and removed by normalising per unit power before any conclusion was drawn; the first-order cancellation was made a symbolic identity; a sign error in the law's second derivative in a first draft of the runner was caught by the check itself and corrected; decimal literals in message strings were replaced by fractions for the float scan. Mutation census: six mutations, each failing in its own family only. No independent review has taken place.
+
+Corrigendum (2026-09-23, supervisor): block 59's law is for the log rate (item 3), with the mean log rate as the unit of rate; this note's balances used rates linear in the law's variable, which differs at second order by a convexity term. The thresholds stated here are correct for that parametrisation; block 89 gives the law's own (`0.228`, `0.059`). No theorem, check or number changed.
 
 ## Verification
 

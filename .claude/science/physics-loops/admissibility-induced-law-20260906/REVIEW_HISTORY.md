@@ -202,3 +202,6 @@ applied, and only the coordinator may perform authorized integration.
 
 ## 2026-09-22 block 88 — author checks (not a review PASS)
 Written lens pass by the supervisor. Responses normalised per unit power before comparison; first-order cancellation symbolic; the law's second-derivative sign caught by the check; endpoint property executed and labelled; decimals in strings replaced by fractions. Census 6/6 in family.
+
+## 2026-09-23 block 88 — corrigendum (supervisor, Claude Opus 5.5)
+Thresholds qualified (rates linear in the law's variable); the law's own unit gives `0.228` and `0.059` (block 89). Text-only.

@@ -22,11 +22,18 @@
  "stdout_tail": "sites; exact discrete rays -326.80 (off 0.213); block 54's separable law -324.47 (off 2.118): the O(eps^2) of P3 and P5 is seen\nTOTAL: PASS=7 FAIL=0\nSUMMARY: PARTIAL a fourth formulation and a general no-go: the partial-swap walk (bond-local rotations exp(-i eps_b sigma_x) on alternating pairings, eps_b = eps0 sqrt(w_x w_y)) is unitary for every clock field with range 2 (two layers of nearest-neighbour bond rotations), has sin(omega/2) = sin(eps)|cos k| and a closed-form ray law equal to block 54's plus O(eps^4); a finite-range unitary step whose powers stay finite-range, or whose eigenphases scale exactly with the clock, has flat bands (S5), so in discrete steps block 54's translation identity keeps its covariance half exactly and loses its 'lambda_a times faster' half for every local rule that moves packets (S6)\nHIT: the partial-swap walk -- rotations exp(-i eps_b sigma_x) on the pairs {(up,x),(down,x+1)} then {(down,x),(up,x+1)}, bond clock eps_b = eps0 sqrt(w_x w_{x+1}) -- is unitary for every clock field with range 2 (two layers of nearest-neighbour bond rotations), with sin(omega/2) = sin(eps)|cos k| and ray law dv/dt = [2v^2 + 4 sin eps (eps cos eps - 2 sin eps sin^2 k)/(1 - sin^2 eps cos^2 k)] d_x u, which is block 54's law for E = 2 eps |sin k'| (k' = k + pi/2) plus O(eps^4); and a finite-range unitary V with V, ..., V^(N(2R+2)) of range <= R, or with eigenphases c f_b(k) for all clocks c in an interval, has flat bands and never moves a walker more than (N-1)R sites\n",
  "checked": {
   "by": "w-macbookpro90c72-jf02d",
-  "at_utc": "20260923T190344Z",
+  "at_utc": "20260923T190437Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha ef596249 differs from the current HEAD 642942a2 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science (partial): the partial-swap walk (bond rotations exp(-i eps_b sigma_x) on alternating pairings, eps_b = eps0 sqrt(w_x w_{x+1})) is unitary with range 2 for every clock field, equals two ticks of the coined walk at coin angle pi/2 - eps up to a local conjugation, has sin(omega/2) = sin(eps)|cos k| and the closed-form ray law dv/dt = (2v^2 + Psi) d_x u, which is block 54's law for E = 2 eps |sin k'| plus O(eps^4). A finite-range unitary whose powers up to N(2R+2) stay within range R, or whose eigenphases scale with a clock on an interval, has flat bands (full proof in ATTEMPT.md S5), so the 'lambda_a times faster' half of block 54's translation identity fails for every local continuous rule that moves packets; the covariance half holds exactly.",
+  "by": "w-macbookpro90c72-jf02d",
+  "at_utc": "20260923T190437Z"
  }
 }

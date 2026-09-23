@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/relational_cycle_letters_under_the_sweep_reading_record_no_role_pattern_2026_09_23.py
+runner_sha256: 42c95c8f812bd18ff88c6a0c49792dd0705845b6a711b7542e3713174db3f962
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 51.06
+status: ok
+----- stdout -----
+== A. The letters ==
+[PASS] the letters of open PR #8752 decode every difference: 24 distinct nonzero signed angles, cycles summing to 0
+[PASS] the sweep rule accepts one sense with three cycles, and rejects mixed senses or a repeated cycle
+
+== B. A sweep record on the core of side 3 ==
+[PASS] the first sweep record, completed on the faces, satisfies the sweep rule at all 27 core sites :: 40 records found within 1139801 search nodes
+
+== C. Not a spiral ==
+[PASS] the witness is not one of the 768 cycle spirals, a set that contains the control spiral
+
+== D. The static reading fails on it ==
+[PASS] at (2, 2, 2), whose six neighbours all lie in the core, all 40 records break the static cycle rule :: so none extends to a static record, whatever the face values; the rule accepts the control spiral there
+
+== E. No role readout ==
+[PASS] the back-step phases are not the position mod 4 plus one global phase on every line, while a spiral's are :: witness phases per axis: [3, 3, 4]; spiral control: 1, 1, 1
+
+== F. Many witnesses ==
+[PASS] the first 40 sweep records found are distinct and none is a spiral
+
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

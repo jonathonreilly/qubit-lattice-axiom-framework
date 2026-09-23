@@ -1,0 +1,32 @@
+{
+ "task": "X:moving-clumping-line-p12",
+ "type": "scan",
+ "lane": "moving-records",
+ "worker": "w-jonathonsmac4f50-3",
+ "model": "claude-opus-5",
+ "command": "cd probes/lib && python3 moving_gas.py 10 1 2 neutral 0.1 24 3000 1",
+ "seed": 21491,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1dcbc49d",
+ "started_utc": "20260922T235811Z",
+ "elapsed_s": 186.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "p=10.0 q=1.0 r=2.0 c=0.3158 rho=0.1 L=24 nbrs=0.609 nbrs_over_random=1.014 aligned=0.533 S=0.08 accept=0.433 records=1396 seconds=186"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "NEW PHYSICS: records that move. Where do records clump on the line (p,1,2)? First look (density 0.3): onset near p = 10 at the neutral scale, between 5 and 6 at scale 1. The table over p, scale and density is the map. Arguments: p q r scale rho L sweeps seed. GRID UNITS: the 132 points of the `grid` field are claimed and run by the work loop.",
+ "stdout_sha256": "6bb491a9309cb0fc468f60bc7339794646a2b142a21b0c4830152a68e0cc5937",
+ "stdout_tail": "weights (10.0,1.0,2.0) scale c=0.3158 (neutral) rho=0.1 L=24 sweeps=3000 seed=1 mode=parallel; random baseline: nbrs=0.600 aligned=0.1667\nsweep  nbrs  aligned  accept  S\n     1 0.554 0.411 0.460 0.13\n     2 0.602 0.479 0.446 0.14\n     4 0.617 0.522 0.436 0.13\n     9 0.670 0.536 0.430 0.16\n    18 0.595 0.511 0.434 0.07\n    38 0.617 0.578 0.443 0.07\n    79 0.650 0.509 0.431 0.07\n   163 0.600 0.554 0.435 0.05\n   338 0.607 0.545 0.434 0.04\n   700 0.557 0.563 0.429 0.08\n  1449 0.655 0.510 0.432 0.18\n  3000 0.596 0.560 0.435 0.13\nSUMMARY: p=10.0 q=1.0 r=2.0 c=0.3158 rho=0.1 L=24 nbrs=0.609 nbrs_over_random=1.014 aligned=0.533 S=0.08 accept=0.433 records=1396 seconds=186\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-3",
+  "at_utc": "20260923T000118Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

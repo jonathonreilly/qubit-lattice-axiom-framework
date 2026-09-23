@@ -1,6 +1,6 @@
 {
- "edge_count": 13921,
- "node_count": 6376,
+ "edge_count": 13936,
+ "node_count": 6390,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -17658,6 +17658,10 @@
    "deps_hash": "7a3ee4490765",
    "out_degree": 2
   },
+  "sphere_level_kernel_moments_walk_local_limit_and_finite_plane_mixing_bounded_theorem_note_2026-09-16": {
+   "deps_hash": "7d003ba955a9",
+   "out_degree": 3
+  },
   "spider_symmetry_reduction_and_finite_comparisons_cycle937_bounded_theorem_note_2026-07-28": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
@@ -24657,6 +24661,58 @@
   "work_history.repo.review_feedback.pr8169-evidence.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8170-evidence.deferred_science": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8170-evidence.kept.admissibility_rule_unsoldered_formation_law_in_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_and_the_simulated_algebraic_decay_of_the_initial_plane_memory_bounded_theorem_note_2026-09-16-e50aaf4b6686e647": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8170-evidence.kept.approach_registry-4e9fef47b9eac07d": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8170-evidence.kept.checker_block26_findings-c0a6cd25f43f3f2c": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8170-evidence.kept.claim_status_certificate_block26-315a8231a89a61c4": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8170-evidence.kept.goal_block26-083903adfde6cc31": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8170-evidence.kept.handoff-2061d1bff2a70397": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8170-evidence.kept.no_go_ledger-05cc24d6760014de": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8170-evidence.kept.opportunity_queue-72e985a42c72b74e": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8170-evidence.kept.results_block26-0263fa9278e61353": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8170-evidence.kept.review_history-5eeaa28fca70564a": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8170-evidence.kept.trace_gate-151b6bec86e6fa6b": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.pr8170-evidence.readme": {
+   "deps_hash": "0df75e196ccf",
+   "out_degree": 12
   },
   "work_history.repo.review_feedback.preterminal_context_quantum_process_cycle189_note_2026-07-16": {
    "deps_hash": "e3b0c44298fc",

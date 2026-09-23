@@ -1,0 +1,21 @@
+{
+  "pr": 8165,
+  "original_head": "c228dbcfc0a6b71639316915f460c32dbf479723",
+  "branch": "physics-loop/toe-compact-ground-path-20260916",
+  "landing": "a9f71131f2772035c55fa4a851c0832a5cb82d00",
+  "source_verified_at": "a9f71131f2772035c55fa4a851c0832a5cb82d00",
+  "lease_deleted": false,
+  "recovery_branch_preserved": true,
+  "reason_report": "drain8165-report.md",
+  "closed": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-23T02:46:29Z",
+    "headRefName": "physics-loop/toe-compact-ground-path-20260916",
+    "headRefOid": "c228dbcfc0a6b71639316915f460c32dbf479723",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8165,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8165"
+  }
+}

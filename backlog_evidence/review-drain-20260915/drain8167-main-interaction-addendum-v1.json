@@ -1,0 +1,68 @@
+{
+  "created_utc": "2026-09-23T02:46:20.231827+00:00",
+  "reviewer_session": "/root/review_8167",
+  "verdict": "UNCHANGED_PASS_WITH_BOUNDED_CLAIMS",
+  "landed_main": "a9f71131f2772035c55fa4a851c0832a5cb82d00",
+  "landed_main_tree": "6b469948106edde6975051e8cc8efc296a8d0e46",
+  "prior_confirmation_base": "ed129b572ea8364ed8d2792a0860b07ab94056a5",
+  "ready_commit": "e9f3b77ffeb32b41f0389cc15003a221450040cf",
+  "reviewed_source_tree": "d4fde743852988642daf6b6438aa3d42d614d21d",
+  "pending_source_candidate": "5a8d2bd7a2de441e1874accc22ba665bceae005d",
+  "new_claim_count": 12,
+  "new_source_paths_verified": 292,
+  "ready_source_paths_verified": 72,
+  "preexisting_inputs_verified": 26,
+  "overlap": [],
+  "candidate_to_landed_extra": [
+    "docs/audit/data/citation_graph_manifest.json"
+  ],
+  "new_claim_scopes_inspected": {
+    "docs/COMPACT_ROTOR_GROUND_CORRELATION_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-16.md": "claim_scope: \"05: ground-state cone comparison including the half-angle cover/parity caveat, cofinal free-box angle marginal and local electric quadratic moment limits at fixed coupling. No unrestricted thermal trace equivalence, full quantum-state uniqueness, or susceptibility monotonicity.\"",
+    "docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md": "claim_scope: \"Whole-interval magnetic-excursion bounds for the same supplied rotor ground law, with volume-uniform constants at fixed positive g and T.\"",
+    "docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md": "claim_scope: \"Joint sampled magnetic-event bounds for the supplied compact rotor ground law on even spatial tori L>=4 at fixed positive g and T.\"",
+    "docs/COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md": "claim_scope: \"Subsequential infinite-volume continuous compact ground paths, their local Brownian-bridge specification and transferred excursion bounds.\"",
+    "docs/COMPACT_ROTOR_TEMPORAL_OSCILLATION_COARSE_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-16.md": "claim_scope: \"Joint temporal oscillations and conserved integer coarse currents of the supplied compact rotor path law at fixed positive time scale T.\"",
+    "docs/FINITE_BOX_ELECTRIC_OFFSET_RESPONSE_AND_TAIL_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md": "claim_scope: \"02: finite-box electric offset curvature, diamagnetic response, conditional soft spectral support, factorial ray lower bound excluding the stated global quadratic Gaussian tail class. Uniform positive response is not proved; no photon pole or residue.\"",
+    "docs/LOCAL_ROTOR_DENSITY_AND_FINITE_TEMPLATE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md": "claim_scope: \"04: local conditional density floor, finite-character orthogonality and fixed finite-template certificate limitation; principal cube event has positive probability. This bounds the restricted certificate, not full susceptibility; no particle interpretation.\"",
+    "docs/POSITIVE_WILSON_VILLAIN_MIXTURE_AND_WEAK_REGION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md": "claim_scope: \"07: positive Wilson/Villain Hartman-Watson mixture, partition reweighting domination, weak-region tails and diluted comparison. Infinite first mixing-time moment is retained; no finite-variance auxiliary field or thin-slice phase conclusion.\"",
+    "docs/PRINCIPAL_LINK_RAW_CURL_WITNESS_AND_MASS_BOUND_BOUNDED_THEOREM_NOTE_2026-09-16.md": "claim_scope: \"06: explicit pure-gauge principal-link raw-curl witness contradicts the stated imported raw coercivity claim; mass-dependent replacement. This does not refute the external main theorem or repair its entire proof.\"",
+    "docs/SHORT_TIME_ROTOR_BRIDGE_AND_ENDPOINT_HESSIAN_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md": "claim_scope: \"08: fixed-lift short-time bridge convexity, curl-relative endpoint Hessian approximation including negative covariance, extensive normalization and label-locality resolvent bounds. Endpoint action need not be convex; windings and repeated blocks remain open.\"",
+    "docs/WEIGHTED_GAUSSIAN_DAMPING_AND_INTEGER_TIME_BLOCKING_BOUNDED_THEOREM_NOTE_2026-09-16.md": "claim_scope: \"01: weighted conditional Gaussian damping includes the factor one half; Hodge anisotropy, specified integer-jump time model, finite-volume Skellam/Trotter comparison. Error is extensive; endpoint sandwich is not whole-operator equality.\"",
+    "docs/WEIGHTED_PHASE_CORRECTOR_AND_MAGNETIC_GRAM_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md": "claim_scope: \"03: exact weighted phase-corrector variational identity and magnetic Gram lower-bound certificates. Cube-kernel witness excludes the stated whole-space comparison, not all possible correctors. One-plaquette harmonic-mean normalization is correct.\""
+  },
+  "semantic_assessment": [
+    "PR8165 now supplies ground-state event/excursion estimates, subsequential infinite-volume compact ground paths and coarse conserved currents. Those results do not supply PR8167 finite-beta ergodic thermal loop state, deterministic contact concentration, principal-flux identification or physical Gauss-projected thermal trace. They remain contextual; PR8167 complete proofs do not import them.",
+    "PR8164 ground-state correlation comparisons, electric response, fixed-lift bridge bounds, local density/Gram controls and Wilson-Villain mixture tools concern adjacent supplied-model questions. They neither alter the actual finite thermal cover normalization or electric positive-weight derivation nor close the stated full-field/source/state extensions.",
+    "Both PR8167 canonical notes continue to specify the Hamiltonian and derive their identities/self-contained positive estimates. No added dependency, helper collision, premise expansion, circular citation or source loss was identified.",
+    "The sole candidate-to-landed cleanup is unbound citation manifest acknowledgment; exact scientific source and all preexisting input bytes match the reviewed candidate."
+  ],
+  "partial_salvage": true,
+  "deferred_science": "Sparse negative certification remains deferred with full exact readable recovery. Preserve original branch physics-loop/toe-compact-winding-20260916.",
+  "original_dispositions_reference": {
+    "path": "/private/tmp/review-drain-20260915/drain8167-final-review.json",
+    "sha256": "f015c462f280c56d7cc3861cebb75226a984f1e64e25aff160a94baba9e3efeb",
+    "json_pointer": "/original_dispositions"
+  },
+  "bound_references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/train81-pending-main-interaction.json",
+      "sha256": "b4533577e4ba7d2c24abab0e03f41d5818ef792c2f8167fdb9d80067428e6d6f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/train80-landing.json",
+      "sha256": "c3dcd24541ced429782b426b3acd4d81514043fe7d71de98e3f1f997a676b511"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8167-final-review.json",
+      "sha256": "f015c462f280c56d7cc3861cebb75226a984f1e64e25aff160a94baba9e3efeb"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8167-author-final-freeze.json",
+      "sha256": "d0c3a58f184e0d815656bc66788c7915530c8678dbc4b17ec2eeb8933e55f4d3"
+    }
+  ],
+  "primary_reruns": 0,
+  "gates": 0,
+  "source_edits": 0,
+  "scope": "Bounded new-main semantic interaction addendum only; root final identity and integration gates remain separate."
+}

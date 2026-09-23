@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+## Block 90 (2026-09-23)
+```yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: "memory 'Formation in 3+1 lead' (2026-09-18) and the probes' derivations lightcone-formation and lightcone-long-range-order (issues #8463, #8631): the light-cone law's long-range order, proved by one model family, unrefereed"
+source_of_blocker_text: 2026-09-23 harvest
+reachability_to_target: advances
+artifact_role: theorem
+next_trace_action: "long-range order of light-cone formation in 3+1 for beta > 0.5905 (executed constant), onset executed in (0.55, 0.58); next: the level-ordered clause, the light-cone law on planes, the kernel against the gravity node, an other-family referee"
+```

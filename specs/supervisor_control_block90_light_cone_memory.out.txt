@@ -1,0 +1,16 @@
+W1: infinite-volume constants
+  I_0 = 0.252731009859; W/6 = 0.252731009859 (W = 1.5163860592); I_2 = 0.140931488113; beta_0 = (3/2)(I_0 + I_2) = 0.5904937470
+W2: finite-size thresholds beta_L = (3/2)(G_L + H_L)
+  L=4: beta_L = 0.508901
+  L=6: beta_L = 0.534496
+  L=8: beta_L = 0.548308
+  L=12: beta_L = 0.562310
+  L=16: beta_L = 0.569343
+  L=24: beta_L = 0.576387
+  L=32: beta_L = 0.579912
+  L=48: beta_L = 0.583439
+  L=64: beta_L = 0.585202
+W3: independent light-cone formation simulator, plateau |m| (aligned start, second half of T levels)
+  L=24, T=1600: beta=0.55: 0.1255; beta=0.58: 0.3508; beta=0.6: 0.4152; beta=0.62: 0.4723; beta=0.65: 0.5292
+  L=32, T=1600: beta=0.55: 0.0876; beta=0.58: 0.3393; beta=0.6: 0.4160; beta=0.62: 0.4683; beta=0.65: 0.5234
+CONTROL exit=0

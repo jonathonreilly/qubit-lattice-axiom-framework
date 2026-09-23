@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_light_cone_formation_keeps_memory_in_3plus1_stationary_law_one_layer_of_a_reflection_positive_bilayer_2026_09_23.py
+runner_sha256: bf927b1c61edd3c01b4acfe09bda0588f35188d9bdaa7e394f74d18fad6c2481
+input_fingerprint_sha256: 2e60fdcfb39a1adb271c2d08c253ebde6a4698f99a9b8cb5e8ca337dcf022ac5
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.22
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_LIGHT_CONE_FORMATION_KEEPS_MEMORY_IN_3PLUS1_ITS_STATIONARY_LAW_IS_ONE_LAYER_OF_A_REFLECTION_POSITIVE_BILAYER_ORDERED_ABOVE_BETA_0P5905_BOUNDED_THEOREM_NOTE_2026-09-23.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: on a ring of four (two-valued menu) and a ring of three (four contents of the six-axis menu), the light-cone chain s'(x) ~ t^(s'.h_x(s)), h_x = s(x) + s(x+1) + s(x-1), satisfies pi(s)P(s'|s) = pi(s')P(s|s') exactly for every pair of configurations, with pi(s) = prod_x Z(h_x(s)) and symbolic t = e^beta: the joint law of two successive levels is prod over the doubled graph's edges of t^(s.s'), symmetric because the stencil is symmetric
+PASS: B2 T1: with a one-sided past the chain is reversible with respect to no law: on the ring of four with the past {0, -1} (two-valued contents; a and b the all-up configuration flipped at sites 0 and 1) the three-step cycle a -> b -> -a -> a has forward over backward transition products exactly t^8 with symbolic t = e^beta (the partition functions cancel around any cycle); on the 4^3 torus with the level-ordered past {0, -e_1, -e_2, -e_3} the same cycle (flips at the origin and at e_1) has exponent 8, and with the light-cone past N7 exponent 0: the level-ordered clause violates the cycle criterion for every menu that contains a pair of opposite contents
+PASS: C1 T2: the map (x, a) -> (x, a XOR parity(x)) carries the doubled graph Gamma_L (edges (x,0)-(x+d,1), d in {0, +-e_j}) edge by edge onto the bilayer torus (two copies of (Z/L)^3 with their nearest-neighbour bonds and one rung per site): 448 edges at L = 4, 1512 at L = 6
+PASS: C2 T2: on the 4^3 bilayer every one of the 128 vectors i^(n.x)(1, +-1) is an eigenvector of the graph Laplacian built from the relabelled edges, with eigenvalue E(k) for (1, 1) and E(k) + 2 for (1, -1) (the rung), exactly at every vertex; the 128 characters are orthogonal, so this is the whole spectrum; and E(k + (pi,pi,pi)) = 12 - E(k) symbolically, so {E, E + 2} is the doubled graph's {E, 14 - E}
+PASS: D1 T3: on the 4^3 bilayer, each of the 13 reflections (bond planes along each axis acting on both slabs, and the slab swap) exchanges its halves with no fixed vertex, every edge crossing it joins a vertex to its own mirror image, and every one of the 448 edges crosses some reflection: block 19's G1-G2 argument (the crossing factor prod exp(beta s_u . s_theta u) expands with nonnegative coefficients; iterated reflections give Gaussian domination) applies to the bilayer
+PASS: D2 T3: with the two LAYERS as halves every edge crosses the swap and the crossing matrix is M = I + A_nn (the seven-point stencil); for the staggered difference d = 2(-1)^|x| (a z-component, unit contents) on the open 2x2x2 cube <d, M d> = -64 = 32 - 96, and on the 4^3 torus -1280 = -20N: the 2x2 minor of the reflection kernel exp(beta s.M s') at the two staggered configurations is negative for every beta > 0, so the layer halves are not reflection positive (the route needs the relabelling)
+PASS: E1 T4: the sum rule over the bilayer's 2N eigenvectors and three components, with the infrared bound 1/(beta lambda) off the zero mode, gives <|M/(2N)|^2> >= 1 - (3/(2 beta))(G_L + H_L), and the layer swap's symmetry with |(a + b)/2|^2 <= (|a|^2 + |b|^2)/2 gives the same bound for <|m_0|^2>; on the 4^3 bilayer the sum of 1/lambda over the 127 nonzero checked eigenvalues is exactly N times (G_4 + H_4), G_L = N^-1 sum_{k != 0} 1/E(k), H_L = N^-1 sum_k 1/(E(k) + 2): memory for beta > (3/2)(G_L + H_L)
+PASS: E2 T4: the exact finite-size thresholds are beta_4 = 18239/35840 and beta_6 = 27735979/51891840 (rationals: the tori's cosines are rational), beta_4 < beta_6 < 3/5; the control's lattice sums continue the increase to side 64 (about 5852/10000) below the infinite-volume constant (3/2)(I_0 + I_2), I_0 = int 1/E = W/6 in closed form and I_2 = int 1/(E + 2) by quadrature: about 5905/10000 (control)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - detailed balance for every pair of configurations on rings of three and four with symbolic t; the relabelling edge by edge on the 4^3 and 6^3 tori
+per_site: executed - every vertex and every crossing edge of the 13 reflections on the 4^3 bilayer; the cube's staggered form
+per_mode: executed - the two branches symbolically; the exact finite-size sums on the tori of side 4 and 6; control: the infinite-volume constants by quadrature, lattice sums to side 64, and an independent light-cone formation simulator on 24^3 and 32^3 planes
+per_block: executed - the sum rule's threshold symbolically; the exact finite thresholds
+lattice_wide: T1 for every ring and every menu with weights e^{beta s.s'} by the symmetry of the stencil (checked on rings); T2 for every even L by the parity argument (checked on 4 and 6); T3's structure for every even L (checked on 4), Gaussian domination by block 19's G2 argument; T4 for every even L, with the infinite-volume constant executed; the clause, the menu and the coupling are supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: light-cone formation keeps memory in 3+1 - with a symmetric past the formation chain is reversible and its stationary law is one layer of the sphere ferromagnet on a doubled graph, which a parity relabelling turns into a bilayer torus that is reflection positive with slab halves (not layer halves); Gaussian domination and the sum rule give <|m|^2> >= 1 - (3/(2 beta))(G_L + H_L), hence memory for beta > 0.5905 (executed constant); the executed onset lies between 0.55 and 0.60; the level-ordered clause is not reversible; nothing adopted
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

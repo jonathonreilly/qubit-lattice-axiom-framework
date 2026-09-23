@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_block36_specific_nn_active_cut_record_front_corrected_2026_09_09",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_block36_specific_nn_active_cut_record_front_corrected_2026_09_09.py",
+ "seed": 26705,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c844ace7",
+ "started_utc": "20260923T012505Z",
+ "elapsed_s": 48.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "89837eefe5f44e368cb7ee579d0be5bfd03df12d34a94a1cc4a8eaff730237ec",
+ "stdout_tail": " give 936 identical next transcript/cut rows across the tested modes/weights\nPASS all_finite_cylinders_from_local_rows: generator-bound accumulated atomless cylinders N=1,2 normalized=[True, True] projective=True; literal-bind cases=3; second source target=(6, -1, 0); control totals=[Fraction(1, 1), Fraction(1, 1)] projective=True; induction=CutInductionCertificate(generator_finite_normalized=True, generator_first_cut_bound=True, stochastic_control_quotient_exact=True, almost_sure_finite_cut_hitting=True, scheduler_independent=True, analytic_boundary_normalized=True, archive_fibres_equal=True, parametric_payload_projection=True, next_cut_preserved=True, local_source_owned=True, arbitrary_support=True, delayed_hidden_excluded=True); rival P00=1/4; P000=1/8; error=None\nPASS stochastic_source_owned_by_same_kernel: selector owner=local_generator_row; first-cut kernel is a bind of Record-valued generator jumps\nPASS malformed_and_collision_stop: 14 conflicting/invalid/protocol-or-branch mismatch cases STOP; one same-branch sphere support value is intentionally ACTIVE; collision resolver=STOP\nPASS translation_and_proper_cubic_covariance: 192 translated/frame controls, 4032 reachable encoded row-conjugacy actions, and 48 typed carrier-map intertwiners across 24 frames\nSUMMARY graph_states=136 graph_edges=217 terminals=12 diamonds=32 codec_cases=876 covariance_cases=192 support_N64=769 input_sha256=70d55c2c4626c1b54cec06e04df64b8b2857fb7af52fb6e33c54ff459038c07b\nTOTAL: PASS=18 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T012553Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

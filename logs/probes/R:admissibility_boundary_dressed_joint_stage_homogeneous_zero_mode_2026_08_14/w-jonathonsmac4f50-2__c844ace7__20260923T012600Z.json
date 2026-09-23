@@ -1,0 +1,38 @@
+{
+ "task": "R:admissibility_boundary_dressed_joint_stage_homogeneous_zero_mode_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_boundary_dressed_joint_stage_homogeneous_zero_mode_2026_08_14.py",
+ "seed": 26760,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c844ace7",
+ "started_utc": "20260923T012600Z",
+ "elapsed_s": 0.3,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "600abaecc8d4a999cf54ab34de8a0800e7d9711dda74fb493eeb81362c489a6d",
+ "stdout_tail": "\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/admissibility_boundary_dressed_joint_stage_homogeneous_zero_mode_2026_08_14.py\", line 1039, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/admissibility_boundary_dressed_joint_stage_homogeneous_zero_mode_2026_08_14.py\", line 893, in main\n    authority = authority_certificate(mutation)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/admissibility_boundary_dressed_joint_stage_homogeneous_zero_mode_2026_08_14.py\", line 145, in authority_certificate\n    path for path in parent[\"loaded_missing\"] if path != RUNNER_RELATIVE\n                     ~~~~~~^^^^^^^^^^^^^^^^^^\nKeyError: 'loaded_missing'\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T012900Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Real failure on main, runner-to-runner desync: the runner imports block 95's runner (admissibility_incidence_scalar_graph_matter_first_order_total_ward_cadence_boundary_2026_08_14) and at line 143-145 reads parent['loaded_missing'] (and origin_main, axiom, block77/78/83/93, mismatches, missing) from block95.authority_certificate(''), but that function now returns only {'failures', 'mutation_ok'} (same on origin/main, last touched ed6c77aea6 2026-09-15), so it stops with KeyError: 'loaded_missing' before any check; no pinned cache exists for this runner.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T012900Z"
+ }
+}

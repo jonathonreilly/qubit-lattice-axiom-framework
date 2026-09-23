@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_past_hypothesis_existence_reduction_append_only_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_past_hypothesis_existence_reduction_append_only_2026_06_11.py",
+ "seed": 26771,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c844ace7",
+ "started_utc": "20260923T012611Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5d562b24a03ed45ec817fa1c1cee3e24de6753b65ee52f9c015697a2994dbaa3",
+ "stdout_tail": "===============================================================\nTOTAL: PASS=15 FAIL=0\n==============================================================================\nSCOPE: reduces the record-arrow low-record-boundary EXISTENCE sub-clause to\n  history non-emptiness, IN the single-chain append-only sector (the total\n  order is an assumption beyond the Record axiom -- general well-founded\n  case: termination survives, uniqueness does not, T1d).  Theorem weight on\n  T2 (durability -> acyclicity; deletion controls FAIL) and T3 (rank 2 != 16\n  under CLOSED reversible dynamics; the OPEN swap-out escape named, priced\n  by the sink regress).  T1b/T1c are definitional in-sector (disclosed).\n  T4: connected-correlator boundary count 0 is state-robust; whether records\n  FORM is realized-state data (counterfactual-disclosed).  History-level\n  blankness (epsilon) is distinct from state-level blankness (T3/T4).\n  RESIDUAL: non-emptiness (an explicit applicability precondition, not\n  derived here); the single-chain\n  sector scope; the finite-history\n  dichotomy; and the THERMODYNAMIC past hypothesis (low entropy, Penrose\n  room) -- open, named, untouched.  WHICH state realizes the boundary stays\n  supplied state data (realized-state primitive slot).  The monoid-sector,\n  blank-boundary, and history-order-firewall notes are unaudited on the live\n  ledger at this writing -- load-bearing facts RE-PROVED above, not cited.\n  No new axiom/primitive/measure/weight; r untouched.  Audit lane grades.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T012611Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

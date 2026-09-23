@@ -1,0 +1,86 @@
+
+------------------------------------------------------------------------------
+Source-anchor checks
+------------------------------------------------------------------------------
+PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md exists
+PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md contains: Theorem (finite rational reversal identities)
+PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md contains: requires separately supported bridge
+PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md exists
+PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md contains: Directed certificates do not select a production kernel
+PASS docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md contains: kernel remains a supplied bridge input
+PASS docs/POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md exists
+PASS docs/POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md contains: supplied finite candidate family plus supplied selection rule
+PASS docs/POST_RECORD_SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE_2026-06-06.md contains: The rule is supplied
+PASS docs/POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md exists
+PASS docs/POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md contains: target vector and loss weights are supplied rule data
+PASS docs/POST_RECORD_SELECTION_RULE_TARGET_VECTOR_FIREWALL_2026-06-06.md contains: Record does not derive the target vector or weights
+PASS docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md exists
+PASS docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md contains: supplied finite post-record sample plus supplied statistic set
+PASS docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md contains: not a probability law
+PASS self note contains: blocked source-side classes
+PASS self note contains: stable location is not selected dial
+PASS self note contains: post-record samples are realized information, not probability laws
+PASS self note contains: Cited authority/cache packet
+PASS self note contains: docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md
+PASS self note contains: logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt
+PASS self note contains: docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md
+PASS self note contains: logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt
+
+------------------------------------------------------------------------------
+Cached log checks
+------------------------------------------------------------------------------
+PASS logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt exists
+PASS logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt contains: SUMMARY: PASS=64 FAIL=0
+PASS logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt contains: FORMAL_DIRECTED_REVERSAL_THEOREM=TRUE
+PASS logs/runner-cache/frontier_post_record_directed_certificate_examples_2026_06_06.txt contains: PHYSICAL_ORIENTATION_BRIDGE=OPEN
+PASS logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt exists
+PASS logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt contains: SUMMARY: PASS=52 FAIL=0
+PASS logs/runner-cache/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.txt contains: DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL=TRUE
+PASS logs/runner-cache/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.txt exists
+PASS logs/runner-cache/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.txt contains: SUMMARY: PASS=39 FAIL=0
+PASS logs/runner-cache/frontier_post_record_supplied_kernel_selection_rule_interface_2026_06_06.txt contains: SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE=TRUE
+PASS logs/runner-cache/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.txt exists
+PASS logs/runner-cache/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.txt contains: SUMMARY: PASS=36 FAIL=0
+PASS logs/runner-cache/frontier_post_record_selection_rule_target_vector_firewall_2026_06_06.txt contains: SELECTION_RULE_TARGET_VECTOR_FIREWALL=TRUE
+PASS logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt exists
+PASS logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt contains: SUMMARY: PASS=30 FAIL=0
+PASS logs/runner-cache/frontier_post_record_admitted_sample_target_vector_interface_2026_06_06.txt contains: ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE=TRUE
+
+------------------------------------------------------------------------------
+Authority layer checks
+------------------------------------------------------------------------------
+PASS five dynamics layers are mapped
+PASS proposed-retained, exact-support, and no-go source-side labels all appear
+PASS every layer has an authority class
+PASS every layer has a summary flag
+directed examples: proposed_retained exact structural theorem | finite rational law/reversal identities; physical bridges open | FORMAL_DIRECTED_REVERSAL_THEOREM=TRUE
+kernel selection firewall: no-go | blocked Record-derived kernel selection | DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL=TRUE
+supplied kernel selection rule: exact-support | supplied candidate family and rule | SUPPLIED_KERNEL_SELECTION_RULE_INTERFACE=TRUE
+target vector firewall: no-go | blocked Record-derived targets/weights | SELECTION_RULE_TARGET_VECTOR_FIREWALL=TRUE
+supplied observational sample vector: exact-support | observational comparator with zero premise weight | ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE=TRUE
+
+------------------------------------------------------------------------------
+Executable source-boundary guards
+------------------------------------------------------------------------------
+PASS packet excludes overclaim: Record derives the orientation
+PASS packet excludes overclaim: Record supplies the probability law
+PASS packet excludes overclaim: the examples select a physical arrow
+PASS packet excludes overclaim: physical orientation bridge is closed
+PASS packet excludes overclaim: production kernel selected without a supplied rule
+PASS packet excludes overclaim: selection rule derived from Record
+PASS packet excludes overclaim: target vector derived from Record
+PASS packet excludes overclaim: sample is a probability law
+PASS packet excludes overclaim: generation/Koide dial is selected
+PASS packet excludes overclaim: stable setting selects a dial
+
+SUMMARY: PASS=53 FAIL=0
+POST_RECORD_DYNAMICS_AUTHORITY_STACK_MAP=TRUE
+DYNAMICS_AUTHORITY_LAYERS=5
+PRODUCTION_KERNEL_SELECTED_WITHOUT_RULE=FALSE
+SELECTION_RULE_DERIVED_FROM_RECORD=FALSE
+TARGET_VECTOR_DERIVED_FROM_RECORD=FALSE
+SAMPLE_IS_PROBABILITY_LAW=FALSE
+GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+STABLE_SETTING_SELECTS_DIAL=FALSE
+AUDIT_LEDGER_WRITTEN=FALSE
+AUDIT_VERDICT_APPLIED=FALSE

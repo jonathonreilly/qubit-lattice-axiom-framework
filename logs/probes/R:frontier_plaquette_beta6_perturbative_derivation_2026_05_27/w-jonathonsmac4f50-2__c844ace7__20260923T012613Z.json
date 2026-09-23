@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_plaquette_beta6_perturbative_derivation_2026_05_27",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_plaquette_beta6_perturbative_derivation_2026_05_27.py",
+ "seed": 26773,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c844ace7",
+ "started_utc": "20260923T012613Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=63, FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4279c8ae432922b526855baaeb78a1bc534b236d9f886107daac335b7706e00c",
+ "stdout_tail": "e in T0 through T10.\n  per_mode: checked and not executed \u2014 the whole computation is a scalar power series in 1/beta, so no gluon polarization, no Fourier or momentum decomposition and no eigenmode of any lattice operator is ever formed; the closest thing to a mode label here is the perturbative order n, which is already the per_element axis above and is a counting index rather than a field mode.\n  per_block: resolved grid by grid, with pinned censuses \u2014 four method families are walked separately (plain truncations N = 1..16, self-consistent fixed points N = 1..8 from seed 0.5 at tol 1e-13, the ordinary Pade grid over m,n >= 1 with 2 <= m+n <= 12 whose accepted evaluation count is pinned at PADE_EVALUATED_COUNT = 66, and the self-consistent Pade grid over 3 <= m+n <= 8 whose converged count is pinned at TI_PADE_CONVERGED_COUNT = 27 at tol 1e-12), and the [m/0] and [0/n] edge families are deliberately outside every grid, as the note states.\n  lattice_wide: attempted and honestly failed, which is this row's result \u2014 the target quantity is the whole-lattice plaquette expectation at beta = 6, yet no all-orders, Borel, strong-coupling, finite-volume or continuum limit is taken anywhere, so the finite envelope simply stops: every family stays outside the 40% band against the runner-local comparator 0.5934, and the best residual of the whole envelope still exceeds the runner-local F2 comparator 0.0833%, so no lattice-wide physical statement is asserted here.\n\nTOTAL: PASS=63, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T012614Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

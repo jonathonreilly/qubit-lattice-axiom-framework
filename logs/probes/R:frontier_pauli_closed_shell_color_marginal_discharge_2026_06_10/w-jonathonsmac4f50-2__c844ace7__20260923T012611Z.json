@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_pauli_closed_shell_color_marginal_discharge_2026_06_10",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_pauli_closed_shell_color_marginal_discharge_2026_06_10.py",
+ "seed": 26771,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c844ace7",
+ "started_utc": "20260923T012611Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=16 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "41c2221a23062c2c1041fc50077fe19936315ebceb43119ebf3f22d712f0b76c",
+ "stdout_tail": "IL=0\n==============================================================================\nSCOPE (source narrowed): (T1) Pauli forces the color\n  singlet at exact full filling (unique state; all 8 charges annihilate; rho=I3/3)\n  -- 'singlet'/'neutrality' language applies to THIS sector only.  (T2) that sector\n  is hopping-frozen.  (T3) in CLOSED-SHELL sectors of the named color-diagonal free\n  hopping, the fixed-N ground state is unique and the measured color-resolved\n  rho_color(x) = I3/3 exactly at every site (no extra measure/weight input; the ADM-2\n  necessary marginal condition holds there; a property of the NAMED state, not of 'the physical\n  vacuum').  (T3b) on OPEN shells the forcing FAILS (degenerate manifold exhibits\n  rho != I3/3 at the ground energy), and finite Z^3 half-filling samples are open-shell\n  (degeneracy 12/20 at L=3/4): the open-shell ground-state selection is the NAMED\n  residual, weight-like, where the weight-dial guard re-opens -- NOT discharged.\n  (T4) for sharp-count states the excitation residual reduces to TWO discrete\n  conditions (count equality AND profile agreement); rho=I3/3 is STRICTLY WEAKER\n  than global neutrality (global-invariance example reproduced).  NOT claimed: ADM-2\n  sufficiency; confinement; which state the physical vacuum is (staggered\n  realization gate = existing separate lane); the symmetric-base->physical-color\n  bridge boundary inherited per the baryon-singlet note.  No new axiom/primitive/\n  measure/weight.  Audit lane grades.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T012612Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_pauli_closed_shell_color_marginal_discharge_2026_06_10.txt against the .txt beside this log"
+  ]
+ }
+}

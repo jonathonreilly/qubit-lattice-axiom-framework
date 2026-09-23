@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_post_record_conditional_audit_evidence_ladder_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_post_record_conditional_audit_evidence_ladder_2026_06_06.py",
+ "seed": 28004,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c844ace7",
+ "started_utc": "20260923T014644Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=42 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e733cfa9080b93bcc8c6c2a7b55471691b7276290dbb66e9a3f4004274cb5857",
+ "stdout_tail": "ly\nPASS simulation-only p-value row :: support_only_not_calibrated\nPASS stable dial row :: stable_setting_support\nPASS selected dial from stability only :: blocked_missing_selector\nPASS bounded production dynamics row :: bounded_support_with_open_imports\nPASS branch-local audit verdict row :: independent_audit_only\nPASS classification histogram matches expected :: Counter({'conditional_audit_ready': 2, 'exact_support_candidate': 1, 'blocked_expectation_only': 1, 'support_only_not_calibrated': 1, 'stable_setting_support': 1, 'blocked_missing_selector': 1, 'bounded_support_with_open_imports': 1, 'independent_audit_only': 1})\nPASS exact finite law upgrades expectation-only p-value row\nPASS simulation plus expectation is not calibrated\nPASS selector rule is needed for selected dial\n\n------------------------------------------------------------------------------\nFirewall flags\n------------------------------------------------------------------------------\nPASS audit verdict applied flag is false\nPASS Record-derived probability flag is false\nPASS Record-derived concentration flag is false\nPASS simulation calibrated without certificate flag is false\nPASS stable setting selects dial flag is false\nPASS generation/Koide dial selected flag is false\nPASS retained/promoted claim flag is false\n\nSUMMARY: PASS=42 FAIL=0\nCONDITIONAL_AUDIT_EVIDENCE_LADDER=TRUE\nEXPECTATION_ONLY_CERTIFIES_P_VALUES=FALSE\nSIMULATION_ONLY_CALIBRATED=FALSE\nSTABLE_SETTING_SELECTS_DIAL=FALSE\nAUDIT_VERDICT_APPLIED=FALSE\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T014644Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

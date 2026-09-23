@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_pmns_selector_three_identity_support_2026_04_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_pmns_selector_three_identity_support_2026_04_21.py",
+ "seed": 28002,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c844ace7",
+ "started_utc": "20260923T014642Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS = 19, FAIL = 0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "522165e015e19cb4380355def15f7f25b99d3a2b4ca558ce89fbb335655cb03c",
+ "stdout_tail": "a_CP)  = -0.990477\n    |Jarlskog|     = 0.033084\n  [PASS] C.4 s12sq is within NuFit 1sigma  (value = 0.306178)\n  [PASS] C.5 s13sq is within NuFit 1sigma  (value = 0.022139)\n  [PASS] C.6 s23sq is within NuFit 1sigma  (value = 0.543623)\n  [PASS] C.7 sin(delta_CP) is negative at the recovered point  (sin(delta_CP) = -0.990477)\n  [PASS] C.8 |Jarlskog| is in the current experimental comparison band  (|J| = 0.033084)\n  [PASS] C.9 all three PMNS angles are also within the broader 3sigma bands  (sanity check on the recovered point)\n\n========================================================================\nPart D: heuristic uniqueness evidence in the audited search box\n========================================================================\n\n  audited random starts: 60\n  chamber clusters found: 1\n    (m, delta, q_+) = (0.666667, 0.933051, 0.714502)\n  [PASS] D.1 audited search box returns one chamber cluster  (clusters = 1)\n\n========================================================================\nSummary: PASS = 19, FAIL = 0\n========================================================================\n\n  All checks passed.\n\n  Honest interpretation:\n    - the chart/scalar identities are exact;\n    - the proposed three-equation system has a clean recovered point;\n    - that point gives a strong PMNS numerical fit;\n    - the bounded multi-start audit found one chamber cluster.\n\n  This is support for a candidate selector law, not retained closure.\n\n  PMNS_SELECTOR_THREE_IDENTITY_SUPPORT = TRUE\n\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T014643Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

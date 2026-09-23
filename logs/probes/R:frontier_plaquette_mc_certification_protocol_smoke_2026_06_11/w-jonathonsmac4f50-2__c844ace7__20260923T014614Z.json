@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_plaquette_mc_certification_protocol_smoke_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_plaquette_mc_certification_protocol_smoke_2026_06_11.py",
+ "seed": 27974,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c844ace7",
+ "started_utc": "20260923T014614Z",
+ "elapsed_s": 28.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=27 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "13383c97f1ade93c241b8dc7377b3a7efd52f828b027e8a410c8de9d1ee9a217",
+ "stdout_tail": "e PDG-derived quantity below is context only; no load-bearing\n   PASS rests on it.)\n  [PASS][D] D1 fenced context: F4 offset x elasticity = 4 x 3.79e-5/0.5934 = 2.5548e-4, the honest-status comparator-residual scale (~0.0255%) \u2014 a Band B-i landing re-attributes exactly that residual from B2 to B1  (4x offset/<P> = 0.0255%)\n  [PASS][D] D2 self-scan: the PDG VEV literal appears ZERO times in this runner's source \u2014 no comparator consumed anywhere\n\n==============================================================================\n Breakdown: A=10 B=6 C=9 D=2 RESIDUAL=3\n TOTAL: PASS=27 FAIL=0\n VERDICT: established (bounded): the precision-target arithmetic is exact \u2014\n   4-decimal grade (< 5e-5) decides the B1 license, 5-decimal grade (< 5e-6)\n   decides F4 / the B1-vs-B2 residual attribution (0.59344 vs 0.59340, eight\n   5-decimal half-steps apart); the smoke run is a calibration DIAGNOSTIC\n   (sigma_P, tau_int, t_sweep measured; budget table computed; the smoke <P>\n   is fenced and certifies nothing); the decision bands are pre-registered in\n   the parent note BEFORE any production run, keeping the F4 anti-tuning\n   certificate meaningful \u2014 and the production measurement can FALSIFY the\n   bounded match, which is its scientific value.  NOT established: any\n   certified value of <P> (Stage 1 not performed); any Stage-2 measurement\n   (design-only).  The plaquette note's B1 license is unchanged by this row.\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T014642Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_plaquette_mc_certification_protocol_smoke_2026_06_11.txt against the .txt beside this log"
+  ]
+ }
+}

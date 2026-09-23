@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_barycenter_evaluation_menu_kernel_2026_08_12",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_barycenter_evaluation_menu_kernel_2026_08_12.py",
+ "seed": 26542,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c844ace7",
+ "started_utc": "20260923T012222Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8e3ce1b3fb314e7fd03bdbd67d564f0f16d8cef75bc6bc84e65dade228e20976",
+ "stdout_tail": "nd both menus normalize\nPASS: biased-barycenter two non-mixed barycenters evaluate E0 to 3/10 and 2/5 in both menus\nPASS: disagree-restriction barycenter evaluation is not restriction on either menu, at mixed and biased barycenters\nPASS: spectral-endpoints each declared scaled projector saturates its matrix spectrum at the two eigenstate Diracs\nPASS: affine-uniqueness positivity plus spectral endpoints force the extracted Bloch coefficients to Tr(rho E)\nPASS: reject-wrong-kernels restriction is menu-dependent, and Tr(E)/2 plus an E0 Bloch extra fails additivity\nPASS: singleton-mass-two raw singleton normalization of the z and x projective menus still forces mass two\nPASS: binary-menu-kernel barycenter evaluation normalizes both projective binary menus at mixed and biased states\nPASS: note-contract machine-status fields, required phrases, and forbidden-word hygiene hold\nper_element: five declared scaled effects and the four projective binary atoms are checked by matrix traces\nper_site: the kernel, restriction rejector, and singleton-mass parent argument are one-site statements\nper_mode: all three Bloch coefficients of each declared effect are extracted; in-plane and imaginary-y perpendicular extra modes are rejected by positivity\nper_block: only the finite-support barycenter-evaluation block is constructed; restriction is not this kernel\nlattice_wide: checked and not executed \u2014 no lattice-wide dynamics, formation rate, or Record identification is claimed\nTOTAL: PASS=13 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T012222Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

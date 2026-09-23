@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_post_record_directed_certificate_examples_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_post_record_directed_certificate_examples_2026_06_06.py",
+ "seed": 28005,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c844ace7",
+ "started_utc": "20260923T014645Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=64 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8e1d43a82c691edfadec2b6d1393f4d3e99b84d9592e9452eda24960cbb65e69",
+ "stdout_tail": "g\n------------------------------------------------------------------------------\nPASS marker forward distribution is exact\nPASS marker reversed distribution is exact\nPASS marker forward expectation is 7/6\nPASS marker reversed expectation is 11/6\nPASS marker forward lag<=1 probability is 2/3\nPASS marker reversed lag<=1 probability is 1/3\nPASS marker count pushforwards agree\nPASS marker expectation certificate verifies\nPASS marker tail certificate verifies\nPASS marker wrong tail value is rejected\n\n------------------------------------------------------------------------------\nExample 3: low-to-high boundary event\n------------------------------------------------------------------------------\nPASS boundary forward distribution is exact\nPASS boundary reversed distribution is exact\nPASS boundary forward probability is 1/2\nPASS boundary reversed probability is 1/6\nPASS boundary event is reversal sensitive\nPASS boundary count pushforwards agree\nPASS boundary forward certificate verifies\nPASS boundary reversed certificate verifies\nPASS boundary missing orientation is rejected\n\n------------------------------------------------------------------------------\nMalformed-law rejection\n------------------------------------------------------------------------------\nPASS empty law is rejected\nPASS negative-mass law is rejected\nPASS unnormalized law is rejected\n\nSUMMARY: PASS=64 FAIL=0\nFORMAL_DIRECTED_REVERSAL_THEOREM=TRUE\nPHYSICAL_ORIENTATION_BRIDGE=OPEN\nCLOCK_KERNEL_RECORD_DYNAMICS_BRIDGES=OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T014645Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_per_plaquette_from_adjacency_license_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_per_plaquette_from_adjacency_license_2026_06_09.py",
+ "seed": 26772,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c844ace7",
+ "started_utc": "20260923T012612Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "18985984a1321bc541e7faa974056b7f95742a52887817026a3cf82b218b36dd",
+ "stdout_tail": "---------------------------------------------------------------\n  [PASS] length-4 rooted simple loops: expected count  --  found 24\n  [PASS] length-4 rooted simple loops are all plaquettes\n  [PASS] length-4 plaquette loops all satisfy the unit-neighborhood license  --  licensed 24 / 24\n  [PASS] length-6 rooted simple loops: expected count  --  found 264\n  [PASS] length-6 rooted simple loops do not satisfy the unit-neighborhood license  --  licensed 0 / 264\n\n----------------------------------------------------------------------------------------\nScope guard\n----------------------------------------------------------------------------------------\n  Scope is finite enumeration support only.\n  The paired source note excludes theta and downstream closure claims.\n\n----------------------------------------------------------------------------------------\nUpstream license-derivation wiring (2026-07-12)\n----------------------------------------------------------------------------------------\n  [PASS] source note wires the upstream license derivation (markdown link)\n  [PASS] upstream derivation note exists and registers (P-FUND-1TICK)\n  [PASS] source note carries the dated 2026-07-12 wiring Repair Note\n  [PASS] source note keeps the license conditional (packet open on the accepted surface)\n\n========================================================================================\nSUMMARY: PASS=13 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T012612Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

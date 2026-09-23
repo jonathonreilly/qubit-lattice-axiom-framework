@@ -1,0 +1,45 @@
+
+===============================================================================
+A - Actual row and six seed-relative physical ports
+===============================================================================
+PASS A01 row is the unique actual arity-five R_LB launcher
+PASS A02 program has five occupied words and +x EMPTY
+PASS A03 five occupied candidate blocks lie on their seed-relative faces
+PASS A04 monitored +x port is genuinely open
+PASS A05 no EMPTY candidate bit is supplied
+PASS A06 the only supplied candidate bits are the forty occupied bits
+
+===============================================================================
+B - Local table, mixed law, and exact physical trajectory
+===============================================================================
+PASS B01 all three cage/frame roles are live and absent from every prior input signature
+PASS B02 scan table is proper-cubic and output-single-valued
+PASS B03 scan raw domain is disjoint from the live Cycle-94 union
+PASS B04 complete physical union is output-single-valued
+PASS B05 every reachable stage has the exact singleton frontier :: []
+PASS B06 terminal is quiet
+
+===============================================================================
+C - Value, mismatch, debris, and next-front controls
+===============================================================================
+PASS C01 physical writer terminal is exactly R_LB=10110001
+PASS C02 reverse value sweep forms MATCH only after all eight taps
+PASS C03 MATCH starts the actual R_LB-to-R_C22 comparator
+PASS C04 next candidate carries R_LB followed by five EMPTY words
+PASS C05 every occupied-word one-bit corruption stops before acceptance :: []
+PASS C06 every live record at the monitored +x port blocks OPEN formation :: []
+PASS C07 exact full-table rotation closure lifts every verified stage to all proper-cubic images :: []
+
+===============================================================================
+D - Supplied/grown boundary and constitutional scope
+===============================================================================
+PASS D01 note exists and carries authority none
+PASS D02 note states the exact supplied and grown census
+PASS D03 note names seed-grown harness and repeated allocation residuals
+PASS D04 note contains N1-N8
+PASS D05 note denies foundation and axiom effects
+
+SCAN_CANONICAL=8 SCAN_RAW=129 UNION_RAW=5809
+SUPPLIED=4539 SCAN_APPENDS=1079 TOTAL_APPENDS=1162
+BRIDGE_LENGTHS=(131, 72, 96, 196, 152, 169) OUTPUT=R_LB NEXT=R_C22
+SUMMARY: 24 PASS / 0 FAIL

@@ -1,0 +1,56 @@
+
+------------------------------------------------------------------------------
+Source theorem and semantic scope checks
+------------------------------------------------------------------------------
+PASS source note exists
+PASS source contains theorem anchor: **Claim type:** positive_theorem
+PASS source contains theorem anchor: **Dependencies:** none.
+PASS source contains theorem anchor: p_i = w_i/W
+PASS source contains theorem anchor: sum_{c in C} P_(r,c) = 1
+PASS source contains theorem anchor: A(P Q) = A(P) A(Q)
+PASS source contains theorem anchor: Repeated traversal is counted once per occurrence
+PASS source contains theorem anchor: Column order is representation only
+PASS source contains theorem anchor: compared by exact string equality
+PASS source contains theorem anchor: normalization cannot choose its own inputs
+PASS source contains theorem anchor: The theorem has no audit-census, ledger, queue, export, or row-count premise.
+PASS source excludes volatile or physical overclaim: \bRecord (?:derives|supplies|selects|fixes)\b
+PASS source excludes volatile or physical overclaim: \bthe normalized packet (?:is|selects) the physical\b
+PASS source excludes volatile or physical overclaim: \bBorn (?:law|rule) follows\b
+PASS source excludes volatile or physical overclaim: \ball \d+ character_path_channel_weight rows\b
+PASS source excludes volatile or physical overclaim: post_record_character_path_channel_weight_slice_2026_06_07\.json
+PASS source excludes volatile or physical overclaim: frontier_post_record_measure_weight_normalization_subdivision_2026_06_06\.py
+PASS source excludes volatile or physical overclaim: docs/audit/data/
+PASS source excludes volatile or physical overclaim: \baudit_status\s*:
+PASS source excludes volatile or physical overclaim: \beffective_status\s*:
+
+------------------------------------------------------------------------------
+Exact finite normalization theorem
+------------------------------------------------------------------------------
+PASS 4:1 packet normalizes exactly :: (('straight', Fraction(4, 5)), ('bend', Fraction(1, 5)))
+PASS normalized entries are nonnegative
+PASS normalized packet sums exactly to one
+PASS zero entries are allowed with positive total
+PASS 6:3:1 packet normalizes exactly :: (('trivial', Fraction(3, 5)), ('fundamental', Fraction(3, 10)), ('adjoint', Fraction(1, 10)))
+
+------------------------------------------------------------------------------
+Exact row-stochastic corollary
+------------------------------------------------------------------------------
+PASS three supplied rows normalize :: (('A', (('A', Fraction(3, 4)), ('B', Fraction(1, 4)))), ('B', (('A', Fraction(1, 2)), ('B', Fraction(1, 2)))), ('C', (('A', Fraction(0, 1)), ('B', Fraction(1, 1)))))
+PASS every row sums exactly to one
+PASS A row is exactly (3/4,1/4)
+PASS B row is exactly (1/2,1/2)
+PASS common column carrier is independent of row tuple order
+
+------------------------------------------------------------------------------
+Supplied-edge path-product theorem
+------------------------------------------------------------------------------
+PASS first path has exact weight 2
+PASS second path has exact weight 3
+PASS composed path has exact weight 6
+PASS path concatenation is multiplicative
+PASS empty path is the exact identity
+PASS repeated loop traversal counts twice
+PASS 6:1 path carrier normalizes exactly
+
+SUMMARY: MODE=normal PASS=37 FAIL=0
+THEOREM_SCOPE=EXACT_FINITE_RATIONAL_NORMALIZATION_ROW_STOCHASTICITY_AND_SUPPLIED_EDGE_PATH_PRODUCTS

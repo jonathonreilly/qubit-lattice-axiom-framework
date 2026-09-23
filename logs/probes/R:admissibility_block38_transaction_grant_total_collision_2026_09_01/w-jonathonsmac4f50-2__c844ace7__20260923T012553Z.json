@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_block38_transaction_grant_total_collision_2026_09_01",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_block38_transaction_grant_total_collision_2026_09_01.py",
+ "seed": 26753,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c844ace7",
+ "started_utc": "20260923T012553Z",
+ "elapsed_s": 7.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e4eab24e664f8d34d62c763eac05349b3c799028baee6f715caddaf5127bc9b4",
+ "stdout_tail": " distinctT=228; first 4 frames and first 24 shifts per frame pair\nCHECK six_axis_winner_law: PASS \u2014 96 finite winner control rows, not a continuum census\nCHECK changed_kernel_controls: PASS \u2014 exclusion full/trigger-only=True/False; rates unit=((Fraction(1, 1),), (Fraction(1, 1),)), coordinate-biased=((Fraction(1, 1),), (Fraction(8, 1),))\nCHECK non_cubature_actual_transaction: PASS \u2014 5 first/second branch entries; actual axis append; collapsed row and six-axis replacement rejected\nCHECK fixed_finite_graph_race: PASS \u2014 1100 graphs through n=5, 3726 exact maximal-independent-set outcomes\nCHECK separated_component_union: PASS \u2014 2 initial grant terms\nCHECK valid_preloaded_boundaries: PASS \u2014 BoundaryResult(ok=True, alias_grants=1, alias_continuations=1, mutual_absorbed=2, mutual_terms=0, pregranted_literal=2, pregranted_valid=0, pregranted_terms=0)\nCHECK footprint_covariance: PASS \u2014 1728 rotated footprint cases; row covariance is the conditional dot-product argument in the note\nCHECK append_only_control: PASS \u2014 actual duplicate target raises; all old Records preserved\nCHECK finite_seed_mass_and_rate: PASS \u2014 1 term; rate=1, finite branch mass rate=1; universal bound uses counting proof\nINPUT_FINGERPRINT: 43312c2c456c75553e6898a0ef30e180969b22bee2a53a67d3c868075094bf7c\nSCOPE: supplied valid-domain clean causal-prefix transaction law; finite controls plus conditional analytic measure/DAG proof; no W3 retirement, physical clock, lambda selection, or audit verdict\nTOTAL: PASS=13 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T012600Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

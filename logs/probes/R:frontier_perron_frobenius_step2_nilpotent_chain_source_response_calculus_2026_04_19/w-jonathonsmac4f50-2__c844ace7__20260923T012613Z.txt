@@ -1,0 +1,28 @@
+========================================================================================================
+PERRON-FROBENIUS STEP-2 NILPOTENT-CHAIN SOURCE-RESPONSE CALCULUS
+========================================================================================================
+
+Question:
+  Once N_chain is given, are the Hermitian source paths it generates
+  sufficient to recover the exact local chain-plane and projected-source
+  response data?
+  [PASS] The exact first-variation formulas on the N_chain-generated full Hermitian basis reproduce the canonical projected response pack  (response_err=0.00e+00)
+  [PASS] Those same first variations reconstruct the generic charged Hermitian target exactly  (reconstruction_err=0.00e+00)
+  [PASS] The nearest-neighbor Hermitian 4-packet generated from N_chain carries the exact local chain-plane response data  (chain_plane_err=0.00e+00)
+  [PASS] The downstream long-corner Hermitian pair generated from N_chain^2 carries the exact (S13,A13) response data  (long_corner_err=0.00e+00)
+  [PASS] On the known exact sparse-face target preimage, the N_chain-generated source calculus reproduces the exact ordered projected-source even law (S12,S13)  ((S12,S13)=(1.041425490404,-0.239880851459))
+  [PASS] Composing those responses forward through the already-closed reduced codomain reproduces the observed live point  (dist=1.57e-16)
+
+========================================================================================================
+RESULT
+========================================================================================================
+  Exact calculus answer:
+    - once N_chain is given, the Hermitian source paths it generates carry
+      the full projected-response pack exactly
+    - the 4-source chain-plane packet carries the nearest-neighbor part
+    - the downstream long-corner pair from N_chain^2 carries the missing
+      (S13,A13) channels
+    - together they compose to the already-closed dW_e^H ordered-even law
+      and to the observed live point on the known target preimage
+
+PASS=6 FAIL=0

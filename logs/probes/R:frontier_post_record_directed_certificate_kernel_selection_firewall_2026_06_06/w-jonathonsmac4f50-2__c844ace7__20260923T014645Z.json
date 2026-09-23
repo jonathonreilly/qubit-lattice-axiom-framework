@@ -1,0 +1,38 @@
+{
+ "task": "R:frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.py",
+ "seed": 28005,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c844ace7",
+ "started_utc": "20260923T014645Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=52 FAIL=0",
+   "PASS=52, FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7efe156839d955008423979a604bae06d4d66557ad0dc28f59571b362d1f3fa7",
+ "stdout_tail": " is false\nPASS Record-derived orientation flag is false\nPASS Record-derived physical arrow flag is false\nPASS clock/rate derived flag is false\nPASS Born law derived from Record flag is false\nPASS generation/Koide dial selected flag is false\nPASS stable setting selects dial flag is false\n\nSUMMARY: PASS=52 FAIL=0\nDIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL=TRUE\nSAME_DIRECTED_CERTIFICATE_DISTINCT_KERNELS=TRUE\nPRODUCTION_KERNEL_SELECTED=FALSE\nPRODUCTION_KERNEL_DERIVED_FROM_DIRECTED_CERTIFICATE=FALSE\nORIENTATION_DERIVED_FROM_RECORD=FALSE\nPHYSICAL_ARROW_DERIVED_FROM_RECORD=FALSE\nCLOCK_OR_RATE_DERIVED=FALSE\nBORN_LAW_DERIVED_FROM_RECORD=FALSE\nGENERATION_OR_KOIDE_DIAL_SELECTED=FALSE\nSTABLE_SETTING_SELECTS_DIAL=FALSE\nAUDIT_LEDGER_WRITTEN=FALSE\nAUDIT_VERDICT_APPLIED=FALSE\nper_element: checked \u2014 exact Fraction-valued endpoint statistics were evaluated for every candidate kernel; aggregate FAIL=0.\nper_site: checked \u2014 visited and unvisited source rows were tested separately, exposing unconstrained local transition probabilities; aggregate FAIL=0.\nper_mode: checked \u2014 A-to-B, B-to-A, signed, and second-is-B readout modes distinguish kernels sharing one scalar certificate; aggregate FAIL=0.\nper_block: checked \u2014 full-support k3/k4 law blocks share endpoint A-to-B=1/4 while other directed statistics differ; aggregate FAIL=0.\nlattice_wide: checked and not executed \u2014 the finite record law supplies no lattice bridge, orientation, or clock; the executed full-law certificate has PASS=52, FAIL=0.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T014645Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

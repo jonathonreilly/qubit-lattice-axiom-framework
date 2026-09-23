@@ -1,0 +1,68 @@
+
+===============================================================================
+A - Independent source and literal five-face audit
+===============================================================================
+PASS A01 author artifact exists and reports its bounded 24/0 run
+PASS A02 actual row and direction order are exact
+PASS A03 inputs are five disjoint eight-site face blocks, not one flattened rail
+PASS A04 each face block physically carries its exact role word
+PASS A05 +x is absent and no EMPTY candidate bit is prewritten
+PASS A06 Cycle97 supplies no physical per-face validation provenance token
+PASS A07 supplied census is independently 4,258 + 89 + 192 = 4,539
+PASS A08 grown census is independently 1,079 + 35 + 48 = 1,162
+
+===============================================================================
+B - Compatible mixed union, all dynamic stages, and rotations
+===============================================================================
+PASS B01 selected compatible mixed union has 6,169 single-valued raw inputs
+PASS B02 all 1,162 dynamic targets are unique, initially open, and content-exact
+PASS B03 every one of 1,163 stages remains exact under all compatible adapter rows :: []
+PASS B04 terminal remains quiet with all old scan/writer/comparator debris present
+PASS B05 late-neighbour sweep covers all 880 pre-acceptance states x 153 roles :: []
+PASS B06 all 6,169 x 24 raw images close exactly :: []
+PASS B07 stage exactness plus raw covariance covers all 1,163 x 24 stage images
+
+===============================================================================
+C - Word mismatch and exact OPEN boundary
+===============================================================================
+PASS C01 all 40 occupied-bit and 8 OPEN-reference corruptions fail exactly at comparison :: []
+PASS C02 every live content at +x makes the complete initial frontier quiet :: []
+PASS C03 forward axial site is also load-bearing and prewritten H1 bypasses the sensor
+PASS C04 exact scope: initial absence is sensed but post-sensor late occupancy cannot revoke EMPTY
+
+===============================================================================
+D - Exact distributed READY-gate repair probe
+===============================================================================
+PASS D01 repair keeps all five candidate blocks at the same spatial sites
+PASS D02 repair uses five H1 READY sites, five JOINT type markers, and fifteen cages
+PASS D03 gated scan has 9 canonical / 153 raw rows in a 6,193-row single-valued union
+PASS D04 every gated dynamic stage is exact and terminal is quiet :: []
+PASS D05 each face stops if READY or its type marker is absent :: []
+PASS D06 all five x 152 wrong READY contents fail closed with no parasite :: []
+PASS D07 classification is interface-repair-positive, provenance-route-still-open
+
+===============================================================================
+E - Physical R_LB consumption versus duplicate supplied input
+===============================================================================
+PASS E01 writer appends the exact physical R_LB word and all eight taps
+PASS E02 every tap is nearest-neighbour to and locally reads its DATA bit
+PASS E03 every one-bit DATA substitution stops the reverse value sweep :: []
+PASS E04 unsupplied MATCH is literally the next comparator START and enables its first certificate
+PASS E05 dynamics use local signatures, not the host decoder
+PASS E06 stronger literal-word reuse remains open: next R_LB is a disjoint supplied copy
+
+===============================================================================
+F - N1-N8, primitive, and constitutional disposition
+===============================================================================
+FAIL F01 Cycle99 note exists, authority none, and does not claim an audit verdict
+FAIL F02 note records all N1-N8 gates
+FAIL F03 note distinguishes interface repair from live W_STEP/W_MULTI work
+FAIL F04 primitive registry and all three primitive sources were inspected
+FAIL F05 Cycle91/96 acceptance residuals and Cycle100 partial retirement are cited
+FAIL F06 note makes no foundation or axiom change
+
+AUTHOR_RAW=5809 AUDIT_RAW=6169 GATED_RAW=6193
+AUTHOR_SUPPLIED=4539 AUTHOR_GROWN=1162 GATED_SUPPLIED=4554
+LATE_SWEEP=880x153=134640 READY_WRONG_ROLE_SWEEP=5x152=760
+CLASSIFICATION=BOUNDED_POSITIVE_SURVIVES_WITH_EXPLICIT_QUALIFICATIONS
+SUMMARY: 32 PASS / 6 FAIL

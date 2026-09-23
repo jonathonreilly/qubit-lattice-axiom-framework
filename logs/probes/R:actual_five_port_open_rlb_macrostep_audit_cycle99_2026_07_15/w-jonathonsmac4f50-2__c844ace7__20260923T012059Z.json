@@ -1,0 +1,38 @@
+{
+ "task": "R:actual_five_port_open_rlb_macrostep_audit_cycle99_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "actual",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/actual_five_port_open_rlb_macrostep_audit_cycle99_2026_07_15.py",
+ "seed": 26459,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c844ace7",
+ "started_utc": "20260923T012059Z",
+ "elapsed_s": 7.8,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "19b684f085429da7242f9c030fa9b1519a43249e7c6eadf9ed245ddd99dc0223",
+ "stdout_tail": "=======\nE - Physical R_LB consumption versus duplicate supplied input\n===============================================================================\nPASS E01 writer appends the exact physical R_LB word and all eight taps\nPASS E02 every tap is nearest-neighbour to and locally reads its DATA bit\nPASS E03 every one-bit DATA substitution stops the reverse value sweep :: []\nPASS E04 unsupplied MATCH is literally the next comparator START and enables its first certificate\nPASS E05 dynamics use local signatures, not the host decoder\nPASS E06 stronger literal-word reuse remains open: next R_LB is a disjoint supplied copy\n\n===============================================================================\nF - N1-N8, primitive, and constitutional disposition\n===============================================================================\nFAIL F01 Cycle99 note exists, authority none, and does not claim an audit verdict\nFAIL F02 note records all N1-N8 gates\nFAIL F03 note distinguishes interface repair from live W_STEP/W_MULTI work\nFAIL F04 primitive registry and all three primitive sources were inspected\nFAIL F05 Cycle91/96 acceptance residuals and Cycle100 partial retirement are cited\nFAIL F06 note makes no foundation or axiom change\n\nAUTHOR_RAW=5809 AUDIT_RAW=6169 GATED_RAW=6193\nAUTHOR_SUPPLIED=4539 AUTHOR_GROWN=1162 GATED_SUPPLIED=4554\nLATE_SWEEP=880x153=134640 READY_WRONG_ROLE_SWEEP=5x152=760\nCLASSIFICATION=BOUNDED_POSITIVE_SURVIVES_WITH_EXPLICIT_QUALIFICATIONS\nSUMMARY: 32 PASS / 6 FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T012837Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "All 6 FAIL lines (F01-F06) are note-text gates on docs/work_history/repo/review_feedback/ACTUAL_FIVE_PORT_OPEN_RLB_MACROSTEP_AUDIT_CYCLE99_NOTE_2026-07-15.md, which is on main at archive/notes/docs/work_history/repo/review_feedback/ (archived); the phrases the gates look for (authority: none, N1-N8, W_STEP, primitive, cycle 91/96/100) are present in the archived copy; the 32 computational checks pass; path-only, documentation state.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T012837Z"
+ }
+}

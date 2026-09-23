@@ -1,0 +1,100 @@
+==============================================================================
+P-LH NCG primitive underdetermination boundary
+==============================================================================
+Claim boundary: bounded negative support; no primitive registration.
+No audit verdict or effective status is changed by this runner.
+
+==============================================================================
+BLOCK 1: source surfaces and firewalls
+==============================================================================
+  [PASS] docs/P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md exists  (present)
+  [PASS] docs/PRIMITIVE_P_LH_CONTENT_PROPOSAL_NOTE_2026-05-10_pPlh.md exists  (present)
+  [PASS] docs/MINIMAL_AXIOMS_2026-06-05.md exists  (present)
+  [PASS] claim type is bounded_theorem
+  [PASS] note says bounded support only
+  [PASS] note says no new axiom
+  [PASS] note says no primitive approval
+  [PASS] note says no audit/status edit
+  [PASS] note scopes to current minimal axiom baseline
+  [PASS] boundary names parent as trace target without a markdown dependency edge
+  [PASS] note carries complete N1-N8 no-go discipline gate  (all markers present)
+  [PASS] gate preserves alternate-route caveat
+  [PASS] gate preserves no-primitive-status caveat
+  [PASS] parent remains open-gate
+  [PASS] parent names same missing NCG packet
+  [PASS] minimal axiom memo names Lattice
+  [PASS] minimal axiom memo names Quantum
+  [PASS] minimal axiom memo names Record
+  [PASS] Quantum axiom supplies M_2(C)/Cl(3)
+  [PASS] Quantum axiom does not supply gauge group
+  [PASS] Quantum axiom does not supply particle content
+  [PASS] Record axiom does not supply readout context
+
+==============================================================================
+BLOCK 2: Cl+(3) chirality baseline
+==============================================================================
+  [PASS] Cl+(3) bivector e12 is identical in rho+ and rho-
+  [PASS] Cl+(3) bivector e23 is identical in rho+ and rho-
+  [PASS] Cl+(3) bivector e31 is identical in rho+ and rho-
+  [PASS] volume element is +i on rho+
+  [PASS] volume element is -i on rho-
+  [PASS] chirality is distinguished but Cl+(3) action is not
+
+==============================================================================
+BLOCK 3: finite-algebra non-identification
+==============================================================================
+  [PASS] chirality projectors sum to I
+  [PASS] chirality projectors are orthogonal
+  [PASS] SM-like left generators close su(2)
+  [PASS] SM-like right scalar commutes with left su(2)
+  [PASS] Pati-Salam-like right generators close su(2)
+  [PASS] left and right su(2) copies commute
+  [PASS] right su(2) is nonzero on same baseline block
+  [PASS] baseline admits SM-like finite action
+  [PASS] baseline also admits PS-like finite action
+  [PASS] SM-vs-PS choice is not determined by Cl+(3) equality
+  [PASS] one-site rho+ direct-sum rho- block has dimension 4
+  [PASS] faithful fundamental M_3(C) color factor needs dimension multiple of 3
+  [PASS] nontrivial M_3(C) factor is absent from one-qubit local algebra
+
+==============================================================================
+BLOCK 4: KO-dim real-structure underdetermination
+==============================================================================
+  [PASS] J=K has J^2=+I
+  [PASS] J=K commutes with chirality
+  [PASS] J=S K has J^2=+I
+  [PASS] J=S K anticommutes with chirality
+  [PASS] both J choices live on the same finite baseline block
+  [PASS] baseline does not name a real structure J
+  [PASS] KO-dim-6 sign is an extra selection among admissible J choices
+
+==============================================================================
+BLOCK 5: order-one underdetermination
+==============================================================================
+  [PASS] D=0 satisfies order-one double commutators for SM-like action
+  [PASS] D=0 satisfies order-one double commutators for PS-like action
+  [PASS] off-diagonal D produces nonzero PS double-commutator witness  (norm=0.500000)
+  [PASS] order-one verdict depends on extra D/opposite-action data
+  [PASS] same baseline admits vacuous and nonvacuous D choices
+  [PASS] minimal axiom memo does not specify finite Dirac operator D
+  [PASS] order-one is not determined by Lattice+Quantum+Record
+  [PASS] SM scalar witness also depends on chosen right action  (norm=1.000000)
+
+==============================================================================
+BLOCK 6: target blocker coverage
+==============================================================================
+  [PASS] note quotes target NCG packet
+  [PASS] runner covers finite algebra edge
+  [PASS] runner covers KO-dim-6 real structure edge
+  [PASS] runner covers order-one condition edge
+  [PASS] note states remaining closure paths
+  [PASS] parent now links underdetermination boundary
+  [PASS] source packet stays non-promotional
+
+==============================================================================
+SUMMARY: PASS=63  FAIL=0
+==============================================================================
+
+RESULT:
+  P-LH NCG underdetermination boundary is complete iff FAIL=0.
+  The route remains open unless NCG structures are derived or approved.

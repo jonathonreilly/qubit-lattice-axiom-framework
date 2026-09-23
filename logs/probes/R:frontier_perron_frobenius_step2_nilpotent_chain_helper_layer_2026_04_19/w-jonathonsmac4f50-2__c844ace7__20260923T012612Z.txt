@@ -1,0 +1,24 @@
+========================================================================================================
+PERRON-FROBENIUS STEP-2 NILPOTENT-CHAIN HELPER LAYER
+========================================================================================================
+
+Question:
+  Does one local nilpotent chain generator N_chain already recover the
+  full local Wilson algebra/source data needed downstream?
+  [PASS] N_chain recovers the exact chain projections P1,P2,P3 and the downstream long corner E13 = N^2  (proj_err=0.00e+00, unit_err=0.00e+00)
+  [PASS] The full Hermitian source basis recovered from N_chain matches the repo's canonical 9-real Hermitian basis exactly  (basis_err=0.00e+00)
+  [PASS] N_chain recovers both the nearest-neighbor Hermitian 4-packet and the downstream long-corner Hermitian pair  (packet_err=0.00e+00)
+  [PASS] Responses on the N_chain-generated Hermitian basis reconstruct an arbitrary 3x3 Hermitian target exactly  ((response_err,reconstruction_err)=(0.00e+00,0.00e+00))
+  [PASS] On a synthetic embedded Wilson parent, the N_chain-generated Hermitian sources already produce the full projected response pack  (embed_err=0.00e+00)
+
+========================================================================================================
+RESULT
+========================================================================================================
+  Exact helper-layer answer:
+    - one local nilpotent chain generator N_chain already recovers the
+      full local path algebra, the Hermitian 4-packet, the long-corner pair,
+      and the full 9-real Hermitian source basis
+    - on an embedded Wilson parent, those N_chain-generated sources already
+      reproduce the exact projected Hermitian response pack
+
+PASS=5 FAIL=0

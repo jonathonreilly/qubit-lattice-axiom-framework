@@ -1,0 +1,31 @@
+{
+ "task": "R:admissibility_block36_specific_nn_active_cut_record_front_2026_09_01",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_block36_specific_nn_active_cut_record_front_2026_09_01.py",
+ "seed": 26542,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c844ace7",
+ "started_utc": "20260923T012222Z",
+ "elapsed_s": 162.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "efc48511c951c224803f8767eb4b6dc9c3cd1a7378973c7326f6279abb7b923f",
+ "stdout_tail": "ll_finite_cylinders_from_local_rows:rejected;overwrite:arbitrary_n_fresh_support_and_permanence:rejected;premature_head:autonomous_ctmc_confluence_and_complete_trial:rejected;host_schedule:autonomous_ctmc_confluence_and_complete_trial:rejected;coordinate_axis:translation_and_proper_cubic_covariance:rejected;unbounded_bank:stochastic_source_owned_by_same_kernel:rejected;undefined_collision:malformed_and_collision_stop:rejected;finite_domain:all_domain_fixed_processor_intertwiner_M:rejected;toe_promotion:claim_scope_and_no_promotion:rejected\nPASS result_note_contract: terminal theorem note contains the exact classification and nonclosure language\nN5_EXECUTION per_element: checked exact Gaussian/Haar densities and every symbolic affine carrier coordinate\nN5_EXECUTION per_site: checked every reachable local generator action, protocol/branch mismatch STOP cases, and typed sphere-support acceptance\nN5_EXECUTION per_mode: checked randomized/direct full-real formulas plus an irrational algebraic end-to-end carrier and M witness\nN5_EXECUTION per_block: checked autonomous CTMC absorption, unequal archive fibres, and preserved-cut induction premises\nN5_EXECUTION lattice_wide: checked and not executed \u2014 the theorem is single-front and does not totalize arbitrary Z3 states\nSUMMARY graph_states=136 graph_edges=217 terminals=12 diamonds=32 codec_cases=876 covariance_cases=192 support_N64=769 input_sha256=243b4f431fc2c0342474f06faa7671de94475979f64d48b8dc8a13dfd65fc90f\nTOTAL: PASS=23 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T012505Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

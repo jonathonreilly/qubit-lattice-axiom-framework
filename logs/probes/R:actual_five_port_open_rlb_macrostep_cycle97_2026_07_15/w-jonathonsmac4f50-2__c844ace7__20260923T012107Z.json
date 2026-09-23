@@ -1,0 +1,31 @@
+{
+ "task": "R:actual_five_port_open_rlb_macrostep_cycle97_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "actual",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/actual_five_port_open_rlb_macrostep_cycle97_2026_07_15.py",
+ "seed": 26467,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c844ace7",
+ "started_utc": "20260923T012107Z",
+ "elapsed_s": 73.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8a16dde8ce258579534720ce88cd6faed852c8dc850bba36b511124f1ab4679b",
+ "stdout_tail": "ut-single-valued\nPASS B05 every reachable stage has the exact singleton frontier :: []\nPASS B06 terminal is quiet\n\n===============================================================================\nC - Value, mismatch, debris, and next-front controls\n===============================================================================\nPASS C01 physical writer terminal is exactly R_LB=10110001\nPASS C02 reverse value sweep forms MATCH only after all eight taps\nPASS C03 MATCH starts the actual R_LB-to-R_C22 comparator\nPASS C04 next candidate carries R_LB followed by five EMPTY words\nPASS C05 every occupied-word one-bit corruption stops before acceptance :: []\nPASS C06 every live record at the monitored +x port blocks OPEN formation :: []\nPASS C07 exact full-table rotation closure lifts every verified stage to all proper-cubic images :: []\n\n===============================================================================\nD - Supplied/grown boundary and constitutional scope\n===============================================================================\nPASS D01 note exists and carries authority none\nPASS D02 note states the exact supplied and grown census\nPASS D03 note names seed-grown harness and repeated allocation residuals\nPASS D04 note contains N1-N8\nPASS D05 note denies foundation and axiom effects\n\nSCAN_CANONICAL=8 SCAN_RAW=129 UNION_RAW=5809\nSUPPLIED=4539 SCAN_APPENDS=1079 TOTAL_APPENDS=1162\nBRIDGE_LENGTHS=(131, 72, 96, 196, 152, 169) OUTPUT=R_LB NEXT=R_C22\nSUMMARY: 24 PASS / 0 FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T012220Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

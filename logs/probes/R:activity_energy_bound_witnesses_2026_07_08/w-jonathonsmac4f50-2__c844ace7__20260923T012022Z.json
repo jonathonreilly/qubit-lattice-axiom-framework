@@ -1,0 +1,41 @@
+{
+ "task": "R:activity_energy_bound_witnesses_2026_07_08",
+ "type": "runner-reexecution",
+ "lane": "activity",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/activity_energy_bound_witnesses_2026_07_08.py",
+ "seed": 26422,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c844ace7",
+ "started_utc": "20260923T012022Z",
+ "elapsed_s": 0.2,
+ "returncode": 1,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5c3b10f7c392b91f72a48f4243e4823b596a945c07fc667689ef84a4e4c1a50d",
+ "stdout_tail": "BOUND: pass=True samples=40 max_activity_over_bound=0.546505 bound=2.2\nSTATIONARY-WITNESS: pass=True activity=1.683e-17 touching-term-energy=-0.763742\nFINITE-TOY-WITNESSES: pass=True far_initial_activity=0.000e+00 overlaps=[0.986106, 0.863355, 0.942353, 0.921557] centroid_deltas=[1e-06, 1.106935, 0.071278, 0.234031]\nMETHODOLOGY-CONSISTENCY: pass=False note-missing\nTOTAL: MACHINERY-FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T014015Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run 'TOTAL: MACHINERY-FAIL' vs cache 'TOTAL: BOUNDED-TOY-SUPPORT-VALIDATED AO-bridge=supplied-premise finite-window-on'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/activity_energy_bound_witnesses_2026_07_08.txt against the .txt beside this log"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Failed self-check, not a hit: the only failing gate is METHODOLOGY-CONSISTENCY 'note-missing' (the runner reads docs/ACTIVITY_ENERGY_BOUND_WITNESSES_BOUNDED_NOTE_2026-07-08.md, which is on main at archive/notes/docs/), turning the verdict line into TOTAL: MACHINERY-FAIL; the BOUND, STATIONARY-WITNESS and FINITE-TOY-WITNESSES computations pass with the cached values' structure; path-only, documentation state.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T014015Z"
+ }
+}

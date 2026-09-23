@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_perron_frobenius_step2_nilpotent_chain_helper_layer_2026_04_19",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_perron_frobenius_step2_nilpotent_chain_helper_layer_2026_04_19.py",
+ "seed": 26772,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c844ace7",
+ "started_utc": "20260923T012612Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ce5d15d1bf98aad50d599ca6d4ffccabac8698dd9da269f2fa5123c72f1b3df1",
+ "stdout_tail": "===\n\nQuestion:\n  Does one local nilpotent chain generator N_chain already recover the\n  full local Wilson algebra/source data needed downstream?\n  [PASS] N_chain recovers the exact chain projections P1,P2,P3 and the downstream long corner E13 = N^2  (proj_err=0.00e+00, unit_err=0.00e+00)\n  [PASS] The full Hermitian source basis recovered from N_chain matches the repo's canonical 9-real Hermitian basis exactly  (basis_err=0.00e+00)\n  [PASS] N_chain recovers both the nearest-neighbor Hermitian 4-packet and the downstream long-corner Hermitian pair  (packet_err=0.00e+00)\n  [PASS] Responses on the N_chain-generated Hermitian basis reconstruct an arbitrary 3x3 Hermitian target exactly  ((response_err,reconstruction_err)=(0.00e+00,0.00e+00))\n  [PASS] On a synthetic embedded Wilson parent, the N_chain-generated Hermitian sources already produce the full projected response pack  (embed_err=0.00e+00)\n\n========================================================================================================\nRESULT\n========================================================================================================\n  Exact helper-layer answer:\n    - one local nilpotent chain generator N_chain already recovers the\n      full local path algebra, the Hermitian 4-packet, the long-corner pair,\n      and the full 9-real Hermitian source basis\n    - on an embedded Wilson parent, those N_chain-generated sources already\n      reproduce the exact projected Hermitian response pack\n\nPASS=5 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T012613Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

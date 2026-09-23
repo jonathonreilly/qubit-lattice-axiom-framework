@@ -1,0 +1,42 @@
+{
+ "task": "R:frontier_post_record_dynamics_authority_stack_map_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_post_record_dynamics_authority_stack_map_2026_06_06.py",
+ "seed": 28005,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c844ace7",
+ "started_utc": "20260923T014645Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=64 FAIL=0",
+   "PASS=52 FAIL=0",
+   "PASS=39 FAIL=0",
+   "PASS=36 FAIL=0",
+   "PASS=30 FAIL=0",
+   "PASS=53 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f706f51a27edef8cb255164a1d4442c4177c8c933fe24655781276e27cc7b2ac",
+ "stdout_tail": "l: no-go | blocked Record-derived targets/weights | SELECTION_RULE_TARGET_VECTOR_FIREWALL=TRUE\nsupplied observational sample vector: exact-support | observational comparator with zero premise weight | ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE=TRUE\n\n------------------------------------------------------------------------------\nExecutable source-boundary guards\n------------------------------------------------------------------------------\nPASS packet excludes overclaim: Record derives the orientation\nPASS packet excludes overclaim: Record supplies the probability law\nPASS packet excludes overclaim: the examples select a physical arrow\nPASS packet excludes overclaim: physical orientation bridge is closed\nPASS packet excludes overclaim: production kernel selected without a supplied rule\nPASS packet excludes overclaim: selection rule derived from Record\nPASS packet excludes overclaim: target vector derived from Record\nPASS packet excludes overclaim: sample is a probability law\nPASS packet excludes overclaim: generation/Koide dial is selected\nPASS packet excludes overclaim: stable setting selects a dial\n\nSUMMARY: PASS=53 FAIL=0\nPOST_RECORD_DYNAMICS_AUTHORITY_STACK_MAP=TRUE\nDYNAMICS_AUTHORITY_LAYERS=5\nPRODUCTION_KERNEL_SELECTED_WITHOUT_RULE=FALSE\nSELECTION_RULE_DERIVED_FROM_RECORD=FALSE\nTARGET_VECTOR_DERIVED_FROM_RECORD=FALSE\nSAMPLE_IS_PROBABILITY_LAW=FALSE\nGENERATION_OR_KOIDE_DIAL_SELECTED=FALSE\nSTABLE_SETTING_SELECTS_DIAL=FALSE\nAUDIT_LEDGER_WRITTEN=FALSE\nAUDIT_VERDICT_APPLIED=FALSE\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T014645Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

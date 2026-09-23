@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_p_lh_ncg_primitive_underdetermination_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_p_lh_ncg_primitive_underdetermination_2026_06_18.py",
+ "seed": 26770,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c844ace7",
+ "started_utc": "20260923T012610Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=63  FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "09e4b388c5b9821bae17b624a4c4c249d14004bd991f0e755f1d9ef069be5a70",
+ "stdout_tail": "ion\n==============================================================================\n  [PASS] D=0 satisfies order-one double commutators for SM-like action\n  [PASS] D=0 satisfies order-one double commutators for PS-like action\n  [PASS] off-diagonal D produces nonzero PS double-commutator witness  (norm=0.500000)\n  [PASS] order-one verdict depends on extra D/opposite-action data\n  [PASS] same baseline admits vacuous and nonvacuous D choices\n  [PASS] minimal axiom memo does not specify finite Dirac operator D\n  [PASS] order-one is not determined by Lattice+Quantum+Record\n  [PASS] SM scalar witness also depends on chosen right action  (norm=1.000000)\n\n==============================================================================\nBLOCK 6: target blocker coverage\n==============================================================================\n  [PASS] note quotes target NCG packet\n  [PASS] runner covers finite algebra edge\n  [PASS] runner covers KO-dim-6 real structure edge\n  [PASS] runner covers order-one condition edge\n  [PASS] note states remaining closure paths\n  [PASS] parent now links underdetermination boundary\n  [PASS] source packet stays non-promotional\n\n==============================================================================\nSUMMARY: PASS=63  FAIL=0\n==============================================================================\n\nRESULT:\n  P-LH NCG underdetermination boundary is complete iff FAIL=0.\n  The route remains open unless NCG structures are derived or approved.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T012611Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

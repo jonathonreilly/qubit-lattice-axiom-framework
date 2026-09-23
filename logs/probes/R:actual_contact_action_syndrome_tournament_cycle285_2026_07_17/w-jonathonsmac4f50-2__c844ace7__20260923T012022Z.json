@@ -1,0 +1,31 @@
+{
+ "task": "R:actual_contact_action_syndrome_tournament_cycle285_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "actual",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/actual_contact_action_syndrome_tournament_cycle285_2026_07_17.py",
+ "seed": 26422,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c844ace7",
+ "started_utc": "20260923T012022Z",
+ "elapsed_s": 36.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4a7c552f4362d03443218f0091caff6b07936b7720d6ae4cb775cccd875babaa",
+ "stdout_tail": "m_W_Pauli_weight': 12, 'maximum_controlled_W_term_weight': 13, 'nonzero_Walsh_terms': np.int64(64), 'check_or_Wilson_leakage': 0}]}\nPASS the actual contact action and scalar Ramsey probe/close family are covariant under all 24 proper-cubic frames and full L=3 translations :: {'frame_translation_tests': 648, 'failures': []}\n\nLAWFUL DOMAIN / SUPPLIED PHASE REFERENCE / SEMANTIC FIREWALL\nPASS lawful-domain and interpretation controls inventory the supplied phase reference and keep syndrome, read, occurrence, and Record distinct :: {'rejected_controls': 4, 'supplied_phase_reference': 'blank probe, Hadamard phase zero, control convention, close basis, g=0.37', 'arbitrary_parity_even_domain': True}\nPASS the three constructive routes have distinct exact dispositions and imply neither shared obstruction nor axiom pressure :: {'joint': {'split_data_residual': 0.14639629566936344}, 'ramsey': {'N2_close_weight': 0.03383632719698279, 'q_fit_residual': 2.5382841946871593, 'held_disturbance': 0.13006984123343654}, 'direct': {'direct_reference_close_weight': 0.637795123412256, 'comparator_disturbance': 0.6797242146103093}}\nDATA joint {'split_data_residual': 0.14639629566936344}\nDATA ramsey {'N2_close_weight': 0.03383632719698279, 'q_fit_residual': 2.5382841946871593, 'held_disturbance': 0.13006984123343654}\nDATA direct {'direct_reference_close_weight': 0.637795123412256, 'comparator_disturbance': 0.6797242146103093}\nSUMMARY PASS 22 FAIL 0\nRESULT CYCLE285_ACTUAL_CONTACT_ACTION_SYNDROME_GREEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T012059Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

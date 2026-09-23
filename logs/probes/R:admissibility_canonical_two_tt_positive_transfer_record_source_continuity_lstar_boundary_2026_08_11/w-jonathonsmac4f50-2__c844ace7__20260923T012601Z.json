@@ -1,0 +1,31 @@
+{
+ "task": "R:admissibility_canonical_two_tt_positive_transfer_record_source_continuity_lstar_boundary_2026_08_11",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_canonical_two_tt_positive_transfer_record_source_continuity_lstar_boundary_2026_08_11.py",
+ "seed": 26761,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c844ace7",
+ "started_utc": "20260923T012601Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f51609c6773b8ccf02f48b7ccb20bd21be108ff779aaab6a5ea23d884799114e",
+ "stdout_tail": "ERTIFICATE: all 728 nonzero L=9 spatial momenta, four local TT constraints, two physical polarizations, both r=0 and r=1 transfer kernels, 24 proper cubic rotations, six-by-six OS moment blocks, canonical symplectic controls, all 27 sites and 81 oriented edges of the L=3 continuity carrier, three Record rays, one isolated formation, and one conservative transport repair are resolved\nper_element: checked every symmetric-tensor coordinate through trace/divergence constraints, both TT coordinates, each transfer coefficient, and every site/edge incidence entry\nper_site: checked one complete periodic L=3 source-continuity carrier and the formation/transport updates at both endpoints of one nearest-neighbour edge\nper_mode: checked every nonzero L=9 spatial momentum for r=0 and r=1, plus all declared infrared and representative finite-momentum controls\nper_block: checked local action symmetry, TT quotient, positive OS/canonical transfer, static equality, finite-transfer fork, isolated-source obstruction, and conservative repair\nlattice_wide: the formulas extend translation-covariantly to finite periodic lattices, but no selected Record law, absolute history, nonlinear geometry, nonflat phase, full-Z3 measure, or canonical axiom adoption is inferred\nscope_boundary: conditional positive linear two-TT transfer family plus exact periodic Record-source continuity cut; not selected gravity, nonlinear Einstein dynamics, axiom necessity, axiom adoption, or TOE closure\nTOTAL: PASS=14 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T012601Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

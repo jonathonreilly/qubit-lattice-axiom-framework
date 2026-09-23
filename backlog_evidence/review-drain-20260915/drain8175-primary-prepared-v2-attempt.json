@@ -1,0 +1,15 @@
+{
+  "status": "ATTEMPT RESERVED; never retry automatically",
+  "record": {
+    "path": "/private/tmp/review-drain-20260915/drain8175-author-unit-draft-v1.json",
+    "sha256": "30d36cac86961b0bfc4fe77a6fb77c0666171602de18881803427e7f9132a56f"
+  },
+  "cold": {
+    "path": "/private/tmp/review-drain-20260915/drain8175-cold-review-v1.json",
+    "sha256": "f4c5053ffce5b84d371685ac6a921ebc81e0e62a16bb4dda56c393cb15375052"
+  },
+  "script": {
+    "path": "/private/tmp/review-drain-20260915/drain8175-capture-v2.py",
+    "sha256": "85d22e2e9f3e39939a4576347b138c611524586be0e58fa6134307addd7e7855"
+  }
+}

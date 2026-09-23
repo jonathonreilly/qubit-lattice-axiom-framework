@@ -1,0 +1,50 @@
+{
+  "change": "Binding-only exact actual cold clearance; no logic or limits changed",
+  "binding": {
+    "path": "/private/tmp/review-drain-20260915/drain8175-cold-review-v1.json",
+    "sha256": "f4c5053ffce5b84d371685ac6a921ebc81e0e62a16bb4dda56c393cb15375052",
+    "same_session_provenance": "/root/review_8175 original reviewer",
+    "verdict_pointer": "/clearance",
+    "verdict_value": "CLEARED_FOR_BOUNDED_CAPTURE",
+    "tree_pointer": "/tree",
+    "tree": "7a01b258c1130dd2cd97dbd2d204395135fc1481",
+    "required_predicates": {
+      "/reviewer_session": "/root/review_8175",
+      "/same_session_provenance": true,
+      "/base": "3dca18ddd0082dc23bb12c7ca38939b901c28736",
+      "/capture_cleared": true,
+      "/limits/wall_seconds": 60,
+      "/limits/memory_bytes": 402653184
+    }
+  },
+  "adapters": [
+    {
+      "old": {
+        "path": "/private/tmp/review-drain-20260915/drain8175-capture-v1.py",
+        "sha256": "b05eecd5bf5bcae379d29cc51741b62eaad5014c5cb6a524e08b3bb3f75b7429"
+      },
+      "new": {
+        "path": "/private/tmp/review-drain-20260915/drain8175-capture-v2.py",
+        "sha256": "85d22e2e9f3e39939a4576347b138c611524586be0e58fa6134307addd7e7855"
+      },
+      "diff": {
+        "path": "/private/tmp/review-drain-20260915/drain8175-capture-binding-v2.diff",
+        "sha256": "363800375ce472e116425a76ab45664d1f35b6ede315083f971d010c37d673bb"
+      }
+    },
+    {
+      "old": {
+        "path": "/private/tmp/review-drain-20260915/drain8175-mutation-capture-v1.py",
+        "sha256": "ef8b2278912393dbaf0c2626c88eeec239fc71ee3a12bd85f5e0cdea1b775a76"
+      },
+      "new": {
+        "path": "/private/tmp/review-drain-20260915/drain8175-mutation-capture-v2.py",
+        "sha256": "792fab24f4364c9a1b508be901ebd7e49284230e95cb7b2796356f92eab40932"
+      },
+      "diff": {
+        "path": "/private/tmp/review-drain-20260915/drain8175-mutation-capture-binding-v2.diff",
+        "sha256": "0d181c7f657133ba37ad1d5e4555a45e920a3d17874719742fdd4e24f5d64df9"
+      }
+    }
+  ]
+}

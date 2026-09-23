@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "reviewer_session": "/root/review_8175",
+  "same_session_provenance": true,
+  "phase": "cold-source-input-resource-and-adapter-review",
+  "unit_id": "PR8175",
+  "original_head": "798f661da7140ff6f73c5e4f4984d80b67b3447a",
+  "base": "3dca18ddd0082dc23bb12c7ca38939b901c28736",
+  "tree": "7a01b258c1130dd2cd97dbd2d204395135fc1481",
+  "clearance": "CLEARED_FOR_BOUNDED_CAPTURE",
+  "capture_cleared": true,
+  "final_scientific_pass": false,
+  "limits": {
+    "wall_seconds": 60,
+    "memory_bytes": 402653184,
+    "enforcement": "sampled aggregate process-family plus supervisor RSS watchdog; not a hard address-space reservation"
+  },
+  "allowed_executions": {
+    "primary": {
+      "max_attempts": 1,
+      "expected_pass": 20,
+      "expected_fail": 0
+    },
+    "mutation": {
+      "name": "period_counts_wrong",
+      "max_attempts": 1,
+      "expected_pass": 19,
+      "expected_fail": 1,
+      "expected_failure": "B3"
+    }
+  },
+  "findings": [],
+  "references": {
+    "/private/tmp/review-drain-20260915/drain8175-author-unit-draft-v1.json": "30d36cac86961b0bfc4fe77a6fb77c0666171602de18881803427e7f9132a56f",
+    "/private/tmp/review-drain-20260915/drain8175-author-cheap-v1.json": "e23db55db484a8b9436c771e4bd009b3dd64459631ba6bed682653d96289b10e",
+    "/private/tmp/review-drain-20260915/drain8175-source-freeze-v2.json": "4818820a942a0da32bfc441cf5a0769f8b26109efcbf0e5f589b1c8b99982a54",
+    "/private/tmp/review-drain-20260915/drain8175-author-source-handoff-v1.json": "5895d9dcb8303665b9a3ffbd6983a97d58e095cfe0482fa2bfe3eaa045449554",
+    "/private/tmp/review-drain-20260915/drain8175-capture-v1.py": "b05eecd5bf5bcae379d29cc51741b62eaad5014c5cb6a524e08b3bb3f75b7429",
+    "/private/tmp/review-drain-20260915/drain8175-mutation-capture-v1.py": "ef8b2278912393dbaf0c2626c88eeec239fc71ee3a12bd85f5e0cdea1b775a76",
+    "/private/tmp/review-drain-20260915/drain8175-capture-plan-v1.json": "be02b2bcf4adcf662744b621e8f499cb0b0d80b11ad13f4146dcb9597a2a7448",
+    "/private/tmp/review-drain-20260915/drain8175-adapter-verification-v1.json": "df8eb02575f4e57506f61dee4753c0c72e44bdcf72d88acfd9b72d1a749487e7",
+    "/private/tmp/review-drain-20260915/drain8175-early-review-v2.json": "02359b04e8bfb23212e3b3fd90061d87ef80d015562bb73302ff4bde508363ad"
+  },
+  "identity_evidence": {
+    "path": "/private/tmp/review-drain-20260915/check8175/cold_identity_v1.json",
+    "sha256": "d0707814d331a9653d37623866df9b85b09149aadfd16ab20fe5f8c60b192c74"
+  },
+  "conclusions": [
+    "All 34 staged source modes/bytes agree with prepared v2; all declared runtime, context, parent and tooling hashes match disk and index. All 28 original payloads decode to original head bytes.",
+    "Current-main PR8172 adds compatible finite point-sensitivity/healing/recurrence mathematics; no changed PR8175 input or authority import. Shared six-axis rational denominators agree. Prospective PR8173 is not an input and is outside this exact-base clearance.",
+    "Original decisive independent controls and affected v2 leaf-charge/period-distribution controls support the narrowed claims. The valid c>=5/3 inference and local period ratio2 are preserved; global sharpness2 and universal upper2 are not promoted. Formal negative packet remains deferred, distinct from validity of its finite inference.",
+    "Reviewed adapters preserve raw execution results before cache identity checking; guard actual tree/base/source/input generations, resource envelope, once-only attempts and no-overwrite evidence. Baseline and targeted mutation remain unexecuted in this review.",
+    "Both v1 adapters intentionally have null cold bindings. Author must create immutable successor versions binding this actual report hash, /clearance, /tree and predicates for reviewer_session, same_session_provenance, base, capture_cleared and limits before execution. Only binding and necessary version/reference path substitutions are covered; substantive adapter changes require review.",
+    "No final PASS until actual baseline, targeted B3 mutation, resource and source-identity receipts are reviewed. No audit verdict authorized. Preserve original branch while formal negative packet remains deferred."
+  ]
+}

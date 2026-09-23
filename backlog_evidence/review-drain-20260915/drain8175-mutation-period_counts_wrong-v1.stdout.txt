@@ -1,0 +1,32 @@
+AUDIT_INPUT_PATHS:
+  docs/EXTENDED_EXPLANATION_TREE_FINITE_WITNESS_COUNTS_AND_RATIONAL_RECURSION_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md
+PASS: A1 the note carries its claim_id once
+PASS: A2 the axioms memo carries the four sentences quoted under Premises
+PASS: A3 the pinned context-only product-law note carries its identity and product-form heading
+PASS: A4 all three declared source/context inputs match literal SHA-256 pins
+PASS: B1 T1: an amplified site's excuse (its single predecessor v - e_j) raises the charges k != j by 1/3 and lowers the charge j by 2/3: a bad pair costs one unit of span
+PASS: B2 T1: on the three witnesses the rise of the potential at a fork-free refinement is 1 - b and at most 1 - b + (forks created) otherwise, the rises sum to the number of forks, the excuse arrows and amplified nodes sum to E and |A| over the refinements, b <= a and e + a = kept <= 3 at every refinement
+FAIL: B3 T1: a fork-free refinement with three processed poles (rise 1, three excuse arrows) followed by one with two bad poles and one processed pole (rise -1, one excuse arrow, two amplified nodes) is rise-neutral with four excuse arrows per two amplified nodes — the period of ratio 2; the exact per-witness counts are (2, 1, 1), total 4; no global sharpness follows
+PASS: C1 T2: witness W1 (window 4x4x7, root (3,3,4), 11 noise marks = the tree's seed and ten amplified nodes): the tree is valid with E = 16, |A| = 10, |S| = 1, no fork, 10 refinements, 10 bad pairs; the comparison expression with coefficient two 3(|S|-1) + 2|A| = 20 holds; the arithmetic difference E-[3(|S|-1)+|A|] equals6: the ratio is 8/5
+PASS: C2 T2: witnesses W2 (window 4x4x7, root (3,3,6): E = 20, |A| = 12, |S| = 1) and W3 (window 5x5x9, root (4,4,5): E = 23, |A| = 12, |S| = 2, one fork) are valid trees with ratio 5/3, within the comparison expression with coefficient two
+PASS: C3 T2: W1 contains 2 refinement(s) with a bad pole, two excuse arrows and rise 0, and 2 with two bad poles, one excuse arrow and rise -1; at each, e > 3 rise + a, these are exact local arithmetic comparisons; formal negative certification remains deferred
+PASS: C4 T2: 300 uniformly random cones of depth 3-8 (214 explained) never exceed the ratio 1 (worst 1/2), while the witnesses reach 8/5 and 5/3: this fixed seeded sample is not a global upper bound
+PASS: C5 T2: in W1 and W2 every amplified node of the tree is a bad pole (b = |A|), W1 has 27 nodes and W2 33, and W3 carries exactly one fork (its two seeds)
+PASS: D1 T3: at the declared algebraic weight epsilon_2/t the rational triples at (453,1,2), (232,1,1), (905,2,4), (677,1,3) with t = 77/1000, 19/250, 39/500, 77/1000 are exact super-solutions at (t + epsilon_2/t, epsilon_1/t^3) with epsilon_1 R-bar < 10^-5: pure polynomial inequalities, not a formation region
+PASS: D2 T3: the declared scalar expression has maximum max_t t (4/27 - t) = 4/729 at t = 2/27, crossed on (p, 1, 2) between p = 367 and 368 (d_3(367) = 745/135434, d_3(368) = 747/136171); this algebra does not establish any universal construction budget or formation region
+PASS: D3 T3 (the stake): the four historical comparison numbers differ by a factor between 8 and 10 (4165 -> 453, 2085 -> 232, 8330 -> 905, 6247 -> 677); none of it is claimed
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed — exact rational charge increments and local rise/count identities on every refinement of the three specified witnesses
+per_site: executed — three marked windows of112,112,225sites, tree connectivity and live-predecessor edge types; unchanged finite fixtures
+per_mode: checked and not executed — no spectral decomposition is present; witness classes and seeded cones are finite configurations, not modes
+per_block: executed — exact witness period counts2,1,1, the fixed seeded300-cone sample, four rational certificates and scalar completed-square maximum
+lattice_wide: checked and not executed — no exhaustive input search, infinite lattice simulation, sharp global budget or formal negative certification
+PASS: G1 the five N5 resolution lines are printed
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=19 FAIL=1

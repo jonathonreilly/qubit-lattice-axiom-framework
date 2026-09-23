@@ -1,0 +1,1026 @@
+{
+  "schema_version": 1,
+  "unit_id": "PR8174",
+  "verdict": "SOURCE_AND_EVIDENCE_ACCEPTED",
+  "source_evidence_accepted": true,
+  "reviewer": {
+    "session": "/root/review_8174",
+    "same_session": true,
+    "role": "original independent reviewer; original, affected, cold, adapter and final evidence confirmation"
+  },
+  "material_blockers": [],
+  "findings": [],
+  "source_tree": "a6f63b440fb4a67c072865d29a35cf16381f742f",
+  "source_hashes": {
+    "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md": "5642877329c141c39394936173c35c82c5cd18bb8f9a408c17fad0497cef647e",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/README.md": "227ed4e0e1161c8f02b49774bcd9ebb6eaf171cc78722444d5b1bf9b3638eff8",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/archive-manifest.json": "b8b85acc762ee0145d2a84ec4048f61553b24dbef3d01ae39f1f70b085cd5f98",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED-c9850d47e436dea7.md": "c9850d47e436dea7bf370f03f6a696f824bc1100fe824926fbeeb956ee09815f",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/APPROACH_REGISTRY-a24d7a0fbd69f46c.md": "a24d7a0fbd69f46c52194649c9a62f8bf6e99e7b104c7bbaad23d6537f388bc2",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/CHECKER_block30_findings-df0ff512f1767b7f.md": "df0ff512f1767b7f00c80d60bc50bcbf8ce2220bce1f7b06545d34c64b1975fe",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/CLAIM_STATUS_CERTIFICATE_block30-3b47da9614abb913.md": "3b47da9614abb91399d7db278a5167c9f3c660bfb2c451eac81461271aa0e2a8",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/GOAL_block30-eed3c47d058abe9c.md": "eed3c47d058abe9c576c96c8f5119c94679f530dc4b9ec4744185f9680adc651",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/HANDOFF-3daf21b65f4e73be.md": "3daf21b65f4e73bea37a22fa4bdf75ad240ff98ee9ed3c9b13f69fa68c43a8bf",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/OPPORTUNITY_QUEUE-d3108acdf7a1cb18.md": "d3108acdf7a1cb18f6d652536848cf247b4a49583741ee7a0e447bc7f5e70300",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/RESULTS_block30-5242365320da46ae.md": "5242365320da46ae3e7347b8398c80404e6dd1bcad0b3959f501811ef117c13f",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/REVIEW_HISTORY-e3346d7d91b61912.md": "e3346d7d91b61912f86bc3544d0f63a4975f8a3c280a73dfca4234ec9fdc53b3",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/STATE-bb43fbab2baea279.yaml.gz": "124b63668868db22895d34e29ef8f39977a15fe39d2cb17818620f19676bf070",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/TRACE_GATE-b7388c63cc0a04c5.md": "b7388c63cc0a04c53c29da4680fcfbc103a571068ae44852a00d1281d7557238",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_-985dcbd934f5f2b5.txt.gz": "a028b21f644f3f906ff50ce8988a1717eb9f97fe40ef2bb81eac72e4e3c0922b",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_-99299e47dc478c70.py": "99299e47dc478c701b901bda2c32c20bdae77fd5b9f815ec3f0b816b37aa1c4d",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/citation_graph_manifest-5350676179dc9a1d.json.gz": "159f40259cd8cf2040afc4b4e113424c4b4de9d372c9b6cb947e930017aecdee",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_budget-f1feabd9e97ed793.py": "f1feabd9e97ed7938cf6a1997f5ae56dcc5d28833bcc42982d2e85a99d9a4e1b",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_budget.out-580a9a51b4a9639b.txt.gz": "e8b311e9961f684344302566f17f6d352c84854cbbff6b55d2496943fab44047",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_certify-d270f06f2dc4fa26.py": "d270f06f2dc4fa26234873a5f91bdaf963cd6ac3264a4aabf1ecc0f8e560b636",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_certify.out-d21ed3d2ee5fbed4.txt.gz": "10d887c91336bb3f4143fff050bc4304fea7b3dad8843b659a059050a94b102f",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_construction-6dc3fe6ece20ace6.py": "6dc3fe6ece20ace6bf62891f74ad4aada028ddf3d48cd845621fa88758453259",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_construction.out-278562e4f8c56992.txt.gz": "fd990cc9c0a6c22af56c5a7ca2429c91c73df224b435644acd9af22eead25911",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_core-83e90b6e4b5d9a64.py": "83e90b6e4b5d9a6483265e8069abc5e412733b4eb4ffaee86144034ae499ec89",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_refuter-379613ed26239942.py": "379613ed262399426d3073b1c7beead6b29bbf7ae2649b2e7b4a982766533374",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_refuter.out-ef7eb3a7a7e9c15f.txt.gz": "86f12d9360195a79d674fa143152992f66ca022d6b3ca6d96f34e5d4ebe86145",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_scan-7a1623641b0029e0.py": "7a1623641b0029e0c9839b732d62640d0f95b629a4eae4456908a7b693d5a897",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_scan.out-74956c41f7bb62e1.txt.gz": "8741efe569ac8298dd4d6a4cf4ff0777ccc4d639dc28c21a72d0e7abceed9a93",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/original-delta.patch.gz": "cfb208117d56f169eabc20aebe8039c298a019930b3207b347f370b67c754a8a",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/pr8174-deferred-science.md": "0db03a5c23a0466a010c9f6a64dd9efd079bdaf64cb7df334c8f30c58c8be271",
+    "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--bad_pairs_wrong.json": "a4bc0551e07a934cb5d0a7afdfb749a1939adfb522357784a9f98041b2a36a84",
+    "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--budget_amplified_dropped.json": "8751a59f8ac8b2d08c8bd9427dba6c65146cad94a1ce6513bd7feb69a438e279",
+    "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--ceiling_endpoint_wrong.json": "46c85b38dc3907acc47731621ac991f1b3cbf09c580941f4c02d0d484a52903d",
+    "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--ceiling_wrong.json": "683f036db766a96dff36f656a6b549a5c53f952098856db0d1889da3ec7893c5",
+    "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--certificate_wrong.json": "ec0115e24b9a91dfe5ba4219ce9d4907459ef1d1c0d5ef0c021a7f7d863c5f5a",
+    "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--deviation_closed_form_wrong.json": "608d54354d6565eb8104d65d1c6ebf3d952e534aaf3aa0d105ad366dda6e040f",
+    "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--domination_domain_wrong.json": "32ce183421966e9461ad7ca20f230c86811377314a0126dd7c4498bd88610313",
+    "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--domination_state_wrong.json": "642e1a0fbaffc2f00130000e09f42ac9223806a4f9171dc6b0e54b3a17e95fe4",
+    "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--forks_identity_wrong.json": "36f98033c63b1090a5a4b2d7f22abbff572b25eca06ca28014e9b7143dddf236",
+    "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--spanning_identity_wrong.json": "9430a7eaf5523b17b4e1ffbca79e44df73d0a73ce0b8500a508e31b29753236a",
+    "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--subtree_bound_wrong.json": "2a3534b9eefc56a598e65589dbdb8488174f8a412c7d5b7cb63305956f963112",
+    "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.json": "1b8314eaaa6fd6d2a2dd9ff476ab1ca2c0286a2ba1083f8418e842bd87d8eb20",
+    "logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.txt": "39bd37dac1046b89e0d84d82cc6d82d44bacca48a45d458b1808b372ea8ffc9d",
+    "scripts/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.py": "4c4027558538dad0ad0a4d8887de2ac7d39671438ca15aaa1fcc38f214efc866"
+  },
+  "input_hashes": {
+    "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md": "5642877329c141c39394936173c35c82c5cd18bb8f9a408c17fad0497cef647e",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/README.md": "227ed4e0e1161c8f02b49774bcd9ebb6eaf171cc78722444d5b1bf9b3638eff8",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/archive-manifest.json": "b8b85acc762ee0145d2a84ec4048f61553b24dbef3d01ae39f1f70b085cd5f98",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED-c9850d47e436dea7.md": "c9850d47e436dea7bf370f03f6a696f824bc1100fe824926fbeeb956ee09815f",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/APPROACH_REGISTRY-a24d7a0fbd69f46c.md": "a24d7a0fbd69f46c52194649c9a62f8bf6e99e7b104c7bbaad23d6537f388bc2",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/CHECKER_block30_findings-df0ff512f1767b7f.md": "df0ff512f1767b7f00c80d60bc50bcbf8ce2220bce1f7b06545d34c64b1975fe",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/CLAIM_STATUS_CERTIFICATE_block30-3b47da9614abb913.md": "3b47da9614abb91399d7db278a5167c9f3c660bfb2c451eac81461271aa0e2a8",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/GOAL_block30-eed3c47d058abe9c.md": "eed3c47d058abe9c576c96c8f5119c94679f530dc4b9ec4744185f9680adc651",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/HANDOFF-3daf21b65f4e73be.md": "3daf21b65f4e73bea37a22fa4bdf75ad240ff98ee9ed3c9b13f69fa68c43a8bf",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/OPPORTUNITY_QUEUE-d3108acdf7a1cb18.md": "d3108acdf7a1cb18f6d652536848cf247b4a49583741ee7a0e447bc7f5e70300",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/RESULTS_block30-5242365320da46ae.md": "5242365320da46ae3e7347b8398c80404e6dd1bcad0b3959f501811ef117c13f",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/REVIEW_HISTORY-e3346d7d91b61912.md": "e3346d7d91b61912f86bc3544d0f63a4975f8a3c280a73dfca4234ec9fdc53b3",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/STATE-bb43fbab2baea279.yaml.gz": "124b63668868db22895d34e29ef8f39977a15fe39d2cb17818620f19676bf070",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/TRACE_GATE-b7388c63cc0a04c5.md": "b7388c63cc0a04c53c29da4680fcfbc103a571068ae44852a00d1281d7557238",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_-985dcbd934f5f2b5.txt.gz": "a028b21f644f3f906ff50ce8988a1717eb9f97fe40ef2bb81eac72e4e3c0922b",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_-99299e47dc478c70.py": "99299e47dc478c701b901bda2c32c20bdae77fd5b9f815ec3f0b816b37aa1c4d",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/citation_graph_manifest-5350676179dc9a1d.json.gz": "159f40259cd8cf2040afc4b4e113424c4b4de9d372c9b6cb947e930017aecdee",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_budget-f1feabd9e97ed793.py": "f1feabd9e97ed7938cf6a1997f5ae56dcc5d28833bcc42982d2e85a99d9a4e1b",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_budget.out-580a9a51b4a9639b.txt.gz": "e8b311e9961f684344302566f17f6d352c84854cbbff6b55d2496943fab44047",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_certify-d270f06f2dc4fa26.py": "d270f06f2dc4fa26234873a5f91bdaf963cd6ac3264a4aabf1ecc0f8e560b636",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_certify.out-d21ed3d2ee5fbed4.txt.gz": "10d887c91336bb3f4143fff050bc4304fea7b3dad8843b659a059050a94b102f",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_construction-6dc3fe6ece20ace6.py": "6dc3fe6ece20ace6bf62891f74ad4aada028ddf3d48cd845621fa88758453259",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_construction.out-278562e4f8c56992.txt.gz": "fd990cc9c0a6c22af56c5a7ca2429c91c73df224b435644acd9af22eead25911",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_core-83e90b6e4b5d9a64.py": "83e90b6e4b5d9a6483265e8069abc5e412733b4eb4ffaee86144034ae499ec89",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_refuter-379613ed26239942.py": "379613ed262399426d3073b1c7beead6b29bbf7ae2649b2e7b4a982766533374",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_refuter.out-ef7eb3a7a7e9c15f.txt.gz": "86f12d9360195a79d674fa143152992f66ca022d6b3ca6d96f34e5d4ebe86145",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_scan-7a1623641b0029e0.py": "7a1623641b0029e0c9839b732d62640d0f95b629a4eae4456908a7b693d5a897",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_scan.out-74956c41f7bb62e1.txt.gz": "8741efe569ac8298dd4d6a4cf4ff0777ccc4d639dc28c21a72d0e7abceed9a93",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/original-delta.patch.gz": "cfb208117d56f169eabc20aebe8039c298a019930b3207b347f370b67c754a8a",
+    "docs/work_history/repo/review_feedback/pr8174-evidence/pr8174-deferred-science.md": "0db03a5c23a0466a010c9f6a64dd9efd079bdaf64cb7df334c8f30c58c8be271",
+    "scripts/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.py": "4c4027558538dad0ad0a4d8887de2ac7d39671438ca15aaa1fcc38f214efc866",
+    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+    "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md": "01b4ca057540b1f84b261f5b7ce4328540b7efa9ca845a95c14e9952a75006e2",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/ai_methodology/skills/review-loop/PREFLIGHT.md": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb",
+    "docs/ai_methodology/skills/review-loop/SKILL.md": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+    "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+    "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4",
+    "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md": "bbdb794f3925b1a473db22a94eeaa4d0b6be5e302f6dc1463c27306738b731b3",
+    "docs/ai_methodology/skills/review-loop/references/LANDING.md": "827032765af31a2f4ef64b3e595173c7e81e2f56b713793aba336228411a4624",
+    "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096",
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+    "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md": "cfcb43f40791d8e8772e86fd2b53fb11008c5075e416f8cf4eb84bd18ab71773",
+    "docs/ai_methodology/skills/review-loop/references/SALVAGE.md": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee",
+    "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7",
+    "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d",
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc",
+    "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "docs/audit/data/doc_authority_registry.json": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173",
+    "docs/audit/scripts/build_citation_graph.py": "b2117b565aa795e67cd62d0f49f89cf2ed83a14d9d3447c1600ee0bf9c0ba8c5",
+    "docs/audit/scripts/ledger_io.py": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+    "docs/audit/scripts/static_pipeline_checkpoint.py": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+    "scripts/audit_packet_script_deps.py": "38210e23dbe9d703552c0381a3719b2a9a1551004028e0d64714da1bee3ddd8d",
+    "scripts/runner_cache.py": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+  },
+  "checkout_base": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+  "reviewed_current_main": "3dca18ddd0082dc23bb12c7ca38939b901c28736",
+  "original_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "original_mode": "100644",
+      "original_blob": "d3b3a8174d0f5ee1d8d3464a579b23e5319ab0f8",
+      "original_sha256": "a24d7a0fbd69f46c52194649c9a62f8bf6e99e7b104c7bbaad23d6537f388bc2",
+      "disposition": "superseded",
+      "reason": "Historical attempts, controls, failures or author/generated state preserved exactly; no stale current-main replacement or fresh evidence claim",
+      "recovery": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/APPROACH_REGISTRY-a24d7a0fbd69f46c.md",
+      "encoding": "identity",
+      "stored_sha256": "a24d7a0fbd69f46c52194649c9a62f8bf6e99e7b104c7bbaad23d6537f388bc2",
+      "final_path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/APPROACH_REGISTRY-a24d7a0fbd69f46c.md",
+      "final_sha256": "a24d7a0fbd69f46c52194649c9a62f8bf6e99e7b104c7bbaad23d6537f388bc2",
+      "final_role": "historical recovery; no current premise authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block30_findings.md",
+      "original_mode": "100644",
+      "original_blob": "13c14ece590a55e7f6d8dd3f94181af2fdb05125",
+      "original_sha256": "df0ff512f1767b7f00c80d60bc50bcbf8ce2220bce1f7b06545d34c64b1975fe",
+      "disposition": "superseded",
+      "reason": "Historical attempts, controls, failures or author/generated state preserved exactly; no stale current-main replacement or fresh evidence claim",
+      "recovery": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/CHECKER_block30_findings-df0ff512f1767b7f.md",
+      "encoding": "identity",
+      "stored_sha256": "df0ff512f1767b7f00c80d60bc50bcbf8ce2220bce1f7b06545d34c64b1975fe",
+      "final_path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/CHECKER_block30_findings-df0ff512f1767b7f.md",
+      "final_sha256": "df0ff512f1767b7f00c80d60bc50bcbf8ce2220bce1f7b06545d34c64b1975fe",
+      "final_role": "historical recovery; no current premise authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block30.md",
+      "original_mode": "100644",
+      "original_blob": "c3b2b9146d4e21424c16f72e7ac779d37ebb04aa",
+      "original_sha256": "3b47da9614abb91399d7db278a5167c9f3c660bfb2c451eac81461271aa0e2a8",
+      "disposition": "superseded",
+      "reason": "Historical attempts, controls, failures or author/generated state preserved exactly; no stale current-main replacement or fresh evidence claim",
+      "recovery": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/CLAIM_STATUS_CERTIFICATE_block30-3b47da9614abb913.md",
+      "encoding": "identity",
+      "stored_sha256": "3b47da9614abb91399d7db278a5167c9f3c660bfb2c451eac81461271aa0e2a8",
+      "final_path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/CLAIM_STATUS_CERTIFICATE_block30-3b47da9614abb913.md",
+      "final_sha256": "3b47da9614abb91399d7db278a5167c9f3c660bfb2c451eac81461271aa0e2a8",
+      "final_role": "historical recovery; no current premise authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block30.md",
+      "original_mode": "100644",
+      "original_blob": "f15dbd7853c1300546f6d9c9924a9471f57cd441",
+      "original_sha256": "eed3c47d058abe9c576c96c8f5119c94679f530dc4b9ec4744185f9680adc651",
+      "disposition": "superseded",
+      "reason": "Historical attempts, controls, failures or author/generated state preserved exactly; no stale current-main replacement or fresh evidence claim",
+      "recovery": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/GOAL_block30-eed3c47d058abe9c.md",
+      "encoding": "identity",
+      "stored_sha256": "eed3c47d058abe9c576c96c8f5119c94679f530dc4b9ec4744185f9680adc651",
+      "final_path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/GOAL_block30-eed3c47d058abe9c.md",
+      "final_sha256": "eed3c47d058abe9c576c96c8f5119c94679f530dc4b9ec4744185f9680adc651",
+      "final_role": "historical recovery; no current premise authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "original_mode": "100644",
+      "original_blob": "a83db595a5a234f53501c98ca01ada1110ada636",
+      "original_sha256": "3daf21b65f4e73bea37a22fa4bdf75ad240ff98ee9ed3c9b13f69fa68c43a8bf",
+      "disposition": "superseded",
+      "reason": "Historical attempts, controls, failures or author/generated state preserved exactly; no stale current-main replacement or fresh evidence claim",
+      "recovery": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/HANDOFF-3daf21b65f4e73be.md",
+      "encoding": "identity",
+      "stored_sha256": "3daf21b65f4e73bea37a22fa4bdf75ad240ff98ee9ed3c9b13f69fa68c43a8bf",
+      "final_path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/HANDOFF-3daf21b65f4e73be.md",
+      "final_sha256": "3daf21b65f4e73bea37a22fa4bdf75ad240ff98ee9ed3c9b13f69fa68c43a8bf",
+      "final_role": "historical recovery; no current premise authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "original_mode": "100644",
+      "original_blob": "af4651b37ce70f162f9dc3f3b59818b95f667699",
+      "original_sha256": "d3108acdf7a1cb18f6d652536848cf247b4a49583741ee7a0e447bc7f5e70300",
+      "disposition": "superseded",
+      "reason": "Historical attempts, controls, failures or author/generated state preserved exactly; no stale current-main replacement or fresh evidence claim",
+      "recovery": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/OPPORTUNITY_QUEUE-d3108acdf7a1cb18.md",
+      "encoding": "identity",
+      "stored_sha256": "d3108acdf7a1cb18f6d652536848cf247b4a49583741ee7a0e447bc7f5e70300",
+      "final_path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/OPPORTUNITY_QUEUE-d3108acdf7a1cb18.md",
+      "final_sha256": "d3108acdf7a1cb18f6d652536848cf247b4a49583741ee7a0e447bc7f5e70300",
+      "final_role": "historical recovery; no current premise authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block30.md",
+      "original_mode": "100644",
+      "original_blob": "e52c569c4aa861c064ef51d5c7a644c8529d5ae0",
+      "original_sha256": "5242365320da46ae3e7347b8398c80404e6dd1bcad0b3959f501811ef117c13f",
+      "disposition": "superseded",
+      "reason": "Historical attempts, controls, failures or author/generated state preserved exactly; no stale current-main replacement or fresh evidence claim",
+      "recovery": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/RESULTS_block30-5242365320da46ae.md",
+      "encoding": "identity",
+      "stored_sha256": "5242365320da46ae3e7347b8398c80404e6dd1bcad0b3959f501811ef117c13f",
+      "final_path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/RESULTS_block30-5242365320da46ae.md",
+      "final_sha256": "5242365320da46ae3e7347b8398c80404e6dd1bcad0b3959f501811ef117c13f",
+      "final_role": "historical recovery; no current premise authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "original_mode": "100644",
+      "original_blob": "92af697037a1fdc351eea3837f7111883a89e160",
+      "original_sha256": "e3346d7d91b61912f86bc3544d0f63a4975f8a3c280a73dfca4234ec9fdc53b3",
+      "disposition": "superseded",
+      "reason": "Historical attempts, controls, failures or author/generated state preserved exactly; no stale current-main replacement or fresh evidence claim",
+      "recovery": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/REVIEW_HISTORY-e3346d7d91b61912.md",
+      "encoding": "identity",
+      "stored_sha256": "e3346d7d91b61912f86bc3544d0f63a4975f8a3c280a73dfca4234ec9fdc53b3",
+      "final_path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/REVIEW_HISTORY-e3346d7d91b61912.md",
+      "final_sha256": "e3346d7d91b61912f86bc3544d0f63a4975f8a3c280a73dfca4234ec9fdc53b3",
+      "final_role": "historical recovery; no current premise authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "original_mode": "100644",
+      "original_blob": "0790f2734962a73a00e4295a84182750e019854e",
+      "original_sha256": "bb43fbab2baea27981a452ef63a896fa061d025f9b0f034d0f79650d3a13741e",
+      "disposition": "superseded",
+      "reason": "Historical attempts, controls, failures or author/generated state preserved exactly; no stale current-main replacement or fresh evidence claim",
+      "recovery": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/STATE-bb43fbab2baea279.yaml.gz",
+      "encoding": "gzip",
+      "stored_sha256": "124b63668868db22895d34e29ef8f39977a15fe39d2cb17818620f19676bf070",
+      "final_path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/STATE-bb43fbab2baea279.yaml.gz",
+      "final_sha256": "124b63668868db22895d34e29ef8f39977a15fe39d2cb17818620f19676bf070",
+      "final_role": "historical recovery; no current premise authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "original_mode": "100644",
+      "original_blob": "6de7296445a54b5dae952ab3187cae3eb6f8e41d",
+      "original_sha256": "b7388c63cc0a04c53c29da4680fcfbc103a571068ae44852a00d1281d7557238",
+      "disposition": "superseded",
+      "reason": "Historical attempts, controls, failures or author/generated state preserved exactly; no stale current-main replacement or fresh evidence claim",
+      "recovery": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/TRACE_GATE-b7388c63cc0a04c5.md",
+      "encoding": "identity",
+      "stored_sha256": "b7388c63cc0a04c53c29da4680fcfbc103a571068ae44852a00d1281d7557238",
+      "final_path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/TRACE_GATE-b7388c63cc0a04c5.md",
+      "final_sha256": "b7388c63cc0a04c53c29da4680fcfbc103a571068ae44852a00d1281d7557238",
+      "final_role": "historical recovery; no current premise authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_budget.out.txt",
+      "original_mode": "100644",
+      "original_blob": "68058cff6a1942694ee178a53e72ac58fb0eba3d",
+      "original_sha256": "580a9a51b4a9639b73b0bda5e6a27d3ba10883f48b30263fb97c935809681e13",
+      "disposition": "deferred",
+      "reason": "Historical attempts, controls, failures or author/generated state preserved exactly; no stale current-main replacement or fresh evidence claim",
+      "recovery": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_budget.out-580a9a51b4a9639b.txt.gz",
+      "encoding": "gzip",
+      "stored_sha256": "e8b311e9961f684344302566f17f6d352c84854cbbff6b55d2496943fab44047",
+      "final_path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_budget.out-580a9a51b4a9639b.txt.gz",
+      "final_sha256": "e8b311e9961f684344302566f17f6d352c84854cbbff6b55d2496943fab44047",
+      "final_role": "historical recovery; no current premise authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_budget.py",
+      "original_mode": "100644",
+      "original_blob": "cad7b8eba30bd59003de4d114cae98e613fdfabf",
+      "original_sha256": "f1feabd9e97ed7938cf6a1997f5ae56dcc5d28833bcc42982d2e85a99d9a4e1b",
+      "disposition": "deferred",
+      "reason": "Historical attempts, controls, failures or author/generated state preserved exactly; no stale current-main replacement or fresh evidence claim",
+      "recovery": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_budget-f1feabd9e97ed793.py",
+      "encoding": "identity",
+      "stored_sha256": "f1feabd9e97ed7938cf6a1997f5ae56dcc5d28833bcc42982d2e85a99d9a4e1b",
+      "final_path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_budget-f1feabd9e97ed793.py",
+      "final_sha256": "f1feabd9e97ed7938cf6a1997f5ae56dcc5d28833bcc42982d2e85a99d9a4e1b",
+      "final_role": "historical recovery; no current premise authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_certify.out.txt",
+      "original_mode": "100644",
+      "original_blob": "233a899e35d1b80e0d0a03d7b6be0fe1729e5f8d",
+      "original_sha256": "d21ed3d2ee5fbed4f820a831ffafa5112b9e2011aedcf286556fc6df746c34cf",
+      "disposition": "deferred",
+      "reason": "Historical attempts, controls, failures or author/generated state preserved exactly; no stale current-main replacement or fresh evidence claim",
+      "recovery": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_certify.out-d21ed3d2ee5fbed4.txt.gz",
+      "encoding": "gzip",
+      "stored_sha256": "10d887c91336bb3f4143fff050bc4304fea7b3dad8843b659a059050a94b102f",
+      "final_path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_certify.out-d21ed3d2ee5fbed4.txt.gz",
+      "final_sha256": "10d887c91336bb3f4143fff050bc4304fea7b3dad8843b659a059050a94b102f",
+      "final_role": "historical recovery; no current premise authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_certify.py",
+      "original_mode": "100644",
+      "original_blob": "a3cf6c4003524adbc1154ed6dff6349bc5de49e8",
+      "original_sha256": "d270f06f2dc4fa26234873a5f91bdaf963cd6ac3264a4aabf1ecc0f8e560b636",
+      "disposition": "deferred",
+      "reason": "Historical attempts, controls, failures or author/generated state preserved exactly; no stale current-main replacement or fresh evidence claim",
+      "recovery": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_certify-d270f06f2dc4fa26.py",
+      "encoding": "identity",
+      "stored_sha256": "d270f06f2dc4fa26234873a5f91bdaf963cd6ac3264a4aabf1ecc0f8e560b636",
+      "final_path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_certify-d270f06f2dc4fa26.py",
+      "final_sha256": "d270f06f2dc4fa26234873a5f91bdaf963cd6ac3264a4aabf1ecc0f8e560b636",
+      "final_role": "historical recovery; no current premise authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_construction.out.txt",
+      "original_mode": "100644",
+      "original_blob": "c6e6dae36c7048abb3fe8d752374fca753a902d6",
+      "original_sha256": "278562e4f8c569927391c5a09d8219ecd5e8af7718c128817146cd8daef354ce",
+      "disposition": "deferred",
+      "reason": "Historical attempts, controls, failures or author/generated state preserved exactly; no stale current-main replacement or fresh evidence claim",
+      "recovery": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_construction.out-278562e4f8c56992.txt.gz",
+      "encoding": "gzip",
+      "stored_sha256": "fd990cc9c0a6c22af56c5a7ca2429c91c73df224b435644acd9af22eead25911",
+      "final_path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_construction.out-278562e4f8c56992.txt.gz",
+      "final_sha256": "fd990cc9c0a6c22af56c5a7ca2429c91c73df224b435644acd9af22eead25911",
+      "final_role": "historical recovery; no current premise authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_construction.py",
+      "original_mode": "100644",
+      "original_blob": "418e4bf45ad0871d02f4bf07d36095c7ad5f1f08",
+      "original_sha256": "6dc3fe6ece20ace6bf62891f74ad4aada028ddf3d48cd845621fa88758453259",
+      "disposition": "deferred",
+      "reason": "Historical attempts, controls, failures or author/generated state preserved exactly; no stale current-main replacement or fresh evidence claim",
+      "recovery": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_construction-6dc3fe6ece20ace6.py",
+      "encoding": "identity",
+      "stored_sha256": "6dc3fe6ece20ace6bf62891f74ad4aada028ddf3d48cd845621fa88758453259",
+      "final_path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_construction-6dc3fe6ece20ace6.py",
+      "final_sha256": "6dc3fe6ece20ace6bf62891f74ad4aada028ddf3d48cd845621fa88758453259",
+      "final_role": "historical recovery; no current premise authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_core.py",
+      "original_mode": "100644",
+      "original_blob": "b81523f04d70f980fd7a599d48785f34cf3dce1e",
+      "original_sha256": "83e90b6e4b5d9a6483265e8069abc5e412733b4eb4ffaee86144034ae499ec89",
+      "disposition": "deferred",
+      "reason": "Historical attempts, controls, failures or author/generated state preserved exactly; no stale current-main replacement or fresh evidence claim",
+      "recovery": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_core-83e90b6e4b5d9a64.py",
+      "encoding": "identity",
+      "stored_sha256": "83e90b6e4b5d9a6483265e8069abc5e412733b4eb4ffaee86144034ae499ec89",
+      "final_path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_core-83e90b6e4b5d9a64.py",
+      "final_sha256": "83e90b6e4b5d9a6483265e8069abc5e412733b4eb4ffaee86144034ae499ec89",
+      "final_role": "historical recovery; no current premise authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_refuter.out.txt",
+      "original_mode": "100644",
+      "original_blob": "024eade15fef8918529493aea03083709097f5f7",
+      "original_sha256": "ef7eb3a7a7e9c15fe0f0e19043e00c5cd22bf8868d367e8fb544a418cea562e7",
+      "disposition": "deferred",
+      "reason": "Historical attempts, controls, failures or author/generated state preserved exactly; no stale current-main replacement or fresh evidence claim",
+      "recovery": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_refuter.out-ef7eb3a7a7e9c15f.txt.gz",
+      "encoding": "gzip",
+      "stored_sha256": "86f12d9360195a79d674fa143152992f66ca022d6b3ca6d96f34e5d4ebe86145",
+      "final_path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_refuter.out-ef7eb3a7a7e9c15f.txt.gz",
+      "final_sha256": "86f12d9360195a79d674fa143152992f66ca022d6b3ca6d96f34e5d4ebe86145",
+      "final_role": "historical recovery; no current premise authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_refuter.py",
+      "original_mode": "100644",
+      "original_blob": "a9570b128d63f74031a42513f6890b93dab4b242",
+      "original_sha256": "379613ed262399426d3073b1c7beead6b29bbf7ae2649b2e7b4a982766533374",
+      "disposition": "deferred",
+      "reason": "Historical attempts, controls, failures or author/generated state preserved exactly; no stale current-main replacement or fresh evidence claim",
+      "recovery": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_refuter-379613ed26239942.py",
+      "encoding": "identity",
+      "stored_sha256": "379613ed262399426d3073b1c7beead6b29bbf7ae2649b2e7b4a982766533374",
+      "final_path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_refuter-379613ed26239942.py",
+      "final_sha256": "379613ed262399426d3073b1c7beead6b29bbf7ae2649b2e7b4a982766533374",
+      "final_role": "historical recovery; no current premise authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_scan.out.txt",
+      "original_mode": "100644",
+      "original_blob": "08b938be6a6461ee4e3ba85697bdb02ab283708d",
+      "original_sha256": "74956c41f7bb62e119bf56dfe506ff31e261a2a072db28c753b1c26389faa023",
+      "disposition": "deferred",
+      "reason": "Historical attempts, controls, failures or author/generated state preserved exactly; no stale current-main replacement or fresh evidence claim",
+      "recovery": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_scan.out-74956c41f7bb62e1.txt.gz",
+      "encoding": "gzip",
+      "stored_sha256": "8741efe569ac8298dd4d6a4cf4ff0777ccc4d639dc28c21a72d0e7abceed9a93",
+      "final_path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_scan.out-74956c41f7bb62e1.txt.gz",
+      "final_sha256": "8741efe569ac8298dd4d6a4cf4ff0777ccc4d639dc28c21a72d0e7abceed9a93",
+      "final_role": "historical recovery; no current premise authority"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block30_scan.py",
+      "original_mode": "100644",
+      "original_blob": "7c4f7df11bea4f3764b3b551fc39f26c0ac7b311",
+      "original_sha256": "7a1623641b0029e0c9839b732d62640d0f95b629a4eae4456908a7b693d5a897",
+      "disposition": "deferred",
+      "reason": "Historical attempts, controls, failures or author/generated state preserved exactly; no stale current-main replacement or fresh evidence claim",
+      "recovery": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_scan-7a1623641b0029e0.py",
+      "encoding": "identity",
+      "stored_sha256": "7a1623641b0029e0c9839b732d62640d0f95b629a4eae4456908a7b693d5a897",
+      "final_path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_scan-7a1623641b0029e0.py",
+      "final_sha256": "7a1623641b0029e0c9839b732d62640d0f95b629a4eae4456908a7b693d5a897",
+      "final_role": "historical recovery; no current premise authority"
+    },
+    {
+      "original_path": "docs/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED_NODES_IN_THE_EXPLANATION_TREE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "original_mode": "100644",
+      "original_blob": "2d3d6774ddc6765c6e4f140c1cc486367137fece",
+      "original_sha256": "c9850d47e436dea7bf370f03f6a696f824bc1100fe824926fbeeb956ee09815f",
+      "disposition": "narrowed",
+      "reason": "Corrected canonical full proof/program with exact original recovery",
+      "recovery": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED-c9850d47e436dea7.md",
+      "encoding": "identity",
+      "stored_sha256": "c9850d47e436dea7bf370f03f6a696f824bc1100fe824926fbeeb956ee09815f",
+      "final_path": "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "final_sha256": "5642877329c141c39394936173c35c82c5cd18bb8f9a408c17fad0497cef647e",
+      "final_role": "corrected narrowed canonical source"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_mode": "100644",
+      "original_blob": "8363c01307e8cb60d835a44ce2f41903c13cc814",
+      "original_sha256": "5350676179dc9a1d2e5f3ea15bb044244b57a3361acf141aa91c5835282ff77a",
+      "disposition": "superseded",
+      "reason": "Historical attempts, controls, failures or author/generated state preserved exactly; no stale current-main replacement or fresh evidence claim",
+      "recovery": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/citation_graph_manifest-5350676179dc9a1d.json.gz",
+      "encoding": "gzip",
+      "stored_sha256": "159f40259cd8cf2040afc4b4e113424c4b4de9d372c9b6cb947e930017aecdee",
+      "final_path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/citation_graph_manifest-5350676179dc9a1d.json.gz",
+      "final_sha256": "159f40259cd8cf2040afc4b4e113424c4b4de9d372c9b6cb947e930017aecdee",
+      "final_role": "historical recovery; no current premise authority"
+    },
+    {
+      "original_path": "logs/runner-cache/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_09_16.txt",
+      "original_mode": "100644",
+      "original_blob": "9d49573289223eb234dc51757dc45b5e55b8d2c5",
+      "original_sha256": "985dcbd934f5f2b5591a1ce6897ba6efd1c4b8dd78c5ae3c4ba3365d9e7f87c1",
+      "disposition": "superseded",
+      "reason": "Historical attempts, controls, failures or author/generated state preserved exactly; no stale current-main replacement or fresh evidence claim",
+      "recovery": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_-985dcbd934f5f2b5.txt.gz",
+      "encoding": "gzip",
+      "stored_sha256": "a028b21f644f3f906ff50ce8988a1717eb9f97fe40ef2bb81eac72e4e3c0922b",
+      "final_path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_-985dcbd934f5f2b5.txt.gz",
+      "final_sha256": "a028b21f644f3f906ff50ce8988a1717eb9f97fe40ef2bb81eac72e4e3c0922b",
+      "final_role": "historical recovery; no current premise authority"
+    },
+    {
+      "original_path": "scripts/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_09_16.py",
+      "original_mode": "100755",
+      "original_blob": "8f622f974eaf57f761fff47c501bae7429f4dac7",
+      "original_sha256": "99299e47dc478c701b901bda2c32c20bdae77fd5b9f815ec3f0b816b37aa1c4d",
+      "disposition": "narrowed",
+      "reason": "Corrected canonical full proof/program with exact original recovery",
+      "recovery": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_-99299e47dc478c70.py",
+      "encoding": "identity",
+      "stored_sha256": "99299e47dc478c701b901bda2c32c20bdae77fd5b9f815ec3f0b816b37aa1c4d",
+      "final_path": "scripts/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.py",
+      "final_sha256": "4c4027558538dad0ad0a4d8887de2ac7d39671438ca15aaa1fcc38f214efc866",
+      "final_role": "corrected narrowed canonical source"
+    }
+  ],
+  "claim_dispositions": [
+    {
+      "claim": "Coupling and deviations",
+      "disposition": "narrowed",
+      "reason": "p>=q>0,r>0; explicit factorization and all derivatives; exact unrestricted-domain counterexample retained",
+      "final_path": "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    },
+    {
+      "claim": "Extended explanation tree",
+      "disposition": "accepted with complete proof expansion",
+      "reason": "Original full construction plus finite ancestor-cone localization and full pole-transport identity; exact core implementation unchanged",
+      "final_path": "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    },
+    {
+      "claim": "Lifted bound and four certificates",
+      "disposition": "accepted",
+      "reason": "Exact four rational certificates and all fixtures unchanged; full slot and invariant-law proofs",
+      "final_path": "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    },
+    {
+      "claim": "Positive fixed-point parametrization",
+      "disposition": "narrowed",
+      "reason": "1<=v<3/2 gives positive denominator; scalar maxima preserved",
+      "final_path": "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    },
+    {
+      "claim": "Full-domain strict endpoint and necessary route-bound proof",
+      "disposition": "deferred science",
+      "reason": "Valid corrected proof remains complete and readable; formal negative certification deferred separately from mathematical validity",
+      "recovery": "docs/work_history/repo/review_feedback/pr8174-evidence/pr8174-deferred-science.md"
+    },
+    {
+      "claim": "Actual threshold, whole-gap attribution, exhaustive optimality, overlap impossibility",
+      "disposition": "deferred or withdrawn as unsupported",
+      "reason": "Finite simulation/scan cannot prove these; unique proposals and exact failures preserved; branch retention required",
+      "recovery": "docs/work_history/repo/review_feedback/pr8174-evidence/pr8174-deferred-science.md"
+    }
+  ],
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-author-final-freeze.json",
+      "sha256": "9dd6a136cbb3788cde9e5626e01113dd1da90b0165f6fb2cc70ef70ebe1d0fe2"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-author-source-handoff-v1.json",
+      "sha256": "37625d588a2418a64352739aabc5238eb9bc4b7d89b2207e90e2e016adf8c2bb"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-review-original.json",
+      "sha256": "724cc955b08af65a5f6933a2f9c8c701b222c5a5bab2732cabb22c241105f541"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-early-review-v3.json",
+      "sha256": "c69531fe6e86ef41a9e625743732d7856d937ab0accf52bd714f3ecdb958ec5b"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-cold-review-v1.json",
+      "sha256": "6244aaf7dc3c53318bb7d5df83e452df977b75d3925b36321afc88591c9b40bf"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-adapter-review-v2.json",
+      "sha256": "c789eeeee564f5118d3fdfd47706e850e9c805064099b17f4e5a1e1dfbde2444"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-capture-dual-binding-v2.json",
+      "sha256": "f1308b59571f515c97b37f54dfcc745331f3a2b40c778b1b5dd7f689ad34ba2a"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-author-input-resource-plan-v3.json",
+      "sha256": "2290e47f9a26c0af271c45b5990cd4953b83ab5cdc0af0e3226bbe62f03a1547"
+    }
+  ],
+  "executions": [
+    {
+      "receipt": {
+        "pr": "PR8174-primary",
+        "receipt": "/private/tmp/review-drain-20260915/drain8174-execution-v2.json",
+        "sha256": "6404f7741ec7d548f3fc9eb487ea3d15d13a6c91aa0c6a3d8556db34ba09e562"
+      },
+      "status": "CAPTURED; no scientific verdict or staging",
+      "elapsed_seconds": 2.526482124987524,
+      "watchdog": {
+        "limit_seconds": 900,
+        "limit_bytes": 805306368,
+        "sampling_interval_seconds": 0.02,
+        "samples": 47,
+        "peak_tree_rss_bytes": 156024832,
+        "violations": [],
+        "scope": "External supervisor plus worker process group and descendants; sampled RSS, not an OS hard-memory reservation"
+      },
+      "artifacts": [
+        {
+          "path": "/private/tmp/review-drain-20260915/author-draft-slot/logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.json",
+          "sha256": "1b8314eaaa6fd6d2a2dd9ff476ab1ca2c0286a2ba1083f8418e842bd87d8eb20"
+        },
+        {
+          "path": "/private/tmp/review-drain-20260915/author-draft-slot/logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.txt",
+          "sha256": "39bd37dac1046b89e0d84d82cc6d82d44bacca48a45d458b1808b372ea8ffc9d"
+        },
+        {
+          "path": "/private/tmp/review-drain-20260915/drain8174-worker-v2.json",
+          "sha256": "82e692e68eb33a551c34b428cfd9cd5b8f579321d793cf66e8bf42e74055aa30"
+        },
+        {
+          "path": "/private/tmp/review-drain-20260915/drain8174-supervisor-v2.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/private/tmp/review-drain-20260915/drain8174-raw-result-v2.json",
+          "sha256": "964201d75cbaea1062e98e7f55ec0141cbea5f2d51f5b7de3296901dcacf5bc8"
+        }
+      ],
+      "passed": 17,
+      "failed": 0
+    },
+    {
+      "receipt": {
+        "pr": "PR8174-deviation_closed_form_wrong",
+        "receipt": "/private/tmp/review-drain-20260915/drain8174-mutation-deviation_closed_form_wrong-v1.json",
+        "sha256": "8d9c44b5cec9c34ff1f2d8d73e525c2fceed360d53be6b7e1d1de06e432cace2"
+      },
+      "status": "EXPECTED_MUTATION_REJECTION_OBSERVED; finite diagnostic only, not universal proof",
+      "elapsed_seconds": 2.5288421669974923,
+      "watchdog": {
+        "limit_seconds": 900,
+        "limit_bytes": 805306368,
+        "sampling_interval_seconds": 0.02,
+        "samples": 45,
+        "peak_tree_rss_bytes": 129302528,
+        "violations": [],
+        "scope": "External supervisor plus runner and descendants; sampled aggregate RSS, not OS hard reservation"
+      },
+      "artifacts": [
+        {
+          "path": "/private/tmp/review-drain-20260915/drain8174-mutation-deviation_closed_form_wrong-v1.stdout.txt",
+          "sha256": "9c618862fadd160c0b1866a2cb7b0033639dcccb309894aa5234723585ffd917"
+        },
+        {
+          "path": "/private/tmp/review-drain-20260915/drain8174-mutation-deviation_closed_form_wrong-v1.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/private/tmp/review-drain-20260915/author-draft-slot/logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--deviation_closed_form_wrong.json",
+          "sha256": "608d54354d6565eb8104d65d1c6ebf3d952e534aaf3aa0d105ad366dda6e040f"
+        }
+      ],
+      "mutation": "deviation_closed_form_wrong",
+      "passed": 15,
+      "failed": 2,
+      "failed_checks": [
+        "B1",
+        "B3"
+      ]
+    },
+    {
+      "receipt": {
+        "pr": "PR8174-domination_state_wrong",
+        "receipt": "/private/tmp/review-drain-20260915/drain8174-mutation-domination_state_wrong-v1.json",
+        "sha256": "4f66cfed0d2f227fe997cd57dca2338b2e5f03fbe6afb45ef8f04b16b48b5eb0"
+      },
+      "status": "EXPECTED_MUTATION_REJECTION_OBSERVED; finite diagnostic only, not universal proof",
+      "elapsed_seconds": 2.369975500041619,
+      "watchdog": {
+        "limit_seconds": 900,
+        "limit_bytes": 805306368,
+        "sampling_interval_seconds": 0.02,
+        "samples": 44,
+        "peak_tree_rss_bytes": 130088960,
+        "violations": [],
+        "scope": "External supervisor plus runner and descendants; sampled aggregate RSS, not OS hard reservation"
+      },
+      "artifacts": [
+        {
+          "path": "/private/tmp/review-drain-20260915/drain8174-mutation-domination_state_wrong-v1.stdout.txt",
+          "sha256": "b2f4ebab090ac79fa46a7fd444e5c8ab6326ba70d7216a153758cab085b4a8a2"
+        },
+        {
+          "path": "/private/tmp/review-drain-20260915/drain8174-mutation-domination_state_wrong-v1.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/private/tmp/review-drain-20260915/author-draft-slot/logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--domination_state_wrong.json",
+          "sha256": "642e1a0fbaffc2f00130000e09f42ac9223806a4f9171dc6b0e54b3a17e95fe4"
+        }
+      ],
+      "mutation": "domination_state_wrong",
+      "passed": 16,
+      "failed": 1,
+      "failed_checks": [
+        "B2"
+      ]
+    },
+    {
+      "receipt": {
+        "pr": "PR8174-spanning_identity_wrong",
+        "receipt": "/private/tmp/review-drain-20260915/drain8174-mutation-spanning_identity_wrong-v1.json",
+        "sha256": "366882143513c7d0351701587df8faebc50b0552866492daf84f9ac0095230a3"
+      },
+      "status": "EXPECTED_MUTATION_REJECTION_OBSERVED; finite diagnostic only, not universal proof",
+      "elapsed_seconds": 0.9757453330093995,
+      "watchdog": {
+        "limit_seconds": 900,
+        "limit_bytes": 805306368,
+        "sampling_interval_seconds": 0.02,
+        "samples": 15,
+        "peak_tree_rss_bytes": 130072576,
+        "violations": [],
+        "scope": "External supervisor plus runner and descendants; sampled aggregate RSS, not OS hard reservation"
+      },
+      "artifacts": [
+        {
+          "path": "/private/tmp/review-drain-20260915/drain8174-mutation-spanning_identity_wrong-v1.stdout.txt",
+          "sha256": "ca02fcbbc88ea42589f38ad3c7bc668db7a3326a676f3a92ff155bf9cf997b0d"
+        },
+        {
+          "path": "/private/tmp/review-drain-20260915/drain8174-mutation-spanning_identity_wrong-v1.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/private/tmp/review-drain-20260915/author-draft-slot/logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--spanning_identity_wrong.json",
+          "sha256": "9430a7eaf5523b17b4e1ffbca79e44df73d0a73ce0b8500a508e31b29753236a"
+        }
+      ],
+      "mutation": "spanning_identity_wrong",
+      "passed": 15,
+      "failed": 2,
+      "failed_checks": [
+        "C2",
+        "C3"
+      ]
+    },
+    {
+      "receipt": {
+        "pr": "PR8174-budget_amplified_dropped",
+        "receipt": "/private/tmp/review-drain-20260915/drain8174-mutation-budget_amplified_dropped-v1.json",
+        "sha256": "f38b038e3628141ba0125d54f6b28bb05931d1a68912cbec3cbb14c9c4f0bb8f"
+      },
+      "status": "EXPECTED_MUTATION_REJECTION_OBSERVED; finite diagnostic only, not universal proof",
+      "elapsed_seconds": 0.9712459999718703,
+      "watchdog": {
+        "limit_seconds": 900,
+        "limit_bytes": 805306368,
+        "sampling_interval_seconds": 0.02,
+        "samples": 16,
+        "peak_tree_rss_bytes": 129138688,
+        "violations": [],
+        "scope": "External supervisor plus runner and descendants; sampled aggregate RSS, not OS hard reservation"
+      },
+      "artifacts": [
+        {
+          "path": "/private/tmp/review-drain-20260915/drain8174-mutation-budget_amplified_dropped-v1.stdout.txt",
+          "sha256": "3d543c9d5aa8524a2c1c4a5d1d9a12ac0b753259f75dde2592b45b4daf274789"
+        },
+        {
+          "path": "/private/tmp/review-drain-20260915/drain8174-mutation-budget_amplified_dropped-v1.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/private/tmp/review-drain-20260915/author-draft-slot/logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--budget_amplified_dropped.json",
+          "sha256": "8751a59f8ac8b2d08c8bd9427dba6c65146cad94a1ce6513bd7feb69a438e279"
+        }
+      ],
+      "mutation": "budget_amplified_dropped",
+      "passed": 15,
+      "failed": 2,
+      "failed_checks": [
+        "C2",
+        "C3"
+      ]
+    },
+    {
+      "receipt": {
+        "pr": "PR8174-bad_pairs_wrong",
+        "receipt": "/private/tmp/review-drain-20260915/drain8174-mutation-bad_pairs_wrong-v1.json",
+        "sha256": "e4b1831940fef36d2375c2a4e175f8bdfd489cf9c535c8e05f1e9948962cd030"
+      },
+      "status": "EXPECTED_MUTATION_REJECTION_OBSERVED; finite diagnostic only, not universal proof",
+      "elapsed_seconds": 1.0032037500059232,
+      "watchdog": {
+        "limit_seconds": 900,
+        "limit_bytes": 805306368,
+        "sampling_interval_seconds": 0.02,
+        "samples": 15,
+        "peak_tree_rss_bytes": 128679936,
+        "violations": [],
+        "scope": "External supervisor plus runner and descendants; sampled aggregate RSS, not OS hard reservation"
+      },
+      "artifacts": [
+        {
+          "path": "/private/tmp/review-drain-20260915/drain8174-mutation-bad_pairs_wrong-v1.stdout.txt",
+          "sha256": "414885a82b5a0bdca91398f94f90848ef4187ebf1eff203a41f2d27182b722fd"
+        },
+        {
+          "path": "/private/tmp/review-drain-20260915/drain8174-mutation-bad_pairs_wrong-v1.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/private/tmp/review-drain-20260915/author-draft-slot/logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--bad_pairs_wrong.json",
+          "sha256": "a4bc0551e07a934cb5d0a7afdfb749a1939adfb522357784a9f98041b2a36a84"
+        }
+      ],
+      "mutation": "bad_pairs_wrong",
+      "passed": 15,
+      "failed": 2,
+      "failed_checks": [
+        "C2",
+        "C3"
+      ]
+    },
+    {
+      "receipt": {
+        "pr": "PR8174-forks_identity_wrong",
+        "receipt": "/private/tmp/review-drain-20260915/drain8174-mutation-forks_identity_wrong-v1.json",
+        "sha256": "34ee71e3bfd23fa63c6a92e7f0aaf58a98b5bc9ac7b0bc379a5f1f3826138945"
+      },
+      "status": "EXPECTED_MUTATION_REJECTION_OBSERVED; finite diagnostic only, not universal proof",
+      "elapsed_seconds": 0.9408404999994673,
+      "watchdog": {
+        "limit_seconds": 900,
+        "limit_bytes": 805306368,
+        "sampling_interval_seconds": 0.02,
+        "samples": 15,
+        "peak_tree_rss_bytes": 128974848,
+        "violations": [],
+        "scope": "External supervisor plus runner and descendants; sampled aggregate RSS, not OS hard reservation"
+      },
+      "artifacts": [
+        {
+          "path": "/private/tmp/review-drain-20260915/drain8174-mutation-forks_identity_wrong-v1.stdout.txt",
+          "sha256": "ee589a241e645d858c06cf341d175e3db5fb62de8f79e82f1d52b7d7764a8ea2"
+        },
+        {
+          "path": "/private/tmp/review-drain-20260915/drain8174-mutation-forks_identity_wrong-v1.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/private/tmp/review-drain-20260915/author-draft-slot/logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--forks_identity_wrong.json",
+          "sha256": "36f98033c63b1090a5a4b2d7f22abbff572b25eca06ca28014e9b7143dddf236"
+        }
+      ],
+      "mutation": "forks_identity_wrong",
+      "passed": 15,
+      "failed": 2,
+      "failed_checks": [
+        "C2",
+        "C3"
+      ]
+    },
+    {
+      "receipt": {
+        "pr": "PR8174-subtree_bound_wrong",
+        "receipt": "/private/tmp/review-drain-20260915/drain8174-mutation-subtree_bound_wrong-v1.json",
+        "sha256": "5aa2243d4c8bfab04e1757e721d93ebd429cbd93b9ed7b28902780b93f9b7ff9"
+      },
+      "status": "EXPECTED_MUTATION_REJECTION_OBSERVED; finite diagnostic only, not universal proof",
+      "elapsed_seconds": 2.319084416027181,
+      "watchdog": {
+        "limit_seconds": 900,
+        "limit_bytes": 805306368,
+        "sampling_interval_seconds": 0.02,
+        "samples": 46,
+        "peak_tree_rss_bytes": 130203648,
+        "violations": [],
+        "scope": "External supervisor plus runner and descendants; sampled aggregate RSS, not OS hard reservation"
+      },
+      "artifacts": [
+        {
+          "path": "/private/tmp/review-drain-20260915/drain8174-mutation-subtree_bound_wrong-v1.stdout.txt",
+          "sha256": "839feaebe6439382f2ea75116cf26b6a33d24ba7f019701cca06131ccb304077"
+        },
+        {
+          "path": "/private/tmp/review-drain-20260915/drain8174-mutation-subtree_bound_wrong-v1.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/private/tmp/review-drain-20260915/author-draft-slot/logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--subtree_bound_wrong.json",
+          "sha256": "2a3534b9eefc56a598e65589dbdb8488174f8a412c7d5b7cb63305956f963112"
+        }
+      ],
+      "mutation": "subtree_bound_wrong",
+      "passed": 16,
+      "failed": 1,
+      "failed_checks": [
+        "D1"
+      ]
+    },
+    {
+      "receipt": {
+        "pr": "PR8174-certificate_wrong",
+        "receipt": "/private/tmp/review-drain-20260915/drain8174-mutation-certificate_wrong-v1.json",
+        "sha256": "24ebbbad9539b6ca604c141264db445accaad1ecac4927dc52191445763d114b"
+      },
+      "status": "EXPECTED_MUTATION_REJECTION_OBSERVED; finite diagnostic only, not universal proof",
+      "elapsed_seconds": 2.3229942079633474,
+      "watchdog": {
+        "limit_seconds": 900,
+        "limit_bytes": 805306368,
+        "sampling_interval_seconds": 0.02,
+        "samples": 42,
+        "peak_tree_rss_bytes": 130367488,
+        "violations": [],
+        "scope": "External supervisor plus runner and descendants; sampled aggregate RSS, not OS hard reservation"
+      },
+      "artifacts": [
+        {
+          "path": "/private/tmp/review-drain-20260915/drain8174-mutation-certificate_wrong-v1.stdout.txt",
+          "sha256": "3248c3af5f752929fec87b62099113d0171fe141eb938b2523481c236ab592cc"
+        },
+        {
+          "path": "/private/tmp/review-drain-20260915/drain8174-mutation-certificate_wrong-v1.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/private/tmp/review-drain-20260915/author-draft-slot/logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--certificate_wrong.json",
+          "sha256": "ec0115e24b9a91dfe5ba4219ce9d4907459ef1d1c0d5ef0c021a7f7d863c5f5a"
+        }
+      ],
+      "mutation": "certificate_wrong",
+      "passed": 16,
+      "failed": 1,
+      "failed_checks": [
+        "D2"
+      ]
+    },
+    {
+      "receipt": {
+        "pr": "PR8174-ceiling_wrong",
+        "receipt": "/private/tmp/review-drain-20260915/drain8174-mutation-ceiling_wrong-v1.json",
+        "sha256": "86bec44b913c193a7e404c536a9d675ce4b380548479942a7548ea3d09700e08"
+      },
+      "status": "EXPECTED_MUTATION_REJECTION_OBSERVED; finite diagnostic only, not universal proof",
+      "elapsed_seconds": 2.7087324999738485,
+      "watchdog": {
+        "limit_seconds": 900,
+        "limit_bytes": 805306368,
+        "sampling_interval_seconds": 0.02,
+        "samples": 46,
+        "peak_tree_rss_bytes": 129908736,
+        "violations": [],
+        "scope": "External supervisor plus runner and descendants; sampled aggregate RSS, not OS hard reservation"
+      },
+      "artifacts": [
+        {
+          "path": "/private/tmp/review-drain-20260915/drain8174-mutation-ceiling_wrong-v1.stdout.txt",
+          "sha256": "8b242219d5524a83efe41c4a2c2a6fa567f03a1fb70478d798c8077e18a14948"
+        },
+        {
+          "path": "/private/tmp/review-drain-20260915/drain8174-mutation-ceiling_wrong-v1.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/private/tmp/review-drain-20260915/author-draft-slot/logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--ceiling_wrong.json",
+          "sha256": "683f036db766a96dff36f656a6b549a5c53f952098856db0d1889da3ec7893c5"
+        }
+      ],
+      "mutation": "ceiling_wrong",
+      "passed": 16,
+      "failed": 1,
+      "failed_checks": [
+        "E1"
+      ]
+    },
+    {
+      "receipt": {
+        "pr": "PR8174-domination_domain_wrong",
+        "receipt": "/private/tmp/review-drain-20260915/drain8174-mutation-domination_domain_wrong-v1.json",
+        "sha256": "42e8063653b1dac503ee6ceb4a300072b8496d0d4bc78d74e8f36e68fe6e96e2"
+      },
+      "status": "EXPECTED_MUTATION_REJECTION_OBSERVED; finite diagnostic only, not universal proof",
+      "elapsed_seconds": 2.3641623749863356,
+      "watchdog": {
+        "limit_seconds": 900,
+        "limit_bytes": 805306368,
+        "sampling_interval_seconds": 0.02,
+        "samples": 43,
+        "peak_tree_rss_bytes": 130121728,
+        "violations": [],
+        "scope": "External supervisor plus runner and descendants; sampled aggregate RSS, not OS hard reservation"
+      },
+      "artifacts": [
+        {
+          "path": "/private/tmp/review-drain-20260915/drain8174-mutation-domination_domain_wrong-v1.stdout.txt",
+          "sha256": "1fd8506c9029f120fd879d76d1ea5730e4eac58d9eb6e7c1a71cbba6de9be4ec"
+        },
+        {
+          "path": "/private/tmp/review-drain-20260915/drain8174-mutation-domination_domain_wrong-v1.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/private/tmp/review-drain-20260915/author-draft-slot/logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--domination_domain_wrong.json",
+          "sha256": "32ce183421966e9461ad7ca20f230c86811377314a0126dd7c4498bd88610313"
+        }
+      ],
+      "mutation": "domination_domain_wrong",
+      "passed": 16,
+      "failed": 1,
+      "failed_checks": [
+        "B3"
+      ]
+    },
+    {
+      "receipt": {
+        "pr": "PR8174-ceiling_endpoint_wrong",
+        "receipt": "/private/tmp/review-drain-20260915/drain8174-mutation-ceiling_endpoint_wrong-v1.json",
+        "sha256": "7d5490af088243c8a17f1aee308fdd4b12564e8ecbc79f6ba019d6227ae09f73"
+      },
+      "status": "EXPECTED_MUTATION_REJECTION_OBSERVED; finite diagnostic only, not universal proof",
+      "elapsed_seconds": 2.4567236250150017,
+      "watchdog": {
+        "limit_seconds": 900,
+        "limit_bytes": 805306368,
+        "sampling_interval_seconds": 0.02,
+        "samples": 43,
+        "peak_tree_rss_bytes": 129925120,
+        "violations": [],
+        "scope": "External supervisor plus runner and descendants; sampled aggregate RSS, not OS hard reservation"
+      },
+      "artifacts": [
+        {
+          "path": "/private/tmp/review-drain-20260915/drain8174-mutation-ceiling_endpoint_wrong-v1.stdout.txt",
+          "sha256": "643485e6d4099eb994248118a61c476413c0d14aed5b060732467b483799c9d4"
+        },
+        {
+          "path": "/private/tmp/review-drain-20260915/drain8174-mutation-ceiling_endpoint_wrong-v1.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/private/tmp/review-drain-20260915/author-draft-slot/logs/runner-cache/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16--ceiling_endpoint_wrong.json",
+          "sha256": "46c85b38dc3907acc47731621ac991f1b3cbf09c580941f4c02d0d484a52903d"
+        }
+      ],
+      "mutation": "ceiling_endpoint_wrong",
+      "passed": 16,
+      "failed": 1,
+      "failed_checks": [
+        "E3"
+      ]
+    }
+  ],
+  "confirmed": [
+    "Exact final 44-path index and disk identities match final freeze; all 31 cold source paths unchanged.",
+    "All 25 original recovery files decode to exact original Git blobs and raw hashes. Every final disposition has a concrete final path and stored SHA.",
+    "Read actual baseline stream and all mutation streams/results; baseline17/0, 11 intended family rejections, no abnormal exits or stderr.",
+    "Every saved receipt/artifact hash, before/after source/input generation and bound adapter identity matches. No cap violations, setup errors or retries in this capture set.",
+    "Four complete positive proofs/certificates remain valid at supplied scope. Deferred negative mathematics is not confused with incomplete formal packet promotion.",
+    "Actual main remains3dca, with no source/input overlap from frozen51cac; cold semantic interaction confirmation remains applicable."
+  ],
+  "branch_retention_required": true,
+  "limitations": [
+    "Source/evidence acceptance is not an audit verdict or landing PASS; root must perform required integration and combined validation.",
+    "Further main movement requires actual current-main interaction activation; prospective PR8173 is not treated as landed authority.",
+    "Finite controls supplement full written proofs and do not establish physical or asymptotic thresholds.",
+    "Resource memory measurement is sampled aggregate process-tree RSS, not an OS hard reservation."
+  ],
+  "reviewer_actions": "Read-only source/evidence verification and external reports only; no scientific rerun, source edit, staging, gate or auditor."
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8174",
+  "tree": "a6f63b440fb4a67c072865d29a35cf16381f742f",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "six_axis_two_level_domination_extended_explanation_tree_and_four_rational_certificates_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/work_history/repo/review_feedback/pr8174-evidence/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8770,
+      "misses": 4535
+    },
+    "packet_imports": {
+      "hits": 8760,
+      "misses": 4533
+    },
+    "declared_inputs": {
+      "hits": 8801,
+      "misses": 4688
+    }
+  },
+  "record_sha256": "65b8ae708807cf5f36f354d28f953a4c424ede4ad731d70a6e9bc36bd93c3a71",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

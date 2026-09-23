@@ -1,0 +1,34 @@
+{
+ "task": "R:empty_state_bootstrap_orbit_dichotomy_degree_nine_wall_2026_07_04",
+ "type": "runner-reexecution",
+ "lane": "empty",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/empty_state_bootstrap_orbit_dichotomy_degree_nine_wall_2026_07_04.py",
+ "seed": 63195,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "769d150d",
+ "started_utc": "20260923T113315Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=20 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "964487a8065ce0a677d7eff340255da5117dd7e9d83673896b523d24e317e2bc",
+ "stdout_tail": "abs=5.454e-03 rng_nonzero=20 skipped=0\nPASS: C5 pointwise Psi9-zero iff improper-stabilized | cases=55 mismatches=0\nPASS: C6 full-polynomial character wall | multiplicities_d0..10=[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]\nPASS: C7 generator-constraint coefficient kernels | nullities_d0..9_mod_1000003=[0, 0, 0, 0, 0, 0, 0, 0, 0, 1]\nPASS: C8 exhaustive exact Reynolds operator | all_monomials_d0..8_zero=True d9_nonzero_columns=6 d9_image_directions=1\nPASS: C9 reflection-hyperplane divisibility floor | nine distinct B3 reflection hyperplanes force nine distinct linear divisors on any det-relative polynomial\nPASS: C10 sign-flip and permutation alternant floor | det-compatible odd-distinct exponent seeds d0..9=[[], [], [], [], [], [], [], [], [], [(1, 3, 5)]]\nPASS: C11 direction-dependent linear hostile candidate rejected | the coordinate x is degree one but is unchanged by the improper y-z swap, so it does not satisfy the det-character obligation\nPASS: C12 multi-content triple-product hostile candidate typed | the degree-(1,1,1) determinant is a valid three-content pseudoscalar but collapses to zero on one repeated content and is not a one-content polynomial\nPASS: D1 one-bit selector transport and orbit sums | nonzero_D=20/20 orbit_sums={S_chiral:0.130885743749, S_paired:8.67361737988e-18, S_special:0}\nPASS: D2 readout face: even additive scalar vs Psi9 | readout=0.718376034963 flipped_readout=0.718376034963 Psi9_sum=-0.0029788062195 flipped_Psi9_sum=0.0029788062195\nTOTAL: PASS=20 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T113316Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=20 FAIL=0' vs cache 'TOTAL: PASS=13 FAIL=0'"
+  ]
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "task": "R:frontier_dm_selector_threshold_stabilization_support_2026_04_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_dm_selector_threshold_stabilization_support_2026_04_21.py",
+ "seed": 63280,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "769d150d",
+ "started_utc": "20260923T113440Z",
+ "elapsed_s": 0.3,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=13 FAIL=1",
+  "expected_ok": false,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6d6d0ce6483a365e458c10fd48eb583c2a142ba083311da66c62d6366b532a56",
+ "stdout_tail": "->[0.402682 0.720896 0.748452 0.847267 0.983735] ; (0.171205,0.176382)->[0.288533 0.635167 0.671142 0.802896 0.979905] ; (0.176382,0.177376)->[0.249005 0.59851  0.63805  0.785248 0.978408] ; (0.177376,0.216390)->[0.061914 0.379913 0.43302  0.674371 0.968615])\n\n========================================================================================\nPART 4: SCIENTIFIC CONSEQUENCE\n========================================================================================\n  [PASS] The prior selector-side note already said the missing datum is an intrinsic threshold law\n  [FAIL] The review register still lists the finer right-sensitive microscopic point-selection law as open\n  [PASS] So this theorem narrows the open selector burden without overstating closure  (any future threshold law landing in the stabilization window selects the preferred recovered lift immediately)\n\n========================================================================================\nRESULT\n========================================================================================\n  The exact intrinsic threshold-volume family already has a nontrivial\n  high-threshold stabilization window on the recovered bank.\n  Immediately above tau_star, the preferred recovered lift becomes the\n  unique minimizer and stays unique until the next zero-volume tie.\n  So the remaining selector-side burden is not an arbitrary threshold law.\n  It is a threshold law landing in that exact stabilization window.\n\nSUMMARY: PASS=13 FAIL=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T113440Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_dm_selector_threshold_stabilization_support_2026_04_21.txt against the .txt beside this log"
+  ]
+ }
+}

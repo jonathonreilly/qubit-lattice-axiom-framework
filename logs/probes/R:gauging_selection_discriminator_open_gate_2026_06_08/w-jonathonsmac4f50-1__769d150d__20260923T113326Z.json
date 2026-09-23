@@ -1,0 +1,35 @@
+{
+ "task": "R:gauging_selection_discriminator_open_gate_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "gauging",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauging_selection_discriminator_open_gate_2026_06_08.py",
+ "seed": 63206,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "769d150d",
+ "started_utc": "20260923T113326Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "62a94389c58fb9560cc790dfa0593fe7eb1fe4f93e0c9ac7055f31cca459f167",
+ "stdout_tail": " carries ZERO discrimination between vector / chiral-L / chiral-R coupling; chiral su(2)_L is a separate input\n       max|[eps,T^a]|=0.0e+00, |{eps,D}|=0.0e+00, all dressings anticommute (blind)\n[PASS] open-gate check 4 (color complex vs spatial real): reality test 'exists B: B T_a + T_a^T B = 0' -> su(3) fundamental NULLSPACE 0 (strictly complex, 3 != 3bar); su(2) doublet >=1 (pseudoreal); so(3) vector >=1 (real, B=I). Color su(3) is NOT the complexification of the spatial so(3) 3-frame.\n       invariant-bilinear nullspace: su(3)=0 (complex), su(2)=1 (pseudoreal), so(3)_vec=1 (real)\n\nSCORECARD PASS=4 FAIL=0\nrunner_check_breakdown = {A: 4, B: 0, C: 0, D: 0, total_pass: 4}\nVERDICT (open gate; the FOUR tested discriminators do not close it): each of the four discriminators\nchecked here is BLIND to, or CIRCULAR with, the gauging selection -- maximality cannot distinguish\ndim-12 from u(6); anomaly is a one-sided filter; epsilon is blind to the coupling chirality; color is\ncomplex while spatial rotation is real. So the gauging selection (which symmetry is gauged + the\nphysical-color identification MR_color + chiral su(2)_L) is NOT closed by these four -- it is an OPEN\nGATE, not a proven irreducible no-go (closing it as a no-go would need the full N1-N8 route\nenumeration with retained-authority failures, beyond these four checks). The factor-preserving algebra it\nsits on is itself conditional on the SUPPLIED carrier and factor-locality/MR_color premise. Audit lane\nsets the status.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T113327Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

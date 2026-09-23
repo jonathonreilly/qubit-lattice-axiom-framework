@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_wilson_full_cube_transfer_geometry_check_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_wilson_full_cube_transfer_geometry_check_2026_09_07.py",
+ "seed": 63204,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "769d150d",
+ "started_utc": "20260923T113324Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=31 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0559088f757f9e9ba2f850dc08a221d570fc0176ddedc26608cff3fd96c75cd9",
+ "stdout_tail": "per_element: exact12edge spatial cube and32edge full slab; no marked-face stripping.\nper_site: tree7 boundary cycles5; full17chords split5+5+7.\nper_mode: eight colors with global Ad; generalized4 multiplicity3 and6 multiplicity2.\nper_block: symbolic temporal Schur complement and three separate metric/dimension checks.\nlattice_wide: finite supplied action; analytical uniform limit is not numerically certified here.\nTOTAL: PASS=31 FAIL=0; original28 plus supplementary3.\nResources: 0.599907s; 66.594 MiB; limits180s/180MiB.\nsource_sha256=3df2d3e77afe46c188700d41cf6bf515f38b828ffa19564bd2c8843e073398b5\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T113324Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_wilson_full_cube_transfer_geometry_check_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

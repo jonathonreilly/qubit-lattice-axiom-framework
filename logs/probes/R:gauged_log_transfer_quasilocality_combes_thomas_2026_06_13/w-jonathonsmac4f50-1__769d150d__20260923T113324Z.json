@@ -1,0 +1,35 @@
+{
+ "task": "R:gauged_log_transfer_quasilocality_combes_thomas_2026_06_13",
+ "type": "runner-reexecution",
+ "lane": "gauged",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauged_log_transfer_quasilocality_combes_thomas_2026_06_13.py",
+ "seed": 63204,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "769d150d",
+ "started_utc": "20260923T113324Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=36 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "78eabdd4f28e132c9e45eeb5ae9323e9fe8cb962a64199d50a8cd50a4893c29d",
+ "stdout_tail": "SS] sum-of-squares carrier: kernel quasilocal (same CT conclusion)\n         min 2D rate = 0.8866\n  [PASS] sum-of-squares carrier additionally preserves even-sublattice parity\n         max |H[0, odd-component z]| = 9.3e-17 (parity intact)\n\n============================================================================\nF1/F2  falsification: gap and finite range are load-bearing\n============================================================================\n  [PASS] F1: m=0 closes the gap -> power-law kernel (power fit beats exponential)\n         m=0: power R^2 0.9998 (+0.1131 vs exp) exponent -2.014; m=0.3: exp beats power by +0.0625 (gap restores exp decay)\n  [PASS] F2: long-range covariant term injects a range-R0 kernel bump >> the CT-compliant control\n         |kernel| at R0=10: long-range 9.741e-02 vs control 2.506e-04 = 389x (finite-range premise is load-bearing; control alone would not trip a loose threshold)\n\n============================================================================\nSUMMARY: PASS=36 FAIL=0\n============================================================================\n\nEvery number (gap floor m^2, ceiling m^2+d^2, pinned CT lower bound, kernel\nrates, arcsinh(m) reduction, gauge-invariance) is derived in-runner from explicit\noperators; Combes-Thomas and the contour are reproved (no literature constant\nimported). Fixed-background single-particle sector; the U-integrated dynamical\ncase, the sharp gauged rate, and the many-body Lieb-Robinson lightcone remain open.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T113325Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauged_log_transfer_quasilocality_combes_thomas_2026_06_13.txt against the .txt beside this log"
+  ]
+ }
+}

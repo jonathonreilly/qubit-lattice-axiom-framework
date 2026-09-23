@@ -1,0 +1,35 @@
+{
+ "task": "R:generation_count_is_spatial_dimension_on_k1_undefined_on_k0_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "generation",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/generation_count_is_spatial_dimension_on_k1_undefined_on_k0_check_2026_09_03.py",
+ "seed": 63259,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "769d150d",
+ "started_utc": "20260923T113419Z",
+ "elapsed_s": 2.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=26 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "612af82c21079a5b9c569402ff599c2ff1d628b3c064eb467688f4a8bc4140e2",
+ "stdout_tail": "dim 4 with characters -1 in exactly one slot; algebra dim 16 = dim M_4(C), commutant dim 1: irreducible\nPASS: T6-k0-d2 d=2: H_K0 zero modes [6, 10, 14] (finite census); corners on the zero set 2 (those with hw = d/2); the level holding the hw=1 corners has dim [6, 10, 14] with algebra dim [20, 36, 52] < n^2, orbit sizes [2, 4, 4, 4] at L=8: reducible\nPASS: T6-k0-d4 d=4: H_K0 zero modes [70, 198] (finite census); corners on the zero set 6 (those with hw = d/2); the level holding the hw=1 corners has dim [28, 68] with algebra dim [208, 528] < n^2, orbit sizes [4, 8, 8, 8, 8, 8, 8, 8, 8] at L=6: reducible\nPASS: T6-count-table hw=1 corner multiplet on K1 has size C(d,1) = d: {2: 2, 3: 3, 4: 4}; K0 energy alone does not isolate it in the tested d=2,3,4 rows, but a central corner selector exists; no physical count is derived\nPASS: G1-complement-crossings actual noncorner n=(3,2,2): (lambda, ambient multiplicity, complement clearance, residual)=[(0.4, 2, 8.881784197001252e-16, 1.7511547518113968e-15), (0.6666666666666666, 4, 1.301959543746946e-16, 1.8662070523258e-15)]; corner counts 1 and 3 gain a noncorner at 2/5 and 2/3; no interval isolation inferred\nPASS: G2-central-corner-projector K0 level dimension 15, central corner rank 3; idempotence/Hermitian/R/diagonal/selection/scalar-collapse residuals [0.0, 0.0, 0.0, 5.773504117757459e-16, 7.97896279221563e-16, 0.0]; momentum projectors commute with this diagonal restriction; physical selection remains supplied\nTOTAL: PASS=26 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T113421Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/generation_count_is_spatial_dimension_on_k1_undefined_on_k0_check_2026_09_03.txt against the .txt beside this log"
+  ]
+ }
+}

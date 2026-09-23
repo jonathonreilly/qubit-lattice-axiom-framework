@@ -1,0 +1,31 @@
+{
+ "task": "R:generated_finite_composition_minimality_2026_07_13",
+ "type": "runner-reexecution",
+ "lane": "generated",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/generated_finite_composition_minimality_2026_07_13.py",
+ "seed": 63212,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "769d150d",
+ "started_utc": "20260923T113332Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "dfc75db50904e7cb476fed2125dbb67cbeed6093702b308605e66d01d4e2e025",
+ "stdout_tail": " rank 64\nPASS B 3-site products are exactly Hilbert-Schmidt orthogonal\nPASS B distinct local images commute\nPASS B products of local images reproduce the full Pauli basis\n\n===============================================================================\nC - Generatedness excludes two independent extension types\n===============================================================================\nPASS C direct-sum local-product rank remains 16\nPASS C direct-sum physical algebra has constructed complex dimension 32\nPASS C direct-sum central sector is outside generated span\nPASS C spectator-factor local-product rank remains 16\nPASS C spectator physical algebra M8 has constructed complex dimension 64\nPASS C spectator observable is outside generated span\n\n===============================================================================\nD - Category-relative equivalence classification\n===============================================================================\nPASS D note marker: necessary and sufficient for the ordinary abstract tensor product\nPASS D note marker: category-relative algebraic equivalence\nPASS D note marker: canonical-law domain\nPASS D note marker: operational extensionality\nPASS D note marker: irreducibility/duality theorem\nPASS D note marker: no universal physical-minimality claim\n\n===============================================================================\nTOTAL PASS=25 FAIL=0\nRESULT: PASS\nBOUNDARY: finite-dimensional complex C*-algebra theorem; no axiom edit is made\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T113333Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

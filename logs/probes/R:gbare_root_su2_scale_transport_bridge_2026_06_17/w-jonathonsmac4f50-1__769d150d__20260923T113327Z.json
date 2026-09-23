@@ -1,0 +1,35 @@
+{
+ "task": "R:gbare_root_su2_scale_transport_bridge_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "gbare",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gbare_root_su2_scale_transport_bridge_2026_06_17.py",
+ "seed": 63207,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "769d150d",
+ "started_utc": "20260923T113327Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=91, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1c879ad554dcd4a5b5a1a96728d667ba7b6e49ea18154cfdfb801399c67cb941",
+ "stdout_tail": "ket iff c=1\n  [PASS] root (0,2): positive scaling c=3 preserves unit su2 bracket iff c=1\n\n----------------------------------------------------------------------------------------\nPart 4: conjugacy and trace-surface controls\n----------------------------------------------------------------------------------------\n  [PASS] permutation (0, 1, 2) preserves root SU2 trace scale\n  [PASS] permutation (0, 2, 1) preserves root SU2 trace scale\n  [PASS] permutation (1, 0, 2) preserves root SU2 trace scale\n  [PASS] permutation (1, 2, 0) preserves root SU2 trace scale\n  [PASS] permutation (2, 0, 1) preserves root SU2 trace scale\n  [PASS] permutation (2, 1, 0) preserves root SU2 trace scale\n  [PASS] all graph label permutations preserve the root SU2 scale\n  [PASS] full matter tensor trace doubles the gauge trace\n  [PASS] V3 gauge trace is half the full matter trace\n\n----------------------------------------------------------------------------------------\nPart 5: lane conclusion\n----------------------------------------------------------------------------------------\n  [PASS] root SU2 scale transport closes inside the finite V3 packet\n  [PASS] packet does not claim parent g_bare promotion\n  [PASS] physical color naming is outside the proof\n  [PASS] Wilson and beta claims are outside the proof\n\n========================================================================================\n  TOTAL: PASS=91, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T113327Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

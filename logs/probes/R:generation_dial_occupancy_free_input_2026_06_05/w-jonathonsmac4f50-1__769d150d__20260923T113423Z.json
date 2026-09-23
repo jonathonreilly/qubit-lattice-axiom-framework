@@ -1,0 +1,36 @@
+{
+ "task": "R:generation_dial_occupancy_free_input_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "generation",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/generation_dial_occupancy_free_input_2026_06_05.py",
+ "seed": 63262,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "769d150d",
+ "started_utc": "20260923T113423Z",
+ "elapsed_s": 0.2,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=47 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "90d6bf74527313adfa2e765d4fc50c0b01c635a02397f2e30c12494d8ab227a0",
+ "stdout_tail": "inct r -> distinct Q) (dQ/dr = 2/3 > 0)\n[PASS] [A] STRUCTURE derived, OCCUPANCY free: r is the lone per-sector real input (one real parameter r(s) per sector on the derived axis)\n[PASS] [B] sector-ladder r(s)=2^(s-1) is a relabel of free occupancy (s=1 -> r=1) (ladder is an indexing convention, not a derivation)\n\n=== note boundary / honesty guard ===\n[PASS] [A] note contains: Generation Koide data reduces to a single derived modulus per sector\n[FAIL] [A] note contains: Claim type:** theorem\n[PASS] [A] note contains: r = |b|^2/a^2\n[PASS] [A] note contains: onto\n[PASS] [A] note contains: exactly one real modulus\n[PASS] [A] note contains: Record explicitly supplies no\n[PASS] [A] note contains: one real modulus per sector\n[PASS] [A] note omits banned phrase: T1\n[PASS] [A] note omits banned phrase: T2\n[PASS] [A] note omits banned phrase: wall-blocked\n[PASS] [A] note omits banned phrase: closes the route\n[PASS] [A] note omits banned phrase: last route\n[PASS] [A] note omits banned phrase: exhausted\n[PASS] [A] note does not self-claim retained tier: Status:** retained\n[PASS] [A] note does not self-claim retained tier: Claim type:** retained\n[PASS] [A] note does not self-claim retained tier: this result is retained\n[PASS] [A] note does not self-claim retained tier: promote to retained\n[PASS] [A] all 'retained' mentions are sibling no-go provenance (not self-tier) (non-provenance 'retained' count = 0)\n\nGENERATION_KOIDE_SINGLE_MODULUS_REDUCTION boundary certificate: FAIL\nPASS=47 FAIL=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T113423Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'PASS=47 FAIL=1' vs cache 'PASS=48 FAIL=0'"
+  ]
+ }
+}

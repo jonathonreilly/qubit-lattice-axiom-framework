@@ -1,0 +1,32 @@
+{
+ "task": "R:dressed_spoke_parity_gauge_cycle273_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "dressed",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/dressed_spoke_parity_gauge_cycle273_2026_07_17.py",
+ "seed": 63078,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "769d150d",
+ "started_utc": "20260923T113118Z",
+ "elapsed_s": 8.1,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "dcd7f424acdcde56b894f7cd3ac97330b8897b929a9371b0ad8860b52bee9e85",
+ "stdout_tail": "al_rank': 375, 'gauge_Gram_rank': 124, 'gauge_center_rank': 251, 'gauge_anticommutators': 1875, 'subsystem_reduction': 313, 'subsystem_exponent': 561, 'target_exponent': 750, 'reference_parity_increment': 1, 'quartic_plaquettes': 375, 'quartic_rank_mod_base': 248, 'quartic_mutual_anticommutators': 0, 'quartic_onsite_parity_leakage': 0}, {'L': 6, 'N': 216, 'gauge_generators': 648, 'gauge_logical_rank': 648, 'gauge_Gram_rank': 214, 'gauge_center_rank': 434, 'gauge_anticommutators': 3240, 'subsystem_reduction': 541, 'subsystem_exponent': 970, 'target_exponent': 1296, 'reference_parity_increment': 1, 'quartic_plaquettes': 648, 'quartic_rank_mod_base': 430, 'quartic_mutual_anticommutators': 0, 'quartic_onsite_parity_leakage': 0}]\nPASS the predecessor Cycle-230 mass/contact/seam fixture remains exact but no physical intertwiner is claimed :: {'beta': -0.3, 'g': 0.37, 'rest_mass_predecessor': 0.4534056541748851, 'principal_sea_rank_predecessor': 73, 'E_G_coarse_equals_G_physical_E': False, 'free_contact_seam_intertwiner': 'not reached because no tested route simultaneously closes covariance, commuting rank, and matter algebra'}\nPASS the bounded Pauli result leaves larger, non-Pauli, and multicell routes live without axiom pressure :: {'authority': 'none', 'audit': 'unset', 'larger_register': 'live', 'non_Pauli': 'live', 'multicell_dressing': 'live', 'coherent_gauge_data_are_Records': False, 'compiler_schedule_is_physical_time': False, 'axiom_pressure': False}\nSUMMARY PASS 10 FAIL 1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T113126Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

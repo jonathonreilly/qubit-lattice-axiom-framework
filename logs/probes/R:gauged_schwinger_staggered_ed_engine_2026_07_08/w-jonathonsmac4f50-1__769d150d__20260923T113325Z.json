@@ -1,0 +1,34 @@
+{
+ "task": "R:gauged_schwinger_staggered_ed_engine_2026_07_08",
+ "type": "runner-reexecution",
+ "lane": "gauged",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauged_schwinger_staggered_ed_engine_2026_07_08.py",
+ "seed": 63205,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "769d150d",
+ "started_utc": "20260923T113325Z",
+ "elapsed_s": 1.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e7ced744ef3ad4cb170836ef408bee83bcfe66831b5cceab1e2bf4340ad44831",
+ "stdout_tail": "CHECKS-1-4 CHECK-01=ok(rule=tail, field=0.0e+00, comm=4.9e-16, Q=0.0e+00, E=0.0e+00); CHECK-02=ok(band=6.7e-16, gap=2.8e-14); CHECK-03=ok(d23=(-9.33e-15,-2.13e-14), d34=(+1.38e-14,+7.11e-14)); CHECK-04=ok(g0_holonomy_shifts_rotor=true)\nCHECK-06 ok(free_err=7.0e-15, g1_gap_T2=1.5469429, full=1.3284641)\nTOTAL PASS elapsed=1.39s flags=Q0-ring-Gauss,finite-W-translation-interior,g0-Uholo-shifts-W\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T113326Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run 'TOTAL PASS elapsed=1.39s flags=Q0-ring-Gauss,finite-W-translation-interior,g0-Uh' vs cache 'TOTAL PASS elapsed=2.20s flags=Q0-ring-Gauss,finite-W-translation-interior,g0-Uh'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauged_schwinger_staggered_ed_engine_2026_07_08.txt against the .txt beside this log"
+  ]
+ }
+}

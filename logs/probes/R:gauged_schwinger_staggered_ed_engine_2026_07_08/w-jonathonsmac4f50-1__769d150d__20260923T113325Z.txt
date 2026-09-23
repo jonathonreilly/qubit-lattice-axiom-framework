@@ -1,0 +1,3 @@
+CHECKS-1-4 CHECK-01=ok(rule=tail, field=0.0e+00, comm=4.9e-16, Q=0.0e+00, E=0.0e+00); CHECK-02=ok(band=6.7e-16, gap=2.8e-14); CHECK-03=ok(d23=(-9.33e-15,-2.13e-14), d34=(+1.38e-14,+7.11e-14)); CHECK-04=ok(g0_holonomy_shifts_rotor=true)
+CHECK-06 ok(free_err=7.0e-15, g1_gap_T2=1.5469429, full=1.3284641)
+TOTAL PASS elapsed=1.39s flags=Q0-ring-Gauss,finite-W-translation-interior,g0-Uholo-shifts-W

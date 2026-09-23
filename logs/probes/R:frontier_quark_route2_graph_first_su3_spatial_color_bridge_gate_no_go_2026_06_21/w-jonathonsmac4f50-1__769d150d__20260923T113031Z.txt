@@ -1,0 +1,70 @@
+Route-2 graph-first SU(3) spatial-color bridge gate
+Status: no-go for the graph-first spatial-color escape; not an audit verdict.
+TRACE: negative_route_pruning
+
+PART 1: graph-first SU(3) steelman markers
+PASS: GRAPH_FIRST_SU3_INTEGRATION_NOTE.md exists
+PASS: GRAPH_FIRST_SU3_INTEGRATION_NOTE.md contains marker: base splits as `3 \oplus 1`
+PASS: GRAPH_FIRST_SU3_INTEGRATION_NOTE.md contains marker: compact semisimple part is:
+PASS: GRAPH_FIRST_SU3_INTEGRATION_NOTE.md contains marker: su(3)
+PASS: NATIVE_GAUGE_CLOSURE_NOTE.md exists
+PASS: NATIVE_GAUGE_CLOSURE_NOTE.md contains marker: graph-first selected-axis structural `su(3)`
+PASS: NATIVE_GAUGE_CLOSURE_NOTE.md contains marker: nonabelian gauge-structure surface
+PASS: NATIVE_GAUGE_CLOSURE_NOTE.md contains marker: Excluded:
+FAIL: CTE_RCONN_SPATIAL_TENSOR_COLOR_BRIDGE_IS_A_CROSS_DOMAIN_COINCIDENCE_NARROW_NO_GO_NOTE_2026-06-08.md exists
+FAIL: CTE_RCONN_SPATIAL_TENSOR_COLOR_BRIDGE_IS_A_CROSS_DOMAIN_COINCIDENCE_NARROW_NO_GO_NOTE_2026-06-08.md contains marker: only escape
+FAIL: CTE_RCONN_SPATIAL_TENSOR_COLOR_BRIDGE_IS_A_CROSS_DOMAIN_COINCIDENCE_NARROW_NO_GO_NOTE_2026-06-08.md contains marker: N_c=3
+FAIL: CTE_RCONN_SPATIAL_TENSOR_COLOR_BRIDGE_IS_A_CROSS_DOMAIN_COINCIDENCE_NARROW_NO_GO_NOTE_2026-06-08.md contains marker: spatial
+FAIL: CTE_RCONN_SPATIAL_TENSOR_COLOR_BRIDGE_IS_A_CROSS_DOMAIN_COINCIDENCE_NARROW_NO_GO_NOTE_2026-06-08.md contains marker: color
+PASS: CUBIC_ANISOTROPY_SECTIONS_SO3_FRAME_BOUNDED_THEOREM_NOTE_2026-06-17.md exists
+PASS: CUBIC_ANISOTROPY_SECTIONS_SO3_FRAME_BOUNDED_THEOREM_NOTE_2026-06-17.md contains marker: spin-2
+PASS: CUBIC_ANISOTROPY_SECTIONS_SO3_FRAME_BOUNDED_THEOREM_NOTE_2026-06-17.md contains marker: E (2-dim)
+PASS: CUBIC_ANISOTROPY_SECTIONS_SO3_FRAME_BOUNDED_THEOREM_NOTE_2026-06-17.md contains marker: T2 (3-dim)
+
+PART 2: strongest same-3-space decomposition
+PASS: End(R^3) has dimension 9
+PASS: scalar plus traceless split is 1 + 8
+PASS: traceless-adjoint split is T1 + l2 = 3 + 5
+PASS: spin-2 l2 split is E + T2 = 2 + 3
+PASS: F_adj is total traceless-adjoint over total End
+PASS: singlet fraction is the complementary 1/9
+PASS: l2 fraction of total End is 5/9, not 8/9
+PASS: T2 fraction of total End is 1/3, not 8/9
+PASS: E fraction of total End is 2/9, not 8/9
+PASS: T2/E internal split ratio is 3/2, not 8/9
+PASS: E/T2 internal split ratio is 2/3, not 8/9
+PASS: T2/l2 internal fraction is 3/5, not 8/9
+PASS: E/l2 internal fraction is 2/5, not 8/9
+PASS: l2/adjoint fraction is 5/8, not 8/9
+
+PART 3: bridge failure under the steelman
+PASS: only adjoint_over_total equals 8/9
+      ['adjoint_over_total']
+PASS: no E/T2 or l2-internal ratio equals 8/9
+      []
+PASS: there is no sign in dimension counting
+      dimension fractions are nonnegative; c_TE needs a signed orientation
+PASS: typed graph-first link routes 8/9 to total adjoint count, not E/T2 readout
+
+PART 4: companion note hygiene
+FAIL: QUARK_ROUTE2_GRAPH_FIRST_SU3_SPATIAL_COLOR_BRIDGE_GATE_NO_GO_NOTE_2026-06-21.md exists
+FAIL: note contains marker: **Actual current-surface status:** no-go
+FAIL: note contains marker: This is not an audit verdict
+FAIL: note contains marker: Strongest Steelman
+FAIL: note contains marker: Theorem
+FAIL: note contains marker: negative_route_pruning
+FAIL: note contains marker: does not close the parent S3/Route-2 open gate
+PASS: note avoids overclaim: parent closure
+PASS: note avoids overclaim: endpoint derivation
+PASS: note avoids overclaim: rho_E derivation
+PASS: note avoids overclaim: permanent no-go
+
+PART 5: N5 execution certificate
+per_element: checked, and what is resolved here is a count and nothing more -- no matrix element of End(R^3) is ever written down, no basis is constructed and no amplitude is evaluated; the nine elements enter only as the integer 9 against which the sector sizes 1, 3, 5, 2 and 3 are balanced, so every statement in this runner is a dimension statement rather than a statement about any entry.
+per_site: checked and not executed -- the three in R^3 arrives as the spatial axis count granted by the graph-first steelman, not as a set of lattice positions, and the runner builds no star, no neighbor relation and no coordinate; a bridge gate phrased entirely in sector dimensions has no place for a site index.
+per_mode: resolved sector by sector, which is the real content here -- the scalar A1 carries 1, the antisymmetric T1 carries 3, the symmetric-traceless spin-2 sector carries 5, and inside that sector the cubic E carries 2 against T2's 3; thirteen distinct ratios are then formed among these modes and each is compared against 8/9 individually, with exactly one match and it is not an E/T2 ratio.
+per_block: resolved as an exact two-stage partition -- 9 = 1 + 3 + 5 splits End(R^3) into singlet and traceless adjoint blocks, and 5 = 2 + 3 splits the spin-2 block into its cubic sub-blocks, so 8/9 is pinned as the adjoint block over the whole space while c_TE is an internal ratio of the spin-2 block; every block ratio formed is strictly positive, so none of them can carry the sign c_TE needs.
+lattice_wide: checked and not executed -- the argument would read identically at any system size, because it never leaves a single nine-dimensional matrix space and constructs neither a volume, a site count nor a limit of any kind; the global object still missing is the extra readout functional or orientation selector the verdict names, which no dimension count can supply.
+
+TOTAL: PASS=34, FAIL=12
+VERDICT: graph-first bridge gate checks failed.

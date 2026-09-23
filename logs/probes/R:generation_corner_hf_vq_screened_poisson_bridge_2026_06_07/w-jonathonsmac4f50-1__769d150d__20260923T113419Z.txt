@@ -1,0 +1,26 @@
+==============================================================================
+GENERATION CORNER HF Vq SCREENED-POISSON BRIDGE  [exact support]
+==============================================================================
+
+-- Source and dependency surface checks --
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/generation_corner_hf_vq_screened_poisson_bridge_2026_06_07.py", line 286, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/generation_corner_hf_vq_screened_poisson_bridge_2026_06_07.py", line 269, in main
+    source_checks()
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/generation_corner_hf_vq_screened_poisson_bridge_2026_06_07.py", line 160, in source_checks
+    rows = ledger_rows()
+           ^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/generation_corner_hf_vq_screened_poisson_bridge_2026_06_07.py", line 143, in ledger_rows
+    data = json.loads(LEDGER.read_text())
+                      ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-1/docs/audit/data/audit_ledger.json'

@@ -1,0 +1,36 @@
+{
+ "task": "R:frontier_quark_route2_e_center_single_adjoint_line_selector_conditional_2026_06_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_quark_route2_e_center_single_adjoint_line_selector_conditional_2026_06_21.py",
+ "seed": 63031,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "769d150d",
+ "started_utc": "20260923T113031Z",
+ "elapsed_s": 0.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=26 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "59e94074d07825fa1f6d997a1cfe43684eca3902613a0d11d04efb8e76ef85bd",
+ "stdout_tail": ". Falsifiers and same-number traps\n[PASS] reading the selected line itself fails the target\n       line readout: q_E=9/8, rho_E=3/4\n[PASS] reading the full adjoint also fails the target\n       full readout: q_E=2, rho_E=6\n[PASS] using F_adj=8/9 directly as the E-excess fails the target\n       F_adj as excess: q_E=17/9, rho_E=16/3, c_TE=-15/17\n\nD. Current-surface firewall\n[FAIL] S3 gate names the same missing E-side entry\n[PASS] readout authority defines q_E through beta_E/alpha_E and the denominator 6\n[PASS] naturality boundary says rho_E remains free without E-center/source/readout input\n[PASS] E-center blindness note says positive repair must see the E-center column\n[PASS] source-domain bridge note does not contain the single-line complement primitive\n[PASS] Rconn authority keeps 8/9 as F_adj support, not as the E-excess\n\nE. Note/status firewall\n[PASS] note marks actual status as conditional-support\n[PASS] note marks proposal language as disallowed\n[PASS] note names the absent primitive explicitly\n[PASS] note avoids retained/proposal overclaim phrases\n\nTOTAL: PASS=26 FAIL=1\nVERDICT: conditional-support only.  A typed source-domain primitive that selects one adjoint line and reads the normalized complement rank would force e_E=7/8, q_E=15/8, rho_E=21/4, and c_TE=-8/9 exactly; rank 7 is unique among integer adjoint-projector ranks.  The current source bank does not supply this single-line selector, so the S3/Route-2 endpoint triple remains open on the actual current surface.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T113031Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=26 FAIL=1' vs cache 'TOTAL: PASS=27 FAIL=0'"
+  ]
+ }
+}

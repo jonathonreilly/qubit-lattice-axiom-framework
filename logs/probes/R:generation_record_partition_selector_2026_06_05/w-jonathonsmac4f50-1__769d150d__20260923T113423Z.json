@@ -1,0 +1,35 @@
+{
+ "task": "R:generation_record_partition_selector_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "generation",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/generation_record_partition_selector_2026_06_05.py",
+ "seed": 63263,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "769d150d",
+ "started_utc": "20260923T113423Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=25 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3bcf5d98dad4f8c21108cf52d6d79177f84da14fd338765475b51bd8dfd25c4f",
+ "stdout_tail": "ear in the real central idempotent list\n[PASS] P3.4 K-stable complex-sector unions are exactly orbit unions\n       K-stable unions=[(), ('0',), ('+', '-'), ('0', '+', '-')]\n[PASS] P4.1 general K-real C3-invariant Hermitian observable is alpha I + beta(C+C^2)\n[PASS] P4.2 K-real central observable has one singlet eigenvalue and one doublet eigenvalue\n       lambda0=alpha + 2*beta; lambda1=alpha - beta\n[PASS] P4.3 faithful character projectors have equal eigenvalue for every K-real central observable\n[PASS] P4.4 J=i(C-C^2) is Hermitian and C3-invariant\n[PASS] P4.5 J is K-odd, so it is not a K-real record observable\n[PASS] P4.6 J is exactly the doublet-splitting orientation operator\n       charpoly=lambda*(lambda**2 - 3)\n[PASS] P4.7 J assigns opposite eigenvalues to the faithful sectors\n       mu_plus=-sqrt(3); mu_minus=sqrt(3)\n[PASS] P5.1 Record K/CPT orbit alphabet has two letters with dimensions 1 and 2\n       [('singlet', 1), ('doublet', 2)]\n[PASS] P5.2 three complex letters are a non-K-stable refinement, not the native Record alphabet\n       [('chi0', 1), ('chi_plus', 1), ('chi_minus', 1)]\n[PASS] P5.3 partition selector does not determine weights or dynamics\n       it selects P0|P1 only; block-count vs dimension weights and arrows remain separate gates\n\nSCORECARD PASS=25 FAIL=0\nFINDING: with the supplied C3 carrier and fixed K/CPT conjugation,\n         Record-compatible central sectors are uniquely P0 | P1.\n         Splitting the doublet requires a K-odd orientation import.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T113424Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

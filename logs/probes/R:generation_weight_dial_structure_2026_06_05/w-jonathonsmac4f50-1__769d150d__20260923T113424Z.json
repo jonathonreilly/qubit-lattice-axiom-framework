@@ -1,0 +1,34 @@
+{
+ "task": "R:generation_weight_dial_structure_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "generation",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/generation_weight_dial_structure_2026_06_05.py",
+ "seed": 63264,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "769d150d",
+ "started_utc": "20260923T113424Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8d7e48c9def7d2128e098203eb1b6216f544d951f65265ba6e28333fe27c0864",
+ "stdout_tail": "n/dimension: weights (1,2))\n[PASS] S4.5 block-count endpoint => kappa = a^2/|b|^2 = 2 (the det_C value)\n[PASS] S4.6 Born/dimension endpoint => kappa = a^2/|b|^2 = 1 (the det_R value)\n[PASS] S5.1 dr/ds = 2^(s-1) ln 2 > 0 for all real s (strictly increasing)\n       dr/ds = 2**(s - 1)*log(2); strictly positive everywhere -> r(s) is a monotone dial\n[PASS] S5.2 r is strictly monotone => the two endpoints r(0)=1/2 < r(1)=1 are distinct and ordered\n[PASS] S5.3 over s in [0,1], r sweeps exactly [1/2, 1] (the two canonical measures bound the dial)\n       block-count (r=1/2) and Born (r=1) are the two endpoints; the interior s in (0,1) is a continuum of intermediate weightings\n[PASS] S5.4 log2 r(s) = s - 1 (the dial is exactly log-linear in the weight exponent s)\n[PASS] S5.5 Record readout is block-additive: total = singlet_power + doublet_power = a^2 + 2|b|^2\n       finite additivity allows the singlet and doublet powers to be summed; endpoint normalizations are separate conventions\n\n========================================================================\nSCORECARD: 28 PASS / 0 FAIL\n========================================================================\nTHEOREM GENERATION_WEIGHT_DIAL_STRUCTURE verified:\n  r(s) = 2^(s-1);  r(0)=1/2 (block-count/det_C);  r(1)=1 (Born/dimension/det_R);\n  strictly increasing; endpoints = the two canonical measures.\n  SCOPE: derives the DIAL STRUCTURE only; the per-sector position s (value of r)\n  is a SEPARATE, genuinely open selection (not fixed here).\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T113424Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

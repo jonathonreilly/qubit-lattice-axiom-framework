@@ -1,0 +1,47 @@
+========================================================================================
+DM SELECTOR RELATIVE-ACTION / RECOVERED-BRANCH SEPARATION SUPPORT THEOREM
+========================================================================================
+
+========================================================================================
+PART 1: THE RELATIVE-ACTION SOURCE IS THE STRONGEST CURRENT INTERNAL SELECTOR
+========================================================================================
+  [FAIL] The existing note still records the observable-relative-action law as the strongest framework-internal selector currently available
+  [PASS] The reconstructed source stays on the exact fixed native seed surface  ((xbar,ybar)=(0.563333,0.306667))
+  [PASS] The reconstructed source still closes the favored transport column exactly  (delta=-2.611502858097e-08, etas=[1.       0.759179 0.48459 ])
+
+========================================================================================
+PART 2: THE RELATIVE-ACTION SOURCE STAYS OFF THE RECOVERED SELECTOR BRANCH
+========================================================================================
+  [PASS] No recovered-bank Hermitian source coincides with the relative-action source  (min Frobenius distance = 2.493911589625)
+  [PASS] No recovered active target coincides with the relative-action target  (min target distance = 0.496150950793)
+  [PASS] The nearest recovered point is the preferred lift, but the gap is still macroscopically nonzero on the audited scale  (nearest recovered index = 0)
+
+========================================================================================
+PART 3: THE RELATIVE-ACTION SOURCE DOES NOT REALIZE THE RECOVERED THRESHOLD CANDIDATE
+========================================================================================
+  [PASS] The earlier threshold note still records the recovered-bank canonical breakpoint tau_b,min
+  [PASS] The relative-action source has its own later middle-branch breakpoint  ((tau_b_sel, tau_b_min)=(0.155402232320736, 0.148036252277635))
+  [PASS] At tau = 0.13 and tau = 0.14 the relative-action source is still on the full-volume shoulder of the witness family  ((V_0.13, V_0.14)=(1.000000000000, 1.000000000000))
+  [PASS] At the recovered-bank canonical breakpoint tau_b,min, the preferred recovered lift still beats the relative-action source  ((V_pref, V_rel)=(0.724251528643, 0.778188287140))
+  [PASS] At its own breakpoint tau_b,rel, the relative-action source becomes strictly smaller than every recovered-bank competitor  ((V_rel, min_bank)=(0.030950556466, 0.580783471954))
+
+========================================================================================
+PART 4: SCIENTIFIC CONSEQUENCE
+========================================================================================
+  [FAIL] The review register still names the finer right-sensitive microscopic selector law as open
+  [PASS] So the remaining selector burden is not just to force minimal relative action abstractly  (the current internal selector and the recovered-bank threshold candidate are distinct exact selector objects)
+  [PASS] What remains is a bridge from the internal selector law to the recovered right-sensitive selector branch, or a finer replacement law  (support narrowing only)
+
+========================================================================================
+RESULT
+========================================================================================
+  The strongest current framework-internal selector law does not yet
+  collapse to the recovered selector branch.
+  Its exact source stays off the recovered bank, carries its own later
+  intrinsic breakpoint, and is not selected by the recovered-bank
+  canonical breakpoint tau_b,min.
+  So the remaining microscopic selector burden is now sharper:
+    bridge the exact internal selector law to the recovered
+    right-sensitive selector branch, or replace it with a finer law.
+
+SUMMARY: PASS=12 FAIL=2

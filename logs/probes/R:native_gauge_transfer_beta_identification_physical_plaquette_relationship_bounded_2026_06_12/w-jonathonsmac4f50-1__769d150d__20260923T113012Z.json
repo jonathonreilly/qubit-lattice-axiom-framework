@@ -1,0 +1,36 @@
+{
+ "task": "R:native_gauge_transfer_beta_identification_physical_plaquette_relationship_bounded_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_gauge_transfer_beta_identification_physical_plaquette_relationship_bounded_2026_06_12.py",
+ "seed": 63012,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "769d150d",
+ "started_utc": "20260923T113012Z",
+ "elapsed_s": 1.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=16, FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3d6880941a5d7f07c7087365dac51e10e32c1c9f0e6e1b068870f17496fa9762",
+ "stdout_tail": " with beta/3\nPASS: source-sector note supplies only a typed diagonal theorem and excludes a Wilson-compression identification\nPASS: plaquette note states the finite Wilson action and average plaquette object\nPASS: plaquette note fences the 0.5934 value as admitted comparison/reuse\nPASS: Wilson positivity note gives the equivalent beta/(2Nc) character argument\nPASS: exact SU(3) beta identification: beta/3 on ReTr equals beta/(2Nc) on chi+chibar :: (beta/3)*(1/2) = 1/6 = beta/(2Nc) with Nc=3\nPASS: exact half-slice identification: exp((beta/2)J) is half of exp((beta/3)ReTr) :: J coefficient beta/12 per half; two halves give 1/6\nPASS: native beta=6 spectral row is stable across finite shells :: B_8: 0.254417486638137, B_12: 0.254417647457574, B_16: 0.254417647457580\nPASS: native beta=6 row matches the recomputed finite spectral ratio :: lambda1/lambda0=0.254417647457580; lambda0=7.907437924080e+01\nPASS: native diagonal uses c_(p,q)/c_(0,0), not the plaquette local-link c/(d c00) :: max c/c00=1.298078395840; dim(1,1)=8\nPASS: native recurrence matrix is symmetric on the tested dominant-weight box :: symmetry error=0.000e+00\nPASS: fixed-lattice gap notes keep beta=6 gap claims separate from this native spectral row\nPASS: relationship note contains the required status-authority block\nPASS: relationship note states same coupling, different objects, and no physical mass-gap claim\nPASS: relationship note records the no-go discipline gate without overreach phrases\nTOTAL: PASS=16, FAIL=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T113013Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=16, FAIL=1' vs cache 'TOTAL: PASS=17, FAIL=0'"
+  ]
+ }
+}

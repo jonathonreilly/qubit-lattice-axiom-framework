@@ -1,0 +1,35 @@
+{
+ "task": "R:generation_dial_local_stability_grammar_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "generation",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/generation_dial_local_stability_grammar_2026_06_05.py",
+ "seed": 63262,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "769d150d",
+ "started_utc": "20260923T113422Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "21b17c9088ccd98edf4689785bc954fa9c7589b034a6c7880274e704df0af890",
+ "stdout_tail": "[PASS] S1.1 dial map r(s)=2^(s-1) is positive and has positive derivative\n[PASS] S1.2 inverse coordinate is s(r)=1+log(r)/log(2)\n       L(r)=log(r)/log(2) + 1\n[PASS] S1.3 L(r(s)) = s\n[PASS] S1.4 r(L(r)) = r for positive r\n[PASS] S2.1 smooth r<->s conjugacy preserves local map multiplier\n       multiplier=alpha\n[PASS] S2.2 smooth r<->s conjugacy preserves local flow linearization\n       flow coefficient=beta\n[PASS] S3.1 sharpening r->2r^2 is s' = 2s\n[PASS] S3.2 reverse branch r->sqrt(r/2) is s' = s/2\n[PASS] S3.3 sharpening is repelling at s=0\n[PASS] S3.4 reverse branch is stable at s=0\n[PASS] S4.1 map grammar classifies by |F'(s*)|\n       {'contracting map': 'stable', 'identity map': 'neutral', 'expanding map': 'repelling', 'orientation-flip contraction': 'stable', 'orientation-flip expansion': 'repelling'}\n[PASS] S4.2 flow grammar classifies by sign of f'(s*)\n       {'negative linearization': 'stable', 'zero linearization': 'neutral_or_higher_order', 'positive linearization': 'repelling'}\n[PASS] S4.3 local stability grammar does not select which fixed point is physical\n       a separate theorem must identify the physical map/flow and fixed point\n\nSCORECARD PASS=13 FAIL=0\nFINDING: the positive-ratio dial is a clean stability coordinate;\n         local stability is map/flow classification, not value selection.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T113422Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

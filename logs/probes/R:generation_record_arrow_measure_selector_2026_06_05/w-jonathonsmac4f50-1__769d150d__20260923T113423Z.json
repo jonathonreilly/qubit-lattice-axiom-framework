@@ -1,0 +1,35 @@
+{
+ "task": "R:generation_record_arrow_measure_selector_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "generation",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/generation_record_arrow_measure_selector_2026_06_05.py",
+ "seed": 63263,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "769d150d",
+ "started_utc": "20260923T113423Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=21 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "04dc32651b08fa5f67c7c890e81f6ec6b327a3c6d3d316c4f3d54b6b3348dfcd",
+ "stdout_tail": "lock-count weighting\n[PASS] prior.4 gamma=1 prior is dimension/Born weighting (1,2)\n[PASS] arrow.1 relative-entropy arrow derivative is -(s-gamma)(log2)^2 2^s/(1+2^s)^2\n       d/ds[-KL]=(gamma - s)*exp(s*log(2))*log(2)**2/(exp(s*log(2)) + 1)**2\n[PASS] arrow.2 stationary setting is exactly s=gamma\n[PASS] arrow.3 curvature at s=gamma is negative\n       curvature=-exp(gamma*log(2))*log(2)**2/(exp(gamma*log(2)) + 1)**2\n[PASS] endpoint.1 dim^gamma prior stabilizes r*=2^(gamma-1)\n       r*=2**(gamma - 1)\n[PASS] endpoint.2 dim^gamma prior stabilizes Q*=1/3+(2/3)2^(gamma-1)\n       Q*=2**gamma/3 + 1/3\n[PASS] endpoint.3 record-letter arrow gamma=0 stabilizes s=0, r=1/2, Q=2/3\n[PASS] endpoint.4 dimension/Born arrow gamma=1 stabilizes s=1, r=1, Q=1\n[PASS] A5.1 record-letter arrow moves negative s upward and positive s downward\n[PASS] A5.2 dimension/Born arrow moves s=0 upward toward s=1 and s=2 downward\n[PASS] A6.1 discrete relaxation map has fixed point s=gamma\n[PASS] A6.2 relaxation multiplier is 1-lambda\n[PASS] A6.3 half-step relaxation stabilizes both record-letter and dimension priors\n[PASS] A7.1 both gamma=0 and gamma=1 are valid stable supplied arrows\n[PASS] A7.2 the theorem leaves gamma as a free measure/arrow input\n       physical selection of gamma is not supplied by this runner\n\nSCORECARD PASS=21 FAIL=0\nFINDING: a dim^gamma record-arrow prior stabilizes s=gamma.\n         gamma=0 gives Q=2/3; gamma=1 gives Q=1.\n         The physical arrow/measure choice remains the named gate.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T113423Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

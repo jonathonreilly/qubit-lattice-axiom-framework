@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/uniform_ice_layer_units_on_infinite_prisms_zero_flux_transfer_chain_2026_09_23.py
+runner_sha256: f26c3d40371a504e2cc6813e1d6922bed6ebbd05048e57d3fc94618ea563ab9d
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.75
+status: ok
+----- stdout -----
+A. the transfer matrix counts the landed torus
+[PASS] n = 2: trace T^2 = 9600, the landed 2 x 2 x 2 count, and the 2 x 2 x 4 count agrees with a transfer along another axis :: trace T^H for H = 2, 3, 4: 9600, 219776, 23063296; 2 x 4 cross-section with H = 2: 23063296
+B. the flux through the cross-section is conserved
+[PASS] the staggered vertical flux flips sign at every layer, so its size is conserved; the zero-flux sector's block is positive with a simple top eigenvalue :: flux S(v) = sum of (-1)^(x+y) (2 v - 1) over the cross-section; sectors |S| = 0, 2, 4 with 6, 8, 2 states; zero flux: characteristic polynomial (x - 6)(x + 10)(x + 14)^2(x^2 - 64 x + 188), exact from the traces of T^1..T^6 and annihilating the block; top 32 + 2 sqrt 209 = 60.9137, next modulus 14; |S| = 2: +46 and -46; |S| = 4: +18 and -18
+C. long tori select zero flux
+[PASS] on the 2 x 2 x H torus the ice states with flux fall as 2 (46 / 60.91)^H for even H and vanish for odd H :: share with flux for H = 2..16: 0.5575, 0.3992, 0.2713, 0.1747, 0.1077, 0.0644, 0.0378, 0.0219; share x (60.91 / 46)^16 = 1.956
+D. the layer unit's law depends only on the layer below
+[PASS] with zero flux, a layer's law given the layer below and the far end of a long torus tends to one kernel :: largest deviation from P(w | v) = T[v, w] phi(w) / (lambda phi(v)) for H = 4, 8, 12, 16: 4.3e-02, 1.1e-04, 3.1e-07, 8.7e-10; forming the prism layer by layer with this kernel from a zero-flux layer reproduces the limit
+E. odd cross-sections alternate
+[PASS] n = 3: the vertical parity alternates, the top eigenvalues come as a pair plus and minus, and odd tori have no ice states :: 512 layer states; top moduli 3741.95 (twice), next 981.25; trace T^3 = 0 since 3 V / 2 is not an integer on an odd torus; layer units form the prism with the two-step chain
+F. a second cross-section, 2 x 4
+[PASS] n = 2 x 4: the flux is conserved, zero flux dominates, and the layer kernel again forgets the far end :: sectors |S| = 0, 2, 4, 6, 8 with 70, 112, 56, 16, 2 layer states; the zero-flux block squared is positive, top 2401.3316, next modulus 668.3638; flux sectors top at 2059.36, 1273.98, 526.00, 114.00; far-end deviation at H = 16: 6.0e-09
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

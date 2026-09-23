@@ -1,6 +1,6 @@
 {
- "edge_count": 14017,
- "node_count": 6465,
+ "edge_count": 14025,
+ "node_count": 6473,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5630,6 +5630,10 @@
    "deps_hash": "8a36f31932c1",
    "out_degree": 5
   },
+  "formation_unit_sequential_vs_joint_covariant_sets_block_chain_equality_product_fill_visibility_and_glued_unit_hole_dissolution_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
   "formation_weight_energy_dictionary_underdetermination_bounded_theorem_note_2026-08-13": {
    "deps_hash": "35b37fce2461",
    "out_degree": 3
@@ -10690,6 +10694,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "holes_as_unrecorded_sites_unsoldered_order_blind_rules_are_constant_and_the_formation_order_is_visible_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
   "holographic_probe_note_2026-04-11": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -10849,6 +10857,10 @@
   "i3_zero_exact_theorem_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "ice_support_under_nearest_neighbour_formation_vertex_bound_soldered_vertex_records_order_dependent_defects_and_uniform_ice_only_by_conditioning_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "impact_parameter_lensing_note": {
    "deps_hash": "bbfa07daa875",
@@ -14349,6 +14361,18 @@
   "orbit_occupancy_neutrino_out_of_sample_program_note_2026-06-09": {
    "deps_hash": "e6b42e44866e",
    "out_degree": 3
+  },
+  "order_blind_formation_with_zeros_and_holes_never_failing_unsoldered_rules_are_constant_and_hole_rules_have_pair_form_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
+  "order_blind_nearest_neighbour_formation_independence_beyond_neighbours_unsoldered_constancy_and_soldered_escape_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
+  "order_laws_for_extended_soldered_supports_independent_clocks_nucleate_at_positive_density_and_sweeps_have_no_first_formation_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "ordered_lattice_packet_reidentification_note": {
    "deps_hash": "e0d84bfa17f7",
@@ -18086,6 +18110,10 @@
    "deps_hash": "72ebcb79c7d3",
    "out_degree": 7
   },
+  "star_constraints_under_nearest_neighbour_formation_unsoldered_broadcast_bounds_and_soldered_registration_of_the_parity_role_skeleton_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
   "star_supported_bridge_class_note": {
    "deps_hash": "b77af84c23c5",
    "out_degree": 2
@@ -18757,6 +18785,10 @@
   "the_small_mixing_angles_theta_c_and_theta_13_are_c3_breaking_order_parameters_unification_narrow_theorem_note_2026-06-08": {
    "deps_hash": "74d2131f5218",
    "out_degree": 4
+  },
+  "the_soldering_menu_four_actions_of_the_proper_cubic_rotations_on_qubit_possibilities_and_what_each_lets_formation_build_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "the_spatial_half_of_the_metric_is_one_declared_weight_on_the_hop_term_free_fall_and_light_bending_at_factor_two_bounded_theorem_note_2026-09-03": {
    "deps_hash": "ff037768e63b",

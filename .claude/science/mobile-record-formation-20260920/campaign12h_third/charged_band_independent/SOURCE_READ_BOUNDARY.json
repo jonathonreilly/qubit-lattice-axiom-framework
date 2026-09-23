@@ -1,0 +1,48 @@
+{
+  "created_utc": "2026-09-22T23:46:07.262575+00:00",
+  "task": "Blind neutral matter-band and prepared weak-packet check",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/homogeneous_charged_independent/REPORT.md",
+      "bytes": 31112,
+      "sha256": "88bef2c7814bacb3864eee220e245365b3207c9d8f189298f8e8ddf1e13a3582"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/homogeneous_charged_independent/COMPARISON.md",
+      "bytes": 16554,
+      "sha256": "689a0d3bc19054fc5d7f4c95a7d3cf7796a405ccf0f84ec61458e95a9750ddb5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/homogeneous_charged_independent/FINAL_SEAL.json",
+      "bytes": 23742,
+      "sha256": "fdcb0aea3a020ad2c71793dcd50e028e694c26a7c1cd12db590a20ffa9d18c05"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/REPORT.md",
+      "bytes": 21227,
+      "sha256": "97e03699969206594235e727487ef55ab77d0cb201abff5870dc7ac52fe64a93"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/COMPARISON.md",
+      "bytes": 12213,
+      "sha256": "4e0d398024ad892c8e5d878cf0e97bcd10b90a2c9e6135f3b5ede793680d3314"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/FINAL_SEAL.json",
+      "bytes": 15684,
+      "sha256": "381c1a07ff18dbca2019e51eaa086707ac0b11d4d7a1c642e5435b3aeaa0b610"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HOMOGENEOUS_MOBILE_CHARGED_RECORDS_AND_FIELD_DYNAMICS.md",
+      "bytes": 25811,
+      "sha256": "8598d411c9837c4a97ac217de3058803386e83875ea62d0f707f6b9e32fd9b59"
+    }
+  ],
+  "read_boundary": "Only supplied neutral specification and listed previously checked dependencies were used. No CHARGED_RECORD_EXCHANGE_BAND_FIELD_RESPONSE.md, new CHARGED_BAND artifacts, author charged_* runner, finite-rate/repeated-formation, checkpoint, registry or unrelated frontier packet was opened.",
+  "method": "Independent finite matrix perturbation, gauge incidence/Schur complement, local compact section construction and direct Duhamel residual.",
+  "new_external_literature": "None",
+  "failures": [
+    "NumPy/SymPy scalar exponential interoperability error; sole float-cast repair.",
+    "Deliberately interrupted dense rational rank after 360 seconds; exact modular certificate substituted, matching analytic upper bounds."
+  ]
+}

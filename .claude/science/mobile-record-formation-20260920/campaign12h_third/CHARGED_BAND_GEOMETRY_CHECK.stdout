@@ -1,0 +1,97 @@
+{
+  "created_utc": "2026-09-22T23:02:14.847681+00:00",
+  "source_sha256": "192adb9cb90eeea831af86e57518647edbb0bed6343e9d6054e7742739b2e0ee",
+  "star_spectra": [
+    {
+      "dimension": 2,
+      "coordination": 4,
+      "exact_star_eigenvalues": {
+        "0": 1,
+        "2": 2,
+        "4": 1
+      }
+    },
+    {
+      "dimension": 3,
+      "coordination": 6,
+      "exact_star_eigenvalues": {
+        "0": 1,
+        "4": 3,
+        "6": 2
+      }
+    },
+    {
+      "dimension": 4,
+      "coordination": 8,
+      "exact_star_eigenvalues": {
+        "0": 1,
+        "6": 4,
+        "8": 3
+      }
+    },
+    {
+      "dimension": 5,
+      "coordination": 10,
+      "exact_star_eigenvalues": {
+        "0": 1,
+        "8": 5,
+        "10": 4
+      }
+    },
+    {
+      "dimension": 6,
+      "coordination": 12,
+      "exact_star_eigenvalues": {
+        "0": 1,
+        "10": 6,
+        "12": 5
+      }
+    }
+  ],
+  "periodic_pi_flux": [
+    {
+      "periods": [
+        6,
+        6
+      ],
+      "plaquettes": 36,
+      "wrapping_plaquettes": 11,
+      "charge_dependent_exchange_parity_checks": 144,
+      "all_exchange_signs_reversed": true
+    },
+    {
+      "periods": [
+        6,
+        8
+      ],
+      "plaquettes": 48,
+      "wrapping_plaquettes": 13,
+      "charge_dependent_exchange_parity_checks": 192,
+      "all_exchange_signs_reversed": true
+    },
+    {
+      "periods": [
+        6,
+        6,
+        6
+      ],
+      "plaquettes": 648,
+      "wrapping_plaquettes": 198,
+      "charge_dependent_exchange_parity_checks": 2592,
+      "all_exchange_signs_reversed": true
+    },
+    {
+      "periods": [
+        6,
+        8,
+        10
+      ],
+      "plaquettes": 1440,
+      "wrapping_plaquettes": 352,
+      "charge_dependent_exchange_parity_checks": 5760,
+      "all_exchange_signs_reversed": true
+    }
+  ],
+  "analytic_identity": "The electric-basis unitary exp(i*pi*sum_e nu_e E_e) commutes with Gauss and electric energy and maps every R_p to -R_p, since all transported charges are odd integers.",
+  "scope": "An overall magnetic-sign change alone gives a unitarily equivalent rotor target on these even boxes. This is not a derivation of a complete fermionic microscopic model."
+}

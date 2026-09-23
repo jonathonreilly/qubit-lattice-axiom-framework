@@ -1,0 +1,232 @@
+{
+  "created_utc": "2026-09-22T23:47:25.210260+00:00",
+  "status": "Blind bounded reconstruction complete before new author charged-band access; no publication or formal audit status.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/homogeneous_charged_independent/REPORT.md",
+      "bytes": 31112,
+      "sha256": "88bef2c7814bacb3864eee220e245365b3207c9d8f189298f8e8ddf1e13a3582"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/homogeneous_charged_independent/COMPARISON.md",
+      "bytes": 16554,
+      "sha256": "689a0d3bc19054fc5d7f4c95a7d3cf7796a405ccf0f84ec61458e95a9750ddb5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/homogeneous_charged_independent/FINAL_SEAL.json",
+      "bytes": 23742,
+      "sha256": "fdcb0aea3a020ad2c71793dcd50e028e694c26a7c1cd12db590a20ffa9d18c05"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/REPORT.md",
+      "bytes": 21227,
+      "sha256": "97e03699969206594235e727487ef55ab77d0cb201abff5870dc7ac52fe64a93"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/COMPARISON.md",
+      "bytes": 12213,
+      "sha256": "4e0d398024ad892c8e5d878cf0e97bcd10b90a2c9e6135f3b5ede793680d3314"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/weak_field_waves_independent/FINAL_SEAL.json",
+      "bytes": 15684,
+      "sha256": "381c1a07ff18dbca2019e51eaa086707ac0b11d4d7a1c642e5435b3aeaa0b610"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HOMOGENEOUS_MOBILE_CHARGED_RECORDS_AND_FIELD_DYNAMICS.md",
+      "bytes": 25811,
+      "sha256": "8598d411c9837c4a97ac217de3058803386e83875ea62d0f707f6b9e32fd9b59"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/BAND_ALGEBRA_CHECK.stderr",
+      "bytes": 830,
+      "sha256": "0a38e982bb953649b82cfeb8cd0390085780f7ea9b839078aff1a97d93d3c7cf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/BAND_ALGEBRA_CHECK.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/BAND_ALGEBRA_CHECK_RECEIPT.json",
+      "bytes": 1373,
+      "sha256": "1751041a3d7912ae24e421ebe785f6e44d65cf4779bafa08f710c7959394cc4f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/BAND_ALGEBRA_REPAIRED_CHECK.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/BAND_ALGEBRA_REPAIRED_CHECK.stdout",
+      "bytes": 2598,
+      "sha256": "c221ac934b057b50885cae7bc426230b12feb8a636ebf49d6dc94ed117f083b2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/BAND_ALGEBRA_REPAIRED_CHECK_RECEIPT.json",
+      "bytes": 1393,
+      "sha256": "c0f1d980d06f99b9ce262f31ade1f20d5eb03fc183c801ba6e2fede01d138f7b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/BAND_ALGEBRA_RESULTS.json",
+      "bytes": 2598,
+      "sha256": "c221ac934b057b50885cae7bc426230b12feb8a636ebf49d6dc94ed117f083b2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/INPUT_SPEC.md",
+      "bytes": 1308,
+      "sha256": "cca7af975769c248a07d86bd6363845b1e9712a96c9a64264671a97aff6789c7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/REPORT.md",
+      "bytes": 20813,
+      "sha256": "96dccc1aecdf2ca58018c23cd36f70dbbb87775c85a7e8e54683cece9bf68f0e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/RUNTIME.json",
+      "bytes": 269,
+      "sha256": "675859b694c702db15a5a5b305c4ec76b96cc4c2fd77b8ce6ed863e6f404e405"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/SOURCE_READ_BOUNDARY.json",
+      "bytes": 3089,
+      "sha256": "0f1304eb8d0f8b14cdd0a4e82d3eada479339034df3f53e969bfdb7830c5cce7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/TORUS_RESPONSE_CHECK.stderr",
+      "bytes": 4502,
+      "sha256": "350ee3e18b337973966d0ede865ad9e75294f74b36481216de5fca608c74f128"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/TORUS_RESPONSE_CHECK.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/TORUS_RESPONSE_CHECK_RECEIPT.json",
+      "bytes": 1382,
+      "sha256": "f0322b289586d55dfeb74400f45f8ea1825ed84d381f25f673655be6eb153641"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/TORUS_RESPONSE_MODULAR_CHECK.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/TORUS_RESPONSE_MODULAR_CHECK.stdout",
+      "bytes": 5590,
+      "sha256": "da38b568d31ac2ff6bde55907d8341a54c37728cad0470f1c361c92fb1159e48"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/TORUS_RESPONSE_MODULAR_CHECK_RECEIPT.json",
+      "bytes": 1398,
+      "sha256": "963875b1bce9531ca4faefdf4b10cbee5952dac37daadced0dfbcc1df9f3d59d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/TORUS_RESPONSE_RESULTS.json",
+      "bytes": 5590,
+      "sha256": "da38b568d31ac2ff6bde55907d8341a54c37728cad0470f1c361c92fb1159e48"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/band_algebra_check.py",
+      "bytes": 3872,
+      "sha256": "2c760e121fabfada1c8ed3b0717c81c39119c76b3cdd74e918dcd22fd92b7c6a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/failed_attempts/dense_exact_rank/DIAGNOSIS.md",
+      "bytes": 664,
+      "sha256": "120861471ff7c10f7f4ac9611531dce125b45e30c7ecffd0ae4e86d6f528560b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/failed_attempts/dense_exact_rank/torus_response_check.py",
+      "bytes": 6346,
+      "sha256": "f9d3f9fd84acb875b20cb13e3e979ae6a35ba7a4a385d7750708a24916fa5ae8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/failed_attempts/sympy_numpy_scalar/DIAGNOSIS.md",
+      "bytes": 412,
+      "sha256": "3d633c339815c60b528b6b78603943ec386276b1b5c4593067ce78292ea2fe2a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/failed_attempts/sympy_numpy_scalar/band_algebra_check.py",
+      "bytes": 3865,
+      "sha256": "29c9687f33fc62d443e8d80e26d6a43d09fb9ba4c44a90c445240076414b1f5e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/run_control.py",
+      "bytes": 970,
+      "sha256": "4e29220ae7757133c67a35d02d8a5cb5e927c377d51d96242bf2cd83c69c21d3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/seal_reconstruction.py",
+      "bytes": 4836,
+      "sha256": "ed6f544f6ed82e6c2e56dea5710d21fadc080d4cb5ed8616a3c596a8c2382bfb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/torus_response_check.py",
+      "bytes": 7488,
+      "sha256": "18be768a19acfe7734118758963df061bed4bcfade969542cafa39dfc62bf7aa"
+    }
+  ],
+  "counts": {
+    "sources": 7,
+    "artifacts": 26,
+    "total": 33
+  },
+  "main_result": "Relaxed quadratic coefficient Q=p_equal C^T C+p_opposite T^T Pi_cycle T; Hessian 2Q. Gauge kernel exactly range D^T; harmonic stiffness 4 p_opposite(d-1).",
+  "prepared_limit": "Fixed-box compact physical chart packet follows -Delta+x^T Q_U x with sufficient O(sqrt(h)) finite-time norm error for K=omega0 h,J=omega0/h.",
+  "directional_control": "lambda_T(k)=4[p_opposite(d-1)-sin^2(k/2)/(n-1)]; frequencies 2 omega0 sqrt(lambda_T).",
+  "exact_controls": [
+    "Six-dimensional complete neutral matter resolvent: direct 15, relaxation 9, exact relaxed coefficient 6.",
+    "Allowed 6x6 torus rational gauge identities and modular rank37 with matching exact kernel; harmonic 36/17 and axis 35/17,33/17,32/17.",
+    "Allowed 6x6x6 integer incidence identities and numerical harmonic/axis residuals."
+  ],
+  "failures_preserved": [
+    {
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/BAND_ALGEBRA_CHECK_RECEIPT.json",
+        "bytes": 1373,
+        "sha256": "1751041a3d7912ae24e421ebe785f6e44d65cf4779bafa08f710c7959394cc4f"
+      },
+      "archived_source": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/failed_attempts/sympy_numpy_scalar/band_algebra_check.py",
+        "bytes": 3865,
+        "sha256": "29c9687f33fc62d443e8d80e26d6a43d09fb9ba4c44a90c445240076414b1f5e"
+      },
+      "diagnosis": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/failed_attempts/sympy_numpy_scalar/DIAGNOSIS.md",
+        "bytes": 412,
+        "sha256": "3d633c339815c60b528b6b78603943ec386276b1b5c4593067ce78292ea2fe2a"
+      },
+      "exit_code": 1
+    },
+    {
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/TORUS_RESPONSE_CHECK_RECEIPT.json",
+        "bytes": 1382,
+        "sha256": "f0322b289586d55dfeb74400f45f8ea1825ed84d381f25f673655be6eb153641"
+      },
+      "archived_source": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/failed_attempts/dense_exact_rank/torus_response_check.py",
+        "bytes": 6346,
+        "sha256": "f9d3f9fd84acb875b20cb13e3e979ae6a35ba7a4a385d7750708a24916fa5ae8"
+      },
+      "diagnosis": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/failed_attempts/dense_exact_rank/DIAGNOSIS.md",
+        "bytes": 664,
+        "sha256": "120861471ff7c10f7f4ac9611531dce125b45e30c7ecffd0ae4e86d6f528560b"
+      },
+      "exit_code": -2
+    }
+  ],
+  "limits": [
+    "No uniform-volume matter-band gap or packet constants.",
+    "No thermodynamic phase or light-like continuum theorem.",
+    "No new author band, finite-rate formation, registry or checkpoint accessed.",
+    "No full neutral many-body diagonalization on either cubic torus."
+  ],
+  "read_boundary": "Only supplied neutral specification and listed previously checked dependencies were used. No CHARGED_RECORD_EXCHANGE_BAND_FIELD_RESPONSE.md, new CHARGED_BAND artifacts, author charged_* runner, finite-rate/repeated-formation, checkpoint, registry or unrelated frontier packet was opened.",
+  "mutable_exclusion": "CHECKPOINT.md is an unsealed recovery aid."
+}

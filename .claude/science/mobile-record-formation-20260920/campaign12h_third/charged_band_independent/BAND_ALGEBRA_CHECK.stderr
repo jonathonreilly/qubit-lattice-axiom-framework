@@ -1,0 +1,11 @@
+AttributeError: 'Mul' object has no attribute 'exp'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/band_algebra_check.py", line 70, in <module>
+    Hg=potential(0.173,[0]*len(edges),chi_g)
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/band_algebra_check.py", line 57, in potential
+    out[ix[tuple(qq)],j]-=2*np.exp(-1j*t*q[a]*ch[e])
+                            ~~~~~~^^^^^^^^^^^^^^^^^^
+TypeError: loop of ufunc does not support argument 0 of type Mul which has no callable exp method

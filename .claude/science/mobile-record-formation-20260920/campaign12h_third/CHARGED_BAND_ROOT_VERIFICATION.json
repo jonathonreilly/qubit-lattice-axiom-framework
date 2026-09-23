@@ -1,0 +1,38 @@
+{
+  "created_utc": "2026-09-23T00:00:02.533167+00:00",
+  "status": "Root completed source/evidence comparison; no required correction found. Not a formal audit or retained status.",
+  "author_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/CHARGED_BAND_AUTHOR_SEAL.json",
+    "bytes": 8138,
+    "sha256": "c1c6420437307f014d547aaab23e261547d667e15eec0e736a600b0d75abf581"
+  },
+  "independent_pre": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/PRE_COMPARISON_SEAL.json",
+    "bytes": 14649,
+    "sha256": "4c13933f96f93217a20683f9b229d50c7e97fab28a556f90cce0226858ad3e48"
+  },
+  "independent_final": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/FINAL_SEAL.json",
+    "bytes": 27407,
+    "sha256": "7cbff4724371985ca2750c21421fc52597f55a975325e6a2a43698c5d2f70150"
+  },
+  "independent_report": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/REPORT.md",
+    "bytes": 20813,
+    "sha256": "96dccc1aecdf2ca58018c23cd36f70dbbb87775c85a7e8e54683cece9bf68f0e"
+  },
+  "independent_comparison": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/COMPARISON.md",
+    "bytes": 16017,
+    "sha256": "13e3690d631828cc165a6e5eacb818affe6c4067900266cce1fd660bdc1d8867"
+  },
+  "authenticated_final_binding_count": 68,
+  "coverage": "Complete independent REPORT and COMPARISON, all three current scientific checkers and every result field read. Preserved failure diagnoses, full error streams and current/failed source deltas read; sources authenticated. Author note, three author scientific sources/results and failure history already personally read at author seal.",
+  "convention": "Author Hessian M_J=2JQ of independent report; author path average Theta=T/2.",
+  "conclusion": "Exact band Hessian, uniform transverse curvature bounds, fixed-box prepared O(sqrt(h)) packet and even-box sign equivalence agree. Independent selective packet reconstruction agrees to 7.4e-13; no claim of full cubic evolution, thermodynamic gap or volume-uniform packet error.",
+  "preserved_failures": [
+    "NumPy/SymPy scalar cast in initial band check.",
+    "Initial exact dense rank run interrupted, replaced with modular lower certificate and exact null upper bound.",
+    "Author initial cutoff refinement miss preserved and cutoff enlarged without changing assertion."
+  ]
+}

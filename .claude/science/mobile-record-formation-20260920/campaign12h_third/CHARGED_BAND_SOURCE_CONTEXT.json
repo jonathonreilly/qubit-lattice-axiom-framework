@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-09-22T23:03:45.866036+00:00",
+  "status": "Author proof and controls; independent reconstruction pending.",
+  "target_source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HOMOGENEOUS_MOBILE_CHARGED_RECORDS_AND_FIELD_DYNAMICS.md",
+    "bytes": 25811,
+    "sha256": "8598d411c9837c4a97ac217de3058803386e83875ea62d0f707f6b9e32fd9b59"
+  },
+  "target_source_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HOMOGENEOUS_CHARGED_RECORDS_AUTHOR_SEAL.json",
+    "bytes": 6022,
+    "sha256": "ec6d68f95a67c810e442fe52d8e453183f4d9723e55e52df36a0d8010727b9b0"
+  },
+  "proof_scope": "Exact finite-box lowest matter-potential Hessian with uniform geometric bounds; separate prepared-band finite-box weak-kinetic packet theorem; exact overall-sign equivalence on even tori. No complete quantum many-body gap or thermodynamic phase theorem.",
+  "dependencies": "Direct target calculation is independent of the proposed microscopic derivation. Composition requires that derivation and its stated premises.",
+  "external_theorem_imports": "None for the new Hessian, local-star bound or compact packet residual. Finite matrix perturbation and Duhamel steps are explicitly derived.",
+  "stress_test": "Scoped N1-N8 written in Section 6 using already selected no-go-discipline. No exhaustive TOE or charged-matter impossibility claim.",
+  "root_coverage": "Root personally wrote and examined all mathematical arguments and three complete runners; all result fields read. Failed packet cutoff target and diagnostic outputs preserved; no weakened scientific assertion."
+}

@@ -1,0 +1,184 @@
+{
+  "created_utc": "2026-09-22T23:44:41.974444+00:00",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/torus_response_check.py",
+    "sha256": "18be768a19acfe7734118758963df061bed4bcfade969542cafa39dfc62bf7aa"
+  },
+  "controls": [
+    {
+      "dimension": 2,
+      "period": 6,
+      "vertices": 36,
+      "links": 72,
+      "A_sites": 18,
+      "plaquettes": 36,
+      "gauge_and_two_path_incidence_identities_exact_integer": true,
+      "p_equal": "8/17",
+      "p_opposite": "9/17",
+      "gauge_response_residual": 1.3322676295501878e-15,
+      "harmonic_controls": [
+        {
+          "direction": 0,
+          "quadratic_eigenvalue": 2.1176470588235294,
+          "residual": 8.881784197001252e-16
+        },
+        {
+          "direction": 1,
+          "quadratic_eigenvalue": 2.1176470588235294,
+          "residual": 1.3322676295501878e-15
+        }
+      ],
+      "axis_mode_controls": [
+        {
+          "wavevector": [
+            1,
+            0
+          ],
+          "polarization": 1,
+          "quadratic_eigenvalue": 2.058823529411765,
+          "frequency_over_omega0": 2.8697202159177575,
+          "residual": 7.021666937153402e-16
+        },
+        {
+          "wavevector": [
+            2,
+            0
+          ],
+          "polarization": 1,
+          "quadratic_eigenvalue": 1.9411764705882353,
+          "frequency_over_omega0": 2.7865221840769436,
+          "residual": 4.531581184534698e-16
+        },
+        {
+          "wavevector": [
+            3,
+            0
+          ],
+          "polarization": 1,
+          "quadratic_eigenvalue": 1.8823529411764706,
+          "frequency_over_omega0": 2.7439773622801416,
+          "residual": 4.440892098500626e-16
+        }
+      ],
+      "rank_certificate_prime": 1000003,
+      "rank_certificate_scope": "Modular nonzero minors give lower bounds; exact gauge/harmonic null vectors give matching rational upper bounds.",
+      "exact_A_graph_rank": 17,
+      "exact_curl_rank": 35,
+      "exact_Q_rank": 37,
+      "exact_harmonic_eigenvalue": "36/17",
+      "exact_axis_eigenvalues": [
+        "35/17",
+        "33/17",
+        "32/17"
+      ],
+      "numeric_physical_eigenvalues": [
+        1.8823529411764686,
+        1.8823529411764695,
+        1.8823529411764695,
+        1.8823529411764701,
+        1.8823529411764701,
+        1.8823529411764708,
+        1.935999559374406,
+        1.9359995593744068,
+        1.935999559374407,
+        1.935999559374408,
+        1.9411764705882337,
+        1.9411764705882337,
+        1.941176470588235,
+        1.941176470588235,
+        2.0588235294117627,
+        2.058823529411763,
+        2.0588235294117636,
+        2.058823529411765,
+        2.117647058823527,
+        2.1176470588235294,
+        2.3529411764705865,
+        2.3529411764705883,
+        2.352941176470589,
+        2.35294117647059,
+        3.1529411764705872,
+        3.152941176470588,
+        3.152941176470588,
+        3.15294117647059,
+        3.2941176470588234,
+        3.294117647058824,
+        3.294117647058824,
+        3.2941176470588247,
+        3.7647058823529385,
+        3.9463533818020595,
+        3.9463533818020626,
+        3.9463533818020644,
+        3.9463533818020653
+      ],
+      "selected_charge_Coulomb_energy": 9.642857142857153,
+      "Gauss_minimal_electric_residual": 1.3322676295501878e-14
+    },
+    {
+      "dimension": 3,
+      "period": 6,
+      "vertices": 216,
+      "links": 648,
+      "A_sites": 108,
+      "plaquettes": 648,
+      "gauge_and_two_path_incidence_identities_exact_integer": true,
+      "p_equal": "53/107",
+      "p_opposite": "54/107",
+      "gauge_response_residual": 1.2656542480726785e-14,
+      "harmonic_controls": [
+        {
+          "direction": 0,
+          "quadratic_eigenvalue": 4.037383177570093,
+          "residual": 1.7763568394002505e-15
+        },
+        {
+          "direction": 1,
+          "quadratic_eigenvalue": 4.037383177570093,
+          "residual": 8.881784197001252e-16
+        },
+        {
+          "direction": 2,
+          "quadratic_eigenvalue": 4.037383177570093,
+          "residual": 1.7763568394002505e-15
+        }
+      ],
+      "axis_mode_controls": [
+        {
+          "wavevector": [
+            1,
+            0,
+            0
+          ],
+          "polarization": 1,
+          "quadratic_eigenvalue": 4.02803738317757,
+          "frequency_over_omega0": 4.013994211843146,
+          "residual": 1.4043333874306805e-15
+        },
+        {
+          "wavevector": [
+            2,
+            0,
+            0
+          ],
+          "polarization": 1,
+          "quadratic_eigenvalue": 4.009345794392523,
+          "frequency_over_omega0": 4.004670170884251,
+          "residual": 1.831026719408895e-15
+        },
+        {
+          "wavevector": [
+            3,
+            0,
+            0
+          ],
+          "polarization": 1,
+          "quadratic_eigenvalue": 3.9999999999999996,
+          "frequency_over_omega0": 3.9999999999999996,
+          "residual": 1.3322853278803527e-15
+        }
+      ],
+      "scope": "Integer incidence identities and numerical harmonic/axis-mode residuals; no symbolic 648x648 rank computation."
+    }
+  ],
+  "convention": "Q is the coefficient of angle squared in the relaxed energy; the real Hessian is 2Q. Frequencies are 2 omega0 sqrt(eigenvalue(Q)).",
+  "scope": "Physical quotient response matrices on allowed cubic tori. No all-neutral-configurations diagonalization or thermodynamic conclusion."
+}

@@ -1,0 +1,537 @@
+{
+  "created_utc": "2026-09-22T22:40:31.506697+00:00",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_record_potential_hessian_check.py",
+    "bytes": 8409,
+    "sha256": "9a87946905e3259c04200c8a353e608ee6d5ae7733c617f1826ce8189c386563"
+  },
+  "exact_finite_graph_controls": [
+    {
+      "sites": 4,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "fixed_charge": 0,
+      "spin_sector_dimension": 6,
+      "theta": [
+        "-3/7",
+        "0",
+        "3/7",
+        "-1/7"
+      ],
+      "phi": [
+        "-2/5",
+        "0",
+        "2/5",
+        "-1/5"
+      ],
+      "ground_energy": -8,
+      "exact_fixed_sector_kernel_dimension": 1,
+      "exact_second_derivative": "982/3675",
+      "predicted_second_derivative": "982/3675",
+      "H1_ground_one_magnon_identity": true,
+      "direct_finite_angle_controls": [
+        {
+          "step": 0.04,
+          "symmetric_ground_curvature": 0.26719401154062794,
+          "difference_from_exact": -1.6872813113577578e-05
+        },
+        {
+          "step": 0.02,
+          "symmetric_ground_curvature": 0.2672066659981098,
+          "difference_from_exact": -4.21835563169104e-06
+        },
+        {
+          "step": 0.01,
+          "symmetric_ground_curvature": 0.26720982978289953,
+          "difference_from_exact": -1.0545708419851252e-06
+        }
+      ]
+    },
+    {
+      "sites": 4,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "fixed_charge": 0,
+      "spin_sector_dimension": 6,
+      "theta": [
+        "1/11",
+        "3/11",
+        "5/11",
+        "-9/11"
+      ],
+      "phi": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "ground_energy": -8,
+      "exact_fixed_sector_kernel_dimension": 1,
+      "exact_second_derivative": "0",
+      "predicted_second_derivative": "0",
+      "H1_ground_one_magnon_identity": true,
+      "direct_finite_angle_controls": [
+        {
+          "step": 0.04,
+          "symmetric_ground_curvature": -2.220446049250313e-12,
+          "difference_from_exact": -2.220446049250313e-12
+        },
+        {
+          "step": 0.02,
+          "symmetric_ground_curvature": -8.881784197001252e-12,
+          "difference_from_exact": -8.881784197001252e-12
+        },
+        {
+          "step": 0.01,
+          "symmetric_ground_curvature": 0.0,
+          "difference_from_exact": 0.0
+        }
+      ]
+    },
+    {
+      "sites": 6,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "fixed_charge": 0,
+      "spin_sector_dimension": 20,
+      "theta": [
+        "-3/7",
+        "0",
+        "3/7",
+        "-1/7",
+        "2/7",
+        "-2/7",
+        "1/7",
+        "-3/7",
+        "0"
+      ],
+      "phi": [
+        "-2/5",
+        "0",
+        "2/5",
+        "-1/5",
+        "1/5",
+        "-2/5",
+        "0",
+        "2/5",
+        "-1/5"
+      ],
+      "ground_energy": -18,
+      "exact_fixed_sector_kernel_dimension": 1,
+      "exact_second_derivative": "14124/6125",
+      "predicted_second_derivative": "14124/6125",
+      "H1_ground_one_magnon_identity": true,
+      "direct_finite_angle_controls": [
+        {
+          "step": 0.04,
+          "symmetric_ground_curvature": 2.3058818881027676,
+          "difference_from_exact": -7.729557070179638e-05
+        },
+        {
+          "step": 0.02,
+          "symmetric_ground_curvature": 2.3059398598768155,
+          "difference_from_exact": -1.932379665392503e-05
+        },
+        {
+          "step": 0.01,
+          "symmetric_ground_curvature": 2.305954352763706,
+          "difference_from_exact": -4.830909763331448e-06
+        }
+      ]
+    },
+    {
+      "sites": 6,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "fixed_charge": 0,
+      "spin_sector_dimension": 20,
+      "theta": [
+        "1/11",
+        "3/11",
+        "5/11",
+        "7/11",
+        "9/11",
+        "-25/11",
+        "9/11",
+        "15/11",
+        "21/11"
+      ],
+      "phi": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "ground_energy": -18,
+      "exact_fixed_sector_kernel_dimension": 1,
+      "exact_second_derivative": "0",
+      "predicted_second_derivative": "0",
+      "H1_ground_one_magnon_identity": true,
+      "direct_finite_angle_controls": [
+        {
+          "step": 0.04,
+          "symmetric_ground_curvature": 4.440892098500626e-12,
+          "difference_from_exact": 4.440892098500626e-12
+        },
+        {
+          "step": 0.02,
+          "symmetric_ground_curvature": 1.7763568394002505e-11,
+          "difference_from_exact": 1.7763568394002505e-11
+        },
+        {
+          "step": 0.01,
+          "symmetric_ground_curvature": 7.105427357601002e-11,
+          "difference_from_exact": 7.105427357601002e-11
+        }
+      ]
+    }
+  ],
+  "cubic_controls": [
+    {
+      "dimension": 2,
+      "period": 4,
+      "vertices": 16,
+      "A_records": 8,
+      "links": 32,
+      "plaquettes": 16,
+      "charge_exchange_graph_gap": 3.9999999999999973,
+      "exact_incidence_identities": true,
+      "Hessian_gauge_residual": 1.887379141862766e-15,
+      "Hessian_nullity": 15,
+      "expected_vertex_gauge_nullity": 15,
+      "positive_Hessian_minimum": 3.428571428571427,
+      "Hessian_maximum": 8.0,
+      "uniform_connection_controls": [
+        {
+          "direction": 0,
+          "normalized_curvature": 4.571428571428571,
+          "predicted_curvature": 4.571428571428571,
+          "constant_mode_eigenvector_residual": 9.132458960832953e-16
+        },
+        {
+          "direction": 1,
+          "normalized_curvature": 4.571428571428571,
+          "predicted_curvature": 4.571428571428571,
+          "constant_mode_eigenvector_residual": 8.236999068786991e-16
+        }
+      ],
+      "low_mode_controls": [
+        {
+          "wave_number": 1.5707963267948966,
+          "polarization": 1,
+          "projected_two_mode_Ritz_values": [
+            4.0,
+            5.142857142857139
+          ],
+          "two_mode_subspace_leakage": 7.509533747099948e-15
+        }
+      ],
+      "scope": "Finite-box lowest matter-potential band Hessian at zero angle. Not the complete quantum Hamiltonian gap or a thermodynamic Higgs theorem."
+    },
+    {
+      "dimension": 2,
+      "period": 6,
+      "vertices": 36,
+      "A_records": 18,
+      "links": 72,
+      "plaquettes": 36,
+      "charge_exchange_graph_gap": 1.999999999999995,
+      "exact_incidence_identities": true,
+      "Hessian_gauge_residual": 1.7985612998927536e-14,
+      "Hessian_nullity": 35,
+      "expected_vertex_gauge_nullity": 35,
+      "positive_Hessian_minimum": 3.76470588235294,
+      "Hessian_maximum": 7.892706763604128,
+      "uniform_connection_controls": [
+        {
+          "direction": 0,
+          "normalized_curvature": 4.235294117647059,
+          "predicted_curvature": 4.235294117647059,
+          "constant_mode_eigenvector_residual": 9.09076009418336e-16
+        },
+        {
+          "direction": 1,
+          "normalized_curvature": 4.235294117647059,
+          "predicted_curvature": 4.235294117647059,
+          "constant_mode_eigenvector_residual": 1.0236646338311782e-15
+        }
+      ],
+      "low_mode_controls": [
+        {
+          "wave_number": 1.0471975511965976,
+          "polarization": 1,
+          "projected_two_mode_Ritz_values": [
+            4.117647058823529,
+            6.588235294117642
+          ],
+          "two_mode_subspace_leakage": 1.475169090017582e-14
+        }
+      ],
+      "scope": "Finite-box lowest matter-potential band Hessian at zero angle. Not the complete quantum Hamiltonian gap or a thermodynamic Higgs theorem."
+    },
+    {
+      "dimension": 2,
+      "period": 8,
+      "vertices": 64,
+      "A_records": 32,
+      "links": 128,
+      "plaquettes": 64,
+      "charge_exchange_graph_gap": 1.171572875253807,
+      "exact_incidence_identities": true,
+      "Hessian_gauge_residual": 8.992806499463768e-15,
+      "Hessian_nullity": 63,
+      "expected_vertex_gauge_nullity": 63,
+      "positive_Hessian_minimum": 3.8709677419354818,
+      "Hessian_maximum": 8.000000000000004,
+      "uniform_connection_controls": [
+        {
+          "direction": 0,
+          "normalized_curvature": 4.129032258064516,
+          "predicted_curvature": 4.129032258064516,
+          "constant_mode_eigenvector_residual": 5.509380613541653e-16
+        },
+        {
+          "direction": 1,
+          "normalized_curvature": 4.129032258064516,
+          "predicted_curvature": 4.129032258064516,
+          "constant_mode_eigenvector_residual": 4.846703982099176e-16
+        }
+      ],
+      "low_mode_controls": [
+        {
+          "wave_number": 0.7853981633974483,
+          "polarization": 1,
+          "projected_two_mode_Ritz_values": [
+            4.091239584669232,
+            7.175045382941724
+          ],
+          "two_mode_subspace_leakage": 1.965717514723462e-14
+        }
+      ],
+      "scope": "Finite-box lowest matter-potential band Hessian at zero angle. Not the complete quantum Hamiltonian gap or a thermodynamic Higgs theorem."
+    },
+    {
+      "dimension": 3,
+      "period": 4,
+      "vertices": 64,
+      "A_records": 32,
+      "links": 192,
+      "plaquettes": 192,
+      "charge_exchange_graph_gap": 7.999999999999994,
+      "exact_incidence_identities": true,
+      "Hessian_gauge_residual": 1.1546319456101628e-14,
+      "Hessian_nullity": 63,
+      "expected_vertex_gauge_nullity": 63,
+      "positive_Hessian_minimum": 7.741935483870956,
+      "Hessian_maximum": 12.004028327984708,
+      "uniform_connection_controls": [
+        {
+          "direction": 0,
+          "normalized_curvature": 8.258064516129032,
+          "predicted_curvature": 8.258064516129032,
+          "constant_mode_eigenvector_residual": 8.151943459582411e-16
+        },
+        {
+          "direction": 1,
+          "normalized_curvature": 8.258064516129032,
+          "predicted_curvature": 8.258064516129032,
+          "constant_mode_eigenvector_residual": 8.947163408297023e-16
+        },
+        {
+          "direction": 2,
+          "normalized_curvature": 8.258064516129032,
+          "predicted_curvature": 8.258064516129032,
+          "constant_mode_eigenvector_residual": 8.262020077448362e-16
+        }
+      ],
+      "low_mode_controls": [
+        {
+          "wave_number": 1.5707963267948966,
+          "polarization": 1,
+          "projected_two_mode_Ritz_values": [
+            8.129032258064512,
+            11.397849462365613
+          ],
+          "two_mode_subspace_leakage": 0.7693997341934767
+        },
+        {
+          "wave_number": 1.5707963267948966,
+          "polarization": 2,
+          "projected_two_mode_Ritz_values": [
+            8.129032258064514,
+            11.397849462365626
+          ],
+          "two_mode_subspace_leakage": 0.7693997341934768
+        }
+      ],
+      "scope": "Finite-box lowest matter-potential band Hessian at zero angle. Not the complete quantum Hamiltonian gap or a thermodynamic Higgs theorem."
+    },
+    {
+      "dimension": 3,
+      "period": 6,
+      "vertices": 216,
+      "A_records": 108,
+      "links": 648,
+      "plaquettes": 648,
+      "charge_exchange_graph_gap": 3.999999999999991,
+      "exact_incidence_identities": true,
+      "Hessian_gauge_residual": 1.9317880628477724e-14,
+      "Hessian_nullity": 215,
+      "expected_vertex_gauge_nullity": 215,
+      "positive_Hessian_minimum": 7.9252336448597855,
+      "Hessian_maximum": 12.000000000000021,
+      "uniform_connection_controls": [
+        {
+          "direction": 0,
+          "normalized_curvature": 8.074766355140184,
+          "predicted_curvature": 8.074766355140186,
+          "constant_mode_eigenvector_residual": 1.337468341693191e-15
+        },
+        {
+          "direction": 1,
+          "normalized_curvature": 8.074766355140184,
+          "predicted_curvature": 8.074766355140186,
+          "constant_mode_eigenvector_residual": 1.3967178690236528e-15
+        },
+        {
+          "direction": 2,
+          "normalized_curvature": 8.074766355140186,
+          "predicted_curvature": 8.074766355140186,
+          "constant_mode_eigenvector_residual": 1.3370236067340132e-15
+        }
+      ],
+      "low_mode_controls": [
+        {
+          "wave_number": 1.0471975511965976,
+          "polarization": 1,
+          "projected_two_mode_Ritz_values": [
+            8.05607476635513,
+            11.690253671562111
+          ],
+          "two_mode_subspace_leakage": 0.4141607248505368
+        },
+        {
+          "wave_number": 1.0471975511965976,
+          "polarization": 2,
+          "projected_two_mode_Ritz_values": [
+            8.056074766355128,
+            11.69025367156211
+          ],
+          "two_mode_subspace_leakage": 0.41416072485053723
+        }
+      ],
+      "scope": "Finite-box lowest matter-potential band Hessian at zero angle. Not the complete quantum Hamiltonian gap or a thermodynamic Higgs theorem."
+    }
+  ],
+  "status": "Author controls; independent reconstruction pending.",
+  "limits": "The exact finite-spin-sector calculation checks the potential-band Hessian. Cubic matrix spectra are floating corroboration, not interval enclosures or a full matter-field phase proof."
+}

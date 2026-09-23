@@ -1,0 +1,169 @@
+{
+  "created_utc": "2026-09-22T23:54:13.449869+00:00",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/comparison_check.py",
+    "bytes": 11250,
+    "sha256": "30dba0616913c194d860b6defd8270eec5aafb9c7e568a15eba393965a902edf"
+  },
+  "pre_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/PRE_COMPARISON_SEAL.json",
+    "bytes": 14649,
+    "sha256": "4c13933f96f93217a20683f9b229d50c7e97fab28a556f90cce0226858ad3e48"
+  },
+  "author_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/CHARGED_BAND_AUTHOR_SEAL.json",
+    "bytes": 8138,
+    "sha256": "c1c6420437307f014d547aaab23e261547d667e15eec0e736a600b0d75abf581"
+  },
+  "authentication_counts": {
+    "PRE": 33,
+    "author": 25,
+    "context": 2
+  },
+  "convention": "Author M_J=2J Q_independent and Theta=T_independent/2; incidence orientations differ by a transpose/sign only.",
+  "exact_star_controls": [
+    {
+      "dimension": 2,
+      "exact_spectrum": {
+        "0": 1,
+        "2": 2,
+        "4": 1
+      }
+    },
+    {
+      "dimension": 3,
+      "exact_spectrum": {
+        "0": 1,
+        "4": 3,
+        "6": 2
+      }
+    },
+    {
+      "dimension": 4,
+      "exact_spectrum": {
+        "0": 1,
+        "6": 4,
+        "8": 3
+      }
+    },
+    {
+      "dimension": 7,
+      "exact_spectrum": {
+        "0": 1,
+        "12": 7,
+        "14": 6
+      }
+    }
+  ],
+  "all_direction_rectangular_control": {
+    "periods": [
+      6,
+      10
+    ],
+    "physical_dimension": 61,
+    "completed_star_schur_error": 8.881784197001252e-16,
+    "F_eigenvalue_range": [
+      3.9999999999999925,
+      7.9999999999999964
+    ],
+    "F_bounds": [
+      4,
+      8
+    ],
+    "Hessian_eigenvalue_range": [
+      3.8620689655172407,
+      7.867218837176423
+    ],
+    "Hessian_bounds": [
+      3.8620689655172415,
+      8.275862068965518
+    ],
+    "scope": "Whole physical tangent space, not one selected transverse family; finite floating corroboration of the exact local proof."
+  },
+  "sign_controls": [
+    {
+      "periods": [
+        8,
+        10
+      ],
+      "charge_sign_checks": 320,
+      "wrapping_charge_checks": 68,
+      "failures": 0
+    },
+    {
+      "periods": [
+        6,
+        6,
+        8
+      ],
+      "charge_sign_checks": 3456,
+      "wrapping_charge_checks": 976,
+      "failures": 0
+    },
+    {
+      "periods": [
+        7,
+        7
+      ],
+      "charge_sign_checks": 196,
+      "wrapping_charge_checks": 52,
+      "failures": 28
+    }
+  ],
+  "independent_packet_control": {
+    "h": 0.015625,
+    "grid": 4096,
+    "cutoff": 144,
+    "dimension": 1734,
+    "Hessian_exact": "4/3",
+    "band_derivative_norm_squared_exact": "5/12",
+    "residuals": [
+      0.10351123800186496,
+      0.1788198623878768
+    ],
+    "time": 1,
+    "state_error": 0.005685886436408639,
+    "Duhamel_bound": 0.19963823562546423,
+    "author_state_error": 0.005685886437149036,
+    "difference_from_author": -7.40397326781661e-13,
+    "unitarity_error": 2.036149027162537e-13,
+    "scope": "Independent one-row auxiliary compact matrix-model reconstruction; not a full cubic Gauss evolution or an interval error certificate."
+  },
+  "author_receipts": [
+    {
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/CHARGED_RECORD_POTENTIAL_HESSIAN_CHECK_RECEIPT.json",
+        "bytes": 1355,
+        "sha256": "dc49d3d22ede512d56767991e28be500e98ef313106bc93140a80f2aaadacf7e"
+      },
+      "all_three_bindings_verified": true,
+      "stdout_equals_result": true
+    },
+    {
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/CHARGED_BAND_PACKET_CHECK_RECEIPT.json",
+        "bytes": 1301,
+        "sha256": "ac896e175ae570b140e0dbee557e7ac6f4fd0d1e98cdf11b820f81448b949166"
+      },
+      "all_three_bindings_verified": true,
+      "stdout_equals_result": true
+    },
+    {
+      "receipt": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/CHARGED_BAND_GEOMETRY_CHECK_RECEIPT.json",
+        "bytes": 1310,
+        "sha256": "8ecb8d21fcfd1c62cf8d91dcb8e747ba7b400d7ac9f00897bdd36b750ac0f75d"
+      },
+      "all_three_bindings_verified": true,
+      "stdout_equals_result": true
+    }
+  ],
+  "author_failed_attempt": "Archived original authenticates; only cutoff8->12 and refinement20->60 changed. Original1e-9 threshold remains.",
+  "status": "No material mathematical discrepancy found in the bounded comparison.",
+  "limits": [
+    "No full author suite or dense full neutral cubic matter matrix replay.",
+    "Finite floating checks are not interval enclosures.",
+    "Uniform quadratic curvature does not make packet error constants uniform in volume.",
+    "Sign transformation changes only overall target ring sign on stipulated even boxes; no microscopic statistics theorem."
+  ]
+}

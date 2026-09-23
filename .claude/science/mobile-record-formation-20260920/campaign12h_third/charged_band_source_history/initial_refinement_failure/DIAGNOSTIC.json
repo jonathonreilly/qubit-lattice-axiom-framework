@@ -1,0 +1,72 @@
+{
+  "base": {
+    "h": 0.0078125,
+    "electric_cutoff": 91,
+    "grid": 8192,
+    "full_dimension": 1098,
+    "packet_norm": 0.9999999999999997,
+    "residuals": [
+      0.0730514043446323,
+      0.12636345746457275
+    ],
+    "residuals_over_sqrt_h": [
+      0.8264822941966385,
+      1.429639322678036
+    ],
+    "predicted_leading_residuals_over_sqrt_h": [
+      0.8248720006399609,
+      1.4287202148493998
+    ],
+    "times": [
+      {
+        "time": 0.2,
+        "state_norm_error": 0.0006612050196817943,
+        "Duhamel_bound": 0.02820152021093344,
+        "unitarity_error": 6.117328865684613e-14
+      },
+      {
+        "time": 1.0,
+        "state_norm_error": 0.0028496965227686566,
+        "Duhamel_bound": 0.1410076010546672,
+        "unitarity_error": 5.4944937488699e-13
+      }
+    ]
+  },
+  "refined": {
+    "h": 0.0078125,
+    "electric_cutoff": 111,
+    "grid": 16384,
+    "full_dimension": 1338,
+    "packet_norm": 0.9999999999999997,
+    "residuals": [
+      0.07305140434463597,
+      0.12636345746457567
+    ],
+    "residuals_over_sqrt_h": [
+      0.8264822941966802,
+      1.4296393226780688
+    ],
+    "predicted_leading_residuals_over_sqrt_h": [
+      0.8248720006399609,
+      1.4287202148493998
+    ],
+    "times": [
+      {
+        "time": 0.2,
+        "state_norm_error": 0.000661205019544237,
+        "Duhamel_bound": 0.028201520210934375,
+        "unitarity_error": 2.4291679778798425e-13
+      },
+      {
+        "time": 1.0,
+        "state_norm_error": 0.002849695252290756,
+        "Duhamel_bound": 0.14100760105467186,
+        "unitarity_error": 7.264189250122399e-13
+      }
+    ]
+  },
+  "state_error_changes": [
+    1.3755728327236039e-13,
+    1.2704779004009403e-09
+  ]
+}

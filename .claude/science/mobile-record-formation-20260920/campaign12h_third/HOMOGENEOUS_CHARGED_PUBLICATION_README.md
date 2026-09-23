@@ -1,4 +1,4 @@
-# Homogeneous charged-record motion and generated field dynamics
+# Homogeneous charged-record motion and field response
 
 This PR extends [PR 8650](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8650)
 with an interacting charged-record target. A uniform repulsive occupation
@@ -54,16 +54,46 @@ included. The independent physical resonant-hop counterexample explains why
 the older slower propagation estimate cannot be reused. Test counts are
 not a proof of uniform locality; the explicit argument supplies that result.
 
-This publication does not establish the target's phase, transfer the earlier
-neutral photon packet to charged matter, retain a positive limiting birth
-rate, select the prepared state autonomously, or account for a finite fuel
-supply. The subsequent charged-band and finite-rate formation work is outside
-this initial publication. No formal audit verdict or retained status is applied.
+## The charged target's prepared field response
+
+[CHARGED_RECORD_EXCHANGE_BAND_FIELD_RESPONSE.md](CHARGED_RECORD_EXCHANGE_BAND_FIELD_RESPONSE.md)
+analyzes the actual charge-exchanging target in the neutral Dicke matter band.
+It derives the relaxed band Hessian, including the matter response rather
+than holding the matter vector fixed. An exact local-star argument bounds
+the curvature above and below on every physical field-angle direction,
+including the harmonic directions, uniformly over the stated even boxes.
+
+With K=omega0 h and J=omega0/h, compact Gauss-equivariant prepared packets
+have a controlled fixed-box O(sqrt(h)) oscillator approximation. Their
+frequencies have a positive lower bound. This specific band therefore does
+not inherit the earlier soft transverse photon packet. This is not a gap
+theorem for the complete many-body Hamiltonian or a thermodynamic phase
+classification. Packet error constants remain box-dependent.
+
+An exact even-torus pi-flux unitary also reverses the overall ring sign.
+Simply flipping that sign therefore does not resolve this particular
+band-response issue. Other bands, preparations and coupling regimes remain
+open; no microscopic fermion-statistics theorem is claimed.
+
+The separate [blind report](charged_band_independent/REPORT.md) was frozen
+before the [author comparison](charged_band_independent/COMPARISON.md).
+The comparison found no required correction and independently reconstructed
+the additional all-direction bound and sign equivalence. It rebuilt one
+auxiliary packet evolution with agreement to 7.4e-13, checked a complete
+61-dimensional physical tangent space, and retained all failed/interrupted
+attempts. The root read all three independent scientific checkers and their
+full results, and authenticated the 68 final bindings. The final seal is
+7cbff4724371985ca2750c21421fc52597f55a975325e6a2a43698c5d2f70150.
+
+This publication does not establish a thermodynamic phase, retain a positive
+limiting birth rate, select the prepared state autonomously, or account for
+a finite fuel supply. Separate finite-rate formation work is outside this
+publication. No formal audit verdict or retained status is applied.
 
 ## Portable evidence verification
 
 Run python3 verify_homogeneous_charged_publication.py from this directory.
-It checks the 51 unchanged new source/evidence artifacts and the selected
+It checks the 113 unchanged new source/evidence artifacts and the selected
 seal bindings using repository-relative paths. It confers no scientific
 verdict and does not rerun the science.
 

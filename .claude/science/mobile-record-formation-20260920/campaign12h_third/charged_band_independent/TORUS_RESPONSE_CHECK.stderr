@@ -1,0 +1,59 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/torus_response_check.py", line 77, in <module>
+    assert Qs.rank()==len(edges)-len(vertices)+1
+           ~~~~~~~^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/matrices/matrixbase.py", line 3115, in rank
+    return _rank(self, iszerofunc=iszerofunc, simplify=simplify)
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/matrices/reductions.py", line 242, in _rank
+    _, pivots, _ = _row_reduce(mat, iszerofunc, simpfunc, normalize_last=True,
+                   ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            normalize=False, zero_above=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/matrices/reductions.py", line 127, in _row_reduce
+    mat, pivot_cols, swaps = _row_reduce_list(list(M), M.rows, M.cols, M.one,
+                             ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            iszerofunc, simpfunc, normalize_last=normalize_last,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            normalize=normalize, zero_above=zero_above)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/matrices/reductions.py", line 109, in _row_reduce_list
+    cross_cancel(pivot_val, row, val, piv_row)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/matrices/reductions.py", line 58, in cross_cancel
+    mat[p] = isimp(a*mat[p] - b*mat[p + q])
+                   ~~~~~~~~~^~~~~~~~~~~~~~
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/core/decorators.py", line 76, in __sympifyit_wrapper
+    return func(a, b)
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/core/numbers.py", line 1471, in __sub__
+    return Rational(self.p*other.q - self.q*other.p, self.q*other.q)
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/core/numbers.py", line 1372, in __new__
+    return cls._new(p, q)
+           ~~~~~~~~^^^^^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/core/numbers.py", line 1393, in _new
+    q //= gcd
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/_pylong.py", line 363, in int_divmod
+    return _divmod_pos(a, b)
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/_pylong.py", line 343, in _divmod_pos
+    q_digit, r = _div2n1n((r << n) + a_digit, b, n)
+                 ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/_pylong.py", line 267, in _div2n1n
+    q1, r = _div3n2n(a >> n, (a >> half_n) & mask, b, b1, b2, half_n)
+            ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/_pylong.py", line 279, in _div3n2n
+    q, r = _div2n1n(a12, b1, n)
+           ~~~~~~~~^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/_pylong.py", line 267, in _div2n1n
+    q1, r = _div3n2n(a >> n, (a >> half_n) & mask, b, b1, b2, half_n)
+            ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/_pylong.py", line 279, in _div3n2n
+    q, r = _div2n1n(a12, b1, n)
+           ~~~~~~~~^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/_pylong.py", line 267, in _div2n1n
+    q1, r = _div3n2n(a >> n, (a >> half_n) & mask, b, b1, b2, half_n)
+            ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/_pylong.py", line 280, in _div3n2n
+    r = (r << n | a3) - q * b2
+                        ~~^~~~
+KeyboardInterrupt

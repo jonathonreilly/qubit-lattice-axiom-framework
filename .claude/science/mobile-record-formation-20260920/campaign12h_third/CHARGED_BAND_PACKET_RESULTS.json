@@ -1,0 +1,187 @@
+{
+  "created_utc": "2026-09-22T23:01:28.995355+00:00",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_packet_check.py",
+    "bytes": 5488,
+    "sha256": "2f1d9a8a834bd198d2337029ca25573d4a1d9efa2327b00592f22760251ae497"
+  },
+  "model": "One compact coordinate, four records at fixed total charge zero on a cycle; theta only on edge 0, phi=0. K=h,J=1/h; scalar -8/h removed.",
+  "scope": "A matrix-band residual and compact-state normalization control, not a literal full cubic Gauss or thermodynamic phase simulation.",
+  "exact_band_control": {
+    "dimension": 6,
+    "band_Hessian": "4/3",
+    "u_prime_norm_squared": "5/12"
+  },
+  "harmonic_frequency": 1.632993161855452,
+  "rows": [
+    {
+      "h": 0.03125,
+      "electric_cutoff": 68,
+      "grid": 8192,
+      "full_dimension": 822,
+      "packet_norm": 0.999999871671474,
+      "residuals": [
+        0.1469562013377227,
+        0.2532528826767947
+      ],
+      "residuals_over_sqrt_h": [
+        0.8313098120265544,
+        1.432614645566421
+      ],
+      "predicted_leading_residuals_over_sqrt_h": [
+        0.8248720006399609,
+        1.4287202148493998
+      ],
+      "times": [
+        {
+          "time": 0.2,
+          "state_norm_error": 0.002491492904748135,
+          "Duhamel_bound": 0.05659811870297754,
+          "unitarity_error": 1.3433698597964394e-14
+        },
+        {
+          "time": 1.0,
+          "state_norm_error": 0.011337477493228295,
+          "Duhamel_bound": 0.28299059351488765,
+          "unitarity_error": 6.483702463810914e-14
+        }
+      ]
+    },
+    {
+      "h": 0.015625,
+      "electric_cutoff": 96,
+      "grid": 8192,
+      "full_dimension": 1158,
+      "packet_norm": 0.9999999999999101,
+      "residuals": [
+        0.10351123800183838,
+        0.17881986238717779
+      ],
+      "residuals_over_sqrt_h": [
+        0.8280899040147071,
+        1.4305588990974223
+      ],
+      "predicted_leading_residuals_over_sqrt_h": [
+        0.8248720006399609,
+        1.4287202148493998
+      ],
+      "times": [
+        {
+          "time": 0.2,
+          "state_norm_error": 0.0012795688923212284,
+          "Duhamel_bound": 0.03992764712499024,
+          "unitarity_error": 8.348877145181177e-14
+        },
+        {
+          "time": 1.0,
+          "state_norm_error": 0.005685886437149036,
+          "Duhamel_bound": 0.19963823562495117,
+          "unitarity_error": 4.2310599468464716e-13
+        }
+      ]
+    },
+    {
+      "h": 0.0078125,
+      "electric_cutoff": 136,
+      "grid": 8192,
+      "full_dimension": 1638,
+      "packet_norm": 0.9999999999999997,
+      "residuals": [
+        0.0730514043446323,
+        0.12636345746457275
+      ],
+      "residuals_over_sqrt_h": [
+        0.8264822941966385,
+        1.429639322678036
+      ],
+      "predicted_leading_residuals_over_sqrt_h": [
+        0.8248720006399609,
+        1.4287202148493998
+      ],
+      "times": [
+        {
+          "time": 0.2,
+          "state_norm_error": 0.0006612050195309529,
+          "Duhamel_bound": 0.02820152021093344,
+          "unitarity_error": 3.3506530883187224e-13
+        },
+        {
+          "time": 1.0,
+          "state_norm_error": 0.002849695058935255,
+          "Duhamel_bound": 0.1410076010546672,
+          "unitarity_error": 2.8881341762598822e-12
+        }
+      ]
+    },
+    {
+      "h": 0.00390625,
+      "electric_cutoff": 192,
+      "grid": 8192,
+      "full_dimension": 2310,
+      "packet_norm": 0.9999999999999996,
+      "residuals": [
+        0.051604842758625605,
+        0.0893237319515361
+      ],
+      "residuals_over_sqrt_h": [
+        0.8256774841380097,
+        1.4291797112245777
+      ],
+      "predicted_leading_residuals_over_sqrt_h": [
+        0.8248720006399609,
+        1.4287202148493998
+      ],
+      "times": [
+        {
+          "time": 0.2,
+          "state_norm_error": 0.00032205177367994266,
+          "Duhamel_bound": 0.019930310168102074,
+          "unitarity_error": 5.617728504603292e-14
+        },
+        {
+          "time": 1.0,
+          "state_norm_error": 0.001422882901868393,
+          "Duhamel_bound": 0.09965155084051038,
+          "unitarity_error": 1.0862422072932532e-12
+        }
+      ]
+    }
+  ],
+  "refinement": {
+    "h": 0.0078125,
+    "electric_cutoff": 196,
+    "grid": 16384,
+    "full_dimension": 2358,
+    "packet_norm": 0.9999999999999997,
+    "residuals": [
+      0.07305140434463597,
+      0.12636345746457567
+    ],
+    "residuals_over_sqrt_h": [
+      0.8264822941966802,
+      1.4296393226780688
+    ],
+    "predicted_leading_residuals_over_sqrt_h": [
+      0.8248720006399609,
+      1.4287202148493998
+    ],
+    "times": [
+      {
+        "time": 0.2,
+        "state_norm_error": 0.0006612050199220607,
+        "Duhamel_bound": 0.028201520210934375,
+        "unitarity_error": 1.6231460620019789e-13
+      },
+      {
+        "time": 1.0,
+        "state_norm_error": 0.00284969505958698,
+        "Duhamel_bound": 0.14100760105467186,
+        "unitarity_error": 9.171552406428418e-13
+      }
+    ]
+  },
+  "refinement_state_error_changes": [
+    3.911078275478652e-13,
+    6.517252015836306e-13
+  ]
+}

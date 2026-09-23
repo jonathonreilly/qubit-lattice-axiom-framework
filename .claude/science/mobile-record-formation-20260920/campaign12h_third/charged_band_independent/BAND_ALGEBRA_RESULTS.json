@@ -1,0 +1,133 @@
+{
+  "created_utc": "2026-09-22T23:36:33.757076+00:00",
+  "neutral_sites": 4,
+  "basis": [
+    [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    [
+      -1,
+      1,
+      1,
+      -1
+    ],
+    [
+      -1,
+      1,
+      -1,
+      1
+    ],
+    [
+      -1,
+      -1,
+      1,
+      1
+    ]
+  ],
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      0,
+      2
+    ]
+  ],
+  "phi_direction": [
+    1,
+    -2,
+    0,
+    3,
+    1
+  ],
+  "two_path_direction": [
+    2,
+    1,
+    -1,
+    0,
+    3
+  ],
+  "potential_ground_energy_at_zero": -10,
+  "ground_unique": true,
+  "H0_minus_E0_eigenvalues": {
+    "12": 1,
+    "4": 1,
+    "8": 3,
+    "0": 1
+  },
+  "p_equal": "1/3",
+  "p_opposite": "2/3",
+  "direct_fixed_matter_quadratic": "15",
+  "relaxation_subtraction": "9",
+  "relaxed_quadratic_exact": "6",
+  "projected_formula_exact": "6",
+  "derivative_vector_and_laplacian_factor_two_exact": true,
+  "finite_angle_controls": [
+    {
+      "angle": 0.1,
+      "ground_energy": -9.940631416733615,
+      "quadratic_quotient": 5.936858326638549,
+      "error_from_exact": -0.06314167336145093,
+      "odd_energy_difference": 0.0,
+      "gap": 4.009285425646646
+    },
+    {
+      "angle": 0.05,
+      "ground_energy": -9.98503974825865,
+      "quadratic_quotient": 5.984100696539939,
+      "error_from_exact": -0.015899303460060743,
+      "odd_energy_difference": 0.0,
+      "gap": 4.002455043457119
+    },
+    {
+      "angle": 0.025,
+      "ground_energy": -9.9962524887406,
+      "quadratic_quotient": 5.996018015039794,
+      "error_from_exact": -0.003981984960206297,
+      "odd_energy_difference": 0.0,
+      "gap": 4.000622185728592
+    },
+    {
+      "angle": 0.0125,
+      "ground_energy": -9.999062655616303,
+      "quadratic_quotient": 5.999004055661316,
+      "error_from_exact": -0.0009959443386842182,
+      "odd_energy_difference": 0.0,
+      "gap": 4.0001560740384505
+    }
+  ],
+  "pure_gauge_covariance_error": 3.3306690738754696e-16,
+  "scope": "Complete six-dimensional neutral matter potential on a connected five-exchange graph; local potential algebra control, not a separate full cubic lattice.",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/band_algebra_check.py",
+    "sha256": "2c760e121fabfada1c8ed3b0717c81c39119c76b3cdd74e918dcd22fd92b7c6a"
+  }
+}

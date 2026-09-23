@@ -1,0 +1,25 @@
+{
+  "started_utc": "2026-09-22T23:02:14.586955+00:00",
+  "finished_utc": "2026-09-22T23:02:14.908840+00:00",
+  "elapsed_seconds": 0.3216321251820773,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_geometry_check.py"
+  ],
+  "exit_code": 0,
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_geometry_check.py",
+    "bytes": 2590,
+    "sha256": "192adb9cb90eeea831af86e57518647edbb0bed6343e9d6054e7742739b2e0ee"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/CHARGED_BAND_GEOMETRY_CHECK.stdout",
+    "bytes": 2212,
+    "sha256": "03e0df65745dab7d6b52e12ad52182b6f20b007336da619cc540849c00c44b31"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/CHARGED_BAND_GEOMETRY_CHECK.stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

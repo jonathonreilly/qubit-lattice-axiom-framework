@@ -1,0 +1,74 @@
+{
+  "larger_cutoffs": [
+    {
+      "h": 0.0078125,
+      "electric_cutoff": 151,
+      "grid": 16384,
+      "full_dimension": 1818,
+      "packet_norm": 0.9999999999999997,
+      "residuals": [
+        0.07305140434463597,
+        0.12636345746457567
+      ],
+      "residuals_over_sqrt_h": [
+        0.8264822941966802,
+        1.4296393226780688
+      ],
+      "predicted_leading_residuals_over_sqrt_h": [
+        0.8248720006399609,
+        1.4287202148493998
+      ],
+      "times": [
+        {
+          "time": 0.2,
+          "state_norm_error": 0.0006612050195760292,
+          "Duhamel_bound": 0.028201520210934375,
+          "unitarity_error": 2.7466917629226373e-13
+        },
+        {
+          "time": 1.0,
+          "state_norm_error": 0.0028496950584699027,
+          "Duhamel_bound": 0.14100760105467186,
+          "unitarity_error": 1.4788170688007085e-13
+        }
+      ]
+    },
+    {
+      "h": 0.0078125,
+      "electric_cutoff": 211,
+      "grid": 16384,
+      "full_dimension": 2538,
+      "packet_norm": 0.9999999999999997,
+      "residuals": [
+        0.07305140434463597,
+        0.12636345746457567
+      ],
+      "residuals_over_sqrt_h": [
+        0.8264822941966802,
+        1.4296393226780688
+      ],
+      "predicted_leading_residuals_over_sqrt_h": [
+        0.8248720006399609,
+        1.4287202148493998
+      ],
+      "times": [
+        {
+          "time": 0.2,
+          "state_norm_error": 0.000661205019639436,
+          "Duhamel_bound": 0.028201520210934375,
+          "unitarity_error": 1.4288570326925765e-13
+        },
+        {
+          "time": 1.0,
+          "state_norm_error": 0.0028496950601485283,
+          "Duhamel_bound": 0.14100760105467186,
+          "unitarity_error": 5.573319583618286e-14
+        }
+      ]
+    }
+  ],
+  "successive_state_error_changes": [
+    6.340685355238351e-14,
+    1.6786255545298001e-12
+  ]
+}

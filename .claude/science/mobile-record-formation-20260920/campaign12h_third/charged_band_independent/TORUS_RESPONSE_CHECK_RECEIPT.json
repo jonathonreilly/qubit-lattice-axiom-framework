@@ -1,0 +1,25 @@
+{
+  "started_utc": "2026-09-22T23:38:03.596564+00:00",
+  "finished_utc": "2026-09-22T23:44:03.604144+00:00",
+  "elapsed_seconds": 360.0095012499951,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/torus_response_check.py"
+  ],
+  "exit_code": -2,
+  "runner": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/torus_response_check.py",
+    "bytes": 6346,
+    "sha256": "f9d3f9fd84acb875b20cb13e3e979ae6a35ba7a4a385d7750708a24916fa5ae8"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/TORUS_RESPONSE_CHECK.stdout",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_independent/TORUS_RESPONSE_CHECK.stderr",
+    "bytes": 4502,
+    "sha256": "350ee3e18b337973966d0ede865ad9e75294f74b36481216de5fca608c74f128"
+  }
+}

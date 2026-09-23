@@ -1,0 +1,25 @@
+{
+  "started_utc": "2026-09-22T23:01:27.583087+00:00",
+  "finished_utc": "2026-09-22T23:01:29.031632+00:00",
+  "elapsed_seconds": 1.448324792087078,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_packet_check.py"
+  ],
+  "exit_code": 0,
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/charged_band_packet_check.py",
+    "bytes": 5488,
+    "sha256": "2f1d9a8a834bd198d2337029ca25573d4a1d9efa2327b00592f22760251ae497"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/CHARGED_BAND_PACKET_CHECK.stdout",
+    "bytes": 5209,
+    "sha256": "38746e8def0ffd5183ade5aca9493e853aadd6097843762f26fa768138902ec8"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/CHARGED_BAND_PACKET_CHECK.stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

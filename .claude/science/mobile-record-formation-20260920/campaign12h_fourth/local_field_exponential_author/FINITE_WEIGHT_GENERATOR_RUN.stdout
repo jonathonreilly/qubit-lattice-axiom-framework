@@ -1,0 +1,10 @@
+{
+  "source_sha256": "cea5eadb26ba699d2230befbcbb805ec6df29db52ca1b78c4da19d720ff85553",
+  "matrix_dimension": 52,
+  "entries": 36,
+  "max_observed_ratio": 0.035920137943199,
+  "min_analytic_margin": 110.76415839140358,
+  "all_analytic_bounds_hold": true,
+  "all_coherent_resolved_weighted_eigenvalues_agree": true,
+  "scope": "Finite seven-site numerical matrix check only; no all-graph proof."
+}

@@ -1,0 +1,444 @@
+{
+  "source_sha256": "cea5eadb26ba699d2230befbcbb805ec6df29db52ca1b78c4da19d720ff85553",
+  "matrix_dimension": 52,
+  "entries": 36,
+  "max_observed_ratio": 0.035920137943199,
+  "min_analytic_margin": 110.76415839140358,
+  "all_analytic_bounds_hold": true,
+  "all_coherent_resolved_weighted_eigenvalues_agree": true,
+  "rows": [
+    {
+      "link": [
+        1,
+        0
+      ],
+      "lambda_name": "log2",
+      "cutoff": null,
+      "resolved_max_eigenvalue": 3.2568012521894656,
+      "coherent_max_eigenvalue": 3.2568012521894656,
+      "analytic_bound": 114.50966799187808,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        1,
+        0
+      ],
+      "lambda_name": "log2",
+      "cutoff": 0,
+      "resolved_max_eigenvalue": 1.754478041049478,
+      "coherent_max_eigenvalue": 1.754478041049478,
+      "analytic_bound": 114.50966799187808,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        1,
+        0
+      ],
+      "lambda_name": "log2",
+      "cutoff": 1,
+      "resolved_max_eigenvalue": 3.2568012521894656,
+      "coherent_max_eigenvalue": 3.2568012521894656,
+      "analytic_bound": 114.50966799187808,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        1,
+        0
+      ],
+      "lambda_name": "log3",
+      "cutoff": null,
+      "resolved_max_eigenvalue": 6.309401076758502,
+      "coherent_max_eigenvalue": 6.309401076758506,
+      "analytic_bound": 195.80166891254422,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        1,
+        0
+      ],
+      "lambda_name": "log3",
+      "cutoff": 0,
+      "resolved_max_eigenvalue": 2.9148542155126766,
+      "coherent_max_eigenvalue": 2.9148542155126766,
+      "analytic_bound": 195.80166891254422,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        1,
+        0
+      ],
+      "lambda_name": "log3",
+      "cutoff": 1,
+      "resolved_max_eigenvalue": 6.309401076758502,
+      "coherent_max_eigenvalue": 6.309401076758506,
+      "analytic_bound": 195.80166891254422,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        1,
+        2
+      ],
+      "lambda_name": "log2",
+      "cutoff": null,
+      "resolved_max_eigenvalue": 3.2568012521894656,
+      "coherent_max_eigenvalue": 3.2568012521894656,
+      "analytic_bound": 114.50966799187808,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        1,
+        2
+      ],
+      "lambda_name": "log2",
+      "cutoff": 0,
+      "resolved_max_eigenvalue": 3.2568012521894656,
+      "coherent_max_eigenvalue": 3.2568012521894656,
+      "analytic_bound": 114.50966799187808,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        1,
+        2
+      ],
+      "lambda_name": "log2",
+      "cutoff": 1,
+      "resolved_max_eigenvalue": 3.2568012521894656,
+      "coherent_max_eigenvalue": 3.2568012521894656,
+      "analytic_bound": 114.50966799187808,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        1,
+        2
+      ],
+      "lambda_name": "log3",
+      "cutoff": null,
+      "resolved_max_eigenvalue": 6.309401076758503,
+      "coherent_max_eigenvalue": 6.309401076758503,
+      "analytic_bound": 195.80166891254422,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        1,
+        2
+      ],
+      "lambda_name": "log3",
+      "cutoff": 0,
+      "resolved_max_eigenvalue": 6.309401076758503,
+      "coherent_max_eigenvalue": 6.309401076758503,
+      "analytic_bound": 195.80166891254422,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        1,
+        2
+      ],
+      "lambda_name": "log3",
+      "cutoff": 1,
+      "resolved_max_eigenvalue": 6.309401076758503,
+      "coherent_max_eigenvalue": 6.309401076758503,
+      "analytic_bound": 195.80166891254422,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        3,
+        2
+      ],
+      "lambda_name": "log2",
+      "cutoff": null,
+      "resolved_max_eigenvalue": 3.7455096004744846,
+      "coherent_max_eigenvalue": 3.7455096004744846,
+      "analytic_bound": 114.50966799187808,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        3,
+        2
+      ],
+      "lambda_name": "log2",
+      "cutoff": 0,
+      "resolved_max_eigenvalue": 3.745509600474489,
+      "coherent_max_eigenvalue": 3.745509600474489,
+      "analytic_bound": 114.50966799187808,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        3,
+        2
+      ],
+      "lambda_name": "log2",
+      "cutoff": 1,
+      "resolved_max_eigenvalue": 3.7455096004744894,
+      "coherent_max_eigenvalue": 3.7455096004744894,
+      "analytic_bound": 114.50966799187808,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        3,
+        2
+      ],
+      "lambda_name": "log3",
+      "cutoff": null,
+      "resolved_max_eigenvalue": 7.033222956847168,
+      "coherent_max_eigenvalue": 7.033222956847168,
+      "analytic_bound": 195.80166891254422,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        3,
+        2
+      ],
+      "lambda_name": "log3",
+      "cutoff": 0,
+      "resolved_max_eigenvalue": 7.033222956847168,
+      "coherent_max_eigenvalue": 7.033222956847168,
+      "analytic_bound": 195.80166891254422,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        3,
+        2
+      ],
+      "lambda_name": "log3",
+      "cutoff": 1,
+      "resolved_max_eigenvalue": 7.033222956847164,
+      "coherent_max_eigenvalue": 7.033222956847164,
+      "analytic_bound": 195.80166891254422,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        3,
+        4
+      ],
+      "lambda_name": "log2",
+      "cutoff": null,
+      "resolved_max_eigenvalue": 3.7455096004744846,
+      "coherent_max_eigenvalue": 3.7455096004744846,
+      "analytic_bound": 114.50966799187808,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        3,
+        4
+      ],
+      "lambda_name": "log2",
+      "cutoff": 0,
+      "resolved_max_eigenvalue": 3.745509600474489,
+      "coherent_max_eigenvalue": 3.745509600474489,
+      "analytic_bound": 114.50966799187808,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        3,
+        4
+      ],
+      "lambda_name": "log2",
+      "cutoff": 1,
+      "resolved_max_eigenvalue": 3.745509600474488,
+      "coherent_max_eigenvalue": 3.745509600474488,
+      "analytic_bound": 114.50966799187808,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        3,
+        4
+      ],
+      "lambda_name": "log3",
+      "cutoff": null,
+      "resolved_max_eigenvalue": 7.033222956847168,
+      "coherent_max_eigenvalue": 7.033222956847168,
+      "analytic_bound": 195.80166891254422,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        3,
+        4
+      ],
+      "lambda_name": "log3",
+      "cutoff": 0,
+      "resolved_max_eigenvalue": 7.033222956847168,
+      "coherent_max_eigenvalue": 7.033222956847168,
+      "analytic_bound": 195.80166891254422,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        3,
+        4
+      ],
+      "lambda_name": "log3",
+      "cutoff": 1,
+      "resolved_max_eigenvalue": 7.033222956847168,
+      "coherent_max_eigenvalue": 7.033222956847168,
+      "analytic_bound": 195.80166891254422,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        5,
+        4
+      ],
+      "lambda_name": "log2",
+      "cutoff": null,
+      "resolved_max_eigenvalue": 3.256801252189465,
+      "coherent_max_eigenvalue": 3.256801252189465,
+      "analytic_bound": 114.50966799187808,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        5,
+        4
+      ],
+      "lambda_name": "log2",
+      "cutoff": 0,
+      "resolved_max_eigenvalue": 3.2568012521894656,
+      "coherent_max_eigenvalue": 3.2568012521894656,
+      "analytic_bound": 114.50966799187808,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        5,
+        4
+      ],
+      "lambda_name": "log2",
+      "cutoff": 1,
+      "resolved_max_eigenvalue": 3.256801252189465,
+      "coherent_max_eigenvalue": 3.256801252189465,
+      "analytic_bound": 114.50966799187808,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        5,
+        4
+      ],
+      "lambda_name": "log3",
+      "cutoff": null,
+      "resolved_max_eigenvalue": 6.309401076758503,
+      "coherent_max_eigenvalue": 6.309401076758503,
+      "analytic_bound": 195.80166891254422,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        5,
+        4
+      ],
+      "lambda_name": "log3",
+      "cutoff": 0,
+      "resolved_max_eigenvalue": 6.309401076758503,
+      "coherent_max_eigenvalue": 6.309401076758503,
+      "analytic_bound": 195.80166891254422,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        5,
+        4
+      ],
+      "lambda_name": "log3",
+      "cutoff": 1,
+      "resolved_max_eigenvalue": 6.309401076758503,
+      "coherent_max_eigenvalue": 6.309401076758503,
+      "analytic_bound": 195.80166891254422,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        5,
+        6
+      ],
+      "lambda_name": "log2",
+      "cutoff": null,
+      "resolved_max_eigenvalue": 3.256801252189465,
+      "coherent_max_eigenvalue": 3.256801252189465,
+      "analytic_bound": 114.50966799187808,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        5,
+        6
+      ],
+      "lambda_name": "log2",
+      "cutoff": 0,
+      "resolved_max_eigenvalue": 1.7544780410494787,
+      "coherent_max_eigenvalue": 1.7544780410494787,
+      "analytic_bound": 114.50966799187808,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        5,
+        6
+      ],
+      "lambda_name": "log2",
+      "cutoff": 1,
+      "resolved_max_eigenvalue": 3.256801252189465,
+      "coherent_max_eigenvalue": 3.256801252189465,
+      "analytic_bound": 114.50966799187808,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        5,
+        6
+      ],
+      "lambda_name": "log3",
+      "cutoff": null,
+      "resolved_max_eigenvalue": 6.309401076758502,
+      "coherent_max_eigenvalue": 6.309401076758506,
+      "analytic_bound": 195.80166891254422,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        5,
+        6
+      ],
+      "lambda_name": "log3",
+      "cutoff": 0,
+      "resolved_max_eigenvalue": 2.914854215512676,
+      "coherent_max_eigenvalue": 2.914854215512676,
+      "analytic_bound": 195.80166891254422,
+      "conventions_agree": true
+    },
+    {
+      "link": [
+        5,
+        6
+      ],
+      "lambda_name": "log3",
+      "cutoff": 1,
+      "resolved_max_eigenvalue": 6.309401076758502,
+      "coherent_max_eigenvalue": 6.309401076758506,
+      "analytic_bound": 195.80166891254422,
+      "conventions_agree": true
+    }
+  ],
+  "scope": "Finite seven-site numerical matrix check only; no all-graph proof."
+}

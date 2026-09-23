@@ -1,0 +1,52 @@
+{
+  "arithmetic": "exact integer fields plus SymPy rational/square-root matrices",
+  "sources": {
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/formation_capacity_author/capacity_and_dark_state_check.py": "3e9621b36280d19373909922b104c1ead0df9aa47c043d372abd9f9424393a4a",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/formation_capacity_independent/FINITE_PATH_RESULTS.json": "cea5eadb26ba699d2230befbcbb805ec6df29db52ca1b78c4da19d720ff85553"
+  },
+  "physical_builder_controls": [
+    {
+      "name": "path8",
+      "physical_words": 65,
+      "magnetic_rows": 103,
+      "resolved_jump_columns": 910,
+      "resolved_jump_outputs": 84,
+      "max_magnetic_single_link_shift": 1,
+      "max_jump_single_link_shift": 1,
+      "shift_two_rows": 0,
+      "all_output_Gauss": true
+    },
+    {
+      "name": "ring8",
+      "physical_words": 65,
+      "magnetic_rows": 181,
+      "resolved_jump_columns": 1040,
+      "resolved_jump_outputs": 112,
+      "max_magnetic_single_link_shift": 1,
+      "max_jump_single_link_shift": 1,
+      "shift_two_rows": 0,
+      "all_output_Gauss": true
+    },
+    {
+      "name": "cube8",
+      "physical_words": 65,
+      "magnetic_rows": 1117,
+      "resolved_jump_columns": 1560,
+      "resolved_jump_outputs": 336,
+      "max_magnetic_single_link_shift": 1,
+      "max_jump_single_link_shift": 1,
+      "shift_two_rows": 0,
+      "all_output_Gauss": true
+    }
+  ],
+  "ring_circulation_translations_checked": 130,
+  "separate_PRE_matrix_shift_control": {
+    "magnetic_rows": 86,
+    "jump_rows": 72,
+    "max_magnetic_shift": 1,
+    "max_jump_shift": 1,
+    "shift_two_rows": 0
+  },
+  "generic_weighted_dissipator_identity_exact": true,
+  "scope": "These finite controls do not prove the all-graph shift lemma or the unbounded-domain passage."
+}

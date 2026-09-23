@@ -1,0 +1,48 @@
+{
+  "arithmetic": "exact integer fields plus SymPy rational/square-root matrices",
+  "physical_builder_controls": [
+    {
+      "name": "path8",
+      "physical_words": 65,
+      "magnetic_rows": 103,
+      "resolved_jump_columns": 910,
+      "resolved_jump_outputs": 84,
+      "max_magnetic_single_link_shift": 1,
+      "max_jump_single_link_shift": 1,
+      "shift_two_rows": 0,
+      "all_output_Gauss": true
+    },
+    {
+      "name": "ring8",
+      "physical_words": 65,
+      "magnetic_rows": 181,
+      "resolved_jump_columns": 1040,
+      "resolved_jump_outputs": 112,
+      "max_magnetic_single_link_shift": 1,
+      "max_jump_single_link_shift": 1,
+      "shift_two_rows": 0,
+      "all_output_Gauss": true
+    },
+    {
+      "name": "cube8",
+      "physical_words": 65,
+      "magnetic_rows": 1117,
+      "resolved_jump_columns": 1560,
+      "resolved_jump_outputs": 336,
+      "max_magnetic_single_link_shift": 1,
+      "max_jump_single_link_shift": 1,
+      "shift_two_rows": 0,
+      "all_output_Gauss": true
+    }
+  ],
+  "ring_circulation_translations_checked": 130,
+  "separate_PRE_matrix_shift_control": {
+    "magnetic_rows": 86,
+    "jump_rows": 72,
+    "max_magnetic_shift": 1,
+    "max_jump_shift": 1,
+    "shift_two_rows": 0
+  },
+  "generic_weighted_dissipator_identity_exact": true,
+  "scope": "These finite controls do not prove the all-graph shift lemma or the unbounded-domain passage."
+}

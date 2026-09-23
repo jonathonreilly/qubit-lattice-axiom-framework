@@ -1,0 +1,29 @@
+{
+  "sealed_utc": "2026-09-23 23:37:37 UTC",
+  "stage": "blind independent PRE before author comparison",
+  "result": "conditional volume-uniform finite-time one-link exponential moment bound for uniformly bounded degree, with explicit coherent and resolved coefficients",
+  "author_field_exponential_read_before_seal": false,
+  "author_field_moment_read_before_seal": false,
+  "root_field_candidate_read_before_seal": false,
+  "pre_files_sha256": {
+    "PRE_ARGUMENT.md": "ae25cb0493ec65f8d2958daf6a521088a4a8e2d22a43e509d6b2c507f7ca2acd",
+    "field_exponential_check.py": "1576b251637aa322754bbb189c0c308e565b338b607081969be53f9ee364c756",
+    "FIELD_EXPONENTIAL_PRE_RESULTS.json": "50a2688fa390f494015879ee29788fe88ebdb8b2e2e9d51f4659d0f1542f18c0"
+  },
+  "run": {
+    "command": "/opt/homebrew/opt/python@3.13/bin/python3.13 field_exponential_check.py",
+    "exit_code": 0,
+    "stdout_sha256": "83eaa1ae6e424097814ad8964064a3165f006d766ac0a01eb4dbb4b85b99e1eb",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "logs": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-23-fourth/field-exponential-independent"
+  },
+  "source_sha256": {
+    "AGENTS.md": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+    "SCIENCE_WORKFLOW.md": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+    "LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4",
+    "LOCAL_VOLUME_DYNAMICS_WITH_COMMUTING_ELECTRIC_TERMS.md": "a0c1389773766c47b41300329cf6b945a8f5e584c2c46853fe34064a9c331bd6",
+    "FINITE_PATH_RESULTS.json": "cea5eadb26ba699d2230befbcbb805ec6df29db52ca1b78c4da19d720ff85553",
+    "CHECKPOINT.md": "88470011c7f03279803f0d84605a3dd04fefb17ddb81f03cbfc2ad401f20132c"
+  },
+  "limits": "finite-path controls corroborate but do not prove the all-graph theorem; no microscopic volume estimate, native-law selection, or audit verdict"
+}

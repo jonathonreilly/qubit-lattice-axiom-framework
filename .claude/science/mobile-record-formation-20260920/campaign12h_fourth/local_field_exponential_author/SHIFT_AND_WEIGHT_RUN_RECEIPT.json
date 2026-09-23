@@ -1,0 +1,25 @@
+{
+  "started_utc": "2026-09-23T23:22:24.378960+00:00",
+  "ended_utc": "2026-09-23T23:22:24.871712+00:00",
+  "wall_seconds": 0.4936446249485016,
+  "returncode": 0,
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_field_exponential_author/shift_and_weight_check.py"
+  ],
+  "runner": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_field_exponential_author/shift_and_weight_check.py",
+    "bytes": 5617,
+    "sha256": "616b3b645e8d5ac1bd9ed447456faf6e9111e016c69193797568734d4764be30"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_field_exponential_author/SHIFT_AND_WEIGHT_RUN.stdout",
+    "bytes": 1415,
+    "sha256": "01df536c574adf077b0585141b1e3cde79312f094a32f60517667f71d5839233"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_field_exponential_author/SHIFT_AND_WEIGHT_RUN.stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

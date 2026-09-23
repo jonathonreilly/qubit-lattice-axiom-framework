@@ -1,0 +1,376 @@
+{
+  "finite_path_control": {
+    "graph": "seven-site path, all edges A to B",
+    "matrix_source_sha256": "cea5eadb26ba699d2230befbcbb805ec6df29db52ca1b78c4da19d720ff85553",
+    "nonadjacent_anchor_link_witness": {
+      "H4_matrix_entry": [
+        3,
+        34,
+        -2
+      ],
+      "input_field": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "monitored_edge": [
+        1,
+        0
+      ],
+      "other_anchor": 3,
+      "output_field": [
+        0,
+        -2,
+        2,
+        -2,
+        1,
+        -1
+      ]
+    },
+    "physical_dimension": 52,
+    "support": {
+      "H4": {
+        "max_abs_shift_by_edge": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "max_abs_single_link_shift": 1,
+        "nonzero_entries": 86
+      },
+      "coherent_(1, 0)": {
+        "max_abs_shift_by_edge": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "max_abs_single_link_shift": 1,
+        "nonzero_entries": 12
+      },
+      "coherent_(1, 2)": {
+        "max_abs_shift_by_edge": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "max_abs_single_link_shift": 1,
+        "nonzero_entries": 12
+      },
+      "coherent_(3, 2)": {
+        "max_abs_shift_by_edge": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "max_abs_single_link_shift": 1,
+        "nonzero_entries": 12
+      },
+      "coherent_(3, 4)": {
+        "max_abs_shift_by_edge": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "max_abs_single_link_shift": 1,
+        "nonzero_entries": 12
+      },
+      "coherent_(5, 4)": {
+        "max_abs_shift_by_edge": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "max_abs_single_link_shift": 1,
+        "nonzero_entries": 12
+      },
+      "coherent_(5, 6)": {
+        "max_abs_shift_by_edge": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "max_abs_single_link_shift": 1,
+        "nonzero_entries": 12
+      },
+      "resolved_(1, 0, -1)": {
+        "max_abs_shift_by_edge": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "max_abs_single_link_shift": 1,
+        "nonzero_entries": 6
+      },
+      "resolved_(1, 0, 1)": {
+        "max_abs_shift_by_edge": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "max_abs_single_link_shift": 1,
+        "nonzero_entries": 6
+      },
+      "resolved_(1, 2, -1)": {
+        "max_abs_shift_by_edge": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "max_abs_single_link_shift": 1,
+        "nonzero_entries": 6
+      },
+      "resolved_(1, 2, 1)": {
+        "max_abs_shift_by_edge": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "max_abs_single_link_shift": 1,
+        "nonzero_entries": 6
+      },
+      "resolved_(3, 2, -1)": {
+        "max_abs_shift_by_edge": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "max_abs_single_link_shift": 1,
+        "nonzero_entries": 6
+      },
+      "resolved_(3, 2, 1)": {
+        "max_abs_shift_by_edge": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "max_abs_single_link_shift": 1,
+        "nonzero_entries": 6
+      },
+      "resolved_(3, 4, -1)": {
+        "max_abs_shift_by_edge": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "max_abs_single_link_shift": 1,
+        "nonzero_entries": 6
+      },
+      "resolved_(3, 4, 1)": {
+        "max_abs_shift_by_edge": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "max_abs_single_link_shift": 1,
+        "nonzero_entries": 6
+      },
+      "resolved_(5, 4, -1)": {
+        "max_abs_shift_by_edge": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "max_abs_single_link_shift": 1,
+        "nonzero_entries": 6
+      },
+      "resolved_(5, 4, 1)": {
+        "max_abs_shift_by_edge": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "max_abs_single_link_shift": 1,
+        "nonzero_entries": 6
+      },
+      "resolved_(5, 6, -1)": {
+        "max_abs_shift_by_edge": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "max_abs_single_link_shift": 1,
+        "nonzero_entries": 6
+      },
+      "resolved_(5, 6, 1)": {
+        "max_abs_shift_by_edge": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "max_abs_single_link_shift": 1,
+        "nonzero_entries": 6
+      }
+    },
+    "weighted_generator_control": {
+      "analytic_uniform_bound_at_z_2": 145.98038987574864,
+      "delta": 1.0,
+      "instruments": "resolved and coherent, exactly equal on this probe",
+      "kappa": 1.0,
+      "lambda": 0.7,
+      "link_index": 0,
+      "max_eigenvalue_of_weighted_form": 4.552415696932423
+    }
+  },
+  "scope": "finite controls, not an all-graph proof",
+  "star_initial_rate_control": [
+    {
+      "affected_resolved_path_norm_squared": 4,
+      "degree": 2,
+      "derivative_per_kappa_of_exp_abs_link_at_zero": "4*(exp(lambda)-1)"
+    },
+    {
+      "affected_resolved_path_norm_squared": 8,
+      "degree": 3,
+      "derivative_per_kappa_of_exp_abs_link_at_zero": "8*(exp(lambda)-1)"
+    },
+    {
+      "affected_resolved_path_norm_squared": 20,
+      "degree": 6,
+      "derivative_per_kappa_of_exp_abs_link_at_zero": "20*(exp(lambda)-1)"
+    },
+    {
+      "affected_resolved_path_norm_squared": 44,
+      "degree": 12,
+      "derivative_per_kappa_of_exp_abs_link_at_zero": "44*(exp(lambda)-1)"
+    }
+  ],
+  "tree_witness": {
+    "common_two_hop_output": {
+      "E": [
+        -1,
+        0,
+        -1,
+        1,
+        -1
+      ],
+      "q": {
+        "a": 0,
+        "b": 1,
+        "c": 0,
+        "d": 1,
+        "x": -1,
+        "y": 1
+      }
+    },
+    "edges_A_to_B": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "a",
+        "d"
+      ],
+      [
+        "c",
+        "d"
+      ],
+      [
+        "c",
+        "x"
+      ],
+      [
+        "c",
+        "y"
+      ]
+    ],
+    "first_input": {
+      "E": [
+        0,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "q": {
+        "a": 1,
+        "b": 0,
+        "c": -1,
+        "d": 1,
+        "x": 0,
+        "y": 1
+      }
+    },
+    "monitored_B_not_adjacent_to_other_anchor": "b",
+    "monitored_link_input_field_difference": -1,
+    "offdiagonal_SstarS_matrix_element_at_least": 1,
+    "pair_anchor_shared_B": "d",
+    "second_input": {
+      "E": [
+        -1,
+        1,
+        -1,
+        0,
+        -1
+      ],
+      "q": {
+        "a": 1,
+        "b": 1,
+        "c": -1,
+        "d": 0,
+        "x": 0,
+        "y": 1
+      }
+    }
+  }
+}

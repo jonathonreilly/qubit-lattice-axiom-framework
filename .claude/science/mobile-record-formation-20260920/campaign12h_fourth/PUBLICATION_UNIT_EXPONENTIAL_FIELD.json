@@ -1,0 +1,158 @@
+{
+  "created_utc": "2026-09-23T23:45:32.845428+00:00",
+  "base_pr": 8865,
+  "base_commit": "79ab61e5aee8945bf96924815c7e0f9dd4d256a5",
+  "claim_status": "conditional reviewed source proposal; no audit verdict",
+  "pre_sealed_before_author_comparison": true,
+  "artifacts_count": 25,
+  "sources_count": 4,
+  "artifacts": [
+    {
+      "path": "EXPONENTIAL_FIELD_PUBLICATION_README.md",
+      "bytes": 1579,
+      "sha256": "e9c3e3757da9228f672509f42c6f91358a5e23c81934b20e43b84ab14711f972"
+    },
+    {
+      "path": "local_field_exponential_author/ABSOLUTE_FIELD_EXPONENTIAL_COROLLARY.md",
+      "bytes": 2712,
+      "sha256": "f0a7f9f0f8a33262cf679e577588e8dacfc26dffcd7ce585e38031dd87778ed0"
+    },
+    {
+      "path": "local_field_exponential_author/ANALYTIC_DRAFT_SEAL.json",
+      "bytes": 2545,
+      "sha256": "201d6abe5333f7ce24d1aa07c76ac788025dae2df6f3953beddc1f63cc1da923"
+    },
+    {
+      "path": "local_field_exponential_author/CONTROL_RESULTS_AND_SCOPE.md",
+      "bytes": 3552,
+      "sha256": "84b1ed76f76ecf53fbd7a5d01a46ed78a3d678d749d045713cc56d830e8c7096"
+    },
+    {
+      "path": "local_field_exponential_author/FINITE_TIME_EXPONENTIAL_FIELD_TAILS_DRAFT.md",
+      "bytes": 4533,
+      "sha256": "db4839b3d23c4273b0f66d0440c4253451a99cef8df837120a1ffa2f1456f891"
+    },
+    {
+      "path": "local_field_exponential_author/FINITE_WEIGHT_GENERATOR_RESULTS.json",
+      "bytes": 10804,
+      "sha256": "53d8a92adcb5af47e6ffe593b1dcd6e08f180ab491bc77e7c27145567edc5640"
+    },
+    {
+      "path": "local_field_exponential_author/FINITE_WEIGHT_GENERATOR_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "local_field_exponential_author/FINITE_WEIGHT_GENERATOR_RUN.stdout",
+      "bytes": 398,
+      "sha256": "c431cb012e931155b6a61493ad51fc2a61f8b628686f9e65e619a2494fbe5212"
+    },
+    {
+      "path": "local_field_exponential_author/FINITE_WEIGHT_GENERATOR_RUN_RECEIPT.json",
+      "bytes": 1698,
+      "sha256": "38f0cdeb0877290a3d412f4f17c16065d58bc95230d32706b898dbbbf0b969f4"
+    },
+    {
+      "path": "local_field_exponential_author/ONE_LINK_EXPONENTIAL_MOMENT_BOUND.md",
+      "bytes": 8344,
+      "sha256": "e9665bd438eb597d5163ee458766b0ac686f3060bf7aa828c4b930fbf756aeb3"
+    },
+    {
+      "path": "local_field_exponential_author/SHIFT_AND_WEIGHT_RESULTS.json",
+      "bytes": 1967,
+      "sha256": "a7ea1dee1eae78a47050d9a7cbc88fff2cc69e753fa304a5cd216ddffcda5a0c"
+    },
+    {
+      "path": "local_field_exponential_author/SHIFT_AND_WEIGHT_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "local_field_exponential_author/SHIFT_AND_WEIGHT_RUN.stdout",
+      "bytes": 1415,
+      "sha256": "01df536c574adf077b0585141b1e3cde79312f094a32f60517667f71d5839233"
+    },
+    {
+      "path": "local_field_exponential_author/SHIFT_AND_WEIGHT_RUN_RECEIPT.json",
+      "bytes": 1406,
+      "sha256": "d7cc6006c01bf051d967bb50dae95b34f3b42224bcd9e1628ca8aa9a8f1a6e90"
+    },
+    {
+      "path": "local_field_exponential_author/finite_weight_generator_check.py",
+      "bytes": 3612,
+      "sha256": "5708dc7b57ffe05c4d7a4c5e414576b400fce594e4059ce1ef51423e11bf7802"
+    },
+    {
+      "path": "local_field_exponential_author/shift_and_weight_check.py",
+      "bytes": 5617,
+      "sha256": "616b3b645e8d5ac1bd9ed447456faf6e9111e016c69193797568734d4764be30"
+    },
+    {
+      "path": "local_field_exponential_independent/FIELD_EXPONENTIAL_PRE_RESULTS.json",
+      "bytes": 7164,
+      "sha256": "50a2688fa390f494015879ee29788fe88ebdb8b2e2e9d51f4659d0f1542f18c0"
+    },
+    {
+      "path": "local_field_exponential_independent/POST_COMPARISON.md",
+      "bytes": 8436,
+      "sha256": "be28593c7fe38bffc1f6ad7188ce5b9b2289e87d53ac2b7f569274e72da9b064"
+    },
+    {
+      "path": "local_field_exponential_independent/POST_COMPARISON_SEAL.json",
+      "bytes": 955,
+      "sha256": "f55873902e3633121287fbb4270831d3c6d4ea2f957722347a8abffb01fd6c3c"
+    },
+    {
+      "path": "local_field_exponential_independent/PRE_ARGUMENT.md",
+      "bytes": 10409,
+      "sha256": "ae25cb0493ec65f8d2958daf6a521088a4a8e2d22a43e509d6b2c507f7ca2acd"
+    },
+    {
+      "path": "local_field_exponential_independent/PRE_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "local_field_exponential_independent/PRE_RUN.stdout",
+      "bytes": 392,
+      "sha256": "83eaa1ae6e424097814ad8964064a3165f006d766ac0a01eb4dbb4b85b99e1eb"
+    },
+    {
+      "path": "local_field_exponential_independent/PRE_SEAL.json",
+      "bytes": 1976,
+      "sha256": "c089a05372bdac8ea4320f912a67f9650a947abe4268fc1168c15a0ee7685a29"
+    },
+    {
+      "path": "local_field_exponential_independent/field_exponential_check.py",
+      "bytes": 7789,
+      "sha256": "1576b251637aa322754bbb189c0c308e565b338b607081969be53f9ee364c756"
+    },
+    {
+      "path": "local_field_exponential_review/ROOT_REVIEW.md",
+      "bytes": 4929,
+      "sha256": "1ca0d11ebc11ae166b899f034ad25f131fce0f2cef84a9286e71fddf6f44a1f0"
+    }
+  ],
+  "sources": [
+    {
+      "path": "local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "bytes": 11637,
+      "sha256": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4"
+    },
+    {
+      "path": "compensated_volume_author/LOCAL_VOLUME_DYNAMICS_WITH_COMMUTING_ELECTRIC_TERMS.md",
+      "bytes": 16819,
+      "sha256": "a0c1389773766c47b41300329cf6b945a8f5e584c2c46853fe34064a9c331bd6"
+    },
+    {
+      "path": "formation_capacity_author/capacity_and_dark_state_check.py",
+      "bytes": 12263,
+      "sha256": "3e9621b36280d19373909922b104c1ead0df9aa47c043d372abd9f9424393a4a"
+    },
+    {
+      "path": "formation_capacity_independent/FINITE_PATH_RESULTS.json",
+      "bytes": 26155,
+      "sha256": "cea5eadb26ba699d2230befbcbb805ec6df29db52ca1b78c4da19d720ff85553"
+    }
+  ]
+}

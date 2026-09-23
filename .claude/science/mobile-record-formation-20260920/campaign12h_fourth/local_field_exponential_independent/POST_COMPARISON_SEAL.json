@@ -1,0 +1,12 @@
+{
+  "sealed_utc": "2026-09-23 23:42:50 UTC",
+  "pre_seal_sha256": "c089a05372bdac8ea4320f912a67f9650a947abe4268fc1168c15a0ee7685a29",
+  "pre_argument_sha256_reverified_unchanged": "ae25cb0493ec65f8d2958daf6a521088a4a8e2d22a43e509d6b2c507f7ca2acd",
+  "post_comparison_sha256": "be28593c7fe38bffc1f6ad7188ce5b9b2289e87d53ac2b7f569274e72da9b064",
+  "author_result_sha256": "e9665bd438eb597d5163ee458766b0ac686f3060bf7aa828c4b930fbf756aeb3",
+  "author_absolute_corollary_sha256": "f0a7f9f0f8a33262cf679e577588e8dacfc26dffcd7ce585e38031dd87778ed0",
+  "compensated_volume_source_sha256_reverified": "a0c1389773766c47b41300329cf6b945a8f5e584c2c46853fe34064a9c331bd6",
+  "decision": "author one-sided theorem survives; the new separate absolute-weight corollary correctly yields the same-coefficient absolute moment bound and removes factor two from zero-field tail",
+  "formal_audit_verdict": null,
+  "author_or_checkpoint_files_edited_by_this_checker": false
+}

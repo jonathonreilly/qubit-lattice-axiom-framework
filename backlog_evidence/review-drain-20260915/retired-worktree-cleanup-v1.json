@@ -1,0 +1,7 @@
+{
+  "path": "/private/tmp/review-drain-20260915/drain-review8146",
+  "head": "59024639572d6d3a1091c727297b18c350d3f484",
+  "removed": true,
+  "reason": "clean, preserved worktree removed",
+  "other_recovery_worktrees": "Preserved; no forced cleanup"
+}

@@ -1,0 +1,39 @@
+{
+  "status": "ACTUAL METADATA APIs ONLY; NO SCIENCE EXECUTION",
+  "claim_id": "sphere_level_kernel_moments_walk_local_limit_and_finite_plane_mixing_bounded_theorem_note_2026-09-16",
+  "note": "docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+  "runner": "scripts/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.py",
+  "helpers": [],
+  "packet_helpers": [],
+  "transitive_helpers": [],
+  "resolved_helpers": [],
+  "ordered_inputs": [
+    {
+      "path": "docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "bd7968234832dcd13368f4208b2081a69aaf9674b1e9b24b65f44ee986f26b0a"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+    }
+  ],
+  "input_fingerprint": "87e68e1635904857ab0919b30c00c019670c2006b1dcaea7f41f82604776b0b0",
+  "timeout": 900,
+  "memory_mb": 768,
+  "citations": [
+    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/work_history/repo/review_feedback/pr8170-evidence/README.md"
+  ],
+  "parents": [
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md"
+  ],
+  "registry_edits_needed": false,
+  "actual_current_base": "8bf464953779b8ada8415208e89a656411f9f525",
+  "source_tree": "3ec7c92b81e9ec8ff85d79af9c982faff5b07aa2"
+}

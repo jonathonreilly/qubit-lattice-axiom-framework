@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8170",
+  "tree": "3ec7c92b81e9ec8ff85d79af9c982faff5b07aa2",
+  "cache_checked": false,
+  "notes": [
+    {
+      "path": "docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "sphere_level_kernel_moments_walk_local_limit_and_finite_plane_mixing_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/work_history/repo/review_feedback/pr8170-evidence/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8770,
+      "misses": 4533
+    },
+    "packet_imports": {
+      "hits": 8760,
+      "misses": 4531
+    },
+    "declared_inputs": {
+      "hits": 8800,
+      "misses": 4686
+    }
+  },
+  "record_sha256": "c06333ca7a1f24fe9f4cbdbe38d37063188a23c8353f0ff80ef6c804bd8f2677",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

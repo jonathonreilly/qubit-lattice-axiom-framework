@@ -1,0 +1,132 @@
+{
+  "status": "PROPOSED; NOT EXECUTED",
+  "builder": {
+    "path": "/private/tmp/review-drain-20260915/drain8170-build-staged-draft-v1.py",
+    "sha256": "8c5ca78d6f4a39ef13fab9bdc2a195458bd3a180129eefdf43614c01adb4c227"
+  },
+  "adapter": {
+    "path": "/private/tmp/review-drain-20260915/drain8170-capture-v1.py",
+    "sha256": "d6f4f4e4765ced392030bab8465cabf331bccb220c4dc88ce6f8b8a9f9cea545"
+  },
+  "immutable_bindings": {
+    "path": "/private/tmp/review-drain-20260915/drain8170-builder-bindings-v1.json",
+    "sha256": "7046f77df395bbbf136a19b6f2fbd8f5c0d511bb83826ec28c92ff8f23181bdf"
+  },
+  "early_review": {
+    "path": "/private/tmp/review-drain-20260915/drain8170-early-review-v2.json",
+    "sha256": "01bc3b8aadb5231e4145b7d9fd423727c058de7bf186ea30053abba16707d3e4"
+  },
+  "prepared": {
+    "path": "/private/tmp/review-drain-20260915/drain8170-author-prepared-v2.json",
+    "sha256": "8a417cb105b96e60e8e942673ac4ce01818f2b4754c4537fecad17461f3756a8"
+  },
+  "unique_programs": 1,
+  "primary": {
+    "path": "scripts/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.py",
+    "sha256": "3bcc5fd69299c8c176321bd95ae46416a3325e4a0ed1f9916ff820baf7236cca"
+  },
+  "runtime_inputs": [
+    {
+      "path": "docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "bd7968234832dcd13368f4208b2081a69aaf9674b1e9b24b65f44ee986f26b0a"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+    }
+  ],
+  "mathematical_closure": "Complete corrected moment/series/mean proof, literal local-limit proof and finite-plane proof, declared auxiliary recurrence variance proof and finite six-axis enumeration in canonical note. Standard math imports explicit; no empirical fits or sibling phase theorem used. Deferred auxiliary obstruction and twist/nonlinear histories are recovery, not live dependencies.",
+  "supporting_proofs": [],
+  "supporting_proof_rationale": "All current proof bodies are in the canonical note. Deferred appendix and exact historical Markdown are recovery, not current supporting authority; no live supporting proof is relabeled.",
+  "parents": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "Framework or finite product-rule vocabulary only; no selection of sphere process"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "role": "Framework or finite product-rule vocabulary only; no selection of sphere process"
+    }
+  ],
+  "context_only": [
+    {
+      "path": "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "01b4ca057540b1f84b261f5b7ce4328540b7efa9ca845a95c14e9952a75006e2"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_STATIC_SIX_AXIS_REFLECTION_IDENTITIES_AND_CONDITIONAL_CONTOUR_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "9632e807157b58cbbbac39d9632f2806b49ec221a664c3dda5f941106833bd16"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_SPHERE_STATIC_LAW_FINITE_TORUS_MAGNETIZATION_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "1ead528308a21cded343d0790dd9de2715eeacdc47d6d1b4922a3358dbcbe179"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_CUBIC_WALK_RETURN_SUM_AND_SPHERE_STATIC_MAGNETIZATION_SUFFICIENT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "4007d47a15efe7ba10159ea268cbae4ddd1b5420c6b5fcbd6a88e6917aba2ac2"
+    }
+  ],
+  "helpers": [],
+  "registry_edits": [],
+  "timeout_sec": 900,
+  "process_tree_rss_limit_bytes": 805306368,
+  "budget_policy": "Externally sample supervisor plus worker and descendants every 20 ms; enforce wall clock and sampled aggregate RSS, kill group/observed descendants on breach or monitor error, preserve receipt/raw/live outputs. No automatic retry or cap increase. This is sampled enforcement, not a hard OS memory reservation.",
+  "output_contract": {
+    "stdout": "logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.txt",
+    "json": "logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.json",
+    "total": "TOTAL: PASS=17 FAIL=0",
+    "checks": 17,
+    "json_fields": [
+      "checks",
+      "passed",
+      "failed",
+      "source_sha256",
+      "input_sha256",
+      "mutation"
+    ],
+    "mutation": null
+  },
+  "once_only": "Exclusive prepared-v2 attempt marker plus refusal to overwrite canonical cache, JSON or in-progress output. Actual runner_cache.execute_and_write_cache called once by worker; identity generation checks plus full record before/after snapshot. No source import for metadata.",
+  "capture_requirements": [
+    "Root authorization flag",
+    "Exact schema2 record and cheap result hashes, same staged tree and fresh expected origin/main",
+    "Original reviewer cold report bound to same tree with recognized explicit capture clearance; unknown actual wording requires a new adapter version, not inference",
+    "Actual source and input bytes unchanged; owner PR8170-author",
+    "No earlier primary evidence or attempt"
+  ],
+  "mutation_plan": {
+    "status": "PENDING; this primary adapter never executes mutations",
+    "names": {
+      "kernel_mean_wrong": "B",
+      "second_moment_wrong": "B",
+      "langevin_bound_wrong": "B",
+      "gain_wrong": "C",
+      "path_identity_wrong": "D",
+      "return_constant_wrong": "D",
+      "return_lower_bound_wrong": "D",
+      "harmonic_bound_wrong": "D",
+      "one_site_chain_wrong": "E",
+      "minorization_wrong": "E",
+      "exponent_wrong": "E",
+      "sixaxis_deviation_wrong": "E",
+      "positive_series_coefficient_wrong": "B",
+      "exact_mean_gain_wrong": "C"
+    },
+    "count": 14,
+    "per_program_limits": {
+      "seconds": 900,
+      "bytes": 805306368
+    },
+    "output_pattern": "logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--<mutation>.json",
+    "required_contract": "Separate root-dispatched adapter must preserve each exit/stdout/JSON and identity, require nonzero exit with expected failed family, and preserve any unexpected survival; never replace or count historical retired prose checks. No successful mutation evidence claimed."
+  },
+  "next_steps": "Root inspects; guarded main advancement, builder staging, cheap preflight and original reviewer cold confirmation precede single capture. Cache staging/final record/final same-session review/integration remain separate root actions.",
+  "executions": 0,
+  "staging": 0
+}

@@ -1,0 +1,37 @@
+{
+  "status": "PROPOSED; ADAPTER NOT EXECUTED",
+  "adapter": {
+    "path": "/private/tmp/review-drain-20260915/drain8170-mutation-capture-v1.py",
+    "sha256": "54d4a4d1974e7295b5b1a7ad38d353bc74d0bb3dbbfe86a253b29a1831aa849e"
+  },
+  "invocation": "One required --mutation NAME per root-dispatched invocation. All fourteen names allowed exactly once through exclusive prepared-v2/name marker. No automatic loop, retry, cap increase or baseline rerun.",
+  "mutations": {
+    "kernel_mean_wrong": "B",
+    "second_moment_wrong": "B",
+    "langevin_bound_wrong": "B",
+    "gain_wrong": "C",
+    "path_identity_wrong": "D",
+    "return_constant_wrong": "D",
+    "return_lower_bound_wrong": "D",
+    "harmonic_bound_wrong": "D",
+    "one_site_chain_wrong": "E",
+    "minorization_wrong": "E",
+    "exponent_wrong": "E",
+    "sixaxis_deviation_wrong": "E",
+    "positive_series_coefficient_wrong": "B",
+    "exact_mean_gain_wrong": "C"
+  },
+  "source_json_pattern": "logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--<mutation>.json",
+  "stdout_pattern": "/private/tmp/review-drain-20260915/drain8170-mutation-<name>-v1.stdout.txt",
+  "stderr_pattern": "/private/tmp/review-drain-20260915/drain8170-mutation-<name>-v1.stderr.txt",
+  "receipt_pattern": "/private/tmp/review-drain-20260915/drain8170-mutation-<name>-v1.json",
+  "budget": {
+    "seconds": 900,
+    "aggregate_sampled_rss_bytes": 805306368
+  },
+  "dependencies": "Exact successful primary receipt and all artifact hashes, unchanged source/input generation identities, actual same-tree original reviewer cold clearance. Pending actual cold report schema must match recognized verdict; unknown schema fails and needs separate adapter version.",
+  "scratch": "None needed: actual CLI writes unique --<mutation>.json under logs/runner-cache; no program source generation, imports of historical scripts, fabricated inputs or baseline cache writes.",
+  "success_contract": "Exit exactly1, structured failed count positive, expected target family fails, stdout family/total match JSON; check totals are finite diagnostics only. Survival, abnormal exit, budget, monitor and identity failures preserved.",
+  "ordering": "Dispatch before staging primary cache; current index must still equal the cold source tree. Each name dispatched separately; root stops on failure and reviews evidence.",
+  "verification": "Parsed and compiled adapter AST only; inspected runner CLI/imports and output contract. No primary/mutation/science module import or gate executed."
+}

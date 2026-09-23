@@ -1,0 +1,113 @@
+[
+  {
+    "slot": "drain-review8137",
+    "head": "59024639572d6d3a1091c727297b18c350d3f484",
+    "status_count": 3,
+    "status_sample": [
+      "?? docs/POSSIBILITY_SYMMETRIC_SEQUENTIAL_FORMATION_THAT_VARIES_HAS_ORDER_DEPENDENT_RECORD_STATISTICS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "?? logs/runner-cache/possibility_symmetric_sequential_variation_forces_order_dependence_2026_09_15.txt"
+    ],
+    "ignored_count": 0,
+    "main_preserved": true,
+    "state_exists": false
+  },
+  {
+    "slot": "drain-review8146",
+    "head": "59024639572d6d3a1091c727297b18c350d3f484",
+    "status_count": 0,
+    "status_sample": [],
+    "ignored_count": 0,
+    "main_preserved": true,
+    "state_exists": false
+  },
+  {
+    "slot": "drain-review8145",
+    "head": "c5580db2ebe78e4dca71f210539cea1471148483",
+    "status_count": 0,
+    "status_sample": [],
+    "ignored_count": 0,
+    "main_preserved": false,
+    "state_exists": false
+  },
+  {
+    "slot": "resume-main",
+    "head": "d5949b991200fd9ca006725446808c0df1a58e1a",
+    "status_count": 0,
+    "status_sample": [],
+    "ignored_count": 0,
+    "main_preserved": false,
+    "state_exists": false
+  },
+  {
+    "slot": "resume-8077-review",
+    "head": "fb13597955e3b167866d02276a7c7794eef83d1c",
+    "status_count": 0,
+    "status_sample": [],
+    "ignored_count": 0,
+    "main_preserved": false,
+    "state_exists": false
+  },
+  {
+    "slot": "drain-author8137",
+    "head": "8bddda36f7c881d6397af942f367e4a528ce76f5",
+    "status_count": 0,
+    "status_sample": [],
+    "ignored_count": 0,
+    "main_preserved": false,
+    "state_exists": false
+  },
+  {
+    "slot": "drain-author8143",
+    "head": "cbbae9bebfd9fd107064d020c9de216b01f2884e",
+    "status_count": 0,
+    "status_sample": [],
+    "ignored_count": 1,
+    "main_preserved": false,
+    "state_exists": false
+  },
+  {
+    "slot": "drain-author8145",
+    "head": "f8e2002fe2667b64771bc7a796a1329f9ba9a2c3",
+    "status_count": 0,
+    "status_sample": [],
+    "ignored_count": 0,
+    "main_preserved": false,
+    "state_exists": false
+  },
+  {
+    "slot": "drain-author8146",
+    "head": "6365fbdc6e96d2b7f1951959577d2a6974bd6eda",
+    "status_count": 0,
+    "status_sample": [],
+    "ignored_count": 5,
+    "main_preserved": false,
+    "state_exists": false
+  },
+  {
+    "slot": "resume-author8077",
+    "head": "ec25f543abf4bbf4a6760ab7e9f4d2ae4fb9af13",
+    "status_count": 0,
+    "status_sample": [],
+    "ignored_count": 0,
+    "main_preserved": false,
+    "state_exists": false
+  },
+  {
+    "slot": "resume-author8078",
+    "head": "41472e8772ea1fab5bc592360d13e19ef4c3d905",
+    "status_count": 0,
+    "status_sample": [],
+    "ignored_count": 0,
+    "main_preserved": false,
+    "state_exists": false
+  },
+  {
+    "slot": "resume-author8083",
+    "head": "50e18ef2ec162927f4256f2641ae2c62a2dc93c4",
+    "status_count": 0,
+    "status_sample": [],
+    "ignored_count": 0,
+    "main_preserved": false,
+    "state_exists": false
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "runner": "synthetic-only.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "synthetic stdout survives identity drift\n",
+  "stderr": "synthetic stderr\n",
+  "elapsed_sec": 0.001,
+  "timeout_sec": 900,
+  "live_log": "/private/tmp/review-drain-20260915/drain8170-synthetic-live-v2.txt"
+}

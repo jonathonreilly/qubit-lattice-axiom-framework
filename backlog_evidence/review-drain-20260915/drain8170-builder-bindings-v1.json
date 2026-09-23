@@ -1,0 +1,66 @@
+[
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8170-review-original.json",
+    "sha256": "50c0805a36729945a28283fc603c34612f709a1e120e3017170373d4031fed6c"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8170-review-original.md",
+    "sha256": "689aedcb7391fe4830999865cff197312be26596a2f1f406bf3a2642ec66163e"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8170-author-prepared-v2.json",
+    "sha256": "8a417cb105b96e60e8e942673ac4ce01818f2b4754c4537fecad17461f3756a8"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8170-prepared-v2-source-freeze.json",
+    "sha256": "85ed6d5761e216ebe92f056d4c725e535b1b0e6906aeda59c6a30f6d9ddeb749"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8170-author-full-mapping-v2.json",
+    "sha256": "5c6a582d9cfc25c35700a704311674f981c33e294b56fc321041ebac44723f45"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8170-author-input-resource-plan-v2.json",
+    "sha256": "481eb44a14431361852b6cebaa6ba9a9fee33619297a1c2b8b5734c74c3b8c04"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8170-author-discovery-v2.json",
+    "sha256": "1ea9b35090823ad3dcd018ea324a01053cae1449e96c9bcc2a63aa04beba678c"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8170-author-preservation-v1.json",
+    "sha256": "47a0d2796d117b9063f8e318f1cdc31c2f30ec709bcad0d3e1980ced11fa55ec"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8170-author-final-read-v2.json",
+    "sha256": "72c5afdfc96e2ac79c67379aa4bd65936e0f54a0eaa7722d2fbf1345df329abc"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8170-author-correction-v2.diff",
+    "sha256": "8dc0e0555aac8a81d38a585deaaa4a3450dcf37e2621236c0e1874a979ce3875"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8170-author-v1-to-v2.diff",
+    "sha256": "a9ea9dcfc2cec155f597719873b46f7ef9764b0d5ed916c73869280b9526ea17"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8170-author-finding-dispositions-v2.json",
+    "sha256": "e7e4c650d69ad6bdaad008893bb7368ea563bdd3d97330b902e0eb5923679aad"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8170-original/manifest.json",
+    "sha256": "823c97328403c8365a2fcb16f3945b68e1214752692c61f1383ca620a87d1aa8"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8170-original/input-bindings.json",
+    "sha256": "0f5fbf64cf9b510a1cf99d551f2dc5acdd1825dd3e2910d2f52505898b91f712"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8170-early-review-v2.json",
+    "sha256": "01bc3b8aadb5231e4145b7d9fd423727c058de7bf186ea30053abba16707d3e4"
+  },
+  {
+    "path": "/private/tmp/review-drain-20260915/drain8170-early-review-v2.md",
+    "sha256": "44eac5d1c04feb4d01542c069b8e09f2e6e2c173410b00c3abdc5a11ab85d4c6"
+  }
+]

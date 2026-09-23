@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "reviewer_session": "/root/review_8170",
+  "same_original_session": true,
+  "pr": 8170,
+  "created_utc": "2026-09-23T03:37:51.158112+00:00",
+  "tree": "3ec7c92b81e9ec8ff85d79af9c982faff5b07aa2",
+  "base": "8bf464953779b8ada8415208e89a656411f9f525",
+  "decision": "CAPTURE_HELD",
+  "source_decision": "COLD_SOURCE_CLEARED",
+  "scope": "Exact staged science, recovery, inputs and resource proposal clear; capture-v1 adapter blocked. No evidence or landing PASS.",
+  "material_science_findings": [],
+  "blockers": [
+    {
+      "id": "8170-cold-1",
+      "kind": "FAILURE_EVIDENCE_PRESERVATION",
+      "path": "/private/tmp/review-drain-20260915/drain8170-capture-v1.py",
+      "related_path": "scripts/runner_cache.py:640",
+      "detail": "The worker calls execute_and_write_cache and only serializes its result after that API returns. On source/input identity drift the API unlinks the live stdout before raising RunnerIdentityChangedError. The outer adapter preserves supervisor traceback and any existing artifacts, but actual primary stdout can already be deleted. This contradicts its all-partial-evidence preservation contract.",
+      "narrow_fix": "Use a separate versioned capture adapter that durably preserves the actual execute_runner result outside the checkout before the existing API performs identity/cache checks; retain drift rejection and no-cache behavior. Validate failure preservation with a synthetic fake result and no science execution. No canonical source/runner change is needed.",
+      "root_response": "Root confirmed API behavior; no capture will run; author preparing separate immutable v2. Delta confirmation required."
+    }
+  ],
+  "source_confirmation": {
+    "paths": 30,
+    "staged_worktree_frozen_identity": "Every path compared to stage-0 Git blob, staged tree blob and prior v2 SHA256; exact 30 added paths, no unstaged changes.",
+    "original_recovery": "Prior exact 25-path raw Git/gzip/mode verification reused because all archive bytes/modes remain at the same frozen identities. All complete proofs, historical failures and deferred negative science remain preserved.",
+    "proofs": "Full corrected canonical note and primary already read in this same session; eight original findings remain resolved at narrowed scope. No byte or premise change since early v2 review.",
+    "inputs": "All runtime (4), parents (2), context (23) and tooling (7) recorded hashes checked; no helpers. Runtime includes runner plus three declared inputs; input fingerprint from completed actual API discovery matches prior source bindings.",
+    "discovery": "Completed builder/cache-api and cheap preflight report identify one canonical bounded theorem, expected primary, zero helper closures, two mathematical authority links and historical README context. No authority-registry edits.",
+    "counts": "17 check calls and 14 current mathematical mutations remain source-derived, unexecuted."
+  },
+  "main_interaction": {
+    "from": "012c276a64c80cf5256d68fa7dbb06939586153b",
+    "to": "8bf464953779b8ada8415208e89a656411f9f525",
+    "changes": "Train83 adds four supplied compact-rotor/comparison notes and a supplied frame-attached four-point probability note, their runners/evidence/recovery and topology acknowledgment.",
+    "assessment": "PR8166 concerns lifted Brownian bridges, real convex comparison, conditional integer filling and magnetic covariance; its compact-law transfer and physical selection remain open. PR8169 concerns exchange-covariant probabilities on a finite frame-attached menu and explicitly supplies its representation/menu. Neither changes the uniform-sphere, three-predecessor level kernel supplied by PR8170, nor supplies its beta, schedule, law or noise. No proof/import from these additions is consumed. No overlapping source path or changed premise/helper/API requires reopening sphere mathematics.",
+    "unchanged": "Axiom memo, primitive registry, product-rule parent, review-loop sources and runner_cache unchanged across base advance; prior now-landed PR8168 small-noise context unchanged.",
+    "preservation": "Candidate adds only its exact 30 paths; train83 source, history and current shared boards are retained intact. Historical topology is compressed recovery only; live final topology regeneration remains coordinator duty."
+  },
+  "resource_plan": {
+    "timeout_seconds": 900,
+    "sampled_process_tree_rss_limit_bytes": 805306368,
+    "measurement_status": "Unmeasured proposal, not benchmark evidence.",
+    "assessment": "Fixed k<=150 rational/SymPy workload, no arrays or simulations, suitable for bounded execution. Adapter includes supervisor/worker/descendant RSS and 20ms polling delay, with ps command time and scheduling overhead, not a hard OS-memory reservation or exact 20ms sampling guarantee. Threshold violations kill group/known descendants and preserve evidence except blocker above. No automatic retry or cap extension.",
+    "primary_attempts": 0,
+    "mutations_executed": 0,
+    "simulation_runs": 0,
+    "formal_gates_run_by_reviewer": 0,
+    "pending": "Adapter delta confirmation, actual once-only primary/mutation evidence, final same-session confirmation and combined integrated gate."
+  },
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-author-unit-draft-v1.json",
+      "sha256": "c06333ca7a1f24fe9f4cbdbe38d37063188a23c8353f0ff80ef6c804bd8f2677"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-author-source-handoff-v1.json",
+      "sha256": "0d85e4252f64f67313c7cf6a7e37da1a3a46f073bcb00583e438ea5280fff7e5"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-author-cache-api-v1.json",
+      "sha256": "fc7111feb8e6f0b09da644891addd7577b195c3a938a139fdec99f13f21f98f2"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-author-cheap-v1.json",
+      "sha256": "284f9f2acbc5fda7e5b0352ab031e3a0563901ea83c0723f4520884639601c42"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-capture-plan-v1.json",
+      "sha256": "8c080122601ed1c69336f0184a63ac35a67b15508ea404dab7094e72f12fdbfb"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-capture-v1.py",
+      "sha256": "d6f4f4e4765ced392030bab8465cabf331bccb220c4dc88ce6f8b8a9f9cea545"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-advance-train83.json",
+      "sha256": "8db9bbac28977bc281a4b53c9e8f57759d80ee69104a11687f735e071f6ea6ee"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-early-review-v2.json",
+      "sha256": "01bc3b8aadb5231e4145b7d9fd423727c058de7bf186ea30053abba16707d3e4"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-prepared-v2-source-freeze.json",
+      "sha256": "85ed6d5761e216ebe92f056d4c725e535b1b0e6906aeda59c6a30f6d9ddeb749"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8170/cold_metadata_v1.json",
+      "sha256": "62689de1ab5ff638ae023d1a18edba6e5996c1dae914778a01afb13dc7548244"
+    }
+  ],
+  "author_slot_state": {
+    "staged_tree": "3ec7c92b81e9ec8ff85d79af9c982faff5b07aa2",
+    "head": "8bf464953779b8ada8415208e89a656411f9f525",
+    "verified_paths": 30,
+    "verified_input_groups": {
+      "runtime": 4,
+      "helpers": 0,
+      "parents": 2,
+      "context": 23,
+      "tooling": 7
+    },
+    "unstaged": "",
+    "unexpected_staged": []
+  },
+  "commits": 0,
+  "source_edits": 0,
+  "staging_by_reviewer": 0
+}

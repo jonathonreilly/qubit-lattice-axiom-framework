@@ -1,0 +1,35 @@
+{
+  "status": "SYNTAX AND ACTUAL METADATA ONLY; BUILDER AND CAPTURE NOT RUN",
+  "artifacts": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-build-staged-draft-v1.py",
+      "sha256": "8c5ca78d6f4a39ef13fab9bdc2a195458bd3a180129eefdf43614c01adb4c227"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-capture-v1.py",
+      "sha256": "d6f4f4e4765ced392030bab8465cabf331bccb220c4dc88ce6f8b8a9f9cea545"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-capture-plan-v1.json",
+      "sha256": "8c080122601ed1c69336f0184a63ac35a67b15508ea404dab7094e72f12fdbfb"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8170-builder-bindings-v1.json",
+      "sha256": "7046f77df395bbbf136a19b6f2fbd8f5c0d511bb83826ec28c92ff8f23181bdf"
+    }
+  ],
+  "source_files_unchanged": 30,
+  "index": "",
+  "tracked": "",
+  "actual_api": {
+    "inputs": [
+      "docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md"
+    ],
+    "timeout": 900,
+    "helpers": [],
+    "registry_changes": false
+  },
+  "review_decision": "EARLY SOURCE CLEARANCE for staged draft, cold read and bounded capture; NOT final landing PASS"
+}

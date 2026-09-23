@@ -1,0 +1,20 @@
+{
+  "status": "SYNTHETIC IDENTITY-DRIFT PRESERVATION CONTROL PASSED",
+  "calls": [
+    [
+      "synthetic-only.py",
+      900
+    ]
+  ],
+  "expected_error": "RunnerIdentityChangedError('runner or declared input changed during execution: synthetic-only.py; before=<object object at 0x102320a90>; after=<object object at 0x102320aa0>')",
+  "actual_api_deleted_live": true,
+  "external_raw_result_preserved": true,
+  "cache_publications": 0,
+  "science_executions": 0,
+  "wrapper_sha256": "2306d002bac2497912d49c5eff848dff384967c0a7bb46816f067aa2329299fd",
+  "raw_result": {
+    "path": "/private/tmp/review-drain-20260915/drain8170-synthetic-raw-result-v2.json",
+    "sha256": "ad3668a0c32a3e8f1adc390f7ebb22a6cafaefd04939554756b818e68a5ca2d3"
+  },
+  "adapter_sha256": "dff1c5e96b79a8267aa856865b7d158dc2bc342a7587698ded1bca8182303379"
+}

@@ -1,0 +1,32 @@
+external_scientific_inputs: the current axiom and reviewed current-main imaginary-trace prior, Gaussian compiler, and CNOT boundary are source-bound; no closed-unmerged source, literature theorem, observed probability, fitted parameter, or external PR artifact is imported
+package_local_integrity_reads: the proposed theorem note is checked for construction, boundary, trace status, and N1-N8 surfaces; the cache envelope binds every declared input
+analytic_boundary: Gaussian factorization, entire continuation by dominated differentiation, and the identity-theorem contradiction are proved in the source; exact variances, weights, poles, and finite fixtures are executed here
+negative_scope: only one fixed bounded content-only readout kernel on the displayed Gaussian translation family and one fixed half-projector effect are bounded; indexed decoders, tagged records, changed laws, finite center sets, and physical processes remain live
+PASS: source-current-axiom the current neighborhood-varying probability and content-only Record clauses are present
+PASS: source-imaginary-trace-prior the current-main overlap proves the Hermitian kernel but leaves every physical readout and Gaussian extension open
+PASS: source-compiler-parent the current-main Gaussian uniformizer is explicitly conditional on fixed C and a supplied program
+PASS: source-contact-parent the current-main CNOT theorem accepts a local quantile comparator while leaving its threshold and registration open
+PASS: imaginary-trace-variance the two independent diagonal imaginary coordinates have total variance one
+PASS: hermitian-center-imaginary-trace every tested Hermitian Gaussian center has zero imaginary trace
+PASS: imaginary-trace-conjugation-invariance the content statistic is invariant under two exact unitary conjugations
+PASS: common-uniformizer-parameters all Hermitian centers leave the imaginary-trace statistic at exact mean zero and variance one
+PASS: extractor-weight-fixtures three finite extractor members reproduce twelve exact half-projector weights
+PASS: finite-offset-weight-variation every tested finite extractor member varies across an open-center family rather than supplying one constant threshold
+PASS: fixed-threshold-condition-independence a fixed threshold of the common uniformizer has one probability at every tested center
+PASS: indexed-threshold-realization condition-indexed thresholds exactly realize every displayed target weight
+PASS: finite-offset-pole-location the rational target denominator vanishes at a finite nonreal squared pole for every tested lambda
+PASS: finite-offset-pole-nonremovable the target numerator remains exactly minus (lambda+2) at every tested pole
+PASS: noninteger-finite-offset-pole the pole and nonzero residual identities also hold at exact noninteger finite lambda fixtures
+PASS: entire-identity-contradiction-fixture the entire cross-multiplied identity evaluates to a nonzero lambda+2 residual at each denominator root
+PASS: raw-member-rational-decomposition the lambda-zero target is exactly one-half minus one over t-squared-plus-four on representative centers
+PASS: construction-source-surface the source states the common uniformizer, entire transform, rational target, boundary, and indexed escape
+PASS: boundary-source-surface the source preserves the interval, finite-set, tagged-decoder, global-negative, and governance limits
+PASS: machine-status-contract the source carries the complete bounded upstream-support trace contract
+PASS: canonical-nonmutation the imaginary-trace/Weierstrass decoder notation is absent from the canonical axiom memo
+PASS: no-go-gate all N1-N8 sections, source matching, primitive scan, and global-negative rejection are visible
+per_element: both diagonal imaginary coordinates, twelve rational target weights, eight pole fixtures, and representative fixed/indexed thresholds are checked
+per_site: one M_2(C) Record site is executed across the continuous C=tP_z preparation slice with one fixed half-projector effect; no occurrence process is asserted
+per_mode: common-uniformizer, fixed-kernel, condition-indexed-threshold, finite-lambda, and unitary-conjugation modes are separated exactly
+per_block: the Gaussian law-to-common-uniformizer positive route and fixed-content-readout entire-function boundary are checked through the tagged-program residual
+lattice_wide: checked and not executed — Hermitian-center and conjugation invariance are analytic, while program-tag propagation, Record formation, and histories remain absent
+TOTAL: PASS=22 FAIL=0

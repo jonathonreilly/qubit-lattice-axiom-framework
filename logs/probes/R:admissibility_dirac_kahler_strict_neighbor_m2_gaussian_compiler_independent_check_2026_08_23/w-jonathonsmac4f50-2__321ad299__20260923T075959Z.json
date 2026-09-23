@@ -1,0 +1,31 @@
+{
+ "task": "R:admissibility_dirac_kahler_strict_neighbor_m2_gaussian_compiler_independent_check_2026_08_23",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_strict_neighbor_m2_gaussian_compiler_independent_check_2026_08_23.py",
+ "seed": 50399,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "321ad299",
+ "started_utc": "20260923T075959Z",
+ "elapsed_s": 5.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "83b2c6a63adfa41396481b50959b1ba214a3fdac9e94b10a70cd90c6937a0acb",
+ "stdout_tail": "ver independently has eleven-term residuals and at most eight bulk occurrences per original, below the 24 neighboring M2 port coordinates\nPASS independent-interface-preservation: the mass-one c=1/3 disjoint cover independently recovers the determinant arm law and Herm(q^-1) covariance that normalized compiler integration must preserve\nPASS independent-cubic-orbit: an independently enumerated proper-cubic group gives a free 24-frame tag orbit and preserves the six physical neighbor directions\nPASS independent-mutations: a normalized zero mediator contributes exactly one, omitting its C/pi normalization leaves pi/C, and a sign mutation changes the exact Schur target\nPASS independent-boundary: the extracted runtime closure and current Block 105 supplier are hash-bound, and the final note keeps measure/action selection, Record process, retention, and TOE accounting outside the theorem\nper_element: independent Schur identity, reversed compiler, hidden determinant, signs, and normalization are exact\nper_site: three changed rows, sixteen Record-neighbor coordinates, and the M2 port budget are independently reconstructed\nper_mode: the mass-one c=1/3 Gram, determinant partition, covariance, and 24-frame cubic orbit are checked\nper_block: disjoint physical-time-eight cover, four arms, all rows, and the final claim boundary are checked\nlattice_wide: NOT CLOSED; no periodic cover-independent fixed-density embedding, seam proof, or full site-map covariance is claimed\nTOTAL: PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T080004Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

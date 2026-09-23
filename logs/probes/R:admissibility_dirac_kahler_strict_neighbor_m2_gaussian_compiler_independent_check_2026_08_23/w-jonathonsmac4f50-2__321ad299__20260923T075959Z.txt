@@ -1,0 +1,15 @@
+PASS independent-normalized-split: a direct three-variable Schur calculation reconstructs the fixed C=9/2 complex-Gaussian identity
+PASS independent-reversed-eleven-leaf-compiler: a reversed leaf order and reverse-biased recursion independently recover the rank-one precision and C^12 hidden determinant
+PASS independent-m3-local-innovation-parent: the disjoint xgraded width-four, physical-time-eight, mass-one cover has an exact reversed-edge c=1/3 Gram split on all four arms
+PASS independent-record-star-capacity: the independently reconstructed arm mutation has three rows and sixteen complex inputs, hence fits at most three per six Record neighbors
+PASS independent-arity-and-port-bounds: the disjoint cover independently has eleven-term residuals and at most eight bulk occurrences per original, below the 24 neighboring M2 port coordinates
+PASS independent-interface-preservation: the mass-one c=1/3 disjoint cover independently recovers the determinant arm law and Herm(q^-1) covariance that normalized compiler integration must preserve
+PASS independent-cubic-orbit: an independently enumerated proper-cubic group gives a free 24-frame tag orbit and preserves the six physical neighbor directions
+PASS independent-mutations: a normalized zero mediator contributes exactly one, omitting its C/pi normalization leaves pi/C, and a sign mutation changes the exact Schur target
+PASS independent-boundary: the extracted runtime closure and current Block 105 supplier are hash-bound, and the final note keeps measure/action selection, Record process, retention, and TOE accounting outside the theorem
+per_element: independent Schur identity, reversed compiler, hidden determinant, signs, and normalization are exact
+per_site: three changed rows, sixteen Record-neighbor coordinates, and the M2 port budget are independently reconstructed
+per_mode: the mass-one c=1/3 Gram, determinant partition, covariance, and 24-frame cubic orbit are checked
+per_block: disjoint physical-time-eight cover, four arms, all rows, and the final claim boundary are checked
+lattice_wide: NOT CLOSED; no periodic cover-independent fixed-density embedding, seam proof, or full site-map covariance is claimed
+TOTAL: PASS=9 FAIL=0

@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_gaussian_content_only_uniformizer_weierstrass_decoder_boundary_2026_08_10",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_gaussian_content_only_uniformizer_weierstrass_decoder_boundary_2026_08_10.py",
+ "seed": 50549,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "321ad299",
+ "started_utc": "20260923T080229Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=22 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8342c94129500a18f3b5b32655c9048929829899b9fff60adff0494a463785fa",
+ "stdout_tail": "y one-half minus one over t-squared-plus-four on representative centers\nPASS: construction-source-surface the source states the common uniformizer, entire transform, rational target, boundary, and indexed escape\nPASS: boundary-source-surface the source preserves the interval, finite-set, tagged-decoder, global-negative, and governance limits\nPASS: machine-status-contract the source carries the complete bounded upstream-support trace contract\nPASS: canonical-nonmutation the imaginary-trace/Weierstrass decoder notation is absent from the canonical axiom memo\nPASS: no-go-gate all N1-N8 sections, source matching, primitive scan, and global-negative rejection are visible\nper_element: both diagonal imaginary coordinates, twelve rational target weights, eight pole fixtures, and representative fixed/indexed thresholds are checked\nper_site: one M_2(C) Record site is executed across the continuous C=tP_z preparation slice with one fixed half-projector effect; no occurrence process is asserted\nper_mode: common-uniformizer, fixed-kernel, condition-indexed-threshold, finite-lambda, and unitary-conjugation modes are separated exactly\nper_block: the Gaussian law-to-common-uniformizer positive route and fixed-content-readout entire-function boundary are checked through the tagged-program residual\nlattice_wide: checked and not executed \u2014 Hermitian-center and conjugation invariance are analytic, while program-tag propagation, Record formation, and histories remain absent\nTOTAL: PASS=22 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T080230Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

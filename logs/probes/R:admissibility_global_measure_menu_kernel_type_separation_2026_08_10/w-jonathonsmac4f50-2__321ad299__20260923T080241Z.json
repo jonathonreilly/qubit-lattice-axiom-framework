@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_global_measure_menu_kernel_type_separation_2026_08_10",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_global_measure_menu_kernel_type_separation_2026_08_10.py",
+ "seed": 50561,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "321ad299",
+ "started_utc": "20260923T080241Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=20 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bfdd6daf1ebf97066762f733a95ec082c22a2aa8f37489d75361f7a28ba88f5a",
+ "stdout_tail": "and 2/11\nPASS: atomic-context-separation the same effect differs across the two menus by exactly -9/1562\nPASS: trace-grade-control the maximally mixed trace grade assigns E0 one quarter in both menus and normalizes each\nPASS: candidate-sufficiency-surface the note links the existing measure to all four abstract interfaces, keeps the wording hypothetical, and leaves the content-only Record bridge open\nPASS: claim-type-contract the author hint uses the exact bounded-theorem enum\nPASS: machine-status-contract the source uses the controlled bounded-support and negative-route-pruning trace fields\nPASS: canonical-nonmutation the hypothetical partition/menu-kernel notation is absent from the canonical axiom file\nPASS: no-go-gate all N1-N8 sections and the broad-claim rejection are source-visible\nper_element: four exact binary projectors and five exact scaled ternary effects are checked; the shared effect is evaluated in both contexts\nper_site: the contradiction and both restriction witnesses are one-site statements at fixed neighbor data; no composite carrier is asserted\nper_mode: all seven neighbor-occupancy classes k=0,...,6 are checked for distinct Gaussian centers; no spectral-mode exhaustion is claimed\nper_block: the global-measure to normalized-menu to effect-grade interface is the only negative block tested\nlattice_wide: checked and not executed \u2014 neighbor-count covariance is an analytic source argument; no lattice-wide dynamics or Born no-go is claimed\nTOTAL: PASS=20 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T080241Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

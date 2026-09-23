@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_geometry_dependent_inner_product_finite_support_shell_boundary_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_geometry_dependent_inner_product_finite_support_shell_boundary_2026_08_14.py",
+ "seed": 50560,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "321ad299",
+ "started_utc": "20260923T080240Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "61afedcb852ff441ac09c7401fc90d6355ba0ac33010ca530021fef8c34fa539",
+ "stdout_tail": "l: the candidate failure causes no axiom amendment, retention, obligation retirement, or TO...\nSOURCE_AUTHORITY: current memo and exact declared file bytes; historical Git identities are provenance only\nper_element: derived five exact L8 rows, six exhaustive radius-one columns, the Laurent denominator, and two exact null-shell fixtures\nper_site: allowed arbitrary complex onsite and nearest-neighbour inner-product coefficients plus one shared geometry-only nonlinear response\nper_mode: rank(A)/rank([A|b])=4/5, Laurent gcd=1, and the formal inverse solution has residue -1/4 at the massless shell\nper_block: closed bounded finite-support shell-regular inner-product-only repair of the fixed Block95 M0/D0/V contract\nlattice_wide: arbitrary L-independent finite support is excluded on the fixed alias ray; changed action/calculus/carrier, quasilocal domain changes, gravity completion, Record compilation, adoption, and retention remain open\nRESULT: in the fixed-coordinate-action W-skew subcase, geometry-dependent inner product alone cannot repair the fixed Block95 nonlinear Ward identity with bounded finite support and regular physical massless modes\nDECISION_CUT: stop the inner-product-only patch; re-enter through one action that changes M0, D0, and V together or through a link/multi-degree discrete calculus, then rederive source, recoil, Ward, shell, and energy\nTOE: zero obligation retirement, zero retained-positive end-to-end theories, and no percentage movement\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T080241Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

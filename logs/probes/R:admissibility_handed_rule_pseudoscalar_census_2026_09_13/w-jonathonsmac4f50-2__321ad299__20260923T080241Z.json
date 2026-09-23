@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_handed_rule_pseudoscalar_census_2026_09_13",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_handed_rule_pseudoscalar_census_2026_09_13.py",
+ "seed": 50561,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "321ad299",
+ "started_utc": "20260923T080241Z",
+ "elapsed_s": 17.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=46 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9fca4582588ebae351e79eadd957697a4fb18f1e87703ea9d72d88b87e435c4a",
+ "stdout_tail": " T, D4; soldered mirror: D4, Omega, DM)\nS5 centre-last E[P_Y] under W_X (rows X, cols Y; T, D4, Omega, DM):\n  T: 32/243 0 0 0\n  D4: 0 320/1377 0 0\n  Omega: 0 0 2/27 2/81\n  DM: 0 0 2/45 2/15\nS5 static: T=1387678/10609137 D4=94240/408969 Omega=1778/24057 DM=196/1485; mixture=centre-last/7\nPASS S5 W_0 leaves every parity-odd correlator at zero (centre-last and static)\nPASS S5 each handed rule leaves a positive trace in its own texture; its mirror negates it\nPASS S5 T-row and T-column cross entries vanish (internal parity)\nPASS S5 order classes with an unrecorded arm carry no handed trace (S = empty, one, five arms)\nPASS S5 even statistic E[v.s] identical for W_X and W_-X\nPASS S6 sampled image index agrees with the soldered action map\nS6 unsoldered SO(3): T=handed, D4=handed, Omega=not covariant, DM=not covariant\nS6 unsoldered O(3): T=not covariant, D4=handed, Omega=not covariant, DM=not covariant\nS6 soldered: T=achiral, D4=handed, Omega=handed, DM=handed\nPASS S6 witness pairs W_0/W_T (unsoldered SO(3)), W_0/W_D4 (O(3)), W_0/W_DM (soldered): covariant, differ on the handed trace, mirror rule negates it\nPASS S6 T: handed under unsoldered SO(3), not covariant under O(3), achiral when soldered\nPASS S6 D4 is handed in all three readings; Omega and DM are handed only when soldered\nscope per_element=6 letters; per_site=7-site cross; per_mode=cubic,400/120 samples; per_block=exact sums; lattice_wide=unrun\nPASS S6 stdout stays under the 6000-byte ceiling 5658 bytes\nTOTAL: PASS=46 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T080259Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

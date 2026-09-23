@@ -1,0 +1,38 @@
+{
+ "task": "R:matter_law_readout_blind_where_role_alphabet_realises_no_adjacency_check_2026_09_04",
+ "type": "runner-reexecution",
+ "lane": "matter",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/matter_law_readout_blind_where_role_alphabet_realises_no_adjacency_check_2026_09_04.py",
+ "seed": 50625,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6a970492",
+ "started_utc": "20260923T080345Z",
+ "elapsed_s": 0.1,
+ "returncode": 1,
+ "hit": false,
+ "summary": {
+  "expected_ok": false,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ffc25749234408e0113b7d3cb72fdcb2bf628dedd2d129e15e6babbe09602fd4",
+ "stdout_tail": "\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/matter_law_readout_blind_where_role_alphabet_realises_no_adjacency_check_2026_09_04.py\", line 934, in main\n    from pysat.card import CardEnc, EncType\nModuleNotFoundError: No module named 'pysat'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/matter_law_readout_blind_where_role_alphabet_realises_no_adjacency_check_2026_09_04.py\", line 1627, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/matter_law_readout_blind_where_role_alphabet_realises_no_adjacency_check_2026_09_04.py\", line 940, in main\n    raise RuntimeError(\"complete claim coverage requires CaDiCaL\")\nRuntimeError: complete claim coverage requires CaDiCaL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T080345Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (False)",
+   "FAIL: parse field 'total' found nothing in the stdout: the run may not have reached its summary",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: the pinned cache ends with the verdict 'TOTAL: PASS=62 FAIL=0' and this run printed none",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/matter_law_readout_blind_where_role_alphabet_realises_no_adjacency_check_2026_09_04.txt against the .txt beside this log"
+  ]
+ }
+}

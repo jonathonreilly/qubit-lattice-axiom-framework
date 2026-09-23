@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_gaussian_second_moment_quantile_decoder_effect_quotient_2026_08_10",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_gaussian_second_moment_quantile_decoder_effect_quotient_2026_08_10.py",
+ "seed": 50560,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "321ad299",
+ "started_utc": "20260923T080240Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=30 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "261c102b00c84c313e7cb7aaf0bac0237eb16e7b95454be6761cf6da76222955",
+ "stdout_tail": " as zero and one\nPASS: atomic-deterministic-boundary a singleton-support deterministic decoder attains only (1,0) or (0,1), never half-half\nPASS: construction-source-surface the source states the moment, density operator, uniformizer, pushforward, and exact menu outputs\nPASS: boundary-source-surface the source states the bounded nonselection, atomic boundary, and governance limit\nPASS: machine-status-contract the source carries the complete bounded upstream-support trace contract\nPASS: canonical-nonmutation the second-moment/quantile compiler notation is absent from the canonical axiom file\nPASS: no-go-gate all N1-N8 sections, source matching, primitive scan, and global-negative rejection are visible\nper_element: all eight Gaussian coordinates, exact second moments, five menu effects, four weight vectors, and singleton atomic support are checked\nper_site: one M_2(C) site is executed at blank and all-Pz neighbor conditions; no physical site-selection or formation process is asserted\nper_mode: the centered trace uniformizer and an exact simultaneous Pauli-X conjugation control are checked; no spectral-mode exhaustion is claimed\nper_block: the fixed-condition measure-to-density-operator-to-quantile-decoder-to-effect-grade chain is checked on two ternary programs and one atomic binary control\nlattice_wide: checked and not executed \u2014 translation/proper-cubic covariance is analytic for the center rule, while global program dynamics and histories remain absent\nTOTAL: PASS=30 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T080240Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_two_direction_bench_covariant_witness_2026_09_05",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_two_direction_bench_covariant_witness_2026_09_05.py",
+ "seed": 50490,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "321ad299",
+ "started_utc": "20260923T080130Z",
+ "elapsed_s": 39.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=26 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "51fc597c137af2267c0568902b87ed27da839cb026ea18935ac1079b446d3eba",
+ "stdout_tail": " pencil block has the stated three normalized branch constants across the sampled t-x points and the mixed-point identity holds. At W1, the normalized monic characteristic polynomials at the pure-t and pure-x points differ even though Q is 16/15 at both; this cross-direction mismatch, rather than any single irrational or rational eigenvalue, is the control result. Primitive factor products are divided by their recorded leading-coefficient products before being called monic characteristic polynomials. No parent theorem, assembly choice, premise adoption, physical metric, cone, action, spacetime, continuum, dispersion law, or dynamics is claimed.\nTOTAL: PASS=26 FAIL=0\n\n[stderr]\n[phase] authority: 0 ms\n[phase] census: 1526 ms\n[phase] construction: 488 ms\n[bench] witness line onsite form\n[bench] witness line onsite pencil\n[bench] witness line overlap form\n[bench] witness line overlap pencil\n[bench] W1 line onsite form\n[bench] W1 line onsite pencil\n[bench] W1 line overlap form\n[bench] W1 line overlap pencil\n[bench] flat line onsite form\n[bench] flat line onsite pencil\n[bench] flat line overlap form\n[bench] flat line overlap pencil\n[bench] witness zero overlap form\n[bench] witness zero overlap pencil\n[bench] W1 zero overlap form\n[bench] W1 zero overlap pencil\n[bench] flat zero onsite form\n[bench] flat zero onsite pencil\n[bench] flat zero overlap form\n[bench] flat zero overlap pencil\n[phase] bench: 20619 ms\n[phase] identities: 2555 ms\n[phase] shape: 6760 ms\n[phase] control: 7000 ms\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T080209Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/admissibility_dirac_kahler_two_direction_bench_covariant_witness_2026_09_05.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,16 @@
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/matter_law_readout_blind_where_role_alphabet_realises_no_adjacency_check_2026_09_04.py", line 934, in main
+    from pysat.card import CardEnc, EncType
+ModuleNotFoundError: No module named 'pysat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/matter_law_readout_blind_where_role_alphabet_realises_no_adjacency_check_2026_09_04.py", line 1627, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-2/scripts/matter_law_readout_blind_where_role_alphabet_realises_no_adjacency_check_2026_09_04.py", line 940, in main
+    raise RuntimeError("complete claim coverage requires CaDiCaL")
+RuntimeError: complete claim coverage requires CaDiCaL

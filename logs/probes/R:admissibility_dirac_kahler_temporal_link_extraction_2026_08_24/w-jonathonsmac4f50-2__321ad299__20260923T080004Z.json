@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_temporal_link_extraction_2026_08_24",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_temporal_link_extraction_2026_08_24.py",
+ "seed": 50404,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "321ad299",
+ "started_utc": "20260923T080004Z",
+ "elapsed_s": 1.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "22fb898ef0f75ebde56978319dadb441082708cbeac1731f1de1e83eb07184b8",
+ "stdout_tail": "6c9ef7779c45e1c5757d84701c5d88ca92bf445', 'docs/ADMISSIBILITY_DIRAC_KAHLER_SHIFTED_ORIGIN_FRAME_GAUGE_NONUNIFORM_HODGE_OVERLAP_BOUNDED_THEOREM_NOTE_2026-08-14.md': '9a615a79511ffc0dac0d1cf54388153604ce7c341496654fd709ed8873302a33', 'docs/MINIMAL_AXIOMS_2026-06-29.md': '93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753', 'docs/audit/data/axiom_premise_nodes.json': '615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37'}\n[PASS] B-displayed-frame: the explicit two-shift average is positive definite and closes under the displayed reflection; no completeness or minimality is asserted\n[PASS] C-band-and-link-census: finite cover census={0: 80, 1: 72, 2: 16, 6: 16, 7: 72}; eight bond ranks are computed directly\n[PASS] D-reflection-parity: the forward band maps to the dual backward band only with the reflected differential\n[PASS] E-symbolic-bond-split: odd bonds vanish at zero shear; the even bond has an 8-entry odd part and a 4-entry shear-dependent even part\n[PASS] F-original-slice-blocks: each displayed original diagonal slice block has a positive even-quartic determinant for every real mass; no Schur-pivot claim is made\n[PASS] G-antiperiodic-quotient: the 16-dimensional quotient has four full-rank bonds and the measured antiperiodic seam sign\n[PASS] H-finite-scope: the original four-origin equal-weight average shares the measured band census but differs from the displayed two-shift average; no finite-family completeness claim follows\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T080006Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

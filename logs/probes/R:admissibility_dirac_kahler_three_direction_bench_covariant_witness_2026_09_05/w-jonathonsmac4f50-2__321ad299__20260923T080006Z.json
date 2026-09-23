@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_three_direction_bench_covariant_witness_2026_09_05",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_three_direction_bench_covariant_witness_2026_09_05.py",
+ "seed": 50406,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "321ad299",
+ "started_utc": "20260923T080006Z",
+ "elapsed_s": 83.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=29 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2cc19a7c373390958e1633fec961960cd84b59fafec9035b50ac34513666280e",
+ "stdout_tail": "e corrected Block 219 claim is finite. On one (4,4,4) bench at the named L+- witness, the seven sampled onsite-pencil blocks have the stated normalized branch multiset, the six quadratic entries and triply mixed consistency check, and the two named rescalings. At W1, pure-t and pure-x have different normalized monic characteristic polynomials even though Q is 16/15 at both; this cross-direction mismatch is the control result. The triply mixed ratio 32/33 is a constant and is not used as a pointwise counterexample. Primitive products are divided by their recorded leading-coefficient products before being called monic characteristic polynomials. No parent theorem, assembly choice, premise adoption, physical metric, cone, action, spacetime, continuum, dispersion law, or dynamics is claimed.\nTOTAL: PASS=29 FAIL=0\n\n[stderr]\n[phase] authority: 3 ms\n[phase] census: 1360 ms\n[phase] construction: 1484 ms\n[bench] witness line onsite pencil\n[bench] witness line onsite form\n[bench] witness line overlap form\n[bench] witness line overlap pencil\n[bench] witness half onsite pencil\n[bench] witness d07 onsite pencil\n[bench] W1 line onsite pencil\n[bench] flat line onsite pencil\n[bench] witness zero overlap form\n[bench] witness zero overlap pencil\n[bench] flat zero onsite form\n[bench] flat zero onsite pencil\n[bench] flat zero overlap form\n[bench] flat zero overlap pencil\n[phase] bench: 61069 ms\n[phase] identities: 5046 ms\n[phase] shape: 6945 ms\n[phase] rescalings: 10 ms\n[phase] control: 7100 ms\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T080129Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/admissibility_dirac_kahler_three_direction_bench_covariant_witness_2026_09_05.txt against the .txt beside this log"
+  ]
+ }
+}

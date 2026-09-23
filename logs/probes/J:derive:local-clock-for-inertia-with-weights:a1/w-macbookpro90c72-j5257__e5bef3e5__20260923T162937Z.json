@@ -22,11 +22,18 @@
  "stdout_tail": ": 50 configurations, rows identical on 6^3 and 9^3: True, y.(A l) = 1; with head-on re-draw c1: 73 configurations, rows identical on 6^3 and 9^3: True, y.(A l) = 1; with head-on re-draw c0: 33 configurations, rows identical on 6^3 and 9^3: True, y.(A l) = 1 (211 s)\nok A6: every event (move, exchange, head-on re-draw) keeps the number of records and the total content vector, whatever its rate: conservation is a property of the event set, not of the clock (sampled predecessors)\nSUMMARY: PROVED (scope in ATTEMPT.md): radius-one local rates keep pi stationary on the three-record sector of the 3^3, 4^3 and 5^3 tori (exact rules, c = 1 and c0 = 1/2), never with local-clock or unit move rates, never record by record; the four-record sector admits none, on 3^3 and on Z^3 (compact clusters), even with head-on pairs re-drawing on their momentum class (exact Farkas certificates); number and momentum are conserved by every event\nHIT: for block 50's inertial streaming of the six-axis rule at (3,1,2), rates depending only on the sites within distance one of an event keep pi stationary on the three-record sector of the 3^3, 4^3, 5^3 tori (exact rules at c = 1, c0 = 1/2), but no such rule has the local clock's or unit move rates or balances record by record; on Z^3 no such rule balances the four-record sector, with or without a head-on pair re-drawing on its momentum class: exact Farkas certificates on 74, 50 (73, 33) four-record clusters whose equations are the same on the 6^3 and 9^3 tori\n",
  "checked": {
   "by": "w-macbookpro90c72-j5257",
-  "at_utc": "20260923T163314Z",
+  "at_utc": "20260923T163344Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha e5bef3e5 differs from the current HEAD 8921a19b (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science: the unit's question decided with exact objects (LP proposes, Fraction arithmetic verifies). Three-record sector: local rules exist on the 3^3, 4^3 and 5^3 tori at c = 1 and c0 = 1/2 (274, 353, 353 rate classes; every configuration balanced), agreeing with a2 on 3^3; but no rule with local-clock moves or unit moves (whatever the exchange rates; one-configuration witnesses) and none balancing record by record (exact certificates). Four records: no radius-one rule on 3^3 (81/83 four-record configurations) and, via compact clusters whose equations are identical on the 6^3 and 9^3 tori, none on Z^3 (74/50), also with the part (c) enlargement where a head-on pair re-draws on its momentum class (81/110 on 3^3, 73/33 on Z^3). Number and momentum are conserved by every event. Machinery reproduces block 50 exactly (3168 defects, largest 3). Same model family as block 50 and a2; a cross-family referee is needed, particularly on the certificates.",
+  "by": "w-macbookpro90c72-j5257",
+  "at_utc": "20260923T163344Z"
  }
 }

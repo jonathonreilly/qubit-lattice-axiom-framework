@@ -1,0 +1,631 @@
+[
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/ACTUAL_R1_CANONICAL_RESULT.json",
+    "bytes": 2913,
+    "sha256": "fb588cb555b830c0fff561e1e6a2a10d74ca957c796ba8095da5524f6ed24f9f",
+    "type": "dict",
+    "keys": [
+      "J_matrix",
+      "N5_scopes",
+      "TOTAL",
+      "charged_excess",
+      "charged_trial_energy",
+      "check_count",
+      "checks",
+      "fixture",
+      "gram",
+      "limitation",
+      "neutral_E0",
+      "q",
+      "rational_theorem_upper",
+      "resource_limits",
+      "rss_MiB",
+      "seconds",
+      "source_sha256",
+      "status",
+      "v"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/ACTUAL_R1_CANONICAL_STDOUT.txt",
+    "bytes": 733,
+    "sha256": "aeb917d8815282fc8d2835f7df7cca706bb6e2967527636829c72c750a58db23",
+    "failure_lines": [
+      "lattice_wide: 3 checks; failed crude sufficient budget, failed exact-four transfer and distant vacuum normalization adverse; one plaquette only",
+      "TOTAL: 22"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/ACTUAL_R1_PORT_RECEIPT.json",
+    "bytes": 662,
+    "sha256": "9cdb1da5696dd94938c53aa53a4ee023166bbeab1751564215b27588a1c25b9f",
+    "type": "dict",
+    "keys": [
+      "source",
+      "source_sha256",
+      "original_sha256",
+      "TOTAL",
+      "scientific_payload_identical",
+      "ignored_metadata",
+      "count_semantics",
+      "strict_cli_adverse_returncode",
+      "seconds",
+      "rss_MiB"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/BOTH_REGISTRY_AST_RECEIPT.json",
+    "bytes": 692,
+    "sha256": "af9c2bed02c981550d851906c30f46bb35623a27ebdbe5b10a2db2e4098df407",
+    "type": "dict",
+    "keys": [
+      "docs/audit/scripts/build_citation_graph.py",
+      "scripts/audit_packet_script_deps.py"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/CANONICAL_RESULT.json",
+    "bytes": 2869,
+    "sha256": "9081851f01852583d689429a5814bc8d7b576a9075533d35eec9675e358d6cb6",
+    "type": "dict",
+    "keys": [
+      "N5_scopes",
+      "TOTAL",
+      "checks",
+      "compression_commutator",
+      "geometry",
+      "resource_limits",
+      "rss_MiB",
+      "scope",
+      "seconds",
+      "shell_energies_R1_to20",
+      "source_sha256",
+      "theta_R10_a_v_d1"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/CANONICAL_STDOUT.txt",
+    "bytes": 677,
+    "sha256": "688278f6aa5cb62d90137a780de60f83b362e296b8fe8a10ee012827e80c3e47",
+    "failure_lines": [
+      "TOTAL: 40"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json",
+    "bytes": 825,
+    "sha256": "b7ea371b71d19e6d27c530797cd270db560a0ac7499589e19539c478bf028fd0",
+    "type": "dict",
+    "keys": [
+      "explicit_ephemeral_rehydration",
+      "sources",
+      "row_assignments",
+      "scope"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_MAIN66_LOCK_RELEASE.json",
+    "bytes": 43,
+    "sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9",
+    "type": "dict",
+    "keys": [
+      "lock",
+      "status"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_MAIN66_READINESS.json",
+    "bytes": 11267,
+    "sha256": "da03199a43f726cca7585b1af428e409f6bfb20f949b344417962cce9173e835",
+    "type": "dict",
+    "keys": [
+      "base",
+      "changed_path_count",
+      "checked",
+      "control_failures",
+      "diff_scope",
+      "failures",
+      "schema"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_MAIN66_STRICT.log",
+    "bytes": 14349,
+    "sha256": "547d5f47193228f9b2999bff4f0363eb4434b4a70b340f1d20664a653259b25d",
+    "failure_lines": [
+      "      NOTICE: ac_orbit_occupancy_statistical_grain_derivation_obligation: self_liquidation_condition is drawn from '## Running-program relation' rather than '## Closure criterion' in docs/AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md (content-word grounding 0.36 vs 0.18); the registry therefore records a different closure condition than the obligation states [advisory: this finding interprets note prose, so it is reported every run and is never an error]",
+      "        note:     Derive from the retained framework chain that the physical charged-lepton readout is the fixed-locus density class h, identity-read in h-units as the eta angle, with no extra clock-rate, transport, or normalization factor. [advisory: this finding interprets note prose, so it is reported every run and is never an error]",
+      "      NOTICE: ac_reta_hclass_hunit_readout_derivation_obligation: self_liquidation_condition is drawn from '## Running-program relation' rather than '## Closure criterion' in docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md (content-word grounding 0.45 vs 0.27); the registry therefore records a different closure condition than the obligation states [advisory: this finding interprets note prose, so it is reported every run and is never an error]",
+      "      NOTICE: docs/CTE_RCONN_SPATIAL_TENSOR_COLOR_BRIDGE_IS_A_CROSS_DOMAIN_COINCIDENCE_NARROW_NO_GO_NOTE_2026-06-08.md::quark_route2_source_domain_bridge_no_go_note_2026-04-28: listed in prose_retained_no_go_attribution_baseline.txt but not reported this run. That is not by itself a drain -- read the note before acting. Prune the key only if the note no longer makes the attribution at all; if it still does and the target was promoted, leave the key (pruning it would make an ordinary later demotion a new hard error on unchanged prose); if the note was renamed, update the key to the new path. Other mechanisms also silence a key -- see the block comment above PROSE_STATUS_STRENGTH",
+      "      NOTICE: docs/ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md::quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28: listed in prose_retained_no_go_attribution_baseline.txt but not reported this run. That is not by itself a drain -- read the note before acting. Prune the key only if the note no longer makes the attribution at all; if it still does and the target was promoted, leave the key (pruning it would make an ordinary later demotion a new hard error on unchanged prose); if the note was renamed, update the key to the new path. Other mechanisms also silence a key -- see the block comment above PROSE_STATUS_STRENGTH",
+      "      NOTICE: docs/ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md::quark_route2_exact_readout_map_note_2026-04-19: listed in prose_retained_no_go_attribution_baseline.txt but not reported this run. That is not by itself a drain -- read the note before acting. Prune the key only if the note no longer makes the attribution at all; if it still does and the target was promoted, leave the key (pruning it would make an ordinary later demotion a new hard error on unchanged prose); if the note was renamed, update the key to the new path. Other mechanisms also silence a key -- see the block comment above PROSE_STATUS_STRENGTH",
+      "  OK: no errors"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_MAIN66_SYNC_RECEIPT.json",
+    "bytes": 1881,
+    "sha256": "28a1cc4b9884453402a014b1bd3b570f31e5369e78310be2c4f2ac8825a2983c",
+    "type": "dict",
+    "keys": [
+      "child_science_sha256",
+      "consumer_sha256",
+      "main_pin",
+      "new_parent_science_head",
+      "old_head",
+      "protected_file_count",
+      "protected_manifest_sha256",
+      "scope"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_VOCAB_LINT.txt",
+    "bytes": 81,
+    "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+    "failure_lines": []
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/FROZEN_PORT_RECEIPT.json",
+    "bytes": 463,
+    "sha256": "fa62849d3c843469e764d6a5bbe5ace8d5dea8ef77b2bd66f8765abc59161b04",
+    "type": "dict",
+    "keys": [
+      "docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py",
+      "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/FULL_PIPELINE.log",
+    "bytes": 21311,
+    "sha256": "562561a9c5c5690cbec62814586680f927aca0a08031a104c2cbc95c532235c9",
+    "failure_lines": [
+      "  preserved archived failed: 0",
+      "  preserved archived failed: 0",
+      "      NOTICE: ac_orbit_occupancy_statistical_grain_derivation_obligation: self_liquidation_condition is drawn from '## Running-program relation' rather than '## Closure criterion' in docs/AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md (content-word grounding 0.36 vs 0.18); the registry therefore records a different closure condition than the obligation states [advisory: this finding interprets note prose, so it is reported every run and is never an error]",
+      "        note:     Derive from the retained framework chain that the physical charged-lepton readout is the fixed-locus density class h, identity-read in h-units as the eta angle, with no extra clock-rate, transport, or normalization factor. [advisory: this finding interprets note prose, so it is reported every run and is never an error]",
+      "      NOTICE: ac_reta_hclass_hunit_readout_derivation_obligation: self_liquidation_condition is drawn from '## Running-program relation' rather than '## Closure criterion' in docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md (content-word grounding 0.45 vs 0.27); the registry therefore records a different closure condition than the obligation states [advisory: this finding interprets note prose, so it is reported every run and is never an error]",
+      "      NOTICE: docs/CTE_RCONN_SPATIAL_TENSOR_COLOR_BRIDGE_IS_A_CROSS_DOMAIN_COINCIDENCE_NARROW_NO_GO_NOTE_2026-06-08.md::quark_route2_source_domain_bridge_no_go_note_2026-04-28: listed in prose_retained_no_go_attribution_baseline.txt but not reported this run. That is not by itself a drain -- read the note before acting. Prune the key only if the note no longer makes the attribution at all; if it still does and the target was promoted, leave the key (pruning it would make an ordinary later demotion a new hard error on unchanged prose); if the note was renamed, update the key to the new path. Other mechanisms also silence a key -- see the block comment above PROSE_STATUS_STRENGTH",
+      "      NOTICE: docs/ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md::quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28: listed in prose_retained_no_go_attribution_baseline.txt but not reported this run. That is not by itself a drain -- read the note before acting. Prune the key only if the note no longer makes the attribution at all; if it still does and the target was promoted, leave the key (pruning it would make an ordinary later demotion a new hard error on unchanged prose); if the note was renamed, update the key to the new path. Other mechanisms also silence a key -- see the block comment above PROSE_STATUS_STRENGTH",
+      "      NOTICE: docs/ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md::quark_route2_exact_readout_map_note_2026-04-19: listed in prose_retained_no_go_attribution_baseline.txt but not reported this run. That is not by itself a drain -- read the note before acting. Prune the key only if the note no longer makes the attribution at all; if it still does and the target was promoted, leave the key (pruning it would make an ordinary later demotion a new hard error on unchanged prose); if the note was renamed, update the key to the new path. Other mechanisms also silence a key -- see the block comment above PROSE_STATUS_STRENGTH",
+      "  OK: no errors"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/LOCK_RELEASE.json",
+    "bytes": 43,
+    "sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9",
+    "type": "dict",
+    "keys": [
+      "lock",
+      "status"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/PACK_INDEX.json",
+    "bytes": 9373,
+    "sha256": "4d741e696e366e95b5ce8f7cae2edd44cec36f1a42e30255fc298196353e6117",
+    "type": "dict",
+    "keys": [
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/ACTUAL_R1_CANONICAL_RESULT.json",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/ACTUAL_R1_CANONICAL_STDOUT.txt",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/ACTUAL_R1_PORT_RECEIPT.json",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/ARTIFACT_PLAN.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/CANONICAL_RESULT.json",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/CANONICAL_STDOUT.txt",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/CLAIM_STATUS_CERTIFICATE.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/GOAL.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/HANDOFF.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/LITERATURE_BRIDGES.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/NO_GO_DISCIPLINE_CHECKLIST.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/NO_GO_LEDGER.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/OPPORTUNITY_QUEUE.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/PORT_RECEIPT.json",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/PROOF_REVIEW.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/PR_BACKLOG.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/REVIEW_HISTORY.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/ROUTE_PORTFOLIO.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/SCOPED_VALIDATION.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/STAGING_VALIDATION.json",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/STATE.yaml",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/TRACE_GATE.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/ACTUAL_R1_CANONICAL_RESULT.json",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/ACTUAL_R1_CANONICAL_STDOUT.txt",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/ACTUAL_R1_PORT_RECEIPT.json",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/ACTUAL_R1_REVIEW.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/BEFORE_RESTRICTED_MATRIX_STRENGTHENING_check.py",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/BEFORE_RESTRICTED_MATRIX_STRENGTHENING_result.json",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/CANONICAL_RESULT.json",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/CANONICAL_STDOUT.txt",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/CONTROLS_PREREGISTRATION.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/DERIVATION.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/PORT_RECEIPT.json",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/PREREGISTRATION.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/RESTRICTED_MATRIX_STRENGTHENING.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/ROOT_REVIEW.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/STAGING_INDEX.json",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/check.py",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/port_actual_r1.py",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/result.json",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/primary_review/ACTUAL_R1_REVIEW.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/primary_review/REVIEW.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/primary_review/ROOT_CORRECTION_REVIEW.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/ACTUAL_R1_DERIVATION.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/ACTUAL_R1_PREREGISTRATION.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/GENERATOR_NORMALIZATION_CORRECTION.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/PREREGISTRATION.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/ROOT_DERIVATION.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/ROOT_DERIVATION_BEFORE_GENERATOR_NORMALIZATION_224fa648.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/ROOT_NATIVE_REVIEW.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/actual_r1_check.py",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/actual_r1_result.json",
+      "docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py",
+      "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/PORT_RECEIPT.json",
+    "bytes": 715,
+    "sha256": "a0bb7d734ff7fddc88fbabdd38708638214b0f9b8afc9bbc7a915c9a6d306486",
+    "type": "dict",
+    "keys": [
+      "source",
+      "source_sha256",
+      "original_sha256",
+      "TOTAL",
+      "scientific_payload_identical",
+      "ignored_metadata",
+      "timer_correction",
+      "rss_key_normalization",
+      "strict_cli_adverse_returncode",
+      "seconds",
+      "rss_MiB"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/PORT_VOCAB_LINT.txt",
+    "bytes": 81,
+    "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+    "failure_lines": []
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/PUBLICATION_RECEIPT.json",
+    "bytes": 566,
+    "sha256": "3bb8b3155cc0004ccbb78edee55a0889f53d47035afaa62381839e6f829bb075",
+    "type": "dict",
+    "keys": [
+      "headRefOid",
+      "isDraft",
+      "mergeStateStatus",
+      "mergeable",
+      "number",
+      "statusCheckRollup",
+      "url"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/STAGING_VALIDATION.json",
+    "bytes": 1705,
+    "sha256": "93d467aa30988bb5846fa0a1005a2eaa2dfd506ec41b605508c5d3dcfe8e0060",
+    "type": "dict",
+    "keys": [
+      "mathematical_reviews",
+      "canonical_port_review",
+      "helpers",
+      "repo_writes",
+      "full_pipeline_run"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/STRICT_LINT.log",
+    "bytes": 13466,
+    "sha256": "e6fc7621f090a9ba1ed4ec65387554905fb0de0bacaa9a5f49e1ae360045a85c",
+    "failure_lines": [
+      "      NOTICE: ac_orbit_occupancy_statistical_grain_derivation_obligation: self_liquidation_condition is drawn from '## Running-program relation' rather than '## Closure criterion' in docs/AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md (content-word grounding 0.36 vs 0.18); the registry therefore records a different closure condition than the obligation states [advisory: this finding interprets note prose, so it is reported every run and is never an error]",
+      "        note:     Derive from the retained framework chain that the physical charged-lepton readout is the fixed-locus density class h, identity-read in h-units as the eta angle, with no extra clock-rate, transport, or normalization factor. [advisory: this finding interprets note prose, so it is reported every run and is never an error]",
+      "      NOTICE: ac_reta_hclass_hunit_readout_derivation_obligation: self_liquidation_condition is drawn from '## Running-program relation' rather than '## Closure criterion' in docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md (content-word grounding 0.45 vs 0.27); the registry therefore records a different closure condition than the obligation states [advisory: this finding interprets note prose, so it is reported every run and is never an error]",
+      "      NOTICE: docs/CTE_RCONN_SPATIAL_TENSOR_COLOR_BRIDGE_IS_A_CROSS_DOMAIN_COINCIDENCE_NARROW_NO_GO_NOTE_2026-06-08.md::quark_route2_source_domain_bridge_no_go_note_2026-04-28: listed in prose_retained_no_go_attribution_baseline.txt but not reported this run. That is not by itself a drain -- read the note before acting. Prune the key only if the note no longer makes the attribution at all; if it still does and the target was promoted, leave the key (pruning it would make an ordinary later demotion a new hard error on unchanged prose); if the note was renamed, update the key to the new path. Other mechanisms also silence a key -- see the block comment above PROSE_STATUS_STRENGTH",
+      "      NOTICE: docs/ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md::quark_route2_e_channel_readout_naturality_no_go_note_2026-04-28: listed in prose_retained_no_go_attribution_baseline.txt but not reported this run. That is not by itself a drain -- read the note before acting. Prune the key only if the note no longer makes the attribution at all; if it still does and the target was promoted, leave the key (pruning it would make an ordinary later demotion a new hard error on unchanged prose); if the note was renamed, update the key to the new path. Other mechanisms also silence a key -- see the block comment above PROSE_STATUS_STRENGTH",
+      "      NOTICE: docs/ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md::quark_route2_exact_readout_map_note_2026-04-19: listed in prose_retained_no_go_attribution_baseline.txt but not reported this run. That is not by itself a drain -- read the note before acting. Prune the key only if the note no longer makes the attribution at all; if it still does and the target was promoted, leave the key (pruning it would make an ordinary later demotion a new hard error on unchanged prose); if the note was renamed, update the key to the new path. Other mechanisms also silence a key -- see the block comment above PROSE_STATUS_STRENGTH",
+      "  OK: no errors"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/ACTUAL_R1_CANONICAL_RESULT.json",
+    "bytes": 2913,
+    "sha256": "fb588cb555b830c0fff561e1e6a2a10d74ca957c796ba8095da5524f6ed24f9f",
+    "type": "dict",
+    "keys": [
+      "J_matrix",
+      "N5_scopes",
+      "TOTAL",
+      "charged_excess",
+      "charged_trial_energy",
+      "check_count",
+      "checks",
+      "fixture",
+      "gram",
+      "limitation",
+      "neutral_E0",
+      "q",
+      "rational_theorem_upper",
+      "resource_limits",
+      "rss_MiB",
+      "seconds",
+      "source_sha256",
+      "status",
+      "v"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/ACTUAL_R1_CANONICAL_STDOUT.txt",
+    "bytes": 733,
+    "sha256": "aeb917d8815282fc8d2835f7df7cca706bb6e2967527636829c72c750a58db23",
+    "failure_lines": [
+      "lattice_wide: 3 checks; failed crude sufficient budget, failed exact-four transfer and distant vacuum normalization adverse; one plaquette only",
+      "TOTAL: 22"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/ACTUAL_R1_PORT_RECEIPT.json",
+    "bytes": 662,
+    "sha256": "9cdb1da5696dd94938c53aa53a4ee023166bbeab1751564215b27588a1c25b9f",
+    "type": "dict",
+    "keys": [
+      "source",
+      "source_sha256",
+      "original_sha256",
+      "TOTAL",
+      "scientific_payload_identical",
+      "ignored_metadata",
+      "count_semantics",
+      "strict_cli_adverse_returncode",
+      "seconds",
+      "rss_MiB"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/BEFORE_RESTRICTED_MATRIX_STRENGTHENING_result.json",
+    "bytes": 2106,
+    "sha256": "711299a34d8885ab7139cbfbc4ea3f1549f66e78380815d34aa0567bcfdf1352",
+    "type": "dict",
+    "keys": [
+      "TOTAL",
+      "checks",
+      "geometry",
+      "shell_energies_R1_to20",
+      "compression_commutator",
+      "theta_R10_a_v_d1",
+      "scope",
+      "source_sha256",
+      "seconds",
+      "rss_mib"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/CANONICAL_RESULT.json",
+    "bytes": 2869,
+    "sha256": "9081851f01852583d689429a5814bc8d7b576a9075533d35eec9675e358d6cb6",
+    "type": "dict",
+    "keys": [
+      "N5_scopes",
+      "TOTAL",
+      "checks",
+      "compression_commutator",
+      "geometry",
+      "resource_limits",
+      "rss_MiB",
+      "scope",
+      "seconds",
+      "shell_energies_R1_to20",
+      "source_sha256",
+      "theta_R10_a_v_d1"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/CANONICAL_STDOUT.txt",
+    "bytes": 677,
+    "sha256": "688278f6aa5cb62d90137a780de60f83b362e296b8fe8a10ee012827e80c3e47",
+    "failure_lines": [
+      "TOTAL: 40"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/PORT_RECEIPT.json",
+    "bytes": 715,
+    "sha256": "a0bb7d734ff7fddc88fbabdd38708638214b0f9b8afc9bbc7a915c9a6d306486",
+    "type": "dict",
+    "keys": [
+      "source",
+      "source_sha256",
+      "original_sha256",
+      "TOTAL",
+      "scientific_payload_identical",
+      "ignored_metadata",
+      "timer_correction",
+      "rss_key_normalization",
+      "strict_cli_adverse_returncode",
+      "seconds",
+      "rss_MiB"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/STAGING_INDEX.json",
+    "bytes": 6798,
+    "sha256": "a288fb0054e18d6724ca48db0e7c601796b15ce70d4356f7b4c5747a7c66968c",
+    "type": "dict",
+    "keys": [
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/ARTIFACT_PLAN.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/CANONICAL_RESULT.json",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/CANONICAL_STDOUT.txt",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/CLAIM_STATUS_CERTIFICATE.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/GOAL.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/HANDOFF.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/LITERATURE_BRIDGES.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/NO_GO_DISCIPLINE_CHECKLIST.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/NO_GO_LEDGER.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/OPPORTUNITY_QUEUE.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/PORT_RECEIPT.json",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/PROOF_REVIEW.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/PR_BACKLOG.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/REVIEW_HISTORY.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/ROUTE_PORTFOLIO.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/SCOPED_VALIDATION.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/STAGING_VALIDATION.json",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/STATE.yaml",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/TRACE_GATE.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/BEFORE_RESTRICTED_MATRIX_STRENGTHENING_check.py",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/BEFORE_RESTRICTED_MATRIX_STRENGTHENING_result.json",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/CANONICAL_RESULT.json",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/CANONICAL_STDOUT.txt",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/CONTROLS_PREREGISTRATION.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/DERIVATION.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/PORT_RECEIPT.json",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/PREREGISTRATION.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/RESTRICTED_MATRIX_STRENGTHENING.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/ROOT_REVIEW.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/check.py",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/result.json",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/primary_review/REVIEW.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/primary_review/ROOT_CORRECTION_REVIEW.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/ACTUAL_R1_PREREGISTRATION.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/GENERATOR_NORMALIZATION_CORRECTION.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/PREREGISTRATION.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/ROOT_DERIVATION.md",
+      ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/ROOT_DERIVATION_BEFORE_GENERATOR_NORMALIZATION_224fa648.md",
+      "docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/result.json",
+    "bytes": 2103,
+    "sha256": "033490f7a9e4d80598ca22f01b308d35685dc8e65d2f09cd56ca1be64a9a06e9",
+    "type": "dict",
+    "keys": [
+      "TOTAL",
+      "checks",
+      "geometry",
+      "shell_energies_R1_to20",
+      "compression_commutator",
+      "theta_R10_a_v_d1",
+      "scope",
+      "source_sha256",
+      "seconds",
+      "rss_mib"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/actual_r1_result.json",
+    "bytes": 1937,
+    "sha256": "decbe9cb033a9863d00b82a808d7445ec17fdcbf48ce94acf5eaffcc07e24a18",
+    "type": "dict",
+    "keys": [
+      "status",
+      "checks",
+      "check_count",
+      "fixture",
+      "v",
+      "neutral_E0",
+      "q",
+      "charged_trial_energy",
+      "charged_excess",
+      "rational_theorem_upper",
+      "gram",
+      "J_matrix",
+      "limitation"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py.live.json",
+    "bytes": 2912,
+    "sha256": "b15f9bc0d5c2808238e3a3460dedf9891d06bac1355541b2c09c6f004c6490e0",
+    "type": "dict",
+    "keys": [
+      "J_matrix",
+      "N5_scopes",
+      "TOTAL",
+      "charged_excess",
+      "charged_trial_energy",
+      "check_count",
+      "checks",
+      "fixture",
+      "gram",
+      "limitation",
+      "neutral_E0",
+      "q",
+      "rational_theorem_upper",
+      "resource_limits",
+      "rss_MiB",
+      "seconds",
+      "source_sha256",
+      "status",
+      "v"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py.live.json",
+    "bytes": 2863,
+    "sha256": "10ced76cb62c47ef6dbab6bfefdd2a774836120181c3189cacf72121b0c94f0f",
+    "type": "dict",
+    "keys": [
+      "N5_scopes",
+      "TOTAL",
+      "checks",
+      "compression_commutator",
+      "geometry",
+      "resource_limits",
+      "rss_MiB",
+      "scope",
+      "seconds",
+      "shell_energies_R1_to20",
+      "source_sha256",
+      "theta_R10_a_v_d1"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/validated_claims_before_generated_cleanup.json",
+    "bytes": 43685,
+    "sha256": "64a1ac1c910dd4d01c4d3d53350d9e34e04b773dadd34358a9fc4875dcb3c928",
+    "type": "dict",
+    "keys": [
+      "gauge_wilson_compact_cube_all_coupling_gap_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_compact_cube_finite_qubit_cutoff_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_compact_cube_galerkin_spectral_enclosures_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_compact_cube_low_electric_spectrum_ritz_gap_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_cube_slab_exact_covariance_central_gaussian_spectrum_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_cube_slab_nonlinear_saddle_dilated_kernel_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_cube_slab_weak_coupling_window_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_electric_dominated_volume_uniform_gap_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_finite_pw_static_source_energy_upper_bound_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_finite_transporter_unitarity_pw_defect_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_full_cube_compact_interacting_hamiltonian_limit_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_full_cube_physical_transfer_geometry_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_full_cube_simultaneous_transfer_limit_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_local_observable_finite_region_pw_approximation_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_selected_infinite_static_source_sector_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_spatial_loop_area_suppression_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_static_source_geodesic_perturbation_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_uniform_static_source_energy_bounds_bounded_theorem_note_2026-09-07",
+      "gauge_wilson_uniform_weak_continuum_correlation_boundary_bounded_theorem_note_2026-09-07"
+    ]
+  },
+  {
+    "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/validated_readiness_before_generated_cleanup.json",
+    "bytes": 11267,
+    "sha256": "ec75eb2ff65c6bc7dc5dc3d7a25163c0aa64d6f5cd5b6be2cd1b302aa2e9fc1c",
+    "type": "dict",
+    "keys": [
+      "base",
+      "changed_path_count",
+      "checked",
+      "control_failures",
+      "diff_scope",
+      "failures",
+      "schema"
+    ]
+  }
+]

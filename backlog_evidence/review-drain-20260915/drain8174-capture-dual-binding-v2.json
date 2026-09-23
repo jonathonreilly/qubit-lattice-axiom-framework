@@ -1,0 +1,58 @@
+{
+  "status": "PROPOSED; original reviewer narrow adapter confirmation required before dispatch",
+  "cold": {
+    "path": "/private/tmp/review-drain-20260915/drain8174-cold-review-v1.json",
+    "sha256": "6244aaf7dc3c53318bb7d5df83e452df977b75d3925b36321afc88591c9b40bf"
+  },
+  "binding": {
+    "path": "/private/tmp/review-drain-20260915/drain8174-cold-review-v1.json",
+    "sha256": "6244aaf7dc3c53318bb7d5df83e452df977b75d3925b36321afc88591c9b40bf",
+    "same_session_provenance": "/root/review_8174 original reviewer, cold report and narrow adapter confirmation required",
+    "verdict_pointer": "/verdict",
+    "verdict_value": "COLD_SOURCE_CLEAN_FOR_BOUNDED_CAPTURE",
+    "tree_pointer": "/source_tree",
+    "tree": "5083bc62b618b49a45d96496b7d431306756cb4f",
+    "frozen_base": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+    "reviewed_main": "3dca18ddd0082dc23bb12c7ca38939b901c28736",
+    "required_predicates": {
+      "/capture_clearance": true,
+      "/reviewer/session": "/root/review_8174",
+      "/reviewer/same_session": true,
+      "/findings": [],
+      "/checkout_base": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+      "/reviewed_current_main": "3dca18ddd0082dc23bb12c7ca38939b901c28736",
+      "/predicates/current_main_compatible": true
+    }
+  },
+  "adapters": [
+    {
+      "old": {
+        "path": "/private/tmp/review-drain-20260915/drain8174-capture-v1.py",
+        "sha256": "a0eaf9e49510d205678522a78b1d26acf734ea42684b4561c9788aed7c0c1bae"
+      },
+      "new": {
+        "path": "/private/tmp/review-drain-20260915/drain8174-capture-v2.py",
+        "sha256": "dc13c94c2fae5e86b4a362547a6504ef655134780c023f1ea3b2d43109f978b0"
+      },
+      "diff": {
+        "path": "/private/tmp/review-drain-20260915/drain8174-capture-dual-binding-v2.diff",
+        "sha256": "f602d7e385b2eb2f715f8e3b1f12b1937cbcd1a457ce01d6538930c370e881f0"
+      }
+    },
+    {
+      "old": {
+        "path": "/private/tmp/review-drain-20260915/drain8174-mutation-capture-v1.py",
+        "sha256": "5472569fcd62e622d0f9b51aeee37d3ab86feae8e5119a308c745480a65c197d"
+      },
+      "new": {
+        "path": "/private/tmp/review-drain-20260915/drain8174-mutation-capture-v2.py",
+        "sha256": "fb3defdf7ec1d2e37e11c2191fb952e23035817f6542a8bffdf94fa857f55629"
+      },
+      "diff": {
+        "path": "/private/tmp/review-drain-20260915/drain8174-mutation-capture-dual-binding-v2.diff",
+        "sha256": "92ee08dfea2af66102f6132ac449f124d3de1038ae06f0865b9bdfe3cf2cbf08"
+      }
+    }
+  ],
+  "scope": "Only actual cold binding and guarded frozen-tree/current-main separation. Same source/input stat/hash checks, raw capture, once-only markers, limits and scientific invocations."
+}

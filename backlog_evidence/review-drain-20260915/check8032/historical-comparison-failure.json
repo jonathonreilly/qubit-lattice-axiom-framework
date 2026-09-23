@@ -1,0 +1,8 @@
+{
+  "failed_assertion": "old.replace('Tr(T_A T_B)=2delta_AB','Tr(T_A T_B)=delta_AB')==a",
+  "raw_output": "Traceback (most recent call last):\n  File \"<stdin>\", line 18, in <module>\nAssertionError\n",
+  "exit_code": 1,
+  "cause": "Reviewer exact-string selector omitted original space after 2; no source/math failure.",
+  "corrected_assertion": "old.replace('Tr(T_A T_B)=2 delta_AB','Tr(T_A T_B)=delta_AB')==a",
+  "corrected_result": true
+}

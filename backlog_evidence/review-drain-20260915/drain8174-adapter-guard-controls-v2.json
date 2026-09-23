@@ -1,0 +1,27 @@
+{
+  "scope": "AST-extracted guard functions only; no adapter main, scientific runner or staging executed",
+  "outcomes": [
+    {
+      "adapter": "drain8174-capture-v2.py",
+      "actual_guard": "PASS",
+      "rejected": [
+        "main_moved",
+        "source_overlap",
+        "input_overlap",
+        "wrong_head",
+        "wrong_ancestry"
+      ]
+    },
+    {
+      "adapter": "drain8174-mutation-capture-v2.py",
+      "actual_guard": "PASS",
+      "rejected": [
+        "main_moved",
+        "source_overlap",
+        "input_overlap",
+        "wrong_head",
+        "wrong_ancestry"
+      ]
+    }
+  ]
+}

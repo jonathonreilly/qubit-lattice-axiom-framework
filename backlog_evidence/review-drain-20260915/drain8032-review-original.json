@@ -1,0 +1,1670 @@
+{
+  "pr": 8032,
+  "reviewer": "/root/review_8032 same independent session",
+  "model": "inherited parent model; no override made by reviewer",
+  "stage": "original source review; author repair and same-session affected/cold/final confirmation pending",
+  "policy_revision": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+  "head": "91daeb27ebe4e840b1b0457ea30acfc3e333bd09",
+  "declared_base": "3756b77ab56aa397a7113082783c1c491d8d96ea",
+  "merge_base": "3756b77ab56aa397a7113082783c1c491d8d96ea",
+  "main": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+  "recommendation": "Scientifically salvageable complete positive bounded theorem; NEEDS SOURCE REPAIR, no original landing PASS",
+  "findings": [
+    {
+      "id": "8032-DEP",
+      "kind": "PROOF_OBLIGATION",
+      "severity": "repair-before-landing",
+      "path": "docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "lines": "7,29,65",
+      "evidence": "Original parent ID/link names the closed PR8031 broad negative source, absent from current main; only its positive compression/shell/path source landed. The new proof needs those positive identities, not the deferred finite-unitarity exclusion.",
+      "fix": "Bind metadata and markdown link to GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md. Preserve parent8031 negative disposition; do not restore its unlanded broad source. Current uniform-gap source supplies the separate weak-regime neutral full-ground argument."
+    },
+    {
+      "id": "8032-N5",
+      "kind": "BUG",
+      "severity": "repair-before-landing",
+      "path": "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py; scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py",
+      "lines": "95;165",
+      "evidence": "lattice_wide allocates two checks to a 2x2 restricted-ground example and scalar trace arithmetic, and three checks to scalar/one-plaquette budget and artificial distant-volume arithmetic. These do not execute lattice-wide energy control. The actual-R1 per_site group is neutral 3x3 spectral algebra rather than site-resolution measurement.",
+      "fix": "Remap all 40 and22 actual predicates to honest resolution groups; explicitly mark unexecuted lattice-wide class checked and not executed with substantive reason. Finite cubic-box incidence may have its actual finite graph scope, not arbitrary-volume dynamics. Keep rational adverse outcomes and original outputs recoverable. Resource guards are additional guards, not new mathematical checks."
+    },
+    {
+      "id": "8032-GOV",
+      "kind": "REPO_GOVERNANCE",
+      "severity": "repair-before-landing",
+      "path": "docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "lines": "31-41,65,156-201",
+      "evidence": "Live proof uses block41/42, root/native publication history and branch-local PROOF_REVIEW as a durable citation. Original packet includes campaign state, authored prior review PASS and generated ledger/readiness records.",
+      "fix": "Translate live source into native theorem language, explicitly say a is supplied temporal-scaling kinetic parameter, archive all84 original path/mode/blob/bytes with current source and both complete derivations retained. Keep historical successes/failures non-authoritative. Preserve the actual full-ground and finite-evidence limitations. No new axiom/primitive or Nature-grade assertion."
+    },
+    {
+      "id": "8032-EVIDENCE",
+      "kind": "AUDIT_COMPATIBILITY",
+      "severity": "repair-before-landing",
+      "path": "logs/runner-cache/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.txt; logs/runner-cache/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.txt",
+      "lines": "1-20",
+      "evidence": "Historical caches bind original runner bytes, not the corrected source/current proof inputs. Both one-line helper registrations are useful but original entire registry files are stale relative to main. citation manifest is stale topology acknowledgment.",
+      "fix": "Keep the two source-local helper registrations by narrow additions onto current main, freeze actual discovered primary/helper/note/premise inputs and execute only after cold clearance. Replace caches with captured current evidence; regenerate manifest from intended topology in root combined validation. Strip generated audit authority, never migrate old ledger as authority."
+    }
+  ],
+  "claims": [
+    {
+      "claim": "local_ground_budget",
+      "disposition": "ACCEPT",
+      "reason": "Full tensor-carrier minimum and positive bounded incident face terms give E_e<=2v n_e<=8v by mixed vacuum replacement. Neutrality is separate; restricted arbitrary subspace example is only logical premise-control."
+    },
+    {
+      "claim": "charged_projection",
+      "disposition": "ACCEPT",
+      "reason": "Full-irrep endpoint covariance and distinct-link PWP identity yield the external-source trial, normalized color trace/3 and q>=1-E_path/e_R. Need integer R>=1,a>0,theta<1."
+    },
+    {
+      "claim": "kinetic_commutator",
+      "disposition": "ACCEPT",
+      "reason": "Smooth finite PW domain, trace(T)=0 and sum T_A^2=8I/3 give exact expectation4d/a and norm4d/a+4sqrt(d E_path/a). Projection pairing produces sqrt(theta) times this norm; no state-norm-to-energy leap."
+    },
+    {
+      "claim": "local_magnetic_commutator",
+      "disposition": "ACCEPT",
+      "reason": "Signs PWQVP-PVQWP correct; non-touching color-scalar faces commute; actual face fusion kills all-interior leakage and touching count<=4d. No volume norm introduced."
+    },
+    {
+      "claim": "rayleigh_upper_and_uniformity",
+      "disposition": "ACCEPT",
+      "reason": "Full ground implies nonnegative numerator. Positive explicit numerator divided by1-theta is safe; equations8/9 agree, fixed a,v,d limit4d/a uniform ambient finite graph, relative growing-d condition h_R/d->infinity sufficient. It bounds trial/sector infimum, not equality of charged minimum."
+    },
+    {
+      "claim": "actual_R1_ground",
+      "disposition": "ACCEPT",
+      "reason": "Three neutral loop characters span physical cutoff space by bivalent matching. Exact two remaining eigenvectors/eigenvalues and E0<4 plus nonnegative V establish full-carrier ground. No arbitrary numerical weak-window threshold is inferred."
+    },
+    {
+      "claim": "actual_R1_projection_and_energy",
+      "disposition": "ACCEPT",
+      "reason": "Independent X=MU character/Cayley route confirms G=diag(1,1/3,1/9), J offdiagonal1/18,1/54,1/54. Electric patterns4,16,12 keep all three M links. Exact excess454685351/113607549 in(4,4.01), q45002/45009, rational upper14650177783/3506250000; local sufficient bound passes, crude theta0>1."
+    },
+    {
+      "claim": "framework_or_hardware_physics",
+      "disposition": "OPEN not asserted",
+      "reason": "Supplied Wilson dynamics, Haar cutoff,a,v,physical neutral ground and postselected trial remain named. Registered primitives do not select dynamics/coupling or realize C. No lower confinement, continuum or infinite-volume charged-minimum convergence claim."
+    },
+    {
+      "claim": "inherited_parent_negative_certification",
+      "disposition": "DEFERRED unchanged parent disposition",
+      "reason": "Parent8031 formal universal finite-unitarity/no-operator-norm-convergence certification remains deferred. Its actual positive compression and path results are sufficient here. No new N1 five-family certification granted."
+    },
+    {
+      "claim": "historical_generator_and_restricted_control",
+      "disposition": "SUPERSEDED preserved",
+      "reason": "Original root trace2 delta mismatch was corrected to delta only; historical first scalar4>0 restricted-minimum check replaced by2x2 example. Exact originals remain in snapshot; do not revive historical incorrect normalization."
+    },
+    {
+      "claim": "historical_status_and_validation",
+      "disposition": "ARCHIVE",
+      "reason": "Prior PASS and generated unaudited/readiness rows are historical execution/review records, not current proof or audit authority."
+    }
+  ],
+  "file_dispositions": [
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/ACTUAL_R1_CANONICAL_RESULT.json",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "0d4fe63b7e59b0411ec4b5cb26e0f3bf551934b5",
+        "sha256": "fb588cb555b830c0fff561e1e6a2a10d74ca957c796ba8095da5524f6ed24f9f",
+        "bytes": 2913,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/ACTUAL_R1_CANONICAL_RESULT.json"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/ACTUAL_R1_CANONICAL_RESULT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/ACTUAL_R1_CANONICAL_STDOUT.txt",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "b60d17d287a369c307223e30e8715a0fd94c265b",
+        "sha256": "aeb917d8815282fc8d2835f7df7cca706bb6e2967527636829c72c750a58db23",
+        "bytes": 733,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/ACTUAL_R1_CANONICAL_STDOUT.txt"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/ACTUAL_R1_CANONICAL_STDOUT.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/ACTUAL_R1_PORT_RECEIPT.json",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "f7ad88fbbec7e264f70d52bccc55952bc6e489f7",
+        "sha256": "9cdb1da5696dd94938c53aa53a4ee023166bbeab1751564215b27588a1c25b9f",
+        "bytes": 662,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/ACTUAL_R1_PORT_RECEIPT.json"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/ACTUAL_R1_PORT_RECEIPT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/ARTIFACT_PLAN.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "0eb0e9e20ae27579e04f7921a3621be8659d9048",
+        "sha256": "88fe929b75c29baae634adc21888a6d89676e2dce3ecffb5387b50642de0aebf",
+        "bytes": 267,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/ARTIFACT_PLAN.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/ARTIFACT_PLAN.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/ASSUMPTIONS_AND_IMPORTS.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "c875a7284982fdd5f3b6adb025a00ad26c3b4363",
+        "sha256": "6fde2a74731cdfd039493323df244a738bdaca73211fd16a8aaed36f9e193099",
+        "bytes": 343,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/ASSUMPTIONS_AND_IMPORTS.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/BOTH_REGISTRY_AST_RECEIPT.json",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "e31de799c5aee6b24be78e01978e016896e3106f",
+        "sha256": "af9c2bed02c981550d851906c30f46bb35623a27ebdbe5b10a2db2e4098df407",
+        "bytes": 692,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/BOTH_REGISTRY_AST_RECEIPT.json"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/BOTH_REGISTRY_AST_RECEIPT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/CANONICAL_RESULT.json",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "b845e5f78096deb86ea8ddc85b51670324b3b60b",
+        "sha256": "9081851f01852583d689429a5814bc8d7b576a9075533d35eec9675e358d6cb6",
+        "bytes": 2869,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/CANONICAL_RESULT.json"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/CANONICAL_RESULT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/CANONICAL_STDOUT.txt",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "c8fe6ba9fb8debf40f5f78ad2c24589070a5a945",
+        "sha256": "688278f6aa5cb62d90137a780de60f83b362e296b8fe8a10ee012827e80c3e47",
+        "bytes": 677,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/CANONICAL_STDOUT.txt"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/CANONICAL_STDOUT.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/CLAIM_STATUS_CERTIFICATE.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "7e1d18174251a07ea86ff11892e1a80115846050",
+        "sha256": "d197fcba0e77ca60427259fefc9382922895039b36aaa689bc3dcb3cc9e79e98",
+        "bytes": 211,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/CLAIM_STATUS_CERTIFICATE.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "5e194144dd2ed297d5849ee064fb5d41caa88866",
+        "sha256": "b7ea371b71d19e6d27c530797cd270db560a0ac7499589e19539c478bf028fd0",
+        "bytes": 825,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_MAIN66_EPHEMERAL_ROW_REHYDRATION.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_MAIN66_LOCK_RELEASE.json",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "c19f3721a340a9569778a4ae4fdb585b16281289",
+        "sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9",
+        "bytes": 43,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_MAIN66_LOCK_RELEASE.json"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_MAIN66_LOCK_RELEASE.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_MAIN66_READINESS.json",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "015fdff6c75b8c6bf8f053abe85dd8de8ea92138",
+        "sha256": "da03199a43f726cca7585b1af428e409f6bfb20f949b344417962cce9173e835",
+        "bytes": 11267,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_MAIN66_READINESS.json"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_MAIN66_READINESS.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_MAIN66_STRICT.log",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "3ff40e68076aa098abef41e7d323e48a9772fd65",
+        "sha256": "547d5f47193228f9b2999bff4f0363eb4434b4a70b340f1d20664a653259b25d",
+        "bytes": 14349,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_MAIN66_STRICT.log"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_MAIN66_STRICT.log"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_MAIN66_SYNC_RECEIPT.json",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "589f090dc83c4f885debdf06fd92c1678934e044",
+        "sha256": "28a1cc4b9884453402a014b1bd3b570f31e5369e78310be2c4f2ac8825a2983c",
+        "bytes": 1881,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_MAIN66_SYNC_RECEIPT.json"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_MAIN66_SYNC_RECEIPT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_MAIN66_VALIDATION.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "fece218de18d234259e96a54d4832ebd6a7fa6ca",
+        "sha256": "7924df3dfd482e60a5646b5e1205b174ad6512537eb85701cda766477e814ded",
+        "bytes": 753,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_MAIN66_VALIDATION.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_MAIN66_VALIDATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_VALIDATION.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "59613c455518cbc6f80ca3ccca4f3b1c9cb51652",
+        "sha256": "61c13e5cae19471f93fed9f9ee3d425e4c6f30d0cdd34211319d4e8b5d066b96",
+        "bytes": 1171,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_VALIDATION.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_VALIDATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_VOCAB_LINT.txt",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+        "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+        "bytes": 81,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_VOCAB_LINT.txt"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/FINAL_VOCAB_LINT.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/FROZEN_PORT_RECEIPT.json",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "00226075e112bbe53a164c84aeefaac428759938",
+        "sha256": "fa62849d3c843469e764d6a5bbe5ace8d5dea8ef77b2bd66f8765abc59161b04",
+        "bytes": 463,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/FROZEN_PORT_RECEIPT.json"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/FROZEN_PORT_RECEIPT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/FULL_PIPELINE.log",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "c6be8652c4c68500102f6b27fbcf6f12b7ef5f29",
+        "sha256": "562561a9c5c5690cbec62814586680f927aca0a08031a104c2cbc95c532235c9",
+        "bytes": 21311,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/FULL_PIPELINE.log"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/FULL_PIPELINE.log"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/GOAL.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "dad7bd42237a5fa1cf3f38bee06de177fb9a0c4a",
+        "sha256": "ba656aa86e9d2ae9b8c9208bc8970cf61d736a7c854be74c36ad01c6d7b20366",
+        "bytes": 142,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/GOAL.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/GOAL.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/HANDOFF.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "983d6fa77f487e1ed6dc847fb04f8f706d2bec3d",
+        "sha256": "8c0cffd89510f74a355f0e4ff89a4e960f1ceb7a69e1ca0bf3d86b0ddc3f81ee",
+        "bytes": 1870,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/HANDOFF.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/HANDOFF.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/LITERATURE_BRIDGES.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "9efe53cd9835152b288eea596976f871af68a51e",
+        "sha256": "ae5f5c8723a6a117b5cbc527321312662e7c4c0bfc9ece10943ac2040e5eb317",
+        "bytes": 207,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/LITERATURE_BRIDGES.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/LITERATURE_BRIDGES.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/LOCK_RELEASE.json",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "c19f3721a340a9569778a4ae4fdb585b16281289",
+        "sha256": "25f09ffc3fa01b87e79a0bf24142db075d6edaaa66be9f8821d9587ad08438b9",
+        "bytes": 43,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/LOCK_RELEASE.json"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/LOCK_RELEASE.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "259bb445d90699cadc551de9dcae05ab1ad3173e",
+        "sha256": "dc918699e447b583724ac0c27178da01ecabd210bbca57d2b9fd38bde18bf0c8",
+        "bytes": 823,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/NO_GO_DISCIPLINE_CHECKLIST.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/NO_GO_DISCIPLINE_CHECKLIST.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/NO_GO_LEDGER.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "07269498205247621ed9bf9de4fa32746bf2f997",
+        "sha256": "e50f67e1d0650414cae94ad7fd663d20fa0d964ae08018490f08f63d439a84f2",
+        "bytes": 671,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/NO_GO_LEDGER.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/NO_GO_LEDGER.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/OPPORTUNITY_QUEUE.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "b863c9c44aef4c4ef60ac359a41ded18f108313f",
+        "sha256": "2f31dcb0a1a1195c83a3e43626dd57f7b13486b45a689c8390b556b962fcf7ca",
+        "bytes": 246,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/OPPORTUNITY_QUEUE.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/OPPORTUNITY_QUEUE.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/PACK_INDEX.json",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "ef0f117a703e9fd47e7fea06a33c9ba8300fde60",
+        "sha256": "4d741e696e366e95b5ce8f7cae2edd44cec36f1a42e30255fc298196353e6117",
+        "bytes": 9373,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/PACK_INDEX.json"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/PACK_INDEX.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/PARENT_VALIDATION_METADATA_CATCHUP.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "27a3c778613a950b8c109c41bcba0660d5d70858",
+        "sha256": "af13a255467d5eb82ec76ed81faf3f976cc62b669eba9ac7ee7b24b4f10fd12f",
+        "bytes": 480,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/PARENT_VALIDATION_METADATA_CATCHUP.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/PARENT_VALIDATION_METADATA_CATCHUP.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/PORT_RECEIPT.json",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "c5f7d7d1acdc551eb69cf9fc4bb04cb4cb1e9142",
+        "sha256": "a0bb7d734ff7fddc88fbabdd38708638214b0f9b8afc9bbc7a915c9a6d306486",
+        "bytes": 715,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/PORT_RECEIPT.json"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/PORT_RECEIPT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/PORT_VOCAB_LINT.txt",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "c6b06e4b14504b301c7d8fc39082e996eeedf704",
+        "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+        "bytes": 81,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/PORT_VOCAB_LINT.txt"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/PORT_VOCAB_LINT.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/PROOF_REVIEW.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "80d30a7e62a6ce0e23a815bd19240ddc573802a1",
+        "sha256": "e640563f3b04a488931d7eb0253de2d74688f0bcd9535d6fea2da9e713e3a30e",
+        "bytes": 384,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/PROOF_REVIEW.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/PROOF_REVIEW.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/PR_BACKLOG.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "f154a6ff0406a5d473c9e5cddd6491ea9540578c",
+        "sha256": "fe013018afe4be5d8a248b5d3e331c44ad92d77e1f985677e30fc3132ef10f96",
+        "bytes": 177,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/PR_BACKLOG.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/PR_BACKLOG.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/PR_BODY.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "877048ff218d805dde299bbc4b340639e9f48859",
+        "sha256": "ff8f204868c6314477f344e35dc71f506cb016a51270ea99e5f66386607936e7",
+        "bytes": 2327,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/PR_BODY.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/PR_BODY.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/PUBLICATION_RECEIPT.json",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "2a62d80eb2c0a939e6fe37a3b81aa6c961a15b79",
+        "sha256": "3bb8b3155cc0004ccbb78edee55a0889f53d47035afaa62381839e6f829bb075",
+        "bytes": 566,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/PUBLICATION_RECEIPT.json"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/PUBLICATION_RECEIPT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/REVIEW_HISTORY.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "4cc3982af132190d349d9d8cba1949c17bd4e1a1",
+        "sha256": "68ab8fd6caeaa94e58090752d631d6972f937060f95738e425e9a85e35fdd508",
+        "bytes": 550,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/REVIEW_HISTORY.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/REVIEW_HISTORY.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/ROOT_CANONICAL_PORT_REVIEW.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "5d2a9fe81875b04f7298a6126d836845c1bec17a",
+        "sha256": "086a49565d6feb83b56d57772ffb66816bdf3af8a739d34784e20de41985daa6",
+        "bytes": 1416,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/ROOT_CANONICAL_PORT_REVIEW.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/ROOT_CANONICAL_PORT_REVIEW.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/ROUTE_PORTFOLIO.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "1a80b80c397bd6d44f5d441e4c69a51e2502f0e8",
+        "sha256": "9f34935b612d6b7afc5f4b1ba45db268d59fde1a20d396524757bac33489f6a1",
+        "bytes": 256,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/ROUTE_PORTFOLIO.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/ROUTE_PORTFOLIO.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/SCOPED_VALIDATION.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "57d65ad7deb2e243ea092c07659237a762ae10fe",
+        "sha256": "3a3215bf937b2b303dbbe422561092713582c8f4e119069539749df3a8b5da01",
+        "bytes": 471,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/SCOPED_VALIDATION.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/SCOPED_VALIDATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/STAGING_VALIDATION.json",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "3f4f96d53edf03ab2e3c11b7952dcd2ff1dd4245",
+        "sha256": "93d467aa30988bb5846fa0a1005a2eaa2dfd506ec41b605508c5d3dcfe8e0060",
+        "bytes": 1705,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/STAGING_VALIDATION.json"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/STAGING_VALIDATION.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/STATE.yaml",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "0267bd566d2e0c3d7f28ce05525188d4c93fdf21",
+        "sha256": "4b4bba442dd9c0f96b62076913e0ff1fc9823e3dcfed30379cacc6646711bd4e",
+        "bytes": 1046,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/STATE.yaml"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/STATE.yaml"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/STRICT_LINT.log",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "7ce9fbc9e247c2c53e9ea3bf48b605058b50e71e",
+        "sha256": "e6fc7621f090a9ba1ed4ec65387554905fb0de0bacaa9a5f49e1ae360045a85c",
+        "bytes": 13466,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/STRICT_LINT.log"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/STRICT_LINT.log"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/TRACE_GATE.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "3c9f92b64c8066a6edd58b416abe957cd2cca49d",
+        "sha256": "f6854afb6c690994192b3d37b0b8b18f7db7b9d6ae79610bec1c465d289b86a2",
+        "bytes": 129,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/TRACE_GATE.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/TRACE_GATE.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/ACTUAL_R1_CANONICAL_RESULT.json",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "0d4fe63b7e59b0411ec4b5cb26e0f3bf551934b5",
+        "sha256": "fb588cb555b830c0fff561e1e6a2a10d74ca957c796ba8095da5524f6ed24f9f",
+        "bytes": 2913,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/ACTUAL_R1_CANONICAL_RESULT.json"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/ACTUAL_R1_CANONICAL_RESULT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/ACTUAL_R1_CANONICAL_STDOUT.txt",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "b60d17d287a369c307223e30e8715a0fd94c265b",
+        "sha256": "aeb917d8815282fc8d2835f7df7cca706bb6e2967527636829c72c750a58db23",
+        "bytes": 733,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/ACTUAL_R1_CANONICAL_STDOUT.txt"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/ACTUAL_R1_CANONICAL_STDOUT.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/ACTUAL_R1_PORT_RECEIPT.json",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "f7ad88fbbec7e264f70d52bccc55952bc6e489f7",
+        "sha256": "9cdb1da5696dd94938c53aa53a4ee023166bbeab1751564215b27588a1c25b9f",
+        "bytes": 662,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/ACTUAL_R1_PORT_RECEIPT.json"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/ACTUAL_R1_PORT_RECEIPT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/ACTUAL_R1_REVIEW.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "58497a809b6a1d419219f641aa8dc4890bf3d353",
+        "sha256": "b68626a8cd92c405b3976883d9ecbced510d94908c919dd0d6e2f81609b7437b",
+        "bytes": 2057,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/ACTUAL_R1_REVIEW.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/ACTUAL_R1_REVIEW.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/BEFORE_RESTRICTED_MATRIX_STRENGTHENING_check.py",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "d8b30fe1628bec2423f049b9f0b3dcd9c3ac1015",
+        "sha256": "921454c6f377441e3559da09bcd4b4c4624496b9104cf51cedf8e304cd183ea3",
+        "bytes": 2678,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/BEFORE_RESTRICTED_MATRIX_STRENGTHENING_check.py"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/BEFORE_RESTRICTED_MATRIX_STRENGTHENING_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/BEFORE_RESTRICTED_MATRIX_STRENGTHENING_result.json",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "3af08627d1e5393cef2ffa9352cc2af1eff9f2f7",
+        "sha256": "711299a34d8885ab7139cbfbc4ea3f1549f66e78380815d34aa0567bcfdf1352",
+        "bytes": 2106,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/BEFORE_RESTRICTED_MATRIX_STRENGTHENING_result.json"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/BEFORE_RESTRICTED_MATRIX_STRENGTHENING_result.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/CANONICAL_RESULT.json",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "b845e5f78096deb86ea8ddc85b51670324b3b60b",
+        "sha256": "9081851f01852583d689429a5814bc8d7b576a9075533d35eec9675e358d6cb6",
+        "bytes": 2869,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/CANONICAL_RESULT.json"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/CANONICAL_RESULT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/CANONICAL_STDOUT.txt",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "c8fe6ba9fb8debf40f5f78ad2c24589070a5a945",
+        "sha256": "688278f6aa5cb62d90137a780de60f83b362e296b8fe8a10ee012827e80c3e47",
+        "bytes": 677,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/CANONICAL_STDOUT.txt"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/CANONICAL_STDOUT.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/CONTROLS_PREREGISTRATION.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "61a8ded4f177e5697061aec5038ce7adbd1c49c6",
+        "sha256": "70f3c106c801b1338e3bfe5fd795b97da4ad940000a5ad207c628a00525a220d",
+        "bytes": 825,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/CONTROLS_PREREGISTRATION.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/CONTROLS_PREREGISTRATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/DERIVATION.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "5dab217c0be4aa8c136dda38cad464379ea2a5a0",
+        "sha256": "55f5a4e94d945cc30ad2d00718378e0f92559106bd94039c40cbfc55dc59955d",
+        "bytes": 7927,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/DERIVATION.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/DERIVATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/PORT_RECEIPT.json",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "c5f7d7d1acdc551eb69cf9fc4bb04cb4cb1e9142",
+        "sha256": "a0bb7d734ff7fddc88fbabdd38708638214b0f9b8afc9bbc7a915c9a6d306486",
+        "bytes": 715,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/PORT_RECEIPT.json"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/PORT_RECEIPT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/PREREGISTRATION.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "9c9a4333fea9a8be9edace5a70f6b6d05c048b6f",
+        "sha256": "ab4d5238c7ab1ad3b5c5a7670c02d29780a2f8e36b4a49f4f7eb325807f702cf",
+        "bytes": 1510,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/PREREGISTRATION.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/PREREGISTRATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/RESTRICTED_MATRIX_STRENGTHENING.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "b895c24d4eaeecd648f637536044560b2a78070d",
+        "sha256": "5e080b3fcf704c51f090c6dda46f1e6fd5ef3e6bad5c4ad4d4f662e468556858",
+        "bytes": 389,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/RESTRICTED_MATRIX_STRENGTHENING.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/RESTRICTED_MATRIX_STRENGTHENING.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/ROOT_REVIEW.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "19bfd2e4fad099646bbbc3e8c9099807b2c69b6a",
+        "sha256": "007283ac7cbe03a31712e7918b70d63e346b11b529f7681a19ca610e74137814",
+        "bytes": 1424,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/ROOT_REVIEW.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/ROOT_REVIEW.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/STAGING_INDEX.json",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "7bd440e38499a16d8588fc4df118c74f0879f18d",
+        "sha256": "a288fb0054e18d6724ca48db0e7c601796b15ce70d4356f7b4c5747a7c66968c",
+        "bytes": 6798,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/STAGING_INDEX.json"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/STAGING_INDEX.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/check.py",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "71f476c7bd29e27b9e80d28016d519654726ef5e",
+        "sha256": "0bdff133fb9b84260afbd03bef0cf7775c8a7f42776bc70952cd24b97c2be307",
+        "bytes": 2809,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/check.py"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/port_actual_r1.py",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "fd602d206cb80d1d85865b97aa047be8efc83d77",
+        "sha256": "d000880a23aa821be488c8b9f83959494905b49f5d598d5c6c61bbde8bac779c",
+        "bytes": 2648,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/port_actual_r1.py"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/port_actual_r1.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/result.json",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "18183eb593083c18a734540cc64d0e7dc70081b1",
+        "sha256": "033490f7a9e4d80598ca22f01b308d35685dc8e65d2f09cd56ca1be64a9a06e9",
+        "bytes": 2103,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/result.json"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/native/result.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/primary_review/ACTUAL_R1_REVIEW.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "f23e70de1aa256d437c8338d56e0b0d266536843",
+        "sha256": "e6e33c9855fac92659a8d4b4656a6c427c309ac639778706cfb989746e6b64ca",
+        "bytes": 2796,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/primary_review/ACTUAL_R1_REVIEW.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/primary_review/ACTUAL_R1_REVIEW.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/primary_review/REVIEW.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "e807ffcb2bc409723d6f3cdb09ce2a4ec7989a86",
+        "sha256": "818868bd22c7c6c1fdbc89267454fc809aeed7e0a5a6cacf6222459845524b68",
+        "bytes": 4192,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/primary_review/REVIEW.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/primary_review/REVIEW.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/primary_review/ROOT_CORRECTION_REVIEW.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "62316882050eb8d23c138da121986f036c1f17b0",
+        "sha256": "e914a5c4ee6056e3c20472cc10526dce6cd9de6de431f12027323e71ee69c797",
+        "bytes": 528,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/primary_review/ROOT_CORRECTION_REVIEW.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/primary_review/ROOT_CORRECTION_REVIEW.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/ACTUAL_R1_DERIVATION.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "0a033b80df7c55a150bc05b229f210089915e92d",
+        "sha256": "ddcf0e7425c1c81c84a79ccbb7c443c311ddef37d2c53269281760c0072e7ef9",
+        "bytes": 4621,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/ACTUAL_R1_DERIVATION.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/ACTUAL_R1_DERIVATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/ACTUAL_R1_PREREGISTRATION.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "4bafbe9e285c77658f0a57670622623b1dc3b246",
+        "sha256": "bc048351d5b6482d25ce990b787d49fea357eeedae245a3e3677d87c7a3eb100",
+        "bytes": 1924,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/ACTUAL_R1_PREREGISTRATION.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/ACTUAL_R1_PREREGISTRATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/GENERATOR_NORMALIZATION_CORRECTION.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "d0242cb4534dd778409ea3a8221e56b7b99e6e4f",
+        "sha256": "3677fe3c989a4b826dd380d3a2043363dbf3d268e098aade83fc36b89504ccc3",
+        "bytes": 492,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/GENERATOR_NORMALIZATION_CORRECTION.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/GENERATOR_NORMALIZATION_CORRECTION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/PREREGISTRATION.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "c1eefc09531caa00c37f1247eca160888c864850",
+        "sha256": "39a046d3644d7ade83e2c5f49c164b119a9aff25af1f2bd4af656160d9b7323d",
+        "bytes": 1748,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/PREREGISTRATION.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/PREREGISTRATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/ROOT_DERIVATION.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "18441dcec8055f567daf97e97d1d06831a5eda43",
+        "sha256": "9ef44bb2da9d373c72bc79fadf1c283fca6fe7d0fce64416df3c3a3a200913ce",
+        "bytes": 8697,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/ROOT_DERIVATION.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/ROOT_DERIVATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/ROOT_DERIVATION_BEFORE_GENERATOR_NORMALIZATION_224fa648.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "8673f573c2a26ccc4d4bc3bfa2bf6f28ec54168d",
+        "sha256": "224fa648db011ab7f22011949279e523f04cf0d436cbbf1694e91a507dfc8129",
+        "bytes": 8699,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/ROOT_DERIVATION_BEFORE_GENERATOR_NORMALIZATION_224fa648.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/ROOT_DERIVATION_BEFORE_GENERATOR_NORMALIZATION_224fa648.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/ROOT_NATIVE_REVIEW.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "20f6f437883b4ab00d22e3d52848ecf9e21234a5",
+        "sha256": "4f94cd015b61b7bd47258415153305dbccf5ac56bb30d3eefcf4ca8dfc154564",
+        "bytes": 1423,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/ROOT_NATIVE_REVIEW.md"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/ROOT_NATIVE_REVIEW.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/actual_r1_check.py",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "958173ff97840e04247a4d757652b41cba1815ed",
+        "sha256": "27c764ecf14dff294a1f47332edfee276b646eb5c8896fbf5fb9379f0bf45b5a",
+        "bytes": 5679,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/actual_r1_check.py"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/actual_r1_check.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/actual_r1_result.json",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "822579ec93b7a0ef0b8296dda59361abe0e5a863",
+        "sha256": "decbe9cb033a9863d00b82a808d7445ec17fdcbf48ce94acf5eaffcc07e24a18",
+        "bytes": 1937,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/actual_r1_result.json"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/evidence/root/actual_r1_result.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py.live.json",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "4130d60f548e251deed76226381d23d635fef0f4",
+        "sha256": "b15f9bc0d5c2808238e3a3460dedf9891d06bac1355541b2c09c6f004c6490e0",
+        "bytes": 2912,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py.live.json"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py.live.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py.live.json",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "644d9f57534141990a0f77b0027b53ecb7a3809b",
+        "sha256": "10ced76cb62c47ef6dbab6bfefdd2a774836120181c3189cacf72121b0c94f0f",
+        "bytes": 2863,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py.live.json"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py.live.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/validated_claims_before_generated_cleanup.json",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "a61685b3f5a4f9fb938d4e9c3cfaf96275966802",
+        "sha256": "64a1ac1c910dd4d01c4d3d53350d9e34e04b773dadd34358a9fc4875dcb3c928",
+        "bytes": 43685,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/validated_claims_before_generated_cleanup.json"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/validated_claims_before_generated_cleanup.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/finite-pw-charged-upper-20260907/validated_readiness_before_generated_cleanup.json",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "c6640dc789b032b2d39f6c261cb53e45196a5bf8",
+        "sha256": "ec75eb2ff65c6bc7dc5dc3d7a25163c0aa64d6f5cd5b6be2cd1b302aa2e9fc1c",
+        "bytes": 11267,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/validated_readiness_before_generated_cleanup.json"
+      },
+      "main": null,
+      "category": "historical proof/control/process record",
+      "disposition": "ARCHIVE exact historical payload; canonical derivation/source evidence retained by named claims, no process/status authority",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/.claude/science/physics-loops/finite-pw-charged-upper-20260907/validated_readiness_before_generated_cleanup.json"
+    },
+    {
+      "path": "docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "5f201f07fb9ce731131367b4ac66de2d171ed31c",
+        "sha256": "cbddff81440b3c199dd1bda76db586da489a99dc1dbfe8d192e3dc908646b51b",
+        "bytes": 16259,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+      },
+      "main": null,
+      "category": "canonical theorem",
+      "disposition": "NARROW dependency and native language; preserve complete energy proof and exact R1 supplement",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/docs/GAUGE_WILSON_FINITE_PW_STATIC_SOURCE_ENERGY_UPPER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "base": {
+        "mode": "100644",
+        "blob": "0b1c5e50c28a12c5a6b64e0a7e07ad21daaf27a9",
+        "sha256": "e237a29ea1549f278df47126267acc43f6d35a4bdff815a4d1df57632ecbfa0c",
+        "bytes": 633705,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/base/docs/audit/data/citation_graph_manifest.json"
+      },
+      "head": {
+        "mode": "100644",
+        "blob": "57d778ec9864220b67f7b67b2491fac22045e7c2",
+        "sha256": "25ec0d2941a91203168c37aab9adef894ec6460f96e461aff84b17a8199bcde1",
+        "bytes": 633856,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/docs/audit/data/citation_graph_manifest.json"
+      },
+      "main": {
+        "mode": "100644",
+        "blob": "c21daead253bb6ff5834affe0068b561dce2e147",
+        "sha256": "0d1b088ef492d73fb8608f63ed97fdb9d4e1af5607e4899cda8c140128bb6bc5",
+        "bytes": 891252,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/main/docs/audit/data/citation_graph_manifest.json"
+      },
+      "category": "generated topology acknowledgment",
+      "disposition": "SUPERSEDED by final current-main topology regeneration; do not import stale manifest",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/docs/audit/data/citation_graph_manifest.json"
+    },
+    {
+      "path": "docs/audit/scripts/build_citation_graph.py",
+      "base": {
+        "mode": "100755",
+        "blob": "a805f7b1b278d49cf3ed65061a4b644a9e6bc873",
+        "sha256": "3900abe98b2e1649e8a6e129d358f924c39d338a1bdd791b80e5ba7ee1d5a203",
+        "bytes": 67911,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/base/docs/audit/scripts/build_citation_graph.py"
+      },
+      "head": {
+        "mode": "100755",
+        "blob": "bb95425a256ab4350b85751108d095a73e5c45fa",
+        "sha256": "2529a54db0533874752d3d8c15b7aa46e435bbda8fe977d671a996b401d7bed7",
+        "bytes": 68087,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/docs/audit/scripts/build_citation_graph.py"
+      },
+      "main": {
+        "mode": "100755",
+        "blob": "890397f3318e0624429c4fe524577b383411e576",
+        "sha256": "b2117b565aa795e67cd62d0f49f89cf2ed83a14d9d3447c1600ee0bf9c0ba8c5",
+        "bytes": 74385,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/main/docs/audit/scripts/build_citation_graph.py"
+      },
+      "category": "source tooling",
+      "disposition": "ACCEPT original added claim->helper entry only, adapt on current-main file preserving all other entries",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/docs/audit/scripts/build_citation_graph.py"
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.txt",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "b5313052bc1a3a4dabc24a7575306888b444d632",
+        "sha256": "b249b1433a7199be126a4e2eda6705bce2f61460058574edcb94d619b8d494f4",
+        "bytes": 1025,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/logs/runner-cache/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.txt"
+      },
+      "main": null,
+      "category": "historical canonical stdout",
+      "disposition": "SUPERSEDED by current frozen capture; retain original exact output in archive",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/logs/runner-cache/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.txt"
+    },
+    {
+      "path": "logs/runner-cache/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.txt",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "faa85aab3b2f338f36f4c61a30892132d4e65e51",
+        "sha256": "02b74ad5d2baff2f9d2c8f78e855f123e0f14c80bece3265f269c0ba5c219e3b",
+        "bytes": 961,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/logs/runner-cache/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.txt"
+      },
+      "main": null,
+      "category": "historical canonical stdout",
+      "disposition": "SUPERSEDED by current frozen capture; retain original exact output in archive",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/logs/runner-cache/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.txt"
+    },
+    {
+      "path": "scripts/audit_packet_script_deps.py",
+      "base": {
+        "mode": "100644",
+        "blob": "ef7dc02c4a3a9bd6cbcb3ffe723f6340c6be2747",
+        "sha256": "7bf21cef52a6538056f1b40a26e430b9ae71b1ce936c6ba6c01560c5b5be8d89",
+        "bytes": 32947,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/base/scripts/audit_packet_script_deps.py"
+      },
+      "head": {
+        "mode": "100644",
+        "blob": "4ffdff97d3ea29719222e6940a974d63588512cc",
+        "sha256": "5a20df422b36e986e242c6814e0d991cab5fa81a33b938666ff82a217514e7b3",
+        "bytes": 33123,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/scripts/audit_packet_script_deps.py"
+      },
+      "main": {
+        "mode": "100644",
+        "blob": "9671f636da64c7bc22114eb88fdac8654e62b108",
+        "sha256": "38210e23dbe9d703552c0381a3719b2a9a1551004028e0d64714da1bee3ddd8d",
+        "bytes": 39496,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/main/scripts/audit_packet_script_deps.py"
+      },
+      "category": "source tooling",
+      "disposition": "ACCEPT original added claim->helper entry only, adapt on current-main file preserving all other entries",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/scripts/audit_packet_script_deps.py"
+    },
+    {
+      "path": "scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "cbaadc52cb7370fd94b802cf7cd6a77f06d02502",
+        "sha256": "9d43e55cc41384e4f98398cc599655d881bfdfb2cba545781b501fa9024bdf70",
+        "bytes": 8264,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py"
+      },
+      "main": null,
+      "category": "canonical runner",
+      "disposition": "NARROW scope metadata and bind final current inputs/capture; preserve all scientific formulas and original evidence",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/scripts/gauge_wilson_finite_pw_actual_r1_charged_energy_check_2026_09_07.py"
+    },
+    {
+      "path": "scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py",
+      "base": null,
+      "head": {
+        "mode": "100644",
+        "blob": "f44d5c127df05af7ed84f402a27d6b551dc485c4",
+        "sha256": "2007377e37c26a7e2903332fe1c48388b6ac124bc95e7e71e3f9d6fcfb436433",
+        "bytes": 5201,
+        "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/head/scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py"
+      },
+      "main": null,
+      "category": "canonical runner",
+      "disposition": "NARROW scope metadata and bind final current inputs/capture; preserve all scientific formulas and original evidence",
+      "recovery": "/private/tmp/review-drain-20260915/drain8032-original/head/scripts/gauge_wilson_finite_pw_charged_energy_controls_2026_09_07.py"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "docs/CANONICAL_HARNESS_INDEX.md",
+      "revision": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+      "mode": "100644",
+      "blob": "6aca1f45f18874a028eedb5501a173fc8dcb37d4",
+      "sha256": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5",
+      "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/context/docs/CANONICAL_HARNESS_INDEX.md"
+    },
+    {
+      "path": "docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "revision": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+      "mode": "100644",
+      "blob": "37221b9407b952edbb5ee72c245d2dd2753c326e",
+      "sha256": "a707cf0d93196cddab52d44ba472ae1726015ba349c6c2ceaa83e35da9f7a467",
+      "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/context/docs/GAUGE_WILSON_COMPACT_CUBE_FINITE_QUBIT_CUTOFF_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    },
+    {
+      "path": "docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "revision": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+      "mode": "100644",
+      "blob": "5cc6827e11c993308ebb7a7b8679d158c947e46f",
+      "sha256": "c3a5922d621806805fe340ed513c1abc359c97a24e9d692c25379930c4cb5d52",
+      "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/context/docs/GAUGE_WILSON_COMPACT_CUBE_LOW_ELECTRIC_SPECTRUM_RITZ_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    },
+    {
+      "path": "docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "revision": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+      "mode": "100644",
+      "blob": "aadbf469c2c47d8c02acda6c39ccec22de4ca7fb",
+      "sha256": "a5df21b019b0ec35fce30bccced5c85862595235c1c9aa28779a3574fdc979f3",
+      "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/context/docs/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    },
+    {
+      "path": "docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "revision": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+      "mode": "100644",
+      "blob": "75f96a8a315d77d5ebb8344ba798ebee0bd554f5",
+      "sha256": "f4f54f9795280f8d3d799fbca71964d13ed224432c3cf183bcc0c5779731eb69",
+      "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/context/docs/GAUGE_WILSON_FULL_CUBE_COMPACT_INTERACTING_HAMILTONIAN_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    },
+    {
+      "path": "docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "revision": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+      "mode": "100644",
+      "blob": "fd207b4a6e3eaf0f9d756022a428e1c57c7a7bab",
+      "sha256": "1bec26d34646291914bd8a2b980103bf7ca5bf07815a10f76b945c97fb4ecade",
+      "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/context/docs/GAUGE_WILSON_PW_COMPRESSION_SHELL_AND_ENERGY_PATH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-07.md"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "revision": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+      "mode": "100644",
+      "blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/context/docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+      "mode": "100644",
+      "blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/context/docs/MINIMAL_AXIOMS_2026-06-29.md"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "revision": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+      "mode": "100644",
+      "blob": "5acb4643882438f8dd16baf9694e6fa2d33d1dc6",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/context/docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "revision": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+      "mode": "100644",
+      "blob": "a74392f6939b2e51109756c37d6d5d59bb54c5a4",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/context/docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md"
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "revision": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+      "mode": "100644",
+      "blob": "79c8f1f18a9b463f420009ad8da0979df5e5a7e3",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/context/docs/ai_methodology/SCIENCE_WORKFLOW.md"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+      "mode": "100644",
+      "blob": "0075998454899efb1b83e71daea5bc60d3499d49",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/context/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md"
+    },
+    {
+      "path": "docs/audit/README.md",
+      "revision": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+      "mode": "100644",
+      "blob": "ca590b6141c1440a520c1ef2d777aa74bec41e35",
+      "sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f",
+      "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/context/docs/audit/README.md"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+      "mode": "100644",
+      "blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/context/docs/audit/data/axiom_premise_nodes.json"
+    },
+    {
+      "path": "docs/audit/data/premise_decision_history.json",
+      "revision": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+      "mode": "100644",
+      "blob": "9f05a519e90f8ad7eaf0607f6fd00547722944b1",
+      "sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113",
+      "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/context/docs/audit/data/premise_decision_history.json"
+    },
+    {
+      "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+      "revision": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+      "mode": "100644",
+      "blob": "a4b0638649e7f8402cf5f2827e4bf2329f95aea3",
+      "sha256": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8",
+      "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/context/docs/repo/ACTIVE_REVIEW_QUEUE.md"
+    },
+    {
+      "path": "docs/repo/CONTROLLED_VOCABULARY.md",
+      "revision": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+      "mode": "100644",
+      "blob": "27e61f73c6839c28091947c0056da16b478c0a19",
+      "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+      "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/context/docs/repo/CONTROLLED_VOCABULARY.md"
+    },
+    {
+      "path": "docs/repo/DEFERRED_DECISIONS.md",
+      "revision": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+      "mode": "100644",
+      "blob": "4b8954556f59870f204de0709f6bf2f0a2c67a86",
+      "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+      "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/context/docs/repo/DEFERRED_DECISIONS.md"
+    },
+    {
+      "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+      "revision": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+      "mode": "100644",
+      "blob": "eaff7bb45b92f647467c2847b5521f6e45a472ae",
+      "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+      "snapshot": "/private/tmp/review-drain-20260915/drain8032-original/context/docs/repo/REVIEW_FEEDBACK_WORKFLOW.md"
+    }
+  ],
+  "parent_receipts": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8031-review.json",
+      "sha256": "ee7a32aa548fa526f2dd2bc50151b1e48f91827b3d5337ea933c7469d268b36b"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8031-review.md",
+      "sha256": "d8e2971f9d5d2083e16347e91bce2432a1c78367058964fcb8af939fc3975106"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8031-final-confirmation.json",
+      "sha256": "dc5312f0a876fc75b77044f98921f5308685d69a977b5250730676e2b039c5bf"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8031-unit-final.json",
+      "sha256": "2abda8b41838a82bccbfc22c4d626c362078afb328e0d7a462f4cc3776e69413"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8031-landing-report.md",
+      "sha256": "535ce69152f8feb71ca1bdb5666c5bb151594c85fd7e40d9882f4647f8c60157"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/partial-closure-8031.json",
+      "sha256": "7e6cd77cb7c0d1c160bd412160e9722c2b8ca0f6bf5279941913a62e1354b2f2"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/partial-closure-8031-comment.md",
+      "sha256": "f95231624156eee8a7099b3c4fbdaa858bb47c5bfcc20d2b2b1e3ea1cffca418"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-fetch.json",
+      "sha256": "c0bf4df1ad17966c842bd737165deea8a9c282e61c7571365449091e596418ca"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8032-parent8031-state.json",
+      "sha256": "1acf093705dfb0d6ef3ecfb658dc14d1624637599b1ba6e5061ebd121a6cefab"
+    }
+  ],
+  "original_manifest": "/private/tmp/review-drain-20260915/drain8032-original/manifest.json",
+  "original_manifest_sha256": "69d18fd835179c8d6f1c7e5702746b31cd00b1d175fb55a7902543ea790c0db6",
+  "original_delta_sha256": "e8a7c0f2fedfb7e5f0069e703a58bf265b581fac0df60c5a6da4e7ecd82af102",
+  "original_delta_bytes": 318991,
+  "original_paths": 84,
+  "inherited_closure": "Necessary old parent entire note preserved/read under original/inherited; complete parent70-path mapping reused by hash-bound parent review/final/unit receipts, with actual main positive source read in full. Child does not enroll/restore deferred parent negatives or unrelated stacked deltas.",
+  "proof_contract": {
+    "domain": "finite ordinary cubic link graph, at most4 elementary plaquettes/link, a>0,v>=0, integer R>=1; distinct-link path; full-carrier normalized neutral physical ground; theta<1",
+    "target": "charged Rayleigh upper bound(8) and sufficient explicit bound(9), tending to4d/a for each fixed path uniformly ambient volume",
+    "obligations": "Ground replacement -> local kinetic budgets; actual PWP/shell -> acceptance; smooth kinetic/color trace -> local commutator norm; face fusion/support -> local potential commutator; Rayleigh -> normalized bound. All implication steps closed under stated premises. Physical dynamics selection is not a lemma claimed proved."
+  },
+  "imports": [
+    "Supplied compact SU3 Haar Wilson Hamiltonian/full-irrep cutoff and kinetic convention; explicit normalization/model input",
+    "Yarotsky Theorem1 finite-volume stability optional supplier of neutral full ground in small-av regime; no new proof or numerical constants",
+    "Haar Schur/determinant and fundamental fusion mathematical identities checked",
+    "t=1/100 and v=1600/1683 are prospective rational fixture choices, not measured/fitted physical parameters",
+    "No observational comparisons; approved primitives supply no dynamics/selector beyond actual source grants"
+  ],
+  "lenses": {
+    "CodeRunnerReviewer": "Math checked; repair N5/evidence packaging",
+    "PhysicsClaimReviewer": "BOUNDED supplied-model positive theorem",
+    "ProofObligationReviewer": "CONDITIONAL with complete proof inside explicit hypotheses",
+    "ImportSupportReviewer": "DISCLOSED; make temporal a wording explicit",
+    "NatureRetentionReviewer": "BOUNDED; no Nature/retained grant",
+    "NoGoDisciplineReviewer": "Positive construction and exact finite adverse examples only; no universal negative-certification PASS. See N1-N8 applicability below.",
+    "LabelingConventionReviewer": "PASS genuinely algebraic, not naming convention",
+    "RepoGovernanceReviewer": "FIX",
+    "AuditCompatibility": "FIX, combined gate root-owned",
+    "MethodologySkillReviewer": "NOT APPLICABLE"
+  },
+  "no_go": {
+    "N1": "Positive energy theorem, not exhaustive route exclusion. Original checklist does not satisfy five-family negative packet; no quota fabricated, no universal no-go accepted.",
+    "N2": "No independent wall count asserted. Full ground,theta and cutoff are proof hypotheses with stated relationships; neutral ground supplied in weak window or direct fixture.",
+    "N3": "Haar carrier,dynamics,generators,color normalization,distinct links,full minimum and face incidence explicit. No primitive laundering.",
+    "N4": "Inherited parent only positive shell/path proof used; finite exact excess attacks only copied full-unitary trial identity, not charged spectral minimum.",
+    "N5": "Original certificate misgroups arithmetic as lattice-wide; repair required.40 finite support predicates and22 single-plaquette predicates do not execute arbitrary-volume theorem.",
+    "N6": "No new-axiom-required assertion. Supplied conditional theorem legitimate; approved primitive authority read.",
+    "N7": "Repeated-link paths, arbitrary coupling physical ground, deterministic preparation and actual charged-minimum convergence are separate unproved tasks, not impossibility conclusions. Better estimates/alternative trials remain admissible.",
+    "N8": "Parent8031 norm/energy gap precisely matched; this proof supplies new commutator mechanism. Parent deferred universal negative certification remains deferred."
+  },
+  "independent_controls": {
+    "source": "/private/tmp/review-drain-20260915/check8032/independent.py",
+    "source_sha256": "0d9b47d89f408fbbb9205e606f9a4685fc36dbb7e85d10e8421224d9b3bf5972",
+    "result": "/private/tmp/review-drain-20260915/check8032/result.json",
+    "result_sha256": "4430f6caaaaa42d2de1997631ca10d87713012f852a8dfecbb09c2354c055951",
+    "time": "/private/tmp/review-drain-20260915/check8032/time.txt",
+    "time_sha256": "62742fde91d849e192b7357e4e7c722f5f856d86764d648f645ae2a8e82fe54f",
+    "count": 68,
+    "route": "Cayley-Hamilton/character contractions, independent rational spectral vectors, shell rectangle enumeration and different rational compression fixture. Original primary never executed.",
+    "actual_wall_sec_external": 0.03,
+    "actual_CPU_sec_external": 0.02,
+    "maxRSS_bytes_external": 16744448,
+    "limits": "30s alarm,10s CPU rlimit,64MiB measured final RSS guard; tiny stdlib arithmetic",
+    "mutations": "Independent formula/expected-value adverse checks; no full primary mutation run or primary reproduction claimed."
+  },
+  "failures": [
+    {
+      "path": "/private/tmp/review-drain-20260915/check8032/historical-comparison-failure.json",
+      "sha256": "9374b4fa24c78109c385ed2f52532a0690b97cfc96617b8de456f22ec481a628",
+      "type": "reviewer string selector missing space, corrected exact comparison PASS; not scientific failure"
+    }
+  ],
+  "current_main_loss_check": "Original note,runners,caches and .claude packet absent on main. Only original3 shared paths are two registries and manifest; transplant only reviewed one-line registrations and regenerate manifest, preserving current-main bytes elsewhere. No whole old registry replacement. Root exact final-main delta check still required.",
+  "external_source": {
+    "url": "https://arxiv.org/html/math-ph/0411042v1",
+    "read": "Theorem1 and hypotheses lines34-78; constants depend only on range; confirms current gap parent optional ground supplier"
+  },
+  "primary_runs": 0,
+  "pipeline_runs": 0,
+  "audit_runs": 0,
+  "source_edits": 0,
+  "commits": 0,
+  "remaining": "Author prepares native source/full recovery and honest execution scopes on current main; original reviewer confirms affected source and inputs before captures, then final outputs in same session. Root combined validation, fresh heads, draft-ready state and current-main loss gate required."
+}

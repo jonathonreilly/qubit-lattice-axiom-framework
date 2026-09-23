@@ -1,0 +1,486 @@
+{
+  "schema_version": 1,
+  "unit_id": "PR8174",
+  "verdict": "COLD_SOURCE_CLEAN_FOR_BOUNDED_CAPTURE",
+  "source_tree": "5083bc62b618b49a45d96496b7d431306756cb4f",
+  "capture_clearance": true,
+  "reviewer": {
+    "session": "/root/review_8174",
+    "role": "original independent reviewer",
+    "same_session": true
+  },
+  "checkout_base": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+  "reviewed_current_main": "3dca18ddd0082dc23bb12c7ca38939b901c28736",
+  "source": {
+    "base": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+    "commit": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+    "tree": "5083bc62b618b49a45d96496b7d431306756cb4f",
+    "paths": [
+      {
+        "path": "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "5642877329c141c39394936173c35c82c5cd18bb8f9a408c17fad0497cef647e"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/README.md",
+        "sha256": "227ed4e0e1161c8f02b49774bcd9ebb6eaf171cc78722444d5b1bf9b3638eff8"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/archive-manifest.json",
+        "sha256": "b8b85acc762ee0145d2a84ec4048f61553b24dbef3d01ae39f1f70b085cd5f98"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED-c9850d47e436dea7.md",
+        "sha256": "c9850d47e436dea7bf370f03f6a696f824bc1100fe824926fbeeb956ee09815f"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/APPROACH_REGISTRY-a24d7a0fbd69f46c.md",
+        "sha256": "a24d7a0fbd69f46c52194649c9a62f8bf6e99e7b104c7bbaad23d6537f388bc2"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/CHECKER_block30_findings-df0ff512f1767b7f.md",
+        "sha256": "df0ff512f1767b7f00c80d60bc50bcbf8ce2220bce1f7b06545d34c64b1975fe"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/CLAIM_STATUS_CERTIFICATE_block30-3b47da9614abb913.md",
+        "sha256": "3b47da9614abb91399d7db278a5167c9f3c660bfb2c451eac81461271aa0e2a8"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/GOAL_block30-eed3c47d058abe9c.md",
+        "sha256": "eed3c47d058abe9c576c96c8f5119c94679f530dc4b9ec4744185f9680adc651"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/HANDOFF-3daf21b65f4e73be.md",
+        "sha256": "3daf21b65f4e73bea37a22fa4bdf75ad240ff98ee9ed3c9b13f69fa68c43a8bf"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/OPPORTUNITY_QUEUE-d3108acdf7a1cb18.md",
+        "sha256": "d3108acdf7a1cb18f6d652536848cf247b4a49583741ee7a0e447bc7f5e70300"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/RESULTS_block30-5242365320da46ae.md",
+        "sha256": "5242365320da46ae3e7347b8398c80404e6dd1bcad0b3959f501811ef117c13f"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/REVIEW_HISTORY-e3346d7d91b61912.md",
+        "sha256": "e3346d7d91b61912f86bc3544d0f63a4975f8a3c280a73dfca4234ec9fdc53b3"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/STATE-bb43fbab2baea279.yaml.gz",
+        "sha256": "124b63668868db22895d34e29ef8f39977a15fe39d2cb17818620f19676bf070"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/TRACE_GATE-b7388c63cc0a04c5.md",
+        "sha256": "b7388c63cc0a04c53c29da4680fcfbc103a571068ae44852a00d1281d7557238"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_-985dcbd934f5f2b5.txt.gz",
+        "sha256": "a028b21f644f3f906ff50ce8988a1717eb9f97fe40ef2bb81eac72e4e3c0922b"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_-99299e47dc478c70.py",
+        "sha256": "99299e47dc478c701b901bda2c32c20bdae77fd5b9f815ec3f0b816b37aa1c4d"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/citation_graph_manifest-5350676179dc9a1d.json.gz",
+        "sha256": "159f40259cd8cf2040afc4b4e113424c4b4de9d372c9b6cb947e930017aecdee"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_budget-f1feabd9e97ed793.py",
+        "sha256": "f1feabd9e97ed7938cf6a1997f5ae56dcc5d28833bcc42982d2e85a99d9a4e1b"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_budget.out-580a9a51b4a9639b.txt.gz",
+        "sha256": "e8b311e9961f684344302566f17f6d352c84854cbbff6b55d2496943fab44047"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_certify-d270f06f2dc4fa26.py",
+        "sha256": "d270f06f2dc4fa26234873a5f91bdaf963cd6ac3264a4aabf1ecc0f8e560b636"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_certify.out-d21ed3d2ee5fbed4.txt.gz",
+        "sha256": "10d887c91336bb3f4143fff050bc4304fea7b3dad8843b659a059050a94b102f"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_construction-6dc3fe6ece20ace6.py",
+        "sha256": "6dc3fe6ece20ace6bf62891f74ad4aada028ddf3d48cd845621fa88758453259"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_construction.out-278562e4f8c56992.txt.gz",
+        "sha256": "fd990cc9c0a6c22af56c5a7ca2429c91c73df224b435644acd9af22eead25911"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_core-83e90b6e4b5d9a64.py",
+        "sha256": "83e90b6e4b5d9a6483265e8069abc5e412733b4eb4ffaee86144034ae499ec89"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_refuter-379613ed26239942.py",
+        "sha256": "379613ed262399426d3073b1c7beead6b29bbf7ae2649b2e7b4a982766533374"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_refuter.out-ef7eb3a7a7e9c15f.txt.gz",
+        "sha256": "86f12d9360195a79d674fa143152992f66ca022d6b3ca6d96f34e5d4ebe86145"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_scan-7a1623641b0029e0.py",
+        "sha256": "7a1623641b0029e0c9839b732d62640d0f95b629a4eae4456908a7b693d5a897"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_scan.out-74956c41f7bb62e1.txt.gz",
+        "sha256": "8741efe569ac8298dd4d6a4cf4ff0777ccc4d639dc28c21a72d0e7abceed9a93"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/original-delta.patch.gz",
+        "sha256": "cfb208117d56f169eabc20aebe8039c298a019930b3207b347f370b67c754a8a"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/pr8174-deferred-science.md",
+        "sha256": "0db03a5c23a0466a010c9f6a64dd9efd079bdaf64cb7df334c8f30c58c8be271"
+      },
+      {
+        "path": "scripts/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.py",
+        "sha256": "4c4027558538dad0ad0a4d8887de2ac7d39671438ca15aaa1fcc38f214efc866"
+      }
+    ],
+    "deleted_paths": []
+  },
+  "inputs": {
+    "runtime": [
+      {
+        "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "01b4ca057540b1f84b261f5b7ce4328540b7efa9ca845a95c14e9952a75006e2"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "5642877329c141c39394936173c35c82c5cd18bb8f9a408c17fad0497cef647e"
+      },
+      {
+        "path": "scripts/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.py",
+        "sha256": "4c4027558538dad0ad0a4d8887de2ac7d39671438ca15aaa1fcc38f214efc866"
+      }
+    ],
+    "helpers": [],
+    "parents": [
+      {
+        "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "01b4ca057540b1f84b261f5b7ce4328540b7efa9ca845a95c14e9952a75006e2"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+        "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+      },
+      {
+        "path": "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "01b4ca057540b1f84b261f5b7ce4328540b7efa9ca845a95c14e9952a75006e2"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/PREFLIGHT.md",
+        "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+        "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+        "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md",
+        "sha256": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+        "sha256": "bbdb794f3925b1a473db22a94eeaa4d0b6be5e302f6dc1463c27306738b731b3"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/LANDING.md",
+        "sha256": "827032765af31a2f4ef64b3e595173c7e81e2f56b713793aba336228411a4624"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+        "sha256": "ae61a58ef601d1975c40f720a17f5310feda9bf700b225d296b240eb3940d096"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+        "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+        "sha256": "cfcb43f40791d8e8772e86fd2b53fb11008c5075e416f8cf4eb84bd18ab71773"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/SALVAGE.md",
+        "sha256": "57c613884b1a955e527dccd0e185506c663975e4ea93b9d1c2ae9496035fd0ee"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+        "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+        "sha256": "c9b291fcea80c55d8e830644cd405eeba79cb3b15dc19f75a45bb2dc05c3258d"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+        "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py",
+        "sha256": "a102903ea42d54b90250f57752c13ccaa4ea70828890ce9129e40c88cbcb8494"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/README.md",
+        "sha256": "227ed4e0e1161c8f02b49774bcd9ebb6eaf171cc78722444d5b1bf9b3638eff8"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/archive-manifest.json",
+        "sha256": "b8b85acc762ee0145d2a84ec4048f61553b24dbef3d01ae39f1f70b085cd5f98"
+      },
+      {
+        "path": "docs/work_history/repo/review_feedback/pr8174-evidence/pr8174-deferred-science.md",
+        "sha256": "0db03a5c23a0466a010c9f6a64dd9efd079bdaf64cb7df334c8f30c58c8be271"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "b2117b565aa795e67cd62d0f49f89cf2ed83a14d9d3447c1600ee0bf9c0ba8c5"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "38210e23dbe9d703552c0381a3719b2a9a1551004028e0d64714da1bee3ddd8d"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "findings": [],
+  "predicates": {
+    "exact_staged_source": true,
+    "same_session_review": true,
+    "complete_original_disposition": true,
+    "all_actual_inputs_bound": true,
+    "current_main_compatible": true,
+    "source_math_clean_at_scope": true,
+    "resource_plan_reviewed": true,
+    "no_science_execution_in_review": true,
+    "immutable_adapter_binding_required": true
+  },
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-author-unit-draft-v1.json",
+      "sha256": "32ef30f8aaf5cd9d0e6374ab165773568ab6670b4259e5b1016eed47ccf51e5f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-author-cheap-v1.json",
+      "sha256": "09167e1aae2f14fd989c0d1578295f6c956001c2e76861774e94c58fa93ba0a4"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-early-review-v3.json",
+      "sha256": "c69531fe6e86ef41a9e625743732d7856d937ab0accf52bd714f3ecdb958ec5b"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-review-original.json",
+      "sha256": "724cc955b08af65a5f6933a2f9c8c701b222c5a5bab2732cabb22c241105f541"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-prepared-v3-source-freeze.json",
+      "sha256": "53b706d4fe87e021c26e57a1899992ccb11f208253cfe6aae8c18e452414c116"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-author-input-resource-plan-v3.json",
+      "sha256": "2290e47f9a26c0af271c45b5990cd4953b83ab5cdc0af0e3226bbe62f03a1547"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-capture-v1.py",
+      "sha256": "a0eaf9e49510d205678522a78b1d26acf734ea42684b4561c9788aed7c0c1bae"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-mutation-capture-v1.py",
+      "sha256": "5472569fcd62e622d0f9b51aeee37d3ab86feae8e5119a308c745480a65c197d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-capture-plan-v2.json",
+      "sha256": "2033d5cf94e1cb15ec69f26958233ef15b61a40d736ff0146950d3bdfc2bcf6d"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-adapter-verification-v1.json",
+      "sha256": "56ecd174135cccd68505bd94e9f19294e476ed264c06910fdda54900740a695e"
+    }
+  ],
+  "current_main_interaction": {
+    "changed_paths": [
+      "docs/SIX_AXIS_POINT_SENSITIVITIES_FINITE_ISLAND_HEALING_AND_DIRECTED_RECURRENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/audit/data/citation_graph_manifest.json",
+      "docs/work_history/repo/review_feedback/pr8172-evidence/README.md",
+      "docs/work_history/repo/review_feedback/pr8172-evidence/archive-manifest.json",
+      "docs/work_history/repo/review_feedback/pr8172-evidence/complete-inherited-packet.tar.gz",
+      "docs/work_history/repo/review_feedback/pr8172-evidence/complete-packet-inventory.json",
+      "docs/work_history/repo/review_feedback/pr8172-evidence/kept/ADMISSIBILITY_RULE_MAP_OF_MEMORY_WHERE_EACH_OF_THE_FOUR_LAWS_KEEPS_ITS_PLANE_LOCATED_AGAINST_THE_PROVED_REGIONS_WITH_THE_HEALING_AND_INFLUENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-16-f2af9a93a1c168a8.md",
+      "docs/work_history/repo/review_feedback/pr8172-evidence/kept/APPROACH_REGISTRY-f296aef8bec769dd.md",
+      "docs/work_history/repo/review_feedback/pr8172-evidence/kept/CHECKER_block28_findings-6fdbdf7ac1bd8d16.md",
+      "docs/work_history/repo/review_feedback/pr8172-evidence/kept/CLAIM_STATUS_CERTIFICATE_block28-bb508f195a32e2e9.md",
+      "docs/work_history/repo/review_feedback/pr8172-evidence/kept/GOAL_block28-90d0882134e9ee53.md",
+      "docs/work_history/repo/review_feedback/pr8172-evidence/kept/HANDOFF-44c009a7729b873d.md",
+      "docs/work_history/repo/review_feedback/pr8172-evidence/kept/OPPORTUNITY_QUEUE-da597e8270234a27.md",
+      "docs/work_history/repo/review_feedback/pr8172-evidence/kept/RESULTS_block28-94bec5337188678b.md",
+      "docs/work_history/repo/review_feedback/pr8172-evidence/kept/REVIEW_HISTORY-5de1f2362d5592b4.md",
+      "docs/work_history/repo/review_feedback/pr8172-evidence/kept/STATE-4e45eff3b361f6e3.yaml",
+      "docs/work_history/repo/review_feedback/pr8172-evidence/kept/TRACE_GATE-e0b88a0cc15db463.md",
+      "docs/work_history/repo/review_feedback/pr8172-evidence/kept/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16-5d81f2535f3c6840.txt.gz",
+      "docs/work_history/repo/review_feedback/pr8172-evidence/kept/admissibility_rule_map_of_memory_four_laws_transitions_located_against_proved_regions_healing_and_influence_bounds_2026_09_16-6411552d4900e6e0.py",
+      "docs/work_history/repo/review_feedback/pr8172-evidence/kept/citation_graph_manifest-3c45f083d588d6d8.json.gz",
+      "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_exact-841cfedbb1c9c00a.py",
+      "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_exact.out-82cb36c9ecb8ead2.txt.gz",
+      "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_refuter-be8a580c8a49dcc4.py",
+      "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_refuter.out-4785cb7bd1bc89bc.txt.gz",
+      "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_formation_sixaxis-c7293f468d6cffac.py",
+      "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_formation_sixaxis.out-24388d69821ab568.txt.gz",
+      "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_static_sixaxis-3356d4221aa94000.py",
+      "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_static_sixaxis.out-bac7f37e8a0ea271.txt.gz",
+      "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_static_sphere-45845b8cb7ae5b02.py",
+      "docs/work_history/repo/review_feedback/pr8172-evidence/kept/supervisor_control_block28_scan_static_sphere.out-19a5299c46cab3ee.txt.gz",
+      "docs/work_history/repo/review_feedback/pr8172-evidence/pr8172-deferred-science.md",
+      "logs/runner-cache/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16--criterion_bracket_wrong.json",
+      "logs/runner-cache/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16--eroder_bound_wrong.json",
+      "logs/runner-cache/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16--influence_wrong.json",
+      "logs/runner-cache/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16--polynomial_wrong.json",
+      "logs/runner-cache/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16--region_count_wrong.json",
+      "logs/runner-cache/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16--third_coordinate_wrong.json",
+      "logs/runner-cache/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16--threshold_p0_wrong.json",
+      "logs/runner-cache/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16--translation_origin_wrong.json",
+      "logs/runner-cache/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16.json",
+      "logs/runner-cache/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16.txt",
+      "scripts/six_axis_point_sensitivities_finite_island_healing_directed_recurrence_bounds_2026_09_16.py"
+    ],
+    "protected_paths": [
+      "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "docs/ADMISSIBILITY_RULE_THREE_DIMENSIONAL_FORMATION_LAW_ORDERED_PHASE_STABILITY_OF_THE_NOISY_LEVEL_AUTOMATON_EXPLICIT_THRESHOLD_SIX_INVARIANT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "docs/SIX_AXIS_TWO_LEVEL_DOMINATION_EXTENDED_EXPLANATION_TREE_AND_FOUR_RATIONAL_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/ai_methodology/skills/review-loop/PREFLIGHT.md",
+      "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md",
+      "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "docs/ai_methodology/skills/review-loop/references/LANDING.md",
+      "docs/ai_methodology/skills/review-loop/references/OPERATIONS.md",
+      "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "docs/ai_methodology/skills/review-loop/references/SALVAGE.md",
+      "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+      "docs/ai_methodology/skills/review-loop/scripts/review_workspace.py",
+      "docs/audit/data/axiom_premise_nodes.json",
+      "docs/audit/data/doc_authority_registry.json",
+      "docs/audit/scripts/build_citation_graph.py",
+      "docs/audit/scripts/ledger_io.py",
+      "docs/audit/scripts/static_pipeline_checkpoint.py",
+      "docs/work_history/repo/review_feedback/pr8174-evidence/README.md",
+      "docs/work_history/repo/review_feedback/pr8174-evidence/archive-manifest.json",
+      "docs/work_history/repo/review_feedback/pr8174-evidence/kept/ADMISSIBILITY_RULE_SIX_AXIS_FORMATION_THRESHOLD_LIFTED_BY_A_TWO_LEVEL_DOMINATION_SEEDS_AND_AMPLIFIED-c9850d47e436dea7.md",
+      "docs/work_history/repo/review_feedback/pr8174-evidence/kept/APPROACH_REGISTRY-a24d7a0fbd69f46c.md",
+      "docs/work_history/repo/review_feedback/pr8174-evidence/kept/CHECKER_block30_findings-df0ff512f1767b7f.md",
+      "docs/work_history/repo/review_feedback/pr8174-evidence/kept/CLAIM_STATUS_CERTIFICATE_block30-3b47da9614abb913.md",
+      "docs/work_history/repo/review_feedback/pr8174-evidence/kept/GOAL_block30-eed3c47d058abe9c.md",
+      "docs/work_history/repo/review_feedback/pr8174-evidence/kept/HANDOFF-3daf21b65f4e73be.md",
+      "docs/work_history/repo/review_feedback/pr8174-evidence/kept/OPPORTUNITY_QUEUE-d3108acdf7a1cb18.md",
+      "docs/work_history/repo/review_feedback/pr8174-evidence/kept/RESULTS_block30-5242365320da46ae.md",
+      "docs/work_history/repo/review_feedback/pr8174-evidence/kept/REVIEW_HISTORY-e3346d7d91b61912.md",
+      "docs/work_history/repo/review_feedback/pr8174-evidence/kept/STATE-bb43fbab2baea279.yaml.gz",
+      "docs/work_history/repo/review_feedback/pr8174-evidence/kept/TRACE_GATE-b7388c63cc0a04c5.md",
+      "docs/work_history/repo/review_feedback/pr8174-evidence/kept/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_-985dcbd934f5f2b5.txt.gz",
+      "docs/work_history/repo/review_feedback/pr8174-evidence/kept/admissibility_rule_six_axis_formation_threshold_two_level_domination_seeds_and_amplified_nodes_2026_-99299e47dc478c70.py",
+      "docs/work_history/repo/review_feedback/pr8174-evidence/kept/citation_graph_manifest-5350676179dc9a1d.json.gz",
+      "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_budget-f1feabd9e97ed793.py",
+      "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_budget.out-580a9a51b4a9639b.txt.gz",
+      "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_certify-d270f06f2dc4fa26.py",
+      "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_certify.out-d21ed3d2ee5fbed4.txt.gz",
+      "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_construction-6dc3fe6ece20ace6.py",
+      "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_construction.out-278562e4f8c56992.txt.gz",
+      "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_core-83e90b6e4b5d9a64.py",
+      "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_refuter-379613ed26239942.py",
+      "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_refuter.out-ef7eb3a7a7e9c15f.txt.gz",
+      "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_scan-7a1623641b0029e0.py",
+      "docs/work_history/repo/review_feedback/pr8174-evidence/kept/supervisor_control_block30_scan.out-74956c41f7bb62e1.txt.gz",
+      "docs/work_history/repo/review_feedback/pr8174-evidence/original-delta.patch.gz",
+      "docs/work_history/repo/review_feedback/pr8174-evidence/pr8174-deferred-science.md",
+      "scripts/audit_packet_script_deps.py",
+      "scripts/runner_cache.py",
+      "scripts/six_axis_two_level_domination_extended_explanation_tree_four_rational_certificates_2026_09_16.py"
+    ],
+    "intersection": [],
+    "semantic_confirmation": "Read actual landed PR8172 note and citation manifest delta. Finite point evaluations, finite-island healing and supplied directed recurrence do not alter PR8174 premises or contradict its corrected supplied-model theorem. Existing source/input/tooling/authority bytes are unchanged. Manifest adds only PR8172 nodes and counts.",
+    "dual_binding_accepted": true,
+    "conditions": [
+      "Keep frozen checkout HEAD/base 51cac and index tree 5083bc62 exactly.",
+      "Pin actual reviewed origin/main 3dca before and after capture.",
+      "Check base-to-reviewed-main diff-path disjointness for every source path and every input category, before and after capture.",
+      "Preserve all source/input hash and stat guards, resource limits, exclusive once-only outputs and raw evidence retention.",
+      "Create immutable adapters binding this exact report and both commits, and obtain same-reviewer narrow adapter review before executing.",
+      "Any further main movement requires refreshed interaction review; landing integration and its required gate remain pending."
+    ]
+  },
+  "capture_plan": {
+    "checks": 17,
+    "mathematical_mutations": 11,
+    "primary_invocations": 1,
+    "each_mutation_invocations": 1,
+    "wall_seconds_per_invocation": 900,
+    "sampled_process_tree_rss_bytes": 805306368,
+    "poll_seconds": 0.02,
+    "automatic_retry": false,
+    "simulation": false,
+    "actual_plan_binding": "drain8174-author-input-resource-plan-v3.json",
+    "adapter_state": "v1 COLD_CLEARANCE_BINDING=None; intentionally not executable until immutable revised bindings are reviewed",
+    "raw_preservation": "Primary wraps actual execute_runner and writes its full result before cache API post-identity checks can reject it. Worker, supervisor, stdout/stderr, in-progress logs and mutation JSON survive failures; existing evidence is not overwritten."
+  },
+  "scope": "Source and bounded-capture clearance only. No primary/mutation execution, staging, source edits, full gate, audit verdict or landing PASS. Valid scoped deferred negative proof remains distinguished from incomplete formal negative packet. Original branch retention required.",
+  "review_basis": [
+    "All 31 staged source bytes/modes match unit and v3 freeze; all 25 original paths and full delta preserved.",
+    "Full corrected and deferred proofs reviewed in this same session; earlier independent exact controls retained.",
+    "All source/input index and disk identities checked; staged tree matches record and cheap receipt; no tracked unstaged change.",
+    "Actual capture adapters read fully, including identity guards, worker result interception, failure retention and sampled resource supervision."
+  ]
+}

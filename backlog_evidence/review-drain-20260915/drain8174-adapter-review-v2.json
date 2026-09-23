@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "unit_id": "PR8174",
+  "verdict": "ADAPTERS_ACCEPTED_FOR_BOUNDED_CAPTURE",
+  "capture_authorized": true,
+  "reviewer": {
+    "session": "/root/review_8174",
+    "same_session": true
+  },
+  "cold_report": {
+    "path": "/private/tmp/review-drain-20260915/drain8174-cold-review-v1.json",
+    "sha256": "6244aaf7dc3c53318bb7d5df83e452df977b75d3925b36321afc88591c9b40bf"
+  },
+  "source_tree": "5083bc62b618b49a45d96496b7d431306756cb4f",
+  "frozen_base": "51cac1ae0ed3f9d0f399a63a716f8cf351fc5938",
+  "reviewed_main": "3dca18ddd0082dc23bb12c7ca38939b901c28736",
+  "adapters": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-capture-v2.py",
+      "sha256": "dc13c94c2fae5e86b4a362547a6504ef655134780c023f1ea3b2d43109f978b0"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-mutation-capture-v2.py",
+      "sha256": "fb3defdf7ec1d2e37e11c2191fb952e23035817f6542a8bffdf94fa857f55629"
+    }
+  ],
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-capture-dual-binding-v2.diff",
+      "sha256": "f602d7e385b2eb2f715f8e3b1f12b1937cbcd1a457ce01d6538930c370e881f0"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-mutation-capture-dual-binding-v2.diff",
+      "sha256": "92ee08dfea2af66102f6132ac449f124d3de1038ae06f0865b9bdfe3cf2cbf08"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-capture-dual-binding-v2.json",
+      "sha256": "f1308b59571f515c97b37f54dfcc745331f3a2b40c778b1b5dd7f689ad34ba2a"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8174-adapter-guard-controls-v2.json",
+      "sha256": "72cb833019d6c85bd4ad328b6033cc4f0ab9e0289201efe49854689c00dac07b"
+    }
+  ],
+  "findings": [],
+  "confirmation": [
+    "Actual adapter hashes and complete generated diffs independently verified against v1. Changes consist only of actual cold binding and before/after dual-main guards.",
+    "Actual cold predicates, verdict, reviewer identity, tree, frozen base and reviewed main are bound by exact report hash.",
+    "Both guard functions passed the actual Git state and rejected injected changed main, source overlap, tooling-input overlap, wrong HEAD and failed ancestry. Only AST-extracted guards were executed.",
+    "All existing source/input hash/stat checks, exclusive once-only markers, process-tree limits, API result interception and raw-output retention remain byte-identical outside the reviewed guard additions."
+  ],
+  "authorized_scope": {
+    "primary_invocations": 1,
+    "primary_checks": 17,
+    "mutation_invocations": 11,
+    "each_mutation_once": true,
+    "wall_seconds_each": 900,
+    "sampled_process_tree_rss_bytes_each": 805306368,
+    "no_automatic_retry": true,
+    "no_simulation": true
+  },
+  "conditions": [
+    "Use these exact two immutable adapter hashes and the bound cold report/unit/cheap receipts.",
+    "origin/main must remain exact reviewed main and all adapter guards must pass before and after each capture.",
+    "No source or input changes; no staging generated evidence until all mutations finish.",
+    "Any failure preserves all raw evidence and requires diagnosis; do not automatically retry.",
+    "Final evidence review, integration validation and landing decision remain pending."
+  ],
+  "scientific_execution_by_reviewer": false
+}

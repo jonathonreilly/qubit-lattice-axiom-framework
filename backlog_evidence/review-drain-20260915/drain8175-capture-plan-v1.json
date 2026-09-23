@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "kind": "proposed-root-owned-capture-and-mathematical-control-plan-not-executed",
+  "primary": "scripts/extended_explanation_tree_finite_witness_counts_rational_certificates_check_2026_09_16.py",
+  "primary_sha256": "bfcc98e9d0bccedcd3a21ecfd77667e03f3f80f57ae935734005575f016af83b",
+  "runtime_inputs": [
+    {
+      "path": "docs/EXTENDED_EXPLANATION_TREE_FINITE_WITNESS_COUNTS_AND_RATIONAL_RECURSION_CERTIFICATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "sha256": "398661b5330d2e8530aca15429a2fac865b1982ea5215dcd7c6d12e525088599",
+      "role": "proof source"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "framework authority"
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md",
+      "sha256": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97",
+      "role": "context only, not mathematical premise"
+    }
+  ],
+  "input_fingerprint": "6a6e512804614f6d7f60a63f9bf8d1c317b2b46f7e3f54c2d296e1c4c414a17c",
+  "helpers": [],
+  "cache_destination": "logs/runner-cache/extended_explanation_tree_finite_witness_counts_rational_certificates_check_2026_09_16.txt",
+  "stdout_only": true,
+  "json_outputs": [],
+  "primary_output_writes": [],
+  "runner_cache_result_contract": "Original API merges primary stderr into stdout; result.stderr is empty by design. Raw result is serialized before original source/input generation comparison, unchanged return identity.",
+  "primary_limits": {
+    "wall_seconds": 60,
+    "memory_bytes": 402653184,
+    "enforcement": "External sampled aggregate process-tree RSS including supervisor, worker and descendants; interval .02s plus ps overhead; not an OS hard reservation; kills process group and recorded descendants on violation."
+  },
+  "completed_check_count": 20,
+  "primary_invocations": 1,
+  "all_mutation_definitions": {
+    "rise_identity_wrong": "B",
+    "period_arithmetic_wrong": "B",
+    "period_counts_wrong": "B",
+    "witness_marks_wrong": "C",
+    "sharper_budget_asserted": "C",
+    "witness_ratio_wrong": "C",
+    "certificate_wrong": "D",
+    "ceiling_c1_wrong": "D",
+    "claim_transition_injected": "F",
+    "claim_classical_name_in_theorem": "F"
+  },
+  "mathematical_controls": {
+    "period_counts_wrong": {
+      "expected_family": "B",
+      "expected_failed_tags": [
+        "B3"
+      ],
+      "expected_exit_code": 1,
+      "expected_total": {
+        "passed": 19,
+        "failed": 1
+      },
+      "mechanism": "Keep total4 unchanged but substitute expected per-witness distribution(2,2,0) for the actual(2,1,1); exact B3 must reject, all other checks unchanged."
+    }
+  },
+  "mutation_limits": {
+    "wall_seconds_each": 60,
+    "memory_bytes_each": 402653184,
+    "sequence": "Only period_counts_wrong once after preserved baseline receipt, serial; no baseline repeat, other mutation census, implicit retry or cap increase."
+  },
+  "not_proposed_packaging_mutations": [
+    "rise_identity_wrong",
+    "period_arithmetic_wrong",
+    "witness_marks_wrong",
+    "sharper_budget_asserted",
+    "witness_ratio_wrong",
+    "certificate_wrong",
+    "ceiling_c1_wrong",
+    "claim_transition_injected",
+    "claim_classical_name_in_theorem"
+  ],
+  "scientific_scope": "Finite witnessed accounting and rational arithmetic only. One unchanged seeded300-cone fixture belongs to the primary; no separate historical search/sampler/control run. No global sharpness or formal negative-certification verdict.",
+  "required_before_execution": [
+    "Exact staged schema2 source and input record",
+    "Cheap mechanical preflight tied to that record/tree",
+    "Original same-session actual cold report clearance, explicitly bound in a new immutable adapter version; v1 deliberately refuses execution",
+    "Root explicit capture dispatch"
+  ],
+  "failure_policy": "Preserve markers, raw result, live merged stream, supervisor log, mutation stdout/stderr, receipt and source/input generations. No automatic retry, baseline repeat, cap increase, evidence replacement or fabricated JSON.",
+  "source_resource_plan": {
+    "path": "/private/tmp/review-drain-20260915/drain8175-resource-plan-v2.json",
+    "sha256": "9c20a227b60dcd1df582c0534425e9b2fcc809e426f2f27eccfb2ef87ecd49ae"
+  },
+  "limits_measured": false,
+  "recovery_and_source_counts": {
+    "source_paths": 34,
+    "original_payloads": 28,
+    "full_original_delta": true
+  },
+  "canonical_evidence_binding": "Canonical cache is owned by source unit at cache_destination; final unit must bind its bytes. No extra mutable checkout cache path is added to reviewer references. External preserved raw capture is execution provenance only.",
+  "not_proposed_other_mutations_reason": "Original reviewer cleared only the newly affected period-count mutation; unchanged historical mathematical mutation routes need no routine reruns."
+}

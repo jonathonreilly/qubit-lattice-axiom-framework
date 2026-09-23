@@ -1,0 +1,42 @@
+[detached HEAD a4afece945] Preserve independently reviewed source unit PR8173
+ Date: Wed Sep 23 00:40:24 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 26 files changed, 1138 insertions(+)
+ create mode 100644 docs/SPHERE_STATIC_FINITE_VOLUME_GAUSSIAN_COVARIANCE_FIXED_AXIS_RESPONSE_AND_PROJECTED_MODE_SUM_BOUNDED_THEOREM_NOTE_2026-09-16.md
+ create mode 100644 docs/work_history/review_loop/pr8173/README.md
+ create mode 100644 docs/work_history/review_loop/pr8173/originals/01-APPROACH_REGISTRY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8173/originals/02-CHECKER_block29_findings.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8173/originals/03-CLAIM_STATUS_CERTIFICATE_block29.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8173/originals/04-GOAL_block29.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8173/originals/05-HANDOFF.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8173/originals/06-OPPORTUNITY_QUEUE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8173/originals/07-RESULTS_block29.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8173/originals/08-REVIEW_HISTORY.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8173/originals/09-STATE.yaml.gz
+ create mode 100644 docs/work_history/review_loop/pr8173/originals/10-TRACE_GATE.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8173/originals/11-supervisor_control_block29_exact.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8173/originals/12-supervisor_control_block29_exact.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8173/originals/13-supervisor_control_block29_kernel.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8173/originals/14-supervisor_control_block29_kernel.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8173/originals/15-supervisor_control_block29_refuter.out.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8173/originals/16-supervisor_control_block29_refuter.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8173/originals/17-ADMISSIBILITY_RULE_TRANSVERSE_KERNEL_NORMALIZATION_IN_THE_ORDERED_SPHERE_STATIC_LAW_MEASURED_BETWEEN_THE_BOUNDS_WITH_THE_TRANSVERSE_SUM_RULE_AND_THE_SPIN_WAVE_REFERENCE_BOUNDED_THEOREM_NOTE_2026-09-16.md.gz
+ create mode 100644 docs/work_history/review_loop/pr8173/originals/18-citation_graph_manifest.json.gz
+ create mode 100644 docs/work_history/review_loop/pr8173/originals/19-admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.txt.gz
+ create mode 100644 docs/work_history/review_loop/pr8173/originals/20-admissibility_rule_transverse_kernel_normalization_ordered_sphere_static_law_measured_between_bounds_sum_rule_spin_wave_reference_2026_09_16.py.gz
+ create mode 100644 docs/work_history/review_loop/pr8173/pr8173-original-manifest.json
+ create mode 100644 docs/work_history/review_loop/pr8173/pr8173-original-note-and-measurement-corrections.txt
+ create mode 100644 logs/runner-cache/sphere_static_finite_volume_covariance_response_projected_mode_sum_check_2026_09_16.txt
+ create mode 100755 scripts/sphere_static_finite_volume_covariance_response_projected_mode_sum_check_2026_09_16.py
+FROZEN a4afece945c408b3d556792da504edd184d9d499 sources 26 inputs 55 notes 1

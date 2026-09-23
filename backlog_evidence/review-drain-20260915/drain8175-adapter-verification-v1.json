@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "kind": "static-adapter-preparation-not-execution",
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8175-build-staged-draft-v1.py",
+      "sha256": "c9eb114dc938230ca99088e0287509071852e33fda84285d81c29583ab087968"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8175-capture-v1.py",
+      "sha256": "b05eecd5bf5bcae379d29cc51741b62eaad5014c5cb6a524e08b3bb3f75b7429"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8175-mutation-capture-v1.py",
+      "sha256": "ef8b2278912393dbaf0c2626c88eeec239fc71ee3a12bd85f5e0cdea1b775a76"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8175-capture-plan-v1.json",
+      "sha256": "be02b2bcf4adcf662744b621e8f499cb0b0d80b11ad13f4146dcb9597a2a7448"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8175-adapter-bindings-v1.json",
+      "sha256": "4c439c82066a09a331f713c8213b8e59b36255e97cdde5818a3c4ab6436e53c4"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8175-adapter-authority-v1.json",
+      "sha256": "8763f236d38189a19fa18f5d2aca5ca9ac10b75f0f8e6edaefb7c5ac2f7832ab"
+    }
+  ],
+  "source_unchanged": true,
+  "source_count": 34,
+  "original_count": 28,
+  "original_delta_bound": true,
+  "builder_executed": false,
+  "staging": false,
+  "preflight": false,
+  "primary_runs": 0,
+  "mutation_runs": 0,
+  "simulation_runs": 0,
+  "cold_binding": null,
+  "required_future_binding": "Actual original-session staged cold report hash/predicates/tree in new immutable adapter; completed cheap receipt bound to same record/tree",
+  "actual_primary_contract": {
+    "stdout_checks": 20,
+    "json_outputs": [],
+    "runtime_inputs": 3,
+    "helpers": [],
+    "limits": {
+      "seconds": 60,
+      "bytes": 402653184,
+      "measured_corrected_source": false
+    }
+  },
+  "only_mutation": {
+    "name": "period_counts_wrong",
+    "expected_failed_tags": [
+      "B3"
+    ],
+    "passed": 19,
+    "failed": 1,
+    "exit_code": 1
+  },
+  "raw_preservation": "Transparent execute_runner wrapper serializes actual returned result before original cache API identity rejection and returns same object. Existing API and additional whole-source stat-generation checks remain enforced.",
+  "no_mutable_pool_reviewer_cache_reference": true
+}

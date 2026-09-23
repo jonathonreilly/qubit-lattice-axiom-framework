@@ -1,0 +1,1 @@
+{"abstract_pole_tree_cases": 128, "leaf_identity": "PASS", "period_distribution_mutation_same_total_discriminated": true, "wall": 0.0036313750315457582, "user_cpu": 0.016877, "sys_cpu": 0.004895, "max_rss_bytes": 15843328}

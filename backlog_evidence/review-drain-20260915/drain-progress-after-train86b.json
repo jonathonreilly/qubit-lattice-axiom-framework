@@ -1,0 +1,16 @@
+{
+  "main": "3dca18ddd0082dc23bb12c7ca38939b901c28736",
+  "closed_since_expanded_scope": 50,
+  "inventory": "backlog-inventory-wave31.json",
+  "open": 110,
+  "draft": 18,
+  "active": {
+    "8173": "train87a combined integration running",
+    "8174": "frozen-tree/current-main capture adapters under independent narrow review",
+    "8175": "staged source cheap preflight running",
+    "8176": "original independent review",
+    "8032": "draft original review complete; author repairs"
+  },
+  "model_comparison": "Completed and published; default Astra low unchanged",
+  "skill_parity": "Latest full15-file receipt train85; no later methodology changes"
+}

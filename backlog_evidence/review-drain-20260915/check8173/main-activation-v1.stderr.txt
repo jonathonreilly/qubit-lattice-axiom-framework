@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/private/tmp/review-drain-20260915/check8173/main-activation-v1.py", line 22, in <module>
+    assert diff==['docs/audit/data/citation_graph_manifest.json'],diff
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: []

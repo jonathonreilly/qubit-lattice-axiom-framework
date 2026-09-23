@@ -1,0 +1,21 @@
+{
+  "pr": 8172,
+  "original_head": "c8ae4a4622c1aa924ff6c9b3452021022f20746d",
+  "branch": "physics-loop/admissibility-induced-law-block28-map-of-memory-four-laws-located-healing-influence-20260916",
+  "landing": "3dca18ddd0082dc23bb12c7ca38939b901c28736",
+  "source_verified_at": "3dca18ddd0082dc23bb12c7ca38939b901c28736",
+  "lease_deleted": false,
+  "recovery_branch_preserved": true,
+  "reason_report": "drain8172-landing-report.md",
+  "closed": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-23T04:47:14Z",
+    "headRefName": "physics-loop/admissibility-induced-law-block28-map-of-memory-four-laws-located-healing-influence-20260916",
+    "headRefOid": "c8ae4a4622c1aa924ff6c9b3452021022f20746d",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8172,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8172"
+  }
+}

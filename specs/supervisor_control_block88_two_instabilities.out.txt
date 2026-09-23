@@ -1,0 +1,18 @@
+W1: response per unit power chi~(q) to a single-axis modulation
+  L=48: 0.00: 0.2092, 0.52: 0.2193, 1.05: 0.2500, 1.57: 0.3026, 2.09: 0.3757, 2.62: 0.4588, 3.14: 0.5256; at pi - 2pi/L: 0.5071; at pi: 0.5256
+  L=96: 0.00: 0.2092, 0.52: 0.2193, 1.05: 0.2500, 1.57: 0.3025, 2.09: 0.3757, 2.62: 0.4588, 3.14: 0.5141; at pi - 2pi/L: 0.5110; at pi: 0.5141
+W2: chi and chi_a on midpoint grids; thresholds; direct anisotropy check
+  L=64: chi = 1.53751 (chi/12 = 0.12813); chi_a = 1.88273 (chi_a/72 = 0.02615)
+  L=128: chi = 1.53808 (chi/12 = 0.12817); chi_a = 1.88273 (chi_a/72 = 0.02615)
+  L=256: chi = 1.53822 (chi/12 = 0.12818); chi_a = 1.88273 (chi_a/72 = 0.02615)
+  direct second difference of the anisotropy's sea energy on 32^3: -(E(e) + E(-e) - 2E(0))/e^2 = 1.88283; first difference (E(e) - E(-e))/(2e) = 1.83e-05
+W3: the single-axis balance over alpha: the maximiser of f(q) is always an endpoint
+  interior maxima found: 0 of 301 alphas; boundary alpha where f(pi) = f(0): 0.0762
+W4: the map in (alpha, beta) (chi = 1.5381, chi_a = 1.8827)
+  alpha=0.05 beta=0.00: alternation unstable (alpha + 2 beta = 0.050 vs 0.128); anisotropy unstable (beta vs 0.0261)
+  alpha=0.05 beta=0.02: alternation unstable (alpha + 2 beta = 0.090 vs 0.128); anisotropy unstable (beta vs 0.0261)
+  alpha=0.05 beta=0.04: alternation stable (alpha + 2 beta = 0.130 vs 0.128); anisotropy stable (beta vs 0.0261)
+  alpha=0.10 beta=0.00: alternation unstable (alpha + 2 beta = 0.100 vs 0.128); anisotropy unstable (beta vs 0.0261)
+  alpha=0.10 beta=0.02: alternation stable (alpha + 2 beta = 0.140 vs 0.128); anisotropy unstable (beta vs 0.0261)
+  alpha=0.15 beta=0.01: alternation stable (alpha + 2 beta = 0.170 vs 0.128); anisotropy unstable (beta vs 0.0261)
+  alpha=0.15 beta=0.03: alternation stable (alpha + 2 beta = 0.210 vs 0.128); anisotropy stable (beta vs 0.0261)

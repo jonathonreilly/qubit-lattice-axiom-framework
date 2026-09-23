@@ -1,6 +1,6 @@
 {
  "edge_count": 13756,
- "node_count": 6274,
+ "node_count": 6275,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -805,6 +805,10 @@
   "admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_ordered_phase_obligation_bounded_theorem_note_2026-09-15": {
    "deps_hash": "f1c14f0e732c",
    "out_degree": 5
+  },
+  "admissibility_rule_the_two_instabilities_of_the_uniform_bond_rates_the_alternation_breaks_translation_below_alpha_plus_2beta_the_anisotropy_breaks_rotation_below_beta_alone_bounded_theorem_note_2026-09-22": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_three_body_term_exceptional_locus_exact_classification_bounded_theorem_note_2026-09-15": {
    "deps_hash": "4837d2020a34",

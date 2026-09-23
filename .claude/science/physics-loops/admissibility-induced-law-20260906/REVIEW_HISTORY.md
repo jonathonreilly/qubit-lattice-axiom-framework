@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-22 block 88 — author checks (not a review PASS)
+Written lens pass by the supervisor. Responses normalised per unit power before comparison; first-order cancellation symbolic; the law's second-derivative sign caught by the check; endpoint property executed and labelled; decimals in strings replaced by fractions. Census 6/6 in family.

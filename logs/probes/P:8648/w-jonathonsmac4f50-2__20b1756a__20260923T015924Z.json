@@ -1,0 +1,36 @@
+{
+ "task": "P:8648",
+ "type": "pr-reexecution",
+ "lane": "assembly-graph-witness-20260922",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8648",
+ "pr": 8648,
+ "branch": "claude/assembly-graph-witness-20260922",
+ "git_sha": "20b1756a",
+ "started_utc": "20260923T015924Z",
+ "elapsed_s": 4.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/candidate_assembly_source_linked_graph_minimal_decision_sets_2026_09_22.py",
+    "returncode": 0,
+    "total": "PASS=14 FAIL=0"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "86472ddb61279f1921a4a8d4a44db822f457f31d9dfb3128b9a7de59d0f85431",
+ "stdout_tail": "PR #8648: docs(campaign): assembly graph with minimal decision sets\nbranch claude/assembly-graph-witness-20260922 (base main)\nrunners in the PR: 1\n== scripts/candidate_assembly_source_linked_graph_minimal_decision_sets_2026_09_22.py: rc=0 PASS=14 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T015929Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

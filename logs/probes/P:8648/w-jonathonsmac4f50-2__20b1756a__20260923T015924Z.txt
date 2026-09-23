@@ -1,0 +1,4 @@
+PR #8648: docs(campaign): assembly graph with minimal decision sets
+branch claude/assembly-graph-witness-20260922 (base main)
+runners in the PR: 1
+== scripts/candidate_assembly_source_linked_graph_minimal_decision_sets_2026_09_22.py: rc=0 PASS=14 FAIL=0

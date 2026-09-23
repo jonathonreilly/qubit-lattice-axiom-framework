@@ -1,0 +1,11 @@
+PR #8614: physics-loop: admissibility induced-law block 79 - a chessboard record background is felt only as a rest mass; walls between out-of-step domains bind exact zero modes when odd
+branch physics-loop/admissibility-induced-law-block79-a-chessboard-record-background-and-its-walls-20260922 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_a_chessboard_record_background_is_felt_only_as_a_rest_mass_walls_bind_zero_modes_2026_09_22.py: rc=0 PASS=11 FAIL=0
+   mutation background_has_no_staggered_part: expected B observed B ok
+   mutation background_clocks_are_visible: expected B observed B ok
+   mutation even_defect_layer_binds_zero_modes: expected C observed C ok
+   mutation odd_defect_layer_binds_none: expected C observed C ok
+   mutation corner_levels_mix_the_senses: expected D observed D ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

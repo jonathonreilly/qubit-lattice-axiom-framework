@@ -1,0 +1,4 @@
+PR #8667: docs(campaign): ice support under nearest-neighbour formation
+branch claude/ice-support-formation-20260922 (base main)
+runners in the PR: 1
+== scripts/ice_support_formation_nn_rules_vertex_bound_soldered_vertex_records_and_conditioning_2026_09_22.py: rc=0 PASS=9 FAIL=0

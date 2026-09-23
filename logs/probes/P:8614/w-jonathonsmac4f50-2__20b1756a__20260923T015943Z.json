@@ -1,0 +1,37 @@
+{
+ "task": "P:8614",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block79-a-ches",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8614",
+ "pr": 8614,
+ "branch": "physics-loop/admissibility-induced-law-block79-a-chessboard-record-background-and-its-walls-20260922",
+ "git_sha": "20b1756a",
+ "started_utc": "20260923T015943Z",
+ "elapsed_s": 13.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_a_chessboard_record_background_is_felt_only_as_a_rest_mass_walls_bind_zero_modes_2026_09_22.py",
+    "returncode": 0,
+    "total": "PASS=11 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "ccdf5c7a2d266eb01dedda100c14a65e1d9d82dc9db26dcb7d3b23ad8f86e1a0",
+ "stdout_tail": "PR #8614: physics-loop: admissibility induced-law block 79 - a chessboard record background is felt only as a rest mass; walls between out-of-step domains bind exact zero modes when odd\nbranch physics-loop/admissibility-induced-law-block79-a-chessboard-record-background-and-its-walls-20260922 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_a_chessboard_record_background_is_felt_only_as_a_rest_mass_walls_bind_zero_modes_2026_09_22.py: rc=0 PASS=11 FAIL=0\n   mutation background_has_no_staggered_part: expected B observed B ok\n   mutation background_clocks_are_visible: expected B observed B ok\n   mutation even_defect_layer_binds_zero_modes: expected C observed C ok\n   mutation odd_defect_layer_binds_none: expected C observed C ok\n   mutation corner_levels_mix_the_senses: expected D observed D ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T015957Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "task": "P:8667",
+ "type": "pr-reexecution",
+ "lane": "ice-support-formation-20260922",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8667",
+ "pr": 8667,
+ "branch": "claude/ice-support-formation-20260922",
+ "git_sha": "20b1756a",
+ "started_utc": "20260923T020020Z",
+ "elapsed_s": 6.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/ice_support_formation_nn_rules_vertex_bound_soldered_vertex_records_and_conditioning_2026_09_22.py",
+    "returncode": 0,
+    "total": "PASS=9 FAIL=0"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "9d7a7bf6ee9cfb1ca583898b01a1cc9bda8157e34e95622cf8a672244357fa38",
+ "stdout_tail": "PR #8667: docs(campaign): ice support under nearest-neighbour formation\nbranch claude/ice-support-formation-20260922 (base main)\nrunners in the PR: 1\n== scripts/ice_support_formation_nn_rules_vertex_bound_soldered_vertex_records_and_conditioning_2026_09_22.py: rc=0 PASS=9 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T020027Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,45 @@
+========================================================================================
+FLAVOR LATITUDE QUANTIZER / RP SELF-DUAL REPAIRED BOUNDARY
+========================================================================================
+
+N1. cube-angle coincidence check
+[PASS] cube-angle 2/3 is real but a single crossing/value coincidence
+       cos2(face)=0.666667; cos2(edge)=0.333333; roots=[-2.   0.5]
+
+N4. finite idempotent host check
+[PASS] M2(C) idempotent trace/dim ratios are {0,1/2,1}; no 2/3 host
+       the native 2/3 remains the R[Z3] doublet/total dimension reading, not r=1/2
+
+RP signed-edge repair
+[PASS] RP edges are at opposite signed b values
+       singlet-null b=-0.5; doublet-null b=1.0
+[PASS] multiplicative |b|-inversion fixes r=1/2 only after discarding sign(b)
+       |b| gm=0.707107->r=0.500000; signed images -1.000, 0.500
+[PASS] arithmetic and signed-affine fixed points are different from the |b| geometric point
+       |b| arithmetic r=0.562500; signed-affine r=0.062500; |b| geometric r=0.500000
+
+Trace-vs-center correction for A = R[Z3] = R + C
+[PASS] R + C multiplication is commutative
+       xy=(-0.84, (0.41000000000000003+0.38000000000000006j)); yx=(-0.84, (0.41000000000000003+0.38000000000000006j))
+[PASS] equal central-idempotent state is tracial
+       phi_equal(xy)=-0.215000000000; phi_equal(yx)=-0.215000000000
+[PASS] regular/Plancherel state is tracial
+       phi_regular(xy)=-0.006666666667; phi_regular(yx)=-0.006666666667
+[PASS] trace property alone does not force a unique faithful weighting
+       equal-center=2.500000; regular=2.666667
+
+HS metric and readout boundary
+[PASS] I and J-I are HS-orthogonal with Gram diag(3,6)
+       Gram=[[3.0, 0.0], [0.0, 6.0]]
+[PASS] block-equal and per-real-mode readings are distinct
+       block-equal r=1/2 -> Q=2/3; per-real-mode r=1 -> Q=1
+
+Scope guard
+[PASS] source note guard present: N2/N3 historical broad claims are not certified by this repaired packet
+[PASS] source note guard present: equal central-idempotent state is tracial
+[PASS] source note guard present: trace property alone does not select between these functionals
+
+SCORECARD PASS=14 FAIL=0
+VERDICT: repaired demotion/boundary packet. No native latitude quantizer is
+certified here; RP self-dual r=1/2 is a |b|-coordinate artifact; and
+trace-vs-center is a functional-choice boundary, not a unique-trace theorem.

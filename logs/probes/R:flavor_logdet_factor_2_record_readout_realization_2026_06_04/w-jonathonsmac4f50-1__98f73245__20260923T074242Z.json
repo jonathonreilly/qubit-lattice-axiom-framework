@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_logdet_factor_2_record_readout_realization_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flavor_logdet_factor_2_record_readout_realization_2026_06_04.py",
+ "seed": 49362,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "98f73245",
+ "started_utc": "20260923T074242Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ada75c861a7d4e0ed34cf0994bf3171f30bbbc687ea2664011711303b5a1cf2a",
+ "stdout_tail": "inant is a finite scalar and matches Leibniz/Berezin expansion\n       det=5.42173-2.63653j; |det-Leibniz|=2.66e-15\n[PASS] (S5) declared disconnected components multiply\n       |F_union - F_a*F_b|=7.11e-15\n[PASS] log readout is additive on nonzero disconnected products\n       |I_union-(I_a+I_b)|=0.00e+00\n[PASS] block-diagonal determinant equals product over declared components\n       |det(blockdiag)-product|=1.07e-14\n[PASS] hostile check: coupled principal determinant need not be multiplicative\n       |det(union principal)-det(L1)det(L2)|=496\n[PASS] decoupled principal determinant multiplicativity sanity\n       |det(decoupled union)-product|=3.97e-14\n[PASS] non-Hermitian finite blocks still define finite disconnected products\n       ||D-D^dagger||_F=17.6; F=20338+33765.7j\n[PASS] real-matrix finite blocks also define finite disconnected products\n       F_real=338.611+0j\n[PASS] hostile check: trace surface fails multiplicativity\n       |Tr(union)-Tr(L1)Tr(L2)|=9.06\n[PASS] hostile check: non-finite operator is outside the finite-scalar precondition\n       F_bad=(nan+nanj)\n[PASS] cite-check: load-bearing source paths exist\n       missing: none\n\nSCORECARD PASS=13 FAIL=0\nFACTOR 2 DISCONNECTED-BLOCK LEMMA: declared block-diagonal Grassmann\ndeterminant products realize a multiplicative finite scalar record-readout surface.\nThe coupled KS principal determinant does not factor automatically; full Factor 2 remains open.\nRecord is baseline semantics, not a status source. No audit status.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T074242Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/flavor_logdet_factor_2_record_readout_realization_2026_06_04.txt against the .txt beside this log"
+  ]
+ }
+}

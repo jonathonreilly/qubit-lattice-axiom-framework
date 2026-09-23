@@ -1,0 +1,39 @@
+{
+ "task": "R:flavor_interacting_matter_build_2026_05_30",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flavor_interacting_matter_build_2026_05_30.py",
+ "seed": 49361,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "98f73245",
+ "started_utc": "20260923T074241Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=6 FAIL=0",
+   "PASS=3 FAIL=0",
+   "PASS=9 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2a31f4c7976ad210838bc1469c35b6b8c2436b9a7dc4791fd5121d70fcc615fa",
+ "stdout_tail": " core = exact epsilon/Q finite algebra; C3-wall + interacting branches are conditional/diagnostic\n\n--- VERIFIED CORE: epsilon/Q finite algebra (load-bearing) ---\n[PASS] E1 epsilon is constant on the hw=1 generation orbit -- eps(hw1)=[-1, -1, -1]\n[PASS] E2 epsilon as the (pi,pi,pi) shift maps hw=1 out of the triplet to hw=2 -- shifted Hamming weights=[2, 2, 2]\n[PASS] Q formula holds for r=0.000 -- Q=0.333333\n[PASS] Q formula holds for r=0.400 -- Q=0.600000\n[PASS] Q formula holds for r=0.500 -- Q=0.666667\n[PASS] Q formula holds for r=0.535 -- Q=0.690000\n\n--- CONDITIONAL / DIAGNOSTIC: C3-wall obstruction (NOT load-bearing) ---\n[PASS] C3-1 C3 cycle has order 3\n[PASS] C3-2 C3-invariant diagonal generation operators are scalar -- diagonal invariant dimension=1\n[PASS] C3-3 non-scalar diagonal orbit splitting requires C3 breaking -- commutator norm=2.449\n\nContextual r values converted through the checked Q formula (context only):\n  natural C3-symmetric/self-dual input: r=0.000000, Q=0.333333\n  reported SD/Fierz off-self-dual input: r=0.400000, Q=0.600000\n  reported two-channel onset input: r=0.535000, Q=0.690000\n  Koide target comparison: r=0.500000, Q=0.666667\n\nCONTEXT ONLY: this runner does not derive the three interacting builds,\ncritical coupling, continuous r(g) curve, or b!=0 branch. Those remain\nexternal build summaries until a first-principles matter-action runner lands.\n\nVERIFIED-CORE SUBTOTAL  PASS=6 FAIL=0\nCONDITIONAL SUBTOTAL    PASS=3 FAIL=0\n\nTOTAL SUMMARY PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T074241Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

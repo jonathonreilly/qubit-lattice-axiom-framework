@@ -1,0 +1,16 @@
+[PASS] K1 idempotent U(1) commutes with C and is distinct from generator rephasing
+[PASS] K2 idempotent U(1) is inert by conjugation on circulant H
+[PASS] K3 one-sided action is not a Hermitian signed-readout route
+[PASS] K4 equal doublet charge is idempotent-native; opposite charge is outside span{Ps,Pd}
+       opposite-charge span residual=1.414
+[PASS] K5 supplied charge/color labels do not monotonely index the supplied r order
+       comparator only; not a sector-selector theorem
+[PASS] K6 one-hop authority links are present for chiral, rephasing, and generation-algebra boundaries
+[PASS] K7 source boundary demotes ordering to comparator and keeps selector open
+
+SCORECARD PASS=7 FAIL=0
+VERDICT: the idempotent-U(1) route is a finite negative boundary.
+It exists and dodges blanket C^3=I wording, but conjugation is inert;
+the one-sided action is non-Hermitian/chiral; and opposite doublet
+charge leaves the idempotent span. The observed ordering table is only
+a comparator, not a framework-native sector-selector theorem.

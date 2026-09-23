@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_latitude_quantizer_and_rp_selfdual_2026_05_30",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flavor_latitude_quantizer_and_rp_selfdual_2026_05_30.py",
+ "seed": 49362,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "98f73245",
+ "started_utc": "20260923T074242Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=14 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "13f19cf776940e25ab30088191a230876a8d4b3ada8cc48a78c10640503a1571",
+ "stdout_tail": " signed-affine fixed points are different from the |b| geometric point\n       |b| arithmetic r=0.562500; signed-affine r=0.062500; |b| geometric r=0.500000\n\nTrace-vs-center correction for A = R[Z3] = R + C\n[PASS] R + C multiplication is commutative\n       xy=(-0.84, (0.41000000000000003+0.38000000000000006j)); yx=(-0.84, (0.41000000000000003+0.38000000000000006j))\n[PASS] equal central-idempotent state is tracial\n       phi_equal(xy)=-0.215000000000; phi_equal(yx)=-0.215000000000\n[PASS] regular/Plancherel state is tracial\n       phi_regular(xy)=-0.006666666667; phi_regular(yx)=-0.006666666667\n[PASS] trace property alone does not force a unique faithful weighting\n       equal-center=2.500000; regular=2.666667\n\nHS metric and readout boundary\n[PASS] I and J-I are HS-orthogonal with Gram diag(3,6)\n       Gram=[[3.0, 0.0], [0.0, 6.0]]\n[PASS] block-equal and per-real-mode readings are distinct\n       block-equal r=1/2 -> Q=2/3; per-real-mode r=1 -> Q=1\n\nScope guard\n[PASS] source note guard present: N2/N3 historical broad claims are not certified by this repaired packet\n[PASS] source note guard present: equal central-idempotent state is tracial\n[PASS] source note guard present: trace property alone does not select between these functionals\n\nSCORECARD PASS=14 FAIL=0\nVERDICT: repaired demotion/boundary packet. No native latitude quantizer is\ncertified here; RP self-dual r=1/2 is a |b|-coordinate artifact; and\ntrace-vs-center is a functional-choice boundary, not a unique-trace theorem.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T074242Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

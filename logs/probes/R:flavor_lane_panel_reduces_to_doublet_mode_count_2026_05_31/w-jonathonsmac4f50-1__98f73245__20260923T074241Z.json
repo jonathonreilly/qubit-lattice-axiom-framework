@@ -1,0 +1,38 @@
+{
+ "task": "R:flavor_lane_panel_reduces_to_doublet_mode_count_2026_05_31",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flavor_lane_panel_reduces_to_doublet_mode_count_2026_05_31.py",
+ "seed": 49361,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "98f73245",
+ "started_utc": "20260923T074241Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=31 FAIL=0",
+   "PASS=13 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f59fdbb7d328c51b4bfff562896cc2e0d342c456acf4ed5edf91ca2aac4d3711",
+ "stdout_tail": "invariant; {1/3,2/3,1} are r-LANES not channels\n       r=0 -> 0.3333, r=1/2 -> 0.6667, r=1 -> 1.0000 (each unique over a,delta)\n[PASS] ESC1-KILLED r->1-r changes Tr(H^2) except at r=1/2 -> NOT a C_3-covariant operator involution (scalar relabeling)\n       |Tr(H^2;r) - Tr(H^2;1-r)|: r=0.2->3.600, r=0.5->0.000, r=0.8->3.600\n[PASS] BRANCH det_C block-count (doublet=1 complex mode): 3a^2=6|b|^2 -> r=1/2 -> Q=2/3\n       r_block=0.500 -> Q=0.6667\n[PASS] BRANCH det_R dimension-count (doublet=2 real modes): 3a^2=3|b|^2 -> r=1 -> Q=1\n       r_dim=1.000 -> Q=1.0000  => named decider candidate: doublet = 1 complex vs 2 real modes\n\nSCORECARD PASS=13 FAIL=0\nVERDICT (20-physicist panel + 4 meta, wf_9028152c): D1 UNANIMOUS -- Q is one observable, {1/3,2/3,1}\nare LANES not channels (corrects the four-channel capstone). Assignment open_confirmed: runner verifies\nthe two branch consequences of the det_C/det_R candidate = block-count(det_C, r=1/2) vs\ndimension-count(det_R, r=1) = doublet as one complex vs two real modes. The stronger panel\nexhaustiveness thesis remains open pending a restricted bridge theorem. The converged 'r=1/2 = self-dual\nswap fixed point' escape is a scalar\nrelabeling (changes the Casimir; no covariant involution) -- KILLED, alongside the CPT-reflection route.\nThe honest decidable next calc: is the doublet-coefficient's emergent kinetic metric HOLOMORPHIC\n(det_C -> r=1/2) or doubled-REAL (det_R -> r=1)? -- derived from the Quantum axiom's one-qubit coherent-state measure.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T074241Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

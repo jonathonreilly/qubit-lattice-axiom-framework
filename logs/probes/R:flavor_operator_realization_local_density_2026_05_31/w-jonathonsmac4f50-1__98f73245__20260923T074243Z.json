@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_operator_realization_local_density_2026_05_31",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flavor_operator_realization_local_density_2026_05_31.py",
+ "seed": 49363,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "98f73245",
+ "started_utc": "20260923T074243Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "585e2ee25b5049ffe8d98b140af81ae517fb6badfc2198489cb7215f5999ebe7",
+ "stdout_tail": "igenweights are omega and omega^2\n[PASS] L=4: staggered operator is antisymmetric and gamma5-anticommuting\n       ||D+D^T||=0.0e+00; ||D gamma5 + gamma5 D||=0.0e+00\n[PASS] L=4: raw C3 axis permutation fails but a site-local Z2 gauge repairs it\n       raw ||PDP^T-D||=13.8564; gauge residual=0.0e+00; corrected comm=0.0e+00; ||U^3-I||=0.0e+00\n[PASS] L=4: global eta, equivariant eta, and graded Lefschetz traces vanish\n       zero_modes=8; eta=0.0e+00; |eta_U|=1.5e-15; |Tr(gamma5 U)|=0.0e+00\n[PASS] L=6: staggered operator is antisymmetric and gamma5-anticommuting\n       ||D+D^T||=0.0e+00; ||D gamma5 + gamma5 D||=0.0e+00\n[PASS] L=6: raw C3 axis permutation fails but a site-local Z2 gauge repairs it\n       raw ||PDP^T-D||=25.4558; gauge residual=0.0e+00; corrected comm=0.0e+00; ||U^3-I||=0.0e+00\n[PASS] L=6: global eta, equivariant eta, and graded Lefschetz traces vanish\n       zero_modes=8; eta=0.0e+00; |eta_U|=3.2e-15; |Tr(gamma5 U)|=0.0e+00\n[PASS] local/global split is explicit: the 2/9 local density survives only as a fixed-point summand\n       the runner does not promote the single summand to the physical observable\n\nSCORECARD PASS=10 FAIL=0\nVERDICT: operator side repaired. The native finite staggered operator has a nontrivial gauge-corrected C3 symmetry, its tangent weights give the local density 2/9, and the global eta/equivariant readouts vanish. Remaining open bridge: physical identification of the single fixed-point local density as the charged-lepton asymmetry observable.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T074244Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/flavor_operator_realization_local_density_2026_05_31.txt against the .txt beside this log"
+  ]
+ }
+}

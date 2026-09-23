@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_idempotent_u1_collapses_2026_05_30",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flavor_idempotent_u1_collapses_2026_05_30.py",
+ "seed": 49360,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "98f73245",
+ "started_utc": "20260923T074240Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ada13ec40c851d407e56b6c67fac460e4a67f0b47c5157a1f7e7e7d17b80b8ae",
+ "stdout_tail": "[PASS] K1 idempotent U(1) commutes with C and is distinct from generator rephasing\n[PASS] K2 idempotent U(1) is inert by conjugation on circulant H\n[PASS] K3 one-sided action is not a Hermitian signed-readout route\n[PASS] K4 equal doublet charge is idempotent-native; opposite charge is outside span{Ps,Pd}\n       opposite-charge span residual=1.414\n[PASS] K5 supplied charge/color labels do not monotonely index the supplied r order\n       comparator only; not a sector-selector theorem\n[PASS] K6 one-hop authority links are present for chiral, rephasing, and generation-algebra boundaries\n[PASS] K7 source boundary demotes ordering to comparator and keeps selector open\n\nSCORECARD PASS=7 FAIL=0\nVERDICT: the idempotent-U(1) route is a finite negative boundary.\nIt exists and dodges blanket C^3=I wording, but conjugation is inert;\nthe one-sided action is non-Hermitian/chiral; and opposite doublet\ncharge leaves the idempotent span. The observed ordering table is only\na comparator, not a framework-native sector-selector theorem.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T074241Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

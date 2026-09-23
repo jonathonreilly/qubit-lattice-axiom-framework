@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_logdet_factor_4a_source_action_identification_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flavor_logdet_factor_4a_source_action_identification_2026_06_04.py",
+ "seed": 49362,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "98f73245",
+ "started_utc": "20260923T074242Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=16 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c4d12758c0c9c77397ba18051db612d329a9a6c67ab068b14065779440ab214e",
+ "stdout_tail": "-01\n[SCOPE] T15. The signed-record and supplied-index bases are inputs, not outputs of this runner; this is not a PASS check.\n[PASS] T16. Imaginary scalar source breaks reality of S_h on signed-record surface\n       j has imag part 0.5, breaking real S_h convention\n[PASS] T17. Permutation invariance: diagonal shift class is S_n-invariant\n       diag(j_permuted) remains in the diagonal-shift class for forward 3-cycle\n\nSCORECARD PASS=16 FAIL=0\n\nFACTOR 4a: PARTIAL bounded support after this companion.\n\nCoverage split:\n  4a-i  (signed-record incarnation)    -- retained_bounded (YT support packet)\n  4a-ii (operator-side canonical form) -- formal supplied-texture hypothesis\n  4a-iii (uniqueness modulo basis)     -- bounded_theorem (THIS COMPANION)\n  4a   (staggered-Dirac side)         -- OPEN residual (not addressed)\n\nRESIDUAL LEDGER for log-det generator after this companion + sibling 4b:\n  factor 1 : Record baseline (MINIMAL_AXIOMS_2026-06-04; not a status source)\n  factor 2 : record-readout realization                -- OPEN residual\n  factor 3 : det-character form                        -- bounded_theorem (unaudited)\n  factor 4a (this companion)                           -- PARTIAL bounded_theorem\n  factor 4b (sibling source note)                      -- positive_theorem source type\n\nSTATUS AUTHORITY: independent audit lane only. This runner does not set,\npredict, or promote audit status; no downstream row is re-cited, edited,\nor promoted. No new axiom or import is introduced.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T074242Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

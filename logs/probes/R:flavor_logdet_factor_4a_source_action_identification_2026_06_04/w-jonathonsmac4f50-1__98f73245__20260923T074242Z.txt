@@ -1,0 +1,60 @@
+Flavor - log-det generator Factor 4a: source-action identification (narrow companion)
+================================================================================
+[PASS] T1. YT signed-record identity: RN composition + site-diagonal local action equivalence
+       composition L1 = 1.11e-16; action-equivalence L1 = 0.00e+00
+[PASS] T2. d log R_h / d h_x at h=0 recovers primitive one-site signed record
+       max per-site sup error = 8.23e-11
+[PASS] T3. Supplied formal A+B C form: shifting A yields Y(j) = Y0 + diag(j)
+       max|Y_shift - Y_shift_canonical| = 0.00e+00
+[PASS] T4. Non-diagonal scalar source breaks the supplied A+B C class (A diagonal)
+       max off-diagonal of A_candidate = 1.00e-01 (canonical form broken)
+[PASS] T5. Bilinear/cross-multiplied scalar source is NOT linear (excluded from class)
+       |d^2 M_bi / dt^2| = 3.60e-01 (bilinear, excluded)
+[PASS] T6. Site-local rank-one Hermitian enumeration on n = 3: unique = P_x
+       all enumerated Q_x are diagonal rank-one (= P_x up to scalar)
+[PASS] T6. Site-local rank-one Hermitian enumeration on n = 4: unique = P_x
+       all enumerated Q_x are diagonal rank-one (= P_x up to scalar)
+[PASS] T6. Site-local rank-one Hermitian enumeration on n = 5: unique = P_x
+       all enumerated Q_x are diagonal rank-one (= P_x up to scalar)
+[PASS] T7. Cross-surface consistency: j_x -> P_x mapping consistent on both surfaces
+       signed-record per-site source is site-local; two-Higgs shift is diagonal
+[SCOPE] T8. Record additivity is not an input to this runner; this is a declared scope boundary, not a PASS check.
+[SCOPE] T9. The staggered-Dirac realization remains outside this finite-surface calculation; this is not a PASS check.
+[PASS] T10. Sibling Factor 4b consistency: (4a-shape) is the operator form 4b's identity uses
+       |M - D - diag(j)| = 3.05e-16; 4b-derivative-identity max err = 5.94e-10
+[SCOPE] T11. No new axiom, primitive, or admission is declared by this runner; authority is repository/audit metadata, not numerical evidence.
+[SCOPE] T12. Full Factor 4a closure is not claimed; the Dirac-operator side remains open. This declaration is not a PASS check.
+[PASS] T13. Larger-n sanity (n = 4): site-diagonal shift is diagonal
+       max|off-diag| = 0.00e+00
+[PASS] T13. Larger-n sanity (n = 5): site-diagonal shift is diagonal
+       max|off-diag| = 0.00e+00
+[PASS] T13. Larger-n sanity (n = 6): site-diagonal shift is diagonal
+       max|off-diag| = 0.00e+00
+[PASS] T14. Coupling-direction: additive site-diagonal form differs from multiplicative form
+       L1(additive, multiplicative) = 3.10e-01
+[SCOPE] T15. The signed-record and supplied-index bases are inputs, not outputs of this runner; this is not a PASS check.
+[PASS] T16. Imaginary scalar source breaks reality of S_h on signed-record surface
+       j has imag part 0.5, breaking real S_h convention
+[PASS] T17. Permutation invariance: diagonal shift class is S_n-invariant
+       diag(j_permuted) remains in the diagonal-shift class for forward 3-cycle
+
+SCORECARD PASS=16 FAIL=0
+
+FACTOR 4a: PARTIAL bounded support after this companion.
+
+Coverage split:
+  4a-i  (signed-record incarnation)    -- retained_bounded (YT support packet)
+  4a-ii (operator-side canonical form) -- formal supplied-texture hypothesis
+  4a-iii (uniqueness modulo basis)     -- bounded_theorem (THIS COMPANION)
+  4a   (staggered-Dirac side)         -- OPEN residual (not addressed)
+
+RESIDUAL LEDGER for log-det generator after this companion + sibling 4b:
+  factor 1 : Record baseline (MINIMAL_AXIOMS_2026-06-04; not a status source)
+  factor 2 : record-readout realization                -- OPEN residual
+  factor 3 : det-character form                        -- bounded_theorem (unaudited)
+  factor 4a (this companion)                           -- PARTIAL bounded_theorem
+  factor 4b (sibling source note)                      -- positive_theorem source type
+
+STATUS AUTHORITY: independent audit lane only. This runner does not set,
+predict, or promote audit status; no downstream row is re-cited, edited,
+or promoted. No new axiom or import is introduced.

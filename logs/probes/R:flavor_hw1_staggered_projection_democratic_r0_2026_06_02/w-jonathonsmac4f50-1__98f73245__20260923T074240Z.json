@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_hw1_staggered_projection_democratic_r0_2026_06_02",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flavor_hw1_staggered_projection_democratic_r0_2026_06_02.py",
+ "seed": 49360,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "98f73245",
+ "started_utc": "20260923T074240Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e443a8604f8485cf370b22852cf4e575cfe043ed3380f7502cd3b0b023032e3a",
+ "stdout_tail": "[PASS] hw=1 single-excitation basis indices are the set {1,2,4}\n[PASS] kinetic K is Hermitian\n[PASS] direct hw1 block of native kinetic term has zero off-diagonal hopping\n       max |direct off-diag| = 0.00e+00\n[PASS] Schur-induced hw=1 hopping is EXACTLY zero across 401-point z-sweep (sign cancellation)\n       max induced |b| over sweep = 1.07e-14\n[PASS] native projection geometry => r=0 (democratic), Q=1/3 -- NOT the charged-lepton r=1/2\n       r_geom=0.0, Q_geom=0.333333\n\nSCORECARD PASS=5 FAIL=0\nFINDING: native staggered hw=1 projection induces a diagonal but exactly-zero generation\nhopping (democratic r=0) by staggered-sign path cancellation. The on-site:hopping ratio is\nNOT fixed at the charged-lepton point r=1/2 by projection geometry alone.\nper_element: checked \u2014 direct hw=1 off-diagonal matrix elements have max modulus 0.000e+00.\nper_site: checked \u2014 the three single-excitation corner states are exactly the executed index set [1, 2, 4].\nper_mode: checked \u2014 the 401-point Schur-energy sweep has max induced |b|=1.066e-14.\nper_block: checked \u2014 the rank-three hw=1 effective block gives r=0.0 and Q=0.333333.\nlattice_wide: checked and not executed \u2014 this finite C8 corner claim supplies no inter-site lift; all 5 executed local-carrier checks passed=True.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T074240Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

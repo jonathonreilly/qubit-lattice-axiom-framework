@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_logdet_factor_4b_jacobi_derivative_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flavor_logdet_factor_4b_jacobi_derivative_2026_06_04.py",
+ "seed": 49362,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "98f73245",
+ "started_utc": "20260923T074242Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=16 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "fdac4d6514503f1c16c9fd819a1400da87d824126a7baa4689295546dec49137",
+ "stdout_tail": "theorem (this note)\n[PASS] Consistency with upstream provenance runner under matched seed\n       max|T1 - FD| = 7.11e-10 matches upstream finite-diff check\n[PASS] Sign convention: for det>0, Re[M^{-1}]_{xx} agrees with the signed form\n       det M_pd = 2049871.7770 > 0; max|signed - |.|| = 6.94e-18\n[PASS] Larger n = 20 stress test: (T1) holds across all 20 sites\n       max|T1 - FD| = 1.74e-08\n[PASS] Trace cyclicity: Tr[M^{-1} P_x] = Tr[P_x M^{-1}] = [M^{-1}]_{xx}\n       all three forms of (T1) agree at machine precision\n[PASS] At j=0: dW/dj_x = Re[D^{-1}]_{xx} (leading-order linear response)\n       max|T1b(j=0) - Re[D^{-1}]_{xx}| = 0.00e+00\n[PASS] Non-degeneracy: dW/dj_x at j != 0 differs from Re[D^{-1}]_{xx}\n       max|T1b(j_off) - Re[D^{-1}]_{xx}| = 6.72e-02 (nontrivial dependence)\n\nSCORECARD PASS=16 FAIL=0\n\nFACTOR 4b: proposed positive_theorem (finite-matrix calculus), awaiting independent audit.\n\nRESIDUAL LEDGER after this note:\n  factor 1: Record axiom (MINIMAL_AXIOMS_2026-06-04)\n  factor 2: record-readout realization -- separate residual\n  factor 3: det-character form -- bounded_theorem (unaudited, 2026-05-28)\n  factor 4a: physical source-action identification -- partial retained_bounded support\n  factor 4b: Jacobi derivative identity -- proposed positive_theorem (THIS NOTE)\n\nSTATUS AUTHORITY: independent audit lane only. This runner does not set,\npredict, or promote audit status; no downstream row is re-cited, edited,\nor promoted. No new axiom or import is introduced.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T074242Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,6 +1,6 @@
 {
- "edge_count": 13763,
- "node_count": 6279,
+ "edge_count": 13767,
+ "node_count": 6281,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6593,6 +6593,10 @@
   "gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "gauge_wilson_uniform_static_source_energy_bounds_bounded_theorem_note_2026-09-07": {
+   "deps_hash": "becf85893f46",
+   "out_degree": 4
   },
   "gauged_log_transfer_quasilocality_combes_thomas_narrow_theorem_note_2026-06-13": {
    "deps_hash": "b48fd9e48b4d",
@@ -24427,6 +24431,10 @@
    "out_degree": 0
   },
   "work_history.review_loop.pr8027.readme": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.review_loop.pr8028.readme": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

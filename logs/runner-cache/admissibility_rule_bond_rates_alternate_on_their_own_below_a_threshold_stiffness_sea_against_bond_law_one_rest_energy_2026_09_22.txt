@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_bond_rates_alternate_on_their_own_below_a_threshold_stiffness_sea_against_bond_law_one_rest_energy_2026_09_22.py
 runner_sha256: e6601364d336e9235e6806a16bc054318234fafeaa7bbaa2931f25f83794dc7e
-input_fingerprint_sha256: ad068643d92f4d7bbb64dda1b9c58345e1e6ba90f37b9753da67668133ca0fa6
+input_fingerprint_sha256: 30e5dc50391daf4341c2361479e3c7099688086c79c7b8edb499313a4a63909b
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 2.08
+elapsed_sec: 1.93
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

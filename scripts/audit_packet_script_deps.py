@@ -45,6 +45,8 @@ sys.path.insert(0, str(REPO_ROOT / "docs" / "audit" / "scripts"))
 import ledger_io  # noqa: E402
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    'temporal_wilson_resummation_physical_curl_bounded_theorem_note_2026-09-16': ['scripts/temporal_wilson_physical_curl_hessian_check_2026_09_16.py', 'scripts/temporal_wilson_integer_local_filling_check_2026_09_16.py', 'scripts/temporal_wilson_third_curl_variation_check_2026_09_16.py'],
+
     'hybrid_generators_integrated_rates_and_curvature_witness_bounded_theorem_note_2026-09-15': ['scripts/hybrid_curvature_check_2026_09_15.py', 'scripts/integrated_rate_check_2026_09_15.py'],
     'signed_forest_fixed_order_remainders_and_restricted_loop_sums_bounded_theorem_note_2026-09-15': ['scripts/cofactor_cyclic_check_2026_09_15.py', 'scripts/contact_register_check_2026_09_15.py', 'scripts/cut_completion_check_2026_09_15.py', 'scripts/determinant_exclusion_check_2026_09_15.py', 'scripts/forest_interpolation_check_2026_09_15.py', 'scripts/gaussian_cycle_check_2026_09_15.py', 'scripts/graph_source_check_2026_09_15.py', 'scripts/hard_core_cycle_check_2026_09_15.py', 'scripts/operator_source_check_2026_09_15.py', 'scripts/partition_exclusion_check_2026_09_15.py'],
     'supplied_record_laws_and_common_order_kernels_bounded_theorem_note_2026-09-15': ['scripts/general_order_check_2026_09_15.py'],

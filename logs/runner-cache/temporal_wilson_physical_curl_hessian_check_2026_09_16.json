@@ -1,0 +1,108 @@
+{
+  "source_sha256": "52c730b124f8c4a24179cdc8952962e73d45a1676bb206475b8f8a765a473e7e",
+  "physical_curl_hessians": [
+    {
+      "shape": [
+        3,
+        2,
+        2,
+        2
+      ],
+      "delta": 0.1,
+      "mu": 6.0,
+      "kappa": 0.5,
+      "matrix_dimension": 96,
+      "edges": 52,
+      "plaquettes": 42,
+      "curl_rank": 29,
+      "gauge_hessian_residual": 1.5166918011931435e-15,
+      "physical_hessian_spectral_radius": 0.00013486224477899812,
+      "proved_loose_bound": 26276.966973209917,
+      "proved_refined_bound": 12186.290504668565,
+      "hessian_direction_value": -9.617773517686986e-05,
+      "determinant_difference_extrapolate": -9.617752443286116e-05,
+      "difference_error": 2.107440086969361e-10
+    },
+    {
+      "shape": [
+        3,
+        2,
+        2,
+        2
+      ],
+      "delta": 0.05,
+      "mu": 6.0,
+      "kappa": 0.5,
+      "matrix_dimension": 96,
+      "edges": 52,
+      "plaquettes": 42,
+      "curl_rank": 29,
+      "gauge_hessian_residual": 2.2853071661020487e-15,
+      "physical_hessian_spectral_radius": 4.7511164955651216e-05,
+      "proved_loose_bound": 26276.966973209917,
+      "proved_refined_bound": 12186.290504668565,
+      "hessian_direction_value": -3.1274680899537856e-05,
+      "determinant_difference_extrapolate": -3.127452906427486e-05,
+      "difference_error": 1.5183526299726883e-10
+    },
+    {
+      "shape": [
+        3,
+        2,
+        2,
+        2
+      ],
+      "delta": 0.01,
+      "mu": 6.0,
+      "kappa": 0.5,
+      "matrix_dimension": 96,
+      "edges": 52,
+      "plaquettes": 42,
+      "curl_rank": 29,
+      "gauge_hessian_residual": 2.083829381023783e-15,
+      "physical_hessian_spectral_radius": 1.0942520065243575e-06,
+      "proved_loose_bound": 26276.966973209917,
+      "proved_refined_bound": 12186.290504668565,
+      "hessian_direction_value": -6.640175690583057e-07,
+      "determinant_difference_extrapolate": -6.640933906982224e-07,
+      "difference_error": 7.5821639916629e-11
+    }
+  ],
+  "heavy_mass_bounds": [
+    {
+      "mu": 12.0,
+      "loose_bound": 2260.544730182958,
+      "refined_bound": 682.7316212894913,
+      "mu_cubed_times_refined": 1179760.241588241
+    },
+    {
+      "mu": 24.0,
+      "loose_bound": 572.7171064660807,
+      "refined_bound": 77.59565029896322,
+      "mu_cubed_times_refined": 1072682.2697328676
+    },
+    {
+      "mu": 48.0,
+      "loose_bound": 211.21290094861527,
+      "refined_bound": 9.950225381745215,
+      "mu_cubed_times_refined": 1100415.3254179668
+    },
+    {
+      "mu": 96.0,
+      "loose_bound": 91.41668925339754,
+      "refined_bound": 1.2853003804161778,
+      "mu_cubed_times_refined": 1137151.5173678875
+    },
+    {
+      "mu": 192.0,
+      "loose_bound": 42.60697345792656,
+      "refined_bound": 0.16421367512158533,
+      "mu_cubed_times_refined": 1162286.0005789674
+    }
+  ],
+  "seconds": 0.4819471836090088,
+  "input_sha256": {
+    "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md": "49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07"
+  },
+  "completed_diagnostic_families": 1
+}

@@ -1,0 +1,91 @@
+===== runner cache v1 =====
+runner: scripts/temporal_wilson_third_curl_variation_check_2026_09_16.py
+runner_sha256: fc22a65bb2eb260cc273f786288f956ce512106739907b30946df7f534471ede
+input_fingerprint_sha256: 92685a30703b64333b0f5338c15a8d6255c99ea990bbd30d97d0f8607885ee61
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+{
+  "source_sha256": "fc22a65bb2eb260cc273f786288f956ce512106739907b30946df7f534471ede",
+  "fixed_duration_checks": [
+    {
+      "time_slices": 3,
+      "delta": 0.09999999999999999,
+      "physical_duration": 0.3,
+      "matrix_dimension": 48,
+      "first_variation": -1.8068180020023997e-06,
+      "second_variation": 1.3022900863232273e-05,
+      "third_variation": 5.523292422431134e-05,
+      "third_difference_coarse": 5.4925637982187025e-05,
+      "third_difference_fine": 5.515600691182819e-05,
+      "third_difference_richardson": 5.5232796555041906e-05,
+      "third_difference_error": 1.2766926943663095e-10,
+      "third_variation_bound": 10731437.200341381,
+      "pure_gauge_variations": [
+        -1.3552527156068805e-19,
+        6.860966872759833e-19,
+        -1.0842021724855044e-19
+      ]
+    },
+    {
+      "time_slices": 6,
+      "delta": 0.049999999999999996,
+      "physical_duration": 0.3,
+      "matrix_dimension": 96,
+      "first_variation": 4.042415016863689e-06,
+      "second_variation": 9.985826820763663e-06,
+      "third_variation": 6.002206296664407e-05,
+      "third_difference_coarse": 5.968858199191147e-05,
+      "third_difference_fine": 5.9938519185981866e-05,
+      "third_difference_richardson": 6.002183158400533e-05,
+      "third_difference_error": 2.3138263873667296e-10,
+      "third_variation_bound": 10731437.200341381,
+      "pure_gauge_variations": [
+        -8.131516293641283e-19,
+        -1.4230153513872246e-19,
+        1.0842021724855044e-19
+      ]
+    },
+    {
+      "time_slices": 12,
+      "delta": 0.024999999999999998,
+      "physical_duration": 0.3,
+      "matrix_dimension": 192,
+      "first_variation": 8.349693956746096e-06,
+      "second_variation": 7.971641756708758e-06,
+      "third_variation": 6.195395567102513e-05,
+      "third_difference_coarse": 6.160995302454485e-05,
+      "third_difference_fine": 6.186770047896443e-05,
+      "third_difference_richardson": 6.19536162971043e-05,
+      "third_difference_error": 3.3937392082499223e-10,
+      "third_variation_bound": 10731437.200341381,
+      "pure_gauge_variations": [
+        4.336808689942018e-19,
+        -3.4359891505370693e-18,
+        -7.15573433840433e-18
+      ]
+    }
+  ],
+  "seconds": 0.02322530746459961,
+  "input_sha256": {
+    "docs/TEMPORAL_WILSON_RESUMMATION_PHYSICAL_CURL_BOUNDED_THEOREM_NOTE_2026-09-16.md": "49892f9e45362c1a5dc2fb627d0d2976cccff0f82a1f11415bbe6ff73b589a07"
+  },
+  "completed_diagnostic_families": 1
+}
+TOTAL: PASS=1 FAIL=0
+per_element: analytic third variations versus determinant finite differences.
+per_site: fixed physical duration 0.3 and three time resolutions.
+per_mode: sampled physical curl directions and pure-gauge controls.
+per_block: original Richardson comparison and sufficient general bound.
+lattice_wide: sampled directions only; no exhaustive all-direction numerical proof.
+
+----- stderr -----
+

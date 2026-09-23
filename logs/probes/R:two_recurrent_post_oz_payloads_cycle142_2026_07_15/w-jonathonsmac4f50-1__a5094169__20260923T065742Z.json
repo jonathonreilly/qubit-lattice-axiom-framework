@@ -1,0 +1,31 @@
+{
+ "task": "R:two_recurrent_post_oz_payloads_cycle142_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "two",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/two_recurrent_post_oz_payloads_cycle142_2026_07_15.py",
+ "seed": 46662,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5094169",
+ "started_utc": "20260923T065742Z",
+ "elapsed_s": 231.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "066a8ed0b045411fd481f4136fb787cd597f3e6a6a9490c9477d9784b4505b08",
+ "stdout_tail": "ree-record line and adjacent-period branches do not cross-contact :: ((((-4, 1, -1), (-4, 1, -2), (-4, 1, -3)), ((-8, 1, -1), (-8, 1, -2), (-8, 1, -3))), 4)\n\nEXACT FACTOR\nPASS all 139 writes reach one complete schedule-independent terminal :: (2240, 6245, 1, (), 139)\nPASS every co-enabled append pair commutes :: (6374, ())\nPASS both R_LB/R_C22/J1 lineages occur in the unique terminal :: \n\nSTATIC SCREEN AND CAUSAL FIREWALL\nPASS all 116 static wrong-value conditions carry causal contradictions :: (116, 116, 0)\nPASS all eight static side aliases carry causal contradictions :: (8, 8, 8, 0)\nPASS payload integration adds no core wrong-value fingerprint :: ()\nPASS factor conditions are invariant across core completion :: \nPASS the factor has no nearest-neighbour contact with the retained core :: ()\n\nEXACT CORE PRODUCT\nPASS full asynchronous product state census :: 164989440\nPASS full asynchronous product edge census :: 1424870680\n\nCOVARIANCE AND CORRUPTION\nPASS all 200,640 proper-cubic raw images preserve output :: []\nPASS all 24 orientations have the same exact factor graph :: Counter({(2240, 6245, 1, 0, 139): 24})\nPASS all 2,142 direct parent mutations suppress the intended stage :: (2142, ())\nPASS alternate typed fronts never recreate the intended J1 lineage :: (72, ())\n\nACCOUNTING\nNEW_CANONICAL 1\nNEW_RAW 24\nUNION_RAW 8360\nFACTOR_OUTPUTS 139\nFACTOR_STATES 2240\nFACTOR_EDGES 6245\nPRODUCT_STATES 164989440\nPRODUCT_EDGES 1424870680\nPASS 20 FAIL 0\nRESULT TWO_RECURRENT_POST_OZ_PAYLOADS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T070133Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

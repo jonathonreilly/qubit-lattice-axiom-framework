@@ -1,0 +1,31 @@
+{
+ "task": "R:two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18",
+ "type": "runner-reexecution",
+ "lane": "two",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py",
+ "seed": 46598,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5094169",
+ "started_utc": "20260923T065638Z",
+ "elapsed_s": 54.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d7396113b092801ca9035fbb30f18fc9680d8b35e76422958a6a4a03dd15b355",
+ "stdout_tail": "lobal Q=2, Cycle320 unit-weight full-Fock lift, multi-edge recurrence, alternate mediator, energy/stress/metric', 'interpretation firewall': 'finite occupation response only; not energy, stress, gravity, metric, force, or time', 'authority': 'none', 'audit': 'unset'}\n\nEXECUTABLE NO-GO DISCIPLINE\nPASS N1 gives exact honesty markers to eight distinct two-source routes :: {'markers': {'two fixed matter-number reservoir sources': 'ATTEMPTED', 'naive one-one product of carried sources': 'ATTEMPTED', 'full-Fock coefficient-two endpoint sources': 'ATTEMPTED', 'full-Fock Cycle-320 unit-weight auxiliary sources': 'OPEN / UNTESTED', 'global-Q2 simultaneous emission sector': 'OPEN / UNTESTED', 'asymmetric endpoint coupling': 'ATTEMPTED', 'multi-edge source network': 'OPEN / UNTESTED', 'alternate mediator or rest branch': 'OPEN / UNTESTED'}, 'illegal': []}\nPASS N2 gives both closure directions for all ten pairs in the collapsed wall set :: {'directed_pairs': 10, 'missing': []}\nPASS N3 literal methodology-trigger scan has zero hits on both release paths :: [{'path': 'scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py', 'hits': ()}, {'path': 'docs/work_history/repo/review_feedback/TWO_CELL_TWO_SOURCE_RECOIL_RECIPROCITY_CYCLE322_NOTE_2026-07-18.md', 'hits': ()}]\nPASS N4 exact file-line witnesses remain literal :: []\nPASS N5-N8 and the broad-negative failure gate remain explicit :: ()\n\nSUMMARY {'pass': 20, 'fail': 0}\nRESULT TWO_CELL_TWO_SOURCE_RECOIL_RECIPROCITY_CERTIFIED\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T065732Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

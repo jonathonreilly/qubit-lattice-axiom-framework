@@ -1,0 +1,32 @@
+{
+ "task": "R:two_slice_offdiagonal_contact_reservoir_work_ledger_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "two",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/two_slice_offdiagonal_contact_reservoir_work_ledger_2026_07_17.py",
+ "seed": 46894,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5094169",
+ "started_utc": "20260923T070134Z",
+ "elapsed_s": 37.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e4848453ef28b6d9d5ef762e99c16e49ff6d9d44de6a5273eb5ef9a1c2e12a2e",
+ "stdout_tail": "-frame and L=3 translation tests :: {'tests': 648, 'failures': []}\n\nCOMPOSITION / SPECTATOR / LAWFUL DOMAIN\nPASS two disjoint copies compose additively and a normalized spectator leaves the exact two-slice ledger unchanged :: {'composition_residual': 5.9636093283435104e-15}\nPASS the lawful-domain guard rejects aliased, mistyped, or wrong-number fixtures :: {'rejected': 5}\nPASS the supplied-versus-derived inventory keeps the finite ledger distinct from energy, rate, and autonomous dynamics :: {'supplied': ('Cycle-269 local-check matter representation and one adjacent connector', 'Cycle-290 |3,3> and |4,2> fixed-N branch choice', 'beta=-0.3, g=0.37, kappa=0.8, and the Cycle-219 phase-to-mass map', 'one reservoir M2 plus six directional field M2 at each of two cells', 'uniform scalar-field mode, branch-coordinate normalization, and two-slice ordering'), 'derived': ('exact Delta(X,Y)=J_exchange(X,Y)+J_contact(X,Y)', 'exact signed field-reservoir number balance', '49-M2 bounded union, zero leakage, covariance, deletion, held-size, and composition controls'), 'not_earned': ('a scalar conserved physical energy or Hamiltonian', 'a generator rate, clock normalization, elapsed physical time, stress, or gravity source', 'an autonomous branch preparation, moving-reservoir compiler, joint matter/field stream update, or full-Fock state encoder', 'a Record, occurrence law, Born rule, axiom change, or audit authority')}\n\nSUMMARY PASS 14 FAIL 1\nRESULT TWO_SLICE_OFFDIAGONAL_VECTOR_LEDGER_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T070211Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

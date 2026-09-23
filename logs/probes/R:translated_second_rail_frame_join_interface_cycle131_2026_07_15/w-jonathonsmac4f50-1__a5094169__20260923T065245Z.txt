@@ -1,0 +1,33 @@
+
+===============================================================================
+A - Launch type versus terminal interface type
+===============================================================================
+FAIL A01 Cycle 131 note exists
+PASS A02 campaign grammar launches from the exact H1 + R_B01 pair :: (((0, 0, 1), 'H1'), ((0, 1, 0), 'R_B01'))
+PASS A03 terminal interface is exactly Y2 joined from T_N0 + B_0_2 :: contact=Y2 roles=frozenset({'T_N0', 'B_0_2'})
+PASS A04 parent-role sets are disjoint and require two substitutions :: launch=frozenset({'H1', 'R_B01'}) terminal=frozenset({'T_N0', 'B_0_2'})
+PASS A05 no proper-cubic rotation can repair a content-label mismatch :: launch=(((-1, 0, 0), 'H1'), ((0, -1, 0), 'R_B01')) second=(((-1, 0, 0), 'A_0_1'), ((0, -1, 0), 'A_1_2'), ((0, 0, -1), 'H0'), ((0, 0, 1), 'B_0_2'), ((0, 1, 0), 'T_N0'), ((1, 0, 0), 'START'))
+
+===============================================================================
+B - Common-neighbour occupancy and literal row reuse
+===============================================================================
+PASS B01 T_N0 and B_0_2 have exactly the two expected common neighbours :: ((-2, 2, -1), (-1, 2, 0))
+PASS B02 both common neighbours are permanently occupied :: open=() contents=('Y2', 'A_0_2')
+PASS B03 completed terminal has zero open match for launch canonical :: ()
+PASS B04 hypothetical cleared slot is not an existing Cycle-129 bridge row :: local=(((-1, 0, 0), 'B_0_2'), ((0, -1, 0), 'A_0_1'), ((0, 0, -1), 'T_N0'), ((0, 0, 1), 'A_1_2'), ((0, 1, 0), 'START'), ((1, 0, 0), 'H0')) values=None
+PASS B05 complete Cycle-129 law still exposes only ordered rail renewal :: {(-3, 1, 2): frozenset({'R_B21'})}
+
+===============================================================================
+C - Bounded negative and live repair routes
+===============================================================================
+FAIL C01 note names literal translated same-grammar scope
+FAIL C02 note keeps adapter and phase-relabel routes live
+FAIL C03 note carries complete N1-N8 discipline
+FAIL C04 note denies recurrence no-go and axiom addition
+PASS C05 Cycle 131 writes only runner and review note
+
+LAUNCH_CANONICAL=(((-1, 0, 0), 'H1'), ((0, -1, 0), 'R_B01'))
+SECOND_CANONICAL=(((-1, 0, 0), 'A_0_1'), ((0, -1, 0), 'A_1_2'), ((0, 0, -1), 'H0'), ((0, 0, 1), 'B_0_2'), ((0, 1, 0), 'T_N0'), ((1, 0, 0), 'START'))
+ROLE_SUBSTITUTIONS=2 OPEN_SLOTS=0
+PASS=10 FAIL=5
+RESULT=FAIL

@@ -1,0 +1,31 @@
+{
+ "task": "R:total_status_serial_reject_selector_cycle93_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "total",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/total_status_serial_reject_selector_cycle93_2026_07_15.py",
+ "seed": 45968,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5094169",
+ "started_utc": "20260923T064608Z",
+ "elapsed_s": 379.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d7d8406ce37c69d59cd8f8269054628ec4f64e6712468e54acf4f2da376b3594",
+ "stdout_tail": "ect physically\n===============================================================================\nPASS C01 all 11,328 one-bit perturbations reach AUX then stop :: []\nPASS C02 perturbation corpus has one reject edge then zero :: (11328, 0)\nPASS C03 one-bit corpus exercises all 48 mismatch positions\n\n===============================================================================\nD - Every unequal selected-program pair rejects\n===============================================================================\nPASS D01 all 55,460 unequal live-program pairs reach AUX then stop :: []\nPASS D02 selected-pair corpus has one reject edge then zero :: (55460, 0)\nPASS D03 selected bank has the exact 26-position first-difference support :: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 19, 20, 24, 32, 35, 37, 40, 45]\n\n===============================================================================\nE - Covariance and exact residual\n===============================================================================\nPASS E01 all 96 transformed controls have exact frontier :: []\nPASS E02 note exists and carries authority none\nPASS E03 note names AUX-gated candidate transport residual\nPASS E04 note says ALL/AUX cage is supplied\nPASS E05 note includes the N1-N8 discipline gate\nPASS E06 note denies foundation and axiom effects\n\nSTATUS_CANONICAL=6 STATUS_RAW=144 FINAL_CANONICAL=4 FINAL_RAW=96\nPHYSICAL_UNION_RAW=5680 PROGRAMS=236 UNLIKE_PAIRS=55460 PERTURBATIONS=11328\nSUMMARY: 26 PASS / 0 FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T065227Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

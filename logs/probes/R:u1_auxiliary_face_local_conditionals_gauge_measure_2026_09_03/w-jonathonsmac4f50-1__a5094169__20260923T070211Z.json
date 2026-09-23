@@ -1,0 +1,35 @@
+{
+ "task": "R:u1_auxiliary_face_local_conditionals_gauge_measure_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "u1",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/u1_auxiliary_face_local_conditionals_gauge_measure_2026_09_03.py",
+ "seed": 46931,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5094169",
+ "started_utc": "20260923T070211Z",
+ "elapsed_s": 16.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b4bdad260fd955ff9b28ee4d8e085459860fd4fc99aa3e15b3d7f2746d7400d1",
+ "stdout_tail": "eversals preserve the even auxiliary factor\n[PASS] 10 the 512-state one-face support is connected by single-site conditional moves\n[PASS] 11 face and link heat-bath moves satisfy exact detailed balance for every split\n[PASS] 12 all 65536 link configurations recover the target four-face weight at an interior split\n[PASS] 13 summing all 16 supported auxiliary masks reproduces each global marginal exactly\n[PASS] 14 every supported edge conditional is uniform or fixed by adjacent face states alone\n[PASS] 15 the universal component connects support; zero weight leaves disconnected tuple sectors\n[PASS] 16 the universal state and every finite boundary tuple inject distinctly into M2(C)\n[PASS] 17 an orthogonal auxiliary readout costs 4 log2(N)+1 qubits for power-of-two N\n[PASS] 18 the positive-density cyclic refinements admit the auxiliary split at every N\n[PASS] 19 finite cyclic auxiliary models converge to the parent's positive U1 curvature\nper_element: every Z4 boundary tuple, auxiliary state, gauge transform, and square relabeling is checked\nper_site: face and edge full conditionals are normalized and depend only on incidence neighbors on support\nper_mode: checked and not executed \u2014 this factorization changes no parent Hessian eigenvalue or momentum mode\nper_block: all 512 one-face support states and three epsilon splits are checked for balance and connectivity\nlattice_wide: every 2x2 Z4 link configuration and all 16 auxiliary masks are marginalized exactly\nTOTAL: PASS=19 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T070227Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

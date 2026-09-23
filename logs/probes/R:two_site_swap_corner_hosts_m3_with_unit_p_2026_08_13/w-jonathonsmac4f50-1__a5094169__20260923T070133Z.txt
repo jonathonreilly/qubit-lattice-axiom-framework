@@ -1,0 +1,45 @@
+external_scientific_inputs: none; no observational, fitted, literature, scale, or normalization value is used
+explicit_bounded_inputs: the standard two-factor tensor algebra and displayed swap are supplied mathematical objects
+framework_context: Qubit supplies only one-site M_2(C); the composite rule is not attributed to the axioms
+package_local_integrity_reads: the proposed source note is read for claim-surface consistency
+measure_boundary: exact integer/Fraction matrix algebra only
+negative_scope: only the displayed corner inclusion is non-unital; no broader embedding or physical-identification no-go is asserted
+PASS: source-qubit the axiom memo names the full one-site possibility domain M_2(C)
+PASS: dim-two-site the explicitly supplied T_2 = M_2 ⊗ M_2 has complex dimension 16, matching M_4
+PASS: thm1-hermitian the two-site swap F is Hermitian
+PASS: thm1-involution F squared equals I_4
+PASS: thm1-trace Tr(F) equals 2
+PASS: thm1-spectrum the +1 space of F has rank 3 and the -1 space has rank 1
+PASS: thm2-projection p = (I_4 + F)/2 is an orthogonal projection
+PASS: thm2-explicit p equals the displayed rank-3 swap projector
+PASS: thm2-not-identity p is not I_4
+PASS: thm2-image-basis p fixes |00>, |01>+|10>, |11> and kills |01>-|10>
+PASS: thm3-unit p is the unit of the corner p M_4 p
+PASS: thm3-dim dim_C(C) equals rank(p)^2 equals 9
+PASS: thm3-iso-unit the Fraction algebra isomorphism and the ON projector sum both send I_3 to p
+PASS: thm3-iso-hom phi is a Q-linear algebra map, and the unnormalized image basis obeys its exact Gram-weighted table
+PASS: thm3-iso-injective the nine images under phi are linearly independent, so phi has trivial kernel
+PASS: thm3-phi-not-star the Fraction algebra map phi is not mislabeled as the ON-basis star isomorphism psi
+PASS: thm3-on-table integer spanning vectors of im(p) are orthogonal with middle norm squared 2
+PASS: thm4-inclusion-not-unital the displayed inclusion C into M_4 is not unital
+PASS: n1-entry-witness entry comparison separates p from I_4
+PASS: n1-rank-witness rank comparison separates p from I_4
+PASS: n1-trace-witness trace comparison separates p from I_4
+PASS: n1-vector-witness the antisymmetric vector is killed by p but fixed by I_4
+PASS: n1-complement-witness the complementary rank-one projection is nonzero and orthogonal to p
+PASS: n1-corner-membership-witness the ambient unit fails the corner identity X=pXp
+PASS: scope-qubit-unchanged Qubit still names one-site M_2(C), while the note marks the two-factor composite as an explicit bounded input
+PASS: mutation-unital predicate p == I_4 fails
+PASS: mutation-rank predicate rank(p) == 4 fails
+PASS: mutation-dim predicate dim_C(C) == 9 holds
+PASS: machine-status-contract the source uses the required bounded-support, trace, and propose-ratify status fields
+PASS: note-negative-scope the note separates the local non-unitality theorem from physical-identification non-claims
+PASS: canonical-nonmutation the axiom memo does not contain the swap projector or a color-algebra rewrite
+PASS: no-go-gate the exact local negative boundary carries a complete source-visible N1-N8 disposition
+PASS: audit-input-paths AUDIT_INPUT_PATHS is the declared note-plus-axiom tuple
+per_element: entries of F, p, I_4, and the corner matrix units are evaluated exactly
+per_site: the supplied object is one explicit two-factor tensor algebra, not a framework-wide composite rule
+per_mode: the displayed swap's +1 and -1 eigenspaces are both resolved by exact ranks and vectors
+per_block: the displayed corner and its inclusion in one M_4(C) block are tested; no physical identification is inferred
+lattice_wide: checked and not executed — the theorem supplies no lattice-wide carrier or universal composite claim
+TOTAL: PASS=33 FAIL=0

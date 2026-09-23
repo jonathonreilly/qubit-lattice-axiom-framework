@@ -1,0 +1,22 @@
+PASS note preserves common-law gain and spectrum caveat :: ()
+PASS beta=0 is exactly the Cycle-214 acoustic field coin :: 
+PASS beta=-0.2 common-family rest and dispersion mass agree :: (-0.2, 0.10033467208545052, 0.30100401625635154, 0.30100403975735984, 0.3010040162563516)
+PASS beta=-0.2 exact contact correction keeps the object bound :: 
+PASS beta=-0.3 common-family rest and dispersion mass agree :: (-0.3, 0.15113521805829505, 0.4534056541748851, 0.4534056690336209, 0.4534056541748852)
+PASS beta=-0.3 exact contact correction keeps the object bound :: 
+PASS beta=-0.4 common-family rest and dispersion mass agree :: (-0.4, 0.20271003550867245, 0.6081301065260172, 0.6081301180758897, 0.6081301065260174)
+PASS beta=-0.4 exact contact correction keeps the object bound :: 
+PASS a held-out beta shares the same field-to-matter mass map :: {'rest_mass': 0.5304258513857456, 'dispersion_mass': 0.5304258709057169}
+PASS massless and massive family members commute with all cubic frames :: 0.0
+PASS the shared phase -1 keeps the even sector maximally separated :: [0.2, 0.3, 0.4]
+PASS rest/dispersion/inertial/exchange mass agrees on robust packets :: [(-0.2, 0.30100401625635154, 0.3028356964817136, 0.3010040162563516, 0.9999996771096793), (-0.3, 0.4534056541748851, 0.45444242813733504, 0.4534056541748852, 0.9999999814831632), (-0.4, 0.6081301065260172, 0.6071709258682436, 0.6081301065260174, 0.9999999982618543)]
+PASS one common-family charge gives species-independent static exchange :: [(-0.2, 0.30100401625635154, np.float64(0.3028255232424017), np.float64(0.9939849621440523)), (-0.3, 0.4534056541748851, np.float64(0.45443660213648995), np.float64(0.9977313712039084)), (-0.4, 0.6081301065260172, np.float64(0.6071671097867779), np.float64(1.0015860489208273))]
+PASS beta=-0.2 held-out two-object composition adds mass :: 0.6020080325127032
+PASS beta=-0.3 held-out two-object composition adds mass :: 0.9068113083497703
+PASS beta=-0.4 held-out two-object composition adds mass :: 1.2162602130520348
+PASS record redundancy does not multiply common-family mass :: (0.6081301065260172, np.float64(0.6081301065260172), np.float64(0.6081301065260171))
+PASS the robust common family does not silently retain the optional det C=1 constraint :: [0.002008032512702891, 0.006811308349770212, 0.016260213052034494]
+PASS the common coin architecture alone does not force the cone mass relation :: [1.298999332697777, 1.1984977451676984, 1.147994646267607]
+PASS phase-coordinate lifts leave the common-family physical coin unchanged :: 
+PASS different tested beta values are distinct candidate laws unless beta becomes physical state :: [np.float64(0.12247740892823923), np.float64(0.12252239371170232)]
+SUMMARY 21 passed, 0 failed

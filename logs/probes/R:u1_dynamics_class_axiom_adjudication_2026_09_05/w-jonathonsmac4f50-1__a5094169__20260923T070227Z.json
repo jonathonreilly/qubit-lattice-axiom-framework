@@ -1,0 +1,35 @@
+{
+ "task": "R:u1_dynamics_class_axiom_adjudication_2026_09_05",
+ "type": "runner-reexecution",
+ "lane": "u1",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/u1_dynamics_class_axiom_adjudication_2026_09_05.py",
+ "seed": 46947,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5094169",
+ "started_utc": "20260923T070227Z",
+ "elapsed_s": 34.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=110 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ae7a9227ca707698c9bfc6987b7db4e51538feb4b738f3a319c00cc5fc2aeafe",
+ "stdout_tail": "--\n  [PASS] dim_R M_2(C) = 8 (rank of the real coordinate basis): every witness payload fits, with components per site read off the constructed generators (1, 1, 2, 1); a nine-component linear payload cannot  ({'Maxwell member': 1, 'vertex-scalar law': 1, 'complex law': 2, 'finite tick / nonlinear law': 1})\n\nN. Resolution certificate\n-------------------------\nper_element: executed \u2014 every coefficient of the 30-pattern (43 with vertex payload) translation-covariant nearest-neighbor generator basis is classified exactly under all 24 proper rotations for each orientation law\nper_site: executed \u2014 every site of the side-4, side-6 and side-8 compiled tori is role-censused, and per-site field energy is shown not conserved by the conservative law while the lattice-wide sum is\nper_mode: executed \u2014 exact eigenvalue multiplicities of the edge, face and Hodge Laplacians on the side-6 torus certify two transverse branches per nonzero momentum and a third branch for the vertex-scalar witness; symbolic per-mode roots for the overdamped witness\nper_block: executed \u2014 the edge, face and vertex blocks of every witness generator are checked separately for skewness, Gauss rows, chain identities and orientation covariance\nlattice_wide: executed \u2014 every witness law is assembled as a full generator on the side-6 or side-8 torus where its conservation, covariance, support radius and gauge compatibility are decided exactly; no infinite-volume or continuum statement is executed\n\nTOTAL: PASS=110 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T070302Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

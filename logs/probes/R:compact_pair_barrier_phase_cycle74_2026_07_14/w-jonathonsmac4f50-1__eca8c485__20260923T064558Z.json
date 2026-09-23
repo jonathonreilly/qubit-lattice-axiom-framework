@@ -1,0 +1,31 @@
+{
+ "task": "R:compact_pair_barrier_phase_cycle74_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "compact",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/compact_pair_barrier_phase_cycle74_2026_07_14.py",
+ "seed": 45958,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "eca8c485",
+ "started_utc": "20260923T064558Z",
+ "elapsed_s": 2.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "59431effed2ad4994e52787a667a9d3097493e0bbba986e83e3d8e2c50180517",
+ "stdout_tail": "our pairs exist :: 39\nPASS E02 every adjacent later record requires that exact comb site first :: ()\nPASS E03 completed comb closes the non-comb DAG in 18 waves :: waves=18, pending=[]\nPASS E04 terminal wave writes independent Z_A and Z_C peers :: Counter({'Z_C': 1, 'Z_A': 1})\nPASS F01 shortest legacy witness is the unique rank-26 mask :: 4343248441094\nPASS F02 legacy append sequence is F then A then wrong T :: (frozenset({'F'}), frozenset({'A'}), frozenset({'T'}))\nPASS F03 repaired J barrier rejects the one-F bridge :: frozenset()\nPASS G01 supplied V2 predicate forms only 6 of 12 sites after repair :: formed=Counter({'V4': 12, 'V5': 6, 'V6': 6, 'V2': 6, 'V3': 6}), pending=Counter({'V3': 9, 'V2': 6})\nPASS G02 the other six V2 sites see K+U1 rather than T+U1\nPASS G03 V5 and intended U4 collide at exactly three immutable sites :: [(0, -1, -6), (1, -5, -1), (5, 0, -2)]\nPASS G04 exact gate leaves only three U4 sites writable :: [(-1, -1, -5), (1, -4, 0), (4, 1, -2)]\nPASS G05 broadening V2 to T-or-K does not remove the V5/U4 wall\nPASS G06 deleting the three colliding V5 sites leaves zero U4 sites writable :: formed=Counter({'V3': 15, 'V4': 12, 'V2': 12, 'V6': 3, 'V5': 3}), pending=Counter({'V6': 3})\nPASS G07 earlier V4 witness is rejected by exact cubic orientation :: perpendicular=(((-1, 0, 0), 'T'), ((0, -1, 0), 'T')), opposite=(((-1, 0, 0), 'T'), ((1, 0, 0), 'T'))\nPASS G08 ungated compact U4 retains all six sites\n\nCAUSAL=ancestor:92 comb:68 queries:62\nSUMMARY: 43 PASS / 0 FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T064600Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

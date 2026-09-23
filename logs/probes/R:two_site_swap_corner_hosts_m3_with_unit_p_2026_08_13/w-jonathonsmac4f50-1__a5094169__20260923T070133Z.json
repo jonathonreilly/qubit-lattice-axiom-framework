@@ -1,0 +1,35 @@
+{
+ "task": "R:two_site_swap_corner_hosts_m3_with_unit_p_2026_08_13",
+ "type": "runner-reexecution",
+ "lane": "two",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/two_site_swap_corner_hosts_m3_with_unit_p_2026_08_13.py",
+ "seed": 46893,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5094169",
+ "started_utc": "20260923T070133Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=33 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9bfb5bfb392834d48b534452a8f70d55032b9d4adf85af81780d1f7571cfa312",
+ "stdout_tail": "lementary rank-one projection is nonzero and orthogonal to p\nPASS: n1-corner-membership-witness the ambient unit fails the corner identity X=pXp\nPASS: scope-qubit-unchanged Qubit still names one-site M_2(C), while the note marks the two-factor composite as an explicit bounded input\nPASS: mutation-unital predicate p == I_4 fails\nPASS: mutation-rank predicate rank(p) == 4 fails\nPASS: mutation-dim predicate dim_C(C) == 9 holds\nPASS: machine-status-contract the source uses the required bounded-support, trace, and propose-ratify status fields\nPASS: note-negative-scope the note separates the local non-unitality theorem from physical-identification non-claims\nPASS: canonical-nonmutation the axiom memo does not contain the swap projector or a color-algebra rewrite\nPASS: no-go-gate the exact local negative boundary carries a complete source-visible N1-N8 disposition\nPASS: audit-input-paths AUDIT_INPUT_PATHS is the declared note-plus-axiom tuple\nper_element: entries of F, p, I_4, and the corner matrix units are evaluated exactly\nper_site: the supplied object is one explicit two-factor tensor algebra, not a framework-wide composite rule\nper_mode: the displayed swap's +1 and -1 eigenspaces are both resolved by exact ranks and vectors\nper_block: the displayed corner and its inclusion in one M_4(C) block are tested; no physical identification is inferred\nlattice_wide: checked and not executed \u2014 the theorem supplies no lattice-wide carrier or universal composite claim\nTOTAL: PASS=33 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T070134Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

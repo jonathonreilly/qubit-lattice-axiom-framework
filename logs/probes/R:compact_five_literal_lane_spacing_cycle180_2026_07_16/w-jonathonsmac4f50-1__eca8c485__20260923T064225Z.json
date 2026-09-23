@@ -1,0 +1,32 @@
+{
+ "task": "R:compact_five_literal_lane_spacing_cycle180_2026_07_16",
+ "type": "runner-reexecution",
+ "lane": "compact",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/compact_five_literal_lane_spacing_cycle180_2026_07_16.py",
+ "seed": 45745,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "eca8c485",
+ "started_utc": "20260923T064225Z",
+ "elapsed_s": 99.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "daa08cf25172486d0dd83503003493f85205b869cafa1c6d0f70e4d61a46fe15",
+ "stdout_tail": ", 'L6')))))\nPASS the compact sources are disjoint but nearest-neighbor adjacent :: 1\n\nALL-32 COMPACT CAUSAL CERTIFICATES\nPASS all 32 words retain the exact Cycle-178 causal shape at spacing 12 :: (Counter({(1521, 3455, 18, 16, 0, 10): 32}), ())\nPASS all five compact payload lineages remain exact and disjoint :: ((), {((-26, 3, -1), (-26, 15, -1), (-26, 27, -1), (-26, 39, -1), (-26, 51, -1))})\nPASS the compact causal graph has zero cross-lane ancestry :: ((), (), ())\nPASS the five-lane graph factorizes exactly into five single-lane graphs :: (1521, 3455, 18, 16, 0, 10)\n\nCOMPACTION AND BINDING STATUS\nPASS transverse source width falls from 813 to 61 sites :: (813, 61, 800, 48)\nPASS compaction generates no common binding or membership target :: (0, 0)\n\nSCOPE AND NO-GO DISCIPLINE\nFAIL the note freezes the construction-bounded scope and N1-N8 gate :: \n\nACCOUNTING\nREFERENCE_SPACING 200\nMINIMUM_DISJOINT_SPACING 12\nFIRST_FAILED_SPACING 11\nFIRST_FAILURES (((2, 6, -1), ((0, 'R_B32'), (1, 'L6'))), ((2, 7, 0), ((0, 'R_B32'), (1, 'L6'))), ((2, 17, -1), ((1, 'R_B32'), (2, 'L6'))), ((2, 18, 0), ((1, 'R_B32'), (2, 'L6'))), ((2, 28, -1), ((2, 'R_B32'), (3, 'L6'))), ((2, 29, 0), ((2, 'R_B32'), (3, 'L6'))), ((2, 39, -1), ((3, 'R_B32'), (4, 'L6'))), ((2, 40, 0), ((3, 'R_B32'), (4, 'L6'))))\nCOMPACT_OFFSETS ((0, 0, 0), (0, 12, 0), (0, 24, 0), (0, 36, 0), (0, 48, 0))\nBUNDLE_SHAPES Counter({(1521, 3455, 18, 16, 0, 10): 32})\nCROSS_LANE_EDGES 0\nMULTI_LANE_TARGETS 0\nPASS 10 FAIL 2\nRESULT CYCLE180_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T064404Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

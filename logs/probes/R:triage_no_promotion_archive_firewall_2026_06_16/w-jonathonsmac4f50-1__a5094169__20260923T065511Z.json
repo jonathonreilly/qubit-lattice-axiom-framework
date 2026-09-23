@@ -1,0 +1,31 @@
+{
+ "task": "R:triage_no_promotion_archive_firewall_2026_06_16",
+ "type": "runner-reexecution",
+ "lane": "triage",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/triage_no_promotion_archive_firewall_2026_06_16.py",
+ "seed": 46511,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5094169",
+ "started_utc": "20260923T065511Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a8e40575d6cd001582f090aa5ffc10d34c48ec0de5f43f0c84773bc71ac41726",
+ "stdout_tail": "Triage no-promotion archive firewall\n========================================================================\nPASS: archived triage memo is demoted and fenced.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T065511Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

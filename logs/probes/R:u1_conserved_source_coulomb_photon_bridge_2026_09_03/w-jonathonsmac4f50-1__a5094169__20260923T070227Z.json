@@ -1,0 +1,35 @@
+{
+ "task": "R:u1_conserved_source_coulomb_photon_bridge_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "u1",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/u1_conserved_source_coulomb_photon_bridge_2026_09_03.py",
+ "seed": 46947,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5094169",
+ "started_utc": "20260923T070227Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9c9f73c615be4796067c4189765802762338f760e83312e99d1652fd5e6ba9a7",
+ "stdout_tail": "ed Gauss\n[PASS] 09 the finite-torus Poisson solve reconstructs the neutral Gauss field\n[PASS] 10 the Poisson field is orthogonal to curl variations and minimizes electric energy\n[PASS] 11 each FFT Green function solves the neutralized cubic Poisson equation\n[PASS] 12 the lattice Coulomb Green function agrees on all three coordinate axes\n[PASS] 13 fitted Green coefficient errors decrease across the named ladder toward 1/(4 pi)\n[PASS] 14 a gradient current changes charge but has exactly zero transverse curl\n[PASS] 15 a co-curl current is charge-neutral and couples nontrivially to photon fields\n[PASS] 16 longitudinal Coulomb and transverse photon source sectors are orthogonal\n[PASS] 17 the Fourier source split leaves exactly two curl-coupled transverse components\n[PASS] 18 a local current impulse has a strict one-cycle and two-cycle causal support cone\n[PASS] 19 the sourced tick covaries under all 48 cubic transformations with polar current\nper_element: every incidence sign, one-edge charge transfer, and source coefficient is checked\nper_site: vertex charge, edge current, edge electric field, and face magnetic updates are local\nper_mode: longitudinal and rank-two transverse source projectors are checked at generic momenta\nper_block: exact continuity, Hodge separation, Poisson minimization, cubic covariance, and causal support are checked\nlattice_wide: full incidence blocks and L=48,64,96,128 Green functions recover the three-dimensional Coulomb coefficient\nTOTAL: PASS=19 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T070227Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

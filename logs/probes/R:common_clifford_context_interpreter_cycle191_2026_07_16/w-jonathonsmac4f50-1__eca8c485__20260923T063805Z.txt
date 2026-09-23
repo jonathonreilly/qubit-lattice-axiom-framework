@@ -1,0 +1,44 @@
+FROZEN CYCLE-189 PROCESS
+PASS Cycle 189 runner and note remain frozen :: {'preterminal_context_quantum_process_cycle189_2026_07_16.py': 'a06853a529723332c774112d5aad8e53d9a91ad486de70de201cfcb8b501fe34', 'PRETERMINAL_CONTEXT_QUANTUM_PROCESS_CYCLE189_NOTE_2026-07-16.md': '97c2e98f90cef08063a3589d31555fbe76a18cbbbd3b8fb677c3b03603c54ded'}
+
+SIGNED-PAULI CLIFFORD SYNTHESIS
+PASS the signed-Pauli BFS enumerates the full two-qubit Clifford action group :: {'states': 11520, 'diameter': 11, 'histogram': Counter({8: 3035, 7: 2448, 9: 2424, 6: 1494, 10: 912, 5: 734, 4: 292, 3: 96, 11: 52, 2: 26, 1: 6, 0: 1})}
+PASS H and CNOT alone generate the exact real Clifford subgroup :: {'states': 1152, 'diameter': 15}
+PASS all six shortest full-Clifford decoder programs use only H and CNOT :: {'programs': {'R1': (), 'C1': ('H1',), 'C3': ('CX10', 'H1'), 'R3': ('H0', 'CX01', 'H0'), 'C2': ('CX01', 'CX10', 'H1'), 'R2': ('H0', 'CX10', 'CX01', 'H0')}, 'depths': {'R1': 0, 'C1': 1, 'C3': 2, 'R3': 3, 'C2': 3, 'R2': 4}}
+
+CONTEXT GENERATOR DECODING
+PASS each short program maps its two independent generators to ZI and IZ :: []
+PASS the third outcome sign is derived, with C3 the unique negative product :: {'R1': (1, 'ZZ'), 'R2': (1, 'XX'), 'R3': (1, 'YY'), 'C1': (1, 'ZX'), 'C2': (1, 'XZ'), 'C3': (-1, 'YY')}
+
+ONE UNIFORM POINTER INTERPRETER
+PASS decoder-copy-undecoder reproduces all six Cycle-189 dilations exactly :: []
+PASS the common pointer copy is two commuting disjoint CNOTs :: 
+PASS one three-bit context program selects every physical pointer instrument :: {'codes': {'R1': (0, 0, 0), 'R2': (0, 0, 1), 'R3': (0, 1, 0), 'C1': (0, 1, 1), 'C2': (1, 0, 0), 'C3': (1, 0, 1), 'OMIT': (1, 1, 0), 'INVALID': (1, 1, 1)}, 'failures': []}
+
+PREPARATION PROGRAMS
+PASS both Cycle-189 preparations use the same H/CNOT interpreter :: {'cost': {'prep:Z0Z0': {'gates': 0, 'depth': 0, 'code': (0,)}, 'prep:X+X+': {'gates': 2, 'depth': 1, 'code': (1,)}}, 'failures': []}
+
+GATE, DEPTH, POINTER, AND PROGRAM COST
+PASS the six exact instrument costs are 2|V|+2 gates and 2depth(V)+1 layers :: {'R1': {'basis_gates': 0, 'instrument_gates': 2, 'instrument_depth': 1, 'program_code': (0, 0, 0)}, 'R2': {'basis_gates': 4, 'instrument_gates': 10, 'instrument_depth': 9, 'program_code': (0, 0, 1)}, 'R3': {'basis_gates': 3, 'instrument_gates': 8, 'instrument_depth': 7, 'program_code': (0, 1, 0)}, 'C1': {'basis_gates': 1, 'instrument_gates': 4, 'instrument_depth': 3, 'program_code': (0, 1, 1)}, 'C2': {'basis_gates': 3, 'instrument_gates': 8, 'instrument_depth': 7, 'program_code': (1, 0, 0)}, 'C3': {'basis_gates': 2, 'instrument_gates': 6, 'instrument_depth': 5, 'program_code': (1, 0, 1)}}
+PASS two pointer qubits exactly and minimally host four orthogonal records :: Matrix([[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]])
+
+PHASE AND SIGN RESOURCE
+PASS the complete preparation and context program bank consumes zero phase gates :: {'tokens': ['CX01', 'CX10', 'H0', 'H1'], 'all_real': True}
+PASS YY and the C3 minus sign arise from Pauli multiplication, not an S gate :: {'R1': (1, 'ZZ'), 'R2': (1, 'XX'), 'R3': (1, 'YY'), 'C1': (1, 'ZX'), 'C2': (1, 'XZ'), 'C3': (-1, 'YY')}
+
+IDENTITY CONTAINMENT
+PASS OMIT skips the common copy while R1 executes it despite an empty decoder :: 
+PASS circuit-generated identity and R1 measure-and-forget retain the Cycle-189 separation :: {'OMIT': (1, 0), 'R1': (1/2, 1/2)}
+
+ALGEBRAIC / MICROSCOPIC FIREWALL
+FAIL the Cycle-191 note preserves the compression and authority boundary :: ('one common h/cnot interpreter', 'six short context programs', 'three-bit context-program register', 'one-bit preparation program', 'zero dynamic phase gates', 'c3 minus sign is derived', 'two pointer qubits are minimal', 'identity containment', 'algebraic circuit generation', 'not a microscopic nearest-neighbour lattice derivation', 'classical program dispatch remains imported', 'born trace pairing remains imported', 'actuality and frequency remain open', 'no axiom conclusion follows')
+
+ACCOUNTING
+CLIFFORD {'full_states': 11520, 'full_diameter': 11, 'real_states': 1152, 'real_diameter': 15}
+PROGRAMS {'R1': (), 'R2': ('H0', 'CX10', 'CX01', 'H0'), 'R3': ('H0', 'CX01', 'H0'), 'C1': ('H1',), 'C2': ('CX01', 'CX10', 'H1'), 'C3': ('CX10', 'H1')}
+CONTEXT_COST {'R1': {'basis_gates': 0, 'instrument_gates': 2, 'instrument_depth': 1, 'program_code': (0, 0, 0)}, 'R2': {'basis_gates': 4, 'instrument_gates': 10, 'instrument_depth': 9, 'program_code': (0, 0, 1)}, 'R3': {'basis_gates': 3, 'instrument_gates': 8, 'instrument_depth': 7, 'program_code': (0, 1, 0)}, 'C1': {'basis_gates': 1, 'instrument_gates': 4, 'instrument_depth': 3, 'program_code': (0, 1, 1)}, 'C2': {'basis_gates': 3, 'instrument_gates': 8, 'instrument_depth': 7, 'program_code': (1, 0, 0)}, 'C3': {'basis_gates': 2, 'instrument_gates': 6, 'instrument_depth': 5, 'program_code': (1, 0, 1)}}
+PREPARATION_COST {'prep:Z0Z0': {'gates': 0, 'depth': 0, 'code': (0,)}, 'prep:X+X+': {'gates': 2, 'depth': 1, 'code': (1,)}}
+PROGRAM_STORAGE {'context_bits': 3, 'preparation_bits': 1, 'basis_tokens': 13, 'legal_context_codes': 7, 'reserved_codes': 1}
+PHASE {'dynamic_phase_gates': 0, 'signs': {'R1': (1, 'ZZ'), 'R2': (1, 'XX'), 'R3': (1, 'YY'), 'C1': (1, 'ZX'), 'C2': (1, 'XZ'), 'C3': (-1, 'YY')}}
+PASS 16 FAIL 1
+RESULT CYCLE191_OPEN

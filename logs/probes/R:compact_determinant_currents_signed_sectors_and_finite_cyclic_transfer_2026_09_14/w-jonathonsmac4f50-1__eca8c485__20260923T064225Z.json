@@ -1,0 +1,35 @@
+{
+ "task": "R:compact_determinant_currents_signed_sectors_and_finite_cyclic_transfer_2026_09_14",
+ "type": "runner-reexecution",
+ "lane": "compact",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/compact_determinant_currents_signed_sectors_and_finite_cyclic_transfer_2026_09_14.py",
+ "seed": 45744,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "eca8c485",
+ "started_utc": "20260923T064225Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=3 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "915be37eacab33d789a6920c7d647fb6db79945bc4a261c9d7b18065e68b3106",
+ "stdout_tail": "882527075448773e-07, \"scope\": \"pointwise-positive standard r=1 Wilson paired determinant is not universally of positive Fourier type; no phase/no-go conclusion\", \"word\": [-1, -4, 3, -2, -3, 1, 2, 3, 4, -3]}\nPASS: check_r1_fourier_sign\nper_element: exact scalar coefficients, Clifford products and the full r=1 polynomial remainder challenge the sign claims\nper_site: integer contraction and all proper cycle subcurrents are checked on explicitly named finite cell complexes\nper_mode: direct Villain kernels, cyclic spectra and physical-source transforms check the original observable normalization\nper_block: affine Gaussian sums, positive angle integrals and full cycle determinants use distinct mathematical representations\nlattice_wide: general sector bounds are analytic; fixed-box transfer checks do not prove a uniform interacting infrared phase\nTOTAL: PASS=3 FAIL=0\n\n[stderr]\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: divide by zero encountered in det\n  r = _umath_linalg.det(a, signature=signature)\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: overflow encountered in det\n  r = _umath_linalg.det(a, signature=signature)\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: invalid value encountered in det\n  r = _umath_linalg.det(a, signature=signature)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T064225Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/compact_determinant_currents_signed_sectors_and_finite_cyclic_transfer_2026_09_14.txt against the .txt beside this log"
+  ]
+ }
+}

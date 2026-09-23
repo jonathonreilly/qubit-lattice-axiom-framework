@@ -1,0 +1,3 @@
+Triage no-promotion archive firewall
+========================================================================
+PASS: archived triage memo is demoted and fenced.

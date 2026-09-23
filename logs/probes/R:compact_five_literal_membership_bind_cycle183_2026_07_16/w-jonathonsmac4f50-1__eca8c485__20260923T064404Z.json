@@ -1,0 +1,32 @@
+{
+ "task": "R:compact_five_literal_membership_bind_cycle183_2026_07_16",
+ "type": "runner-reexecution",
+ "lane": "compact",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/compact_five_literal_membership_bind_cycle183_2026_07_16.py",
+ "seed": 45844,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "eca8c485",
+ "started_utc": "20260923T064404Z",
+ "elapsed_s": 112.9,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "aafe7a100c64bc56cd5d8b01614dff136648d5b04ab95f51f573defb18cede1b",
+ "stdout_tail": "ozenset({'H1'}), None, None, frozenset({'H0'}), None): 5, (1, None, None, None, frozenset({'H1'}), None): 5})\nPASS both remaining seam signatures and the repaired face are exact in all 24 orientations :: ()\n\nALL-32 FULL-HISTORY FAILURE CENSUS\nPASS all 32 words fail first at only the two named endpoint-seam classes :: (Counter({666: 32}), ())\n\nSURVIVING BOUNDED JOIN-TREE FACTS\nPASS the intended status tree is value-neutral with all-five final ancestry :: ({(-35, 9, 0), (-35, 33, 0)}, frozenset({0, 1, 2, 3, 4}))\nPASS no 32-valued payload or supplied MEMBER5 is used by the candidate :: \n\nENDPOINT EDGE DELETION\nPASS all 320 endpoint-to-leaf edge deletions are exact :: (320, ())\n\nSCOPE AND NO-GO DISCIPLINE\nFAIL the note freezes the narrow obstruction, live routes, and N1-N8 gate :: \n\nACCOUNTING\nNEW_ROLES ('LITERAL_FRAME', 'MEMBER5', 'MEMBER5_FRAME')\nSCAFFOLD_RECORDS 2739 Counter({'LITERAL_FRAME': 1525, 'MEMBER5_FRAME': 1214})\nADDED_DYNAMIC_RECORDS 715\nSTATUS_DYNAMIC_RECORDS 320\nLITERAL_DYNAMIC_RECORDS 390\nCONSUMER_RECORDS 5\nCOMPILED_CANONICAL_ROWS 21\nNEW_RAW_ROWS 330\nFULL_RAW_ROWS 102326\nSEAM_PROFILES Counter({(0, frozenset({'H1'}), None, None, frozenset({'H0'}), None): 5, (1, None, None, None, frozenset({'H1'}), None): 5})\nFULL_HISTORY_FAILURES 32\nFAILURE_STEPS Counter({666: 32})\nJ01 (-35, 9, 0) J23 (-35, 33, 0) J0123 (-50, 21, 0) JFINAL (-65, 40, 0)\nCONSUMER_SITES ((-80, 3, -20), (-80, 15, -20), (-80, 27, -20), (-80, 39, -20), (-80, 51, -20))\nPASS 10 FAIL 2\nRESULT CYCLE183_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T064557Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

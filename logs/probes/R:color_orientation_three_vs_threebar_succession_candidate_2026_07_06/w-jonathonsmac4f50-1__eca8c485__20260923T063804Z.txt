@@ -1,0 +1,2 @@
+[FAIL] missing quote in docs/MINIMAL_AXIOMS_2026-06-29.md: Further physical structure requires derivation, bridge, explicit admission, or approved primitive registration before use as a premise.
+TOTAL PASS=0 FAIL=1

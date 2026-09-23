@@ -1,0 +1,35 @@
+{
+ "task": "R:tt_graviton_polarisations_read_by_axis_bond_pair_record_statistics_check_2026_09_04",
+ "type": "runner-reexecution",
+ "lane": "tt",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/tt_graviton_polarisations_read_by_axis_bond_pair_record_statistics_check_2026_09_04.py",
+ "seed": 46511,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5094169",
+ "started_utc": "20260923T065511Z",
+ "elapsed_s": 85.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c235342052631eb2f4009534e66431e2f2a0d87393bd64294fdacbd28a8f2d0e",
+ "stdout_tail": "R) = 6 and TT rank 2 at all 27 (torus, mass, momentum) triples on 8^3 and 12^3; 12^3 m=1 (1,0,0): TT sv 0.027929, 0.027220 (ratio 0.9746); sampled spectral discrepancy <= 1.7e-17; at m=0 the small positive sixth sv 4.5e-06 has approximate direction (0.98,1.00,1.00,0,0,0) at NONZERO k, not an exact uniform dilation null vector\nPASS T7d (xii) the supplied curl retains rank one in the axis and (1,1,0) examples: bonds parallel to the plus mode's | |cos| between the curl(cross) and the declared-plus bond amplitudes = 1.000000 at (1,0,0), 1.000000 at (1,1,0), 0.999736 at (1,2,0); TT rank stays 1 on the axis (s_min 6.4e-18); the residual 4.1e-04 at (1,2,0) is a finite second response; C2 below tests its rank lift\nSUPPLIED, not derived: the fermion law; the pi-flux sea, KS pattern, twist rule and m; beta = 1 (supplied); the endpoint-mean rule; the pair-statistic reading of an edge length; kappa. Runtime 85 s.\nPASS C1 endpoint means lower the nonzero-component TT response rank | L6,m1 n333/n331 ranks=[0, 1] sv=[[1.0784370597547662e-17, 1.0784370597547654e-17], [0.014833379196549755, 2.7323225709378865e-18]]; absolute floor1e-14\nPASS C2 actual centered curl is a finite supplied rank-lifting alternative | n120 declared=1/[0.019529904617564733, 0.0] curl=2/[0.029394922566168245, 0.0019720326036213568]\nPASS C3 joint probability is one quarter; zero connected derivative need not freeze covariance | Jfd=.25; projector C02(t)=-sin(t)^2/4 for the explicit changed kernel\nTOTAL: PASS=18 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T065637Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/tt_graviton_polarisations_read_by_axis_bond_pair_record_statistics_check_2026_09_04.txt against the .txt beside this log"
+  ]
+ }
+}

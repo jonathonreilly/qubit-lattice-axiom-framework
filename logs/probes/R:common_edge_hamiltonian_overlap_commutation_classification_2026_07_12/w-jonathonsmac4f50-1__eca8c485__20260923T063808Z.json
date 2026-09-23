@@ -1,0 +1,35 @@
+{
+ "task": "R:common_edge_hamiltonian_overlap_commutation_classification_2026_07_12",
+ "type": "runner-reexecution",
+ "lane": "common",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/common_edge_hamiltonian_overlap_commutation_classification_2026_07_12.py",
+ "seed": 45488,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "eca8c485",
+ "started_utc": "20260923T063808Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=25 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "07118942f8ef73038e0786ddb950b85f3da2bc2785c0b46df8dd47683c33c572",
+ "stdout_tail": "rmits every onsite field direction\nPASS A08: b=0 permits either rank-one C or the scalar degeneration\nPASS A09: the scalar Hamiltonian is included with arbitrary unused axis\nPASS M01: a rank-two coupling mutation has a nonzero three-body commutator\nPASS M02: a rank-one coupling with misaligned field has a nonzero two-body commutator\nPASS G01: all endpoint orientations of overlapping normal-form edges commute exactly\nPASS G02: the L=4 cubic torus has 3|V| edges and degree six\nPASS G03: the six axis-parity classes are exact disjoint-edge matching layers\nPASS G04: summing the common edge field gives exactly 6 beta sum_x N_x\nPASS G05: exp(-it sum h_e) equals every edge-product order in an overlap-complete local test\nPASS R01: one edge sends S+_x exactly to S+_x exp(2 i gamma t N_y)\nPASS R02: forward and inverse have the same radius-exception condition\nPASS R03: gamma t in (pi/2)Z makes every neighbor factor scalar and the automorphism radius zero\nPASS R04: away from sin(2 gamma t)=0, S+ depends on every neighbor and exact graph radius is one\nPASS R05: the six-regular field phase is exp(12 i beta t) and does not enlarge support\nPASS T01: every local axis charge N_x is conserved exactly\nPASS T02: the full one-defect sector is exactly position-degenerate\nPASS T03: a one-axis defect shifts energy by -12 beta -12 gamma with no hopping matrix element\nPASS T04: an exact four-site chain image cancels the nonincident edge, so support does not iterate beyond one hop\nSUMMARY PASS=25 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T063809Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

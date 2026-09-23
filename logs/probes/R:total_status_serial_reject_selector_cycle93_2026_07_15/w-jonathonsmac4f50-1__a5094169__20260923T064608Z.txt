@@ -1,0 +1,50 @@
+
+===============================================================================
+A - Total status, guarded final cell, and live union
+===============================================================================
+PASS A01 note exists
+PASS A02 live bank contains 236 programs
+PASS A03 ALL and AUX are already in the live source alphabet
+PASS A04 status truth table collapses to six canonical rows
+PASS A05 status table has 144 proper-cubic raw rows
+PASS A06 48 status overlaps are safe identical-H1 rows
+PASS A07 guarded final table has four canonical / 96 raw rows
+PASS A08 guarded final raw domain is disjoint from prior mechanisms
+PASS A09 corrected total-selector union has 5,680 raw rows
+PASS A10 every raw input has one output
+PASS A11 all eight status truth assignments are exact :: []
+
+===============================================================================
+B - Every live row reaches its exact output word
+===============================================================================
+PASS B01 all 15,576 exact-row states have exact frontier :: []
+PASS B02 exact-row corpus has 15,340 edges / 236 terminals :: (15340, 236)
+PASS B03 every terminal decodes to its associated live output
+
+===============================================================================
+C - All one-bit perturbations reject physically
+===============================================================================
+PASS C01 all 11,328 one-bit perturbations reach AUX then stop :: []
+PASS C02 perturbation corpus has one reject edge then zero :: (11328, 0)
+PASS C03 one-bit corpus exercises all 48 mismatch positions
+
+===============================================================================
+D - Every unequal selected-program pair rejects
+===============================================================================
+PASS D01 all 55,460 unequal live-program pairs reach AUX then stop :: []
+PASS D02 selected-pair corpus has one reject edge then zero :: (55460, 0)
+PASS D03 selected bank has the exact 26-position first-difference support :: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 19, 20, 24, 32, 35, 37, 40, 45]
+
+===============================================================================
+E - Covariance and exact residual
+===============================================================================
+PASS E01 all 96 transformed controls have exact frontier :: []
+PASS E02 note exists and carries authority none
+PASS E03 note names AUX-gated candidate transport residual
+PASS E04 note says ALL/AUX cage is supplied
+PASS E05 note includes the N1-N8 discipline gate
+PASS E06 note denies foundation and axiom effects
+
+STATUS_CANONICAL=6 STATUS_RAW=144 FINAL_CANONICAL=4 FINAL_RAW=96
+PHYSICAL_UNION_RAW=5680 PROGRAMS=236 UNLIKE_PAIRS=55460 PERTURBATIONS=11328
+SUMMARY: 26 PASS / 0 FAIL

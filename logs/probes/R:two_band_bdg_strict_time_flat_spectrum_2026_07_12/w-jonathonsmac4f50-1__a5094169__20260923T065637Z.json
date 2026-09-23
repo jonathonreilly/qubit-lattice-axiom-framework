@@ -1,0 +1,35 @@
+{
+ "task": "R:two_band_bdg_strict_time_flat_spectrum_2026_07_12",
+ "type": "runner-reexecution",
+ "lane": "two",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/two_band_bdg_strict_time_flat_spectrum_2026_07_12.py",
+ "seed": 46597,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5094169",
+ "started_utc": "20260923T065637Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=33 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8775a8fb9d45cd2ca4c6c541611824f765475a7d276eec9a33a3ab0f634bb9c4",
+ "stdout_tail": "dinary one-dimensional character squares trivially\nPASS C05: nonzero cubic hopping generically makes the two-band square momentum-dependent\nPASS C06: flat spectrum in the nearest-neighbor scalar cubic normal symbol forces zero hopping\nPASS D01: the lower-symmetry Kitaev symbol (cos k)Z+(sin k)Y is an exact flat involution\nPASS D02: the Laurent coefficients obey the spinless BdG particle-hole relation\nPASS D03: the flat BdG exponential is a strict radius-one Bogoliubov/CAR convolution with local inverse\nPASS D04: the lower-symmetry positive escape is strict for every time, not at an isolated time\nPASS E01: the dispersive scalar hopping exponential has Bessel support beyond every tested cutoff\nPASS E02: the two-sided Bessel series reconstructs the exact dispersive Laurent exponential\nPASS E03: the tail obstruction is compatible with exact one-particle unitarity\nPASS F01: seven explicit Hermitian 8x8 gammas satisfy the exact Cl(7) relations\nPASS F02: the multicomponent cubic Laurent symbol is an exact radius-one flat involution\nPASS F03: the irreducible 8-mode orientation obstruction is present on half the cubic rotations\nPASS F04: doubling the Clifford chirality supplies a unitary intertwiner for each of all 24 proper cubic rotations\nPASS F05: the 24 intertwiners close projectively, so conjugation is an honest action on the even/quadratic algebra\nPASS F06: commuting pi rotations anticommute on odd CAR generators, exposing the nontrivial spinorial cocycle\nSUMMARY PASS=33 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T065638Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

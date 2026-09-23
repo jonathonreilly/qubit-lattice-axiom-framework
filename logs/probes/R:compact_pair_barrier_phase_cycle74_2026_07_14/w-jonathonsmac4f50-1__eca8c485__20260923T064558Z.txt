@@ -1,0 +1,46 @@
+PASS A01 note exists
+PASS A02 proper cubic group has 24 rotations
+PASS A03 repaired Cycle-68 footprint has 51 sites
+PASS A04 compact downstream has 38 sites
+PASS A05 compact stage orbits are exact
+PASS A06 no downstream site overwrites the comb or repaired shell
+PASS A07 combined finite footprint has 141 variable sites
+PASS A08 official q/a/b/c contents are exact
+PASS A09 b-side phase port is PHASE_E
+PASS A10 compact auxiliaries avoid current and next official supports
+PASS B01 all 1,462 target-local subsets were considered :: 1462
+PASS B02 exactly 383 parent-retaining subsets were compiled :: 383
+PASS B03 no canonical install conflict occurred
+PASS B04 union table has 131 canonical rows :: Counter({'A': 32, 'F': 12, 'QG': 8, 'Q1': 8, 'T': 7, 'J': 7, 'U3': 4, 'C_Q': 4, 'X_B': 4, 'K': 3, 'U1': 3, 'W1': 2, 'U4': 2, 'GUIDE': 2, 'HEAD': 2, 'L2': 2, 'Q0': 2, 'U2': 2, 'Q2': 2, 'PHASE_E': 2, 'START': 1, 'W2': 1, 'W3': 1, 'W4': 1, 'W5': 1, 'W6': 1, 'J6': 1, 'COMP6': 1, 'S7': 1, 'PAIR': 1, 'ALL': 1, 'R1': 1, 'R2': 1, 'MARK': 1, 'E': 1, 'OPEN_B': 1, 'S8': 1, 'OPEN_C': 1, 'B_0_2': 1, 'Z_A': 1, 'Z_C': 1})
+PASS B05 union table has 2,908 raw rotated rows :: 2908
+PASS B06 every raw input has one output
+PASS C01 local scan has 350 candidate targets :: 350
+PASS C02 all 4,050 candidate-local subsets were scanned :: 4050
+PASS C03 595 local subsets match a raw rule :: 595
+PASS C04 435 matches have their intended target/output :: 435
+PASS C05 arbitrary subsets expose 160 apparent bad contexts :: 160
+PASS C06 those contexts reduce to 83 target/output classes :: 83
+PASS D01 every dynamic parent has strictly lower rank
+PASS D02 every non-comb site has a finite parent closure
+PASS D03 every site has at most two minimal closure choices
+PASS D04 exact Cycle-60 reachable-state census is retained :: 242,033
+PASS D05 no apparent bad context is causally reachable :: ()
+PASS D06 every apparent context has an explicit causal contradiction :: ancestor=92, comb=68
+PASS E01 exactly 39 non-comb/comb neighbour pairs exist :: 39
+PASS E02 every adjacent later record requires that exact comb site first :: ()
+PASS E03 completed comb closes the non-comb DAG in 18 waves :: waves=18, pending=[]
+PASS E04 terminal wave writes independent Z_A and Z_C peers :: Counter({'Z_C': 1, 'Z_A': 1})
+PASS F01 shortest legacy witness is the unique rank-26 mask :: 4343248441094
+PASS F02 legacy append sequence is F then A then wrong T :: (frozenset({'F'}), frozenset({'A'}), frozenset({'T'}))
+PASS F03 repaired J barrier rejects the one-F bridge :: frozenset()
+PASS G01 supplied V2 predicate forms only 6 of 12 sites after repair :: formed=Counter({'V4': 12, 'V5': 6, 'V6': 6, 'V2': 6, 'V3': 6}), pending=Counter({'V3': 9, 'V2': 6})
+PASS G02 the other six V2 sites see K+U1 rather than T+U1
+PASS G03 V5 and intended U4 collide at exactly three immutable sites :: [(0, -1, -6), (1, -5, -1), (5, 0, -2)]
+PASS G04 exact gate leaves only three U4 sites writable :: [(-1, -1, -5), (1, -4, 0), (4, 1, -2)]
+PASS G05 broadening V2 to T-or-K does not remove the V5/U4 wall
+PASS G06 deleting the three colliding V5 sites leaves zero U4 sites writable :: formed=Counter({'V3': 15, 'V4': 12, 'V2': 12, 'V6': 3, 'V5': 3}), pending=Counter({'V6': 3})
+PASS G07 earlier V4 witness is rejected by exact cubic orientation :: perpendicular=(((-1, 0, 0), 'T'), ((0, -1, 0), 'T')), opposite=(((-1, 0, 0), 'T'), ((1, 0, 0), 'T'))
+PASS G08 ungated compact U4 retains all six sites
+
+CAUSAL=ancestor:92 comb:68 queries:62
+SUMMARY: 43 PASS / 0 FAIL

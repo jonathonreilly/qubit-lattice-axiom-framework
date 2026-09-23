@@ -1,0 +1,26 @@
+PASS A01: the endpoint-SWAP-symmetric Hermitian Pauli space has dimension ten
+PASS A02: all ten basis elements commute exactly with endpoint SWAP
+PASS A03: all 36 nonzero Pauli coefficients are exactly row-field or row-row cross products
+PASS A04: independent two-body and three-body Pauli sectors each contain eighteen coefficients
+PASS A05: the three-body equations are precisely all 2x2 minors, hence rank(C)<=1
+PASS A06: the arbitrary-axis Ising-plus-field normal form is symbolically sufficient
+PASS A07: C=0 permits every onsite field direction
+PASS A08: b=0 permits either rank-one C or the scalar degeneration
+PASS A09: the scalar Hamiltonian is included with arbitrary unused axis
+PASS M01: a rank-two coupling mutation has a nonzero three-body commutator
+PASS M02: a rank-one coupling with misaligned field has a nonzero two-body commutator
+PASS G01: all endpoint orientations of overlapping normal-form edges commute exactly
+PASS G02: the L=4 cubic torus has 3|V| edges and degree six
+PASS G03: the six axis-parity classes are exact disjoint-edge matching layers
+PASS G04: summing the common edge field gives exactly 6 beta sum_x N_x
+PASS G05: exp(-it sum h_e) equals every edge-product order in an overlap-complete local test
+PASS R01: one edge sends S+_x exactly to S+_x exp(2 i gamma t N_y)
+PASS R02: forward and inverse have the same radius-exception condition
+PASS R03: gamma t in (pi/2)Z makes every neighbor factor scalar and the automorphism radius zero
+PASS R04: away from sin(2 gamma t)=0, S+ depends on every neighbor and exact graph radius is one
+PASS R05: the six-regular field phase is exp(12 i beta t) and does not enlarge support
+PASS T01: every local axis charge N_x is conserved exactly
+PASS T02: the full one-defect sector is exactly position-degenerate
+PASS T03: a one-axis defect shifts energy by -12 beta -12 gamma with no hopping matrix element
+PASS T04: an exact four-site chain image cancels the nonincident edge, so support does not iterate beyond one hop
+SUMMARY PASS=25 FAIL=0

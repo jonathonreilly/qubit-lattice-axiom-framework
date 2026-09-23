@@ -1,0 +1,35 @@
+{
+ "task": "R:compact_u1_quadratic_basin_maxwell_universality_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "compact",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/compact_u1_quadratic_basin_maxwell_universality_2026_09_03.py",
+ "seed": 45960,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "eca8c485",
+ "started_utc": "20260923T064600Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=27 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "63533af44f3bac6c5d452305dc25e88d225a7a5cb722f9810925d974d0abd85d",
+ "stdout_tail": "onverge at second order to the Maxwell action\n[PASS] 17 same-curvature laws share one normalized continuum action\n[PASS] 18 all exact nonlinear equations converge at second order to the Maxwell operator\n[PASS] 19 all smooth-mode operators satisfy the explicit analytic error bound\n[PASS] 20 common Hessian has the exact rank-three Euclidean spectrum\n[PASS] 21 common Hessian retains the exact gauge-null direction\n[PASS] 22 Gauss elimination leaves exactly two transverse local modes\n[PASS] 23 zero-curvature mutation collapses instead of producing finite Maxwell action\n[PASS] 24 zero-curvature mutation loses the scaled Maxwell equation\n[PASS] 25 anisotropic curvature mutation changes the infrared cone\n[PASS] 26 wrong-sign spatial curvature mutation creates unstable transverse directions\n[PASS] 27 common positive curvature rescales but does not change sourceless Maxwell equations\nper_element: every representative potential is checked across the full principal-angle interval with analytic Taylor bounds\nper_site: exact link gradients are checked against independent finite differences on a periodic four-dimensional lattice\nper_mode: every nonzero Fourier momentum on L=3,4,5 is checked for the common spectrum and exact gauge null\nper_block: temporal and spatial curvature blocks are Schur-reduced and challenged by anisotropic and wrong-sign controls\nlattice_wide: fixed-volume refinement and exact zero-monopole cube identities are executed on periodic four-lattices\nTOTAL: PASS=27 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T064600Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:two_site_factor_swap_uniquely_names_rank3_corner_2026_08_13",
+ "type": "runner-reexecution",
+ "lane": "two",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/two_site_factor_swap_uniquely_names_rank3_corner_2026_08_13.py",
+ "seed": 46893,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5094169",
+ "started_utc": "20260923T070133Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=24 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b226cf9da7105496e2b6b9a266753dda2cce40f2dfcb812acb28603e46721022",
+ "stdout_tail": " mutation U=2F does not satisfy U^2=I\nPASS: mutation-f-eq-minus-f-fails F and -F are distinguished by exact trace\nPASS: thm5-pplus-proj p_+^2 = p_+ = p_+^*\nPASS: thm5-pminus-proj p_-^2 = p_- = p_-^*\nPASS: thm5-rank-pplus rank(p_+) = 3\nPASS: thm5-rank-pminus rank(p_-) = 1\nPASS: thm5-complementary p_+ + p_- = I_4 and p_+ p_- = 0\nPASS: mutation-rank-pplus-eq-1-fails the rank-1 mutation is rejected\nPASS: mutation-pplus-eq-i4-fails the full-unit mutation is rejected\nPASS: scope-boundary the theorem disclaims a physical interpretation and any axiom edit\nPASS: machine-status-contract bounded status, frontier trace, and next action are source-visible\nPASS: import-boundary-contract the supplied host and absent physical bridge are disclosed\nPASS: audit-input-paths AUDIT_INPUT_PATHS is the required string-literal tuple\nPASS: claim-type-and-proof-contract the bounded type and universal proof obligation are source-visible\nPASS: live-record-unread the live Record unread sentence is quoted without rewrite\nper_element: exact identities cover F, -F, p_+, p_-, and all four matrix units.\nper_site: the theorem is evaluated only on the supplied two-site host H=C^2 tensor C^2.\nper_mode: both swap eigenspaces and their complementary spectral projectors are resolved exactly.\nper_block: all 16 real coordinates of a complex-Hermitian 4x4 matrix are constrained; the kernel is span_R{F}.\nlattice_wide: checked and not executed \u2014 the claim asserts no multi-site or lattice-wide lift.\nTOTAL: PASS=24 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T070133Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

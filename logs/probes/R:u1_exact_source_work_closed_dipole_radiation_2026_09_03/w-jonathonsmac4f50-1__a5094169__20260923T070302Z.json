@@ -1,0 +1,35 @@
+{
+ "task": "R:u1_exact_source_work_closed_dipole_radiation_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "u1",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/u1_exact_source_work_closed_dipole_radiation_2026_09_03.py",
+ "seed": 46982,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5094169",
+ "started_utc": "20260923T070302Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=22 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9d71aafb63f4f00beee0fd55acd8924fcb5f5886007e683ba297d24b0c30a4db",
+ "stdout_tail": "magnetic field\n[PASS] 12 the unit-dipole radiation packet has positive modified energy exactly one half\n[PASS] 13 accumulated midpoint work equals the complete residual radiation energy\n[PASS] 14 reversing time and the ordered source history returns the packet to zero exactly\n[PASS] 15 reversing the dipole orientation reverses the field and keeps its energy\n[PASS] 16 the sparse large-volume propagator is byte-identical to the dense role curl at L=3\n[PASS] 17 the emitted packet conserves its exact modified energy for eight source-free cycles\n[PASS] 18 the radiation support advances on the exact finite causal ladder 3,5,...,19\n[PASS] 19 the squared-field centroid moves monotonically away from the closed source\n[PASS] 20 more than 99.8 percent of squared field amplitude leaves the radius-three source neighborhood\n[PASS] 21 source work and the driven field covary under all 48 cubic transformations\n[PASS] 22 simultaneous opposite currents cancel while a one-tick-separated pair radiates\nper_element: each source coefficient, incidence sign, and exact work numerator is checked\nper_site: one edge pulse creates and erases charges only on its two neighboring vertices\nper_mode: the residual field lies in curl/co-curl images with no longitudinal or harmonic component\nper_block: exact work, Gauss laws, reversal, cubic covariance, and dipole controls are checked\nlattice_wide: an L=20 sparse block conserves energy and carries the packet from support radius 3 through 19\nTOTAL: PASS=22 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T070302Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

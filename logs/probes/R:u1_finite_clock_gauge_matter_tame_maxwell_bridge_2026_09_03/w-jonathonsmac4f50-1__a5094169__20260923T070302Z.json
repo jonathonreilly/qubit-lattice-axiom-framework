@@ -1,0 +1,35 @@
+{
+ "task": "R:u1_finite_clock_gauge_matter_tame_maxwell_bridge_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "u1",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/u1_finite_clock_gauge_matter_tame_maxwell_bridge_2026_09_03.py",
+ "seed": 46982,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a5094169",
+ "started_utc": "20260923T070302Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=27 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d1a99bf32ad212eae9b9df5c065274f28fecd3e396cae45e636955cda3b50ba5",
+ "stdout_tail": "tame electric relative errors: 5.03587964e-02 1.27851692e-02 3.20863596e-03 8.02932461e-04\ndiagnostic L=8 clock-mode relative gap errors: 6.94580460e-02 1.68331356e-02 4.59881151e-03 1.58788685e-03\ndiagnostic L=8 fixed-g rotor gap=0.764916599742; clock-to-rotor relative errors=6.89102863e-02 1.62543985e-02 4.01287272e-03 1.00017569e-03; K=1024 angle second moment=2.35084163e-03\ndiagnostic L=16 clock-mode relative gap errors: 3.48413709e-02 9.35239660e-03 3.19127208e-03 1.66301815e-03\ndiagnostic L=16 fixed-g rotor gap=0.389730123464; clock-to-rotor relative errors=3.37256660e-02 8.20722692e-03 2.03898026e-03 5.08959693e-04; K=1024 angle second moment=4.61622385e-03\ndiagnostic L=32 clock-mode relative gap errors: 1.88568917e-02 6.38668596e-03 3.31910053e-03 2.55519183e-03\ndiagnostic L=32 fixed-g rotor gap=0.195583241400; clock-to-rotor relative errors=1.65942538e-02 4.09529019e-03 1.02063053e-03 2.54960151e-04; K=1024 angle second moment=9.20088033e-03\nper_element: exact finite Weyl links, cyclic unitaries, and tame cosine errors are checked\nper_site: modular Gauss generators, charged transport, and the no-wrap additive limit are checked\nper_mode: two transverse branches, infrared speed, cubic covariance, and reduced clock spectra are checked\nper_block: exact bond exchange and the complete K=3 matter-electric-magnetic face are checked\nlattice_wide: the 3D quadratic tame tangent is resolved; the exact clock law's thermodynamic Coulomb phase is not executed\nTOTAL: PASS=27 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T070302Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/u1_finite_clock_gauge_matter_tame_maxwell_bridge_2026_09_03.txt against the .txt beside this log"
+  ]
+ }
+}

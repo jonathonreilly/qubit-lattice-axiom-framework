@@ -1,0 +1,35 @@
+{
+ "task": "R:color_singlet_records_g2_factorization_site_local_locking_2026_07_06",
+ "type": "runner-reexecution",
+ "lane": "color",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/color_singlet_records_g2_factorization_site_local_locking_2026_07_06.py",
+ "seed": 45484,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "eca8c485",
+ "started_utc": "20260923T063804Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e9b88c5ba6cbd92d92b552047ddd1360b9f5436eedee01bd7615bcf4257f2907",
+ "stdout_tail": "[PASS] text_record_axiom_quotes_present :: quotes=3\n[PASS] text_g2_antecedent_present\n[PASS] text_g2_residual_present\n[PASS] text_depolarization_row_sentence_present\n[PASS] text_pauli_target_sentence_present\n[PASS] text_block02_r5_inherited_present\n[PASS] text_phase_free_boundary_and_disclaimer_present :: adjacent surface scoped by its own quoted boundary; not consumed for general record phase-freeness\n[PASS] t1_sym_block_site_marginals_distinct :: dA=1, dB=1\n[PASS] t1_trace_distance_positive\n[PASS] t2_theta_marginals_symbolic_phase_independent :: computed in the exact ring Q + Q e^{i theta} + Q e^{-i theta}; no e^{+-i theta} coefficient survives the partial trace\n[PASS] t2_compact_additive_phase_core_control :: finite control for the c*theta = c*(theta+2pi) => c = 0 argument; not a derivation of readout additivity or continuity\n[PASS] t3_adinv_consistency_uniform_traceless_zero\n[PASS] t3_closed_shell_fock_dimension\n[PASS] t3_closed_shell_one_body_gamma_identity\n[PASS] t3_closed_shell_normalized_marginal_i3_over_3\n[PASS] singular_gap_floating_rank_control (environment control only, not theorem evidence) :: rank=1, gap=1.000e+300\n[PASS] ast_self_scan_read_only_no_network_no_subprocess\n[PASS] DECLARATION_color_singlet_records_g2_factorization_site_local_locking_2026_07_06 :: bounded factorization runner; no audit verdicts applied\nTOTAL: PASS=18 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T063804Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

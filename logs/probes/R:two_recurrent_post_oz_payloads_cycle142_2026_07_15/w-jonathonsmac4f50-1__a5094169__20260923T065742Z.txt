@@ -1,0 +1,41 @@
+CONSTRUCTION
+PASS two translated sockets expose the identical five-parent context :: ((((-1, 0, 0), 'W3'), ((0, -1, 0), 'OZ'), ((0, 0, 1), 'R_C23'), ((0, 1, 0), 'GY'), ((1, 0, 0), 'GU')), (((-1, 0, 0), 'W3'), ((0, -1, 0), 'OZ'), ((0, 0, 1), 'R_C23'), ((0, 1, 0), 'GY'), ((1, 0, 0), 'GU')))
+PASS R_LB is the sole onsite role absent from the retained physical corpus :: ('R_LB',)
+PASS the payload consumes exactly one new canonical / 24 raw rows :: (24, 8360)
+PASS both continuation steps are literal retained unary rows :: ((((0, 0, 1), 'R_LB'),), (((0, 0, 1), 'R_C22'),))
+PASS the 8,360-row union is single-valued :: 
+PASS each branch is a three-record line and adjacent-period branches do not cross-contact :: ((((-4, 1, -1), (-4, 1, -2), (-4, 1, -3)), ((-8, 1, -1), (-8, 1, -2), (-8, 1, -3))), 4)
+
+EXACT FACTOR
+PASS all 139 writes reach one complete schedule-independent terminal :: (2240, 6245, 1, (), 139)
+PASS every co-enabled append pair commutes :: (6374, ())
+PASS both R_LB/R_C22/J1 lineages occur in the unique terminal :: 
+
+STATIC SCREEN AND CAUSAL FIREWALL
+PASS all 116 static wrong-value conditions carry causal contradictions :: (116, 116, 0)
+PASS all eight static side aliases carry causal contradictions :: (8, 8, 8, 0)
+PASS payload integration adds no core wrong-value fingerprint :: ()
+PASS factor conditions are invariant across core completion :: 
+PASS the factor has no nearest-neighbour contact with the retained core :: ()
+
+EXACT CORE PRODUCT
+PASS full asynchronous product state census :: 164989440
+PASS full asynchronous product edge census :: 1424870680
+
+COVARIANCE AND CORRUPTION
+PASS all 200,640 proper-cubic raw images preserve output :: []
+PASS all 24 orientations have the same exact factor graph :: Counter({(2240, 6245, 1, 0, 139): 24})
+PASS all 2,142 direct parent mutations suppress the intended stage :: (2142, ())
+PASS alternate typed fronts never recreate the intended J1 lineage :: (72, ())
+
+ACCOUNTING
+NEW_CANONICAL 1
+NEW_RAW 24
+UNION_RAW 8360
+FACTOR_OUTPUTS 139
+FACTOR_STATES 2240
+FACTOR_EDGES 6245
+PRODUCT_STATES 164989440
+PRODUCT_EDGES 1424870680
+PASS 20 FAIL 0
+RESULT TWO_RECURRENT_POST_OZ_PAYLOADS

@@ -1,0 +1,30 @@
+{
+ "task": "P:8672",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-repeated-formation-2026092",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8672",
+ "pr": 8672,
+ "branch": "codex/mobile-record-repeated-formation-20260923",
+ "git_sha": "dbe6240f",
+ "started_utc": "20260923T015745Z",
+ "elapsed_s": 4.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": []
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "5fe5f3703367fbd2c38951baedd3df83d720454cb612ae2dc728c1ddfde6f8a8",
+ "stdout_tail": "PR #8672: Physics: repeated record formation and generated field dynamics\nbranch codex/mobile-record-repeated-formation-20260923 (base codex/mobile-record-rotor-waves-20260922)\nrunners in the PR: 0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T015750Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "task": "P:8666",
+ "type": "pr-reexecution",
+ "lane": "holes-as-unrecorded-sites-20260922",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8666",
+ "pr": 8666,
+ "branch": "claude/holes-as-unrecorded-sites-20260922",
+ "git_sha": "dbe6240f",
+ "started_utc": "20260923T015711Z",
+ "elapsed_s": 5.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/holes_as_unrecorded_sites_unsoldered_order_blind_rules_constant_2026_09_22.py",
+    "returncode": 0,
+    "total": "PASS=10 FAIL=0"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "8eef2c220268cddfc40a9b2361a75abcbc6affee39dc4b6bc8c217b7b4be082b",
+ "stdout_tail": "PR #8666: docs(campaign): holes as unrecorded sites make the order visible\nbranch claude/holes-as-unrecorded-sites-20260922 (base main)\nrunners in the PR: 1\n== scripts/holes_as_unrecorded_sites_unsoldered_order_blind_rules_constant_2026_09_22.py: rc=0 PASS=10 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T015716Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

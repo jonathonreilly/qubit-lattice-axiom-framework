@@ -1,0 +1,4 @@
+PR #8637: docs(campaign): menus-and-born census and antipodal weight class
+branch claude/menus-and-born-witness-20260922 (base main)
+runners in the PR: 1
+== scripts/menus_and_born_stabilizer_degenerate_supports_and_antipodal_weight_class_2026_09_22.py: rc=0 PASS=42 FAIL=0

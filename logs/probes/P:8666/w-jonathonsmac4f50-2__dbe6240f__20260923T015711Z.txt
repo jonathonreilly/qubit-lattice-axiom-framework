@@ -1,0 +1,4 @@
+PR #8666: docs(campaign): holes as unrecorded sites make the order visible
+branch claude/holes-as-unrecorded-sites-20260922 (base main)
+runners in the PR: 1
+== scripts/holes_as_unrecorded_sites_unsoldered_order_blind_rules_constant_2026_09_22.py: rc=0 PASS=10 FAIL=0

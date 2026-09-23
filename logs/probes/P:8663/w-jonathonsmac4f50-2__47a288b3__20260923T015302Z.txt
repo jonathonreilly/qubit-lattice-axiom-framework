@@ -1,0 +1,4 @@
+PR #8663: docs(campaign): order-blind NN formation, unsoldered constancy
+branch claude/order-blind-formation-20260922 (base main)
+runners in the PR: 1
+== scripts/order_blind_nn_formation_independence_unsoldered_constancy_soldered_escape_2026_09_22.py: rc=0 PASS=27 FAIL=0

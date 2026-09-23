@@ -1,0 +1,4 @@
+PR #8643: docs(campaign): formation-unit joints, block-chain equality, hole dial
+branch claude/formation-unit-witness-20260922 (base main)
+runners in the PR: 1
+== scripts/formation_unit_sequential_vs_joint_covariant_sets_block_chain_equality_and_glued_unit_hole_dissolution_2026_09_22.py: rc=0 PASS=19 FAIL=0

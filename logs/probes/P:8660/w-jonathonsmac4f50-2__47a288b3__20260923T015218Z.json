@@ -1,0 +1,37 @@
+{
+ "task": "P:8660",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block86-defect",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 8660",
+ "pr": 8660,
+ "branch": "physics-loop/admissibility-induced-law-block86-defects-of-the-alternation-are-separable-sheets-lines-and-zero-modes-20260922",
+ "git_sha": "47a288b3",
+ "started_utc": "20260923T015218Z",
+ "elapsed_s": 27.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_defects_of_the_alternation_are_separable_walls_carry_sheets_lines_and_three_crossing_walls_bind_exact_zero_modes_2026_09_22.py",
+    "returncode": 0,
+    "total": "PASS=12 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "d4e9fbfbf0e3df1983b73d485f77cd211e61499297af5d5605a5faa959f8c988",
+ "stdout_tail": "PR #8660: physics-loop: admissibility induced-law block 86 - defects of the alternation are separable: walls carry sheets of lower mass, lines lower still, and three crossing walls bind exact zero modes\nbranch physics-loop/admissibility-induced-law-block86-defects-of-the-alternation-are-separable-sheets-lines-and-zero-modes-20260922 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_defects_of_the_alternation_are_separable_walls_carry_sheets_lines_and_three_crossing_walls_bind_exact_zero_modes_2026_09_22.py: rc=0 PASS=12 FAIL=0\n   mutation walls_break_separability: expected B observed B ok\n   mutation one_wall_binds_no_zero_mode: expected C observed C ok\n   mutation three_walls_bind_no_zero_modes: expected D observed D ok\n   mutation sheet_mass_is_the_bulk_mass: expected D observed D ok\n   mutation zero_modes_are_not_products: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T015245Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

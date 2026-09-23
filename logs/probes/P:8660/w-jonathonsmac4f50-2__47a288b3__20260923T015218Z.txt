@@ -1,0 +1,11 @@
+PR #8660: physics-loop: admissibility induced-law block 86 - defects of the alternation are separable: walls carry sheets of lower mass, lines lower still, and three crossing walls bind exact zero modes
+branch physics-loop/admissibility-induced-law-block86-defects-of-the-alternation-are-separable-sheets-lines-and-zero-modes-20260922 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_defects_of_the_alternation_are_separable_walls_carry_sheets_lines_and_three_crossing_walls_bind_exact_zero_modes_2026_09_22.py: rc=0 PASS=12 FAIL=0
+   mutation walls_break_separability: expected B observed B ok
+   mutation one_wall_binds_no_zero_mode: expected C observed C ok
+   mutation three_walls_bind_no_zero_modes: expected D observed D ok
+   mutation sheet_mass_is_the_bulk_mass: expected D observed D ok
+   mutation zero_modes_are_not_products: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

@@ -1,0 +1,51 @@
+{
+  "source_sha256": "c77d0f2a9185bfccef63cc155569a7bb92c4003a28ffbed0a8020ebdf4b0e51e",
+  "eta": 320,
+  "t": 0.7,
+  "delta": 1.3,
+  "kappa": 0.7,
+  "instrument_order": [
+    "resolved",
+    "coherent"
+  ],
+  "field_order": [
+    "integer_flux_0",
+    "plus_adjacent_flux",
+    "minus_adjacent_flux"
+  ],
+  "rows": [
+    {
+      "grid": 512,
+      "survivals": [
+        [
+          0.25805288848054214,
+          0.2580528884805425,
+          0.2580528884805421
+        ],
+        [
+          0.2580528884805412,
+          0.25803672210370177,
+          0.25806905485738035
+        ]
+      ]
+    },
+    {
+      "grid": 1024,
+      "survivals": [
+        [
+          0.25805288848054436,
+          0.258052888480544,
+          0.25805288848054425
+        ],
+        [
+          0.25805288848054314,
+          0.25803672210370315,
+          0.2580690548573828
+        ]
+      ]
+    }
+  ],
+  "max_grid_difference": 2.4424906541753444e-15,
+  "declared_resolution_tolerance": 1e-08,
+  "scope": "Numerical quadrature corroboration; analytic phase integration is proved separately."
+}

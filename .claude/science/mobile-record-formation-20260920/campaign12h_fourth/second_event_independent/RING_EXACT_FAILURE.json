@@ -1,0 +1,10 @@
+{
+  "failed_source_sha256": "08de878db01fb961a9eb16213df9f0bd23a03705f21310112ccf057e2df42572",
+  "failed_source_preserved": "ring_exact.py",
+  "cause": "Structural SymPy matrix equality did not simplify canceling Laurent expressions; it is not a false operator identity.",
+  "unsimplified_product": "Matrix([[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, z*(-1 + 1/z) + z - 1, 0, 0, -1 + (z - 1)/z + 1/z, 0], [0, z*(1 - 1/z) - z + 1, 0, 0, 1 + (1 - z)/z - 1/z, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]])",
+  "simplified_product": "Matrix([[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]])",
+  "removed": "assert Q*C == sp.zeros(6) and C*Q == sp.zeros(6)",
+  "inserted": "assert (Q*C).applyfunc(sp.simplify) == sp.zeros(6) and (C*Q).applyfunc(sp.simplify) == sp.zeros(6)",
+  "repaired_source_sha256": "6313e03b906d3e74e2e1915cc4f667f2fd2df4f7ed21014d65d43f13ee8c0d29"
+}

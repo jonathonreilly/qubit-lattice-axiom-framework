@@ -1,0 +1,539 @@
+{
+  "fiber_factorization_and_weights": [
+    {
+      "L": 3,
+      "theta": 0.0,
+      "P_dimension": 15,
+      "mode_orthogonality_error": 6.661338147750939e-16,
+      "full_eigenvector_residual": 6.713178136967714e-16,
+      "resolved_weight_error": 1.1102230246251565e-16,
+      "coherent_weight_error": 8.326672684688674e-17,
+      "resolved_flat_weight": 0.0,
+      "coherent_flat_weight": 0.0,
+      "spectrum_min": -4.0,
+      "spectrum_max": -0.0437047985323884
+    },
+    {
+      "L": 3,
+      "theta": 0.37,
+      "P_dimension": 15,
+      "mode_orthogonality_error": 7.601594345738051e-16,
+      "full_eigenvector_residual": 1.6439175459749096e-15,
+      "resolved_weight_error": 1.1102230246251565e-16,
+      "coherent_weight_error": 1.5265566588595902e-16,
+      "resolved_flat_weight": 0.0,
+      "coherent_flat_weight": 0.0,
+      "spectrum_min": -3.994526498425249,
+      "spectrum_max": -0.018315836638361782
+    },
+    {
+      "L": 3,
+      "theta": 1.19,
+      "P_dimension": 15,
+      "mode_orthogonality_error": 6.661338147750939e-16,
+      "full_eigenvector_residual": 9.104505742017336e-16,
+      "resolved_weight_error": 8.326672684688674e-17,
+      "coherent_weight_error": 1.249000902703301e-16,
+      "resolved_flat_weight": 0.0,
+      "coherent_flat_weight": 0.0,
+      "spectrum_min": -3.967371884100782,
+      "spectrum_max": -0.000815646129455394
+    },
+    {
+      "L": 4,
+      "theta": 0.0,
+      "P_dimension": 36,
+      "mode_orthogonality_error": 1.1809440890244351e-15,
+      "full_eigenvector_residual": 1.7856424880401326e-15,
+      "resolved_weight_error": 6.591949208711867e-17,
+      "coherent_weight_error": 8.673617379884035e-17,
+      "resolved_flat_weight": 0.5000000000000002,
+      "coherent_flat_weight": 0.5000000000000001,
+      "spectrum_min": -6.82842712474619,
+      "spectrum_max": -1.1715728752538097
+    },
+    {
+      "L": 4,
+      "theta": 0.37,
+      "P_dimension": 36,
+      "mode_orthogonality_error": 1.1102230246251565e-15,
+      "full_eigenvector_residual": 1.0057327710640516e-15,
+      "resolved_weight_error": 4.85722573273506e-17,
+      "coherent_weight_error": 7.632783294297951e-17,
+      "resolved_flat_weight": 0.5000000000000001,
+      "coherent_flat_weight": 0.4999999999999999,
+      "spectrum_min": -6.8230508888813475,
+      "spectrum_max": -1.1769491111186527
+    },
+    {
+      "L": 4,
+      "theta": 1.19,
+      "P_dimension": 36,
+      "mode_orthogonality_error": 8.92268641062335e-16,
+      "full_eigenvector_residual": 1.9900113818512805e-15,
+      "resolved_weight_error": 7.28583859910259e-17,
+      "coherent_weight_error": 1.3183898417423734e-16,
+      "resolved_flat_weight": 0.5000000000000002,
+      "coherent_flat_weight": 0.5,
+      "spectrum_min": -6.822732669067067,
+      "spectrum_max": -1.1772673309329322
+    },
+    {
+      "L": 5,
+      "theta": 0.0,
+      "P_dimension": 70,
+      "mode_orthogonality_error": 1.3947224246821676e-15,
+      "full_eigenvector_residual": 1.2670655869532562e-15,
+      "resolved_weight_error": 5.0306980803327406e-17,
+      "coherent_weight_error": 6.245004513516506e-17,
+      "resolved_flat_weight": 0.0,
+      "coherent_flat_weight": 0.0,
+      "spectrum_min": -9.23606797749979,
+      "spectrum_max": -2.7769594807890456
+    },
+    {
+      "L": 5,
+      "theta": 0.37,
+      "P_dimension": 70,
+      "mode_orthogonality_error": 1.1725579077210008e-15,
+      "full_eigenvector_residual": 1.8841109504205303e-15,
+      "resolved_weight_error": 2.0816681711721685e-17,
+      "coherent_weight_error": 4.5102810375396984e-17,
+      "resolved_flat_weight": 0.0,
+      "coherent_flat_weight": 0.0,
+      "spectrum_min": -9.23154844106146,
+      "spectrum_max": -2.766135219836763
+    },
+    {
+      "L": 5,
+      "theta": 1.19,
+      "P_dimension": 70,
+      "mode_orthogonality_error": 8.893202438574793e-16,
+      "full_eigenvector_residual": 1.7235296186091125e-15,
+      "resolved_weight_error": 3.122502256758253e-17,
+      "coherent_weight_error": 4.163336342344337e-17,
+      "resolved_flat_weight": 0.0,
+      "coherent_flat_weight": 0.0,
+      "spectrum_min": -9.235921348471994,
+      "spectrum_max": -2.7743441319127404
+    },
+    {
+      "L": 6,
+      "theta": 0.0,
+      "P_dimension": 120,
+      "mode_orthogonality_error": 1.9973629223140647e-15,
+      "full_eigenvector_residual": 2.1592339403993773e-15,
+      "resolved_weight_error": 5.4643789493269423e-17,
+      "coherent_weight_error": 9.71445146547012e-17,
+      "resolved_flat_weight": 0.33333333333333326,
+      "coherent_flat_weight": 0.33333333333333315,
+      "spectrum_min": -11.464101615137753,
+      "spectrum_max": -4.535898384862245
+    },
+    {
+      "L": 6,
+      "theta": 0.37,
+      "P_dimension": 120,
+      "mode_orthogonality_error": 1.697244142727672e-15,
+      "full_eigenvector_residual": 1.5700924586837751e-15,
+      "resolved_weight_error": 4.85722573273506e-17,
+      "coherent_weight_error": 9.020562075079397e-17,
+      "resolved_flat_weight": 0.33333333333333326,
+      "coherent_flat_weight": 0.33333333333333315,
+      "spectrum_min": -11.460397310589396,
+      "spectrum_max": -4.539602689410604
+    },
+    {
+      "L": 6,
+      "theta": 1.19,
+      "P_dimension": 120,
+      "mode_orthogonality_error": 1.8475296212199075e-15,
+      "full_eigenvector_residual": 2.4450125863434694e-15,
+      "resolved_weight_error": 6.591949208711867e-17,
+      "coherent_weight_error": 6.071532165918825e-17,
+      "resolved_flat_weight": 0.33333333333333326,
+      "coherent_flat_weight": 0.3333333333333332,
+      "spectrum_min": -11.463549740505721,
+      "spectrum_max": -4.536450259494279
+    },
+    {
+      "L": 7,
+      "theta": 0.0,
+      "P_dimension": 189,
+      "mode_orthogonality_error": 2.7755575615628914e-15,
+      "full_eigenvector_residual": 1.5700924586837751e-15,
+      "resolved_weight_error": 5.0523821237824507e-17,
+      "coherent_weight_error": 1.0234868508263162e-16,
+      "resolved_flat_weight": 0.0,
+      "coherent_flat_weight": 0.0,
+      "spectrum_min": -13.603875471609676,
+      "spectrum_max": -6.400604429518728
+    },
+    {
+      "L": 7,
+      "theta": 0.37,
+      "P_dimension": 189,
+      "mode_orthogonality_error": 2.2428815684279213e-15,
+      "full_eigenvector_residual": 1.7772239894833365e-15,
+      "resolved_weight_error": 5.095750210681871e-17,
+      "coherent_weight_error": 9.194034422677078e-17,
+      "resolved_flat_weight": 0.0,
+      "coherent_flat_weight": 0.0,
+      "spectrum_min": -13.600830403289413,
+      "spectrum_max": -6.3962626599303505
+    },
+    {
+      "L": 7,
+      "theta": 1.19,
+      "P_dimension": 189,
+      "mode_orthogonality_error": 2.373899198877167e-15,
+      "full_eigenvector_residual": 1.831026719408895e-15,
+      "resolved_weight_error": 5.117434254131581e-17,
+      "coherent_weight_error": 9.6710833785707e-17,
+      "resolved_flat_weight": 0.0,
+      "coherent_flat_weight": 0.0,
+      "spectrum_min": -13.601973616046145,
+      "spectrum_max": -6.396668654848979
+    }
+  ],
+  "L4_exact_charge_characteristic_polynomial": "x**2*(x**4*z - 8*x**2*z - 4*z**2 + 8*z - 4)/z",
+  "physical_formation_moments": [
+    {
+      "L": 3,
+      "field": "one_flux",
+      "coherent": false,
+      "centered_moments_0_to_6": [
+        "1",
+        "0",
+        "2",
+        "0",
+        "6",
+        "0",
+        "20"
+      ]
+    },
+    {
+      "L": 3,
+      "field": "one_flux",
+      "coherent": true,
+      "centered_moments_0_to_6": [
+        "1",
+        "0",
+        "2",
+        "0",
+        "6",
+        "0",
+        "20"
+      ]
+    },
+    {
+      "L": 3,
+      "field": "plus_neighbor_flux",
+      "coherent": false,
+      "centered_moments_0_to_6": [
+        "1",
+        "0",
+        "2",
+        "0",
+        "6",
+        "0",
+        "20"
+      ]
+    },
+    {
+      "L": 3,
+      "field": "plus_neighbor_flux",
+      "coherent": true,
+      "centered_moments_0_to_6": [
+        "1",
+        "0",
+        "2",
+        "-1/2",
+        "6",
+        "-5/2",
+        "20"
+      ]
+    },
+    {
+      "L": 3,
+      "field": "minus_neighbor_flux",
+      "coherent": false,
+      "centered_moments_0_to_6": [
+        "1",
+        "0",
+        "2",
+        "0",
+        "6",
+        "0",
+        "20"
+      ]
+    },
+    {
+      "L": 3,
+      "field": "minus_neighbor_flux",
+      "coherent": true,
+      "centered_moments_0_to_6": [
+        "1",
+        "0",
+        "2",
+        "1/2",
+        "6",
+        "5/2",
+        "20"
+      ]
+    },
+    {
+      "L": 4,
+      "field": "one_flux",
+      "coherent": false,
+      "centered_moments_0_to_6": [
+        "1",
+        "0",
+        "2",
+        "0",
+        "12",
+        "0",
+        "80"
+      ]
+    },
+    {
+      "L": 4,
+      "field": "one_flux",
+      "coherent": true,
+      "centered_moments_0_to_6": [
+        "1",
+        "0",
+        "2",
+        "0",
+        "12",
+        "0",
+        "80"
+      ]
+    },
+    {
+      "L": 4,
+      "field": "plus_neighbor_flux",
+      "coherent": false,
+      "centered_moments_0_to_6": [
+        "1",
+        "0",
+        "2",
+        "0",
+        "12",
+        "0",
+        "80"
+      ]
+    },
+    {
+      "L": 4,
+      "field": "plus_neighbor_flux",
+      "coherent": true,
+      "centered_moments_0_to_6": [
+        "1",
+        "0",
+        "2",
+        "0",
+        "13",
+        "0",
+        "92"
+      ]
+    },
+    {
+      "L": 4,
+      "field": "minus_neighbor_flux",
+      "coherent": false,
+      "centered_moments_0_to_6": [
+        "1",
+        "0",
+        "2",
+        "0",
+        "12",
+        "0",
+        "80"
+      ]
+    },
+    {
+      "L": 4,
+      "field": "minus_neighbor_flux",
+      "coherent": true,
+      "centered_moments_0_to_6": [
+        "1",
+        "0",
+        "2",
+        "0",
+        "11",
+        "0",
+        "68"
+      ]
+    },
+    {
+      "L": 5,
+      "field": "one_flux",
+      "coherent": false,
+      "centered_moments_0_to_6": [
+        "1",
+        "0",
+        "2",
+        "0",
+        "12",
+        "0",
+        "100"
+      ]
+    },
+    {
+      "L": 5,
+      "field": "one_flux",
+      "coherent": true,
+      "centered_moments_0_to_6": [
+        "1",
+        "0",
+        "2",
+        "0",
+        "12",
+        "0",
+        "100"
+      ]
+    },
+    {
+      "L": 5,
+      "field": "plus_neighbor_flux",
+      "coherent": false,
+      "centered_moments_0_to_6": [
+        "1",
+        "0",
+        "2",
+        "0",
+        "12",
+        "0",
+        "100"
+      ]
+    },
+    {
+      "L": 5,
+      "field": "plus_neighbor_flux",
+      "coherent": true,
+      "centered_moments_0_to_6": [
+        "1",
+        "0",
+        "2",
+        "0",
+        "12",
+        "-3/2",
+        "100"
+      ]
+    },
+    {
+      "L": 5,
+      "field": "minus_neighbor_flux",
+      "coherent": false,
+      "centered_moments_0_to_6": [
+        "1",
+        "0",
+        "2",
+        "0",
+        "12",
+        "0",
+        "100"
+      ]
+    },
+    {
+      "L": 5,
+      "field": "minus_neighbor_flux",
+      "coherent": true,
+      "centered_moments_0_to_6": [
+        "1",
+        "0",
+        "2",
+        "0",
+        "12",
+        "3/2",
+        "100"
+      ]
+    },
+    {
+      "L": 6,
+      "field": "one_flux",
+      "coherent": false,
+      "centered_moments_0_to_6": [
+        "1",
+        "0",
+        "2",
+        "0",
+        "12",
+        "0",
+        "100"
+      ]
+    },
+    {
+      "L": 6,
+      "field": "one_flux",
+      "coherent": true,
+      "centered_moments_0_to_6": [
+        "1",
+        "0",
+        "2",
+        "0",
+        "12",
+        "0",
+        "100"
+      ]
+    },
+    {
+      "L": 6,
+      "field": "plus_neighbor_flux",
+      "coherent": false,
+      "centered_moments_0_to_6": [
+        "1",
+        "0",
+        "2",
+        "0",
+        "12",
+        "0",
+        "100"
+      ]
+    },
+    {
+      "L": 6,
+      "field": "plus_neighbor_flux",
+      "coherent": true,
+      "centered_moments_0_to_6": [
+        "1",
+        "0",
+        "2",
+        "0",
+        "12",
+        "0",
+        "102"
+      ]
+    },
+    {
+      "L": 6,
+      "field": "minus_neighbor_flux",
+      "coherent": false,
+      "centered_moments_0_to_6": [
+        "1",
+        "0",
+        "2",
+        "0",
+        "12",
+        "0",
+        "100"
+      ]
+    },
+    {
+      "L": 6,
+      "field": "minus_neighbor_flux",
+      "coherent": true,
+      "centered_moments_0_to_6": [
+        "1",
+        "0",
+        "2",
+        "0",
+        "12",
+        "0",
+        "98"
+      ]
+    }
+  ],
+  "scope": "Independent legal-hop reconstruction, explicit spin/Slater eigenvectors, and exact untruncated physical-field moments. No fourth-campaign author source read."
+}

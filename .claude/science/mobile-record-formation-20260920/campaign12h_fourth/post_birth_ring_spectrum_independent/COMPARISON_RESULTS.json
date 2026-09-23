@@ -1,0 +1,488 @@
+{
+  "status": "All selective comparisons passed; no author builder was imported or executed.",
+  "pre_seal_sha256": "cffc3495e440045bd73077e8be1a5e231ff39a07e53889a22336c204f60f5c37",
+  "pre_source_bindings_authenticated": 6,
+  "pre_artifact_bindings_authenticated": 29,
+  "author_seal_sha256": "c2e0e2adcff2dee95c682da2789c19f3113445e7f3e53f20d95936ab25ec07b9",
+  "author_bindings_authenticated": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/post_birth_ring_spectrum_author/EXACT_FAST_SPECTRUM_AND_FORMATION_OUTPUTS_ON_RINGS.md",
+      "bytes": 14532,
+      "sha256": "b9c30d8418cb4d4c577ea193dee8482d2d0c92125823593feb2a7c01b8310bf5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/post_birth_ring_spectrum_author/RING_SPECTRUM_RESULTS.json",
+      "bytes": 43007,
+      "sha256": "bf7f114668dc5e27dc015f9c3c2af7e48d9925652e890a02431c31f31cde6b77"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/post_birth_ring_spectrum_author/RUN_RECEIPT.json",
+      "bytes": 470,
+      "sha256": "54d8545c5249fa3974b20ef5e303acdf8dbaf7113eb5029208d248138563c3a2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/post_birth_ring_spectrum_author/initial_probe/RING_SPECTRUM_PROBE_RESULTS.json",
+      "bytes": 9601,
+      "sha256": "5822e60c5cd6004f1990f57171e707e593c503df69641ef9eff5269ccca6450c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/post_birth_ring_spectrum_author/initial_probe/RUN_RECEIPT.json",
+      "bytes": 485,
+      "sha256": "ed96c535af9e76b1e0cf90db8019cc7b82bbb4a03c643df6d624b493ea5d2d6e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/post_birth_ring_spectrum_author/initial_probe/ring_spectrum_probe.py",
+      "bytes": 7683,
+      "sha256": "3fd68177b2faa8dbd5dbfa03d7a0629327df69e050c80bdc57f19d3f590bfb9d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/post_birth_ring_spectrum_author/initial_probe/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/post_birth_ring_spectrum_author/initial_probe/stdout.log",
+      "bytes": 9601,
+      "sha256": "5822e60c5cd6004f1990f57171e707e593c503df69641ef9eff5269ccca6450c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/post_birth_ring_spectrum_author/ring_spectrum_check.py",
+      "bytes": 10691,
+      "sha256": "79b9ab1095d58f9e4b56a5ca61f6106cbe65956205ba8ca8bc9e252d0fdbe9cf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/post_birth_ring_spectrum_author/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/post_birth_ring_spectrum_author/stdout.log",
+      "bytes": 43007,
+      "sha256": "bf7f114668dc5e27dc015f9c3c2af7e48d9925652e890a02431c31f31cde6b77"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "bytes": 17730,
+      "sha256": "002119d5a3f9bec171c3678cb15afdb91f7a763311ca38e6e4458ce10865572e"
+    }
+  ],
+  "author_saved_execution_checks": [
+    {
+      "subdirectory": "",
+      "source_sha256": "79b9ab1095d58f9e4b56a5ca61f6106cbe65956205ba8ca8bc9e252d0fdbe9cf",
+      "rows_authenticated": 6,
+      "author_returncode": 0,
+      "reexecuted": false
+    },
+    {
+      "subdirectory": "initial_probe",
+      "source_sha256": "3fd68177b2faa8dbd5dbfa03d7a0629327df69e050c80bdc57f19d3f590bfb9d",
+      "rows_authenticated": 6,
+      "author_returncode": 0,
+      "reexecuted": false
+    }
+  ],
+  "new_independent_ground_gap_and_crossing_controls": [
+    {
+      "L": 3,
+      "theta": -1.0471975511965976,
+      "dimension": 15,
+      "lowest_dimension": 2,
+      "energy": -3.9562952014676087,
+      "energy_formula_error": 3.1086244689504383e-15,
+      "resolved_full_lowest_weight": 0.13333333333333292,
+      "resolved_formula": 0.1333333333333333,
+      "coherent_full_lowest_weight": 0.18726779962499646,
+      "coherent_formula": 0.18726779962499646
+    },
+    {
+      "L": 3,
+      "theta": 0.0,
+      "dimension": 15,
+      "lowest_dimension": 1,
+      "energy": -4.000000000000002,
+      "energy_formula_error": 1.7763568394002505e-15,
+      "resolved_full_lowest_weight": 0.066666666666667,
+      "resolved_formula": 0.06666666666666665,
+      "coherent_full_lowest_weight": 0.13333333333332956,
+      "coherent_formula": 0.1333333333333333,
+      "gap": 0.17290908471479893,
+      "gap_formula": 0.1729090847147983,
+      "first_excited_dimension": 2,
+      "curvature_formula": 0.08000000000000002
+    },
+    {
+      "L": 3,
+      "theta": 1.0161975511965977,
+      "dimension": 15,
+      "lowest_dimension": 1,
+      "energy": -3.9588356900433976,
+      "energy_formula_error": 4.440892098500626e-16,
+      "resolved_full_lowest_weight": 0.06666666666666907,
+      "resolved_formula": 0.06666666666666665,
+      "coherent_full_lowest_weight": 0.12790124201958503,
+      "coherent_formula": 0.12790124201959302
+    },
+    {
+      "L": 3,
+      "theta": 1.0471975511965976,
+      "dimension": 15,
+      "lowest_dimension": 2,
+      "energy": -3.9562952014676087,
+      "energy_formula_error": 3.1086244689504383e-15,
+      "resolved_full_lowest_weight": 0.13333333333333292,
+      "resolved_formula": 0.1333333333333333,
+      "coherent_full_lowest_weight": 0.18726779962499646,
+      "coherent_formula": 0.18726779962499646
+    },
+    {
+      "L": 3,
+      "theta": 1.0781975511965975,
+      "dimension": 15,
+      "lowest_dimension": 1,
+      "energy": -3.958835690043397,
+      "energy_formula_error": 0.0,
+      "resolved_full_lowest_weight": 0.06666666666666929,
+      "resolved_formula": 0.06666666666666665,
+      "coherent_full_lowest_weight": 0.05887652115350051,
+      "coherent_formula": 0.05887652115350151
+    },
+    {
+      "L": 3,
+      "theta": 3.141592653589793,
+      "dimension": 15,
+      "lowest_dimension": 2,
+      "energy": -3.9562952014676087,
+      "energy_formula_error": 2.6645352591003757e-15,
+      "resolved_full_lowest_weight": 0.133333333333333,
+      "resolved_formula": 0.1333333333333333,
+      "coherent_full_lowest_weight": 0.02546440075000739,
+      "coherent_formula": 0.02546440075000701
+    },
+    {
+      "L": 3,
+      "theta": 0.27,
+      "dimension": 15,
+      "lowest_dimension": 1,
+      "energy": -3.9970847085191297,
+      "energy_formula_error": 4.440892098500626e-16,
+      "resolved_full_lowest_weight": 0.06666666666666754,
+      "resolved_formula": 0.06666666666666665,
+      "coherent_full_lowest_weight": 0.1329449111000287,
+      "coherent_formula": 0.1329449111000311
+    },
+    {
+      "L": 4,
+      "theta": -0.7853981633974483,
+      "dimension": 36,
+      "lowest_dimension": 2,
+      "energy": -6.804229538599911,
+      "energy_formula_error": 8.881784197001252e-16,
+      "resolved_full_lowest_weight": 0.04166666666666653,
+      "resolved_formula": 0.04166666666666666,
+      "coherent_full_lowest_weight": 0.06718218482065748,
+      "coherent_formula": 0.0671821848206581
+    },
+    {
+      "L": 4,
+      "theta": 0.0,
+      "dimension": 36,
+      "lowest_dimension": 1,
+      "energy": -6.828427124746191,
+      "energy_formula_error": 8.881784197001252e-16,
+      "resolved_full_lowest_weight": 0.020833333333333242,
+      "resolved_formula": 0.02083333333333333,
+      "coherent_full_lowest_weight": 0.04166666666666526,
+      "coherent_formula": 0.04166666666666666,
+      "gap": 0.09637631717731399,
+      "gap_formula": 0.09637631717731274,
+      "first_excited_dimension": 2,
+      "curvature_formula": 0.07856742013183862
+    },
+    {
+      "L": 4,
+      "theta": 0.7543981633974483,
+      "dimension": 36,
+      "lowest_dimension": 1,
+      "energy": -6.8060995512719,
+      "energy_formula_error": 4.440892098500626e-15,
+      "resolved_full_lowest_weight": 0.020833333333336968,
+      "resolved_formula": 0.02083333333333333,
+      "coherent_full_lowest_weight": 0.041011430685667885,
+      "coherent_formula": 0.041011430685668655
+    },
+    {
+      "L": 4,
+      "theta": 0.7853981633974483,
+      "dimension": 36,
+      "lowest_dimension": 2,
+      "energy": -6.804229538599911,
+      "energy_formula_error": 8.881784197001252e-16,
+      "resolved_full_lowest_weight": 0.04166666666666653,
+      "resolved_formula": 0.04166666666666666,
+      "coherent_full_lowest_weight": 0.06718218482065748,
+      "coherent_formula": 0.06718218482065806
+    },
+    {
+      "L": 4,
+      "theta": 0.8163981633974483,
+      "dimension": 36,
+      "lowest_dimension": 1,
+      "energy": -6.8060995512719025,
+      "energy_formula_error": 1.7763568394002505e-15,
+      "resolved_full_lowest_weight": 0.020833333333333932,
+      "resolved_formula": 0.02083333333333333,
+      "coherent_full_lowest_weight": 0.026017170234438183,
+      "coherent_formula": 0.02601717023445737
+    },
+    {
+      "L": 4,
+      "theta": 2.356194490192345,
+      "dimension": 36,
+      "lowest_dimension": 2,
+      "energy": -6.804229538599905,
+      "energy_formula_error": 6.217248937900877e-15,
+      "resolved_full_lowest_weight": 0.041666666666667004,
+      "resolved_formula": 0.04166666666666666,
+      "coherent_full_lowest_weight": 0.016151148512674837,
+      "coherent_formula": 0.016151148512675222
+    },
+    {
+      "L": 4,
+      "theta": 0.27,
+      "dimension": 36,
+      "lowest_dimension": 1,
+      "energy": -6.825563825513057,
+      "energy_formula_error": 8.881784197001252e-16,
+      "resolved_full_lowest_weight": 0.020833333333333467,
+      "resolved_formula": 0.02083333333333333,
+      "coherent_full_lowest_weight": 0.04158234860441332,
+      "coherent_formula": 0.041582348604416536
+    },
+    {
+      "L": 6,
+      "theta": -0.5235987755982988,
+      "dimension": 120,
+      "lowest_dimension": 2,
+      "energy": -11.456684707670462,
+      "energy_formula_error": 5.329070518200751e-15,
+      "resolved_full_lowest_weight": 0.0069444444444439245,
+      "resolved_formula": 0.006944444444444443,
+      "coherent_full_lowest_weight": 0.01250071628605011,
+      "coherent_formula": 0.012500716286050454
+    },
+    {
+      "L": 6,
+      "theta": 0.0,
+      "dimension": 120,
+      "lowest_dimension": 1,
+      "energy": -11.46410161513776,
+      "energy_formula_error": 5.329070518200751e-15,
+      "resolved_full_lowest_weight": 0.0034722222222216006,
+      "resolved_formula": 0.0034722222222222216,
+      "coherent_full_lowest_weight": 0.006944444444442998,
+      "coherent_formula": 0.006944444444444443,
+      "gap": 0.02963586953271502,
+      "gap_formula": 0.02963586953271085,
+      "first_excited_dimension": 2,
+      "curvature_formula": 0.05412658773652742
+    },
+    {
+      "L": 6,
+      "theta": 0.4925987755982988,
+      "dimension": 120,
+      "lowest_dimension": 1,
+      "energy": -11.457536685321875,
+      "energy_formula_error": 0.0,
+      "resolved_full_lowest_weight": 0.003472222222221729,
+      "resolved_formula": 0.0034722222222222216,
+      "coherent_full_lowest_weight": 0.0069181481078384515,
+      "coherent_formula": 0.006918148107839451
+    },
+    {
+      "L": 6,
+      "theta": 0.5235987755982988,
+      "dimension": 120,
+      "lowest_dimension": 2,
+      "energy": -11.456684707670462,
+      "energy_formula_error": 5.329070518200751e-15,
+      "resolved_full_lowest_weight": 0.0069444444444439245,
+      "resolved_formula": 0.006944444444444443,
+      "coherent_full_lowest_weight": 0.01250071628605011,
+      "coherent_formula": 0.012500716286050451
+    },
+    {
+      "L": 6,
+      "theta": 0.5545987755982988,
+      "dimension": 120,
+      "lowest_dimension": 1,
+      "energy": -11.457536685321873,
+      "energy_formula_error": 1.7763568394002505e-15,
+      "resolved_full_lowest_weight": 0.0034722222222243215,
+      "resolved_formula": 0.0034722222222222216,
+      "coherent_full_lowest_weight": 0.005564565001373001,
+      "coherent_formula": 0.005564565001371697
+    },
+    {
+      "L": 6,
+      "theta": 1.5707963267948966,
+      "dimension": 120,
+      "lowest_dimension": 2,
+      "energy": -11.456684707670464,
+      "energy_formula_error": 3.552713678800501e-15,
+      "resolved_full_lowest_weight": 0.006944444444444309,
+      "resolved_formula": 0.006944444444444443,
+      "coherent_full_lowest_weight": 0.006944444444444359,
+      "coherent_formula": 0.006944444444444442
+    },
+    {
+      "L": 6,
+      "theta": 0.27,
+      "dimension": 120,
+      "lowest_dimension": 1,
+      "energy": -11.462128888280361,
+      "energy_formula_error": 5.329070518200751e-15,
+      "resolved_full_lowest_weight": 0.0034722222222221323,
+      "resolved_formula": 0.0034722222222222216,
+      "coherent_full_lowest_weight": 0.006936537291126611,
+      "coherent_formula": 0.006936537291125792
+    },
+    {
+      "L": 9,
+      "theta": -0.3490658503988659,
+      "dimension": 396,
+      "lowest_dimension": 2,
+      "energy": -17.75687810151404,
+      "energy_formula_error": 3.552713678800501e-15,
+      "resolved_full_lowest_weight": 0.0010503055303299163,
+      "resolved_formula": 0.0010503055303300649,
+      "coherent_full_lowest_weight": 0.001997290895524433,
+      "coherent_formula": 0.0019972908955247287
+    },
+    {
+      "L": 9,
+      "theta": 0.0,
+      "dimension": 396,
+      "lowest_dimension": 1,
+      "energy": -17.758770483143643,
+      "energy_formula_error": 7.105427357601002e-15,
+      "resolved_full_lowest_weight": 0.000525152765164627,
+      "resolved_formula": 0.0005251527651650324,
+      "coherent_full_lowest_weight": 0.0010503055303289122,
+      "coherent_formula": 0.0010503055303300649,
+      "gap": 0.007567621050508677,
+      "gap_formula": 0.007567621050499378,
+      "first_excited_dimension": 2,
+      "curvature_formula": 0.03106421886895565
+    },
+    {
+      "L": 9,
+      "theta": 0.3180658503988659,
+      "dimension": 396,
+      "lowest_dimension": 1,
+      "energy": -17.757199273020074,
+      "energy_formula_error": 0.0,
+      "resolved_full_lowest_weight": 0.0005251527651654522,
+      "resolved_formula": 0.0005251527651650324,
+      "coherent_full_lowest_weight": 0.001049427633807233,
+      "coherent_formula": 0.0010494276338064966
+    },
+    {
+      "L": 9,
+      "theta": 0.3490658503988659,
+      "dimension": 396,
+      "lowest_dimension": 2,
+      "energy": -17.75687810151404,
+      "energy_formula_error": 3.552713678800501e-15,
+      "resolved_full_lowest_weight": 0.0010503055303299163,
+      "resolved_formula": 0.0010503055303300649,
+      "coherent_full_lowest_weight": 0.001997290895524433,
+      "coherent_formula": 0.0019972908955247287
+    },
+    {
+      "L": 9,
+      "theta": 0.38006585039886587,
+      "dimension": 396,
+      "lowest_dimension": 1,
+      "energy": -17.757199273020074,
+      "energy_formula_error": 0.0,
+      "resolved_full_lowest_weight": 0.000525152765164018,
+      "resolved_formula": 0.0005251527651650324,
+      "coherent_full_lowest_weight": 0.0009462809806310506,
+      "coherent_formula": 0.0009462809806333186
+    },
+    {
+      "L": 9,
+      "theta": 1.0471975511965976,
+      "dimension": 396,
+      "lowest_dimension": 2,
+      "energy": -17.756878101514044,
+      "energy_formula_error": 7.105427357601002e-15,
+      "resolved_full_lowest_weight": 0.00105030553033011,
+      "resolved_formula": 0.0010503055303300649,
+      "coherent_full_lowest_weight": 0.00155418591858012,
+      "coherent_formula": 0.0015541859185801378
+    },
+    {
+      "L": 9,
+      "theta": 0.27,
+      "dimension": 396,
+      "lowest_dimension": 1,
+      "energy": -17.7576382492132,
+      "energy_formula_error": 0.0,
+      "resolved_full_lowest_weight": 0.0005251527651650611,
+      "resolved_formula": 0.0005251527651650324,
+      "coherent_full_lowest_weight": 0.0010496728700188575,
+      "coherent_formula": 0.0010496728700188016
+    }
+  ],
+  "normalizable_uniform_angle_controls": [
+    {
+      "L": 3,
+      "cyclic_angle_sums": [
+        -1.1102230246251565e-15,
+        -6.661338147750939e-16,
+        -6.661338147750939e-16
+      ]
+    },
+    {
+      "L": 4,
+      "cyclic_angle_sums": [
+        -4.544975507059235e-16,
+        -3.469446951953614e-16,
+        -3.3306690738754696e-16
+      ]
+    },
+    {
+      "L": 6,
+      "cyclic_angle_sums": [
+        -3.885780586188048e-16,
+        -1.27675647831893e-15,
+        -6.661338147750939e-16
+      ]
+    },
+    {
+      "L": 9,
+      "cyclic_angle_sums": [
+        -2.1649348980190553e-15,
+        -2.1649348980190553e-15,
+        -1.5126788710517758e-15
+      ]
+    },
+    {
+      "L": 20,
+      "cyclic_angle_sums": [
+        -3.730522835088124e-15,
+        -2.2881002648134086e-15,
+        -2.009839777245004e-15
+      ]
+    }
+  ],
+  "crossing_countercontrol": {
+    "L": 4,
+    "theta": 0.7853981633974483,
+    "full_ground_space_resolved_weight": 0.04166666666666653,
+    "generic_rank_one_weight_inapplicable_at_crossing": 0.020833333333333332
+  },
+  "coverage_limits": "Finite controls corroborate the reconstructed proof; they do not establish arbitrary L or microscopic conditioned histories. Author scripts and all saved result fields were inspected, not rerun."
+}

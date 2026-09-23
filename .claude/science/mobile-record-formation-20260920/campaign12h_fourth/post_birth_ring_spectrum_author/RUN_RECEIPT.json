@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/post_birth_ring_spectrum_author/ring_spectrum_check.py"
+  ],
+  "started_utc": "2026-09-23T17:21:38.614021+00:00",
+  "elapsed_seconds": 0.7698473329655826,
+  "returncode": 0,
+  "source_sha256": "79b9ab1095d58f9e4b56a5ca61f6106cbe65956205ba8ca8bc9e252d0fdbe9cf"
+}

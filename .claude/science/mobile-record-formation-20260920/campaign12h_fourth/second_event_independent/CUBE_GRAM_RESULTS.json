@@ -1,0 +1,2840 @@
+{
+  "edge_order": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      6,
+      7
+    ]
+  ],
+  "A": [
+    0,
+    3,
+    5,
+    6
+  ],
+  "first_edge": [
+    0,
+    1
+  ],
+  "interpretation": "Each polynomial sum c_s T_s acts on the initial divergence-zero physical rotor field. Multiply by kappa for conditional instantaneous second-event rates. Exact integer path counts divided by the exact first-mark norm; no time evolution inferred.",
+  "rows": [
+    {
+      "first_instrument": "first_plus",
+      "first_norm_squared": 2,
+      "first_output_branches": [
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "field_shift": [
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": 1
+        },
+        {
+          "q": [
+            1,
+            -1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "field_shift": [
+            1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": 1
+        }
+      ],
+      "second_marked_grams": [
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": []
+        },
+        {
+          "edge": [
+            0,
+            2
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            0,
+            2
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            0,
+            2
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": []
+        },
+        {
+          "edge": [
+            0,
+            4
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            0,
+            4
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            0,
+            4
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": []
+        },
+        {
+          "edge": [
+            1,
+            3
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            1,
+            3
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            1,
+            3
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": []
+        },
+        {
+          "edge": [
+            1,
+            5
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            1,
+            5
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            1,
+            5
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": []
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 1,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 1,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            }
+          ]
+        },
+        {
+          "edge": [
+            2,
+            6
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 1,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            2,
+            6
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 1,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            2,
+            6
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            }
+          ]
+        },
+        {
+          "edge": [
+            3,
+            7
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 1,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            3,
+            7
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 1,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            3,
+            7
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            }
+          ]
+        },
+        {
+          "edge": [
+            4,
+            5
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 1,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            4,
+            5
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 1,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            4,
+            5
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            }
+          ]
+        },
+        {
+          "edge": [
+            4,
+            6
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 1,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            4,
+            6
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 1,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            4,
+            6
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            }
+          ]
+        },
+        {
+          "edge": [
+            5,
+            7
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 1,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            5,
+            7
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 1,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            5,
+            7
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            }
+          ]
+        },
+        {
+          "edge": [
+            6,
+            7
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 2,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                -1,
+                1,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            },
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            },
+            {
+              "field_shift": [
+                0,
+                1,
+                -1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                -1,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            6,
+            7
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 2,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                -1,
+                1,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            },
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            },
+            {
+              "field_shift": [
+                0,
+                1,
+                -1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                -1,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            6,
+            7
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                -1,
+                1,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            },
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "2"
+            },
+            {
+              "field_shift": [
+                0,
+                1,
+                -1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                -1,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            }
+          ]
+        }
+      ],
+      "total_gram": [
+        {
+          "field_shift": [
+            0,
+            -1,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "1"
+        },
+        {
+          "field_shift": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "8"
+        },
+        {
+          "field_shift": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "coefficient": "1"
+        }
+      ]
+    },
+    {
+      "first_instrument": "first_minus",
+      "first_norm_squared": 2,
+      "first_output_branches": [
+        {
+          "q": [
+            -1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "field_shift": [
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": 1
+        },
+        {
+          "q": [
+            -1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "field_shift": [
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": 1
+        }
+      ],
+      "second_marked_grams": [
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": []
+        },
+        {
+          "edge": [
+            0,
+            2
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            0,
+            2
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            0,
+            2
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": []
+        },
+        {
+          "edge": [
+            0,
+            4
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            0,
+            4
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            0,
+            4
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": []
+        },
+        {
+          "edge": [
+            1,
+            3
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            1,
+            3
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            1,
+            3
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": []
+        },
+        {
+          "edge": [
+            1,
+            5
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            1,
+            5
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            1,
+            5
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": []
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 1,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 1,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            }
+          ]
+        },
+        {
+          "edge": [
+            2,
+            6
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 1,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            2,
+            6
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 1,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            2,
+            6
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            }
+          ]
+        },
+        {
+          "edge": [
+            3,
+            7
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 1,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            3,
+            7
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 1,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            3,
+            7
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            }
+          ]
+        },
+        {
+          "edge": [
+            4,
+            5
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 1,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            4,
+            5
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 1,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            4,
+            5
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            }
+          ]
+        },
+        {
+          "edge": [
+            4,
+            6
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 1,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            4,
+            6
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 1,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            4,
+            6
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            }
+          ]
+        },
+        {
+          "edge": [
+            5,
+            7
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 1,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            5,
+            7
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 1,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            5,
+            7
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            }
+          ]
+        },
+        {
+          "edge": [
+            6,
+            7
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 2,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                -1,
+                1,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            },
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            },
+            {
+              "field_shift": [
+                0,
+                1,
+                -1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                -1,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            6,
+            7
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 2,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                -1,
+                1,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            },
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            },
+            {
+              "field_shift": [
+                0,
+                1,
+                -1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                -1,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            6,
+            7
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                -1,
+                1,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            },
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "2"
+            },
+            {
+              "field_shift": [
+                0,
+                1,
+                -1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                -1,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            }
+          ]
+        }
+      ],
+      "total_gram": [
+        {
+          "field_shift": [
+            0,
+            -1,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "1"
+        },
+        {
+          "field_shift": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "8"
+        },
+        {
+          "field_shift": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "coefficient": "1"
+        }
+      ]
+    },
+    {
+      "first_instrument": "first_coherent",
+      "first_norm_squared": 4,
+      "first_output_branches": [
+        {
+          "q": [
+            -1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "field_shift": [
+            -1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": 1
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "field_shift": [
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": 1
+        },
+        {
+          "q": [
+            -1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "field_shift": [
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": 1
+        },
+        {
+          "q": [
+            1,
+            -1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "field_shift": [
+            1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": 1
+        }
+      ],
+      "second_marked_grams": [
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": []
+        },
+        {
+          "edge": [
+            0,
+            2
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            0,
+            2
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            0,
+            2
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": []
+        },
+        {
+          "edge": [
+            0,
+            4
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            0,
+            4
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            0,
+            4
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": []
+        },
+        {
+          "edge": [
+            1,
+            3
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            1,
+            3
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            1,
+            3
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": []
+        },
+        {
+          "edge": [
+            1,
+            5
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            1,
+            5
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 0,
+          "gram": []
+        },
+        {
+          "edge": [
+            1,
+            5
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": []
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 2,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 2,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            }
+          ]
+        },
+        {
+          "edge": [
+            2,
+            6
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 2,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            2,
+            6
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 2,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            2,
+            6
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            }
+          ]
+        },
+        {
+          "edge": [
+            3,
+            7
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 2,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            3,
+            7
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 2,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            3,
+            7
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            }
+          ]
+        },
+        {
+          "edge": [
+            4,
+            5
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 2,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            4,
+            5
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 2,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            4,
+            5
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            }
+          ]
+        },
+        {
+          "edge": [
+            4,
+            6
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 2,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            4,
+            6
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 2,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            4,
+            6
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            }
+          ]
+        },
+        {
+          "edge": [
+            5,
+            7
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 2,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            5,
+            7
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 2,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            5,
+            7
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            }
+          ]
+        },
+        {
+          "edge": [
+            6,
+            7
+          ],
+          "new_charge_at_tail": -1,
+          "histories_after_combining": 4,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                -1,
+                1,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            },
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            },
+            {
+              "field_shift": [
+                0,
+                1,
+                -1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                -1,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            6,
+            7
+          ],
+          "new_charge_at_tail": 1,
+          "histories_after_combining": 4,
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                -1,
+                1,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            },
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            },
+            {
+              "field_shift": [
+                0,
+                1,
+                -1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                -1,
+                0,
+                0
+              ],
+              "coefficient": "1/2"
+            }
+          ]
+        },
+        {
+          "edge": [
+            6,
+            7
+          ],
+          "new_charge_at_tail": "coherent",
+          "gram": [
+            {
+              "field_shift": [
+                0,
+                -1,
+                1,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            },
+            {
+              "field_shift": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "coefficient": "2"
+            },
+            {
+              "field_shift": [
+                0,
+                1,
+                -1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                -1,
+                0,
+                0
+              ],
+              "coefficient": "1"
+            }
+          ]
+        }
+      ],
+      "total_gram": [
+        {
+          "field_shift": [
+            0,
+            -1,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "coefficient": "1"
+        },
+        {
+          "field_shift": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "coefficient": "8"
+        },
+        {
+          "field_shift": [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          "coefficient": "1"
+        }
+      ]
+    }
+  ]
+}

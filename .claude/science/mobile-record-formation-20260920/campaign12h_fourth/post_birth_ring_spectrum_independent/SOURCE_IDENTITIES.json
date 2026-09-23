@@ -1,0 +1,38 @@
+{
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "bytes": 17730,
+      "sha256": "002119d5a3f9bec171c3678cb15afdb91f7a763311ca38e6e4458ce10865572e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/fast_matter_formation_independent/REPORT.md",
+      "bytes": 20484,
+      "sha256": "0a114dadc553ccbb4ef9bf15faf87a70f64a0d5719bf1d1743de86b94a0205b5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/fast_matter_formation_independent/FINAL_SEAL.json",
+      "bytes": 20113,
+      "sha256": "63ddf9823aa23d678e8f61863ddeedf36596918e2cb600f100fa334e6d1432db"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/post_birth_fast_motion_author/FAST_VACANCY_MOTION_AFTER_FORMATION.md",
+      "bytes": 8764,
+      "sha256": "76d7f2faf3a0b4635499ddff1d8a88868d691d58c035780af737129701e30eeb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/post_birth_fast_motion_independent/REPORT.md",
+      "bytes": 11834,
+      "sha256": "ac396a036961d37f8f0deec41538a083d66fb41b18521c714abab2ad998e6727"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/post_birth_fast_motion_independent/FINAL_SEAL.json",
+      "bytes": 8856,
+      "sha256": "943e0342f29b1095c2e970517d21f35738ea27a241b2a263c41200b2627532ef"
+    }
+  ],
+  "prior_exposure": "The L=3 six-site post-birth path/Bessel result was checked in the preceding campaign. L=4 and general-L diagonalization here are new independent calculations from the neutral model.",
+  "read_boundary": "No campaign12h_fourth/post_birth_ring_spectrum_author file, fourth-campaign author derivation, checkpoint or registry was read. Only the assigned independent directory was written.",
+  "literature": "No external theorem or literature imported for this reconstruction.",
+  "failed_attempt": "SymPy charpoly generator assumptions mismatch; original source and real failed streams/receipt authenticate, coefficients unchanged."
+}

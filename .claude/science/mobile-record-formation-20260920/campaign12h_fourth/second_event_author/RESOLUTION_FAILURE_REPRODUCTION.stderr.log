@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_author/quadrature_resolution_failure.py", line 13, in <module>
+    assert abs(match['survival']-r['survival'])<1e-8,(r,match)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ({'grid': 256, 'coherent_first': False, 'eta': 320, 't': 0.7, 'normalizable_field': 'integer_flux_0', 'survival': 0.2580528884805453, 'limiting_survival': 0.2580847598862223, 'error': 3.1871405677008635e-05}, {'grid': 128, 'coherent_first': False, 'eta': 320, 't': 0.7, 'normalizable_field': 'integer_flux_0', 'survival': 0.25828415309823843, 'limiting_survival': 0.2580847598862223, 'error': 0.00019939321201611904})

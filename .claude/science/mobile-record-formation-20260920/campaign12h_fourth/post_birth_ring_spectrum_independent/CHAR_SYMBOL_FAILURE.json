@@ -1,0 +1,7 @@
+{
+  "failed_execution": "ring_run_RECEIPT.json",
+  "preserved_source": "ring_control_before_char_symbol_fix.py",
+  "diagnosis": "SymPy Matrix.charpoly(x) created an unassumed generator named x. The supplied comparison x had nonzero=True, so they were distinct symbolic objects despite identical printed names. The computed polynomial was x^6-8*x^4+(-4*z^2+8*z-4)/z*x^2. Replacing its generator with the comparison x made the difference identically zero.",
+  "repair": "Declare x without assumptions; keep z nonzero. No coefficient, target formula, numerical tolerance or preceding eigenvector/weight check changed.",
+  "initial_result_boundary": "All preceding numerical eigenvector/weight checks ran successfully, but that initial run wrote no final scientific result JSON. Its empty stdout and exact failing stderr remain preserved."
+}

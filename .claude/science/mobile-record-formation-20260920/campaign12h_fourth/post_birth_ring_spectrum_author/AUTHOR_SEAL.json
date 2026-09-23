@@ -1,0 +1,34 @@
+{
+  "created_utc": "2026-09-23T17:36:28.243204+00:00",
+  "status": "author packet frozen before independent comparison; not a formal audit",
+  "files": {
+    "EXACT_FAST_SPECTRUM_AND_FORMATION_OUTPUTS_ON_RINGS.md": "b9c30d8418cb4d4c577ea193dee8482d2d0c92125823593feb2a7c01b8310bf5",
+    "RING_SPECTRUM_RESULTS.json": "bf7f114668dc5e27dc015f9c3c2af7e48d9925652e890a02431c31f31cde6b77",
+    "RUN_RECEIPT.json": "54d8545c5249fa3974b20ef5e303acdf8dbaf7113eb5029208d248138563c3a2",
+    "initial_probe/RING_SPECTRUM_PROBE_RESULTS.json": "5822e60c5cd6004f1990f57171e707e593c503df69641ef9eff5269ccca6450c",
+    "initial_probe/RUN_RECEIPT.json": "ed96c535af9e76b1e0cf90db8019cc7b82bbb4a03c643df6d624b493ea5d2d6e",
+    "initial_probe/ring_spectrum_probe.py": "3fd68177b2faa8dbd5dbfa03d7a0629327df69e050c80bdc57f19d3f590bfb9d",
+    "initial_probe/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "initial_probe/stdout.log": "5822e60c5cd6004f1990f57171e707e593c503df69641ef9eff5269ccca6450c",
+    "ring_spectrum_check.py": "79b9ab1095d58f9e4b56a5ca61f6106cbe65956205ba8ca8bc9e252d0fdbe9cf",
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "bf7f114668dc5e27dc015f9c3c2af7e48d9925652e890a02431c31f31cde6b77"
+  },
+  "parent_source": {
+    "campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md": "002119d5a3f9bec171c3678cb15afdb91f7a763311ca38e6e4458ce10865572e"
+  },
+  "inspection": "Root read the complete note and runner. Root inspected angle, ground, crossing and measure output values; complete original logs retained. General statements rest on the proof, not finite numerical checks.",
+  "checks": {
+    "integer_factorization_rings": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "max_spectrum_error": 3.552713678800501e-14,
+    "max_measure_characteristic_error": 1.754936123164685e-14
+  },
+  "independence_limit": "Root has received concise progress from the blind reconstruction but has not read its artifact contents; checker has not read this author packet."
+}

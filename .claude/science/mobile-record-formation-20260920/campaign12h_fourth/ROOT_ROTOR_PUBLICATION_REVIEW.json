@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-09-23T18:35:16.570696+00:00",
+  "reviewer": "root",
+  "selected_science_seals": {
+    "post_birth_ring_spectrum_author/AUTHOR_SEAL.json": "c2e0e2adcff2dee95c682da2789c19f3113445e7f3e53f20d95936ab25ec07b9",
+    "post_birth_ring_spectrum_independent/FINAL_SEAL.json": "6beaa587833b2d626154ffdd8fd2729ad844f164ee4be6b0c607b3f9b4402851",
+    "second_event_author/AUTHOR_SEAL.json": "47868fa10d852a2c6e57b5600b0f761ccbed01969867c87f53e4cefb71850610",
+    "second_event_independent/FINAL_SEAL.json": "44d2a76280ebbbc97d2a1f34d83c7ccac28647de54d3cceaf6212d17b7b32731"
+  },
+  "coverage": "Complete Unit1 author argument and runner, independent report/comparison and science controls read previously at unchanged identities; final 18 sources/38 artifacts reauthenticated. Complete Unit2 author arguments/runners, independent report, builder, exact ring/clock/cube controls, comparison argument and full comparison runner read; final 31 sources/57 artifacts authenticated. No required scientific correction identified within the exact reviewed domains.",
+  "verification_limits": "Source identities and completed selective independent derivations support the bounded claims. Root did not rerun every author/independent control, and numerical grids do not prove uncountable or asymptotic claims. Claims remain conditional on the supplied quantum model; formal retained status requires the separate audit path.",
+  "additional_independent_scope": "The exact finite-eta H4-retaining ring clock, uniform-all-time fixed-input limit and exact mean are separately authored independent extensions; original author claims compact-time survival/count limits.",
+  "excluded_current_work": "Prepared finite-spin and unprepared joint dynamics, as well as new rotor long-time-tail candidate, are separate work and are excluded from this publication unit."
+}

@@ -1,0 +1,277 @@
+{
+  "finite_flux_quotient_connectivity": [
+    {
+      "L": 3,
+      "states_in_flux_mod_L_control": 45,
+      "components": [
+        [
+          15,
+          [
+            0
+          ]
+        ],
+        [
+          15,
+          [
+            1
+          ]
+        ],
+        [
+          15,
+          [
+            2
+          ]
+        ]
+      ]
+    },
+    {
+      "L": 4,
+      "states_in_flux_mod_L_control": 144,
+      "components": [
+        [
+          36,
+          [
+            0
+          ]
+        ],
+        [
+          36,
+          [
+            1
+          ]
+        ],
+        [
+          36,
+          [
+            2
+          ]
+        ],
+        [
+          36,
+          [
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "L": 5,
+      "states_in_flux_mod_L_control": 350,
+      "components": [
+        [
+          70,
+          [
+            0
+          ]
+        ],
+        [
+          70,
+          [
+            1
+          ]
+        ],
+        [
+          70,
+          [
+            2
+          ]
+        ],
+        [
+          70,
+          [
+            3
+          ]
+        ],
+        [
+          70,
+          [
+            4
+          ]
+        ]
+      ]
+    },
+    {
+      "L": 6,
+      "states_in_flux_mod_L_control": 720,
+      "components": [
+        [
+          120,
+          [
+            0
+          ]
+        ],
+        [
+          120,
+          [
+            1
+          ]
+        ],
+        [
+          120,
+          [
+            2
+          ]
+        ],
+        [
+          120,
+          [
+            3
+          ]
+        ],
+        [
+          120,
+          [
+            4
+          ]
+        ],
+        [
+          120,
+          [
+            5
+          ]
+        ]
+      ]
+    },
+    {
+      "L": 7,
+      "states_in_flux_mod_L_control": 1323,
+      "components": [
+        [
+          189,
+          [
+            0
+          ]
+        ],
+        [
+          189,
+          [
+            1
+          ]
+        ],
+        [
+          189,
+          [
+            2
+          ]
+        ],
+        [
+          189,
+          [
+            3
+          ]
+        ],
+        [
+          189,
+          [
+            4
+          ]
+        ],
+        [
+          189,
+          [
+            5
+          ]
+        ],
+        [
+          189,
+          [
+            6
+          ]
+        ]
+      ]
+    }
+  ],
+  "initial_subsequent_birth_controls": [
+    {
+      "L": 3,
+      "coherent_initial_mark": false,
+      "subsequent_resolved_total_loss_over_kappa_at_this_state": "0",
+      "nonzero_channels": []
+    },
+    {
+      "L": 3,
+      "coherent_initial_mark": true,
+      "subsequent_resolved_total_loss_over_kappa_at_this_state": "0",
+      "nonzero_channels": []
+    },
+    {
+      "L": 4,
+      "coherent_initial_mark": false,
+      "subsequent_resolved_total_loss_over_kappa_at_this_state": "4",
+      "nonzero_channels": [
+        {
+          "edge": 3,
+          "charge_at_tail": 1,
+          "norm_squared": "1",
+          "output_record_counts": [
+            8
+          ]
+        },
+        {
+          "edge": 3,
+          "charge_at_tail": -1,
+          "norm_squared": "1",
+          "output_record_counts": [
+            8
+          ]
+        },
+        {
+          "edge": 4,
+          "charge_at_tail": 1,
+          "norm_squared": "1",
+          "output_record_counts": [
+            8
+          ]
+        },
+        {
+          "edge": 4,
+          "charge_at_tail": -1,
+          "norm_squared": "1",
+          "output_record_counts": [
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "L": 4,
+      "coherent_initial_mark": true,
+      "subsequent_resolved_total_loss_over_kappa_at_this_state": "4",
+      "nonzero_channels": [
+        {
+          "edge": 3,
+          "charge_at_tail": 1,
+          "norm_squared": "1",
+          "output_record_counts": [
+            8
+          ]
+        },
+        {
+          "edge": 3,
+          "charge_at_tail": -1,
+          "norm_squared": "1",
+          "output_record_counts": [
+            8
+          ]
+        },
+        {
+          "edge": 4,
+          "charge_at_tail": 1,
+          "norm_squared": "1",
+          "output_record_counts": [
+            8
+          ]
+        },
+        {
+          "edge": 4,
+          "charge_at_tail": -1,
+          "norm_squared": "1",
+          "output_record_counts": [
+            8
+          ]
+        }
+      ]
+    }
+  ],
+  "scope": "The quotient check corroborates the analytic integer-winding invariant and connectivity proof. The birth control only evaluates the initial operator loss, not a later waiting law or completion probability."
+}

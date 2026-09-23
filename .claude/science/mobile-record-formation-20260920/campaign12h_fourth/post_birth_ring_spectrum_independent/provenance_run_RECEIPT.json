@@ -1,0 +1,25 @@
+{
+  "started_utc": "2026-09-23T17:32:10.670465+00:00",
+  "finished_utc": "2026-09-23T17:32:10.701591+00:00",
+  "elapsed_seconds": 0.0306687920819968,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/post_birth_ring_spectrum_independent/provenance_check.py"
+  ],
+  "exit_code": 0,
+  "runner": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/post_birth_ring_spectrum_independent/provenance_check.py",
+    "bytes": 2527,
+    "sha256": "f7788e583d6355de8062689bdc70a7c9c518d039e2b511fa7f9272e5ed3a34fb"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/post_birth_ring_spectrum_independent/provenance_run.stdout",
+    "bytes": 2594,
+    "sha256": "060ea4ebc46e350c139cf4c3a3fe1d578bb1841e4de88c014fd4d7697c19bb61"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/post_birth_ring_spectrum_independent/provenance_run.stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

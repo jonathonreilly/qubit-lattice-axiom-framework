@@ -1,0 +1,1687 @@
+{
+  "loop_shift": [
+    0,
+    1,
+    -1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    -1,
+    0,
+    0
+  ],
+  "normalizable_field_controls": [
+    {
+      "field": "zero_flux",
+      "first_charge": 1,
+      "total_rate_without_kappa": 8.0,
+      "all_marked_rates": [
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            0,
+            2
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            0,
+            4
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            1,
+            3
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            1,
+            5
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            2,
+            6
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            3,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            4,
+            5
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            4,
+            6
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            5,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            6,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            1.0,
+            1.0
+          ],
+          "coherent_rate_without_kappa": 2.0
+        }
+      ]
+    },
+    {
+      "field": "zero_flux",
+      "first_charge": -1,
+      "total_rate_without_kappa": 8.0,
+      "all_marked_rates": [
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            0,
+            2
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            0,
+            4
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            1,
+            3
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            1,
+            5
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            2,
+            6
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            3,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            4,
+            5
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            4,
+            6
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            5,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            6,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            1.0,
+            1.0
+          ],
+          "coherent_rate_without_kappa": 2.0
+        }
+      ]
+    },
+    {
+      "field": "zero_flux",
+      "first_charge": null,
+      "total_rate_without_kappa": 8.0,
+      "all_marked_rates": [
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            0,
+            2
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            0,
+            4
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            1,
+            3
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            1,
+            5
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            2,
+            6
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            3,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            4,
+            5
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            4,
+            6
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            5,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            6,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            1.0,
+            1.0
+          ],
+          "coherent_rate_without_kappa": 2.0
+        }
+      ]
+    },
+    {
+      "field": "loop_plus",
+      "first_charge": 1,
+      "total_rate_without_kappa": 9.0,
+      "all_marked_rates": [
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            0,
+            2
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            0,
+            4
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            1,
+            3
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            1,
+            5
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            2,
+            6
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            3,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            4,
+            5
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            4,
+            6
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            5,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            6,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            1.5,
+            1.5
+          ],
+          "coherent_rate_without_kappa": 3.0
+        }
+      ]
+    },
+    {
+      "field": "loop_plus",
+      "first_charge": -1,
+      "total_rate_without_kappa": 9.0,
+      "all_marked_rates": [
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            0,
+            2
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            0,
+            4
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            1,
+            3
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            1,
+            5
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            2,
+            6
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            3,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            4,
+            5
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            4,
+            6
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            5,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            6,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            1.5,
+            1.5
+          ],
+          "coherent_rate_without_kappa": 3.0
+        }
+      ]
+    },
+    {
+      "field": "loop_plus",
+      "first_charge": null,
+      "total_rate_without_kappa": 9.0,
+      "all_marked_rates": [
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            0,
+            2
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            0,
+            4
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            1,
+            3
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            1,
+            5
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            2,
+            6
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            3,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            4,
+            5
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            4,
+            6
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            5,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            6,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            1.5,
+            1.5
+          ],
+          "coherent_rate_without_kappa": 3.0
+        }
+      ]
+    },
+    {
+      "field": "loop_minus",
+      "first_charge": 1,
+      "total_rate_without_kappa": 7.0,
+      "all_marked_rates": [
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            0,
+            2
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            0,
+            4
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            1,
+            3
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            1,
+            5
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            2,
+            6
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            3,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            4,
+            5
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            4,
+            6
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            5,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            6,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        }
+      ]
+    },
+    {
+      "field": "loop_minus",
+      "first_charge": -1,
+      "total_rate_without_kappa": 7.0,
+      "all_marked_rates": [
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            0,
+            2
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            0,
+            4
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            1,
+            3
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            1,
+            5
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            2,
+            6
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            3,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            4,
+            5
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            4,
+            6
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            5,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            6,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        }
+      ]
+    },
+    {
+      "field": "loop_minus",
+      "first_charge": null,
+      "total_rate_without_kappa": 7.0,
+      "all_marked_rates": [
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            0,
+            2
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            0,
+            4
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            1,
+            3
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            1,
+            5
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            2,
+            6
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            3,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            4,
+            5
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            4,
+            6
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            5,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            6,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        }
+      ]
+    },
+    {
+      "field": "loop_i",
+      "first_charge": 1,
+      "total_rate_without_kappa": 8.0,
+      "all_marked_rates": [
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            0,
+            2
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            0,
+            4
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            1,
+            3
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            1,
+            5
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            2,
+            6
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            3,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            4,
+            5
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            4,
+            6
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            5,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            6,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            1.0,
+            1.0
+          ],
+          "coherent_rate_without_kappa": 2.0
+        }
+      ]
+    },
+    {
+      "field": "loop_i",
+      "first_charge": -1,
+      "total_rate_without_kappa": 8.0,
+      "all_marked_rates": [
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            0,
+            2
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            0,
+            4
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            1,
+            3
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            1,
+            5
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            2,
+            6
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            3,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            4,
+            5
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            4,
+            6
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            5,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            6,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            1.0,
+            1.0
+          ],
+          "coherent_rate_without_kappa": 2.0
+        }
+      ]
+    },
+    {
+      "field": "loop_i",
+      "first_charge": null,
+      "total_rate_without_kappa": 8.0,
+      "all_marked_rates": [
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            0,
+            2
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            0,
+            4
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            1,
+            3
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            1,
+            5
+          ],
+          "resolved_rates_without_kappa": [
+            0.0,
+            0.0
+          ],
+          "coherent_rate_without_kappa": 0.0
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            2,
+            6
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            3,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            4,
+            5
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            4,
+            6
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            5,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            0.5,
+            0.5
+          ],
+          "coherent_rate_without_kappa": 1.0
+        },
+        {
+          "edge": [
+            6,
+            7
+          ],
+          "resolved_rates_without_kappa": [
+            1.0,
+            1.0
+          ],
+          "coherent_rate_without_kappa": 2.0
+        }
+      ]
+    }
+  ],
+  "scope": "Direct norms of finite-support physical output wavefunctions. Values are immediate rates, not waiting-law parameters."
+}

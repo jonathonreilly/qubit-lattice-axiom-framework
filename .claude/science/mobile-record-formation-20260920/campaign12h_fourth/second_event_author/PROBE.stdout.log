@@ -1,0 +1,2447 @@
+{
+  "status": "author exploratory controls, predictions recorded before this runner",
+  "source_sha256": "4827171a51e018b306302b0fac315c000c63bb7311e69fcab18ad666916f1f25",
+  "cube_exact_composition": {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        6,
+        7
+      ]
+    ],
+    "rows": [
+      {
+        "coherent_first": false,
+        "first_norm_squared": 2,
+        "square_shift": [
+          0,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0
+        ],
+        "marked": [
+          {
+            "edge": [
+              2,
+              3
+            ],
+            "sigma": -1,
+            "raw_two_mark_norm_polynomial": [
+              {
+                "electric_shift": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "coefficient": 1
+              }
+            ]
+          },
+          {
+            "edge": [
+              2,
+              3
+            ],
+            "sigma": 1,
+            "raw_two_mark_norm_polynomial": [
+              {
+                "electric_shift": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "coefficient": 1
+              }
+            ]
+          },
+          {
+            "edge": [
+              2,
+              6
+            ],
+            "sigma": -1,
+            "raw_two_mark_norm_polynomial": [
+              {
+                "electric_shift": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "coefficient": 1
+              }
+            ]
+          },
+          {
+            "edge": [
+              2,
+              6
+            ],
+            "sigma": 1,
+            "raw_two_mark_norm_polynomial": [
+              {
+                "electric_shift": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "coefficient": 1
+              }
+            ]
+          },
+          {
+            "edge": [
+              3,
+              7
+            ],
+            "sigma": -1,
+            "raw_two_mark_norm_polynomial": [
+              {
+                "electric_shift": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "coefficient": 1
+              }
+            ]
+          },
+          {
+            "edge": [
+              3,
+              7
+            ],
+            "sigma": 1,
+            "raw_two_mark_norm_polynomial": [
+              {
+                "electric_shift": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "coefficient": 1
+              }
+            ]
+          },
+          {
+            "edge": [
+              4,
+              5
+            ],
+            "sigma": -1,
+            "raw_two_mark_norm_polynomial": [
+              {
+                "electric_shift": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "coefficient": 1
+              }
+            ]
+          },
+          {
+            "edge": [
+              4,
+              5
+            ],
+            "sigma": 1,
+            "raw_two_mark_norm_polynomial": [
+              {
+                "electric_shift": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "coefficient": 1
+              }
+            ]
+          },
+          {
+            "edge": [
+              4,
+              6
+            ],
+            "sigma": -1,
+            "raw_two_mark_norm_polynomial": [
+              {
+                "electric_shift": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "coefficient": 1
+              }
+            ]
+          },
+          {
+            "edge": [
+              4,
+              6
+            ],
+            "sigma": 1,
+            "raw_two_mark_norm_polynomial": [
+              {
+                "electric_shift": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "coefficient": 1
+              }
+            ]
+          },
+          {
+            "edge": [
+              5,
+              7
+            ],
+            "sigma": -1,
+            "raw_two_mark_norm_polynomial": [
+              {
+                "electric_shift": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "coefficient": 1
+              }
+            ]
+          },
+          {
+            "edge": [
+              5,
+              7
+            ],
+            "sigma": 1,
+            "raw_two_mark_norm_polynomial": [
+              {
+                "electric_shift": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "coefficient": 1
+              }
+            ]
+          },
+          {
+            "edge": [
+              6,
+              7
+            ],
+            "sigma": -1,
+            "raw_two_mark_norm_polynomial": [
+              {
+                "electric_shift": [
+                  0,
+                  -1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  -1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "coefficient": 1
+              },
+              {
+                "electric_shift": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "coefficient": 2
+              },
+              {
+                "electric_shift": [
+                  0,
+                  1,
+                  -1,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  -1,
+                  0,
+                  0
+                ],
+                "coefficient": 1
+              }
+            ]
+          },
+          {
+            "edge": [
+              6,
+              7
+            ],
+            "sigma": 1,
+            "raw_two_mark_norm_polynomial": [
+              {
+                "electric_shift": [
+                  0,
+                  -1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  -1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "coefficient": 1
+              },
+              {
+                "electric_shift": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "coefficient": 2
+              },
+              {
+                "electric_shift": [
+                  0,
+                  1,
+                  -1,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  -1,
+                  0,
+                  0
+                ],
+                "coefficient": 1
+              }
+            ]
+          }
+        ],
+        "raw_total_norm_polynomial": [
+          {
+            "electric_shift": [
+              0,
+              -1,
+              1,
+              0,
+              0,
+              0,
+              -1,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            "coefficient": 2
+          },
+          {
+            "electric_shift": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": 16
+          },
+          {
+            "electric_shift": [
+              0,
+              1,
+              -1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              -1,
+              0,
+              0
+            ],
+            "coefficient": 2
+          }
+        ],
+        "predicted_polynomial_equal": true
+      },
+      {
+        "coherent_first": true,
+        "first_norm_squared": 4,
+        "square_shift": [
+          0,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0
+        ],
+        "marked": [
+          {
+            "edge": [
+              2,
+              3
+            ],
+            "sigma": -1,
+            "raw_two_mark_norm_polynomial": [
+              {
+                "electric_shift": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "coefficient": 2
+              }
+            ]
+          },
+          {
+            "edge": [
+              2,
+              3
+            ],
+            "sigma": 1,
+            "raw_two_mark_norm_polynomial": [
+              {
+                "electric_shift": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "coefficient": 2
+              }
+            ]
+          },
+          {
+            "edge": [
+              2,
+              6
+            ],
+            "sigma": -1,
+            "raw_two_mark_norm_polynomial": [
+              {
+                "electric_shift": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "coefficient": 2
+              }
+            ]
+          },
+          {
+            "edge": [
+              2,
+              6
+            ],
+            "sigma": 1,
+            "raw_two_mark_norm_polynomial": [
+              {
+                "electric_shift": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "coefficient": 2
+              }
+            ]
+          },
+          {
+            "edge": [
+              3,
+              7
+            ],
+            "sigma": -1,
+            "raw_two_mark_norm_polynomial": [
+              {
+                "electric_shift": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "coefficient": 2
+              }
+            ]
+          },
+          {
+            "edge": [
+              3,
+              7
+            ],
+            "sigma": 1,
+            "raw_two_mark_norm_polynomial": [
+              {
+                "electric_shift": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "coefficient": 2
+              }
+            ]
+          },
+          {
+            "edge": [
+              4,
+              5
+            ],
+            "sigma": -1,
+            "raw_two_mark_norm_polynomial": [
+              {
+                "electric_shift": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "coefficient": 2
+              }
+            ]
+          },
+          {
+            "edge": [
+              4,
+              5
+            ],
+            "sigma": 1,
+            "raw_two_mark_norm_polynomial": [
+              {
+                "electric_shift": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "coefficient": 2
+              }
+            ]
+          },
+          {
+            "edge": [
+              4,
+              6
+            ],
+            "sigma": -1,
+            "raw_two_mark_norm_polynomial": [
+              {
+                "electric_shift": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "coefficient": 2
+              }
+            ]
+          },
+          {
+            "edge": [
+              4,
+              6
+            ],
+            "sigma": 1,
+            "raw_two_mark_norm_polynomial": [
+              {
+                "electric_shift": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "coefficient": 2
+              }
+            ]
+          },
+          {
+            "edge": [
+              5,
+              7
+            ],
+            "sigma": -1,
+            "raw_two_mark_norm_polynomial": [
+              {
+                "electric_shift": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "coefficient": 2
+              }
+            ]
+          },
+          {
+            "edge": [
+              5,
+              7
+            ],
+            "sigma": 1,
+            "raw_two_mark_norm_polynomial": [
+              {
+                "electric_shift": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "coefficient": 2
+              }
+            ]
+          },
+          {
+            "edge": [
+              6,
+              7
+            ],
+            "sigma": -1,
+            "raw_two_mark_norm_polynomial": [
+              {
+                "electric_shift": [
+                  0,
+                  -1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  -1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "coefficient": 2
+              },
+              {
+                "electric_shift": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "coefficient": 4
+              },
+              {
+                "electric_shift": [
+                  0,
+                  1,
+                  -1,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  -1,
+                  0,
+                  0
+                ],
+                "coefficient": 2
+              }
+            ]
+          },
+          {
+            "edge": [
+              6,
+              7
+            ],
+            "sigma": 1,
+            "raw_two_mark_norm_polynomial": [
+              {
+                "electric_shift": [
+                  0,
+                  -1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  -1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "coefficient": 2
+              },
+              {
+                "electric_shift": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "coefficient": 4
+              },
+              {
+                "electric_shift": [
+                  0,
+                  1,
+                  -1,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  -1,
+                  0,
+                  0
+                ],
+                "coefficient": 2
+              }
+            ]
+          }
+        ],
+        "raw_total_norm_polynomial": [
+          {
+            "electric_shift": [
+              0,
+              -1,
+              1,
+              0,
+              0,
+              0,
+              -1,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            "coefficient": 4
+          },
+          {
+            "electric_shift": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": 32
+          },
+          {
+            "electric_shift": [
+              0,
+              1,
+              -1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              -1,
+              0,
+              0
+            ],
+            "coefficient": 4
+          }
+        ],
+        "predicted_polynomial_equal": true
+      }
+    ]
+  },
+  "ring_controls": [
+    {
+      "theta": 0.0,
+      "Gamma_identity_error": 0.0,
+      "distinct_energy_count": 13,
+      "flat_dimension": 14,
+      "secular_Gamma_proposed_error": 4.000000000000001,
+      "outputs": [
+        {
+          "coherent": false,
+          "flat_weight": 0.541666666666666,
+          "initial_hazard_over_kappa": 4.0,
+          "rows": [
+            {
+              "t": 0.1,
+              "averaged_survival": 0.8078387178463038,
+              "proposed_survival": 0.8125709884272656,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.7831870694400719
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.8063948136615281
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.8078017742279391
+                }
+              ]
+            },
+            {
+              "t": 0.5,
+              "averaged_survival": 0.3611749530394328,
+              "proposed_survival": 0.371591133866508,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.36591857565169283
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.3607125881537909
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.36124005982723256
+                }
+              ]
+            },
+            {
+              "t": 1.0,
+              "averaged_survival": 0.14596239239522948,
+              "proposed_survival": 0.15370351328341222,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.14160150469594943
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.14587856559282836
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.145986473360443
+                }
+              ]
+            },
+            {
+              "t": 2.0,
+              "averaged_survival": 0.02987428821631993,
+              "proposed_survival": 0.032253963170850455,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.02829226683559144
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.02985416915417998
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.029877259080998256
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "coherent": true,
+          "flat_weight": 0.5833333333333339,
+          "initial_hazard_over_kappa": 3.999999999999999,
+          "rows": [
+            {
+              "t": 0.1,
+              "averaged_survival": 0.803106447265341,
+              "proposed_survival": 0.8125709884272656,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.7818983918650702
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.8015491677397051
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.8030426273048363
+                }
+              ]
+            },
+            {
+              "t": 0.5,
+              "averaged_survival": 0.350758772212356,
+              "proposed_survival": 0.371591133866508,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.3561249780504433
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.35044324552798944
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.3508188283279049
+                }
+              ]
+            },
+            {
+              "t": 1.0,
+              "averaged_survival": 0.138221271507045,
+              "proposed_survival": 0.15370351328341222,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.13244043685788381
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.13804781466158011
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.13825451176676878
+                }
+              ]
+            },
+            {
+              "t": 2.0,
+              "averaged_survival": 0.02749461326178853,
+              "proposed_survival": 0.032253963170850455,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.02592932712308732
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.027448525186824328
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.027496473369805444
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "theta": 0.17,
+      "Gamma_identity_error": 2.175583928816829e-15,
+      "distinct_energy_count": 25,
+      "flat_dimension": 12,
+      "secular_Gamma_proposed_error": 7.434459796917656e-14,
+      "outputs": [
+        {
+          "coherent": false,
+          "flat_weight": 0.49999999999999967,
+          "initial_hazard_over_kappa": 4.000000000000001,
+          "rows": [
+            {
+              "t": 0.1,
+              "averaged_survival": 0.8125709884272655,
+              "proposed_survival": 0.8125709884272656,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.7831870694400713
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.8090910265054029
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.8127183180673108
+                }
+              ]
+            },
+            {
+              "t": 0.5,
+              "averaged_survival": 0.37159113386650766,
+              "proposed_survival": 0.371591133866508,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.3659186527342382
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.36965858561352277
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.37178322553656273
+                }
+              ]
+            },
+            {
+              "t": 1.0,
+              "averaged_survival": 0.1537035132834118,
+              "proposed_survival": 0.15370351328341222,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.14422047408090033
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.15351560851522636
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.15362054301116473
+                }
+              ]
+            },
+            {
+              "t": 2.0,
+              "averaged_survival": 0.03225396317085028,
+              "proposed_survival": 0.032253963170850455,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.03195607628993204
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.03246951984681501
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.03227053044709281
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "coherent": true,
+          "flat_weight": 0.49999999999999845,
+          "initial_hazard_over_kappa": 3.9999999999999996,
+          "rows": [
+            {
+              "t": 0.1,
+              "averaged_survival": 0.8125709884272655,
+              "proposed_survival": 0.8125709884272656,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.7819169684526923
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.8060526358334046
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.812829399430764
+                }
+              ]
+            },
+            {
+              "t": 0.5,
+              "averaged_survival": 0.3715911338665085,
+              "proposed_survival": 0.371591133866508,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.3562682324193096
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.3681858890056575
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.37194706923406246
+                }
+              ]
+            },
+            {
+              "t": 1.0,
+              "averaged_survival": 0.1537035132834124,
+              "proposed_survival": 0.15370351328341222,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.13631279749624484
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.15311516767834604
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.1535399593571344
+                }
+              ]
+            },
+            {
+              "t": 2.0,
+              "averaged_survival": 0.03225396317085046,
+              "proposed_survival": 0.032253963170850455,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.03193054845717733
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.032738320687067564
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.032294584168942604
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "theta": 0.41,
+      "Gamma_identity_error": 0.0,
+      "distinct_energy_count": 25,
+      "flat_dimension": 12,
+      "secular_Gamma_proposed_error": 1.1626163833576278e-13,
+      "outputs": [
+        {
+          "coherent": false,
+          "flat_weight": 0.49999999999999967,
+          "initial_hazard_over_kappa": 4.0,
+          "rows": [
+            {
+              "t": 0.1,
+              "averaged_survival": 0.812570988427266,
+              "proposed_survival": 0.8125709884272656,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.7831870694400724
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.8143989096418272
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.8124265046343427
+                }
+              ]
+            },
+            {
+              "t": 0.5,
+              "averaged_survival": 0.3715911338665082,
+              "proposed_survival": 0.371591133866508,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.3659189461668714
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.3719555159670998
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.37161177003768087
+                }
+              ]
+            },
+            {
+              "t": 1.0,
+              "averaged_survival": 0.15370351328341256,
+              "proposed_survival": 0.15370351328341222,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.15419018998064313
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.15414371646446462
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.15365860805208112
+                }
+              ]
+            },
+            {
+              "t": 2.0,
+              "averaged_survival": 0.0322539631708506,
+              "proposed_survival": 0.032253963170850455,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.03827368542216898
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.03232665621332685
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.03224530478478871
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "coherent": true,
+          "flat_weight": 0.5000000000000008,
+          "initial_hazard_over_kappa": 3.999999999999999,
+          "rows": [
+            {
+              "t": 0.1,
+              "averaged_survival": 0.8125709884272655,
+              "proposed_survival": 0.8125709884272656,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.7820051964021418
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.8151870446413804
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.8123221660609132
+                }
+              ]
+            },
+            {
+              "t": 0.5,
+              "averaged_survival": 0.3715911338665082,
+              "proposed_survival": 0.371591133866508,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.3569473662655219
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.37239413549133643
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.3716407399108008
+                }
+              ]
+            },
+            {
+              "t": 1.0,
+              "averaged_survival": 0.15370351328341256,
+              "proposed_survival": 0.15370351328341222,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.1511784849368718
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.15453040916313449
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.15361534246495928
+                }
+              ]
+            },
+            {
+              "t": 2.0,
+              "averaged_survival": 0.032253963170850636,
+              "proposed_survival": 0.032253963170850455,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.04228877103415625
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.032414767565256866
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.03223762132180237
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "theta": 1.5707963267948966,
+      "Gamma_identity_error": 0.0,
+      "distinct_energy_count": 13,
+      "flat_dimension": 14,
+      "secular_Gamma_proposed_error": 3.9999999999999947,
+      "outputs": [
+        {
+          "coherent": false,
+          "flat_weight": 0.5416666666666652,
+          "initial_hazard_over_kappa": 4.0,
+          "rows": [
+            {
+              "t": 0.1,
+              "averaged_survival": 0.8078387178463048,
+              "proposed_survival": 0.8125709884272656,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.7831870694400719
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.80639481366153
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.8078017742279604
+                }
+              ]
+            },
+            {
+              "t": 0.5,
+              "averaged_survival": 0.36117495303943215,
+              "proposed_survival": 0.371591133866508,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.36591857565169333
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.36071258815379115
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.3612400598272766
+                }
+              ]
+            },
+            {
+              "t": 1.0,
+              "averaged_survival": 0.14596239239522912,
+              "proposed_survival": 0.15370351328341222,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.1416015046959498
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.14587856559283063
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.14598647336045684
+                }
+              ]
+            },
+            {
+              "t": 2.0,
+              "averaged_survival": 0.02987428821631989,
+              "proposed_survival": 0.032253963170850455,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.02829226683559153
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.029854169154181456
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.029877259080999103
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "coherent": true,
+          "flat_weight": 0.5416666666666683,
+          "initial_hazard_over_kappa": 3.999999999999999,
+          "rows": [
+            {
+              "t": 0.1,
+              "averaged_survival": 0.8078387178463035,
+              "proposed_survival": 0.8125709884272656,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.783187069440072
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.8063948136615277
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.8078017742279193
+                }
+              ]
+            },
+            {
+              "t": 0.5,
+              "averaged_survival": 0.3611749530394331,
+              "proposed_survival": 0.371591133866508,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.36591857565169317
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.3607125881537913
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.3612400598272692
+                }
+              ]
+            },
+            {
+              "t": 1.0,
+              "averaged_survival": 0.14596239239522946,
+              "proposed_survival": 0.15370351328341222,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.14160150469594981
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.14587856559283108
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.14598647336045245
+                }
+              ]
+            },
+            {
+              "t": 2.0,
+              "averaged_survival": 0.02987428821631992,
+              "proposed_survival": 0.032253963170850455,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.028292266835591533
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.029854169154181542
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.029877259080997056
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "theta": 1.71,
+      "Gamma_identity_error": 0.0,
+      "distinct_energy_count": 25,
+      "flat_dimension": 12,
+      "secular_Gamma_proposed_error": 2.5879510611873766e-13,
+      "outputs": [
+        {
+          "coherent": false,
+          "flat_weight": 0.5000000000000011,
+          "initial_hazard_over_kappa": 4.0,
+          "rows": [
+            {
+              "t": 0.1,
+              "averaged_survival": 0.812570988427266,
+              "proposed_survival": 0.8125709884272656,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.7831870694400715
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.8082849149555593
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.8123699548842389
+                }
+              ]
+            },
+            {
+              "t": 0.5,
+              "averaged_survival": 0.37159113386650794,
+              "proposed_survival": 0.371591133866508,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.3659186280008172
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.3716567608918302
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.37150389113622617
+                }
+              ]
+            },
+            {
+              "t": 1.0,
+              "averaged_survival": 0.1537035132834119,
+              "proposed_survival": 0.15370351328341222,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.1433801272509604
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.15392261012464103
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.1538404820131065
+                }
+              ]
+            },
+            {
+              "t": 2.0,
+              "averaged_survival": 0.0322539631708503,
+              "proposed_survival": 0.032253963170850455,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.030871333976971546
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.03240728305091772
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.032263376511796664
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "coherent": true,
+          "flat_weight": 0.5000000000000011,
+          "initial_hazard_over_kappa": 3.999999999999999,
+          "rows": [
+            {
+              "t": 0.1,
+              "averaged_survival": 0.8125709884272655,
+              "proposed_survival": 0.8125709884272656,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.783365879297695
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.8082735492574549
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.8123875493536372
+                }
+              ]
+            },
+            {
+              "t": 0.5,
+              "averaged_survival": 0.3715911338665059,
+              "proposed_survival": 0.371591133866508,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.36726788652461395
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.3717056119069263
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.37150806002241665
+                }
+              ]
+            },
+            {
+              "t": 1.0,
+              "averaged_survival": 0.15370351328341172,
+              "proposed_survival": 0.15370351328341222,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.14198736235149573
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.1539600466897451
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.15383326131170066
+                }
+              ]
+            },
+            {
+              "t": 2.0,
+              "averaged_survival": 0.032253963170850386,
+              "proposed_survival": 0.032253963170850455,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.030722971677411746
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.032428567433307895
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.03226517779942799
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "theta": 2.7,
+      "Gamma_identity_error": 0.0,
+      "distinct_energy_count": 25,
+      "flat_dimension": 12,
+      "secular_Gamma_proposed_error": 1.2647736118076117e-13,
+      "outputs": [
+        {
+          "coherent": false,
+          "flat_weight": 0.49999999999999967,
+          "initial_hazard_over_kappa": 4.0,
+          "rows": [
+            {
+              "t": 0.1,
+              "averaged_survival": 0.8125709884272657,
+              "proposed_survival": 0.8125709884272656,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.783187069440072
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.8145175974877232
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.8126849306255424
+                }
+              ]
+            },
+            {
+              "t": 0.5,
+              "averaged_survival": 0.37159113386650755,
+              "proposed_survival": 0.371591133866508,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.36591898954871455
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.370974539662973
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.3716546551829687
+                }
+              ]
+            },
+            {
+              "t": 1.0,
+              "averaged_survival": 0.15370351328341167,
+              "proposed_survival": 0.15370351328341222,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.15566413868038292
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.15342713850910927
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.15375020441470097
+                }
+              ]
+            },
+            {
+              "t": 2.0,
+              "averaged_survival": 0.03225396317085016,
+              "proposed_survival": 0.032253963170850455,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.03818233298920773
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.03225177350724702
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.03225714531024756
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "coherent": true,
+          "flat_weight": 0.49999999999999967,
+          "initial_hazard_over_kappa": 3.999999999999999,
+          "rows": [
+            {
+              "t": 0.1,
+              "averaged_survival": 0.8125709884272655,
+              "proposed_survival": 0.8125709884272656,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.7843521269356727
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.8135637793517361
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.8126249262380612
+                }
+              ]
+            },
+            {
+              "t": 0.5,
+              "averaged_survival": 0.37159113386650783,
+              "proposed_survival": 0.371591133866508,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.3747613996122334
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.37152077082973056
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.3716158234551937
+                }
+              ]
+            },
+            {
+              "t": 1.0,
+              "averaged_survival": 0.15370351328341217,
+              "proposed_survival": 0.15370351328341222,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.15792144494395666
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.15384655194293528
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.15371639625744954
+                }
+              ]
+            },
+            {
+              "t": 2.0,
+              "averaged_survival": 0.03225396317085039,
+              "proposed_survival": 0.032253963170850455,
+              "finite_eta": [
+                {
+                  "eta": 10,
+                  "survival": 0.034197697451591146
+                },
+                {
+                  "eta": 100,
+                  "survival": 0.03221992992136659
+                },
+                {
+                  "eta": 1000,
+                  "survival": 0.03224707874518542
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cube_controls": [
+    {
+      "phi": 0.0,
+      "distinct_energy_count": 11,
+      "block_dimensions": [
+        1,
+        3,
+        3,
+        1,
+        5,
+        6,
+        5,
+        1,
+        3,
+        5,
+        3
+      ],
+      "commutator_H2_H4_norm": 144.0,
+      "outputs": [
+        {
+          "coherent": false,
+          "hazard": 9.999999999999998,
+          "proposed_hazard": 10.0,
+          "averaged_initial_hazard": 9.862680686831894,
+          "H2_mean": -7.999999999999998,
+          "Gamma_extrema": [
+            2.291476853220654,
+            16.000000000000004
+          ],
+          "secular_Gamma_extrema": [
+            3.0076737074904,
+            16.00000000000001
+          ]
+        },
+        {
+          "coherent": true,
+          "hazard": 10.0,
+          "proposed_hazard": 10.0,
+          "averaged_initial_hazard": 9.63344884688981,
+          "H2_mean": -7.5,
+          "Gamma_extrema": [
+            2.291476853220654,
+            16.000000000000004
+          ],
+          "secular_Gamma_extrema": [
+            3.0076737074904,
+            16.00000000000001
+          ]
+        }
+      ]
+    },
+    {
+      "phi": 0.37,
+      "distinct_energy_count": 35,
+      "block_dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "commutator_H2_H4_norm": 145.71124556737882,
+      "outputs": [
+        {
+          "coherent": false,
+          "hazard": 9.864654691212067,
+          "proposed_hazard": 9.864654691212069,
+          "averaged_initial_hazard": 9.823983853156133,
+          "H2_mean": -7.9323273456060335,
+          "Gamma_extrema": [
+            2.293618457476697,
+            15.974750813081705
+          ],
+          "secular_Gamma_extrema": [
+            3.079346899122901,
+            15.959526958560541
+          ]
+        },
+        {
+          "coherent": true,
+          "hazard": 9.864654691212069,
+          "proposed_hazard": 9.864654691212069,
+          "averaged_initial_hazard": 9.580583288860423,
+          "H2_mean": -7.432327345606035,
+          "Gamma_extrema": [
+            2.293618457476697,
+            15.974750813081705
+          ],
+          "secular_Gamma_extrema": [
+            3.079346899122901,
+            15.959526958560541
+          ]
+        }
+      ]
+    },
+    {
+      "phi": 1.1,
+      "distinct_energy_count": 35,
+      "block_dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "commutator_H2_H4_norm": 157.1889817544588,
+      "outputs": [
+        {
+          "coherent": false,
+          "hazard": 8.907192242851153,
+          "proposed_hazard": 8.907192242851155,
+          "averaged_initial_hazard": 9.439413425387494,
+          "H2_mean": -7.453596121425576,
+          "Gamma_extrema": [
+            2.309387837274788,
+            15.784271665827402
+          ],
+          "secular_Gamma_extrema": [
+            3.0493146093508514,
+            15.66131046080589
+          ]
+        },
+        {
+          "coherent": true,
+          "hazard": 8.907192242851155,
+          "proposed_hazard": 8.907192242851155,
+          "averaged_initial_hazard": 9.034254693395589,
+          "H2_mean": -6.953596121425577,
+          "Gamma_extrema": [
+            2.309387837274788,
+            15.784271665827402
+          ],
+          "secular_Gamma_extrema": [
+            3.0493146093508514,
+            15.66131046080589
+          ]
+        }
+      ]
+    },
+    {
+      "phi": 3.141592653589793,
+      "distinct_energy_count": 35,
+      "block_dimensions": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "commutator_H2_H4_norm": 170.83325203250098,
+      "outputs": [
+        {
+          "coherent": false,
+          "hazard": 5.999999999999999,
+          "proposed_hazard": 6.0,
+          "averaged_initial_hazard": 8.006459791334198,
+          "H2_mean": -5.999999999999999,
+          "Gamma_extrema": [
+            2.365408445344559,
+            15.039600859963123
+          ],
+          "secular_Gamma_extrema": [
+            2.8481153594687934,
+            14.579305854436074
+          ]
+        },
+        {
+          "coherent": true,
+          "hazard": 6.0,
+          "proposed_hazard": 6.0,
+          "averaged_initial_hazard": 7.548988801337103,
+          "H2_mean": -5.5,
+          "Gamma_extrema": [
+            2.365408445344559,
+            15.039600859963123
+          ],
+          "secular_Gamma_extrema": [
+            2.8481153594687934,
+            14.579305854436074
+          ]
+        }
+      ]
+    },
+    {
+      "phi": 6.283185307179586,
+      "distinct_energy_count": 11,
+      "block_dimensions": [
+        1,
+        3,
+        3,
+        1,
+        5,
+        6,
+        5,
+        1,
+        3,
+        5,
+        3
+      ],
+      "commutator_H2_H4_norm": 144.0,
+      "outputs": [
+        {
+          "coherent": false,
+          "hazard": 9.999999999999998,
+          "proposed_hazard": 10.0,
+          "averaged_initial_hazard": 9.862680686831908,
+          "H2_mean": -7.999999999999998,
+          "Gamma_extrema": [
+            2.2914768532206566,
+            16.000000000000004
+          ],
+          "secular_Gamma_extrema": [
+            3.0076737074903988,
+            15.999999999999998
+          ]
+        },
+        {
+          "coherent": true,
+          "hazard": 10.0,
+          "proposed_hazard": 10.0,
+          "averaged_initial_hazard": 9.633448846889829,
+          "H2_mean": -7.5,
+          "Gamma_extrema": [
+            2.2914768532206566,
+            16.000000000000004
+          ],
+          "secular_Gamma_extrema": [
+            3.0076737074903988,
+            15.999999999999998
+          ]
+        }
+      ]
+    }
+  ],
+  "scope": "Supplied unit-rotor model; no finite-spin joint field limit or native axiom derivation."
+}

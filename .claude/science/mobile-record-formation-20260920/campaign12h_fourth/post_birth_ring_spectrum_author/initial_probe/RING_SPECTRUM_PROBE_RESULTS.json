@@ -1,0 +1,308 @@
+{
+  "status": "author exploratory calculation, all stated assertions passed",
+  "source_sha256": "3fd68177b2faa8dbd5dbfa03d7a0629327df69e050c80bdc57f19d3f590bfb9d",
+  "model": "unit rotor, 2L ring, first-birth P sector, supplied Gauss background",
+  "rows": [
+    {
+      "L": 3,
+      "sites": 6,
+      "P_dimension": 15,
+      "integer_Laurent_entries": 45,
+      "word_and_vacancy_factorization_exact": true,
+      "angles": [
+        {
+          "theta": 0.0,
+          "max_spectrum_error": 1.7763568394002505e-15,
+          "bottom": -3.9999999999999996,
+          "top": -0.043704798532388206
+        },
+        {
+          "theta": 0.28559933214452665,
+          "max_spectrum_error": 1.3322676295501878e-15,
+          "bottom": -3.996738207852271,
+          "top": -0.023156450309275406
+        },
+        {
+          "theta": 1.0471975511965976,
+          "max_spectrum_error": 1.7763568394002505e-15,
+          "bottom": -3.9562952014676123,
+          "top": 2.7755575615628923e-16
+        },
+        {
+          "theta": 3.141592653589793,
+          "max_spectrum_error": 8.881784197001252e-16,
+          "bottom": -3.956295201467611,
+          "top": 3.868061248243078e-16
+        }
+      ],
+      "ground_energy_theta_zero_formula": -4.0,
+      "formation_outputs": [
+        {
+          "instrument": "resolved",
+          "mean_H2": -2.0,
+          "variance_H2": 2.0,
+          "ground_weight_theta_zero": 0.0666666666666656,
+          "ground_weight_formula": 0.06666666666666665
+        },
+        {
+          "instrument": "coherent",
+          "mean_H2": -1.9999999999999996,
+          "variance_H2": 2.0,
+          "ground_weight_theta_zero": 0.13333333333333072,
+          "ground_weight_formula": 0.1333333333333333
+        }
+      ]
+    },
+    {
+      "L": 4,
+      "sites": 8,
+      "P_dimension": 36,
+      "integer_Laurent_entries": 132,
+      "word_and_vacancy_factorization_exact": true,
+      "angles": [
+        {
+          "theta": 0.0,
+          "max_spectrum_error": 3.9968028886505635e-15,
+          "bottom": -6.82842712474619,
+          "top": -1.1715728752538106
+        },
+        {
+          "theta": 0.28559933214452665,
+          "max_spectrum_error": 5.773159728050814e-15,
+          "bottom": -6.825223476168274,
+          "top": -1.1747765238317285
+        },
+        {
+          "theta": 1.0471975511965976,
+          "max_spectrum_error": 5.329070518200751e-15,
+          "bottom": -6.817664105611035,
+          "top": -1.1823358943889652
+        },
+        {
+          "theta": 3.141592653589793,
+          "max_spectrum_error": 5.329070518200751e-15,
+          "bottom": -6.828427124746189,
+          "top": -1.1715728752538117
+        }
+      ],
+      "ground_energy_theta_zero_formula": -6.82842712474619,
+      "formation_outputs": [
+        {
+          "instrument": "resolved",
+          "mean_H2": -4.0,
+          "variance_H2": 2.0,
+          "ground_weight_theta_zero": 0.020833333333333787,
+          "ground_weight_formula": 0.02083333333333333
+        },
+        {
+          "instrument": "coherent",
+          "mean_H2": -3.999999999999999,
+          "variance_H2": 2.0000000000000036,
+          "ground_weight_theta_zero": 0.04166666666666746,
+          "ground_weight_formula": 0.04166666666666666
+        }
+      ]
+    },
+    {
+      "L": 5,
+      "sites": 10,
+      "P_dimension": 70,
+      "integer_Laurent_entries": 280,
+      "word_and_vacancy_factorization_exact": true,
+      "angles": [
+        {
+          "theta": 0.0,
+          "max_spectrum_error": 1.4210854715202004e-14,
+          "bottom": -9.236067977499792,
+          "top": -2.776959480789044
+        },
+        {
+          "theta": 0.28559933214452665,
+          "max_spectrum_error": 1.2434497875801753e-14,
+          "bottom": -9.233374919607947,
+          "top": -2.7678097891638735
+        },
+        {
+          "theta": 1.0471975511965976,
+          "max_spectrum_error": 7.105427357601002e-15,
+          "bottom": -9.234619617944672,
+          "top": -2.7697241642427226
+        },
+        {
+          "theta": 3.141592653589793,
+          "max_spectrum_error": 1.2434497875801753e-14,
+          "bottom": -9.223040519210963,
+          "top": -2.763932022500209
+        }
+      ],
+      "ground_energy_theta_zero_formula": -9.23606797749979,
+      "formation_outputs": [
+        {
+          "instrument": "resolved",
+          "mean_H2": -6.0,
+          "variance_H2": 2.0,
+          "ground_weight_theta_zero": 0.007896948635714794,
+          "ground_weight_formula": 0.007896948635714886
+        },
+        {
+          "instrument": "coherent",
+          "mean_H2": -5.999999999999999,
+          "variance_H2": 2.000000000000007,
+          "ground_weight_theta_zero": 0.015793897271429436,
+          "ground_weight_formula": 0.015793897271429772
+        }
+      ]
+    },
+    {
+      "L": 6,
+      "sites": 12,
+      "P_dimension": 120,
+      "integer_Laurent_entries": 504,
+      "word_and_vacancy_factorization_exact": true,
+      "angles": [
+        {
+          "theta": 0.0,
+          "max_spectrum_error": 2.842170943040401e-14,
+          "bottom": -11.464101615137759,
+          "top": -4.535898384862249
+        },
+        {
+          "theta": 0.28559933214452665,
+          "max_spectrum_error": 1.5987211554602254e-14,
+          "bottom": -11.461894378467015,
+          "top": -4.538105621532988
+        },
+        {
+          "theta": 1.0471975511965976,
+          "max_spectrum_error": 1.865174681370263e-14,
+          "bottom": -11.464101615137746,
+          "top": -4.535898384862245
+        },
+        {
+          "theta": 3.141592653589793,
+          "max_spectrum_error": 1.5987211554602254e-14,
+          "bottom": -11.464101615137757,
+          "top": -4.535898384862243
+        }
+      ],
+      "ground_energy_theta_zero_formula": -11.464101615137755,
+      "formation_outputs": [
+        {
+          "instrument": "resolved",
+          "mean_H2": -8.0,
+          "variance_H2": 2.0,
+          "ground_weight_theta_zero": 0.0034722222222220906,
+          "ground_weight_formula": 0.0034722222222222216
+        },
+        {
+          "instrument": "coherent",
+          "mean_H2": -7.999999999999998,
+          "variance_H2": 2.000000000000014,
+          "ground_weight_theta_zero": 0.00694444444444443,
+          "ground_weight_formula": 0.006944444444444443
+        }
+      ]
+    },
+    {
+      "L": 7,
+      "sites": 14,
+      "P_dimension": 189,
+      "integer_Laurent_entries": 819,
+      "word_and_vacancy_factorization_exact": true,
+      "angles": [
+        {
+          "theta": 0.0,
+          "max_spectrum_error": 2.3092638912203256e-14,
+          "bottom": -13.60387547160969,
+          "top": -6.400604429518712
+        },
+        {
+          "theta": 0.28559933214452665,
+          "max_spectrum_error": 1.9539925233402755e-14,
+          "bottom": -13.602061073053445,
+          "top": -6.396717018545927
+        },
+        {
+          "theta": 1.0471975511965976,
+          "max_spectrum_error": 2.3092638912203256e-14,
+          "bottom": -13.603377613119443,
+          "top": -6.3981158247976575
+        },
+        {
+          "theta": 3.141592653589793,
+          "max_spectrum_error": 2.1316282072803006e-14,
+          "bottom": -13.599395570481292,
+          "top": -6.396124528390335
+        }
+      ],
+      "ground_energy_theta_zero_formula": -13.603875471609676,
+      "formation_outputs": [
+        {
+          "instrument": "resolved",
+          "mean_H2": -10.0,
+          "variance_H2": 2.0,
+          "ground_weight_theta_zero": 0.0017075292432717347,
+          "ground_weight_formula": 0.0017075292432710497
+        },
+        {
+          "instrument": "coherent",
+          "mean_H2": -9.999999999999998,
+          "variance_H2": 2.0000000000000284,
+          "ground_weight_theta_zero": 0.0034150584865432344,
+          "ground_weight_formula": 0.0034150584865420995
+        }
+      ]
+    },
+    {
+      "L": 8,
+      "sites": 16,
+      "P_dimension": 280,
+      "integer_Laurent_entries": 1240,
+      "word_and_vacancy_factorization_exact": true,
+      "angles": [
+        {
+          "theta": 0.0,
+          "max_spectrum_error": 3.019806626980426e-14,
+          "bottom": -15.695518130045137,
+          "top": -8.304481869954863
+        },
+        {
+          "theta": 0.28559933214452665,
+          "max_spectrum_error": 3.019806626980426e-14,
+          "bottom": -15.69401107124816,
+          "top": -8.30598892875184
+        },
+        {
+          "theta": 1.0471975511965976,
+          "max_spectrum_error": 3.019806626980426e-14,
+          "bottom": -15.6942517682796,
+          "top": -8.305748231720369
+        },
+        {
+          "theta": 3.141592653589793,
+          "max_spectrum_error": 3.552713678800501e-14,
+          "bottom": -15.695518130045143,
+          "top": -8.30448186995485
+        }
+      ],
+      "ground_energy_theta_zero_formula": -15.695518130045148,
+      "formation_outputs": [
+        {
+          "instrument": "resolved",
+          "mean_H2": -12.0,
+          "variance_H2": 2.0,
+          "ground_weight_theta_zero": 0.0009152913087912738,
+          "ground_weight_formula": 0.000915291308792039
+        },
+        {
+          "instrument": "coherent",
+          "mean_H2": -11.999999999999998,
+          "variance_H2": 2.0000000000000284,
+          "ground_weight_theta_zero": 0.0018305826175825956,
+          "ground_weight_formula": 0.001830582617584078
+        }
+      ]
+    }
+  ],
+  "scope": "Exact factorization coefficients; floating spectral and overlap controls. No laboratory-time rotor/field convergence or subsequent-formation law is proved by this runner."
+}

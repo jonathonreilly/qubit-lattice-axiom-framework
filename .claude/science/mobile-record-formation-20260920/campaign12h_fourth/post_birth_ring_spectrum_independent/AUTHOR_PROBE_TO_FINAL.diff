@@ -1,0 +1,93 @@
+--- author preserved initial probe
++++ author final checker
+@@ -1,6 +1,6 @@
+ """Direct two-hop record graph versus the proposed one-birth ring spectrum.
+ 
+-Exploratory author check. No imported model builder or claim of a laboratory-
++Author check. No imported model builder or claim of a laboratory-
+ time field limit. Each Fourier fiber is a finite representation of the full
+ integer-flux rotor sector, not a normalizable fixed-flux-angle preparation.
+ """
+@@ -130,6 +130,20 @@
+     return resolved, (resolved + other) / np.sqrt(2)
+ 
+ 
++def analytic_measure(L, theta, coherent):
++    """Two occupied B positions: neighboring-coordinate Slater minor."""
++    N = L + 2
++    energies, weights = [], []
++    for s in range(N):
++        alpha = (L * theta + 2 * np.pi * s) / N
++        word_weight = (1 + np.cos(theta - alpha)) / N if coherent else 1 / N
++        p = (2 * np.pi * np.arange(L) + alpha + np.pi) / L
++        for m, n in combinations(range(L), 2):
++            energies.append(-2 * (L - 2) - 2 * np.cos(p[m]) - 2 * np.cos(p[n]))
++            weights.append(word_weight * 4 * np.sin(np.pi * (m - n) / L)**2 / L**2)
++    return np.array(energies), np.array(weights)
++
++
+ def main():
+     rows = []
+     for L in range(3, 9):
+@@ -156,6 +170,9 @@
+         assert ev[1] - ev[0] > 1e-7
+         expected_ground = -2 * (L - 2) - 4 * np.cos(np.pi / L)
+         assert abs(ev[0] - expected_ground) < 1e-12
++        gap_formula = 4 * np.cos(np.pi / L) * (1 - np.cos(2 * np.pi / (L * (L + 2))))
++        gap = float(ev[1] - ev[0])
++        assert abs(gap - gap_formula) < 1e-12
+         outputs = []
+         for instrument, psi, factor in zip(["resolved", "coherent"], formation_outputs(L, words), [1, 2]):
+             mean = float(np.vdot(psi, H @ psi).real)
+@@ -169,14 +186,49 @@
+                             "variance_H2": variance, "ground_weight_theta_zero": weight,
+                             "ground_weight_formula": float(prediction)})
+         exact.update({"angles": angles, "ground_energy_theta_zero_formula": float(expected_ground),
++                      "gap_theta_zero": gap, "gap_formula": float(gap_formula),
+                       "formation_outputs": outputs})
++        measures = []
++        for theta in [0, .17, .41, 1.31, 2.7]:
++            H = matrix(direct, len(words), theta)
++            ev, vectors = eigh(H, driver="evd")
++            assert ev[1] - ev[0] > 1e-8
++            alpha = np.angle(np.exp(1j * (L * theta + 2 * np.pi * np.arange(L + 2)) / (L + 2)))
++            alpha_min = float(alpha[np.argmin(abs(alpha))])
++            for coherent, psi in zip([False, True], formation_outputs(L, words)):
++                energies, weights = analytic_measure(L, theta, coherent)
++                assert min(weights) > -1e-15 and abs(sum(weights) - 1) < 2e-14
++                projected = abs(vectors.conj().T @ psi)**2
++                errors = []
++                for u in [0, .13, .7, 2, 5]:
++                    observed = np.dot(projected, np.exp(-1j * u * ev))
++                    predicted = np.dot(weights, np.exp(-1j * u * energies))
++                    errors.append(float(abs(observed - predicted)))
++                assert max(errors) < 2e-12, (L, theta, coherent, errors)
++                w = 4 * np.sin(np.pi / L)**2 / (L**2 * (L + 2))
++                w *= 1 + np.cos(theta - alpha_min) if coherent else 1
++                low = float(projected[0])
++                assert abs(low - w) < 2e-12
++                mean = float(np.vdot(psi, H @ psi).real)
++                variance = float(np.vdot(H @ psi, H @ psi).real - mean**2)
++                assert abs(mean + 2 * (L - 2)) < 2e-12 and abs(variance - 2) < 2e-12
++                measures.append({"theta": theta, "coherent": coherent,
++                                 "measure_normalization": float(sum(weights)),
++                                 "characteristic_function_errors": errors,
++                                 "lowest_band_weight": low, "lowest_band_formula": float(w),
++                                 "mean_H2": mean, "variance_H2": variance})
++        crossing = np.pi / L
++        ec = eigh(matrix(direct, len(words), crossing), eigvals_only=True, driver="evd")
++        assert abs(ec[1] - ec[0]) < 1e-12
++        exact.update({"full_spectral_measures": measures,
++                      "crossing_theta": crossing, "crossing_lowest_gap": float(ec[1] - ec[0])})
+         rows.append(exact)
+-    out = {"status": "author exploratory calculation, all stated assertions passed",
++    out = {"status": "author calculation, all stated assertions passed",
+            "source_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+            "model": "unit rotor, 2L ring, first-birth P sector, supplied Gauss background",
+            "rows": rows,
+            "scope": "Exact factorization coefficients; floating spectral and overlap controls. No laboratory-time rotor/field convergence or subsequent-formation law is proved by this runner."}
+-    target = Path(__file__).with_name("RING_SPECTRUM_PROBE_RESULTS.json")
++    target = Path(__file__).with_name("RING_SPECTRUM_RESULTS.json")
+     assert not target.exists()
+     target.write_text(json.dumps(out, indent=2) + "\n")
+     print(json.dumps(out, indent=2))

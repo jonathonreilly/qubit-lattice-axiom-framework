@@ -1,0 +1,48 @@
+{
+  "L4_fiber_energy_and_band_weights": [
+    {
+      "theta": 0.0,
+      "center_eigenvalue_multiplicity": 14,
+      "resolved_center_energy_weight": 0.5416666666666675,
+      "coherent_center_energy_weight": 0.583333333333334,
+      "lowest_eigenvalue": -6.828427124746191,
+      "lowest_multiplicity": 1,
+      "resolved_lowest_weight": 0.020833333333333242,
+      "coherent_lowest_weight": 0.04166666666666526
+    },
+    {
+      "theta": 0.37,
+      "center_eigenvalue_multiplicity": 12,
+      "resolved_center_energy_weight": 0.5000000000000006,
+      "coherent_center_energy_weight": 0.5000000000000007,
+      "lowest_eigenvalue": -6.823050888881351,
+      "lowest_multiplicity": 1,
+      "resolved_lowest_weight": 0.02083333333333358,
+      "coherent_lowest_weight": 0.04150841833965618
+    },
+    {
+      "theta": 0.79,
+      "center_eigenvalue_multiplicity": 12,
+      "resolved_center_energy_weight": 0.4999999999999999,
+      "coherent_center_energy_weight": 0.49999999999999933,
+      "lowest_eigenvalue": -6.804511867720021,
+      "lowest_multiplicity": 1,
+      "resolved_lowest_weight": 0.020833333333348355,
+      "coherent_lowest_weight": 0.026194522157870402
+    },
+    {
+      "theta": 1.19,
+      "center_eigenvalue_multiplicity": 12,
+      "resolved_center_energy_weight": 0.49999999999999883,
+      "coherent_center_energy_weight": 0.49999999999999895,
+      "lowest_eigenvalue": -6.8227326690670695,
+      "lowest_multiplicity": 1,
+      "resolved_lowest_weight": 0.020833333333333297,
+      "coherent_lowest_weight": 0.023470656947065967
+    }
+  ],
+  "L4_exact_full_characteristic_polynomial_theta_zero": "(e + 2)**2*(e + 4)**14*(e + 6)**2*(e**2 + 6*e + 6)**2*(e**2 + 8*e + 8)*(e**2 + 8*e + 10)**2*(e**2 + 8*e + 14)**2*(e**2 + 10*e + 22)**2",
+  "L4_exact_charge_centered_fourth_moment": "2*z + 12 + 2/z",
+  "wrong_fermion_boundary_phase_max_eigenvector_residual": 1.7320508075688787,
+  "read_boundary": "Only this independent packet functions are reused; no fourth-campaign author source is imported or read."
+}

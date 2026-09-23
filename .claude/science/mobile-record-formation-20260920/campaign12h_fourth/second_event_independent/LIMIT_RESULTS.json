@@ -1,0 +1,205 @@
+{
+  "complete_matrix_mean_controls": [
+    {
+      "theta": 0.193,
+      "eta": 1.0,
+      "coherent": false,
+      "mean": 0.4166666666666673,
+      "formula": 0.41666666666666663,
+      "Lyapunov_residual": 4.689716626573701e-14
+    },
+    {
+      "theta": 0.193,
+      "eta": 1.0,
+      "coherent": true,
+      "mean": 0.4166666666666662,
+      "formula": 0.41666666666666663,
+      "Lyapunov_residual": 4.689716626573701e-14
+    },
+    {
+      "theta": 0.193,
+      "eta": 13.0,
+      "coherent": false,
+      "mean": 0.416666666666668,
+      "formula": 0.41666666666666663,
+      "Lyapunov_residual": 3.1530333899354446e-14
+    },
+    {
+      "theta": 0.193,
+      "eta": 13.0,
+      "coherent": true,
+      "mean": 0.41666666666666485,
+      "formula": 0.41666666666666663,
+      "Lyapunov_residual": 3.1530333899354446e-14
+    },
+    {
+      "theta": 0.193,
+      "eta": 71.0,
+      "coherent": false,
+      "mean": 0.4166666666666876,
+      "formula": 0.41666666666666663,
+      "Lyapunov_residual": 2.1316282072803006e-13
+    },
+    {
+      "theta": 0.193,
+      "eta": 71.0,
+      "coherent": true,
+      "mean": 0.4166666666666846,
+      "formula": 0.41666666666666663,
+      "Lyapunov_residual": 2.1316282072803006e-13
+    },
+    {
+      "theta": 0.631,
+      "eta": 1.0,
+      "coherent": false,
+      "mean": 0.4166666666666673,
+      "formula": 0.41666666666666663,
+      "Lyapunov_residual": 7.549516567451064e-15
+    },
+    {
+      "theta": 0.631,
+      "eta": 1.0,
+      "coherent": true,
+      "mean": 0.41666666666666724,
+      "formula": 0.41666666666666663,
+      "Lyapunov_residual": 7.549516567451064e-15
+    },
+    {
+      "theta": 0.631,
+      "eta": 13.0,
+      "coherent": false,
+      "mean": 0.41666666666666874,
+      "formula": 0.41666666666666663,
+      "Lyapunov_residual": 2.2337721053225953e-14
+    },
+    {
+      "theta": 0.631,
+      "eta": 13.0,
+      "coherent": true,
+      "mean": 0.41666666666666907,
+      "formula": 0.41666666666666663,
+      "Lyapunov_residual": 2.2337721053225953e-14
+    },
+    {
+      "theta": 0.631,
+      "eta": 71.0,
+      "coherent": false,
+      "mean": 0.41666666666665025,
+      "formula": 0.41666666666666663,
+      "Lyapunov_residual": 1.8688161772073277e-13
+    },
+    {
+      "theta": 0.631,
+      "eta": 71.0,
+      "coherent": true,
+      "mean": 0.41666666666664853,
+      "formula": 0.41666666666666663,
+      "Lyapunov_residual": 1.8688161772073277e-13
+    },
+    {
+      "theta": 1.19,
+      "eta": 1.0,
+      "coherent": false,
+      "mean": 0.41666666666666574,
+      "formula": 0.41666666666666663,
+      "Lyapunov_residual": 1.978191883504222e-14
+    },
+    {
+      "theta": 1.19,
+      "eta": 1.0,
+      "coherent": true,
+      "mean": 0.41666666666666635,
+      "formula": 0.41666666666666663,
+      "Lyapunov_residual": 1.978191883504222e-14
+    },
+    {
+      "theta": 1.19,
+      "eta": 13.0,
+      "coherent": false,
+      "mean": 0.4166666666666673,
+      "formula": 0.41666666666666663,
+      "Lyapunov_residual": 2.609024107869118e-14
+    },
+    {
+      "theta": 1.19,
+      "eta": 13.0,
+      "coherent": true,
+      "mean": 0.41666666666666446,
+      "formula": 0.41666666666666663,
+      "Lyapunov_residual": 2.609024107869118e-14
+    },
+    {
+      "theta": 1.19,
+      "eta": 71.0,
+      "coherent": false,
+      "mean": 0.4166666666666937,
+      "formula": 0.41666666666666663,
+      "Lyapunov_residual": 1.6991117374353365e-13
+    },
+    {
+      "theta": 1.19,
+      "eta": 71.0,
+      "coherent": true,
+      "mean": 0.41666666666669183,
+      "formula": 0.41666666666666663,
+      "Lyapunov_residual": 1.6991117374353365e-13
+    }
+  ],
+  "shrinking_normalizable_packet_controls": [
+    {
+      "eta": 40.0,
+      "packet_halfwidth": 0.000625,
+      "coherent": false,
+      "time": 0.8,
+      "quadrature_survival": 0.13917745359210945,
+      "exceptional_limit": 0.13899821926446154,
+      "fixed_input_limit": 0.1465312607581277
+    },
+    {
+      "eta": 40.0,
+      "packet_halfwidth": 0.000625,
+      "coherent": true,
+      "time": 0.8,
+      "quadrature_survival": 0.13203448410161256,
+      "exceptional_limit": 0.13146517777079536,
+      "fixed_input_limit": 0.1465312607581277
+    },
+    {
+      "eta": 160.0,
+      "packet_halfwidth": 3.90625e-05,
+      "coherent": false,
+      "time": 0.8,
+      "quadrature_survival": 0.13881910796572564,
+      "exceptional_limit": 0.13899821926446154,
+      "fixed_input_limit": 0.1465312607581277
+    },
+    {
+      "eta": 160.0,
+      "packet_halfwidth": 3.90625e-05,
+      "coherent": true,
+      "time": 0.8,
+      "quadrature_survival": 0.13118174664319981,
+      "exceptional_limit": 0.13146517777079536,
+      "fixed_input_limit": 0.1465312607581277
+    },
+    {
+      "eta": 640.0,
+      "packet_halfwidth": 2.44140625e-06,
+      "coherent": false,
+      "time": 0.8,
+      "quadrature_survival": 0.13902339293467036,
+      "exceptional_limit": 0.13899821926446154,
+      "fixed_input_limit": 0.1465312607581277
+    },
+    {
+      "eta": 640.0,
+      "packet_halfwidth": 2.44140625e-06,
+      "coherent": true,
+      "time": 0.8,
+      "quadrature_survival": 0.1315069965397083,
+      "exceptional_limit": 0.13146517777079536,
+      "fixed_input_limit": 0.1465312607581277
+    }
+  ],
+  "scope": "Mean controls use the complete independent 36-dimensional generator; packet quadrature corroborates the analytic countercontrol to uniformity over eta-dependent initial states."
+}

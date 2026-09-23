@@ -1,0 +1,10 @@
+{
+  "failed_source_sha256": "17f38149cdec97970444130330dea7d3942d6c5c03b7ad79f175860f9b2741f0",
+  "failed_source_preserved": "ring_survival.py",
+  "cause": "Incorrect guessed off-diagonal sign in the auxiliary mean-time Lyapunov solution, under the chosen +i omega no-event coupling. The asserted mean from the initial lossy coordinate is unchanged.",
+  "wrong_Lyapunov_left_side": "Matrix([[-3, -2*I*k/g], [2*I*k/g, 1]])",
+  "corrected_Lyapunov_left_side": "Matrix([[-1, 0], [0, -1]])",
+  "removed": "mean=sp.Matrix([[1/(2*k),sp.I/(2*g)],[-sp.I/(2*g),1/(2*k)+k/g**2]])",
+  "inserted": "mean=sp.Matrix([[1/(2*k),-sp.I/(2*g)],[sp.I/(2*g),1/(2*k)+k/g**2]])",
+  "repaired_source_sha256": "fdea16a0511ede653dc995dd30978cc077ce35c7656a38b851e1076cf694ece4"
+}

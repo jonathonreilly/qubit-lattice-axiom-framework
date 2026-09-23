@@ -1,0 +1,38 @@
+{
+  "created_utc": "2026-09-23T17:57:28.903499+00:00",
+  "status": "author second-event packet frozen before independent reconstruction comparison, provisional",
+  "files": {
+    "ADDITIONAL_ALGEBRA_PROBES.json": "0ef1cbd3328cb823ccd25acc0915e4bfc7073c74f5e10741a85c39ac77103d9d",
+    "CUBE_TWO_MARK_LOOP_READOUT.md": "fb02740a2879bb30d4998a1e3c6fc71807808d9c466f913f6e761d496acf8dab",
+    "PROBE.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROBE.stdout.log": "d89afb0ed10948ca80c6717e43303ac03d1d0aca9c2d6b0aa28e41c12fc43f10",
+    "PROBE_RUN_RECEIPT.json": "61adc21e9e30d93b88920598d252458bc7e702ca6e7dfdc9d72d802220dbf49f",
+    "QUADRATURE_REFINEMENT_RESULTS.json": "a6a724e47e549ac52660ae6972b015e81f54aab9ce9170cc1a161b28d408745b",
+    "REFINEMENT.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "REFINEMENT.stdout.log": "a6a724e47e549ac52660ae6972b015e81f54aab9ce9170cc1a161b28d408745b",
+    "REFINEMENT_RUN_RECEIPT.json": "9444b18c96bb8e58ad996c60437237d92705ca9d887ac55320882d38dda8d299",
+    "RESOLUTION_FAILURE_REPRODUCTION.stderr.log": "d934d3bc415b1cb1c77b39bfb50647ed19c8901c911a99b7833b4c9275b041dd",
+    "RESOLUTION_FAILURE_REPRODUCTION.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "RESOLUTION_FAILURE_REPRODUCTION_RUN_RECEIPT.json": "c8a9c6a7de583f400549b0b126a93c28abb9b1ac3b280feefd1fafe349f855a3",
+    "SECOND_EVENT_PROBE_RESULTS.json": "d89afb0ed10948ca80c6717e43303ac03d1d0aca9c2d6b0aa28e41c12fc43f10",
+    "SECOND_EVENT_VALIDATION_RESULTS.json": "5e82401b8f3d0a7a9810f4db0d8a898c626ca5980944269734d29d874fbc9769",
+    "SECOND_FORMATION_CLOCK_ON_THE_EIGHT_SITE_ROTOR_RING.md": "63855e05c27a1d76f750c2d1ff488829ea2a1d116394a043ab36558a01ddb157",
+    "VALIDATION.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "VALIDATION.stdout.log": "5e82401b8f3d0a7a9810f4db0d8a898c626ca5980944269734d29d874fbc9769",
+    "VALIDATION_RUN_RECEIPT.json": "db1f32100e7248598889c72b16d1ba8acc4bb08e1323e9372b858797f9698ad5",
+    "quadrature_refinement.py": "c77d0f2a9185bfccef63cc155569a7bb92c4003a28ffbed0a8020ebdf4b0e51e",
+    "quadrature_resolution_failure.py": "ffcce3c9ff7bb97a09c538fd32dec1f456b00f4cd1f0010c153954aa91fbb92f",
+    "second_event_probe.py": "4827171a51e018b306302b0fac315c000c63bb7311e69fcab18ad666916f1f25",
+    "second_event_validation.py": "3e5f37caaaa0a60ffce24f9049d992a0a15b283c8711da9ab3ee3637703c11fa"
+  },
+  "dependencies": {
+    "campaign12h_fourth/post_birth_ring_spectrum_author/AUTHOR_SEAL.json": "c2e0e2adcff2dee95c682da2789c19f3113445e7f3e53f20d95936ab25ec07b9",
+    "campaign12h_fourth/post_birth_ring_spectrum_independent/FINAL_SEAL.json": "6beaa587833b2d626154ffdd8fd2729ad844f164ee4be6b0c607b3f9b4402851",
+    "campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md": "002119d5a3f9bec171c3678cb15afdb91f7a763311ca38e6e4458ce10865572e"
+  },
+  "failed_controls_preserved": [
+    "128/256 quadrature resolution assertion; 512/1024 resolved it",
+    "H4=-4H2-4I linear guess rejected"
+  ],
+  "independence": "Checker has not read this packet; root received no second-event derivations from checker before freeze."
+}

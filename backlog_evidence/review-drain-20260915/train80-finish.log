@@ -1,0 +1,41 @@
+compact_rotor_ground_correlation_comparison_bounded_theorem_note_2026-09-16 bounded_theorem unaudited []
+compact_rotor_magnetic_excursion_bounded_theorem_note_2026-09-16 bounded_theorem unaudited []
+compact_rotor_sampled_magnetic_event_bounded_theorem_note_2026-09-16 bounded_theorem unaudited []
+compact_rotor_spatial_ground_path_limit_bounded_theorem_note_2026-09-16 bounded_theorem unaudited []
+compact_rotor_temporal_oscillation_coarse_current_bounded_theorem_note_2026-09-16 bounded_theorem unaudited []
+finite_box_electric_offset_response_and_tail_bounds_bounded_theorem_note_2026-09-16 bounded_theorem unaudited []
+local_rotor_density_and_finite_template_bounds_bounded_theorem_note_2026-09-16 bounded_theorem unaudited []
+positive_wilson_villain_mixture_and_weak_region_bounds_bounded_theorem_note_2026-09-16 bounded_theorem unaudited []
+principal_link_raw_curl_witness_and_mass_bound_bounded_theorem_note_2026-09-16 bounded_theorem unaudited []
+short_time_rotor_bridge_and_endpoint_hessian_bounds_bounded_theorem_note_2026-09-16 bounded_theorem unaudited []
+weighted_gaussian_damping_and_integer_time_blocking_bounded_theorem_note_2026-09-16 bounded_theorem unaudited []
+weighted_phase_corrector_and_magnetic_gram_certificates_bounded_theorem_note_2026-09-16 bounded_theorem unaudited ['scripts/finite_box_electric_offset_response_and_tail_bounds_check_2026_09_16.py']
+docs/audit/data/citation_graph_manifest.json | 92 +++++++++++++++++++++++++++-
+ 1 file changed, 90 insertions(+), 2 deletions(-)
+[detached HEAD a9f71131f2] Acknowledge reviewed source topology for train80
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 90 insertions(+), 2 deletions(-)
+From https://github.com/jonathonreilly/cl3-lattice-framework
+ * branch                  main       -> FETCH_HEAD
+remote: This repository moved. Please use the new location:        
+remote:   https://github.com/jonathonreilly/qubit-lattice-axiom-framework.git        
+remote: Bypassed rule violations for refs/heads/main:        
+remote: 
+remote: - Changes must be made through a pull request.        
+remote: 
+To https://github.com/jonathonreilly/cl3-lattice-framework.git
+   ed129b572e..a9f71131f2  HEAD -> main
+From https://github.com/jonathonreilly/cl3-lattice-framework
+ * branch                  main       -> FETCH_HEAD
+LANDED a9f71131f2772035c55fa4a851c0832a5cb82d00

@@ -1,0 +1,22 @@
+W1: zone averages and thresholds
+  L=64: <1/|s|>=0.91044 <|s|>=1.19380 chi=1.53751 chi_a=1.88273; 3<1/|s|> - chi - <|s|> = 0.0e+00; kappa_c log 0.22761 vs linear 0.12813; beta_c log 0.05931 vs linear 0.02615
+  L=128: <1/|s|>=0.91063 <|s|>=1.19380 chi=1.53808 chi_a=1.88273; 3<1/|s|> - chi - <|s|> = 0.0e+00; kappa_c log 0.22766 vs linear 0.12817; beta_c log 0.05931 vs linear 0.02615
+  L=256: <1/|s|>=0.91067 <|s|>=1.19380 chi=1.53822 chi_a=1.88273; 3<1/|s|> - chi - <|s|> = -4.4e-16; kappa_c log 0.22767 vs linear 0.12818; beta_c log 0.05931 vs linear 0.02615
+W2: 6^3 torus, amplitudes e^{+-delta}: spectrum against sqrt(sum sin^2 + 3 sinh^2 delta)
+  delta=0.2: max |spectrum - prediction| = 8.22e-15 (the 6^3 torus's wave vectors: pairs k, k+pi e_j folded); zone: cosh(d) E_lin(tanh d) = -1.247075, E_log = -1.247075
+  delta=0.5: max |spectrum - prediction| = 1.31e-14 (the 6^3 torus's wave vectors: pairs k, k+pi e_j folded); zone: cosh(d) E_lin(tanh d) = -1.507235, E_log = -1.507235
+W3: the balance in log rates, E(delta) = -<sqrt(|s|^2 + 3 sinh^2 delta)> + 6 kappa delta^2 (grid 128^3)
+  kappa=0.3: uniform local minimum; no interior minimum; barrier at delta=2.224 of height 2.0907; below the uniform value from delta=3.000
+  kappa=0.25: uniform local minimum; no interior minimum; barrier at delta=1.868 of height 0.8188; below the uniform value from delta=2.506
+  kappa=0.23: uniform local minimum; no interior minimum; barrier at delta=1.678 of height 0.4397; below the uniform value from delta=2.232
+  kappa=0.2277: uniform local minimum; no interior minimum; barrier at delta=1.654 of height 0.4014; below the uniform value from delta=2.196
+  kappa=0.225: uniform unstable; interior minimum at delta=0.084 (rest energy sqrt3 sinh = 0.146); barrier at delta=1.624 of height 0.3579; below the uniform value from delta=2.150
+  kappa=0.22: uniform unstable; interior minimum at delta=0.168 (rest energy sqrt3 sinh = 0.292); barrier at delta=1.564 of height 0.2821; below the uniform value from delta=2.060
+  kappa=0.21: uniform unstable; interior minimum at delta=0.312 (rest energy sqrt3 sinh = 0.549); barrier at delta=1.430 of height 0.1507; below the uniform value from delta=1.848
+  kappa=0.2: uniform unstable; interior minimum at delta=0.480 (rest energy sqrt3 sinh = 0.864); barrier at delta=1.254 of height 0.0511; below the uniform value from delta=1.530
+  kappa=0.18: uniform unstable; no interior minimum; no barrier; below the uniform value from delta=0.002
+  kappa=0.15: uniform unstable; no interior minimum; no barrier; below the uniform value from delta=0.002
+  kappa=0.1: uniform unstable; no interior minimum; no barrier; below the uniform value from delta=0.002
+W4: the crowd on the 3x3 torus under the log alternation vs linear + Jensen
+  n=4: E(0) per site -0.45407; second difference log 1.3508, linear 0.8967, difference 0.4541 (Jensen: |E(0)| = 0.4541; the linear one includes the small tori's linear zero-mode term)
+  n=6: E(0) per site -0.44702; second difference log 0.6450, linear 0.1979, difference 0.4470 (Jensen: |E(0)| = 0.4470; the linear one includes the small tori's linear zero-mode term)

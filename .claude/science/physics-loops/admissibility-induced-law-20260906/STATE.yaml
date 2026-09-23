@@ -105,3 +105,5 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+
+# block89: "opened for review 2026-09-23; thirty-seventh block of the source-link direction, first run on Claude Opus 5.5: block 59's law is for log c_b with the shift symmetry as the unit of rate; in log rates the alternation is an exact momentum-independent mass (H^2 = sum sin^2 k_j + sum sinh^2 delta_j); at the law's unit the balance carries a convexity term: alternation threshold alpha + 2 beta < <1/|s|>/4 = 0.228 (block 84: 0.128), anisotropy beta < (chi_a + 2<|s|>)/72 = 0.059 (block 88: 0.026); with the law quadratic in log rates the uniform field is never the global minimum; scalar-hop crossing tanh delta = 2a; nothing adopted"

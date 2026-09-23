@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_unit_of_rate_decides_the_alternations_thresholds_in_log_rates_exact_mass_convexity_term_no_global_minimum_2026_09_23.py
+runner_sha256: ac6a86deca08cbbaabf2041b0a4252b05e5cc0f8a0a8cbde12554d02d961184f
+input_fingerprint_sha256: 8bcfbb62f6fd01f0b469425172d91f0881668aca998c1ca01852f43d73cafb0c
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 3.00
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_UNIT_OF_RATE_DECIDES_THE_ALTERNATIONS_THRESHOLDS_IN_LOG_RATES_AN_EXACT_MASS_A_CONVEXITY_TERM_AND_NO_GLOBAL_MINIMUM_UNDER_A_QUADRATIC_LAW_BOUNDED_THEOREM_NOTE_2026-09-23.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: with bond amplitudes e^{+-delta} alternating along an axis (geometric mean one), the pair operator is h = -cosh(delta) sin k tau_z + sinh(delta) cos k tau_y and h^2 = sin^2 k + sinh^2 delta exactly: the alternation adds a momentum-independent mass; and h = cosh(delta) h_lin(tanh delta), block 84's linear alternation of strength tanh(delta) scaled by cosh(delta)
+PASS: B2 T1: in the 16-dimensional block of the eight species, with independent log alternations delta_1, delta_2, delta_3, H^2 = sum_j sin^2 k_j + sum_j sinh^2 delta_j exactly: the lattice dispersion of a massive walker, E^2 = |s|^2 + m^2 with m^2 = sum_j sinh^2 delta_j, the same for all eight species
+PASS: B3 T1 on a ring of eight, exactly: amplitudes 2 and 1/2 alternating (log alternation ln 2) give E^2 in [9/16, 17/16, 25/16] = sin^2 k + ((2 - 1/2)/2)^2 with sin^2 k in {0, 1/2, 1}: the mass (t - 1/t)/2 = 3/4 at every wave vector
+PASS: C1 T2: block 59's law (on u = log c, its item 3) annihilates the uniform shift u -> u + const: the unit of rate is the mean of the log rates, and a balance must hold it fixed; the log alternation u = +-delta does, while the linear alternation c = 1 +- delta of block 84 lowers the mean log rate by delta^2/2 + O(delta^4)
+PASS: C2 T2: pointwise in the zone (S = |s|^2), the log alternation on all three axes gives -sqrt(S + 3 sinh^2 delta) with second derivative -3/sqrt(S) at delta = 0, the linear one -sqrt(S + delta^2 sum cos^2) with -(3 - S)/sqrt(S): they differ by -sqrt(S) = -|s|, the Jensen term of the log (the arithmetic mean of e^{+-delta} is cosh delta)
+PASS: C3 T2: with block 59's cost 6 kappa delta^2 per site (kappa = alpha + 2 beta, block 84 T2), the balance at fixed mean log rate is (6 kappa - (3/2)<1/|s|>) delta^2: the uniform field is a local minimum iff alpha + 2 beta >= <1/|s|>/4; since 3<1/|s|> = chi + <|s|> pointwise-summed, this exceeds block 84's chi/12 by exactly <|s|>/12 > 0 (executed: about 2277/10000 against 1282/10000)
+PASS: D1 T3: pointwise (a = s_x^2, b = s_y^2 + s_z^2), the traceless anisotropy in log rates, c = (e^{2 eps}, e^{-eps}, e^{-eps}), gives the sea's second derivative 9ab/|s|^3 + (4a + b)/|s| against block 88's 9ab/|s|^3 for rates linear in the law's variable: the extra term is the Jensen term of the three axes
+PASS: D2 T3: averaging with the cyclic symmetry of the axes, <(4 s_x^2 + s_y^2 + s_z^2)/|s|> = 2<|s|>, so with block 88's cost 36 beta eps^2 the uniform field goes anisotropic iff beta < (chi_a + 2<|s|>)/72 (executed: about 593/10000, against block 88's chi_a/72, about 262/10000)
+PASS: E1 T4: since sqrt(|s|^2 + 3 sinh^2 delta) >= sqrt(3) sinh delta >= sqrt(3) delta^3/6 and <|s|> <= sqrt(3), at delta_w = 6 + 12 sqrt(3) kappa the balance is below the uniform value by more than sqrt(3)(delta_w^2 - 1) - sqrt(3) + ... > 0: exactly, sqrt(3) delta_w^3/6 - 6 kappa delta_w^2 - sqrt(3) = sqrt(3)(delta_w^2 - 1) > 0 for every kappa > 0 - with block 59's law quadratic in log rates the uniform bond-rate field is at most a local minimum; the global structure belongs to the law's completion, which the lane does not supply
+PASS: E2 T4(b): with the axioms' scalar hop through the same log-alternating bonds the corner energies are +-sqrt(4a^2 cosh^2 delta + 3 sinh^2 delta) (four each) and +-4a cosh delta +- that root (two each); exact instance e^delta = 2 (cosh 5/4, sinh 3/4): the squared corner spectrum at a = 1/4 is ['233/64 - 5*sqrt(133)/16', '133/64', '5*sqrt(133)/16 + 233/64'], and the corner matrix has nullity 4 at a = 3/10 = tanh(delta)/2 and 0 at a = 1/4: block 84 T4's crossing delta = 2a becomes tanh delta = 2a (the map delta_lin = tanh delta_log)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the pair operator and the 16-dimensional block symbolically; the ring of eight with amplitudes 2 and 1/2 exactly; block 59's law at k = 0
+per_site: executed - the pointwise second derivatives of the sea's energy for the alternation and the anisotropy in both parametrisations
+per_mode: executed - control: the zone averages <1/|s|>, <|s|>, chi, chi_a on midpoint grids to 256^3; the balance at all strengths in log rates (barrier, runaway crossing); the relation E_log(delta) = cosh(delta) E_lin(tanh delta)
+per_block: executed - the thresholds as exact solutions; the global witness delta_w symbolically; the corner spectrum with the scalar hop
+lattice_wide: T1 by identity for every wave vector; T2 and T3 at second order with the zone averages executed; T4 by an exact inequality for every kappa; the law's variable is block 59's (log rates) and its unit the law's zero mode, as block 59 and block 55 T4 state; the completion beyond second order, the sea reading and the balance as a minimisation are not derived
+PASS: G1 the five N5 resolution lines are printed
+scope: the unit of rate decides the alternation's thresholds - in block 59's own variable (log rates) the alternation is an exact momentum-independent mass (E^2 = sum sin^2 k + sum sinh^2 delta), the threshold is alpha + 2 beta < <1/|s|>/4 = 0.228 (block 84's 0.128 is at fixed arithmetic mean with rates linear in the law's variable), the anisotropy's is beta < (chi_a + 2<|s|>)/72 = 0.059 (block 88's 0.026); with the law quadratic in log rates the uniform field is never the global minimum; nothing adopted
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-23 block 89 — author checks (not a review PASS)
+Written lens pass by the supervisor (Claude Opus 5.5). The law's variable read in block 59 before building on blocks 84/88; the convexity term derived pointwise; `3⟨1/|s|⟩ = χ + ⟨|s|⟩` symbolic and numeric; the global statement an exact inequality with a witness; heavy symbolic eigenvalue problems replaced by exact rational instances; an author's name removed from the claim. Census 9/9 in family.

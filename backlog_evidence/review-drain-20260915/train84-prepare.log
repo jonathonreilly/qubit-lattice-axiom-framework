@@ -1,0 +1,62 @@
+[detached HEAD a0f8dbe92d] Preserve independently reviewed source unit PR8170
+ Date: Tue Sep 22 23:49:43 2026 -0400
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 46 files changed, 3901 insertions(+)
+ create mode 100644 docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8170-evidence/DEFERRED_SCIENCE.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8170-evidence/README.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8170-evidence/archive-manifest.json
+ create mode 100644 docs/work_history/repo/review_feedback/pr8170-evidence/kept/ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_IN_LEVEL_TIME_GAIN_ONE_SPIN_WAVES_LOCAL_LIMIT_CONSTANT_FINITE_PLANES_FORGET_AND_THE_SIMULATED_ALGEBRAIC_DECAY_OF_THE_INITIAL_PLANE_MEMORY_BOUNDED_THEOREM_NOTE_2026-09-16-e50aaf4b6686e647.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8170-evidence/kept/APPROACH_REGISTRY-4e9fef47b9eac07d.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8170-evidence/kept/CHECKER_block26_findings-c0a6cd25f43f3f2c.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8170-evidence/kept/CLAIM_STATUS_CERTIFICATE_block26-315a8231a89a61c4.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8170-evidence/kept/GOAL_block26-083903adfde6cc31.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8170-evidence/kept/HANDOFF-2061d1bff2a70397.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8170-evidence/kept/NO_GO_LEDGER-05cc24d6760014de.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8170-evidence/kept/OPPORTUNITY_QUEUE-72e985a42c72b74e.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8170-evidence/kept/RESULTS_block26-0263fa9278e61353.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8170-evidence/kept/REVIEW_HISTORY-5eeaa28fca70564a.md
+ create mode 100644 docs/work_history/repo/review_feedback/pr8170-evidence/kept/STATE-829e293fc3eb28c8.yaml
+ create mode 100644 docs/work_history/repo/review_feedback/pr8170-evidence/kept/TRACE_GATE-151b6bec86e6fa6b.md
+ create mode 100755 docs/work_history/repo/review_feedback/pr8170-evidence/kept/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16-7a6b13bd8dc79184.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8170-evidence/kept/admissibility_rule_unsoldered_formation_law_level_time_gain_one_spin_waves_local_limit_constant_finite_planes_forget_2026_09_16-e85af41ebb5f3988.txt.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8170-evidence/kept/citation_graph_manifest-c62d06ab535f0231.json.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_exact-0e078d3e64a7b76c.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_exact.out-891d6f3da2690316.txt.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_fit-75dc4ad65a2006b6.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_fit.out-e65f9660e918cddf.txt.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_refuter-eb0b609f3f34e516.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_refuter.out-6369a7bd268aca02.txt.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_sixaxis_sim-42e69bc4a408b08b.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_sixaxis_sim.out-69da2aaa54f4ba02.txt.gz
+ create mode 100644 docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_sphere_sim-fa0bc7e4e8db6745.py
+ create mode 100644 docs/work_history/repo/review_feedback/pr8170-evidence/kept/supervisor_control_block26_sphere_sim.out-d6fb9c6074f0412b.txt.gz
+ create mode 100644 logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--exact_mean_gain_wrong.json
+ create mode 100644 logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--exponent_wrong.json
+ create mode 100644 logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--gain_wrong.json
+ create mode 100644 logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--harmonic_bound_wrong.json
+ create mode 100644 logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--kernel_mean_wrong.json
+ create mode 100644 logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--langevin_bound_wrong.json
+ create mode 100644 logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--minorization_wrong.json
+ create mode 100644 logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--one_site_chain_wrong.json
+ create mode 100644 logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--path_identity_wrong.json
+ create mode 100644 logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--positive_series_coefficient_wrong.json
+ create mode 100644 logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--return_constant_wrong.json
+ create mode 100644 logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--return_lower_bound_wrong.json
+ create mode 100644 logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--second_moment_wrong.json
+ create mode 100644 logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16--sixaxis_deviation_wrong.json
+ create mode 100644 logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.json
+ create mode 100644 logs/runner-cache/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.txt
+ create mode 100755 scripts/sphere_level_kernel_moments_walk_local_limit_finite_plane_mixing_2026_09_16.py
+FROZEN a0f8dbe92d402e4aacfa523023690a10c2c6770d sources 46 inputs 73 notes 1

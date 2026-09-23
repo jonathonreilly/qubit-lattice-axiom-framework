@@ -1,0 +1,30 @@
+sphere_level_kernel_moments_walk_local_limit_and_finite_plane_mixing_bounded_theorem_note_2026-09-16 bounded_theorem unaudited []
+docs/audit/data/citation_graph_manifest.json | 60 +++++++++++++++++++++++++++-
+ 1 file changed, 58 insertions(+), 2 deletions(-)
+[detached HEAD 6332b12b59] Acknowledge reviewed source topology for train84
+ Committer: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 58 insertions(+), 2 deletions(-)
+From https://github.com/jonathonreilly/cl3-lattice-framework
+ * branch                  main       -> FETCH_HEAD
+remote: This repository moved. Please use the new location:        
+remote:   https://github.com/jonathonreilly/qubit-lattice-axiom-framework.git        
+remote: Bypassed rule violations for refs/heads/main:        
+remote: 
+remote: - Changes must be made through a pull request.        
+remote: 
+To https://github.com/jonathonreilly/cl3-lattice-framework.git
+   8bf4649537..6332b12b59  HEAD -> main
+From https://github.com/jonathonreilly/cl3-lattice-framework
+ * branch                  main       -> FETCH_HEAD
+LANDED 6332b12b59c83c5b08cc7b4ad90898cb6666050d

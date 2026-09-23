@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "kind": "same-session-cold-source-and-capture-plan-clearance",
+  "reviewer_session": "/root/review_8171",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "low",
+  "pr": 8171,
+  "decision": "CLEAR_FOR_BOUNDED_CAPTURE",
+  "source_tree": "6630433b9aa6b17b66a64466a7484563b4fb61ef",
+  "source_base": "8bf464953779b8ada8415208e89a656411f9f525",
+  "original_head": "15b6e402b902964ada51ffdd8e8c88fb4e472013",
+  "source_clearance": true,
+  "capture_plan_clearance": true,
+  "final_pass": false,
+  "landing_pass": false,
+  "material_findings": [],
+  "primary_runs": 0,
+  "mutation_runs": 0,
+  "simulation_runs": 0,
+  "source_edits": 0,
+  "conditional_candidate": {
+    "commit": "a0f8dbe92d402e4aacfa523023690a10c2c6770d",
+    "tree": "2ab5e0ff2f8a8188572ffe402f0ded5f9433b214",
+    "interaction": "clear for exact candidate bytes",
+    "current_main": false,
+    "activation": "root confirmation and new actual-base binding required"
+  },
+  "binding_only_adapter_revision_allowed": true,
+  "branch_preservation_required": true,
+  "references": [
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-cold-review-v1.md",
+      "sha256": "4c5aa2a96cb64f79e581139874d3c9989ddc20378d7dc411eaf32a9d7a5bd757"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-author-unit-draft-v1.json",
+      "sha256": "823b3e2e86efde22d13af579073b1bed92c847a33409975ee326d9ca30101cc9"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-author-cheap-v1.json",
+      "sha256": "72e3da04119c0cc2f5cb1148aea4d683536d730842c52836a41d0289abdb5366"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-capture-v1.py",
+      "sha256": "3ac252adfb2c0eced1b93eb071649e86fc1e581fb07019d5dc99707e5c38c588"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-mutation-capture-v1.py",
+      "sha256": "76041434c6e8f7cf393e4a06cf667e94a10a8ede8191395d24ba8290fd1c1f9f"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-capture-plan-v1.json",
+      "sha256": "12b72e616fd0579db2e76fbe74c8b18884db853416da60a460bca3662d68b352"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/drain8171-early-review-v2.json",
+      "sha256": "5da6fcfb236143f5a01623be0ec909d7dd4b1fde666b77e8c2c37debd1fd6995"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8171/verify_cold_v1.py",
+      "sha256": "6dcf1956d8aff0e08d5a436f662dd24c464cddf6f546bbd255d0b474fd0e503e"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8171/verify_cold_v1.stdout.json",
+      "sha256": "a726e2e0af99f4dae0663226bb4132ae580c4fa15de40555f1d763b236f69e41"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8171/verify_cold_v1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/review-drain-20260915/check8171/train84-sphere8170-context.txt",
+      "sha256": "bd7968234832dcd13368f4208b2081a69aaf9674b1e9b24b65f44ee986f26b0a"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "Mechanical activation of conditionally reviewed train84 interaction; no new scientific verdict",
+  "cold_report": {
+    "path": "/private/tmp/review-drain-20260915/drain8171-cold-review-v1.json",
+    "sha256": "91611d46774f9935b5cbaea546b4da4be5946cd11279c26529dda53208800b12"
+  },
+  "candidate_commit": "a0f8dbe92d402e4aacfa523023690a10c2c6770d",
+  "candidate_tree": "2ab5e0ff2f8a8188572ffe402f0ded5f9433b214",
+  "landed_main": "6332b12b59c83c5b08cc7b4ad90898cb6666050d",
+  "new_author_tree": "17b29cac51564e91ef80d473704db4a441df93c9",
+  "prior_author_tree": "6630433b9aa6b17b66a64466a7484563b4fb61ef",
+  "source_paths_identical": true,
+  "all_bound_inputs_identical": true,
+  "landing_cleanup_only": [
+    "docs/audit/data/citation_graph_manifest.json"
+  ],
+  "new_draft": {
+    "path": "/private/tmp/review-drain-20260915/drain8171-author-unit-draft-v2.json",
+    "sha256": "76354de927405c549bf033324c0ff943c47fbae71808c25e7c13bc1f2e1b72ea"
+  },
+  "remaining": "Same-session new-tree binding confirmation, new-tree cheap receipt, bounded capture, final confirmation and next combined gate."
+}

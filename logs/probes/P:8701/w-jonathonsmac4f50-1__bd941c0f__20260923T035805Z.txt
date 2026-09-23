@@ -1,0 +1,4 @@
+PR #8701: docs(campaign): formed flux as a persistent walk
+branch claude/formed-flux-persistent-walk-20260922 (base main)
+runners in the PR: 1
+== scripts/formed_flux_persistent_walk_straight_continuation_ballistic_then_diffusive_2026_09_22.py: rc=0 PASS=7 FAIL=0

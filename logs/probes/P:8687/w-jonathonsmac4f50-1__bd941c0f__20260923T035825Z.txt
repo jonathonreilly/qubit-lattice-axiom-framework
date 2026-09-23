@@ -1,0 +1,4 @@
+PR #8687: docs(campaign): directed ice from sweep formation
+branch claude/directed-ice-sweep-formation-20260922 (base main)
+runners in the PR: 1
+== scripts/directed_ice_sweep_formation_flux_propagates_as_a_directed_random_walk_2026_09_22.py: rc=0 PASS=12 FAIL=0

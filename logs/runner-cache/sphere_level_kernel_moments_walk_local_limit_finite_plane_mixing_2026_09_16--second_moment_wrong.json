@@ -1,0 +1,98 @@
+{
+  "checks": [
+    {
+      "tag": "A1",
+      "passed": true,
+      "detail": "the note carries its claim_id once"
+    },
+    {
+      "tag": "A2",
+      "passed": true,
+      "detail": "the axioms memo carries the four sentences quoted under Premises"
+    },
+    {
+      "tag": "A3",
+      "passed": true,
+      "detail": "block 01's note (on main) carries its claim_id and the rule's product form"
+    },
+    {
+      "tag": "A4",
+      "passed": true,
+      "detail": "all three declared inputs match exact source/parent pins"
+    },
+    {
+      "tag": "B1",
+      "passed": false,
+      "detail": "T1: for the sphere kernel with concentration kappa, E[w] = coth kappa - 1/kappa =: A(kappa) and E[w^2] = 1 - 2A/kappa (w the cosine to the mean direction), so E[s|S] = A u and E[s s^T|S] = (A/kappa) I + (1 - 3A/kappa) u u^T; the density against the uniform law on the sphere is (kappa/sinh kappa) e^{kappa s.u}"
+    },
+    {
+      "tag": "B2",
+      "passed": true,
+      "detail": "Positive-series coefficient 4n(n-1)/(2n+1)! proves f>0 for k>0 and A<k/3; ten original rational enclosure fixtures retained"
+    },
+    {
+      "tag": "B4",
+      "passed": true,
+      "detail": "At k=1, sinh^2(1)>62/45>4/3 gives A_prime(1)>1/4; historical derivative upper bound rejected"
+    },
+    {
+      "tag": "B3",
+      "passed": true,
+      "detail": "T1: the one-step magnetization from the aligned plane is A(3 beta): in [8888, 8889]/10^4 at beta = 3, [9444, 9445]/10^4 at 6, [9722, 9723]/10^4 at 12, [9861, 9862]/10^4 at 24 (exact enclosures); the one-step transverse second moment is 2A(3 beta)/(3 beta)"
+    },
+    {
+      "tag": "C1",
+      "passed": true,
+      "detail": "T2: beta s.(s_1 + s_2 + s_3) = 3 beta - (beta/2) sum_i |theta - theta_i|^2 + O(4) in transverse coordinates; the maximum is the average of the three (mode gain one, not exact mean gain) with Hessian -3 beta I; the exact one-step transverse variance is A(3 beta)/(3 beta) per component"
+    },
+    {
+      "tag": "C2",
+      "passed": true,
+      "detail": "Exact common-rotation mean gain A(3 beta), Jacobian A(3 beta)/3 times transverse predecessor sum; gain-one auxiliary model is separate"
+    },
+    {
+      "tag": "D1",
+      "passed": true,
+      "detail": "T3: p_k(-a, -b) = k!/(a! b! (k-a-b)!)/3^k by direct enumeration of the 3^k paths for k <= 6, and P_k = sum_y p_k(y)^2 (the return sum)"
+    },
+    {
+      "tag": "D2",
+      "passed": true,
+      "detail": "T3: for k <= 150 the exact return sums satisfy 3 sqrt3/(4 pi k) - 1/k^2 - (5/(2k)) e^{-k/4} <= P_k <= 3 sqrt3/(4 pi k) + 27/k^2 + e^{-sqrt(k)/7}, with sqrt3, pi and the exponentials enclosed rationally; k^2 |P_k - 3 sqrt3/(4 pi k)| stays below 1"
+    },
+    {
+      "tag": "D3",
+      "passed": true,
+      "detail": "T3: 1 - u = (4/9)[sin^2(theta1/2) + sin^2(theta2/2) + sin^2((theta1 - theta2)/2)], the quadratic part is theta^T M theta with det M = 1/27, the Gaussian integrals are 3 sqrt3 pi/k, (3 sqrt3 pi/k)(2/k^2) and 1458 pi/k^3; sum_{k<=t} P_k >= (3 sqrt3/(4 pi)) H_t - 6/25 for t <= 150 exactly and the tail beyond 150 costs at most 1/100, giving the constant 1/4 for every t; the upper sum including P0 is 1 + 27 pi^2/6 + 98 < 150"
+    },
+    {
+      "tag": "E1",
+      "passed": true,
+      "detail": "T4: on the one-site periodic plane the chain s_{t+1} ~ K_beta(.|3 s_t) has E[s_{t+1}.e | s_t] = A(3 beta)(s_t.e), so m_t = A(3 beta)^t exactly"
+    },
+    {
+      "tag": "E2",
+      "passed": true,
+      "detail": "T4: the kernel's density against the uniform law on the sphere is at least 2 kappa/(e^{2 kappa} - 1) >= 2 kappa e^{-2 kappa}, decreasing in kappa; on an L x L plane the level kernel has density at least (6 beta/(e^{6 beta} - 1))^{L^2}, a uniform minorization"
+    },
+    {
+      "tag": "E3",
+      "passed": true,
+      "detail": "T5: gamma(beta) = (3 sqrt3/(4 pi)) A(3 beta)/(3 beta) lies in [408, 409]/10^4 at beta = 3, [216, 217]/10^4 at 6, [1116, 1117]/10^5 at 12, [566, 567]/10^5 at 24 (exact enclosures)"
+    },
+    {
+      "tag": "E4",
+      "passed": true,
+      "detail": "side-by-side: at the six-axis weights (e^beta, e^-beta, 1) the three deviations are (e^{-3 beta} + 4)/(e^{3 beta} + e^{-3 beta} + 4), (e^{-beta} + 4)/(e^{beta} + e^{-beta} + 4), (e^{-2 beta} + e^{beta} + e^{-beta} + 2)/(e^{2 beta} + e^{-2 beta} + e^{beta} + e^{-beta} + 2); the aligned-triple deviation is below 1/1600 at beta = 3 and below 1/10^7 at beta = 6"
+    }
+  ],
+  "passed": 16,
+  "failed": 1,
+  "source_sha256": "3bcc5fd69299c8c176321bd95ae46416a3325e4a0ed1f9916ff820baf7236cca",
+  "input_sha256": {
+    "docs/SPHERE_LEVEL_KERNEL_MOMENTS_WALK_LOCAL_LIMIT_AND_FINITE_PLANE_MIXING_BOUNDED_THEOREM_NOTE_2026-09-16.md": "bd7968234832dcd13368f4208b2081a69aaf9674b1e9b24b65f44ee986f26b0a",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/ADMISSIBILITY_RULE_FORMATION_LAW_VERSUS_STATIC_LAW_FINITE_WINDOW_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-06.md": "cc7e8423b3bb35f7f2cf4699d498556b98fbc55229eb8a5d9f52e1ba00a63f97"
+  },
+  "mutation": "second_moment_wrong"
+}

@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/rotor_joint_characteristic_check_2026_09_16.py
+runner_sha256: 98deb7a0b06c820ad1f4656386095286ea16751c411e4aeff8564a5dfb27dc1e
+input_fingerprint_sha256: e4b7fc0994be22722bada7dcf4ad60102e968eb4c3f3f22dfdeb3be56a0fefec
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.48
+status: ok
+----- stdout -----
+Weighted cubic commutator, Fourier normalization, and single-rotor characteristic challenge completed.
+g=0.60: characteristic error=0.00758392, ODE residual=0.0194424
+g=0.40: characteristic error=0.00337154, ODE residual=0.00860415
+g=0.25: characteristic error=0.00131736, ODE residual=0.00335366
+g=0.16: characteristic error=0.000539649, ODE residual=0.00137248
+per_element: executed — differentiated commutators, Fourier normalization and Duhamel quadrature
+per_site: executed — 3-cube geometry and seven-site two-component covariance fixture
+per_mode: executed — four single-rotor cutoffs at g=0.6,0.4,0.25,0.16
+per_block: executed — finite weighted matrices, translated defects and rotor exponentials
+lattice_wide: checked and not executed — uniform bounds and joint-limit/time arguments are written proofs; finite fixtures do not execute an infinite lattice
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

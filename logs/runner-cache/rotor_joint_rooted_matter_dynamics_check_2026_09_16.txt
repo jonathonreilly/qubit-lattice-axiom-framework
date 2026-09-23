@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/rotor_joint_rooted_matter_dynamics_check_2026_09_16.py
+runner_sha256: 13e8b74ef6ed229d9447cd976c1ef5c34531d0cbe5e7f6979d1bb56c860e3ef6
+input_fingerprint_sha256: 3063e87f184d4aaa57aa3f9d14a3dd938734e330878ce12827f008f973f7c813
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.64
+status: ok
+----- stdout -----
+g=0.60: rooted residual=0.434465, t=1.4 error=0.155876
+g=0.40: rooted residual=0.292878, t=1.4 error=0.0892913
+g=0.25: rooted residual=0.184176, t=1.4 error=0.0515645
+per_element: executed — CAR signs, quadratic path term and residual decomposition
+per_site: executed — four-site charged ring in a 36-configuration fixed-number sector
+per_mode: executed — three finite flux cutoffs with original 1e-16 tail threshold
+per_block: executed — bounded matter propagation at times0.7 and1.4 with sign discriminator
+lattice_wide: checked and not executed — uniform bounds and joint-limit/time arguments are written proofs; finite fixtures do not execute an infinite lattice
+TOTAL: PASS=33 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/rotor_tree_slater_dressing_check_2026_09_16.py
+runner_sha256: 5fa26d25f7842abfd09f6d6b5587ab47595643848bf7fa9def067b51f15b8e0a
+input_fingerprint_sha256: 9943b43fd7f3fdad73dd30897cdf8302ac287668c06ff4213a80f597d5c85026
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: divide by zero encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: overflow encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: invalid value encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+Literal axial tree, charge dressing, and Slater curvature challenges completed.
+Wrong dressing sign discrepancy: 4.29346
+R=2: summed charge variance=0.936274, analytic upper=48
+R=3: summed charge variance=7.72686, analytic upper=324
+R=4: summed charge variance=30.404, analytic upper=1152
+per_element: executed — integer paths, signed loop fillings and Slater determinant curvature
+per_site: executed — open cubic blocks R=2,3,4 with explicit subtree charges
+per_mode: executed — occupied open-Wilson eigenvectors and particle-hole symmetry
+per_block: executed — 64-state charged dressing and paired Slater variances
+lattice_wide: checked and not executed — uniform bounds and joint-limit/time arguments are written proofs; finite fixtures do not execute an infinite lattice
+TOTAL: PASS=348 FAIL=0
+
+----- stderr -----
+

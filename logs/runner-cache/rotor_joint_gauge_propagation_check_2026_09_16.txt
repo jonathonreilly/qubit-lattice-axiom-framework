@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/rotor_joint_gauge_propagation_check_2026_09_16.py
+runner_sha256: 8a603e8c4f8bac8cd14f1d3208802468d2389fbd5d8de4a12bc729c96efea997
+input_fingerprint_sha256: 4e8a079569e0143bd971f084a38239fc8c47733e080d67d8e6b5890bf0302f13
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.67
+status: ok
+----- stdout -----
+g=0.60: charged generator residual=0.572925, t=1.4 norm error=0.565832
+g=0.40: charged generator residual=0.360846, t=1.4 norm error=0.37649
+g=0.25: charged generator residual=0.22047, t=1.4 norm error=0.237059
+per_element: executed — charged flux increments, current signs and residual identities
+per_site: executed — four-site charged ring at g=0.6,0.4,0.25
+per_mode: executed — weighted symbols on grids L=5,8,12 and three small radii; finite norms are diagnostic
+per_block: executed — sparse charged Duhamel comparisons and hidden-oscillator witness
+lattice_wide: checked and not executed — uniform bounds and joint-limit/time arguments are written proofs; finite fixtures do not execute an infinite lattice
+TOTAL: PASS=17776 FAIL=0
+
+----- stderr -----
+

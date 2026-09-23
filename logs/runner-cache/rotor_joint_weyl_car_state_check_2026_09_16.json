@@ -1,0 +1,102 @@
+{
+  "compact_weyl_products": [
+    {
+      "g": 0.6,
+      "cutoff": 19,
+      "sigma": 0.6199999999999999,
+      "compact_defect": 0.09005282715756519,
+      "root_error": 0.04779766243452162,
+      "root_upper": 0.3061604552275645,
+      "excited_error": 0.06164794812895321,
+      "excited_upper": 0.38056045522756454,
+      "wrong_sign_error": 0.5834736164944875,
+      "boundary_mass": 1.3800993754054807e-34,
+      "excited_boundary_mass": 1.0726034408992283e-34
+    },
+    {
+      "g": 0.4,
+      "cutoff": 28,
+      "sigma": 0.6199999999999999,
+      "compact_defect": 0.040004257197164564,
+      "root_error": 0.021568825598794607,
+      "root_upper": 0.20408590669711424,
+      "excited_error": 0.028342491067560763,
+      "excited_upper": 0.25368590669711427,
+      "wrong_sign_error": 0.5980107585585602,
+      "boundary_mass": 4.701461467295623e-40,
+      "excited_boundary_mass": 7.560146654187244e-40
+    },
+    {
+      "g": 0.25,
+      "cutoff": 44,
+      "sigma": 0.6199999999999999,
+      "compact_defect": 0.01562524415548741,
+      "root_error": 0.00848625663894747,
+      "root_upper": 0.12755120369740686,
+      "excited_error": 0.011252673805636696,
+      "excited_upper": 0.15855120369740686,
+      "wrong_sign_error": 0.6053372056781239,
+      "boundary_mass": 1.0235183721747837e-44,
+      "excited_boundary_mass": 1.4681143582977905e-44
+    },
+    {
+      "g": 0.16,
+      "cutoff": 69,
+      "sigma": 0.6199999999999999,
+      "compact_defect": 0.006400016542973871,
+      "root_error": 0.00348530852830914,
+      "root_upper": 0.08163254167521335,
+      "excited_error": 0.004637245166275738,
+      "excited_upper": 0.10147254167521334,
+      "wrong_sign_error": 0.6081514507055307,
+      "boundary_mass": 5.333954829300153e-49,
+      "excited_boundary_mass": 5.5532839066166875e-49
+    }
+  ],
+  "finite_zero_mode_ambiguity": [
+    {
+      "L": 8,
+      "zero_momenta": 2,
+      "common_ground_energy": -4.82842712474619,
+      "local_covariance_difference": 0.24999999999999994,
+      "full_covariance_operator_difference": 0.9999999999999998
+    },
+    {
+      "L": 16,
+      "zero_momenta": 2,
+      "common_ground_energy": -10.054678984251696,
+      "local_covariance_difference": 0.125,
+      "full_covariance_operator_difference": 1.0
+    },
+    {
+      "L": 32,
+      "zero_momenta": 2,
+      "common_ground_energy": -20.30634077521772,
+      "local_covariance_difference": 0.062499999999999944,
+      "full_covariance_operator_difference": 1.0000000000000002
+    },
+    {
+      "L": 64,
+      "zero_momenta": 2,
+      "common_ground_energy": -40.710935249974376,
+      "local_covariance_difference": 0.03125,
+      "full_covariance_operator_difference": 1.0000000000000002
+    }
+  ],
+  "projection_premise_discriminator": {
+    "single_occupations": [
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "double_occupations": [
+      0.5,
+      0.25
+    ]
+  },
+  "scope": "Author auxiliary fixtures for Weyl signs and matter-state hypotheses; no interacting phase computation.",
+  "tolerance": 2e-08,
+  "runner_sha256": "3ce6b6ed861be1ea0719254ae0b4d902c69409fa5223c4161f2b725c4a2e9a41",
+  "checks": 46
+}

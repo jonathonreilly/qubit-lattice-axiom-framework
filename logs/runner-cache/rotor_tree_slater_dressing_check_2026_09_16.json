@@ -1,0 +1,124 @@
+{
+  "literal_charged_dressing": {
+    "vertices": 8,
+    "links": 12,
+    "physical_matter_dimension": 64,
+    "direct_energy": -5.674595836318337,
+    "loop_energy": -5.67459583631833,
+    "energy_error": 7.105427357601002e-15,
+    "wrong_sign_discrepancy": 4.29345999172438,
+    "maximal_mean_flow": 6.245004513516506e-17,
+    "variance_error": 3.1363800445660672e-15,
+    "sum_charge_variance": 1.140092094407477,
+    "subtree_size_sum": 12,
+    "maximal_filling_size": 2
+  },
+  "half_filled_wilson_blocks": [
+    {
+      "R": 2,
+      "sites": 8,
+      "orbitals": 16,
+      "particles_per_species": 8,
+      "particle_hole_error": 6.473657049138938e-16,
+      "nearest_single_particle_energy": 1.1583123951777006,
+      "sum_charge_variance": 0.9362739789159051,
+      "analytic_upper": 48,
+      "subtree_size_sum": 12,
+      "maximal_loop_filling": 2,
+      "determinant_variance": 0.19282553144903647,
+      "curvature_checks": [
+        {
+          "step": 0.08,
+          "variance": 0.19267462521177503,
+          "error": 0.00015090623726143892
+        },
+        {
+          "step": 0.04,
+          "variance": 0.19278778996947854,
+          "error": 3.774147955792895e-05
+        },
+        {
+          "step": 0.02,
+          "variance": 0.19281609517307619,
+          "error": 9.436275960283957e-06
+        }
+      ],
+      "convergence_ratios": [
+        3.9984186902321817,
+        3.9996159201763346
+      ]
+    },
+    {
+      "R": 3,
+      "sites": 27,
+      "orbitals": 54,
+      "particles_per_species": 27,
+      "particle_hole_error": 1.1046579618885443e-15,
+      "nearest_single_particle_energy": 0.6381236689832659,
+      "sum_charge_variance": 7.726861374862639,
+      "analytic_upper": 324,
+      "subtree_size_sum": 81,
+      "maximal_loop_filling": 4,
+      "determinant_variance": 0.5212387245216685,
+      "curvature_checks": [
+        {
+          "step": 0.08,
+          "variance": 0.520577370271176,
+          "error": 0.0006613542504925185
+        },
+        {
+          "step": 0.04,
+          "variance": 0.5210732668906037,
+          "error": 0.0001654576310647915
+        },
+        {
+          "step": 0.02,
+          "variance": 0.5211973526503266,
+          "error": 4.137187134189979e-05
+        }
+      ],
+      "convergence_ratios": [
+        3.9971214759719302,
+        3.9992783912876226
+      ]
+    },
+    {
+      "R": 4,
+      "sites": 64,
+      "orbitals": 128,
+      "particles_per_species": 64,
+      "particle_hole_error": 2.094764613337708e-15,
+      "nearest_single_particle_energy": 0.39697511575307665,
+      "sum_charge_variance": 30.40398143030777,
+      "analytic_upper": 1152,
+      "subtree_size_sum": 288,
+      "maximal_loop_filling": 6,
+      "determinant_variance": 1.0002725838097786,
+      "curvature_checks": [
+        {
+          "step": 0.08,
+          "variance": 0.9982683879516604,
+          "error": 0.002004195858118174
+        },
+        {
+          "step": 0.04,
+          "variance": 0.99977096919876,
+          "error": 0.0005016146110186082
+        },
+        {
+          "step": 0.02,
+          "variance": 1.0001471447917964,
+          "error": 0.00012543901798212076
+        }
+      ],
+      "convergence_ratios": [
+        3.9954893938363076,
+        3.998872273458845
+      ]
+    }
+  ],
+  "scope": "Finite author checks of exact Gauss dressing and Slater identities; no interacting phase calculation.",
+  "tolerance": 2e-09,
+  "runner_sha256": "5fa26d25f7842abfd09f6d6b5587ab47595643848bf7fa9def067b51f15b8e0a",
+  "checks": 348
+}

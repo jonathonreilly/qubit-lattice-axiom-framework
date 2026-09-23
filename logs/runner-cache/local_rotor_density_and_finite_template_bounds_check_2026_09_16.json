@@ -1,0 +1,161 @@
+{
+  "heat_comparison": {
+    "regulator_points_per_angle": 9,
+    "scope": "two coupled angles with a positive finite-difference kinetic generator",
+    "rows": [
+      {
+        "g": 0.7,
+        "t": 0.1,
+        "min_lower_kernel_margin": 4.667494818969054e-15,
+        "min_upper_kernel_margin": 7.951801480092761e-15,
+        "max_ground_amplitude_conditional_ratio": 3914.3701258216065,
+        "heat_comparison_ratio_bound": 8435388.123021208
+      },
+      {
+        "g": 0.7,
+        "t": 0.4,
+        "min_lower_kernel_margin": 1.0105745551271198e-10,
+        "min_upper_kernel_margin": 1.018213491547964e-09,
+        "max_ground_amplitude_conditional_ratio": 3914.3701258216065,
+        "heat_comparison_ratio_bound": 381667.13618139614
+      },
+      {
+        "g": 1.5,
+        "t": 0.1,
+        "min_lower_kernel_margin": 2.0511274004331586e-10,
+        "min_upper_kernel_margin": 2.1417343093257136e-10,
+        "max_ground_amplitude_conditional_ratio": 3.143941323464644,
+        "heat_comparison_ratio_bound": 10068.294348110756
+      },
+      {
+        "g": 1.5,
+        "t": 0.4,
+        "min_lower_kernel_margin": 4.811371087009332e-06,
+        "min_upper_kernel_margin": 7.215320364683869e-06,
+        "max_ground_amplitude_conditional_ratio": 3.143941323464644,
+        "heat_comparison_ratio_bound": 98.89004458356192
+      },
+      {
+        "g": 3.0,
+        "t": 0.1,
+        "min_lower_kernel_margin": 5.178806219186704e-07,
+        "min_upper_kernel_margin": 5.043088842256386e-07,
+        "max_ground_amplitude_conditional_ratio": 1.0776527650538508,
+        "heat_comparison_ratio_bound": 50.77184179109694
+      },
+      {
+        "g": 3.0,
+        "t": 0.4,
+        "min_lower_kernel_margin": 0.00030104917714740206,
+        "min_upper_kernel_margin": 0.000345262730251426,
+        "max_ground_amplitude_conditional_ratio": 1.0776527650538508,
+        "heat_comparison_ratio_bound": 2.4258670452696203
+      }
+    ]
+  },
+  "geometry": [
+    {
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "links": 12,
+      "plaquettes": 6,
+      "maximum_incident_plaquettes": 2,
+      "maximum_local_support": 7,
+      "maximum_touching_plaquettes": 6,
+      "Haar_gradient_identity_error": 0.0
+    },
+    {
+      "shape": [
+        3,
+        3,
+        3
+      ],
+      "links": 54,
+      "plaquettes": 36,
+      "maximum_incident_plaquettes": 4,
+      "maximum_local_support": 13,
+      "maximum_touching_plaquettes": 24,
+      "Haar_gradient_identity_error": 0.0
+    },
+    {
+      "shape": [
+        4,
+        4,
+        4
+      ],
+      "links": 144,
+      "plaquettes": 108,
+      "maximum_incident_plaquettes": 4,
+      "maximum_local_support": 13,
+      "maximum_touching_plaquettes": 30,
+      "Haar_gradient_identity_error": 0.0
+    }
+  ],
+  "circle_bounds": [
+    {
+      "g": 0.3,
+      "t": 0.2,
+      "sampled_heat_min": 3.2224458100448384e-118,
+      "explicit_lower": 1.6112229050224192e-118,
+      "sampled_heat_max": 18.683304054659764,
+      "explicit_upper": 19.683304054659764,
+      "log_sufficient_local_c": -7591.625497522471
+    },
+    {
+      "g": 0.7,
+      "t": 1.0,
+      "sampled_heat_min": 0.00030285262970941937,
+      "explicit_lower": 0.00015142631485470968,
+      "sampled_heat_max": 3.5808975351871433,
+      "explicit_upper": 4.580897535187143,
+      "log_sufficient_local_c": -692.7397615184941
+    },
+    {
+      "g": 1.5,
+      "t": 0.4,
+      "sampled_heat_min": 0.02196406468403762,
+      "explicit_lower": 0.01098203234201881,
+      "sampled_heat_max": 2.642218199981092,
+      "explicit_upper": 3.642218198404007,
+      "log_sufficient_local_c": -187.88405684251174
+    },
+    {
+      "g": 3.0,
+      "t": 1.0,
+      "sampled_heat_min": 0.9777820373834748,
+      "explicit_lower": 0.4828809620539565,
+      "sampled_heat_max": 1.0222180235364442,
+      "explicit_upper": 1.8355427582103334,
+      "log_sufficient_local_c": -57.8295696883164
+    }
+  ],
+  "principal_cube_event": {
+    "cube_links": 12,
+    "corners_checked": 4096,
+    "signed_raw_center": [
+      -5.235987755982986,
+      1.0471975511965974,
+      1.0471975511965974,
+      1.047197551196597,
+      1.0471975511965972,
+      1.0471975511965972
+    ],
+    "charge_one_max_error": 3.3306690738754696e-16,
+    "unwrapped_zero_charge_max_error": 1.236882376124701e-16,
+    "principal_branch_margin_at_corners": 1.8328575139818426,
+    "guaranteed_product_neighborhood_Haar_measure": 6.6850575676330976e-21,
+    "scope": "all corner checks challenge the explicit open-set witness; the probability floor uses the analytic local-density bound"
+  },
+  "source_sha256": "735b86f3af718e2b873afe2704b5bad526a5e5da5513ec3d80950111d256867f",
+  "seconds": 0.09363675117492676,
+  "canonical_completed_families": [
+    "heat_comparison",
+    "geometry",
+    "circle_bounds",
+    "principal_cube_event"
+  ],
+  "canonical_total": 4
+}

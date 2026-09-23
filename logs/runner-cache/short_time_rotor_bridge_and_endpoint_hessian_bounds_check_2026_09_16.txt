@@ -1,0 +1,332 @@
+===== runner cache v1 =====
+runner: scripts/short_time_rotor_bridge_and_endpoint_hessian_bounds_check_2026_09_16.py
+runner_sha256: b27de02473bde563ac318dc5514975e8e9ccdd7ac8d08aef639f9f4c497db0c1
+input_fingerprint_sha256: 575e63d9640f00e3bd02510987e29689950b3cd0c6976c4a1592dcd467b80b58
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.61
+status: ok
+----- stdout -----
+{
+  "source_sha256": "b27de02473bde563ac318dc5514975e8e9ccdd7ac8d08aef639f9f4c497db0c1",
+  "cosine_bridge": [
+    {
+      "g": 0.5,
+      "duration": 0.1,
+      "endpoints": [
+        0.3,
+        -0.5,
+        0.7,
+        0.2
+      ],
+      "time_slices": 3,
+      "radial_dimension": 4,
+      "gaussian_points": 65536,
+      "order_comparison_error": 1.734723475976807e-15,
+      "r": 0.005555555555555557,
+      "delta_bound": 0.03815642458100559,
+      "measured_relative_hessian_norm": 0.010051559446014928,
+      "hessian_direction": 0.04629100767703989,
+      "finite_difference": 0.04629100609082615,
+      "mean_noise_max": 0.002299382637610116,
+      "noise_variance_max": 0.022147666511581142,
+      "omitted_covariance_error": 7.619562547743262e-05
+    },
+    {
+      "g": 0.5,
+      "duration": 0.1,
+      "endpoints": [
+        3.141592653589793,
+        0.0,
+        3.141592653589793,
+        0.0
+      ],
+      "time_slices": 3,
+      "radial_dimension": 4,
+      "gaussian_points": 65536,
+      "order_comparison_error": 1.2975731600306517e-15,
+      "r": 0.005555555555555557,
+      "delta_bound": 0.03815642458100559,
+      "measured_relative_hessian_norm": 0.010263299530109194,
+      "hessian_direction": -0.011982926255498263,
+      "finite_difference": -0.011982925984810322,
+      "mean_noise_max": 5.335492781218859e-18,
+      "noise_variance_max": 0.022298841113657073,
+      "omitted_covariance_error": 0.00014042573858893655
+    },
+    {
+      "g": 0.5,
+      "duration": 0.1,
+      "endpoints": [
+        -2.9,
+        2.7,
+        2.8,
+        -2.6
+      ],
+      "time_slices": 3,
+      "radial_dimension": 4,
+      "gaussian_points": 65536,
+      "order_comparison_error": 6.119237061508187e-16,
+      "r": 0.005555555555555557,
+      "delta_bound": 0.03815642458100559,
+      "measured_relative_hessian_norm": 0.005218952216361298,
+      "hessian_direction": -0.0034746635060868836,
+      "finite_difference": -0.0034746630572790593,
+      "mean_noise_max": 0.0016338662865649977,
+      "noise_variance_max": 0.02217383128030263,
+      "omitted_covariance_error": 3.323228980138338e-05
+    },
+    {
+      "g": 0.5,
+      "duration": 0.35,
+      "endpoints": [
+        0.3,
+        -0.5,
+        0.7,
+        0.2
+      ],
+      "time_slices": 3,
+      "radial_dimension": 4,
+      "gaussian_points": 65536,
+      "order_comparison_error": 4.413136522884997e-15,
+      "r": 0.06805555555555556,
+      "delta_bound": 0.3649701937406855,
+      "measured_relative_hessian_norm": 0.05624057608527146,
+      "hessian_direction": 0.1576506906856006,
+      "finite_difference": 0.15765068564488338,
+      "mean_noise_max": 0.026210720217234168,
+      "noise_variance_max": 0.07475953052995682,
+      "omitted_covariance_error": 0.003070127949537236
+    },
+    {
+      "g": 0.5,
+      "duration": 0.35,
+      "endpoints": [
+        3.141592653589793,
+        0.0,
+        3.141592653589793,
+        0.0
+      ],
+      "time_slices": 3,
+      "radial_dimension": 4,
+      "gaussian_points": 65536,
+      "order_comparison_error": 3.733124920302089e-15,
+      "r": 0.06805555555555556,
+      "delta_bound": 0.3649701937406855,
+      "measured_relative_hessian_norm": 0.05801862141280274,
+      "hessian_direction": -0.045929634175626066,
+      "finite_difference": -0.04592963320781962,
+      "mean_noise_max": 6.7710278108467856e-18,
+      "noise_variance_max": 0.08111685967862327,
+      "omitted_covariance_error": 0.00581516164012929
+    },
+    {
+      "g": 0.5,
+      "duration": 0.35,
+      "endpoints": [
+        -2.9,
+        2.7,
+        2.8,
+        -2.6
+      ],
+      "time_slices": 3,
+      "radial_dimension": 4,
+      "gaussian_points": 65536,
+      "order_comparison_error": 2.4303475898435067e-15,
+      "r": 0.06805555555555556,
+      "delta_bound": 0.3649701937406855,
+      "measured_relative_hessian_norm": 0.02310840404955351,
+      "hessian_direction": -0.013829311630356335,
+      "finite_difference": -0.013829310141488804,
+      "mean_noise_max": 0.0192508261614938,
+      "noise_variance_max": 0.07576966002733221,
+      "omitted_covariance_error": 0.0014155514318154253
+    },
+    {
+      "g": 1.2,
+      "duration": 0.35,
+      "endpoints": [
+        0.3,
+        -0.5,
+        0.7,
+        0.2
+      ],
+      "time_slices": 3,
+      "radial_dimension": 4,
+      "gaussian_points": 65536,
+      "order_comparison_error": 2.513267371995198e-14,
+      "r": 0.06805555555555556,
+      "delta_bound": 0.5884277198211625,
+      "measured_relative_hessian_norm": 0.14954129982792486,
+      "hessian_direction": 0.14398345716767097,
+      "finite_difference": 0.14398345260513423,
+      "mean_noise_max": 0.02207042858770478,
+      "noise_variance_max": 0.4334164915363238,
+      "omitted_covariance_error": 0.0022859603983764834
+    },
+    {
+      "g": 1.2,
+      "duration": 0.35,
+      "endpoints": [
+        3.141592653589793,
+        0.0,
+        3.141592653589793,
+        0.0
+      ],
+      "time_slices": 3,
+      "radial_dimension": 4,
+      "gaussian_points": 65536,
+      "order_comparison_error": 5.703770789011742e-15,
+      "r": 0.06805555555555556,
+      "delta_bound": 0.5884277198211625,
+      "measured_relative_hessian_norm": 0.15302947238391026,
+      "hessian_direction": -0.03661600963421077,
+      "finite_difference": -0.03661600955773281,
+      "mean_noise_max": 2.6071261116908625e-17,
+      "noise_variance_max": 0.4637494902897766,
+      "omitted_covariance_error": 0.00406612070866842
+    },
+    {
+      "g": 1.2,
+      "duration": 0.35,
+      "endpoints": [
+        -2.9,
+        2.7,
+        2.8,
+        -2.6
+      ],
+      "time_slices": 3,
+      "radial_dimension": 4,
+      "gaussian_points": 65536,
+      "order_comparison_error": 8.971989817752046e-15,
+      "r": 0.06805555555555556,
+      "delta_bound": 0.5884277198211625,
+      "measured_relative_hessian_norm": 0.08872768687663489,
+      "hessian_direction": -0.02339432080443666,
+      "finite_difference": -0.023394318593439323,
+      "mean_noise_max": 0.01608514503265573,
+      "noise_variance_max": 0.43838475653463577,
+      "omitted_covariance_error": 0.0012054405280039753
+    },
+    {
+      "g": 0.8,
+      "duration": 0.7,
+      "endpoints": [
+        0.3,
+        -0.5,
+        0.7,
+        0.2
+      ],
+      "time_slices": 3,
+      "radial_dimension": 4,
+      "gaussian_points": 65536,
+      "order_comparison_error": 3.8553299441801414e-11,
+      "r": 0.27222222222222225,
+      "delta_bound": 1.6618320610687023,
+      "measured_relative_hessian_norm": 0.19223009042894043,
+      "hessian_direction": 0.2836069562535914,
+      "finite_difference": 0.2836069473710623,
+      "mean_noise_max": 0.08134867262176226,
+      "noise_variance_max": 0.34892413329174954,
+      "omitted_covariance_error": 0.018341615309697062
+    },
+    {
+      "g": 0.8,
+      "duration": 0.7,
+      "endpoints": [
+        3.141592653589793,
+        0.0,
+        3.141592653589793,
+        0.0
+      ],
+      "time_slices": 3,
+      "radial_dimension": 4,
+      "gaussian_points": 65536,
+      "order_comparison_error": 8.630623993255426e-12,
+      "r": 0.27222222222222225,
+      "delta_bound": 1.6618320610687023,
+      "measured_relative_hessian_norm": 0.19808450028320673,
+      "hessian_direction": -0.09909484186454987,
+      "finite_difference": -0.09909483766890048,
+      "mean_noise_max": 5.3715488589295e-17,
+      "noise_variance_max": 0.46246491623930364,
+      "omitted_covariance_error": 0.035867277259213515
+    },
+    {
+      "g": 0.8,
+      "duration": 0.7,
+      "endpoints": [
+        -2.9,
+        2.7,
+        2.8,
+        -2.6
+      ],
+      "time_slices": 3,
+      "radial_dimension": 4,
+      "gaussian_points": 65536,
+      "order_comparison_error": 1.8578819038772565e-11,
+      "r": 0.27222222222222225,
+      "delta_bound": 1.6618320610687023,
+      "measured_relative_hessian_norm": 0.09560028981047067,
+      "hessian_direction": -0.0450186907102455,
+      "finite_difference": -0.0450186872225089,
+      "mean_noise_max": 0.06437992187410267,
+      "noise_variance_max": 0.3638333542313425,
+      "omitted_covariance_error": 0.010021256237874558
+    }
+  ],
+  "endpoint_nonconvex_control": {
+    "common_endpoint_curvature": -0.19933358120880146,
+    "interior_convexity_r": 0.01777777777777778,
+    "scope": "convex interior bridge does not imply convex endpoint action"
+  },
+  "time_limit": {
+    "rows": [
+      {
+        "slices": 2,
+        "effective_action": 0.02739498872849827,
+        "spectral_target": 0.027200593365499764,
+        "absolute_error": 0.00019439536299850624
+      },
+      {
+        "slices": 3,
+        "effective_action": 0.027286914730093387,
+        "spectral_target": 0.027200593365499764,
+        "absolute_error": 8.632136459362297e-05
+      },
+      {
+        "slices": 4,
+        "effective_action": 0.02724913427824257,
+        "spectral_target": 0.027200593365499764,
+        "absolute_error": 4.854091274280464e-05
+      },
+      {
+        "slices": 5,
+        "effective_action": 0.027231655174428604,
+        "spectral_target": 0.027200593365499764,
+        "absolute_error": 3.1061808928839474e-05
+      }
+    ],
+    "compact_cutoff_difference": 1.7763568394002505e-15,
+    "nonzero_winding_relative_bound": 8.718680364563331e-58,
+    "scope": "one-plaquette time-quadrature challenge only"
+  },
+  "elapsed_seconds": 1.3627969580120407,
+  "status": "PASS",
+  "scope": "deterministic finite bridge and one-plaquette kernel checks; no phase proof",
+  "canonical_completed_families": [
+    "cosine_bridge",
+    "endpoint_nonconvex_control",
+    "time_limit"
+  ],
+  "canonical_total": 3
+}
+TOTAL: PASS=3 FAIL=0
+per_element: endpoint derivatives and covariance sign
+per_site: one/two plaquette coordinates
+per_mode: finite time slices and Gaussian quadrature
+per_block: 16^4/20^4 refinements and compact kernel
+lattice_wide: analytical statements checked in written proof, not executed; no volume-uniform phase computation
+
+----- stderr -----
+

@@ -1,0 +1,142 @@
+===== runner cache v1 =====
+runner: scripts/compact_rotor_ground_correlation_comparison_check_2026_09_16.py
+runner_sha256: 958d2496a9f6581bb9f87d5d54f6bc4366057adabbd832fec4585a772600690c
+input_fingerprint_sha256: 30837458130e0a41397767be87322fb55d52d7ba19e377b3d18886145f0895ff
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.37
+status: ok
+----- stdout -----
+{
+  "scope": "finite two-angle electric Galerkin checks and exact covering combinatorics",
+  "connected": [
+    {
+      "g": 0.55,
+      "cutoff": 5,
+      "dimension": 121,
+      "cosine_means": [
+        0.7782911024041699,
+        0.7432601761429274,
+        0.6337828133671853,
+        0.5328902669750684,
+        0.24073926471828652
+      ],
+      "min_connected_cosine_by_tau": [
+        0.004863758307730077,
+        0.0041675090725838485,
+        0.0017590562862918775,
+        0.0002949051741554076
+      ],
+      "min_cosine_coupling_derivative": 0.006775546750629628,
+      "min_electric_square_derivative": 0.026800253203612123,
+      "cosine_finite_difference_error": 2.7993052320596234e-11,
+      "electric_square_finite_difference_error": 4.828429323033845e-12,
+      "lifted_kernel_compression_min_eigenvalue": -1.3673048966308987e-16,
+      "lifted_kernel_symmetry_error": 3.0264587224095063e-15
+    },
+    {
+      "g": 0.55,
+      "cutoff": 7,
+      "dimension": 225,
+      "cosine_means": [
+        0.7782911036245428,
+        0.7432601763388739,
+        0.6337828147242727,
+        0.5328902679901004,
+        0.24073927371962997
+      ],
+      "min_connected_cosine_by_tau": [
+        0.004863758434231769,
+        0.0041675091952821375,
+        0.0017590563647608584,
+        0.0002949051912639048
+      ],
+      "min_cosine_coupling_derivative": 0.00677554703114258,
+      "min_electric_square_derivative": 0.026800259502010218,
+      "cosine_finite_difference_error": 7.209977059829953e-11,
+      "electric_square_finite_difference_error": 1.2739642674119978e-11,
+      "lifted_kernel_compression_min_eigenvalue": -2.285675760117459e-16,
+      "lifted_kernel_symmetry_error": 4.593285500990902e-15,
+      "cutoff_change_cosine_means": 9.00134344838932e-09
+    },
+    {
+      "g": 1.1,
+      "cutoff": 5,
+      "dimension": 121,
+      "cosine_means": [
+        0.4576001556018378,
+        0.3733895282144678,
+        0.23494561617947224,
+        0.16410633802630106,
+        0.032667555484626125
+      ],
+      "min_connected_cosine_by_tau": [
+        0.009547291104453178,
+        0.00820845265573453,
+        0.0011318504883368783,
+        1.87983613763099e-05
+      ],
+      "min_cosine_coupling_derivative": 0.010272820149920302,
+      "min_electric_square_derivative": 0.012670215657088339,
+      "cosine_finite_difference_error": 2.004324484161657e-11,
+      "electric_square_finite_difference_error": 4.783468759983478e-12,
+      "lifted_kernel_compression_min_eigenvalue": -2.301539556536177e-16,
+      "lifted_kernel_symmetry_error": 3.7087309156898774e-15
+    },
+    {
+      "g": 1.1,
+      "cutoff": 7,
+      "dimension": 225,
+      "cosine_means": [
+        0.45760015560183936,
+        0.3733895282144636,
+        0.23494561617947465,
+        0.16410633802630126,
+        0.03266755548469079
+      ],
+      "min_connected_cosine_by_tau": [
+        0.00954729110633985,
+        0.008208452656246262,
+        0.0011318504883445547,
+        1.8798361376452717e-05
+      ],
+      "min_cosine_coupling_derivative": 0.0102728201502716,
+      "min_electric_square_derivative": 0.01267021565719703,
+      "cosine_finite_difference_error": 4.0856762417718073e-11,
+      "electric_square_finite_difference_error": 5.278548431686403e-12,
+      "lifted_kernel_compression_min_eigenvalue": -5.88532820259004e-17,
+      "lifted_kernel_symmetry_error": 7.443589755784662e-15,
+      "cutoff_change_cosine_means": 6.466355229051146e-14
+    }
+  ],
+  "covering": {
+    "beta": 1.3,
+    "U": 0.7,
+    "original_doubled_trace": 6.904599249147704,
+    "unrestricted_lifted_trace": 13.809198477317775,
+    "parity_restricted_lifted_trace": 6.9045992491477035,
+    "restriction_error": 8.881784197001252e-16,
+    "scope": "free one-angle thermal control; the proof uses ground-state uniqueness"
+  },
+  "negative_coupling_control": {
+    "derivative_cos_theta1_plus_theta2_wrt_J2": -0.09026949956998563,
+    "scope": "negative J1 violates the theorem hypothesis; no physical phase inference"
+  },
+  "source_sha256": "958d2496a9f6581bb9f87d5d54f6bc4366057adabbd832fec4585a772600690c",
+  "seconds": 0.13145112991333008,
+  "canonical_completed_families": [
+    "connected",
+    "covering",
+    "negative_coupling_control"
+  ],
+  "canonical_total": 3
+}
+TOTAL: PASS=3 FAIL=0
+per_element: cosine and electric-square derivatives
+per_site: two-angle model; not growing boxes
+per_mode: finite225-state Galerkin spectra
+per_block: 49-mode lifted kernel and parity trace
+lattice_wide: analytical statements checked in written proof, not executed; no volume-uniform phase computation
+
+----- stderr -----
+

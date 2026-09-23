@@ -1,0 +1,422 @@
+{
+  "one_plaquette": [
+    {
+      "g": 0.7,
+      "electric_cutoff": 36,
+      "eta_spectral": 0.9542087997150411,
+      "rho_spectral": 0.045791200284958866,
+      "rho_harmonic_mean": [
+        0.04579120028495915,
+        0.04579120028495915
+      ],
+      "rho_absolute_disagreement": 2.8449465006019636e-16,
+      "minimum_angle_probability": 0.008384591166839673,
+      "character_bounds": [
+        {
+          "modes": 1,
+          "eta_lower": 0.8454650525910719,
+          "Gram_condition": 1.0
+        },
+        {
+          "modes": 2,
+          "eta_lower": 0.9306590567360595,
+          "Gram_condition": 9.165746547454017
+        },
+        {
+          "modes": 4,
+          "eta_lower": 0.9525494140585191,
+          "Gram_condition": 112.99882289330625
+        },
+        {
+          "modes": 8,
+          "eta_lower": 0.9542031064536427,
+          "Gram_condition": 815.228981879835
+        }
+      ]
+    },
+    {
+      "g": 1.0,
+      "electric_cutoff": 36,
+      "eta_spectral": 0.34806216110374083,
+      "rho_spectral": 0.6519378388962591,
+      "rho_harmonic_mean": [
+        0.6519378388962594,
+        0.6519378388962592
+      ],
+      "rho_absolute_disagreement": 1.1102230246251565e-16,
+      "minimum_angle_probability": 0.2961849164095062,
+      "character_bounds": [
+        {
+          "modes": 1,
+          "eta_lower": 0.3259261411406221,
+          "Gram_condition": 1.0
+        },
+        {
+          "modes": 2,
+          "eta_lower": 0.3468402641290075,
+          "Gram_condition": 5.011433818849637
+        },
+        {
+          "modes": 4,
+          "eta_lower": 0.3480599060993454,
+          "Gram_condition": 23.213331564677592
+        },
+        {
+          "modes": 8,
+          "eta_lower": 0.3480621611005035,
+          "Gram_condition": 105.3268804868946
+        }
+      ]
+    },
+    {
+      "g": 1.5,
+      "electric_cutoff": 36,
+      "eta_spectral": 0.0191845743386761,
+      "rho_spectral": 0.9808154256613238,
+      "rho_harmonic_mean": [
+        0.9808154256613241,
+        0.9808154256613241
+      ],
+      "rho_absolute_disagreement": 2.220446049250313e-16,
+      "minimum_angle_probability": 0.8112296029440405,
+      "character_bounds": [
+        {
+          "modes": 1,
+          "eta_lower": 0.019112922964212787,
+          "Gram_condition": 1.0
+        },
+        {
+          "modes": 2,
+          "eta_lower": 0.019184392932682072,
+          "Gram_condition": 4.049835539465144
+        },
+        {
+          "modes": 4,
+          "eta_lower": 0.019184574338003225,
+          "Gram_condition": 16.34443594588462
+        },
+        {
+          "modes": 8,
+          "eta_lower": 0.019184574338676097,
+          "Gram_condition": 66.478449845716
+        }
+      ]
+    },
+    {
+      "g": 3.0,
+      "electric_cutoff": 36,
+      "eta_spectral": 7.62028591503133e-05,
+      "rho_spectral": 0.9999237971408497,
+      "rho_harmonic_mean": [
+        0.9999237971408496,
+        0.9999237971408493
+      ],
+      "rho_absolute_disagreement": 3.3306690738754696e-16,
+      "minimum_angle_probability": 0.9876832765281445,
+      "character_bounds": [
+        {
+          "modes": 1,
+          "eta_lower": 7.620172500944404e-05,
+          "Gram_condition": 1.0
+        },
+        {
+          "modes": 2,
+          "eta_lower": 7.620285913902427e-05,
+          "Gram_condition": 4.000196861685201
+        },
+        {
+          "modes": 4,
+          "eta_lower": 7.62028591503133e-05,
+          "Gram_condition": 16.001368019631858
+        },
+        {
+          "modes": 8,
+          "eta_lower": 7.62028591503133e-05,
+          "Gram_condition": 64.01030040909849
+        }
+      ]
+    }
+  ],
+  "two_square": [
+    {
+      "g": 0.6,
+      "eta_spectral": 0.9975926134169322,
+      "character_bounds": [
+        {
+          "radius": 1,
+          "characters": 4,
+          "eta_lower": 0.9423903567800165,
+          "smallest_Gram_eigenvalue": 0.27386102435383264,
+          "Gram_condition": 32.83677398456669
+        },
+        {
+          "radius": 2,
+          "characters": 12,
+          "eta_lower": 0.9877616394356815,
+          "smallest_Gram_eigenvalue": 0.010721078149908084,
+          "Gram_condition": 4511.964184261258
+        },
+        {
+          "radius": 3,
+          "characters": 24,
+          "eta_lower": 0.9947237848219088,
+          "smallest_Gram_eigenvalue": 0.0012816898726416609,
+          "Gram_condition": 112884.04605887627
+        }
+      ],
+      "specified_plaquette_eta_lower": 0.9379047002782207,
+      "cosine_covariance_cost": 0.02648256254749949,
+      "f_norm_squared": 0.4000000000000001,
+      "decomposition_compensated_residual": 0.0,
+      "large_term_subtraction_residual": -1.3877787807814457e-17
+    },
+    {
+      "g": 0.9,
+      "eta_spectral": 0.6453412192024391,
+      "character_bounds": [
+        {
+          "radius": 1,
+          "characters": 4,
+          "eta_lower": 0.5881874267022816,
+          "smallest_Gram_eigenvalue": 1.0643635751108207,
+          "Gram_condition": 5.912740616113021
+        },
+        {
+          "radius": 2,
+          "characters": 12,
+          "eta_lower": 0.6392827827773572,
+          "smallest_Gram_eigenvalue": 0.5341098324752297,
+          "Gram_condition": 60.642625939613474
+        },
+        {
+          "radius": 3,
+          "characters": 24,
+          "eta_lower": 0.6447706082165497,
+          "smallest_Gram_eigenvalue": 0.4319534613183213,
+          "Gram_condition": 203.67841226240213
+        }
+      ],
+      "specified_plaquette_eta_lower": 0.5797262418887429,
+      "cosine_covariance_cost": 0.2899808411239133,
+      "f_norm_squared": 0.4000000000000001,
+      "decomposition_compensated_residual": -5.551115123125783e-17,
+      "large_term_subtraction_residual": -5.551115123125783e-17
+    },
+    {
+      "g": 1.4,
+      "eta_spectral": 0.04094504646842024,
+      "character_bounds": [
+        {
+          "radius": 1,
+          "characters": 4,
+          "eta_lower": 0.040684636507863955,
+          "smallest_Gram_eigenvalue": 1.9252922057503479,
+          "Gram_condition": 2.6326591613413695
+        },
+        {
+          "radius": 2,
+          "characters": 12,
+          "eta_lower": 0.040943904466490946,
+          "smallest_Gram_eigenvalue": 1.8803490431866519,
+          "Gram_condition": 11.11078731629158
+        },
+        {
+          "radius": 3,
+          "characters": 24,
+          "eta_lower": 0.0409450424119924,
+          "smallest_Gram_eigenvalue": 1.8797511736993113,
+          "Gram_condition": 25.70592680184559
+        }
+      ],
+      "specified_plaquette_eta_lower": 0.04062103048136384,
+      "cosine_covariance_cost": 9.447116019952091,
+      "f_norm_squared": 0.4000000000000001,
+      "decomposition_compensated_residual": -5.551115123125783e-17,
+      "large_term_subtraction_residual": 0.0
+    },
+    {
+      "g": 3.0,
+      "eta_spectral": 9.525253834411357e-05,
+      "character_bounds": [
+        {
+          "radius": 1,
+          "characters": 4,
+          "eta_lower": 9.525112069997874e-05,
+          "smallest_Gram_eigenvalue": 1.9998177727778448,
+          "Gram_condition": 2.5003071901491625
+        },
+        {
+          "radius": 2,
+          "characters": 12,
+          "eta_lower": 9.525253833000372e-05,
+          "smallest_Gram_eigenvalue": 1.9997161605961289,
+          "Gram_condition": 10.002491051687848
+        },
+        {
+          "radius": 3,
+          "characters": 24,
+          "eta_lower": 9.525253834411465e-05,
+          "smallest_Gram_eigenvalue": 1.9997161575957032,
+          "Gram_condition": 22.507315008218633
+        }
+      ],
+      "specified_plaquette_eta_lower": 9.525076506334243e-05,
+      "cosine_covariance_cost": 4199.0413350275685,
+      "f_norm_squared": 0.4000000000000001,
+      "decomposition_compensated_residual": 0.0,
+      "large_term_subtraction_residual": 9.094947017729282e-13
+    }
+  ],
+  "cube": {
+    "curl": [
+      [
+        1,
+        -1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        -1,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        -1,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        -1,
+        1
+      ]
+    ],
+    "signed_cube_boundary": [
+      -1,
+      1,
+      -1,
+      1,
+      -1,
+      1
+    ],
+    "rows": [
+      {
+        "a": 0.05,
+        "flux": [
+          -0.05,
+          0.05,
+          0.1,
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "real_Bianchi_residual": 0.0,
+        "sine_Bianchi_value": 0.00012492189452850688,
+        "nonlinear_gradient_squared": 8.423058271045533e-05,
+        "finite_difference_error": 1.4397306689620212e-11
+      },
+      {
+        "a": 0.2,
+        "flux": [
+          -0.2,
+          0.2,
+          0.4,
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "real_Bianchi_residual": 0.0,
+        "sine_Bianchi_value": 0.00792031928147191,
+        "nonlinear_gradient_squared": 0.021015416459672843,
+        "finite_difference_error": 5.466089906618145e-11
+      },
+      {
+        "a": 0.7,
+        "flux": [
+          -0.7,
+          0.7,
+          1.4,
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "real_Bianchi_residual": 0.0,
+        "sine_Bianchi_value": 0.3029856444869219,
+        "nonlinear_gradient_squared": 2.3068585121172727,
+        "finite_difference_error": 1.0581965840152245e-10
+      }
+    ]
+  },
+  "source_sha256": "f01b29d46d5d32774326458f3602b3b67cf3c3903ce162b9aa9529bae5029d4c",
+  "parent_sha256": "3f87037c9d628e39c04e6b4e532a70df3c09c3b24d940d74880623a12702ca86",
+  "seconds": 0.43911290168762207,
+  "canonical_completed_families": [
+    "one_plaquette",
+    "two_square",
+    "cube"
+  ],
+  "canonical_total": 3
+}

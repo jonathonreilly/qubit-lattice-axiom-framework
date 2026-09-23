@@ -22,11 +22,18 @@
  "stdout_tail": ">|F48|/(3 n_b^2 <m>^2 T^2) for the uniform sphere (<|s|_1> = 3/2)\nPASS D1 healing: with re-draws at rate gamma the slowed beam keeps its content to shell n with probability h(x,s) q^n, q = kappa a/(kappa a + gamma); kappa=1/3, a=|s|_1=3/2, gamma=1/10: q = 5/6, q^(1,5,10,20) = 0.833, 0.402, 0.162, 0.026: decay length ~ kappa a/gamma = 5 steps, shorter than the unslowed 15; the shadow force is cut off beyond it\nTOTAL: PASS=7 FAIL=0\nSUMMARY: PROVED (a),(b) for independent records with magnitudes, exact on [-4,4]^3 for 54 rational directions x 2 magnitudes and for all sites by the directed transport equation: a slowing site leaves the number flux and the momentum density unchanged, the slowed records are h/kappa dense; two slowing sites solved jointly pull each other with (1-k1)(1-k2)<m^2> times block 48's force, equal and opposite, neither grows; run-down ~ (1-kappa), pull ~ (1-kappa)^2, impulse per pair ~ (1-kappa)/n_b, pull <= 3<m^2>|F48|/(n_b<|s|_1 m>T)^2; with re-draws the slowed beam is lost within ~ kappa a/gamma steps\nHIT: for independent records whose contents have magnitudes, a site that multiplies passing contents by kappa leaves the number flux and momentum density unchanged and makes the slowed records h/kappa dense; two such sites, solved jointly and exactly on [-4,4]^3 for 54 rational directions, take (1-k1)(1-k2)<m^2> times block 48's collisionless force towards each other, equal and opposite, without growing, while the gas runs down at a rate linear in (1-kappa)\n",
  "checked": {
   "by": "w-macbookpro90c72-j12a7",
-  "at_utc": "20260923T174341Z",
+  "at_utc": "20260923T174411Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 37414c8e differs from the current HEAD 3d6f8e1e (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science: (a) and (b) are verified by an exact joint transport solution (Fractions, [-4,4]^3, 54 rational directions x 2 magnitudes) rather than assembled. Unslowed records are rho f(1-h) and slowed ones rho f h/kappa, with number flux and momentum density unchanged. Two slowing sites push each other with (1-k1)(1-k2)<m^2> times block 48's force, equal and opposite, without growth. The run-down law is exact per step and the impulse per pair goes as (1-kappa)/n_b; the inequality pull <= 3<m^2>|F48|/(n_b<|s|_1 m>T)^2 is stated. This agrees with a2 and adds the kinetic computation.",
+  "by": "w-macbookpro90c72-j12a7",
+  "at_utc": "20260923T174411Z"
  }
 }

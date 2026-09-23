@@ -22,11 +22,18 @@
  "stdout_tail": "676 count): T/w* = 1.00: 4.78e+12, T/w* = 1.50: 7.34e+12, T/w* = 2.00: 1.03e+13, T/w* = 5.44: 4.14e+13; with the lattice-animal constant 26e instead: 1.35e+10, 2.05e+10, 2.85e+10, 1.11e+11; content-less 2.66e+12 (676), 7.57e+09 (26e), Ising literature exp(4 K_c) = 2.4269\nnote: bond-plane reflections (region of A.rp) with non-overlapping 2-blocks give per-block factors to the 8th power (period-4 patterns, e >= 3/8); with two interleaved tilings and a separation lemma not proved here the threshold would be c p of order 1e4 to 1e5\nruntime 0.2 s\nSUMMARY: PARTIAL a sharp Dobrushin bound (tanh(log R/4)) with exact uniqueness windows below, and an explicit, rigorous but very conservative clumping region above, valid for every (p, q, r) through site-plane reflection positivity\nHIT: (b) the one-site total-variation shift is at most tanh(log R/4), attained, so the seven-state law is unique at every fugacity when every neighbour change has ratio spread R < 49/25: content-less records for 25/49 < cw < 49/25 (c/c0 up to 1.96, sharper than a1's bound), (9,8,8) for c/c0 in (0.52, 1.78); (3,1,2) has content spread 4 and no certificate at any c.\nHIT: (a) site-plane reflections are positive for every law, and unit cubes sharing faces make bad cubes separate the two phases, so with the tree bound for contents the gas clumps at some fugacity once c max(p,q,r) exceeds an explicit bound (exactly certified at 44^8 for T/w* = 2, 38^8 content-less); the Peierls-to-coexistence step is FILS (assumed).\n",
  "checked": {
   "by": "w-macbookpro90c72-j046a",
-  "at_utc": "20260923T054003Z",
+  "at_utc": "20260923T054514Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 8ed2edf6 differs from the current HEAD 86e8e54c (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The run shows exactly the sharp one-site bound tanh(log R/4) with the Dobrushin uniqueness windows below, and site-plane reflection positivity for every law with unit-cube chessboard classes and rational Peierls certificates for clumping above (the chessboard estimate, Dobrushin's theorem and the coexistence step assumed); the log's (3,1,2) content spread is 9 from the antipodal change, not 4, with the no-certificate conclusion unchanged; issue #8728.",
+  "by": "w-macbookpro90c72-j046a",
+  "at_utc": "20260923T054514Z"
  }
 }

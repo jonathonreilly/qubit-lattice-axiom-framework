@@ -1,0 +1,42 @@
+ROUTE B / LOCAL PHYSICAL-M2 MASS--SCALAR DEFORMATION RESPONSE
+FAIL the Route-B note exists :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/work_history/repo/review_feedback/LOCAL_M2_MASS_SCALAR_DEFORMATION_RESPONSE_ROUTE_B_NOTE_2026-07-17.md
+
+FIELD VACUUM/SCALAR PHYSICAL-M2 BLOCK
+PASS six physical field M2 sites exactly encode vacuum plus the six directional one-excitation states :: {'physical_dimension': 64, 'code_dimension': 7, 'intertwining_residual': 0.0, 'leakage': 0.0}
+PASS the bounded Hermitian transition sends vacuum exactly to the uniform scalar direction :: {'Hermiticity': 0.0, 'operator_norm': 1.0}
+PASS the physical six-M2 scalar transition is invariant in all 24 proper-cubic frames :: 0.0
+
+EXACT FINITE RELATIVE UPDATE / RESPONSE
+PASS G_epsilon G_0 dagger is exactly the bounded local deformation layer :: {'joint_code_dimension': 448, 'relative_update_residual': 2.349129874285814e-14, 'unitarity_residual': 4.271724330598608e-15}
+PASS the response M tensor X_s is Hermitian and generates the finite relative update :: {'Hermiticity_residual': 0.0, 'response_norm': 2.7204339250493117}
+PASS coupling deletion returns the exact matter-contact plus finite-coin baseline :: 
+PASS a common global rephase of G_epsilon and G_0 cancels from the finite relative update :: 2.3236354937316816e-14
+PASS a deformation-dependent rephase shifts the infinitesimal response by an identity term :: {'finite_difference_residual': 6.345970398111437e-12, 'identity_shift_per_dimension': 0.31}
+PASS matched finite endpoints are reparameterization invariant while the tangent response rescales :: {'endpoint_residual': 0.0, 'tangent_scale': 1.7}
+
+CONNECTED PHYSICAL-M2 SUPPORT / LEAKAGE / COVARIANCE
+PASS M_x tensor X_s has constant bounded physical-M2 support and zero local-check/Wilson leakage through held-out L=6 :: [{'L': 3, 'held_out': False, 'matter_M2_union': 18, 'field_M2': 6, 'joint_local_support_M2': 24, 'maximum_B_weight': 5, 'maximum_expanded_vertex_term_weight': 11, 'check_or_Wilson_leakage': 0, 'B_pair_noncommutations': 0}, {'L': 4, 'held_out': False, 'matter_M2_union': 18, 'field_M2': 6, 'joint_local_support_M2': 24, 'maximum_B_weight': 5, 'maximum_expanded_vertex_term_weight': 11, 'check_or_Wilson_leakage': 0, 'B_pair_noncommutations': 0}, {'L': 5, 'held_out': False, 'matter_M2_union': 18, 'field_M2': 6, 'joint_local_support_M2': 24, 'maximum_B_weight': 5, 'maximum_expanded_vertex_term_weight': 11, 'check_or_Wilson_leakage': 0, 'B_pair_noncommutations': 0}, {'L': 6, 'held_out': True, 'matter_M2_union': 18, 'field_M2': 6, 'joint_local_support_M2': 24, 'maximum_B_weight': 5, 'maximum_expanded_vertex_term_weight': 11, 'check_or_Wilson_leakage': 0, 'B_pair_noncommutations': 0}]
+PASS adjacent physical mass-deformation blocks commute even where their matter supports overlap :: {'overlapping_matter_M2': 1, 'cross_cell_B_noncommutations': 0, 'field_blocks': 'distinct six-M2 blocks'}
+PASS the physical matter mass deformation is covariant in all 648 proper-frame and translation tests :: {'tests': 648, 'failures': []}
+
+PARALLEL COMPOSITION
+PASS disjoint deformation responses add and their finite updates compose exactly in parallel :: {'commutator': 0.0, 'finite_composition_residual': 1.4721413199329615e-15}
+
+MASS / CONTACT / BILINEAR RECIPROCITY / DELETION
+PASS M_x=m N_x matches the Cycle-219 mass fixture but requires the supplied c-inverse-squared conversion from raw rest phase :: {'raw_rest_phase': 0.15113521805829502, 'raw_phase_over_mass': 0.3333333333333332, 'supplied_c_squared': 0.3333333333333333, 'analytic_mass': 0.4534056541748852, 'dispersion_mass': 0.4534056690336209, 'forced_mass': 0.45444242813733504}
+PASS the actual contact remains identity on N at most one and commutes with the deformation response :: {'contact_commutator': 0.0, 'onsite_coin_commutator': 0.0}
+PASS the same Hermitian bilinear vertex gives equal source-leg and response-leg coefficients :: {'source_leg_residual': 3.1125870256501347e-15, 'response_leg_residual': 0.0, 'scope': 'algebraic vertex reciprocity, not reciprocal geometry or recoil'}
+PASS charge deletion removes the deformation response without deleting the matter/contact baseline :: 
+
+CYCLE-213 / CYCLE-216 SCALAR SECTOR
+PASS the undeformed finite-coin scalar projection reproduces the free Cycle-213 wave law at dt squared one third :: 5.632511157154734e-17
+PASS the deformation derivative injects the uniform finite-coin scalar port with one-particle coefficient m :: 1.3597399555105182e-16
+PASS the literal scalar port has the Cycle-215 two-tap forcing and does not reproduce the direct Cycle-213 source term :: {'two_tap_identity_residual': 0.0, 'direct_source_mismatch': 0.6322439777544321}
+PASS the same scalar direction reproduces the Cycle-216 static 3 L-plus block through held-out L=7 :: [{'L': 3, 'held_out': False, 'stiffness_residual': 4.3065361921872157e-16, 'three_green_residual': 4.906385601649283e-16}, {'L': 5, 'held_out': False, 'stiffness_residual': 4.1016060314694323e-16, 'three_green_residual': 4.0919025283447565e-16}, {'L': 7, 'held_out': True, 'stiffness_residual': 4.552521930955827e-16, 'three_green_residual': 1.21058561706807e-15}]
+
+LAWFUL DOMAIN / SUPPLIED STRUCTURE
+PASS the declared domain accepts the imported six-mode blocks and rejects aliased or mistyped controls :: {'negative_fixture_rejections': 3}
+PASS the supplied structure inventory is explicit :: {'supplied': ('beta=-0.3 common-family species and m=-3 tan(beta/2)', 'g=0.37 onsite contact and its insertion order', 'Cycle-269 connected physical matter code and B representatives', 'six additional field M2 sites per coarse cell', 'vacuum plus one-excitation field code restriction', 'uniform scalar transition X_s', 'bilinear M_x tensor X_s vertex', 'epsilon parameter, zero, sign, and normalization', 'finite-coin field law and K=2I-U-U-dagger stiffness', 'periodic zero-mean boundary/source fixture'), 'derived': ('exact finite relative update', 'Hermitian bounded deformation response', 'parallel additivity', 'common-rephase cancellation', 'physical-M2 support/leakage/covariance', 'free Cycle-213 and static Cycle-216 scalar reductions'), 'not_earned': ('deformation-dependent phase zero', 'deformation normalization', 'direct Cycle-213 source term', 'combined continuity and recoil', 'reciprocal geometry or metric response', 'physical energy/stress/source selection')}
+
+SUMMARY PASS 23 FAIL 1
+RESULT LOCAL_M2_MASS_SCALAR_DEFORMATION_RESPONSE_OPEN

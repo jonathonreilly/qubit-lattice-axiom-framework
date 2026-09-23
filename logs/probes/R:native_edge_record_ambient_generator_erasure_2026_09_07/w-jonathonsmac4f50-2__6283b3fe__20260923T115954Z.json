@@ -1,0 +1,34 @@
+{
+ "task": "R:native_edge_record_ambient_generator_erasure_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_edge_record_ambient_generator_erasure_2026_09_07.py",
+ "seed": 64794,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6283b3fe",
+ "started_utc": "20260923T115954Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8629243e8314714f6016aa78a9e6e764f4802297f19f31b63fbf9443b72467be",
+ "stdout_tail": "s\": 180}, \"rss_MiB\": 127.4375, \"safe_total_energies\": [19, 20], \"same_total_time\": 1.0, \"scope\": \"Actual native square with opposite dimers, fixed N2 merging paths; ambient block matrices vs separate history-code lifts. No full cube computation.\", \"seconds\": 0.33878145803464577, \"sign_summed_loss_code_leak\": 4.2117038240549247e-16, \"source_sha256\": \"8577ad66f72d708b7ec57952f082f160a689caaa5bc404c69f2e92fd38d1f70a\", \"timed_probability_ratio\": 0.7408182206817174, \"times_a\": [0.1, 0.2, 0.3, 0.4], \"times_b\": [0.4, 0.3, 0.2, 0.1], \"worst\": 3.553069838302329e-15}\nCOUNTER_SCOPE On-demand imported carrier assertions only; the parent main/full census is not rerun.\nper_element: checked all native directed edges and both sign branches in the declared capped restriction cases.\nper_site: checked all four native occupations, head routing and old/new Record roles on the square.\nper_mode: checked grouped energy projectors and every column of total-energy intertwiners, including safe Q19/Q20 coherence.\nper_block: checked initial and bridge source codes, summed loss/refusal effects and two complete merging histories.\nlattice_wide: checked and not executed -- finite witness does not prove local bath, infinite-lattice formation or renewal.\nSOURCE_SHA256 8577ad66f72d708b7ec57952f082f160a689caaa5bc404c69f2e92fd38d1f70a\nDEPENDENCIES {\"scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py\": \"fa24c6eee30f27387030640d1331f5379981013719c13b10ac5e6f97af3421af\"}\nTOTAL: PASS FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T115954Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_edge_record_ambient_generator_erasure_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

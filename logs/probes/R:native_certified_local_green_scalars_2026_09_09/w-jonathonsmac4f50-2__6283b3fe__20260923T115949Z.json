@@ -1,0 +1,35 @@
+{
+ "task": "R:native_certified_local_green_scalars_2026_09_09",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_certified_local_green_scalars_2026_09_09.py",
+ "seed": 64789,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6283b3fe",
+ "started_utc": "20260923T115949Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=215 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "311a9fdb92e09b9dc182e7c1b8f9f311efd276b2973f171c64435f3bdc65b55e",
+ "stdout_tail": "elliptic_ROOT_ACCEPTANCE.json\": \"543a97231e10bdfeb6ec9757b6b2d54f0b64d77e8a932d3a8b8f425ea6cb2bc0\",\n    \"outputs/native_certified_local_green_scalars_2026_09_09_inputs/elliptic_WORKER_COMPLETE.json\": \"06da484e3a48f530896ae41ce7da294654879134dd253b723c280a182f1a7a31\",\n    \"outputs/native_certified_local_green_scalars_2026_09_09_inputs/return_RESULT.json\": \"cac8a314f4abd746b2c6be0617d545fb451ba639758ded03db6addf1ab6f7103\",\n    \"outputs/native_certified_local_green_scalars_2026_09_09_inputs/return_ROOT_ACCEPTANCE.json\": \"dd3acc5dc2c3f9334b27d1ca0a51c5e3224bb418605874a172bc698a10df392d\",\n    \"outputs/native_certified_local_green_scalars_2026_09_09_inputs/return_WORKER_COMPLETE.json\": \"89a27389f38dcc3a7dad90234472aa3c05436c76834f9dada5fea56d8fd79358\"\n  },\n  \"scope\": \"receipt and exact interval consistency; containment also depends on reviewed source methods\"\n}\nTOTAL: PASS=215 FAIL=0\nper_element: saved rational interval endpoints, widths and derivative signs are checked; no integral is reevaluated.\nper_site: fixed declared poles and source hashes are authenticated; no additional native sites or cases are computed.\nper_mode: independent saved return and elliptic intervals are checked for overlap at the declared poles only.\nper_block: saved result and receipt identities are checked; accepted status strings alone do not establish scientific correctness.\nlattice_wide: interval containment relies on reviewed arithmetic methods and original bounded executions; no physical oracle is run.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T115950Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

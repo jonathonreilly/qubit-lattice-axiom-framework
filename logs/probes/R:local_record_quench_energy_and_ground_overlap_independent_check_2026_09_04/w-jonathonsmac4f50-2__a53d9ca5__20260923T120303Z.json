@@ -1,0 +1,35 @@
+{
+ "task": "R:local_record_quench_energy_and_ground_overlap_independent_check_2026_09_04",
+ "type": "runner-reexecution",
+ "lane": "local",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/local_record_quench_energy_and_ground_overlap_independent_check_2026_09_04.py",
+ "seed": 64983,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a53d9ca5",
+ "started_utc": "20260923T120303Z",
+ "elapsed_s": 1.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "98855c3bee7121538b57d01c65755f3c766eedbbde1216ee4ff7102c75a2dea6",
+ "stdout_tail": "PASS source_import_firewall: sha256=4c5069df7249ef61 imports=ast,hashlib,itertools,math,numpy,pathlib,scipy,sympy,sys reads=self-only\nPASS exact_fock_projection: P(n=0)=P(n=1)=1/2 Epost=-2 zero_occ=(9/10,1/10)\nPASS fixed_number_energy_trace: Delta_multi=0.471523237834 jump_multi=6 diagonal=(jump=1,Delta=0) empty=(0,0) full=(12,0)\nPASS leakage_squared_overlap: alpha=1/5 L=0.105572809000 ell=0.102786404500 F=0.897213595500\nPASS resolvent_scalar_quadrature: g=(s+5)/((s+1)(s+9)) quadrature=0.236067977500 direct=0.236067977500\nPASS canonical_integer_grids: L=4:D=0.000000000,ell=0.000000000 L=6:D=0.054323624,ell=0.023587620 L=8:D=0.072903415,ell=0.038888899\nPASS continuum_constants_shells: twist_N=2..5 ok shell_count<=32r^2 near_sum<=delta/pi+2/N g_inf<=0.589048623 liminfF>=0.116427066\nTOTAL: PASS=7 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T120305Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:native_compression_action_boundary_2026_09_09",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_compression_action_boundary_2026_09_09.py",
+ "seed": 64793,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6283b3fe",
+ "started_utc": "20260923T115953Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=539 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "eabc04f7659f06efd5b0e0ac64b3846cb12f5d0a679fbb7ce743d212c78453a0",
+ "stdout_tail": "per_element: compact saved scalar witnesses and ten diagonal lower bounds checked; original numerical arithmetic not re-executed\nper_site: checked and not executed \u2014 no sitewise physical assertion in this block\nper_mode: checked and not executed \u2014 no full-band mode or propagation computation\nper_block: five fixed compression orbits and ten four-pair action outcomes checked against immutable receipts\nlattice_wide: checked and not executed \u2014 supplied-model implementation boundary, no physical no-go\n{\"checks\": 539, \"fresh_first_pairs\": [7, 8, 8, 8, 9], \"native_calls\": 0, \"original_snapshot_required_remote_retrieval\": true, \"recovery_archive_bundled\": true, \"saved_physics_replays\": 0, \"status\": \"PASS_COMPACT_BOUNDARY_EVIDENCE\"}\nTOTAL: PASS=539 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T115953Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

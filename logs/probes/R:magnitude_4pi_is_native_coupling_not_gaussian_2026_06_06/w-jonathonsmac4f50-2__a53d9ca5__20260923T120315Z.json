@@ -1,0 +1,36 @@
+{
+ "task": "R:magnitude_4pi_is_native_coupling_not_gaussian_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "magnitude",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/magnitude_4pi_is_native_coupling_not_gaussian_2026_06_06.py",
+ "seed": 64995,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a53d9ca5",
+ "started_utc": "20260923T120315Z",
+ "elapsed_s": 0.4,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=59 FAIL=3",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c40929550d1bd1b8d8029aac298cae253430596fe6e7f24ea76c53d6d94cd3d8",
+ "stdout_tail": "ode dressing and value-gate honesty remains unaudited\nPASS: P3/per-mode dressing and value-gate honesty note records premise/import boundary\nPASS: note forbids observed-value PASS conditions\nPASS: note explicitly leaves I1/I2/I3/P3 residual open\n--- Formula-local 4pi-vs-2pi algebra, no observed values ---\nPASS: (4pi)^-16 is finite and positive\nPASS: (2pi)^-16 / (4pi)^-16 = 2^16 exactly within floating precision\nPASS: replacing supplied alpha_bare=1/(4pi) by Gaussian 1/(2pi) creates the full 2^16 gap\nPASS: no observed M_Pl/v value-match calculation appears in this runner\n--- Native Z3 inverse-Laplacian 4pi geometry ---\nPASS: native Z3 graph-Laplacian symbol tends to |k|^2\nPASS: Dirichlet radial integral int_0^inf sin(u)/u du = pi/2\nPASS: assembled continuum-leading rG coefficient is 1/(4pi)\nPASS: d=3 solid angle is 4pi\nPASS: Gaussian 2pi and solid-angle 4pi are different normalizations\n--- Multiplicity-one normalization raised to count 16 ---\nPASS: one 4pi coupling normalization raised to count 16 equals (4pi)^-16\nPASS: sixteen separate identical 4pi factors give the same number as exponent count 16\nPASS: the multiplicity objection is an over-strong decomposition demand, not a numeric obstruction\n--- Honest residual classification ---\nPASS: all readout/convention/dressing residuals are explicitly not retained\nPASS: bounded result is a source-boundary, not a hierarchy value derivation\nPASS: audit lane remains required before any effective retained status\n\nTOTAL: PASS=59 FAIL=3\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T120316Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=59 FAIL=3' vs cache 'TOTAL: PASS=62 FAIL=0'"
+  ]
+ }
+}

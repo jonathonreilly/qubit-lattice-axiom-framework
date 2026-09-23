@@ -1,0 +1,35 @@
+{
+ "task": "R:native_certified_imaginary_time_2026_09_09",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_certified_imaginary_time_2026_09_09.py",
+ "seed": 64789,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6283b3fe",
+ "started_utc": "20260923T115949Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6edcb33645c488f9bc642e87c746beb1f8825c4d8d09a9d40f63178fde42d4d6",
+ "stdout_tail": "43976c8184bf9fefc834c578879c133be0a9e923553f0957b275ce415a8\",\n    \"outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RATIONAL_TIME_REVIEW.md\": \"a5a04c99140c77c188dd1affec002e8ad3edd8fbff780ba839a90f7073793869\",\n    \"outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RICCATI.md\": \"74531a247599e2dd0bb11c09bd24d0764bd81933a2f025607fb9b2de0effb15e\",\n    \"outputs/native_certified_imaginary_time_2026_09_09_inputs/provenance/RICCATI_REVIEW.md\": \"8514fbb17d177e60bb19dfe133f9946bb13dc9d3f6baee11459b93779d2f8de3\",\n    \"scripts/native_certified_imaginary_time_2026_09_09_algebra.py\": \"840414c5ac59a12ee58deadc53fe43be15db17f9de1dce76341348a535b66134\"\n  },\n  \"scope\": \"exact synthetic algebra and rational bounds; no native propagation\",\n  \"source_sha256\": \"c984e75adeb7adea87fdedab169b982056a39472e41e404c3e5af476c9e8aa87\",\n  \"status\": \"SUPPORTING_CONTROLS_PASS\"\n}\nTOTAL: PASS=15 FAIL=0\nper_element:11 exact synthetic algebra predicates execute on declared two-mode and four-mode fixtures.\nper_site: no native spatial propagation or local kernel is executed; spatial approximation remains a separate input.\nper_mode: four exact rational comparisons check polynomial budgets and disk margins, not total algorithmic error.\nper_block: reference Riccati and exact positive-band charts are distinguished analytically; Gram and initial-tail premises remain.\nlattice_wide: all-time chart control is analytical; no imaginary-time native evolution or node scalar is evaluated.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T115949Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

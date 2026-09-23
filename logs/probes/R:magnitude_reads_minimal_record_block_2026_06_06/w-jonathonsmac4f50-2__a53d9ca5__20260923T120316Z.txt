@@ -1,0 +1,20 @@
+Magnitude minimal-block readout boundary
+========================================================================
+--- Section I: finite temporal count facts ---
+PASS: eta_1(t)=(-1)^t has minimal period 2
+PASS: a single time-slice is not a translation-invariant eta_1 cell
+PASS: direct two-step contraction sample lies in (0,1]
+FAIL: one-hop RP cache supplies single-step non-positivity
+FAIL: one-hop RP cache supplies two-step positivity
+--- Section R: Record axiom boundary ---
+FAIL: approved Record axiom boundary is present
+FAIL: Record does not supply a readout-scale selector
+  minimal axioms leave readout-context selection, time metric, weighting, normalization, and occupancy selection open
+--- Section S: conditional arithmetic only ---
+PASS: conditional UV/minimal-block exponent would be 8 x 2 = 16
+PASS: OS-continuum count sequence is a different unbounded reconstruction object
+PASS: no-go: Record plus RP two-step does not select L_t=2 over L_t -> infinity
+========================================================================
+MAGNITUDE_MINIMAL_BLOCK_SELECTED_BY_RECORD=FALSE
+CONDITIONAL_IF_UV_MINIMAL_BLOCK_READOUT_SUPPLIED=16
+TOTAL: PASS=6 FAIL=4

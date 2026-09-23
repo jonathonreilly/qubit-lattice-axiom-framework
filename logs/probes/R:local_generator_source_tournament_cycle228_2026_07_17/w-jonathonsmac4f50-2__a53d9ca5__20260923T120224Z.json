@@ -1,0 +1,31 @@
+{
+ "task": "R:local_generator_source_tournament_cycle228_2026_07_17",
+ "type": "runner-reexecution",
+ "lane": "local",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+ "seed": 64944,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a53d9ca5",
+ "started_utc": "20260923T120224Z",
+ "elapsed_s": 2.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c358af106e37e0189ec3079466776068d5b064598890f7288bbeb4f73462d8a8",
+ "stdout_tail": "rmations share exactly the same undeformed U :: [{'name': 'scalar', 'base_residual': 0.0, 'unitarity': 1.394807212886204e-15, 'covariance': 0.0, 'uniform_response': 1.0000000000405096, 'conservation_residual': 0.3663629096082052}, {'name': 'vector', 'base_residual': 0.0, 'unitarity': 1.2336573540248355e-15, 'covariance': 0.0, 'uniform_response': -1.510501319877213e-11, 'conservation_residual': 0.6318283650494839}]\nPASS their local response operators differ and are not automatically conserved :: [{'name': 'scalar', 'base_residual': 0.0, 'unitarity': 1.394807212886204e-15, 'covariance': 0.0, 'uniform_response': 1.0000000000405096, 'conservation_residual': 0.3663629096082052}, {'name': 'vector', 'base_residual': 0.0, 'unitarity': 1.2336573540248355e-15, 'covariance': 0.0, 'uniform_response': -1.510501319877213e-11, 'conservation_residual': 0.6318283650494839}]\nPASS projective rephasing and parameter rescaling shift or scale the same tangent response :: {'same_base': 0.0, 'same_projective_channel': 2.382543586562954e-16, 'identity_shift': 4.711062997471946e-11, 'parameter_scale': 3.0782973587290594e-10}\nPASS every candidate transforms in all 24 proper-cubic frames :: {'U': np.float64(0.0), 'K': np.float64(0.0), 'S': np.float64(0.0), 'sqrtK': np.float64(9.575654810248983e-15), 'Habs': np.float64(3.475851645886899e-14)}\nPASS the tournament is invariant under internal basis presentation :: 1.0045125655096386e-14\nPASS 39 FAIL 0\nRESULT LOCAL_SPECTRAL_PAIR_PHYSICAL_INTERPRETATION_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T120226Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "task": "R:magnitude_temporal_factor_is_count_not_rate_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "magnitude",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/magnitude_temporal_factor_is_count_not_rate_2026_06_06.py",
+ "seed": 64996,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a53d9ca5",
+ "started_utc": "20260923T120316Z",
+ "elapsed_s": 0.3,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=46 FAIL=6",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bcb79c0f66c5356aa59eb089b6feb729fca110302ebe14efbc7b3b2bd90bdd1b",
+ "stdout_tail": "e count scales LINEARLY with L_t (a count, dim(L_t=2)/dim(L_t=1)=2)\nPASS: mode COUNT is INDEPENDENT of the hopping rate u_0 (count, not rate)\nPASS: the per-mode VALUE (eigenvalues) DOES depend on u_0 -> that is the rate (alpha_LM/DELTA0), a SEPARATE gate, not the count\n--- Section B: count-only rows are in the no-go's supported zone, rates are not ---\nPASS: the magnitude exponent is used as a transfer-step/mode COUNT, not a rate\nPASS: count-only rows are in the no-go's SUPPORTED zone\nPASS: the no-go forbids RATE/METRIC, which the exponent is NOT (exponent != per-mode value)\n--- Section C: minimal temporal block = 2 (period-2 phase + 2-step positivity) ---\nPASS: staggered temporal phase eta_1(t)=(-1)^t has minimal period 2 -> minimal temporal block = 2\nPASS: 2-step contraction e^{-2E} in (0,1] (positive, forward channel) for all p\nPASS: single-step phase alternates (period 2) so the minimal positive unit is the 2-step block\n--- Section D: count survives the normalization that divides the rate-2 out ---\nPASS: OS normalization divides the ENERGY by 2 (rate-2 dissolves): H_wrong/H = 2 exactly\nPASS: the mode COUNT (number of eigenvalues) is INVARIANT under the energy rescaling\nPASS: count-2 (cardinality) and rate-2 (energy spacing) are DIFFERENT objects\n--- Section E: minimal block L_t=2 -> exponent 16 ---\nPASS: minimal reflection-positive block L_t=2 -> mode count = 8 x 2 = 16\nPASS: per-record/UV readout selection remains outside this runner's closed claim\n\nTOTAL: PASS=46 FAIL=6\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T120316Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=46 FAIL=6' vs cache 'TOTAL: PASS=52 FAIL=0'"
+  ]
+ }
+}

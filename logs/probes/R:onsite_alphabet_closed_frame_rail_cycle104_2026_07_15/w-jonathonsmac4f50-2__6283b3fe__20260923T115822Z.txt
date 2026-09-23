@@ -1,0 +1,66 @@
+
+===============================================================================
+A - Cycle-102 alphabet defect and exact-absent-pool obstruction
+===============================================================================
+PASS A01 unmodified Cycle102 uses 34 phase labels outside the 153-role alphabet
+PASS A02 B/C/D domain and source-absent pool each have exactly 36 roles
+PASS A03 only B_1_2 and B_0_2 already belong to the live alphabet
+PASS A04 exact absent pool contains both unary-hazard roles
+PASS A05 every nonlaunch role exposes an extra unary target; launch roles expose the next target
+PASS A06 R_LC makes an exact-36-absent pure relabel impossible in this geometry
+PASS A07 obstruction is narrow: it is a pure-relabel result, not a cage/table no-go
+
+===============================================================================
+B - Role-closed repaired mapping and mixed table
+===============================================================================
+PASS B01 mapping is an exact injective map on all 36 B/C/D roles
+PASS B02 repaired codomain is exactly absent-minus-unary plus B0/L10
+PASS B03 all remapped phase roles are live onsite contents and remain phase-injective
+PASS B04 B_1_2 and B_0_2 are the two identity fixed points
+PASS B05 B0/L10 reuse is explicit: 2 and 9 pre-existing source records
+PASS B06 B0 and L10 have no one-parent rows in the Cycle100 table
+PASS B07 remapped rail retains 1,080 single-valued raw inputs
+PASS B08 remapped rail is disjoint from Cycle100 and mixed union is 6,524 single-valued :: ()
+PASS B09 complete mixed law is closed on the exact 153-role onsite alphabet
+
+===============================================================================
+C - Forced W1 fixed points and debris-adapter census
+===============================================================================
+PASS C01 95 rail appends use remapped rows and exactly one uses a Cycle100 adapter :: Counter({(False, True): 95, (True, False): 1})
+PASS C02 sole adapter is A_0_2 + B_1_2 + W1 -> B_0_2 at first-slice write three
+PASS C03 every intended provider has exactly the remapped output :: []
+PASS C04 changing B_1_2 without a new polluted-row adapter fails by write three :: (2, {(-2, 2, 0): frozenset({'B_0_2'})}, {})
+PASS C05 changing B_0_2 without a new polluted-row adapter fails by write three :: (2, {(-2, 2, 0): frozenset({'R_C10'})}, {(-2, 2, 0): frozenset({'B_0_2'})})
+PASS C06 no additional fixed point or debris adapter is consumed in eight slices
+
+===============================================================================
+D - Eight-slice asynchronous product and debris closure
+===============================================================================
+PASS D01 all 11 x 97 code/eight-slice prefix states have exactly the lawful fronts :: []
+PASS D02 no pre-existing B0/L10 debris site participates in an enabled remapped row :: []
+PASS D03 eight complete slices expose exactly the ninth-slice start
+PASS D04 every source, code, and rail record stays inside FULL_ROLES
+
+===============================================================================
+E - All first-slice async states under all rotations
+===============================================================================
+PASS E01 all 143 x 24 asynchronous state images have exact transformed fronts :: []
+PASS E02 complete 6,524-row mixed table is closed under all 24 rotations :: []
+PASS E03 base 1,067-state theorem plus exact raw closure lifts all eight-slice images
+
+===============================================================================
+F - Scope, N1-N8, and constitutional disposition
+===============================================================================
+FAIL F01 note exists, has authority none, and issues no audit verdict
+FAIL F02 note records the original 34-role alphabet defect and narrow obstruction
+FAIL F03 note records safe B0/L10 reuse and both fixed identities
+FAIL F04 note names N1-N8 and the retained payload bind
+FAIL F05 note distinguishes onsite closure from global role freshness
+FAIL F06 note makes no foundation or axiom change
+
+FULL_ROLES=153 ORIGINAL_FOREIGN=34 DOMAIN=36
+ABSENT_POOL=36 SAFE_POOL=36 REMAPPED_RAW=1080 MIXED_RAW=6524
+PREFIX_STATES=1067 ROTATED_FIRST_SLICE_STATES=3432 ROTATED_RAW=156576
+PROVIDERS=95_REMAPPED_PLUS_1_W1_ADAPTER SAFE_REUSE=B0x2+L10x9
+RESULT=ONSITE_ALPHABET_CLOSED_BOUNDED_FRAME_RAIL
+SUMMARY: 29 PASS / 6 FAIL

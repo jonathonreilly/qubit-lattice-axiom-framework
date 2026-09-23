@@ -1,0 +1,35 @@
+{
+ "task": "R:native_dynamical_cycle_dictionary_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_dynamical_cycle_dictionary_2026_09_08.py",
+ "seed": 64793,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6283b3fe",
+ "started_utc": "20260923T115953Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7919 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "57249be739ec85d2927acf2da90963d40b7fe735de7bb13a97cef456d4f9a1ba",
+ "stdout_tail": "DED_THEOREM_NOTE_2026-09-03.md\": \"c1cc8df7ae97504527fd26195e65670ad6ccf4e01982d0665040662b22ba0d7e\",\n    \"docs/THE_FERMIONS_U1_COUPLED_TO_QUANTUM_LINKS_GAUSS_LAW_AS_A_SUPPORT_CONDITION_AMONG_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-03.md\": \"3c3f4f99c5079766165657d872c9572b347bdc323bf801bcddb31f879420bbcd\",\n    \"scripts/native_dynamical_cycle_dictionary_author_2026_09_08.py\": \"b2cafec0aee2aadee305ec2224a9abc1f247c25fea4a633a4576800ef5881914\",\n    \"scripts/native_dynamical_cycle_dictionary_independent_2026_09_08.py\": \"46d3e6a623c3609925a87b287fe2ce44165374178023e93469da5400e200cade\",\n    \"scripts/native_dynamical_cycle_dictionary_exchange_2026_09_08.py\": \"7a1120377e5b45152ee8d025d517ada0bb2bc86db3ac14f5fc6c966406f23456\"\n  },\n  \"scope\": \"Exact constrained Z2 dictionary and finite local charged-exchange controls; no U1, phase-of-matter or axiom-selection conclusion.\"\n}\nper_element: native A, B and physical Z are intertwined with constrained CAR/link operators.\nper_site: mathematical enlarged variables add no physical site role or nearest-neighbor implementation.\nper_mode: m CAR modes obey all m Gauss constraints and even total parity.\nper_block: five author graph fixtures, independent pentagon/chord and local exchange controls.\nlattice_wide: checked and not executed \u2014 finite-graph theorem proved analytically; no lattice-wide numerical execution, large-volume phase, formation law or selected Hamiltonian.\nTOTAL: PASS=7919 FAIL=0\nResources: 0.079758s, 33.969MiB; timeout180s, RSS384MiB.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T115953Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_dynamical_cycle_dictionary_2026_09_08.txt against the .txt beside this log"
+  ]
+ }
+}

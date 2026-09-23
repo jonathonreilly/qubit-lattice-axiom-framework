@@ -1,0 +1,34 @@
+{
+ "task": "R:n5_single_generator_clock_exchange_no_go_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "n5",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/n5_single_generator_clock_exchange_no_go_2026_06_17.py",
+ "seed": 64786,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6283b3fe",
+ "started_utc": "20260923T115946Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=12 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d2bb47ec6deda3fa6d2b5f1b580d44c883fcc44c18464a7eca85bf3dc37431e6",
+ "stdout_tail": "e-local readout P_A = |0><0| tensor I is what separates them: Tr(G1 P_A) != Tr(G2 P_A) while every S-invariant functional returns Phi(G1) = Phi(G2). Site preference is exactly the ingredient shown to be required.\nper_mode: checked, but only as the eigenvalue spectrum of a 4x4 operator - no lattice momentum or Fourier mode can exist on a two-site witness. What is resolved spectrally is the evolution: exp(-i A) is formed by eigh diagonalization, and the sum-clock orbit exp(-i r (G1 + G2)) is swept over 2000 values of r across [0, 2 pi], with the closest approach to exp(-i G1) at distance 1.356, well above the 0.05 threshold.\nper_block: checked - the blocks are the two Z_2 isotypes of the exchange, and both are resolved. The symmetric direction G1 + G2 is verified fixed by conjugation with S and the antisymmetric direction G1 - G2 is verified negated, which is what certifies S as a genuine exchange rather than a stabilizer; the note's own boundary is that removing the antisymmetric block by a quotient theorem is left outside this row and is not attempted here.\nlattice_wide: checked, with the honest caveat that the whole lattice is two sites. The S-invariant selectors Tr(X), Tr(X^2) and Tr(X (G1 + G2)) are genuine whole-system functionals over the full 4-dimensional Hilbert space, so nothing larger than them exists to compute here; but no extent, volume scaling or limit is taken, matching the note's own scoping of the claim to the finite two-clock witness.\n\nTOTAL: PASS=12 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T115946Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

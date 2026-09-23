@@ -1,0 +1,36 @@
+{
+ "task": "R:one_parameter_shell_helper_packet_2026_06_16",
+ "type": "runner-reexecution",
+ "lane": "one",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/one_parameter_shell_helper_packet_2026_06_16.py",
+ "seed": 64702,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6283b3fe",
+ "started_utc": "20260923T115822Z",
+ "elapsed_s": 0.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=50 FAIL=5",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2d231d9402e50059fe2e1a096e2fd6abef7b81153f1a06d4e2a752e6de3b5228",
+ "stdout_tail": "ve_from_source`\n    sha256=982afafc28f9ccd63306ad76de5e86fa4f59526fded9002fe2326a77d5dd6c01\n[PASS] sewing shell source cache exists -- logs/runner-cache/frontier_sewing_shell_source.txt\n[PASS] sewing shell source cache names helper runner -- scripts/frontier_sewing_shell_source.py\n[PASS] sewing shell source cache is SHA-fresh -- 982afafc28f9\n[PASS] sewing shell source cache exited cleanly -- status=ok exit=0\n[PASS] sewing shell source cache output is passing\n\nradial shell matching law\n[PASS] scripts/frontier_radial_shell_matching_law.py exists\n[PASS] scripts/frontier_radial_shell_matching_law.py has substantive source -- lines=172\n[PASS] scripts/frontier_radial_shell_matching_law.py exposes `def radial_average_shell`\n[PASS] scripts/frontier_radial_shell_matching_law.py exposes `def solve_from_source`\n[PASS] scripts/frontier_radial_shell_matching_law.py exposes `def exterior_relative_errors`\n    sha256=0bb3dac9010b69438ad6aa1ad011ee3f2ea71eb5e830fa074333f4bd5b78d78c\n[PASS] radial shell matching law cache exists -- logs/runner-cache/frontier_radial_shell_matching_law.txt\n[PASS] radial shell matching law cache names helper runner -- scripts/frontier_radial_shell_matching_law.py\n[PASS] radial shell matching law cache is SHA-fresh -- 0bb3dac9010b\n[PASS] radial shell matching law cache exited cleanly -- status=ok exit=0\n[PASS] radial shell matching law cache output is passing\n\n========================================================================\nSUMMARY: PASS=50 FAIL=5 TOTAL=55\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T115822Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: PASS=50 FAIL=5' vs cache 'SUMMARY: PASS=55 FAIL=0'"
+  ]
+ }
+}

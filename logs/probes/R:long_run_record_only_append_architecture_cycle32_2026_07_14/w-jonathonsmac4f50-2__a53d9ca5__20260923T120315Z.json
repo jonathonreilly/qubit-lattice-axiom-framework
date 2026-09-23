@@ -1,0 +1,31 @@
+{
+ "task": "R:long_run_record_only_append_architecture_cycle32_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "long",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/long_run_record_only_append_architecture_cycle32_2026_07_14.py",
+ "seed": 64995,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a53d9ca5",
+ "started_utc": "20260923T120315Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7741a97a982108bec00ac0cec11c3bb409442b6b71a5748aee69e26a9c0409a4",
+ "stdout_tail": "cal state\nPASS L TOE lane is classified: formation\nPASS L TOE lane is classified: probability\nPASS L TOE lane is classified: time\nPASS L TOE lane is classified: matter/transport\nPASS L TOE lane is classified: thermodynamics\nPASS L TOE lane is classified: resource\nPASS L TOE lane is classified: gravity\nPASS L TOE lane is classified: cosmology\nPASS L N1 section is present\nPASS L N2 section is present\nPASS L N3 section is present\nPASS L N4 section is present\nPASS L N5 section is present\nPASS L N6 section is present\nPASS L N7 section is present\nPASS L N8 section is present\nPASS L cross-cycle residual is matched: cycle 22\nPASS L cross-cycle residual is matched: cycle 21\nPASS L cross-cycle residual is matched: cycle 26\nPASS L cross-cycle residual is matched: cycles 9\u201311\nPASS L cross-cycle residual is matched: cycle 30\nPASS L no broad no-go is explicit\nPASS L live global-history steelman is explicit\nPASS L Record placement says no extra storage sentence is forced\nPASS L Admissibility placement rejects renewal content\nPASS L resource placement rejects a generic resource axiom\nPASS L law/boundary placement is explicit\n\n===============================================================================\nTOTAL\n===============================================================================\nPASS=930 FAIL=0\nRESULT: PASS\nBOUNDARY: finite local append exhausts; infinite Z^3 permits a growing history front; recurrence, renewal, rate, thermodynamics, and gravity remain exact-law/ontology questions\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T120315Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

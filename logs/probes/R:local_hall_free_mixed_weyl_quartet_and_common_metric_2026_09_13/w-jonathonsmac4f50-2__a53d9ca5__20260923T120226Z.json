@@ -1,0 +1,35 @@
+{
+ "task": "R:local_hall_free_mixed_weyl_quartet_and_common_metric_2026_09_13",
+ "type": "runner-reexecution",
+ "lane": "local",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/local_hall_free_mixed_weyl_quartet_and_common_metric_2026_09_13.py",
+ "seed": 64946,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a53d9ca5",
+ "started_utc": "20260923T120226Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=959 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c59d8fbf8066bc3b33cf4d2e3388139db23ea9115b864266067bb882baf892d5",
+ "stdout_tail": "energy_1\",\n      \"error\": 1.734723475976807e-18\n    },\n    {\n      \"name\": \"PH_not_required_1\"\n    },\n    {\n      \"name\": \"perturbed_simple_type_I_1_0\",\n      \"node\": [\n        -0.44554946022752867,\n        0.0035678479784841018,\n        -0.7668175412017271\n      ],\n      \"residual\": 1.3801339919847004e-16,\n      \"energy\": 0.009251831222098737,\n      \"det\": 0.6019064279358733,\n      \"type_I_norm\": 1.114562674848977e-05\n    },\n    {\n      \"name\": \"perturbed_simple_type_I_1_1\",\n      \"node\": [\n        -0.44554946022752867,\n        0.0035678479784841018,\n        0.7668175412017272\n      ],\n      \"residual\": 1.3801339919847004e-16,\n      \"energy\": 0.009251831222098737,\n      \"det\": -0.6019064279307106,\n      \"type_I_norm\": 1.1145626744404052e-05\n    },\n    {\n      \"name\": \"perturbed_simple_type_I_1_2\",\n      \"node\": [\n        0.44554946022752867,\n        -0.003567847978484102,\n        -0.7668175412017273\n      ],\n      \"residual\": 3.807967934715177e-17,\n      \"energy\": 0.00925183122209874,\n      \"det\": -0.6019064279350456,\n      \"type_I_norm\": 1.1145626749900608e-05\n    },\n    {\n      \"name\": \"perturbed_simple_type_I_1_3\",\n      \"node\": [\n        0.4455494602275287,\n        -0.003567847978484102,\n        0.7668175412017271\n      ],\n      \"residual\": 1.7842298647434729e-16,\n      \"energy\": 0.00925183122209874,\n      \"det\": 0.6019064279368769,\n      \"type_I_norm\": 1.1145626749372252e-05\n    },\n    {\n      \"name\": \"spinless_TRIM_linear_rank_bound\"\n    }\n  ]\n}\nTOTAL: PASS=959 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T120227Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/local_hall_free_mixed_weyl_quartet_and_common_metric_2026_09_13.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,985 @@
+
+===============================================================================
+A - Foundation, registry, and authority contract
+===============================================================================
+PASS A note exists
+PASS A note is authority-free
+PASS A note does not amend an axiom
+PASS A note does not select a physical law
+PASS A note names the tested semantic branch
+PASS A note does not promote site tethering into live Record
+PASS A live Record says at most one record per site
+PASS A live Record says records are permanent
+PASS A live Qualification says state is records
+PASS A live memo says Admissibility is not dynamics
+PASS A registry contains exactly the four supplied premise IDs
+PASS A minimal-axiom path is current
+
+===============================================================================
+B - Finite append capacity and no bounded cycle
+===============================================================================
+PASS B N=1 level census is C(N,k)2^k :: (1, 2)
+PASS B N=1 every append edge strictly raises record rank
+PASS B N=1 no terminal configuration has an open append site
+PASS B N=2 level census is C(N,k)2^k :: (1, 4, 4)
+PASS B N=2 every append edge strictly raises record rank
+PASS B N=2 no terminal configuration has an open append site
+PASS B N=3 level census is C(N,k)2^k :: (1, 6, 12, 8)
+PASS B N=3 every append edge strictly raises record rank
+PASS B N=3 no terminal configuration has an open append site
+PASS B N=4 level census is C(N,k)2^k :: (1, 8, 24, 32, 16)
+PASS B N=4 every append edge strictly raises record rank
+PASS B N=4 no terminal configuration has an open append site
+PASS B N=5 level census is C(N,k)2^k :: (1, 10, 40, 80, 80, 32)
+PASS B N=5 every append edge strictly raises record rank
+PASS B N=5 no terminal configuration has an open append site
+PASS B N=6 level census is C(N,k)2^k :: (1, 12, 60, 160, 240, 192, 64)
+PASS B N=6 every append edge strictly raises record rank
+PASS B N=6 no terminal configuration has an open append site
+PASS B N=7 level census is C(N,k)2^k :: (1, 14, 84, 280, 560, 672, 448, 128)
+PASS B N=7 every append edge strictly raises record rank
+PASS B N=7 no terminal configuration has an open append site
+PASS B K=1, initial=0 total future formations are at most K-initial
+PASS B K=1, initial=0, c=1 certified-trial cap is sharp
+PASS B K=1, initial=0, c=2 certified-trial cap is sharp
+PASS B K=1, initial=0, c=3 certified-trial cap is sharp
+PASS B K=1, initial=0, c=5 certified-trial cap is sharp
+PASS B K=1, initial=1 total future formations are at most K-initial
+PASS B K=1, initial=1, c=1 certified-trial cap is sharp
+PASS B K=1, initial=1, c=2 certified-trial cap is sharp
+PASS B K=1, initial=1, c=3 certified-trial cap is sharp
+PASS B K=1, initial=1, c=5 certified-trial cap is sharp
+PASS B K=2, initial=0 total future formations are at most K-initial
+PASS B K=2, initial=0, c=1 certified-trial cap is sharp
+PASS B K=2, initial=0, c=2 certified-trial cap is sharp
+PASS B K=2, initial=0, c=3 certified-trial cap is sharp
+PASS B K=2, initial=0, c=5 certified-trial cap is sharp
+PASS B K=2, initial=1 total future formations are at most K-initial
+PASS B K=2, initial=1, c=1 certified-trial cap is sharp
+PASS B K=2, initial=1, c=2 certified-trial cap is sharp
+PASS B K=2, initial=1, c=3 certified-trial cap is sharp
+PASS B K=2, initial=1, c=5 certified-trial cap is sharp
+PASS B K=2, initial=2 total future formations are at most K-initial
+PASS B K=2, initial=2, c=1 certified-trial cap is sharp
+PASS B K=2, initial=2, c=2 certified-trial cap is sharp
+PASS B K=2, initial=2, c=3 certified-trial cap is sharp
+PASS B K=2, initial=2, c=5 certified-trial cap is sharp
+PASS B K=5, initial=0 total future formations are at most K-initial
+PASS B K=5, initial=0, c=1 certified-trial cap is sharp
+PASS B K=5, initial=0, c=2 certified-trial cap is sharp
+PASS B K=5, initial=0, c=3 certified-trial cap is sharp
+PASS B K=5, initial=0, c=5 certified-trial cap is sharp
+PASS B K=5, initial=1 total future formations are at most K-initial
+PASS B K=5, initial=1, c=1 certified-trial cap is sharp
+PASS B K=5, initial=1, c=2 certified-trial cap is sharp
+PASS B K=5, initial=1, c=3 certified-trial cap is sharp
+PASS B K=5, initial=1, c=5 certified-trial cap is sharp
+PASS B K=5, initial=2 total future formations are at most K-initial
+PASS B K=5, initial=2, c=1 certified-trial cap is sharp
+PASS B K=5, initial=2, c=2 certified-trial cap is sharp
+PASS B K=5, initial=2, c=3 certified-trial cap is sharp
+PASS B K=5, initial=2, c=5 certified-trial cap is sharp
+PASS B K=5, initial=3 total future formations are at most K-initial
+PASS B K=5, initial=3, c=1 certified-trial cap is sharp
+PASS B K=5, initial=3, c=2 certified-trial cap is sharp
+PASS B K=5, initial=3, c=3 certified-trial cap is sharp
+PASS B K=5, initial=3, c=5 certified-trial cap is sharp
+PASS B K=5, initial=4 total future formations are at most K-initial
+PASS B K=5, initial=4, c=1 certified-trial cap is sharp
+PASS B K=5, initial=4, c=2 certified-trial cap is sharp
+PASS B K=5, initial=4, c=3 certified-trial cap is sharp
+PASS B K=5, initial=4, c=5 certified-trial cap is sharp
+PASS B K=5, initial=5 total future formations are at most K-initial
+PASS B K=5, initial=5, c=1 certified-trial cap is sharp
+PASS B K=5, initial=5, c=2 certified-trial cap is sharp
+PASS B K=5, initial=5, c=3 certified-trial cap is sharp
+PASS B K=5, initial=5, c=5 certified-trial cap is sharp
+PASS B K=11, initial=0 total future formations are at most K-initial
+PASS B K=11, initial=0, c=1 certified-trial cap is sharp
+PASS B K=11, initial=0, c=2 certified-trial cap is sharp
+PASS B K=11, initial=0, c=3 certified-trial cap is sharp
+PASS B K=11, initial=0, c=5 certified-trial cap is sharp
+PASS B K=11, initial=1 total future formations are at most K-initial
+PASS B K=11, initial=1, c=1 certified-trial cap is sharp
+PASS B K=11, initial=1, c=2 certified-trial cap is sharp
+PASS B K=11, initial=1, c=3 certified-trial cap is sharp
+PASS B K=11, initial=1, c=5 certified-trial cap is sharp
+PASS B K=11, initial=2 total future formations are at most K-initial
+PASS B K=11, initial=2, c=1 certified-trial cap is sharp
+PASS B K=11, initial=2, c=2 certified-trial cap is sharp
+PASS B K=11, initial=2, c=3 certified-trial cap is sharp
+PASS B K=11, initial=2, c=5 certified-trial cap is sharp
+PASS B K=11, initial=3 total future formations are at most K-initial
+PASS B K=11, initial=3, c=1 certified-trial cap is sharp
+PASS B K=11, initial=3, c=2 certified-trial cap is sharp
+PASS B K=11, initial=3, c=3 certified-trial cap is sharp
+PASS B K=11, initial=3, c=5 certified-trial cap is sharp
+PASS B K=11, initial=4 total future formations are at most K-initial
+PASS B K=11, initial=4, c=1 certified-trial cap is sharp
+PASS B K=11, initial=4, c=2 certified-trial cap is sharp
+PASS B K=11, initial=4, c=3 certified-trial cap is sharp
+PASS B K=11, initial=4, c=5 certified-trial cap is sharp
+PASS B K=11, initial=5 total future formations are at most K-initial
+PASS B K=11, initial=5, c=1 certified-trial cap is sharp
+PASS B K=11, initial=5, c=2 certified-trial cap is sharp
+PASS B K=11, initial=5, c=3 certified-trial cap is sharp
+PASS B K=11, initial=5, c=5 certified-trial cap is sharp
+PASS B K=11, initial=6 total future formations are at most K-initial
+PASS B K=11, initial=6, c=1 certified-trial cap is sharp
+PASS B K=11, initial=6, c=2 certified-trial cap is sharp
+PASS B K=11, initial=6, c=3 certified-trial cap is sharp
+PASS B K=11, initial=6, c=5 certified-trial cap is sharp
+PASS B K=11, initial=7 total future formations are at most K-initial
+PASS B K=11, initial=7, c=1 certified-trial cap is sharp
+PASS B K=11, initial=7, c=2 certified-trial cap is sharp
+PASS B K=11, initial=7, c=3 certified-trial cap is sharp
+PASS B K=11, initial=7, c=5 certified-trial cap is sharp
+PASS B K=11, initial=8 total future formations are at most K-initial
+PASS B K=11, initial=8, c=1 certified-trial cap is sharp
+PASS B K=11, initial=8, c=2 certified-trial cap is sharp
+PASS B K=11, initial=8, c=3 certified-trial cap is sharp
+PASS B K=11, initial=8, c=5 certified-trial cap is sharp
+PASS B K=11, initial=9 total future formations are at most K-initial
+PASS B K=11, initial=9, c=1 certified-trial cap is sharp
+PASS B K=11, initial=9, c=2 certified-trial cap is sharp
+PASS B K=11, initial=9, c=3 certified-trial cap is sharp
+PASS B K=11, initial=9, c=5 certified-trial cap is sharp
+PASS B K=11, initial=10 total future formations are at most K-initial
+PASS B K=11, initial=10, c=1 certified-trial cap is sharp
+PASS B K=11, initial=10, c=2 certified-trial cap is sharp
+PASS B K=11, initial=10, c=3 certified-trial cap is sharp
+PASS B K=11, initial=10, c=5 certified-trial cap is sharp
+PASS B K=11, initial=11 total future formations are at most K-initial
+PASS B K=11, initial=11, c=1 certified-trial cap is sharp
+PASS B K=11, initial=11, c=2 certified-trial cap is sharp
+PASS B K=11, initial=11, c=3 certified-trial cap is sharp
+PASS B K=11, initial=11, c=5 certified-trial cap is sharp
+PASS B K=23, initial=0 total future formations are at most K-initial
+PASS B K=23, initial=0, c=1 certified-trial cap is sharp
+PASS B K=23, initial=0, c=2 certified-trial cap is sharp
+PASS B K=23, initial=0, c=3 certified-trial cap is sharp
+PASS B K=23, initial=0, c=5 certified-trial cap is sharp
+PASS B K=23, initial=1 total future formations are at most K-initial
+PASS B K=23, initial=1, c=1 certified-trial cap is sharp
+PASS B K=23, initial=1, c=2 certified-trial cap is sharp
+PASS B K=23, initial=1, c=3 certified-trial cap is sharp
+PASS B K=23, initial=1, c=5 certified-trial cap is sharp
+PASS B K=23, initial=2 total future formations are at most K-initial
+PASS B K=23, initial=2, c=1 certified-trial cap is sharp
+PASS B K=23, initial=2, c=2 certified-trial cap is sharp
+PASS B K=23, initial=2, c=3 certified-trial cap is sharp
+PASS B K=23, initial=2, c=5 certified-trial cap is sharp
+PASS B K=23, initial=3 total future formations are at most K-initial
+PASS B K=23, initial=3, c=1 certified-trial cap is sharp
+PASS B K=23, initial=3, c=2 certified-trial cap is sharp
+PASS B K=23, initial=3, c=3 certified-trial cap is sharp
+PASS B K=23, initial=3, c=5 certified-trial cap is sharp
+PASS B K=23, initial=4 total future formations are at most K-initial
+PASS B K=23, initial=4, c=1 certified-trial cap is sharp
+PASS B K=23, initial=4, c=2 certified-trial cap is sharp
+PASS B K=23, initial=4, c=3 certified-trial cap is sharp
+PASS B K=23, initial=4, c=5 certified-trial cap is sharp
+PASS B K=23, initial=5 total future formations are at most K-initial
+PASS B K=23, initial=5, c=1 certified-trial cap is sharp
+PASS B K=23, initial=5, c=2 certified-trial cap is sharp
+PASS B K=23, initial=5, c=3 certified-trial cap is sharp
+PASS B K=23, initial=5, c=5 certified-trial cap is sharp
+PASS B K=23, initial=6 total future formations are at most K-initial
+PASS B K=23, initial=6, c=1 certified-trial cap is sharp
+PASS B K=23, initial=6, c=2 certified-trial cap is sharp
+PASS B K=23, initial=6, c=3 certified-trial cap is sharp
+PASS B K=23, initial=6, c=5 certified-trial cap is sharp
+PASS B K=23, initial=7 total future formations are at most K-initial
+PASS B K=23, initial=7, c=1 certified-trial cap is sharp
+PASS B K=23, initial=7, c=2 certified-trial cap is sharp
+PASS B K=23, initial=7, c=3 certified-trial cap is sharp
+PASS B K=23, initial=7, c=5 certified-trial cap is sharp
+PASS B K=23, initial=8 total future formations are at most K-initial
+PASS B K=23, initial=8, c=1 certified-trial cap is sharp
+PASS B K=23, initial=8, c=2 certified-trial cap is sharp
+PASS B K=23, initial=8, c=3 certified-trial cap is sharp
+PASS B K=23, initial=8, c=5 certified-trial cap is sharp
+PASS B K=23, initial=9 total future formations are at most K-initial
+PASS B K=23, initial=9, c=1 certified-trial cap is sharp
+PASS B K=23, initial=9, c=2 certified-trial cap is sharp
+PASS B K=23, initial=9, c=3 certified-trial cap is sharp
+PASS B K=23, initial=9, c=5 certified-trial cap is sharp
+PASS B K=23, initial=10 total future formations are at most K-initial
+PASS B K=23, initial=10, c=1 certified-trial cap is sharp
+PASS B K=23, initial=10, c=2 certified-trial cap is sharp
+PASS B K=23, initial=10, c=3 certified-trial cap is sharp
+PASS B K=23, initial=10, c=5 certified-trial cap is sharp
+PASS B K=23, initial=11 total future formations are at most K-initial
+PASS B K=23, initial=11, c=1 certified-trial cap is sharp
+PASS B K=23, initial=11, c=2 certified-trial cap is sharp
+PASS B K=23, initial=11, c=3 certified-trial cap is sharp
+PASS B K=23, initial=11, c=5 certified-trial cap is sharp
+PASS B K=23, initial=12 total future formations are at most K-initial
+PASS B K=23, initial=12, c=1 certified-trial cap is sharp
+PASS B K=23, initial=12, c=2 certified-trial cap is sharp
+PASS B K=23, initial=12, c=3 certified-trial cap is sharp
+PASS B K=23, initial=12, c=5 certified-trial cap is sharp
+PASS B K=23, initial=13 total future formations are at most K-initial
+PASS B K=23, initial=13, c=1 certified-trial cap is sharp
+PASS B K=23, initial=13, c=2 certified-trial cap is sharp
+PASS B K=23, initial=13, c=3 certified-trial cap is sharp
+PASS B K=23, initial=13, c=5 certified-trial cap is sharp
+PASS B K=23, initial=14 total future formations are at most K-initial
+PASS B K=23, initial=14, c=1 certified-trial cap is sharp
+PASS B K=23, initial=14, c=2 certified-trial cap is sharp
+PASS B K=23, initial=14, c=3 certified-trial cap is sharp
+PASS B K=23, initial=14, c=5 certified-trial cap is sharp
+PASS B K=23, initial=15 total future formations are at most K-initial
+PASS B K=23, initial=15, c=1 certified-trial cap is sharp
+PASS B K=23, initial=15, c=2 certified-trial cap is sharp
+PASS B K=23, initial=15, c=3 certified-trial cap is sharp
+PASS B K=23, initial=15, c=5 certified-trial cap is sharp
+PASS B K=23, initial=16 total future formations are at most K-initial
+PASS B K=23, initial=16, c=1 certified-trial cap is sharp
+PASS B K=23, initial=16, c=2 certified-trial cap is sharp
+PASS B K=23, initial=16, c=3 certified-trial cap is sharp
+PASS B K=23, initial=16, c=5 certified-trial cap is sharp
+PASS B K=23, initial=17 total future formations are at most K-initial
+PASS B K=23, initial=17, c=1 certified-trial cap is sharp
+PASS B K=23, initial=17, c=2 certified-trial cap is sharp
+PASS B K=23, initial=17, c=3 certified-trial cap is sharp
+PASS B K=23, initial=17, c=5 certified-trial cap is sharp
+PASS B K=23, initial=18 total future formations are at most K-initial
+PASS B K=23, initial=18, c=1 certified-trial cap is sharp
+PASS B K=23, initial=18, c=2 certified-trial cap is sharp
+PASS B K=23, initial=18, c=3 certified-trial cap is sharp
+PASS B K=23, initial=18, c=5 certified-trial cap is sharp
+PASS B K=23, initial=19 total future formations are at most K-initial
+PASS B K=23, initial=19, c=1 certified-trial cap is sharp
+PASS B K=23, initial=19, c=2 certified-trial cap is sharp
+PASS B K=23, initial=19, c=3 certified-trial cap is sharp
+PASS B K=23, initial=19, c=5 certified-trial cap is sharp
+PASS B K=23, initial=20 total future formations are at most K-initial
+PASS B K=23, initial=20, c=1 certified-trial cap is sharp
+PASS B K=23, initial=20, c=2 certified-trial cap is sharp
+PASS B K=23, initial=20, c=3 certified-trial cap is sharp
+PASS B K=23, initial=20, c=5 certified-trial cap is sharp
+PASS B K=23, initial=21 total future formations are at most K-initial
+PASS B K=23, initial=21, c=1 certified-trial cap is sharp
+PASS B K=23, initial=21, c=2 certified-trial cap is sharp
+PASS B K=23, initial=21, c=3 certified-trial cap is sharp
+PASS B K=23, initial=21, c=5 certified-trial cap is sharp
+PASS B K=23, initial=22 total future formations are at most K-initial
+PASS B K=23, initial=22, c=1 certified-trial cap is sharp
+PASS B K=23, initial=22, c=2 certified-trial cap is sharp
+PASS B K=23, initial=22, c=3 certified-trial cap is sharp
+PASS B K=23, initial=22, c=5 certified-trial cap is sharp
+PASS B K=23, initial=23 total future formations are at most K-initial
+PASS B K=23, initial=23, c=1 certified-trial cap is sharp
+PASS B K=23, initial=23, c=2 certified-trial cap is sharp
+PASS B K=23, initial=23, c=3 certified-trial cap is sharp
+PASS B K=23, initial=23, c=5 certified-trial cap is sharp
+PASS B N=1 append ranks form a strict acyclic order
+PASS B N=2 append ranks form a strict acyclic order
+PASS B N=3 append ranks form a strict acyclic order
+PASS B N=4 append ranks form a strict acyclic order
+PASS B N=5 append ranks form a strict acyclic order
+PASS B N=6 append ranks form a strict acyclic order
+PASS B N=7 append ranks form a strict acyclic order
+PASS B N=8 append ranks form a strict acyclic order
+PASS B N=9 append ranks form a strict acyclic order
+
+===============================================================================
+C - Zero long-run local and stationary formation density
+===============================================================================
+PASS C K=1, T=1 spacetime density is at most 1/T
+PASS C K=1, T=2 spacetime density is at most 1/T
+PASS C K=1, T=5 spacetime density is at most 1/T
+PASS C K=1, T=10 spacetime density is at most 1/T
+PASS C K=1, T=100 spacetime density is at most 1/T
+PASS C K=1, T=1000 spacetime density is at most 1/T
+PASS C K=1 average formation rate can be made below 1/1000
+PASS C K=3, T=1 spacetime density is at most 1/T
+PASS C K=3, T=2 spacetime density is at most 1/T
+PASS C K=3, T=5 spacetime density is at most 1/T
+PASS C K=3, T=10 spacetime density is at most 1/T
+PASS C K=3, T=100 spacetime density is at most 1/T
+PASS C K=3, T=1000 spacetime density is at most 1/T
+PASS C K=3 average formation rate can be made below 1/1000
+PASS C K=10, T=1 spacetime density is at most 1/T
+PASS C K=10, T=2 spacetime density is at most 1/T
+PASS C K=10, T=5 spacetime density is at most 1/T
+PASS C K=10, T=10 spacetime density is at most 1/T
+PASS C K=10, T=100 spacetime density is at most 1/T
+PASS C K=10, T=1000 spacetime density is at most 1/T
+PASS C K=10 average formation rate can be made below 1/1000
+PASS C K=100, T=1 spacetime density is at most 1/T
+PASS C K=100, T=2 spacetime density is at most 1/T
+PASS C K=100, T=5 spacetime density is at most 1/T
+PASS C K=100, T=10 spacetime density is at most 1/T
+PASS C K=100, T=100 spacetime density is at most 1/T
+PASS C K=100, T=1000 spacetime density is at most 1/T
+PASS C K=100 average formation rate can be made below 1/1000
+PASS C stationary lambda=1 contradicts one-event capacity at a finite T
+PASS C stationary lambda=1/3 contradicts one-event capacity at a finite T
+PASS C stationary lambda=1/10 contradicts one-event capacity at a finite T
+PASS C stationary lambda=1/97 contradicts one-event capacity at a finite T
+PASS C stationary lambda=2 contradicts one-event capacity at a finite T
+PASS C stationary lambda=2/3 contradicts one-event capacity at a finite T
+PASS C stationary lambda=1/5 contradicts one-event capacity at a finite T
+PASS C stationary lambda=2/97 contradicts one-event capacity at a finite T
+PASS C stationary lambda=5 contradicts one-event capacity at a finite T
+PASS C stationary lambda=5/3 contradicts one-event capacity at a finite T
+PASS C stationary lambda=1/2 contradicts one-event capacity at a finite T
+PASS C stationary lambda=5/97 contradicts one-event capacity at a finite T
+PASS C stationary lambda=11 contradicts one-event capacity at a finite T
+PASS C stationary lambda=11/3 contradicts one-event capacity at a finite T
+PASS C stationary lambda=11/10 contradicts one-event capacity at a finite T
+PASS C stationary lambda=11/97 contradicts one-event capacity at a finite T
+PASS C a positive instantaneous nonstationary layer is possible
+PASS C that layer has no repeated formation at any site
+PASS C the distinguished formation layer is not time-translation invariant
+
+===============================================================================
+D - Exact Z^3 volume, shell, edge, and support bounds
+===============================================================================
+PASS D r=0 Manhattan volume formula :: 1
+PASS D r=0 Manhattan shell formula :: 1
+PASS D r=0 directed outward-edge formula :: 6
+PASS D r=1 Manhattan volume formula :: 7
+PASS D r=1 Manhattan shell formula :: 6
+PASS D r=1 directed outward-edge formula :: 30
+PASS D r=2 Manhattan volume formula :: 25
+PASS D r=2 Manhattan shell formula :: 18
+PASS D r=2 directed outward-edge formula :: 78
+PASS D r=3 Manhattan volume formula :: 63
+PASS D r=3 Manhattan shell formula :: 38
+PASS D r=3 directed outward-edge formula :: 150
+PASS D r=4 Manhattan volume formula :: 129
+PASS D r=4 Manhattan shell formula :: 66
+PASS D r=4 directed outward-edge formula :: 246
+PASS D r=5 Manhattan volume formula :: 231
+PASS D r=5 Manhattan shell formula :: 102
+PASS D r=5 directed outward-edge formula :: 366
+PASS D r=6 Manhattan volume formula :: 377
+PASS D r=6 Manhattan shell formula :: 146
+PASS D r=6 directed outward-edge formula :: 510
+PASS D r=7 Manhattan volume formula :: 575
+PASS D r=7 Manhattan shell formula :: 198
+PASS D r=7 directed outward-edge formula :: 678
+PASS D r=8 Manhattan volume formula :: 833
+PASS D r=8 Manhattan shell formula :: 258
+PASS D r=8 directed outward-edge formula :: 870
+PASS D r=9 Manhattan volume formula :: 1159
+PASS D r=9 Manhattan shell formula :: 326
+PASS D r=9 directed outward-edge formula :: 1086
+PASS D r=10 Manhattan volume formula :: 1561
+PASS D r=10 Manhattan shell formula :: 402
+PASS D r=10 directed outward-edge formula :: 1326
+PASS D r=11 Manhattan volume formula :: 2047
+PASS D r=11 Manhattan shell formula :: 486
+PASS D r=11 directed outward-edge formula :: 1590
+PASS D r=12 Manhattan volume formula :: 2625
+PASS D r=12 Manhattan shell formula :: 578
+PASS D r=12 directed outward-edge formula :: 1878
+PASS D r*S/V tends numerically to 3 :: 2.9995500225033744
+PASS D r*Eout/V tends numerically to 9 :: 8.999549932512375
+PASS D n=1, c=1 minimal containing radius is exact :: R=0
+PASS D n=1, c=3 minimal containing radius is exact :: R=1
+PASS D n=1, c=7 minimal containing radius is exact :: R=1
+PASS D n=2, c=1 minimal containing radius is exact :: R=1
+PASS D n=2, c=3 minimal containing radius is exact :: R=1
+PASS D n=2, c=7 minimal containing radius is exact :: R=2
+PASS D n=10, c=1 minimal containing radius is exact :: R=2
+PASS D n=10, c=3 minimal containing radius is exact :: R=3
+PASS D n=10, c=7 minimal containing radius is exact :: R=4
+PASS D n=100, c=1 minimal containing radius is exact :: R=4
+PASS D n=100, c=3 minimal containing radius is exact :: R=6
+PASS D n=100, c=7 minimal containing radius is exact :: R=8
+PASS D n=1000, c=1 minimal containing radius is exact :: R=9
+PASS D n=1000, c=3 minimal containing radius is exact :: R=13
+PASS D n=1000, c=7 minimal containing radius is exact :: R=17
+PASS D n=10000, c=1 minimal containing radius is exact :: R=20
+PASS D n=10000, c=3 minimal containing radius is exact :: R=28
+PASS D n=10000, c=7 minimal containing radius is exact :: R=37
+
+===============================================================================
+E - Homogeneous expanding front and density separators
+===============================================================================
+PASS E layer 0 homogeneous infection fills B_r
+PASS E layer 0 new records equal exact shell
+PASS E layer 1 homogeneous infection fills B_r
+PASS E layer 1 new records equal exact shell
+PASS E layer 2 homogeneous infection fills B_r
+PASS E layer 2 new records equal exact shell
+PASS E layer 3 homogeneous infection fills B_r
+PASS E layer 3 new records equal exact shell
+PASS E layer 4 homogeneous infection fills B_r
+PASS E layer 4 new records equal exact shell
+PASS E layer 5 homogeneous infection fills B_r
+PASS E layer 5 new records equal exact shell
+PASS E layer 6 homogeneous infection fills B_r
+PASS E layer 6 new records equal exact shell
+PASS E layer 7 homogeneous infection fills B_r
+PASS E layer 7 new records equal exact shell
+PASS E layer 8 homogeneous infection fills B_r
+PASS E layer 8 new records equal exact shell
+PASS E layer 9 homogeneous infection fills B_r
+PASS E layer 9 new records equal exact shell
+PASS E layer 10 homogeneous infection fills B_r
+PASS E layer 10 new records equal exact shell
+PASS E layer 11 homogeneous infection fills B_r
+PASS E layer 11 new records equal exact shell
+PASS E layer 12 homogeneous infection fills B_r
+PASS E layer 12 new records equal exact shell
+PASS E T=1 cylinder density is 1/(T+1)
+PASS E T=1 cone density is positive
+PASS E T=1 front fraction is positive
+PASS E T=2 cylinder density is 1/(T+1)
+PASS E T=2 cone density is positive
+PASS E T=2 front fraction is positive
+PASS E T=5 cylinder density is 1/(T+1)
+PASS E T=5 cone density is positive
+PASS E T=5 front fraction is positive
+PASS E T=10 cylinder density is 1/(T+1)
+PASS E T=10 cone density is positive
+PASS E T=10 front fraction is positive
+PASS E T=25 cylinder density is 1/(T+1)
+PASS E T=25 cone density is positive
+PASS E T=25 front fraction is positive
+PASS E T=100 cylinder density is 1/(T+1)
+PASS E T=100 cone density is positive
+PASS E T=100 front fraction is positive
+PASS E T*cone-density tends numerically to 4 :: 3.9990001599869993
+PASS E T*front-fraction tends numerically to 3 :: 2.9995500225033744
+PASS E radius=2 ray has one record per causal layer
+PASS E radius=4 ray has one record per causal layer
+PASS E radius=4 ray density decreases
+PASS E radius=8 ray has one record per causal layer
+PASS E radius=8 ray density decreases
+PASS E radius=16 ray has one record per causal layer
+PASS E radius=16 ray density decreases
+PASS E radius=32 ray has one record per causal layer
+PASS E radius=32 ray density decreases
+PASS E radius=64 ray has one record per causal layer
+PASS E radius=64 ray density decreases
+PASS E empty boundary remains empty under seed-triggered law
+PASS E one seed launches growth under the same trigger
+PASS E bit=0, r=0 isolated front reaches exact ball
+PASS E bit=0, r=0 isolated front preserves one immutable content
+PASS E bit=0, r=0 append step never rewrites old carriers
+PASS E bit=0, r=1 isolated front reaches exact ball
+PASS E bit=0, r=1 isolated front preserves one immutable content
+PASS E bit=0, r=1 append step never rewrites old carriers
+PASS E bit=0, r=2 isolated front reaches exact ball
+PASS E bit=0, r=2 isolated front preserves one immutable content
+PASS E bit=0, r=2 append step never rewrites old carriers
+PASS E bit=0, r=3 isolated front reaches exact ball
+PASS E bit=0, r=3 isolated front preserves one immutable content
+PASS E bit=0, r=3 append step never rewrites old carriers
+PASS E bit=0, r=4 isolated front reaches exact ball
+PASS E bit=0, r=4 isolated front preserves one immutable content
+PASS E bit=0, r=4 append step never rewrites old carriers
+PASS E bit=0, r=5 isolated front reaches exact ball
+PASS E bit=0, r=5 isolated front preserves one immutable content
+PASS E bit=0, r=5 append step never rewrites old carriers
+PASS E bit=0, r=6 isolated front reaches exact ball
+PASS E bit=0, r=6 isolated front preserves one immutable content
+PASS E bit=0, r=6 append step never rewrites old carriers
+PASS E bit=0, r=7 isolated front reaches exact ball
+PASS E bit=0, r=7 isolated front preserves one immutable content
+PASS E bit=0, r=7 append step never rewrites old carriers
+PASS E bit=0, r=8 isolated front reaches exact ball
+PASS E bit=0, r=8 isolated front preserves one immutable content
+PASS E bit=0, r=8 append step never rewrites old carriers
+PASS E bit=1, r=0 isolated front reaches exact ball
+PASS E bit=1, r=0 isolated front preserves one immutable content
+PASS E bit=1, r=0 append step never rewrites old carriers
+PASS E bit=1, r=1 isolated front reaches exact ball
+PASS E bit=1, r=1 isolated front preserves one immutable content
+PASS E bit=1, r=1 append step never rewrites old carriers
+PASS E bit=1, r=2 isolated front reaches exact ball
+PASS E bit=1, r=2 isolated front preserves one immutable content
+PASS E bit=1, r=2 append step never rewrites old carriers
+PASS E bit=1, r=3 isolated front reaches exact ball
+PASS E bit=1, r=3 isolated front preserves one immutable content
+PASS E bit=1, r=3 append step never rewrites old carriers
+PASS E bit=1, r=4 isolated front reaches exact ball
+PASS E bit=1, r=4 isolated front preserves one immutable content
+PASS E bit=1, r=4 append step never rewrites old carriers
+PASS E bit=1, r=5 isolated front reaches exact ball
+PASS E bit=1, r=5 isolated front preserves one immutable content
+PASS E bit=1, r=5 append step never rewrites old carriers
+PASS E bit=1, r=6 isolated front reaches exact ball
+PASS E bit=1, r=6 isolated front preserves one immutable content
+PASS E bit=1, r=6 append step never rewrites old carriers
+PASS E bit=1, r=7 isolated front reaches exact ball
+PASS E bit=1, r=7 isolated front preserves one immutable content
+PASS E bit=1, r=7 append step never rewrites old carriers
+PASS E bit=1, r=8 isolated front reaches exact ball
+PASS E bit=1, r=8 isolated front preserves one immutable content
+PASS E bit=1, r=8 append step never rewrites old carriers
+PASS E differently labelled front collision needs another law rule
+
+===============================================================================
+F - Sparse self-similar marker and causal-corridor costs
+===============================================================================
+PASS F R=2^1 marker count is logarithmic
+PASS F R=2^1 record-defined NN corridor is linear
+PASS F R=2^1 every marker lies on the corridor
+PASS F R=2^2 marker count is logarithmic
+PASS F R=2^2 record-defined NN corridor is linear
+PASS F R=2^2 every marker lies on the corridor
+PASS F R=2^2 three-dimensional marker density decreases
+PASS F R=2^2 certificates become sparse inside their tape
+PASS F R=2^3 marker count is logarithmic
+PASS F R=2^3 record-defined NN corridor is linear
+PASS F R=2^3 every marker lies on the corridor
+PASS F R=2^3 three-dimensional marker density decreases
+PASS F R=2^3 certificates become sparse inside their tape
+PASS F R=2^4 marker count is logarithmic
+PASS F R=2^4 record-defined NN corridor is linear
+PASS F R=2^4 every marker lies on the corridor
+PASS F R=2^4 three-dimensional marker density decreases
+PASS F R=2^4 certificates become sparse inside their tape
+PASS F R=2^5 marker count is logarithmic
+PASS F R=2^5 record-defined NN corridor is linear
+PASS F R=2^5 every marker lies on the corridor
+PASS F R=2^5 three-dimensional marker density decreases
+PASS F R=2^5 certificates become sparse inside their tape
+PASS F R=2^6 marker count is logarithmic
+PASS F R=2^6 record-defined NN corridor is linear
+PASS F R=2^6 every marker lies on the corridor
+PASS F R=2^6 three-dimensional marker density decreases
+PASS F R=2^6 certificates become sparse inside their tape
+PASS F R=2^7 marker count is logarithmic
+PASS F R=2^7 record-defined NN corridor is linear
+PASS F R=2^7 every marker lies on the corridor
+PASS F R=2^7 three-dimensional marker density decreases
+PASS F R=2^7 certificates become sparse inside their tape
+PASS F R=2^8 marker count is logarithmic
+PASS F R=2^8 record-defined NN corridor is linear
+PASS F R=2^8 every marker lies on the corridor
+PASS F R=2^8 three-dimensional marker density decreases
+PASS F R=2^8 certificates become sparse inside their tape
+PASS F R=2^9 marker count is logarithmic
+PASS F R=2^9 record-defined NN corridor is linear
+PASS F R=2^9 every marker lies on the corridor
+PASS F R=2^9 three-dimensional marker density decreases
+PASS F R=2^9 certificates become sparse inside their tape
+PASS F R=2^10 marker count is logarithmic
+PASS F R=2^10 record-defined NN corridor is linear
+PASS F R=2^10 every marker lies on the corridor
+PASS F R=2^10 three-dimensional marker density decreases
+PASS F R=2^10 certificates become sparse inside their tape
+PASS F R=2^11 marker count is logarithmic
+PASS F R=2^11 record-defined NN corridor is linear
+PASS F R=2^11 every marker lies on the corridor
+PASS F R=2^11 three-dimensional marker density decreases
+PASS F R=2^11 certificates become sparse inside their tape
+PASS F R=2^12 marker count is logarithmic
+PASS F R=2^12 record-defined NN corridor is linear
+PASS F R=2^12 every marker lies on the corridor
+PASS F R=2^12 three-dimensional marker density decreases
+PASS F R=2^12 certificates become sparse inside their tape
+PASS F R=2^13 marker count is logarithmic
+PASS F R=2^13 record-defined NN corridor is linear
+PASS F R=2^13 every marker lies on the corridor
+PASS F R=2^13 three-dimensional marker density decreases
+PASS F R=2^13 certificates become sparse inside their tape
+
+===============================================================================
+G - Lossless corpus, aggregate compression, and no recycling
+===============================================================================
+PASS G m=1 all ordered binary corpora need m bits
+PASS G m=1 success count needs ceil(log2(m+1)) bits
+PASS G m=1 compressed copy plus permanent source does not free sites
+PASS G m=2 all ordered binary corpora need m bits
+PASS G m=2 success count needs ceil(log2(m+1)) bits
+PASS G m=2 compressed copy plus permanent source does not free sites
+PASS G m=2 one aggregate count hides multiple ordered corpora
+PASS G m=2 aggregate count uses no more bits than full corpus
+PASS G m=3 all ordered binary corpora need m bits
+PASS G m=3 success count needs ceil(log2(m+1)) bits
+PASS G m=3 compressed copy plus permanent source does not free sites
+PASS G m=3 one aggregate count hides multiple ordered corpora
+PASS G m=3 aggregate count uses no more bits than full corpus
+PASS G m=3 aggregate count uses strictly fewer bits
+PASS G m=4 all ordered binary corpora need m bits
+PASS G m=4 success count needs ceil(log2(m+1)) bits
+PASS G m=4 compressed copy plus permanent source does not free sites
+PASS G m=4 one aggregate count hides multiple ordered corpora
+PASS G m=4 aggregate count uses no more bits than full corpus
+PASS G m=4 aggregate count uses strictly fewer bits
+PASS G m=5 all ordered binary corpora need m bits
+PASS G m=5 success count needs ceil(log2(m+1)) bits
+PASS G m=5 compressed copy plus permanent source does not free sites
+PASS G m=5 one aggregate count hides multiple ordered corpora
+PASS G m=5 aggregate count uses no more bits than full corpus
+PASS G m=5 aggregate count uses strictly fewer bits
+PASS G m=6 all ordered binary corpora need m bits
+PASS G m=6 success count needs ceil(log2(m+1)) bits
+PASS G m=6 compressed copy plus permanent source does not free sites
+PASS G m=6 one aggregate count hides multiple ordered corpora
+PASS G m=6 aggregate count uses no more bits than full corpus
+PASS G m=6 aggregate count uses strictly fewer bits
+PASS G m=7 all ordered binary corpora need m bits
+PASS G m=7 success count needs ceil(log2(m+1)) bits
+PASS G m=7 compressed copy plus permanent source does not free sites
+PASS G m=7 one aggregate count hides multiple ordered corpora
+PASS G m=7 aggregate count uses no more bits than full corpus
+PASS G m=7 aggregate count uses strictly fewer bits
+PASS G m=8 all ordered binary corpora need m bits
+PASS G m=8 success count needs ceil(log2(m+1)) bits
+PASS G m=8 compressed copy plus permanent source does not free sites
+PASS G m=8 one aggregate count hides multiple ordered corpora
+PASS G m=8 aggregate count uses no more bits than full corpus
+PASS G m=8 aggregate count uses strictly fewer bits
+PASS G m=9 all ordered binary corpora need m bits
+PASS G m=9 success count needs ceil(log2(m+1)) bits
+PASS G m=9 compressed copy plus permanent source does not free sites
+PASS G m=9 one aggregate count hides multiple ordered corpora
+PASS G m=9 aggregate count uses no more bits than full corpus
+PASS G m=9 aggregate count uses strictly fewer bits
+PASS G m=10 all ordered binary corpora need m bits
+PASS G m=10 success count needs ceil(log2(m+1)) bits
+PASS G m=10 compressed copy plus permanent source does not free sites
+PASS G m=10 one aggregate count hides multiple ordered corpora
+PASS G m=10 aggregate count uses no more bits than full corpus
+PASS G m=10 aggregate count uses strictly fewer bits
+PASS G m=11 all ordered binary corpora need m bits
+PASS G m=11 success count needs ceil(log2(m+1)) bits
+PASS G m=11 compressed copy plus permanent source does not free sites
+PASS G m=11 one aggregate count hides multiple ordered corpora
+PASS G m=11 aggregate count uses no more bits than full corpus
+PASS G m=11 aggregate count uses strictly fewer bits
+PASS G m=12 all ordered binary corpora need m bits
+PASS G m=12 success count needs ceil(log2(m+1)) bits
+PASS G m=12 compressed copy plus permanent source does not free sites
+PASS G m=12 one aggregate count hides multiple ordered corpora
+PASS G m=12 aggregate count uses no more bits than full corpus
+PASS G m=12 aggregate count uses strictly fewer bits
+PASS G m=13 all ordered binary corpora need m bits
+PASS G m=13 success count needs ceil(log2(m+1)) bits
+PASS G m=13 compressed copy plus permanent source does not free sites
+PASS G m=13 one aggregate count hides multiple ordered corpora
+PASS G m=13 aggregate count uses no more bits than full corpus
+PASS G m=13 aggregate count uses strictly fewer bits
+PASS G m=14 all ordered binary corpora need m bits
+PASS G m=14 success count needs ceil(log2(m+1)) bits
+PASS G m=14 compressed copy plus permanent source does not free sites
+PASS G m=14 one aggregate count hides multiple ordered corpora
+PASS G m=14 aggregate count uses no more bits than full corpus
+PASS G m=14 aggregate count uses strictly fewer bits
+PASS G m=15 all ordered binary corpora need m bits
+PASS G m=15 success count needs ceil(log2(m+1)) bits
+PASS G m=15 compressed copy plus permanent source does not free sites
+PASS G m=15 one aggregate count hides multiple ordered corpora
+PASS G m=15 aggregate count uses no more bits than full corpus
+PASS G m=15 aggregate count uses strictly fewer bits
+PASS G m=16 all ordered binary corpora need m bits
+PASS G m=16 success count needs ceil(log2(m+1)) bits
+PASS G m=16 compressed copy plus permanent source does not free sites
+PASS G m=16 one aggregate count hides multiple ordered corpora
+PASS G m=16 aggregate count uses no more bits than full corpus
+PASS G m=16 aggregate count uses strictly fewer bits
+PASS G m=17 all ordered binary corpora need m bits
+PASS G m=17 success count needs ceil(log2(m+1)) bits
+PASS G m=17 compressed copy plus permanent source does not free sites
+PASS G m=17 one aggregate count hides multiple ordered corpora
+PASS G m=17 aggregate count uses no more bits than full corpus
+PASS G m=17 aggregate count uses strictly fewer bits
+PASS G six-bit corpus has 64 ordered possibilities
+PASS G seven success-count labels partition all corpora
+PASS G central success count discards twenty-fold order information
+PASS G SWAP preserves one encoded bit globally
+PASS G SWAP clears the old address
+PASS G copy preserves the old address but consumes a new address
+
+===============================================================================
+H - Boundary export and fixed-cut capacity
+===============================================================================
+PASS H export copy 1 leaves all interior records
+PASS H export copy 1 grows total occupied support
+PASS H export copy 2 leaves all interior records
+PASS H export copy 2 grows total occupied support
+PASS H export copy 3 leaves all interior records
+PASS H export copy 3 grows total occupied support
+PASS H export copy 4 leaves all interior records
+PASS H export copy 4 grows total occupied support
+PASS H export copy 5 leaves all interior records
+PASS H export copy 5 grows total occupied support
+PASS H export copy 6 leaves all interior records
+PASS H export copy 6 grows total occupied support
+PASS H export copy 7 leaves all interior records
+PASS H export copy 7 grows total occupied support
+PASS H b=1 once-written one-qubit cut cannot distinguish b+1 independent bits
+PASS H b=1 cut can distinguish at most b independent binary labels
+PASS H b=1 full-length order/content histories are b!2^b
+PASS H b=1 all finite discrete cut transcripts have exact finite census :: 3
+PASS H b=1 one more bit than the complete discrete cut transcript cannot fit
+PASS H b=2 once-written one-qubit cut cannot distinguish b+1 independent bits
+PASS H b=2 cut can distinguish at most b independent binary labels
+PASS H b=2 full-length order/content histories are b!2^b
+PASS H b=2 all finite discrete cut transcripts have exact finite census :: 13
+PASS H b=2 one more bit than the complete discrete cut transcript cannot fit
+PASS H b=3 once-written one-qubit cut cannot distinguish b+1 independent bits
+PASS H b=3 cut can distinguish at most b independent binary labels
+PASS H b=3 full-length order/content histories are b!2^b
+PASS H b=3 all finite discrete cut transcripts have exact finite census :: 79
+PASS H b=3 one more bit than the complete discrete cut transcript cannot fit
+PASS H b=4 once-written one-qubit cut cannot distinguish b+1 independent bits
+PASS H b=4 cut can distinguish at most b independent binary labels
+PASS H b=4 full-length order/content histories are b!2^b
+PASS H b=4 all finite discrete cut transcripts have exact finite census :: 633
+PASS H b=4 one more bit than the complete discrete cut transcript cannot fit
+PASS H b=5 once-written one-qubit cut cannot distinguish b+1 independent bits
+PASS H b=5 cut can distinguish at most b independent binary labels
+PASS H b=5 full-length order/content histories are b!2^b
+PASS H b=5 all finite discrete cut transcripts have exact finite census :: 6331
+PASS H b=5 one more bit than the complete discrete cut transcript cannot fit
+PASS H b=6 once-written one-qubit cut cannot distinguish b+1 independent bits
+PASS H b=6 cut can distinguish at most b independent binary labels
+PASS H b=6 full-length order/content histories are b!2^b
+PASS H b=6 all finite discrete cut transcripts have exact finite census :: 75973
+PASS H b=6 one more bit than the complete discrete cut transcript cannot fit
+PASS H b=7 once-written one-qubit cut cannot distinguish b+1 independent bits
+PASS H b=7 cut can distinguish at most b independent binary labels
+PASS H b=7 full-length order/content histories are b!2^b
+PASS H b=7 all finite discrete cut transcripts have exact finite census :: 1063623
+PASS H b=7 one more bit than the complete discrete cut transcript cannot fit
+PASS H b=8 once-written one-qubit cut cannot distinguish b+1 independent bits
+PASS H b=8 cut can distinguish at most b independent binary labels
+PASS H b=8 full-length order/content histories are b!2^b
+PASS H b=8 all finite discrete cut transcripts have exact finite census :: 17017969
+PASS H b=8 one more bit than the complete discrete cut transcript cannot fit
+PASS H b=9 once-written one-qubit cut cannot distinguish b+1 independent bits
+PASS H b=9 cut can distinguish at most b independent binary labels
+PASS H b=9 full-length order/content histories are b!2^b
+PASS H b=9 all finite discrete cut transcripts have exact finite census :: 306323443
+PASS H b=9 one more bit than the complete discrete cut transcript cannot fit
+PASS H b=10 once-written one-qubit cut cannot distinguish b+1 independent bits
+PASS H b=10 cut can distinguish at most b independent binary labels
+PASS H b=10 full-length order/content histories are b!2^b
+PASS H b=10 all finite discrete cut transcripts have exact finite census :: 6126468861
+PASS H b=10 one more bit than the complete discrete cut transcript cannot fit
+PASS H b=11 once-written one-qubit cut cannot distinguish b+1 independent bits
+PASS H b=11 cut can distinguish at most b independent binary labels
+PASS H b=11 full-length order/content histories are b!2^b
+PASS H b=11 all finite discrete cut transcripts have exact finite census :: 134782314943
+PASS H b=11 one more bit than the complete discrete cut transcript cannot fit
+PASS H b=12 once-written one-qubit cut cannot distinguish b+1 independent bits
+PASS H b=12 cut can distinguish at most b independent binary labels
+PASS H b=12 full-length order/content histories are b!2^b
+PASS H b=12 all finite discrete cut transcripts have exact finite census :: 3234775558633
+PASS H b=12 one more bit than the complete discrete cut transcript cannot fit
+PASS H b=13 once-written one-qubit cut cannot distinguish b+1 independent bits
+PASS H b=13 cut can distinguish at most b independent binary labels
+PASS H b=13 full-length order/content histories are b!2^b
+PASS H b=13 all finite discrete cut transcripts have exact finite census :: 84104164524459
+PASS H b=13 one more bit than the complete discrete cut transcript cannot fit
+PASS H b=14 once-written one-qubit cut cannot distinguish b+1 independent bits
+PASS H b=14 cut can distinguish at most b independent binary labels
+PASS H b=14 full-length order/content histories are b!2^b
+PASS H b=14 all finite discrete cut transcripts have exact finite census :: 2354916606684853
+PASS H b=14 one more bit than the complete discrete cut transcript cannot fit
+PASS H b=15 once-written one-qubit cut cannot distinguish b+1 independent bits
+PASS H b=15 cut can distinguish at most b independent binary labels
+PASS H b=15 full-length order/content histories are b!2^b
+PASS H b=15 all finite discrete cut transcripts have exact finite census :: 70647498200545591
+PASS H b=15 one more bit than the complete discrete cut transcript cannot fit
+PASS H b=16 once-written one-qubit cut cannot distinguish b+1 independent bits
+PASS H b=16 cut can distinguish at most b independent binary labels
+PASS H b=16 full-length order/content histories are b!2^b
+PASS H b=16 all finite discrete cut transcripts have exact finite census :: 2260719942417458913
+PASS H b=16 one more bit than the complete discrete cut transcript cannot fit
+PASS H r=0 edge count is geometry rather than assumed bandwidth
+PASS H r=1 edge count is geometry rather than assumed bandwidth
+PASS H r=2 edge count is geometry rather than assumed bandwidth
+PASS H r=3 edge count is geometry rather than assumed bandwidth
+PASS H r=4 edge count is geometry rather than assumed bandwidth
+PASS H r=5 edge count is geometry rather than assumed bandwidth
+PASS H r=6 edge count is geometry rather than assumed bandwidth
+PASS H r=7 edge count is geometry rather than assumed bandwidth
+PASS H r=8 edge count is geometry rather than assumed bandwidth
+PASS H r=9 edge count is geometry rather than assumed bandwidth
+
+===============================================================================
+I - Global history, chronology, and spatial-density separators
+===============================================================================
+PASS I N=1 one terminal record set has N! append orders
+PASS I N=1 every order has the same terminal set
+PASS I N=2 one terminal record set has N! append orders
+PASS I N=2 every order has the same terminal set
+PASS I N=3 one terminal record set has N! append orders
+PASS I N=3 every order has the same terminal set
+PASS I N=4 one terminal record set has N! append orders
+PASS I N=4 every order has the same terminal set
+PASS I N=5 one terminal record set has N! append orders
+PASS I N=5 every order has the same terminal set
+PASS I N=6 one terminal record set has N! append orders
+PASS I N=6 every order has the same terminal set
+PASS I N=7 one terminal record set has N! append orders
+PASS I N=7 every order has the same terminal set
+PASS I R=5 static periodic history has positive spatial density
+PASS I R=5 periodic density approaches one half
+PASS I R=10 static periodic history has positive spatial density
+PASS I R=10 periodic density approaches one half
+PASS I R=10 spatial-density error does not grow
+PASS I R=25 static periodic history has positive spatial density
+PASS I R=25 periodic density approaches one half
+PASS I R=25 spatial-density error does not grow
+PASS I R=50 static periodic history has positive spatial density
+PASS I R=50 periodic density approaches one half
+PASS I R=50 spatial-density error does not grow
+PASS I R=100 static periodic history has positive spatial density
+PASS I R=100 periodic density approaches one half
+PASS I R=100 spatial-density error does not grow
+PASS I R=250 static periodic history has positive spatial density
+PASS I R=250 periodic density approaches one half
+PASS I R=250 spatial-density error does not grow
+PASS I terminal spatial density alone contains no formation time
+
+===============================================================================
+J - Monotone records versus thermodynamic entropy
+===============================================================================
+PASS J N=3 macrostate ratio is 2(N-k)/(k+1)
+PASS J N=3 binary macrostate count is not monotone to full occupancy
+PASS J N=3 entropy peak lies near two-thirds occupancy :: (2,)
+PASS J N=4 macrostate ratio is 2(N-k)/(k+1)
+PASS J N=4 binary macrostate count is not monotone to full occupancy
+PASS J N=4 entropy peak lies near two-thirds occupancy :: (3,)
+PASS J N=5 macrostate ratio is 2(N-k)/(k+1)
+PASS J N=5 binary macrostate count is not monotone to full occupancy
+PASS J N=5 entropy peak lies near two-thirds occupancy :: (3, 4)
+PASS J N=6 macrostate ratio is 2(N-k)/(k+1)
+PASS J N=6 binary macrostate count is not monotone to full occupancy
+PASS J N=6 entropy peak lies near two-thirds occupancy :: (4,)
+PASS J N=7 macrostate ratio is 2(N-k)/(k+1)
+PASS J N=7 binary macrostate count is not monotone to full occupancy
+PASS J N=7 entropy peak lies near two-thirds occupancy :: (5,)
+PASS J N=8 macrostate ratio is 2(N-k)/(k+1)
+PASS J N=8 binary macrostate count is not monotone to full occupancy
+PASS J N=8 entropy peak lies near two-thirds occupancy :: (5, 6)
+PASS J N=9 macrostate ratio is 2(N-k)/(k+1)
+PASS J N=9 binary macrostate count is not monotone to full occupancy
+PASS J N=9 entropy peak lies near two-thirds occupancy :: (6,)
+PASS J N=10 macrostate ratio is 2(N-k)/(k+1)
+PASS J N=10 binary macrostate count is not monotone to full occupancy
+PASS J N=10 entropy peak lies near two-thirds occupancy :: (7,)
+PASS J N=11 macrostate ratio is 2(N-k)/(k+1)
+PASS J N=11 binary macrostate count is not monotone to full occupancy
+PASS J N=11 entropy peak lies near two-thirds occupancy :: (7, 8)
+PASS J N=12 macrostate ratio is 2(N-k)/(k+1)
+PASS J N=12 binary macrostate count is not monotone to full occupancy
+PASS J N=12 entropy peak lies near two-thirds occupancy :: (8,)
+PASS J N=13 macrostate ratio is 2(N-k)/(k+1)
+PASS J N=13 binary macrostate count is not monotone to full occupancy
+PASS J N=13 entropy peak lies near two-thirds occupancy :: (9,)
+PASS J N=14 macrostate ratio is 2(N-k)/(k+1)
+PASS J N=14 binary macrostate count is not monotone to full occupancy
+PASS J N=14 entropy peak lies near two-thirds occupancy :: (9, 10)
+PASS J N=15 macrostate ratio is 2(N-k)/(k+1)
+PASS J N=15 binary macrostate count is not monotone to full occupancy
+PASS J N=15 entropy peak lies near two-thirds occupancy :: (10,)
+PASS J N=16 macrostate ratio is 2(N-k)/(k+1)
+PASS J N=16 binary macrostate count is not monotone to full occupancy
+PASS J N=16 entropy peak lies near two-thirds occupancy :: (11,)
+PASS J N=17 macrostate ratio is 2(N-k)/(k+1)
+PASS J N=17 binary macrostate count is not monotone to full occupancy
+PASS J N=17 entropy peak lies near two-thirds occupancy :: (11, 12)
+PASS J N=18 macrostate ratio is 2(N-k)/(k+1)
+PASS J N=18 binary macrostate count is not monotone to full occupancy
+PASS J N=18 entropy peak lies near two-thirds occupancy :: (12,)
+PASS J N=19 macrostate ratio is 2(N-k)/(k+1)
+PASS J N=19 binary macrostate count is not monotone to full occupancy
+PASS J N=19 entropy peak lies near two-thirds occupancy :: (13,)
+PASS J N=20 macrostate ratio is 2(N-k)/(k+1)
+PASS J N=20 binary macrostate count is not monotone to full occupancy
+PASS J N=20 entropy peak lies near two-thirds occupancy :: (13, 14)
+PASS J rate=1/10 absorbing stationary measure satisfies detailed balance
+PASS J rate=1/10 no stationary measure with positive open weight can balance
+PASS J rate=1/2 absorbing stationary measure satisfies detailed balance
+PASS J rate=1/2 no stationary measure with positive open weight can balance
+PASS J rate=1 absorbing stationary measure satisfies detailed balance
+PASS J rate=1 no stationary measure with positive open weight can balance
+PASS J rate=7/3 absorbing stationary measure satisfies detailed balance
+PASS J rate=7/3 no stationary measure with positive open weight can balance
+PASS J N=1, p=1/4 expected open capacity decays
+PASS J N=1, p=1/4 expected formation current decays
+PASS J N=1, p=1/2 expected open capacity decays
+PASS J N=1, p=1/2 expected formation current decays
+PASS J N=1, p=3/4 expected open capacity decays
+PASS J N=1, p=3/4 expected formation current decays
+PASS J N=5, p=1/4 expected open capacity decays
+PASS J N=5, p=1/4 expected formation current decays
+PASS J N=5, p=1/2 expected open capacity decays
+PASS J N=5, p=1/2 expected formation current decays
+PASS J N=5, p=3/4 expected open capacity decays
+PASS J N=5, p=3/4 expected formation current decays
+PASS J N=20, p=1/4 expected open capacity decays
+PASS J N=20, p=1/4 expected formation current decays
+PASS J N=20, p=1/2 expected open capacity decays
+PASS J N=20, p=1/2 expected formation current decays
+PASS J N=20, p=3/4 expected open capacity decays
+PASS J N=20, p=3/4 expected formation current decays
+
+===============================================================================
+K - Growing-tape clock and capacity-response separators
+===============================================================================
+PASS K growing tape supports 101 distinct sampled commits
+PASS K growing-tape clock count is strictly monotone
+PASS K growing-tape support radius becomes unbounded in the sample
+PASS K three lapse candidates agree at zero capacity
+PASS K three lapse candidates agree at full capacity
+PASS K three lapse candidates disagree in the interior
+PASS K all three lapse candidates are monotone
+PASS K pure scalar lapse gives half the GR light-deflection factor
+PASS K scalar clock response does not select spatial curvature
+
+===============================================================================
+L - Route coverage, constitutional placement, and N1-N8
+===============================================================================
+PASS L required boundary is present: growing-history machine
+PASS L required boundary is present: fixed finite region cannot host indefinitely many
+PASS L required boundary is present: zero stationary spacetime intensity
+PASS L required boundary is present: expanding-front route
+PASS L required boundary is present: sparse and self-similar routes
+PASS L required boundary is present: recyclable-by-encoding route
+PASS L required boundary is present: boundary-export route
+PASS L required boundary is present: global-history route
+PASS L required boundary is present: thermodynamic seam
+PASS L required boundary is present: time seam
+PASS L required boundary is present: gravity and resource seam
+PASS L required boundary is present: no generic storage/compute-budget sentence is justified
+PASS L required boundary is present: the exact law must decide
+PASS L required boundary is present: are records the whole changing physical state
+PASS L TOE lane is classified: formation
+PASS L TOE lane is classified: probability
+PASS L TOE lane is classified: time
+PASS L TOE lane is classified: matter/transport
+PASS L TOE lane is classified: thermodynamics
+PASS L TOE lane is classified: resource
+PASS L TOE lane is classified: gravity
+PASS L TOE lane is classified: cosmology
+PASS L N1 section is present
+PASS L N2 section is present
+PASS L N3 section is present
+PASS L N4 section is present
+PASS L N5 section is present
+PASS L N6 section is present
+PASS L N7 section is present
+PASS L N8 section is present
+PASS L cross-cycle residual is matched: cycle 22
+PASS L cross-cycle residual is matched: cycle 21
+PASS L cross-cycle residual is matched: cycle 26
+PASS L cross-cycle residual is matched: cycles 9–11
+PASS L cross-cycle residual is matched: cycle 30
+PASS L no broad no-go is explicit
+PASS L live global-history steelman is explicit
+PASS L Record placement says no extra storage sentence is forced
+PASS L Admissibility placement rejects renewal content
+PASS L resource placement rejects a generic resource axiom
+PASS L law/boundary placement is explicit
+
+===============================================================================
+TOTAL
+===============================================================================
+PASS=930 FAIL=0
+RESULT: PASS
+BOUNDARY: finite local append exhausts; infinite Z^3 permits a growing history front; recurrence, renewal, rate, thermodynamics, and gravity remain exact-law/ontology questions

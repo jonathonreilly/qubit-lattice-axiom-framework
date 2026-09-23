@@ -1,0 +1,49 @@
+PASS A01 note exists
+FAIL A01 note exists
+PASS A02 proper cubic group has 24 rotations
+PASS A03 six F records pair into three FP records
+PASS A04 completion convergence is 3 FP / 3 I1 / 3 I2 / 1 DONE
+PASS A05 q-return cable leaves all four phase relays fresh
+PASS A06 all declared sites are role-disjoint :: 91
+PASS A07 official phase contents are exact
+PASS A08 auxiliaries avoid current official support
+PASS A09 auxiliaries avoid next official support
+PASS A10 next q/a/b/c remain open
+PASS B01 canonical table is nonempty :: 99
+PASS B02 every rotated input is single-valued :: 2218
+PASS C01 arbitrary-subset scan exposes 47 apparent bad conditions :: 47
+PASS C02 apparent bad conditions span 34 target/output classes :: 34
+PASS C03 apparent bad split is 15 off-footprint / 32 wrong-role
+PASS C04 all apparent bad conditions have absent-ancestor witnesses :: 47/47
+PASS C05 must-ancestor fixed point converges :: 17
+PASS C06 table has 308 correct compiled conditions :: 308
+PASS C07 every declared target has a correct compiled condition
+PASS C08 every apparent first bad write contradicts its own prefix
+PASS D01 every target has at least one parent-valid local subset
+PASS D02 all within-rank prefix subsets retain every missing write :: 30240 tests
+PASS D03 causal safety plus rank closure proves one complete terminal
+PASS D04 official order is C before X before endpoint Z
+PASS D05 endpoints are nonadjacent commuting peers
+
+ADDITIONS=91 ROWS=99 RAW=2,218 CONDITIONS=355
+SUMMARY: 24 PASS / 1 FAIL
+FAIL A02 Cycle-67 conditional runner is green
+PASS A03 Cycle-67 table has 99 canonical rows
+PASS A04 Cycle-67 declares 91 additions
+PASS B01 Cycle-60 and Cycle-67 raw input domains are disjoint
+PASS B02 Cycle-60 raw census is 376 :: 376
+PASS B03 Cycle-67 raw census is 2,218 :: 2218
+PASS C01 every reachable Cycle-60 state is retained :: 242,033
+PASS C02 mixed over-approximation scans 1,204,205 contexts :: 1,204,205
+PASS C03 207,550 contexts pass the first parent-feasibility gate :: 207,550
+PASS C04 mixed union has no output conflict
+PASS C05 permanent phase records cannot block an unfinished comb target
+PASS D01 over-approximation reports exactly 15 wrong-write classes :: [((-2, -3, -3), 'PHASE', ('L10',), None), ((-2, -2, -4), 'PHASE', ('L10',), None), ((-1, -3, -4), 'PHASE', ('L8',), None), ((0, -4, -4), 'PHASE', ('L6',), None), ((0, -3, -5), 'PHASE', ('L6',), None), ((2, -3, 1), 'PHASE', ('L10',), None), ((2, 2, -4), 'PHASE', ('L10',), None), ((3, -4, -1), 'PHASE', ('L6',), None), ((3, -3, 0), 'PHASE', ('L8',), None), ((3, -2, 1), 'PHASE', ('L10',), None), ((3, 0, -5), 'PHASE', ('L6',), None), ((3, 1, -4), 'PHASE', ('L8',), None), ((3, 2, -3), 'PHASE', ('L10',), None), ((4, -3, -1), 'PHASE', ('L6',), None), ((4, 0, -4), 'PHASE', ('L6',), None)]
+PASS D02 no new partial-comb wrong-write class appears
+PASS D03 all 15 classes are off-footprint aliases
+PASS D04 every mixed alias has a must-ancestor contradiction
+PASS D05 every Cycle-67 bad condition remains causally certified
+PASS E01 mixed safety induction closes
+PASS E02 composition retains Cycle-67 complete-terminal proof
+
+SUMMARY: 18 PASS / 1 FAIL

@@ -1,0 +1,5 @@
+FREE TWO-STEP REST-GAP AND CURVATURE ALGEBRA
+CHECK-01 REST-GAP: PASS residual=0.000e+00 grid includes all sin(p_j)=0 corners
+CHECK-02 CURVATURE: PASS residual=5.649e-09 exact=1/(m*sqrt(m**2 + 1))
+CHECK-03 HYPERBOLIC-RELATION: PASS residual=8.882e-16 exact_residual=0 series=1 + 2*m**2/3 - 4*m**4/45 + O(m**5)
+TOTAL: PASS=3 FAIL=0

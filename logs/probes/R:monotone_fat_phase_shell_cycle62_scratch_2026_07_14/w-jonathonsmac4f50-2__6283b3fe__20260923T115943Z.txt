@@ -1,0 +1,22 @@
+PASS A note exists
+PASS A proper cubic group has 24 rotations
+PASS A shell sizes are 6/15/30
+PASS A shell has 51 additions
+PASS A shell has 32 canonical rows :: Counter({'A': 17, 'F': 12, 'T': 3})
+PASS A every A has an F predecessor
+PASS A every T has an A predecessor
+PASS A maximum local shell degree is five
+PASS B shell avoids current official support
+PASS B shell avoids next translated support
+PASS B q/a/b/c remain outside the shell
+PASS C rotated rows are single-valued
+PASS C raw rotated row count is 638 :: 638
+PASS C compiled condition count is 342 :: 342
+PASS C no row can write off footprint
+PASS C no target has competing outputs
+PASS D every F local subset is tabulated
+PASS D every enabled A local subset is tabulated
+PASS D every enabled T local subset is tabulated
+PASS D rank order proves one complete terminal
+
+SUMMARY: 20 PASS / 0 FAIL

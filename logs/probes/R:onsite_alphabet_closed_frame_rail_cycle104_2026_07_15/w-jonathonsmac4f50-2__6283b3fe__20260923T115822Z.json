@@ -1,0 +1,32 @@
+{
+ "task": "R:onsite_alphabet_closed_frame_rail_cycle104_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "onsite",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/onsite_alphabet_closed_frame_rail_cycle104_2026_07_15.py",
+ "seed": 64702,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6283b3fe",
+ "started_utc": "20260923T115822Z",
+ "elapsed_s": 10.5,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c34ae78f887f11f836eb2010d7999e683f3070a20b3fa16a3d3ea9c41b7cb1d1",
+ "stdout_tail": "plete slices expose exactly the ninth-slice start\nPASS D04 every source, code, and rail record stays inside FULL_ROLES\n\n===============================================================================\nE - All first-slice async states under all rotations\n===============================================================================\nPASS E01 all 143 x 24 asynchronous state images have exact transformed fronts :: []\nPASS E02 complete 6,524-row mixed table is closed under all 24 rotations :: []\nPASS E03 base 1,067-state theorem plus exact raw closure lifts all eight-slice images\n\n===============================================================================\nF - Scope, N1-N8, and constitutional disposition\n===============================================================================\nFAIL F01 note exists, has authority none, and issues no audit verdict\nFAIL F02 note records the original 34-role alphabet defect and narrow obstruction\nFAIL F03 note records safe B0/L10 reuse and both fixed identities\nFAIL F04 note names N1-N8 and the retained payload bind\nFAIL F05 note distinguishes onsite closure from global role freshness\nFAIL F06 note makes no foundation or axiom change\n\nFULL_ROLES=153 ORIGINAL_FOREIGN=34 DOMAIN=36\nABSENT_POOL=36 SAFE_POOL=36 REMAPPED_RAW=1080 MIXED_RAW=6524\nPREFIX_STATES=1067 ROTATED_FIRST_SLICE_STATES=3432 ROTATED_RAW=156576\nPROVIDERS=95_REMAPPED_PLUS_1_W1_ADAPTER SAFE_REUSE=B0x2+L10x9\nRESULT=ONSITE_ALPHABET_CLOSED_BOUNDED_FRAME_RAIL\nSUMMARY: 29 PASS / 6 FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T115833Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

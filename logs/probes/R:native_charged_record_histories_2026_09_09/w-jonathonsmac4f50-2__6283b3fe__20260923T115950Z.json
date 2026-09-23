@@ -1,0 +1,35 @@
+{
+ "task": "R:native_charged_record_histories_2026_09_09",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_charged_record_histories_2026_09_09.py",
+ "seed": 64790,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6283b3fe",
+ "started_utc": "20260923T115950Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=2 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7db7e1d52214cf99df3d02d5759f86b651f14234cd0fc8ca6005b48c344dedce",
+ "stdout_tail": "E_FERMION_Z2_DICTIONARY_NOTE_2026-09-08.md\": \"277c1b112119e5ac54aa21d63b0ee66ea129c1d6329bee0182cefc3dc7d52c70\",\n    \"docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md\": \"a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47\",\n    \"scripts/native_charged_record_history_controls_2026_09_09.py\": \"202678acb13c718822b74825dd15199c810b0433cd794b767003c22171c10421\",\n    \"scripts/native_charged_record_history_car_2026_09_09.py\": \"f15d72d97931bcf681582cfede7b9e3031f547c781e32697a870f0a18a113ee1\"\n  },\n  \"source_sha256\": \"97dc1e86fe4bc2268f07de52a04d7d9f3b7af68c2b97cbb4fc687f207f475314\",\n  \"seconds\": 0.03459875000407919,\n  \"peak_rss_bytes\": 23248896\n}\nTOTAL: PASS=2 FAIL=0\nper_element: executed 416 exact one-edge native carrier columns and 146 CAR/refinement checks; repeated structural predicates remain separately counted in the payload.\nper_site: executed finite endpoint particle-hole conjugation, transported number, and dephasing-versus-discard controls.\nper_mode: executed finite exact CAR algebra only; no spectral-mode census or continuum dynamics computed.\nper_block: executed 736 two-edge history columns on the triangle, path and chorded square under both neighbor orders; the separate one-edge omitted-phase control rejects 80 columns.\nlattice_wide: checked and not executed; the arbitrary finite-graph statement follows from the written algebra. No physical stochastic run, large lattice dynamics or empirical experiment executed.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T115950Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_charged_record_histories_2026_09_09.txt against the .txt beside this log"
+  ]
+ }
+}

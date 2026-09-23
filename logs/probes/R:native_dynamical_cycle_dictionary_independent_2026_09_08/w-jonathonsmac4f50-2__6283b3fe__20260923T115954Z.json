@@ -1,0 +1,31 @@
+{
+ "task": "R:native_dynamical_cycle_dictionary_independent_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_dynamical_cycle_dictionary_independent_2026_09_08.py",
+ "seed": 64794,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6283b3fe",
+ "started_utc": "20260923T115954Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "25bab1190f6bad324b96bf3db13569e306d5ae1702de8ad7cac00829a82ea9e5",
+ "stdout_tail": "{\n  \"graph\": [\n    [\n      2,\n      4\n    ],\n    [\n      0,\n      4\n    ],\n    [\n      1,\n      2\n    ],\n    [\n      0,\n      1\n    ],\n    [\n      3,\n      4\n    ],\n    [\n      2,\n      3\n    ]\n  ],\n  \"neighbor_orders\": {\n    \"0\": [\n      4,\n      1\n    ],\n    \"1\": [\n      0,\n      2\n    ],\n    \"2\": [\n      3,\n      1,\n      4\n    ],\n    \"3\": [\n      4,\n      2\n    ],\n    \"4\": [\n      2,\n      0,\n      3\n    ]\n  },\n  \"cycles\": [\n    [\n      0,\n      1,\n      2,\n      3,\n      4\n    ],\n    [\n      0,\n      1,\n      2,\n      4\n    ],\n    [\n      2,\n      3,\n      4\n    ]\n  ],\n  \"exact_matrix_groups\": 15,\n  \"Gauss_dimension\": 64,\n  \"enlarged_dimension\": 2048,\n  \"missing_phase_failures\": 6,\n  \"seconds\": 0.004136292031034827\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T115954Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

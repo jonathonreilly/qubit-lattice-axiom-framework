@@ -1,0 +1,35 @@
+{
+ "task": "R:local_record_quench_energy_and_ground_overlap_2026_09_04",
+ "type": "runner-reexecution",
+ "lane": "local",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/local_record_quench_energy_and_ground_overlap_2026_09_04.py",
+ "seed": 64982,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a53d9ca5",
+ "started_utc": "20260923T120302Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=14 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2176d228349540142de54b6ab2507775cd2268fdffe920f313c84bdaa073b9b0",
+ "stdout_tail": "SS G4 singleton resolvent quadrature: max_abs=7.813e-14 values=0.000000000,0.054323624,0.072903415\nPASS G5 particles holes zero mode and leakage: max_res=8.639e-14\nPASS G5 fixed-N Slater overlap and g0 bound: definition_max=9.054e-13 bound_max=1.554e-14 minF=0.961111 maxell=0.038889\nPASS G5 scalar integral for L: max_abs=2.909e-14 bound_source=g0_not_gap\nDATA G5 L n  Nplus      Nholes     zero_occ   overlap    leakage\nDATA G5 4 0 0.000000000 0.000000000 1.000000000 1.000000000 0.000000000\nDATA G5 4 1 0.000000000 0.000000000 0.000000000 1.000000000 0.000000000\nDATA G5 6 0 0.023587620 0.000142907 0.976555287 0.976412406 0.023587620\nDATA G5 6 1 0.000142907 0.023587620 0.023444713 0.976412406 0.023587620\nDATA G5 8 0 0.038888899 0.000398024 0.961509125 0.961111349 0.038888899\nDATA G5 8 1 0.000398024 0.038888899 0.038490875 0.961111349 0.038888899\nPASS G6 scalar momentum and finite-grid quadratures: identity_max=1.776e-15 actual_max=7.819e-14 diagnostic_only=no_limit_proof\nDATA G6 L  Delta       Lscalar     g0\nDATA G6  4 0.000000000 0.000000000 0.166666667\nDATA G6  6 0.054323624 0.023730527 0.200617284\nDATA G6  8 0.072903415 0.039286924 0.215686275\nDATA G6 12 0.084495567 0.056333247 0.228956229\nDATA G6 16 0.088115241 0.065381944 0.235106571\nDATA G6 24 0.090556253 0.074870243 0.241072439\nDATA G6 32 0.091378861 0.079813600 0.244010169\nPASS G7 execution envelope: elapsed=0.42s timeout=180s rss=179.6MiB max_sites=512\nPASS G7 stdout envelope: chars=2467 limit=6000\nTOTAL: PASS=14 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T120303Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/local_record_quench_energy_and_ground_overlap_2026_09_04.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "task": "R:native_dynamical_cycle_dictionary_exchange_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_dynamical_cycle_dictionary_exchange_2026_09_08.py",
+ "seed": 64793,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6283b3fe",
+ "started_utc": "20260923T115953Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b032c5f3a947c7f5147536b9fe6a874d55237b0e8efa6dcc67211e8e452dd985",
+ "stdout_tail": "{\n  \"accepted_star_patterns\": 1188,\n  \"nonzero_exchange_domains\": 2,\n  \"unsigned_identity_failures\": 2,\n  \"nonalternating_face_patterns\": 14,\n  \"seconds\": 0.019170250045135617,\n  \"scope\": \"local phase representative boundary bits; global exchange proof additionally requires low-charge extendibility of boundary configuration\"\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T115954Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

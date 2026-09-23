@@ -1,0 +1,35 @@
+{
+ "task": "R:native_common_frame_spin_connection_2026_09_13",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_common_frame_spin_connection_2026_09_13.py",
+ "seed": 64790,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6283b3fe",
+ "started_utc": "20260923T115950Z",
+ "elapsed_s": 3.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=423 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d959eb0910b72be33abc77b498a954459efd3273675d5e0a42dff9639b3f59b4",
+ "stdout_tail": "PASS common native frame and spin connection: 423 checks\nflat_spin: 8 PASS\ncommon_frame: 140 PASS\nspin_connection: 160 PASS\nvariable_frame: 103 PASS\nnative_paths: 12 PASS\nper_element: Exact symbolic vertex jets and Clifford identities are checked; no physical parameter is fitted.\nper_site: Local rational frame jets and the central frame stencil are checked in their stated finite examples.\nper_mode: Both native nodes, the shear metric and finite Fourier operator errors are explicitly challenged.\nper_block: Protected hopping routes on three open boxes and five-mode even CAR paths are enumerated.\nlattice_wide: The note proves the uniform zero-set and slow-band bounds; the runner does not simulate an infinite system or prove gravity dynamics.\nSource SHA-256: ea6d61d27bf482e7c3409c34c435d8ea224f59f0321e08a1310de7d3e4343075\nElapsed seconds: 2.639634167018812\nTOTAL: PASS=423 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T115953Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_common_frame_spin_connection_2026_09_13.txt against the .txt beside this log"
+  ]
+ }
+}

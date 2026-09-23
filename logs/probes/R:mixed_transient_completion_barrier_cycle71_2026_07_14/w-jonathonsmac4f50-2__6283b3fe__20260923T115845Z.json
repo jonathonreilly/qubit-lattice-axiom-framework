@@ -1,0 +1,32 @@
+{
+ "task": "R:mixed_transient_completion_barrier_cycle71_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "mixed",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/mixed_transient_completion_barrier_cycle71_2026_07_14.py",
+ "seed": 64725,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6283b3fe",
+ "started_utc": "20260923T115845Z",
+ "elapsed_s": 31.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3c8051a38759b0b78788a919d34c8ac02eb4d409f003cfb9659566459166f55a",
+ "stdout_tail": "tions\nPASS B01 Cycle-60 and Cycle-67 raw input domains are disjoint\nPASS B02 Cycle-60 raw census is 376 :: 376\nPASS B03 Cycle-67 raw census is 2,218 :: 2218\nPASS C01 every reachable Cycle-60 state is retained :: 242,033\nPASS C02 mixed over-approximation scans 1,204,205 contexts :: 1,204,205\nPASS C03 207,550 contexts pass the first parent-feasibility gate :: 207,550\nPASS C04 mixed union has no output conflict\nPASS C05 permanent phase records cannot block an unfinished comb target\nPASS D01 over-approximation reports exactly 15 wrong-write classes :: [((-2, -3, -3), 'PHASE', ('L10',), None), ((-2, -2, -4), 'PHASE', ('L10',), None), ((-1, -3, -4), 'PHASE', ('L8',), None), ((0, -4, -4), 'PHASE', ('L6',), None), ((0, -3, -5), 'PHASE', ('L6',), None), ((2, -3, 1), 'PHASE', ('L10',), None), ((2, 2, -4), 'PHASE', ('L10',), None), ((3, -4, -1), 'PHASE', ('L6',), None), ((3, -3, 0), 'PHASE', ('L8',), None), ((3, -2, 1), 'PHASE', ('L10',), None), ((3, 0, -5), 'PHASE', ('L6',), None), ((3, 1, -4), 'PHASE', ('L8',), None), ((3, 2, -3), 'PHASE', ('L10',), None), ((4, -3, -1), 'PHASE', ('L6',), None), ((4, 0, -4), 'PHASE', ('L6',), None)]\nPASS D02 no new partial-comb wrong-write class appears\nPASS D03 all 15 classes are off-footprint aliases\nPASS D04 every mixed alias has a must-ancestor contradiction\nPASS D05 every Cycle-67 bad condition remains causally certified\nPASS E01 mixed safety induction closes\nPASS E02 composition retains Cycle-67 complete-terminal proof\n\nSUMMARY: 18 PASS / 1 FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260923T115916Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

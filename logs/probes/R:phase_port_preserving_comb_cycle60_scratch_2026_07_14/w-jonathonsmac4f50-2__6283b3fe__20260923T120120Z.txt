@@ -1,0 +1,27 @@
+FAIL A01 note exists
+PASS A02 base is completed Cycle 57
+PASS A03 table has 21 canonical rows
+PASS A04 table is single-valued under all rotations
+PASS A05 construction has 52 additions
+PASS B PAIR orbit is exact :: ((1, -2, -3), (2, -2, -2), (2, -1, -3))
+PASS B ALL orbit is exact :: ((2, -2, -3),)
+PASS B R1 orbit is exact :: ((2, -3, -3), (2, -2, -4), (3, -2, -3))
+PASS B R2 orbit is exact :: ((1, -3, -3), (1, -2, -4), (2, -3, -2), (2, -1, -4), (3, -2, -2), (3, -1, -3))
+PASS B MARK orbit is exact :: ((1, -3, -2), (1, -1, -4), (3, -1, -2))
+PASS B S8 orbit is exact :: ((0, -3, -2), (0, -1, -4), (1, -3, -1), (1, 0, -4), (3, -1, -1), (3, 0, -2))
+PASS B phase port remains open
+PASS B phase port is adjacent to b
+PASS B additions avoid official support
+PASS B q/a/b/c remain open
+PASS B q/a/b/c certificates are exact
+PASS C compiled condition count is exact :: 80
+PASS C reachable-state count is exact :: 242,033
+PASS C edge count is exact :: 1,650,121
+PASS C has one complete terminal
+PASS C has no incomplete terminal
+PASS C has no output conflict
+PASS C has no parasite :: []
+PASS C OPEN_C never precedes q/a/b certificates
+PASS C OPEN_B never precedes q/a certificates
+
+SUMMARY: 24 PASS / 1 FAIL

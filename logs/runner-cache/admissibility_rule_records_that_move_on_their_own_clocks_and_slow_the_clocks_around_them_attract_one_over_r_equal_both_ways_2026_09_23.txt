@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_records_that_move_on_their_own_clocks_and_slow_the_clocks_around_them_attract_one_over_r_equal_both_ways_2026_09_23.py
+runner_sha256: ca31aeeb7d3dd7c7afbe70ef5ea4410641352df4f6d640efe4d8c4a0d98e1d9e
+input_fingerprint_sha256: 6dc04600df0deb8fa560af058476731688ff0b2313c45ce5cc1d387c5c0fef62
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.92
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_RECORDS_THAT_MOVE_ON_THEIR_OWN_CLOCKS_AND_SLOW_THE_CLOCKS_AROUND_THEM_ATTRACT_WITH_A_ONE_OVER_R_POTENTIAL_EQUAL_BOTH_WAYS_BOUNDED_THEOREM_NOTE_2026-09-23.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the rule is covariant under lattice symmetries, and Admissibility does not define a time metric (the clauses work in that opening)
+PASS: B1 T1: on a ring of five with two records (contents +-1, pair weights p, q, rates w_0..w_4 and the timing exponent a all symbolic), a hop x -> y at the rate w_x^a w_y^(1 - a) times the heat-bath factor of the pair weights is in detailed balance with pi(C) = W(C) prod_(z in C) w_z^(1 - 2a) at all 40 configurations and all 120 moves; the three named timings in product form: timed by the site it leaves (a = 1) gives the factor 1/w per record (records linger where clocks are slow), by the bond (rate sqrt(w_x w_y)) gives no factor, by the site it enters (a = 0) gives w per record
+PASS: C1 T2: with the rate field slaved to the records (log w_z = 6 log(kappa) sum_(records r) G(z - r); G the zero-mean inverse of the lattice Laplacian, -Delta G = delta - 1/N, checked at all sites of the ring of six and of 4^3) and a hop at w_x^a w_y^(1 - a), each rate read in the configuration it leaves, detailed balance holds with pi(C) ~ W(C) exp(6 log(kappa) (1 - 2a) sum_(unordered pairs) G(r - s)), identically in log(kappa) and a: on the ring of six at every configuration of two and three records and every move (120 moves), on 4^3 at 80 moves of six configurations; each pair enters once, not twice as the fixed-field factor prod w_z^(1 - 2a) would suggest, and the self-field cancels because a move keeps the number of records
+PASS: D1 T3: on 6^3 with the slaved field, a record whose hops are timed by the site it leaves has zero expected displacement whenever its six neighbours are empty (four placements of a second record), and next to another record its only bias is exclusion, -w_x/6 along the occupied direction: the field changes how long a record waits, not where it goes; timed by the site it enters, the same record drifts towards faster clocks, away from the other record when kappa < 1 (sign checked at log(kappa) = -1/2); two records always tick at the same rate (checked at all 215 separations), so their separation is a walk slowed by the factor w(d) and found in proportion to 1/w(d) ~ exp(-6 log(kappa) G(d))
+PASS: E1 T4: the zero-mean kernel G decreases strictly along the axes and the body diagonals on 4^3 and 6^3 (exact; on 4^3 G(1,0,0) = 257/7680, G(2,0,0) = 29/7680), so for hops timed by the site they leave and records that slow clocks (log kappa < 0) the pair potential U(r) = 6 log(kappa) G(r) is lower at shorter distance: records attract; G is even at all 64 offsets of 4^3, so the energy of cluster A in B's field equals that of B in A's, and the central-difference pull of A on B is exactly minus that of B on A along each axis (a three-record and a two-record cluster); with a drifted kernel these fail
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - detailed balance at every configuration and move of two records on a ring of five with symbolic rates and pair weights; the slaved-field balance at every configuration of two and three records on a ring of six
+per_site: executed - the zero-mean kernel's defining identity at all 64 sites of 4^3; the slaved-field balance for every move of six configurations on 4^3
+per_mode: executed - the kernel from its 63 nonzero modes on 4^3 and 215 on 6^3; control: its long-range 1/(4 pi r) form and a simulation of records moving on their own clocks
+per_block: executed - monotone decrease along axes and diagonals; reciprocity and additivity for two clusters
+lattice_wide: T1 on every finite graph with symmetric proposals (checked on a ring); T2 on every finite graph whose clock law has a symmetric kernel (checked on a ring and on 4^3); T3 on the checked tori, long range executed; T4 for every even kernel; the clock clause, the source ratio kappa and the departure-clock timing are supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: records that move on their own clocks and slow the clocks around them - in a fixed rate field departure-clock hopping balances with W(C) prod 1/w_x (bond-clock hopping with W alone); with the rate field slaved to the records by block 53's law the equilibrium is W(C) prod_pairs exp(-6 log(kappa) G(r - s)): a symmetric pair potential, attractive when records slow clocks, falling as 1/r; pulls exactly opposite and additive; nothing adopted
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

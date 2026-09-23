@@ -105,3 +105,5 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+
+# block95: "opened for review 2026-09-23; forty-third block since the source-link direction opened, sixth run on Claude Opus 5.5: records that move on their own clocks and slow the clocks around them - held field W prod w^(1-2a); slaved field pair law W exp(6 log kappa (1-2a) sum_pairs G), each pair once; a = 1: field acts on waiting times only; attraction iff (2a-1) log kappa < 0, 1/r, reciprocal; 96 records condense from g = 0.8; block 53 T5 remark corrected; nothing adopted"

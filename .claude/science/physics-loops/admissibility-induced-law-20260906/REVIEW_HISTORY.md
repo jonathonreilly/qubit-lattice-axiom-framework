@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-23 block 95 — author checks (not a review PASS)
+Own-prior-art check found block 53's T5 (single test record) and an error in its remark (mean velocity); T1 generalised, T2 and T3 new; corrigendum text-only on #8568. Supervisor checks: T2's cancellation by hand and symbolically for general a; the two-record simulation against T2 for three timings; the condensed state traced along both seeds. Names kept out of the theorem sections. Census 9/9 in family.

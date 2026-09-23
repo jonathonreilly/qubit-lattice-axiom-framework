@@ -1,0 +1,44 @@
+W1: far field of the zero-mean kernel on 64^3, torus background r^2/(6V) removed (expected slope 1/(4 pi) = 0.07958)
+  axis          slopes of G against 1/r between successive points [4.0, 6.0, 8.0, 12.0, 16.0]: 0.08309, 0.08102, 0.08018, 0.07940
+  body diagonal slopes of G against 1/r between successive points [3.46, 5.2, 6.93, 10.39, 13.86]: 0.07724, 0.07843, 0.07902, 0.07945
+W2: two records on 10^3, log(kappa) = -1; separation law against exp(6 log(kappa)(1 - 2a) G(d))
+  distances between the exact laws: TV(leave, bond) = 0.0144, TV(enter, bond) = 0.0131, TV(leave, enter) = 0.0274
+  timed by the site it leaves (a = 1) TV(empirical, exact) = 0.0029; P(contact) empirical 0.0087, exact 0.0088, uniform 0.0060
+    mean x-displacement per unit time of the record at the origin, sign towards the other record: (1, 0, 0): -0.0286 (w/6 = 0.0286); (2, 0, 0): +0.0000 (w/6 = 0.0369); (3, 0, 0): +0.0000 (w/6 = 0.0402); (5, 0, 0): +0.0000 (w/6 = 0.0420); (2, 1, 0): +0.0000 (w/6 = 0.0385); (3, 2, 1): +0.0000 (w/6 = 0.0417)
+  timed by the bond (a = 1/2)         TV(empirical, exact) = 0.0029; P(contact) empirical 0.0060, exact 0.0060, uniform 0.0060
+  timed by the site it enters (a = 0) TV(empirical, exact) = 0.0028; P(contact) empirical 0.0041, exact 0.0041, uniform 0.0060
+W3: 96 records on 16^3 (rho = 3/128), timed by the site they leave, log(kappa) = -g; 20 million events from a random start, two seeds
+  mean-field comparator: uniform gas unstable above g = E(k_min)/(6 rho (1 - rho)) = 1.109
+  energy-entropy count: a ball of 96 records has sum_pairs G = 83.37; log C(4096, 96) - log V = 443.7; collapse into the ball pays from g = 0.887
+  g = 0.0: records touching another 0.131 / 0.131; largest cluster share 0.027 / 0.027; S(k_min) 0.99 / 0.99 (mean field 0.98; nan = beyond its threshold)
+  g = 0.5: records touching another 0.163 / 0.163; largest cluster share 0.030 / 0.030; S(k_min) 1.73 / 1.74 (mean field 1.78; nan = beyond its threshold)
+  g = 0.8: records touching another 0.859 / 0.859; largest cluster share 0.840 / 0.840; S(k_min) 62.19 / 62.20 (mean field 3.51; nan = beyond its threshold)
+  g = 1.0: records touching another 0.950 / 0.950; largest cluster share 0.946 / 0.946; S(k_min) 70.14 / 70.17 (mean field 9.97; nan = beyond its threshold)
+  g = 1.2: records touching another 0.978 / 0.978; largest cluster share 0.977 / 0.977; S(k_min) 72.23 / 72.24 (mean field nan; nan = beyond its threshold)
+  g = 1.5: records touching another 0.993 / 0.993; largest cluster share 0.993 / 0.992; S(k_min) 73.30 / 73.29 (mean field nan; nan = beyond its threshold)
+  g = 2.0: records touching another 0.999 / 0.999; largest cluster share 0.999 / 0.999; S(k_min) 73.92 / 73.92 (mean field nan; nan = beyond its threshold)
+  g = 3.0: records touching another 1.000 / 1.000; largest cluster share 1.000 / 1.000; S(k_min) 74.28 / 74.28 (mean field nan; nan = beyond its threshold)
+W4: along the run at g = 0.8, every two million events (seeds 11 and 12, as in W3)
+  seed 11
+    event         0  coordinate time 3.255e-02  free records  76  total rate 3.072e+01  log w from -1.7 to -0.7
+    event   2000000  coordinate time 2.575e+05  free records  11  total rate 2.042e+00  log w from -11.4 to -0.3
+    event   4000000  coordinate time 9.643e+05  free records  11  total rate 1.498e+00  log w from -11.5 to -0.6
+    event   6000000  coordinate time 1.705e+06  free records  19  total rate 2.224e+00  log w from -10.6 to -0.5
+    event   8000000  coordinate time 2.447e+06  free records  18  total rate 5.566e+00  log w from -10.9 to -0.1
+    event  10000000  coordinate time 3.167e+06  free records  13  total rate 1.311e+00  log w from -11.6 to -0.5
+    event  12000000  coordinate time 3.904e+06  free records  13  total rate 3.278e+00  log w from -11.6 to 0.3
+    event  14000000  coordinate time 4.616e+06  free records   9  total rate 9.746e-01  log w from -11.8 to -0.5
+    event  16000000  coordinate time 5.334e+06  free records  16  total rate 5.094e+00  log w from -11.2 to 0.1
+    event  18000000  coordinate time 6.083e+06  free records  12  total rate 3.458e+00  log w from -11.5 to 0.1
+  seed 12
+    event         0  coordinate time 3.214e-02  free records  80  total rate 3.112e+01  log w from -2.1 to -0.6
+    event   2000000  coordinate time 7.124e+04  free records  85  total rate 3.024e+01  log w from -2.1 to -0.6
+    event   4000000  coordinate time 3.494e+05  free records  10  total rate 2.736e+00  log w from -10.9 to -0.3
+    event   6000000  coordinate time 1.072e+06  free records  13  total rate 2.165e+00  log w from -11.6 to -0.0
+    event   8000000  coordinate time 1.803e+06  free records  22  total rate 4.998e+00  log w from -11.2 to -0.1
+    event  10000000  coordinate time 2.547e+06  free records  13  total rate 3.852e+00  log w from -11.3 to 0.3
+    event  12000000  coordinate time 3.284e+06  free records  22  total rate 2.747e+00  log w from -11.1 to -0.0
+    event  14000000  coordinate time 4.031e+06  free records  17  total rate 4.066e+00  log w from -11.2 to 0.4
+    event  16000000  coordinate time 4.740e+06  free records  14  total rate 1.951e+00  log w from -11.2 to -0.4
+    event  18000000  coordinate time 5.468e+06  free records  16  total rate 3.998e+00  log w from -10.7 to 0.5
+elapsed 826 s

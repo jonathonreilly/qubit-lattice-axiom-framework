@@ -1,6 +1,6 @@
 {
  "edge_count": 14025,
- "node_count": 6473,
+ "node_count": 6474,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -777,6 +777,10 @@
   "admissibility_rule_recorded_set_gibbs_theorem_formation_laws_markov_graph_bounded_theorem_note_2026-09-15": {
    "deps_hash": "903559348f92",
    "out_degree": 3
+  },
+  "admissibility_rule_records_that_move_on_their_own_clocks_and_slow_the_clocks_around_them_attract_with_a_one_over_r_potential_equal_both_ways_bounded_theorem_note_2026-09-23": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_sphere_static_law_finite_torus_magnetization_bounds_bounded_theorem_note_2026-09-15": {
    "deps_hash": "1443a5e7b08d",

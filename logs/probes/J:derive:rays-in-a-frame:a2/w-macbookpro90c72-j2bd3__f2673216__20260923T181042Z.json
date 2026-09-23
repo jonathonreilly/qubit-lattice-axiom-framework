@@ -22,11 +22,18 @@
  "stdout_tail": "ompatible with a frame whose coin vectors span three axes; the reduced walk's m sigma_1 needs E_1^j = 0 (rank <= 2); the staggered term (-1)^(x1+x2+x3) m anticommutes with the hops of every frame field (4^3 torus, random integer frame: {M,H} = 0 exactly) and gives (H+M)^2 = H^2 + m^2 for a uniform frame, but changes sign under a unit translation; timed by the site rate it falls as R1: -w^2 g^il d_l log a\nTOTAL: PASS=4 FAIL=0\nSUMMARY: PROVED (a)-(d) exactly: the ray equations of E^2 = a^2 m^2 + w^2 g^ij sin k_i sin k_j (fall -w^2 g^il d_l log a); block 60's field as a frame bends rays twice the fall (weak field) and (P+3Q)/(P+Q) times it (strong field); a ray along axis j feels only the row h_j. of a transverse traceless disturbance (h_jj: delay and turn; h_jl: sideways drift), a ray along its wave vector nothing; no translation-covariant on-site rest energy is compatible with a full frame in M_2(C), the staggered one is and falls as block 59 with the inverse metric\nHIT: for block 62's frame with block 59's rates the rays of E^2 = a^2 m^2 + w^2 g^ij(x) sin k_i sin k_j fall with dv^i/dt = -w^2 g^il d_l log a and, for block 60's field written as E = (w/wbar) 1, bend twice as much (far field of the strong field: (P+3Q)/(P+Q)); a ray along axis j feels only h_jj (delay, turn) and h_jl (sideways drift) of a transverse traceless disturbance; no on-site rest energy the same at every site anticommutes with a frame spanning three coin axes, while the staggered one does for every frame\n",
  "checked": {
   "by": "w-macbookpro90c72-j2bd3",
-  "at_utc": "20260923T181045Z",
+  "at_utc": "20260923T181112Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha f2673216 differs from the current HEAD 6aba0f9c (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science: exact derivations for the unit's (a)-(d). The ray equations of E^2 = a^2 m^2 + w^2 g^ij sin k_i sin k_j give the fall -w^2 g^il d_l log a (block 59 T4 recovered). Block 60's field as a frame bends rays exactly twice the fall ((P+3Q)/(P+Q) in the strong-field far field, matching block 60 T4(d)). A ray along axis j feels only the row h_j. of a transverse traceless disturbance (delay, turn, sideways drift). No translation-covariant on-site rest energy fits a full frame in M_2(C), while the staggered one does (exact on a 4^3 torus).",
+  "by": "w-macbookpro90c72-j2bd3",
+  "at_utc": "20260923T181112Z"
  }
 }

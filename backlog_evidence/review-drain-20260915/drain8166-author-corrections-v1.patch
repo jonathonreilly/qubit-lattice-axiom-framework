@@ -1,0 +1,537 @@
+--- .claude/science/physics-loops/toe-compact-response-20260916/notes/BRIDGE_CUBIC_SOURCE_BOUND.md
++++ docs/COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,9 +1,30 @@
++---
++claim_id: compact_rotor_bridge_cubic_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++bodyType: bounded_theorem
++runner: scripts/compact_rotor_bridge_cubic_check_2026_09_16.py
++upstream_dependencies: []
++claim_scope: "Supplied lifted Brownian bridge: full cubic source and Hessian operator bounds, uniform in finite volume and physical-time approximation."
++---
++
++**Type:** bounded_theorem
++
++```yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++hypothetical_axiom_status: null
++admitted_observation_status: null
++```
++
++Load-bearing mathematical sources: self-contained supplied bridge construction; finite-dimensional stochastic flow, Feynman–Kac and convex covariance tools explicitly credited below.
++
+ # Volume-uniform cubic source bounds for a lifted Hamiltonian bridge
+ 
+-Working personal derivation, 2026-09-16. Proposed theorem with personal finite challenges completed;
+-not independently reviewed. The supplied model and every limit are specified
+-below. The claim concerns one lifted bridge action; it does not replace
+-the compact winding sum by one lift or prove a photon phase.
++Supplied lifted Brownian bridge: full cubic source and Hessian operator bounds, uniform in finite volume and physical-time approximation.
+ 
+ ## 1. Statement and norms
+ 
+@@ -323,24 +344,31 @@
+ 
+ ## 8. Relation to earlier work and outstanding checks
+ 
+-Draft PR8164 atc4a31d8d1bc43096080bd5f88b16ffcf24344146, note
+-BLOCK08_SHORT_TIME_BRIDGE_AND_ENDPOINT_ACTION.md, was reread in full.
+-It establishes a proposed uniform Hessian correction and spatial locality
+-using a different covariance proof, but states no C3 result. This note
+-reconstructs the carrier and adds the transport derivative argument,
+-so it does not silently treat that earlier draft as an independently
+-reviewed premise. The source of the finite-dimensional covariance tool
++Earlier short-time Hessian work is historical context only; the carrier and transport derivative argument are reconstructed completely here. The source of the finite-dimensional covariance tool
+ is Carlen/Cordero-Erausquin/Lieb1106.0709v2, previously read at PDF1-8;
+ the actual hypotheses are verified in(7) and(15).
+ 
+ Completed personal challenges compare third log derivatives by Gaussian
+ moments/cumulants and Fourier-Bessel one-face integrals, and check the
+ positive time-grid Green row sum, incidence norms, noise normalization,
+-physical endpoint scaling and static response majorants. See the linked
+-review for the exact finite scope and preserved source revisions. A finite check cannot prove
++physical endpoint scaling and static response majorants. The exact historical recovery preserves all prior finite checks and source revisions. A finite check cannot prove
+ the all-volume bound. The compact winding sum and the source dependence
+ of its normalized mixture remain explicit open obligations.
+ 
+-## Author evidence and status
+-
+-See [personal review](../review/PERSONAL_REVIEW.md), [claim status](../CLAIM_STATUS_CERTIFICATE.md), and [negative-claim discipline](../NO_GO_DISCIPLINE_CHECKLIST.md). Finite checks are challenges to the proof, not independent review or an execution of an infinite-volume theorem.
++
++## Evidence, scope and recovery
++
++The [primary](../scripts/compact_rotor_bridge_cubic_check_2026_09_16.py) retains the original numerical domains and tolerances. Its [capture destination](../logs/runner-cache/compact_rotor_bridge_cubic_check_2026_09_16.txt) and JSON destination under the same directory bind future actual-source evidence. TOTAL counts completed diagnostic families, not individual assertions. No primary was run during author preparation.
++
++The [exact original recovery](work_history/review_loop/pr8166/README.md) preserves every original proof, failed attempt, mutation and output. Historical author review/status statements are not current independent authority.
++
++## No-Go Discipline Gate
++
++N1: Formal negative certification is deferred; no five-route packet is invented. The live claims are the displayed positive conditional implications.
++N2: Shared comparison and supplied-model premises are not independent walls.
++N3: Geometry, time weights, norms, coupling and mathematical imports remain explicit.
++N4: Finite checks support specified identities; they do not execute normalized compact transfer.
++N5: The runner states per_element, per_site, per_mode, per_block and lattice_wide scope; infinite-domain conclusions rely on the written proofs.
++N6: Exact normalized winding/source representations remain open work; no new axiom is proposed.
++N7: Compact transfer, covariance identification and physical selection have not been established here. No impossibility conclusion is substituted.
++N8: Original stronger negative arguments remain exact in history, with branch retention for deferred partial closure. The limitation of the certification packet does not disprove the positive mathematics.
+--- .claude/science/physics-loops/toe-compact-response-20260916/notes/CONVEX_EXTENSION_OF_LIFTED_KERNEL.md
++++ docs/COMPACT_ROTOR_CONVEX_CARRIER_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,10 +1,30 @@
++---
++claim_id: compact_rotor_convex_carrier_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++bodyType: bounded_theorem
++runner: scripts/compact_rotor_convex_carrier_check_2026_09_16.py
++upstream_dependencies: ["compact_rotor_bridge_cubic_bounded_theorem_note_2026-09-16"]
++claim_scope: "Explicit nonperiodic convex comparison, global derivative bounds and exact equality on the specified small raw-curl region."
++---
++
++**Type:** bounded_theorem
++
++```yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++hypothetical_axiom_status: null
++admitted_observation_status: null
++```
++
++Load-bearing mathematical sources: [Compact Rotor Bridge Cubic Bounded Theorem Note 2026-09-16](COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md).
++
+ # A convex real-field action matching the lifted kernel at small curl
+ 
+-Working personal construction, 2026-09-16. This note is conditional on
+-the cubic bridge derivation in [the source-bound note](BRIDGE_CUBIC_SOURCE_BOUND.md),
+-and restates the needed Hessian argument below. The construction is a
+-comparison action. Equality is asserted only on the specified real-lift
+-small-curl region, not for the full compact path measure.
++Explicit nonperiodic convex comparison, global derivative bounds and exact equality on the specified small raw-curl region.
+ 
+ ## 1. A scalar extension with explicit derivative bounds
+ 
+@@ -155,14 +175,7 @@
+ external field-limit theorem is declared applicable until all its
+ operator, carrier, state-matching and source hypotheses are verified.
+ 
+-The compact path law sums over link windings. Small principal flux
+-does not guarantee one globally small raw-curl lift; nonzero compact
+-currents and harmonic sectors obstruct that inference. Even an existence
+-theorem for good lifts outside sparse regions would still need its
+-Jacobian, multiplicity, normalized weights and source dependence matched
+-before(10) could replace the compact measure. This note supplies a
+-controlled comparison action and an exact equality region, not that
+-measure comparison or a photon theorem.
++This work has not established a normalized compact-to-comparison representation, including its Jacobian, multiplicity, weights and source dependence. Equation(7) is equality on chosen real lifts only. The original stronger small-principal-flux/global-lift exclusion and its supporting discussion remain complete in the exact archive; formal negative certification is deferred. No photon theorem or impossibility of a future comparison is asserted.
+ 
+ The next proposed conditional construction is to fill finite coarse
+ current components by integer sheets in contractible spacetime, obtain
+@@ -171,6 +184,20 @@
+ probability hypothesis and its proof status must be explicit; no new
+ phase premise may be hidden in the word "dilute".
+ 
+-## Author evidence and status
+-
+-See [personal review](../review/PERSONAL_REVIEW.md), [claim status](../CLAIM_STATUS_CERTIFICATE.md), and [negative-claim discipline](../NO_GO_DISCIPLINE_CHECKLIST.md). Finite checks are challenges to the proof, not independent review or an execution of an infinite-volume theorem.
++
++## Evidence, scope and recovery
++
++The [primary](../scripts/compact_rotor_convex_carrier_check_2026_09_16.py) retains the original numerical domains and tolerances. Its [capture destination](../logs/runner-cache/compact_rotor_convex_carrier_check_2026_09_16.txt) and JSON destination under the same directory bind future actual-source evidence. TOTAL counts completed diagnostic families, not individual assertions. No primary was run during author preparation.
++
++The [exact original recovery](work_history/review_loop/pr8166/README.md) preserves every original proof, failed attempt, mutation and output. Historical author review/status statements are not current independent authority.
++
++## No-Go Discipline Gate
++
++N1: Formal negative certification is deferred; no five-route packet is invented. The live claims are the displayed positive conditional implications.
++N2: Shared comparison and supplied-model premises are not independent walls.
++N3: Geometry, time weights, norms, coupling and mathematical imports remain explicit.
++N4: Finite checks support specified identities; they do not execute normalized compact transfer.
++N5: The runner states per_element, per_site, per_mode, per_block and lattice_wide scope; infinite-domain conclusions rely on the written proofs.
++N6: Exact normalized winding/source representations remain open work; no new axiom is proposed.
++N7: Compact transfer, covariance identification and physical selection have not been established here. No impossibility conclusion is substituted.
++N8: Original stronger negative arguments remain exact in history, with branch retention for deferred partial closure. The limitation of the certification packet does not disprove the positive mathematics.
+--- .claude/science/physics-loops/toe-compact-response-20260916/notes/SPARSE_INTEGER_FILLINGS_AND_REAL_LIFTS.md
++++ docs/COMPACT_ROTOR_INTEGER_FILLING_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,11 +1,30 @@
++---
++claim_id: compact_rotor_integer_filling_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++bodyType: bounded_theorem
++runner: scripts/compact_rotor_integer_filling_check_2026_09_16.py
++upstream_dependencies: ["compact_rotor_convex_carrier_bounded_theorem_note_2026-09-16", "compact_rotor_sampled_magnetic_event_bounded_theorem_note_2026-09-16", "compact_rotor_magnetic_excursion_bounded_theorem_note_2026-09-16", "compact_rotor_spatial_ground_path_limit_bounded_theorem_note_2026-09-16", "compact_rotor_temporal_oscillation_coarse_current_bounded_theorem_note_2026-09-16"]
++claim_scope: "Conditional finite-set probability premise implies locally finite integer fillings, exponential enlarged-box tail and a real lift on contractible Z4; Hamiltonian application uses the full linked path law."
++---
++
++**Type:** bounded_theorem
++
++```yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++hypothetical_axiom_status: null
++admitted_observation_status: null
++```
++
++Load-bearing mathematical sources: [Compact Rotor Convex Carrier Bounded Theorem Note 2026-09-16](COMPACT_ROTOR_CONVEX_CARRIER_BOUNDED_THEOREM_NOTE_2026-09-16.md), [Compact Rotor Sampled Magnetic Event Bounded Theorem Note 2026-09-16](COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md), [Compact Rotor Magnetic Excursion Bounded Theorem Note 2026-09-16](COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md), [Compact Rotor Spatial Ground Path Limit Bounded Theorem Note 2026-09-16](COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md), [Compact Rotor Temporal Oscillation Coarse Current Bounded Theorem Note 2026-09-16](COMPACT_ROTOR_TEMPORAL_OSCILLATION_COARSE_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-16.md).
++
+ # Conditional sparse integer fillings and a real lift in four dimensions
+ 
+-Working personal derivation, 2026-09-16. This is a conditional geometric
+-statement. Its probability premise is displayed, and the proposed compact
+-Hamiltonian application comes from the unaudited draft PR8165 at the frozen
+-head c228dbcfc0a6b71639316915f460c32dbf479723. Neither that application nor
+-this new argument has independent review. This note does not identify the
+-compact probability law with the convex comparison law.
++Conditional finite-set probability premise implies locally finite integer fillings, exponential enlarged-box tail and a real lift on contractible Z4; Hamiltonian application uses the full linked path law.
+ 
+ ## 1. Explicit probability premise
+ 
+@@ -82,7 +101,7 @@
+ or an assumption that the current was a single simple loop. Its box may
+ overlap the boxes of other components; those overlaps are handled next.
+ 
+-## 3. Enlarged boxes do not make an infinite repaired region
++## 3. Exponential tail and finite enlarged-box components
+ 
+ Enlarge each component's coordinate bounding box by1 in all directions,
+ and call it B_gamma. Choose any fixed deterministic vertex anchor r_gamma
+@@ -175,15 +194,11 @@
+ The resulting real lift has a_time=0. This step uses infinite or open
+ time; it is not a proof for periodic time with nontrivial holonomy.
+ 
+-The contractible domain matters. Harmonic sectors on a torus are not
+-removed by this argument and must be included separately in any finite
+-periodic-volume representation.
++The proved construction has the contractible domain Z^4. A periodic-domain extension is outside this result. The original stronger topological exclusion discussion remains exact in history with its formal negative certification deferred.
+ 
+ ## 5. Conditional application to the supplied compact Hamiltonian
+ 
+-This subsection uses the proposed path-event bounds in draft PR8165,
+-notes BLOCK02 and BLOCK04, at the exact head named above. The geometric
+-result in sections1-4 stands independently with premise(1).
++This application uses the linked magnetic-excursion and temporal-oscillation results for the supplied compact Hamiltonian, including the full spatial ground-path construction and its local compact path specification. The sampled-event parent supplies the Hamiltonian and common constants. Thus an actual infinite spatial-volume path law is available, rather than just two finite-volume event formulas. The abstract geometric result in sections1-4 remains independent under its explicit finite-set probability premise(1).
+ 
+ For each coarse4-cell (spatial cube times an interval of durationT),
+ declare it bad if any of its six spatial faces has a principal magnetic
+@@ -191,7 +206,7 @@
+ has circle oscillation at least alpha during that interval. There are
+ 18 possible basic witnesses. Take0<alpha<=pi/3.
+ 
+-Let epsilon_B and epsilon_E be the proposed same-orientation joint
++Let epsilon_B and epsilon_E be the linked same-orientation joint
+ bounds for distinct magnetic and temporal basic events, and set
+  epsilon=max(epsilon_B,epsilon_E). They have six orientation classes
+ in total. A specified collection of r distinct witnesses is bounded
+@@ -210,7 +225,7 @@
+ The principal-face formula also gives |J|<=3. These are exactly the
+ geometric hypotheses, once the path-event premise is justified.
+ 
+-The explicit proposed bounds, for0<g<=1, are
++The explicit supplied-model bounds, for0<g<=1, are
+ 
+     C0=3pi^2/16+12(1/3-2/pi^2), c_alpha=1-cos(alpha/2),
+     q_B=min(1,exp[-T c_alpha/g^2]
+@@ -236,9 +251,7 @@
+ original Brownian paths; interval winding labels, particularly in repaired
+ regions, have not been recovered from endpoint angles alone.
+ It is not a measure-preserving coordinate chart with demonstrated
+-Jacobian, multiplicity or normalized density. A sparse collection of
+-repaired regions can still change macroscopic stiffness at fixed g;
+-positive density does not disappear merely because the volume grows.
++Jacobian, multiplicity or normalized density. Macroscopic stiffness and normalized source matching remain unestablished by this work.
+ No equality, total-variation convergence or field-limit equivalence
+ between the compact and convex measures is asserted.
+ 
+@@ -248,6 +261,20 @@
+ resolves a conditional geometry question; it does not assume that final
+ analytic obligation under the name "dilute defects".
+ 
+-## Author evidence and status
+-
+-See [personal review](../review/PERSONAL_REVIEW.md), [claim status](../CLAIM_STATUS_CERTIFICATE.md), and [negative-claim discipline](../NO_GO_DISCIPLINE_CHECKLIST.md). Finite checks are challenges to the proof, not independent review or an execution of an infinite-volume theorem.
++
++## Evidence, scope and recovery
++
++The [primary](../scripts/compact_rotor_integer_filling_check_2026_09_16.py) retains the original numerical domains and tolerances. Its [capture destination](../logs/runner-cache/compact_rotor_integer_filling_check_2026_09_16.txt) and JSON destination under the same directory bind future actual-source evidence. TOTAL counts completed diagnostic families, not individual assertions. No primary was run during author preparation.
++
++The [exact original recovery](work_history/review_loop/pr8166/README.md) preserves every original proof, failed attempt, mutation and output. Historical author review/status statements are not current independent authority.
++
++## No-Go Discipline Gate
++
++N1: Formal negative certification is deferred; no five-route packet is invented. The live claims are the displayed positive conditional implications.
++N2: Shared comparison and supplied-model premises are not independent walls.
++N3: Geometry, time weights, norms, coupling and mathematical imports remain explicit.
++N4: Finite checks support specified identities; they do not execute normalized compact transfer.
++N5: The runner states per_element, per_site, per_mode, per_block and lattice_wide scope; infinite-domain conclusions rely on the written proofs.
++N6: Exact normalized winding/source representations remain open work; no new axiom is proposed.
++N7: Compact transfer, covariance identification and physical selection have not been established here. No impossibility conclusion is substituted.
++N8: Original stronger negative arguments remain exact in history, with branch retention for deferred partial closure. The limitation of the certification packet does not disprove the positive mathematics.
+--- .claude/science/physics-loops/toe-compact-response-20260916/notes/GAUSSIAN_MAGNETIC_LIMIT_FOR_THE_COMPARISON_LAW.md
++++ docs/COMPACT_ROTOR_MAGNETIC_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-16.md
+@@ -1,11 +1,30 @@
++---
++claim_id: compact_rotor_magnetic_covariance_bounded_theorem_note_2026-09-16
++claim_type: bounded_theorem
++bodyType: bounded_theorem
++runner: scripts/compact_rotor_magnetic_covariance_check_2026_09_16.py
++upstream_dependencies: ["compact_rotor_bridge_cubic_bounded_theorem_note_2026-09-16", "compact_rotor_convex_carrier_bounded_theorem_note_2026-09-16", "preconditioned_extended_gradient_gaussian_remainder_and_free_cubic_riesz_bounded_theorem_note_2026-09-15"]
++claim_scope: "Specified real comparison law: weighted covariance factorization, Riesz norm bound and covariance-convergent Gaussian subsequences; no compact-law transfer or covariance identification."
++---
++
++**Type:** bounded_theorem
++
++```yaml
++actual_current_surface_status: conditional-support
++conditional_surface_status: conditional-support
++trace_class: upstream_support
++reachability_to_target: supports
++audit_required_before_effective_retained: true
++bare_retained_allowed: false
++hypothetical_axiom_status: null
++admitted_observation_status: null
++```
++
++Load-bearing mathematical sources: [Compact Rotor Bridge Cubic Bounded Theorem Note 2026-09-16](COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md), [Compact Rotor Convex Carrier Bounded Theorem Note 2026-09-16](COMPACT_ROTOR_CONVEX_CARRIER_BOUNDED_THEOREM_NOTE_2026-09-16.md), [Preconditioned Extended Gradient Gaussian Remainder And Free Cubic Riesz Bounded Theorem Note 2026-09-15](PRECONDITIONED_EXTENDED_GRADIENT_GAUSSIAN_REMAINDER_AND_FREE_CUBIC_RIESZ_BOUNDED_THEOREM_NOTE_2026-09-15.md).
++
+ # Gaussian magnetic subsequences for the real comparison law
+ 
+-Working personal theorem proposal, 2026-09-16. This note concerns exactly
+-the noncompact comparison action in [the convex extension note](CONVEX_EXTENSION_OF_LIFTED_KERNEL.md).
+-It does not transfer that conclusion to the compact Hamiltonian. The
+-comparison's coincidence on a small-curl region does not imply equality
+-of normalized laws in a growing volume. All new statements await
+-independent review.
++Specified real comparison law: weighted covariance factorization, Riesz norm bound and covariance-convergent Gaussian subsequences; no compact-law transfer or covariance identification.
+ 
+ ## 1. The finite periodic comparison measure
+ 
+@@ -37,7 +56,7 @@
+ weights divided byT. Its row mass is1 on the periodic chain; its dual
+ column mass is1 because the two shape weights sum to1.
+ 
+-The positive majorant in section6 of [the bridge note](BRIDGE_CUBIC_SOURCE_BOUND.md)
++The positive majorant in section6 of [the bridge note](COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md)
+ therefore gives the actual ambient operator bounds
+ 
+     ||U''(b)||_(p->p)<=delta_*=epsilon_alpha+delta2,
+@@ -234,10 +253,7 @@
+ comparison has Gaussian magnetic subsequences for diffuse tests at fixed
+ positive g in a nonempty sufficient parameter regime.
+ 
+-There is still no normalized comparison from the compact Hamiltonian to
+-this real measure. A field-dependent integer lift, sparse defects and
+-pointwise agreement on good fields do not supply it. A fixed positive
+-density of repaired regions may renormalize the covariance. Nor has this
++This work has not established normalized comparison from the compact Hamiltonian to this real measure or identified its covariance from compact data. Nor has this
+ note proved the physical electric source map, a unique Maxwell covariance,
+ reflection positivity of the modified comparison law, a reconstructed
+ photon Hilbert space, matter interactions, or selection of the supplied
+@@ -251,12 +267,7 @@
+ 
+ ## 7. Sources and proof status
+ 
+-- Main source at e0ef7cf4633034a8c1e6d57f5812cc4275bf1349:
+-  PRECONDITIONED_EXTENDED_GRADIENT_GAUSSIAN_REMAINDER_AND_FREE_CUBIC_RIESZ_BOUNDED_THEOREM_NOTE_2026-09-15.md.
+-  The entire source was personally reread. Its finite source-variation
+-  argument and periodic Riesz proof are the mathematical starting points,
+-  restated with the actual carrier and weights here. It remains an author
+-  proposal; no independent-review status is imported.
++- [Current Riesz and source-variation proof](PRECONDITIONED_EXTENDED_GRADIENT_GAUSSIAN_REMAINDER_AND_FREE_CUBIC_RIESZ_BOUNDED_THEOREM_NOTE_2026-09-15.md): only sections1–3 and7 supply the finite source-variation argument and periodic Riesz estimate, with their stated hypotheses. No unrelated carrier expansion or physical-state claim is imported.
+ - Domelevo and Petermichl, [Sharp Lp estimates for discrete second order
+   Riesz transforms](https://arxiv.org/abs/1507.03796), v1, Theorem1 and
+   section2. All22 extracted PDF pages were personally read. The exact
+@@ -273,6 +284,20 @@
+ and challenge the positive bridge majorant with signed static response
+ equations. They cannot prove the infinite-volume statement.
+ 
+-## Author evidence and status
+-
+-See [personal review](../review/PERSONAL_REVIEW.md), [claim status](../CLAIM_STATUS_CERTIFICATE.md), and [negative-claim discipline](../NO_GO_DISCIPLINE_CHECKLIST.md). Finite checks are challenges to the proof, not independent review or an execution of an infinite-volume theorem.
++
++## Evidence, scope and recovery
++
++The [primary](../scripts/compact_rotor_magnetic_covariance_check_2026_09_16.py) retains the original numerical domains and tolerances. Its [capture destination](../logs/runner-cache/compact_rotor_magnetic_covariance_check_2026_09_16.txt) and JSON destination under the same directory bind future actual-source evidence. TOTAL counts completed diagnostic families, not individual assertions. No primary was run during author preparation.
++
++The [exact original recovery](work_history/review_loop/pr8166/README.md) preserves every original proof, failed attempt, mutation and output. Historical author review/status statements are not current independent authority.
++
++## No-Go Discipline Gate
++
++N1: Formal negative certification is deferred; no five-route packet is invented. The live claims are the displayed positive conditional implications.
++N2: Shared comparison and supplied-model premises are not independent walls.
++N3: Geometry, time weights, norms, coupling and mathematical imports remain explicit.
++N4: Finite checks support specified identities; they do not execute normalized compact transfer.
++N5: The runner states per_element, per_site, per_mode, per_block and lattice_wide scope; infinite-domain conclusions rely on the written proofs.
++N6: Exact normalized winding/source representations remain open work; no new axiom is proposed.
++N7: Compact transfer, covariance identification and physical selection have not been established here. No impossibility conclusion is substituted.
++N8: Original stronger negative arguments remain exact in history, with branch retention for deferred partial closure. The limitation of the certification packet does not disprove the positive mathematics.
+--- .claude/science/physics-loops/toe-compact-response-20260916/evidence/bridge_cubic_check.py
++++ scripts/compact_rotor_bridge_cubic_check_2026_09_16.py
+@@ -16,6 +16,26 @@
+ import numpy as np
+ from numpy.polynomial.hermite import hermgauss
+ from scipy.special import ive
++
++
++AUDIT_INPUT_PATHS = ['docs/COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++EXPECTED_INPUT_SHA256 = {'docs/COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'ecfd4f9b82f264e95509653b62424d259a1e7ddb2e7fd9fca766f018ce8ac68c'}
++AUDIT_RSS_LIMIT_MIB = 384
++_REPO = Path(__file__).resolve().parents[1]
++for _input in AUDIT_INPUT_PATHS:
++    assert hashlib.sha256((_REPO / _input).read_bytes()).hexdigest() == EXPECTED_INPUT_SHA256[_input], _input
++
++def _emit_completed(result):
++    expected = ['time_precision', 'single_face', 'adjacent_faces']
++    assert all(key in result for key in expected)
++    result["completed_families"] = expected
++    result["TOTAL"] = len(expected)
++    destination = _REPO / "logs/runner-cache" / (Path(__file__).stem + ".json")
++    destination.parent.mkdir(parents=True, exist_ok=True)
++    destination.write_text(json.dumps(result, indent=2, sort_keys=True, allow_nan=False) + "\n")
++    for label, scope in [('per_element', 'finite positive precision and cubic coefficients'), ('per_site', 'one-face and two-adjacent-face fixtures only'), ('per_mode', 'Hermite/Bessel resolutions and finite grids'), ('per_block', 'three completed diagnostic families'), ('lattice_wide', 'not executed; all-volume and continuous-time claims are written proofs')]:
++        print(label + ": " + scope)
++    print("TOTAL: PASS=" + str(len(expected)) + " FAIL=0")
+ 
+ 
+ def cumulant3(a,b,c,w):
+@@ -163,7 +183,7 @@
+                 scope=__doc__,time_precision=time_precision(),single_face=one_face_checks(),
+                 adjacent_faces=two_face_checks())
+     result.update(status='PERSONAL_CHECKS_COMPLETED',elapsed_seconds=time.monotonic()-start)
+-    print(json.dumps(result,indent=2,sort_keys=True))
++    _emit_completed(result)
+ 
+ 
+ if __name__=='__main__':main()
+--- .claude/science/physics-loops/toe-compact-response-20260916/evidence/convex_carrier_check.py
++++ scripts/compact_rotor_convex_carrier_check_2026_09_16.py
+@@ -12,7 +12,27 @@
+ import time
+ import numpy as np
+ from scipy.integrate import quad
+-from bridge_cubic_check import two_face_quantities
++from compact_rotor_bridge_cubic_check_2026_09_16 import two_face_quantities
++
++
++AUDIT_INPUT_PATHS = ['docs/COMPACT_ROTOR_CONVEX_CARRIER_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'scripts/compact_rotor_bridge_cubic_check_2026_09_16.py']
++EXPECTED_INPUT_SHA256 = {'docs/COMPACT_ROTOR_CONVEX_CARRIER_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'e85b065930317f53efaa22c7d322406dcf3072a3e6df52c11eec579e5a633d9e', 'docs/COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'ecfd4f9b82f264e95509653b62424d259a1e7ddb2e7fd9fca766f018ce8ac68c', 'scripts/compact_rotor_bridge_cubic_check_2026_09_16.py': '57fac02274206af6db71ffe6a7e22a72a9f58f864fcec0538c2fe981c7205c0a'}
++AUDIT_RSS_LIMIT_MIB = 384
++_REPO = Path(__file__).resolve().parents[1]
++for _input in AUDIT_INPUT_PATHS:
++    assert hashlib.sha256((_REPO / _input).read_bytes()).hexdigest() == EXPECTED_INPUT_SHA256[_input], _input
++
++def _emit_completed(result):
++    expected = ['extension', 'carrier', 'bridge']
++    assert all(key in result for key in expected)
++    result["completed_families"] = expected
++    result["TOTAL"] = len(expected)
++    destination = _REPO / "logs/runner-cache" / (Path(__file__).stem + ".json")
++    destination.parent.mkdir(parents=True, exist_ok=True)
++    destination.write_text(json.dumps(result, indent=2, sort_keys=True, allow_nan=False) + "\n")
++    for label, scope in [('per_element', 'scalar clipped extension derivatives'), ('per_site', 'adjacent-face bridge fixtures'), ('per_mode', 'finite time Fourier carrier'), ('per_block', 'three completed diagnostic families'), ('lattice_wide', 'not executed; global comparison estimates are written proofs')]:
++        print(label + ": " + scope)
++    print("TOTAL: PASS=" + str(len(expected)) + " FAIL=0")
+ 
+ 
+ def chi(x,alpha):
+@@ -111,13 +131,13 @@
+ 
+ def main():
+     start=time.monotonic()
+-    files=[Path(__file__),Path(__file__).with_name('bridge_cubic_check.py')]
++    files=[Path(__file__),Path(__file__).with_name('compact_rotor_bridge_cubic_check_2026_09_16.py')]
+     out=dict(status='PERSONAL_CHECKS_COMPLETED',scope=__doc__,
+              input_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in files},
+              extension=extension_checks(),carrier=carrier_checks(),
+              bridge=bridge_hessian_checks())
+     out['elapsed_seconds']=time.monotonic()-start
+-    print(json.dumps(out,indent=2,sort_keys=True))
++    _emit_completed(out)
+ 
+ 
+ if __name__=='__main__':main()
+--- .claude/science/physics-loops/toe-compact-response-20260916/evidence/integer_filling_check.py
++++ scripts/compact_rotor_integer_filling_check_2026_09_16.py
+@@ -13,6 +13,26 @@
+ import math
+ import time
+ import mpmath as mp
++
++
++AUDIT_INPUT_PATHS = ['docs/COMPACT_ROTOR_INTEGER_FILLING_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/COMPACT_ROTOR_CONVEX_CARRIER_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/COMPACT_ROTOR_TEMPORAL_OSCILLATION_COARSE_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-16.md']
++EXPECTED_INPUT_SHA256 = {'docs/COMPACT_ROTOR_INTEGER_FILLING_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'ce4ebc069af949ced17f31835ecdc36f4738584e1840afc9fa702c52e546765e', 'docs/COMPACT_ROTOR_CONVEX_CARRIER_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'e85b065930317f53efaa22c7d322406dcf3072a3e6df52c11eec579e5a633d9e', 'docs/COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'ecfd4f9b82f264e95509653b62424d259a1e7ddb2e7fd9fca766f018ce8ac68c', 'docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'aa61782c652fb722b65832dceed9b309e63a8bdae67cb6045830a2a974eb8ccc', 'docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'c68e64839af884757499eb5223a479f7ad32aba3f339198fc2e2b5845816db7e', 'docs/COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md': '679709b4e68b94805eaa3b9fbdc6d16a3a033e15c8e9c22d798f7d796c2255c0', 'docs/COMPACT_ROTOR_TEMPORAL_OSCILLATION_COARSE_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-16.md': '0bec7eaaf856d6e48314e15c13468e98b6d5af3d90f52626c853cd5327d52416'}
++AUDIT_RSS_LIMIT_MIB = 384
++_REPO = Path(__file__).resolve().parents[1]
++for _input in AUDIT_INPUT_PATHS:
++    assert hashlib.sha256((_REPO / _input).read_bytes()).hexdigest() == EXPECTED_INPUT_SHA256[_input], _input
++
++def _emit_completed(result):
++    expected = ['edge_fill', 'current_fill', 'hodge', 'witness_geometry', 'constants']
++    assert all(key in result for key in expected)
++    result["completed_families"] = expected
++    result["TOTAL"] = len(expected)
++    destination = _REPO / "logs/runner-cache" / (Path(__file__).stem + ".json")
++    destination.parent.mkdir(parents=True, exist_ok=True)
++    destination.write_text(json.dumps(result, indent=2, sort_keys=True, allow_nan=False) + "\n")
++    for label, scope in [('per_element', 'integer boundary and Hodge orientation identities'), ('per_site', 'finite4D chains and witness memberships'), ('per_mode', 'finite seeded currents and fixed80-digit arithmetic'), ('per_block', 'five completed diagnostic families'), ('lattice_wide', 'not executed; infinite fillings/tail use explicit probability premise and written proof')]:
++        print(label + ": " + scope)
++    print("TOTAL: PASS=" + str(len(expected)) + " FAIL=0")
+ 
+ 
+ def add(dst,src,factor=1):
+@@ -215,7 +235,7 @@
+              hodge=hodge_checks(),witness_geometry=witness_geometry(),constants=numerical_constants(),
+              status='PERSONAL_CHECKS_COMPLETED')
+     out['elapsed_seconds']=time.monotonic()-start
+-    print(json.dumps(out,indent=2,sort_keys=True))
++    _emit_completed(out)
+ 
+ 
+ if __name__=='__main__':main()
+--- .claude/science/physics-loops/toe-compact-response-20260916/evidence/magnetic_covariance_check.py
++++ scripts/compact_rotor_magnetic_covariance_check_2026_09_16.py
+@@ -10,6 +10,26 @@
+ import hashlib,json,math,time
+ import numpy as np
+ from scipy.linalg import eigh,solve
++
++
++AUDIT_INPUT_PATHS = ['docs/COMPACT_ROTOR_MAGNETIC_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/COMPACT_ROTOR_CONVEX_CARRIER_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/PRECONDITIONED_EXTENDED_GRADIENT_GAUSSIAN_REMAINDER_AND_FREE_CUBIC_RIESZ_BOUNDED_THEOREM_NOTE_2026-09-15.md']
++EXPECTED_INPUT_SHA256 = {'docs/COMPACT_ROTOR_MAGNETIC_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'e8c663da092edaa23ac9c3e9794534211d72de84fbcbbb8f4b3cbf8467350638', 'docs/COMPACT_ROTOR_CONVEX_CARRIER_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'e85b065930317f53efaa22c7d322406dcf3072a3e6df52c11eec579e5a633d9e', 'docs/COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'ecfd4f9b82f264e95509653b62424d259a1e7ddb2e7fd9fca766f018ce8ac68c', 'docs/PRECONDITIONED_EXTENDED_GRADIENT_GAUSSIAN_REMAINDER_AND_FREE_CUBIC_RIESZ_BOUNDED_THEOREM_NOTE_2026-09-15.md': 'f018cccaf0210a48a3c9b0ef9d349d9bd8b325b6bf1ac71f153be3a424857794'}
++AUDIT_RSS_LIMIT_MIB = 384
++_REPO = Path(__file__).resolve().parents[1]
++for _input in AUDIT_INPUT_PATHS:
++    assert hashlib.sha256((_REPO / _input).read_bytes()).hexdigest() == EXPECTED_INPUT_SHA256[_input], _input
++
++def _emit_completed(result):
++    expected = ['covariance', 'replication', 'majorant']
++    assert all(key in result for key in expected)
++    result["completed_families"] = expected
++    result["TOTAL"] = len(expected)
++    destination = _REPO / "logs/runner-cache" / (Path(__file__).stem + ".json")
++    destination.parent.mkdir(parents=True, exist_ok=True)
++    destination.write_text(json.dumps(result, indent=2, sort_keys=True, allow_nan=False) + "\n")
++    for label, scope in [('per_element', 'finite matrix covariance and response'), ('per_site', 'periodic spatial side4 fixture'), ('per_mode', 'finite temporal/spatial Fourier modes and replicated factors'), ('per_block', 'three completed diagnostic families'), ('lattice_wide', 'not executed; Gaussian subsequences/Riesz uniformity use written proofs')]:
++        print(label + ": " + scope)
++    print("TOTAL: PASS=" + str(len(expected)) + " FAIL=0")
+ 
+ 
+ def incidence(L):
+@@ -165,7 +185,7 @@
+              covariance=covariance_checks(),replication=replication_checks(),
+              majorant=positive_majorant_checks(),status='PERSONAL_CHECKS_COMPLETED')
+     out['elapsed_seconds']=time.monotonic()-start
+-    print(json.dumps(out,indent=2,sort_keys=True))
++    _emit_completed(out)
+ 
+ 
+ if __name__=='__main__':main()

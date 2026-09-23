@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR8166",
+  "tree": "70a5bbedf3782e55b47183fb1fc4bcd5019a18e0",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "compact_rotor_bridge_cubic_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/compact_rotor_bridge_cubic_check_2026_09_16.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/work_history/review_loop/pr8166/README.md"
+      ]
+    },
+    {
+      "path": "docs/COMPACT_ROTOR_CONVEX_CARRIER_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "compact_rotor_convex_carrier_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/compact_rotor_convex_carrier_check_2026_09_16.py",
+      "helpers": [
+        "scripts/compact_rotor_bridge_cubic_check_2026_09_16.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/compact_rotor_bridge_cubic_check_2026_09_16.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/compact_rotor_bridge_cubic_check_2026_09_16.py"
+      ],
+      "citations": [
+        "docs/COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/work_history/review_loop/pr8166/README.md"
+      ]
+    },
+    {
+      "path": "docs/COMPACT_ROTOR_INTEGER_FILLING_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "compact_rotor_integer_filling_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/compact_rotor_integer_filling_check_2026_09_16.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/COMPACT_ROTOR_CONVEX_CARRIER_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/COMPACT_ROTOR_TEMPORAL_OSCILLATION_COARSE_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/work_history/review_loop/pr8166/README.md"
+      ]
+    },
+    {
+      "path": "docs/COMPACT_ROTOR_MAGNETIC_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "claim_id": "compact_rotor_magnetic_covariance_bounded_theorem_note_2026-09-16",
+      "primary_runner": "scripts/compact_rotor_magnetic_covariance_check_2026_09_16.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/COMPACT_ROTOR_CONVEX_CARRIER_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "docs/PRECONDITIONED_EXTENDED_GRADIENT_GAUSSIAN_REMAINDER_AND_FREE_CUBIC_RIESZ_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "docs/work_history/review_loop/pr8166/README.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8774,
+      "misses": 4530
+    },
+    "packet_imports": {
+      "hits": 8760,
+      "misses": 4528
+    },
+    "declared_inputs": {
+      "hits": 8808,
+      "misses": 4683
+    }
+  },
+  "record_sha256": "0868c9faa3b704f89b0c738f422da0aca5be6a45d70cc3a4e85ee5c7a6fb364b",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

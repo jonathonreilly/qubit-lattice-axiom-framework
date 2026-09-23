@@ -1,0 +1,24 @@
+--- scripts/compact_rotor_bridge_cubic_check_2026_09_16.py@v1
++++ scripts/compact_rotor_bridge_cubic_check_2026_09_16.py@v2
+@@ -2,8 +2,8 @@
+ """Personal C3 bridge challenges: Bessel/Fourier, quadrature, finite differences.
+ 
+ The finite time grids are declared test objects. They do not prove the
+-continuous-time or all-volume theorem. No external scientific input is read;
+-this file is read for its source hash. Outputs are not audit-cache envelopes.
++continuous-time or all-volume theorem. The declared source note is read and hash-pinned; this file is read for its
++source hash. JSON is written under logs/runner-cache and stdout counts completed families.
+ """
+ AUDIT_TIMEOUT_SEC=120
+ from itertools import product
+--- scripts/compact_rotor_convex_carrier_check_2026_09_16.py@v1
++++ scripts/compact_rotor_convex_carrier_check_2026_09_16.py@v2
+@@ -16,7 +16,7 @@
+ 
+ 
+ AUDIT_INPUT_PATHS = ['docs/COMPACT_ROTOR_CONVEX_CARRIER_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'docs/COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md', 'scripts/compact_rotor_bridge_cubic_check_2026_09_16.py']
+-EXPECTED_INPUT_SHA256 = {'docs/COMPACT_ROTOR_CONVEX_CARRIER_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'e85b065930317f53efaa22c7d322406dcf3072a3e6df52c11eec579e5a633d9e', 'docs/COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'ecfd4f9b82f264e95509653b62424d259a1e7ddb2e7fd9fca766f018ce8ac68c', 'scripts/compact_rotor_bridge_cubic_check_2026_09_16.py': '57fac02274206af6db71ffe6a7e22a72a9f58f864fcec0538c2fe981c7205c0a'}
++EXPECTED_INPUT_SHA256 = {'docs/COMPACT_ROTOR_CONVEX_CARRIER_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'e85b065930317f53efaa22c7d322406dcf3072a3e6df52c11eec579e5a633d9e', 'docs/COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md': 'ecfd4f9b82f264e95509653b62424d259a1e7ddb2e7fd9fca766f018ce8ac68c', 'scripts/compact_rotor_bridge_cubic_check_2026_09_16.py': '6ca3c92618efed7c6185e043f244111b5a86a3a99d72774b7603925d9ddfacdf'}
+ AUDIT_RSS_LIMIT_MIB = 384
+ _REPO = Path(__file__).resolve().parents[1]
+ for _input in AUDIT_INPUT_PATHS:

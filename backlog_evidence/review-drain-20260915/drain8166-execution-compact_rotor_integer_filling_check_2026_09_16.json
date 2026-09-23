@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/compact_rotor_integer_filling_check_2026_09_16.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "per_element: integer boundary and Hodge orientation identities\nper_site: finite four-dimensional chains and witness membership counts\nper_mode: checked and not executed; no spectral decomposition is performed by this integer-chain program\nper_block: five completed finite diagnostic families; no exhaustive theorem execution\nlattice_wide: not executed; infinite fillings/tail use explicit probability premise and written proof\nTOTAL: PASS=5 FAIL=0\n",
+  "stderr": "",
+  "elapsed_sec": 0.19781136512756348,
+  "timeout_sec": 120,
+  "live_log": "/private/tmp/review-drain-20260915/review-meta-slot/logs/runner-cache/.in-progress/compact_rotor_integer_filling_check_2026_09_16.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/compact_rotor_integer_filling_check_2026_09_16.json",
+    "sha256": "0e0227641880cd8548f01ff00fe2111b1e53ee6c7abb2d5f5d694e798b5f35fe"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 402653184,
+    "interval_sec": 0.02,
+    "root_pid": 76303,
+    "samples": 5,
+    "peak_tree_rss_bytes": 65290240,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8166-capture.py",
+  "capture_script_sha256": "db3103ece51abd6b5c7c163f51550305fc3a36e4056c46f5ca732dd0d7f84b4c"
+}

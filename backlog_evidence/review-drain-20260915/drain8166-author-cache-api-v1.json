@@ -1,0 +1,139 @@
+[
+  {
+    "runner": "scripts/compact_rotor_bridge_cubic_check_2026_09_16.py",
+    "declared_inputs": [
+      "docs/COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "declared_input_fingerprint": "7008bdd0d0c9741bac6d5d871c2f629fd5e53cccc5a9ff813969753632ef036c",
+    "runtime_closure": [
+      {
+        "path": "docs/COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "ecfd4f9b82f264e95509653b62424d259a1e7ddb2e7fd9fca766f018ce8ac68c"
+      },
+      {
+        "path": "scripts/compact_rotor_bridge_cubic_check_2026_09_16.py",
+        "sha256": "3b3f41b0e78883c901e15a63c9c47751cd117a81f115465854553dc9a22e307b"
+      }
+    ],
+    "actual_helpers": [],
+    "timeout": 120,
+    "rss_MiB": 384
+  },
+  {
+    "runner": "scripts/compact_rotor_convex_carrier_check_2026_09_16.py",
+    "declared_inputs": [
+      "docs/COMPACT_ROTOR_CONVEX_CARRIER_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "scripts/compact_rotor_bridge_cubic_check_2026_09_16.py"
+    ],
+    "declared_input_fingerprint": "d7028784354f0527511c97504be0c1917ceea0503045f0ba98124ddad9960319",
+    "runtime_closure": [
+      {
+        "path": "docs/COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "ecfd4f9b82f264e95509653b62424d259a1e7ddb2e7fd9fca766f018ce8ac68c"
+      },
+      {
+        "path": "docs/COMPACT_ROTOR_CONVEX_CARRIER_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "e85b065930317f53efaa22c7d322406dcf3072a3e6df52c11eec579e5a633d9e"
+      },
+      {
+        "path": "scripts/compact_rotor_bridge_cubic_check_2026_09_16.py",
+        "sha256": "3b3f41b0e78883c901e15a63c9c47751cd117a81f115465854553dc9a22e307b"
+      },
+      {
+        "path": "scripts/compact_rotor_convex_carrier_check_2026_09_16.py",
+        "sha256": "0b8d9317f12bd47ab3d538002856cffa0a34377025591abfea2ce2e40d873d4b"
+      }
+    ],
+    "actual_helpers": [
+      "scripts/compact_rotor_bridge_cubic_check_2026_09_16.py"
+    ],
+    "timeout": 120,
+    "rss_MiB": 384
+  },
+  {
+    "runner": "scripts/compact_rotor_integer_filling_check_2026_09_16.py",
+    "declared_inputs": [
+      "docs/COMPACT_ROTOR_INTEGER_FILLING_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/COMPACT_ROTOR_CONVEX_CARRIER_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/COMPACT_ROTOR_TEMPORAL_OSCILLATION_COARSE_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-16.md"
+    ],
+    "declared_input_fingerprint": "1bdd51d42e4fc8b4f3cf5b58033875d8e2a0d221a8c59e8f67d5fd7e244d4bb2",
+    "runtime_closure": [
+      {
+        "path": "docs/COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "ecfd4f9b82f264e95509653b62424d259a1e7ddb2e7fd9fca766f018ce8ac68c"
+      },
+      {
+        "path": "docs/COMPACT_ROTOR_CONVEX_CARRIER_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "e85b065930317f53efaa22c7d322406dcf3072a3e6df52c11eec579e5a633d9e"
+      },
+      {
+        "path": "docs/COMPACT_ROTOR_INTEGER_FILLING_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "ce4ebc069af949ced17f31835ecdc36f4738584e1840afc9fa702c52e546765e"
+      },
+      {
+        "path": "docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "c68e64839af884757499eb5223a479f7ad32aba3f339198fc2e2b5845816db7e"
+      },
+      {
+        "path": "docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "aa61782c652fb722b65832dceed9b309e63a8bdae67cb6045830a2a974eb8ccc"
+      },
+      {
+        "path": "docs/COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "679709b4e68b94805eaa3b9fbdc6d16a3a033e15c8e9c22d798f7d796c2255c0"
+      },
+      {
+        "path": "docs/COMPACT_ROTOR_TEMPORAL_OSCILLATION_COARSE_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "0bec7eaaf856d6e48314e15c13468e98b6d5af3d90f52626c853cd5327d52416"
+      },
+      {
+        "path": "scripts/compact_rotor_integer_filling_check_2026_09_16.py",
+        "sha256": "66d67d0e3b0fb26c3e2e728c80ce6b9482e9943b86a11c11ee4112547e528b5b"
+      }
+    ],
+    "actual_helpers": [],
+    "timeout": 120,
+    "rss_MiB": 384
+  },
+  {
+    "runner": "scripts/compact_rotor_magnetic_covariance_check_2026_09_16.py",
+    "declared_inputs": [
+      "docs/COMPACT_ROTOR_MAGNETIC_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/COMPACT_ROTOR_CONVEX_CARRIER_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "docs/PRECONDITIONED_EXTENDED_GRADIENT_GAUSSIAN_REMAINDER_AND_FREE_CUBIC_RIESZ_BOUNDED_THEOREM_NOTE_2026-09-15.md"
+    ],
+    "declared_input_fingerprint": "9f72bedee076e2b20ec5b68623b897e09bd60e6642f26f3a8f12179a5345cf3d",
+    "runtime_closure": [
+      {
+        "path": "docs/COMPACT_ROTOR_BRIDGE_CUBIC_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "ecfd4f9b82f264e95509653b62424d259a1e7ddb2e7fd9fca766f018ce8ac68c"
+      },
+      {
+        "path": "docs/COMPACT_ROTOR_CONVEX_CARRIER_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "e85b065930317f53efaa22c7d322406dcf3072a3e6df52c11eec579e5a633d9e"
+      },
+      {
+        "path": "docs/COMPACT_ROTOR_MAGNETIC_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+        "sha256": "e8c663da092edaa23ac9c3e9794534211d72de84fbcbbb8f4b3cbf8467350638"
+      },
+      {
+        "path": "docs/PRECONDITIONED_EXTENDED_GRADIENT_GAUSSIAN_REMAINDER_AND_FREE_CUBIC_RIESZ_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+        "sha256": "f018cccaf0210a48a3c9b0ef9d349d9bd8b325b6bf1ac71f153be3a424857794"
+      },
+      {
+        "path": "scripts/compact_rotor_magnetic_covariance_check_2026_09_16.py",
+        "sha256": "d993841fdc671fadd1e0df97c911b6f040a15b476057dea42cf05a0235222c79"
+      }
+    ],
+    "actual_helpers": [],
+    "timeout": 120,
+    "rss_MiB": 384
+  }
+]

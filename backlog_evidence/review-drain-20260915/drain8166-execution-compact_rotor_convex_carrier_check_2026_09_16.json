@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/compact_rotor_convex_carrier_check_2026_09_16.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "per_element: finite scalar clipped-extension derivative and matching checks\nper_site: declared finite adjacent-face bridge fixtures only\nper_mode: finite time Fourier carrier identities on the declared slice counts\nper_block: three completed finite diagnostic families; no exhaustive theorem execution\nlattice_wide: not executed; global comparison estimates are written proofs\nTOTAL: PASS=3 FAIL=0\n",
+  "stderr": "",
+  "elapsed_sec": 0.8592822551727295,
+  "timeout_sec": 120,
+  "live_log": "/private/tmp/review-drain-20260915/review-meta-slot/logs/runner-cache/.in-progress/compact_rotor_convex_carrier_check_2026_09_16.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/compact_rotor_convex_carrier_check_2026_09_16.json",
+    "sha256": "8e0cdc769c7065b7db0ea73d368b8294484f9ea557301dab39fc1726d5cb1bf0"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 402653184,
+    "interval_sec": 0.02,
+    "root_pid": 76303,
+    "samples": 19,
+    "peak_tree_rss_bytes": 185204736,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8166-capture.py",
+  "capture_script_sha256": "db3103ece51abd6b5c7c163f51550305fc3a36e4056c46f5ca732dd0d7f84b4c"
+}

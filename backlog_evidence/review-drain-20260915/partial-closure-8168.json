@@ -1,0 +1,21 @@
+{
+  "pr": 8168,
+  "original_head": "c3bbf3758eb59b1d6c997389ae35738ce986dcbc",
+  "branch": "physics-loop/admissibility-induced-law-block25-formation-law-ordered-phase-toom-stability-level-automaton-20260916",
+  "landing": "012c276a64c80cf5256d68fa7dbb06939586153b",
+  "source_verified_at": "012c276a64c80cf5256d68fa7dbb06939586153b",
+  "lease_deleted": false,
+  "recovery_branch_preserved": true,
+  "reason_report": "drain8168-landing-report.md",
+  "closed": {
+    "baseRefName": "main",
+    "closedAt": "2026-09-23T03:17:09Z",
+    "headRefName": "physics-loop/admissibility-induced-law-block25-formation-law-ordered-phase-toom-stability-level-automaton-20260916",
+    "headRefOid": "c3bbf3758eb59b1d6c997389ae35738ce986dcbc",
+    "isCrossRepository": false,
+    "isDraft": false,
+    "number": 8168,
+    "state": "CLOSED",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8168"
+  }
+}

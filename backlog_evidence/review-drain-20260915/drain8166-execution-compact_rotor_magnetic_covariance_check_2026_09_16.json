@@ -1,0 +1,25 @@
+{
+  "runner": "scripts/compact_rotor_magnetic_covariance_check_2026_09_16.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "per_element: finite matrix covariance entries and static response comparisons\nper_site: finite periodic spatial side4 fixture with declared time slices\nper_mode: finite temporal/spatial Fourier modes and replicated factors\nper_block: three completed finite diagnostic families; no exhaustive theorem execution\nlattice_wide: not executed; Gaussian subsequences/Riesz uniformity use written proofs\nTOTAL: PASS=3 FAIL=0\n",
+  "stderr": "",
+  "elapsed_sec": 0.6934652328491211,
+  "timeout_sec": 120,
+  "live_log": "/private/tmp/review-drain-20260915/review-meta-slot/logs/runner-cache/.in-progress/compact_rotor_magnetic_covariance_check_2026_09_16.txt",
+  "raw_output": {
+    "path": "logs/runner-cache/compact_rotor_magnetic_covariance_check_2026_09_16.json",
+    "sha256": "e81bec553d3ddb84ea781009f9aea1a14c8dc4b68dd6fc1183e2d41adec3fcff"
+  },
+  "whole_tree_watchdog": {
+    "limit_bytes": 402653184,
+    "interval_sec": 0.02,
+    "root_pid": 76303,
+    "samples": 15,
+    "peak_tree_rss_bytes": 184893440,
+    "violations": [],
+    "boundary": "Externally sampled supervisor and descendants; timeout is enforced by runner cache process execution."
+  },
+  "capture_script": "/private/tmp/review-drain-20260915/drain8166-capture.py",
+  "capture_script_sha256": "db3103ece51abd6b5c7c163f51550305fc3a36e4056c46f5ca732dd0d7f84b4c"
+}

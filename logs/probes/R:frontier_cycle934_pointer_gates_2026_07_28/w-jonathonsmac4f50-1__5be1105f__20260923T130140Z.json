@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle934_pointer_gates_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle934_pointer_gates_2026_07_28.py",
+ "seed": 68500,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5be1105f",
+ "started_utc": "20260923T130140Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4281d495a6194c108ba01cb53aa3f5bae2b981d20d436c705877df90a97b254b",
+ "stdout_tail": "}}], \"zero_pointer_field_rows\": [{\"chi_spread_over_d_2_to_12\": 1.2045919817182948e-14, \"lambda_arm\": 0.0, \"lambda_pointer\": 0.0}, {\"chi_spread_over_d_2_to_12\": 1.1213252548714081e-14, \"lambda_arm\": 0.05, \"lambda_pointer\": 0.0}, {\"chi_spread_over_d_2_to_12\": 1.0658141036401503e-14, \"lambda_arm\": 0.075, \"lambda_pointer\": 0.0}, {\"chi_spread_over_d_2_to_12\": 1.1213252548714081e-14, \"lambda_arm\": 0.1, \"lambda_pointer\": 0.0}, {\"chi_spread_over_d_2_to_12\": 7.549516567451064e-15, \"lambda_arm\": 0.2, \"lambda_pointer\": 0.0}, {\"chi_spread_over_d_2_to_12\": 8.271161533457416e-15, \"lambda_arm\": 0.5, \"lambda_pointer\": 0.0}]}, \"refutations\": [], \"scope\": \"Supplied mathematical protocol. Grid results assume X-control and commutator-ordering clauses; neither is supplied by this computation.\", \"zero_field_window\": {\"c_star\": 0.36796130735278465, \"t_close\": 0.9738059382573454, \"t_open\": 0.5969903885375512, \"width\": 0.37681554971979425}}\n[PASS] actual_full_bit_partial_trace_agreement\n[PASS] period_exact_only_zero_field_in_control\n[PASS] actual_C5_two_blocks_detected_and_counter_fault_rejected\n[PASS] union_grid_counter_keeps_four_consecutive_samples\n[PASS] full_protocol_control_clauses_are_required\n[PASS] actual_wrong_input_rejected\n[PASS] all_original_seven_field_openings_reproduced\n[PASS] zero_pointer_product_and_degree_independence\n[PASS] zero_total_field_threshold_formula\n[PASS] degree_one_has_no_two_fragment_grid_event\n[PASS] zero_field_formula_matches_two_observed_lobes\nTOTAL: PASS=11 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T130140Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle934_pointer_gates_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

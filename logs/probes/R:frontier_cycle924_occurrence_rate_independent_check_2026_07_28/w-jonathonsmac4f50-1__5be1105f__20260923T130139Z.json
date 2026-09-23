@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle924_occurrence_rate_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle924_occurrence_rate_independent_check_2026_07_28.py",
+ "seed": 68499,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5be1105f",
+ "started_utc": "20260923T130139Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "15aa53ebf8c3345407c92f06a8ee3f122fa8ab6ff67261406f7cfc8325675a44",
+ "stdout_tail": "==============================================================================\nCYCLE 924 -- INDEPENDENT CHECKER (REVISED), SPECIFIED TO REFUTE\n==============================================================================\n\n  PASS  PINNED_EVIDENCE                  scripts/frontier_cycle924_occurrence_rate_route_2026_07_28.py:MATCH\n  PASS  FRESH_PRIMARY_EXECUTION          returncode=0 stdout_bytes=1661 stderr_bytes=0\n  PASS  CLAIMS_PARSED                    claims_line_found=True\n  PASS  RATIOS_CROSS_MULTIPLIED          84*41=3444==21*164=3444; 2*41-3*21=19; 16*3=48==2*24=48\n  PASS  NULLITY_STRUCTURAL               singleton_orbits=[('Z/2', 1), ('Z/3', 1), ('Z/4', 1), ('Z/5', 1), ('Z/6', 1)] primary=[('Z/2', 1), ('Z/3', 1), ('Z/4', 1), ('Z/5', 1), ('Z/6', 1)]\n  PASS  GROUP_EQUALITY_DIRECT            equal=True\n  PASS  NORMALIZATION_COLLAPSE           3*(2/27)==2/9 by integers: 54==54; survivors=['alpha_2_27']\n  PASS  OVERCLAIM_SCAN                   hits=none\n  PASS  RUNTIME                          elapsed_s=0.0 budget_s=300\n\nTOTAL: PASS=9 FAIL=0\nVERDICT: PRIMARY_SURVIVES_THIS_CHECK\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T130139Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

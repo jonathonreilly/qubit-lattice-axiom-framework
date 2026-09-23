@@ -1,0 +1,16 @@
+==============================================================================
+CYCLE 924 -- INDEPENDENT CHECKER (REVISED), SPECIFIED TO REFUTE
+==============================================================================
+
+  PASS  PINNED_EVIDENCE                  scripts/frontier_cycle924_occurrence_rate_route_2026_07_28.py:MATCH
+  PASS  FRESH_PRIMARY_EXECUTION          returncode=0 stdout_bytes=1661 stderr_bytes=0
+  PASS  CLAIMS_PARSED                    claims_line_found=True
+  PASS  RATIOS_CROSS_MULTIPLIED          84*41=3444==21*164=3444; 2*41-3*21=19; 16*3=48==2*24=48
+  PASS  NULLITY_STRUCTURAL               singleton_orbits=[('Z/2', 1), ('Z/3', 1), ('Z/4', 1), ('Z/5', 1), ('Z/6', 1)] primary=[('Z/2', 1), ('Z/3', 1), ('Z/4', 1), ('Z/5', 1), ('Z/6', 1)]
+  PASS  GROUP_EQUALITY_DIRECT            equal=True
+  PASS  NORMALIZATION_COLLAPSE           3*(2/27)==2/9 by integers: 54==54; survivors=['alpha_2_27']
+  PASS  OVERCLAIM_SCAN                   hits=none
+  PASS  RUNTIME                          elapsed_s=0.0 budget_s=300
+
+TOTAL: PASS=9 FAIL=0
+VERDICT: PRIMARY_SURVIVES_THIS_CHECK

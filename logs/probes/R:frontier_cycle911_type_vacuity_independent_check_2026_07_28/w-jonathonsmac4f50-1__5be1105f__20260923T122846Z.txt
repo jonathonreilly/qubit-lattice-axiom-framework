@@ -1,0 +1,14 @@
+==============================================================================
+CYCLE 911 -- INDEPENDENT CHECKER (REVISED), SPECIFIED TO REFUTE
+==============================================================================
+
+  FAIL  R0_PINNED_EVIDENCE                   scripts/frontier_cycle911_type_vacuity_2026_07_28.py:MATCH; logs/runner-cache/frontier_cycle911_type_vacuity_2026_07_28.txt:MISMATCH
+  FAIL  R0b_CLAIMS_PARSED                    claims_line_found=False
+  FAIL  R1_CENSUS_ARITHMETIC_INDEPENDENT     748/4=187 rem 0; sum(0..747)=279378
+  FAIL  R2_MAXIMIZER_INDEPENDENT             pairwise_smoothing_always_increases=True grid_maximizer_uniform=True
+  FAIL  R3_MERGED_ATOM_CONTROL               (2/6)^2*(1/6)^4=1/11664 > (1/5)^6=1/15625
+  FAIL  R4_OVERCLAIM_SCAN                    hits=['cache:71:UNCONDITIONALLY']
+  PASS  R5_RUNTIME                           elapsed_s=0.0 budget_s=300
+
+TOTAL: PASS=1 FAIL=6
+VERDICT: PRIMARY_REFUTED_ON_THIS_CHECK

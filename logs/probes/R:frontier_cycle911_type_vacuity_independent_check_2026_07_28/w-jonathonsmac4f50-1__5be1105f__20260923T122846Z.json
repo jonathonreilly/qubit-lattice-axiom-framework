@@ -1,0 +1,36 @@
+{
+ "task": "R:frontier_cycle911_type_vacuity_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle911_type_vacuity_independent_check_2026_07_28.py",
+ "seed": 66526,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5be1105f",
+ "started_utc": "20260923T122846Z",
+ "elapsed_s": 0.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=1 FAIL=6",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "97ea531e26592f9b82740ab7fbc7e4117d5987ea23c761fd6adf08113a9b1add",
+ "stdout_tail": "==============================================================================\nCYCLE 911 -- INDEPENDENT CHECKER (REVISED), SPECIFIED TO REFUTE\n==============================================================================\n\n  FAIL  R0_PINNED_EVIDENCE                   scripts/frontier_cycle911_type_vacuity_2026_07_28.py:MATCH; logs/runner-cache/frontier_cycle911_type_vacuity_2026_07_28.txt:MISMATCH\n  FAIL  R0b_CLAIMS_PARSED                    claims_line_found=False\n  FAIL  R1_CENSUS_ARITHMETIC_INDEPENDENT     748/4=187 rem 0; sum(0..747)=279378\n  FAIL  R2_MAXIMIZER_INDEPENDENT             pairwise_smoothing_always_increases=True grid_maximizer_uniform=True\n  FAIL  R3_MERGED_ATOM_CONTROL               (2/6)^2*(1/6)^4=1/11664 > (1/5)^6=1/15625\n  FAIL  R4_OVERCLAIM_SCAN                    hits=['cache:71:UNCONDITIONALLY']\n  PASS  R5_RUNTIME                           elapsed_s=0.0 budget_s=300\n\nTOTAL: PASS=1 FAIL=6\nVERDICT: PRIMARY_REFUTED_ON_THIS_CHECK\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T122846Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=1 FAIL=6' vs cache 'TOTAL: PASS=63 FAIL=0'"
+  ]
+ }
+}

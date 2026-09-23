@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle924_occurrence_rate_route_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle924_occurrence_rate_route_2026_07_28.py",
+ "seed": 68499,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5be1105f",
+ "started_utc": "20260923T130139Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d5af314c66b32c76e28b23174f9f21bd166534c120d179f55a4b4f5a1b933d95",
+ "stdout_tail": "==========================================================================\n\nSCOPE: self-contained.  The occurrence-to-threefold-readout route is\nOPEN -- no route-closure, terminality, or sole-remaining-route claim\nis made.  The imported values 2/3, 2/9 and the alpha menu come from\nUNAUDITED sources and every menu-line statement is conditional on them.\n\nCLAIMS_JSON: {\"forced_alpha\":\"2/27\",\"group_equality\":true,\"miss\":\"19/123\",\"patch_dims\":[[\"Z/2\",1],[\"Z/3\",1],[\"Z/4\",1],[\"Z/5\",1],[\"Z/6\",1]],\"period_ratio\":\"2/3\",\"science_digest\":\"5fad62b13cede8af12035bfe821e83193f7c6c9c7ba433b09769a94056645de8\",\"share\":\"21/41\",\"survivors\":[\"alpha_2_27\"]}\n\n-- CERTIFICATES --------------------------------------------------------\n  PASS  EXACT_RATIOS                       84/164=21/41 2/3-21/41=19/123 16/24=2/3\n  PASS  CYCLIC_PATCH_NULLITY               patches=[('Z/2', 1), ('Z/3', 1), ('Z/4', 1), ('Z/5', 1), ('Z/6', 1)] all_dim_1_spanned_by_count=True\n  PASS  GROUP_EQUALITY                     C3_rotations=[(0, 1, 2), (1, 2, 0), (2, 0, 1)] Z3_translations=[(0, 1, 2), (1, 2, 0), (2, 0, 1)] equal_as_permutation_sets=True\n  PASS  MENU_LINE_AND_NORMALIZATION        all_menu_members_on_the_line=True nonzero_members_one_projective_point=True imported_normalization_forces_alpha=2/27 menu_survivors=['alpha_2_27'] ablation_keeps=5\n  PASS  DETERMINISM                        double_run_digest_equal=True\n  PASS  RUNTIME                            elapsed_s=0.0 budget_s=300\n\nTOTAL: PASS=6 FAIL=0\nVERDICT: PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T130139Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

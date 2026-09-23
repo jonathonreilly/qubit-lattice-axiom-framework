@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle914_d3_bar_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle914_d3_bar_independent_check_2026_07_28.py",
+ "seed": 67236,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5be1105f",
+ "started_utc": "20260923T124036Z",
+ "elapsed_s": 718.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bd85e37b4a89004fcc0f939f36e9ad883d19c96c5e95c9b69854d85407a1429e",
+ "stdout_tail": "                      PASS\nATTACK    no-undisclosed-sampling                        PASS\nTOOTH     tampered-pin                                   BIT-FLIPPED\nTOOTH     dropped-fragment-site                          BIT-FLIPPED\nTOOTH     hardcoded-bar-location                         BIT-FLIPPED\nTOOTH     leaked-verdict                                 BIT-FLIPPED\nTOOTH     skipped-lambda                                 BIT-FLIPPED\nTOOTH     planted-certification-blindness                BIT-FLIPPED\nTOOTH     tampered-committed-stream                      BIT-FLIPPED\nTOOTH     sector-table-tamper                            BIT-FLIPPED\nCHECKER-EVENTS {'0.05': \"t=0.6/theta*=0.500751527281/R=2/subset=['+x', '-x']/run=4\", '0.1': \"t=0.7/theta*=0.504730776868/R=2/subset=['+x', '-x']/run=3\", '0.2': None}\nCHECKER-WINDOW W_full=[0.05, 0.1] boundary=(0.1, 0.2)\nPRIMARY-COMPARISON {\"receipt_found\": true, \"max_abs_dev\": {\"chi5\": 3.142819338108893e-12, \"chi4\": 5.1280091284411355e-12, \"theta\": 9.026113190202523e-13, \"pair\": 1.9415025143132425e-14}, \"r_ind_mismatches\": 0, \"verdict_parent\": \"BAR-NOT-PINNED\", \"verdict_three_lambda_subset\": \"THREE-LAMBDA-SUBSET-CONSISTENT\", \"primary_window\": [0.05, 0.1], \"checker_window\": [0.05, 0.1], \"window_agrees\": true}\nTOTAL INDEPENDENT-CHECK CLAIM-SURVIVES teeth=8/8 exit=0 wall=718.0s rss=5.60GiB digest=05286b8bd9de8b0f Not basis-neutral: the ZZ bond and the declared Z pointer privilege the Z basis, by construction. No formation rule. Sets no audit status.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T125234Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run 'TOTAL INDEPENDENT-CHECK CLAIM-SURVIVES teeth=8/8 exit=0 wall=718.0s rss=5.60GiB ' vs cache 'TOTAL INDEPENDENT-CHECK CLAIM-SURVIVES teeth=8/8 exit=0 wall=758.0s rss=5.22GiB '",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle914_d3_bar_independent_check_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

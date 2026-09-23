@@ -1,0 +1,18 @@
+==============================================================================
+CYCLE 909 -- INDEPENDENT CHECKER (REVISED), SPECIFIED TO REFUTE
+==============================================================================
+
+Scope: the revised primary's stipulated-table claims only.  The
+unlanded census closure is removed; no universal negative exists to
+check and none is certified.
+
+  FAIL  R0_PINNED_EVIDENCE                   scripts/frontier_cycle909_within_world_pricing_2026_07_28.py:MATCH; logs/runner-cache/frontier_cycle909_within_world_pricing_2026_07_28.txt:MISMATCH
+  FAIL  R0b_CLAIMS_PARSED                    claims_line_found=False
+  FAIL  R1_FACTORIZATION                     19003=31*613 primality independently confirmed; primary_factors={}
+  FAIL  R2_TABLE_BY_MULTIPLICATION           sites*per_site==column for both degrees: False
+  FAIL  R3_TWO_SQUARES_INDEPENDENT           counts=[3, 2, 1, 1] product=6 primary=None/None
+  FAIL  R4_DENOMINATOR_LEMMA_INDEPENDENT     trials=3000 violations=0 primary_violations=None
+  PASS  R5_RUNTIME                           elapsed_s=0.0 budget_s=300
+
+TOTAL: PASS=1 FAIL=6
+VERDICT: PRIMARY_REFUTED_ON_THIS_CHECK

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle930_third_pair_rc3_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle930_third_pair_rc3_2026_07_28.py",
+ "seed": 68499,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5be1105f",
+ "started_utc": "20260923T130139Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d17ded3daef14cc3c8b8fe8bccae6fb6b44f07487ef00624f31fc5086e0b07eb",
+ "stdout_tail": "guishing_bits\":{\"tick_14\":1,\"tick_16\":0},\"length\":18,\"period\":2,\"whole_stretch_tail_exact\":false},\"equal_width_insufficient\":{\"decision\":{\"accepted\":false,\"last_clean\":17,\"reason\":\"last_clean_tail_not_period_exact\"},\"dirty_runs\":[[2,2],[6,6],[16,16]],\"length\":18,\"period\":4,\"selected_pair_widths\":[1,1]},\"equal_width_unnecessary\":{\"decision\":{\"accepted\":true,\"events\":24,\"last_clean\":39,\"reason\":\"accepted\",\"residue_count\":4,\"transient\":11},\"dirty_runs\":[[2,2],[7,8],[15,15],[20,20],[25,25],[30,30],[35,35]],\"length\":40,\"period\":5,\"scope\":\"synthetic detector-domain witness; no bank, controller, or physical realization is claimed\",\"selected_pair_widths\":[1,2]},\"general_shift_pairs\":[[\"f(b-1)\",\"r(b)\"],[\"hf(b)\",\"r(b-1)\"],[\"f(b)\",\"hr(b-1)\"]],\"periodic_translation_checks\":2568,\"science_digest\":\"fd779402ecccd5f909ab5468a5d3a96408084e8da493c91ab8944df3f5b3a932\",\"station_cells_checked\":253,\"station_disagreements\":0,\"widening\":{\"corrected_t1_plus_4_separated_run\":{\"consecutive_pairs\":[],\"starts\":[18,22,26],\"target_consecutive\":false,\"target_widened\":true,\"wide_only\":true,\"widened_pairs\":[[18,26]]},\"fixture\":{\"B\":5,\"N\":35,\"P\":8,\"b\":3,\"target_pair_run_starts\":[18,26],\"target_pair_stations_for_token_at_zero\":[17,25]},\"historical_t1_plus_3_extension\":{\"consecutive_pairs\":[[18,26]],\"starts\":[18,26],\"target_consecutive\":true,\"target_widened\":true,\"widened_pairs\":[[18,26]]},\"strict_substitution_rejected\":true}}\nRECEIPT: outputs/third_pair_rc3_cycle930_receipt_2026_07_28.json\nTOTAL: PASS=11 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T130140Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle930_third_pair_rc3_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

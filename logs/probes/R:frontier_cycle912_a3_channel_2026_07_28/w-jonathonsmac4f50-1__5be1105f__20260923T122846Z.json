@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle912_a3_channel_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle912_a3_channel_2026_07_28.py",
+ "seed": 66526,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5be1105f",
+ "started_utc": "20260923T122846Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d2d43514f644d058427f84786eefd763730f2b24763b1845ce1ece4e66580d00",
+ "stdout_tail": "-\n  T1 invisibility (conditional): 48352 content-preserving pairs, 0 violations\n  T2 underdetermination: affine simplex dim = 4 (n_cells - 1); two distinct admissible probabilities disagree: ['1/5', '1/3']\n  T3 existence premise leaves dim 4; planted uniform-counting collapses to 0\n  T4 recorded-scale arithmetic (stipulated counts): 52018 - 1 = 52017\n\nCLAIMS_JSON: {\"content_preserving_pairs\":48352,\"dim_under_existence\":4,\"dim_under_uniform_counting\":0,\"model_affine_dim\":4,\"model_cells\":5,\"model_events\":12,\"recorded_affine_dim\":52017,\"science_digest\":\"0b6f60754531a3ecaff0fb6ab1b7e249e4f29298daef61f17ac732494991260e\",\"t1_violations\":0}\n\n-- CERTIFICATES --------------------------------------------------------\n  PASS  T1_INVISIBILITY_CONDITIONAL          content_preserving_pairs=48352 violations=0 (exhaustive over the declared model)\n  PASS  T2_UNDERDETERMINATION                n_cells=5 affine_dim=4 vertex_rank=4 two_probabilities_distinct=True disagreement_on_c0=1/5!=1/3\n  PASS  T3_EXISTENCE_DOES_NOT_SELECT         dim_under_existence_premise=4 dim_under_planted_uniform_counting=0 (the collapsing sentence is uniqueness-grade, not existence)\n  PASS  T4_RECORDED_SCALE_ARITHMETIC         recorded_events=92260 recorded_cells=52018 recorded_dim=52017 (counts STIPULATED; only the arithmetic is certified)\n  PASS  T5_DETERMINISM                       double_run_digest_equal=True\n  PASS  T6_RUNTIME                           elapsed_s=0.1 budget_s=300\n\nTOTAL: PASS=6 FAIL=0\nVERDICT: PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T122847Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=6 FAIL=0' vs cache 'PASS=44 FAIL=0'"
+  ]
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "task": "R:frontier_cycle912_a3_channel_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle912_a3_channel_independent_check_2026_07_28.py",
+ "seed": 66527,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5be1105f",
+ "started_utc": "20260923T122847Z",
+ "elapsed_s": 89.3,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9355c53f5e169b0516d254f2706f69ab37a155d8aa67fd86dffdbb10dc02661a",
+ "stdout_tail": "==============================================================================\nCYCLE 912 -- INDEPENDENT CHECKER (REVISED), SPECIFIED TO REFUTE\n==============================================================================\n\n  FAIL  R0_PINNED_EVIDENCE                   scripts/frontier_cycle912_a3_channel_2026_07_28.py:MATCH; logs/runner-cache/frontier_cycle912_a3_channel_2026_07_28.txt:MISMATCH\n  PASS  R0c_MODEL_STIPULATION_PRESENT        primary_source_contains_declared_model=True\n  FAIL  R0b_CLAIMS_PARSED                    claims_line_found=False\n  FAIL  R1_INVISIBILITY_RANDOMIZED           preserving_pairs=48352 random_readouts=400 separations=0 planted_tooth_fired=True\n  FAIL  R2_SIMPLEX_DIMENSION_INDEPENDENT     vertex_rank=4 n_cells=5 primary_dim=None\n  FAIL  R3_EXISTENCE_DOES_NOT_SELECT         both_witnesses_are_state_functional_probabilities=True witnesses_differ=True -> the existence premise selects nothing; uniform counting pins one point\n  FAIL  R4_RECORDED_SCALE                    52018-1=52017 primary=None (counts stipulated, arithmetic only)\n  PASS  R5_RUNTIME                           elapsed_s=89.2 budget_s=300\n\nTOTAL: PASS=2 FAIL=6\nVERDICT: PRIMARY_REFUTED_ON_THIS_CHECK\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T123016Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: last line differs from the pinned cache: run 'VERDICT: PRIMARY_REFUTED_ON_THIS_CHECK' vs cache 'elapsed 78.9s'",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

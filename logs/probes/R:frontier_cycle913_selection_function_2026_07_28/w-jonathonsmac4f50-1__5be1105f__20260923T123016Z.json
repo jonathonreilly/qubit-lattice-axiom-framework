@@ -1,0 +1,32 @@
+{
+ "task": "R:frontier_cycle913_selection_function_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle913_selection_function_2026_07_28.py",
+ "seed": 66616,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5be1105f",
+ "started_utc": "20260923T123016Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ac21dc25c0b4638ed2249216a4e8c36f344392966ed80a8e7e038b0f224259f2",
+ "stdout_tail": "========\n\nSCOPE: self-contained.  The unlanded substrate closure is removed.\nNo terminality claim, no derivability denial, and no prohibition\nclaim is made; the realized-state primitive supplies no measure but\ndoes not forbid a separately derived or explicitly imported one.\n\n-- stipulated recorded table --------------------------------------------\n  lock_points: 164\n  realized_left_right: [84, 80]\n  menu_size: 2\n  site_possibility_pairs: 328\n  record_free_lock_points: 67\n  record_free_split: [51, 16]\n  largest_neighbour_collision_class: 30\n  collision_class_split: [15, 15]\n  compiled_gates: 34166\n  gates_targeting_endpoint_wires: 0\n\nCLAIMS_JSON: {\"lock_points\":164,\"realized_split\":[84,80],\"recorded_ratio\":[0,34166],\"science_digest\":\"8590445e2a26b3dc5e075540bcfc707257eb3555d29a6bc529963f5f41ead7be\",\"site_possibility_pairs\":328,\"soundness_errors\":0,\"witness_not_function\":true}\n\n-- CERTIFICATES --------------------------------------------------------\n  PASS  L1_CONSISTENCY_ARITHMETIC        84+80=164 164*2=328 51+16=67 15+15=30\n  PASS  L2_NONFUNCTIONALITY_LEMMA        witness_rows_not_a_function=True planted_functional_detected=True soundness_trials=600 errors=0\n  PASS  L3_RECORDED_VALUE_ECHO           recorded reads-never-writes ratio 0/34166 (STIPULATED history; certifies nothing about a landed substrate)\n  PASS  L4_DETERMINISM                   double_run_digest_equal=True\n  PASS  L5_RUNTIME                       elapsed_s=0.0 budget_s=300\n\nTOTAL: PASS=5 FAIL=0\nVERDICT: PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T123016Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run 'VERDICT: PASS' vs cache 'receipt: outputs/selection_function_cycle913_receipt_2026_07_28.json'",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle934_pointer_gates_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle934_pointer_gates_independent_check_2026_07_28.py",
+ "seed": 68500,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5be1105f",
+ "started_utc": "20260923T130140Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "72f480754e2680047625253d13a342d728a9bbfde1a6825d9cfc119c3705d26f",
+ "stdout_tail": "{\"d\": 3, \"field\": 0.1, \"full\": {\"C_ab\": 0.012620718014015715, \"H_Z\": 1.0000000000000004, \"chi1\": 0.9653800899868982, \"global_flip_commutator_max\": 0.0, \"s1\": 0.012620718014015639}, \"max_difference\": 5.4990734188464785e-15, \"t\": 0.7}, {\"d\": 3, \"field\": 0.0, \"full\": {\"C_ab\": 4.805139755722377e-16, \"H_Z\": 1.0, \"chi1\": 0.9790596014837317, \"global_flip_commutator_max\": 0.0, \"s1\": 3.2034265038149176e-16}, \"max_difference\": 1.4460930755288164e-14, \"t\": 0.7}, {\"d\": 2, \"field\": 2.0, \"full\": {\"C_ab\": 0.31690064048687777, \"H_Z\": 0.9999999999999998, \"chi1\": 0.03661311464783823, \"global_flip_commutator_max\": 0.0, \"s1\": 0.1584503202434389}, \"max_difference\": 6.661338147750939e-16, \"t\": 0.7}], \"missing_control_results\": {\"commutator_ordering_ok\": {\"first_time\": 0.2, \"run\": 4, \"verdict\": \"NO\"}, \"drift_ok\": {\"first_time\": 0.2, \"run\": 4, \"verdict\": \"NO\"}, \"x_control_ok\": {\"first_time\": 0.2, \"run\": 4, \"verdict\": \"NO\"}}, \"periods\": [{\"chi_t\": 0.9790596014837246, \"chi_t_plus_pi_over_2\": 0.9790596014837321, \"difference\": 7.438494264988549e-15, \"field\": 0.0}, {\"chi_t\": 0.9653800899868984, \"chi_t_plus_pi_over_2\": 0.9600693843305574, \"difference\": 0.005310705656340953, \"field\": 0.1}]}\n[PASS] actual_full_bit_partial_trace_agreement\n[PASS] period_exact_only_zero_field_in_control\n[PASS] actual_C5_two_blocks_detected_and_counter_fault_rejected\n[PASS] union_grid_counter_keeps_four_consecutive_samples\n[PASS] full_protocol_control_clauses_are_required\n[PASS] actual_wrong_input_rejected\nTOTAL: PASS=6 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T130141Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

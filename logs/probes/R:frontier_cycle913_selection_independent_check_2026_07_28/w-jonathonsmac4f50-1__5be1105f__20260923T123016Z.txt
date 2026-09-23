@@ -1,0 +1,14 @@
+==============================================================================
+CYCLE 913 -- INDEPENDENT CHECKER (REVISED), SPECIFIED TO REFUTE
+==============================================================================
+
+  FAIL  R0_PINNED_EVIDENCE                 scripts/frontier_cycle913_selection_function_2026_07_28.py:MATCH; logs/runner-cache/frontier_cycle913_selection_function_2026_07_28.txt:MISMATCH
+  FAIL  R0b_CLAIMS_PARSED                  claims_line_found=False
+  FAIL  R1_CONSISTENCY_INDEPENDENT         164-84=80, 164*2=328, 67-51=16, 30//2=15; primary_split=None
+  FAIL  R2_NONFUNCTIONALITY_INDEPENDENT    witness_refutes_functionality=True planted_functional_ok=True
+  FAIL  R3_RECORDED_RATIO_ECHO             primary_recorded_ratio=None (stipulated history only)
+  PASS  R4_OVERCLAIM_SCAN                  hits=none
+  PASS  R5_RUNTIME                         elapsed_s=0.0 budget_s=300
+
+TOTAL: PASS=2 FAIL=5
+VERDICT: PRIMARY_REFUTED_ON_THIS_CHECK

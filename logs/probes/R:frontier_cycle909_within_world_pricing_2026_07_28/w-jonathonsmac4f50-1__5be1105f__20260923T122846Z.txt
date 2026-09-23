@@ -1,0 +1,40 @@
+==============================================================================
+CYCLE 909 -- WITHIN-WORLD CONSTRAINT ARITHMETIC AT A STIPULATED TABLE
+==============================================================================
+
+SCOPE: input closure EMPTY.  Every quantity is an in-file stipulated
+definition; the unlanded census lineage is provenance context only.
+No universal negative, no exhaustiveness claim, no no-go is stated.
+
+-- stipulated table -----------------------------------------------------
+  atom_labels: ['everything_else', 'position_1', 'position_2', 'position_3']
+  degree0_column: [15600, 2910, 492, 1]
+  degree2_column: [1728, 264, 108, 0]
+  atom_sites: [12, 6, 6, 1]
+  recorded_layer_pairs: [[36, 2], [22, 1], [9, 1], [1, 0]]
+
+-- results --------------------------------------------------------------
+  degree-0 scale factorization: 19003 = 31 * 613
+  degree-2 reduced denominator: 175 = {5: 2, 7: 1}
+  denominator lemma: reduced denominator of sum(a_w/S_w) divides lcm(S_w); necessary filter on FIXED world sums only
+    randomized instances: 4000, violations: 0
+  per-site two-square identities and representation ambiguity:
+    c0= 1300 c2= 144 pair=[36, 2] identity=True reps=[[30, 20], [34, 12], [36, 2]]
+    c0=  485 c2=  44 pair=[22, 1] identity=True reps=[[17, 14], [22, 1]]
+    c0=   82 c2=  18 pair=[9, 1] identity=True reps=[[9, 1]]
+    c0=    1 c2=   0 pair=[1, 0] identity=True reps=[[1, 0]]
+  admissible degree-2 columns within the representation: 6
+
+CLAIMS_JSON: {"admissible_degree2_columns":6,"degree2_reduced_denominator":175,"lemma_violations":0,"per_site_degree0":[1300,485,82,1],"per_site_degree2":[144,44,18,0],"representation_counts":[3,2,1,1],"scale0_factors":{"31":1,"613":1},"science_digest":"4d0238a23e548c4bd463073114497fc6ca90eab6637fe9487ece91492948315e"}
+
+-- CERTIFICATES --------------------------------------------------------
+  PASS  A_FACTORIZATION                          scale0=19003={31: 1, 613: 1} reduced_degree2_denominator=175={5: 2, 7: 1}
+  PASS  B_TABLE_CONSISTENCY                      per_site_degree0=['1300', '485', '82', '1'] per_site_degree2=['144', '44', '18', '0']
+  PASS  C_DENOMINATOR_LEMMA                      randomized_instances=4000 violations=0 planted_pass_lcm_divisible=True planted_fail_lcm_divisible=False
+  PASS  D_TWO_SQUARES_IDENTITIES                 identities_hold=True representation_counts=[3, 2, 1, 1] admissible_degree2_columns=6
+  PASS  E_REPRESENTATION_SCOPED_NONUNIQUENESS    atoms_with_multiple_representations=2 each_with_distinct_2pq=True
+  PASS  F_DETERMINISM                            double_run_digest_equal=True
+  PASS  G_RUNTIME                                elapsed_s=0.0 budget_s=300
+
+TOTAL: PASS=7 FAIL=0
+VERDICT: PASS

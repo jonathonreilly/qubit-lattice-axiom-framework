@@ -1,0 +1,21 @@
+==============================================================================
+CYCLE 924 -- OCCURRENCE-RATE-ROUTE ARITHMETIC AND THE CYCLIC-PATCH ALPHA LINE
+==============================================================================
+
+SCOPE: self-contained.  The occurrence-to-threefold-readout route is
+OPEN -- no route-closure, terminality, or sole-remaining-route claim
+is made.  The imported values 2/3, 2/9 and the alpha menu come from
+UNAUDITED sources and every menu-line statement is conditional on them.
+
+CLAIMS_JSON: {"forced_alpha":"2/27","group_equality":true,"miss":"19/123","patch_dims":[["Z/2",1],["Z/3",1],["Z/4",1],["Z/5",1],["Z/6",1]],"period_ratio":"2/3","science_digest":"5fad62b13cede8af12035bfe821e83193f7c6c9c7ba433b09769a94056645de8","share":"21/41","survivors":["alpha_2_27"]}
+
+-- CERTIFICATES --------------------------------------------------------
+  PASS  EXACT_RATIOS                       84/164=21/41 2/3-21/41=19/123 16/24=2/3
+  PASS  CYCLIC_PATCH_NULLITY               patches=[('Z/2', 1), ('Z/3', 1), ('Z/4', 1), ('Z/5', 1), ('Z/6', 1)] all_dim_1_spanned_by_count=True
+  PASS  GROUP_EQUALITY                     C3_rotations=[(0, 1, 2), (1, 2, 0), (2, 0, 1)] Z3_translations=[(0, 1, 2), (1, 2, 0), (2, 0, 1)] equal_as_permutation_sets=True
+  PASS  MENU_LINE_AND_NORMALIZATION        all_menu_members_on_the_line=True nonzero_members_one_projective_point=True imported_normalization_forces_alpha=2/27 menu_survivors=['alpha_2_27'] ablation_keeps=5
+  PASS  DETERMINISM                        double_run_digest_equal=True
+  PASS  RUNTIME                            elapsed_s=0.0 budget_s=300
+
+TOTAL: PASS=6 FAIL=0
+VERDICT: PASS

@@ -1,0 +1,1017 @@
+{
+  "created_utc": "2026-09-22T23:10:13.867382+00:00",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/finite_rate_record_formation_check.py",
+    "bytes": 7168,
+    "sha256": "3bff4109465888f1aa774d6b95b4c1d605933ede2b9e52673b59c57809237f83"
+  },
+  "complete_physical_basis": [
+    {
+      "q": [
+        -1,
+        1,
+        1
+      ],
+      "E": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "q": [
+        0,
+        0,
+        1
+      ],
+      "E": [
+        0,
+        -1
+      ]
+    },
+    {
+      "q": [
+        0,
+        1,
+        0
+      ],
+      "E": [
+        -1,
+        0
+      ]
+    },
+    {
+      "q": [
+        1,
+        -1,
+        1
+      ],
+      "E": [
+        1,
+        -1
+      ]
+    },
+    {
+      "q": [
+        1,
+        0,
+        0
+      ],
+      "E": [
+        0,
+        0
+      ]
+    },
+    {
+      "q": [
+        1,
+        1,
+        -1
+      ],
+      "E": [
+        -1,
+        1
+      ]
+    }
+  ],
+  "exact_integer_operator_identities": "Gauss shifts, permanent-charge hops, number-raising jumps, common loss 2 HOLE, absorbing output and H-Hprime=Delta(N-1) checked.",
+  "symbolic_clock": {
+    "survival_integral_matrix": "Matrix([[(Delta**2 + beta**2 + 2*r**2)/(2*beta*r**2), (Delta + I*beta)/(2*beta*r)], [(Delta - I*beta)/(2*beta*r), 1/beta]])",
+    "central_start_mean": "(Delta**2 + beta**2 + 2*r**2)/(2*beta*r**2)",
+    "record_parameters": "Delta^2/(4 beta t^2)+beta/(4 t^2)+1/beta"
+  },
+  "output_instruments": {
+    "coherent_per_edge": {
+      "final_density_negative_site_basis": [
+        [
+          0.4999999999999999,
+          0.24999999999999994,
+          0.24999999999999994
+        ],
+        [
+          0.24999999999999994,
+          0.24999999999999994,
+          0.0
+        ],
+        [
+          0.24999999999999994,
+          0.0,
+          0.24999999999999994
+        ]
+      ],
+      "purity": 0.6249999999999998,
+      "eigenvalues": [
+        -3.700743415417189e-17,
+        0.24999999999999994,
+        0.7499999999999998
+      ]
+    },
+    "resolved_charge": {
+      "final_density_negative_site_basis": [
+        [
+          0.4999999999999999,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.24999999999999994,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.24999999999999994
+        ]
+      ],
+      "purity": 0.3749999999999999,
+      "eigenvalues": [
+        0.24999999999999994,
+        0.24999999999999994,
+        0.4999999999999999
+      ]
+    }
+  },
+  "scaling_controls": [
+    {
+      "epsilon": 0.1,
+      "delta": 1.3,
+      "kappa": 0.7,
+      "Delta": 12999.999999999998,
+      "hop": 1300.0,
+      "beta": 69.99999999999999,
+      "instrument": "coherent_per_edge",
+      "clock": {
+        "slow_decay_rate": 2.642401621834032,
+        "fast_decay_rate": 137.35759837816593,
+        "event_prefactor": 2.592533303348518,
+        "all_time_event_density_L1_bound": 0.23110325850448882,
+        "bound_over_epsilon_squared": 23.110325850448877,
+        "mean_first_event": 0.37143892645815724
+      },
+      "rows": [
+        {
+          "time": 0.0,
+          "full_Liouville_vs_exact_bright_error": 2.830524433501838e-16,
+          "no_event_probability": 0.9999999999999998,
+          "limiting_no_event_probability": 1.0,
+          "count_probability_error": 2.220446049250313e-16,
+          "full_trace_norm_error": 0.0,
+          "closed_form_trace_norm_error": 4.440892098500626e-16,
+          "trace_norm_error_over_epsilon": 0.0,
+          "original_energy_over_Delta": 0.0,
+          "limiting_energy_over_Delta": 0.0,
+          "energy_deviation_bound": 4.440892098500626e-16
+        },
+        {
+          "time": 0.001,
+          "full_Liouville_vs_exact_bright_error": 4.1110330215867543e-16,
+          "no_event_probability": 0.9952791642790043,
+          "limiting_no_event_probability": 0.9972039163438929,
+          "count_probability_error": 0.001924752064888624,
+          "full_trace_norm_error": 0.2411369580788606,
+          "closed_form_trace_norm_error": 0.2411369580788601,
+          "trace_norm_error_over_epsilon": 2.4113695807886057,
+          "original_energy_over_Delta": 0.007167453010012593,
+          "limiting_energy_over_Delta": 0.005592167312214125,
+          "energy_deviation_bound": 0.051745831838910135
+        },
+        {
+          "time": 0.02,
+          "full_Liouville_vs_exact_bright_error": 4.5629548210457105e-15,
+          "no_event_probability": 0.93183496432252,
+          "limiting_no_event_probability": 0.9455391358903963,
+          "count_probability_error": 0.013704171567876289,
+          "full_trace_norm_error": 0.2049564552750681,
+          "closed_form_trace_norm_error": 0.2049564552750662,
+          "trace_norm_error_over_epsilon": 2.049564552750681,
+          "original_energy_over_Delta": 0.11931099656379013,
+          "limiting_energy_over_Delta": 0.10892172821920743,
+          "energy_deviation_bound": 0.06367253836638377
+        },
+        {
+          "time": 0.2,
+          "full_Liouville_vs_exact_bright_error": 4.120033580948287e-14,
+          "no_event_probability": 0.5783748876317519,
+          "limiting_no_event_probability": 0.5712090638488149,
+          "count_probability_error": 0.007165823782937064,
+          "full_trace_norm_error": 0.16525918765248984,
+          "closed_form_trace_norm_error": 0.1652591876524798,
+          "trace_norm_error_over_epsilon": 1.6525918765248984,
+          "original_energy_over_Delta": 0.8319055600447244,
+          "limiting_energy_over_Delta": 0.8575818723023703,
+          "energy_deviation_bound": 0.04750939024910921
+        },
+        {
+          "time": 0.5,
+          "full_Liouville_vs_exact_bright_error": 5.1420493942860586e-14,
+          "no_event_probability": 0.26177929578900494,
+          "limiting_no_event_probability": 0.2465969639416065,
+          "count_probability_error": 0.01518233184739845,
+          "full_trace_norm_error": 0.0866256465017742,
+          "closed_form_trace_norm_error": 0.0866256465017476,
+          "trace_norm_error_over_epsilon": 0.866256465017742,
+          "original_energy_over_Delta": 1.4713066793608194,
+          "limiting_energy_over_Delta": 1.506806072116787,
+          "energy_deviation_bound": 0.04538132851309329
+        },
+        {
+          "time": 1.0,
+          "full_Liouville_vs_exact_bright_error": 6.711768643382735e-14,
+          "no_event_probability": 0.0698465683295547,
+          "limiting_no_event_probability": 0.06081006262521797,
+          "count_probability_error": 0.009036505704336728,
+          "full_trace_norm_error": 0.029094502824578126,
+          "closed_form_trace_norm_error": 0.029094502824510062,
+          "trace_norm_error_over_epsilon": 0.2909450282457812,
+          "original_energy_over_Delta": 1.8589368420671308,
+          "limiting_energy_over_Delta": 1.8783798747495641,
+          "energy_deviation_bound": 0.022079678559915807
+        },
+        {
+          "time": 2.0,
+          "full_Liouville_vs_exact_bright_error": 8.35012955327015e-14,
+          "no_event_probability": 0.004972383653691519,
+          "limiting_no_event_probability": 0.003697863716482932,
+          "count_probability_error": 0.0012745199372085868,
+          "full_trace_norm_error": 0.0030101992764683906,
+          "closed_form_trace_norm_error": 0.0030101992763655917,
+          "trace_norm_error_over_epsilon": 0.030101992764683904,
+          "original_energy_over_Delta": 1.98995770075134,
+          "limiting_energy_over_Delta": 1.992604272567034,
+          "energy_deviation_bound": 0.002834274879158132
+        }
+      ]
+    },
+    {
+      "epsilon": 0.075,
+      "delta": 1.3,
+      "kappa": 0.7,
+      "Delta": 41086.419753086426,
+      "hop": 3081.4814814814818,
+      "beta": 124.44444444444444,
+      "instrument": "coherent_per_edge",
+      "clock": {
+        "slow_decay_rate": 2.7088866321689213,
+        "fast_decay_rate": 246.18000225671997,
+        "event_prefactor": 2.679404341015342,
+        "all_time_event_density_L1_bound": 0.1320992995536637,
+        "bound_over_epsilon_squared": 23.484319920651327,
+        "mean_first_event": 0.36518184782465135
+      },
+      "rows": [
+        {
+          "time": 0.0,
+          "full_Liouville_vs_exact_bright_error": 0.0,
+          "no_event_probability": 1.0,
+          "limiting_no_event_probability": 1.0,
+          "count_probability_error": 0.0,
+          "full_trace_norm_error": 0.0,
+          "closed_form_trace_norm_error": 0.0,
+          "trace_norm_error_over_epsilon": 0.0,
+          "original_energy_over_Delta": 0.0,
+          "limiting_energy_over_Delta": 0.0,
+          "energy_deviation_bound": 0.0
+        },
+        {
+          "time": 0.001,
+          "full_Liouville_vs_exact_bright_error": 1.2063406998749593e-15,
+          "no_event_probability": 0.9948463748267397,
+          "limiting_no_event_probability": 0.9972039163438929,
+          "count_probability_error": 0.002357541517153283,
+          "full_trace_norm_error": 0.3289864244359564,
+          "closed_form_trace_norm_error": 0.3289864244359556,
+          "trace_norm_error_over_epsilon": 4.386485659146086,
+          "original_energy_over_Delta": 0.007883879773924452,
+          "limiting_energy_over_Delta": 0.005592167312214125,
+          "energy_deviation_bound": 0.06559414294286603
+        },
+        {
+          "time": 0.02,
+          "full_Liouville_vs_exact_bright_error": 1.9797951525165352e-14,
+          "no_event_probability": 0.9370234103055066,
+          "limiting_no_event_probability": 0.9455391358903963,
+          "count_probability_error": 0.008515725584889666,
+          "full_trace_norm_error": 0.21182348938978213,
+          "closed_form_trace_norm_error": 0.21182348938978537,
+          "trace_norm_error_over_epsilon": 2.824313191863762,
+          "original_energy_over_Delta": 0.11560361087372095,
+          "limiting_energy_over_Delta": 0.10892172821920743,
+          "energy_deviation_bound": 0.049263634756635165
+        },
+        {
+          "time": 0.2,
+          "full_Liouville_vs_exact_bright_error": 8.846575569740545e-14,
+          "no_event_probability": 0.5753823336487225,
+          "limiting_no_event_probability": 0.5712090638488149,
+          "count_probability_error": 0.00417326979990762,
+          "full_trace_norm_error": 0.12386457703104631,
+          "closed_form_trace_norm_error": 0.12386457703106576,
+          "trace_norm_error_over_epsilon": 1.6515276937472843,
+          "original_energy_over_Delta": 0.8428335650514145,
+          "limiting_energy_over_Delta": 0.8575818723023703,
+          "energy_deviation_bound": 0.02727319284606936
+        },
+        {
+          "time": 0.5,
+          "full_Liouville_vs_exact_bright_error": 1.1661301250304956e-13,
+          "no_event_probability": 0.2552819851402269,
+          "limiting_no_event_probability": 0.2465969639416065,
+          "count_probability_error": 0.008685021198620385,
+          "full_trace_norm_error": 0.061751745756925866,
+          "closed_form_trace_norm_error": 0.06175174575696536,
+          "trace_norm_error_over_epsilon": 0.823356610092345,
+          "original_energy_over_Delta": 1.486595734043511,
+          "limiting_energy_over_Delta": 1.506806072116787,
+          "energy_deviation_bound": 0.02576729989083877
+        },
+        {
+          "time": 1.0,
+          "full_Liouville_vs_exact_bright_error": 1.374617465648299e-13,
+          "no_event_probability": 0.06588596483906166,
+          "limiting_no_event_probability": 0.06081006262521797,
+          "count_probability_error": 0.005075902213843686,
+          "full_trace_norm_error": 0.01922481623580931,
+          "closed_form_trace_norm_error": 0.01922481623594443,
+          "trace_norm_error_over_epsilon": 0.2563308831441241,
+          "original_energy_over_Delta": 1.86749501577097,
+          "limiting_energy_over_Delta": 1.8783798747495641,
+          "energy_deviation_bound": 0.012319060419777206
+        },
+        {
+          "time": 2.0,
+          "full_Liouville_vs_exact_bright_error": 1.7437799512127362e-13,
+          "no_event_probability": 0.004388725254150248,
+          "limiting_no_event_probability": 0.003697863716482932,
+          "count_probability_error": 0.0006908615376673161,
+          "full_trace_norm_error": 0.0017788992997639715,
+          "closed_form_trace_norm_error": 0.0017788992999774784,
+          "trace_norm_error_over_epsilon": 0.02371865733018629,
+          "original_energy_over_Delta": 1.9911737200482706,
+          "limiting_energy_over_Delta": 1.992604272567034,
+          "energy_deviation_bound": 0.001526086007985412
+        }
+      ]
+    },
+    {
+      "epsilon": 0.05,
+      "delta": 1.3,
+      "kappa": 0.7,
+      "Delta": 207999.99999999997,
+      "hop": 10400.0,
+      "beta": 279.99999999999994,
+      "instrument": "coherent_per_edge",
+      "clock": {
+        "slow_decay_rate": 2.7586831376530125,
+        "fast_decay_rate": 557.2413168623468,
+        "event_prefactor": 2.7450933535394832,
+        "all_time_event_density_L1_bound": 0.0594142620733866,
+        "bound_over_epsilon_squared": 23.765704829354636,
+        "mean_first_event": 0.3607149329036348
+      },
+      "rows": [
+        {
+          "time": 0.0,
+          "full_Liouville_vs_exact_bright_error": 5.661048867003676e-16,
+          "no_event_probability": 1.0000000000000004,
+          "limiting_no_event_probability": 1.0,
+          "count_probability_error": 4.440892098500626e-16,
+          "full_trace_norm_error": 0.0,
+          "closed_form_trace_norm_error": 8.881784197001252e-16,
+          "trace_norm_error_over_epsilon": 0.0,
+          "original_energy_over_Delta": 0.0,
+          "limiting_energy_over_Delta": 0.0,
+          "energy_deviation_bound": 8.881784197001252e-16
+        },
+        {
+          "time": 0.001,
+          "full_Liouville_vs_exact_bright_error": 2.6849089172942827e-15,
+          "no_event_probability": 0.995162203636925,
+          "limiting_no_event_probability": 0.9972039163438929,
+          "count_probability_error": 0.0020417127069679575,
+          "full_trace_norm_error": 0.24230376567791884,
+          "closed_form_trace_norm_error": 0.24230376567791914,
+          "trace_norm_error_over_epsilon": 4.8460753135583765,
+          "original_energy_over_Delta": 0.007578215797345457,
+          "limiting_energy_over_Delta": 0.005592167312214125,
+          "energy_deviation_bound": 0.035401545474340004
+        },
+        {
+          "time": 0.02,
+          "full_Liouville_vs_exact_bright_error": 6.964976690023847e-15,
+          "no_event_probability": 0.9416590272986264,
+          "limiting_no_event_probability": 0.9455391358903963,
+          "count_probability_error": 0.003880108591769904,
+          "full_trace_norm_error": 0.1366360280711736,
+          "closed_form_trace_norm_error": 0.13663602807117176,
+          "trace_norm_error_over_epsilon": 2.7327205614234718,
+          "original_energy_over_Delta": 0.11199699625592471,
+          "limiting_energy_over_Delta": 0.10892172821920743,
+          "energy_deviation_bound": 0.02175684810897871
+        },
+        {
+          "time": 0.2,
+          "full_Liouville_vs_exact_bright_error": 1.5926504858520322e-13,
+          "no_event_probability": 0.5731115028181785,
+          "limiting_no_event_probability": 0.5712090638488149,
+          "count_probability_error": 0.0019024389693635957,
+          "full_trace_norm_error": 0.08224132389631075,
+          "closed_form_trace_norm_error": 0.08224132389630591,
+          "trace_norm_error_over_epsilon": 1.644826477926215,
+          "original_energy_over_Delta": 0.8509256281663127,
+          "limiting_energy_over_Delta": 0.8575818723023703,
+          "energy_deviation_bound": 0.012302795744063484
+        },
+        {
+          "time": 0.5,
+          "full_Liouville_vs_exact_bright_error": 4.3785874510604533e-13,
+          "no_event_probability": 0.2505041159389254,
+          "limiting_no_event_probability": 0.2465969639416065,
+          "count_probability_error": 0.0039071519973189195,
+          "full_trace_norm_error": 0.03901422089750173,
+          "closed_form_trace_norm_error": 0.0390142208971938,
+          "trace_norm_error_over_epsilon": 0.7802844179500346,
+          "original_energy_over_Delta": 1.4977454504939167,
+          "limiting_energy_over_Delta": 1.506806072116787,
+          "energy_deviation_bound": 0.011528700541696465
+        },
+        {
+          "time": 1.0,
+          "full_Liouville_vs_exact_bright_error": 5.811762959225591e-13,
+          "no_event_probability": 0.06306297198317906,
+          "limiting_no_event_probability": 0.06081006262521797,
+          "count_probability_error": 0.0022529093579610887,
+          "full_trace_norm_error": 0.011232949421445636,
+          "closed_form_trace_norm_error": 0.011232949420793403,
+          "trace_norm_error_over_epsilon": 0.22465898842891271,
+          "original_energy_over_Delta": 1.8735603027298946,
+          "limiting_energy_over_Delta": 1.8783798747495641,
+          "energy_deviation_bound": 0.005440896706571579
+        },
+        {
+          "time": 2.0,
+          "full_Liouville_vs_exact_bright_error": 7.150197021174691e-13,
+          "no_event_probability": 0.003996626558051878,
+          "limiting_no_event_probability": 0.003697863716482932,
+          "count_probability_error": 0.00029876284156894577,
+          "full_trace_norm_error": 0.0009155912326886987,
+          "closed_form_trace_norm_error": 0.0009155912317964282,
+          "trace_norm_error_over_epsilon": 0.018311824653773973,
+          "original_energy_over_Delta": 1.9919868627132749,
+          "limiting_energy_over_Delta": 1.992604272567034,
+          "energy_deviation_bound": 0.0006567864095793286
+        }
+      ]
+    },
+    {
+      "epsilon": 0.025,
+      "delta": 1.3,
+      "kappa": 0.7,
+      "Delta": 3327999.9999999995,
+      "hop": 83200.0,
+      "beta": 1119.9999999999998,
+      "instrument": "coherent_per_edge",
+      "clock": {
+        "slow_decay_rate": 2.7895432462580105,
+        "fast_decay_rate": 2237.2104567537417,
+        "event_prefactor": 2.7860693408902795,
+        "all_time_event_density_L1_bound": 0.014962895054322183,
+        "bound_over_epsilon_squared": 23.94063208691549,
+        "mean_first_event": 0.3580357547350486
+      },
+      "rows": [
+        {
+          "time": 0.0,
+          "full_Liouville_vs_exact_bright_error": 5.661048867003676e-16,
+          "no_event_probability": 1.0000000000000004,
+          "limiting_no_event_probability": 1.0,
+          "count_probability_error": 4.440892098500626e-16,
+          "full_trace_norm_error": 0.0,
+          "closed_form_trace_norm_error": 8.881784197001252e-16,
+          "trace_norm_error_over_epsilon": 0.0,
+          "original_energy_over_Delta": 0.0,
+          "limiting_energy_over_Delta": 0.0,
+          "energy_deviation_bound": 8.881784197001252e-16
+        },
+        {
+          "time": 0.001,
+          "full_Liouville_vs_exact_bright_error": 2.5382815501915e-14,
+          "no_event_probability": 0.9961053944136455,
+          "limiting_no_event_probability": 0.9972039163438929,
+          "count_probability_error": 0.001098521930247398,
+          "full_trace_norm_error": 0.048500274219935864,
+          "closed_form_trace_norm_error": 0.04850027421993911,
+          "trace_norm_error_over_epsilon": 1.9400109687974345,
+          "original_energy_over_Delta": 0.006678893699363677,
+          "limiting_energy_over_Delta": 0.005592167312214125,
+          "energy_deviation_bound": 0.004434106445610107
+        },
+        {
+          "time": 0.02,
+          "full_Liouville_vs_exact_bright_error": 1.706287194202664e-13,
+          "no_event_probability": 0.9445591462526476,
+          "limiting_no_event_probability": 0.9455391358903963,
+          "count_probability_error": 0.0009799896377487016,
+          "full_trace_norm_error": 0.06768734747426802,
+          "closed_form_trace_norm_error": 0.06768734747425427,
+          "trace_norm_error_over_epsilon": 2.707493898970721,
+          "original_energy_over_Delta": 0.10970248089010814,
+          "limiting_energy_over_Delta": 0.10892172821920743,
+          "energy_deviation_bound": 0.0054917851081782935
+        },
+        {
+          "time": 0.2,
+          "full_Liouville_vs_exact_bright_error": 5.5311145884781355e-12,
+          "no_event_probability": 0.5716920786625085,
+          "limiting_no_event_probability": 0.5712090638488149,
+          "count_probability_error": 0.0004830148136936163,
+          "full_trace_norm_error": 0.0408180379057714,
+          "closed_form_trace_norm_error": 0.04081803790427158,
+          "trace_norm_error_over_epsilon": 1.6327215162308557,
+          "original_energy_over_Delta": 0.8559021186961444,
+          "limiting_energy_over_Delta": 0.8575818723023703,
+          "energy_deviation_bound": 0.0031036463410712067
+        },
+        {
+          "time": 0.5,
+          "full_Liouville_vs_exact_bright_error": 3.9675198860686655e-13,
+          "no_event_probability": 0.24758093744704057,
+          "limiting_no_event_probability": 0.2465969639416065,
+          "count_probability_error": 0.0009839735054340826,
+          "full_trace_norm_error": 0.018450848381188933,
+          "closed_form_trace_norm_error": 0.01845084838156583,
+          "trace_norm_error_over_epsilon": 0.7380339352475573,
+          "original_energy_over_Delta": 1.5045290348507971,
+          "limiting_energy_over_Delta": 1.506806072116787,
+          "energy_deviation_bound": 0.0028936781336685678
+        },
+        {
+          "time": 1.0,
+          "full_Liouville_vs_exact_bright_error": 5.514195280553614e-13,
+          "no_event_probability": 0.06137274999039553,
+          "limiting_no_event_probability": 0.06081006262521797,
+          "count_probability_error": 0.0005626873651775541,
+          "full_trace_norm_error": 0.004910943638087161,
+          "closed_form_trace_norm_error": 0.004910943638688981,
+          "trace_norm_error_over_epsilon": 0.19643774552348645,
+          "original_energy_over_Delta": 1.8771778797475067,
+          "limiting_energy_over_Delta": 1.8783798747495641,
+          "energy_deviation_bound": 0.0013548538871262564
+        },
+        {
+          "time": 2.0,
+          "full_Liouville_vs_exact_bright_error": 6.401507505812576e-13,
+          "no_event_probability": 0.003771310972777863,
+          "limiting_no_event_probability": 0.003697863716482932,
+          "count_probability_error": 7.344725629493095e-05,
+          "full_trace_norm_error": 0.0003470584081883443,
+          "closed_form_trace_norm_error": 0.0003470584089166454,
+          "trace_norm_error_over_epsilon": 0.013882336327533771,
+          "original_energy_over_Delta": 1.9924526697957081,
+          "limiting_energy_over_Delta": 1.992604272567034,
+          "energy_deviation_bound": 0.00016099584033043532
+        }
+      ]
+    },
+    {
+      "epsilon": 0.1,
+      "delta": 1.3,
+      "kappa": 0.7,
+      "Delta": 12999.999999999998,
+      "hop": 1300.0,
+      "beta": 69.99999999999999,
+      "instrument": "resolved_charge",
+      "clock": {
+        "slow_decay_rate": 2.642401621834032,
+        "fast_decay_rate": 137.35759837816593,
+        "event_prefactor": 2.592533303348518,
+        "all_time_event_density_L1_bound": 0.23110325850448882,
+        "bound_over_epsilon_squared": 23.110325850448877,
+        "mean_first_event": 0.37143892645815724
+      },
+      "rows": [
+        {
+          "time": 0.0,
+          "full_Liouville_vs_exact_bright_error": 2.603703785810335e-16,
+          "no_event_probability": 0.9999999999999998,
+          "limiting_no_event_probability": 1.0,
+          "count_probability_error": 2.220446049250313e-16,
+          "full_trace_norm_error": 0.0,
+          "closed_form_trace_norm_error": 4.440892098500626e-16,
+          "trace_norm_error_over_epsilon": 0.0,
+          "original_energy_over_Delta": 0.0,
+          "limiting_energy_over_Delta": 0.0,
+          "energy_deviation_bound": 4.440892098500626e-16
+        },
+        {
+          "time": 0.001,
+          "full_Liouville_vs_exact_bright_error": 4.091691485053285e-16,
+          "no_event_probability": 0.9952791642790043,
+          "limiting_no_event_probability": 0.9972039163438929,
+          "count_probability_error": 0.001924752064888624,
+          "full_trace_norm_error": 0.24113695807886057,
+          "closed_form_trace_norm_error": 0.2411369580788601,
+          "trace_norm_error_over_epsilon": 2.4113695807886057,
+          "original_energy_over_Delta": 0.007167453010012593,
+          "limiting_energy_over_Delta": 0.005592167312214125,
+          "energy_deviation_bound": 0.051745831838910135
+        },
+        {
+          "time": 0.02,
+          "full_Liouville_vs_exact_bright_error": 4.526024881508872e-15,
+          "no_event_probability": 0.93183496432252,
+          "limiting_no_event_probability": 0.9455391358903963,
+          "count_probability_error": 0.013704171567876289,
+          "full_trace_norm_error": 0.204956455275068,
+          "closed_form_trace_norm_error": 0.2049564552750662,
+          "trace_norm_error_over_epsilon": 2.04956455275068,
+          "original_energy_over_Delta": 0.11931099656379013,
+          "limiting_energy_over_Delta": 0.10892172821920743,
+          "energy_deviation_bound": 0.06367253836638377
+        },
+        {
+          "time": 0.2,
+          "full_Liouville_vs_exact_bright_error": 4.0184936805436564e-14,
+          "no_event_probability": 0.5783748876317519,
+          "limiting_no_event_probability": 0.5712090638488149,
+          "count_probability_error": 0.007165823782937064,
+          "full_trace_norm_error": 0.16525918765248981,
+          "closed_form_trace_norm_error": 0.1652591876524798,
+          "trace_norm_error_over_epsilon": 1.6525918765248981,
+          "original_energy_over_Delta": 0.8319055600447244,
+          "limiting_energy_over_Delta": 0.8575818723023703,
+          "energy_deviation_bound": 0.04750939024910921
+        },
+        {
+          "time": 0.5,
+          "full_Liouville_vs_exact_bright_error": 4.691266083856954e-14,
+          "no_event_probability": 0.26177929578900494,
+          "limiting_no_event_probability": 0.2465969639416065,
+          "count_probability_error": 0.01518233184739845,
+          "full_trace_norm_error": 0.08662564650177362,
+          "closed_form_trace_norm_error": 0.0866256465017476,
+          "trace_norm_error_over_epsilon": 0.8662564650177362,
+          "original_energy_over_Delta": 1.4713066793608194,
+          "limiting_energy_over_Delta": 1.506806072116787,
+          "energy_deviation_bound": 0.04538132851309329
+        },
+        {
+          "time": 1.0,
+          "full_Liouville_vs_exact_bright_error": 5.3352682607993443e-14,
+          "no_event_probability": 0.0698465683295547,
+          "limiting_no_event_probability": 0.06081006262521797,
+          "count_probability_error": 0.009036505704336728,
+          "full_trace_norm_error": 0.029094502824577442,
+          "closed_form_trace_norm_error": 0.029094502824510062,
+          "trace_norm_error_over_epsilon": 0.2909450282457744,
+          "original_energy_over_Delta": 1.8589368420671308,
+          "limiting_energy_over_Delta": 1.8783798747495641,
+          "energy_deviation_bound": 0.022079678559915807
+        },
+        {
+          "time": 2.0,
+          "full_Liouville_vs_exact_bright_error": 6.431495124360588e-14,
+          "no_event_probability": 0.004972383653691519,
+          "limiting_no_event_probability": 0.003697863716482932,
+          "count_probability_error": 0.0012745199372085868,
+          "full_trace_norm_error": 0.003010199276467634,
+          "closed_form_trace_norm_error": 0.0030101992763655917,
+          "trace_norm_error_over_epsilon": 0.030101992764676337,
+          "original_energy_over_Delta": 1.98995770075134,
+          "limiting_energy_over_Delta": 1.992604272567034,
+          "energy_deviation_bound": 0.002834274879158132
+        }
+      ]
+    },
+    {
+      "epsilon": 0.075,
+      "delta": 1.3,
+      "kappa": 0.7,
+      "Delta": 41086.419753086426,
+      "hop": 3081.4814814814818,
+      "beta": 124.44444444444444,
+      "instrument": "resolved_charge",
+      "clock": {
+        "slow_decay_rate": 2.7088866321689213,
+        "fast_decay_rate": 246.18000225671997,
+        "event_prefactor": 2.679404341015342,
+        "all_time_event_density_L1_bound": 0.1320992995536637,
+        "bound_over_epsilon_squared": 23.484319920651327,
+        "mean_first_event": 0.36518184782465135
+      },
+      "rows": [
+        {
+          "time": 0.0,
+          "full_Liouville_vs_exact_bright_error": 0.0,
+          "no_event_probability": 1.0,
+          "limiting_no_event_probability": 1.0,
+          "count_probability_error": 0.0,
+          "full_trace_norm_error": 0.0,
+          "closed_form_trace_norm_error": 0.0,
+          "trace_norm_error_over_epsilon": 0.0,
+          "original_energy_over_Delta": 0.0,
+          "limiting_energy_over_Delta": 0.0,
+          "energy_deviation_bound": 0.0
+        },
+        {
+          "time": 0.001,
+          "full_Liouville_vs_exact_bright_error": 1.2059411541216825e-15,
+          "no_event_probability": 0.9948463748267397,
+          "limiting_no_event_probability": 0.9972039163438929,
+          "count_probability_error": 0.002357541517153283,
+          "full_trace_norm_error": 0.32898642443595627,
+          "closed_form_trace_norm_error": 0.3289864244359556,
+          "trace_norm_error_over_epsilon": 4.386485659146084,
+          "original_energy_over_Delta": 0.007883879773924452,
+          "limiting_energy_over_Delta": 0.005592167312214125,
+          "energy_deviation_bound": 0.06559414294286603
+        },
+        {
+          "time": 0.02,
+          "full_Liouville_vs_exact_bright_error": 1.97624598947784e-14,
+          "no_event_probability": 0.9370234103055066,
+          "limiting_no_event_probability": 0.9455391358903963,
+          "count_probability_error": 0.008515725584889666,
+          "full_trace_norm_error": 0.21182348938978213,
+          "closed_form_trace_norm_error": 0.21182348938978537,
+          "trace_norm_error_over_epsilon": 2.824313191863762,
+          "original_energy_over_Delta": 0.11560361087372095,
+          "limiting_energy_over_Delta": 0.10892172821920743,
+          "energy_deviation_bound": 0.049263634756635165
+        },
+        {
+          "time": 0.2,
+          "full_Liouville_vs_exact_bright_error": 8.675671364467533e-14,
+          "no_event_probability": 0.5753823336487225,
+          "limiting_no_event_probability": 0.5712090638488149,
+          "count_probability_error": 0.00417326979990762,
+          "full_trace_norm_error": 0.1238645770310462,
+          "closed_form_trace_norm_error": 0.12386457703106576,
+          "trace_norm_error_over_epsilon": 1.6515276937472827,
+          "original_energy_over_Delta": 0.8428335650514145,
+          "limiting_energy_over_Delta": 0.8575818723023703,
+          "energy_deviation_bound": 0.02727319284606936
+        },
+        {
+          "time": 0.5,
+          "full_Liouville_vs_exact_bright_error": 1.1156846520313378e-13,
+          "no_event_probability": 0.2552819851402269,
+          "limiting_no_event_probability": 0.2465969639416065,
+          "count_probability_error": 0.008685021198620385,
+          "full_trace_norm_error": 0.06175174575692586,
+          "closed_form_trace_norm_error": 0.06175174575696536,
+          "trace_norm_error_over_epsilon": 0.8233566100923448,
+          "original_energy_over_Delta": 1.486595734043511,
+          "limiting_energy_over_Delta": 1.506806072116787,
+          "energy_deviation_bound": 0.02576729989083877
+        },
+        {
+          "time": 1.0,
+          "full_Liouville_vs_exact_bright_error": 1.1164280717383512e-13,
+          "no_event_probability": 0.06588596483906166,
+          "limiting_no_event_probability": 0.06081006262521797,
+          "count_probability_error": 0.005075902213843686,
+          "full_trace_norm_error": 0.019224816235809218,
+          "closed_form_trace_norm_error": 0.01922481623594443,
+          "trace_norm_error_over_epsilon": 0.25633088314412295,
+          "original_energy_over_Delta": 1.86749501577097,
+          "limiting_energy_over_Delta": 1.8783798747495641,
+          "energy_deviation_bound": 0.012319060419777206
+        },
+        {
+          "time": 2.0,
+          "full_Liouville_vs_exact_bright_error": 1.350730471575899e-13,
+          "no_event_probability": 0.004388725254150248,
+          "limiting_no_event_probability": 0.003697863716482932,
+          "count_probability_error": 0.0006908615376673161,
+          "full_trace_norm_error": 0.0017788992997638607,
+          "closed_form_trace_norm_error": 0.0017788992999774784,
+          "trace_norm_error_over_epsilon": 0.02371865733018481,
+          "original_energy_over_Delta": 1.9911737200482706,
+          "limiting_energy_over_Delta": 1.992604272567034,
+          "energy_deviation_bound": 0.001526086007985412
+        }
+      ]
+    },
+    {
+      "epsilon": 0.05,
+      "delta": 1.3,
+      "kappa": 0.7,
+      "Delta": 207999.99999999997,
+      "hop": 10400.0,
+      "beta": 279.99999999999994,
+      "instrument": "resolved_charge",
+      "clock": {
+        "slow_decay_rate": 2.7586831376530125,
+        "fast_decay_rate": 557.2413168623468,
+        "event_prefactor": 2.7450933535394832,
+        "all_time_event_density_L1_bound": 0.0594142620733866,
+        "bound_over_epsilon_squared": 23.765704829354636,
+        "mean_first_event": 0.3607149329036348
+      },
+      "rows": [
+        {
+          "time": 0.0,
+          "full_Liouville_vs_exact_bright_error": 5.20740757162067e-16,
+          "no_event_probability": 1.0000000000000004,
+          "limiting_no_event_probability": 1.0,
+          "count_probability_error": 4.440892098500626e-16,
+          "full_trace_norm_error": 0.0,
+          "closed_form_trace_norm_error": 8.881784197001252e-16,
+          "trace_norm_error_over_epsilon": 0.0,
+          "original_energy_over_Delta": 0.0,
+          "limiting_energy_over_Delta": 0.0,
+          "energy_deviation_bound": 8.881784197001252e-16
+        },
+        {
+          "time": 0.001,
+          "full_Liouville_vs_exact_bright_error": 2.6769145773326577e-15,
+          "no_event_probability": 0.995162203636925,
+          "limiting_no_event_probability": 0.9972039163438929,
+          "count_probability_error": 0.0020417127069679575,
+          "full_trace_norm_error": 0.2423037656779189,
+          "closed_form_trace_norm_error": 0.24230376567791914,
+          "trace_norm_error_over_epsilon": 4.846075313558377,
+          "original_energy_over_Delta": 0.007578215797345457,
+          "limiting_energy_over_Delta": 0.005592167312214125,
+          "energy_deviation_bound": 0.035401545474340004
+        },
+        {
+          "time": 0.02,
+          "full_Liouville_vs_exact_bright_error": 6.2868715329408435e-15,
+          "no_event_probability": 0.9416590272986264,
+          "limiting_no_event_probability": 0.9455391358903963,
+          "count_probability_error": 0.003880108591769904,
+          "full_trace_norm_error": 0.13663602807117364,
+          "closed_form_trace_norm_error": 0.13663602807117176,
+          "trace_norm_error_over_epsilon": 2.7327205614234726,
+          "original_energy_over_Delta": 0.11199699625592471,
+          "limiting_energy_over_Delta": 0.10892172821920743,
+          "energy_deviation_bound": 0.02175684810897871
+        },
+        {
+          "time": 0.2,
+          "full_Liouville_vs_exact_bright_error": 1.5773993876930338e-13,
+          "no_event_probability": 0.5731115028181785,
+          "limiting_no_event_probability": 0.5712090638488149,
+          "count_probability_error": 0.0019024389693635957,
+          "full_trace_norm_error": 0.08224132389631077,
+          "closed_form_trace_norm_error": 0.08224132389630591,
+          "trace_norm_error_over_epsilon": 1.6448264779262152,
+          "original_energy_over_Delta": 0.8509256281663127,
+          "limiting_energy_over_Delta": 0.8575818723023703,
+          "energy_deviation_bound": 0.012302795744063484
+        },
+        {
+          "time": 0.5,
+          "full_Liouville_vs_exact_bright_error": 3.975398702708795e-13,
+          "no_event_probability": 0.2505041159389254,
+          "limiting_no_event_probability": 0.2465969639416065,
+          "count_probability_error": 0.0039071519973189195,
+          "full_trace_norm_error": 0.039014220897501714,
+          "closed_form_trace_norm_error": 0.0390142208971938,
+          "trace_norm_error_over_epsilon": 0.7802844179500342,
+          "original_energy_over_Delta": 1.4977454504939167,
+          "limiting_energy_over_Delta": 1.506806072116787,
+          "energy_deviation_bound": 0.011528700541696465
+        },
+        {
+          "time": 1.0,
+          "full_Liouville_vs_exact_bright_error": 4.621961440452007e-13,
+          "no_event_probability": 0.06306297198317906,
+          "limiting_no_event_probability": 0.06081006262521797,
+          "count_probability_error": 0.0022529093579610887,
+          "full_trace_norm_error": 0.011232949421445634,
+          "closed_form_trace_norm_error": 0.011232949420793403,
+          "trace_norm_error_over_epsilon": 0.2246589884289127,
+          "original_energy_over_Delta": 1.8735603027298946,
+          "limiting_energy_over_Delta": 1.8783798747495641,
+          "energy_deviation_bound": 0.005440896706571579
+        },
+        {
+          "time": 2.0,
+          "full_Liouville_vs_exact_bright_error": 5.541226377431015e-13,
+          "no_event_probability": 0.003996626558051878,
+          "limiting_no_event_probability": 0.003697863716482932,
+          "count_probability_error": 0.00029876284156894577,
+          "full_trace_norm_error": 0.0009155912326886994,
+          "closed_form_trace_norm_error": 0.0009155912317964282,
+          "trace_norm_error_over_epsilon": 0.018311824653773987,
+          "original_energy_over_Delta": 1.9919868627132749,
+          "limiting_energy_over_Delta": 1.992604272567034,
+          "energy_deviation_bound": 0.0006567864095793286
+        }
+      ]
+    },
+    {
+      "epsilon": 0.025,
+      "delta": 1.3,
+      "kappa": 0.7,
+      "Delta": 3327999.9999999995,
+      "hop": 83200.0,
+      "beta": 1119.9999999999998,
+      "instrument": "resolved_charge",
+      "clock": {
+        "slow_decay_rate": 2.7895432462580105,
+        "fast_decay_rate": 2237.2104567537417,
+        "event_prefactor": 2.7860693408902795,
+        "all_time_event_density_L1_bound": 0.014962895054322183,
+        "bound_over_epsilon_squared": 23.94063208691549,
+        "mean_first_event": 0.3580357547350486
+      },
+      "rows": [
+        {
+          "time": 0.0,
+          "full_Liouville_vs_exact_bright_error": 5.20740757162067e-16,
+          "no_event_probability": 1.0000000000000004,
+          "limiting_no_event_probability": 1.0,
+          "count_probability_error": 4.440892098500626e-16,
+          "full_trace_norm_error": 0.0,
+          "closed_form_trace_norm_error": 8.881784197001252e-16,
+          "trace_norm_error_over_epsilon": 0.0,
+          "original_energy_over_Delta": 0.0,
+          "limiting_energy_over_Delta": 0.0,
+          "energy_deviation_bound": 8.881784197001252e-16
+        },
+        {
+          "time": 0.001,
+          "full_Liouville_vs_exact_bright_error": 2.5380832113043982e-14,
+          "no_event_probability": 0.9961053944136455,
+          "limiting_no_event_probability": 0.9972039163438929,
+          "count_probability_error": 0.001098521930247398,
+          "full_trace_norm_error": 0.04850027421993584,
+          "closed_form_trace_norm_error": 0.04850027421993911,
+          "trace_norm_error_over_epsilon": 1.9400109687974336,
+          "original_energy_over_Delta": 0.006678893699363677,
+          "limiting_energy_over_Delta": 0.005592167312214125,
+          "energy_deviation_bound": 0.004434106445610107
+        },
+        {
+          "time": 0.02,
+          "full_Liouville_vs_exact_bright_error": 1.7050272097735827e-13,
+          "no_event_probability": 0.9445591462526476,
+          "limiting_no_event_probability": 0.9455391358903963,
+          "count_probability_error": 0.0009799896377487016,
+          "full_trace_norm_error": 0.06768734747426804,
+          "closed_form_trace_norm_error": 0.06768734747425427,
+          "trace_norm_error_over_epsilon": 2.7074938989707213,
+          "original_energy_over_Delta": 0.10970248089010814,
+          "limiting_energy_over_Delta": 0.10892172821920743,
+          "energy_deviation_bound": 0.0054917851081782935
+        },
+        {
+          "time": 0.2,
+          "full_Liouville_vs_exact_bright_error": 5.461005019990952e-12,
+          "no_event_probability": 0.5716920786625085,
+          "limiting_no_event_probability": 0.5712090638488149,
+          "count_probability_error": 0.0004830148136936163,
+          "full_trace_norm_error": 0.04081803790577121,
+          "closed_form_trace_norm_error": 0.04081803790427158,
+          "trace_norm_error_over_epsilon": 1.6327215162308484,
+          "original_energy_over_Delta": 0.8559021186961444,
+          "limiting_energy_over_Delta": 0.8575818723023703,
+          "energy_deviation_bound": 0.0031036463410712067
+        },
+        {
+          "time": 0.5,
+          "full_Liouville_vs_exact_bright_error": 3.242526093202632e-13,
+          "no_event_probability": 0.24758093744704057,
+          "limiting_no_event_probability": 0.2465969639416065,
+          "count_probability_error": 0.0009839735054340826,
+          "full_trace_norm_error": 0.01845084838118893,
+          "closed_form_trace_norm_error": 0.01845084838156583,
+          "trace_norm_error_over_epsilon": 0.7380339352475571,
+          "original_energy_over_Delta": 1.5045290348507971,
+          "limiting_energy_over_Delta": 1.506806072116787,
+          "energy_deviation_bound": 0.0028936781336685678
+        },
+        {
+          "time": 1.0,
+          "full_Liouville_vs_exact_bright_error": 4.2829049067823255e-13,
+          "no_event_probability": 0.06137274999039553,
+          "limiting_no_event_probability": 0.06081006262521797,
+          "count_probability_error": 0.0005626873651775541,
+          "full_trace_norm_error": 0.004910943638087162,
+          "closed_form_trace_norm_error": 0.004910943638688981,
+          "trace_norm_error_over_epsilon": 0.19643774552348647,
+          "original_energy_over_Delta": 1.8771778797475067,
+          "limiting_energy_over_Delta": 1.8783798747495641,
+          "energy_deviation_bound": 0.0013548538871262564
+        },
+        {
+          "time": 2.0,
+          "full_Liouville_vs_exact_bright_error": 4.937124132171895e-13,
+          "no_event_probability": 0.003771310972777863,
+          "limiting_no_event_probability": 0.003697863716482932,
+          "count_probability_error": 7.344725629493095e-05,
+          "full_trace_norm_error": 0.00034705840818834426,
+          "closed_form_trace_norm_error": 0.0003470584089166454,
+          "trace_norm_error_over_epsilon": 0.01388233632753377,
+          "original_energy_over_Delta": 1.9924526697957081,
+          "limiting_energy_over_Delta": 1.992604272567034,
+          "energy_deviation_bound": 0.00016099584033043532
+        }
+      ]
+    }
+  ],
+  "scope": "Complete finite star, an exact exponential output-law limit with diverging microscopic scales. No cubic photon or finite-resource reservoir theorem."
+}

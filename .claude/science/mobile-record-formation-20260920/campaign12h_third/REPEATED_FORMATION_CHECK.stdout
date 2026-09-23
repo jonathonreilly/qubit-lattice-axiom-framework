@@ -1,0 +1,17 @@
+{"progress": "star_2", "instrument": "coherent", "epsilon": 0.2, "last_error": 0.020079841701840687}
+{"progress": "star_2", "instrument": "coherent", "epsilon": 0.1, "last_error": 0.005808961979653455}
+{"progress": "star_2", "instrument": "coherent", "epsilon": 0.05, "last_error": 0.0021663558866413207}
+{"progress": "star_2", "instrument": "coherent", "epsilon": 0.025, "last_error": 0.0009353918552865452}
+{"progress": "star_2", "instrument": "resolved", "epsilon": 0.2, "last_error": 0.0200798417018389}
+{"progress": "star_2", "instrument": "resolved", "epsilon": 0.1, "last_error": 0.005808961979654021}
+{"progress": "star_2", "instrument": "resolved", "epsilon": 0.05, "last_error": 0.002166355886641994}
+{"progress": "star_2", "instrument": "resolved", "epsilon": 0.025, "last_error": 0.0009353918552848831}
+{"progress": "star_4", "instrument": "coherent", "epsilon": 0.2, "last_error": 0.03633545789399662}
+{"progress": "star_4", "instrument": "coherent", "epsilon": 0.1, "last_error": 0.012094812989881708}
+{"progress": "star_4", "instrument": "coherent", "epsilon": 0.05, "last_error": 0.005104222124271644}
+{"progress": "star_4", "instrument": "coherent", "epsilon": 0.025, "last_error": 0.0023947628421325563}
+{"progress": "star_4", "instrument": "resolved", "epsilon": 0.2, "last_error": 0.018988314616860714}
+{"progress": "star_4", "instrument": "resolved", "epsilon": 0.1, "last_error": 0.0061936041099980065}
+{"progress": "star_4", "instrument": "resolved", "epsilon": 0.05, "last_error": 0.002597837480917424}
+{"progress": "star_4", "instrument": "resolved", "epsilon": 0.025, "last_error": 0.0012154613900759981}
+{"complete": true, "output": "REPEATED_FORMATION_RESULTS.json"}

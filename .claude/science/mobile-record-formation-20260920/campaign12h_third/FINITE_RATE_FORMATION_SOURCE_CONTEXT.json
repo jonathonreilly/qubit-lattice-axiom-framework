@@ -1,0 +1,17 @@
+{
+  "created_utc": "2026-09-22T23:35:00.660026+00:00",
+  "parent_private_head": "a0f8921ac98dee99094eef0fce2561650b82ffb8",
+  "status": "Conditional author mathematics, independent reconstruction pending. All model inputs are defined explicitly in the notes.",
+  "methodology": "Root personally derived the model reductions, embedding proof and exact event laws. The numerical and symbolic controls do not replace the proofs.",
+  "literature": [
+    {
+      "url": "https://arxiv.org/html/1112.2806v2",
+      "title": "Effective operator formalism for open quantum systems",
+      "authors": "Florentin Reiter and Anders S. Sorensen",
+      "read_coverage": "Abstract, Section II, Sections III.1 through III.5 including equations through 41.",
+      "use": "Established non-Hermitian resolvent mechanism; no rigorous error theorem imported from its adiabatic derivation."
+    }
+  ],
+  "premise_boundary": "Finite supplied quantum gauge-record model, bipartition/background, Hamiltonian and reservoir/instrument. No native-axiom, continuum-photon, finite-energy-fuel or empirical conclusion.",
+  "read_and_execution_coverage": "Root read complete scientific sources and every result field for all three runners. First executions successful; no scientific assertion or control was changed after a failed execution."
+}

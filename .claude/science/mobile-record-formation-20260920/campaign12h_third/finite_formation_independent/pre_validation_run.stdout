@@ -1,0 +1,12 @@
+{
+  "final_scientific_receipts_verified": [
+    "finite_control_corrected_run_RECEIPT.json",
+    "star_analytic_run_RECEIPT.json",
+    "path_absorption_run_RECEIPT.json"
+  ],
+  "preserved_initial_receipt_recovered": true,
+  "separate_electric_and_charge_word_results_agree": true,
+  "path_multiple_vacancy_identity_and_absorption_checked": true,
+  "report_sha256": "89210e10b9568544b9ffc4850c4c5402f4c901e8294819cdf60f96d4c0c238d3",
+  "author_new_source_access": false
+}

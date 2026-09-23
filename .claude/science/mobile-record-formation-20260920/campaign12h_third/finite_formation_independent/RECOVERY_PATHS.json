@@ -1,0 +1,23 @@
+{
+  "reason": "The initial helper-labeling output is preserved. Original receipt source identity resolves through this archive after the corrected runner was written.",
+  "rows": [
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/finite_formation_independent/finite_control.py",
+      "preserved_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/finite_formation_independent/failed_attempts/full_dark_vs_nonfull_dark_label/finite_control.py",
+      "sha256": "7f5489bff47fd012650be085dbc47f7ece6f24c52698637693fcf2d9e0df7abc",
+      "bytes": 8536
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/finite_formation_independent/finite_control_run.stdout",
+      "preserved_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/finite_formation_independent/failed_attempts/full_dark_vs_nonfull_dark_label/finite_control_run.stdout",
+      "sha256": "2f26e6e80064e77e0e79547d909ec7666bd45c62d2222a8a7cf627200ba7c7d4",
+      "bytes": 4397
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/finite_formation_independent/finite_control_run.stderr",
+      "preserved_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/finite_formation_independent/failed_attempts/full_dark_vs_nonfull_dark_label/finite_control_run.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ]
+}

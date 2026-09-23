@@ -1,0 +1,45 @@
+{
+  "created_utc": "2026-09-23T00:42:17.962161+00:00",
+  "status": "Root source/evidence comparison completed with no required correction. Not formal audit or retained status.",
+  "author_seals": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_RATE_FORMATION_AUTHOR_SEAL.json",
+      "bytes": 6225,
+      "sha256": "e0f07e9879e8332d17b1e96884c8942d21db4bdb4f7fe547d0bad3ed90ddd6ab"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FORMATION_LOCALITY_AUTHOR_SEAL.json",
+      "bytes": 3268,
+      "sha256": "150c0877855ba00dd7369733c0cefd0639a003cce6b290873ee59f14f415acd2"
+    }
+  ],
+  "independent_pre": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/finite_formation_independent/PRE_COMPARISON_SEAL.json",
+    "bytes": 12131,
+    "sha256": "f86695b6172745df8dc9ba8a1bfeaa60492ef7baf63a56bc55d045c5e8db951b"
+  },
+  "independent_final": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/finite_formation_independent/FINAL_SEAL.json",
+    "bytes": 27790,
+    "sha256": "b558e79f077b639690d702d0dbcd6328b724c8768defc093ef0714e852c51004"
+  },
+  "independent_report": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/finite_formation_independent/REPORT.md",
+    "bytes": 18332,
+    "sha256": "89210e10b9568544b9ffc4850c4c5402f4c901e8294819cdf60f96d4c0c238d3"
+  },
+  "independent_comparison": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/finite_formation_independent/COMPARISON.md",
+    "bytes": 14003,
+    "sha256": "3a2f54ff63f57b39bf4781d2c3cf3cac98bd5d593ae44ed7b1abc3556341b2dd"
+  },
+  "authenticated_final_binding_count": 79,
+  "coverage": "Full REPORT and COMPARISON, all four current independent scientific sources and every result field read. Failed source deltas, error streams and diagnoses inspected. Author balanced/locality proofs, relevant scientific sources/results already personally read at sealing. Entire author evolution grid not rerun.",
+  "conventions": "Path middle edge reverses electric/charge-mark orientation. Jumps differ by common sign. Normalized versus unnormalized second-order embeddings differ in a fast-annihilated P term.",
+  "conclusion": "Fixed-graph balanced formation, explicit error estimate, exact dark probabilities, local decomposition and bounded-rotor limit agree. Independently reconstructed two quoted microscopic endpoints differ by less than 7e-14.",
+  "excluded": "The different-scaling three-site theorem and controls are authenticated only. No disposition for that theorem, newer high-scale unit, photon coexistence, native derivation, fuel supply, volume-uniform error or unrestricted continuous path law.",
+  "failures_preserved": [
+    "Initial independent full-dark versus nonfull-dark labeling helper error.",
+    "Post-comparison structural symbolic equality rejected an algebraically equal rate; exact simplified difference repair only."
+  ]
+}

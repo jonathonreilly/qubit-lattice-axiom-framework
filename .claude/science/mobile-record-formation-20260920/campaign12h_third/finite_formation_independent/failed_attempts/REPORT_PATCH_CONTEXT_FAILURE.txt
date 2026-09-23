@@ -1,0 +1,7 @@
+2026-09-23 approximately 00:20 UTC: an apply_patch attempt to append the path
+absorption argument failed to find the expected standalone line
+"Both are retained in the full generator and in the block calculation."
+The actual line began "occurs. Both ...". No report changes were applied by
+that failed patch. Targeted rg inspection supplied the exact existing line;
+the next patch succeeded. This was an editing-context error, not a scientific
+assertion failure. The path checker itself had already exited zero.

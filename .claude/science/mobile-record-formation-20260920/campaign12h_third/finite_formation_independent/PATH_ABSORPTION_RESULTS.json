@@ -1,0 +1,45 @@
+{
+  "method": "exact boundary-invariance elimination, not finite-time extrapolation",
+  "rows": [
+    {
+      "spin": 1,
+      "full_sector_dimension": 9,
+      "transient_dimension": 6,
+      "lossless_transient_dimension": 3,
+      "boundary_rank": 2,
+      "boundary_plus_one_hop_rank": 3,
+      "lossless_kernel_in_free_order": [
+        "0",
+        "1",
+        "0"
+      ],
+      "second_step_boundary": [
+        "1",
+        "1",
+        "2"
+      ],
+      "effective_initial_birth_rate_delta_kappa_1": "2",
+      "conclusion": "No nonzero invariant subspace inside kernel loss; every N=2 state eventually forms one pair and fills this finite path for positive epsilon,delta,kappa. The argument is identical for every integer spin>=1 because the N=2 hopping block is unchanged and its positive-loss support is unchanged."
+    },
+    {
+      "spin": 2,
+      "full_sector_dimension": 10,
+      "transient_dimension": 6,
+      "lossless_transient_dimension": 3,
+      "boundary_rank": 2,
+      "boundary_plus_one_hop_rank": 3,
+      "lossless_kernel_in_free_order": [
+        "0",
+        "1",
+        "0"
+      ],
+      "second_step_boundary": [
+        "1",
+        "1",
+        "2"
+      ],
+      "effective_initial_birth_rate_delta_kappa_1": "2",
+      "conclusion": "No nonzero invariant subspace inside kernel loss; every N=2 state eventually forms one pair and fills this finite path for positive epsilon,delta,kappa. The argument is identical for every integer spin>=1 because the N=2 hopping block is unchanged and its positive-loss support is unchanged."
+    }
+  ]
+}

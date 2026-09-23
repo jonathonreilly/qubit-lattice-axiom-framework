@@ -1,0 +1,44 @@
+{
+  "created_utc": "2026-09-22T23:32:18.176022+00:00",
+  "source_sha256": "7936977104157d726c5626cb7afa107d208f844b07bdd07d5a633c552fecfc4e",
+  "model_source_sha256": "7b9eb968e897202216375e549c4e9f9b836a52c68a825ca1ebcc1193cb6c8b4b",
+  "recorded_results_sha256": "9d08d2d389da3ef5f589a8179436e6da4c41a56959d5f2eb32608fb871cb734d",
+  "M_eigenvalue_multiplicities": {
+    "6": 1,
+    "3": 2,
+    "5": 3,
+    "2": 3,
+    "1": 3,
+    "0": 6
+  },
+  "instruments": {
+    "coherent": {
+      "spectral_weights": {
+        "0": "4/15",
+        "1": "0",
+        "2": "1/3",
+        "3": "0",
+        "5": "1/15",
+        "6": "1/3"
+      },
+      "eventual_second_birth_probability": "11/15",
+      "post_first_birth_normalization": "24"
+    },
+    "resolved": {
+      "spectral_weights": {
+        "0": "1/3",
+        "1": "0",
+        "2": "1/6",
+        "3": "0",
+        "5": "1/3",
+        "6": "1/6"
+      },
+      "eventual_second_birth_probability": "2/3",
+      "post_first_birth_normalization": "24"
+    }
+  },
+  "exact_projector_and_dark_identities": true,
+  "effective_count_rows_compared": 72,
+  "max_recorded_count_error": 4.440892098500626e-16,
+  "scope": "Exact finite four-leaf-star dark weights, microscopic eventual absorption and effective two-event law. Finite-time full dynamics checked in the separately bound runner."
+}

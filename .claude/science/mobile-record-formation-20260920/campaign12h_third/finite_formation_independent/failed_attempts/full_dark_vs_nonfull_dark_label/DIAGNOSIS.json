@@ -1,0 +1,5 @@
+{
+  "issue": "The generic star helper initially labeled every N=3 hopping-kernel state as nonfull. For the two-leaf star N=3 is already full, so eventual_full_probability was incorrectly emitted as zero. No matrix identity or numerical calculation failed; the first-run raw output is preserved.",
+  "repair": "Separate first-event exact dark weight from nonfull trapped weight; use zero nonfull trapped weight when N=3 equals the vertex count. Simplify exact scalar expressions.",
+  "author_source_access": false
+}

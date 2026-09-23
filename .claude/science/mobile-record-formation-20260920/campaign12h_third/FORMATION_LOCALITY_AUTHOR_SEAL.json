@@ -1,0 +1,53 @@
+{
+  "created_utc": "2026-09-23T00:00:02.533865+00:00",
+  "status": "Author frozen; independent reconstruction pending.",
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_FINITE_RATE_FORMATION_AND_ROTOR_LIMIT.md",
+      "bytes": 11530,
+      "sha256": "1d3aad074b15777a20ef09f90bc1ca1ce4a55f441299ad2187b50b4b3cc6b976"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/formation_locality_check.py",
+      "bytes": 3471,
+      "sha256": "bf498221432b480498b02eada8e3aa082a56a31509cfd7cc4c4e2bd8961c25b8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FORMATION_LOCALITY_RESULTS.json",
+      "bytes": 16531,
+      "sha256": "7e374372854b1fd6edb065e9dc720617cd9a5a8fa9b58736a825e8e008771325"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FORMATION_LOCALITY_CHECK.stdout",
+      "bytes": 16531,
+      "sha256": "7e374372854b1fd6edb065e9dc720617cd9a5a8fa9b58736a825e8e008771325"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FORMATION_LOCALITY_CHECK.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FORMATION_LOCALITY_CHECK_RECEIPT.json",
+      "bytes": 390,
+      "sha256": "8c04143b34b823bac12de5efe02d77d183b8617408bccdece6b7be71f5159abd"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_RATE_FORMATION_AUTHOR_SEAL.json",
+      "bytes": 6225,
+      "sha256": "e0f07e9879e8332d17b1e96884c8942d21db4bdb4f7fe547d0bad3ed90ddd6ab"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_RATE_REPEATED_RECORD_FORMATION.md",
+      "bytes": 16828,
+      "sha256": "b577c14e992fe74feb8a9f17c33e503f446f7052f83512031c2bf82cf2e3538d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/repeated_formation_check.py",
+      "bytes": 10777,
+      "sha256": "7b9eb968e897202216375e549c4e9f9b836a52c68a825ca1ebcc1193cb6c8b4b"
+    }
+  ],
+  "coverage": "Root personally derived and read full addendum/source; all six exact locality controls and every result field were read. No failed execution. General rotor and norm conclusions use the proof, not finite numerical extrapolation.",
+  "limits": "Fixed finite graph/time, supplied background and quantum instruments; not a volume-uniform microscopic limit or joint photon/formation theorem."
+}

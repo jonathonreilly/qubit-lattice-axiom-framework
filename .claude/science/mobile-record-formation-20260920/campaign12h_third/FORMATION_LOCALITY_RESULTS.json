@@ -1,0 +1,849 @@
+{
+  "created_utc": "2026-09-22T23:47:48.676196+00:00",
+  "source_sha256": "bf498221432b480498b02eada8e3aa082a56a31509cfd7cc4c4e2bd8961c25b8",
+  "model_source_sha256": "7b9eb968e897202216375e549c4e9f9b836a52c68a825ca1ebcc1193cb6c8b4b",
+  "controls": [
+    {
+      "model": "star_2",
+      "instrument": "coherent",
+      "sites": [
+        {
+          "A_site": 0,
+          "degree": 2,
+          "one_hole_dimension": 2,
+          "nonzero_effective_channel_indices": [
+            0,
+            1
+          ]
+        }
+      ],
+      "global_resolvent_equals_sum_of_site_star_H_and_channels": true,
+      "basis_state_formation_rates": [
+        {
+          "q": [
+            -1,
+            1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            0,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            1,
+            -1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        }
+      ]
+    },
+    {
+      "model": "star_2",
+      "instrument": "resolved",
+      "sites": [
+        {
+          "A_site": 0,
+          "degree": 2,
+          "one_hole_dimension": 2,
+          "nonzero_effective_channel_indices": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "global_resolvent_equals_sum_of_site_star_H_and_channels": true,
+      "basis_state_formation_rates": [
+        {
+          "q": [
+            -1,
+            1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            0,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            1,
+            -1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        }
+      ]
+    },
+    {
+      "model": "star_4",
+      "instrument": "coherent",
+      "sites": [
+        {
+          "A_site": 0,
+          "degree": 4,
+          "one_hole_dimension": 16,
+          "nonzero_effective_channel_indices": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "global_resolvent_equals_sum_of_site_star_H_and_channels": true,
+      "basis_state_formation_rates": [
+        {
+          "q": [
+            -1,
+            -1,
+            1,
+            1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            -1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            -1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            -1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            -1,
+            1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            1,
+            -1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            -1,
+            1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            0,
+            0,
+            1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            0,
+            1,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            -1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            0,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            1,
+            -1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            0,
+            -1,
+            0,
+            1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            0,
+            -1,
+            1,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            0,
+            0,
+            -1,
+            1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "empty_leaves": 4,
+          "rate": "(-13 + 21*I)*(-46137/465125 - 74529*I/465125)"
+        },
+        {
+          "q": [
+            1,
+            0,
+            0,
+            1,
+            -1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            0,
+            1,
+            -1,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            0,
+            1,
+            0,
+            -1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            1,
+            -1,
+            -1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            1,
+            -1,
+            0,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            1,
+            0,
+            -1,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            1,
+            0,
+            0,
+            -1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        }
+      ]
+    },
+    {
+      "model": "star_4",
+      "instrument": "resolved",
+      "sites": [
+        {
+          "A_site": 0,
+          "degree": 4,
+          "one_hole_dimension": 16,
+          "nonzero_effective_channel_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "global_resolvent_equals_sum_of_site_star_H_and_channels": true,
+      "basis_state_formation_rates": [
+        {
+          "q": [
+            -1,
+            -1,
+            1,
+            1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            -1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            -1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            -1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            -1,
+            1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            1,
+            -1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            -1,
+            1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            0,
+            0,
+            1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            0,
+            1,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            -1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            0,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            1,
+            -1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            0,
+            -1,
+            0,
+            1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            0,
+            -1,
+            1,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            0,
+            0,
+            -1,
+            1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "empty_leaves": 4,
+          "rate": "(-13 + 21*I)*(-46137/465125 - 74529*I/465125)"
+        },
+        {
+          "q": [
+            1,
+            0,
+            0,
+            1,
+            -1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            0,
+            1,
+            -1,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            0,
+            1,
+            0,
+            -1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            1,
+            -1,
+            -1,
+            1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            1,
+            -1,
+            0,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        },
+        {
+          "q": [
+            1,
+            1,
+            0,
+            -1,
+            0
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            1,
+            0,
+            0,
+            -1
+          ],
+          "empty_leaves": 2,
+          "rate": "(-13 + 7*I)*(-15379/118810 - 8281*I/118810)"
+        },
+        {
+          "q": [
+            1,
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "empty_leaves": 0,
+          "rate": "0"
+        }
+      ]
+    },
+    {
+      "model": "two_A_path",
+      "instrument": "coherent",
+      "sites": [
+        {
+          "A_site": 0,
+          "degree": 1,
+          "one_hole_dimension": 2,
+          "nonzero_effective_channel_indices": []
+        },
+        {
+          "A_site": 2,
+          "degree": 2,
+          "one_hole_dimension": 2,
+          "nonzero_effective_channel_indices": [
+            1,
+            2
+          ]
+        }
+      ],
+      "global_resolvent_equals_sum_of_site_star_H_and_channels": true,
+      "basis_state_formation_rates": []
+    },
+    {
+      "model": "two_A_path",
+      "instrument": "resolved",
+      "sites": [
+        {
+          "A_site": 0,
+          "degree": 1,
+          "one_hole_dimension": 2,
+          "nonzero_effective_channel_indices": []
+        },
+        {
+          "A_site": 2,
+          "degree": 2,
+          "one_hole_dimension": 2,
+          "nonzero_effective_channel_indices": [
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "global_resolvent_equals_sum_of_site_star_H_and_channels": true,
+      "basis_state_formation_rates": []
+    }
+  ],
+  "coherent_and_resolved_effective_losses_equal_in_all_controls": true,
+  "scope": "Exact finite operator decompositions and basis rates. General locality/norm bounds and rotor extension rest on the separately written proof."
+}

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/finite_formation_independent/comparison_check.py", line 99, in <module>
+    assert G[ownpos[q],ownpos[q]]==prediction==s.sympify(row['rate'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

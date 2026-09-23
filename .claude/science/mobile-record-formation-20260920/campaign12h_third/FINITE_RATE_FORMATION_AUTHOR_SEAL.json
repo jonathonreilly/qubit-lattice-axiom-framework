@@ -1,0 +1,107 @@
+{
+  "created_utc": "2026-09-22T23:35:00.674003+00:00",
+  "status": "Author frozen; independent reconstruction pending.",
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_RATE_RENEWED_FORMATION_EXACT_STAR.md",
+      "bytes": 8078,
+      "sha256": "a415af7dc79c5110eb3785e9c5bb8fe36120a7a52a8d3df559ba9c087d3a108d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_RATE_REPEATED_RECORD_FORMATION.md",
+      "bytes": 16828,
+      "sha256": "b577c14e992fe74feb8a9f17c33e503f446f7052f83512031c2bf82cf2e3538d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_RATE_FORMATION_WORKING_SPEC.md",
+      "bytes": 4602,
+      "sha256": "c7ead1f6cb579107ded8c8219141117603c94cff0aa0031fdf7cd4f5c76676d4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/REPEATED_FORMATION_WORKING_SPEC.md",
+      "bytes": 3613,
+      "sha256": "88f37bd3b657e1aab27ae821e1246dbd914de42ab7cfe441b4f18dc4afcc920d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_RATE_FORMATION_SOURCE_CONTEXT.json",
+      "bytes": 1316,
+      "sha256": "9c68f5fb99b3cd776138eda4369cf152313124c4011b488be3cf9b8051838ede"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/finite_rate_record_formation_check.py",
+      "bytes": 7168,
+      "sha256": "3bff4109465888f1aa774d6b95b4c1d605933ede2b9e52673b59c57809237f83"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/repeated_formation_check.py",
+      "bytes": 10777,
+      "sha256": "7b9eb968e897202216375e549c4e9f9b836a52c68a825ca1ebcc1193cb6c8b4b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/repeated_formation_dark_check.py",
+      "bytes": 3848,
+      "sha256": "7936977104157d726c5626cb7afa107d208f844b07bdd07d5a633c552fecfc4e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_RATE_FORMATION_RESULTS.json",
+      "bytes": 43268,
+      "sha256": "e2592b5a5f5edffd796d4a81fbbace5b3c8b7798f92c52a91205e0479d02097f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_RATE_FORMATION_CHECK.stdout",
+      "bytes": 43268,
+      "sha256": "e2592b5a5f5edffd796d4a81fbbace5b3c8b7798f92c52a91205e0479d02097f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_RATE_FORMATION_CHECK.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_RATE_FORMATION_CHECK_RECEIPT.json",
+      "bytes": 1325,
+      "sha256": "05e9092c309e5e27f9b0398568fbb5d3e121d404dbf437e0191eca8eaf8d0542"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/REPEATED_FORMATION_RESULTS.json",
+      "bytes": 99190,
+      "sha256": "9d08d2d389da3ef5f589a8179436e6da4c41a56959d5f2eb32608fb871cb734d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/REPEATED_FORMATION_CHECK.stdout",
+      "bytes": 1695,
+      "sha256": "a0a33bf39adb7a97d8ae89014ba0033faee44e91da4b395614efed3774cdfec6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/REPEATED_FORMATION_CHECK.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/REPEATED_FORMATION_CHECK_RECEIPT.json",
+      "bytes": 390,
+      "sha256": "05b64dc6b208f0bbe096c5f570654bd76e07c753e4cc4f9940056d8fc026f936"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/REPEATED_FORMATION_DARK_RESULTS.json",
+      "bytes": 1337,
+      "sha256": "4e24de059420c391983538e3c49993608db822bde396670ef2b31287b8d59c2e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/REPEATED_FORMATION_DARK_CHECK.stdout",
+      "bytes": 1337,
+      "sha256": "4e24de059420c391983538e3c49993608db822bde396670ef2b31287b8d59c2e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/REPEATED_FORMATION_DARK_CHECK.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/REPEATED_FORMATION_DARK_CHECK_RECEIPT.json",
+      "bytes": 390,
+      "sha256": "21295a699b9223c9fa66a8e6d7d93a63afa3637c8558e1f737f9bc1b491c7bd6"
+    }
+  ],
+  "count": 20
+}

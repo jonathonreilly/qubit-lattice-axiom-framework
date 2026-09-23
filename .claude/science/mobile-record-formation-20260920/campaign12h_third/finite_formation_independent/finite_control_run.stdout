@@ -1,0 +1,163 @@
+exact path matrix-unit intertwiner
+two-leaf star
+four-leaf star
+finite-epsilon full Liouvillian
+{
+  "method": "independent electric-bit enumeration of complete finite tree Gauss sectors; exact SymPy identities and separately assembled SciPy Liouvillian",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "sympy": "1.14.0",
+  "numpy": "2.4.4",
+  "path_S1": {
+    "dimension": 9,
+    "W_multiplicities": {
+      "0": 4,
+      "1": 4,
+      "2": 1
+    },
+    "fast_lossless_excited_basis_states": [
+      {
+        "E": [
+          -1,
+          0,
+          -1
+        ],
+        "q": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "W": 2
+      },
+      {
+        "E": [
+          -1,
+          0,
+          0
+        ],
+        "q": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "W": 1
+      }
+    ],
+    "intertwiner": {
+      "resolved": {
+        "matrix_units": 16,
+        "Q2_correction_nonzero": true,
+        "X_norm_squared_trace": "1 + 4*(4/13 - 6*I/13)*(2 + 3*I)/13"
+      },
+      "coherent": {
+        "matrix_units": 16,
+        "Q2_correction_nonzero": true,
+        "X_norm_squared_trace": "1 + 4*(4/13 - 6*I/13)*(2 + 3*I)/13"
+      }
+    }
+  },
+  "path_S2_dimension": 10,
+  "star2": {
+    "dimension": 6,
+    "P_dimension": 4,
+    "N3_P_dimension": 3,
+    "N3_Q_dimension": 0,
+    "N3_hop_rank": 0,
+    "exact_P_N3_dark_dimension": 3,
+    "instruments": {
+      "resolved": {
+        "first_rate_delta_kappa_1": "2",
+        "first_event_dark_probability": "1",
+        "eventual_full_probability": "0",
+        "first_state_purity": "3*(1/2 - I/2)**2*(1/2 + I/2)**2/2",
+        "nonzero_first_entries": 3
+      },
+      "coherent": {
+        "first_rate_delta_kappa_1": "2",
+        "first_event_dark_probability": "1",
+        "eventual_full_probability": "0",
+        "first_state_purity": "5*(1/2 - I/2)**2*(1/2 + I/2)**2/2",
+        "nonzero_first_entries": 7
+      }
+    }
+  },
+  "star4": {
+    "dimension": 45,
+    "P_dimension": 29,
+    "N3_P_dimension": 18,
+    "N3_Q_dimension": 12,
+    "N3_hop_rank": 12,
+    "exact_P_N3_dark_dimension": 6,
+    "instruments": {
+      "resolved": {
+        "first_rate_delta_kappa_1": "12/5",
+        "first_event_dark_probability": "1/3",
+        "eventual_full_probability": "2/3",
+        "first_state_purity": "175*(1/10 - 3*I/10)**2*(1/10 + 3*I/10)**2/12",
+        "nonzero_first_entries": 66
+      },
+      "coherent": {
+        "first_rate_delta_kappa_1": "12/5",
+        "first_event_dark_probability": "4/15",
+        "eventual_full_probability": "11/15",
+        "first_state_purity": "325*(1/10 - 3*I/10)**2*(1/10 + 3*I/10)**2/12",
+        "nonzero_first_entries": 138
+      }
+    }
+  },
+  "convergence": {
+    "resolved": {
+      "time": 0.7,
+      "rows": [
+        {
+          "epsilon": 0.2,
+          "trace_error": 0.2084767743581108,
+          "error_over_epsilon": 1.0423838717905538,
+          "trace_defect": 4.449813178522236e-16,
+          "minimum_eigenvalue": -5.928757307449782e-17
+        },
+        {
+          "epsilon": 0.1,
+          "trace_error": 0.16014564958052613,
+          "error_over_epsilon": 1.6014564958052613,
+          "trace_defect": 7.773046090623975e-16,
+          "minimum_eigenvalue": -9.73744244992629e-17
+        },
+        {
+          "epsilon": 0.05,
+          "trace_error": 0.06019944700421064,
+          "error_over_epsilon": 1.2039889400842128,
+          "trace_defect": 9.103828893078459e-15,
+          "minimum_eigenvalue": -4.214055850634132e-17
+        }
+      ]
+    },
+    "coherent": {
+      "time": 0.7,
+      "rows": [
+        {
+          "epsilon": 0.2,
+          "trace_error": 0.2114712548159331,
+          "error_over_epsilon": 1.0573562740796654,
+          "trace_defect": 4.449813178522236e-16,
+          "minimum_eigenvalue": -5.951943672575291e-17
+        },
+        {
+          "epsilon": 0.1,
+          "trace_error": 0.1603502706370423,
+          "error_over_epsilon": 1.6035027063704228,
+          "trace_defect": 7.773046090623975e-16,
+          "minimum_eigenvalue": -9.73970300082528e-17
+        },
+        {
+          "epsilon": 0.05,
+          "trace_error": 0.0602126718950588,
+          "error_over_epsilon": 1.204253437901176,
+          "trace_defect": 9.103828893078459e-15,
+          "minimum_eigenvalue": -4.214055850634132e-17
+        }
+      ]
+    }
+  }
+}

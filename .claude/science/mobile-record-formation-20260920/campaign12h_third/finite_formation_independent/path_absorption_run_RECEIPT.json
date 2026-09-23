@@ -1,0 +1,25 @@
+{
+  "started_utc": "2026-09-23T00:20:10.896667+00:00",
+  "finished_utc": "2026-09-23T00:20:11.796531+00:00",
+  "elapsed_seconds": 0.899610708002001,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/finite_formation_independent/path_absorption_control.py"
+  ],
+  "exit_code": 0,
+  "runner": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/finite_formation_independent/path_absorption_control.py",
+    "bytes": 2001,
+    "sha256": "9f986964b5fb3f2647f49ec4e2e8f164fe7ebf51c7d49bd62fdfccfc2fa565bd"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/finite_formation_independent/path_absorption_run.stdout",
+    "bytes": 1584,
+    "sha256": "a20c49edcf499f46ec1f034d2bba6809fbc26d6eaa2898f18c58d378bb54467d"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/finite_formation_independent/path_absorption_run.stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

@@ -1,0 +1,125 @@
+Source identities, complete-basis mappings and local decomposition verified.
+{
+  "author_seal_rows_authenticated": 29,
+  "author_unique_bound_paths": 27,
+  "pre_bindings_unchanged": 34,
+  "excluded_different_scaling_packet": "Authenticated only: FINITE_RATE_RENEWED_FORMATION_EXACT_STAR.md and its different-scaling checker/results/logs/spec. No theorem disposition given.",
+  "basis_and_rate_mapping": [
+    {
+      "model": "star_2",
+      "complete_basis_size": 6,
+      "all_bare_T_W_and_birth_operators_equal_after_mapping": true,
+      "path_orientation_note": "same orientation",
+      "effective_H_and_jumps_equal_up_to_common_jump_sign": true
+    },
+    {
+      "model": "star_4",
+      "complete_basis_size": 45,
+      "all_bare_T_W_and_birth_operators_equal_after_mapping": true,
+      "path_orientation_note": "same orientation",
+      "effective_H_and_jumps_equal_up_to_common_jump_sign": true
+    },
+    {
+      "model": "two_A_path",
+      "complete_basis_size": 9,
+      "all_bare_T_W_and_birth_operators_equal_after_mapping": true,
+      "path_orientation_note": "middle electric field and charge-mark orientation reversed",
+      "effective_H_and_jumps_equal_up_to_common_jump_sign": true
+    }
+  ],
+  "locality": [
+    {
+      "model": "star_2",
+      "instrument": "resolved",
+      "exact_star_decomposition": true,
+      "stored_basis_rates_checked": 4
+    },
+    {
+      "model": "star_2",
+      "instrument": "coherent",
+      "exact_star_decomposition": true,
+      "stored_basis_rates_checked": 4
+    },
+    {
+      "model": "star_4",
+      "instrument": "resolved",
+      "exact_star_decomposition": true,
+      "stored_basis_rates_checked": 29
+    },
+    {
+      "model": "star_4",
+      "instrument": "coherent",
+      "exact_star_decomposition": true,
+      "stored_basis_rates_checked": 29
+    },
+    {
+      "model": "two_A_path",
+      "instrument": "resolved",
+      "exact_star_decomposition": true,
+      "stored_basis_rates_checked": 0
+    },
+    {
+      "model": "two_A_path",
+      "instrument": "coherent",
+      "exact_star_decomposition": true,
+      "stored_basis_rates_checked": 0
+    }
+  ],
+  "embedding_equivalence": [
+    {
+      "instrument": "resolved",
+      "matrix_units": 16,
+      "normalization_difference_fast_annihilated": true,
+      "author_unnormalized_identity_exact": true
+    },
+    {
+      "instrument": "coherent",
+      "matrix_units": 16,
+      "normalization_difference_fast_annihilated": true,
+      "author_unnormalized_identity_exact": true
+    }
+  ],
+  "exact_spectral_weights": {
+    "resolved": {
+      "0": "1/3",
+      "1": "0",
+      "2": "1/6",
+      "3": "0",
+      "5": "1/3",
+      "6": "1/6"
+    },
+    "coherent": {
+      "0": "4/15",
+      "1": "0",
+      "2": "1/3",
+      "3": "0",
+      "5": "1/15",
+      "6": "1/3"
+    }
+  },
+  "stored_effective_count_rows_checked": 144,
+  "maximum_effective_count_difference": 5.551115123125783e-16,
+  "maximum_effective_energy_identity_difference": 4.440892098500626e-16,
+  "selective_full_liouvillian_reconstruction": [
+    {
+      "instrument": "coherent",
+      "epsilon": 0.025,
+      "time": 2.0,
+      "independent_full_probability": 0.7250237000531465,
+      "independent_trace_error": 0.002394762842062983,
+      "probability_difference": 6.94999613415348e-14,
+      "error_difference": 6.957325340839482e-14
+    },
+    {
+      "instrument": "resolved",
+      "epsilon": 0.025,
+      "time": 2.0,
+      "independent_full_probability": 0.6623528314098517,
+      "independent_trace_error": 0.0012154613901256255,
+      "probability_difference": 4.4075854077618715e-14,
+      "error_difference": 4.962740288161349e-14
+    }
+  ],
+  "author_scientific_sources_modified": false,
+  "author_grid_rerun": false
+}

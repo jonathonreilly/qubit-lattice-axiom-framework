@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_minimal_coupling_fiber_frame_connection_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_minimal_coupling_fiber_frame_connection_2026_06_08.py",
+ "seed": 40670,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "51fbd2f0",
+ "started_utc": "20260923T051750Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=23 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0e1eb88e5618b480869b1e7f1c4cd3d0aedaac8b34c57b2bac7315d0e13b2d33",
+ "stdout_tail": "i eps A_mu) gives D_mu psi = d_mu psi + i eps A_mu psi(x+mu)\n==============================================================================\n  [PASS] minimal-coupling residual is O(eps^2) for D_mu psi = d_mu psi + i eps A_mu psi(x+mu)  (log-log slope = 2.0000 (== 2 confirms first-order minimal coupling))\n==============================================================================\nPart 7  U(1) (hypercharge-like) factor obeys the same abelian transporter law\n==============================================================================\n  [PASS] free hopping NOT invariant under local U(1) phase (abelian gauge field needed)\n  [PASS] U(1) covariant hopping: G H_cov G^dag = H_cov[U'] (abelian transporter)\n==============================================================================\nTOTAL: PASS=23 FAIL=0\n==============================================================================\nSCOPE: This runner verifies the KINEMATICS of matter-gauge minimal coupling\n  -- using the current-surface local fibre-frame redundancy bridge, the\n  link connection U_mu(x) and its parallel-transporter gauge law are fixed\n  by frame-independence of nearest-neighbour hopping on the retained\n  per-site U(3) fibre. The gauge-covariance core (Parts 1-5,7) is exact\n  finite algebra. It does NOT derive any gauge ACTION or dynamics for U_mu\n  (the Yang-Mills target), claims NO continuum limit, proves NO future\n  colour-readout exclusion theorem, and defers physical SU(3)_c per the\n  graph_first_su3 boundary.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T051750Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_minimal_coupling_fiber_frame_connection_2026_06_08.txt against the .txt beside this log"
+  ]
+ }
+}

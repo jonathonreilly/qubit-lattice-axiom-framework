@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_moduli_composition_word_dial_sets_2026_07_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_moduli_composition_word_dial_sets_2026_07_02.py",
+ "seed": 40670,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "51fbd2f0",
+ "started_utc": "20260923T051750Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "547aa8919e4da78fd35c5851485f409277233c17059b6dcf0f6b6a3a11a139b4",
+ "stdout_tail": "STATUS PASS FAIL=0 TOTAL=2882\nVERIFIED exact induction all words k<=6; exponent bijections k=1..4; uniform spacing; endpoints; exhaustive r*>=1/2 boundary k<=10; Block07 matches; D_1={0, 2^0, 2^-1}; D_2={0, 2^0, 2^(-1/3), 2^(-2/3), 2^-1}\nD_3={0, 2^0, 2^(-1/7), 2^(-2/7), 2^(-3/7), 2^(-4/7), 2^(-5/7), 2^(-6/7), 2^-1}; D_4={0, 2^0, 2^(-1/15), 2^(-2/15), 2^(-3/15), 2^(-4/15), 2^(-5/15), 2^(-6/15), 2^(-7/15), 2^(-8/15), 2^(-9/15), 2^(-10/15), 2^(-11/15), 2^(-12/15), 2^(-13/15), 2^(-14/15), 2^-1}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T051750Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

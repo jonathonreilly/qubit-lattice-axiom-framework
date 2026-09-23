@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_live_m2_joint_archive_graph_permutation_capacity_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_live_m2_joint_archive_graph_permutation_capacity_2026_08_14.py",
+ "seed": 40552,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "51fbd2f0",
+ "started_utc": "20260923T051552Z",
+ "elapsed_s": 38.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f4c72b4bc4483156f9958aefb37c7bdcd42bcc90a21b0c1835fd4b6ebfb20997",
+ "stdout_tail": "rent authority, exact Block91 receipt, exhaustive archive graph and dilation-route censuses, symbolic conservation, branch isometry and amplitude-support census, NN compiler, full-carrier escape, coverage partition, restricted dimension boundary, ledger, guard, debit, and source boundary are checked\nN5_RESOLUTION lattice_wide: 333 of 474 archive-overlap placements receive the present conditional NN unitary compiler; all 2,458 nonzero duplicate-source order/branch maps admit geometry/label-specific abstract six-lock unitary extensions on the full semantic carrier, while their common controlled NN compiler, four route traps, 175 write overlaps, global selection, actuality, renewal, time, energy, gravity, retention, and TOE closure remain open\nBOUNDARY: injective archive collisions admit an exact conservative graph-permutation law; all 13,400 dilation prerequisites pass and 333/335 archive words route on supplied Record-free corridors. Duplicate-source archives confined to their source-target union have an exact one- or two-fixed-slot deficit, but the existing full semantic carrier has sufficient abstract capacity for every nonzero branch; each order has 1,229 nonzero labels, three geometries have order-dependent support, and no common branch-controlled NN archive is constructed. The law/compiler, global atlas, actual outcome, renewal/cadence, source/action typing, gravity, audit retention, obligation retirement, and TOE percentage movement are not supplied\nTOTAL: PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T051631Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

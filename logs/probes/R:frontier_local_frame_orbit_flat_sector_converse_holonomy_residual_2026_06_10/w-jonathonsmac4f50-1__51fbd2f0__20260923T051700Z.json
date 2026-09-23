@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_local_frame_orbit_flat_sector_converse_holonomy_residual_2026_06_10",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_local_frame_orbit_flat_sector_converse_holonomy_residual_2026_06_10.py",
+ "seed": 40620,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "51fbd2f0",
+ "started_utc": "20260923T051700Z",
+ "elapsed_s": 3.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f1b811f18d7e89c9e8db2fdc20c2a2cf96ae0d96207a9fe4ca2d36fc8909835e",
+ "stdout_tail": "NDISTINGUISHABLE from free on these probes \u2014 Fock spectra coincide AND all single-particle return records coincide (particle-hole conjugacy); only the eigenvalue lists differ. Genericity of the separating flux is LOAD-BEARING  (Fock spectra equal; max single-particle record gap 0.0e+00)\n==============================================================================\nPart 4  (R4) fixed-driver pointer-frame selection remains open\n==============================================================================\n  [PASS] WITH THE DRIVER FIXED, the frame choice changes the physical outcome (which basis dephases): ||D_u1(rho) - D_u2(rho)|| = O(1) \u2014 the pointer-frame SELECTION question is real, dynamics-level, and NOT touched by this note  (difference 0.138)\n  [PASS] while the JOINT co-rotation is exactly covariant (D_{gu}(g rho g\u2020) = g D_u(rho) g\u2020): the kinematic absolute-frame content is vacuous; the SELECTION content is the part that persists\n==============================================================================\nTOTAL: PASS=18 FAIL=0\n==============================================================================\nSCOPE: the runner verifies the finite-surface local fusion, flat-sector\n  orbit-converse, holonomy residual existence, and fixed-driver pointer-frame\n  selection non-dissolution described in the paired source note. It does not\n  derive gauge dynamics, a pointer-frame selector, a probability law, or any\n  completeness claim for holonomy. No audit grade is authored here.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T051703Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_local_frame_orbit_flat_sector_converse_holonomy_residual_2026_06_10.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_live_m2_conservative_archive_lock_instrument_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_live_m2_conservative_archive_lock_instrument_2026_08_14.py",
+ "seed": 40550,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "51fbd2f0",
+ "started_utc": "20260923T051550Z",
+ "elapsed_s": 2.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d3a5cd5151d67e1ef02ea3d900f13c1d83bae6e1047c71b7ef2f66ad8ec1a8f8",
+ "stdout_tail": "rded same-carrier Record append without a supplied branch or host-selected m; current fixed one-site NN Admissibility compatibility remains open, as do live-substrate state authority, extensional law/hazard selection, clean-resource genesis and renewal, physical actuality, asynchronous overlap confluence, clock, gravity source typing, approved-primitive registration, audit retention, obligation retirement, and TOE percentage movement\nper_element: checked six Kraus operators, all clean matter/target basis rows, coherent matter/target rows, four branch isometries, exact target projectors, and the unarchived reset control\nper_site: checked five live roles, three arbitrary targets, every one of 15 coherent-core support sites, all 73 ordered core primitives, prior Records, occupancy, replay, and exact source edge\nper_mode: checked both live matter basis values, three coherent matter states, four (m,b) outcomes, eight target bases, 24 proper-cubic frames, no-event, and refusal\nper_block: checked Block71 archive/lock, Block72 ordered NN coherent core and rank-four query mismatch, Block73 Kraus family, the exact rank-two Gamma query, six-outcome Naimark isometry, hybrid Record update, blank-neighborhood marginal mismatch, and seven-item sufficient live-route payload\nlattice_wide: checked and not executed \u2014 this is one finite candidate instrument; no homogeneous full-Z3 process, overlap confluence, capacity renewal, physical clock, or gravity coupling is claimed\nTOTAL: PASS=10 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T051552Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_live_m2_conservative_archive_lock_instrument_2026_08_14.txt against the .txt beside this log"
+  ]
+ }
+}

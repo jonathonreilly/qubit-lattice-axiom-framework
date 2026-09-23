@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_lp_identification_fails_off_m0_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_lp_identification_fails_off_m0_2026_06_12.py",
+ "seed": 40625,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "51fbd2f0",
+ "started_utc": "20260923T051705Z",
+ "elapsed_s": 41.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=44 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "00d2d391a25be0c33d4e0b0916d785a02505c17ac3612a1481fe841e12750356",
+ "stdout_tail": ": f(0.0)=-1.137e-03, f(4.0)=4.336e-04\nPASS: LP bisection bracket m=0.5 T=0.2 GL=224 :: f(0.0)=1.574e-01, f(4.0)=-3.013e-01\nPASS: full Harper GL 160/224 doubling m=0.5 T=0.2 :: |delta mu|=2.728e-12, tol=1.0e-06\nPASS: LP GL 160/224 doubling m=0.5 T=0.2 :: |delta mu|=4.441e-16, tol=1.0e-06\nPASS: full Harper far-below-band control m=0.5 T=0.2 :: |delta Omega(mu=-20.0)|=1.455e-38, tol=1.0e-12\nPASS: LP far-below-band control m=0.5 T=0.2 :: |LP(mu=-20.0)|=1.226e-35, tol=1.0e-12\nPASS: measured deviation table m=0.5 T=0.2 :: dev=0.2010378416, expected=0.2010378416, tol=5.0e-04\nPASS: full Harper bisection bracket m=0.5 T=0.4 GL=160 :: f(0.0)=-9.164e-04, f(4.0)=3.648e-04\nPASS: LP bisection bracket m=0.5 T=0.4 GL=160 :: f(0.0)=3.507e-01, f(4.0)=-2.510e-01\nPASS: full Harper bisection bracket m=0.5 T=0.4 GL=224 :: f(0.0)=-9.164e-04, f(4.0)=3.648e-04\nPASS: LP bisection bracket m=0.5 T=0.4 GL=224 :: f(0.0)=3.507e-01, f(4.0)=-2.510e-01\nPASS: full Harper GL 160/224 doubling m=0.5 T=0.4 :: |delta mu|=2.501e-12, tol=1.0e-06\nPASS: LP GL 160/224 doubling m=0.5 T=0.4 :: |delta mu|=3.997e-14, tol=1.0e-06\nPASS: full Harper far-below-band control m=0.5 T=0.4 :: |delta Omega(mu=-20.0)|=3.310e-21, tol=1.0e-12\nPASS: LP far-below-band control m=0.5 T=0.4 :: |LP(mu=-20.0)|=2.424e-18, tol=1.0e-12\nPASS: measured deviation table m=0.5 T=0.4 :: dev=0.1994054030, expected=0.1994054030, tol=5.0e-04\nPASS: Harper finite-field anchor mu*(0.2,0.2) :: mu=1.7078862995, anchor=1.7086, tol=5.0e-03\nTOTAL: PASS=44 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T051746Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_lp_identification_fails_off_m0_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

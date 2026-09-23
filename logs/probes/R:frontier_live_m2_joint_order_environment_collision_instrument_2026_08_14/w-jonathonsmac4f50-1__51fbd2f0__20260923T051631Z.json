@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_live_m2_joint_order_environment_collision_instrument_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_live_m2_joint_order_environment_collision_instrument_2026_08_14.py",
+ "seed": 40591,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "51fbd2f0",
+ "started_utc": "20260923T051631Z",
+ "elapsed_s": 21.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7fdcf23d518258da2fbd127ffde2134a3a435f4cc2e4c7aebf68a44255f3ae83",
+ "stdout_tail": "s, six arbitrary archive qubits, 52 guarded physical sites, and 37 arbitrary unrecorded route-background factors\nN5_RESOLUTION per_mode: refusal, no-event, both joint dilation orders, all 16 branch pairs per order, replay, retry, occupied write, ambient Record, archive-overlap, and trapped-route modes are checked\nN5_RESOLUTION per_block: current authority, exact Block90 receipt, full semantic-overlap census, joint completeness, branch isometries, order covariance, NN compiler, complete ledger, corridor guard, resource debit, and source boundary are checked\nN5_RESOLUTION lattice_wide: both dilation orders normalize on all 921 finite ready write-disjoint semantic-overlap placements; only 445 archive-disjoint placements receive the present cross-semantic unitary compiler skeleton, while outcome projection, global event sets, 474 archive overlaps, two trapped routes, 175 write overlaps, actuality, renewal, time, energy, and gravity are not claimed\nBOUNDARY: a supplied equal order coin converts the exact sqrt(2) semantic noncommutation into one normalized 34-outcome transaction, and the present construction reaches 445 of 921 semantic-overlap placements on supplied Record-free corridors; two trapped route geometries, 474 archive-overlap placements, 175 write-overlap placements, the selected global law/atlas, outcome actuality, clean renewal, cadence, source/action typing, gravity, audit retention, obligation retirement, and TOE percentage movement remain open\nTOTAL: PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T051652Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

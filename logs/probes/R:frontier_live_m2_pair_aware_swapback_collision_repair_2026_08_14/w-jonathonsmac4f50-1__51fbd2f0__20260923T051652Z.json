@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_live_m2_pair_aware_swapback_collision_repair_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_live_m2_pair_aware_swapback_collision_repair_2026_08_14.py",
+ "seed": 40612,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "51fbd2f0",
+ "started_utc": "20260923T051652Z",
+ "elapsed_s": 6.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "36c62e13952930358f126c5f380c235362af7b14ee938998d6fd8cd049667f36",
+ "stdout_tail": " six branch labels, 36 branch pairs, two packets, and two source edges are typed\nN5_RESOLUTION per_site: each event has eight semantic sites, 32 guarded route sites, zero cross-event semantic/write hits, six transient pair-route overlaps, and one exact ambient-Record obstruction on the hostile fixture\nN5_RESOLUTION per_mode: compact-collision, swap-back repair, both macro orders, event, no-event, refusal, replay, semantic-overlap, and transformed-pair modes are checked\nN5_RESOLUTION per_block: current authority, Block89 receipt, route macros, full semantic unitary, branch maps, complete ledger, compiler symmetry, and resource boundary are checked\nN5_RESOLUTION lattice_wide: all 1,134 finite ready semantic-disjoint routed collisions have cross-semantic path-existence checks only; a supplied Record-free route domain, obstacle-aware global atlas, arbitrary event sets, renewal, time, energy, and gravity are not claimed\nBOUNDARY: on a supplied Record-free jointly reserved corridor, pair-aware swap-back routing repairs the exact Block89 symmetric physical collision and permits both events without a selector; an ambient permanent Record on a route-only site forces identity refusal, 921 write-disjoint semantic-overlap pairs include an exact noncommuting witness, 175 ready pairs overlap in writes, and current authority supplies neither the corridor domain/compiler atlas nor live-M2 formation, outcome compilation, renewal, cadence, source/action typing, or gravity\nTOTAL: PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T051659Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

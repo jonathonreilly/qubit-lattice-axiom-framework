@@ -1,0 +1,37 @@
+{
+ "task": "R:frontier_max_record_entropy_sector_blind_2026_06_15",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_max_record_entropy_sector_blind_2026_06_15.py",
+ "seed": 40668,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "51fbd2f0",
+ "started_utc": "20260923T051748Z",
+ "elapsed_s": 1.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=35, FAIL=0",
+   "PASS=35 FAIL=0"
+  ],
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7509536fdfa704f0403a3bc6ceabb9fb97c5bde8e9464dafac94d96931d46dbe",
+ "stdout_tail": "cked \u2014 each registered dial setting is resolved on its own: r in {0, 1/2, 0.597, 0.773, 1} all land inside the admissible window Q = 1/3 + 2r/3 subset [1/3, 1], the four non-trivial ones give the distinct values [0.666667, 0.731333, 0.848667, 1.0], and only r = 1/2 coincides with the computed max-entropy selector r_star = 0.500003.\nper_site: checked and not executed \u2014 the carrier is one finite M_3(C) generation space with no spatial site index; the three cyclic slots are permuted by C and every executed check is slot-symmetric (P0 = (I+C+C^2)/3), so no per-slot statement is produced.\nper_mode: checked \u2014 the two C3 isotype modes are resolved separately: P_s has rank 1 and P_d has rank 2, both commuting with C, their record weights are (w_s, w_d) = (0.500000, 0.500000) at r = 1/2 with S2 = 0.693147180560 = ln 2, and giving the two modes unequal multiplicities moves the argmax to r = 1.500050.\nper_block: checked \u2014 each supplied gauge block dimension is run separately: d = 1, 2, 3, 8 leave the generation record weights invariant to 1e-12 and give selectors d=1: 0.499883, d=2: 0.499883, d=3: 0.499883, d=8: 0.499883, all equal to the bare selector within 2e-3, which is exactly the sector-blindness.\nlattice_wide: checked and not executed \u2014 this is a finite M_3(C) tensor gauge-factor computation; no lattice, no volume scaling and no thermodynamic limit is executed, so the sector-blindness is certified only on the supplied separable class, with PASS=35, FAIL=0.\n\nTOTAL: PASS=35 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T051750Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

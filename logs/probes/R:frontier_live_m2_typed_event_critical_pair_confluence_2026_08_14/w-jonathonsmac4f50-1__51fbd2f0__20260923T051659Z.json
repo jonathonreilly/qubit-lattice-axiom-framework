@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_live_m2_typed_event_critical_pair_confluence_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_live_m2_typed_event_critical_pair_confluence_2026_08_14.py",
+ "seed": 40619,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "51fbd2f0",
+ "started_utc": "20260923T051659Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "fa33144261d4b4578de95ae697e99c23d67f869799c7b1821632f97ab5452df3",
+ "stdout_tail": "ology walls without adoption, retention, or score movement\nMETRICS overlap_placements=2365 ready_overlap=2230 write_disjoint_ready=2055 abstract_disjoint_ready=1134 routed_order_residual=0.728431359\nN5_RESOLUTION per_element: all six Block86 Kraus labels and all 36 two-event branch pairs are typed; zero labels are inferred from host control\nN5_RESOLUTION per_site: the exact 15-site core, eight-site abstract support, three writes, fixed inputs, matter slot, and transformed source edge are separated\nN5_RESOLUTION per_mode: disjoint, overlapping, write-disjoint, abstract-disjoint, entangled-input, no-event, event, replay, and symmetric-conflict modes are checked\nN5_RESOLUTION per_block: current authority, Block86 receipt, CP maps, routed core, Record/resource/archive/source ledger, scheduler, and depth-two control are checked\nN5_RESOLUTION lattice_wide: all finite relative core-overlap placements over 24 proper-cubic orientations are exhausted; arbitrary finite/infinite enabled-event confluence, liveness, renewal, time, energy, and gravity are not claimed\nBOUNDARY: disjoint full physical footprints give exact two-event branch and complete-ledger confluence, but Record-write and abstract-instrument disjointness do not protect the routed core; the covariant all-conflicts-refuse rule is safe but deadlocks the symmetric fixture, while stochastic arbitration, readable symmetry breaking, or a merged collision law and clean-resource renewal remain supplied choices\nTOTAL: PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T051700Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

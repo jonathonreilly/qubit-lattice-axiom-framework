@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_lp_boundary_identification_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_lp_boundary_identification_2026_06_12.py",
+ "seed": 40623,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "51fbd2f0",
+ "started_utc": "20260923T051703Z",
+ "elapsed_s": 1.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=21 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5581ddffeb661c647644d712d356173bff9c6c0ad57cf746863784119f4f9a0b",
+ "stdout_tail": "imit: LP chi(mu=-20.0, T=0.3) tends to zero below the band\nPASS: full boundary bracket invariant at T=0.2\nPASS: LP boundary bracket invariant at T=0.2\nPASS: full GL 160/224 doubling at T=0.2: max |delta chi| <= 1.0e-06\nPASS: LP GL 128/256 doubling at T=0.2: max |delta chi| <= 1.0e-06\nT=0.2 eps_star=-1.699267578 mu_LP=-1.693408203 |eps_star-mu_LP|=0.005859375\nPASS: full boundary bracket invariant at T=0.3\nPASS: LP boundary bracket invariant at T=0.3\nPASS: full GL 160/224 doubling at T=0.3: max |delta chi| <= 1.0e-06\nPASS: LP GL 128/256 doubling at T=0.3: max |delta chi| <= 1.0e-06\nT=0.3 eps_star=-1.737353516 mu_LP=-1.731494141 |eps_star-mu_LP|=0.005859375\nPASS: full boundary bracket invariant at T=0.4\nPASS: LP boundary bracket invariant at T=0.4\nPASS: full GL 160/224 doubling at T=0.4: max |delta chi| <= 1.0e-06\nPASS: LP GL 128/256 doubling at T=0.4: max |delta chi| <= 1.0e-06\nT=0.4 eps_star=-1.787158203 mu_LP=-1.782763672 |eps_star-mu_LP|=0.004394531\nDeviation table:\n  T=0.2: eps_star=-1.699267578, mu_LP=-1.693408203, abs_diff=0.005859375\n  T=0.3: eps_star=-1.737353516, mu_LP=-1.731494141, abs_diff=0.005859375\n  T=0.4: eps_star=-1.787158203, mu_LP=-1.782763672, abs_diff=0.004394531\nPASS: comparison datum: full-field boundary tracks LP sign change within 2.00e-02\nDatum: finite-field boundary tracking accepted at the requested tolerance.\nScope caveat: m=0 square lattice; full boundary uses finite B=2*pi/24, whereas LP is the B->0 band-curvature candidate.\nTOTAL: PASS=21 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T051705Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

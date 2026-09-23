@@ -1,0 +1,32 @@
+{
+ "task": "R:frontier_lorentz_naturalness_gap_quantified_obstruction_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_lorentz_naturalness_gap_quantified_obstruction_2026_06_06.py",
+ "seed": 40623,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "51fbd2f0",
+ "started_utc": "20260923T051703Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "48c00f0f993532f261c044cc01e7a5e4261aaf394c488d888e686667d48fbc0f",
+ "stdout_tail": "and is never built: the Wilson bare-coupling relation beta = 2N/g^2 evaluated at beta = 6 with N = 3, giving exactly g^2 = 1, and the identification of the inverse spacing with M_Pl = 1.22e19 GeV. There is no spacing array, no neighbour rule and no site index.\n  per_mode: checked and not executed - the power-divergent loop that is said to regenerate the marginal coefficient is never evaluated. Its outcome is supplied in closed order-of-magnitude form as alpha_s/(4pi), which with g^2 = 1 is the exact constant 1/(16*pi^2), so no loop momentum, no shell integration and no individual mode ever enters the arithmetic.\n  per_block: inventory-only - the four comparator rows named photon, electron, nucleon and quark/gluon are a typed-in table of (label, bound, mu) triples taken from the SME/Kostelecky-Russell literature, not sectors this runner decomposes anything into. Each row is pushed through the same single expression, gamma_crit = log10(dv_UV/bound)/log10(M_Pl/mu), so the per-row spread reflects the imported inputs rather than any block structure computed here.\n  lattice_wide: checked and not executed - the widest thing computed is one scalar suppression factor (mu/M_Pl)^gamma at mu = 1 GeV for gamma in {0.1, 0.2, 0.3}, plus a single e-fold estimate exp(-1). The runner states its own limits in its closing lines: it does not derive the regeneration coefficient, the physical gamma range, or the absence of hidden protection mechanisms, so nothing whole-system is being established.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T051703Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run '  lattice_wide: checked and not executed - the widest thing computed is one scal' vs cache 'TOTAL: 8 PASS / 0 FAIL'",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

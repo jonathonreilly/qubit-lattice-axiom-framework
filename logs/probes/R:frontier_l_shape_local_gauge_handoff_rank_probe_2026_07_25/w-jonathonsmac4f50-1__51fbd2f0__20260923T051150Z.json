@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_l_shape_local_gauge_handoff_rank_probe_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_l_shape_local_gauge_handoff_rank_probe_2026_07_25.py",
+ "seed": 40310,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "51fbd2f0",
+ "started_utc": "20260923T051150Z",
+ "elapsed_s": 1.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c6145ebd1d5b83ffc914d8f581dcb5fa125dda300eecffd7d6433599d26bae37",
+ "stdout_tail": "ndependent_maximum_pairs\": 178, \"independent_minimum_pairs\": 178, \"independent_rows\": [{\"alternating_GF2_rank\": 10, \"distance_census\": {\"0\": 2, \"1\": 32, \"2\": 88, \"3\": 56}, \"owner_order\": [0, 1, 2], \"residual_pairs\": 178}, {\"alternating_GF2_rank\": 10, \"distance_census\": {\"0\": 1, \"1\": 33, \"2\": 89, \"3\": 55}, \"owner_order\": [0, 2, 1], \"residual_pairs\": 178}, {\"alternating_GF2_rank\": 10, \"distance_census\": {\"0\": 4, \"1\": 32, \"2\": 86, \"3\": 56}, \"owner_order\": [1, 0, 2], \"residual_pairs\": 178}, {\"alternating_GF2_rank\": 10, \"distance_census\": {\"0\": 4, \"1\": 36, \"2\": 86, \"3\": 52}, \"owner_order\": [1, 2, 0], \"residual_pairs\": 178}, {\"alternating_GF2_rank\": 10, \"distance_census\": {\"0\": 1, \"1\": 37, \"2\": 89, \"3\": 51}, \"owner_order\": [2, 0, 1], \"residual_pairs\": 178}, {\"alternating_GF2_rank\": 10, \"distance_census\": {\"0\": 3, \"1\": 37, \"2\": 87, \"3\": 51}, \"owner_order\": [2, 1, 0], \"residual_pairs\": 178}], \"source_maximum_pairs\": 178, \"source_minimum_pairs\": 178}, \"status\": \"finite-L-loop-rank-and-declared-endpoint-class-closed-full-chart-and-recurrence-open\", \"supplied\": [\"the finite exterior target used only as a comparison oracle\", \"first-owner finite patch order in the diagnostic scaling rows\", \"the local star chart and direction-mode labels\", \"one reusable loop scratch M2 and a bounded factor program\"], \"whole_patch_transition\": {\"distance_census\": {\"0\": 48, \"1\": 174, \"2\": 176, \"3\": 56}, \"distance_gt_2_pairs\": 56, \"pairs\": 454}}\nL_SHAPE_RANK10_FIVE_LOOP_CHANNELS_CLOSED_RECURRENT_HANDOFF_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T051151Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

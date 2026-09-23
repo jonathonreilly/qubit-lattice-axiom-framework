@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_matter_loop_flux_response_no_uniform_sign_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_matter_loop_flux_response_no_uniform_sign_2026_06_11.py",
+ "seed": 40668,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "51fbd2f0",
+ "started_utc": "20260923T051748Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "fd5f17fcae8d4aaf8631c933c4f791cf86bcefff104bf4c980fd523a9b5710ef",
+ "stdout_tail": "nate with particle parity (even K para, odd K dia; 6+6 exact);\n  N=4n+2 half-filled even-K closed shells FLIP to V''>0; open shells are\n  level-crossing cusps (no curvature).  The author's working uniform\n  screening-sign hypothesis is refuted on this tested finite-ring matter\n  sector.  Fillings are SUPPLIED data.  Decoupling and cusp-closure\n  statements are scoped to the tested instances.  NOT claimed: the b3\n  coefficient, non-abelian antiscreening, the gauge self-energy (named\n  gap: requires the not-yet-derived autonomous gauge action), the\n  parity-averaged or thermodynamic-limit sign (named follow-on),\n  interacting matter, d=3, any beta-function number.  The\n  Peskin-Schroeder formula (X3) is not used anywhere.  Statuses are\n  pipeline-derived; the audit lane grades.\nper_element: PASS | every executed massless twisted-ring eigenvalue agrees elementwise with the exact cosine spectrum at the declared tolerance\nper_site: PASS | the random zero-total-flux link transformation across all twelve ring sites leaves the ground-state energy invariant\nper_mode: PASS | the twelve smooth N=4n filling modes split into opposite curvature signs for even and odd closed shells\nper_block: PASS | both N=4n+2 half-filled blocks flip positive while both neighboring open-shell blocks exhibit resolved slope cusps\nlattice_wide: PASS | the complete finite-ring suite N=8,10,12,14,16 has consistent smooth responses and an exactly flux-flat filled band, but no thermodynamic-limit sign is claimed\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T051748Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

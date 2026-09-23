@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_matter_color_depolarization_adm2_necessary_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_matter_color_depolarization_adm2_necessary_2026_06_09.py",
+ "seed": 40667,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "51fbd2f0",
+ "started_utc": "20260923T051747Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "515c64a62aded93d34c15839a25a5ef6825e171f7384f078d07429c6fc259b8e",
+ "stdout_tail": "ess_projection  su3 part of rho = su3 part of traceless(rho)\n[E2] E[H] = traceless(rho) for H = traceless(phi phi^dag), E[phi phi^dag]=rho\n  PASS  mean_force_equals_traceless_rho[t=0.0]  ||E[H]-traceless(rho)|| = 0.00e+00\n  PASS  mean_force_equals_traceless_rho[t=0.3]  ||E[H]-traceless(rho)|| = 2.78e-17\n  PASS  mean_force_equals_traceless_rho[t=0.7]  ||E[H]-traceless(rho)|| = 0.00e+00\n  PASS  mean_force_equals_traceless_rho[t=1.0]  ||E[H]-traceless(rho)|| = 0.00e+00\n[E3] Ad-invariant increment => mean=0 => traceless(rho)=0 => rho=I/3\n  PASS  unpolarized_has_zero_mean_force  rho=I/3: ||E[H]|| = 0.00e+00\n  PASS  polarized_has_nonzero_mean_force  every polarized rho gives a nonzero su(3) mean force => non-central increment\n[E4] ||traceless(rho)||_F^2 = Tr(rho^2) - 1/3, monotone in color purity\n  PASS  order_param_identity  ||traceless(rho)||^2 = purity - 1/3 (exact)\n  PASS  order_param_monotone_in_purity  strictly increasing; 0 iff rho=I/3\n[E5] CONVERSE (named isotropic-Gaussian model): covariance isotropic at I/3\n  PASS  covariance_isotropic_at_unpolarized  cov ~ 0.2222 I_8, eig spread 5.6e-17\n  PASS  covariance_anisotropy_monotone  aniso(t): 0.000, 0.579, 0.842, 0.951, 0.991, 1.000\n[E6] guard: necessary direction is first-moment and noise-model-independent\n  PASS  mean_force_model_independent  mean force = equivariant projection of rho, independent of noise model\n  PASS  equivariant_force_not_vacuously_zero  polarized equivariant mean force = 1.039 != 0\n\nTOTAL: PASS=18 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T051748Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

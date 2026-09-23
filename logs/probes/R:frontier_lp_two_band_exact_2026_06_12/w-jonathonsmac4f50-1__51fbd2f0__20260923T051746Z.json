@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_lp_two_band_exact_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_lp_two_band_exact_2026_06_12.py",
+ "seed": 40666,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "51fbd2f0",
+ "started_utc": "20260923T051746Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6ae1c13297ba87250cafeddc3176d6458b4574b5687fd296027f523097e9933f",
+ "stdout_tail": ".1273318495e-02  rel_dev=7.479e-03  PT(intra,inter)=(1.227e+00,-1.186e+00)\nmass=0.3  chi_exact=3.9441294484e-02  chi_PT=3.9175811591e-02  rel_dev=6.731e-03  PT(intra,inter)=(1.687e+00,-1.648e+00)\nmass=0.5  chi_exact=3.0817431655e-02  chi_PT=3.0744459999e-02  rel_dev=2.368e-03  PT(intra,inter)=(3.179e+00,-3.148e+00)\nPASS: full two-band PT matches exact chi m=0.0 :: rel_dev=7.858e-03, tol=2.000e-02\nPASS: full two-band PT matches exact chi m=0.2 :: rel_dev=7.479e-03, tol=2.000e-02\nPASS: full two-band PT matches exact chi m=0.3 :: rel_dev=6.731e-03, tol=2.000e-02\nPASS: full two-band PT matches exact chi m=0.5 :: rel_dev=2.368e-03, tol=2.000e-02\nPASS: anti-fabrication: m=0.5 interband contribution is nontrivial :: max |interband|=3.148e+00, min=1.0e-06\n\nS4: computed near-cancellation structure of the PT split\nPASS: near-cancellation: both PT terms exceed 5x the net response at every mass :: min term/net ratio=18.491, factor_min=5.0\nPASS: interband magnitude is strictly increasing with mass on the fixed grid :: interband magnitudes=7.938808e-01, 1.185645e+00, 1.648141e+00, 3.147761e+00\n\nS5: note hygiene\nPASS: canonical claim type is present and noncanonical Type front matter is absent :: bounded_theorem with single claim-type field\nPASS: status authority and no-promotion statements are present :: audit status remains independent\nPASS: landed LP off-m0 predecessor is linked as the comparison-context dependency :: dependency graph receives the predecessor edge\n\nTOTAL: PASS=13 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T051747Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_lp_two_band_exact_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

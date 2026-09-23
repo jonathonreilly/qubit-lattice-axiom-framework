@@ -1,0 +1,32 @@
+{
+ "task": "R:exact_law_uniqueness_selection_primary_source_audit_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "exact",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/exact_law_uniqueness_selection_primary_source_audit_2026_07_14.py",
+ "seed": 29736,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e40a262d",
+ "started_utc": "20260923T021536Z",
+ "elapsed_s": 0.2,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "87692534c56a698cfdac9057338e58418ff658a80046bf7016d13d5c1cff5d86",
+ "stdout_tail": "urce ledger includes S0019-9958(64)90223-2\nFAIL A primary-source ledger includes 10.1109/TIT.1980.1056144\nFAIL A primary-source ledger includes 10.1109/TIT.1983.1056747\nFAIL A primary-source ledger includes 1405.5563\nFAIL A primary-source ledger includes gr-qc/9904062\nFAIL A primary-source ledger includes 2004.14810\nFAIL A primary-source ledger includes the-concept-of-the-ruliad\nFAIL A route ledger has one start marker\nFAIL A route ledger has one end marker\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/exact_law_uniqueness_selection_primary_source_audit_2026_07_14.py\", line 670, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/exact_law_uniqueness_selection_primary_source_audit_2026_07_14.py\", line 652, in main\n    document_and_source_contracts()\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/exact_law_uniqueness_selection_primary_source_audit_2026_07_14.py\", line 343, in document_and_source_contracts\n    header, routes = parse_table(text, ROUTE_START, ROUTE_END)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/exact_law_uniqueness_selection_primary_source_audit_2026_07_14.py\", line 73, in parse_table\n    body = text.split(start, 1)[1].split(end, 1)[0]\n           ~~~~~~~~~~~~~~~~~~~~^^^\nIndexError: list index out of range\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T021536Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:extensional_nearest_neighbor_rule_deep_probe_2026_07_13",
+ "type": "runner-reexecution",
+ "lane": "extensional",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/extensional_nearest_neighbor_rule_deep_probe_2026_07_13.py",
+ "seed": 29738,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e40a262d",
+ "started_utc": "20260923T021538Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=66 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ebe767a550343a6078449275d7dd7904d14005374bff76daf71341ff69fbd879",
+ "stdout_tail": "=============================================\nPASS E CNOT is a reversible local write\nPASS E applying the reversible write again erases the copied bit\nPASS E global reversible access therefore does not give absolute permanence\nPASS E ideal two-register copy is an isometry\nPASS E its Kraus blocks are the supplied pointer projectors\nPASS E pointer Kraus family is trace preserving\nPASS E nonselective instrument dephases but contains no realized label\nPASS E outcome weights use the trace pairing\nPASS E the isometry already presupposes system-register tensor composition\nPASS E repeated append-only writes require fresh capacity or export\n\n===============================================================================\nF - Deep-probe classification\n===============================================================================\nPASS F note carries boundary marker: 282,429,536,480\nPASS F note carries boundary marker: append-only cellular relation\nPASS F note carries boundary marker: reversible quantum cellular automaton\nPASS F note carries boundary marker: quantum instrument\nPASS F note carries boundary marker: select the physical rule\nPASS F note carries boundary marker: does not derive tensor composition\nPASS F note carries boundary marker: actualization remains\nPASS F note declares no axiom need\n\n===============================================================================\nTOTAL PASS=66 FAIL=0\nRESULT: PASS\nBOUNDARY: explicit finite rule-family probes; no physical rule is selected\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T021538Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

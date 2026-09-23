@@ -1,0 +1,57 @@
+
+===============================================================================
+A - One fixed rule per model does not identify one common value
+===============================================================================
+PASS A model lambda=1 contains exactly one fixed law object
+PASS A law lambda=1 gives one answer per profile
+PASS A law lambda=1 answers normalize
+PASS A law lambda=1 is positive
+PASS A law lambda=1 is label covariant
+PASS A model lambda=2 contains exactly one fixed law object
+PASS A law lambda=2 gives one answer per profile
+PASS A law lambda=2 answers normalize
+PASS A law lambda=2 is positive
+PASS A law lambda=2 is label covariant
+PASS A two admissible models disagree on one observable
+PASS A one-fixed-rule syntax is true in both models
+PASS A structural theory cannot decide the separated value
+PASS A exact reference to lambda one decides the value
+PASS A exact reference to lambda two decides the other value
+
+===============================================================================
+B - Physical equivalence is relative to a complete test repertoire
+===============================================================================
+PASS B raw laws are record-equivalent under read-only protocols
+PASS B one hidden-sensitive context separates the raw laws
+PASS B raw presentation difference alone need not be physical
+PASS B complete context choice determines the equivalence quotient
+
+===============================================================================
+C - Functional uniqueness within a law is not uniqueness across laws
+===============================================================================
+PASS C zero law has exactly one answer
+PASS C one law has exactly one answer
+PASS C two deterministic laws disagree
+PASS C deterministic typing removes sampling only
+
+===============================================================================
+D - Documentation and live-surface boundary
+===============================================================================
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/existence_uniqueness_exact_law_reference_probe_2026_07_14.py", line 158, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/existence_uniqueness_exact_law_reference_probe_2026_07_14.py", line 150, in main
+    documentation_contract()
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/existence_uniqueness_exact_law_reference_probe_2026_07_14.py", line 136, in documentation_contract
+    note = NOTE.read_text(encoding="utf-8").lower().replace("*", "").replace("`", "")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-1/docs/work_history/repo/review_feedback/EXISTENCE_UNIQUENESS_AND_EXACT_LAW_REFERENCE_NOTE_2026-07-14.md'

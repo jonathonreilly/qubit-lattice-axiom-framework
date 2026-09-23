@@ -1,0 +1,35 @@
+{
+ "task": "R:fermion_u1_quantum_links_gauss_law_support_condition_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "fermion",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/fermion_u1_quantum_links_gauss_law_support_condition_check_2026_09_03.py",
+ "seed": 30049,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e40a262d",
+ "started_utc": "20260923T022049Z",
+ "elapsed_s": 2.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=34 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c9dad716bf1acdfcce62f60544ba63e74c0df5586d738a24d7a99bc6b2ba5217",
+ "stdout_tail": " in the code space at <S_f> = 1.000000000\nPASS E5 [energy1e-9,N1e-8] coupled cube ground state: E_0 = -5.466823694822 at lambda = 0 and -6.980814328073 at lambda = 1, both at <N> = 4.000000000, exactly half filling\nPASS E6 [1e-12] the coupled sea is neutral with zero mean flux: <n_v> = 1/2 to 9.7e-15, <rho_v> = 0 to 8.9e-16 at every one of the 8 corners, <E_e> = 0 to 6.2e-14 on every one of the 12 links, at lambda = 0 and lambda = 1 alike\nPASS F1 [exact] 1248 occurring all-but-one prefixes force the last value within the supplied one-corner relation\nPASS F2 [exact] 11432 occurring prefix/missing-record pairs have nonempty local projections; first forcing after2 cube/1 plaquette records\nPASS F3 [exact] 720 cube/24 plaquette orders reconstruct each supplied relation (24/6 patterns); no global formation\nPASS F4 [exact] all complete corner tables equal the zero set of the actual declared G_v, including staggered signs\nPASS F5 [exact] local/global boundary: all-four-fermion-zero prefix has local completions but no global Gauss completion; a locally permitted prefix gets stuck\nSUMMARY: an exactly gauge-invariant minimal coupling of the fermion's U(1) to a designed spin-1/2 link role; Gauss's law is a record-diagonal corner relation whose solution set on the cube projects onto the half-filled fermion patterns; global formation remains open; spin-1/2 links carry a coordination-parity condition; the coupled sea is neutral with zero mean flux. No photon is shown.\nTOTAL: PASS=34 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T022052Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/fermion_u1_quantum_links_gauss_law_support_condition_check_2026_09_03.txt against the .txt beside this log"
+  ]
+ }
+}

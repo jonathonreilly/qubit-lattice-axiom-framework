@@ -1,0 +1,35 @@
+{
+ "task": "R:fermion_compact_u1_links_staggered_gauss_law_join_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "fermion",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/fermion_compact_u1_links_staggered_gauss_law_join_check_2026_09_03.py",
+ "seed": 30046,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e40a262d",
+ "started_utc": "20260923T022046Z",
+ "elapsed_s": 3.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=34 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8808c1e8a5df3437454741357177e60ecd80829ac2e9d59454a52ce2a0034ac3",
+ "stdout_tail": "8; half filling needs N = L/2, so L = 0 mod 4 and L = 6 has an empty Gauss sector\nPASS E2 [exact] pure electric, no fermion, static +1 and -1 charges on the L = 8 ring at S = 1: V(d) = (g^2/2) d EXACTLY in rational arithmetic for d = 0..4 at g^2 = 1 and 4 -- a string whose energy grows linearly with the separation; S = 1 is already exact, the minimiser using only E in {0, 1}\nPASS E3 [numerical 1e-9] with the fermion hop at half filling (t = 1) the finite raw-sector potential screens relative to pure electric: at g^2 = 4 the potential is 2.271563 2.383425 4.295402 2.819090 against the unbroken 2, 4, 6, 8, and it is not monotone -- V(4) < V(3) at g^2 = 1 too (0.796888 0.796906 1.277804 1.026768 against 0.5, 1.0, 1.5, 2.0); raw Gauss dimensions [234, 150, 160, 132, 150], <N> = 4 exactly at every separation\nPASS E4 [numerical 1e-4] the mechanism, off the d = 4 ground state at g^2 = 4: the flux does not span the separation but localises on the sources, sum_e |<E_e>| = 1.603 against 4 unbroken, dying to 0.0094 three links away; the screening charge shows as a HOLE <n> = 0.181 at the +1 source and a fermion <n> = 0.981 at the -1 source\nPASS E5 [numerical 1e-6] finite-size cross-check on the L = 4 ring: V = 0.762517 0.594051 at g^2 = 1 and 2.271118 2.169659 at g^2 = 4, against the pure-electric 0.5, 1.0 and 2.0, 4.0 -- saturated there too, so this finite comparison occurs at both lengths; the values are finite-size numbers and carry no infinite-volume statement\nTOTAL: PASS=34 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T022049Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "task": "R:factorized_commuting_signed_membership_probe_2026_07_16",
+ "type": "runner-reexecution",
+ "lane": "factorized",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/factorized_commuting_signed_membership_probe_2026_07_16.py",
+ "seed": 29738,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e40a262d",
+ "started_utc": "20260923T021538Z",
+ "elapsed_s": 111.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f3a7e2d22da8087ee9182e6721f2f71fe4c9443c4b78dad1d61a118ce6addcd4",
+ "stdout_tail": "LAW 97388 6 144 8 192 0 0\nLANES 1024 6144 5120 0 [(6, 5, 1, 79, 5, False, 'H0'), (6, 5, 1, 79, 5, True, 'H1')]\nROTATIONS 147456 0\nDOMAIN 360 2160 1080 1080 (360, 360, 360) 0 0\nXOR_ROTATIONS 0\nDELETIONS 0\nANCESTRY supplied-five-bit-literals host-product-enumeration factorized-xor-inputs\nRESULT FACTORIZED_COMMUTING_SIGNED_MEMBERSHIP\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260923T021730Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

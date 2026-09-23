@@ -1,0 +1,28 @@
+FAIL the Cycle-276 synthesis note exists :: /Users/jonBridger/.probe-workers/probes-view/slot-1/docs/work_history/repo/review_feedback/FINAL_M64_PHYSICAL_M2_COMPILER_TOURNAMENT_SYNTHESIS_CYCLE276_NOTE_2026-07-17.md
+PASS every route clause has an explicit disposition :: []
+PASS no single reviewed route closes the whole campaign contract :: 
+PASS direct and gauge routes close complementary clauses and may not be spliced :: 
+PASS anti-feature-splicing controls are explicit :: (('Cycle-248 bounded full-Fock E', 'Cycle-251 bounded sectorwise G', 'different physical codes and operator dictionaries'), ('Cycle-271 local process quotient', 'bounded global preparation', 'the comparison map may be system-spanning'), ('Cycle-272 proper-frame carrier', 'matter-parity join', 'the tested rank-correct bindings still impose P_m=b^N'), ('Cycle-260 zero-failure parity shuttle', 'bounded physical macro update', 'the macro-transition support is 4L-1'), ('Cycle-255 Record dependency depth', 'physical occurrence close', 'the completion transcript survives FSWAP deletion'), ('proper-cubic frame covariance', 'derived time', 'the frame group acts on supplied 3D space'), ('Cycle-273 uniform rank-correct family', 'Cycle-273 all-frame directional family', 'the former fails 20 frames while the latter is noncommuting'), ('Cycle-274 operator separation', 'prepared physical readout', 'an operator residual supplies no witness-state or physical-M2 preparation'), ('Cycle-275 global algebraic sector states', 'bounded preparation or odd-state fixture', 'Wilson projectors and membranes are system-spanning and the states are total-even'))
+PASS all five TOE receiving lanes were reconnoitered :: {'operational quantum / Records': (42, 18, 63), 'causal time / clock': (32, 17, 58), 'inertia / matter': (58, 24, 77), 'gravity / source / resource': (34, 12, 58), 'Born / probability / realized history': (30, 14, 74)}
+PASS strict <= integrated <= conditional for every lane :: {}
+PASS matter is the strongest integrated lane while gravity has the lowest strict floor :: 
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/final_m64_physical_m2_compiler_tournament_synthesis_cycle276_2026_07_17.py", line 437, in <module>
+    main()
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/final_m64_physical_m2_compiler_tournament_synthesis_cycle276_2026_07_17.py", line 428, in main
+    exact_fixture_contract()
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/final_m64_physical_m2_compiler_tournament_synthesis_cycle276_2026_07_17.py", line 370, in exact_fixture_contract
+    note = normalized(NOTE)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/final_m64_physical_m2_compiler_tournament_synthesis_cycle276_2026_07_17.py", line 246, in normalized
+    return " ".join(path.read_text(encoding="utf-8").split()).lower()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-1/docs/work_history/repo/review_feedback/FINAL_M64_PHYSICAL_M2_COMPILER_TOURNAMENT_SYNTHESIS_CYCLE276_NOTE_2026-07-17.md'

@@ -1,0 +1,8 @@
+LAW 97388 6 144 8 192 0 0
+LANES 1024 6144 5120 0 [(6, 5, 1, 79, 5, False, 'H0'), (6, 5, 1, 79, 5, True, 'H1')]
+ROTATIONS 147456 0
+DOMAIN 360 2160 1080 1080 (360, 360, 360) 0 0
+XOR_ROTATIONS 0
+DELETIONS 0
+ANCESTRY supplied-five-bit-literals host-product-enumeration factorized-xor-inputs
+RESULT FACTORIZED_COMMUTING_SIGNED_MEMBERSHIP

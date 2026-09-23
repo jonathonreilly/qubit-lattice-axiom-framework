@@ -1,0 +1,16 @@
+ok A.c0 c0 = 1/2; pair weights c0 p, c0 q, c0 r = 3/2, 1/2, 1 (c0 r = 1 since p + q = 2r)
+ok A.neutral mean pair weight over the partner's six contents = 1
+ok A.isolated isolated record: pi_x = 1, all neighbours at rate 1: kappa = 1 exactly (both means)
+ok A.one one record neighbour: kappa = 6/(1 + 5 c w): equal: arith 12/17, geometric (c w)^(-5/6) = 3/2^(-5/6); opposite: arith 12/7, geometric (c w)^(-5/6) = 1/2^(-5/6); orthogonal: arith 1, geometric (c w)^(-5/6) = 1^(-5/6)
+ok A.two two record neighbours (not adjacent to each other): kappa = (1/pi_x)/((1/(c w1) + 1/(c w2) + 4)/6): equal-equal 1/2, equal-opposite 6/5, equal-orthogonal 12/17, opposite-opposite 3, opposite-orthogonal 12/7, orthogonal-orthogonal 1
+ok A.below below one only next to equal contents (aligned); above one next to opposite contents; exactly one next to orthogonal ones
+ok A.average arithmetic kappa averaged uniformly over the partner: 382/357 > 1; under the stationary pair law: 352/357 < 1; mean log kappa (geometric): uniform 0.0400 > 0, stationary -0.0363 < 0: the sign depends on the average
+ok B.zero_total 40 random record configurations on the 3^3 torus: the sources log kappa of the local clock sum to zero exactly
+ok B.local and vanish at every site whose own and neighbours' pair weights are one: the field u = -log pi has no tail
+ok C.sum pull on A + pull on B = -(E_A S_B - E_B S_A) grad G: zero at every separation iff S_A/E_A = S_B/E_B
+ok C.kappa a record with block 53's source log kappa and a packet with block 55's pull equally only if log kappa = -(gamma/6) E_rec
+   so kappa = exp(-gamma E_rec/6): the free number becomes the record's energy E_rec in ambient ticks, with gamma universal; a block 54 walker at rest has none (no 2x2 rest term anticommutes with H), so kappa = 1
+   gamma is the coefficient of the supplied field energy F = (2/gamma) sum (phi_x - phi_y)^2; every gamma > 0 meets blocks 53-55 (covariance, weight one, kept ledger, action = reaction): nothing in them fixes gamma (ATTEMPT.md step 7); the pull at weak field is -(gamma/(4 pi)) E_A E_B / R
+SUMMARY: PARTIAL kappa of block 50's clock is 1 for an isolated record and configuration-dependent otherwise, with sources that sum to zero (no far field); equal pulls force log kappa = -(gamma/6)E_rec; nothing fixes gamma
+HIT: block 50's local clock gives an isolated record kappa = 1 exactly and a record with neighbours a kappa that depends on their contents (at (3,1,2), c0 = 1/2: one neighbour 12/17, 12/7, 1 for equal, opposite, orthogonal; two equal 1/2, two opposite 3); read as block 53's rate field it is exactly u = -log pi, so its sources log kappa sum to zero on every torus and it has no far field: it cannot be block 53's kappa.
+HIT: a record that sources block 53's field and falls as block 54's packets do pulls a packet equally and oppositely only if log kappa = -(gamma/6) E_rec (block 55's gamma): kappa gives way to the record's energy, which a block 54 walker at rest does not have; gamma itself is left free by every present clause.

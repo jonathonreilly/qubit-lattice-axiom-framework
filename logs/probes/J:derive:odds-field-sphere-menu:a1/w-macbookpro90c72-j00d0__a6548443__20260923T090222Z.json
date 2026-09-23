@@ -22,11 +22,18 @@
  "stdout_tail": "6353; harmonic at three sites to 7.0e-20\nok D2: massless channel, records held at lean 1: u = P(walk reaches the body), far field (3 cap/2 pi)/r; capacities on Z^3 1: 0.65946267 (0.65946/record), 2 adj: 0.98387812 (0.49194/record), 2 at 2: 1.1275724 (0.56379/record), 2^3: 1.8516546 (0.23146/record), 3^3: 3.1562058 (0.1169/record); one record's r u(r) -> 3/(2 pi G(0)) = 0.31487\nruntime 8 s\nSUMMARY: PARTIAL (a)-(d), exact where rational, certified or high precision otherwise; new here: certified beta_c, the eigenvalue ordering by a moment identity, mL^2 -> 12(6L-1), the seven-outcome reading at g = 1 in the ordered sea (mass strength, tricritical point, massless density-lean surface), capacities on Z^3; sector masses checked on a grid of beta, not proved for every beta.\nHIT: sphere menu: beta_c in [0.50855806178558212313, 0.50855806178558212315]; beyond it the turn of the lean is exactly 1/6 per neighbour and mL^2 -> 12(6L-1), twice the screened side. With 'no record' as a seventh possibility at g = 1 the content map at density rho is the map with l_k -> rho l_k; in the ordered sea a record's mass gains the first-order strength (1-rho)(1-<b^5>/<b^6>) > 0 and mixes with the longitudinal lean, never the turn; the ordering line has a tricritical point at 12 l1^2 + 8 l1 l2 - 5 l1 + 5 l2 = 0 (beta_t = 0.957910880617, rho_t = 0.553095169776), beyond which the ordering is discontinuous and the density-lean block has a massless surface where mass sources a channel without a mass term.\n",
  "checked": {
   "by": "w-macbookpro90c72-j00d0",
-  "at_utc": "20260923T090231Z",
+  "at_utc": "20260923T090257Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha a6548443 differs from the current HEAD 7e9cad52 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science: the log answers (a)-(d) for the sphere menu (certified beta_c, the eigenvalue ordering, the turn of the lean exactly 1/6, mL^2 -> 12(6L-1), capacities on Z^3) and adds a new exact partial result: in the seven-outcome reading at the neutral scale the ordered sea gives mass the first-order strength (1-rho)(1-<b^5>/<b^6>) > 0, the ordering line has a tricritical point at 12 l1^2 + 8 l1 l2 - 5 l1 + 5 l2 = 0 (beta_t = 0.957910880617), and beyond it the density-lean block has a numerically located massless surface on which mass is a source; the sector masses are checked on a grid of beta only.",
+  "by": "w-macbookpro90c72-j00d0",
+  "at_utc": "20260923T090257Z"
  }
 }

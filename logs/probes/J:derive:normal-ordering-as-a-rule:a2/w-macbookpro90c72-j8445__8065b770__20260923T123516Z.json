@@ -22,11 +22,18 @@
  "stdout_tail": "^-t I0(t/3)^3 dt agrees to 2.5e-7); with gamma = 12/|c0| block 56's strong field is phi0 = 1/(1 + g0 m/|c0|), ledger m/(1 + x) < 12/(gamma g0) = |c0|/g0 = 0.78727 (block 76's gamma = 10.51 would give 0.75295), field energy at most |c0|/(4 g0) = 0.19682; the family theta T_site + (1 - theta) T_bond has long-wavelength stiffness theta |c0|/12, gamma = 12/(theta |c0|): A and C fix only the uniform value\nSUMMARY: PARTIAL normal ordering R_site = E_sea - c0 sum w has weight one, vanishes with its first variation on uniform rates, and its second variation is (|c0|/12)|q|^2_lat + B(q) with the interband bubble B = O(q^4 log q) <= 0: exactly block 56's member with gamma = 12/|c0| = 10.0519 plus R_bond; the equally admissible bond subtraction leaves no long-wavelength stiffness, so A and C do not fix the counter-term: it is supplied (the unit's HIT condition fails)\nHIT: the filled sea's second variation in the rates is exactly (c0/12) sum_j (2 + 2 cos q_j) + B(q), B(q) = -(1/4N) sum_k (eps_k+q - eps_k)^2 (1 - dhat_k.dhat_k+q)/(eps_k + eps_k+q) <= 0 and O(q^4 log(1/q)); hence the site-normal-ordered sea energy is block 56's member (2/gamma) sum_bonds (phi_x - phi_y)^2 with gamma = 12/|c0| = 10.0519, identically, plus the bond-normal-ordered energy R_bond, whose long-wavelength stiffness is exactly 0; so the induced coupling is 12/|c0| (block 76's 10.51 is a finite-q value), the saturation |c0|/g0 = 0.7873, and the counter-term is a supplied clause, not a consequence of clauses A and C\n",
  "checked": {
   "by": "w-macbookpro90c72-j8445",
-  "at_utc": "20260923T123523Z",
+  "at_utc": "20260923T123549Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 8065b770 differs from the current HEAD 7cea4b57 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science: a new exact partial result. The unit's own HIT condition (the counter-term follows from clauses A and C) is NOT met, and the answer is the opposite. Exact: the filled sea's second variation in the rates is (c0/12) sum_j (2 + 2cos q_j) + B(q), with the interband bubble B <= 0 and O(q^4 log(1/q)) (proved; dense-spectrum finite differences on an equal-twist 6^3 torus agree to 1e-7). Hence the site-normal-ordered energy's long-wavelength stiffness is exactly |c0|/12 = 0.09948 (c0 = -1.193801121), gamma_ind = 12/|c0| = 10.052, not block 76's finite-q 10.51. R_site = block 56's member + R_bond identically (they agree on the chessboard at every amplitude), and the per-bond remainder has exactly zero long-wavelength stiffness. This settles attempt a1's open sign question and its chessboard mismatch (it is exactly 1). The counter-term is supplied: A and C fix only its uniform value and first variation. Saturation |c0|/g0 = 0.7873 with Watson's g0. Overlap with a1 (per-bond family, supplied verdict) is disclosed. Same model family; a referee from another family is needed.",
+  "by": "w-macbookpro90c72-j8445",
+  "at_utc": "20260923T123549Z"
  }
 }

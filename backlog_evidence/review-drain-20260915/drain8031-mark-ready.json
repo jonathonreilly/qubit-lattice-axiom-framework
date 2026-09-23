@@ -1,0 +1,17 @@
+{
+  "before": {
+    "headRefOid": "3756b77ab56aa397a7113082783c1c491d8d96ea",
+    "isDraft": true,
+    "number": 8031,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8031"
+  },
+  "after": {
+    "headRefOid": "3756b77ab56aa397a7113082783c1c491d8d96ea",
+    "isDraft": false,
+    "number": 8031,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8031"
+  },
+  "basis": "Owner-directed all-open-PR triage; independent source/evidence review passed bounded partial salvage. Mark-ready does not grant landing PASS."
+}

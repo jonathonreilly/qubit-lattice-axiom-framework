@@ -1,0 +1,20 @@
+{
+  "base": "ed129b572ea8364ed8d2792a0860b07ab94056a5",
+  "tree": "6169d31d9e2dd57ccfe31b73802b8c29a6125f78",
+  "source_count": 76,
+  "original_roundtrips": 70,
+  "v1_snapshots": 2,
+  "inputs_count": 96,
+  "original_dispositions_verified": 70,
+  "capture_count": 1,
+  "checks": 17,
+  "math_checks": 16,
+  "resource_checks": 1,
+  "raw_science_equal_to_original": true,
+  "cache_stdout_exactly_matches_receipt": true,
+  "input_fingerprint_matches_discovery": true,
+  "elapsed_sec": 2.9648730754852295,
+  "sampled_peak_aggregate_rss_bytes": 102121472,
+  "watchdog_samples": 61,
+  "executed_by_reviewer": false
+}

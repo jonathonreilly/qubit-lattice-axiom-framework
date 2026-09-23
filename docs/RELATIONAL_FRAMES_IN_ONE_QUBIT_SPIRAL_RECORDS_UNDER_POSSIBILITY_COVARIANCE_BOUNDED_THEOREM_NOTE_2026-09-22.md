@@ -49,9 +49,13 @@ qubit's own possibilities.
 
 3. **The record carries the frame.** At every core site, the rotation
    taking its value to each neighbour's value is one of the six signed
-   angles, and that angle names the bond direction. From there the ice
-   support, the role letters and the emulation of soldered rules go
-   through as in open PRs 8676 and 8679. Under the static reading each
+   angles, and that angle names the bond direction. From there the
+   emulation of soldered rules, which reads only bond directions, goes
+   through as in open PRs 8676 and 8679. The ice-support readout and the
+   role letters of those pull requests use absolute coordinate labels,
+   which a spiral record does not carry: every core site of a static
+   spiral sees the same differences to its neighbours (open PR 8743).
+   Under the static reading each
    core site is the unique covariant completion of its three back
    neighbours, and also of its three forward neighbours (with the
    orientation reversed).
@@ -69,7 +73,9 @@ qubit's own possibilities.
    covariance, the alphabet routes to gravity survive inside the qubit's
    own possibility domain, and exactly where the assembly already puts
    them: the sweep ({alphabet, order law}) and the static reading
-   ({alphabet, reading}). The first-formation prices of open PR 8676 need
+   ({alphabet, reading}). With relational letters alone, roles are then
+   supplied, since a relational record carries no role pattern (open PR
+   8743). The first-formation prices of open PR 8676 need
    fixed letters: 2/9 in corner growth, certainty in a designed order.
    Under possibility covariance both drop to zero, since both orders grow
    by lone children. Two things are not established here: whether every

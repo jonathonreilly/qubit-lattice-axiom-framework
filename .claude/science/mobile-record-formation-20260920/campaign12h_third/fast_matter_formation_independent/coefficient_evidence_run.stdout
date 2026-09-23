@@ -1,0 +1,38 @@
+{
+  "method": "Independent physical-sector enumeration and exact rational/algebraic coefficients, with explicit author basis ordering; no author-builder imports.",
+  "rows": [
+    {
+      "model": "star_4",
+      "dimension": 45,
+      "P_dimension": 29,
+      "H2_max_entry_difference": 0.0,
+      "H4_max_entry_difference": 0.0,
+      "coefficient_entries_compared": 1682
+    },
+    {
+      "model": "two_A_path",
+      "dimension": 9,
+      "P_dimension": 4,
+      "H2_max_entry_difference": 0.0,
+      "H4_max_entry_difference": 0.0,
+      "coefficient_entries_compared": 32
+    },
+    {
+      "model": "ring_S1",
+      "dimension": 19,
+      "P_dimension": 9,
+      "H2_max_entry_difference": 0.0,
+      "H4_max_entry_difference": 0.0,
+      "coefficient_entries_compared": 162
+    },
+    {
+      "model": "ring_S2",
+      "dimension": 39,
+      "P_dimension": 19,
+      "H2_max_entry_difference": 4.440892098500626e-16,
+      "H4_max_entry_difference": 1.7763568394002505e-15,
+      "coefficient_entries_compared": 722
+    }
+  ],
+  "all_stored_cyclic_H2_H4_and_first_losses_match": true
+}

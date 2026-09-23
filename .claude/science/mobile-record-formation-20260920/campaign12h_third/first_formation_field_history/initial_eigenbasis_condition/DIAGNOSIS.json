@@ -1,0 +1,8 @@
+{
+  "failure_line": 45,
+  "spin": 16,
+  "epsilon": 0.06913328984437152,
+  "eigenvector_condition_number": 16.493992350323396,
+  "relative_eigen_residual": 1.3468375825683448e-14,
+  "repair": "Use unitary complex Schur decomposition and triangular matrix exponential, which does not require an invertible well-conditioned eigenvector matrix. The parameter schedule, equations and target are unchanged. Replace a vacuous vector self-comparison with the time-zero initial-state reconstruction check."
+}

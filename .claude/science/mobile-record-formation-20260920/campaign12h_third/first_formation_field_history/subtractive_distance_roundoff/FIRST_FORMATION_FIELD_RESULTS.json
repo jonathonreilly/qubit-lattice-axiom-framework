@@ -1,0 +1,285 @@
+{
+  "created_utc": "2026-09-23T00:28:58.206294+00:00",
+  "source_sha256": "e5576f9786773c4885e2734b4a1d83afdd54bc4a5baf15e17ce9c482b4b21f2f",
+  "delta": 1.3,
+  "kappa": 0.7,
+  "K": 1.0,
+  "J": 2.6,
+  "first_rate": 5.6,
+  "rotor_cutoff": 32,
+  "rotor_refinement_cutoff": 64,
+  "rotor_state_refinement_norm": 1.7704985240976122e-14,
+  "rows": [
+    {
+      "spin": 2,
+      "epsilon": 0.4654746681256314,
+      "N2_sector_dimension": 25,
+      "Schur_basis_orthogonality": 3.426241406111931e-15,
+      "relative_Schur_residual": 2.705314039044203e-15,
+      "times": [
+        {
+          "time": 0,
+          "microscopic_no_event_probability": 0.9999999999999996,
+          "rotor_no_event_probability": 1.0,
+          "unnormalized_density_trace_error": 5.960464477539063e-08,
+          "conditional_field_trace_error": 5.960464477539063e-08,
+          "target_electric_tail_probability": 6.049098525591002e-35,
+          "trace_error_divided_by_epsilon": 1.2805131805648199e-07
+        },
+        {
+          "time": 0.05,
+          "microscopic_no_event_probability": 0.9243212813744133,
+          "rotor_no_event_probability": 0.7557837414557255,
+          "unnormalized_density_trace_error": 1.4244614759823468,
+          "conditional_field_trace_error": 1.6923070896637153,
+          "target_electric_tail_probability": 2.357289422729558e-05,
+          "trace_error_divided_by_epsilon": 3.0602341513413687
+        },
+        {
+          "time": 0.1,
+          "microscopic_no_event_probability": 0.7965748083710295,
+          "rotor_no_event_probability": 0.5712090638488149,
+          "unnormalized_density_trace_error": 1.0636041345065426,
+          "conditional_field_trace_error": 1.5409705147436317,
+          "target_electric_tail_probability": 0.00018906185759056364,
+          "trace_error_divided_by_epsilon": 2.2849882224299183
+        },
+        {
+          "time": 0.25,
+          "microscopic_no_event_probability": 0.5890494480304893,
+          "rotor_no_event_probability": 0.2465969639416065,
+          "unnormalized_density_trace_error": 0.6694744452589115,
+          "conditional_field_trace_error": 1.509361599738599,
+          "target_electric_tail_probability": 0.00012597919106181513,
+          "trace_error_divided_by_epsilon": 1.438261824117614
+        },
+        {
+          "time": 0.5,
+          "microscopic_no_event_probability": 0.38250824538723815,
+          "rotor_no_event_probability": 0.06081006262521797,
+          "unnormalized_density_trace_error": 0.4216317839804897,
+          "conditional_field_trace_error": 1.7870572415880637,
+          "target_electric_tail_probability": 2.5501615155229383e-05,
+          "trace_error_divided_by_epsilon": 0.9058103756286293
+        }
+      ]
+    },
+    {
+      "spin": 4,
+      "epsilon": 0.25495097567963926,
+      "N2_sector_dimension": 49,
+      "Schur_basis_orthogonality": 5.540674671606805e-15,
+      "relative_Schur_residual": 4.23621874310212e-15,
+      "times": [
+        {
+          "time": 0,
+          "microscopic_no_event_probability": 1.0000000000000009,
+          "rotor_no_event_probability": 1.0,
+          "unnormalized_density_trace_error": 7.300048299977713e-08,
+          "conditional_field_trace_error": 7.300048299977713e-08,
+          "target_electric_tail_probability": 4.596259510801957e-41,
+          "trace_error_divided_by_epsilon": 2.8633145178273994e-07
+        },
+        {
+          "time": 0.05,
+          "microscopic_no_event_probability": 0.7812842744115862,
+          "rotor_no_event_probability": 0.7557837414557255,
+          "unnormalized_density_trace_error": 0.6607549151491903,
+          "conditional_field_trace_error": 0.8592378968971153,
+          "target_electric_tail_probability": 3.161525861623882e-11,
+          "trace_error_divided_by_epsilon": 2.5916940046523584
+        },
+        {
+          "time": 0.1,
+          "microscopic_no_event_probability": 0.6297111981551426,
+          "rotor_no_event_probability": 0.5712090638488149,
+          "unnormalized_density_trace_error": 0.5802190590807179,
+          "conditional_field_trace_error": 0.9625091636093464,
+          "target_electric_tail_probability": 1.2180400678953177e-09,
+          "trace_error_divided_by_epsilon": 2.275806388008481
+        },
+        {
+          "time": 0.25,
+          "microscopic_no_event_probability": 0.3657911556860371,
+          "rotor_no_event_probability": 0.2465969639416065,
+          "unnormalized_density_trace_error": 0.3168733589433481,
+          "conditional_field_trace_error": 0.9775677677896271,
+          "target_electric_tail_probability": 4.3119261031034424e-10,
+          "trace_error_divided_by_epsilon": 1.242879569684479
+        },
+        {
+          "time": 0.5,
+          "microscopic_no_event_probability": 0.15128530657659253,
+          "rotor_no_event_probability": 0.06081006262521797,
+          "unnormalized_density_trace_error": 0.14471007490321722,
+          "conditional_field_trace_error": 1.1774924989900213,
+          "target_electric_tail_probability": 1.582161443718346e-10,
+          "trace_error_divided_by_epsilon": 0.5675996121115215
+        }
+      ]
+    },
+    {
+      "spin": 8,
+      "epsilon": 0.1343709624716425,
+      "N2_sector_dimension": 97,
+      "Schur_basis_orthogonality": 1.1946820713745446e-14,
+      "relative_Schur_residual": 6.948163219950838e-15,
+      "times": [
+        {
+          "time": 0,
+          "microscopic_no_event_probability": 0.9999999999999956,
+          "rotor_no_event_probability": 1.0,
+          "unnormalized_density_trace_error": 6.664001874625056e-08,
+          "conditional_field_trace_error": 6.664001874625056e-08,
+          "target_electric_tail_probability": 2.0392136583248508e-55,
+          "trace_error_divided_by_epsilon": 4.959406222926638e-07
+        },
+        {
+          "time": 0.05,
+          "microscopic_no_event_probability": 0.741986371790434,
+          "rotor_no_event_probability": 0.7557837414557255,
+          "unnormalized_density_trace_error": 0.38804469537351777,
+          "conditional_field_trace_error": 0.5178575525600262,
+          "target_electric_tail_probability": 9.205955281375111e-26,
+          "trace_error_divided_by_epsilon": 2.887861247964271
+        },
+        {
+          "time": 0.1,
+          "microscopic_no_event_probability": 0.5831466344187731,
+          "rotor_no_event_probability": 0.5712090638488149,
+          "unnormalized_density_trace_error": 0.3001450539919783,
+          "conditional_field_trace_error": 0.5196381041886453,
+          "target_electric_tail_probability": 4.050584956936267e-24,
+          "trace_error_divided_by_epsilon": 2.2337047266095196
+        },
+        {
+          "time": 0.25,
+          "microscopic_no_event_probability": 0.2852376387085922,
+          "rotor_no_event_probability": 0.2465969639416065,
+          "unnormalized_density_trace_error": 0.14980017222223344,
+          "conditional_field_trace_error": 0.5457120356139491,
+          "target_electric_tail_probability": 7.984272907857243e-25,
+          "trace_error_divided_by_epsilon": 1.1148254761801464
+        },
+        {
+          "time": 0.5,
+          "microscopic_no_event_probability": 0.08675608579506,
+          "rotor_no_event_probability": 0.06081006262521797,
+          "unnormalized_density_trace_error": 0.052771893845181266,
+          "conditional_field_trace_error": 0.6326682058402687,
+          "target_electric_tail_probability": 3.248018800315726e-25,
+          "trace_error_divided_by_epsilon": 0.39273287081141645
+        }
+      ]
+    },
+    {
+      "spin": 16,
+      "epsilon": 0.06913328984437152,
+      "N2_sector_dimension": 193,
+      "Schur_basis_orthogonality": 1.2909688151023398e-14,
+      "relative_Schur_residual": 9.948654383233095e-15,
+      "times": [
+        {
+          "time": 0,
+          "microscopic_no_event_probability": 1.000000000000008,
+          "rotor_no_event_probability": 1.0,
+          "unnormalized_density_trace_error": 5.960464477539063e-08,
+          "conditional_field_trace_error": 5.960464477539063e-08,
+          "target_electric_tail_probability": 2.8823947517020184e-94,
+          "trace_error_divided_by_epsilon": 8.62169946050142e-07
+        },
+        {
+          "time": 0.05,
+          "microscopic_no_event_probability": 0.7512665204676858,
+          "rotor_no_event_probability": 0.7557837414557255,
+          "unnormalized_density_trace_error": 0.20456643838679833,
+          "conditional_field_trace_error": 0.2714142742734944,
+          "target_electric_tail_probability": 2.667986498259356e-64,
+          "trace_error_divided_by_epsilon": 2.959014952815139
+        },
+        {
+          "time": 0.1,
+          "microscopic_no_event_probability": 0.5749212017443318,
+          "rotor_no_event_probability": 0.5712090638488149,
+          "unnormalized_density_trace_error": 0.15674281279042054,
+          "conditional_field_trace_error": 0.2734412936722145,
+          "target_electric_tail_probability": 1.1739812237844059e-64,
+          "trace_error_divided_by_epsilon": 2.2672552274493234
+        },
+        {
+          "time": 0.25,
+          "microscopic_no_event_probability": 0.25766981515372606,
+          "rotor_no_event_probability": 0.2465969639416065,
+          "unnormalized_density_trace_error": 0.07118408669241921,
+          "conditional_field_trace_error": 0.2789577687731503,
+          "target_electric_tail_probability": 4.968824645746858e-64,
+          "trace_error_divided_by_epsilon": 1.0296643896545978
+        },
+        {
+          "time": 0.5,
+          "microscopic_no_event_probability": 0.06763474059499415,
+          "rotor_no_event_probability": 0.06081006262521797,
+          "unnormalized_density_trace_error": 0.020151737892151175,
+          "conditional_field_trace_error": 0.2956559745377884,
+          "target_electric_tail_probability": 2.3283028113803398e-64,
+          "trace_error_divided_by_epsilon": 0.29149108826609427
+        }
+      ]
+    },
+    {
+      "spin": 32,
+      "epsilon": 0.03508647326336185,
+      "N2_sector_dimension": 385,
+      "Schur_basis_orthogonality": 2.3011222159523243e-14,
+      "relative_Schur_residual": 1.5983250866149657e-14,
+      "times": [
+        {
+          "time": 0,
+          "microscopic_no_event_probability": 1.0000000000000002,
+          "rotor_no_event_probability": 1.0,
+          "unnormalized_density_trace_error": 5.960464477539063e-08,
+          "conditional_field_trace_error": 6.664001874625056e-08,
+          "target_electric_tail_probability": 0.0,
+          "trace_error_divided_by_epsilon": 1.6987927036152488e-06
+        },
+        {
+          "time": 0.05,
+          "microscopic_no_event_probability": 0.7546102274532023,
+          "rotor_no_event_probability": 0.7557837414557255,
+          "unnormalized_density_trace_error": 0.10555349142443535,
+          "conditional_field_trace_error": 0.13976088603883136,
+          "target_electric_tail_probability": 0.0,
+          "trace_error_divided_by_epsilon": 3.0083813392170384
+        },
+        {
+          "time": 0.1,
+          "microscopic_no_event_probability": 0.572222330260412,
+          "rotor_no_event_probability": 0.5712090638488149,
+          "unnormalized_density_trace_error": 0.08007241433276464,
+          "conditional_field_trace_error": 0.14004519169051735,
+          "target_electric_tail_probability": 0.0,
+          "trace_error_divided_by_epsilon": 2.282144851998511
+        },
+        {
+          "time": 0.25,
+          "microscopic_no_event_probability": 0.24951222594222436,
+          "rotor_no_event_probability": 0.2465969639416065,
+          "unnormalized_density_trace_error": 0.0350301315621603,
+          "conditional_field_trace_error": 0.14073199169732648,
+          "target_electric_tail_probability": 0.0,
+          "trace_error_divided_by_epsilon": 0.9983942044907549
+        },
+        {
+          "time": 0.5,
+          "microscopic_no_event_probability": 0.06256114580157995,
+          "rotor_no_event_probability": 0.06081006262521797,
+          "unnormalized_density_trace_error": 0.009000837661615848,
+          "conditional_field_trace_error": 0.14314118437774973,
+          "target_electric_tail_probability": 0.0,
+          "trace_error_divided_by_epsilon": 0.2565329833538654
+        }
+      ]
+    }
+  ],
+  "scope": "Complete microscopic pre-first-event two-record sector on a genuine four-edge cycle, compared to finite-rate killed rotor field dynamics. Full electric-tail contribution retained. No post-formation field approximation or volume limit."
+}

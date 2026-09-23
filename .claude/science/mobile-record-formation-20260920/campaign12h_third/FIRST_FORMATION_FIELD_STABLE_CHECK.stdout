@@ -1,0 +1,15 @@
+{
+  "source_sha256": "d0293a4e34612fcda9c65c0f090c580c2e9fced062257c68adba6c561f6edc06",
+  "result_sha256": "562fc4fd24be26a4b6f7d6351022a41f7340b5ca41e72873b0ef111a6500317b",
+  "largest_refinement_error": 1.7704985240976122e-14,
+  "largest_spin_last_time": {
+    "time": 0.5,
+    "microscopic_no_event_probability": 0.06256114580157995,
+    "rotor_no_event_probability": 0.06081006262521797,
+    "unnormalized_density_trace_error": 0.009000837661614953,
+    "conditional_field_trace_error": 0.1431411843777339,
+    "target_electric_tail_probability": 0.0,
+    "numerical_rotor_norm_defect": 6.938893903907228e-17,
+    "trace_error_divided_by_epsilon": 0.25653298335383984
+  }
+}

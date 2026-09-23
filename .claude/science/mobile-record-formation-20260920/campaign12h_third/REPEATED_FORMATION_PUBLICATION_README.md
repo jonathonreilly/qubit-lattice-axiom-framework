@@ -1,62 +1,83 @@
-# Repeated record formation after local motion
+# Repeated record formation and generated field dynamics
 
-This regular PR supplies a controlled finite-time description of repeated
-record formation in a specified quantum lattice model. Records can move off
-an A site and the same site can refill again. Continued filling is not
-unconditional: exact dark states retain a nonzero probability of stopping.
+This regular PR gives two controlled descriptions of sites forming new records
+after previous records move away. The balanced regime has a finite effective
+formation law and exact later-event probabilities. A different scale retains
+field interactions, finite formation and the rapid matter motion that follows
+births. Its pure-field limit is established before the first formation event.
 
-The two checked notes are:
+## Claims and independent coverage
 
-- [Repeated formation](FINITE_RATE_REPEATED_RECORD_FORMATION.md): a
-  fixed-graph Lindblad limit with an explicit O(epsilon) density error,
-  finite marked event registers, and the complete four-leaf example.
-- [Locality and rotor limit](LOCAL_FINITE_RATE_FORMATION_AND_ROTOR_LIMIT.md):
-  star-local effective operators, spin-independent fixed-volume estimates,
-  and a bounded-rotor limit without a prescribed relative spin/time-scale
-  rate.
+- [Repeated formation](FINITE_RATE_REPEATED_RECORD_FORMATION.md) proves a
+  fixed-graph Lindblad approximation with an explicit O(epsilon) density
+  error and finite marked event registers. On the complete four-leaf star,
+  the same center refills twice with eventual probability 11/15 for coherent
+  birth channels and 2/3 for resolved channels. Exact dark states retain the
+  remaining probability, for every positive microscopic parameter choice.
+- [Locality and rotor limit](LOCAL_FINITE_RATE_FORMATION_AND_ROTOR_LIMIT.md)
+  proves star-local operators, spin-independent fixed-volume estimates and
+  a bounded-rotor limit without a prescribed relative spin/time-scale rate.
+- [Field interactions with finite formation](FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md)
+  proves an O(epsilon), spin-independent fixed-volume approximation by a
+  generator with fast second-order matter motion, finite fourth-order
+  interactions and finite birth jumps. The full-cluster spectral rotation
+  and an explicit dissipative correction control the otherwise large
+  off-block error. In an initially vacant-B sector on even cubic periods
+  at least six, a joint spin limit gives generated electric and magnetic
+  field dynamics until the first formation, with a finite exponential
+  first-event clock and controlled time/mark probabilities.
 
-In the four-leaf example the center can refill twice. Its eventual second
-formation probability is 11/15 with coherent birth channels and 2/3 with
-resolved channels, for every positive microscopic parameter choice. The
-first-event loss is identical for the two instruments; their different
-post-event states determine the later difference.
+The first two notes have a separate-context [blind reconstruction](finite_formation_independent/REPORT.md)
+and [subsequent source comparison](finite_formation_independent/COMPARISON.md),
+with no required correction. The third has a completed [source-informed
+independent review](fast_matter_formation_independent/REPORT.md), also with no
+required correction; it is not described as blind. Root verification receipts
+bind the actual read and check scope. These are scientific checks, not formal
+retained/audit status.
 
-The independent [blind report](finite_formation_independent/REPORT.md) and
-[source comparison](finite_formation_independent/COMPARISON.md) support these
-two notes with no required correction. The comparison reconstructs the full
-6-, 45- and 9-state physical operators, 32 embedding identities, six local
-decompositions, 66 basis rates, all spectral weights and 144 stored effective
-count rows. Two independently evolved quoted microscopic endpoints agree
-within 7e-14. The entire microscopic evolution grid was not independently
-rerun. The root verification receipt binds the actual read and check scope.
+Balanced checks include complete 6-, 45- and 9-state physical operators,
+32 embedding identities, six local decompositions, 66 basis rates, exact
+spectral weights and 144 effective count rows. Two independently evolved
+microscopic endpoints agree within 7e-14. The higher-scale checks independently
+reconstruct every stored H2/H4 matrix, exact cyclic coefficients and first-loss
+formulas, and complete matrix-unit discrepancy/correction maps. An independently
+assembled first-event endpoint agrees within 4.4e-15. Full author trajectory
+grids were not rerun; finite floating controls corroborate the explicit proofs.
 
-The shared historical author seal also binds
+## Assumptions and remaining obligations
+
+The Hilbert spaces, quantum laws, staggered background, Hamiltonian, preparation
+and birth reservoir are supplied. They are not selected by the native axioms.
+The balanced regime loses the earlier fourth-order field scale. The higher-scale
+target retains it, together with genuinely rapid post-event matter motion;
+it does not prove that the unchanged field-only law continues after births.
+A persistent photon regime with repeated formation, finite-energy fuel,
+volume-uniform microscopic error and macroscopic matter/field matching remain
+open. The first event anywhere in the finite cubic system has a rate proportional
+to its volume; the no-event conditioning is not volume uniform.
+
+The shared historical balanced seal also binds
 FINITE_RATE_RENEWED_FORMATION_EXACT_STAR.md and its different-scaling
-three-site runner/results. They are included unchanged for complete source
-provenance, but were authenticated only and are outside the independently
-checked claim of this PR. Historical working specifications and receipts
-retain their original dates and pending-review wording; the final comparison
-and this wrapper state current coverage. Preserved failures include a dark
-state helper-labeling error and a structural symbolic-equality assertion.
+three-site controls. Those files are included unchanged for source provenance,
+but were authenticated only and are outside this PR's independently checked
+claims. The separate higher-scale repeated-star packet is not included.
+Historical notes and receipts retain their original pending-review wording;
+the final reports and this wrapper state current coverage. Failed numerical
+attempts, their original sources and subsequent changes are preserved.
 
-This is a conditional result for supplied quantum degrees of freedom,
-Hamiltonian, bipartition/background and birth reservoir. It does not derive
-those inputs from the native axioms. The balanced scaling sends the earlier
-fourth-order field scale to zero. No photon coexistence, finite-energy fuel,
-volume-uniform microscopic approximation, universal filling or unrestricted
-continuous path-law convergence is claimed. Independent checking here is not
-formal retained/audit status.
+## Portable evidence
 
-The branch is stacked on regular PR #8650. Only this selected science/evidence
-unit and its publication wrappers are added. The manifest preserves source
-bytes and absolute historical identities; its portable verifier translates
-those identities to this checkout. It verifies identities, not mathematics.
-Run from the repository root:
+The branch is stacked on regular PR #8650. Only selected science/evidence and
+publication wrappers are added. The manifest preserves source bytes; the
+portable verifier translates absolute historical identities to this checkout.
+It verifies identities, not mathematics. Run from the repository root:
 
 ```sh
 python3 .claude/science/mobile-record-formation-20260920/campaign12h_third/verify_repeated_formation_publication.py
 ```
 
-The sealed locality note retains one historical blank line at end of file.
-Default git whitespace checking flags it; the publication preserves the
-scientifically reviewed bytes and explicitly records that exception.
+Historical receipt paths resolve to archived versions where sources changed,
+as documented by their recovery maps and history diagnoses. The sealed locality
+note retains one blank line at end of file; the sealed historical unified diff
+retains two single-space context lines. Default git whitespace checking flags
+these exact historical bytes. They are preserved and explicitly accounted for.

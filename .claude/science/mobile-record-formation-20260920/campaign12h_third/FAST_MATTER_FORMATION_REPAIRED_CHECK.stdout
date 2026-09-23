@@ -1,0 +1,12 @@
+{
+  "models": [
+    "star_4",
+    "two_A_path",
+    "ring_S1",
+    "ring_S2"
+  ],
+  "full_density_rows": 72,
+  "largest_error_divided_by_epsilon": 3.610093459766733,
+  "source_sha256": "36119954b676412dcff2a5adf19ea1f77fe4f3a33335b086bd833c89800512ca",
+  "result_sha256": "c2f52ac75320f2c17664282f28dab2851a6aa31c34cc7cf029849dd2773ab26d"
+}

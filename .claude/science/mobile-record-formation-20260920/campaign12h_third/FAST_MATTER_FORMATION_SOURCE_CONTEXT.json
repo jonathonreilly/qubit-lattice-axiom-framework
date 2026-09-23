@@ -1,0 +1,31 @@
+{
+  "created_utc": "2026-09-23T00:31:27.412302+00:00",
+  "model": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_RATE_REPEATED_RECORD_FORMATION.md",
+    "bytes": 16828,
+    "sha256": "b577c14e992fe74feb8a9f17c33e503f446f7052f83512031c2bf82cf2e3538d"
+  },
+  "rotor_embedding_context": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_FINITE_RATE_FORMATION_AND_ROTOR_LIMIT.md",
+    "bytes": 11530,
+    "sha256": "1d3aad074b15777a20ef09f90bc1ca1ce4a55f441299ad2187b50b4b3cc6b976"
+  },
+  "field_coefficients": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/ELECTRIC_AND_MAGNETIC_DYNAMICS_FROM_RECORD_MOTION.md",
+    "bytes": 18939,
+    "sha256": "52f5ce8bd8f1b39049ebbb0407e6881ed8e11de80bc2c29db9e0e56c5cdd3fc2"
+  },
+  "field_independent_final": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/FINAL_SEAL.json",
+    "bytes": 19914,
+    "sha256": "7620bb6ff3b16ec319f12ad0d588d45a56f0fd084ed192b59e8c86d0f9ac30d4"
+  },
+  "primary_literature": {
+    "url": "https://arxiv.org/abs/1105.0675",
+    "title": "Schrieffer-Wolff transformation for quantum many-body systems",
+    "authors": "Bravyi, DiVincenzo, Loss",
+    "read_scope": "Abstract only, through web search on2026-09-23. No fulltext or dynamical theorem imported.",
+    "role": "Established context for a unitary block rotation; this note supplies its own complete construction and residual proof."
+  },
+  "root_coverage": "Complete new proof, both scientific runners and every result field read. Full failed source/streams and numerical repairs preserved. Fixed-graph scope and before-first-event restriction remain explicit."
+}

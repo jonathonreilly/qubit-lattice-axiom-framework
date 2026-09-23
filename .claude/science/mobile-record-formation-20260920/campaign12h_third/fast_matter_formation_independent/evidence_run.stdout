@@ -1,0 +1,37 @@
+{
+  "author_seal_bindings_verified": 36,
+  "old_seal_recovered_rows": 33,
+  "historical_receipts": [
+    {
+      "archive": "fast_matter_formation_history/initial_polar_orthogonality",
+      "receipt_recovery_verified": true,
+      "exit_code": 1
+    },
+    {
+      "archive": "first_formation_field_history/initial_eigenbasis_condition",
+      "receipt_recovery_verified": true,
+      "exit_code": 1
+    },
+    {
+      "archive": "first_formation_field_history/subtractive_distance_roundoff",
+      "receipt_recovery_verified": true,
+      "exit_code": 0
+    }
+  ],
+  "author_fast_density_rows_parsed_and_sanity_checked": 72,
+  "author_first_event_rows_parsed_and_probability_distance_checked": 25,
+  "maximum_author_trace_error_over_epsilon": 3.610093459766733,
+  "independent_first_event_endpoint": {
+    "spin": 4,
+    "time": 0.25,
+    "physical_full_dimension": 79,
+    "N2_dimension": 49,
+    "rotor_cutoff": 20,
+    "method": "complete electric-tuple construction; direct matrix exponential; explicit enlarged-space density-difference eigenvalues",
+    "no_event_probability": 0.3657911556860345,
+    "trace_error": 0.31687335894335195,
+    "probability_difference_from_author": 2.609024107869118e-15,
+    "trace_error_difference_from_author": 4.3298697960381105e-15
+  },
+  "limits": "Author grid not rerun. Cutoff control is numerical, not a rigorous tail certificate. Independent analytic proof review is in REPORT.md. No author builders imported."
+}

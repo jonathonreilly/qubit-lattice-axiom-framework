@@ -1,0 +1,5 @@
+{
+  "issue": "The field-coefficient specialization said even cubic graph without restating the cited source period-at-least-six hypothesis. Short winding cycles could otherwise add fourth-order terms.",
+  "repair": "Make the inherited even periods of at least six explicit in Section4. The general fast-target theorem for any fixed finite bipartite graph is unchanged; the standalone four-edge-cycle control remains a separate finite model.",
+  "independent_new_source_access_before_change": false
+}

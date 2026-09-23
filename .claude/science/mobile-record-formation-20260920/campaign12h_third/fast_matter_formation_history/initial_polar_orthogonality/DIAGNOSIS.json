@@ -1,0 +1,9 @@
+{
+  "failure_line": 77,
+  "model": "ring_S1",
+  "epsilon": 0.04,
+  "unitarity_error": 3.2139260823384477e-13,
+  "spectrum_basis_orthogonality": 5.3431074216857864e-14,
+  "evd_spectrum_basis_orthogonality": 1.1566268776075361e-15,
+  "repair": "Use the divide-and-conquer Hermitian eigensolver for both polar construction eigendecompositions. Preserve the existing 2e-13 unitarity and block-diagonal thresholds; no theorem or expected coefficient changes."
+}

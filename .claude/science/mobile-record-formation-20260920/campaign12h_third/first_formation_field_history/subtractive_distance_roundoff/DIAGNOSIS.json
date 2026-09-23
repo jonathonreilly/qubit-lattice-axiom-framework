@@ -1,0 +1,4 @@
+{
+  "issue": "The subtractive rank-two discriminant reports spurious approximately6e-8 distance at identical time-zero states because of floating cancellation. The vectors themselves reconstruct to approximately1e-14.",
+  "repair": "Compute the target component perpendicular to the microscopic vector and use (norm_actual\u00b2-norm_target\u00b2)\u00b2+4 norm_actual\u00b2 norm_perpendicular\u00b2. Retain the target tail and record its numerical normalization defect. No dynamics, parameters, target, or tolerance changed."
+}

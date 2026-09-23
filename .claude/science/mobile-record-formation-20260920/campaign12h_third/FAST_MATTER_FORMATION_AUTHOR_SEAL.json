@@ -1,0 +1,191 @@
+{
+  "created_utc": "2026-09-23T00:34:11.555568+00:00",
+  "status": "Author frozen; independent source review pending.",
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "bytes": 17730,
+      "sha256": "002119d5a3f9bec171c3678cb15afdb91f7a763311ca38e6e4458ce10865572e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/fast_matter_formation_check.py",
+      "bytes": 6847,
+      "sha256": "36119954b676412dcff2a5adf19ea1f77fe4f3a33335b086bd833c89800512ca"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FAST_MATTER_FORMATION_RESULTS.json",
+      "bytes": 79967,
+      "sha256": "c2f52ac75320f2c17664282f28dab2851a6aa31c34cc7cf029849dd2773ab26d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FAST_MATTER_FORMATION_REPAIRED_CHECK.stdout",
+      "bytes": 341,
+      "sha256": "eb18c964d7e75f2c381ed4202ba8ac9a664906886769b99900d328945c37f9dd"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FAST_MATTER_FORMATION_REPAIRED_CHECK.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FAST_MATTER_FORMATION_REPAIRED_CHECK_RECEIPT.json",
+      "bytes": 1037,
+      "sha256": "cc39d9e12bfc53e220fd57e4936ec49f2023dc980c4afd6b00d6a89d6e91cb6a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/first_formation_field_check.py",
+      "bytes": 4489,
+      "sha256": "d0293a4e34612fcda9c65c0f090c580c2e9fced062257c68adba6c561f6edc06"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FIRST_FORMATION_FIELD_RESULTS.json",
+      "bytes": 14094,
+      "sha256": "562fc4fd24be26a4b6f7d6351022a41f7340b5ca41e72873b0ef111a6500317b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FIRST_FORMATION_FIELD_STABLE_CHECK.stdout",
+      "bytes": 679,
+      "sha256": "89e67b82d6ddfb5a0ef7e67c5b069408755b33fb4ec6cd86abe8a7aaea888388"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FIRST_FORMATION_FIELD_STABLE_CHECK.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FIRST_FORMATION_FIELD_STABLE_CHECK_RECEIPT.json",
+      "bytes": 1033,
+      "sha256": "ebdb77ba8b50093a27f3bb63d9cb0250a71124bd4119ce7d25368a5bfbc69e80"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FAST_MATTER_FORMATION_SOURCE_CONTEXT.json",
+      "bytes": 2027,
+      "sha256": "fc06931d96e8a019d200645c95a4e336f31f227d31c230c94bd8d20636e4ac52"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_RATE_REPEATED_RECORD_FORMATION.md",
+      "bytes": 16828,
+      "sha256": "b577c14e992fe74feb8a9f17c33e503f446f7052f83512031c2bf82cf2e3538d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/repeated_formation_check.py",
+      "bytes": 10777,
+      "sha256": "7b9eb968e897202216375e549c4e9f9b836a52c68a825ca1ebcc1193cb6c8b4b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_FINITE_RATE_FORMATION_AND_ROTOR_LIMIT.md",
+      "bytes": 11530,
+      "sha256": "1d3aad074b15777a20ef09f90bc1ca1ce4a55f441299ad2187b50b4b3cc6b976"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/ELECTRIC_AND_MAGNETIC_DYNAMICS_FROM_RECORD_MOTION.md",
+      "bytes": 18939,
+      "sha256": "52f5ce8bd8f1b39049ebbb0407e6881ed8e11de80bc2c29db9e0e56c5cdd3fc2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/large_spin_rotor_independent/FINAL_SEAL.json",
+      "bytes": 19914,
+      "sha256": "7620bb6ff3b16ec319f12ad0d588d45a56f0fd084ed192b59e8c86d0f9ac30d4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/fast_matter_formation_history/initial_polar_orthogonality/DIAGNOSIS.json",
+      "bytes": 457,
+      "sha256": "b577cc92584f9c26906e67966050ce7c67a9af48f0444369e52b9362cc17f441"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/fast_matter_formation_history/initial_polar_orthogonality/FAST_MATTER_FORMATION_CHECK.stderr",
+      "bytes": 337,
+      "sha256": "08ee88420eae6d06d6c7907cb54c39620c2ee4d89987b5f0c7066cf8a2bef23d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/fast_matter_formation_history/initial_polar_orthogonality/FAST_MATTER_FORMATION_CHECK.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/fast_matter_formation_history/initial_polar_orthogonality/FAST_MATTER_FORMATION_CHECK_RECEIPT.json",
+      "bytes": 1019,
+      "sha256": "3aea79c0d3f160820ea13c124d8f55184ce3a3935b71361e6458b8f4fb5f3cd5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/fast_matter_formation_history/initial_polar_orthogonality/fast_matter_formation_check.py",
+      "bytes": 6821,
+      "sha256": "0f68c6d78eff6e093cfa18f0af577687de64653b511b66321ea98afff4212021"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/first_formation_field_history/initial_eigenbasis_condition/DIAGNOSIS.json",
+      "bytes": 500,
+      "sha256": "35867fab6a93cf8538f92f4ae35f8563023010c5c95991321ddd51e4c09b7714"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/first_formation_field_history/initial_eigenbasis_condition/FIRST_FORMATION_FIELD_CHECK.stderr",
+      "bytes": 321,
+      "sha256": "b354620fcd2c19dca2e16b03e970fa5d4cc8bd7789437874e8c17e59bb8f940f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/first_formation_field_history/initial_eigenbasis_condition/FIRST_FORMATION_FIELD_CHECK.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/first_formation_field_history/initial_eigenbasis_condition/FIRST_FORMATION_FIELD_CHECK_RECEIPT.json",
+      "bytes": 1019,
+      "sha256": "0dd550fe0792b26b701c680dbabc4a35d8265eceb0e510f0c2f0d69975355bb5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/first_formation_field_history/initial_eigenbasis_condition/first_formation_field_check.py",
+      "bytes": 4296,
+      "sha256": "2080a1bf1a93ceeb326c93ee4973d1694ec3ab1457a5bae2bc579ae04c6ccfd0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/first_formation_field_history/subtractive_distance_roundoff/DIAGNOSIS.json",
+      "bytes": 528,
+      "sha256": "25d8a27e09d0bfa10e5b3f1de8d1b81fad360298943182bc55d35b1a115702e1"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/first_formation_field_history/subtractive_distance_roundoff/FIRST_FORMATION_FIELD_RESULTS.json",
+      "bytes": 12482,
+      "sha256": "4b3f699e938f871a7105f23f5f58ada70c0a4c918023dd64320950961ef02bd7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/first_formation_field_history/subtractive_distance_roundoff/FIRST_FORMATION_FIELD_SCHUR_CHECK.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/first_formation_field_history/subtractive_distance_roundoff/FIRST_FORMATION_FIELD_SCHUR_CHECK.stdout",
+      "bytes": 621,
+      "sha256": "d822ac080053ef6d0a33796d242d9c265eafabe49dd4075fda6a184c42f20e77"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/first_formation_field_history/subtractive_distance_roundoff/FIRST_FORMATION_FIELD_SCHUR_CHECK_RECEIPT.json",
+      "bytes": 1031,
+      "sha256": "851eff25674c53f9005557a533fd1b7063ec9205120be175253154652ec04458"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/first_formation_field_history/subtractive_distance_roundoff/first_formation_field_check.py",
+      "bytes": 4343,
+      "sha256": "e5576f9786773c4885e2734b4a1d83afdd54bc4a5baf15e17ce9c482b4b21f2f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/fast_matter_formation_history/before_cubic_period_qualification/DIAGNOSIS.json",
+      "bytes": 500,
+      "sha256": "08c7c77d5b5e3108db9246bbfef99181474073fd10cf2ef5cf450438d4f427c5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/fast_matter_formation_history/before_cubic_period_qualification/FAST_MATTER_FORMATION_AUTHOR_SEAL.json",
+      "bytes": 11702,
+      "sha256": "585903edb3b8b05c3940e66ea66a3a268c8bcec4f2c11edbd545cf6abaad292b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/fast_matter_formation_history/before_cubic_period_qualification/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "bytes": 17564,
+      "sha256": "c66d07707ec0b13f79a6f416dd19736c19e0ed56cc01d216f53ecf5ad98d25fa"
+    }
+  ],
+  "count": 36,
+  "scope": "Uniform-in-spin fixed-volume approximation retaining fast H2, finite H4 and finite births; joint large-spin field and first-event law only before the first birth. Not a post-birth photon theorem, phase, finite-fuel model or native derivation.",
+  "failure_history": "Default polar eigensolver accuracy miss, original non-Hermitian eigenvector conditioning rejection, and subtractive distance roundoff are preserved with diagnoses. Archived receipt source paths resolve to the archived source of the same basename, never to the changed current runner.",
+  "source_revision": "Explicit inherited period-at-least-six qualification added before independent source access; prior complete note/seal and diagnosis retained.",
+  "history_recovery": "The archived earlier author seal binds the archived earlier note of the same basename; other source bindings are unchanged."
+}

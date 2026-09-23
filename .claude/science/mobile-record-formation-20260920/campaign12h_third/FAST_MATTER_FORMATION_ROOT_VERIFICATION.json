@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-09-23T01:00:43.159826+00:00",
+  "status": "Root source/evidence review complete with no required correction. Source-informed independent review, not blind reconstruction, formal audit or retained status.",
+  "author_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FAST_MATTER_FORMATION_AUTHOR_SEAL.json",
+    "bytes": 13121,
+    "sha256": "5aeee4c3db513daafc32c22ceb7e2a7c5dc0c1a3e7d89208fec4244806c67577"
+  },
+  "independent_final": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/fast_matter_formation_independent/FINAL_SEAL.json",
+    "bytes": 20113,
+    "sha256": "63ddf9823aa23d678e8f61863ddeedf36596918e2cb600f100fa334e6d1432db"
+  },
+  "independent_report": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/fast_matter_formation_independent/REPORT.md",
+    "bytes": 20484,
+    "sha256": "0a114dadc553ccbb4ef9bf15faf87a70f64a0d5719bf1d1743de86b94a0205b5"
+  },
+  "authenticated_final_binding_rows": 58,
+  "top_level_author_seal_authenticated": true,
+  "coverage": "Complete current author note and both author checkers/results already read; full independent report, all three independent scientific/evidence checkers, every result field, receipt outcomes and complete author-history source deltas read. Frozen field coefficients and prior checked premises authenticated.",
+  "read_scientific_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/fast_matter_formation_independent/independent_check.py",
+      "bytes": 6345,
+      "sha256": "8f6cc1b07f9a6d1fe2b5def8f25db34019b3629780e6e9ad8372c8ecd8ef60ba"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/fast_matter_formation_independent/evidence_check.py",
+      "bytes": 6645,
+      "sha256": "a26618fb20ff7d7013965a8618482b88c6121b2f62df3e8cd6e9058080430c0d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/fast_matter_formation_independent/coefficient_evidence_check.py",
+      "bytes": 2450,
+      "sha256": "0b8759ac8d12268b1dbe250a6af4e9de3773653f6abf97835051919d9668ffc1"
+    }
+  ],
+  "conclusion": "Full-W canonical rotation, H2/H4, off-block dissipative corrector, S-uniform fixed-volume error, bounded rotor target and separate unbounded-electric pre-first-event corollary agree. Independent matrix-unit residual controls corroborate cancellation; all stored H2/H4 matrices agree; independently assembled S=4 endpoint differs by less than 4.4e-15.",
+  "limits": "No complete microscopic grid replay, numerical interval certificates, volume-uniform error, ordinary post-event full-density limit, persistent photon phase, fuel mechanism or native derivation. Initial trace-class field approximants must converge; arbitrary escaping S-dependent states are excluded. Separate fourth-scale star and later post-birth packet are outside this review."
+}

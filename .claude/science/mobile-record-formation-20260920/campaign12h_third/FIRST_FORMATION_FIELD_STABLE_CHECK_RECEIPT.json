@@ -1,0 +1,20 @@
+{
+  "start_utc": "2026-09-23T00:29:54.233436+00:00",
+  "end_utc": "2026-09-23T00:29:54.828175+00:00",
+  "exit_code": 0,
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/first_formation_field_check.py",
+    "bytes": 4489,
+    "sha256": "d0293a4e34612fcda9c65c0f090c580c2e9fced062257c68adba6c561f6edc06"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FIRST_FORMATION_FIELD_STABLE_CHECK.stdout",
+    "bytes": 679,
+    "sha256": "89e67b82d6ddfb5a0ef7e67c5b069408755b33fb4ec6cd86abe8a7aaea888388"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FIRST_FORMATION_FIELD_STABLE_CHECK.stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

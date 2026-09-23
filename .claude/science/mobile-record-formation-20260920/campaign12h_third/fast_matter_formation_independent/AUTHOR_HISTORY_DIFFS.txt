@@ -1,0 +1,120 @@
+--- fast_matter_formation_history/initial_polar_orthogonality/fast_matter_formation_check.py
++++ fast_matter_formation_check.py
+@@ -64,14 +64,14 @@
+  _,_,H2,H4=target(m,1,'coherent')
+  rr=[]
+  for eps in [.04,.02,.01]:
+-  h=m['W']+eps*m['T'];ev,V=eigh(h)
++  h=m['W']+eps*m['T'];ev,V=eigh(h,driver="evd")
+   S=np.zeros((D,D));cluster_errors=[]
+   for grade in sorted(set(w)):
+    indices=np.where(w==grade)[0];selected=np.where(abs(ev-grade)<.4)[0]
+    assert len(indices)==len(selected),(m['label'],eps,grade)
+    Pj=V[:,selected]@V[:,selected].T
+    S[:,indices]=Pj[:,indices]
+-  se,sv=eigh(S.T@S);assert min(se)>.5
++  se,sv=eigh(S.T@S,driver="evd");assert min(se)>.5
+   U=S@(sv@np.diag(se**(-.5))@sv.T)
+   ht=U.T@h@U
+   assert np.max(abs(U.T@U-np.eye(D)))<2e-13
+
+--- first_formation_field_history/initial_eigenbasis_condition/first_formation_field_check.py
++++ first_formation_field_check.py
+@@ -3,7 +3,7 @@
+ from itertools import combinations
+ from datetime import datetime,timezone
+ import numpy as np
+-from scipy.linalg import eig,eigh
++from scipy.linalg import schur,expm,eigh
+ import json,hashlib,math
+ HERE=Path(__file__).resolve().parent
+ OUT=HERE/'FIRST_FORMATION_FIELD_RESULTS.json';assert not OUT.exists()
+@@ -40,31 +40,34 @@
+  assert np.max(abs(T-T.T))<1e-14
+  H=delta*np.diag(W)/epsilon**4+delta*T/epsilon**3
+  NH=H-.5j*kappa*np.diag(loss)/epsilon**2
+- val,V=eig(NH);cond=float(np.linalg.cond(V))
+- residual=float(np.linalg.norm(NH@V-V*val[None,:],2)/max(1,np.linalg.norm(NH,2)))
+- assert residual<1e-12 and cond<10
++ tri,V=schur(NH,output='complex')
++ residual=float(np.linalg.norm(NH@V-V@tri,2)/max(1,np.linalg.norm(NH,2)))
++ orthogonality=float(np.linalg.norm(V.conj().T@V-np.eye(d),2))
++ assert residual<1e-12 and orthogonality<1e-12
+  g=np.zeros(d);g[ix[bg,(0,0,0,0)]]=g[ix[bg,(1,1,1,1)]]=1/math.sqrt(2)
+- coeff=np.linalg.solve(V,g);data=[]
++ coeff=V.conj().T@g;data=[]
+  for index,t in enumerate(times):
+-  actual=V@(np.exp(-1j*val*t)*coeff)
++  actual=V@(expm(-1j*t*tri)@coeff)
++  if t==0:assert np.linalg.norm(actual-g)<1e-12
+   target=np.zeros(d,complex)
+   for i,(q,E) in enumerate(states):
+    if q==bg and abs(E[0])<=32:target[i]=targets[index,fields.tolist().index(E[0])]
+   # Missing rotor support lies in electric modes absent from the microscopic box.
+   tail=float(sum(abs(targets[index,j])**2 for j,e in enumerate(fields) if abs(e)>S))
+   na=float(np.vdot(actual,actual).real);nb=math.exp(-rate*t)
+-  overlap=abs(np.vdot(actual,target))**2
+-  discriminant=max(0.,(na+nb)**2-4*overlap)
+-  trace_error=math.sqrt(discriminant)
+-  conditional_error=2*math.sqrt(max(0.,1-overlap/(na*nb)))
++  overlap=np.vdot(actual,target)
++  nb_numeric=float(np.vdot(target,target).real)+tail
++  perpendicular=float(np.linalg.norm(target-actual*overlap/na)**2)+tail
++  trace_error=math.sqrt((na-nb_numeric)**2+4*na*perpendicular)
++  conditional_error=2*math.sqrt(perpendicular/nb_numeric)
+   # The extended exact target includes its omitted spin-box tail, already
+   # included in nb; it is orthogonal to actual. This is a full-space comparison.
+-  assert na>=0 and na<=1+1e-9 and abs(np.linalg.norm(actual) - np.linalg.norm(actual))==0
++  assert na>=0 and na<=1+1e-9
+   data.append({'time':t,'microscopic_no_event_probability':na,'rotor_no_event_probability':nb,
+     'unnormalized_density_trace_error':trace_error,'conditional_field_trace_error':conditional_error,
+-    'target_electric_tail_probability':tail,'trace_error_divided_by_epsilon':trace_error/epsilon})
++    'target_electric_tail_probability':tail,'numerical_rotor_norm_defect':abs(nb_numeric-nb),'trace_error_divided_by_epsilon':trace_error/epsilon})
+  rows.append({'spin':S,'epsilon':epsilon,'N2_sector_dimension':d,
+-   'eigenvector_condition_number':cond,'relative_eigen_residual':residual,'times':data})
++   'Schur_basis_orthogonality':orthogonality,'relative_Schur_residual':residual,'times':data})
+ out={'created_utc':datetime.now(timezone.utc).isoformat(),
+  'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+  'delta':delta,'kappa':kappa,'K':K,'J':J,'first_rate':rate,
+
+--- first_formation_field_history/subtractive_distance_roundoff/first_formation_field_check.py
++++ first_formation_field_check.py
+@@ -55,16 +55,17 @@
+   # Missing rotor support lies in electric modes absent from the microscopic box.
+   tail=float(sum(abs(targets[index,j])**2 for j,e in enumerate(fields) if abs(e)>S))
+   na=float(np.vdot(actual,actual).real);nb=math.exp(-rate*t)
+-  overlap=abs(np.vdot(actual,target))**2
+-  discriminant=max(0.,(na+nb)**2-4*overlap)
+-  trace_error=math.sqrt(discriminant)
+-  conditional_error=2*math.sqrt(max(0.,1-overlap/(na*nb)))
++  overlap=np.vdot(actual,target)
++  nb_numeric=float(np.vdot(target,target).real)+tail
++  perpendicular=float(np.linalg.norm(target-actual*overlap/na)**2)+tail
++  trace_error=math.sqrt((na-nb_numeric)**2+4*na*perpendicular)
++  conditional_error=2*math.sqrt(perpendicular/nb_numeric)
+   # The extended exact target includes its omitted spin-box tail, already
+   # included in nb; it is orthogonal to actual. This is a full-space comparison.
+   assert na>=0 and na<=1+1e-9
+   data.append({'time':t,'microscopic_no_event_probability':na,'rotor_no_event_probability':nb,
+     'unnormalized_density_trace_error':trace_error,'conditional_field_trace_error':conditional_error,
+-    'target_electric_tail_probability':tail,'trace_error_divided_by_epsilon':trace_error/epsilon})
++    'target_electric_tail_probability':tail,'numerical_rotor_norm_defect':abs(nb_numeric-nb),'trace_error_divided_by_epsilon':trace_error/epsilon})
+  rows.append({'spin':S,'epsilon':epsilon,'N2_sector_dimension':d,
+    'Schur_basis_orthogonality':orthogonality,'relative_Schur_residual':residual,'times':data})
+ out={'created_utc':datetime.now(timezone.utc).isoformat(),
+
+--- before_period_qualification
++++ current_note
+@@ -204,8 +204,10 @@
+ 
+ ## 4. What happens before the first formation on a cubic graph
+ 
+-Now specialize to the even cubic graph and initially all A sites plus,
+-all B sites vacant. Write P_v for that entire field sector. Total charge
++Now specialize to a periodic cubic graph with every coordinate period even
++and at least six, and initially all A sites plus, all B sites vacant. These
++are the checked field-coefficient source's hypotheses; shorter wrapping
++cycles are not silently included. Write P_v for that entire field sector. Total charge
+ is |A|, and the supplied Gauss equation gives div E=0 there. This sector
+ is invariant under both number-preserving target Hamiltonian terms until
+ a formation occurs.

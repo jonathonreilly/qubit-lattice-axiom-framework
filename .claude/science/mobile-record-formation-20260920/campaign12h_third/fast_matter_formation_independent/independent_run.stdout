@@ -1,0 +1,255 @@
+path 0.07 H4 residual 0.17095274702001453
+path 0.035 H4 residual 0.04375048846798002
+path 0.0175 H4 residual 0.011003008912012115
+cycle_S1 0.07 H4 residual 0.40943557857032814
+cycle_S1 0.035 H4 residual 0.10559661276832373
+cycle_S1 0.0175 H4 residual 0.026610631513632518
+cycle_S2 0.07 H4 residual 0.45986563853043216
+cycle_S2 0.035 H4 residual 0.11875520981888439
+cycle_S2 0.0175 H4 residual 0.029936661004416613
+{
+  "source_informed": true,
+  "author_builder_imports": false,
+  "own_builder_sha256": "abb86e2fec6d9202471dc1cd3a0a1cc27a4758202b42550d3231ededc8c728d1",
+  "exact_graph_series": [
+    {
+      "model": "path",
+      "dimension": 9,
+      "P_dimension": 4,
+      "riccati_H2_H3_H4_and_normalization_exact": true
+    },
+    {
+      "model": "cycle_S1",
+      "dimension": 19,
+      "P_dimension": 9,
+      "riccati_H2_H3_H4_and_normalization_exact": true
+    },
+    {
+      "model": "cycle_S2",
+      "dimension": 39,
+      "P_dimension": 19,
+      "riccati_H2_H3_H4_and_normalization_exact": true
+    }
+  ],
+  "finite_spin_loop_and_first_loss": [
+    {
+      "model": "cycle_S1",
+      "fields": [
+        -1,
+        0,
+        1
+      ],
+      "H2_exact": true,
+      "H4_exact": true,
+      "first_loss_exact_formula": "8(1-m^2/[S(S+1)])^2",
+      "first_loss_diagonal": [
+        "2",
+        "8",
+        "2"
+      ]
+    },
+    {
+      "model": "cycle_S2",
+      "fields": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ],
+      "H2_exact": true,
+      "H4_exact": true,
+      "first_loss_exact_formula": "8(1-m^2/[S(S+1)])^2",
+      "first_loss_diagonal": [
+        "8/9",
+        "50/9",
+        "8",
+        "50/9",
+        "8/9"
+      ]
+    }
+  ],
+  "canonical_and_corrector_controls": [
+    {
+      "model": "path",
+      "epsilon": 0.07,
+      "canonical_unitarity_defect": 9.518752764695696e-16,
+      "off_grade_h_defect": 2.2238559063218525e-16,
+      "H4_coefficient_error": 0.17095274702001453,
+      "H4_error_over_epsilon_squared": 34.88831571837031,
+      "complete_residual_map_controls": [
+        {
+          "instrument": "resolved",
+          "off_source_norm": 16.737989126656,
+          "epsilon_times_off_source": 1.1716592388659202,
+          "diagonal_source_over_epsilon": 4.201440254480852,
+          "correction_over_epsilon_cubed": 0.6885809378541726,
+          "residual_over_epsilon": 5.641077765334643
+        },
+        {
+          "instrument": "coherent",
+          "off_source_norm": 16.737989126656,
+          "epsilon_times_off_source": 1.1716592388659202,
+          "diagonal_source_over_epsilon": 4.201440254480853,
+          "correction_over_epsilon_cubed": 0.6885809378541724,
+          "residual_over_epsilon": 5.641077765334645
+        }
+      ]
+    },
+    {
+      "model": "path",
+      "epsilon": 0.035,
+      "canonical_unitarity_defect": 1.1104956962702252e-15,
+      "off_grade_h_defect": 2.0560766049176583e-16,
+      "H4_coefficient_error": 0.04375048846798002,
+      "H4_error_over_epsilon_squared": 35.71468446365716,
+      "complete_residual_map_controls": [
+        {
+          "instrument": "resolved",
+          "off_source_norm": 34.07766488646739,
+          "epsilon_times_off_source": 1.1927182710263586,
+          "diagonal_source_over_epsilon": 2.150871820499321,
+          "correction_over_epsilon_cubed": 0.7014380137074524,
+          "residual_over_epsilon": 5.580371074528623
+        },
+        {
+          "instrument": "coherent",
+          "off_source_norm": 34.0776648864674,
+          "epsilon_times_off_source": 1.1927182710263593,
+          "diagonal_source_over_epsilon": 2.15087182049932,
+          "correction_over_epsilon_cubed": 0.7014380137074527,
+          "residual_over_epsilon": 5.590419369433284
+        }
+      ]
+    },
+    {
+      "model": "path",
+      "epsilon": 0.0175,
+      "canonical_unitarity_defect": 1.4713459076648038e-15,
+      "off_grade_h_defect": 1.076172206832899e-16,
+      "H4_coefficient_error": 0.011003008912012115,
+      "H4_error_over_epsilon_squared": 35.92819236575384,
+      "complete_residual_map_controls": [
+        {
+          "instrument": "resolved",
+          "off_source_norm": 68.46667432029558,
+          "epsilon_times_off_source": 1.1981668006051729,
+          "diagonal_source_over_epsilon": 1.0819166126447992,
+          "correction_over_epsilon_cubed": 0.7047635404269446,
+          "residual_over_epsilon": 5.580352829914514
+        },
+        {
+          "instrument": "coherent",
+          "off_source_norm": 68.46667432029557,
+          "epsilon_times_off_source": 1.1981668006051724,
+          "diagonal_source_over_epsilon": 1.081916612644801,
+          "correction_over_epsilon_cubed": 0.7047635404269444,
+          "residual_over_epsilon": 5.582906953354645
+        }
+      ]
+    },
+    {
+      "model": "cycle_S1",
+      "epsilon": 0.07,
+      "canonical_unitarity_defect": 2.867591101209566e-15,
+      "off_grade_h_defect": 3.320224914138862e-16,
+      "H4_coefficient_error": 0.40943557857032814,
+      "H4_error_over_epsilon_squared": 83.55828134088328,
+      "complete_residual_map_controls": [
+        {
+          "instrument": "resolved",
+          "off_source_norm": 23.45153988949734,
+          "epsilon_times_off_source": 1.641607792264814,
+          "diagonal_source_over_epsilon": 10.251251170368496,
+          "correction_over_epsilon_cubed": 0.9621402975845741,
+          "residual_over_epsilon": 12.751057740252623
+        },
+        {
+          "instrument": "coherent",
+          "off_source_norm": 23.45153988949733,
+          "epsilon_times_off_source": 1.6416077922648131,
+          "diagonal_source_over_epsilon": 10.262627263718445,
+          "correction_over_epsilon_cubed": 0.9621402975845728,
+          "residual_over_epsilon": 12.768905119662609
+        }
+      ]
+    },
+    {
+      "model": "cycle_S1",
+      "epsilon": 0.035,
+      "canonical_unitarity_defect": 2.1830370440198007e-15,
+      "off_grade_h_defect": 3.6203814371521266e-16,
+      "H4_coefficient_error": 0.10559661276832373,
+      "H4_error_over_epsilon_squared": 86.20131654557038,
+      "complete_residual_map_controls": [
+        {
+          "instrument": "resolved",
+          "off_source_norm": 48.07667837878107,
+          "epsilon_times_off_source": 1.6826837432573376,
+          "diagonal_source_over_epsilon": 5.2906935695463995,
+          "correction_over_epsilon_cubed": 0.988906950673978,
+          "residual_over_epsilon": 10.961423778688918
+        },
+        {
+          "instrument": "coherent",
+          "off_source_norm": 48.07667837878104,
+          "epsilon_times_off_source": 1.6826837432573365,
+          "diagonal_source_over_epsilon": 5.296553420395813,
+          "correction_over_epsilon_cubed": 0.9889069506739779,
+          "residual_over_epsilon": 10.977396240004499
+        }
+      ]
+    },
+    {
+      "model": "cycle_S1",
+      "epsilon": 0.0175,
+      "canonical_unitarity_defect": 2.392382172788061e-15,
+      "off_grade_h_defect": 2.279551481413657e-16,
+      "H4_coefficient_error": 0.026610631513632518,
+      "H4_error_over_epsilon_squared": 86.891858003698,
+      "complete_residual_map_controls": [
+        {
+          "instrument": "resolved",
+          "off_source_norm": 96.76740354273426,
+          "epsilon_times_off_source": 1.6934295619978497,
+          "diagonal_source_over_epsilon": 2.6669136444120416,
+          "correction_over_epsilon_cubed": 0.9959063857367345,
+          "residual_over_epsilon": 10.87546435852036
+        },
+        {
+          "instrument": "coherent",
+          "off_source_norm": 96.76740354273423,
+          "epsilon_times_off_source": 1.6934295619978492,
+          "diagonal_source_over_epsilon": 2.6698660939392282,
+          "correction_over_epsilon_cubed": 0.9959063857367343,
+          "residual_over_epsilon": 10.87961047837989
+        }
+      ]
+    },
+    {
+      "model": "cycle_S2",
+      "epsilon": 0.07,
+      "canonical_unitarity_defect": 3.013035961359303e-15,
+      "off_grade_h_defect": 3.9456409490079295e-16,
+      "H4_coefficient_error": 0.45986563853043216,
+      "H4_error_over_epsilon_squared": 93.85013031233308
+    },
+    {
+      "model": "cycle_S2",
+      "epsilon": 0.035,
+      "canonical_unitarity_defect": 3.3682949577064016e-15,
+      "off_grade_h_defect": 4.0910099638252045e-16,
+      "H4_coefficient_error": 0.11875520981888439,
+      "H4_error_over_epsilon_squared": 96.94302842357908
+    },
+    {
+      "model": "cycle_S2",
+      "epsilon": 0.0175,
+      "canonical_unitarity_defect": 3.2916876722789644e-15,
+      "off_grade_h_defect": 4.664849597827102e-16,
+      "H4_coefficient_error": 0.029936661004416613,
+      "H4_error_over_epsilon_squared": 97.75236246340117
+    }
+  ],
+  "limits": "Exact finite-sector identities and complete matrix-unit numerical residual diagnostics. Analytic general bounds and unbounded-electric first-event limit are reviewed in REPORT.md; no finite numeric sample is called a proof."
+}

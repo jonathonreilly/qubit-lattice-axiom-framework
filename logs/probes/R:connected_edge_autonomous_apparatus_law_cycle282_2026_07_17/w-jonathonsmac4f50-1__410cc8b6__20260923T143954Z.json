@@ -19,14 +19,21 @@
  "stdout_sha256": "fa17bd651d2f2f8cf8cdaf43cf1ed6589ac2055cd4b4142e3a67670f7c188bcf",
  "stdout_tail": "ing the physical contact phase leaves the occupation-conditioned apparatus packet unchanged and therefore defeats a contact-occurrence claim :: {'contact_deleted_matrix_residual': 9.750456122278623, 'Q_after_contact': 1, 'Q_after_contact_deletion': 1, 'apparatus_active_branch_after_contact': ApparatusState(phase=7, ready=1, pointer=0, amplifier=0, fact_no=0, fact_yes=1, close=1), 'apparatus_active_branch_after_contact_deletion': ApparatusState(phase=7, ready=1, pointer=0, amplifier=0, fact_no=0, fact_yes=1, close=1), 'close_certifies_contact_application': False}\n\nFINITE REGISTER RECURRENCE / LAWFUL DOMAIN / INTERPRETATION\nPASS finite-register recurrence preserves a bounded close episode but falsifies unrestricted permanence :: [{'contact': 0, 'first_close_composition': 7, 'first_packet_change': 28, 'first_close_loss': 55, 'program_period': 12}, {'contact': 1, 'first_close_composition': 7, 'first_packet_change': 28, 'first_close_loss': 55, 'program_period': 12}]\nPASS lawful-domain and Record/time firewalls remain explicit :: {'rejected_controls': 3, 'supplied': 'role word, phase origin/token, blanks, code states, repeated-update law, insertion boundary, trace/read effect, and finite episode domain', 'pointer_is_Record': False, 'fact_is_Record': False, 'close_is_occurrence': False, 'close_is_Record': False, 'compiler_iteration_is_physical_time': False, 'causal_depth_claim': False, 'shared_obstruction': False, 'axiom_pressure': False}\nSUMMARY PASS 12 FAIL 1\nRESULT CYCLE282_OPEN\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T144030Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170139Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 410cc8b6 differs from the current HEAD 58bd2e3a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note/source is on main only under archive/ (docs/work_history/repo/review_feedback/CONNECTED_EDGE_AUTONOMOUS_APPARATUS_LAW_CYCLE282_NOTE_2026-07-17.md -> archive/notes/docs/work_history/repo/review_feedback/CONNECTED_EDGE_AUTONOMOUS_APPARATUS_LAW_CYCLE282_NOTE_2026-07-17.md); every FAIL is an existence or text gate on that file, the computations pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170139Z"
  }
 }

@@ -22,15 +22,22 @@
  "stdout_sha256": "6a102fc9b0416b4e688ace7fab0e3b78666f1e365665610bf54b98f3523886ab",
  "stdout_tail": "eelman check\n======================================================================\nPASS: T6.1 Additivity \u21d2 locality of source response (forward)\nPASS: T6.2 Locality of source response \u21d2 additivity (reverse)\nPASS: T6.3 Locality steelman is Pattern L circularity\n\n======================================================================\nT7 \u2014 Path (a) requirements for a future retained primitive\n======================================================================\n  - Excludes F_p for p \u2260 0 without invoking log (avoids Pattern L D5)\n  - Operates on r = |Z| > 0 scalar functionals (avoids Pattern D D4)\n  - Derivable from existing retained primitives (no new axiom)\n  - Survives independent audit ratification\nPASS: T7 Path (a) requirements catalogued\nPASS: T7 No Path (a) candidate identified in current portfolio\n\n======================================================================\nT8 \u2014 Source-note boundary check\n======================================================================\nFAIL: T8 Source note exists -- missing path: /Users/jonBridger/.probe-workers/probes-view/slot-1/docs/OBSERVABLE_PRINCIPLE_P1_CAMPAIGN_CLOSURE_SYNTHESIS_NOTE_2026-05-18.md\n\n======================================================================\nPASS=34  FAIL=1\n======================================================================\n\nFailures:\n  - T8 Source note exists: missing path: /Users/jonBridger/.probe-workers/probes-view/slot-1/docs/OBSERVABLE_PRINCIPLE_P1_CAMPAIGN_CLOSURE_SYNTHESIS_NOTE_2026-05-18.md\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T040043Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170140Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 86f451b0 differs from the current HEAD 58bd2e3a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'PASS=34  FAIL=1' vs cache 'PASS=40  FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note/source is on main only under archive/ (docs/OBSERVABLE_PRINCIPLE_P1_CAMPAIGN_CLOSURE_SYNTHESIS_NOTE_2026-05-18.md -> archive/notes/docs/OBSERVABLE_PRINCIPLE_P1_CAMPAIGN_CLOSURE_SYNTHESIS_NOTE_2026-05-18.md); every FAIL is an existence or text gate on that file, the computations pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170140Z"
  }
 }

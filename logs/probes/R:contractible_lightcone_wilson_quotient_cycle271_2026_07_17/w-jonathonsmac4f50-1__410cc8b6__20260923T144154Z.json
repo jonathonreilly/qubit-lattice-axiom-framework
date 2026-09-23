@@ -19,14 +19,21 @@
  "stdout_sha256": "74d2707d3395eb38731a9df56eedcfe9787a681455dd48e93af44d503f8e2bca",
  "stdout_tail": "ctors': 8, 'sector_exponent': 1295}]\nPASS the mapped even update algebra has zero local-check leakage and zero Wilson transitions without turning Wilson into a Record :: {'local_check_commutator_failures': 0, 'Wilson_transition_failures': 0, 'Wilson_status': 'central sector label, not a Record'}\nPASS redundant physical-check deletion is tolerated, while independent-basis deletion adds one spurious logical :: {'physical_rows': 297, 'rank': 241, 'physical_single_deletion_losses': [0], 'basis_deletion_loss': 1}\n\nSTATE / PREPARATION / LAWFUL-DOMAIN LIMITS\nPASS the theorem is an even local-observable quotient, not preparation of one common state across Wilson sectors :: {'basis_diagonal_face_string_lengths': [3, 6, 6, 9], 'Cycle230_principal_sea_rank': 73, 'one_particle_and_rank73_sea': 'odd and absent from the fixed total-even code', 'expectation_values': 'require matched local reduced states under the sector identifications', 'arbitrary_sector_state_equivalence': False}\nPASS the lawful domain excludes Wilson/membrane observables and stops exactly when the declared cone contains a paired noncontractible cycle :: {'domain': 'even observables supported in the declared full-cell patch and its finite gate cone', 'excluded': 'Wilson loops, conjugate membranes, unmatched sector states, odd one-particle states', 'compiler_iteration_is_physical_time': False, 'Wilson_label_is_Record': False, 'shared_obstruction': False, 'axiom_pressure': False}\nSUMMARY PASS 15 FAIL 1\nRESULT CYCLE271_OPEN\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T144155Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170140Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 410cc8b6 differs from the current HEAD 58bd2e3a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note/source is on main only under archive/ (docs/work_history/repo/review_feedback/CONTRACTIBLE_LIGHTCONE_WILSON_QUOTIENT_CYCLE271_NOTE_2026-07-17.md -> archive/notes/docs/work_history/repo/review_feedback/CONTRACTIBLE_LIGHTCONE_WILSON_QUOTIENT_CYCLE271_NOTE_2026-07-17.md); every FAIL is an existence or text gate on that file, the computations pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170140Z"
  }
 }

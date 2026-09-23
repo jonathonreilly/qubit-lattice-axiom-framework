@@ -19,14 +19,21 @@
  "stdout_sha256": "6cb3297a9c04794f212b84eb02880ba9d53a4739a2aff6e4c94e15dd9bbac379",
  "stdout_tail": "_failures': 0, 'orientation_reversals': 324}\nPASS a fixed orientation branch is not all-frame covariant, while an explicit orientation register repairs the family action :: {'fixed_branch_reversals': 324, 'joint_orientation_carrier_failures': 0}\nPASS the attempted autonomous shuttle uses bounded ordinary-M2 support and constant overhead per coarse cell :: {'ordinary_M2_roles_per_mode': ('matter M', 'parity accumulator P', 'moving head H', 'seam marker O', 'orientation D', 'bond stagger S', 'stage bit R0', 'stage bit R1', 'layer phase Q'), 'ordinary_M2_per_coarse_cell': 54, 'maximum_microstep_graph_radius': 2, 'one_fixed_local_microstep_rule': True}\nPASS the fixed beta=-0.3, g=0.37, mass, contact, and seam targets are retained but full gate synthesis is withheld :: {'beta': -0.3, 'g': 0.37, 'rest_mass_predecessor': 0.4534056541748851, 'principal_sea_rank_predecessor': 73, 'coin_A_B_FSWAP_contact_G_physical': 'not reached: bounded ordering transition and lawful marker preparation fail', 'mass_contact_seam_physical_intertwining': 'not claimed'}\nPASS the staggered grammar negative is not a shared obstruction and compiler phases are not physical time :: {'exact_grammar': 'phase-indexed A/B cycles plus one-head moving-accumulator shuttle', 'unbounded_macro_transition': True, 'phase_marker_preparation': 'supplied global sector', 'compiler_phases_are_not_physical_time': True, 'record_or_physical_close': False, 'universal_no_go': False, 'axiom_pressure': False}\nSUMMARY PASS 14 FAIL 1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T150616Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170142Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha e07bf4a9 differs from the current HEAD 58bd2e3a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note/source is on main only under archive/ (docs/work_history/repo/review_feedback/GENUINE_STAGGERED_PARITY_SHUTTLE_CYCLE260_NOTE_2026-07-17.md -> archive/notes/docs/work_history/repo/review_feedback/GENUINE_STAGGERED_PARITY_SHUTTLE_CYCLE260_NOTE_2026-07-17.md); every FAIL is an existence or text gate on that file, the computations pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170142Z"
  }
 }

@@ -19,14 +19,21 @@
  "stdout_sha256": "eb42e6d74d70689f82198319da2f6ed0f4b2871ab00fe690de1b81501c502202",
  "stdout_tail": "al_rank': 375, 'gauge_Gram_rank': 124, 'gauge_center_rank': 251, 'gauge_anticommutators': 1875, 'subsystem_reduction': 313, 'subsystem_exponent': 561, 'target_exponent': 750, 'reference_parity_increment': 1, 'quartic_plaquettes': 375, 'quartic_rank_mod_base': 248, 'quartic_mutual_anticommutators': 0, 'quartic_onsite_parity_leakage': 0}, {'L': 6, 'N': 216, 'gauge_generators': 648, 'gauge_logical_rank': 648, 'gauge_Gram_rank': 214, 'gauge_center_rank': 434, 'gauge_anticommutators': 3240, 'subsystem_reduction': 541, 'subsystem_exponent': 970, 'target_exponent': 1296, 'reference_parity_increment': 1, 'quartic_plaquettes': 648, 'quartic_rank_mod_base': 430, 'quartic_mutual_anticommutators': 0, 'quartic_onsite_parity_leakage': 0}]\nPASS the predecessor Cycle-230 mass/contact/seam fixture remains exact but no physical intertwiner is claimed :: {'beta': -0.3, 'g': 0.37, 'rest_mass_predecessor': 0.4534056541748851, 'principal_sea_rank_predecessor': 73, 'E_G_coarse_equals_G_physical_E': False, 'free_contact_seam_intertwiner': 'not reached because no tested route simultaneously closes covariance, commuting rank, and matter algebra'}\nPASS the bounded Pauli result leaves larger, non-Pauli, and multicell routes live without axiom pressure :: {'authority': 'none', 'audit': 'unset', 'larger_register': 'live', 'non_Pauli': 'live', 'multicell_dressing': 'live', 'coherent_gauge_data_are_Records': False, 'compiler_schedule_is_physical_time': False, 'axiom_pressure': False}\nSUMMARY PASS 10 FAIL 1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T101647Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170140Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 7eb792c7 differs from the current HEAD 58bd2e3a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note/source is on main only under archive/ (docs/work_history/repo/review_feedback/DRESSED_SPOKE_PARITY_GAUGE_CYCLE273_NOTE_2026-07-17.md -> archive/notes/docs/work_history/repo/review_feedback/DRESSED_SPOKE_PARITY_GAUGE_CYCLE273_NOTE_2026-07-17.md); every FAIL is an existence or text gate on that file, the computations pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170140Z"
  }
 }

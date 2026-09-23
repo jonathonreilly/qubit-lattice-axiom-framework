@@ -19,14 +19,21 @@
  "stdout_sha256": "c42aa8346a3833da743992494608b9ca63d3c96cbf8e980a3756966271b59b19",
  "stdout_tail": "plicit :: {'schedule': 'candidate full schedule: matter/field onsite coins; local matter-controlled reservoir-field exchange; matter and direction-field streams; arrival-cell contact; moving matter is not executed in the reservoir-field matrix control', 'remaining': 'the reservoir is attached to a lattice cell; transporting it with a moving matter body needs a new bounded carrier/compiler'}\n\nLAWFUL DOMAIN / SUPPLIED STRUCTURE\nPASS the declared domain rejects aliased and mistyped fixtures :: {'rejected': 4}\nPASS the supplied structure inventory is explicit :: {'supplied': ('Cycle-269 sectorwise mapped matter code and B representatives', 'beta=-0.3 and m=-3 tan(beta/2)', 'one site-local reservoir M2 per coarse cell', 'six physical directional field M2 per coarse cell', 'full field-coin extension outside the zero/one sector', 'uniform scalar creation convention', 'coupling 0.8 and coin-vertex-stream-contact schedule', 'prepared total reservoir-plus-field excitation sector'), 'derived': ('full local physical-M2 exchange gate', 'operator-level source-field balance', 'zero/one mediator invariance without occupancy queries', 'bounded support, zero leakage, covariance, deletion, and composition'), 'not_earned': ('reservoir transport with moving matter', 'energy/stress/gravity-source interpretation', 'field work or matter recoil', 'clock normalization or metric response', 'prepared full-Fock matter encoder')}\n\nSUMMARY PASS 19 FAIL 1\nRESULT LOCAL_CONJUGATE_RESERVOIR_LEDGER_REPAIR_OPEN\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T055625Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170143Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 6b8958a5 differs from the current HEAD 58bd2e3a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note/source is on main only under archive/ (docs/work_history/repo/review_feedback/LOCAL_CONJUGATE_RESERVOIR_SOURCE_FIELD_LEDGER_REPAIR_NOTE_2026-07-17.md -> archive/notes/docs/work_history/repo/review_feedback/LOCAL_CONJUGATE_RESERVOIR_SOURCE_FIELD_LEDGER_REPAIR_NOTE_2026-07-17.md); every FAIL is an existence or text gate on that file, the computations pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170143Z"
  }
 }

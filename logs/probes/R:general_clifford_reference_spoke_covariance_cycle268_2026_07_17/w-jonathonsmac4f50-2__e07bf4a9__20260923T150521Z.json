@@ -19,14 +19,21 @@
  "stdout_sha256": "a1322913865ab401e0190e4f76212107c4e4e23a8c9520bbd5f32a9e7cf1ff0b",
  "stdout_tail": "025, 'abstract_phase_inconsistencies': (0, 0), 'physical_M2_per_cell': 24, 'pair_rank': 648, 'expanded_rank': 3888, 'expanded_code_exponent': 1296, 'target_exponent': 1296, 'expanded_phase_inconsistencies': 0, 'positive_parity_consistent': True, 'negative_parity_consistent': False, 'maximum_expanded_local_support': 24}], 'direct_L3': {'reference_equality_leakage': 0, 'pair_check_phase_inconsistencies': 0}}\nPASS covariance search does not supply bounded preparation or remove the three Wilson logicals :: {'sizes': [{'L': 3, 'Wilson_increment': 3, 'maximum_Wilson_support': 21}, {'L': 4, 'Wilson_increment': 3, 'maximum_Wilson_support': 28}, {'L': 5, 'Wilson_increment': 3, 'maximum_Wilson_support': 35}, {'L': 6, 'Wilson_increment': 3, 'maximum_Wilson_support': 42}], 'bounded_preparation': False, 'arbitrary_coherent_parity_input': 'not encoded', 'pair_motif_route_bound': 16}\nPASS actual Cycle-230 gates and mass/rank-73 seam remain gated by the absent scalar all-frame full-Fock E :: {'beta': -0.3, 'g': 0.37, 'rest_mass_predecessor': 0.4534056541748851, 'principal_sea_rank_predecessor': 73, 'common_full_Fock_E': False, 'coin_A_B_FSWAP_contact_synthesis': 'not reached', 'mass_and_rank73_seam_intertwining': 'not claimed'}\nPASS the 3D frame input and Clifford search are not physical time or Records :: {'3D_input_is_not_physical_time': True, 'Clifford_and_pair_carriers': 'coherent compiler structure, not Records', 'universal_no_go': False, 'axiom_pressure': False}\nSUMMARY PASS 11 FAIL 1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T150524Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170141Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha e07bf4a9 differs from the current HEAD 58bd2e3a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note/source is on main only under archive/ (docs/work_history/repo/review_feedback/GENERAL_CLIFFORD_REFERENCE_SPOKE_COVARIANCE_CYCLE268_NOTE_2026-07-17.md -> archive/notes/docs/work_history/repo/review_feedback/GENERAL_CLIFFORD_REFERENCE_SPOKE_COVARIANCE_CYCLE268_NOTE_2026-07-17.md); every FAIL is an existence or text gate on that file, the computations pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170141Z"
  }
 }

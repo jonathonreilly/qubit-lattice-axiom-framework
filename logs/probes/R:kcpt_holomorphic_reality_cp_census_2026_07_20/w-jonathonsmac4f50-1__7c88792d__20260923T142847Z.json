@@ -22,15 +22,22 @@
  "stdout_sha256": "890ae996827628df711ce8a21989a231567ad6e3318ebb02d897297ce92dcfa7",
  "stdout_tail": "4 gens, 1<..<=10, closure 768==768); generator-commutant dim 5==5 (OOM-avoiding kron over 4 gens, not 768)\nPASS G14 - commutant dim 5==5 (clean sv-gap 1.4e+14>1e6); 5 idempotents orthogonal (Sum P=I 5.6e-16, P^2=P 3.9e-16, P_iP_j=0 1.1e-16), invariant under generators (max|[P_k,C_gen]|=1.8e-14<1e-8), sorted ranks [4, 4, 6, 6, 12]==[4,4,6,6,12] sum 32; REJECTORS != [4,4,4,8,12], != [2,6,6,6,12]\nPASS G15 - [FLOAT] per-constituent FS_k round to integers (residual 2.8e-17<1e-6), sorted [0, 0, 0, 0, 1]==[0,0,0,0,1], sum 1==1; the unique +1 is the rank-12 constituent; REJECTORS != [0,0,0,0,0], != [1,1,1,1,1], != [0,0,0,1,1]\nPASS G16 - [FLOAT] rank-12 constituent self-conjugate (max|Im chi_12|=2.2e-15<1e-6); the four rank-4/6 constituents NOT self-conjugate (min max|Im chi|=1.732>1e-3) and have NO conjugate-character match anywhere in W (min all-candidate gap=2.828>1e-3; only match ranks=[(12, 12)]): a real 12 vs four genuinely complex constituents\nPASS G17 - CONSISTENCY: Sum_k FS_k = 1.000000+0.000000j == FS_W = 1.000000+0.000000j (residual 1.5e-17<1e-6; both == 1): per-constituent census agrees with the exact-integer bridge\nPASS G18 - SOURCE PIN Unit 9: common-sign-orbit note contains `S_eps J_full S_eps = -J_full`\nFAIL G19 - SOURCE PIN Unit 12: holomorphic-rep note contains `4 + 4 + 6 + 6 + 12 = 32`\nFAIL G20 - SELF-NOTE DEPENDENCY DISCIPLINE: total KCPT-links 0==2 (Unit12 0==1, Unit9 0==1); Unit8/10/11 linked 0/0/0 == 0/0/0 (backticked only, never `](...)`)\nTOTAL: PASS=18 FAIL=2\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T142910Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170143Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 7c88792d differs from the current HEAD 58bd2e3a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=18 FAIL=2' vs cache 'TOTAL: PASS=20 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note/source is on main only under archive/ (docs/KCPT_HOLOMORPHIC_REALITY_CP_CENSUS_FROBENIUS_SCHUR_BOUNDED_THEOREM_NOTE_2026-07-20.md -> archive/notes/docs/KCPT_HOLOMORPHIC_REALITY_CP_CENSUS_FROBENIUS_SCHUR_BOUNDED_THEOREM_NOTE_2026-07-20.md; docs/KCPT_HOLOMORPHIC_GAMB_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-07-20.md -> archive/notes/docs/KCPT_HOLOMORPHIC_GAMB_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-07-20.md); every FAIL is an existence or text gate on that file, the computations pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170143Z"
  }
 }

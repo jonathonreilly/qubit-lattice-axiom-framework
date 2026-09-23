@@ -21,11 +21,12 @@
  "stdout_sha256": "7f38d14f4f10ba70f44a87c5ec917ae168da7c3bfdf1d685d6c63fc9cab132ec",
  "stdout_tail": "E-2 MEASURED-CALIBRATION RESCUE-TRANSFORM FIREWALL\n========================================================================================\n\nA. Authority surfaces\n------------------------------------------------------------------------\nFAIL: note surface exists -- docs/QUARK_ROUTE2_MEASURED_CALIBRATION_RESCUE_TRANSFORM_FIREWALL_NOTE_2026-06-21.md\nFAIL: measured surface exists -- docs/QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md\nFAIL: box_note surface exists -- docs/QUARK_ROUTE2_QE_BOX_SIZE_SCAN_CLOSES_BULK_LIMIT_HATCH_NARROW_THEOREM_NOTE_2026-06-10.md\nPASS: box_cache surface exists -- logs/runner-cache/frontier_quark_route2_qe_box_size_scan_2026_06_10.txt\nPASS: covariance surface exists -- docs/QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md\nPASS: exact_readout surface exists -- docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md\nPASS: parent surface exists -- docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/frontier_quark_route2_measured_calibration_rescue_transform_firewall_2026_06_21.py\", line 244, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/frontier_quark_route2_measured_calibration_rescue_transform_firewall_2026_06_21.py\", line 100, in main\n    note = texts[\"note\"]\n           ~~~~~^^^^^^^^\nKeyError: 'note'\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T113031Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170141Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 769d150d differs from the current HEAD 58bd2e3a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: parse field 'total' found nothing in the stdout: the run may not have reached its summary",
@@ -33,5 +34,11 @@
    "FAIL: the pinned cache ends with the verdict 'TOTAL: PASS=40, FAIL=0' and this run printed none",
    "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note/source is on main only under archive/ (docs/QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md -> archive/notes/docs/QUARK_ROUTE2_E_CENTER_LIFT_MEASURED_CALIBRATION_NARROW_THEOREM_NOTE_2026-06-10.md; docs/QUARK_ROUTE2_MEASURED_CALIBRATION_RESCUE_TRANSFORM_FIREWALL_NOTE_2026-06-21.md -> archive/notes/docs/QUARK_ROUTE2_MEASURED_CALIBRATION_RESCUE_TRANSFORM_FIREWALL_NOTE_2026-06-21.md; docs/QUARK_ROUTE2_QE_BOX_SIZE_SCAN_CLOSES_); every FAIL is an existence or text gate on that file, the computations pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170141Z"
  }
 }

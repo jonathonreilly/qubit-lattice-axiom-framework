@@ -22,15 +22,22 @@
  "stdout_sha256": "5172cf2426e62e132ae5a742cf4afe8c88b19f7cec37e9b62208a68d0655260e",
  "stdout_tail": "bling, not assumed\nPASS G-AGREE - methods A and B AGREE on all six (A=[1, 1, 1, 1, 1, 1], B=[1, 1, 1, 1, 1, 1], both all +1); no constituent complex-type (all |FS_group|=1: min 1.0000) and none symplectic (no -1: min Re 1.0000>0)\nPASS G-REALCHAR - chi_i(h) = tr(P_i h) REAL over all 1536 h in H: max_h|Im chi_i(h)| over the six constituents = 3.9e-15<1e-9 -- self-dual directly; the FS/form gates distinguish orthogonal from quaternionic type\nPASS G-REALIFY-BEFORE - BEFORE census over G_amb on the FIVE holomorphic PW (ranks 4,4,6,6,12): FS_G sorted [0, 0, 0, 0, 1]==[0,0,0,0,1] (four complex-type 0 + one real +1), sum 1==1 [reproduces Unit-13 (0, 0, 0, 0, +1)]\nPASS G-REALIFY-AFTER - AFTER census over H: sum(FS_H)=6==6 vs sum(FS_G)=1==1 -- CP-completion REALIFIES. The four complex-type W-blocks FLIP 0->+1 (True); the unique real 12 STAYS +1 in BOTH split halves (True)\nPASS G-COUNT - c_H = (Sum_{h in H} tr(h)^2)/|H| = 9216/1536 = 6==6 [EXACT INTEGER signed-perm traces] -- six distinct H-constituents; REJECTORS c_H != 5 (unsplit) / != 7\nFAIL G-PIN-U14 - SOURCE PIN Unit 14: CP-completion note contains `C^64 = 8 + 8 + 12 + 12 + 12\u207a + 12\u207b` (the six-constituent decomposition being censused)\nFAIL G-PIN-U13 - SOURCE PIN Unit 13: reality/CP-census note contains `FS = (0, 0, 0, 0, +1)` (the before-census)\nFAIL G-PIN-SELF - SELF-NOTE DEPENDENCY DISCIPLINE: total KCPT-links 0==2 (Unit14 0==1, Unit13 0==1); Unit9 0==0 and Unit10 0==0 markdown links (backticked names only)\nTOTAL: PASS=16 FAIL=3\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T142823Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170143Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 7c88792d differs from the current HEAD 58bd2e3a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=16 FAIL=3' vs cache 'TOTAL: PASS=19 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note/source is on main only under archive/ (docs/KCPT_EXTENDED_GROUP_REALITY_CENSUS_FROBENIUS_SCHUR_BOUNDED_THEOREM_NOTE_2026-07-20.md -> archive/notes/docs/KCPT_EXTENDED_GROUP_REALITY_CENSUS_FROBENIUS_SCHUR_BOUNDED_THEOREM_NOTE_2026-07-20.md; docs/KCPT_CP_COMPLETION_UNDER_EXTENDED_GROUP_BOUNDED_THEOREM_NOTE_2026-07-20.md -> archive/notes/docs/KCPT_CP_COMPLETION_UNDER_EXTENDED_GROUP_BOUNDED_THEOREM_NOTE_2026-07-20.md; docs/KCPT_HOLOMORPHIC_REALITY_CP_CENSUS_FR); every FAIL is an existence or text gate on that file, the computations pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170143Z"
  }
 }

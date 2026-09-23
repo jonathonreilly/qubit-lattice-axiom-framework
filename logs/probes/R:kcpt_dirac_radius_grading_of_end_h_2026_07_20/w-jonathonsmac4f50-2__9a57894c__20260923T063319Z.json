@@ -22,15 +22,22 @@
  "stdout_sha256": "ba32157a0fd93bd11b5eec1ddebf8b4c1b74fafd10d0e614564801648a4cde1b",
  "stdout_tail": "9.8e-15); P block-diagonal (max off-block |Z_i^H P Z_j|=2.0e-14<1e-9)\nPASS G10 - THE COMPUTED ASSIGNMENT: CP-split pair {12+,12-} both at m=[1, 1]==[1,1] (RADIUS-DEGENERATE, lambda=-2); induced 12's at m=[2, 2]==[2,2] (lambda=-2sqrt2); induced 8's at the extreme shells m(set)=[0, 3]=={0,3} (kernel + top). Dirac radius does NOT separate 12+ from 12- -- the quotient-sign-related H-constituents receive the same scalar from P\nPASS G11 - ANTI-FAB: D2 alone has a NONZERO chi_sgn off-block |Z_12+^H D2 Z_12-|=1.227>1 and is NOT block-scalar (max D2-alone |blk-scal|=3.103>1), so P's block-diagonality is NOT inherited from D2; the sqrt(m)->1 proxy gives INTEGER block values -2m [-6, -4, -2, 0]==[-6,-4,-2,0], NOT the irrational -2sqrt m -- no integer proxy fakes it\nFAIL G-PIN-U14 - SOURCE PIN Unit 14: CP-completion note contains `9216 / 1536 = 6` (c_H=6, the six constituents P is block-scalar on)\nPASS G-PIN-U9 - SOURCE PIN Unit 9: common-sign-orbit note contains `S_eps J_full S_eps = -J_full` (with S_eps D2 S_eps=-D2, the two sign reversals that make P chi_sgn-even -> H-invariant)\nFAIL G-PIN-SELF - SELF-NOTE DEPENDENCY DISCIPLINE: total KCPT-links 0==2 (Unit14 0==1, Unit9 0==1); Units 8/10/11/12/13 linked 0/0/0/0/0==0 (backticked only, never `](...)`)\nPASS G-MEM - MEMORY-BUDGET: greedy generating sets close exactly -- G_amb 4 gens -> 768==768, H 5 gens -> 1536==1536; commutant kron stacks use these generators, never a per-element stack over 768/1536 (OOM-avoiding)\nTOTAL: PASS=13 FAIL=2\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T063345Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170143Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 9a57894c differs from the current HEAD 58bd2e3a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=13 FAIL=2' vs cache 'TOTAL: PASS=15 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note/source is on main only under archive/ (docs/KCPT_CP_COMPLETION_UNDER_EXTENDED_GROUP_BOUNDED_THEOREM_NOTE_2026-07-20.md -> archive/notes/docs/KCPT_CP_COMPLETION_UNDER_EXTENDED_GROUP_BOUNDED_THEOREM_NOTE_2026-07-20.md; docs/KCPT_DIRAC_RADIUS_GRADING_OF_END_H_BOUNDED_THEOREM_NOTE_2026-07-20.md -> archive/notes/docs/KCPT_DIRAC_RADIUS_GRADING_OF_END_H_BOUNDED_THEOREM_NOTE_2026-07-20.md); every FAIL is an existence or text gate on that file, the computations pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170143Z"
  }
 }

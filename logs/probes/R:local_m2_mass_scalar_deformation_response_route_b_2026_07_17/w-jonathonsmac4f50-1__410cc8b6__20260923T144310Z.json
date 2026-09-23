@@ -19,14 +19,21 @@
  "stdout_sha256": "14d2ee42c8b9d269236eb034fe4a28823d367750b271ca6f57af24b8eec16523",
  "stdout_tail": "tiffness_residual': 4.1016060314694323e-16, 'three_green_residual': 4.0919025283447565e-16}, {'L': 7, 'held_out': True, 'stiffness_residual': 4.552521930955827e-16, 'three_green_residual': 1.21058561706807e-15}]\n\nLAWFUL DOMAIN / SUPPLIED STRUCTURE\nPASS the declared domain accepts the imported six-mode blocks and rejects aliased or mistyped controls :: {'negative_fixture_rejections': 3}\nPASS the supplied structure inventory is explicit :: {'supplied': ('beta=-0.3 common-family species and m=-3 tan(beta/2)', 'g=0.37 onsite contact and its insertion order', 'Cycle-269 connected physical matter code and B representatives', 'six additional field M2 sites per coarse cell', 'vacuum plus one-excitation field code restriction', 'uniform scalar transition X_s', 'bilinear M_x tensor X_s vertex', 'epsilon parameter, zero, sign, and normalization', 'finite-coin field law and K=2I-U-U-dagger stiffness', 'periodic zero-mean boundary/source fixture'), 'derived': ('exact finite relative update', 'Hermitian bounded deformation response', 'parallel additivity', 'common-rephase cancellation', 'physical-M2 support/leakage/covariance', 'free Cycle-213 and static Cycle-216 scalar reductions'), 'not_earned': ('deformation-dependent phase zero', 'deformation normalization', 'direct Cycle-213 source term', 'combined continuity and recoil', 'reciprocal geometry or metric response', 'physical energy/stress/source selection')}\n\nSUMMARY PASS 23 FAIL 1\nRESULT LOCAL_M2_MASS_SCALAR_DEFORMATION_RESPONSE_OPEN\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T144344Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170143Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 410cc8b6 differs from the current HEAD 58bd2e3a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note/source is on main only under archive/ (docs/work_history/repo/review_feedback/LOCAL_M2_MASS_SCALAR_DEFORMATION_RESPONSE_ROUTE_B_NOTE_2026-07-17.md -> archive/notes/docs/work_history/repo/review_feedback/LOCAL_M2_MASS_SCALAR_DEFORMATION_RESPONSE_ROUTE_B_NOTE_2026-07-17.md); every FAIL is an existence or text gate on that file, the computations pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170143Z"
  }
 }

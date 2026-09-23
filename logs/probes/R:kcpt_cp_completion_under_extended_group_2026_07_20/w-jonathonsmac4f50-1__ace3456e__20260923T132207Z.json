@@ -22,15 +22,22 @@
  "stdout_sha256": "9b8a89c8669b0d93aafbdcd94300f59bec735918233dc6043ce0516a8d22e60c",
  "stdout_tail": " (two distinct G_amb-irreps) / != 1. G_amb-commutant 4 (M_2, same content) vs H-commutant 2 (split by the coset)\nPASS G15 - CHARACTER CROSS-CHECK (opposite coset character = chi_sgn): all 768 G_amb character pairs are EQUAL (max complex gap 4.0e-15<1e-6); all 768 coset pairs are OPPOSITE (max complex sum 5.2e-15<1e-6); all half-characters are REAL (max |Im| 2.4e-15<1e-6). One nonzero coset witness has (chi_a,chi_b)=(-2.8284,+2.8284) with |chi_a-chi_b|=5.657>1e-3 -- hence 12^- = 12^+ (x) chi_sgn. [observed value +-2*sqrt(2), NOT gated -- only equality/opposition, nonzero distinction, and reality]\nPASS G-MEM - MEMORY-BUDGET: small deterministic greedy generating sets close exactly -- G_amb 4 gens -> 768==768, H 5 gens -> 1536==1536 (1<len<=16/20, actual printed, never called minimal); commutant kron stacks use these generators, never a per-element stack over 768/1536 (OOM-avoiding, peak < ~3 GB)\nPASS G-PIN-U9 - SOURCE PIN Unit 9: common-sign-orbit note contains `S_eps J_full S_eps = -J_full` (the sign reversal used by G5/G9)\nFAIL G-PIN-U12 - SOURCE PIN Unit 12: holomorphic-rep note contains `4 + 4 + 6 + 6 + 12 = 32` (the decomposition that CP-completes)\nFAIL G-PIN-U13 - SOURCE PIN Unit 13: reality/CP-census note contains `FS = (0, 0, 0, 0, +1)` (rank-12 the unique self-conjugate)\nFAIL G-PIN-SELF - SELF-NOTE DEPENDENCY DISCIPLINE: total KCPT-links 0==3 (Unit12 0==1, Unit13 0==1, Unit9 0==1); Unit8/10/11 linked 0/0/0==0/0/0 (backticked only, never `](...)`)\nTOTAL: PASS=17 FAIL=3\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T132234Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170142Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha ace3456e differs from the current HEAD 58bd2e3a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=17 FAIL=3' vs cache 'TOTAL: PASS=20 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note/source is on main only under archive/ (docs/KCPT_HOLOMORPHIC_REALITY_CP_CENSUS_FROBENIUS_SCHUR_BOUNDED_THEOREM_NOTE_2026-07-20.md -> archive/notes/docs/KCPT_HOLOMORPHIC_REALITY_CP_CENSUS_FROBENIUS_SCHUR_BOUNDED_THEOREM_NOTE_2026-07-20.md; docs/KCPT_HOLOMORPHIC_GAMB_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-07-20.md -> archive/notes/docs/KCPT_HOLOMORPHIC_GAMB_REPRESENTATION_BOUNDED_THEOREM_NOTE_2026-07-20.md; docs/KCPT_CP_COMPLETION_UNDER_EXTENDED_GROUP_BOU); every FAIL is an existence or text gate on that file, the computations pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170142Z"
  }
 }

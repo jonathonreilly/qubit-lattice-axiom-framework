@@ -19,14 +19,21 @@
  "stdout_sha256": "e4848453ef28b6d9d5ef762e99c16e49ff6d9d44de6a5273eb5ef9a1c2e12a2e",
  "stdout_tail": "-frame and L=3 translation tests :: {'tests': 648, 'failures': []}\n\nCOMPOSITION / SPECTATOR / LAWFUL DOMAIN\nPASS two disjoint copies compose additively and a normalized spectator leaves the exact two-slice ledger unchanged :: {'composition_residual': 5.9636093283435104e-15}\nPASS the lawful-domain guard rejects aliased, mistyped, or wrong-number fixtures :: {'rejected': 5}\nPASS the supplied-versus-derived inventory keeps the finite ledger distinct from energy, rate, and autonomous dynamics :: {'supplied': ('Cycle-269 local-check matter representation and one adjacent connector', 'Cycle-290 |3,3> and |4,2> fixed-N branch choice', 'beta=-0.3, g=0.37, kappa=0.8, and the Cycle-219 phase-to-mass map', 'one reservoir M2 plus six directional field M2 at each of two cells', 'uniform scalar-field mode, branch-coordinate normalization, and two-slice ordering'), 'derived': ('exact Delta(X,Y)=J_exchange(X,Y)+J_contact(X,Y)', 'exact signed field-reservoir number balance', '49-M2 bounded union, zero leakage, covariance, deletion, held-size, and composition controls'), 'not_earned': ('a scalar conserved physical energy or Hamiltonian', 'a generator rate, clock normalization, elapsed physical time, stress, or gravity source', 'an autonomous branch preparation, moving-reservoir compiler, joint matter/field stream update, or full-Fock state encoder', 'a Record, occurrence law, Born rule, axiom change, or audit authority')}\n\nSUMMARY PASS 14 FAIL 1\nRESULT TWO_SLICE_OFFDIAGONAL_VECTOR_LEDGER_OPEN\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T070211Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170144Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha a5094169 differs from the current HEAD 58bd2e3a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note/source is on main only under archive/ (docs/work_history/repo/review_feedback/TWO_SLICE_OFFDIAGONAL_CONTACT_RESERVOIR_WORK_LEDGER_NOTE_2026-07-17.md -> archive/notes/docs/work_history/repo/review_feedback/TWO_SLICE_OFFDIAGONAL_CONTACT_RESERVOIR_WORK_LEDGER_NOTE_2026-07-17.md); every FAIL is an existence or text gate on that file, the computations pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170144Z"
  }
 }

@@ -19,14 +19,21 @@
  "stdout_sha256": "55858193053dbfec1cb451bbe6d9f47a413e9c8aaa7f43944971af5acf636ad9",
  "stdout_tail": "': 3, 'base_Wilson_increment': 3, 'reference_Wilson_increment': 3, 'cell_torus_diameter': 3, 'equality_cat_causal_depth_lower_bound': 2}, {'L': 4, 'base_Wilson_increment': 3, 'reference_Wilson_increment': 3, 'cell_torus_diameter': 6, 'equality_cat_causal_depth_lower_bound': 3}, {'L': 5, 'base_Wilson_increment': 3, 'reference_Wilson_increment': 3, 'cell_torus_diameter': 6, 'equality_cat_causal_depth_lower_bound': 3}, {'L': 6, 'base_Wilson_increment': 3, 'reference_Wilson_increment': 3, 'cell_torus_diameter': 9, 'equality_cat_causal_depth_lower_bound': 5}], 'bounded_preparation': False, 'reason': 'the displayed equality carriers require system-spanning cat coherence, and both gamma codes retain three Wilson logicals before nonlocal sector fixing', 'arbitrary_full_Fock_input': 'not encoded by a bounded local circuit', 'coherent_even_odd_superpositions': 'not prepared'}\nPASS actual Cycle-230 gates and mass/rank-73 seam synthesis remain gated by the missing common physical E :: {'beta': -0.3, 'g': 0.37, 'rest_mass_predecessor': 0.4534056541748851, 'principal_sea_rank_predecessor': 73, 'common_full_Fock_E': False, 'coin_A_B_FSWAP_contact_synthesis': 'not reached', 'mass_and_rank73_seam_intertwining': 'not claimed'}\nPASS carrier fanout and stabilizer schedules are not physical time or Records :: {'compiler_layers_are_not_physical_time': True, 'label_and_reference_modes': 'coherent code carriers, not Records', 'universal_no_go': False, 'axiom_pressure': False}\nSUMMARY PASS 16 FAIL 1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T143920Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170139Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 7c88792d differs from the current HEAD 58bd2e3a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note/source is on main only under archive/ (docs/work_history/repo/review_feedback/COHERENT_GAMMA_PARITY_SECTOR_DOUBLING_CYCLE264_NOTE_2026-07-17.md -> archive/notes/docs/work_history/repo/review_feedback/COHERENT_GAMMA_PARITY_SECTOR_DOUBLING_CYCLE264_NOTE_2026-07-17.md); every FAIL is an existence or text gate on that file, the computations pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170139Z"
  }
 }

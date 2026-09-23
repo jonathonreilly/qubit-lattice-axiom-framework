@@ -22,15 +22,22 @@
  "stdout_sha256": "b3480eb67aa0e79cca56cb9980be5df9f2a4c5b91b96f7504cd53405252bf4d4",
  "stdout_tail": "us-2 source/target violation class  --  source=(-2,0,0) target=(0,0,0)\n  ONE_TICK_WITNESS: point=(-2, 0, 0) in_radius2=True in_C_1=False block01_target=(0, 0, 0)\n\n----------------------------------------------------------------------------------------\nBLOCK E \u2014 paired-note surface pins\n----------------------------------------------------------------------------------------\n  [FAIL] paired classification note exists  --  docs/PER_PLAQUETTE_LICENSE_COVARIANT_SUBDOMAIN_CLASSIFICATION_NOTE_2026-07-12.md\n  [FAIL] note is dated 2026-07-12\n  [FAIL] note claim type is bounded_theorem\n  [FAIL] note has the exact finite-classification status\n  [FAIL] canonical status-authority firewall is present\n  [FAIL] completeness theorem tag and exhaustive count are pinned\n  [FAIL] classification table contains every computed cell\n  [FAIL] enumerated-domain interval theorem tag is pinned\n  [FAIL] all required boundary pins are present\n  [FAIL] radius-2 witness and block-01 falsifier class are named\n  [FAIL] authorized dependencies and backticked parent context are pinned\n  [PASS] the parent context is not a markdown dependency edge\n  [FAIL] yaml tail supplies bounded-theorem author hint and one-line scope\n\n========================================================================================\nSHORT STDOUT SUMMARY\nE union A row: size=4 length4=0/24 length6=0/264\nradius-2 domain size: 38\nTOTAL: PASS=30 FAIL=12\n========================================================================================\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T120015Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170144Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 6283b3fe differs from the current HEAD 58bd2e3a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=30 FAIL=12' vs cache 'TOTAL: PASS=42 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note/source is on main only under archive/ (docs/PER_PLAQUETTE_LICENSE_COVARIANT_SUBDOMAIN_CLASSIFICATION_NOTE_2026-07-12.md -> archive/notes/docs/PER_PLAQUETTE_LICENSE_COVARIANT_SUBDOMAIN_CLASSIFICATION_NOTE_2026-07-12.md); every FAIL is an existence or text gate on that file, the computations pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170144Z"
  }
 }

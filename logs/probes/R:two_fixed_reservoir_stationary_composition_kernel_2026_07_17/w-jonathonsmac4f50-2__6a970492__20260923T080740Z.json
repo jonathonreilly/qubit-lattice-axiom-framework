@@ -19,14 +19,21 @@
  "stdout_sha256": "d6c7e2a4e25e5bee0710b6d4b33cbd04a990afac1712be033a2825f35a85194c",
  "stdout_tail": ")', 'finite periodic sizes L=3,...,9, held-out L=9, all 38 held-size proper-cubic orbit representatives verified against all 728 nonzero vectors, zero-mean convention, and Cycle216 comparator', 'complex bilinear probe coefficients alpha=1+0.5i and beta=-0.3+0.8i, and Moore-Penrose rcond=1e-11 for the antisymmetric construction'), 'derived': ('bright eigenpair and exact additive two-source shifted profile on the tested finite matrices', 'one explicitly constructed zero-total-q antisymmetric lambda=1 member with nonzero local q coordinates, field weight, and compatibility residual', 'spectral extraction of the off-diagonal field response, ordered complex four-term shifted bilinear, and conjugate reciprocity', 'theta=0 endpoint reductions, proper-cubic and translation covariance, normalization, zero-mode, held-size, and lawful-domain controls'), 'not_earned': ('physical energy, Hamiltonian, eigenphase-as-rate, clock normalization, force, gravity, stress, or source mass', 'matter or contact update, Cycle230 contact, a physical-M2 compiler/intertwiner, or a whole-compiler claim', 'host-side renewal, moving or carried source, radiation reaction, many-excitation closure, or a preparation mechanism', 'a spectral census, eigenvalue multiplicity theorem, or generic level-splitting conclusion', 'a result outside the tested finite sizes/separations, a Record, occurrence/Born law, axiom change, or audit authority')}\n\nSUMMARY PASS 22 FAIL 1\nRESULT TWO_FIXED_RESERVOIR_SHIFTED_BILINEAR_OPEN\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T080750Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170144Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 6a970492 differs from the current HEAD 58bd2e3a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note/source is on main only under archive/ (docs/work_history/repo/review_feedback/TWO_FIXED_RESERVOIR_STATIONARY_COMPOSITION_KERNEL_NOTE_2026-07-17.md -> archive/notes/docs/work_history/repo/review_feedback/TWO_FIXED_RESERVOIR_STATIONARY_COMPOSITION_KERNEL_NOTE_2026-07-17.md); every FAIL is an existence or text gate on that file, the computations pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170144Z"
  }
 }

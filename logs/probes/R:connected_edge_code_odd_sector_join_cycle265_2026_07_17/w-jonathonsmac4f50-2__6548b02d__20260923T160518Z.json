@@ -19,14 +19,21 @@
  "stdout_sha256": "b8a255cfcf4f954b7fbb0d1fa660c7e6c36944263a79eb0896d254a1033d57ca",
  "stdout_tail": "or': 73, 'bounded_even_coin_contact_FSWAP_algebra': True, 'one_particle_mass_intertwining': False, 'rank73_contact_seam_intertwining': False, 'reason': 'symmetric branch omits odd; one-port is marked, even-volume defective, and not bounded-prepared'}\nPASS one literal cell-center M2 plus the 15 face M2 sites gives a collision-free all-24 period-16 placement :: {'cell_center_roles': 1, 'face_roles_after_sharing': 15, 'collisions': 0, 'frame_failures': 0}\nPASS the physical placement is a macrocode, and compiler schedules are not physical time :: {'patches': [{'L': 3, 'active_M2': 432, 'unit_symmetric_difference': 864, 'macro_symmetric_difference': 0}, {'L': 4, 'active_M2': 1024, 'unit_symmetric_difference': 2048, 'macro_symmetric_difference': 0}, {'L': 5, 'active_M2': 2000, 'unit_symmetric_difference': 4000, 'macro_symmetric_difference': 0}, {'L': 6, 'active_M2': 3456, 'unit_symmetric_difference': 6912, 'macro_symmetric_difference': 0}], 'period16_origin_marker': 'supplied', 'compiler_schedules_are_not_physical_time': True, 'ancilla_field_is_not_a_Record': True}\nPASS the scoped Z-equality result is not a universal no-go, shared obstruction, minimum-content claim, or axiom pressure :: {'live': ('X/cat-like reference codes', 'local even pair-flip constraints', 'non-Pauli subsystem encoders', 'measurement/reset or supplied entanglement', 'open boundaries/punctures'), 'three_dimensions': 'axiomatic input', 'shared_obstruction': False, 'axiom_pressure': False}\nSUMMARY PASS 18 FAIL 1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T160523Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170140Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 6548b02d differs from the current HEAD 58bd2e3a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note/source is on main only under archive/ (docs/work_history/repo/review_feedback/CONNECTED_EDGE_CODE_ODD_SECTOR_JOIN_CYCLE265_NOTE_2026-07-17.md -> archive/notes/docs/work_history/repo/review_feedback/CONNECTED_EDGE_CODE_ODD_SECTOR_JOIN_CYCLE265_NOTE_2026-07-17.md); every FAIL is an existence or text gate on that file, the computations pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170140Z"
  }
 }

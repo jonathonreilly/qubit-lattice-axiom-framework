@@ -22,15 +22,22 @@
  "stdout_sha256": "9ae51aafe584e1d1a191b7a806b66bfe9309e76a829ffe3d6f5f1937ec4d6adc",
  "stdout_tail": "he arithmetic resolves exactly at every sample; the per-candidate nonblindness column asking whether a surface distinguishes E-center from E-shell is by contrast a declared judgement per row, and is certified only at that strength here.\nper_mode: the E and T1 rows stay distinct at every step -- q_T=5/6 is granted, s_TE=alpha_T/alpha_E=-2 carries the cross-channel scale, and c_TE=s_TE*q_T/q_E is a genuine E-against-T ratio rather than a single-channel number; separately the color channel count gives F_adj(N_c=3)=8/9 and the runner does compute that -F_adj equals the target c_TE=-8/9, while still classifying that coincidence as an untyped bridge and not a derivation.\nper_block: what gets resolved at block granularity is inventory and nothing else -- 8 candidate families are swept against six gate conditions with one named defect string apiece and none clears, and ten named source files are swept for 29 required markers; both sweeps resolve presence and counts, and no field amplitude is evaluated for any block.\nlattice_wide: checked and not executed, and executing it would breach this runner's own premise list -- no lattice, volume or limit appears anywhere in the file, the one candidate carrying volume information is the measured calibration which is admitted as comparator only with exact infinite-volume identification left open, and A_min expressly forbids treating that finite-box calibration as an infinite-volume theorem.\n\nTOTAL: PASS=53, FAIL=24\nVERDICT: gate checks failed.\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T054529Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170141Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 08fdf456 differs from the current HEAD 58bd2e3a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=53, FAIL=24' vs cache 'TOTAL: PASS=77, FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note/source is on main only under archive/ (docs/QUARK_ROUTE2_NONBLIND_SOURCE_READOUT_PRIMITIVE_GATE_NO_GO_NOTE_2026-06-21.md -> archive/notes/docs/QUARK_ROUTE2_NONBLIND_SOURCE_READOUT_PRIMITIVE_GATE_NO_GO_NOTE_2026-06-21.md); every FAIL is an existence or text gate on that file, the computations pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170141Z"
  }
 }

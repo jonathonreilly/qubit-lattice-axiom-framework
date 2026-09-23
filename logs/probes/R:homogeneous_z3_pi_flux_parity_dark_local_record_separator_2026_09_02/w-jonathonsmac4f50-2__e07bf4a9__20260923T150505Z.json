@@ -22,15 +22,22 @@
  "stdout_sha256": "4bbf7471275b06747fbbf321337c37aaeaf7248681ef17c1f2f057168d554da0",
  "stdout_tail": "True; unequal_weights=True\nPASS the simultaneous H1 propagator is dark at parity distance two or three for all time :: 8 sectors: Q_preserves=True, H1_flips_one=True; powers 0..9=True\nPASS the uniform walk reaches the body diagonal with a strict fixed-time Bessel bound :: Z3 counts=(6, 180, 5040, 143640, 4199580); J1 endpoints derived=7/16,169/384; at t=1/2, (7/16)^6 < p0 < (1/2)^6\nPASS the supplied common local occupation-Record protocol keeps every exterior bond active :: common=True; PVM_idempotent=True; exterior=True; [H,n*]!=0 prewrite=True; gated permanence=True\nPASS magnetic translations are exact; a finite box checks the note's global cubic gauge proof :: bare symmetries=(False,False,True); magnetic=True; finite_rotation_witnesses=24\nPASS ordered direction pulses escape the static-simultaneous darkness theorem :: ordered=-1; swapped=1; simultaneous=0; nonscalar onsite n6=-32\nPASS N1-N8 headings and zero-closure claim custody are present for postexecution audit :: homogeneity trade only; I-4 and Record-process ownership remain open\nper_element: link signs, face flux, and shift/parity relations certified\nper_site: one local target occupation effect and exterior bonds certified\nper_mode: one-particle signed adjacency checked; strict-free lift is explicitly supplied\nper_block: common supplied source/cadence/PVM/writer/gate declarations scope-checked\nlattice_wide: infinite-Z3 parity theorem exact; finite rotation witness supports the global note proof\nTOTAL: PASS=8 FAIL=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T150506Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170142Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha e07bf4a9 differs from the current HEAD 58bd2e3a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=8 FAIL=1' vs cache 'TOTAL: PASS=9 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note/source is on main only under archive/ (docs/ONSITE_CHARGE_CONSERVING_ENDPOINT_SYMMETRIC_COMMON_HAMILTONIAN_STRICT_QCA_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-07-12.md -> archive/notes/docs/ONSITE_CHARGE_CONSERVING_ENDPOINT_SYMMETRIC_COMMON_HAMILTONIAN_STRICT_QCA_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-07-12.md; docs/FREE_STAGGERED_D_DIMENSIONAL_TWO_STEP_MANY_BODY_TRANSFER_IDENTITY_NOTE_2026-07-20.md -> archive/notes/docs/FREE_STAGGERED_D_DIMENSIONAL_TWO_STEP_MANY); every FAIL is an existence or text gate on that file, the computations pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170142Z"
  }
 }

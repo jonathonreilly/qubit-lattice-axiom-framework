@@ -22,15 +22,22 @@
  "stdout_sha256": "5cf3bda92a216a34ac752084cf348c9d6cf1f1177ec27afdcf82fd46cbbb1e5d",
  "stdout_tail": "MP-RANKS - constituent ranks [8, 8, 12, 12, 12, 12] == [8, 8, 12, 12, 12, 12]\nPASS G-OMEGA-DEF - omega = -J_full antisymmetric (||w+w^T|| = 0.0e+00) and full rank 64 == 64\nPASS G-OMEGA-INV - |G_amb|=768==768 and g^T w g = +w on every element (max dev 0.0e+00); wrong-sign rejector 0.748 > max|w| 0.374\nPASS G-OMEGA-COSET - 768-element disjoint normalized S_eps-coset gives |H|=1536==1536 and c^T w c = -w on every coset element (max dev 0.0e+00); wrong-sign rejector 0.748 > max|w| 0.374\nPASS G-OMEGA-SEPS - S_eps^T w S_eps = -w (dev 0.0e+00); wrong-sign rejector 0.748 > max|w| 0.374\nPASS G-PAIR-INDUCED - induced self-blocks nondegenerate, ranks [8, 8, 12, 12] == [8, 8, 12, 12]\nPASS G-PAIR-ISOTROPIC - omega vanishes within 12+ (||1.3e-14||) and within 12- (||1.2e-14||)\nPASS G-PAIR-CROSS - 12+ <-> 12- cross-pairing nondegenerate, rank 12 == 12\nPASS G-PAIR-OFFDIAG - all remaining pairs vanish (max off-block ||1.4e-13||)\nPASS G-PAIR-RANK - assembled G antisymmetric, rank 64 == 64; accounting 40 + 2*12 = 64 == 64\nPASS G-CONTRAST-SYMVSANTI - 12+: all 12 symmetric-form singular values equal 1 (max dev 4.4e-16); omega self ||1.3e-14|| isotropic\nFAIL G-PIN-U14 - Unit-14 six-constituent pin present in KCPT_CP_COMPLETION_UNDER_EXTENDED_GROUP_BOUNDED_THEOREM_NOTE_2026-07-20.md\nPASS G-PIN-U10 - Unit-10 symplectic-leg pins present: 'J_full^T g = -J_full' and 'U^T omega U = omega'\nFAIL G-PIN-SELF - self-note dep edges: total 0==2, U14 0==1, U10 0==1, U9/U13/U15 = 0/0/0==0\n\nTOTAL: PASS=14 FAIL=2\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T063825Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170143Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 9a57894c differs from the current HEAD 58bd2e3a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=14 FAIL=2' vs cache 'TOTAL: PASS=16 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note/source is on main only under archive/ (docs/KCPT_SYMPLECTIC_LEG_CHISGN_COVARIANCE_OMEGA_PAIRING_BOUNDED_THEOREM_NOTE_2026-07-20.md -> archive/notes/docs/KCPT_SYMPLECTIC_LEG_CHISGN_COVARIANCE_OMEGA_PAIRING_BOUNDED_THEOREM_NOTE_2026-07-20.md; docs/KCPT_CP_COMPLETION_UNDER_EXTENDED_GROUP_BOUNDED_THEOREM_NOTE_2026-07-20.md -> archive/notes/docs/KCPT_CP_COMPLETION_UNDER_EXTENDED_GROUP_BOUNDED_THEOREM_NOTE_2026-07-20.md); every FAIL is an existence or text gate on that file, the computations pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170143Z"
  }
 }

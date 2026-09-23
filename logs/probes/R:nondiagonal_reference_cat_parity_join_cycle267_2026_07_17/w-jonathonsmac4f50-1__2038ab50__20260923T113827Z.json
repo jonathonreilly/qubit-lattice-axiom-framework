@@ -19,14 +19,21 @@
  "stdout_sha256": "4b731907344f57b455a7db266e6a24127686495c295c0a64bdfd4c85840ed8cc",
  "stdout_tail": "oles_per_cell': 6, 'cell_cat_roles_per_cell': 1, 'reference_gamma_roles_per_cell': 3, 'radii': (6, 12, 18, 24), 'proper_frame_failures': 0, 'collisions': 0, 'period64_macro_marker': 'supplied'}\nPASS the one-particle mass and Cycle-230 numerical fixtures are preserved as untouched matter-side fixtures :: {'beta': -0.3, 'g': 0.37, 'rest_mass': 0.4534056541748851, 'principal_sea_rank': 73, 'local_B_A_algebra': 'unchanged for undressed tensor routes', 'contact_and_seam_block': 'not reproduced by a common physical E', 'E_G_intertwining': False}\nPASS the tournament reports route-specific residuals without promoting them to a shared obstruction :: {'right_rank_candidates': ('vertex X-equality', 'cell X-cat', 'cluster-cat'), 'common_failures': ('three nonlocal Wilson sector choices inherited from Cycle 261', 'no bounded arbitrary-input parity-cat preparation', 'no bounded relation identifying matter parity with the added logical Z'), 'stronger_spoke_failure_scope': 'reference-only three-qubit Pauli endpoint grammar', 'live_routes': ('dressed/quartic reference gauges', 'larger local Clifford registers', 'local topological-sector fixing or boundary constructions', 'non-Pauli encoders'), 'global_Jordan_Wigner_ordering': False, 'global_parity_service': False, 'bounded_full_Fock_encoder': False, 'universal_no_go': False, 'axiom_pressure': False, 'authority': 'none', 'audit': 'unset', 'compiler_depth_is_physical_time': False, 'reference_carriers_are_Records': False}\nSUMMARY pass=12 fail=1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T113828Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170144Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 2038ab50 differs from the current HEAD 58bd2e3a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note/source is on main only under archive/ (docs/work_history/repo/review_feedback/NONDIAGONAL_REFERENCE_CAT_PARITY_JOIN_CYCLE267_NOTE_2026-07-17.md -> archive/notes/docs/work_history/repo/review_feedback/NONDIAGONAL_REFERENCE_CAT_PARITY_JOIN_CYCLE267_NOTE_2026-07-17.md); every FAIL is an existence or text gate on that file, the computations pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170144Z"
  }
 }

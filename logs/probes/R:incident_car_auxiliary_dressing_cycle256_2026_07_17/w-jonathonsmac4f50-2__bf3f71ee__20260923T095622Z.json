@@ -19,14 +19,21 @@
  "stdout_sha256": "4608a88ff6aa4cfd4eaa587ad13d055987e2e70abb346d77c3222fc8fcc2efe0",
  "stdout_tail": "2), 'unquotiented_family_exponent': 36}, {'L': 6, 'columns': (128, 162), 'affine_dimensions': (24, 12), 'unquotiented_family_exponent': 36}]\nPASS the best retained family has an explicit local symplectic witness rather than a solver-only negative :: {'best_total_failures': 972, 'best_incident_failures': 972, 'best_disjoint_failures': 0, 'first_failure': {'edges': (0, 1), 'kinds': ('internal_triangle', 'internal_triangle'), 'shared_endpoints': 1, 'required_anticommutator_bit': 1, 'actual_anticommutator_bit': 0}}\nPASS deleting one independent local-code commutator equation enlarges the raw dressing grammar by one binary direction :: {'maximum_rank_loss': 1, 'silent_constraint_deletion': False}\nPASS the fixed Cycle-230 parameters and predecessor fixtures are retained but gate synthesis is withheld without a CAR family :: {'beta': -0.3, 'g': 0.37, 'rest_mass_predecessor': 0.4534056541748851, 'principal_sea_rank_predecessor': 73, 'coin_A_B_FSWAP_contact_synthesis': 'not reached', 'three_topological_joins': 'remain separate', 'mass_seam_intertwining': 'not claimed'}\nPASS the bounded search schedule is not physical time and the grammar negative is not a universal no-go :: {'compiler_layers_are_not_physical_time': True, 'radius_1_endpoint_star': 'exhausted', 'radius_2': 'not exhausted; affine seed dimensions are a next-route diagnostic only', 'Clifford_conjugations_outside_Pauli_endpoint_star': 'not exhausted', 'universal_no_go': False, 'axiom_pressure': False}\nSUMMARY PASS 9 FAIL 1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T095629Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170142Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha bf3f71ee differs from the current HEAD 58bd2e3a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note/source is on main only under archive/ (docs/work_history/repo/review_feedback/INCIDENT_CAR_AUXILIARY_DRESSING_CYCLE256_NOTE_2026-07-17.md -> archive/notes/docs/work_history/repo/review_feedback/INCIDENT_CAR_AUXILIARY_DRESSING_CYCLE256_NOTE_2026-07-17.md); every FAIL is an existence or text gate on that file, the computations pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170142Z"
  }
 }

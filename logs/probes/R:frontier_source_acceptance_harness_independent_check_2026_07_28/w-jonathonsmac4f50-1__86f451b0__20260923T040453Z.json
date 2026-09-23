@@ -22,15 +22,22 @@
  "stdout_sha256": "3eaee4d332bd7a168d48bb0505ce42d5eaa43e4b17174c55bee4f6b1ff2dd8e4",
  "stdout_tail": "corrupted\": \"REJECT\", \"malformed_nonobject\": \"REJECT\", \"malformed_outcome\": \"REJECT\", \"nonfinite_nested\": \"REJECT\", \"tampered_record_pin\": \"DRIFT\", \"wrong_pin\": \"DRIFT\"}}}\nFAIL discipline :: {\"closure_ok\": false, \"independent_input_count\": 44, \"input_port_ast_sha256\": {\"recoil\": \"f2be9ce8282e74a7d9cc91735b2e1482cda3abe915aa7e3d28e3586dcb044a7f\", \"tensor_lift\": \"418dec0df86bb0291cc4ee5250aa75e9bafd96544b4205d487494d7284ba152f\"}, \"landed_module_attribute_writes\": [], \"main_input_count\": 43, \"pin_init_args\": [\"self\"], \"predicate_mapping_exact\": true, \"recoil_accept_args\": [\"self\", \"fixture_selector\"], \"tensor_accept_args\": [\"self\", \"source_vector\"], \"verdict_structure_exact\": true}\n{\n  \"checks\": {\n    \"fail\": 3,\n    \"pass\": 1\n  },\n  \"digest_agreement\": {\n    \"recoil\": true,\n    \"tensor_lift\": true,\n    \"typed_bridge\": false\n  },\n  \"discipline\": {\n    \"api_ok\": true,\n    \"closure_ok\": false,\n    \"independent_input_count\": 44,\n    \"input_port_structure_exact\": true,\n    \"main_input_count\": 43,\n    \"module_writes\": [],\n    \"predicate_mapping_exact\": true,\n    \"verdict_structure_exact\": true\n  },\n  \"frozen_record_digests\": {\n    \"recoil\": \"f0700d2a13aaabc3817d422876d76682c2ed6c393f796f58c9f16f83428f2530\",\n    \"tensor_lift\": \"7ceadfe93210f0e16b523cc525987b490ed5ed67451a6a3f283c670858d4cc56\",\n    \"typed_bridge\": \"dbda46063afcd1d3d7092079f090907f23fbbf0786c2fa8164be1efee16fd40b\"\n  },\n  \"runtime_seconds\": 154.715051,\n  \"verdict_agreement\": false\n}\nSUMMARY PASS=1 FAIL=3 RUNTIME=154.715s\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260923T040728Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170141Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 86f451b0 differs from the current HEAD 58bd2e3a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
    "FAIL: verdict line differs from the pinned cache: run 'PASS=1 FAIL=3' vs cache 'PASS=4 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note/source is on main only under archive/ (docs/SOURCE_ACCEPTANCE_HARNESS_SUPPORT_NOTE_2026-07-28.md -> archive/notes/docs/SOURCE_ACCEPTANCE_HARNESS_SUPPORT_NOTE_2026-07-28.md; docs/work_history/repo/review_feedback/LOCAL_M2_MASS_SCALAR_DEFORMATION_RESPONSE_ROUTE_B_NOTE_2026-07-17.md -> archive/notes/docs/work_history/repo/review_feedback/LOCAL_M2_MASS_SCALAR_DEFORMATION_RESPONSE_ROUTE_B_NOTE_2026-07-17.md; docs/work_history/repo/review_feedback/DIRECT_GATEWI); every FAIL is an existence or text gate on that file, the computations pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170141Z"
  }
 }

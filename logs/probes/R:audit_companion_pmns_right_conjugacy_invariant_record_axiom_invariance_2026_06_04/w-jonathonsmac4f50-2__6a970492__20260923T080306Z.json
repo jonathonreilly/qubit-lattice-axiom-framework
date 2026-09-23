@@ -21,15 +21,22 @@
  "stdout_sha256": "e2f5bfe2660cf505f328bfb98b19fb750fbdfa25ba2d8701b13f7fd34d3cdc31",
  "stdout_tail": "DGE_NONREALIZATION_NOTE.md\n  PASS upstream_observable_principle_note_present :: /Users/jonBridger/.probe-workers/probes-view/slot-2/docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md\n  PASS scalar_bridge_string_match_at_least_one_variant :: v1=True; v2=True\n  PASS observable_principle_string_match_at_least_one_variant :: v1=True; v2=False\n\n========================================================================\nTOTAL PASS: 70\nTOTAL FAIL: 1\n========================================================================\n\nCompanion conclusion (audit-friendly evidence only):\n  The load-bearing chain of PMNS_RIGHT_CONJUGACY_INVARIANT_NO_GO_NOTE.md\n  (right-orbit invariance of K's spectral signature + explicit\n  parent-runner witnesses showing m_R and |K_12| vary on the orbit\n  + direct contraposition) uses ONLY finite-dimensional matrix\n  algebra over C (Hermitian conjugation, U(3) action, spectral\n  invariants) plus the Lattice + Quantum axiom context.\n  The Record axiom (additive scalar record-readout functional) is\n  neither used nor invoked. The numeric outputs of the load-bearing\n  chain are identical under both 'Record axiom asserted' and\n  'Record axiom not asserted' outer scopes.\n\nThe audit lane decides whether this evidence is sufficient to\nre-honor the prior judicial verdict pattern (algebra-clean\nconditional on upstream-naming inputs) on the new premise hash,\nor whether a fresh per-claim audit is warranted. This companion\nsupplies machine-checkable evidence; it does not set status.\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260923T080306Z",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170139Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 6a970492 differs from the current HEAD 58bd2e3a (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_companion_pmns_right_conjugacy_invariant_record_axiom_invariance_2026_06_04.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Stale: the runner's note/source is on main only under archive/ (docs/publication/ci3_z3/DERIVATION_ATLAS.md -> archive/publication/ci3_z3/DERIVATION_ATLAS.md); every FAIL is an existence or text gate on that file, the computations pass.",
+  "by": "w-jonathonsmac4f50-jrev1",
+  "at_utc": "20260923T170139Z"
  }
 }

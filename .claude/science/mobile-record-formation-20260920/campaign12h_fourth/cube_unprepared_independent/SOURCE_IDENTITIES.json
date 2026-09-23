@@ -1,0 +1,34 @@
+{
+  "science_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/actual_first_output_independent/FINAL_SEAL.json",
+      "bytes": 25145,
+      "sha256": "c5ed54dd73a633a433f51cba08c5221e6cad58ea306219a3002e2104e53ea69a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "bytes": 17730,
+      "sha256": "002119d5a3f9bec171c3678cb15afdb91f7a763311ca38e6e4458ce10865572e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/REPORT.md",
+      "bytes": 13680,
+      "sha256": "20303cc9320deb32799bdc98befc986c856943ac632d0245ace929c8140a7d7d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/PRE_COMPARISON_SEAL.json",
+      "bytes": 12765,
+      "sha256": "8c29f173d14a983a0c6273560712c32685d48429d7482c5dcff152e426d05c0a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/actual_first_output_independent/REPORT.md",
+      "bytes": 22041,
+      "sha256": "578dc3b86852d4418d66b07c8d1f2159d68ad12730b6cbc16fc225cc363fbebb"
+    }
+  ],
+  "own_frozen_artifacts_authenticated": 30,
+  "provisional_dependency": "The cube six-record P-space point-spectrum result is supplied under an independent PRE seal, with candidate comparison pending as of the dispatch. This packet does not audit or rerun that spectral certificate. Its local-escape theorem is explicitly conditional on that premise.",
+  "independent_builder": "cube_controls.py is new. No ring, prior cube, spectral-certificate, or author builder is imported.",
+  "read_boundary": "No cube_unprepared_author, cube_point_spectrum_author, LOCAL_COUNTERTERM_PROPOSAL.md, other new research, campaign plan, checkpoint, registry, or Git was opened. Only the authorized cube REPORT and PRE manifest were read from that packet; its transitive source paths were not followed.",
+  "procedure_status": "Applicable instructions and current workflow were already read at the unchanged inherited revision. The scoped N1-N8 questions are reused from the own frozen packet; no Git freshness check or wider source scan is performed under this dispatch. No formal audit/no-go packet PASS is asserted."
+}

@@ -1,0 +1,196 @@
+{
+  "created_utc": "2026-09-23T19:26:41.415409+00:00",
+  "status": "Independent reconstruction complete; no current author-source comparison authorized or performed.",
+  "scientific_scope": "Empty physical point spectrum of the unit-rotor cube H2 restricted to P, six records, total charge four. No full unprojected-domain, H4, formation, or downstream dynamical claim.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "bytes": 17730,
+      "sha256": "002119d5a3f9bec171c3678cb15afdb91f7a763311ca38e6e4458ce10865572e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_independent/REPORT.md",
+      "bytes": 21282,
+      "sha256": "39e2b04f9140f10db8d8bbd178a086902d9b09f6854b0e317a663071bacf4582"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_independent/operators.py",
+      "bytes": 4141,
+      "sha256": "a152167dff2cfff397397fcc56121cd9b2d79d7f412eb2e134f2f9cbbfa54c95"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_independent/PRE_COMPARISON_SEAL.json",
+      "bytes": 21378,
+      "sha256": "e710cf956b2cff69afc8241757901c040a4c2f6b23516f09968cb372975bd734"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/CUBE_POINT.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/CUBE_POINT.stdout",
+      "bytes": 92409,
+      "sha256": "f9de1a20fa4bd53f2e149e4a9af3824ab41311cde0d5e80c8b747d7f682f3ca5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/CUBE_POINT_RECEIPT.json",
+      "bytes": 665,
+      "sha256": "0a4aac71853dc346e9cb682860f2dda4d5b3698a7f36f4243040f36435d96938"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/CUBE_POINT_RESULTS.json",
+      "bytes": 92409,
+      "sha256": "f9de1a20fa4bd53f2e149e4a9af3824ab41311cde0d5e80c8b747d7f682f3ca5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/EXPLORE.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/EXPLORE.stdout",
+      "bytes": 7407,
+      "sha256": "1e9607322d4aac44b066c46f4c8caa965741cfd1b301ed884696ef9af094dae2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/EXPLORE_RECEIPT.json",
+      "bytes": 663,
+      "sha256": "5069ce81de34e3caffd3cd2c6bcbadd4471a77e40b0a0bedd6391bbbae9df17e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/QUARTER.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/QUARTER.stdout",
+      "bytes": 4027,
+      "sha256": "f9f405ecc65f77e7f4d5e1078fc4b930eeb05e4f196c15d2690696db4d892e2e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/QUARTER_RECEIPT.json",
+      "bytes": 668,
+      "sha256": "5d2149ffb4ae8d8ebd34d77a825e4607185b905a3e40f464ad07976d55dce703"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/REPORT.md",
+      "bytes": 13680,
+      "sha256": "20303cc9320deb32799bdc98befc986c856943ac632d0245ace929c8140a7d7d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/SECONDARY.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/SECONDARY.stdout",
+      "bytes": 1551,
+      "sha256": "d04d16a6391fcfde9979cf3983005c88c68670f2399c64df2b3480daa28ed8ae"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/SECONDARY_RECEIPT.json",
+      "bytes": 676,
+      "sha256": "bd522a348cb26e8cf5ea8e1895da93b899b70cc55cec4da6431c9c36f3d5d3f7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/SECONDARY_RESULTS.json",
+      "bytes": 1551,
+      "sha256": "d04d16a6391fcfde9979cf3983005c88c68670f2399c64df2b3480daa28ed8ae"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/VALIDATION.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/VALIDATION.stdout",
+      "bytes": 1426,
+      "sha256": "e148f12a9162ab7bc883a55645f685e31b74e533581d89d06f2531d850de5148"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/VALIDATION_RECEIPT.json",
+      "bytes": 666,
+      "sha256": "2f7368235131ec72a09d96b59b019c70bd063bda6359fbe01de387798cccc51d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/VALIDATION_RESULTS.json",
+      "bytes": 1426,
+      "sha256": "e148f12a9162ab7bc883a55645f685e31b74e533581d89d06f2531d850de5148"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/check_prior_and_certificate.py",
+      "bytes": 3475,
+      "sha256": "992ae2e699894385f97cb5811f2afcfdab70c3fa7f7ace58d71665cf95ce5230"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/cube_point_check.py",
+      "bytes": 11793,
+      "sha256": "f25ade25a98715a142f53c11c64df730d51dbfb242a3ae4550a8e0f66b8c2265"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/exact_quarter_fiber.py",
+      "bytes": 788,
+      "sha256": "078228e4e619bdefa03821cf63a2c227da7e8e7337d0bb1410cd4f525f277bd5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/explore_fibers.py",
+      "bytes": 2434,
+      "sha256": "bdbd97222accd3540d85bff590f990d80277f0d7908c81d2d0ea62f307793304"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/failed_attempts/domain_equality/CUBE_POINT.stderr",
+      "bytes": 733,
+      "sha256": "3d1a81a25281fd8fc3b6deb235db1ab421f120633e63f358f2a3a4dffbf618eb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/failed_attempts/domain_equality/CUBE_POINT.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/failed_attempts/domain_equality/CUBE_POINT_RECEIPT.json",
+      "bytes": 665,
+      "sha256": "19752cb50283b953a242b0443aad84fb9e5071f05339f4cc3311ae95f00a3df7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/failed_attempts/domain_equality/DIAGNOSIS.json",
+      "bytes": 635,
+      "sha256": "ef4dc4e66dbf9e4d7e14d37f2a0ce936fb393c36539b896d55a3af86598600c7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/failed_attempts/domain_equality/cube_point_check.py",
+      "bytes": 11770,
+      "sha256": "10220f2e962cdec51c5bc09cd0e2be0c5682003e59431a583c7a0e71c9819b1e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/validate_evidence.py",
+      "bytes": 2840,
+      "sha256": "27f027db5fbecb018b116b08d086cc72df25fec755d027b0b8680684276377cf"
+    }
+  ],
+  "source_read_coverage": {
+    "parent_model_note": "Previously reviewed by identity; current Section 1 operator/model premises reread.",
+    "own_prior_report": "Model conventions and complete cube Section 5 reread; prior frozen packet already independently checked.",
+    "own_prior_operators": "Complete source read; imported only for a secondary consistency check after the new exact reconstruction.",
+    "own_prior_PRE": "Hash and packet metadata inspected; no claimed repeat of all former bindings."
+  },
+  "prior_exposure": "Earlier ring and cube path/Gram reconstruction and then-authorized comparisons disclosed. No ring spectral conclusion is assumed here.",
+  "read_boundary": "No cube_point_spectrum_author, actual-first-output, finite-spin author/checker, new tail, plans, checkpoint, or registry contents read. No Git inspection or mutation.",
+  "decisive_method": "New physical tree/chord coordinates and legal-hop matrices; exact coprimality of the all-one and all-i five-chord fibers; separately verified modular Bezout certificate.",
+  "failed_attempts_preserved": [
+    "failed_attempts/domain_equality/"
+  ],
+  "actual_execution_receipts": [
+    "CUBE_POINT_RECEIPT.json",
+    "EXPLORE_RECEIPT.json",
+    "QUARTER_RECEIPT.json",
+    "SECONDARY_RECEIPT.json",
+    "VALIDATION_RECEIPT.json",
+    "failed_attempts/domain_equality/CUBE_POINT_RECEIPT.json"
+  ],
+  "limits": "No absolutely-continuous-spectrum, gap, band, thermodynamic, finite-spin, or subsequent-event conclusion. Extending the sandwiched expression to P-perp gives trivial zero eigenvectors.",
+  "next_action": "Wait for explicit authorization and pinned source identities for a bounded author comparison."
+}

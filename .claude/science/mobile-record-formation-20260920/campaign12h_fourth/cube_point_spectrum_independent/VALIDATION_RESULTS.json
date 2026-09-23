@@ -1,0 +1,40 @@
+{
+  "sources_verified": {
+    "campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md": "002119d5a3f9bec171c3678cb15afdb91f7a763311ca38e6e4458ce10865572e",
+    "campaign12h_fourth/second_event_independent/REPORT.md": "39e2b04f9140f10db8d8bbd178a086902d9b09f6854b0e317a663071bacf4582",
+    "campaign12h_fourth/second_event_independent/operators.py": "a152167dff2cfff397397fcc56121cd9b2d79d7f412eb2e134f2f9cbbfa54c95",
+    "campaign12h_fourth/second_event_independent/PRE_COMPARISON_SEAL.json": "e710cf956b2cff69afc8241757901c040a4c2f6b23516f09968cb372975bd734"
+  },
+  "execution_receipts_verified": [
+    {
+      "path": "EXPLORE_RECEIPT.json",
+      "exit_code": 0,
+      "bindings_verified": 3
+    },
+    {
+      "path": "QUARTER_RECEIPT.json",
+      "exit_code": 0,
+      "bindings_verified": 3
+    },
+    {
+      "path": "CUBE_POINT_RECEIPT.json",
+      "exit_code": 0,
+      "bindings_verified": 3
+    },
+    {
+      "path": "SECONDARY_RECEIPT.json",
+      "exit_code": 0,
+      "bindings_verified": 3
+    },
+    {
+      "path": "failed_attempts/domain_equality/CUBE_POINT_RECEIPT.json",
+      "exit_code": 1,
+      "bindings_verified": 3
+    }
+  ],
+  "results_equal_full_stdout": true,
+  "report_compact_certificate_verified": true,
+  "gcd_exact": "1",
+  "failures_preserved": 1,
+  "read_boundary": "Only the allowed model and own prior packet; no current author cube-point or excluded packet read."
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_unprepared_independent/comparison_check.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_unprepared_independent",
+  "started_unix": 1790194147.3420749,
+  "elapsed_seconds": 1.9929709434509277,
+  "exit_code": 0,
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "script_sha256": "7540325da9e91d9d4d086fcd29e4a564eca4dbce3113fce7beb63a4fd3d44120",
+  "stdout_sha256": "1bd90afe18fc9497089e0de30fd04717a9e2f439a06d18ef2690f7934fe6838a",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

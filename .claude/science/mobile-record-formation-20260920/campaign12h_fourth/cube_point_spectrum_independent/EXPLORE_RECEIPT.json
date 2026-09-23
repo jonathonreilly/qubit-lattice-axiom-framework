@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/explore_fibers.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920",
+  "started_utc": "2026-09-23T19:14:13.547886+00:00",
+  "finished_utc": "2026-09-23T19:14:13.971255+00:00",
+  "exit_code": 0,
+  "stdout_sha256": "1e9607322d4aac44b066c46f4c8caa965741cfd1b301ed884696ef9af094dae2",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "script_sha256": "bdbd97222accd3540d85bff590f990d80277f0d7908c81d2d0ea62f307793304"
+}

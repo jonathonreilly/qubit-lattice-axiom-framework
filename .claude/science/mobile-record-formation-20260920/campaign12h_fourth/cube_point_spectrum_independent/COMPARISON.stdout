@@ -1,0 +1,152 @@
+{
+  "pre_sha256": "8c29f173d14a983a0c6273560712c32685d48429d7482c5dcff152e426d05c0a",
+  "pre_bindings_preserved": {
+    "sources": 4,
+    "artifacts": 29
+  },
+  "author_seal_sha256": "b99a0a0b243c9ecfaade581acbb2450d4e3d53d95967bb7096ed9388558f2665",
+  "author_bindings_verified": {
+    "sources": 3,
+    "artifacts": 12
+  },
+  "new_builder_used": "Frozen independent cube_point_check.py; no author builder imported or executed.",
+  "complete_matter_bases_and_tree_chords_equal": true,
+  "physical_gauss_checks_rebuilt": 1296,
+  "exact_fibers": [
+    {
+      "quarter_turns": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "all_37_characteristic_coefficients_equal": true,
+      "factorization_and_gcd_equal": true,
+      "gcd_degree": 36,
+      "trace_H": "-216",
+      "trace_H_squared": "1728",
+      "p_minus2": "0",
+      "p_minus5": "0",
+      "p_minus6": "0"
+    },
+    {
+      "quarter_turns": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "all_37_characteristic_coefficients_equal": true,
+      "factorization_and_gcd_equal": true,
+      "gcd_degree": 4,
+      "trace_H": "-216",
+      "trace_H_squared": "1680",
+      "p_minus2": "0",
+      "p_minus5": "0",
+      "p_minus6": "0"
+    },
+    {
+      "quarter_turns": [
+        1,
+        2,
+        0,
+        1,
+        3
+      ],
+      "all_37_characteristic_coefficients_equal": true,
+      "factorization_and_gcd_equal": true,
+      "gcd_degree": 0,
+      "trace_H": "-216",
+      "trace_H_squared": "1584",
+      "p_minus2": "19388084781056",
+      "p_minus5": "-8098004992",
+      "p_minus6": "-1310720000"
+    },
+    {
+      "quarter_turns": [
+        2,
+        1,
+        3,
+        0,
+        1
+      ],
+      "all_37_characteristic_coefficients_equal": true,
+      "factorization_and_gcd_equal": true,
+      "gcd_degree": 0,
+      "trace_H": "-216",
+      "trace_H_squared": "1584"
+    },
+    {
+      "quarter_turns": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "all_37_characteristic_coefficients_equal": true,
+      "factorization_and_gcd_equal": true,
+      "gcd_degree": 0,
+      "trace_H": "-216",
+      "trace_H_squared": "1632"
+    }
+  ],
+  "numeric_fibers": [
+    {
+      "chord_angles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "maximum_eigenvalue_error": 1.0658141036401503e-14,
+      "minus6_distance_error": 8.881784197001252e-16,
+      "determinant_scaled_error": 2.938054524143774e-86
+    },
+    {
+      "chord_angles": [
+        0.19,
+        0.53,
+        0.87,
+        1.11,
+        1.63
+      ],
+      "maximum_eigenvalue_error": 1.4210854715202004e-14,
+      "minus6_distance_error": 1.7763568394002505e-15,
+      "determinant_scaled_error": 6.646233953776636e-15
+    },
+    {
+      "chord_angles": [
+        0.41,
+        1.03,
+        1.29,
+        2.17,
+        2.71
+      ],
+      "maximum_eigenvalue_error": 8.881784197001252e-15,
+      "minus6_distance_error": 8.881784197001252e-16,
+      "determinant_scaled_error": 4.497496987330289e-15
+    }
+  ],
+  "author_three_fiber_gcd": "1",
+  "independent_two_fiber_gcd": "1",
+  "independent_PRE_polynomials_match_author_zero_and_all_i_controls": true,
+  "full_author_stdout_json_objects_verified": 6,
+  "author_receipts": [
+    {
+      "receipt": "PROBE_RUN_RECEIPT.json",
+      "source_and_exit_verified": true,
+      "has_command_array": false
+    },
+    {
+      "receipt": "CERTIFICATE_RUN_RECEIPT.json",
+      "source_and_exit_verified": true,
+      "has_command_array": true
+    }
+  ],
+  "required_mathematical_corrections": [],
+  "scope": "P-space physical point spectrum. No new conclusion about dynamics, other sectors, or other geometries."
+}

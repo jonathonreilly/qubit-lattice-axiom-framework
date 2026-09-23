@@ -1,0 +1,72 @@
+{
+  "parameters": {
+    "K": 0.4,
+    "delta": 0.7,
+    "kappa": 0.3,
+    "T": 0.6
+  },
+  "adjoint_cutoff_state_difference": 6.521400782189898e-15,
+  "adjoint_and_cross_controls": [
+    {
+      "S": 4,
+      "adjoint_prepared_vector_error": 0.08761699835787705,
+      "forward_flat_complement_cross_term": {
+        "real": -0.0016591456422431789,
+        "imaginary": -0.0014656512957983664,
+        "absolute_value": 0.0022137971865213765
+      },
+      "initial_flat_mass": 0.4999999999999999,
+      "initial_complement_mass": 0.49999999999999994
+    },
+    {
+      "S": 8,
+      "adjoint_prepared_vector_error": 0.03870473512169868,
+      "forward_flat_complement_cross_term": {
+        "real": -5.123932460431203e-05,
+        "imaginary": -0.0005923276039941345,
+        "absolute_value": 0.0005945397033330392
+      },
+      "initial_flat_mass": 0.4999999999999999,
+      "initial_complement_mass": 0.49999999999999994
+    },
+    {
+      "S": 16,
+      "adjoint_prepared_vector_error": 0.018889630388682462,
+      "forward_flat_complement_cross_term": {
+        "real": -1.4978231057538518e-05,
+        "imaginary": -0.00016949578868848104,
+        "absolute_value": 0.00017015630987049298
+      },
+      "initial_flat_mass": 0.4999999999999999,
+      "initial_complement_mass": 0.49999999999999994
+    },
+    {
+      "S": 32,
+      "adjoint_prepared_vector_error": 0.010346628989966085,
+      "forward_flat_complement_cross_term": {
+        "real": -4.90190806631659e-05,
+        "imaginary": -6.619643240075084e-05,
+        "absolute_value": 8.237012766561152e-05
+      },
+      "initial_flat_mass": 0.4999999999999999,
+      "initial_complement_mass": 0.49999999999999994
+    }
+  ],
+  "consequence_reference_cutoff_controls": [
+    {
+      "flat_flux_cutoff": 12,
+      "window_probabilities": {
+        "1": 0.2615596121465541,
+        "2": 0.28707299829992927
+      }
+    },
+    {
+      "flat_flux_cutoff": 20,
+      "window_probabilities": {
+        "1": 0.261559612146545,
+        "2": 0.28707299829991895
+      }
+    }
+  ],
+  "scope": "Floating controls only; the adjoint theorem follows by the signed-Hamiltonian repetition of the frozen corrector proof."
+}

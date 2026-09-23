@@ -1,0 +1,85 @@
+{
+  "sealed_utc": "2026-09-23T19:09:31.387833+00:00",
+  "status": "Root conditional finite-cube point-spectrum theorem candidate before independent reconstruction request.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_author/second_event_probe.py",
+      "bytes": 12643,
+      "sha256": "4827171a51e018b306302b0fac315c000c63bb7311e69fcab18ad666916f1f25"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_author/AUTHOR_SEAL.json",
+      "bytes": 3227,
+      "sha256": "47868fa10d852a2c6e57b5600b0f761ccbed01969867c87f53e4cefb71850610"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "bytes": 17730,
+      "sha256": "002119d5a3f9bec171c3678cb15afdb91f7a763311ca38e6e4458ce10865572e"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_author/CERTIFICATE.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_author/CERTIFICATE.stdout.log",
+      "bytes": 1513,
+      "sha256": "67e547edd7b24e0802b75e6520ecff32606389267015e4e27d18bded936a78de"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_author/CERTIFICATE_RUN_RECEIPT.json",
+      "bytes": 467,
+      "sha256": "13f673aaef1a565449e279265ac8a276508e2068ffca3dac09dec6185cbc6d8a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_author/CUBE_CERTIFICATE_CONTROLS.json",
+      "bytes": 1513,
+      "sha256": "67e547edd7b24e0802b75e6520ecff32606389267015e4e27d18bded936a78de"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_author/CUBE_POINT_SPECTRUM_RESULTS.json",
+      "bytes": 27417,
+      "sha256": "b9a5787173b0a26bcdf5a2fa280763b6212f187db757bcbaa4b35de8d33900a1"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_author/CUBE_SIX_RECORD_ROTOR_POINT_SPECTRUM.md",
+      "bytes": 6101,
+      "sha256": "a5e50bdc9df668219f7c375788a172f8060beacb7cb20f3ebf990e66c710c838"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_author/PREDECLARED_SCOPE.md",
+      "bytes": 1109,
+      "sha256": "b913abf39025fbb38c784d5d364ca29a75773f7c2e9e0c9c2c96730a1a7a0671"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_author/PROBE.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_author/PROBE.stdout.log",
+      "bytes": 36688,
+      "sha256": "77337b2f3bfda1b8ef846ed07d872285c3914bf59f29caddafe1913493569dde"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_author/PROBE_RUN_RECEIPT.json",
+      "bytes": 202,
+      "sha256": "31c5feee8e224e3232eda1987fa73960aec7610b8d83c8fcc5436cd2d4fcfefc"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_author/cube_certificate_check.py",
+      "bytes": 3653,
+      "sha256": "24f47ed13137802cda65463cf5379021726cde7eac93f4c4ab7330f91a7514a3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_author/cube_fiber_polynomials.py",
+      "bytes": 3028,
+      "sha256": "e4e3cf4bd2f0366e816a5f6babf64ccabcde5f8675406438292b1c95126e233b"
+    }
+  ],
+  "claim": "No physical normalizable eigenvectors of the supplied six-record cube rotor H2. Three exact fibers and analytic determinant argument. No dynamical or all-geometry obstruction asserted.",
+  "independence_boundary": "Both local runners are author implementations. No new cube independent reconstruction has been requested or read."
+}

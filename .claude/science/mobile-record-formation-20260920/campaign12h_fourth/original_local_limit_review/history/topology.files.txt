@@ -1,0 +1,152 @@
+.claude/science/physics-loops/action-transfer-7837-correction-20260909/originals/campaign/POSTEXECUTION_NO_GO_AUDIT.md
+.claude/science/physics-loops/action-transfer-7837-correction-20260909/originals/docs/ACTION_TRANSFER_RECORD_HAZARD_CONTENT_CROSSCALIBRATION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-02.md
+.claude/science/physics-loops/action-transfer-7837-correction-20260909/originals/raw-commits/07bf3d389b1ef4f271b59ea22f10752d0ca210e4.patch
+.claude/science/physics-loops/backlog-dk-os-6377-correction-20260908/original/logs/runner-cache/admissibility_raw_graph_ward_compact_pullback_translation_generator_boundary_2026_08_14.txt
+.claude/science/physics-loops/backlog-dk-os-6377-correction-20260908/provenance/docs/ADMISSIBILITY_FIXED_METRIC_NONLINEAR_REGGE_KKT_CONTINUATION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md
+.claude/science/physics-loops/eta-affine-repeat-correction-20260909/bodies/d21f8cca433154577d43a1a7166614d70f4f276c/EXACT_PREDICTIVE_SPECIFICATION_TOURNAMENT_NOTE_2026-07-14.md
+.claude/science/physics-loops/eta-safe-front-correction-20260909/bodies/16b50b0f2e5991c4dab3cad02717781b8869b308bebb88f340bf5b2e649119fb matches
+.claude/science/physics-loops/eta-safe-front-correction-20260909/bodies/303f1cd64d44b438d5c3e2f4149eebecb564052cd49fe928edab6fb8dfc65f84 matches
+.claude/science/physics-loops/eta-safe-front-correction-20260909/bodies/53a162bf0af0a1bb99f94f51d348b78e9d7bcb73a4c5223455f3bedb9a243297 matches
+.claude/science/physics-loops/eta-safe-front-correction-20260909/bodies/553184fe7190323ec08bf6c8244ab5c06793481f400881309560ab9173e6b448 matches
+.claude/science/physics-loops/eta-safe-front-correction-20260909/bodies/65025ebd3aaa3388f33724b3b5214f57e7a84e6f1a6f0fb09c0895b184b5496d matches
+.claude/science/physics-loops/eta-safe-front-correction-20260909/bodies/93a459edc1fbeea3708093f0112ced8ec97fd052c38b20abc5f138573ba07ac2 matches
+.claude/science/physics-loops/eta-safe-front-correction-20260909/bodies/a36812daf177f223a97054ff1bead6ee06596c066815cf944060fda0ea1953ad matches
+.claude/science/physics-loops/eta-safe-front-correction-20260909/bodies/af8175abc6207f780b94eecf0bce6731752a17d756049a386b3c70b934f3ac1c matches
+.claude/science/physics-loops/eta-safe-front-correction-20260909/bodies/afb64ee7272df38795449ea67890bbc95fed733069cd5be35b900710a478d564 matches
+.claude/science/physics-loops/eta-safe-front-correction-20260909/bodies/b40911e4c345f723d64e3c497cde3f887f8f49dc4bae5218f8ea244dc56e1a60 matches
+.claude/science/physics-loops/eta-safe-front-correction-20260909/bodies/b4ece7080bce5a40e93c634baefea2dc1e985a58ffa5c51c8f16d78ee25f00b3 matches
+.claude/science/physics-loops/eta-safe-front-correction-20260909/bodies/ed477b817e054b4ef233c119a2deb6a0e30f955426115c0f4b7a8344b0806d55 matches
+.claude/science/physics-loops/eta-safe-front-correction-20260909/bodies/f643d9ba924b970e67d299f5963ce2c91a5c913ebedf214817b1fb531e1d38bf matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/1292c614e48e6536305f43b714c6e1520758812b/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/2185ef8c09bbb6915140e23331a8dfdffd14f7a0/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/2322dcba58e33da19e7f315b32c8110ca15327a2/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/29c15f641c603cdfe4c5738bb4d6bd392bfca09e/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/319834e38a2ce301e920765af322f00e2656f792/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/4869f3dc553394a2ebbc2b5ed2fbb4ec6c4a855c/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/4c0279f2cc89897ddc2421df175266c0b6ec58be/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/4e9ba08fcd404cb48060293e403174d01bd1ee6e/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/4f5076e3aedcda593347dcbf75a14efdabcd7fec/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/605431260fe96708156376a223feea17dd345c6e/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/66f28cea6f36c2d4311bf467e0508c39a9729fe1/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/6a54b6f30cd33f7f1922438281100191d06b1e1b/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/6a9e4af68ff26de1cd1121387ef030d9839f9c68/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/6ca1ea9ab6e6c3f8b28e5698b89e847b782341d6/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/70eb47de96e5254ae97cf78dca4558bfb691d098/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/7a27e1a3fe3c04cf7d52023f883516805628cd39/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/7e216e84e1625771b69d7306a72ca804a3862273/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/7e38c2514257984ecef52f9bcf71c8af8df760b1/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/80fa8e0c5ce2f110c3ace48e7568baf917bece58/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/82e73f611a14cd44e5cc87c620d78cac8275cd70/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/8424a130ff1a4596e83e2d6cd052731e10424790/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/8c70ea7cc031e7d36fcac9bcec16657421041ee5/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/8e5397a77f7f6936e918502514f2cf4919282552/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/9941fbea0a72f687d87e4fd923474b7aa0eef8d4/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/a0668e6e9fc5c3d577def1b13b84dca9c90053c1/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/aa39666b82797a7b537739f07b4a41b25bb8c860/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/ad3cca561f8320b4f855cfa2d84a7a10da10cb96/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/b0d44e57bb708040a81a4185e39399be2442f456/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/b91531e41c8801681cc4874b4e19bdf7d2b712f7/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/bbab310dc131e1ee2d0f53f1ab6d8e62d43ab407/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/c5d738c4fc51a1b079da6e01ec7cf3ccd83d8ff7/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/ce611a9fc18d05c19256fc326e6af744599981ca/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/d402e0e03cf8070a46b71e6da1ca100f762b0403/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/dc2d9ae0ce15682c2cd5437613aa2cff908a8b75/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/e694425a1cd094404e4bb73f2c4976aab8a1cf65/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/ee0fd0642b19dbbdef677676c5067a2b7ecdf7a9/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/f27e3207b05b1af9c09150c2efdbdb8cf2550c6c/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/f5a12f0b033c722c57072bf2bf90d3c6d60dac9f/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/fbdde76c2473fac07c8eaac380443804826fa89d/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/full-fock-7871-correction-20260909/bodies/fc17833ac57792426df91f9e2636e81a4483880b/REVIEW_HISTORY.md matches
+.claude/science/physics-loops/functional-record-7852-correction-20260909/originals/docs/FINITE_ACTION_FUNCTIONAL_TYPED_ADMISSIBILITY_RECORD_IDENTIFICATION_DECISION_BOUNDED_THEOREM_NOTE_2026-09-02.md
+.claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/381e946175b5c0a3d3085657137aecb290253917
+.claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/6e74c19b5aaf757c2a6de490b162120d246bd793
+.claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/7160fbaaec2519494541cc966bd6aed7d9bd4e4b
+.claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/784ce0ef4198292e4b6201909880a17a9582e963
+.claude/science/physics-loops/law-tournament-6266-6275-correction-20260909/bodies/8654b61da61f6e0155b9a626140688a0fa532684
+.claude/science/physics-loops/microcausality-many-body-lightcone-20260718/worker_b11_scout_analysis.md
+.claude/science/physics-loops/multiplicity-correction-20260908/historical-inputs/scripts/frontier_cycle882_readout_identity_2026_07_28.py.txt
+.claude/science/physics-loops/native-wilson-second-order-20260907/AUTHOR_PORT_NOTES.md
+.claude/science/physics-loops/native-wilson-second-order-20260907/DERIVED_EXTENSION.md
+.claude/science/physics-loops/native-wilson-second-order-20260907/PRIMARY_OPERATOR_REVIEW.md
+.claude/science/physics-loops/native-wilson-second-order-20260907/PRIMARY_STRUCTURAL_REVIEW.md
+.claude/science/physics-loops/plaquette-bootstrap-closure-20260503/ARTIFACT_PLAN.md
+.claude/science/physics-loops/records-haar-7836-correction-20260909/originals/.claude/science/physics-loops/toe-autonomous-action-record-kernel-block49-20260902/GOAL.md
+.claude/science/physics-loops/released-reflection-recovery-20260910/constituent-versions/275f1bd78201b0d9f440099536d3f602106caf29/scripts/admissibility_dirac_kahler_staggered_hermitian_pairing_2026_08_19.py
+.claude/science/physics-loops/released-reflection-recovery-20260910/original/scripts/admissibility_dirac_kahler_staggered_hermitian_pairing_2026_08_19.py
+.claude/science/physics-loops/terminal-cptp-7047-correction-20260909/bodies/ffd52a6abfc7aea4e1427ae4f27e0b52758deb23
+.claude/science/physics-loops/time-windows-6009-correction-20260909/bodies/5414d206a0125a50dfaa3c126b3884d0423494ea
+.claude/science/physics-loops/toe-action-generated-record-hazard-crosscal-block50-20260902/POSTEXECUTION_NO_GO_AUDIT.md
+.claude/science/physics-loops/toe-homogeneous-z3-record-flux-block47-20260902/GOAL.md
+.claude/science/physics-loops/toe-local-gibbs-flux-record-block46-20260902/POSTEXECUTION_TRACE_AUDIT.md
+.claude/science/physics-loops/toe-source-eta-ownership-block12-outcome-typed-two-step-20260829/ASSUMPTIONS_AND_IMPORTS.md
+.claude/science/physics-loops/toe-source-eta-ownership-block12-outcome-typed-two-step-20260829/GOAL.md
+.claude/science/physics-loops/toe-source-eta-ownership-block12-outcome-typed-two-step-20260829/NO_GO_DISCIPLINE_CHECKLIST.md
+.claude/science/physics-loops/toe-source-eta-ownership-block12-outcome-typed-two-step-20260829/OPPORTUNITY_QUEUE.md
+.claude/science/physics-loops/toe-source-eta-ownership-block12-outcome-typed-two-step-20260829/PREFLIGHT_WITNESSES.md
+.claude/science/physics-loops/toe-source-eta-ownership-block13-collision-safe-controller-20260829/CLAIM_STATUS_CERTIFICATE.md
+.claude/science/physics-loops/toe-source-eta-ownership-block13-collision-safe-controller-20260829/GOAL.md
+.claude/science/physics-loops/toe-source-eta-ownership-block15-gapped-record-cap-20260829/GOAL.md
+.claude/science/physics-loops/toe-su3-a2-halfline-gap-block55-20260902/APPROACH_REGISTRY.md
+.claude/science/physics-loops/toe-su3-a2-halfline-gap-block55-20260902/CLAIM_STATUS_CERTIFICATE.md
+.claude/science/physics-loops/toe-su3-a2-halfline-gap-block55-20260902/HANDOFF.md
+.claude/science/physics-loops/toe-su3-a2-halfline-gap-block55-20260902/PANEL_RETURN.md
+.claude/science/physics-loops/toe-su3-a2-halfline-gap-block55-20260902/TRACE_GATE.md
+docs/ACTION_TRANSFER_RECORD_HAZARD_CONTENT_CROSSCALIBRATION_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-02.md
+docs/ADJACENCY_RANK_QUBIT_CLIFFORD_BOUND_NARROW_THEOREM_NOTE_2026-06-10.md
+docs/ADMISSIBILITY_D4_OUTCOME_TYPED_GENERATED_FRONT_PREFIX_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-29.md
+docs/ADMISSIBILITY_D4_RECORD_FLAG_COLLISION_SAFE_CONTROLLER_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-29.md
+docs/ADMISSIBILITY_RECORD_CONTINUATION_REFINEMENT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-13.md
+docs/CLOCK_ALL_MODE_COERCIVITY_FINITE_GRAPH_STATES_BOUNDED_THEOREM_NOTE_2026-09-16.md
+docs/CLUSTER_DECOMPOSITION_DELTA_T_FINITE_LAMBDA_OPERATOR_REAL_NOTE_2026-05-19.md
+docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md
+docs/COMPACT_ROTOR_SAMPLED_MAGNETIC_EVENT_BOUNDED_THEOREM_NOTE_2026-09-16.md
+docs/COMPACT_ROTOR_SINE_SCORE_STATIC_CURL_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md
+docs/COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md
+docs/COMPACT_ROTOR_TEMPORAL_OSCILLATION_COARSE_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-16.md
+docs/CYCLIC_EQUILIBRIUM_AND_INTEGER_GAUSS_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md
+docs/FINITE_ACTION_FUNCTIONAL_TYPED_ADMISSIBILITY_RECORD_IDENTIFICATION_DECISION_BOUNDED_THEOREM_NOTE_2026-09-02.md
+docs/FINITE_CLOCK_DIRECT_MAXWELL_SCALING_AND_COULOMB_WILSON_INTERACTIONS_BOUNDED_THEOREM_NOTE_2026-09-14.md
+docs/FINITE_CLOCK_GAUSSIAN_SMOOTHING_POSITIVE_LOCAL_ELECTRIC_EXTENSION_AND_FLUX_SCALING_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-15.md
+docs/FINITE_CLOCK_IMAGE_NOISE_CURRENT_SECTOR_AND_POSITIVE_TIME_OS_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-09-14.md
+docs/FINITE_CLOCK_LOGARITHMIC_MAXWELL_SCALING_AND_GLOBAL_DEFECT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-14.md
+docs/FINITE_CLOCK_SCORE_GAUSSIAN_MAXWELL_SCALING_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-14.md
+docs/FIXED_COUPLING_HAAR_VILLAIN_FULL_SCORE_GAUSSIAN_MAXWELL_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-15.md
+docs/FIXED_COUPLING_ROTOR_GROUND_CUTOFF_COMPACTNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md
+docs/FS_RECONSTRUCTION_R_AND_TIGHT_LINK_REVIEW_NOTE_2026-06-06.md
+docs/GAUGE_WILSON_SELECTED_INFINITE_STATIC_SOURCE_SECTOR_BOUNDED_THEOREM_NOTE_2026-09-07.md
+docs/GAUGE_WILSON_WEAK_WINDOW_QUANTITATIVE_BOUNDS_AND_HAAR_CONTACT_FDD_BOUNDED_THEOREM_NOTE_2026-09-07.md
+docs/MASSIVE_WILSON_LOOP_CURVATURE_NONCOMPACT_COVARIANCE_AND_COMPACT_DEFECT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-14.md
+docs/NATIVE_CERTIFIED_IMAGINARY_TIME_NOTE_2026-09-09.md
+docs/NATIVE_EDGE_RECORD_Z4_FLUX_ONE_SHOT_ERROR_BOUND_BOUNDED_THEOREM_NOTE_2026-09-07.md
+docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md
+docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md
+docs/NATIVE_GAUGE_TRANSFER_A2_REFLECTION_UNIFORM_HALF_LINE_GAP_THEOREM_NOTE_2026-09-02.md
+docs/NATIVE_GAUGE_TRANSFER_DIAGONAL_DOMINATION_RUNG_NINE_BOUNDED_NOTE_2026-06-12.md
+docs/NATIVE_GAUGE_TRANSFER_REDUCED_A2_SPECTRAL_DOMINATION_RUNG_ELEVEN_BOUNDED_NOTE_2026-06-12.md
+docs/NATIVE_GAUGE_TRANSFER_WILSON_DISCRETE_HEAT_INSERTION_BOUNDED_THEOREM_NOTE_2026-09-07.md
+docs/NATIVE_INTERACTING_WEYL_PROTECTED_PATHS_BOUNDED_THEOREM_NOTE_2026-09-13.md
+docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md
+docs/NN_LATTICE_RESCALED_RG_GRAVITY_SATURATION_NOTE_2026-05-10.md
+docs/OPEN_WILSON_GAUGE_MATTER_FIXED_GRAPH_STATE_JOIN_BOUNDED_THEOREM_NOTE_2026-09-16.md
+docs/PHYSICAL_COST_IDENTITY_INDICATOR_CERTIFICATE_CYCLE731_NOTE_2026-08-04.md
+docs/PLAQUETTE_BOOTSTRAP_FRAMEWORK_SPECIFIC_POSITIVITY_NOTE_2026-05-03.md
+docs/POST_RECORD_FINITE_TO_UNBOUNDED_FAMILY_LIFT_NO_GO_2026-06-06.md
+docs/POST_RECORD_RETAINED_UNBOUNDED_DYNAMICS_GATE_2026-06-06.md
+docs/SAME_CARRIER_THREE_RECORD_ARCHIVE_PACKET_BOUNDED_THEOREM_NOTE_2026-08-13.md
+docs/SCALAR_SELECTOR_SYNTHESIS_NOTE_2026-04-19.md
+docs/SMALL_CONTRAST_COCHAIN_GIBBS_STATE_MATCHING_AND_SPECTRAL_HOMOGENIZATION_BOUNDED_THEOREM_NOTE_2026-09-15.md
+docs/SUPPLIED_ALGEBRA_ACTION_AND_KERNEL_SUPPORT_BOUNDED_THEOREM_NOTE_2026-09-15.md
+docs/YT_P1_LOOP_GEOMETRIC_BOUND_NOTE_2026-04-17.md
+docs/YT_P2_F_YT_LOOP_GEOMETRIC_BOUND_NOTE_2026-04-17.md
+docs/YT_P3_K_SERIES_GEOMETRIC_BOUND_NOTE_2026-04-17.md
+docs/ai_methodology/raw/prompts_session_b068be5e_jonreilly.md
+docs/audit/data/ledger/al/alt_connectivity_family_complex_failure_note.json
+docs/audit/data/ledger/ch/chsh_tsirelson_lattice_qubits_bound_note_2026-05-20.json
+docs/audit/data/ledger/dm/dm_pmns_asymptotic_source_no_go_note_2026-04-20.json
+docs/audit/data/ledger/fl/flavor_r_half_stable_under_thermalizing_arrow_2026-06-02.json
+docs/audit/data/ledger/fs/fs_reconstruction_r_and_tight_link_review_note_2026-06-06.json
+docs/audit/data/ledger/ga/gate_b_poisson_self_gravity_note.json
+docs/audit/data/ledger/mi/minimal_absorbing_horizon_probe_note.json
+docs/audit/data/ledger/po/post_record_finite_to_unbounded_family_lift_no_go_2026-06-06.json
+docs/historic_intake/HISTORIC_CL3_MINIMALITY_CONDITIONAL_SUPPORT_2026_04_17_INTAKE_NOTE_2026-08-05.md
+docs/work_history/repo/review_feedback/TWELVE_HOUR_TOE_FRAMEWORK_CAMPAIGN_DIAGNOSIS_2026-07-16.md

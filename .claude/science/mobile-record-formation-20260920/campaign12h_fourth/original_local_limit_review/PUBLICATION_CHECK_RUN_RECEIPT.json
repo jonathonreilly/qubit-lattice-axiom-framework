@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "local_limit_publication_check.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/original_local_limit_review",
+  "started_utc": "2026-09-23T20:20:31.813549+00:00",
+  "finished_utc": "2026-09-23T20:20:32.456305+00:00",
+  "elapsed_seconds": 0.6426632080692798,
+  "returncode": 0,
+  "source_sha256": "e8830af0b7ea7a8387a3d6478088b49676142f9678261631ca3af29407ce9dd5",
+  "stdout_sha256": "e32ecafaaeaf0bed6ec0a6b56a0cda3e7050c3111ba83b2f14602a46005969f6",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

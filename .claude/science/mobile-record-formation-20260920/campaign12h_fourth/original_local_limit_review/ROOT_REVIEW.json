@@ -1,0 +1,162 @@
+{
+  "created_utc": "2026-09-23T20:21:47.049960+00:00",
+  "status": "Conditional provisional science ready for a regular milestone PR; no formal audit, retained or no-go PASS.",
+  "review_coverage": "Complete changed arguments and load-bearing scientific runners, independent PRE reports and FINAL comparisons read; valid unchanged prior proofs reused at source-bound identities. Truncated tool displays were completed by targeted reads before this disposition.",
+  "finding": "No unresolved mathematical correction in the selected original-model units. Author conservative cube bounds and independent sharper bounds both valid and distinguished. Full counts remain distinct from finite-window local traces.",
+  "science_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/actual_first_output_author/AUTHOR_SEAL.json",
+      "bytes": 6806,
+      "sha256": "e8a1ea634f3355f883da749124af2ab5f5fbaba3ea7270d972dd279d3ded6046"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/actual_first_output_independent/FINAL_SEAL.json",
+      "bytes": 25145,
+      "sha256": "c5ed54dd73a633a433f51cba08c5221e6cad58ea306219a3002e2104e53ea69a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_author/AUTHOR_SEAL.json",
+      "bytes": 5341,
+      "sha256": "b99a0a0b243c9ecfaade581acbb2450d4e3d53d95967bb7096ed9388558f2665"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/FINAL_SEAL.json",
+      "bytes": 20050,
+      "sha256": "f2df1efd5a7c7a63fb5200c0becb48278f79e448000afddcc8dc2bc48785111f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_unprepared_author/AUTHOR_SEAL.json",
+      "bytes": 4786,
+      "sha256": "ed066b95b18992f86718fe960ed6624c163854d142d0f90a742a4c85377159f4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_unprepared_independent/FINAL_SEAL.json",
+      "bytes": 21549,
+      "sha256": "6c093df454da76bb474ce0f7f2283fc4729ced3ed540b779881418c07233b9ca"
+    }
+  ],
+  "review_artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/original_local_limit_review/HIDDEN_PREMISE_SCAN.json",
+      "bytes": 167,
+      "sha256": "ac1b38f616788f5c236627d001128bcb46e56dbf639a0533e9446b518eee5caf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/original_local_limit_review/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "bytes": 10049,
+      "sha256": "85f91584ba8d0a2535b22188e9908d4fc5a31144facd1bdd763566fc8179c6a9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/original_local_limit_review/PUBLICATION_CHECK.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/original_local_limit_review/PUBLICATION_CHECK.stdout.log",
+      "bytes": 985,
+      "sha256": "e32ecafaaeaf0bed6ec0a6b56a0cda3e7050c3111ba83b2f14602a46005969f6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/original_local_limit_review/PUBLICATION_CHECK_RUN_RECEIPT.json",
+      "bytes": 716,
+      "sha256": "d563e7e5a0c48c9c26df78898b387a06a243f8da11abd35e6b2f6e1e3d593b58"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/original_local_limit_review/SYNTHESIS.md",
+      "bytes": 7306,
+      "sha256": "40e4102f3da71cc53a2b4ae8c2e49c1d9f3a8ff64dcf459d3d7032e2f7135278"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/original_local_limit_review/history/CLOCK_ALL_MODE_COERCIVITY_FINITE_GRAPH_STATES_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "bytes": 16197,
+      "sha256": "89169a9dcd5e3cb2f79fed9735c0f5785a4781ee325deae57fb67fa1008fa537"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/original_local_limit_review/history/FIXED_COUPLING_ROTOR_GROUND_CUTOFF_COMPACTNESS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "bytes": 21372,
+      "sha256": "fce8dfa118325552e93dec94089c9c76b3b5ed52e0c31f9742372297a47f97b4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/original_local_limit_review/history/LEDGER_SCAN_RECEIPT.json",
+      "bytes": 391,
+      "sha256": "14d3c06a628e92afeccce9d812255f147005c33920d74f22838e9e7ed4330f1c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/original_local_limit_review/history/NO_GO_LEDGER_PATHS.txt",
+      "bytes": 20173,
+      "sha256": "c603c7af7eb479719b13e8214f0afd70a4d3d7a21afc420377bb2087873d9210"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/original_local_limit_review/history/SCAN_RECEIPT.json",
+      "bytes": 1283,
+      "sha256": "acb3fbfab2510954518dc8b4c077c03467379ee30108572139fc65288d619d13"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/original_local_limit_review/history/SELECTED_HISTORY_SOURCES.json",
+      "bytes": 927,
+      "sha256": "c8c89962b300ea97ddbe137a49d12255f9339cb5d2883803d74d7a6aa583ae94"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/original_local_limit_review/history/ledger_science.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/original_local_limit_review/history/ledger_science.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/original_local_limit_review/history/topology.TEXT_FILES.txt",
+      "bytes": 9891,
+      "sha256": "9008a88a61e60c91aba17b4974ef0007d07ca83e48848c0a52430209df10530f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/original_local_limit_review/history/topology.files.txt",
+      "bytes": 17336,
+      "sha256": "0a68df73c727c34ae7b31fb80efbf430dc8532ac21190a2765d3f992ce70552d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/original_local_limit_review/history/topology.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/original_local_limit_review/history/topology.stdout.log",
+      "bytes": 66218,
+      "sha256": "2a87df43f947818376016b424c2b315c9d6460b4ddfb7601ef3cc40c9a51b1db"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/original_local_limit_review/history/wall_rhetoric.TEXT_FILES.txt",
+      "bytes": 6240,
+      "sha256": "7c2802c62137ec7eeceb23e3c66d826cec84a49f48b33d7901999be1f4d4a3a2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/original_local_limit_review/history/wall_rhetoric.files.txt",
+      "bytes": 7965,
+      "sha256": "2b0f2344d7fa2be5147fb37da38f2e79f6528da219d5a9531114b4b58b9c4400"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/original_local_limit_review/history/wall_rhetoric.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/original_local_limit_review/history/wall_rhetoric.stdout.log",
+      "bytes": 22200,
+      "sha256": "194bd748d6641a0ea92759e2a0a0b42bcac6a29bcc6aa6843a1cae29559ddd48"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/original_local_limit_review/local_limit_publication_check.py",
+      "bytes": 4525,
+      "sha256": "e8830af0b7ea7a8387a3d6478088b49676142f9678261631ca3af29407ce9dd5"
+    }
+  ],
+  "independence_boundary": "Independent reconstructions froze before candidate access. Root cube proof is source-informed by the independent ring commutant insight; uniform-input strengthening is root-authored. Shared upstream premises and progress-message exposure are explicit.",
+  "verification_limits": [
+    "The large-ring state arrays above S64 were authenticated/reprocessed but not independently propagated.",
+    "All-spin and compact-time limit statements use proofs, not finite matrix extrapolation.",
+    "No proof of full six/eight count-limit uniqueness, growing-field law, thermodynamic phase, native selection or autonomous resource completion."
+  ],
+  "scope_gate": "N1\u2013N8 sidecar and primary cached execution-scope lines are included with the mathematical synthesis. This is a narrow conditional result, not a formal negative certification."
+}

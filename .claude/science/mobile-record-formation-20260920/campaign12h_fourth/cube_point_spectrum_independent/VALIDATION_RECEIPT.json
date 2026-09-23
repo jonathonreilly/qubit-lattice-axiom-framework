@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/validate_evidence.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920",
+  "started_utc": "2026-09-23T19:26:06.156453+00:00",
+  "finished_utc": "2026-09-23T19:26:06.466009+00:00",
+  "exit_code": 0,
+  "stdout_sha256": "e148f12a9162ab7bc883a55645f685e31b74e533581d89d06f2531d850de5148",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "script_sha256": "27f027db5fbecb018b116b08d086cc72df25fec755d027b0b8680684276377cf"
+}

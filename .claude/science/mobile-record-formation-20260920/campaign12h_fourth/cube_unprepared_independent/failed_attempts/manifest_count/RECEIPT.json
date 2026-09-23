@@ -1,0 +1,14 @@
+{
+  "kind": "Observed seal-generation bookkeeping failure; no scientific execution failed",
+  "tool_chunk_id": "ddb734",
+  "command": [
+    "python3",
+    "seal_final.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_unprepared_independent",
+  "source_sha256": "a65a3bf8791549209d573f5d7d5d7133cd4f1480ca9727aea0356cb59c6ab485",
+  "exit_code": 1,
+  "cause": "Incorrect hard-coded number of top-level artifacts. No FINAL file was written.",
+  "repair": "Use the complete recursive artifact inventory with explicit inclusion checks instead of a manually counted total.",
+  "receipt_limit": "No separate start time or elapsed time was captured for this ad hoc seal invocation; no timing is invented. The preceding preservation command in the same shell cell printed its own success line; seal_final itself produced no stdout."
+}

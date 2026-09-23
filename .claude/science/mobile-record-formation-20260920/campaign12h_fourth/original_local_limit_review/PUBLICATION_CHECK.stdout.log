@@ -1,0 +1,14 @@
+per_element: Exact count polynomials, source convolutions and trace-deficit arithmetic were checked symbolically.
+per_site: checked and not executed — site and physical Gauss builders are reused at their frozen source identities.
+per_mode: checked and not executed — spectrum proofs and finite certificates are authenticated, without a new diagonalization.
+per_block: Four-, six- and eight-record synthesis formulas and nonnegative count gaps were checked for both finite graphs.
+lattice_wide: Only the fixed eight-site ring and cube formulas are checked; no spatial-volume theorem is inferred.
+{
+  "selected_record_count": 6,
+  "unique_bindings": 161,
+  "ring_local_trace": "1/2 + exp(-16*k*t)/2",
+  "cube_local_trace": "exp(-48*k*t)",
+  "ring_count_upper_positive_factor": "(y - 1)**2*(y**2 + 2*y + 3)/3",
+  "cube_count_upper_positive_factor": "(y - 1)**2*(y + 2)/2",
+  "scope": "Publication authentication and synthesis algebra, not a new independent physics reconstruction."
+}

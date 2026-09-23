@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_unprepared_independent/seal_final.py", line 61, in <module>
+    assert len(artifacts) == 31
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError

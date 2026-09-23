@@ -1,0 +1,44 @@
+{
+  "main_ref": "b8d0017208a2c26f5938c618dc57f745293fe777",
+  "queries": [
+    {
+      "label": "topology",
+      "command": [
+        "git",
+        "grep",
+        "-n",
+        "-i",
+        "-E",
+        "point spectrum|trace.norm.{0,30}(limit|compact|converg)|tightness|escape.{0,20}(field|compact)|post.formation|large.spin.{0,25}limit",
+        "b8d0017208a2c26f5938c618dc57f745293fe777",
+        "--",
+        "docs",
+        ".claude/science/physics-loops"
+      ],
+      "returncode": -9,
+      "matches": 227,
+      "files": 152,
+      "sha256": "2a87df43f947818376016b424c2b315c9d6460b4ddfb7601ef3cc40c9a51b1db"
+    },
+    {
+      "label": "wall_rhetoric",
+      "command": [
+        "git",
+        "grep",
+        "-n",
+        "-i",
+        "-E",
+        "structurally undecidable|no retained primitive|requires new axiom|cannot be derived from A_min",
+        "b8d0017208a2c26f5938c618dc57f745293fe777",
+        "--",
+        "docs",
+        ".claude/science/physics-loops"
+      ],
+      "returncode": 0,
+      "matches": 89,
+      "files": 70,
+      "sha256": "194bd748d6641a0ea92759e2a0a0b42bcac6a29bcc6aa6843a1cae29559ddd48"
+    }
+  ],
+  "scope": "Read-only targeted cross-cycle echo scan; not a repo-wide audit or an exhaustive mathematical literature review."
+}

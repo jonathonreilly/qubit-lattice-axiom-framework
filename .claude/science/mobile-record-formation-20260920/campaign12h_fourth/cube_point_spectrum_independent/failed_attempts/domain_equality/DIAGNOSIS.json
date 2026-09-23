@@ -1,0 +1,8 @@
+{
+  "failure": "SymPy Poly equality includes coefficient-domain identity; the Gaussian-integer fiber retained domain ZZ_I even after its coefficients became rational integers.",
+  "scope": "Bookkeeping/domain assertion, not a common eigenvalue or scientific counterexample.",
+  "repair": "Coerce proven integer characteristic coefficients to ZZ; compare finite-field constant Bezout gcd by expression.",
+  "original_source_sha256": "10220f2e962cdec51c5bc09cd0e2be0c5682003e59431a583c7a0e71c9819b1e",
+  "corrected_source_sha256": "f25ade25a98715a142f53c11c64df730d51dbfb242a3ae4550a8e0f66b8c2265",
+  "scientific_matrix_change": false
+}

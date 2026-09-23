@@ -1,0 +1,71 @@
+{
+  "sealed_utc": "2026-09-23T19:32:26.417977+00:00",
+  "status": "Root source-informed cube consequence candidate, conditional on the frozen point-spectrum premise and checked supplied-model target; selective comparison pending.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_author/AUTHOR_SEAL.json",
+      "bytes": 5341,
+      "sha256": "b99a0a0b243c9ecfaade581acbb2450d4e3d53d95967bb7096ed9388558f2665"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/PRE_COMPARISON_SEAL.json",
+      "bytes": 12765,
+      "sha256": "8c29f173d14a983a0c6273560712c32685d48429d7482c5dcff152e426d05c0a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/actual_first_output_independent/PRE_COMPARISON_SEAL.json",
+      "bytes": 14053,
+      "sha256": "ba8907a8da440ad8832f86ff42b33b7c90d99082d181d215af43a8b89c11f37c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/actual_first_output_independent/REPORT.md",
+      "bytes": 22041,
+      "sha256": "578dc3b86852d4418d66b07c8d1f2159d68ad12730b6cbc16fc225cc363fbebb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "bytes": 17730,
+      "sha256": "002119d5a3f9bec171c3678cb15afdb91f7a763311ca38e6e4458ce10865572e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_author/second_event_probe.py",
+      "bytes": 12643,
+      "sha256": "4827171a51e018b306302b0fac315c000c63bb7311e69fcab18ad666916f1f25"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_unprepared_author/CONTROLS.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_unprepared_author/CONTROLS.stdout.log",
+      "bytes": 3532,
+      "sha256": "161ad93f14ca9b3b15a0d2c4489a179de34e11924b2ec3f4a42ad6af58d2bbe6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_unprepared_author/CONTROLS_RUN_RECEIPT.json",
+      "bytes": 463,
+      "sha256": "fcb3228e35115aef5d9ee0a15d119087b31a7d493bbb8247f18908d5dbb006e9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_unprepared_author/CUBE_ACTUAL_FORMATION_LOCAL_DENSITY_LIMIT.md",
+      "bytes": 13671,
+      "sha256": "5a546e000b2cea8309df035506f2c759daaa824712ca001d057567a91a9152d9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_unprepared_author/CUBE_LOCAL_LIMIT_CONTROLS.json",
+      "bytes": 2641,
+      "sha256": "72f9ff4014d3b0744e3b59464d0e84e8ba66878fe65bef0260b5cc2c32ca6b40"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_unprepared_author/cube_physical_controls.py",
+      "bytes": 8243,
+      "sha256": "20f0a6abf4066098cf719b74af22f9826d803b6ee51d9d772ed9ab56e104ce80"
+    }
+  ],
+  "attribution": "The time-smearing/positive trace-class commutant idea was read from the independent ring consequence report. Root extends it to uniform initial sequences, a time-dependent cube field source, and original cube local densities. This is not an independent rediscovery of that insight.",
+  "claim": "Fixed-field local density tends to the pre-first-formation field density of trace exp(-48 kappa t) in the specified joint-spin cube model. Six/eight number limits and growing-field dynamics remain unresolved.",
+  "procedural_status": "Research candidate; no formal retained or no-go packet PASS. Written scope stress test and independent checking required before publication."
+}

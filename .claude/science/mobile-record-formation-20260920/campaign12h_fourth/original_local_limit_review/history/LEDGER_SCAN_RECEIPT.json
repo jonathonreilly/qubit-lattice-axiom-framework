@@ -1,0 +1,9 @@
+{
+  "ref": "b8d0017208a2c26f5938c618dc57f745293fe777",
+  "ledger_count": 186,
+  "pattern": "rotor|trace.norm|point spectrum|high.mode|electric|counterterm",
+  "returncode": 1,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "match_count": 0,
+  "scope": "Targeted content search of all inventoried NO_GO_LEDGER files; no audit or status promotion."
+}

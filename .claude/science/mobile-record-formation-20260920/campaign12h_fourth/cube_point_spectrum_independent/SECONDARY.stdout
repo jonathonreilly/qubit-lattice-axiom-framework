@@ -1,0 +1,87 @@
+{
+  "prior_source_sha256": "a152167dff2cfff397397fcc56121cd9b2d79d7f412eb2e134f2f9cbbfa54c95",
+  "main_results_sha256": "f9de1a20fa4bd53f2e149e4a9af3824ab41311cde0d5e80c8b747d7f682f3ca5",
+  "old_builder_comparisons": [
+    {
+      "chord_angles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "maximum_hopping_matrix_error": 0.0
+    },
+    {
+      "chord_angles": [
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "maximum_hopping_matrix_error": 0.0
+    },
+    {
+      "chord_angles": [
+        0.31,
+        0.57,
+        0.93,
+        1.27,
+        1.81
+      ],
+      "maximum_hopping_matrix_error": 0.0
+    }
+  ],
+  "saved_modular_bezout_convolution_verified": true,
+  "all_36_exact_absolute_path_row_sums": [
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+  ],
+  "inconclusive_phase_pair": {
+    "chord_phase_powers_of_i": [
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "common_exact_polynomial": "lambda**6 + 21*lambda**5 + 170*lambda**4 + 680*lambda**3 + 1440*lambda**2 + 1552*lambda + 672",
+    "degree": 6,
+    "interpretation": "Two poorly selected fibers can share eigenvalues; this does not establish a band constant on the full five-torus."
+  }
+}

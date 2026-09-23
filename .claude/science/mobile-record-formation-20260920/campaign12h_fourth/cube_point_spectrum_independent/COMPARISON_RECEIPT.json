@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/comparison_check.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920",
+  "started_utc": "2026-09-23T19:31:19.094126+00:00",
+  "finished_utc": "2026-09-23T19:31:20.213450+00:00",
+  "exit_code": 0,
+  "stdout_sha256": "8af8634279b24a3a528bdb50f675febfbc74ee8a3eeb1a62ac400a253c348223",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "script_sha256": "31d8b0b38cb0b5902d759b28c69f082bbb3fe7b8ff06c755225bfb0654bd64da"
+}

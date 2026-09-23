@@ -1,0 +1,277 @@
+{
+  "source_sha256": "a9b2739f5607b9fad812e1de4215973d26662026683a4d0790617ddaf68f6313",
+  "parameters": {
+    "K": 0.4,
+    "delta": 0.7,
+    "kappa": 0.3
+  },
+  "flat_reference_cutoff": 48,
+  "flat_reference_Dyson_tail_bound": 1.3899025687066262e-32,
+  "rows": [
+    {
+      "S": 64,
+      "eta": 1664.0,
+      "P_dimension": 4584,
+      "elapsed_seconds": 6.020572165958583,
+      "vector_file": "PROPAGATED_S64.npz",
+      "vector_sha256": "9a3e318278a7b3138917584ca336cd347babbaddfd8317a9adccf409513615d8",
+      "controls": [
+        {
+          "t": 0.0,
+          "flat_survival": 0.5,
+          "bright_survival": 0.5,
+          "cross_contribution": 0.0,
+          "full_survival": 1.0,
+          "prepared_half_reference": 0.5,
+          "flat_vector_error": 0.0,
+          "bright_low_circulation_weight": 0.5,
+          "bright_scaled_second_moment": 0.0001220703125,
+          "bright_physical_flat_projection_weight": 0.0,
+          "bright_instantaneous_hazard": 0.5998557865661982,
+          "full_instantaneous_hazard": 1.2
+        },
+        {
+          "t": 0.39999999999999997,
+          "flat_survival": 0.30942817758564106,
+          "bright_survival": 0.42039593435332334,
+          "cross_contribution": 2.5083151764082665e-05,
+          "full_survival": 0.7298491950907287,
+          "prepared_half_reference": 0.3093916959030705,
+          "flat_vector_error": 0.0038952364507642582,
+          "bright_low_circulation_weight": 0.10130851994011647,
+          "bright_scaled_second_moment": 0.08522887419490698,
+          "bright_physical_flat_projection_weight": 0.041163220998520794,
+          "bright_instantaneous_hazard": 0.18236007035871135,
+          "full_instantaneous_hazard": 0.5533606045208975
+        },
+        {
+          "t": 0.7999999999999999,
+          "flat_survival": 0.19149354212904565,
+          "bright_survival": 0.35286988526177165,
+          "cross_contribution": 4.164812869405735e-05,
+          "full_survival": 0.5444050755195112,
+          "prepared_half_reference": 0.19144644298755603,
+          "flat_vector_error": 0.0020645376264467603,
+          "bright_low_circulation_weight": 0.08389653306171085,
+          "bright_scaled_second_moment": 0.06608946541896032,
+          "bright_physical_flat_projection_weight": 0.022901093505976532,
+          "bright_instantaneous_hazard": 0.1791121152129965,
+          "full_instantaneous_hazard": 0.4089121702136298
+        },
+        {
+          "t": 1.2,
+          "flat_survival": 0.11851709564887937,
+          "bright_survival": 0.29733381947130305,
+          "cross_contribution": 4.330030196712752e-05,
+          "full_survival": 0.41589421542214955,
+          "prepared_half_reference": 0.11846387934106088,
+          "flat_vector_error": 0.0030558519221217583,
+          "bright_low_circulation_weight": 0.07229909816447269,
+          "bright_scaled_second_moment": 0.06625582688050695,
+          "bright_physical_flat_projection_weight": 0.023587425303864533,
+          "bright_instantaneous_hazard": 0.12283888527949666,
+          "full_instantaneous_hazard": 0.26493626355003536
+        }
+      ]
+    },
+    {
+      "S": 96,
+      "eta": 3724.8000000000006,
+      "P_dimension": 6888,
+      "elapsed_seconds": 19.914811207912862,
+      "vector_file": "PROPAGATED_S96.npz",
+      "vector_sha256": "cb3d3736928a58a910b0ed35de0741cc2ca1f12fe04207a9d38b8d20824a6a33",
+      "controls": [
+        {
+          "t": 0.0,
+          "flat_survival": 0.5,
+          "bright_survival": 0.5,
+          "cross_contribution": 0.0,
+          "full_survival": 1.0,
+          "prepared_half_reference": 0.5,
+          "flat_vector_error": 0.0,
+          "bright_low_circulation_weight": 0.5,
+          "bright_scaled_second_moment": 5.425347222222222e-05,
+          "bright_physical_flat_projection_weight": 0.0,
+          "bright_instantaneous_hazard": 0.5999355704699844,
+          "full_instantaneous_hazard": 1.2
+        },
+        {
+          "t": 0.39999999999999997,
+          "flat_survival": 0.30940743921488667,
+          "bright_survival": 0.4205483122573135,
+          "cross_contribution": -4.544981997013852e-07,
+          "full_survival": 0.7299552969740011,
+          "prepared_half_reference": 0.3093916959030705,
+          "flat_vector_error": 0.0017568556230182014,
+          "bright_low_circulation_weight": 0.1011772147349746,
+          "bright_scaled_second_moment": 0.08080937464663107,
+          "bright_physical_flat_projection_weight": 0.031580847785306086,
+          "bright_instantaneous_hazard": 0.17817359190098087,
+          "full_instantaneous_hazard": 0.5494302128475028
+        },
+        {
+          "t": 0.7999999999999999,
+          "flat_survival": 0.19147040543354926,
+          "bright_survival": 0.35338535982810415,
+          "cross_contribution": 7.99345210650183e-09,
+          "full_survival": 0.5448557732551049,
+          "prepared_half_reference": 0.19144644298755603,
+          "flat_vector_error": 0.005850891939161653,
+          "bright_low_circulation_weight": 0.0779521171197766,
+          "bright_scaled_second_moment": 0.07308577321645106,
+          "bright_physical_flat_projection_weight": 0.027707279590133856,
+          "bright_instantaneous_hazard": 0.16206259493973818,
+          "full_instantaneous_hazard": 0.3917928064809021
+        },
+        {
+          "t": 1.2,
+          "flat_survival": 0.11850902520377865,
+          "bright_survival": 0.2977355131598513,
+          "cross_contribution": 3.014382907819054e-07,
+          "full_survival": 0.4162448398019206,
+          "prepared_half_reference": 0.11846387934106088,
+          "flat_vector_error": 0.010832935919125871,
+          "bright_low_circulation_weight": 0.06421444869675395,
+          "bright_scaled_second_moment": 0.05748033060171926,
+          "bright_physical_flat_projection_weight": 0.01922628597653884,
+          "bright_instantaneous_hazard": 0.1247084062228613,
+          "full_instantaneous_hazard": 0.26669808343132695
+        }
+      ]
+    },
+    {
+      "S": 128,
+      "eta": 6604.8,
+      "P_dimension": 9192,
+      "elapsed_seconds": 46.23220854206011,
+      "vector_file": "PROPAGATED_S128.npz",
+      "vector_sha256": "42c948a05b39e4687c6c9a5055d01a7575256bac5656450cb94926b7b1606343",
+      "controls": [
+        {
+          "t": 0.0,
+          "flat_survival": 0.5,
+          "bright_survival": 0.5,
+          "cross_contribution": 0.0,
+          "full_survival": 1.0,
+          "prepared_half_reference": 0.5,
+          "flat_vector_error": 0.0,
+          "bright_low_circulation_weight": 0.5,
+          "bright_scaled_second_moment": 3.0517578125e-05,
+          "bright_physical_flat_projection_weight": 0.0,
+          "bright_instantaneous_hazard": 0.599963663891025,
+          "full_instantaneous_hazard": 1.2
+        },
+        {
+          "t": 0.39999999999999997,
+          "flat_survival": 0.3094006577438855,
+          "bright_survival": 0.42034606453955176,
+          "cross_contribution": -8.870319961360692e-06,
+          "full_survival": 0.7297378519634763,
+          "prepared_half_reference": 0.3093916959030705,
+          "flat_vector_error": 0.0006630308137327072,
+          "bright_low_circulation_weight": 0.052145251377385016,
+          "bright_scaled_second_moment": 0.07961410952887325,
+          "bright_physical_flat_projection_weight": 0.025318797733179892,
+          "bright_instantaneous_hazard": 0.18372212680611377,
+          "full_instantaneous_hazard": 0.5549636858582101
+        },
+        {
+          "t": 0.7999999999999999,
+          "flat_survival": 0.19145792906830073,
+          "bright_survival": 0.3536048382638559,
+          "cross_contribution": -1.2730364104395819e-05,
+          "full_survival": 0.5450500369680515,
+          "prepared_half_reference": 0.19144644298755603,
+          "flat_vector_error": 0.0014119479391555064,
+          "bright_low_circulation_weight": 0.040956876105644385,
+          "bright_scaled_second_moment": 0.07302295444951232,
+          "bright_physical_flat_projection_weight": 0.023159800535235423,
+          "bright_instantaneous_hazard": 0.14759464802358385,
+          "full_instantaneous_hazard": 0.37730627167049974
+        },
+        {
+          "t": 1.2,
+          "flat_survival": 0.11847665616363531,
+          "bright_survival": 0.2984482643564066,
+          "cross_contribution": -9.327974016644816e-06,
+          "full_survival": 0.4169155925460253,
+          "prepared_half_reference": 0.11846387934106088,
+          "flat_vector_error": 0.0010417993976780887,
+          "bright_low_circulation_weight": 0.04899450752729079,
+          "bright_scaled_second_moment": 0.06380407181707226,
+          "bright_physical_flat_projection_weight": 0.017836677851786678,
+          "bright_instantaneous_hazard": 0.1273789464934955,
+          "full_instantaneous_hazard": 0.2695480102004418
+        }
+      ]
+    },
+    {
+      "S": 192,
+      "eta": 14822.400000000001,
+      "P_dimension": 13800,
+      "elapsed_seconds": 150.60422120895237,
+      "vector_file": "PROPAGATED_S192.npz",
+      "vector_sha256": "2b9a8dd7a325f5b27f5cc5dedb547f21662738d270378e64db386bb49dfd0f75",
+      "controls": [
+        {
+          "t": 0.0,
+          "flat_survival": 0.5,
+          "bright_survival": 0.5,
+          "cross_contribution": 0.0,
+          "full_survival": 1.0,
+          "prepared_half_reference": 0.5,
+          "flat_vector_error": 0.0,
+          "bright_low_circulation_weight": 0.5,
+          "bright_scaled_second_moment": 1.3563368055555555e-05,
+          "bright_physical_flat_projection_weight": 0.0,
+          "bright_instantaneous_hazard": 0.5999838085086316,
+          "full_instantaneous_hazard": 1.2
+        },
+        {
+          "t": 0.39999999999999997,
+          "flat_survival": 0.30939566773399607,
+          "bright_survival": 0.42054968150631683,
+          "cross_contribution": -2.194587728851343e-08,
+          "full_survival": 0.729945327294435,
+          "prepared_half_reference": 0.3093916959030705,
+          "flat_vector_error": 0.0011841894637890007,
+          "bright_low_circulation_weight": 0.06926946861880703,
+          "bright_scaled_second_moment": 0.08141986219349949,
+          "bright_physical_flat_projection_weight": 0.022168915068944202,
+          "bright_instantaneous_hazard": 0.1756267378650259,
+          "full_instantaneous_hazard": 0.5468748087000204
+        },
+        {
+          "t": 0.7999999999999999,
+          "flat_survival": 0.1914534128536727,
+          "bright_survival": 0.3541560757881692,
+          "cross_contribution": -9.707310477063666e-08,
+          "full_survival": 0.5456093915687372,
+          "prepared_half_reference": 0.19144644298755603,
+          "flat_vector_error": 0.0040533641875268,
+          "bright_low_circulation_weight": 0.03953917716239121,
+          "bright_scaled_second_moment": 0.06992867109835119,
+          "bright_physical_flat_projection_weight": 0.02143296059657602,
+          "bright_instantaneous_hazard": 0.1663821907775699,
+          "full_instantaneous_hazard": 0.3960906873113502
+        },
+        {
+          "t": 1.2,
+          "flat_survival": 0.11848132245528208,
+          "bright_survival": 0.2987633418115474,
+          "cross_contribution": 7.169957929891533e-08,
+          "full_survival": 0.41724473596640876,
+          "prepared_half_reference": 0.11846387934106088,
+          "flat_vector_error": 0.008082373174564,
+          "bright_low_circulation_weight": 0.026406517370547868,
+          "bright_scaled_second_moment": 0.06393618687161122,
+          "bright_physical_flat_projection_weight": 0.01913397817361752,
+          "bright_instantaneous_hazard": 0.12494375149876205,
+          "full_instantaneous_hazard": 0.26707660241275966
+        }
+      ]
+    }
+  ],
+  "scope": "Exploratory unselected first-output finite-spin decomposition; no limiting bright law or strong/weak state convergence is asserted."
+}

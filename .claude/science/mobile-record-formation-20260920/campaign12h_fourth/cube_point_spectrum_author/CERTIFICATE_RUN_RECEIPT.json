@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_author/cube_certificate_check.py"
+  ],
+  "source_sha256": "24f47ed13137802cda65463cf5379021726cde7eac93f4c4ab7330f91a7514a3",
+  "started_utc": "2026-09-23T19:09:08.593549+00:00",
+  "elapsed_seconds": 1.0178013748954982,
+  "exit_code": 0
+}

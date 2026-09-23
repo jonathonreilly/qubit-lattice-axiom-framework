@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/cube_point_check.py", line 251, in <module>
+    print(json.dumps(main(),indent=2,default=lambda x:int(x) if isinstance(x,sp.Integer) else str(x)))
+                     ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/cube_point_check.py", line 201, in main
+    exact_gcd=sp.gcd(*polys);assert exact_gcd==sp.Poly(1,x)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

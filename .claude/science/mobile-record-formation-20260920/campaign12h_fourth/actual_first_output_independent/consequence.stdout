@@ -1,0 +1,898 @@
+dynamic S 4 refined N6 0.6560996301117303 windows [{'electric_window': 1, 'physical_window_dimension': 48, 'actual_N6_window_probability': 0.46308526156753976, 'flat_consequence_window_probability': 0.2615596121465541, 'difference': 0.20152564942098566}, {'electric_window': 2, 'physical_window_dimension': 120, 'actual_N6_window_probability': 0.6531806656447917, 'flat_consequence_window_probability': 0.28707299829992927, 'difference': 0.36610766734486244}]
+dynamic S 8 refined N6 0.6644968943753582 windows [{'electric_window': 1, 'physical_window_dimension': 48, 'actual_N6_window_probability': 0.3123035946229411, 'flat_consequence_window_probability': 0.2615596121465541, 'difference': 0.050743982476387006}, {'electric_window': 2, 'physical_window_dimension': 120, 'actual_N6_window_probability': 0.40617451485974154, 'flat_consequence_window_probability': 0.28707299829992927, 'difference': 0.11910151655981227}]
+dynamic S 16 refined N6 0.6737654178261478 windows [{'electric_window': 1, 'physical_window_dimension': 48, 'actual_N6_window_probability': 0.3084362841704877, 'flat_consequence_window_probability': 0.2615596121465541, 'difference': 0.046876672023933585}, {'electric_window': 2, 'physical_window_dimension': 120, 'actual_N6_window_probability': 0.38327413647088004, 'flat_consequence_window_probability': 0.28707299829992927, 'difference': 0.09620113817095077}]
+per_element: Exact local hop and creation coefficients are checked; no broader primitive claim is tested.
+per_site: All eight sites and all sixteen resolved first marks enter the clock and loss checks.
+per_mode: The physical flat mass is checked for every first mark; isolated angle fibers are not preparations.
+per_block: Four-, six-, and eight-record sector clocks and bounds are the explicitly tested number blocks.
+lattice_wide: Only the fixed eight-site ring is resolved; no larger-volume no-limit claim is executed.
+{
+  "first_clock": {
+    "finite_spin_rows": [
+      {
+        "S": 1,
+        "H2_zero_field": -8,
+        "H4_zero_field": 24,
+        "first_resolved_channels": 16,
+        "total_loss_without_kappa": 16.0
+      },
+      {
+        "S": 2,
+        "H2_zero_field": -8,
+        "H4_zero_field": 24,
+        "first_resolved_channels": 16,
+        "total_loss_without_kappa": 16.0
+      },
+      {
+        "S": 4,
+        "H2_zero_field": -8,
+        "H4_zero_field": 24,
+        "first_resolved_channels": 16,
+        "total_loss_without_kappa": 16.0
+      },
+      {
+        "S": 8,
+        "H2_zero_field": -8,
+        "H4_zero_field": 24,
+        "first_resolved_channels": 16,
+        "total_loss_without_kappa": 16.0
+      }
+    ],
+    "all_first_marks": [
+      {
+        "coherent": false,
+        "channel": "(7, -1)",
+        "norm_squared": 1.0,
+        "flat_weight": 0.4999999999999999,
+        "physical_vector": [
+          {
+            "q": [
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              -1
+            ],
+            "f": -1,
+            "coefficient": "1"
+          }
+        ]
+      },
+      {
+        "coherent": false,
+        "channel": "(7, 1)",
+        "norm_squared": 1.0,
+        "flat_weight": 0.4999999999999999,
+        "physical_vector": [
+          {
+            "q": [
+              -1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1
+            ],
+            "f": 1,
+            "coefficient": "1"
+          }
+        ]
+      },
+      {
+        "coherent": false,
+        "channel": "(2, -1)",
+        "norm_squared": 1.0,
+        "flat_weight": 0.4999999999999999,
+        "physical_vector": [
+          {
+            "q": [
+              1,
+              1,
+              -1,
+              1,
+              1,
+              0,
+              1,
+              0
+            ],
+            "f": 0,
+            "coefficient": "1"
+          }
+        ]
+      },
+      {
+        "coherent": false,
+        "channel": "(2, 1)",
+        "norm_squared": 1.0,
+        "flat_weight": 0.4999999999999999,
+        "physical_vector": [
+          {
+            "q": [
+              1,
+              1,
+              1,
+              -1,
+              1,
+              0,
+              1,
+              0
+            ],
+            "f": 0,
+            "coefficient": "1"
+          }
+        ]
+      },
+      {
+        "coherent": false,
+        "channel": "(1, -1)",
+        "norm_squared": 1.0,
+        "flat_weight": 0.4999999999999999,
+        "physical_vector": [
+          {
+            "q": [
+              1,
+              -1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0
+            ],
+            "f": 0,
+            "coefficient": "1"
+          }
+        ]
+      },
+      {
+        "coherent": false,
+        "channel": "(1, 1)",
+        "norm_squared": 1.0,
+        "flat_weight": 0.4999999999999999,
+        "physical_vector": [
+          {
+            "q": [
+              1,
+              1,
+              -1,
+              1,
+              1,
+              0,
+              1,
+              0
+            ],
+            "f": 0,
+            "coefficient": "1"
+          }
+        ]
+      },
+      {
+        "coherent": false,
+        "channel": "(4, -1)",
+        "norm_squared": 1.0,
+        "flat_weight": 0.4999999999999999,
+        "physical_vector": [
+          {
+            "q": [
+              1,
+              0,
+              1,
+              1,
+              -1,
+              1,
+              1,
+              0
+            ],
+            "f": 0,
+            "coefficient": "1"
+          }
+        ]
+      },
+      {
+        "coherent": false,
+        "channel": "(4, 1)",
+        "norm_squared": 1.0,
+        "flat_weight": 0.4999999999999999,
+        "physical_vector": [
+          {
+            "q": [
+              1,
+              0,
+              1,
+              1,
+              1,
+              -1,
+              1,
+              0
+            ],
+            "f": 0,
+            "coefficient": "1"
+          }
+        ]
+      },
+      {
+        "coherent": false,
+        "channel": "(3, -1)",
+        "norm_squared": 1.0,
+        "flat_weight": 0.4999999999999999,
+        "physical_vector": [
+          {
+            "q": [
+              1,
+              0,
+              1,
+              -1,
+              1,
+              1,
+              1,
+              0
+            ],
+            "f": 0,
+            "coefficient": "1"
+          }
+        ]
+      },
+      {
+        "coherent": false,
+        "channel": "(3, 1)",
+        "norm_squared": 1.0,
+        "flat_weight": 0.4999999999999999,
+        "physical_vector": [
+          {
+            "q": [
+              1,
+              0,
+              1,
+              1,
+              -1,
+              1,
+              1,
+              0
+            ],
+            "f": 0,
+            "coefficient": "1"
+          }
+        ]
+      },
+      {
+        "coherent": false,
+        "channel": "(6, -1)",
+        "norm_squared": 1.0,
+        "flat_weight": 0.4999999999999999,
+        "physical_vector": [
+          {
+            "q": [
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              -1,
+              1
+            ],
+            "f": 0,
+            "coefficient": "1"
+          }
+        ]
+      },
+      {
+        "coherent": false,
+        "channel": "(6, 1)",
+        "norm_squared": 1.0,
+        "flat_weight": 0.4999999999999999,
+        "physical_vector": [
+          {
+            "q": [
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              -1
+            ],
+            "f": 0,
+            "coefficient": "1"
+          }
+        ]
+      },
+      {
+        "coherent": false,
+        "channel": "(5, -1)",
+        "norm_squared": 1.0,
+        "flat_weight": 0.4999999999999999,
+        "physical_vector": [
+          {
+            "q": [
+              1,
+              0,
+              1,
+              0,
+              1,
+              -1,
+              1,
+              1
+            ],
+            "f": 0,
+            "coefficient": "1"
+          }
+        ]
+      },
+      {
+        "coherent": false,
+        "channel": "(5, 1)",
+        "norm_squared": 1.0,
+        "flat_weight": 0.4999999999999999,
+        "physical_vector": [
+          {
+            "q": [
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              -1,
+              1
+            ],
+            "f": 0,
+            "coefficient": "1"
+          }
+        ]
+      },
+      {
+        "coherent": false,
+        "channel": "(0, -1)",
+        "norm_squared": 1.0,
+        "flat_weight": 0.4999999999999999,
+        "physical_vector": [
+          {
+            "q": [
+              -1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1
+            ],
+            "f": 1,
+            "coefficient": "1"
+          }
+        ]
+      },
+      {
+        "coherent": false,
+        "channel": "(0, 1)",
+        "norm_squared": 1.0,
+        "flat_weight": 0.4999999999999999,
+        "physical_vector": [
+          {
+            "q": [
+              1,
+              -1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1
+            ],
+            "f": 1,
+            "coefficient": "1"
+          }
+        ]
+      },
+      {
+        "coherent": true,
+        "channel": "7",
+        "norm_squared": 2.0,
+        "flat_weight": 0.4999999999999999,
+        "physical_vector": [
+          {
+            "q": [
+              1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              -1
+            ],
+            "f": -1,
+            "coefficient": "1"
+          },
+          {
+            "q": [
+              -1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1
+            ],
+            "f": 1,
+            "coefficient": "1"
+          }
+        ]
+      },
+      {
+        "coherent": true,
+        "channel": "2",
+        "norm_squared": 2.0,
+        "flat_weight": 0.4999999999999999,
+        "physical_vector": [
+          {
+            "q": [
+              1,
+              1,
+              -1,
+              1,
+              1,
+              0,
+              1,
+              0
+            ],
+            "f": 0,
+            "coefficient": "1"
+          },
+          {
+            "q": [
+              1,
+              1,
+              1,
+              -1,
+              1,
+              0,
+              1,
+              0
+            ],
+            "f": 0,
+            "coefficient": "1"
+          }
+        ]
+      },
+      {
+        "coherent": true,
+        "channel": "1",
+        "norm_squared": 2.0,
+        "flat_weight": 0.4999999999999999,
+        "physical_vector": [
+          {
+            "q": [
+              1,
+              -1,
+              1,
+              1,
+              1,
+              0,
+              1,
+              0
+            ],
+            "f": 0,
+            "coefficient": "1"
+          },
+          {
+            "q": [
+              1,
+              1,
+              -1,
+              1,
+              1,
+              0,
+              1,
+              0
+            ],
+            "f": 0,
+            "coefficient": "1"
+          }
+        ]
+      },
+      {
+        "coherent": true,
+        "channel": "4",
+        "norm_squared": 2.0,
+        "flat_weight": 0.4999999999999999,
+        "physical_vector": [
+          {
+            "q": [
+              1,
+              0,
+              1,
+              1,
+              -1,
+              1,
+              1,
+              0
+            ],
+            "f": 0,
+            "coefficient": "1"
+          },
+          {
+            "q": [
+              1,
+              0,
+              1,
+              1,
+              1,
+              -1,
+              1,
+              0
+            ],
+            "f": 0,
+            "coefficient": "1"
+          }
+        ]
+      },
+      {
+        "coherent": true,
+        "channel": "3",
+        "norm_squared": 2.0,
+        "flat_weight": 0.4999999999999999,
+        "physical_vector": [
+          {
+            "q": [
+              1,
+              0,
+              1,
+              -1,
+              1,
+              1,
+              1,
+              0
+            ],
+            "f": 0,
+            "coefficient": "1"
+          },
+          {
+            "q": [
+              1,
+              0,
+              1,
+              1,
+              -1,
+              1,
+              1,
+              0
+            ],
+            "f": 0,
+            "coefficient": "1"
+          }
+        ]
+      },
+      {
+        "coherent": true,
+        "channel": "6",
+        "norm_squared": 2.0,
+        "flat_weight": 0.4999999999999999,
+        "physical_vector": [
+          {
+            "q": [
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              -1,
+              1
+            ],
+            "f": 0,
+            "coefficient": "1"
+          },
+          {
+            "q": [
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              -1
+            ],
+            "f": 0,
+            "coefficient": "1"
+          }
+        ]
+      },
+      {
+        "coherent": true,
+        "channel": "5",
+        "norm_squared": 2.0,
+        "flat_weight": 0.4999999999999999,
+        "physical_vector": [
+          {
+            "q": [
+              1,
+              0,
+              1,
+              0,
+              1,
+              -1,
+              1,
+              1
+            ],
+            "f": 0,
+            "coefficient": "1"
+          },
+          {
+            "q": [
+              1,
+              0,
+              1,
+              0,
+              1,
+              1,
+              -1,
+              1
+            ],
+            "f": 0,
+            "coefficient": "1"
+          }
+        ]
+      },
+      {
+        "coherent": true,
+        "channel": "0",
+        "norm_squared": 2.0,
+        "flat_weight": 0.4999999999999999,
+        "physical_vector": [
+          {
+            "q": [
+              -1,
+              1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1
+            ],
+            "f": 1,
+            "coefficient": "1"
+          },
+          {
+            "q": [
+              1,
+              -1,
+              1,
+              0,
+              1,
+              0,
+              1,
+              1
+            ],
+            "f": 1,
+            "coefficient": "1"
+          }
+        ]
+      }
+    ],
+    "exact_path_result": "H2 v0=-8 v0; H4 v0=24 v0; 16 resolved unit-norm outputs (or eight coherent norm-squared-two outputs), independent of S>=1."
+  },
+  "finite_spin_loss_bounds": [
+    {
+      "S": 1,
+      "P_dimension": 48,
+      "loss_diagonal_min": 0.0,
+      "loss_diagonal_max": 4.0,
+      "off_diagonal_nonzero_entries": 0,
+      "opposite_B_pair_max_loss": 0.0,
+      "B_flux_shifts_at_most_one": true
+    },
+    {
+      "S": 2,
+      "P_dimension": 120,
+      "loss_diagonal_min": 0.0,
+      "loss_diagonal_max": 4.0,
+      "off_diagonal_nonzero_entries": 0,
+      "opposite_B_pair_max_loss": 0.0,
+      "B_flux_shifts_at_most_one": true
+    },
+    {
+      "S": 4,
+      "P_dimension": 264,
+      "loss_diagonal_min": 0.0,
+      "loss_diagonal_max": 4.0,
+      "off_diagonal_nonzero_entries": 0,
+      "opposite_B_pair_max_loss": 0.0,
+      "B_flux_shifts_at_most_one": true
+    },
+    {
+      "S": 8,
+      "P_dimension": 552,
+      "loss_diagonal_min": 0.0,
+      "loss_diagonal_max": 4.0,
+      "off_diagonal_nonzero_entries": 0,
+      "opposite_B_pair_max_loss": 0.0,
+      "B_flux_shifts_at_most_one": true
+    },
+    {
+      "S": 16,
+      "P_dimension": 1128,
+      "loss_diagonal_min": 0.0,
+      "loss_diagonal_max": 4.0,
+      "off_diagonal_nonzero_entries": 0,
+      "opposite_B_pair_max_loss": 0.0,
+      "B_flux_shifts_at_most_one": true
+    }
+  ],
+  "dynamics": {
+    "parameters": {
+      "K": 0.4,
+      "delta": 0.7,
+      "kappa": 0.3
+    },
+    "rows": [
+      {
+        "S": 4,
+        "T": 0.6,
+        "quadratures": [
+          {
+            "time_points": 257,
+            "N6_probability": 0.6560996301160447,
+            "windows": [
+              {
+                "electric_window": 1,
+                "physical_window_dimension": 48,
+                "actual_N6_window_probability": 0.463085261613939,
+                "flat_consequence_window_probability": 0.2615596121480227,
+                "difference": 0.20152564946591628
+              },
+              {
+                "electric_window": 2,
+                "physical_window_dimension": 120,
+                "actual_N6_window_probability": 0.6531806656203212,
+                "flat_consequence_window_probability": 0.28707299830746347,
+                "difference": 0.3661076673128577
+              }
+            ]
+          },
+          {
+            "time_points": 513,
+            "N6_probability": 0.6560996301117303,
+            "windows": [
+              {
+                "electric_window": 1,
+                "physical_window_dimension": 48,
+                "actual_N6_window_probability": 0.46308526156753976,
+                "flat_consequence_window_probability": 0.2615596121465541,
+                "difference": 0.20152564942098566
+              },
+              {
+                "electric_window": 2,
+                "physical_window_dimension": 120,
+                "actual_N6_window_probability": 0.6531806656447917,
+                "flat_consequence_window_probability": 0.28707299829992927,
+                "difference": 0.36610766734486244
+              }
+            ]
+          }
+        ],
+        "guaranteed_N6_lower_bound": 0.5741566575011173,
+        "asymptotic_N6_upper_bound": 0.7590109473334918,
+        "predicted_local_N6_total_mass": 0.28707832875055866,
+        "predicted_local_total_mass": 0.5280673814170669,
+        "N8_lower_lim_bound": 0.18485428983237445,
+        "N8_finite_spin_upper_bound": 0.3697085796647489
+      },
+      {
+        "S": 8,
+        "T": 0.6,
+        "quadratures": [
+          {
+            "time_points": 257,
+            "N6_probability": 0.6644968946464791,
+            "windows": [
+              {
+                "electric_window": 1,
+                "physical_window_dimension": 48,
+                "actual_N6_window_probability": 0.31230359250245365,
+                "flat_consequence_window_probability": 0.2615596121480227,
+                "difference": 0.05074398035443095
+              },
+              {
+                "electric_window": 2,
+                "physical_window_dimension": 120,
+                "actual_N6_window_probability": 0.4061745154172705,
+                "flat_consequence_window_probability": 0.28707299830746347,
+                "difference": 0.11910151710980704
+              }
+            ]
+          },
+          {
+            "time_points": 513,
+            "N6_probability": 0.6644968943753582,
+            "windows": [
+              {
+                "electric_window": 1,
+                "physical_window_dimension": 48,
+                "actual_N6_window_probability": 0.3123035946229411,
+                "flat_consequence_window_probability": 0.2615596121465541,
+                "difference": 0.050743982476387006
+              },
+              {
+                "electric_window": 2,
+                "physical_window_dimension": 120,
+                "actual_N6_window_probability": 0.40617451485974154,
+                "flat_consequence_window_probability": 0.28707299829992927,
+                "difference": 0.11910151655981227
+              }
+            ]
+          }
+        ],
+        "guaranteed_N6_lower_bound": 0.5741566575011173,
+        "asymptotic_N6_upper_bound": 0.7590109473334918,
+        "predicted_local_N6_total_mass": 0.28707832875055866,
+        "predicted_local_total_mass": 0.5280673814170669,
+        "N8_lower_lim_bound": 0.18485428983237445,
+        "N8_finite_spin_upper_bound": 0.3697085796647489
+      },
+      {
+        "S": 16,
+        "T": 0.6,
+        "quadratures": [
+          {
+            "time_points": 257,
+            "N6_probability": 0.6737654181458024,
+            "windows": [
+              {
+                "electric_window": 1,
+                "physical_window_dimension": 48,
+                "actual_N6_window_probability": 0.30843642584155134,
+                "flat_consequence_window_probability": 0.2615596121480227,
+                "difference": 0.04687681369352864
+              },
+              {
+                "electric_window": 2,
+                "physical_window_dimension": 120,
+                "actual_N6_window_probability": 0.3832741430320624,
+                "flat_consequence_window_probability": 0.28707299830746347,
+                "difference": 0.09620114472459895
+              }
+            ]
+          },
+          {
+            "time_points": 513,
+            "N6_probability": 0.6737654178261478,
+            "windows": [
+              {
+                "electric_window": 1,
+                "physical_window_dimension": 48,
+                "actual_N6_window_probability": 0.3084362841704877,
+                "flat_consequence_window_probability": 0.2615596121465541,
+                "difference": 0.046876672023933585
+              },
+              {
+                "electric_window": 2,
+                "physical_window_dimension": 120,
+                "actual_N6_window_probability": 0.38327413647088004,
+                "flat_consequence_window_probability": 0.28707299829992927,
+                "difference": 0.09620113817095077
+              }
+            ]
+          }
+        ],
+        "guaranteed_N6_lower_bound": 0.5741566575011173,
+        "asymptotic_N6_upper_bound": 0.7590109473334918,
+        "predicted_local_N6_total_mass": 0.28707832875055866,
+        "predicted_local_total_mass": 0.5280673814170669,
+        "N8_lower_lim_bound": 0.18485428983237445,
+        "N8_finite_spin_upper_bound": 0.3697085796647489
+      }
+    ],
+    "status": "Floating quadrature-refined finite-spin corroboration. The compactness/commutation proof, not these grids, establishes the consequence."
+  }
+}

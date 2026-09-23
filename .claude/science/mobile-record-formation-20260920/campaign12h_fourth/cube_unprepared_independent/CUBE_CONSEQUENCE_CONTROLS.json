@@ -1,0 +1,945 @@
+{
+  "graph": {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        6,
+        7
+      ]
+    ],
+    "A": [
+      0,
+      3,
+      5,
+      6
+    ],
+    "chords": [
+      5,
+      8,
+      9,
+      10,
+      11
+    ],
+    "tree_minor_determinant": -1,
+    "cycle_matrix": [
+      [
+        -1,
+        -1,
+        0,
+        0,
+        -1
+      ],
+      [
+        1,
+        0,
+        -1,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        -1,
+        0,
+        0,
+        -1,
+        -1
+      ],
+      [
+        0,
+        -1,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        -1,
+        -1
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "first_sector": {
+    "first_sector_rows": [
+      {
+        "S": 1,
+        "zero_field_H2": -12,
+        "zero_field_H4_diagonal": 60,
+        "zero_field_H4_oriented_face_outputs": 12,
+        "zero_field_loss_without_kappa": 48,
+        "unit_plaquette_loss_without_kappa": 34.0,
+        "formula_loss": 34.0
+      },
+      {
+        "S": 2,
+        "zero_field_H2": -12,
+        "zero_field_H4_diagonal": 60,
+        "zero_field_H4_oriented_face_outputs": 12,
+        "zero_field_loss_without_kappa": 48,
+        "unit_plaquette_loss_without_kappa": 42.888888888888886,
+        "formula_loss": 42.888888888888886
+      },
+      {
+        "S": 4,
+        "zero_field_H2": -12,
+        "zero_field_H4_diagonal": 60,
+        "zero_field_H4_oriented_face_outputs": 12,
+        "zero_field_loss_without_kappa": 48,
+        "unit_plaquette_loss_without_kappa": 46.419999999999995,
+        "formula_loss": 46.42
+      },
+      {
+        "S": 8,
+        "zero_field_H2": -12,
+        "zero_field_H4_diagonal": 60,
+        "zero_field_H4_oriented_face_outputs": 12,
+        "zero_field_loss_without_kappa": 48,
+        "unit_plaquette_loss_without_kappa": 47.557098765432094,
+        "formula_loss": 47.5570987654321
+      }
+    ],
+    "N4_grade2_outputs": 42,
+    "Z_norm_squared": 168,
+    "physical_field_samples": 243,
+    "max_sample_spin": 3,
+    "H4_rotor_formula": "60 I - 2 sum over six square faces (U_face+U_face_dagger)",
+    "face_cycle_vectors": [
+      [
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      [
+        1,
+        -1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    ]
+  },
+  "finite_clock_counterexample": {
+    "parameters": {
+      "S": 1,
+      "K": 1,
+      "delta": 1,
+      "kappa": 1
+    },
+    "survival_derivative_1": -48.0,
+    "survival_derivative_2": 2304.0,
+    "survival_derivative_3": -109248.0,
+    "Exp48_derivative_3": -110592,
+    "difference_from_Exp48_t_cubed_coefficient": 224.0,
+    "conclusion": "Zero field does not have an exact finite-spin Exp(48 kappa) first clock. The ordinary joint-spin limiting first clock is exponential."
+  },
+  "later_loss": {
+    "all_36_P_words": [
+      {
+        "q": [
+          -1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          1,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          1,
+          1,
+          -1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          -1,
+          1,
+          0
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          -1,
+          0
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          -1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          -1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          1,
+          0,
+          -1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          1,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          0
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          -1,
+          1,
+          0
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          -1,
+          0
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          -1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          -1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          -1,
+          1,
+          1
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          -1,
+          1
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          -1
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          -1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          0,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          0,
+          1,
+          1,
+          -1,
+          1,
+          1,
+          0
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          -1,
+          1,
+          0
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          0
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          -1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          0,
+          -1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          0,
+          1,
+          -1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          0,
+          1,
+          1,
+          0,
+          -1,
+          1,
+          1
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          -1,
+          1
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          -1
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          -1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          0,
+          0,
+          -1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          1,
+          1
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          -1,
+          1,
+          1
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          -1,
+          1
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      },
+      {
+        "q": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          -1
+        ],
+        "resolved_paths": 8,
+        "diagonal_loss": 8,
+        "absolute_Gram_column_sum": 16
+      }
+    ],
+    "rotor_compact_pair_expectation": 10.0,
+    "off_diagonal_Gram_coefficient": 2.0,
+    "compact_pair_states": [
+      {
+        "q": [
+          1,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "E": [
+          1,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "q": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          -1,
+          1,
+          0
+        ],
+        "E": [
+          1,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "finite_spin_countercontrols": [
+      {
+        "S": 2,
+        "compact_two_state_loss_expectation": 9.833333333333332
+      },
+      {
+        "S": 4,
+        "compact_two_state_loss_expectation": 9.95
+      },
+      {
+        "S": 8,
+        "compact_two_state_loss_expectation": 9.98611111111111
+      },
+      {
+        "S": 16,
+        "compact_two_state_loss_expectation": 9.996323529411764
+      }
+    ],
+    "uniform_bound_proof": "Every resolved B column has at most one path and every output row at most two predecessors. Every input has eight paths. The nonnegative Gram absolute row/column sums are at most16, including physical boundary suppression. Thus 0<=R6_S<=16 I.",
+    "coherent_loss": "Opposite newborn charge patterns have orthogonal output ranges for each edge, so resolved/coherent Gram sums agree."
+  },
+  "terminal_topology_counterexample": {
+    "rows": [
+      {
+        "n": 4,
+        "S": 5,
+        "max_abs_E": 5,
+        "N8_probability": 1,
+        "window_R2_probability": 0
+      },
+      {
+        "n": 8,
+        "S": 9,
+        "max_abs_E": 9,
+        "N8_probability": 1,
+        "window_R2_probability": 0
+      },
+      {
+        "n": 16,
+        "S": 17,
+        "max_abs_E": 17,
+        "N8_probability": 1,
+        "window_R2_probability": 0
+      }
+    ],
+    "scope": "Logical topology counterexample in absorbing terminal states. These states are not asserted to be the outputs of the stipulated original initialization."
+  }
+}

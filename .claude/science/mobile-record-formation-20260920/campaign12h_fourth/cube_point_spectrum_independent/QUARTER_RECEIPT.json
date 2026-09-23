@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/exact_quarter_fiber.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920",
+  "started_utc": "2026-09-23T19:16:49.249426+00:00",
+  "finished_utc": "2026-09-23T19:16:49.748213+00:00",
+  "exit_code": 0,
+  "stdout_sha256": "f9f405ecc65f77e7f4d5e1078fc4b930eeb05e4f196c15d2690696db4d892e2e",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "script_sha256": "078228e4e619bdefa03821cf63a2c227da7e8e7337d0bb1410cd4f525f277bd5"
+}

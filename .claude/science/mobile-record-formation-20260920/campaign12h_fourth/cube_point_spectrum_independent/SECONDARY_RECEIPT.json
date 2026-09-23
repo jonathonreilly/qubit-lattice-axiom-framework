@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/cube_point_spectrum_independent/check_prior_and_certificate.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920",
+  "started_utc": "2026-09-23T19:21:32.813578+00:00",
+  "finished_utc": "2026-09-23T19:21:33.211006+00:00",
+  "exit_code": 0,
+  "stdout_sha256": "d04d16a6391fcfde9979cf3983005c88c68670f2399c64df2b3480daa28ed8ae",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "script_sha256": "992ae2e699894385f97cb5811f2afcfdab70c3fa7f7ace58d71665cf95ce5230"
+}

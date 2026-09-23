@@ -1,0 +1,22 @@
+PASS 1.1 R1 and R2 are unchanged by the relabelling h -> h + p xi + xi p (every p, h, xi)
+PASS 1.2 on the scalar h = (1 - p p/p^2) phi, for every direction: R1 = 2 p^2 phi, R2 = (1/2) p^2 phi^2
+PASS 1.3 isotropic stretch h = 2 lam delta: the constraint K wbar R1 = e gives p^2 lam = e/(4 K wbar), block 60's Lap lam = -e/(4K wbar)
+PASS 1.4 u-equation: K wbar R1 = e, i.e. 2 K wbar p^2 phi = e(t) - a constraint at each label time (no time derivative)
+PASS 1.5 TT equations: (4 alpha/wbar) a'' = -K wbar p^2 a (and b): speed^2 = K wbar^2/(4 alpha) in every direction (block 62 T4); no source from a body at rest
+PASS 1.6 longitudinal relabelling: d/dt[(8/wbar)((alpha+beta) xiL' + beta phi')] = 0 (no potential, no source at rest)
+PASS 1.7 u(k,t) = -e(k,t)/(4 K wbar p^2) + alpha(alpha+3beta) e''(k,t)/(K^2 wbar^3 (alpha+beta) p^4): set at each label time by the content then :: u = (-K*alpha*p**2*wbar**2*e(t) - K*beta*p**2*wbar**2*e(t) + 4*alpha**2*Derivative(e(t), (t, 2)) + 12*alpha*beta*Derivative(e(t), (t, 2)))/(4*K**2*p**4*wbar**3*(alpha + beta))
+PASS 1.8 static limit: u = -e/(4 K wbar p^2), i.e. Lap u = e/(4K wbar) (block 60 at rest, tau = 0)
+PASS 1.9 alpha + beta = 0 (the comparator's kinetic ratio): the relabelling equation becomes beta phi' = const, so with the constraint e'(k,t) is constant: a jump of a body's energy has no solution
+PASS 1.10 at alpha + 3 beta = 0 the e'' term vanishes and u is exactly the instantaneous Poisson field
+PASS 1.11 the only travelling modes are TT: X = K wbar^2 p^2/(4 alpha); the scalar phi has no wave (it is fixed by the constraint)
+PASS 2.1 a smooth switch-on of Delta_e over tau_r: at label time 0+ the clock field already moves, du = 6 alpha(alpha+3beta) Delta_e/(K^2 wbar^3 (alpha+beta) p^4 tau_r^2) + O(t), at every wave vector
+PASS 2.2 after the switch-on the jump of u is the Poisson field of Delta_e, -Delta_e/(4 K wbar p^2), whatever alpha, beta
+exact part done in 0.5 s
+EXEC E r=8 Delta_e=0.02: packet energy 0.9726; d<S_x>/dt before +6.833e-27, at t=0.05 +3.231e-02, after the switch-on -8.458e-05 (block 54's -E <grad u> = -8.757e-05); TT wave would arrive at t = 16
+EXEC E r=8 Delta_e=0.04: packet energy 0.9726; d<S_x>/dt before +6.833e-27, at t=0.05 +8.159e-02, after the switch-on -1.691e-04 (block 54's -E <grad u> = -1.751e-04); TT wave would arrive at t = 16
+EXEC E r=16 Delta_e=0.02: packet energy 0.9726; d<S_x>/dt before +2.082e-19, at t=0.05 +1.900e-02, after the switch-on -2.876e-05 (block 54's -E <grad u> = -2.966e-05); TT wave would arrive at t = 32
+EXEC E r=16 Delta_e=0.04: packet energy 0.9726; d<S_x>/dt before +2.082e-19, at t=0.05 +3.969e-02, after the switch-on -5.752e-05 (block 54's -E <grad u> = -5.931e-05); TT wave would arrive at t = 32
+PASS E1 [executed] before the switch-on the force on the packet is zero; at label time 0.05 and after the ramp it is non-zero at r = 8 and 16, long before r/c_T = 16, 32; it is linear in Delta_e, points toward the body and matches -E<grad u> within 5%
+total 0.5 s; PASS=14 FAIL=0
+SUMMARY: PARTIAL (exact at second order, every lattice wave vector) with block 62's kinetic term and the curvature member, the rates stay multipliers and their constraint fixes the scalar part of the lengths at each label time: u(k,t) = -e/(4K wbar p^2) + alpha(alpha+3beta) e''/(K^2 wbar^3 (alpha+beta) p^4); only the two transverse traceless strains travel (speed^2 = K wbar^2/(4 alpha)) and a body at rest does not source them; so a formation event changes the clocks, the scalar lengths and a slow packet's fall at every distance at once, by an amount set by the change of energy; for alpha + beta = 0 (the comparator's ratio) a change of a body's energy at rest has no solution at all
+HIT: within blocks 60 and 62's clauses a packet's fall changes before any strain wave can arrive, by -E grad of the Poisson field of the change of the body's energy (plus an alpha(alpha+3beta)/(alpha+beta) e'' term): the rate is a multiplier and the scalar length is a constraint; only alpha + beta = 0 excludes it, by forbidding the change itself
